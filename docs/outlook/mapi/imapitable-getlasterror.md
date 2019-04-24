@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 832e2c18-ddba-4d18-a391-710d21fe23e6
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 8b7b1db5bcc718858b01f122f53406c885998741
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 2444ea7e05367423e7920be3a871c2ab68aad76d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329002"
 ---
 # <a name="imapitablegetlasterror"></a>IMAPITable::GetLastError
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルの前のエラーに関する情報を含む[MAPIERROR](mapierror.md)構造体を返します。 
+表の前のエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。 
   
 ```cpp
 HRESULT GetLastError(
@@ -39,21 +39,21 @@ LPMAPIERROR FAR * lppMAPIError
 
  _hResult_
   
-> [in]HRESULT がメソッドの以前の呼び出しで生成されたエラーが含まれています。
+> 順番前のメソッド呼び出しで生成されたエラーを含む HRESULT。
     
  _ulFlags_
   
-> [in]関数が返す文字列の種類を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番返される文字列の型を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> _LppMAPIError_パラメーターに返された**MAPIERROR**構造体の文字列は、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。 
+> _lppMAPIError_パラメーターで返される**MAPIERROR**構造体の文字列は、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。 
     
  _lppMAPIError_
   
-> [out]エラーのバージョン、コンポーネント、およびコンテキストの情報が含まれている返された**MAPIERROR**構造体へのポインターへのポインター。 適切な情報を含む**MAPIERROR**構造体を提供できない場合、 _lppMAPIError_パラメーターを NULL に設定できます。 
+> 読み上げエラーのバージョン、コンポーネント、およびコンテキスト情報を含む、返された**MAPIERROR**構造体へのポインターへのポインター。 _lppMAPIError_パラメーターは、適切な情報を持つ**MAPIERROR**構造体を提供できない場合は NULL に設定できます。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -61,21 +61,21 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> か、MAPI_UNICODE フラグが設定された実装は Unicode をサポートしていないまたは MAPI_UNICODE が設定されていませんでしたし、実装には、Unicode のみサポートしています。
+> MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode がサポートされているかどうか。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPITable::GetLastError**メソッドは、可能な場合、失敗したメソッド呼び出しに関する詳細についてを返します。 メッセージまたはダイアログ ボックスでは、この情報を表示できます。 
+**IMAPITable:: GetLastError**メソッドは、エラーが発生した前のメソッド呼び出しに関する詳細情報を返します (使用可能な場合)。 この情報は、メッセージまたはダイアログボックスに表示できます。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-エラーに関する情報をユーザーに表示する必要があるときに、 **GetLastError**を呼び出します。 
+エラーに関する情報をユーザーに表示する必要がある場合は、必ず**GetLastError**を呼び出します。 
   
-[MAPIERROR](mapierror.md)の使用を行うことができます構造が、 _lppMAPIError_パラメーターが指す場合は、table オブジェクトでは 1 つが提供される**GetLastError**が S_OK を返す場合にのみです。 テーブルの実装では、どのような最後のエラーまたはエラーの報告には関係ありませんを決定できません。 このような場合は、 _lppMAPIError_でポインターは NULL に設定します。 
+table オブジェクトが S_OK を返す場合にのみ、 _lppMAPIError_パラメーターでポイントする[MAPIERROR](mapierror.md)構造を使用できます。 **** 場合によっては、テーブルの実装によって、最後のエラーが発生したかどうか、またはエラーについてのレポートを作成できないことがあります。 この状況では、 _lppMAPIError_にあるポインターが NULL に設定されています。 
   
-**MAPIERROR**構造体に割り当てられたすべてのメモリを解放するには、 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出します。 
+**MAPIERROR**構造体に割り当てられているすべてのメモリを解放するには、 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出します。 
   
-**GetLastError**メソッドの詳細については、 [MAPI の拡張エラー](mapi-extended-errors.md)を参照してください。
+**GetLastError**メソッドの詳細については、「 [MAPI 拡張エラー](mapi-extended-errors.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

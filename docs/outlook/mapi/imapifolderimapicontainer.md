@@ -1,5 +1,5 @@
 ---
-title: IMAPIFolder IMAPIContainer
+title: imapifolder IMAPIContainer
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,52 +12,52 @@ api_type:
 - COM
 ms.assetid: bc2e8d17-7687-43c2-8f01-b677703f7288
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1886987515f3cafe38418960baa4b6fd89e3b6f2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5e31896354141999e02f2cba117ef9739340be61
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329492"
 ---
 # <a name="imapifolder--imapicontainer"></a>IMAPIFolder : IMAPIContainer
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 フォルダー内のメッセージとサブフォルダーに対して操作を実行します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|によって公開されます。  <br/> |フォルダー オブジェクト  <br/> |
-|によって実装されます。  <br/> |メッセージ ストア プロバイダー  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションと MAPI  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IMAPIFolder  <br/> |
-|ポインターの型。  <br/> |LPMAPIFOLDER  <br/> |
-|トランザクション モデル:  <br/> |非トランザクション  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|公開者:  <br/> |Folder オブジェクト  <br/> |
+|実装元:  <br/> |メッセージストアプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションと MAPI  <br/> |
+|インターフェイス識別子:  <br/> |IID_IMAPIFolder  <br/> |
+|ポインターの種類:  <br/> |LPMAPIFOLDER  <br/> |
+|トランザクションモデル:  <br/> |非トランザクション  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[メイル](imapifolder-createmessage.md) <br/> |新しいメッセージを作成します。  <br/> |
-|[CopyMessages](imapifolder-copymessages.md) <br/> |1 つまたは複数のメッセージを移動またはコピーします。  <br/> |
-|[DeleteMessages](imapifolder-deletemessages.md) <br/> |1 つまたは複数のメッセージを削除します。  <br/> |
+|[CreateMessage](imapifolder-createmessage.md) <br/> |新しいメッセージを作成します。  <br/> |
+|[copymessages](imapifolder-copymessages.md) <br/> |1つまたは複数のメッセージをコピーまたは移動します。  <br/> |
+|[DeleteMessages](imapifolder-deletemessages.md) <br/> |1つまたは複数のメッセージを削除します。  <br/> |
 |[CreateFolder](imapifolder-createfolder.md) <br/> |新しいサブフォルダーを作成します。  <br/> |
-|[CopyFolder](imapifolder-copyfolder.md) <br/> |サブフォルダーを移動またはコピーします。  <br/> |
+|[CopyFolder](imapifolder-copyfolder.md) <br/> |サブフォルダーをコピーまたは移動します。  <br/> |
 |[DeleteFolder](imapifolder-deletefolder.md) <br/> |サブフォルダーを削除します。  <br/> |
-|[SetReadFlags](imapifolder-setreadflags.md) <br/> |設定または、 **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) のプロパティに 1 つまたは複数のフォルダーのメッセージでは、MSGFLAG_READ フラグをクリアし、リードのレポートの送信を管理します。  <br/> |
-|[GetMessageStatus](imapifolder-getmessagestatus.md) <br/> |特定のフォルダー内のメッセージに関連付けられているステータスを取得します。  <br/> |
-|[SetMessageStatus](imapifolder-setmessagestatus.md) <br/> |メッセージに関連付けられているステータスを設定します。  <br/> |
-|[SaveContentsSort](imapifolder-savecontentssort.md) <br/> |フォルダーの内容のテーブルの既定の並べ替え順序を設定します。  <br/> |
-|[EmptyFolder](imapifolder-emptyfolder.md) <br/> |フォルダー自体を削除することがなく、フォルダーからすべてのメッセージとサブフォルダーを削除します。  <br/> |
+|[setreadflags](imapifolder-setreadflags.md) <br/> |1つ以上のフォルダーのメッセージの**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティの MSGFLAG_READ フラグを設定またはクリアし、閲覧レポートの送信を管理します。  <br/> |
+|[getmessagestatus](imapifolder-getmessagestatus.md) <br/> |特定のフォルダー内のメッセージに関連付けられている状態を取得します。  <br/> |
+|[setmessagestatus](imapifolder-setmessagestatus.md) <br/> |メッセージに関連付けられている状態を設定します。  <br/> |
+|[SaveContentsSort](imapifolder-savecontentssort.md) <br/> |フォルダーの contents テーブルの既定の並べ替え順序を設定します。  <br/> |
+|[EmptyFolder](imapifolder-emptyfolder.md) <br/> |フォルダー自体を削除せずに、フォルダーからすべてのメッセージとサブフォルダーを削除します。  <br/> |
    
 |**必須のプロパティ**|**Access**|
 |:-----|:-----|
-|**PR_DISPLAY_NAME**([PidTagDisplayNamePrefix](pidtagdisplaynameprefix-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
+|**PR_DISPLAY_NAME**([PidTagDisplayNamePrefix](pidtagdisplaynameprefix-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
 |**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_FOLDER_TYPE**([PidTagFolderType](pidtagfoldertype-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
+|**PR_FOLDER_TYPE**([PidTagFolderType](pidtagfoldertype-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
 |**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_PARENT_ENTRYID**([PidTagParentEntryId](pidtagparententryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
@@ -68,5 +68,5 @@ ms.locfileid: "22590800"
 
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
 

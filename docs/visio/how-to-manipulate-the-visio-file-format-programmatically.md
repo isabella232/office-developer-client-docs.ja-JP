@@ -8,11 +8,11 @@ ms.assetid: 5f5e2288-7539-41b8-916d-410be028ed9b
 description: Visio 2013 での新しいファイル形式パッケージを読み取り、パッケージ内のパーツを選択しその中のデータを変更して、パッケージに新しいパーツを追加するソリューションをVisual Studio 2012で作成します。
 localization_priority: Priority
 ms.openlocfilehash: 7239180f6e8ecf013577bff787b7c3f784971efc
-ms.sourcegitcommit: b9814794fcc929f53892417f2b788f2a7931da87
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31903797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32330039"
 ---
 # <a name="manipulate-the-visio-file-format-programmatically"></a>プログラムを使用して Visio ファイル形式を操作する
 

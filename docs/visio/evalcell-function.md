@@ -6,37 +6,37 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 4aa3a1c9-dec9-5eb0-5743-0534c0b3bb5f
-description: (オプション) 引数としてユーザー定義関数に渡す 1 つ以上の名前/値ペアと同様に、カスタム関数を含むセルへの参照を受け取ります。 指定した引数と値を指定するユーザー定義関数の計算結果を返します。
-ms.openlocfilehash: 03094f644edb29f990f3dda50b0cb4c35e1b07a6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: カスタム関数を含むセルへの参照を取得します。また、引数としてカスタム関数に渡す1つ以上の名前と値のペアを指定することもできます (省略可能)。 指定した引数と値を指定して、カスタム関数の計算結果を返します。
+ms.openlocfilehash: 4ad6645862d620a36b90e4f46d09588d7e83fcc1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329072"
 ---
 # <a name="evalcell-function"></a>EVALCELL 関数
 
-(オプション) 引数としてユーザー定義関数に渡す 1 つ以上の名前/値ペアと同様に、カスタム関数を含むセルへの参照を受け取ります。 指定した引数と値を指定するユーザー定義関数の計算結果を返します。
+カスタム関数を含むセルへの参照を取得します。また、引数としてカスタム関数に渡す1つ以上の名前と値のペアを指定することもできます (省略可能)。 指定した引数と値を指定して、カスタム関数の計算結果を返します。
   
 ## <a name="syntax"></a>構文
 
-EVALCELL (* * *cellRef* * *、[* * *arg1Name、arg1* * *]、[* * *arg2Name、arg2* * *],...) 
+evalcell (* * *cellref* * *、[* * *arg1Name、arg1* * *]、[* * *arg2Name, arg2* * *],...) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _cellRef_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |カスタム関数を含むセルへの参照。 シート間の参照は許可されています。  <br/> |
-| _arg1Name_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |ユーザー設定関数に渡す 1 番目の引数の名前です。スペースを使用できます。  <br/> |
-| _arg1_ <br/> |省略可能  <br/> |**多様** <br/> |_Arg1_パラメーターの値です。  <br/> |
-| _arg2Name_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |ユーザー定義関数に渡される 2 番目の引数の名前。 スペースを使用します。  <br/> |
-| _arg2_ <br/> |省略可能  <br/> |**多様** <br/> |_Arg2_パラメーターの値です。  <br/> |
+| _cellRef_ <br/> |必須  <br/> |**String** <br/> |ユーザー設定関数を含むセルへの参照です。 シートの相互参照が可能です。  <br/> |
+| _arg1Name_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |ユーザー設定関数に渡す 1 番目の引数の名前です。 スペースを使用できます。  <br/> |
+| _引数_ <br/> |省略可能  <br/> |**さまざま** <br/> |_arg1_パラメーターの値を指定します。  <br/> |
+| _arg2Name_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |カスタム関数に渡される2番目の引数の名前を指定します。 スペースを使用できます。  <br/> |
+| _arg2_ <br/> |省略可能  <br/> |**さまざま** <br/> |_arg2_パラメーターの値を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
-数値
+番号
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 呼び出し元のセルは、ユーザー設定関数が使用する引数をすべて指定する必要はありません。 
   

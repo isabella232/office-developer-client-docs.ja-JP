@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: 449a94d3-6610-4434-a705-4a739339053d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 57544507d47a846831293e80337f500efd9ed717
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f0f820de17e6acc445489a3116164d2521564c12
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331615"
 ---
 # <a name="cbmapiforminfoarray"></a>CbMAPIFormInfoArray
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-指定されたフォーム オブジェクトの情報が含まれている既存の[SMAPIFormInfoArray](smapiforminfoarray.md)構造体のバイト数を計算します。 
+指定した数のフォーム情報オブジェクトを含む既存の[smapiforminfoarray](smapiforminfoarray.md)構造体のバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
-|関連の構造体。  <br/> |**SMAPIFormInfoArray** <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
+|関連する構造:  <br/> |**SMAPIFormInfoArray** <br/> |
    
 ```cpp
 CbMAPIFormInfoArray (_c)
@@ -40,7 +40,7 @@ CbMAPIFormInfoArray (_c)
 
  __c_
   
-> フォーム既存の**SMAPIFormInfoArray**構造体のオブジェクトの情報の数です。 
+> 既存の**smapiforminfoarray**構造内のフォーム情報オブジェクトの数。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -49,5 +49,5 @@ CbMAPIFormInfoArray (_c)
 [SMAPIFormInfoArray](smapiforminfoarray.md)
 
 
-[構造体に関連するマクロ](macros-related-to-structures.md)
+[構造に関連するマクロ](macros-related-to-structures.md)
 

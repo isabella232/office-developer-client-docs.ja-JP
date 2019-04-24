@@ -7,109 +7,109 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6f8f6af2-c7fa-4135-9532-7af5fc643b0d
-description: (TemplateVariable 要素によって表されます) のテンプレート変数のインスタンスでは、アクティビティ フィード項目のアクティビティ テンプレートでのデータを指定します。
-ms.openlocfilehash: 99f4c2de586447fb0361e528bcd33d62b79e0fb1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: テンプレート変数のインスタンス (templateVariable 要素で表されます) は、アクティビティテンプレート内のアクティビティフィードアイテムのデータを指定します。
+ms.openlocfilehash: 9b37665488f0f1e2bd205fb7d4a5d2201697d7c8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329177"
 ---
 # <a name="template-variables"></a>テンプレート変数
 
-( **TemplateVariable**要素によって表されます) のテンプレート変数のインスタンスでは、アクティビティ フィード項目のアクティビティ テンプレートでのデータを指定します。 
+テンプレート変数のインスタンス ( **templateVariable**要素で表されます) は、アクティビティテンプレート内のアクティビティフィードアイテムのデータを指定します。 
   
-アクティビティの例については、フィードの XML、[アクティビティ フィードの XML の例](activity-feed-xml-example.md)を参照してください。
+アクティビティフィード xml の例については、「[アクティビティフィード xml の例](activity-feed-xml-example.md)」を参照してください。
 
-次の表は、XML の対応する列挙値によって表される各サポートされているテンプレートの変数の種類を示しています。
+次の表に、対応する XML 列挙値で表される、サポートされるテンプレート変数の種類を示します。
   
-|**テンプレート変数の型**|**説明**|
+|**テンプレート変数の種類**|**説明**|
 |:-----|:-----|
-|**entityVariable** <br/> |ユーザー、グループ、またはです。  <br/> |
-|**linkVariable** <br/> |リンクです。  <br/> |
-|**listVariable** <br/> |オブジェクトのグループです。  <br/> |
-|**pictureVariable** <br/> |画像です。  <br/> |
-|**publisherVariable** <br/> |活動の出版社では、アイテムをフィードします。  <br/> |
-|**textVariable** <br/> |テキストのブロックです。  <br/> |
+|**entityvariable** <br/> |個人、グループ、または事柄。  <br/> |
+|**linkvariable** <br/> |リンク。  <br/> |
+|**listvariable** <br/> |オブジェクトのグループ。  <br/> |
+|**ピクチャ変数** <br/> |画像です。  <br/> |
+|**publisherVariable** <br/> |アクティビティフィードアイテムの発行元。  <br/> |
+|**textvariable** <br/> |テキストのブロック。  <br/> |
    
-テンプレート変数の各タイプには、その変数に関するデータを指定する要素が必要でした。 テンプレート変数の指定は次のとおりです。
+各種類のテンプレート変数には、その変数に関するデータを指定するために必要な要素があります。 テンプレート変数は次のように指定されます。
   
 `<templateVariable type="variable type">`
   
-## <a name="list-template-variable"></a>リストのテンプレート変数
+## <a name="list-template-variable"></a>リストテンプレート変数
 
-リスト内で、( **listVariable**および**リスト項目**の要素で区切られた) 次のように格納されているテンプレートの変数を指定できます。 
+リスト内に含まれるテンプレート変数 ( **listvariable**および**listItems**要素で区切られたもの) を次のように指定できます。 
   
 `<simpleTemplateVariable type="variable type of text, link, or picture">`
   
-**ListVariable**型のテンプレート変数は、オブジェクトのコンテナーです。 これは、コンマで区切られた (の種類のアイテム、 **linkVariable**または**textVariable** ) または ( **pictureVariable**型) の画像を含めることができます。 リストは、5 つのリンク アイテム、5 つのテキスト、または 5 つの画像を含むことができます。 
+**listvariable**型のテンプレート変数は、オブジェクトのコンテナーです。 このオブジェクトには、( **linkvariable**または**textvariable**型の) (または、図の**変数**型の) コンマ区切りのアイテムを含めることができます。 リストには最大5つのリンク項目、5つのテキスト項目、または5つの画像を含めることができます。 
   
-Outlook ソーシャル コネクタ (OSC) は、Windows のシステム ロケール] ボックスの一覧項目をリンクまたはテキストをローカライズします。
+Outlook Social Connector (.osc) は、Windows システムロケールに従って、リンクまたはテキストリストアイテムをローカライズします。
   
-正しく解析して、アクティビティ フィードのアイテムに画像を表示、リスト内の画像を含める必要があります。 すべての画像は、高さ 52 ピクセルにサイズ変更されます。 画像の幅のサイズは変更されません。
+アクティビティフィードアイテムで画像を正しく解析して表示するには、画像をリストに含める必要があります。 すべての図の高さを52ピクセルに変更します。 図の幅は変更されません。
   
-## <a name="template-variable-elements"></a>テンプレートの可変要素
+## <a name="template-variable-elements"></a>テンプレート変数要素
 
-このセクションでは、テンプレート変数の種類ごとにサポートされる必須および省略可能な要素について説明します。
+このセクションでは、テンプレート変数の種類ごとに、必要な要素とオプションの要素について説明します。
   
-### <a name="entityvariable"></a>entityVariable
+### <a name="entityvariable"></a>entityvariable
 
 |**要素**|**説明**|
 |:-----|:-----|
-|**name** <br/> |変数の名前です。 必須。  <br/> |
-|**id** <br/> |ユーザーの一意の ID です。 必須。  <br/> |
-|**nameHint** <br/> |フィードの項目に表示される名前です。 省略可能。  <br/> |
-|**profileUrl** <br/> |として使用するハイパーリンクでは、フィードの項目では、人の名前の人の名前が存在する場合、ユーザーのプロファイルの URL です。 省略可能。  <br/> |
-|**emailAddress** <br/> |Outlook で、このユーザーの連絡先情報を更新するために使用される電子メール アドレスです。 省略可能。  <br/> |
+|**name** <br/> |変数の名前。 必須です。  <br/> |
+|**id** <br/> |ユーザーの一意の ID。 必須です。  <br/> |
+|**namehint** <br/> |フィードアイテムに表示する名前を指定します。 省略可能です。  <br/> |
+|**profileurl** <br/> |ユーザーの名前が存在する場合に、フィードアイテムでのユーザー名のハイパーリンクとして使用される個人のプロファイルの URL。 省略可能です。  <br/> |
+|**emailAddress** <br/> |このユーザーの連絡先情報を Outlook で更新するために使用される電子メールアドレス。 省略可能です。  <br/> |
    
-### <a name="linkvariable"></a>linkVariable
+### <a name="linkvariable"></a>linkvariable
 
 |**要素**|**説明**|
 |:-----|:-----|
-|**name** <br/> |変数の名前です。 必須。  <br/> |
-|**value** <br/> |このリンクの URL です。 必須。  <br/> |
-|**text** <br/> |URL 自体の代わりに表示するリンク テキストです。 省略可能。  <br/> |
+|**name** <br/> |変数の名前。 必須です。  <br/> |
+|**value** <br/> |このリンクの URL。 必須です。  <br/> |
+|**text** <br/> |URL 自体の代わりに表示するリンクテキスト。 省略可能です。  <br/> |
    
-### <a name="listvariable"></a>listVariable
+### <a name="listvariable"></a>listvariable
 
 |**要素**|**説明**|
 |:-----|:-----|
-|**name** <br/> |変数の名前です。 必須。  <br/> |
-|**リスト項目** <br/> |リスト内の項目のコンテナーです。 必須。  <br/> |
+|**name** <br/> |変数の名前。 必須です。  <br/> |
+|**listItems** <br/> |リスト内のアイテムのコンテナー。 必須です。  <br/> |
    
-### <a name="picturevariable"></a>pictureVariable
+### <a name="picturevariable"></a>ピクチャ変数
 
 |**要素**|**説明**|
 |:-----|:-----|
-|**name** <br/> |変数の名前です。 必須。  <br/> |
-|**value** <br/> |画像の URL です。 必須。  <br/> |
-|**altText** <br/> |ユーザー補助と、ユーザーが画像上でマウス ポインターを移動するとに表示する代替テキスト。 省略可能。  <br/> |
-|**href** <br/> |目的のターゲット**値**の要素によって指定された画像の URL でない場合、画像をクリックするとを使用するハイパーリンク。 省略可能。  <br/> |
+|**name** <br/> |変数の名前。 必須です。  <br/> |
+|**value** <br/> |図の URL を示します。 必須です。  <br/> |
+|**alttext** <br/> |ユーザー補助のために表示する代替テキスト、およびユーザーがマウスポインターを画像の上に移動したとき。 省略可能です。  <br/> |
+|**href** <br/> |目的のターゲットが**value**要素で指定された画像の URL ではない場合に、ユーザーがピクチャをクリックしたときに使用するハイパーリンク。 省略可能です。  <br/> |
    
 ### <a name="publishervariable"></a>publisherVariable
 
 |**要素**|**説明**|
 |:-----|:-----|
-|**name** <br/> |変数の名前です。 必須。  <br/> |
-|**id** <br/> |ユーザーの一意の ID です。 必須。  <br/> |
-|**nameHint** <br/> |フィードの項目に表示される名前です。 省略可能。  <br/> |
-|**profileUrl** <br/> |として使用するハイパーリンクでは、フィードの項目では、人の名前の人の名前が存在する場合、ユーザーのプロファイルの URL です。 省略可能。  <br/> |
-|**emailAddress** <br/> |Outlook で、このユーザーの連絡先情報を更新するために使用される電子メール アドレスです。 省略可能。  <br/> |
+|**name** <br/> |変数の名前。 必須です。  <br/> |
+|**id** <br/> |ユーザーの一意の ID。 必須です。  <br/> |
+|**namehint** <br/> |フィードアイテムに表示する名前を指定します。 省略可能です。  <br/> |
+|**profileurl** <br/> |ユーザーの名前が存在する場合に、フィードアイテムでのユーザー名のハイパーリンクとして使用される個人のプロファイルの URL。 省略可能です。  <br/> |
+|**emailAddress** <br/> |このユーザーの連絡先情報を Outlook で更新するために使用される電子メールアドレス。 省略可能です。  <br/> |
    
-### <a name="textvariable"></a>textVariable
+### <a name="textvariable"></a>textvariable
 
 |**要素**|**説明**|
 |:-----|:-----|
-|**name** <br/> |変数の名前です。 必須。  <br/> |
-|**value** <br/> |表示するテキスト。 省略可能。  <br/> |
+|**name** <br/> |変数の名前。 必須です。  <br/> |
+|**value** <br/> |表示するテキストを入力します。 省略可能です。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [フィード アイテムの活動項目の XML の概要](overview-of-xml-for-an-activity-feed-item.md)  
-- [activityDetails 要素](activitydetails-element.md)  
-- [activityTemplateContainer 要素](activitytemplatecontainer-element.md)  
-- [アクティビティを正しく表示するためのガイドライン](guidelines-for-properly-displaying-activities.md)  
-- [活動の XML](xml-for-activities.md)  
-- [Outlook ソーシャル コネクタ プロバイダーの XML スキーマ](outlook-social-connector-provider-xml-schema.md)
-- [OSC の XML スキーマを使用してプロバイダーの開発](developing-a-provider-with-the-osc-xml-schema.md)
+- [アクティビティフィードアイテムの XML の概要](overview-of-xml-for-an-activity-feed-item.md)  
+- [activitydetails 要素](activitydetails-element.md)  
+- [activitytemplatecontainer 要素](activitytemplatecontainer-element.md)  
+- [アクティビティを適切に表示するためのガイドライン](guidelines-for-properly-displaying-activities.md)  
+- [アクティビティの XML](xml-for-activities.md)  
+- [Outlook Social Connector プロバイダーの XML スキーマ](outlook-social-connector-provider-xml-schema.md)
+- [.osc XML スキーマを使用してプロバイダーを開発する](developing-a-provider-with-the-osc-xml-schema.md)
 

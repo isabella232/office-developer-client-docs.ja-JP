@@ -1,5 +1,5 @@
 ---
-title: IMAPIFormShutdownForm
+title: imapiformshutdownform
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: f1e2a526-40ad-4a93-908f-8ab9a65928a8
-description: '�ŏI�X�V��: 2011�N7��23��'
+description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 073a76766a296d86e7a23809921b832d494a8f1b
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329478"
 ---
 # <a name="imapiformshutdownform"></a>IMAPIForm::ShutdownForm
 
@@ -35,21 +35,21 @@ HRESULT ShutdownForm(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulSaveOptions_
+ _ulsaveoptions_
   
-> [in]フォームを閉じる前にフォーム内のデータを保存するかどうか方法を制御する値です。 次のフラグのいずれかを設定できます。
+> 順番フォームを閉じる前に、フォーム内のデータを保存するかどうかを制御する値を指定します。 次のいずれかのフラグを設定できます。
     
 SAVEOPTS_NOSAVE 
   
-> フォーム データを保存することがありませんか。
+> フォームデータは保存しないようにします。
     
 SAVEOPTS_PROMPTSAVE 
   
-> ユーザーは、フォーム内で変更されたデータを保存する求められます。
+> ユーザーは、変更されたデータをフォームに保存するかどうかを確認するメッセージを表示する必要があります。
     
 SAVEOPTS_SAVEIFDIRTY 
   
-> 最後の保存以降変更されている場合、フォーム データを保存する必要があります。 ユーザー インターフェイスが表示されていない場合は、フォームを SAVEOPTS_NOSAVE オプションの機能を使用して切り替えることができますオプションで。
+> 前回の保存以降に変更されている場合は、フォームデータを保存する必要があります。 ユーザーインターフェイスが表示されていない場合は、必要に応じて、SAVEOPTS_NOSAVE オプションの機能を使用してフォームを切り替えることができます。
     
 ## <a name="return-value"></a>戻り値
 
@@ -59,42 +59,42 @@ S_OK
     
 E_UNEXPECTED 
   
-> **ShutdownForm**の前回の呼び出しで、フォームが既に閉じました。
+> このフォームは、以前に**shutdownform**を呼び出したときに既に閉じられています。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-フォームの閲覧者は、フォームを終了するのには**IMAPIForm::ShutdownForm**メソッドを呼び出します。 
+フォームビューアーは、 **imapiform:: shutdownform**メソッドを呼び出してフォームを閉じます。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**ShutdownForm**の実装では、次のタスクを実行します。
+**shutdownform**の実装で、次のタスクを実行します。
   
-1. 確認しているビューアーが既に呼び出されません**ShutdownForm**とがある場合は E_UNEXPECTED を返します。 ではありませんが、チェックする必要があります。
+1. viewer が**shutdownform**を呼び出していないことを確認し、E_UNEXPECTED がある場合はそれを返します。 このことはほとんどありませんが、確認する必要があります。
     
-2. 処理が完了するまで、フォームと内部データ構造体のストレージが利用可能なままにするために、フォームの[IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx)メソッドを呼び出します。 
+2. フォームの[IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx)メソッドを呼び出して、フォームおよび内部データ構造のストレージを処理が完了するまで引き続き使用できるようにします。 
     
-3. フォームのデータに未保存の変更があるかどうかを決定します。 ビューアーの[IMAPIMessageSite::SaveMessage](imapimessagesite-savemessage.md)メソッドを呼び出すことによって、 _ulSaveOptions_パラメーターを設定する方法に応じて、保存されていないデータを保存します。 
+3. フォームのデータに保存されていない変更があるかどうかを確認します。 [IMAPIMessageSite:: SaveMessage](imapimessagesite-savemessage.md)メソッドを呼び出すことにより、 _ulsaveoptions_パラメーターの設定方法に従って未保存のデータを保存します。 
     
-4. フォームのユーザー インターフェイスのウィンドウを破棄します。
+4. フォームのユーザーインターフェイスウィンドウを破棄します。
     
-5. [](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドを呼び出すことによって、フォームのメッセージとメッセージのサイト オブジェクトを解放します。 
+5. [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドを呼び出して、フォームのメッセージおよびメッセージサイトオブジェクトを解放します。 
     
-6. [IMAPIViewAdviseSink::OnShutdown](imapiviewadvisesink-onshutdown.md)メソッドを呼び出すことによって登録されているすべての視聴者の保留中のシャット ダウンを通知します。 
+6. [IMAPIViewAdviseSink:: onshutdown](imapiviewadvisesink-onshutdown.md)メソッドを呼び出して、保留中のシャットダウンのすべての登録済みビューアーに通知します。 
     
-7. アドバイズ シンク ポインターを**null**に設定して、フォームの登録をキャンセルする[IMAPIViewContext::SetAdviseSink](imapiviewcontext-setadvisesink.md)メソッドを呼び出します。
+7. [imapiviewcontext:: SetAdviseSink](imapiviewcontext-setadvisesink.md)メソッドを呼び出して、アドバイズシンクポインターを**null**に設定することにより、フォームの通知の登録を取り消します。
     
-8. フォームのプロパティのメモリを解放する[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出します。 
+8. [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して、フォームのプロパティのメモリを解放します。 
     
-9. 手順 2 で行われた**AddRef**呼び出しに一致するフォームの**** メソッドを呼び出します。 
+9. 手順2で作成した**AddRef**呼び出しに一致するように、フォームの**IUnknown:: Release**メソッドを呼び出します。 
     
 10. S_OK ��Ԃ��܂��B
     
 > [!NOTE]
-> これらの操作を完了すると、呼び出される form オブジェクトにのみ有効なメソッドは、 [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx)インターフェイスから。 
+> これらの操作が完了した後、呼び出される可能性のある form オブジェクトの有効なメソッドは、 [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx)インターフェイスからのものだけです。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**ShutdownForm**制御が戻るとき、エラーを返すかどうかに関係なく、**リ ス**のメソッドを呼び出して、フォームを離します。 **ShutdownForm**によって返されるエラーを無視できます。
+エラーが返されるかどうかに関係なく、 **shutdownform**から制御が戻ると、 **IUnknown:: release**メソッドを呼び出してフォームを解放します。 **shutdownform**によって返されるエラーは無視しても問題ありません。
   
 ## <a name="see-also"></a>関連項目
 

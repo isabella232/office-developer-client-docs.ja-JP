@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: fd5ef226-39e6-4604-a751-2f6cc49c4895
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7be2c8176e890e71963fa9c58ebea6b5bb510fe1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8ffff7958ab405e488ac2ce45bae43b78da7b0f4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331599"
 ---
 # <a name="cbnewmtsid"></a>CbNewMTSID
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-指定したサイズのメッセージ転送エージェントの識別子を持つ新しい[MTSID](mtsid.md)構造体に割り当てるバイト数を計算します。 
+指定したサイズのメッセージ転送エージェント識別子を使用して、新しい[MTSID](mtsid.md)構造に割り当てる必要があるバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |**MTSID** <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |**MTSID** <br/> |
    
 ```cpp
 CbNewMTSID (_cb)
@@ -40,7 +40,7 @@ CbNewMTSID (_cb)
 
  __cb_
   
-> **MTSID**新しい構造体に含まれるメッセージ転送エージェント識別子のバイト数をカウントします。 
+> 新しい**MTSID**構造に含めるメッセージ転送エージェント識別子のバイト数。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -49,5 +49,5 @@ CbNewMTSID (_cb)
 [MTSID](mtsid.md)
 
 
-[構造体に関連するマクロ](macros-related-to-structures.md)
+[構造に関連するマクロ](macros-related-to-structures.md)
 

@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: ba33866a-c9c4-454a-9549-72455c61ee97
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f01d0ad7e7e6b1ad7a5e4c4838bb46ca143e0968
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a922b8bb21bfd534935d4d1706a6ccfd15c2da5c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332077"
 ---
 # <a name="checkparameters"></a>CheckParameters
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI によって呼び出されるサービス プロバイダーのメソッドのデバッグ パラメーターを検証するために内部の関数を呼び出します。 
+内部関数を呼び出して、MAPI によって呼び出されるサービスプロバイダーメソッドのデバッグパラメーターを検証します。 
   
 |||
 |:-----|:-----|
 |ヘッダー ファイル:  <br/> |Mapival.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |サービス プロバイダー  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |サービス プロバイダー  <br/> |
    
 ```cpp
 HRESULT CheckParameters(
@@ -42,22 +42,22 @@ HRESULT CheckParameters(
 
 ## <a name="parameters"></a>パラメーター
 
- _」方法_
+ _eMethod_
   
-> [in]確認する方法を列挙型を指定します。 
+> 順番検証するメソッドを列挙で指定します。 
     
- _First/先頭のレコード_
+ _First_
   
-> [in]スタック上の最初の引数へのポインター。
+> 順番スタック上の最初の引数へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > 呼び出しが成功しました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-[CheckParms](checkparms.md)マクロでは、 **CheckParameters**マクロを置き換えられています。 すべてのプラットフォームでは、 **CheckParms**をお勧めします。 
+checkparameters マクロによって**checkparameters**マクロ[](checkparms.md)が置き換えられました。 **checkparms**は、すべてのプラットフォームで推奨されます。 
   
 

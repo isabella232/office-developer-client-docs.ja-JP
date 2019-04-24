@@ -12,51 +12,51 @@ api_type:
 - HeaderDef
 ms.assetid: f86f7c59-42ab-4ac0-80fe-c985103e6bd6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9db28f282baf18ec983f6f51c989bacea4cf76f2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c64288f393f15ee330065a43a92930f2e6f4e134
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331907"
 ---
 # <a name="pidtagcontentreturnrequested-canonical-property"></a>PidTagContentReturnRequested 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-TRUE が含まれる場合、メッセージは配信不能レポートに戻す必要があります。 
+メッセージが配信不能レポートと共に返される必要がある場合は、TRUE を指定します。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_CONTENT_RETURN_REQUESTED  <br/> |
-|識別子:  <br/> |0x000A  <br/> |
+|識別子:  <br/> |0x000a  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |レポート  <br/> |
+|エリア:  <br/> |レポート  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティが設定されていない MAPI により真の価値を持つものとして扱います。 
+このプロパティが設定されていない場合、MAPI は TRUE の値を持つものとして扱います。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

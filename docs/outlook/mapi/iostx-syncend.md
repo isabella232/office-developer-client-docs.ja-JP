@@ -1,5 +1,5 @@
 ---
-title: IOSTXSyncEnd
+title: iostxsyncend
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: da9de705-bdab-6cb8-35ea-61f03cdc4ff5
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: fd5b2ed23eba30cbe861a20c4fd100cb8ea1aeb0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 364914df1c5897241dfeb89cce2cc3c62018ce24
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332152"
 ---
 # <a name="iostxsyncend"></a>IOSTX::SyncEnd
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 現在の状態で同期を終了し、その状態を終了します。
   
@@ -31,9 +31,9 @@ ms.locfileid: "22568841"
 HRESULT SyncEnd();
 ```
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-クライアントは、 [IOSTX::SyncBeg](iostx-syncbeg.md)を呼び出すたびに**IOSTX::SyncEnd**を呼び出す必要があります。 対応するデータ構造は、クライアントが Outlook では、内部の状態をクリーンアップできるように現在の状態を完了正常にかどうかを示す情報を保持します。
+[iostx:: SyncBeg](iostx-syncbeg.md)への呼び出しごとに、クライアントは**iostx:: syncend**を呼び出す必要があります。 対応するデータ構造には、Outlook が内部状態をクリーンアップできるように、クライアントが現在の状態を正常に完了したかどうかを示す情報が保持されます。
   
 ## <a name="see-also"></a>関連項目
 
@@ -54,5 +54,5 @@ HRESULT SyncEnd();
 [IOSTX : IUnknown](iostxiunknown.md)
 
 
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
 

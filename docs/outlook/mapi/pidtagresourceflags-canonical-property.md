@@ -12,35 +12,35 @@ api_type:
 - COM
 ms.assetid: 69be9ad3-006a-459e-9cd4-eb3f609d71ad
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 875b37183134a6c5beca76ab7910cf601d1b6175
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2fb9eed0beaf7269ac90a021dae650355484ebc2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32330185"
 ---
 # <a name="pidtagresourceflags-canonical-property"></a>PidTagResourceFlags 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ サービスおよびプロバイダーのフラグのビットマスクを格納します。
+メッセージサービスとプロバイダーのフラグのビットマスクを含みます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_RESOURCE_FLAGS  <br/> |
 |識別子:  <br/> |0x3009  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |一般的な MAPI  <br/> |
+|エリア:  <br/> |MAPI 共通  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティでは、メッセージ サービス、サービス プロバイダー、または状態オブジェクトの特性について説明します。 このプロパティに設定されているフラグは、そのコンテキストに依存します。 などのいくつかのフラグは、オブジェクトのステータスおよびその他のフラグをメッセージ サービス テーブルの列に対してのみに対してのみ有効です。 
+このプロパティは、メッセージサービス、サービスプロバイダー、または status オブジェクトの特性を表します。 このプロパティに設定されているフラグは、そのコンテキストに依存します。 たとえば、一部のフラグは、ステータスオブジェクトと、メッセージサービステーブル内の列の他のフラグにのみ有効です。 
   
-フラグは、3 つのクラス: 静的で、変更可能なおよび動的な。 静的なフラグは、MAPISVC 内のデータから、MAPI によって設定されます。INF し、改ざんを防止します。 MAPISVC から MAPI で変更可能なフラグが設定されています。INF が後で変更できます。 動的フラグを設定し、MAPI の方法をリセットできます。
+フラグには、静的、変更可能、動的の3つのクラスがあります。 静的フラグは、mapisvc.inf のデータから MAPI によって設定されます。INF。変更されません。 変更可能なフラグは、MAPI によって mapisvc.inf から設定されます。INF は後で変更できます。 動的フラグは MAPI メソッドによって設定およびリセットできます。
   
-メッセージ サービスは、次のフラグの 1 つ以上設定できますこのプロパティにします。
+メッセージサービスの場合、このプロパティには次の1つ以上のフラグを設定できます。
   
 SERVICE_CREATE_WITH_STORE 
   
@@ -48,89 +48,89 @@ SERVICE_CREATE_WITH_STORE
     
 SERVICE_DEFAULT_STORE 
   
-> 動的です。 メッセージ サービスには、既定のストアが含まれています。 削除するか、プロファイルからこのサービスを移動する前に確認のプロンプトを表示、ユーザー インターフェイスが表示されます。 
+> な. メッセージサービスには、既定のストアが含まれています。 このサービスをプロファイルから削除または移動する前に、ユーザーに確認を求めるメッセージが表示されます。 
     
 SERVICE_NO_PRIMARY_IDENTITY 
   
-> 静的です。 サービス レベルのフラグなしでメッセージ サービス プロバイダーの使用できることを id を指定するを示すために設定する必要があります。 セットは、このフラグまたは SERVICE_PRIMARY_IDENTITY 必要があります。
+> 静電気. メッセージサービスのプロバイダーが id の提供に使用できないことを示すために設定する必要があるサービスレベルフラグ。 このフラグまたは SERVICE_PRIMARY_IDENTITY のどちらかを設定する必要がありますが、両方を設定することはできません。
     
 SERVICE_PRIMARY_IDENTITY 
   
-> 変更可能です。 対応するメッセージ サービスには、このセッションのプライマリ id に使用されるプロバイダーが含まれています。 [IMsgServiceAdmin::SetPrimaryIdentity](imsgserviceadmin-setprimaryidentity.md)を使用すると、このフラグを設定できます。 セットは、このフラグまたは SERVICE_NO_PRIMARY_IDENTITY 必要があります。 
+> 可能. 対応するメッセージサービスには、このセッションのプライマリ id に使用されるプロバイダーが含まれています。 このフラグを設定するには、 [IMsgServiceAdmin:: setprimaryidentity](imsgserviceadmin-setprimaryidentity.md)を使用します。 このフラグまたは SERVICE_NO_PRIMARY_IDENTITY のどちらかを設定する必要がありますが、両方を設定することはできません。 
     
 SERVICE_SINGLE_COPY 
   
-> 静的です。 作成するか、このメッセージ サービスをサービスが既に存在するプロファイルにコピーしようが失敗します。 1 つのコピーを作成するのには、メッセージ サービスは、MAPISVC でのサービスのセクションに**PR_RESOURCE_FLAGS**プロパティを追加します。INF、このフラグを設定します。 
+> 静電気. サービスが既に存在するプロファイルにこのメッセージサービスを作成またはコピーしようとすると、失敗します。 単一コピーのメッセージサービスを作成するには、mapisvc.inf のサービスのセクションに**PR_RESOURCE_FLAGS**プロパティを追加します。INF を設定し、このフラグを設定します。 
     
-サービス プロバイダーには、次のフラグの 1 つ以上設定できますで**PR_RESOURCE_FLAGS**。
+サービスプロバイダーの場合、 **PR_RESOURCE_FLAGS**には次のフラグのうち1つ以上を設定できます。
   
 HOOK_INBOUND 
   
-> 静的です。 スプーラーのフックは、受信メッセージを処理する必要があります。
+> 静電気. スプーラーフックは、受信メッセージを処理する必要があります。
     
 HOOK_OUTBOUND 
   
-> 静的です。 スプーラーのフックは、送信メッセージを処理する必要があります。 
+> 静電気. スプーラーフックは、送信メッセージを処理する必要があります。 
     
 STATUS_DEFAULT_OUTBOUND 
   
-> 変更可能です。 プロファイルには、このトランスポート プロバイダーの複数のインスタンスが含まれている場合、この id を送信メッセージに適用する必要があります。 これは、プロファイルに 1 つのトランスポート プロバイダーの複数のインスタンスが表示される場合に発生します。
+> 可能. プロファイルにこのトランスポートプロバイダーの複数のインスタンスが含まれている場合は、この id を送信メッセージに適用する必要があります。 これは、1つのトランスポートプロバイダーの複数のインスタンスがプロファイルに表示された場合に発生する可能性があります。
     
 STATUS_DEFAULT_STORE 
   
-> 変更可能です。 このメッセージ ・ ストアは、プロファイルの既定のストアです。 
+> 可能. このメッセージストアは、プロファイルの既定のストアです。 
     
 STATUS_NEED_IPM_TREE 
   
-> 動的です。 個人間メッセージ (IPM) のルート フォルダーを含めて、このメッセージ ストア内の標準のフォルダーは、まだ確認されていません。 MAPI では、設定し、このフラグをクリアします。 
+> な. このメッセージストアの標準フォルダー (個人間メッセージ (IPM) ルートフォルダーを含む) はまだ検証されていません。 MAPI は、このフラグを設定してクリアします。 
     
 STATUS_NO_DEFAULT_STORE 
   
-> 静的です。 このメッセージ ・ ストアは、プロファイルの既定のメッセージ ストアになることはありません。
+> 静電気. このメッセージストアは、プロファイルの既定のメッセージストアになることができません。
     
 STATUS_NO_PRIMARY_IDENTITY 
   
-> 静的です。 このプロバイダーは、その [状態] 行の id を提供していません。 このフラグまたは STATUS_PRIMARY_IDENTITY のいずれかを設定する必要があります。
+> 静電気. このプロバイダーは、ステータス行で id を提供しません。 このフラグまたは STATUS_PRIMARY_IDENTITY のいずれかを設定する必要があります。
     
 STATUS_OWN_STORE 
   
-> 静的です。 このトランスポート プロバイダーは、メッセージ ストアと密接に関連し、のステータス行に、 **PR_OWN_STORE_ENTRYID** ([PidTagOwnStoreEntryId](pidtagownstoreentryid-canonical-property.md)) のプロパティを提供します。
+> 静電気. このトランスポートプロバイダーは、メッセージストアと密に結合されており、そのステータス行の**PR_OWN_STORE_ENTRYID** ([PidTagOwnStoreEntryId](pidtagownstoreentryid-canonical-property.md)) プロパティを furnishes します。
     
 STATUS_PRIMARY_IDENTITY 
   
-> 変更可能です。 このプロバイダーがセッションのプライマリ id を提供します。[IMAPISession::QueryIdentity](imapisession-queryidentity.md)から id を使用する際のオブジェクトのエントリ id が返されます。 このフラグまたは**STATUS_NO_PRIMARY_IDENTITY**のいずれかを設定する必要があります。 
+> 可能. このプロバイダーは、セッションのプライマリ id を furnishes します。id を表すオブジェクトのエントリ識別子は、 [imapisession:: queryidentity](imapisession-queryidentity.md)から返されます。 このフラグまたは**STATUS_NO_PRIMARY_IDENTITY**のいずれかを設定する必要があります。 
     
 STATUS_PRIMARY_STORE 
   
-> 変更可能です。 このメッセージ ストアは、クライアント アプリケーションがログオンするときに使用します。 開くと、このストアは、プロファイルの既定のストアとして設定してください。 
+> 可能. このメッセージストアは、クライアントアプリケーションがログオンするときに使用されます。 このストアを開くと、プロファイルの既定のストアとしてこのストアを設定する必要があります。 
     
 STATUS_SECONDARY_STORE 
   
-> 変更可能です。 このメッセージ ストアは、クライアント アプリケーションがログオンすると、プライマリ ストアが使用できない場合に使用します。 開くと、このストアは、プロファイルの既定のストアとして設定してください。 
+> 可能. このメッセージストアは、クライアントアプリケーションがログオンしたときにプライマリストアが使用できない場合に使用されます。 このストアを開くと、プロファイルの既定のストアとしてこのストアを設定する必要があります。 
     
 STATUS_SIMPLE_STORE 
   
-> 動的です。 このメッセージ ・ ストアは、簡易 MAPI での既定のメッセージ ストアとして使用されます。
+> な. このメッセージストアは、既定のメッセージストアとして簡易 MAPI によって使用されます。
     
 STATUS_TEMP_SECTION 
   
-> 動的です。 このメッセージ ・ ストアは、メッセージ ストアの表には公開しないようにし、ログオフ後、プロファイルから削除されます。 
+> な. このメッセージストアは、メッセージストアテーブルに公開しないでください。ログオフ後にプロファイルから削除されます。 
     
 STATUS_XP_PREFER_LAST 
   
-> 静的です。 このトランスポートは、複数のトランスポート プロバイダーは、メッセージを送信できなかったときにメッセージを送信する選択されている最後のトランスポートを期待しています。
+> 静電気. このトランスポートは、複数のトランスポートプロバイダーがメッセージを送信できる場合に、メッセージを送信するために選択された最後のトランスポートであると想定します。
     
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
@@ -141,9 +141,9 @@ Mapitags.h
 [PidTagIdentityEntryId 標準プロパティ](pidtagidentityentryid-canonical-property.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

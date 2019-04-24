@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 1a23e555-be26-43fb-a715-cfc4ffa623cd
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b4dd7e9715c2d3c99eda44f7eed0b3360a2e33be
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e6a180ceb325a705ebf226bb728c52cce7396490
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328965"
 ---
 # <a name="imapitablecollapserow"></a>IMAPITable::CollapseRow
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-リーフ行がテーブルのビューからのカテゴリに属する、下位の見出しを削除する、拡張テーブルのカテゴリを折りたたみます。
+拡張されたテーブルカテゴリを折りたたみ、テーブルビューからそのカテゴリに属する下位レベルの見出しとリーフ行をすべて削除します。
   
 ```cpp
 HRESULT CollapseRow(
@@ -40,21 +40,21 @@ ULONG FAR * lpulRowCount
 
  _cbInstanceKey_
   
-> [in]_PbInstanceKey_パラメーターが指す、PR_INSTANCE_KEY プロパティ内のバイト数です。 
+> 順番_pbInstanceKey_パラメーターが指す PR_INSTANCE_KEY プロパティのバイト数。 
     
  _pbInstanceKey_
   
-> [in]カテゴリの見出しの行を識別する**PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) のプロパティへのポインター。 
+> 順番カテゴリの見出し行を識別する**PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) プロパティへのポインター。 
     
  _ulFlags_
   
-> 予約されています。0 にする必要があります。
+> 予約語0である必要があります。
     
- _lpulRowCount_
+ _lアウト rowcount_
   
-> [out]テーブル ビューから削除された行の総数へのポインター。
+> 読み上げテーブルビューから削除されている行の合計数へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -62,29 +62,29 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> _PbInstanceKey_パラメーターで指定された行が存在しません。 
+> _pbInstanceKey_パラメーターで指定された行が存在しません。 
     
 MAPI_E_INVALID_ENTRYID 
   
-> _PbInstanceKey_パラメーターで指定された行が存在しません。 このエラーは、代わりに MAPI_E_NOT_FOUND です。サービス プロバイダーは、いずれかを返すことができます。 
+> _pbInstanceKey_パラメーターで指定された行が存在しません。 このエラーは MAPI_E_NOT_FOUND の代わりになります。サービスプロバイダーはどちらかを返すことができます。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPITable::CollapseRow**メソッドは、テーブルを解除し、表形式ビューから削除します。 _PbInstanceKey_パラメーターが指す、 **PR_INSTANCE_KEY**プロパティで識別される行で始まる行が折りたたまれます。 _LpulRowCount_パラメーターの内容をビューから削除された行の数が返されます。 
+**IMAPITable:: CollapseRow**メソッドは、テーブルのカテゴリを折りたたんで、テーブルビューから削除します。 行は、 _pbInstanceKey_パラメーターによって示される**PR_INSTANCE_KEY**プロパティによって識別される行から折りたたまれます。 ビューから削除された行の数は、 _lルー rowcount_パラメーターの内容で返されます。 
   
-折りたたみ操作の結果として、ビューから削除されたテーブルの行の通知が生成されません。 
+折りたたみ操作の結果としてビューから削除されたテーブルの行に対して通知が生成されることはありません。 
   
-表示のブックマークで定義されている行が折りたたまれると、ブックマークが表示されている次の行を指すように移動します。 
+ブックマークによって定義された行が非表示になっている場合、ブックマークは次の表示される行を指すように移動されます。 
   
-分類されたテーブルの詳細については、[並べ替えや分類](sorting-and-categorization.md)を参照してください。
+カテゴリ別テーブルの詳細については、「[並べ替えと分類](sorting-and-categorization.md)」を参照してください。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::DoExpandCollapse  <br/> |MFCMAPI では、 **IMAPITable::CollapseRow**メソッドを使用して、テーブルのカテゴリを折りたたみます。  <br/> |
+|ContentsTableListCtrl  <br/> |CContentsTableListCtrl::D oexpandcollapse  <br/> |mfcmapi は、 **IMAPITable:: CollapseRow**メソッドを使用して、テーブルカテゴリを折りたたみます。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

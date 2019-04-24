@@ -7,64 +7,64 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 366550fa-e787-4ca0-bfe1-a7890dfc27c6
-description: アクティビティ フィードは、ソーシャル ネットワーク上で発生する 1 つまたは複数のアクティビティで構成されています。 各アクティビティ フィードは、activityFeed 要素によって表されるし、の特徴は、これら 3 つの情報。
-ms.openlocfilehash: 318875aeb6312a3710654d129f3f48139ff7ef12
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: アクティビティフィードは、ソーシャルネットワーク上で発生する1つ以上のアクティビティで構成されます。 各アクティビティフィードは activityfeed 要素で表され、次の3つの情報によって特徴付けられます。
+ms.openlocfilehash: 971c54cf69a65bebbe4fd04e8608e88b89145bb4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329294"
 ---
 # <a name="overview-of-xml-for-an-activity-feed-item"></a>アクティビティ フィード アイテムのための XML の概要
 
-アクティビティ フィードは、ソーシャル ネットワーク上で発生する 1 つまたは複数のアクティビティで構成されています。 各アクティビティ フィードは、 **activityFeed**要素によって表されるし、の特徴は、これら 3 つの情報。 
+アクティビティフィードは、ソーシャルネットワーク上で発生する1つ以上のアクティビティで構成されます。 各アクティビティフィードは**activityfeed**要素で表され、次の3つの情報によって特徴付けられます。 
   
-- **ネットワーク**-活動の起点となるソーシャル ネットワークの名前です。
+- **network**—アクティビティが開始されたソーシャルネットワークの名前。
     
-- **活動**ソーシャル ネットワークにログオンしたユーザーのアカウントで発生するアクティビティのコンテナーです。
+- **アクティビティ**—ソーシャルネットワークにログオンしているユーザーのアカウントで行われているアクティビティのコンテナー。
     
-- **テンプレート**など**の活動**に対応する活動項目を表示するために使用するテンプレートのコンテナーです。
+- **templates**—**アクティビティ**に対応するアクティビティアイテムを表示するために使用されるテンプレートのコンテナー。
     
-アクティビティ フィードのアイテムを作成するには、Outlook ソーシャル コネクタ (OSC) プロバイダーの拡張機能の XML スキーマに準拠する必要があります。 アクティビティ フィードの XML の構造を図 1 に示します。
+アクティビティフィードアイテムを作成するには、Outlook Social Connector (.osc) プロバイダ拡張 XML スキーマに準拠している必要があります。 図1は、アクティビティフィード XML データ構造を示しています。
   
-**図 1 です。アクティビティ フィードの XML データ構造**
+**図1。アクティビティフィード XML データ構造**
 
 ![アクティビティ XML の構造](media/odc_ol14_ta_OSC_Fig06.gif)
   
-各アクティビティでは、フィードのアイテム、このスキーマの 2 つの最も重要な部分は、 **activityDetails**と**activityTemplateContainer**の要素。 
+アクティビティフィードアイテムごとに、このスキーマの最も重要な2つの部分は**activitydetails**要素と**activitytemplatecontainer**要素です。 
   
-- **ActivityDetails**要素は、各アクティビティは、アクティビティの所有者の名前またはアップロードする画像の URL などのアイテムのフィードに固有の情報を格納します。 
+- **activitydetails**要素は、アクティビティ所有者の名前や、アップロードされた画像の URL など、アクティビティフィードアイテムごとに固有の情報を格納します。 
     
-- **ActivityTemplateContainer**要素の形式を格納する、またはフィード項目の各アクティビティのレイアウトです。 テンプレート、複数のフィード項目を再利用できる個々 の**activityTemplate**の要素で表されるので構成されます。 
+- **activitytemplatecontainer**要素は、各アクティビティフィードアイテムの形式またはレイアウトを格納します。 個別の**activitytemplate**要素で表されるテンプレートで構成され、複数のフィードアイテムに再利用できます。 
     
-個々 のアクティビティ フィードのアイテムには、 **activityTemplate**要素は、次の 4 つの情報を指定します。 
+個別のアクティビティフィードアイテムの場合、 **activitytemplate**要素は次の4つの情報を指定します。 
   
-- **アイコン**-フィード項目のアクティビティを表示するアイコンの URL を指定します。
+- **icon**—アクティビティフィードアイテムを表示するアイコンの URL を指定します。
     
-- **タイトル**: アクティビティ フィードの項目を説明します。
+- [**タイトル**]: アクティビティフィードアイテムを記述します。
     
-- **タイプ**ステータス、写真、またはドキュメントの更新など、活動の種類を指定します。
+- **種類**—状態、写真、ドキュメントの更新など、アクティビティの種類を指定します。
     
-- **データ**: アクティビティ フィードのアイテムに表示されるすべての追加情報を指定します。
+- **データ**—アクティビティフィードアイテムと共に表示されるその他の情報を指定します。
     
 > [!TIP]
-> アクティビティ フィードに表示されるアイコンは、常に、 **ISocialProvider::SocialNetworkIcon**プロパティによって返されるプロバイダーのアイコンと同じです。 
+> アクティビティフィードに表示されるアイコンは、常に、i/////"/"/"/入力された" **networkicon**プロパティによって返されるプロバイダアイコンと同じです。 
   
-**ActivityDetails**要素、要素の**activityTemplateContainer** 、テンプレート トークン、およびテンプレート変数の詳細については次のトピックを参照してください。 
+**activitydetails**要素、 **activitytemplatecontainer**要素、テンプレートトークン、およびテンプレート変数の詳細については、以下のトピックを参照してください。 
   
-- [activityDetails 要素](activitydetails-element.md)
+- [activitydetails 要素](activitydetails-element.md)
     
-- [activityTemplateContainer 要素](activitytemplatecontainer-element.md)
+- [activitytemplatecontainer 要素](activitytemplatecontainer-element.md)
     
 - [テンプレート変数](template-variables.md)
     
-- [アクティビティを正しく表示するためのガイドライン](guidelines-for-properly-displaying-activities.md)
+- [アクティビティを適切に表示するためのガイドライン](guidelines-for-properly-displaying-activities.md)
     
-アクティビティの例については、フィードの XML、[アクティビティ フィードの XML の例](activity-feed-xml-example.md)を参照してください。
+アクティビティフィード xml の例については、「[アクティビティフィード xml の例](activity-feed-xml-example.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
-- [活動の XML](xml-for-activities.md) 
-- [Outlook ソーシャル コネクタ プロバイダーの XML スキーマ](outlook-social-connector-provider-xml-schema.md)
-- [OSC の XML スキーマを使用してプロバイダーの開発](developing-a-provider-with-the-osc-xml-schema.md)
+- [アクティビティの XML](xml-for-activities.md) 
+- [Outlook Social Connector プロバイダーの XML スキーマ](outlook-social-connector-provider-xml-schema.md)
+- [.osc XML スキーマを使用してプロバイダーを開発する](developing-a-provider-with-the-osc-xml-schema.md)
 

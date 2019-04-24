@@ -1,5 +1,5 @@
 ---
-title: IMAPIStatus IMAPIProp
+title: imapistatus imapistatus
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,67 +12,67 @@ api_type:
 - COM
 ms.assetid: 17b2aa43-0267-45b6-8c57-11b7a5c67333
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 23663cea49c50f3f584d6b06e331545320e8283b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f90cf661c069ecd476bd02c5719147633a8392e0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331529"
 ---
 # <a name="imapistatus--imapiprop"></a>IMAPIStatus : IMAPIProp
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI サブシステム、内蔵のアドレス帳、および MAPI スプーラーに関するステータス情報を提供します。 サービス プロバイダーは、独自のステータスに関する情報を提供する**IMAPIStatus**を実装します。 
+mapi サブシステム、統合アドレス帳、および mapi スプーラーに関する状態情報を提供します。 サービスプロバイダーは、 **imapistatus**を実装して、独自の状態に関する情報を提供します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|によって公開されます。  <br/> |ステータス オブジェクト  <br/> |
-|によって実装されます。  <br/> |サービス プロバイダーおよび MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーション  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IMAPIStatus  <br/> |
-|ポインターの型。  <br/> |LPMAPISTATUS  <br/> |
-|トランザクション モデル:  <br/> |非トランザクション  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|公開者:  <br/> |状態オブジェクト  <br/> |
+|実装元:  <br/> |サービスプロバイダーと MAPI  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
+|インターフェイス識別子:  <br/> |IID_IMAPIStatus  <br/> |
+|ポインターの種類:  <br/> |LPMAPISTATUS  <br/> |
+|トランザクションモデル:  <br/> |非トランザクション  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[ValidateState](imapistatus-validatestate.md) <br/> |MAPI リソースまたはサービス プロバイダーの使用可能な外部のステータス情報を確認します。  <br/> |
-|[SettingsDialog](imapistatus-settingsdialog.md) <br/> |サービス プロバイダーの構成を変更するユーザーを有効にするプロパティ シートを表示します。  <br/> |
-|[パスワードの変更](imapistatus-changepassword.md) <br/> |ユーザー インターフェイスを表示せずには、サービス プロバイダーのパスワードを変更します。  <br/> |
-|[FlushQueues](imapistatus-flushqueues.md) <br/> |送信またはアップロードまたはダウンロードをすぐに受信を待機しているすべてのメッセージを強制的にします。  <br/> |
+|[ValidateState](imapistatus-validatestate.md) <br/> |MAPI リソースまたはサービスプロバイダーに対して使用可能な外部状態情報を確認します。  <br/> |
+|[settingsdialog](imapistatus-settingsdialog.md) <br/> |ユーザーがサービスプロバイダーの構成を変更できるようにするプロパティシートを表示します。  <br/> |
+|[ChangePassword](imapistatus-changepassword.md) <br/> |ユーザーインターフェイスを表示せずに、サービスプロバイダーのパスワードを変更します。  <br/> |
+|[FlushQueues](imapistatus-flushqueues.md) <br/> |送信または受信を待機しているすべてのメッセージを直ちにアップロードまたはダウンロードすることを強制します。  <br/> |
    
 |**必須のプロパティ**|**Access**|
 |:-----|:-----|
-|**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
-|**PR_PROVIDER_DISPLAY**([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
+|**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
+|**PR_PROVIDER_DISPLAY**([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
 |**PR_PROVIDER_DLL_NAME**([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_RESOURCE_FLAGS**([PidTagResourceFlags](pidtagresourceflags-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_RESOURCE_METHODS**([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_RESOURCE_TYPE**([PidTagResourceType](pidtagresourcetype-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_STATUS_CODE**([PidTagStatusCode](pidtagstatuscode-canonical-property.md))  <br/> |読み取り専用  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-MAPI が実装している状態のオブジェクトでは、次のメソッドをサポートします。
+MAPI が実装する status オブジェクトは、次のメソッドをサポートしています。
   
-|**ステータス オブジェクト**|**サポートされている方法**|
+|**Status オブジェクト**|**サポートされているメソッド**|
 |:-----|:-----|
-|MAPI サブシステム  <br/> |**ValidateState**のみ  <br/> |
-|MAPI アドレス帳  <br/> |**ValidateState**のみ  <br/> |
-|MAPI スプーラー  <br/> |**ValidateState**と**FlushQueues** <br/> |
+|MAPI サブシステム  <br/> |**validatestate**のみ  <br/> |
+|MAPI アドレス帳  <br/> |**validatestate**のみ  <br/> |
+|MAPI スプーラー  <br/> |**validatestate**および**flushqueues** <br/> |
    
-MAPI を実装する状態オブジェクトは、 [IMAPIProp](imapipropiunknown.md)インターフェイスのメソッドの読み取り専用バージョンが存在し、 **ValidateState**メソッドをサポートするためには必要です。 トランスポート プロバイダーでは、 **FlushQueues**もサポートする必要があります。 すべてのプロバイダーは、 **SettingsDialog**; をサポートする必要があります。**パスワードの変更**はオプションをサポートします。 
+MAPI で実装されている status オブジェクトは、 [imapiprop](imapipropiunknown.md)インターフェイスのメソッドの読み取り専用バージョンを持っていて、 **validatestate**メソッドをサポートしている必要があります。 トランスポートプロバイダーも、 **flushqueues**をサポートする必要があります。 すべてのプロバイダーが**settingsdialog**をサポートする必要があります。**ChangePassword**のサポートはオプションです。 
   
-クライアントは、構成を実行して、セッションの状態については、状態オブジェクトを使用します。 状態オブジェクトにアクセスするには、ログオンするサービス プロバイダー オブジェクトの**OpenStatusEntry**メソッドまたは状態オブジェクトを取得するために[IMAPISession::GetStatusTable](imapisession-getstatustable.md)メソッドを呼び出すことです。 
+クライアントは、状態オブジェクトを使用して構成を行い、セッションの状態に関する情報を取得します。 状態オブジェクトを取得するには、サービスプロバイダーのログオンオブジェクトの**openstatusentry**メソッドまたは[imapisession:: getstatustable](imapisession-getstatustable.md)メソッドを呼び出して、status オブジェクトにアクセスします。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
 

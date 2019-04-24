@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: 69cb8e0b-4da0-46ef-b1c0-df5e3a791b08
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4397315ef5ebc8009805f911f7d7b549a698b955
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 11f078c0e2071e6f58a85dbe627b2ced676bacb9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329506"
 ---
 # <a name="cbnewentryid"></a>CbNewENTRYID
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-指定したサイズの新しい[エントリ ID](entryid.md)の構造体に割り当てるバイト数を計算します。 
+指定したサイズの新しい[ENTRYID](entryid.md)構造に割り当てる必要があるバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |**エントリ ID** <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |**ENTRYID** <br/> |
    
 ```cpp
 CbNewENTRYID (_cb)
@@ -40,14 +40,14 @@ CbNewENTRYID (_cb)
 
  __cb_
   
-> 新しい**エントリ ID**の構造体に格納するエントリの識別子でのバイト数をカウントします。 
+> 新しい**ENTRYID**構造に格納されるエントリ id のバイト数。 
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[エントリ ID](entryid.md)
+[ENTRYID](entryid.md)
 
 
-[構造体に関連するマクロ](macros-related-to-structures.md)
+[構造に関連するマクロ](macros-related-to-structures.md)
 

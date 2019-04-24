@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 8668ba4f-3236-4a87-a5aa-9cf7eea3d87b
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: de957c33165cc96eec82bf95c8f292c5b323676a
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25398704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331144"
 ---
 # <a name="pidtagoriginalsubject-canonical-property"></a>PidTagOriginalSubject 標準プロパティ
 
@@ -25,54 +25,54 @@ ms.locfileid: "25398704"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージに関するレポートで使用するための元のメッセージの件名が含まれています。
+メッセージに関するレポートで使用する、元のメッセージの件名を含みます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_ORIGINAL_SUBJECT、PR_ORIGINAL_SUBJECT_A、PR_ORIGINAL_SUBJECT_W  <br/> |
 |識別子:  <br/> |0x0049  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|エリア:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |一般的なメッセージング  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-**あるの PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) のプロパティと同じ値には、これらのプロパティは設定されました。
+これらのプロパティは、最初は**PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) プロパティと同じ値に設定されています。
   
-256 文字は、通常は短い文字列は、件名のプロパティと、メッセージ ストア プロバイダーがそれらのオブジェクトのリンクと埋め込み (OLE) の**IStream**インターフェイスをサポートする義務を負いません。 クライアントは、 **IMAPIProp**インターフェイスを介してアクセスを最初に試行し、 **MAPI_E_NOT_ENOUGH_MEMORY**が返された場合にのみ、 **IStream**に頼る必要があります常に。 
+件名のプロパティは通常、256文字未満の小さな文字列で、メッセージストアプロバイダーは、オブジェクトのリンクと埋め込み (OLE) **IStream**インターフェイスをサポートする義務を持ちません。 クライアントは、常に**imapiprop**インターフェイスを使用してアクセスを試行し、 **MAPI_E_NOT_ENOUGH_MEMORY**が返された場合にのみ**IStream**に頼る必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
-> サーバーとクライアントの間のメッセージングのオブジェクト データの同期を処理します。
+> サーバーとクライアントの間でメッセージオブジェクトデータの同期を処理します。
     
-[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
-> プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。
+> 電子メールメッセージオブジェクトで許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

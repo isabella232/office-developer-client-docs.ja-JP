@@ -1,5 +1,5 @@
 ---
-title: プロファイルとメッセージ サービスの管理
+title: プロファイルとメッセージサービスを管理する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,33 +7,33 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 89a2ac43-9601-47fc-b736-db48585fe879
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 124f4875834e035e29d4c63e52789bf07f18258d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 1e64241008a4adde4431b2c9683199294f21e396
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32330234"
 ---
-# <a name="administering-profiles-and-message-services"></a>プロファイルとメッセージ サービスの管理
+# <a name="administering-profiles-and-message-services"></a>プロファイルとメッセージサービスを管理する
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロファイルとメッセージのサービスの管理は、新しいプロファイルを作成する、古いプロファイルを削除して、メッセージ サービス、およびそれらに含まれているサービス ・ プロバイダーを変更することで既存のプロファイルの内容を変更することを含めることができます。 すべてのクライアントは、標準的な機能としてのプロファイルとメッセージ サービスの管理をサポートします。 一部のクライアントがある以外のユーザーは、ログオン時にいずれかの選択を許可するよりも、プロファイルを使用して操作を行います。
+プロファイルとメッセージサービスの管理には、新しいプロファイルを作成したり、古いプロファイルを削除したり、既存のプロファイルの内容を変更したりすることが含まれます。その中に含まれるメッセージサービスとサービスプロバイダーを変更します。 すべてのクライアントが、プロファイルとメッセージサービスの管理を標準的な機能としてサポートするわけではありません。 クライアントによっては、ユーザーがログオン時に1つを選択できるというよりもプロファイルを使用することができません。
   
-プロファイル、またはメッセージ サービスの管理をサポートする場合可能性は、次の MAPI によって実装されるインターフェイスを使用します。
+プロファイルまたはメッセージサービスの管理をサポートしている場合は、MAPI で実装されている次のインターフェイスを使用する可能性があります。
   
-- [IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md) [IMAPISession::AdminServices](imapisession-adminservices.md)または[IProfAdmin::AdminServices](iprofadmin-adminservices.md)のいずれかを介してアクセスできるように、プロファイル内のメッセージ サービスを管理します。 メッセージング クライアントは、通常の構成のクライアント、またはクライアントの操作を行いますしない送信またはメッセージが表示される、 **IProfAdmin**を呼び出しているときに**IMAPISession**を呼び出します。 、可能な限りは、メッセージ サービスを開始するのには行われませんので、 **IProfAdmin**メソッドを呼び出します。 詳細については、 **IMsgServiceAdmin**インターフェイスを使用して、次のトピックを参照してください:[メッセージ サービスを構成する](configuring-a-message-service.md)、[メッセージ サービスのコピー](copying-a-message-service.md)、および[メッセージ サービスを削除](deleting-a-message-service.md)します。
+- [IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)を使用して、プロファイル内のメッセージサービスを管理します。 [imapisession:: adminservices](imapisession-adminservices.md)または[IProfAdmin:: adminservices](iprofadmin-adminservices.md)のどちらかを通じてアクセスできます。 メッセージングクライアントは、通常、構成クライアント、またはメッセージの送受信が行われないクライアントの間に**imapisession**を呼び出します。 **IProfAdmin**を呼び出します。 可能な限り、 **IProfAdmin**メソッドを呼び出すと、メッセージサービスは開始されません。 **IMsgServiceAdmin**インターフェイスの使用方法の詳細については、「message service の[構成](configuring-a-message-service.md)」、「[メッセージサービスのコピー](copying-a-message-service.md)」、および「[メッセージサービスの削除](deleting-a-message-service.md)」を参照してください。
     
-- [IProfAdmin: IUnknown](iprofadminiunknown.md)プロファイル、 [MAPIAdminProfiles](mapiadminprofiles.md)関数を使用してアクセスを管理します。 詳細については、 **IProfAdmin**インターフェイスを使用して、次のトピックを参照してください:[カスタム コードを使用してプロファイルを作成する](creating-a-profile-by-using-custom-code.md)[プロファイルをコピーする](copying-a-profile.md)[プロファイルの削除](deleting-a-profile.md)、[プロファイル名の検索](finding-a-profile-name.md)、および[の設定、既定のプロファイル](setting-a-default-profile.md)。
+- [IProfAdmin:](iprofadminiunknown.md) [MAPIAdminProfiles](mapiadminprofiles.md)関数を通じてアクセスできる、プロファイルを管理する IUnknown。 **IProfAdmin**インターフェイスの使用の詳細については、以下のトピックを参照してください。[カスタムコードを使用したプロファイルの作成](creating-a-profile-by-using-custom-code.md)、プロファイルの[コピー](copying-a-profile.md)、プロファイルの[削除](deleting-a-profile.md)、[プロファイル名の検索](finding-a-profile-name.md)、および[の設定既定のプロファイル](setting-a-default-profile.md)。
     
-- [IProfSect: IMAPIProp](iprofsectimapiprop.md) 、 [IMAPISession::OpenProfileSection](imapisession-openprofilesection.md)または[IProviderAdmin::OpenProfileSection](iprovideradmin-openprofilesection.md)メソッドを使用してアクセスのプロファイル セクションでプロパティを維持するためにします。 プロファイル セクションの詳細については、 [MAPI プロファイル](mapi-profiles.md)を参照してください。
+- [IProfSect: imapiprop](iprofsectimapiprop.md)を使用して、プロファイルセクションのプロパティを維持します。これには、 [imapiprop:: openprofile](imapisession-openprofilesection.md)または[IProviderAdmin:: openprofile](iprovideradmin-openprofilesection.md)のセクションメソッドを通じてアクセスできます。 プロファイルセクションの詳細については、「 [MAPI プロファイル](mapi-profiles.md)」を参照してください。
     
-- [IProviderAdmin: IUnknown](iprovideradminiunknown.md) [IMsgServiceAdmin::AdminProviders](imsgserviceadmin-adminproviders.md)経由でアクセスできる、メッセージ サービスのサービス プロバイダーを管理します。 詳細については、 **IProviderAdmin**インターフェイスを使用して、[追加、またはメッセージ サービスのプロバイダーを削除する](adding-or-deleting-providers-in-a-message-service.md)を参照してください。
+- [IProviderAdmin: IUnknown](iprovideradminiunknown.md)を使用して、メッセージサービスのサービスプロバイダーを管理します。 [IMsgServiceAdmin:: adminproviders](imsgserviceadmin-adminproviders.md)を通じてアクセスできます。 **IProviderAdmin**インターフェイスの使用の詳細については、「[メッセージサービスでプロバイダーを追加または削除](adding-or-deleting-providers-in-a-message-service.md)する」を参照してください。
     
-プロファイルとメッセージ サービスの管理のサポートに注意が必要であります。 悪影響が使用されているプロファイルの変更から保護する保護機能はありません。 MAPI は、使用中のプロファイルを削除してからを防ぐことができますが、内のすべてのメッセージ サービスを削除するを防ぐことはできません。 プロファイル内のすべてのメッセージ サービスを削除すると、すべてのこれらのサービスのサービス プロバイダーが原因となり、発生する予期しない結果が停止します。
+プロファイルとメッセージサービスの管理のサポートに注意してください。 使用されているプロファイルの悪影響から保護する対策はありません。 MAPI を使用すると、使用中のプロファイルを削除することはできませんが、すべてのメッセージサービスを削除することはできません。 プロファイル内のすべてのメッセージサービスを削除すると、これらのサービスのすべてのサービスプロバイダーが停止し、予期しない結果が発生する原因になります。
   
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -57,24 +57,24 @@ ms.locfileid: "22587545"
   
 > プロファイルの名前を検索する方法について説明します。
     
-[メッセージ サービスの追加](adding-a-message-service.md)
+[メッセージサービスを追加する](adding-a-message-service.md)
   
-> メッセージ サービスを追加する方法について説明します。
+> メッセージサービスを追加する方法について説明します。
     
-[メッセージ サービスの構成](configuring-a-message-service.md)
+[メッセージサービスの構成](configuring-a-message-service.md)
   
-> メッセージ サービスを構成する方法について説明します。
+> メッセージサービスを構成する方法について説明します。
     
-[メッセージ サービスのコピー](copying-a-message-service.md)
+[メッセージサービスのコピー](copying-a-message-service.md)
   
-> メッセージ サービスをプロファイルにコピーする方法について説明します。
+> メッセージサービスをプロファイルにコピーする方法について説明します。
     
-[メッセージ サービスの削除](deleting-a-message-service.md)
+[メッセージサービスの削除](deleting-a-message-service.md)
   
-> メッセージ サービスを削除する方法について説明します。
+> メッセージサービスを削除する方法について説明します。
     
-[メッセージ サービスのプロバイダーの追加または削除](adding-or-deleting-providers-in-a-message-service.md)
+[メッセージサービスでのプロバイダーの追加または削除](adding-or-deleting-providers-in-a-message-service.md)
   
-> メッセージ サービス内のプロバイダーを追加、削除する方法について説明します。
+> メッセージサービスでプロバイダーを追加または削除する方法について説明します。
     
 

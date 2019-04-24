@@ -12,53 +12,53 @@ api_type:
 - HeaderDef
 ms.assetid: 886b4fdd-5d97-4b66-8329-052301e637fc
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 28eafc29a9d711b7d98444ebb330df1145f86628
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fa30a1b07f2b1f3c9ca837b5ddda629b3d8737f3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329338"
 ---
 # <a name="pidtagnondeliveryreportfromname-canonical-property"></a>PidTagNonDeliveryReportFromName 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-場合配信不能レポートには、失敗した送信の名前を表します-ユーザーにします。
+配信不能レポートに設定されている場合は、失敗した送信側ユーザーの名前を示します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_NDR_FROM_NAME  <br/> |
 |識別子:  <br/> |0x6905  <br/> |
 |データの種類 :   <br/> |PT_STRING8  <br/> |
-|領域:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |一般的なメッセージング  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[MS OXPROPS] 
+[[OXPROPS]] 
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

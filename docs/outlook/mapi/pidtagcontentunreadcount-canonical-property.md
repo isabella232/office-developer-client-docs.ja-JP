@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 4fe207e9-a77f-46b9-b51d-d989847a9d02
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9572a053182aaa59020a6816736b8a4b92e778b7
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25383836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331872"
 ---
 # <a name="pidtagcontentunreadcount-canonical-property"></a>PidTagContentUnreadCount 標準プロパティ
 
@@ -25,56 +25,56 @@ ms.locfileid: "25383836"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ ・ ストアによって計算される、フォルダー内の未読メ ッ セージの数が含まれています。 
+メッセージストアによって計算された、フォルダー内の未読メッセージ数を含みます。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_CONTENT_UNREAD  <br/> |
 |識別子:  <br/> |0x3603  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |Folder  <br/> |
+|エリア:  <br/> |フォルダー  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-関連は、目的が異なる、2 つのメッセージ ・ ストアによって計算されるこのプロパティが使用されます。 MAPI フォルダーのオブジェクトでは、フォルダー内のメッセージの数が含まれます。 カテゴリ別の MAPI テーブル内の見出し行には見出し行に対応するカテゴリ内の関連付けられていない未読メ ッ セージの数が含まれています。
+メッセージストアによって計算されたこのプロパティは、関連する2つの異なる目的で使用されます。 MAPI フォルダーオブジェクトには、フォルダー内のメッセージの数が含まれています。 カテゴリに分類された MAPI テーブルの見出し行には、その見出し行に対応するカテゴリの未開封の関連付けられていないメッセージの数が含まれます。
   
-このプロパティには、対象の MSGFLAG_READ フラグを**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) のプロパティで設定しないフォルダー コンテンツ テーブル内のメッセージの数が含まれています。 **PR_CONTENT_COUNT** ([PidTagContentCount](pidtagcontentcount-canonical-property.md)) のプロパティには、フォルダーのメッセージの合計数が含まれています。 **PR_CONTENT_COUNT**し、このプロパティは、クライアントには読み取り専用です。 
+このプロパティには、 **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティで MSGFLAG_READ フラグが設定されていないフォルダーの内容のテーブル内のメッセージの数が含まれます。 **PR_CONTENT_COUNT** ([PidTagContentCount](pidtagcontentcount-canonical-property.md)) プロパティには、フォルダーのメッセージ数の合計が含まれています。 **PR_CONTENT_COUNT**およびこのプロパティは、クライアントに対しては値の取得のみ可能です。 
   
-一部のクライアント アプリケーションは、このプロパティの値により異なる方法でカテゴリの見出し行を表示します。 たとえば、クライアントでは、太字で未読メ ッ セージを含むカテゴリを表示できます。 このプロパティは、MAPI_E_INVALID_PARAMETER 値は、 [IMAPITable::SortTable](imapitable-sorttable.md)メソッドから返されるように分類しようとすると使用できません。 
+クライアントアプリケーションによっては、このプロパティの値に応じてカテゴリの見出し行が異なる場合があります。 たとえば、クライアントは、未読メッセージが太字になっているカテゴリを表示できます。 このプロパティをカテゴリとして使用することはできません。これを試行すると、 [IMAPITable:: sorttable](imapitable-sorttable.md)メソッドから MAPI_E_INVALID_PARAMETER 値が返されます。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Microsoft Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
+[[OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
   
-> フォルダーの操作を処理します。
+> フォルダー操作を処理します。
     
-[[MS OXCTABL]](https://msdn.microsoft.com/library/d33612dc-36a8-4623-8a26-c156cf8aae4b%28Office.15%29.aspx)
+[[OXCTABL]](https://msdn.microsoft.com/library/d33612dc-36a8-4623-8a26-c156cf8aae4b%28Office.15%29.aspx)
   
-> テーブルのコア オブジェクトに許容される操作が含まれます。
+> コアテーブルオブジェクトの許容可能な操作が含まれています。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

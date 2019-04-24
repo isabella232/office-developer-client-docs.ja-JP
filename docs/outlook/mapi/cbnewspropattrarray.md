@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: c085e3e4-5d1e-42ab-8c44-2c326c032aea
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8bcb650a7aef357be155c177c38bc39cac3fa2c2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 365348a4eb3440d1f284a39cfce019cf4f89f915
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331963"
 ---
 # <a name="cbnewspropattrarray"></a>CbNewSPropAttrArray
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロパティの属性の指定された番号を含む新しい[SPropAttrArray](spropattrarray.md)構造体に割り当てるバイト数を計算します。 
+指定した数のプロパティ属性を含む新しい[sproの trarray](spropattrarray.md)構造体に割り当てる必要があるバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Imessage.h  <br/> |
-|関連の構造体。  <br/> |**SPropAttrArray** <br/> |
+|ヘッダー ファイル:  <br/> |Imessage  <br/> |
+|関連する構造:  <br/> |**SPropAttrArray** <br/> |
    
 ```cpp
 CbNewSPropAttrArray (_cattr)
@@ -40,7 +40,7 @@ CbNewSPropAttrArray (_cattr)
 
  __cattr_
   
-> 新しい**SPropAttrArray**構造体に含まれるプロパティの属性の数。 
+> 新しい**sproの trarray**構造に含まれるプロパティ属性の数。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -49,5 +49,5 @@ CbNewSPropAttrArray (_cattr)
 [SPropAttrArray](spropattrarray.md)
 
 
-[構造体に関連するマクロ](macros-related-to-structures.md)
+[構造に関連するマクロ](macros-related-to-structures.md)
 

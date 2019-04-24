@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 6829e273-4a75-4278-b58a-ae7543e075ac
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 66e23d73af53b05295bf2cbcd8c604ab3545bbca
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 994041d050df56fd3fa3c0e599542e05a202ad65
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329429"
 ---
 # <a name="imapiformcontainergetdisplay"></a>IMAPIFormContainer::GetDisplay
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームのコンテナーの表示名を返します。
+フォームコンテナーの表示名を返します。
   
 ```cpp
 HRESULT GetDisplay(
@@ -34,33 +34,33 @@ HRESULT GetDisplay(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]返される文字列の種類を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番返される文字列の型を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 返される文字列は、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。
+> 返される文字列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
     
- _pszDisplayName_
+ _pszdisplayname_
   
-> [out]フォームのコンテナーの表示名を含む文字列へのポインター。
+> 読み上げフォームコンテナーの表示名を含む文字列へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|FormContainerDlg.cpp  <br/> |CFormContainerDlg::CFormContainerDlg  <br/> |MFCMAPI では、 **IMAPIFormContainer::GetDisplay**メソッドを使用して、CFormContainerDlg がレンダリングされるときに、フォームのコンテナーの名前を取得します。  <br/> |
+|FormContainerDlg  <br/> |CFormContainerDlg:: CFormContainerDlg  <br/> |mfcmapi は、 **imapiformcontainer:: getdisplay**メソッドを使用して、CFormContainerDlg をレンダリングするときにフォームコンテナーの名前を取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

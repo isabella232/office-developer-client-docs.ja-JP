@@ -12,51 +12,51 @@ api_type:
 - HeaderDef
 ms.assetid: 54361b61-de14-4409-b120-7a01a401be49
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c98d168ab0f3092ad3f4ada89b21fa85372b9537
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3dba77dbd7f50693656ba5c74fcd1dd167a23d5f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331711"
 ---
 # <a name="pidtagcontactaddressbookfolderentryid-canonical-property"></a>PidTagContactAddressBookFolderEntryId 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メール ユーザーが保存されているメッセージ ストアの連絡先フォルダーの識別子が含まれています。 
+メールユーザーが保存されているメッセージストア内の連絡先フォルダーの識別子が含まれています。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_CONTAB_FOLDER_ENTRYID  <br/> |
 |識別子:  <br/> |0x6610  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |連絡先のアドレス帳  <br/> |
+|エリア:  <br/> |連絡先のアドレス帳  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-これは、連絡先のアドレス帳コンテナー、および連絡先のアドレス帳コンテナーのテーブル内の列のプロパティです。
+これは連絡先アドレス帳コンテナーのプロパティで、連絡先アドレス帳コンテナーの列になります。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

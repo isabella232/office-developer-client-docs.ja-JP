@@ -12,51 +12,51 @@ api_type:
 - HeaderDef
 ms.assetid: 48667fda-ddc4-42ac-9231-761db0a4c1a9
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 40a2bc8a27ec3ce3df610b9c7364719c2b5ee750
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9c71a2b806b810906c13ea4750e5491b1544f640
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332005"
 ---
 # <a name="pidtagaccesscontrollisttable-canonical-property"></a>PidTagAccessControlListTable 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-すべてのシステム アクセス制御リスト (SACL) のフォルダーに適用されるので構成されるテーブルが含まれています。
+フォルダーに適用されているすべてのシステムアクセス制御リスト (SACL) で構成されるテーブルが保存されています。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_ACL_TABLE  <br/> |
-|識別子:  <br/> |0x3FE0  <br/> |
+|識別子:  <br/> |0x3fe0  <br/> |
 |データの種類 :   <br/> |PT_OBJECT  <br/> |
-|領域:  <br/> |アクセス制御  <br/> |
+|エリア:  <br/> |アクセス制御  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティでは、Exchange Server 上のすべてのフォルダー オブジェクト上に存在します。 値がこのプロパティに含まれているは、読み取り用に使用され、フォルダーのリスト (Acl) のアクセス制御を変更します。 **IID_IExchangeModifyTable**インターフェイス識別子を使用して[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを使用するにを取得するのには、 [IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md)フォルダーの ACL テーブルへのインターフェイスです。 読み取りおよびそれらの Acl を変更するには、このインターフェイスを使用します。 
+このプロパティは、Exchange サーバー上のすべての folder オブジェクトに存在します。 このプロパティに含まれる値は、フォルダーのアクセス制御リスト (acl) を読み取って変更するために使用されます。 **IID_IExchangeModifyTable**インターフェイス識別子を使用して[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを使用すると、フォルダーの ACL テーブルに対して[IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md)インターフェイスを取得できます。 このインターフェイスを使用して、これらの acl を読み取りおよび変更できます。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

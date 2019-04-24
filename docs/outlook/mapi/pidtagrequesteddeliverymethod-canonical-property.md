@@ -12,51 +12,51 @@ api_type:
 - COM
 ms.assetid: cc55089b-e389-405e-8174-f5b5ec352f78
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f18d726c1b06a6fb7f79964165bbdb9074a6d4d7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ecfed5684ba2166c1c00c1fd07fa074b4ce9fd79
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331417"
 ---
 # <a name="pidtagrequesteddeliverymethod-canonical-property"></a>PidTagRequestedDeliveryMethod 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-このプロパティには、メッセージの送信元の優先順位に従って指定の配送方法 (サービス プロバイダー) のバイナリの配列が含まれています。
+このプロパティには、メッセージ送信者の優先順位に従って、配信方法 (サービスプロバイダー) のバイナリ配列が含まれています。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_REQUESTED_DELIVERY_METHOD  <br/> |
-|識別子:  <br/> |0x0C18  <br/> |
+|識別子:  <br/> |0x0c18  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |MAPI 受信者  <br/> |
+|エリア:  <br/> |MAPI 受信者  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このに含まれている配列の各サービス プロバイダーの ASN.1 識別子のプロパティで構成されます。
+このプロパティに格納されている配列は、各サービスプロバイダーの ASN で構成されています。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

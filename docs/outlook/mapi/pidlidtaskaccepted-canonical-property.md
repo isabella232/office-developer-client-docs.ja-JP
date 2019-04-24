@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 8e31f893-b639-43da-a535-662153c82d82
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0172bf0d69c3f345b592364be754f58c9e7a4420
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25387917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331284"
 ---
 # <a name="pidlidtaskaccepted-canonical-property"></a>PidLidTaskAccepted 標準プロパティ
 
@@ -25,35 +25,35 @@ ms.locfileid: "25387917"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-タスクの実施者が仕事の依頼に返信されているかどうかを示します。
+タスクの実施者がタスクの依頼に返信したかどうかを示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidTaskAccepted  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Task  <br/> |
-|長い ID (LID):  <br/> |0x00008108  <br/> |
+|関連するプロパティ:  <br/> |dispidtaskaccepted  <br/> |
+|プロパティセット:  <br/> |PSETID_Task  <br/> |
+|ロング ID (LID):  <br/> |0x00008108  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |エリア:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-クライアントは、タスクには、FALSE にこのプロパティを設定またはタスクが承諾または却下すると、クライアントが TRUE にこのプロパティを設定します。 プロパティが未設定のままには、FALSE の値が使われます。
+新しいタスクの場合、クライアントはこのプロパティを FALSE に設定します。または、タスクが承諾または拒否されたときに、このプロパティを TRUE に設定します。 プロパティを未設定のままにした場合は、FALSE の値が指定されます。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
-> プロパティは、連絡先、個人用配布リストの許可の操作を指定します。
+> 連絡先および個人用配布リストに対して許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -61,9 +61,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

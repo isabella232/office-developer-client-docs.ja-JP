@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 7310a0f2-a109-40a4-99bf-e963d754a067
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7605739dd6d0f0205a1a4f09eb8c45d235c0c179
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329737"
 ---
 # <a name="pidtagmessageccme-canonical-property"></a>PidTagMessageCcMe 標準プロパティ
 
@@ -25,54 +25,54 @@ ms.locfileid: "25389772"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このメッセージングのユーザーを選択し、具体的にはこのメッセージのカーボン コピー (CC) 受信者という配布リストの一部ではない場合、TRUE が格納されます。 
+このメッセージングユーザーが、このメッセージの bcc 受信者として明示的に指定されていて、配布リストの一部ではない場合は、TRUE が含まれます。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_MESSAGE_CC_ME  <br/> |
 |識別子:  <br/> |0x0058  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|エリア:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |一般的なメッセージング  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティを確認するかどうかユーザー名に明示的にカーボン コピー受信者一覧で、リスト内のすべてのエントリを検査せずに便利な方法を提供します。 
+このプロパティを使用すると、リスト内のすべてのエントリを調べることなく、ユーザー名がカーボンコピー受信者一覧に明示的に表示されるかどうかを判断できます。 
   
-このプロパティは、受信したメッセージの受信確認の時点での自動処理を支援します。 トランスポート プロバイダーのオプションでは、このプロパティは FALSE が含まれて か、またはメッセージングのユーザーが受信者テーブルに直接表示されていない場合に設定されていません。 
+このプロパティは、受信時の受信メッセージの自動処理にも役立ちます。 トランスポートプロバイダーのオプションでは、このプロパティに FALSE が含まれているか、またはメッセージングユーザーが受信者テーブルに直接記載されていない場合は設定されません。 
   
-配布リストの展開またはブラインド カーボン コピーの指定によるメッセージの配信は、このプロパティを設定するには発生しません。 受信者は明示的に指定する必要があります。 
+配布リストの展開またはブラインドカーボンコピーの指定によるメッセージ配信が、このプロパティを設定しないことがあります。 受信者は明示的に指定する必要があります。 
   
-一般に、未送信のメッセージには**PR_MESSAGE_RECIP_ME** ([PidTagMessageRecipientMe](pidtagmessagerecipientme-canonical-property.md)) または**PR_MESSAGE_TO_ME** ([PidTagMessageToMe](pidtagmessagetome-canonical-property.md)) は、このプロパティ設定しません。 ユーザーがアクセスできる他のユーザーのプライベート、パブリック メッセージ ストアに、ディスク上のファイル ストアまたはその他の受信したメッセージ内に埋め込まれている、一般に含まれている値を設定したメッセージ内に存在する場合は、前回のトランスポート プロバイダーメッセージを配信します。 
+通常、未送信メッセージは、このプロパティ、 **PR_MESSAGE_RECIP_ME** ([PidTagMessageRecipientMe](pidtagmessagerecipientme-canonical-property.md))、または**PR_MESSAGE_TO_ME** ([PidTagMessageToMe](pidtagmessagetome-canonical-property.md)) を設定しません。 ユーザーがパブリックメッセージストア、その他のユーザーのプライベートストア、ディスク上のファイル、またはその他の受信メッセージ内に埋め込まれているメッセージ内に存在する場合は、通常、トランスポートプロバイダーの最終時刻に設定された値が含まれています。メッセージを配信した。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
-> プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。
+> 電子メールメッセージオブジェクトで許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

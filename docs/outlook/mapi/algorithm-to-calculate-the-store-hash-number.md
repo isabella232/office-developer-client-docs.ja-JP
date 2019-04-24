@@ -1,34 +1,34 @@
 ---
-title: ストア ハッシュ値を計算するアルゴリズム
+title: ストアのハッシュ番号を計算するアルゴリズム
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 489e0d74-8ecd-23ba-c874-18fd8c50fd12
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 84065c1441008732380e68d9786d7844dbb64cb7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 12797c2ed96ba2db493b5cf425423ffe97fc7a5d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331585"
 ---
-# <a name="algorithm-to-calculate-the-store-hash-number"></a>ストア ハッシュ値を計算するアルゴリズム
+# <a name="algorithm-to-calculate-the-store-hash-number"></a>ストアのハッシュ番号を計算するアルゴリズム
  
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI 統一リソース ロケーター (URL) の中で、ストア プロバイダーはストアのハッシュ値をインデックス作成の準備ができているオブジェクトを識別する MAPI プロトコル ハンドラーに送信します。 MAPI プロトコル ハンドラーでは、このストアのハッシュ値を使用して、ストアを識別します。 一般的には、ストア プロバイダーでは、ハッシュ番号を保存するストアには、 **[PR_MAPPING_SIGNATURE](pidtagmappingsignature-canonical-property.md)** プロパティは、グローバル プロファイル セクションで定義されている場合、ストア マッピング署名に基づいて計算されます。 ストア プロバイダーが、ストア エントリ ID を使用する場合は、 番号を保存するハッシュを計算するアルゴリズムは、ストアを識別するあいまいさを最小限に抑える必要があります。 
+mapi の Uniform resource Locator (URL) の一部として、ストアプロバイダーは、インデックス作成の準備ができているオブジェクトを識別するために、ストアのハッシュ番号を mapi プロトコルハンドラーに送信します。 MAPI プロトコルハンドラーは、ストアを識別するために、このストアハッシュ番号を使用します。 一般に、ストアプロバイダーは、ストアのマッピング署名に基づいて、store ハッシュ番号を計算します。このプロパティは、ストアの [グローバルプロファイル] セクションで定義されている**[PR_MAPPING_SIGNATURE](pidtagmappingsignature-canonical-property.md)** プロパティです。 それ以外の場合、ストアプロバイダーはストアエントリ ID を使用します。 ストアのハッシュ値を計算するアルゴリズムでは、あいまいさを識別するストアを最小限に抑える必要があります。 
   
-このトピックでは、ストア マッピングの署名、またはエントリ ID とストアのファイル名に基づいて、ストアのハッシュ値を計算するために使用する Microsoft Office Outlook のアルゴリズムを説明します。 
+このトピックでは、Microsoft Office Outlook がストアのマッピングシグネチャまたはエントリ ID とストアファイル名に基づいてストアハッシュ番号を計算するために使用するアルゴリズムについて説明します。 
   
-エンコードするバイナリ blob はほとんどの場合、ストアの PR_ENTRYID ですが、キャッシュされた Exchange ストア、パブリックとプライベート、バイナリ blob の両方は、PR_MAPPING_SIGNATURE をする必要がありますのプロファイルを参照します。
+エンコードされるバイナリ blob は、ほとんどの場合ストアの PR_ENTRYID ですが、キャッシュされた Exchange ストア (パブリックとプライベートの両方) については、バイナリ blob がプロファイルにある PR_MAPPING_SIGNATURE である必要があります。
   
-文字列を表すハッシュ ハッシュで OST のパス、0x2E505542、定数の前に、パブリック フォルダー ストアのバイナリ blob を計算した後"です。PUB」は一意ですを保証するためにハッシュ化されたプライベート ストアのハッシュとは異なります。
+パブリックフォルダーストアのバイナリ blob のハッシュを計算した後、OST パスでハッシュ処理を行う前に、"" という文字列を表す定数0x2e505542。PUB "は、一意であることを保証するためににハッシュされます。これは、プライベートストアのハッシュとは区別されます。
   
-サポート コードは、OST に、プロファイルでは、ストアは、パブリックまたはプライベートの場合は、キャッシュされているかどうかを決定する使用することができ、パスから適切なビットを収集します。 プロジェクトでこのコードを組み込む関数 ComputeStoreHash で、セッションのポインターは、その入力として PR だけでなく\_エントリ ID、PR\_SERVICE_UID と PR\_メッセージからの MDB_PROVIDER は、テーブルを格納します。 プロファイルから必要な情報の残りの部分を取得します。 現在価値から計算される出力の場合、この関数が、ハッシュを返します\_MAPPING_SIGNATURE ストアの場合、Exchange ストアのキャッシュまたはハッシュ現在価値から計算される\_エントリ ID です。
+サポートコードを使用してプロファイルの関連ビットを調べることができます。これは、ストアがパブリックまたはプライベートであるかどうか、キャッシュされているかどうか、および OST へのパスを特定するために使用されます。 このコードをプロジェクトに組み込むには、関数 computestorehash を呼び出します。このハッシュは、セッションポインターと pr\_ENTRYID、pr\_SERVICE_UID、およびメッセージストアテーブル\_から pr MDB_PROVIDER を入力として取得します。 必要な残りの情報はプロファイルから取得されます。 出力の場合、この関数は、ストアがキャッシュさ\_れた Exchange ストアである場合は pr MAPPING_SIGNATURE から計算されたもの、\_または pr ENTRYID から計算されたハッシュを返します。
   
 > [!NOTE]
-> HrEmsmdbUIDFromStore サポートは、[複数の Exchange アカウント](using-multiple-exchange-accounts.md)に Exchange メールボックスのプロファイル セクションを開こうとする pbGlobalProfileSectionGuid を使用するために注意してください交換します。 
+> HrEmsmdbUIDFromStore サポート機能は、pbGlobalProfileSectionGuid を使用して exchange メールボックスのプロファイルセクションを開く場合の、[複数の exchange アカウント](using-multiple-exchange-accounts.md)に対応した代替の方法です。 
   
 ```cpp
 #define PR_PROFILE_OFFLINE_STORE_PATH_A PROP_TAG(PT_STRING8, 0x6610)
@@ -238,10 +238,10 @@ void ComputeStoreHash(LPMAPISESSION lpMAPISession, LPSBinary lpEntryID, LPSBinar
 ```
 
 > [!TIP]
-> HrEmsmdbUIDFromStore 関数は、実際に一般的な用途に適した方法であるため、ストアを開くことがなく動作します。 ただし場合は、ストア オブジェクトへのポインターが既にある場合、取得することもプロファイル セクション GUID、メッセージ ・ ストアから直接、PR_EMSMDB_SECTION_UID プロパティを読み取ることによって。 
+> HrEmsmdbUIDFromStore 関数は、ストアを実際に開かずに動作するので、一般的な目的の方法として適しています。 ただし、store オブジェクトへのポインターが既にある場合は、PR_EMSMDB_SECTION_UID プロパティを読み取って、メッセージストアからプロファイルセクションの GUID を直接取得することもできます。 
   
 ## <a name="see-also"></a>関連項目
 
-- [通知ベースのストア インデックス作成について](about-notification-based-store-indexing.md)
-- [通知ベースのインデックス作成の MAPI URL について](about-mapi-urls-for-notification-based-indexing.md)
+- [通知ベースのストアインデックス作成について](about-notification-based-store-indexing.md)
+- [通知ベースのインデックス作成の MAPI url について](about-mapi-urls-for-notification-based-indexing.md)
 

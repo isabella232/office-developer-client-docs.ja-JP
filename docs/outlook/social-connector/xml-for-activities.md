@@ -7,53 +7,53 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: acc4a555-a3bf-4a79-86dc-aba6477733b8
-description: このトピックには、Outlook ソーシャル コネクタ (OSC) プロバイダーに、OSC プロバイダーを実装し、OSC では、アクティビティの情報を取得する機能拡張 API の呼び出しを表示するシナリオ例にはが含まれています。 情報は、OSC プロバイダーの XML スキーマに準拠する XML 文字列で表されます。
-ms.openlocfilehash: 44f74d9e72eec3ff6da7f9967315fc9d75191584
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: このトピックには、アクティビティ情報を取得するために、.osc プロバイダーが実装する Outlook Social Connector (.osc) プロバイダーの機能拡張 API 呼び出しを示すシナリオの例が含まれています。 情報は、.osc プロバイダ xml スキーマに準拠する xml 文字列で表されます。
+ms.openlocfilehash: a4f1c6ce1f33b59811f6a6fecb737cd1f737946b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329121"
 ---
 # <a name="xml-for-activities"></a>アクティビティ用 XML
 
-このトピックには、Outlook ソーシャル コネクタ (OSC) プロバイダーに、OSC プロバイダーを実装し、OSC では、アクティビティの情報を取得する機能拡張 API の呼び出しを表示するシナリオ例にはが含まれています。 情報は、OSC プロバイダーの XML スキーマに準拠する XML 文字列で表されます。
+このトピックには、アクティビティ情報を取得するために、.osc プロバイダーが実装する Outlook Social Connector (.osc) プロバイダーの機能拡張 API 呼び出しを示すシナリオの例が含まれています。 情報は、.osc プロバイダ xml スキーマに準拠する xml 文字列で表されます。
   
-OSC プロバイダーの XML スキーマでは、アクティビティを定義するのには、OSC プロバイダーを許可します。 活動の情報は、ソーシャル ネットワーク アクティビティが発生した場合、アイテムをフィードごとのアクティビティ フィードのアイテムの詳細を含めることができます (などの所有者は、入力、発行とアクティビティの日付)、および活動を表示するテンプレートです。 人物情報ウィンドウまたは連絡先カードに表示されているアクティビティをサポートするためにソーシャル ネットワークの OSC プロバイダーが実装し、正しい活動の XML を返す必要があります。 アクティビティの例については、フィードの XML、[アクティビティ フィードの XML の例](activity-feed-xml-example.md)を参照してください。 友人の活動を同期の詳細については、[同期の友人との活動](synchronizing-friends-and-activities.md)を参照してください。 のどの要素には、必須またはオプションを含む、OSC プロバイダーの XML スキーマの完全な定義は、 [Outlook ソーシャル コネクタ プロバイダーの XML スキーマ](outlook-social-connector-provider-xml-schema.md)を参照してください。 
+.osc プロバイダ XML スキーマを使用すると、.osc プロバイダーはアクティビティを定義できます。 アクティビティ情報には、アクティビティフィードアイテムが送信されたソーシャルネットワーク、各アクティビティフィードアイテムの詳細 (アクティビティの所有者、種類、発行日など)、およびアクティビティを表示するためのテンプレートが含まれます。 ユーザーウィンドウまたは連絡先カードでのアクティビティの表示をサポートするには、ソーシャルネットワークの .osc プロバイダーが適切なアクティビティ XML を実装して返す必要があります。 アクティビティフィード xml の例については、「[アクティビティフィード xml の例](activity-feed-xml-example.md)」を参照してください。 フレンドのアクティビティの同期の詳細については、「[友人とアクティビティを同期](synchronizing-friends-and-activities.md)する」を参照してください。 必要な要素やオプションの要素を含む、.osc プロバイダ XML スキーマの完全な定義については、「 [Outlook Social Connector プロバイダーの xml スキーマ](outlook-social-connector-provider-xml-schema.md)」を参照してください。 
   
-次のシナリオでは、OSC は動的に、人物情報ウィンドウで選択されているユーザーのアクティビティを同期し、そのユーザーに関する詳細情報を取得します。
+次のシナリオでは、[人] ウィンドウで選択したユーザーのアクティビティを、.osc が動的に同期し、その人物に関する詳細を取得します。
   
-1. OSC プロバイダーのアクティビティのオン ・ デマンドの同期をサポートすることを示します、OSC に、 **getActivities**と**dynamicActivitiesLookupEx**の要素を使用しています。 OSC プロバイダーも**実装しています。** 要素を設定します。 3 つすべての要素は、**機能**の子要素です。 
+1. アクティビティのオンデマンド同期をサポートする .osc プロバイダーは、getactivities 要素と**dynamicActivitiesLookupEx**要素を使用**** して、.osc に対してを指定します。 .osc プロバイダーは、 **hashfunction**要素も設定します。 3つすべての要素は、**機能**の子要素です。 
     
-2. OSC プロバイダーは、 **ISocialProvider::GetCapabilities**メソッドと[ISocialSession2::GetActivitiesEx](isocialsession2-getactivitiesex.md)メソッドを実装します。 
+2. .osc プロバイダーは、 **iISocialSession2 alprovider:: getcapabilities**メソッドと[:: GetActivitiesEx](isocialsession2-getactivitiesex.md)メソッドを実装します。 
     
-3. **GetActivities**および**dynamicActivitiesLookupEx**の値を確認するために、OSC プロバイダー OSC **ISocialProvider::GetCapabilities**の呼び出しには、活動のオン ・ デマンドの同期がサポートされています。 OSC では、OSC プロバイダーでサポートされている**実装しています。** 要素の値もメモします。 
+3. .osc は**idynamicActivitiesLookupEx alprovider:: getcapabilities**を呼び出して、.osc プロバイダー **** がアクティビティの**** オンデマンド同期をサポートしているかどうかを確認します。 .osc は、.osc プロバイダーでサポートされている**hashfunction**要素の値もメモします。 
     
-4. OSC では、ユーザーが選択したユーザーの最新の活動を確認できるようにするには、人物情報ウィンドウまたは連絡先カードを更新します。 OSC は、 **hashedAddresses**要素の XML スキーマ定義に準拠する XML 文字列を形成する、**実装しています。** 要素で指定されているハッシュ関数を使用してユーザーの SMTP アドレスを暗号化します。 
+4. .osc は、ユーザーウィンドウまたは連絡先カードを更新して、選択されている人物の最新のアクティビティをユーザーに表示できるようにします。 .osc は、 **hashfunction**要素で指定されたハッシュ関数を使用して、その人物の SMTP アドレスを暗号化し、 **hashedAddresses**要素の xml スキーマ定義に準拠した xml 文字列を形成します。 
     
-5. OSC では、 **ISocialSession2::GetActivitiesEx**、 _hashedAddresses_のパラメーターとして、ハッシュ化されたアドレスの場合は、この XML 文字列を提供する_活動_のパラメーターでは、その人の活動の現在のコレクションを取得するを呼び出します。 _アクティビティ_パラメーター文字列は、 **activityFeed**要素の XML スキーマ定義に準拠します。 
+5. .osc は**ISocialSession2:: GetActivitiesEx**を呼び出して、ハッシュ化されたアドレスのこの XML 文字列を_hashedAddresses_パラメーターとして提供し、その人物の現在のアクティビティのコレクションを_交際_パラメーターで取得します。 _アクティビティ_パラメーター文字列は、 **activityfeed**要素の XML スキーマ定義に準拠しています。 
     
-6. **ActivityFeed**の XML スキーマ定義に基づき、OSC をさらには、型を調べるには、日付、およびそれぞれの活動に関するその他の情報およびアクティビティを表示する方法を公開_活動_文字列を解析します。 
+6. アクティビティ**フィード**の XML スキーマ定義に基づいて、_アクティビティ_文字列をさらに解析して、各アクティビティに関する型、発行日、その他の情報を見つけ、アクティビティを表示する方法を示します。 
     
-7. OSC は、選択したユーザーに関する詳細情報を取得するには、 [ISocialSession2::GetPeopleDetails](isocialsession2-getpeopledetails.md)、 _personsAddresses_パラメーターの引数として、同じ XML 文字列をハッシュ化されたアドレスを提供することを呼び出します。 _PersonsCollection_パラメーターでは、ユーザーに関する詳細な情報が返されます。 これらの詳細については、**姓****姓**、および**emailAddress**を含めることができます。 _PersonsCollection_パラメーターは、**人**の要素の XML スキーマ定義に準拠しています。 
+7. 選択した人物に関する詳細を取得するために、.osc は[ISocialSession2:: GetPeopleDetails](isocialsession2-getpeopledetails.md)を呼び出し、ハッシュされたアドレスの同じ XML 文字列を、_個人_情報パラメーターの引数として提供します。 個人に関する詳細は、個人_コレクション_パラメーターで返されます。 これらの詳細には、 **firstName**、 **lastName**、 **emailAddress**を含めることができます。 個人_コレクション_パラメーターは、 **person**要素の XML スキーマ定義に準拠しています。 
     
-アクティビティのこのセクションの以下のトピックで、XML を指定する方法の詳細をご覧ください。
+アクティビティの XML を指定する方法の詳細については、このセクションの次のトピックを参照してください。
   
-- [フィード アイテムの活動項目の XML の概要](overview-of-xml-for-an-activity-feed-item.md)
+- [アクティビティフィードアイテムの XML の概要](overview-of-xml-for-an-activity-feed-item.md)
     
-- [activityDetails 要素](activitydetails-element.md)
+- [activitydetails 要素](activitydetails-element.md)
     
-- [activityTemplateContainer 要素](activitytemplatecontainer-element.md)
+- [activitytemplatecontainer 要素](activitytemplatecontainer-element.md)
     
 - [テンプレート変数](template-variables.md)
     
-- [アクティビティを正しく表示するためのガイドライン](guidelines-for-properly-displaying-activities.md)
+- [アクティビティを適切に表示するためのガイドライン](guidelines-for-properly-displaying-activities.md)
     
 ## <a name="see-also"></a>関連項目
 
-- [アクティビティ フィードの XML の例](activity-feed-xml-example.md)  
-- [友人や活動を同期します。](synchronizing-friends-and-activities.md) 
-- [機能のための XML](xml-for-capabilities.md)  
-- [友人の XML](xml-for-friends.md)
-- [OSC の XML スキーマを使用してプロバイダーの開発](developing-a-provider-with-the-osc-xml-schema.md)
+- [アクティビティフィード XML の例](activity-feed-xml-example.md)  
+- [フレンドとアクティビティの同期](synchronizing-friends-and-activities.md) 
+- [機能の XML](xml-for-capabilities.md)  
+- [Friends の XML](xml-for-friends.md)
+- [.osc XML スキーマを使用してプロバイダーを開発する](developing-a-provider-with-the-osc-xml-schema.md)
 

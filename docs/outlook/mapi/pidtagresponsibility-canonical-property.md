@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 1e8ccef1-db0a-4230-9bd0-87540b53e890
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 15bf61e71a2c230f7891c738661f839ecddb52e1
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25393813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32330122"
 ---
 # <a name="pidtagresponsibility-canonical-property"></a>PidTagResponsibility 標準プロパティ
 
@@ -25,44 +25,44 @@ ms.locfileid: "25393813"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI スプーラーは、このトランスポート プロバイダーが責任を受け入れる必要がありますと見なされる場合は、この受信者、および FALSE にメッセージを配信する責任をいくつかのトランスポート プロバイダーが既に受け入れられて場合は、TRUE を格納します。
+一部のトランスポートプロバイダーが既にこの受信者へのメッセージの配信を承認している場合は TRUE、このトランスポートプロバイダーが責任を受け入れる必要があることを MAPI スプーラーが考慮している場合は FALSE。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |れない  <br/> |
-|識別子:  <br/> |0x0E0F  <br/> |
+|関連するプロパティ:  <br/> |PR_RESPONSIBILITY  <br/> |
+|識別子:  <br/> |0x0e0f  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|エリア:  <br/> |MAPI 以外から送信できます。  <br/> |
+|エリア:  <br/> |MAPI ノンノンアウトテーブル  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-FALSE にこのプロパティを設定する MAPI スプーラーを無効と見なされるトランスポート プロバイダー責任、および TRUE すべての受信者のすべての MAPI スプーラーが[IXPLogon::SubmitMessage](ixplogon-submitmessage.md)、によって、トランスポート プロバイダーに送信メッセージを表示するとき他の受信者です。 トランスポート プロバイダーは必要があります**れない**が FALSE に設定を持つすべての受信者を処理しようとしています。 正常に送信する、または受信者への送信に失敗して確定した後トランスポート プロバイダーは、送信元のメッセージ受信者の責任を受け入れたことを示すには TRUE にこのプロパティを設定する必要があります。 
+mapi スプーラーがトランスポートプロバイダーに送信メッセージを送信すると、 [IXPLogon:: submitmessage](ixplogon-submitmessage.md)を介して、mapi スプーラーが責任を負うすべての受信者に対してこのプロパティが FALSE に設定され、すべてのトランスポートプロバイダーが TRUE に設定されます。その他の受信者。 トランスポートプロバイダーは、 **PR_RESPONSIBILITY**が FALSE に設定されているすべての受信者の処理を試行する必要があります。 受信者に送信または conclusively に失敗した後、トランスポートプロバイダーは、送信元のメッセージでこのプロパティを TRUE に設定して、受信者がその受信者に対して承認されたことを示す必要があります。 
   
-受信者を調べると後、は、トランスポート プロバイダーは、できないこと、または処理する必要があります決定したら場合、トランスポート プロバイダーは、必要があります [**れない**に false を指定します。 MAPI スプーラーは、その受信者を処理できる別のトランスポート プロバイダーを探します。 MAPI スプーラーは、最終的には対象のトランスポート プロバイダーを負いません責任のいずれかの受信者に配信不能レポートを作成します。 
+受信者を調べた後、トランスポートプロバイダーがそれを処理できないかどうかを判断する場合は、トランスポートプロバイダーは**PR_RESPONSIBILITY**を FALSE に設定したままにします。 MAPI スプーラーは、その受信者を処理できる別のトランスポートプロバイダーを検索します。 MAPI スプーラーは、最終的に、トランスポートプロバイダーが責任を受け入れない受信者に対して、配信不能レポートを作成します。 
   
-トランスポート プロバイダーは、しようと、メッセージの配信に失敗した場合、MAPI は、配信不能レポートを生成できるように、MAPI への障害の理由を示すために[IMAPISupport::StatusRecips](imapisupport-statusrecips.md)メソッドを呼び出す必要があります。 
+トランスポートプロバイダーがメッセージの配信を試行して失敗した場合は、mapi が配信不能レポートを生成できるように、 [imapisupport:: StatusRecips](imapisupport-statusrecips.md)メソッドを呼び出してエラーの理由を mapi に示す必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
-> 順序と、クライアントとサーバー間のデータ転送のフローを処理します。
+> クライアントとサーバー間のデータ転送の順序と流れを処理します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
@@ -71,9 +71,9 @@ Mapitags.h
 [PidTagDeleteAfterSubmit ���K���̃v���p�e�B](pidtagdeleteaftersubmit-canonical-property.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

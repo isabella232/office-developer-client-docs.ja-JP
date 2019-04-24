@@ -1,5 +1,5 @@
 ---
-title: アドレス帳プロバイダー サンプル
+title: アドレス帳プロバイダーのサンプル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,85 +9,85 @@ api_type:
 ms.assetid: 2ccf1643-5604-4fee-92cc-3d6af00e7f98
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: fa2a447d0757e75c95d7dc3d9b1dd16b8c7a8084
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25394721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331109"
 ---
-# <a name="address-book-provider-sample"></a>アドレス帳プロバイダー サンプル
+# <a name="address-book-provider-sample"></a>アドレス帳プロバイダーのサンプル
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このサンプルには、表示名と電子メール アドレスは、バイナリのフラット ファイルからの読み取りは、1 つの読み取り専用コンテナーがサポートしています。 サンプルには、1 回限りのテンプレートおよびプロファイル ウィザードを除くすべての構成オプションがサポートされています。
+このサンプルでは、表示名と電子メールアドレス用の単一の読み取り専用コンテナーをサポートしています。これは、フラットなバイナリファイルから読み取られます。 サンプルでは、プロファイルウィザードを除く、1回限りのテンプレートとすべての構成オプションをサポートしています。
   
-[Outlook メッセージング API (MAPI) のサンプル コード](https://go.microsoft.com/fwlink/?LinkId=129740
-)からは、このサンプルをダウンロードできます。
+このサンプルは、 [Outlook Messaging API (MAPI) コードサンプル](https://go.microsoft.com/fwlink/?LinkId=129740
+)からダウンロードできます。
   
 |||
 |:-----|:-----|
-|実行可能ファイル:  <br/> |SABP32.dll  <br/> |
-| ソース コードのディレクトリ:  <br/> |SampleAddressBookProvider\SABP  <br/> |
-|言語:  <br/> |C++  <br/> |
-|プラットフォーム:  <br/> |Windows Vista、Windows Server 2008、Windows XP SP2、および Windows Server 2003 SP1 のプログラムをコンパイルするのには、Microsoft Visual Studio 2008  <br/> |
+|実行可能  <br/> |SABP32  <br/> |
+| ソースコードディレクトリ:  <br/> |SampleAddressBookProvider\SABP  <br/> |
+|言語  <br/> |+  <br/> |
+|対象  <br/> |windows Vista、windows server 2008、windows XP SP2、および windows server 2003 SP1 用にコンパイルする Microsoft Visual Studio 2008  <br/> |
    
-## <a name="supported-features"></a>サポートされている機能
+## <a name="supported-features"></a>サポートされる機能
 
-このサンプルには、次の機能がサポートされています。
+この例では、次の機能をサポートしています。
   
-- テーブルの制限です。 サンプルでは、プレフィックスに一致およびあいまいな名前解決を実装します。 完全な MAPI 制限言語を実装していないと表示名にのみ制限をサポートします。
+- 表の制限 この例では、プレフィックスとあいまいな名前の解決を実装しています。 完全な MAPI 制限言語を実装するわけではなく、表示名でのみ制限がサポートされています。
     
-- メッセージング ユーザーの詳細表示のテーブル。 
+- メッセージングユーザーの詳細表示テーブル。 
     
-- 1 回限りのアドレスです。
+- 1回限りの住所。
     
-- 高度な検索] ダイアログ ボックスの場合。
+- [高度な検索] ダイアログボックス
     
-- [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md)インタ フェースです。 このインターフェイスは部分的にサポートされています。**IMAPIProp**メソッドは、 **IPropData**インターフェイスに委任されます。 詳細についてを参照してください、 [IPropData: IMAPIProp](ipropdataimapiprop.md)インタ フェースです。 
+- [imapistatus: imapistatus](imapistatusimapiprop.md)インターフェイス。 このインターフェイスは部分的にサポートされています。**imapiprop**メソッドは、 **ipropdata**インターフェイスに委任されます。 詳細については、 [ipropdata: imapiprop](ipropdataimapiprop.md)インターフェイスを参照してください。 
     
-- インタラクティブおよびプログラマティックな構成です。
+- 対話型およびプログラムによる構成。
     
-## <a name="unsupported-features"></a>サポートされていない機能
+## <a name="unsupported-features"></a>サポートされない機能
 
 このサンプルでは、次の機能はサポートされていません。
   
-- 並べ替えします。
+- 替え.
     
-- 配布リストです。
+- 配布リスト。
     
-- 作成、削除、およびエントリを変更します。
+- エントリの作成、削除、変更。
     
-- 複数値を持つプロパティです。
+- 複数の値を持つプロパティ。
     
 - 名前付きプロパティ。
     
 - 表示名の最初と最後の名前を区別します。
     
- **サンプルのアドレス帳プロバイダーをインストールするのには**
+ **サンプルアドレス帳プロバイダーをインストールするには**
   
-1. サンプルのアドレス帳プロバイダーをダウンロードするには、 [Outlook MAPI サンプルのダウンロード](downloading-the-outlook-mapi-samples.md)を参照してください。
+1. サンプルのアドレス帳プロバイダーをダウンロードするには、「 [Outlook MAPI サンプルのダウンロード](downloading-the-outlook-mapi-samples.md)」を参照してください。
     
-2. Outlook MAPI サンプルを保存したフォルダーを見つけます。 右クリックし、 **OutlookMAPISamples ・\<バージョン番号\>** フォルダーを zip し、[**すべて展開**] をクリックします。
+2. Outlook MAPI サンプルを保存したフォルダーを見つけます。 **OutlookMAPISamples-\<version\>番号**の zip フォルダーを右クリックし、[**すべて抽出**] をクリックします。
     
-3. **参照**] をクリックして、サンプルを保存する場所を選択し、[**抽出**] をクリックします。
+3. [**参照**] をクリックして、サンプルを保存する場所を選択し、[**抽出**] をクリックします。
     
-4. Visual Studio 2008年を実行します。
+4. Visual Studio 2008 を実行します。
     
-5. Visual Studio 2008 では、[**ファイル**] をクリックして、[**開いている**、および**プロジェクト/ソリューション**] をクリックし。
+5. Visual Studio 2008 で、[**ファイル**] をクリックし、[**開く**] を選択して、[**プロジェクト/ソリューション**] をクリックします。
     
-6. サンプルを保存する場所を参照する**SABP.vcproj**をクリックし、[**開く**] をクリックします。
+6. サンプルを保存した場所を参照し、[ **SABP**] をクリックして、[**開く**] をクリックします。
     
 7. [ **ビルド**] メニューで、[ **ソリューションのビルド**] をクリックします。
     
-8. **ファイルに名前を付けて**保存] ダイアログ ボックスで [**保存**] をクリックします。
+8. [名前を付け**てファイルを保存**] ダイアログボックスで、[**保存**] をクリックします。
     
-9. サンプルを保存したフォルダーに**install.bat**ファイルを右クリックし、**管理者として実行**] をクリックします。
+9. サンプルを保存したフォルダーで、**インストールする .bat**ファイルを右クリックし、[**管理者として実行**] をクリックします。
     
-10. **ユーザー アカウント制御**] ダイアログ ボックスで [**続行**] をクリックします。
+10. [**ユーザー アカウント制御**] ダイアログ ボックスで、[**続行**] をクリックします。
     
     > [!NOTE]
-    > **Install.bat**コピー .dll ファイルを既定の Microsoft Office のインストール フォルダー、C:\Program ファイル Office\Office12\. 別の場所に Office 製品をインストールした場合は、 **Install.bat**を右クリックし、[**編集**] をクリックします。 ファイルがメモ帳で開きます。 既定のインストール パスをお使いのコンピューターで使用されているインストール パスに置き換えます。 
+    > **.bat をインストール**すると、.dll は既定の Microsoft Office インストールフォルダーである C:\Program C:\Program Office\Office12 にコピーされます。\. 別の場所に Office 製品をインストールした場合は、[**インストール**] を右クリックし、[**編集**] をクリックします。 ファイルがメモ帳で開きます。 既定のインストールパスを、コンピューターで使用されているインストールパスに置き換えます。 
   
 

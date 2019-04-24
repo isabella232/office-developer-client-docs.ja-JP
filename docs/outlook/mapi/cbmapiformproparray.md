@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: f85bd23d-c285-4448-a946-7ab4fc0f03be
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a60fe565992756163eaf19b84e36c03acb66cc73
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 704935e5863d789ee1120ddde8d4eb42edbec573
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331949"
 ---
 # <a name="cbmapiformproparray"></a>CbMAPIFormPropArray
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[SMAPIFormProp](smapiformprop.md)構造体の指定された数を含んでいる既存の[SMAPIFormPropArray](smapiformproparray.md)構造体のバイト数を計算します。 
+指定した数の[smapiformprop](smapiformprop.md)構造体を含む既存の[smapiformproparray](smapiformproparray.md)の構造体内のバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
-|関連の構造体。  <br/> |**SMAPIFormPropArray** <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
+|関連する構造:  <br/> |**SMAPIFormPropArray** <br/> |
    
 ```cpp
 CbMAPIFormPropArray (_c)
@@ -40,7 +40,7 @@ CbMAPIFormPropArray (_c)
 
  __c_
   
-> 問題の**SMAPIFormPropArray**構造体の**SMAPIFormProp**構造体の数です。 
+> 問題の**smapiformpropar射線**の構造内の**smapiformprop**構造体の数。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -51,5 +51,5 @@ CbMAPIFormPropArray (_c)
 [SMAPIFormProp](smapiformprop.md)
 
 
-[構造体に関連するマクロ](macros-related-to-structures.md)
+[構造に関連するマクロ](macros-related-to-structures.md)
 

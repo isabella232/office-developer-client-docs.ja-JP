@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: b96dd8f6-e648-4014-8a1d-ae1da771c439
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ce78c6873f3a1dc034ae33f3c9e965ef8f2f1815
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5e2ce756baaefef7bd0028e746b1dbe10756365e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329043"
 ---
 # <a name="imapitableexpandrow"></a>IMAPITable::ExpandRow
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-リーフまたは表形式ビューをカテゴリに属している下位レベルの見出しの行を追加する、折りたたまれているテーブルのカテゴリを展開します。
+折りたたまれたテーブルカテゴリを展開して、そのカテゴリに属するリーフまたは下位レベルの見出し行をテーブルビューに追加します。
   
 ```cpp
 HRESULT ExpandRow(
@@ -42,63 +42,63 @@ ULONG FAR * lpulMoreRows
 
  _cbInstanceKey_
   
-> [in]_PbInstanceKey_パラメーターが指す、PR_INSTANCE_KEY プロパティ内のバイト数です。 
+> 順番_pbInstanceKey_パラメーターが指す PR_INSTANCE_KEY プロパティのバイト数。 
     
  _pbInstanceKey_
   
-> [in]カテゴリの見出しの行を識別する**PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) のプロパティへのポインター。 
+> 順番カテゴリの見出し行を識別する**PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) プロパティへのポインター。 
     
- _ulRowCount_
+ _ulrowcount_
   
-> [in]_LppRows_パラメーターに返す行の最大数です。 
+> 順番_lpprows_パラメーターで取得する行の最大数。 
     
  _ulFlags_
   
-> 予約されています。0 にする必要があります。
+> 予約語0である必要があります。
     
- _lppRows_
+ _lpprows_
   
-> [out]拡張の結果としてテーブルのビューに挿入されている ( _ulRowCount_) までの最初のローを受信する[SRowSet](srowset.md)構造体へのポインター。 _PbInstanceKey_パラメーターで指定された見出しの行の後は、これらの行が挿入されます。 _LppRows_パラメーターは、 _ulRowCount_パラメーターが 0 の場合、NULL にすることができます。 
+> 読み上げ拡張の結果としてテーブルビューに挿入された最初の (最大_ulrowcount_) 行を受信する[srowset](srowset.md)構造体へのポインター。 これらの行は、 _pbInstanceKey_パラメーターによって指定される見出し行の後に挿入されます。 _ulrowcount_パラメーターが0の場合は、 _lpprows_パラメーターを NULL にすることができます。 
     
  _lpulMoreRows_
   
-> [out]テーブル ビューに追加された行の総数へのポインター。
+> 読み上げテーブルビューに追加された行の合計数へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> カテゴリは正常に展開されています。
+> カテゴリが正常に展開されました。
     
 MAPI_E_NOT_FOUND 
   
-> _PbInstanceKey_パラメーターで指定された行が存在しません。 
+> _pbInstanceKey_パラメーターで指定された行が存在しません。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPITable::ExpandRow**メソッドでは、リーフやテーブル ・ ビューをカテゴリに属している下位レベルの見出しの行を追加する、折りたたまれているテーブルのカテゴリを展開します。 _LppRows_パラメーターで返される行の数に制限は、 _ulRowCount_パラメーターで指定できます。 _UlRowCount_が 0 より大きい値に設定すると、 _lppRows_で指定された行セットの 1 つまたは複数の行が返されます、BOOKMARK_CURRENT は、行の最後の行の直後の行に移動するブックマークの位置を設定します。
+**IMAPITable:: expandrow**メソッドは、折りたたまれたテーブルカテゴリを展開し、そのカテゴリに属するリーフまたは下位レベルの見出し行をテーブルビューに追加します。 _lpprows_パラメーターで返される行数の制限は、 _ulrowcount_パラメーターで指定できます。 _ulrowcount_が0より大きい値に設定されている場合に、 _lpprows_が指す行セットで1つ以上の行が返されると、bookmark BOOKMARK_CURRENT の位置は、行セットの最後の行の直後の行に移動します。
   
-行に BOOKMARK_CURRENT の位置を設定するカテゴリに追加する_ulRowCount_を 0 に設定すると、リーフは 0、または下位の見出し行を要求するか、リーフまたはカテゴリ内の下位レベルの見出しの行がないために、0 個の行が返されます、次の_pbInstanceKey_で識別される行です。 
+_ulrowcount_が0に設定されている場合、0個のリーフまたは下位レベルの見出し行をカテゴリに追加することを要求するか、カテゴリにリーフまたは下位レベルの見出し行がないために0行が返される場合、BOOKMARK_CURRENT の位置は行に設定されます。_pbInstanceKey_によって識別される行の次のとおりです。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-カテゴリの拡張のためのテーブル ビューに追加される行に通知を生成しません。
+カテゴリの拡張によってテーブルビューに追加された行に対して通知を生成しません。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-_LppRows_パラメーターで指定された行セット内の行の数ではテーブルに実際に追加された行の数が等しくない場合がありますが、全体のリーフの設定または下位の見出し行のカテゴリ。 メモリ不足、または_ulRowCount_パラメーターで指定された数を超えるカテゴリ内の行の数などは、エラーが発生することができます。 BOOKMARK_CURRENT は、いずれの場合も、返された最後の行に配置されます。 カテゴリ内の行の残りの部分をすぐに取得するには、 [IMAPITable::QueryRows](imapitable-queryrows.md)を呼び出します。
+_lpprows_パラメーターによって指定された行セット内の行数が、そのカテゴリのリーフまたは下位レベルの見出し行のセット全体で、実際にテーブルに追加された行数と一致しない場合があります。 メモリが不足しているなどのエラー、または_ulrowcount_パラメーターで指定された数を超えるカテゴリ内の行の数が発生することがあります。 どちらの場合でも、BOOKMARK_CURRENT は返された最後の行に配置されます。 カテゴリ内の残りの行をすぐに取得するには、「 [IMAPITable:: QueryRows](imapitable-queryrows.md)」という呼び出しを行います。
   
-カテゴリの状態を変更するとテーブルの通知が受信されないようにします。 **ExpandRow**または**CollapseRow**呼び出しのたびに更新される行のローカル キャッシュを保持することができます。 
+カテゴリの状態が変更されたときに、テーブル通知を受け取ることはありません。 すべての**expandrow**または**CollapseRow**呼び出しで更新できる行のローカルキャッシュを維持できます。 
   
-分類されたテーブルの詳細については、[並べ替えや分類](sorting-and-categorization.md)を参照してください。
+カテゴリ別テーブルの詳細については、「[並べ替えと分類](sorting-and-categorization.md)」を参照してください。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::DoExpandCollapse  <br/> |MFCMAPI では、 **IMAPITable::ExpandRow**メソッドを使用して、折りたたまれているテーブルのカテゴリを展開します。  <br/> |
+|ContentsTableListCtrl  <br/> |CContentsTableListCtrl::D oexpandcollapse  <br/> |mfcmapi は、 **IMAPITable:: expandrow**メソッドを使用して、折りたたまれたテーブルカテゴリを展開します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

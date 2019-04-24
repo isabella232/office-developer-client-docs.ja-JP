@@ -12,41 +12,41 @@ api_type:
 - HeaderDef
 ms.assetid: 26195406-dcef-4504-bb74-d0705d952897
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 21bbcc32cd71899a2546b17f8023ef49744ba5e6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8dac0b2684a4b6754e99235f47816f8e5fb84714
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332012"
 ---
 # <a name="pidtagabproviders-canonical-property"></a>PidTagAbProviders 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-現在のプロファイルで、アドレス帳プロバイダーの識別子の一覧が含まれています。 
+現在のプロファイル内のアドレス帳プロバイダーの識別子の一覧が含まれています。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_AB_PROVIDERS  <br/> |
-|識別子:  <br/> |0x3D01  <br/> |
+|識別子:  <br/> |0x3d01  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |アドレス帳  <br/> |
+|エリア:  <br/> |アドレス帳  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティを使用しません。 MAPI によって使用するために予約されています。
+このプロパティを使用しません。 MAPI で使用するために予約されています。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -54,7 +54,7 @@ Mapidefs.h
 
 
 
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -8,22 +8,22 @@ api_type:
 - COM
 ms.assetid: f643800e-0ae5-41a3-93da-3fa39dea1633
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 7ba72e18e81f6f73b069780ac6db82bdd05adce0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f2963379e6c670cc97a902f113d896bf2dda5591
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32330164"
 ---
 # <a name="implementing-folders-in-message-stores"></a>���[���̕ۑ��ꏊ�Ńt�H���_�[��������܂��B
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォルダーのメッセージ ストア プロバイダーのサポートに関連する情報の多くは、 [MAPI フォルダー](mapi-folders.md)で説明します。 メッセージ ストア プロバイダーを実装する前にその情報を理解する必要があります。 [MAPI フォルダー](mapi-folders.md) ] セクションには大きく、MAPI クライアントの観点このトピックでは、メッセージ ストア プロバイダーの観点から重要な追加情報について説明します。 
+A great deal of the information that relates to message store provider support for folders is covered in [MAPI Folders](mapi-folders.md). You should be familiar with that information before attempting to implement a message store provider. The [MAPI Folders](mapi-folders.md) section is heavily oriented to the MAPI client's perspective; this topic covers additional information that is important from the message store provider's point of view. 
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 

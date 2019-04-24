@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 192cdab8-c615-47b9-9f04-a1414eaf0c77
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7e9c3340dfad47a811b56c86e8e6104fb6aac7c2
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329268"
 ---
 # <a name="pidtagnull-canonical-property"></a>PidTagNull 標準プロパティ
 
@@ -25,46 +25,46 @@ ms.locfileid: "25400797"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-配列の領域を予約または、null 値またはプロパティの設定を表します。
+null 値またはプロパティの設定を表します。または、配列スペースを予約します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_NULL  <br/> |
 |識別子:  <br/> |0x0000  <br/> |
 |データの種類 :   <br/> |PT_NULL  <br/> |
-|エリア:  <br/> |Common  <br/> |
+|エリア:  <br/> |共通  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-[SPropValue](spropvalue.md)構造体の配列の領域を予約するのにはこのプロパティを使用します。 **SPropValue**構造体の返される配列内の領域を予約する方法を指示する[SPropTagArray](sproptagarray.md)構造体の配列で使用されます。 安価な方法で設定されるプロパティを計算できます。 
+このプロパティは、 [spropvalue](spropvalue.md)構造の配列にスペースを予約するために使用されます。 [SPropTagArray](sproptagarray.md)構造体の配列で使用され、 **spropvalue**構造の返された配列にスペースを予約することをメソッドに通知します。 これにより、計算されたプロパティを安価な方法で入力することができます。 
   
-詳細については、 [MAPI プロパティの種類の概要](mapi-property-type-overview.md)を参照してください。
+詳細については、「 [MAPI プロパティの種類の概要](mapi-property-type-overview.md)」を参照してください。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
-> 連絡先と個人用配布リストで許可されている操作のプロパティを指定します。
+> 連絡先および個人用配布リストで許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: c1b746e6-c9df-4e92-a8b8-7a00b2de53e7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8ae4326cedf7e4fa4c3218d30255a9473ab7fbe0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e0087cdffe04bdb5de7ffcfa295a5ac84bf03bd1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331623"
 ---
 # <a name="cbmapiverbarray"></a>CbMAPIVerbArray
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[SMAPIVerb](smapiverb.md)構造体の指定された数を含んでいる既存の[SMAPIVerbArray](smapiverbarray.md)構造体のバイト数を計算します。 
+指定した数の[smapiverb](smapiverb.md)構造を含む既存の[SMAPIVerbArray](smapiverbarray.md)構造体のバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
-|関連の構造体。  <br/> |**SMAPIVerbArray** <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
+|関連する構造:  <br/> |**SMAPIVerbArray** <br/> |
    
 ```cpp
 int CbMAPIVerbArray (_c)
@@ -40,7 +40,7 @@ int CbMAPIVerbArray (_c)
 
  __c_
   
-> 既存の**SMAPIVerbArray**構造体の**SMAPIVerb**構造体の数です。 
+> 既存の**SMAPIVerbArray**構造体の**smapiverb**構造のカウント。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -51,5 +51,5 @@ int CbMAPIVerbArray (_c)
 [SMAPIVerb](smapiverb.md)
 
 
-[構造体に関連するマクロ](macros-related-to-structures.md)
+[構造に関連するマクロ](macros-related-to-structures.md)
 

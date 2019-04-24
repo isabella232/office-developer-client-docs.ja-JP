@@ -1,5 +1,5 @@
 ---
-title: IMAPIFormGetLastError
+title: imapiformgetlasterror
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 81af8a0b-4ec2-459c-8ab2-29d28a8b680f
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a83af0766c907f2868f7d5e116454e648d6f4463
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: a74ad733b91aa455b8e03e6aac8efa2c4299b640
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329450"
 ---
 # <a name="imapiformgetlasterror"></a>IMAPIForm::GetLastError
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-前のフォーム オブジェクトによって生成されたエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。 
+form オブジェクトによって生成された前のエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。 
   
 ```cpp
 HRESULT GetLastError(
@@ -39,21 +39,21 @@ HRESULT GetLastError(
 
  _hResult_
   
-> [in]以前のメソッドの呼び出しで生成されたエラー値を含む HRESULT のデータ型です。
+> 順番前のメソッド呼び出しで生成されたエラー値を含む HRESULT データ型。
     
  _ulFlags_
   
-> [in]返される文字列の種類を制御するフラグのビットマスクです。 次のフラグを設定することができます。 
+> 順番返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。 
     
 MAPI_UNICODE 
   
-> セット、 _lppMAPIError_パラメーターに返された**MAPIERROR**構造体の文字列が Unicode 形式内にある場合。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。 
+> 設定されている場合、 _lppMAPIError_パラメーターで返される**MAPIERROR**構造の文字列は、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。 
     
  _lppMAPIError_
   
-> [out]エラーのバージョン、コンポーネント、およびコンテキストの情報を格納する返された**MAPIERROR**構造体へのポインターへのポインター。 取得する**MAPIERROR**構造体が存在しない場合、このパラメーターを NULL に設定することができます。 
+> 読み上げエラーのバージョン、コンポーネント、およびコンテキスト情報を含む、返された**MAPIERROR**構造体へのポインターへのポインター。 **MAPIERROR**構造体を返さない場合は、このパラメーターを NULL に設定できます。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -61,17 +61,17 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> か、MAPI_UNICODE フラグが設定された**発生しました**が、Unicode をサポートしていませんまたは MAPI_UNICODE が設定されていませんでしたし、 **GetLastError**は、Unicode だけをサポートしています。 
+> MAPI_UNICODE フラグが設定されていて、 **getlasterror**が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、 **getlasterror**が unicode のみをサポートしています。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPIForm::GetLastError**メソッドでは、失敗したメソッド呼び出しに関する情報を提供します。 呼び出し元は、ダイアログ ボックスに**MAPIERROR**構造体のデータを含めることによって、エラーの詳細情報をユーザーを提供できます。 
+**imapiform:: GetLastError**メソッドは、失敗した前のメソッド呼び出しに関する情報を提供します。 呼び出し元は、 **MAPIERROR**構造のデータをダイアログボックスに含めることによって、エラーに関する詳細情報をユーザーに提供できます。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**MAPIERROR**指す構造体、 _lppMAPIError_パラメーターで 1 つは、MAPI が提供している場合**発生しました**が S_OK を返す場合にのみを使用することができます。 場合があります、MAPI ではその最後のエラーを判断できないか、エラーの報告には関係ありません。 このような場合は、NULL へのポインターが返されます_lppMAPIError_の代わりにします。 
+_lppMAPIError_パラメーターで指定されている**MAPIERROR**構造体は、 **GetLastError**が S_OK を返す場合にのみ使用できます。 MAPI では、最後のエラーが発生したかどうかを判断できない場合や、エラーについてのレポートを持っている場合もあります。 このような場合、代わりに_lppMAPIError_で NULL へのポインターが返されます。 
   
-**GetLastError**メソッドの詳細については、[拡張エラーの使用](mapi-extended-errors.md)を参照してください。
+**GetLastError**メソッドの詳細については、「[拡張エラーの使用](mapi-extended-errors.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

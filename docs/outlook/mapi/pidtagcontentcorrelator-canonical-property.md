@@ -12,51 +12,51 @@ api_type:
 - HeaderDef
 ms.assetid: 0bf78879-2f9f-4c29-b1f4-2f4882d8464d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6398acf71e62157cf5a6eb7e6caf22130fa9f9d0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 96e0e3152a70eb2913c4559afd99e25adff48ca9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331977"
 ---
 # <a name="pidtagcontentcorrelator-canonical-property"></a>PidTagContentCorrelator 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-元のメッセージを含むレポートを一致するようにメッセージの送信者を使用できる値が含まれています。
+メッセージの送信者が、元のメッセージとレポートを照合するために使用できる値を格納します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_CONTENT_CORRELATOR  <br/> |
 |識別子:  <br/> |0x0007  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |Exchange  <br/> |
+|エリア:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-バイナリ文字列の内容は、メッセージの発信者によって定義されます。 メッセージへの応答として生成されるすべてのレポートには、送信メッセージ、このプロパティのセットをコピーしてください。 場合、
+バイナリ文字列の内容は、メッセージの発信者によって定義されます。 送信メッセージに設定されている場合、このプロパティはメッセージへの応答で生成されたすべてのレポートにコピーされる必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

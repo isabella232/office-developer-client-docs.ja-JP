@@ -1,5 +1,5 @@
 ---
-title: IPropDataHrGetPropAccess
+title: ipropdatahrgetpropaccess
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 0101d291-00ca-4f66-b857-75d74b9f91a1
 description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 64b0c0501a6ef4471f97e82b231ef430681f1306
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5e36cf12b7a5b1643f5a0ec97223030718195a7d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331592"
 ---
 # <a name="ipropdatahrgetpropaccess"></a>IPropData::HrGetPropAccess
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 �A�N�Z�X ���x���� 1 �܂��͕����̃I�u�W�F�N�g�̃v���p�e�B�̏�Ԃ�擾���܂��B
   
@@ -34,7 +34,7 @@ HRESULT HrGetPropAccess(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _lppPropTagArray_
   
@@ -49,17 +49,17 @@ HRESULT HrGetPropAccess(
 |IPROP_READONLY �v���p�e�B��ύX�ł��Ȃ����Ƃ�����܂��B  <br/> |IPROP_CLEAN �v���p�e�B���ύX����Ă��Ȃ����Ƃ�����܂��B  <br/> |
 |IPROP_READWRITE �v���p�e�B��ύX�ł��邱�Ƃ�����܂��B  <br/> |IPROP_DIRTY �v���p�e�B���ύX����Ă��邱�Ƃ�����܂��B  <br/> |
    
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > �v���p�e�B�̃A�N�Z�X ���x���Ə�ԃt���O������ɕԂ���܂���B
     
-## <a name="remarks"></a>����
+## <a name="remarks"></a>解説
 
 **IPropData::HrGetPropAccess**���\�b�h�́A�A�N�Z�X ���x���� 1 �ȏ�̃v���p�e�B�̏�Ԃ�����t���O�̐ݒ��擾���܂��B 
   
-## <a name="notes-to-callers"></a>呼び出し元へのメモ:
+## <a name="notes-to-callers"></a>呼び出し元に関するメモ:
 
 **HrGetPropAccess**��́A���̖ړI�Ŏg�p�ł��܂��B 
   
@@ -73,7 +73,7 @@ _lppPropTagArray_��w���v���p�e�B �^�O�z���̃v�
   
 �v���p�e�B�͂��Ȃ��ύX�܂��͍폜�AIPROP_READONLY �܂��� IPROP_READWRITE �̃t���O���ݒ肳��܂��B 
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 

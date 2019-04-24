@@ -8,47 +8,47 @@ f1_keywords:
 - Vis_DSS.chm82251786
 localization_priority: Normal
 ms.assetid: d9fc2007-cc21-b20c-adee-be87cc356753
-description: 文字列が同じかどうかを判断します。 値が同じ場合に TRUE を返します false の場合は、します。
-ms.openlocfilehash: 5365ce6e679f708a47f4bcbdebbc4cabb13a2aee
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 文字列が同じかどうかを判断します。 同じである場合は TRUE を返し、そうでない場合は FALSE を返します。
+ms.openlocfilehash: 0f298c966ec7a3f1e23c89473fecc555ed950f79
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329842"
 ---
 # <a name="strsame-function"></a>STRSAME 関数
 
-文字列が同じかどうかを判断します。 値が同じ場合に TRUE を返します false の場合は、します。 
+文字列が同じかどうかを判断します。 同じである場合は TRUE を返し、そうでない場合は FALSE を返します。 
   
 ## <a name="syntax"></a>構文
 
-STRSAME ("* * *string1* * *「,」* **文字列 2* * *」、* * *ignoreCase* * *) 
+strsame ("* * *string1* * *", "* * *string2* * *", * * *ignoreCase* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _文字列 1_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |比較する最初の文字列を指定します。  <br/> |
-| _文字列 2_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |比較する 2 番目の文字列を指定します。  <br/> |
-| _ignoreCase_ <br/> |省略可能  <br/> |**ブール型 (Boolean)** <br/> |大文字/小文字を区別しない場合は TRUE を、大文字/小文字を区別する場合は FALSE を指定します。既定値は FALSE です。  <br/> |
+| _string1_ <br/> |必須  <br/> |**String** <br/> |比較する最初の文字列を指定します。  <br/> |
+| _string2_ <br/> |必須  <br/> |**String** <br/> |比較する 2 番目の文字列を指定します。  <br/> |
+| _ignoreCase_ <br/> |省略可能  <br/> |**Boolean** <br/> |大文字/小文字を区別しない場合は TRUE を、大文字/小文字を区別する場合は FALSE を指定します。 既定値は FALSE です。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
-ブール型
+Boolean
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 マルチバイト文字列の比較、または特定のロケールに関する文字の規則を使用した比較を実行する場合は、STRSAMEEX 関数を使用します。
   
 ## <a name="example-1"></a>例 1
 
-STRSAME("cat","dog")
+strsame ("cat", "dog")
   
 FALSE を返します。
   
 ## <a name="example-2"></a>例 2
 
-STRSAME("cat","cat")
+strsame ("cat", "cat")
   
 TRUE を返します。
   
@@ -60,7 +60,7 @@ TRUE を返します。
   
 ## <a name="example-4"></a>例 4
 
-STRSAME("cat","CAT")
+strsame ("cat", "cat")
   
 FALSE を返します。
   

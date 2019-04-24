@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 4e1804bf-4c50-4942-a7ab-9a8caf1be7e5
 description: '�ŏI�X�V��: 2012�N6��25��'
 ms.openlocfilehash: a5792ebaf78d77924bc3157be63d937b66e9f4b2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329654"
 ---
 # <a name="using-multiple-exchange-accounts"></a>������ Exchange �A�J�E���g��g�p���܂��B
 
@@ -19,9 +19,9 @@ ms.locfileid: "28723062"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Microsoft Outlook 2010 および Microsoft Outlook 2013 は、複数の exchange 電子メール アカウントとの統合をサポートします。 Outlook 2010 または Outlook 2013 では、ユーザーが同じプロファイルに 2 つの exchange アカウントを追加を活用し、ながら発行済みのグローバル アドレス一覧 (GAL)、Exchange の出力を Office の構成では、フォルダーの共有など、Exchange の豊富な機能です。
+microsoft outlook 2010 および microsoft outlook 2013 は、複数の exchange 電子メールアカウントとの統合をサポートしています。 outlook 2010 または outlook 2013 では、ユーザーは2つの exchange アカウントを同じプロファイルに追加しても、公開されたグローバルアドレス一覧 (GAL)、exchange の不在構成、フォルダー共有などの豊富な exchange 機能を利用できます。
   
-Microsoft Office Outlook 2007 用の MAPI プロファイル セクションを理解およびそれ以前は、固定の Exchange のグローバル プロファイル セクションの**pbGlobalProfileSectionGuid**で、電子メール ユーザー名とサーバー名など、Exchange の設定が格納されていることを知る。 Outlook 2010、Outlook 2013 では、各 Exchange アカウントには、 **pbGlobalProfileSectionGuid**を廃止する設定を格納する独自のプロファイル セクションが必要があります。 
+Microsoft Office Outlook 2007 以前の MAPI プロファイルセクションに精通しているユーザーは、電子メールユーザー名やサーバー名などの exchange 設定が、固定 exchange グローバルプロファイルセクション**pbGlobalProfileSectionGuid**に保存されていることがわかっています。 outlook 2010 および outlook 2013 では、設定を保存するためにそれぞれの Exchange アカウントに独自のプロファイルセクションが必要で、 **pbGlobalProfileSectionGuid**が使用できなくなりました。 
   
 �v���t�@�C��] �ŁA Outlook 2010��Outlook 2013 Exchange �̐ݒ肪�܂��ۑ�����Ă��邪�A�v���t�@�C�����Ƃ̐ݒ��܂ރZ�N�V�����̃v���t�@�C���̈�ӂ̎��ʎq�����蓖�Ă��Ă��铮�I�ɕύX���܂��B�v���t�@�C���� Exchange �̐ݒ�̏ꏊ�́A[ [PidTagExchangeProfileSectionId ���K���̃v���p�e�B](pidtagexchangeprofilesectionid-canonical-property.md)] �́AExchange �A�J�E���g�̃��b�Z�[�W �T�[�r�X �v���t�@�C��] �Z�N�V�����ɋL�ڂ���Ă���ɕۑ�����܂��B���̃v���p�e�B�́A������Ƃ̏ꍇ�́A���̃��b�Z�[�W �T�[�r�X�̃v���o�C�_�[���Ƃ� [�v���t�@�C��] �Z�N�V�����ɂ�L�ڂ���Ă��܂��B��ӂ̎��ʎq�́A�T�[�o�[�ɕۑ�����Ă��Ȃ��ƁA�v���t�@�C���ňقȂ邪���܂��B
   
@@ -84,7 +84,7 @@ Api ���ꂽ�@�\������S�ɕ����� Exchange �ł
     
 - �R�[�h�� **emsmdbUID**��w�肷��ƁA **emsmdbUID**�Ɉ�v���� **PidTagExchangeProfileSectionId**����J����s�̃��b�Z�[�W �T�[�r�X �e�[�u�����\������܂��B
     
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 

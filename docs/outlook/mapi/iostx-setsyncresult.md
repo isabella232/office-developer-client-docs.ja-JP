@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7f083ee0-bf36-0059-1589-66e454fe0098
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f8982bafc0678378ae46dc31a9417cc11bb695a7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 78ccf72f17ec350d77f2d22d0e6d2fa7c3d97543
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332145"
 ---
 # <a name="iostxsetsyncresult"></a>IOSTX::SetSyncResult
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 同期の結果を設定します。
   
@@ -35,13 +35,13 @@ HRESULT SetSyncResult(
 
 ## <a name="parameters"></a>パラメーター
 
- _hrSync_
+ _hrsync_
   
->  [in]同期の結果を返します。 
+>  順番同期の結果。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-ローカル ストアの同期の結果を通知するために**IOSTX::SyncEnd**を呼び出す前に**IOSTX::SetSyncResult**を呼び出します。 
+同期の結果をローカルストアに通知するには、iostx:: **syncend**を呼び出す前に、 **iostx:: SetSyncResult**を呼び出します。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -60,5 +60,5 @@ HRESULT SetSyncResult(
 [IOSTX::SyncHdrEnd](iostx-synchdrend.md)
 
 
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
 

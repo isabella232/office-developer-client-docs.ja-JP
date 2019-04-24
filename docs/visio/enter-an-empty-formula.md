@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 5df5c253-f491-7039-ce00-e66417590bb2
 description: ''
-ms.openlocfilehash: 46feb04453025824c2d24358bf82b8e967cba84e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cc97a64da977d20d3c76f3d3a083268b4c93bbb3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328976"
 ---
 # <a name="enter-an-empty-formula"></a>空の数式を入力する
 
@@ -23,6 +23,6 @@ ms.locfileid: "19805329"
 2. Del キーを押してから、Enter キーを押します。
     
 > [!NOTE]
-> **スクラッチ**セルのローカルの数式を挿入した後これをください。 セルは、マスター シェイプから継承する数式がないために、' いいえ数式 ' に戻ります。 
+> ローカルの数式を挿入した後、それを**スクラッチ**のセルで試してみてください。 マスターから継承する数式がないので、セルは [数式なし] に戻ります。 
   
 

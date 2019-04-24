@@ -1,31 +1,31 @@
 ---
-title: CommentEntry 要素 (CommentList_Type complexType)'Visio XML (')
+title: コメント entry 要素 (CommentList_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: b0653622-fa94-4889-68c2-94f3e7a83119
-description: 図面内のコメントを識別するためのプロパティを指定します。
+description: 図面内のコメントを識別するために使用するプロパティを指定します。
 ms.openlocfilehash: 79d15b95f986826a4848c2dfbb003255d3482134
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25397045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329541"
 ---
-# <a name="commententry-element-commentlisttype-complextype-visio-xml"></a>CommentEntry 要素 (CommentList_Type complexType)'Visio XML (')
+# <a name="commententry-element-commentlisttype-complextype-visio-xml"></a>コメント entry 要素 (CommentList_Type complexType) (' Visio XML ')
 
-図面内のコメントを識別するためのプロパティを指定します。
+図面内のコメントを識別するために使用するプロパティを指定します。
   
 ## <a name="element-information"></a>要素情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[CommentEntry_Type](commententry_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
-|**文書パーツ** <br/> |comments.xml  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
+|**文書パーツ** <br/> |comments  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -36,7 +36,7 @@ ms.locfileid: "25397045"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。 
+スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
@@ -50,14 +50,14 @@ ms.locfileid: "25397045"
   
 ### <a name="attributes"></a>属性
 
-|**属性**|**型**|**必須**|**説明**|**使用可能な値**|
+|**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|著者 Id  <br/> |xsd:unsignedInt  <br/> |必須  <br/> |作成者を識別する 1 から始まる値です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|CommentID  <br/> |xsd:unsignedInt  <br/> |必須  <br/> |図面ページにコメントを識別する一意の値です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|日付  <br/> |xsd:dateTime  <br/> |必須  <br/> |コメントが作成された日時を指定します。  <br/> |Xsd:dateTime の値を入力します。  <br/> |
-|終了  <br/> |xsd:boolean  <br/> |省略可能  <br/> |コメントの現在の状態を指定します。  <br/> |Xsd:boolean の値を入力します。  <br/> |
-|EditDate  <br/> |xsd:dateTime  <br/> |省略可能  <br/> |コメントが最後に変更された日時を指定します。  <br/> |Xsd:dateTime の値を入力します。  <br/> |
-|PageID  <br/> |xsd:unsignedInt  <br/> |必須  <br/> |コメントするには図面のページを識別する値です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|ShapeID  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |コメントするには図形を識別する値です。 ShapeID が指定されていない場合、コメントは、図面のページを参照します。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
+|AuthorID  <br/> |xsd: アン signedint  <br/> |必須  <br/> |作成者を識別する1から始まる値。  <br/> |xsd:/signedint 型の値。  <br/> |
+|CommentID  <br/> |xsd: アン signedint  <br/> |必須  <br/> |図面ページのコメントを識別する一意の値。  <br/> |xsd:/signedint 型の値。  <br/> |
+|日付  <br/> |xsd: dateTime  <br/> |必須  <br/> |コメントが作成された日時を指定します。  <br/> |xsd: dateTime 型の値。  <br/> |
+|完了  <br/> |xsd: boolean  <br/> |省略可能  <br/> |コメントの現在の状態を指定します。  <br/> |xsd: boolean 型の値。  <br/> |
+|EditDate  <br/> |xsd: dateTime  <br/> |省略可能  <br/> |コメントが最後に変更された日時を指定します。  <br/> |xsd: dateTime 型の値。  <br/> |
+|PageID  <br/> |xsd: アン signedint  <br/> |必須  <br/> |コメントがある図面ページを識別する値。  <br/> |xsd:/signedint 型の値。  <br/> |
+|ShapeID  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |コメントがある図形を識別する値。 ShapeID が指定されていない場合、コメントは図面ページを参照します。  <br/> |xsd:/signedint 型の値。  <br/> |
    
 

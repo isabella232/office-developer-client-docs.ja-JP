@@ -8,22 +8,22 @@ api_type:
 - COM
 ms.assetid: 2e1287a3-0f15-4d9a-b7ee-738fce9cd51f
 description: 'COM ms.assetid: 2e1287a3-0f15-4d9a-b7ee-738fce9cd51f description: "�ŏI�X�V��: 2015�N3��9��"'
-ms.openlocfilehash: a305b9c9ea2802ac63a22118b55274bcdff23617
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b22b8641d55037d3755fc9ae32b97455223bbd12
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329758"
 ---
-# <a name="mapi-receive-folders"></a>MAPI �t�H���_�[���\������܂��B
+# <a name="mapi-receive-folders"></a>title: "MAPI �t�H���_�[���\������܂��B" ms.author: v-tirob author: v-tirob manager: soliver ms.date: 3/9/2015 ms.audience: Developer ms.topic: overview ms.prod: office-online-server localization_priority: Normal api_type:
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-受信フォルダーは、特定のメッセージ クラスの受信メッセージを保持します。 クライアントによって、メッセージ ストア プロバイダー、または MAPI の関連付けを確立することができますフォルダーが表示されます。 MAPI には、2 つの既定のフォルダーが表示されます: メッセージ ・ ストアのルート フォルダーと、個人間メッセージ (IPM) サブツリーの [受信トレイ] フォルダー。 メッセージ ・ ストアのルート フォルダーは、既定のフォルダーのすべてのプロセス間通信 (IPC) メッセージを受信します。
+A receive folder holds inbound messages of a particular message class. Receive folder associations can be established by clients, by the message store provider, or by MAPI. MAPI has two default receive folders: the root folder of the message store, and the Inbox folder of the interpersonal message (IPM) subtree. The root folder of the message store is the default receive folder for all interprocess communication (IPC) messages.
   
- MAPI によってすべての新しいメッセージ ストアの受信トレイ フォルダーが作成され、次のメッセージ クラスのフォルダーが表示される既定値としての役割を果たします。 
+ The Inbox folder is created by MAPI for every new message store and acts as the default receive folder for the following message classes: 
   
 - IPM ���b�Z�[�W �N���X�ł��B
     
@@ -31,9 +31,9 @@ ms.locfileid: "22569009"
     
 - ��̏ꍇ�A�܂��͕s�����Ă���A�N���X�łł��B
     
-IPC メッセージに対する応答として送信されたものであっても、すべてのレポート メッセージは、受信トレイ フォルダーに配置されます。 独自のレポートを処理する IPC クライアント アプリケーションでは、レポートの特定のクラスの受信フォルダーを明示的に追加する必要があります。 IPC クラスにメッセージを受信するクライアントが要求している場合などです。Paper.Order、その Report.IPC.Paper.Order のクラスを使ったレポートの受信フォルダーを確立するために[IMsgStore::SetReceiveFolder](imsgstore-setreceivefolder.md)メソッドを呼び出す必要があります。 
+All report messages, even those sent in response to an IPC message, are placed in the Inbox folder. IPC client applications that process their own reports must explicitly add a receive folder for the particular class of report. For example, if a client expects to receive messages with the class IPC.Paper.Order, it should call the [IMsgStore::SetReceiveFolder](imsgstore-setreceivefolder.md) method to establish a receive folder for reports with the class Report.IPC.Paper.Order. 
   
-メッセージ クラスの階層構造に基づく関連のフォルダーが表示されます。 クライアントは、明示的に受信フォルダーとメッセージ クラス間の関連付けを確立または MAPI の既定の受信フォルダーを使用できます。 通常、クライアントは、基本クラスのメッセージを受信する 1 つのフォルダーとそのすべてのサブクラスを指定します。 などの標準的なクライアントは、 **MyClass**クラスにメッセージをアソシエーションを確立すると。 クライアントは、 **MyClass.Home**または**MyClass.Home.Kitchen.Computer**のクラスでメッセージを受信する場合これらのメッセージは、基本クラス**MyClass**の受信フォルダーに移動します。
+Receive folder associations are based on the hierarchical organization of message classes. Clients can explicitly establish an association between a receive folder and a message class or use the MAPI default receive folders. Typically, clients designate one folder to receive messages for a base class and all of its subclasses. For example, a typical client would establish an association for messages with the class **MyClass**. Then if the client received messages with classes **MyClass.Home** or **MyClass.Home.Kitchen.Computer**, these messages would go to the receive folder for the base class, **MyClass**.
   
 �X�g�A�g�p���@��N���C�A���g�𑀍삷��ɂ́A�t�H���_�[���\������鎟�� 3 �̃��b�Z�[�W������܂��B
   
@@ -43,9 +43,9 @@ IPC メッセージに対する応答として送信されたものであって�
     
 - [IMsgStore::SetReceiveFolder](imsgstore-setreceivefolder.md)
     
-受信フォルダーのテーブルは、すべてのメッセージ ・ ストアに対して設定されている受信フォルダーに関する情報の一覧です。 必要な列のセットには、メッセージ クラス、レコード、およびエントリの識別子が含まれています。
+The receive folder table is a listing of information about all of the receive folders established for a message store. Its required column set includes the message class, record key, and entry identifier.
   
-受信フォルダーを特定のメッセージ クラスを取得するためには、クライアントは、メッセージ クラスの文字列を[IMsgStore::GetReceiveFolder](imsgstore-getreceivefolder.md)メソッドに渡します。 メッセージは、プロバイダーを返します。 対応するフォルダーのエントリ id を格納します。 **GetReceiveFolder**を実装するには、メッセージ ストア プロバイダーは、関連付けられているメッセージ クラスが指定したメッセージ クラスの可能な最長のプレフィックスに一致するフォルダーを選択するアルゴリズムを使用してください。 たとえば、メッセージ ・ ストアには、次の関連付けの間でフォルダーが表示され、メッセージ内のクラスのフォルダーのテーブルが表示されます。
+To retrieve a receive folder for a particular message class, clients pass the message class string to the [IMsgStore::GetReceiveFolder](imsgstore-getreceivefolder.md) method. The message store provider returns an entry identifier for the corresponding folder. To implement **GetReceiveFolder**, a message store provider should use an algorithm that selects the folder whose associated message class matches the longest possible prefix of the specified message class. For example, assume the message store has the following associations between receive folders and message classes in its receive folder table:
   
 - **IPM**���b�Z�[�W�́A��M�g���C] �t�H���_�[�Ɋi�[����܂��B 
     
@@ -55,24 +55,24 @@ IPC メッセージに対する応答として送信されたものであって�
   
 |**�N���X�̃��b�Z�[�W���M���܂��B**|**�t�H���_�[���\������܂��B**|
 |:-----|:-----|
-|**IPM.Note.Sample.Simple** <br/> |�T���v���̃t�H���_�[  <br/> |
+|**IPM.メモ: 簡単な例** <br/> |�T���v���̃t�H���_�[  <br/> |
 |**IPM.Note** <br/> |��M�g���C] �t�H���_�[  <br/> |
-|**IPM.タイムカード** <br/> |��M�g���C] �t�H���_�[  <br/> |
-|**IPM.Note.Sample.Simple.Totally** <br/> |�T���v���̃t�H���_�[  <br/> |
+|**IPM.カード** <br/> |��M�g���C] �t�H���_�[  <br/> |
+|**IPM.メモ. 単純な完全** <br/> |�T���v���̃t�H���_�[  <br/> |
    
-クライアントは、特定のメッセージ クラスとの間の明示的な関連付けを作成し、フォルダーを表示する**SetReceiveFolder**メソッドを呼び出します。 空のメッセージ クラスにメッセージを配信すると、MAPI は、空のクラスのプレフィックスで定義されている受信フォルダーにメッセージを配置します。 など、クライアントがメッセージに設定されている受信フォルダーを持っている場合クラス**IPM**とメッセージ クラス IPM を**とします。Note.Test**が配信される場合、このメッセージは、 **IPM**メッセージ クラスの受信フォルダーにします。 
+Clients call the **SetReceiveFolder** method to make an explicit association between a particular message class and receive folder. When a message is delivered to an empty message class, MAPI places the message in the receive folder that is defined for a prefix of the empty class. For example, if your client has a receive folder established for messages with class **IPM** and a message with class **IPM.Note.Test** is delivered, this message will be placed in the receive folder for the **IPM** message class. 
   
 **SetReceiveFolder**��Ăяo���ł́A�N���C�A���g���ʏ�̓��b�Z�[�W�̃N���X�̕������n�����A�V�����G���g�����ʎq���t�H���_�[���M���܂��B�������A�N���C�A���g�́A�����̃p�����[�^�[�̈���܂��͗����� NULL �œn�����Ƃ��ł��܂��B���̕\�ł́A���b�Z�[�W�̃N���X�ƃG���g�����ʎq�p�����[�^�[�� NULL ��w�肷�邱�Ƃ��猋�ʂ̓���ɂ��Đ�����܂��B 
   
 |**_SetReceiveFolder_�p�����[�^�[**|**���ʂ̓���**|
 |:-----|:-----|
-|�G���g���̎��ʎq�� NULL �ɐݒ肵�܂��B  <br/> |メッセージ ・ ストアの指定の間の関連付けを削除するメッセージのクラスと、既存のフォルダーが表示されます。 新しい受信フォルダーが確立されていません。  <br/> ���̃��b�Z�[�W �N���X **GetReceiveFolder**�ȍ~�ł́A���b�Z�[�W �N���X�̃v���t�B�b�N�X�̎�M] �t�H���_�[��Ԃ��܂��V�������b�Z�[�W�̕ۑ��A **GetReceiveFolder**�� IPM ��A��M�g���C��Ԃ��܂��B  <br/> |
-|���b�Z�[�W�̃N���X�� NULL �ɐݒ肵�܂��B  <br/> |メッセージ ・ ストアでは、指定されたフォルダーに空のメッセージ クラスとの関連付けを変更します。 クラスが認識されていませんそれ以外の場合、受信メッセージは、このフォルダーに送られます。  <br/> |
-|�G���g�����ʎq����у��b�Z�[�W �N���X�� NULL �ɐݒ肵�܂��B  <br/> |メッセージ ・ ストアでは、空のメッセージ クラスとクラス] の [フォルダーの関連付けを削除します。 通常の受信メッセージのメッセージ ・ ストアは、クライアントに表示されないフォルダーのルート フォルダーに置かれる結果となるために NULL の場合、両方のパラメーターを設定する必要がありますできません。  <br/> |
+|�G���g���̎��ʎq�� NULL �ɐݒ肵�܂��B  <br/> |The message store deletes the association between the specified message class and its existing receive folder. A new receive folder is not established.  <br/> ���̃��b�Z�[�W �N���X **GetReceiveFolder**�ȍ~�ł́A���b�Z�[�W �N���X�̃v���t�B�b�N�X�̎�M] �t�H���_�[��Ԃ��܂��V�������b�Z�[�W�̕ۑ��A **GetReceiveFolder**�� IPM ��A��M�g���C��Ԃ��܂��B  <br/> |
+|���b�Z�[�W�̃N���X�� NULL �ɐݒ肵�܂��B  <br/> |The message store changes the association for the empty message class to the indicated folder. Incoming messages whose class is otherwise unrecognized will go to this folder.  <br/> |
+|�G���g�����ʎq����у��b�Z�[�W �N���X�� NULL �ɐݒ肵�܂��B  <br/> |The message store deletes the class/folder association for the empty message class. You should not set both parameters to NULL, because it typically results in inbound messages being placed in the root folder of the message store, a folder that is invisible to the client.  <br/> |
    
 ���b�Z�[�W�̃N���X�͋�ɂ��Ȃ��ŁA��̃��b�Z�[�W��N���X���������邱�Ƃ��ł��܂��B���b�Z�[�W �X�g�A�̐ӔC�� **IPM**���̃N���X����V�����̑��M���b�Z�[�W�Ƀ��b�Z�[�W�̃N���X����蓖�Ă��M���b�Z�[�W�̔C�ӂ̋�̃N���X����N���X�Ƃ��� **IPM.Note**����蓖�Ă�g�����X�|�[�g �v���o�C�_�[�̒S�����邱�Ƃ�����߂��܂��B 
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 

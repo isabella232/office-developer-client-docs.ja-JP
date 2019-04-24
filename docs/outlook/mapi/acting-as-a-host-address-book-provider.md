@@ -1,5 +1,5 @@
 ---
-title: ホスト アドレス帳プロバイダーとして機能
+title: ホストアドレス帳プロバイダーとして機能
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,44 +7,44 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: f06a1034-ee49-4a09-831e-9752713228a8
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: de0acb88eee6addc0347f5281e5fbe5070bad0a4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 202d4b4391de7553e39e50dc527df5502ebcefb3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331270"
 ---
-# <a name="acting-as-a-host-address-book-provider"></a>ホスト アドレス帳プロバイダーとして機能
+# <a name="acting-as-a-host-address-book-provider"></a>ホストアドレス帳プロバイダーとして機能
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ホスト プロバイダーとは、そのコンテナー内の他のプロバイダーからの受信者が含まれていて、受信者のメンテナンスを部分的に制御するその他のプロバイダーの実装に依存しているアドレス帳プロバイダーです。 ホスト プロバイダーでは、これらの受信者が外部のテンプレート識別子を使用して、外部プロバイダーのコードにこれらの受信者に対してデータをバインドします。 プロバイダーは、 **PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) のプロパティ、受信者を取得し、 [IMAPISupport::OpenTemplateID](imapisupport-opentemplateid.md)への呼び出しに渡されます場合は、バインディング プロセスが開始されます。 
+ホストプロバイダーは、コンテナー内の他のプロバイダーからの受信者を含むアドレス帳プロバイダーで、その他のプロバイダーによって受信者の実装を部分的に管理することに依存します。 ホストプロバイダーは、これらの外部受信者のテンプレート識別子を使用して、これらの受信者のデータを外部プロバイダーのコードにバインドします。 このバインドプロセスは、プロバイダーが受信者の**PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) プロパティを取得し、 [imapisupport:: OpenTemplateID](imapisupport-opentemplateid.md)の呼び出しに渡すと開始されます。 
   
-**IMAPISupport::OpenTemplateID**、MAPI プロバイダー呼び出し内の**MAPIUID**に一致して、 **MAPIUID**を持つテンプレート id プロバイダーが登録されているプロバイダーの[IABLogon::OpenTemplateID](iablogon-opentemplateid.md)メソッドを呼び出します。 外部のプロバイダーは、プロバイダーのプロパティ オブジェクト、プロパティ オブジェクトの実装を独自にポインターを返すことがありますか、プロバイダーのオブジェクトをラップする、実装します。 返されるポインターは、 _lppMAPIPropNew_パラメーターの内容に配置されます。 
+プロバイダーが**imapisupport:: OpenTemplateID**を呼び出すと、MAPI はテンプレート識別子内の**MAPIUID**とプロバイダーによって登録された**MAPIUID**を照合し、プロバイダーの[IABLogon:: OpenTemplateID](iablogon-opentemplateid.md)メソッドを呼び出します。 外部プロバイダーは、プロバイダーの property オブジェクトへのポインター、独自の property オブジェクトの実装、またはプロバイダーのオブジェクトをラップする実装に返すことができます。 返されるポインターは、 _lppMAPIPropNew_パラメーターの内容に配置されます。 
   
-プロバイダーは、FILL_ENTRY フラグを設定して**IMAPISupport::OpenTemplateID**をコールするかどうかを選択できます。 受信者を作成するとき、または長い時間が経過、プロバイダーが、受信者のプロパティを更新するときは、このフラグを設定します。 FILL_ENTRY フラグの一般的な用途では、同期元プロバイダーで、受信者を保持します。 同期スケジュールのこの型を実装すると、パフォーマンスが向上します。 
+プロバイダーは、FILL_ENTRY フラグセットを使用して**imapisupport:: OpenTemplateID**を呼び出すかどうかを選択できます。 受信者が作成されているとき、またはプロバイダーが受信者のプロパティを更新してから長い時間が経過したときに、このフラグを設定します。 FILL_ENTRY フラグの一般的な使用方法は、プロバイダー内の受信者を元のと同期された状態に保つことです。 この種類の同期スケジュールを実装すると、パフォーマンスが向上します。 
   
- **外部の受信者を保持するのには次のように同期します。**
+ **外部の受信者の同期を維持するには**
   
-1. 定期的な更新プログラムの適切な間隔を決定します。 
+1. 定期的に更新するための適切な間隔を決定します。 
     
-2. 各タイムスタンプは、 [IMAPISupport::OpenTemplateID](imapisupport-opentemplateid.md)を呼び出します。 
+2. タイムスタンプ imapisupport への各呼び出し[:: OpenTemplateID](imapisupport-opentemplateid.md)。 
     
-3. 前回の呼び出し後に期限が切れている時間の量に基づくフル更新を実行する必要があるかどうかを評価します。 フル更新が必要な場合は、FILL_ENTRY フラグを使用して**IMAPISupport::OpenTemplateID**を呼び出します。 そうでないために必要な場合、呼び出しのフラグは設定しません。 
+3. 前回の呼び出しからの経過時間に基づいて、完全な更新を実行する必要があるかどうかを評価します。 完全な更新が必要な場合は、FILL_ENTRY フラグを使用して**imapisupport:: OpenTemplateID**を呼び出します。 必要でない場合は、呼び出しにフラグを設定しないようにします。 
     
-クライアント コピーの受信者のプロパティのいずれかを要求すると、プロバイダーはその要求を処理または外部のプロバイダーから提供されたコードを使用するかどうかを選択できます。 [IMAPIProp::OpenProperty](imapiprop-openproperty.md)以外の**IMAPIProp**を呼び出し、されていない場合、プロバイダーは、ほとんどをインターセプトするための外部プロバイダーを期待できます。 **PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) のプロパティを要求する**OpenProperty**への呼び出しは常に、プロバイダーに転送されます。
+クライアントがコピーされた受信者のプロパティの1つに対して要求を行うと、プロバイダーは要求を処理するか、または外部プロバイダーから提供されたコードを使用するかを選択できます。 プロバイダーは、外部プロバイダーが、imapiprop [:: openproperty](imapiprop-openproperty.md)を除く**imapiprop**を呼び出すことができます。 **PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) プロパティを要求する**openproperty**への呼び出しは、常にプロバイダーに転送されます。
   
- **テンプレート識別子のコードへのアクセス**
+ **テンプレート識別子コードにアクセスするには**
   
-1. 受信者を開き、メソッドを呼び出して、 [IMAPIProp::GetProps](imapiprop-getprops.md) **PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) のプロパティを取得します。 **GetProps**には、 **PR_TEMPLATEID**が使用できないため失敗した場合、外部のプロバイダー サポートしていません、テンプレート識別子と関連するコードをこの受信者の。 プロバイダーは、すべてのメンテナンスのため、受信者の実装を使用する必要があります。 
+1. 受信者を開き、 [imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出して、 **PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) プロパティを取得します。 **PR_TEMPLATEID**を使用できないために**GetProps**が失敗した場合、外部プロバイダーは、この受信者のテンプレート識別子と関連コードをサポートしていません。 プロバイダーは、すべてのメンテナンスで受信者の実装を使用する必要があります。 
     
-2. **GetProps**からテンプレートの識別子が返された場合、受信者の**IMAPIProp**の実装では、 **IMAPISupport::OpenTemplateID**メソッドの呼び出しにし、ポインターを渡します。 受信者のプロパティのほとんどまたはすべてをする必要がある場合、FILL_ENTRY フラグを設定の作成時またはかどうかは、更新されていない間に、ように更新します。 
+2. テンプレート識別子が**GetProps**から返された場合は、 **imapiprop:: OpenTemplateID**メソッドの呼び出しで、受信者の**imapiprop**実装へのポインターを渡します。 受信者のプロパティのほとんどまたはすべてを更新する必要がある場合、または更新されていない場合には、FILL_ENTRY フラグを設定します。 
     
-3. **OpenTemplateID**では、外部プロバイダーの**IMAPIProp**の実装が返された場合は、[クライアントにこの実装へのポインターを返します。 
+3. **OpenTemplateID**が外部プロバイダーの**imapiprop**実装を返す場合は、この実装へのポインターをクライアントに返します。 
     
-4. **OpenTemplateID**が返されない場合、実装、通常プロファイルでは、外部のプロバイダーがないためクライアントに返す**IMAPIProp**プロバイダーへのポインター。 クライアントがいずれかのインターフェイスを使用してオブジェクトのプロパティを操作することがあります。 
+4. **OpenTemplateID**が実装を返さない場合は、通常、外部プロバイダーがプロファイルに含まれていないため、プロバイダーの**imapiprop**実装へのポインターをクライアントに返します。 クライアントは、いずれかのインターフェイスを使用して、オブジェクトのプロパティを操作できる必要があります。 
     
 

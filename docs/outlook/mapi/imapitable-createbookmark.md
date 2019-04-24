@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 320af2ff-c2a5-43b1-b3a1-76cb5ffd6a4f
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5e9135a52c15c18b70116aaf52e1ee63af413673
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: c251dacce0d4e1743a74f1ba45e395b6e1c05064
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329009"
 ---
 # <a name="imapitablecreatebookmark"></a>IMAPITable::CreateBookmark
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルの現在の位置にブックマークを作成します。
+表の現在の位置にブックマークを作成します。
   
 ```cpp
 HRESULT CreateBookmark(
@@ -37,9 +37,9 @@ BOOKMARK FAR * lpbkPosition
 
  _lpbkPosition_
   
-> [out]返される 32 ビットのブックマークの値へのポインター。 このブックマークは、後で[IMAPITable::SeekRow](imapitable-seekrow.md)メソッドの呼び出しに渡されます。 
+> 読み上げ返される32ビットのブックマーク値へのポインター。 このブックマークは、後で[IMAPITable:: seekrow](imapitable-seekrow.md)メソッドを呼び出して渡すことができます。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -49,23 +49,23 @@ MAPI_E_UNABLE_TO_COMPLETE
   
 > 要求された操作を完了できませんでした。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPITable::CreateBookmark**メソッドは、ブックマークと呼ばれる値を作成することによって、テーブルの位置をマークします。 ブックマークで識別される位置に戻るには、ブックマークを使用できます。 ブックマークの位置は、テーブル内で行の位置にあるオブジェクトに関連付けられます。 
+**IMAPITable:: createbookmark**メソッドは、ブックマークと呼ばれる値を作成して、テーブルの位置を示します。 ブックマークを使用すると、ブックマークで指定した位置に戻ることができます。 ブックマーク位置は、テーブルのその行にあるオブジェクトに関連付けられています。 
   
-、添付ファイル テーブルのブックマークがサポートされていませんし、 **CreateBookmark**の添付ファイル テーブルの実装は、MAPI_E_NO_SUPPORT を返します。 
+ブックマークは、添付ファイルテーブルではサポートされておらず、 **createbookmark** return MAPI_E_NO_SUPPORT の添付ファイルテーブルの実装ではサポートされていません。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-ブックマークとカーソルの位置を維持するためのメモリの経費のために作成できるブックマークの数を制限します。 その番号が表示されたら、以降の呼び出しは**CreateBookmark**から MAPI_E_UNABLE_TO_COMPLETE を返します。
+ブックマークを使用してカーソル位置を維持するためのメモリ費用があるため、作成できるブックマークの数を制限します。 その番号に達すると、それ以降のすべての呼び出しから**createbookmark**に MAPI_E_UNABLE_TO_COMPLETE が返されます。
   
-ブックマークは、不要になったテーブル ・ ビュー内にある行を指しています。 呼び出し元は、このようなブックマークを使用する場合表示されている次の行にカーソルを移動し、停止があります。 
+ブックマークがテーブルビューに表示されなくなった行を指している場合があります。 呼び出し元がこのようなブックマークを使用する場合は、カーソルを次の表示行に移動し、そこで停止します。 
   
-呼び出し元が縮小されたために、非表示の行を指しているブックマークを使用しようとするときは、ブックマークに移動した後 MAPI_W_POSITION_CHANGED を返します。 表示されている次の行にブックマークの位置を変更するにはこの時点で、または**SetCollapseState**メソッドで発生した場合、縮小します。 正確に移動するとき、ブックマークされたかを示すブックマークのビットに保持する必要があります、行が折りたたまれている時にブックマークを移動する場合: その最後の使用から、または作成されてから使用されていない場合。 
+非表示になっているために、呼び出し元がブックマークを使用しようとした場合は、ブックマークを移動した後に MAPI_W_POSITION_CHANGED を返します。 この時点で、または**SetCollapseState**メソッドで折りたたみが行われるときに、ブックマークを次の表示可能な行に再配置することができます。 行が折りたたまれたときにブックマークを移動した場合は、ブックマークが最後に使用された日時、または作成後に使用されていないかどうかを示す、ブックマークのビットを保持する必要があります。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
- **CreateBookmark**は、ブックマークを作成するためのメモリを割り当てます。 [IMAPITable::FreeBookmark](imapitable-freebookmark.md)メソッドを呼び出すことによって、ブックマークのリソースを解放します。 
+ **createbookmark**は、作成するブックマークのメモリを割り当てます。 [IMAPITable:: freebookmark](imapitable-freebookmark.md)メソッドを呼び出して、ブックマークのリソースを解放します。 
   
 ## <a name="see-also"></a>関連項目
 

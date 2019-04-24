@@ -1,5 +1,5 @@
 ---
-title: メッセージ サービスのプロバイダーの追加または削除
+title: メッセージサービスでのプロバイダーの追加または削除
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,46 +7,46 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 44bb4d34-ca96-4d5a-93fe-85e09bd7971d
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 569c9d8a7ed3f56d88d83ea6fdac4477d39e50a2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: ed5ea8bdfcbdaaa6b6abd81a39f0e8df50d3b314
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329562"
 ---
-# <a name="adding-or-deleting-providers-in-a-message-service"></a>メッセージ サービスのプロバイダーの追加または削除
+# <a name="adding-or-deleting-providers-in-a-message-service"></a>メッセージサービスでのプロバイダーの追加または削除
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ サービスのサービス プロバイダーを追加削除するを使用して、 [IProviderAdmin: IUnknown](iprovideradminiunknown.md)インタ フェースです。 [IMsgServiceAdmin::AdminProviders](imsgserviceadmin-adminproviders.md)を呼び出すことによって、 **IProviderAdmin**ポインターを取得できます。 プロバイダー テーブルでは、 [IProviderAdmin::GetProviderTable](iprovideradmin-getprovidertable.md)からアクセスでは、メッセージ サービスで現在インストールされているサービス プロバイダーに関する情報が表示されます。 クライアントとサービス ・ プロバイダーは、プロバイダー DLL ファイルまたは**MAPIUID**表示名、およびメッセージ サービスに関する情報だけでなくプロバイダーの型の名前にアクセスするのにはプロバイダーのテーブルを使用できます。 詳細については、[プロバイダーのテーブル](provider-tables.md)を参照してください。
+メッセージサービスのサービスプロバイダーを追加または削除するには、 [IProviderAdmin: IUnknown](iprovideradminiunknown.md)インターフェイスを使用します。 **IProviderAdmin**ポインターを取得するには、 [IMsgServiceAdmin:: adminproviders](imsgserviceadmin-adminproviders.md)を呼び出します。 [IProviderAdmin:: getprovidertable](iprovideradmin-getprovidertable.md)を使用してアクセスできるプロバイダテーブルには、現在メッセージサービスにインストールされているサービスプロバイダに関する情報を一覧表示します。 クライアントおよびサービスプロバイダーは、プロバイダテーブルを使用して、プロバイダー DLL ファイルの名前、プロバイダーの**MAPIUID**、表示名、種類、およびメッセージサービスに関する情報にアクセスできます。 詳細については、「[プロバイダテーブル](provider-tables.md)」を参照してください。
   
- **メッセージ サービスのサービス プロバイダーを追加、削除します。**
+ **メッセージサービスのサービスプロバイダーを追加または削除するには**
   
-1. メッセージ サービス管理オブジェクトにアクセスする**AdminServices**メソッドを呼び出します。 
+1. **adminservices**メソッドを呼び出して、メッセージサービス管理オブジェクトにアクセスします。 
     
-2. メッセージ サービス テーブルにアクセスするのには[IMsgServiceAdmin::GetMsgServiceTable](imsgserviceadmin-getmsgservicetable.md)を呼び出します。 
+2. message service テーブルにアクセスするには、 [IMsgServiceAdmin:: getmsgservicetable](imsgserviceadmin-getmsgservicetable.md)を呼び出します。 
     
-3. 構築するメッセージ サービスの名前の**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) または**PR_SERVICE_NAME** ([PidTagServiceName](pidtagservicename-canonical-property.md)) に一致する[SPropertyRestriction](spropertyrestriction.md)構造体を使用してプロパティの制限変更します。 
+3. **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) または**PR_SERVICE_NAME** ([PidTagServiceName](pidtagservicename-canonical-property.md)) と一致する[spropertyrestriction](spropertyrestriction.md)構造を使用して、メッセージサービスの名前を持つプロパティ制限を構築します。れ. 
     
-4. メッセージ サービス テーブルの[IMAPITable::FindRow](imapitable-findrow.md)メソッドを呼び出してメッセージを対象となるサービスを表すテーブルの行を探します。 
+4. メッセージサービステーブルの[IMAPITable:: FindRow](imapitable-findrow.md)メソッドを呼び出して、対象のメッセージサービスを表すテーブル内の行を検索します。 
     
-5. **IProviderAdmin**ポインターを取得するために[IMsgServiceAdmin::AdminProviders](imsgserviceadmin-adminproviders.md)を呼び出します。 メッセージ サービス テーブルの行から**PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) の列を_lpUID_パラメーターとして渡します。 
+5. [IMsgServiceAdmin:: adminproviders](imsgserviceadmin-adminproviders.md)を呼び出して、 **IProviderAdmin**ポインターを取得します。 _lpuid_パラメーターとして、message SERVICE table 行の**PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) 列を渡します。 
     
-6. プロバイダー テーブルにアクセスするのには[IProviderAdmin::GetProviderTable](iprovideradmin-getprovidertable.md)を呼び出します。 
+6. プロバイダーテーブルにアクセスするには、 [IProviderAdmin:: getprovidertable](iprovideradmin-getprovidertable.md)を呼び出します。 
     
-7. ビルドするサービス プロバイダーの名前の**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) または**PR_PROVIDER_DISPLAY** ([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md)) に一致する SPropertyRestriction 構造体を使用してプロパティの制限追加または削除します。 
+7. **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) または**PR_PROVIDER_DISPLAY** ([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md)) と一致する spropertyrestriction 構造を使用して、プロパティ制限をサービスプロバイダーの名前に作成します。追加または削除されました。 
     
-8. 対象となるサービス プロバイダーを表すテーブルの行を検索するプロバイダーのテーブルの[IMAPITable::FindRow](imapitable-findrow.md)のメソッドを呼び出します。 
+8. プロバイダーテーブルの[IMAPITable:: FindRow](imapitable-findrow.md)メソッドを呼び出して、対象となるサービスプロバイダーを表すテーブル内の行を検索します。 
     
-9. プロバイダーを追加するのには[IProviderAdmin::CreateProvider](iprovideradmin-createprovider.md)またはメッセージ サービスから削除するのには[IProviderAdmin::DeleteProvider](iprovideradmin-deleteprovider.md)を呼び出します。 **CreateProvider**プロバイダーの**PR_DISPLAY_NAME**プロパティを_lpszProvider_パラメーターとして渡します。 いずれかの方法では、 _lpUID_パラメーターとして、プロバイダーの**PR_SERVICE_UID**プロパティを渡します。 サービス プロバイダーを追加または削除した後、変更は新しいセッションが作成されるまで、見かけ上はできません。 
+9. [IProviderAdmin:: createprovider](iprovideradmin-createprovider.md)を呼び出して、プロバイダまたは[IProviderAdmin::D eleteprovider](iprovideradmin-deleteprovider.md)を追加し、メッセージサービスから削除します。 **createprovider**の場合は、プロバイダーの**PR_DISPLAY_NAME**プロパティを_lpszprovider_パラメーターとして渡します。 どちらの方法でも、プロバイダーの**PR_SERVICE_UID**プロパティを_lpuid_パラメーターとして渡します。 サービスプロバイダーを追加または削除した後は、新しいセッションが作成されるまで、変更内容は明らかになりません。 
     
-具体的には、メッセージ ストア プロバイダー、サービス ・ プロバイダーをプロファイルに追加するための別の方法では、プロバイダーのエントリ識別子を構築する必要があります。 エントリ識別子を作成するには、形式の知識が必要とするためこの方法のみ使用できます、サービス ・ プロバイダーが行った場合、エントリの識別子の形式公開。 
+サービスプロバイダー、特にメッセージストアプロバイダーをプロファイルに追加するためのもう1つの方法は、プロバイダーのエントリ識別子を構築することです。 エントリ識別子を作成するには、その形式に関する知識が必要ですので、この手法は、サービスプロバイダーがエントリ識別子の形式をパブリックにしている場合にのみ使用できます。 
   
-新たに構築されたエントリの識別子、クライアントは[IMAPISession::OpenMsgStore](imapisession-openmsgstore.md)を呼び出すことができます。 MAPI は自動的に、サービス プロバイダーには、プロファイルのプロファイル セクションを作成が、メッセージ サービスには追加されません。 
+新しく構築されたエントリ識別子を使用すると、クライアントは[imapisession:: openmsgstore](imapisession-openmsgstore.md)を呼び出すことができます。 MAPI は、サービスプロバイダーのプロファイルにプロファイルセクションを自動的に作成しますが、メッセージサービスには追加しません。 
   
-メッセージの一部のサービスをこの種類の動的な変更は許可しません。メッセージ サービスがサポートされているかどうか。 サポートされていない可能性があります別の機能は、メッセージ サービスのプライベート プロファイルのセクションに直接アクセスする機能です。 使用しているメッセージ サービスは、このようなアクセスを許可する場合、MAPISVC.INF の秘密のセクションを表す**GUID**が発行されます。 プロファイル セクションにアクセスするのには[IProviderAdmin::OpenProfileSection](iprovideradmin-openprofilesection.md)の呼び出しでは、この**GUID**を渡すことができます。 
+一部のメッセージサービスでは、この種の動的変更を許可しません。サポートされているかどうかは、メッセージサービスによってサポートされています。 他にも、サポートされているかどうかは、メッセージサービスのプライベートプロファイルセクションに直接アクセスできる機能です。 使用しているメッセージサービスがこのようなアクセスを許可する場合は、mapisvc.inf のプライベートセクションを表す**GUID**を公開します。 この**GUID**は、 [IProviderAdmin:: openprofile](iprovideradmin-openprofilesection.md)の呼び出しで、プロファイルセクションにアクセスするために渡すことができます。 
   
 

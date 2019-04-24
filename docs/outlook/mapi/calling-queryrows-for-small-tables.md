@@ -1,5 +1,5 @@
 ---
-title: 小さいテーブルに対する QueryRows の呼び出し
+title: 小さなテーブルに対する QueryRows の呼び出し
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,22 +7,22 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 8c38bb0f-de0b-4d70-9f6d-db652445e137
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 34975677bedccf3f9111985d371e21d482b45584
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 8b38dcc485e75f94ccf4f4c3c8c9a57d314465a6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331635"
 ---
-# <a name="calling-queryrows-for-small-tables"></a>小さいテーブルに対する QueryRows の呼び出し
+# <a name="calling-queryrows-for-small-tables"></a>小さなテーブルに対する QueryRows の呼び出し
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-小さなテーブルから行を検索する場合は、最初に制約を作成する代わりに[IMAPITable::QueryRows](imapitable-queryrows.md)を呼び出します。 制限、パフォーマンスに与える影響を作成するは、プロバイダーがテーブルをまず作成する必要がありますので、元のテーブルに一致する行を検索し、新しいテーブルに行をコピーします。 テーブル内の行の合計数が 100 未満の場合は、すべての行を読み取るし、該当する行を見つけるには、 [IMAPITable::FindRow](imapitable-findrow.md)を呼び出すにはより効果的な可能性があります。 これは、この情報が常時必要な場合に特に効果的な戦略です。 
+小さなテーブルから行を取得するときは、最初に制限を作成するのではなく、 [IMAPITable:: QueryRows](imapitable-queryrows.md)を呼び出します。 プロバイダーが最初にテーブルを作成し、その後、元のテーブルで一致する行を見つけて、その行を新しいテーブルにコピーする必要があるため、制限の作成はパフォーマンスに影響します。 表の行数の合計が100よりも低い場合は、すべての行を読み取ってから、 [IMAPITable:: FindRow](imapitable-findrow.md)を呼び出して適切な行を検索する方が効率がよいでしょう。 これは、この情報がたまにしか必要ない場合に特に適した戦略です。 
   
-制限を使用する適切な時間は、制限またはフィルタ リングされた情報が長い期間にわたって使用されるか、頻繁に使用されるときです。 未読のメッセージでは、ビューが常に必要がある場合、この制限は適切な呼び出しを使用するになります。
+制限を適切に使用するには、制限またはフィルター処理された情報を長期間にわたって使用したり、頻繁に使用したりすることが適切な時間です。 たとえば、未読メッセージがあるビューが常に必要な場合は、適切な呼び出しを使用するように制限を行います。
   
 

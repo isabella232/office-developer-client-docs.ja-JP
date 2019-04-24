@@ -1,5 +1,5 @@
 ---
-title: IMAPISupportCompleteMsg
+title: imapisupportcompletemsg
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: e7932433-abe0-4341-95e0-91b37c848145
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a948c8c25eec9b31735bb34b91e2dec4bca5fcfc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: e8c52d71ee47966be09c6c0806eceafae0c5ff5b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331508"
 ---
 # <a name="imapisupportcompletemsg"></a>IMAPISupport::CompleteMsg
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージのポスト プロセスを実行します。 
+メッセージに対して後処理を実行します。 
   
 ```cpp
 HRESULT CompleteMsg(
@@ -35,7 +35,7 @@ HRESULT CompleteMsg(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
@@ -43,29 +43,29 @@ HRESULT CompleteMsg(
     
  _cbEntryID_
   
-> [in]_LpEntryID_パラメーターで指定されたエントリの識別子のバイト数です。 
+> 順番_lな tryid_パラメーターで指定されたエントリ識別子のバイト数。 
     
- _lpEntryID_
+ _lて tryid_
   
-> [in]メッセージを処理するためのエントリの識別子へのポインター。
+> 順番処理するメッセージのエントリ id へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > 後処理が正常に完了しました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPISupport::CompleteMsg**メソッドは、メッセージ ストア プロバイダーのサポートのオブジェクトに実装されており、トランスポート プロバイダーと緊密に結合されているメッセージ ストア プロバイダーによってのみ呼び出されます。 密結合のストア プロバイダーは、メッセージをポスト プロセスに MAPI スプーラーに指示するために**IMAPISupport::CompleteMsg**を呼び出します。 
+**imapisupport::** "は、メッセージストアプロバイダーのサポートオブジェクトに対して実装されており、トランスポートプロバイダーと密接に結合されたメッセージストアプロバイダーのみが呼び出されます。 密結合ストアプロバイダーは、メッセージをポスト処理するように MAPI スプーラーに指示する**imapisupport:: completemsg**を呼び出します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-トランスポート プロバイダーと密に結合する、すべてのメッセージの受信者を処理することができ、次の条件のいずれかが存在する場合にのみ、 **CompleteMsg**を呼び出します。 
+呼び出し**** の待機は、トランスポートプロバイダーに密接に結合している場合にのみ、すべてのメッセージの受信者を処理でき、次の条件のいずれかが存在することになります。 
   
-- メッセージをプリプロセスされました。
+- メッセージが前処理されました。
     
-- メッセージには、MAPI スプーラーによって後処理が必要です。
+- このメッセージには、MAPI スプーラーによる後処理が必要です。
     
 ## <a name="see-also"></a>関連項目
 

@@ -8,38 +8,38 @@ f1_keywords:
 - Vis_DSS.chm82251511
 localization_priority: Normal
 ms.assetid: c01dd938-677c-b2ba-8f56-4638e7e988fd
-description: 状態の値に応じて、2 つの式のいずれかを評価します。
-ms.openlocfilehash: 2cfdf23986a06dcc109106bd50a1a38e5af91313
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: state の値に応じて、2つの式のいずれかを評価します。
+ms.openlocfilehash: 544bb2b19dc610591afc78c407301098fac9c7c3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331326"
 ---
 # <a name="userui-function"></a>USERUI 関数
 
-_状態_の値に応じて、2 つの式のいずれかを評価します。
+_state_の値に応じて、2つの式のいずれかを評価します。
   
 ## <a name="syntax"></a>構文
 
-USERUI (* **状態** *、* * *defaultexpression* * *、* * *userexpression* * *) 
+userui (* * *state* * *, * * *defaultexpression* * *, * * *userui* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _state_ <br/> |必須  <br/> |**ブール型 (Boolean)** <br/> |評価する式を指定します。  <br/> |
-| _defaultexpression_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |既定の式。  <br/> |
-| _userexpression_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |ユーザーによって指定された式を指定します。  <br/> |
+| _state_ <br/> |必須  <br/> |**Boolean** <br/> |評価する式を指定します。  <br/> |
+| _defaultexpression_ <br/> |必須  <br/> |**String** <br/> |既定の式を指定します。  <br/> |
+| _userexpression_ <br/> |必須  <br/> |**String** <br/> |ユーザーによって指定された式。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-_状態_が 0 の場合、USERUI 関数は_defaultexpression_を評価します。 _状態_が 1 の場合は、 _userexpression_を評価します。
+_state_が0の場合、userui 関数は_defaultexpression_を評価します。 _state_が1の場合は、 _userexpression_を評価します。
   
 ## <a name="example"></a>例
 
-USERUI (1, 場合 (幅\>6 インチ、6 インチ、幅)、幅\*0.75) 
+userui (1, if (幅\>6in, 6in, width), 幅\*0.75) 
   
-幅の式を評価\*.075、結果を返します。 
+式の幅\*075 を評価し、結果を返します。 
   
 

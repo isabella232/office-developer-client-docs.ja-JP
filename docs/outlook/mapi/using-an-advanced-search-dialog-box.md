@@ -1,5 +1,5 @@
 ---
-title: '[高度な検索] ダイアログ ボックスの使用'
+title: '[高度な検索] ダイアログボックスを使用する'
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,32 +7,32 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c9a156e6-3472-4409-a4ba-3a1a65b7bdcd
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 581607e184d67413e735c4cbfb874643b3222a80
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 70b62eeaf6e737747c98b3abcd6e7053f71d4308
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329667"
 ---
-# <a name="using-an-advanced-search-dialog-box"></a>[高度な検索] ダイアログ ボックスの使用
+# <a name="using-an-advanced-search-dialog-box"></a>[高度な検索] ダイアログボックスを使用する
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-いくつかのアドレス帳コンテナーは、クライアントの**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) 以外のプロパティで検索できるようにする、高度な検索機能をサポートします。 高度な検索をサポートしているアドレス帳コンテナーには、 **PR_SEARCH** ([PidTagSearch](pidtagsearch-canonical-property.md)) と呼ばれるコンテナー オブジェクト プロパティが設定されています。 このコンテナー オブジェクトは、[検索] ダイアログ ボックスを説明する表示のテーブルへのアクセスを提供: ダイアログ ボックスを入力し、高度な検索条件を編集するために使用します。
+アドレス帳のコンテナーには、クライアントが**PR_DISPLAY_NAME**以外のプロパティ ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) を検索できる高度な検索機能をサポートしているものがあります。 高度な検索をサポートするアドレス帳コンテナーには、 **PR_SEARCH** ([PidTagSearch](pidtagsearch-canonical-property.md)) という名前のコンテナーオブジェクトプロパティがあります。 この container オブジェクトは、[検索] ダイアログボックスについて説明する表示テーブルへのアクセスを提供します。このダイアログボックスは、高度な検索条件を入力および編集するために使用されます。
   
- **アドレス帳コンテナーの高度な検索を実行するには**
+ **アドレス帳コンテナーに対して高度な検索を実行するには**
   
-1. インターフェイス識別子のプロパティ タグと IID_IMAPIContainer の**PR_SEARCH**を指定するコンテナーの[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを呼び出します。 
+1. コンテナーの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出し、プロパティタグと IID_IMAPIContainer のインターフェイス識別子に**PR_SEARCH**を指定します。 
     
-2. インターフェイス識別子のプロパティ タグと IID_IMAPITable の**PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) を指定する、検索オブジェクトの**IMAPIProp::OpenProperty**メソッドを呼び出します。 
+2. **PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) をプロパティタグと IID_IMAPITable のインターフェイス識別子に指定して、search オブジェクトの**imapiprop:: openproperty**メソッドを呼び出します。 
     
-3. 高度な検索で使用するプロパティの値を確立するための検索オブジェクトの[IMAPIProp::SetProps](imapiprop-setprops.md)メソッドを呼び出します。 
+3. 検索オブジェクトの[imapiprop:: setprops](imapiprop-setprops.md)メソッドを呼び出して、高度な検索で使用されるプロパティの値を設定します。 
     
-4. 高度な検索条件を保存するのには、検索オブジェクトの[IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを呼び出します。 
+4. 検索オブジェクトの[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出して、高度な検索条件を保存します。 
     
-この一連の呼び出しは、クライアントが検索オブジェクトの**GetSearchCriteria**メソッドを呼び出すときに使用される制限の中で発生します。 
+この一連の呼び出しでは、クライアントが search オブジェクトの**getsearchcriteria**メソッドを呼び出すときに、制限が有効になります。 
   
 

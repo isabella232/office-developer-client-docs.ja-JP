@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 37da4ff5-300d-479f-a8b4-6fc36df997d9
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: b433db7cb157afbf8c3b506f2ed95b04b7b88564
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25392934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329226"
 ---
 # <a name="pidtagobjecttype-canonical-property"></a>PidTagObjectType 標準プロパティ
 
@@ -25,24 +25,24 @@ ms.locfileid: "25392934"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-オブジェクトの種類が含まれています。 
+オブジェクトの種類を格納します。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_OBJECT_TYPE  <br/> |
-|識別子:  <br/> |0x0FFE  <br/> |
+|識別子:  <br/> |0x0ffe  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |Common  <br/> |
+|エリア:  <br/> |共通  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-**OpenEntry**インタ フェースを介してアクセス可能なオブジェクトで使用できる主要なインターフェイスに、このプロパティに含まれているオブジェクトの種類に対応しています。 通常は、適切な**OpenEntry**メソッドによって返される_lpulObjType_パラメーターを参照して取得されます。 インタ フェースの他の方法で取得するときは、このプロパティの値を取得する[IMAPIProp::GetProps](imapiprop-getprops.md)を呼び出します。 
+このプロパティに含まれているオブジェクトの種類は、 **openentry**インターフェイスを介してアクセスできるオブジェクトで利用できるプライマリインターフェイスに対応しています。 通常は、適切な**openentry**メソッドによって返される_lpulobjtype_パラメーターを調べて取得します。 インターフェイスが他の方法で取得された場合は、 [imapiprop:: GetProps](imapiprop-getprops.md)を呼び出してこのプロパティの値を取得します。 
   
-このプロパティは、次の値の 1 つだけ持つことができます。
+このプロパティには、次のいずれかの値を指定できます。
   
 MAPI_ABCONT 
   
-> アドレス帳コンテナー オブジェクト 
+> アドレス帳のコンテナーオブジェクト 
     
 MAPI_ADDRBOOK 
   
@@ -50,11 +50,11 @@ MAPI_ADDRBOOK
     
 MAPI_ATTACH 
   
-> メッセージの添付ファイルのオブジェクト 
+> メッセージ添付オブジェクト 
     
 MAPI_DISTLIST 
   
-> 配布リスト オブジェクト 
+> 配布リストオブジェクト 
     
 MAPI_FOLDER 
   
@@ -62,11 +62,11 @@ MAPI_FOLDER
     
 MAPI_FORMINFO 
   
-> フォーム オブジェクト 
+> Form オブジェクト 
     
 MAPI_MAILUSER 
   
-> メッセージングのユーザー オブジェクト 
+> メッセージングユーザーオブジェクト 
     
 MAPI_MESSAGE 
   
@@ -74,81 +74,81 @@ MAPI_MESSAGE
     
 MAPI_PROFSECT 
   
-> プロファイル セクションのオブジェクト 
+> Profile section オブジェクト 
     
 MAPI_SESSION 
   
-> セッション オブジェクト 
+> Session オブジェクト 
     
 MAPI_STATUS 
   
-> ステータス オブジェクト 
+> Status オブジェクト 
     
 MAPI_STORE 
   
-> メッセージ ストアのオブジェクト
+> メッセージストアオブジェクト
     
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
-> プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。
+> ユーザー、連絡先、グループ、およびリソースのリストのプロパティと操作を指定します。
     
-[[MS NSPI]](https://msdn.microsoft.com/library/6dd0a3ea-b4d4-4a73-a857-add03a89a543%28Office.15%29.aspx)
+[[MS-CHAP]](https://msdn.microsoft.com/library/6dd0a3ea-b4d4-4a73-a857-add03a89a543%28Office.15%29.aspx)
   
-> ネーム サービス プロバイダー インターフェイス (NSPI) サーバーとクライアントの通信を処理します。
+> ネームサービスプロバイダインターフェイス (NSPI) サーバーとのクライアントの通信を処理します。
     
-[[MS OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
+[[OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
   
-> フォルダーの操作を処理します。
+> フォルダー操作を処理します。
     
-[[MS OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
-> 順序と、クライアントとサーバー間のデータ転送のフローを処理します。
+> クライアントとサーバー間のデータ転送の順序と流れを処理します。
     
-[[MS OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
-> メッセージ オブジェクト インターネット標準の電子メールの表記規則からに変換します。
+> インターネット標準の電子メールの規則からメッセージオブジェクトに変換します。
     
-[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルのオブジェクトを処理します。
+> メッセージと添付ファイルオブジェクトを処理します。
     
-[[MS OXOAB]](https://msdn.microsoft.com/library/b4750386-66ec-4e69-abb6-208dd131c7de%28Office.15%29.aspx)
+[[OXOAB]](https://msdn.microsoft.com/library/b4750386-66ec-4e69-abb6-208dd131c7de%28Office.15%29.aspx)
   
-> ローカル アドレス帳のオブジェクト キャッシュのオフライン アドレス帳 (OAB) ファイル形式を指定します。
+> ローカルアドレス帳のオブジェクトキャッシュのオフラインアドレス帳 (OAB) ファイル形式を指定します。
     
-[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
-> プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。
+> 電子メールメッセージオブジェクトに対して許容されるプロパティと操作を指定します。
     
-[[MS OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
+[[OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
   
-> プロパティや検索フォルダーの一覧の構成を操作するための動作を指定します。
+> 検索フォルダーリストの構成を操作するためのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

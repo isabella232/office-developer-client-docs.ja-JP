@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: 9ec1bbaa-7707-4239-9994-21ad1116430b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 898876863223aefa868fd37deced2948bd5a5694
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 885cf53de45cfde4079cc2a0e7bfdca09f72b962
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329527"
 ---
 # <a name="cbnewadrlist"></a>CbNewADRLIST
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[ADRENTRY](adrentry.md)構造体で表される受信者の指定した番号を含む新しい[ADRLIST](adrlist.md)構造体に割り当てるバイト数を計算します。 
+[adrlist](adrentry.md)構造体で表される指定された数の受信者を含む、新しい[adrlist](adrlist.md)構造体に割り当てる必要があるバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |**ADRLIST** <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |**ADRLIST** <br/> |
    
 ```cpp
 CbNewADRLIST (_centries)
@@ -40,7 +40,7 @@ CbNewADRLIST (_centries)
 
  __centries_
   
-> 新しい**ADRLIST**構造体に含まれる**ADRENTRY**構造体の数です。 
+> 新しい**adrentry**構造に含める**adrentry**構造体の数。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -51,5 +51,5 @@ CbNewADRLIST (_centries)
 [ADRENTRY](adrentry.md)
 
 
-[構造体に関連するマクロ](macros-related-to-structures.md)
+[構造に関連するマクロ](macros-related-to-structures.md)
 

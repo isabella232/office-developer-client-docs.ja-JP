@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: 56f7d8d6-d904-4bed-ab7c-8eea9db17ede
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: bdba30013bf5adddba78a3c9fa1330b34dd2b4fa
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c135a5bf5c1a697ddf2b2c85c6d81d6289f6a9e6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329597"
 ---
 # <a name="cbmessageclassarray"></a>CbMessageClassArray
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-指定した数文字列へのポインターのメッセージ クラスにはが含まれている既存の[SMessageClassArray](smessageclassarray.md)構造体のバイト数を計算します。 
+メッセージクラスへの指定された数の文字列ポインターを含む、既存の[SMessageClassArray](smessageclassarray.md)構造体のバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |**SMessageClassArray** <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |**SMessageClassArray** <br/> |
    
 ```cpp
 CbMessageClassArray (_c)
@@ -40,7 +40,7 @@ CbMessageClassArray (_c)
 
  __c_
   
-> 既存の**SMessageClassArray**に含まれているメッセージ クラスへのポインターの数。
+> 既存の**SMessageClassArray**に含まれているメッセージクラスへのポインターの数。
     
 ## <a name="see-also"></a>関連項目
 
@@ -49,5 +49,5 @@ CbMessageClassArray (_c)
 [SMessageClassArray](smessageclassarray.md)
 
 
-[構造体に関連するマクロ](macros-related-to-structures.md)
+[構造に関連するマクロ](macros-related-to-structures.md)
 

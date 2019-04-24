@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: db621dfd-c6ad-42d2-8089-db40a63cab36
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7e8fb69e7d25420186d7269943c5d957311e813d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d647b41018afbade91dffb2818b48b0738148855
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329436"
 ---
 # <a name="imapiformadvisesinkonactivatenext"></a>IMAPIFormAdviseSink::OnActivateNext
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームを表示するのには、次のメッセージのメッセージ クラスを処理できるかどうかを示します。
+フォームが次に表示されるメッセージのメッセージクラスを処理できるかどうかを示します。
   
 ```cpp
 HRESULT OnActivateNext(
@@ -38,59 +38,59 @@ HRESULT OnActivateNext(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpszMessageClass_
+ _lpszmessageclass_
   
-> [in]次のメッセージのメッセージ クラスへのポインター。
+> 順番次のメッセージのメッセージクラスへのポインター。
     
- _ulMessageStatus_
+ _ulmessagestatus_
   
-> [in]メッセージが含まれているコンテンツのテーブルに関するステータス情報を提供する、 **PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) のプロパティを表示するには、次のメッセージからコピーされた、クライアントが定義されているか、プロバイダーで定義されているフラグのビットマスクします。
+> 順番メッセージが含まれる contents テーブルに関する状態情報を提供する、クライアント定義またはプロバイダー定義のフラグのビットマスク。これは、表示する次のメッセージの**PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) プロパティからコピーされます。順番.
     
- _ulMessageFlags_
+ _ulmessageflags_
   
-> [in]フラグは、 **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) のプロパティを表示するのには、次のメッセージからコピーのビットマップへのポインターでは、メッセージの現在の状態を示します。
+> 順番メッセージの現在の状態を示す次のメッセージの**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティからコピーされたフラグのビットマスクへのポインター。
     
- _ppPersistMessage_
+ _pppersistmessage_
   
-> [out][IPersistMessage](ipersistmessageiunknown.md)の実装の新しいフォームで、新しいフォームが必要な場合に使用されるフォーム オブジェクトへのポインターへのポインター。 表示し、次のメッセージを保存する、現在のフォームを使用できる場合、NULL へのポインターを返すことができます。 
+> 読み上げ新しいフォームが必要な場合は、新しいフォームに使用される form オブジェクトの[IPersistMessage](ipersistmessageiunknown.md)実装へのポインターへのポインター。 現在の form オブジェクトを使用して次のメッセージを表示し保存できる場合は、NULL へのポインターが返されます。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 通知が成功し、フォームは、次のメッセージを処理できます。
+> 通知は正常に実行され、フォームは次のメッセージを処理することができます。
     
 S_FALSE 
   
-> フォームでは、次のメッセージのメッセージ クラスは処理されません。
+> フォームでは、次のメッセージのメッセージクラスは処理されません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-フォームの閲覧者は、フォルダー内の次のメッセージを表示できるかどうかを決定するフォームのために**IMAPIFormAdviseSink::OnActivateNext**メソッドを呼び出します。 次のメッセージは、任意のクラスのメッセージである可能性がありますが、通常同じクラスの関連するクラスです。 こうと、可能な場合、フォーム オブジェクトを再利用するクライアント アプリケーションを有効にするとより効率的な同じクラスの複数のメッセージを読み取って処理します。 
+フォームビューアーは、 **IMAPIFormAdviseSink:: OnActivateNext**メソッドを呼び出して、フォームが次のメッセージをフォルダー内に表示できるかどうかを判断できるようにします。 次のメッセージは任意のクラスのメッセージである可能性がありますが、通常は同じクラスまたは関連クラスのものです。 これにより、クライアントアプリケーションが可能な限りフォームオブジェクトを再利用できるようにすることで、同じクラスの複数のメッセージをより効率的に読み取ることができます。 
   
-フォームのほとんどのオブジェクトは次のメッセージを処理できるかどうかを判断するのには、 _lpszMessageClass_パラメーターで指定されたメッセージ クラスを使用します。 通常、フォームは、フォームの既定のクラスが既定のクラスに属しているメッセージだけでなく、サブクラスがクラスに属しているメッセージを処理できます。 ただし、フォームでは、質問しないかどうか、メッセージの処理、次のメッセージの送信または未送信の状態などを決定するのにその他の要因を使用できます。 
+ほとんどの form オブジェクトは、 _lpszmessageclass_パラメーターで指定されたメッセージクラスを使用して、次のメッセージを処理できるかどうかを判断します。 通常、フォームは、既定のクラスに属するメッセージに加えて、フォームの既定のクラスがサブクラスであるクラスに属するメッセージを処理できます。 ただし、フォームで他の要素を使用して、メッセージを処理できるかどうか (次のメッセージの送信済みまたは未送信の状態など) を確認することはできません。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-フォームは、メッセージ クラスを処理できる場合、 _ppPersistMessage_パラメーターに S_OK と NULL を返します。 フォームは、フォームが処理することがあるメッセージを処理できる新しいフォームを作成できます、以下の手順を実行します。 
+フォームがメッセージクラスを処理できる場合は、 _pppersistmessage_パラメーターで S_OK および NULL を返します。 フォームで処理できないメッセージを処理できる新しいフォームを作成できる場合は、次の手順を実行します。 
   
-1. 新しいフォーム オブジェクトのインスタンスを作成するのには、フォームのクラス ファクトリを呼び出します。
+1. フォームのクラスファクトリを呼び出して、新しい form オブジェクトのインスタンスを作成します。
     
-2. _PpPersistMessage_ポインター パラメーターの内容でそのインスタンスを格納します。 
+2. そのインスタンスを_pppersistmessage_ポインターパラメーターの内容に格納します。 
     
 3. S_OK ��Ԃ��܂��B
     
-フォーム ビューアーは、メッセージを_ppPersistMessage_が指すオブジェクトが所属する[IPersistMessage::Load](ipersistmessage-load.md)メソッドを使用して読み込まれます。
+フォームビューアーは、 _pppersistmessage_が指すオブジェクトに属する[IPersistMessage:: load](ipersistmessage-load.md)メソッドを使用して、メッセージを読み込みます。
   
-フォームも作成できるフォームには、次のメッセージが処理される場合は、S_FALSE を返します。 ただし、一般に、フォームを返さないでくださいこの値に発生するためは、フォームのビューアーでのパフォーマンスを低下します。
+作成できるフォームまたはフォームのいずれも、次のメッセージを処理できる場合は、S_FALSE を返します。 ただし、一般に、フォームビューアーのパフォーマンスが低下する原因となるため、フォームはこの値を返さないようにする必要があります。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIFormFunctions.cpp  <br/> |CMyMAPIFormViewer::ActivateNext  <br/> |MFCMAPI では、 **IMAPIFormAdviseSink::OnActivateNext**メソッドを使用して、 [IMAPIViewContext::ActivateNext](imapiviewcontext-activatenext.md)メソッドを実装します。  <br/> |
+|MAPIFormFunctions  <br/> |cmymapiformviewer:: ActivateNext  <br/> |mfcmapi は、 **IMAPIFormAdviseSink:: OnActivateNext**メソッドを使用して、 [imapiviewcontext:: ActivateNext](imapiviewcontext-activatenext.md)メソッドを実装します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

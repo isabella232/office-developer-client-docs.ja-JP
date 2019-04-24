@@ -12,31 +12,31 @@ api_type:
 - HeaderDef
 ms.assetid: a39c0f54-bdca-498f-a75c-dd8702e5385a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 528e18964cacfb59f30667295b792e850353f3ea
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a3cf1d32ac4c21137e1b1cbb04f64d7efbc0729d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329352"
 ---
 # <a name="pidtagnondeliveryreportdiagcode-canonical-property"></a>PidTagNonDeliveryReportDiagCode 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-配信不能レポートの一部を形成する診断コードが含まれています。
+配信不能レポートの一部を構成する診断コードが含まれています。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_NDR_DIAG_CODE  <br/> |
-|識別子:  <br/> |0x0C05  <br/> |
+|識別子:  <br/> |0x0c05  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |一般的なメッセージング  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティは、次の値の 1 つだけ持つことができます。
+このプロパティには、次のいずれかの値を指定できます。
   
 MAPI_DIAG_ALPHABETIC_CHARACTER_LOST 
   
@@ -232,15 +232,15 @@ MAPI_DIAG_TOO_MANY_RECIPIENTS
     
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
@@ -249,9 +249,9 @@ Mapitags.h
 [PidTagNonDeliveryReportReasonCode 標準プロパティ](pidtagnondeliveryreportreasoncode-canonical-property.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

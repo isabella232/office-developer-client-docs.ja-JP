@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 365f7005-ba34-2311-4c5c-16344962fc3f
 description: Visio 2000 よりも前のバージョンの Visio に挿入するフィールドのカテゴリを指定します。
-ms.openlocfilehash: fc060ac1533732749d10e1855dc3841602051520
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c67ced9e4f731e66bce0589929ac90fb9bb8d67c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331200"
 ---
-# <a name="uicategory-cell-text-fields-section"></a>[UICategory] セル ([テキスト フィールド] セクション)
+# <a name="uicategory-cell-text-fields-section"></a>[UICategory] セル ([Text Fields] セクション)
 
 Visio 2000 よりも前のバージョンの Visio に挿入するフィールドのカテゴリを指定します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 このセルは [シェイプシート] ウィンドウには表示されません。Visio バージョン 2000 の図面を Visio Version 5.0 ファイル形式で保存するなど、下位互換性の問題に対処する必要がある場合に、このセルを使用します。
   
@@ -28,14 +28,14 @@ Visio 2000 よりも前のバージョンの Visio に挿入するフィール�
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | Fields.UICat [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+| セル名 :  <br/> | UICat [ *i* ] *i* = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [UICategory] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionTextField** <br/> |
-| 行インデックス:  <br/> |**visRowField** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+| 行インデックス:  <br/> |**visRowField** +  *i* = ** 0、1、2...  <br/> |
 | セル インデックス:  <br/> |**visFieldUICategory** <br/> |
    
 

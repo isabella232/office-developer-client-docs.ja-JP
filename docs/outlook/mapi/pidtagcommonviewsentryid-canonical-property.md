@@ -12,45 +12,45 @@ api_type:
 - HeaderDef
 ms.assetid: cd9e6a46-2112-4663-891e-5e57b22c0950
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7449e59227b147d34c2329175d0251dbb9c427b6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e22b8905901f16606614ac918896f3afe0093752
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331746"
 ---
 # <a name="pidtagcommonviewsentryid-canonical-property"></a>PidTagCommonViewsEntryId 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-定義済みの一般的なビュー フォルダーのエントリ id が含まれています。 
+定義済みの共通ビューフォルダーのエントリ識別子を含みます。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_COMMON_VIEWS_ENTRYID  <br/> |
-|識別子:  <br/> |0x35E6  <br/> |
+|識別子:  <br/> |0x35e6  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |Outlook アプリケーション  <br/> |
+|エリア:  <br/> |Outlook アプリケーション  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-共通のフォルダー ビューにはには、フォルダーのビューには、メッセージングのユーザーによって定義された指定子が含まれているときに標準のビューの指定子の定義済みセットが含まれています。 表示指定子が多く、各メッセージとして格納されているこれらのフォルダーは、個人間メッセージ (IPM) の階層構造で表示されていないを保持できます。 指定子のセットの 2 つをマージして両方使用できるようにするクライアント アプリケーションを選択できます。 
+common view フォルダーには、あらかじめ定義されている標準ビュー指定セットが含まれています。ビューフォルダーには、メッセージングユーザーによって定義された指定子が含まれています。 これらのフォルダーは、個人間メッセージ (IPM) 階層では表示されず、メッセージとして格納されている複数のビュー指定子を保持できます。 クライアントアプリケーションは、2つの指定子のセットをマージすることを選択し、両方を使用できるようにします。 
   
-ビューの詳細については、[フォルダーの表示](mapi-view-folders.md)を参照してください。
+ビューの詳細については、「 [View Folders](mapi-view-folders.md)」を参照してください。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
@@ -61,9 +61,9 @@ Mapitags.h
 [PidTagViewsEntryId 標準プロパティ](pidtagviewsentryid-canonical-property.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

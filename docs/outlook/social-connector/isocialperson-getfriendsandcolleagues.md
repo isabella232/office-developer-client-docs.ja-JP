@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 62d5b815-f199-499e-85eb-2dff21a8216e
 description: ユーザーのコレクションを表す文字列を取得します。
-ms.openlocfilehash: 36482a6068c592eb0ff07603b6458e8415c3586f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f755476f66ab2f91471b88c74baff899f31b83e3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331662"
 ---
 # <a name="isocialpersongetfriendsandcolleagues"></a>ISocialPerson::GetFriendsAndColleagues
 
@@ -25,21 +25,21 @@ HRESULT _stdcall GetFriendsAndColleagues([out, retval] BSTR* personsCollection);
 
 ## <a name="parameters"></a>パラメーター
 
-_personsCollection_
+_個人コレクション_
   
-> [out]XML 文字列をユーザーの友人のセットを表し、Outlook ソーシャル コネクタ (OSC) プロバイダーの機能拡張用の XML スキーマで定義されている、**友人**の定義に準拠しています。 
+> 読み上げ個人のフレンドのセットを表す xml 文字列。 Outlook Social Connector (.osc) プロバイダー拡張機能の XML スキーマで定義されているように、**フレンド**の定義に準拠しています。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-OSC は、ソーシャル ネットワーク上の**GetFriendsAndColleagues** OSC プロバイダーをサポートしていますがキャッシュされている場合、またはハイブリッドの同期の友人を呼び出します。 OSC 最初にメソッドを呼び出して、 **GetFriendsAndColleagues** **GetFriendsAndColleagues** 、ソーシャル ネットワークにログオンしている Outlook ユーザーのソーシャル ネットワークにログオン中のユーザーの友人を表す XML 文字列を返します。 XML 文字列では、**友人**の XML スキーマ定義に準拠し、各フレンドの**人**の要素 (OSC プロバイダーのスキーマ定義に準拠しても) を指定します。 
+.osc プロバイダーがソーシャルネットワーク上で友人のキャッシュまたはハイブリッド同期をサポートしている場合、.osc 呼び出しは**GetFriendsAndColleagues**になります。 ソーシャルネットワークにログオンしている Outlook ユーザーの**GetFriendsAndColleagues**メソッドを最初に呼び出すときに、 **GetFriendsAndColleagues**は、ソーシャルネットワーク上でログオンしているユーザーのフレンドを表す XML 文字列を返します。 xml 文字列は、フレンド xml **** スキーマ定義に準拠しており、各フレンドの**person**要素 (.osc プロバイダースキーマ定義にも準拠) を指定します。 
   
-**GetFriendsAndColleagues**が返されるとき、友人にログオンしたユーザーの情報、OSC は、連絡先フォルダーに情報を格納します。 このフォルダーでは、ソーシャル ネットワークに固有では、ログオンしているユーザーの既定の Outlook ストアに存在します。 OSC が連絡先フォルダー内の友人の情報をキャッシュする方法の詳細については、[同期の友人との活動](synchronizing-friends-and-activities.md)を参照してください。
+**GetFriendsAndColleagues**がログオンユーザーのフレンド情報を返すと、.osc は連絡先フォルダーにその情報を格納します。 このフォルダーは、ソーシャルネットワークに固有のものであり、ログオンしているユーザーの既定の Outlook ストアに存在します。 .osc が連絡先フォルダー内のフレンド情報をキャッシュする方法の詳細については、「[友人とアクティビティを同期](synchronizing-friends-and-activities.md)する」を参照してください。
   
-_PersonsCollection_パラメーターで返される各フレンドの情報は、**ユーザー**の XML スキーマ定義に準拠します。 **人**要素情報の多くの部分をサポートして、SMTP 電子メール アドレス ( **emailAddress**、 **emailAddress2**、および**emailAddress3**の要素にマップする) を含む、各フレンドのフレンドを指定する、ソーシャル ネットワーク、および、ユーザー ID (**ユーザー Id**の要素にマップする)、ソーシャル ネットワーク上の友人を識別します。 
+個人_コレクション_パラメーターに返される各フレンドの情報は、 **person**の XML スキーマ定義に準拠しています。 **person**要素は、各フレンドの多くの情報 ( **emailAddress**、 **emailAddress2**、および**emailAddress3**要素にマップされる) をサポートしており、その中で友人が指定したソーシャルネットワークと、ソーシャルネットワーク上でその友人を識別するユーザー ID ( **userID**要素にマップされます)。 
   
-人物情報ウィンドウで選択されている Outlook のユーザーのアクティビティを表示するには、OSC は、 **GetFriendsAndColleagues**から返されるそれぞれの友人とのユーザーの一致を試みます。 OSC 各友人がソーシャル ネットワークに指定した電子メール アドレスを選択した Outlook のユーザーの SMTP アドレスを照合することによって行われます。 OSC では、一致する SMTP 電子メール アドレスを検出した場合、OSC は[ISocialSession::GetPerson](isocialsession-getperson.md)メソッドを呼び出す、友人の対応する**ユーザー Id**を使用します。 これは、その友人は、ソーシャル ネットワークの活動とその友人の画像を取得するのには OSC を有効にし、 [ISocialPerson](isocialpersoniunknown.md)オブジェクトを取得します。 
+[ユーザー] ウィンドウで選択された Outlook ユーザーのアクティビティを表示するために、.osc は、 **GetFriendsAndColleagues**から返された各フレンドに対してユーザーを照合しようとします。 .osc は、選択された Outlook ユーザーの SMTP アドレスを、各フレンドがソーシャルネットワーク上で指定した電子メールアドレスと照合することによって、これを行います。 一致する SMTP 電子メールアドレスを、.osc が検出した場合、.osc はフレンドの対応する**userID**を使用して、 [isocialsession:: getperson](isocialsession-getperson.md)メソッドを呼び出します。 これにより、そのフレンドの[isocial alperson](isocialpersoniunknown.md)オブジェクトが取得されます。これにより、.osc がその友人のアクティビティと画像をソーシャルネットワークから取得できるようになります。 
   
-ただし、選択した Outlook ユーザーは、ソーシャル ネットワーク上のアカウントで同じ SMTP アドレスを指定しない場合、または Outlook のユーザーはソーシャル ネットワークのアカウントを持っていない場合は、OSC ユーザーの一致を検索することはできませんし、activiti は表示されません。es ソーシャル ネットワークのユーザーにします。
+ただし、選択した outlook ユーザーがソーシャルネットワーク上のアカウントで同じ SMTP アドレスを指定していない場合、または outlook ユーザーがそのソーシャルネットワークにアカウントを持っていない場合、そのユーザーに対して一致するものを検索することができず、activiti が表示されません。そのユーザーのソーシャルネットワーク上での es。
   
 ## <a name="see-also"></a>関連項目
 

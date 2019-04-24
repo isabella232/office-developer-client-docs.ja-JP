@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 797833f7-8295-41bc-8980-977e5f5e05e8
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 36d1518764985c4783d967e263ca5c05d63f935f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: a1ad209ff127a34d7da5ca8dbe1f4a6656d32876
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328931"
 ---
 # <a name="imapitablefreebookmark"></a>IMAPITable::FreeBookmark
 
@@ -37,9 +37,9 @@ BOOKMARK bkPosition
 
  _bkPosition_
   
-> [in]解放するには、ブックマークは、 [IMAPITable::CreateBookmark](imapitable-createbookmark.md)メソッドを呼び出すことによって作成されます。 
+> 順番、 [IMAPITable:: createbookmark](imapitable-createbookmark.md)メソッドを呼び出すことによって作成された、解放されるブックマーク。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -47,15 +47,15 @@ S_OK
     
 MAPI_E_INVALID_BOOKMARK 
   
-> 指定されたブックマークは存在しません。
+> 指定したブックマークが存在しません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPITable::FreeBookmark**メソッドでは、不要になったブックマークを解放します。 ブックマークは、この呼び出しの後は有効ではありません。 テーブルがメモリからリリースされる、すべての関連付けられているブックマークのも解放されます。 
+**IMAPITable:: freebookmark**メソッドは、不要になったブックマークを解放します。 この呼び出しの後、ブックマークは無効になりました。 テーブルがメモリから解放されると、それに関連付けられているすべてのブックマークも解放されます。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-呼び出し元では、 _bkPosition_パラメーターで次の 3 つの定義済みのブックマークの 1 つが成功した場合は、要求を無視して、S_OK を返します。 
+発信者が3つの定義済みブックマークのいずれかを_bkPosition_パラメーターに渡した場合は、要求を無視し、S_OK を返します。 
   
 ## <a name="see-also"></a>関連項目
 

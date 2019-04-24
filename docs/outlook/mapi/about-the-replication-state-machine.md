@@ -1,87 +1,87 @@
 ---
-title: レプリケーション ステート マシンについて
+title: レプリケーション状態のマシンについて
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: cf36c6cb-57b4-7b2b-e23d-e0bc8696de96
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 30dd43a3ac9a315cd41919872b918bee639ca259
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a0644e4bf5c6847d61cc59e203d50f61ad142e84
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329751"
 ---
-# <a name="about-the-replication-state-machine"></a>レプリケーション ステート マシンについて
+# <a name="about-the-replication-state-machine"></a>レプリケーション状態のマシンについて
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックには、Microsoft Outlook 2013 および Microsoft Outlook 2010 のデータ ・ レプリケーションのステート マシンの概要が含まれています。
+このトピックでは、microsoft outlook 2013 および microsoft outlook 2010 データレプリケーションの状態機械の概要について説明します。
   
 > [!NOTE]
-> やサポートされているに使用するためにこのトピックの説明に従って、レプリケーション API を完全に実装する必要があります。 レプリケーション API は、サーバーとの間に 2013 の Outlook または Outlook 2010 の変更をレプリケートするには、排他的に使用できます。 
+> このトピックの手順に従ってレプリケーション API が完全に実装されている必要があります。 レプリケーション API は、outlook 2013 または outlook 2010 の変更をサーバーにレプリケートする場合にのみ使用できます。 
   
-## <a name="iostx-and-the-state-machine"></a>IOSTX とステート マシン
+## <a name="iostx-and-the-state-machine"></a>iostx およびステートマシン
 
-クライアントは、Outlook 2013 または Outlook 2010 のフォルダーとローカル ストアとサーバ間で項目を同期する順序で**[IOSTX::SyncBeg](iostx-syncbeg.md)**、 **[IOSTX::SyncEnd](iostx-syncend.md)**、 **[IOSTX::SyncHdrBeg](iostx-synchdrbeg.md)**、および**[IOSTX::SyncHdrEnd](iostx-synchdrend.md)** を呼び出します。 呼び出しの実際の手順が異なります (例、2013 の Outlook または Outlook 2010 のフォルダーの階層、Outlook 2013 または Outlook 2010 のフォルダー、メール アイテム、予定表アイテム、およびなど) を複製する必要のあるデータと同期 (かどうかの方向ローカル ストアから、サーバーにアップロードまたはローカル ストアに、サーバーからダウンロード) します。 以下は、典型的な呼び出しシーケンスです。 
+クライアントは、 **[iostx:: SyncBeg](iostx-syncbeg.md)**、iostx:: **[syncend](iostx-syncend.md)**、iostx: **[: SyncHdrBeg](iostx-synchdrbeg.md)**、 **[iostx:: SyncHdrEnd](iostx-synchdrend.md)** を呼び出して、ローカルストアとサーバーの間で outlook 2013 または outlook 2010 フォルダーとアイテムを同期します。 実際の呼び出しの順序は、レプリケートする必要のあるデータ (たとえば、outlook 2013 または outlook 2010 フォルダーの階層、outlook 2013 または outlook 2010 フォルダー、メールアイテム、予定表アイテムなど)、および同期の方向 (かどうか) によって異なります。ローカルストアからサーバーへのアップロード、またはサーバーからローカルストアへのダウンロード)。 一般的な一連の呼び出しの例を次に示します。 
   
-1. クライアントでは、状態の識別子および対応するデータ構造体のアドレスへのポインターを指定する、レプリケーションを開始するのには**IOSTX::SyncBeg**を呼び出します。 
+1. クライアントは**iostx:: SyncBeg**を呼び出してレプリケーションを開始し、状態識別子と、対応するデータ構造のアドレスへのポインターを指定します。 
     
-2. 2013 の outlook または Outlook 2010 のデータ構造体、クライアントに必要な情報を持つデータ構造を初期化します。 
+2. outlook 2013 または outlook 2010 は、データ構造を割り当て、クライアントに必要な情報を使用してデータ構造を初期化します。 
     
-3. クライアントは、ローカル ストアをレプリケーションに関する必要な情報を伝えるためにデータ構造を更新する、レプリケーションを行います。
+3. クライアントはレプリケーションを実行し、データ構造を更新して、レプリケーションに関する必要な情報をローカルストアに伝達します。
     
-4. レプリケーションを実行すると、クライアントは、ローカル ストアの特定のレプリケーションの完了を通知するには、 **[IOSTX::SetSyncResult](iostx-setsyncresult.md)** と**IOSTX::SyncEnd**を呼び出します。 
+4. レプリケーションの実行後、クライアントは**[iostx:: SetSyncResult](iostx-setsyncresult.md)** と**iostx:: syncend**を呼び出して、特定のレプリケーションが完了したことをローカルストアに通知します。 
     
 > [!NOTE]
-> クライアントは、常にクライアントが特定の状態を開始するレプリケーションを終了するのには**IOSTX::SyncEnd**を呼び出します。 によって、全体のデータを同期する必要のあるクライアントは、クライアントが、 **IOSTX::SyncBeg**および**IOSTX::SyncEnd**の呼び出しのペアを 2 回以上呼び出すことがあります。 
+> クライアントは、常に**iostx:: syncend**を呼び出して、クライアントが特定の状態で開始したレプリケーションを終了します。 クライアントは、クライアントが同期する必要のある全体的なデータに応じて、 **iostx:: SyncBeg**と**iostx:: syncend**を複数回呼び出すことができます。 
   
 ## <a name="state-table"></a>状態テーブル
 
 > [!NOTE]
-> レプリケーション状態機械の状態の対応する識別子とデータ構造体に有効なすべての状態を次の表に一覧します。 **データのレプリケート**] 列で [アイテム] という用語には、メール、予定表、連絡先、メモ、ジャーナル、および作業項目が含まれています。 ローカル ストアからの変更をレプリケートするサーバーに、ときに、上のプレフィックス (たとえば、 **LR_SYNC_UPLOAD_HIERARCHY** 、 **[UPHIER](uphier.md)** ) で状態識別子の [アップロード] を指定してデータ構造体を使用します。 ローカル ストアに、サーバーから変更をレプリケートする、ときに、"DN"のプレフィックス (たとえば、 **LR_SYNC_DOWNLOAD_HIERARCHY** 、 **[DNHIER](dnhier.md)** ) で状態識別子をダウンロードする] を指定してデータ構造体を使用します。 
+> 次の表に、レプリケーション状態マシンのすべての有効な状態と、それに対応する状態識別子とデータ構造を示します。 [レプリケートされた**データ**] 列の "アイテム" という用語には、メール、予定表、連絡先、メモ、履歴、およびタスクアイテムが含まれます。 ローカルストアからサーバーに変更をレプリケートする場合は、「アップロード」を指定した状態識別子と「up」プレフィックスを指定したデータ構造 (たとえば、 **LR_SYNC_UPLOAD_HIERARCHY**および**[uphier](uphier.md)** ) を使用します。 サーバーからローカルストアに変更をレプリケートする場合は、"DN" プレフィックスを指定した "DOWNLOAD" とデータ構造を指定する状態識別子を使用します (たとえば、 **LR_SYNC_DOWNLOAD_HIERARCHY**や**[dnhier](dnhier.md)** )。 
   
 |||||
 |:-----|:-----|:-----|:-----|
-|**State** <br/> |**レプリケートされたデータ** <br/> |**状態識別子** <br/> |**データ構造体** <br/> |
+|**State** <br/> |**レプリケートされるデータ** <br/> |**状態識別子** <br/> |**データ構造** <br/> |
 |[アイドル状態](idle-state.md) <br/> | *None*  <br/> |**LR_SYNC_IDLE** <br/> | *None*  <br/> |
-|[状態を同期します。](synchronize-state.md) <br/> |フォルダーまたはアイテム  <br/> |**LR_SYNC** <br/> |**[SYNC](sync.md)** <br/> |
-|[階層の状態をアップロードします。](upload-hierarchy-state.md) <br/> |フォルダー  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**[UPHIER](uphier.md)** <br/> |
-|[アップロード フォルダーの状態](upload-folder-state.md) <br/> |Folder  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**[UPFLD](upfld.md)** <br/> |
-|[内容の状態を同期します。](synchronize-contents-state.md) <br/> |Items  <br/> |**LR_SYNC_CONTENTS** <br/> |**[SYNCCONT](synccont.md)** <br/> |
-|[テーブルの状態をアップロードします。](upload-table-state.md) <br/> |Items  <br/> |**LR_SYNC_UPLOAD_TABLE** <br/> |**[UPTBL](uptbl.md)** <br/> |
-|[メッセージの状態をアップロードします。](upload-message-state.md) <br/> |アイテム  <br/> |**LR_SYNC_UPLOAD_MESSAGE** <br/> |**[UPMSG](upmsg.md)** <br/> |
-|[読み取りステータスをアップロードします。](upload-read-status-state.md) <br/> |Items  <br/> |**LR_SYNC_UPLOAD_MESSAGE_READ** <br/> |**[UPREAD](upread.md)** <br/> |
-|[削除ステータスをアップロードします。](upload-delete-status-state.md) <br/> |Items  <br/> |**LR_SYNC_UPLOAD_MESSAGE_DEL** <br/> |**[UPDEL](updel.md)** <br/> |
-|[階層の状態をダウンロードします。](download-hierarchy-state.md) <br/> |フォルダー  <br/> |**LR_SYNC_DOWNLOAD_HIERARCHY** <br/> |**[DNHIER](dnhier.md)** <br/> |
-|[テーブルの状態をダウンロードします。](download-table-state.md) <br/> |Items  <br/> |**LR_SYNC_DOWNLOAD_TABLE** <br/> |**[DNTBL](dntbl.md)** <br/> |
-|[メッセージ ヘッダーの状態をダウンロードします。](download-message-header-state.md) <br/> |メッセージのヘッダー  <br/> |**LR_SYNC_DOWNLOAD_HEADER** <br/> |**[HDRSYNC](hdrsync.md)** <br/> |
+|[同期状態](synchronize-state.md) <br/> |フォルダーまたはアイテム  <br/> |**LR_SYNC** <br/> |**[頻度](sync.md)** <br/> |
+|[階層のアップロード状態](upload-hierarchy-state.md) <br/> |Folders  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**[UPHIER](uphier.md)** <br/> |
+|[フォルダーの状態をアップロードする](upload-folder-state.md) <br/> |フォルダー  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**[UPFLD](upfld.md)** <br/> |
+|[コンテンツの状態の同期](synchronize-contents-state.md) <br/> |アイテム  <br/> |**LR_SYNC_CONTENTS** <br/> |**[SYNCCONT](synccont.md)** <br/> |
+|[テーブルの状態をアップロードする](upload-table-state.md) <br/> |アイテム  <br/> |**LR_SYNC_UPLOAD_TABLE** <br/> |**[UPTBL](uptbl.md)** <br/> |
+|[メッセージアップロードの状態](upload-message-state.md) <br/> |Item  <br/> |**LR_SYNC_UPLOAD_MESSAGE** <br/> |**[UPMSG](upmsg.md)** <br/> |
+|[読み取り状態のアップロードの状態](upload-read-status-state.md) <br/> |アイテム  <br/> |**LR_SYNC_UPLOAD_MESSAGE_READ** <br/> |**[UPREAD](upread.md)** <br/> |
+|[削除の状態の状態をアップロードする](upload-delete-status-state.md) <br/> |アイテム  <br/> |**LR_SYNC_UPLOAD_MESSAGE_DEL** <br/> |**[UPDEL](updel.md)** <br/> |
+|[階層のダウンロード状態](download-hierarchy-state.md) <br/> |Folders  <br/> |**LR_SYNC_DOWNLOAD_HIERARCHY** <br/> |**[DNHIER](dnhier.md)** <br/> |
+|[テーブルの状態をダウンロードする](download-table-state.md) <br/> |アイテム  <br/> |**LR_SYNC_DOWNLOAD_TABLE** <br/> |**[DNTBL](dntbl.md)** <br/> |
+|[メッセージヘッダーの状態をダウンロードする](download-message-header-state.md) <br/> |メッセージ ヘッダー  <br/> |**LR_SYNC_DOWNLOAD_HEADER** <br/> |**[HDRSYNC](hdrsync.md)** <br/> |
    
 ## <a name="state-transition-diagram"></a>状態遷移図
 
-次の図では、アップロードするか、フォルダーまたはフォルダー (メール、予定表、連絡先、メモ、タスク、または仕訳帳の項目) の内容の完全な同期 (アップロード後にダウンロード) を実行するときに発生する状態の遷移を示します。 
+次の図は、フォルダーまたはフォルダーの内容 (メール、予定表、連絡先、メモ、タスク、またはジャーナルアイテム) の完全同期 (ダウンロード後にアップロード) をアップロードまたは実行する際に発生する状態の移行を示しています。 
   
-挿入アートをここでは不足しているに @@@NEED。
+@ @ @ @ @ @ がない場合に、@ @ @ @ @NEED してアートを挿入する
   
-## <a name="example-uploading-a-folder-hierarchy"></a>アップロードするフォルダー階層の例。
+## <a name="example-uploading-a-folder-hierarchy"></a>例: フォルダー階層のアップロード
 
- フォルダーの階層構造をアップロードすると、次の一連の手順が実行されます。 
+ フォルダーの階層をアップロードする場合は、次の手順を実行します。 
   
 |||||
 |:-----|:-----|:-----|:-----|
-|**手順** <br/> |**操作** <br/> |**State** <br/> |**関連するデータ構造体** <br/> |
-|1。  <br/> |クライアントは、 **IOSTX::SyncBeg**と階層構造のアップロードを開始します。  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
-|2。  <br/> |2013 の outlook または Outlook 2010 は、クライアントの情報が**UPHIER**に表示されます。 [Out] パラメーターの初期化が含まれます: *iEnt*は、0、およびアップロードする必要がある階層内のフォルダーの数には、*セント*に設定されています。  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
-|3。  <br/> |クライアントには、実際の階層構造のアップロードが行われます。 たとえば、*セント*が、10 個のフォルダーのそれぞれについて、10 の場合、クライアントは**IOSTX::SyncBeg**、適切な状態の識別子およびフォルダーをアップロードするデータ構造体を指定するを呼び出します。  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
-|4。  <br/> |2013 の outlook または Outlook 2010 は、フォルダーのアップロード、フォルダー オブジェクトへのポインターの理由と、フォルダーのエントリ ID を含む、[out] パラメーターを初期化することによって**UPFLD**を設定します。  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
-|5。  <br/> |クライアントは、指定したフォルダーをアップロードします。  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
-|6。  <br/> |クライアントは、ローカル ストアのフォルダーのアップロードの完了を通知: 成功すると、クライアントの設定、[in] パラメーター *ulFlags*を**UPF_OK**、および、 **IOSTX::SetSyncResult (S_OK)** の呼び出しと**UPFLD**と**IOSTX::SyncEnd**. 障害時に、クライアントの場合は、 **UPF_OK**フラグを使って*ulFlags*に未設定。 **IOSTX::SetSyncResult**、 **HRESULT**の値、および**IOSTX::SyncEnd**を渡して呼び出します。  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
-|7。  <br/> |**UPF_OK**を設定すると、Outlook 2013 または Outlook 2010 は、フォルダーをアップロードするための内部要求がクリアされます。 *UlFlags*の状態に関係なくをクリーンアップします、内部のブックキーピング情報です。 残っている状態のフォルダーをアップロードするのには階層構造で (*iEnt* 、*セント*よりも小さく)、クライアントと Outlook 2013 または Outlook 2010 は、手順 3 ~ 7 を繰り返します。  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
-|8。  <br/> |クライアントは、ローカル ストアの階層構造のアップロードの完了を通知: 成功すると、クライアントの設定、[in] **IOSTX::SetSyncResult (S_OK)** と**IOSTX::SyncEnd**で**UPH_OK**、およびその後の呼び出しでは、 **UPHIER**フラグを設定します。 障害時に、クライアント設定はありません**UPH_OK**のフラグ。 **IOSTX::SetSyncResult**、 **HRESULT**の値、および**IOSTX::SyncEnd**を渡して呼び出します。  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
-|9。  <br/> |**UPH_OK**が設定されている場合は、Outlook 2013 または Outlook 2010 と階層をアップロードするための内部要求がクリアされます。 *UlFlags*の状態に関係なくをクリーンアップします、内部のブックキーピング情報です。  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
+|**手順** <br/> |**アクション** <br/> |**State** <br/> |**関連データ構造** <br/> |
+|1.  <br/> |クライアントは**iostx:: SyncBeg**で階層のアップロードを開始します。  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
+|2.  <br/> |outlook 2013 または outlook 2010 は、 **uphier**にクライアントの情報を設定します。 これには、[out] パラメーターの初期化が含まれます。 *ient*は0に設定され、アップロードする必要がある階層内のフォルダー数になります。 **  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
+|3.  <br/> |クライアントは、実際の階層をアップロードします。 たとえば、*セント*が10の場合、クライアントは**iostx:: SyncBeg**を呼び出して、フォルダーをアップロードするための適切な状態識別子とデータ構造を指定します。  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
+|4.  <br/> |outlook 2013 または outlook 2010 は、フォルダーのアップロードの理由、folder オブジェクトへのポインター、フォルダーのエントリ ID など、[out] パラメーターを初期化することによって**UPFLD**に設定します。  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
+|5.  <br/> |クライアントは指定されたフォルダーをアップロードします。  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
+|6.  <br/> |クライアントは、フォルダーアップロードの完了をローカルストアに通知します。成功した場合、クライアントは**UPFLD**の [in] パラメーター *ulflags*を**UPF_OK**に設定し、 **iostx:: SetSyncResult (S_OK)** および**iostx:: syncend を呼び出します。**. エラーが発生した場合、クライアントは**UPF_OK**フラグを持つ*ulflags*を設定しません。 **iostx:: SetSyncResult**を呼び出し、 **HRESULT**値を渡して、および**iostx:: syncend**を呼び出します。  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
+|7.  <br/> |**UPF_OK**が設定されている場合、outlook 2013 または outlook 2010 は、フォルダーをアップロードするための内部要求をクリアします。 *ulflags*の状態に関係なく、すべての内部ブック情報がクリーンアップされます。 アップロードする階層にフォルダーがまだ存在してい** ますが、クライアントと outlook ** 2013 または outlook 2010 は、手順3から7を繰り返します。  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |
+|8.  <br/> |クライアントは、階層アップロードの完了をローカルストアに通知します。成功した場合、クライアントは**uphier**で**UPH_OK**を使用して [in] フラグを設定し、 **iostx::: SetSyncResult (S_OK)** と**iostx:: syncend**を呼び出します。 エラー発生時に、クライアントは**UPH_OK**フラグを設定しません。 **iostx:: SetSyncResult**を呼び出し、 **HRESULT**値を渡して、および**iostx:: syncend**を呼び出します。  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
+|9.  <br/> |**UPH_OK**が設定されている場合、outlook 2013 または outlook 2010 は、階層をアップロードするための内部要求をクリアします。 *ulflags*の状態に関係なく、すべての内部ブック情報がクリーンアップされます。  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -91,5 +91,5 @@ ms.locfileid: "22593054"
   
 [MAPI �萔](mapi-constants.md)
   
-[同期状態](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

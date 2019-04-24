@@ -1,32 +1,32 @@
 ---
-title: Outlook の補助リファレンスへようこそ
+title: Outlook 補助リファレンスへようこそ
 manager: soliver
 ms.date: 09/10/2015
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 2e48a625-b3f7-9fd0-253e-fe12a1aca446
-description: Outlook の補助リファレンスには、概念的なコンテンツ、Api、コード サンプル、および開発者を拡張し、Outlook との統合に使用できる再配布可能インストーラーの 4 つのセットのリファレンス ドキュメントが含まれています。 このリファレンスの Api は、機能拡張には、Outlook オブジェクト モデルの外部では、Outlook によって公開されます。
+description: outlook の補助リファレンスには、4つの api セットの概念に関するコンテンツと参照ドキュメント、コードサンプル、および開発者が Outlook を拡張して統合できるようにする再頒布可能なインストーラーが含まれています。 このリファレンスの api は、outlook オブジェクトモデルの外部にある拡張機能のために outlook によって公開されます。
 ms.openlocfilehash: 445d35c12e4c8984d47adcef3ecf50ebd881875b
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328984"
 ---
-# <a name="welcome-to-the-outlook-auxiliary-reference"></a>Outlook の補助リファレンスへようこそ
+# <a name="welcome-to-the-outlook-auxiliary-reference"></a>Outlook 補助リファレンスへようこそ
 
-Outlook の補助リファレンスには、概念的なコンテンツ、Api、コード サンプル、および開発者を拡張し、Outlook との統合に使用できる再配布可能インストーラーの 4 つのセットのリファレンス ドキュメントが含まれています。 このリファレンスの Api は、機能拡張には、Outlook オブジェクト モデルの外部では、Outlook によって公開されます。 
+outlook の補助リファレンスには、4つの api セットの概念に関するコンテンツと参照ドキュメント、コードサンプル、および開発者が Outlook を拡張して統合できるようにする再頒布可能なインストーラーが含まれています。 このリファレンスの api は、outlook オブジェクトモデルの外部にある拡張機能のために outlook によって公開されます。 
   
 Outlook のソリューションを開発するのが初めての場合は、「[Outlook 用のソリューションを開発するための API またはテクノロジの選択](../selecting-an-api-or-technology-for-developing-solutions-for-outlook.md)」を参照し、必要に応じて適切な API とテクノロジを特定します。 
 
-Outlook オブジェクト モデルの詳細については、 [Outlook の VBA リファレンス](https://msdn.microsoft.com/library/75e4ad96-62a2-49d2-bc51-48ceab50634c%28Office.15%29.aspx)を参照してください。 
+outlook オブジェクトモデルの詳細については、「 [outlook VBA リファレンス](https://msdn.microsoft.com/library/75e4ad96-62a2-49d2-bc51-48ceab50634c%28Office.15%29.aspx)」を参照してください。 
 
-固有の情報について Messaging API (MAPI) Outlook でサポートされている[Outlook MAPI のリファレンス](https://msdn.microsoft.com/library/3d980b86-7001-4869-9780-121c6bfc7275%28Office.15%29.aspx)を参照してください。
+outlook でサポートされているメッセージング API (MAPI) の詳細については、「 [outlook mapi リファレンス](https://msdn.microsoft.com/library/3d980b86-7001-4869-9780-121c6bfc7275%28Office.15%29.aspx)」を参照してください。
 
-## <a name="conceptual"></a>概念 
+## <a name="conceptual"></a>概要 
 
-概念の説明には、次の項目が含まれています。
+概念に関する説明には、次の情報が含まれます。
   
 - [スパム対策の設定について](about-anti-spam-settings.md)
     
@@ -38,31 +38,31 @@ Outlook オブジェクト モデルの詳細については、 [Outlook の VBA
     
 - [ユーザー設定アイテム タイプの競合解決について](about-conflict-resolution-for-custom-item-types.md)
     
-- [オフライン アドレス帳の最終更新時について](about-the-last-update-time-of-an-offline-address-book.md)
+- [オフラインアドレス帳の最終更新時刻について](about-the-last-update-time-of-an-offline-address-book.md)
     
 - [自動構成のための新しいドメインの登録について](about-registering-a-new-domain-for-automatic-configuration.md)
     
 - [情報更新および完全な更新としての会議出席依頼について](about-meeting-requests-as-informational-updates-and-full-updates.md)
     
-- [夏時間のプログラムを使用して予定表を再配置について](about-rebasing-calendars-programmatically-for-daylight-saving-time.md)(インストーラーが用意されても、再配布可能なサード ・ パーティの予定表の再配置ツールの以前のバージョンの Outlook にも、Outlook 2010 以降です。 インストーラーをダウンロードするを参照してください[Outlook 2010: 補助型の参照の再頒布可能なインストーラーと再配置の予定表のヘッダー ファイル](https://www.microsoft.com/downloads/details.aspx?FamilyID=77748863-4352-4b99-ae57-1d4ae803983b)。)。
+- [夏時間でプログラムによって予定表を再配置することについて](about-rebasing-calendars-programmatically-for-daylight-saving-time.md)(outlook 2010 以降では、以前のバージョンの outlook にも対応していますが、サードパーティの予定表の再配置ツール用の再頒布可能なインストーラーもあります。 インストーラーをダウンロードするには、「 [Outlook 2010: 補助的な参照の再配置可能インストーラーと、予定表を再配置するためのヘッダーファイル](https://www.microsoft.com/downloads/details.aspx?FamilyID=77748863-4352-4b99-ae57-1d4ae803983b)」を参照してください。
     
-- [バイナリ プロパティにコミットするためにストリームに TZDEFINITION を保持することについて](about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
+- [バイナリ プロパティをストリームに永続化の TZDEFINITION について](about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
 
 ## <a name="reference"></a>リファレンス
 
-参照コンテンツには次のものが含まれています。
+参照コンテンツには、以下が含まれます。
   
-- [Api は、Outlook にエクスポート](about-apis-exported-by-outlook.md)するには、関数とデータ構造を内部で使用して実装されていたと一般的な使用は、今すぐが含まれます。 
+- [Outlook によってエクスポート](about-apis-exported-by-outlook.md)される api には、内部使用のために最初に実装された関数とデータ構造が含まれるようになり、一般に公開されるようになりました。 
     
-- [アカウント管理 API](about-the-account-management-api.md)は、ユーザー アカウント情報およびアカウントの変更の通知へのアクセスを提供します。 
+- [アカウント管理 API](about-the-account-management-api.md)は、アカウントの変更に関するユーザーアカウント情報と通知へのアクセスを提供します。 
     
-- [データ劣化のレイヤーの API](about-the-data-degradation-layer-api.md)は、オブジェクトのネイティブな文字の書式設定よりも優先される文字書式内の Outlook アイテムにアクセスするクライアントをサポートします。 
+- [データ低下層 API](about-the-data-degradation-layer-api.md)は、Outlook アイテムに対して、オブジェクトのネイティブ文字形式ではなく、優先する文字形式でアクセスするクライアントをサポートします。 
     
-- [空き/予約済みの API](about-the-free-busy-api.md)は、特定の時間範囲内の特定のユーザー アカウントの空き時間情報のステータス情報を提供します。 
+- 空き時間情報[API](about-the-free-busy-api.md)は、特定の時間範囲内の特定のユーザーアカウントに関する空き時間情報の状態情報を提供します。 
 
 ## <a name="sample-tasks"></a>サンプル タスク
 
-Outlook 補助リファレンスに関する「方法」タスクの例を以下に示します。
+Outlook の補助リファレンスのサンプルの操作方法は次のとおりです。
     
 - [Outlook アイテムが変更されたが保存されていないかどうかを確認する (Outlook の補助リファレンス)](how-to-determine-if-outlook-item-has-been-modified-but-not-saved.md)
     
@@ -76,9 +76,9 @@ Outlook 補助リファレンスに関する「方法」タスクの例を以下
     
 - [空き時間情報データにアクセスするのに相対時間を使用する](how-to-use-relative-time-to-access-free-busy-data.md)
     
-各 API への参照には、定数、型定義、およびその他の機能を使用する開発者が実装する必要があるインターフェイスが一覧表示されます。
+各 API のリファレンスには、追加機能を使用するために開発者が実装する必要がある定数、型定義、およびインターフェイスが記載されています。
   
 > [!NOTE]
-> 開発者は、このリファレンスに記載されている場合にのみ、これらの Api を実装する必要があります。 特定のインターフェイスのメンバーとメソッドのパラメーターは、事前の通知なく変更される場合は Outlook の内部使用のために予約されているために、プレース ホルダーとして呼ばれます。 
+> 開発者は、このリファレンスで説明されているとおりに、これらの api を実装する必要があります。 特定のインターフェイスメンバーおよびメソッドパラメーターは、Outlook の内部使用のために予約されており、予告なしに変更される可能性があるため、プレースホルダーとして名前が付けられます。 
   
 

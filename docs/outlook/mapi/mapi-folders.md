@@ -8,22 +8,22 @@ api_type:
 - COM
 ms.assetid: 8fac3c92-d2f5-479e-a368-ca82bddd8e30
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 21b738424b27d3d89d8de84c8c9ff2ff86dd945b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6c00dce9ec489ca2b886f3e51551ba57e9eeea33
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331564"
 ---
 # <a name="mapi-folders"></a>MAPI �t�H���_�[
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォルダーは、メッセージを組織の基本単位として機能する MAPI オブジェクトです。 階層的に配置すると、メッセージおよびその他のフォルダー、フォルダーは含むことができます。 フォルダーしやすく検索してメッセージを処理します。
+Folders are MAPI objects that serve as the basic unit of organization for messages. Arranged hierarchically, folders can contain messages and other folders. Folders make it easier to locate and work with messages.
   
-フォルダーは、 [IMAPIContainer](imapicontainerimapiprop.md)を経由して**IUnknown**インターフェイスと[IMAPIProp](imapipropiunknown.md)インターフェイスから直接継承する[IMAPIFolder](imapifolderimapicontainer.md)インターフェイスを実装します。 クライアントは、作成、コピー、およびメッセージとフォルダーを削除するを取得し、メッセージの状態を設定を設定したり、メッセージの読み取りのフラグをオフに**IMAPIFolder**を使用します。 必須メッセージ ストア プロバイダーは、 **IMAPIFolder**内のすべてのメソッドをサポートするために、いくつかの方法を回避する場合は、メッセージ ストア プロバイダーの複雑さのレベルを紹介します。 MAPI では、 [IMAPISupport](imapisupportiunknown.md)インターフェイスでより複雑なフォルダー機能の一部を実装することによりメッセージ ストア プロバイダーによって作業を保存します。 独自のコピー方法を実装するのではなく、メッセージ ストア プロバイダーできますサポート オブジェクトで copy メソッドを呼び出すし、同じ結果を得る。 
+Folders implement the [IMAPIFolder](imapifolderimapicontainer.md) interface, which indirectly inherits from the **IUnknown** interface through the [IMAPIContainer](imapicontainerimapiprop.md) and [IMAPIProp](imapipropiunknown.md) interfaces. Clients use **IMAPIFolder** to create, copy, and delete messages and folders, to retrieve and set message status, and to set or clear the read flag for a message. Although message store providers are required to support all the methods in **IMAPIFolder**, some methods introduce a level of complexity that message store providers might want to avoid. MAPI saves message store providers some work by implementing some of the more complex folder functionality in the [IMAPISupport](imapisupportiunknown.md) interface. Rather than implementing their own copy methods, for example, message store providers can call the copy methods in the support object and get the same results. 
   
 �t�H���_�[�� 3 ��ނ�����܂��B
   
@@ -33,17 +33,17 @@ ms.locfileid: "22564088"
     
 - �t�H���_�[��������܂��B
     
-すべてのメッセージ ストアには、少なくとも、ルート フォルダーがあります。 ルート フォルダーは、階層の上に表示され、メッセージ、およびその他のフォルダーが含まれています。 ルート フォルダーことはできません移動、コピー、名前変更、または削除します。 メッセージ ・ ストアごとに 1 つだけのルート フォルダーがあります。
+Every message store has at least a root folder. The root folder appears at the top of the hierarchy and contains messages and other folders. Root folders cannot be moved, copied, renamed, or deleted. There is only one root folder for each message store.
   
-他のほとんどのフォルダーは、一般的なフォルダーです。 ルートのフォルダーと同様に汎用的なフォルダーには、メッセージ、およびその他のフォルダーが含まれています。 ルートのフォルダーとは異なり、移動、コピー、名前を変更し、削除します。 ルート フォルダーまたはその他の一般的なフォルダーでは、一般的なフォルダーを作成できます。 クライアントは、別のフォルダーに汎用フォルダーを作成するとき、サブフォルダー、または子のフォルダーに新しいフォルダーが呼び出されます。 新しいフォルダーが置かれているフォルダーは、新しいフォルダーの親フォルダーと呼ばれます。 汎用フォルダーが同じ親フォルダーの兄弟フォルダーと呼びます。 兄弟と兄弟ではないフォルダーの両方または可能性がありますしない一意の名前、メッセージによって、プロバイダーを格納します。 メッセージ ストア プロバイダーをクライアントが同じ親の同じ名前の 2 つのフォルダーを作成しようとすると、MAPI_E_COLLISION のエラー値を返す一意の名前を持つ兄弟フォルダーを必要とします。 
+Most other folders are generic folders. Like root folders, generic folders contain messages and other folders. Unlike root folders, they can be moved, copied, renamed, and deleted. Generic folders can be created in the root folder or other generic folders. When a client creates a generic folder in another folder, the new folder is called a subfolder, or child folder. The folder in which the new folder is placed is referred to as the parent folder of the new folder. Generic folders that have the same parent folder are called sibling folders. Both sibling and non-sibling folders may or may not have unique names, depending on the message store provider. Message store providers that require sibling folders to have unique names return the error value MAPI_E_COLLISION when a client attempts to create two folders with the same name in the same parent. 
   
-検索フォルダーには、一連の定義済みの条件に一致するメッセージへのリンクが含まれています。 検索フォルダーには、実際のメッセージではなく、リンクが含まれている、ため有効で、読み取り専用なのでは。 他のフォルダーが含まれているまたはメッセージまたはフォルダーがあることはできませんが移動またはそれらにコピーします。 それで作成された新しいメッセージがあることはできません。自体ことはできません移動、コピー、または名前を変更します。 検索フォルダーからメッセージが削除されると、実際にメッセージを格納するフォルダーから削除されます。
+A search folder contains links to messages that match a set of predefined criteria. Because search folders contain links rather than actual messages, they are in effect read-only. They cannot contain other folders or have messages or folders moved or copied into them. They cannot have new messages created in them; and they themselves cannot be moved, copied, or renamed. When a message is deleted from a search folder, it is actually deleted from the folder that contains the message.
   
-フォルダーの種類は、 **PR_FOLDER_TYPE** ([PidTagFolderType](pidtagfoldertype-canonical-property.md)) のプロパティに格納されます。 すべてのフォルダーには、このプロパティの種類に応じて FOLDER_GENERIC、FOLDER_ROOT、または FOLDER_SEARCH のいずれかに設定があります。
+フォルダーの種類は、 **PR_FOLDER_TYPE** ([PidTagFolderType](pidtagfoldertype-canonical-property.md)) プロパティに格納されます。 すべてのフォルダーの種類に応じて、このプロパティは FOLDER_GENERIC、FOLDER_ROOT、または FOLDER_SEARCH のいずれかに設定されています。
   
-すべてのフォルダーには、1 つのエントリ id と 1 つのレコードのキーがあります。 エントリ、 **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) は、識別子はクライアントとサービス ・ プロバイダーによってフォルダーを開きます。 レコードのキー、 **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) は、他のフォルダーとフォルダーを比較するために使用されるバイナリ値です。 
+すべてのフォルダーには、1つのエントリ id と1つのレコードキーがあります。 エントリ id **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) は、クライアントとサービスプロバイダーがフォルダーを開くために使用します。 record キー **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) は、フォルダーと他のフォルダーを比較するために使用されるバイナリ値です。 
   
-フォルダーには、関連のフォルダーとメッセージ ・ ストアを識別するには、他のプロパティがあります。 次のプロパティは、必要があります。
+フォルダーには、関連するフォルダーとメッセージストアを識別するためのその他のプロパティがあります。 次のプロパティが必要です。
   
 - **PR_PARENT_ENTRYID**([PidTagParentEntryId](pidtagparententryid-canonical-property.md))
     
@@ -51,13 +51,13 @@ ms.locfileid: "22564088"
     
 - **PR_STORE_RECORD_KEY**([PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md))
     
-いくつかのフォルダーは、ユーザーが実行できる操作の種類を記述する ([PidTagAccess](pidtagaccess-canonical-property.md)) である**PR_ACCESS**プロパティをサポートします。 **PR_ACCESS**の有効な設定の 1 つは MAPI_ACCESS_DELETE で、フォルダーを削除できることを示します。 MAPI_ACCESS_MODIFY、別の設定は、フォルダーを変更できる必要があることを示します。 
+一部のフォルダーは、ユーザーが実行できる操作の種類を示す**PR_ACCESS** ([PidTagAccess](pidtagaccess-canonical-property.md)) プロパティをサポートしています。 たとえば、 **PR_ACCESS**の有効な設定の1つは MAPI_ACCESS_DELETE で、これはフォルダーを削除できることを示します。 もう1つの設定 MAPI_ACCESS_MODIFY は、フォルダーが変更可能であることを示します。 
   
-�K�v�ȃt�H���_�[�̃v���p�e�B�̈ꗗ�́A [IMAPIFolder](imapifolderimapicontainer.md)�C���^�[�t�F�C�X��Q�Ƃ��Ă��������B 
+必要なフォルダープロパティの完全な一覧については、 [imapifolder](imapifolderimapicontainer.md)インターフェイスを参照してください。 
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[MAPI �A�v���P�[�V�����̊J��](mapi-application-development.md)
+[MAPI アプリケーションの開発](mapi-application-development.md)
 

@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: 500437a4-e0bc-4368-b572-8aecded2621d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: cf4716bb92f9405986078282510d672e160c5921
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 33c8f1e8b573b5ff0f3d5f53e5b2cf127548688d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331837"
 ---
 # <a name="cbnewflatentry"></a>CbNewFLATENTRY
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-指定したバイトのサイズのエントリ識別子を含む新しい[FLATENTRY](flatentry.md)構造体に割り当てるバイト数を計算します。 
+指定したバイトサイズのエントリ id を含む新しい[FLATENTRY](flatentry.md)構造に割り当てる必要があるバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |**FLATENTRY** <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |**FLATENTRY** <br/> |
    
 ```cpp
 CbNewFLATENTRY (_cb)
@@ -40,7 +40,7 @@ CbNewFLATENTRY (_cb)
 
  __cb_
   
-> 新しい**FLATENTRY**構造体に含まれるエントリの識別子でのバイト数をカウントします。 
+> 新しい**FLATENTRY**構造に含めるエントリ識別子のバイト数。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -49,5 +49,5 @@ CbNewFLATENTRY (_cb)
 [FLATENTRY](flatentry.md)
 
 
-[構造体に関連するマクロ](macros-related-to-structures.md)
+[構造に関連するマクロ](macros-related-to-structures.md)
 

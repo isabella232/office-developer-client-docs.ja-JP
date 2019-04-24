@@ -7,30 +7,30 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3e8cf5a1-31d1-4d69-8db3-511b6880eb89
-description: Outlook ソーシャル コネクタ (OSC) のプロバイダーでは、ソーシャル情報の更新の集計が担当者、ソーシャル ネットワーク サイトに適用されている Office クライアント アプリケーション内で表示するのには Office のユーザーを許可します。
-ms.openlocfilehash: 8a567f6891fbc0812471b81db3ee698dd8a6eb5f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Outlook Social Connector (.osc) プロバイダーを使用すると、office ユーザーは、プロフェッショナルまたはソーシャルネットワークサイトに適用されるソーシャル情報の更新の集計を office クライアントアプリケーション内で表示できます。
+ms.openlocfilehash: 06514937ab07fa78b83a4687eaeba8967213d76c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329140"
 ---
 # <a name="why-develop-an-outlook-social-connector-provider"></a>Outlook Social Connector プロバイダーを開発する理由
 
-Outlook ソーシャル コネクタ (OSC) のプロバイダーでは、ソーシャル情報の更新の集計が担当者、ソーシャル ネットワーク サイトに適用されている Office クライアント アプリケーション内で表示するのには Office のユーザーを許可します。 SharePoint Server、SharePoint ワークスペース、Lync クライアント、およびプレゼンス情報と連絡先カードをサポートするすべての Office クライアント アプリケーションは、OSC をサポートします。
+Outlook Social Connector (.osc) プロバイダーを使用すると、office ユーザーは、プロフェッショナルまたはソーシャルネットワークサイトに適用されるソーシャル情報の更新の集計を office クライアントアプリケーション内で表示できます。 sharepoint Server、sharepoint Workspace、Lync クライアント、およびプレゼンス情報および連絡先カードをサポートするすべての Office クライアントアプリケーションは、.osc をサポートします。
   
-ソーシャル ネットワーク プロバイダーを使用する、OSC 人に関する追加情報連絡先カードまたは表示 Outlook 人物情報ウィンドウ、図 1 に示すように。 OSC が構築されるため、開いているプロバイダー モデルに、Office で (友人、プロファイル、アクティビティ、および関係の情報) などのソーシャル ネットワークのデータを表示するのには OSC を使用するプロバイダーを簡単に構築できます。
+ソーシャルネットワークプロバイダーを使用すると、図1に示すように、連絡先カードまたは Outlook の [ユーザー] ウィンドウに個人に関する追加情報が表示されます。 .osc は、オープンプロバイダモデルに基づいて構築されているため、.osc を使用してソーシャルネットワークデータ (友人、プロファイル、アクティビティ、関係情報など) を Office に表示するためのプロバイダーを構築するのに便利です。
   
-公開のソーシャル ネットワーク サイトとは別の基幹業務アプリケーションや企業の内部の web サイトのプロバイダーを作成して、Office のサービスに統合するに OSC プロバイダーの機能拡張も使用できます。
+パブリックソーシャルネットワークサイトとは別に、.osc プロバイダー拡張機能を使用して、基幹業務アプリケーションまたは社内の企業 web サイトのプロバイダーを構築したり、サービスを Office に統合したりすることもできます。
   
-**図 1 です。Outlook ソーシャル コネクタ ペイン**
+**図1。Outlook Social Connector ウィンドウ**
 
 ![[Outlook Social Connector] ウィンドウ](media/2d6b867f-73d8-4a3b-b8bd-3844bc34bf4e.jpg)
   
 ## <a name="see-also"></a>関連項目
 
-- [プロバイダーを開発する学習のためのクイック ステップ](quick-steps-for-learning-to-develop-a-provider.md)  
+- [プロバイダーを開発するための簡単な手順](quick-steps-for-learning-to-develop-a-provider.md)  
 - [技術的な要件](technical-requirements.md)
-- [OSC サンプル テンプレート](osc-sample-templates.md) 
+- [.osc サンプルテンプレート](osc-sample-templates.md) 
 - [Outlook Social Connector プロバイダーの開発の概要 (英語)(機械翻訳)](getting-started-with-developing-an-outlook-social-connector-provider.md)
 

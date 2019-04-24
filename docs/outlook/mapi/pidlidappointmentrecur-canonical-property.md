@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 56d6240f-d07b-48d1-aef0-bf57078ea6c3
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: de50616664048af6b931a09df7c65461e9ee3399
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25393370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331781"
 ---
 # <a name="pidlidappointmentrecur-canonical-property"></a>PidLidAppointmentRecur 標準プロパティ
 
@@ -25,47 +25,47 @@ ms.locfileid: "25393370"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)で指定されている範囲、定期的なパターンのいずれかを使用して定期的な系列が発生したときの日付と時刻を指定します。
+[[OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)で指定されている定期的なパターンおよび範囲のいずれかを使用して、定期的なアイテムが発生する日付と時刻を指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidApptRecur  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
-|長い ID (LID):  <br/> |0x00008216  <br/> |
+|関連するプロパティ:  <br/> |dispidapptrecur  <br/> |
+|プロパティセット:  <br/> |PSETID_Appointment  <br/> |
+|ロング ID (LID):  <br/> |0x00008216  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |予定表  <br/> |
+|エリア:  <br/> |カレンダー  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティは、一連の定期的な定期的なパターンのいずれかで発生して範囲の詳細な[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)日付と時刻を指定します。 このプロパティの値は、変更と削除の両方の例外に関する情報も含まれています。日付、件名、場所、およびその他のいくつかの例外のプロパティなどの情報。 定期的な予定表アイテムのこのプロパティのバイナリ データは、 **AppointmentRecurrencePattern**構造体として格納されます。 このプロパティは、単一インスタンスの予定表アイテムに存在する必要があります。 
+このプロパティは、定期的なアイテムのパターンと、 [[OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)に詳細が記載されている範囲のいずれかを使用して、定期的なアイテムが発生する日付と時刻を指定します。 このプロパティの値には、変更済みおよび削除済みの両方の例外に関する情報も含まれています。日付、件名、場所など、例外の他のいくつかのプロパティなどの情報。 定期的な予定表アイテムのこのプロパティのバイナリデータは、 **AppointmentRecurrencePattern**構造体として格納されます。 このプロパティは、1つのインスタンスの予定表アイテムに存在してはなりません。 
   
-定期的なアイテムをいくつかの制限があります。
+次のようないくつかの制限があります。
   
-- 複数のインスタンスは、同じ日に開始する必要がありますできません。
+- 複数のインスタンスを同じ日に開始することはできません。
     
-- 出現回数が重複する必要があります。 具体的には、以前のインスタンスの末尾と次の定期的な系列のインスタンスの開始後の日付に定期的な系列のインスタンスの開始日を変更するの例外が発生する必要があります。 定期的な系列の前または次のインスタンスが例外の場合も同様です。
+- オカレンスは重複してはなりません。 具体的には、定期的なアイテムのインスタンスの開始日を変更する例外として、前のインスタンスが終了してから、定期的なアイテムの次のインスタンスの開始までの間に発生する必要があります。 定期的なアイテムの前または次のインスタンスが例外である場合も同様です。
     
-一連の定期的なスケジュールは、その定期的なパターンと範囲が決定されます。
+定期的なアイテムのスケジュールは、定期的なパターンと範囲によって決まります。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
+> 予定、会議出席依頼、および応答メッセージのプロパティと操作を指定します。
     
-[[MS OXORMDR]](https://msdn.microsoft.com/library/5454ebcc-e5d1-4da8-a598-d393b101caab%28Office.15%29.aspx)
+[[OXORMDR]](https://msdn.microsoft.com/library/5454ebcc-e5d1-4da8-a598-d393b101caab%28Office.15%29.aspx)
   
-> 電子メールおよびその他のオブジェクトのアラームの操作モデルのプロパティを指定します。
+> 電子メールおよびその他のオブジェクトの事前通知のプロパティと相互作用モデルを指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -73,9 +73,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

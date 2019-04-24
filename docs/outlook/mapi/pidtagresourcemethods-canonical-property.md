@@ -12,79 +12,79 @@ api_type:
 - COM
 ms.assetid: 60ebbcd5-b758-4c96-b8ec-089e0aae1a5f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2e1cff8148815c3e03b92e4d57d1c6a303943c9c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e9aee3280edbed60e97ef6e00e61f3086f6f07ce
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32330143"
 ---
 # <a name="pidtagresourcemethods-canonical-property"></a>PidTagResourceMethods 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-**IMAPIStatus**インタ フェース内の状態のオブジェクトでサポートされているメソッドを示すフラグのビットマスクを格納します。 
+状態オブジェクトでサポートされている**imapistatus**インターフェイスのメソッドを示すフラグのビットマスクを含みます。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_RESOURCE_METHODS  <br/> |
-|識別子:  <br/> |0x3E02  <br/> |
+|識別子:  <br/> |0x3e02  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |MAPI のステータス  <br/> |
+|エリア:  <br/> |MAPI の状態  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティは、サポート対象の**IMAPIStatus**の実装では、状態オブジェクトのメソッドを示します。 状態オブジェクトは、サポートされていないメソッドから MAPI_E_NO_SUPPORT を返すことができます。 
+このプロパティは、ステータスオブジェクトの**imapistatus**の実装のどのメソッドがサポートされているかを示します。 Status オブジェクトは、サポートされていないメソッドから MAPI_E_NO_SUPPORT を返すことができます。 
   
-クライアントは、サポートされていないメソッドの呼び出しを避けるために、状態オブジェクトの**PR_RESOURCE_METHODS**プロパティを使用します。 特定のメソッドに対応するフラグが設定されている場合、メソッドが存在し、呼び出すことができます。 このフラグがオフの場合は、このメソッドは呼び出さないでください。 
+クライアントは、ステータスオブジェクトの**PR_RESOURCE_METHODS**プロパティを使用して、サポートされていないメソッドを呼び出すことを回避します。 特定のメソッドに対応するフラグが設定されている場合、メソッドが存在し、呼び出すことができます。 このフラグがオフの場合は、メソッドを呼び出すことはできません。 
   
-状態オブジェクトは、MAPI のサポートで次のメソッドを実装しました。
+MAPI によって実装される状態オブジェクトは、次の方法をサポートします。
   
-|**ステータス オブジェクト**|**サポートされている方法**|
+|**Status オブジェクト**|**サポートされているメソッド**|
 |:-----|:-----|
-|MAPI サブシステム  <br/> |**ValidateState**のみ  <br/> |
-|MAPI アドレス帳  <br/> |**ValidateState**のみ  <br/> |
-|MAPI スプーラー  <br/> |**ValidateState**と**FlushQueues** <br/> |
+|MAPI サブシステム  <br/> |**validatestate**のみ  <br/> |
+|MAPI アドレス帳  <br/> |**validatestate**のみ  <br/> |
+|MAPI スプーラー  <br/> |**validatestate**および**flushqueues** <br/> |
    
-**PR_RESOURCE_METHODS**では、次のフラグの 1 つ以上を設定できます。
+**PR_RESOURCE_METHODS**では、次のフラグのうち1つ以上を設定できます。
   
 STATUS_CHANGE_PASSWORD 
   
-> [IMAPIStatus::ChangePassword](imapistatus-changepassword.md)メソッドがサポートされていることを示します。 
+> [imapistatus:: ChangePassword](imapistatus-changepassword.md)メソッドがサポートされていることを示します。 
     
 STATUS_FLUSH_QUEUES 
   
-> [IMAPIStatus::FlushQueues](imapistatus-flushqueues.md)メソッドがサポートされていることを示します。 
+> [imapistatus:: flushqueues](imapistatus-flushqueues.md)メソッドがサポートされていることを示します。 
     
 STATUS_SETTINGS_DIALOG 
   
-> [IMAPIStatus::SettingsDialog](imapistatus-settingsdialog.md)メソッドがサポートされていることを示します。 
+> [imapistatus:: settingsdialog](imapistatus-settingsdialog.md)メソッドがサポートされていることを示します。 
     
 STATUS_VALIDATE_STATE 
   
-> [IMAPIStatus::ValidateState](imapistatus-validatestate.md)メソッドがサポートされていることを示します。 
+> [imapistatus:: validatestate](imapistatus-validatestate.md)メソッドがサポートされていることを示します。 
     
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -1,5 +1,5 @@
 ---
-title: フォームのプロパティ セットを選択します。
+title: フォームのプロパティ セットの選択
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,36 +7,36 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 5680fed2-b2e7-4c4b-9ba8-2c497b9c433c
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 0ff8d9f1ae25c55d66847b8c0e5e66c406dfdfba
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: d983b71c7c92c395740a8ae6f6d3666a8bc2c0c7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332061"
 ---
-# <a name="choosing-a-forms-property-set"></a>フォームのプロパティ セットを選択します。
+# <a name="choosing-a-forms-property-set"></a>フォームのプロパティ セットの選択
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォーム サーバーを実装する場合は、個々 のメッセージ クラスに必要な情報のプロパティを持つ必要があります。 これらのプロパティは、MAPI のプロパティ、定義済みまたはカスタム プロパティを定義することができます。 プロパティの使用についての詳細については、 [MAPI プロパティの概要](mapi-property-overview.md)を参照してください。
+フォームサーバーを実装するときは、メッセージクラスに必要な情報の各要素にプロパティを設定する必要があります。 これらのプロパティは、定義済みの MAPI プロパティにすることも、定義するカスタムプロパティにすることもできます。 プロパティの使用の詳細については、「 [MAPI プロパティの概要](mapi-property-overview.md)」を参照してください。
   
-フォーム構成ファイルには、クライアント アプリケーションが使用するため、フォームのサーバーを公開するプロパティの一覧が含まれているが、全体、フォームのサーバーで使用されるプロパティの一覧にこれがありません。 通常、クライアント アプリケーションは、フォルダー内のメッセージを並べ替える、または何らかの方法では、そのインターフェイスをカスタマイズするのにユーザーを有効にするのに公開されたプロパティを使用します。
+フォーム構成ファイルには、フォームサーバーがクライアントアプリケーションで公開するプロパティのリストが含まれていますが、これはフォームサーバーで使用されるプロパティのリスト全体である必要はありません。 通常、クライアントアプリケーションは公開されているプロパティを使用して、ユーザーがフォルダー内のメッセージを並べ替えたり、何らかの方法でインターフェイスをカスタマイズしたりできるようにします。
   
-MAPI には、ほとんどのアプリケーションで十分に定義済みのプロパティの大規模なセットがあります。 ただし、カスタム メッセージ クラスが MAPI が定義されていないプロパティをどのようにしなければならない場合があります。 カスタム プロパティを使用するには、フォーム サーバーがサポートするのに必要が特別な情報をすべてのプロパティの定義済みの MAPI のセットを拡張します。
+MAPI には、ほとんどのアプリケーションに十分な、定義済みのプロパティセットが多数あります。 ただし、カスタムメッセージクラスに MAPI で定義されていないプロパティが必要になる場合もあります。 カスタムプロパティを使用して、フォームサーバーがサポートする必要のある特別な情報について、MAPI で事前定義されたプロパティのセットを拡張できます。
   
-カスタム プロパティを定義するのには次の方法のいずれかを使用することができます。
+カスタムプロパティを定義するには、次のいずれかの方法を使用できます。
   
-- プロパティの名前を選択し、 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)メソッドを使用して、プロパティ タグを取得します。 [IMAPIProp](imapipropiunknown.md)インターフェイスを使用するには、このメソッドを呼び出してメッセージを作成するときにフォームのサーバーに渡される[IMessage](imessageimapiprop.md)ポインターに由来します。 プロパティ名は、ワイド文字の文字列である必要があります注意してください。 
+- プロパティの名前を選択し、 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)メソッドを使用して、プロパティタグを取得します。 このメソッドを呼び出す[imapiprop](imapipropiunknown.md)インターフェイスは、メッセージが作成されたときにフォームサーバーに渡される[IMessage](imessageimapiprop.md)ポインターから取得します。 プロパティ名はワイド文字文字列である必要があることに注意してください。 
     
-- カスタム プロパティ タグを自分で定義します。 カスタム プロパティ タグは、0x7BFF から 0x6800 の範囲でなければなりません。 メッセージ クラスは、この範囲のプロパティを特定します。
+- カスタムプロパティタグを自分で定義します。 カスタムプロパティタグは、範囲0x6800 から0x7bff にする必要があります。 この範囲のプロパティは、メッセージクラスに固有のものです。
     
-カスタム プロパティを定義する方法の詳細については、[新しい MAPI プロパティを定義する](defining-new-mapi-properties.md)を参照してください。
+カスタムプロパティの定義の詳細については、「[新しい MAPI プロパティの定義](defining-new-mapi-properties.md)」を参照してください。
   
 > [!NOTE]
-> 多くの場合、メッセージ テキストを持つフォームのサーバーでは、そこに格納するのに ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) である**PR_RTF_COMPRESSED**プロパティを使用します。 フォーム サーバーは、 **PR_RTF_COMPRESSED**を使用する場合にも確認してください ([PidTagBody](pidtagbody-canonical-property.md)) である**PR_BODY**プロパティにメッセージのテキストのテキストのみのバージョンが含まれている結果のメッセージがリッチ テキストをサポートしていないクライアントによって読み取られた場合にテキスト形 (式 RTF) メッセージのテキストです。 
+> メッセージテキストを持つフォームサーバーは、通常、 **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) プロパティを使用して格納します。 フォームサーバーで**PR_RTF_COMPRESSED**を使用する場合は、リッチテキストをサポートしていないクライアントによってメッセージが読み取られた場合に備えて、 **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) プロパティにメッセージテキストのテキストのみのバージョンが含まれていることを確認する必要があります。Format (RTF) メッセージテキスト。 
   
 ## <a name="see-also"></a>関連項目
 
-- [MAPI フォーム サーバーの開発](developing-mapi-form-servers.md)
+- [MAPI フォームサーバーの開発](developing-mapi-form-servers.md)
 

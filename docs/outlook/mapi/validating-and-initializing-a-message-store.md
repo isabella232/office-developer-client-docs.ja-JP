@@ -1,5 +1,5 @@
 ---
-title: メッセージ ストアの検証と初期化
+title: メッセージストアの検証と初期化
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,52 +7,52 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 74f0a1fe-2a79-4b32-ab88-85a8839a2639
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 7a5a5045594e87953d967fddbdeefd5ac18c8a3d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 77b3f707fc36a868de5acd7c7ba4642a1da4e3c9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329583"
 ---
-# <a name="validating-and-initializing-a-message-store"></a>メッセージ ストアの検証と初期化
+# <a name="validating-and-initializing-a-message-store"></a>メッセージストアの検証と初期化
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MDB_NO_MAIL フラグを設定せずには、 [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md)メソッドで、メッセージ ストアを開く、MAPI はいくつかのフォルダーを作成し、それらに既定の名前とロールを割り当てます。 MAPI は、クライアントまたはメッセージ ストア プロバイダーの作成を担当する場合としない発生する必然的に非互換性を避けるためにこれらのフォルダーを作成する必要があります。 
+MDB_NO_MAIL フラグを設定せずに[imapisession:: openmsgstore](imapisession-openmsgstore.md)メソッドを使用してメッセージストアを開くと、MAPI によって複数のフォルダーが作成され、それらに既定の名前と役割が割り当てられます。 MAPI は、クライアントまたはメッセージストアプロバイダーのいずれかが作成を担当した場合に必然的に発生する非互換性を回避するために、これらのフォルダーを作成する責任があります。 
   
-適切なフォルダーが作成されていると、有効であることを確認する必要があります。 [HrValidateIPMSubtree](hrvalidateipmsubtree.md)関数は、この目的のために使用できます。 既定のメッセージ ストアを検査する場合は、MAPI_FULL_IPM_TREE フラグを渡します。 フォルダーのより広範なグループは、既定のメッセージ ストアに作成されます。 **HrValidateIPMSubtree**は、MAPI_FULL_IPM_TREE フラグを受信すると、次のフォルダーをチェックします。 
+適切なフォルダーが作成され、それらが有効であることを確認する必要がある場合があります。 このためには、 [hrvalidateipmsubtree](hrvalidateipmsubtree.md)関数を使用できます。 既定のメッセージストアを検証する場合は、MAPI_FULL_IPM_TREE フラグを渡します。 既定のメッセージストア用に、より広範なフォルダーのグループが作成されます。 **hrvalidateipmsubtree**が MAPI_FULL_IPM_TREE フラグを受け取ると、次のフォルダーがあるかどうかがチェックされます。 
   
-- IPM サブツリーのルート フォルダー
+- IPM サブツリーのルートフォルダー
     
-- IPM のルート フォルダー内の削除済みアイテム フォルダー
+- IPM ルートフォルダーの削除済みアイテムフォルダー
     
-- IPM ルート フォルダー内の [受信トレイ] フォルダー
+- IPM ルートフォルダーの受信トレイフォルダー
     
-- IPM のルート フォルダー内のフォルダーを [送信トレイ] します。
+- IPM ルートフォルダーの送信トレイフォルダー
     
-- IPM のルート フォルダー内のアイテム] フォルダーの送信
+- [送信済みアイテム] フォルダー (IPM ルートフォルダー内)
     
-- メッセージ ストアのルート フォルダーにフォルダーの表示
+- メッセージストアのルートフォルダー内のフォルダービュー
     
-- メッセージ ストアのルート フォルダー内の共通のビュー
+- メッセージストアのルートフォルダー内の共通ビュー
     
-- メッセージ ストアのルート フォルダーにフォルダーを検索
+- メッセージストアのルートフォルダー内の検索フォルダー
     
-メッセージ ・ ストアが既定値でない場合は、設定か、MAPI_FULL_IPM_TREE フラグが設定されていません。 このフラグが設定されていない場合、 **HrValidateIPMSubtree**が、サブツリーのルート フォルダーだけをチェック、削除済みアイテム フォルダー、およびメッセージのルート フォルダーは、検索結果を格納します。 
+メッセージストアが既定ではない場合は、MAPI_FULL_IPM_TREE フラグを設定するかどうかを設定できます。 このフラグが設定されていない場合、 **hrvalidateipmsubtree**はサブツリーのルートフォルダー、削除済みアイテムフォルダー、およびメッセージストア検索結果のルートフォルダーだけをチェックします。 
   
-メッセージ ストアを初期化するためにすぐに利用できるように、次のプロパティをメモリに格納します。
+メッセージストアを初期化するには、次のプロパティをメモリに格納して、簡単に使用できるようにします。
   
 - **PR_VALID_FOLDER_MASK**([PidTagValidFolderMask](pidtagvalidfoldermask-canonical-property.md))
     
 - **PR_STORE_SUPPORT_MASK**([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))
     
-これらのプロパティは、メッセージ ・ ストアの機能を記述するビットマスクです。 **PR_VALID_FOLDER_MASK**では、1 ビットがメッセージ ・ ストアに存在し、有効なエントリが割り当てられている識別子を持つすべての特別なフォルダーの設定があります。 これらのフォルダーおよびそれらのエントリの識別子へのアクセスの詳細については、[メッセージ ストアのフォルダーを開く](opening-a-message-store-folder.md)を参照してください。 
+これらのプロパティは、メッセージストアの機能を記述するビットマスクです。 **PR_VALID_FOLDER_MASK**には、メッセージストアに存在し、有効なエントリ識別子が割り当てられているすべての特別なフォルダーに対して1ビットが設定されています。 これらのフォルダーおよびそのエントリ識別子へのアクセスの詳細については、「[メッセージストアフォルダーを開く](opening-a-message-store-folder.md)」を参照してください。 
   
- **PR_STORE_SUPPORT_MASK**では、1 ビットがメッセージ ・ ストアでサポートされているすべての機能の設定があります。 たとえば、メッセージ ・ ストアでは、通知、および書式設定されたテキストをサポートする場合、 **PR_STORE_SUPPORT_MASK**は、STORE_NOTIFY_OK と STORE_RTF_OK のビットを設定があります。 
+ **PR_STORE_SUPPORT_MASK**には、メッセージストアでサポートされているすべての機能に対して1ビットが設定されています。 たとえば、メッセージストアが通知と書式設定されたテキストをサポートしている場合、その**PR_STORE_SUPPORT_MASK**には STORE_NOTIFY_OK と STORE_RTF_OK のビットが設定されます。 
   
-ローカルに格納する必要があるその他のプロパティには、 **PR_VALID_FOLDER_MASK**プロパティを有効なものとして説明するフォルダーのエントリ id が含まれます。 受信トレイ] フォルダー以外のこれらの特別なフォルダーには、それに関連するエントリの識別子プロパティがあります。 たとえば、[送信トレイ] フォルダーのエントリ id は、その**PR_IPM_OUTBOX_ENTRYID** ([PidTagIpmOutboxEntryId](pidtagipmoutboxentryid-canonical-property.md)) のプロパティです。 これらのフォルダーが頻繁に開かれるフォルダーであるためが、エントリ id をすぐに利用することをお勧めします。
+ローカルに格納する必要があるその他のプロパティには、 **PR_VALID_FOLDER_MASK**プロパティが有効として記述するフォルダーのエントリ識別子があります。 受信トレイフォルダー以外の各特別なフォルダーには、エントリ識別子プロパティが関連付けられています。 たとえば、送信トレイフォルダーのエントリ識別子は、 **PR_IPM_OUTBOX_ENTRYID** ([PidTagIpmOutboxEntryId](pidtagipmoutboxentryid-canonical-property.md)) プロパティです。 これらのフォルダーは頻繁に開かれるフォルダーなので、エントリ識別子をすぐに使用できるようにすることをお勧めします。
   
 

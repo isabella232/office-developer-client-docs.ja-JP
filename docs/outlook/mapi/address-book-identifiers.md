@@ -7,54 +7,54 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 40f6c699-86aa-4324-a30d-12c8f1e2de9c
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f9ba7a2a0752dea353e914aaa14a09046b993e5f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 822d83c4b77d06c2e000b391c7e229985470ccd3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331095"
 ---
 # <a name="address-book-identifiers"></a>アドレス帳の識別子
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-すべてのアドレス帳プロバイダーは、メッセージングのユーザーと配布リスト オブジェクトを**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティを使用してエントリの識別子を割り当てます。 クライアント アプリケーションでは、これらのエントリの識別子を使用して、開き、それらが割り当てられているオブジェクトにアクセスします。
+すべてのアドレス帳プロバイダーは、 **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティを使用して、メッセージングユーザーおよび配布リストオブジェクトにエントリ識別子を割り当てます。 クライアントアプリケーションは、これらのエントリ識別子を使用して、割り当てられているオブジェクトを開いてアクセスします。
   
-アドレス帳を使用して他の 3 つの種類の識別子オブジェクトを表します。
+アドレス帳は、次の3種類の識別子を使用してオブジェクトを表します。
   
-- 一時エントリ id
+- 一時エントリ識別子
     
-- エントリの識別子を 1 回限りのテンプレート
+- 1回限りのテンプレートエントリ識別子
     
 - テンプレート識別子
     
-エントリの識別子は、その名前が類似の多様性は、各タイプの使用方法と作成方法がわからなくなりがちです。 
+さまざまなエントリ識別子と、それらに関連する類似性があるため、それぞれの種類がどのように使用され、作成されるかについて、簡単に混乱する可能性があります。 
   
-一時エントリの識別子を開くし、one-off と呼ばれる受信者やカスタム受信者の種類にアクセスするために使用するエントリの識別子です。 一時アドレスは、プロファイル内のアドレス帳プロバイダーのいずれかに属していない受信者です。 一時アドレスに割り当てられているエントリの識別子は、一時受信者の具体的には予約済みの形式を使用します。 一時エントリ id を開き、オブジェクトへのアクセスに使用するため、PR_ENTRYID プロパティに格納されます。
+1回限りのエントリ識別子は、1回限りの受信者またはカスタム受信者として知られる受信者の種類を開いてアクセスするために使用されるエントリ識別子です。 1回限りは、プロファイル内のどのアドレス帳プロバイダーにも属していない受信者です。 1回限りのエントリ識別子は、1回限りの受信者に対して明示的に予約された形式を使用します。 一時エントリ識別子は、オブジェクトを開いてアクセスするために使用されるため、PR_ENTRYID プロパティに格納されます。
   
-一時アドレスと 1 回限りのエントリの識別子が作成されます。
+1回限りの、または1回限りのエントリ識別子が作成されます。
   
-- クライアント アプリケーションのユーザーは、メッセージの受信者リストにアドレス帳のエントリを表していない受信者を追加できます。
+- クライアントアプリケーションのユーザーが、アドレス帳のエントリを表さない受信者を、メッセージの受信者リストに追加することを選択した場合。
     
-- クライアント アプリケーションのユーザーは、変更可能なアドレス帳コンテナーに、アドレス帳のエントリを表していない受信者を追加できます。
+- クライアントアプリケーションのユーザーが、アドレス帳のエントリを表さない受信者を、変更可能なアドレス帳コンテナーに追加することを選択した場合。
     
-- トランスポート プロバイダーは、関連するアドレス帳プロバイダーによっては処理できないアドレスを使用してメッセージを受け取ります。
+- トランスポートプロバイダーは、関連するアドレス帳プロバイダーでは処理できないアドレスを持つメッセージを受信します。
     
-- トランスポート プロバイダーは、ゲートウェイが所属するアドレスを使用してメッセージを受け取ります。
+- ゲートウェイに属するアドレスを持つメッセージをトランスポートプロバイダーが受信したとき。
     
-最初の 2 つの状況では、クライアントは、新しく作成された受信者が一時、一時エントリ id に関連付けるには、 **IAddrBook::CreateOneOff**を呼び出します。 2 つ目は 2 つの状況では、トランスポート プロバイダーは、外部アドレスを使用して 1 回限りのエントリの識別子を関連付けるには、 **IMAPISupport::CreateOneOff**を呼び出します。 詳細については、 [IAddrBook::CreateOneOff](iaddrbook-createoneoff.md)および[IMAPISupport::CreateOneOff](imapisupport-createoneoff.md)を参照してください。
+最初の2つの状況で、クライアントは**IAddrBook:: createoneoff**を呼び出して、1回限りのエントリ識別子を新しく作成した受信者に関連付けます。 2番目の2つの状況では、トランスポートプロバイダーは**imapisupport:: createoneoff**を呼び出して、1回限りのエントリ識別子を外部アドレスに関連付けます。 詳細については、「 [IAddrBook:: createoneoff](iaddrbook-createoneoff.md) 」および「 [imapisupport:: createoneoff](imapisupport-createoneoff.md)」を参照してください。
   
-1 回限りのテンプレートのエントリ id を開くし、一時アドレスを作成するためのテンプレートにアクセスするために使用する短期的なエントリ id です。 アドレス帳プロバイダーと MAPI の両方は、特定の種類の受信者を作成するために必要な情報を入力するためのテンプレートを指定します。 一時テーブルでは、それらのエントリの識別子を含む、これらのテンプレートについての情報が発行されます。 MAPI は、 **IABLogon::GetOneOffTable**メソッドまたは**PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) を要求するためのアドレス帳コンテナーの**IMAPIProp::OpenProperty**メソッドを呼び出すと、一時テーブルが表示されます。プロパティまたはプロバイダーが**IMAPISupport::GetOneOffTable**を呼び出すとします。 詳細については、 [IABLogon::GetOneOffTable](iablogon-getoneofftable.md)、 [IMAPIProp::OpenProperty](imapiprop-openproperty.md)、および[IMAPISupport::GetOneOffTable](imapisupport-getoneofftable.md)を参照してください。
+1回限りのテンプレートエントリ識別子は、一時的なエントリ識別子です。これを使用して、1回の一時ファイルを作成するためのテンプレートを開いたり、テンプレートにアクセスしたりできます。 特定の種類の受信者を作成するために必要な情報を入力するためのアドレス帳プロバイダーと MAPI 提供テンプレートの両方。 これらのテンプレートに関する情報 (エントリ識別子を含む) は、1回限りのテーブルで公開されます。 MAPI が**IABLogon:: getoneofftable**メソッドまたはアドレス帳コンテナーの**imapiprop:: openproperty**メソッドを呼び出して、 **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) を要求すると、1回限りのテーブルが表示されます。プロパティ、またはプロバイダーが**imapisupport:: getoneofftable**を呼び出すとき。 詳細については、「 [IABLogon:: getoneofftable](iablogon-getoneofftable.md)」、「 [imapiprop:: openproperty](imapiprop-openproperty.md)」、および「 [imapi support:: getoneofftable](imapisupport-getoneofftable.md)」を参照してください。
   
-新しい one-off を作成するには、ユーザーは、1 回限りの表に記載されているテンプレートのいずれかを選択します。 クライアントは、 _lpEIDNewEntryTpl_パラメーターで**IAddrBook::NewEntry**を選択したテンプレートのテンプレートを 1 回限りのエントリ id には、選択した行から PR_ENTRYID 列を渡します。 詳細については、 [IAddrBook::NewEntry](iaddrbook-newentry.md)を参照してください。 MAPI は、テンプレートを表示して、受信者を作成するために必要な情報を入力するユーザーを許可するのには、1 回限りのテンプレートのエントリ id を使用します。 
+新しい1回限りのテンプレートを作成するには、1回限りのテーブルにリストされているテンプレートの1つを選択します。 クライアントは、選択されている行から PR_ENTRYID 列を渡します。これは、選択したテンプレートの1回限りのテンプレートエントリ id であり、 _lpeidnewentrytpl_パラメーターの**IAddrBook:: newentry**になります。 詳細については、「 [IAddrBook:: newentry](iaddrbook-newentry.md)」を参照してください。 MAPI では、1回限りのテンプレートエントリ識別子を使用してテンプレートが表示され、ユーザーは受信者の作成に必要な情報を入力できるようになります。 
   
-テンプレート識別子は、いくつかのアドレス帳プロバイダーは、PR_ENTRYID プロパティを保持するエントリの識別子だけでなく、受信者に割り当てるエントリ識別子です。 プロバイダーでは、そのテンプレートの識別子を格納するのには受信者の**PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) のプロパティを設定します。 アドレス帳のプロバイダーによっては、受信者のテンプレートの識別子とエントリの識別子のプロパティに対して同じ値を割り当てます。
+テンプレート識別子は、PR_ENTRYID プロパティに格納されているエントリ識別子に加えて、アドレス帳プロバイダーが受信者に割り当てるエントリ識別子です。 プロバイダーは、テンプレート識別子を格納するために受信者の**PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) プロパティを設定します。 アドレス帳プロバイダーによっては、受信者のテンプレート識別子プロパティとエントリ id プロパティに同じ値が割り当てられます。
   
-テンプレート識別子と MAPI アドレス帳プロバイダーによってのみ 1 つのプロバイダーに受信者のデータをバインドするために使用、別のプロバイダーに受信者のコードに、ホスト プロバイダーと呼ばれることは、外部のプロバイダーと呼ばれます。 ホスト プロバイダーは、受信者のストレージを提供します。外部のプロバイダーでは、ロジックを提供します。 バインド処理では、外部プロバイダーのコードを使用して格納する受信者のデータを更新するホスト プロバイダーを使用できます。
+テンプレート識別子は、アドレス帳プロバイダーと MAPI によってのみ使用されます。ホストプロバイダーと呼ばれる1つのプロバイダーの受信者のデータを、別のプロバイダーの受信者のコードにバインドするには、外部プロバイダーと呼ばれます。 ホストプロバイダーは、受信者のストレージを提供します。外部プロバイダーがロジックを提供します。 バインドプロセスにより、ホストプロバイダーは、外部プロバイダーのコードを使用して格納される受信者のデータを更新できます。
   
-ホスト プロバイダーは、その受信者を変更する準備が、バインド処理を開始するには、 **IMAPISupport::OpenTemplateID**メソッドを呼び出すに PR_TEMPLATEID プロパティが渡されます。 MAPI では、テンプレートの識別子を**IABLogon::OpenTemplateID**メソッドを呼び出すことによって外部の適切なプロバイダーに転送するプロセスを続行します。 詳細については、 [IMAPISupport::OpenTemplateID](imapisupport-opentemplateid.md)および[IABLogon::OpenTemplateID](iablogon-opentemplateid.md)を参照してください。 外部のプロバイダーは、ホスト プロバイダーが独自の実装の代わりに使用できる受信者の**IMAPIProp**実装へのポインターを返します。 
+ホストプロバイダーが受信者を変更する準備ができたら、PR_TEMPLATEID プロパティを**imapisupport:: OpenTemplateID**メソッドの呼び出しで渡して、バインドプロセスを開始します。 MAPI では、 **IABLogon:: OpenTemplateID**メソッドへの呼び出しによって、テンプレート識別子を適切な外部プロバイダーに転送することによって、プロセスを続行します。 詳細については、「 [imapisupport:: OpenTemplateID](imapisupport-opentemplateid.md) and [IABLogon:: OpenTemplateID](iablogon-opentemplateid.md)」を参照してください。 外部プロバイダーは、受信者の**imapiprop**実装へのポインターを返します。これはホストプロバイダーが独自の実装の代わりに使用できます。 
   
 

@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f7fcb385-186d-d5fe-7104-fe0af09d5768
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b2523c149d98dacf9ad321a4a443382a39753fd5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: d0b440f01aad7078ed76cd37d36c5ad506215438
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329709"
 ---
 # <a name="uptble"></a>UPTBLE
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[テーブルの状態をアップロード](upload-table-state.md)する時にフォルダーの内容をアップロードするための情報を拡張します。
+[テーブルのアップロード状態](upload-table-state.md)中にフォルダーのコンテンツをアップロードするための拡張情報。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -35,35 +35,35 @@ struct UPTBLE
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
- _iEntMod_
+ _ientmod_
   
->  [out]新しいまたは変更されたアイテムの数の_cEntMod_のアップロードを追跡するためにインデックスを作成します。 
+>  読み上げ_cEntMod_数の新規または変更されたアイテムのアップロードを追跡するインデックス。 
     
  _cEntMod_
   
->  [out]フォルダー内の新規または変更されたアイテムの数です。 
+>  読み上げフォルダー内の新規または変更されたアイテムの数。 
     
- _iEntRead_
+ _ientread_
   
->  [out]_CEntRead_アイテムの読み取りの数をアップロードするかを追跡するためにインデックスを作成します。 
+>  読み上げ_cEntRead_の読み取りアイテム数のアップロードを追跡するインデックス。 
     
  _cEntRead_
   
->  [out]フォルダー内のアイテムの読み取りの数です。 
+>  読み上げフォルダー内の読み取り済みアイテムの数。 
     
- _iEntDel_
+ _ientdel_
   
->  [out]アップロード_cEntDel_の数を追跡するためにインデックスには、項目が削除されます。 
+>  読み上げ_cEntDel_の削除済みアイテムの数をアップロードする追跡対象のインデックス。 
     
  _cEntDel_
   
->  [out]フォルダー内の削除済みアイテムの数です。 
+>  読み上げフォルダー内の削除済みアイテムの数。 
     
 ## <a name="see-also"></a>関連項目
 
 - [レプリケーション API について](about-the-replication-api.md) 
-- [レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
+- [レプリケーション状態のマシンについて](about-the-replication-state-machine.md)
 - [UPTBL](uptbl.md)
 

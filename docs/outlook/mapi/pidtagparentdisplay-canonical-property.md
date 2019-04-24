@@ -12,53 +12,53 @@ api_type:
 - COM
 ms.assetid: 6a36f4fb-17c0-4271-87d4-a92895f35f23
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 910a62a660ea17992aa391d7453919d9fbb53c86
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7aef4c1d83672033662502ad0950b7bac9f58c52
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331515"
 ---
 # <a name="pidtagparentdisplay-canonical-property"></a>PidTagParentDisplay 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-検索時にメッセージがあるフォルダーの表示名が含まれています。
+検索中にメッセージが見つかったフォルダーの表示名が含まれます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_PARENT_DISPLAY、PR_PARENT_DISPLAY_A、PR_PARENT_DISPLAY_W  <br/> |
-|識別子:  <br/> |0x0E05  <br/> |
+|識別子:  <br/> |0x0e05  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |MAPI 以外から送信できます。  <br/> |
+|エリア:  <br/> |MAPI ノンノンアウトテーブル  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-これらのプロパティは、任意のオブジェクトではありません。 のみ検索結果フォルダーの内容の表に表示されることができます。
+これらのプロパティは、オブジェクトには含まれていません。 検索結果フォルダーの contents テーブルにのみ表示できます。
   
-これらのプロパティおよびプロパティの**PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md)) は、互いに関係ありません。 まったく異なるコンテキストに属しているとします。
+これらのプロパティと**PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md)) プロパティは相互に関連していません。 これらは完全に異なるコンテキストに属します。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

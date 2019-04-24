@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 30d23c19-e0da-4511-9361-761153259216
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 14bb31ae9aebbb6441948b5756b426508107c9f0
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25394903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331403"
 ---
 # <a name="pidtagresolvemethod-canonical-property"></a>PidTagResolveMethod 標準プロパティ
 
@@ -25,56 +25,56 @@ ms.locfileid: "25394903"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォルダーの競合の解像度の値が含まれています。
+フォルダーの競合の解決の値が含まれています。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_RESOLVE_METHOD  <br/> |
-|識別子:  <br/> |0x3FE7  <br/> |
+|識別子:  <br/> |0x3fe7  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |MAPI のステータス  <br/> |
+|エリア:  <br/> |MAPI の状態  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-競合解決メッセージを含むフォルダーでこのプロパティは、競合を解決する方法を示します。 このプロパティが必要ではありません。 ただし、設定されている場合以外の次のフラグする必要がありますは使用されません。
+競合の解決方法を含むフォルダーでこのプロパティを指定すると、競合を解決する方法が示されます。 このプロパティは必須ではありません。 ただし、これが設定されている場合は、次のようなフラグは存在しない必要があります。
   
 |||
 |:-----|:-----|
-|RESOLVE_METHOD_DEFAULT (0X00000000)  <br/> |競合を解決すると、メッセージを生成する必要があります。  <br/> |
-|RESOLVE_METHOD_LAST_WRITER_WINS (0X00000001)  <br/> |現在の変更を適用する対象のメッセージを上書きします。  <br/> |
-|RESOLVE_NO_CONFLICT_NOTIFICATION (0X00000002)  <br/> |パブリック フォルダー内のメッセージを解決する競合を生成するときに競合の通知メッセージを送信しません。  <br/> |
+|RESOLVE_METHOD_DEFAULT (0x00000000)  <br/> |競合解決メッセージを生成する必要があります。  <br/> |
+|RESOLVE_METHOD_LAST_WRITER_WINS (0x00000001)  <br/> |ターゲットメッセージを上書きして、現在の変更が適用されていることを示します。  <br/> |
+|RESOLVE_NO_CONFLICT_NOTIFICATION (0x00000002)  <br/> |パブリックフォルダーで競合の解決メッセージを生成するときに、競合の通知メッセージを送信しません。  <br/> |
    
-クライアントまたはサーバーする必要があります競合解決メッセージが関連付けられているメッセージを生成することができません。 **RESOLVE_METHOD_LAST_WRITER_WINS**セマンティクスを使用してこれらのメッセージを解決する必要があります。 
+クライアントまたはサーバーは、関連付けられたメッセージに対して競合の解決メッセージを生成してはなりません。 これらのメッセージは、 **RESOLVE_METHOD_LAST_WRITER_WINS**語義を使用して解決する必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCSYNC]](https://msdn.microsoft.com/library/fd3e23ef-341a-4a8c-a0e9-6afecbb11c40%28Office.15%29.aspx)
+[[OXCSYNC]](https://msdn.microsoft.com/library/fd3e23ef-341a-4a8c-a0e9-6afecbb11c40%28Office.15%29.aspx)
   
-> サーバーとクライアントの間のメッセージングのオブジェクト データの同期を処理します。
+> サーバーとクライアントの間でメッセージオブジェクトデータの同期を処理します。
     
-[[MS OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
-> リモート操作で使用される基本的なデータ構造を定義します。
+> リモート操作で使用される基本データ構造を定義します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: 26628646-7948-4341-aaef-5c476a857a52
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c5956974ab38e1d2e891945083d26f1dced23284
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8ebcc1c8fc2d72b832199704fd63bbde89af68e1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331816"
 ---
 # <a name="cbnewflatmtsidlist"></a>CbNewFLATMTSIDLIST
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-指定したサイズのいくつかの[MTSID](mtsid.md)構造を含む新しい[FLATMTSIDLIST](flatmtsidlist.md)構造体に割り当てるバイト数を計算します。 
+指定したサイズの複数の[MTSID](mtsid.md)構造を含む新しい[FLATMTSIDLIST](flatmtsidlist.md)構造に割り当てる必要があるバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |**FLATMTSIDLIST** <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |**FLATMTSIDLIST** <br/> |
    
 ```cpp
 CbNewFLATMTSIDIDLIST (_cb)
@@ -40,7 +40,7 @@ CbNewFLATMTSIDIDLIST (_cb)
 
  __cb_
   
-> 新しい**FLATMTSIDLIST**構造体に含まれる**MTSID**構造体のバイト数のカウントです。 
+> 新しい**FLATMTSIDLIST**構造に含める、 **MTSID**構造体のバイト数。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -51,5 +51,5 @@ CbNewFLATMTSIDIDLIST (_cb)
 [MTSID](mtsid.md)
 
 
-[構造体に関連するマクロ](macros-related-to-structures.md)
+[構造に関連するマクロ](macros-related-to-structures.md)
 

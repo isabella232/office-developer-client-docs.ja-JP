@@ -1,5 +1,5 @@
 ---
-title: ISocialPerson IUnknown
+title: i社会 alperson IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,36 +7,36 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 17a2fa12-a7ef-4a95-9875-72ec6f8ceac9
-description: ソーシャル ネットワーク上のユーザーを表します。
-ms.openlocfilehash: d6fca18ac2d2074239bd8b435bcd40971de83670
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: ソーシャルネットワーク上の人物を表します。
+ms.openlocfilehash: 0ad129b0fc15fc9f3ccdf1cff7d8519bb07b024e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331942"
 ---
 # <a name="isocialperson--iunknown"></a>ISocialPerson : IUnknown
 
-ソーシャル ネットワーク上のユーザーを表します。
+ソーシャルネットワーク上の人物を表します。
   
 ## <a name="members"></a>Members
 
-次の表は、 **ISocialPerson**インターフェイスで使用可能なメンバーを示します。 
+次の表に、 **iare alperson**インターフェイスで使用できるメンバーを示します。 
   
-|**名前**|**メンバーの種類**|**説明**|
+|**Name**|**メンバーの種類**|**説明**|
 |:-----|:-----|:-----|
-|[GetActivities](isocialperson-getactivities.md) <br/> |メソッド  <br/> |Outlook ソーシャル コネクタ 2013 以降、このメソッドは廃止されました。  <br/> |
-|[GetDetails](isocialperson-getdetails.md) <br/> |メソッド  <br/> |プロフィールの画像に、名、姓、名、URL など、個人の詳細情報を表す文字列を取得します。  <br/> |
+|[getactivities](isocialperson-getactivities.md) <br/> |メソッド  <br/> |このメソッドは、Outlook Social Connector 2013 以降では廃止されました。  <br/> |
+|[getdetails](isocialperson-getdetails.md) <br/> |メソッド  <br/> |名、姓、プロファイル画像への URL など、個人の詳細を表す文字列を取得します。  <br/> |
 |[GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md) <br/> |メソッド  <br/> |ユーザーのコレクションを表す文字列を取得します。  <br/> |
 |[GetFriendsAndColleaguesIDs](isocialperson-getfriendsandcolleaguesids.md) <br/> |メソッド  <br/> |このメソッドは現在サポートされていません。  <br/> |
-|[GetPicture](isocialperson-getpicture.md) <br/> |メソッド  <br/> |個人の画像リソースを格納するバイトの配列を取得します。  <br/> |
+|[GetPicture](isocialperson-getpicture.md) <br/> |メソッド  <br/> |ユーザーの picture リソースを含むバイトの配列を取得します。  <br/> |
 |[GetStatus](isocialperson-getstatus.md) <br/> |メソッド  <br/> |このメソッドは現在サポートされていません。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-Outlook ソーシャル コネクタ (OSC) プロバイダーには、OSC と通信するには、このインターフェイスを実装しなければなりません。
+Outlook Social Connector (.osc) プロバイダーは、このインターフェイスを実装して、.osc と通信します。
   
 ## <a name="see-also"></a>関連項目
 
-- [Outlook ソーシャル コネクタ プロバイダー インターフェイス](outlook-social-connector-provider-interfaces.md)
+- [Outlook Social Connector プロバイダーインターフェイス](outlook-social-connector-provider-interfaces.md)
 

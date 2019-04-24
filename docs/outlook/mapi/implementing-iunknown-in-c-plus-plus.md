@@ -7,21 +7,21 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 68519f6c-fba8-47f5-9401-316e276f770e
-description: '�ŏI�X�V��: 2011�N7��23��'
+description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 08f3f3f937320d8a986b2002c761a37f0f749227
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25397836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32330178"
 ---
 # <a name="implementing-iunknown-in-c"></a>C++ での IUnknown の実装
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-C++ では[IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)、 [IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)、および[リ ス](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)の[IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx)インターフェイスのメソッドを実装することは非常に簡単です。 渡されるパラメーターのいくつかの標準的な検証をした後は、 **QueryInterface**の実装は、サポートされているインターフェイスの一覧に対して要求されたインターフェイスの識別子をチェックします。 要求された識別子がサポートされている間にある場合は、 **AddRef**が呼び出され、 **this**ポインターが返されます。 要求された識別子がサポートされているリストにない場合は、出力のポインターは NULL に設定し、MAPI_E_INTERFACE_NOT_SUPPORTED の値が返されます。 
+C++ の iunknown インターフェイスの iunknown: [: QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)、 [iunknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)、および[iunknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドの実装は非常に簡単です。 [](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) 渡されたパラメーターの標準的な検証の後、 **QueryInterface**の実装は、サポートされているインターフェイスのリストに対して、要求されたインターフェイスの識別子をチェックします。 要求された識別子がサポートされている場合は、 **AddRef**が呼び出され、**この**ポインターが返されます。 要求された識別子がサポートされているリストに含まれていない場合、出力ポインターは NULL に設定され、MAPI_E_INTERFACE_NOT_SUPPORTED 値が返されます。 
   
-次のコード例は、状態オブジェクトのサブクラスであるオブジェクトの C++ の**QueryInterface**を実装する方法を示しています、 [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md)インタ フェースです。 **IMAPIStatus**は、 **IUnknown**から継承[IMAPIProp: IUnknown](imapipropiunknown.md)。 したがって場合は、呼び出し元は、これらのインタ フェースのいずれかの確認メッセージが表示、 **this**ポインターが返されますインターフェイス継承によって関連しているため。 
+次のコード例は、ステータスオブジェクト ( [imapistatus: imapistatus](imapistatusimapiprop.md)インターフェイスのサブクラスであるオブジェクト) に対する**QueryInterface**を C++ で実装する方法を示しています。 **imapistatus**は、 **iunknown**から[imapistatus: iunknown](imapipropiunknown.md)を継承します。 そのため、発信者がこれらのインターフェイスのいずれかを要求した場合、インターフェイスは継承によって関連付けられるため、**この**ポインターを返すことができます。 
   
 ```cpp
 HRESULT CMyMAPIObject::QueryInterface (REFIID   riid,
@@ -44,7 +44,7 @@ HRESULT CMyMAPIObject::QueryInterface (REFIID   riid,
 
 ```
 
-コード例を次に**AddRef**および**Release**メソッドを実装する方法を示しています、`CMyMAPIObject`オブジェクトです。 **AddRef**および**Release**を実装することが簡単であるためにインラインを実装するために多くのサービス プロバイダーを選択します。 **スレッド**と**避けるため**に、Win32 関数の呼び出しは、スレッドの安全を確保します。 **Release**メソッドがオブジェクトを削除するときに呼び出されると、デストラクターでは、オブジェクト用のメモリが解放されます。 
+次のコード例は、 `CMyMAPIObject`オブジェクトの**AddRef**メソッドと**Release**メソッドを実装する方法を示しています。 **AddRef**と**Release**の実装は簡単であるため、多くのサービスプロバイダーはそれらをインラインで実装することを選択します。 Win32 関数**InterlockedIncrement**および**InterlockedDecrement**の呼び出しにより、スレッドセーフが保証されます。 オブジェクトのメモリはデストラクターによって解放されます。これは、 **Release**メソッドによってオブジェクトが削除されるときに呼び出されます。 
   
 ```cpp
 ULONG CMyMAPIObject::AddRef()

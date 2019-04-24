@@ -1,5 +1,5 @@
 ---
-title: Outlook ソーシャル コネクタ プロバイダーの XML スキーマ
+title: Outlook Social Connector プロバイダーの XML スキーマ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5a88adf0-9265-4d49-976d-de0d93269aa9
-description: OSC プロバイダーの拡張メソッドの OSC プロバイダーによって返されるすべての XML は、OSC プロバイダーの次の XML スキーマに準拠する必要があります。 OSC スキーマが完全にここで再現します。
+description: .osc プロバイダ拡張メソッドの .osc プロバイダーによって返されるすべての xml は、次の .osc プロバイダ XML スキーマに準拠している必要があります。 この場合、.osc スキーマは完全に再現されます。
 ms.openlocfilehash: 578f0ea0c8df4f81c51ce71b50aa2768fe930d5c
-ms.sourcegitcommit: 4590b7ed906d008693a58abe63f089ed8a380b34
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "26643172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329195"
 ---
-# <a name="outlook-social-connector-provider-xml-schema"></a>Outlook ソーシャル コネクタ プロバイダーの XML スキーマ
+# <a name="outlook-social-connector-provider-xml-schema"></a>Outlook Social Connector プロバイダーの XML スキーマ
 
-OSC プロバイダーの拡張メソッドの OSC プロバイダーによって返されるすべての XML は、OSC プロバイダーの次の XML スキーマに準拠する必要があります。 OSC スキーマが完全にここで再現します。 現在のスキーマ定義ファイル、OutlookSocialProvider1_1.xsd は、この記事に付属するプロバイダー テンプレートのダウンロードにも提供されます。 詳細についてを参照してください[Outlook ソーシャル コネクタ 2013: プロバイダー テンプレート](https://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c)。 
+.osc プロバイダ拡張メソッドの .osc プロバイダーによって返されるすべての xml は、次の .osc プロバイダ XML スキーマに準拠している必要があります。 この場合、.osc スキーマは完全に再現されます。 この記事に付属するプロバイダテンプレートのダウンロードには、現在のスキーマ定義ファイル OutlookSocialProvider1_1 も含まれています。 詳細については、「 [Outlook Social Connector 2013: Provider templates](https://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c)」を参照してください。 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -460,11 +460,11 @@ OSC プロバイダーの拡張メソッドの OSC プロバイダーによっ�
 
 ## <a name="see-also"></a>関連項目
 
-- [機能の XML の例](capabilities-xml-example.md)  
-- [友人の XML の例](friends-xml-example.md) 
-- [アクティビティ フィードの XML の例](activity-feed-xml-example.md)  
-- [機能のための XML](xml-for-capabilities.md)  
-- [友人の XML](xml-for-friends.md)  
-- [活動の XML](xml-for-activities.md)  
-- [Outlook ソーシャル コネクタ プロバイダー インターフェイス](outlook-social-connector-provider-interfaces.md)
+- [機能 XML の例](capabilities-xml-example.md)  
+- [Friends XML の例](friends-xml-example.md) 
+- [アクティビティフィード XML の例](activity-feed-xml-example.md)  
+- [機能の XML](xml-for-capabilities.md)  
+- [Friends の XML](xml-for-friends.md)  
+- [アクティビティの XML](xml-for-activities.md)  
+- [Outlook Social Connector プロバイダーインターフェイス](outlook-social-connector-provider-interfaces.md)
 
