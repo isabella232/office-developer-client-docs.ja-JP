@@ -1,5 +1,5 @@
 ---
-title: Recordset2.Requery メソッド (DAO)
+title: Recordset2. Requery メソッド (DAO)
 TOCTitle: Requery Method
 ms:assetid: d063c1e0-2fb7-b5cf-4d98-6f77a5a13cec
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834712(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 44f573d179c26677fc801dac82e0deecc3874fb1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307211"
 ---
-# <a name="recordset2requery-method-dao"></a>Recordset2.Requery メソッド (DAO)
+# <a name="recordset2requery-method-dao"></a>Recordset2. Requery メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **[Recordset](recordset-object-dao.md)** オブジェクトの基になるクエリを再実行することにより、オブジェクト内のデータを更新します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。(***NewQueryDef***) のクエリを再実行します。
+*式*。Requery (***newquerydef***)
 
-*式***Recordset2**オブジェクトを表す変数です。
+*式***Recordset2**オブジェクトを表す変数を取得します。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -50,8 +50,8 @@ ms.locfileid: "28698541"
 <tbody>
 <tr class="odd">
 <td><p><em>NewQueryDef</em></p></td>
-<td><p>省略可能</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
+<td><p>Optional</p></td>
+<td><p><strong>Variant</strong></p></td>
 <td><p><a href="querydef-object-dao.md"><strong>QueryDef</strong></a> オブジェクトの <strong>Name</strong> プロパティの値を表します。</p></td>
 </tr>
 </tbody>
@@ -60,23 +60,23 @@ ms.locfileid: "28698541"
 
 ## <a name="remarks"></a>注釈
 
-このメソッドは、 **Recordset** に確実に最新のデータが含まれるようにするために使用します。 このメソッドが現在のクエリ パラメーターを使用して、現在の**レコード セット**を再設定または引数 newquerydef で (Microsoft Access ワークスペース) で新しいファイルが提供されます。
+このメソッドは、 **Recordset** に確実に最新のデータが含まれるようにするために使用します。 このメソッドは、現在のクエリパラメーターまたは (Microsoft access ワークスペースでは) newquerydef 引数で指定された新しいレコードを使用して、現在の**Recordset**を再設定します。
 
-Newquerydef 引数を省略する場合、最初の**レコード セット**を作成するために使用するパラメーターと同じクエリ定義に基づく**レコード セット**が再設定されます。 基になるデータに変更があった場合は、この再読み込み時に反映されます。 **QueryDef** を使用して **Recordset** を作成していない場合は、 **Recordset** が最初から再作成されます。
+newquerydef 引数を指定しない場合、 **recordset**には、最初に**recordset**にデータを格納するときに使用したのと同じクエリ定義とパラメーターに基づいてデータが再入力されます。 基になるデータに変更があった場合は、この再読み込み時に反映されます。 **QueryDef** を使用して **Recordset** を作成していない場合は、 **Recordset** が最初から再作成されます。
 
-Newquerydef 引数に元の**クエリ定義**を指定する場合、**レコード セット**に対してクエリが実行**クエリ定義**で指定されたパラメーターを使用します。 基になるデータに変更があった場合は、この再読み込み時に反映されます。 **レコード セット**内のクエリ パラメーター値への変更を反映するためには、引数 newquerydef を指定してください。
+newquerydef 引数で元の**querydef**を指定すると、 **Recordset**は**QueryDef**で指定されたパラメーターを使用して再クエリされます。 基になるデータに変更があった場合は、この再読み込み時に反映されます。 **Recordset**内のクエリパラメーター値に加えられた変更を反映するには、newquerydef 引数を指定する必要があります。
 
 最初に **Recordset** を作成したときとは異なる **QueryDef** を指定した場合、 **Recordset** は最初から再作成されます。
 
 **Requery** を使用すると、 **Recordset** 内の最初のレコードがカレント レコードとなります。
 
-**Requery** メソッドは、 [**Restartable**](recordset2-restartable-property-dao.md) プロパティが **False** に設定されているダイナセット タイプまたはスナップショット タイプの **Recordset** オブジェクトでは使用できません。 Newquerydef の省略可能な引数を指定する場合は、 **Restartable**プロパティは無視されます。
+**Requery** メソッドは、 [**Restartable**](recordset2-restartable-property-dao.md) プロパティが **False** に設定されているダイナセット タイプまたはスナップショット タイプの **Recordset** オブジェクトでは使用できません。 ただし、省略可能な newquerydef 引数を指定すると、再**起動**可能なプロパティは無視されます。
 
-[Requery](recordset2-bof-property-dao.md) を使用した後に、 **Recordset** オブジェクトの **[BOF](recordset2-eof-property-dao.md)** プロパティと ****EOF**** プロパティの両方の設定が **True** になった場合、クエリによってレコードは返されておらず、 **Recordset** にはデータが含まれていません。
+**Requery**メソッドを使用した後に、 **recordset**オブジェクトの**[BOF](recordset2-bof-property-dao.md)** プロパティと**[EOF](recordset2-eof-property-dao.md)** プロパティの両方の設定が**True**になった場合、クエリはレコードを返さなかったため、 **recordset**にはデータが含まれていません。
 
 ## <a name="example"></a>例
 
-この例では、 **Requery** メソッドを使用して、基になるデータが変更された後にクエリを更新する方法を示します。
+この例では、**Requery** メソッドを使用して、基になるデータが変更された後にクエリを更新する方法を示します。
 
 ```vb
     Sub RequeryX() 

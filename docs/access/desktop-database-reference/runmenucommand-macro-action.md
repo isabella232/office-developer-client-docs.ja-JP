@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: c2b5a19b7a92fb68dfb774afeec5cd6ba456f38d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306504"
 ---
 # <a name="runmenucommand-macro-action"></a>RunMenuCommand マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**RunMenuCommand**アクションを使用すると、組み込みの Access コマンドを実行します。
+"RunMenuCommand/メニューコマンドの実行" アクションを使用すると、組み込みの Microsoft Access コマンドを実行できます。
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**RunMenuCommand**アクションには、次のアクションの引数があります。
+"RunMenuCommand/メニューコマンドの実行" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -47,16 +47,16 @@ ms.locfileid: "28698163"
 </tbody>
 </table>
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**RunMenuCommand**アクションを使用すると、カスタム メニュー バー、グローバル メニュー バー、カスタム ショートカット メニューまたはグローバル ショートカット メニューから、Access コマンドを実行します。
+"RunMenuCommand/メニューコマンドの実行" アクションを使用すると、Access コマンドをカスタム メニュー バー、グローバル メニュー バー、カスタム ショートカット メニュー、またはグローバル ショートカット メニューから実行できます。
 
-マクロ内で条件付き書式**RunMenuCommand**アクションを使用するには一定の条件に従ってコマンドを実行します。
+You can use the **RunMenuCommand** action in a macro with conditional expressions to run a command depending on certain conditions.
 
 > [!NOTE]
-> [**ファイル**] タブをクリックし、[**最近使用した**最近使用したデータベースを示しています。 **開く**をクリックする代わりにこれらのデータベースのいずれかをクリックすることができます。 データベースのこれらの項目は、**コマンド**の引数のドロップダウン リスト ボックスに表示されないし、 **RunMenuCommand**アクションを使用してマクロ内で使用できません。
+> Clicking the **File** tab and then clicking **Recent** shows the most recently used databases. You can click one of these databases instead of clicking **Open**. These database items don't appear in the drop-down list box for the **Command** argument, and aren't available by using the **RunMenuCommand** action in a macro.
 
-以前のバージョンの Access から Access データベースを変換するときにいくつかのコマンドが利用できなくです。 コマンドでは、可能性がありますが名前が変更されて、別のメニューに移動または、Access で使用可能な不要になった場合があります。 **RunMenuCommand**アクションには、このようなコマンドの動作を**DoMenuItem**を変換できません。 マクロを開くと、このようなコマンドの**コマンド**の引数が空で、 **RunMenuCommand**アクションが表示されます。 マクロを編集、有効なコマンド引数を入力し、または**RunMenuCommand**アクションを削除する必要があります。
+When you convert an Access database from a previous version of Access, some commands may no longer be available. A command may have been renamed, moved to a different menu, or may no longer be available in Access. The **DoMenuItem** actions for such commands can't be converted to **RunMenuCommand** actions. When you open the macro, Access will display a **RunMenuCommand** action with a blank **Command** argument for such commands. You must edit the macro and enter a valid command argument, or delete the **RunMenuCommand** action.
 
-**RunMenuCommand**アクションを Visual Basic for Applications (VBA) のモジュールで実行するには、 **Application**オブジェクトの**RunCommand**メソッドを使用します。 (これは、 **DoCmd**オブジェクトの**RunCommand**メソッドと同等) です。
+To run the **RunMenuCommand** action in a Visual Basic for Applications (VBA) module, use the **RunCommand** method of the **Application** object. (This is equivalent to the **RunCommand** method of the **DoCmd** object.)
 

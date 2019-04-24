@@ -1,5 +1,5 @@
 ---
-title: フィールド メンバー (DAO)
+title: Field メンバー (DAO)
 TOCTitle: Field Members
 ms:assetid: 4b6a587f-1fd0-37fb-db7d-75b587a8dc60
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff193511(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1a0e448662384572163fca074e554a5e30be30a7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293092"
 ---
-# <a name="field-members-dao"></a>フィールド メンバー (DAO)
+# <a name="field-members-dao"></a>Field メンバー (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 Field オブジェクトは、共通のデータ型およびプロパティの共通セットを持つ、データの列を表します。
 
@@ -45,13 +45,13 @@ Field オブジェクトは、共通のデータ型およびプロパティの�
 </tr>
 <tr class="odd">
 <td><p><strong><a href="field-getchunk-method-dao.md">GetChunk</a></strong></p></td>
-<td><p><strong><strong>Recordset</strong></strong> オブジェクトの <strong><a href="field-object-dao.md">Fields</a></strong> コレクションに含まれる、メモ型 ( <a href="fields-collection-dao.md">Memo</a>) またはロング バイナリ型 ( <strong>Long Binary</strong>) の <strong><a href="recordset-object-dao.md">Field</a></strong> オブジェクトについて、全部または一部の内容を取得します。</p></td>
+<td><p><strong><a href="recordset-object-dao.md">Recordset</a></strong>オブジェクトの<strong><a href="fields-collection-dao.md">Fields</a></strong>コレクションに含まれる<strong>メモ型 (Memo</strong> ) または<strong>ロングバイナリ型 (Long Binary)</strong>の<strong><a href="field-object-dao.md">Field</a></strong>オブジェクトの内容のすべてまたは一部を返します。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 <table>
 <colgroup>
@@ -67,14 +67,14 @@ Field オブジェクトは、共通のデータ型およびプロパティの�
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="field-allowzerolength-property-dao.md">AllowZeroLength</a></strong></p></td>
-<td><p>示す値を取得または設定かどうか、長さ 0 の文字列 (&quot;&quot;) は、テキスト型またはメモ型 (Microsoft Access ワークスペースのみ) の<strong><a href="field-object-dao.md">Field</a></strong>オブジェクトの<strong><a href="field-value-property-dao.md">Value</a></strong>プロパティに有効な設定です。</p></td>
+<td><p>長さが0の文字列 (&quot;&quot;) が、テキスト型またはメモ型の<strong><a href="field-object-dao.md">Field</a></strong>オブジェクトの<strong><a href="field-value-property-dao.md">value</a></strong>プロパティの有効な設定値かどうかを示す値を設定または取得します (Microsoft access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="field-attributes-property-dao.md">Attributes</a></strong></p></td>
-<td><p><strong><a href="field-object-dao.md">Field</a></strong> オブジェクトの 1 つまたは複数の特性を示す値を設定または取得します。値の取得および設定が可能です。長整数型 ( <strong>Long</strong> ) の値を使用します。</p></td>
+<td><p><strong><a href="field-object-dao.md">Field</a></strong>オブジェクトの1つ以上の属性を示す値を設定または取得します。 値の取得と設定が可能な長整数型 (<strong>Long</strong>) の値です。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="field-collatingorder-property-dao.md">照合順序</a></strong></p></td>
+<td><p><strong><a href="field-collatingorder-property-dao.md">CollatingOrder</a></strong></p></td>
 <td><p>文字列の比較または並べ替えのために、文字列の並べ替え順序を指定する値を返します (Microsoft Access ワークスペースのみ)。値の取得のみ可能です。長整数型 ( <strong>Long</strong>) の値を使用します。</p></td>
 </tr>
 <tr class="even">
@@ -86,7 +86,7 @@ Field オブジェクトは、共通のデータ型およびプロパティの�
 <td><p><strong><a href="field-object-dao.md">Field</a></strong> オブジェクトの既定値を設定または取得します。 <a href="fields-collection-dao.md"><strong>Fields</strong></a> コレクションにまだ追加されていない <strong>Field</strong> オブジェクトの場合、このプロパティは値の取得および設定が可能です (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="field-fieldsize-property-dao.md">フィールド サイズします。</a></strong></p></td>
+<td><p><strong><a href="field-fieldsize-property-dao.md">"</a></strong></p></td>
 <td><p><strong><a href="field-object-dao.md">Recordset</a></strong> オブジェクトの <strong><a href="fields-collection-dao.md">Fields</a></strong> コレクション内にあるメモ型 (Memo) またはロング バイナリ型 (Long Binary) の <strong><a href="recordset-object-dao.md">Field</a></strong> オブジェクトを、メモリではなくデータベースで使用する場合のバイト数を取得します。</p></td>
 </tr>
 <tr class="odd">
@@ -99,12 +99,12 @@ Field オブジェクトは、共通のデータ型およびプロパティの�
 </tr>
 <tr class="odd">
 <td><p><strong><a href="field-ordinalposition-property-dao.md">OrdinalPosition</a></strong></p></td>
-<td><p><strong><a href="field-object-dao.md">Fields</a></strong> コレクション内の <strong><a href="fields-collection-dao.md">Field</a></strong> オブジェクトの相対位置を設定または取得します。</p></td>
+<td><p><strong><a href="fields-collection-dao.md">Fields</a></strong>コレクション内の<strong><a href="field-object-dao.md">Field</a></strong>オブジェクトの相対位置を設定または取得します。 .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="field-originalvalue-property-dao.md">OriginalValue</a></strong></p></td>
-<td><p><strong><a href="workspacetypeenum-enumeration-dao.md">WorkspaceTypeEnum</a></strong> 値の 1 つ。</p>
-<td><p><strong>注</strong>: Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。 Microsoft Office Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</p>
+<td><p><strong><a href="workspacetypeenum-enumeration-dao.md">WorkspaceTypeEnum</a></strong>値の1つ。</p>
+<td><p><strong>注</strong>: ODBCDirect ワークスペースは、Microsoft access 2013 ではサポートされていません。 Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</p>
 <p>最後のバッチ更新を開始したときにデータベース内に存在した <strong>Field</strong> オブジェクトの値を取得します (ODBCDirect ワークスペースのみ)。</p></td>
 </tr>
 <tr class="odd">
@@ -112,15 +112,15 @@ Field オブジェクトは、共通のデータ型およびプロパティの�
 <td><p>指定したオブジェクトの <strong><a href="properties-collection-dao.md">Properties</a></strong> コレクションを取得します。値の取得のみ可能です。  </p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="field-required-property-dao.md">必須</a></strong></p></td>
+<td><p><strong><a href="field-required-property-dao.md">Required</a></strong></p></td>
 <td><p><strong><a href="field-object-dao.md">Field</a></strong> オブジェクトに非 Null 値が必要かどうかを示す値を設定または取得します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="field-fieldsize-property-dao.md">サイズ</a></strong></p></td>
+<td><p><strong><a href="field-fieldsize-property-dao.md">Size</a></strong></p></td>
 <td><p><strong><a href="field-object-dao.md">Recordset</a></strong> オブジェクトの <strong><a href="fields-collection-dao.md">Fields</a></strong> コレクション内にあるメモ型 (Memo) またはロング バイナリ型 (Long Binary) の <strong><a href="recordset-object-dao.md">Field</a></strong> オブジェクトを、メモリではなくデータベースで使用する場合のバイト数を取得します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="field-sourcefield-property-dao.md">SourceField</a></strong></p></td>
+<td><p><strong><a href="field-sourcefield-property-dao.md">sourcefield プロパティ</a></strong></p></td>
 <td><p><strong>Field</strong> オブジェクトの元のデータ ソースであるフィールド名を示す値を取得します。値の取得のみ可能です。文字列型 ( <strong>String</strong>) の値を使用します。</p></td>
 </tr>
 <tr class="odd">
@@ -128,8 +128,8 @@ Field オブジェクトは、共通のデータ型およびプロパティの�
 <td><p><strong>Field</strong> オブジェクトの元のデータ ソースとなるテーブルの名前を示す値を取得します。値の取得のみ可能です。文字列型 ( <strong>String</strong>) の値を使用します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="field-type-property-dao.md">型</a></strong></p></td>
-<td><p>オブジェクトの操作の種類またはデータ型を示す値を設定または取得します。値の取得および設定が可能です。整数型 ( <strong>Integer</strong> ) の値を使用します。</p></td>
+<td><p><strong><a href="field-type-property-dao.md">種類</a></strong></p></td>
+<td><p>オブジェクトの操作の種類またはデータ型を示す値を設定または取得します。 読み取り/書き込みの <strong>整数</strong> です。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="field-validateonset-property-dao.md">ValidateOnSet</a></strong></p></td>
@@ -137,7 +137,7 @@ Field オブジェクトは、共通のデータ型およびプロパティの�
 </tr>
 <tr class="even">
 <td><p><strong><a href="field-validationrule-property-dao.md">ValidationRule</a></strong></p></td>
-<td><p>データの変更時またはテーブルへの追加時 (Microsoft Access ワークスペースのみ) に、フィールド内のデータを検証する値を設定または取得します。値の取得および設定が可能です。文字列型 ( <strong>String</strong>) の値を使用します。</p></td>
+<td><p>テーブルのフィールドを変更するかテーブルにフィールドを追加するときに、フィールド内のデータを検証する値を設定または取得します (Microsoft Access ワークスペースのみ)。値の取得および設定が可能です。文字列型 ( <strong>String</strong>) の値を使用します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="field-validationtext-property-dao.md">ValidationText</a></strong></p></td>
@@ -145,12 +145,12 @@ Field オブジェクトは、共通のデータ型およびプロパティの�
 </tr>
 <tr class="even">
 <td><p><strong><a href="field-value-property-dao.md">Value</a></strong></p></td>
-<td><p>オブジェクトの値を設定します。値の取得および設定が可能です。バリアント型 ( <strong>Variant</strong>) の値を使用します。</p></td>
+<td><p>オブジェクトの値を設定または取得します。 値の取得と設定が可能なバリアント型 (<strong>Variant</strong>) の値です。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="field-visiblevalue-property-dao.md">VisibleValue</a></strong></p></td>
-<td><p><strong><a href="workspacetypeenum-enumeration-dao.md">WorkspaceTypeEnum</a></strong> 値の 1 つ。</p>
-<td><p><strong>注</strong>: Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。 Microsoft Office Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</p>
+<td><p><strong><a href="workspacetypeenum-enumeration-dao.md">WorkspaceTypeEnum</a></strong>値の1つ。</p>
+<td><p><strong>注</strong>: ODBCDirect ワークスペースは、Microsoft access 2013 ではサポートされていません。 Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</p>
 <p>現在データベース内にある、バッチ更新の競合によって決まる <strong>OriginalValue</strong> プロパティより新しい値を取得します (ODBCDirect ワークスペースのみ)。</p></td>
 </tr>
 </tbody>

@@ -1,5 +1,5 @@
 ---
-title: 名前の動的なプロパティ (ADO) の形状を変更します。
+title: リシェイプ Name 動的プロパティ (ADO)
 TOCTitle: Reshape Name dynamic property (ADO)
 ms:assetid: 59ef99c8-da40-5cf6-b987-d47ea1433f45
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249307(v=office.15)
@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b606960238e2f9a08d034ed92a79f7a767a1a5f7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306602"
 ---
-# <a name="reshape-name-dynamic-property-ado"></a>名前の動的なプロパティ (ADO) の形状を変更します。
+# <a name="reshape-name-dynamic-property-ado"></a>リシェイプ Name 動的プロパティ (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [Recordset](recordset-object-ado.md) オブジェクトの名前を指定します。
 
 ## <a name="return-values"></a>戻り値
 
-**Recordset** の名前である文字列型 ( **String** ) の値を返します。
+**Recordset** の名前である文字列型 (**String**) の値を返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 名前は、接続中、または **Recordset** が閉じられるまで保持されます。
 

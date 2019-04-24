@@ -1,5 +1,5 @@
 ---
-title: Recordset2.Bookmarkable プロパティ (DAO)
+title: Bookmarkable プロパティ (DAO)
 TOCTitle: Bookmarkable Property
 ms:assetid: 9c93d04d-ca10-acf5-122a-58625ed93424
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198125(v=office.15)
@@ -12,30 +12,30 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 26b8b60255b4e50a2288dedb8e27906476926e8c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307456"
 ---
-# <a name="recordset2bookmarkable-property-dao"></a>Recordset2.Bookmarkable プロパティ (DAO)
+# <a name="recordset2bookmarkable-property-dao"></a>Bookmarkable プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**Recordset** オブジェクトがブックマークをサポートしているかどうかを示す、 **[Bookmark](recordset2-bookmark-property-dao.md)** プロパティを使用して設定できる値を返します。
+**Recordset** オブジェクトがブックマークをサポートし、 **[Bookmark](recordset2-bookmark-property-dao.md)** プロパティを使用してブックマークを設定できるかどうかを示す値を取得します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。ブックマークを設定
+*式*。Bookmarkable
 
-*式***Recordset2**オブジェクトを表す変数です。
+*式***Recordset2**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
-**Bookmark** プロパティを設定または確認しようとする前に、 **Recordset** オブジェクトの **Bookmarkable** プロパティの設定値を確認してください。
+**Bookmark** プロパティを設定または確認しようとする前に、 **Recordset** オブジェクトの **Bookmarkable** プロパティの設定を確認してください。
 
-Microsoft Access データベース エンジンのテーブルに基づく**Recordset**オブジェクトの**Bookmarkable**プロパティの値は、true の場合、およびブックマークを使用することができます。 ただし、その他のデータベース製品では、ブックマークがサポートされていない場合があります。 たとえば、主キーがない Paradox リンク テーブルを基にした **Recordset** オブジェクトでブックマークを使用することはできません。
+Microsoft access データベースエンジンのテーブルを基にした**Recordset**オブジェクトの場合、 **Bookmarkable**プロパティの値は True になり、ブックマークを使用することができます。 ただし、他のデータベース製品はブックマークをサポートしていない場合があります。 たとえば、主キーを持たないリンク テーブルの Paradox に準拠する **Recordset** オブジェクトではブックマークを使用できません。
 
 ## <a name="example"></a>例
 

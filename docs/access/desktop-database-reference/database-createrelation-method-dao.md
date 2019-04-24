@@ -1,5 +1,5 @@
 ---
-title: Database.CreateRelation メソッド (DAO)
+title: データベース. createrelation DAO メソッド (DAO)
 TOCTitle: CreateRelation Method
 ms:assetid: e240c7e3-c293-5e19-afcc-34d9a5549c64
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835692(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 365835bc579a431d34b65cd27ed4de4e12bca309
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294954"
 ---
-# <a name="databasecreaterelation-method-dao"></a>Database.CreateRelation メソッド (DAO)
+# <a name="databasecreaterelation-method-dao"></a>データベース. createrelation DAO メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-新しい **[Relation](relation-object-dao.md)** オブジェクトを作成します (Microsoft Access ワークスペースのみ)。
+新しい**[Relation](relation-object-dao.md)** オブジェクトを作成します (Microsoft access ワークスペースのみ)。 .
 
 ## <a name="syntax"></a>構文
 
-*式*です。CreateRelation (***名前***、***テーブル***、***外部テーブル******の属性***)
+*式*。createrelation (***Name***, ***Table***, ***ForeignTable***, ***Attributes***)
 
-*式***データベース**オブジェクトを表す変数です。
+*式***Database**オブジェクトを表す変数を取得します。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -50,27 +50,27 @@ ms.locfileid: "28716881"
 <tbody>
 <tr class="odd">
 <td><p><em>Name</em></p></td>
-<td><p>省略可能</p></td>
-<td><p><strong>Variant (バリアント型)</strong></p></td>
-<td><p>新しい <strong>Relation</strong> オブジェクトの一意の名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。有効な <strong>Relation</strong> 名の詳細については、<strong><a href="connection-name-property-dao.md">Name</a></strong> プロパティを参照してください。</p></td>
+<td><p>Optional</p></td>
+<td><p><strong>Variant</strong></p></td>
+<td><p>新しい <strong>Relation</strong> オブジェクトの一意の名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。 有効な<strong>リレーション</strong>名の詳細については、 <strong><a href="connection-name-property-dao.md">Name</a></strong>プロパティを参照してください。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Table</em></p></td>
-<td><p>省略可能</p></td>
-<td><p><strong>Variant (バリアント型)</strong></p></td>
-<td><p>リレーションにおける主テーブルの名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。<strong>Relation</strong> オブジェクトを追加する前にこのテーブルが存在していないと、実行時エラーが発生します。</p></td>
+<td><p>Optional</p></td>
+<td><p><strong>Variant</strong></p></td>
+<td><p>リレーションにおける主テーブルの名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。 <strong>Relation</strong> オブジェクトを追加する前にこのテーブルが存在していないと、実行時エラーが発生します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>外部テーブル</em></p></td>
-<td><p>省略可能</p></td>
-<td><p><strong>Variant (バリアント型)</strong></p></td>
-<td><p>リレーションにおける外部キー側のテーブルの名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。<strong>Relation</strong> オブジェクトを追加する前にこのテーブルが存在していないと、実行時エラーが発生します。</p></td>
+<td><p><em>ForeignTable</em></p></td>
+<td><p>Optional</p></td>
+<td><p><strong>Variant</strong></p></td>
+<td><p>リレーションにおける外部キー側のテーブルの名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。 <strong>Relation</strong> オブジェクトを追加する前にこのテーブルが存在していないと、実行時エラーが発生します。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Attributes</em></p></td>
-<td><p>省略可能</p></td>
-<td><p><strong>Variant (バリアント型)</strong></p></td>
-<td><p>リレーションシップの種類に関する情報を格納している定数 (または定数の組み合わせ)。詳細については、<strong><a href="field-attributes-property-dao.md">Attributes</a></strong> プロパティを参照してください。</p></td>
+<td><p>Optional</p></td>
+<td><p><strong>Variant</strong></p></td>
+<td><p>リレーションシップの種類に関する情報を格納している定数 (または定数の組み合わせ)。 詳細については、 <strong><a href="field-attributes-property-dao.md">Attributes</a></strong>プロパティを参照してください。</p></td>
 </tr>
 </tbody>
 </table>
@@ -86,9 +86,9 @@ Relation
 
 **CreateRelation** メソッドの使用時に省略可能な引数を省略した場合は、新しいオブジェクトをコレクションに追加する前に適切な代入ステートメントを使用して、対応するプロパティを設定またはリセットできます。オブジェクトの追加後は、プロパティの設定は一切変更できません。詳細については、各プロパティのトピックを参照してください。
 
-[Relation](fields-append-method-dao.md) オブジェクトの ****Append**** メソッドを使用する前に、適切な **[Field](field-object-dao.md)** オブジェクトを追加して、主キーと外部キーのリレーションシップのテーブルを定義する必要があります。
+**Relation**オブジェクトで**[Append](fields-append-method-dao.md)** メソッドを使用するには、その前に、適切な**[Field](field-object-dao.md)** オブジェクトを追加して、主キーと外部キーのリレーションシップテーブルを定義する必要があります。
 
-名が既にコレクションのメンバーであるオブジェクトを参照する場合、または従属**Fields**コレクションに**Field**オブジェクトの名前が無効な場合は、 **Append**メソッドを使用すると、実行時エラーが発生します。
+name が既にコレクションのメンバーであるオブジェクトを参照している場合、または下位の**Fields**コレクションで指定された**Field**オブジェクトの名前が無効な場合は、 **Append**メソッドを使用すると、実行時エラーが発生します。
 
 レプリケートされたテーブルとローカル テーブルの間にリレーションシップを設定したり、設定を変更することはできません。
 
@@ -96,7 +96,7 @@ Relation
 
 ## <a name="example"></a>例
 
-この例では、 **CreateRelation** メソッドを使用して、Employees **TableDef** と新規作成された Departments という **TableDef** の間に **Relation** を作成します。この例では、 **Relation** を新規作成することによって、外部テーブルに必要な **Indexes** が作成されることも示します (Employees テーブルの DepartmentsEmployees Index)。
+次の使用例は、 **CreateRelation** メソッドを使用して、Employees テーブルの **TableDef** オブジェクトと Departments と呼ばれる新しい **TableDef** オブジェクトの間に **Relation** オブジェクトを作成します。また、新しい **Relation** オブジェクトを作成すると、必要な **Indexes** オブジェクト (社員テーブルの DepartmentsEmployees インデックス) が外部キー側のテーブルに作成されることも示します。
 
 ```vb
     Sub CreateRelationX() 

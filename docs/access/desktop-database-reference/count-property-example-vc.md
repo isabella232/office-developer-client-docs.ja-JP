@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 5f21bb3c2f20f0d9d446a099fd6322928e626616
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295451"
 ---
 # <a name="count-property-example-vc"></a>Count プロパティの使用例 (VC++)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-この例では、***従業員***データベース内の 2 つのコレクションの[Count](count-property-ado.md)プロパティを使用します。 このプロパティで、各コレクション内のオブジェクト数を取得し、これらのコレクションを列挙するループに上限を設定します。 **Count**プロパティを使用せずにこれらのコレクションを列挙するために別の方法は、ステートメントを使用することです。
+この例では、***Employee*** データベース内の 2 つのコレクションで [Count](count-property-ado.md) プロパティを使用します。 このプロパティで、各コレクション内のオブジェクト数を取得し、これらのコレクションを列挙するループに上限を設定します。 **Count**プロパティを使用せずにこれらのコレクションを列挙する別の方法は、ステートメントを使用することです。
 
 ```cpp 
  

@@ -1,5 +1,5 @@
 ---
-title: ビューとフィールドのコレクションの使用例 (VB)
+title: Views および Fields コレクションの使用例 (VB)
 TOCTitle: Views and Fields Collections example (VB)
 ms:assetid: 7c166bea-d6a3-0a9d-5220-af72996a76fd
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249518(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 619795b0911462ec46800a29080a50c9ea889c5b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32305999"
 ---
 # <a name="views-and-fields-collections-example-vb"></a>Views コレクションと Fields コレクションの使用例 (VB)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 次のコードでは、ビューのフィールド情報を取得するための、[Command](command-property-adox.md) プロパティおよび [Recordset](recordset-object-ado.md) オブジェクトの使用方法を示します。
 

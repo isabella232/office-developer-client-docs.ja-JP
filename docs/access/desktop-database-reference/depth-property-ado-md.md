@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a8866c325669eda9e915566d98dee7c815a1dbfe
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293988"
 ---
 # <a name="depth-property-ado-md"></a>Depth プロパティ (ADO MD)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [Level](level-object-ado-md.md) と階層のルートとの間にあるレベルの数を示します。
 
@@ -25,7 +25,7 @@ ms.locfileid: "28708376"
 
 整数型の値を取得します。値の取得のみが可能です。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-階層のルート **Level** では、 **Depth** の値はゼロ (0) になります。
+階層のルート **Level** では、**Depth** の値はゼロ (0) になります。
 

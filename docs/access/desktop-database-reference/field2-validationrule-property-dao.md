@@ -1,5 +1,5 @@
 ---
-title: Field2.ValidationRule プロパティ (DAO)
+title: Field2 プロパティ (DAO)
 TOCTitle: ValidationRule Property
 ms:assetid: 5464d2de-f3d7-5d6b-4fc5-66df6a5540cb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194105(v=office.15)
@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b6e9e50148f4b87a957ff2317b1b39522d7d4e1c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292651"
 ---
-# <a name="field2validationrule-property-dao"></a>Field2.ValidationRule プロパティ (DAO)
+# <a name="field2validationrule-property-dao"></a>Field2 プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-データの変更時またはテーブルへの追加時 (Microsoft Access ワークスペースのみ) に、フィールド内のデータを検証する値を設定または取得します。値の取得および設定が可能です。文字列型 ( **String**) の値を使用します。
+テーブルのフィールドを変更するかテーブルにフィールドを追加するときに、フィールド内のデータを検証する値を設定または取得します (Microsoft Access ワークスペースのみ)。値の取得および設定が可能です。文字列型 ( **String**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。"入力規則"
+*式*。規則
 
 *式***Field2**オブジェクトを返すオブジェクト式を指定します。
 
@@ -43,17 +43,17 @@ ms.locfileid: "28713192"
 <thead>
 <tr class="header">
 <th><p>オブジェクトの追加先</p></th>
-<th><p>使用例</p></th>
+<th><p>使用方法</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><strong>Index</strong></p></td>
-<td><p>サポートされません。</p></td>
+<td><p>サポートされていません</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>QueryDef</strong></p></td>
-<td><p>値の取得のみ可能です。</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Recordset</strong></p></td>
@@ -65,7 +65,7 @@ ms.locfileid: "28713192"
 </tr>
 <tr class="odd">
 <td><p><strong>TableDef</strong></p></td>
-<td><p>値の取得および設定が可能です。</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 </tbody>
 </table>
@@ -77,6 +77,6 @@ ms.locfileid: "28713192"
 
 
 > [!NOTE]
-> 文字列、整数以外の値に連結するプロパティを設定して、システム ・ パラメーターは、米国以外の小数点の記号、カンマなどを指定する場合 (たとえば、strRule ="価格&gt;" &amp; lngPrice でと lngPrice = 125,50)、エラーが発生時コードでは、任意のデータを検証しようとしています。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、Microsoft Acces データベース エンジンの SQL で小数点の記号として使用できるのはピリオドのみであるためです。
+> このプロパティに整数以外の値を連結した文字列を設定した場合、システムパラメーターでコンマ以外の小数点 (例: strrule = "PRICE &gt; " &amp; lngPrice, and lngPrice = 125, 50) を指定すると、エラーが発生します。コードがデータを検証しようとしています。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、Microsoft Acces データベース エンジンの SQL で小数点の記号として使用できるのはピリオドのみであるためです。
 
 

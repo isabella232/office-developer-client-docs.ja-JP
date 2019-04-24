@@ -8,25 +8,25 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 44cd0cb5632e64811de14f9abd3c78aac9203705
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292287"
 ---
 # <a name="getchunk-method-ado"></a>GetChunk メソッド (ADO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 サイズの大きいテキスト データやバイナリ データの [Field](field-object-ado.md) オブジェクトから、内容の全体または一部を返します。
 
 ## <a name="syntax"></a>構文
 
-*変数* = *フィールド*です。GetChunk (*サイズ*)
+*変数* = *フィールド*GetChunk (*サイズ*)
 
 ## <a name="return-value"></a>戻り値
 
-バリアント型 ( **Variant** ) の値を返します。
+バリアント型 (**Variant**) の値を返します。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -34,9 +34,9 @@ ms.locfileid: "28698184"
 |:--------|:----------|
 |*Size* |取得するバイト数または文字数と等しい長整数型 ( **Long** ) の式を指定します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**Field** オブジェクトで **GetChunk** メソッドを使用すると、オブジェクトから長いバイナリ データや文字データの一部または全体を取得できます。システム メモリに制限がある場合、 **GetChunk** メソッドを使用すると、長い値をセグメントに分けて操作できます。
+**Field** オブジェクトで **GetChunk** メソッドを使用すると、オブジェクトから長いバイナリ データや文字データの一部または全体を取得できます。システム メモリに制限がある場合、**GetChunk** メソッドを使用すると、長い値をセグメントに分けて操作できます。
 
 **GetChunk** への呼び出しによって返される値は、*variable* に格納されます。*Size* が残りのデータよりも大きい場合、**GetChunk** メソッドは、*variable* の余った部分を空白で埋めることはなく、残りのデータのみを返します。フィールドが空の場合、**GetChunk** メソッドは Null 値を返します。
 

@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d97c653f1bbcdc648de4641f7faf3b9e8fcb2d64
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292469"
 ---
 # <a name="filter-and-recordcount-properties-example-vc"></a>Filter プロパティと RecordCount プロパティの使用例 (VC++)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 この例では、[Filter](filter-property-ado.md) プロパティを使って、既存の [Recordset](recordset-object-ado.md) に適用されている特定の条件に基づいて新規 **Recordset** を開きます。この例では、 [RecordCount](recordcount-property-ado.md) プロパティを使って、2 つの **Recordset** 内のレコードの数を示します。このプロシージャを実行するには、FilterField 関数が必要です。
 
@@ -320,7 +320,7 @@ void PrintComError(_com_error &e)
 // EndFilterCpp 
 ```
 
-**FilterX.h**
+**filterx .h**
 
 ```cpp 
  

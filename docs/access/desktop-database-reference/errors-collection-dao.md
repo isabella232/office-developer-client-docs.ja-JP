@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: cf8e891936d4f8bd03535fa199026bc4ad8ff9ba
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293414"
 ---
 # <a name="errors-collection-dao"></a>Errors コレクション (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **Errors** コレクションには、格納されているすべての **Error** オブジェクトが含まれ、それぞれが DAO に関する単一の操作に対応しています。
 
 ## <a name="remarks"></a>注釈
 
-DAO オブジェクトに関係するすべての操作では、1 つ以上のエラーが発生する場合があります。エラーが発生するたびに、1 つ以上の **Error** オブジェクトが **DBEngine** オブジェクトの **Errors** コレクションに追加されます。別の DAO 操作によってエラーが発生すると、**Errors** コレクションがクリアされ、**Errors** コレクションに **Error** オブジェクトの新しいセットが配置されます。**Errors** コレクションの最高値のオブジェクト (DBEngine.Errors.Count - 1) は、Microsoft Visual Basic for Applications (VBA) の **Err** オブジェクトがレポートするエラーに対応します。
+DAO オブジェクトに関係するすべての操作では、1 つ以上のエラーが発生する場合があります。 エラーが発生するたびに、1 つ以上の **Error** オブジェクトが **DBEngine** オブジェクトの **Errors** コレクションに追加されます。 別の DAO 操作によってエラーが発生すると、 **Errors** コレクションがクリアされ、 **Errors** コレクションに **Error** オブジェクトの新しいセットが配置されます。 **Errors** コレクションの最高値のオブジェクト (DBEngine.Errors.Count - 1) は、Microsoft Visual Basic for Applications (VBA) の **Err** オブジェクトがレポートするエラーに対応します。
 
 エラーを生成しない DAO 操作が **Errors** コレクションに影響を及ぼすことはありません。
 
@@ -39,7 +39,7 @@ DAO オブジェクトに関係するすべての操作では、1 つ以上の�
 
 ## <a name="example"></a>例
 
-この例では、エラーを発生させてトラップし、 **Error** オブジェクトの **Description**、 **Number**、 **Source**、 **HelpContext**、および **HelpFile** の各プロパティを表示します。
+次の使用例は、エラーを強制的に発生させ、トラップし、生成された **Error** オブジェクトの **Description**、 **Number**、 **Source**、 **HelpContext**、および **HelpFile** の各プロパティを表示します。
 
 ```vb 
 Sub DescriptionX() 

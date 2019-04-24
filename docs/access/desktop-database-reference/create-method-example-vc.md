@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 17bb30a3af97c3ec83fd44c8a9e5d3c5dbf12d2a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295408"
 ---
 # <a name="create-method-example-vc"></a>Create メソッドの使用例 (VC++)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 次のコードでは、[Create](create-method-adox.md) メソッドを使用して新しい Microsoft Jet データベースを作成する方法を示します。
 

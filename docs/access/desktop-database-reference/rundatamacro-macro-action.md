@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 32945f0822682a9432d75ed1ac59117dde3cc0e9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306812"
 ---
 # <a name="rundatamacro-macro-action"></a>RunDataMacro マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**RunDataMacro**アクションを使用すると、名前付きデータ マクロを実行します。
+"RunDataMacro/データマクロの実行" アクションを使用して、名前付きデータ マクロを実行できます。
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
-" **RunDataMacro/データマクロの実行** " アクションの引数は次のとおりです。
+"RunDataMacro/データマクロの実行" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -48,21 +48,21 @@ ms.locfileid: "28709979"
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**RunDataMacro**アクションを使用すると、マクロ、名前付きデータ マクロでは、およびマクロの次のイベントの中で:**[マクロのイベントの後に削除](after-delete-macro-event.md)**、**[マクロのイベントの後に挿入](after-insert-macro-event.md)** と**[更新後のマクロのイベント](after-update-macro-event.md)** です。
+**RunDataMacro**アクションは、マクロ、マクロの名前付きデータマクロ、およびマクロイベントの終了後**[](after-delete-macro-event.md)**、マクロイベントの**[挿入](after-insert-macro-event.md)** 後、および更新後**[マクロイベント](after-update-macro-event.md)** の後に使用できます。
 
-データ マクロの名前は、それが関連付けられている (たとえば、 **Comments.AddComment**、 **AddComment**だけではなく) テーブルを含める必要があります。
+データマクロの名前には、追加先のテーブルを含める必要があります (たとえば、addcomment だけではなく****、**コメント**など)。
 
 マクロ デザイナーで実行するデータ マクロを選択すると、そのデータ マクロにパラメーターが必要であるかどうかが自動的に判断されます。パラメーターが必要な場合は、引数を入力するテキストボックスが表示されます。
 
-**RunDataMacro**アクションを含むマクロを実行するし、 **RunDataMacro**アクションに到達して、data という名前のマクロが実行されます。 Data という名前のマクロが完了したら、アクセスが元に戻りし、次のアクションを実行します。
+When you run a macro that contains the **RunDataMacro** action and it reaches the **RunDataMacro** action, Access runs the called data macro. When the called data macro has finished, Access returns to the original macro and runs the next action.
 
 ## <a name="example"></a>例
 
-次の例では、名前付きデータ マクロにパラメーターを渡す方法を示します。 RunDataMacro アクションを使用して、tblServiceRequests テーブルの dmGetCurrentServiceRequest のデータ マクロが呼び出されます。 DmGetCurrentServiceRequest が完了したら、CurrentServiceRequest 変数には、フォームのデータ マクロは、txtCurrentSR テキスト ボックスに書き込まれますが返されます。
+次の例は、名前付きデータマクロにパラメーターを渡す方法を示しています。 tblServiceRequests テーブルの dmGetCurrentServiceRequest data マクロは、RunDataMacro アクションを使用して呼び出されます。 dmGetCurrentServiceRequest が完了すると、CurrentServiceRequest 変数が返された形式で、データマクロが txtcurrentsr テキストボックスに書き込まれます。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     RunDataMacro

@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2c4e888c1077f143a773bdb4abf593170a53fbef
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294877"
 ---
 # <a name="databasename-property-dao"></a>Database.Name プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-指定したオブジェクトの名前を取得します。値の取得のみ可能です。文字列型 ( **String**) の値を使用します。
+指定したオブジェクトの名前を返します。 読み取り専用 **文字列** です。
 
 ## <a name="syntax"></a>構文
 
-*式*です。名
+*式*。拡張子
 
-*式***データベース**オブジェクトを表す変数です。
+*式***Database**オブジェクトを表す変数を取得します。
 

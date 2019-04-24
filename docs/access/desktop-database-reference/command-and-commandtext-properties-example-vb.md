@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 99570fc54cc7393d3dff7c51e81df086696b58f9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296193"
 ---
 # <a name="command-and-commandtext-properties-example-vb"></a>Command プロパティと CommandText プロパティの使用例 (VB)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 次のコードは、プロシージャのテキストを更新するための [Command](command-property-adox.md) プロパティの使用例を示しています。
 

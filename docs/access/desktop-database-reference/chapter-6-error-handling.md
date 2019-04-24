@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 14d3dc4b291d96a47e0fb67c0e7d837463cd4bf2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296410"
 ---
 # <a name="chapter-6-error-handling"></a>第 6 章: エラー処理
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ADO では、発生するエラーをさまざまな方法でアプリケーションに通知します。この章では、ADO の使用時に発生する可能性のあるエラーの種類、およびアプリケーションが通知を受ける方法について説明します。最後に、それらのエラーを処理する方法に関する提案を示します。
 
-## <a name="how-does-ado-report-errors"></a>ADO がエラーを報告する方法
+## <a name="how-does-ado-report-errors"></a>ADO でエラーが報告されるしくみ
 
 ADO では、次のようなさまざまな方法でエラーが通知されます。
 
@@ -44,4 +44,4 @@ ADO では、次のようなさまざまな方法でエラーが通知されま�
 - [フィールドに関連するエラー情報](field-related-error-information.md)
 - [レコードセットに関連するエラー情報](recordset-related-error-information.md)
 - [エラーの予測](anticipating-errors.md)
-- [他の言語 (ADO) でのエラーを処理](handling-errors-in-other-languages.md)
+- [他の言語でのエラー処理 (ADO)](handling-errors-in-other-languages.md)

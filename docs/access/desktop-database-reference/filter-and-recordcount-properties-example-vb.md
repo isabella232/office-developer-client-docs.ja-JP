@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f892349d2ddb9c8fc5063d3fbec37ca9ef0d469f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292483"
 ---
 # <a name="filter-and-recordcount-properties-example-vb"></a>Filter プロパティと RecordCount プロパティの使用例 (VB)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-次の使用例は、 ***Pubs***データベースの Publishers テーブルの**レコード セット**を開きます。 次に、 [Filter](filter-property-ado.md) プロパティを使って、特定の国/領域のパブリッシャーに対して表示されるレコードの数を制限します。 **RecordCount** プロパティは、フィルターが適用されているレコードセットとフィルターが適用されていないレコードセットとの相違を示すために使います。
+この例では、**Pubs** データベースの Publishers テーブルにある ***Recordset*** を開きます。 次に、 [Filter](filter-property-ado.md) プロパティを使って、特定の国/領域のパブリッシャーに対して表示されるレコードの数を制限します。 **RecordCount** プロパティは、フィルターが適用されているレコードセットとフィルターが適用されていないレコードセットとの相違を示すために使います。
 
 ```vb 
  

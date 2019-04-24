@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 15cb7d6c422a9d7b0fae17ab649b6cfbc1b497a4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293568"
 ---
 # <a name="emaildatabaseobject-macro-action"></a>EMailDatabaseObject マクロ アクション
 
-**に適用されます:** Access 2013 |Office 2013
+**適用対象:** Access 2013 |Office 2013
 
-**EMailDatabaseObject**アクションを使用すると、指定した Access データシート、フォーム、レポート、モジュール、またはデータ アクセス ページは、メール メッセージを表示および転送できます。
+You can use the **EMailDatabaseObject** action to include the specified Microsoft Access datasheet, form, report, module, or data access page in an electronic mail message, where it can be viewed and forwarded.
 
 > [!NOTE]
 > [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
 
-## <a name="settings"></a>設定値
+## <a name="settings"></a>設定
 
-**EMailDatabaseObject**アクションには、次の引数があります。
+"EMailDatabaseObject/データベースオブジェクトの電子メール送信" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -45,7 +45,7 @@ ms.locfileid: "28699920"
 <tbody>
 <tr class="odd">
 <td><p><strong>Object Type/オブジェクトの種類</strong></p></td>
-<td><p>メール メッセージに添付するオブジェクトの型。 <strong>テーブル</strong>(テーブル: データシートの場合)、<strong>クエリ</strong>(クエリ データシートの場合)、(フォームまたはフォームのデータシートの場合) の<strong>フォーム</strong>、<strong>レポート</strong>、<strong>モジュール</strong>、または<strong>データ アクセス ページ</strong>、<strong>サーバー ビュー</strong>、<strong>ストアド プロシージャ</strong>、または<strong>をクリックします。関数</strong>、[マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションの<strong>オブジェクトの種類</strong>ボックスにします。 マクロを送信することはできません。 アクティブ オブジェクトを添付する場合は、この引数でオブジェクトの種類を選択が、<strong>オブジェクト名</strong>の引数を空白のままにします。</p></td>
+<td><p>The type of object to include in the mail message. Click <strong>Table</strong> (for a table datasheet), <strong>Query</strong> (for a query datasheet), <strong>Form</strong> (for a form or form datasheet), <strong>Report</strong>, <strong>Module</strong>, or <strong>Data Access Page</strong>, <strong>Server View</strong>, <strong>Stored Procedures</strong>, or <strong>Function</strong> in the <strong>Object Type</strong> box in the <strong>Action Arguments</strong> section of the Macro Builder pane. You can't send a macro. If you want to include the active object, select its type with this argument, but leave the <strong>Object Name</strong> argument blank.  </p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Object Name/オブジェクト名</strong></p></td>
@@ -53,7 +53,7 @@ ms.locfileid: "28699920"
 </tr>
 <tr class="odd">
 <td><p><strong>Output Format/出力ファイル形式</strong></p></td>
-<td><p>含まれているオブジェクトを使用形式の種類。 選択できる形式の一覧は、<strong>オブジェクトの型</strong>引数で選択した種類に応じて変更されます。 使用可能な形式は、 <strong>Excel 97 - 2003年ブック (*.xls)</strong>、 <strong>Excel バイナリ ブック (*.xlsb)</strong>、 <strong>Excel ブック (*.xlsx)</strong>を含めることが<strong>HTML (*.htm、* .html)</strong>、 <strong>Microsoft Excel 5.0/95 ブック (*.xls)</strong>、PDF 形式の<strong></strong>、<strong>リッチ テキスト書式 (の式 *.rtf)</strong>、<strong>テキスト ファイル (*.txt)</strong>、または<strong>XPS 形式 (*.xps)</strong>。 <strong>出力形式</strong>] ボックスにします。 モジュールはテキスト形式でのみ送信できます。 データ アクセス ページは HTML 形式でのみ送信されます。 この引数を指定しないと、出力形式を確認するダイアログ ボックスが表示されます。</p></td>
+<td><p>The type of format you want used for the included object. The list of formats you can select from will change depending on what you select for the <strong>Object Type</strong> argument. 使用可能な形式には、excel <strong>97-excel 2003 ブック (* .xls</strong>)、 <strong>excel バイナリブック (* .xlsb)</strong>、 <strong>excel ブック (* .xlsx)</strong>、 <strong>HTML (* .htm、* .html)</strong>、 <strong>Microsoft Excel 5.0/95 ブック (* .xls</strong>)、 <strong>PDF 形式</strong>、<strong>リッチテキスト fomat (* .rtf)</strong>、<strong>テキストファイル (* .txt</strong>)、 <strong>xps 形式 (* .xps)</strong>。 in the <strong>Output Format</strong> box. Modules can be sent only in text format. Data access pages can only be sent in HTML format. If you leave this argument blank, Access prompts you for the output format.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>To/宛先</strong></p></td>
@@ -61,11 +61,11 @@ ms.locfileid: "28699920"
 </tr>
 <tr class="odd">
 <td><p><strong>Cc/CC</strong></p></td>
-<td><p>受信者名を<strong>[cc]</strong>に追加する (&quot;カーボン コピー&quot;)、メール メッセージ内の行です。 この引数を指定しない場合、メール メッセージの [ <strong>CC</strong>] 行が空白になります。</p></td>
+<td><p>メールメッセージの [ <strong>Cc</strong> ] (&quot;カーボンコピー&quot;) 行に登録するメッセージの受信者名を入力します。 この引数を指定しない場合、メール メッセージの [ <strong>CC</strong>] 行が空白になります。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Bcc/BCC</strong></p></td>
-<td><p>メッセージの受信者に<strong>Bcc</strong>を追加する名前 (&quot;ブラインド カーボン コピー&quot;)、メール メッセージ内の行です。 この引数を指定しない場合、メール メッセージの [ <strong>BCC</strong>] 行が空白になります。</p></td>
+<td><p><strong>Bcc</strong></p></td>
+<td><p>メールメッセージの<strong>Bcc</strong> (&quot;ブラインドカーボンコピー&quot;) 行に配置するメッセージの受信者名を指定します。 この引数を指定しない場合、メール メッセージの [ <strong>BCC</strong>] 行が空白になります。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Subject/件名</strong></p></td>
@@ -73,7 +73,7 @@ ms.locfileid: "28699920"
 </tr>
 <tr class="even">
 <td><p><strong>Message Text/メッセージ</strong></p></td>
-<td><p>データベース オブジェクトと共にメール メッセージに含めるテキストです。 オブジェクトの後に、メール メッセージの本文にこのテキストが表示されます。 この引数を空白のままにする場合追加のテキストが含まれていないメール メッセージにします。 <strong>オブジェクト型</strong>および<strong>オブジェクト名</strong>の引数を空白のままにする場合は、データベース オブジェクトにメッセージを送信するのにはこの引数を使用できます。</p></td>
+<td><p>Any text you want to include in the message in addition to the database object. This text appears in the main body of the mail message, after the object. If you leave this argument blank, no additional text is included in the mail message. If you leave the <strong>Object Type</strong> and <strong>Object Name</strong> arguments blank, you can use this argument to send a mail message without a database object.  </p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Edit Message/メッセージの編集</strong></p></td>
@@ -87,31 +87,31 @@ ms.locfileid: "28699920"
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 メール メッセージのオブジェクトは、指定した出力形式で出力されます。オブジェクトをダブルクリックすると、対応するソフトウェアが起動し、オブジェクトが開きます。
 
-**EMailDatabaseObject**アクションを使用するデータベース オブジェクトをメール メッセージに挿入するときは、次の規則が適用されます。
+The following rules apply when you use the **EMailDatabaseObject** action to include a database object in a mail message:
 
 - テーブル、クエリ、およびフォームの各データシートを送信できます。添付されるオブジェクトには、OLE オブジェクトを含むフィールドを除くデータシートのすべてのフィールドが出力されます。OLE オブジェクトを含むフィールドの列もオブジェクトに出力されますが、フィールド値は空白になります。
 
-- Yes/No 型フィールド (トグル ボタン、オプション ボタン、チェック ボックス) に連結されたコントロールの場合、出力ファイルには \uc1\u8211 ?1 (Yes) または 0 (No) の値が表示されます。
+- yes/No 型フィールド (トグルボタン、オプションボタン、チェックボックス) に連結されたコントロールの場合、出力ファイルには-1 (Yes) または 0 (No) の値が表示されます。
 
 - ハイパーリンク型 (Hyperlink) フィールドに連結されたテキスト ボックスの場合、出力ファイルには MS-DOS テキストを除くすべての出力形式のハイパーリンクが出力されます (MS-DOS テキストの場合、ハイパーリンクは通常のテキストとして出力されます)。
 
 - フォーム ビューのフォームを送信する場合、添付されるオブジェクトには常にフォームのデータシート ビューが含まれます。
 
-- レポートを送信する場合のみ、オブジェクトに含まれるコントロールはテキスト ボックスといくつかの場合) のラベルです。 他のすべてのコントロールは無視されます。 ヘッダーとフッターの情報も含まれていません。 唯一の例外は、Excel 形式でレポートを送信するときに、 **Sum**関数を使った式が含まれているグループ フッターのテキスト ボックスがオブジェクトに含まれています。 オブジェクトでは、ヘッダー、フッターおよび関数**Sum**以外の集計関数) には、他のコントロールが含まれていません。
+- If you send a report, the only controls that are included in the object are text boxes and (in some cases) labels. All other controls are ignored. Header and footer information is also not included. The only exception to this is that when you send a report in Excel format, a text box in a group footer containing an expression with the **Sum** function is included in the object. No other control in a header or footer (and no aggregate function other than **Sum**) is included in the object.
 
 - サブレポートはオブジェクトに取り込まれます。
 
 - HTML 形式のデータシート、フォーム、またはデータ アクセス ページを送信する場合は, .html ファイルが 1 つ作成されます。HTML 形式のレポートを送信する場合は, .html ファイルがレポートのページごとに 1 つずつ作成されます。
 
-Visual Basic for Applications (VBA) モジュールに**EMailDatabaseObject**アクションを実行するには、 **DoCmd**オブジェクトの**SendObject**メソッドを使用します。
+To run the **EMailDatabaseObject** action in a Visual Basic for Applications (VBA) module, use the **SendObject** method of the **DoCmd** object.
 
 ### <a name="about-the-contributor"></a>共同作成者について
 
-**によってリンクが提供されます。** Luke Chung [FMS, Inc.](https://www.fmsinc.com/)、創設者で、FMS, Inc. は、カスタム データベース ソリューションと開発ツールのリーディング ・ プロバイダーの社長です。
+**リンクの提供**元Luke Chung、 [fms、inc.](https://www.fmsinc.com/)、FMS、inc. の創設者および社長。これは、カスタムデータベースソリューションおよび開発者ツールのリーディングプロバイダーです。
 
 - [送信用の SendObject メソッドの使用に関する機能と制限](https://www.fmsinc.com/microsoftaccess/email/sendobject.html)
 

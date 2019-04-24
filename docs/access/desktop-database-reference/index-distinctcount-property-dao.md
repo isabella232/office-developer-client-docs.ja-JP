@@ -1,5 +1,5 @@
 ---
-title: Index.DistinctCount プロパティ (DAO)
+title: DistinctCount プロパティ (DAO)
 TOCTitle: DistinctCount Property
 ms:assetid: 24cb7247-76b4-1fce-c3c4-892f16634eff
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff191836(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 3264ea010db12f3fee6c16bd82fb19ed9bda1992
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291846"
 ---
-# <a name="indexdistinctcount-property-dao"></a>Index.DistinctCount プロパティ (DAO)
+# <a name="indexdistinctcount-property-dao"></a>DistinctCount プロパティ (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 関連付けられたテーブルに含まれる **[Index](index-object-dao.md)** オブジェクトの一意の値の数を示す値を返します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。DistinctCount
+*式*。DistinctCount
 
-*式***Index**オブジェクトを表す変数です。
+*式***Index**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 

@@ -1,5 +1,5 @@
 ---
-title: Connection.Execute メソッド (DAO)
+title: Connection メソッド (DAO)
 TOCTitle: Execute Method
 ms:assetid: d6140d4e-fa14-6455-525e-49d8aab3dff7
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835040(v=office.15)
@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8140dbe9bc0c68d467c011d77bc0c00cec7ad560
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295913"
 ---
-# <a name="connectionexecute-method-dao"></a>Connection.Execute メソッド (DAO)
+# <a name="connectionexecute-method-dao"></a>Connection メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 指定したオブジェクトのアクション クエリまたは SQL ステートメントを実行します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。(***クエリ******のオプション***) を実行します。
+*式*。Execute (***クエリ***、***オプション***)
 
-*式***接続**オブジェクトを表す変数です。
+*式***Connection**オブジェクトを表す変数を取得します。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -52,8 +52,8 @@ ms.locfileid: "28709930"
 </tr>
 <tr class="even">
 <td><p><em>Options</em></p></td>
-<td><p>省略可能</p></td>
-<td><p><strong>Variant (バリアント型)</strong></p></td>
+<td><p>Optional</p></td>
+<td><p><strong>Variant</strong></p></td>
 <td><p>[設定] で指定された、クエリのデータ整合性の特性を表す定数 (または定数の組み合わせ)。</p></td>
 </tr>
 </tbody>
@@ -62,7 +62,7 @@ ms.locfileid: "28709930"
 
 ## <a name="remarks"></a>注釈
 
-**[RecordsetOptionEnum](recordsetoptionenum-enumeration-dao.md)** 定数は、次は、オプションを使用できます。
+オプションには、次の**[RecordsetOptionEnum](recordsetoptionenum-enumeration-dao.md)** 定数を使用できます。
 
 <table>
 <colgroup>
@@ -77,20 +77,20 @@ ms.locfileid: "28709930"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>dbDenyWrite</strong></p></td>
+<td><p><strong>dbdenywrite</strong></p></td>
 <td><p>他のユーザーに対して書き込み権限を許可しません (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>組み合わせて</strong></p></td>
+<td><p><strong>dbInconsistent</strong></p></td>
 <td><p>(既定値) 矛盾した更新を実行します (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>指定できます。</strong></p></td>
+<td><p><strong>dbConsistent</strong></p></td>
 <td><p>一貫性のある更新を実行します (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbSQLPassThrough</strong></p></td>
-<td><p>SQL パススルー クエリを実行します。このオプションを設定すると、SQL ステートメントが ODBC データベースに渡されて処理されます (Microsoft Access ワークスペースのみ)。</p></td>
+<td><p>SQL パススルー クエリを実行します。 このオプションを設定すると、SQL ステートメントが ODBC データベースに渡されて処理されます (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbFailOnError</strong></p></td>

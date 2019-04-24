@@ -1,5 +1,5 @@
 ---
-title: Field.DefaultValue プロパティ (DAO)
+title: フィールドの DefaultValue プロパティ (DAO)
 TOCTitle: DefaultValue Property
 ms:assetid: 8a1c558b-c8f6-757d-c595-4e50b9b6ae3f
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197092(v=office.15)
@@ -8,25 +8,25 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 18fb4d3a4427db2b407b6a20507339fe83665c97
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293120"
 ---
-# <a name="fielddefaultvalue-property-dao"></a>Field.DefaultValue プロパティ (DAO)
+# <a name="fielddefaultvalue-property-dao"></a>フィールドの DefaultValue プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
 **[Field](field-object-dao.md)** オブジェクトの既定値を設定または取得します。 [**Fields**](fields-collection-dao.md) コレクションにまだ追加されていない **Field** オブジェクトの場合、このプロパティは値の取得および設定が可能です (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。既定値
+*式*。DefaultValue
 
-*式***Field**オブジェクトを表す変数です。
+*式***Field**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
@@ -34,7 +34,7 @@ ms.locfileid: "28711736"
 
 
 > [!NOTE]
-> [!メモ] ****TableDef**** オブジェクトで [Field](tabledef-object-dao.md) オブジェクトの DefaultValue プロパティを "GenUniqueID( )" と呼ばれる特殊な値に設定することもできます。これにより、新規レコードを追加または作成すると、このフィールドに乱数が割り当てられ、各レコードに一意の識別子が設定されます。フィールドの [Type](field-type-property-dao.md) プロパティは長整数型 ( **Long**) である必要があります。
+> また、 [TableDef](tabledef-object-dao.md)オブジェクトの**Field**オブジェクトの**DefaultValue**プロパティを "genuniqueid ()" という特殊な値に設定することもできます。 これにより、新規レコードを追加または作成すると、このフィールドに乱数が割り当てられ、各レコードに一意の識別子が設定されます。 フィールドの [Type](field-type-property-dao.md) プロパティは長整数型 ( **Long**) である必要があります。
 
 
 **DefaultValue** プロパティを使用できるかどうかは、次の表に示すように、 **Fields** コレクションを含むオブジェクトによって決まります。
@@ -53,15 +53,15 @@ ms.locfileid: "28711736"
 <tbody>
 <tr class="odd">
 <td><p>Index オブジェクト</p></td>
-<td><p>サポートしません。</p></td>
+<td><p>サポートされていません</p></td>
 </tr>
 <tr class="even">
 <td><p>QueryDef オブジェクト</p></td>
-<td><p>値の取得のみ可能です。</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="odd">
 <td><p>Recordset オブジェクト</p></td>
-<td><p>値の取得のみ可能です。</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="even">
 <td><p>Relation オブジェクト</p></td>
@@ -69,7 +69,7 @@ ms.locfileid: "28711736"
 </tr>
 <tr class="odd">
 <td><p>TableDef オブジェクト</p></td>
-<td><p>値の取得および設定が可能です。</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 </tbody>
 </table>

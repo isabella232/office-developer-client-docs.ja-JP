@@ -1,5 +1,5 @@
 ---
-title: ビューのコレクション (ADOX) 参照
+title: Views コレクション (ADOX) リファレンス
 TOCTitle: Views collection (ADOX)
 ms:assetid: 7f92e594-160d-4e4d-afc4-e422c2b5b305
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249542(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 03f662221fe91a35b574ee991a785384df5e1314
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306063"
 ---
-# <a name="views-collection-adox-reference"></a>ビューのコレクション (ADOX) 参照
+# <a name="views-collection-adox-reference"></a>Views コレクション (ADOX) リファレンス
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 - [Views コレクション (ADOX)](views-collection-adox.md)
-- [ビューのコレクションのプロパティ、メソッド、およびイベント (ADOX)](views-collection-properties-methods-and-events-adox.md)
+- [Views コレクションのプロパティ、メソッド、およびイベント (ADOX)](views-collection-properties-methods-and-events-adox.md)
 

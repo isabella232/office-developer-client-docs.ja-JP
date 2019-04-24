@@ -1,5 +1,5 @@
 ---
-title: ExecuteOptionEnum (デスクトップ データベース参照のアクセス)
+title: executeoptionenum (Access デスクトップデータベースリファレンス)
 TOCTitle: ExecuteOptionEnum
 ms:assetid: bd6d44a3-e471-7aa0-3e65-6775334de2ff
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249915(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: febeb3b52eb579647c995b01d6723a5c1f1b0c1f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293246"
 ---
 # <a name="executeoptionenum"></a>ExecuteOptionEnum
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 プロバイダーによるコマンドの実行方法を表します。
 
@@ -39,8 +39,7 @@ ms.locfileid: "28718309"
 <tr class="odd">
 <td><p><strong>adAsyncExecute</strong></p></td>
 <td><p>0x10</p></td>
-<td><p>コマンドを非同期に実行することを示します。
- この値は、<a href="commandtypeenum.md">CommandTypeEnum</a> の値 <strong>adCmdTableDirect</strong> と組み合わせて使用できません。</p></td>
+<td><p>コマンドを非同期に実行することを示します。 この値は、<a href="commandtypeenum.md">CommandTypeEnum</a> の値 <strong>adCmdTableDirect</strong> と組み合わせて使用できません。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adAsyncFetch</strong></p></td>
@@ -50,19 +49,17 @@ ms.locfileid: "28718309"
 <tr class="odd">
 <td><p><strong>adAsyncFetchNonBlocking</strong></p></td>
 <td><p>0x40</p></td>
-<td><p>取得中にメイン スレッドがブロックしないことを示します。要求された行がまだ取得されていない場合、現在の行が自動的にファイルの最後に移動します。
-</p><p>永続的に保存された <strong>Recordset</strong> を持つ <a href="stream-object-ado.md">Stream</a> から <a href="recordset-object-ado.md">Recordset</a> を開いた場合、<strong>adAsyncFetchNonBlocking</strong> は無効になり、操作は同期で実行され、ブロッキングが発生します。 <a href="commandtypeenum.md">adCmdTableDirect</a> オプションを使用して <strong>Recordset</strong> を開いた場合、<strong>adAsynchFetchNonBlocking</strong> は無効になります。</p></td>
+<td><p>取得中にメイン スレッドがブロックしないことを示します。 要求された行がまだ取得されていない場合、現在の行が自動的にファイルの最後に移動します。</p><p>永続的に保存された <strong>Recordset</strong> を持つ <a href="stream-object-ado.md">Stream</a> から <a href="recordset-object-ado.md">Recordset</a> を開いた場合、<strong>adAsyncFetchNonBlocking</strong> は無効になり、操作は同期で実行され、ブロッキングが発生します。 <a href="commandtypeenum.md">adCmdTableDirect</a> オプションを使用して <strong>Recordset</strong> を開いた場合、<strong>adAsynchFetchNonBlocking</strong> は無効になります。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adExecuteNoRecords</strong></p></td>
 <td><p>0x80</p></td>
-<td><p>コマンド テキストは、コマンドまたはストアド プロシージャ (たとえば、だけデータを挿入するコマンド) の行を返さないことを示します。 すべての行を取得する場合、破棄され、返されません。 <strong>adExecuteNoRecords</strong>は、<strong>コマンド</strong>または<strong>接続</strong>の<strong>Execute</strong>メソッドにオプションのパラメーターとしてだけ渡すことができます。</p></td>
+<td><p>コマンド テキストが、行を返さないコマンドまたはストアド プロシージャ (たとえば、データの挿入のみを行うコマンド) であることを示します。 取得した行があっても削除されるので、コマンドからは返されません。 <strong>adExecuteNoRecords</strong>は、<strong>コマンド</strong>または<strong>Connection</strong>の<strong>Execute</strong>メソッドに、省略可能なパラメーターとしてのみ渡すことができます。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adExecuteStream</strong></p></td>
-<td><p>0x400</p></td>
-<td><p>コマンドの実行結果がストリームとして返されることを示します。
- <strong>adExecuteStream</strong>は、<strong>コマンド</strong>の<strong>Execute</strong>メソッドにオプションのパラメーターとしてだけ渡すことができます。</p></td>
+<td><p>解像度</p></td>
+<td><p>コマンドの実行結果がストリームとして返されることを示します。 <strong>adExecuteStream</strong>は、 <strong>Command</strong> <strong>Execute</strong>メソッドにオプションのパラメーターとして渡すことができます。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adExecuteRecord</strong></p></td>
@@ -71,7 +68,7 @@ ms.locfileid: "28718309"
 <td><p><strong>CommandText</strong> が、<strong>Record</strong> オブジェクトとして返される単一の行を返すコマンドまたはストアド プロシージャであることを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adOptionUnspecified</strong></p></td>
+<td><p><strong>adoptionunspecified</strong></p></td>
 <td><p>-1</p></td>
 <td><p>コマンドが指定されていないことを示します。</p></td>
 </tr>
@@ -79,7 +76,7 @@ ms.locfileid: "28718309"
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC に相当
+### <a name="adowfc-equivalent"></a>ADO/WFC と同等
 
 パッケージ: **com.ms.wfc.data**
 
@@ -94,19 +91,19 @@ ms.locfileid: "28718309"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.ExecuteOption.ASYNCEXECUTE</p></td>
+<td><p>AdoEnums オプションの asyncexecute</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.ExecuteOption.ASYNCFETCH</p></td>
+<td><p>AdoEnums のオプション。 asyncfetch</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.ExecuteOption.ASYNCFETCHNONBLOCKING</p></td>
+<td><p>AdoEnums オプション。 asyncfetchnonblocking ブロッキング</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.ExecuteOption.NORECORDS</p></td>
+<td><p>AdoEnums NORECORDS</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.ExecuteOption.UNSPECIFIED</p></td>
+<td><p>AdoEnums オプション。未指定</p></td>
 </tr>
 </tbody>
 </table>

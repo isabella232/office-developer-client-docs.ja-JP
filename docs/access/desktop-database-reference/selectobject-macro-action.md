@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 6287bc8a66858d51d65c37477eed7a86cd7839af
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308730"
 ---
 # <a name="selectobject-macro-action"></a>SelectObject マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**SelectObject**アクションを使用すると、指定されたデータベース オブジェクトを選択します。
+"SelectObject/オブジェクトの選択" アクションを使用すると、指定したデータベース オブジェクトを選択できます。
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**SelectObject**アクションには、次の引数があります。
+"SelectObject/オブジェクトの選択" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ ms.locfileid: "28721851"
 </tr>
 <tr class="even">
 <td><p><strong>オブジェクト名</strong></p></td>
-<td><p>選択するオブジェクトの名前です。 [ <strong>オブジェクト名</strong> ] ボックスには、データベース内のオブジェクトのうち、" <strong>Object Type/オブジェクトの種類</strong> " 引数で選択した種類のオブジェクトがすべて表示されます。 これは、 <strong>[はい]</strong>に、ナビゲーション ウィンドウで引数を設定しない限り、必要な引数です。</p><p><strong>注</strong>: Access プロジェクト (.adp) の<STRONG>オブジェクト名</STRONG>] ボックスに<STRONG>サーバー ビュー</STRONG>、<STRONG>ダイアグラム</STRONG>、または<STRONG>ストアド プロシージャ</STRONG>のオブジェクトのオブジェクト名が表示されません。</p></td>
+<td><p>選択するオブジェクトの名前を指定します。 [ <strong>オブジェクト名</strong>] ボックスには、データベース内のオブジェクトのうち、 <strong>Object Type/オブジェクトの種類</strong> 引数で選択した種類のオブジェクトがすべて表示されます。 "In Navigation Pane/ナビゲーションウィンドウ" 引数を<strong>[Yes/はい]</strong>に設定しない限り、この引数は省略できません。</p><p><strong>注</strong>:<STRONG>サーバービュー</STRONG>、<STRONG>ダイアグラム</STRONG>、または<STRONG>ストアドプロシージャ</STRONG>オブジェクトのオブジェクト名は、Access プロジェクト (.adp) の [<STRONG>オブジェクト名</STRONG>] ボックスには表示されません。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>In Navigation Pane/ナビゲーション ウィンドウ内</strong></p></td>
@@ -56,15 +56,15 @@ ms.locfileid: "28721851"
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**SelectObject**アクションは、フォーカスを受け取ることができるすべての Access オブジェクトで動作します。 このアクションは、指定したオブジェクトにフォーカスを提供し、オブジェクトを示して 場合は、非表示には。 オブジェクトがフォームの場合は、 **SelectObject**アクション **[はい]** に、フォームの**Visible**プロパティを設定して (たとえば、または作業ウィンドウ固定のポップアップ フォームの場合) として、フォームのプロパティで設定されているモードにフォームを返します。
+The **SelectObject** action works with any Access object that can receive the focus. This action gives the specified object the focus and shows the object if it's hidden. If the object is a form, the **SelectObject** action sets the form's **Visible** property to **Yes** and returns the form to the mode set by its form properties (for example, as a modal or pop-up form).
 
-オブジェクトが、ほかのウィンドウのいずれかで開いていない場合、 **[はい]** を**ナビゲーション ウィンドウで**引数を設定することによって選択のナビゲーション ウィンドウでできます。 **ナビゲーション ウィンドウ**に引数を**No**に設定するが表示されていないオブジェクトを選択しようとするときにエラー メッセージが表示されます。
+If the object isn't open in one of the other Access windows, you can select it in the Navigation Pane by setting the **In Navigation Pane** argument to **Yes**. If you set the **In Navigation Pane** argument to **No**, an error message appears when you try to select an object that isn't open.
 
-多くの場合、追加アクションを実行するオブジェクトを選択するのには、このアクションを使用する場合があります。 たとえば、タブ付きドキュメントではなく重ねて表示されるウィンドウを使用するように構成にアクセスする場合がする (アクションを使用して**RestoreWindow** ) 最小化されているオブジェクトを復元するか、使用するオブジェクトを含むウィンドウを最大化(アクションを使用して、 **MaximizeWindow** )。
+Often, you might use this action to select an object on which you want to perform additional actions. For example, if you have Access configured to use overlapping windows instead of tabbed documents, you may want to restore an object that has been minimized (by using the **RestoreWindow** action) or maximize a window that contains an object you want to work with (by using the **MaximizeWindow** action).
 
-フォームを選択した場合は、フォーム上の特定の領域に移動する**GoToControl**、 **GoToRecord**、 **GoToPage**操作を使用できます。 **GoToRecord**アクションは、データシートにも有効です。
+If you select a form, you can use the **GoToControl**, **GoToRecord**, and **GoToPage** actions to move to specific areas on the form. The **GoToRecord** action also works for datasheets.
 
-実行するには、 **SelectObject**アクションを Visual Basic for Applications (VBA) モジュールで**DoCmd**オブジェクトの**SelectObject**メソッドを使用します。
+To run the **SelectObject** action in a Visual Basic for Applications (VBA) module, use the **SelectObject** method of the **DoCmd** object.
 

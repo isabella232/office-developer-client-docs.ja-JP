@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9fcf837a02c40d11fecfa56b8aa34ac80a848411
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296459"
 ---
 # <a name="chapter-3-examining-data"></a>第 3 章: データの検査
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 2 章では、データ ソースのデータを **Recordset** オブジェクトとして取得する方法について説明しました。この章では、 **Recordset** 間を移動してそのデータを表示する方法を含め、 **Recordset** の詳細について説明します。
 
@@ -67,12 +67,12 @@ End Sub
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>フィールド 0<br />
-名 = [商品コード]</p></th>
-<th><p>フィールド 1<br />
-名 = [商品名]</p></th>
-<th><p>フィールド 2<br />
-名 = [単価]</p></th>
+<th><p>フィールド0<br />
+Name = ProductID</p></th>
+<th><p>フィールド1<br />
+Name = ProductName</p></th>
+<th><p>フィールド2<br />
+Name = UnitPrice</p></th>
 </tr>
 </thead>
 <tbody>
@@ -82,12 +82,12 @@ End Sub
 <td><p>30.0000</p></td>
 </tr>
 <tr class="even">
-<td><p>14</p></td>
+<td><p>第</p></td>
 <td><p>Tofu</p></td>
 <td><p>23.2500</p></td>
 </tr>
 <tr class="odd">
-<td><p>28</p></td>
+<td><p>個</p></td>
 <td><p>Rssle Sauerkraut</p></td>
 <td><p>45.6000</p></td>
 </tr>
@@ -105,10 +105,10 @@ End Sub
 </table>
 
 
-次のセクションでは、このサンプル**Recordset**でのカーソルの現在位置を検索する方法について説明します。
+次のセクションでは、このサンプル**Recordset**でのカーソルの現在の位置を特定する方法について説明します。
 
 この章では、次のトピックについて説明します。
 
-- [(ADO) の現在のレコードを検索します。](locating-the-current-record.md)
-- [(ADO) のデータを移動します。](navigating-through-the-data.md)
-- [(ADO) レコード セットの構造を理解します。](understanding-recordset-structure.md)
+- [現在のレコードを検索する (ADO)](locating-the-current-record.md)
+- [データ間を移動する (ADO)](navigating-through-the-data.md)
+- [Recordset 構造について (ADO)](understanding-recordset-structure.md)

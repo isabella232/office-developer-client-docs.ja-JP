@@ -1,5 +1,5 @@
 ---
-title: ドキュメントのプロパティ (DAO)
+title: Document プロパティ (DAO)
 TOCTitle: Properties
 ms:assetid: 44c2192b-1dab-482c-9952-7fdae549c228
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn124584(v=office.15)
@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a3ec228462e92607a86d45fecfc7024e24d6bd78
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293764"
 ---
-# <a name="document-properties-dao"></a>ドキュメントのプロパティ (DAO)
+# <a name="document-properties-dao"></a>Document プロパティ (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-- [Document.Container プロパティ (DAO)](document-container-property-dao.md)
-- [Document.DateCreated プロパティ (DAO)](document-datecreated-property-dao.md)
-- [Document.LastUpdated プロパティ (DAO)](document-lastupdated-property-dao.md)
+- [Container プロパティ (DAO)](document-container-property-dao.md)
+- [datecreated プロパティプロパティ (DAO)](document-datecreated-property-dao.md)
+- [文書の lastupdated プロパティ (DAO)](document-lastupdated-property-dao.md)
 - [Document.Name プロパティ (DAO)](document-name-property-dao.md)
-- [Document.Properties プロパティ (DAO)](document-properties-property-dao.md)
+- [Properties プロパティ (DAO)](document-properties-property-dao.md)
 

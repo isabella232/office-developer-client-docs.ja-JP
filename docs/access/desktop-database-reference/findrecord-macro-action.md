@@ -12,19 +12,19 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 086993095daef3ff4ad87aed9f572a09124a9d31
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292376"
 ---
 # <a name="findrecord-macro-action"></a>FindRecord マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **FindRecord** アクションは、 **FindRecord/レコードの検索** 引数で指定した抽出条件を満たす最初のデータのインスタンスを検索するために使用します。カレント レコード、次のレコード、前のレコード、または最初のレコードのデータに対する検索で使用できます。アクティブなテーブル データシート、クエリ データシート、フォーム データシート、またはフォームのレコードを検索できます。
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
 **FindRecord** アクションの引数は次のとおりです。
 
@@ -41,8 +41,8 @@ ms.locfileid: "28709972"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>検索する文字列</strong></p></td>
-<td><p>レコードを検索するデータを指定します。 テキスト、数値、または、等号 (=) に続く式を入力日付を入力してください (<strong>=</strong>)、[マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションで<strong>[検索する文字列</strong>ボックスします。 ワイルドカード文字を使用することができます。 この引数は省略できません。</p></td>
+<td><p><strong>Find What/検索する文字列</strong></p></td>
+<td><p>レコード内で検索するデータを指定します。 [マクロビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションの [<strong>検索</strong>する文字列] ボックスに、検索する文字列、数値、または日付を入力します。この式の前に等号 (<strong>=</strong>) を入力します。 ワイルドカード文字を使用できます。 この引数は省略できません。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Match/検索条件</strong></p></td>
@@ -59,10 +59,8 @@ ms.locfileid: "28709972"
 <tr class="odd">
 <td><p><strong>Search As Formatted/表示書式で検索</strong></p></td>
 <td><p>表示書式でデータを検索するかどうかを指定します。Microsoft Office Access 2007 で、フィールドに表示されている書式でデータを検索する場合は [ <strong>はい</strong>] を、データベースに格納されている形式 (表示されている形式とは異なる場合があります) で検索する場合は [ <strong>いいえ</strong>] をクリックします。既定値は [ <strong>いいえ</strong>] です。この機能を使用すると、特定の書式のデータだけを検索することができます。たとえば、コンマが含まれる書式が設定されたフィールドで "1,234" の値を検索する場合は、[ <strong>はい</strong>] をクリックし、" <strong>Find What/検索データ</strong> " 引数に「 <strong>1,234</strong> 」と入力します。「 <strong>1234</strong>」と入力してこのフィールドでデータを検索する場合は、[ <strong>いいえ</strong>] をクリックします。日付の検索では、2003-07-08 のような書式が設定された日付を検索する場合は [ <strong>はい</strong>] をクリックします。[ <strong>いいえ</strong>] をクリックした場合は、Windows コントロール パネルの地域の設定で設定されている書式を使って " <strong>Find What/検索データ</strong> " 引数を入力します。この書式は、地域の設定の [ <strong>日付</strong>] タブにある [ <strong>短い形式</strong>] ボックスに表示されています。たとえば、[ <strong>短い形式</strong>] ボックスに [ <strong>yy/M/d</strong>] が設定されている場合は、「03/7/8」と入力すると、このフィールドの書式にかかわらず、2003 年 7 月 8 日に対応する [日付] フィールドのすべてのエントリが検索されます。  </p>
-<p><strong>注</strong>:<strong>全体のフィールド</strong>に<strong>一致する</strong>引数を設定する現在のフィールドにバインドされたコントロールがある場合のみに<strong>表示書式で検索</strong>引数を反映、<strong>現在のフィールド</strong>の引数が<strong>[はい]</strong>、および<strong>の一致に設定ケース</strong>の引数を<strong>No</strong>に設定します。</p>
-<p><strong>Match Case/大小文字区別</strong>引数を [<strong>はい</strong>] に設定した場合、または <strong>Only Current Field/カレント フィールドのみ検索</strong>引数を [<strong>いいえ</strong>] に設定した場合は、<strong>Search As Formatted/表示書式で検索</strong>引数を [<strong>はい</strong>] に設定する必要があります。
-
-</p></td>
+<p><strong>注</strong>:<strong>書式設定</strong>された検索は、現在のフィールドが連結コントロールの場合にのみ有効になり、 <strong>match</strong>引数は<strong>フィールド全体</strong>に設定され、<strong>現在のフィールド</strong>の引数のみが<strong>[はい</strong>] に設定され、<strong>一致するCase</strong>引数を<strong>No</strong>に設定します。</p>
+<p>If you set <strong>Match Case</strong> to <strong>Yes</strong> or <strong>Only Current Field</strong> to <strong>No</strong>, you must also set <strong>Search As Formatted</strong> to <strong>Yes</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Only Current Field/カレント フィールドのみ</strong></p></td>
@@ -76,7 +74,7 @@ ms.locfileid: "28709972"
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 マクロの **FindRecord** アクションが実行されると、各レコードで指定データが検索されます (検索順序は **Search/検索** 引数の設定値によって決まります)。指定データが見つかると、そのレコードの該当データが選択されます。
 
@@ -96,14 +94,12 @@ ms.locfileid: "28709972"
 <table>
 <thead>
 <tr class="header">
-<th><img src="media/access-alert-security.gif" title="セキュリティに関する注意" alt="Security note" /><strong>セキュリティ メモ</strong></th>
+<th><img src="media/access-alert-security.gif" title="セキュリティ メモ" alt="Security note" /><strong>セキュリティに関するメモ</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>
-      重要な情報または機密情報には <strong>SendKeys</strong> ステートメントまたは AutoKeys マクロを使用しないでください。悪意のあるユーザーがキー入力を途中で遮り、コンピューターおよびデータのセキュリティを侵害するおそれがあります。
-</td>
+<td>重要情報や機密情報では、<strong>SendKeys</strong> 文や AutoKeys マクロを使用しないようにしてください。悪意のあるユーザーがキーストロークを不正に取得して、コンピューターやデータのセキュリティを脅かす可能性があります。</td>
 </tr>
 </tbody>
 </table>

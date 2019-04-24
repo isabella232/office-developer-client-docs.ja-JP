@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2dc25621a49d8fd23078a926d6ec6c5de54e54d9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292112"
 ---
 # <a name="group-macro-statement"></a>Group マクロ ステートメント
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **Group** ステートメントでは、マクロ内で展開または折りたたみできるアクションのブロックを指定できます。
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
 **Group** アクションの引数は次のとおりです。
 
@@ -40,7 +40,7 @@ ms.locfileid: "28713997"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Description</strong></p></td>
+<td><p><strong>説明</strong></p></td>
 <td><p>いいえ</p></td>
 <td><p>折りたたんだときに、グループのタイトルとして表示する文字列。</p></td>
 </tr>
@@ -50,5 +50,5 @@ ms.locfileid: "28713997"
 
 ## <a name="remarks"></a>注釈
 
-**グループ**・ ステートメントでは、個別に実行できるマクロの領域が定義されていません。 **[サブマクロ](submacro-macro-statement.md)** ステートメントを使用すると、**マクロ デザイナー** ] ウィンドウで個別に実行するアクションのセットを定義します。
+The **Group** statment does not define a region of a macro that can be executed separately. Use the **[Submacro](submacro-macro-statement.md)** statment to define a set of actions to be executed separately in the **Macro Designer** window.
 

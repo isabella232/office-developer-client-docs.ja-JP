@@ -1,5 +1,5 @@
 ---
-title: Recordset2.BatchCollisionCount プロパティ (DAO)
+title: BatchCollisionCount プロパティ (DAO)
 TOCTitle: BatchCollisionCount Property
 ms:assetid: 997dfbb3-673c-8813-f51b-ab8d95093c4f
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197961(v=office.15)
@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 33650b9fdbaf7fbc9266c8c778199e1138cd5b21
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307484"
 ---
-# <a name="recordset2batchcollisioncount-property-dao"></a>Recordset2.BatchCollisionCount プロパティ (DAO)
+# <a name="recordset2batchcollisioncount-property-dao"></a>BatchCollisionCount プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ## <a name="syntax"></a>構文
 
-*式*です。BatchCollisionCount
+*式*。BatchCollisionCount
 
-*式***Recordset2**オブジェクトを表す変数です。
+*式***Recordset2**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
@@ -35,7 +35,7 @@ ms.locfileid: "28706654"
 
 ## <a name="example"></a>例
 
-次の使用例は、 **BatchCollisionCount** プロパティと **Update** メソッドを使用して、バッチ更新を強制することで競合を解決するバッチ更新を示します。
+この例では、 **BatchCollisionCount** プロパティおよび **Update** メソッドを使用して一括更新を実行し、その一括更新ですべての競合を解決する方法を示します。
 
 ```vb 
 Sub BatchX() 

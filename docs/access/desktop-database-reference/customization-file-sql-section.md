@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8ae259589cc8d4945068901c59105425599edc64
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295136"
 ---
 # <a name="customization-file-sql-section"></a>カスタマイズ ファイルの SQL セクション
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **sql** セクションには、クライアントのコマンド文字列を置き換える新規 SQL 文字列を含めることができます。このセクションに SQL 文字列がない場合、このセクションは無視されます。
 
-新規 SQL 文字列は、*パラメーター化された*可能性があります。 つまり、(かっこで囲まれたコンマ区切りのリストで指定)、クライアントのコマンド文字列の*識別子*に対応する引数 ('?' の文字で指定)、 **sql**セクションの SQL 文字列内のパラメーターを置き換えることができます。 識別子と引数のリストは、関数呼び出しと同じように動作します。
+新しい SQL 文字列を*パラメーター化*することができます。 つまり、 **sql**セクションの sql 文字列 (' ? ' 文字で示される) のパラメーターは、クライアントのコマンド文字列 (かっこで囲まれたコンマ区切りのリストで指定されています) の*識別子*で、対応する引数によって置き換えられます。 The identifier and argument list behave like a function call.
 
-たとえば、SQL セクション ヘッダーは、クライアントのコマンド文字列は、"CustomerByID(4)"を\[SQL CustomerByID\] 、新しい SQL セクションの文字列で、"を選択\*お客様の場所を [得意先コード] から = の ?」です。 ハンドラーを生成しますが、SQL セクション ヘッダーは、 \[SQL CustomerByID\] 、新しい SQL セクションの文字列で、"を選択\*お客様の場所を [得意先コード] から = の ?」です。 ハンドラーが生成されます"を選択\*お客様の場所を [得意先コード] から = の 4」と、その文字列を使用して、データ ソースのクエリを実行するのには。
+たとえば、クライアントのコマンド文字列が "CustomerByID (4)" で、sql セクションヘッダーが\[sql CustomerByID\]で、新しい SQL セクション文字列が "CustomerID = ? の\*顧客から選択" であるとします。 ハンドラーが生成するので、sql セクションヘッダー \[は sql\] CustomerByID で、新しい sql セクション文字列は "CustomerID \* : 得意先から選択してください = ?" です。 ハンドラーは、[CustomerID = \* 4 の顧客から選択] を生成し、その文字列を使用してデータソースに対してクエリを実行します。
 
 新規 SQL ステートメントが Null 文字列 ("") の場合、このセクションは無視されます。
 
@@ -48,7 +48,7 @@ SQL = " "
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>指定項目</p></th>
+<th><p>パーツ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>

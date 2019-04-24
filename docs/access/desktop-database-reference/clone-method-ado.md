@@ -1,5 +1,5 @@
 ---
-title: メソッドを ActiveX データ オブジェクト (ADO) の複製します。
+title: Clone メソッド-ActiveX Data Objects (ADO)
 TOCTitle: Clone method (ADO)
 ms:assetid: ca9b2b76-90bf-9a60-2611-3cb4977d5591
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249984(v=office.15)
@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 095191bbfe55f2c38529cb1c260979c48dd2d5f1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296347"
 ---
 # <a name="clone-method-ado"></a>Clone メソッド (ADO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-既存の [Recordset](recordset-object-ado.md) オブジェクトから **Recordset** オブジェクトの複製を作成します。必要に応じて、複製を読み取り専用に指定できます。
+既存の [Recordset](recordset-object-ado.md) オブジェクトから **Recordset** オブジェクトの複製を作成します。 必要に応じて、複製を読み取り専用に指定できます。
 
-## <a name="syntax"></a>書式
+## <a name="syntax"></a>構文
 
-**設定***rstDuplicate* =  *rstOriginal*。クローン (*LockType*)
+**設定***rstduplicate* =  *rstOriginal*。Clone (*LockType*)
 
 ## <a name="return-value"></a>戻り値
 
@@ -32,13 +32,13 @@ ms.locfileid: "28702965"
 
 |パラメーター|説明|
 |:--------|:----------|
-|*rstDuplicate* |作成する **Recordset** オブジェクトの複製を示すオブジェクト変数です。|
+|*rstduplicate* |作成する **Recordset** オブジェクトの複製を示すオブジェクト変数です。|
 |*rstOriginal* |複製元の **Recordset** オブジェクトを示すオブジェクト変数です。|
-|*ロック。* |省略可能です。複製元 [Recordset](locktypeenum.md) のロックの種類にするか、または読み取り専用 **Recordset** にするかを指定する、 **LockTypeEnum** の値です。有効な値は、 **adLockUnspecified** または **adLockReadOnly** です。|
+|*LockType* |省略可能です。複製元 [Recordset](locktypeenum.md) のロックの種類にするか、または読み取り専用 **Recordset** にするかを指定する、 **LockTypeEnum** の値です。有効な値は、 **adLockUnspecified** または **adLockReadOnly** です。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**Clone** メソッドは、 **Recordset** オブジェクトの複製を複数作成する場合に使用します。特に、レコードセットの複数のカレント レコードを保持したい場合には、このメソッドを使用します。 **Clone** メソッドを使用した方が、元の **Recordset** オブジェクトと同じ定義で新しいオブジェクトを作成して開くよりも効率的です。
+**Clone** メソッドは、**Recordset** オブジェクトの複製を複数作成する場合に使用します。特に、レコードセットの複数のカレント レコードを保持したい場合には、このメソッドを使用します。**Clone** メソッドを使用した方が、元の **Recordset** オブジェクトと同じ定義で新しいオブジェクトを作成して開くよりも効率的です。
 
 元の [Recordset](filter-property-ado.md) で **Filter** プロパティが設定されていても、複製には適用されません。結果をフィルターするには、新しい **Recordset** の **Filter** プロパティを設定する必要があります。既存の **Filter** 値をコピーする最も簡単な方法は、
 
@@ -52,9 +52,9 @@ ms.locfileid: "28702965"
 
 発生する **Recordset** イベントの中には、すべての **Recordset** 複製において発生するものがあります。ただし、複製された **Recordset** によってカレント レコードが異なる可能性があるため、複製ではイベントが無効である場合もあります。
 
-たとえば、あるフィールドの値を変更すると、変更された [Recordset](willchangefield-and-fieldchangecomplete-events-ado.md) とすべての複製で、 **WillChangeField** イベントが発生します。 **WillChangeField**イベント (変更ありませんが行われた) クローンとして作成された**レコード セット**の*フィールド*・ パラメーターという用語を現在よりも別のレコードがありますクローンの現在のレコードのフィールドのレコード、元の**レコード セット**の変更が発生しました。
+たとえば、あるフィールドの値を変更すると、変更された **Recordset** とすべての複製で、[WillChangeField](willchangefield-and-fieldchangecomplete-events-ado.md) イベントが発生します。複製された (変更されていない) **Recordset** の **WillChangeField** イベントの *Fields* パラメーターは、その複製のカレント レコードのフィールドを参照するだけであり、変更が発生した元の **Recordset** のカレント レコードとは異なる可能性があります。
 
-次の表は、すべての **Recordset** イベントの一覧と、 **Clone** メソッドを使用して生成されたすべてのレコードセット複製に対してそのイベントが有効で発生するかどうかを示しています。
+次の表は、すべての **Recordset** イベントの一覧と、**Clone** メソッドを使用して生成されたすべてのレコードセット複製に対してそのイベントが有効で発生するかどうかを示しています。
 
 <table>
 <colgroup>

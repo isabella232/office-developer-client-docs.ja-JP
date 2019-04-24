@@ -1,5 +1,5 @@
 ---
-title: Field.ForeignName プロパティ (DAO)
+title: ForeignName プロパティ (DAO)
 TOCTitle: ForeignName Property
 ms:assetid: 5f412ab4-173b-9530-eb4f-71ee30bed9e3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194762(v=office.15)
@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 7c340eee9972e8247654ec863ba0ef4588ef65f8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293106"
 ---
-# <a name="fieldforeignname-property-dao"></a>Field.ForeignName プロパティ (DAO)
+# <a name="fieldforeignname-property-dao"></a>ForeignName プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 リレーションシップの主テーブルのフィールドに対応する、外部キー側のテーブルの **[Field](field-object-dao.md)** オブジェクトの名前を指定する値を設定または取得します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。ForeignName
+*式*。ForeignName
 
-*式***Field**オブジェクトを表す変数です。
+*式***Field**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
@@ -33,9 +33,9 @@ ms.locfileid: "28708467"
 
 **Relation** オブジェクトの **Fields** コレクションに属する **Field** オブジェクトのみが、 **ForeignName** プロパティをサポートできます。
 
-[Field](connection-name-property-dao.md) オブジェクトの ****Name**** プロパティおよび **ForeignName** プロパティの設定値によって、リレーションシップの主テーブルと外部キー側のテーブル内にある対応するフィールドの名前が指定されます。 [Relation](relation-table-property-dao.md) オブジェクトの [**Table**](relation-foreigntable-property-dao.md) プロパティおよび ****ForeignTable**** プロパティの設定値によって、リレーションシップの主テーブルと外部キー側のテーブルが決まります。
+**Field**オブジェクトの**[Name](connection-name-property-dao.md)** プロパティと**ForeignName**プロパティの設定値は、リレーションシップの主テーブルと外部キー側のテーブルの対応するフィールドの名前を指定します。 **Relation**オブジェクトの**[Table](relation-table-property-dao.md)** プロパティと**[ForeignTable](relation-foreigntable-property-dao.md)** プロパティの設定値によって、リレーションシップの主テーブルと外部キー側のテーブルが決まります。
 
-たとえば、ValidParts テーブルに格納された有効な部品コード (フィールド名 PartNo 内) のリストがあり、OrderItem テーブルに部品コードが入力された場合に OrderItem テーブルとのリレーションシップを確立するには、ValidParts テーブルにその部品コードが既に存在している必要があります。ValidParts テーブルに部品コードがなく、 [Relation](field-attributes-property-dao.md) オブジェクトの ****Attributes**** プロパティが **dbRelationDontEnforce** に設定されていない場合、トラップ可能なエラーが発生します。
+たとえば、ValidParts テーブルに有効な部品コード (PartNo という名前のフィールド) の一覧が格納されている場合、OrderItem テーブルに部品コードが入力されるときには、その部品コードが ValidParts テーブルに既に存在している必要があるという、OrderItem テーブルとのリレーションシップを設定できます。 このパーツコードが validparts テーブルに存在せず、 **Relation**オブジェクトの**[Attributes](field-attributes-property-dao.md)** プロパティを**dbRelationDontEnforce**に設定していない場合は、トラップ可能なエラーが発生します。
 
 この例では、ValidParts テーブルが外部キー側のテーブルになるため、 **Relation** オブジェクトの **ForeignTable** プロパティが ValidParts に設定され、 **Relation** オブジェクトの **Table** プロパティが OrderItem に設定されます。 **Relation** オブジェクトの **Fields** コレクション内にある **Field** オブジェクトの **Name** プロパティおよび **ForeignName** プロパティは、PartNo に設定されます。
 

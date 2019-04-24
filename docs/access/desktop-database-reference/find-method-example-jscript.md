@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e70a9bcc90348d6be48b7d681b6273b1fdd9201f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292392"
 ---
 # <a name="find-method-example-jscript"></a>Find メソッドの使用例 (JScript)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-次の使用例では、[レコード セット](recordset-object-ado.md)オブジェクトの[Find](find-method-ado.md)メソッドを使用して、G. カットの文字で始まる名前、 ***Northwind***データベース内の会社を表示し、メモ帳または別のテキスト エディターに次のコードを貼り付けし、**として保存するにはFindJS.asp**。
+この例では、 [Recordset](recordset-object-ado.md)オブジェクトの[Find](find-method-ado.md)メソッドを使用して、名前が G で始まる***Northwind***データベース内の会社を検索して表示します。次のコードを切り取って、メモ帳などのテキストエディターに貼り付けて保存**します。findjs .asp**.
 
 ```javascript 
  

@@ -1,5 +1,5 @@
 ---
-title: Recordset.CacheSize プロパティ (DAO)
+title: Recordset プロパティ (DAO)
 TOCTitle: CacheSize Property
 ms:assetid: 8632f5fb-6e5d-5a3e-1bd7-81e1270e9531
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196807(v=office.15)
@@ -8,44 +8,44 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 369ff9192bb592c96e17920c9771c10b70dc233b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300596"
 ---
-# <a name="recordsetcachesize-property-dao"></a>Recordset.CacheSize プロパティ (DAO)
+# <a name="recordsetcachesize-property-dao"></a>Recordset プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-ローカル メモリにキャッシュされた ODBC データ ソースから取得したレコード数を設定または取得します。値の取得および設定が可能です。長整数型 ( **Long**) の値を使用します。
+ローカルにキャッシュされる ODBC データソースから取得したレコード数を設定または取得します。 値の取得と設定が可能な長整数型 (**Long**) の値です。
 
 ## <a name="syntax"></a>構文
 
-*式*です。CacheSize
+*式*。CacheSize
 
-*式***レコード セット**オブジェクトを表す変数です。
+*式***Recordset**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
-**CacheSize** プロパティの値は 5 ～ 1200 の範囲内で、利用可能な空きメモリ以下である必要があります。一般的な値は 100 です。0 を設定すると、キャッシングがオフになります。
+**CacheSize** プロパティの値の有効範囲は 5 ～ 1200 ですが、使用可能なメモリ容量を超えることはできません。通常の値は 100 です。0 に設定するとキャッシュ機能がオフになります。
 
-**Recordset** オブジェクトを使用してリモート サーバーからデータを取得する場合、データをキャッシュするとパフォーマンスが向上します。キャッシュとは、サーバーから最近取得したデータを保持するローカル メモリ内の領域で、アプリケーションの実行中にユーザーが再度同じデータを要求した場合に役に立ちます。ユーザーがデータを要求すると、Microsoft Access データベース エンジンでは、最初にキャッシュ内に要求されたデータがあるかどうかを確認し、より時間のかかるサーバーからの取得はキャッシュにデータがない場合に行われます。キャッシュに保存されるデータは、ODBC データ ソースのデータのみです。
+**Recordset** オブジェクトを使用してリモート サーバーからデータを取得する場合、データ キャッシュ機能を使用するとパフォーマンスが向上します。キャッシュは、サーバーから最後に取得したデータを保持するローカル メモリ内の領域です。このキャッシュは、アプリケーションを実行しているときに、ユーザーが最後に取得したデータを再度要求する場合に役立ちます。ユーザーがデータを要求すると、Microsoft Access データベース エンジンは、より時間のかかるサーバーからのデータの取得を行う前に、要求されたデータがキャッシュにあるかどうかを調べます。キャッシュには、ODBC データ ソースのデータのみが保存されます。
 
-リンク テーブルなどの Microsoft Access データベース エンジンに接続された ODBC データ ソースには、ローカル キャッシュを設定できます。キャッシュを作成するには、リモート データ ソースから **Recordset** オブジェクトを開き、 **CacheSize** プロパティと **[CacheStart](recordset-cachestart-property-dao.md)** プロパティを設定し、次に、 **[FillCache](recordset-fillcache-method-dao.md)** メソッドを使用するか、 **Move** メソッドを使用してレコード間を移動します。
+Microsoft Access データベース エンジンに接続された、リンク テーブルなどの ODBC データ ソースに対してローカル キャッシュを作成できます。キャッシュを作成するには、リモート データ ソースの **Recordset** オブジェクトを開き、 **CacheSize** プロパティと **[CacheStart](recordset-cachestart-property-dao.md)** プロパティを設定した後、 **[FillCache](recordset-fillcache-method-dao.md)** メソッドを使用するか、または **Move** メソッドを使用して各レコードを順に取得します。
 
-**CacheSize** プロパティは、アプリケーションが一度に処理できるレコード数に基づいて設定できます。たとえば、画面に表示するデータ ソースとして **Recordset** オブジェクトを使用している場合、その **CacheSize** プロパティを 20 に設定すると、一度に 20 レコード表示できます。
+**CacheSize** プロパティは、アプリケーションで同時に処理できるレコード数に基づいて設定できます。たとえば、画面に表示するときのデータ ソースとして **Recordset** オブジェクトを使用している場合、そのオブジェクトの **CacheSize** プロパティを 20 に設定すると、同時に 20 レコード表示できます。
 
-Microsoft Access データベース エンジンでは、キャッシュ範囲内のレコードはキャッシュに要求し、キャッシュ範囲外のレコードはサーバーに対して要求します。
+Microsoft Access データベース エンジンは、キャッシュ領域内にあるレコードはキャッシュから取得するように要求し、キャッシュ領域内に存在しないレコードはサーバーから取得するように要求します。
 
 キャッシュから取得したレコードには、他のユーザーが平行してソース データに加えた変更は反映されていません。
 
-キャッシュしたすべてのデータの更新を強制するには、 **Recordset** オブジェクトの **CacheSize** プロパティを 0 に設定し、次に、最初に要求したキャッシュのサイズにリセットしてから、 **FillCache** メソッドを使用します。
+すべてのキャッシュ データを強制的に更新するには、 **Recordset** オブジェクトの **CacheSize** プロパティを 0 に設定し、そのプロパティを当初要求したキャッシュ サイズに再設定した後、 **FillCache** メソッドを使用します。
 
 ## <a name="example"></a>例
 
-次の使用例では、 **CreateTableDef** メソッドと **FillCache** メソッド、および **CacheSize**、 **CacheStart**、 **SourceTableName** の各プロパティを使用して、リンク テーブルのレコードを 2 回列挙します。次に、50 件のレコードをキャッシュして、すべてのレコードを 2 回列挙します。最後に、リンク テーブルを使用して、キャッシュされていない実行とキャッシュされた実行のパフォーマンス統計を表示します。
+次の例では、 **CreateTableDef** メソッドと **FillCache** メソッド、および **CacheSize**、 **CacheStart**、 **SourceTableName** の各プロパティを使用して、リンクされたテーブルのレコードを 2 回列挙します。その後、50 レコードのキャッシュを使用してレコードを 2 回列挙します。さらに、リンクされたテーブルの処理にキャッシュを使用しなかった場合と使用した場合のパフォーマンス統計を表示します。
 
 ```vb
     Sub ClientServerX3() 

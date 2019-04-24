@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4216aafa4992f82ef0201802b72ae0e261cefc11
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28719975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295228"
 ---
 # <a name="cursortype-locktype-and-editmode-properties-example-vb"></a>CursorType プロパティ、LockType プロパティ、EditMode プロパティの使用例 (VB)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 この例では、[Recordset](cursortype-property-ado.md) を開く前に [CursorType](locktype-property-ado.md) プロパティおよび [LockType](recordset-object-ado.md) プロパティを設定します。また、さまざまな条件下での [EditMode](editmode-property-ado.md) プロパティの値も示します。このプロシージャを実行するには、 **EditModeOutput** 関数が必要です。
 

@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 41a42aa3b0c49a5d871fa7b079a26c7d8076116a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295290"
 ---
 # <a name="cursor-and-lock-characteristics"></a>カーソルとロックの特性
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 カーソルの特性はプロバイダーの機能によって異なりますが、一般には、カーソルとロックの種類別に、次のような長所と短所があります。
 
@@ -29,7 +29,7 @@ ms.locfileid: "28704617"
 <thead>
 <tr class="header">
 <th><p>カーソルまたはロックの種類</p></th>
-<th><p>長所</p></th>
+<th><p>メリット</p></th>
 <th><p>デメリット</p></th>
 </tr>
 </thead>
@@ -52,7 +52,7 @@ ms.locfileid: "28704617"
 <td><p><strong>adOpenStatic</strong></p></td>
 <td><p></p>
 <ul>
-<li><p>スクロールができる</p></li>
+<li><p>ネ</p></li>
 </ul>
 <p></p></td>
 <td><p></p>
@@ -62,11 +62,11 @@ ms.locfileid: "28704617"
 <p></p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adOpenKeyset</strong></p></td>
+<td><p><strong>adopenkeyset</strong></p></td>
 <td><p></p>
 <ul>
 <li><p>データの同時操作が部分的にできる</p></li>
-<li><p>スクロールができる</p></li>
+<li><p>ネ</p></li>
 </ul>
 <p></p></td>
 <td><p></p>
@@ -81,7 +81,7 @@ ms.locfileid: "28704617"
 <td><p></p>
 <ul>
 <li><p>データの高度な同時操作ができる</p></li>
-<li><p>スクロールができる</p></li>
+<li><p>ネ</p></li>
 </ul>
 <p></p></td>
 <td><p></p>
@@ -92,7 +92,7 @@ ms.locfileid: "28704617"
 <p></p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adLockReadOnly</strong></p></td>
+<td><p><strong>adlockreadonly です</strong></p></td>
 <td><p></p>
 <ul>
 <li><p>必要なリソースが少ない</p></li>

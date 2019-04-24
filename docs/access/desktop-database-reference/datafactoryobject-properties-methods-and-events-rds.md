@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3febbf56077ad1961ee0e0dd122ef2d0508d6878
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294513"
 ---
 # <a name="datafactory-properties-methods-and-events-rds"></a>DataFactory のプロパティ、メソッド、およびイベント (RDS)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 なし。
 
-## <a name="methods"></a>メソッド
+## <a name="methods"></a>Methods
 
 <table>
 <colgroup>
@@ -34,7 +34,7 @@ ms.locfileid: "28720143"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="converttostring-method-rds.md">ConvertToString メソッド (RDS)</a></p></td>
+<td><p><a href="converttostring-method-rds.md">converttostring メソッド (RDS)</a></p></td>
 <td><p>レコードセットを MIME64 文字列に変換します。</p></td>
 </tr>
 <tr class="even">
@@ -55,5 +55,5 @@ ms.locfileid: "28720143"
 
 ## <a name="events"></a>イベント
 
-なし。
+None.
 

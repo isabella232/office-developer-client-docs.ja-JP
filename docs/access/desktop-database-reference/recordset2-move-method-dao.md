@@ -1,5 +1,5 @@
 ---
-title: Recordset2.Move メソッド (DAO)
+title: Move メソッド (DAO)
 TOCTitle: Move Method
 ms:assetid: df39c05e-c5f8-3b66-fa5f-c91b687c147d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835635(v=office.15)
@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d57e73c52ca515f13d613ed3aeb9cf361054396e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307267"
 ---
-# <a name="recordset2move-method-dao"></a>Recordset2.Move メソッド (DAO)
+# <a name="recordset2move-method-dao"></a>Move メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**[Recordset](recordset-object-dao.md)** オブジェクトでカレント レコードの位置を移動します。
+**[Recordset](recordset-object-dao.md)** オブジェクトのカレント レコードの位置を移動します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。移動 (***行***、 ***StartBookmark***)
+*式*。Move (***Rows***、 ***startbookmark***)
 
-*式***Recordset2**オブジェクトを表す変数です。
+*式***Recordset2**オブジェクトを表す変数を取得します。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -52,8 +52,8 @@ ms.locfileid: "28707116"
 </tr>
 <tr class="even">
 <td><p><em>StartBookmark</em></p></td>
-<td><p>省略可能</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
+<td><p>Optional</p></td>
+<td><p><strong>Variant</strong></p></td>
 <td><p>ブックマークを示す値。startbookmark を指定した場合、このブックマークが移動の開始位置となります。それ以外の場合は、カレント レコードが移動の開始位置となります。</p></td>
 </tr>
 </tbody>
@@ -62,9 +62,9 @@ ms.locfileid: "28707116"
 
 ## <a name="remarks"></a>注釈
 
-**Move** を使用して、カレント レコード ポインターの位置を最初のレコードより前に移動しようとすると、カレント レコード ポインターはファイルの先頭に移動します。 **Recordset** 内にレコードがなく、かつ **[BOF](recordset2-bof-property-dao.md)** プロパティが **True** の場合、このメソッドを使用して後方に向かって移動すると、エラーが発生します。
+**Move** を使用して、カレント レコードを参照するポインターを最初のレコードよりも前に設定すると、カレント レコードを参照するポインターはファイルの先頭に移動します。 **Recordset** にレコードが含まれておらず、 **[BOF](recordset2-bof-property-dao.md)** プロパティが **True** の場合は、このメソッドを使用して後方に移動しようとするとエラーが発生します。
 
-**Move** を使用して、カレント レコード ポインターの位置を最後のレコードよりも後に移動しようとすると、カレント レコード ポインターはファイルの末尾に移動します。 **Recordset** 内にレコードがなく、かつ **[EOF](recordset2-eof-property-dao.md)** プロパティが **True** の場合、このメソッドを使用して前方に向かって移動しようとすると、エラーが発生します。
+**Move** を使用して、カレント レコードを参照するポインターを最後のレコードよりも後ろに設定すると、カレント レコードを参照するポインターはファイルの末尾に移動します。 **Recordset** にレコードが含まれておらず、 **[EOF](recordset2-eof-property-dao.md)** プロパティが **True** の場合は、このメソッドを使用して前方に移動しようとするとエラーが発生します。
 
 **BOF** プロパティまたは **EOF** プロパティが **True** の場合に、有効なブックマークを指定せずに **Move** メソッドを使用しようとすると、実行時エラーが発生します。
 
@@ -76,7 +76,7 @@ ms.locfileid: "28707116"
 
 ## <a name="example"></a>例
 
-この例では、 **Move** メソッドを使用して、ユーザーの入力に基づいてレコード ポインターを配置します。
+この例では、**Move** メソッドを使用して、ユーザーの入力に基づいてレコード ポインターを配置します。
 
 ```vb
     Sub MoveX() 

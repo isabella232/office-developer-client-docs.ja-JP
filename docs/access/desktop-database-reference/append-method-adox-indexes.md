@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0b541512de9748e94d033bb56f27dd0941c7f5a7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297096"
 ---
 # <a name="append-method-adox-indexes"></a>Append メソッド (ADOX Indexes)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
 
@@ -25,18 +25,18 @@ ms.locfileid: "28707557"
 
 ## <a name="syntax"></a>構文
 
-*インデックス*です。*インデックス*を追加する\[、*列*\]
+*インデックス*。追加*インデックス* \[、*列*\]
 
 ## <a name="parameters"></a>パラメーター
 
 |パラメーター|説明|
 |:--------|:----------|
 |*Index* |追加する **Index** オブジェクトを指定します。または、新たに作成して追加するインデックスの名前を指定します。|
-|*Columns* |省略可能です。 インデックスが作成される列の名前を示すバリアント型 ( **Variant** ) の値を指定します。 *Columns*パラメーターは、[列](column-object-adox.md)オブジェクトまたはオブジェクトの[Name](name-property-adox.md)プロパティの値に対応します。|
+|*Columns* |省略可能です。インデックスが作成される列の名前を示すバリアント型 (**Variant**) の値を指定します。*Columns* パラメーターは、1 つ以上の [Column](column-object-adox.md) オブジェクトの [Name](name-property-adox.md) プロパティの値に対応します。|
 
 ## <a name="remarks"></a>注釈
 
-*Columns*パラメーターには、列の名前または列名の配列のいずれかを実行できます。
+*Columns* パラメーターは、列の名前または列の名前の配列のいずれかとなります。
 
 プロバイダーがインデックスの作成をサポートしていない場合は、エラーが発生します。
 

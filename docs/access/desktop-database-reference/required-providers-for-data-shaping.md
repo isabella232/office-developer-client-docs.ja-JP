@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ffb45599c01121204fe036cfdf60f17865388cd4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306658"
 ---
 # <a name="required-providers-for-data-shaping"></a>データ シェイプに必要なプロバイダー
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 通常、データ シェイプには 2 つのプロバイダーが必要です。サービス プロバイダーの [Data Shaping Service for OLE DB](microsoft-data-shaping-service-for-ole-db-ado-service-provider.md) はデータ シェイプの機能を提供し、データ プロバイダー (OLE DB Provider for SQL Server など) はシェイプされた [Recordset](recordset-object-ado.md) に設定するためのデータ行を提供します。
 
 サービス プロバイダー (MSDataShape) の名前は、[Connection](connection-object-ado.md) オブジェクトの [Provider](provider-property-ado.md) プロパティの値または接続文字列のキーワード "Provider=MSDataShape;" として指定できます。
 
-OLE DB、または接続文字列キーワードのデータ シェイプ サービスで**接続**オブジェクト[のプロパティ](properties-collection-ado.md)コレクションに追加される、 **Data Provider**動的プロパティの値としてデータ プロバイダーの名前を指定することができます」**データ プロバイダー =。 プロバイダー*」です。
+データプロバイダーの名前は、OLE DB のデータシェイプサービスによって**connection**オブジェクトの[Properties](properties-collection-ado.md)コレクションに追加されるか、または接続文字列のキーワード "* で、データ**プロバイダー**の動的プロパティの値として指定できます。*データプロバイダー = * * * プロバイダー*"。
 
 **Recordset** にデータを設定しない場合は (たとえば、NEW キーワードを指定して列を作成する **Recordset** など)、データ プロバイダーは必要ありません。このような場合は、"**Data Provider=** none;" を指定します。
 

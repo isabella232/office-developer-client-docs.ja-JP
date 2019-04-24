@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 2d1fb13d04691b7bf5e0aafcc484cfc4f471e1e1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295493"
 ---
 # <a name="copyobject-macro-action"></a>CopyObject マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **CopyObject** アクションは、指定したデータベース オブジェクトを別の Access データベースにコピーするか、または同じデータベースや Access プロジェクトに新しい名前でコピーするために使用します。たとえば、既存のオブジェクトを別のデータベースにコピーして使ったり、バックアップ コピーとして保存したりできます。また、多少の変更を加えて類似したオブジェクトを手早く作成することができます。
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
+> このアクションは、データベースが信頼されていない場合には許可されません。 
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>設定値
 
 **CopyObject** アクションの引数は次のとおりです。
 
@@ -45,12 +45,8 @@ ms.locfileid: "28715887"
 <tbody>
 <tr class="odd">
 <td><p><strong>Destination Database/コピー先データベース</strong></p></td>
-<td><p>コピー先データベースのパスとファイル名を指定します。[マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>コピー先データベース</strong>] ボックスに、パスとファイル名を入力します。この引数を指定しない場合は、カレント データベースにコピーされます。  </p><p><strong>注</strong>: この引数は Access データベース環境で使用可能です。 Access プロジェクト (.adp) 環境では、このアクションを使用して、レプリケーション先データベースの引数が空白にする必要があります。</p>
-<p>
-
-					ライブラリ データベースで <strong>CopyObject</strong> アクションが定義されたマクロを実行する場合、この引数が指定されていなければ、Microsoft Office Access 2007 では、オブジェクトがそのライブラリ データベースにコピーされます。
-
-</p></td>
+<td><p>コピー先データベースのパスとファイル名を指定します。[マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>コピー先データベース</strong>] ボックスに、パスとファイル名を入力します。この引数を指定しない場合は、カレント データベースにコピーされます。  </p><p><strong>注</strong>: この引数は、Access データベース環境でのみ使用できます。 When using this action in an Access project environment (.adp), the Destination Database argument must be blank.</p>
+<p>If you run a macro containing the <strong>CopyObject</strong> action in a library database and leave this argument blank, Microsoft Office Access 2007 will copy the object into the library database.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>New Name/新しい名前</strong></p></td>
@@ -68,9 +64,9 @@ ms.locfileid: "28715887"
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**Destination Database/コピー先データベース** 引数と **New Name/新しい名前** 引数の少なくとも一方には必ず値を入力する必要があります。
+**Destination Database/コピー先データベース**引数と **New Name/新しい名前**引数の少なくとも一方には必ず値を入力する必要があります。
 
 **Source Object Type/ソース オブジェクトの種類** 引数と **Source Object Name/ソース オブジェクト名** 引数を指定しないと、ナビゲーション ウィンドウで選択したオブジェクトがコピーされます。ナビゲーション ウィンドウでオブジェクトを選択するには、 **SelectObject** アクションの "In Navigation Pane/ナビゲーション ウィンドウから" 引数を [ **はい** ] に設定します。
 

@@ -1,5 +1,5 @@
 ---
-title: エラー メンバー (DAO)
+title: Errors メンバー (DAO)
 TOCTitle: Errors Members
 ms:assetid: 7e7eb080-16dc-c873-af80-6286222cd5b3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196446(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 78e4f74c353990a07ff8c84fa8d984c169d62db9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293386"
 ---
-# <a name="errors-members-dao"></a>エラー メンバー (DAO)
+# <a name="errors-members-dao"></a>Errors メンバー (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 Errors コレクションには、格納されているすべての Error オブジェクトが含まれ、それぞれが DAO に関する単一の操作に対応しています。
 
@@ -59,7 +59,7 @@ Errors コレクションには、格納されているすべての Error オブ
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="errors-count-property-dao.md">Count</a></strong></p></td>
-<td><p>指定したコレクション内のオブジェクトの数を取得します。値の取得のみ可能です。</p></td>
+<td><p>指定したコレクション内のオブジェクトの数を取得します。 値の取得のみ可能です。</p></td>
 </tr>
 </tbody>
 </table>

@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c82c95a430da76694fe26300e877e86f86a2eb4b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28719905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295311"
 ---
 # <a name="cubedef-object-ado-md"></a>CubeDef オブジェクト (ADO MD)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 関連する次元のセットを含む、多次元スキーマからのキューブを表します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **CubeDef** オブジェクトのコレクションおよびプロパティを使用すると、次の操作を実行できます。
 
@@ -48,19 +48,19 @@ ms.locfileid: "28719905"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>カタログ名</p></td>
+<td><p>CatalogName</p></td>
 <td><p>このキューブが属しているカタログの名前。</p></td>
 </tr>
 <tr class="even">
-<td><p>CreatedOn</p></td>
+<td><p>createdon</p></td>
 <td><p>キューブの作成日時。</p></td>
 </tr>
 <tr class="odd">
-<td><p>CubeGUID</p></td>
+<td><p>cubeguid</p></td>
 <td><p>キューブの GUID。</p></td>
 </tr>
 <tr class="even">
-<td><p>キューブ名</p></td>
+<td><p>CubeName</p></td>
 <td><p>キューブの名前。</p></td>
 </tr>
 <tr class="odd">
@@ -72,7 +72,7 @@ ms.locfileid: "28719905"
 <td><p>最後にデータを更新したユーザーの ID。</p></td>
 </tr>
 <tr class="odd">
-<td><p>Description</p></td>
+<td><p>説明</p></td>
 <td><p>キューブの説明。</p></td>
 </tr>
 <tr class="even">
@@ -80,7 +80,7 @@ ms.locfileid: "28719905"
 <td><p>最後にスキーマを更新した日時。</p></td>
 </tr>
 <tr class="odd">
-<td><p>スキーマ名</p></td>
+<td><p>SchemaName</p></td>
 <td><p>このキューブが属しているスキーマの名前。</p></td>
 </tr>
 <tr class="even">

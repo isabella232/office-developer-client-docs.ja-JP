@@ -1,5 +1,5 @@
 ---
-title: Recordset2.ParentRecordset プロパティ (DAO)
+title: Recordset2 recordset プロパティ (DAO)
 TOCTitle: ParentRecordset Property
 ms:assetid: 816cc92e-e530-6ca6-65b0-3165221835a6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196492(v=office.15)
@@ -12,28 +12,28 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 7424e31e7f351af02bdd54bd06fe41f7db5b5f54
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309075"
 ---
-# <a name="recordset2parentrecordset-property-dao"></a>Recordset2.ParentRecordset プロパティ (DAO)
+# <a name="recordset2parentrecordset-property-dao"></a>Recordset2 recordset プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。 
+**適用先:** Access 2013、Office 2013 
 
-指定したレコードセットの親 **Recordset** を返します。値の取得のみ可能です。
+指定したレコードセットの親 **Recordset** を返します。 値の取得のみ可能です。
 
 ## <a name="version-information"></a>バージョン情報
 
-追加バージョン: Access 2007
+追加されたバージョン: Access 2007
 
 ## <a name="syntax"></a>構文
 
-*式*です。ParentRecordset
+*式*。ParentRecordset
 
-*式***Recordset2**オブジェクトを表す変数です。
+*式***Recordset2**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 

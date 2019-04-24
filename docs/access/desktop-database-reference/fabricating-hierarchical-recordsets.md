@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f644f25a04c5573a93aa106884473fed6b45440e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293204"
 ---
 # <a name="fabricating-hierarchical-recordsets"></a>階層レコードセットの生成
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 次の例では、親、子、および孫の **Recordset** の列を定義するデータ シェイプ文法を使用することにより、基になるデータ ソースなしで階層レコードセットを作成する方法を示します。
 
@@ -48,5 +48,5 @@ ms.locfileid: "28715579"
     rsCustomers.Open strShape, cn, adOpenStatic, adLockOptimistic, -1
 ```
 
-後、作成された**レコード セット**で、設定、操作、またはそのファイルに永続化します。
+作成された**Recordset**は、ファイルに設定、操作、または永続化することができます。
 

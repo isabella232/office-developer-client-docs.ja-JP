@@ -1,5 +1,5 @@
 ---
-title: Recordset2.Restartable プロパティ (DAO)
+title: Recordset2 プロパティ (DAO)
 TOCTitle: Restartable Property
 ms:assetid: 9b1c40f8-5a33-2527-a7b6-bef4cb991d7e
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198019(v=office.15)
@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 873911ff8475a0b37f3f67d9cb2c01afc577487d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309089"
 ---
-# <a name="recordset2restartable-property-dao"></a>Recordset2.Restartable プロパティ (DAO)
+# <a name="recordset2restartable-property-dao"></a>Recordset2 プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **[Recordset](recordset-object-dao.md)** オブジェクトの基になるクエリを再実行する **[Requery](recordset2-requery-method-dao.md)** メソッドを、 **Recordset** オブジェクトがサポートするかどうかを示す値を取得します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。再開可能
+*式*。dbms
 
-*式***Recordset2**オブジェクトを表す変数です。
+*式***Recordset2**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 

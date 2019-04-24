@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: dbaa0fe7aaa50c8aec582e2f03cd2849268816b9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294646"
 ---
 # <a name="databases-collection-dao"></a>Databases コレクション (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **Databases** コレクションには、 **Workspace** オブジェクトで開かれた、または作成されたすべての開いている **Database** オブジェクトが含まれます。
 
@@ -28,11 +28,11 @@ Microsoft Access ワークスペースでは、データベースの " **Name**/
 
 コレクション内の **Database** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。
 
-- **Databases**(0)
+- **データベース**.0
 
-- **データベース**(以下「*名前*」)
+- **データベース**("*name*")
 
-- **データベース**\!\[*名*\]
+- ****\!データベース\[*名*\]
 
 > [!NOTE]
 > [!メモ] **Databases** コレクションに重複する名前を作成して同じデータ ソースまたはデータベースを複数回開くことができます。 **Database** オブジェクトをオブジェクト変数に割り当てて変数名で参照する必要があります。

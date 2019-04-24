@@ -1,5 +1,5 @@
 ---
-title: CreateRecord データ ブロック
+title: CreateRecord データブロック
 TOCTitle: CreateRecord data block
 ms:assetid: e18f47f8-2aad-9a14-ad63-ab603a4d5b07
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835671(v=office.15)
@@ -8,25 +8,25 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 63e189143e77f9fcc42fa8d48c3ebfb2feda6633
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28719819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295353"
 ---
-# <a name="createrecord-data-block"></a>CreateRecord データ ブロック
+# <a name="createrecord-data-block"></a>CreateRecord データブロック
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**CreateRecord** データ ブロックを使用して、指定したテーブルに新しいレコードを作成できます。
+You can use the **CreateRecord** data block to create a new record in the specified table.
 
 > [!NOTE]
-> [!メモ] **CreateRecord** データ ブロックはデータ マクロでのみ使用できます。
+> **CreateRecord** データ ブロックはデータ マクロでのみ使用できます。
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
-**CreateRecord** データ ブロックの引数は次のとおりです。
+CreateRecord データ ブロックの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -43,7 +43,7 @@ ms.locfileid: "28719819"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>内のレコードを作成します。</strong></p></td>
+<td><p><strong>Create a Record In</strong>/レコードの作成先</p></td>
 <td><p>はい</p></td>
 <td><p>新しいレコードを作成するテーブルの名前。</p></td>
 </tr>
@@ -77,7 +77,7 @@ ms.locfileid: "28719819"
 <td><p><a href="group-macro-statement.md">Group マクロ ステートメント</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="if-then-else-macro-block.md">もし。。。そうしたら。。。マクロ ステートメントはその他</a></p></td>
+<td><p><a href="if-then-else-macro-block.md">もし。。。そうしたら。。。Else マクロステートメント</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="setfield-macro-action.md">SetField マクロ アクション</a></p></td>
@@ -89,15 +89,15 @@ ms.locfileid: "28719819"
 </table>
 
 
-" **CreateRecord** /レコードの作成" アクションでレコードを作成した後、" **SetField** /フィールドの設定" アクションを使用して、新しいレコードのフィールド値を指定します。
+After the **CreateRecord** action creates a record, use the **SetField** action to specify a value of a field in the new record.
 
-場合、**を使用することができます.そうしたら。。。他**の条件に基づいて、ステートメントを使用して操作を実行します。
+You can use an **If...Then...Else** statment to perform operations based on a condition.
 
-レコードの作成を取り消すには " **CancelRecordChange** /レコードの変更の取り消し" アクションを使用します。これにより、変更は確定されずに、 **CreateRecord** データ ブロックが終了します。
+To cancel the creation of a record, use the **CancelRecordChange** action. This prevents the changes from being committed and exits the **CreateRecord** data block.
 
 新しいレコードの作成を確定すると、 **LastCreateRecordIdentity** ローカル変数を使用してレコードを操作できます。たとえば、次の構文では一番新しく作成したレコードの AssignedTo フィールドを参照します。
 
 `[LastCreateRecordIdentity].[AssignedTo]`
 
-**CreateRecord**データ ブロックは、**[後に挿入](after-insert-macro-event.md)**、**[更新した後](after-update-macro-event.md)**、および**[更新後](after-update-macro-event.md)** のデータ マクロのイベントでのみ使用できます。
+The **CreateRecord** data block can only be used in the **[After Insert](after-insert-macro-event.md)**, **[After Update](after-update-macro-event.md)**, and **[After Update](after-update-macro-event.md)** data macro events.
 

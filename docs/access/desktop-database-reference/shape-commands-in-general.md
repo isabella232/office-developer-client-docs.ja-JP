@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 399836158084f07b30b06a9fb099da74527d0cb0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308653"
 ---
 # <a name="shape-commands-in-general"></a>一般的な Shape コマンド
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 データ シェイプでは、シェイプされる **Recordset** の列、列で表されるエンティティ間の関係、および **Recordset** にデータを設定する方法を定義することができます。
 
@@ -40,18 +40,18 @@ ms.locfileid: "28721865"
 </tr>
 <tr class="even">
 <td><p>チャプター</p></td>
-<td><p>別の<strong>レコード セット</strong>への参照では、<em>章</em>と呼ばれます。 チャプター列では、<em></em>親子関係を定義できます。<em></em>親とは、チャプター列を含む<strong>レコードセット</strong>で、<em></em>子とは、チャプターで表される<strong>レコードセット</strong>です。</p></td>
+<td><p><em>チャプター</em>と呼ばれる別の<strong>Recordset</strong>への参照。 チャプター列を使用すると、親がチャプター列<strong></strong>を含む<strong>レコードセット</strong>であり、<em>子</em>がチャプターで表される recordset である場合に、<em>親と子</em>のリレーションシップを定義できるようになります。 <em></em></p></td>
 </tr>
 <tr class="odd">
-<td><p>集計</p></td>
-<td><p>列の値は、すべての行または子<strong>Recordset</strong>のすべての行の列で、<em>集計関数</em>を実行することによって派生します。 (次のトピック「<a href="aggregate-functions-the-calc-function-and-the-new-keyword.md">集計関数、CALC 関数、および NEW キーワード</a>」での集計関数を参照してください)。</p></td>
+<td><p>統計</p></td>
+<td><p>列の値は、子<strong>Recordset</strong>のすべての行または1つの列に対して<em>集計関数</em>を実行することによって導出されます。 (次のトピック、<a href="aggregate-functions-the-calc-function-and-the-new-keyword.md">集計関数、CALC 関数、および NEW キーワード</a>の集計関数を参照してください)。</p></td>
 </tr>
 <tr class="even">
 <td><p>演算式</p></td>
 <td><p>列の値は、<strong>Recordset</strong> の同じ行にある複数の列に対して Visual Basic for Applications の式を実行することで算出されます。式は、CALC 関数への引数です (次のトピック「<a href="aggregate-functions-the-calc-function-and-the-new-keyword.md">集計関数、CALC 関数、および NEW キーワード</a>」および「<a href="visual-basic-for-applications-functions.md">Visual Basic for Applications の関数</a>」の演算式を参照)。</p></td>
 </tr>
 <tr class="odd">
-<td><p>新規</p></td>
+<td><p>新機能</p></td>
 <td><p>後でデータを入力できるように空の状態で作成されるフィールド。この列は、NEW キーワードで定義されます (次のトピック「<a href="aggregate-functions-the-calc-function-and-the-new-keyword.md">集計関数、CALC 関数、および NEW キーワード</a>」の NEW キーワードを参照)。</p></td>
 </tr>
 </tbody>
@@ -64,7 +64,7 @@ SQL の JOIN 句を使用して 2 つのテーブルを関連付けることは�
 
 shape コマンドは、 **Recordset** オブジェクトによって、または [Command](commandtext-property-ado.md) オブジェクトの [CommandText](command-object-ado.md) プロパティを設定して [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command) メソッドを呼び出すことによって、発行することができます。
 
-shape コマンドはネストできます。 つまり、*親コマンド*または*子コマンド*自体があります別の shape コマンドです。
+shape コマンドはネストできます。つまり、*parent-command* または *child-command* 自体を別の shape コマンドにすることができます。
 
 shape プロバイダーは、ユーザーが **adUseServer** のカーソル位置を指定した場合でも、常にクライアント カーソルを返します。
 

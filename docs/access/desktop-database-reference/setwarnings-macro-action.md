@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: acf541bde41c282b752532cb74d5ec4fa4a13ca9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308660"
 ---
 # <a name="setwarnings-macro-action"></a>SetWarnings マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**よって**を使用すると、システム メッセージを有効または無効にします。
+You can use the **SetWarnings** action to turn system messages on or off.
 
 > [!NOTE]
 > [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
 
 ## <a name="setting"></a>設定値
 
-**よって**では、次の引数があります。
+"SetWarnings/メッセージの設定" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -51,7 +51,7 @@ ms.locfileid: "28710406"
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このアクションを使用すると、モーダルな通知やメッセージ ボックスによってマクロが停止しないようにすることができます。ただし、エラー メッセージは常に表示されます。また、[ **OK**]、[ **キャンセル**]、[ **はい**]、[ **いいえ**] などのボタンをクリックする以外に、テキストの入力やオプションの選択を必要とするダイアログ ボックスも表示されます。
 
@@ -59,10 +59,10 @@ ms.locfileid: "28710406"
 
 マクロが完了すると、自動的にシステム メッセージの表示がオンに戻ります。
 
-多くの場合、それが完了するまで、マクロの結果を非表示にする**エコー**のアクションでは、このアクションを使用します。 **よって**を使用すると、警告と同様のメッセージ ボックスを非表示にします。
+Often, you'll use this action with the **Echo** action, which hides the results of a macro until it's finished. You can use the **SetWarnings** action to hide the warnings and message boxes as well.
 
 > [!WARNING]
-> **よって**がマクロとのやりとりを簡略化できますが、システム メッセージを無効にするには注意が必要です。 状況によっては、特定の警告メッセージが表示される場合は、マクロを続行するはありません。 しない限り、すべてのマクロ アクションの結果を確実に把握して、このアクションの使用を避ける必要があります。
+> Although the **SetWarnings** action can simplify interactions with macros, you must be careful about turning system messages off. In some situations, you won't want to continue a macro if a certain warning message is displayed. Unless you're confident of the outcome of all macro actions, you should avoid using this action.
 
-実行するには**よって**を Visual Basic for Applications (VBA) モジュールで**DoCmd**オブジェクトの**SetWarnings**メソッドを使用します。
+To run the **SetWarnings** action in a Visual Basic for Applications (VBA) module, use the **SetWarnings** method of the **DoCmd** object.
 

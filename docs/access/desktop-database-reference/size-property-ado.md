@@ -8,26 +8,26 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2a1bed3454d081b9d5de3a01e9b326130b40baa4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306931"
 ---
 # <a name="size-property-ado"></a>Size プロパティ (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [Parameter](parameter-object-ado.md) オブジェクトの最大サイズをバイト数または文字数で示します。
 
-## <a name="settings-and-return-values"></a>設定値および戻り値
+## <a name="settings-and-return-values"></a>設定値と戻り値
 
-**Parameter** オブジェクトの最大サイズをバイト数または文字数で示す長整数型 ( **Long** ) の値を設定または取得します。
+**Parameter** オブジェクトの最大サイズをバイト数または文字数で示す長整数型 (**Long**) の値を設定または取得します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**Parameter** オブジェクトの [Value](value-property-ado.md) プロパティで設定または取得できる値の最大サイズを調べるには、 **Size** プロパティを使用します。
+**Parameter** オブジェクトの [Value](value-property-ado.md) プロパティで設定または取得できる値の最大サイズを調べるには、**Size** プロパティを使用します。
 
 **Parameter** オブジェクトとして可変長データ型 (たとえば、**adVarChar** などのすべての文字列型 (**String**)) を指定した場合、[Parameters](parameters-collection-ado.md) コレクションにそのオブジェクトを追加する前に、オブジェクトの **Size** プロパティを設定する必要があり、この設定を行わないとエラーが発生します。
 

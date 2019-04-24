@@ -1,5 +1,5 @@
 ---
-title: DBEngine.Idle メソッド (DAO)
+title: DBEngine メソッド (DAO)
 TOCTitle: Idle Method
 ms:assetid: c90b565e-626e-139d-102a-0386601ce0c8
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff823202(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 7a84e3cc4b35886a12b2e6b4cf92b7483fea293a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294331"
 ---
-# <a name="dbengineidle-method-dao"></a>DBEngine.Idle メソッド (DAO)
+# <a name="dbengineidle-method-dao"></a>DBEngine メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 データの処理を中断し、Microsoft Access データベース エンジンでメモリの最適化やページのタイムアウトなどのタスクを完了できるようにします (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。アイドル (***アクション***)
+*式*。Idle (***アクション***)
 
-*式***DBEngine**オブジェクトを表す変数です。
+*式***DBEngine**オブジェクトを表す変数を取得します。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -50,9 +50,9 @@ ms.locfileid: "28705114"
 <tbody>
 <tr class="odd">
 <td><p><em>Action</em></p></td>
-<td><p>省略可能</p></td>
-<td><p><strong>Variant (バリアント型)</strong></p></td>
-<td><p>実行するアクションを指定します。指定できる定数は、<strong><a href="idleenum-enumeration-dao.md">IdleEnum</a></strong> クラスの定数のいずれかです。</p></td>
+<td><p>Optional</p></td>
+<td><p><strong>Variant</strong></p></td>
+<td><p>実行するアクションを指定します。 <strong><a href="idleenum-enumeration-dao.md">IdleEnum</a></strong>定数のいずれかをすることができます。</p></td>
 </tr>
 </tbody>
 </table>

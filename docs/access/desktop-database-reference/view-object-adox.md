@@ -1,5 +1,5 @@
 ---
-title: View オブジェクト (ADOX のデスクトップのデータベース参照のアクセス)
+title: View オブジェクト (ADOX-Access デスクトップデータベースリファレンス)
 TOCTitle: View object (ADOX)
 ms:assetid: 3b2e9972-8a0d-eaa3-1c93-ae0665a47f02
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249149(v=office.15)
@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b3b5d25a727233b5fda5627df8dff952003bbfe3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306050"
 ---
 # <a name="view-object-adox"></a>View オブジェクト (ADOX)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 抽出されたレコードのセットまたは仮想テーブルを表します。ADO [Command](command-object-ado.md) オブジェクトと共に使用する場合、 **View** オブジェクトを使用してビューを追加、削除、または変更できます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 ビューは、他のデータベースまたはビューから作成された仮想テーブルです。 **View** オブジェクトを使用すると、プロバイダーの "CREATE VIEW" の構文を使用せずにストアド プロシージャを作成できます。
 

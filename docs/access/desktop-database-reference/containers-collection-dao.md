@@ -1,5 +1,5 @@
 ---
-title: コンテナーのコレクション (DAO)
+title: 入れ物コレクション (DAO)
 TOCTitle: Containers Object
 ms:assetid: 4996ee39-ea13-f560-3069-dd7bc6022119
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff193464(v=office.15)
@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9c874a1555fa6a6f5f948275176c57b5fb1c48bf
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295605"
 ---
-# <a name="containers-collection-dao"></a>コンテナーのコレクション (DAO)
+# <a name="containers-collection-dao"></a>入れ物コレクション (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**コンテナー**コレクションには、すべてのデータベースで定義されている**コンテナー**オブジェクトが含まれています。
+Container **** コレクションには、データベースで定義されているすべての**Container**オブジェクトが含まれています。
 
 ## <a name="remarks"></a>注釈
 

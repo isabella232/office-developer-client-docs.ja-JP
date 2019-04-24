@@ -1,5 +1,5 @@
 ---
-title: DBEngine.LoginTimeout プロパティ (DAO)
+title: DBEngine タイムアウトプロパティ (DAO)
 TOCTitle: LoginTimeout Property
 ms:assetid: 81d14153-79c5-7860-b6a8-4079d2d7acf7
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196648(v=office.15)
@@ -12,28 +12,28 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: e3ff893a16e650fe7eb49b647ae8d67374375a0d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294310"
 ---
-# <a name="dbenginelogintimeout-property-dao"></a>DBEngine.LoginTimeout プロパティ (DAO)
+# <a name="dbenginelogintimeout-property-dao"></a>DBEngine タイムアウトプロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-ODBC データベースへのログオンを試みてからエラーが発生するまでの秒数を設定または取得します。
+ODBC データベースへのログオン試行でエラーが発生するまでの秒数を設定または取得します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。LoginTimeout
+*式*。LoginTimeout
 
-*式***DBEngine**オブジェクトを表す変数です。
+*式***DBEngine**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
-**LoginTimeout** プロパティの既定の設定は 20 秒です。 **LoginTimeout** プロパティを 0 に設定すると、タイムアウトは発生しません。
+**LoginTimeout** プロパティの既定の設定値は 20 秒です。 **LoginTimeout** プロパティを 0 に設定すると、タイムアウトは発生しません。
 
-Microsoft SQL Server などの ODBC データベースへのログオンを試みたときに、ネットワーク エラーが発生したりサーバーが実行中でないことが原因で、接続に失敗したりする場合があります。接続時に既定の 20 秒間待機する代わりに、エラーが発生するまでの時間を指定できます。外部のサーバー データベースに対するクエリの実行など、多くのさまざまなイベントの一部として、サーバーへの暗黙的なログオンが発生します。
+Microsoft SQL Server などの ODBC データベースにログオンしようとすると、ネットワーク エラーが発生するか、サーバーが動作していないために、接続が失敗する可能性があります。既定の 20 秒間待機してから接続するのではなく、待機する時間を指定し、それを超えたらエラーとすることができます。サーバーへのログオンは、外部サーバー データベースでのクエリの実行など、多数の異なるイベントの一環として暗黙に実行されます。
 

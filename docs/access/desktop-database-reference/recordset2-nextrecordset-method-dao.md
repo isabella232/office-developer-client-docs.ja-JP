@@ -1,5 +1,5 @@
 ---
-title: Recordset2.NextRecordset メソッド (DAO)
+title: NextRecordset メソッド (DAO)
 TOCTitle: NextRecordset Method
 ms:assetid: 33288131-d4f3-0159-1736-f401346087f3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192318(v=office.15)
@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 54d0e49dfbe9dc3fb87eb10af9eefe3aa2f83709
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307239"
 ---
-# <a name="recordset2nextrecordset-method-dao"></a>Recordset2.NextRecordset メソッド (DAO)
+# <a name="recordset2nextrecordset-method-dao"></a>NextRecordset メソッド (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ## <a name="syntax"></a>構文
 
-*式*です。NextRecordset
+*式*。NextRecordset
 
-*式***Recordset2**オブジェクトを表す変数です。
+*式***Recordset2**オブジェクトを表す変数を取得します。
 
 ## <a name="return-value"></a>戻り値
 
@@ -35,7 +35,7 @@ Boolean
 
 ## <a name="remarks"></a>注釈
 
-ODBCDirect ワークスペースでは、内の**何らか**の場合は、変換元の引数または**[クエリ定義](querydef-object-dao.md)** オブジェクトは、次の例のように選択クエリの**[SQL](querydef-sql-property-dao.md)** プロパティに 1 つ以上の select クエリが含まれている**レコード セット**を開くことができます。
+ODBCDirect ワークスペースでは、次の例に示すように、 **OpenRecordset**の source 引数に複数の選択クエリを含む**Recordset** 、または select クエリ**[QueryDef](querydef-object-dao.md)** オブジェクトの**[SQL](querydef-sql-property-dao.md)** プロパティを開くことができます。
 
 ```sql
     SELECT LastName, FirstName FROM Authors 
@@ -44,15 +44,15 @@ ODBCDirect ワークスペースでは、内の**何らか**の場合は、変�
     WHERE Pub_ID = 9999 
 ```
 
-返される **Recordset** は、最初のクエリの結果に基づいて開かれます。次のクエリの結果に基づくレコードの結果セットを取得するには、 **NextRecordset** メソッドを使用します。
+返される **Recordset** では、最初のクエリの結果が表示されます。それ以降のクエリの結果であるレコードのセットを取得するには、 **NextRecordset** メソッドを使用します。
 
-他にもレコードがある (つまり、 **OpenRecordset** 呼び出しまたは **SQL** プロパティに別の選択クエリが指定されていた) 場合は、次のクエリから返されるレコードが **Recordset** に読み込まれ、 **NextRecordset** はレコードがあることを示す **True** を返します。これ以上レコードがない (つまり、最後の選択クエリの結果が既に **Recordset** に読み込まれていた) 場合は、 **NextRecordset** は **False** を返し、 **Recordset** は空になります。
+取得できるレコードがさらに存在する (つまり **OpenRecordset** への呼び出しまたは **SQL** プロパティで指定されている選択クエリが他にもある) 場合、次のクエリから返されるレコードが **Recordset** に読み込まれ、 **NextRecordset** は **True** を返します。これは、レコードが取得できる状態であることを示します。取得できるレコードがない (つまり最後の選択クエリの結果が既に **Recordset** に読み込まれている) 場合、 **NextRecordset** は **False** を返し、 **Recordset** は空になります。
 
 **[Cancel](connection-cancel-method-dao.md)** メソッドを使用して、 **Recordset** の内容を消去することもできます。ただし、 **Cancel** を使用すると、まだ読み込まれていないレコードも消去されます。
 
 ## <a name="example"></a>例
 
-次の使用例では、 **NextRecordset** メソッドを使用して、複合 SELECT クエリから返されたデータを表示します。このようなクエリを実行するときは、 **DefaultCursorDriver** プロパティを **dbUseODBCCursor** に設定する必要があります。SELECT ステートメントの一部または全部が 0 件のレコードを返したとしても **NextRecordset** メソッドは **True** を返し、個々の SQL 句をすべて調べた後でのみ **False** を返します。
+次の使用例は、 **NextRecordset** メソッドを使用して、複合 SELECT クエリからのデータを表示します。このようなクエリを実行する場合、 **DefaultCursorDriver** プロパティを **dbUseODBCCursor** に設定する必要があります。 **NextRecordset** メソッドは、一部またはすべての SELECT ステートメントが 0 件のレコードを返す場合でも **True** を返し、 **False** を返すのは、個別の SQL 句をすべて確認した後のみです。
 
 ```vb
     Sub NextRecordsetX() 
@@ -109,7 +109,7 @@ ODBCDirect ワークスペースでは、内の**何らか**の場合は、変�
 
 <br/>
 
-複合 SQL ステートメントを含むプリペアド ステートメントを作成して、同じ作業を実行することもできます。 **QueryDef** オブジェクトの **CacheSize** プロパティが 1 に設定されていて、 **Recordset** オブジェクトが前方スクロール タイプであり、かつ読み取り専用である必要があります。
+同じ処理を実行するための別の方法として、複合 SQL ステートメントを含むステートメントをあらかじめ作成しておく方法があります。この場合は、 **QueryDef** オブジェクトの **CacheSize** プロパティを 1 に設定し、 **Recordset** オブジェクトを読み取り専用の前方スクロール タイプとする必要があります。
 
 ```vb 
 Sub NextRecordsetX2() 

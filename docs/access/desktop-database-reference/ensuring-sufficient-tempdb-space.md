@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6414c9dd4c3218c2c2bf90f39d0cfb950e6e1018
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293575"
 ---
 # <a name="ensuring-sufficient-tempdb-space"></a>十分な TempDB 領域の確保
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 Microsoft SQL Server 6.5 において処理領域が必要な [Recordset](recordset-object-ado.md) オブジェクトを処理している際にエラーが発生した場合は、TempDB のサイズを増やす必要があります (一部のクエリは、一時的な処理領域を必要とします。たとえば、ORDER BY 句のあるクエリでは **Recordset** のソートが必要ですが、これには一時的な処理領域が必要です)。
 
@@ -33,19 +33,19 @@ Microsoft SQL Server 6.5 において処理領域が必要な [Recordset](record
 
 1.  Microsoft SQL Server Enterprise Manager を起動し、サーバーのツリーを開き、次にデータベース デバイスのツリーを開きます。
 
-2.  マスターなどの拡張を (物理的な) デバイスを選択し、デバイスを開くには、[**データベース デバイスの編集**] ダイアログ ボックスをダブルクリックします。 このダイアログ ボックスは、現在のデータベースを使用している容量を表示します。
+2.  Select a (physical) device to expand, such as Master, and double-click the device to open the **Edit Database Device** dialog box. This dialog box shows how much space the current databases are using.
 
-3.  [**サイズ**] ボックスで、指定したサイズ (たとえば、50 メガバイト (MB) のハード_ディスクの空き領域) のデバイスを向上します。
+3.  In the **Size** box, increase the device to the desired amount (for example, 50 megabytes (MB) of hard disk space).
 
-4.  **すぐに変更**する (論理) の TempDB の拡張可能領域の量を増やす] をクリックします。
+4.  [すぐに変更] をクリックして、論理 TempDB の拡張可能領域を増やします。
 
-5.  サーバーのデータベース ツリーを開き、 **TempDB** **データベースの編集**] ダイアログ ボックスを開く] をダブルクリックします。 [**データベース**] タブには、(**データのサイズ**) を TempDB に現在割り当てられている領域の容量が一覧表示されます。 既定では、これは、2 MB です。
+5.  サーバーのデータベース ツリーを開き、[TempDB] をダブルクリックして [データベースの編集] ダイアログ ボックスを開きます。[データベース] タブには、TempDB に現在割り当てられている領域の大きさ ([データ サイズ]) が表示されます。既定では、この大きさは 2 MB です。
 
-6.  [**サイズ**] グループで、[**展開**を] をクリックします。 グラフでは、各物理デバイスで使用できる割り当て領域を示しています。 茶色のバーは、使用可能な領域を表します。
+6.  Under the **Size** group, click **Expand**. The graphs show the available and allocated space on each of the physical devices. The bars in maroon color represent available space.
 
-7.  などの**ログ デバイス****のサイズ (MB)** ] ボックスで利用可能なサイズを表示するのには、マスター シェイプを選択します。
+7.  Select a **Log Device**, such as Master, to display the available size in the **Size (MB)** box.
 
-8.  **すぐに拡張**領域を TempDB データベースを割り当てる] をクリックします。 **データベースの編集**] ダイアログ ボックスでは、TempDB に新規に割り当てられたサイズが表示されます。
+8.  Click **Expand Now** to allocate that space to the TempDB database. The **Edit Database** dialog box displays the new allocated size for TempDB.
 
 このトピックの詳細については、Microsoft SQL Server Enterprise Manager ヘルプの「データベースのサイズを拡張する方法」を参照してください。
 

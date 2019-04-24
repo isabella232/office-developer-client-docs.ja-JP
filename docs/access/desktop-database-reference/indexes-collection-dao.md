@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f731862e12a75f91d07ea7d012cc33dad5be0b55
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291567"
 ---
 # <a name="indexes-collection-dao"></a>Indexes コレクション (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **Indexes** コレクションには、格納されているすべての **TableDef** オブジェクトの **Index** オブジェクトが含まれます (Microsoft Access ワークスペースのみ)。
 
 ## <a name="remarks"></a>注釈
 
-テーブル タイプの Recordset オブジェクトにアクセスする場合は、オブジェクトの **Index** プロパティを使用してレコードの順序を指定します。このプロパティを ****Recordset**** オブジェクトの元になっている [**TableDef**](tabledef-object-dao.md) の **Indexes** コレクションの既存の [Index](recordset-object-dao.md) オブジェクトの **Name** プロパティに設定します。
+テーブル タイプの Recordset オブジェクトにアクセスする場合は、オブジェクトの **Index** プロパティを使用してレコードの順序を指定します。 このプロパティを、 **[Recordset](recordset-object-dao.md)** オブジェクトの基になる**[TableDef](tabledef-object-dao.md)** オブジェクトの**Indexes**コレクションの既存の**Index**オブジェクトの**Name**プロパティの設定値に設定します。
 
 > [!NOTE]
-> [!メモ] **Append** または **Delete** メソッドを **Indexes** コレクションに使用できるのは、元になる [TableDef](connection-updatable-property-dao.md) オブジェクトの ****Updatable**** プロパティの設定が **True** の場合のみです。
+> **Append** または **Delete** メソッドを **Indexes** コレクションに使用できるのは、元になる **TableDef** オブジェクトの **[Updatable](connection-updatable-property-dao.md)** プロパティの設定が **True** の場合のみです。
 
 新しい **Index** オブジェクトを作成した後は、 **Append** メソッドを使用して **TableDef** オブジェクトの **Indexes** コレクションに追加する必要があります。
 

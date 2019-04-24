@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ddd7566be2581fe449872eb576bf7f11e5a806fb
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293925"
 ---
 # <a name="detecting-and-resolving-conflicts"></a>競合の検出および解決
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-## <a name="detecting-and-resolving-conflicts"></a>競合の検出および解決
+## <a name="detecting-and-resolving-conflicts"></a>競合を検出し、解決する
 
 **Recordset** をイミディエイト モードで処理している場合は、同時操作の問題が発生する可能性はきわめて低いといえます。一方、アプリケーションでバッチ モードの更新を使用している場合は、あるユーザーがレコードに対して加えた変更が保存される前に、同じレコードを編集している他のユーザーがそのレコードを変更する可能性が十分にあります。このような場合、アプリケーションがその競合をスムーズに処理できると便利です。サーバーに最後に更新を送信した人が "勝者" となる方がよい場合もあれば、直近に更新を実行したユーザーに 2 つの競合する値を提示して、どちらの更新を採用するのか決定してもらう方がよい場合もあります。
 
@@ -26,11 +26,11 @@ ms.locfileid: "28716629"
 
 ## <a name="detecting-errors"></a>エラーを検出する
 
-ADO がバッチ更新中に競合を検出すると、 **Errors** コレクションに警告が追加されます。このため、 **BatchUpdate** を呼び出した直後に、必ずエラーをチェックすることをお勧めします。エラーを発見したら、競合が発生したかどうかテストを開始します。まず、 **Recordset** の **Filter** プロパティを **adFilterConflictingRecords** に設定します ( **Filter** プロパティについては前の章で説明しています)。これにより、競合するレコードだけが **Recordset** に表示されます。この手順の後に **RecordCount** プロパティがゼロになっていれば、競合以外の原因でエラーが発生したことがわかります。
+ADO がバッチ更新中に競合を検出すると、**Errors** コレクションに警告が追加されます。このため、**BatchUpdate** を呼び出した直後に、必ずエラーをチェックすることをお勧めします。エラーを発見したら、競合が発生したかどうかテストを開始します。まず、**Recordset** の **Filter** プロパティを **adFilterConflictingRecords** に設定します (**Filter** プロパティについては前の章で説明しています)。これにより、競合するレコードだけが **Recordset** に表示されます。この手順の後に **RecordCount** プロパティがゼロになっていれば、競合以外の原因でエラーが発生したことがわかります。
 
 **BatchUpdate** を呼び出すと、ADO およびプロバイダーは、データ ソースに対して更新を実行するための SQL ステートメントを生成します。一部のデータ ソースでは、WHERE 句で使用できる列の種類が限定されているため、注意が必要です。
 
-次に、 *AffectRecords*引数**adAffectGroup**に設定し、 *ResyncValues*引数を**処理**するのと同じ設定を**レコード セット**に**再同期**メソッドを呼び出します。 **Resync**メソッドは、基になるデータベースから現在の**レコード セット**オブジェクト内のデータを更新します。 **AdAffectGroup**を使用するは、データベースと現在のフィルターを設定するは、競合するレコードだけが表示されているレコードのみが再同期されることを確認します。 大きな**Recordset**を処理している場合は、パフォーマンスに大きな違いを作成このでした。 **Resync**を呼び出すときに、**処理**に*ResyncValues*引数を設定することにより**UnderlyingValue**プロパティに、データベースから (競合) の値が含まれているがいることを確認する**値**値は、ユーザーが入力し、 **OriginalValue**プロパティが (最後の成功した**UpdateBatch**の呼び出しが行われた前に、の値) のフィールドの元の値を保持するプロパティが維持されます。 競合を解決するには、プログラムを使用してまたは使用する値を選択するユーザーを必要とするこれらの値を使用できます。
+次に、**Recordset** の **Resync** メソッドを呼び出します。このとき、*AffectRecords* 引数を **adAffectGroup**、*ResyncValues* 引数を **adResyncUnderlyingValues** に設定します。**Resync** メソッドを実行すると、基になるデータベースに基づいて現在の **Recordset** オブジェクトが更新されます。**adAffectGroup** を使用することにより、現在のフィルター設定で表示されているレコード、つまり競合するレコードだけを、データベースと再度同期化できます。大きな **Recordset** を処理している場合は、これによってパフォーマンスに大幅な違いが出ることがあります。また、**Resync** を呼び出すときに *ResyncValues* 引数を **adResyncUnderlyingValues** に設定することにより、**UnderlyingValue** プロパティにデータベースから (競合する) 値を格納し、**Value** プロパティでユーザーの入力値を管理し、**OriginalValue** プロパティにそのフィールドの元の値 (**UpdateBatch** への呼び出しが最後に成功する前の値) を格納できます。その後、これらの値を使用して、プログラム上で競合を解決するか、ユーザーに使用する値を選択させることができます。
 
 この手法を次のコード例に示します。この例では、別の **Recordset** を使用して、 **UpdateBatch** が呼び出される前に基になるテーブルの値を変更することにより、意図的に競合を発生させます。
 

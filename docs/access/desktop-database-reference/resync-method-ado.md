@@ -8,32 +8,32 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: fa483d86dc345968607a0752f0552ddccfe7fef5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306574"
 ---
 # <a name="resync-method-ado"></a>Resync メソッド (ADO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-現在の [Recordset](recordset-object-ado.md) オブジェクト、または [Record](fields-collection-ado.md) オブジェクトの [Fields](record-object-ado.md) コレクションのデータを、基になるデータベースのデータで更新します。
+現在の [Recordset](recordset-object-ado.md) オブジェクト、または [Record](record-object-ado.md) オブジェクトの [Fields](fields-collection-ado.md) コレクションのデータを、基になるデータベースのデータで更新します。
 
 ## <a name="syntax"></a>構文
 
-*レコード セット*です。*AffectRecords*、 *ResyncValues*を再同期します。
+*Recordset*。再同期する*レコード*、 *ResyncValues*
 
-*レコード*です。 *フィールド*です。*ResyncValues*を再同期します。
+*レコード*。 *フィールド*。Resync*ResyncValues*
 
 ## <a name="parameters"></a>パラメーター
 
 |パラメーター|説明|
 |:--------|:----------|
-|*AffectRecords* |省略可能です。 [Resync](affectenum.md) メソッドで操作するレコードの数を決定する **AffectEnum** 値を指定します。既定値は **adAffectAll** です。この値は、 **Record** オブジェクトの **Fields** コレクションに対する **Resync** メソッドでは使用できません。|
+|*影響のあるレコード* |省略可能です。 [Resync](affectenum.md) メソッドで操作するレコードの数を決定する **AffectEnum** 値を指定します。既定値は **adAffectAll** です。この値は、 **Record** オブジェクトの **Fields** コレクションに対する **Resync** メソッドでは使用できません。|
 |*ResyncValues* |省略可能です。基になる値を上書きするかどうかを指定する [ResyncEnum](resyncenum.md) 値を指定します。既定値は **adResyncAllValues** です。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 ### <a name="recordset"></a>Recordset
 
@@ -49,11 +49,11 @@ ms.locfileid: "28709874"
 
 ### <a name="fields"></a>フィールド
 
-**Resync** メソッドは、 **Record** オブジェクトの **Fields** コレクションの値を、基になるデータ ソースと再同期させる場合に使用します。 [Count](count-property-ado.md) プロパティは、このメソッドによる影響を受けません。
+**Resync** メソッドは、**Record** オブジェクトの **Fields** コレクションの値を、基になるデータ ソースと再同期させる場合に使用します。[Count](count-property-ado.md) プロパティは、このメソッドによる影響を受けません。
 
-*ResyncValues*を**adResyncAllValues** (既定値) に設定し、 [UnderlyingValue](underlyingvalue-property-ado.md)[値](value-property-ado.md)、およびコレクション内の[Field](field-object-ado.md)オブジェクトの[OriginalValue](originalvalue-property-ado.md)プロパティが同期されます。 *ResyncValues*は、**処理**に設定されている場合は、 **UnderlyingValue**プロパティだけが同期されます。
+*ResyncValues* を **adResyncAllValues** (既定値) に設定すると、コレクションに含まれる [Field](field-object-ado.md) オブジェクトのプロパティ [UnderlyingValue](underlyingvalue-property-ado.md)、[Value](value-property-ado.md)、および [OriginalValue](originalvalue-property-ado.md) が同期化されます。*ResyncValues* を **adResyncUnderlyingValues** に設定すると、**UnderlyingValue** プロパティだけが同期化されます。
 
 呼び出し時の各 **Field** オブジェクトの **Status** プロパティの値も、 **Resync** の動作に影響を与えます。 **Status** の値が **adFieldPendingUnknown** または **adFieldPendingInsert** である **Field** オブジェクトに対しては、 **Resync** は何も行いません。 **Status** の値が **adFieldPendingChange** または **adFieldPendingDelete** である場合は、 **Resync** はデータ ソースにまだ存在しているフィールドのデータ値を同期化します。
 
-**再同期**は変更されません**フィールド**オブジェクトの**ステータス**の値**の再同期**が呼び出されたときにエラーが発生しません。 たとえば、フィールドが存在しない場合、プロバイダーは**adFieldDoesNotExist**など、 **Field**オブジェクトの適切な**ステータス**値を返します。 返された**ステータス**値は、 **Status**プロパティの値の中で論理的に組み合わせることができます。
+**Resync** will not modify **Status** values of **Field** objects unless an error occurs when **Resync** is called. For example, if the field no longer exists, the provider will return an appropriate **Status** value for the **Field** object, such as **adFieldDoesNotExist**. Returned **Status** values may be logically combined within the value of the **Status** property.
 

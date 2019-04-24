@@ -1,5 +1,5 @@
 ---
-title: イベントのパラメーター (デスクトップ データベース参照のアクセス)
+title: イベントパラメーター (Access デスクトップデータベースリファレンス)
 TOCTitle: Event parameters
 ms:assetid: 626de9b1-4d45-d77e-ccf2-23f2ea31c043
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249371(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: dd4a99ec24a05084a2ae137ded3219c2997f8cf3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293316"
 ---
 # <a name="event-parameters"></a>イベント パラメーター
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 すべてのイベント ハンドラーには、イベント ハンドラーを制御するステータス パラメーターがあります。Complete イベントの場合、このパラメーターは、そのイベントを生成した操作の成功または失敗をも示します。また、ほとんどの Complete イベントには、その操作の実行に使用された ADO オブジェクトを参照する 1 つまたは複数のオブジェクト パラメーターに加えて、発生した可能性のあるエラーについての情報が設定されるエラー パラメーターもあります。たとえば、[ExecuteComplete](executecomplete-event-ado.md) イベントには、このイベントに関連する **Command** オブジェクト、 **Recordset** オブジェクト、および **Connection** オブジェクト用のオブジェクト パラメーターが含まれています。次の Microsoft Visual Basic の例にある、pCommand オブジェクト、pRecordset オブジェクトと pConnection オブジェクトはそれぞれ、 **Execute** メソッドで使用される **Command** オブジェクト、 **Recordset** オブジェクト、および **Connection** オブジェクトを表しています。
 
@@ -32,11 +32,11 @@ Private Sub connEvent_ExecuteComplete(ByVal RecordsAffected As Long, _
 
 **Error** オブジェクトを除いて、Will イベントには同じパラメーター群が渡されます。これにより、アプリケーションでは、保留中の操作に使用されている各オブジェクトを調べ、その操作の完了を許可するかどうかを決定することができます。
 
-いくつかのイベント ハンドラーでは、イベントが発生した原因に関する追加情報を提供する*ため*のパラメーターがあります。 (**MoveNext**、 **MovePrevious**というように) は、ナビゲーション メソッドのいずれかが発生したため、 **WillMove**イベントと**MoveComplete**イベントを発生することがなどが呼び出された、または、再クエリの結果として。
+一部のイベントハンドラーには、イベントが発生した理由に関する追加情報を提供する*Reason*パラメーターがあります。 たとえば、 **MoveComplete**イベント**** は、1つのナビゲーションメソッド (**MoveNext**、 **MovePrevious**など) が呼び出されたとき、または再クエリの結果として発生することがあります。
 
 ## <a name="status-parameter"></a>ステータス パラメーター
 
-イベント ハンドラー ルーチンが呼び出されると、*状態*のパラメーターは次の値のいずれかに設定されています。
+イベント ハンドラー ルーチンが呼び出されると、"ステータス" パラメーターが次の値のいずれか 1 つに設定されます。
 
 <table>
 <colgroup>
@@ -52,23 +52,23 @@ Private Sub connEvent_ExecuteComplete(ByVal RecordsAffected As Long, _
 <tbody>
 <tr class="odd">
 <td><p><strong>adStatusOK</strong></p></td>
-<td><p>Will イベントと Complete イベントの両方に渡されます。イベントを発生させた操作が正常に完了したことを示します。</p></td>
+<td><p>Will イベントと Complete イベントの両方に渡されます。 イベントを発生させた操作が正常に完了したことを示します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adStatusErrorsOccurred</strong></p></td>
-<td><p>完全なイベントのみに渡されます。 この場合、イベントを発生させた操作が成功すると、できなかったこと、または Will イベントで操作がキャンセルされました。 詳細については、「<em>エラー</em>パラメーターを確認していますください。</p></td>
+<td><p>Complete イベントにのみ渡されます。イベントを発生した操作が失敗したこと、または Will イベントがその操作をキャンセルしたことを示します。詳細については、「エラー パラメーター」を参照してください。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adStatusCantDeny</strong></p></td>
-<td><p>Will イベントにのみ渡されます。Will イベントで操作をキャンセルできないことを示します。この操作は実行する必要があります。</p></td>
+<td><p>Will イベントにのみ渡されます。 Will イベントで操作をキャンセルできないことを示します。 この操作は実行する必要があります。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-判断した場合、操作を続行する必要がありますがイベントで、変更されていない*状態*のパラメーターのままにします。 受信状態のパラメーターが**adStatusCantDeny**に設定されていない限り、ただし、*ステータス*を**adStatusCancel**に変更することで、保留中の操作をキャンセルできます。 これを行うには、操作に関連付けられている完全なイベントは**adStatusErrorsOccurred**に設定されて、*ステータス*パラメーターを持ちます。 Complete イベントに渡される**Error**オブジェクトには、 **adErrOperationCancelled**の値が含まれています。
+この操作を続行する必要があるかどうかを判断する場合は、 *Status*パラメーターを変更しないでおきます。 ただし、受信状態パラメーターが**adstatuscantdeny**に設定されていない限り、*状態*を**adstatuscancel**に変更することで、保留中の操作を取り消すことができます。 これを行うと、操作に関連付けられている完全なイベントの*Status*パラメーターが**adstatuserrorソケット curred**に設定されます。 The **Error** object passed to the Complete event will contain the value **adErrOperationCancelled**.
 
-イベントを処理しない場合は、*状態*を**adStatusUnwantedEvent**に設定して、アプリケーションでは、そのイベントの通知は送信されなくなります。 ただし、理由の 1 つ以上のいくつかのイベントが発生することに注意してください。 その場合は、可能な各理由に対して**adStatusUnwantedEvent**を指定してください。 たとえば、保留中の**RecordChange**イベントの通知の受信を停止するために必要がありますパラメーターを設定する、*状態* **adRsnAddNew**、 **adRsnDelete**、 **adRsnUpdate****を**adStatusUnwantedEvent**にadRsnUndoUpdate**、 **adRsnUndoAddNew**、 **adRsnUndoDelete**、および発生するときに、その**adRsnFirstChange**です。
+イベントを処理する必要がなくなった場合は、 *Status*を**adStatusUnwantedEvent**に設定すると、アプリケーションでそのイベントの通知を受け取ることがなくなります。 Remember, however, that some events can be raised for more than one reason. In that case, you must specify **adStatusUnwantedEvent** for each possible reason. たとえば、保留中の**recordchange**イベントの通知を受信しないようにするためには、 *Status*パラメーターを**adrsnaddnew**、 **adrsnaddnew**、 **adrsnaddnew** **** **の adStatusUnwantedEvent に設定する必要があります。adRsnUndoUpdate**、 **adRsnUndoAddNew**、 **adRsnUndoDelete**、および**adrsnfirstchange**が発生したとき。
 
 <table>
 <colgroup>
@@ -96,15 +96,15 @@ Private Sub connEvent_ExecuteComplete(ByVal RecordsAffected As Long, _
 
 ## <a name="error-parameter"></a>エラー パラメーター
 
-*エラー*のパラメーターは、[エラー](error-object-ado.md)の ADO オブジェクトへの参照です。 *状態*パラメーターは、 **adStatusErrorsOccurred**に設定されている場合、 **Error**オブジェクトには、操作が失敗した理由に関する詳細情報が含まれています。 Complete イベントに関連付けられた Will イベントは、*状態*のパラメーターを**adStatusCancel**に設定することにより操作がキャンセルされましたが場合、エラー オブジェクトは常に**adErrOperationCancelled**に設定します。
+*error*パラメーターは、ADO [error](error-object-ado.md)オブジェクトへの参照です。 *Status*パラメーターが**adstatuserrorソケット curred**に設定されている場合、 **Error**オブジェクトには操作が失敗した理由に関する詳細が含まれています。 Complete イベントに関連付けられているイベントが、 *Status*パラメーターを**adstatuscancel**に設定することによって操作をキャンセルした場合、error オブジェクトは常に**adErrOperationCancelled**に設定されます。
 
 ## <a name="object-parameter"></a>オブジェクト パラメーター
 
-各イベントでは、操作に関係するオブジェクトを表す 1 つまたは複数のオブジェクトを受け取ります。たとえば、 **ExecuteComplete** イベントでは、 **Command** オブジェクト、 **Recordset** オブジェクト、および **Connection** オブジェクトを受け取ります。
+各イベントでは、操作に関係するオブジェクトを表す 1 つまたは複数のオブジェクトを受け取ります。たとえば、**ExecuteComplete** イベントでは、**Command** オブジェクト、**Recordset** オブジェクト、および **Connection** オブジェクトを受け取ります。
 
 ## <a name="reason-parameter"></a>理由パラメーター
 
-*"理由*"パラメーター *adReason*は、イベントが発生した原因に関する追加情報を提供します。 *AdReason*パラメーターを持つイベントは、別の理由で毎回、同じ操作の場合でも何回か呼び出すことができます。 たとえば、 **WillChangeRecord**イベントのハンドラーは、しようとしたりしないで、挿入、削除、またはレコードの変更を元に戻す操作に対して呼び出されます。 何らかの理由で発生したときにのみイベントを処理する場合に興味はないフィルターをかけて、 *adReason*パラメーターを使用することができます。 たとえば、レコードが追加されたために発生したときにのみ、レコードの変更イベントを処理する場合は、行うことができます次のような何か。
+*Reason*パラメーター *adReason*は、イベントが発生した理由に関する追加情報を提供します。 *adReason*パラメーターを持つイベントは、同じ操作であっても、さまざまな理由で複数回呼び出されることがあります。 For example, the **WillChangeRecord** event handler is called for operations that are about to do or undo the insertion, deletion, or modification of a record. 特定の理由でイベントが発生した場合にのみイベントを処理する場合は、 *adReason*パラメーターを使用して、不要なオカレンスを除外することができます。 For example, if you wanted to process record-change events only when they occur because a record was added, you can do something like this:
 
 ```vb 
  
@@ -124,5 +124,5 @@ End Sub
 
 この例では、処理対象外の理由それぞれに対して通知が発生する可能性があります。ただし、各理由に対して通知が発生するのは 1 回のみです。各理由に対して通知が 1 回発生した後には、新規レコード追加の場合にのみ通知を受け取ることになります。
 
-一方、 *adStatus* **adStatusUnwantedEvent**を 1 回だけを要求するイベント ハンドラーを設定せず、 **adReason**パラメーター停止イベントの通知を受信する必要があります。
+これに対し、**adReason** パラメーターがないイベント ハンドラーでイベント通知を受け取らないように設定する場合は、*adStatus* を **adStatusUnwantedEvent** に 1 回設定するだけで済みます。
 

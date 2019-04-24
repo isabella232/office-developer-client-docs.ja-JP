@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 7d8876b180d668be5734233a33714d7541b9c3d1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291089"
 ---
 # <a name="issuing-commands-to-the-underlying-data-provider"></a>基になるデータ プロバイダーへのコマンドの発行
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-図形で始まらない任意のコマンドは、データ プロバイダーから渡されます。 これは、「形状 {プロバイダー コマンド}」という形式での図形コマンドを発行するのと同じです。 これらのコマンドを実行*しない***レコード セット**を生成する必要があります。 たとえば、"図形 {ドロップ テーブル 'mytable'} は完全に有効なシェイプ コマンドでは、データ プロバイダーは、テーブルのドロップをサポートするいると仮定した場合します。
+Any command that does not begin with SHAPE is passed through to the data provider. This is equivalent to issuing a shape command in the form "SHAPE {provider command}". これらのコマンドは、 **Recordset**を生成する必要はあり*ません*。 For instance, "SHAPE {DROP TABLE MyTable} is a perfectly valid shape command, assuming the data provider supports DROP TABLE.
 
 この機能により、通常のプロバイダー コマンドとシェイプ コマンドの両方を、同じ接続とトランザクションで実行できます。
 

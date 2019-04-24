@@ -1,5 +1,5 @@
 ---
-title: 軸のプロパティ、メソッド、およびイベント (ADO MD)
+title: Axis のプロパティ、メソッド、およびイベント (ADO MD)
 TOCTitle: Properties, Methods, and Events
 ms:assetid: 6db39ad7-9597-d09c-484b-199c40481b4d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249433(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f143ff3fc06b4932180840f9f903f51d0c30ae8f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296907"
 ---
-# <a name="axis-properties-methods-and-events-ado-md"></a>軸のプロパティ、メソッド、およびイベント (ADO MD)
+# <a name="axis-properties-methods-and-events-ado-md"></a>Axis のプロパティ、メソッド、およびイベント (ADO MD)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
 ## <a name="propertiescollections"></a>プロパティ/コレクション
@@ -25,11 +25,11 @@ ms.locfileid: "28705198"
 - [DimensionCount プロパティ](dimensioncount-property-ado-md.md)
 - [Name プロパティ](name-property-ado-md.md)
 - [Positions コレクション](positions-collection-ado-md.md)
-- [プロパティのコレクション](properties-collection-ado.md)
+- [Properties コレクション](properties-collection-ado.md)
 
 ## <a name="methods"></a>メソッド
 
-なし
+なし。
 
 ## <a name="events"></a>イベント
 

@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c3c83a3364b7d21146679c8dcf612f2305a19976
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308275"
 ---
 # <a name="workspacetypeenum-enumeration-dao"></a>WorkspaceTypeEnum 列挙 (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **CreateWorkspace** メソッドで、作成するワークスペースの種類を指定するために使用します。
 
@@ -36,8 +36,8 @@ ms.locfileid: "28721130"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>dbUseJet</p></td>
-<td><p>2</p></td>
+<td><p>dbusejet</p></td>
+<td><p>pbm-2</p></td>
 <td><p>Microsoft Access ワークスペースを作成します。</p></td>
 </tr>
 </tbody>

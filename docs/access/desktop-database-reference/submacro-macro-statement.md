@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: caabfb0f4e90134c10d5ab728f19e1fd2a4437dd
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308471"
 ---
 # <a name="submacro-macro-statement"></a>Submacro マクロ ステートメント
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**サブマクロ**ステートメントは、マクロ デザイナー ウィンドウで、別のマクロを定義します。
+**Submacro**ステートメントは、マクロデザイナーウィンドウで別のマクロを定義します。
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
-**サブマクロ**のアクションには、次の引数があります。
+Submacro アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -49,9 +49,9 @@ ms.locfileid: "28716195"
 
 ## <a name="example"></a>例
 
-次のマクロは、" **OnError/エラー時** " アクションの使用例を示しています。この例では、エラーが発生したときに Access が " **ErrorHandler**" という名前のカスタム エラー処理マクロを実行するように、" OnError/エラー時 " アクションが指定されています。エラーが発生すると、 CatchErrors サブマクロが呼び出されます。エラー番号が 2102 の場合、特定のメッセージが表示され、マクロの実行が停止します。それ以外の場合は、エラーの内容を説明するメッセージが表示され、マクロが一時停止します。したがって、追加のトラブルシューティングを行うことができます。 ErrorHandler マクロは、 **MacroError** オブジェクトを参照するメッセージ ボックスを表示して、エラーに関する情報を表示します。
+次のマクロは、"OnError/**エラー**時" アクションの使用方法を示します。 この例では、" **OnError** /エラー時" アクションは、エラーが発生したときに ErrorHandler という名前のカスタムエラー処理マクロを実行するように指定します。 エラーが発生すると、CatchErrors submacro が呼び出されます。 エラー番号が2102の場合は、特定のメッセージが表示され、マクロの実行が停止します。 それ以外の場合は、エラーを説明するメッセージが表示され、マクロが一時停止して、追加のトラブルシューティングを実行できるようになります。 ErrorHandler マクロは、 **MacroError**オブジェクトを参照するメッセージボックスを表示して、エラーに関する情報を表示します。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     /* MACRO: mcrThrowErrors                                  */

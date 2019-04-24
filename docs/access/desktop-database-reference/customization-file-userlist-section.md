@@ -8,26 +8,26 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ecaf77765051a202925449d0221f0a68a2a06622
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295157"
 ---
 # <a name="customization-file-userlist-section"></a>カスタマイズ ファイルの UserList セクション
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**Userlist**セクションは、同じセクション*の識別子*パラメーターを使用して、[**接続**] セクションに関係します。
+**userlist** セクションは、同じセクションの *identifier* パラメーターによって、**connect** セクションと関連付けられています。
 
-このセクションでは、*ユーザー アクセス エントリ*を指定したユーザーのアクセス権を指定し、一致する [**接続**] セクションで*既定*の*アクセス エントリ*をオーバーライドを含めることができます。
+このセクションには、指定されたユーザーのアクセス権を指定する*ユーザーアクセスエントリ*を含めることができます。また、一致する**connect**セクションの*既定*の*アクセスエントリ*を上書きします。
 
 ## <a name="syntax"></a>構文
 
 ユーザー アクセス エントリの形式は、次のとおりです。
 
-*ユーザー名。 =*・ アクセス権。
+*userName * * * =* accessrights * * *
 
 <table>
 <colgroup>
@@ -36,19 +36,18 @@ ms.locfileid: "28721501"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>指定項目</p></th>
+<th><p>パーツ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><em>userName</em></p></td>
-<td><p>この接続を使用しているユーザーの<em>ユーザー名</em>です。 IIS<strong>サービス マネージャー</strong>のダイアログ ボックスは、有効なユーザー名が確立されます。</p></td>
+<td><p>この接続を使用しているユーザーの "ユーザー名"。 有効なユーザー名は IIS の [サービス マネージャー] ダイアログ ボックスで設定されます。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><em>・ アクセス権</em></strong></p></td>
-<td><p>次のアクセス権のいずれかを指定します。
-<br />
+<td><p><strong><em>accessRights</em></strong></p></td>
+<td><p>次のアクセス権のいずれかを指定します。<br />
 </p>
 <ul>
 <li><p><strong>NoAccess</strong> ユーザーは、データ ソースにアクセスできません。</p></li>

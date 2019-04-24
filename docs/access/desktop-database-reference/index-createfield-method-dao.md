@@ -1,5 +1,5 @@
 ---
-title: Index.CreateField メソッド (DAO)
+title: CreateField メソッド (DAO)
 TOCTitle: CreateField Method
 ms:assetid: fc82b785-8768-b144-a2a4-c1f1798865a6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837208(v=office.15)
@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: aedda14273446ff6823776e535eb7995aa127fa5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291832"
 ---
-# <a name="indexcreatefield-method-dao"></a>Index.CreateField メソッド (DAO)
+# <a name="indexcreatefield-method-dao"></a>CreateField メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 新しい **[Field](field-object-dao.md)** オブジェクトを作成します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。CreateField (***名前***、***種類***、***サイズ***)
+*式*。CreateField (***名前***、***種類***、***サイズ***)
 
-*式***Index**オブジェクトを表す変数です。
+*式***Index**オブジェクトを表す変数を取得します。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -46,20 +46,20 @@ ms.locfileid: "28703028"
 <tbody>
 <tr class="odd">
 <td><p><em>Name</em></p></td>
-<td><p>省略可能</p></td>
-<td><p><strong>Variant (バリアント型)</strong></p></td>
-<td><p>新しい <strong>Field</strong> オブジェクトの一意の名前を表す文字列型 (String) の値。有効な <strong>Field</strong> 名の詳細については、<strong><a href="connection-name-property-dao.md">Name</a></strong> プロパティを参照してください。</p></td>
+<td><p>Optional</p></td>
+<td><p><strong>Variant</strong></p></td>
+<td><p>新しい <strong>Field</strong> オブジェクトの一意の名前を表す文字列型 (String) の値。 有効な<strong>フィールド</strong>名の詳細については、 <strong><a href="connection-name-property-dao.md">Name</a></strong>プロパティを参照してください。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>型</em></p></td>
+<td><p><em>Type</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>Variant (バリアント型)</strong></p></td>
+<td><p><strong>Variant</strong></p></td>
 <td><p>このオブジェクトではサポートされていません。</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>Size</em></p></td>
-<td><p>省略可能</p></td>
-<td><p><strong>Variant (バリアント型)</strong></p></td>
+<td><p>Optional</p></td>
+<td><p><strong>Variant</strong></p></td>
 <td><p>このオブジェクトではサポートされていません。</p></td>
 </tr>
 </tbody>
@@ -72,11 +72,11 @@ Field
 
 ## <a name="remarks"></a>注釈
 
-**CreateField** メソッドを使用すると、新しいフィールドを作成して、そのフィールドの名前、データ型、およびサイズを指定できます。 **CreateField** を使用するときに 1 つ以上のオプションの引数を省略した場合は、新しいオブジェクトをコレクションに追加する前に、適切な代入ステートメントを使用して、対応するプロパティを設定またはリセットできます。新しいオブジェクトをコレクションに追加した後は、一部のプロパティ設定を変更できなくなります。詳細については、各プロパティのトピックを参照してください。
+**CreateField** メソッドを使用して、新しいフィールドを作成し、そのフィールドの名前、データ型、およびサイズを指定できます。**CreateField** の使用時に省略可能な引数を省略した場合は、新しいオブジェクトをコレクションに追加する前に、適切な代入ステートメントを使用して、対応するプロパティを設定またはリセットできます。新しいオブジェクトの追加後は、一部のプロパティの設定は変更できません。詳細については、各プロパティのトピックを参照してください。
 
-タイプとサイズの引数は、**テーブル定義**オブジェクト内の**Field**オブジェクトのみに適用されます。 これらの引数は、 **Field** オブジェクトが **Index** オブジェクトまたは **Relation** オブジェクトに関連付けられている場合は無視されます。
+引数 type および引数 size は、 **TableDef**オブジェクトの**Field**オブジェクトにのみ適用されます。 これらの引数は、 **Field** オブジェクトが **Index** オブジェクトまたは **Relation** オブジェクトに関連付けられている場合は無視されます。
 
-名は、既にコレクションのメンバーであるオブジェクトを参照している場合、 **[Append](fields-append-method-dao.md)** メソッドを使用すると、実行時エラーが発生します。
+name が既にコレクションのメンバーであるオブジェクトを参照している場合、 **[Append](fields-append-method-dao.md)** メソッドを使用すると、実行時エラーが発生します。
 
-**Field** オブジェクトを **Fields** コレクションから削除するには、そのコレクションで **[Delete](fields-delete-method-dao.md)** メソッドを使用します。フィールドを参照するインデックスの作成後は、その **Field** オブジェクトを **TableDef** オブジェクトの **Fields** コレクションから削除できません。
+**Fields** コレクションから **Field** オブジェクトを削除するには、コレクションの **[Delete](fields-delete-method-dao.md)** メソッドを使用します。フィールドを参照するインデックスを作成した後は、 **TableDef** オブジェクトの **Fields** コレクションから **Field** オブジェクトを削除できません。
 

@@ -1,5 +1,5 @@
 ---
-title: Field.AllowZeroLength プロパティ (DAO)
+title: AllowZeroLength プロパティ (DAO)
 TOCTitle: AllowZeroLength Property
 ms:assetid: 5103a905-9258-e088-0210-857372f41c3c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff193832(v=office.15)
@@ -12,29 +12,29 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: f1eb08c6079257a350a5bb92392871869e720f1b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293162"
 ---
-# <a name="fieldallowzerolength-property-dao"></a>Field.AllowZeroLength プロパティ (DAO)
+# <a name="fieldallowzerolength-property-dao"></a>AllowZeroLength プロパティ (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 長さゼロの文字列 ("") が、テキスト型またはメモ型の **[Field](field-value-property-dao.md)** オブジェクトの **[Value](field-object-dao.md)** プロパティに対する有効な設定値かどうかを示す値を設定または取得します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。AllowZeroLength
+*式*。AllowZeroLength
 
-*式***Field**オブジェクトを表す変数です。
+*式***Field**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
 **Fields** コレクションに追加されていないオブジェクトの場合、このプロパティは値の取得および設定が可能です。
 
-**Fields** コレクションに追加されると、 **AllowZeroLength** プロパティを使用できるかどうかは、次の表に示すように、 **Fields** コレクションを含むオブジェクトによって異なります。
+**Fields** コレクションに追加されると、**AllowZeroLength** プロパティを使用できるかどうかは、次の表に示すように、**Fields** コレクションを含むオブジェクトによって異なります。
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ ms.locfileid: "28714711"
 <tbody>
 <tr class="odd">
 <td><p><strong>Index</strong> オブジェクト</p></td>
-<td><p>サポートしません。</p></td>
+<td><p>サポートされない</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>QueryDef</strong> オブジェクト</p></td>
@@ -58,7 +58,7 @@ ms.locfileid: "28714711"
 </tr>
 <tr class="odd">
 <td><p><strong>Recordset</strong> オブジェクト</p></td>
-<td><p>読み取り専用</p></td>
+<td><p>値の取得のみ可能です。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Relation</strong> オブジェクト</p></td>

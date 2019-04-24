@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2229c7580acc6848551103d83b7bfcf981d37bef
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295318"
 ---
 # <a name="creating-and-executing-a-simple-command"></a>簡単なコマンドの作成と実行
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **Command** オブジェクトの一般的な使用方法ではありませんが、次のコードに、 **Command** オブジェクトを使用してデータ ソースに対するコマンドを実行する基本的な方法を示します。この場合、行を返すコマンドなので、コマンドの実行結果を **Recordset** オブジェクトに返します。
 
@@ -83,7 +83,7 @@ ErrHandler:
 
 
 > [!NOTE]
-> ここでいくつかの例では、 **GetNewConnection**、データ プロバイダーとの接続を確立するために、ユーティリティ関数を呼び出します。 冗長性を避けるためには、表示されている 1 回だけ。
+> このセクションのいくつかの例では、ユーティリティ関数**getnewconnection**を呼び出して、データプロバイダーとの接続を確立します。 冗長性を回避するために、次のように表示されます。
 
 ```vb 
  

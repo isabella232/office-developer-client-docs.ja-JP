@@ -12,23 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 9e934b290472dc4bb0ad8619b2ada6992b4215c0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308632"
 ---
 # <a name="singlestep-macro-action"></a>SingleStep マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**SingleStep** アクションを使用すると、マクロの実行を一時中断して [ **マクロのシングル ステップ**] ダイアログ ボックスを表示できます。
+**SingleStep** アクションを使用すると、マクロの実行を一時中断して [**マクロのシングル ステップ**] ダイアログ ボックスを表示できます。
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
 **SingleStep** アクションには、引数はありません。
 
-## <a name="remarks"></a>解説
+
+## <a name="remarks"></a>注釈
 
 - **SingleStep** アクションは、正しく動作していないマクロのトラブルシューティングに使用します。マクロ内で問題の原因と考えられるアクションの直前に **SingleStep** アクションを追加できます。このアクションにより、マクロの実行は一時中断され、[ **マクロのシングル ステップ**] ダイアログ ボックスが表示されます。このダイアログ ボックスでは、マクロ名、指定されている条件、アクション名、引数、エラー番号 (該当する場合) などの現在のマクロ アクションに関する情報が表示されます。このダイアログ ボックスでは、次のマクロ アクションへ進むには [ **ステップ**]、現在のマクロおよびその他の実行中のマクロを停止するには [ **すべてのマクロを停止**]、シングル ステップ実行を終了してマクロの通常の処理を再開するには [ **続行**] をクリックします。
 

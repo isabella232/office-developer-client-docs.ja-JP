@@ -1,5 +1,5 @@
 ---
-title: RelationAttributeEnum 列挙型 (DAO)
+title: RelationAttributeEnum 列挙 (DAO)
 TOCTitle: RelationAttributeEnum Enumeration
 ms:assetid: ce8d0696-66d7-052f-1313-64baee3442ed
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834499(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: dbb8ca2e1a63154f17bd814a26fe79ed405765cb
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306980"
 ---
-# <a name="relationattributeenum-enumeration-dao"></a>RelationAttributeEnum 列挙型 (DAO)
+# <a name="relationattributeenum-enumeration-dao"></a>RelationAttributeEnum 列挙 (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 " **Attributes**/属性" プロパティで、 **Relation** オブジェクトの属性を特定するために使用します。
 
@@ -42,12 +42,12 @@ ms.locfileid: "28711120"
 </tr>
 <tr class="even">
 <td><p>dbRelationDontEnforce</p></td>
-<td><p>2</p></td>
+<td><p>pbm-2</p></td>
 <td><p>リレーションシップは適用されません (参照整合性なし)。</p></td>
 </tr>
 <tr class="odd">
 <td><p>dbRelationInherited</p></td>
-<td><p>4</p></td>
+<td><p>2/4</p></td>
 <td><p>リレーションシップは 2 つのリンク テーブルを含むデータベース内に存在します。</p></td>
 </tr>
 <tr class="even">
@@ -62,11 +62,11 @@ ms.locfileid: "28711120"
 </tr>
 <tr class="even">
 <td><p>dbRelationUnique</p></td>
-<td><p>1</p></td>
+<td><p>1-d</p></td>
 <td><p>一対一リレーションシップ。</p></td>
 </tr>
 <tr class="odd">
-<td><p>これら</p></td>
+<td><p>dbRelationUpdateCascade</p></td>
 <td><p>256</p></td>
 <td><p>更新が連鎖的に行われます。</p></td>
 </tr>

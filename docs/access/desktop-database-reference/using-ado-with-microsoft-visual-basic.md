@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 26eaa93a1abbb3778a2735d50dd5022edb3023d9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306224"
 ---
 # <a name="using-ado-with-microsoft-visual-basic"></a>Microsoft Visual Basic での ADO の使用
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ADO プロジェクトのセットアップおよび ADO コードの作成は、Visual Basic と Visual Basic for Applications のどちらを使用する場合でもほとんど同じです。このトピックでは、Visual Basic と Visual Basic for Applications での ADO の使用方法と両者の相違点について説明します。
 
-## <a name="referencing-the-ado-library"></a>ADO ライブラリを参照します。
+## <a name="referencing-the-ado-library"></a>ADO ライブラリの参照
 
 プロジェクトでは ADO ライブラリを参照する必要があります。
 
@@ -41,7 +41,7 @@ ADO プロジェクトのセットアップおよび ADO コードの作成は�
 
 ### <a name="to-reference-ado-from-microsoft-access"></a>Microsoft Access から ADO を参照するには
 
-1. Microsoft Access の [ **データベース** ] ウィンドウの [ **モジュール** ] タブで、モジュールを選択または作成します。
+1. Microsoft Access の [**データベース**] ウィンドウの [**モジュール**] タブで、モジュールを選択または作成します。
 
 2. [ **ツール** ] メニューの [ **参照設定** ] を選択します。
 
@@ -52,11 +52,11 @@ ADO プロジェクトのセットアップおよび ADO コードの作成は�
 
 4. [ **OK** ] をクリックします。
 
-## <a name="creating-ado-objects-in-visual-basic"></a>Visual Basic で ADO オブジェクトを作成します。
+## <a name="creating-ado-objects-in-visual-basic"></a>Visual Basic での ADO オブジェクトの作成
 
-オートメーション変数を作成し、その変数に対するオブジェクトのインスタンスを作成するには、 **Dim** メソッドまたは **CreateObject** メソッドを使用できます。
+オートメーション変数を作成し、その変数に対するオブジェクトのインスタンスを作成するには、**Dim** メソッドまたは **CreateObject** メソッドを使用できます。
 
-### <a name="dim"></a>Dim
+### <a name="dim"></a>薄く
 
 **Dim** の **New** キーワードを使用すると、一度に ADO オブジェクトの作成とインスタンス化を行うことができます。
 
@@ -74,7 +74,7 @@ Set conn = New ADODB.Connection
 ```
 
 > [!NOTE]
-> プロジェクトで ADO ライブラリが正しく参照されていれば、**Dim** ステートメントで ADODB progid を明示的に使用する必要はありません。ただし、明示的に使用することで、他のライブラリとの命名の競合を確実に回避できます。
+> プロジェクトで ADO ライブラリが正しく参照されていれば、**Dim** ステートメントで ADODB progid を明示的に使用する必要はありません。 ただし、明示的に使用することで、他のライブラリとの命名の競合を確実に回避できます。
 > 
 > たとえば、同じプロジェクトに ADO と DAO に対する参照がどちらも含まれる場合は、 **Recordset** オブジェクトをインスタンス化するときに、次のコードで示すように、どちらのオブジェクト モデルを使用するのかを指定する修飾子を追加する必要があります。  
 > 
@@ -105,9 +105,9 @@ Set conn1 = CreateObject("ADODB.Connection.2.0") As Object
 
 ## <a name="handling-events"></a>イベントを処理する
 
-Microsoft Visual Basic での ADO イベントを処理するには、 **WithEvents**キーワードを使ってモジュール レベル変数を宣言する必要があります。 変数は、クラス モジュールの一部としてのみ宣言することができ、モジュール レベルで宣言する必要があります。 ADO イベントの処理の詳細についてを参照してください[第 7 章: ADO の処理イベントを](chapter-7-handling-ado-events.md)。
+Microsoft Visual Basic で ADO イベントを処理するには、 **WithEvents**キーワードを使用してモジュールレベルの変数を宣言する必要があります。 この変数は、クラス モジュールの一部としてのみ宣言可能で、モジュール レベルで宣言する必要があります。 ado イベントの処理の詳細については、「 [7 章: ado イベントを処理](chapter-7-handling-ado-events.md)する」を参照してください。
 
 ## <a name="visual-basic-examples"></a>Visual Basic の例
 
-ADO のマニュアルには、Visual Basic での例が数多く含まれています。 詳細については、 [Microsoft Visual Basic で ADO コードの例](ado-code-examples-in-microsoft-visual-basic.md)を参照してください。
+ADO のマニュアルには、Visual Basic での例が数多く含まれています。 詳細については、「 [Microsoft Visual Basic での ADO コードの例](ado-code-examples-in-microsoft-visual-basic.md)」を参照してください。
 

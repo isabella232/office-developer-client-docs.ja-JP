@@ -1,5 +1,5 @@
 ---
-title: メソッドを検索するには、ActiveX データ オブジェクト (ADO)
+title: Find メソッド-ActiveX データオブジェクト (ADO)
 TOCTitle: Find method (ADO)
 ms:assetid: a7cc9ceb-fdb9-73e2-8328-70b174f93cda
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249776(v=office.15)
@@ -8,38 +8,38 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 32f14e4aeed669e68d976559932306c3cb76c696
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292413"
 ---
 # <a name="find-method-ado"></a>Find メソッド (ADO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [Recordset](recordset-object-ado.md) から、指定した条件を満たす行を検索します。必要に応じて、検索の方向、開始行、および開始行からのオフセットを指定できます。条件が一致すると、カレント行の位置は、検出されたレコードに設定され、条件を満たす行がない場合は、 **Recordset** の最後 (または最初) に設定されます。
 
 ## <a name="syntax"></a>構文
 
-(*条件*、 *SkipRows*、 *SearchDirection*、*開始*) を検索します。
+Find (*Criteria*、 *SkipRows*、 *searchdirection*、 *Start*)
 
 ## <a name="parameters"></a>パラメーター
 
 |パラメーター|説明|
 |:--------|:----------|
 |*Criteria* |検索に使用する列の名前、比較演算子、および値を指定するステートメントを含む文字列型 ( **String** ) の値を指定します。|
-|*SkipRows* |省略可能。 既定値が 0 で、現在の行または検索を開始するのにはブックマークの*開始*から行のオフセットを指定する**Long**値。 既定では、現在の行で、検索を開始します。|
-|*SearchDirection* |省略可能。 現在の行、または、検索の方向の次の使用可能な行の検索を開始するかどうかを指定する[SearchDirectionEnum](searchdirectionenum.md)の値です。 検索が失敗したは、値が**adSearchForward**である場合、**レコード セット**の最後で停止します。 検索が失敗したは、値が**adSearchBackward**である場合、**レコード セット**の先頭で停止します。|
+|*SkipRows* |省略可能です。 既定値が0で、検索を開始するために現在の行または*開始*ブックマークからの行のオフセットを指定する**長整数型 (Long)** の値です。 By default, the search will start on the current row.|
+|*SearchDirection* |省略可能です。 A [SearchDirectionEnum](searchdirectionenum.md) value that specifies whether the search should begin on the current row or the next available row in the direction of the search. An unsuccessful search stops at the end of the **Recordset** if the value is **adSearchForward**. An unsuccessful search stops at the start of the **Recordset** if the value is **adSearchBackward**.|
 |*Start* |省略可能です。検索の開始位置として使用する、バリアント型 ( **Variant** ) のブックマークを指定します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 *criteria* には、列の名前を 1 つだけ指定できます。このメソッドでは、複数列の検索はサポートしていません。
 
-*条件*で比較演算子があります」**\>**」(より大きい)、「**\<**(より小さい)、「=」(等号) にした場合は、「\>=」(より大きいか等しい)、"\<=」(以上)、"\<\>」(等しくない)、"like"(パターン マッチング)、または。
+*条件*の比較演算子には、"**\>**" (より大きい)、"**\<**" (より小さい)、"=" (等しい)、"\>=" (より大きいまたは等しい)、\<"=" (以下)、"\<\>" (等しくない)、または "like" (パターンマッチング) のいずれかを指定できます。
 
-文字列、浮動小数点数、または日付の*抽出条件*の値があります。 文字列値は単一引用符で区切られたまたは」\#」(シャープ記号) のマークを付けます (など、"状態 = 'WA'」または」状態 = \#WA\#」)。 区切られた日付の値"\#」(シャープ記号) のマークを付けます (などの"開始\_日\> \#7/22/97\#」) 時間を含めることができます、分および秒を示すには、タイム ・ スタンプが、ミリ秒が含まれていない必要がありますか、エラーが発生して.
+*抽出条件*の値には、文字列、浮動小数点数、または日付を指定できます。 文字列型 (String) の値は、\#一重引用符または "" (シャープ記号) マークで区切られます (たとえば、"state = \#'\#WA '" または "state = WA")。 日付の値は\#、\_ \> \#\#"" (シャープ記号) マークで区切られており、タイムスタンプを示すのに時間、分、および秒を含めることができますが、ミリ秒またはエラーが発生することはありません。.
 
 比較演算子に "like"を使用する場合、文字列値にアスタリスク (\*) を含めると、1 つまたは複数の文字、または部分文字列を検索することができます。たとえば、「state like 'M\*'」と指定すると、Maine や Massachusetts が該当します。また、文字列の先頭と末尾にアスタリスクを使用して、その間に含まれる部分文字列を検索対象として指定することもできます。たとえば、「state like '\*as\*'」と指定すると、Alaska、Arkansas、および Massachusetts が該当します。
 

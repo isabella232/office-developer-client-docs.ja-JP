@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ca4640940c217fd81cac4ba1d8ffaf769b506fe0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296389"
 ---
 # <a name="charset-property-ado"></a>Charset プロパティ (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 テキスト [Stream](stream-object-ado.md) の内容を変換して Stream オブジェクト内部バッファーに格納するための文字セットを示します。
 
-## <a name="settings-and-return-values"></a>設定値および戻り値
+## <a name="settings-and-return-values"></a>設定値と戻り値
 
-**Stream** の内容の変換に使用される文字セットを指定する文字列型 ( **String** ) の値を設定または取得します。 既定値は "Unicode" です。 指定可能な値は、インターフェイスを介してインターネット文字セット文字列として渡すことのできる通常の文字列 ("iso-8859-1"、"Windows-1252" など) です。 システムで認識されている文字セットの文字列のリスト、HKEY のサブキーを参照してください\_クラス\_ルート\\MIME\\データベース\\Windows レジストリ内の文字セットです。
+**Stream** の内容の変換に使用される文字セットを指定する文字列型 ( **String** ) の値を設定または取得します。 既定値は "Unicode" です。 指定可能な値は、インターフェイスを介してインターネット文字セット文字列として渡すことのできる通常の文字列 ("iso-8859-1"、"Windows-1252" など) です。 システムによって認識される文字セット文字列の一覧については、Windows レジストリの\_HKEY\_クラス\\の\\ルート\\MIME データベース文字セットのサブキーを参照してください。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 テキスト **Stream** オブジェクトでは、 **Charset** プロパティで指定された文字セットでテキスト データが格納されます。既定値は Unicode です。 **Charset** プロパティは、 **Stream** に送るデータの変換、または **Stream** から受け取るデータの変換に使用されます。たとえば、 **Stream** に ISO-8859-1 データが格納されており、そのデータが BSTR にコピーされる場合、 **Stream** オブジェクトはデータを Unicode に変換します。逆の変換も同じように行われます。
 

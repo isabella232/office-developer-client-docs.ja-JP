@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: f3ef598ad50747d99ca884043e03ebfabfef8f63
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308996"
 ---
 # <a name="runsql-macro-action"></a>RunSQL マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **RunSQL** アクションを使用すると、Access のアクション クエリを、対応する SQL ステートメントを使用して実行できます。また、データ定義クエリも実行できます。
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
+> このアクションは、データベースが信頼されていない場合には許可されません。 
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>設定値
 
 **RunSQL** アクションの引数は次のとおりです。
 
@@ -55,7 +55,7 @@ ms.locfileid: "28704582"
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 アクション クエリを使用すると、レコードの追加、削除、および更新を実行したり、クエリの結果セットを新しいテーブルとして保存することができます。データ定義クエリを使用すると、テーブルの作成、変更、および削除とインデックスの作成および削除を実行できます。 **RunSQL** アクションを使用すると、ストアド クエリを使用せず、このような処理をマクロから直接実行できます。
 
@@ -89,7 +89,7 @@ Access のクエリは、実際には、クエリ ウィンドウのデザイン
 </tr>
 <tr class="even">
 <td><p>テーブル作成</p></td>
-<td><p>選択します。に</p></td>
+<td><p>[...] を選択します。分ける</p></td>
 </tr>
 <tr class="odd">
 <td><p>更新</p></td>

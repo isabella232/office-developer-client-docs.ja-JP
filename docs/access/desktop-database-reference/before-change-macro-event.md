@@ -14,26 +14,26 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: b37fb96ddfeaabc97c6f445f8951876e8026fbfe
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296858"
 ---
 # <a name="before-change-macro-event"></a>Before Change マクロ イベント
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**変更する前に**イベントは、レコードが変更されたとき、変更がコミットされる前に発生します。
+The **Before Change** event occurs when a record changes, but before the change is committed.
 
 > [!NOTE]
-> **変更**する前にイベントは、データ マクロでのみ使用します。
+> Before Change イベントは、データ マクロでのみ使用できます。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-レコードの前に発生する操作を実行**する前に変更**イベントを使用して変更されます。 **変更**する前に、検証を実行して、カスタム エラー メッセージが発生する通常使用されます。
+Before Change イベントでは、レコードの変更を確定する前に特定のアクションを実行します。通常は、検証の実行やカスタム エラー メッセージの生成を行います。
 
-**更新 (以下「*フィールド名*」)** 関数を使用すると、フィールドが変更されたかどうかを判断します。 次のコード例では、PaidInFull フィールドが変更されたかどうかを決定する**If**ステートメントを使用する方法を示します。
+**Updated ("*Field Name*")** 関数を使用して、フィールドが変更されたかどうかを調べることができます。 次のコード例は、 **if**ステートメントを使用して、paidinfull フィールドが変更されているかどうかを判断する方法を示しています。
 
 ```vb
     If  Updated("PaidInFull")   Then 
@@ -43,9 +43,9 @@ ms.locfileid: "28703959"
     End If 
 ```
 
-によって作成される新しいレコード**を変更する前に**イベントを発生するかどうか、または既存のレコードへの変更を確認するのにには、 **IsInsert**プロパティを使用します。 **IsInsert** en の既存のレコードへの変更によってイベントが発生した場合、新しいレコードでは、 **false を指定**して、イベントが発生した場合**は True**プロパティが含まれます。
+Use the **IsInsert** property to determine whether the **Before Change** event was triggered by a new record being created or a change to an existing record. They **IsInsert** property contains **True** if the event was triggered by a new record, **False** if the event was triggered by a change to en existing record.
 
-次のコード例は、 **IsInsert**プロパティを使用するための構文を示しています。
+The following code example shows the syntax for using the **IsInsert** property.
 
 ```vb
     If   [IsInsert] = True   Then 
@@ -71,11 +71,11 @@ ms.locfileid: "28703959"
     [Old].[QuantityInStock]
 ```
 
-以前の値は、**変更**する前にイベントが終了すると完全に削除されます。
+The previous values are deleted permanently when the **Before Change** event ends.
 
-**RaiseError**アクションを使用して**変更**する前にイベントをキャンセルできます。 エラーが発生したとき、**変更**する前にイベントに含まれる変更は破棄されます。
+You can cancel the **Before Change** event by using the **RaiseError** action. When an error is raised the changes contained in the **Before Change** event are discarded.
 
-**変更**する前にイベントで使用できるマクロのコマンドを次の表に一覧します。
+Before Change イベントで使用できるマクロ コマンドは次のとおりです。
 
 <table>
 <colgroup>
@@ -85,7 +85,7 @@ ms.locfileid: "28703959"
 <thead>
 <tr class="header">
 <th><p>コマンドの種類</p></th>
-<th><p>コマンド</p></th>
+<th><p>Command</p></th>
 </tr>
 </thead>
 <tbody>
@@ -103,7 +103,7 @@ ms.locfileid: "28703959"
 </tr>
 <tr class="even">
 <td><p>データ ブロック</p></td>
-<td><p><a href="lookuprecord-data-block.md">マクロ アクションの不一致</a></p></td>
+<td><p><a href="lookuprecord-data-block.md">LookupRecord マクロアクション</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>データ アクション</p></td>
@@ -133,9 +133,9 @@ ms.locfileid: "28703959"
 </table>
 
 
-**変更**する前にイベントをキャプチャするデータ マクロを作成するには、次の手順を使用します。
+To create a Data Macro that captures the **Before Change** event, use the following steps:
 
-1.  **変更**する前にイベントをキャプチャするテーブルを開きます。
+1.  Open the table for which you want to capture the **Before Change** event.
 
 2.  [ **テーブル**] タブの [ **イベント前**] で、[ **変更前**] をクリックします。
 
@@ -143,7 +143,7 @@ ms.locfileid: "28703959"
 
 ## <a name="example"></a>例
 
-次のコード例では、状態のフィールドを検証するために**変更**する前にイベントを使用します。 [解像度] フィールドに不適切な値が含まれている場合、エラーが発生します。
+次のコード例では、 **Before Change**イベントを使用して、状態フィールドを検証します。 An error is raised if an inappropriate value is contained in the Resolution field.
 
 ```vb 
  
@@ -174,13 +174,13 @@ End If
 
 この例をマクロ デザイナーで表示するには、次の手順に従います。
 
-1.  **変更**する前にイベントをキャプチャするテーブルを開きます。
+1.  Open the table for which you want to capture the **Before Change** event.
 
 2.  [ **テーブル**] タブの [ **イベント前**] で、[ **変更前**] をクリックします。
 
-3.  コード例を次のコードを選択し、クリップボードにコピーするのには**CTRL + C**キーを押します。
+3.  次のコード例のコードを選択し、 **CTRL + C**キーを押してクリップボードにコピーします。
 
-4.  マクロ デザイナー ウィンドウをアクティブにして、 **ctrl キーと V**キーを押します。
+4.  [マクロデザイナー] ウィンドウをアクティブにして、CTRL キーを押し**ながら V**キーを押します。
 
 
 
@@ -228,9 +228,9 @@ End If
 </DataMacros>
 ```
 
-次の例は、" RaiseError" アクションを使用して Before Change データ マクロ イベントを取り消す方法を示します。 AssignedTo フィールドが更新されると、 LookupRecord データ ブロックを使用して、割り当てられた技術者が未解決サービス リクエストに現在割り当てられているかどうかが確認されます。 これが true の場合は、変更する前にイベントをキャンセルするとレコードは更新されません。
+次の例は、" RaiseError" アクションを使用して Before Change データ マクロ イベントを取り消す方法を示します。 AssignedTo フィールドが更新されると、 LookupRecord データ ブロックを使用して、割り当てられた技術者が未解決サービス リクエストに現在割り当てられているかどうかが確認されます。 これが true の場合、Before Change イベントは取り消され、レコードは更新されません。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     /* Get the name of the technician  */

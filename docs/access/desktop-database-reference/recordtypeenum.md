@@ -1,5 +1,5 @@
 ---
-title: RecordTypeEnum (デスクトップ データベース参照のアクセス)
+title: recordtypeenum (Access デスクトップデータベースリファレンス)
 TOCTitle: RecordTypeEnum
 ms:assetid: 7edd6508-1507-4649-f1aa-03f1873ef09c
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249534(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c95e4b78a3e2259c3dc5961e87b98ca65ea55692
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309284"
 ---
 # <a name="recordtypeenum"></a>RecordTypeEnum
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [Record](record-object-ado.md) オブジェクトの種類を表します。
 
@@ -37,30 +37,30 @@ ms.locfileid: "28704918"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>adSimpleRecord</strong></p></td>
-<td><p>0</p></td>
-<td><p><em>単純な</em>レコード (子ノードを含まない) を示します。</p></td>
+<td><p><strong>adsimplerecord</strong></p></td>
+<td><p>.0</p></td>
+<td><p>"単純" レコード (子ノードがないレコード) を示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adCollectionRecord</strong></p></td>
-<td><p>1</p></td>
-<td><p><em>コレクション</em>レコード (子ノードが含まれています) を示します。</p></td>
+<td><p><strong>adcollectionrecord</strong></p></td>
+<td><p>1-d</p></td>
+<td><p>"コレクション" レコード (子ノードがあるレコード) を示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adRecordUnknown</strong></p></td>
+<td><p><strong>adrecordunknown</strong></p></td>
 <td><p>-1</p></td>
 <td><p>この <strong>Record</strong> の種類が不明であることを示します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adStructDoc</strong></p></td>
-<td><p>2</p></td>
-<td><p>COM を表す<em>コレクション</em>のレコードの特殊なドキュメントの構造を示します。</p></td>
+<td><p>pbm-2</p></td>
+<td><p>COM 構造化ドキュメントを表す特殊な "コレクション" レコードを示します。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC に相当
+### <a name="adowfc-equivalent"></a>ADO/WFC と同等
 
 これらの定数に ADO/WFC 等価はありません。
 

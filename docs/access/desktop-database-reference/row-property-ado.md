@@ -1,5 +1,5 @@
 ---
-title: 行のプロパティを ActiveX データ オブジェクト (ADO)
+title: 行プロパティ-ActiveX データオブジェクト (ADO)
 TOCTitle: Row property (ADO)
 ms:assetid: 1c2b0e27-7232-4b1c-826c-9dc15d758851
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248959(v=office.15)
@@ -8,34 +8,34 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9b4beaa742bfc46ecd32fc04733c3e6ddaf12aa2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306483"
 ---
 # <a name="row-property-ado"></a>Row プロパティ (ADO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**ADORecordConstruction** オブジェクトの OLE DB **Row** オブジェクトを設定または取得します。 使用すると**に\_行****行**オブジェクトを設定するのには、行になって ADO**レコード**オブジェクトにします。 値の取得と設定が可能です。
+**ADORecordConstruction** オブジェクトの OLE DB **Row** オブジェクトを設定または取得します。 **put\_row**を使用して**row**オブジェクトを設定すると、行は ADO **Record**オブジェクトになります。 値の取得と設定が可能です。
 
 ## <a name="syntax"></a>構文
 
-HRESULT get\_行 (\[、戻り値を\]IUnknown\* \* ppRow)。
+HRESULT get\_行 (\[out, retval\] IUnknown\* \* pprow);
 
-HRESULT に\_の行 (\[の\]IUnknown\* pRow)。
+HRESULT put\_行 (\[\] IUnknown\* prow);
 
 ## <a name="parameters"></a>パラメーター
 
 |パラメーター|説明|
 |:--------|:----------|
-|*ppRow* |OLE DB **Row** オブジェクトを指すポインター。|
+|*pprow* |OLE DB **Row** オブジェクトを指すポインター。|
 |*PRow* |OLE DB **Row** オブジェクト。|
 
 ## <a name="return-values"></a>戻り値
 
-このプロパティのメソッドなどの標準の HRESULT 値を返します。\_[ok] および E\_は失敗します。
+このプロパティメソッドは、S\_OK および E\_FAIL を含む標準の HRESULT 値を返します。
 
 ## <a name="applies-to"></a>適用対象
 

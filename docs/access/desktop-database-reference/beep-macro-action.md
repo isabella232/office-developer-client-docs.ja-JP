@@ -1,5 +1,5 @@
 ---
-title: マクロ アクション (デスクトップ データベース参照のアクセス) の音を鳴らす
+title: Beep マクロアクション (Access デスクトップデータベースリファレンス)
 TOCTitle: Beep macro action
 ms:assetid: 5ca1600f-7934-3b3d-19fd-f305cda0e5d8
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194572(v=office.15)
@@ -12,26 +12,26 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 96051d8389f4b8ba7005c75ccdb5e2780ba17138
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296865"
 ---
 # <a name="beep-macro-action"></a>Beep マクロ アクション
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-コンピューターのスピーカーからビープ音を鳴らす、**ビープ音が**アクションを使用できます。
+"Beep/警告音" アクションを使用すると、スピーカーから警告音を鳴らすことができます。
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**ビープ音を鳴らす**アクション引数はありません。
+"Beep/警告音" アクションには、引数はありません。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-次のような場合に、**ビープ音を鳴らす**アクションを使用できます。
+"Beep/警告音" アクションは、次のような場合に使用します。
 
   - 重要な画面変更があったとき。
 
@@ -41,5 +41,5 @@ ms.locfileid: "28721473"
 
 警告音の周波数と継続時間は、ハードウェアに依存するので、コンピューターの機種によって異なる場合があります。
 
-Visual Basic for Applications (VBA) モジュールで**ビープ音を鳴らす**アクションを実行するには、 **DoCmd**オブジェクトの**Beep**メソッドを使用します。
+To run the **Beep** action in a Visual Basic for Applications (VBA) module, use the **Beep** method of the **DoCmd** object.
 

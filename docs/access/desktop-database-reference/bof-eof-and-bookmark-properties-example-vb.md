@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 27a3e9b1905539a1ede534c6918334b97d45c305
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296830"
 ---
 # <a name="bof-eof-and-bookmark-properties-example-vb"></a>BOF プロパティ、EOF プロパティ、Bookmark プロパティの使用例 (VB)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 次の例では、[BOF](bof-eof-properties-ado.md) プロパティと [EOF](bof-eof-properties-ado.md) プロパティを使用して、ユーザーが [Recordset](recordset-object-ado.md) の先頭または最後のレコードを越えて移動しようとした場合にメッセージを表示します。また、 [Bookmark](bookmark-property-ado.md) プロパティを使用して、後からそのレコードに戻れるように、ユーザーが **Recordset** のレコードにフラグを立てることができるようにしています。
 

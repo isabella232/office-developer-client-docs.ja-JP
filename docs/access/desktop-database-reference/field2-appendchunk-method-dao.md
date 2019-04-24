@@ -1,5 +1,5 @@
 ---
-title: Field2.AppendChunk メソッド (DAO)
+title: Field2 の chunk メソッド (DAO)
 TOCTitle: AppendChunk Method
 ms:assetid: 540cd02d-1fc6-81d1-ac08-1e3df72a7208
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194088(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: fda1ab5a3e339d951225f4f43ab4275cce2cdb80
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292882"
 ---
-# <a name="field2appendchunk-method-dao"></a>Field2.AppendChunk メソッド (DAO)
+# <a name="field2appendchunk-method-dao"></a>Field2 の chunk メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 文字列式からのデータを [**Recordset**](recordset-object-dao.md) の、メモ型 (Memo) またはロング バイナリ型 (Long Binary) の **Field2** オブジェクトに追加します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。AppendChunk (***Val***)
+*式*。appendchunk (***Val***)
 
-*式***Field2**オブジェクトを表す変数です。
+*式***Field2**オブジェクトを表す変数を取得します。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -51,7 +51,7 @@ ms.locfileid: "28705436"
 <tr class="odd">
 <td><p><em>Val</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>Variant (バリアント型)</strong></p></td>
+<td><p><strong>Variant</strong></p></td>
 <td><p><strong>Field2</strong> オブジェクトに追加するデータが格納されている、サブタイプが文字列型 (String) であるバリアント型 (Variant) の式。</p></td>
 </tr>
 </tbody>

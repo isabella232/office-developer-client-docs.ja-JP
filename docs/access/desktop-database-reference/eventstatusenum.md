@@ -1,5 +1,5 @@
 ---
-title: EventStatusEnum (デスクトップ データベース参照のアクセス)
+title: eventstatusenum (Access デスクトップデータベースリファレンス)
 TOCTitle: EventStatusEnum
 ms:assetid: ae1711bc-2af5-04fd-7d8c-222d8afc9d3d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249821(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 654d2a485c9273072d1daa61321e73418a15e969
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293274"
 ---
 # <a name="eventstatusenum"></a>EventStatusEnum
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 イベントの実行の現在の状態を表します。
 
@@ -38,22 +38,22 @@ ms.locfileid: "28712583"
 <tbody>
 <tr class="odd">
 <td><p><strong>adStatusCancel</strong></p></td>
-<td><p>4</p></td>
+<td><p>2/4</p></td>
 <td><p>イベントを発生させた操作の取り消しを要求します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adStatusCantDeny</strong></p></td>
-<td><p>3</p></td>
+<td><p>1/3</p></td>
 <td><p>保留中の操作の取り消しを要求できないことを示します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adStatusErrorsOccurred</strong></p></td>
-<td><p>2</p></td>
+<td><p>pbm-2</p></td>
 <td><p>イベントを発生させた操作がエラーによって失敗したことを示します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adStatusOK</strong></p></td>
-<td><p>1</p></td>
+<td><p>1-d</p></td>
 <td><p>イベントを発生させた操作が成功したことを示します。</p></td>
 </tr>
 <tr class="odd">
@@ -65,7 +65,7 @@ ms.locfileid: "28712583"
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC に相当
+### <a name="adowfc-equivalent"></a>ADO/WFC と同等
 
 パッケージ: **com.ms.wfc.data**
 
@@ -80,19 +80,19 @@ ms.locfileid: "28712583"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.EventStatus.CANCEL</p></td>
+<td><p>AdoEnums を取り消します。</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.EventStatus.CANTDENY</p></td>
+<td><p>AdoEnums の状態。 cantdeny</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.EventStatus.ERRORSOCCURRED</p></td>
+<td><p>AdoEnums の状態 (エラー)</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.EventStatus.OK</p></td>
+<td><p>AdoEnums の状態。 OK</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.EventStatus.UNWANTEDEVENT</p></td>
+<td><p>AdoEnums UNWANTEDEVENT</p></td>
 </tr>
 </tbody>
 </table>

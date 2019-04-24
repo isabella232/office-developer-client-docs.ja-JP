@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3a9af5d09a7a7a7a7ec97d757d502efbf2402900
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295150"
 ---
 # <a name="customization-file-logs-section"></a>カスタマイズ ファイルの Logs セクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**logs** セクションには、 **DataFactory** の操作中に発生したエラーを記録するファイル名を指定する、ログ ファイル エントリを含めます。
+**logs** セクションには、**DataFactory** の操作中に発生したエラーを記録するファイル名を指定する、ログ ファイル エントリを含めます。
 
 ## <a name="syntax"></a>構文
 
@@ -35,7 +35,7 @@ ms.locfileid: "28715635"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>引数</p></th>
+<th><p>パーツ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
@@ -46,7 +46,7 @@ ms.locfileid: "28715635"
 </tr>
 <tr class="even">
 <td><p><em>FileName</em></p></td>
-<td><p>完全パスとファイル名。通常のファイル名は、<strong>c:\msdfmap.log</strong> です。</p></td>
+<td><p>完全パスとファイル名。 通常のファイル名は、<strong>c:\msdfmap.log</strong> です。</p></td>
 </tr>
 </tbody>
 </table>

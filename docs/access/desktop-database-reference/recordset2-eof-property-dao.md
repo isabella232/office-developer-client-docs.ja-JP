@@ -1,5 +1,5 @@
 ---
-title: Recordset2.EOF プロパティ (DAO)
+title: Recordset2 プロパティ (DAO)
 TOCTitle: EOF Property
 ms:assetid: 9d4e1ee2-e866-3ebf-e08b-b31b0cb47ed9
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198245(v=office.15)
@@ -12,32 +12,32 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 2d328160b6c88de61a041c54bcd6f305b73c26da
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309444"
 ---
-# <a name="recordset2eof-property-dao"></a>Recordset2.EOF プロパティ (DAO)
+# <a name="recordset2eof-property-dao"></a>Recordset2 プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-カレント レコードの位置が、 **Recordset** オブジェクトの最後のレコードより後にあるかどうかを示す値を取得します。値の取得のみ可能です。ブール型 ( **Boolean** ) の値を使用します。
+カレント レコードの位置が、**Recordset** オブジェクトの最後のレコードより後にあるかどうかを示す値を取得します。値の取得のみ可能です。ブール型 (**Boolean**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。EOF
+*式*。EOF
 
-*式***Recordset2**オブジェクトを表す変数です。
+*式***Recordset2**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
-**BOF** プロパティおよび **EOF** プロパティを使用すると、 **Recordset** オブジェクトにレコードが格納されているかどうかの確認、またはレコード間を移動したときに **Recordset** オブジェクトの範囲を超えたかどうかの確認ができます。
+**BOF** プロパティおよび **EOF** プロパティを使用すると、**Recordset** オブジェクトにレコードが格納されているかどうかの確認、またはレコード間を移動したときに **Recordset** オブジェクトの範囲を超えたかどうかの確認ができます。
 
 カレント レコードを参照するポインターの位置により、 **BOF** および **EOF** の戻り値が決まります。
 
-**BOF** プロパティまたは **EOF** プロパティのどちらかが **True** の場合は、カレント レコードが存在しません。
+**BOF** プロパティと **EOF** プロパティのいずれかが **True** になっている場合は、カレント レコードが存在しません。
 
 レコードを含まない **Recordset** オブジェクトを開くと、 **BOF** プロパティおよび **EOF** プロパティが **True** に設定され、 **Recordset** オブジェクトの **RecordCount** プロパティの設定値が 0 になります。少なくとも 1 つのレコードを含む **Recordset** オブジェクトを開くと、最初のレコードがカレント レコードになり、 **BOF** プロパティおよび **EOF** プロパティが **False** になって、 **MovePrevious** メソッドまたは **MoveNext** メソッドを使用して **Recordset** オブジェクトの先頭または末尾を越えて移動するまで **False** のままになります。 **Recordset** オブジェクトの先頭または末尾を越えて移動すると、カレント レコードがないか、またはレコードが存在しなくなります。
 
@@ -49,7 +49,7 @@ ms.locfileid: "28720745"
 
 **EOF** プロパティが **True** に設定されている場合に **MoveNext** メソッドを使用するか、または **BOF** プロパティが **True** に設定されている場合に **MovePrevious** メソッドを使用すると、エラーが発生します。
 
-次の表は、 **BOF** プロパティおよび **EOF** プロパティのさまざまな組み合わせで使用できる Move メソッドの種類を示しています。
+次の表は、 **BOF** プロパティおよび **EOF** プロパティのさまざまな組み合わせで使用できる Move メソッドの種類を示します。
 
 <table>
 <colgroup>
@@ -62,38 +62,38 @@ ms.locfileid: "28720745"
 <thead>
 <tr class="header">
 <th><p></p></th>
-<th><p>MoveFirst、<br />
+<th><p>MoveFirst<br />
 MoveLast</p></th>
-<th><p>MovePrevious、<br />
-移動&lt;0</p></th>
+<th><p>MovePrevious<br />
+移動&lt; 0</p></th>
 <th><p><br />
 Move 0</p></th>
-<th><p>MoveNext、<br />
-移動&gt;0</p></th>
+<th><p>MoveNext<br />
+移動&gt; 0</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>BOF = true の場合、</strong><br />
+<td><p><strong>BOF = True、</strong><br />
 <strong>EOF = False</strong></p></td>
 <td><p>可</p></td>
-<td><p>エラー</p></td>
-<td><p>エラー</p></td>
+<td><p>Error</p></td>
+<td><p>Error</p></td>
 <td><p>可</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>BOF = False の場合、</strong><br />
+<td><p><strong>BOF = False、</strong><br />
 <strong>EOF = True</strong></p></td>
 <td><p>可</p></td>
 <td><p>可</p></td>
-<td><p>エラー</p></td>
-<td><p>エラー</p></td>
+<td><p>Error</p></td>
+<td><p>Error</p></td>
 </tr>
 <tr class="odd">
 <td><p>両方とも <strong>True</strong></p></td>
 <td><p>エラー</p></td>
-<td><p>エラー</p></td>
-<td><p>エラー</p></td>
+<td><p>Error</p></td>
+<td><p>Error</p></td>
 <td><p>エラー</p></td>
 </tr>
 <tr class="even">
@@ -111,13 +111,13 @@ Move メソッドが使用可となっていても、そのメソッドがレコ
 
 **OpenRecordset** メソッドは、 **MoveFirst** メソッドを内部的に呼び出します。したがって、空のレコードのセットに対して **OpenRecordset** メソッドを使用すると、 **BOF** プロパティおよび **EOF** プロパティが **True** に設定されます (失敗した **MoveFirst** メソッドの動作については、次の表を参照)。
 
-Move メソッドを使用してレコードが正常に配置される場合は常に、 **BOF** プロパティと **EOF** の両方が **False** に設定されます。
+すべての Move メソッドは、レコードを正常に配置すると、 **BOF** プロパティおよび **EOF** プロパティを **False** に設定します。
 
 Microsoft Access ワークスペースでは、レコードを空の **Recordset** オブジェクトに追加すると、 **BOF** プロパティが **False** になりますが、 **EOF** プロパティは **True** のままで、現在の位置が **Recordset** の末尾であることを示します。
 
-いずれかの **Delete** メソッドを使用して、 **Recordset** に 1 つのみ残っているレコードを削除しても、 **BOF** プロパティおよび **EOF** プロパティの設定は変更されません。
+**Delete** メソッドは、 **Recordset** オブジェクトに唯一残るレコードを削除する場合でも、 **BOF** プロパティおよび **EOF** プロパティの設定値をいずれも変更しません。
 
-次の表は、Move メソッドでレコードが配置されなかった場合に、 **BOF** プロパティおよび **EOF** プロパティがどのように設定されるかを示しています。
+次の表は、Move メソッドでレコードが配置されなかった場合に、**BOF** プロパティおよび **EOF** プロパティがどのように設定されるかを示しています。
 
 <table>
 <colgroup>
@@ -149,7 +149,7 @@ Microsoft Access ワークスペースでは、レコードを空の **Recordset
 <td><p>変化なし</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>MoveNext</strong>、<strong>移動</strong> &gt; 0</p></td>
+<td><p><strong>MoveNext</strong>、 <strong>Move</strong> &gt; 0</p></td>
 <td><p>変化なし</p></td>
 <td><p><strong>True</strong></p></td>
 </tr>

@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 1e37d72754531fc4dd51427eefb355a057d08073
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306399"
 ---
 # <a name="startnewworkflow-macro-action"></a>StartNewWorkflow マクロ アクション
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**StartNewWorkflow**アクションを使用すると、リンクされた Microsoft SharePoint Foundation リストに項目の新しいワークフローを開始します。
+You can use the **StartNewWorkflow** action to start a new workflow for an item in a linked Microsoft SharePoint Foundation list.
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**StartNewWorkflow**アクションには、次の引数があります。
+"StartNewWorkflow/新しいワークフローの開始" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -43,19 +43,19 @@ ms.locfileid: "28698156"
 <tbody>
 <tr class="odd">
 <td><p><strong>Record Number/レコード番号</strong></p></td>
-<td><p>リストの最初の項目の<strong>1</strong> 、2 番目の<strong>2</strong>項目というように、SharePoint Foundation リスト内の項目の位置。 この引数に式を入力することもできます。</p></td>
+<td><p>SharePoint Foundation リスト内の項目の位置。リストの最初の項目は<strong>1</strong>で、2番目の項目は<strong>2</strong>になります。 この引数の式を入力することもできます。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-  - **StartNewWorkflow**アクションでは、**新しいワークフローの開始**] ダイアログ ボックスを開きます。 このダイアログ ボックスには、指定した項目で使用可能なすべてのワークフローが表示されます。 このアクションを使用して開始する前に、SharePoint Foundation でリストに対してワークフローを定義する必要があります。
+  - The **StartNewWorkflow** action opens the **Start New Workflow** dialog box. This dialog box displays all workflows that are available for the specified item. A workflow must be defined for the list in SharePoint Foundation before you can start it using this action.
 
-  - **StartNewWorkflow**アクションは、リンクされた SharePoint リストが開かれ、選択した後にのみ使用できます。 開き、リンクされたリストを選択するには、 **OpenTable**のアクションを使用します。 リストが既に開いている場合は、 **SelectObject**アクションを使用して選択します。
+  - The **StartNewWorkflow** action can only be used after a linked SharePoint list has been opened and selected. To open and select the linked list, use the **OpenTable** action. If the list is already open, use the **SelectObject** action to select it.
 
-  - **StartNewWorkflow**アクションには、データシート ビューで開いている間は、SharePoint リストにリンクされている任意のセルを右クリックし、**ワークフロー**、] をポイントし、[**新しいワークフローの開始**] をクリックと同じ効果があります。
+  - The **StartNewWorkflow** action has the same effect as right-clicking any cell in a linked SharePoint list while it is open in Datasheet view, pointing to **Workflow**, and then clicking **Start New Workflow**.
 
-  - **StartNewWorkflow**アクションは、VBA モジュールで実行するには、 **DoCmd**オブジェクトの**StartNewWorkflow**メソッドを使用します。
+  - To run the **StartNewWorkflow** action in a VBA module, use the **StartNewWorkflow** method of the **DoCmd** object.
 

@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2e4eff3eae32cf4d910a44eca5a733ac044a7829
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308982"
 ---
 # <a name="save-and-open-methods-example-vb"></a>Save メソッドと Open メソッドの使用例 (VB)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 次の 3 つの例では、[Save](save-method-ado.md) メソッドと [Open](open-method-ado-recordset.md) メソッドを組み合わせて使用する方法を示します。
 
@@ -83,7 +83,7 @@ End Sub
 
 <br/>
 
-ここで出張先に到着しました。 ***Authors***テーブルは、ローカル、切断された**レコード セット**としてアクセスされます。 保存したファイルにアクセスするために使用しているコンピューターで**MSPersist**プロバイダーがする必要があることを忘れないでください a:\\Pubs.xml。
+ここで出張先に到着しました。 接続されていないローカルな ***Recordset*** として **Authors** テーブルにアクセスします。 保存されたファイル\\にアクセスするには、使用しているコンピューター上の**mspersist**プロバイダーが必要です。
 
 ```vb 
  
@@ -133,7 +133,7 @@ End Sub
 
 <br/>
 
-会社に戻ってきました。出張中に加えた変更でデータベースを更新します。
+会社に戻ってきました。 出張中に加えた変更でデータベースを更新します。
 
 ```vb 
  

@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3abef84f05ad279edba1fcc753f0b412a807a7b9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293911"
 ---
 # <a name="determining-what-is-supported"></a>サポート内容の決定
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**Supports** メソッドは、指定された **Recordset** オブジェクトが、特定の種類の機能をサポートしているかどうかを確認するために使用します。構文は次のとおりです。
+**Supports** メソッドは、指定された **Recordset** オブジェクトが、特定の種類の機能をサポートしているかどうかを確認するために使用します。 構文は次のとおりです。
 
 `boolean = recordset.Supports( CursorOptions )`
 

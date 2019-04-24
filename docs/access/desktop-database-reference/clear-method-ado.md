@@ -1,5 +1,5 @@
 ---
-title: Clear メソッドを ActiveX データ オブジェクト (ADO)
+title: Clear メソッド-ActiveX Data Objects (ADO)
 TOCTitle: Clear method (ADO)
 ms:assetid: 5d51f42c-147b-1fcf-d05b-123e5714ecb7
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249329(v=office.15)
@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b0d76480bdb5d5a3ab258e103a00707af303a4d3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296361"
 ---
 # <a name="clear-method-ado"></a>Clear メソッド (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **Errors** コレクションからすべての **Error** オブジェクトを削除します。
 
 ## <a name="syntax"></a>構文
 
-*エラー*です。クリア
+*エラー*。空
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **Errors** コレクションの [Clear](errors-collection-ado.md) メソッドは、コレクションから既存のすべての [Error](error-object-ado.md) オブジェクトを削除する場合に使用します。エラーが発生すると、 **Errors** コレクションは自動的にクリアされ、新しいエラーに基づく **Error** オブジェクトが格納されます。
 

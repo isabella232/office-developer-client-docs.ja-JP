@@ -1,5 +1,5 @@
 ---
-title: UpdateCriteriaEnum 列挙型 (DAO)
+title: UpdateCriteriaEnum 列挙 (DAO)
 TOCTitle: UpdateCriteriaEnum Enumeration
 ms:assetid: 1f83a0c6-bdc8-9c3e-380b-524f611f6476
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845853(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e27eb1bdfb9b393df76af8bdf54bc7f05fd82c2e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28725960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306371"
 ---
-# <a name="updatecriteriaenum-enumeration-dao"></a>UpdateCriteriaEnum 列挙型 (DAO)
+# <a name="updatecriteriaenum-enumeration-dao"></a>UpdateCriteriaEnum 列挙 (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **UpdateOptions** メソッドで、一括更新の構築方法を指定するために使用します。
 
@@ -36,28 +36,28 @@ ms.locfileid: "28725960"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>dbCriteriaAllCols</p></td>
-<td><p>4</p></td>
+<td><p>dbの基準 aallcols</p></td>
+<td><p>2/4</p></td>
 <td><p>キー列 (1 つまたは複数) とすべての列を where 句で使用します。</p></td>
 </tr>
 <tr class="even">
-<td><p>dbCriteriaDeleteInsert</p></td>
+<td><p>dbの基準 adeleteinsert</p></td>
 <td><p>16</p></td>
 <td><p>変更された行ごとに、DELETE ステートメントと INSERT ステートメントのペアを使用します。</p></td>
 </tr>
 <tr class="odd">
 <td><p>dbCriteriaKey</p></td>
-<td><p>1</p></td>
+<td><p>1-d</p></td>
 <td><p>キー列 (1 つまたは複数) のみを where 句で使用します。</p></td>
 </tr>
 <tr class="even">
 <td><p>dbCriteriaModValues</p></td>
-<td><p>2</p></td>
+<td><p>pbm-2</p></td>
 <td><p>キー列 (1 つまたは複数) と更新されたすべての列を where 句で使用します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbCriteriaTimestamp</p></td>
-<td><p>8</p></td>
+<td><p>dbmeたスタンプ</p></td>
+<td><p>~</p></td>
 <td><p>タイムスタンプ列が使用可能な場合、タイムスタンプ列のみを使用します (結果セットにタイムスタンプ列が含まれない場合は、実行時エラーを生成します)。</p></td>
 </tr>
 <tr class="even">

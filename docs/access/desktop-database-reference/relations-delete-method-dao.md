@@ -1,5 +1,5 @@
 ---
-title: Relations.Delete メソッド (DAO)
+title: Delete メソッド (DAO)
 TOCTitle: Delete Method
 ms:assetid: e95408d2-9dde-44e7-875e-8f2d4b837cf6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836064(v=office.15)
@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e0b7fbf20a8732e8f4db525fd32bf4e5737b4d79
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306966"
 ---
-# <a name="relationsdelete-method-dao"></a>Relations.Delete メソッド (DAO)
+# <a name="relationsdelete-method-dao"></a>Delete メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 指定された **Relation** を **Relations** コレクションから削除します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。(***名前***) を削除します。
+*式*。削除 (***名前***)
 
-*式***関係**オブジェクトを表す変数です。
+*式***Relations**オブジェクトを表す変数を取得します。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -45,7 +45,7 @@ ms.locfileid: "28716433"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Name</em></p></td>
+<td><p><em>名前</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>削除するリレーションシップの名前です。</p></td>

@@ -1,5 +1,5 @@
 ---
-title: Database.ReplicaID プロパティ (DAO)
+title: データベースの ReplicaID プロパティ (DAO)
 TOCTitle: ReplicaID Property
 ms:assetid: cf2ca8a1-d13f-30e0-2ca1-dd32ac736c56
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834672(v=office.15)
@@ -12,25 +12,25 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 2ada9bf23a4b8fc34c5f9b4f24350fc6af91dc85
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294716"
 ---
-# <a name="databasereplicaid-property-dao"></a>Database.ReplicaID プロパティ (DAO)
+# <a name="databasereplicaid-property-dao"></a>データベースの ReplicaID プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
 データベース レプリカを一意に識別する 16 バイトの値を取得します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。ReplicaID
+*式*。ReplicaID
 
-*式***データベース**オブジェクトを表す変数です。
+*式***Database**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 

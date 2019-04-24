@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: df77d2375b66df907832b6ff2717427ae54a35a4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291860"
 ---
 # <a name="importsharepointlist-macro-action"></a>ImportSharePointList マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**ImportSharePointList**アクションを使用するにはインポートまたは Microsoft SharePoint Foundation サイトからデータをリンクします。
+You can use the **ImportSharePointList** action to import or link data from a Microsoft SharePoint Foundation site.
 
 > [!NOTE]
 > [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
 
 ## <a name="setting"></a>設定値
 
-**ImportSharePointList**アクションには、次の引数があります。
+"ImportSharePointList/SharePointリストのインポート" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -47,8 +47,8 @@ ms.locfileid: "28726205"
 <td><p><strong>Transfer Type/変換の種類</strong></p></td>
 <td><p>変換の種類を指定します。</p>
 <ul>
-<li><p>SharePoint Foundation のデータを Microsoft Access のテーブルにコピーするのには<strong>インポート</strong>を選択します。 Access でデータの更新は、SharePoint Foundation のデータには影響しません。 同様に、SharePoint Foundation のデータを更新しても、Access でデータには影響しません。</p></li>
-<li><p>SharePoint Foundation のデータにリンクする Access でリンク テーブルを作成する<strong>リンク</strong>を選択します。 SharePoint Foundation には、Access でデータの更新が反映されます。 同様に、SharePoint Foundation でデータの更新は、アクセスに反映されます。</p></li>
+<li><p>[<strong>インポート</strong>] を選択して、Microsoft access のテーブルに SharePoint Foundation データをコピーします。 Access のデータを更新しても、SharePoint Foundation のデータには影響しません。 同様に、SharePoint Foundation のデータを更新しても、Access のデータには影響しません。</p></li>
+<li><p>[<strong>リンク</strong>] を選択して、SharePoint Foundation のデータにリンクするリンクテーブルを Access に作成します。 Access のデータに対する更新は、SharePoint Foundation に反映されます。 同様に、SharePoint Foundation のデータに対する更新は Access に反映されます。</p></li>
 </ul>
 <p></p></td>
 </tr>
@@ -58,7 +58,7 @@ ms.locfileid: "28726205"
 </tr>
 <tr class="odd">
 <td><p><strong>List ID/リスト ID</strong></p></td>
-<td><p>変換するリストの名前または GUID を入力します。この引数は省略できません。</p></td>
+<td><p>変換するリストの名前または GUID を入力します。 この引数は省略できません。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>View ID/ビュー ID</strong></p></td>
@@ -76,11 +76,11 @@ ms.locfileid: "28726205"
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 - このアクションの動作は、[ **外部データ**] タブの [ **インポート**] で [ **SharePoint リスト**] をクリックした場合の動作と同じです。このアクションでは、外部データの取り込みウィザードで選択した引数が使用されます。
 
-- VBA モジュールでは、 **ImportSharePointList**アクションを実行するには、 **DoCmd**オブジェクトの**TransferSharePointList**メソッドを使用します。
+- To run the **ImportSharePointList** action in a VBA module, use the **TransferSharePointList** method of the **DoCmd** object.
 
 - 存在しないリストまたはビューを指定しても、エラーは発生しませんが、データは変換されません。
 
@@ -94,9 +94,9 @@ ms.locfileid: "28726205"
     
   2. 対象のビューが表示されていない場合は、[ **ビュー**] ボックスの矢印をクリックし、対象のビューを選択します。
     
-  3. **ビュー**のドロップダウン矢印をクリックし、**このビューの変更**を選択します.ブラウザーのアドレス バーのアドレスには、リストとビューの両方の Guid が含まれています。 リストの GUID に依存して**リスト =**、ビューの GUID に依存していると**ビュー =**。 ただし、アドレスの各 **{** (左中かっこ) 文字は、文字列で表される、 **%7b**、各**-**(ハイフン) は、文字列で表される **%2 D**、 **}** (右中かっこ) 文字は、文字列**によって表されます%7 D**です。 次に例を示します。
+  3. Click the **View** drop-down arrow and then select **Modify this View**.The address in the browser's address bar contains the GUIDs for both the list and the view. The GUID for the list follows **List=**, and the GUID for the view follows **View=**. However, in the address, each **{** (left brace) character is represented by the string **%7B**, each **-** (hyphen) character is represented by the string **%2D**, and each **}** (right brace) character is represented by the string **%7D**. 次に例を示します。
         
      `https://MySite12/_layouts/ViewEdit.aspx?List=%7B2A82A404%2D5529%2D47DC%2DAE13%2DAC1D9BC0A84F%7D&View=%7B357B4FE6%2D44CF%2D4275%2DB91F%2D46558301579B%7D`
         
-  **%7 b**の各文字列を **{** 文字に置き換えて、各を置き換える必要がありますアドレスから Guid を使用するにはこのマクロ アクションの引数として、前に **%2 D**の文字列、**-** 文字、および**各 %7d と**を交換して、**}** 文字です。 含めないでください、 **&** (アンパサンド) に続く文字を **%7 D**の文字列リストの GUID です。
+  address の guid をこのマクロアクションの引数として使用するには、各 **% 7b**文字列を **{** 文字に置き換え、各 **% 2d**文字列を**-** 文字に置き換え、各% **7d**文字列を次のように置き換えます。**}** 文字 Do not include the **&** (ampersand) character that follows the **%7D** string in the list GUID.
 

@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b97f4e8050cf293621c7b7fc79437c89171d86fc
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293547"
 ---
 # <a name="enabling-a-dll-to-run-on-dcom"></a>DCOM で実行する DLL の有効化
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-次のステップでは、DCOM とコンポーネント サービスを使用して Microsoft インターネット インフォメーション サービス (HTTP) の両方を使用するビジネス オブジェクトのダイナミック リンク ライブラリを有効にする方法を説明します。
+次の手順では、ビジネスオブジェクトのダイナミックリンクライブラリで、コンポーネントサービス経由で DCOM と Microsoft インターネットインフォメーションサービス (HTTP) の両方を使用できるようにする方法の概要を説明します。
 
 1.  コンポーネント サービス MMC スナップインに新しい空のパッケージを作成します。 コンポーネント サービス MMC スナップインを使ってパッケージを作成し、このパッケージに DLL を追加します。これにより、DCOM を介して .dll にアクセスできるようになりますが、IIS を介したアクセスはできなくなります (.dll のレジストリを確認すると、 **Inproc** キーが空になっているのがわかります。後で説明するようにアクティブ化属性を設定すると、 **Inproc** キーに値が追加されます)。
 
 2.  パッケージにビジネス オブジェクトをインストールします。 または[RDSServer.DataFactory](datafactory-object-rdsserver.md) オブジェクトをパッケージにインポートします。
 
-3.  **作成者のプロセスで**[ライブラリ アプリケーションには、パッケージのアクティブ化属性を設定します。 .Dll ファイルを同じコンピューターで DCOM と IIS を介してアクセスできるようにするためには、コンポーネント サービス MMC スナップインで、コンポーネントのアクティブ化属性を設定する必要があります。 **作成者のプロセス内**に属性を設定した後に、コンポーネント サービスへのポインターがアクティブ化する、**インプロセス**サーバーのレジストリ キーが追加されていることがわかります。
+3.  Set the Activation attribute for the package to **In the creator's process** (Library application). To make the .dll accessible through DCOM and IIS on the same computer, you must set the component's Activation attribute in the Component Services MMC snap-in. After you set the attribute to **In the creator's process**, you will notice that an **Inproc** server key in the registry has been added that points to a Component Services surrogate .dll.
 

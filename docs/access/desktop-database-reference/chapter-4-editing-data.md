@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b954cf8b730a74fb7e630fbafb96c046491c6f46
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296438"
 ---
 # <a name="chapter-4-editing-data"></a>第 4 章: データの編集
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 前の 2 つの章では、ADO を使用して、データ ソースへの接続、コマンドの実行、 **Recordset** オブジェクトへの結果の取得、および **Recordset** 内での移動を行う方法を説明しました。この章では、ADO のもう 1 つの基本的操作であるデータの編集について説明します。
 
@@ -76,5 +76,5 @@ End Function
 - [既存のレコードの編集](editing-existing-records.md)
 - [サポート内容の決定](determining-what-is-supported.md)
 - [Delete メソッドによるレコードの削除](deleting-records-using-the-delete-method.md)
-- [他の方法: SQL ステートメントを使用します。](alternatives-using-sql-statements.md)
-- [(ADO) のレコードを追加します。](adding-records.md)
+- [他の方法: SQL ステートメントを使用する](alternatives-using-sql-statements.md)
+- [レコードを追加する (ADO)](adding-records.md)

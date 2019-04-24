@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: eadc448d59814f0573a959c6c1038f9c4afdbac9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306455"
 ---
 # <a name="shape-compute-clause"></a>Shape COMPUTE 句
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 shape の COMPUTE 句は、親 **Recordset** を生成します。その列は、子 **Recordset** に対する参照、省略可能な列 (その内容はチャプター列、新規列、演算列、および子 **Recordset** や既にシェイプされている **Recordset** に対して集計関数を実行した結果など)、および省略可能な BY 句で指定される一連の子 **Recordset** の任意の列で構成されます。
 
@@ -37,7 +37,7 @@ SHAPE child-command [AS] child-alias
 
   - 以下のいずれかで構成されます。
     
-    - 子の {} オブジェクトを返すクエリ コマンドを波かっこ ("****") で囲んだもの。このコマンドは基になっているデータ プロバイダーに対して発行され、コマンドの構文はそのプロバイダーの要件によって異なります。ADO では特定のクエリ言語を使用する必要はありませんが、通常は SQL 言語を使用します。
+    - 子 Recordset オブジェクトを返すクエリコマンドを{}波かっこ ("") **** で囲んで指定します。 このコマンドは基になっているデータ プロバイダーに対して発行され、コマンドの構文はそのプロバイダーの要件によって異なります。 ADO では特定のクエリ言語を使用する必要はありませんが、通常は SQL 言語を使用します。
     
     - シェイプされた既存の **Recordset** の名前。
     
@@ -47,7 +47,7 @@ SHAPE child-command [AS] child-alias
 
 - *child-alias*
 
-  - **レコード セット**を参照するエイリアスが返される、*子コマンドです*。 *子エイリアス*では、COMPUTE 句の列の一覧で必要なし、親と子の**レコード セット**オブジェクトの間の関係を定義します。
+  - *child-command* によって返される **Recordset** を参照するために使用される別名。*child-alias* は、COMPUTE 句の列の一覧で必要であり、親と子の **Recordset** オブジェクト間の関係を定義します。
 
 - *appended-column-list*
 
@@ -55,7 +55,7 @@ SHAPE child-command [AS] child-alias
 
 - *grp-field-list*
 
-  - 子において行をグループ化する方法を指定する親と子の**Recordset**オブジェクト内の列の一覧です。 *グループのフィールドのリスト*内の各列には子と親の**Recordset**オブジェクトに対応する列があります。 親**レコード セット**内の各行の*グループ]* 列は、一意の値であるし、**レコード セット**の親テーブルの行によって参照されているのみで構成される子の子の行*グループのフィールドのリスト*を持つ列があると、同じ値、親の行です。
+  - 子で行をグループ化する方法を指定する、親と子の**Recordset**オブジェクト内の列のリスト。 *"grp-フィールドリスト"* の各列には、子および親**Recordset**オブジェクトに対応する列があります。 親**recordset**の各行に対して、 *grp フィールドリスト*列に一意の値があり、親行によって参照される子**Recordset**は、親の行** だけで構成されます。親の行
 
 BY 句が含まれる場合、子 **Recordset** の行は COMPUTE 句の列に基づいてグループ化されます。親の **Recordset** には、子 **Recordset** の行グループごとに 1 行が含まれます。
 
@@ -70,9 +70,9 @@ BY 句を省略すると、子 **Recordset** 全体が単一のグループと�
 
 親 **Recordset** には、その構成方法 (COMPUTE を使用するか APPEND を使用するか) に関係なく、子 **Recordset** との関連付けに使用されるチャプター列が含まれます。必要な場合は、親 **Recordset** に、子の行に対する集計 (SUM、MIN、MAX など) が格納された列を含めることもできます。親および子の **Recordset** はいずれも、 **Recordset** の行に対する式が格納された列、および初期状態が空の新しい列を持つことができます。
 
-## <a name="operation"></a>操作
+## <a name="operation"></a>Operation
 
-*子コマンド*は、子**レコード セット**を返すと、プロバイダーに発行されます。
+*child-command* はプロバイダーに対して発行され、プロバイダーは子の **Recordset** を返します。
 
 COMPUTE 句では、親 **Recordset** の列を指定します。この列としては、子 **Recordset** に対する参照、1 つまたは複数の集計、演算式、または新規列を使用できます。BY 句がある場合は、BY 句で定義されている列も親 **Recordset** に追加されます。BY 句では、子 **Recordset** の行をグループ化する方法を指定します。
 
@@ -86,16 +86,16 @@ COMPUTE 句では、親 **Recordset** の列を指定します。この列とし
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>State</p></th>
-<th><p>City</p></th>
-<th><p>Population</p></th>
+<th><p>状態</p></th>
+<th><p>市区町村</p></th>
+<th><p>人口</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>WA</p></td>
+<td><p>ワ</p></td>
 <td><p>Seattle</p></td>
-<td><p>700,000</p></td>
+<td><p>70万</p></td>
 </tr>
 <tr class="even">
 <td><p>OR</p></td>
@@ -104,27 +104,27 @@ COMPUTE 句では、親 **Recordset** の列を指定します。この列とし
 </tr>
 <tr class="odd">
 <td><p>OR</p></td>
-<td><p>Portland</p></td>
+<td><p>支店</p></td>
 <td><p>400,000</p></td>
 </tr>
 <tr class="even">
-<td><p>CA</p></td>
+<td><p>コンテンツ</p></td>
 <td><p>Los Angeles</p></td>
-<td><p>800,000</p></td>
+<td><p>80万</p></td>
 </tr>
 <tr class="odd">
-<td><p>CA</p></td>
+<td><p>コンテンツ</p></td>
 <td><p>San Diego</p></td>
 <td><p>600,000</p></td>
 </tr>
 <tr class="even">
-<td><p>WA</p></td>
+<td><p>ワ</p></td>
 <td><p>Tacoma</p></td>
 <td><p>500,000</p></td>
 </tr>
 <tr class="odd">
 <td><p>OR</p></td>
-<td><p>Corvallis</p></td>
+<td><p>corvallis</p></td>
 <td><p>300,000</p></td>
 </tr>
 </tbody>
@@ -140,9 +140,9 @@ rst.Open  "SHAPE {select * from demographics} AS rs "  & _
            objConnection 
 ```
 
-このコマンドは、シェイプされた **Recordset** を 2 つのレベルで開きます。 親レベルは、集計の列 (SUM(rs.population))、子**レコード セット**、(rs) を参照する列および列子**レコード セット**(状態) をグループ化するために生成された**レコード セット**です。 子レベルは、クエリ コマンド ()、子**レコード セット**、(rs) を参照している列、および子**レコード セット**(状態) をグループ化するための列によって返される**レコード セット**です。 子レベルでは、クエリによって返される**レコード セット**(選択\*人口統計から)。
+このコマンドは、シェイプされた **Recordset** を 2 つのレベルで開きます。 親レベルは、集約列 (SUM (rs)) を使用した生成された**recordset** 、子**recordset** (rs) を参照する列、および子**recordset** (state) をグループ化する列です。 子レベルは、クエリコマンド () によって返される**recordset** 、子**recordset** (rs) を参照する列、および子**recordset** (state) をグループ化する列です。 子レベルは、クエリコマンドによって返される**Recordset**です\* ([デモグラフィックス] から選択します)。
 
-状態によってグループ化されたが、特定の順序でそれ以外の場合に、子**Recordset**の詳細行になります。 グループはアルファベット順または数値順ではできません。 親**レコード セット**を注文する場合は、親**レコード セット**を注文するのには、**レコード セット**の**並べ替え**方法を使用できます。
+The child **Recordset** detail rows will be grouped by state, but otherwise in no particular order. That is, the groups will not be in alphabetical or numerical order. If you want the parent **Recordset** to be ordered, you can use the **Recordset** **Sort** method to order the parent **Recordset**.
 
 これにより、開いている親 **Recordset** 内を移動して、子の詳細な **Recordset** オブジェクトにアクセスできるようになります。詳細については、「 [階層 Recordset 内の行にアクセスする](accessing-rows-in-a-hierarchical-recordset.md)」を参照してください。
 
@@ -159,23 +159,23 @@ rst.Open  "SHAPE {select * from demographics} AS rs "  & _
 <thead>
 <tr class="header">
 <th><p>SUM (rs.Population)</p></th>
-<th><p>rs</p></th>
-<th><p>State</p></th>
+<th><p>clr</p></th>
+<th><p>状態</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>1,300,000</p></td>
+<td><p>130万</p></td>
 <td><p>子 1 への参照</p></td>
-<td><p>CA</p></td>
+<td><p>コンテンツ</p></td>
 </tr>
 <tr class="even">
-<td><p>1,200,000</p></td>
+<td><p>120万</p></td>
 <td><p>子 2 への参照</p></td>
-<td><p>WA</p></td>
+<td><p>ワ</p></td>
 </tr>
 <tr class="odd">
-<td><p>1,100,000</p></td>
+<td><p>110万</p></td>
 <td><p>子 3 への参照</p></td>
 <td><p>OR</p></td>
 </tr>
@@ -193,19 +193,19 @@ rst.Open  "SHAPE {select * from demographics} AS rs "  & _
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>State</p></th>
-<th><p>City</p></th>
-<th><p>Population</p></th>
+<th><p>状態</p></th>
+<th><p>市区町村</p></th>
+<th><p>人口</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>CA</p></td>
+<td><p>コンテンツ</p></td>
 <td><p>Los Angeles</p></td>
-<td><p>800,000</p></td>
+<td><p>80万</p></td>
 </tr>
 <tr class="even">
-<td><p>CA</p></td>
+<td><p>コンテンツ</p></td>
 <td><p>San Diego</p></td>
 <td><p>600,000</p></td>
 </tr>
@@ -213,7 +213,7 @@ rst.Open  "SHAPE {select * from demographics} AS rs "  & _
 </table>
 
 
-**子 2**
+**Child2**
 
 <table>
 <colgroup>
@@ -223,19 +223,19 @@ rst.Open  "SHAPE {select * from demographics} AS rs "  & _
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>State</p></th>
-<th><p>City</p></th>
-<th><p>Population</p></th>
+<th><p>状態</p></th>
+<th><p>市区町村</p></th>
+<th><p>人口</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>WA</p></td>
+<td><p>ワ</p></td>
 <td><p>Seattle</p></td>
-<td><p>700,000</p></td>
+<td><p>70万</p></td>
 </tr>
 <tr class="even">
-<td><p>WA</p></td>
+<td><p>ワ</p></td>
 <td><p>Tacoma</p></td>
 <td><p>500,000</p></td>
 </tr>
@@ -243,7 +243,7 @@ rst.Open  "SHAPE {select * from demographics} AS rs "  & _
 </table>
 
 
-**子 3**
+**Child3**
 
 <table>
 <colgroup>
@@ -253,9 +253,9 @@ rst.Open  "SHAPE {select * from demographics} AS rs "  & _
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>State</p></th>
-<th><p>City</p></th>
-<th><p>Population</p></th>
+<th><p>状態</p></th>
+<th><p>市区町村</p></th>
+<th><p>人口</p></th>
 </tr>
 </thead>
 <tbody>
@@ -266,12 +266,12 @@ rst.Open  "SHAPE {select * from demographics} AS rs "  & _
 </tr>
 <tr class="even">
 <td><p>OR</p></td>
-<td><p>Portland</p></td>
+<td><p>支店</p></td>
 <td><p>400,000</p></td>
 </tr>
 <tr class="odd">
 <td><p>OR</p></td>
-<td><p>Corvallis</p></td>
+<td><p>corvallis</p></td>
 <td><p>300,000</p></td>
 </tr>
 </tbody>

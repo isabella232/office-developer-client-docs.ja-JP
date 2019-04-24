@@ -1,5 +1,5 @@
 ---
-title: EditRecord データ ブロック
+title: データのレコードの禁止
 TOCTitle: EditRecord data block
 ms:assetid: fe9f55eb-d7ed-1914-65a9-fa2fcb332b98
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837277(v=office.15)
@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 32ddfbbf21e62d5967fa1f2f31bab0222664eb39
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293596"
 ---
-# <a name="editrecord-data-block"></a>EditRecord データ ブロック
+# <a name="editrecord-data-block"></a>データのレコードの禁止
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**EditRecord** データ ブロックを使用して、既存のレコード内の値を変更できます。
+You can use the **EditRecord** data block to change the values contained in an existing record.
 
 > [!NOTE]
-> [!メモ] **EditRecord** データ ブロックは、データ マクロでのみ使用できます。
+> EditRecord データ ブロックは、データ マクロでのみ使用できます。
 
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
 **EditRecord** データ ブロックの引数は次のとおりです。
 
@@ -42,14 +42,14 @@ ms.locfileid: "28715754"
 <tbody>
 <tr class="odd">
 <td><p><strong>Alias</strong></p></td>
-<td><p>編集するレコードを識別する文字列です。 <em>別名</em>引数を指定しない場合、現在のレコードを編集します。</p></td>
+<td><p>編集するレコードを識別する文字列。"Alias/別名" 引数を指定しない場合、カレント レコードが編集されます。</p></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**EditRecord**ステートメントの後に、レコードに対する変更は、コミットされていない前に実行するコマンドのブロックを挿入できます。 **EditRecord**データ ブロックに次の操作を利用できます。
+After **EditRecord** statement, you can insert a block of commands that will execute before the changes to the record are comitted. The following actions are available in a **EditRecord** data block.
 
 <table>
 <colgroup>
@@ -66,7 +66,7 @@ ms.locfileid: "28715754"
 <td><p><a href="group-macro-statement.md">Group マクロ ステートメント</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="if-then-else-macro-block.md">もし。。。そうしたら。。。マクロ ステートメントはその他</a></p></td>
+<td><p><a href="if-then-else-macro-block.md">もし。。。そうしたら。。。Else マクロステートメント</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="setfield-macro-action.md">SetField マクロ アクション</a></p></td>
@@ -77,15 +77,15 @@ ms.locfileid: "28715754"
 </tbody>
 </table>
 
-" **SetField** /フィールドの設定" アクションを使用して、編集するレコードの新しいフィールド値を指定します。
+Use the **SetField** action to specify the new values of a field in the edited record.
 
-場合、**を使用することができます.そうしたら。。。他**の条件に基づいて、ステートメントを使用して操作を実行します。
+You can use an **If...Then...Else** statment to perform operations based on a condition.
 
-レコードの編集を取り消すには、" **CancelRecordChange** /レコードの変更の取り消し" アクションを使用します。これにより、変更は確定されずに、 **EditRecord** データ ブロックが終了します。
+To cancel the editing of a record, use the **CancelRecordChange** action. This prevents the changes from being committed and exits the **EditRecord** data block.
 
 **LastCreateRecordIdentity** ローカル変数を使用して、 **CreateRecord** データ ブロックで一番新しく作成したレコードを操作できます。たとえば、次の構文では一番新しく作成したレコードの AssignedTo フィールドを参照します。
 
 `[LastCreateRecordIdentity].[AssignedTo]`
 
-CreateRecord データ ブロックは、**[後に挿入](after-insert-macro-event.md)**、**[更新した後](after-update-macro-event.md)**、および**[更新後](after-update-macro-event.md)** のデータ マクロのイベントでのみ使用できます。
+The CreateRecord data block can only be used in the **[After Insert](after-insert-macro-event.md)**, **[After Update](after-update-macro-event.md)**, and **[After Update](after-update-macro-event.md)** data macro events.
 

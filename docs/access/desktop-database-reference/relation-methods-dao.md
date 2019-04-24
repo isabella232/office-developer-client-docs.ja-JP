@@ -1,5 +1,5 @@
 ---
-title: 関係の方法 (DAO)
+title: Relation メソッド (DAO)
 TOCTitle: Methods
 ms:assetid: 9d0fef8b-3ae4-4b48-8b32-e73630c0a5ef
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn125502(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d4f3db5b2de83ab99753d639b6d2dce9f28a7416
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307029"
 ---
-# <a name="relation-methods-dao"></a>関係の方法 (DAO)
+# <a name="relation-methods-dao"></a>Relation メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-- [Relation.CreateField メソッド (DAO)](relation-createfield-method-dao.md)
+- [CreateField メソッド (DAO)](relation-createfield-method-dao.md)
 

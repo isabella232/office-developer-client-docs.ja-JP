@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 5051cfd74f2a745ee430f2ed8a20445d2f9965f3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306756"
 ---
 # <a name="removetempvar-macro-action"></a>RemoveTempVar マクロ アクション
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
 
-**RemoveTempVar**アクションを使用すると、 **SetTempVar**アクションを使用して作成した 1 つの一時変数を削除します。
+"RemoveTempVar/一時変数の削除" アクションは、"SetTempVar/一時変数の設定" アクションを使用して作成した １ つの一時変数を削除するために使用します。
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**RemoveTempVar**アクションには、次の引数があります。
+"RemoveTempVar/一時変数の削除" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -44,14 +44,14 @@ ms.locfileid: "28716307"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Name</strong></p></td>
+<td><p><strong>名前</strong></p></td>
 <td><p>削除する一時変数の名前を入力します。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
   - 一度に定義しておくことのできる一時変数は、最大 255 個です。一時変数は、削除しなければ、データベースを閉じるまでメモリに残ったままとなります。不要となった一時変数は削除することをお勧めします。
 
@@ -59,13 +59,13 @@ ms.locfileid: "28716307"
 
   - 削除対象の変数の名前を誤って入力しても、エラーは表示されません。その削除対象の変数は、データベースを閉じるまでメモリに残ったままとなります。
 
-  - 1 つ以上の一時的な変数を作成し、それらを一度にすべて削除する、 **RemoveAllTempVars**アクションを使用してください。
+  - If you have created more than one temporary variable and you want to remove them all at once, use the **RemoveAllTempVars** action.
 
-  - VBA モジュールで**RemoveTempVar**アクションを実行するには、**一時変数**オブジェクトの**Remove**メソッドを使用します。
+  - To run the **RemoveTempVar** action in a VBA module, use the **Remove** method of the **TempVars** object.
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
-次のマクロでは、一時変数を作成し、条件とメッセージ ボックスで使用して、 **RemoveTempVar**アクションを使用して一時変数を削除する方法を示します。
+The following macro demonstrates how to create a temporary variable, use it in a condition and a message box, and then remove the temporary variable by using the **RemoveTempVar** action.
 
 <table>
 <colgroup>
@@ -84,12 +84,12 @@ ms.locfileid: "28716307"
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>SetTempVar</strong></p></td>
-<td><p><strong>名前</strong>: MyVar<strong>式</strong>: InputBox (&quot;、0 以外の数値を入力してください&quot;)。</p></td>
+<td><p><strong>名前</strong>: MyVar<strong>Expression</strong>: InputBox (&quot;0 以外の数値を入力し&quot;ます。)</p></td>
 </tr>
 <tr class="even">
 <td><p>[TempVars]![MyVar]&lt;&gt;0</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>メッセージ</strong>: =&quot;を入力する&quot; &amp; [一時変数]![MyVar]&amp; &quot;.&quot;<strong>ビープ音を鳴らす</strong>: <strong>YesType</strong>:<strong>情報</strong></p></td>
+<td><p><strong>メッセージ</strong>: =&quot;入力&quot; &amp;した [TempVars]!MyVar&amp; &quot;.&quot;<strong>警告音</strong>: <strong>yestype</strong>:<strong>情報</strong></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>

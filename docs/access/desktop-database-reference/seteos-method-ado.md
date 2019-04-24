@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 5f3b1ee81928a8da77cc3edff7f1feffb7196bba
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308709"
 ---
 # <a name="seteos-method-ado"></a>SetEOS メソッド (ADO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ストリームの末尾の位置を設定します。
 
@@ -24,7 +24,7 @@ ms.locfileid: "28722761"
 
 *ストリーム*。SetEOS
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **SetEOS** は、現在の [Position](eos-property-ado.md) がストリームの末尾になるように [EOS](position-property-ado.md) プロパティの値を更新します。現在の位置より後ろにあったバイト値や文字はすべて切り捨てられます。
 

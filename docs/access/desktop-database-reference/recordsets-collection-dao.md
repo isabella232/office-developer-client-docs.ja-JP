@@ -1,5 +1,5 @@
 ---
-title: レコード セット コレクション (DAO)
+title: Recordsets コレクション (DAO)
 TOCTitle: Recordsets Collection
 ms:assetid: 246d9a78-4ce8-6393-982b-77ac00cd85bb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff191819(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3b935e05264497c7ad09ada4a8c50c775845857b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309304"
 ---
-# <a name="recordsets-collection-dao"></a>レコード セット コレクション (DAO)
+# <a name="recordsets-collection-dao"></a>Recordsets コレクション (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **Recordsets** コレクションには、 **Connection** または **Database** オブジェクト内のすべての開いている **Recordset** オブジェクトが含まれます。
 
@@ -32,9 +32,9 @@ DAO オブジェクトを使用する場合は、 **Recordset** オブジェク�
 
 - **Recordsets**(0)
 
-- **レコード セット**("name")
+- **Recordsets**("name")
 
-- **レコード セット**\!\[名\]
+- **レコードセット**\!\[名\]
 
 > [!NOTE]
 > [!メモ] 同じデータ ソースまたはデータベースから **Recordset** オブジェクトを複数回開いて、 **Recordsets** コレクションに重複する名前を作成できます。 **Recordset** オブジェクトをオブジェクト変数に割り当て、変数名で参照する必要があります。

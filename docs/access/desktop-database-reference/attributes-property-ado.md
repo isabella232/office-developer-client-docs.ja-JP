@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 6495c70f64930e1b335c603f13e720ad581203a5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296984"
 ---
 # <a name="attributes-property-ado"></a>Attributes プロパティ (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
 ## <a name="attributes-property"></a>Attributes プロパティ
 
 オブジェクトの 1 つまたは複数の属性を示します。
 
-## <a name="settings-and-return-values"></a>設定値および戻り値
+## <a name="settings-and-return-values"></a>設定値と戻り値
 
 長整数型 ( **Long** ) の値を設定または取得します。
 
@@ -40,11 +40,11 @@ ms.locfileid: "28717980"
 
 [Property](property-object-ado.md) オブジェクトの場合、 **Attributes** プロパティは値の取得のみ可能で、その値は 1 つまたは複数の [PropertyAttributesEnum](propertyattributesenum.md) 値の合計になります。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**Attributes** プロパティを使用すると、 **Connection** オブジェクト、 **Parameter** オブジェクト、 [Field](field-object-ado.md) オブジェクト、または [Property](property-object-ado.md) オブジェクトの属性を設定または取得できます。
+**Attributes** プロパティを使用すると、**Connection** オブジェクト、**Parameter** オブジェクト、[Field](field-object-ado.md) オブジェクト、または [Property](property-object-ado.md) オブジェクトの属性を設定または取得できます。
 
 複数の属性を設定する場合は、該当する定数の合計を使用できます。プロパティの値を、互換性のない定数を含む合計に設定すると、エラーが発生します。
 
-**リモート データ サービスの使用法**このプロパティはクライアント側の**接続**オブジェクトで使用できます。
+**リモートデータサービスの使用状況**このプロパティは、クライアント側の**Connection**オブジェクトでは使用できません。
 

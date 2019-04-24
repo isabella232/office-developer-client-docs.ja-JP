@@ -1,5 +1,5 @@
 ---
-title: エラー オブジェクト、ActiveX データ オブジェクト (ADO)
+title: Error オブジェクト-ActiveX データオブジェクト (ADO)
 TOCTitle: Error object (ADO)
 ms:assetid: 97e478bf-8b25-03a8-9358-abba5069cba3
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249678(v=office.15)
@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a7c77a59368851f43b5e7bf2275f9f282546fb4b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293484"
 ---
 # <a name="error-object-ado"></a>Error オブジェクト (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 プロバイダーを含む単一の操作に関連して発生した、データ アクセス エラーの詳細情報を格納しています。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 ADO オブジェクトに関係するすべての操作では、1 つ以上のプロバイダー エラーが発生する場合があります。エラーが発生するたびに、1 つ以上の **Error** オブジェクトが [Connection](errors-collection-ado.md) オブジェクトの [Errors](connection-object-ado.md) コレクションに追加されます。別の ADO 操作でエラーが発生すると、 **Errors** コレクションがクリアされ、 **Error** オブジェクトの新しいセットが **Errors** コレクションに配置されます。
 
@@ -40,7 +40,7 @@ ADO オブジェクトに関係するすべての操作では、1 つ以上の�
 
 プロバイダー エラーは発生すると、 **Connection** オブジェクトの **Errors** コレクションに追加されます。ADO では 1 回の ADO 操作で複数のエラーを取得できるため、プロバイダー固有のエラー情報を見込んでおくことができます。エラー ハンドラーにあるこうした豊富なエラー情報を取得するには、使用している言語や環境の適切なエラー トラッピング機能を使用し、ネストされたループで **Errors** コレクションの各 **Error** オブジェクトのプロパティを列挙します。
 
-**Microsoft Visual Basic および VBScript ユーザー**有効な**接続**オブジェクトがない場合、 **Error**オブジェクトからエラー情報を取得する必要があります。
+**Microsoft Visual Basic および VBScript ユーザー**有効な**Connection**オブジェクトがない場合は、error オブジェクトからエラー情報を取得する**** 必要があります。
 
 ADO は、プロバイダーと同様に、新たなプロバイダー エラーを発生させる可能性がある呼び出しを行う前に、 **OLE Error Info** オブジェクトをクリアします。ただし、 **Connection** オブジェクトの **Errors** コレクションがクリアされ、オブジェクトが追加されるのは、プロバイダーで新しいエラーが生成されるか、 [Clear](clear-method-ado.md) メソッドを呼び出す場合のみです。
 

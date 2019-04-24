@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3a709a37f84fd90ef497fdf25e523475fae31b7f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296991"
 ---
 # <a name="attributes-and-name-properties-example-vc"></a>Attributes プロパティと Name プロパティの使用例 (VC++)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 次の例では、[Connection](attributes-property-ado.md)、[Field](connection-object-ado.md)、および [Property](field-object-ado.md) の各オブジェクトの [Attributes](property-object-ado.md) プロパティの値を表示します。 [Name](name-property-ado.md) プロパティを使用して、 **Field** および **Property** の各オブジェクトの名前を表示しています。
 
@@ -212,7 +212,7 @@ VOID PrintComError(_com_error &e)
 // EndAttributesCpp 
 ```
 
-**AttributesX.h**
+**属性 (esx)**
 
 ```cpp 
  

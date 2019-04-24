@@ -1,5 +1,5 @@
 ---
-title: HelloData の詳細 (デスクトップ データベース参照のアクセス)
+title: HelloData details (Access デスクトップデータベースリファレンス)
 TOCTitle: HelloData details
 ms:assetid: db51e15c-1b5b-c64a-2f84-34dd0e78c6cf
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250105(v=office.15)
@@ -8,28 +8,28 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 78b04b74d4e2b8d9c215235d6e7ccebed4fa2ef2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292000"
 ---
 # <a name="hellodata-details"></a>HelloData の詳細
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-HelloData アプリケーションは、一般的な ADO アプリケーションの基本操作手順: 取得、検査、編集、およびデータを更新します。 アプリケーションを起動するときは、最初のボタンでは、**データの取り込み**をクリックします。 GetData() サブルーチンが実行されます。
+The HelloData application steps through the basic operations of a typical ADO application: getting, examining, editing, and updating data. When you start the application, click the first button, **Get Data**. This will run the GetData() subroutine.
 
 ## <a name="getdata"></a>GetData
 
-GetData は、モジュール レベル変数に有効な接続文字列を配置*m\_sConnStr*。 接続文字列の詳細については、「 [接続文字列を作成する](creating-the-connection-string.md)」を参照してください。
+GetData は、有効な接続文字列をモジュールレベルの変数*m\_sconnstr*に格納します。 接続文字列の詳細については、「 [接続文字列を作成する](creating-the-connection-string.md)」を参照してください。
 
-Visual Basic の**OnError**ステートメントを使用してエラー ハンドラーを割り当てます。 ADO のエラー処理の詳細についてを参照してください[第 6 章: エラー処理](chapter-6-error-handling.md)。 新しい**接続**オブジェクトを作成すると、および HelloData の例は、*切断されたレコード セット*を作成するために、 **CursorLocation**プロパティが**adUseClient**に設定されています。 つまり、データがデータ ソースからフェッチされる、データ ソースとの物理的な接続が切断された場合が、まだ使用できます、キャッシュされたデータをローカルで、 **Recordset**オブジェクトにします。
+Assign an error handler using a Visual Basic **OnError** statement. For more information about error handling in ADO, see [Chapter 6: Error Handling](chapter-6-error-handling.md). 新しい**Connection**オブジェクトが作成され、HelloData **** の例では切断された*Recordset*が作成されるので、このプロパティは**adUseClient**に設定されています。 This means that once the data has been fetched from the data source, the physical connection with the data source is broken, but you can still work with the data that is cached locally in your **Recordset** object.
 
-接続後、SQL 文字列を変数 (sSQL) に割り当てます。 新規の**Recordset**オブジェクトのインスタンスを作成し、m\_oRecordset1。 コードの次の行では、既存の**接続**に渡すことで**レコード セット**を開きます。 コードの次の行には、既存の**接続**、**レコード セット**のソースとして sSQL に渡すことで**レコード セット**を開きます。 ADO は**レコード セット**のソースとして渡された SQL 文字列では、コマンドのテキストの定義を**レコード セット**を**開く**方法を最後の引数で**adCmdText**を渡すことによって決定を行うために役立ちます。 この行は、 **LockType**も設定し、 **CursorType**は、**レコード セット**に関連付けられています。
+接続後、SQL 文字列を変数 (sSQL) に割り当てます。 その後、新しい**Recordset**オブジェクト m\_oRecordset1 をインスタンス化します。 次のコード行で、既存の**接続**を介して**Recordset**を開き、を渡します。 コードの次の行で、既存の**接続**を介して**recordset**を開き、 **recordset**のソースとして ssql を渡します。 You assist ADO in making the determination that the SQL string you have passed as the source for the **Recordset** is a textual definition of a command by passing **adCmdText** in the final argument to the **Recordset** **Open** method. This line also sets the **LockType** and **CursorType** associated with the **Recordset**.
 
-次の行のコードでは、 **MarshalOptions** プロパティを **adMarshalModifiedOnly** に設定します。 **スレッド**は、どのレコードを中間層 (web サーバー) にマーシャ リングすることを示します。 マーシャリングの詳細については、COM のマニュアルを参照してください。 **AdMarshalModifiedOnly**を使用してクライアント側カーソルがある場合 ([CursorLocation](cursorlocation-property-ado.md) = **adUseClient**)、クライアント上で変更されたレコードのみを中間層に書き戻す。 **MarshalOptions** を **adMarshalModifiedOnly** に設定すると、マーシャリングされる行が少なくなり、パフォーマンスが向上する場合があります。
+次の行のコードでは、 **MarshalOptions** プロパティを **adMarshalModifiedOnly** に設定します。 **marshaloptions**は、中間層 (または web サーバー) にマーシャリングするレコードを示します。 マーシャリングの詳細については、COM のマニュアルを参照してください。 クライアント側カーソル ([cursor location](cursorlocation-property-ado.md) = **adUseClient**) で**adMarshalModifiedOnly**を使用する場合、クライアント上で変更されたレコードのみが中間層に書き戻されます。 **MarshalOptions** を **adMarshalModifiedOnly** に設定すると、マーシャリングされる行が少なくなり、パフォーマンスが向上する場合があります。
 
 次に、 **ActiveConnection** プロパティを **Nothing** に設定して **Recordset** を切断します。詳細については、「5 章: データを更新し、保存する」の「 [レコードセットを切断し、再接続する](disconnecting-and-reconnecting-the-recordset.md)」を参照してください。
 
@@ -37,7 +37,7 @@ Visual Basic の**OnError**ステートメントを使用してエラー ハン�
 
 最後に、フォーム上で Microsoft DataBound Grid Control の **DataSource** として **Recordset** を設定し、 **Recordset** のデータをフォームに簡単に表示できるようにします。
 
-**データを調べて**、2 番目のボタンをクリックします。 ExamineData サブルーチンが実行されます。
+Click the second button, **Examine Data**. This runs the ExamineData subroutine.
 
 ## <a name="examinedata"></a>ExamineData
 
@@ -49,7 +49,7 @@ ExamineData では、**Recordset** オブジェクトのさまざまなメソッ
 
 ExamineData サブルーチンで使用されている機能の詳細については、「[3 章: データを調べる](chapter-3-examining-data.md)」を参照してください。
 
-次に、3 番目のボタンでは、**データの編集**] をクリックします。 EditData サブルーチンが実行されます。
+Next, click the third button, **Edit Data**. This will run the EditData subroutine.
 
 ## <a name="editdata"></a>EditData
 
@@ -57,11 +57,11 @@ EditData サブルーチンが実行されるときも、 **Recordset** には C
 
 **Recordset** はデータ ソースからは切断されています。EditData による変更は、ローカルにキャッシュされたデータのコピーにのみ適用されます。詳細については、「 [4 章: データを編集する](chapter-4-editing-data.md)」を参照してください。
 
-変更できません。 データ ソースに**データの更新**、4 番目のボタンをクリックするまでです。 UpdateData サブルーチンが実行されます。
+The changes will not be made on the data source until you click the fourth button, **Update Data**. This will run the UpdateData subroutine.
 
 ## <a name="updatedata"></a>UpdateData
 
-UpdateData は、まず **Recordset** に適用されたフィルターを削除します。 コードは、削除し、フィルター処理されていない**レコード セット**がグリッドに表示されるように、**データ ソース**として、Microsoft バインド データ グリッドのフォームにリセットします。
+UpdateData は、まず **Recordset** に適用されたフィルターを削除します。 このコードは、フィルターを使用しない**Recordset**がグリッドに表示されるように、フォーム上の Microsoft Bound DataGrid の**DataSource**として削除およびリセットします。
 
 次に、 **adMovePrevious** 引数を持つ **Supports** メソッドを使用して、 **Recordset** 内で後方へ移動できるかどうかを確認します。
 
@@ -69,13 +69,13 @@ UpdateData は、まず **Recordset** に適用されたフィルターを削除
 
 次に、新しい **Connection** オブジェクトが作成され、このオブジェクトを使用してデータ ソースへの接続が再確立されます。 **Recordset** をデータ ソースに再接続するには、新しい **Connection** を **Recordset** の **ActiveConnection** として設定します。更新内容をサーバーに送信するために、 **Recordset** の **UpdateBatch** を呼び出します。
 
-場合、バッチ更新が成功すると、モジュール レベルのフラグ変数、True に設定します。 これは、データベースに対して行ったすべての変更を後で取り消すための目印になります。
+バッチ更新が正常に終了すると、モジュールレベルのフラグ変数が True に設定されます。 これは、データベースに対して行ったすべての変更を後で取り消すための目印になります。
 
 最後に、 **Recordset** 内の最初のレコードに戻り、元の値と現在の値を表示します。値は、 **UpdateBatch** を呼び出した後と同じです。
 
 **Recordset** の切断中にサーバーのデータが変更された場合の対処など、データの更新の詳細については、「 [5 章: データを更新し、保存する](chapter-5-updating-and-persisting-data.md)」を参照してください。
 
-## <a name="formunload"></a>フォーム\_アンロード
+## <a name="formunload"></a>フォーム\_のアンロード
 
-フォーム\_アンロード サブルーチンが、重要ないくつかの理由です。 最初、これは、サンプル アプリケーション、フォーム、\_アンロードは、アプリケーションが終了する前にデータベースに加えられた変更をクリーンアップします。 次に、開いている **Connection** オブジェクトから **Execute** メソッドを使用してコマンドを直接実行する方法を示していることです。 最後に、データ ソースに対して以外の行を返さないクエリ (UPDATE クエリ) を実行する例を示します。
+Form\_Unload サブルーチンは、いくつかの理由から重要です。 最初に、これはサンプルアプリケーションなので\_、フォームのアンロードでは、アプリケーションが終了する前にデータベースに加えられた変更がクリーンアップされます。 次に、開いている **Connection** オブジェクトから **Execute** メソッドを使用してコマンドを直接実行する方法を示していることです。 最後に、データ ソースに対して行を返さないクエリ (UPDATE クエリ) を実行する例を示していることです。
 

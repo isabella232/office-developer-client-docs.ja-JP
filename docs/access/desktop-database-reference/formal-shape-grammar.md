@@ -8,31 +8,31 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d30ff9146146bb0457a5aa383b2b720a4fdaeb78
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292322"
 ---
 # <a name="formal-shape-grammar"></a>正式な Shape 文法
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 すべての Shape コマンドの作成における正式な文法を以下に示します。
 
   - 文法的に必須の項は、山かっこ ("\<\>") で区切られたテキスト文字列です。
 
-  - オプションの項は、角かっこで区切られます ("\[ \]")。
+  - 省略可能な用語は、角かっこ (\[ \]"") で区切ります。
 
   - パイプ記号 ("|") は、代替項目であることを示します。
 
   - 省略符号 ("...") は、繰り返し代替項目であることを示します。
 
-  - *アルファ*は、アルファベット文字の文字列を示します。
+  - *Alpha* は、英字による文字列であることを示します。
 
-  - *数字*は、数値の文字列を示します。
+  - *Digit* は、数字による文字列であることを示します。
 
-  - *Unicode 文字*は、unicode 数字の文字列を示します。
+  - *Unicode-digit* は、Unicode 数字による文字列であることを示します。
 
 その他のすべての項はリテラルです。
 
@@ -43,85 +43,85 @@ ms.locfileid: "28708047"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>項</p></th>
+<th><p>用語</p></th>
 <th><p>定義</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>&lt;shape コマンド&gt;</p></td>
-<td><p>図形 [&lt;テーブル exp&gt; [AS]&lt;別名&gt;] [&lt;] 図形の操作&gt;]</p></td>
+<td><p>&lt;shape-コマンド&gt;</p></td>
+<td><p>shape [&lt;table-exp&gt; [[AS] &lt;エイリアス&gt;]] [&lt;shape-action&gt;]</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;テーブル exp&gt;</p></td>
-<td><p>{&lt;プロバイダー]&gt;} |<br />
-(&lt;図形コマンド&gt;)。<br />
-テーブル&lt;引用符で囲まれた名前&gt; |<br />
+<td><p>&lt;table-exp&gt;</p></td>
+<td><p>{&lt;プロバイダ-コマンド-テキスト&gt;} |<br />
+(&lt;図形-コマンド&gt;) |<br />
+引用符&lt;で囲まれたテーブル名&gt; |<br />
 &lt;引用符で囲まれた名前&gt;</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;図形操作&gt;</p></td>
-<td><p>追加&lt;エイリアス]&gt; |</p>
-<p>計算&lt;エイリアス]&gt; [BY&lt;フィールド リスト&gt;]</p></td>
+<td><p>&lt;図形-アクション&gt;</p></td>
+<td><p>エイリアス&lt;フィールドリストを追加する&gt; |</p>
+<p>エイリアス&lt;でフィールドを計算する&gt; -リスト&lt;(フィールドリスト&gt;)</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;エイリアスのフィールドの一覧&gt;</p></td>
-<td><p>&lt;エイリアス フィールド&gt;[、&lt;の別名フィールド.&gt;]</p></td>
+<td><p>&lt;エイリアスが付いたフィールドリスト&gt;</p></td>
+<td><p>&lt;エイリアスフィールド&gt; [、 &lt;エイリアスフィールド]&gt;]</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;エイリアス フィールド&gt;</p></td>
-<td><p>&lt;フィールド exp&gt; [AS]&lt;別名&gt;]</p></td>
+<td><p>&lt;エイリアスフィールド&gt;</p></td>
+<td><p>&lt;フィールド-exp&gt; [[AS] &lt;エイリアス&gt;]</p></td>
 </tr>
 <tr class="even">
 <td><p>&lt;フィールド exp&gt;</p></td>
-<td><p>(&lt;関係 exp&gt;)。</p>
-<p>&lt;計算 exp&gt; |</p>
-<p>&lt;集計 exp&gt; |</p>
-<p>&lt;新しい exp 関数&gt;</p></td>
+<td><p>(&lt;relation-exp&gt;) |</p>
+<p>&lt;計算済-exp&gt; |</p>
+<p>&lt;集計-exp&gt; |</p>
+<p>&lt;新規-exp&gt;</p></td>
 </tr>
 <tr class="odd">
 <td><p>&lt;relation_exp&gt;</p></td>
-<td><p>&lt;テーブル exp&gt; [AS]&lt;別名&gt;]</p>
-<p>&lt;テーブル exp&gt; [AS]&lt;別名&gt;]</p></td>
+<td><p>&lt;table-exp&gt; [[AS] &lt;エイリアス&gt;]</p>
+<p>&lt;table-exp&gt; [[AS] &lt;エイリアス&gt;]</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;関係の条件の一覧&gt;</p></td>
-<td><p>&lt;関係条件&gt;[、&lt;関係条件&gt;...]</p></td>
+<td><p>&lt;relation-リスト&gt;</p></td>
+<td><p>&lt;リレーションシップ-同&gt;一 [ &lt;(リレーション&gt;)]</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;関係条件&gt;</p></td>
-<td><p>&lt;フィールド名&gt;TO&lt;子参照&gt;</p></td>
+<td><p>&lt;relation&gt;</p></td>
+<td><p>&lt;フィールド名&gt;と&lt;子の参照&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p>&lt;子参照&gt;</p></td>
 <td><p>&lt;フィールド名&gt; |</p>
-<p>パラメーター&lt;パラメーター渡し&gt;</p></td>
+<p>パラメーター &lt;param-ref&gt;</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;パラメーター渡し&gt;</p></td>
-<td><p>&lt;number&gt;</p></td>
+<td><p>&lt;パラメーター ref&gt;</p></td>
+<td><p>&lt;件数&gt;</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;フィールド リスト&gt;</p></td>
-<td><p>&lt;フィールド名&gt;[、&lt;フィールド名&gt;]</p></td>
+<td><p>&lt;フィールドリスト&gt;</p></td>
+<td><p>&lt;フィールド名&gt; [、 &lt;フィールド名]&gt;</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;集計 exp&gt;</p></td>
-<td><p>合計 (&lt;修飾フィールド名&gt;)。</p>
-<p>AVG (&lt;修飾フィールド名&gt;)。</p>
-<p>MIN (&lt;修飾フィールド名&gt;)。</p>
-<p>MAX (&lt;修飾フィールド名&gt;)。</p>
-<p>カウント (&lt;修飾エイリアス&gt; | &lt;修飾名&gt;)。</p>
-<p>STDEV (&lt;修飾フィールド名&gt;)。</p>
-<p>任意 (&lt;修飾フィールド名&gt;)</p></td>
+<td><p>&lt;集計-exp&gt;</p></td>
+<td><p>SUM (&lt;修飾フィールド名&gt;) |</p>
+<p>AVG (&lt;修飾フィールド名&gt;) |</p>
+<p>MIN (&lt;修飾フィールド名&gt;) |</p>
+<p>MAX (&lt;修飾フィールド名&gt;) |</p>
+<p>COUNT (&lt;修飾名付き&gt; | &lt;エイリアス名&gt;) |</p>
+<p>STDEV (&lt;修飾フィールド名&gt;) |</p>
+<p>ANY (&lt;修飾フィールド名&gt;)</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;計算 exp&gt;</p></td>
-<td><p>再計算実行 (&lt;式&gt;)</p></td>
+<td><p>&lt;計算済-exp&gt;</p></td>
+<td><p>CALC (&lt;式&gt;)</p></td>
 </tr>
 <tr class="odd">
 <td><p>&lt;修飾フィールド名&gt;</p></td>
-<td><p>&lt;エイリアス&gt;。[&lt;別名&gt;...]&lt;フィールド名&gt;</p></td>
+<td><p>&lt;エイリアス&gt;。[&lt;エイリアス&gt;...]&lt;フィールド名&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p>&lt;エイリアス&gt;</p></td>
@@ -129,41 +129,41 @@ ms.locfileid: "28708047"
 </tr>
 <tr class="odd">
 <td><p>&lt;フィールド名&gt;</p></td>
-<td><p>&lt;引用符で囲まれた名前&gt;[AS]&lt;別名&gt;]</p></td>
+<td><p>&lt;引用符で囲ま&gt;れた名前 [ &lt;[&gt;AS] エイリアス]</p></td>
 </tr>
 <tr class="even">
 <td><p>&lt;引用符で囲まれた名前&gt;</p></td>
-<td><p>&quot;&lt;文字列&gt;&quot; |</p>
-<p>'&lt;文字列&gt;' |</p>
-<p>[&lt;文字列&gt;] |</p>
-<p>&lt;名&gt;</p></td>
+<td><p>&quot;&lt;表す&gt;&quot; |</p>
+<p>'&lt;string&gt;' |</p>
+<p>[&lt;string&gt;] |</p>
+<p>&lt;拡張子&gt;</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;修飾された名前&gt;</p></td>
-<td><p>エイリアス [.alias.]</p></td>
+<td><p>&lt;修飾名&gt;</p></td>
+<td><p>エイリアス [...]</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;名&gt;</p></td>
-<td><p>alpha [アルファ | 数字 | _ | # |: |...]</p></td>
+<td><p>&lt;拡張子&gt;</p></td>
+<td><p>α [α | 桁 | _ | # |: |...]</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;number&gt;</p></td>
-<td><p>数字 [桁]</p></td>
+<td><p>&lt;件数&gt;</p></td>
+<td><p>数字 [数字...]</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;新しい exp 関数&gt;</p></td>
-<td><p>新しい&lt;フィールドの型&gt;[(&lt;数&gt;[、&lt;数&gt;])]</p></td>
+<td><p>&lt;新規-exp&gt;</p></td>
+<td><p>新しい&lt;フィールドの種類&gt; [(&lt;数値&gt; [, &lt;number&gt;])]</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;フィールドの型&gt;</p></td>
+<td><p>&lt;フィールドの種類&gt;</p></td>
 <td><p>OLE DB または ADO のデータ型</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;string&gt;</p></td>
-<td><p>unicode 文字 [unicode 文字です..]。</p></td>
+<td><p>&lt;表す&gt;</p></td>
+<td><p>unicode-char [unicode-char...]</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;expression&gt;</p></td>
+<td><p>&lt;式&gt;</p></td>
 <td><p>同じ行でオペランドが他の非 CALC 列の Visual Basic for Application 式</p></td>
 </tr>
 </tbody>

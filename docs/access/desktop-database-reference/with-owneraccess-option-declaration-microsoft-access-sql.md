@@ -1,5 +1,5 @@
 ---
-title: OWNERACCESS オプション宣言 (Microsoft Access SQL)
+title: owneraccess OPTION 宣言 (Microsoft access SQL)
 TOCTitle: WITH OWNERACCESS OPTION declaration (Microsoft Access SQL)
 ms:assetid: 82e51071-12b2-e97e-07b4-27ffceda831e
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196724(v=office.15)
@@ -14,24 +14,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 0882f143f13f6bd6d66c894f242a9cd50ebf9489
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302507"
 ---
-# <a name="with-owneraccess-option-declaration-microsoft-access-sql"></a>OWNERACCESS オプション宣言 (Microsoft Access SQL)
+# <a name="with-owneraccess-option-declaration-microsoft-access-sql"></a>owneraccess OPTION 宣言 (Microsoft access SQL)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 セキュリティで保護されたワークグループを使用したマルチユーザー環境で、クエリを使用するユーザーにクエリの所有者と同等の権限を与える場合に使用します。
 
 ## <a name="syntax"></a>構文
 
-*連結*OWNERACCESS オプションを使用して
+*sqlstatement*OWNERACCESS オプション付き
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 WITH OWNERACCESS OPTION 宣言は省略可能です。
 

@@ -1,5 +1,5 @@
 ---
-title: DBEngine.RegisterDatabase メソッド (DAO)
+title: DBEngine データベースメソッド (DAO)
 TOCTitle: RegisterDatabase Method
 ms:assetid: ed87a694-2c89-0a78-5d8b-0cc7e09fadff
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836347(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 632f6e10d79d74dfef295b34a52ce62f1690101b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294226"
 ---
-# <a name="dbengineregisterdatabase-method-dao"></a>DBEngine.RegisterDatabase メソッド (DAO)
+# <a name="dbengineregisterdatabase-method-dao"></a>DBEngine データベースメソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ODBC データ ソースの接続情報を Windows レジストリに追加します。ODBC ドライバーでは、セッション中に ODBC データ ソースが開かれるときに、接続情報が必要になります。
 
 ## <a name="syntax"></a>構文
 
-*式*です。RegisterDatabase (***Dsn******ドライバー***、***サイレント***、***属性***)
+*式*。registerdatabase (***Dsn***、***ドライバー***、***サイレント***、***属性***)
 
-*式***DBEngine**オブジェクトを表す変数です。
+*式***DBEngine**オブジェクトを表す変数を取得します。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -49,28 +49,28 @@ ODBC データ ソースの接続情報を Windows レジストリに追加し�
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Dsn</em></p></td>
+<td><p><em>代わりに</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>String</strong></p></td>
-<td><p><strong><a href="dbengine-opendatabase-method-dao.md">OpenDatabase</a></strong> メソッドで使用される名前です。データ ソースに関する説明的な情報を指します。たとえば、データ ソースが ODBC リモート データベースである場合は、サーバー名などを指定します。</p></td>
+<td><p><strong><a href="dbengine-opendatabase-method-dao.md">OpenDatabase</a></strong>メソッドで使用される名前。 データ ソースに関する説明的な情報を指します。 たとえば、データ ソースが ODBC リモート データベースである場合は、サーバー名などを指定します。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Driver</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>String</strong></p></td>
-<td><p>ODBC ドライバーの名前です。ODBC ドライバーの DLL ファイルの名前ではありません。</p></td>
+<td><p>ODBC ドライバーの名前です。 ODBC ドライバーの DLL ファイルの名前ではありません。</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>サイレント</em></p></td>
+<td><p><em>静寂</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>Boolean</strong></p></td>
-<td><p><strong>True の</strong>場合、ドライバー固有の情報の入力を求める ODBC ドライバー ダイアログ ボックスを表示したくないです。または、 <strong>false を指定</strong>する場合は、ODBC ドライバーのダイアログ ボックスを表示します。 場合<strong>はサイレント</strong>、属性には、必要なすべてのドライバー固有の情報が含まれている必要があります、またはダイアログ ボックスが表示されますか。</p></td>
+<td><p>ドライバー固有の情報の入力を求める ODBC ドライバー ダイアログ ボックスを表示しない場合は <strong>True</strong>、表示する場合は <strong>False</strong> に設定します。 silent に<strong>True</strong>が設定されている場合、属性に必要なドライバー固有の情報がすべて含まれている必要があります。または、ダイアログボックスが表示されます。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>属性</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>String</strong></p></td>
-<td><p>Windows レジストリに追加するキーワードの一覧です。キーワードは、改行で区切られた文字列として指定します。</p></td>
+<td><p>Windows レジストリに追加するキーワードの一覧です。 キーワードは、改行で区切られた文字列として指定します。</p></td>
 </tr>
 </tbody>
 </table>

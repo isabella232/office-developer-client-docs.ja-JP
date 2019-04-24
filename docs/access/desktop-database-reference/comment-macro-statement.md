@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 7e18bb9ecb65e2664b082d5305196386c536b716
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296109"
 ---
 # <a name="comment-macro-statement"></a>Comment マクロ ステートメント
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **Comment** ステートメントを使用して、マクロに説明コメントを指定できます。
 

@@ -1,5 +1,5 @@
 ---
-title: ワークスぺース コレクション (DAO)
+title: Workspaces コレクション (DAO)
 TOCTitle: Workspaces Collection
 ms:assetid: 88b851ce-4180-964f-582e-bc9571bf554c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197057(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4c615be9e92a936486c15377514c2b695f68bb5b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308324"
 ---
-# <a name="workspaces-collection-dao"></a>ワークスぺース コレクション (DAO)
+# <a name="workspaces-collection-dao"></a>Workspaces コレクション (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **Workspaces** コレクションには、 **DBEngine** オブジェクトの、表示されているアクティブなすべての **Workspace** オブジェクトが含まれます。非表示の **Workspace** オブジェクトはコレクションに追加されず、割り当てられている変数によって参照されます。
 
@@ -25,17 +25,17 @@ ms.locfileid: "28698415"
 
 **Workspace** オブジェクトを使用して、現在のセッションを管理するか別のセッションを開始します。
 
-最初を参照してくださいか、**ワークスペース**オブジェクトを使用して、DBEngine.Workspaces(0)、既定のワークスペースを自動的に作成します。 既定のワークスペースの**名前**と**ユーザー名**のプロパティの設定は、"\#既定のワークスぺース\#」と「Admin」に、それぞれ。 セキュリティが有効になっている場合、 **UserName** プロパティの設定はログオンしたユーザーの名前になります。
+**workspace**オブジェクトを最初に参照するか、または使用すると、既定のワークスぺース (0) が自動的に作成されます。 既定のワークスペースの**名前**および**UserName**プロパティの設定は、それぞれ\#"default\#workspace" および "Admin" です。 セキュリティが有効になっている場合、 **UserName** プロパティの設定はログオンしたユーザーの名前になります。
 
 [**CreateWorkspace**](dbengine-createworkspace-method-dao.md) メソッドを使用すると、新しい **Workspace** オブジェクトを作成できます。新しい **Workspace** オブジェクトを作成した後、それを **Workspaces** コレクションから参照する必要がある場合は、オブジェクトを **Workspaces** コレクションに追加する必要があります。ただし、新しく作成した **Workspace** オブジェクトは、 **Workspaces** コレクションに追加せずに使用することもできます。
 
 コレクション内の **Workspace** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。
 
-**DBEngine**。**ワークスペース**(0)
+**DBEngine**。**ワークスペース**.0
 
 **DBEngine**。**ワークスペース**("name")
 
-**DBEngine**。**ワークスペース**\!\[名\]
+**DBEngine**。**ワークスペース**\! \[名前\]
 
 
 > [!NOTE]

@@ -1,5 +1,5 @@
 ---
-title: Field2.IsComplex プロパティ (DAO)
+title: Field2 プロパティ (DAO)
 TOCTitle: IsComplex Property
 ms:assetid: ffc90e6e-e3ee-4f9b-ca6b-615199300d45
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837318(v=office.15)
@@ -8,33 +8,33 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d24229a0fc3122cc8a9fb20b041fc9fadc5ccb0a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292784"
 ---
-# <a name="field2iscomplex-property-dao"></a>Field2.IsComplex プロパティ (DAO)
+# <a name="field2iscomplex-property-dao"></a>Field2 プロパティ (DAO)
 
-**適用されます**Access 2013、Office 2013。 
+**適用先:** Access 2013、Office 2013 
 
-指定されたフィールドが複数値データ型かどうかを示すブール型 ( **Boolean**) の値を返します。値の取得および設定が可能です。
+指定されたフィールドが複数値データ型かどうかを示すブール型 ( **Boolean**) の値を返します。 値の取得および設定が可能です。
 
 ## <a name="version-information"></a>バージョン情報
 
-追加バージョン: Access 2007
+追加されたバージョン: Access 2007
 
 ## <a name="syntax"></a>構文
 
-*式*です。IsComplex
+*式*。IsComplex
 
-*式***Field2**オブジェクトを表す変数です。
+*式***Field2**オブジェクトを表す変数を取得します。
 
 ## <a name="example"></a>例
 
 次の例は、複数値フィールドが含まれる Recordset 内を移動する方法を示します。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     Sub PrintStudentsAndClasses()

@@ -1,5 +1,5 @@
 ---
-title: Field2.Expression プロパティ (DAO)
+title: "\"Field2/式\" プロパティ (DAO)"
 TOCTitle: Expression Property
 ms:assetid: 8ae9db2c-7460-5bfc-0dc4-3f87e5ab30ff
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197109(v=office.15)
@@ -8,27 +8,27 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 603dfaa9a54ddfe769b96a57b790b4657abbeb14
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292819"
 ---
-# <a name="field2expression-property-dao"></a>Field2.Expression プロパティ (DAO)
+# <a name="field2expression-property-dao"></a>"Field2/式" プロパティ (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-演算フィールドの数式を表す式式を取得または設定します。値の取得および設定が可能です。文字列型 ( **String** ) の値を使用します。
+集計フィールドの数式を表す式を取得または設定します。 値の取得と設定が可能な文字列型 (**String**) の値です。
 
 ## <a name="version-information"></a>バージョン情報
 
-追加バージョン: Access 2010
+追加されたバージョン: Access 2010
 
 ## <a name="syntax"></a>構文
 
-*式*です。式
+*式*。表現
 
-*式***Field2**オブジェクトを表す変数です。
+*式***Field2**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
@@ -42,7 +42,7 @@ Access 2013 では、値を計算するテーブル フィールドを作成で�
 
 次の例は、集計フィールドを作成する方法を示します。 CreateField メソッドで、" **FullName**" という名前のフィールドを作成します。次に、 Expression プロパティを、フィールドの値を計算する式に設定します。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     Sub CreateCalculatedField()

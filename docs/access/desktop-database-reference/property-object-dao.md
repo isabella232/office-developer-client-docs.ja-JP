@@ -1,5 +1,5 @@
 ---
-title: プロパティ オブジェクト (DAO)
+title: Property オブジェクト (DAO)
 TOCTitle: Property Object
 ms:assetid: a1ecb0db-bb93-a7b5-23c3-0b73f275dfe0
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff820932(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e26bc59221b4ff55c943b6a9a0c87ac5c0dd936b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301191"
 ---
-# <a name="property-object-dao"></a>プロパティ オブジェクト (DAO)
+# <a name="property-object-dao"></a>Property オブジェクト (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **Property** オブジェクトは、DAO オブジェクトの組み込みまたはユーザー定義の特性を表します。
 
@@ -30,14 +30,14 @@ ms.locfileid: "28718820"
 
 - **QueryDef** オブジェクトおよび **TableDef** オブジェクトの **Fields** コレクションの **Field** オブジェクト
 
-ユーザー定義のプロパティを追加するには、一意の**名前**プロパティの設定値を持つ**プロパティ**オブジェクトを作成するのには、 **CreateProperty**メソッドを使用します。 **プロパティ**新しいオブジェクトの**型**と**値**のプロパティを設定し、適切なオブジェクトの**Properties**コレクションに追加します。 ユーザー定義のプロパティを追加するオブジェクトは、コレクションに既に追加されて必要があります。 **Properties** コレクションに追加されていないユーザー定義の **Property** オブジェクトを参照したり、ユーザー定義の **Property** オブジェクトが含まれる **Properties** コレクションに、そのオブジェクトと同じ名前の **Property** オブジェクトを追加したりしようとすると、エラーが発生します。
+To add a user-defined property, use the **CreateProperty** method to create a **Property** object with a unique **Name** property setting. Set the **Type** and **Value** properties of the new **Property** object, and then append it to the **Properties** collection of the appropriate object. The object to which you are adding the user-defined property must already be appended to a collection. Referencing a user-defined **Property** object that has not yet been appended to a **Properties** collection will cause an error, as will appending a user-defined **Property** object to a **Properties** collection containing a **Property** object of the same name.
 
 **Properties** コレクションからユーザー定義のプロパティを削除することはできますが、組み込みプロパティは削除できません。
 
 > [!NOTE]
 > [!メモ] ユーザー定義の **Property** オブジェクトは、1 つのオブジェクトの特定のインスタンスにのみ関連付けられます。プロパティは、選択した種類のオブジェクトのすべてのインスタンスに定義されるわけではありません。
 
-オブジェクトの **Properties** コレクションを使用して、オブジェクトの組み込みおよびユーザー定義のプロパティを列挙することができます。この操作を行うために、既存のプロパティの種類や属性 (**Name** プロパティや **Type** プロパティ) をあらかじめ知っている必要はありません。ただし、値の取得のみ可能なプロパティ (**Workspace** オブジェクトの **Password** プロパティなど) の読み取り、または不適切なコンテキストでのプロパティの読み取り/書き込み (**TableDef** オブジェクトの **Fields** コレクションの **Field** オブジェクトの **Value** プロパティの設定など) を実行しようとすると、エラーが発生します。
+オブジェクトの **Properties** コレクションを使用して、オブジェクトの組み込みおよびユーザー定義のプロパティを列挙することができます。 この操作を行うために、既存のプロパティの種類や属性 (**Name** プロパティや **Type** プロパティ) をあらかじめ知っている必要はありません。 ただし、値の取得のみ可能なプロパティ ( **Workspace** オブジェクトの **Password** プロパティなど) の読み取り、または不適切なコンテキストでのプロパティの読み取り/書き込み ( **TableDef** オブジェクトの **Fields** コレクションの **Field** オブジェクトの **Value** プロパティの設定など) を実行しようとすると、エラーが発生します。
 
 **Property** オブジェクトには、次の 4 つの組み込みプロパティもあります。
 
@@ -51,18 +51,18 @@ ms.locfileid: "28718820"
 
 コレクション内の組み込みの **Property** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。
 
-- * オブジェクト ***。プロパティ**(0)
+- * object ***.プロパティ**(0)
 
-- *オブジェクト ***。プロパティ**("* 名 *")
+- *オブジェクト ***。プロパティ**("* name *")
 
-- *オブジェクト ***。プロパティ**\!* 名 *\]
+- *オブジェクト ***。** プロパティ\!* 名 *\]
 
 組み込みプロパティの場合、次の構文を使用することもできます。
 
-- *オブジェクト*です。*名*
+- *オブジェクト*。*名前*
 
 > [!NOTE]
-> ユーザー定義のプロパティでは、使用してください、フル*オブジェクト ***。プロパティ**("* 名 *") の構文です。
+> ユーザー定義のプロパティの場合は、完全なオブジェクト * を使用する必要があり***ます。プロパティ**("* name *") の構文。
 
 同じ構文を使って、 **Property** オブジェクトの **Value** プロパティを参照することもできます。 **Property** オブジェクト自身と **Property** オブジェクトの **Value** プロパティのいずれを参照するかは、参照のコンテキストで決まります。
 

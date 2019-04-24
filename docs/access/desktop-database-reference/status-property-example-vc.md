@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 5d54ad7f92e7be635dc52be9912f348d67587d31
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308513"
 ---
 # <a name="status-property-example-vc"></a>Status プロパティの使用例 (VC++)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 この例では、[Status](status-property-ado-recordset.md) プロパティを使用して、一括更新の前にバッチ処理で変更されたレコードを表示します。
 
@@ -210,7 +210,7 @@ void PrintComError(_com_error &e)
 // EndStatusCpp 
 ```
 
-**StatusX.h**
+**statusx .h**
 
 ```cpp 
  

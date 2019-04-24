@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: fe61a3368813ba3420920909f818beee2029d993
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308681"
 ---
 # <a name="setmenuitem-macro-action"></a>SetMenuItem マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**SetMenuItem**アクションを使用すると、[**アドイン**] タブで、カスタムまたはグローバル メニューのメニュー項目の (有効または無効になっている、選択または選択されていない場合) の状態を設定します。
+You can use the **SetMenuItem** action to set the state of menu items (enabled or disabled, selected or unselected) on custom or global menus on the **Add-Ins** tab.
 
 > [!NOTE]
-> **SetMenuItem**アクションは、メニュー マクロで作成されたユーザー設定とグローバルのメニューでのみ動作します。 **SetMenuItem**アクションは、以前のバージョンとの互換性のための Microsoft Access に含まれます。 コマンド バーの機能は動作しません。 ただしを無効にするまたは有効にする選択するか、ショートカット メニュー上の項目の選択を解除するのには、Visual Basic for Applications (VBA) モジュールのプロパティを**有効に**し、**状態**またはユーザー設定やグローバル メニューを使用することができます。
+> The **SetMenuItem** action works only with custom and global menus created by using menu macros. The **SetMenuItem** action is included in Microsoft Access only for compatibility with previous versions. It does not work with the command bar functionality. However, you can use the **Enabled** and **State** properties in a Visual Basic for Applications (VBA) module to disable or enable and select or unselect items on shortcut menus or custom or global menus.
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**SetMenuItem**アクションには、次の引数があります。
+"SetMenuItem/メニューの設定" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -45,15 +45,15 @@ ms.locfileid: "28709426"
 <tbody>
 <tr class="odd">
 <td><p><strong>Menu Index/メニュー インデックス</strong></p></td>
-<td><p>状態を設定するコマンドを含むメニューのインデックス。 カスタム メニューまたはグローバル メニューのメニューのインデックスを表す 0 から始まる整数値を入力します。 マクロ ビルダー] ウィンドウの<strong>メニューの [インデックス</strong>] ボックス [<strong>アクションの引数</strong>] セクションで、インデックスの値を入力します。 インデックスは、メニュー マクロに、カスタム メニューまたはグローバル メニュー (このメニューの<strong>メニューの追加</strong>アクション] メニューの 0 から数えた位置) のメニューの位置を基準にしています。 メニュー マクロで条件式を使用するにはカスタム メニュー項目を表示または非表示にするため、メニューの表示が若干異なる可能性があります。 この引数は省略できません。 場合はこの引数でメニューを選択し、<strong>インデックスのコマンド</strong>や<strong>サブコマンドのインデックス</strong>の引数を空白のままにするを有効にしたり、メニュー名自体を無効にできます。 ただし、選択または (アクセスを無視する] メニューの [名前の<strong>フラグ</strong>引数の設定<strong>を確認</strong>し<strong>をオフにします</strong>)] メニューの [名前の選択を解除することはできません。</p></td>
+<td><p>状態を設定するコマンドを含むメニューのインデックスを指定します。 ユーザー設定またはグローバルメニューの目的のメニューのインデックスとして、0から始まる整数値を入力します。 [マクロビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションで、 <strong>[メニューインデックス</strong>] ボックスにインデックス値を入力します。 インデックスは、ユーザー設定またはグローバルメニューのメニューマクロにおけるメニューの位置を基準にしたものです (メニューマクロのこのメニューの " <strong>AddMenu</strong> /メニューの設定" アクションの0からカウント)。 メニューの表示は、メニューマクロで条件式を使用してユーザー設定メニュー項目を表示または非表示にできるため、多少異なる場合があります。 この引数は省略できません。 この引数でメニューを選択し、"Command Index/コマンド インデックス" 引数と "Subcommand Index/サブコマンド インデックス" 引数を空白にすると、メニュー名自体を有効または無効にすることができます。 ただし、メニュー名のチェックマークを付けたり外したりすることはできません (Access では、メニュー名の "Flag/フラグ" 引数の [チェックマーク表示] と [チェックマーク非表示] の設定は無視されます)。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Command Index/コマンド インデックス</strong></p></td>
-<td><p>状態を設定するコマンドのインデックス。 <strong>メニュー インデックス</strong>の引数で選択したメニューで目的のコマンドのインデックスを表す 0 から始まる整数値を入力します。 インデックスは、カスタム メニューまたはグローバル メニュー (0 から数えて、マクロ グループ内のこのコマンドのマクロの位置) を選択したメニューを定義するマクロ グループにおける対象コマンドの位置を基準にしています。 メニューのマクロ グループで条件式を使用するにはカスタム メニュー コマンドを表示または非表示にするため、メニューの表示が若干異なる可能性があります。</p></td>
+<td><p>状態を設定するコマンドのインデックスを指定します。"Menu Index/メニュー インデックス" 引数で選択したメニューの該当コマンドのインデックスとして 0 以上の整数値を入力します。インデックスは、ユーザー設定のメニューやグローバル メニューで選択したメニューを定義するマクロ グループにおけるコマンドの位置 (マクロ グループ内でのコマンドのマクロを示す 0 から数えた位置) を基準としています。メニューのマクロ グループで条件式を使用するとユーザー設定のメニュー コマンドの表示と非表示を切り替えることができるため、メニューの表示は多少異なる場合があります。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Subcommand Index/サブコマンド インデックス</strong></p></td>
-<td><p>状態を設定するサブコマンドのインデックス。 これは、目的のコマンドにサブメニューがある場合にのみ適用されます。 <strong>コマンド インデックス</strong>引数で選択したサブメニューのサブコマンドのインデックスを表す 0 から始まる整数値を入力します。 インデックスは、カスタム メニューまたはグローバル メニュー (0 から数えて、マクロ グループ内のこのサブコマンドのマクロの位置) を選択したサブメニューを定義するマクロ グループにおける対象サブコマンドの位置を基準にしています。</p></td>
+<td><p>状態を設定するサブコマンドのインデックスを指定します。これが適用されるのは、目的のコマンドにサブメニューが含まれる場合のみです。"Command Index/コマンド インデックス" 引数で選択したサブメニューの該当サブコマンドのインデックスとして 0 以上の整数値を入力します。インデックスは、ユーザー設定のメニューやグローバル メニューで選択したサブメニューを定義するマクロ グループにおけるサブコマンドの位置 (マクロ グループ内でのサブコマンドのマクロを示す 0 から数えた位置) を基準としています。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Flag</strong></p></td>
@@ -63,11 +63,11 @@ ms.locfileid: "28709426"
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**SetMenuItem**アクションは、カスタム メニューまたはグローバル メニューに対してのみ機能します。 作業中のウィンドウは、カスタム メニューまたはグローバル メニューを持たない場合は、 **SetMenuItem**アクションを含むマクロを実行すると実行時エラーが発生します。
+The **SetMenuItem** action works only on a custom or global menu. If the active window does not have a custom or global menu, running a macro containing the **SetMenuItem** action causes a run-time error.
 
 このアクションを使用すると、メニュー コマンドおよびサブコマンドの状態は設定できますが、サブコマンドのサブコマンドの状態は設定できません。
 
-**SetMenuItem**アクションを Visual Basic for Applications (VBA) のモジュールで実行するには、 **DoCmd**オブジェクトの**SetMenuItem**メソッドを使用します。
+To run the **SetMenuItem** action in a Visual Basic for Applications (VBA) module, use the **SetMenuItem** method of the **DoCmd** object.
 

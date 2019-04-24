@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8cc5153d851a4dc17ef690421d1080ddf91fc3bf
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292476"
 ---
 # <a name="filter-property-ado"></a>Filter プロパティ (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [Recordset](recordset-object-ado.md) のデータに対するフィルターを示します。
 
-## <a name="settings-and-return-values"></a>設定値および戻り値
+## <a name="settings-and-return-values"></a>設定値と戻り値
 
 次の中の 1 つを含む、バリアント型 ( **Variant** ) の値を設定または取得します。
 
@@ -31,17 +31,17 @@ ms.locfileid: "28701803"
 
   - [FilterGroupEnum](filtergroupenum.md) 値。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**Filter** プロパティは、 **Recordset** オブジェクト内のレコードを選別するために使います。フィルター処理後の **Recordset** が現在のカーソルになります。 [AbsolutePosition](absoluteposition-property-ado.md)、[AbsolutePage](absolutepage-property-ado.md)、[RecordCount](recordcount-property-ado.md)、[PageCount](pagecount-property-ado.md) などの、現在のカーソルに基づいて値を返すその他のプロパティが影響を受けます。これは、 **Filter** プロパティを特定の値に設定すると、カレント レコードが新しい値を満たす最初のレコードに移動するからです。
+**Filter** プロパティは、**Recordset** オブジェクト内のレコードを選別するために使います。フィルター処理後の **Recordset** が現在のカーソルになります。[AbsolutePosition](absoluteposition-property-ado.md)、[AbsolutePage](absolutepage-property-ado.md)、[RecordCount](recordcount-property-ado.md)、[PageCount](pagecount-property-ado.md) などの、現在のカーソルに基づいて値を返すその他のプロパティが影響を受けます。これは、**Filter** プロパティを特定の値に設定すると、カレント レコードが新しい値を満たす最初のレコードに移動するからです。
 
-抽出条件文字列で構成されるフォーム*フィールド名-演算子-値*の句の (たとえば、"[氏名] = 'Smith'")。 個々 の句を**AND**で連結することにより複合句を作成することができます (など"[氏名] = 'Smith' AND FirstName = 'John'") または**OR** (など」)。 複合句を作成するには個々 の句を**AND**で連結することにより (など"[氏名] = 'Smith' AND FirstName = 'John'") または**OR** (など」[氏名] = 'Smith' または [氏名] = 'Jones'")。 検索条件文字列を指定する際は、次の点に注意してください。
+条件文字列は、"*フィールド名-演算子-値*" という形式の句で構成されます (たとえば、"LastName = ' Smith '")。 複合句を作成するには、 **and** (たとえば、"LastName = ' Smith ' と FirstName = ' John '") また**は**(たとえば、") を使用して個別の句を連結します。 複合句を作成するには、 **and** (たとえば、"lastname = ' smith ' と FirstName = ' John '") また**は or** (たとえば、"lastname = ' smith ' or LastName = ' Jones '") を使用して、個別の句を連結します。 検索条件文字列を指定する際は、次の点に注意してください。
 
-  - *フィールド名*は、**レコード セット**からの有効なフィールド名である必要があります。 フィールド名にスペースを含める場合は、名前を角かっこで囲みます。
+  - *FieldName* には、**Recordset** の有効なフィールド名を指定する必要があります。フィールド名にスペースを含める場合は、名前を角かっこで囲みます。
 
-  - *演算子*は、次のいずれかである必要があります: \<、 \>、 \<= \>= \< \>、=、または**のような**。
+  - *Operator*に\<は、、 \>、 \<=、 \>=、 \< \>、=、または**LIKE**のいずれかを指定する必要があります。
 
-  - *値*は、フィールドの値を比較する値 (たとえば、'Smith' \#8/24/95\#、12.345、または $50.00)。 文字列に単一引用符を使用し、シャープ記号 (\#) の日付にします。 数値の場合、小数点、ドル記号、および指数表記を使用できます。 **ような***演算子*がある場合、*値*は、ワイルドカードを使用できます。 アスタリスクのみ (\*) し、パーセント記号 (%)、ワイルドカードを使用し、文字列の最後の文字にする必要があります。 *値*を null にすることはできません。
+  - *value*は、フィールド値を比較する値 (たとえば、' Smith '、 \#8/24/95\#、12.345、$50.00) です。 文字列とシャープ記号 (\#) と日付を使用して、単一引用符を使用します。 数値の場合、小数点、ドル記号、および指数表記を使用できます。 *Operator*が**LIKE**の場合、 *Value*はワイルドカードを使用できます。 アスタリスク (\*) とパーセント記号 (%) のみワイルドカードを使用でき、文字列内の最後の文字である必要があります。 *Value* に Null を指定することはできません。
 
     > [!NOTE]
     > [!メモ] フィルターの "値" に単一引用符 (') を含めるには、2 つの単一引用符を使って 1 つの単一引用符を表します。たとえば、O'Malley にフィルターを設定するには、条件文字列は、"col1 = 'O''Malley'" とします。フィルター値の先頭と末尾に単一引用符を含めるには、シャープ記号 (#) で文字列を囲みます。たとえば、'1' にフィルターを設定するには、条件文字列を "col1 = #'1'#" とします。
@@ -50,7 +50,7 @@ ms.locfileid: "28701803"
 
   - この場合は、フィルターを次のように構成します。
 
-  - **LIKE**句では、先頭と末尾、パターンのワイルドカードを使用できます (たとえば、[氏名] のような '\*mit\*')、またはパターンの末尾にのみ (たとえば、[氏名] のような' Smit\*')。
+  - **LIKE**句では、パターンの先頭と末尾 (たとえば、lastname like '\*mit\*') でワイルドカードを使用できます。また、パターンの最後 (たとえば、lastname like ' Smit\*') でのみワイルドカードを使用できます。
 
 フィルター定数を使うと、一括更新モードでレコード間に競合が発生した場合でも、たとえば最後の [UpdateBatch](updatebatch-method-ado.md) メソッドの呼び出しで変更されたレコードだけを表示するなどの方法で、簡単に競合を解消できます。
 
@@ -62,7 +62,7 @@ ms.locfileid: "28701803"
 
 [Filter](bookmark-property-ado.md) プロパティで使用する配列を作成するときに使用するブックマーク値については、 **Bookmark** プロパティを参照してください。
 
-**フィルター**の抽出条件の文字列形式でのみ (例:"受注日" \> ' 12/31/1999 ') 保存された**レコード セット**の内容に影響を与えます。 **Bookmark** の配列または **FilterGroupEnum** の値を使用して作成された **Filter** は、永続化された Recordset の内容に影響しません。 これらの規則は、クライアント側カーソルまたはサーバー側カーソルで作成された **Recordset** にも当てはまります。
+条件**** 文字列の形式 (たとえば、OrderDate \> ' 12/31/1999 ') のフィルターのみが、永続化された**Recordset**の内容に影響します。 **Bookmark** の配列または **FilterGroupEnum** の値を使用して作成された **Filter** は、永続化された Recordset の内容に影響しません。 これらの規則は、クライアント側カーソルまたはサーバー側カーソルで作成された **Recordset** にも当てはまります。
 
 > [!NOTE]
 > [!メモ] 単一キー テーブルのキー フィールドを基にしてフィルタリングが行われ、キー フィールド値に変更が加えられた場合、 **adFilterPendingRecords** フラグをフィルター処理および変更された **Recordset** に一括更新モードで適用すると、結果の **Recordset** は空になります。次のいずれかの条件が満たされる場合は、空ではない **Recordset** が得られます。
@@ -100,12 +100,12 @@ ms.locfileid: "28701803"
 <td><p>単一キー</p></td>
 <td><p>+</p></td>
 <td><p>-</p></td>
-<td><p>N/A</p></td>
+<td><p>該当なし</p></td>
 </tr>
 <tr class="odd">
 <td><p>複数キー</p></td>
 <td><p>+</p></td>
-<td><p>該当なし</p></td>
+<td><p>N/A</p></td>
 <td><p>+</p></td>
 </tr>
 </tbody>

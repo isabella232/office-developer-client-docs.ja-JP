@@ -1,5 +1,5 @@
 ---
-title: Database.QueryTimeout プロパティ (DAO)
+title: データベースプロパティ (DAO)
 TOCTitle: QueryTimeout Property
 ms:assetid: c83ca852-715a-c853-429b-80a15c3fc39b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff823170(v=office.15)
@@ -8,25 +8,25 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f47d6c51079bf36cb7e1ca596a3476f1a7219c5d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294739"
 ---
-# <a name="databasequerytimeout-property-dao"></a>Database.QueryTimeout プロパティ (DAO)
+# <a name="databasequerytimeout-property-dao"></a>データベースプロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
 ODBC データ ソースでクエリが実行される場合の、タイムアウト エラーが発生するまでに待機する秒数を指定する値を設定または取得します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。QueryTimeout
+*式*。QueryTimeout
 
-*式***データベース**オブジェクトを表す変数です。
+*式***Database**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
@@ -38,7 +38,7 @@ Microsoft SQL Server などの ODBC データベースを使用している場�
 
 ## <a name="example"></a>例
 
-この例では、 **ODBCTimeout** プロパティおよび **QueryTimeout** プロパティを使用して、 **Database** オブジェクトの **QueryTimeout** プロパティで、 **Database** オブジェクトから作成された **QueryDef** オブジェクトの **ODBCTimeout** プロパティの既定値を設定する方法を示します。
+この例では、**ODBCTimeout** プロパティおよび **QueryTimeout** プロパティを使用して、**Database** オブジェクトの **QueryTimeout** プロパティで、**Database** オブジェクトから作成された **QueryDef** オブジェクトの **ODBCTimeout** プロパティの既定値を設定する方法を示します。
 
 ```vb 
 Sub ODBCTimeoutX() 

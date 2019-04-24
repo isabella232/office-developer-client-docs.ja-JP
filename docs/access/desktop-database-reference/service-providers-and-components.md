@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 03447b9977c74484eb7455a75fc2255c33c5e4c6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308702"
 ---
 # <a name="service-providers-and-components"></a>サービス プロバイダーとコンポーネント
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 サービス プロバイダーは、データ ストアではネイティブにサポートされていない拡張インターフェイスを実装することにより、データ プロバイダーの機能を拡張するコンポーネントです。
 
-Microsoft Data Access は、低機能のストア上にデータベースの機能、または、「サービス」セットを実装するために専門的な個別のコンポーネントを個別にできるようにするための*コンポーネント アーキテクチャ*を提供します。 したがって、独自の拡張機能の実装を提供するには、各データ ストアやデータベース機能を内部的に実装するために汎用的なアプリケーションを強制することではなくサービス コンポーネントは、一般的な実装であり、任意のアプリケーションことができます。任意のデータ ストアにアクセスするときに使用します。 データ ストアと、汎用コンポーネントを介して、いくつかの機能がネイティブに実装されているという事実は、アプリケーションに対して透過的です。
+Microsoft Data Access は、"コンポーネント アーキテクチャ" を提供することにより、データベース機能の個々の集合である "サービス" を、個別の専門化したコンポーネントが低機能のストアに対して実装できるようにします。つまりサービス コンポーネントにより、各データ ストアが拡張機能を独自に実装したり、汎用アプリケーションがデータベース機能を内部的に実装したりする必要がなくなり、データ ストアへのアクセス時にすべてのアプリケーションが使用できる共通の実装が提供されます。データ ストアによってネイティブで実装される機能と、汎用コンポーネントを介して実装される機能があることを、アプリケーションが意識することはありません。
 
 たとえば、Microsoft Cursor Service for OLE DB のようなカーソル エンジンは、前方のみの順次データ ストアのデータを使用して、スクロール可能なデータを生成するサービス コンポーネントです。通常 ADO で使用されるその他のサービス プロバイダーには、Microsoft OLE DB Persistence Provider (ファイルへのデータの保存用)、Microsoft Data Shaping Service for OLE DB (階層 **Recordsets** 用)、および Microsoft OLE DB Remoting Provider (リモート コンピューターでのデータ プロバイダーの呼び出し用) があります。
 

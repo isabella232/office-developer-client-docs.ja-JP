@@ -1,5 +1,5 @@
 ---
-title: Field.FieldSize プロパティ (DAO)
+title: "\"FieldSize/フィールドサイズ\" プロパティ (DAO)"
 TOCTitle: FieldSize Property
 ms:assetid: c81bd5cb-6b7c-5390-2d6b-049143f2f3b6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff823165(v=office.15)
@@ -8,25 +8,25 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 68a1b354b27515dd855703b9bf6344e4a9e90d7b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293113"
 ---
-# <a name="fieldfieldsize-property-dao"></a>Field.FieldSize プロパティ (DAO)
+# <a name="fieldfieldsize-property-dao"></a>"FieldSize/フィールドサイズ" プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
 **[Recordset](field-object-dao.md)** オブジェクトの **[Fields](fields-collection-dao.md)** コレクション内にあるメモ型 (Memo) またはロング バイナリ型 (Long Binary) の **[Field](recordset-object-dao.md)** オブジェクトを、メモリではなくデータベースで使用する場合のバイト数を取得します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。フィールド サイズします。
+*式*。"
 
-*式***Field**オブジェクトを表す変数です。
+*式***Field**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
@@ -42,7 +42,7 @@ ms.locfileid: "28712793"
 
   - カーソルレス クエリを使用している (つまり、 **DefaultCursorDriver** プロパティが **dbUseNoCursor** に設定されている) 場合。
 
-**FieldSize**プロパティと、VBA **Len()** 関数または**LenB()** 関数は、同じ文字列の長さと異なる値を返すことがあります。 文字列は、マルチバイトの文字セット (MBCS) のフォームですが、Unicode 形式で VBA を通じて公開されている [Microsoft Access データベースに格納されます。 その結果、 **Len()** 関数は文字数を返します常に、 **lenb 関数**は、常に文字 (Unicode は、文字ごとに 2 バイトを使用) を X 2、数を返しますが、**フィールド サイズ**は文字列を返す場合の間にいくつかの値MBCS 文字があります。 などの 3 つから成る文字列を指定する通常の文字と 2 つの MBCS 文字、 **Len()** を返す 5、 **LenB()** は 10 を返します、**フィールド サイズ**は 7 では、それぞれ通常の文字と MBCS 文字ごとに 2 の 1 の合計を返します
+The **FieldSize** property and the VBA **Len()** or **LenB()** functions may return different values as the length of the same string. Strings are stored in a Microsoft Access database in multi-byte character set (MBCS) form, but exposed through VBA in Unicode format. As a result, the **Len()** function will always return the number of characters, **LenB** will always return the number of characters X 2 (Unicode uses two bytes for each character), but **FieldSize** will return some value in between if the string has any MBCS characters. For example, given a string consisting of three normal characters and two MBCS characters, **Len()** will return 5, **LenB()** will return 10, and **FieldSize** will return 7, the sum of 1 for each normal character and 2 for each MBCS character.
 
 ## <a name="example"></a>例
 

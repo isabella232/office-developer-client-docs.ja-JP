@@ -1,5 +1,5 @@
 ---
-title: DBEngine.DefaultPassword プロパティ (DAO)
+title: DBEngine password プロパティ (DAO)
 TOCTitle: DefaultPassword Property
 ms:assetid: 189e34f3-d573-c75f-8be2-d98c50df8a52
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845616(v=office.15)
@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 72e73d29129c749d5479e2c7b17827f13adb4847
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294359"
 ---
-# <a name="dbenginedefaultpassword-property-dao"></a>DBEngine.DefaultPassword プロパティ (DAO)
+# <a name="dbenginedefaultpassword-property-dao"></a>DBEngine password プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-既定の **Workspace** を作成するために初期化時に使用されるパスワードを設定します。値の取得および設定が可能です。文字列型 ( **String**) の値を使用します。
+初期化されたときに、既定の**Workspace**オブジェクトを作成するために使用するパスワードを設定します。 値の取得および設定が可能です。
 
 ## <a name="syntax"></a>構文
 
-*式*です。DefaultPassword
+*式*。DefaultPassword
 
-*式***DBEngine**オブジェクトを表す変数です。
+*式***DBEngine**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
@@ -37,7 +37,7 @@ ms.locfileid: "28704736"
 
 既定では、 **DefaultUser** プロパティは "admin" に設定され、 **DefaultPassword** プロパティは長さが 0 の文字列 ("") に設定されます。
 
-通常は、CreateWorkspace メソッドを使用して、任意のユーザー名とパスワードを持つ Workspace オブジェクトを作成します。ただし、以前のバージョンとの互換性を保つため、およびセキュリティで保護されたデータベースを実装しない場合に便宜を図るために、Workspace オブジェクトがまだ開いていなければ、必要に応じて既定の Workspace オブジェクトが自動的に作成されます。この場合、DefaultUser プロパティと DefaultPassword プロパティの値により、既定の Workspace オブジェクトのユーザーとパスワードが定義されます。
+Typically, you use the **CreateWorkspace** method to create a **Workspace** object with a given user name and password. However, for backward compatibility with earlier versions and for convenience when you don't implement a secured database, the Microsoft Access database engine automatically creates a default **Workspace** object when needed if one isn't already open. In this case, the **DefaultUser** and **DefaultPassword** property values define the user and password for the default **Workspace** object.
 
 このプロパティを有効にするには、DAO メソッドを呼び出す前に設定する必要があります。
 

@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c378ba722af1266cf7e68c60d52592059ef45ce4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308457"
 ---
 # <a name="supports-method-example-vc"></a>Supports メソッドの使用例 (VC++)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 この例は、[Supports](supports-method-ado.md) メソッドを使用して、各種カーソルで開かれたレコードセットによりサポートされるオプションを表示します。この例を実行するには、DisplaySupport 関数が必要です。
 

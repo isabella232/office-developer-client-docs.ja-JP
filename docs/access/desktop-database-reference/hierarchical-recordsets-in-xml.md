@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e0aafaa1f7f49d34d647ec0f733e68de21cb5369
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292014"
 ---
-# <a name="hierarchical-recordsets-in-xml"></a>XML の階層 Recordset
+# <a name="hierarchical-recordsets-in-xml"></a>XML での階層レコードセット
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-## <a name="hierarchical-recordsets-in-xml"></a>XML での階層レコードセット
+## <a name="hierarchical-recordsets-in-xml"></a>XML の階層 Recordset
 
 ADO では、階層構造の **Recordset** オブジェクトを XML で保存できます。階層構造の **Recordset** オブジェクトでは、親 **Recordset** のフィールドの値が、別の **Recordset** になります。このようなフィールドは、XML ストリームでは、属性ではなく子要素として表されます。次の例は、このような状態を示しています。
 

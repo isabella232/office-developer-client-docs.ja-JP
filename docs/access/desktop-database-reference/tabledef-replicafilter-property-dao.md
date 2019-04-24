@@ -1,5 +1,5 @@
 ---
-title: TableDef.ReplicaFilter プロパティ (DAO)
+title: ReplicaFilter プロパティ (DAO)
 TOCTitle: ReplicaFilter Property
 ms:assetid: f44273de-2b6a-750f-cb7c-12c3ac2da503
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836681(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: ba296701faebb32696741a742b7fe01660b74c46
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302787"
 ---
-# <a name="tabledefreplicafilter-property-dao"></a>TableDef.ReplicaFilter プロパティ (DAO)
+# <a name="tabledefreplicafilter-property-dao"></a>ReplicaFilter プロパティ (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 フル レプリカのレコードのどの部分を該当するテーブルにレプリケートするかを示す、部分レプリカ内の **[TableDef](tabledef-object-dao.md)** オブジェクトの値を設定または取得します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。ReplicaFilter
+*式*。ReplicaFilter
 
-*式***テーブル定義**オブジェクトを表す変数です。
+*式***TableDef**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 

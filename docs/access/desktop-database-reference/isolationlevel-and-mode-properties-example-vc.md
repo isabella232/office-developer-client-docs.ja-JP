@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2963ff5f8c8e791da8405a41884cbfa4f7ab54b2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291198"
 ---
 # <a name="isolationlevel-and-mode-properties-example-vc"></a>IsolationLevel プロパティと Mode プロパティの使用例 (VC++)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 この例では、[Mode](mode-property-ado.md) プロパティを使って排他的接続を開き、 [IsolationLevel](isolationlevel-property-ado.md) プロパティを使って他のトランザクションから独立したトランザクションを開きます。
 
@@ -256,7 +256,7 @@ void PrintComError(_com_error &e)
 // EndIsolationLevelCpp 
 ```
 
-**IsolationLevelX.h**
+**IsolationLevelX**
 
 ```cpp 
  

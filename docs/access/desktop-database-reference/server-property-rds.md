@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4f35910591d86e0e5a2b92d680be3c5f64504088
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308688"
 ---
 # <a name="server-property-rds"></a>Server プロパティ (RDS)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 インターネット インフォメーション サービス (IIS) 名および通信プロトコルを示します。
 
@@ -26,7 +26,7 @@ ms.locfileid: "28710350"
 
 |プロトコル|デザイン時の構文|
 |:-------|:-----------------|
-|HTTP|`<PARAM NAME="Server" VALUE="https://awebsrvr:port">`|
+|プロトコル|`<PARAM NAME="Server" VALUE="https://awebsrvr:port">`|
 |HTTPS|`<PARAM NAME="Server" VALUE="https://awebsrvr:port">`|
 |DCOM|`<PARAM NAME="Server" VALUE="computername">`|
 |インプロセス|`<PARAM NAME="Server" VALUE="">`|
@@ -34,7 +34,7 @@ ms.locfileid: "28710350"
 
 |プロトコル|実行時の構文|
 |:-------|:--------------|
-|HTTP|`DataControl.Server="https://awebsrvr:port"`|
+|プロトコル|`DataControl.Server="https://awebsrvr:port"`|
 |HTTPS|`DataControl.Server="https://awebsrvr:port"`|
 |DCOM|`DataControl.Server="computername"`|
 |インプロセス|`DataControl.Server=""`|
@@ -44,11 +44,11 @@ ms.locfileid: "28710350"
 
 |パラメーター|説明|
 |:--------|:----------|
-|*awebsrvr*または*コンピューター名* |サーバーがリモート コンピューター上にある場合は、インターネット パス、イントラネット パス、またはコンピューター名を含む文字列型 ( **String** ) の値。サーバーがローカル コンピューター上にある場合は空の文字列。|
-|*port* |省略可能。 IIS サーバーへの接続に使用されるポートです。 Internet Explorer で、ポート番号を設定 ([**ツール**] メニューで、 **[インターネット オプション**] をクリックし、[**接続**] タブを選択し、) または IIS で。|
-|*DataControl* |**RDS.DataControl** オブジェクトを表すオブジェクト変数を指定します。|
+|*awebsrvr* または *computername* |サーバーがリモート コンピューター上にある場合は、インターネット パス、イントラネット パス、またはコンピューター名を含む文字列型 (**String**) の値。サーバーがローカル コンピューター上にある場合は空の文字列。|
+|*port* |Optional. A port that is used to connect to an IIS server. The port number is set in Internet Explorer (on the **Tools** menu, click **Internet Options**, and then select the **Connection** tab) or in IIS.|
+|*DataControl* |**RDS.DataControl** オブジェクトを表すオブジェクト変数。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 サーバーは、 **RDS.DataControl** 要求 (クエリまたは更新) が処理される場所です。 既定では、すべての要求は指定されたサーバー上の [RDSServer.DataFactory](datafactory-object-rdsserver.md) オブジェクト、 [MSDFMAP.Handler](datafactory-customization.md) コンポーネント、および [MSDFMAP.INI](understanding-the-customization-file.md) ファイルによって処理されます。 
 

@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 8b90af8d1cda073ffa37022bb5db5e8cf8e3b978
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306707"
 ---
 # <a name="requery-macro-action"></a>Requery マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**アクション**を使用すると、コントロールのソースを再クエリ アクティブ オブジェクトの指定されたコントロール内のデータを更新します。 コントロールを指定しない場合は、オブジェクト自体のソースを再クエリします。 アクティブ オブジェクトやそのコントロールの表示データを最新のものにするには、このアクションを使います。
+You can use the **Requery** action to update the data in a specified control on the active object by requerying the source of the control. If no control is specified, this action requeries the source of the object itself. Use this action to ensure that the active object or one of its controls displays the most current data.
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**アクション**には、次の引数があります。
+"Requery/再クエリ" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -41,23 +41,23 @@ ms.locfileid: "28705989"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>コントロール名</strong></p></td>
-<td><p>更新するコントロールの名前。 [マクロ ビルダー] ウィンドウの [<strong>コントロール名</strong>] ボックス、[<strong>アクションの引数</strong>] セクションで、コントロールの名前を入力します。 完全修飾識別子ではなく、コントロールの名前だけを使用する必要があります (<strong>フォーム</strong>!<em>formname</em>!<em>controlname</em>)。 この引数はアクティブ オブジェクトのソースを再クエリするのには空白のままにします。 アクティブ オブジェクトがデータシートまたはクエリの結果のかどうか、設定する必要がありますこの引数を指定しません。</p></td>
+<td><p><strong>Control Name/コントロール名</strong></p></td>
+<td><p>更新するコントロールの名前を指定します。 [マクロビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>コントロール名</strong>] ボックスに、コントロール名を入力します。 完全修飾識別子ではなく、コントロールの名前のみを使用する必要があります ( <strong>Forms</strong>! など)。<em>formname</em>!<em>controlname</em>) アクティブオブジェクトのソースを再クエリするには、この引数を指定しないでください。 アクティブオブジェクトがデータシートまたはクエリの結果セットの場合は、この引数を指定しないでください。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**再クエリ**アクションは、次のいずれかを行います。
+"Requery/再クエリ" アクションは、次のいずれかの処理を行います。
 
 - 指定したコントロールやオブジェクトの基になるクエリの再実行。
 
 - コントロールやオブジェクトの基になるテーブルで追加、変更、または削除されたレコードの反映。
 
 > [!NOTE]
-> **再クエリ**アクションは、レコード ポインターの位置には影響しません。
+> The **Requery** action does not affect the position of the record pointer.
 
 クエリやテーブルに基づくコントロールには次のようなものがあります。
 
@@ -71,10 +71,10 @@ ms.locfileid: "28705989"
 
 指定されたコントロールがクエリまたはテーブルに基づいていない場合、このアクションによってコントロールの再計算が実行されます。
 
-"Control Name/コントロール名" 引数を指定しない場合、"Requery/再クエリ" アクションの動作は、オブジェクトにフォーカスがあるときに Shift キーを押しながら F9 キーを押した場合と同じです。サブフォーム コントロールにフォーカスがある場合は、そのサブフォームのソースのみが再クエリされます (この動作も、Shift キーを押しながら F9 キーを押した場合と同じです)。
+If you leave the **Control Name** argument blank, the **Requery** action has the same effect as pressing SHIFT+F9 when the object has the focus. If a subform control has the focus, this action requeries only the source of the subform (just as pressing SHIFT+F9 does).
 
 > [!NOTE]
-> コントロールやオブジェクトのソースを再**クエリを再実行**します。 対照的に、 **RepaintObject**アクションは、指定したオブジェクト内のコントロールを再描画がしないデータベースの再クエリを実行または新しいレコードを表示します。 **解除**だけでなく、アクティブなオブジェクトを再クエリが、**アクション**の操作を行いますが、適用されたフィルターが削除されます。
+> The **Requery** action requeries the source of the control or object. In contrast, the **RepaintObject** action repaints controls in the specified object but doesn't requery the database or display new records. The **ShowAllRecords** action not only requeries the active object, but it also removes any applied filters, which the **Requery** action doesn't do.
 
-アクティブ オブジェクトにないコントロールを再クエリする場合は、**アクション**または**DoCmd**オブジェクトの対応する、 **Requery**メソッドではない、(VBA) モジュールの Visual Basic for Applications の**Requery**メソッドを使用する必要があります。 **Requery**メソッドを VBA では、**アクション**または**DoCmd.Requery**メソッドよりも高速です。 さらに、**アクション**または**DoCmd.Requery**メソッドを使用すると、Microsoft Access クエリを閉じるし、データベースから再読み込みしていますが、アクセスが終了して、再読み込みすることがなくクエリを再度実行、 **Requery**メソッドを使用する場合。 ActiveX データ オブジェクト (ADO) の**Requery**メソッドが、Access の**Requery**メソッドと同じように動作する注意してください。
+If you want to requery a control that isn't on the active object, you must use the **Requery** method in a Visual Basic for Applications (VBA) module, not the **Requery** action or its corresponding **Requery** method of the **DoCmd** object. The **Requery** method in VBA is faster than the **Requery** action or the **DoCmd.Requery** method. In addition, when you use the **Requery** action or the **DoCmd.Requery** method, Microsoft Access closes the query and reloads it from the database, but when you use the **Requery** method, Access reruns the query without closing and reloading it. ActiveX データオブジェクト (ADO) **requery**メソッドは、Access **requery**メソッドと同じように動作します。
 

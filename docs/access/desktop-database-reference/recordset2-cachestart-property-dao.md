@@ -1,5 +1,5 @@
 ---
-title: Recordset2.CacheStart プロパティ (DAO)
+title: Recordset2 start プロパティ (DAO)
 TOCTitle: CacheStart Property
 ms:assetid: 2e9c2b0d-b382-e4d6-9406-ace0e538a7b7
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192239(v=office.15)
@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e6f68cc9704d7dafe7a1d779b338294c9d5fc1c8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307421"
 ---
-# <a name="recordset2cachestart-property-dao"></a>Recordset2.CacheStart プロパティ (DAO)
+# <a name="recordset2cachestart-property-dao"></a>Recordset2 start プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ODBC データ ソースからローカルでキャッシュされるデータを含むダイナセット タイプの Recordset オブジェクトの最初のレコードのブックマークを指定する値を設定または取得します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。CacheStart
+*式*。CacheStart
 
-*式***Recordset2**オブジェクトを表す変数です。
+*式***Recordset2**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 

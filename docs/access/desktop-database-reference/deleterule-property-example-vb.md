@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 02e0ab742a49408c3bd68b9e48d1ce52aeed82cc
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293974"
 ---
 # <a name="deleterule-property-example-vb"></a>DeleteRule プロパティの使用例 (VB)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ここでは、[Key](deleterule-property-adox.md) オブジェクトの [DeleteRule](key-object-adox.md) プロパティの使用例を示します。このコードでは、新しい [Table オブジェクト](table-object-adox.md) を追加して新しい主キーを定義し、 **DeleteRule** を **adRICascade** に設定します。
 

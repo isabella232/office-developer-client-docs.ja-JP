@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: dae5718e7b4cb609cb50bd65ee6e2486f4ebaab6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294030"
 ---
 # <a name="deleteobject-macro-action"></a>DeleteObject マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **DeleteObject** アクションを使用すると、指定したデータベース オブジェクトを削除できます。
 
 > [!NOTE]
 > [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>設定値
 
 **DeleteObject** アクションの引数は次のとおりです。
 
@@ -57,7 +57,7 @@ ms.locfileid: "28700095"
 > [!WARNING]
 > [!注意] [ **オブジェクトの種類** ] ボックスと [ **オブジェクト名** ] ボックスに値を指定しない場合、 **DeleteObject** アクションでは、ナビゲーション ウィンドウで選択したオブジェクトが削除されますが、削除を確認するメッセージは表示されません。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **DeleteObject** アクションを使って、マクロの実行中に一時的に作成したオブジェクトを削除できます。たとえば、 **OpenQuery** アクションを使用してテーブル作成クエリを実行し、一時的なテーブルを作成したとします。この一時的なテーブルは、使用し終わったら、 **DeleteObject** アクションを使用して削除できます。
 
