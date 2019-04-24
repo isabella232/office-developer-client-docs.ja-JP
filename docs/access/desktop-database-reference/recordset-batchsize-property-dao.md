@@ -1,5 +1,5 @@
 ---
-title: Recordset.BatchSize プロパティ (DAO)
+title: Recordset プロパティ (DAO)
 TOCTitle: BatchSize Property
 ms:assetid: f03dc505-682f-4b60-62f2-1bd088d873c4
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836544(v=office.15)
@@ -12,30 +12,30 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 7693f89f07413772ea961a61c86e9c5448c4c449
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300666"
 ---
-# <a name="recordsetbatchsize-property-dao"></a><span data-ttu-id="dad53-102">Recordset.BatchSize プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="dad53-102">Recordset.BatchSize property (DAO)</span></span>
+# <a name="recordsetbatchsize-property-dao"></a><span data-ttu-id="2117f-102">Recordset プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="2117f-102">Recordset.BatchSize property (DAO)</span></span>
 
 
-<span data-ttu-id="dad53-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="dad53-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="2117f-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="2117f-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="dad53-104">構文</span><span class="sxs-lookup"><span data-stu-id="dad53-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="2117f-104">構文</span><span class="sxs-lookup"><span data-stu-id="2117f-104">Syntax</span></span>
 
-<span data-ttu-id="dad53-105">*式*です。BatchSize</span><span class="sxs-lookup"><span data-stu-id="dad53-105">*expression* .BatchSize</span></span>
+<span data-ttu-id="2117f-105">*式*。BatchSize</span><span class="sxs-lookup"><span data-stu-id="2117f-105">*expression* .BatchSize</span></span>
 
-<span data-ttu-id="dad53-106">\*式\***レコード セット**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="dad53-106">*expression* A variable that represents a **Recordset** object.</span></span>
+<span data-ttu-id="2117f-106">\*式\***Recordset**オブジェクトを表す変数を取得します。</span><span class="sxs-lookup"><span data-stu-id="2117f-106">*expression* A variable that represents a **Recordset** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="dad53-107">注釈</span><span class="sxs-lookup"><span data-stu-id="dad53-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2117f-107">注釈</span><span class="sxs-lookup"><span data-stu-id="2117f-107">Remarks</span></span>
 
-<span data-ttu-id="dad53-p101">**BatchSize** プロパティは、バッチ更新でステートメントをサーバーに送信するときに使用されるバッチ サイズを決定します。このプロパティの値は、1 つのコマンド バッファーでサーバーに送信されるステートメントの数を決定します。既定では、各バッチで 15 個のステートメントがサーバーに送信されます。このプロパティはいつでも変更できます。データベース サーバーがステートメントのバッチ処理をサポートしていない場合、このプロパティを 1 に設定すると、各ステートメントが個別に送信されます。</span><span class="sxs-lookup"><span data-stu-id="dad53-p101">The **BatchSize** property determines the batch size used when sending statements to the server in a batch update. The value of the property determines the number of statements sent to the server in one command buffer. By default, 15 statements are sent to the server in each batch. This property can be changed at any time. If a database server doesn't support statement batching, you can set this property to 1, causing each statement to be sent separately.</span></span>
+<span data-ttu-id="2117f-p101">**BatchSize** プロパティを使用すると、一括更新でサーバーにステートメントを送信するときに使用するバッチ サイズを指定できます。このプロパティの値によって、1 つのコマンド バッファーでサーバーに送信されるステートメントの数が決まります。既定では、それぞれのバッチで 15 ステートメントがサーバーに送信されます。このプロパティはいつでも変更できます。データベース サーバーがステートメントのバッチ処理をサポートしていない場合、このプロパティを 1 に設定すると、それぞれのステートメントを個別に送信できます。</span><span class="sxs-lookup"><span data-stu-id="2117f-p101">The **BatchSize** property determines the batch size used when sending statements to the server in a batch update. The value of the property determines the number of statements sent to the server in one command buffer. By default, 15 statements are sent to the server in each batch. This property can be changed at any time. If a database server doesn't support statement batching, you can set this property to 1, causing each statement to be sent separately.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dad53-113">例</span><span class="sxs-lookup"><span data-stu-id="dad53-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2117f-113">例</span><span class="sxs-lookup"><span data-stu-id="2117f-113">Example</span></span>
 
-<span data-ttu-id="dad53-114">次の使用例は、 **BatchSize** プロパティおよび **UpdateOptions** プロパティを使用して、指定した Recordset オブジェクトの任意のバッチ更新の環境を制御します。</span><span class="sxs-lookup"><span data-stu-id="dad53-114">This example uses the **BatchSize** and **UpdateOptions** properties to control aspects of any batch updating for the specified Recordset object.</span></span>
+<span data-ttu-id="2117f-114">この例では、 **BatchSize** プロパティおよび **UpdateOptions** プロパティを使用して、指定した Recordset オブジェクトに対する一括更新の要素を制御します。</span><span class="sxs-lookup"><span data-stu-id="2117f-114">This example uses the **BatchSize** and **UpdateOptions** properties to control aspects of any batch updating for the specified Recordset object.</span></span>
 
 ```vb 
 Sub BatchSizeX() 

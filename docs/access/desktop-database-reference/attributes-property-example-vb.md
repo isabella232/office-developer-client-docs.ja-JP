@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4d324ae976693e635222d2b8d4b4d4571c182fa6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296956"
 ---
-# <a name="attributes-property-example-vb"></a><span data-ttu-id="c1ecb-102">Attributes プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="c1ecb-102">Attributes property example (VB)</span></span>
+# <a name="attributes-property-example-vb"></a><span data-ttu-id="8b3ca-102">Attributes プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="8b3ca-102">Attributes property example (VB)</span></span>
 
 
-<span data-ttu-id="c1ecb-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="c1ecb-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="8b3ca-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="8b3ca-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="c1ecb-p101">ここでは、[Column](attributes-property-adox.md) の [Attributes](column-object-adox.md) プロパティの使用例を示します。このプロパティを **adColNullable** に設定すると、 [Recordset](recordset-object-ado.md)[Field](field-object-ado.md) の値に空の文字列を設定できるようになります。この状態で、ユーザーはデータが認識されていないレコードとデータが適用されていないレコードを区別できます。</span><span class="sxs-lookup"><span data-stu-id="c1ecb-p101">This example demonstrates the [Attributes](attributes-property-adox.md) property of a [Column](column-object-adox.md). Setting it to **adColNullable** allows the user to set the value of a [Recordset](recordset-object-ado.md)[Field](field-object-ado.md) to an empty string. In this situation, the user can distinguish between a record where data is not known and a record where the data does not apply.</span></span>
+<span data-ttu-id="8b3ca-p101">ここでは、[Column](attributes-property-adox.md) の [Attributes](column-object-adox.md) プロパティの使用例を示します。このプロパティを **adColNullable** に設定すると、 [Recordset](recordset-object-ado.md)[Field](field-object-ado.md) の値に空の文字列を設定できるようになります。この状態で、ユーザーはデータが認識されていないレコードとデータが適用されていないレコードを区別できます。</span><span class="sxs-lookup"><span data-stu-id="8b3ca-p101">This example demonstrates the [Attributes](attributes-property-adox.md) property of a [Column](column-object-adox.md). Setting it to **adColNullable** allows the user to set the value of a [Recordset](recordset-object-ado.md)[Field](field-object-ado.md) to an empty string. In this situation, the user can distinguish between a record where data is not known and a record where the data does not apply.</span></span>
 
 ```vb 
  

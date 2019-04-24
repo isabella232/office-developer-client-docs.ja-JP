@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 488e37f53218a7dabfa6248ea1da7630f82818a6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291470"
 ---
-# <a name="indexnulls-property-example-vb"></a><span data-ttu-id="8ddfb-102">IndexNulls プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="8ddfb-102">IndexNulls property example (VB)</span></span>
+# <a name="indexnulls-property-example-vb"></a><span data-ttu-id="ceb5a-102">IndexNulls プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="ceb5a-102">IndexNulls property example (VB)</span></span>
 
-<span data-ttu-id="8ddfb-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="8ddfb-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="ceb5a-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="ceb5a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="8ddfb-104">この例では、[Index](indexnulls-property-adox.md) の [IndexNulls](index-object-adox.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="8ddfb-104">This example demonstrates the [IndexNulls](indexnulls-property-adox.md) property of an [Index](index-object-adox.md).</span></span> <span data-ttu-id="8ddfb-105">このコードでは、新規インデックスが作成され、ユーザーが List1 という名前のリスト ボックスに入力した内容に基づいて **IndexNulls** の値が設定されます。</span><span class="sxs-lookup"><span data-stu-id="8ddfb-105">The code creates a new index and sets the value of **IndexNulls** based on user input (from a list box named List1).</span></span> <span data-ttu-id="8ddfb-106">次に、**インデックス**は、 *Northwind* [カタログ](catalog-object-adox.md)の [**社員**][テーブル](table-object-adox.md)に追加されます。</span><span class="sxs-lookup"><span data-stu-id="8ddfb-106">Then, the **Index** is appended to the **Employees** [Table](table-object-adox.md) in the *Northwind* [Catalog](catalog-object-adox.md).</span></span> <span data-ttu-id="8ddfb-107">新しい **Index** が [Employees](recordset-object-ado.md) テーブルに基づいて **Recordset** に適用され、 **Recordset** が開きます。</span><span class="sxs-lookup"><span data-stu-id="8ddfb-107">The new **Index** is applied to a [Recordset](recordset-object-ado.md) based on the **Employees** table, and the **Recordset** is opened.</span></span> <span data-ttu-id="8ddfb-108">新しいレコードが **Employees** テーブルに追加され、 **Null** 値がインデックス フィールドに入ります。</span><span class="sxs-lookup"><span data-stu-id="8ddfb-108">A new record is added to the **Employees** table, with a **Null** value in the indexed field.</span></span> <span data-ttu-id="8ddfb-109">この新しいレコードが表示されるかどうかは、 **IndexNulls** プロパティの設定によって決まります。</span><span class="sxs-lookup"><span data-stu-id="8ddfb-109">Whether this new record is displayed depends on the setting of the **IndexNulls** property.</span></span>
+<span data-ttu-id="ceb5a-104">この例では、[Index](indexnulls-property-adox.md) の [IndexNulls](index-object-adox.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="ceb5a-104">This example demonstrates the [IndexNulls](indexnulls-property-adox.md) property of an [Index](index-object-adox.md).</span></span> <span data-ttu-id="ceb5a-105">このコードでは、新規インデックスが作成され、ユーザーが List1 という名前のリスト ボックスに入力した内容に基づいて **IndexNulls** の値が設定されます。</span><span class="sxs-lookup"><span data-stu-id="ceb5a-105">The code creates a new index and sets the value of **IndexNulls** based on user input (from a list box named List1).</span></span> <span data-ttu-id="ceb5a-106">その後、**インデックス**は*Northwind* [カタログ](catalog-object-adox.md)の**Employees** [テーブル](table-object-adox.md)に追加されます。</span><span class="sxs-lookup"><span data-stu-id="ceb5a-106">Then, the **Index** is appended to the **Employees** [Table](table-object-adox.md) in the *Northwind* [Catalog](catalog-object-adox.md).</span></span> <span data-ttu-id="ceb5a-107">新しい **Index** が [Employees](recordset-object-ado.md) テーブルに基づいて **Recordset** に適用され、 **Recordset** が開きます。</span><span class="sxs-lookup"><span data-stu-id="ceb5a-107">The new **Index** is applied to a [Recordset](recordset-object-ado.md) based on the **Employees** table, and the **Recordset** is opened.</span></span> <span data-ttu-id="ceb5a-108">新しいレコードが **Employees** テーブルに追加され、 **Null** 値がインデックス フィールドに入ります。</span><span class="sxs-lookup"><span data-stu-id="ceb5a-108">A new record is added to the **Employees** table, with a **Null** value in the indexed field.</span></span> <span data-ttu-id="ceb5a-109">この新しいレコードが表示されるかどうかは、 **IndexNulls** プロパティの設定によって決まります。</span><span class="sxs-lookup"><span data-stu-id="ceb5a-109">Whether this new record is displayed depends on the setting of the **IndexNulls** property.</span></span>
 
 ```vb
     ' IndexNullsVB 

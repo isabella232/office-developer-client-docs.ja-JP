@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1fa0ca559c63e1786f55607d94b45f3cc01503dc
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28719219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294023"
 ---
-# <a name="deleterecord-and-moverecord-methods-example-vb"></a><span data-ttu-id="0da69-102">DeleteRecord メソッドと MoveRecord メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="0da69-102">DeleteRecord and MoveRecord methods example (VB)</span></span>
+# <a name="deleterecord-and-moverecord-methods-example-vb"></a><span data-ttu-id="44ca8-102">DeleteRecord メソッドと MoveRecord メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="44ca8-102">DeleteRecord and MoveRecord methods example (VB)</span></span>
 
 
-<span data-ttu-id="0da69-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="0da69-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="44ca8-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="44ca8-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="0da69-104">この例では、コピー、移動、編集、および web フォルダーに公開するテキスト ファイルの内容を削除する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="0da69-104">This example demonstrates how to copy, move, edit, and delete the contents of a text file published to a web folder.</span></span> <span data-ttu-id="0da69-105">[GetChildren](getchildren-method-ado.md)、 [ParentURL](parenturl-property-ado.md)、[ソース](source-property-ado-record.md)、および[フラッシュ](flush-method-ado.md)その他のプロパティとメソッドが含まれます。</span><span class="sxs-lookup"><span data-stu-id="0da69-105">Other properties and methods used include [GetChildren](getchildren-method-ado.md), [ParentURL](parenturl-property-ado.md), [Source](source-property-ado-record.md), and [Flush](flush-method-ado.md).</span></span>
+<span data-ttu-id="44ca8-104">この例では、web フォルダーに発行されたテキストファイルの内容をコピー、移動、編集、および削除する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="44ca8-104">This example demonstrates how to copy, move, edit, and delete the contents of a text file published to a web folder.</span></span> <span data-ttu-id="44ca8-105">[GetChildren](getchildren-method-ado.md)、[ParentURL](parenturl-property-ado.md)、[Source](source-property-ado-record.md)、[Flush](flush-method-ado.md) などの他のプロパティおよびメソッドも示されています。</span><span class="sxs-lookup"><span data-stu-id="44ca8-105">Other properties and methods used include [GetChildren](getchildren-method-ado.md), [ParentURL](parenturl-property-ado.md), [Source](source-property-ado-record.md), and [Flush](flush-method-ado.md).</span></span>
 
 ```vb 
  

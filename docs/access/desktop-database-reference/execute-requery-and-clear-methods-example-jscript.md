@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0556c40823facf5bdddbbe67874d6417b416674e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293260"
 ---
-# <a name="execute-requery-and-clear-methods-example-jscript"></a><span data-ttu-id="0ed66-102">Execute メソッド、Requery メソッド、Clear メソッドの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="0ed66-102">Execute, Requery, and Clear methods example (JScript)</span></span>
+# <a name="execute-requery-and-clear-methods-example-jscript"></a><span data-ttu-id="ff5ef-102">Execute メソッド、Requery メソッド、Clear メソッドの使用例 (JScript)</span><span class="sxs-lookup"><span data-stu-id="ff5ef-102">Execute, Requery, and Clear methods example (JScript)</span></span>
 
 
-<span data-ttu-id="0ed66-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="0ed66-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="ff5ef-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="ff5ef-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="0ed66-p101">この例では、**Command** オブジェクトの [Execute](command-object-ado.md) メソッドを実行する場合と [Connection](connection-object-ado.md) オブジェクトの [Execute](requery-method-ado.md) メソッドを実行する場合を示します。また、 [Requery](recordset-object-ado.md) メソッドを使用して [Recordset](clear-method-ado.md) 内の最新のデータを取得し、 [Clear](errors-collection-ado.md) メソッドを使用して **Errors** コレクションの内容をクリアします ( **Errors** コレクションには、 [Recordset](activeconnection-property-ado.md) の [ActiveConnection](recordset-object-ado.md) プロパティの **Connection** オブジェクトからアクセスします)。このファイルに "ExecuteJS.asp" という名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="0ed66-p101">This example demonstrates the **Execute** method when run from both a [Command](command-object-ado.md) object and a [Connection](connection-object-ado.md) object. It also uses the [Requery](requery-method-ado.md) method to retrieve current data in a [Recordset](recordset-object-ado.md), and the [Clear](clear-method-ado.md) method to clear the contents of the [Errors](errors-collection-ado.md) collection. (The **Errors** collection is accessed via the **Connection** object of the [ActiveConnection](activeconnection-property-ado.md) property of the [Recordset](recordset-object-ado.md).) Name the file **ExecuteJS.asp**.</span></span>
+<span data-ttu-id="ff5ef-p101">この例では、**Command** オブジェクトの [Execute](command-object-ado.md) メソッドを実行する場合と [Connection](connection-object-ado.md) オブジェクトの [Execute](requery-method-ado.md) メソッドを実行する場合を示します。また、 [Requery](recordset-object-ado.md) メソッドを使用して [Recordset](clear-method-ado.md) 内の最新のデータを取得し、 [Clear](errors-collection-ado.md) メソッドを使用して **Errors** コレクションの内容をクリアします ( **Errors** コレクションには、 [Recordset](activeconnection-property-ado.md) の [ActiveConnection](recordset-object-ado.md) プロパティの **Connection** オブジェクトからアクセスします)。このファイルに "ExecuteJS.asp" という名前を付けます。</span><span class="sxs-lookup"><span data-stu-id="ff5ef-p101">This example demonstrates the **Execute** method when run from both a [Command](command-object-ado.md) object and a [Connection](connection-object-ado.md) object. It also uses the [Requery](requery-method-ado.md) method to retrieve current data in a [Recordset](recordset-object-ado.md), and the [Clear](clear-method-ado.md) method to clear the contents of the [Errors](errors-collection-ado.md) collection. (The **Errors** collection is accessed via the **Connection** object of the [ActiveConnection](activeconnection-property-ado.md) property of the [Recordset](recordset-object-ado.md).) Name the file **ExecuteJS.asp**.</span></span>
 
 ```javascript 
  

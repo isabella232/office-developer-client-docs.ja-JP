@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ac0009940b3c7917db82db38d604ef6d16712953
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301429"
 ---
-# <a name="prepared-property-example-vc"></a><span data-ttu-id="817e0-102">Prepared プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="817e0-102">Prepared property example (VC++)</span></span>
+# <a name="prepared-property-example-vc"></a><span data-ttu-id="29df9-102">Prepared プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="29df9-102">Prepared property example (VC++)</span></span>
 
 
-<span data-ttu-id="817e0-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="817e0-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="29df9-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="29df9-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="817e0-104">この例では、準備済みのバージョンと準備されていないバージョンの 2 つの [Command](prepared-property-ado.md) オブジェクトを開くことによって、 [Prepared](command-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="817e0-104">This example demonstrates the [Prepared](prepared-property-ado.md) property by opening two [Command](command-object-ado.md) objects — one prepared and one not prepared.</span></span>
+<span data-ttu-id="29df9-104">この例では、準備済みのバージョンと準備されていないバージョンの 2 つの [Command](prepared-property-ado.md) オブジェクトを開くことによって、 [Prepared](command-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="29df9-104">This example demonstrates the [Prepared](prepared-property-ado.md) property by opening two [Command](command-object-ado.md) objects — one prepared and one not prepared.</span></span>
 
 ```cpp 
  

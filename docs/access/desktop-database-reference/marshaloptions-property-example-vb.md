@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a9b7790e74234ccd185f838aa4df069046f0bfde
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289743"
 ---
-# <a name="marshaloptions-property-example-vb"></a><span data-ttu-id="080e5-102">MarshalOptions プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="080e5-102">MarshalOptions property example (VB)</span></span>
+# <a name="marshaloptions-property-example-vb"></a><span data-ttu-id="02f70-102">MarshalOptions プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="02f70-102">MarshalOptions property example (VB)</span></span>
 
 
-<span data-ttu-id="080e5-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="080e5-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="02f70-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="02f70-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="080e5-104">この例では、[MarshalOptions](marshaloptions-property-ado.md) プロパティを使って、サーバーに送り返される行 (すべての行または修正された行のみ) を指定します。</span><span class="sxs-lookup"><span data-stu-id="080e5-104">This example uses the [MarshalOptions](marshaloptions-property-ado.md) property to specify what rows are sent back to the server — All Rows or only Modified Rows.</span></span>
+<span data-ttu-id="02f70-104">この例では、[MarshalOptions](marshaloptions-property-ado.md) プロパティを使って、サーバーに送り返される行 (すべての行または修正された行のみ) を指定します。</span><span class="sxs-lookup"><span data-stu-id="02f70-104">This example uses the [MarshalOptions](marshaloptions-property-ado.md) property to specify what rows are sent back to the server — All Rows or only Modified Rows.</span></span>
 
 ```vb 
  

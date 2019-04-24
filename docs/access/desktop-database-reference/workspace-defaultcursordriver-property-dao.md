@@ -1,5 +1,5 @@
 ---
-title: Workspace.DefaultCursorDriver プロパティ (DAO)
+title: Workspace. defaultカーソルドライバープロパティ (DAO)
 TOCTitle: DefaultCursorDriver Property
 ms:assetid: 15a8356d-7ae0-3c8e-fbb7-2d8ad6d9a582
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845499(v=office.15)
@@ -12,33 +12,33 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 73567aae9bc332c7113f9128dedc1e2cc8893cab
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32305930"
 ---
-# <a name="workspacedefaultcursordriver-property-dao"></a><span data-ttu-id="908de-102">Workspace.DefaultCursorDriver プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="908de-102">Workspace.DefaultCursorDriver property (DAO)</span></span>
+# <a name="workspacedefaultcursordriver-property-dao"></a><span data-ttu-id="27380-102">Workspace. defaultカーソルドライバープロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="27380-102">Workspace.DefaultCursorDriver property (DAO)</span></span>
 
 
-<span data-ttu-id="908de-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="908de-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="27380-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="27380-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-## <a name="syntax"></a><span data-ttu-id="908de-104">構文</span><span class="sxs-lookup"><span data-stu-id="908de-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="27380-104">構文</span><span class="sxs-lookup"><span data-stu-id="27380-104">Syntax</span></span>
 
-<span data-ttu-id="908de-105">*式*です。DefaultCursorDriver</span><span class="sxs-lookup"><span data-stu-id="908de-105">*expression* .DefaultCursorDriver</span></span>
+<span data-ttu-id="27380-105">*式*。DefaultCursorDriver</span><span class="sxs-lookup"><span data-stu-id="27380-105">*expression* .DefaultCursorDriver</span></span>
 
-<span data-ttu-id="908de-106">\*式\***ワークスペース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="908de-106">*expression* A variable that represents a **Workspace** object.</span></span>
+<span data-ttu-id="27380-106">\*式\***Workspace**オブジェクトを表す変数を取得します。</span><span class="sxs-lookup"><span data-stu-id="27380-106">*expression* A variable that represents a **Workspace** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="908de-107">注釈</span><span class="sxs-lookup"><span data-stu-id="908de-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="27380-107">注釈</span><span class="sxs-lookup"><span data-stu-id="27380-107">Remarks</span></span>
 
-<span data-ttu-id="908de-108">設定値または戻り値は、 **[CursorDriverEnum](cursordriverenum-enumeration-dao.md)** クラスの定数のいずれかに設定できます。</span><span class="sxs-lookup"><span data-stu-id="908de-108">The setting or return value can be set to one of the **[CursorDriverEnum](cursordriverenum-enumeration-dao.md)** constants.</span></span>
+<span data-ttu-id="27380-108">設定値または戻り値は、 **[CursorDriverEnum](cursordriverenum-enumeration-dao.md)** クラスの定数のいずれかに設定できます。</span><span class="sxs-lookup"><span data-stu-id="27380-108">The setting or return value can be set to one of the **[CursorDriverEnum](cursordriverenum-enumeration-dao.md)** constants.</span></span>
 
-<span data-ttu-id="908de-p101">このプロパティの設定値は、プロパティの設定後に確立された接続のみに影響します。 **DefaultCursorDriver** プロパティを変更しても、既存の接続には影響しません。</span><span class="sxs-lookup"><span data-stu-id="908de-p101">This property setting only affects connections established after the property has been set. Changing the **DefaultCursorDriver** property has no effect on existing connections.</span></span>
+<span data-ttu-id="27380-p101">このプロパティの設定値は、プロパティの設定後に確立された接続のみに影響します。 **DefaultCursorDriver** プロパティを変更しても、既存の接続には影響しません。</span><span class="sxs-lookup"><span data-stu-id="27380-p101">This property setting only affects connections established after the property has been set. Changing the **DefaultCursorDriver** property has no effect on existing connections.</span></span>
 
-## <a name="example"></a><span data-ttu-id="908de-111">例</span><span class="sxs-lookup"><span data-stu-id="908de-111">Example</span></span>
+## <a name="example"></a><span data-ttu-id="27380-111">例</span><span class="sxs-lookup"><span data-stu-id="27380-111">Example</span></span>
 
-<span data-ttu-id="908de-p102">次の使用例では、 **NextRecordset** メソッドを使用して、複合 SELECT クエリから返されたデータを表示します。このようなクエリを実行するときは、 **DefaultCursorDriver** プロパティを **dbUseODBCCursor** に設定する必要があります。SELECT ステートメントの一部または全部が 0 件のレコードを返したとしても **NextRecordset** メソッドは **True** を返し、個々の SQL 句をすべて調べた後でのみ **False** を返します。</span><span class="sxs-lookup"><span data-stu-id="908de-p102">This example uses the **NextRecordset** method to view the data from a compound SELECT query. The **DefaultCursorDriver** property must be set to **dbUseODBCCursor** when executing such queries. The **NextRecordset** method will return **True** even if some or all of the SELECT statements return zero records; it will return **False** only after all the individual SQL clauses have been checked.</span></span>
+<span data-ttu-id="27380-p102">次の使用例は、 **NextRecordset** メソッドを使用して、複合 SELECT クエリからのデータを表示します。このようなクエリを実行する場合、 **DefaultCursorDriver** プロパティを **dbUseODBCCursor** に設定する必要があります。 **NextRecordset** メソッドは、一部またはすべての SELECT ステートメントが 0 件のレコードを返す場合でも **True** を返し、 **False** を返すのは、個別の SQL 句をすべて確認した後のみです。</span><span class="sxs-lookup"><span data-stu-id="27380-p102">This example uses the **NextRecordset** method to view the data from a compound SELECT query. The **DefaultCursorDriver** property must be set to **dbUseODBCCursor** when executing such queries. The **NextRecordset** method will return **True** even if some or all of the SELECT statements return zero records; it will return **False** only after all the individual SQL clauses have been checked.</span></span>
 
 ```vb
     Sub NextRecordsetX() 
@@ -95,7 +95,7 @@ ms.locfileid: "28721137"
 
 <br/>
 
-<span data-ttu-id="908de-p103">複合 SQL ステートメントを含むプリペアド ステートメントを作成して、同じ作業を実行することもできます。 **QueryDef** オブジェクトの **CacheSize** プロパティが 1 に設定されていて、 **Recordset** オブジェクトが前方スクロール タイプであり、かつ読み取り専用である必要があります。</span><span class="sxs-lookup"><span data-stu-id="908de-p103">Another way to accomplish the same task would be to create a prepared statement containing the compound SQL statement. The **CacheSize** property of the **QueryDef** object must be set to 1, and the **Recordset** object must be forward-only and read-only.</span></span>
+<span data-ttu-id="27380-p103">複合 SQL ステートメントを含む既成のステートメントを作成して、同じ作業を実行することもできます。 **QueryDef** オブジェクトの **CacheSize** プロパティを 1 に設定し、 **Recordset** オブジェクトが前方のみのタイプで読み取り専用である必要があります。</span><span class="sxs-lookup"><span data-stu-id="27380-p103">Another way to accomplish the same task would be to create a prepared statement containing the compound SQL statement. The **CacheSize** property of the **QueryDef** object must be set to 1, and the **Recordset** object must be forward-only and read-only.</span></span>
 
 ```vb 
 Sub NextRecordsetX2() 
@@ -161,7 +161,7 @@ End Sub
 
 <br/>
 
-<span data-ttu-id="908de-p104">次の使用例は、 **RecordStatus** プロパティおよび **DefaultCursorDriver** プロパティを使用して、バッチ更新中にローカル **Recordset** オブジェクトへの変更が記録される方法を示します。このプロシージャを実行するには、RecordStatusOutput 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="908de-p104">This example uses the **RecordStatus** and **DefaultCursorDriver** properties to show how changes to a local **Recordset** are tracked during batch updating. The RecordStatusOutput function is required for this procedure to run.</span></span>
+<span data-ttu-id="27380-p104">次の使用例は、 **RecordStatus** プロパティおよび **DefaultCursorDriver** プロパティを使用して、バッチ更新中にローカル **Recordset** オブジェクトへの変更が記録される方法を示します。このプロシージャを実行するには、RecordStatusOutput 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="27380-p104">This example uses the **RecordStatus** and **DefaultCursorDriver** properties to show how changes to a local **Recordset** are tracked during batch updating. The RecordStatusOutput function is required for this procedure to run.</span></span>
 
 ```vb 
 Sub RecordStatusX() 

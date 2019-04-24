@@ -1,5 +1,5 @@
 ---
-title: ドキュメント コレクション (DAO)
+title: Documents コレクション (DAO)
 TOCTitle: Documents Collection
 ms:assetid: ae2fef58-34e7-eea6-ca51-d3903432c7f5
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821742(v=office.15)
@@ -8,34 +8,34 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2f6edd02c316fdff3f64b8a09c1504c46c9812a3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293750"
 ---
-# <a name="documents-collection-dao"></a><span data-ttu-id="e0c58-102">ドキュメント コレクション (DAO)</span><span class="sxs-lookup"><span data-stu-id="e0c58-102">Documents collection (DAO)</span></span>
+# <a name="documents-collection-dao"></a><span data-ttu-id="b013c-102">Documents コレクション (DAO)</span><span class="sxs-lookup"><span data-stu-id="b013c-102">Documents collection (DAO)</span></span>
 
 
-<span data-ttu-id="e0c58-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="e0c58-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="b013c-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="b013c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="e0c58-104">**Documents** コレクションには、特定の種類のオブジェクトのすべての **Document** オブジェクトが含まれます。</span><span class="sxs-lookup"><span data-stu-id="e0c58-104">A **Documents** collection contains all of the **Document** objects for a specific type of object (Microsoft Access database engine databases only).</span></span>
+<span data-ttu-id="b013c-104">**Documents** コレクションには、特定の種類のオブジェクトのすべての **Document** オブジェクトが含まれます。</span><span class="sxs-lookup"><span data-stu-id="b013c-104">A **Documents** collection contains all of the **Document** objects for a specific type of object (Microsoft Access database engine databases only).</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="e0c58-105">注釈</span><span class="sxs-lookup"><span data-stu-id="e0c58-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b013c-105">注釈</span><span class="sxs-lookup"><span data-stu-id="b013c-105">Remarks</span></span>
 
-<span data-ttu-id="e0c58-106">各 **Container** オブジェクトには、 **Container** が指定する種類の組み込みオブジェクトのインスタンスを説明する **Document** オブジェクトを含む、 **Documents** コレクションがあります。</span><span class="sxs-lookup"><span data-stu-id="e0c58-106">Each **Container** object has a **Documents** collection containing **Document** objects that describe instances of built-in objects of the type specified by the **Container**.</span></span>
+<span data-ttu-id="b013c-106">各 **Container** オブジェクトには、 **Container** が指定する種類の組み込みオブジェクトのインスタンスを説明する **Document** オブジェクトを含む、 **Documents** コレクションがあります。</span><span class="sxs-lookup"><span data-stu-id="b013c-106">Each **Container** object has a **Documents** collection containing **Document** objects that describe instances of built-in objects of the type specified by the **Container**.</span></span>
 
-<span data-ttu-id="e0c58-107">コレクション内の **Document** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="e0c58-107">To refer to a **Document** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
+<span data-ttu-id="b013c-107">コレクション内の **Document** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="b013c-107">To refer to a **Document** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
 
-  - <span data-ttu-id="e0c58-108">**Documents**(0)</span><span class="sxs-lookup"><span data-stu-id="e0c58-108">**Documents**(0)</span></span>
+  - <span data-ttu-id="b013c-108">**Documents**(0)</span><span class="sxs-lookup"><span data-stu-id="b013c-108">**Documents**(0)</span></span>
 
-  - <span data-ttu-id="e0c58-109">**ドキュメント**(以下「*名前*」)</span><span class="sxs-lookup"><span data-stu-id="e0c58-109">**Documents**("*name*")</span></span>
+  - <span data-ttu-id="b013c-109">**ドキュメント**("*name*")</span><span class="sxs-lookup"><span data-stu-id="b013c-109">**Documents**("*name*")</span></span>
 
-  - <span data-ttu-id="e0c58-110">**ドキュメント**\!\[*名*\]</span><span class="sxs-lookup"><span data-stu-id="e0c58-110">**Documents**\!\[*name*\]</span></span>
+  - <span data-ttu-id="b013c-110">\*\*\*\*\!ドキュメント\[*名*\]</span><span class="sxs-lookup"><span data-stu-id="b013c-110">**Documents**\!\[*name*\]</span></span>
 
-## <a name="example"></a><span data-ttu-id="e0c58-111">例</span><span class="sxs-lookup"><span data-stu-id="e0c58-111">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b013c-111">例</span><span class="sxs-lookup"><span data-stu-id="b013c-111">Example</span></span>
 
-<span data-ttu-id="e0c58-112">この例では、Tables コンテナーの **Documents** コレクションを列挙し、次にコレクションの最初の **Document** オブジェクトの **Properties** コレクションを列挙します。</span><span class="sxs-lookup"><span data-stu-id="e0c58-112">This example enumerates the **Documents** collection of the Tables container, and then enumerates the **Properties** collection of the first **Document** object in the collection.</span></span>
+<span data-ttu-id="b013c-112">この例では、Tables コンテナーの **Documents** コレクションを列挙し、次にコレクションの最初の **Document** オブジェクトの **Properties** コレクションを列挙します。</span><span class="sxs-lookup"><span data-stu-id="b013c-112">This example enumerates the **Documents** collection of the Tables container, and then enumerates the **Properties** collection of the first **Document** object in the collection.</span></span>
 
 ```vb 
 Sub DocumentX() 

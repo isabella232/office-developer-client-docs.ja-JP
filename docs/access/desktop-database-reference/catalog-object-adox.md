@@ -8,28 +8,28 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8cc0237d1419c3aba818d54811f1dbdeeaa441c3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296571"
 ---
-# <a name="catalog-object-adox"></a><span data-ttu-id="b0b85-102">Catalog オブジェクト (ADOX)</span><span class="sxs-lookup"><span data-stu-id="b0b85-102">Catalog object (ADOX)</span></span>
+# <a name="catalog-object-adox"></a><span data-ttu-id="bd905-102">Catalog オブジェクト (ADOX)</span><span class="sxs-lookup"><span data-stu-id="bd905-102">Catalog object (ADOX)</span></span>
 
 
-<span data-ttu-id="b0b85-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="b0b85-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="bd905-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="bd905-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="b0b85-104">データ ソースのスキーマ カタログを表すコレクションを含みます ([Tables](tables-collection-adox.md)、[Views](views-collection-adox.md)、[Users](users-collection-adox.md)、[Groups](groups-collection-adox.md)、および [Procedures](procedures-collection-adox.md))。</span><span class="sxs-lookup"><span data-stu-id="b0b85-104">Contains collections ([Tables](tables-collection-adox.md), [Views](views-collection-adox.md), [Users](users-collection-adox.md), [Groups](groups-collection-adox.md), and [Procedures](procedures-collection-adox.md)) that describe the schema catalog of a data source.</span></span>
+<span data-ttu-id="bd905-104">データ ソースのスキーマ カタログを表すコレクションを含みます ([Tables](tables-collection-adox.md)、[Views](views-collection-adox.md)、[Users](users-collection-adox.md)、[Groups](groups-collection-adox.md)、および [Procedures](procedures-collection-adox.md))。</span><span class="sxs-lookup"><span data-stu-id="bd905-104">Contains collections ([Tables](tables-collection-adox.md), [Views](views-collection-adox.md), [Users](users-collection-adox.md), [Groups](groups-collection-adox.md), and [Procedures](procedures-collection-adox.md)) that describe the schema catalog of a data source.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="b0b85-105">解説</span><span class="sxs-lookup"><span data-stu-id="b0b85-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bd905-105">注釈</span><span class="sxs-lookup"><span data-stu-id="bd905-105">Remarks</span></span>
 
-<span data-ttu-id="b0b85-p101">**Catalog** オブジェクトは、オブジェクトを追加または削除するか、既存のオブジェクトを変更することによって変更できます。すべての **Catalog** オブジェクトをサポートしていないプロバイダーもあり、スキーマ情報の閲覧のみをサポートするプロバイダーもあります。</span><span class="sxs-lookup"><span data-stu-id="b0b85-p101">You can modify the **Catalog** object by adding or removing objects or by modifying existing objects. Some providers may not support all of the **Catalog** objects or may support only viewing schema information.</span></span>
+<span data-ttu-id="bd905-p101">**Catalog** オブジェクトは、オブジェクトを追加または削除するか、既存のオブジェクトを変更することによって変更できます。すべての **Catalog** オブジェクトをサポートしていないプロバイダーもあり、スキーマ情報の閲覧のみをサポートするプロバイダーもあります。</span><span class="sxs-lookup"><span data-stu-id="bd905-p101">You can modify the **Catalog** object by adding or removing objects or by modifying existing objects. Some providers may not support all of the **Catalog** objects or may support only viewing schema information.</span></span>
 
-<span data-ttu-id="b0b85-108">**Catalog** オブジェクトのプロパティとメソッドを使用すると、次の操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="b0b85-108">With the properties and methods of a **Catalog** object, you can:</span></span>
+<span data-ttu-id="bd905-108">**Catalog** オブジェクトのプロパティとメソッドを使用すると、次の操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="bd905-108">With the properties and methods of a **Catalog** object, you can:</span></span>
 
-- <span data-ttu-id="b0b85-109">[ActiveConnection](activeconnection-property-adox.md) プロパティを ADO [Connection](connection-object-ado.md) オブジェクトまたは有効な接続文字列に設定して、カタログを開きます。</span><span class="sxs-lookup"><span data-stu-id="b0b85-109">Open the catalog by setting the [ActiveConnection](activeconnection-property-adox.md) property to an ADO [Connection](connection-object-ado.md) object or a valid connection string.</span></span>
+- <span data-ttu-id="bd905-109">[ActiveConnection](activeconnection-property-adox.md) プロパティを ADO [Connection](connection-object-ado.md) オブジェクトまたは有効な接続文字列に設定して、カタログを開きます。</span><span class="sxs-lookup"><span data-stu-id="bd905-109">Open the catalog by setting the [ActiveConnection](activeconnection-property-adox.md) property to an ADO [Connection](connection-object-ado.md) object or a valid connection string.</span></span>
 
-- <span data-ttu-id="b0b85-110">[Create](create-method-adox.md) メソッドを使用して、新しいカタログを作成します。</span><span class="sxs-lookup"><span data-stu-id="b0b85-110">Create a new catalog with the [Create](create-method-adox.md) method.</span></span>
+- <span data-ttu-id="bd905-110">[Create](create-method-adox.md) メソッドを使用して、新しいカタログを作成します。</span><span class="sxs-lookup"><span data-stu-id="bd905-110">Create a new catalog with the [Create](create-method-adox.md) method.</span></span>
 
-- <span data-ttu-id="b0b85-111">**GetObjectOwner** メソッドと [SetObjectOwner](getobjectowner-method-adox.md) メソッドを使用して、 [Catalog](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox) 内のオブジェクトの所有者を特定します。</span><span class="sxs-lookup"><span data-stu-id="b0b85-111">Determine the owners of the objects in a **Catalog** with the [GetObjectOwner](getobjectowner-method-adox.md) and [SetObjectOwner](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox) methods.</span></span>
+- <span data-ttu-id="bd905-111">**GetObjectOwner** メソッドと [SetObjectOwner](getobjectowner-method-adox.md) メソッドを使用して、 [Catalog](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox) 内のオブジェクトの所有者を特定します。</span><span class="sxs-lookup"><span data-stu-id="bd905-111">Determine the owners of the objects in a **Catalog** with the [GetObjectOwner](getobjectowner-method-adox.md) and [SetObjectOwner](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox) methods.</span></span>
 

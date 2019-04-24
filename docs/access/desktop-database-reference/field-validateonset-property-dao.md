@@ -1,5 +1,5 @@
 ---
-title: Field.ValidateOnSet プロパティ (DAO)
+title: validateonset property プロパティ (DAO)
 TOCTitle: ValidateOnSet Property
 ms:assetid: 00245a8a-a78f-b0a8-3eb3-11dd27873984
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844720(v=office.15)
@@ -12,34 +12,34 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 2d8fb358ab757d826bcfcd335aada8825e3ba980
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292959"
 ---
-# <a name="fieldvalidateonset-property-dao"></a><span data-ttu-id="0b64e-102">Field.ValidateOnSet プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="0b64e-102">Field.ValidateOnSet property (DAO)</span></span>
+# <a name="fieldvalidateonset-property-dao"></a><span data-ttu-id="cdd18-102">validateonset property プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="cdd18-102">Field.ValidateOnSet property (DAO)</span></span>
 
 
-<span data-ttu-id="0b64e-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="0b64e-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="cdd18-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="cdd18-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="0b64e-104">オブジェクトの **[Value](field-object-dao.md)** プロパティの設定時に、 **[Field](field-value-property-dao.md)** オブジェクトの値を直ちに検証するかどうかを指定する値を設定または取得します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="0b64e-104">Sets or returns a value that specifies whether or not the value of a **[Field](field-object-dao.md)** object is immediately validated when the object's **[Value](field-value-property-dao.md)** property is set (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="cdd18-104">オブジェクトの **[Value](field-object-dao.md)** プロパティの設定時に、 **[Field](field-value-property-dao.md)** オブジェクトの値を直ちに検証するかどうかを指定する値を設定または取得します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="cdd18-104">Sets or returns a value that specifies whether or not the value of a **[Field](field-object-dao.md)** object is immediately validated when the object's **[Value](field-value-property-dao.md)** property is set (Microsoft Access workspaces only).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="0b64e-105">構文</span><span class="sxs-lookup"><span data-stu-id="0b64e-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="cdd18-105">構文</span><span class="sxs-lookup"><span data-stu-id="cdd18-105">Syntax</span></span>
 
-<span data-ttu-id="0b64e-106">*式*です。ValidateOnSet</span><span class="sxs-lookup"><span data-stu-id="0b64e-106">*expression* .ValidateOnSet</span></span>
+<span data-ttu-id="cdd18-106">*式*。ValidateOnSet</span><span class="sxs-lookup"><span data-stu-id="cdd18-106">*expression* .ValidateOnSet</span></span>
 
-<span data-ttu-id="0b64e-107">\*式\***Field**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="0b64e-107">*expression* A variable that represents a **Field** object.</span></span>
+<span data-ttu-id="cdd18-107">\*式\***Field**オブジェクトを表す変数を取得します。</span><span class="sxs-lookup"><span data-stu-id="cdd18-107">*expression* A variable that represents a **Field** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="0b64e-108">注釈</span><span class="sxs-lookup"><span data-stu-id="0b64e-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="cdd18-108">注釈</span><span class="sxs-lookup"><span data-stu-id="cdd18-108">Remarks</span></span>
 
-<span data-ttu-id="0b64e-109">[**Recordset**](recordset-object-dao.md) オブジェクト内の **Field** オブジェクトのみ、 **ValidateOnSet** プロパティを値の取得および設定が可能なプロパティとしてサポートします。</span><span class="sxs-lookup"><span data-stu-id="0b64e-109">Only **Field** objects in **[Recordset](recordset-object-dao.md)** objects support the **ValidateOnSet** property as read/write.</span></span>
+<span data-ttu-id="cdd18-109">[**Recordset**](recordset-object-dao.md) オブジェクト内の **Field** オブジェクトのみ、 **ValidateOnSet** プロパティを値の取得および設定が可能なプロパティとしてサポートします。</span><span class="sxs-lookup"><span data-stu-id="cdd18-109">Only **Field** objects in **[Recordset](recordset-object-dao.md)** objects support the **ValidateOnSet** property as read/write.</span></span>
 
-<span data-ttu-id="0b64e-p101">**ValidateOnSet** プロパティを **True** に設定すると、ユーザーが大量のメモ型データを含むレコードを入力するときに便利です。 **[Update](recordset-update-method-dao.md)** 呼び出しによるデータの入力検証を待機すると、別のフィールドでの入力規則の違反によりデータが無効になった場合に、長いメモ型データのデータベースへの書き込みで余分な時間がかかる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="0b64e-p101">Setting the **ValidateOnSet** property to **True** can be useful in a situation when a user is entering records that include substantial Memo data. Waiting until the **[Update](recordset-update-method-dao.md)** call to validate the data can result in unnecessary time spent writing the lengthy Memo data to the database if it turns out that the data was invalid anyway because a validation rule was broken in another field.</span></span>
+<span data-ttu-id="cdd18-p101">**ValidateOnSet** プロパティを **True** に設定すると、ユーザーが大量のメモ型データを含むレコードを入力するときに便利です。 **[Update](recordset-update-method-dao.md)** 呼び出しによるデータの入力検証を待機すると、別のフィールドでの入力規則の違反によりデータが無効になった場合に、長いメモ型データのデータベースへの書き込みで余分な時間がかかる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="cdd18-p101">Setting the **ValidateOnSet** property to **True** can be useful in a situation when a user is entering records that include substantial Memo data. Waiting until the **[Update](recordset-update-method-dao.md)** call to validate the data can result in unnecessary time spent writing the lengthy Memo data to the database if it turns out that the data was invalid anyway because a validation rule was broken in another field.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0b64e-112">例</span><span class="sxs-lookup"><span data-stu-id="0b64e-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="cdd18-112">例</span><span class="sxs-lookup"><span data-stu-id="cdd18-112">Example</span></span>
 
-<span data-ttu-id="0b64e-p102">この例では、 **ValidateOnSet** プロパティを使用して、データの入力時にエラーを処理する方法を示します。このプロシージャを実行するには、ValidateData 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="0b64e-p102">This example uses the **ValidateOnSet** property to demonstrate how one might trap for errors during data entry. The ValidateData function is required for this procedure to run.</span></span>
+<span data-ttu-id="cdd18-p102">この例では、 **ValidateOnSet** プロパティを使用して、データの入力時にエラーを処理する方法を示します。このプロシージャを実行するには、ValidateData 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="cdd18-p102">This example uses the **ValidateOnSet** property to demonstrate how one might trap for errors during data entry. The ValidateData function is required for this procedure to run.</span></span>
 
 ```vb
     Sub ValidateOnSetX() 

@@ -1,5 +1,5 @@
 ---
-title: ユーザー オブジェクト (ADOX) の参照
+title: User オブジェクト (ADOX) リファレンス
 TOCTitle: User object (ADOX)
 ms:assetid: 1e3090b2-443b-41df-a67a-f2c1452c48f3
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248974(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 11b9920b442b223c044833f6bd83c186586031c0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32313168"
 ---
-# <a name="user-object-adox-reference"></a><span data-ttu-id="8ff22-102">ユーザー オブジェクト (ADOX) の参照</span><span class="sxs-lookup"><span data-stu-id="8ff22-102">User object (ADOX) reference</span></span>
+# <a name="user-object-adox-reference"></a><span data-ttu-id="2fe21-102">User オブジェクト (ADOX) リファレンス</span><span class="sxs-lookup"><span data-stu-id="2fe21-102">User object (ADOX) reference</span></span>
 
-<span data-ttu-id="8ff22-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="8ff22-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="2fe21-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="2fe21-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="8ff22-104">User オブジェクト (ADOX)</span><span class="sxs-lookup"><span data-stu-id="8ff22-104">User object (ADOX)</span></span>](user-object-adox.md)
-- [<span data-ttu-id="8ff22-105">ユーザーのプロパティ、メソッド、およびイベント (ADOX)</span><span class="sxs-lookup"><span data-stu-id="8ff22-105">User properties, methods, and events (ADOX)</span></span>](user-properties-methods-and-events-adox.md)
+- [<span data-ttu-id="2fe21-104">User オブジェクト (ADOX)</span><span class="sxs-lookup"><span data-stu-id="2fe21-104">User object (ADOX)</span></span>](user-object-adox.md)
+- [<span data-ttu-id="2fe21-105">ユーザーのプロパティ、メソッド、およびイベント (ADOX)</span><span class="sxs-lookup"><span data-stu-id="2fe21-105">User properties, methods, and events (ADOX)</span></span>](user-properties-methods-and-events-adox.md)
 

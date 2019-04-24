@@ -1,5 +1,5 @@
 ---
-title: Axes コレクション (ADO MD の参照)
+title: Axes コレクション (ADO MD リファレンス)
 TOCTitle: Axes collection (ADO MD)
 ms:assetid: 9569659c-3bbb-4c53-be45-b29d69d465a5
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249663(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 463a137e70503591abee29a6ebeacf79d6194366
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296928"
 ---
-# <a name="axes-collection-ado-md-reference"></a><span data-ttu-id="21151-102">Axes コレクション (ADO MD の参照)</span><span class="sxs-lookup"><span data-stu-id="21151-102">Axes collection (ADO MD reference)</span></span>
+# <a name="axes-collection-ado-md-reference"></a><span data-ttu-id="be20a-102">Axes コレクション (ADO MD リファレンス)</span><span class="sxs-lookup"><span data-stu-id="be20a-102">Axes collection (ADO MD reference)</span></span>
 
-<span data-ttu-id="21151-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="21151-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="be20a-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="be20a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="21151-104">Axes コレクション (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="21151-104">Axes collection (ADO MD)</span></span>](axes-collection-ado-md.md)
-- [<span data-ttu-id="21151-105">Axes コレクションのプロパティ、メソッド、およびイベント (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="21151-105">Axes collection properties, methods, and events (ADO MD)</span></span>](axes-collection-properties-methods-and-events-ado-md.md)
+- [<span data-ttu-id="be20a-104">Axes コレクション (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="be20a-104">Axes collection (ADO MD)</span></span>](axes-collection-ado-md.md)
+- [<span data-ttu-id="be20a-105">Axes コレクションのプロパティ、メソッド、およびイベント (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="be20a-105">Axes collection properties, methods, and events (ADO MD)</span></span>](axes-collection-properties-methods-and-events-ado-md.md)
 

@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 254fdceab4d54334014cbb9e785731bcc93b523f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296704"
 ---
-# <a name="cachesize-property-example-vb"></a><span data-ttu-id="c4942-102">CacheSize プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="c4942-102">CacheSize property example (VB)</span></span>
+# <a name="cachesize-property-example-vb"></a><span data-ttu-id="17761-102">CacheSize プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="17761-102">CacheSize property example (VB)</span></span>
 
 
-<span data-ttu-id="c4942-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="c4942-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="17761-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="17761-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="c4942-104">次の例では、[CacheSize](cachesize-property-ado.md) プロパティを使用して、30 レコードのキャッシュを使用して実行した操作と、使用せずに実行した操作のパフォーマンスの違いを示します。</span><span class="sxs-lookup"><span data-stu-id="c4942-104">This example uses the [CacheSize](cachesize-property-ado.md) property to show the difference in performance for an operation performed with and without a 30-record cache.</span></span>
+<span data-ttu-id="17761-104">次の例では、[CacheSize](cachesize-property-ado.md) プロパティを使用して、30 レコードのキャッシュを使用して実行した操作と、使用せずに実行した操作のパフォーマンスの違いを示します。</span><span class="sxs-lookup"><span data-stu-id="17761-104">This example uses the [CacheSize](cachesize-property-ado.md) property to show the difference in performance for an operation performed with and without a 30-record cache.</span></span>
 
 ```vb 
  

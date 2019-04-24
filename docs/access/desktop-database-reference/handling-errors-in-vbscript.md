@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3f3da0d9e68024d7da9a0bcfca0fef30c7f646ed
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292049"
 ---
-# <a name="handling-errors-in-vbscript"></a><span data-ttu-id="e58d5-102">VBScript でのエラー処理</span><span class="sxs-lookup"><span data-stu-id="e58d5-102">Handling errors in VBScript</span></span>
+# <a name="handling-errors-in-vbscript"></a><span data-ttu-id="21deb-102">VBScript でのエラー処理</span><span class="sxs-lookup"><span data-stu-id="21deb-102">Handling errors in VBScript</span></span>
 
 
-<span data-ttu-id="e58d5-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="e58d5-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="21deb-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="21deb-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="e58d5-104">Visual Basic で使用する方法と VBScript で使用する方法には、若干の違いがあります。</span><span class="sxs-lookup"><span data-stu-id="e58d5-104">There is little difference between the methods used in Visual Basic and those used with VBScript.</span></span> <span data-ttu-id="e58d5-105">主な違いは、VBScript では、ラベルで実行を継続することによるエラー処理の概念がサポートされていないことです。</span><span class="sxs-lookup"><span data-stu-id="e58d5-105">The primary difference is that VBScript does not support the concept of error handling by continuing execution at a label.</span></span> <span data-ttu-id="e58d5-106">つまり、VBScript では On Error GoTo を使用できません。</span><span class="sxs-lookup"><span data-stu-id="e58d5-106">In other words, you cannot use On Error GoTo in VBScript.</span></span> <span data-ttu-id="e58d5-107">代わりに、VBScript で使用します。</span><span class="sxs-lookup"><span data-stu-id="e58d5-107">Instead, use in VBScript.</span></span> <span data-ttu-id="e58d5-108">代わりに、On Error Resume Next を使用して、 **Err.Number**と、 **Errors**コレクションの**Count**プロパティの両方を次の例のように、確認します。</span><span class="sxs-lookup"><span data-stu-id="e58d5-108">Instead, use On Error Resume Next and then check both **Err.Number** and the **Count** property of the **Errors** collection, as shown in the following example:</span></span>
+<span data-ttu-id="21deb-104">Visual Basic で使用する方法と VBScript で使用する方法には、若干の違いがあります。</span><span class="sxs-lookup"><span data-stu-id="21deb-104">There is little difference between the methods used in Visual Basic and those used with VBScript.</span></span> <span data-ttu-id="21deb-105">主な違いは、VBScript では、ラベルで実行を継続することによるエラー処理の概念がサポートされていないことです。</span><span class="sxs-lookup"><span data-stu-id="21deb-105">The primary difference is that VBScript does not support the concept of error handling by continuing execution at a label.</span></span> <span data-ttu-id="21deb-106">つまり、VBScript では On Error GoTo を使用できません。</span><span class="sxs-lookup"><span data-stu-id="21deb-106">In other words, you cannot use On Error GoTo in VBScript.</span></span> <span data-ttu-id="21deb-107">代わりに、VBScript でを使用します。</span><span class="sxs-lookup"><span data-stu-id="21deb-107">Instead, use in VBScript.</span></span> <span data-ttu-id="21deb-108">代わりに、次の例に示すように、On Error Resume Next を使用して、 **Errors**コレクションの**err.number**および**Count**プロパティの両方を確認します。</span><span class="sxs-lookup"><span data-stu-id="21deb-108">Instead, use On Error Resume Next and then check both **Err.Number** and the **Count** property of the **Errors** collection, as shown in the following example:</span></span>
 
 ```vb 
  

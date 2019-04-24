@@ -1,5 +1,5 @@
 ---
-title: グループのコレクション (ADOX) 参照
+title: Groups コレクション (ADOX) リファレンス
 TOCTitle: Groups collection (ADOX)
 ms:assetid: 99fc8913-b6f9-4df9-9583-ff459e894152
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249693(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2cec3fba5fc5badbaa4ec91dad7a4b443ac793ca
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292063"
 ---
-# <a name="groups-collection-adox-reference"></a><span data-ttu-id="f230d-102">グループのコレクション (ADOX) 参照</span><span class="sxs-lookup"><span data-stu-id="f230d-102">Groups collection (ADOX) reference</span></span>
+# <a name="groups-collection-adox-reference"></a><span data-ttu-id="65ad7-102">Groups コレクション (ADOX) リファレンス</span><span class="sxs-lookup"><span data-stu-id="65ad7-102">Groups collection (ADOX) reference</span></span>
 
-<span data-ttu-id="f230d-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="f230d-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="65ad7-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="65ad7-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="f230d-104">Groups コレクション (ADOX)</span><span class="sxs-lookup"><span data-stu-id="f230d-104">Groups collection (ADOX)</span></span>](groups-collection-adox.md)
-- [<span data-ttu-id="f230d-105">Groups コレクションのプロパティ、メソッド、およびイベント (ADOX)</span><span class="sxs-lookup"><span data-stu-id="f230d-105">Groups collection properties, methods, and events (ADOX)</span></span>](groups-collection-properties-methods-and-events-adox.md)
+- [<span data-ttu-id="65ad7-104">Groups コレクション (ADOX)</span><span class="sxs-lookup"><span data-stu-id="65ad7-104">Groups collection (ADOX)</span></span>](groups-collection-adox.md)
+- [<span data-ttu-id="65ad7-105">Groups コレクションのプロパティ、メソッド、およびイベント (ADOX)</span><span class="sxs-lookup"><span data-stu-id="65ad7-105">Groups collection properties, methods, and events (ADOX)</span></span>](groups-collection-properties-methods-and-events-adox.md)
 

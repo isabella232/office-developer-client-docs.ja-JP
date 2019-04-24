@@ -1,5 +1,5 @@
 ---
-title: 接続のコレクション (DAO)
+title: Connections コレクション (DAO)
 TOCTitle: Connections collection
 ms:assetid: 65d073be-a84b-e3f2-cb43-b87ffa60e497
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195178(v=office.15)
@@ -8,43 +8,43 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 66f122b7bdaa9069b839cd5884b5da5da48a15f9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295787"
 ---
-# <a name="connections-collection-dao"></a><span data-ttu-id="d20f0-102">接続のコレクション (DAO)</span><span class="sxs-lookup"><span data-stu-id="d20f0-102">Connections collection (DAO)</span></span>
+# <a name="connections-collection-dao"></a><span data-ttu-id="cbf4d-102">Connections コレクション (DAO)</span><span class="sxs-lookup"><span data-stu-id="cbf4d-102">Connections collection (DAO)</span></span>
 
-<span data-ttu-id="d20f0-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="d20f0-103">**Applies to**: Access 2013, Office 2013</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="d20f0-p101">[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</span><span class="sxs-lookup"><span data-stu-id="d20f0-p101">ODBCDirect workspaces are not supported in Microsoft Access 2013. Use ADO if you want to access external data sources without using the Microsoft Access database engine.</span></span>
-
-<span data-ttu-id="d20f0-p102">**Connections** コレクションには、 **Workspace** オブジェクトの現在の **Connection** オブジェクトが含まれます (ODBCDirect ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="d20f0-p102">A **Connections** collection contains the current **Connection** objects of a **Workspace** object. (ODBCDirect workspaces only).</span></span>
-
-## <a name="remarks"></a><span data-ttu-id="d20f0-108">注釈</span><span class="sxs-lookup"><span data-stu-id="d20f0-108">Remarks</span></span>
-
-<span data-ttu-id="d20f0-p103">**Connection** オブジェクトを開くと、 **Workspace** の **Connections** コレクションに自動的に追加されます。 [**Close**](connection-close-method-dao.md) メソッドを使用して **Connection** オブジェクトを閉じると、オブジェクトは **Connections** コレクションから削除されます。 [Connection](recordset-object-dao.md) オブジェクトを閉じる前に、開いているすべての \*\*\*\*Recordset\*\*\*\* オブジェクトを閉じる必要があります。</span><span class="sxs-lookup"><span data-stu-id="d20f0-p103">When you open a **Connection** object, it is automatically appended to the **Connections** collection of the **Workspace**. When you close a **Connection** object with the **[Close](connection-close-method-dao.md)** method, it is removed from the **Connections** collection. You should close all open **[Recordset](recordset-object-dao.md)** objects within the **Connection** before closing it.</span></span>
-
-<span data-ttu-id="d20f0-p104">**Connection** オブジェクトを開くと同時に、対応する **[Database](database-object-dao.md)** オブジェクトが作成され、同じ [Workspace](databases-collection-dao.md) の \*\*\*\*Databases\*\*\*\* コレクションに追加されます。同様に、 **Connection** を閉じると、 **Databases** コレクションの対応する **Database** が削除されます。</span><span class="sxs-lookup"><span data-stu-id="d20f0-p104">At the same time you open a **Connection** object, a corresponding **[Database](database-object-dao.md)** object is created and appended to the **[Databases](databases-collection-dao.md)** collection in the same **Workspace**, and vice versa. Similarly, when you close the **Connection**, the corresponding **Database** is deleted from the **Databases** collection, and so on.</span></span>
-
-<span data-ttu-id="d20f0-p105">**Connection** の **Name** プロパティの設定は、データベース ファイルを指定するための文字列です。コレクション内の **Connection** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="d20f0-p105">The **Name** property setting of a **Connection** is a string that specifies the path of the database file. To refer to a **Connection** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
-
-- <span data-ttu-id="d20f0-116">**Connections**(0)</span><span class="sxs-lookup"><span data-stu-id="d20f0-116">**Connections**(0)</span></span>
-
-- <span data-ttu-id="d20f0-117">**接続**(以下「*名前*」)</span><span class="sxs-lookup"><span data-stu-id="d20f0-117">**Connections**("*name*")</span></span>
-
-- <span data-ttu-id="d20f0-118">**接続**\!\[*名*\]</span><span class="sxs-lookup"><span data-stu-id="d20f0-118">**Connections**\!\[*name*\]</span></span>
-
+<span data-ttu-id="cbf4d-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="cbf4d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="d20f0-p106">[!メモ] **Connections** コレクションに重複する名前を作成して同じデータ ソースを複数回開くことができます。 **Connection** オブジェクトをオブジェクト変数に割り当てて変数名で参照する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d20f0-p106">You can open the same data source more than once, creating duplicate names in the **Connections** collection. You should assign **Connection** objects to object variables and refer to them by variable name.</span></span>
+> <span data-ttu-id="cbf4d-p101">[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</span><span class="sxs-lookup"><span data-stu-id="cbf4d-p101">ODBCDirect workspaces are not supported in Microsoft Access 2013. Use ADO if you want to access external data sources without using the Microsoft Access database engine.</span></span>
+
+<span data-ttu-id="cbf4d-p102">**Connections** コレクションには、 **Workspace** オブジェクトの現在の **Connection** オブジェクトが含まれます (ODBCDirect ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="cbf4d-p102">A **Connections** collection contains the current **Connection** objects of a **Workspace** object. (ODBCDirect workspaces only).</span></span>
+
+## <a name="remarks"></a><span data-ttu-id="cbf4d-108">注釈</span><span class="sxs-lookup"><span data-stu-id="cbf4d-108">Remarks</span></span>
+
+<span data-ttu-id="cbf4d-109">**Connection** オブジェクトを開くと、**Workspace** の **Connections** コレクションに自動的に追加されます。</span><span class="sxs-lookup"><span data-stu-id="cbf4d-109">When you open a **Connection** object, it is automatically appended to the **Connections** collection of the **Workspace**.</span></span> <span data-ttu-id="cbf4d-110">**[close](connection-close-method-dao.md)** メソッドを使用して**Connection**オブジェクトを閉じると、 **Connections**コレクションからそのオブジェクトが削除されます。</span><span class="sxs-lookup"><span data-stu-id="cbf4d-110">When you close a **Connection** object with the **[Close](connection-close-method-dao.md)** method, it is removed from the **Connections** collection.</span></span> <span data-ttu-id="cbf4d-111">**接続**を閉じる前に、開いているすべての**[Recordset](recordset-object-dao.md)** オブジェクトを閉じておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="cbf4d-111">You should close all open **[Recordset](recordset-object-dao.md)** objects within the **Connection** before closing it.</span></span>
+
+<span data-ttu-id="cbf4d-112">**Connection**オブジェクトを開くと同時に、対応する**[Database](database-object-dao.md)** オブジェクトが作成され、同じ**ワークスペース**内の**[Databases](databases-collection-dao.md)** コレクションに追加されます。また、その逆も同様です。</span><span class="sxs-lookup"><span data-stu-id="cbf4d-112">At the same time you open a **Connection** object, a corresponding **[Database](database-object-dao.md)** object is created and appended to the **[Databases](databases-collection-dao.md)** collection in the same **Workspace**, and vice versa.</span></span> <span data-ttu-id="cbf4d-113">同様に、**Connection** を閉じると、**Databases** コレクションの対応する **Database** が削除されます。</span><span class="sxs-lookup"><span data-stu-id="cbf4d-113">Similarly, when you close the **Connection**, the corresponding **Database** is deleted from the **Databases** collection, and so on.</span></span>
+
+<span data-ttu-id="cbf4d-p105">**Connection** の **Name** プロパティの設定は、データベース ファイルを指定するための文字列です。コレクション内の **Connection** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="cbf4d-p105">The **Name** property setting of a **Connection** is a string that specifies the path of the database file. To refer to a **Connection** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
+
+- <span data-ttu-id="cbf4d-116">**接続**.0</span><span class="sxs-lookup"><span data-stu-id="cbf4d-116">**Connections**(0)</span></span>
+
+- <span data-ttu-id="cbf4d-117">**接続**("*name*")</span><span class="sxs-lookup"><span data-stu-id="cbf4d-117">**Connections**("*name*")</span></span>
+
+- <span data-ttu-id="cbf4d-118">\*\*\*\*\!接続\[*名*\]</span><span class="sxs-lookup"><span data-stu-id="cbf4d-118">**Connections**\!\[*name*\]</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="d20f0-121">例</span><span class="sxs-lookup"><span data-stu-id="d20f0-121">Example</span></span>
+> [!NOTE]
+> <span data-ttu-id="cbf4d-p106">[!メモ] **Connections** コレクションに重複する名前を作成して同じデータ ソースを複数回開くことができます。 **Connection** オブジェクトをオブジェクト変数に割り当てて変数名で参照する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cbf4d-p106">You can open the same data source more than once, creating duplicate names in the **Connections** collection. You should assign **Connection** objects to object variables and refer to them by variable name.</span></span>
 
-<span data-ttu-id="d20f0-122">この例では、 **Database** オブジェクトを開いて **Connection** オブジェクトと **Connections** コレクション、および 2 つの ODBCDirect **Connection** オブジェクトの例を示し、各オブジェクトで使用できるプロパティの一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="d20f0-122">This example demonstrates the **Connection** object and **Connections** collection by opening a **Database** object and two ODBCDirect **Connection** objects and listing the properties available to each object.</span></span>
+
+## <a name="example"></a><span data-ttu-id="cbf4d-121">例</span><span class="sxs-lookup"><span data-stu-id="cbf4d-121">Example</span></span>
+
+<span data-ttu-id="cbf4d-122">この例では、**Database** オブジェクトを開いて **Connection** オブジェクトと **Connections** コレクション、および 2 つの ODBCDirect **Connection** オブジェクトの例を示し、各オブジェクトで使用できるプロパティの一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="cbf4d-122">This example demonstrates the **Connection** object and **Connections** collection by opening a **Database** object and two ODBCDirect **Connection** objects and listing the properties available to each object.</span></span>
 
 ```vb 
 Sub ConnectionObjectX() 
@@ -125,7 +125,7 @@ End Sub
 
 <br/>
 
-<span data-ttu-id="d20f0-123">この例では、 **OpenConnection** メソッドで 3 つのパラメーターを使用して、それぞれの **Connection** オブジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="d20f0-123">This example uses the **OpenConnection** method with different parameters to open three different **Connection** objects.</span></span>
+<span data-ttu-id="cbf4d-123">この例では、 **OpenConnection** メソッドで 3 つのパラメーターを使用して、それぞれの **Connection** オブジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="cbf4d-123">This example uses the **OpenConnection** method with different parameters to open three different **Connection** objects.</span></span>
 
 ```vb 
 Sub OpenConnectionX() 

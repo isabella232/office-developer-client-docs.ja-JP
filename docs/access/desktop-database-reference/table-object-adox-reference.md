@@ -1,5 +1,5 @@
 ---
-title: テーブル オブジェクト (ADOX) 参照
+title: table オブジェクト (ADOX) リファレンス
 TOCTitle: Table object (ADOX)
 ms:assetid: 5841a0ab-717b-4e12-b85d-87be480d31ca
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249298(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 602e632e7a068dc34c755cb685db02f0da05f29b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314442"
 ---
-# <a name="table-object-adox-reference"></a><span data-ttu-id="960e4-102">テーブル オブジェクト (ADOX) 参照</span><span class="sxs-lookup"><span data-stu-id="960e4-102">Table object (ADOX) reference</span></span>
+# <a name="table-object-adox-reference"></a><span data-ttu-id="2c41e-102">table オブジェクト (ADOX) リファレンス</span><span class="sxs-lookup"><span data-stu-id="2c41e-102">Table object (ADOX) reference</span></span>
 
-<span data-ttu-id="960e4-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="960e4-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="2c41e-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="2c41e-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="960e4-104">Table オブジェクト (ADOX)</span><span class="sxs-lookup"><span data-stu-id="960e4-104">Table object (ADOX)</span></span>](table-object-adox.md)
-- [<span data-ttu-id="960e4-105">表のプロパティ、メソッド、およびイベント (ADOX)</span><span class="sxs-lookup"><span data-stu-id="960e4-105">Table properties, methods, and events (ADOX)</span></span>](table-properties-methods-and-events-adox.md)
+- [<span data-ttu-id="2c41e-104">Table オブジェクト (ADOX)</span><span class="sxs-lookup"><span data-stu-id="2c41e-104">Table object (ADOX)</span></span>](table-object-adox.md)
+- [<span data-ttu-id="2c41e-105">Table のプロパティ、メソッド、およびイベント (ADOX)</span><span class="sxs-lookup"><span data-stu-id="2c41e-105">Table properties, methods, and events (ADOX)</span></span>](table-properties-methods-and-events-adox.md)
 

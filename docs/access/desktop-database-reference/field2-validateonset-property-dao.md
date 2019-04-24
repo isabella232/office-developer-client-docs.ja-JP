@@ -1,5 +1,5 @@
 ---
-title: Field2.ValidateOnSet プロパティ (DAO)
+title: Field2 の始まったプロパティ (DAO)
 TOCTitle: ValidateOnSet Property
 ms:assetid: 07612730-8dad-4ef0-b19b-f76845973fc3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844969(v=office.15)
@@ -8,35 +8,35 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 427903186cce0f2ce3adf7690682a793fb417873
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292644"
 ---
-# <a name="field2validateonset-property-dao"></a><span data-ttu-id="61f66-102">Field2.ValidateOnSet プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="61f66-102">Field2.ValidateOnSet property (DAO)</span></span>
+# <a name="field2validateonset-property-dao"></a><span data-ttu-id="92414-102">Field2 の始まったプロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="92414-102">Field2.ValidateOnSet property (DAO)</span></span>
 
 
-<span data-ttu-id="61f66-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="61f66-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="92414-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="92414-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-<span data-ttu-id="61f66-104">**Field2** オブジェクトの **Value** プロパティを設定するときに、このオブジェクトの値をすぐに検証するかどうかを指定する値を設定または取得します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="61f66-104">Sets or returns a value that specifies whether or not the value of a **Field2** object is immediately validated when the object's **Value** property is set (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="92414-104">**Field2** オブジェクトの **Value** プロパティを設定するときに、このオブジェクトの値をすぐに検証するかどうかを指定する値を設定または取得します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="92414-104">Sets or returns a value that specifies whether or not the value of a **Field2** object is immediately validated when the object's **Value** property is set (Microsoft Access workspaces only).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="61f66-105">構文</span><span class="sxs-lookup"><span data-stu-id="61f66-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="92414-105">構文</span><span class="sxs-lookup"><span data-stu-id="92414-105">Syntax</span></span>
 
-<span data-ttu-id="61f66-106">*式*です。ValidateOnSet</span><span class="sxs-lookup"><span data-stu-id="61f66-106">*expression* .ValidateOnSet</span></span>
+<span data-ttu-id="92414-106">*式*。ValidateOnSet</span><span class="sxs-lookup"><span data-stu-id="92414-106">*expression* .ValidateOnSet</span></span>
 
-<span data-ttu-id="61f66-107">\*式\***Field2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="61f66-107">*expression* A variable that represents a **Field2** object.</span></span>
+<span data-ttu-id="92414-107">\*式\***Field2**オブジェクトを表す変数を取得します。</span><span class="sxs-lookup"><span data-stu-id="92414-107">*expression* A variable that represents a **Field2** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="61f66-108">注釈</span><span class="sxs-lookup"><span data-stu-id="61f66-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="92414-108">注釈</span><span class="sxs-lookup"><span data-stu-id="92414-108">Remarks</span></span>
 
-<span data-ttu-id="61f66-109">**Recordset** オブジェクトの **Field2** オブジェクトのみが、 **ValidateOnSet** プロパティの値の取得および設定をサポートします。</span><span class="sxs-lookup"><span data-stu-id="61f66-109">Only **Field2** objects in **Recordset** objects support the **ValidateOnSet** property as read/write.</span></span>
+<span data-ttu-id="92414-109">**Recordset** オブジェクトの **Field2** オブジェクトのみが、 **ValidateOnSet** プロパティの値の取得および設定をサポートします。</span><span class="sxs-lookup"><span data-stu-id="92414-109">Only **Field2** objects in **Recordset** objects support the **ValidateOnSet** property as read/write.</span></span>
 
-<span data-ttu-id="61f66-p101">**ValidateOnSet** プロパティを **True** に設定すると、ユーザーが大量のメモ データを含むレコードを入力する場合に便利です。 **Update** を呼び出してデータが検証されるまで待機する方法では、別のフィールドが入力規則に違反していてデータが無効であることが判明した場合、長いメモ データをデータベースに書き込むのに費やした時間が無駄になることがあります。</span><span class="sxs-lookup"><span data-stu-id="61f66-p101">Setting the **ValidateOnSet** property to **True** can be useful in a situation when a user is entering records that include substantial Memo data. Waiting until the **Update** call to validate the data can result in unnecessary time spent writing the lengthy Memo data to the database if it turns out that the data was invalid anyway because a validation rule was broken in another field.</span></span>
+<span data-ttu-id="92414-p101">**ValidateOnSet** プロパティを **True** に設定すると、ユーザーが大量のメモ データを含むレコードを入力する場合に便利です。 **Update** を呼び出してデータが検証されるまで待機する方法では、別のフィールドが入力規則に違反していてデータが無効であることが判明した場合、長いメモ データをデータベースに書き込むのに費やした時間が無駄になることがあります。</span><span class="sxs-lookup"><span data-stu-id="92414-p101">Setting the **ValidateOnSet** property to **True** can be useful in a situation when a user is entering records that include substantial Memo data. Waiting until the **Update** call to validate the data can result in unnecessary time spent writing the lengthy Memo data to the database if it turns out that the data was invalid anyway because a validation rule was broken in another field.</span></span>
 
-## <a name="example"></a><span data-ttu-id="61f66-112">例</span><span class="sxs-lookup"><span data-stu-id="61f66-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="92414-112">例</span><span class="sxs-lookup"><span data-stu-id="92414-112">Example</span></span>
 
-<span data-ttu-id="61f66-p102">この例では、 **ValidateOnSet** プロパティを使用して、データの入力時にエラーを処理する方法を示します。このプロシージャを実行するには、ValidateData 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="61f66-p102">This example uses the **ValidateOnSet** property to demonstrate how one might trap for errors during data entry. The ValidateData function is required for this procedure to run.</span></span>
+<span data-ttu-id="92414-p102">この例では、 **ValidateOnSet** プロパティを使用して、データの入力時にエラーを処理する方法を示します。このプロシージャを実行するには、ValidateData 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="92414-p102">This example uses the **ValidateOnSet** property to demonstrate how one might trap for errors during data entry. The ValidateData function is required for this procedure to run.</span></span>
 
 ```vb
     Sub ValidateOnSetX() 

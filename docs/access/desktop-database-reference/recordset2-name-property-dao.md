@@ -8,26 +8,26 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 89ac6756ced96cf360c9d5920c48088e750383b4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309388"
 ---
-# <a name="recordset2name-property-dao"></a><span data-ttu-id="21c02-102">Recordset2.Name プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="21c02-102">Recordset2.Name property (DAO)</span></span>
+# <a name="recordset2name-property-dao"></a><span data-ttu-id="634ad-102">Recordset2.Name プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="634ad-102">Recordset2.Name property (DAO)</span></span>
 
 
-<span data-ttu-id="21c02-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="21c02-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="634ad-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="634ad-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="21c02-p101">指定したオブジェクトの名前を取得します。値の取得のみ可能です。文字列型 ( **String**) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="21c02-p101">Returns the name of the specified object. Read-only **String**.</span></span>
+<span data-ttu-id="634ad-104">指定したオブジェクトの名前を返します。</span><span class="sxs-lookup"><span data-stu-id="634ad-104">Returns the name of the specified object.</span></span> <span data-ttu-id="634ad-105">読み取り専用 **文字列** です。</span><span class="sxs-lookup"><span data-stu-id="634ad-105">Read-only **String**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="21c02-106">構文</span><span class="sxs-lookup"><span data-stu-id="21c02-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="634ad-106">構文</span><span class="sxs-lookup"><span data-stu-id="634ad-106">Syntax</span></span>
 
-<span data-ttu-id="21c02-107">*式*です。名</span><span class="sxs-lookup"><span data-stu-id="21c02-107">*expression* .Name</span></span>
+<span data-ttu-id="634ad-107">*式*。拡張子</span><span class="sxs-lookup"><span data-stu-id="634ad-107">*expression* .Name</span></span>
 
-<span data-ttu-id="21c02-108">\*式\***Recordset2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="21c02-108">*expression* A variable that represents a **Recordset2** object.</span></span>
+<span data-ttu-id="634ad-108">\*式\***Recordset2**オブジェクトを表す変数を取得します。</span><span class="sxs-lookup"><span data-stu-id="634ad-108">*expression* A variable that represents a **Recordset2** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="21c02-109">注釈</span><span class="sxs-lookup"><span data-stu-id="21c02-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="634ad-109">注釈</span><span class="sxs-lookup"><span data-stu-id="634ad-109">Remarks</span></span>
 
-<span data-ttu-id="21c02-110">SQL ステートメントを使用して開いた **Recordset** オブジェクトの **Name** プロパティは、その SQL ステートメントの先頭 256 文字となります。</span><span class="sxs-lookup"><span data-stu-id="21c02-110">The **Name** property of a **Recordset** object opened by using an SQL statement is the first 256 characters of the SQL statement.</span></span>
+<span data-ttu-id="634ad-110">SQL ステートメントを使用して開いた **Recordset** オブジェクトの **Name** プロパティには、SQL ステートメントの最初の 256 文字が設定されます。</span><span class="sxs-lookup"><span data-stu-id="634ad-110">The **Name** property of a **Recordset** object opened by using an SQL statement is the first 256 characters of the SQL statement.</span></span>
 

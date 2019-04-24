@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1b60d51d407ed25d189f325bf18a7b16b0563149
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292203"
 ---
-# <a name="getrows-method-example-vc"></a><span data-ttu-id="e9bd0-102">GetRows メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="e9bd0-102">GetRows method example (VC++)</span></span>
+# <a name="getrows-method-example-vc"></a><span data-ttu-id="9a4cd-102">GetRows メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="9a4cd-102">GetRows method example (VC++)</span></span>
 
 
-<span data-ttu-id="e9bd0-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="e9bd0-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="9a4cd-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="9a4cd-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="e9bd0-p101">この例では、[GetRows](getrows-method-ado.md) メソッドを使用して [Recordset](recordset-object-ado.md) から指定した数の行を取得し、結果データを配列に格納します。 **EOF** に達した場合、および他のユーザーに削除されたレコードを [GetRows](bof-eof-properties-ado.md) が取得しようとした場合、 **GetRows** メソッドが返す行数は指定より少なくなります。2 番目の場合のみ、 **False** が返されます。このプロシージャを実行するには、GetRowsOK 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="e9bd0-p101">This example uses the [GetRows](getrows-method-ado.md) method to retrieve a specified number of rows from a [Recordset](recordset-object-ado.md) and to fill an array with the resulting data. The **GetRows** method will return less than the desired number of rows in two cases: either if [EOF](bof-eof-properties-ado.md) has been reached, or if **GetRows** tried to retrieve a record that was deleted by another user. The function returns **False** only if the second case occurs. The GetRowsOK function is required for this procedure to run.</span></span>
+<span data-ttu-id="9a4cd-p101">この例では、[GetRows](getrows-method-ado.md) メソッドを使用して [Recordset](recordset-object-ado.md) から指定した数の行を取得し、結果データを配列に格納します。 **EOF** に達した場合、および他のユーザーに削除されたレコードを [GetRows](bof-eof-properties-ado.md) が取得しようとした場合、 **GetRows** メソッドが返す行数は指定より少なくなります。2 番目の場合のみ、 **False** が返されます。このプロシージャを実行するには、GetRowsOK 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="9a4cd-p101">This example uses the [GetRows](getrows-method-ado.md) method to retrieve a specified number of rows from a [Recordset](recordset-object-ado.md) and to fill an array with the resulting data. The **GetRows** method will return less than the desired number of rows in two cases: either if [EOF](bof-eof-properties-ado.md) has been reached, or if **GetRows** tried to retrieve a record that was deleted by another user. The function returns **False** only if the second case occurs. The GetRowsOK function is required for this procedure to run.</span></span>
 
 ```cpp 
  

@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1fc3341f4ec662c17e2a7c274b1cc3af215c877c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296333"
 ---
-# <a name="clone-method-example-vbscript"></a><span data-ttu-id="94e69-102">Clone メソッドの使用例 (VBScript)</span><span class="sxs-lookup"><span data-stu-id="94e69-102">Clone method example (VBScript)</span></span>
+# <a name="clone-method-example-vbscript"></a><span data-ttu-id="d1fb2-102">Clone メソッドの使用例 (VBScript)</span><span class="sxs-lookup"><span data-stu-id="d1fb2-102">Clone method example (VBScript)</span></span>
 
 
-<span data-ttu-id="94e69-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="94e69-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="d1fb2-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="d1fb2-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="94e69-104">この例では、[Clone](clone-method-ado.md) メソッドを使用して [Recordset](recordset-object-ado.md) のコピーを作成し、ユーザーが各コピーのレコード ポインターを個別に配置できるようにします。</span><span class="sxs-lookup"><span data-stu-id="94e69-104">This example uses the [Clone](clone-method-ado.md) method to create copies of a [Recordset](recordset-object-ado.md) and then lets the user position the record pointer of each copy independently.</span></span>
+<span data-ttu-id="d1fb2-104">この例では、[Clone](clone-method-ado.md) メソッドを使用して [Recordset](recordset-object-ado.md) のコピーを作成し、ユーザーが各コピーのレコード ポインターを個別に配置できるようにします。</span><span class="sxs-lookup"><span data-stu-id="d1fb2-104">This example uses the [Clone](clone-method-ado.md) method to create copies of a [Recordset](recordset-object-ado.md) and then lets the user position the record pointer of each copy independently.</span></span>
 
-<span data-ttu-id="94e69-105">次の例は、Active Server Pages (ASP) で使用してください。</span><span class="sxs-lookup"><span data-stu-id="94e69-105">Use the following example in an Active Server Page (ASP).</span></span> <span data-ttu-id="94e69-106">この例では、Microsoft Access を含む、Northwind データベースを使用します。</span><span class="sxs-lookup"><span data-stu-id="94e69-106">This example uses the Northwind database distributed with Microsoft Access.</span></span> <span data-ttu-id="94e69-107">切り取りメモ帳またはほかのテキスト エディターに次のコードを貼り付けして**CloneVBS.asp**として保存します。</span><span class="sxs-lookup"><span data-stu-id="94e69-107">Cut and paste the following code to Notepad or another text editor and save it as **CloneVBS.asp**.</span></span> <span data-ttu-id="94e69-108">任意のクライアント ブラウザーに結果を表示します。</span><span class="sxs-lookup"><span data-stu-id="94e69-108">You can view the result in any client browser.</span></span>
+<span data-ttu-id="d1fb2-p101">Use the following example in an Active Server Page (ASP). This example uses the Northwind database distributed with Microsoft Access. Cut and paste the following code to Notepad or another text editor and save it as **CloneVBS.asp**. You can view the result in any client browser.</span><span class="sxs-lookup"><span data-stu-id="d1fb2-p101">Use the following example in an Active Server Page (ASP). This example uses the Northwind database distributed with Microsoft Access. Cut and paste the following code to Notepad or another text editor and save it as **CloneVBS.asp**. You can view the result in any client browser.</span></span>
 
-<span data-ttu-id="94e69-109">RsCustomerList.Source の行を変更する例を実行するには、「お客様」を RsCustomerList.Source = = 大きなテーブルをカウントするには、「製品」です。</span><span class="sxs-lookup"><span data-stu-id="94e69-109">To exercise the example, change the line RsCustomerList.Source = "Customers" to to RsCustomerList.Source = "Products" to count a larger table.</span></span>
+<span data-ttu-id="d1fb2-109">この例を実行するには、行 rscustomers リストを変更します。 source = "Products" は、より大きなテーブルをカウントします。</span><span class="sxs-lookup"><span data-stu-id="d1fb2-109">To exercise the example, change the line RsCustomerList.Source = "Customers" to to RsCustomerList.Source = "Products" to count a larger table.</span></span>
 
 ```vb 
  

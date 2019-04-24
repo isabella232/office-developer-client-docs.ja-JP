@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 26c259452e23bed8d2937f9d86c78d4d52be2993
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294086"
 ---
-# <a name="delete-method-example-vbscript"></a><span data-ttu-id="27eca-102">Delete メソッドの使用例 (VBScript)</span><span class="sxs-lookup"><span data-stu-id="27eca-102">Delete method example (VBScript)</span></span>
+# <a name="delete-method-example-vbscript"></a><span data-ttu-id="09ef8-102">Delete メソッドの使用例 (VBScript)</span><span class="sxs-lookup"><span data-stu-id="09ef8-102">Delete method example (VBScript)</span></span>
 
 
-<span data-ttu-id="27eca-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="27eca-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="09ef8-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="09ef8-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="27eca-104">この例では、[Delete](delete-method-ado-recordset.md) メソッドを使用して、指定されたレコードを [Recordset](recordset-object-ado.md) から削除します。</span><span class="sxs-lookup"><span data-stu-id="27eca-104">This example uses the [Delete](delete-method-ado-recordset.md) method to remove a specified record from a [Recordset](recordset-object-ado.md).</span></span>
+<span data-ttu-id="09ef8-104">この例では、[Delete](delete-method-ado-recordset.md) メソッドを使用して、指定されたレコードを [Recordset](recordset-object-ado.md) から削除します。</span><span class="sxs-lookup"><span data-stu-id="09ef8-104">This example uses the [Delete](delete-method-ado-recordset.md) method to remove a specified record from a [Recordset](recordset-object-ado.md).</span></span>
 
-<span data-ttu-id="27eca-105">次の例は、Active Server Page (ASP) で使用してください。</span><span class="sxs-lookup"><span data-stu-id="27eca-105">Use the following example in an Active Server Page (ASP).</span></span>
+<span data-ttu-id="09ef8-105">次の例は、Active Server Page (ASP) で使用してください。</span><span class="sxs-lookup"><span data-stu-id="09ef8-105">Use the following example in an Active Server Page (ASP).</span></span>
 
-<span data-ttu-id="27eca-106">**Find** を使用してファイル Adovbs.inc を検索し、使用するディレクトリに置きます。</span><span class="sxs-lookup"><span data-stu-id="27eca-106">Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use.</span></span> <span data-ttu-id="27eca-107">メモ帳または別のテキスト エディターに次のコードを貼り付けますを切り取ってそれを**DeleteVBS.asp**として保存します。</span><span class="sxs-lookup"><span data-stu-id="27eca-107">Cut and paste the following code into Notepad or another text editor, and save it as **DeleteVBS.asp**.</span></span> <span data-ttu-id="27eca-108">任意のクライアント ブラウザーに結果を表示します。</span><span class="sxs-lookup"><span data-stu-id="27eca-108">You can view the result in any client browser.</span></span>
+<span data-ttu-id="09ef8-p101">Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use. Cut and paste the following code into Notepad or another text editor, and save it as **DeleteVBS.asp**. You can view the result in any client browser.</span><span class="sxs-lookup"><span data-stu-id="09ef8-p101">Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use. Cut and paste the following code into Notepad or another text editor, and save it as **DeleteVBS.asp**. You can view the result in any client browser.</span></span>
 
-<span data-ttu-id="27eca-p102">例を実行するときは、最初に [AddNew](addnew-method-example-vbscript.md) の例を使用してレコードをいくつか追加します。その後で、それらのレコードを削除してください。任意のクライアント ブラウザーで結果を確認します。</span><span class="sxs-lookup"><span data-stu-id="27eca-p102">To exercise the example, try using the [AddNew](addnew-method-example-vbscript.md) example first to add some records. Then you can try to delete them. View the result in any client browser.</span></span>
+<span data-ttu-id="09ef8-p102">例を実行するときは、最初に [AddNew](addnew-method-example-vbscript.md) の例を使用してレコードをいくつか追加します。その後で、それらのレコードを削除してください。任意のクライアント ブラウザーで結果を確認します。</span><span class="sxs-lookup"><span data-stu-id="09ef8-p102">To exercise the example, try using the [AddNew](addnew-method-example-vbscript.md) example first to add some records. Then you can try to delete them. View the result in any client browser.</span></span>
 
 ```vb 
  

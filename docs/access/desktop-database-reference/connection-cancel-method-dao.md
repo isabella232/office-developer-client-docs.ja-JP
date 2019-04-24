@@ -1,5 +1,5 @@
 ---
-title: Connection.Cancel メソッド (DAO)
+title: Cancel メソッド (DAO)
 TOCTitle: Cancel Method
 ms:assetid: 43ad7b64-823d-3fac-e4d4-5e9514f60011
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192953(v=office.15)
@@ -8,31 +8,31 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a0826a30f22cc46eb6ff9a114dbf02cab1d9f76a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295969"
 ---
-# <a name="connectioncancel-method-dao"></a><span data-ttu-id="482a1-102">Connection.Cancel メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="482a1-102">Connection.Cancel method (DAO)</span></span>
+# <a name="connectioncancel-method-dao"></a><span data-ttu-id="b6a66-102">Cancel メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="b6a66-102">Connection.Cancel method (DAO)</span></span>
 
-<span data-ttu-id="482a1-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="482a1-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="b6a66-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="b6a66-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="482a1-104">構文</span><span class="sxs-lookup"><span data-stu-id="482a1-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b6a66-104">構文</span><span class="sxs-lookup"><span data-stu-id="b6a66-104">Syntax</span></span>
 
-<span data-ttu-id="482a1-105">*式*です。キャンセル</span><span class="sxs-lookup"><span data-stu-id="482a1-105">*expression* .Cancel</span></span>
+<span data-ttu-id="b6a66-105">*式*。キャンセル</span><span class="sxs-lookup"><span data-stu-id="b6a66-105">*expression* .Cancel</span></span>
 
-<span data-ttu-id="482a1-106">\*式\***接続**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="482a1-106">*expression* A variable that represents a **Connection** object.</span></span>
+<span data-ttu-id="b6a66-106">\*式\***Connection**オブジェクトを表す変数を取得します。</span><span class="sxs-lookup"><span data-stu-id="b6a66-106">*expression* A variable that represents a **Connection** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="482a1-107">注釈</span><span class="sxs-lookup"><span data-stu-id="482a1-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b6a66-107">注釈</span><span class="sxs-lookup"><span data-stu-id="b6a66-107">Remarks</span></span>
 
-<span data-ttu-id="482a1-108">**Cancel**メソッドを使用して、**実行**または**されます**メソッドの非同期呼び出しの実行を中止する (つまり、メソッドが dbRunAsync オプションを指定して呼び出されました)。</span><span class="sxs-lookup"><span data-stu-id="482a1-108">Use the **Cancel** method to terminate execution of an asynchronous **Execute** or **OpenConnection** method call (that is, the method was invoked with the dbRunAsync option).</span></span> <span data-ttu-id="482a1-109">終了するメソッドで dbRunAsync が使用できない場合、**キャンセル**実行時エラー戻ります。</span><span class="sxs-lookup"><span data-stu-id="482a1-109">**Cancel** will return a run-time error if dbRunAsync was not used in the method you're trying to terminate.</span></span>
+<span data-ttu-id="b6a66-108">**Cancel**メソッドを使用して、非同期の**Execute**メソッドまたは**openconnection**メソッドの呼び出し (つまり、dbrunasync オプションを指定してメソッドが呼び出された場合) の実行を終了します。</span><span class="sxs-lookup"><span data-stu-id="b6a66-108">Use the **Cancel** method to terminate execution of an asynchronous **Execute** or **OpenConnection** method call (that is, the method was invoked with the dbRunAsync option).</span></span> <span data-ttu-id="b6a66-109">終了しようとしているメソッドで dbrunasync が使用されていない場合、 **Cancel**は実行時エラーを返します。</span><span class="sxs-lookup"><span data-stu-id="b6a66-109">**Cancel** will return a run-time error if dbRunAsync was not used in the method you're trying to terminate.</span></span>
 
-<span data-ttu-id="482a1-110">**Cancel** メソッドを呼び出した後に、非同期の **OpenConnection** の呼び出しによって作成されたオブジェクト ( **Cancel** メソッドを呼び出した **Connection** オブジェクト) を参照しようとすると、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="482a1-110">An error will occur if, following a **Cancel** method call, you try to reference the object that would have been created by an asynchronous **OpenConnection** call (that is, the **Connection** object from which you called the **Cancel** method).</span></span>
+<span data-ttu-id="b6a66-110">**Cancel** メソッドを呼び出した後に、非同期の **OpenConnection** の呼び出しによって作成されたオブジェクト ( **Cancel** メソッドを呼び出した **Connection** オブジェクト) を参照しようとすると、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b6a66-110">An error will occur if, following a **Cancel** method call, you try to reference the object that would have been created by an asynchronous **OpenConnection** call (that is, the **Connection** object from which you called the **Cancel** method).</span></span>
 
-## <a name="example"></a><span data-ttu-id="482a1-111">例</span><span class="sxs-lookup"><span data-stu-id="482a1-111">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b6a66-111">例</span><span class="sxs-lookup"><span data-stu-id="b6a66-111">Example</span></span>
 
-<span data-ttu-id="482a1-112">次の例では、 **StillExecuting** プロパティと **Cancel** メソッドを使用して、 **Connection** オブジェクトを非同期で開きます。</span><span class="sxs-lookup"><span data-stu-id="482a1-112">This example uses the **StillExecuting** property and the **Cancel** method to asynchronously open a **Connection** object.</span></span>
+<span data-ttu-id="b6a66-112">次の例では、 **StillExecuting** プロパティと **Cancel** メソッドを使用して、 **Connection** オブジェクトを非同期で開きます。</span><span class="sxs-lookup"><span data-stu-id="b6a66-112">This example uses the **StillExecuting** property and the **Cancel** method to asynchronously open a **Connection** object.</span></span>
 
 ```vb
     Sub CancelConnectionX() 
