@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: f1fc7fc5-c71f-44f7-930a-571773eb6809
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0520b219c87207a54555ba74050761f6ecc4854a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 589ad42199e6f2ec1039499dfd9beda044ccc3dd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357310"
 ---
 # <a name="mapiallocatebuffer"></a>MAPIAllocateBuffer
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メモリ バッファーを割り当てます。 
+メモリバッファーを割り当てます。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapix.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |mapix  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 SCODE MAPIAllocateBuffer(
@@ -44,23 +44,23 @@ SCODE MAPIAllocateBuffer(
 
  _cbSize_
   
-> [in]割り当てられるバッファーのバイト単位のサイズです。 
+> 順番割り当てるバッファーのサイズ (バイト単位)。 
     
- _lppBuffer_
+ _lppbuffer_
   
-> [out]返されるバッファーへのポインター。
+> 読み上げ返された割り当て済みバッファーへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 呼び出しが成功し、要求されたメモリ バッファーが返されます。
+> 呼び出しが成功し、要求されたメモリバッファーが返されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**MAPIAllocateBuffer**の中に処理を呼び出す、呼び出し元の実装は、オペレーティング システムからメモリ ブロックを取得します。 メモリ バッファーは、偶数のバイト アドレスに割り当てられます。 長整数型のアクセスがより効率的なプラットフォームでは、オペレーティング システムは、バイト単位でサイズが 4 の倍数のアドレスにバッファーを割り当てます。 
+**MAPIAllocateBuffer**呼び出し処理の間、呼び出し側の実装はオペレーティングシステムからメモリブロックを取得します。 メモリバッファーは、偶数番号のバイトアドレスに割り当てられます。 長い整数アクセスがより効率的になるプラットフォームでは、オペレーティングシステムは、バイト数が4の倍数であるアドレスにバッファーを割り当てます。 
   
-[MAPIFreeBuffer](mapifreebuffer.md)関数のリリースを呼び出す、 [MAPIAllocateMore](mapiallocatemore.md)関数とすべてのバッファーを呼び出すことによって、 **MAPIAllocateBuffer**、によって割り当てられたメモリ バッファーにリンクして、メモリが不要になったとき。 
+[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出すと、メモリが不要になったときに、 [MAPIAllocateMore](mapiallocatemore.md)関数とそれにリンクされているすべてのバッファーを呼び出すことによって、 **MAPIAllocateBuffer**によって割り当てられたメモリバッファーを解放します。 
   
 ## <a name="see-also"></a>関連項目
 

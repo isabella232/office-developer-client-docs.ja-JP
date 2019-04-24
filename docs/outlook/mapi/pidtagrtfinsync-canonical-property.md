@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 443cc68e-7898-4285-a606-f916fcd18554
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ed038faf44f350b041191373cf573e7e185337c7
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25383059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357877"
 ---
 # <a name="pidtagrtfinsync-canonical-property"></a>PidTagRtfInSync 標準プロパティ
 
@@ -25,56 +25,56 @@ ms.locfileid: "25383059"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) である**PR_RTF_COMPRESSED**プロパティにこのメッセージの**PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) のプロパティと同じテキストの内容がある場合、TRUE が格納されます。
+**PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) プロパティのテキストコンテンツが、このメッセージの**PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) プロパティと同じである場合は、TRUE が含まれます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_RTF_IN_SYNC  <br/> |
-|識別子:  <br/> |0x0E1F  <br/> |
+|識別子:  <br/> |0x0e1f  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|エリア:  <br/> |メール  <br/> |
+|エリア:  <br/> |電子メール  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-値が ([PidTagBody](pidtagbody-canonical-property.md)) である**PR_BODY**プロパティをこのメッセージのテキスト形式のバージョンと、 **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) のプロパティをリッチ テキスト形式 (RTF) バージョンが同じ以外の場合は TRUE の場合**PR_BODY**と**PR_RTF_COMPRESSED**の書式設定に空白文字です。 2 つのバージョンのテキストは、同じ順序で同じ文字で構成されます。
+値 TRUE は、 **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) プロパティ、このメッセージのプレーンテキストバージョン、および**PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) プロパティ (リッチテキスト形式 (RTF)) が同一であることを意味します。ただし、**PR_BODY**の空白スペースと**PR_RTF_COMPRESSED**の書式設定。 2つのバージョンのテキストは、同じシーケンスの同じ文字で構成されています。
   
-FALSE は、2 つのバージョンがテキスト コンテンツは同期されません[へ](rtfsync.md)の関数によって同期されるの値です。 1 つのバージョンが変更されているし、他のバージョンには、ありません。 
+値が FALSE の場合は、テキストコンテンツに対して2つのバージョンが同期されませんが、 [rtfsync](rtfsync.md)関数による同期が可能であることを意味します。 1つのバージョンが変更され、もう一方のバージョンにはがありません。 
   
-値は、なし、2 つのバージョンでは、両方が存在か、以前存在していた場合は同期できません。 1 つのバージョンは削除されたり、大幅に同期が可能ではないことに変更します。
+値がない場合、2つのバージョンが存在しているか、存在していた場合は、同期できないことを意味します。 1つのバージョンが削除または変更されたため、同期を実行できなくなりました。
   
-**PR_RTF_COMPRESSED**を変更したクライアント アプリケーションは、強制的に同期するには、このプロパティに false を指定の値を設定する必要があります。 RTF に対応してメッセージ ・ ストアには、 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)の呼び出し中に**行う**を使用して、同期を実行します。 RTF に対応していないクライアントが**PR_RTF_COMPRESSED**を読む前に**PR_RTF_IN_SYNC**の設定を確認して必要な場合は最初の**行う**を呼び出します。 
+**PR_RTF_COMPRESSED**を変更したクライアントアプリケーションでは、このプロパティの値を FALSE に設定して同期を強制する必要があります。 RTF 対応のメッセージストアは、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)呼び出しの間に**rtfsync**を使用して同期を実行する必要があります。 RTF 対応クライアントは**PR_RTF_COMPRESSED**を読み取る前に**PR_RTF_IN_SYNC**の設定を確認し、必要に応じて**rtfsync**を最初に呼び出す必要があります。 
   
-**PR_BODY**が空白以外の値に変更がある場合、メッセージ ・ ストアは、同期を終了するのには**PR_RTF_IN_SYNC**を削除しなければなりません。 
+**PR_BODY**に空白以外の変更があった場合、メッセージストアは、同期を終了するために**PR_RTF_IN_SYNC**を削除する必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルのオブジェクトを処理します。
+> メッセージと添付ファイルオブジェクトを処理します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

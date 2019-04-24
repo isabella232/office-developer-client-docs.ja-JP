@@ -13,11 +13,11 @@ api_type:
 ms.assetid: ee2bc6ca-3769-4b56-a77d-81418d28f768
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: da26fd2a8643817cf60adbfa6f4e85da345b875c
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25393470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360782"
 ---
 # <a name="pidtagdisplaytype-canonical-property"></a>PidTagDisplayType 標準プロパティ
 
@@ -25,7 +25,7 @@ ms.locfileid: "25393470"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルの特定の行にアイコンを関連付けるに使用する値が含まれています。 
+表の特定の行にアイコンを関連付けるために使用される値を格納します。 
   
 |||
 |:-----|:-----|
@@ -34,17 +34,17 @@ ms.locfileid: "25393470"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |MAPI アドレス帳  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティには、その型に基づいてテーブルのエントリの特別な処理を容易にする長整数が含まれています。 この特別な処理は、通常、アイコン、または、表示の種類に関連付けられているその他の表示要素を表示するので構成されます。 
+このプロパティには、その種類に基づいてテーブルエントリの特別な処理を容易にする長整数型 (long) の値が含まれています。 この特別な処理では、通常、表示の種類に関連付けられたアイコンまたはその他の表示要素が表示されます。 
   
-フォルダーの内容のテーブルでは、このプロパティは使用されません。 クライアント アプリケーションは、 **PR_ICON** ([PidTagIcon](pidtagicon-canonical-property.md)) と**PR_MINI_ICON** ([を取得するのにメッセージのプロパティの**PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) と[IMAPIFormInfo](imapiforminfoimapiprop.md)の適切なインターフェイスを使用する必要があります。PidTagMiniIcon](pidtagminiicon-canonical-property.md)) そのメッセージのプロパティです。 
+このプロパティは、フォルダーの内容の表では使用されません。 クライアントアプリケーションは、メッセージの**PR_MESSAGE_CLASS** (PidTagMessageClass) プロパティと適切な[imapiforminfo](imapiforminfoimapiprop.md)インターフェイスを使用して、 **PR_ICON** ([PidTagIcon](pidtagicon-canonical-property.md)) と**PR_MINI_ICON** ([](pidtagmessageclass-canonical-property.md)) を取得する必要があります ([PidTagMiniIcon](pidtagminiicon-canonical-property.md)) そのメッセージのプロパティ。 
   
-このプロパティは、次の値の 1 つだけ持つことができます。
+このプロパティには、次のいずれかの値を指定できます。
   
 DT_AGENT 
   
-> その日の見積もりなど、自動化されたエージェントまたは気象のグラフ表示します。
+> 自動エージェント (見積書など) または天気予報チャートが表示されます。
     
 DT_DISTLIST 
   
@@ -52,99 +52,99 @@ DT_DISTLIST
     
 DT_FOLDER 
   
-> フォルダーの横にある既定のフォルダー アイコンを表示します。
+> フォルダーの横に既定のフォルダーアイコンを表示します。
     
 DT_FOLDER_LINK 
   
-> 既定のフォルダー アイコンではなく既定フォルダーのリンクのアイコンがフォルダーの横にあるを表示します。
+> 既定のフォルダーアイコンではなく、フォルダーの横に既定のフォルダーリンクアイコンを表示します。
     
 DT_FOLDER_SPECIAL 
   
-> パブリック フォルダーの特殊な型など特定のアプリケーションの違いは、のフォルダーのアイコンを表示します。
+> 特別な種類のパブリックフォルダーなど、アプリケーション固有の区別があるフォルダーのアイコンを表示します。
     
 DT_FORUM 
   
-> フォーラム、掲示板サービスなど、パブリック フォルダーまたは共有フォルダーです。
+> 掲示板サービス、公共または共有フォルダーなどのフォーラム。
     
 DT_GLOBAL 
   
-> グローバル アドレス帳です。
+> グローバルアドレス帳。
     
 DT_LOCAL 
   
-> 少人数のワークグループと共有しているローカルのアドレス帳です。
+> 小さなワークグループと共有しているローカルアドレス帳。
     
 DT_MAILUSER 
   
-> 一般的なメッセージングのユーザーです。
+> 一般的なメッセージングユーザー。
     
 DT_MODIFIABLE 
   
-> 変更可能です。コンテナーは必要がありますと変更可能なユーザー ・ インタ フェースで示されます。
+> 可能コンテナーは、ユーザーインターフェイスで変更可能として表示される必要があります。
     
 DT_NOT_SPECIFIC 
   
-> 他の設定のいずれかが一致しません。
+> 他の設定と一致しません。
     
 DT_ORGANIZATION 
   
-> ヘルプデスク、会計、または血のドライブのコーディネーターなど、大規模なグループに対して定義されている特殊なエイリアスです。
+> ヘルプデスク、経理、または血圧のコーディネーターなど、大規模なグループに定義された特別なエイリアス。
     
 DT_PRIVATE_DISTLIST 
   
-> プライベートは、個人的には配布リストを管理します。
+> 個人が管理する私的な配布リスト。
     
 DT_REMOTE_MAILUSER 
   
-> 既知の外部またはリモートのメッセージング システムから受信者です。
+> 外部またはリモートのメッセージングシステムからの受信者であることがわかっている受信者。
     
 DT_WAN 
   
-> ワイド エリア ネットワークのアドレス帳です。
+> ワイドエリアネットワークのアドレス帳。
     
-アドレス帳の内容のテーブルでは、DT_AGENT、DT_DISTLIST、DT_FORUM、DT_MAILUSER、DT_ORGANIZATION、DT_PRIVATE_DISTLIST、および DT_REMOTE_MAILUSER の値を使用します。 アドレス帳階層テーブルと一時テーブルは、DT_GLOBAL、DT_LOCAL、DT_MODIFIABLE、DT_NOT_SPECIFIC、および DT_WAN の値を使用します。 フォルダーの階層テーブルには、DT_FOLDER、DT_FOLDER_LINK、DT_FOLDER_SPECIAL の値を使用します。 
+アドレス帳の内容の表では、DT_AGENT、DT_DISTLIST、DT_FORUM、DT_MAILUSER、DT_ORGANIZATION、DT_PRIVATE_DISTLIST、および DT_REMOTE_MAILUSER の値を使用します。 アドレス帳階層テーブルと1回限りのテーブルは、DT_GLOBAL、DT_LOCAL、DT_MODIFIABLE、DT_NOT_SPECIFIC、DT_WAN の各値を使用します。 フォルダー階層テーブルは、DT_FOLDER、DT_FOLDER_LINK、および DT_FOLDER_SPECIAL の値を使用します。 
   
-このプロパティが設定されていない場合、クライアントを想定してください既定の型、テーブル、通常 DT_FOLDER、DT_LOCAL、または DT_MAILUSER の適切です。 
+このプロパティが設定されていない場合、クライアントは、テーブルに適した既定の種類 (通常は、DT_FOLDER、DT_LOCAL、または DT_MAILUSER) を想定する必要があります。 
   
- **メモ**記載されていないすべての値は、MAPI 用に予約されています。 クライアント アプリケーションは、新しい値を定義する必要がないと、文書化されていない値で対処するために準備する必要があります。 
+ **メモ**文書化されていないすべての値は MAPI 用に予約されています。 クライアントアプリケーションは、新しい値を定義せず、文書化されていない値を処理するために準備する必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルのオブジェクトを処理します。
+> メッセージと添付ファイルオブジェクトを処理します。
     
-[[MS OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
-> プロパティは、アドレス帳のテンプレートの許可の操作を指定します。
+> アドレス帳テンプレートで許容されるプロパティと操作を指定します。
     
-[[MS OXLDAP]](https://msdn.microsoft.com/library/727c090a-f05c-4eed-94aa-565724cfc550%28Office.15%29.aspx)
+[[OXLDAP]](https://msdn.microsoft.com/library/727c090a-f05c-4eed-94aa-565724cfc550%28Office.15%29.aspx)
   
-> ディレクトリのアクセスを有効にします。
+> ディレクトリアクセスを有効にします。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

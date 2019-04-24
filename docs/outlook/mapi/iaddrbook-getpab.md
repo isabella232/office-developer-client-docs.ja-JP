@@ -1,5 +1,5 @@
 ---
-title: IAddrBookGetPAB
+title: iaddrbookgetpab
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 9830e09c-700f-469b-a54d-4e4e0583aa84
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1f93ee653c9365488432c4e797b171a199c30107
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6c565c088fd4ef7d5df141bf770c560f79535998
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349302"
 ---
 # <a name="iaddrbookgetpab"></a>IAddrBook::GetPAB
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-個人用アドレス帳 (PAB) として指定されているコンテナーのエントリの識別子を返します。
+個人用アドレス帳 (PAB) として指定されているコンテナーのエントリ識別子を返します。
   
 ```cpp
 HRESULT GetPAB(
@@ -38,29 +38,29 @@ HRESULT GetPAB(
 
  _lpcbEntryID_
   
-> [out]_LppEntryID_パラメーターで指定されたエントリの識別子のバイト数へのポインター。 
+> 読み上げ_lppentryid_パラメーターによって指定されたエントリ識別子のバイト数へのポインター。 
     
- _lppEntryID_
+ _lppentryid_
   
-> [out]個人アドレス帳のエントリの識別子へのポインターへのポインター。 _LppEntryID_パラメーターには、コンテナーが、個人用アドレス帳として指定されてない場合は 0 が含まれています。 
+> 読み上げPAB のエントリ識別子へのポインターへのポインター。 PAB として指定されているコンテナーがない場合、 _lppentryid_パラメーターには0が格納されます。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 個人アドレス帳のエントリ id が正常に返されました。
+> PAB のエントリ識別子が正常に返されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-クライアントは、個人用アドレス帳として指定されているコンテナーのエントリの識別子を取得するために**GetPAB**メソッドを呼び出します。 場合は、プロファイルに個人用アドレス帳が確立されていない、MAPI、個人用アドレス帳として最初のコンテナーの選択、アドレス帳階層の変更を可能にします。 
+クライアントは、 **getpab**メソッドを呼び出して、pab として指定されたコンテナーのエントリ識別子を取得します。 pab がプロファイルで確立されていない場合、MAPI は、変更を許可するアドレス帳階層の最初のコンテナーを pab として選択します。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MainDlg.cpp  <br/> |CMainDlg::OnOpenPAB  <br/> |MFCMAPI では、 **GetPAB**メソッドを使用して、ユーザーの個人用アドレス帳の ID を取得します。  <br/> |
+|maindlg .cpp  <br/> |CMainDlg:: onopenpab  <br/> |mfcmapi は、 **getpab**メソッドを使用して、ユーザーの個人用アドレス帳の ID を取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

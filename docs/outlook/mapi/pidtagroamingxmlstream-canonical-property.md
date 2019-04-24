@@ -13,11 +13,11 @@ api_type:
 ms.assetid: ce55b50e-3dbf-4690-9102-c08f35ada82e
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3e7ce1f810a1dd37cd4370ceb423b664d75878a2
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25387014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359543"
 ---
 # <a name="pidtagroamingxmlstream-canonical-property"></a>PidTagRoamingXmlStream 標準プロパティ
 
@@ -25,48 +25,48 @@ ms.locfileid: "25387014"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-任意の XML ストリームが含まれています。
+任意の XML ストリームが格納されています。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_ROAMING_XMLSTREAM  <br/> |
 |識別子:  <br/> |0x7C08  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |Configuration  <br/> |
+|エリア:  <br/> |構成  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティには、XML データの任意のストリームが含まれています。 メッセージ内の他のプロパティでこのプロパティを使用する特定のスキーマを意味可能性があります。
+このプロパティには、XML データの任意のストリームが含まれています。 メッセージ内の他のプロパティは、このプロパティで使用する特定のスキーマを示している場合があります。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
+[[OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
   
-> 場所と共有カテゴリのリストおよび作業時間など、クライアントとサーバーの構成データのプロパティを指定します。
+> カテゴリの共有リストや稼働時間など、クライアントおよびサーバーの構成データの場所とプロパティを指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

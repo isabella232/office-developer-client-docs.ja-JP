@@ -1,5 +1,5 @@
 ---
-title: ITableDataHrNotify
+title: itabledatahrnotify
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 98548b50-342e-434a-9ad3-c37ba418c5ce
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 20831901567f177ada70a6cea94db0537786db94
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: aa2170bf4bedfb441ad4808f774f6f71d5caf85e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348637"
 ---
 # <a name="itabledatahrnotify"></a>ITableData::HrNotify
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルの行の通知を送信します。
+表の行の通知を送信します。
   
 ```cpp
 HRESULT HrNotify(
@@ -35,29 +35,29 @@ HRESULT HrNotify(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _あう_
+ _cvalues_
   
-> [in]_LpSPropValue_パラメーターが指す[SPropValue](spropvalue.md)構造体のプロパティ値の数です。 
+> 順番_lpspropvalue_パラメーターによってポイントされている[spropvalue](spropvalue.md)構造のプロパティ値の数。 
     
- _lpSPropValue_
+ _lpspropvalue_
   
-> [in]対象行の列の値を記述する**SPropValue**構造体へのポインター。 
+> 順番ターゲット行の列の値を記述する**spropvalue**構造体へのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>����
+## <a name="remarks"></a>解説
 
-**ITableData::HrNotify**メソッドは、 _lpSPropValue_パラメーターで指定されたプロパティで示される行に一致する行の TABLE_ROW_MODIFIED の通知を送信します。 **HrNotify**は、行に変更があったかどうかに関係なく通知を送信します。 すべてのクライアントやテーブルのビューがあり、そのビューに通知を登録するのには[IMAPITable::Advise](imapitable-advise.md)としているサービス プロバイダーは、この通知を受信します。 
+**itabledata:: hrnotify**メソッドは、 _lpspropvalue_パラメーターで指定されたプロパティによって示される行に一致する行に対して TABLE_ROW_MODIFIED 通知を送信します。 **hrnotify**は、変更が行に対して発生したかどうかにかかわらず通知を送信します。 表のビューを持つすべてのクライアントおよびサービスプロバイダーは、 [「IMAPITable:: アドバイス](imapitable-advise.md)」を参照して、この通知を受信します。 
   
 ## <a name="see-also"></a>関連項目
 

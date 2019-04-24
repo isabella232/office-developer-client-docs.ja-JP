@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 596c62b7-8d42-1854-d709-592db09a6a84
 description: 図形をロックして、削除できないようにします。
-ms.openlocfilehash: 00229dcabf45d2a3435039ffe05fd7eb4de75808
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0819969c9ba17a52de19341b359b33ceae5b44d8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359620"
 ---
-# <a name="lockdelete-cell-protection-section"></a>[LockDelete] セル ([保護] セクション)
+# <a name="lockdelete-cell-protection-section"></a>[LockDelete] セル ([Protection] セクション)
 
 図形をロックして、削除できないようにします。
   
@@ -25,13 +25,13 @@ ms.locfileid: "19805751"
 | TRUE  <br/> | 図形は削除できません。  <br/> |
 | FALSE  <br/> | 図形は削除できます。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LockDelete] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | LockDelete  <br/> |
+| セル名:  <br/> | [lockdelete]  <br/> |
    
 プログラムから、インデックスによって [LockDelete] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

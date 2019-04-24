@@ -12,51 +12,51 @@ api_type:
 - COM
 ms.assetid: 380ea11c-b1ac-4f54-9034-c52edec4f700
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e986313ccac7533178e2c6b466053d5665b9e7e7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ae4993f46e10b29ad29a88b7b8b1c54151f5efa7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355252"
 ---
 # <a name="pidtagredirectionhistory-canonical-property"></a>PidTagRedirectionHistory 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-配信されたメッセージに覆われてルートに関する情報が含まれています。
+配信されたメッセージが対象とするルートに関する情報を格納します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_REDIRECTION_HISTORY  <br/> |
-|識別子:  <br/> |0x002C  <br/> |
+|識別子:  <br/> |0x002c  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |MAPI の封筒  <br/> |
+|エリア:  <br/> |MAPI エンベロープ  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティには、自動エージェントによってメッセージの自動転送された場合は使用します。
+このプロパティは、メッセージが自動エージェントによって autoforwarded されるときに使用されます。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

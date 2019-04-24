@@ -12,51 +12,51 @@ api_type:
 - COM
 ms.assetid: b483dd42-92c0-42c2-b6f9-621daeee1659
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d6025feb77f5e880dec98bc65f0b170c25a00b78
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5494f95aaf554038f43c34e1e1e388f871a52775
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355630"
 ---
 # <a name="pidtagrecipientstatus-canonical-property"></a>PidTagRecipientStatus 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-トランスポート プロバイダー間での配送の責任を割り当てることで、MAPI スプーラーが使用する値が含まれています。
+トランスポートプロバイダー間で配信の責任を割り当てる際に MAPI スプーラーによって使用される値を格納します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_RECIPIENT_STATUS  <br/> |
-|識別子:  <br/> |0x0E15  <br/> |
+|識別子:  <br/> |0x0e15  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |MAPI 以外から送信できます。  <br/> |
+|エリア:  <br/> |MAPI ノンノンアウトテーブル  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティを使用しません。 MAPI によって使用するために予約されています。
+このプロパティを使用しません。 MAPI で使用するために予約されています。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

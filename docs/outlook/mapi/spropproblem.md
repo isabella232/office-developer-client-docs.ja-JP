@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: 55943197-fd11-442d-bb4b-0bff565b846e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7c19cce33ec351a5627870782ebb4fe509a98be2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b3a0872c94459fc7c24d13e35adf335ef8012182
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357849"
 ---
 # <a name="spropproblem"></a>SPropProblem
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロパティを含む操作に関連するエラーについて説明します。
+プロパティを含む操作に関連するエラーを記述します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SPropProblem
@@ -43,21 +43,21 @@ typedef struct _SPropProblem
 
 ## <a name="members"></a>Members
 
- **ulIndex**
+ **ulindex**
   
-> プロパティ タグの配列のインデックス。
+> プロパティタグの配列内のインデックス。
     
  **ulPropTag**
   
-> エラーを持つプロパティのプロパティ タグです。
+> エラーが発生したプロパティのプロパティタグ。
     
- **scode**
+ **scode as scode**
   
-> エラー値がプロパティを使用して問題を説明します。 この値は、任意の MAPI [SCODE](scode.md)の値を指定できます。 
+> プロパティに関する問題を説明するエラー値。 この値には、任意の MAPI の[SCODE](scode.md)値を指定できます。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**SPropProblem**構造体の配列は次のメソッドから返されます。 
+**spropproblem**構造体の配列は、次のメソッドから返されます。 
   
 - [IMAPISupport::DoCopyTo](imapisupport-docopyto.md)
     
@@ -73,9 +73,9 @@ typedef struct _SPropProblem
     
 - [IPropData::HrAddObjProps](ipropdata-hraddobjprops.md)
     
-**SPropProblem**構造体には、変更または MAPI プロパティを削除しようとしています。 操作に起因する**SCODE**エラー値が含まれています。 
+**spropproblem**構造体には、MAPI プロパティを変更または削除しようとした操作の結果として返される**SCODE**エラー値が含まれています。 
   
-エラーのプロパティに関連する**SPropProblem**構造体のしくみに関する詳細については、 [MAPI 名前付きプロパティ](mapi-named-properties.md)を参照してください。 
+**spropproblem**構造がプロパティに関連するエラーとどのように連動するかの詳細については、「 [MAPI の名前付きプロパティ](mapi-named-properties.md)」を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -7,29 +7,29 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: faafde3d-3989-4182-91f1-a0cf0f1b5388
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 172abe64073b11d98bfb5f76999237218ef8944a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 6c2c733b87b85971fad8060040e713b41b0f5616
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360516"
 ---
 # <a name="updating-mapi-properties"></a>MAPI プロパティの更新
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアントとサービス ・ プロバイダーは、呼び出しによってプロパティの値を更新できます。
+クライアントおよびサービスプロバイダーは、次のものを呼び出してプロパティの値を更新できます。
   
-- オブジェクトのプロパティの 1 つ以上の値を更新するオブジェクトの[IMAPIProp::SetProps](imapiprop-setprops.md)メソッドです。 
+- オブジェクトの[imapiprop:: setprops](imapiprop-setprops.md)メソッドを実行して、1つ以上のオブジェクトのプロパティの値を更新します。 
     
-- 一度に 1 つのプロパティを更新するのには[HrSetOneProp](hrsetoneprop.md)関数です。 **HrSetOneProp**を使用して、対象のオブジェクトがローカルの場合のみこの関数は、リモート オブジェクトを使用すると、パフォーマンスの低下を発生できます。 
+- [hrsetoneprop](hrsetoneprop.md)関数は、一度に1つのプロパティのみを更新します。 **hrsetoneprop**は、対象のオブジェクトがローカルの場合にのみ使用します。この関数は、リモートオブジェクトと共に使用すると、パフォーマンスの低下を引き起こす可能性があります。 
     
-**SetProps**を使用して、メッセージ クラス、またはメッセージの PR_MESSAGE_CLASS_A ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) のプロパティを更新する方法を次の手順に示します。 
+次の手順は、 **setprops**を使用してメッセージの message クラスまたは PR_MESSAGE_CLASS_A ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) プロパティを更新する方法を示しています。 
   
-### <a name="to-update-the-message-class-of-a-message"></a>メッセージのメッセージ クラスを更新するには 
+### <a name="to-update-the-message-class-of-a-message"></a>メッセージのメッセージクラスを更新するには 
   
-1. メッセージ クラスの[SPropValue](spropvalue.md)構造体を割り当てるし、必要に応じてそのメンバーを設定します。 
+1. message クラスの[spropvalue](spropvalue.md)構造体を割り当て、そのメンバーを必要に応じて設定します。 
     
   ```cpp
     SPropValue spvMsgClass;
@@ -38,7 +38,7 @@ ms.locfileid: "22581350"
     
   ```
 
-2. 新しいメッセージ クラスを設定するのには、メッセージの**IMAPIProp::SetProps**メソッドを呼び出します。 
+2. メッセージの**imapiprop:: setprops**メソッドを呼び出して、新しいメッセージクラスを設定します。 
     
   ```cpp
     hRes = lpMessage->SetProps(1, (LPSPropValue) &spvMsgClass, NULL);

@@ -1,19 +1,19 @@
 ---
-title: 行 (Visio シェイプ シート リファレンス)
+title: Rows (Visio シェイプシートリファレンス)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7f2b4e04-2f25-44fd-8167-6fe97fa2b719
-ms.openlocfilehash: e3bf7af0e3ee5a49502f3b71890a6c3cedfff6f8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f69d1286cc8eb2f42dd742288b961803155664a4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360537"
 ---
-# <a name="rows-visio-shapesheet-reference"></a>行 (Visio シェイプ シート リファレンス)
+# <a name="rows-visio-shapesheet-reference"></a>Rows (Visio シェイプシートリファレンス)
 
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -29,9 +29,9 @@ ms.locfileid: "19806298"
     
 - [[EllipticalArcTo] 行 ([Geometry] セクション)](ellipticalarcto-row-geometry-section.md)
     
-- [[Gradient Stop] 行 ([塗りつぶしグラデーション] セクション)](gradient-stop-row-fill-gradient-section.md)
+- [グラデーションの分岐点の行 (塗りつぶしのグラデーションのセクション)](gradient-stop-row-fill-gradient-section.md)
     
-- [[Gradient Stop] 行 ([線のグラデーション] セクション)](gradient-stop-row-line-gradient-section.md)
+- [グラデーションの分岐点の行 (線のグラデーションのセクション)](gradient-stop-row-line-gradient-section.md)
     
 - [[Hyperlink] 行 ([Hyperlinks] セクション)](hyperlink-row-hyperlinks-section.md)
     
@@ -45,15 +45,15 @@ ms.locfileid: "19806298"
     
 - [[PolylineTo] 行 ([Geometry] セクション)](polylineto-row-geometry-section.md)
     
-- [[RelCubBezTo] 行 ([図形座標] セクション)](relcubbezto-row-geometry-section.md)
+- [[relcubbezto] 行 (Geometry セクション)](relcubbezto-row-geometry-section.md)
     
-- [[RelEllipticalArcTo] 行 ([図形座標] セクション)](relellipticalarcto-row-geometry-section.md)
+- [[relellipticalarcto] 行 (Geometry セクション)](relellipticalarcto-row-geometry-section.md)
     
-- [[RelLineTo] 行 ([図形座標] セクション)](rellineto-row-geometry-section.md)
+- [rellineto 行 (図形座標] セクション)](rellineto-row-geometry-section.md)
     
-- [[RelMoveTo] 行 ([図形座標] セクション)](relmoveto-row-geometry-section.md)
+- [「relmoveto」行 (「Geometry」セクション)](relmoveto-row-geometry-section.md)
     
-- [[RelQuadBezTo] 行 ([図形座標] セクション)](relquadbezto-row-geometry-section.md)
+- [[relquadbezto] 行 (Geometry セクション)](relquadbezto-row-geometry-section.md)
     
 - [[Shape Data] 行 ([Shape Data] セクション)](shape-data-row-shape-data-section.md)
     

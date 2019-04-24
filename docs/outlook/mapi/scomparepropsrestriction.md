@@ -12,22 +12,22 @@ api_type:
 - COM
 ms.assetid: 3231a91a-1ef2-4dd8-9f3e-79ca56d2eae9
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7177b2f0f709939b7580fa7abb87490073bb00c4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 513ec0db4e99e687d8aeb9e1d6acdef73df4d158
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351290"
 ---
 # <a name="scomparepropsrestriction"></a>SComparePropsRestriction
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-リレーショナル演算子を使用して 2 つのプロパティをテストする比較プロパティの制限について説明します。 
+リレーションシップ演算子を使用して2つのプロパティをテストする compare プロパティ制限について説明します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SComparePropsRestriction
@@ -43,39 +43,39 @@ typedef struct _SComparePropsRestriction
 
 **relop**
   
-> 2 つのプロパティを比較に使用する関係演算子です。 使用可能な値は次のとおりです。
+> 2つのプロパティを比較するために使用するリレーショナル演算子です。 可能な値は次のとおりです。
     
-  - RELOP_GE: 比較を行うベースの最初の値が大きいか等しい。
+  - RELOP_GE: 比較は、最初の値よりも大きくなるか等しいかに基づいて行われます。
       
-  - RELOP_GT: 比較を行うベースの最初の値が大きい。
+  - RELOP_GT: 比較は、より大きな最初の値に基づいて行われます。
       
-  - RELOP_LE: 比較を行うに基づいて最初の値が同等またはそれ以下にします。
+  - RELOP_LE: 比較は、最初の値よりも小さいか等しいかに基づいて行われます。
       
-  - RELOP_LT: 比較を行うベースの最初の値が小さい方です。
+  - RELOP_LT: 比較は、小さい方の値に基づいて行われます。
       
-  - RELOP_NE: 比較を行うベースの値が等しくないです。
+  - RELOP_NE: 比較は、等しくない値に基づいて行われます。
       
-  - RELOP_RE: 比較を (正規表現) の値などを基に行われます。
+  - RELOP_RE: 比較は、LIKE (正規表現) の値に基づいて行われます。
       
-  - RELOP_EQ: 比較で行われるベースの値に等しい。
+  - RELOP_EQ: 比較は同じ値に基づいて行われます。
     
 **ulPropTag1**
   
-> 比較する最初のプロパティのプロパティ タグです。 
+> 比較する最初のプロパティのプロパティタグ。 
     
 **ulPropTag2**
   
-> 比較する 2 番目のプロパティのプロパティ タグです。
+> 比較する2番目のプロパティのプロパティタグ。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-比較の順序は、 _(1) (関係演算子) のプロパティ タグ (プロパティ タグ 2)_。 比較するプロパティは、同じ型でなければなりません。 構造体はパラメーターとして渡す[IMAPITable](imapitableiunknown.md)メソッドからエラー値 MAPI_E_TOO_COMPLEX を取得するには、MAPI またはサービス プロバイダーは、さまざまな種類のプロパティを比較しようとしています。 
+比較順序は _(プロパティタグ 1) (リレーショナル演算子) (プロパティタグ 2)_ です。 比較するプロパティは同じ型でなければなりません。 さまざまな種類のプロパティを比較しようとすると、MAPI またはサービスプロバイダーは、構造体がパラメーターとして渡される[IMAPITable](imapitableiunknown.md)メソッドからエラー値 MAPI_E_TOO_COMPLEX を返します。 
   
-プロパティの一方または両方が存在しない場合、比較のプロパティ値の制限の結果は定義されていません。 クライアントなどの制限について明確に定義された動作を必要とし、ないときことを確認して、プロパティが存在するかどうか (たとえばは必要なテーブルの列) と、既存の比較プロパティの制限に参加する**と**制限を作成する必要があります制限です。 [SExistRestriction](sexistrestriction.md)構造体を使用すると、既存の制限、**および**制限を定義するのには、 [SAndRestriction](sandrestriction.md)構造体を定義します。 
+プロパティの一方または両方が存在しない場合、比較プロパティ値の制限の結果は未定義です。 クライアントでこのような制限に対して適切に定義された動作が必要であり、プロパティが存在するかどうかがわからない (たとえば、テーブルの必須の列**** ではない) 場合は、compare プロパティ制限を既存の値で結合するための制限を作成する必要があります。条件. [sexistrestriction](sexistrestriction.md)構造を使用して、**と**制限を定義するための、存在制限と[SAndRestriction](sandrestriction.md)構造を定義します。 
   
-**UlPropTag1**と**ulPropTag2**のメンバーで指定されたプロパティは、サービス プロバイダーがサポートしている場合、複数値を持つことができます。 
+サービスプロバイダーがサポートしている場合、 **ulPropTag1**メンバーと**ulPropTag2**メンバーで指定されたプロパティは複数値になることができます。 
   
-**SComparePropsRestriction**構造体および制限の詳細については一般に、[制限の詳細](about-restrictions.md)を参照してください。
+**scomparepropsrestriction**構造と一般的な制限事項の詳細については、「[制限につい](about-restrictions.md)て」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

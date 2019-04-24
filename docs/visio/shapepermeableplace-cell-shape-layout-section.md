@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: b647cbb5-2769-068d-bbda-2dc983c47ac9
 description: '[レイアウトの構成] ダイアログ ボックスで図形をレイアウトするときに、配置可能な図形を図形の上部に配置するかどうかを指定します (このダイアログ ボックスを開くには、[デザイン] タブの [レイアウト] グループで、[ページの再レイアウト] をクリックして、[その他のレイアウト オプション] をクリックします)。'
-ms.openlocfilehash: 1873575eb4322d31f81c0dd34557c6167750ce82
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ceecfa25c66c3ba261865d0131a3f55ef444d5e8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357058"
 ---
-# <a name="shapepermeableplace-cell-shape-layout-section"></a>[ShapePermeablePlace] セル ([図形レイアウト] セクション)
+# <a name="shapepermeableplace-cell-shape-layout-section"></a>[ShapePermeablePlace] セル ([Shape Layout] セクション)
 
 [**レイアウトの構成**] ダイアログ ボックスで図形をレイアウトするときに、配置可能な図形を図形の上部に配置するかどうかを指定します (このダイアログ ボックスを開くには、[**デザイン**] タブの [**レイアウト**] グループで、[**ページの再レイアウト**] をクリックして、[**その他のレイアウト オプション**] をクリックします)。
   
@@ -25,9 +25,9 @@ ms.locfileid: "19806395"
 |TRUE  <br/> |他図形をこの図形の上に配置できます。  <br/> |
 |FALSE  <br/> |他図形をこの図形の上に配置できません。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**動作**] ダイアログ ボックスの [**配置**] タブで、このセルの値を設定することもできます (図形を選択して、[[開発](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] で、[**動作**] をクリックし、[**配置**] タブをクリックして). 
+このセルの値は、[**基本動作**] ダイアログボックスの [**配置**] タブで設定することもできます (図形が選択されている場合)、[[開発](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] グループで、[**基本動作**] をクリックし、[**配置**] タブをクリックします。). 
   
 Visio 2000 より前のバージョンでは、[Miscellaneous] セクションで [ObjInteract] セルを使用してこの動作を設定していました。
   
@@ -35,7 +35,7 @@ Visio 2000 より前のバージョンでは、[Miscellaneous] セクション�
   
 |||
 |:-----|:-----|
-|セル名 :  <br/> |ShapePermeablePlace  <br/> |
+|セル名 :  <br/> |[shapepermeableplace]  <br/> |
    
 プログラムから、インデックスによって [ShapePermeablePlace] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

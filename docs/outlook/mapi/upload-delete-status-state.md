@@ -1,45 +1,45 @@
 ---
-title: 削除状況アップロード状態
+title: 削除の状態の状態をアップロードする
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: dee566ad-b46d-1015-4b0b-6c3313060142
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4a45cfafec5126c72f365858e41963bc95fa707a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: dda9d23a572446a5fa79a9500eb69558b6e0debd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357709"
 ---
-# <a name="upload-delete-status-state"></a>削除状況アップロード状態
+# <a name="upload-delete-status-state"></a>削除の状態の状態をアップロードする
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
- このトピックでは、アップロード削除状態マシンの状態、レプリケーション状態中の動作について説明します。 
+ このトピックでは、レプリケーション状態マシンの削除状態のアップロード中に行われる処理について説明します。 
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|状態識別子。  <br/> |**LR_SYNC_UPLOAD_MESSAGE_DEL** <br/> |
-|関連するデータ構造体。  <br/> |**[UPDEL](updel.md)** <br/> |
-|この状態。  <br/> |[テーブルの状態をアップロードします。](upload-table-state.md) <br/> |
-|この状態。  <br/> |テーブルの状態をアップロードします。  <br/> |
+|状態識別子:  <br/> |**LR_SYNC_UPLOAD_MESSAGE_DEL** <br/> |
+|関連データ構造:  <br/> |**[UPDEL](updel.md)** <br/> |
+|この状態から:  <br/> |[テーブルの状態をアップロードする](upload-table-state.md) <br/> |
+|この状態:  <br/> |テーブルの状態をアップロードする  <br/> |
    
 > [!NOTE]
-> レプリケーションの状態マシンは、確定的なステート マシンです。 クライアントを別の 1 つの状態から出発するは、後者から前者に最終的に返す必要があります。 
+> レプリケーション状態マシンは、確定状態のマシンです。 ある状態から別の状態に出発するクライアントは、最終的に後者から元の状態に戻る必要があります。 
   
 ## <a name="description"></a>説明
 
-この状態は、上記アップロード テーブルの状態で指定されたローカル ストア上のフォルダーで削除されている Outlook アイテム (メール、予定表、連絡先、タスク、メモ、または履歴) をサーバーに更新を開始します。 この状態は、中には、Outlook は、削除またはフォルダーから移動されたアイテムの情報が関連付けられている**UPDEL**データ構造体のメンバーを初期化します。 
+この状態では、前のアップロードテーブル状態で指定されたローカルストア上のフォルダーで削除された Outlook アイテム (メール、予定表、連絡先、タスク、メモ、またはジャーナル) の更新が開始されます。 この状態の間、Outlook は、関連付けられた**updel**データ構造のメンバーを、削除またはフォルダーから移動されたアイテムの情報で初期化します。 
   
-クライアントは、サーバー上のフォルダーに指定した項目を削除します。 削除済みではなく移動された項目を識別するためにクライアントは、 **UPDEL**構造体で指定された*pupmov*メンバーをチェックする必要があります。 
+次に、クライアントは、サーバー上のフォルダー内の指定されたアイテムを削除します。 移動されたアイテムを削除するのではなく、移動したアイテムを区別するには、 **updel**構造で識別される*pupmov*メンバーをクライアントが確認する必要があります。 
   
-この状態が終了すると Outlook はアイテムが削除されていることを示す内部情報を消去します。したがって、Outlook は、アイテムの記録です。 ローカル ストアは、アップロード ・ テーブルの状態を返します。
+この状態が終了すると、Outlook はアイテムが削除されたことを示す内部情報を消去します。その結果、Outlook はアイテムのレコードを取得できなくなります。 ローカルストアは、テーブルのアップロード状態に戻ります。
   
 ## <a name="see-also"></a>関連項目
 
@@ -49,7 +49,7 @@ ms.locfileid: "22574546"
   
 [MAPI �萔](mapi-constants.md)
   
-[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
+[レプリケーション状態のマシンについて](about-the-replication-state-machine.md)
   
-[同期状態](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

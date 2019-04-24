@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 6bd2781a-d4e7-136f-8996-62ebc5f890ab
 description: 図形データ値の記入に使用した言語を示します。
-ms.openlocfilehash: 696c42483390509474eb82bd8cc0046beee345e8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c5a0cca5f71bc5520337ad2bdcf354a2b4affe92
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359032"
 ---
-# <a name="langid-cell-shape-data-section"></a>[LangID] セル ([図形データ] セクション)
+# <a name="langid-cell-shape-data-section"></a>[LangID] セル ([Shape Data] セクション)
 
 図形データ値の記入に使用した言語を示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 Microsoft Office system のアプリケーションがサポートしている言語の一覧は、[[DocLangID]](doclangid-cell-document-properties-section.md) セル ([Document Properties] セクション) を参照してください。 
   
@@ -28,14 +28,14 @@ Microsoft Office system のアプリケーションがサポートしている�
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | プロペラです。 *名*です。LangID でプロペラです。 *名前*は、行の名前  <br/> |
+| セル名:  <br/> | 提案. *名前*です。LangID (Prop) *name*には、行の名前を指定します。  <br/> |
    
 プログラムから、インデックスによって [LangID] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionProp** <br/> |
-| 行インデックス:  <br/> |**visRowProp** +  *i* 、 *i* = 0, 1, 2.  <br/> |
-| セル インデックス:  <br/> |**visCustPropsLangID** <br/> |
+| 行インデックス:  <br/> |**visRowProp** +  *i* = ** 0、1、2...  <br/> |
+| セル インデックス:  <br/> |**viscustpropslangid** <br/> |
    
 

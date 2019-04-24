@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: ec0de3e1-21dc-c5d6-2c2a-d5fef80d89bd
 description: 図形のアクションを制御するには、必要な動作を定義する数式を記述します。セルの数式を編集すると、そのセルの値を変更し、結果的に特定の図形の動作を変更できます。たとえば、[Shape Transform] セクションの [Height] セルに含まれる数式を変更すると、その図形の高さを変更できます。
-ms.openlocfilehash: 7df5ffe4d3dc32bcd5209bde353c39a92c7d422b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e8e1a2b77cc355e930af6f31f0b375dfba321e74
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344458"
 ---
 # <a name="about-formulas"></a>数式について
 
@@ -30,7 +30,7 @@ Microsoft Visio の数式は、多くの点で一般的なスプレッドシー�
   
 - 数値
     
-- 座標
+- Coordinates
     
 - ブール値
     

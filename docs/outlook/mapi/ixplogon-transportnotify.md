@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: c712fc17-f436-41cf-9aa3-186c9a86d56e
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f0c5cd70595ea43a0957e764150ee4d5153e32c6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 2482dc39d3f1d1568b45dd3de88358e08d190be4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351563"
 ---
 # <a name="ixplogontransportnotify"></a>IXPLogon::TransportNotify
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-トランスポート プロバイダーが通知を要求するイベントの発生を通知します。
+トランスポートプロバイダーが通知を要求したイベントが発生したことを通知します。
   
 ```cpp
 HRESULT TransportNotify(
@@ -34,69 +34,69 @@ HRESULT TransportNotify(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpulFlags_
+ _lアウトフラグ_
   
-> [で [チェック アウト]通知イベントを通知するフラグのビットマスクです。 次のフラグは、MAPI スプーラーを無効に入力して設定することする必要があります変更されていない出力で返されます。
+> [入力]通知イベントを通知するフラグのビットマスク。 次のフラグは、入力時に MAPI スプーラーで設定でき、出力時に変更されずに返される必要があります。
     
 NOTIFY_ABORT_DEFERRED 
   
-> トランスポート プロバイダーの責任を受け入れ、メッセージが遅延されることを通知します。 遅延をサポートするトランスポート プロバイダーだけでは、このフラグをサポートする必要があります。 _LppvData_パラメーターは、キャンセルされたメッセージのエントリ id を指します。 MAPI スプーラーが未処理のメッセージは、 [IMsgStore::AbortSubmit](imsgstore-abortsubmit.md)メソッドを呼び出すことによってまだ延期できます。 
+> 役割が承認されたメッセージが延期されていることをトランスポートプロバイダーに通知します。 遅延をサポートするトランスポートプロバイダーのみがこのフラグをサポートする必要があります。 _lppvData_パラメーターは、取り消されたメッセージのエントリ識別子を指します。 MAPI スプーラーで処理されていないメッセージは、 [IMsgStore:: abortsubmit](imsgstore-abortsubmit.md)メソッドを呼び出して延期することができます。 
     
 NOTIFY_BEGIN_INBOUND 
   
-> MAPI スプーラーは、このトランスポート プロバイダーのセッションの着信メッセージを受信することができますようになりました。 トランスポート プロバイダーは、ログオン時、 [IXPProvider::TransportLogon](ixpprovider-transportlogon.md)の呼び出しで LOGON_SP_POLL フラグを設定する場合、MAPI スプーラーは定期的に[IXPLogon::Poll](ixplogon-poll.md)メソッドを呼び出します。 NOTIFY_BEGIN_INBOUND フラグを設定すると、MAPI スプーラーでは、 [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md)メソッドの呼び出しに渡された NOTIFY_NEWMAIL フラグ。 [IMAPISupport::ModifyStatusRow](imapisupport-modifystatusrow.md)メソッドの呼び出しによって返される前にトランスポート プロバイダーのセッションの状態のテーブルの行を更新する必要があります。 NOTIFY_BEGIN_INBOUND と NOTIFY_END_INBOUND で、フラグは相互に排他的です。 
+> MAPI スプーラーは、このトランスポートプロバイダーセッションの受信メッセージを受け付けることができるようになりました。 MAPI スプーラーは、 [IXPLogon::P oll](ixplogon-poll.md)メソッドを定期的に呼び出します。トランスポートプロバイダーが、ログオン時に[ixpprovider:: transportlogon](ixpprovider-transportlogon.md)呼び出しで LOGON_SP_POLL フラグを設定している場合。 NOTIFY_BEGIN_INBOUND フラグが設定されると、MAPI スプーラーは[imapisupport:: SpoolerNotify](imapisupport-spoolernotify.md)メソッドの呼び出しで渡される NOTIFY_NEWMAIL フラグを受け入れます。 トランスポートプロバイダーセッションの状態テーブル行は、 [imapisupport:: modifystatusrow](imapisupport-modifystatusrow.md)メソッドを呼び出すことによって戻る前に更新する必要があります。 NOTIFY_BEGIN_INBOUND および NOTIFY_END_INBOUND フラグは相互に排他的です。 
     
 NOTIFY_BEGIN_INBOUND_FLUSH 
   
-> 受信メッセージを順番にできるだけ早くするトランスポート プロバイダーに通知します。 この通知を遵守するには、トランスポート プロバイダーは**ModifyStatusRow**を使用して、できるとすぐに、 **PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md)) の状態テーブルの行のプロパティに STATUS_INBOUND_FLUSH フラグを設定する必要があります。 プロバイダーは、すべてがダウンロードを決定するとき、または NOTIFY_END_INBOUND_FLUSH フラグを設定して、 **TransportNotify**メソッドの呼び出しを受信したとき、入力方向のメッセージングのサイクルが完了しました。 まで受信メッセージのサイクルの最後に、プロバイダー、 [IMAPISupport::SpoolerYield](imapisupport-spooleryield.md)メソッドを呼び出して、またはそれ以外の場合に受信メッセージを迅速に提供するオペレーティング システムのサイクルを放棄しません。 これは、MAPI スプーラーは NOTIFY_BEGIN_INBOUND_FLUSH のクライアント アプリケーションを使用して、ユーザーの要求に対する応答としてのみこれですべてのメッセージを配信するために許容可能です。 受信のフラッシュ操作の最後に、プロバイダーは、その [状態] 行の**PR_STATUS_CODE**プロパティに STATUS_INBOUND_FLUSH フラグをクリアするのに**SpoolerNotify**を使用する必要があります。 
+> 受信メッセージをできるだけ早くサイクル処理するようにトランスポートプロバイダーに通知します。 この通知に準拠するには、トランスポートプロバイダーは、 **modifystatusrow**を使用して、状態テーブル行の**PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md)) プロパティの STATUS_INBOUND_FLUSH フラグをすぐに設定する必要があります。 受信メッセージングサイクルは、プロバイダーがすべてのダウンロード可能なものと判断した場合、または NOTIFY_END_INBOUND_FLUSH フラグが設定された**transportnotify**メソッド呼び出しを受信した場合に完了します。 受信メッセージングサイクルが終了するまで、受信メッセージの配信を高速化するために、プロバイダーは[imapisupport:: SpoolerYield](imapisupport-spooleryield.md)メソッドを呼び出し、または、それ以外の方法でオペレーティングシステムに解放する必要があります。 通常、MAPI スプーラーは、クライアントアプリケーションを介してすべてのメッセージを配信するために、ユーザーの要求に対する応答としてのみ NOTIFY_BEGIN_INBOUND_FLUSH を使用するため、これは許容できるものになります。 着信フラッシュ操作の最後に、プロバイダーは**SpoolerNotify**を使用して、そのステータス行の**PR_STATUS_CODE**プロパティの STATUS_INBOUND_FLUSH フラグをクリアする必要があります。 
     
 NOTIFY_BEGIN_OUTBOUND 
   
-> このトランスポート プロバイダーのセッションを今すぐ送信操作に発生します。 このプロバイダーに送信するメッセージが表示されて、 [IXPLogon::SubmitMessage](ixplogon-submitmessage.md)メソッドを呼び出す次のようにします。 返す前にこのセッションの状態のテーブルの行を更新する必要があります。 NOTIFY_BEGIN_OUTBOUND と NOTIFY_END_OUTBOUND で、フラグは相互に排他的です。 
+> このトランスポートプロバイダーセッションでは、送信操作が発生する可能性があります。 このプロバイダーに対して送信されるメッセージがある場合、 [IXPLogon:: submitmessage](ixplogon-submitmessage.md)メソッドの呼び出しは次のようになります。 このセッションの状態テーブル行は、戻る前に更新する必要があります。 NOTIFY_BEGIN_OUTBOUND および NOTIFY_END_OUTBOUND フラグは相互に排他的です。 
     
 NOTIFY_BEGIN_OUTBOUND_FLUSH 
   
-> 、NOTIFY_BEGIN_INBOUND_FLUSH フラグと同様に動作しますが、メッセージの送信を参照します。 適切なステータス ・ フラグは、STATUS_OUTBOUND_FLUSH です。
+> NOTIFY_BEGIN_INBOUND_FLUSH フラグと同じように動作しますが、送信メッセージを参照します。 適切な状態フラグは STATUS_OUTBOUND_FLUSH です。
     
 NOTIFY_CANCEL_MESSAGE 
   
-> MAPI スプーラーは、 _lppvData_パラメーター値を示す 32 ビット、 **IXPLogon::SubmitMessage**メソッドからの呼び出しをメッセージの転送を取り消す必要があります。 トランスポート プロバイダーは、 **SubmitMessage**、 **IXPLogon::StartMessage**、またはメッセージに関連付けられている**IXPLogon::EndMessage**メソッドの呼び出しから返されることがなく、NOTIFY_CANCEL_MESSAGE フラグを設定できます。 トランスポート プロバイダーは、キャンセルされたメッセージを処理するためのエントリ ポイントからできるだけ早く返す必要があります。 現在処理されている受信メッセージ、トランスポート プロバイダーは、必要がありますが現在格納されている任意の場所には、受信メッセージを保存、次の便利な時間でもう一度提供 受信メッセージで保存されているメッセージ オブジェクトのデータは破棄されます。 トランスポート プロバイダーでは、 **StartMessage**または**SubmitMessage**の時にこの 32 ビットの値が更新されなかった場合、値は 0 送信メッセージの受信メッセージの 1 です。 
+> MAPI スプーラーは、 _lppvData_パラメーターが**IXPLogon:: submitmessage**メソッド呼び出しからの32ビット値をポイントするメッセージの転送をキャンセルする必要があります。 NOTIFY_CANCEL_MESSAGE フラグは、メッセージに関連付けられている**submitmessage**、 **IXPLogon::: startmessage**、または**IXPLogon:: endmessage**メソッド呼び出しから返されたトランスポートプロバイダーを使用せずに設定できます。 トランスポートプロバイダーは、取り消されたメッセージを処理するエントリポイントから、できるだけ早く戻る必要があります。 現在処理中の受信メッセージの場合、トランスポートプロバイダーは、受信メッセージを現在格納されている場所に保存し、次に都合のよい時間に再配信する必要があります。 受信メッセージ用に既に格納されているメッセージオブジェクトデータは破棄されます。 トランスポートプロバイダーが**startmessage**または**submitmessage**の時間でこの32ビット値を更新しなかった場合、送信メッセージの値は0で、受信メッセージの場合は1になります。 
     
 NOTIFY_END_INBOUND 
   
-> このトランスポート プロバイダーのセッションの受信操作を停止する必要があります。 MAPI スプーラーでは、 **Poll**メソッドを使用するのには停止し、このセッションの NOTIFY_NEWMAIL を無視します。 処理中のメッセージを完了する必要があります。 トランスポート セッションの状態のテーブルの行が返される前に[ModifyStatusRow](imapisupport-modifystatusrow.md)を呼び出すことによって更新されます。 NOTIFY_END_INBOUND と NOTIFY_BEGIN_INBOUND で、フラグは相互に排他的です。 
+> このトランスポートプロバイダーセッションでは、受信操作を停止する必要があります。 MAPI スプーラーは、 **Poll**メソッドの使用を中止し、このセッションの NOTIFY_NEWMAIL を無視します。 インプロセスメッセージは完了する必要があります。 トランスポートセッションの状態テーブル行は、戻る前に[modifystatusrow](imapisupport-modifystatusrow.md)を呼び出して更新する必要があります。 NOTIFY_END_INBOUND および NOTIFY_BEGIN_INBOUND フラグは相互に排他的です。 
     
 NOTIFY_END_INBOUND_FLUSH 
   
-> 受信のフラッシュ モードを解除するトランスポート プロバイダーに通知します。 トランスポート プロバイダーは、必要があります、ダウンロードを停止しませんが、バック グラウンドでダウンロードを行う必要があります。 トランスポート セッションの状態のテーブルの行は、トランスポート プロバイダーがこの通知に準拠できるときは、 **ModifyStatusRow**を呼び出すことによって更新する必要があります。 
+> トランスポートプロバイダーに、着信フラッシュモードから出ていくことを通知します。 トランスポートプロバイダーはダウンロードを停止する必要はありませんが、ダウンロードはバックグラウンドで実行する必要があります。 トランスポートプロバイダーがこの通知に準拠できる場合は、[状態**** テーブルの行を更新する必要があります。 
     
 NOTIFY_END_OUTBOUND 
   
-> 送信の操作をする必要がありますこのトランスポート プロバイダーのセッションを停止します。 MAPI スプーラーは、 **SubmitMessage**の呼び出しを停止するとし、 **SpoolerNotify**の NOTIFY_READYTOSEND フラグを無視します。 現在が送信されていない停止する必要があります。 送信メッセージが表示される場合メッセージの配信を停止するには、NOTIFY_CANCEL_MESSAGE フラグを使用します。 このセッションの状態のテーブルの行が返される前に**ModifyStatusRow**を呼び出すことによって更新されます。 NOTIFY_END_INBOUND と NOTIFY_BEGIN_OUTBOUND で、フラグは相互に排他的です。 
+> このトランスポートプロバイダセッションに対して送信操作を停止する必要があります。 MAPI スプーラーは、 **submitmessage**の呼び出しを中止し、 **SpoolerNotify** NOTIFY_READYTOSEND フラグを無視します。 現在送信中の送信メッセージがある場合は、停止しないでください。メッセージの配信を停止するには、NOTIFY_CANCEL_MESSAGE フラグを使用します。 このセッションの状態テーブル行は、戻る前に**modifystatusrow**を呼び出して更新する必要があります。 NOTIFY_END_INBOUND および NOTIFY_BEGIN_OUTBOUND フラグは相互に排他的です。 
     
 NOTIFY_END_OUTBOUND_FLUSH 
   
-> 同様に NOTIFY_END_INBOUND_FLUSH が参照するメッセージを送信します。 適切なステータス ・ フラグは、STATUS_OUTBOUND_FLUSH です。
+> NOTIFY_END_INBOUND_FLUSH と同様に動作しますが、送信メッセージを参照します。 適切な状態フラグは STATUS_OUTBOUND_FLUSH です。
     
  _lppvData_
   
-> [out]イベント固有のデータへのポインターへのポインター。 どのような_lppvData_を指定の詳細については、 _lpulFlags_パラメーターの説明を参照してください。 
+> 読み上げイベント固有のデータへのポインターへのポインター。 _lppvData_で指定される内容の詳細については、 _l flags_パラメーターの説明を参照してください。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 呼び出しが成功し、予期される値または値が返されます。
+> 呼び出しが成功し、予想される値または値が返されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-MAPI スプーラーは、通知の要求対象となるイベントのトランスポート プロバイダーを通知する**IXPLogon::TransportNotify**メソッドを呼び出します。 これらのイベントには、メッセージの転送、先頭または、着信または発信の転送操作の終了と開始またはキャンセル操作の終了を受信または送信メッセージのキューを消去する MAPI スプーラーの要求が含まれます。 
+MAPI スプーラーは**IXPLogon:: transportnotify**メソッドを呼び出して、通知が要求されたイベントについてトランスポートプロバイダーに通知します。 これらのイベントには、メッセージ転送をキャンセルするための MAPI スプーラー要求、受信または送信トランスポート操作の開始または終了、および受信または送信メッセージキューをクリアする操作の開始または終了が含まれます。 
   
-ユーザーは、トランスポート プロバイダーが以前に遅延されたメッセージをキャンセルする際に、MAPI スプーラーは、 **TransportNotify**、 _ulFlags_で NOTIFY_ABORT_DEFERRED と NOTIFY_CANCEL_MESSAGE の両方のフラグを渡すことを呼び出します。 MAPI スプーラー ログオフは、キュー内のメッセージはまだ渡しますだけ NOTIFY_ABORT_DEFERRED _ulFlags_ **TransportNotify**を呼び出すとき。
+トランスポートプロバイダーが以前に遅延していたメッセージをユーザーが取り消しようとすると、MAPI スプーラーは、NOTIFY_ABORT_DEFERRED と NOTIFY_CANCEL_MESSAGE の両方のフラグを_ulflags_に渡して、 **transportnotify**を呼び出します。 MAPI スプーラーがログオフしていてもキューにメッセージがある場合、NOTIFY_ABORT_DEFERRED は、 **transportnotify**を呼び出したときに_ulflags_にのみ渡されます。
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-プロバイダーは、MAPI スプーラーは、この方法の実行の別のスレッドから、またはプロシージャから別のウィンドウを呼び出すことができますので、この呼び出しでは、上のデータへのアクセスを同期する必要があります。 MAPI スプーラーに通知を送信するトランスポート プロバイダーが開始されたこと、メッセージの取り消しと、この可能性があります発生します。
+MAPI スプーラーは別の実行スレッドから、または別のウィンドウのプロシージャからこのメソッドを呼び出すことができるため、プロバイダーはこの呼び出しでデータへのアクセスを同期する必要があります。 これは、通常、トランスポートプロバイダーが送信を開始したメッセージの取り消しを MAPI スプーラーが通知するときに発生します。
   
 ## <a name="see-also"></a>関連項目
 

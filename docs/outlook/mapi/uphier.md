@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a75ca0dd-9c50-2a9f-6c59-1f8020833a01
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a1ec71d7120eab220ee3b11d2a751fba51cee48e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 45ef7ce9291376ac020035f0bde6172caf6cc01b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359424"
 ---
 # <a name="uphier"></a>UPHIER
  
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[階層の状態をアップロード](upload-hierarchy-state.md)する際にフォルダー階層を同期するための情報です。
+[階層のアップロード状態](upload-hierarchy-state.md)でのフォルダー階層の同期に関する情報。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -33,33 +33,33 @@ struct UPHIER
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 _ulFlags_
   
-> [in]フォルダー階層を同期するときの動作を変更するフラグを設定します。
+> 順番フォルダー階層を同期するときの動作を変更するフラグです。
     
   - UPH_OK
     
-    - [in]アップロードが正常に完了しました。 クライアントでは、正常に情報をサーバーにアップロードした後、これを設定します。 このフラグを表示するには、時に、Outlook は、フォルダー階層の更新が必要なことを示す内部のブックキーピング情報をクリアします。 
+    - 順番アップロードに成功しました。 クライアントは、サーバーに情報を正常にアップロードした後にこれを設定します。 このフラグが表示されると、Outlook は、更新が必要なフォルダー階層を示す内部のブックキーピング情報をクリアします。 
     
-    - クライアントは、アップロードが失敗した場合、HRESULT を渡します。
+    - アップロードが成功しなかった場合、クライアントは HRESULT を渡します。
     
 _pstmReserved_
   
-> [out]このメンバーは、Outlook の内部使用に予約されている、サポートされていません。
+> 読み上げこのメンバーは Outlook の内部使用のために予約されており、サポートされていません。
     
-_iEnt_
+_ient_
   
-> [out]*セント*で指定されたフォルダーの数の同期を追跡するためにインデックスを作成します。 
+> 読み上げで指定されたフォルダーの数を同期** するためのインデックスです。 
     
-_セント_
+_fea-cent-logging-service_
   
-> [out]同期が取られているフォルダーの数です。
+> 読み上げ同期されていないフォルダーの数。
     
 ## <a name="see-also"></a>関連項目
 
 - [レプリケーション API について](about-the-replication-api.md)
-- [レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
-- [MAPI �萔](mapi-constants.md)
+- [レプリケーション状態のマシンについて](about-the-replication-state-machine.md)
+- [MAPI 定数](mapi-constants.md)
 

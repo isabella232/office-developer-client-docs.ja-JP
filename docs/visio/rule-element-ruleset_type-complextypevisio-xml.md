@@ -1,5 +1,5 @@
 ---
-title: (RuleSet_Type の複合型) のルールの要素 ('Visio XML')
+title: Rule 要素 (RuleSet_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,13 +8,13 @@ localization_priority: Normal
 ms.assetid: fcd22f3a-c8e8-1133-160c-fe26e612a15d
 description: 図の検証ルール セットに含まれる 1 つの検証ルールを表します。
 ms.openlocfilehash: 92d52456164b89ff2aad31fa8d8f02f818c8bd1c
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358801"
 ---
-# <a name="rule-element-rulesettype-complextype-visio-xml"></a>(RuleSet_Type の複合型) のルールの要素 ('Visio XML')
+# <a name="rule-element-rulesettype-complextype-visio-xml"></a>Rule 要素 (RuleSet_Type complexType) (' Visio XML ')
 
 図の検証ルール セットに含まれる 1 つの検証ルールを表します。
   
@@ -23,9 +23,9 @@ ms.locfileid: "25395911"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Rule_Type](rule_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
-|**文書パーツ** <br/> |validation.xml  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
+|**文書パーツ** <br/> |検証 xml  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -36,30 +36,30 @@ ms.locfileid: "25395911"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。 
+スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[ルールセット](ruleset-element-rulesets_type-complextypevisio-xml.md) <br/> |[RuleSet_Type](ruleset_type-complextypevisio-xml.md) <br/> |ダイアグラムの検証ルールの 1 つのセットを表します。  <br/> |
+|[RuleSet](ruleset-element-rulesets_type-complextypevisio-xml.md) <br/> |[RuleSet_Type](ruleset_type-complextypevisio-xml.md) <br/> |1組のダイアグラム検証ルールを表します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**型**|**説明**|
+|**Element**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[RuleFilter](rulefilter-element-rule_type-complextypevisio-xml.md) <br/> |[RuleFilter_Type](rulefilter_type-complextypevisio-xml.md) <br/> |対象オブジェクトに規則を適用するかどうかを決定する論理式を指定します。  <br/> |
-|[RuleTest](ruletest-element-rule_type-complextypevisio-xml.md) <br/> |[RuleTest_Type](ruletest_type-complextypevisio-xml.md) <br/> |対象のオブジェクトが、検証規則を満たすかどうかを決定する論理式を指定します。  <br/> |
+|[rulefilter](rulefilter-element-rule_type-complextypevisio-xml.md) <br/> |[RuleFilter_Type](rulefilter_type-complextypevisio-xml.md) <br/> |ターゲットオブジェクトに検証ルールを適用する必要があるかどうかを決定する論理式を指定します。  <br/> |
+|[ルール](ruletest-element-rule_type-complextypevisio-xml.md) <br/> |[RuleTest_Type](ruletest_type-complextypevisio-xml.md) <br/> |ターゲットオブジェクトが検証規則を満たしているかどうかを決定する論理式を指定します。  <br/> |
    
 ### <a name="attributes"></a>属性
 
-|**属性**|**型**|**必須**|**説明**|**使用可能な値**|
+|**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|カテゴリ  <br/> |xsd:string  <br/> |省略可能  <br/> |問題ウィンドウの [**カテゴリ**] 列に表示するテキストを指定します。 既定値は空の文字列です。  <br/> |Xsd:string の値を入力します。  <br/> |
-|説明  <br/> |xsd:string  <br/> |省略可能  <br/> |ユーザー インターフェイスに表示される入力規則の説明を指定します。 既定では「不明」です。  <br/> |Xsd:string の値を入力します。  <br/> |
-|ID  <br/> |xsd:unsignedInt  <br/> |必須  <br/> |検証ルールの一意の識別子を指定します。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|無視  <br/> |xsd:boolean  <br/> |省略可能  <br/> |入力規則が現在無視するかどうかを指定します。 既定では False です。  <br/> |Xsd:boolean の値を入力します。  <br/> |
-|NameU  <br/> |xsd:string  <br/> |必須  <br/> |入力規則の汎用名を指定します。  <br/> |Xsd:string の値を入力します。  <br/> |
-|RuleTarget  <br/> |xsd:int  <br/> |省略可能  <br/> |検証規則を適用するオブジェクトの種類を指定します。  <br/> |Xsd:int 型の値です。  <br/> |
+|カテゴリ  <br/> |xsd: string  <br/> |省略可能  <br/> |[問題] ウィンドウの [**カテゴリ**] 列に表示されるテキストを指定します。 既定値は空の文字列です。  <br/> |xsd: string 型の値。  <br/> |
+|説明  <br/> |xsd: string  <br/> |省略可能  <br/> |ユーザーインターフェイスに表示される入力規則の説明を指定します。 既定値は "Unknown" です。  <br/> |xsd: string 型の値。  <br/> |
+|ID  <br/> |xsd: アン signedint  <br/> |必須  <br/> |入力規則の一意の識別子を指定します。  <br/> |xsd:/signedint 型の値。  <br/> |
+|Ignored  <br/> |xsd: boolean  <br/> |省略可能  <br/> |検証ルールが現在無視されているかどうかを指定します。 既定値は False です。  <br/> |xsd: boolean 型の値。  <br/> |
+|NameU  <br/> |xsd: string  <br/> |必須  <br/> |入力規則の汎用名を指定します。  <br/> |xsd: string 型の値。  <br/> |
+|ruletarget  <br/> |xsd: int  <br/> |省略可能  <br/> |入力規則を適用するオブジェクトの種類を指定します。  <br/> |xsd: int 型の値。  <br/> |
    
 

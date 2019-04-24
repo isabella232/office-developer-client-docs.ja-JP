@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 67e31027-6bc2-4a40-9b00-d61baef4ab0f
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9d74fdb3acb6db94078d6090f0def050fb564cd9
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355259"
 ---
 # <a name="pidtagrecipienttype-canonical-property"></a>PidTagRecipientType 標準プロパティ
 
@@ -25,86 +25,86 @@ ms.locfileid: "25385845"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージの受信者の受信者の種類が含まれています。
+メッセージ受信者の受信者の種類が含まれます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_RECIPIENT_TYPE  <br/> |
-|識別子:  <br/> |0x0C15  <br/> |
+|識別子:  <br/> |0x0c15  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |MAPI 受信者  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティに格納されている受信者の種類は、1 つの必要な値と省略可能なフラグの 1 つで構成されます。
+このプロパティに含まれる受信者の種類は、1つの必須値と1つの省略可能なフラグで構成されます。
   
-このプロパティは、次の値の 1 つだけを含める必要があります。
+このプロパティには、次のいずれかの値を含める必要があります。
   
 MAPI_TO 
   
-> 受信者は、(受信者宛先) プライマリです。 クライアントは、プライマリ受信者を処理する必要があります。 その他のすべての種類は、オプションです。
+> 受信者がプライマリ受信者である。 クライアントは、プライマリ受信者を処理する必要があります。 その他の型はオプションです。
     
 MAPI_CC 
   
-> 受信者は、主要な受信者だけでなくメッセージを受信する受信者、カーボン コピー (CC) 受信者です。
+> 受信者はカーボンコピー (cc) 受信者で、プライマリ受信者に加えてメッセージを受信する受信者です。
     
 MAPI_BCC 
   
-> 受信者は、ブラインド カーボン コピー (BCC) 宛先です。 プライマリおよびカーボン コピーの受信者は、BCC 受信者の存在を認識ではありません。 
+> 受信者がブラインドカーボンコピー (bcc) 受信者である。 プライマリおよびカーボンコピーの受信者は、BCC 受信者の存在を認識しません。 
     
 MAPI_P1 
   
-> 受信者は、以前の試行でメッセージを正常に受信しませんでした。 これは、以前に送信の再送信です。
+> 前回の試行で、受信者がメッセージを正常に受信できませんでした。 これは、以前の転送を再送信します。
     
-さらに、次のフラグを設定できます。
+また、次のフラグを設定することもできます。
   
 MAPI_SUBMITTED 
   
-> 受信者はメッセージを受信済みと、それを再度受信する必要はありません。 これは、以前に送信の再送信です。 **MAPI_TO**、 **MAPI_CC**、および**MAPI_BCC**の値と組み合わせて、このフラグが設定されています。 
+> 受信者は既にメッセージを受信しているので、再度受信する必要はありません。 これは、以前の転送を再送信します。 このフラグは、 **MAPI_TO**、 **MAPI_CC**、および**MAPI_BCC**の値と共に設定されます。 
     
-MAPI_P1 値は、 **MAPI_SUBMITTED**フラグは、メッセージが 1 つまたは複数の受信者に配信不能が発生したため再送信されている場合に使用されます。 この再送信のためは、クライアントは、各受信者にメッセージを再度必要はありませんが、受信者の一覧に表示するかの**MAPI_SUBMITTED**を設定します。 以前のメッセージを受信しなかった受信者ごとに、クライアントとその**PR_RECIPIENT_TYPE**値を変更せずに、元の受信者が保持されますが、さらに、受信者は、元の値の代わりに MAPI_P1 でのコピーを送信します。 このコピーは、実際に配信する前に破棄すると、P1 封筒に受信者を強制的に、その受信者に物理的な再転送を保証 **れない**([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) のプロパティは、MAPI_P1 の受信者の FALSE に設定されています。
+MAPI_P1 の値と**MAPI_SUBMITTED**フラグは、1つ以上の目的の受信者への配信不能のためにメッセージが再送信される場合に使用されます。 この再送信では、クライアントは、メッセージを再度必要とせず、受信者一覧に表示する必要があるすべての受信者に**MAPI_SUBMITTED**を設定します。 以前にメッセージを受信しなかったすべての受信者について、クライアントは元の受信者の**PR_RECIPIENT_TYPE**値を変更せずに、さらに元の値の代わりに MAPI_P1 を使用して受信者のコピーを送信します。 このコピーは、実際の配信前に破棄され、受信者を P1 エンベロープに強制して、その受信者への物理的な再送信を保証します。 MAPI_P1 の受信者の場合は、 **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) プロパティを FALSE に設定します。
   
-クライアントには、再送信フォームが表示されたら、MAPI_P1 の受信者のみが表示されます。 メッセージが配信されると、追加の受信者を入力すると、しない限り、受信者の一覧には、最初にメッセージが送信されたときとまったく同じ状態が表示されます。 
+クライアントが再送信フォームを表示すると、MAPI_P1 の受信者のみが表示されます。 ユーザーが追加の受信者を入力しない限り、メッセージが配信されると、メッセージが初めて送信されたときとまったく同じように受信者一覧が表示されます。 
   
-**PR_DISPLAY_TO** ([PidTagDisplayTo](pidtagdisplayto-canonical-property.md))、 **PR_DISPLAY_CC** ([PidTagDisplayCc](pidtagdisplaycc-canonical-property.md)) と**PR_DISPLAY_BCC** ([PidTagDisplayBcc](pidtagdisplaybcc-canonical-property.md)) のプロパティは、受信者の種類に関連付けられます。 クライアントがメッセージの**IMAPIProp::SaveChanges**を呼び出すし、受信者の一覧に少なくとも 1 人の受信者が、メッセージ ストア プロバイダーはこれらのプロパティを次のように設定します。 
+**PR_DISPLAY_TO** ([PidTagDisplayTo](pidtagdisplayto-canonical-property.md))、 **PR_DISPLAY_CC** ([PidTagDisplayCc](pidtagdisplaycc-canonical-property.md))、および**PR_DISPLAY_BCC** ([PidTagDisplayBcc](pidtagdisplaybcc-canonical-property.md)) の各プロパティは、受信者の種類に関連付けられています。 クライアントがメッセージの**imapiprop:: SaveChanges**を呼び出し、受信者の一覧に少なくとも1人の受信者がある場合、メッセージストアプロバイダーは次のようにこれらのプロパティを設定します。 
   
 |**プロパティ**|**説明**|
 |:-----|:-----|
-|PR_DISPLAY_TO  <br/> |**MAPI_TO**の受信者の 1 つ以上の受信者の場合は、TRUE に設定します。  <br/> |
-|PR_DISPLAY_CC  <br/> |**MAPI_CC**の受信者の 1 つ以上の受信者の場合は、TRUE に設定します。  <br/> |
-| PR_DISPLAY_BCC  <br/> |**MAPI_BCC**の受信者の 1 つ以上の受信者の場合は、TRUE に設定します。  <br/> |
+|PR_DISPLAY_TO  <br/> |1人以上の受信者が**MAPI_TO**受信者の場合は TRUE に設定します。  <br/> |
+|PR_DISPLAY_CC  <br/> |1人以上の受信者が**MAPI_CC**受信者の場合は TRUE に設定します。  <br/> |
+| PR_DISPLAY_BCC  <br/> |1人以上の受信者が**MAPI_BCC**受信者の場合は TRUE に設定します。  <br/> |
    
-X.400 は、P1 または配送の封筒は、受信者のアドレスのプロパティおよび配信し、応答を制御するオプション フラグのいずれかを含む、メッセージを配信するために必要な情報です。 P2 または表示の封筒は、メッセージ テキスト自体以外には、各受信者に通常表示される情報です。 通常、件名、重要度、優先度、感度、送信時刻とプライマリおよびコピーの受信者の名前を掲載しています。 
+x. では、P1 または配信エンベロープは、受信者のアドレスのプロパティと、配信と返信を制御する任意のオプションフラグを含む、メッセージを配信するために必要な情報です。 P2 または表示エンベロープは、通常、メッセージテキスト自体以外の各受信者に表示される情報です。 通常、プライマリおよびコピーされた受信者名に加えて、件名、重要度、優先度、秘密度、および送信時刻が含まれます。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルのオブジェクトを処理します。
+> メッセージと添付ファイルオブジェクトを処理します。
     
-[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
-> プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。
+> 電子メールメッセージオブジェクトに対して許容されるプロパティと操作を指定します。
     
-[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
+> 予定、会議出席依頼、および応答メッセージのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
@@ -119,9 +119,9 @@ Mapitags.h
 [PidTagDisplayCc 標準プロパティ](pidtagdisplaycc-canonical-property.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: f6e410ef-54d5-9c08-926b-97a2a9786622
 description: 背景ページの名前を文字列として返します。
-ms.openlocfilehash: 290fa62242298b3c513bf2870df37204fab31bf3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3b628315052117fe853c8f9c0fc36572de25d871
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358542"
 ---
 # <a name="bkgpagename-function"></a>BKGPAGENAME 関数
 
@@ -32,11 +32,11 @@ BKGPAGENAME (* * *langID_opt* * *)
    
 ### <a name="return-value"></a>戻り値
 
-String
+文字列
   
 ## <a name="remarks"></a>注釈
 
-関数を使用してページが背景ページでは、文字列を持っていない場合は、"\<背景なし\>"が返されます。 
+関数を使用しているページに背景ページがない場合は、"\<背景\>なし" という文字列が返されます。 
   
 無効な言語コードを渡した場合、ローカル言語が使用されます。 
   

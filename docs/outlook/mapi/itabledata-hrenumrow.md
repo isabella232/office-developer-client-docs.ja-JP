@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: b25d9f2b-9454-4983-98f7-6a051a3b8a04
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 140efe0b2d1b428a94b5bb2919d461779613932a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 50fd96acd0989459c9887770ec5a3a236f182da5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348896"
 ---
 # <a name="itabledatahrenumrow"></a>ITableData::HrEnumRow
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 テーブル内の位置に基づいて行を取得します。 
   
@@ -36,29 +36,29 @@ HRESULT HrEnumRow(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulRowNumber_
+ _ulrownumber_
   
-> [in]プロパティを返す対象の行の数です。 _UlRowNumber_パラメーターの値は 0 から n までの 1、テーブルの最後の行を示す、テーブルの最初の行から任意の値にできます。 
+> 順番プロパティを返す行の番号を指定します。 _ulrownumber_パラメーターの値には、テーブルの最初の行を示す0から、テーブルの最後の行を示す n-1 までの任意の値を指定できます。 
     
- _lppSRow_
+ _lppsrow_
   
-> [out]対象の行を記述する[SRow](srow.md)構造体へのポインターへのポインター。 
+> 読み上げ目的の行を記述する[srow](srow.md)構造体へのポインターへのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 行が正常に取得されたか、 _ulRowNumber_パラメーターで指定された行番号の行が存在しません。 
+> 行が正常に取得されたか、 _ulrownumber_パラメーターで指定された行番号の行が存在しません。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**ITableData::HrEnumRow**メソッドは、序数に基づく行を取得します。 この番号は、挿入の順序を表します (最初の行は 0 し、-1 行の数は、最後の行を示します)。 MAPI では、この時系列テーブルのデータ オブジェクトの有効期間の行を挿入の順序を維持します。 
+**itabledata:: HrEnumRow**メソッドは、連続した番号に基づいて行を取得します。 この数は、挿入の順序 (0 は最初の行を示し、行数から1を引いた数は最後の行を示します) を表します。 MAPI では、この順序で行が挿入され、テーブルデータオブジェクトの有効期間が維持されます。 
   
-番号で指定された_ulRowNumber_は、テーブル内の行には対応していない、 **HrEnumRow**は S_OK を返し、 _lppSRow_パラメーターを NULL に設定します。 
+_ulrownumber_で指定された数値がテーブルの行に対応していない場合、 **HrEnumRow**は S_OK を返し、 _lppsrow_パラメーターを NULL に設定します。 
   
-MAPI では、テーブルのデータ オブジェクトが作成されたときに[MAPIAllocateBuffer](mapiallocatebuffer.md)関数を使用して、返された**SRow**構造体のメモリを割り当てます。 呼び出し元は、 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出すことによって、このメモリを解放する必要があります。 
+MAPI は、テーブルデータオブジェクトの作成時に[MAPIAllocateBuffer](mapiallocatebuffer.md)関数を使用して、返された**srow**構造のメモリを割り当てます。 呼び出し元は、 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出してこのメモリを解放する必要があります。 
   
-挿入された順序で、テーブルから行を取得するためには、テーブルのデータ オブジェクトのユーザーは、 **HrEnumRow**メソッドを呼び出します。 
+テーブルから挿入された順序で行を取得するには、テーブルデータオブジェクトのユーザーは**HrEnumRow**メソッドを呼び出します。 
   
 ## <a name="see-also"></a>関連項目
 

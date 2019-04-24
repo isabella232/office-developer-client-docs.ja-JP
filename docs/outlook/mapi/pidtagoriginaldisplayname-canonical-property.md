@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 176245d9-724d-44f1-b7a3-eddf652533b2
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2b7aef416beb9eee70aeff8cf20cb38ae8e7993f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25387385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355609"
 ---
 # <a name="pidtagoriginaldisplayname-canonical-property"></a>PidTagOriginalDisplayName 標準プロパティ
 
@@ -25,44 +25,44 @@ ms.locfileid: "25387385"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-個人用アドレス帳またはその他の書き込み可能なアドレス帳をアドレス帳からコピーされるエントリの元の表示名が含まれています。
+アドレス帳から個人用アドレス帳またはその他の書き込み可能なアドレス帳にコピーされたエントリの元の表示名を含みます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_ORIGINAL_DISPLAY_NAME、PR_ORIGINAL_DISPLAY_NAME_A、PR_ORIGINAL_DISPLAY_NAME_W  <br/> |
-|識別子:  <br/> |0x3A13  <br/> |
+|識別子:  <br/> |0x3a13  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|エリア:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |一般的なメッセージング  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-これらのプロパティには、コピーしたエントリの元のソースに関する情報が含まれています。
+これらのプロパティには、コピーされたエントリの元のソースに関する情報が含まれています。
   
-Nonread レポートでは、これらのプロパティには、レポートを生成する元のメッセージの受信者の表示名のコピーが含まれています。 元の受信者、配布リストの一部である場合は、レポートの配布リストの表示名が保持されます。
+非開封レポートの場合、これらのプロパティには、レポートが生成される元のメッセージ受信者の表示名のコピーが含まれます。 元の受信者が配布リストの一部である場合は、配布リストの表示名がレポート用に保持されます。
   
-クライアント アプリケーションは、比較するのに表示名の変更前のコピーを与えることで、改変やエントリの「なりすまし」を防ぐためにこれらのプロパティを使用することができます。
+クライアントアプリケーションは、これらのプロパティを使用して、比較する表示名の保存されていないコピーを提供することにより、エントリの変更または "スプーフィング" を防ぐことができます。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
-> プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。
+> ユーザー、連絡先、グループ、およびリソースのリストのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
@@ -71,9 +71,9 @@ Mapitags.h
 [PidTagTransmittableDisplayName 標準プロパティ](pidtagtransmittabledisplayname-canonical-property.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

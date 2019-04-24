@@ -9,24 +9,24 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 2264d026-2041-3855-2b23-553ce67ae69d
 description: 接続ポイントの種類を指定します。
-ms.openlocfilehash: 12c953a160ab99aad007e9b2bb9089d651aee553
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a73554d9f3a3bce6a039689d2c0b192a1c5b69aa
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359585"
 ---
-# <a name="type--c-cell-connection-points-section"></a>[Type / C] セル ([接続ポイント] セクション)
+# <a name="type--c-cell-connection-points-section"></a>[Type / C] セル ([Connection Points] セクション)
 
 接続ポイントの種類を指定します。
   
 |**値**|**型**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|0  <br/> |内向き  <br/> |**visCnnctTypeInward** <br/> |
-|1  <br/> |外向き  <br/> |**visCnnctTypeOutward** <br/> |
-|2  <br/> |内側&amp;外向き  <br/> |**visCnnctTypeInwardOutward** <br/> |
+|.0  <br/> |向き  <br/> |**viscnncttypeinward** <br/> |
+|1-d  <br/> |ふき  <br/> |**viscnncttypeoutward** <br/> |
+|pbm-2  <br/> |内側&amp;外側  <br/> |**visCnnctTypeInwardOutward** <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 接続ポイントの種類は、[**コネクタ**] ツールを選択し、図形を選択してから、接続ポイントを右クリックして設定することもできます。この操作は、[開発](run-in-developer-mode-display-the-developer-tab.md)モードで実行する必要があります。 
   
@@ -34,15 +34,15 @@ ms.locfileid: "19806708"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |Connections.Type [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+|セル名:  <br/> |接続を指定し** ます。ここで、 *i* = <1>, 2, 3...  <br/> |
    
 プログラムから、インデックスによって [Type / C] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
-|セクション インデックス:  <br/> |**visSectionConnectionPts** <br/> |
-|行インデックス:  <br/> |**visRowConnectionPts** +  *i* 、 *i* = 0, 1, 2.  <br/> |
-|セル インデックス:  <br/> |**visCnnctType**(拡張されていない行)**visCnnctC**(拡張された行)  <br/> |
+|セクション インデックス:  <br/> |**持つ vissectionconnectionpts** <br/> |
+|行インデックス:  <br/> |**visRowConnectionPts** +  *i* = ** 0、1、2...  <br/> |
+|セル インデックス:  <br/> |**viscnncttype**(非拡張行)**viscnnctc**(拡張行)  <br/> |
    
 拡張されていない行および拡張された行の詳細については、[Connection Points] 行を参照してください。
   

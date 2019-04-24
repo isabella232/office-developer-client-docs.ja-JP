@@ -13,11 +13,11 @@ api_type:
 ms.assetid: f5ae6124-3e44-400f-95c2-24b19f3085b5
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 02dcbcccd003fb0b53356da11a3b90b38e632c2a
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25401637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355175"
 ---
 # <a name="pidtagreplyrecipientnames-canonical-property"></a>PidTagReplyRecipientNames 標準プロパティ
 
@@ -25,56 +25,56 @@ ms.locfileid: "25401637"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-応答を取得するのには受信者の表示名の一覧が含まれています。
+応答を取得する受信者の表示名の一覧が含まれています。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_REPLY_RECIPIENT_NAMES、PR_REPLY_RECIPIENT_NAMES_A、PR_REPLY_RECIPIENT_NAMES_W  <br/> |
 |識別子:  <br/> |0x0050  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|エリア:  <br/> |MAPI の封筒  <br/> |
+|エリア:  <br/> |MAPI エンベロープ  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 これらのプロパティには、セミコロンで区切られた表示名が含まれています。
   
-このプロパティが存在しない場合は、返信は**PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md)) のプロパティで指定されたユーザーにのみ送信されます。 **PR_REPLY_RECIPIENT_ENTRIES** ([PidTagReplyRecipientEntries](pidtagreplyrecipiententries-canonical-property.md)) とこれらのプロパティが定義されている場合、これら 2 つのプロパティで識別される受信者全員に返信が送信されます。 トランスポート プロバイダーは、通常の応答のロジックをオーバーライドするのには、これらのプロパティを使用します。
+このプロパティが存在しない場合、返信は**PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md)) プロパティによって識別されるユーザーにのみ送信されます。 **PR_REPLY_RECIPIENT_ENTRIES** ([PidTagReplyRecipientEntries](pidtagreplyrecipiententries-canonical-property.md)) とこれらのプロパティが定義されている場合、返信は、これら2つのプロパティによって識別されるすべての受信者に送信されます。 トランスポートプロバイダーは、これらのプロパティを使用して、通常の応答ロジックを上書きします。
   
-**PR_REPLY_RECIPIENT_ENTRIES**またはこれらのプロパティのいずれかが設定されている場合も、他のプロパティを設定しなければなりません。 これらのプロパティは、同じ数の受信者を含める必要があり、同じ順序でそれらに含まれる必要があります。 これらの要件を遵守すると、可能性が予期しない結果です。 
+**PR_REPLY_RECIPIENT_ENTRIES**またはこれらのプロパティのいずれかが設定されている場合は、もう一方のプロパティも設定する必要があります。 これらのプロパティには、同じ数の受信者が含まれている必要があります。また、これらのプロパティは同じ順序で格納されている必要があります。 これらの要件を遵守できないと、予期しない結果になることがあります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
-> プロパティは、電子メール メッセージの許可の操作を指定します。
+> 電子メールメッセージに対して許容されるプロパティと操作を指定します。
     
-[[MS OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
-> メッセージ オブジェクト インターネット標準の電子メールの表記規則からに変換します。
+> インターネット標準の電子メールの規則からメッセージオブジェクトに変換します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

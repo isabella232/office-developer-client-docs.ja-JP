@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 47bb268f-acdd-7369-716c-bd51a32b8a49
 description: レイヤーに属する図形に対する選択操作や編集操作をロックするかどうかを指定します。
-ms.openlocfilehash: f404fe15814de802f4f6bfcebfd2558cf10cc7eb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d548a6f0fe0cac10d80d73c904739b2979ecf27f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359683"
 ---
-# <a name="lock-cell-layers-section"></a>[Lock] セル ([レイヤー] セクション)
+# <a name="lock-cell-layers-section"></a>[Lock] セル ([Layers] セクション)
 
 レイヤーに属する図形に対する選択操作や編集操作をロックするかどうかを指定します。
   
@@ -25,7 +25,7 @@ ms.locfileid: "19805735"
 |TRUE  <br/> |図形をロックします。  <br/> |
 |FALSE  <br/> |図形をロックしません。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 この値は、[**レイヤー プロパティ**] ダイアログ ボックスの [**ロック**] を選択して設定することもできます (このダイアログ ボックスを開くには、[**ホーム**] タブの [**編集**] グループで、[**レイヤー**] をクリックして、[**レイヤー プロパティ**] をクリックします)。
   
@@ -33,14 +33,14 @@ ms.locfileid: "19805735"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |Layers.Locked [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+|セル名:  <br/> |ロック [ *i* ] *i* = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [Lock] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionLayer** <br/> |
-|行インデックス:  <br/> |**visRowLayer** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+|行インデックス:  <br/> |**visRowLayer** +  *i* = ** 0、1、2...  <br/> |
 |セル インデックス:  <br/> |**visLayerLock** <br/> |
    
 

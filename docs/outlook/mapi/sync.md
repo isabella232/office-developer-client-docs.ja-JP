@@ -7,21 +7,21 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3f07fddf-4c42-6ea7-162d-57022166a83f
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a40046a26efe118e48cdca4749d2e99212bb8bfe
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: e856044a1b6345c4e495a75dfb7ca0defa52ceec
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349596"
 ---
 # <a name="sync"></a>SYNC
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ローカル ストアとサーバ間の同期を開始するための情報です。 この情報は、[状態を同期](synchronize-state.md)する際に使用されます。
+ローカルストアとサーバーの間の同期を開始するための情報。 この情報は、[同期状態](synchronize-state.md)の間に使用されます。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -37,7 +37,7 @@ struct SYNC
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  _ulFlags_
   
@@ -45,44 +45,44 @@ struct SYNC
     
 - UPS_UPLOAD_ONLY
     
-  - [in]クライアントのみのアップロードを実行します。 Outlook は、ローカルで変更されたフォルダーのみを返します。
+  - 順番クライアントはアップロードのみを実行します。 Outlook は、ローカルで変更されたフォルダーのみを返します。
     
 - UPS_DNLOAD_ONLY
     
-  - [in]クライアントは、ダウンロードのみを実行しているが。 Outlook は、フォルダーのアップロードのビットを消去しないでください。
+  - 順番クライアントはダウンロードのみを実行します。 Outlook では、フォルダーのアップロードビットをクリアすることはできません。
     
 - UPS_THESE_FOLDERS
     
-  - [in]クライアント同期するフォルダーの指定したセットで指定されたエントリ Id です。 このフラグは、 **UPS_UPLOAD_ONLY**または**UPS_DNLOAD_ONLY**のいずれかのフラグを組み合わせることができます。 
+  - 順番クライアントは、指定されたフォルダーのセットと指定されたエントリ id を同期します。 このフラグは、 **UPS_UPLOAD_ONLY**または**UPS_DNLOAD_ONLY**のいずれかのフラグと組み合わせて使用できます。 
     
 - UPS_OK
     
-  - [out]同期が正常に完了しました。 クライアントがこれをアップロードした後に設定、または完全な同期が完了するとします。
+  - 読み上げ同期に成功しました。 クライアントは、アップロード後または完全同期の完了後にこれを設定します。
     
 - 
     
     > [!NOTE]
-    > にもかかわらず、クライアントのアップロードまたは完全に同期できます (アップロード、ダウンロード) フォルダーとアイテムは、レプリケーション API を使用してクライアントが同時にレプリケーションの方向が 1 つだけで*ulFlags*を指定-いずれかの**UPS_UPLOAD_ONLY**または**UPS_DNLOAD_ONLY**フラグです。 クライアント、完全な同期の場合、 **UPS_UPLOAD_ONLY**フラグを使用してアップロードし、 **UPS_DNLOAD_ONLY**フラグを指定してダウンロードが最初に行われます。 
+    > クライアントは、レプリケーション API を使用してフォルダーとアイテムをアップロードまたは完全に同期 (アップロードしてからダウンロード) することができますが、クライアントは一度にレプリケーションの方向が1つだけの*ulflags*を指定します ( **UPS_UPLOAD_ONLY**または**UPS_DNLOAD_ONLY**フラグ。 完全同期の場合、クライアントはまず**UPS_UPLOAD_ONLY**フラグを使用してアップロードを行い、 **UPS_DNLOAD_ONLY**フラグを使用してダウンロードします。 
   
  _pwzPath_
   
-- [out]ローカル ストアへのパス。
+- 読み上げローカルストアへのパス。
     
  _Reserved1_
   
-- このメンバーは、Outlook の内部使用に予約されている、サポートされていません。
+- このメンバーは、Outlook の内部使用のために予約されており、サポートされていません。
     
  _Reserved2_
   
-- このメンバーは、Outlook の内部使用に予約されている、サポートされていません。
+- このメンバーは、Outlook の内部使用のために予約されており、サポートされていません。
     
- *pel* 
+ *bpel* 
   
-- [in]これは、 **UPS_THESE_FOLDERS**が設定されている場合は、同期するフォルダーのエントリ Id の一覧です。 **LPENTRYLIST**の型の定義の mapidefs.h を参照してください。 
+- 順番これは、 **UPS_THESE_FOLDERS**が設定されている場合に同期するフォルダーのエントリ id の一覧です。 **lmapidefs.h trylist**の型定義については、「」を参照してください。 
     
- _pulFolderOptions_
+ _/オプション_
   
-- [in]これは、 **UPS_THESE_FOLDERS**が設定されている場合、 *pel*で対応するフォルダーのフォルダー オプションの配列です。 これらのフォルダーのオプションは、各[フォルダーの状態をアップロード](upload-folder-state.md)する時に*pel*で表示されているフォルダーをアップロードするときに使用されます。 フォルダー オプションの詳細については、 **[UPFLD](upfld.md)** を参照してください。 
+- 順番**UPS_THESE_FOLDERS**が設定されている場合、 *pel*内の対応するフォルダーのフォルダオプションの配列です。 これらのフォルダーオプションは、「 [upload フォルダーの状態](upload-folder-state.md)」で*pel*にリストされている各フォルダーをアップロードするときに使用されます。 フォルダーオプションの詳細については、「 **[UPFLD](upfld.md)**」を参照してください。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -90,7 +90,7 @@ struct SYNC
 
 [レプリケーション API について](about-the-replication-api.md)
   
-[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
+[レプリケーション状態のマシンについて](about-the-replication-state-machine.md)
   
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
 

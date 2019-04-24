@@ -1,5 +1,5 @@
 ---
-title: メッセージ ストア テーブル
+title: メッセージストアテーブル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,26 +8,26 @@ api_type:
 - COM
 ms.assetid: cdb7d8c5-8e35-47ff-8be7-2cb17e341ad3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 735c778cd8e6ccb41de3d3d8cb0fdc163493f712
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: dd28c146f6b05b2dea03f73fab7131f23ca99e5f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356897"
 ---
-# <a name="message-store-tables"></a>メッセージ ストア テーブル
+# <a name="message-store-tables"></a>メッセージストアテーブル
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ ストアのテーブルには、現在のプロファイルで、メッセージ ストア プロバイダーに関する情報が含まれています。 MAPI セッションごとに MAPI によって実装され、クライアントによって使用されるメッセージ ストアの 1 つのテーブルがあります。 クライアントは、特定のプロバイダーのすべてのインスタンスを検索する、または特定のメッセージ ストアを検索するのには次の表を使用できます。 
+メッセージストアテーブルには、現在のプロファイルのメッセージストアプロバイダーに関する情報が含まれています。 mapi によって実装され、クライアントによって使用される、すべての mapi セッションに対してメッセージストアテーブルが1つあります。 クライアントは、このテーブルを使用して、特定のプロバイダーのすべてのインスタンスを検索したり、特定のメッセージストアを見つけたりすることができます。 
   
-メッセージ ストアのテーブルは、動的です。 クライアント アプリケーションのユーザーは、プロファイルを編集する場合は、 **PR_DEFAULT_STORE**の値など、既定のメッセージ ストアを変更する影響を受けるメッセージ ストアのプロパティをすぐに更新されます。 
+メッセージストアテーブルが動的である。 クライアントアプリケーションのユーザーがプロファイルを編集し、既定のメッセージストアを変更した場合は、影響を受けるメッセージストアの**PR_DEFAULT_STORE**プロパティの値がすぐに更新されます。 
   
-クライアントは、 [IMAPISession::GetMsgStoresTable](imapisession-getmsgstorestable.md)メソッドを呼び出して、メッセージ ストアのテーブルをアクセスします。 
+クライアントは、 [imapisession:: getmsgstorestable](imapisession-getmsgstorestable.md)メソッドを呼び出すことによって、メッセージストアテーブルにアクセスします。 
   
-次のプロパティは、メッセージ ストアのテーブルの設定の必要な列を構成します。
+次のプロパティを使用して、メッセージストアテーブルで必要な列セットを作成します。
   
 |||
 |:-----|:-----|

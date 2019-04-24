@@ -8,24 +8,24 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 04d57c1d-ce91-42ce-9f0f-00563092f6f4
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f86266f192ffb1c86ca48f0fd5f99559737a9e76
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0a34c441a473154a43a107b4236ccc259d327dba
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348056"
 ---
 # <a name="hrcreateofflineobj"></a>HrCreateOfflineObj
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
- オンラインとオフラインを出たときに、MAPI を通知するためにプロバイダーが、ストアで使用される MAPI オフライン オブジェクトを作成します。 
+ オブジェクトがオンラインおよびオフラインになったときに mapi に通知するために、プロバイダーとストアによって使用される mapi オフラインオブジェクトを作成します。 
   
 |||
 |:-----|:-----|
-|によってエクスポートされます。  <br/> |Msmapi32.dll  <br/> |
-|によって実装されます。  <br/> |Outlook  <br/> |
-|によって呼び出されます。  <br/> |クライアント  <br/> |
+|エクスポート対象:  <br/> |Msmapi32  <br/> |
+|実装元:  <br/> |Outlook  <br/> |
+|呼び出し元:  <br/> |クライアント  <br/> |
    
 ```cpp
 STDAPI HrCreateOfflineObj(
@@ -35,19 +35,19 @@ IMAPIOfflineMgr** ppOffline
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
 _ulFlags_
   
-> [in]0 である必要があります。
+> 順番0である必要があります。
     
-_pCreateInfo_
+_pcreateinfo_
   
-> [in]オフラインのオブジェクトを作成するために必要な情報を格納する**MAPIOFFLINE_CREATEINFO**構造体へのポインター。 
+> 順番オフラインオブジェクトの作成に必要な情報が含まれている**MAPIOFFLINE_CREATEINFO**構造体へのポインター。 
     
-_ppOffline_
+_ppoffline_
   
-> [out]**IMAPIOfflineMgr**インターフェイスへのポインター。 
+> 読み上げ**IMAPIOfflineMgr**インターフェイスへのポインター。 
     
 ## <a name="return-value"></a>Return value
 

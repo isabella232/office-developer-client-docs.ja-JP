@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: ed3c997b-0a58-0432-c468-a24614b67f2e
 description: 指定した文字列が図形のカテゴリの一覧にある場合は、TRUE を返します。
-ms.openlocfilehash: 2445b4c3af63b331b303897997ce38b0747f17fe
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 902819f981b53aed96695e181ab556d3841d97c9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360166"
 ---
 # <a name="hascategory-function"></a>HASCATEGORY 関数
 
@@ -25,13 +25,13 @@ ms.locfileid: "19805519"
   
 ## <a name="syntax"></a>構文
 
-HASCATEGORY (* **カテゴリ** *) 
+hascategory (* * *category* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _category_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |検索するカテゴリ。  <br/> |
+| _項目_ <br/> |必須  <br/> |**String** <br/> |検索するカテゴリ。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
@@ -39,6 +39,6 @@ HASCATEGORY (* **カテゴリ** *)
   
 ## <a name="remarks"></a>注釈
 
- *カテゴリ*は、図形を分類するために使用できるユーザー定義の文字列です。 User.msvShapeCategories 図形のシェイプ シート セルでは、カテゴリを定義することができます。 カテゴリをセミコロンで区切ると、図形の複数のカテゴリを定義できます。 
+ *カテゴリ*は、図形の分類に使用できるユーザー定義の文字列です。 カテゴリは、図形のシェイプシート内の User.msvShapeCategories セルで定義できます。 1 つの図形に対して複数のカテゴリを定義するには、カテゴリをセミコロンで区切ります。 
   
 

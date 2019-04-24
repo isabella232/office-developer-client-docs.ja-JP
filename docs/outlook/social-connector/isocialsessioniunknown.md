@@ -1,5 +1,5 @@
 ---
-title: ISocialSession IUnknown
+title: i、alsession IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,43 +7,43 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0fe423d7-b044-479b-89ad-c39620eedd65
-description: ソーシャル ネットワーク サイトへの接続を表します。
-ms.openlocfilehash: ee3a8aa72ea187b4c211bc7a49e8a2dbe170adad
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: ソーシャルネットワークサイトへの接続を表します。
+ms.openlocfilehash: c60fab1c27d2f761db28ed06bb45080857630e8d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357366"
 ---
 # <a name="isocialsession--iunknown"></a>ISocialSession : IUnknown
 
-ソーシャル ネットワーク サイトへの接続を表します。
+ソーシャルネットワークサイトへの接続を表します。
   
 ## <a name="members"></a>Members
 
-次の表は、 **ISocialSession**インターフェイスで使用可能なメンバーを示します。 
+次の表に、 **iare alsession**インターフェイスで使用できるメンバーを示します。 
   
-|**名前**|**メンバーの種類**|**説明**|
+|**Name**|**メンバーの種類**|**説明**|
 |:-----|:-----|:-----|
-|[FindPerson](isocialsession-findperson.md) <br/> |メソッド  <br/> |_ユーザー Id_パラメーターに一致する 1 つまたは複数の人物を表す文字列を取得します。  <br/> |
-|[FollowPerson](isocialsession-followperson.md) <br/> |メソッド  <br/> |ソーシャル ネットワークにログオン中のユーザーのフレンドとして、 _emailAddress_パラメーターで識別されるユーザーを追加します。  <br/> |
-|[GetActivities](isocialsession-getactivities.md) <br/> |メソッド  <br/> |この方法で Outlook ソーシャル コネクタ (OSC) 1.1 は廃止されました。  <br/> |
-|[GetLoggedOnUser](isocialsession-getloggedonuser.md) <br/> |メソッド  <br/> |ログオン中のユーザーを表す[ISocialProfile](isocialprofileisocialperson.md)インターフェイスを取得します。  <br/> |
-|[GetLogonUrl](isocialsession-getlogonurl.md) <br/> |メソッド  <br/> |Web 認証時にユーザーにブラウザー ベースのフォームを表示するために使用される URL を表す文字列を取得します。  <br/> |
-|[GetNetworkIdentifier](isocialsession-getnetworkidentifier.md) <br/> |メソッド  <br/> |特定のソーシャル ネットワークの接続のソーシャル ネットワークの一意の識別子を表す文字列を取得します。  <br/> |
-|[GetPerson](isocialsession-getperson.md) <br/> |メソッド  <br/> |_ユーザー Id_のパラメーターに基づいて、 [ISocialPerson](isocialpersoniunknown.md)インターフェイスを取得します。  <br/> |
-|[LoggedOnUserID](isocialsession-loggedonuserid.md) <br/> |プロパティ  <br/> |現在ログオンしているユーザーのソーシャル ネットワークのユーザー ID を表す文字列を返します。  <br/> |
+|[findperson](isocialsession-findperson.md) <br/> |メソッド  <br/> |_userID_パラメーターに一致する1人以上の人物を表す文字列を取得します。  <br/> |
+|[ユーザー](isocialsession-followperson.md) <br/> |メソッド  <br/> |ソーシャルネットワークにログオンしているユーザーのフレンドとして、 _emailAddress_パラメーターによって識別された人物を追加します。  <br/> |
+|[getactivities](isocialsession-getactivities.md) <br/> |メソッド  <br/> |このメソッドは、Outlook Social Connector (.osc) 1.1 で廃止されました。  <br/> |
+|[GetLoggedOnUser](isocialsession-getloggedonuser.md) <br/> |メソッド  <br/> |ログオンユーザーを表す[isocialprofile](isocialprofileisocialperson.md)インターフェイスを取得します。  <br/> |
+|[getlogonurl](isocialsession-getlogonurl.md) <br/> |メソッド  <br/> |web 認証中にブラウザーベースのフォームをユーザーに提示するために使用される URL を表す文字列を取得します。  <br/> |
+|[getnetworkidentifier](isocialsession-getnetworkidentifier.md) <br/> |メソッド  <br/> |特定のソーシャルネットワーク接続の一意のソーシャルネットワーク識別子を表す文字列を取得します。  <br/> |
+|[getperson](isocialsession-getperson.md) <br/> |メソッド  <br/> |_userID_パラメーターに基づいて[isocialperson](isocialpersoniunknown.md)インターフェイスを取得します。  <br/> |
+|[LoggedOnUserID](isocialsession-loggedonuserid.md) <br/> |プロパティ  <br/> |現在ログオンしているユーザーのソーシャルネットワークユーザー ID を表す文字列を返します。  <br/> |
 |[LoggedOnUserName](isocialsession-loggedonusername.md) <br/> |プロパティ  <br/> |ログオン時に使用されるユーザー名を表す文字列を返します。  <br/> |
-|[Logon](isocialsession-logon.md) <br/> |メソッド  <br/> |指定されたユーザー名とパスワードを使用して、ソーシャル ネットワーク サイトにログオンします。  <br/> |
-|[LogonWeb](isocialsession-logonweb.md) <br/> |メソッド  <br/> |フォーム ベース認証を使用して、ソーシャル ネットワーク サイトにログオンします。  <br/> |
-|[SiteUrl](isocialsession-siteurl.md) <br/> |プロパティ  <br/> |ソーシャル ネットワーク サイトの URL を設定します。  <br/> |
-|[UnFollowPerson](isocialsession-unfollowperson.md) <br/> |メソッド  <br/> |ソーシャル ネットワークの友人として、_ユーザー Id_のパラメーターで識別されるユーザーを削除します。  <br/> |
+|[Logon](isocialsession-logon.md) <br/> |メソッド  <br/> |指定したユーザー名とパスワードを使用して、ソーシャルネットワークサイトにログオンします。  <br/> |
+|[logonweb](isocialsession-logonweb.md) <br/> |メソッド  <br/> |フォームベース認証を使用してソーシャルネットワークサイトにログオンします。  <br/> |
+|[SiteUrl](isocialsession-siteurl.md) <br/> |プロパティ  <br/> |ソーシャルネットワークサイトの URL を設定します。  <br/> |
+|[個人](isocialsession-unfollowperson.md) <br/> |メソッド  <br/> |_userID_パラメーターで指定された人物をソーシャルネットワーク上のフレンドとして削除します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-OSC プロバイダーでは、OSC と通信するには、このインターフェイスを実装する必要があります。
+.osc プロバイダーは、このインターフェイスを実装して、.osc と通信する必要があります。
   
 ## <a name="see-also"></a>関連項目
 
-- [Outlook ソーシャル コネクタ プロバイダー インターフェイス](outlook-social-connector-provider-interfaces.md)
+- [Outlook Social Connector プロバイダーインターフェイス](outlook-social-connector-provider-interfaces.md)
 

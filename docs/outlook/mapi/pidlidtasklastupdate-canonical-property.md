@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 65b73d0f-f1f1-4c11-8834-f7c736a30ffc
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 95af98acad6b2aa4bc95ea5e6478e6ca21c8eb8f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25391382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356834"
 ---
 # <a name="pidlidtasklastupdate-canonical-property"></a>PidLidTaskLastUpdate 標準プロパティ
 
@@ -25,13 +25,13 @@ ms.locfileid: "25391382"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-世界協定時刻 (UTC) と、タスクに加えられたおよび**dispidTaskHistory** ([PidLidTaskHistory](pidlidtasklastupdate-canonical-property.md)) のプロパティで示された最新の変更の日付を示します。
+**dispidTaskHistory** ([PidLidTaskHistory](pidlidtasklastupdate-canonical-property.md)) プロパティで示される、タスクに対して行われた最新の変更の世界協定時刻 (UTC) と日付を示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidTaskLastUpdate  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Task  <br/> |
-|長い ID (LID):  <br/> |0x00008115  <br/> |
+|関連するプロパティ:  <br/> |dispidtasklastupdate  <br/> |
+|プロパティセット:  <br/> |PSETID_Task  <br/> |
+|ロング ID (LID):  <br/> |0x00008115  <br/> |
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
 |エリア:  <br/> |タスク  <br/> |
    
@@ -39,17 +39,17 @@ ms.locfileid: "25391382"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
-> タスク、タスクの割り当て、およびタスクの更新に相当する電子をモデル化したいくつかのオブジェクトを定義します。
+> タスク、タスクの割り当て、およびタスクの更新に相当する電子メールをモデル化する複数のオブジェクトを定義します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -57,9 +57,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

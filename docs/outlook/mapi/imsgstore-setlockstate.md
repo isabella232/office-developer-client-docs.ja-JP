@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4b1176ec-4126-43f5-856d-cbab8d622825
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2efee531e277b6295b7d4bc299eefc789a805d34
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 9eeede2a430f5186daf429dd6ed59f312ae334be
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348749"
 ---
 # <a name="imsgstoresetlockstate"></a>IMsgStore::SetLockState
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ロックまたはメッセージのロックを解除します。 このメソッドは、MAPI スプーラーによってのみ呼び出されます。
+メッセージをロックまたはロック解除します。 このメソッドは、MAPI スプーラーによってのみ呼び出されます。
   
 ```cpp
 HRESULT SetLockState(
@@ -34,15 +34,15 @@ HRESULT SetLockState(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
- _lpMessage_
+ _lpmessage_
   
-> [in]ロックまたはロック解除のメッセージへのポインター。
+> 順番ロックまたはロック解除するメッセージへのポインター。
     
  _ulLockState_
   
-> [in]メッセージをロックまたはロック解除するかどうかを示す値。 次のいずれかの機能は有効です。
+> 順番メッセージをロックまたはロック解除する必要があるかどうかを示す値。 次のいずれかの値が有効です。
     
 MSG_LOCKED 
   
@@ -52,23 +52,23 @@ MSG_UNLOCKED
   
 > メッセージをロック解除する必要があります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> メッセージのロック状態は正常に設定されました。
+> メッセージのロック状態が正常に設定されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMsgStore::SetLockState**メソッドは、ロックまたは、メッセージのロックを解除します。 **SetLockState**はメッセージを送信するときに、MAPI スプーラーによってのみ呼び出すことができます。 
+**IMsgStore:: SetLockState**メソッドは、メッセージのロックまたはロック解除を行います。 **SetLockState**は、メッセージの送信中に MAPI スプーラーによってのみ呼び出すことができます。 
   
-通常、MAPI スプーラーを呼び出すと、メッセージをロックするのには**SetLockState** 、ロックのみの最も古いメッセージ (つまり、次のメッセージ キューに入れられた MAPI スプーラーに送信するため)。 キュー内の最も古いメッセージが一時的に使用不可のトランスポート プロバイダーでは、待機している次のメッセージ キューを別のトランスポート プロバイダーを使用する場合は、MAPI スプーラーは後でメッセージの処理を開始できます。 **SetLockState**を使用して、そのメッセージをロックすることにより、処理を開始します。
+通常、mapi スプーラーは、メッセージをロックするために**SetLockState**を呼び出した場合、最も古いメッセージのみをロックします (つまり、送信する MAPI スプーラーの次のメッセージがキューに入れられます)。 キュー内の最も古いメッセージが一時的に使用できないトランスポートプロバイダーを待機していて、キュー内の次のメッセージが別のトランスポートプロバイダーを使用している場合、MAPI スプーラーは後のメッセージの処理を開始できます。 **SetLockState**を使用してメッセージをロックすることで、処理が開始されます。
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-MAPI スプーラーは、 _ulLockState_パラメーターを MSG_LOCKED を設定して**SetLockState**を呼び出すと、メッセージの転送をキャンセルするのには、 [IMsgStore::AbortSubmit](imsgstore-abortsubmit.md)メソッドへの呼び出しは失敗する必要があります。 
+_ulLockState_パラメーターを MSG_LOCKED に設定して MAPI スプーラーが**SetLockState**を呼び出した後、メッセージの送信を取り消すには、 [IMsgStore:: abortsubmit](imsgstore-abortsubmit.md)メソッドの呼び出しは失敗する必要があります。 
   
-**SetLockState**の呼び出しを受け取る前に、メッセージに加えられた変更が保存されるように、 **SetLockState**の実装では、メッセージの[IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを呼び出します。 
+**SetLockState**の実装でメッセージの[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出して、 **SetLockState**呼び出しを受信する前にメッセージに加えられた変更が保存されるようにします。 
   
 ## <a name="see-also"></a>関連項目
 

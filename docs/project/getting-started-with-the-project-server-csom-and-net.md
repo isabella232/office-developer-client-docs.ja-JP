@@ -7,11 +7,11 @@ ms.assetid: 5ce73baa-dfb6-41d0-918d-b0c3a498815f
 description: Project Server 2013 のクライアント側オブジェクト モデル (CSOM) を使用して、.NET Framework 4 を使用した Project Online およびオンプレミスのソリューションを開発することができます。 この記事では、CSOM を使用するコンソール アプリケーションを作成して、プロジェクトを作成および発行する方法について説明します。 プロジェクトの発行後、このアプリケーションは Project Server Queue Service による発行操作の終了を待機してから、発行されたプロジェクトのリストを示します。
 localization_priority: Priority
 ms.openlocfilehash: b53587ca1959faefdc1b40f08c4adfda4ee11d70
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360577"
 ---
 # <a name="getting-started-with-the-project-server-csom-and-net"></a>Project Server CSOM と .NET の使用を開始する
 

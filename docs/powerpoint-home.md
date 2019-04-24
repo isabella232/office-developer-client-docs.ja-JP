@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: c76c7851-d68f-4f56-8111-e05c764f0ef8
 description: ソリューションの開発と PowerPoint のカスタマイズに関する HowTo コンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、および技術記事を検索できます。
 ms.openlocfilehash: 21105174e3d06151ef788ab0d81badd2c3e1d952
-ms.sourcegitcommit: 6a314fdfde4349591ed899019695c36537f45924
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355028"
 ---
 # <a name="powerpoint"></a>PowerPoint
 

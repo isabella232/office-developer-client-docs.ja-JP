@@ -8,21 +8,21 @@ f1_keywords:
 - Vis_DSS.chm82251456
 localization_priority: Normal
 ms.assetid: 6a005acc-55c3-ac04-d32c-370bb2797b08
-description: '数値の底 10 の対数を返します。 数は正である必要がありますか、LOG10 は、エラー値 #num を返します。'
-ms.openlocfilehash: 4e3ead040803ac9d346ae561edac407dcdfb0c15
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '数値の底10の対数を返します。 正の数または LOG10 を指定する必要があります。エラー値 #NUM を返します。'
+ms.openlocfilehash: e64f1eaf0065c893a1ab62a1824587c1d255c6a8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358010"
 ---
 # <a name="log10-function"></a>LOG10 関数
 
-数値の底 10 の対数を返します。 数は正である必要がありますか、LOG10 は、エラー値 #num を返します。
+数値の底10の対数を返します。 正の数または LOG10 を指定する必要があります。エラー値 #NUM を返します。
   
 ## <a name="syntax"></a>構文
 
-LOG10 (* **番号** *) 
+LOG10 (* **数値** *) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -36,7 +36,7 @@ LOG10 (* **番号** *)
   
 ## <a name="example"></a>例
 
-LOG10(42) 
+LOG10 (42) 
   
 1.6232 を返します。 
   

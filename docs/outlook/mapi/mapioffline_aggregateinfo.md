@@ -7,21 +7,21 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2e502d28-ae09-49d9-a35a-5d77acdcd6f4
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: eb182d9cc51c196558f9e9192a65352e87372bf0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 4775de0707eb90549f07525e3aa54ec5842f6050
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357135"
 ---
 # <a name="mapiofflineaggregateinfo"></a>MAPIOFFLINE_AGGREGATEINFO
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[HrCreateOfflineObj](hrcreateofflineobj.md)構造体が使用されます。 
+この構造体は、 [hrcreateofflineobj](hrcreateofflineobj.md)と共に使用されます。 
   
 ```cpp
 typedef struct
@@ -34,13 +34,13 @@ typedef struct
 
 ## <a name="members"></a>Members
 
- **ulSize**
+ **ulsize**
   
-> 構造体のサイズです。
+> 構造体のサイズ。
     
- **pOuterObj**
+ **pouterobj**
   
-> 先この集約オブジェクトの IUnknown オブジェクトへのポインター。 こうと、作成したオブジェクトを通過するすべての QueryInterface 呼び出しができます。
+> このオブジェクトの集約先の IUnknown オブジェクトへのポインター。 これにより、作成されたオブジェクトに QueryInterface 呼び出しをパススルーすることができます。
     
  **pRefTrackRoot**
   

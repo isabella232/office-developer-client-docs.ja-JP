@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 91cde601-dca9-4737-afe1-bdf76638dfe3
 description: 図形に適用するテーマがあるかどうかを示すブール演算型の値を返します。
-ms.openlocfilehash: 4311780d8686b5792e999c204ec182d23efb723c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 49f53eaaacbdc86a633703d6ef847e38097f5122
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357513"
 ---
 # <a name="isthemed-function"></a>ISTHEMED 関数
 
@@ -25,27 +25,27 @@ ms.locfileid: "19805646"
   
 ## <a name="syntax"></a>構文
 
- **ISTHEMED**()
+ **isthemed**()
   
 ## <a name="return-value"></a>戻り値
 
-ブール型
+Boolean
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 > [!NOTE]
-> Visio 2013 には、 **ISTHEMED**関数は、Visio の以前のバージョンから**CELLISTHEMED**関数を置き換えます。 
+> visio 2013 の**isthemed**関数は、以前のバージョンの visio の**CELLISTHEMED**関数を置き換えます。 
   
-**ISTHEMED**はテーマの書式設定の適切な部分を図形に割り当てることで機能しますが、テーマの書式を手動で適用される書式の他の部分を上書きする機能を保持します。 後でテーマを再適用する場合手動で書式設定がオーバーライドされ、図形にはテーマの書式設定のすべて。 
+**isthemed**関数を使用すると、テーマの書式の適切な部分を図形に割り当てることができますが、手動で適用した書式設定を使用してテーマの書式設定の他の部分を上書きする機能は保持されます。 後でテーマを再適用すると、手動で書式設定すると、すべてのテーマの書式設定が無効になります。 
   
- **ISTHEMED**は、図形内の[ColorSchemeIndex](colorschemeindex-cell-theme-properties-section.md)セルが 0 より大きい場合は TRUE に評価されます。 このセルが 0 の場合は、 **ISTHEMED**を評価し、false を指定します。 DocumentSheet と PageSheet のテーマは、シェイプ シートで使用する**ISTHEMED**関数の値に影響はありません。 **ISTHEMED**関数が表示される場合にのみ、PageSheet はページのテーマだけにします。 
+ 図形の [[ColorSchemeIndex](colorschemeindex-cell-theme-properties-section.md)] セルが 0 より大きい場合、**ISTHEMED** は TRUE と評価されます。 セルが 0 と等しい場合は、**ISTHEMED** は FALSE と評価されます。 documentsheet および PageSheet のテーマは、シェイプシートで使用され**** ている isthemed 関数の値に影響を与えません。 PageSheet で**isthemed**関数が表示されている場合にのみ、ページのテーマに問題があります。 
   
-## <a name="example"></a>次の使用例では、テーブルからレコードを削除できないようにします。
+## <a name="example"></a>例
 
 ||||
 |:-----|:-----|:-----|
-|セル  <br/> |Formula  <br/> |結果  <br/> |
-|Char.Font  <br/> |IF(ISTHEMED()、THEMEVAL()、FONT("Calibri"))  <br/> |図形にテーマを適用する場合、図形のテキストは、テーマのフォントを受け入れます。 図形がテーマではない場合は、「Calibri」フォントを使用して図形のテキストが書式設定されます。  <br/> |
-|線の色  <br/> |IF(ISTHEMED, RGB(255, 0, 0), RGB(0, 255, 0))  <br/> |図形にテーマを適用する場合、図形の線の色は赤色です。 図形がテーマではない場合は、図形の線の色は緑です。  <br/> |
+|Cell  <br/> |Formula  <br/> |結果  <br/> |
+|文字フォント  <br/> |IF (isthemed ()、書式付き eval ()、FONT ("Calibri"))  <br/> |図形に適用されたテーマがある場合、図形のテキストはテーマのフォント書式設定を受け入れます。 図形にテーマが設定されていない場合、図形のテキストには "Calibri" というフォントが適用されます。  <br/> |
+|linecolor]  <br/> |IF(ISTHEMED, RGB(255, 0, 0), RGB(0, 255, 0))  <br/> |図形にテーマが適用されている場合、図形の線の色は赤になります。 図形にテーマが設定されていない場合、図形の線の色は緑になります。  <br/> |
    
 

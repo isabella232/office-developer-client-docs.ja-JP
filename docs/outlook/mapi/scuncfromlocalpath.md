@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: cc4abf1a-c08c-4462-9d7c-6af506dc07c9
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: faba91d813d27f7ea45e978724ce0d4707803cba
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b53dd9aaaf18dba5c7e33e0bc7d984de757634a4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358773"
 ---
 # <a name="scuncfromlocalpath"></a>ScUNCFromLocalPath
 
@@ -25,13 +25,13 @@ ms.locfileid: "22590107"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-汎用名前付け規則 (UNC) パスに対応する指定されたローカル パスを検索します。
+指定したローカルパスに相当する汎用名前付け規則 (UNC) パスを検索します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 SCODE ScUNCFromLocalPath(
@@ -43,23 +43,23 @@ SCODE ScUNCFromLocalPath(
 
 ## <a name="parameters"></a>パラメーター
 
- _szLocal_
+ _szlocal_
   
-> [in]パスの形式で [_ドライブ:_]\[ _のパス_] ファイルまたはディレクトリの。
+> 順番ファイルまたはディレクトリの形式 [ _drive:_]\[ _path_のパス。
     
- _szUNC_
+ _szunc_
   
-> [out]形式のパス\\[_サーバー_]\[ _を共有_]\[ _パス_] の同じファイルまたはディレクトリの場合、 _szLocal_パラメーターとします。 
+> 読み上げ_szlocal_パラメーターと同じ\\ファイルまたはディレクトリの形式 [ _server_]\[ _share_]\[ _path_] のパス。 
     
- _cchUNC_
+ _cchunc_
   
-> [in]出力文字列のバッファーのサイズです。
+> 順番出力文字列のバッファーのサイズ。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK
   
-> UNC パスに対応するでは、正常に配置されました。
+> 対応する UNC パスが正常に配置されている。
     
 MAPI_E_INVALID_PARAMETER
   
@@ -67,11 +67,11 @@ MAPI_E_INVALID_PARAMETER
     
 MAPI_E_TOO_BIG
   
->  _szUNC_は、結果を保持するのに十分な大きさでした。 
+>  _szunc_は、結果を保持するのに十分な大きさがありませんでした。 
     
 S_FALSE
   
-> ローカル パスは、UNC 文字列では既にいました。
+> ローカルパスは、既に UNC 文字列です。
     
 ## <a name="see-also"></a>関連項目
 

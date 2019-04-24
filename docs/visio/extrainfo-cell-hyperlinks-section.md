@@ -8,19 +8,19 @@ f1_keywords:
 - vis_sdr.chm360
 localization_priority: Normal
 ms.assetid: 55834445-8619-f79a-aea0-0f6a1780e016
-description: イメージ マップの座標など、URL の解決に使用される情報を渡す文字列を表します。 ExtraInfo] セルで、x = 41&amp;y 7specifies のイメージ マップの座標を = します。
-ms.openlocfilehash: aa035d5ec863cd8045063af970efa26b53683793
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: イメージ マップの座標など、URL の解決に使用される情報を渡す文字列を表します。 たとえば、[ExtraInfo] セルの x = 41&amp;y = 7specifies、イメージマップの座標を指定します。
+ms.openlocfilehash: df2886ef7911b484cc60e8a476bfa53369fbf646
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357821"
 ---
-# <a name="extrainfo-cell-hyperlinks-section"></a>[ExtraInfo] セル ([ハイパーリンク] セクション)
+# <a name="extrainfo-cell-hyperlinks-section"></a>[ExtraInfo] セル ([Hyperlinks] セクション)
 
-イメージ マップの座標など、URL の解決に使用される情報を渡す文字列を表します。 ExtraInfo] セルで、"x = 41&amp;y = 7"イメージ マップの座標を指定します。
+イメージ マップの座標など、URL の解決に使用される情報を渡す文字列を表します。 たとえば、[ExtraInfo] セルの "x = 41&amp;y = 7" では、イメージマップの座標を指定します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 イベント セルはイベントの発生時にのみ評価されます。数式の入力時には評価されません。
   
@@ -28,14 +28,14 @@ ms.locfileid: "19805355"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | ハイパーリンク  *名*です。ExtraInfo いるハイパーリンク。  *名前*は、行の名前  <br/> |
+| セル名:  <br/> | ハイパーリンク  *名前*です。引数 ExtraInfo のハイパーリンクを指定します。  *name*には、行の名前を指定します。  <br/> |
    
 プログラムから、インデックスによって [ExtraInfo] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionHyperlink** <br/> |
-| 行インデックス:  <br/> |**visRow1stHyperlink** +  *i* 、 *i* = 0, 1, 2.  <br/> |
-| セル インデックス:  <br/> |**visHLinkExtraInfo** <br/> |
+| 行インデックス:  <br/> |**visRow1stHyperlink** +  *i* = ** 0、1、2...  <br/> |
+| セル インデックス:  <br/> |**vishlinkextrainfo** <br/> |
    
 

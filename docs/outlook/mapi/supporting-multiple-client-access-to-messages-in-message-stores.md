@@ -8,20 +8,20 @@ api_type:
 - COM
 ms.assetid: 31885c64-edb2-4a87-8730-09f163dedd40
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b13fbb9f2807c9814fed5ba3bcca8fe73aaa7b01
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 40bed9ccbe8073c8e9ea5176c9d4be8fe642b52d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350604"
 ---
 # <a name="supporting-multiple-client-access-to-messages-in-message-stores"></a>���[���̕ۑ��ꏊ�ŕ����N���C�A���g�̃��b�Z�[�W�ւ̃A�N�Z�X��T�|�[�g
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-複数のクライアント アプリケーションが特定のメッセージを同時に開くことができます。 メッセージ ストア プロバイダーは、このようなアクセスを制御するための特定の規則に従う必要はありません。 ただし、クライアント アプリケーションは、メッセージを変更すると、それらの変更内容を保存、ストア プロバイダーは次の規則に従う必要があります。
+It is possible for multiple client applications to open a given message simultaneously. Message store providers do not have to follow any particular rules for governing such access. However, if the client applications modify the message and save their changes, the store provider should comply with the following rules:
   
 - ���b�Z�[�W��J���Ă���B��̃N���C�A���g�̏ꍇ�Ɠ��l�ɑ��s����[IMAPIProp::SaveChanges](imapiprop-savechanges.md)���\�b�h�̍ŏ��̌Ăяo��������܂��B 
     
@@ -31,9 +31,9 @@ ms.locfileid: "22564221"
     
 �܂��́A���b�Z�[�W �X�g�A �v���o�C�_�[�́A��������o���A���[�U�[���A���̃��b�Z�[�W��ێ�����A�V�����ύX] �ŁA���̃��b�Z�[�W��㏑������A�܂��͕ʂ̏ꏊ�ɕύX��ۑ����邩�ǂ�����I��ł���C���^�[�t�F�C�X��s�����Ƃ��ł��܂��B
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 
-[���[���̕ۑ��ꏊ�Ń��b�Z�[�W��������܂��B](implementing-messages-in-message-stores.md)
+[メッセージ ストアのメッセージの実装](implementing-messages-in-message-stores.md)
 

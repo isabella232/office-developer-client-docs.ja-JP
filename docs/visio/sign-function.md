@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: fdc032c2-d0bd-1592-de3f-33c478d066ee
 description: 数値の符号を表す値を返します。
-ms.openlocfilehash: 5f812dc4313e15df5d66a919707e7cdbb79f94b9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 34bbbab17de94b0a8c95b4b0bfd3829a06dc7e70
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357457"
 ---
 # <a name="sign-function"></a>SIGN 関数
 
@@ -22,7 +22,7 @@ ms.locfileid: "19806501"
   
 ## <a name="syntax"></a>構文
 
-記号 (* **番号** *、* **ファジー* * *) 
+SIGN (* * *number* * *, * **ファジー* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -35,33 +35,33 @@ ms.locfileid: "19806501"
 
 数値型 (Numeric)
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-SIGN 関数は、_数値_が正の場合に 1 を返します、負の_数_は、0 または-1 が_数値_の場合は 0 です。 
+SIGN 関数は、 _number_が正の場合は1、 __ 数値が0の場合は0、_数値_が負の場合は-1 を返します。 
   
-Specifyin_誤差_の値は、計算がほぼゼロの場合、浮動小数点の丸めエラーを避けるために役立ちます。 _ファジー_値を指定しない場合は、1e-9 (0.000000001) が使用されます。 または図面を拡大すると、厳密な比較をするときに異なる値を指定することがあります。 
+_ファジー_値を指定すると、計算がほぼゼロの場合に浮動小数点 roundoff エラーを回避できます。 _ファジー_値を指定しない場合、Visio は 1e-9 (0.000000001) を使用します。 図面の縮尺を変更したり、正確な比較を行う場合は、異なる値を指定できます。 
   
 ## <a name="example-1"></a>例 1
 
-SIGN(-5)
+符号 (-5)
   
 -1 を返します。
   
 ## <a name="example-2"></a>例 2
 
-SIGN(0)
+符号 (0)
   
 0 を返します。
   
 ## <a name="example-3"></a>例 3
 
-SIGN(0.00000000001)
+記号 (0.00000000001)
   
 0 を返します。
   
 ## <a name="example-4"></a>例 4
 
-SIGN(0.00000000001,0)
+符号 (0.00000000001, 0)
   
 1 を返します。
   

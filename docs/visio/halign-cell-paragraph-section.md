@@ -9,26 +9,26 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: a8d6b622-60b3-e43f-b6a1-55db561204ed
 description: 図形のテキスト ブロックにあるテキストの水平方向の配置を指定します。
-ms.openlocfilehash: 224e495e8aea70c418a0ab7f5a7d56975d9868e8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a48619e2531c0a69ad63af3b88ae9f019019b1fe
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360180"
 ---
-# <a name="halign-cell-paragraph-section"></a>[HAlign] セル ([段落] セクション)
+# <a name="halign-cell-paragraph-section"></a>[HAlign] セル ([Paragraph] セクション)
 
 図形のテキスト ブロックにあるテキストの水平方向の配置を指定します。
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| 0  <br/> | 左揃え  <br/> |**visHorzLeft** <br/> |
-| 1  <br/> | 中央揃え  <br/> |**visHorzCenter** <br/> |
-| 2  <br/> | 右揃え  <br/> |**visHorzRight** <br/> |
-| 3  <br/> | 両端揃え  <br/> |**visHorzJustify** <br/> |
-| 4  <br/> | 均等割付  <br/> |**visHorzForce** <br/> |
+| .0  <br/> | 左揃え  <br/> |**visHorzLeft** <br/> |
+| 1-d  <br/> | 中央  <br/> |**visHorzCenter** <br/> |
+| pbm-2  <br/> | 右揃え  <br/> |**visHorzRight** <br/> |
+| 1/3  <br/> | Justify  <br/> |**visHorzJustify** <br/> |
+| 2/4  <br/> | 均等割付  <br/> |**visHorzForce** <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 両端揃えの場合、段落の最終行以外の各行の単語間に空白が挿入されて、テキストの左右の両端が余白に合わせて揃えられます
   
@@ -38,14 +38,14 @@ ms.locfileid: "19805516"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | Para.HorzAlign [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+| セル名:  <br/> | HorzAlign [ *i* ] *i* = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [HAlign] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionParagraph** <br/> |
-| 行インデックス:  <br/> |**visRowParagraph** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+| 行インデックス:  <br/> |**visRowParagraph** +  *i* = ** 0、1、2...  <br/> |
 | セル インデックス:  <br/> |**visHorzAlign** <br/> |
    
 

@@ -11,45 +11,45 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2348cce1-07c3-49ed-ae03-79e477d3c6c2
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 7f8ede3761ca10589c686e2ec4fac18fbe00fb2c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 4208f51af44055b03c65b51c9b3d94e947dc9b68
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351241"
 ---
 # <a name="scode"></a>SCODE
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-エラーまたは警告を記述するために使用される 32 ビットのステータス値です。 
+エラーまたは警告を記述するために使用される32ビットの状態の値。 
   
 ```cpp
 typedef ULONG SCODE;
 
 ```
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**データは、 [HRESULT](hresult.md)のデータ型と同じです。** 
+**SCODE**データ型は、 [HRESULT](hresult.md)データ型と同じです。 
   
-**SCODE**の値は、4 つのフィールドに分かれています。 
+**SCODE**値は、次の4つのフィールドに分かれています。 
   
-- 返し、失敗を示すために 1 を 0 に設定されている単一のビットの重要度コードです。
+- 成功を示す0に設定されている1ビットの重大度コード。エラーを示す1を指定します。
     
-- 11 ビットの予約フィールド
+- 11ビットの予約済みフィールド
     
-- 領域エラーまたは警告を担当することを示す 4 ビットの機能のコードです。
+- エラーまたは警告を担当する領域を示す4ビットのファシリティコード。
     
-- 16 ビットのエラーまたは警告コード エラーまたは警告は、問題について説明します。
+- エラーまたは警告を引き起こしている問題を説明する16ビットエラーまたは警告コード。
     
-MAPI の関数およびメソッドの多くは、OLE メソッドと関数のように、 **HRESULT**のデータ型として定義されている**SCODE**の値を返します。 OLE は、 **SCODE**と**HRESULT**間の変換に使用できるいくつかのマクロを定義します。
+多くの MAPI の関数およびメソッドは、OLE のメソッドと関数として、 **HRESULT**データ型として定義された**SCODE**値を返します。 OLE は、 **SCODE**と**HRESULT**の間の変換に使用できるいくつかのマクロを定義します。
   
 > [!NOTE]
-> 64 ビットの MAPI で**られません**が、32 ビット値です。 
+> 64ビット MAPI では、 **SCODE**は32ビット値のままです。 
   
-MAPI が**SCODE**のデータ型を使用する方法の詳細については、[エラー処理](error-handling-in-mapi.md)を参照してください。 OLE および**SCODE**のデータ型の詳細については、 *OLE プログラマ リファレンス*を参照してください。 
+MAPI が**SCODE**データ型を使用する方法の詳細については、「[エラー処理](error-handling-in-mapi.md)」を参照してください。 ole および**SCODE**データ型の詳細については、「 *ole プログラマーズリファレンス*」を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -58,5 +58,5 @@ MAPI が**SCODE**のデータ型を使用する方法の詳細については、
 [HRESULT 型](hresult.md)
 
 
-[MAPI データ型](mapi-data-types.md)
+[MAPI のデータ型](mapi-data-types.md)
 

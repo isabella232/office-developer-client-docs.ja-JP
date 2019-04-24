@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: c1ae24ad-1bbb-4dee-b414-b5226593b6fa
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e3f53a894b7f7cdaa68e66530c7bd99bf49b9ed0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ff69981e83d42e439936a3e4be47eabfd811b310
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349554"
 ---
 # <a name="swstringarray"></a>SWStringArray
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-PT_MV_UNICODE の種類のプロパティを説明するために使用する文字の文字列の配列が含まれています。 
+PT_MV_UNICODE 型のプロパティを記述するために使用される文字列の配列を格納します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SWStringArray
@@ -42,17 +42,17 @@ typedef struct _SWStringArray
 
 ## <a name="members"></a>Members
 
- **あう**
+ **cvalues**
   
-> **LppszW**メンバーが指す配列内の文字列の数です。 
+> **lppszw**メンバーによって示される配列内の文字列の数。 
     
- **lppszW**
+ **lppszw**
   
-> Unicode 文字の null 終了文字列の配列へのポインター。
+> null で終了する Unicode 文字列の配列へのポインター。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-PT_MV_UNICODE の詳細については、[プロパティの型](property-types.md)を参照してください。
+PT_MV_UNICODE の詳細については、「[プロパティの種類](property-types.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

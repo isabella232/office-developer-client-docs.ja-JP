@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: d83b8ea8-a3b8-4038-a226-de1869c5d722
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3176280de33bda01bfd09ebaafc31d326d455a3d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 090a73ed908d2a647d00de27b93538a77766c258
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351262"
 ---
 # <a name="scinitmapiutil"></a>ScInitMapiUtil
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[ユーティリティ関数だけを使用する場合に[生じます](mapiinitialize.md)を置き換えます。 
+select ユーティリティ関数のみが使用されている場合は、 [MAPIInitialize](mapiinitialize.md)を置き換えます。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーション  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
    
 ```cpp
 SCODE ScInitMapiUtil(
@@ -39,23 +39,23 @@ SCODE ScInitMapiUtil(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>����
+## <a name="remarks"></a>解説
 
-[生じます](mapiinitialize.md)コアとユーティリティを呼び出すのではなく、機能の選択のユーティリティ関数を解放し、 **ScInitMapiUtil**および[DeinitMapiUtil](deinitmapiutil.md)関数が協力します。 **ScInitMapiUtil**では、ユーティリティ関数を呼び出すと、も、必要なメモリを初期化します。 
+**ScInitMapiUtil**および[DeinitMapiUtil](deinitmapiutil.md)関数は、連携して、コアとユーティリティ関数を呼び出す[MAPIInitialize](mapiinitialize.md)ではなく、選択ユーティリティ関数を呼び出しおよび解放します。 **ScInitMapiUtil**がユーティリティ関数を呼び出すと、必要なメモリも初期化されます。 
   
-**ScInitMapiUtil**が呼び出されている関数の使用が完了すると、それらを解放する**DeinitMapiUtil**を明示的に呼び出す必要があります。 **生じます**は対照的に、 **DeinitMapiUtil**を暗黙的に呼び出します。 
+**ScInitMapiUtil**が呼び出された関数の使用が完了したら、 **DeinitMapiUtil**を明示的に呼び出して解放する必要があります。 これに対して、 **MAPIInitialize**は暗黙的に**DeinitMapiUtil**を呼び出します。 
   
 ## <a name="see-also"></a>関連項目
 

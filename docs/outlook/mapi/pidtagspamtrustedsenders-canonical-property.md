@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 8e3f0094-e64b-4828-ba8f-5eed35f85366
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 50230a742b093e59e335466d9ab03aa9022e2e61
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348301"
 ---
 # <a name="pidtagspamtrustedsenders-canonical-property"></a>PidTagSpamTrustedSenders 標準プロパティ
 
@@ -21,12 +21,12 @@ ms.locfileid: "25388729"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-電子メール アドレスと差出人セーフ リストで構成されているドメインのセミコロン区切りのリストが含まれています。
+信頼できる差出人が構成されている電子メールアドレスとドメインのセミコロンで区切られたリストが含まれます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_SPAM_TRUSTED_SENDERS_W  <br/> |
-|長い ID (LID):  <br/> |0x0418  <br/> |
+|ロング ID (LID):  <br/> |0x0418  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
 |エリア:  <br/> |スパム  <br/> |
    
@@ -34,31 +34,31 @@ ms.locfileid: "25388729"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Microsoft Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Microsoft Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
+[[OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
   
-> 許可/禁止リストの処理、迷惑メール メッセージの決定を可能にします。
+> 許可/ブロックリストの処理と、迷惑メールメッセージの決定を有効にします。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

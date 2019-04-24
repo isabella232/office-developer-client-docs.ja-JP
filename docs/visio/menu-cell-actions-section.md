@@ -9,36 +9,36 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 29af746c-b081-24cf-a30d-a56353ee849e
 description: 図形またはページに対するショートカット メニューまたはアクション タグ メニューに表示するメニュー項目の名前を定義します。
-ms.openlocfilehash: 195af94c4c36bb3c29a4fadab3c68f8334742952
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: adb6915c34946472ada8c4ab4d02fa88bab6651a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360656"
 ---
-# <a name="menu-cell-actions-section"></a>[Menu] セル ([操作] セクション)
+# <a name="menu-cell-actions-section"></a>[Menu] セル ([Actions] セクション)
 
 図形またはページに対するショートカット メニューまたはアクション タグ メニューに表示するメニュー項目の名前を定義します。 
   
 > [!NOTE]
 > Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 メニューのこの項目の上に区切り記号を挿入するには、[BeginGroup] セルを使用します。メニューの下部にコマンドを表示するには、名前の前にパーセント文字 (%) を付けます。
   
-取得する [menu] セルへの参照を名前で別の数式からまたはプログラムから**CellsU**プロパティを使用して、次のコマンドを使用します。 
+別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [Menu] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |アクションです。 *名*です。Menuwhere アクションです。  *アクション行の名前します。*  <br/> |
+|セル名:  <br/> |アクション. *名前*です。操作を実行するメニュー。  *name*は、Actions 行の名前です。  <br/> |
    
 プログラムから、インデックスによって [Menu] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionAction** <br/> |
-|行インデックス:  <br/> |**visRowAction** +  *i* i = 0、1、2、.  <br/> |
+|行インデックス:  <br/> |**visRowAction** +  *i* = 0、1、2、...  <br/> |
 |セル インデックス:  <br/> |**visActionMenu** <br/> |
    
 

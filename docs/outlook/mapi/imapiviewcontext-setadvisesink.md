@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 4799084a-b5d1-48c3-a889-b2f0e9d68c30
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 555bb4820dc36934fb28197b7e222633a5248125
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7ee641214e1eaae667af356fd8dbe51ff7dc7982
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351192"
 ---
 # <a name="imapiviewcontextsetadvisesink"></a>IMAPIViewContext::SetAdviseSink
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ビューアーの変更についての通知を受信するフォームの登録を管理します。 
+フォームの登録を管理して、閲覧者の変更に関する通知を受信します。 
   
 ```cpp
 HRESULT SetAdviseSink(
@@ -37,31 +37,31 @@ LPMAPIFORMADVISESINK pmvns
 
  _pmvns_
   
-> [in]フォームへのポインターでは、シンク オブジェクトまたは NULL を案内します。
+> 順番フォームアドバイズシンクオブジェクトまたは NULL へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 登録またはフォームの通知の取り消しに成功しました。
+> フォーム通知の登録または取り消しに成功しました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-フォーム オブジェクトは、いずれかの登録フォーム ビューアーでの変更点について説明する前の登録をキャンセルする**IMAPIViewContext::SetAdviseSink**メソッドを呼び出します。 _Pmvns_を NULL に設定すると、フォームは、登録をキャンセルしようとします。 有効なフォームに_pmvns_ポイントは、シンクをアドバイス、フォームの今後の通知を登録しようとします。 
+form オブジェクトは**imapiviewcontext:: SetAdviseSink**メソッドを呼び出して、フォームビューアーの変更について学習するか、前に登録を取り消します。 _pmvns_が NULL に設定されている場合、フォームは登録をキャンセルする必要があります。 _pmvns_が有効な form アドバイズシンクを指している場合、フォームは将来の通知の登録を希望します。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**SetAdviseSink**にフォームが含まれていますとシンク ポインターの通知、通知をキャンセルするのには別の**SetAdviseSink**呼び出しが行われるまでは、オブジェクトへの参照を保持します。 ビューアーで、新しいメッセージをロードするときに変更が発生したときに通知を送信します。 
+**SetAdviseSink**にフォームアドバイズシンクポインターが含まれている場合は、別の**SetAdviseSink**呼び出しが行われてから、通知が取り消されるまで、そのポインターへの参照を保持します。 viewer で変更が発生したとき、および新しいメッセージを読み込むときに通知を送信します。 
   
-詳細については、[送信およびフォームの通知の受信](sending-and-receiving-form-notifications.md)を参照してください。
+詳細については、「[フォーム通知の送信と受信](sending-and-receiving-form-notifications.md)」を参照してください。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::SetAdviseSink  <br/> |MFCMAPI では、この関数では、 **IMAPIViewContext::SetAdviseSink**メソッドを実装します。  <br/> |
+|MyMAPIFormViewer  <br/> |cmymapiformviewer:: SetAdviseSink  <br/> |mfcmapi は、この関数に**imapiviewcontext:: SetAdviseSink**メソッドを実装します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

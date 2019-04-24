@@ -13,11 +13,11 @@ api_type:
 ms.assetid: bfb7fd1e-774f-9a2f-fbbe-ba7f68ed8663
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9a131c633b8dcf9b0e5070f01de8fcab90a18ade
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357618"
 ---
 # <a name="pidlidcustomflag-canonical-property"></a>PidLidCustomFlag 標準プロパティ
 
@@ -25,64 +25,64 @@ ms.locfileid: "25384200"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定するビットマスク メッセージは、カスタマイズ方法、たとえば、カスタム プロパティを保存します。
+メッセージをカスタマイズする方法を指定するビットマスク。たとえば、カスタムプロパティと共に保存されます。
   
 ## 
 
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidCustomFlag  <br/> |
-|長い ID (LID):  <br/> |0x00008251  <br/> |
+|関連するプロパティ:  <br/> |dispidcustomflag  <br/> |
+|ロング ID (LID):  <br/> |0x00008251  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティの値を取得するには、まず**[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)** を使用して、プロパティ タグを取得して値を取得する**[IMAPIProp::GetProps](imapiprop-getprops.md)** でこのプロパティのタグを指定します。 
+このプロパティの値を取得するには、最初に**[imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)** を使用してプロパティタグを取得し、次に**[imapiprop:: GetProps](imapiprop-getprops.md)** でこのプロパティタグを指定して、値を取得します。 
   
-使用できるフラグは次のとおりです。
+可能なフラグは次のとおりです。
   
 ****
 
 |**定数**|**値**|
 |:-----|:-----|
-|INSP_ONEOFFFLAGS  <br/> |0x0D000000  <br/> |
+|INSP_ONEOFFFLAGS  <br/> |0x0d000000  <br/> |
 |INSP_PROPDEFINITION  <br/> |0x02000000  <br/> |
    
-**IMAPIProp::GetIDsFromNames**を呼び出すときは、 *lppPropNames*の入力パラメーターで指定された**[MAPINAMEID](mapinameid.md)** 構造体の次の値を指定します。 
+**imapiprop:: getidsfromnames**を呼び出す場合は、入力パラメーター *lpppropnames*で示される**[mapinameid](mapinameid.md)** 構造体に次の値を指定します。 
   
 ****
 
-|**メンバー**|**値**|
+|**Member**|**値**|
 |:-----|:-----|
-|lpGuid。  <br/> |PSETID_Common  <br/> |
-|ulKind。  <br/> |MNID_ID  <br/> |
-|Kind.lID。  <br/> |dispidCustomFlag  <br/> |
+|lpguid:  <br/> |PSETID_Common  <br/> |
+|ulkind:  <br/> |MNID_ID  <br/> |
+|ふたの種類:  <br/> |dispidcustomflag  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義を提供します。
+> プロパティセットの定義を提供します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

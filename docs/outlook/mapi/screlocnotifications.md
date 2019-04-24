@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 22de5d38-7be6-48b3-90a7-bc553dcdb042
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4117558d27d64444cdac62651584fe6cfe8ff061
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 81da4b77f0d2162a1119b7945b1e0ceb87ba9fb8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360712"
 ---
 # <a name="screlocnotifications"></a>ScRelocNotifications
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-指定したイベント通知の配列内のポインターを調整します。 
+指定されたイベント通知配列内のポインターを調整します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 SCODE ScRelocNotifications(
@@ -47,25 +47,25 @@ SCODE ScRelocNotifications(
 
  _cntf_
   
-> [in]_Rgntf_パラメーターで指定された配列内の[通知](notification.md)の構造体の数です。 
+> 順番_rgntf_パラメーターで指定された、配列内の[通知](notification.md)構造の数。 
     
  _rgntf_
   
-> [in]ポインターを調整するのには、イベント通知を定義する**通知**の構造体の配列へのポインター。 
+> 順番ポインターが調整される必要のあるイベント通知を定義する**通知**構造の配列へのポインター。 
     
- _pvBaseOld_
+ _pvbaseold_
   
-> [in]_Rgntf_パラメーターで指定された配列の元のベース アドレスへのポインター。 
+> 順番_rgntf_パラメーターで指定された配列の元のベースアドレスへのポインター。 
     
  _pvBaseNew_
   
-> [in]**ScRelocNotifications**の_rgntf_パラメーターで指定された配列の新しいベース アドレスの書き込み先の場所。 
+> 順番**ScRelocNotifications**が_rgntf_パラメーターで指定された配列の新しいベースアドレスを書き込む場所。 
     
- _pcb_
+ _設計_
   
-> [out]_PvBaseNew_パラメーターで指定された配列のバイト単位のサイズへのポインター。 
+> 読み上げ_pvBaseNew_パラメーターで指定された配列のサイズ (バイト単位) へのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK
   
@@ -75,9 +75,9 @@ MAPI_E_INVALID_PARAMETER
   
 > 無効な通知が発生しました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-_Pcb_ **ScRelocNotifications**関数のパラメーターはオプションです。 
+**ScRelocNotifications**関数の_pcb_パラメーターは省略可能です。 
   
 ## <a name="see-also"></a>関連項目
 

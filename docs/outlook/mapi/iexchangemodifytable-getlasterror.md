@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: b850dc08-73c3-4b19-ae29-1892d6a2ff2f
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f0d2ad118346dd06788af972b64b10d6f6f6d0fc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 8d5d4895e4440945896ee4f2212c5fca6da8610d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350863"
 ---
 # <a name="iexchangemodifytablegetlasterror"></a>IExchangeModifyTable::GetLastError
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-Table オブジェクトには、最後に発生したエラーに関する情報を返します。
+table オブジェクトで発生した最後のエラーについての情報を返します。
   
 ```cpp
 HRESULT GetLastError( 
@@ -39,15 +39,15 @@ HRESULT GetLastError(
 
  _hResult_
   
-> [in]失敗したメソッドからの戻り値です。
+> 順番エラーが発生したメソッドからの戻り値。
     
  _ulFlags_
   
-> [in]使用しないとは、0 (ゼロ) に設定します。
+> 順番使用しない場合は 0 (ゼロ) に設定します。
     
  _lppMAPIError_
   
-> [out]Table オブジェクトに対して発生した最後のエラーに関する情報を格納する MAPI [MAPIERROR](mapierror.md)構造体へのポインター。 
+> 読み上げtable オブジェクトで発生した最後のエラーについての情報が含まれている MAPI の[MAPIERROR](mapierror.md)構造体を指します。 
     
 ## <a name="see-also"></a>関連項目
 

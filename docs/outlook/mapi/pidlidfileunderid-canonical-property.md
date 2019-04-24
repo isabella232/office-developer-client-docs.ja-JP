@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 917431a9-fd90-4b4d-b042-886e3dbf47c0
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7af30866a5fd2846327223b7a58c6de91f5fef7a
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25397192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355707"
 ---
 # <a name="pidlidfileunderid-canonical-property"></a>PidLidFileUnderId 標準プロパティ
 
@@ -25,60 +25,60 @@ ms.locfileid: "25397192"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-生成し、その他の連絡先の名前のプロパティの変更時に**dispidFileUnder** ([PidLidFileUnder](pidlidfileunder-canonical-property.md)) プロパティの値を再計算する方法を指定します。
+他の連絡先の名前のプロパティが変更されたときに、([PidLidFileUnder](pidlidfileunder-canonical-property.md)) プロパティの**dispidfileunder**値を生成して再計算する方法を指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidFileUnderId  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Address  <br/> |
-|長い ID (LID):  <br/> |0x00008006  <br/> |
+|関連するプロパティ:  <br/> |dispidfile過小 id  <br/> |
+|プロパティセット:  <br/> |PSETID_Address  <br/> |
+|ロング ID (LID):  <br/> |0x00008006  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |Contact  <br/> |
+|エリア:  <br/> |連絡先  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティがないか、または[[MS OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)で、次の表で詳細にない値に設定、アプリケーションはその他の連絡先の名前のプロパティの変更と**dispidFileUnder**の値を再計算するのには、独自のロジックを選択できます。 
+このプロパティが指定されていない場合、または次の表に記載されていない値または[[OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)に設定されている場合は、アプリケーションは独自のロジックを選択して、[その他の連絡先名のプロパティが変更されたときに、 **dispidfileunder**値を再計算できます。 
   
-次の表では、表記法に<PropertyName>」プロパティ名の値」を指定するために使用します。 たとえば、 **PR_SURNAME** ([PidTagSurname](pidtagsurname-canonical-property.md)) プロパティの値は、チェック ボックスをオフ、および**PR_GIVEN_NAME** ([PidTagGivenName](pidtaggivenname-canonical-property.md)) プロパティの値が「佐藤」、"<PidTagGivenName> <PidTagSurname>""Ben Smith"という文字列を指定します。 キャリッジ リターン文字を指定する「\r」の表で、"\n"は、ライン フィード文字を指定し、、<space>空白文字を表します。
+次の表では、表記<PropertyName>を使用して "PropertyName の値" を指定しています。 たとえば、 **PR_SURNAME** ([PidTagSurname](pidtagsurname-canonical-property.md)) プロパティの値が "Smith" で、 **PR_GIVEN_NAME** ([PidTagGivenName](pidtaggivenname-canonical-property.md)) プロパティの値が "ben" の場合は、"ben Smith" と<PidTagGivenName> <PidTagSurname>いう文字列を指定します。 表で、"\r" はキャリッジリターン文字を指定します。 "\n" は改行文字を指定し<space> 、スペース文字を表します。
   
-|****DispidFileUnderId**プロパティの値**|****DispidFileUnder**プロパティの説明**|
+|****dispidfile過小 id**プロパティの値**|**プロパティの**下の dispidfileunder**説明**|
 |:-----|:-----|
 |0x00000000  <br/> |空の PT_UNICODE。  <br/> |
-|0x00003001  <br/> |"\<PidTagDisplayName\>」  <br/> |
-|0x00003A06  <br/> |"\<PidTagGivenName\>」  <br/> |
-|0x00003A11  <br/> |"\<PidTagSurname\>」  <br/> |
-|0x00003A16  <br/> |"\<PidTagCompanyName\>」  <br/> |
-|0x00008017  <br/> |"\<PidTagSurname\>、\<スペース\>\<PidTagGivenName\>\<スペース\>\<PidTagMiddleName\>」  <br/> |
-|0x00008018  <br/> |"\<PidTagCompanyName\>\r\n\<PidTagSurname\>、\<スペース\>\<PidTagGivenName\>\<スペース\>\<PidTagMiddleName\>」  <br/> |
-|0x00008019  <br/> |"\<PidTagSurname\>、\<スペース\>\<PidTagGivenName\>\<スペース\>\<PidTagMiddleName\>\r\n\<PidTagCompanyName\>」  <br/> |
-|0x00008030  <br/> |"\<PidTagSurname\>\<PidTagGivenName\>\<スペース\>\<PidTagMiddleName\>」  <br/> |
-|0x00008031  <br/> |"\<PidTagSurname\>\<スペース\>\<PidTagGivenName\>\<スペース\>\<PidTagMiddleName\>」  <br/> |
-|0x00008032  <br/> |"\<PidTagCompanyName\>\r\n\<PidTagSurname\>\<PidTagGivenName\>\<スペース\>\<PidTagMiddleName\>」  <br/> |
-|0x00008033  <br/> |"\<PidTagCompanyName\>\r\n\<PidTagSurname\>\<スペース\>\<PidTagGivenName\>\<スペース\>\<PidTagMiddleName\>」  <br/> |
-|0x00008034  <br/> |"\<PidTagSurname\>\<PidTagGivenName\>\<スペース\>\<PidTagMiddleName\>\r\n\<PidTagCompanyName\>」  <br/> |
-|0x00008035  <br/> |"\<PidTagSurname\>\<スペース\>\<PidTagGivenName\>\<スペース\>\<PidTagMiddleName\>\r\n\<PidTagCompanyName\>」  <br/> |
-|0x00008036  <br/> |"\<PidTagSurname\>\<スペース\>\<PidTagGivenName\>\<スペース\>\<PidTagMiddleName\>\<スペース\>\<PidTagGeneration\>」  <br/> |
-|0x00008037  <br/> |"\<PidTagGivenName\>\<スペース\>\<PidTagMiddleName\>\<スペース\>\<PidTagSurname\>\<スペース\>\<PidTagGeneration\>」  <br/> |
-|0x00008038  <br/> |"\<PidTagSurname\>\<PidTagGivenName\>\<スペース\>\<PidTagMiddleName\>\<スペース\>\<PidTagGeneration\>」  <br/> |
-|0xfffffffd  <br/> |、連絡先を表示するには、ときに、アプリケーション必要がありますしようとする**dispidFileUnder**およびその他の連絡先のプロパティの現在の値を使用して、次の表に示した値のいずれかに**dispidFileUnderId**の最適な"を検索するかを指定します。  <br/> |
-|0xfffffffe  <br/> |指定、連絡先を表示するには、ときにアプリケーションする必要があります (言語のロケール) に基づく適切な既定値を選択して、 **dispidFileUnderId**の選択に一致するように**dispidFileUnder**を更新します。  <br/> |
-|0 xffffffff  <br/> |**dispidFileUnder**は、ユーザーが指定した PT_UNICODE と、別の連絡先の名前のプロパティが変更されたときに変更されません。  <br/> |
+|0x00003001  <br/> |"\<PidTagDisplayName\>"  <br/> |
+|0x00003A06  <br/> |"\<PidTagGivenName\>"  <br/> |
+|0x00003a11  <br/> |"\<PidTagSurname\>"  <br/> |
+|0x00003a16  <br/> |"\<PidTagCompanyName\>"  <br/> |
+|0x00008017  <br/> |"\<PidTagSurname\>,\<space\>\<PidTagGivenName\>\<space\>"\<\>  <br/> |
+|0x00008018  <br/> |"\<PidTagCompanyName\>\r\n\<PidTagSurname\>、\<space\>\<PidTagGivenName\>\<space\>"\<\>  <br/> |
+|0x00008019  <br/> |"\<PidTagSurname\>,\<space\>\<PidTagGivenName\>\>space PidTagMiddleName\>\r\n\<PidTagCompanyName\>"\<\<  <br/> |
+|0x00008030  <br/> |"\<PidTagSurname\>\<\>PidTagGivenName\<space\>PidTagMiddleName\>"\<  <br/> |
+|0x00008031  <br/> |"\<PidTagSurname\>\<space\>\<PidTagGivenName space\>PidTagMiddleName\>"\<\>\<  <br/> |
+|0x00008032  <br/> |"\<PidTagCompanyName\>\r\n\<PidTagSurname\>\<PidTagGivenName\>\<space\>"\<\>  <br/> |
+|0x00008033  <br/> |"\<PidTagCompanyName\>\r\n\<PidTagSurname\>\<space\>\<PidTagGivenName space\>PidTagMiddleName\>"\<\>\<  <br/> |
+|0x00008034  <br/> |"\<PidTagSurname\>\<PidTagGivenName\>\>space PidTagMiddleName\>\r\n\<PidTagCompanyName\>"\<\<  <br/> |
+|0x00008035  <br/> |"\<PidTagSurname\>\<space\>\<\>PidTagGivenName space\>PidTagMiddleName \r\n PidTagCompanyName"\<\>\<\>\<  <br/> |
+|0x00008036  <br/> |"\<PidTagSurname\>\<space\>\>\>PidTagGivenName\>space PidTagMiddleName\>space\>PidTagGeneration\<"\<\<\<\<  <br/> |
+|0x00008037  <br/> |"\<PidTagGivenName\>\<space\>\>\>PidTagMiddleName\>space PidTagSurname\>space\>PidTagGeneration\<"\<\<\<\<  <br/> |
+|0x00008038  <br/> |"\<PidTagSurname\>\<PidTagGivenName\>\>space\>PidTagMiddleName\>space\>PidTagGeneration"\<\<\<\<  <br/> |
+|0xfffffffd  <br/> |連絡先を表示するときに、アプリケーションは、その連絡先のプロパティの現在の値**** を使用して、この表の前の値の1つに対して、 **dispidfileunder id**の "最適な一致" を検索する必要があることを指定します。  <br/> |
+|0xfffffffe  <br/> |連絡先を表示するときに、アプリで、選択した項目に一致するように、 **dispidfile過小 id**および update **dispidfileの**適切な既定値 (言語ロケールに応じて) を選択する必要があることを指定します。  <br/> |
+|0xffffffff  <br/> |の**dispidfileunder**ユーザーが指定した PT_UNICODE で、別の連絡先の名前のプロパティが変更されたときには変更できません。  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
-> プロパティは、連絡先、個人用配布リストの許可の操作を指定します。
+> 連絡先および個人用配布リストに対して許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -86,9 +86,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

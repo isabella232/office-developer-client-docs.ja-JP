@@ -1,5 +1,5 @@
 ---
-title: MAPI の関数へのリンクします。
+title: MAPI 機能へのリンク
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,40 +9,40 @@ api_type:
 ms.assetid: be72a893-a3bc-4dea-8234-47f3e1db4515
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 71108da8bb9914bb7ed0ad0b3adacc24e1d69e63
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346885"
 ---
-# <a name="link-to-mapi-functions"></a>MAPI の関数へのリンクします。
+# <a name="link-to-mapi-functions"></a>MAPI 機能へのリンク
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-リンクの 3 つの方法があります: 暗黙的なリンク、明示的なリンク、および MAPI スタブ ライブラリを使用して新しいハイブリッド モデルです。
+MAPI スタブライブラリを使用した暗黙的なリンク、明示的なリンク、新しいハイブリッドモデルのリンクには、次の3つの方法があります。
   
-## <a name="implicit-linking"></a>暗黙的なリンク
+## <a name="implicit-linking"></a>暗黙的リンク
 
-従来、メッセージング アプリケーションでは常に MAPI の関数を呼び出すと関与 Mapi32.lib ライブラリへのリンクです。 これには、Mapi32.dll で、実行時に既定の MAPI クライアント実装への呼び出しを転送し、Windows の MAPI スタブ ライブラリにルーティングの MAPI 呼び出しが含まれています。 この呼び出しプロセスは、暗黙的なリンクと呼びます。 次の図の左側には、MAPI の関数の呼び出しプロセスで使用されている暗黙的なリンクの例を示します。 プロセスは、MAPI アプリケーションによって開始されますと MAPI ライブラリ (Mapi32.lib) と Windows の MAPI スタブ (Mapi32.dll) し、MAPI スタブ (Msmapi32.dll) の Outlook MAPI クライアントの実装が完了しました。
+従来、メッセージングアプリケーションで MAPI 関数を呼び出すと、Mapi32 ライブラリへのリンクが常に必要になります。 これには、mapi 呼び出しを Windows mapi スタブライブラリ (Mapi32) にルーティングすると、実行時に既定の mapi クライアント実装に呼び出しが転送されます。 この呼び出しプロセスは暗黙的リンクと呼ばれます。 次の図の左側は、MAPI 関数呼び出しプロセスで使用される暗黙的リンクの例を示しています。 プロセスは mapi アプリケーションによって開始され、mapi ライブラリ (Mapi32) と Windows mapi スタブ (Mapi32) が含まれており、mapi スタブ (Msmapi32) の Outlook mapi クライアント実装によって完了します。
   
-**暗黙的および明示的なリンクの比較を行います。**
+**暗黙的リンクと明示的なリンクの比較。**
 
-![暗黙的および明示的なリンクの比較](media/09d9c49a-a52d-4407-9013-d0d14c8f63f6.gif "暗黙的および明示的なリンクの比較")
+![暗黙的リンクと明示的リンクの比較](media/09d9c49a-a52d-4407-9013-d0d14c8f63f6.gif "暗黙的リンクと明示的リンクの比較")
   
 ## <a name="explicit-linking"></a>明示的なリンク
 
-既定の MAPI クライアントは、Windows インストーラー (MSI) を使用して、オンデマンド インストールをサポートするため、MAPI ライブラリを使用するのではなく Outlook MAPI スタブと Windows の MAPI スタブに直接メッセージング ・ アプリケーションを開発できます。 前の図の右側には、(手順 2 を次のセクションで)、Outlook MAPI スタブの DLL の名前とパスを検索し、関数の呼び出しに、Outlook MAPI スタブ (は、MAPI アプリケーションを最初から、MAPI の関数の呼び出しプロセスの例を示しています。手順 3 で次のセクション)。 次の手順では、明示的なリンクを使用して MAPI の関数を呼び出す方法を示します。 
+既定の mapi クライアントは、windows インストーラー (MSI) を使用してオンデマンドインストールをサポートしているため、mapi ライブラリおよび Windows mapi スタブを使用する代わりに、Outlook mapi スタブ上にメッセージングアプリケーションを直接開発できます。 前の図の右側は mapi 関数呼び出しプロセスの例を示しています。 mapi アプリケーションでは、outlook mapi スタブのパスと DLL 名 (次のセクションの手順2を参照) を探し、outlook mapi スタブに関数呼び出しを行います (次のセクションの手順3を参照してください)。 次の手順は、明示的なリンクを使用して MAPI 機能を呼び出す方法を示しています。 
   
 > [!NOTE]
-> 明示的なリンクについては、次のセクションで説明した MAPIStubLibrary.lib の導入に伴い、お客様のニーズに不要な可能性があります。 暗黙のモデルでは、ような新しいライブラリがすべてを管理し、Outlook に必要な明示的なリンクのロジックを実装する MAPI を直接します。 
+> この情報は、次のセクションで説明されている MAPIStubLibrary の導入によって、必要に応じて明示的なリンクに関連している場合があります。 暗黙のモデルと同様に、新しいライブラリはすべてを管理し、Outlook の MAPI を直接読み込む明示的なリンクロジックを実装します。 
   
-明示的リンクの詳細については、明示的にリンク参照してください。
+明示的リンクの詳細については、「明示的なリンク」を参照してください。
   
-### <a name="to-call-mapi-api-elements-without-the-mapi-library-and-the-windows-mapi-stub"></a>MAPI ライブラリと Windows の MAPI スタブのない MAPI API 要素を呼び出す
+### <a name="to-call-mapi-api-elements-without-the-mapi-library-and-the-windows-mapi-stub"></a>mapi ライブラリおよび Windows mapi スタブを使用せずに mapi API 要素を呼び出すには
 
-1. プログラム ファイルで使用している MAPI API 要素ごとに関数ポインターのグローバル リストを作成します。 
+1. プログラムファイルで、使用している MAPI API 要素ごとに関数ポインターのグローバルリストを作成します。 
     
-   次の例では、この手順を示します。
+   次の例は、この手順を示しています。
     
    ```cpp
     //Global MAPI function pointers
@@ -50,22 +50,22 @@ ms.locfileid: "25400146"
     LPMAPIUNINITIALIZE pfnMAPIUninitialize = NULL;
    ```
 
-2. 既定の MAPI クライアント (たとえば、Msmapi32.dll の Microsoft Outlook の MAPI DLL にリンクするのには MAPI の関数を初期化する関数を作成します。 この関数では、次の操作を行います。 
+2. mapi 機能を初期化する関数を作成し、既定の mapi クライアント (たとえば、Microsoft Outlook の Msmapi32) の mapi DLL にリンクします。 この関数では、次の操作を行います。 
     
-    1. システムの適切なディレクトリから mapi32.dll をロードします。 
+    1. 適切なシステムディレクトリから mapi32 を読み込みます。 
         
        |||
        |:-----|:-----|
-       |x64 または x86 でネイティブに  <br/> |**%windir%\system32\mapi32.dll** <br/> |
-       |WoW モードでの x86  <br/> |**%windir%\syswow64\mapi32.dll** <br/> |
+       |x64 または x86 ネイティブ  <br/> |**%windir%\system32\mapi32.dll** <br/> |
+       |WoW モードの x86  <br/> |**%windir%\syswow64\mapi32.dll** <br/> |
     
-    2. MAPI のサブシステムを実装する DLL の名前とパスを取得する[FGetComponentPath](fgetcomponentpath.md)関数を呼び出します。 詳細については、[特定のバージョンの MAPI 負荷の選択](how-to-choose-a-specific-version-of-mapi-to-load.md)を参照してください。
+    2. [FGetComponentPath](fgetcomponentpath.md)関数を呼び出して、MAPI サブシステムを実装するパスと DLL 名を取得します。 詳細については、「[特定のバージョンの MAPI を読み込む」](how-to-choose-a-specific-version-of-mapi-to-load.md)を参照してください。
         
-    3. LoadLibrary 関数を呼び出すことによって、DLL を読み込みます。 
+    3. LoadLibrary 関数を呼び出して DLL を読み込みます。 
         
-    4. GetProcAddress 関数を呼び出すことによって、MAPI の関数ポインターの配列を初期化します。 
+    4. GetProcAddress 関数を呼び出して MAPI 関数ポインター配列を初期化します。 
         
-    次の使用例は、上記の手順を示しています。
+    次の例は、前の手順を示しています。
         
    ```cpp
     void InitializeMapiFunctions()
@@ -81,12 +81,12 @@ ms.locfileid: "25400146"
     }
    ```
 
-3. 最後に、MAPI API 要素への呼び出しを行う前に、手順 2 では、メッセージング アプリケーションの作成の場合にこの関数を呼び出します。 
+3. 最後に、MAPI API 要素の呼び出しを行う前に、メッセージングアプリケーションの手順2で作成した関数を呼び出します。 
     
    > [!CAUTION]
-   > アプリケーションを閉じる前に、MAPI サブシステムの初期化を解除する必要があります。 
+   > アプリケーションを閉じる前に、MAPI サブシステムを初期化解除する必要があります。 
   
-   次の使用例は、この手順を示しています。 
+   次の例は、この手順を示しています。 
     
    ```cpp
     int main()
@@ -106,11 +106,11 @@ ms.locfileid: "25400146"
     }
    ```
 
-## <a name="mapistublibrarylib"></a>MAPIStubLibrary.lib
+## <a name="mapistublibrarylib"></a>MAPIStubLibrary
 
-Microsoft Outlook 2010 と 64 ビットの MAPI、Microsoft Outlook 2013 年に拡張するようになりましたの登場は従来の 32 ビット API の完全な実装です。 新しいプロジェクト、MAPI スタブ ライブラリでは、CodePlex の web サイトに掲載は、32 ビットと 64 ビットの両方の MAPI アプリケーションの構築をサポートする Mapi32.lib のドロップイン交換を提供します。 MAPIStubLibrary.lib で MAPI を明示的にリンクする必要があるし、ことを構築することからを削除する Mapi32.lib、リンカーの設定では、MAPIStubLibrary.lib に置き換えることコードにさらに変更は必要ありません。 Mapi32.lib で、明示的なリンクを使用する場合が必要ではありませんが、このライブラリ ファイル内に含まれている最新のエクスポートを処理するために**LoadLibrary**と**GetProcAddress**を**終わった**のコードを記述する必要もなくなります。 
+microsoft outlook 2013 を拡張する microsoft outlook 2010 および64ビット MAPI の導入により、完全な実装には従来の32ビット API より多くのものが必要になります。 新しいプロジェクト (CodePlex web サイトに投稿された mapi スタブライブラリ) は、32ビットと64ビットの両方の mapi アプリケーションのビルドをサポートする Mapi32 のためのドロップイン置換を提供します。 MAPIStubLibrary を使用すると、MAPI を明示的にリンクする必要がなくなり、これを構築する必要があります。リンカー設定から Mapi32 を削除して、MAPIStubLibrary に置き換えることができます。コードをこれ以上変更する必要はありません。 また、このライブラリファイルに含まれている新しいエクスポートを処理するために、 **LoadLibrary**、 **GetProcAddress**、および**FreeLibrary**コードを記述する必要がなくなります。これは、明示的なリンクを使用した場合に必要になります。 
   
-Mapi32.lib では使用できませんが、このライブラリにリンクしている新しい機能の一部を以下に示します。
+このライブラリからリンクされているいくつかの新機能には、次のようなものがあります。 Mapi32 では使用できません。
   
 - [GetDefCachedMode](getdefcachedmode.md)    
 - [HrGetGALFromEmsmdbUID](hrgetgalfromemsmdbuid.md)   
@@ -119,17 +119,17 @@ Mapi32.lib では使用できませんが、このライブラリにリンクし
 - [OpenStreamOnFileW](openstreamonfilew.md)    
 - [WrapCompressedRTFStreamEx](wrapcompressedrtfstreamex.md)
     
-MAPI スタブ ライブラリを組み込むことの別の方法は、プロジェクトに直接、MapiStubLibrary.cpp、StubUtils.cpp、ソース ファイルをコピーし、Mapi32.lib へのリンケージ、および MAPI に明示的にリンクする任意のコードを削除することです。
+mapi スタブライブラリを組み込む別の方法として、ソースファイル MapiStubLibrary と StubUtils を直接プロジェクトにコピーして、Mapi32 へのリンケージを削除し、mapi に明示的にリンクされたコードを削除することができます。
   
-MAPI スタブ ライブラリのファイルにアクセスし、ビルドし、統合のプロジェクトと同様にこのライブラリについての質問に次のようにタイミングと理由についての情報を使用してを参照してください[MAPI スタブ ライブラリ](https://mapistublibrary.codeplex.com/documentation)CodePlex サイトです。 
+mapi スタブライブラリファイルにアクセスし、それをプロジェクトに構築して統合する方法、および使用する状況や理由など、このライブラリに関する質問については、CodePlex サイトの[mapi スタブライブラリ](https://mapistublibrary.codeplex.com/documentation)を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 
-- [MAPI �v���O���~���O�̊T�v](mapi-programming-overview.md)
+- [MAPI プログラミングの概要](mapi-programming-overview.md)
 - [MAPI サブシステムのインストール](installing-the-mapi-subsystem.md)
-- [MAPI ヘッダー ファイルをインストールする](how-to-install-mapi-header-files.md)
+- [MAPI ヘッダーファイルをインストールする](how-to-install-mapi-header-files.md)
 - [読み込む MAPI の特定のバージョンを選択する](how-to-choose-a-specific-version-of-mapi-to-load.md)
-- [使用するリンク方式の使い分け](https://msdn.microsoft.com/library/253b8k2c.aspx)
-- [実行可能ファイルを DLL にリンクします。](https://msdn.microsoft.com/library/9yd93633.aspx)
-- [MAPI DLL の MSI のキーの設定](https://msdn.microsoft.com/library/ee909494%28v=VS.85%29.aspx)
+- [どのリンク方法を使用するかを決定する](https://msdn.microsoft.com/library/253b8k2c.aspx)
+- [実行可能ファイルを DLL にリンクする](https://msdn.microsoft.com/library/9yd93633.aspx)
+- [MAPI DLL の MSI キーを設定する](https://msdn.microsoft.com/library/ee909494%28v=VS.85%29.aspx)
 

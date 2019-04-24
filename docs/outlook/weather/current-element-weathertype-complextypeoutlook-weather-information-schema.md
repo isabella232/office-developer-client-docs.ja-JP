@@ -1,5 +1,5 @@
 ---
-title: 現在の要素 (weatherType の複合型) (Outlook の気象情報のスキーマ)
+title: current 要素 (weatherType complexType) (Outlook 天気情報スキーマ)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,13 +9,13 @@ localization_priority: Normal
 ms.assetid: d592a396-f935-c44c-409f-b849c327cfbd
 description: 現在の気象条件を指定します。
 ms.openlocfilehash: ce92bdd49ee37f939748586c2d63d8a664f664d2
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25401091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351472"
 ---
-# <a name="current-element-weathertype-complextype-outlook-weather-information-schema"></a>現在の要素 (weatherType の複合型) (Outlook の気象情報のスキーマ)
+# <a name="current-element-weathertype-complextype-outlook-weather-information-schema"></a>current 要素 (weatherType complexType) (Outlook 天気情報スキーマ)
 
 現在の気象条件を指定します。
   
@@ -23,9 +23,9 @@ ms.locfileid: "25401091"
 
 |||
 |:-----|:-----|
-|**要素の種類** <br/> |[currentType](currenttype-complextype-outlook-weather-information-schema.md) <br/> |
-|**名前空間** <br/> |https://schemas.microsoft.com/office/outlook/15/getweatherinfo.xsd  <br/> |
-|**スキーマ ファイル** <br/> |getweatherinfo.xsd  <br/> |
+|**要素の種類** <br/> |[currenttype](currenttype-complextype-outlook-weather-information-schema.md) <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/outlook/15/getweatherinfo.xsd  <br/> |
+|**スキーマ ファイル** <br/> |getweatherinfo  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -37,13 +37,13 @@ ms.locfileid: "25401091"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。 
+スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[天気](weather-element-weatherdata-elementoutlook-weather-information-schema.md) <br/> |[weatherType](weathertype-complextype-outlook-weather-information-schema.md) <br/> |場所の気象条件を指定します。  <br/> |
+|[天気予報](weather-element-weatherdata-elementoutlook-weather-information-schema.md) <br/> |[weatherType](weathertype-complextype-outlook-weather-information-schema.md) <br/> |場所の天気予報の条件を指定します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -51,19 +51,19 @@ ms.locfileid: "25401091"
   
 ### <a name="attributes"></a>属性
 
-|**属性**|**型**|**必須**|**説明**|**使用可能な値**|
+|**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|date  <br/> |xs:date  <br/> |必須  <br/> |今日の日付を指定します。  <br/> |型 xs:date の値  <br/> |
-|1 日  <br/> |xs:string  <br/> |省略可能  <br/> |予測の 1 日を指定します。  <br/> |値の型の使用されています  <br/> |
-|feelslike  <br/> |xs:integer  <br/> |必須  <br/> |ように現在の天気予報の気の温度を指定します。  <br/> |型 xs:integer の値  <br/> |
-|湿度  <br/> |xs:integer  <br/> |必須  <br/> |現在湿度の数値の値を指定します。  <br/> |型 xs:integer の値  <br/> |
-|observationpoint  <br/> |xs:string  <br/> |必須  <br/> |現在の気象情報を確認する場所を指定します。  <br/> |値の型の使用されています  <br/> |
-|observationtime  <br/> |xs:time  <br/> |必須  <br/> |現在の気象情報を確認するときを指定します。  <br/> |型 xs:time の値  <br/> |
-|shortday  <br/> |xs:string  <br/> |省略可能  <br/> |省略形で 1 日を指定します。  <br/> |値の型の使用されています  <br/> |
-|skycode  <br/> |xs:integer  <br/> |必須  <br/> |現在の気象条件に整数コードを指定します。  <br/> |型 xs:integer の値  <br/> |
-|skytext  <br/> |xs:string  <br/> |必須  <br/> |現在の気象条件を記述する 1、2 の単語を指定します。  <br/> |値の型の使用されています  <br/> |
-|温度  <br/> |xs:integer  <br/> |必須  <br/> |場所の現在の温度を指定します。  <br/> |型 xs:integer の値  <br/> |
-|winddisplay  <br/> |xs:string  <br/> |必須  <br/> |現在の風の状況を説明する文字列。  <br/> |値の型の使用されています  <br/> |
-|風速  <br/> |xs:integer  <br/> |必須  <br/> |現在の数値の風の速度の値を指定します。  <br/> |型 xs:integer の値  <br/> |
+|日付  <br/> |xs: date  <br/> |必須  <br/> |今日の日付を指定します。  <br/> |xs: date 型の値  <br/> |
+|日勤  <br/> |xs: 文字列  <br/> |省略可能  <br/> |予測の日付を指定します。  <br/> |xs: 文字列型の値  <br/> |
+|feelslike  <br/> |xs: 整数  <br/> |必須  <br/> |現在の天気予報の温度を指定します。  <br/> |xs: integer 型の値  <br/> |
+|湿気  <br/> |xs: 整数  <br/> |必須  <br/> |現在の数値の湿度値を指定します。  <br/> |xs: integer 型の値  <br/> |
+|observationpoint  <br/> |xs: 文字列  <br/> |必須  <br/> |現在の天気情報の参照先を指定します。  <br/> |xs: 文字列型の値  <br/> |
+|observationtime  <br/> |xs: time  <br/> |必須  <br/> |現在の天気予報がどのような場合に観測されるかを指定します。  <br/> |xs: time 型の値  <br/> |
+|短い日  <br/> |xs: 文字列  <br/> |省略可能  <br/> |日付を省略された形式で指定します。  <br/> |xs: 文字列型の値  <br/> |
+|skycode  <br/> |xs: 整数  <br/> |必須  <br/> |現在の天気予報の整数コードを指定します。  <br/> |xs: integer 型の値  <br/> |
+|skytext  <br/> |xs: 文字列  <br/> |必須  <br/> |現在の天気状況について、1 ~ 2 個の単語を指定します。  <br/> |xs: 文字列型の値  <br/> |
+|変化  <br/> |xs: 整数  <br/> |必須  <br/> |場所の現在の温度を指定します。  <br/> |xs: integer 型の値  <br/> |
+|winddisplay  <br/> |xs: 文字列  <br/> |必須  <br/> |現在の風向きに関する条件を表す文字列型 (string) の値を指定します。  <br/> |xs: 文字列型の値  <br/> |
+|windspeed  <br/> |xs: 整数  <br/> |必須  <br/> |現在の数値の風向の速度の値を指定します。  <br/> |xs: integer 型の値  <br/> |
    
 

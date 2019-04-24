@@ -12,40 +12,40 @@ api_type:
 - COM
 ms.assetid: dcd786e2-5b93-4a4c-933a-df305abe4bcb
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a990c3622b9f37332056c162dce9445fd5b2947e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7c9048c8db43a0d9833bed8439f2517ad13623f7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358808"
 ---
 # <a name="pidlidremoteattachment-canonical-property"></a>PidLidRemoteAttachment 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-リモート アイテムに関連付けられている添付ファイルがあるかどうかを示します。
+リモートアイテムに関連付けられた添付ファイルがあるかどうかを示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidRemoteAttachment  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Remote  <br/> |
-|長い ID (LID):  <br/> |0x00008F07  <br/> |
+|関連するプロパティ:  <br/> |dispidremoteattachment  <br/> |
+|プロパティセット:  <br/> |PSETID_Remote  <br/> |
+|ロング ID (LID):  <br/> |0x00008f07  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |リモート ・ メッセージ  <br/> |
+|エリア:  <br/> |リモートメッセージ  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[MS OXPROPS] 
+[[OXPROPS]] 
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -53,9 +53,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: f6b31bb4-69dd-43de-b62b-abfa99557641
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: cbad4b903592f83fc7d72fde21f149c9835f2e23
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 534f4da15bba5f38bec4cde91206694f8691cbc6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342246"
 ---
 # <a name="fnidle"></a>FNIDLE
  
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI アイドル エンジンを呼び出すの優先順位に従って定期的にアイドル状態のルーチンを定義します。 
+MAPI アイドルエンジンが優先度に従って定期的に呼び出すアイドルルーチンを定義します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装される関数の定義:  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
-|によって呼び出される関数を定義します。  <br/> |MAPI  <br/> |
-|対応するポインターの型。  <br/> |PFNIDLE  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|定義された関数の実装:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|によって呼び出された定義済み関数:  <br/> |MAPI  <br/> |
+|対応するポインターの種類:  <br/> |pfnidle  <br/> |
    
 ```cpp
 BOOL (STDAPICALLTYPE FNIDLE)(
@@ -40,37 +40,37 @@ BOOL (STDAPICALLTYPE FNIDLE)(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpvContext_
+ _lpvcontext_
   
-> [in]アイドル ルーチンへの MAPI のパスは時間、メモリ ブロックへのポインターは、それを呼び出します。 このポインターは、 [FtgRegisterIdleRoutine](ftgregisteridleroutine.md)で、 _pvIdleParam_パラメーターでは、MAPI アイドル エンジンに渡されます。 メモリ ブロック内のデータは、操作対象のオブジェクトなど、アイドル状態のルーチンまたは時間のかかる操作の現在の状態への呼び出しのコンテキストを提供できます。
+> 順番MAPI が呼び出しを行うたびにアイドルルーチンに渡されるメモリブロックへのポインター。 このポインターは、 [FtgRegisterIdleRoutine](ftgregisteridleroutine.md)によって_pvIdleParam_パラメーターの MAPI アイドルエンジンに渡されます。 メモリブロック内のデータは、操作対象のオブジェクトや、時間のかかる操作の現在の状態など、アイドルルーチンの呼び出しのコンテキストを提供できます。
     
 ## <a name="return-value"></a>戻り値
 
 FALSE 
   
-> **FNIDLE**プロトタイプでアイドル状態のルーチンは、FALSE を返す常にする必要があります。 
+> **FNIDLE**プロトタイプが指定されたアイドルルーチンは、常に FALSE を返します。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-アイドル ルーチンの特定の機能は、実装することによって決定されますクライアント アプリケーションまたはサービス プロバイダーです。 
+アイドルルーチンの特定の機能は、クライアントアプリケーションまたはサービスプロバイダーを実装することによって決まります。 
   
-クライアントまたはプロバイダーは、実行時間、アイドル状態のルーチンの各状態を制限する必要があります。 すべての状態では、最小限の処理を実行、 _lpvContext_で示されるコンテキスト データの現在の状態を更新、および MAPI アイドル エンジンに戻る必要があります。 
+クライアントまたはプロバイダーは、アイドルルーチンの各状態の実行時間を制限する必要があります。 すべての状態は、最小限の処理を実行し、 _lpvcontext_が指すコンテキストデータ内の現在の状態を更新して、MAPI アイドルエンジンに戻る必要があります。 
   
-クライアントまたはプロバイダーは、 [FtgRegisterIdleRoutine](ftgregisteridleroutine.md)関数を呼び出して、独自のアイドル状態のルーチンを登録する前に MAPI 関数[MAPIInitIdle](mapiinitidle.md)を呼び出す必要があります。 
+クライアントまたはプロバイダーは、 [FtgRegisterIdleRoutine](ftgregisteridleroutine.md)関数への呼び出しを使用して独自のアイドルルーチンを登録する前に、MAPI 関数[MAPIInitIdle](mapiinitidle.md)を呼び出す必要があります。 
   
-次の関数では、MAPI アイドル エンジンと FNIDLE 関数のプロトタイプに基づくのアイドル処理ルーチンを処理します。 
+次の関数は、MAPI アイドルエンジンと、FNIDLE 関数プロトタイプに基づいてアイドルルーチンを処理します。 
   
-|**アイドル状態の日常的な関数**|**使用状況**|
+|**Idle ルーチン関数**|**使用法**|
 |:-----|:-----|
-|[ChangeIdleRoutine](changeidleroutine.md) <br/> |登録されているアイドル状態のルーチンの特性を変更します。  <br/> |
-|[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |MAPI システムから登録されているアイドル状態のルーチンを削除します。  <br/> |
-|[EnableIdleRoutine](enableidleroutine.md) <br/> |無効または MAPI システムから削除することがなく、登録されているアイドル状態のルーチンを再度有効にします。  <br/> |
-|[FtgRegisterIdleRoutine](ftgregisteridleroutine.md) <br/> |MAPI システム、またはそれを有効にせずに、アイドル状態のルーチンを追加します。  <br/> |
-|[MAPIDeInitIdle](mapideinitidle.md) <br/> |呼び出し元のアプリケーションの MAPI アイドル エンジンをシャット ダウンします。  <br/> |
-|[MAPIInitIdle](mapiinitidle.md) <br/> |呼び出し元のアプリケーションの MAPI アイドル エンジンを初期化します。  <br/> |
+|[ChangeIdleRoutine](changeidleroutine.md) <br/> |登録されているアイドルルーチンの特性を変更します。  <br/> |
+|[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |登録されているアイドルルーチンを MAPI システムから削除します。  <br/> |
+|[EnableIdleRoutine](enableidleroutine.md) <br/> |登録済みのアイドル状態を、MAPI システムから削除せずに無効または再度有効にします。  <br/> |
+|[FtgRegisterIdleRoutine](ftgregisteridleroutine.md) <br/> |アイドルルーチンを MAPI システムに追加するか、有効にします。  <br/> |
+|[MAPIDeInitIdle](mapideinitidle.md) <br/> |呼び出し元アプリケーションの MAPI アイドルエンジンをシャットダウンします。  <br/> |
+|[MAPIInitIdle](mapiinitidle.md) <br/> |呼び出し元アプリケーションの MAPI アイドルエンジンを初期化します。  <br/> |
    
-**ChangeIdleRoutine**、 **DeregisterIdleRoutine**、および**EnableIdleRoutine**関数のタグは、 **FtgRegisterIdleRoutine**によって返される入力パラメーターとして実行します。 
+**changeidleroutine**、 **DeregisterIdleRoutine**、および**EnableIdleRoutine**は、 **FtgRegisterIdleRoutine**によって返される function タグを入力パラメーターとして受け取ります。 
   
-プラットフォーム用のすべてのフォア グラウンド タスクがアイドル状態になると、MAPI アイドル エンジンは実行する準備が最高の優先順位のアイドル ルーチンを呼び出します。 同じ優先順位のアイドル処理ルーチンの間で順序を呼び出すことの保証はありません。 
+プラットフォームのすべてのフォアグラウンドタスクがアイドル状態になると、MAPI アイドルエンジンは、実行の準備ができている最も優先度の高いアイドルルーチンを呼び出します。 同じ優先度のアイドルルーチン間での通話順序は保証されません。 
   
 

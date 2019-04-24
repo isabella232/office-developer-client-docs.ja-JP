@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.assetid: a436b590-63f3-413c-a9c2-7664567e0ff0
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5514e0553f719e2e875aad7001bb38a6a52e8e08
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ea7f9e0ed57c56b48399b9ffd1ea42db28daf249
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356232"
 ---
 # <a name="pidtagminiicon-canonical-property"></a>PidTagMiniIcon 標準プロパティ
 
@@ -25,32 +25,32 @@ ms.locfileid: "22589778"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームの半分のサイズのアイコンのビットマップが含まれています。
+フォームの半分サイズのアイコンのビットマップが格納されています。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_MINI_ICON  <br/> |
-|識別子:  <br/> |0x0FFC  <br/> |
+|識別子:  <br/> |0x0ffc  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |一般的なメッセージング  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティには、内容と同じアイコンの 32 × 32 ピクセルのイメージが含まれているのです。ICO ファイルですが、左上の 16 × 16 ピクセルだけは、重要と見なされます。 このプロパティは通常からコピーします。ICO ファイルが小さい行のフォーム構成ファイルの該当する [説明] セクションで指定されています。
+このプロパティには、アイコンの32×32ピクセルのイメージが含まれています。これは、のコンテンツと同じです。.ico ファイル。ただし、左上の16×16ピクセルのみが重要であると見なされます。 通常、このプロパティはからコピーされます。フォーム構成ファイルの該当する [Description] セクションの SmallIcon 行で指定された .ico ファイル。
   
- **メモ**いくつかのプラットフォームのサポート 16 × 16 ピクセル アイコンではない操作を行います。 32 × 32 の形式このプロパティは、このようなケースでは使用できませんが、クライアント アプリケーションは表示の矛盾に注意する必要があります。 
+ **メモ**一部のプラットフォームは16×16ピクセルのアイコンをサポートしていません。 このような場合、このプロパティの32×32形式は使用できますが、クライアントアプリケーションは表示の不整合を認識する必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
@@ -59,9 +59,9 @@ Mapitags.h
 [PidTagIcon 標準プロパティ](pidtagicon-canonical-property.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

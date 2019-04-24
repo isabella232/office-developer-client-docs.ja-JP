@@ -1,5 +1,5 @@
 ---
-title: IMsgStore IMAPIProp
+title: IMsgStore imapiprop
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 20090114-b183-4767-8971-a304a9aa47e6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4ed17fd7f826432da9460fe01e5aa76802726bad
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: af4bf73b58f7723066bb8fad7c087ba0238ceec2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348721"
 ---
 # <a name="imsgstore--imapiprop"></a>IMsgStore : IMAPIProp
 
@@ -25,39 +25,39 @@ ms.locfileid: "22584633"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ情報を格納して、メッセージおよびフォルダーへのアクセスを提供します。
+メッセージストア情報およびメッセージとフォルダーへのアクセスを提供します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|によって公開されます。  <br/> |メッセージ ストアのオブジェクト  <br/> |
-|によって実装されます。  <br/> |メッセージ ストア プロバイダー  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションでは、MAPI スプーラーを無効、および MAPI  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IMsgStore  <br/> |
-|ポインターの型。  <br/> |LPMDB  <br/> |
-|トランザクション モデル:  <br/> |非トランザクション  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|公開者:  <br/> |メッセージストアオブジェクト  <br/> |
+|実装元:  <br/> |メッセージストアプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーション、mapi スプーラー、mapi  <br/> |
+|インターフェイス識別子:  <br/> |IID_IMsgStore  <br/> |
+|ポインターの種類:  <br/> |lpmdb  <br/> |
+|トランザクションモデル:  <br/> |非トランザクション  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[アドバイス](imsgstore-advise.md) <br/> |メッセージ ・ ストアに影響を与える特定のイベントの通知を受け取ることを登録します。  <br/> |
-|[アドバイズ中止します。](imsgstore-unadvise.md) <br/> |**IMsgStore::Advise**メソッドへの呼び出しは、設定済みの通知の送信をキャンセルします。  <br/> |
-|[CompareEntryIDs](imsgstore-compareentryids.md) <br/> |メッセージ ストアの同じエントリを参照しているかどうかを決定する 2 つのエントリ id を比較します。  <br/> |
-|[OpenEntry](imsgstore-openentry.md) <br/> |フォルダーまたはメッセージを開き、さらにアクセスするためのインターフェイス ポインターを返します。  <br/> |
-|[SetReceiveFolder](imsgstore-setreceivefolder.md) <br/> |特定のメッセージ クラスの着信メッセージの送信先として、フォルダーを確立します。  <br/> |
-|[GetReceiveFolder](imsgstore-getreceivefolder.md) <br/> |または、指定したメッセージ クラスの既定値として受信したメッセージの送信先には、メッセージ ストアのフォルダーが表示されるように設定されているフォルダーを取得します。  <br/> |
-|[GetReceiveFolderTable](imsgstore-getreceivefoldertable.md) <br/> |受信フォルダーのテーブル、テーブルのすべてのメッセージ ストアの受信フォルダーに関する情報へのアクセスを提供します。  <br/> |
-|[StoreLogoff](imsgstore-storelogoff.md) <br/> |メッセージ ・ ストアの通常のログオフを有効にします。  <br/> |
-|[AbortSubmit](imsgstore-abortsubmit.md) <br/> |発信キューからメッセージを削除しようとしています。  <br/> |
-|[GetOutgoingQueue](imsgstore-getoutgoingqueue.md) <br/> |発信キュー テーブル、メッセージ ストアの送信キュー内のすべてのメッセージに関する情報が含まれているテーブルへのアクセスを提供します。  <br/> |
-|[SetLockState](imsgstore-setlockstate.md) <br/> |ロックまたはメッセージのロックを解除します。  <br/> |
-|[FinishedMsg](imsgstore-finishedmsg.md) <br/> |メッセージ ストア プロバイダーは、送信されたメッセージの処理を実行できるようにします。  <br/> |
-|[NotifyNewMail](imsgstore-notifynewmail.md) <br/> |新しいメッセージが到着したメッセージ ・ ストアに通知します。  <br/> |
+|[助言](imsgstore-advise.md) <br/> |メッセージストアに影響を与える指定したイベントの通知を受信するように登録します。  <br/> |
+|[アドバイズ](imsgstore-unadvise.md) <br/> |**IMsgStore:: Advise**メソッドへの呼び出しによって、以前に設定された通知の送信をキャンセルします。  <br/> |
+|[CompareEntryIDs](imsgstore-compareentryids.md) <br/> |2つのエントリ識別子を比較して、メッセージストア内の同じエントリを参照しているかどうかを判断します。  <br/> |
+|[OpenEntry](imsgstore-openentry.md) <br/> |フォルダーまたはメッセージを開き、さらにアクセスするためのインターフェイスポインターを返します。  <br/> |
+|[setreceivefolder](imsgstore-setreceivefolder.md) <br/> |特定のメッセージクラスの受信メッセージの送信先としてフォルダーを確立します。  <br/> |
+|[getreceivefolder](imsgstore-getreceivefolder.md) <br/> |指定したメッセージクラスの受信メッセージの宛先として、またはメッセージストアの既定の受信フォルダーとして確立されたフォルダーを取得します。  <br/> |
+|[getreceivefoldertable](imsgstore-getreceivefoldertable.md) <br/> |受信フォルダーテーブル (メッセージストアのすべての受信フォルダーに関する情報を含む表) へのアクセスを提供します。  <br/> |
+|[storelogoff](imsgstore-storelogoff.md) <br/> |メッセージストアの正常なログオフを有効にします。  <br/> |
+|[abortsubmit](imsgstore-abortsubmit.md) <br/> |送信キューからメッセージを削除しようとしています。  <br/> |
+|[getoutgoingqueue](imsgstore-getoutgoingqueue.md) <br/> |送信キューテーブル (メッセージストアの送信キューにあるすべてのメッセージに関する情報を含むテーブル) へのアクセスを提供します。  <br/> |
+|[SetLockState](imsgstore-setlockstate.md) <br/> |メッセージをロックまたはロック解除します。  <br/> |
+|[FinishedMsg](imsgstore-finishedmsg.md) <br/> |メッセージストアプロバイダーが、送信されたメッセージに対して処理を実行できるようにします。  <br/> |
+|[NotifyNewMail](imsgstore-notifynewmail.md) <br/> |新しいメッセージが到着したことをメッセージストアに通知します。  <br/> |
    
-|**必須のプロパティ**|**アクセス レベル**|
+|**必須のプロパティ**|**アクセスレベル**|
 |:-----|:-----|
-|**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
+|**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
 |**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
@@ -66,7 +66,7 @@ ms.locfileid: "22584633"
 |**PR_MDB_PROVIDER**([PidTagStoreProvider](pidtagstoreprovider-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_STORE_SUPPORT_MASK**([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))  <br/> |読み取り専用  <br/> |
    
-次のプロパティは、メッセージ ストアの個人間メッセージ (IPM) のことです。
+次のプロパティは、個人間メッセージ (IPM) メッセージストアに対するものです。
   
 - **PR_IPM_OUTBOX_ENTRYID**([PidTagIpmOutboxEntryId](pidtagipmoutboxentryid-canonical-property.md))
     
@@ -84,5 +84,5 @@ ms.locfileid: "22584633"
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
 

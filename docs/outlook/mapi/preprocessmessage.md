@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: dda50325-74b3-445e-986e-115f6536561f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 878c3aaf22a6cf8a08c8234df41b671088c435c7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a3982520cb1c745874a938962ece075a294b6257
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351381"
 ---
 # <a name="preprocessmessage"></a>PreprocessMessage
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージの内容またはメッセージの形式を指定する関数を定義します。
+メッセージの内容またはメッセージの形式を前にする関数を定義します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapispi.h  <br/> |
-|によって実装される関数の定義:  <br/> |トランスポート プロバイダー  <br/> |
-|によって呼び出される関数を定義します。  <br/> |MAPI スプーラー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapispi  <br/> |
+|定義された関数の実装:  <br/> |トランスポートプロバイダー  <br/> |
+|によって呼び出された定義済み関数:  <br/> |MAPI スプーラー  <br/> |
    
 ```cpp
 HRESULT PreprocessMessage(
@@ -50,63 +50,63 @@ HRESULT PreprocessMessage(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpvSession_
+ _lpvsession_
   
-> [in]使用するセッションへのポインター。 
+> 順番使用するセッションへのポインター。 
     
- _lpMessage_
+ _lpmessage_
   
-> [in]前処理が必要にメッセージへのポインター。 
+> 順番前処理するメッセージへのポインター。 
     
- _lpAdrBook_
+ _lpadrbook_
   
-> [in]ユーザーがメッセージの受信者を選択する必要があります、アドレス帳へのポインター。 
+> 順番ユーザーがメッセージの受信者を選択する必要があるアドレス帳へのポインター。 
     
- _lpFolder_
+ _lpfolder_
   
-> [で [チェック アウト]フォルダーへのポインター。 入力では、 _lpFolder_のパラメーターは、前処理が必要にメッセージを含むフォルダーにポイントです。 出力では、 _lpFolder_は、プリプロセス済みのメッセージが設定されているフォルダーをポイントします。 
+> [入力]フォルダーへのポインター。 入力時に_lpfolder_パラメーターは、前処理するメッセージを含むフォルダーを指します。 出力時に、 _lpfolder_はプリプロセスされたメッセージが配置されたフォルダーを指します。 
     
  _lpAllocateBuffer_
   
-> [in]メモリの割り当てに使用する[MAPIAllocateBuffer](mapiallocatebuffer.md)関数へのポインター。 
+> 順番メモリの割り当てに使用される[MAPIAllocateBuffer](mapiallocatebuffer.md)関数へのポインター。 
     
  _lpAllocateMore_
   
-> [in]追加メモリの割り当てに使用する[MAPIAllocateMore](mapiallocatemore.md)関数へのポインターに必要な場所です。 
+> 順番必要なときに追加のメモリを割り当てるために使用される[MAPIAllocateMore](mapiallocatemore.md)関数へのポインター。 
     
- _lpFreeBuffer_
+ _lpfreebuffer_
   
-> [in]メモリを解放するために使用する、 [MAPIFreeBuffer](mapifreebuffer.md)関数へのポインター。 
+> 順番メモリを解放するために使用される[MAPIFreeBuffer](mapifreebuffer.md)関数へのポインター。 
     
  _lpcOutbound_
   
-> [out]_LpppMessage_パラメーターが指す配列内のメッセージの数へのポインターです。 
+> 読み上げ_lpppMessage_パラメーターによって指定された配列内のメッセージ数へのポインター。 
     
  _lpppMessage_
   
-> [out]ポインターの配列へのポインターへのポインターでは、前処理またはそれ以外の場合にメッセージを生成します。 
+> 読み上げプリプロセスされた、または生成されたメッセージへのポインターの配列へのポインターへのポインター。 
     
  _lppRecipList_
   
-> [out]オプションへのポインターには、メッセージが配信できなかった、プリプロセッサが検出された受信者を一覧表示、 [ADRLIST](adrlist.md)構造体が返されます。 このリストの内容の詳細については、 [IMAPISupport::StatusRecips](imapisupport-statusrecips.md)メソッドを参照してください。 
+> 読み上げメッセージが配信できない、プリプロセッサが検出された受信者を一覧表示する、オプションで返される[adrlist](adrlist.md)構造体へのポインター。 このリストの内容の詳細については、 [imapisupport:: StatusRecips](imapisupport-statusrecips.md)メソッドを参照してください。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK
   
-> メッセージの内容は、正常にプリプロセス済みでした。
+> メッセージの内容が正常に前処理されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-メッセージ トランスポート プロバイダー プリプロセッサでは、メッセージのプリプロセス中に進行状況のインジケーターを表示できます。 ただし、メッセージのプリプロセス中にユーザーとの対話を必要とするダイアログ ボックスが表示されない必要があります。 
+トランスポートプロバイダメッセージプリプロセッサは、メッセージの前処理中に進行状況インジケーターを表示できます。 ただし、メッセージ前処理中のユーザー操作を必要とするダイアログボックスを表示する必要はありません。 
   
-プリプロセッサでは、大量のデータを送信メッセージに追加するときは、特定の手順を行ってください。 この種類のメッセージは、時間のかかる処理をリモート ストアにアクセスするのにはプリプロセッサの原因で、サーバー ベースのメッセージ ・ ストアに格納できます。 これを行うことを避けるためには、プリプロセッサの大量の領域は、ローカル メッセージ ストアのデータを格納し、メッセージのローカル ストアへの参照を提供することを可能にするオプションが必要です。 
+プリプロセッサが送信メッセージに大量のデータを追加するときは、特定の手順に従う必要があります。 この種のメッセージをサーバーベースのメッセージストアに格納することにより、プリプロセッサがリモートストアにアクセスします。時間がかかるプロシージャです。 これを回避するために、プリプロセッサには、ローカルメッセージストアで大量の領域を必要とするデータを格納し、メッセージにそのローカルストアへの参照を提供できるオプションが用意されている必要があります。 
   
-プリプロセッサは最初**PreprocessMessage**ベースの関数に渡されたオブジェクトのいずれかを開放しなければなりません。 
+プリプロセッサは、元の**PreprocessMessage**ベースの関数に渡されたオブジェクトを解放してはなりません。 
   
-MAPI スプーラーは、 **PreprocessMessage**関数を呼び出すことができます、前にトランスポート プロバイダーは、必要がありますに登録されている関数、 [IMAPISupport::RegisterPreprocessor](imapisupport-registerpreprocessor.md)メソッドを呼び出す。 **PreprocessMessage**関数を呼び出すと、関数が戻るまでにメッセージを送信する、スプーラーを続行できません。 
+MAPI スプーラーで**PreprocessMessage**関数を呼び出せるようにするには、トランスポートプロバイダーが[imapisupport:: registerpreprocessor プロセッサ](imapisupport-registerpreprocessor.md)メソッドへの呼び出しに関数を登録している必要があります。 **PreprocessMessage**関数を呼び出した後、スプーラーは、関数が戻るまで、メッセージの送信を続行できません。 
   
-MAPI スプーラーは、メッセージを送信するタスクを所有しています。 これは、元のメッセージがメッセージのポインターの配列に配置されることはありませんし、 **SubmitMessage**メソッドの呼び出しが必要ではないことを意味します。 
+MAPI スプーラーは、メッセージを送信するタスクを所有しています。 これは、元のメッセージがメッセージポインターの配列に配置されることはないため、 **submitmessage**メソッドへの呼び出しが必要になることはありません。 
   
 ## <a name="see-also"></a>関連項目
 

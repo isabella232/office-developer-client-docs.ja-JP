@@ -6,35 +6,35 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3e2a88ad-d92c-4550-8da3-fa7fdd032e73
-description: 複合図形の線の種類を決定します。
-ms.openlocfilehash: 663b683030251c8b57324f1d2bdf492463c50eef
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 図形の線の複合型を指定します。
+ms.openlocfilehash: 120975e419656234266cb8151b2fa37ef19602e5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359371"
 ---
-# <a name="compoundtype-cell-line-format-section"></a>[CompoundType] セル ([線の書式設定] セクション)
+# <a name="compoundtype-cell-line-format-section"></a>[CompoundType] セル ([線の形式] セクション)
 
-複合図形の線の種類を決定します。 
+図形の線の複合型を指定します。 
   
 |**値**|**説明**|
 |:-----|:-----|
-|0  <br/> |Simple/標準  <br/> |
-|1  <br/> |倍精度浮動小数点数  <br/> |
-|2  <br/> |太さシンします。  <br/> |
-|3  <br/> |細い太い  <br/> |
-|4  <br/> |Triple  <br/> |
+|.0  <br/> |Simple/標準  <br/> |
+|1-d  <br/> |倍精度浮動小数点数  <br/> |
+|pbm-2  <br/> |太線 (細)  <br/> |
+|1/3  <br/> |細い太線  <br/> |
+|2/4  <br/> |Triple  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**セル**要素の**N**属性の値によって、別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ **CompoundType** ] セルへの参照を取得、次のように使用します。 
+別の数式から、 **cell**要素の**N**属性の値によって、または**CellsU**プロパティを使用したプログラムから、名前によって [ **[compoundtype]** ] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | CompoundType  <br/> |
+| セル名:  <br/> | [compoundtype]  <br/> |
    
-プログラムから、インデックスによって [ **CompoundType** ] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ **[compoundtype]** ] セルへの参照を取得するには、 **CellsSRC**プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

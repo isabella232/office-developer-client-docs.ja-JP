@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: c6519c55-5f98-ed0d-95b1-5443d0d23c0b
 description: 指数で累乗した数値を返します。
-ms.openlocfilehash: 48870c679251a666a5756b2b684d262fe059eee0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7a1102aa13f54d7e323247b83af3732ebb63acf4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356050"
 ---
 # <a name="pow-function"></a>POW 関数
 
@@ -22,22 +22,22 @@ ms.locfileid: "19806101"
   
 ## <a name="syntax"></a>構文
 
-POW (* **番号** *、* **指数** *) 
+POW (* **数値** *、* **指数** *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _number_ <br/> |必須  <br/> |**番号** <br/> |指数で累乗する数値を指定します。  <br/> |
-| _exponent_ <br/> |必須  <br/> |**番号** <br/> |指数を指定します。  <br/> |
+| _number_ <br/> |必須  <br/> |**数値** <br/> |指数で累乗する数値を指定します。  <br/> |
+| _exponent_ <br/> |必須  <br/> |**数値** <br/> |指数を指定します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-_数値_と_指数_の両方に整数以外の場合、可能性があり、負の値になる場合があります。 _番号_が 0 と_指数_ではないかどうかは 0、1 を返します。 _数_が 0_の指数部_が負の場合、この関数は 0.0 を返します。 _数値_と_指数_の両方が 0 である場合、またはが負の_数_と_指数_が整数でない場合は、この関数は 0.0 を返します。 _数値_と_指数_の両方が負の値場合は、この関数は-1 を返します #IND.。 
+数値と_指数_の両方とも整数ではない場合があり、負の_値_にすることもできます。 _数値_が0以外で、_指数_が0の場合、この関数は1を返します。 数値が0で、_指数_が負の_数_である場合、この関数は0.0 を返します。 _数値_と_指数_の両方が0の場合、または_数値_が負で、_指数_が整数ではない場合、この関数は0.0 を返します。 数値と_指数_の両方が負の_数_である場合、この関数は-1. #IND を返します。 
   
 ## <a name="example"></a>例
 
-POW(5,2) 
+POW (5、2) 
   
 25 を返します。 
   

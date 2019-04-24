@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: 30dd19d9-0840-49e9-aec6-ec8d19b1f91d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a8f4e62a8eb1b5e61cb0223c66b921e15ab9423b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 55cba4f7cfb3fa8035117348b10ab1d6d3082710
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358115"
 ---
 # <a name="spropattrarray"></a>SPropAttrArray
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 オブジェクトのプロパティの属性の一覧が含まれています。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Imessage.h  <br/> |
-|関連するマクロ:  <br/> |[CbNewSPropAttrArray](cbnewspropattrarray.md)、 [CbSPropAttrArray](cbspropattrarray.md) <br/> |
+|ヘッダー ファイル:  <br/> |Imessage  <br/> |
+|関連するマクロ:  <br/> |[CbNewSPropAttrArray](cbnewspropattrarray.md)、 [cbspro trarray](cbspropattrarray.md) <br/> |
    
 ```cpp
 typedef struct
@@ -43,13 +43,13 @@ typedef struct
 
 ## <a name="members"></a>Members
 
- **あう**
+ **cvalues**
   
-> **APropAttr**メンバーのプロパティの属性の数。 
+> **apropattr**メンバーのプロパティ属性の数。 
     
- **aPropAttr**
+ **apropattr**
   
-> プロパティの属性の配列。 属性の有効な値は次のとおりです。
+> プロパティ属性の配列。 属性の有効な値は次のとおりです。
     
     - PROPATTR_MANDATORY
     
@@ -59,9 +59,9 @@ typedef struct
     
     - PROPATTR_NOT_PRESENT
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**SPropAttrArray**構造体を使用して実装されているデータ オブジェクトのプロパティで、 [IPropData: IMAPIProp](ipropdataimapiprop.md)インタ フェースです。 MAPI の実装で使用されても[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)に基づいて構造化ストレージは。 
+**sproな trarray**構造体は、 [ipropdata: imapiprop](ipropdataimapiprop.md)インターフェイスを実装するプロパティデータオブジェクトによって使用されます。 また、構造化ストレージに基づく[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)の MAPI 実装でも使用されます。 
   
 ## <a name="see-also"></a>関連項目
 

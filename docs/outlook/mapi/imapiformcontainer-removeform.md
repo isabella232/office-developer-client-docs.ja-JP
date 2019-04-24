@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 7f851ce8-bd01-4ea5-86e0-e44323cc0aab
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1a1d11db538d9b5368d80962e44b9eab38b490d2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e53c0cbd9946ff04516594a7ce99fdc2daf4ff4d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355745"
 ---
 # <a name="imapiformcontainerremoveform"></a>IMAPIFormContainer::RemoveForm
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-特定のフォームは、フォームのコンテナーから削除します。
+フォームコンテナーから特定のフォームを削除します。
   
 ```cpp
 HRESULT RemoveForm(
@@ -35,11 +35,11 @@ HRESULT RemoveForm(
 
 ## <a name="parameters"></a>パラメーター
 
- _szMessageClass_
+ _szmessageclass_
   
-> [in]フォームのコンテナーから削除するフォームのメッセージ クラスの名前を示す文字列です。 メッセージ クラス名は、常に ANSI 文字列を Unicode ではないです。
+> 順番フォームコンテナーから削除するフォームのメッセージクラスの名前を示す文字列。 メッセージクラス名は常に ANSI 文字列で、Unicode はありません。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -47,15 +47,15 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> _SzMessageClass_パラメーターで渡されたメッセージ クラスでは、フォームのコンテナー内の任意のフォームのメッセージ クラスが一致しません。 
+> _szmessageclass_パラメーターで渡されたメッセージクラスが、フォームコンテナー内のフォームのメッセージクラスと一致しません。 
     
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|FormContainerDlg.cpp  <br/> |CFormContainerDlg::OnDeleteSelectedItem  <br/> |MFCMAPI では、 **IMAPIFormContainer::RemoveForm**メソッドを使用して、フォームをフォームのコンテナーから削除します。  <br/> |
+|FormContainerDlg  <br/> |CFormContainerDlg:: OnDeleteSelectedItem  <br/> |mfcmapi は、 **imapiformcontainer:: removeform**メソッドを使用して、フォームコンテナーからフォームを削除します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

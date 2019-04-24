@@ -1,5 +1,5 @@
 ---
-title: IMAPIViewContextGetPrintSetup
+title: imapiviewcontextgetprintsetup
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: eaf3bafb-975d-42c8-99ea-7f9ef9c934ba
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 63e3eca4e91e560a28d57f05250264d7e0592142
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: a58e723113f70c10b5c8468f5bdd0d8d9014bd2c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351126"
 ---
 # <a name="imapiviewcontextgetprintsetup"></a>IMAPIViewContext::GetPrintSetup
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-現在、印刷情報を取得します。
+現在の印刷情報を取得します。
   
 ```cpp
 HRESULT GetPrintSetup(
@@ -34,39 +34,39 @@ LPFORMPRINTSETUP FAR * lppFormPrintSetup
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]関数が返す文字列の種類を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番返される文字列の型を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 関数が返す文字列は、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。
+> 返される文字列は、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
     
- _lppFormPrintSetup_
+ _lppformprintsetup_
   
-> [out]印刷の情報を保持する構造体へのポインターへのポインター。
+> 読み上げ印刷情報を保持する構造体へのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 印刷の情報が正常に取得しました。
+> 印刷情報が正常に取得されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-フォーム オブジェクトは、現在のメッセージを印刷する前に、プリンターのセットアップに関する情報を取得するために**IMAPIViewContext::GetPrintSetup**メソッドを呼び出します。 
+Form オブジェクトは、現在のメッセージを印刷する前に、プリンターの設定に関する情報を取得するために**imapiviewcontext:: getprintsetup**メソッドを呼び出します。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**GlobalAlloc**の Win32 関数を使用する[FORMPRINTSETUP](formprintsetup.md)構造体の**hDevMode**および**hDevName**のメンバーを割り当てます。
+Win32 関数**GlobalAlloc**を使用して、 [formprintsetup](formprintsetup.md)構造の**hdevmode**および**hDevName**メンバーを割り当てます。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-予定の場合、 **hDevMode** 、 **hDevName** 、 **FORMPRINTSETUP**構造体のメンバーが Unicode 文字列を指定する_lppFormPrintSetup_パラメーターが指す、 _ulFlags_を MAPI_UNICODE に設定します。 それ以外の場合、 **GetPrintSetup**では、ANSI 形式でこれらの文字列が返されます。 
+_lppformprintsetup_パラメーターで指定された**formprintsetup**構造の**hdevmode**および**hDevName**メンバーが Unicode 文字列であると想定される場合は、 _ulflags_を MAPI_UNICODE に設定します。 それ以外の場合、 **getprintsetup**は ANSI 形式の文字列を返します。 
   
-**GlobalFree**の Win32 関数を呼び出すことによって、 **hDevMode**および**hDevName** 、 **FORMPRINTSETUP**構造体のメンバーを解放します。 [MAPIFreeBuffer](mapifreebuffer.md)を呼び出すことによって、全体の**FORMPRINTSETUP**構造体を解放します。 
+Win32 関数**GlobalFree**を呼び出すことにより、 **formprintsetup**構造の**hdevmode**および**hDevName**メンバーを解放します。 [MAPIFreeBuffer](mapifreebuffer.md)を呼び出すことで、 **formprintsetup**構造全体を解放します。 
   
 ## <a name="see-also"></a>関連項目
 

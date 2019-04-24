@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: b5eb1841-e450-4024-aeaa-3b5a492ddb99
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 93fb82c6274a1703376d7a9e15f37088e132dc23
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a6168e8fced2fff3a7f9d273e47ed2410ac4c010
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350968"
 ---
 # <a name="imapicontainersetsearchcriteria"></a>IMAPIContainer::SetSearchCriteria
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-コンテナーの検索基準を確立します。
+コンテナーの検索条件を確立します。
   
 ```cpp
 HRESULT SetSearchCriteria(
@@ -39,89 +39,89 @@ HRESULT SetSearchCriteria(
 
  _lpRestriction_
   
-> [in]検索条件を定義する[SRestriction](srestriction.md)構造体へのポインター。 _LpRestriction_パラメーターに NULL を渡した場合、このコンテナーの最も最近使用した検索条件が再度使用されます。 NULL 渡すことはできません_lpRestriction_のコンテナー内の最初の検索をします。 
+> 順番検索条件を定義する[srestriction](srestriction.md)構造体へのポインター。 _lpRestriction_パラメーターで NULL が渡された場合、このコンテナーに対して最近使用された検索条件が再度使用されます。 コンテナー内の最初の検索では、 _lpRestriction_で NULL を渡すことはできません。 
     
  _lpContainerList_
   
-> [in]検索に含まれるコンテナーを表すエントリの識別子の配列へのポインター。 _LpContainerList_パラメーターに NULL を渡すと、クライアント、新しい検索のこのコンテナーを検索するのには最近使った項目識別子が使用されます。 クライアントは、コンテナー内の最初の検索の_lpContainerList_に NULL を渡さないでください。 
+> 順番検索に含めるコンテナーを表すエントリ識別子の配列へのポインター。 クライアントが_lpContainerList_パラメーターで NULL を渡した場合、最近このコンテナーを検索するために使用されたエントリ識別子が新しい検索に使用されます。 コンテナー内の最初の検索では、クライアントは_lpContainerList_で NULL を渡さないでください。 
     
- _ulSearchFlags_
+ _ulsearchflags_
   
-> [in]検索の実行方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番検索の実行方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 BACKGROUND_SEARCH 
   
-> 検索は、他の検索基準にして通常の優先順位で実行する必要があります。 FOREGROUND_SEARCH フラグと同時には、このフラグを設定することはできません。
+> 検索は、他の検索と比較して標準の優先度で実行する必要があります。 このフラグは、FOREGROUND_SEARCH フラグと同時には設定できません。
     
 FOREGROUND_SEARCH 
   
-> 検索は、他の検索基準とした優先度の高いで実行する必要があります。 BACKGROUND_SEARCH フラグと同時には、このフラグを設定することはできません。
+> 検索は、他の検索と比較して高い優先度で実行する必要があります。 このフラグは、BACKGROUND_SEARCH フラグと同時には設定できません。
     
 NON_CONTENT_INDEXED_SEARCH
   
-> 検索使用しないでくださいコンテンツのインデックス作成に一致するエントリを検索します。 このフラグで、Exchange ストアに対してのみです。
+> 検索では、一致するエントリを検索するために、コンテンツインデックスを使用しません。 このフラグは、Exchange ストアに対してのみ有効です。
     
 RECURSIVE_SEARCH 
   
-> 検索では、 _lpContainerList_パラメーターとそのすべての子コンテナーで指定されたコンテナーを含める必要があります。 SHALLOW_SEARCH フラグと同時には、このフラグを設定することはできません。 
+> 検索には、 _lpContainerList_パラメーターとそのすべての子コンテナーで指定されたコンテナーが含まれている必要があります。 このフラグは、SHALLOW_SEARCH フラグと同時には設定できません。 
     
 RESTART_SEARCH 
   
-> 検索は、これは、 **SetSearchCriteria**、最初の呼び出しを開始または検索がアクティブでない場合に再起動する必要があります。 STOP_SEARCH フラグと同時には、このフラグを設定することはできません。
+> この検索は、 **setsearchcriteria**の最初の呼び出しである場合に開始するか、または検索が非アクティブな場合に再起動する必要があります。 このフラグは、STOP_SEARCH フラグと同時には設定できません。
     
 SHALLOW_SEARCH 
   
-> 検索に一致するエントリの_lpContainerList_パラメーターで指定したコンテナーでのみです。 RECURSIVE_SEARCH フラグと同時には、このフラグを設定することはできません。 
+> 検索は、一致するエントリに対して_lpContainerList_パラメーターで指定されたコンテナー内のみを参照する必要があります。 このフラグは、RECURSIVE_SEARCH フラグと同時には設定できません。 
     
 STOP_SEARCH 
   
-> 検索を停止する必要があります。 RESTART_SEARCH フラグと同時には、このフラグを設定することはできません。
+> 検索を停止する必要があります。 このフラグは、RESTART_SEARCH フラグと同時には設定できません。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 検索条件が正しく設定されました。
+> 検索条件が正常に設定されました。
     
 MAPI_E_TOO_COMPLEX 
   
-> サービス プロバイダーは、指定された検索条件をサポートしていません。
+> サービスプロバイダーは、指定された検索条件をサポートしていません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPIContainer::SetSearchCriteria**メソッドは、通常の検索結果フォルダーの検索をサポートするコンテナーの検索基準を確立します。 検索結果フォルダーには、検索条件に一致するメッセージへのリンクが含まれています。実際のメッセージは、元の場所に保存されています。 検索結果のフォルダーに含まれているのみに固有のデータは、その内容のテーブルです。 検索結果フォルダーの内容のテーブルでは、検索の制限が適用された後にメッセージ ・ ストアがマージされた内容があります。 
+**IMAPIContainer:: setsearchcriteria**メソッドは、検索をサポートするコンテナー (通常は検索結果フォルダー) の検索条件を設定します。 検索結果フォルダーには、検索条件に一致するメッセージへのリンクが含まれています。実際のメッセージは、元の場所に保存されたままになります。 検索結果フォルダーに格納されている一意のデータは、[コンテンツ] テーブルだけです。 検索結果フォルダーの contents テーブルには、検索制限が適用された後に、メッセージストアの内容がマージされています。 
   
-検索操作は、この内容が結合されたテーブルでのみ動作します。他の検索結果のフォルダーを検索しません。 検索結果が検索条件に一致するメッセージのみを返すフォルダー階層は返されません。
+検索操作は、この結合されたコンテンツテーブルでのみ動作します。他の検索結果フォルダーは検索されません。 検索結果には、検索条件に一致するメッセージのみが返されます。フォルダー階層は返されません。
   
-検索が完了すると、制御がクライアントに返されます。
+検索が完了すると、コントロールはクライアントに返されます。
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-アドレス帳コンテナーは、その内容のテーブルに制限を適用することで検索条件を確立します。 詳細については検索条件とアドレス帳コンテナー、[高度な検索を実装する](implementing-advanced-searching.md)を参照してください。
+アドレス帳コンテナーは、コンテンツテーブルに制限を適用して検索条件を確立します。 検索条件とアドレス帳コンテナーの詳細については、「[高度な検索の実装](implementing-advanced-searching.md)」を参照してください。
   
-必要がありますオープンをサポートして、コピー、移動、および削除の各操作の検索結果のフォルダー内のメッセージに、検索結果フォルダー自体ではなく。 内に作成または検索結果のフォルダーにコピーするメッセージを許可しません。 
+検索結果フォルダー自体ではなく、検索結果フォルダー内のメッセージに対して、オープン、コピー、移動、および削除の操作をサポートする必要があります。 検索結果フォルダー内でのメッセージの作成またはコピーを許可しません。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-メッセージの受信者を検索するには、 **PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) に設定する[SSubRestriction](ssubrestriction.md)構造体の**ulSubObject**メンバーとサブオブジェクトの制限] をポイントする_lpRestriction_を設定します。 添付ファイルを検索するには、 **PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) に**ulSubObject**のメンバーを設定します。 受信者や添付ファイルの検索条件を記述するプロパティの制限] をポイントして、 **lpRes**のメンバーを設定します。 
+メッセージの受信者を検索するには、 [ssubrestriction](ssubrestriction.md)構造で**PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) に設定されている ulsubmember を持つサブ要素制限を指すように**** _lpRestriction_を設定します。 添付ファイルを検索するには**** 、ulsubobject メンバーを**PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) に設定します。 受信者または添付ファイルの検索条件を記述するプロパティ制限をポイントするように、 **lpres**メンバーを設定します。 
   
-たとえば、拡張子 .mss を含む添付ファイルを探すように**PR_MESSAGE_ATTACHMENTS**と**PR_ATTACH_EXTENSION** ([PidTagAttachExtension](pidtagattachextension-canonical-property.md)に一致するプロパティの制限を**lpRes**に**ulSubObject**を設定します。) を持つ。 mss。
+たとえば、拡張子が mss の添付ファイルを検索するには、ulsubobject **** を**PR_MESSAGE_ATTACHMENTS**および**lpres**に設定して、 **PR_ATTACH_EXTENSION**に一致するプロパティ制限に設定します ([PidTagAttachExtension](pidtagattachextension-canonical-property.md)) を使用します。
   
-_UlSearchFlags_パラメーターに FOREGROUND_SEARCH フラグを設定すると、システム パフォーマンスが低下可能性があります。 
+_ulsearchflags_パラメーターに FOREGROUND_SEARCH フラグを設定すると、システムのパフォーマンスが低下する可能性があります。 
   
-既に進行中の検索の検索条件を変更するのには**SetSearchCriteria**を使用することができます。 新しい制限を検索するには、フォルダーと新しい検索の優先順位、優先度の高い検索にアップグレードするなどの新しいリストを指定できます。 検索の優先順位の変更を再起動して、既存の検索が発生しないが、条件を検索するには、その他の変更ができます。 
+**setsearchcriteria**を使用して、既に進行中の検索条件を変更することができます。 新しい制限を指定したり、検索するフォルダーの新しいリストを指定したり、検索をより高い優先度にアップグレードするなどの新しい検索の優先度を指定したりできます。 検索優先度の変更によって既存の検索が再起動されることはありませんが、検索条件に対するその他の変更はできません。 
   
-検索結果フォルダーを使用するが、フォルダーを削除するか、後で使用するために開いたままにできるようにします。 検索結果フォルダーを削除すると、メッセージのリンクのみが削除されます。 実際のメッセージは、その親フォルダーに残ります。 
+検索結果フォルダーを使用している場合は、フォルダーを削除するか、または後で使用するために開いたままにしておくことができます。 検索結果フォルダーを削除すると、メッセージリンクのみが削除されます。 実際のメッセージは親フォルダーに残ります。 
   
-検索結果フォルダーの詳細については、 [MAPI 検索フォルダー](mapi-search-folders.md)を参照してください。 
+検索結果フォルダーの詳細については、「 [MAPI 検索フォルダー](mapi-search-folders.md)」を参照してください。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|HierarchyTableDlg.cpp  <br/> |CHierarchyTableDlg::OnEditSearchCriteria  <br/> |MFCMAPI では、 **IMAPIContainer::SetSearchCriteria**メソッドを使用して、ユーザーがそれを編集した後、フォルダーの検索条件を記述します。  <br/> |
+|HierarchyTableDlg  <br/> |CHierarchyTableDlg:: oneditsearchcriteria  <br/> |mfcmapi は、 **IMAPIContainer:: setsearchcriteria**メソッドを使用して、ユーザーが編集した後のフォルダーの検索条件を書き込みます。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

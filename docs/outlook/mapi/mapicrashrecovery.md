@@ -12,48 +12,48 @@ api_type:
 - COM
 ms.assetid: 4172e2d3-6343-385b-c691-a64c1e198051
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6b07d794a8f54477c6706cb70af60f7f7ef57d49
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9efafbac55a2925e04b533e7c08388c026540dff
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357303"
 ---
 # <a name="mapicrashrecovery"></a>MAPICrashRecovery
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-**MAPICrashRecovery**関数は、共有メモリを個人用フォルダー ファイル (PST) またはオフライン フォルダー ファイル (OST) の状態をチェックします。 メモリは、一貫性のある状態では、 **MAPICrashRecovery**関数はデータをディスクに移動して、プロセスが終了するまでに、さらに読み取りまたは書き込みアクセスを防ぐことが。 
+**mapicrashrecovery**関数は、個人用フォルダーファイル (PST) またはオフラインフォルダーファイル (OST) の共有メモリの状態をチェックします。 メモリが一貫した状態にある場合、 **mapicrashrecovery**関数はデータをディスクに移動し、プロセスが終了するまで追加の読み取りまたは書き込みアクセスを禁止します。 
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|によってエクスポートされます。  <br/> |olmapi32.dll  <br/> |
-|によって呼び出されます。  <br/> |クライアント  <br/> |
-|によって実装されます。  <br/> |Outlook  <br/> |
+|エクスポート対象:  <br/> |olmapi32  <br/> |
+|呼び出し元:  <br/> |クライアント  <br/> |
+|実装元:  <br/> |Outlook  <br/> |
    
 ```cpp
 void MAPICrashRecovery(ULONG ulFlags);
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
 _ulFlags_
   
-> [in]MAPI クラッシュ ・ リカバリの実行方法を制御するために使用するフラグです。 次のフラグを設定することができます。
+> 順番MAPI のクラッシュ回復を実行する方法を制御するために使用されるフラグです。 次のフラグを設定できます。
     
-   - **MAPICRASH\_回復**: pst ファイルまたは Ost が一貫性のある状態にある場合は、ディスクをロックする読み取りまたは書き込みアクセスを防止するには、pst ファイルまたは Ost のデータを移動します。
+   - **mapicrash\_の回復**: pst または ost が一貫した状態にある場合は、データをディスクに移動し、pst または ost をロックして読み取りまたは書き込みのアクセスを禁止します。
     
-   - **MAPICRASH\_続行**: デバッグ用の pst ファイルまたは Ost のロックを解除します。 **MAPICRASH_RECOVER**フラグを使用して**MAPICrashRecovery**を呼び出して後で**MAPICrashRecovery**を呼び出す、 **MAPICRASH\_続行**フラグを続行するのにはデバッグを可能にします。 
+   - **mapicrash\_CONTINUE**: デバッグのために pst または ost のロックを解除します。 **MAPICRASH_RECOVER**フラグを使用して**mapicrashrecovery**を正常に呼び出した後、mapicrash **\_** の**回復**を使用して、デバッグを続行できるようにします。 
     
-   - **MAPICRASH\_SYSTEM_SHUTDOWN**: pst ファイルまたは Ost が一貫性のある状態にある場合は、ディスクをロックする読み取りまたは書き込みアクセスを防止するには、pst ファイルまたは Ost のデータを移動します。 Pst ファイルまたは Ost を使用してロックを解除することはできません**MAPICRASH\_続行**。 組み合わせて使用する必要があります**MAPICRASH\_回復**。 
+   - **mapicrash\_SYSTEM_SHUTDOWN**: pst または ost が一貫した状態にある場合は、データをディスクに移動し、pst または ost をロックして読み取りまたは書き込みアクセスを禁止します。 pst または ost を、 **mapicrash\_の CONTINUE**を使用してロック解除することはできません。 **mapicrash\_の回復**と組み合わせて使用する必要があります。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-上位バイト (0xFF000000) は、プロバイダーの特定のクラッシュ復旧のフラグは予約されています。
+上位バイト (0xFF000000) は、プロバイダー固有のクラッシュ回復フラグ用に予約されています。
   
-**MAPICrashRecovery**を呼び出して、 **MAPICRASH\_回復**と**WM_ENDSESSION**メッセージへの応答にフラグを**MAPICRASH_SYSTEM_SHUTDOWN** 。 
+**WM_ENDSESSION**メッセージへの応答として、 **mapicrash\_の RECOVER**および**MAPICRASH_SYSTEM_SHUTDOWN**フラグを使用して、 **mapicrashrecovery**を呼び出します。 
   
 ## <a name="see-also"></a>関連項目
 

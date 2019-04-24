@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 9be6b88e-2510-4b82-8b35-5f20a0f99fc0
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a176b51577c7d4616d988a0b28f2afcfb554e9f7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1486730dfa2d76bf8e97439213851b195504962f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348819"
 ---
 # <a name="imsgstoreabortsubmit"></a>IMsgStore::AbortSubmit
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-発信キューからメッセージを削除しようとしています。
+送信キューからメッセージを削除しようとしています。
   
 ```cpp
 AbortSubmit(
@@ -39,45 +39,45 @@ AbortSubmit(
 
  _cbEntryID_
   
-> [in]_LpEntryID_パラメーターで指定されたエントリの識別子のバイト数です。 
+> 順番_lな tryid_パラメーターで指定されたエントリ識別子のバイト数。 
     
- _lpEntryID_
+ _lて tryid_
   
-> [in]発信キューから削除するメッセージのエントリの識別子へのポインター。 
+> 順番送信キューから削除するメッセージのエントリ id へのポインター。 
     
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> メッセージは発信キューから正常に削除されました。
+> メッセージは送信キューから正常に削除されました。
     
 MAPI_E_NOT_IN_QUEUE 
   
-> _LpEntryID_によって識別されるメッセージはありません、メッセージ ストアの送信キューに通常既に送信されています。 
+> _lな tryid_で識別されたメッセージは、通常は既に送信されているため、メッセージストアの送信キューにはありません。 
     
 MAPI_E_UNABLE_TO_ABORT 
   
-> _LpEntryID_によって識別されるメッセージは、MAPI スプーラーによってロックされているし、操作は中止できません。 
+> _lな tryid_で識別されたメッセージは MAPI スプーラーによってロックされているため、操作を中止できません。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMsgStore::AbortSubmit**メソッドは、メッセージ ストアの送信キューから送信されたメッセージを削除しようとします。 
+**IMsgStore:: abortsubmit**メソッドは、送信されたメッセージをメッセージストアの送信キューから削除しようとします。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-メッセージが送信されると、メッセージに対して実行できる操作だけでは**AbortSubmit**を呼び出すことによって、送信を中止しています。 常に成功するために**AbortSubmit**は必要ありません。 基になるメッセージング システムの実装方法によっては、できない可能性がありますメッセージの送信を中止します。 
+メッセージが送信されたら、 **abortsubmit**を呼び出して送信を中止し、メッセージに対して実行できる唯一の操作を行います。 常に**abortsubmit**が正常に実行されることを想定していません。 基になるメッセージングシステムがどのように実装されているかによっては、メッセージの送信を取り消すことができない場合があります。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|FolderDlg.cpp  <br/> |CFolderDlg::OnAbortSubmit  <br/> |MFCMAPI では、 **IMsgStore::AbortSubmit**メソッドを使用して、選択したメッセージの送信を中止します。  <br/> |
+|folderdlg  <br/> |cfolderdlg:: onabortsubmit  <br/> |mfcmapi は、 **IMsgStore:: abortsubmit**メソッドを使用して、選択されたメッセージの送信を中止します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

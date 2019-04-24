@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: fd42a6ce-f621-4e9e-aba3-23a1b87a5651
 description: '[図形データの定義] ダイアログ ボックスに入力した図形データ項目の値が格納されています。'
-ms.openlocfilehash: 5b373149360167585fc5a143ce9458703e219045
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 40d9e7fdd92ac8fa800a146ea45bbcd002ace87b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355973"
 ---
-# <a name="value-cell-shape-data-section"></a>[Value] セル ([図形データ] セクション)
+# <a name="value-cell-shape-data-section"></a>[Value] セル ([Shape Data] セクション)
 
 [**図形データの定義**] ダイアログ ボックスに入力した図形データ項目の値が格納されています。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 このセルに数式を入力しても、[**図形データの定義**] ダイアログ ボックスに入力した値によって上書きされます。式を保護するために GUARD 関数を使用している場合も同様に扱われます。 
   
@@ -28,14 +28,14 @@ ms.locfileid: "19806759"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | プロペラです。 *名*です。値、プロパティです。 *名前*は、行の名前  <br/> |
+| セル名:  <br/> | 提案. *名前*です。値 Prop の値。 *name*には、行の名前を指定します。  <br/> |
    
 プログラムから、インデックスによって [Value] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionProp** <br/> |
-| 行インデックス:  <br/> |**visRowProp** +  *i* 、 *i* = 0, 1, 2.  <br/> |
-| セル インデックス:  <br/> |**visCustPropsValue** <br/> |
+| 行インデックス:  <br/> |**visRowProp** +  *i* = ** 0、1、2...  <br/> |
+| セル インデックス:  <br/> |**viscustpropsvalue** <br/> |
    
 

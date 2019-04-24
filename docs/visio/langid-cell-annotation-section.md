@@ -9,21 +9,21 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: b6f5ea5e-b350-0817-d631-f059b9b95c23
 description: コメントの記入に使用した言語を示します。
-ms.openlocfilehash: 0de5ed8136a3fb1bbdca9fea0ebb5894e62cf907
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b3b2cba3d0a04f75ef2d87f0ee8dcd1f8115e15e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360551"
 ---
-# <a name="langid-cell-annotation-section"></a>[LangID] セル ([注釈] セクション)
+# <a name="langid-cell-annotation-section"></a>[LangID] セル ([Annotation] セクション)
 
 コメントの記入に使用した言語を示します。
   
 > [!NOTE]
-> このセルは、Microsoft Visio 2013 で .vsd ファイルを開くときにのみ、または .vsd ファイルの形式で .vsdx ファイルを保存するときにコメントを追跡するために使用されます。 Visio 2013 で .vsdx のドキュメント内のコメントを追跡するためには使用されません。 
+> このセルは、Microsoft Visio 2013 で .vsd ファイルを開くとき、または .vsd ファイル形式で .vsdx ファイルを保存するときにのみ、コメントの追跡に使用されます。 これは、Visio 2013 の .vsdx ドキュメントでコメントを追跡するためには使用されません。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 この値は、コメントを記入したときに言語バーでアクティブになっている言語のロケール ID (LCID) です。Microsoft Office のアプリケーションがサポートしている言語の一覧は、[[DocLangID](doclangid-cell-document-properties-section.md)] セル ([Document Properties] セクション) を参照してください。 
   
@@ -31,14 +31,14 @@ ms.locfileid: "19805655"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | Annotation.LangID [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+| セル名:  <br/> | <1> [ *i* ]: *i* =、2、3...  <br/> |
    
 プログラムから、インデックスによって [LangID] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionAnnotation** <br/> |
-| 行インデックス:  <br/> |**visRowAnnotation** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+| 行インデックス:  <br/> |**visRowAnnotation** +  *i* = ** 0、1、2...  <br/> |
 | セル インデックス:  <br/> |**visAnnotationLangID** <br/> |
    
 

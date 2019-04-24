@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: cb91ae1d-1ea8-4f02-a1f1-f2a356a71477
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3b302de68f27e85c67430f82bd3e2c33009600e9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 804bd23a148b942fd4580d1e3465fc1f65ff5978
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357443"
 ---
 # <a name="lpfnbutton"></a>LPFNBUTTON
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI が、アドレス帳] ダイアログ ボックスで、オプション ボタン コントロールをアクティブにするために呼び出すコールバック関数を定義します。 このボタンは、通常、**詳細**ボタンです。 
+[アドレス帳] ダイアログボックスでオプションのボタンコントロールをアクティブ化するために MAPI が呼び出すコールバック関数を定義します。 通常、このボタンは [**詳細**] ボタンです。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|によって実装される関数の定義:  <br/> |サービス プロバイダー  <br/> |
-|によって呼び出される関数を定義します。  <br/> |MAPI  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|定義された関数の実装:  <br/> |サービス プロバイダー  <br/> |
+|によって呼び出された定義済み関数:  <br/> |MAPI  <br/> |
    
 ```cpp
 SCODE (STDMETHODCALLTYPE FAR * LPFNBUTTON)(
@@ -45,39 +45,39 @@ SCODE (STDMETHODCALLTYPE FAR * LPFNBUTTON)(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulUIParam_
+ _uluiparam_
   
-> [in]すべてのダイアログ ボックスの親ウィンドウまたはこの関数を表示するウィンドウのハンドルです。
+> 順番この関数が表示する、任意のダイアログボックスまたはウィンドウの親ウィンドウのハンドル。
     
- _lpvContext_
+ _lpvcontext_
   
-> [in]任意の値へのポインターは、MAPI では、それを呼び出すときに、コールバック関数に渡されます。 この値は、クライアント アプリケーションにとって意味のアドレスを表すことができます。 通常、C++ コードでは、 _lpvContext_のポインターを表します C++ オブジェクトにします。 
+> 順番MAPI がコールバック関数に渡す任意の値へのポインター。 この値は、クライアントアプリケーションにとって重要なアドレスを表すことができます。 通常、c++ コードでは、 _lpvcontext_は c++ オブジェクトへのポインターを表します。 
     
  _cbEntryID_
   
-> [in]_LpSelection_パラメーターで指定されたエントリの識別子のバイト単位のサイズです。 
+> 順番_lpselection_パラメーターで指定されたエントリ識別子のサイズ (バイト単位)。 
     
- _lpSelection_
+ _lpselection_
   
-> [in]ダイアログ ボックスで選択範囲を定義するエントリの識別子へのポインター。
+> 順番ダイアログボックスの選択範囲を定義するエントリ識別子へのポインター。
     
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>����
+## <a name="remarks"></a>解説
 
-クライアント アプリケーションでは、[詳細] ダイアログ ボックスのボタンを定義するのには**LPFNBUTTON**プロトタイプに基づいてコールバック関数を呼び出します。 クライアントは、 [IAddrBook::Details](iaddrbook-details.md)メソッドの呼び出しでコールバック関数へのポインターを渡します。 
+クライアントアプリケーションは、 **LPFNBUTTON**プロトタイプに基づいてコールバック関数を呼び出し、[詳細] ダイアログボックスにボタンを定義します。 クライアントは、 [IAddrBook::D etails](iaddrbook-details.md)メソッドへの呼び出しで、コールバック関数へのポインターを渡します。 
   
-サービス プロバイダーでは、[詳細] ダイアログ ボックスのボタンを定義するのには**LPFNBUTTON**のプロトタイプのフック関数を呼び出します。 プロバイダーは、 [IMAPISupport::Details](imapisupport-details.md)メソッドの呼び出しでは、このフック関数へのポインターを渡します。 
+サービスプロバイダーは、 **LPFNBUTTON**プロトタイプに基づいて、[詳細] ダイアログボックスにボタンを定義するためのフック関数を呼び出します。 プロバイダーは、 [imapisupport::D etails](imapisupport-details.md)メソッドへの呼び出しで、このフック関数へのポインターを渡します。 
   
-どちらの場合も、ダイアログ ボックスが表示され、定義済みのボタンを選択した場合、MAPI は**LPFNBUTTON**を呼び出します。 
+どちらの場合も、ダイアログボックスが表示され、ユーザーが [定義済み] ボタンを選択すると、MAPI は**LPFNBUTTON**を呼び出します。 
   
 ## <a name="see-also"></a>関連項目
 

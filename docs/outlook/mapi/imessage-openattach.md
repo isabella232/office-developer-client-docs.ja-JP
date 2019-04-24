@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: b680f5a7-0df3-4e7b-bf3b-f149eb42be8d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 48df5362106e849f061b0797736fad82fafa6584
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e0c3747b48526b715f976e7bf3c142097c85f29a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349253"
 ---
 # <a name="imessageopenattach"></a>IMessage::OpenAttach
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 添付ファイルを開きます。 
   
@@ -38,59 +38,59 @@ HRESULT OpenAttach(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulAttachmentNum_
+ _ulattachmentnum_
   
-> [in]開くには、添付ファイルの**PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) のプロパティに格納されている添付ファイルのインデックス番号です。 このインデックス番号を一意に、メッセージの添付ファイルを識別し、メッセージのコンテキストでのみ有効です。
+> 順番添付ファイルの**PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) プロパティに格納されている、開く添付ファイルのインデックス番号を指定します。 このインデックス番号は、メッセージの添付ファイルを一意に識別するもので、メッセージのコンテキストでのみ有効です。
     
- _lpInterface_
+ _lpinterface_
   
-> [in]添付ファイルにアクセスするために使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 パラメーターに NULL が返される添付ファイルの標準的なインタ フェース、または**IAttach**、発生します。 
+> 順番添付ファイルへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 NULL 結果を添付ファイルの標準インターフェイスまたは**iattach**に渡すと、返されます。 
     
  _ulFlags_
   
-> [in]添付ファイルを開く方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。 
+> 順番添付ファイルを開く方法を制御するフラグのビットマスクです。 次のフラグを設定できます。 
     
 MAPI_BEST_ACCESS 
   
-> ユーザーおよび最大のクライアント アプリケーションへのアクセスに使用される最大ネットワークのアクセス許可を持つ添付ファイルを開くことを要求します。 たとえば、クライアントに読み取り/書き込み権限がある場合は、添付ファイル開く必要があります読み取り/書き込みアクセス許可を持つクライアントに読み取り専用アクセスがある場合は、読み取り専用アクセス権を持つ添付ファイルを開く必要があります。 
+> ユーザーに対して許可される最大のネットワークアクセス許可と、クライアントアプリケーションの最大アクセス権を使用して、添付ファイルを開くように要求します。 たとえば、クライアントに読み取り/書き込みアクセス許可がある場合、添付ファイルは読み取り/書き込みアクセス許可を使用して開く必要があります。クライアントが読み取り専用のアクセス権を持っている場合は、添付ファイルを読み取り専用アクセスで開く必要があります。 
     
 MAPI_DEFERRED_ERRORS 
   
-> 正常に戻す、可能性のある添付ファイルは、呼び出し側のクライアントに完全に利用できる前に**OpenAttach**を使用できます。 添付ファイルが利用できない場合は、それ以降の呼び出しを行うとエラーが発生することができます。 
+> 添付ファイルが呼び出し元クライアントに完全に使用可能になる前に、 **openattach**を正常に返すことができるようにします。 添付ファイルを使用できない場合は、その後の呼び出しを行うとエラーが発生する可能性があります。 
     
 MAPI_MODIFY 
   
-> 要求の読み取り/書き込みのアクセス許可 既定では、添付ファイルは、読み取り専用アクセスで開くし、クライアントが読み取り/書き込みアクセス許可が付与されていることを前提に動作しない必要があります。 
+> 読み取り/書き込みアクセス許可を要求します。 既定では、添付ファイルは読み取り専用アクセスで開かれ、読み取り/書き込みアクセス許可が付与されているという前提でクライアントを使用することはできません。 
     
- _lppAttach_
+ _lppattach_
   
-> [out]開いている添付ファイルへのポインターへのポインター。
+> 読み上げ開かれた添付ファイルへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > 添付ファイルが正常に開かれました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMessage::OpenAttach**メソッドは、メッセージの添付ファイルを開きます。 
+**IMessage:: openattach**メソッドは、メッセージの添付ファイルを開きます。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-添付ファイルを開くには、その添付ファイルの数や**PR_ATTACH_NUM**のプロパティへのアクセスが必要です。 メッセージの添付ファイル テーブルを取得し、添付ファイルを開くことを表す行を探し、 [IMessage::GetAttachmentTable](imessage-getattachmenttable.md)を呼び出します。 詳細については、[添付ファイルを開く](opening-an-attachment.md)を参照してください。 
+添付ファイルを開くには、添付ファイルの番号または**PR_ATTACH_NUM**プロパティにアクセスできる必要があります。 [IMessage:: getattachmenttable](imessage-getattachmenttable.md)を呼び出して、メッセージの添付ファイルテーブルを取得し、開く添付ファイルを表す行を見つけます。 詳細について[は、「添付ファイルを開く](opening-an-attachment.md)」を参照してください。 
   
-複数回 1 つの添付ファイルを開くしないでください。結果は不定であり、メッセージ ストア プロバイダーに依存しているです。
+1つの添付ファイルを複数回開いてはいけません。結果は未定義で、メッセージストアプロバイダーに依存します。
   
-添付ファイルは、既定の読み取り専用モードではなく、読み取り/書き込みモードで開くことを要求することができます。 ただし、添付ファイルは実際には、開かれているか読み取り/書き込みモードでは、メッセージ ストア プロバイダーです。 できます、添付ファイルを変更しようとすると、可能性のある障害を処理または使用可能になる場合、添付ファイルの**PR_ACCESS_LEVEL** ([PidTagAccessLevel](pidtagaccesslevel-canonical-property.md)) のプロパティを取得することによって付与されたアクセスのレベルを確認する準備をしています。 
+既定の読み取り専用モードではなく、読み取り/書き込みモードで添付ファイルを開くように要求することができます。 ただし、添付ファイルが実際に読み取り/書き込みモードで開かれるかどうかは、メッセージストアプロバイダーによって設定されます。 添付ファイルを変更するか、起こり得るエラーを処理するための準備を試みるか、添付ファイルの**PR_ACCESS_LEVEL** ([PidTagAccessLevel](pidtagaccesslevel-canonical-property.md)) プロパティを取得することによって付与されたアクセスのレベルを確認することができます (使用可能な場合)。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|AttachmentsDlg.cpp をするために使用  <br/> |CAttachmentsDlg::OpenItemProp  <br/> |MFCMAPI を開くには、添付ファイルのオブジェクトの**IMessage::OpenAttach**メソッドを使用してください。  <br/> |
+|AttachmentsDlg に使用する  <br/> |CAttachmentsDlg:: openitemprop  <br/> |mfcmapi は、 **IMessage:: openattach**メソッドを使用して添付ファイルオブジェクトを開きます。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

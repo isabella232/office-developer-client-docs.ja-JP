@@ -8,20 +8,20 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 539aa31d-7dec-4dbb-93f7-fa060c43565a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ffac4328401b8afbc07eb650ea6c08da5f9c51b2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a9b11b134f5d4a32a5a55008f557821d74b474bc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357128"
 ---
 # <a name="mapiofflinecreateinfo"></a>MAPIOFFLINE_CREATEINFO
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-この構造体は、 [HrCreateOfflineObj](hrcreateofflineobj.md)で使用されます。
+この構造体は、 [hrcreateofflineobj](hrcreateofflineobj.md)と組み合わせて使用されます。
   
 ```cpp
 typedef struct
@@ -41,50 +41,50 @@ typedef struct
 
 ## <a name="members"></a>Members
 
- **ulSize**
+ **ulsize**
   
-> 構造体のサイズです。
+> 構造体のサイズ。
     
- **ulCreateFlags**
+ **ulcreateflags**
   
-> 0 である必要があります。
+> 0である必要があります。
     
  **pwszProfileName**
   
 > プロファイルの名前を指定します。
     
- **ulCapabilities**
+ **ulcapabilities**
   
-> 以下の機能フラグのビット マスクです。
+> 次の機能フラグのビットマスク。
     
 |||
 |:-----|:-----|
-|MAPIOFFLINE_CAPABILITY_OFFLINE  <br/> |オフライン オブジェクトはオフラインになることができます。  <br/> |
-|MAPIOFFLINE_CAPABILITY_ONLINE  <br/> |オフラインのオブジェクトでは、オンラインのことができます。  <br/> |
+|MAPIOFFLINE_CAPABILITY_OFFLINE  <br/> |オフラインオブジェクトがオフラインになることができる。  <br/> |
+|MAPIOFFLINE_CAPABILITY_ONLINE  <br/> |オフラインオブジェクトがオンラインになることができる。  <br/> |
    
- **pGUID**
+ **pguid**
   
-> この種類の他のオフラインのオブジェクトからオフラインのオブジェクトを一意に識別するために使用する GUID へのポインター。 GUID_GlobalState は、親オブジェクトとしてオブジェクトを使用するグローバル オブジェクトを参照します。
+> 他のオフラインオブジェクトからこの種類のオフラインオブジェクトを一意に識別するために使用される GUID へのポインター。 GUID_GlobalState は、オブジェクトが親オブジェクトとして使用できるグローバルオフラインオブジェクトを参照します。
     
- **pInstance**
+ **pinstance**
   
-> このオフラインのオブジェクトを一意に識別する GUID へのポインター。 このオフラインの他のオブジェクトからオブジェクトを明確に使用されます。
+> このオフラインオブジェクトを一意に識別する GUID へのポインター。 これは、このオフラインオブジェクトを他のオブジェクトからあいまいにするために使用されます。
     
- **pParent**
+ **pparent**
   
-> オフライン オブジェクトと元の親であるオフラインのオブジェクトへのポインターはこのオフラインのオブジェクトの継承を変更します。
+> このオフラインオブジェクトの親であるオフラインオブジェクトへのポインター。このオフラインオブジェクトの変更内容が継承されます。
     
  **pMAPISupport**
   
->  MAPI サポート オブジェクトがこのオブジェクトを使用することを識別します。 などのオフライン オブジェクトはオフラインで使用ストアの変更を追跡すると、オンラインの状態にし、これは、ストアは、オブジェクトをサポートします。 ただし、サポート オブジェクトを持たないオブジェクトのオフライン オブジェクトは、この場合、その NULL でもかまいません。 
+>  このオフラインオブジェクトを使用する MAPI サポートオブジェクトを識別します。 たとえば、このオフラインオブジェクトを使用してストアのオフラインとオンラインの状態を追跡している場合は、ストアのサポートオブジェクトです。 ただし、これがサポートオブジェクトのないオブジェクトのオフラインオブジェクトである場合は、NULL にすることができます。 
     
  **pAggregateInfo**
   
-> MAPIOFFLINE_AGGREGATEINFO 構造体へのポインター。 詳細については、 [MAPIOFFLINE_AGGREGATEINFO](mapioffline_aggregateinfo.md)を参照してください。
+> MAPIOFFLINE_AGGREGATEINFO 構造体へのポインター。 詳細については、「 [MAPIOFFLINE_AGGREGATEINFO](mapioffline_aggregateinfo.md)」を参照してください。
     
- **pConnectInfo**
+ **pconnectinfo**
   
-> Null にする必要があります。
+> null である必要があります。
     
 ## <a name="see-also"></a>関連項目
 

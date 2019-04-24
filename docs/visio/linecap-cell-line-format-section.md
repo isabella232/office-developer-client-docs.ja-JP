@@ -9,24 +9,24 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 3519216b-b6cf-2e8c-e20f-adfa373c9028
 description: 線の端点を丸、四角形、または拡張のどれにするかを指定します。
-ms.openlocfilehash: 1bd427801e6d95ce6167fa9681da2c567307f072
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 44de4bff87fd3d121dfce9eec934ec39bc61065a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359319"
 ---
-# <a name="linecap-cell-line-format-section"></a>[LineCap] セル ([線の書式設定] セクション)
+# <a name="linecap-cell-line-format-section"></a>[LineCap] セル ([Line Format] セクション)
 
 線の端点を丸、四角形、または拡張のどれにするかを指定します。
   
 |**値**|**線の端点の形**|
 |:-----|:-----|
-|0  <br/> |丸  <br/> |
-|1  <br/> |四角形  <br/> |
-|2  <br/> |拡張  <br/> |
+|.0  <br/> |端数  <br/> |
+|1-d  <br/> |四角  <br/> |
+|pbm-2  <br/> |拡張  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 このセルの値は、[**線**] ダイアログ ボックスで設定することもできます (このダイアログ ボックスを開くには、[**ホーム**] タブの [**図形**] グループで、[**線**] をクリックし、[**矢印**] をポイントして、[**その他の矢印**] をクリックします)。
   
@@ -34,7 +34,7 @@ ms.locfileid: "19805703"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[Linecap]  <br/> |
+|セル名:  <br/> |[linecap]  <br/> |
    
 プログラムから、インデックスによって [LineCap] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

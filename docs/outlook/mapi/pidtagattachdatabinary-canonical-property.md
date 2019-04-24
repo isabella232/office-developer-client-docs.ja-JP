@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 3b0a8b28-863e-4b96-a4c0-fdb8f40555b9
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1a5f8688b8ea747590cf2a2d6d5efb271aa488f8
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25390927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356547"
 ---
 # <a name="pidtagattachdatabinary-canonical-property"></a>PidTagAttachDataBinary 標準プロパティ
 
@@ -25,7 +25,7 @@ ms.locfileid: "25390927"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-通常、オブジェクトのリンクと埋め込み (OLE) の**IStream**インターフェイスを使用してアクセス バイナリ添付ファイルのデータが含まれています。 
+通常、オブジェクトのリンクと埋め込み (OLE) **IStream**インターフェイスを通じてアクセスされるバイナリ添付ファイルデータを格納します。 
   
 |||
 |:-----|:-----|
@@ -34,43 +34,43 @@ ms.locfileid: "25390927"
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-**PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) プロパティの値では、ATTACH_BY_VALUE、通常の添付ファイルのメソッドと 1 つだけをサポートする必要がある場合、このプロパティは、添付ファイルを保持します。 **PR_ATTACH_DATA_BIN**は、 **PR_ATTACH_METHOD**の値が ATTACH_OLE である場合にも OLE 1.0 **OLESTREAM**の添付ファイルを保持します。 
+このプロパティは、添付ファイルを保持します。 **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) プロパティの値は、通常の添付ファイルの方法であり、サポートが必要なのは1つだけです。 **PR_ATTACH_DATA_BIN**は、 **PR_ATTACH_METHOD**の値が ATTACH_OLE の場合、OLE 1.0 **olestream**添付ファイルも保持します。 
   
- **OLESTREAM**の添付ファイルは、OLE **IStream::CopyTo**メソッドを呼び出すことによって、ファイルにコピーすることができます。 エンコードの種類の OLE は、 **PR_ATTACH_TAG** ([PidTagAttachTag](pidtagattachtag-canonical-property.md)) のプロパティから確認できます。 
+ **olestream**添付ファイルは、OLE **IStream:: CopyTo**メソッドを呼び出すことによって、ファイルにコピーできます。 OLE エンコードの種類は、 **PR_ATTACH_TAG** ([PidTagAttachTag](pidtagattachtag-canonical-property.md)) プロパティで決定できます。 
   
-ファイルに添付ファイル、OLE ドキュメントのメッセージ ストア プロバイダーは**PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) で、 [IMAPIProp::OpenProperty](imapiprop-openproperty.md)の呼び出しに応答する必要があり、PR_ATTACH_DATA_BIN を**の呼び出しに応答可能性があります (オプション)**. **PR_ATTACH_DATA_BIN**と**PR_ATTACH_DATA_OBJ**同じプロパティの識別子を共有し、したがって、同じプロパティの 2 つのレンディションは、注意してください。 
+OLE ドキュメントファイル添付ファイルの場合、メッセージストアプロバイダーは、 **PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) の[imapiprop:: openproperty](imapiprop-openproperty.md)呼び出しに応答し、必要に応じて、PR_ATTACH_DATA_BIN での呼び出しに応答する必要があります。 ****. **PR_ATTACH_DATA_BIN**と**PR_ATTACH_DATA_OBJ**では同じプロパティ識別子が共有されるため、同じプロパティの2つのレンディションになることに注意してください。 
   
-ストレージ ・ オブジェクト、OLE 2.0 のドキュメント形式、複合ファイルなど一部のサービス プロバイダーを許可パフォーマンス向上のため**IStreamDocfile**の MAPI インターフェイスを使用して開くことができません。 **IStreamDocfile**をサポートするプロバイダーは、 **PR_ATTACH_DATA_OBJ**上に公開する必要があり、 **PR_ATTACH_DATA_BIN**を失う必要に応じて可能性があります。 
+OLE 2.0 docfile 形式の複合ファイルなどのストレージオブジェクトについては、サービスプロバイダーによっては、パフォーマンスを向上させるために MAPI **IStreamDocfile**インターフェイスを使用して開くことができます。 **IStreamDocfile**をサポートするプロバイダーは、 **PR_ATTACH_DATA_OBJ**で公開する必要があり、必要に応じて**PR_ATTACH_DATA_BIN**に公開する必要があります。 
   
-OLE インターフェイスとフォーマットの詳細については、 [OLE アプリケーションとデータの転送](https://msdn.microsoft.com/library/d4a57956-37ba-44ca-8efc-bf617ad5e77b.aspx)を参照してください。 
+ole のインターフェイスおよび形式の詳細については、「 [ole とデータ転送](https://msdn.microsoft.com/library/d4a57956-37ba-44ca-8efc-bf617ad5e77b.aspx)」を参照してください。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルのオブジェクトを処理します。
+> メッセージと添付ファイルオブジェクトを処理します。
     
-## <a name="header-files"></a>ヘッダー ファイル
+## <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

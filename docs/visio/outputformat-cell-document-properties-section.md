@@ -8,25 +8,25 @@ f1_keywords:
 - Vis_DSS.chm82251617
 localization_priority: Normal
 ms.assetid: 17238019-c800-5d3a-32f6-fb0008d4e25f
-description: 図面の出力形式を指定します。図面ページは、通常は印刷用に形式が設定されていますが (既定値)、他の出力形式を選択することもできます。
-ms.openlocfilehash: 7103fa5c2bc721add3496b7a497989d6632d58f1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 図面の出力形式を指定します。 図面ページは、通常は印刷用に形式が設定されていますが (既定値)、他の出力形式を選択することもできます。
+ms.openlocfilehash: 09fa34095772936ab1c6a3025ed1884a533f55e1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359285"
 ---
-# <a name="outputformat-cell-document-properties-section"></a>[OutputFormat] セル ([ドキュメントのプロパティ] セクション)
+# <a name="outputformat-cell-document-properties-section"></a>[OutputFormat] セル ([Document Properties] セクション)
 
-図面の出力形式を指定します。図面ページは、通常は印刷用に形式が設定されていますが (既定値)、他の出力形式を選択することもできます。
+図面の出力形式を指定します。 図面ページは、通常は印刷用に形式が設定されていますが (既定値)、他の出力形式を選択することもできます。
   
 |**値**|**出力形式**|
 |:-----|:-----|
-| 0  <br/> | 印刷 (既定値)  <br/> |
-| 1  <br/> | PowerPoint スライド ショー  <br/> |
-| 2  <br/> | HTML または GIF 出力  <br/> |
+| .0  <br/> | 印刷 (既定値)  <br/> |
+| 1-d  <br/> | PowerPoint スライド ショー  <br/> |
+| pbm-2  <br/> | HTML または GIF 出力  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [OutputFormat] セルへの参照を取得するには、次の値を使用します。 
   

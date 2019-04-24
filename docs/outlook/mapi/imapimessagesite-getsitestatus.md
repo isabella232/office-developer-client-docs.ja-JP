@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 02718898-7857-4e43-8f46-622269f812e6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9b804728541b0f2a0499bbf0078bfee2e5aed6ee
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ab4a06a20c71943f9b649d8f22377f59223e9717
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355812"
 ---
 # <a name="imapimessagesitegetsitestatus"></a>IMAPIMessageSite::GetSiteStatus
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージに関するメッセージのサイト オブジェクトの現在のメッセージのサイトの機能に対応する情報を返します。
+現在のメッセージのメッセージサイトの機能に関する情報をメッセージサイトオブジェクトから返します。
   
 ```cpp
 HRESULT GetSiteStatus(
@@ -35,61 +35,61 @@ HRESULT GetSiteStatus(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpulStatus_
+ _lアウト状態_
   
-> [out]フラグのビットマスクであり、メッセージの状態に関する情報を提供へのポインター。 次のフラグを設定することができます。
+> 読み上げメッセージの状態に関する情報を提供するフラグのビットマスクへのポインター。 次のフラグを設定できます。
     
 VCSTATUS_COPY 
   
-> メッセージをコピーすることができます。 
+> メッセージをコピーできます。 
     
 VCSTATUS_DELETE 
   
-> メッセージを削除することができます。
+> メッセージを削除できます。
     
 VCSTATUS_DELETE_IS_MOVE 
   
-> 削除されると、メッセージは、メッセージ ・ ストアからすぐに削除されているのではなく、メッセージ ・ ストア内の**削除済みアイテム**フォルダーに移動します。 
+> 削除されると、メッセージはメッセージストアからすぐに削除されるのではなく、メッセージストア内の**削除済みアイテム**フォルダーに移動されます。 
     
 VCSTATUS_MOVE 
   
-> メッセージを移動することができます。
+> メッセージを移動できます。
     
 VCSTATUS_NEW_MESSAGE 
   
-> 新しいメッセージを作成することができます。
+> 新しいメッセージを作成できます。
     
 VCSTATUS_SAVE 
   
-> メッセージを保存することができます。
+> メッセージを保存できます。
     
 VCSTATUS_SUBMIT 
   
-> メッセージを送信することができます。
+> メッセージを送信できます。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>����
+## <a name="remarks"></a>解説
 
-フォーム オブジェクトは、現在のメッセージのメッセージ サイト オブジェクトの機能を取得する**IMAPIMessageSite::GetSiteStatus**メソッドを呼び出します。 _LpulStatus_パラメーターで返されるフラグは、メッセージのサイトに関する情報を提供します。 通常、フォームは、有効または、フラグが提供する機能に関する情報のサイトのメッセージの実装によって、メニュー コマンドを無効にします。 新しいメッセージは、 [IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md)メソッドまたは[IPersistMessage::Load](ipersistmessage-load.md)メソッドによってフォームに読み込まれている場合は、ステータス フラグを選択してください。 いくつかのメッセージ サイト オブジェクト、特に読み取り専用オブジェクトは、メッセージを保存または削除を許可しません。 
+Form オブジェクトは**IMAPIMessageSite:: getsitestatus**メソッドを呼び出して、現在のメッセージのメッセージサイトオブジェクトの機能を取得します。 _lアウト status_パラメーターで返されるフラグは、メッセージサイトに関する情報を提供します。 通常、フォームは、フラグがメッセージサイト実装の機能について提供する情報に応じて、メニューコマンドを有効または無効にします。 [IPersistMessage:: SaveCompleted](ipersistmessage-savecompleted.md)メソッドまたは[IPersistMessage:: Load](ipersistmessage-load.md)メソッドによってフォームに新しいメッセージが読み込まれた場合は、状態フラグをチェックする必要があります。 一部のメッセージサイトオブジェクト (特に読み取り専用オブジェクト) では、メッセージを保存または削除することはできません。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**IMAPIMessageSite::GetSiteStatus**メソッドには、どのような操作したり、現在のメッセージに対しては実行できませんを決定するいくつかの計算を実行するクライアント アプリケーションが必要です。 通常、ステータス行に現在のメッセージのメッセージ ストア プロバイダーを探してに関連するまたはどのアクションを決定するのには、ストア プロバイダーのクエリを実行するクライアント アプリケーションはメッセージ ストアを使用して実行できます。 たとえば、MAPI_DELETE_IS_MOVE フラグを返すかどうかを決定するには、内の**削除済みアイテム**フォルダーがあるかどうかを確認するメッセージ ストア オブジェクトの**PR_IPM_WASTEBASKET_ENTRYID** ([PidTagIpmWastebasketEntryId](pidtagipmwastebasketentryid-canonical-property.md)) のプロパティをチェックしますメッセージ ・ ストアです。 
+**IMAPIMessageSite:: getsitestatus**メソッドでは、現在のメッセージに対して実行可能な操作と実行できない操作を決定するために、クライアントアプリケーションが計算を実行することが必要になる場合があります。 通常は、現在のメッセージのメッセージストアプロバイダーの状態行を参照するか、ストアプロバイダーに照会して、メッセージストアを使用してクライアントアプリケーションが実行できるアクションを確認します。 たとえば、MAPI_DELETE_IS_MOVE フラグを返すかどうかを判断するには、メッセージストアオブジェクトの**PR_IPM_WASTEBASKET_ENTRYID** ([PidTagIpmWastebasketEntryId](pidtagipmwastebasketentryid-canonical-property.md)) プロパティを調べて、**削除済みアイテム**フォルダーがあるかどうかを確認します。メッセージストア。 
   
-フォームのサーバーに関連するインターフェイスの一覧は、 [MAPI フォームのインタ フェース](mapi-form-interfaces.md)を参照してください。
+フォームサーバーに関連するインターフェイスの一覧については、「 [MAPI フォームインターフェイス](mapi-form-interfaces.md)」を参照してください。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetSiteStatus  <br/> |MFCMAPI では、 **IMAPIMessageSite::GetSiteStatus**メソッドを使用して、指定したサイトのステータスを取得します。 それは、VCSTATUS_NEW_MESSAGE、VCSTATUS_SAVE、または VCSTATUS_SUBMIT を返すことができます。  <br/> |
+|MyMAPIFormViewer  <br/> |cmymapiformviewer:: getsitestatus  <br/> |mfcmapi は、 **IMAPIMessageSite:: getsitestatus**メソッドを使用して、指定されたサイトの状態を取得します。 VCSTATUS_NEW_MESSAGE、VCSTATUS_SAVE、または VCSTATUS_SUBMIT を返すことができます。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -106,5 +106,5 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
+[MAPI フォームインターフェイス](mapi-form-interfaces.md)
 

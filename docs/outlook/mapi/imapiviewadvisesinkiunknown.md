@@ -12,43 +12,43 @@ api_type:
 - COM
 ms.assetid: 1231391d-803a-4b41-b252-4d986f99361a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 157703fc9702bb954b4a5c570fc3d5c045e181cc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 70f61fe33baa7870a58c4cbc7d75e0df119b5b1a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351141"
 ---
 # <a name="imapiviewadvisesink--iunknown"></a>IMAPIViewAdviseSink : IUnknown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームからの通知を受信します。 
+フォームから通知を受信します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
-|によって公開されます。  <br/> |シンク オブジェクトをビューに伝えます。  <br/> |
-|によって実装されます。  <br/> |フォームの閲覧者  <br/> |
-|によって呼び出されます。  <br/> |フォーム オブジェクト  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IMAPIViewAdviseSink  <br/> |
-|ポインターの型。  <br/> |LPMAPIVIEWADVISESINK  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
+|公開者:  <br/> |アドバイズシンクオブジェクトの表示  <br/> |
+|実装元:  <br/> |フォームビューアー  <br/> |
+|呼び出し元:  <br/> |フォーム オブジェクト  <br/> |
+|インターフェイス識別子:  <br/> |IID_IMAPIViewAdviseSink  <br/> |
+|ポインターの種類:  <br/> |LPMAPIVIEWADVISESINK  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[に](imapiviewadvisesink-onshutdown.md) <br/> |フォーム ビューアーに、フォームが閉じられることを通知します。  <br/> |
-|[OnNewMessage](imapiviewadvisesink-onnewmessage.md) <br/> |新規または既存のメッセージのいずれかに読み込まれました、フォーム、フォームのビューアーを通知します。  <br/> |
-|[印刷時](imapiviewadvisesink-onprint.md) <br/> |フォーム ビューアーのフォームの印刷の状態を通知します。  <br/> |
-|[OnSubmitted](imapiviewadvisesink-onsubmitted.md) <br/> |フォーム ビューアーの現在のメッセージが MAPI スプーラーに送信されたことを通知します。  <br/> |
-|[OnSaved](imapiviewadvisesink-onsaved.md) <br/> |フォームの現在のメッセージが保存されているフォーム ビューアーを通知します。  <br/> |
+|[onshutdown](imapiviewadvisesink-onshutdown.md) <br/> |フォームが閉じられていることをフォームビューアーに通知します。  <br/> |
+|[onnewmessage](imapiviewadvisesink-onnewmessage.md) <br/> |フォームビューアーに、新規または既存のメッセージがフォームにロードされたことを通知します。  <br/> |
+|[OnPrint](imapiviewadvisesink-onprint.md) <br/> |フォームの印刷状態をフォームビューアーに通知します。  <br/> |
+|[onsubmitted](imapiviewadvisesink-onsubmitted.md) <br/> |現在のメッセージが MAPI スプーラーに送信されたことをフォームビューアーに通知します。  <br/> |
+|[onsaved](imapiviewadvisesink-onsaved.md) <br/> |フォームの現在のメッセージが保存されたことをフォームビューアーに通知します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
 

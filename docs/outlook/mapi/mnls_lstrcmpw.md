@@ -7,13 +7,13 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d26c59d7-c839-426f-8693-727fc6bef67e
-description: '最終更新日: 2012 年 6 月 18 日'
+description: '最終更新日: 2012 年6月18日'
 ms.openlocfilehash: 03b0eb794b07bc56ec6dce4a567d89294b2c908a
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356841"
 ---
 # <a name="mnlslstrcmpw"></a>MNLS_lstrcmpW
 
@@ -21,7 +21,7 @@ ms.locfileid: "25386349"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-2 つの Unicode 文字列を比較します。
+2つの Unicode 文字列を比較します。
   
 ```cpp
 int MNLS_lstrcmpW(
@@ -33,23 +33,23 @@ int MNLS_lstrcmpW(
 
  _lpString1_
   
-> [in]比較する最初の Unicode 文字列へのポインター。
+> 順番比較する最初の Unicode 文字列へのポインター。
     
  _lpString2_
   
-> [in]比較する 2 番目の Unicode 文字列へのポインター。
+> 順番比較する2番目の Unicode 文字列へのポインター。
     
 ## <a name="return-value"></a>戻り値
 
-CSTR_EQUAL を除く**MNLS_CompareStringW**に同等の呼び出しの値を返します。 
+CSTR_EQUAL 以外の**MNLS_CompareStringW**への同等の呼び出しについて記述されている値を返します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
- _MNLS_lstrcmpW_ GetUserDefaultLCID、フラグ、0 のロケールで[MNLS_CompareStringW](mnls_comparestringw.md)を呼び出すことによって比較を実行して cch1 と cch2 の場合は-1 です。 
+ _MNLS_lstrcmpW_は、getuserdefaultlcid のロケールで[MNLS_CompareStringW](mnls_comparestringw.md)を呼び出し、フラグに0、cch1 および cch2 に-1 を呼び出して比較を実行します。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[GetUserDefaultLCID](https://msdn.microsoft.com/library/dd318135%28VS.85%29.aspx)
+[getuserdefaultlcid](https://msdn.microsoft.com/library/dd318135%28VS.85%29.aspx)
 

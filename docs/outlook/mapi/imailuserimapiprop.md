@@ -1,5 +1,5 @@
 ---
-title: IMailUser IMAPIProp
+title: imailuser imapiprop
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,49 +12,49 @@ api_type:
 - COM
 ms.assetid: 74c25870-62d9-484a-9a99-4dc35c52479e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7a6971504ec8f4f5ac8593b6b78777a12ff92b3d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a0e109fe95120483e700bab5b82f6d7cb75e2e28
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351401"
 ---
 # <a name="imailuser--imapiprop"></a>IMailUser : IMAPIProp
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージング ユーザーに関連付けられている多くのプロパティへのアクセスを提供します。 **IMailUser**インターフェイスは、メッセージング ユーザーのオブジェクトによって実装されます。 **IMailUser**を継承、 [IMAPIProp: IUnknown](imapipropiunknown.md)インタ フェースし、独自の一意のメソッドがありません。 
+メッセージングユーザーに関連付けられている多くのプロパティへのアクセスを提供します。 **imailuser**インターフェイスは、メッセージングユーザーオブジェクトによって実装されます。 **imailuser**は、 [imapiprop: IUnknown](imapipropiunknown.md)インターフェイスから継承し、独自の独自のメソッドはありません。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|によって公開されます。  <br/> |メッセージングのユーザー オブジェクト  <br/> |
-|によって実装されます。  <br/> |アドレス帳プロバイダー  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーション  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IMailUser  <br/> |
-|ポインターの型。  <br/> |LPMAILUSER  <br/> |
-|トランザクション モデル:  <br/> |トランザクション処理  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|公開者:  <br/> |メッセージングユーザーオブジェクト  <br/> |
+|実装元:  <br/> |アドレス帳プロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
+|インターフェイス識別子:  <br/> |IID_IMailUser  <br/> |
+|ポインターの種類:  <br/> |lpmailuser  <br/> |
+|トランザクションモデル:  <br/> |一括  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
-このインターフェイスには、固有のメソッドがありません。
+このインターフェイスには一意のメソッドはありません。
   
 |**必須のプロパティ**|**Access**|
 |:-----|:-----|
-|**PR_ADDRTYPE**([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
-|**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
+|**PR_ADDRTYPE**([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
+|**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
 |**PR_DISPLAY_TYPE**([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_EMAIL_ADDRESS**([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
+|**PR_EMAIL_ADDRESS**([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
 |**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_SEARCH_KEY**([PidTagSearchKey](pidtagsearchkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-受信者のベース アドレス プロパティとして 5 つの必須プロパティの確認されています。
+必要なプロパティの5つは、受信者のベースアドレスプロパティと呼ばれます。
   
 - **PR_ADDRTYPE**
     
@@ -66,11 +66,11 @@ ms.locfileid: "22564564"
     
 - **PR_SEARCH_KEY**
     
-これらのプロパティは他の多くのようなプロパティのグループは、この基本のグループに基づいて構築するため、特別なと見なされます。 他のグループのさまざまな役割は、受信者を記述するなど、メッセージの元または送信者に委任されます。 これらのプロパティとその使用方法に関する詳細については、 [MAPI のアドレスの種類](mapi-address-types.md)を参照してください。
+これらのプロパティは、類似したプロパティの他の多くのグループがこの基本グループに基づいて構築されるため、特別なものと見なされます。 他のグループは、メッセージの元の送信者や代理人の送信者など、さまざまな役割で受信者を表すために使用されます。 これらのプロパティの詳細と使用方法については、「 [MAPI アドレスの種類](mapi-address-types.md)」を参照してください。
   
-メッセージング ユーザーは**PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) のプロパティをサポートすることにより、それらのプロパティのコレクションを表示できます。 **PR_DETAILS_TABLE**は、[詳細] ダイアログ ボックスまたは受信者のプロパティ情報を表示するタブ付きプロパティ ページのレイアウトを記述するディスプレイ テーブルです。 MAPI では、クライアントは、 [IAddrBook::Details](iaddrbook-details.md)メソッドを呼び出すと、詳細情報がダイアログ ボックスに作成されます。 
+メッセージングユーザーは、 **PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) プロパティをサポートすることによって、それらのプロパティのコレクションを表示できます。 **PR_DETAILS_TABLE**は、[詳細] ダイアログボックスのレイアウト、または受信者プロパティ情報を表示するタブ付きプロパティページを説明する表示テーブルです。 MAPI は、クライアントが[IAddrBook::D etails](iaddrbook-details.md)メソッドを呼び出すときに、詳細ダイアログボックスを作成します。 
   
-ユーザー オブジェクトをメッセージに関連するその他のオプションのプロパティを設定できます。 MAPI は、メッセージングのユーザーに関するその他のアドレス情報を提供する多くのプロパティを定義します。 すべてのこれらのプロパティは、文字の文字列です。 一般的に使用されるプロパティを次に示します。
+メッセージングユーザーオブジェクトには、その他のオプションプロパティを関連付けることができます。 MAPI は、メッセージングユーザーに関する追加のアドレス指定情報を提供する多くのプロパティを定義します。 これらのプロパティはすべて文字列です。 次のリストは、よく使用されるプロパティを示しています。
   
 - **PR_ACCOUNT**([PidTagAccount](pidtagaccount-canonical-property.md)) 
     
@@ -86,11 +86,11 @@ ms.locfileid: "22564564"
     
 - **PR_POSTAL_ADDRESS**([PidTagPostalAddress](pidtagpostaladdress-canonical-property.md)) 
     
-プロパティの一覧については、 [MAPI の名前を標準のプロパティ名のマッピング](mapping-canonical-property-names-to-mapi-names.md)を参照してください。
+プロパティの完全な一覧については、「[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
 

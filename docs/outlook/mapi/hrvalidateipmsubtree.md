@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 6454c1fa-5216-4934-a908-48c634ac4a07
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2625b148d15c2f5ccf65eedf3a1b1f2c9d0d133e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6cf51985e534434c584eff4d63dfbf239121ee85
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346768"
 ---
 # <a name="hrvalidateipmsubtree"></a>HrValidateIPMSubtree
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ ・ ストアには、標準的な個人間メッセージ (IPM) のフォルダーを追加します。 
+標準の個人間メッセージ (IPM) フォルダーをメッセージストアに追加します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーション  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
    
 ```cpp
 HrValidateIPMSubtree(
@@ -45,31 +45,31 @@ HrValidateIPMSubtree(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpMDB_
+ _lpmdb_
   
-> [in]メッセージへのポインターでは、フォルダーを追加するオブジェクトを格納します。 
+> 順番フォルダーを追加するメッセージストアオブジェクトへのポインター。 
     
  _ulFlags_
   
-> [in]フォルダーを作成する方法を制御するために使用するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番フォルダーの作成方法を制御するために使用されるフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_FORCE_CREATE 
   
-> フォルダーは、メッセージ ・ ストア ・ プロパティの指定が有効である場合でも、作成する前に確認する必要があります。 エラーは、既存のフォルダー構造が破損していることを示す場合、クライアント アプリケーションは通常このフラグを設定します。 
+> フォルダーは、メッセージストアのプロパティが有効であることを示している場合でも、作成前に確認する必要があります。 クライアントアプリケーションでは、通常、既存のフォルダーの構造が破損していることを示すエラーが発生すると、このフラグが設定されます。 
     
 MAPI_FULL_IPM_TREE 
   
-> IPM フォルダーの完全なセットは、メッセージ ストアのルート フォルダーに作成してください。 階層内のフォルダーのタイトルは次のとおりです。
+> メッセージストアのルートフォルダーに、IPM フォルダーの完全なセットを作成する必要があります。 階層内のフォルダーのタイトルは次のとおりです。
     
-    - フォルダー ビュー
+    - フォルダービュー
     
     - 共通ビュー
     
-    - ルートを検索します。\*
+    - 検索ルート\*
     
     - IPM サブツリー\*
     
-    - 受信トレイ
+    - Inbox
     
     - 送信トレイ
     
@@ -77,33 +77,33 @@ MAPI_FULL_IPM_TREE
     
     - 送信済みアイテム
     
-    3 つのフォルダーが付いて\*MAPI_FULL_IPM_TREE フラグが設定されていない場合でも作成される最小のセットです。 クライアント アプリケーションは、既定のストアでは、メッセージ ストアのフォルダーが作成されるときに通常このフラグを設定します。
+    MAPI_FULL_IPM_TREE フラグが設定され\*ていない場合でも、ここでマークされている3つのフォルダーは、最小セットとして設定されます。 通常、クライアントアプリケーションは、フォルダーを作成するメッセージストアが既定のストアである場合に、このフラグを設定します。
     
  _lpcValues_
   
-> [で [チェック アウト]_LppProps_パラメーターで返される配列内の[SPropValue](spropvalue.md)構造体の数へのポインター。 _LppProps_が NULL の場合、 _lpcValues_パラメーターの値は 0 にすることができます。 
+> [入力]_lppprops_パラメーターで返される配列内の[spropvalue](spropvalue.md)構造体の数へのポインター。 _lppprops_が NULL の場合、 _lpcValues_パラメーターの値は0になります。 
     
- _lppProps_
+ _lppprops_
   
-> [で [チェック アウト]**PR_VALID_FOLDER_MASK** ([PidTagValidFolderMask](pidtagvalidfoldermask-canonical-property.md)) は、適切なフォルダーのエントリの識別子のプロパティのプロパティ値を含む**SPropValue**構造体の配列へのポインターへのポインター。 **SPropValue**配列にはとしてコード化されたプロパティの特殊なタグで [受信トレイ] のエントリ id が含まれて**HrValidateIPMSubtree**は、メッセージ ・ ストアの受信トレイを作成する場合`PROP_TAG(PT_BINARY, PROP_ID_NULL)`。 _LppProps_のパラメーターには、呼び出し元の実装を**SPropValue**配列が返されることをする必要がないことを示す、NULL を指定できます。 
+> [入力]**PR_VALID_FOLDER_MASK** ([PidTagValidFolderMask](pidtagvalidfoldermask-canonical-property.md)) プロパティのプロパティ値と、適切なフォルダーエントリ識別子のプロパティを含む**spropvalue**構造体の配列へのポインターへのポインター。 **hrvalidateipmsubtree**がメッセージストア内に受信トレイを作成する場合、 **spropvalue**配列には、という`PROP_TAG(PT_BINARY, PROP_ID_NULL)`特殊なプロパティタグを持つ受信トレイエントリ識別子が含まれます。 _lppprops_パラメーターには NULL を指定できます。これは、呼び出し側の実装では、 **spropvalue**配列を返す必要がないことを示します。 
     
  _lppMapiError_
   
-> [out]エラーが発生するバージョン、コンポーネント、およびコンテキストの情報を格納する[MAPIERROR](mapierror.md)構造体へのポインターへのポインター。 **MAPIERROR**構造体が返されない場合、 _lppMAPIError_パラメーターは NULL に設定します。 
+> 読み上げエラーのバージョン、コンポーネント、およびコンテキスト情報を含む[MAPIERROR](mapierror.md)構造体へのポインターへのポインター。 **MAPIERROR**構造体が返されない場合、 _lppMAPIError_パラメーターは NULL に設定されます。 
     
 ## <a name="return-value"></a>Return value
 
 なし。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-MAPI は、ストアを最初に開いたとき、またはストアが既定の保存を行った場合、メッセージ ストア内の標準の IPM サブツリーを作成するのには内部的に**HrValidateIPMSubtree**関数を使用します。 この関数は、標準的なメッセージのフォルダーを修復または検証するクライアント アプリケーションによっても使用できます。 
+MAPI は、ストアが最初に開かれたとき、またはストアが既定のストアになったときに、メッセージストアの標準の IPM サブツリーを構築するために、 **hrvalidateipmsubtree**関数を内部で使用します。 この関数は、クライアントアプリケーションが標準的なメッセージフォルダーを検証または修復するために使用することもできます。 
   
- **HrValidateIPMSubtree**は常に、ストアのルート フォルダーと IPM サブツリー フォルダー内の削除済みアイテム フォルダーのルートを検索し、IPM サブツリー フォルダーを作成します。 IPM サブツリー フォルダーは、そのメッセージ ・ ストアに IPM の階層のルートです。 検索のルート フォルダーは、検索結果フォルダーのサブツリーのルートとして使用できます。 
+ **hrvalidateipmsubtree**は、常に、ストアのルートフォルダーおよび [削除済みアイテム] フォルダー内の [ipm サブツリー] フォルダーに、検索ルートと ipm サブツリーのフォルダーを作成します。 [ipm Subtree] サブツリーフォルダーは、そのメッセージストア内の ipm 階層のルートです。 検索ルートフォルダーは、検索結果フォルダーのサブツリーのルートとして使用できます。 
   
-IPM のクライアントでは、IPM サブツリーのルート フォルダーから開始し、子の下にあるフォルダーを表示、フォルダーのビューを表示する必要があります。 メッセージ ストアのルート フォルダー内の情報は、クライアントのユーザー インターフェイスに表示されません。 この機能は、クライアントには、情報が非表示にする必要がありますと、情報ことができますが配置される IPM サブツリーのルート ディレクトリに、ユーザーに表示されていないことを示します。 一方、IPM 以外のアプリケーション、サーバー ベースのメッセージ ・ ストアでは、ユーザーに表示するには、メッセージおよびフォルダーを必要とするまとめることができます IPM 階層に含まれない。 
+ipm クライアントは、ipm サブツリーのルートフォルダーからフォルダー表示を表示し、その下に子フォルダーを表示する必要があります。 メッセージストアのルートフォルダー内の情報は、クライアントのユーザーインターフェイスに表示されません。 この機能は、クライアントが情報を非表示にする必要がある場合に、その情報を IPM サブツリーのルートディレクトリに配置して、ユーザーには表示されないようにすることを意味します。 これに対して、サーバーベースのメッセージストアなど、メッセージやフォルダーをユーザーに対して非表示にする必要がある ipm 以外のアプリケーションは、それらを ipm 階層の外に置くことができます。 
   
- **HrValidateIPMSubtree**は、各 IPM フォルダーの作成が有効なエントリの識別子を持つかどうかを示すために**PR_VALID_FOLDER_MASK**プロパティを設定します。 メッセージ ・ ストアの次のエントリの識別子プロパティは対応するフォルダーのエントリ id を設定し、 **PR_VALID_FOLDER_MASK**および_lppProps_パラメーターに返されます。 
+ **hrvalidateipmsubtree**は、作成する各 IPM フォルダーに有効なエントリ識別子があるかどうかを示す**PR_VALID_FOLDER_MASK**プロパティを設定します。 メッセージストアの次のエントリ識別子のプロパティは、対応するフォルダーのエントリ識別子に設定され、 **PR_VALID_FOLDER_MASK**と共に_lppprops_パラメーターで返されます。 
   
  **PR_COMMON_VIEWS_ENTRYID**([PidTagCommonViewsEntryId](pidtagcommonviewsentryid-canonical-property.md))
   
@@ -119,15 +119,15 @@ IPM のクライアントでは、IPM サブツリーのルート フォルダ�
   
 > **PR_VIEWS_ENTRYID**([PidTagViewsEntryId](pidtagviewsentryid-canonical-property.md))
   
-> プレース ホルダー (PT_BINARY, PROP_ID_NULL)、IPM の受信トレイに[PROP_TAG](prop_tag.md) 。 
+> IPM 受信トレイのプレースホルダー [PROP_TAG](prop_tag.md) (PT_BINARY、PROP_ID_NULL)。 
     
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MstStoreDlg.cpp  <br/> |CMsgStoreDlg::OnValidateIPMSubtree  <br/> |MFCMAPI では、 **HrValidateIPMSubtree**メソッドを使用して、メッセージ ・ ストアに標準的なフォルダーを追加します。  <br/> |
+|MstStoreDlg  <br/> |CMsgStoreDlg:: onvalidateipmsubtree  <br/> |mfcmapi は、 **hrvalidateipmsubtree**メソッドを使用して、メッセージストアに標準フォルダーを追加します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

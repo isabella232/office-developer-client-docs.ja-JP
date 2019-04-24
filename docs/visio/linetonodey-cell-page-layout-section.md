@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 49d649e8-1603-192b-2984-e5d0b713da89
 description: 図面ページにあるすべてのコネクタと図形間の垂直方向のクリアランスを指定します。
-ms.openlocfilehash: bd5216a68abc4bcd8c3ef807b98280edb0ad29b9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2a5e4469fae2fb3142db2745f26c2009d42c0d2f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359186"
 ---
-# <a name="linetonodey-cell-page-layout-section"></a>[LineToNodeY] セル ([ページ レイアウト] セクション)
+# <a name="linetonodey-cell-page-layout-section"></a>[LineToNodeY] セル ([Page Layout] セクション)
 
 図面ページにあるすべてのコネクタと図形間の垂直方向のクリアランスを指定します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 このセルの値は、[**間隔と図形サイズの設定**] ダイアログ ボックスで設定することもできます (このダイアログ ボックスを開くには、[**デザイン**] タブで [**ページ設定**] 矢印をクリックし、[**レイアウトと経路**] をクリックして、[**間隔**] をクリックします)。
   
@@ -28,7 +28,7 @@ ms.locfileid: "19805717"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | LineToNodeY  <br/> |
+| セル名:  <br/> | [linetonodey]  <br/> |
    
 プログラムから、インデックスによって [LineToNodeY] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

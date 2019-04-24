@@ -8,43 +8,43 @@ f1_keywords:
 - Vis_DSS.chm1026937
 localization_priority: Normal
 ms.assetid: 27042b62-7623-95d7-7e10-f589d74605c7
-description: Y、X と Y セルによって定義された点を基準にして、操作タグ ボタンのオフセット。
-ms.openlocfilehash: 8f8323d1f392654bf118ece2f78890f2a1b860ec
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '[X] セルと [y] セルによって定義された点に対する、アクションタグボタンの y オフセット。'
+ms.openlocfilehash: d7a1f5c1feda3624c9f96039e7247c737a91a813
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357016"
 ---
-# <a name="y-justify-cell-action-tags-section"></a>[Y Justify] セル ([操作タグ] セクション)
+# <a name="y-justify-cell-action-tags-section"></a>[Y Justify] セル ([Action Tags] セクション)
 
-*Y* X と Y セルによって定義された点を基準にして、操作タグ ボタンのオフセット。 
+[X] セルと [y] セルによって定義された点に対する、アクションタグボタンの*y*オフセット。 
   
 > [!NOTE]
 > Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。 
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| 0  <br/> | 上揃えします (既定値)。  <br/> |**visSmartTagYJustifyTop** <br/> |
-| 1  <br/> | 中央揃え  <br/> |**visSmartTagYJustifyMiddle** <br/> |
-| 2  <br/> | 下揃えします。  <br/> |**visSmartTagYJustifyBottom** <br/> |
+| .0  <br/> | 上揃えします (既定値)。  <br/> |**visSmartTagYJustifyTop** <br/> |
+| 1-d  <br/> | 中央揃え  <br/> |**visSmartTagYJustifyMiddle** <br/> |
+| pbm-2  <br/> | 下揃えします。  <br/> |**visSmartTagYJustifyBottom** <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-X Justify] および [Y Justify] の各セルは、X と Y のセルで定義されているポイントを基準にして、操作タグ ボタンを配置する場所を決定します。
+[x justify] セルと [y justify] セルは、[x] セルと [y] セルで定義されている点に対して、アクションタグボタンが配置される場所を決定します。
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Y Justify] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | スマート タグです。  *名*です。YJustify、スマート タグです。 *タグのアクション行の名前します。*  <br/> |
+| セル名 :  <br/> | タグ.  *名前*です。SmartTags の位置を指定します。 *name*は、アクションタグ行の名前です。  <br/> |
    
 プログラムから、インデックスによって [Y Justify] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionSmartTag** <br/> |
-| 行インデックス:  <br/> |**visRowSmartTag** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+| 行インデックス:  <br/> |**visRowSmartTag** +  *i* = ** 0、1、2...  <br/> |
 | セル インデックス:  <br/> |**visSmartTagYJustify** <br/> |
    
 

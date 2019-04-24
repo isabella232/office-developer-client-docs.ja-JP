@@ -8,26 +8,26 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9b824e70-ed9a-490c-b777-8902a793fece
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4b05baf1f819a821da3496cc63c2b2980894efd7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b9a31fec93ec7fafc4d1565d63e4bc427ba4050e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32347832"
 ---
 # <a name="hrgetgalfromemsmdbuid"></a>HrGetGALFromEmsmdbUID
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-_PEmsmdbUID_によって識別される Exchange サービスのグローバル アドレス帳のエントリの識別子を返します。 返されるエントリの識別子は、 [MAPIFreeBuffer](mapifreebuffer.md)を使用して解放する必要があります。
+_pEmsmdbUID_によって識別される Exchange サービスのグローバルアドレス帳のエントリ id を返します。 返されたエントリ id は、 [MAPIFreeBuffer](mapifreebuffer.md)を使用して解放する必要があります。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |abhelp.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |abhelp .h  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 HRESULT HrGetGALFromEmsmdbUID(
@@ -41,24 +41,24 @@ HRESULT HrGetGALFromEmsmdbUID(
 
 ## <a name="parameters"></a>パラメーター
 
- _pSess_
+ _psess_
   
-> [in]IMAPISession にログオンします。 NULL にすることはできません。
+> 順番ログオンしている imapisession。 NULL にすることはできません。
     
  _pAddrBook_
   
-> [in]アドレス帳のエントリ id を開くために使用します。 NULL にすることはできません。
+> 順番エントリ識別子を開くために使用されるアドレス帳。 NULL にすることはできません。
     
  _pEmsmdbUID_
   
-> [in]取得する Exchange サービスのグローバル アドレス一覧を識別する**emsmdbUID**へのポインター。 _PEmsmdbUID_が NULL または UID が 0 の場合は、この関数は、レガシ Exchange サービスのグローバル アドレス一覧を取得します。 
+> 順番取得する Exchange サービスの GAL を識別する**emsmdbUID**へのポインター。 _pEmsmdbUID_が NULL またはゼロ UID の場合、この関数は、Exchange サービスの従来の GAL を取得します。 
     
  _lpcbeid_
   
-> [out]グローバル アドレス一覧のエントリの識別子のバイト数へのポインター。
+> 読み上げグローバルアドレス一覧のエントリ識別子のバイト数へのポインター。
     
  _lppeid_
   
-> [out]グローバル アドレス一覧のエントリの識別子へのポインター。 これは、 [MAPIFreeBuffer](mapifreebuffer.md)を使用して解放する必要があります。
+> 読み上げグローバルアドレス一覧のエントリ識別子へのポインター。 これは、 [MAPIFreeBuffer](mapifreebuffer.md)を使用して解放する必要があります。
     
 

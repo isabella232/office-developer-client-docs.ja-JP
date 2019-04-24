@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 28453d29-30c5-405b-84d2-5bb5f281756c
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 18bc41d9038113b5b813f1cfd02d90b8e982703c
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359775"
 ---
 # <a name="pidtagscheduleinfofreebusytentative-canonical-property"></a>PidTagScheduleInfoFreeBusyTentative 標準プロパティ
 
@@ -25,52 +25,52 @@ ms.locfileid: "25385117"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-空き/予約済み状態の仮の予定の時間のブロックが含まれています。
+空き時間情報の状態が [仮承諾] である時間のブロックが含まれています。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_SCHDINFO_FREEBUSY_TENTATIVE  <br/> |
 |識別子:  <br/> |0x6852  <br/> |
 |データの種類 :   <br/> |PT_MV_BINARY  <br/> |
-|エリア:  <br/> |空き/予約済み  <br/> |
+|エリア:  <br/> |空き時間情報  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティは、 **PR_SCHDINFO_MONTHS_TENTATIVE** ([PidTagScheduleInfoMonthsTentative](pidtagscheduleinfomonthstentative-canonical-property.md)) の値の数だけの値を持ちます。 各バイナリ値は、1 か月を表し、 **PR_SCHDINFO_MONTHS_TENTATIVE**で同じインデックス位置の値に対応します。 バイナリ値は、 **PR_SCHDINFO_MONTHS_TENTATIVE**の値と同じ順序に並べ替えられます。
+このプロパティの値の個数は、 **PR_SCHDINFO_MONTHS_TENTATIVE** ([PidTagScheduleInfoMonthsTentative](pidtagscheduleinfomonthstentative-canonical-property.md)) の値の数と同じです。 各バイナリ値は月を表し、 **PR_SCHDINFO_MONTHS_TENTATIVE**の同じインデックスの値に対応します。 バイナリ値は、 **PR_SCHDINFO_MONTHS_TENTATIVE**の値と同じ順序で並べ替えられます。
   
-バイナリの値ごとに 1 つまたは複数の 4 バイトのブロックと、それぞれは、最初の 2 バイトの開始時刻と終了時刻をリトル エンディアン形式で 2 番目の 2 バイトで含まれています。 開始時刻は、午前 0 時、月の最初の日の世界協定時刻 (UTC) と UTC でのイベントの開始時刻との間の分の数です。 終了時刻は、UTC、月の最初の日の午前 0 時と終了時刻 (utc) イベントの間隔を分単位の数です。 4 バイトのブロックは、昇順に並べ替えられます。
+各バイナリ値には、1つまたは複数の4バイトブロックがあり、それぞれの最初の2バイトの開始時刻と終了時刻はリトルエンディアン形式になっています。 start time は、月の最初の日のグリニッジ標準時 (utc) と、イベントの開始時刻 (utc) の間の時間 (分単位) です。 終了時刻は、月の最初の日の午前0時から utc の終了時刻までの時間を分単位で示します。 4バイトブロックは、昇順で並べ替えられます。
   
-連続または重複する時間帯は、ブロックの最初と最後のブロックの終了時刻と終了時刻の開始時刻と開始時刻を 1 つのブロックにマージされます。 イベントは、複数の月または年の間で分散が場合、は、イベントが 1 か月のいずれか、複数のブロックに分割されます。 公開の範囲内に仮の予定のイベントがない場合は、し、このプロパティは、 **PR_SCHDINFO_MONTHS_TENTATIVE**設定する必要がないまたは既に存在する場合に削除する必要があります。 それ以外の場合、このプロパティを設定する必要があります。 
+時間の連続または重複するブロックは、開始時間が最初のブロックの開始時刻と最後のブロックの終了時刻として、1つのブロックにマージされます。 イベントが複数の月または年にまたがっている場合、イベントは月ごとに1つずつ、複数のブロックに分割されます。 公開範囲に一時的なイベントがない場合は、このプロパティと**PR_SCHDINFO_MONTHS_TENTATIVE**を設定したり、既に存在する場合は削除したりする必要があります。 それ以外の場合は、このプロパティを設定する必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXOPFFB]](https://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
+[[OXOPFFB]](https://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
   
-> ユーザーまたはリソースの可用性を発行します。
+> ユーザーまたはリソースの空き時間情報を公開します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

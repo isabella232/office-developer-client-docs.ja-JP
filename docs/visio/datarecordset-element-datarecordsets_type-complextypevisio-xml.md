@@ -1,5 +1,5 @@
 ---
-title: データ レコード セットの要素 (DataRecordSets_Type complexType)'Visio XML (')
+title: DataRecordSet 要素 (DataRecordSets_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,13 +8,13 @@ localization_priority: Normal
 ms.assetid: aa182f04-0899-ee0e-79e1-b74832933e83
 description: Microsoft Visio のデータベースからクエリされたデータを格納、書式設定、更新、および公開します。
 ms.openlocfilehash: e2baaeed38318f35d4bd4ce4269f71b6304b148f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25387287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360369"
 ---
-# <a name="datarecordset-element-datarecordsetstype-complextype-visio-xml"></a>データ レコード セットの要素 (DataRecordSets_Type complexType)'Visio XML (')
+# <a name="datarecordset-element-datarecordsetstype-complextype-visio-xml"></a>DataRecordSet 要素 (DataRecordSets_Type complexType) (' Visio XML ')
 
 Microsoft Visio のデータベースからクエリされたデータを格納、書式設定、更新、および公開します。
   
@@ -23,9 +23,9 @@ Microsoft Visio のデータベースからクエリされたデータを格納�
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[DataRecordSet_Type](datarecordset_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
-|**文書パーツ** <br/> |recordsets.xml  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
+|**文書パーツ** <br/> |recordsets  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -36,42 +36,42 @@ Microsoft Visio のデータベースからクエリされたデータを格納�
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。 
+スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[DataRecordSets](datarecordsets-elementvisio-xml.md) <br/> |[DataRecordSets_Type](datarecordsets_type-complextypevisio-xml.md) <br/> |ドキュメント内にある**データ レコード セット**のすべての要素が含まれています。  <br/> |
+|[DataRecordSets](datarecordsets-elementvisio-xml.md) <br/> |[DataRecordSets_Type](datarecordsets_type-complextypevisio-xml.md) <br/> |文書内のすべての**DataRecordset**要素が含まれています。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**型**|**説明**|
+|**Element**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[ADOData](autolinkcomparison-element-datarecordset_type-complextypevisio-xml.md) <br/> |[ADOData_Type](autolinkcomparison_type-complextypevisio-xml.md) <br/> |ADO レコード セットの ADO 標準 XML スキーマに適合して、データ レコード セット内のデータを説明する、XML が含まれています。  <br/> |
-|[AutoLinkComparison](autolinkcomparison-element-datarecordset_type-complextypevisio-xml.md) <br/> |[AutoLinkComparison_Type](autolinkcomparison_type-complextypevisio-xml.md) <br/> |前回成功した自動リンクで実行されたアクション ユーザー インターフェイスからの図形データ項目の親**データ レコード セット**の要素内の列を比較するルールを定義します。  <br/> |
-|[DataColumn](datacolumns-element-datarecordset_type-complextypevisio-xml.md) <br/> |[DataColumns_Type](datacolumns_type-complextypevisio-xml.md) <br/> |データ列が Visio ユーザー インターフェイスの [**外部データ**] ウィンドウで表示する方法を定義し、そのデータ型を定義して、書式設定、列のデータが適用されます。  <br/> |
-|[Datacolumn](datacolumns-element-datarecordset_type-complextypevisio-xml.md) <br/> |[DataColumns_Type](datacolumns_type-complextypevisio-xml.md) <br/> |データ レコード セット内のすべての**列**要素が含まれています。  <br/> |
-|[主キー](primarykey-element-datarecordset_type-complextypevisio-xml.md) <br/> |[PrimaryKey_Type](primarykey_type-complextypevisio-xml.md) <br/> |データ レコード セット内の 1 つまたは複数の主キー列を識別します。  <br/> |
-|[RefreshConflict](refreshconflict-element-datarecordset_type-complextypevisio-xml.md) <br/> |[RefreshConflict_Type](refreshconflict_type-complextypevisio-xml.md) <br/> |データ レコード セットが更新された後に、競合がある図形にリンクされているデータ レコード セット内の行を示します。  <br/> |
-|[RowMap](rowmap-element-datarecordset_type-complextypevisio-xml.md) <br/> |[RowMap_Type](rowmap_type-complextypevisio-xml.md) <br/> |レコード セットのデータ行を図形にマップします。  <br/> |
+|[ADOData](autolinkcomparison-element-datarecordset_type-complextypevisio-xml.md) <br/> |[ADOData_Type](autolinkcomparison_type-complextypevisio-xml.md) <br/> |ado の従来の xml スキーマに準拠し、データレコードセットのデータを記述する xml が保存されています。  <br/> |
+|[AutoLinkComparison](autolinkcomparison-element-datarecordset_type-complextypevisio-xml.md) <br/> |[AutoLinkComparison_Type](autolinkcomparison_type-complextypevisio-xml.md) <br/> |ユーザーインターフェイスで実行された前回正常に完了した自動リンクアクションの図形データ項目と親**DataRecordset**要素の列を比較するルールを定義します。  <br/> |
+|[DataColumn](datacolumns-element-datarecordset_type-complextypevisio-xml.md) <br/> |[DataColumns_Type](datacolumns_type-complextypevisio-xml.md) <br/> |Visio ユーザーインターフェイスの [**外部データ**] ウィンドウにデータ列を表示する方法を定義し、データの種類と書式を定義することによって、列のデータを修飾します。  <br/> |
+|[DataColumns](datacolumns-element-datarecordset_type-complextypevisio-xml.md) <br/> |[DataColumns_Type](datacolumns_type-complextypevisio-xml.md) <br/> |データレコードセット内のすべての**DataColumn**要素を含みます。  <br/> |
+|[PrimaryKey](primarykey-element-datarecordset_type-complextypevisio-xml.md) <br/> |[PrimaryKey_Type](primarykey_type-complextypevisio-xml.md) <br/> |データレコードセット内の1つまたは複数の主キー列を指定します。  <br/> |
+|[refreshconflict](refreshconflict-element-datarecordset_type-complextypevisio-xml.md) <br/> |[RefreshConflict_Type](refreshconflict_type-complextypevisio-xml.md) <br/> |データレコードセットの更新後に競合している図形にリンクされているデータレコードセット内の行を示します。  <br/> |
+|[rowmap](rowmap-element-datarecordset_type-complextypevisio-xml.md) <br/> |[RowMap_Type](rowmap_type-complextypevisio-xml.md) <br/> |データレコードセットの行を図形にマップします。  <br/> |
    
 ### <a name="attributes"></a>属性
 
-|**属性**|**型**|**必須**|**説明**|**使用可能な値**|
+|**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|チェックサム  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |チェックサムの値は、Visio によって生成され、データ レコード セットのプロパティに基づきます。 この attirbute を 0 に設定します。Visio には、実行時にこの値が再計算されます。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|コマンド  <br/> |xsd:string  <br/> |省略可能  <br/> |コマンド文字列は、データ ソースからデータのクエリを使用します。  <br/> |Xsd:string の値を入力します。  <br/> |
-|接続 Id  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |関連付けられた**DataConnection**オブジェクトの接続の ID です。 XML データ ソースが存在しません。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|ID  <br/> |xsd:unsignedInt  <br/> |必須  <br/> |データ レコード セット ID、ドキュメント内で一意です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|名前  <br/> |xsd:string  <br/> |省略可能  <br/> |表示、わかりやすい) データ レコード セットの名前です。  <br/> |Xsd:string の値を入力します。  <br/> |
-|NextRowID  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |次利用可能な Visio の行 id。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|選択肢  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |データ レコード セットに適用するオプションです。 使用可能な値は、次の表に示すようにそれらの 1 つ以上の任意の組み合わせにできます。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|間隔  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |頻度 (分単位) では、Visio は、データ レコード セットを自動的に更新します。 この値は、1 以上にする必要があります。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|RefreshNoReconciliationUI  <br/> |xsd:boolean  <br/> |省略可能  <br/> |かどうかデータ調整のユーザー インターフェイスを無効にする必要があります。 True (1 を) では、ユーザー インターフェイス (UI) を無効にします。 UI を有効にするのには false (0) にします。  <br/> |Xsd:boolean の値を入力します。  <br/> |
-|RefreshOverwriteAll  <br/> |xsd:boolean  <br/> |省略可能  <br/> |図形に図形データ項目へのユーザーの変更を上書きするかどうかにより、データ レコード セットが更新されたとき、データにリンクされています。  <br/> |Xsd:boolean の値を入力します。  <br/> |
-|ReplaceLinks  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |図形をコピーまたはカットするときに図形データのリンクを処理する方法を定義します。 接続先の図形内の既存のリンクを置換するのには 1 です。 接続先の図形内の既存のリンクを維持するために 0 を返します。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|RowOrder  <br/> |xsd:boolean  <br/> |省略可能  <br/> |主キーとしてデータ レコード セット内の行の順序を使用するかどうか。 行 Id は、行の順序によって決定する場合は true (1)。 False (0) 場合は、行 Id は、データ レコード セットの主キー列の値によって決定されます。  <br/> |Xsd:boolean の値を入力します。  <br/> |
-|TimeRefreshed  <br/> |xsd:dateTime  <br/> |省略可能  <br/> |日付と時刻のデータ レコード セットが最後に更新します。  <br/> |Xsd:dateTime の値を入力します。  <br/> |
+|チェックサム  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |Visio によって生成される、データレコードセットのプロパティに基づいたチェックサム値。 この attirbute を0に設定します。Visio は、この値を実行時に再計算します。  <br/> |xsd:/signedint 型の値。  <br/> |
+|Command  <br/> |xsd: string  <br/> |省略可能  <br/> |データソースからのデータのクエリに使用されるコマンド文字列。  <br/> |xsd: string 型の値。  <br/> |
+|ConnectionID  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |関連付けられている**DataConnection**オブジェクトの接続 ID。 XML データソースには存在しません。  <br/> |xsd:/signedint 型の値。  <br/> |
+|ID  <br/> |xsd: アン signedint  <br/> |必須  <br/> |データレコードセットの ID。ドキュメント内で一意です。  <br/> |xsd:/signedint 型の値。  <br/> |
+|名前  <br/> |xsd: string  <br/> |省略可能  <br/> |データレコードセットの表示名 (フレンドリ名) を指定します。  <br/> |xsd: string 型の値。  <br/> |
+|nextrowid  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |次に使用可能な Visio の行 ID。  <br/> |xsd:/signedint 型の値。  <br/> |
+|Options  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |データレコードセットに適用するオプション。 指定できる値は、次の表に示す1つ以上の値の組み合わせです。  <br/> |xsd:/signedint 型の値。  <br/> |
+|RefreshInterval  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |Visio がデータレコードセットを自動的に更新する頻度 (分単位)。 この値は、1以上である必要があります。  <br/> |xsd:/signedint 型の値。  <br/> |
+|RefreshNoReconciliationUI  <br/> |xsd: boolean  <br/> |省略可能  <br/> |データ調整のユーザーインターフェイスを無効にする必要があるかどうか。 ユーザーインターフェイス (UI) を無効にする場合は True (1)。 False (0) UI を有効にします。  <br/> |xsd: boolean 型の値。  <br/> |
+|RefreshOverwriteAll  <br/> |xsd: boolean  <br/> |省略可能  <br/> |データレコードセットが更新されたときに、データにリンクされている図形の図形データ項目に対するユーザーの変更を上書きするかどうかを指定します。  <br/> |xsd: boolean 型の値。  <br/> |
+|ReplaceLinks  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |図形をコピーまたは切り取るときの、図形データのリンクの処理方法を定義します。 ターゲット図形の既存のリンクを置き換える場合は、1を入力します。 ターゲット図形の既存のリンクを維持する場合は0。  <br/> |xsd:/signedint 型の値。  <br/> |
+|RowOrder  <br/> |xsd: boolean  <br/> |省略可能  <br/> |データレコードセット内の行の順序を主キーとして使用するかどうかを指定します。 行 id が行の順序によって決まる場合は、True (1) を指定します。 False (0) 行 id がデータレコードセットの主キー列 (複数可) の値で決定されている場合です。  <br/> |xsd: boolean 型の値。  <br/> |
+|TimeRefreshed  <br/> |xsd: dateTime  <br/> |省略可能  <br/> |データレコードセットが最後に更新された日付と時刻。  <br/> |xsd: dateTime 型の値。  <br/> |
    
 

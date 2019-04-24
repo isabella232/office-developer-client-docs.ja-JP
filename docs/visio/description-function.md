@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: ecc79998-b207-edb0-cbcb-2b91e3ff825f
 description: ドキュメントのプロパティの [説明] フィールドからテキストを返します。
-ms.openlocfilehash: 53c06d7bad3d52f6205b0c78abc2a20f0cac4dd2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6d172680e50714bbc2493ae527df918f80498cef
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360215"
 ---
 # <a name="description-function"></a>DESCRIPTION 関数
 

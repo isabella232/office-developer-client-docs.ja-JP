@@ -8,28 +8,28 @@ api_type:
 - COM
 ms.assetid: da5f080d-4397-4ce6-8561-73dd13445e77
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 52aebb53f2bc0e5af72f2da47b91ba2806d7f709
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0b7ffe07278cfcbba95351f2720e427dd8500221
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350618"
 ---
 # <a name="supporting-forms-and-views-in-read-only-message-stores"></a>�ǂݎ���p�̃��b�Z�[�W �X�g�A�ł̃t�H�[���ƃr���[�̃T�|�[�g
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ ストア プロバイダーは、基になるストレージ機構に読み取り専用のアクセス許可を許可している場合クライアント アプリケーションと MAPI フォーム マネージャーができないことを行います。 具体的には、クライアントを追加またはユーザー設定のビューを変更することはできませんし、MAPI フォームのマネージャーがストアのフォルダーの内容が関連付けられているテーブルにフォームをインストールすることができません。
+If your message store provider allows read-only permission to the underlying storage mechanism, client applications and the MAPI form manager will be unable to do certain things. Specifically, clients will be unable to add or modify custom views, and the MAPI form manager will be unable to install forms in the associated contents tables of the store's folders.
   
-多く読み取り専用のメッセージ ストアは、問題ができない可能性があります。 場合は、メッセージ ストア プロバイダーはすべての関連する内容のテーブルをサポートする必要はありません。 ただし場合は、メッセージ ストア プロバイダーが読み取り専用にする必要があり、ビューまたはフォームの定義済みセットもサポートする必要があります、関連付けられている内容のテーブルをサポートするために、必要があります。
+For many read-only message stores, that may not be a problem. If that is the case, the message store provider does not need to support associated contents tables at all. However, if your message store provider must be read-only and it must also support a predefined set of views or forms, it will need to support associated contents tables.
   
-最も一般的な戦略のため、これをクライアントと、MAPI フォーム マネージャーには、ビューをインストールできない、またはメッセージにフォームを保存は、メッセージ ストア プロバイダーをハード コーディングするのにメッセージ ・ ストアです。 これは、作成時にメッセージ ・ ストアの存在は内容の関連するテーブルまたはテーブル ビューまたはフォームに含まれていることは、前に、すべてのクライアントまたは MAPI フォーム マネージャーがアクセスを意味します。 次に、フォームからユーザー設定のビューを取得するのには、関連付けられている内容のテーブルを要求するクライアントまたは MAPI フォームのマネージャーは、フォームを起動するのには、関連付けられている内容のテーブルを要求、ときに、メッセージ ストア プロバイダーはいずれかのデータを提供できます。 
+The most common strategy for doing this, because clients and the MAPI form manager cannot install the views or forms into the message store themselves, is for the message store provider to hard-code them into the message store. This means that the associated contents table or tables that contain the views or forms will exist in the message store when it is created, before any clients or the MAPI form manager ever access it. Then, when a client requests an associated contents table to get custom views from a form or the MAPI form manager requests an associated contents table to launch a form, the message store provider can provide one. 
   
-内容を関連するテーブルの作成およびメッセージ ストア自体を作成する場合に、この要件が示すように、メッセージ ストア プロバイダーは、そのクライアントと、MAPI フォームに特別なメッセージの形式に関する情報を取得する必要マネージャーは、ビューとフォームの格納に使用します。 なファイル形式とは、クライアントと異なります MAPI フォーム マネージャーを使用しているので、それらの説明をここで提供することはできません。
+This requirement that the associated contents tables be created and populated when the message store itself is created implies that your message store provider will need to obtain information about the format of the special messages that clients and the MAPI form manager use to store views and forms. What those formats are will depend on the client and MAPI form manager being used, so a description of them cannot be provided here.
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 

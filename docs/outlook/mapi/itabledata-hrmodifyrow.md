@@ -1,5 +1,5 @@
 ---
-title: ITableDataHrModifyRow
+title: itabledatahrmodifyrow
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9e255b3e-dd17-4528-ba4e-c3a1aef32b04
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5ef210aedc884e5c09eca6335199e2ef284b901c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 44ecf095ad24dd266dc5f603ace9c7b9f21c1b41
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348665"
 ---
 # <a name="itabledatahrmodifyrow"></a>ITableData::HrModifyRow
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-既存の行が上書きされる、テーブルの新しい行を挿入します。
+既存の行を置き換える可能性がある新しいテーブル行を挿入します。
   
 ```cpp
 HRESULT HrModifyRow(
@@ -35,29 +35,29 @@ HRESULT HrModifyRow(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpSRow_
+ _lpsrow_
   
-> [in]行を追加する既存の行を置換するかを説明する[SRow](srow.md)構造体へのポインター。 CreateTable の[への呼び出し内の_ulPropTagIndexColumn_パラメーターで指定された値と同じ値であるインデックス列が含まれている必要があります、 **lpProps** 、 **SRow**構造体のメンバーで指定されたプロパティ値の構造体のいずれか](createtable.md)関数です。 
+> 順番追加する行を記述する[srow](srow.md)構造体へのポインター、または既存の行を置換するためのポインター。 **srow**構造の**lpprops**メンバーによって参照されるプロパティ値構造の1つに、インデックス列、CreateTable への呼び出しで_ulPropTagIndexColumn_パラメーターで指定したものと同じ値が含まれている必要があります。 [](createtable.md)関数。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 行を挿入または変更に成功しました。
+> 行が正常に挿入または変更されました。
     
 MAPI_E_INVALID_PARAMETER 
   
-> 渡された行には、インデックス列がありません。
+> 渡された行にインデックス列がありません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**ITableData::HrModifyRow**メソッドは、 _lpSRow_パラメーターが指す**SRow**の構造体によって記述された行を挿入します。 テーブル内に既に存在する場合は、その_lpSRow_ポイントの行とそのインデックス列に対して同じ値を持つ行を既存の行が置き換えられます。 行が存在しない場合、 **SRow**構造体に含まれる 1 つに一致する、 **HrModifyRow**は、テーブルの末尾に行を追加します。 
+**itabledata:: hrmodifyrow**メソッドは、 _lpsrow_パラメーターで指定された**srow**構造によって示される行を挿入します。 テーブル内に既に存在する_lpsrow_と同じ値のインデックス列の行がある場合、既存の行は置き換えられます。 **srow**構造に含まれるものと一致する行が存在しない場合、 **hrmodifyrow**はテーブルの末尾に行を追加します。 
   
-テーブルのすべてのビューは、 _lpSRow_で指定された行を含むように変更されます。 ただし場合は、ビューでは、行が除外されるように制限がある、ある可能性がありますいないユーザーに表示します。 
+テーブルのすべてのビューが変更され、 _lpsrow_によって示される行が含まれるようになります。 ただし、その行を除外する制限がビューにある場合は、ユーザーに表示されないことがあります。 
   
-_LpSRow_で指定された行の列をテーブル内の列と同じ順序にする必要はありません。 呼び出し元は、現在のテーブルに存在しない列のプロパティとしても指定できます。 既存のビューの**HrModifyRow**これらの新しい列を使用できるようですが、現在の列セットには含まれません。 将来のビューでは、 **HrModifyRow**には、列セットの新しい列が含まれます。 
+_lpsrow_によって参照される行の列は、テーブル内の列と同じ順序である必要はありません。 また、呼び出し元には、現在テーブルにない列のプロパティを含めることもできます。 既存のビューの場合、 **hrmodifyrow**によって、これらの新しい列が使用可能になりますが、現在の列のセットには含まれません。 今後のビューの場合、 **hrmodifyrow**には列セットの新しい列が含まれます。 
   
-**HrModifyRow**は、行を追加した後にすべてのクライアントまたはサービス プロバイダーのテーブルのビューがあるし、の通知を登録するテーブルの[IMAPITable::Advise](imapitable-advise.md)メソッドを呼び出すことが通知が送信されます。 
+**hrmodifyrow**が行を追加すると、テーブルのビューを持つすべてのクライアントまたはサービスプロバイダーに通知が送信され、通知を登録するためにテーブルの[IMAPITable:: Advise](imapitable-advise.md)メソッドを呼び出します。 
   
 ## <a name="see-also"></a>関連項目
 

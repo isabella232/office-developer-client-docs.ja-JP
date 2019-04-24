@@ -9,21 +9,21 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: ed47c690-f874-498c-1fbc-61fc49309ea5
 description: ページ上にあるすべての図形間の間隔やコネクタ間の間隔、およびすべてのコネクタに対する迂回方法など、図形とコネクタに関するページ設定を制御するセルを格納します。
-ms.openlocfilehash: 34c468bf14a57200e6d29020b2fbf3b4ca4f6abe
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b9b3640bd91068a150267a069ef1889a05dc2263
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359277"
 ---
-# <a name="page-layout-section"></a>[ページ レイアウト] セクション
+# <a name="page-layout-section"></a>[Page Layout] セクション
 
 ページ上にあるすべての図形間の間隔やコネクタ間の間隔、およびすべてのコネクタに対する迂回方法など、図形とコネクタに関するページ設定を制御するセルを格納します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-特定の図形に対するページの既定値を無効にするには、**図形のレイアウト**] セクションでセルを使用します。 
+特定の図形のページの既定値を上書きするには、[**図形レイアウト**] セクションのセルを使用します。 
   
-**[ページ設定**] ダイアログ ボックスで、[**レイアウトと経路**] タブで、このセクションのセルの値を設定することも ([**デザイン**] タブをクリックして [**ページ設定**] ダイアログ ボックス起動ツール)。 
+このセクションのセルの値は、[**ページ設定**] ダイアログボックスの [**レイアウトと経路**] タブで設定することもできます ([**デザイン**] タブで、[**ページ設定**] グループのダイアログボックス起動ツールをクリックします)。 
   
 

@@ -6,16 +6,16 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: abd175af-ad4e-b84a-2687-2c9358653499
-ms.openlocfilehash: 95633ab7a4127564fef65062bcf328d4364ebd86
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3daeb4704a33ba836cf82c9ab3517c6ca6be8db7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19805768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359592"
 ---
-# <a name="lockfromgroupformat-cell-protection-section"></a>[LockFromGroupFormat] セル ([保護] セクション)
+# <a name="lockfromgroupformat-cell-protection-section"></a>[LockFromGroupFormat] セル ([Protection] セクション)
 
-フォーマットを変更してグループ図形を直接選択したサブ図形の書式を設定するユーザーを許可する一方、サブ図形に反映されません。 
+グループ図形の書式設定の変更がサブ図形に反映されないようにしながら、選択したサブ図形の書式を直接設定できるようにします。 
   
 [LockFromGroupFormat] セルの値は、[**保護**] ダイアログ ボックスにある [**グループ書式設定を適用不可にする**] チェック ボックスの設定に対応します。 
   
@@ -25,11 +25,9 @@ ms.locfileid: "19805768"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |LockFromGroupFormat  <br/> |
+|セル名:  <br/> |[lockfromgroupformat]  <br/> |
    
-プログラムから、インデックスによって [LockFromGroupFormat] セルを参照するには、**CellsSRC** プロパティを使用し、次の引数を指定します。
-
- 
+プログラムから、インデックスによって [LockFromGroupFormat] セルを参照するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

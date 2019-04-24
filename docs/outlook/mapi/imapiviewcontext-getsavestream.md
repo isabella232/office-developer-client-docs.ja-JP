@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8316bfa1-3077-401f-aa1e-e9492aca12a8
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 47ea122fce7969b326dbd48f875696b91de464f5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 68eb74f53d6cee4661c98604ec2ea37609e20ab5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351129"
 ---
 # <a name="imapiviewcontextgetsavestream"></a>IMAPIViewContext::GetSaveStream
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 現在のメッセージを保存するために使用するストリームを取得します。
   
@@ -37,43 +37,43 @@ LPSTREAM FAR * ppstm
 
 ## <a name="parameters"></a>パラメーター
 
- _pulFlags_
+ _/フラグ_
   
-> [out]メッセージ テキストを保存する方法を制御するフラグのビットマスクへのポインター。 次のフラグを設定することができます。
+> 読み上げメッセージテキストの保存方法を制御するフラグのビットマスクへのポインター。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> メッセージ文字列は、Unicode 形式で保存されます。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式のテキストが保存されます。
+> メッセージテキストは、Unicode 形式で保存されます。 MAPI_UNICODE フラグが設定されていない場合、テキストは ANSI 形式で保存されます。
     
- _pulFormat_
+ _指定形式_
   
-> [out]保存したテキストの書式を制御するフラグのビットマスクへのポインター。 次のフラグを設定することができます。
+> 読み上げ保存されたテキストの形式を制御するフラグのビットマスクへのポインター。 次のフラグを設定できます。
     
 SAVE_FORMAT_RICHTEXT 
   
-> メッセージのテキストは、書式設定されたテキストで、リッチ テキスト形式式 (RTF) として保存するのには。 
+> メッセージテキストは、リッチテキスト形式 (RTF) で書式設定されたテキストとして保存されます。 
     
 SAVE_FORMAT_TEXT 
   
-> メッセージのテキストは、プレーン テキストとして保存するのには。 
+> メッセージテキストは、プレーンテキストとして保存されます。 
     
  _ppstm_
   
-> [out]保存されたメッセージを格納するストリームへのポインターへのポインター。
+> 読み上げ保存されたメッセージを格納するストリームへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> ストリームが正常に取得しました。
+> ストリームが正常に取得されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-フォーム オブジェクトは、ストリーム形式のビューアーで、名前を付けて動詞の処理をサポートするために**IStream**インターフェイスを実装するオブジェクトを取得する**IMAPIViewContext::GetSaveStream**メソッドを呼び出します。 メッセージが完全に適切な文字列形式に変換し、適切なストリームに配置されるまで、 [IMAPIForm::DoVerb](imapiform-doverb.md)メソッドは、フォームのサーバーに実装されているし、動詞を呼び出すフォーム ビューアーによって呼び出されます、する必要があります返されません。 
+form オブジェクトは、 **imapiviewcontext:: GetSaveStream**メソッドを呼び出して、フォームビューアーでの [名前を付けて保存の操作をサポートする**IStream**インターフェイスを実装するオブジェクトをストリームを取得します。 [imapiform::D overb](imapiform-doverb.md)メソッドは、フォームサーバーに実装され、動詞を呼び出すためにフォームビューアーによって呼び出されます。メッセージが完全に適切なテキスト形式に変換され、適切なストリームに配置されるまで、戻りません。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**GetSaveStream**を呼び出す前に_ppstm_で指定されたストリームに書き込みます。 **GetSaveStream**が返されるときは、シーク ポインターの位置はリセットされません。 このポインターは必要があります保存されているメッセージのテキストの最後に残ります。 
+**GetSaveStream**を呼び出す前に、 _ppstm_が指すストリームに書き込みを行わないでください。 **GetSaveStream**が返された場合、シークポインターの位置をリセットしません。 このポインターは、保存されたメッセージテキストの末尾に置いておく必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

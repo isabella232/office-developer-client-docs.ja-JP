@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 33d70748-0d3f-4be4-bcb5-7ec048887944
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 640923511241b08e5a86e9733aab5cc2e9237c23
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2a2439bae79b497f018391983e2c4b03a35eee70
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348791"
 ---
 # <a name="imsgstorecompareentryids"></a>IMsgStore::CompareEntryIDs
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ ストアの同じエントリを参照しているかどうかを決定する 2 つのエントリ id を比較します。 MAPI は、両方のエントリの識別子を比較するには、一意の識別子 (Uid) がそのプロバイダーによって処理される場合にのみ、サービス ・ プロバイダーへの呼び出しを渡します。
+2つのエントリ識別子を比較して、メッセージストア内の同じエントリを参照しているかどうかを判断します。 MAPI は、両方のエントリ識別子の一意識別子 (uid) がそのプロバイダーによって処理される場合にのみ、この呼び出しをサービスプロバイダーに渡します。
   
 ```cpp
 HRESULT CompareEntryIDs(
@@ -42,55 +42,55 @@ HRESULT CompareEntryIDs(
 
  _cbEntryID1_
   
-> [in]_._ _LpEntryID1_パラメーターで指定されたエントリの識別子のバイト数
+> 順番_lpEntryID1_パラメーターによって指定されたエントリ識別子のバイト数 _。_
     
  _lpEntryID1_
   
-> [in]比較する最初のエントリの識別子へのポインター。
+> 順番比較する最初のエントリ識別子へのポインター。
     
  _cbEntryID2_
   
-> [in]_._ _LpEntryID2_パラメーターで指定されたエントリの識別子のバイト数
+> 順番_lpEntryID2_パラメーターによって指定されたエントリ識別子のバイト数 _。_
     
  _lpEntryID2_
   
-> [in]比較する 2 番目のエントリの識別子へのポインター。
+> 順番比較する2番目のエントリ id へのポインター。
     
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lpulResult_
+ _lルー result_
   
-> [out]比較の結果へのポインター。 2 つのエントリの識別子が同じオブジェクトを参照する場合は TRUE。それ以外の場合、FALSE です。
+> 読み上げ比較結果へのポインター。 2つのエントリ識別子が同じオブジェクトを参照している場合は TRUE。それ以外の場合は FALSE。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 比較は正常に終了しました。
+> 比較に成功しました。
     
 MAPI_E_UNKNOWN_ENTRYID 
   
-> 一方または両方のパラメーターを参照しないオブジェクトでは、場合によって対応するオブジェクトが開かれていないとには利用できませんので、指定されたエントリの識別子が表示されます。
+> パラメーターとして指定されたいずれかまたは両方のエントリ識別子がオブジェクトを参照していない可能性があります。対応するオブジェクトは未開封であり、現在は使用できないためです。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMsgStore::CompareEntryIDs**メソッドは、同じオブジェクトを参照しているかどうかを確認するメッセージ ・ ストアに属する 2 つのエントリ id を比較します。 
+**IMsgStore:: compareentryids**メソッドは、メッセージストアに属する2つのエントリ識別子を比較して、同じオブジェクトを参照しているかどうかを判断します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
- **CompareEntryIDs**は、オブジェクト (たとえば、メッセージ ストア プロバイダーの新しいバージョンをインストールした後) の 2 つ以上の有効なエントリ id を持つことができますので便利です。 
+ **compareentryids**は、1つのオブジェクトが複数の有効なエントリ識別子を持つことができるので便利です (たとえば、新しいバージョンのメッセージストアプロバイダーがインストールされた後)。 
   
-**CompareEntryIDs**がエラーを返した場合は、比較の結果に基づいてアクションになりません。 代わりにかかる可能性のある最も保守的なアプローチをします。 **CompareEntryIDs**は、一方または両方のエントリの識別子で、無効な**MAPIUID**が含まれているなどの場合に失敗する可能性があります。 
+**compareentryids**がエラーを返す場合は、比較の結果に基づいてアクションを実行しないでください。 その代わりに、可能な限り最も厳しい方法を採用します。 たとえば、エントリ識別子の一方または両方に無効な**MAPIUID**が含まれている場合、 **compareentryids**は失敗する可能性があります。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|BaseDialog.cpp  <br/> |CBaseDialog::OnCompareEntryIDs  <br/> |MFCMAPI では、 **IMsgStore::CompareEntryIDs**メソッドを使用して、エントリ Id を比較します。  <br/> |
+|basedialog  <br/> |cbasedialog:: oncompareentryids  <br/> |mfcmapi は、 **IMsgStore:: compareentryids**メソッドを使用してエントリ id を比較します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

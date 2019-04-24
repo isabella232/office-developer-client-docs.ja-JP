@@ -8,41 +8,41 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: cecd0679-4bc2-4399-8f89-a4e17bb909a0
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b685fd0ebe4a2d0bfcfd8aab3015602b84932db7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 41fdaf333084b7d567f4e67ae9fd2638a1731349
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359790"
 ---
 # <a name="pidtagaddressbookchoosedirectoryautomatically-canonical-property"></a>PidTagAddressBookChooseDirectoryAutomatically 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-最も適切なグローバル アドレス一覧 (GAL) を選択するか、現在のメールボックスの連絡先フォルダーには、Microsoft Outlook 2010 と Microsoft Outlook 2013 を使用できます。
+microsoft outlook 2010 および microsoft outlook 2013 を有効にして、現在のメールボックスに対して最も適切なグローバルアドレス一覧 (GAL) または連絡先フォルダーを選択します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_AB_CHOOSE_DIRECTORY_AUTOMATICALLY  <br/> |
 |識別子:  <br/> |0x3D1C000B  <br/> |
 |プロパティの種類:  <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |アドレス帳  <br/> |
+|エリア:  <br/> |アドレス帳  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティは、アドレス帳のオプション] ダイアログ ボックスで**自動的に選択**の設定に対応します。 このプロパティが IID_CAPONE_PROF のプロファイル セクション内に存在する、Outlook 2010 または Outlook 2013 に**true を指定**アドレス帳ダイアログ不要になった、 [SetDefaultDir](iaddrbook-setdefaultdir.md)メソッドで指定されたコンテナーのデフォルトが、アドレス帳を選択する設定は、ダイアログ ボックスが表示されていたコンテキストに適したと見なされます。 ありますが低い経験ではサード パーティのアドレス帳プロバイダーに注意してください。 
+このプロパティは、[アドレス帳のオプション] ダイアログボックスの **[自動**設定] に対応します。 IID_CAPONE_PROF プロファイルセクションにこのプロパティが存在し、 **true**に設定されている場合、アドレス帳ダイアログは[SetDefaultDir](iaddrbook-setdefaultdir.md)メソッドによって指定されたコンテナーに既定ではなくなりますが、outlook 2010 または outlook 2013 のアドレス帳を選択します。ダイアログが表示されたコンテキストに対して適切であると見なされます。 これにより、サードパーティのアドレス帳プロバイダーの動作が低下する可能性があることに注意してください。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -50,9 +50,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [MAPI �萔](mapi-constants.md)
   

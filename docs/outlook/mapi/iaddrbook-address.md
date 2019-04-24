@@ -1,5 +1,5 @@
 ---
-title: IAddrBookAddress
+title: iaddrbookaddress
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: ef2112c7-35cd-4106-ad18-a45e1dbe07d6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a13696b355e6fd815cd6bda42843505d9fc3d1f7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c2546fc990169526361f2c452c50212123d8284d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348847"
 ---
 # <a name="iaddrbookaddress"></a>IAddrBook::Address
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-Outlook アドレス帳] ダイアログ ボックスが表示されます。 
+[Outlook アドレス帳] ダイアログボックスを表示します。 
   
 ```cpp
 HRESULT Address(
@@ -37,33 +37,33 @@ HRESULT Address(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpulUIParam_
+ _l出 uiparam_
   
-> [で [チェック アウト]ダイアログ ボックスの親ウィンドウのハンドルへのポインター。 入力、ウィンドウ ハンドルを渡す必要が常にあります。 出力、DIALOG_SDI に、 **ulFlags**のメンバー、 _lpAdrParms_パラメーターが設定されている場合は、モードレス ダイアログ ボックスのウィンドウ ハンドルが返されます。 注釈を参照してください。 
+> [入力]ダイアログボックスの親ウィンドウのハンドルへのポインター。 入力時には、ウィンドウハンドルを常に渡す必要があります。 出力では、 _lpadrparms_パラメーターの**ulflags**メンバーが DIALOG_SDI に設定されている場合、モードレスダイアログボックスのウィンドウハンドルが返されます。 注釈を参照してください。 
     
- _lpAdrParms_
+ _lpadrparms_
   
-> [で [チェック アウト]プレゼンテーションと、[アドレス] ダイアログ ボックスの動作を制御する[ADRPARM](adrparm.md)構造体へのポインター。 
+> [入力][アドレス] ダイアログボックスの表示と動作を制御する[ADRPARM](adrparm.md)構造体へのポインター。 
     
- _lppAdrList_
+ _lppadrlist_
   
-> [で [チェック アウト]受信者の情報を格納する[ADRLIST](adrlist.md)構造体へのポインターへのポインター。 入力の場合、このパラメーターが NULL または有効なポインターをポイントします。 出力では、このパラメーターは、有効な受信者情報へのポインターをポイントします。 
+> [入力]受信者の情報を含む[adrlist](adrlist.md)構造体へのポインターへのポインター。 入力時には、このパラメーターを NULL にしたり、有効なポインターをポイントしたりすることができます。 出力では、このパラメーターは有効な受信者情報へのポインターを指します。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 共通のアドレス] ダイアログ ボックスが正常に表示されました。
+> [共通アドレス] ダイアログボックスが正常に表示されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-Outlook では無視されます、 **ulFlags**のメンバー、 _lpAdrParms_パラメーターは、出力時に、モードレス ダイアログ ボックスのウィンドウ ハンドルの戻り値を予測し DIALOG_SDI に設定されている場合Outlook 以外のクライアントでは、モーダル ダイアログ ボックスのバージョンは常に表示します。 
+_lpadrparms_パラメーターの**ulflags**メンバーが DIALOG_SDI に設定されている場合、出力時にモードレスダイアログボックスのウィンドウハンドルの戻り値を予測します。これは Outlook では無視されます。ダイアログのモーダルバージョンは常に、Outlook 以外のクライアントに表示されます。 
   
-_LppAdrList_パラメーターを通じて呼び出し元に、MAPI によって渡される**ADRLIST**構造体には、受信者ごとに 1 つの構造、 [ADRENTRY](adrentry.md)の構造体の配列が含まれています。 _LpMods_パラメーターでの送信メッセージの[IMessage::ModifyRecipients](imessage-modifyrecipients.md)メソッドに渡されると、その受信者のリストを更新する**ADRLIST**構造体を使用できます。 
+_lppadrlist_パラメーターを使用して、MAPI によって発信者に渡された**adrlist**構造体には、各受信者に対応する1つの[adrlist](adrentry.md)構造の配列が含まれています。 _lpMods_パラメーターの送信メッセージの[IMessage:: modifyrecipients](imessage-modifyrecipients.md)メソッドに渡されると、 **adrlist**構造を使用して、その受信者リストを更新できます。 
   
-**ADRLIST**構造内の個々 の**ADRENTRY**構造体には、0 個以上の[SPropValue](spropvalue.md)構造体、すべてのプロパティの設定、受信者の 1 つの構造が含まれています。 受信者を削除する**アドレス**の方法で表示されるダイアログ ボックスを使用する場合、0 **SPropValue**構造体が存在することができます。 **SPropValue**構造体が 1 つまたは複数が存在する場合、対応する**ADRENTRY**構造体を使用して、追加または受信者を更新します。 受信者を解決できるを示すこと**SPropValue**構造体のいずれかの受信者の**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) のプロパティの説明、未解決の**PR_ENTRYID**プロパティがあることを示します不足しています。 
+**adrentry**構造体内の各**adrentry**構造には、0個以上の[spropvalue](spropvalue.md)構造体、および受信者のすべてのプロパティセットに対する1つの構造が含まれています。 **Address**メソッドによって提供されるダイアログボックスを使用して受信者を削除する場合は、ゼロの**spropvalue**構造が可能です。 1つ以上の**spropvalue**構造体がある場合は、対応する**adrentry**構造を使用して、受信者を追加または更新します。 受信者を解決できます。これは、 **spropvalue**構造の1つが、受信者の**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティ、または未解決であることを示しています。これは、 **PR_ENTRYID**プロパティがれ. 
   
-**PR_ENTRYID**、他は、解決の受信者には、次のプロパティが含まれます。
+**PR_ENTRYID**に加えて、解決された受信者には次のプロパティが含まれています。
   
 - **PR_RECIPIENT_TYPE**([PidTagRecipientType](pidtagrecipienttype-canonical-property.md))
     
@@ -73,19 +73,19 @@ _LppAdrList_パラメーターを通じて呼び出し元に、MAPI によって
     
 - **PR_DISPLAY_TYPE**([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))
     
-**ADRLIST**構造で、呼び出し元に合格するには、MAPI を表す構造体のサイズが異なる可能性があります。 MAPI より大きな**ADRLIST**の構造体を返す必要がある場合に、元の構造体を解放し、新しい 1 を割り当てます。 **ADRLIST**構造体のメモリを割り当てるときに、個別に各**SPropValue**構造体のメモリを割り当てます。 割り当てるし、 **ADRLIST**構造体を解放する方法の詳細については、 [ADRLIST および SRowSet 構造体のメモリを管理する](managing-memory-for-adrlist-and-srowset-structures.md)を参照してください。
+発信者が渡す**adrlist**構造は、MAPI が返す構造体のサイズと異なる場合があります。 MAPI がより大きな**adrlist**構造を返す必要がある場合は、元の構造を解放して新しい構造を割り当てます。 **adrlist**構造体のメモリを割り当てるときは、各**spropvalue**構造体のメモリを個別に割り当てます。 **adrlist**構造体の割り当ておよび解放方法の詳細については、「 [adrlist および srowset 構造体のメモリの管理](managing-memory-for-adrlist-and-srowset-structures.md)」を参照してください。
   
- **UlFlags** 、 **ADRPARM**構造体のメンバーに、 _lpAdrParms_パラメーターに DIALOG_SDI フラグが設定されている場合、**アドレス**はすぐに返します。 Outlook 以外のクライアントでは、DIALOG_SDI フラグは無視されます。 DIALOG_SDI は無視されますが場合、は、モーダル ダイアログ ボックスのバージョンが表示され、ハンドルへのポインターは、 _lpulUIParam_で予期しない必要があります。
+ DIALOG_SDI フラグが_lpadrparms_パラメーターの**ADRPARM**構造の**ulflags**メンバーで設定されている場合は、すぐに**アドレス**が返されます。 Outlook 以外のクライアントでは、DIALOG_SDI フラグは無視されます。 DIALOG_SDI が無視される場合は、ダイアログのモーダルバージョンが表示され、ハンドルへのポインターは_lアウト uiparam_では想定されません。
   
- **アドレス**をサポートしている文字の Unicode 文字列**ADRPARM**構造体の AB_UNICODEUI は、 _lpAdrParms_パラメーターには、 **ADRPARM**の**ulFlags**メンバーで指定された**では、Unicode 文字列をサポートしている場合ADRLIST**。 Unicode 文字列は、Outlook アドレス帳] ダイアログ ボックスに表示される前に、マルチバイト文字 (MBCS) の文字列形式に変換されます。
+ **Address**は**ADRPARM**構造で unicode 文字列をサポートしています。 _lpadrparms_パラメーターの**ADRPARM**の**ulflags**メンバーで AB_UNICODEUI が指定されており、それが unicode**文字列をサポートしている場合adrlist**。 Unicode 文字列は、Outlook の [アドレス帳] ダイアログボックスに表示される前に、マルチバイト文字文字列 (MBCS) 形式に変換されます。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIStoreFunctions.cpp  <br/> |OpenOtherUsersMailboxFromGal  <br/> |MFCMAPI では、**アドレス**メソッドを使用して、ユーザーがどのメールボックスを開くを選択できるようにします。  <br/> |
+|MAPIStoreFunctions  <br/> |OpenOtherUsersMailboxFromGal  <br/> |mfcmapi は、 **Address**メソッドを使用して、開くメールボックスをユーザーが選択できるようにします。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

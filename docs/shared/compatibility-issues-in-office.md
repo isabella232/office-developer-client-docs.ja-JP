@@ -7,11 +7,11 @@ ms.assetid: dd279238-ae75-4ad9-b9e5-364924090485
 description: Office 製品で起きる可能性のある互換性の問題に関するテレメトリ ログに表示される問題について、詳細情報を取得します。
 localization_priority: Priority
 ms.openlocfilehash: f0c2462662121ee6ec7944dde5a01e2964fc28cf
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357506"
 ---
 # <a name="compatibility-issues-in-office"></a>Office の互換性に関する問題
 
@@ -33,7 +33,7 @@ Office 2013 から変更または削除されている機能の詳細につい�
 |10000  <br/> |Office 2013  <br/> |全 Office 2013  <br/> ||警告: Visual Basic 6.0 のコントロール  <br/> |このファイルで使われている Visual Basic 6.0 コントロールは、64 ビット バージョンの Office や、ARM プロセッサが使われているデバイス で実行中の 32 ビット バージョンの Office では機能 しません。それらの環境の Office アプリケーションで使えるようにす るには、サポートされているコントロールに置き換えてください。  <br/> |
 |10001  <br/> |Office 2013  <br/> |すべての Office 2013  <br/> |[リンク](https://msdn.microsoft.com/vbasic/ms788708.aspx) <br/> |コントロール: Visual Basic 6.0 コントロール (64 ビット OS)  <br/> |このファイルで使われている Visual Basic 6.0 コントロールは、64 ビット バージョンの Office では機能しません。Visual Basic 6.0 ラ ンタイム ファイルは 32 ビットであり、32 ビット OS または WOW エミュレーショ ン環境でのみサポートされます。  <br/> |
 |10002  <br/> |Office 2013  <br/> |すべての Office 2013  <br/> |[リンク](https://msdn.microsoft.com/vbasic/ms788708.aspx) <br/> |コントロール: Visual Basic 6.0 コントロール (ARM プロセッサ搭 載デバイス)  <br/> |このファイルで使われている Visual Basic 6.0 コントロールは、ARM プロセッサを使用するデバ イスでは機能しません。  <br/> |
-|10003  <br/> |Office 2013  <br/> |すべての Office 2013  <br/> |[リンク](https://technet.microsoft.com/en-us/library/cc179181.aspx) <br/> |コントロール: Microsoft カレンダー コントロール  <br/> |このファイルで使用されている Microsoft カレンダー コントロール (Mscal.ocx) は、以前のバージョンの Access の機能であり、Office 2013 では使用できません。 このコントロールは、ホスト コンピューターにインストールされていないために機能しません。 このコントロールの代わりとして、**日付選択コンテンツ コントロール** (Word 2013) または Windows **DatePicker** コントロール (Windows コモン コントロール) などの日付の選択コントロールを使用してください。  <br/> 詳細については、「[Access 2010 アプリケーションのカレンダー コントロールを置き換える](https://msdn.microsoft.com/library/dc6ba80d-b1fa-4596-b484-5e729cae4d70)」を参照してください。  <br/> |
+|10003  <br/> |Office 2013  <br/> |すべての Office 2013  <br/> |[リンク](https://technet.microsoft.com/ja-JP/library/cc179181.aspx) <br/> |コントロール: Microsoft カレンダー コントロール  <br/> |The file uses the Microsoft Calendar control (Mscal.ocx), a feature of previous versions of Access that is not available in Office 2013. The control will not work because it is not installed on the host computer. Use other date picker controls as an alternative, like the **Date Picker Content Control** (in Word 2013) or the Windows **DatePicker** control (in the Windows Common Controls).  <br/> 詳細については、「[Access 2010 アプリケーションのカレンダー コントロールを置き換える](https://msdn.microsoft.com/library/dc6ba80d-b1fa-4596-b484-5e729cae4d70)」を参照してください。  <br/> |
 |10004  <br/> |Office 2013  <br/> |すべての Office 2013  <br/> |[リンク](https://support.microsoft.com/kb/972129) <br/> |Office Web コンポーネント  <br/> |このファイルは Office Web コンポーネント コントロールを使いますが、Office Web コンポーネントがこのコンピュー ターにインストールされておらず、Office 2013に含まれていないため、コントロー ルは機能しません。このコントロールを使うには、Office Web コンポーネントを個別にインストー ルする必要があります。  <br/> 詳細については、「[Office Web コンポーネント (OWC) のプログラミングに役立つ各種情報とサンプル](https://support.microsoft.com/kb/319793)」を参照してください。 <br/> |
 |10005  <br/> |Office 2013  <br/> |すべての Office 2013  <br/> |[リンク](https://office.microsoft.com/en-us/access-help/embedded-object-and-activex-control-policy-settings-error-HA101825674.aspx?CTT=1) <br/> |コントロール: 未登録の ActiveX コントロール  <br/> |このファイルは、ホスト コンピューターに登録されていない ActiveX コントロールを使用します。このコントロールを使用するには、ホスト コンピューターに登録してください。  <br/> |
    

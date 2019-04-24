@@ -12,47 +12,47 @@ api_type:
 - COM
 ms.assetid: c8959592-53f3-48cf-b623-91d199df0629
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fc120a863fb9a061381eac81be04e385831cf484
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: af87dee0b5e598395fb59bc92f762582289aa828
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350716"
 ---
 # <a name="pidtagx400contenttype-canonical-property"></a>PidTagX400ContentType 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-このプロパティには、送信されたメッセージのコンテンツ タイプが含まれています。
+このプロパティには、送信されたメッセージのコンテンツタイプが含まれます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_X400_CONTENT_TYPE  <br/> |
-|識別子:  <br/> |0x003C  <br/> |
+|識別子:  <br/> |0x003c  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |X400  <br/> |
+|エリア:  <br/> |X400  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: 8d0a381a-e714-4663-9a57-b0e1cdbd6ba7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 99b63e7b0b31a603bf372b1d52e83af39784b628
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e5adc7d0c317d8b803645d78227777998d7d241f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32347839"
 ---
 # <a name="hrgetoneprop"></a>HrGetOneProp
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロパティのインターフェイスから、つまり、 [IMAPIProp](imapipropiunknown.md)から派生したインターフェイスには、1 つのプロパティの値を取得します。 
+プロパティインターフェイス ( [imapiprop](imapipropiunknown.md)から派生したインターフェイス) から1つのプロパティの値を取得します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 HrGetOneProp(
@@ -45,35 +45,35 @@ HrGetOneProp(
 
  _pmp_
   
-> [in][IMAPIProp](imapipropiunknown.md)インターフェイスを取得するプロパティの値は、元へのポインター。 
+> 順番プロパティ値を取得する[imapiprop](imapipropiunknown.md)インターフェイスへのポインター。 
     
  _ulPropTag_
   
-> [in]取得するプロパティのプロパティ タグです。 
+> 順番取得するプロパティのプロパティタグ。 
     
  _ppprop_
   
-> [out]取得したプロパティ値を定義する、返される[SPropValue](spropvalue.md)構造へのポインターへのポインター。 
+> 読み上げ取得したプロパティ値を定義する、返された[spropvalue](spropvalue.md)構造体へのポインターへのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
 MAPI_E_NOT_FOUND 
   
-> 要求されたプロパティは、指定されたインターフェイスからは使用できません。
+> 要求されたプロパティは、指定したインターフェイスからは使用できません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-、 [IMAPIProp::GetProps](imapiprop-getprops.md)メソッドとは異なり、 **HrGetOneProp**関数は決して警告を返します。 1 つのプロパティを取得するために単に成功または失敗します。 複数のプロパティを取得するため**GetProps**が高速です。 
+[imapiprop:: GetProps](imapiprop-getprops.md)メソッドとは異なり、 **hrgetoneprop**関数は警告を返しません。 プロパティを1つだけ取得するので、成功または失敗のどちらかです。 複数のプロパティを取得する場合、 **GetProps**の方が高速です。 
   
-設定または[HrSetOneProp](hrsetoneprop.md)関数を使用して 1 つのプロパティを変更できます。 
+[hrsetoneprop](hrsetoneprop.md)関数を使用して、1つのプロパティを設定または変更できます。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIFunctions.cpp  <br/> |GetMAPIObjectType  <br/> |MFCMAPI では、 **HrGetOneProp**メソッドを使用して、オブジェクトの種類を取得します。  <br/> |
+|MAPIFunctions  <br/> |GetMAPIObjectType  <br/> |mfcmapi は、 **hrgetoneprop**メソッドを使用して、オブジェクトの種類を取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

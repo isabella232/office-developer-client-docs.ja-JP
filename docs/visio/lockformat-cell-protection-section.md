@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: e9a640f4-0af0-317c-b77b-f32c651e87b4
 description: 図形の書式設定をロックして、変更できないようにします。
-ms.openlocfilehash: c3e4d5be848e91554406e709ce6872ae49b5f38d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e0d1bb8a65b8087136e57bb46ad9f5363da30030
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359614"
 ---
-# <a name="lockformat-cell-protection-section"></a>[LockFormat] セル ([保護] セクション)
+# <a name="lockformat-cell-protection-section"></a>[LockFormat] セル ([Protection] セクション)
 
 図形の書式設定をロックして、変更できないようにします。
   
@@ -25,13 +25,13 @@ ms.locfileid: "19805753"
 | TRUE  <br/> | 書式を変更できません。  <br/> |
 | FALSE  <br/> | 書式を変更できます。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LockFormat] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | LockFormat  <br/> |
+| セル名:  <br/> | [lockformat]  <br/> |
    
 プログラムから、インデックスによって [LockFormat] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

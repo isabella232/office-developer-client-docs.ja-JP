@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c38aa8be-ae77-0c40-9843-42e07b80db6b
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2361d225c07d60fab40465b27ad393ca10f6d8eb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 9bd61739b14d0ec382a9d582689c1049fe89429b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360544"
 ---
 # <a name="updele"></a>UPDELE
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ローカル ストアで削除済みアイテムの情報を拡張します。 [アップロード ステータスの状態を削除](upload-delete-status-state.md)する時にこの情報が使用されます。
+ローカルストアで削除されたアイテムの拡張情報。 この情報は、削除の状態の[アップロード](upload-delete-status-state.md)中に使用されます。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -36,65 +36,65 @@ struct UPDELE
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 _ulFlags_
   
-> [out]/[in] アップロード中に、適切な動作を決定するフラグ。
+> [out]/[in] アップロード中の適切な動作を決定するフラグです。
     
   - UPD_ASSOC
     
-    - [out]項目に関連付けられています。
+    - 読み上げ項目が関連付けられています。
     
   - UPD_MOV
     
-    - [out]項目移動されました。
+    - 読み上げアイテムが移動されました。
     
   - UPD_OK 
     
-    - [in]アップロードが正常に完了しました。 クライアントでは、情報をサーバーにアップロードした後、これを設定します。
+    - 順番アップロードに成功しました。 クライアントは、情報をサーバーにアップロードした後にこれを設定します。
     
   - UPD_MOVED
     
-    - [in]項目が正常に移動されました。
+    - 順番アイテムは正常に移動されました。
     
   - UPD_UPDATE
     
-    - [in]変更、ソース項目をマークします。
+    - 順番ソースアイテムを変更済みとしてマークします。
     
   - UPD_COMMIT
     
-    - [in]アップロード状態ようになりました (項目 0) をコミットします。
+    - 順番今すぐアップロードの状態をコミットします (エントリ 0)。
     
 _skey_
   
-> [out]ソース項目のキー。
+> 読み上げアイテムのソースキー。
     
-_dwReserved_
+_dwreserved_
   
-> [out]このメンバーは、Outlook の内部使用に予約されている、サポートされていません。
+> [out] このメンバーは Outlook の内部使用のために予約されており、サポートされていません。
     
 _binChg_
   
-> [out]項目が移動された場合は、同期先項目のキーを変更します。
+> 読み上げアイテムが移動された場合は、コピー先アイテムのキーを変更します。
     
-_binPcl_
+_binpcl_
   
-> [out]項目が移動された場合は、同期先項目の一覧を変更します。
+> 読み上げアイテムが移動された場合は、コピー先アイテムのリストを変更します。
     
-_skeyDst_
+_skeydst_
   
-> [out]同期先項目の項目のソースのキーに移動されました。
+> 読み上げアイテムが移動された場合のコピー先アイテムのソースキー。
     
 _pupmov_
   
-> [out]アイテムのコピー先フォルダーの情報を移動するとします。
+> 読み上げアイテムが移動された場合の移動先フォルダーの情報。
     
 ## <a name="see-also"></a>関連項目
 
 - [レプリケーション API について](about-the-replication-api.md) 
-- [レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
-- [MAPI �萔](mapi-constants.md)
+- [レプリケーション状態のマシンについて](about-the-replication-state-machine.md)
+- [MAPI 定数](mapi-constants.md)
 - [SKEY](skey.md)
 - [UPDEL](updel.md)
 - [UPMOV](upmov.md)

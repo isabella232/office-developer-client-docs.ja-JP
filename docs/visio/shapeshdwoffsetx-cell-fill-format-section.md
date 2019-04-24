@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: a426f471-d35f-ef87-4c59-2c007ec2653f
 description: 図形の影を図形から水平方向にオフセットする距離を、ページの単位で指定します。
-ms.openlocfilehash: 12512ce9edf49f91c786c3cd50baa8d07498a3de
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5c3f994f0ceba84c86585a76c7a67667a0c20a53
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349127"
 ---
-# <a name="shapeshdwoffsetx-cell-fill-format-section"></a>[ShapeShdwOffsetX] セル ([塗りつぶしの書式設定] セクション)
+# <a name="shapeshdwoffsetx-cell-fill-format-section"></a>[ShapeShdwOffsetX] セル ([Fill Format] セクション)
 
 図形の影を図形から水平方向にオフセットする距離を、ページの単位で指定します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 この値は、[**影**] ダイアログ ボックスの [**X オフセット**] 設定の値に対応しています (このダイアログ ボックスを開くには、[**ホーム**] タブの [**図形**] グループで、[**影**] をクリックして、[**影のオプション**] をクリックします)。
   
@@ -28,7 +28,7 @@ ms.locfileid: "19806429"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | ShapeShdwOffsetX  <br/> |
+| セル名 :  <br/> | [shapeshdwoffsetx]  <br/> |
    
 プログラムから、インデックスによって [ShapeShdwOffsetX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

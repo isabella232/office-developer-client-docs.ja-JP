@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 83c349f7-dcac-4268-befe-fb2bc0cd9c50
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d9235da7e7ec6ec244ee1a75f4795e9c77ec28bf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 00273d5572fa0c12a9501a1620db11ea087fd5d1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351598"
 ---
 # <a name="ixplogonstartmessage"></a>IXPLogon::StartMessage
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI スプーラーをトランスポート プロバイダーからの受信メッセージの転送を開始します。
+トランスポートプロバイダーから MAPI スプーラーへの受信メッセージの転送を開始します。
   
 ```cpp
 HRESULT StartMessage(
@@ -35,45 +35,45 @@ HRESULT StartMessage(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lpMessage_
+ _lpmessage_
   
-> [in]オブジェクトへのポインターをメッセージ (受信メッセージを表す) にアクセスしてそのメッセージを操作するトランスポート プロバイダーによって使用される、読み取り/書き込み権限を持っています。 トランスポート プロバイダーは、 **IXPLogon::StartMessage**への呼び出しから制御が戻った後、このオブジェクトは有効期限のままになります。
+> 順番読み取り/書き込みアクセス許可を持つメッセージオブジェクト (受信メッセージを表す) へのポインター。これは、そのメッセージにアクセスして操作するためにトランスポートプロバイダーによって使用されます。 このオブジェクトは、トランスポートプロバイダーが**IXPLogon:: startmessage**の呼び出しから戻るまで有効です。
     
- _lpulMsgRef_
+ _lアウト msグリーン f_
   
-> [out]メッセージに割り当てられている参照の値へのポインター。 MAPI スプーラーは、トランスポート プロバイダーへのポインターを返す前に、1 にこの値を初期化します。
+> 読み上げメッセージに割り当てられている参照値へのポインター。 MAPI スプーラーは、この値を1に初期化してから、トランスポートプロバイダーへのポインターを返します。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>����
+## <a name="remarks"></a>解説
 
-MAPI スプーラーは、MAPI スプーラーをトランスポート プロバイダーからの受信メッセージの転送を開始するのには**IXPLogon::StartMessage**メソッドを呼び出します。 _LpMessage_が指すメッセージに使用するトランスポート プロバイダーが開始されると、前に[IXPLogon::TransportNotify](ixplogon-transportnotify.md)メソッドを呼び出すことで潜在的な使用に対応する_lpulMsgRef_パラメーターにメッセージの参照が格納される必要があります。 
+mapi スプーラーは**IXPLogon:: startmessage**メソッドを呼び出して、トランスポートプロバイダーから mapi スプーラーへの受信メッセージの転送を開始します。 _lpmessage_によって示されたメッセージの使用をトランスポートプロバイダーが開始する前に、 [IXPLogon:: transportnotify](ixplogon-transportnotify.md)メソッドの呼び出しによって使用される可能性のある_lアウト msグリーン f_パラメーターにメッセージ参照を格納する必要があります。 
   
-**StartMessage**の呼び出し中に MAPI スプーラーは、メッセージの転送中に開かれるオブジェクトのメソッドを処理しもすべての添付ファイルを処理します。 この処理時間がかかることができます。 トランスポート プロバイダーは、他のシステム タスクの CPU 時間を解放するには、この処理中に頻繁に、MAPI スプーラーの[IMAPISupport::SpoolerYield](imapisupport-spooleryield.md)コールバック関数を呼び出すことができます。 
+**startmessage**呼び出しの間、MAPI スプーラーは、メッセージの転送中に開かれたオブジェクトのメソッドを処理し、添付ファイルも処理します。 この処理には長い時間がかかることがあります。 トランスポートプロバイダーは、この処理中に多くの場合、MAPI スプーラーの[imapisupport:: SpoolerYield](imapisupport-spooleryield.md) callback 関数を呼び出して、他のシステムタスクに対する CPU 時間を解放することができます。 
   
-トランスポート プロバイダーを作成、メッセージの受信者テーブル内のすべての受信者には、必要なすべてのアドレス指定プロパティを含める必要があります。 必要に応じて、プロバイダーは、特定の受信者を表すためのカスタム受信者を作成できます。 ただし、プロバイダーが複数の情報が含まれる受信者のエントリを生成できる場合に行ってください。 など、トランスポート プロバイダーにその形式の受信者のエントリの有効な識別子を構築できます、アドレス帳プロバイダーの受信者の形式について十分な情報がある場合は、エントリの識別子を作成する必要があります。
+トランスポートプロバイダーがメッセージに対して作成する受信者テーブル内のすべての受信者に、必要なすべてのアドレス指定プロパティが含まれている必要があります。 必要に応じて、プロバイダーは特定の受信者を表すカスタム受信者を作成できます。 ただし、プロバイダーが詳細情報を含む受信者エントリを作成できる場合は、そのようにする必要があります。 たとえば、アドレス帳プロバイダーの受信者の形式に関する十分な情報がトランスポートプロバイダーにある場合、その形式の受信者に対して有効なエントリ識別子を作成することができます。そのためには、エントリ識別子を作成する必要があります。
   
-Nontransmittable プロパティは、受信した場合トランスポート プロバイダーは、保存しないようにして新しいメッセージにします。 ただし、トランスポート プロバイダーは、新しいメッセージを受信するすべての転送可能なプロパティを格納する必要があります。
+転送不能なテーブルプロパティが受信されていない場合、トランスポートプロバイダーはそれらを新しいメッセージに格納することはできません。 ただし、トランスポートプロバイダーは、新しいメッセージで受信するすべてのトランスポートテーブルプロパティを格納する必要があります。
   
-着信メッセージが配信レポートまたは配信不能レポートには、トランスポート プロバイダーは、 [IMAPISupport::StatusRecips](imapisupport-statusrecips.md)メソッドを使用して、元のメッセージからレポートを生成することは、プロバイダーする必要があります自体を先に設定のメッセージ適切なプロパティです。 ただし、トランスポート プロバイダーは、メッセージの**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) のプロパティを設定できません。
+受信メッセージが配信レポートまたは配信不能レポートで、トランスポートプロバイダーが[imapisupport:: StatusRecips](imapisupport-statusrecips.md)メソッドを使用して元のメッセージからレポートを生成できない場合は、プロバイダー自体に、次のようにメッセージを設定する必要があります。適切なプロパティ。 ただし、トランスポートプロバイダーは、メッセージの**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティを設定できません。
   
-処理後、適切な MAPI メッセージ ・ ストアに受信メッセージを保存するには、トランスポート プロバイダーは、 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを呼び出します。 トランスポート プロバイダーがすべてのメッセージを MAPI スプーラーを無効にするのには、 **SaveChanges**を呼び出すことがなく、 **StartMessage**の呼び出しから返すことで、着信メッセージを停止できます。
+受信メッセージを適切な MAPI メッセージストアに処理した後に保存するには、トランスポートプロバイダーは[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出します。 トランスポートプロバイダーが MAPI スプーラーに渡すメッセージを持っていない場合は、 **SaveChanges**を呼び出さずに**startmessage**呼び出しから戻って、受信メッセージを停止することができます。
   
-返す前に**StartMessage**の呼び出し中に、トランスポート プロバイダーが表示されるすべてのオブジェクトを解放するようにします。 ただし、プロバイダーでは、MAPI スプーラーが最初_lpMessage_パラメーターに渡されるメッセージ オブジェクトは開放しなければなりません。 
+**startmessage**呼び出し中にトランスポートプロバイダが開くすべてのオブジェクトは、戻る前に解放する必要があります。 ただし、プロバイダーは、MAPI スプーラーが最初に_lpmessage_パラメーターで渡したメッセージオブジェクトを解放することはできません。 
   
-**StartMessage**がエラーを返した場合プロセス内のメッセージは変更内容を保存せずにリリースがされ、失われます。 この例では、トランスポート プロバイダーは[IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md)メソッドを呼び出して、NOTIFY_CRITICAL_ERROR フラグを渡すし、MAPI スプーラーの重大なエラー状態であることを通知するために[IXPLogon::Poll](ixplogon-poll.md)メソッドを呼び出す必要があります。 
+**startmessage**がエラーを返した場合は、変更が保存されていない状態で処理中のメッセージが解放され、失われます。 この場合、トランスポートプロバイダーは、NOTIFY_CRITICAL_ERROR フラグを[imapisupport:: SpoolerNotify](imapisupport-spoolernotify.md)メソッドの呼び出しと共に渡し、 [IXPLogon::P oll](ixplogon-poll.md)メソッドを呼び出して、重大なエラー状態にあることを MAPI スプーラーに通知する必要があります。 
   
-詳細については、 [MAPI スプーラーと対話する](interacting-with-the-mapi-spooler.md)を参照してください。 
+詳細については、「 [MAPI スプーラーとの対話](interacting-with-the-mapi-spooler.md)」を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

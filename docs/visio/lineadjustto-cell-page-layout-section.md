@@ -9,25 +9,25 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 81cd9670-8a6f-824b-528c-e9b88c86f525
 description: 線を束ねるときに対象とする動的コネクタを指定します。
-ms.openlocfilehash: 13540f9dc5e6e6861d3f3679bcf49204d553397a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e4fb32c0fcb488173324ea597edc2c9d13f6bfca
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359312"
 ---
-# <a name="lineadjustto-cell-page-layout-section"></a>[LineAdjustTo] セル ([ページ レイアウト] セクション)
+# <a name="lineadjustto-cell-page-layout-section"></a>[LineAdjustTo] セル ([Page Layout] セクション)
 
 線を束ねるときに対象とする動的コネクタを指定します。
   
-|**値**|**調整方法**|**オートメーション定数**|
+|**値**|**セレクター**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|0  <br/> |迂回方法の既定値に合わせる  <br/> |**visPLOLineAdjustToDefault** <br/> |
-|1  <br/> |近接しているすべての線  <br/> |**visPLOLineAdjustToAll** <br/> |
-|2  <br/> |なし  <br/> |**visPLOLineAdjustToNone** <br/> |
-|3  <br/> |関連付けられている線  <br/> |**visPLOLineAdjustToRelated** <br/> |
+|.0  <br/> |迂回方法の既定値に合わせる  <br/> |**visPLOLineAdjustToDefault** <br/> |
+|1-d  <br/> |近接しているすべての線  <br/> |**visPLOLineAdjustToAll** <br/> |
+|pbm-2  <br/> |なし  <br/> |**visPLOLineAdjustToNone** <br/> |
+|1/3  <br/> |関連付けられている線  <br/> |**visPLOLineAdjustToRelated** <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 このセルの値は、[**ページ設定**] ダイアログ ボックスの [**レイアウトと経路**] タブで設定することもできます (このダイアログ ボックスを開くには、[**デザイン**] タブで [**ページ設定**] 矢印をクリックして、[**レイアウトと経路**] をクリックします)。
   
@@ -35,7 +35,7 @@ ms.locfileid: "19805701"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |LineAdjustTo  <br/> |
+|セル名:  <br/> |[lineadjustto]  <br/> |
    
 プログラムから、インデックスによって [LineAdjustTo] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

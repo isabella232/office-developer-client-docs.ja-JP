@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 261d5f7c-bb61-4e1d-aa41-cca224c63f8e
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 7cb77308ebc7229adcab290fc8e1f9e11ce45065
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: d9e09de1064a0ae034bb3618f0e5b3719a82c163
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356029"
 ---
 # <a name="ixplogonopenstatusentry"></a>IXPLogon::OpenStatusEntry
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-トランスポート プロバイダーの状態のオブジェクトを開きます。
+トランスポートプロバイダーの状態オブジェクトを開きます。
   
 ```cpp
 HRESULT OpenStatusEntry(
@@ -38,35 +38,35 @@ HRESULT OpenStatusEntry(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpInterface_
+ _lpinterface_
   
-> [in]トランスポート ログオン オブジェクトのインターフェイス id (IID) へのポインター。 [IMAPIStatus](imapistatusimapiprop.md)インターフェイスを返します NULL を渡すことです。 _LpInterface_パラメーターは、オブジェクトのインターフェイスの識別子を設定することも。 
+> 順番トランスポートログオンオブジェクトのインターフェイス識別子 (IID) へのポインター。 NULL を渡すと、 [imapistatus](imapistatusimapiprop.md)インターフェイスが返されます。 _lpinterface_パラメーターは、オブジェクトのインターフェイスの識別子に設定することもできます。 
     
  _ulFlags_
   
-> [in]状態オブジェクトを開く方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番status オブジェクトが開かれる方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_MODIFY 
   
-> 要求の読み取り/書き込みのアクセス許可 デフォルトのインタ フェースは、読み取り専用です。 
+> 読み取り/書き込みアクセス許可を要求します。 既定のインターフェイスは読み取り専用です。 
     
- _lpulObjType_
+ _lpulobjtype_
   
-> [out]開かれたオブジェクトの型へのポインター。
+> 読み上げ開かれているオブジェクトの種類へのポインター。
     
- _lppEntry_
+ _lppentry_
   
-> [out]開かれた状態のオブジェクトへのポインターへのポインター。
+> 読み上げ開かれた状態オブジェクトへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 呼び出しが成功し、予期される値または値が返されます。
+> 呼び出しが成功し、予想される値または値が返されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-MAPI スプーラーは、クライアント アプリケーションは、トランスポート プロバイダーの状態のテーブルの行のエントリ id の**OpenEntry**メソッドを呼び出すときに、 **IXPLogon::OpenStatusEntry**メソッドを呼び出します。 **OpenStatusEntry**は、この特定のトランスポート プロバイダーへのログオンに関連付けられている**IMAPIStatus**インターフェイスを持つオブジェクトを開きます。 (たとえば、 [IMAPIStatus::SettingsDialog](imapistatus-settingsdialog.md)メソッドを使用してログオン セッションを再構成するか、[を使用してログオン セッションの状態を検証するために**IMAPIStatus**メソッドを呼び出すクライアント アプリケーションを有効にするのにはこのオブジェクトを使用してIMAPIStatus::ValidateState](imapistatus-validatestate.md)メソッド)。 
+クライアントアプリケーションがトランスポートプロバイダーの状態テーブルの行のエントリ id に対して**openentry**メソッドを呼び出すと、MAPI スプーラーは**IXPLogon:: openstatusentry**メソッドを呼び出します。 **openstatusentry**この特定のトランスポートプロバイダーログオンに関連付けられている**imapistatus**インターフェイスを持つオブジェクトを開きます。 次に、このオブジェクトを使用して、クライアントアプリケーションが**imapistatus**メソッドを呼び出すことができるようにします (たとえば、 [imapistatus:: settingsdialog](imapistatus-settingsdialog.md)メソッドを使用してログオンセッションを再構成する場合、またはを使用[してログオンセッションの状態を確認する場合など)。imapistatus:: validatestate](imapistatus-validatestate.md)メソッド)。 
   
 ## <a name="see-also"></a>関連項目
 

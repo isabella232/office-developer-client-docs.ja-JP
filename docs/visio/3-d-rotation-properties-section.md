@@ -6,23 +6,23 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6f2520c0-d2e2-470a-90b5-c4bca789bb73
-description: 図形の角度、x、y、および z 軸に沿った回転移動の現在の値を示しています。
-ms.openlocfilehash: 989fe0f3d8ad3813d460441ed19d96b7168dee72
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: x 軸、y 軸、および z 軸に沿った図形の回転角度の現在の値を表示します。
+ms.openlocfilehash: 03ecf92de66324157dc6a9003e943dbb33cb8aa5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351633"
 ---
 # <a name="3-d-rotation-properties-section"></a>[3-D 回転のプロパティ] セクション
 
-図形の角度、x、y、および z 軸に沿った回転移動の現在の値を示しています。
+x 軸、y 軸、および z 軸に沿った図形の回転角度の現在の値を表示します。
   
 > [!NOTE]
 > [3-D 回転のプロパティ] セクションには、図形のベベル効果を制御するセルが含まれていません。ベベル効果を設定するには、[[ベベルのプロパティ](bevel-properties-section.md)] セクションでセルの値を変更します。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**図形の書式設定**] ダイアログの [3-D 回転の値を変更することができます (**ホーム** > **図形のスタイル** > **効果** > **3-D 回転**を変更するセルの 1 つ、**に 3-D の回転プロパティでは、または**セクションです。 
+[**図形の書式設定**] ダイアログボックス ([**ホーム** > ]**図形のスタイル** > **効果** > **3-d 回転**、または**3-d 回転プロパティのいずれかのセルに変更を加える) で3-d 回転値を変更できます。** セクション。 
   
 

@@ -7,29 +7,29 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 142c4975-08df-4501-9996-557aa44eafb3
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: e0701e64469576a8241002a6ff11299d1c343556
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: bf633a971f7e3077ce2f418021ef183a36db8cc8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348609"
 ---
 # <a name="opening-a-message"></a>メッセージを開く
  
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-### <a name="to-open-a-message"></a>メッセージを開く
+### <a name="to-open-a-message"></a>メッセージを開くには
   
-1. 以下のいずれかからのメッセージのエントリ id を取得します。
+1. 次のいずれかのソースからメッセージのエントリ id を取得します。
     
-   - 親フォルダーの内容のテーブル内のメッセージを表す行です。 フォルダー コンテンツ テーブルの操作に関する詳細については、[内容のテーブル](contents-tables.md)を参照してください。
+   - 親フォルダーの contents テーブル内のメッセージを表す行。 folder contents テーブルを使用した作業の詳細については、「 [contents Tables](contents-tables.md)」を参照してください。
     
-   - **LpEntryID** 、 [NEWMAIL_NOTIFICATION](newmail_notification.md)構造体のメンバーで新着メールの通知が送信されます。 受信と処理の通知の詳細については、[通知の処理](handling-notifications.md)を参照してください。
+   - 新しいメール通知と共に送信される[NEWMAIL_NOTIFICATION](newmail_notification.md)構造の**lて tryid**メンバ。 通知の受信および処理の詳細については、「[通知の処理](handling-notifications.md)」を参照してください。
     
-   - **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) のプロパティを要求するメッセージの[IMAPIProp::GetProps](imapiprop-getprops.md)のメソッドを呼び出す。 
+   - **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティを要求しているメッセージの[imapiprop:: GetProps](imapiprop-getprops.md)メソッドへの呼び出し。 
     
-2. 次のいずれかの**OpenEntry**を開くには、メッセージ、メッセージのエントリ id を設定_lpEntryID_を呼び出します。 
+2. メッセージを開くには、次のいずれかの**openentry**メソッドを呼び出します。メッセージのエントリ識別子に_lな tryid_を設定します。 
     
    - [IMAPIContainer::OpenEntry](imapicontainer-openentry.md)
     
@@ -37,14 +37,14 @@ ms.locfileid: "22582981"
     
    - [IMAPISession::OpenEntry](imapisession-openentry.md)
     
-  最も速い方法は、受信メッセージに対してのみ使用可能な受信フォルダーの**IMAPIFolder::OpenEntry**メソッドを呼び出す必要があります。 メッセージ ストアの**IMsgStore::OpenEntry**メソッドを呼び出して、次の最も高速な方法は**IMAPISession::OpenEntry**を呼び出して、最も低速な方法は、すべてのメッセージに対して使用可能。
+  最も高速なメソッドは、受信メッセージに対してのみ使用できます。また、受信フォルダーの**imapifolder:: openentry**メソッドを呼び出す必要があります。 次の最も高速な方法は、メッセージストアの**IMsgStore:: openentry**メソッドを呼び出すのと同じように、 **imapisession:: openentry**を呼び出すことにより、すべてのメッセージで使用できます。
     
 > [!NOTE]
-> フォルダーとその内容のテーブルは、その中から開かれているメッセージのいずれかの影響を及ぼすことがなくいつでも終了できます。 
+> フォルダーとその内容テーブルは、いつでも、その中から開いたメッセージに悪影響を与えることなく閉じることができます。 
   
-### <a name="to-open-a-message-that-has-been-saved-on-disk"></a>ディスクに保存されているメッセージを開く
+### <a name="to-open-a-message-that-has-been-saved-on-disk"></a>ディスクに保存されているメッセージを開くには
   
-1. _PwcsName_パラメーターのメッセージ ファイルの名前を渡して、 **IStorage**インターフェイス ポインターを取得するために**StgOpenStorage**を呼び出します。 
+1. **StgOpenStorage**を呼び出して、 **IStorage**インターフェイスポインターを取得し、 _pwcsName_パラメーターのメッセージファイルの名前を渡します。 
     
    ```cpp
     LPSTORAGE pStorage = NULL;
@@ -56,7 +56,7 @@ ms.locfileid: "22582981"
     
    ```
 
-2. メッセージへのアクセス、 **IMessage**インターフェイス ポインターを取得するために**OpenIMsgOnIStg**を呼び出します。 
+2. **OpenIMsgOnIStg**を呼び出して、メッセージにアクセスするための**IMessage**インターフェイスポインターを取得します。 
     
    ```cpp
     LPMESSAGE pMessage = NULL;

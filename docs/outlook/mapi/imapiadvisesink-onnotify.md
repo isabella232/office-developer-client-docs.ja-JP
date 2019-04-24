@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 9eec90d3-2369-4340-86ed-0efa58918ed5
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d052e7590ee502b55f2076d698587ab68820ca56
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5983ed3229f6b0053f15a614116cf5680e942587
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351444"
 ---
 # <a name="imapiadvisesinkonnotify"></a>IMAPIAdviseSink::OnNotify
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-通知に応答するには、1 つまたは複数のタスクを実行します。 実行するタスクは、イベントおよび通知を生成するオブジェクトの種類によって異なります。 
+1つまたは複数のタスクを実行して通知に応答します。 実行されるタスクは、イベントの種類と通知を生成するオブジェクトによって異なります。 
   
 ```cpp
 ULONG OnNotify(
@@ -38,29 +38,29 @@ ULONG OnNotify(
 
  _cNotif_
   
-> [in]_LpNotifications_パラメーターで指定された[通知](notification.md)の構造体の数です。 
+> 順番lpnotifications パラメーターが指す[通知](notification.md)構造の数__ 。 
     
- _lpNotifications_
+ _lpnotifications_
   
-> [in]発生したイベントに関する情報を提供する 1 つまたは複数の**通知**構造体へのポインター。 
+> 順番発生したイベントに関する情報を提供する1つまたは複数の**通知**構造体へのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > 通知が正常に処理されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-クライアントまたは MAPI は、特定のオブジェクトの特定の種類の通知を受け取るに登録するのには**サービス プロバイダーのメソッド**を呼び出しを行うときに、通知の処理が開始されます。 **アドバイズ**メソッドにパラメーターの 1 つは、 [IMAPIAdviseSink](imapiadvisesinkiunknown.md)インターフェイスを実装するアドバイズ シンク オブジェクトへのポインターです。 MAPI を介して直接または間接的を登録済みの通知は、サービス プロバイダーに対応するターゲット オブジェクトにイベントが発生したときは、アドバイズ シンクの**OnNotify**メソッドを呼び出します。 
+通知プロセスは、クライアントまたは MAPI が、特定のオブジェクトの特定の種類の通知を受信するために登録するために、サービスプロバイダーの**アドバイズ**メソッドを呼び出すと開始されます。 **advise**メソッドへのパラメーターの1つは、 [IMAPIAdviseSink](imapiadvisesinkiunknown.md)インターフェイスを実装するアドバイズシンクオブジェクトへのポインターです。 登録されている通知に対応するターゲットオブジェクトに対してイベントが発生すると、サービスプロバイダーは MAPI を使用して直接または間接的に、アドバイズシンクの**onnotify**メソッドを呼び出します。 
   
-**OnNotify**への呼び出しは、イベントの原因となっている MAPI の呼び出し時に、または後でに発生します。 **システムでは複数の実行スレッドをサポートする、ことがでく onnotify 登録に使用した同じスレッドまたは別のスレッドのいずれかです。** クライアントを**OnNotify**呼び出しが[HrThisThreadAdviseSink](hrthisthreadadvisesink.md)関数を使用して**アドバイズ**に渡すアドバイズ シンクを作成することで**アドバイス**を呼び出すために使用する同じスレッドで作成していることを確認して行うことができます。 
+**onnotify**への呼び出しは、そのイベントを発生させた MAPI 呼び出しの間、または後で発生する可能性があります。 複数の実行スレッドをサポートするシステムでは、 **onnotify**は、登録に使用したのと同じスレッドで、または別のスレッドで呼び出すことができます。 クライアントでは、 [HrThisThreadAdviseSink](hrthisthreadadvisesink.md)関数を使用して**アドバイズ**するアドバイズシンクを作成すること**** によって、notify の呼び出しに使用したのと同じスレッドで**onnotify**呼び出しが行われるようにすることができます。 
   
-_LpNotifications_パラメーターは、イベント中に変更内容を記述する 1 つまたは複数の**通知**構造体を指します。 イベントの種類ごとに**通知**の構造体のさまざまな種類があります。 
+_lpnotifications_パラメーターは、イベント中に変更された内容を示す1つ以上の**通知**構造を指します。 イベントの種類ごとに異なる種類の**通知**構造があります。 
   
-イベントとそれぞれの値に関連付けられている構造体の種類を表すために使用される値を次の表に一覧します。
+次の表に、使用可能なイベントの種類と、各値に関連付けられている構造を表すために使用される値を示します。
   
-|**通知イベントの種類**|**対応する構造体**|
+|**通知イベントの種類**|**対応する構造**|
 |:-----|:-----|
 |**fnevCriticalError** <br/> |[ERROR_NOTIFICATION](error_notification.md) <br/> |
 |**fnevNewMail** <br/> |[NEWMAIL_NOTIFICATION](newmail_notification.md) <br/> |
@@ -73,29 +73,29 @@ _LpNotifications_パラメーターは、イベント中に変更内容を記述
 |**fnevStatusObjectModified** <br/> |[STATUS_OBJECT_NOTIFICATION](status_object_notification.md) <br/> |
 |**fnevExtended** <br/> |[EXTENDED_NOTIFICATION](extended_notification.md) <br/> |
    
-設定し、通知を停止する方法の詳細については、次のインターフェイスのいずれかの**アドバイス**と**Unadvise**のメソッドの参照のエントリを参照してください: [IABLogon](iablogoniunknown.md)、 [IAddrBook](iaddrbookimapiprop.md)、 [IMAPIForm](imapiformiunknown.md)、 [IMAPISession](imapisessioniunknown.md)、 [IMAPITable](imapitableiunknown.md)、 [IMsgStore](imsgstoreimapiprop.md)、および[IMSLogon](imslogoniunknown.md)。 
+通知の設定および停止の詳細については、次のいずれかのインターフェイスの**Advise**および**アドバイズ**メソッドの参照エントリを参照してください。 [IABLogon](iablogoniunknown.md)、 [IAddrBook](iaddrbookimapiprop.md)、 [imapiform](imapiformiunknown.md)、 [imapisession](imapisessioniunknown.md)、 [IMAPITable](imapitableiunknown.md)、 [IMsgStore](imsgstoreimapiprop.md)、および[IMSLogon](imslogoniunknown.md)。 
   
-通知プロセスの詳細については、 [MAPI でのイベントの通知](event-notification-in-mapi.md)を参照してください。 
+通知プロセスに関する一般的な情報については、「 [MAPI でのイベント通知](event-notification-in-mapi.md)」を参照してください。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**OnNotify**実装は、受信する通知の種類ごとにコードのブロックを 1 つまたは複数の通常から構成されます。 これらのコードのブロック内には、通知への応答として必要と思われるすべてのタスクを実行します。 たとえば、ダイアログ ボックスの表示に含まれているフォルダーに、 **fnevObjectModified**通知を受信する登録するとします。 **OnNotify** **fnevObjectModified**通知を処理するメソッドに追加することをコードのブロック内には、更新の表示を要求するダイアログ ボックスに Windows メッセージを送信する可能性があります。 
+通常、 **onnotify**実装は、受信する通知の種類ごとに1つ以上のコードブロックで構成されます。 これらのコードブロック内で、通知への応答として必要と考えられるすべてのタスクを実行します。 たとえば、ダイアログボックスの表示に含まれているフォルダーで**fnevObjectModified**通知を受信するように登録したとします。 **fnevObjectModified**通知を処理するために**onnotify**メソッドに含めるコードのブロックでは、Windows メッセージをダイアログボックスに送信して、更新された表示を要求することができます。 
   
-変更したり、 **OnNotify**に渡された**通知**の構造体を解放しないでください。 構造内のデータは、 **OnNotify**を返すまでの間だけ有効です。 
+**onnotify**に渡された**通知**構造を変更または解放しないでください。 構造内のデータは、 **onnotify**から戻るまで有効です。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-複数のオブジェクトに変更が発生すると、 **OnNotify**を単一の呼び出しまたはメモリの制約によって、複数の呼び出しでは、登録されているアドバイズ シンクを通知できます。 かどうかにかかわらず、変更のいくつかの 1 つのメソッド呼び出しの結果です。 たとえば、複数のメッセージおよびフォルダー [IMAPIFolder::CopyMessages](imapifolder-copymessages.md)の呼び出しに影響します。 メッセージ ストア プロバイダーでは、対象となるフォルダーまたは多数の呼び出しがあり、それぞれに影響を与えるメッセージのいずれかに、 **fnevObjectModified**イベントの種類の**OnNotify**を 1 つの呼び出しを行うことができます。 同様に、クライアント[IMAPIFolder::CreateMessage](imapifolder-createmessage.md)を繰り返し呼び出す場合は、これらの呼び出しするフォルダーの 1 つの**fnevObjectModified**イベントに結合したり、新しいメッセージごとに個別の**fnevObjectCreated**イベントに分割できます。 
+複数のオブジェクトに変更が発生した場合は、メモリの制約に応じて、 **onnotify**または複数の呼び出しに対して、登録されているアドバイズシンクに対して1回の呼び出しで通知できます。 これは、変更が1つのメソッド呼び出しまたは複数の方法の結果であるかどうかに関係なく該当します。 たとえば、 [imapifolder:: copymessages](imapifolder-copymessages.md)を呼び出すと、複数のメッセージとフォルダーが影響を受ける可能性があります。 メッセージストアプロバイダーとして、1回の呼び出しを**** 、ターゲットフォルダーの**fnevObjectModified**イベントの種類を使用して、または複数の呼び出しを行うことができます。それぞれがメッセージに影響します。 同様に、クライアントが[imapifolder:: CreateMessage](imapifolder-createmessage.md)を繰り返し呼び出した場合、これらの呼び出しはフォルダーの1つの**fnevObjectModified**イベントに結合するか、新しいメッセージごとに個別の**fnevObjectCreated**イベントに分割することができます。 
   
-方法の詳細については、通知を生成する場合に、 [MAPI でのイベント通知](event-notification-in-mapi.md)[イベント通知のサポート](supporting-event-notification.md)を参照してください。 
+通知を生成する方法とタイミングの詳細については、「 [MAPI でのイベント通知](event-notification-in-mapi.md)」と「[サポートイベントの通知](supporting-event-notification.md)」を参照してください。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|AdviseSink.h と AdviseSink.cpp  <br/> |CAdviseSink::OnNotifyDesc  <br/> |MFCMAPI ですべての通知を処理するためには、CAdviseSink クラスが実装されます。  <br/> |
+|AdviseSink および AdviseSink  <br/> |CAdviseSink:: onnotifydesc  <br/> |CAdviseSink クラスは、すべての通知を mfcmapi で処理するために実装されています。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -9,20 +9,20 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 94ec06c5-8d2f-dd27-1eed-1abaf93daba8
 description: 図形の影を拡大または縮小できる割合を、パーセントで指定します。
-ms.openlocfilehash: 0b6392030e7efc8ea36c8d728b99c9b82482840b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5862b61ca1f5df25ca97bf8742b9e20bf45091a9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349162"
 ---
-# <a name="shapeshdwscalefactor-cell-fill-format-section"></a>[ShapeShdwScaleFactor] セル ([塗りつぶしの書式設定] セクション)
+# <a name="shapeshdwscalefactor-cell-fill-format-section"></a>[ShapeShdwScaleFactor] セル ([Fill Format] セクション)
 
 図形の影を拡大または縮小できる割合を、パーセントで指定します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-各シャドウには、図形のピンに対応する影があり、影の pin 位置があります。 たとえば、図形の pin は図形の中央には、影の pin 位置は影の中央にポイントをします。 シンプルな影に縮尺を適用する、拡大率は、影の pin 位置に中心斜体の影に縮尺を適用する、斜めの方向に拡大率が適用されます。 
+各影には影付きのピン位置があります。これは、図形の pin に対応する影上の点です。 たとえば、図形のピンが図形の中央にある場合、影付きのピン位置は影の中心点になります。 単純な影に倍率を適用すると、倍率は、影付きのピン位置に揃えられます。斜体の影に倍率を適用すると、斜体の方向に倍率が適用されます。 
   
 この値をページのすべての図形に設定するには、[Page Properties] セクションで [ShdwScaleFactor] セルを使用します。
   
@@ -32,7 +32,7 @@ ms.locfileid: "19806438"
   
 |||
 |:-----|:-----|
-|セル名 :  <br/> |ShapeShdwScaleFactor  <br/> |
+|セル名 :  <br/> |[shapeshdwscalefactor]  <br/> |
    
 プログラムから、インデックスによって [ShapeShdwScaleFactor] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

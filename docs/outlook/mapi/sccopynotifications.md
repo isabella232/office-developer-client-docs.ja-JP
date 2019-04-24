@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: ac31cf65-a2bc-4c8e-91a4-d2903aa98776
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7d4877c81a52b529aa183ea552430b481c6617f1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 08b9b954f856d64214947d81cf700adee42bcce4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357485"
 ---
 # <a name="sccopynotifications"></a>ScCopyNotifications
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-イベント通知のグループを単一のメモリ ブロックにコピーします。 
+イベント通知のグループをメモリの単一のブロックにコピーします。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 SCODE ScCopyNotifications(
@@ -46,21 +46,21 @@ SCODE ScCopyNotifications(
 
  _cntf_
   
-> [in]_Rgntf_パラメーターで指定された配列内の[通知](notification.md)の構造体の数です。 
+> 順番_rgntf_パラメーターで指定された、配列内の[通知](notification.md)構造の数。 
     
  _rgntf_
   
-> [in]コピーするイベント通知を定義する**通知**の構造体の配列へのポインター。 
+> 順番コピーするイベント通知を定義する**通知**構造の配列へのポインター。 
     
- _pvDst_
+ _pvdst_
   
-> [out]返された通知へのポインター。 
+> 読み上げ返された通知へのポインター。 
     
- _pcb_
+ _設計_
   
-> [out]変数配列のバイト単位のサイズが_rgntf_パラメーターが指す場所にポインターが格納されます。 かどうか NULL の場合、 _pcb_のパラメーターは、 _pvDst_パラメーターに格納されているバイト数を設定します。 
+> 読み上げ(オプション) _rgntf_パラメーターによって指定された配列のサイズ (バイト単位) が格納されている変数へのポインターです。 NULL でない場合、 _pcb_パラメーターは_pvdst_パラメーターに格納されているバイト数に設定されます。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK
   
@@ -70,8 +70,8 @@ E_INVALIDARG
   
 > 無効な通知が発生しました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-_Pcb_のパラメーターに NULL を渡した場合は、コピーは実行されません。_pcb_の null 以外の値が渡された場合、 **ScCopyNotifications**関数は、単一ブロックのメモリをアレイとアレイ自体のサイズをコピーします。 _Pcb_が NULL でない場合は、 _pvDst_パラメーターに格納されているバイト数に設定されています。 _PvDst_パラメーターは、配列全体を格納できる大きさである必要があります。 
+_pcb_パラメーターで NULL が渡された場合、コピーは実行されません。_pcb_で null 以外の値が渡された場合、 **sccopynotifications**関数は、配列のサイズと配列自体をメモリの単一のブロックにコピーします。 _pcb_が NULL でない場合は、 _pvdst_パラメーターに格納されているバイト数に設定されます。 _pvdst_パラメーターは、配列全体を格納するのに十分な大きさでなければなりません。 
   
 

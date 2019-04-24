@@ -1,5 +1,5 @@
 ---
-title: 受信トレイ フォルダーのスキャン
+title: 受信トレイフォルダーのスキャン
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,44 +7,44 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 2ad1459f-d59a-4784-94ea-4cad194e6e50
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5e93dbed0fe56ada5fc41c3e2e51aa3d0c3bef6d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: e954cb2d8029a31e7f69daaa7e8ed55a7953ac02
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356582"
 ---
-# <a name="traversing-the-inbox-folder"></a>受信トレイ フォルダーのスキャン
+# <a name="traversing-the-inbox-folder"></a>受信トレイフォルダーのスキャン
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
- **すべての受信トレイのメッセージを順番に表示**
+ **受信トレイ内のすべてのメッセージを巡回するには**
   
-1. 受信トレイのエントリ id を取得するために[IMsgStore::GetReceiveFolder](imsgstore-getreceivefolder.md)を呼び出します。 
+1. [IMsgStore:: getreceivefolder](imsgstore-getreceivefolder.md)を呼び出して、受信トレイのエントリ識別子を取得します。 
     
-2. 受信トレイを開くには、 **IMAPIFolder::OpenEntry**を呼び出します。 
+2. **imapifolder:: openentry**を呼び出して、受信トレイを開きます。 
     
-3. コンテンツ テーブルを取得するために、受信トレイの[IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md)メソッドを呼び出します。 
+3. 受信トレイの[IMAPIContainer:: getcontentstable](imapicontainer-getcontentstable.md)メソッドを呼び出して、contents テーブルを取得します。 
     
-4. 内容**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) に設定する列および必要なその他の任意の列を制限するテーブルの[IMAPITable::SetColumns](imapitable-setcolumns.md)メソッドを呼び出します。 
+4. コンテンツテーブルの[IMAPITable:: SetColumns](imapitable-setcolumns.md)メソッドを呼び出して、列が**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) に設定され、その他の必要な列を制限します。 
     
-5. 行のグループを取得するために[IMAPITable::QueryRows](imapitable-queryrows.md)を呼び出します。 
+5. 行のグループを取得するには、 [IMAPITable:: QueryRows](imapitable-queryrows.md)を呼び出します。 
     
-6. まで、内容のテーブルには不要になったすべての行があります。
+6. contents テーブルに行がなくなるまで、次のようになります。
     
-1. 各行からのエントリの識別子によって表されるメッセージを開くには、 [IMsgStore::OpenEntry](imsgstore-openentry.md)を呼び出します。 
+1. [IMsgStore:: openentry](imsgstore-openentry.md)を呼び出して、各行からのエントリ id で表されるメッセージを開きます。 
     
-2. ローカル**IMessage**インターフェイス ポインターには、 _lppUnk_パラメーターを割り当てます。 
+2. _lppunk_パラメーターをローカルの**IMessage**インターフェイスポインターに割り当てます。 
     
 3. メッセージのプロパティを操作します。
     
-4. _LppUnk_パラメーターで指定されたポインターを解放します。 
+4. _lppunk_パラメーターで示されているポインターを解放します。 
     
-5. 行の次のグループを取得するために[IMAPITable::QueryRows](imapitable-queryrows.md)を呼び出します。 
+5. 次の行グループを取得するには、 [IMAPITable:: QueryRows](imapitable-queryrows.md)を呼び出します。 
     
-7. コンテンツ テーブルを解放します。
+7. 目次表を解放します。
     
 

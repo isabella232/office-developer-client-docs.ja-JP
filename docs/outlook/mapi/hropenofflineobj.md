@@ -13,11 +13,11 @@ api_type:
 ms.assetid: cee1a940-fe01-d364-5d7c-c9e9dfeb8979
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3ef929bf778fabc4350f553d185838dd5cb2cf0b
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32347748"
 ---
 # <a name="hropenofflineobj"></a>HrOpenOfflineObj
 
@@ -25,13 +25,13 @@ ms.locfileid: "25395799"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-特定のプロファイルでオフラインのオブジェクトを開きます。
+特定のプロファイルに基づいてオフラインオブジェクトを開きます。
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|によってエクスポートされます。  <br/> |msmapi32.dll  <br/> |
+|エクスポート対象:  <br/> |msmapi32  <br/> |
 |呼び出し元:  <br/> |クライアント  <br/> |
 |実装元:  <br/> |Outlook  <br/> |
    
@@ -47,43 +47,43 @@ typedef HRESULT (STDMETHODCALLTYPE HROPENOFFLINEOBJ)(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulReserved_
+ _ulreserved_
   
-> [in]このパラメーターは使用されません。 0 である必要があります。
+> 順番このパラメーターは使用されません。 0である必要があります。
     
  _pwszProfileNameIn_
   
-> [in]オフライン オブジェクトが適用されるプロファイルの名前です。 は、Unicode で表現する必要があります。 
+> 順番オフラインオブジェクトのプロファイルの名前を指定します。 Unicode で表されている必要があります。 
     
- _pGUID_
+ _pguid_
   
-> [in]オフラインの他のオブジェクトからこのオブジェクトを一意に識別に使用できる GUID へのポインター。 **GUID_GlobalState**である必要があります。
+> 順番他のオフラインオブジェクトからこのオブジェクトを一意に識別するために使用できる GUID へのポインター。 **GUID_GlobalState**である必要があります。
     
- _保持_
+ _保持され_
   
-> [in]このパラメーターは使用されません。 **Null**である必要があります。
+> 順番このパラメーターは使用されません。 **null**である必要があります。
     
- _ppOfflineObj_
+ _ppofflineobj_
   
-> [out]要求されたオフライン オブジェクトへのポインター。 呼び出し元がこのポインターを使ってアクセスするのには、 [IMAPIOfflineMgr: IMAPIOffline](imapiofflinemgrimapioffline.md)インターフェイスをオブジェクトがサポートするコールバックを検索して、それ用のコールバックを設定します。 
+> 読み上げ要求されたオフラインオブジェクトへのポインター。 発信者はこのポインターを使用して[IMAPIOfflineMgr: imapioffline](imapiofflinemgrimapioffline.md)インターフェイスにアクセスし、このオブジェクトでサポートされているコールバックを検索し、そのためのコールバックを設定できます。 
     
 ## <a name="return-values"></a>戻り値
 
 S_OK 
   
-- 関数の呼び出しが成功します。
+- 関数呼び出しが成功しました。
     
 MAPI_E_NOT_FOUND
   
-- 関数呼び出しが失敗しました。
+- 関数の呼び出しに失敗しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-これは、クライアントでクライアントは、特定のプロファイルの接続状態の変更の通知を希望する場合は、最初の呼び出しです。 **HrOpenOfflineObj**を呼び出すと、時に、クライアントは、 **IMAPIOfflineMgr**をサポートしているオフラインのオブジェクトを取得します。 クライアントを使用して[IMAPIOffline::GetCapabilities](imapioffline-getcapabilities.md))、オブジェクトがサポートするコールバックの種類を確認し、コールバックを (を使用して設定[IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md))。
+これは、クライアントが特定のプロファイルの接続状態変更を通知する際にクライアントが行う最初の呼び出しです。 **hroIMAPIOfflineMgr offlineobj**を呼び出すと、クライアントは**** をサポートするオフラインオブジェクトを取得します。 クライアントは、( [imapioffline:: getcapabilities](imapioffline-getcapabilities.md)を使用して) オブジェクトでサポートされているコールバックの種類を確認し、そのためのコールバックを設定します ( [IMAPIOfflineMgr:: Advise](imapiofflinemgr-advise.md)を使用)。
   
-Msmapi32.dll のこの関数のアドレスを検索するには、 [GetProcAddress](https://msdn.microsoft.com/library/ms683212.aspx)を使用して、プロシージャ名として**HrOpenOfflineObj@20**を指定します。 
+[GetProcAddress](https://msdn.microsoft.com/library/ms683212.aspx)を使用して msmapi32 でこの関数のアドレスを検索する場合は、手順名として**hrolook offlineobj @ 20**を指定します。 
   
- **HrOpenOfflineObj**は、COM アドインおよび Exchange クライアント拡張機能が Outlook のプロセス内で実行中の MAPI プロバイダーは、クライアントに対してのみ有効です。 それ以外の場合、 **HrOpenOfflineObj**は**MAPI_E_NOT_FOUND**を返します。 
+ **hroare offlineobj**は、Outlook プロセス内で実行されている MAPI プロバイダー、COM アドイン、および Exchange クライアント拡張機能であるクライアントに対してのみ機能します。 それ以外の場合、 **hroMAPI_E_NOT_FOUND offlineobj**は**** を返します。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -96,5 +96,5 @@ Msmapi32.dll のこの関数のアドレスを検索するには、 [GetProcAddr
 
 [オフライン状態 API について](about-the-offline-state-api.md)
   
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
 

@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: db3a6947-f640-43e8-a2df-71e96560fd81
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 680c9dd9db2743c031de7cda4673d7044ec533e8
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25397430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360740"
 ---
 # <a name="pidtaguserfields-canonical-property"></a>PidTagUserFields 標準プロパティ
 
@@ -21,7 +21,7 @@ ms.locfileid: "25397430"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-名前、データ型、およびその他のユーザー定義のフィールド情報が含まれています。
+ユーザー定義フィールドの名前、データ型、およびその他の情報が含まれています。
   
 |||
 |:-----|:-----|
@@ -30,28 +30,28 @@ ms.locfileid: "25397430"
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |MAPI フォルダー  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-、各項目については、Outlook は、対応する**IMessage**オブジェクトの[PidLidPropertyDefinitionStream](pidlidpropertydefinitionstream-canonical-property.md)プロパティにユーザー定義のすべてのフィールドの定義を格納します。 **PidLidPropertyDefinitionStream**プロパティには、 [PropertyDefinition](propertydefinition-stream-structure.md)、フィールド定義が含まれていると呼ばれるバイナリ ストリームが含まれています。 ストリームの構造体フィールドの定義の詳細については、[ストリームの構造](stream-structures.md)を参照してください。
+各アイテムについて、Outlook は、すべてのユーザー定義フィールドの定義を対応する**IMessage**オブジェクトの[PidLidPropertyDefinitionStream](pidlidpropertydefinitionstream-canonical-property.md)プロパティに格納します。 **PidLidPropertyDefinitionStream**プロパティには、フィールド定義を含む[propertydefinition](propertydefinition-stream-structure.md)と呼ばれるバイナリストリームが含まれています。 フィールド定義のストリーム構造の詳細については、「 [stream 造](stream-structures.md)」を参照してください。
   
-フォルダーごとには、Outlook は、関連付けられたメッセージのメッセージ クラスの IPC.MS の**PidTagUserFields**プロパティには、そのフォルダー内のすべてのユーザー定義フィールドの定義を格納します。REN。USERFIELDS の各フォルダーはその内容が関連付けられているテーブルでは、このクラスの複数のメッセージが含まれていると推定します。 
+各フォルダーについて、Outlook は、メッセージクラス IPC.MS の関連付けられたメッセージの**PidTagUserFields**プロパティに、そのフォルダー内のすべてのユーザー定義フィールドの定義を格納します。REN.userfields-各フォルダーは、関連付けられた contents テーブルにこのクラスのメッセージを1つだけ含めることを想定していました。 
   
 > [!NOTE]
-> フォルダー内のユーザー定義フィールドのセットは可能性があります必ずしもその項目の各フィールドのユーザー定義の設定を一致しません。 
+> フォルダー内のユーザー定義フィールドのセットは、各アイテムのユーザー定義フィールドのセットと必ずしも一致しない場合があります。 
   
-一連のフォルダー内のユーザー定義フィールドは、フォルダーの [フィールドの選択など、Outlook の UI でのさまざまな場所に表示されます。 メッセージの**PidTagUserFields**プロパティには、バイナリ ストリーム、 **FolderUserFields**、フォルダー フィールドの定義が含まれているが含まれています。 フォルダー フィールドの定義については、ストリームの構造体の詳細については、[フォルダー フィールドのストリームの構造体](folder-fields-stream-structures.md)および[FolderUserFields ストリームのサンプル](folderuserfields-stream-sample.md)を参照してください。
+フォルダー内のユーザー定義フィールドのセットは、フォルダーの [フィールドの選択] など、Outlook UI 内のさまざまな場所に表示されます。 メッセージの**PidTagUserFields**プロパティには、フォルダーフィールドの定義を含むバイナリストリーム、 **folderuserfields**が含まれています。 フォルダーフィールド定義のストリーム構造の詳細については、「 [folder Fields stream 構造](folder-fields-stream-structures.md)」および「 [folderuserfields stream Sample](folderuserfields-stream-sample.md)」を参照してください。
   
-## <a name="section-heading"></a>セクションの見出し
+## <a name="section-heading"></a>セクション見出し
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -63,11 +63,11 @@ Mapidefs.h
   
 [新しいユーザー定義フィールドの定義を追加する](how-to-add-a-definition-for-a-new-user-defined-field.md)
   
-[PropertyDefinition ストリームのサンプル](propertydefinition-stream-sample.md)
+[propertydefinition ストリームのサンプル](propertydefinition-stream-sample.md)
   
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

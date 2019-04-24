@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: c327e31a-7b62-4e21-9b69-b27442f1eaca
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 1ae94b40d984adee0f3c888f69dfdbffb1e352e1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 2ec78331fd013777f001d39bd7e978a67abb5342
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351199"
 ---
 # <a name="imapiviewadvisesinkonsaved"></a>IMAPIViewAdviseSink::OnSaved
 
@@ -25,7 +25,7 @@ ms.locfileid: "22584437"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームの現在のメッセージが保存されているフォーム ビューアーを通知します。
+フォームの現在のメッセージが保存されたことをフォームビューアーに通知します。
   
 ```cpp
 HRESULT OnSaved( void );
@@ -35,17 +35,17 @@ HRESULT OnSaved( void );
 
 なし
   
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>����
+## <a name="remarks"></a>解説
 
-フォーム オブジェクトは、フォームの現在のメッセージが正常に保存された後に、 **IMAPIViewAdviseSink::OnSaved**メソッドを呼び出します。 これを行うメッセージへの変更を反映するように、windows を更新するためのビューアーを使用できます。 
+form オブジェクトは、フォーム内の現在のメッセージが正常に保存された後に、 **IMAPIViewAdviseSink:: onsaved**メソッドを呼び出します。 これにより、閲覧者は、メッセージの変更を反映するように windows を更新することができます。 
   
-フォームの通知の詳細については、[送信およびフォームの通知の受信](sending-and-receiving-form-notifications.md)を参照してください。
+フォーム通知の詳細については、「[フォーム通知の送信と受信](sending-and-receiving-form-notifications.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

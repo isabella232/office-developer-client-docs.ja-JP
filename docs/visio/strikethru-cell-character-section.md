@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: b03b4415-0b1a-eb03-2b5e-373b39a0f07a
 description: テキストを取り消し線として書式設定するかどうかを指定します。
-ms.openlocfilehash: 2b25d1d9b00d062214c02c3fc7b14569b43a5110
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4a58123814a4782c279a36d202e1293ec222ef93
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349337"
 ---
-# <a name="strikethru-cell-character-section"></a>[Strikethru] セル ([文字] セクション)
+# <a name="strikethru-cell-character-section"></a>[Strikethru] セル ([Character] セクション)
 
 テキストを取り消し線として書式設定するかどうかを指定します。
   
@@ -25,7 +25,7 @@ ms.locfileid: "19806585"
 |TRUE  <br/> |テキストを取り消し線として書式設定します。  <br/> |
 |FALSE  <br/> |テキストを取り消し線として書式設定しません。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 このセルの値は、[**テキスト**] ダイアログ ボックスを使用して設定することもできます (このダイアログ ボックスを開くには、[**ホーム**] タブで [**フォント**] 矢印をクリックします)。 
   
@@ -33,14 +33,14 @@ ms.locfileid: "19806585"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |Char.Strikethru [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+|セル名:  <br/> |[strikethru] [ *i* ] *i* = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [Strikethru] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionCharacter** <br/> |
-|行インデックス:  <br/> |**visRowCharacter** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+|行インデックス:  <br/> |**visRowCharacter** +  *i* = ** 0、1、2...  <br/> |
 |セル インデックス:  <br/> |**visCharacterStrikethru** <br/> |
    
 

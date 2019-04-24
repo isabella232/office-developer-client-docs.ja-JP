@@ -7,35 +7,35 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 670fb896-9aaf-4a96-83f7-76237409e956
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 0366e889f1c63e5fe40760ca80cec701cd6b3713
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: d8e620516e2b3e61cd07f3a08af989cc4ed5b61e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348602"
 ---
 # <a name="opening-the-default-message-store"></a>既定のメッセージ ストアを開く
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-特定のセッションでは、1 つのメッセージ ・ ストアは、既定のメッセージ ストアとして機能します。 既定のメッセージ ストアには、次の特徴があります。
+特定のセッションでは、1つのメッセージストアが既定のメッセージストアとして機能します。 既定のメッセージストアには、次のような特性があります。
   
-- **PR_DEFAULT_STORE** ([PidTagDefaultStore](pidtagdefaultstore-canonical-property.md)) のプロパティは、TRUE に設定されます。
+- **PR_DEFAULT_STORE** ([PidTagDefaultStore](pidtagdefaultstore-canonical-property.md)) プロパティは TRUE に設定されています。
     
-- **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) のプロパティで、STATUS_DEFAULT_STORE フラグが設定されています。
+- STATUS_DEFAULT_STORE フラグは、 **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) プロパティで設定されます。
     
-- メッセージ ストアを開いたときに、IPM サブツリーおよび検索の結果、一般的なビューと個人用ビューのルート フォルダー MAPI 自動的に作成します。 これらのフォルダーの詳細については、 [IPM サブツリー](ipm-subtree.md)および[MAPI の特別なフォルダー](mapi-special-folders.md)を参照してください。 
+- MAPI は、メッセージストアが開かれたときに、検索結果、共通ビュー、個人用ビューの IPM サブツリーとルートフォルダーを自動的に作成します。 これらのフォルダーの詳細については、「 [IPM Subtree](ipm-subtree.md) and [MAPI Special folders](mapi-special-folders.md)」を参照してください。 
     
-既定のメッセージ ストアのエントリ id を取得するには、メッセージ ストアのテーブルを開き、 [HrQueryAllRows](hrqueryallrows.md)への呼び出しで適切な制限を適用する[IMAPISession::GetMsgStoresTable](imapisession-getmsgstorestable.md)を呼び出す必要があります。 **HrQueryAllRows**には、既定のメッセージ ストアを表す 1 つの行セットの行が返されます。 **HrQueryAllRows**に渡された制限は、形式は次のいずれかで実行できます。 
+既定のメッセージストアのエントリ識別子を取得するには、 [imapisession:: getmsgstorestable](imapisession-getmsgstorestable.md)を呼び出して、メッセージストアテーブルを開き、 [hrqueryallrows](hrqueryallrows.md)への呼び出しに適切な制限を適用する必要があります。 **hrqueryallrows**は、既定のメッセージストアを表す1行の行セットを返します。 **hrqueryallrows**に渡す制限は、次のいずれかの形式で行うことができます。 
   
-1. 結合する**SAndRestriction**構造体を使用して**** 制限します。 
+1. **SAndRestriction**構造体を使用して結合する**と**、次のような制限があります。 
     
-   - **PR_DEFAULT_STORE**プロパティの存在をテストするのには**SExistRestriction**構造体を使用する制限が存在します。 
+   - **PR_DEFAULT_STORE**プロパティが存在するかどうかをテストするために、 **sexistrestriction**構造を使用する存在する制限。 
     
-   - **PR_DEFAULT_STORE**プロパティに TRUE の値をチェックする[SPropertyRestriction](spropertyrestriction.md)構造体を使用するプロパティの制限。 
+   - **PR_DEFAULT_STORE**プロパティの TRUE 値をチェックするために[spropertyrestriction](spropertyrestriction.md)構造を使用するプロパティ制限。 
     
-2. **PR_RESOURCE_FLAGS**プロパティをマスクとして STATUS_DEFAULT_STORE を適用するための[SBitMaskRestriction](sbitmaskrestriction.md)構造体を使用するビットマスクの制限。 
+2. **PR_RESOURCE_FLAGS**プロパティに対するマスクとして STATUS_DEFAULT_STORE を適用するために[sbitmaskrestriction](sbitmaskrestriction.md)構造を使用するビットマスク制限。 
     
 ## <a name="see-also"></a>関連項目
 

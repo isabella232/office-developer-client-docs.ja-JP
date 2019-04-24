@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 01fa459f-597d-4b16-b340-a79fb270cd71
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9f37e57f997ead58b1ef0e9a27ccbdb0a810be06
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b05f5b30eceb7df1bed76c64f4bdda87ede0e463
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348630"
 ---
 # <a name="openstreamonfile"></a>OpenStreamOnFile
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ファイルの内容にアクセスするのには OLE **IStream**オブジェクトを初期化します。 この関数は、パスとファイルの拡張子、そのため、 [OpenStreamOnFileW](openstreamonfilew.md)では、この関数の Unicode バージョンの使用を含むファイル名が推奨されている ANSI 文字列を受け取ります。
+OLE **IStream**オブジェクトを割り当てて初期化し、ファイルの内容にアクセスします。 この関数は、パスとファイル拡張子を含むファイル名として ANSI 文字列を受け取ります。このため、 [openstreamonfilew](openstreamonfilew.md)の Unicode バージョンを使用することをお勧めします。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 HRESULT STDMETHODCALLTYPE OpenStreamOnFile(
@@ -48,49 +48,49 @@ HRESULT STDMETHODCALLTYPE OpenStreamOnFile(
 
  _lpAllocateBuffer_
   
-> [in]メモリの割り当てに使用する[MAPIAllocateBuffer](mapiallocatebuffer.md)関数へのポインター。 
+> 順番メモリの割り当てに使用される[MAPIAllocateBuffer](mapiallocatebuffer.md)関数へのポインター。 
     
- _lpFreeBuffer_
+ _lpfreebuffer_
   
-> [in]メモリを解放するために使用する、 [MAPIFreeBuffer](mapifreebuffer.md)関数へのポインター。 
+> 順番メモリを解放するために使用される[MAPIFreeBuffer](mapifreebuffer.md)関数へのポインター。 
     
  _ulFlags_
   
-> [in]OLE **IStream**オブジェクトを通じてアクセスするのファイルを開くまたは作成を制御するために使用するフラグのビットマスクです。 次のフラグを設定することができます。 
+> 順番OLE **IStream**オブジェクトを通じてアクセスされるファイルの作成またはオープンを制御するために使用されるフラグのビットマスクです。 次のフラグを設定できます。 
     
 SOF_UNIQUEFILENAME 
   
-> 一時ファイルは、 **IStream**オブジェクトを作成するのには。 このフラグが設定されている場合、STGM_CREATE と STGM_READWRITE のフラグも設定してください。 
+> **IStream**オブジェクトの一時ファイルが作成されます。 このフラグが設定されている場合は、STGM_CREATE と STGM_READWRITE のフラグも設定する必要があります。 
     
 STGM_CREATE 
   
-> ファイルは、1 つ既に存在する場合でも作成すること。 _場合_パラメーターが設定されていない場合は、このフラグと STGM_DELETEONRELEASE の両方を設定する必要があります。 STGM_CREATE が設定されている場合、STGM_READWRITE のフラグも設定する必要があります。 
+> ファイルは、既に存在している場合でも作成されます。 _lpszfilename_パラメーターが設定されていない場合は、このフラグと STGM_DELETEONRELEASE の両方を設定する必要があります。 STGM_CREATE が設定されている場合は、STGM_READWRITE フラグも設定する必要があります。 
     
 STGM_DELETEONRELEASE 
   
-> ファイルでは、 **IStream**オブジェクトが解放されるときに削除されます。 _場合_パラメーターが設定されていない場合は、このフラグと STGM_CREATE の両方を設定する必要があります。 
+> **IStream**オブジェクトが解放されるときに、ファイルを削除します。 _lpszfilename_パラメーターが設定されていない場合は、このフラグと STGM_CREATE の両方を設定する必要があります。 
     
 STGM_READ 
   
-> ファイルは読み取り専用アクセスで開くまたは作成するのには。 
+> ファイルを作成するか、読み取り専用アクセスで開くかを指定します。 
     
 STGM_READWRITE 
   
-> ファイルは、読み取り/書き込み権限で開くまたは作成するのには。 このフラグが設定されていない場合、STGM_CREATE フラグする必要がありますを設定できませんか。 
+> ファイルは読み取り/書き込みアクセス許可で作成または開くことができます。 このフラグが設定されていない場合は、STGM_CREATE フラグを設定しないでください。 
     
- _場合_
+ _lpszfilename_
   
-> [in]ファイル名、パスおよび**OpenStreamOnFile**が**IStream**オブジェクトを初期化する対象のファイルの拡張子を含みます。 SOF_UNIQUEFILENAME フラグが設定されている場合、_場合_に、一時ファイルを作成するためのディレクトリへのパスが含まれています。 _場合_が NULL の場合は、 **OpenStreamOnFile**では、システムから適切なパスを取得し、STGM_CREATE と STGM_DELETEONRELEASE の両方のフラグを設定する必要があります。 
+> 順番**openstreamonfile**が**IStream**オブジェクトを初期化するファイルのパスと拡張子を含む filename。 SOF_UNIQUEFILENAME フラグが設定されている場合、 _lpszfilename_には、一時ファイルを作成するディレクトリへのパスが含まれます。 _lpszfilename_が NULL の場合、 **openstreamonfile**はシステムから適切なパスを取得し、STGM_CREATE と STGM_DELETEONRELEASE の両方のフラグを設定する必要があります。 
     
- _lpszPrefix_
+ _lpszprefix_
   
-> [in]**OpenStreamOnFile**が**IStream**オブジェクトを初期化するファイル名の接頭辞。 かどうか設定すると、プレフィックスする必要がありますが含まれている以下の 3 文字です。 _LpszPrefix_が NULL の場合は、"SOF"の接頭辞を使用します。 
+> 順番**openstreamonfile**が**IStream**オブジェクトを初期化するファイル名のプレフィックス。 設定されている場合、プレフィックスは3文字以下である必要があります。 _lpszprefix_が NULL の場合は、プレフィックス "SOF" が使用されます。 
     
- _lppStream_
+ _lppstream_
   
-> [out]**IStream**インターフェイスを公開するオブジェクトへのポインターへのポインター。 
+> 読み上げ**IStream**インターフェイスを公開しているオブジェクトへのポインターへのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -98,35 +98,35 @@ S_OK
     
 MAPI_E_NO_ACCESS 
   
-> 権限のないユーザーがファイルにアクセスできませんでしたか、読み取り専用ファイルを変更できないためです。 
+> ユーザーのアクセス許可が不足しているため、または読み取り専用ファイルを変更できないため、ファイルにアクセスできませんでした。 
     
 MAPI_E_NOT_FOUND 
   
-> 指定のファイルが存在しません。
+> 指定したファイルが存在しません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**OpenStreamOnFile**の関数には、SOF_UNIQUEFILENAME フラグの設定によって、2 つの重要な用途があります。 **OpenStreamOnFile**が**IStream**オブジェクトの例では、 **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) のプロパティに**IStream を使用して添付ファイルの内容をコピーするのには、既存のファイルを開きますこのフラグが設定されていない場合:: CopyTo**メソッドです。 ここで_場合_のパラメーターは、ファイルのファイル名とパスを指定します。 
+**openstreamonfile**関数には、SOF_UNIQUEFILENAME フラグの設定によって区別される、2つの重要な用途があります。 このフラグが設定されていない場合、 **openstreamonfile**は、istream オブジェクトを既存のファイルに開きます。たとえば、 **** istream を使用して添付ファイルの**PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) プロパティにコンテンツをコピーします。 **:: CopyTo**メソッド。 この場合、 _lpszfilename_パラメーターには、ファイルのパスとファイル名を指定します。 
   
-SOF_UNIQUEFILENAME を設定すると、 **OpenStreamOnFile**は、 **IStream**オブジェクトのデータを保持する一時ファイルを作成します。 この使用方法の_場合_のパラメーターはオプションで、ファイルを作成するのには、 _lpszPrefix_パラメーターは、ファイル名のプレフィックスをオプションで指定できます、ディレクトリへのパスを指定できます。 
+SOF_UNIQUEFILENAME が設定されている場合、 **openstreamonfile**は**IStream**オブジェクトのデータを保持するための一時ファイルを作成します。 この使用法では、必要に応じて、ファイルを作成するディレクトリへのパスを_lpszfilename_パラメーターで指定できます。また、必要に応じて、 _lpszfilename_パラメーターでファイル名のプレフィックスを指定することもできます。 
   
-**IStream**オブジェクトには、呼び出し元のクライアント アプリケーションまたはサービス プロバイダーが終了したらは、OLE **IStream::Release**メソッドを呼び出すことによって解放にする必要があります。 
+呼び出し元クライアントアプリケーションまたはサービスプロバイダーが**IStream**オブジェクトで終了すると、OLE **istream:: Release**メソッドを呼び出して解放する必要があります。 
   
-MAPI で示される_lpAllocateBuffer_および多くのメモリの割り当てと解放の_lpFreeBuffer_特に[IMAPIProp などのオブジェクトのインターフェイスを呼び出すときに、クライアント アプリケーションによって使用するメモリを割り当てることの機能を使用します。GetProps](imapiprop-getprops.md)と[IMAPITable::QueryRows](imapitable-queryrows.md)。 
+MAPI では、特に、 _lpAllocateBuffer_および_lpfreebuffer_で参照されている関数を使用して、imapiprop などのオブジェクトインターフェイスを呼び出すときに、クライアントアプリケーションが使用するメモリを割り当て[ます。GetProps](imapiprop-getprops.md)と[IMAPITable:: QueryRows](imapitable-queryrows.md)。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-メッセージング システムに固有の名前を持つ一時ファイルを作成するのには SOF_UNIQUEFILENAME フラグを使用します。 このフラグが設定されている場合、一時ファイルと_lpszPrefix_パラメーターのパスである_場合_のパラメーターを指定には、ファイル名の先頭の文字が含まれています。 構築されたファイル名は<prefix>HHHH。TMP は 16 進数です。 _場合_が NULL の場合は、ファイルは**値**では、Windows の機能から返される一時ファイルのディレクトリまたは現在のディレクトリに一時ファイルのディレクトリが指定されていない場合。 
+SOF_UNIQUEFILENAME フラグは、メッセージングシステムに固有の名前を持つ一時ファイルを作成するために使用されます。 このフラグが設定されている場合、 _lpszfilename_パラメーターは一時ファイルのパスを指定し、 _lpszfilename_パラメーターにはファイル名の先頭文字が含まれます。 構築された<prefix>ファイル名は hhhhhhhh-hhhh-hhhh-hhhh-hhhhhhhhhhhh です。TMP、hhhhhhhh-hhhh-hhhh-hhhh-hhhhhhhhhhhh は16進数の数値です。 _lpszfilename_が NULL の場合は、Windows 関数**GetTempPath**から返される一時ファイルディレクトリ、または一時ファイルディレクトリが指定されていない場合は現在のディレクトリにファイルが作成されます。 
   
-SOF_UNIQUEFILENAME フラグが設定されていない場合は、 _lpszPrefix_は無視され、_場合_は、開くまたは作成するファイルのファイル名と完全修飾パスを含める必要があります。 ファイルを開くか_ulFlags_に設定されている他のフラグを基に作成されます。 
+SOF_UNIQUEFILENAME フラグが設定されていない場合、 _lpszprefix_は無視され、 _lpszprefix_には開くまたは作成するファイルの完全修飾パスとファイル名が含まれている必要があります。 このファイルは、 _ulflags_に設定されている他のフラグに基づいて開かれるか作成されます。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|File.cpp  <br/> |WriteAttachStreamToFile  <br/> |MFCMAPI では、 **OpenStreamOnFile**メソッドを使用して、添付ファイルがそれに書き出されますので、ファイル ストリームをオープンします。  <br/> |
+|ファイル .cpp  <br/> |writeattachstreamtofile  <br/> |mfcmapi は、 **openstreamonfile**メソッドを使用してファイルのストリームを開き、添付ファイルに書き出すことができるようにします。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

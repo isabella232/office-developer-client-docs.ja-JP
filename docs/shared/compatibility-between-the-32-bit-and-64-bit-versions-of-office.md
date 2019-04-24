@@ -6,11 +6,11 @@ ms.assetid: ff49dc9e-daf8-43cf-8802-51c2537ed561
 description: 32 ビット バージョンの Office と 64 ビット バージョンの Office の互換性についてご確認ください。
 localization_priority: Priority
 ms.openlocfilehash: b03323b37b242c9992c47cd737ae54f3f9bbf2ca
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359823"
 ---
 # <a name="compatibility-between-the-32-bit-and-64-bit-versions-of-office"></a>Office の 32 ビット バージョンと 64 ビット バージョン間の互換性
 
@@ -25,7 +25,7 @@ Visual Basic for Applications 7.0 (VBA 7) は 64 ビット バージョンの Of
 > [!NOTE]
 > 既定で、64 ビット バージョンの Office をインストールすると、32 ビット バージョンが 64 ビット システムと共にインストールされます。Microsoft Office 64 ビット バージョンのインストール オプションを明示的に選択する必要があります。 
   
-VBA 7 では、既存の Windows API ステートメント (**Declare** ステートメント) を更新して、64 ビット バージョンで動作するようにしなければなりません。さらに、これらのステートメントで使われているユーザー定義型のアドレス ポインターと表示ウィンドウ ハンドルを更新することも必要です。この点については、32 ビット バージョンと 64 ビット バージョン間の互換性に関する問題と推奨される解決案と共に、この記事で詳しく説明します。 
+VBA 7 では、既存の Windows API ステートメント (**Declare** ステートメント) を更新して、64 ビット バージョンで動作するようにしなければなりません。 さらに、これらのステートメントで使用されるアドレス ポインターとディスプレイ ウィンドウ ハンドルをユーザー定義型で更新する必要があります。 この点については、32 ビット バージョンと 64 ビット バージョン間の互換性に関する問題と推奨される解決案と共に、この記事で詳しく説明します。 
   
 ## <a name="comparing-32-bit-and-64-bit-systems"></a>32 ビット システムと 64 ビット システムの比較
 <a name="odc_office_Compatibility32bit64bit_Comparing32BitSystemsto64BitSystems"> </a>
@@ -67,7 +67,7 @@ Office のネイティブの 64 ビット プロセスでは 32 ビットのバ�
 VBA ライブラリとタイプ ライブラリを組み合わせれば、Office アプリケーションの作成にさまざまな機能を使えるようになります。ただし、コンピューターのオペレーティング システムや他のコンポーネントとの直接のやりとりが必要になることもあります。たとえば、メモリやプロセスの管理、ウィンドウやコントロールなどの UI 要素の操作、Windows レジストリの変更を行うときです。このような状況では、DLL ファイルに組み込まれた外部関数を使うのが最善策です。VBA でこれを行うには、 **Declare** を使って API 呼び出しを行います。 
   
 > [!NOTE]
-> Microsoft は、1,500 個の Declare ステートメントが含まれている Win32API.txt ファイルと、コードに含める **Declare** ステートメントをコピーするツールを提供しています。 ただし、これらのステートメントは 32 ビット システム用であるため、この記事で後ほど説明する情報に従って 64 ビットに変換する必要があります。 既存の **Declare** ステートメントは、**PtrSafe** 属性を使って 64 ビットに対して安全なステートメントとしてマークするまでは、64 ビットの VBA にコンパイルされません。 この種類の変換の例については、Excel MVP Jan Karel Pieterse の Web サイト ([https://www.jkp-ads.com/articles/apideclarations.asp](https://www.jkp-ads.com/articles/apideclarations.asp)) をご覧ください。 [Office Code Compatibility Inspector ユーザーズ ガイド](https://technet.microsoft.com/en-us/library/ee833946%28office.14%29.aspx)は、**PtrSafe** 属性と適切な戻り値の型 (必要に応じて) の API **Declare** ステートメントの構文を検査するのに役立ちます。 
+> Microsoft は、1,500 個の Declare ステートメントが含まれている Win32API.txt ファイルと、コードに含める **Declare** ステートメントをコピーするツールを提供しています。 ただし、これらのステートメントは 32 ビット システム用であるため、この記事で後ほど説明する情報に従って 64 ビットに変換する必要があります。 既存の **Declare** ステートメントは、**PtrSafe** 属性を使って 64 ビットに対して安全なステートメントとしてマークするまでは、64 ビットの VBA にコンパイルされません。 この種類の変換の例については、Excel MVP Jan Karel Pieterse の Web サイト ([https://www.jkp-ads.com/articles/apideclarations.asp](https://www.jkp-ads.com/articles/apideclarations.asp)) をご覧ください。 [Office Code Compatibility Inspector ユーザーズ ガイド](https://technet.microsoft.com/ja-JP/library/ee833946%28office.14%29.aspx)は、**PtrSafe** 属性と適切な戻り値の型 (必要に応じて) の API **Declare** ステートメントの構文を検査するのに役立ちます。 
   
 **Declare** ステートメントの形式は、サブルーチン (戻り値がない) と関数 (戻り値がある) のどちらを呼び出すのかに応じて、次のどちらかになります。 
   

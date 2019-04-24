@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 158b4188-570c-3817-bf34-8dc0c64befa5
 description: ショートカット メニューまたはアクション タグ メニューのアクションを読み取り専用にするかどうかを制御します。
-ms.openlocfilehash: bf2d0f7e50a3126611662af8e068485986c26a13
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f45f22001a4d7275bb9367414c8b04ea3c0d9c6e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359991"
 ---
-# <a name="readonly-cell-actions-section"></a>[ReadOnly] セル ([操作] セクション)
+# <a name="readonly-cell-actions-section"></a>[ReadOnly] セル ([Actions] セクション)
 
 ショートカット メニューまたはアクション タグ メニューのアクションを読み取り専用にするかどうかを制御します。 
   
@@ -28,22 +28,22 @@ ms.locfileid: "19806145"
 |TRUE  <br/> |アクションはメニューに表示されますが、読み取り専用です。  <br/> |
 |FALSE  <br/> |アクションはメニューに表示され、選択できます (既定値)。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-読み取り専用操作では、アクションのタグやショートカット メニューに表示されますがそれを選択することはできません。 淡色表示されますが、ラベルのように、色付きの背景に表示されます。 メニュー項目が淡色表示にするには、無効なセルを使用します。 
+アクションが読み取り専用の場合、アクション タグ メニューまたはショートカット メニューに表示されますが、選択できません。 灰色表示にはなりませんが、色が付いた背景の上にラベルのように表示されます。 そのメニュー項目を灰色表示にするには、[Disabled] セルを使用します。 
   
 別の数式から、または **CellsU** プロパティを使用してプログラムから、名前によって [ReadOnly] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |アクションです。 *名*です。ReadOnlywhere アクションです。  *アクション行の名前します。*  <br/> |
+|セル名:  <br/> |アクション. *名前*です。ReadOnlywhere アクション。  *name*は、Actions 行の名前です。  <br/> |
    
 プログラムから、インデックスによって [ReadOnly] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionAction** <br/> |
-|行インデックス:  <br/> |**visRowAction** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+|行インデックス:  <br/> |**visRowAction** +  *i* = ** 0、1、2...  <br/> |
 |セル インデックス:  <br/> |**visActionReadOnly** <br/> |
    
 

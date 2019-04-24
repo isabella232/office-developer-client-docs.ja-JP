@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 0edea0ea-58dd-15da-6d4f-185d40133452
 description: 図形またはページの既定のハイパーリンクを指定します。既定のハイパーリンクを設定するには、このセルの値を TRUE に設定します。
-ms.openlocfilehash: a8bfc045559a2c2904ae4a97c489248fb6c446c9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9991bd0e241c5dfd4fda65aeff8b6cc203ad3458
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360278"
 ---
-# <a name="default-cell-hyperlinks-section"></a>[Default] セル ([ハイパーリンク] セクション)
+# <a name="default-cell-hyperlinks-section"></a>[Default] セル ([Hyperlinks] セクション)
 
 図形またはページの既定のハイパーリンクを指定します。既定のハイパーリンクを設定するには、このセルの値を TRUE に設定します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 既定のハイパーリンクは、図形をクリックして [**挿入**] タブの [**ハイパーリンク**] をクリックし、[**既定値**] をクリックすることで設定することもできます。既定のハイパーリンクは太字で表示されます。
   
@@ -28,14 +28,14 @@ ms.locfileid: "19805193"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |ハイパーリンク *名*です。既定の場所のハイパーリンクです。 *名前*は、行の名前  <br/> |
+|セル名:  <br/> |ハイパーリンク *名前*です。既定のハイパーリンク先。 *name*には、行の名前を指定します。  <br/> |
    
 プログラムから、インデックスによって [Default] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionHyperlink** <br/> |
-|行インデックス:  <br/> |**visRow1stHyperlink** +  *i* 、 *i* = 0, 1, 2.  <br/> |
-|セル インデックス:  <br/> |**visHLinkDefault** <br/> |
+|行インデックス:  <br/> |**visRow1stHyperlink** +  *i* = ** 0、1、2...  <br/> |
+|セル インデックス:  <br/> |**vishlinkdefault** <br/> |
    
 

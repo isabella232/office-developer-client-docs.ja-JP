@@ -13,11 +13,11 @@ api_type:
 ms.assetid: bec199b5-abfd-4686-ad59-21092212e1a5
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2962f973aa87b88f237ded69573df9ef312a7bc5
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25401105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359781"
 ---
 # <a name="pidtagaccount-canonical-property"></a>PidTagAccount 標準プロパティ
 
@@ -25,42 +25,42 @@ ms.locfileid: "25401105"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-受信者のアカウント名が含まれています。 
+受信者のアカウント名を含みます。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_ACCOUNT、PR_ACCOUNT_A、PR_ACCOUNT_W  <br/> |
-|識別子:  <br/> |0x3A00  <br/> |
+|識別子:  <br/> |0x3a00  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |アドレス帳  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-これらのプロパティでは、識別を提供し、受信者の情報にアクセスします。 受信者とその構造によって定義されます。
+これらのプロパティは、受信者の id とアクセス情報を提供します。 受信者と組織で定義されています。
   
-通常、これらのプロパティには、受信者の電子メール名、電子メール アドレスは、ローカル組織内の受信者を一意に識別するは、最終的なコンポーネントが含まれています。 電子メール名は、短い形式の名前が特定のメッセージング ドメイン内で一意であることを保証するものでは X.400 の識別名に対応します。
+通常、これらのプロパティには、受信者の電子メール名 (電子メールアドレスの最後のコンポーネント) が含まれています。これにより、ローカル組織の受信者が一意に識別されます。 この電子メール名は、特定のメッセージングドメイン内で一意であることを保証された短い名前にするための、x. 識別名に対応しています。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
-> プロパティは、連絡先、個人用配布リストの許可の操作を指定します。
+> 連絡先および個人用配布リストに対して許容されるプロパティと操作を指定します。
     
-[[MS OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
-> プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。
+> ユーザー、連絡先、グループ、およびリソースのリストのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-mapitags.h
+mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 mapidefs.h
   
@@ -73,7 +73,7 @@ mapidefs.h
 [IMailUser : IMAPIProp](imailuserimapiprop.md)
 
 
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

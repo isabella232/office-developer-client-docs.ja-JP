@@ -8,17 +8,17 @@ f1_keywords:
 - Vis_DSS.chm82251485
 localization_priority: Normal
 ms.assetid: 482497ee-fe19-c2fa-53ce-bdb27b5d28bc
-description: 0.0 から 1.0 のランダムな浮動小数点数を返します。 関数が評価されるたび、システム時計に従って 1 分に 1 回は、異なる値を返します。
-ms.openlocfilehash: 4b164e90c6d6b81764d2763bef04d836cae52c1b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 0.0 から1.0 へのランダムな浮動小数点値を返します。 関数が評価されるたびに、システムクロックに従って1分ごとに異なる数の値が返されます。
+ms.openlocfilehash: bab2fd74aff85be85f886e3ac8fe7df113664ae5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360005"
 ---
 # <a name="rand-function"></a>RAND 関数
 
-0.0 から 1.0 のランダムな浮動小数点数を返します。 関数が評価されるたび、システム時計に従って 1 分に 1 回は、異なる値を返します。 
+0.0 から1.0 へのランダムな浮動小数点値を返します。 関数が評価されるたびに、システムクロックに従って1分ごとに異なる数の値が返されます。 
   
 ## <a name="syntax"></a>構文
 
@@ -28,7 +28,7 @@ RAND( )
 
 浮動小数点数
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 この関数を使用すると、図形のプロパティを乱数値に設定することで、アニメーションの効果を出すことができます。
   

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: b1a30543-250d-4afb-87f2-448d90ee7cf9
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3de5093f1fa395b1fba061f88a9b67b5dedf4740
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359529"
 ---
 # <a name="pidtagrulelevel-canonical-property"></a>PidTagRuleLevel 標準プロパティ
 
@@ -25,7 +25,7 @@ ms.locfileid: "25385852"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-規則の終了時のレベルが含まれています。
+ルールの終了レベルが含まれています。
   
 |||
 |:-----|:-----|
@@ -34,35 +34,35 @@ ms.locfileid: "25385852"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |サーバー側のルール  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティを設定する場合、クライアントは 0x00000000 に渡す必要があります。 
+このプロパティを設定する場合、クライアントは0x00000000 を渡す必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXODLGT]](https://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)
+[[OXODLGT]](https://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)
   
-> 接続し、別のユーザーに代わって動作する場合は、デリゲート、およびメッセージと予定表のアイテムとの対話としてメールボックスを構成するためのメソッドを指定します。
+> 代理人としてメールボックスに接続して構成するためのメソッド、および別のユーザーの代理として動作するときのメッセージと予定表のアイテムの相互作用を指定します。
     
-[[MS OXORULE]](https://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx)
+[[OXORULE]](https://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx)
   
-> サーバー上の受信電子メール メッセージを操作します。
+> サーバー上の受信電子メールメッセージを操作します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
@@ -71,9 +71,9 @@ Mapitags.h
 [IExchangeModifyTable : IUnknown](iexchangemodifytableiunknown.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -9,34 +9,34 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: b367841a-f31c-4b55-4491-2abab5811dbe
 description: コメント内に表示されるテキストが含まれます。
-ms.openlocfilehash: 443a229058a9ca910ba5b38b093706c9c2e3e95b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fd9dce2618c0b8c967b794b0beea8b772a231003
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359039"
 ---
-# <a name="comment-cell-annotation-section"></a>[Comment] セル ([注釈] セクション)
+# <a name="comment-cell-annotation-section"></a>[Comment] セル ([Annotation] セクション)
 
 コメント内に表示されるテキストが含まれます。
   
 > [!NOTE]
-> このセルは、Microsoft Visio 2013 で .vsd ファイルを開くときにのみ、または .vsd ファイルの形式で .vsdx ファイルを保存するときにコメントを追跡するために使用されます。 Visio 2013 で .vsdx のドキュメント内のコメントを追跡するためには使用されません。 
+> このセルは、Microsoft Visio 2013 で .vsd ファイルを開くとき、または .vsd ファイル形式で .vsdx ファイルを保存するときにのみ、コメントの追跡に使用されます。 これは、Visio 2013 の .vsdx ドキュメントでコメントを追跡するためには使用されません。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Comment] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | Annotation.Comment [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+| セル名:  <br/> | コメント [ *i* ]: *i* = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [Comment] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionAnnotation** <br/> |
-| 行インデックス:  <br/> |**visRowAnnotation** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+| 行インデックス:  <br/> |**visRowAnnotation** +  *i* = ** 0、1、2...  <br/> |
 | セル インデックス:  <br/> |**visAnnotationComment** <br/> |
    
 

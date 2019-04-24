@@ -12,43 +12,43 @@ api_type:
 - COM
 ms.assetid: 14654259-e884-46bf-84ff-9e3c1a8cd60d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f501ffc9fdb708604e3e64769de16081f87a2450
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2b1e00938800fb6517e634c3ba365276e0e76bd9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348840"
 ---
 # <a name="imsgserviceadmin2--imsgserviceadmin"></a>IMsgServiceAdmin2 : IMsgServiceAdmin
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロファイル内のメッセージ サービスを変更します。
+プロファイル内のメッセージサービスの変更を行います。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiaux.h  <br/> |
-|によって公開されます。  <br/> |メッセージ サービス管理オブジェクト  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーション  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IMsgServiceAdmin2  <br/> |
-|ポインターの型。  <br/> |LPSERVICEADMIN2  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiaux  <br/> |
+|公開者:  <br/> |メッセージサービスの管理オブジェクト  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
+|インターフェイス識別子:  <br/> |IID_IMsgServiceAdmin2  <br/> |
+|ポインターの種類:  <br/> |LPSERVICEADMIN2  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[CreateMsgServiceEx](imsgserviceadmin2-createmsgserviceex.md) <br/> |サービス UID を新しく追加すること、現在のプロファイルには、メッセージ サービスを追加します。  <br/> |
+|[CreateMsgServiceEx](imsgserviceadmin2-createmsgserviceex.md) <br/> |現在のプロファイルにメッセージサービスを追加し、新しく追加されたサービス UID を返します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMsgServiceAdmin2**インタ フェースは、 [IMsgServiceAdmin](imsgserviceadminiunknown.md)インターフェイスを公開するのと同じオブジェクトによって公開され、MAPI サブシステムの Microsoft Outlook 2003 以降の Outlook の実装を使用して提供されています。 
+**IMsgServiceAdmin2**インターフェイスは、 [IMsgServiceAdmin](imsgserviceadminiunknown.md)インターフェイスを公開するのと同じオブジェクトによって公開されており、Microsoft outlook 2003 以降の outlook の MAPI サブシステムの実装を使用して利用できるようになっています。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
 

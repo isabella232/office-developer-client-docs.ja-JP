@@ -8,17 +8,17 @@ f1_keywords:
 - Vis_DSS.chm60107
 localization_priority: Normal
 ms.assetid: b4671715-4209-7774-c174-c19dc9721a02
-description: アプリケーション、アドオン、Microsoft の Visual Basic for Applications (VBA) コード、または COM アドインにマーカー イベントを発生するが発生します。
-ms.openlocfilehash: b9175caf0845530c93f6db15e286f3eae21ea415
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: アプリケーションが、アドオン、Microsoft Visual Basic for Applications (VBA) コード、または COM アドインに対してマーカーイベントを発生させます。
+ms.openlocfilehash: 841f6acc63497a6f0b8930c89534b5f8b04c0393
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358730"
 ---
 # <a name="queuemarkerevent-function"></a>QUEUEMARKEREVENT 関数
 
-アプリケーション、アドオン、Microsoft の Visual Basic for Applications (VBA) コード、または COM アドインにマーカー イベントを発生するが発生します。 
+アプリケーションが、アドオン、Microsoft Visual Basic for Applications (VBA) コード、または COM アドインに対してマーカーイベントを発生させます。 
   
 ## <a name="syntax"></a>構文
 
@@ -28,13 +28,13 @@ QUEUEMARKEREVENT (* * *event_string* * *)
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _event_string_ <br/> |必須  <br/> |**文字列型 (String)** <br/> | イベント ハンドラーに渡す文字列です。  <br/> |
+| _event_string_ <br/> |必須  <br/> |**String** <br/> | イベントハンドラーに渡す文字列。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-QUEUEMARKEREVENT 関数には、シェイプ シートのセルからコードを通知し、ソリューションに固有の情報を渡す方法を開発者が用意されています。 QUEUEMARKEREVENT 関数で数式を含むセルが評価されると、アプリケーションはマーカー イベントを発生し、 **MarkerEvent**イベントをリッスンしているすべてのイベント ハンドラーに_event_string_を渡します。 
+開発者は QUEUEMARKEREVENT 関数を使用して、シェイプシートのセルからコードを通知したり、ソリューション固有の情報を渡すことができます。 QUEUEMARKEREVENT 関数を使用して数式を含むセルが評価されると、アプリケーションは marker イベントを発生させ、 **MarkerEvent**イベントをリッスンしているすべてのイベントハンドラーに_event_string_を渡します。 
   
-マーカー イベントの詳細については、 **QueueMarkerEvent**メソッドおよび**MarkerEvent**イベントのトピックでは、Visio オートメーション リファレンス 』 を参照してください。 
+マーカーイベントの詳細については、Microsoft Visio Automation リファレンスの**QueueMarkerEvent**メソッドと**MarkerEvent**イベントのトピックを参照してください。 
   
 ## <a name="example"></a>例
 

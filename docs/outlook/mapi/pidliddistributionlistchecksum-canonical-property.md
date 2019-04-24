@@ -13,11 +13,11 @@ api_type:
 ms.assetid: bd50ab34-caae-4258-8afc-769e3cbc5220
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ac1f0d839b1ea059ec2b8d94556808bea3850862
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25383907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357611"
 ---
 # <a name="pidliddistributionlistchecksum-canonical-property"></a>PidLidDistributionListChecksum 標準プロパティ
 
@@ -25,35 +25,35 @@ ms.locfileid: "25383907"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-32 ビット巡回冗長チェック (CRC 32) 多項式のチェックサムを個人用配布リストを指定します。
+個人用配布リストの32ビット巡回冗長チェック (CRC-32) 多項式チェックサムを指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidDLChecksum  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Address  <br/> |
-|長い ID (LID):  <br/> |0x0000804C  <br/> |
+|関連するプロパティ:  <br/> |dispiddlchecksum  <br/> |
+|プロパティセット:  <br/> |PSETID_Address  <br/> |
+|ロング ID (LID):  <br/> |0x0000804c  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |Contact  <br/> |
+|エリア:  <br/> |連絡先  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-既存の crc-32 を計算することによって、他の個人用配布リスト メンバーのプロパティを更新せずに、 **dispidDLMembers** ([PidLidDistributionListMembers](pidliddistributionlistmembers-canonical-property.md)) のプロパティが更新されたときを検出するためにこのプロパティの値を使用することができます。**dispidDLMembers**および**dispidDLChecksum**プロパティの値と比較することの値です。 
+このプロパティの値は、既存のを使用して32を計算することによって、他の個人用配布リストのメンバープロパティを更新せずに、 **dispiddlmembers** ([PidLidDistributionListMembers](pidliddistributionlistmembers-canonical-property.md)) プロパティを更新したときに検出することができます。dispiddlmembers**メンバー**の値と、 **dispiddlmembers**プロパティの値との比較。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
-> プロパティは、連絡先、個人用配布リストの許可の操作を指定します。
+> 連絡先および個人用配布リストに対して許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -61,9 +61,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

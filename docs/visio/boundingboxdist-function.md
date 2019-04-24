@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 8a2490f2-48c4-5df3-a3b3-40e8e0c80479
 description: 図形の境界ボックスの、指定した部分の測定値を返します。
-ms.openlocfilehash: 94cad37c4a0d2c6c7e7c69d997af09a9d7f1d651
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a62d5b82c310e7b99e16b70982b75a68172b7fd8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348966"
 ---
 # <a name="boundingboxdist-function"></a>BOUNDINGBOXDIST 関数
 
@@ -25,31 +25,31 @@ ms.locfileid: "19804933"
   
 ## <a name="syntax"></a>構文
 
-BOUNDINGBOXDIST (* **インデックス** *) 
+BOUNDINGBOXDIST (* * *Index* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _Index_ <br/> |必須  <br/> |**番号** <br/> |図形の一部に外接するボックスを測定し、返します。 使用可能な値については備考を参照してください。  <br/> |
+| _Index_ <br/> |必須  <br/> |**数値** <br/> |図形の境界ボックスの、測定して返す部分。 使用可能な値については備考を参照してください。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
- **番号**
+ **数値**
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
- *インデックス*には、次の値のいずれかを指定できます。 
+ *Index*には、次のいずれかの値を指定できます。 
   
 |**Item**|**値**|
 |:-----|:-----|
-|幅  <br/> |0  <br/> |
-|高さ  <br/> |1  <br/> |
-|左端から図形のピンまでの距離  <br/> |2  <br/> |
-|図形のピンから右端までの距離  <br/> |3  <br/> |
-|図形のピンから上端までの距離  <br/> |4  <br/> |
+|Width  <br/> |.0  <br/> |
+|Height  <br/> |1-d  <br/> |
+|左端から図形のピンまでの距離  <br/> |pbm-2  <br/> |
+|図形のピンから右端までの距離  <br/> |1/3  <br/> |
+|図形のピンから上端までの距離  <br/> |2/4  <br/> |
 |下端から図形のピンまでの距離  <br/> |5  <br/> |
-|境界ボックスの中心から PinX までの距離  <br/> |6  <br/> |
+|境界ボックスの中心から PinX までの距離  <br/> |シックス  <br/> |
 |境界ボックスの中心から PinY までの距離  <br/> |7  <br/> |
    
 

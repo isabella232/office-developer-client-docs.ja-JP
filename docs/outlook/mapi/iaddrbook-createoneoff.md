@@ -1,5 +1,5 @@
 ---
-title: IAddrBookCreateOneOff
+title: iaddrbookcreateoneoff
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: bcacfbdf-edff-4810-a985-e6d2c9271901
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ddb87af4b14be6d728bcceddb4d958ba49229ad4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 980ac82c6f7fcb5771a6013b3fb033b0bdfd05e0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349316"
 ---
 # <a name="iaddrbookcreateoneoff"></a>IAddrBook::CreateOneOff
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-一時アドレスのエントリ id を作成します。
+1回限りのアドレスのエントリ id を作成します。
   
 ```cpp
 HRESULT CreateOneOff(
@@ -40,61 +40,61 @@ HRESULT CreateOneOff(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpszName_
+ _lpszname_
   
-> [in]受信者の**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) のプロパティの値へのポインター。 _LpszName_パラメーターは、NULL にすることができます。 
+> 順番受信者の**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) プロパティの値へのポインター。 _lpszname_パラメーターには NULL を指定できます。 
     
- _lpszAdrType_
+ _lpszadrtype_
   
-> [in]FAX または SMTP など、受信者のアドレスの種類へのポインター。 _LpszAdrType_パラメーターは、NULL にすることはできません。 
+> 順番FAX、SMTP などの受信者のアドレスの種類へのポインター。 _lpszadrtype_パラメーターを NULL にすることはできません。 
     
- _lpszAddress_
+ _lpszaddress_
   
-> [in]受信者のアドレスへのポインター。 _LpszAddress_パラメーターは、NULL にすることはできません。 
+> 順番受信者のアドレスへのポインター。 _lpszaddress_パラメーターを NULL にすることはできません。 
     
  _ulFlags_
   
-> [in]1 回限りの受信者に影響を与えるフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番1回限りの受信者に影響を与えるフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_SEND_NO_RICH_INFO 
   
-> 受信者には、コンテンツの書式設定されたメッセージを処理できません。 MAPI_SEND_NO_RICH_INFO を設定すると、MAPI では受信者の**PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)) のプロパティを FALSE に設定します。 MAPI_SEND_NO_RICH_INFO が設定されていない場合は、MAPI は_lpszAddress_で指定された受信者のメッセージのアドレスがインターネット アドレスを解釈しない限り、TRUE にこのプロパティを設定します。 この例では、MAPI は、 **PR_SEND_RICH_INFO**を FALSE に設定します。 
+> 受信者は、書式設定されたメッセージコンテンツを処理できません。 MAPI_SEND_NO_RICH_INFO が設定されている場合、MAPI は受信者の**PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)) プロパティを FALSE に設定します。 MAPI_SEND_NO_RICH_INFO が設定されていない場合、MAPI は、 _lpszaddress_が指す受信者のメッセージアドレスがインターネットアドレスであると解釈されない限り、このプロパティを TRUE に設定します。 この場合、MAPI は**PR_SEND_RICH_INFO**を FALSE に設定します。 
     
 MAPI_UNICODE 
   
-> 表示名、アドレスの種類、およびアドレスは、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式でこれらの文字列です。
+> 表示名、アドレスの種類、アドレスは、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、これらの文字列は ANSI 形式になります。
     
  _lpcbEntryID_
   
-> [out]_LppEntryID_パラメーターで指定されたエントリの識別子のバイト数へのポインター。 
+> 読み上げ_lppentryid_パラメーターによって指定されたエントリ識別子のバイト数へのポインター。 
     
- _lppEntryID_
+ _lppentryid_
   
-> [out]1 回限りの受信者のエントリの識別子へのポインターへのポインター。
+> 読み上げ1回限りの受信者のエントリ識別子へのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 一時エントリ id が正常に作成されました。
+> 1回限りのエントリ識別子が正常に作成されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-クライアントが 1 回限りの受信者のエントリ id を作成する**CreateOneOff**メソッドを呼び出して、現在読み込まれているアドレス帳プロバイダーのいずれかから任意のコンテナーに属していない受信者です。 一時受信者は、セッションのすべての種類のアクティブなアドレス帳のプロバイダーの 1 つによってサポートされているアドレスを持つことができます。 
+クライアントは**createoneoff**メソッドを呼び出して、1回限りの受信者 (現在読み込まれているアドレス帳プロバイダーのいずれかのコンテナーに属さない受信者) のエントリ id を作成します。 1回限りの受信者は、セッションの active アドレス帳プロバイダーの1つでサポートされている任意の種類のアドレスを持つことができます。 
   
-一時受信者は通常、特定のアドレスの種類のテンプレートを使用して作成されます。 アドレスの種類をサポートしているアドレス帳プロバイダーには、テンプレートが用意されています。 クライアント アプリケーションのユーザーは、テンプレートに関連する情報を入力します。
+通常、1回限りの受信者は、特定のアドレスの種類に対応したテンプレートを使用して作成されます。 アドレスの種類をサポートするアドレス帳プロバイダーがテンプレートを提供します。 クライアントアプリケーションのユーザーが、テンプレートに関連情報を入力します。
   
-MAPI では、表示名、アドレスの種類、および**CreateOneOff**のアドレス パラメーターの文字の Unicode 文字列をサポートしています。
+MAPI では、表示名、アドレスの種類、および**createoneoff**のアドレスパラメーターに対して Unicode 文字列をサポートしています。
   
-MAPI_SEND_NO_RICH_INFO フラグは、書式付きのテキストをリッチ テキスト形式 (RTF) では各メッセージと送信かどうかを制御します。 トランスポート ニュートラル カプセル化形式 (TNEF): 書式設定されたテキスト形式の送信に使用される-は、受信者が、 **PR_SEND_RICH_INFO**プロパティを設定する方法に関係なく、ほとんどのトランスポート プロバイダーによって送信されます。 個人間のメッセージを処理するクライアントのメッセージングの問題ではありません。 ただし、通常は TNEF を送信するカスタム メッセージ クラス用のカスタム プロパティを使用、それをサポートしていないことがありますフォーム ベースのクライアントまたはユーザー設定の MAPI プロパティを必要とするクライアントの問題。 詳細については、 [TNEF をメッセージの送信](sending-messages-with-tnef.md)を参照してください。
+MAPI_SEND_NO_RICH_INFO フラグは、リッチテキスト形式 (RTF) の書式付きテキストを各メッセージと共に送信するかどうかを制御します。 トランスポートニュートラルカプセル化形式 (TNEF) (書式付きテキストの送信に使用される形式) は、受信者が**PR_SEND_RICH_INFO**プロパティを設定する方法に関係なく、ほとんどのトランスポートプロバイダーによって送信されます。 これは、個人間メッセージを処理するメッセージングクライアントにとっては問題ではありません。 ただし、TNEF は通常、カスタムメッセージクラスのカスタムプロパティを送信するために使用されるため、サポートしていません。これは、フォームベースのクライアントまたはカスタム MAPI プロパティを必要とするクライアントにとって問題になる可能性があります。 詳細については、「 [TNEF を使用](sending-messages-with-tnef.md)してメッセージを送信する」を参照してください。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|Mapiabfunctions.cpp  <br/> |AddOneOffAddress  <br/> |MFCMAPI では、 **CreateOneOff**メソッドを使用して、任意のアドレス帳に含まれていないアドレスのエントリ ID を作成します。  <br/> |
+|Mapiabfunctions  <br/> |addoneoffaddress  <br/> |mfcmapi は、 **createoneoff**メソッドを使用して、アドレス帳に存在しないアドレスのエントリ ID を作成します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 3b3e458a-206c-8699-8bf7-da80f4350706
 description: テキスト ブロックの既定のタブ位置の間隔を指定します。
-ms.openlocfilehash: 2b9c2c5b03da98b30e338a250b56091479067955
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1ae923f6373b9cee76238b1fb27ec5eb3acb43ce
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360271"
 ---
-# <a name="defaulttabstop-cell-text-block-format-section"></a>[DefaultTabstop] セル ([テキスト ブロックの書式設定] セクション)
+# <a name="defaulttabstop-cell-text-block-format-section"></a>[DefaultTabstop] セル ([Text Block Format] セクション)
 
 テキスト ブロックの既定のタブ位置の間隔を指定します。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 既定値は、英国単位で図面を作成した場合は 0.5 インチ、メートル法単位の場合は 1.5 cm になります。
   

@@ -1,5 +1,5 @@
 ---
-title: IDistList IMAPIContainer
+title: idistlist IMAPIContainer
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,56 +12,56 @@ api_type:
 - COM
 ms.assetid: bd8e1ddb-3027-428b-8964-81614f80282d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d5b9fb9bf8c84433ee5000cc8832c2f09bfc5fe3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 463d81a6692b6071cada0ad22e7343020563e41c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350891"
 ---
 # <a name="idistlist--imapicontainer"></a>IDistList : IMAPIContainer
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-本コンテナーの変更可能なアドレスでの配布リストへのアクセスを提供します。 **IDistList**は、作成、コピー、および名前解決を実行するだけでなく、配布リストを削除できます。 
+変更可能なアドレス帳コンテナー内の配布リストへのアクセスを提供します。 **idistlist**では、名前解決を実行するだけでなく、配布リストの作成、コピー、および削除を行うことができます。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|によって公開されます。  <br/> |配布リスト オブジェクト  <br/> |
-|によって実装されます。  <br/> |アドレス帳プロバイダー  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーション  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IDistList  <br/> |
-|ポインターの型。  <br/> |LPDISTLIST  <br/> |
-|トランザクション モデル:  <br/> |トランザクション処理  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|公開者:  <br/> |配布リストオブジェクト  <br/> |
+|実装元:  <br/> |アドレス帳プロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
+|インターフェイス識別子:  <br/> |IID_IDistList  <br/> |
+|ポインターの種類:  <br/> |lpdistlist  <br/> |
+|トランザクションモデル:  <br/> |一括  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
-このインターフェイスには、固有のメソッドがありません。
+このインターフェイスには一意のメソッドはありません。
   
 |**必須のプロパティ**|**Access**|
 |:-----|:-----|
-|**PR_ADDRTYPE**([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
-|**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
+|**PR_ADDRTYPE**([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
+|**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
 |**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IDistList**インターフェイスは、 [IMAPIContainer](imapicontainerimapiprop.md)を継承し、アドレス帳コンテナーと同じメソッドが含まれています。 したがって、 **IDistList**インターフェイスのメソッドは、[これにより](iabcontainerimapicontainer.md)インタ フェースのものと同一であるため、これらが重複していないここでは。 
+**idistlist**インターフェイスは[IMAPIContainer](imapicontainerimapiprop.md)から継承され、アドレス帳コンテナーと同じメソッドを含みます。 そのため、 **idistlist**インターフェイスのメソッドは[IABContainer](iabcontainerimapicontainer.md)インターフェイスのメソッドと同じなので、ここでは複製されません。 
   
-配布リストまたは**IDistList**を実装するオブジェクトは、メッセージングのユーザー オブジェクトまたは個々 の受信者のコレクションです。 配布リストは、メッセージのすべてのユーザー オブジェクトまたはいくつかのメッセージングのユーザーといくつかの配布リストで構成されます。 
+**idistlist**を実装する配布リストまたはオブジェクトは、メッセージングユーザーオブジェクトまたは個々の受信者のコレクションです。 配布リストは、すべてのメッセージングユーザーオブジェクト、または一部のメッセージングユーザーと一部の配布リストで構成できます。 
   
-通常は、配布リストの 2 つの種類があります。
+通常、配布リストには次の2つの種類があります。
   
-- 基になるメッセージング システムによって展開される配布リストです。 この種類の一覧のアドレス、 **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) には、個々 の受信者の場合と同じに扱われます。 
+- 基礎となるメッセージングシステムによって展開された配布リスト。 この種類のリストには、 **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) という住所があり、個別の受信者と同じように処理されます。 
     
-- ローカル コンテナー内に存在し、クライアント アプリケーションが展開されている配布リストです。
+- ローカルコンテナーに存在し、クライアントアプリケーションによって拡張された配布リスト。
     
-省略可能な配布リストのプロパティを以下に示します。
+オプションの配布リストのプロパティは次のとおりです。
   
 - **PR_LAST_MODIFICATION_TIME**([PidTagLastModificationTime](pidtaglastmodificationtime-canonical-property.md))
     
@@ -69,13 +69,13 @@ ms.locfileid: "22590625"
     
 - **PR_DETAILS_TABLE**([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) 
     
-**PR_ADDRTYPE**が必要ですが、 **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) ではないことを確認します。 電子メール アドレス、配布リストは、メッセージを受信もできますが、[メンバー] ボックスの一覧を展開する必要があるためにです。 **PR_ADDRTYPE**プロパティは、MAPIPDL に設定されている場合、MAPI は、拡張を実行します。 **PR_ADDRTYPE**が MAPIPDL 以外の値の場合は、トランスポート プロバイダーは、拡張を実行します。 
+**PR_ADDRTYPE**は必須ですが、 **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) は必須ではないことに注意してください。 これは、電子メールアドレスのない配布リストでもメッセージを受信できるが、そのメンバーリストを展開する必要があるためです。 **PR_ADDRTYPE**プロパティが mapipdl に設定されている場合、MAPI は拡張を実行します。 **PR_ADDRTYPE**が mapipdl 以外の値の場合は、トランスポートプロバイダーが拡張を実行します。 
   
-**IDistList**メソッドを使用する方法の詳細については、**これにより**の並列メソッドの参照のエントリを参照してください。
+**idistlist**メソッドの使用方法の詳細については、 **IABContainer**の parallel メソッドの参照エントリを参照してください。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
 

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 762020d1-4bc8-d60d-0f66-3929aae24bfb
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d42b58bf4fd445f34064b179c873c8bc15b11b3f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25391179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360117"
 ---
 # <a name="pidtagagingperiod-canonical-property"></a>PidTagAgingPeriod 標準プロパティ
 
@@ -25,7 +25,7 @@ ms.locfileid: "25391179"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-アイテムをアーカイブする前に、アイテムがフォルダーに残っている時間の長さを決定するために使用する時間単位数を表します。
+アイテムがアーカイブされる前にアイテムがフォルダー内に残っている時間の長さを判断するために使用される時間単位の数を表します。
   
 ## 
 
@@ -36,55 +36,55 @@ ms.locfileid: "25391179"
 |プロパティの種類:  <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |その他  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-アイテムをアーカイブする前に、アイテムがフォルダーに残っている時間の長さは、 **PR_AGING_PERIOD**と**[PR_AGING_GRANULARITY](pidtagaginggranularity-canonical-property.md)** の 2 つのプロパティによって決定されます。 **PR_AGING_GRANULARITY**は、 **PR_AGING_PERIOD**が表現する、この期間を決定する際に時間の単位を表します。 
+アイテムがアーカイブされる前にそのアイテムがフォルダー内に残っている時間の長さは、 **PR_AGING_PERIOD**と**[PR_AGING_GRANULARITY](pidtagaginggranularity-canonical-property.md)** の2つのプロパティによって決定されます。 **PR_AGING_GRANULARITY**は、この時間の長さを決定するときに、 **PR_AGING_PERIOD**が表される時間単位を表します。 
   
-**PR_AGING_GRANULARITY**の有効な値には、次のいずれかを指定できます。 
+**PR_AGING_GRANULARITY**に使用できる値は、次のいずれかです。 
   
 ****
 
-|**名前**|**説明**|
+|**[名前]**|**[説明]**|
 |:-----|:-----|
-|**AG_MONTHS** <br/> |**PR_AGING_PERIOD**は、月の数で定義されます。  <br/> |
+|**AG_MONTHS** <br/> |**PR_AGING_PERIOD**は、月単位で定義されます。  <br/> |
 |**AG_WEEKS** <br/> |**PR_AGING_PERIOD**は、週数で定義されます。  <br/> |
-|**AG_DAYS** <br/> |**PR_AGING_PERIOD**は、日数で定義されます。  <br/> |
+|**AG_DAYS** <br/> |**PR_AGING_PERIOD**は、日数で定義されています。  <br/> |
    
-たとえば、アイテムのフォルダーに、2 週間後で**PR_AGING_GRANULARITY**された後にのみアイテムがフォルダーのアーカイブの場合**AG_WEEKS**と**PR_AGING_PERIOD**は 2 です。 
+たとえば、アイテムがフォルダー内に2週間だけある場合に、フォルダーがアイテムをアーカイブすると、 **PR_AGING_GRANULARITY**は**AG_WEEKS**になり、 **PR_AGING_PERIOD**は2になります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義を提供します。
+> プロパティセットの定義を提供します。
     
-[[MS OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
-> リモート操作で使用される基本的なデータ構造を定義します。
+> リモート操作で使用される基本データ構造を定義します。
     
-[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
-> プロパティおよび電子メール メッセージのオブジェクトに対して許可される操作を指定します。
+> 電子メールメッセージオブジェクトに対して許可されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

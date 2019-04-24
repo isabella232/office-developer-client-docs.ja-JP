@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: d28852ab-b542-40e1-b2ec-85d20a2eddfd
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1b262ba9c83e9890719f716a373c566be172ae73
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e9468d0c7fc7e46475afe19f12f225e53196639e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360698"
 ---
 # <a name="scurrencyarray"></a>SCurrencyArray
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-PT_MV_CURRENCY の種類のプロパティを説明するために使用する通貨値の配列が含まれています。 
+PT_MV_CURRENCY 型のプロパティを記述するために使用される通貨値の配列を格納します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SCurrencyArray
@@ -42,23 +42,23 @@ typedef struct _SCurrencyArray
 
 ## <a name="members"></a>Members
 
- **あう**
+ **cvalues**
   
-> **Lpcur**メンバーが指す配列内の値の数です。 
+> lpcur メンバーによって参照されて**** いる配列内の値の数。 
     
  **lpcur**
   
-> 通貨値が含まれている[通貨](currency.md)の構造体の配列へのポインター。 
+> 通貨の値を含む[通貨](currency.md)構造の配列へのポインター。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-PT_MV_CURRENCY については、[プロパティの種類の一覧](property-types.md)を参照してください。 
+PT_MV_CURRENCY の詳細については、「[プロパティの種類の一覧](property-types.md)」を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[CURRENCY](currency.md)
+[単位](currency.md)
   
 [SPropValue](spropvalue.md)
 

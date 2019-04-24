@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 1d198ea6-49e0-e462-b2cf-b65fbb920b55
 description: 小文字に変換された文字列を返します。
-ms.openlocfilehash: da626ee0bb0474fceafcf93ed5c835aacd0034fe
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 275e5cc40bed5c3ca7d6f40b0882f523334611c3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358017"
 ---
 # <a name="lower-function"></a>LOWER 関数
 
@@ -22,17 +22,17 @@ ms.locfileid: "19805808"
   
 ## <a name="syntax"></a>構文
 
-下 (* **式** *) 
+小 (* **式** *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _expression_ <br/> |必須  <br/> |**可変型 (Varies)** <br/> | 文字列、セル参照、または式を指定します。指定した引数は文字列に変換されてから、小文字に変換されます。  <br/> |
+| _expression_ <br/> |必須  <br/> |**さまざま** <br/> | 文字列、セル参照、または式を指定します。指定した引数は文字列に変換されてから、小文字に変換されます。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
-String
+文字列
   
 ## <a name="remarks"></a>注釈
 

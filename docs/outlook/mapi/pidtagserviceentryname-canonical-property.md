@@ -12,55 +12,55 @@ api_type:
 - COM
 ms.assetid: 783f08aa-fb5a-432d-b8bd-48d69f0e5c38
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3988596cc0b9c01d526354dabef3a6e7fdefc3b6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2c771f1d97305271b70102c148e62f30512974fb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351073"
 ---
 # <a name="pidtagserviceentryname-canonical-property"></a>PidTagServiceEntryName 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ サービスの構成のエントリ ポイント関数の名前が含まれています。
+メッセージサービスを構成するためのエントリポイント関数の名前を含みます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_SERVICE_ENTRY_NAME  <br/> |
 |識別子:  <br/> |0x3D0B  <br/> |
 |データの種類 :   <br/> |PT_STRING8  <br/> |
-|領域:  <br/> |MAPI プロファイル  <br/> |
+|エリア:  <br/> |MAPI プロファイル  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-メッセージ サービスのエントリ ポイントを提供するメッセージ サービスの実装者が、エントリ ポイントが必要ではないことをお勧めします。 ただし、エントリ ポイントは、関連する設定のプロパティが存在する場合にのみ指定してください。 MAPI ではこれらのプロパティが存在しない場合、エントリ ポイントが指定されていないと見なされます。
+メッセージサービスの実装者は、メッセージサービスのエントリポイントを指定することをお勧めしますが、エントリポイントは必須ではありません。 ただし、関連する構成プロパティが存在する場合にのみ、エントリポイントを指定する必要があります。 これらのプロパティが存在しない場合、MAPI はエントリポイントが提供されていないことを前提としています。
   
-**PR_SERVICE_DLL_NAME** ([PidTagServiceDllName](pidtagservicedllname-canonical-property.md)) は、エントリ ポイント関数が入力されているダイナミック リンク ライブラリ (DLL) と呼びます。
+エントリポイント関数が表示されるダイナミックリンクライブラリ (DLL) は、 **PR_SERVICE_DLL_NAME** ([PidTagServiceDllName](pidtagservicedllname-canonical-property.md)) プロパティによって名前が付けられます。
   
-メッセージ サービスのエントリ ポイントの詳細については、[サービス プロバイダーのエントリ ポイント関数を実装する](implementing-a-service-provider-entry-point-function.md)を参照してください。
+メッセージサービスのエントリポイントの詳細については、「[サービスプロバイダーエントリポイント関数の実装](implementing-a-service-provider-entry-point-function.md)」を参照してください。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

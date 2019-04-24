@@ -1,5 +1,5 @@
 ---
-title: Outlook ソーシャル コネクタ 2013 プロバイダー リファレンスの著作権情報
+title: Outlook Social Connector 2013 プロバイダリファレンスの著作権情報
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,15 +7,15 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1425b9f2-606a-4522-b97c-0875d45eb175
-description: このドキュメントは現状のまま提供されます。 情報および見解は、URL やその他のインターネット web サイトを含み、このドキュメントには、予告なしに変更可能性があります。 このドキュメントの使用に伴うリスクはお客様が負うものとします。
+description: このドキュメントは現状のまま提供されます。 このドキュメントで説明されている情報とビュー (URL やその他のインターネット web サイト参照を含む) は、将来予告なしに変更されることがあります。 You bear the risk of using it.
 ms.openlocfilehash: 6d01020fc4d4081e5f55de5f64f361ac3ae8a0b0
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25391564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359886"
 ---
-# <a name="outlook-social-connector-2013-provider-reference-copyright-notice"></a>Outlook ソーシャル コネクタ 2013 プロバイダー リファレンスの著作権情報
+# <a name="outlook-social-connector-2013-provider-reference-copyright-notice"></a>Outlook Social Connector 2013 プロバイダリファレンスの著作権情報
 
 このドキュメントは "現状のまま" 提供されます。このドキュメントで説明されている情報およびビューは、URL および他のインターネット Web サイトの参照を含めて、予告なく変更されることがあります。このドキュメントの使用に伴うリスクはお客様が負うものとします。
   

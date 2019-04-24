@@ -8,29 +8,29 @@ f1_keywords:
 - Vis_DSS.chm82251435
 localization_priority: Normal
 ms.assetid: 6c85414c-9fb6-cdc5-f5b6-8eb13c9608af
-description: 実行されるアクション、図面ウィンドウ、たとえば、移動、サイズ変更、グループ化、または図形のグループ化を解除して、削除、および変更から式を保護します。
-ms.openlocfilehash: fd5fcfbe11eb054dfa625834640c0280cae96c3f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 図形の移動、サイズ変更、グループ化、グループ解除など、図面ウィンドウで実行された操作によって、式が削除されたり、変更されたりすることを防ぎます。
+ms.openlocfilehash: 0bdfa023d53e739a970cab65b1dbd67bc1a44461
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360194"
 ---
 # <a name="guard-function"></a>GUARD 関数
 
-実行されるアクション、図面ウィンドウ、たとえば、移動、サイズ変更、グループ化、または図形のグループ化を解除して、削除、および変更から*式*を保護します。 
+図形の移動、サイズ変更、グループ化、グループ解除など、図面ウィンドウで実行された操作によって、*式*が削除されたり、変更されたりすることを防ぎます。 
   
 ## <a name="syntax"></a>構文
 
-ガード (* **式** *) 
+GUARD (* * *expression* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _expression_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |定数、演算子、関数、およびシェイプシートのセルに対する参照を組み合わせたもので、結果が値となる式です。  <br/> |
+| _expression_ <br/> |必須  <br/> |**String** <br/> |定数、演算子、関数、およびシェイプシートのセルに対する参照を組み合わせたもので、結果が値となる式です。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 GUARD 関数による影響を受ける主なセルは、[Width]、[Height]、[PinX]、[PinY] です。 
   

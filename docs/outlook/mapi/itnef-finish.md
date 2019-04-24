@@ -1,5 +1,5 @@
 ---
-title: ITnefFinish
+title: itneffinoff
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 01a868f4-afda-43ba-bc17-c33ae56b7b7d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: aff805f7868ec0c2adc55ece94c45b76368ba6eb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5b76f9daec89e9229fc7f81e1332c3075c951067
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348588"
 ---
 # <a name="itneffinish"></a>ITnef::Finish
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-完了するとキューに登録されたすべてのトランスポート ニュートラル カプセル化形式 (TNEF) 操作を処理し、待機しています。 
+キューに入って待機しているすべてのトランスポート中立カプセル化形式 (TNEF) 操作の処理を完了します。 
   
 ```cpp
 HRESULT Finish(
@@ -35,45 +35,45 @@ HRESULT Finish(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lpKey_
+ _lpkey_
   
-> [out]添付ファイルの**PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) のキーのプロパティへのポインター。 TNEF カプセル化オブジェクトは、メッセージ内の添付ファイルの配置タグの添付ファイルに一致するようにこのキーを使用します。 このキーは、添付ファイルごとに一意である必要があります。
+> 読み上げ添付ファイルの**PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) キープロパティへのポインター。 TNEF カプセル化オブジェクトは、このキーを使用して、添付ファイルをメッセージの添付ファイル配置タグに一致させます。 このキーは、各添付ファイルに対して一意である必要があります。
     
- _lpProblem_
+ _lpproblem_
   
-> [out]返された[STnefProblemArray](stnefproblemarray.md)構造体へのポインターへのポインター。 **STnefProblemArray**構造体は、どのプロパティでは、存在する場合、されたエンコードされません正しくを示します。 _LpProblem_パラメーターに NULL を渡した場合、プロパティの問題の配列は返されません。 
+> 読み上げ返された[STnefProblemArray](stnefproblemarray.md)構造体へのポインターへのポインター。 **STnefProblemArray**構造体は、どのプロパティが適切にエンコードされなかったかを示します。 _lpproblem_パラメーターで NULL が渡された場合、プロパティ問題の配列は返されません。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 呼び出しが成功し、予期される値または値が返されます。
+> 呼び出しが成功し、予想される値または値が返されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-プロバイダー、メッセージ ストア プロバイダーでは、どのエンコーディングのすべてのプロパティのエンコーディングを実行する**ITnef::Finish**メソッドは、 [ITnef::AddProps](itnef-addprops.md)メソッドと[ITnef::SetProps](itnef-setprops.md)メソッドの呼び出しで要求されたゲートウェイの呼び出しを転送します。 TNEF オブジェクトは、 [OpenTnefStream](opentnefstream.md)または[OpenTnefStreamEx](opentnefstreamex.md)関数の TNEF_ENCODE フラグを使用して開かれた、**完了**メソッドは要求されたプロパティをそのオブジェクトに渡されるカプセル化のストリームにエンコードします。 TNEF_DECODE フラグを使用して、TNEF オブジェクトが開かれた場合、**終了**メソッドは TNEF ストリームからプロパティをデコードしに属しているメッセージに書き戻されます。 
+トランスポートプロバイダー、メッセージストアプロバイダー、ゲートウェイは、ITnef:: [addprops](itnef-addprops.md)メソッドと[ITnef:: setprops](itnef-setprops.md)メソッドの呼び出しでエンコードが要求されたすべてのプロパティのエンコードを実行するために、 **:: Finish**メソッドを呼び出します。 [OpenTnefStream](opentnefstream.md)または[OpenTnefStreamEx](opentnefstreamex.md)関数の TNEF_ENCODE フラグを使用して TNEF オブジェクトが開かれた場合、 **Finish**メソッドは、要求されたプロパティをそのオブジェクトに渡されるカプセル化ストリームにエンコードします。 TNEF_DECODE フラグを使用して tnef オブジェクトを開いた場合、 **Finish**メソッドは tnef ストリームからプロパティをデコードし、それを所有するメッセージに書き込みます。 
   
-**終了**の呼び出しの後は、カプセル化のストリームへのポインターは、TNEF データの末尾を指します。 プロバイダーまたはゲートウェイは、呼び出しの**完了**後は、TNEF ストリーム データを使用する必要があるは TNEF ストリーム データの先頭に、ストリームのポインターをリセットする必要があります。 
+**完了**呼び出しの後、カプセル化ストリームへのポインターは TNEF データの末尾を指します。 プロバイダーまたはゲートウェイが、**完了**呼び出しの後に tnef ストリームデータを使用する必要がある場合は、tnef ストリームデータの先頭にストリームポインターをリセットする必要があります。 
   
-TNEF の実装では、**終了**処理を停止することがなく TNEF ストリームのエンコーディングの問題を報告します。 _LpProblem_パラメーターに返された[STnefProblemArray](stnefproblemarray.md)構造体は、どの TNEF 属性または MAPI プロパティでは、存在する場合、処理できませんでしたを示します。 **STnefProblemArray**に含まれている**STnefProblem**の構造体のいずれかの**scode**メンバーの戻り値は、特定の問題を示します。 プロバイダーまたはゲートウェイは、すべてのプロパティまたは属性の対象の**終了**を返さない問題レポートが正常に処理されたことを前提として処理できます。 
+tnef 実装は、**終了**プロセスを停止することなく、tnef ストリームエンコードの問題を報告します。 _lpproblem_パラメーターで返される[STnefProblemArray](stnefproblemarray.md)構造は、どの TNEF 属性または MAPI プロパティ (存在する場合) を処理できなかったかを示します。 **STnefProblemArray**に含まれている**STnefProblem**構造体の**scode**メンバーで返される値は、特定の問題を示します。 プロバイダーまたはゲートウェイは、**完了**したすべてのプロパティまたは属性が問題レポートを正常に処理したことを前提として機能します。 
   
-_LpProblem_; で NULL を渡すことができます問題の配列を持つプロバイダーまたはゲートウェイが機能しない場合この例では、問題の配列は返されません。 
+プロバイダーまたはゲートウェイが問題のあるアレイで動作しない場合は、 _lpproblem_で NULL を渡すことができます。この場合、問題の配列は返されません。 
   
-_LpProblem_で返される値は、呼び出しが S_OK を返す場合にのみ有効です。 S_OK が返されると、プロバイダーまたはゲートウェイは**STnefProblemArray**構造体で返される値を確認する必要があります。 呼び出しでエラーが発生した場合**STnefProblemArray**構造体が記入されていませんし、プロバイダーまたはゲートウェイが呼び出し元する必要があります使用または構造体を解放します。 呼び出しでエラーが発生しなかった場合、呼び出し元のプロバイダーまたはゲートウェイ必要がありますメモリを解放**STnefProblemArray**の[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出すことによって。 
+_lpproblem_で返される値は、呼び出しが S_OK を返す場合にのみ有効です。 S_OK が返された場合、プロバイダーまたはゲートウェイは、 **STnefProblemArray**構造体で返される値をチェックする必要があります。 呼び出しでエラーが発生した場合、 **STnefProblemArray**構造体は入力されず、呼び出しプロバイダーまたはゲートウェイは構造を使用したり、解放したりすることはできません。 呼び出しでエラーが発生しない場合は、 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して、呼び出しプロバイダーまたはゲートウェイが**STnefProblemArray**のメモリを解放する必要があります。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|File.cpp  <br/> |SaveToTNEF  <br/> |MFCMAPI では、 **ITnef::Finish**メソッドを使用して、新しい TNEF ストリームの処理を完了します。  <br/> |
+|ファイル .cpp  <br/> |SaveToTNEF  <br/> |mfcmapi は、 **ITnef:: Finish**メソッドを使用して、新しい TNEF ストリームの処理を完了します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

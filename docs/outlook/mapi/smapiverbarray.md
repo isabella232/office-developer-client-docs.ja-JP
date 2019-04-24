@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: 8736f75c-3e95-42dd-9bc1-2f0bd23c4a02
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7a2911779e5f9edb8c0bba7c3476a74ce410477c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7cba5dce60ce15ddb12776d619143849298aac9f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357478"
 ---
 # <a name="smapiverbarray"></a>SMAPIVerbArray
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI の動詞を記述する[SMAPIVerb](smapiverb.md)構造体の配列が含まれています。 
+MAPI 動詞を記述する[smapiverb](smapiverb.md)構造の配列が含まれています。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
 |関連するマクロ:  <br/> |[CbMAPIVerbArray](cbmapiverbarray.md) <br/> |
    
 ```cpp
@@ -43,17 +43,17 @@ typedef struct
 
 ## <a name="members"></a>Members
 
- **cForms**
+ **cforms**
   
-> 配列内の動詞の数です。
+> 配列内の動詞の数。
     
- **aFormInfo**
+ **aforminfo**
   
-> MAPI の動詞の配列です。
+> MAPI 動詞の配列。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**SMAPIVerbArray**構造体は、 [IMAPIFormInfo::CalcVerbSet](imapiforminfo-calcverbset.md)メソッドのパラメーターとして渡されます。 
+**SMAPIVerbArray**構造体は、 [imapiforminfo:: CalcVerbSet](imapiforminfo-calcverbset.md)メソッドのパラメーターとして渡されます。 
   
 ## <a name="see-also"></a>関連項目
 

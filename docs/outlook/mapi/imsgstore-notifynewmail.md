@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: d0d003b0-f12f-4422-b71f-26886169461f
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 73a4c07c69fb10044cba6e9368cd4bc86c11ad54
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a8ec06fd0401a129e08a06acdb1c18785f90d4a0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348756"
 ---
 # <a name="imsgstorenotifynewmail"></a>IMsgStore::NotifyNewMail
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-�V�������b�Z�[�W�������������b�Z�[�W �X�g�A�ɒʒm���܂��B���̕��@�́AMAPI �X�v�[���[�ɂ���Ă̂݌Ăяo����܂��B
+新しいメッセージが到着したことをメッセージストアに通知します。 このメソッドは、MAPI スプーラーによってのみ呼び出されます。
   
 ```cpp
 HRESULT NotifyNewMail(
@@ -33,29 +33,29 @@ HRESULT NotifyNewMail(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
- _lpNotification_
+ _lpnotification_
   
-> [in]新着メッセージの通知を説明する[通知](notification.md)の構造体へのポインター。 
+> [in] A pointer to a [NOTIFICATION](notification.md) structure that describes the new message notification. 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > ���b�Z�[�W �X�g�A������ɒʒm��󂯎��܂��B
     
-## <a name="remarks"></a>����
+## <a name="remarks"></a>解説
 
 **IMsgStore::NotifyNewMail**���\�b�h�́A���b�Z�[�W���z�M�i�ޏ������ł�����A���b�Z�[�W �X�g�A�ɒʒm���� MAPI �X�v�[���[�ɂ���ĂƌĂ΂�܂��B 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**NotifyNewMail**が呼び出されると、すべての登録済みクライアントに新着メールの通知を送信します。 サポート オブジェクトのメソッドを使用するよう選択した場合は、 [IMAPISupport::Notify](imapisupport-notify.md)を呼び出すことによって、または独自の実装を使用して通知を送信できます。 登録されているクライアントは、 [IMsgStore::Advise](imsgstore-advise.md)と呼ばれるがあり、NULL と、 _ulEventMask_パラメーターを_fnevNewMail_に、 _lpEntryID_パラメーターを設定する 1 つです。 
+When **NotifyNewMail** is called, send a new mail notification to all registered clients. You can send the notification by calling [IMAPISupport::Notify](imapisupport-notify.md), if you elect to use the support object methods, or by using your own implementation. A registered client is one that has called [IMsgStore::Advise](imsgstore-advise.md) and set the  _lpEntryID_ parameter to NULL and the  _ulEventMask_ parameter to  _fnevNewMail_. 
   
-変更したり、新着メールの通知を説明する[通知](notification.md)の構造体のメモリを解放しないでください。 ユーティリティ関数を作成するのには[ScCopyNotifications](sccopynotifications.md)を呼び出すことによって、**通知**の構造体をコピーのメンバーの情報を使用します。 
+Do not modify or free the memory for the [NOTIFICATION](notification.md) structure that describes the new mail notification. Copy the **NOTIFICATION** structure by calling the utility function [ScCopyNotifications](sccopynotifications.md) to make use of the information in its members. 
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 

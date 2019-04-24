@@ -12,40 +12,40 @@ api_type:
 - COM
 ms.assetid: 65aed75f-7e4e-4de9-b219-64dde8891a79
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1459dcdb32dce2826f10b5616f899cd424b634b7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d4038e3ecd1b4e5283e071305a316db014aacfd6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360086"
 ---
 # <a name="pidlidrecalltime-canonical-property"></a>PidLidRecallTime 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージの取り消しが開始された時刻を示します。
+メッセージの呼び戻しが開始された時刻を示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidRecallTime  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Common  <br/> |
-|長い ID (LID):  <br/> |0x00008549  <br/> |
+|関連するプロパティ:  <br/> |dispidrecalltime  <br/> |
+|プロパティセット:  <br/> |PSETID_Common  <br/> |
+|ロング ID (LID):  <br/> |0x00008549  <br/> |
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
-|領域:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |一般的なメッセージング  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[MS OXPROPS] 
+[[OXPROPS]] 
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -53,9 +53,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

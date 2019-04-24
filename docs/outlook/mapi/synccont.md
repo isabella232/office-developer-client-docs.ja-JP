@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7b4307a3-5a8c-89bf-1113-2549556a7fe7
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b1ab1bd4eb6badc75065ce54d009e034f0fc2b29
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: afba7fa718a35d33966d45289461313e349ef2e2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349575"
 ---
 # <a name="synccont"></a>SYNCCONT
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[内容の状態を同期](synchronize-contents-state.md)する際にサーバーとローカル ストア内の指定したフォルダーの内容を同期するための情報です。 これだけのアップロード、またはアップロードし、ダウンロードを含む完全な同期が含まれます。
+[コンテンツ同期状態](synchronize-contents-state.md)の間に、ローカルストア内の指定したフォルダーの内容をサーバーと同期するための情報。 これにはアップロードのみが含まれます。または、アップロードとダウンロードを含む完全同期を行います。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -35,39 +35,39 @@ struct SYNCCONT
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 _ulFlags_
   
-> [in]同期中に適切な動作を決定するフラグを設定します。
+> 順番同期時に適切な動作を決定するフラグ。
     
   - UPC_OK
     
-  - [in]アップロードまたは完全な同期が成功しました。 クライアントでは、情報をサーバーと同期した後、これを設定します。
+  - 順番アップロードまたは完全同期が正常に完了しました。 クライアントは、情報をサーバーと同期した後にこれを設定します。
     
-_iEnt_
+_ient_
   
-> [out]_セント_で指定されたフォルダーの内容の同期を追跡するためにインデックスを作成します。
+> 読み上げによって指定されたフォルダーの数について__ のコンテンツの同期を追跡するインデックス。
     
-_セント_
+_fea-cent-logging-service_
   
-> [out]レプリケートするフォルダーの数です。
+> 読み上げレプリケートするフォルダーの数。
     
-_pvReserved_
+_pvreserved_
   
-> このメンバーは、Outlook の内部使用に予約されている、サポートされていません。 
+> このメンバーは、Outlook の内部使用のために予約されており、サポートされていません。 
     
 _ptagaReserved_
   
-> このメンバーは、Outlook の内部使用に予約されている、サポートされていません。 
+> このメンバーは、Outlook の内部使用のために予約されており、サポートされていません。 
     
-_psosReserved_
+_psosreserved_
   
-> このメンバーは、Outlook の内部使用に予約されている、サポートされていません。 
+> このメンバーは、Outlook の内部使用のために予約されており、サポートされていません。 
     
 ## <a name="see-also"></a>関連項目
 
 - [レプリケーション API について](about-the-replication-api.md)
-- [レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
-- [MAPI �萔](mapi-constants.md)
+- [レプリケーション状態のマシンについて](about-the-replication-state-machine.md)
+- [MAPI 定数](mapi-constants.md)
 

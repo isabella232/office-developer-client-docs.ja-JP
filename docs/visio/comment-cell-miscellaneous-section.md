@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 6f52ed60-d58b-86e6-f7e2-2ef19d4afa75
 description: 図形のコメント テキストを文字列形式で格納します。
-ms.openlocfilehash: f5222836b29a26cc26ca8093576d0962f0592fae
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e6f21875928bce31dc2004d88f2d281e31265d65
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357114"
 ---
-# <a name="comment-cell-miscellaneous-section"></a>[Comment] セル ([その他] セクション)
+# <a name="comment-cell-miscellaneous-section"></a>[Comment] セル ([Miscellaneous] セクション)
 
 図形のコメント テキストを文字列形式で格納します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 コメントは、[**校閲**] タブの [**新しいコメント**] をクリックして挿入することもできます。 
   
