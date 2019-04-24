@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0e1df7d4914a247dac6f96a3709f0930bceea0ea
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301373"
 ---
-# <a name="procedures-append-method-example-vb"></a><span data-ttu-id="f8f09-102">Procedures の Append メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="f8f09-102">Procedures Append method example (VB)</span></span>
+# <a name="procedures-append-method-example-vb"></a><span data-ttu-id="7ac90-102">Procedures の Append メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="7ac90-102">Procedures Append method example (VB)</span></span>
 
 
-<span data-ttu-id="f8f09-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="f8f09-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="7ac90-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="7ac90-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="f8f09-104">次のコードでは、基になるデータ ソースに新しいプロシージャを作成するための、[Command](command-object-ado.md) オブジェクトおよび [Procedures](procedures-collection-adox.md) コレクションの [Append](append-method-adox-procedures.md) メソッドの使用方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f8f09-104">The following code demonstrates how to use a [Command](command-object-ado.md) object and the [Procedures](procedures-collection-adox.md) collection [Append](append-method-adox-procedures.md) method to create a new procedure in the underlying data source.</span></span>
+<span data-ttu-id="7ac90-104">次のコードでは、基になるデータ ソースに新しいプロシージャを作成するための、[Command](command-object-ado.md) オブジェクトおよび [Procedures](procedures-collection-adox.md) コレクションの [Append](append-method-adox-procedures.md) メソッドの使用方法を示します。</span><span class="sxs-lookup"><span data-stu-id="7ac90-104">The following code demonstrates how to use a [Command](command-object-ado.md) object and the [Procedures](procedures-collection-adox.md) collection [Append](append-method-adox-procedures.md) method to create a new procedure in the underlying data source.</span></span>
 
 ```vb 
  

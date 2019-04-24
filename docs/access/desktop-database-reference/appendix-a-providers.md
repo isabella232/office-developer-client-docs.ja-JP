@@ -8,33 +8,33 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e4549c8817361cfb5b9fa730ee37ca6a07edc98b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297061"
 ---
-# <a name="appendix-a-providers"></a><span data-ttu-id="e6343-102">付録 A: プロバイダー</span><span class="sxs-lookup"><span data-stu-id="e6343-102">Appendix A: Providers</span></span>
+# <a name="appendix-a-providers"></a><span data-ttu-id="e2758-102">付録 A: プロバイダー</span><span class="sxs-lookup"><span data-stu-id="e2758-102">Appendix A: Providers</span></span>
 
 
-<span data-ttu-id="e6343-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="e6343-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="e2758-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="e2758-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-<span data-ttu-id="e6343-104">このセクションでは、次の 3 つの種類のプロバイダー: データ プロバイダー、サービス プロバイダー、およびサービスのコンポーネントです。</span><span class="sxs-lookup"><span data-stu-id="e6343-104">This section addresses three kinds of providers: data providers, service providers, and service components.</span></span> <span data-ttu-id="e6343-105">プロバイダーは、2 つのカテゴリに分類されます: データとサービスを提供するものです。</span><span class="sxs-lookup"><span data-stu-id="e6343-105">Providers fall into two categories: those providing data and those providing services.</span></span> <span data-ttu-id="e6343-106">*データ プロバイダー*は、独自のデータを所有し、表形式でアプリケーションに公開します。</span><span class="sxs-lookup"><span data-stu-id="e6343-106">A *data provider* owns its own data and exposes it in tabular form to your application.</span></span> <span data-ttu-id="e6343-107">*サービス プロバイダー*では、作成や、ADO アプリケーションの機能を強化して、データの利用によってサービスをカプセル化します。</span><span class="sxs-lookup"><span data-stu-id="e6343-107">A *service provider* encapsulates a service by producing and consuming data, augmenting features in your ADO applications.</span></span> <span data-ttu-id="e6343-108">として*サービスのコンポーネント*、その他のサービス プロバイダーまたはコンポーネントと連携して動作するサービス プロバイダーはさらに定義も可能性があります。</span><span class="sxs-lookup"><span data-stu-id="e6343-108">A service provider may also be further defined as a *service component*, which must work in conjunction with other service providers or components.</span></span>
+<span data-ttu-id="e2758-p101">ここでは、データ プロバイダー、サービス プロバイダー、およびサービス コンポーネントの 3 種類のプロバイダーについて説明します。プロバイダーは、データを提供するものとサービスを提供するものの 2 つに大別されます。"データ プロバイダー" は、独自のデータを所有し、表形式でアプリケーションに公開します。"サービス プロバイダー" は、データを作成および利用することによってサービスをカプセル化し、ADO アプリケーションの機能を強化します。サービス プロバイダーはさらに、他のサービス プロバイダーやサービス コンポーネントと連携して動作する "サービス コンポーネント" として定義される場合もあります。</span><span class="sxs-lookup"><span data-stu-id="e2758-p101">This section addresses three kinds of providers: data providers, service providers, and service components. Providers fall into two categories: those providing data and those providing services. A *data provider* owns its own data and exposes it in tabular form to your application. A *service provider* encapsulates a service by producing and consuming data, augmenting features in your ADO applications. A service provider may also be further defined as a *service component*, which must work in conjunction with other service providers or components.</span></span>
 
-## <a name="data-providers"></a><span data-ttu-id="e6343-109">データ プロバイダー</span><span class="sxs-lookup"><span data-stu-id="e6343-109">Data providers</span></span>
+## <a name="data-providers"></a><span data-ttu-id="e2758-109">データ プロバイダー</span><span class="sxs-lookup"><span data-stu-id="e2758-109">Data providers</span></span>
 
-<span data-ttu-id="e6343-110">ADO は高性能で柔軟性に富んでおり、使用するプロバイダーの機能に関係なく、種類の異なる複数のデータ プロバイダーに接続した場合でも、同じプログラミング モデルを提供できます。</span><span class="sxs-lookup"><span data-stu-id="e6343-110">ADO is powerful and flexible because it can connect to any of several different data providers and still expose the same programming model, regardless of the specific features of any given provider.</span></span>
+<span data-ttu-id="e2758-110">ADO は高性能で柔軟性に富んでおり、使用するプロバイダーの機能に関係なく、種類の異なる複数のデータ プロバイダーに接続した場合でも、同じプログラミング モデルを提供できます。</span><span class="sxs-lookup"><span data-stu-id="e2758-110">ADO is powerful and flexible because it can connect to any of several different data providers and still expose the same programming model, regardless of the specific features of any given provider.</span></span>
 
-<span data-ttu-id="e6343-p102">ただし、各データ プロバイダーはそれぞれ異なるので、アプリケーションと ADO の間でどのようなやり取りが行われるかは、データ プロバイダーごとに少しずつ異なります。この相違点は、通常、次の 3 つのカテゴリのいずれかに分類されます。</span><span class="sxs-lookup"><span data-stu-id="e6343-p102">However, because each data provider is unique, how your application interacts with ADO will vary slightly by data provider. The differences usually fall into one of three categories:</span></span>
+<span data-ttu-id="e2758-p102">ただし、各データ プロバイダーはそれぞれ異なるので、アプリケーションと ADO の間でどのようなやり取りが行われるかは、データ プロバイダーごとに少しずつ異なります。この相違点は、通常、次の 3 つのカテゴリのいずれかに分類されます。</span><span class="sxs-lookup"><span data-stu-id="e2758-p102">However, because each data provider is unique, how your application interacts with ADO will vary slightly by data provider. The differences usually fall into one of three categories:</span></span>
 
-- <span data-ttu-id="e6343-113">[ConnectionString](connectionstring-property-ado.md) プロパティの接続パラメーター</span><span class="sxs-lookup"><span data-stu-id="e6343-113">Connection parameters in the [ConnectionString](connectionstring-property-ado.md) property.</span></span>
+- <span data-ttu-id="e2758-113">[ConnectionString](connectionstring-property-ado.md) プロパティの接続パラメーター</span><span class="sxs-lookup"><span data-stu-id="e2758-113">Connection parameters in the [ConnectionString](connectionstring-property-ado.md) property.</span></span>
 
-- <span data-ttu-id="e6343-114">[Command](command-object-ado.md) オブジェクトの使用方法</span><span class="sxs-lookup"><span data-stu-id="e6343-114">[Command](command-object-ado.md) object usage.</span></span>
+- <span data-ttu-id="e2758-114">[Command](command-object-ado.md) オブジェクトの使用方法</span><span class="sxs-lookup"><span data-stu-id="e2758-114">[Command](command-object-ado.md) object usage.</span></span>
 
-- <span data-ttu-id="e6343-115">プロバイダー固有の [Recordset](recordset-object-ado.md) の動作</span><span class="sxs-lookup"><span data-stu-id="e6343-115">Provider-specific [Recordset](recordset-object-ado.md) behavior.</span></span>
+- <span data-ttu-id="e2758-115">プロバイダー固有の [Recordset](recordset-object-ado.md) の動作</span><span class="sxs-lookup"><span data-stu-id="e2758-115">Provider-specific [Recordset](recordset-object-ado.md) behavior.</span></span>
 
-<span data-ttu-id="e6343-116">Microsoft から現在入手可能な各データ プロバイダーの詳細については、次の各トピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e6343-116">Details for each of the data providers currently available from Microsoft are listed as follows.</span></span>
+<span data-ttu-id="e2758-116">Microsoft から現在入手可能な各データ プロバイダーの詳細については、次の各トピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e2758-116">Details for each of the data providers currently available from Microsoft are listed as follows.</span></span>
 
 <table>
 <colgroup>
@@ -43,66 +43,66 @@ ms.locfileid: "28717052"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="e6343-117">対象</span><span class="sxs-lookup"><span data-stu-id="e6343-117">Area</span></span></p></th>
-<th><p><span data-ttu-id="e6343-118">トピック</span><span class="sxs-lookup"><span data-stu-id="e6343-118">Topic</span></span></p></th>
+<th><p><span data-ttu-id="e2758-117">項目</span><span class="sxs-lookup"><span data-stu-id="e2758-117">Area</span></span></p></th>
+<th><p><span data-ttu-id="e2758-118">トピック</span><span class="sxs-lookup"><span data-stu-id="e2758-118">Topic</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="e6343-119">ODBC データベース</span><span class="sxs-lookup"><span data-stu-id="e6343-119">ODBC databases</span></span></p></td>
-<td><p><span data-ttu-id="e6343-120"><a href="microsoft-ole-db-provider-for-odbc.md">Microsoft OLE DB Provider for ODBC</a></span><span class="sxs-lookup"><span data-stu-id="e6343-120"><a href="microsoft-ole-db-provider-for-odbc.md">Microsoft OLE DB Provider for ODBC</a></span></span></p></td>
+<td><p><span data-ttu-id="e2758-119">ODBC データベース</span><span class="sxs-lookup"><span data-stu-id="e2758-119">ODBC databases</span></span></p></td>
+<td><p><span data-ttu-id="e2758-120"><a href="microsoft-ole-db-provider-for-odbc.md">Microsoft OLE DB Provider for ODBC</a></span><span class="sxs-lookup"><span data-stu-id="e2758-120"><a href="microsoft-ole-db-provider-for-odbc.md">Microsoft OLE DB Provider for ODBC</a></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="e6343-121">Microsoft インデックス サービス</span><span class="sxs-lookup"><span data-stu-id="e6343-121">Microsoft Indexing Service</span></span></p></td>
-<td><p><span data-ttu-id="e6343-122"><a href="microsoft-ole-db-provider-for-microsoft-indexing-service.md">Microsoft OLE DB Provider for Microsoft Indexing Service</a></span><span class="sxs-lookup"><span data-stu-id="e6343-122"><a href="microsoft-ole-db-provider-for-microsoft-indexing-service.md">Microsoft OLE DB Provider for Microsoft Indexing Service</a></span></span></p></td>
+<td><p><span data-ttu-id="e2758-121">Microsoft インデックス サービス</span><span class="sxs-lookup"><span data-stu-id="e2758-121">Microsoft Indexing Service</span></span></p></td>
+<td><p><span data-ttu-id="e2758-122"><a href="microsoft-ole-db-provider-for-microsoft-indexing-service.md">Microsoft OLE DB Provider for Microsoft Indexing Service</a></span><span class="sxs-lookup"><span data-stu-id="e2758-122"><a href="microsoft-ole-db-provider-for-microsoft-indexing-service.md">Microsoft OLE DB Provider for Microsoft Indexing Service</a></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="e6343-123">Microsoft Active Directory サービス</span><span class="sxs-lookup"><span data-stu-id="e6343-123">Microsoft Active Directory Service</span></span></p></td>
-<td><p><span data-ttu-id="e6343-124"><a href="microsoft-ole-db-provider-for-microsoft-active-directory-service.md">Microsoft OLE DB Provider for Microsoft Active Directory Service</a></span><span class="sxs-lookup"><span data-stu-id="e6343-124"><a href="microsoft-ole-db-provider-for-microsoft-active-directory-service.md">Microsoft OLE DB Provider for Microsoft Active Directory Service</a></span></span></p></td>
+<td><p><span data-ttu-id="e2758-123">Microsoft Active Directory サービス</span><span class="sxs-lookup"><span data-stu-id="e2758-123">Microsoft Active Directory Service</span></span></p></td>
+<td><p><span data-ttu-id="e2758-124"><a href="microsoft-ole-db-provider-for-microsoft-active-directory-service.md">Microsoft OLE DB Provider for Microsoft Active Directory Service</a></span><span class="sxs-lookup"><span data-stu-id="e2758-124"><a href="microsoft-ole-db-provider-for-microsoft-active-directory-service.md">Microsoft OLE DB Provider for Microsoft Active Directory Service</a></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="e6343-125">Microsoft Jet データベース</span><span class="sxs-lookup"><span data-stu-id="e6343-125">Microsoft Jet databases</span></span></p></td>
-<td><p><span data-ttu-id="e6343-126"><a href="microsoft-ole-db-provider-for-microsoft-jet.md">Microsoft OLE DB Provider for Microsoft Jet</a></span><span class="sxs-lookup"><span data-stu-id="e6343-126"><a href="microsoft-ole-db-provider-for-microsoft-jet.md">Microsoft OLE DB Provider for Microsoft Jet</a></span></span></p></td>
+<td><p><span data-ttu-id="e2758-125">Microsoft Jet データベース</span><span class="sxs-lookup"><span data-stu-id="e2758-125">Microsoft Jet databases</span></span></p></td>
+<td><p><span data-ttu-id="e2758-126"><a href="microsoft-ole-db-provider-for-microsoft-jet.md">Microsoft OLE DB Provider for Microsoft Jet</a></span><span class="sxs-lookup"><span data-stu-id="e2758-126"><a href="microsoft-ole-db-provider-for-microsoft-jet.md">Microsoft OLE DB Provider for Microsoft Jet</a></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="e6343-127">Microsoft SQL Server</span><span class="sxs-lookup"><span data-stu-id="e6343-127">Microsoft SQL Server</span></span></p></td>
-<td><p><span data-ttu-id="e6343-128"><a href="microsoft-ole-db-provider-for-sql-server.md">Microsoft OLE DB Provider for SQL Server</a></span><span class="sxs-lookup"><span data-stu-id="e6343-128"><a href="microsoft-ole-db-provider-for-sql-server.md">Microsoft OLE DB Provider for SQL Server</a></span></span></p></td>
+<td><p><span data-ttu-id="e2758-127">Microsoft SQL Server</span><span class="sxs-lookup"><span data-stu-id="e2758-127">Microsoft SQL Server</span></span></p></td>
+<td><p><span data-ttu-id="e2758-128"><a href="microsoft-ole-db-provider-for-sql-server.md">Microsoft OLE DB Provider for SQL Server</a></span><span class="sxs-lookup"><span data-stu-id="e2758-128"><a href="microsoft-ole-db-provider-for-sql-server.md">Microsoft OLE DB Provider for SQL Server</a></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="e6343-129">Oracle データベース</span><span class="sxs-lookup"><span data-stu-id="e6343-129">Oracle databases</span></span></p></td>
-<td><p><span data-ttu-id="e6343-130"><a href="microsoft-ole-db-provider-for-oracle.md">Microsoft OLE DB Provider for Oracle</a></span><span class="sxs-lookup"><span data-stu-id="e6343-130"><a href="microsoft-ole-db-provider-for-oracle.md">Microsoft OLE DB Provider for Oracle</a></span></span></p></td>
+<td><p><span data-ttu-id="e2758-129">Oracle データベース</span><span class="sxs-lookup"><span data-stu-id="e2758-129">Oracle databases</span></span></p></td>
+<td><p><span data-ttu-id="e2758-130"><a href="microsoft-ole-db-provider-for-oracle.md">Microsoft OLE DB Provider for Oracle</a></span><span class="sxs-lookup"><span data-stu-id="e2758-130"><a href="microsoft-ole-db-provider-for-oracle.md">Microsoft OLE DB Provider for Oracle</a></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="e6343-131">Internet Publishing</span><span class="sxs-lookup"><span data-stu-id="e6343-131">Internet Publishing</span></span></p></td>
-<td><p><span data-ttu-id="e6343-132"><a href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider for Internet Publishing</a></span><span class="sxs-lookup"><span data-stu-id="e6343-132"><a href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider for Internet Publishing</a></span></span></p></td>
+<td><p><span data-ttu-id="e2758-131">Internet Publishing</span><span class="sxs-lookup"><span data-stu-id="e2758-131">Internet Publishing</span></span></p></td>
+<td><p><span data-ttu-id="e2758-132"><a href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider for Internet Publishing</a></span><span class="sxs-lookup"><span data-stu-id="e2758-132"><a href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider for Internet Publishing</a></span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="provider-specific-dynamic-properties"></a><span data-ttu-id="e6343-133">プロバイダー固有の動的プロパティ</span><span class="sxs-lookup"><span data-stu-id="e6343-133">Provider-specific dynamic properties</span></span>
+## <a name="provider-specific-dynamic-properties"></a><span data-ttu-id="e2758-133">プロバイダー固有の動的プロパティ</span><span class="sxs-lookup"><span data-stu-id="e2758-133">Provider-specific dynamic properties</span></span>
 
-<span data-ttu-id="e6343-p103">[Connection](properties-collection-ado.md) オブジェクト、 [Command](connection-object-ado.md) オブジェクト、および [Recordset](command-object-ado.md) オブジェクトの [Properties](recordset-object-ado.md) コレクションには、プロバイダー固有の動的プロパティが含まれています。これらのプロパティにより、ADO がサポートする組み込みプロパティでは入手できない、プロバイダー固有の機能に関する情報を入手できます。</span><span class="sxs-lookup"><span data-stu-id="e6343-p103">The [Properties](properties-collection-ado.md) collections of the [Connection](connection-object-ado.md), [Command](command-object-ado.md), and [Recordset](recordset-object-ado.md) objects include dynamic properties specific to the provider. These properties provide information about functionality specific to the provider beyond the built-in properties that ADO supports.</span></span>
+<span data-ttu-id="e2758-p103">[Connection](properties-collection-ado.md) オブジェクト、 [Command](connection-object-ado.md) オブジェクト、および [Recordset](command-object-ado.md) オブジェクトの [Properties](recordset-object-ado.md) コレクションには、プロバイダー固有の動的プロパティが含まれています。これらのプロパティにより、ADO がサポートする組み込みプロパティでは入手できない、プロバイダー固有の機能に関する情報を入手できます。</span><span class="sxs-lookup"><span data-stu-id="e2758-p103">The [Properties](properties-collection-ado.md) collections of the [Connection](connection-object-ado.md), [Command](command-object-ado.md), and [Recordset](recordset-object-ado.md) objects include dynamic properties specific to the provider. These properties provide information about functionality specific to the provider beyond the built-in properties that ADO supports.</span></span>
 
-<span data-ttu-id="e6343-p104">接続を確立してこれらのオブジェクトを作成した後、オブジェクトの [Properties](refresh-method-ado.md) コレクションに対して **Refresh** メソッドを使用して、プロバイダー固有のプロパティを取得できます。プロバイダー固有の動的プロパティの詳細については、各プロバイダーのマニュアルおよび「OLE DB Programmer's Reference」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e6343-p104">After establishing the connection and creating these objects, use the [Refresh](refresh-method-ado.md) method on the object's **Properties** collection to obtain the provider-specific properties. Refer to the provider documentation and the OLE DB Programmer's Reference for detailed information about these dynamic properties.</span></span>
+<span data-ttu-id="e2758-p104">接続を確立してこれらのオブジェクトを作成した後、オブジェクトの [Properties](refresh-method-ado.md) コレクションに対して **Refresh** メソッドを使用して、プロバイダー固有のプロパティを取得できます。プロバイダー固有の動的プロパティの詳細については、各プロバイダーのマニュアルおよび「OLE DB Programmer's Reference」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e2758-p104">After establishing the connection and creating these objects, use the [Refresh](refresh-method-ado.md) method on the object's **Properties** collection to obtain the provider-specific properties. Refer to the provider documentation and the OLE DB Programmer's Reference for detailed information about these dynamic properties.</span></span>
 
-## <a name="service-providers"></a><span data-ttu-id="e6343-138">サービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="e6343-138">Service providers</span></span>
+## <a name="service-providers"></a><span data-ttu-id="e2758-138">サービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="e2758-138">Service providers</span></span>
 
-<span data-ttu-id="e6343-p105">サービス プロバイダーを使用するには、キーワードを指定する必要があります。また、各サービス プロバイダーに関連付けられたプロバイダー固有の動的プロパティを理解しておく必要があります。Microsoft から現在入手可能な各サービス プロバイダーの詳細については、次の各トピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e6343-p105">To use a service provider, you must supply a keyword. You should also be aware of the provider-specific dynamic properties associated with each service provider. Provider-specific details are listed for each of the service providers currently available from Microsoft:</span></span>
+<span data-ttu-id="e2758-p105">サービス プロバイダーを使用するには、キーワードを指定する必要があります。また、各サービス プロバイダーに関連付けられたプロバイダー固有の動的プロパティを理解しておく必要があります。Microsoft から現在入手可能な各サービス プロバイダーの詳細については、次の各トピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e2758-p105">To use a service provider, you must supply a keyword. You should also be aware of the provider-specific dynamic properties associated with each service provider. Provider-specific details are listed for each of the service providers currently available from Microsoft:</span></span>
 
-- [<span data-ttu-id="e6343-142">Microsoft Data Shaping Service for OLE DB (ADO サービス プロバイダー)</span><span class="sxs-lookup"><span data-stu-id="e6343-142">Microsoft Data Shaping Service for OLE DB</span></span>](microsoft-data-shaping-service-for-ole-db-ado-service-provider.md)
+- [<span data-ttu-id="e2758-142">Microsoft Data Shaping Service for OLE DB (ADO サービス プロバイダー)</span><span class="sxs-lookup"><span data-stu-id="e2758-142">Microsoft Data Shaping Service for OLE DB</span></span>](microsoft-data-shaping-service-for-ole-db-ado-service-provider.md)
 
-- [<span data-ttu-id="e6343-143">Microsoft OLE DB Persistence Provider (ADO サービス プロバイダー)</span><span class="sxs-lookup"><span data-stu-id="e6343-143">Microsoft OLE DB Persistence Provider</span></span>](microsoft-ole-db-persistence-provider-ado-service-provider.md)
+- [<span data-ttu-id="e2758-143">Microsoft OLE DB Persistence Provider (ADO サービス プロバイダー)</span><span class="sxs-lookup"><span data-stu-id="e2758-143">Microsoft OLE DB Persistence Provider</span></span>](microsoft-ole-db-persistence-provider-ado-service-provider.md)
 
-- [<span data-ttu-id="e6343-144">Microsoft OLE DB Remoting Provider (ADO サービス プロバイダー)</span><span class="sxs-lookup"><span data-stu-id="e6343-144">Microsoft OLE DB Remoting Provider</span></span>](microsoft-ole-db-remoting-provider-ado-service-provider.md)
+- [<span data-ttu-id="e2758-144">Microsoft OLE DB Remoting Provider (ADO サービス プロバイダー)</span><span class="sxs-lookup"><span data-stu-id="e2758-144">Microsoft OLE DB Remoting Provider</span></span>](microsoft-ole-db-remoting-provider-ado-service-provider.md)
 
-## <a name="service-components"></a><span data-ttu-id="e6343-145">サービス コンポーネント</span><span class="sxs-lookup"><span data-stu-id="e6343-145">Service components</span></span>
+## <a name="service-components"></a><span data-ttu-id="e2758-145">サービスコンポーネント</span><span class="sxs-lookup"><span data-stu-id="e2758-145">Service components</span></span>
 
-<span data-ttu-id="e6343-p106">[Cursor Service for OLE DB](microsoft-cursor-service-for-ole-db-ado-service-component.md) サービス コンポーネントは、データ プロバイダーのカーソル サポート機能を補完します。また、サービス コンポーネントはキーワードを必要とし、動的プロパティを持ちます。</span><span class="sxs-lookup"><span data-stu-id="e6343-p106">The [Cursor Service for OLE DB](microsoft-cursor-service-for-ole-db-ado-service-component.md) service component supplements the cursor support functions of data providers. It also requires a keyword and has dynamic properties.</span></span>
+<span data-ttu-id="e2758-p106">[Cursor Service for OLE DB](microsoft-cursor-service-for-ole-db-ado-service-component.md) サービス コンポーネントは、データ プロバイダーのカーソル サポート機能を補完します。また、サービス コンポーネントはキーワードを必要とし、動的プロパティを持ちます。</span><span class="sxs-lookup"><span data-stu-id="e2758-p106">The [Cursor Service for OLE DB](microsoft-cursor-service-for-ole-db-ado-service-component.md) service component supplements the cursor support functions of data providers. It also requires a keyword and has dynamic properties.</span></span>
 
-<span data-ttu-id="e6343-148">プロバイダーの詳細については、Microsoft Data Access Components SDK の Microsoft OLE DB のマニュアルまたは「[データ プラットフォーム デベロッパー センター](https://docs.microsoft.com/sql/connect/sql-data-developer?view=sql-server-2017)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e6343-148">For more information about providers, see the documentation for Microsoft OLE DB in the Microsoft Data Access Components SDK or visit the [Data Platform Developer Center](https://docs.microsoft.com/sql/connect/sql-data-developer?view=sql-server-2017).</span></span>
+<span data-ttu-id="e2758-148">プロバイダーの詳細については、Microsoft Data Access Components SDK の Microsoft OLE DB のマニュアルまたは「[データ プラットフォーム デベロッパー センター](https://docs.microsoft.com/sql/connect/sql-data-developer?view=sql-server-2017)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e2758-148">For more information about providers, see the documentation for Microsoft OLE DB in the Microsoft Data Access Components SDK or visit the [Data Platform Developer Center](https://docs.microsoft.com/sql/connect/sql-data-developer?view=sql-server-2017).</span></span>
 
-## <a name="provider-commands"></a><span data-ttu-id="e6343-149">プロバイダーのコマンド</span><span class="sxs-lookup"><span data-stu-id="e6343-149">Provider commands</span></span>
+## <a name="provider-commands"></a><span data-ttu-id="e2758-149">プロバイダーコマンド</span><span class="sxs-lookup"><span data-stu-id="e2758-149">Provider commands</span></span>
 
-<span data-ttu-id="e6343-150">プロバイダーごとに一覧表示、アプリケーションがプロバイダーのコマンドとして SQL ステートメントを入力するユーザーを許可する場合、常にユーザー入力を検証し、警戒をハッカーの攻撃の一部としてなど、危険性のある SQL ステートメントを使用して、ユーザーが入力します。</span><span class="sxs-lookup"><span data-stu-id="e6343-150">For each provider listed here, if your applications allow users to enter SQL statements as the provider commands, you must always validate the user input and be vigilant of possible hacker attacks using potentially dangerous SQL statement, such as, , as part of the user input.</span></span>
+<span data-ttu-id="e2758-150">ここにリストされている各プロバイダーについて、アプリケーションでユーザーがプロバイダーコマンドとして SQL ステートメントを入力できるようにする場合は、常にユーザー入力を検証して、のような潜在的な危険な sql ステートメントを使用したハッカー攻撃を受ける可能性があります (など)。ユーザー入力。</span><span class="sxs-lookup"><span data-stu-id="e2758-150">For each provider listed here, if your applications allow users to enter SQL statements as the provider commands, you must always validate the user input and be vigilant of possible hacker attacks using potentially dangerous SQL statement, such as, , as part of the user input.</span></span>
 

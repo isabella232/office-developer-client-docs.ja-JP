@@ -1,5 +1,5 @@
 ---
-title: Recordset.Bookmarkable プロパティ (DAO)
+title: Bookmarkable プロパティ (DAO)
 TOCTitle: Bookmarkable Property
 ms:assetid: 6323f162-75c4-7cfe-c918-0b9454560f97
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194950(v=office.15)
@@ -8,34 +8,34 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2bd9b91f80c9411bb7cdf4e0be9e71ab055dc72f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300624"
 ---
-# <a name="recordsetbookmarkable-property-dao"></a><span data-ttu-id="6b64d-102">Recordset.Bookmarkable プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="6b64d-102">Recordset.Bookmarkable property (DAO)</span></span>
+# <a name="recordsetbookmarkable-property-dao"></a><span data-ttu-id="a772c-102">Bookmarkable プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="a772c-102">Recordset.Bookmarkable property (DAO)</span></span>
 
 
-<span data-ttu-id="6b64d-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="6b64d-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="a772c-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="a772c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="6b64d-104">**Recordset** オブジェクトがブックマークをサポートしているかどうかを示す、 **[Bookmark](recordset-bookmark-property-dao.md)** プロパティを使用して設定できる値を返します。</span><span class="sxs-lookup"><span data-stu-id="6b64d-104">Returns a value that indicates whether a **Recordset** object supports bookmarks, which you can set by using the **[Bookmark](recordset-bookmark-property-dao.md)** property.</span></span>
+<span data-ttu-id="a772c-104">**Recordset** オブジェクトがブックマークをサポートし、 **[Bookmark](recordset-bookmark-property-dao.md)** プロパティを使用してブックマークを設定できるかどうかを示す値を取得します。</span><span class="sxs-lookup"><span data-stu-id="a772c-104">Returns a value that indicates whether a **Recordset** object supports bookmarks, which you can set by using the **[Bookmark](recordset-bookmark-property-dao.md)** property.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="6b64d-105">構文</span><span class="sxs-lookup"><span data-stu-id="6b64d-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="a772c-105">構文</span><span class="sxs-lookup"><span data-stu-id="a772c-105">Syntax</span></span>
 
-<span data-ttu-id="6b64d-106">*式*です。ブックマークを設定</span><span class="sxs-lookup"><span data-stu-id="6b64d-106">*expression* .Bookmarkable</span></span>
+<span data-ttu-id="a772c-106">*式*。Bookmarkable</span><span class="sxs-lookup"><span data-stu-id="a772c-106">*expression* .Bookmarkable</span></span>
 
-<span data-ttu-id="6b64d-107">\*式\***レコード セット**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="6b64d-107">*expression* A variable that represents a **Recordset** object.</span></span>
+<span data-ttu-id="a772c-107">\*式\***Recordset**オブジェクトを表す変数を取得します。</span><span class="sxs-lookup"><span data-stu-id="a772c-107">*expression* A variable that represents a **Recordset** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="6b64d-108">注釈</span><span class="sxs-lookup"><span data-stu-id="6b64d-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a772c-108">注釈</span><span class="sxs-lookup"><span data-stu-id="a772c-108">Remarks</span></span>
 
-<span data-ttu-id="6b64d-109">**Bookmark** プロパティを設定または確認しようとする前に、 **Recordset** オブジェクトの **Bookmarkable** プロパティの設定値を確認してください。</span><span class="sxs-lookup"><span data-stu-id="6b64d-109">Check the **Bookmarkable** property setting of a **Recordset** object before you attempt to set or check the **Bookmark** property.</span></span>
+<span data-ttu-id="a772c-109">**Bookmark** プロパティを設定または確認しようとする前に、 **Recordset** オブジェクトの **Bookmarkable** プロパティの設定を確認してください。</span><span class="sxs-lookup"><span data-stu-id="a772c-109">Check the **Bookmarkable** property setting of a **Recordset** object before you attempt to set or check the **Bookmark** property.</span></span>
 
-<span data-ttu-id="6b64d-110">Microsoft Access データベース エンジンのテーブルに基づく**Recordset**オブジェクトの**Bookmarkable**プロパティの値は、true の場合、およびブックマークを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="6b64d-110">For **Recordset** objects based entirely on Microsoft Access database engine tables, the value of the **Bookmarkable** property is True, and you can use bookmarks.</span></span> <span data-ttu-id="6b64d-111">ただし、その他のデータベース製品では、ブックマークがサポートされていない場合があります。</span><span class="sxs-lookup"><span data-stu-id="6b64d-111">Other database products may not support bookmarks, however.</span></span> <span data-ttu-id="6b64d-112">たとえば、主キーがない Paradox リンク テーブルを基にした **Recordset** オブジェクトでブックマークを使用することはできません。</span><span class="sxs-lookup"><span data-stu-id="6b64d-112">For example, you can't use bookmarks in any **Recordset** object based on a linked Paradox table that has no primary key.</span></span>
+<span data-ttu-id="a772c-110">Microsoft access データベースエンジンのテーブルを基にした**Recordset**オブジェクトの場合、 **Bookmarkable**プロパティの値は True になり、ブックマークを使用することができます。</span><span class="sxs-lookup"><span data-stu-id="a772c-110">For **Recordset** objects based entirely on Microsoft Access database engine tables, the value of the **Bookmarkable** property is True, and you can use bookmarks.</span></span> <span data-ttu-id="a772c-111">ただし、他のデータベース製品はブックマークをサポートしていない場合があります。</span><span class="sxs-lookup"><span data-stu-id="a772c-111">Other database products may not support bookmarks, however.</span></span> <span data-ttu-id="a772c-112">たとえば、主キーを持たないリンク テーブルの Paradox に準拠する **Recordset** オブジェクトではブックマークを使用できません。</span><span class="sxs-lookup"><span data-stu-id="a772c-112">For example, you can't use bookmarks in any **Recordset** object based on a linked Paradox table that has no primary key.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6b64d-113">例</span><span class="sxs-lookup"><span data-stu-id="6b64d-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a772c-113">例</span><span class="sxs-lookup"><span data-stu-id="a772c-113">Example</span></span>
 
-<span data-ttu-id="6b64d-114">次の使用例は、 **Bookmark** プロパティと **Bookmarkable** プロパティを使用して、後からそのレコードに戻れるように、ユーザーが **Recordset** オブジェクトのレコードにフラグを立てることができるようにします。</span><span class="sxs-lookup"><span data-stu-id="6b64d-114">This example uses the **Bookmark** and **Bookmarkable** properties to let the user flag a record in a **Recordset** and return to it later.</span></span>
+<span data-ttu-id="a772c-114">次の使用例は、 **Bookmark** プロパティと **Bookmarkable** プロパティを使用して、後からそのレコードに戻れるように、ユーザーが **Recordset** オブジェクトのレコードにフラグを立てることができるようにします。</span><span class="sxs-lookup"><span data-stu-id="a772c-114">This example uses the **Bookmark** and **Bookmarkable** properties to let the user flag a record in a **Recordset** and return to it later.</span></span>
 
 ```vb
     Sub BookmarkX() 

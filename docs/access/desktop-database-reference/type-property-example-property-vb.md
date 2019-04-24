@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 56e47b32bb85da237464842dcb049092750d77a3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306273"
 ---
-# <a name="type-property-example-property-vb"></a><span data-ttu-id="ae91a-102">Type プロパティの使用例 (Property) (VB)</span><span class="sxs-lookup"><span data-stu-id="ae91a-102">Type property example (Property) (VB)</span></span>
+# <a name="type-property-example-property-vb"></a><span data-ttu-id="63537-102">Type プロパティの使用例 (Property) (VB)</span><span class="sxs-lookup"><span data-stu-id="63537-102">Type property example (Property) (VB)</span></span>
 
 
-<span data-ttu-id="ae91a-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="ae91a-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="63537-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="63537-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="ae91a-p101">この例では、[Type](type-property-ado.md) プロパティの機能を示します。この例は、 [Properties](properties-collection-ado.md) や [Fields](fields-collection-ado.md) などのコレクションの名前やデータ型の一覧を示すユーティリティのモデルです。</span><span class="sxs-lookup"><span data-stu-id="ae91a-p101">This example demonstrates the [Type](type-property-ado.md) property. It is a model of a utility for listing the names and types of a collection, like [Properties](properties-collection-ado.md), [Fields](fields-collection-ado.md), etc.</span></span>
+<span data-ttu-id="63537-p101">この例では、[Type](type-property-ado.md) プロパティの機能を示します。この例は、 [Properties](properties-collection-ado.md) や [Fields](fields-collection-ado.md) などのコレクションの名前やデータ型の一覧を示すユーティリティのモデルです。</span><span class="sxs-lookup"><span data-stu-id="63537-p101">This example demonstrates the [Type](type-property-ado.md) property. It is a model of a utility for listing the names and types of a collection, like [Properties](properties-collection-ado.md), [Fields](fields-collection-ado.md), etc.</span></span>
 
-<span data-ttu-id="ae91a-p102">[Recordset](recordset-object-ado.md) を開いて **Properties** コレクションにアクセスする必要はなく、 **Recordset** オブジェクトのインスタンスを作成すると、このコレクションが生成されます。ただし、 [CursorLocation](cursorlocation-property-ado.md) プロパティを **adUseClient** に設定すると、動的プロパティが **Recordset** オブジェクトの **Properties** コレクションに追加され、さらに高度な例を作成できます。わかりやすくするために、ここでは明示的に [Item](item-property-ado.md) プロパティを使用して、各 [Property](property-object-ado.md) オブジェクトにアクセスしています。</span><span class="sxs-lookup"><span data-stu-id="ae91a-p102">We do not need to open the [Recordset](recordset-object-ado.md) to access its **Properties** collection; they come into existence when the **Recordset** object is instantiated. However, setting the [CursorLocation](cursorlocation-property-ado.md) property to **adUseClient** adds several dynamic properties to the **Recordset** object's **Properties** collection, making the example a little more interesting. For sake of illustration, we explicitly use the [Item](item-property-ado.md) property to access each [Property](property-object-ado.md) object.</span></span>
+<span data-ttu-id="63537-p102">[Recordset](recordset-object-ado.md) を開いて **Properties** コレクションにアクセスする必要はなく、 **Recordset** オブジェクトのインスタンスを作成すると、このコレクションが生成されます。ただし、 [CursorLocation](cursorlocation-property-ado.md) プロパティを **adUseClient** に設定すると、動的プロパティが **Recordset** オブジェクトの **Properties** コレクションに追加され、さらに高度な例を作成できます。わかりやすくするために、ここでは明示的に [Item](item-property-ado.md) プロパティを使用して、各 [Property](property-object-ado.md) オブジェクトにアクセスしています。</span><span class="sxs-lookup"><span data-stu-id="63537-p102">We do not need to open the [Recordset](recordset-object-ado.md) to access its **Properties** collection; they come into existence when the **Recordset** object is instantiated. However, setting the [CursorLocation](cursorlocation-property-ado.md) property to **adUseClient** adds several dynamic properties to the **Recordset** object's **Properties** collection, making the example a little more interesting. For sake of illustration, we explicitly use the [Item](item-property-ado.md) property to access each [Property](property-object-ado.md) object.</span></span>
 
 ```vb 
  

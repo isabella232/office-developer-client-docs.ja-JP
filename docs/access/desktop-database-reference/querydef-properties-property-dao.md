@@ -1,5 +1,5 @@
 ---
-title: QueryDef.Properties プロパティ (DAO)
+title: QueryDef プロパティ (DAO)
 TOCTitle: Properties Property
 ms:assetid: 91d724bf-8e63-a517-c5be-2b8b382608e0
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197640(v=office.15)
@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 077ca05014a5f5781ccded538e11ac7e4fc2b1bf
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303221"
 ---
-# <a name="querydefproperties-property-dao"></a><span data-ttu-id="86b75-102">QueryDef.Properties プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="86b75-102">QueryDef.Properties property (DAO)</span></span>
+# <a name="querydefproperties-property-dao"></a><span data-ttu-id="fe048-102">QueryDef プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="fe048-102">QueryDef.Properties property (DAO)</span></span>
 
 
-<span data-ttu-id="86b75-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="86b75-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="fe048-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="fe048-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="86b75-p101">指定したオブジェクトの **[Properties](properties-collection-dao.md)** コレクションを取得します。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="86b75-p101">Returns the **[Properties](properties-collection-dao.md)** collection of the specified object. Read-only.</span></span>
+<span data-ttu-id="fe048-104">指定したオブジェクトの **[Properties](properties-collection-dao.md)** コレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="fe048-104">Returns the **[Properties](properties-collection-dao.md)** collection of the specified object.</span></span> <span data-ttu-id="fe048-105">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="fe048-105">Read-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="86b75-106">構文</span><span class="sxs-lookup"><span data-stu-id="86b75-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="fe048-106">構文</span><span class="sxs-lookup"><span data-stu-id="fe048-106">Syntax</span></span>
 
-<span data-ttu-id="86b75-107">*式*です。プロパティ</span><span class="sxs-lookup"><span data-stu-id="86b75-107">*expression* .Properties</span></span>
+<span data-ttu-id="fe048-107">*式*。プロパティ</span><span class="sxs-lookup"><span data-stu-id="fe048-107">*expression* .Properties</span></span>
 
-<span data-ttu-id="86b75-108">\*式\***クエリ定義**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="86b75-108">*expression* A variable that represents a **QueryDef** object.</span></span>
+<span data-ttu-id="fe048-108">\*式\***QueryDef**オブジェクトを表す変数を取得します。</span><span class="sxs-lookup"><span data-stu-id="fe048-108">*expression* A variable that represents a **QueryDef** object.</span></span>
 

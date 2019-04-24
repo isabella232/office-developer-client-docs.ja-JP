@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6578dbfc50ae8ffeaa31f49b694b37ba5fd534e8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296711"
 ---
-# <a name="calling-a-stored-procedure-with-a-command"></a><span data-ttu-id="c6e99-102">コマンドを使用したストアド プロシージャの呼び出し</span><span class="sxs-lookup"><span data-stu-id="c6e99-102">Calling a stored procedure with a command</span></span>
+# <a name="calling-a-stored-procedure-with-a-command"></a><span data-ttu-id="e1267-102">コマンドを使用したストアド プロシージャの呼び出し</span><span class="sxs-lookup"><span data-stu-id="e1267-102">Calling a stored procedure with a command</span></span>
 
 
-<span data-ttu-id="c6e99-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="c6e99-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="e1267-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="e1267-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="c6e99-p101">ストアド プロシージャを呼び出すときにも、コマンドを使用できます。このトピックのコードでは、Northwind のサンプル データベースで、CustOrdersOrders というストアド プロシージャを呼び出します。このストアド プロシージャは次のように定義されます。</span><span class="sxs-lookup"><span data-stu-id="c6e99-p101">You can also use a command when calling a stored procedure. The following code calls a stored procedure in the Northwind sample database, called CustOrdersOrders, which is defined as follows:</span></span>
+<span data-ttu-id="e1267-p101">ストアド プロシージャを呼び出すときにも、コマンドを使用できます。このトピックのコードでは、Northwind のサンプル データベースで、CustOrdersOrders というストアド プロシージャを呼び出します。このストアド プロシージャは次のように定義されます。</span><span class="sxs-lookup"><span data-stu-id="e1267-p101">You can also use a command when calling a stored procedure. The following code calls a stored procedure in the Northwind sample database, called CustOrdersOrders, which is defined as follows:</span></span>
 
 ```vb 
  
@@ -30,11 +30,11 @@ WHERE CustomerID = @CustomerID
 ORDER BY OrderID 
 ```
 
-<span data-ttu-id="c6e99-p102">このストアド プロシージャは、顧客 ID をパラメーターとして受け取り、その顧客の注文に関する情報を返すという点で、「[Command オブジェクトのパラメーター](command-object-parameters.md)」で使用されているコマンドと似ています。次のコードでは、このストアド プロシージャを ADO の **Recordset** のソースとして使用します。</span><span class="sxs-lookup"><span data-stu-id="c6e99-p102">This stored procedure is similar to the command used in [Command Object Parameters](command-object-parameters.md), in that it takes a customer ID parameter and returns information about that customer's orders. The code below uses this stored procedure as the source for an ADO **Recordset**.</span></span>
+<span data-ttu-id="e1267-p102">このストアド プロシージャは、顧客 ID をパラメーターとして受け取り、その顧客の注文に関する情報を返すという点で、「[Command オブジェクトのパラメーター](command-object-parameters.md)」で使用されているコマンドと似ています。次のコードでは、このストアド プロシージャを ADO の **Recordset** のソースとして使用します。</span><span class="sxs-lookup"><span data-stu-id="e1267-p102">This stored procedure is similar to the command used in [Command Object Parameters](command-object-parameters.md), in that it takes a customer ID parameter and returns information about that customer's orders. The code below uses this stored procedure as the source for an ADO **Recordset**.</span></span>
 
-<span data-ttu-id="c6e99-p103">ストアド プロシージャを使用すると、ADO のもう 1 つの機能である **Parameters** コレクションの **Refresh** メソッドを使用できるようになります。このメソッドを使用することにより、コマンドに必要なパラメーターに関するすべての情報が、実行時に ADO によって自動的に設定されます。この手法を使用すると、ADO がパラメーターに関する情報をデータ ソースに照会する必要があるため、パフォーマンスが低下します。</span><span class="sxs-lookup"><span data-stu-id="c6e99-p103">Using the stored procedure allows you to access another capability of ADO: the **Parameters** collection **Refresh** method. By using this method, ADO can automatically fill in all information about the parameters required by the command at run time. There is a performance penalty in using this technique, because ADO must query the data source for the information about the parameters.</span></span>
+<span data-ttu-id="e1267-p103">ストアド プロシージャを使用すると、ADO のもう 1 つの機能である **Parameters** コレクションの **Refresh** メソッドを使用できるようになります。このメソッドを使用することにより、コマンドに必要なパラメーターに関するすべての情報が、実行時に ADO によって自動的に設定されます。この手法を使用すると、ADO がパラメーターに関する情報をデータ ソースに照会する必要があるため、パフォーマンスが低下します。</span><span class="sxs-lookup"><span data-stu-id="e1267-p103">Using the stored procedure allows you to access another capability of ADO: the **Parameters** collection **Refresh** method. By using this method, ADO can automatically fill in all information about the parameters required by the command at run time. There is a performance penalty in using this technique, because ADO must query the data source for the information about the parameters.</span></span>
 
-<span data-ttu-id="c6e99-p104">次に示すコードと、パラメーターが手動で入力される「[Command オブジェクトのパラメーター](command-object-parameters.md)」のコードには、他にも重要な違いがあります。まず、このコードは SQL サーバーのストアド プロシージャであり、定義上あらかじめコンパイルされているため、 **Prepared** プロパティが **True** に設定されません。次に、この例では、 **Command** オブジェクトの **CommandType** プロパティが **adCmdStoredProc** に変更され、コマンドがストアド プロシージャであることが ADO に通知されています。</span><span class="sxs-lookup"><span data-stu-id="c6e99-p104">Other important differences exist between the code below and the code in [Command Object Parameters](command-object-parameters.md), where the parameters were entered manually. First, this code does not set the **Prepared** property to **True** because it is a SQL Server stored procedure and is precompiled by definition. Second, the **CommandType** property of the **Command** object changed to **adCmdStoredProc** in the second example to inform ADO that the command was a stored procedure.</span></span>
+<span data-ttu-id="e1267-p104">次に示すコードと、パラメーターが手動で入力される「[Command オブジェクトのパラメーター](command-object-parameters.md)」のコードには、他にも重要な違いがあります。まず、このコードは SQL サーバーのストアド プロシージャであり、定義上あらかじめコンパイルされているため、 **Prepared** プロパティが **True** に設定されません。次に、この例では、 **Command** オブジェクトの **CommandType** プロパティが **adCmdStoredProc** に変更され、コマンドがストアド プロシージャであることが ADO に通知されています。</span><span class="sxs-lookup"><span data-stu-id="e1267-p104">Other important differences exist between the code below and the code in [Command Object Parameters](command-object-parameters.md), where the parameters were entered manually. First, this code does not set the **Prepared** property to **True** because it is a SQL Server stored procedure and is precompiled by definition. Second, the **CommandType** property of the **Command** object changed to **adCmdStoredProc** in the second example to inform ADO that the command was a stored procedure.</span></span>
 
 ```vb 
  

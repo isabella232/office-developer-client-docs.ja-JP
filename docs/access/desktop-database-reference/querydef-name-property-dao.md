@@ -8,26 +8,26 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 538bea0ea4db5d083b00732271757f59b2f8428e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302857"
 ---
-# <a name="querydefname-property-dao"></a><span data-ttu-id="87717-102">QueryDef.Name プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="87717-102">QueryDef.Name property (DAO)</span></span>
+# <a name="querydefname-property-dao"></a><span data-ttu-id="cb142-102">QueryDef.Name プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="cb142-102">QueryDef.Name property (DAO)</span></span>
 
 
-<span data-ttu-id="87717-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="87717-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="cb142-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="cb142-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="87717-p101">指定したオブジェクトの名前を取得または設定します。値の取得および設定が可能です。文字列型 ( **String**) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="87717-p101">Returns or sets the name of the specified object. Read/write **String**.</span></span>
+<span data-ttu-id="cb142-104">指定したオブジェクトの名前を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="cb142-104">Returns or sets the name of the specified object.</span></span> <span data-ttu-id="cb142-105">読み取りまたは書き込み **文字列** です。</span><span class="sxs-lookup"><span data-stu-id="cb142-105">Read/write **String**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="87717-106">構文</span><span class="sxs-lookup"><span data-stu-id="87717-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="cb142-106">構文</span><span class="sxs-lookup"><span data-stu-id="cb142-106">Syntax</span></span>
 
-<span data-ttu-id="87717-107">*式*です。名</span><span class="sxs-lookup"><span data-stu-id="87717-107">*expression* .Name</span></span>
+<span data-ttu-id="cb142-107">*式*。拡張子</span><span class="sxs-lookup"><span data-stu-id="cb142-107">*expression* .Name</span></span>
 
-<span data-ttu-id="87717-108">\*式\***クエリ定義**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="87717-108">*expression* A variable that represents a **QueryDef** object.</span></span>
+<span data-ttu-id="cb142-108">\*式\***QueryDef**オブジェクトを表す変数を取得します。</span><span class="sxs-lookup"><span data-stu-id="cb142-108">*expression* A variable that represents a **QueryDef** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="87717-109">注釈</span><span class="sxs-lookup"><span data-stu-id="87717-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="cb142-109">注釈</span><span class="sxs-lookup"><span data-stu-id="cb142-109">Remarks</span></span>
 
-<span data-ttu-id="87717-110">**QueryDef** オブジェクトの名前の最大長は 64 文字です。</span><span class="sxs-lookup"><span data-stu-id="87717-110">The maximum length for the name of a **QueryDef** object is 64 characters.</span></span>
+<span data-ttu-id="cb142-110">**QueryDef** オブジェクトの名前の最大長は 64 文字です。</span><span class="sxs-lookup"><span data-stu-id="cb142-110">The maximum length for the name of a **QueryDef** object is 64 characters.</span></span>
 

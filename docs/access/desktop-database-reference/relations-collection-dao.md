@@ -8,34 +8,34 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: fc60e36abbb353a178864b488a738fcf3247e1a1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306973"
 ---
-# <a name="relations-collection-dao"></a><span data-ttu-id="2e239-102">Relations コレクション (DAO)</span><span class="sxs-lookup"><span data-stu-id="2e239-102">Relations collection (DAO)</span></span>
+# <a name="relations-collection-dao"></a><span data-ttu-id="d1654-102">Relations コレクション (DAO)</span><span class="sxs-lookup"><span data-stu-id="d1654-102">Relations collection (DAO)</span></span>
 
 
-<span data-ttu-id="2e239-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="2e239-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="d1654-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="d1654-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="2e239-104">**Relations** コレクションには、 **Database** オブジェクトの、格納された **Relation** オブジェクトが含まれます (Microsoft Access データベース エンジンのデータベースのみ)。</span><span class="sxs-lookup"><span data-stu-id="2e239-104">A **Relations** collection contains stored **Relation** objects of a **Database** object (Microsoft Access database engine databases only).</span></span>
+<span data-ttu-id="d1654-104">**Relations** コレクションには、 **Database** オブジェクトの、格納された **Relation** オブジェクトが含まれます (Microsoft Access データベース エンジンのデータベースのみ)。</span><span class="sxs-lookup"><span data-stu-id="d1654-104">A **Relations** collection contains stored **Relation** objects of a **Database** object (Microsoft Access database engine databases only).</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="2e239-105">注釈</span><span class="sxs-lookup"><span data-stu-id="2e239-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d1654-105">注釈</span><span class="sxs-lookup"><span data-stu-id="d1654-105">Remarks</span></span>
 
-<span data-ttu-id="2e239-p101">**Relation** オブジェクトを使用すると、新しいリレーションシップを作成し、データベースの既存のリレーションシップを確認できます。 **Relation** オブジェクトを **Relations** コレクションに追加するには、 **CreateRelation** メソッドを使用してオブジェクトを作成してから **Append** メソッドを使用して **Relations** コレクションに追加します。これによって、 **Database** オブジェクトを閉じたときに **Relation** オブジェクトが保存されます。コレクションから **Relation** オブジェクトを削除するには、 **Delete** メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="2e239-p101">You can use the **Relation** object to create new relationships and examine existing relationships in your database. To add a **Relation** object to the **Relations** collection, first create it with the **CreateRelation** method, and then append it to the **Relations** collection with the **Append** method. This will save the **Relation** object when you close the **Database** object. To remove a **Relation** object from the collection, use the **Delete** method.</span></span>
+<span data-ttu-id="d1654-p101">**Relation** オブジェクトを使用すると、新しいリレーションシップを作成し、データベースの既存のリレーションシップを確認できます。 **Relation** オブジェクトを **Relations** コレクションに追加するには、 **CreateRelation** メソッドを使用してオブジェクトを作成してから **Append** メソッドを使用して **Relations** コレクションに追加します。これによって、 **Database** オブジェクトを閉じたときに **Relation** オブジェクトが保存されます。コレクションから **Relation** オブジェクトを削除するには、 **Delete** メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="d1654-p101">You can use the **Relation** object to create new relationships and examine existing relationships in your database. To add a **Relation** object to the **Relations** collection, first create it with the **CreateRelation** method, and then append it to the **Relations** collection with the **Append** method. This will save the **Relation** object when you close the **Database** object. To remove a **Relation** object from the collection, use the **Delete** method.</span></span>
 
-<span data-ttu-id="2e239-110">コレクション内の **Relation** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="2e239-110">To refer to a **Relation** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
+<span data-ttu-id="d1654-110">コレクション内の **Relation** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="d1654-110">To refer to a **Relation** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
 
-<span data-ttu-id="2e239-111">**Relations**(0)</span><span class="sxs-lookup"><span data-stu-id="2e239-111">**Relations**(0)</span></span>
+<span data-ttu-id="d1654-111">**Relations**(0)</span><span class="sxs-lookup"><span data-stu-id="d1654-111">**Relations**(0)</span></span>
 
-<span data-ttu-id="2e239-112">**関係**("name")</span><span class="sxs-lookup"><span data-stu-id="2e239-112">**Relations**("name")</span></span>
+<span data-ttu-id="d1654-112">**関係**("name")</span><span class="sxs-lookup"><span data-stu-id="d1654-112">**Relations**("name")</span></span>
 
-<span data-ttu-id="2e239-113">**関係**\!\[名\]</span><span class="sxs-lookup"><span data-stu-id="2e239-113">**Relations**\!\[name\]</span></span>
+<span data-ttu-id="d1654-113">\*\*\*\*\!リレーション\[名\]</span><span class="sxs-lookup"><span data-stu-id="d1654-113">**Relations**\!\[name\]</span></span>
 
-## <a name="example"></a><span data-ttu-id="2e239-114">例</span><span class="sxs-lookup"><span data-stu-id="2e239-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d1654-114">例</span><span class="sxs-lookup"><span data-stu-id="d1654-114">Example</span></span>
 
-<span data-ttu-id="2e239-p102">この例では、既存の **Relation** オブジェクトがデータ入力を制御する方法を示します。このプロシージャは、故意に正しくない CategoryID を使用してレコードを追加します。これによって、エラー処理ルーチンが起動します。</span><span class="sxs-lookup"><span data-stu-id="2e239-p102">This example shows how an existing **Relation** object can control data entry. The procedure attempts to add a record with a deliberately incorrect CategoryID; this triggers the error-handling routine.</span></span>
+<span data-ttu-id="d1654-p102">次の使用例は、既存の **Relation** オブジェクトによりデータ入力を制御する方法を示しています。故意に正しくない CategoryID を持つレコードを追加しようとすることで、エラー処理ルーチンを起動します。</span><span class="sxs-lookup"><span data-stu-id="d1654-p102">This example shows how an existing **Relation** object can control data entry. The procedure attempts to add a record with a deliberately incorrect CategoryID; this triggers the error-handling routine.</span></span>
 
 ```vb
     Sub RelationX() 
@@ -96,7 +96,7 @@ ms.locfileid: "28701544"
 
 <br/>
 
-<span data-ttu-id="2e239-117">この例では、 **CreateRelation** メソッドを使用して、Employees **TableDef** と新規作成された Departments という **TableDef** の間に **Relation** を作成します。</span><span class="sxs-lookup"><span data-stu-id="2e239-117">This example uses the **CreateRelation** method to create a **Relation** between the Employees **TableDef** and a new **TableDef** called Departments.</span></span> <span data-ttu-id="2e239-118">新しい**リレーション**を作成するがも作成方法、必要な**インデックス**テーブル (Employees テーブルの DepartmentsEmployees インデックス) のも示します。</span><span class="sxs-lookup"><span data-stu-id="2e239-118">It also demonstrates how creating a new **Relation** will also create any necessary **Indexes** in the foreign table (the DepartmentsEmployees Index in the Employees table).</span></span>
+<span data-ttu-id="d1654-117">次の使用例は、 **CreateRelation** メソッドを使用して、Employees テーブルの **TableDef** オブジェクトと Departments と呼ばれる新しい **TableDef** オブジェクトの間に **Relation** オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="d1654-117">This example uses the **CreateRelation** method to create a **Relation** between the Employees **TableDef** and a new **TableDef** called Departments.</span></span> <span data-ttu-id="d1654-118">また、新しい**リレーション**を作成することで、必要な**インデックス**が外部テーブル (Employees テーブルの DepartmentsEmployees インデックス) に作成されることも示します。</span><span class="sxs-lookup"><span data-stu-id="d1654-118">It also demonstrates how creating a new **Relation** will also create any necessary **Indexes** in the foreign table (the DepartmentsEmployees Index in the Employees table).</span></span>
 
 ```vb
     Sub CreateRelationX() 
