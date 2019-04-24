@@ -12,42 +12,42 @@ api_type:
 - COM
 ms.assetid: c5053f27-e23d-4a65-b079-5f33765c33f7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5a4d25651423c697ffed713f82f41d7a5584bcfa
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1cfc88b12331e94880feaed22869bd7608fb7ca8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329499"
 ---
-# <a name="cbsproptagarray"></a><span data-ttu-id="31484-103">CbSPropTagArray</span><span class="sxs-lookup"><span data-stu-id="31484-103">CbSPropTagArray</span></span>
+# <a name="cbsproptagarray"></a><span data-ttu-id="72c00-103">CbSPropTagArray</span><span class="sxs-lookup"><span data-stu-id="72c00-103">CbSPropTagArray</span></span>
 
   
   
-<span data-ttu-id="31484-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="31484-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="72c00-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="72c00-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="31484-105">既存の[SPropTagArray](sproptagarray.md)構造体のバイト数を計算します。</span><span class="sxs-lookup"><span data-stu-id="31484-105">Computes the number of bytes in an existing [SPropTagArray](sproptagarray.md) structure.</span></span> 
+<span data-ttu-id="72c00-105">既存の[SPropTagArray](sproptagarray.md)構造体のバイト数を計算します。</span><span class="sxs-lookup"><span data-stu-id="72c00-105">Computes the number of bytes in an existing [SPropTagArray](sproptagarray.md) structure.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="31484-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="31484-106">Header file:</span></span>  <br/> |<span data-ttu-id="31484-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="31484-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="31484-108">関連の構造体。</span><span class="sxs-lookup"><span data-stu-id="31484-108">Related structure:</span></span>  <br/> |<span data-ttu-id="31484-109">**SPropTagArray**</span><span class="sxs-lookup"><span data-stu-id="31484-109">**SPropTagArray**</span></span> <br/> |
+|<span data-ttu-id="72c00-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="72c00-106">Header file:</span></span>  <br/> |<span data-ttu-id="72c00-107">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="72c00-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="72c00-108">関連する構造:</span><span class="sxs-lookup"><span data-stu-id="72c00-108">Related structure:</span></span>  <br/> |<span data-ttu-id="72c00-109">**SPropTagArray**</span><span class="sxs-lookup"><span data-stu-id="72c00-109">**SPropTagArray**</span></span> <br/> |
    
 ```cpp
 CbSPropTagArray (_lparray)
 ```
 
-## <a name="parameters"></a><span data-ttu-id="31484-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="31484-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="72c00-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="72c00-110">Parameters</span></span>
 
- <span data-ttu-id="31484-111">__lparray_</span><span class="sxs-lookup"><span data-stu-id="31484-111">__lparray_</span></span>
+ <span data-ttu-id="72c00-111">__lparray_</span><span class="sxs-lookup"><span data-stu-id="72c00-111">__lparray_</span></span>
   
-> <span data-ttu-id="31484-112">既存の**SPropTagArray**構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="31484-112">Pointer to the existing **SPropTagArray** structure.</span></span> 
+> <span data-ttu-id="72c00-112">既存の**SPropTagArray**構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="72c00-112">Pointer to the existing **SPropTagArray** structure.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="31484-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="31484-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="72c00-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="72c00-113">See also</span></span>
 
 
 
-[<span data-ttu-id="31484-114">SPropTagArray</span><span class="sxs-lookup"><span data-stu-id="31484-114">SPropTagArray</span></span>](sproptagarray.md)
+[<span data-ttu-id="72c00-114">SPropTagArray</span><span class="sxs-lookup"><span data-stu-id="72c00-114">SPropTagArray</span></span>](sproptagarray.md)
 
 
-[<span data-ttu-id="31484-115">構造体に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="31484-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
+[<span data-ttu-id="72c00-115">構造に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="72c00-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
 

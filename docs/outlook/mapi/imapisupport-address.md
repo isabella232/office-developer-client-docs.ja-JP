@@ -1,5 +1,5 @@
 ---
-title: IMAPISupportAddress
+title: imapisupportaddress
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8c22547e-ddf5-47f7-aed3-76e3854688df
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 524bbfe5f40a66585fb4ed4463b057ca6a0c881a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 7300c11d5835640fe308430c9bb08d40b397e47b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331606"
 ---
-# <a name="imapisupportaddress"></a><span data-ttu-id="5def7-103">IMAPISupport::Address</span><span class="sxs-lookup"><span data-stu-id="5def7-103">IMAPISupport::Address</span></span>
+# <a name="imapisupportaddress"></a><span data-ttu-id="9a553-103">IMAPISupport::Address</span><span class="sxs-lookup"><span data-stu-id="9a553-103">IMAPISupport::Address</span></span>
 
   
   
-<span data-ttu-id="5def7-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="5def7-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="9a553-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="9a553-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="5def7-105">共通のアドレス] ダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="5def7-105">Displays the common address dialog box.</span></span> 
+<span data-ttu-id="9a553-105">[共通のアドレス] ダイアログボックスを表示します。</span><span class="sxs-lookup"><span data-stu-id="9a553-105">Displays the common address dialog box.</span></span> 
   
 ```cpp
 HRESULT Address(
@@ -35,100 +35,100 @@ HRESULT Address(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="5def7-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5def7-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="9a553-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="9a553-106">Parameters</span></span>
 
- <span data-ttu-id="5def7-107">_lpulUIParam_</span><span class="sxs-lookup"><span data-stu-id="5def7-107">_lpulUIParam_</span></span>
+ <span data-ttu-id="9a553-107">_l出 uiparam_</span><span class="sxs-lookup"><span data-stu-id="9a553-107">_lpulUIParam_</span></span>
   
-> <span data-ttu-id="5def7-108">[で [チェック アウト]ダイアログ ボックスの親ウィンドウのハンドルへのポインター。</span><span class="sxs-lookup"><span data-stu-id="5def7-108">[in, out] A pointer to the handle of the parent window of the dialog box.</span></span> <span data-ttu-id="5def7-109">入力、ウィンドウ ハンドルを渡す必要が常にあります。</span><span class="sxs-lookup"><span data-stu-id="5def7-109">On input, a window handle must always be passed.</span></span> <span data-ttu-id="5def7-110">出力、DIALOG_SDI フラグは、 _lpAdrParms_パラメーターで指定された[ADRPARM](adrparm.md)構造体に設定されている場合は、モードレス ダイアログ ボックスのウィンドウ ハンドルが返されます。</span><span class="sxs-lookup"><span data-stu-id="5def7-110">On output, if the DIALOG_SDI flag is set in the [ADRPARM](adrparm.md) structure pointed to by the  _lpAdrParms_ parameter, the window handle of the modeless dialog box is returned.</span></span> 
+> <span data-ttu-id="9a553-108">[入力]ダイアログボックスの親ウィンドウのハンドルへのポインター。</span><span class="sxs-lookup"><span data-stu-id="9a553-108">[in, out] A pointer to the handle of the parent window of the dialog box.</span></span> <span data-ttu-id="9a553-109">入力時には、ウィンドウハンドルを常に渡す必要があります。</span><span class="sxs-lookup"><span data-stu-id="9a553-109">On input, a window handle must always be passed.</span></span> <span data-ttu-id="9a553-110">出力時に、DIALOG_SDI フラグが_lpadrparms_パラメーターで示される[ADRPARM](adrparm.md)構造で設定されている場合は、モードレスダイアログボックスのウィンドウハンドルが返されます。</span><span class="sxs-lookup"><span data-stu-id="9a553-110">On output, if the DIALOG_SDI flag is set in the [ADRPARM](adrparm.md) structure pointed to by the  _lpAdrParms_ parameter, the window handle of the modeless dialog box is returned.</span></span> 
     
- <span data-ttu-id="5def7-111">_lpAdrParms_</span><span class="sxs-lookup"><span data-stu-id="5def7-111">_lpAdrParms_</span></span>
+ <span data-ttu-id="9a553-111">_lpadrparms_</span><span class="sxs-lookup"><span data-stu-id="9a553-111">_lpAdrParms_</span></span>
   
-> <span data-ttu-id="5def7-112">[で [チェック アウト]プレゼンテーションと、[アドレス] ダイアログ ボックスの動作を制御する**ADRPARM**構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="5def7-112">[in, out] A pointer to an **ADRPARM** structure that controls the presentation and behavior of the address dialog box.</span></span> 
+> <span data-ttu-id="9a553-112">[入力][アドレス] ダイアログボックスの表示と動作を制御する**ADRPARM**構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="9a553-112">[in, out] A pointer to an **ADRPARM** structure that controls the presentation and behavior of the address dialog box.</span></span> 
     
- <span data-ttu-id="5def7-113">_lppAdrList_</span><span class="sxs-lookup"><span data-stu-id="5def7-113">_lppAdrList_</span></span>
+ <span data-ttu-id="9a553-113">_lppadrlist_</span><span class="sxs-lookup"><span data-stu-id="9a553-113">_lppAdrList_</span></span>
   
-> <span data-ttu-id="5def7-114">[で [チェック アウト]アドレス一覧へのポインターへのポインター。</span><span class="sxs-lookup"><span data-stu-id="5def7-114">[in, out] A pointer to a pointer to an address list.</span></span> <span data-ttu-id="5def7-115">入力でこのリストは、いずれかのメッセージ内の受信者の現在のリストまたは NULL の場合、このようなリストが存在しない場合。</span><span class="sxs-lookup"><span data-stu-id="5def7-115">On input, this list is either the current list of recipients in a message or NULL, if no such list exists.</span></span> <span data-ttu-id="5def7-116">出力では、 _lppAdrList_は、最新のメッセージの受信者の一覧をポイントします。</span><span class="sxs-lookup"><span data-stu-id="5def7-116">On output,  _lppAdrList_ points to an updated list of message recipients.</span></span> 
+> <span data-ttu-id="9a553-114">[入力]アドレス一覧へのポインターへのポインター。</span><span class="sxs-lookup"><span data-stu-id="9a553-114">[in, out] A pointer to a pointer to an address list.</span></span> <span data-ttu-id="9a553-115">入力時に、このリストは、メッセージ内の受信者の現在のリストまたは NULL (リストが存在しない場合) のいずれかです。</span><span class="sxs-lookup"><span data-stu-id="9a553-115">On input, this list is either the current list of recipients in a message or NULL, if no such list exists.</span></span> <span data-ttu-id="9a553-116">出力では、 _lppadrlist_は、更新されたメッセージ受信者のリストを指します。</span><span class="sxs-lookup"><span data-stu-id="9a553-116">On output,  _lppAdrList_ points to an updated list of message recipients.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="5def7-117">�߂�l</span><span class="sxs-lookup"><span data-stu-id="5def7-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="9a553-117">戻り値</span><span class="sxs-lookup"><span data-stu-id="9a553-117">Return value</span></span>
 
-<span data-ttu-id="5def7-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="5def7-118">S_OK</span></span> 
+<span data-ttu-id="9a553-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="9a553-118">S_OK</span></span> 
   
-> <span data-ttu-id="5def7-119">[アドレス] ダイアログ ボックスが正常に表示されました。</span><span class="sxs-lookup"><span data-stu-id="5def7-119">The address dialog box was successfully displayed.</span></span>
+> <span data-ttu-id="9a553-119">[アドレス] ダイアログボックスが正常に表示されました。</span><span class="sxs-lookup"><span data-stu-id="9a553-119">The address dialog box was successfully displayed.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="5def7-120">注釈</span><span class="sxs-lookup"><span data-stu-id="5def7-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9a553-120">解説</span><span class="sxs-lookup"><span data-stu-id="9a553-120">Remarks</span></span>
 
-<span data-ttu-id="5def7-121">アドレス帳プロバイダーのサポート オブジェクトの**IMAPISupport::Address**メソッドを実装します。</span><span class="sxs-lookup"><span data-stu-id="5def7-121">The **IMAPISupport::Address** method is implemented for address book provider support objects.</span></span> <span data-ttu-id="5def7-122">アドレス帳プロバイダーは、メッセージの受信者の一覧を作成または**アドレス**を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="5def7-122">Address book providers call **Address** to create or update a list of message recipients.</span></span> 
+<span data-ttu-id="9a553-121">**imapisupport:: address**メソッドは、アドレス帳プロバイダーサポートオブジェクトに実装されています。</span><span class="sxs-lookup"><span data-stu-id="9a553-121">The **IMAPISupport::Address** method is implemented for address book provider support objects.</span></span> <span data-ttu-id="9a553-122">アドレス帳プロバイダーの呼び出し**アドレス**。メッセージの受信者の一覧を作成または更新します。</span><span class="sxs-lookup"><span data-stu-id="9a553-122">Address book providers call **Address** to create or update a list of message recipients.</span></span> 
   
-<span data-ttu-id="5def7-123">各受信者は、 _lppAdrList_パラメーターで指定された[ADRLIST](adrlist.md)構造体に含まれる[ADRENTRY](adrentry.md)構造体の説明です。</span><span class="sxs-lookup"><span data-stu-id="5def7-123">Each recipient is described in an [ADRENTRY](adrentry.md) structure that is included in the [ADRLIST](adrlist.md) structure pointed to by the  _lppAdrList_ parameter.</span></span> <span data-ttu-id="5def7-124">**ADRENTRY**構造体には、受信者のプロパティの値のうちの 1 つは、受信者の種類、または**PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) のプロパティの配列が含まれています。</span><span class="sxs-lookup"><span data-stu-id="5def7-124">The **ADRENTRY** structure contains an array of recipient property values, one of which is the recipient's type, or **PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) property.</span></span> <span data-ttu-id="5def7-125">[IMessage::ModifyRecipients](imessage-modifyrecipients.md)への呼び出しで、 _lpMods_のパラメーターとして使用するクライアントには、この**ADRLIST**の構造体を渡すことができます。</span><span class="sxs-lookup"><span data-stu-id="5def7-125">This **ADRLIST** structure can be passed to a client to use as the  _lpMods_ parameter in a call to [IMessage::ModifyRecipients](imessage-modifyrecipients.md).</span></span>
+<span data-ttu-id="9a553-123">各受信者は[adrentry](adrentry.md)構造で記述されており、 _lppadrlist_パラメーターで示される[adrentry](adrlist.md)構造体に含まれています。</span><span class="sxs-lookup"><span data-stu-id="9a553-123">Each recipient is described in an [ADRENTRY](adrentry.md) structure that is included in the [ADRLIST](adrlist.md) structure pointed to by the  _lppAdrList_ parameter.</span></span> <span data-ttu-id="9a553-124">**adrentry**構造には、受信者のプロパティ値の配列、1つは受信者の種類、または**PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) プロパティが含まれます。</span><span class="sxs-lookup"><span data-stu-id="9a553-124">The **ADRENTRY** structure contains an array of recipient property values, one of which is the recipient's type, or **PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) property.</span></span> <span data-ttu-id="9a553-125">この**adrlist**構造は、 [IMessage:: modifyrecipients](imessage-modifyrecipients.md)の呼び出しで_lpMods_パラメーターとして使用するために、クライアントに渡すことができます。</span><span class="sxs-lookup"><span data-stu-id="9a553-125">This **ADRLIST** structure can be passed to a client to use as the  _lpMods_ parameter in a call to [IMessage::ModifyRecipients](imessage-modifyrecipients.md).</span></span>
   
-<span data-ttu-id="5def7-126">**ADRLIST**構造体の各受信者も解決できるを示すこと、プロパティの値のいずれかの**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) のプロパティは、未解決の**PR_ENTRYID**プロパティがあることを示します不足しています。</span><span class="sxs-lookup"><span data-stu-id="5def7-126">Each recipient in the **ADRLIST** structure can be either resolved, which indicates that one of its property values is its **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) property, or unresolved, which indicates that the **PR_ENTRYID** property is missing.</span></span> 
+<span data-ttu-id="9a553-126">**adrlist**構造内の各受信者は解決できます。これは、そのプロパティ値のいずれかが**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティであるか、または未解決であることを示します。これは、 **PR_ENTRYID**プロパティがれ.</span><span class="sxs-lookup"><span data-stu-id="9a553-126">Each recipient in the **ADRLIST** structure can be either resolved, which indicates that one of its property values is its **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) property, or unresolved, which indicates that the **PR_ENTRYID** property is missing.</span></span> 
   
-<span data-ttu-id="5def7-127">**PR_ENTRYID**、他は、解決の受信者には、次のプロパティが含まれます。</span><span class="sxs-lookup"><span data-stu-id="5def7-127">In addition to **PR_ENTRYID**, resolved recipients include the following properties:</span></span>
+<span data-ttu-id="9a553-127">**PR_ENTRYID**に加えて、解決された受信者には次のプロパティが含まれています。</span><span class="sxs-lookup"><span data-stu-id="9a553-127">In addition to **PR_ENTRYID**, resolved recipients include the following properties:</span></span>
   
-- <span data-ttu-id="5def7-128">**PR_RECIPIENT_TYPE**</span><span class="sxs-lookup"><span data-stu-id="5def7-128">**PR_RECIPIENT_TYPE**</span></span>
+- <span data-ttu-id="9a553-128">**PR_RECIPIENT_TYPE**</span><span class="sxs-lookup"><span data-stu-id="9a553-128">**PR_RECIPIENT_TYPE**</span></span>
     
-- <span data-ttu-id="5def7-129">**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="5def7-129">**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))</span></span>
+- <span data-ttu-id="9a553-129">**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="9a553-129">**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))</span></span>
     
-- <span data-ttu-id="5def7-130">**PR_ADDRTYPE**([PidTagAddressType](pidtagaddresstype-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="5def7-130">**PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))</span></span>
+- <span data-ttu-id="9a553-130">**PR_ADDRTYPE**([PidTagAddressType](pidtagaddresstype-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="9a553-130">**PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))</span></span>
     
-- <span data-ttu-id="5def7-131">**PR_DISPLAY_TYPE**([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="5def7-131">**PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))</span></span>
+- <span data-ttu-id="9a553-131">**PR_DISPLAY_TYPE**([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="9a553-131">**PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))</span></span>
     
-<span data-ttu-id="5def7-132">未解決の受信者には、通常、 **PR_DISPLAY_NAME**と**PR_RECIPIENT_TYPE**のみが含まれます。</span><span class="sxs-lookup"><span data-stu-id="5def7-132">Unresolved recipients typically include only **PR_DISPLAY_NAME** and **PR_RECIPIENT_TYPE**.</span></span> 
+<span data-ttu-id="9a553-132">未解決の受信者には、通常、 **PR_DISPLAY_NAME**と**PR_RECIPIENT_TYPE**のみが含まれます。</span><span class="sxs-lookup"><span data-stu-id="9a553-132">Unresolved recipients typically include only **PR_DISPLAY_NAME** and **PR_RECIPIENT_TYPE**.</span></span> 
   
-## <a name="notes-to-callers"></a><span data-ttu-id="5def7-133">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="5def7-133">Notes to callers</span></span>
+## <a name="notes-to-callers"></a><span data-ttu-id="9a553-133">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="9a553-133">Notes to callers</span></span>
 
-<span data-ttu-id="5def7-134">**ADRLIST**構造で、呼び出し元に合格するには、MAPI を表す構造体のサイズが異なる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="5def7-134">The **ADRLIST** structure that the caller passes in might be a different size from the structure that MAPI returns.</span></span> <span data-ttu-id="5def7-135">**ADRLIST**構造体のメモリを割り当てるときに、個別に各[SPropValue](spropvalue.md)構造体のメモリを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="5def7-135">When you allocate memory for the **ADRLIST** structure, allocate the memory for each [SPropValue](spropvalue.md) structure separately.</span></span> 
+<span data-ttu-id="9a553-134">発信者が渡す**adrlist**構造は、MAPI が返す構造体のサイズと異なる場合があります。</span><span class="sxs-lookup"><span data-stu-id="9a553-134">The **ADRLIST** structure that the caller passes in might be a different size from the structure that MAPI returns.</span></span> <span data-ttu-id="9a553-135">**adrlist**構造体のメモリを割り当てるときは、各[spropvalue](spropvalue.md)構造体のメモリを個別に割り当てます。</span><span class="sxs-lookup"><span data-stu-id="9a553-135">When you allocate memory for the **ADRLIST** structure, allocate the memory for each [SPropValue](spropvalue.md) structure separately.</span></span> 
   
-<span data-ttu-id="5def7-136">メモリを割り当てるには、MAPI のメモリ割り当て関数、 [ABProviderInit](abproviderinit.md)関数に渡されたポインターを使用します。</span><span class="sxs-lookup"><span data-stu-id="5def7-136">Use the pointers to the MAPI memory allocation functions passed in to your [ABProviderInit](abproviderinit.md) function to allocate memory.</span></span> <span data-ttu-id="5def7-137">**ADRLIST**と**ADRLIST**内の**ADRENTRY**構造体の各プロパティ値の構造体の[MAPIAllocateBuffer](mapiallocatebuffer.md)関数を使用してメモリを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="5def7-137">Allocate memory with the [MAPIAllocateBuffer](mapiallocatebuffer.md) function for **ADRLIST** and each property value structure in the **ADRENTRY** structures in **ADRLIST**.</span></span> 
+<span data-ttu-id="9a553-136">[abproviderinit](abproviderinit.md)関数に渡される MAPI メモリ割り当て関数へのポインターを使用して、メモリを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="9a553-136">Use the pointers to the MAPI memory allocation functions passed in to your [ABProviderInit](abproviderinit.md) function to allocate memory.</span></span> <span data-ttu-id="9a553-137">adrlist の[MAPIAllocateBuffer](mapiallocatebuffer.md)関数と\*\*\*\* 、adrlist の**adrlist**構造の各プロパティの値構造\*\*\*\* に、メモリを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="9a553-137">Allocate memory with the [MAPIAllocateBuffer](mapiallocatebuffer.md) function for **ADRLIST** and each property value structure in the **ADRENTRY** structures in **ADRLIST**.</span></span> 
   
-<span data-ttu-id="5def7-138">**アドレス**より大きな**ADRLIST**構造体を返す必要がある場合、または_lppAdrList_に NULL を渡した場合は、**アドレス**は元の構造体を解放し、新しい 1 つを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="5def7-138">If **Address** must return a larger **ADRLIST** structure, or if you have passed NULL for  _lppAdrList_, **Address** frees the original structure and allocates a new one.</span></span> <span data-ttu-id="5def7-139">**アドレス**は、 **ADRLIST**構造体に追加のプロパティ値の構造体を割り当てし、必要に応じて古いものを解放します。</span><span class="sxs-lookup"><span data-stu-id="5def7-139">**Address** also allocates additional property value structures in the **ADRLIST** structure and frees old ones as appropriate.</span></span> <span data-ttu-id="5def7-140">**ADRLIST**構造体のメモリを管理する方法の詳細については、 [ADRLIST および SRowSet 構造体のメモリを管理する](managing-memory-for-adrlist-and-srowset-structures.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5def7-140">For more information about how memory is managed for **ADRLIST** structures, see [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md).</span></span>
+<span data-ttu-id="9a553-138">**address**がより大きな**adrlist**構造を返す必要がある場合、または_lppadrlist_に NULL が渡された場合、 **address**は元の構造を解放し、新しい構造を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="9a553-138">If **Address** must return a larger **ADRLIST** structure, or if you have passed NULL for  _lppAdrList_, **Address** frees the original structure and allocates a new one.</span></span> <span data-ttu-id="9a553-139">また、**アドレス**は**adrlist**構造に追加のプロパティ値構造を割り当て、必要に応じて古いものを解放します。</span><span class="sxs-lookup"><span data-stu-id="9a553-139">**Address** also allocates additional property value structures in the **ADRLIST** structure and frees old ones as appropriate.</span></span> <span data-ttu-id="9a553-140">**adrlist**構造体のメモリの管理方法の詳細については、「 [adrlist および srowset 構造体のメモリの管理](managing-memory-for-adrlist-and-srowset-structures.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9a553-140">For more information about how memory is managed for **ADRLIST** structures, see [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md).</span></span>
   
- <span data-ttu-id="5def7-141">_LpAdrParms_パラメーターに**ADRPARM**構造体に DIALOG_SDI フラグが設定されている場合、**アドレス**はすぐに返します。</span><span class="sxs-lookup"><span data-stu-id="5def7-141">**Address** returns immediately if the DIALOG_SDI flag was set in the **ADRPARM** structure in the  _lpAdrParms_ parameter.</span></span> 
+ <span data-ttu-id="9a553-141">_lpadrparms_パラメーターの**ADRPARM**構造で DIALOG_SDI フラグが設定されている場合、**アドレス**はすぐに戻ります。</span><span class="sxs-lookup"><span data-stu-id="9a553-141">**Address** returns immediately if the DIALOG_SDI flag was set in the **ADRPARM** structure in the  _lpAdrParms_ parameter.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="5def7-142">関連項目</span><span class="sxs-lookup"><span data-stu-id="5def7-142">See also</span></span>
-
-
-
-[<span data-ttu-id="5def7-143">ABProviderInit</span><span class="sxs-lookup"><span data-stu-id="5def7-143">ABProviderInit</span></span>](abproviderinit.md)
-  
-[<span data-ttu-id="5def7-144">ADRENTRY</span><span class="sxs-lookup"><span data-stu-id="5def7-144">ADRENTRY</span></span>](adrentry.md)
-  
-[<span data-ttu-id="5def7-145">ADRLIST</span><span class="sxs-lookup"><span data-stu-id="5def7-145">ADRLIST</span></span>](adrlist.md)
-  
-[<span data-ttu-id="5def7-146">ADRPARM</span><span class="sxs-lookup"><span data-stu-id="5def7-146">ADRPARM</span></span>](adrparm.md)
-  
-[<span data-ttu-id="5def7-147">FreePadrlist</span><span class="sxs-lookup"><span data-stu-id="5def7-147">FreePadrlist</span></span>](freepadrlist.md)
-  
-[<span data-ttu-id="5def7-148">FreeProws</span><span class="sxs-lookup"><span data-stu-id="5def7-148">FreeProws</span></span>](freeprows.md)
-  
-[<span data-ttu-id="5def7-149">IMAPISupport::GetMemAllocRoutines</span><span class="sxs-lookup"><span data-stu-id="5def7-149">IMAPISupport::GetMemAllocRoutines</span></span>](imapisupport-getmemallocroutines.md)
-  
-[<span data-ttu-id="5def7-150">IMAPITable::QueryRows</span><span class="sxs-lookup"><span data-stu-id="5def7-150">IMAPITable::QueryRows</span></span>](imapitable-queryrows.md)
-  
-[<span data-ttu-id="5def7-151">IMessage::ModifyRecipients</span><span class="sxs-lookup"><span data-stu-id="5def7-151">IMessage::ModifyRecipients</span></span>](imessage-modifyrecipients.md)
-  
-[<span data-ttu-id="5def7-152">MAPIAllocateBuffer</span><span class="sxs-lookup"><span data-stu-id="5def7-152">MAPIAllocateBuffer</span></span>](mapiallocatebuffer.md)
-  
-[<span data-ttu-id="5def7-153">MAPIAllocateMore</span><span class="sxs-lookup"><span data-stu-id="5def7-153">MAPIAllocateMore</span></span>](mapiallocatemore.md)
-  
-[<span data-ttu-id="5def7-154">MAPIFreeBuffer</span><span class="sxs-lookup"><span data-stu-id="5def7-154">MAPIFreeBuffer</span></span>](mapifreebuffer.md)
-  
-[<span data-ttu-id="5def7-155">PidTagAddressType 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="5def7-155">PidTagAddressType Canonical Property</span></span>](pidtagaddresstype-canonical-property.md)
-  
-[<span data-ttu-id="5def7-156">PidTagDisplayName 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="5def7-156">PidTagDisplayName Canonical Property</span></span>](pidtagdisplayname-canonical-property.md)
-  
-[<span data-ttu-id="5def7-157">PidTagDisplayType 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="5def7-157">PidTagDisplayType Canonical Property</span></span>](pidtagdisplaytype-canonical-property.md)
-  
-[<span data-ttu-id="5def7-158">PidTagEntryId 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="5def7-158">PidTagEntryId Canonical Property</span></span>](pidtagentryid-canonical-property.md)
-  
-[<span data-ttu-id="5def7-159">PidTagRecipientType 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="5def7-159">PidTagRecipientType Canonical Property</span></span>](pidtagrecipienttype-canonical-property.md)
-  
-[<span data-ttu-id="5def7-160">SPropValue</span><span class="sxs-lookup"><span data-stu-id="5def7-160">SPropValue</span></span>](spropvalue.md)
-  
-[<span data-ttu-id="5def7-161">SRowSet</span><span class="sxs-lookup"><span data-stu-id="5def7-161">SRowSet</span></span>](srowset.md)
-  
-[<span data-ttu-id="5def7-162">IMAPISupport: IUnknown</span><span class="sxs-lookup"><span data-stu-id="5def7-162">IMAPISupport : IUnknown</span></span>](imapisupportiunknown.md)
+## <a name="see-also"></a><span data-ttu-id="9a553-142">関連項目</span><span class="sxs-lookup"><span data-stu-id="9a553-142">See also</span></span>
 
 
-[<span data-ttu-id="5def7-163">ADRLIST および SRowSet 構造のためのメモリ管理</span><span class="sxs-lookup"><span data-stu-id="5def7-163">Managing Memory for ADRLIST and SRowSet Structures</span></span>](managing-memory-for-adrlist-and-srowset-structures.md)
+
+[<span data-ttu-id="9a553-143">ABProviderInit</span><span class="sxs-lookup"><span data-stu-id="9a553-143">ABProviderInit</span></span>](abproviderinit.md)
+  
+[<span data-ttu-id="9a553-144">ADRENTRY</span><span class="sxs-lookup"><span data-stu-id="9a553-144">ADRENTRY</span></span>](adrentry.md)
+  
+[<span data-ttu-id="9a553-145">ADRLIST</span><span class="sxs-lookup"><span data-stu-id="9a553-145">ADRLIST</span></span>](adrlist.md)
+  
+[<span data-ttu-id="9a553-146">ADRPARM</span><span class="sxs-lookup"><span data-stu-id="9a553-146">ADRPARM</span></span>](adrparm.md)
+  
+[<span data-ttu-id="9a553-147">FreePadrlist</span><span class="sxs-lookup"><span data-stu-id="9a553-147">FreePadrlist</span></span>](freepadrlist.md)
+  
+[<span data-ttu-id="9a553-148">FreeProws</span><span class="sxs-lookup"><span data-stu-id="9a553-148">FreeProws</span></span>](freeprows.md)
+  
+[<span data-ttu-id="9a553-149">IMAPISupport::GetMemAllocRoutines</span><span class="sxs-lookup"><span data-stu-id="9a553-149">IMAPISupport::GetMemAllocRoutines</span></span>](imapisupport-getmemallocroutines.md)
+  
+[<span data-ttu-id="9a553-150">IMAPITable::QueryRows</span><span class="sxs-lookup"><span data-stu-id="9a553-150">IMAPITable::QueryRows</span></span>](imapitable-queryrows.md)
+  
+[<span data-ttu-id="9a553-151">IMessage::ModifyRecipients</span><span class="sxs-lookup"><span data-stu-id="9a553-151">IMessage::ModifyRecipients</span></span>](imessage-modifyrecipients.md)
+  
+[<span data-ttu-id="9a553-152">MAPIAllocateBuffer</span><span class="sxs-lookup"><span data-stu-id="9a553-152">MAPIAllocateBuffer</span></span>](mapiallocatebuffer.md)
+  
+[<span data-ttu-id="9a553-153">MAPIAllocateMore</span><span class="sxs-lookup"><span data-stu-id="9a553-153">MAPIAllocateMore</span></span>](mapiallocatemore.md)
+  
+[<span data-ttu-id="9a553-154">MAPIFreeBuffer</span><span class="sxs-lookup"><span data-stu-id="9a553-154">MAPIFreeBuffer</span></span>](mapifreebuffer.md)
+  
+[<span data-ttu-id="9a553-155">PidTagAddressType 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="9a553-155">PidTagAddressType Canonical Property</span></span>](pidtagaddresstype-canonical-property.md)
+  
+[<span data-ttu-id="9a553-156">PidTagDisplayName 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="9a553-156">PidTagDisplayName Canonical Property</span></span>](pidtagdisplayname-canonical-property.md)
+  
+[<span data-ttu-id="9a553-157">PidTagDisplayType 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="9a553-157">PidTagDisplayType Canonical Property</span></span>](pidtagdisplaytype-canonical-property.md)
+  
+[<span data-ttu-id="9a553-158">PidTagEntryId 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="9a553-158">PidTagEntryId Canonical Property</span></span>](pidtagentryid-canonical-property.md)
+  
+[<span data-ttu-id="9a553-159">PidTagRecipientType 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="9a553-159">PidTagRecipientType Canonical Property</span></span>](pidtagrecipienttype-canonical-property.md)
+  
+[<span data-ttu-id="9a553-160">SPropValue</span><span class="sxs-lookup"><span data-stu-id="9a553-160">SPropValue</span></span>](spropvalue.md)
+  
+[<span data-ttu-id="9a553-161">SRowSet</span><span class="sxs-lookup"><span data-stu-id="9a553-161">SRowSet</span></span>](srowset.md)
+  
+[<span data-ttu-id="9a553-162">IMAPISupport: IUnknown</span><span class="sxs-lookup"><span data-stu-id="9a553-162">IMAPISupport : IUnknown</span></span>](imapisupportiunknown.md)
+
+
+[<span data-ttu-id="9a553-163">adrlist および srowset 構造のためのメモリの管理</span><span class="sxs-lookup"><span data-stu-id="9a553-163">Managing Memory for ADRLIST and SRowSet Structures</span></span>](managing-memory-for-adrlist-and-srowset-structures.md)
 

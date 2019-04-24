@@ -8,22 +8,22 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 11b25e03-41e8-4a25-be50-3e3730bf3bc0
 description: このメソッドは現在サポートされていません。
-ms.openlocfilehash: aac8509695b67e89cbad6da3dc6be3baeee3402a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f40186cc831a8d523d272bbc15e164dac0b669d4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331921"
 ---
-# <a name="isocialpersongetstatus"></a><span data-ttu-id="ae8da-103">ISocialPerson::GetStatus</span><span class="sxs-lookup"><span data-stu-id="ae8da-103">ISocialPerson::GetStatus</span></span>
+# <a name="isocialpersongetstatus"></a><span data-ttu-id="3436c-103">ISocialPerson::GetStatus</span><span class="sxs-lookup"><span data-stu-id="3436c-103">ISocialPerson::GetStatus</span></span>
 
-<span data-ttu-id="ae8da-104">このメソッドは現在サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="ae8da-104">This method is currently not supported.</span></span> 
+<span data-ttu-id="3436c-104">このメソッドは現在サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="3436c-104">This method is currently not supported.</span></span> 
   
 ```cpp
 HRESULT _stdcall GetStatus([out, retval] BSTR* status);
 ```
 
-## <a name="see-also"></a><span data-ttu-id="ae8da-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="ae8da-105">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3436c-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="3436c-105">See also</span></span>
 
-- [<span data-ttu-id="ae8da-106">ISocialPerson : IUnknown</span><span class="sxs-lookup"><span data-stu-id="ae8da-106">ISocialPerson : IUnknown</span></span>](isocialpersoniunknown.md)
+- [<span data-ttu-id="3436c-106">ISocialPerson : IUnknown</span><span class="sxs-lookup"><span data-stu-id="3436c-106">ISocialPerson : IUnknown</span></span>](isocialpersoniunknown.md)
 

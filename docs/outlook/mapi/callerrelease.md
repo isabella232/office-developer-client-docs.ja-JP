@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: 80ba893d-3380-4db1-9175-f5b84cb57def
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e97e1d5302d8247cb09ce7cb1b581582405300a5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9a22550e60c9de38236a9f612c7e60f50f18978f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32331844"
 ---
-# <a name="callerrelease"></a><span data-ttu-id="1fb04-103">CALLERRELEASE</span><span class="sxs-lookup"><span data-stu-id="1fb04-103">CALLERRELEASE</span></span>
+# <a name="callerrelease"></a><span data-ttu-id="adbfb-103">CALLERRELEASE</span><span class="sxs-lookup"><span data-stu-id="adbfb-103">CALLERRELEASE</span></span>
 
   
   
-<span data-ttu-id="1fb04-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="1fb04-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="adbfb-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="adbfb-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="1fb04-105">テーブル ビューがリリースされたとき、テーブルのデータ オブジェクトをリリースできるコールバック関数を定義します。</span><span class="sxs-lookup"><span data-stu-id="1fb04-105">Defines a callback function that can release a table data object when a table view is being released.</span></span> 
+<span data-ttu-id="adbfb-105">テーブルビューが解放されているときに、テーブルデータオブジェクトを解放できるコールバック関数を定義します。</span><span class="sxs-lookup"><span data-stu-id="adbfb-105">Defines a callback function that can release a table data object when a table view is being released.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="1fb04-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="1fb04-106">Header file:</span></span>  <br/> |<span data-ttu-id="1fb04-107">Mapiutil.h</span><span class="sxs-lookup"><span data-stu-id="1fb04-107">Mapiutil.h</span></span>  <br/> |
-|<span data-ttu-id="1fb04-108">によって実装される関数の定義:</span><span class="sxs-lookup"><span data-stu-id="1fb04-108">Defined function implemented by:</span></span>  <br/> |<span data-ttu-id="1fb04-109">クライアント アプリケーションとサービス ・ プロバイダー</span><span class="sxs-lookup"><span data-stu-id="1fb04-109">Client applications and service providers</span></span>  <br/> |
-|<span data-ttu-id="1fb04-110">によって呼び出される関数を定義します。</span><span class="sxs-lookup"><span data-stu-id="1fb04-110">Defined function called by:</span></span>  <br/> |<span data-ttu-id="1fb04-111">MAPI</span><span class="sxs-lookup"><span data-stu-id="1fb04-111">MAPI</span></span>  <br/> |
+|<span data-ttu-id="adbfb-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="adbfb-106">Header file:</span></span>  <br/> |<span data-ttu-id="adbfb-107">Mapiutil</span><span class="sxs-lookup"><span data-stu-id="adbfb-107">Mapiutil.h</span></span>  <br/> |
+|<span data-ttu-id="adbfb-108">定義された関数の実装:</span><span class="sxs-lookup"><span data-stu-id="adbfb-108">Defined function implemented by:</span></span>  <br/> |<span data-ttu-id="adbfb-109">クライアントアプリケーションとサービスプロバイダー</span><span class="sxs-lookup"><span data-stu-id="adbfb-109">Client applications and service providers</span></span>  <br/> |
+|<span data-ttu-id="adbfb-110">によって呼び出された定義済み関数:</span><span class="sxs-lookup"><span data-stu-id="adbfb-110">Defined function called by:</span></span>  <br/> |<span data-ttu-id="adbfb-111">MAPI</span><span class="sxs-lookup"><span data-stu-id="adbfb-111">MAPI</span></span>  <br/> |
    
 ```cpp
 void CALLERRELEASE(
@@ -41,28 +41,28 @@ void CALLERRELEASE(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="1fb04-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="1fb04-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="adbfb-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="adbfb-112">Parameters</span></span>
 
- <span data-ttu-id="1fb04-113">_ulCallerData_</span><span class="sxs-lookup"><span data-stu-id="1fb04-113">_ulCallerData_</span></span>
+ <span data-ttu-id="adbfb-113">_ulcallerdata_</span><span class="sxs-lookup"><span data-stu-id="adbfb-113">_ulCallerData_</span></span>
   
-> <span data-ttu-id="1fb04-114">[in]コールバック関数を表形式ビューで、MAPI によって保存され、 **CALLERRELEASE**に渡される呼び出し元のデータに基づいています。</span><span class="sxs-lookup"><span data-stu-id="1fb04-114">[in] Caller data saved by MAPI with the table view and passed to the **CALLERRELEASE** based callback function.</span></span> <span data-ttu-id="1fb04-115">データでは、リリースされている表形式のビューのコンテキストを提供します。</span><span class="sxs-lookup"><span data-stu-id="1fb04-115">The data provides context about the table view being released.</span></span> 
+> <span data-ttu-id="adbfb-114">順番MAPI によってテーブルビューで保存され、 **callerrelease**ベースのコールバック関数に渡される発信者データ。</span><span class="sxs-lookup"><span data-stu-id="adbfb-114">[in] Caller data saved by MAPI with the table view and passed to the **CALLERRELEASE** based callback function.</span></span> <span data-ttu-id="adbfb-115">このデータは、リリースされるテーブルビューに関するコンテキストを提供します。</span><span class="sxs-lookup"><span data-stu-id="adbfb-115">The data provides context about the table view being released.</span></span> 
     
- <span data-ttu-id="1fb04-116">_lpTblData_</span><span class="sxs-lookup"><span data-stu-id="1fb04-116">_lpTblData_</span></span>
+ <span data-ttu-id="adbfb-116">_lpTblData_</span><span class="sxs-lookup"><span data-stu-id="adbfb-116">_lpTblData_</span></span>
   
-> <span data-ttu-id="1fb04-117">[in]ポインター、 [ITableData: IUnknown](itabledataiunknown.md)リリースされている表形式のビューの基になるテーブルのデータ オブジェクトのインターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="1fb04-117">[in] Pointer to the [ITableData : IUnknown](itabledataiunknown.md) interface for the table data object underlying the table view being released.</span></span> 
+> <span data-ttu-id="adbfb-117">順番[itabledata](itabledataiunknown.md)へのポインター: 解放されるテーブルビューの基になるテーブルデータオブジェクトの IUnknown インターフェイス。</span><span class="sxs-lookup"><span data-stu-id="adbfb-117">[in] Pointer to the [ITableData : IUnknown](itabledataiunknown.md) interface for the table data object underlying the table view being released.</span></span> 
     
- <span data-ttu-id="1fb04-118">_lpVue_</span><span class="sxs-lookup"><span data-stu-id="1fb04-118">_lpVue_</span></span>
+ <span data-ttu-id="adbfb-118">_lpvue_</span><span class="sxs-lookup"><span data-stu-id="adbfb-118">_lpVue_</span></span>
   
-> <span data-ttu-id="1fb04-119">[in]ポインター、 [IMAPITable: IUnknown](imapitableiunknown.md)リリースされている表形式のビューのインターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="1fb04-119">[in] Pointer to the [IMAPITable : IUnknown](imapitableiunknown.md) interface for the table view being released.</span></span> <span data-ttu-id="1fb04-120">これは、リリースするオブジェクトを作成した[ITableData::HrGetView](itabledata-hrgetview.md)メソッドの_lppMAPITable_パラメーターで返される table オブジェクトのインターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="1fb04-120">This is an interface for the table object returned in the  _lppMAPITable_ parameter of the [ITableData::HrGetView](itabledata-hrgetview.md) method that created the object to release.</span></span> 
+> <span data-ttu-id="adbfb-119">順番リリースされるテーブルビューの[IMAPITable: IUnknown](imapitableiunknown.md)インターフェイスへのポインター。</span><span class="sxs-lookup"><span data-stu-id="adbfb-119">[in] Pointer to the [IMAPITable : IUnknown](imapitableiunknown.md) interface for the table view being released.</span></span> <span data-ttu-id="adbfb-120">これは、解放するオブジェクトを作成した[itabledata:: hrgetview](itabledata-hrgetview.md)メソッドの_lppMAPITable_パラメーターで返される table オブジェクトのインターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="adbfb-120">This is an interface for the table object returned in the  _lppMAPITable_ parameter of the [ITableData::HrGetView](itabledata-hrgetview.md) method that created the object to release.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="1fb04-121">戻り値</span><span class="sxs-lookup"><span data-stu-id="1fb04-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="adbfb-121">戻り値</span><span class="sxs-lookup"><span data-stu-id="adbfb-121">Return value</span></span>
 
-<span data-ttu-id="1fb04-122">なし</span><span class="sxs-lookup"><span data-stu-id="1fb04-122">None</span></span> 
+<span data-ttu-id="adbfb-122">なし</span><span class="sxs-lookup"><span data-stu-id="adbfb-122">None</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="1fb04-123">注釈</span><span class="sxs-lookup"><span data-stu-id="1fb04-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="adbfb-123">解説</span><span class="sxs-lookup"><span data-stu-id="adbfb-123">Remarks</span></span>
 
-<span data-ttu-id="1fb04-124">クライアント アプリケーションまたはサービス プロバイダーのテーブルのデータ オブジェクトにデータを設定するには、読み取り専用で、並べ替えられたテーブルのビューを作成する[ITableData::HrGetView](itabledata-hrgetview.md)を呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="1fb04-124">A client application or service provider that has populated a table data object can call [ITableData::HrGetView](itabledata-hrgetview.md) to create a read-only, sorted view of the table.</span></span> <span data-ttu-id="1fb04-125">**HrGetView**への呼び出しは、 **CALLERRELEASE**ベースのコールバック関数とテーブル ・ ビューを保存するコンテキストへのポインターを渡します。</span><span class="sxs-lookup"><span data-stu-id="1fb04-125">The call to **HrGetView** passes a pointer to a **CALLERRELEASE** based callback function and also a context to be saved with the table view.</span></span> <span data-ttu-id="1fb04-126">テーブル ビューの参照カウントがゼロに戻ります、ビューがリリースされている、 **IMAPITable**実装は、コンテキストを_ulCallerData_パラメーターに渡して、コールバック関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="1fb04-126">When the reference count of the table view returns to zero and the view is being released, the **IMAPITable** implementation calls the callback function, passing the context in the  _ulCallerData_ parameter.</span></span> 
+<span data-ttu-id="adbfb-124">テーブルデータオブジェクトを設定したクライアントアプリケーションまたはサービスプロバイダーは、 [itabledata:: hrgetview](itabledata-hrgetview.md)を呼び出して、読み取り専用で並べ替えられたテーブルのビューを作成できます。</span><span class="sxs-lookup"><span data-stu-id="adbfb-124">A client application or service provider that has populated a table data object can call [ITableData::HrGetView](itabledata-hrgetview.md) to create a read-only, sorted view of the table.</span></span> <span data-ttu-id="adbfb-125">**hrgetview**の呼び出しでは、 **callerrelease**ベースのコールバック関数へのポインターが渡されます。また、テーブルビューと共に保存されるコンテキストもあります。</span><span class="sxs-lookup"><span data-stu-id="adbfb-125">The call to **HrGetView** passes a pointer to a **CALLERRELEASE** based callback function and also a context to be saved with the table view.</span></span> <span data-ttu-id="adbfb-126">テーブルビューの参照カウントが0に戻り、ビューが解放されるとき、 **IMAPITable**実装はコールバック関数を呼び出し、 _ulcallerdata_パラメーターにコンテキストを渡します。</span><span class="sxs-lookup"><span data-stu-id="adbfb-126">When the reference count of the table view returns to zero and the view is being released, the **IMAPITable** implementation calls the callback function, passing the context in the  _ulCallerData_ parameter.</span></span> 
   
-<span data-ttu-id="1fb04-127">**CALLERRELEASE**ベースのコールバック関数の一般的な用途では、基になるテーブルのデータ オブジェクトを解放していないを追跡するため、後続の処理中にします。</span><span class="sxs-lookup"><span data-stu-id="1fb04-127">A common use of a **CALLERRELEASE** based callback function is to release the underlying table data object and not have to keep track of it during subsequent processing.</span></span> 
+<span data-ttu-id="adbfb-127">**callerrelease**ベースのコールバック関数の一般的な使用方法は、基になるテーブルのデータオブジェクトを解放することで、以降の処理中にそのオブジェクトを追跡する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="adbfb-127">A common use of a **CALLERRELEASE** based callback function is to release the underlying table data object and not have to keep track of it during subsequent processing.</span></span> 
   
 

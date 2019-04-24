@@ -1,5 +1,5 @@
 ---
-title: サービス プロバイダーの構成の確認
+title: サービス プロバイダー構成の検証
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,48 +8,48 @@ api_type:
 - COM
 ms.assetid: dc23dc61-7b51-43ab-a184-ce0bdac91d03
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f6190b2860e227b24b34e31a4ee9741468383460
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 381e2c9ec84811b69d666017a568e7b9cca21755
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32329609"
 ---
-# <a name="verifying-service-provider-configuration"></a><span data-ttu-id="e3c13-103">サービス プロバイダーの構成の確認</span><span class="sxs-lookup"><span data-stu-id="e3c13-103">Verifying service provider configuration</span></span>
+# <a name="verifying-service-provider-configuration"></a><span data-ttu-id="46320-103">サービス プロバイダー構成の検証</span><span class="sxs-lookup"><span data-stu-id="46320-103">Verifying service provider configuration</span></span>
   
-<span data-ttu-id="e3c13-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="e3c13-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="46320-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="46320-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="e3c13-105">([IABProvider::Logon](iabprovider-logon.md)、 [IMSProvider::Logon](imsprovider-logon.md)、または[IXPProvider::TransportLogon](ixpprovider-transportlogon.md)) は、logon メソッドは、プロバイダーの構成を確認してください。</span><span class="sxs-lookup"><span data-stu-id="e3c13-105">Your logon method ([IABProvider::Logon](iabprovider-logon.md), [IMSProvider::Logon](imsprovider-logon.md), or [IXPProvider::TransportLogon](ixpprovider-transportlogon.md)) must verify your provider's configuration.</span></span> <span data-ttu-id="e3c13-106">これには、すべての完全な運用に必要なプロパティが正しく設定されてチェックが含まれます。</span><span class="sxs-lookup"><span data-stu-id="e3c13-106">This involves checking that all of the properties needed for full operation are set correctly.</span></span> <span data-ttu-id="e3c13-107">すべてのプロバイダーのプロパティ数を変更する必要があります。構成は、プロバイダーとを許可するユーザーの介入の度合いによって異なります。</span><span class="sxs-lookup"><span data-stu-id="e3c13-107">Every provider requires a different number of properties; configuration depends on your provider and the degree of user interaction you allow.</span></span> <span data-ttu-id="e3c13-108">サービス プロバイダーによっては、プロファイルに必要なプロパティのすべてをしてください。</span><span class="sxs-lookup"><span data-stu-id="e3c13-108">Some service providers keep all of the necessary properties in the profile.</span></span> 
+<span data-ttu-id="46320-105">ログオン方法 ([IABProvider:: logon](iabprovider-logon.md)、 [IMSProvider:: logon](imsprovider-logon.md)、または[ixpprovider:: transportlogon](ixpprovider-transportlogon.md)) は、プロバイダーの構成を確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="46320-105">Your logon method ([IABProvider::Logon](iabprovider-logon.md), [IMSProvider::Logon](imsprovider-logon.md), or [IXPProvider::TransportLogon](ixpprovider-transportlogon.md)) must verify your provider's configuration.</span></span> <span data-ttu-id="46320-106">これには、完全な操作に必要なすべてのプロパティが正しく設定されていることを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="46320-106">This involves checking that all of the properties needed for full operation are set correctly.</span></span> <span data-ttu-id="46320-107">すべてのプロバイダーは、異なる数のプロパティを必要とします。構成は、プロバイダーと、許可するユーザー操作の程度によって異なります。</span><span class="sxs-lookup"><span data-stu-id="46320-107">Every provider requires a different number of properties; configuration depends on your provider and the degree of user interaction you allow.</span></span> <span data-ttu-id="46320-108">一部のサービスプロバイダーは、必要なすべてのプロパティをプロファイルに保持します。</span><span class="sxs-lookup"><span data-stu-id="46320-108">Some service providers keep all of the necessary properties in the profile.</span></span> 
 
-<span data-ttu-id="e3c13-109">他のサービス プロバイダーでは、プロファイルのプロパティのセットの一部を保持し、欠落している値をユーザーに確認します。</span><span class="sxs-lookup"><span data-stu-id="e3c13-109">Other service providers keep a partial set of properties in the profile and prompt the user for missing values.</span></span> <span data-ttu-id="e3c13-110">他のプロバイダーに格納しないでプロパティ、プロファイル、ユーザーはすべての構成に必要な情報に依存しています。</span><span class="sxs-lookup"><span data-stu-id="e3c13-110">Still other providers do not store properties in the profile at all, relying on the user to supply all of the information needed for configuration.</span></span>
+<span data-ttu-id="46320-109">その他のサービスプロバイダーは、プロファイルにプロパティの一部のセットを保持し、ユーザーに不足している値を要求します。</span><span class="sxs-lookup"><span data-stu-id="46320-109">Other service providers keep a partial set of properties in the profile and prompt the user for missing values.</span></span> <span data-ttu-id="46320-110">それでも、他のプロバイダーはプロファイルにプロパティを保存しません。また、構成に必要なすべての情報をユーザーが指定できるようにします。</span><span class="sxs-lookup"><span data-stu-id="46320-110">Still other providers do not store properties in the profile at all, relying on the user to supply all of the information needed for configuration.</span></span>
   
-### <a name="to-retrieve-properties-stored-in-the-profile"></a><span data-ttu-id="e3c13-111">プロファイルに格納されているプロパティを取得するには</span><span class="sxs-lookup"><span data-stu-id="e3c13-111">To retrieve properties stored in the profile</span></span>
+### <a name="to-retrieve-properties-stored-in-the-profile"></a><span data-ttu-id="46320-111">プロファイルに格納されているプロパティを取得するには</span><span class="sxs-lookup"><span data-stu-id="46320-111">To retrieve properties stored in the profile</span></span>
   
-1. <span data-ttu-id="e3c13-112">[IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md)、入力パラメーターとして、プロバイダーの[MAPIUID](mapiuid.md)を渡すことを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="e3c13-112">Call [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md), passing the [MAPIUID](mapiuid.md) of your provider as an input parameter.</span></span> 
+1. <span data-ttu-id="46320-112">[MAPIUID](mapiuid.md)を入力パラメーターとして渡して、 [imapisupport:: openプロファイル](imapisupport-openprofilesection.md)を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="46320-112">Call [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md), passing the [MAPIUID](mapiuid.md) of your provider as an input parameter.</span></span> 
     
-2. <span data-ttu-id="e3c13-113">個々 のプロパティまたはプロパティの一覧を取得するためにプロファイル セクションの[IMAPIProp::GetProps](imapiprop-getprops.md)または[IMAPIProp::GetPropList](imapiprop-getproplist.md)のメソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="e3c13-113">Call the profile section's [IMAPIProp::GetProps](imapiprop-getprops.md) or [IMAPIProp::GetPropList](imapiprop-getproplist.md) methods to retrieve individual properties or a property list.</span></span> 
+2. <span data-ttu-id="46320-113">プロファイルセクションの[imapiprop:: GetProps](imapiprop-getprops.md)または[imapiprop:: getproplist](imapiprop-getproplist.md)メソッドを呼び出して、個々のプロパティまたはプロパティリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="46320-113">Call the profile section's [IMAPIProp::GetProps](imapiprop-getprops.md) or [IMAPIProp::GetPropList](imapiprop-getproplist.md) methods to retrieve individual properties or a property list.</span></span> 
     
-### <a name="to-set-properties-from-user-information"></a><span data-ttu-id="e3c13-114">ユーザー情報のプロパティを設定するのには</span><span class="sxs-lookup"><span data-stu-id="e3c13-114">To set properties from user information</span></span>
+### <a name="to-set-properties-from-user-information"></a><span data-ttu-id="46320-114">ユーザー情報からプロパティを設定するには</span><span class="sxs-lookup"><span data-stu-id="46320-114">To set properties from user information</span></span>
   
-<span data-ttu-id="e3c13-115">MAPI では、表示を禁止するフラグを設定していない場合、プロパティ シートを表示します。</span><span class="sxs-lookup"><span data-stu-id="e3c13-115">Display a property sheet, if MAPI has not set a flag prohibiting the display.</span></span> <span data-ttu-id="e3c13-116">次のフラグは、ユーザー インターフェイスを表示できないことを示します。</span><span class="sxs-lookup"><span data-stu-id="e3c13-116">The following flags indicate that a user interface cannot be presented.</span></span>
+<span data-ttu-id="46320-115">MAPI が表示の禁止フラグを設定していない場合は、プロパティシートを表示します。</span><span class="sxs-lookup"><span data-stu-id="46320-115">Display a property sheet, if MAPI has not set a flag prohibiting the display.</span></span> <span data-ttu-id="46320-116">次のフラグは、ユーザーインターフェイスを表示できないことを示します。</span><span class="sxs-lookup"><span data-stu-id="46320-116">The following flags indicate that a user interface cannot be presented.</span></span>
   
-|<span data-ttu-id="e3c13-117">**Flag**</span><span class="sxs-lookup"><span data-stu-id="e3c13-117">**Flag**</span></span>|<span data-ttu-id="e3c13-118">**サービス プロバイダー**</span><span class="sxs-lookup"><span data-stu-id="e3c13-118">**Service provider**</span></span>|
+|<span data-ttu-id="46320-117">**Flag**</span><span class="sxs-lookup"><span data-stu-id="46320-117">**Flag**</span></span>|<span data-ttu-id="46320-118">**サービスプロバイダー**</span><span class="sxs-lookup"><span data-stu-id="46320-118">**Service provider**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="e3c13-119">AB_NO_DIALOG</span><span class="sxs-lookup"><span data-stu-id="e3c13-119">AB_NO_DIALOG</span></span>  <br/> |<span data-ttu-id="e3c13-120">アドレス帳プロバイダー</span><span class="sxs-lookup"><span data-stu-id="e3c13-120">Address book provider</span></span>  <br/> |
-|<span data-ttu-id="e3c13-121">LOGON_NO_DIALOG</span><span class="sxs-lookup"><span data-stu-id="e3c13-121">LOGON_NO_DIALOG</span></span>  <br/> |<span data-ttu-id="e3c13-122">トランスポート プロバイダー</span><span class="sxs-lookup"><span data-stu-id="e3c13-122">Transport provider</span></span>  <br/> |
-|<span data-ttu-id="e3c13-123">MDB_NO_DIALOG</span><span class="sxs-lookup"><span data-stu-id="e3c13-123">MDB_NO_DIALOG</span></span>  <br/> |<span data-ttu-id="e3c13-124">メッセージ ストア プロバイダー</span><span class="sxs-lookup"><span data-stu-id="e3c13-124">Message store provider</span></span>  <br/> |
+|<span data-ttu-id="46320-119">AB_NO_DIALOG</span><span class="sxs-lookup"><span data-stu-id="46320-119">AB_NO_DIALOG</span></span>  <br/> |<span data-ttu-id="46320-120">アドレス帳プロバイダー</span><span class="sxs-lookup"><span data-stu-id="46320-120">Address book provider</span></span>  <br/> |
+|<span data-ttu-id="46320-121">LOGON_NO_DIALOG</span><span class="sxs-lookup"><span data-stu-id="46320-121">LOGON_NO_DIALOG</span></span>  <br/> |<span data-ttu-id="46320-122">トランスポートプロバイダー</span><span class="sxs-lookup"><span data-stu-id="46320-122">Transport provider</span></span>  <br/> |
+|<span data-ttu-id="46320-123">MDB_NO_DIALOG</span><span class="sxs-lookup"><span data-stu-id="46320-123">MDB_NO_DIALOG</span></span>  <br/> |<span data-ttu-id="46320-124">メッセージストアプロバイダー</span><span class="sxs-lookup"><span data-stu-id="46320-124">Message store provider</span></span>  <br/> |
    
-<span data-ttu-id="e3c13-125">場合は、プロバイダーに保存しません。 すべての構成プロパティ、プロファイル、ユーザーの介入を必要とするし、MAPI ダイアログ ボックスの抑制のフラグのいずれかのログオン方法として、MAPI_E_UNCONFIGURED を返します。</span><span class="sxs-lookup"><span data-stu-id="e3c13-125">If your provider does not store all of its configuration properties in the profile, requiring user interaction, and MAPI passes one of the dialog box suppression flags to your logon method, return MAPI_E_UNCONFIGURED.</span></span> <span data-ttu-id="e3c13-126">ダイアログの抑制のフラグが設定されていないが、ユーザーがすべての必要な情報を提供しない場合もこのエラーを返します。</span><span class="sxs-lookup"><span data-stu-id="e3c13-126">Also return this error when the dialog suppression flag is not set, but the user does not supply all of the required information.</span></span>
+<span data-ttu-id="46320-125">プロバイダーがプロファイルにすべての構成プロパティを格納せず、ユーザーの操作を必要とし、MAPI がログオン方法にダイアログボックス抑制フラグの1つを渡す場合は、MAPI_E_UNCONFIGURED を返します。</span><span class="sxs-lookup"><span data-stu-id="46320-125">If your provider does not store all of its configuration properties in the profile, requiring user interaction, and MAPI passes one of the dialog box suppression flags to your logon method, return MAPI_E_UNCONFIGURED.</span></span> <span data-ttu-id="46320-126">ダイアログ抑制フラグが設定されていないが、ユーザーが必要な情報をすべて指定していない場合にも、このエラーを返します。</span><span class="sxs-lookup"><span data-stu-id="46320-126">Also return this error when the dialog suppression flag is not set, but the user does not supply all of the required information.</span></span>
   
-<span data-ttu-id="e3c13-127">サービス ・ プロバイダーには、MAPI_E_UNCONFIGURED では、そのログオン方法が失敗した場合、MAPI は、エントリ ポイント関数をもう一度呼び出します。</span><span class="sxs-lookup"><span data-stu-id="e3c13-127">When your service provider fails its logon method with MAPI_E_UNCONFIGURED, MAPI calls your entry point function again.</span></span> <span data-ttu-id="e3c13-128">情報を 2 番目の呼び出しを特定できない場合は、サービス プロバイダーの重要度に応じて、そのセッション可能性があります終了します。</span><span class="sxs-lookup"><span data-stu-id="e3c13-128">If the information cannot be located with the second call, the session might terminate, depending on how important your service provider is.</span></span> 
+<span data-ttu-id="46320-127">サービスプロバイダーが MAPI_E_UNCONFIGURED を使用してログオン方法に失敗すると、MAPI はエントリポイント関数を再度呼び出します。</span><span class="sxs-lookup"><span data-stu-id="46320-127">When your service provider fails its logon method with MAPI_E_UNCONFIGURED, MAPI calls your entry point function again.</span></span> <span data-ttu-id="46320-128">2番目の呼び出しで情報が見つからない場合は、サービスプロバイダーの重要度によってはセッションが終了する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="46320-128">If the information cannot be located with the second call, the session might terminate, depending on how important your service provider is.</span></span> 
   
-<span data-ttu-id="e3c13-129">次の図は、サービス プロバイダーのログオン方法の構成に必要なロジックを示します。</span><span class="sxs-lookup"><span data-stu-id="e3c13-129">The following illustration shows the logic required for configuration in your service provider logon method.</span></span> 
+<span data-ttu-id="46320-129">次の図は、サービスプロバイダーのログオン方法での構成に必要なロジックを示しています。</span><span class="sxs-lookup"><span data-stu-id="46320-129">The following illustration shows the logic required for configuration in your service provider logon method.</span></span> 
   
-<span data-ttu-id="e3c13-130">**構成検証のフローチャート**</span><span class="sxs-lookup"><span data-stu-id="e3c13-130">**Configuration verification flowchart**</span></span>
+<span data-ttu-id="46320-130">**構成検証のフローチャート**</span><span class="sxs-lookup"><span data-stu-id="46320-130">**Configuration verification flowchart**</span></span>
   
-<span data-ttu-id="e3c13-131">![構成の確認フローチャート](media/amapi_62.gif "構成の確認フローチャート")</span><span class="sxs-lookup"><span data-stu-id="e3c13-131">![Configuration verification flowchart](media/amapi_62.gif "Configuration verification flowchart")</span></span>
+<span data-ttu-id="46320-131">![構成検証のフローチャート](media/amapi_62.gif "構成検証のフローチャート")</span><span class="sxs-lookup"><span data-stu-id="46320-131">![Configuration verification flowchart](media/amapi_62.gif "Configuration verification flowchart")</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="e3c13-132">関連項目</span><span class="sxs-lookup"><span data-stu-id="e3c13-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="46320-132">関連項目</span><span class="sxs-lookup"><span data-stu-id="46320-132">See also</span></span>
 
-- [<span data-ttu-id="e3c13-133">サービス プロバイダー ログオンの実装</span><span class="sxs-lookup"><span data-stu-id="e3c13-133">Implementing Service Provider Logon</span></span>](implementing-service-provider-logon.md)
+- [<span data-ttu-id="46320-133">サービスプロバイダーログオンの実装</span><span class="sxs-lookup"><span data-stu-id="46320-133">Implementing Service Provider Logon</span></span>](implementing-service-provider-logon.md)
 
