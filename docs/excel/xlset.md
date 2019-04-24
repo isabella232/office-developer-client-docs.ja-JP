@@ -11,12 +11,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 121e6212-0692-4430-97be-4792b53719bf
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 63f50e441f5d851677f36754a17bcd6403705239
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 0912c1d40882933778d0df927ceb9de773063444
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303858"
 ---
 # <a name="xlset"></a>xlSet
 
@@ -32,7 +32,7 @@ Excel12(xlSet, LPXLOPER12 pxRes, 2, LPXLOPER12 pxReference, LPXLOPER pxValue);
 
 _pxReference_ (**xltypeRef** または **xltypeSRef**)
   
-ターゲット セルを説明する長方形のリファレンスです。 **xltypeRef** `val.mref.lpmref->count` が 1 に設定されるようにするには、リファレンスは隣接するセルを説明する必要があります。 
+A rectangular reference describing the target cell or cells. The reference must describe adjacent cells, so that in an **xltypeRef** `val.mref.lpmref->count` must be set to 1. 
   
 _pxValue_
   
@@ -44,7 +44,7 @@ _pxValue_
 
 _pxValue_ には、値または配列のいずれかを指定できます。 値の場合は、指定の範囲全体にその値が入力されます。 配列 (**xltypeMulti**) の場合は、配列の要素が長方形の対応する場所に配置されます。
   
-2 番目の引数に水平配列を使用する場合、長方形全体が埋まるように配列が下に複製されます。 垂直配列を使用する場合、長方形全体が埋まるように配列が右に複製されます。 長方形の配列を使用する場合、それが配置先の長方形の範囲よりも小さすぎる場合は、その範囲が **#N/A** で埋められます。
+If you use a horizontal array for the second argument, it is duplicated down to fill the entire rectangle. If you use a vertical array, it is duplicated right to fill the entire rectangle. If you use a rectangular array, and it is too small for the rectangular range you want to put it in, that range is padded with **#N/A**s.
   
 対象範囲がソース配列よりも小さい場合は、対象範囲の境界まで値がコピーされ、余分なデータは無視されます。
   

@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 12b95657-1926-4a24-be63-40305ea6f990
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8f68de5e18d84c728241c188b932f99456f5be8c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a1bf02de914865e27c8c018aba8695c858888ae2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299462"
 ---
 # <a name="hexfrombin"></a>HexFromBin
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-2 進数を 16 進数の文字列形式に変換します。 
+バイナリ番号を16進数の文字列表現に変換します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 void HexFromBin(
@@ -45,22 +45,22 @@ void HexFromBin(
 
  _pb_
   
-> [in]変換するバイナリ データへのポインター。 
+> 順番変換するバイナリデータへのポインター。 
     
  _cb_
   
-> [in]_Pb_パラメーターが指す、バイナリ データのバイト単位のサイズです。 
+> 順番_pb_パラメーターが指すバイナリデータのサイズ (バイト数)。 
     
  _sz_
   
-> [out]16 進数のバイナリ データを表す null で終わる ASCII 文字列へのポインター。
+> 読み上げバイナリデータを16進数で表す null で終わる ASCII 文字列へのポインター。
     
 ## <a name="return-value"></a>Return value
 
 なし。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**HexFromBin**関数は、バイナリ データのサイズが_cb_パラメーターで示される単位にポインターを受け取ります。 内_sz_文字列で返します (2 * _cb_) + 1 バイトのメモリ、16 進数のバイナリ情報を表したものです。 バイトの値が 10 進数の 10 の場合は、たとえば、16 進数の文字列になります 0 a、文字列内の 2 つのバイトは 1 バイトに変換。 
+**HexFromBin**関数は、 _cb_パラメーターで指定されたサイズを持つバイナリデータの単位へのポインターを受け取ります。 これは、(2 * _cb_) + 1 バイトのメモリ内で、このバイナリ情報を16進数で表した_sz_文字列で返されます。 たとえば、バイト値が10進数の10の場合、16進文字列は0a になり、1バイトが文字列の2バイトに変換されます。 
   
 

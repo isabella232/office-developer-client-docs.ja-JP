@@ -11,12 +11,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 631a8f4e-ea7c-4743-9ee1-b2233fd7d98d
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 9484f7bbc1f5e0fc5b0def17f2ce79ef226dcd17
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: e113ddbf55e2b4651d578549802c44e2c6413a18
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303851"
 ---
 # <a name="xlgetinst"></a>xlGetInst
 

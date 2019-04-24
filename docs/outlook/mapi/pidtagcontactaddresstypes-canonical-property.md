@@ -12,47 +12,47 @@ api_type:
 - HeaderDef
 ms.assetid: 8cfd4c89-a74f-4af9-b9c3-5c1a396ee600
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ec5ad586d06be96a17ed2a56504e65ebb50afc19
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 949d20d7158639a0b3e8e71f431b76edc048b38e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303025"
 ---
 # <a name="pidtagcontactaddresstypes-canonical-property"></a>PidTagContactAddressTypes 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 連絡先のアドレスの種類の一覧が含まれています。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_CONTACT_ADDRTYPES、PR_CONTACT_ADDRTYPES_A、PR_CONTACT_ADDRTYPES_W  <br/> |
-|識別子:  <br/> |0x3A54  <br/> |
+|識別子:  <br/> |0x3a54  <br/> |
 |データの種類 :   <br/> |PT_MV_UNICODE、PT_MV_STRING8  <br/> |
-|領域:  <br/> |Contact  <br/> |
+|エリア:  <br/> |連絡先  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

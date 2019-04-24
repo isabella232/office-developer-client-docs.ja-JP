@@ -8,121 +8,121 @@ f1_keywords:
 - Vis_DSS.chm1046253
 localization_priority: Normal
 ms.assetid: d4f0cf7a-ac4b-c914-7887-e1d65e9d59fa
-description: Visio 2013 は、カスタム描画ソリューションの 1 つの強力なプラットフォームを提供します。 新しいシェイプ シート セルと関数、および新しいオートメーション オブジェクト、プロパティ、メソッド、およびイベントを定義し、ソリューション内の要素の動作を制御するその他のオプションを提供します。
-ms.openlocfilehash: 26bf8f6071c9f67d017d8ffc3a47fb1f820df01d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Visio 2013 には、カスタムの図面ソリューションのための強力な単一プラットフォームが用意されています。 新しいシェイプシートのセルと関数、およびオートメーションのオブジェクト、プロパティ、メソッド、イベントを使用すると、ソリューションで要素の動作を定義および制御するときに、より多くのオプションが利用できるようになります。
+ms.openlocfilehash: 9ab1c447e7cfdf41b8c88a85438ac2904b1395cf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297208"
 ---
 # <a name="whats-new-for-visio-shapesheet-developers"></a>Visio ShapeSheet 開発者向け新機能
 
-Visio 2013 は、カスタム描画ソリューションの 1 つの強力なプラットフォームを提供します。 新しいシェイプ シート セルと関数、および新しいオートメーション オブジェクト、プロパティ、メソッド、およびイベントを定義し、ソリューション内の要素の動作を制御するその他のオプションを提供します。
+Visio 2013 には、カスタムの図面ソリューションのための強力な単一プラットフォームが用意されています。 新しいシェイプシートのセルと関数、およびオートメーションのオブジェクト、プロパティ、メソッド、イベントを使用すると、ソリューションで要素の動作を定義および制御するときに、より多くのオプションが利用できるようになります。
   
 ## <a name="new-and-changed-cells"></a>新しいセルと変更されたセル
 <a name="vis15_WhatsNew_Cells"> </a>
 
-Visio 2013 の [シェイプ シート] ソリューションの構築に使用できる新しいセルを次の表に一覧します。
+次の表に、Visio 2013 でシェイプシートソリューションを作成するために使用できる新しいセルの一覧を示します。
   
-|**新しいセル**|**セクション**|
+|**新しいセル**|**Section**|
 |:-----|:-----|
-|[BevelBottomHeight](bevelbottomheight-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
+|[[bevelbottomheight]](bevelbottomheight-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
 |[BevelBottomType](bevelbottomtype-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
-|[BevelBottomWidth](bevelbottomwidth-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
-|[BevelContourColor](bevelcontourcolor-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
-|[BevelContourSize](bevelcontoursize-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
-|[BevelDepthColor](beveldepthcolor-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
-|[BevelDepthSize](beveldepthsize-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
-|[BevelLightingAngle](bevellightingangle-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
-|[BevelLightingType](bevellightingtype-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
-|[BevelMaterialType](bevelmaterialtype-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
-|[BevelTopHeight](beveltopheight-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
+|[[bevelbottomwidth]](bevelbottomwidth-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
+|[[bevelcontourcolor]](bevelcontourcolor-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
+|[[bevelcontoursize]](bevelcontoursize-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
+|[[beveldepthcolor]](beveldepthcolor-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
+|[[beveldepthsize]](beveldepthsize-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
+|[[bevellightingangle]](bevellightingangle-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
+|[[bevellightingtype]](bevellightingtype-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
+|[[bevelmaterialtype]](bevelmaterialtype-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
+|[[beveltopheight]](beveltopheight-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
 |[BevelTopType](beveltoptype-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
-|[BevelTopWidth](beveltopwidth-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
-|[ClippingPath](clippingpath-cell-foreign-image-info-section.md) <br/> |[外部イメージの情報] セクション  <br/> |
-|[ColorSchemeIndex](colorschemeindex-cell-theme-properties-section.md) <br/> |テーマのプロパティ  <br/> |
-|[CompoundType](compoundtype-cell-line-format-section.md) <br/> |線の書式設定  <br/> |
-|[ConnectorSchemeIndex](connectorschemeindex-cell-theme-properties-section.md) <br/> |テーマのプロパティ  <br/> |
-|[DistanceFromGround](distancefromground-cell-3-d-rotation-properties.md) <br/> |3-D 回転のプロパティ  <br/> |
-|[DocLockReplace](doclockreplace-cell-document-properties-section.md) <br/> |ドキュメントのプロパティ  <br/> |
-|[EffectSchemeIndex](effectschemeindex-cell-theme-properties-section.md) <br/> |テーマのプロパティ  <br/> |
-|[FillGradientAngle](fillgradientangle-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
-|[FillGradientDir](fillgradientdir-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
-|[FillGradientEnabled](fillgradientenabled-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
-|[FontSchemeIndex](fontschemeindex-cell-theme-properties-section.md) <br/> |テーマのプロパティ  <br/> |
-|[GlowColor](glowcolor-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
-|[GlowColorTrans](glowcolortrans-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
-|[GlowSize](glowsize-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
-|[KeepTextFlat](keeptextflat-cell-3-d-rotation-properties-section.md) <br/> |3-D 回転のプロパティ  <br/> |
-|[LineGradientAngle](linegradientangle-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
-|[LineGradientDir](linegradientdir-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
-|[LineGradientEnabled](linegradientenabled-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
-|[LockReplace](lockreplace-cell-protection-section.md) <br/> |保護  <br/> |
-|[LockThemeConnectors](lockthemeconnectors-cell-protection-section.md) <br/> |保護  <br/> |
-|[LockThemeFonts](lockthemefonts-cell-protection-section.md) <br/> |保護  <br/> |
-|[LockThemeIndex](lockthemeindex-cell-protection-section.md) <br/> |保護  <br/> |
-|[NoCoauth](nocoauth-cell-document-properties-section.md) <br/> |ドキュメントのプロパティ  <br/> |
-|[PageLockReplace](pagelockreplace-cell-page-properties-section.md) <br/> |Page Properties  <br/> |
-|[視点](perspective-cell-3-d-rotation-properties-section.md) <br/> |3-D 回転のプロパティ  <br/> |
-|[QuickStyleEffectsMatrix](quickstyleeffectsmatrix-cell-quick-style-section.md) <br/> |クイック スタイル  <br/> |
-|[QuickStyleFillColor](quickstylefillcolor-cell-quick-style-section.md) <br/> |クイック スタイル  <br/> |
-|[QuickStyleFillMatrix](quickstylefillmatrix-cell-quick-style-section.md) <br/> |クイック スタイル  <br/> |
-|[QuickStyleFontColor](quickstylefontcolor-cell-quick-style-section.md) <br/> |クイック スタイル  <br/> |
-|[QuickStyleLineColor](quickstylelinecolor-cell-quick-style-section.md) <br/> |クイック スタイル  <br/> |
-|[QuickStyleLineMatrix](quickstylelinematrix-cell-quick-style-section.md) <br/> |クイック スタイル  <br/> |
-|[QuickStyleShadowColor](quickstyleshadowcolor-cell-quick-style-section.md) <br/> |クイック スタイル  <br/> |
-|[QuickStyleType](quickstyletype-cell-quick-style-section.md) <br/> |クイック スタイル  <br/> |
-|[ReflectionBlur](reflectionblur-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
-|[ReflectionDist](reflectiondist-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
-|[ReflectionSize](reflectionsize-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
-|[ReflectionTrans](reflectiontrans-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
-|[ReplaceCopyCells](replacecopycells-cell-change-shape-behavior-section.md) <br/> |図形の動作の変更  <br/> |
-|[ReplaceLockFormat](replacelockformat-cell-change-shape-behavior-section.md) <br/> |図形の動作の変更  <br/> |
-|[ReplaceLockShapeData](replacelockshapedata-cell-change-shape-behavior-section.md) <br/> |図形の動作の変更  <br/> |
-|[ReplaceLockText](replacelocktext-cell-change-shape-behavior-section.md) <br/> |図形の動作の変更  <br/> |
-|[RotateGradientWithShape](rotategradientwithshape-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
+|[[beveltopwidth]](beveltopwidth-cell-bevel-properties-section.md) <br/> |ベベルのプロパティ  <br/> |
+|[[clippingpath]](clippingpath-cell-foreign-image-info-section.md) <br/> |[外部イメージの情報] セクション  <br/> |
+|[[colorschemeindex]](colorschemeindex-cell-theme-properties-section.md) <br/> |テーマのプロパティ  <br/> |
+|[[compoundtype]](compoundtype-cell-line-format-section.md) <br/> |線の書式設定  <br/> |
+|[[connectorschemeindex]](connectorschemeindex-cell-theme-properties-section.md) <br/> |テーマのプロパティ  <br/> |
+|[[distancefromground]](distancefromground-cell-3-d-rotation-properties.md) <br/> |3-D 回転のプロパティ  <br/> |
+|[[doclockreplace]](doclockreplace-cell-document-properties-section.md) <br/> |ドキュメントのプロパティ  <br/> |
+|[[effectschemeindex]](effectschemeindex-cell-theme-properties-section.md) <br/> |テーマのプロパティ  <br/> |
+|[[fillgradientangle]](fillgradientangle-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
+|[[fillgradientdir]](fillgradientdir-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
+|[[fillgradientenabled]](fillgradientenabled-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
+|[[fontschemeindex]](fontschemeindex-cell-theme-properties-section.md) <br/> |テーマのプロパティ  <br/> |
+|[[glowcolor]](glowcolor-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
+|[[glowcolortrans]](glowcolortrans-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
+|[[glowsize]](glowsize-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
+|[[keeptextflat]](keeptextflat-cell-3-d-rotation-properties-section.md) <br/> |3-D 回転のプロパティ  <br/> |
+|[[linegradientangle]](linegradientangle-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
+|[[linegradientdir]](linegradientdir-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
+|[[linegradientenabled]](linegradientenabled-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
+|[[lockreplace]](lockreplace-cell-protection-section.md) <br/> |Protection  <br/> |
+|[[lockthemeconnectors]](lockthemeconnectors-cell-protection-section.md) <br/> |Protection  <br/> |
+|[[lockthemefonts]](lockthemefonts-cell-protection-section.md) <br/> |Protection  <br/> |
+|[[lockthemeindex]](lockthemeindex-cell-protection-section.md) <br/> |Protection  <br/> |
+|[[nocoauth]](nocoauth-cell-document-properties-section.md) <br/> |ドキュメントのプロパティ  <br/> |
+|[[pagelockreplace]](pagelockreplace-cell-page-properties-section.md) <br/> |Page Properties  <br/> |
+|[Perspective](perspective-cell-3-d-rotation-properties-section.md) <br/> |3-D 回転のプロパティ  <br/> |
+|[[quickstyleeffectsmatrix]](quickstyleeffectsmatrix-cell-quick-style-section.md) <br/> |クイック スタイル  <br/> |
+|[[quickstylefillcolor]](quickstylefillcolor-cell-quick-style-section.md) <br/> |クイック スタイル  <br/> |
+|[[quickstylefillmatrix]](quickstylefillmatrix-cell-quick-style-section.md) <br/> |クイック スタイル  <br/> |
+|[[quickstylefontcolor]](quickstylefontcolor-cell-quick-style-section.md) <br/> |クイック スタイル  <br/> |
+|[[quickstylelinecolor]](quickstylelinecolor-cell-quick-style-section.md) <br/> |クイック スタイル  <br/> |
+|[[quickstylelinematrix]](quickstylelinematrix-cell-quick-style-section.md) <br/> |クイック スタイル  <br/> |
+|[[quickstyleshadowcolor]](quickstyleshadowcolor-cell-quick-style-section.md) <br/> |クイック スタイル  <br/> |
+|[[quickstyletype]](quickstyletype-cell-quick-style-section.md) <br/> |クイック スタイル  <br/> |
+|[[reflectionblur]](reflectionblur-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
+|[[reflectiondist]](reflectiondist-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
+|[[reflectionsize]](reflectionsize-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
+|[[reflectiontrans]](reflectiontrans-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
+|[[replacecopycells]](replacecopycells-cell-change-shape-behavior-section.md) <br/> |図形の動作の変更  <br/> |
+|[[replacelockformat]](replacelockformat-cell-change-shape-behavior-section.md) <br/> |図形の動作の変更  <br/> |
+|[[replacelockshapedata]](replacelockshapedata-cell-change-shape-behavior-section.md) <br/> |図形の動作の変更  <br/> |
+|[[replacelocktext]](replacelocktext-cell-change-shape-behavior-section.md) <br/> |図形の動作の変更  <br/> |
+|[[rotategradientwithshape]](rotategradientwithshape-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
 |[RotationType](rotationtype-cell-3-d-rotation-properties-section.md) <br/> |3-D 回転のプロパティ  <br/> |
-|[RotationXAngle](rotationxangle-cell-3-d-rotation-properties-section.md) <br/> |3-D 回転のプロパティ  <br/> |
-|[RotationYAngle](rotationyangle-cell-3-d-rotation-properties-section.md) <br/> |3-D 回転のプロパティ  <br/> |
-|[RotationZAngle](rotationzangle-cell-3-d-rotation-properties-section.md) <br/> |3-D 回転のプロパティ  <br/> |
-|[ShapeShdwBlur](shapeshdwblur-cell-fill-format-section.md) <br/> |塗りつぶしの書式設定  <br/> |
-|[ShapeShdwShow](shapeshdwshow-cell-fill-format-section.md) <br/> |塗りつぶしの書式設定  <br/> |
-|[SketchAmount](sketchamount-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
-|[SketchEnabled](sketchenabled-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
-|[SketchFillChange](sketchfillchange-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
-|[SketchLineChange](sketchlinechange-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
-|[SketchLineWeight](sketchlineweight-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
-|[SketchSeed](sketchseed-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
-|[SoftEdgesSize](softedgessize-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
-|[ThemeIndex](themeindex-cell-theme-properties-section.md) <br/> |テーマのプロパティ  <br/> |
-|[UseGroupGradient](usegroupgradient-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
+|[[rotationxangle]](rotationxangle-cell-3-d-rotation-properties-section.md) <br/> |3-D 回転のプロパティ  <br/> |
+|[[rotationyangle]](rotationyangle-cell-3-d-rotation-properties-section.md) <br/> |3-D 回転のプロパティ  <br/> |
+|[[rotationzangle]](rotationzangle-cell-3-d-rotation-properties-section.md) <br/> |3-D 回転のプロパティ  <br/> |
+|[[shapeshdwblur]](shapeshdwblur-cell-fill-format-section.md) <br/> |塗りつぶしの書式設定  <br/> |
+|[[shapeshdwshow]](shapeshdwshow-cell-fill-format-section.md) <br/> |塗りつぶしの書式設定  <br/> |
+|[[sketchamount]](sketchamount-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
+|[[sketchenabled]](sketchenabled-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
+|[[sketchfillchange]](sketchfillchange-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
+|[[sketchlinechange]](sketchlinechange-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
+|[[sketchlineweight]](sketchlineweight-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
+|[[sketchseed]](sketchseed-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
+|[[softedgessize]](softedgessize-cell-additional-effect-properties-section.md) <br/> |追加効果のプロパティ  <br/> |
+|[[themeindex]](themeindex-cell-theme-properties-section.md) <br/> |テーマのプロパティ  <br/> |
+|[[usegroupgradient]](usegroupgradient-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
    
-Visio 2013 に変更されているセルを次の表に一覧します。
+次の表に、Visio 2013 で変更されたセルの一覧を示します。
   
 |**変更されたセル**|**メモ**|
 |:-----|:-----|
-|[[Shdwtype]](shdwtype-cell-page-properties-section.md) <br/> |新しい値とオートメーション定数  <br/> |
+|[[shdwtype]](shdwtype-cell-page-properties-section.md) <br/> |新しい値とオートメーション定数  <br/> |
    
 ## <a name="new-rows"></a>新しい行
 <a name="vis15_WhatsNew_Rows"> </a>
 
-Visio 2013 の [シェイプ シート] ソリューションの構築に使用できる新しい行を次の表に一覧します。
+次の表に、Visio 2013 でシェイプシートソリューションを作成するために使用できる新しい行を示します。
   
-|**新しい行**|**セクション**|
+|**新しい行**|**Section**|
 |:-----|:-----|
 |[GradientStop](gradient-stop-row-fill-gradient-section.md) <br/> |塗りつぶしのグラデーション  <br/> |
 |[GradientStop](gradient-stop-row-line-gradient-section.md) <br/> |線のグラデーション  <br/> |
-|[RelCubBezTo](relcubbezto-row-geometry-section.md) <br/> |Geometry  <br/> |
-|[RelEllipticalArcTo](relellipticalarcto-row-geometry-section.md) <br/> |Geometry  <br/> |
-|[RelLineTo](rellineto-row-geometry-section.md) <br/> |Geometry  <br/> |
-|[RelMoveTo](relmoveto-row-geometry-section.md) <br/> |Geometry  <br/> |
-|[RelQuadBezTo](relquadbezto-row-geometry-section.md) <br/> |Geometry  <br/> |
+|[[relcubbezto]](relcubbezto-row-geometry-section.md) <br/> |Geometry  <br/> |
+|[[relellipticalarcto]](relellipticalarcto-row-geometry-section.md) <br/> |Geometry  <br/> |
+|[[rellineto]](rellineto-row-geometry-section.md) <br/> |Geometry  <br/> |
+|[[relmoveto]](relmoveto-row-geometry-section.md) <br/> |Geometry  <br/> |
+|[[relquadbezto]](relquadbezto-row-geometry-section.md) <br/> |Geometry  <br/> |
    
 ## <a name="new-and-deprecated-functions"></a>新しい関数と非推奨の関数
 <a name="vis15_WhatsNew_Functions"> </a>
 
-次の表に、Visio 2013 の新しい機能を示します。
+次の表に、Visio 2013 の新しい関数を示します。
   
 |**新しい関数**|
 |:-----|
@@ -133,7 +133,7 @@ Visio 2013 の [シェイプ シート] ソリューションの構築に使用�
 ||
 |[THEMEVAL](themeval-function.md) <br/> |
    
-Visio 2013 で廃止予定の関数を次の表に一覧します。
+次の表に、Visio 2013 で非推奨になった機能を示します。
   
 |**非推奨の関数**|**メモ**|
 |:-----|:-----|

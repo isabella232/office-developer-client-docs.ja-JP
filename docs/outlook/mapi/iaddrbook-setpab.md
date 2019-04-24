@@ -1,5 +1,5 @@
 ---
-title: IAddrBookSetPAB
+title: iaddrbooksetpab
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 75daf9d4-6975-435f-91e5-1b41e0047ab7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 461b59ff4f4c8a93f3a9945b05e31aef9a2997bf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 29677ce74f405e8ca03f1639f3d98288532e9653
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287015"
 ---
 # <a name="iaddrbooksetpab"></a>IAddrBook::SetPAB
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-個人用アドレス帳 (PAB) には、特定のコンテナーを指定します。
+特定のコンテナーを個人用アドレス帳 (PAB) として指定します。
   
 ```cpp
 HRESULT SetPAB(
@@ -38,33 +38,33 @@ HRESULT SetPAB(
 
  _cbEntryID_
   
-> [in]_LpEntryID_パラメーターで指定されたエントリの識別子のバイト数です。 
+> 順番_lな tryid_パラメーターで指定されたエントリ識別子のバイト数。 
     
- _lpEntryID_
+ _lて tryid_
   
-> [in]個人アドレス帳として指定するコンテナーのエントリの識別子へのポインター。 _LpEntryID_パラメーターは、NULL にすることはできません。 
+> 順番PAB として指定するコンテナーのエントリ id へのポインター。 _lな tryid_パラメーターを NULL にすることはできません。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 指定したコンテナーは、個人用アドレス帳として確立されています。
+> 指定したコンテナーは PAB として確立されています。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-クライアントとサービス ・ プロバイダーとして、個人用アドレス帳の特定のコンテナーを指定するのには**SetPAB**メソッドを呼び出します。 個人アドレス帳は、他のコンテナーと同様に新しいエントリからコピーしたエントリで構成されるコンテナーです。 
+クライアントおよびサービスプロバイダーは、 **setpab**メソッドを呼び出して、特定のコンテナーを PAB として指定します。 PAB は、他のコンテナーからコピーしたエントリと、新しいエントリで構成されるコンテナーです。 
   
-**SetPAB**への呼び出しは、そのコンテナーが使用できなくなった、または、 **SetPAB**への後続の呼び出しで個人用アドレス帳を新しいコンテナーになりますまで、個人用アドレス帳としてコンテナーを確立します。 
+**setpab**の呼び出しによって、コンテナーが pab として設定され、そのコンテナーが使用できなくなるか、またはその後の**setpab**への呼び出しによって新しいコンテナーが pab になります。 
   
-クライアントとプロバイダーがありませんに個人用アドレス帳の変更を永続的な[IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを呼び出します。 
+クライアントとプロバイダーは、PAB を永続的に変更するために[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出す必要はありません。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|AbContDlg.cpp  <br/> |CAbContDlg::OnSetPAB  <br/> |MFCMAPI では、 **SetPAB**メソッドを使用して、指定したコンテナーに、個人用アドレス帳を作成します。  <br/> |
+|abdlg  <br/> |cabコンテ dlg:: OnSetPAB  <br/> |mfcmapi は、 **setpab**メソッドを使用して、指定されたコンテナーを PAB に設定します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

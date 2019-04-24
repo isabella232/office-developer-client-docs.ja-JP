@@ -8,19 +8,19 @@ f1_keywords:
 - vis_sdr.chm110
 localization_priority: Normal
 ms.assetid: be51e18e-ea49-0788-1a17-866090afb9f4
-description: 図形の領域は、レイアウトの構成] ダイアログ ボックスを使用して図形をレイアウトするときに図面ページに収まる必要があります、垂直方向のブロック サイズを指定 ([デザイン] タブの [レイアウト] で、再レイアウト] ページをクリックし、他のレイアウト オプションをクリックし、)。
-ms.openlocfilehash: 283723bf902c07cfb044ab73107491df3c170a4d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '[レイアウトの構成] ダイアログボックス ([デザイン] タブの [レイアウト] で [ページの再レイアウト] をクリックし、[その他のレイアウトオプション] をクリック) を使用して図形をレイアウトするときに、垂直方向のブロックサイズを決定します。'
+ms.openlocfilehash: 08f2012bb027267810c21ef253a0073bb42d3a96
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297348"
 ---
-# <a name="blocksizey-cell-page-layout-section"></a>[BlockSizeY] セル ([ページ レイアウト] セクション)
+# <a name="blocksizey-cell-page-layout-section"></a>[BlockSizeY] セル ([Page Layout] セクション)
 
-図形の領域は、**レイアウトの構成**] ダイアログ ボックスを使用して図形をレイアウトするときに図面ページに収まる必要があります、垂直方向のブロック サイズを指定 ([**デザイン**] タブの [**レイアウト**] をクリックして **[再レイアウト] ページ**で、および**他のレイアウト オプション**] をクリック) します。
+[**レイアウトの構成**] ダイアログボックスを使用して図形をレイアウトするときに、各図形が図面ページ上に配置される領域 ([**デザイン**] タブの [**レイアウト**] グループで、[レイアウト] グループの [**再レイアウト**] をクリックします) を指定します。[その**他のレイアウトオプション**] をクリックします)。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 この値は、[**間隔と図形サイズの設定**] ダイアログ ボックスで設定することもできます (このダイアログ ボックスを開くには、[**デザイン**] タブの [**ページ設定**] グループの矢印をクリックし、[**レイアウトと経路**] タブをクリックして、[**間隔**] をクリックします)。
   
@@ -28,7 +28,7 @@ ms.locfileid: "19804913"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | BlockSizeY  <br/> |
+| セル名:  <br/> | [blocksizey]  <br/> |
    
 プログラムから、インデックスによって [BlockSizeY] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -36,6 +36,6 @@ ms.locfileid: "19804913"
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowPageLayout** <br/> |
-| セル インデックス:  <br/> |**visPLOBlockSizeY** <br/> |
+| セル インデックス:  <br/> |**visploblocksizey** <br/> |
    
 

@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 07cfa909-336f-466f-ab0a-acb642a78ba7
 description: このコンテンツは、この場所では使用できなくなりました。続行するには、GitHub 上の「Office Online との統合」を参照してください。
-ms.openlocfilehash: 7b3fced36d0539ab0c51b03f1ebf3933f0ca225c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 8b8ec11e979b89e6f7175e67687743682025896a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299757"
 ---
 # <a name="integrating-with-office-online"></a>Office Online との統合
 

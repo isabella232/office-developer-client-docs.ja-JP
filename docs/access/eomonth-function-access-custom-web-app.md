@@ -1,19 +1,19 @@
 ---
-title: EOMonth 関数 (カスタム web アプリケーションのアクセス)
+title: EOMonth 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: df98bcca-152b-49f2-b4e1-35d68008fb8f
 description: 指定した月数だけ前または後の月の最終日を返します。
-ms.openlocfilehash: cee42c4e5cb3a24b2e702673238ac9ee09bc7372
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 87a837069be223fdd2f9c809d706782e0955e2aa
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302562"
 ---
-# <a name="eomonth-function-access-custom-web-app"></a>EOMonth 関数 (カスタム web アプリケーションのアクセス)
+# <a name="eomonth-function-access-custom-web-app"></a>EOMonth 関数 (Access カスタム web アプリ)
 
 指定した月数だけ前または後の月の最終日を返します。
   
@@ -22,14 +22,14 @@ ms.locfileid: "19798559"
   
 ## <a name="syntax"></a>構文
 
- **EOMonth**(*日* *NumberOfMonth*) 
+ **EOMonth**(*Date*、 *numberofmonth*) 
   
 **EOMonth** の引数は次のとおりです。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
 | *Date*  <br/> |日付/時刻形式、または日付の許容される文字列式で開始日を指定します。  <br/> |
-| *NumberOfMonth*  <br/> |前に、または後*の日付*の月の数を表す数値です。  <br/> |
+| *NumberOfMonth*  <br/> |*日付*からの月数を表す数値を指定します。  <br/> |
    
 ## <a name="remarks"></a>解説
 

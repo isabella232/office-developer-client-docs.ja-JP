@@ -1,5 +1,5 @@
 ---
-title: 関数 (カスタム web アプリケーションのアクセス) を複製します。
+title: Replicate 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6ca7b15d-fa63-458a-8630-07633c5278b6
 description: テキスト値を、指定された回数だけ繰り返します。
-ms.openlocfilehash: d25170563b065d68302a120a2dfce960919b6195
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 91b18c7f78e8a156c3aa55b117c81fa537b379aa
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19798727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307981"
 ---
-# <a name="replicate-function-access-custom-web-app"></a>関数 (カスタム web アプリケーションのアクセス) を複製します。
+# <a name="replicate-function-access-custom-web-app"></a>Replicate 関数 (Access カスタム web アプリ)
 
 テキスト値を、指定された回数だけ繰り返します。
   
@@ -29,7 +29,7 @@ ms.locfileid: "19798727"
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *TextExpression*  <br/> |文字列式を指定します。  <br/> |
-| *NumberOfTimes*  <br/> |*TextExpression*を繰り返す回数を指定する整数です。  <br/> |
+| *TextExpression*  <br/> |文字列式。  <br/> |
+| *numberoftimes*  <br/> |*textexpression*を繰り返す回数を指定する整数型 (integer) の値です。  <br/> |
    
 

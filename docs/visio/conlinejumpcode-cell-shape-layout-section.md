@@ -9,38 +9,36 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: af85588e-8e83-5168-7a8c-d7e8b4af5c27
 description: コネクタの飛び越し点の表示方法を指定します。
-ms.openlocfilehash: 002f628841356ec8a22afbb9d4aeca8236058222
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 28bf506b8d3729fefec438d259746661fd28586e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284089"
 ---
-# <a name="conlinejumpcode-cell-shape-layout-section"></a>[ConLineJumpCode] セル ([図形レイアウト] セクション)
+# <a name="conlinejumpcode-cell-shape-layout-section"></a>[ConLineJumpCode] セル ([Shape Layout] セクション)
 
 コネクタの飛び越し点の表示方法を指定します。
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|0  <br/> |
+|.0  <br/> |
           ページの指定に合わせます。[**デザイン**] タブの [**ページ設定**] グループの矢印をクリックして、[**レイアウトと経路**] タブをクリックするとページの指定内容を参照できます。
   <br/> |**visSLOJumpDefault** <br/> |
-|1  <br/> |Never/なし  <br/> |**visSLOJumpNever** <br/> |
-|2  <br/> |Always/印刷/画面  <br/> |**visSLOJumpAlways** <br/> |
-|3  <br/> |常に相手側に表示します。  <br/> |**visSLOJumpOther** <br/> |
-|4  <br/> |
-          どちらの側にも表示しません。
-  <br/> |**visSLOJumpNeither** <br/> |
+|1-d  <br/> |Never/なし  <br/> |**visSLOJumpNever** <br/> |
+|pbm-2  <br/> |[Always/印刷/画面]  <br/> |**visSLOJumpAlways** <br/> |
+|1/3  <br/> |常に相手側に表示します。  <br/> |**visSLOJumpOther** <br/> |
+|2/4  <br/> |どちらの側にも表示しません。  <br/> |**visSLOJumpNeither** <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-設定できますでは、このセルの値、動的コネクタを**図形のデザイン**] で [[開発](run-in-developer-mode-display-the-developer-tab.md)] タブで、**動作**をクリックして、[**コネクタ**] タブをクリックします。 
+このセルの値は、動的コネクタを選択し、[[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] で [**基本動作**] をクリックし、[**コネクタ**] タブをクリックして設定することもできます。 
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ConLineJumpCode] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |ConLineJumpCode  <br/> |
+|セル名:  <br/> |[conlinejumpcode]  <br/> |
    
 プログラムから、インデックスによって [ConLineJumpCode] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

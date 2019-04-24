@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 8cbafca3-7831-4231-8e61-38330b5ad61b
 description: InfoPath フォーム テンプレート内で実行されるコードから、SharePoint オブジェクト モデルのメンバーに対してプログラミングを行う場合は、事前に、フォームの Visual Studio 2012 プロジェクトで Microsoft.SharePoint.dll アセンブリを参照する必要があります。そのためには、Microsoft SharePoint Server 2010 のライセンス コピーのファイル システム、または Microsoft SharePoint Foundation 2010 を実行するサーバーのファイル システムにアクセスして、Microsoft.SharePoint.dll アセンブリのコピーを取得する必要があります。
-ms.openlocfilehash: c496f603f50a55ae2eaee237d6910d92612e1761
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: e29725450a6a1bdcba99215e337493f8686491e3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303592"
 ---
 # <a name="use-sharepoint-object-model-members"></a>SharePoint オブジェクト モデルのメンバーを使用する
 
@@ -32,7 +32,7 @@ InfoPath フォーム テンプレート内で実行されるコードから、S
     
 2. Visual Studio 2012 で、フォーム テンプレート プロジェクトを開きます。
     
-3. [ **プロジェクト**] メニューで、[ **参照の追加**] をクリックします。
+3. [ **プロジェクト**] メニューの [ **参照の追加**] をクリックします。
     
 4. [ **参照**] タブをクリックし、アセンブリを探して選択し、[ **OK**] をクリックして参照を追加します。 
     

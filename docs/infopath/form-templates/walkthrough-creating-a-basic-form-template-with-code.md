@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 0f55c8be-8641-476a-b0c8-c88adb2ac2b9
 description: Microsoft InfoPath の場合は、Visual Basic または C# でビジネス ロジックを記述できます。これを実行するには、フォーム テンプレートを InfoPath のデザイン モードで開き、いずれかのユーザー インターフェイス コマンドを使用してイベント ハンドラーを追加します。これにより、コードを記述するための Visual Studio 2012 開発環境が開きます。
-ms.openlocfilehash: 8c98d71c26f8e56c532b2a4467218c366072b2ce
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: cc09856750ced28d35c8da172a08a31c4e3cd4a2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299735"
 ---
 # <a name="walkthrough-create-a-basic-form-template-with-code"></a>チュートリアル: コードを含む基本的なフォーム テンプレートの作成
 

@@ -1,5 +1,5 @@
 ---
-title: イベントの処理
+title: �C�x���g�̏���
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: b67fcb83-a0e2-4349-88f5-bcc181306eac
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: c5508df8466932b6fb5c7e04164aa00a5ea31a8d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: c989bc39c22f4e566c18feb4fdeaa8582c5525f2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304040"
 ---
 # <a name="handling-events"></a>イベントの処理
 

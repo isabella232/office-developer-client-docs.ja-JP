@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: cebccd2d-8215-486e-9964-7fc42412cec6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8b1b037cf24c1bb5a0c84da3d59892ab15763f37
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2db7dba67e7b71df6921ecd97189255a0ef7823a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309549"
 ---
 # <a name="iprofadmingetprofiletable"></a>IProfAdmin::GetProfileTable
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロファイル テーブルのすべての利用可能なプロファイルに関する情報を格納するテーブルへのアクセスを提供します。
+利用可能なすべてのプロファイルについての情報を含むテーブルである、プロファイルテーブルへのアクセスを提供します。
   
 ```cpp
 HRESULT GetProfileTable(
@@ -34,39 +34,39 @@ HRESULT GetProfileTable(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]常に NULL を返します。
+> 順番常に NULL。
     
- _lppTable_
+ _lpptable_
   
-> [out]プロファイル テーブルへのポインターへのポインター。
+> 読み上げプロファイルテーブルへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> プロファイル テーブルが正常に取得しました。
+> プロファイルテーブルが正常に取得されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IProfAdmin::GetProfileTable**メソッドは、すべての利用可能なプロファイルの 1 つの行が含まれているプロファイルのテーブルへのアクセスを提供します。 各行の 2 つの列がある: プロファイルの表示名、およびプロファイルが既定値であるかどうかを示すフラグ。 
+**IProfAdmin:: getprofiletable**メソッドはプロファイルテーブルへのアクセスを提供します。これには、使用可能なすべてのプロファイルに対応する1つの行が含まれています。 各行には、プロファイルの表示名、およびプロファイルが既定であるかどうかを示すフラグの2つの列のみがあります。 
   
-プロファイルが削除されている、またはを使用しているが、削除対象としてマークされている、プロファイル テーブルには含まれません。 プロファイル テーブルは静的です。テーブルでは、プロファイルの後の追加と削除は反映されません。 
+削除されているか、使用されているが削除対象としてマークされているプロファイルは、プロファイルテーブルには含まれません。 プロファイルテーブルは静的です。後でプロファイルを追加または削除しても、テーブルには反映されません。 
   
-プロファイルが存在しない場合、 **GetProfileTable**は、0 個の行を持つテーブルを返します。 
+プロファイルが存在しない場合、 **getprofiletable**は、行数が0のテーブルを返します。 
   
-プロファイル テーブルの詳細については、[プロファイル テーブル](profile-tables.md)を参照してください。 
+プロファイルテーブルの詳細については、「 [profile Tables](profile-tables.md)」を参照してください。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MainDlg.cpp  <br/> |CMainDlg::OnShowProfiles  <br/> |MFCMAPI では、 **IProfAdmin::GetProfileTable**メソッドを使用して、新しいダイアログ ボックスに表示するプロファイル テーブルを取得します。  <br/> |
+|maindlg .cpp  <br/> |CMainDlg:: onshowprofiles  <br/> |mfcmapi は、 **IProfAdmin:: getprofiletable**メソッドを使用して、新しいダイアログボックスに表示するプロファイルテーブルを取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

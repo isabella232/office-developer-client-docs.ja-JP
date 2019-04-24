@@ -13,11 +13,11 @@ api_type:
 ms.assetid: bbaf7df4-2de0-4da3-9125-eb24dfa94cd8
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 226e59ef6aa88bc290cf5aeb4d620979f926e1eb
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303039"
 ---
 # <a name="pidlidtaskffixoffline-canonical-property"></a>PidLidTaskFFixOffline 標準プロパティ
 
@@ -25,35 +25,35 @@ ms.locfileid: "25386265"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**DispidTaskOwner** ([PidLidTaskOwner](pidlidtaskowner-canonical-property.md)) のプロパティの正確性を示します。
+**dispidtaskowner** ([PidLidTaskOwner](pidlidtaskowner-canonical-property.md)) プロパティの精度を示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidTaskFFixOffline  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Task  <br/> |
-|長い ID (LID):  <br/> |0x0000812C  <br/> |
+|関連するプロパティ:  <br/> |dispidtaskffixoffline  <br/> |
+|プロパティセット:  <br/> |PSETID_Task  <br/> |
+|ロング ID (LID):  <br/> |0x0000812c  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |エリア:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-**DispidTaskFFixOffline**プロパティが FALSE に設定が設定されていない場合、 **dispidTaskOwner**プロパティの値が正しい。 **DispidTaskFFixOffline**が TRUE に設定されている場合、クライアントは、 **dispidTaskOwner**の正確な値を特定できません。 その場合は、クライアントでは、「不明」などの汎用の所有者の名前に**dispidTaskOwner**を設定できます。 ただし、クライアントが真の**dispidTaskFFixOffline**の値を検出すると、正確な所有者名を決定することができます、クライアントは**dispidTaskOwner**を更新する必要があり、 **dispidTaskFFixOffline**が FALSE に設定。 
+**dispidtaskffixoffline**プロパティが FALSE に設定されている場合、または設定が解除されている場合は、 **dispidtaskowner**プロパティの値が正しいことを示します。 **dispidtaskffixoffline**が TRUE に設定されている場合、クライアントは**dispidtaskowner**の正確な値を決定できません。 その場合、クライアントは、 **dispidtaskowner**を汎用所有者名 ("Unknown" など) に設定できます。 ただし、クライアントが**dispidtaskffixoffline**の値に TRUE を検出し、正確な所有者名を決定する場合、クライアントは**dispidtaskowner**を更新し、 **dispidtaskffixoffline**を FALSE に設定する必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
-> タスク、タスクの割り当て、およびタスクの更新に相当する電子をモデル化したいくつかのオブジェクトを定義します。 
+> タスク、タスクの割り当て、およびタスクの更新に相当する電子メールをモデル化する複数のオブジェクトを定義します。 
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -61,9 +61,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

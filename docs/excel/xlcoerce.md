@@ -11,12 +11,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 9d47c16c-a7e7-4998-b594-9cf001827b7b
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: e0474b81a6d24663fe85303efc8fe2fd62cfdd82
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: d84839535d5eb913ca8a62d631238e3330683d0e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303963"
 ---
 # <a name="xlcoerce"></a>xlCoerce
 
@@ -36,7 +36,7 @@ Excel12(xlCoerce, LPXLOPER12 pxRes, 2, LPXLOPER12 pxSource, LPXLOPER12 pxDestTyp
   
  _pxDestType_ (**xltypeInt**)
   
-(省略可能)。 受け入れ可能な変換後の型のビット マスク。 ビット単位の **OR** 演算子 ( | ) を使用して、複数の使用可能な型を指定します。 この引数を省略すると、単一セルへの参照が **xltypeStr**、**xltypeNum**、**xltypeBool**、**xltypeErr**、**xltypeNil** (参照先セルが空の場合) の値型のいずれかに変換され、セルのブロックへの参照は **xltypeMulti** に変換されます。 これにより **xlCoerce** はセル値を検索する最も便利な方法になります。 
+(Optional). A bit-mask of the resulting types you are willing to accept. You should use the bitwise **OR** operator ( | ) to specify multiple possible types. If this argument is omitted, references to single cells are converted to one of the value types **xltypeStr**, **xltypeNum**, **xltypeBool**, **xltypeErr**, **xltypeNil** (if the referred-to cell is empty), and references to blocks of cells are converted to **xltypeMulti**. This makes **xlCoerce** the most convenient way to look up cell values. 
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 

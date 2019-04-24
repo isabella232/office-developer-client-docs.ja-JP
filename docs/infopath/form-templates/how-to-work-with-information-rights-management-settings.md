@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 4ad91898-b23e-4410-8839-a65259e53d37
 description: Microsoft InfoPath には、2 種類の Information Rights Management (IRM) 設定があります。1 つは InfoPath フォーム テンプレートへのアクセスを保護する設定、もう 1 つは入力されたフォームに含まれるフォーム データへのアクセスとその操作を制御する設定です。
-ms.openlocfilehash: 4e6fdac6a0b2b5cd6a29de948cc9dbbd01a407d8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 6f7317cfdc4e6bfc89482e813b1670c8b8861a6b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299791"
 ---
 # <a name="work-with-information-rights-management-settings"></a>Information Rights Management の設定を操作する
 
@@ -34,7 +34,7 @@ Microsoft InfoPath には、2 種類の Information Rights Management (IRM) 設�
     
 3. [ **資格情報の管理**] が表示されるまでスクロールして [ **追加**] をクリックします。
     
-4. **[OK]** をクリックします。
+4. [ **OK**] をクリックします。
     
 InfoPath の [ **資格情報の管理**] コマンドおよび [ **アクセス許可**] ダイアログ ボックスの使用方法の詳細については、InfoPath ヘルプで「アクセス制限のあるフォーム テンプレートを作成する」を参照してください。 
   
@@ -70,7 +70,7 @@ InfoPath の [ **資格情報の管理**] コマンドおよび [ **アクセス
 
 **UserPermissionCollection** クラスには次のプロパティと 1 つのメソッドがあります。 
   
-|**名前**|**説明**|
+|**[名前]**|**[説明]**|
 |:-----|:-----|
 |[ApplyPolicy](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Permission.ApplyPolicy.aspx) メソッド  <br/> |ポリシー テンプレート ファイルを使ってフォームにポリシーを適用します。  <br/> |
 |[DocumentAuthor](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Permission.DocumentAuthor.aspx) プロパティ  <br/> |現在のフォームの作成者を電子メール アドレス形式で取得または設定します。  <br/> |
@@ -86,7 +86,7 @@ InfoPath の [ **資格情報の管理**] コマンドおよび [ **アクセス
 
 **UserPermissionCollection** クラスには次のプロパティとメソッドがあります。 
   
-|**名前**|**説明**|
+|**[名前]**|**[説明]**|
 |:-----|:-----|
 |[Add](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermissionCollection.Add.aspx) メソッド (+3 オーバーロード)  <br/> |現在のフォームに新しいユーザーを追加し、オプションでアクセス許可および有効期限日を指定します。  <br/> |
 |[Remove](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermissionCollection.Remove.aspx) メソッド  <br/> |指定した **UserId** を持つ **UserPermission** オブジェクトをコレクションから削除します。  <br/> |
@@ -98,7 +98,7 @@ InfoPath の [ **資格情報の管理**] コマンドおよび [ **アクセス
 
 **UserPermission** クラスには次のプロパティと 1 つのメソッドがあります。 
   
-|**名前**|**説明**|
+|**[名前]**|**[説明]**|
 |:-----|:-----|
 |[Remove](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermission.Remove.aspx) メソッド  <br/> |現在の **UserPermission** オブジェクトをフォームのアクセス許可から削除します。  <br/> |
 |[ExpirationDate](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermission.ExpirationDate.aspx) プロパティ  <br/> |**UserPermission** クラスのインスタンスに関連するユーザーに割り当てられた、現在のフォームでのアクセス許可のオプションの有効期限日を取得または設定します。  <br/> |
@@ -109,7 +109,7 @@ InfoPath の [ **資格情報の管理**] コマンドおよび [ **アクセス
 
 ユーザーのアクセス許可は、[PermissionType](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.PermissionType.aspx) 列挙値を使用して設定または読み取られます。 
   
-|**名前**|**説明**|
+|**[名前]**|**[説明]**|
 |:-----|:-----|
 |**PermissionType.Change** <br/> |ユーザーによるフォームの表示、編集、コピー、および保存を許可しますが、印刷は許可しません。 **Read**、 **Edit**、 **Save**、および **Extract** のアクセス許可の組み合わせと同等です。  <br/> |
 |**PermissionType.Edit** <br/> |ユーザーによるフォームの編集を許可します。  <br/> |

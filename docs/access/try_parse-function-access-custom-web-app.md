@@ -1,5 +1,5 @@
 ---
-title: Try_Parse 関数 (カスタム web アプリケーションのアクセス)
+title: Try_Parse 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: ed35263c-b0ad-4269-9caa-c0164015e980
 description: 指定したアプリケーションのカルチャのデータ型にテキスト値を解析します。変換が無効な場合は Null を返します。
-ms.openlocfilehash: 3446e928d9772641f9aea7b956e142f995824b1e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5d201557607d2d18c36238d9658b705a6a49fda8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307799"
 ---
-# <a name="tryparse-function-access-custom-web-app"></a>Try_Parse 関数 (カスタム web アプリケーションのアクセス)
+# <a name="tryparse-function-access-custom-web-app"></a>Try_Parse 関数 (Access カスタム web アプリ)
 
 指定したアプリケーションのカルチャのデータ型にテキスト値を解析します。変換が無効な場合は Null を返します。
   
@@ -23,14 +23,14 @@ ms.locfileid: "19798756"
   
 ## <a name="syntax"></a>構文
 
- **Try_Parse**(*TextExpression*、*データ型*) 
+ **Try_Parse**(*textexpression*、 *DataType*) 
   
 **Try_Parse** 関数の引数は次のとおりです。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *TextExpression*  <br/> |指定したデータ型に解析する、書式設定された値を表す文字列式を指定します。  <br/> |
-| *DataType*  <br/> |*TextExpression*を解析するためにデータを入力します。  <br/> |
+| *TextExpression*  <br/> |指定したデータ型になっているか解析される対象の、書式設定された値を表すテキスト式。  <br/> |
+| *DataType*  <br/> |*textexpression*を解析するデータ型。  <br/> |
    
 ## <a name="remarks"></a>解説
 

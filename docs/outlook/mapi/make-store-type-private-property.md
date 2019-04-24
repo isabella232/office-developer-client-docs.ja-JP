@@ -1,5 +1,5 @@
 ---
-title: ストアの種類をプライベート プロパティにする
+title: ストアの種類をプライベートプロパティに設定する
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,47 +12,47 @@ api_type:
 - COM
 ms.assetid: 7f489f55-46d4-8a88-6ebe-9db6446e69a5
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2d927b00391725d8804e41b66b1ec8c384f98e7c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: da55afcabb1354959a71d6f10472c05540427b19
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32298468"
 ---
-# <a name="make-store-type-private-property"></a>ストアの種類をプライベート プロパティにする
+# <a name="make-store-type-private-property"></a>ストアの種類をプライベートプロパティに設定する
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-セカンダリ ・ ストアは、プライベートとして扱います。
+セカンダリストアをプライベートとして扱います。
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|公開されます。  <br/> |[IMsgStore: IMAPIProp](imsgstoreimapiprop.md)オブジェクト  <br/> |
-|によって作成されます。  <br/> |ストア プロバイダー  <br/> |
-|によってアクセスします。  <br/> |Outlook およびその他のクライアント  <br/> |
+|公開:  <br/> |[IMsgStore: imapiprop](imsgstoreimapiprop.md)オブジェクト  <br/> |
+|作成者:  <br/> |ストアプロバイダー  <br/> |
+|アクセス先:  <br/> |Outlook およびその他のクライアント  <br/> |
 |プロパティの種類:  <br/> |PT_BOOLEAN  <br/> |
-|アクセスの種類:  <br/> |値の取得および設定が可能です。  <br/> |
+|アクセスの種類:  <br/> |読み取り/書き込み  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-ストア機能を提供するストア プロバイダーを実装する必要があります[IMsgStore: IMAPIProp](imsgstoreimapiprop.md) 、 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)の呼び出しに渡されたこれらのプロパティのいずれかのプロパティの有効なタグを返すとします。 これらのプロパティのいずれかのプロパティ タグが[IMAPIProp::GetProps](imapiprop-getprops.md)に渡されると、ストア プロバイダーを使用、正しいプロパティ値を返す必要があります。 ストア プロバイダーには、取得、またはこれらのプロパティを設定するには、 [HrGetOneProp](hrgetoneprop.md)と[HrSetOneProp](hrsetoneprop.md)を呼び出すことができます。 
+ストアの機能を提供するには、ストアプロバイダーが[IMsgStore: imapiprop](imsgstoreimapiprop.md)を実装し、 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)呼び出しに渡されるこれらのプロパティに対して有効なプロパティタグを返す必要があります。 これらのプロパティのいずれかのプロパティタグが[imapiprop:: GetProps](imapiprop-getprops.md)に渡されると、ストアプロバイダーは、適切なプロパティ値を返す必要があります。 ストアプロバイダーは、 [hrgetoneprop](hrgetoneprop.md)および[hrgetoneprop](hrsetoneprop.md)を呼び出して、これらのプロパティを取得または設定できます。 
   
-このプロパティの値を取得するには、クライアントはまず[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)を使用して、プロパティ タグを取得して、値を取得する[IMAPIProp::GetProps](imapiprop-getprops.md)でこのプロパティのタグを指定する必要があります。 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)を呼び出すときは、 _lppPropNames_の入力パラメーターで示される[MAPINAMEID](mapinameid.md)構造体の次の値を指定します。
+このプロパティの値を取得するには、クライアントはまず[imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)を使用してプロパティタグを取得し、次に[imapiprop:: GetProps](imapiprop-getprops.md)でこのプロパティタグを指定して値を取得する必要があります。 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)を呼び出す場合は、入力パラメーター _lpppropnames_でポイントされている[mapinameid](mapinameid.md)構造に次の値を指定します。
   
 |||
 |:-----|:-----|
-|lpGuid。  <br/> |PS_PUBLIC_STRINGS  <br/> |
-|ulKind。  <br/> |MNID_STRING  <br/> |
-|Kind.lpwstrName。  <br/> |L"urn: スキーマ-マイクロソフト-com:office:outlook #storetypeprivate」  <br/> |
+|lpguid:  <br/> |PS_PUBLIC_STRINGS  <br/> |
+|ulkind:  <br/> |MNID_STRING  <br/> |
+|種類が lpwstrname:  <br/> |L "urn: スキーマ-microsoft-com: office: outlook # storetypeprivate"  <br/> |
    
-ストア プロバイダーは、ユーザーのセカンダリ ・ ストアの場合、プライベートとして扱うことがこのプロパティを使用できます。 
+ストアプロバイダーは、このプロパティを使用して、ユーザーのセカンダリストアである場合に、Outlook でこのプロパティをプライベートとして扱うことができます。 
   
-既定では、Outlook として扱われますセカンダリ ・ ストアと同様、代理人のストアで、セカンダリ ・ ストア内の項目のみされた場合は、ユーザーに具体的にはプライベートとしてプライベート。 このプロパティが**true**の場合、セカンダリ ・ ストアから削除されたアイテムは、プライマリ ストアで**削除済みアイテム**フォルダーに移動されます。 プライベートとしてマークされたアイテムは表示されません。 下書きは、プライマリ ストアで [下書き] フォルダーに格納されます。 
+既定では、Outlook は代理ストアと同じ方法でセカンダリストアを処理し、セカンダリストア内のアイテムはプライベートとしてマークされている場合にのみプライベートとして扱われます。 このプロパティが**true**の場合、セカンダリストアから削除されたアイテムは、プライマリストアの [**削除済みアイテム**] フォルダーに移動されます。 親展とマークされたアイテムは表示されません。 下書きは、プライマリストアの [下書き] フォルダーに保存されます。 
   
-Outlook のバージョンの Microsoft Office Outlook 2003 Service Pack 1 より前の場合、またはその値が**false**の場合、このプロパティは無視されます。
+outlook のバージョンが Microsoft Office Outlook 2003 Service Pack 1 より前の場合、またはその値が**false**の場合、このプロパティは無視されます。
   
 

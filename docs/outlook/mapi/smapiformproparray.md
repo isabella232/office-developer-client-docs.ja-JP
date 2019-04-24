@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: bb243bc4-4974-4ad6-aa76-2426c1ebe84b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 389984f9d98ece6b2040edd741e3028fd7d766ed
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 50b6581dec8211968a49b204c6d9b1ba1c65bb62
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309514"
 ---
 # <a name="smapiformproparray"></a>SMAPIFormPropArray
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[SMAPIFormProp](smapiformprop.md)構造体の配列が含まれています。 
+[smapiformprop](smapiformprop.md)構造体の配列を格納します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
 |関連するマクロ:  <br/> |[CbMAPIFormPropArray](cbmapiformproparray.md) <br/> |
    
 ```cpp
@@ -44,21 +44,21 @@ typedef struct
 
 ## <a name="members"></a>Members
 
- **cProps**
+ **cprops**
   
-> **AFormProp**メンバーの配列の名前付きプロパティの数。 
+> **aformprop**メンバーの配列内の名前付きプロパティの数。 
     
- **ulPad**
+ **ulpad**
   
->  適切なアライメントを保証するために使用される埋め込みの 8 バイトです。 
+>  正しいアラインメントを保証するために使用する8バイトのパディング。 
     
- **aFormProp**
+ **aformprop**
   
-> フォームのプロパティの配列です。
+> フォームプロパティの配列。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**SMAPIFormPropArray**構造体は次の方法をパラメーターとして渡されます。 
+**smapiformproparray**の構造体は、次のメソッドにパラメーターとして渡されます。 
   
 - [IMAPIFormInfo::CalcFormPropSet](imapiforminfo-calcformpropset.md)
     

@@ -1,5 +1,5 @@
 ---
-title: 不一致データ ブロック (カスタム web アプリケーションのアクセス)
+title: LookupRecord データブロック (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,37 +7,37 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 001899f7-5b1a-4c0b-a0e4-e01985eea818
 description: LookupRecord データ ブロックは、特定のレコードに対して一連のアクションを実行します。
-ms.openlocfilehash: 7012fecdf0e73647b2b8177473dd8b5540b5fcca
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a6d89b1700a47f88086fd8c4e7b594b90425912c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304271"
 ---
-# <a name="lookuprecord-data-block-access-custom-web-app"></a>不一致データ ブロック (カスタム web アプリケーションのアクセス)
+# <a name="lookuprecord-data-block-access-custom-web-app"></a>LookupRecord データブロック (Access カスタム web アプリ)
 
-**LookupRecord** データ ブロックは、特定のレコードに対して一連のアクションを実行します。 
+A **LookupRecord** data block performs a set of actions on a specific record. 
   
 > [!IMPORTANT]
-> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 > [!NOTE]
-> [!メモ] **LookupRecord** データ ブロックは、データ マクロでのみ使用できます。 
+> LookupRecord  データ ブロックは、データ マクロでのみ使用できます。 
   
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
 **LookupRecord** アクションの引数は次のとおりです。 
   
 |**引数**|**必須**|**説明**|
 |:-----|:-----|:-----|
-| _で_ <br/> |はい  <br/> |操作対象のレコードを識別する文字列です。 ** 引数は、テーブル、選択クエリ、または SQL ステートメントの名前を含めることができます。  <br/> |
-| _Where Condition_ <br/> |いいえ  <br/> |**不一致**のデータ ブロックのデータの範囲を制限するために使用する文字列式を実行するとします。 抽出条件を指定する SQL 式の WHERE 句にはあります。 基準を省略すると、**不一致**のデータ ブロック*に*引数で指定されたドメイン全体で動作します。 条件に含まれる任意のフィールドは、フィールド*内*にもあります。  <br/> |
-| _エイリアス_ <br/> |いいえ  <br/> |** 引数で指定されたレコードに別の名前を提供する文字列です。 あいまいな参照を防ぐへの参照のテーブル名を短くには、よく使用されます。 *エイリアス*が指定されていない場合、テーブルまたはクエリの名前がエイリアスとして使用します。  <br/> |
+| _順番_ <br/> |はい  <br/> |操作するレコードを識別する文字列を指定します。 引数*In に*は、テーブル名、選択クエリ、または SQL ステートメントを含めることができます。  <br/> |
+| Where Condition/Where 条件式 <br/> |いいえ  <br/> |**LookupRecord** データ ブロックを適用するデータの範囲を制限する文字列式を指定します。 たとえば、多くの場合、抽出条件は SQL 式の WHERE 句と同じ役割を果たします (ただし WHERE という語は使用しません)。 criteria を省略すると、引数*In で*指定したドメイン全体で**LookupRecord**データブロックが動作します。 抽出条件に含まれているフィールドは、のフィールドで** もある必要があります。  <br/> |
+| _Alias_ <br/> |いいえ  <br/> |引数*In で*指定されたレコードの代替名を示す文字列型 (string) の値を使用します。 以降の参照用にテーブル名を短くして、あいまいな参照を防ぐ目的でよく使用されます。 *alias*が指定されていない場合は、テーブル名またはクエリ名がエイリアスとして使用されます。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-** *条件*引数で指定した抽出条件は、複数のレコードを指定した場合、**不一致**のデータ ブロックはに対してのみ動作の最初のレコード。 
+If the criteria specified by the  *In*  and  *Where Condition*  arguments specifies more than one record, then the **LookupRecord** data block will only operate on the first record. 
   
-レコード*条件*を満たしているないいるかどうか*に*レコードが存在しない、する場合、**不一致**は**Null**値を含むすべてのフィールドを空白のレコードを作成します。 
+If no record satisfies  *Where Condition*  or if  *In*  contains no records, then **LookupRecord** creates a blank record in which all of the fields contain a **Null** value. 
   
 

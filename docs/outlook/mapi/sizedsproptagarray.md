@@ -12,23 +12,23 @@ api_type:
 - COM
 ms.assetid: 1d2dc6e9-735d-4b5b-af6f-adf6a32a666d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 363a85e1c6f111936b16e471eda6b9f962f8b65d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f873ad5234460f9f1781c7427b60d285f7486196
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282699"
 ---
 # <a name="sizedsproptagarray"></a>SizedSPropTagArray
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロパティ タグの指定された番号を格納する名前付きの[SPropTagArray](sproptagarray.md)構造を作成します。 
+指定した数のプロパティタグを含む名前付きの[SPropTagArray](sproptagarray.md)構造を作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |**SPropTagArray** <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |**SPropTagArray** <br/> |
    
 ```cpp
 SizedSPropTagArray (_ctag, _name)
@@ -38,17 +38,17 @@ SizedSPropTagArray (_ctag, _name)
 
 __ctag_
   
-> 新しい構造体に含まれるプロパティ タグの数。
+> 新しい構造に含めるプロパティタグの数。
     
-__名_
+__名前_
   
-> 新しい構造体の名前です。
+> 新しい構造の名前を指定します。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**SizedSPropTagArray**マクロを使用すると、明示的な境界を持つプロパティ タグ配列を作成します。 
+**SizedSPropTagArray**マクロを使用して、明示的な境界を持つプロパティタグ配列を作成します。 
   
-**SPropTagArray**構造体へのポインターとしての**SizedSPropTagArray**マクロの結果を新しい構造体を使用するには、次のキャストを実行します。 
+**SizedSPropTagArray**マクロの結果として得られる新しい構造を**SPropTagArray**構造体へのポインターとして使用するには、次のキャストを実行します。 
   
 ```cpp
 lpPropTagArray = (LPPropTagArray) &SizedSPropTagArray;
@@ -58,5 +58,5 @@ lpPropTagArray = (LPPropTagArray) &SizedSPropTagArray;
 ## <a name="see-also"></a>関連項目
 
 - [SPropTagArray](sproptagarray.md)
-- [構造体に関連するマクロ](macros-related-to-structures.md)
+- [構造に関連するマクロ](macros-related-to-structures.md)
 

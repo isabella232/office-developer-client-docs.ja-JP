@@ -1,5 +1,5 @@
 ---
-title: C API コールバック関数 Excel4、Excel12
+title: C API �R�[���o�b�N�֐� Excel4�AExcel12
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -9,12 +9,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 0f3ae86d-329a-4177-a65b-6288c248297e
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 221ea4c9c706d11acd31d3f2870d326a7189d299
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 5fe5eb7486f12d75ce7e42ad57141480ec735c54
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304180"
 ---
 # <a name="c-api-callback-functions-excel4-excel12"></a>C API コールバック関数 Excel4、Excel12
 
@@ -26,7 +26,7 @@ ms.locfileid: "19798757"
     
 - 引数の配列フォーム (**Excel4v/Excel12v**)
     
-引数がこれらのコールバックに渡される方法を除いて、2 つのフォームは機能的に同等です。 両方のフォームの基本概念については、「[Excel4/Excel12](excel4-excel12.md)」で詳しく説明されています。 「[Excel4v/Excel12v](excel4v-excel12v.md)」では、このフォームに関するその他の問題が取り上げられています。 
+Except for the way in which arguments are passed to these callbacks, the two forms are functionally equivalent. The basic concepts for both forms are fully described in [Excel4/Excel12](excel4-excel12.md). [Excel4v/Excel12v](excel4v-excel12v.md) covers other issues about this form. 
   
 ## <a name="in-this-section"></a>このセクションの内容
 

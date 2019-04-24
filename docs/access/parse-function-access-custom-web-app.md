@@ -1,5 +1,5 @@
 ---
-title: 解析関数 (カスタム web アプリケーションのアクセス)
+title: Parse 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 09dee0ae-89b2-449c-a3c8-d6b270710b64
 description: アプリケーションのカルチャを使用して、テキスト値を解析し、その値を特定の型で戻します。
-ms.openlocfilehash: fa3c453f1faeadca173aaace513ee5ba9115c5fe
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d664985ab1d7a7d33b99c52d5bab4aa714767e40
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308058"
 ---
-# <a name="parse-function-access-custom-web-app"></a>解析関数 (カスタム web アプリケーションのアクセス)
+# <a name="parse-function-access-custom-web-app"></a>Parse 関数 (Access カスタム web アプリ)
 
 アプリケーションのカルチャを使用して、テキスト値を解析し、その値を特定の型で戻します。
   
@@ -23,16 +23,16 @@ ms.locfileid: "19798716"
   
 ## <a name="syntax"></a>構文
 
- **解析**(*TextExpression*、*データ型*) 
+ **Parse**(*textexpression*、 *DataType*) 
   
 **Parse** 関数には、以下の引数があります。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *TextExpression*  <br/> |指定したデータ型に解析する、書式設定された値を表す文字列式を指定します。  <br/> |
+| *TextExpression*  <br/> |指定したデータ型になっているか解析される対象の、書式設定された値を表すテキスト式。  <br/> |
 | *DataType*  <br/> |結果として要求されるデータ型を表すリテラル値。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 **Parse** は、文字列から日付/時刻または数値に型を変換する場合にのみ使用します。一般的な型変換では、 **Convert** 関数を使用します。文字列値の解析には、一定のパフォーマンス オーバーヘッドが発生することに注意してください。 
   

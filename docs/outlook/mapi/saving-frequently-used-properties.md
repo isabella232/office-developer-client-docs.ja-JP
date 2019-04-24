@@ -1,5 +1,5 @@
 ---
-title: よく使用されるプロパティの保存
+title: 頻繁に使用されるプロパティの保存
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,22 +7,22 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: a8d4d575-7aa0-4542-91e2-322a6e400551
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5ef0da0c617bffc3820c7cd43f66ea07be2ad4a9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: e32ed3388e95d32a4857a933fb735d170dd71688
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283108"
 ---
-# <a name="saving-frequently-used-properties"></a>よく使用されるプロパティの保存
+# <a name="saving-frequently-used-properties"></a>頻繁に使用されるプロパティの保存
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-時間とリソースを取得して、頻繁にアクセスされるデータを格納することによってパフォーマンスを向上します。 余分なメモリを使用する場合があります検索を繰り返すための優れた選択肢です。 このデータを格納するキャッシュを作成するときの注意とお手入れを使用します。 設計が不十分なキャッシュのパフォーマンスに影響悪影響を及ぼすことに留意してください。
+時間とリソースを取得し、頻繁にアクセスするデータを保存することによって、パフォーマンスを向上させます。 その他のメモリを使用すると、繰り返し取得するより良いオプションになることがあります。 このデータを格納するためのキャッシュを作成するときは、注意して使用してください。 適切に設計されていないキャッシュは、パフォーマンスに悪影響を及ぼす可能性があることに注意してください。
   
-たとえば、最も個人間メッセージ (IPM) クライアントを表示し、通常のセッション中に何度も IPM サブツリーのフォルダーを開く必要があります。 これらのフォルダーのそれぞれのエントリの識別子を格納することによってパフォーマンスを向上できます。 
+たとえば、ほとんどの個人間メッセージ (ipm) クライアントは、一般的なセッションの間に、フォルダーの ipm サブツリーを表示して開く必要があります。 これらの各フォルダーのエントリ識別子を格納することによって、パフォーマンスを向上させることができます。 
   
 

@@ -1,5 +1,5 @@
 ---
-title: Lower 関数 (カスタム web アプリケーションのアクセス)
+title: Lower 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: d2607bdd-6694-4b37-983e-020e175d230a
 description: 大文字データを小文字に変換した後の文字式を返します。
-ms.openlocfilehash: a0cccdc524ab11e7126395278b70d7b765d0300c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 17d53706eb6c6089e9f7f99a4b26f10776b9cb08
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301814"
 ---
-# <a name="lower-function-access-custom-web-app"></a>Lower 関数 (カスタム web アプリケーションのアクセス)
+# <a name="lower-function-access-custom-web-app"></a>Lower 関数 (Access カスタム web アプリ)
 
 大文字データを小文字に変換した後の文字式を返します。
   
@@ -23,12 +23,12 @@ ms.locfileid: "19798586"
   
 ## <a name="syntax"></a>構文
 
- **下**(*TextExpression*) 
+ **下げる**(*textexpression*) 
   
 **Lower** 関数には、以下の引数があります。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *TextExpression*  <br/> |文字列式を指定します。  <br/> |
+| *TextExpression*  <br/> |文字列式。  <br/> |
    
 

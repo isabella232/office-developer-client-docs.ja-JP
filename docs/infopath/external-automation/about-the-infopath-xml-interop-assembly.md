@@ -4,25 +4,25 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- msxml の相互運用機能 [2007]、infopath InfoPath 2007 では、XML のプライマリ相互運用機能アセンブリ、InfoPath XML 相互運用機能アセンブリ
+- msxml 相互運用機能 [infopath 2007], infopath 2007, xml プライマリ相互運用機能アセンブリ, infopath xml 相互運用機能アセンブリ
 localization_priority: Normal
 ms.assetid: fb28659b-8a71-4f43-9121-2c748fb2c5e1
 description: InfoPath XML 相互運用機能アセンブリは、マネージ コードと、InfoPath を自動化する外部のアプリケーションからの Microsoft XML Core Services (MSXML) が公開する COM サーバーとの間の相互運用性をサポートするために提供されます。
 ms.openlocfilehash: 8d47fb58c5133fa14ac78aa8fb29278b70c26abb
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303781"
 ---
 # <a name="about-the-infopath-xml-interop-assembly"></a>InfoPath XML 相互運用機能アセンブリについて
 
 InfoPath XML 相互運用機能アセンブリは、マネージ コードと、InfoPath を自動化する外部のアプリケーションからの Microsoft XML Core Services (MSXML) が公開する COM サーバーとの間の相互運用性をサポートするために提供されます。
 
-InfoPath セットアップ プログラムで [ **.NET プログラミング サポート**] オプションは、次の 3 つの相互運用機能アセンブリをインストールします。 相互運用アセンブリとは、マネージ コードとアンマネージ コードの仲介役として機能する .NET アセンブリで、COM オブジェクトのメンバーを、対応する .NET マネージ メンバーにマップします。 Microsoft.Office.Interop.InfoPath.Xml.dll、それらのアセンブリのいずれかの Microsoft XML Core Services (MSXML) の COM サーバーによって公開されているメンバーと協力するために使用される[Microsoft.Office.Interop.InfoPath.Xml](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.infopath.xml?view=infopath-external)の名前空間のメンバーが用意されています外部アプリケーションからは、マネージ コードを使用して InfoPath を自動化します。 
+InfoPath セットアッププログラムの **.net プログラミングサポート**オプションは、3つの相互運用機能アセンブリをインストールします。 相互運用アセンブリとは、マネージ コードとアンマネージ コードの仲介役として機能する .NET アセンブリで、COM オブジェクトのメンバーを、対応する .NET マネージ メンバーにマップします。 これらのアセンブリの1つには、microsoft xml Core Services (MSXML) の COM サーバーによって[](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.infopath.xml?view=infopath-external)公開されているメンバーを操作するために使用される、名前空間のメンバーが含まれています。マネージコードを使用して InfoPath を自動化する外部アプリケーションから。 
   
 > [!NOTE]
-> InfoPath の外部オートメーション プロジェクトに必要な Microsoft.Office.Interop.InfoPath.dll と Microsoft.Office.Interop.InfoPath.Xml.dll の相互運用機能アセンブリへの参照を手動で確立する必要があります。 外部オートメーションの詳細については、[外部オートメーションのシナリオと例](external-automation-scenarios-and-examples.md)を参照してください。 
+> infopath 外部オートメーションプロジェクトに必要な、microsoft office との相互運用機能アセンブリへの参照は、手動で設定する必要があります (これについては、「」を参照してください)。 外部オートメーションの詳細については、「[外部オートメーションのシナリオと例](external-automation-scenarios-and-examples.md)」を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

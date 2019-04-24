@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 108f9bd0-c80f-4790-a572-da2f571a7d85
 description: InfoPath オブジェクト モデルに用意されている Application クラスの MachineOnlineState プロパティを使用すると、ユーザーのコンピューターがネットワークに接続されているかどうかをフォーム コードで確認できます。MachineOnlineState プロパティの値を確認することにより、接続の状態に応じてフォーム コードで異なる処理を実行できます。
-ms.openlocfilehash: fcdaae31dd6a0c76cf1c453f267be430a2b34bba
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: eb2903c2445a61be803c0d7a2f5ddd7ac7a912ad
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299819"
 ---
 # <a name="work-with-offline-solutions"></a>オフライン ソリューションを操作する
 
@@ -160,5 +160,5 @@ InfoPath オブジェクト モデルに用意されている [Application](http
     
 ## <a name="see-also"></a>関連項目
 
-- [オフラインで使用するフォーム テンプレートをデザインする](http://office.microsoft.com/en-us/infopath/HA102117391033.aspx?pid=CH100341121033)
+- [オフラインで使用するフォーム テンプレートをデザインする](https://support.office.com/en-us/article/design-a-form-template-for-offline-use-3ab8de84-babc-4bd7-9215-66d308546be4)
 

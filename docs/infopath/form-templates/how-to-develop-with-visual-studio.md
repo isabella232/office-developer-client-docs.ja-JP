@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: e39d633d-d8fb-4e2f-a396-6cb50beb8c3e
 description: Visual Studio 2012 で開発したマネージ コードを使用して InfoPath フォームを拡張することによって、フォームの機能を大幅に強化できます。フォームを拡張したら、コードを含むフォームを SharePoint Server 2013 のフォーム ライブラリに発行できます。
 ms.openlocfilehash: 1c67b85823fe567b494366a505be5dad51d20b32
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25401098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300288"
 ---
 # <a name="develop-with-visual-studio"></a>Visual Studio で開発する
 

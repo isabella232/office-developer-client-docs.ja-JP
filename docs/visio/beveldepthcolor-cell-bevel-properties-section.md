@@ -6,25 +6,25 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1665774f-4049-4eda-ba7a-62314286699e
-description: RGB 値として、またはアクティブなテーマでの面取りの奥行、色を決定します。
-ms.openlocfilehash: b3b10ad220367a504a3df5c90453524a1c5fe59d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: ベベルの奥行きの色を RGB 値で指定します。または、アクティブなテーマによって決定されます。
+ms.openlocfilehash: 027b7b8675666b82d0ae26259fe77470708628c2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285141"
 ---
 # <a name="beveldepthcolor-cell-bevel-properties-section"></a>[BevelDepthColor] セル ([ベベルのプロパティ] セクション)
 
-RGB 値として、またはアクティブなテーマでの面取りの奥行、色を決定します。
+ベベルの奥行きの色を RGB 値で指定します。または、アクティブなテーマによって決定されます。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 別の数式から、**Cell** エレメントの **N** 属性の値によって、または **CellsU** プロパティを使用したプログラムから、名前によって [**BevelDepthColor**] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | BevelDepthColor  <br/> |
+| セル名:  <br/> | [beveldepthcolor]  <br/> |
    
 プログラムから、インデックスによって [**BevelDepthColor**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

@@ -7,19 +7,19 @@ keywords:
 - security policy deployment package [infopath 2007],URLs [InfoPath 2007], assigning FullTrust,code access security [InfoPath 2007],UNCs [InfoPath 2007], assigning FullTrust,CAS [InfoPath 2007],security [InfoPath 2007], configuring,code groups [InfoPath 2007],FullTrust [InfoPath 2007], assigning to UNCs,FullTrust [InfoPath 2007], assigning to URLs
 localization_priority: Normal
 ms.assetid: 24d1a322-581f-497e-b97b-bd02c4516551
-description: .NET 構成スナップインを使用して、InfoPath マネージ コード フォーム テンプレートに適用されるアクセス許可セットをカスタマイズできます。
+description: .NET 構成スナップインを使用すると、InfoPath マネージ コード フォーム テンプレートに適用されるアクセス許可セットをカスタマイズできます。
 ms.openlocfilehash: 77f3546d976bb5ea353aa3fbe58ba7af6cd92a6d
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25391417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300162"
 ---
 # <a name="configure-security-settings-for-form-templates-with-code"></a>コードを含むフォーム テンプレートのセキュリティ設定を構成する
 
 .NET 構成スナップインを使用して、InfoPath マネージ コード フォーム テンプレートに適用されるアクセス許可セットをカスタマイズできます。
   
-InfoPath でホストされている共通言語ランタイム (CLR) は、All_Code グループ内の *InfoPath フォーム テンプレート*という名前の事前定義コード グループを検索します。 CLR は、そのグループで定義されているアクセス許可セットを、フォーム コードが実行されるアプリケーション ドメイン (AppDomain) に適用します。 これにより、InfoPath マネージ コード フォーム テンプレートに付与されるアクセス許可セットをカスタマイズできます。 たとえば、https://MySite からダウンロードしたフォーム テンプレートに、Active Directory へのアクセス許可を付与できます。 
+The common language runtime (CLR) hosted by InfoPath will look for a predefined code group named  *InfoPath Form Templates*  at the Machine policy level under the All_Code group. The CLR will apply the permission sets that are defined under that group to the application domain (AppDomain) where the form code runs. This enables you to customize the permission sets that are granted to InfoPath managed code form templates. For example, you can grant a form template downloaded from https://MySite permission to access the Active Directory. 
   
 .NET 構成スナップインで定義したカスタム セキュリティ ポリシーを適用するには、フォーム テンプレートが実行されるすべてのクライアント コンピューター上にポリシーを配置する必要があります。
   

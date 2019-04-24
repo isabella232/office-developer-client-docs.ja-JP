@@ -1,5 +1,5 @@
 ---
-title: Month 関数 (カスタム web アプリケーションのアクセス)
+title: Month 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5df43594-a434-4fb7-8109-e5cf0401ae09
 description: 指定された日付の月を表す整数を返します。
-ms.openlocfilehash: 5e4a583a5a299456e57b90d7cef41a32b0a6ffba
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0ca7059a2fd6dad1f9790ad6f4eafe7affa014dd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308142"
 ---
-# <a name="month-function-access-custom-web-app"></a>Month 関数 (カスタム web アプリケーションのアクセス)
+# <a name="month-function-access-custom-web-app"></a>Month 関数 (Access カスタム web アプリ)
 
 指定された日付の月を表す整数を返します。
   
@@ -31,10 +31,10 @@ ms.locfileid: "19798713"
 |:-----|:-----|
 | *Date*  <br/> |日付/時刻の値に解決可能な式。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
  **Month** は、 **DatePart** (month, date) と同じ値を返します。 
   
-*日付*に時刻部分だけが含まれている場合、戻り値は 1、基本の月です。 
+If  *Date*  contains only a time part, the return value is 1, the base month. 
   
 

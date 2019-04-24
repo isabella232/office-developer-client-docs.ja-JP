@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: af8eca2e-ba9a-4c37-94af-662815fff518
 description: InfoPath 2003 Toolkit for Visual Studio に含まれるツールキットを使用して InfoPath 2003 マネージ コード フォーム テンプレートを作成した場合に、InfoPath 2003 との互換性を維持するには、Microsoft InfoPath および Visual Studio 2012 でフォーム テンプレート プロジェクト開きます。これにより、引き続きそのフォーム テンプレート プロジェクトを使用して開発を進めることができます。
-ms.openlocfilehash: 7ca6a676c9db740b6b176783273a523715032387
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 0acbfab4a83a71d94a1c70a667a963056f5b9a38
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300113"
 ---
 # <a name="open-or-convert-a-form-template-created-with-the-infopath-toolkit"></a>InfoPath Toolkit で作成したフォーム テンプレートを開くか変換する
 
@@ -29,7 +29,7 @@ InfoPath 2003 Toolkit for Visual Studio に含まれるツールキットを使�
     
 2. [ **デザイン モードで開く**] ダイアログ ボックスで、InfoPath Toolkit フォーム テンプレート プロジェクトが保存されているプロジェクト フォルダーに移動します。 
     
-    このフォルダーは、既定ではプロジェクトを作成したコンピューター上の `C:\Users\` *username* `\Documents\Visual Studio Projects` 内にあります。 または、このフォルダーを InfoPath が Visual Studio 2012 プロジェクトを格納している場所 (既定では `C:\Users\` *username* `\Documents\InfoPath Projects`) に移動することもできます。
+    By default, this will be a folder in  `C:\Users\` *username*  `\Documents\Visual Studio Projects` on the computer where the project was created. Or, you can move the folder to the location where InfoPath stores Visual Studio 2012 projects, which by default is  `C:\Users\` *username*  `\Documents\InfoPath Projects`
     
 3. manifest.xsf という名前のファイルをクリックし、[ **開く**] をクリックします。
     
@@ -57,7 +57,7 @@ InfoPath 2003 Toolkit for Visual Studio に含まれるツールキットを使�
     
 3. [ **デザイン モードで開く**] ダイアログ ボックスで、InfoPath Toolkit フォーム テンプレート プロジェクトが保存されているプロジェクト フォルダーに移動します。 
     
-    このフォルダーは、既定ではプロジェクトを作成したコンピューター上の `C:\Users\` *username* `\Documents\Visual Studio Projects` 内にあります。 または、このフォルダーを InfoPath が Visual Studio 2012 プロジェクトを格納している場所 (既定では `C:\Users\` *username* `\Documents\InfoPath Projects`) に移動することもできます。
+    By default this will be a folder in  `C:\Users\` *username*  `\Documents\Visual Studio Projects` on the computer where the project was created. Or, you can move the folder to the location where InfoPath stores Visual Studio 2012 projects, which by default is  `C:\Users\` *username*  `\Documents\InfoPath Projects`
     
 4. manifest.xsf という名前のファイルをクリックし、[ **開く**] をクリックします。
     

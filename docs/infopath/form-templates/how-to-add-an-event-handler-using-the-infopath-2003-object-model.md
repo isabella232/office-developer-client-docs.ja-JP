@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 0520df55-2d91-4cc5-be31-82144a2db4f6
 description: InfoPath 2003 オブジェクト モデルと互換性のあるフォーム テンプレート プロジェクトにイベント ハンドラー関数を追加するためのメニュー コマンドは、その他の種類のフォーム テンプレートと実質的に同一です。
 ms.openlocfilehash: 8533b6bc11dccdad9d0f05de35406ad3cf68eacd
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303669"
 ---
 # <a name="add-an-event-handler-using-the-infopath-object-model"></a>InfoPath オブジェクト モデルを使用してイベント ハンドラーを追加する
 

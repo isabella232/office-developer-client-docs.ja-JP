@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 87ddbc35-8577-0a96-20b8-aa7734764c5b
 description: 図形を含む、指定されたリスト コンテナー図形のシート参照を返します。
-ms.openlocfilehash: 75c765fab2d287c2da83a659dbbf070d29a9d325
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 748a248f68345e97e97ca90a4603b6e164a551c4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284082"
 ---
 # <a name="listsheetref-function"></a>LISTSHEETREF 関数
 
@@ -25,19 +25,19 @@ ms.locfileid: "19805750"
   
 ## <a name="syntax"></a>構文
 
-LISTMEMBERCOUNT()
+LISTMEMBERCOUNT ()
   
 ### <a name="return-value"></a>戻り値
 
 シェイプシート参照
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 図形がリスト メンバーではない場合、LISTSHEETREF 関数は #REF! を返します。
   
 ## <a name="example"></a>例
 
-LISTSHEETREF(1)!Height 
+listsheetref (1)!寸法 
   
 図形を含むリスト コンテナー図形の [Height] セルの値を返します。 
   

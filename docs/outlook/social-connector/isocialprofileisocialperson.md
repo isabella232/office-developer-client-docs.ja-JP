@@ -1,5 +1,5 @@
 ---
-title: ISocialProfile ISocialPerson
+title: i社会 alprofile i入力者
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,33 +7,33 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 4dbfdb6c-a930-4efb-85c3-dc2757ddcf83
-description: ユーザーのログオンを表します。
-ms.openlocfilehash: 61ff73547cda864142b81d74b14fb5fb65062e8d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: ログオンしているユーザーを表します。
+ms.openlocfilehash: 8fccb87ebc2745a12545d0c88127be0651ab8620
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285864"
 ---
 # <a name="isocialprofile--isocialperson"></a>ISocialProfile : ISocialPerson
 
-ユーザーのログオンを表します。 
+ログオンしているユーザーを表します。 
   
 ## <a name="members"></a>Members
 
-次の表は、 **ISocialProfile**インターフェイスで使用可能なメンバーを示します。 
+次の表に、 **iare alprofile**インターフェイスで使用できるメンバーを示します。 
   
-|**名前**|**メンバーの種類**|**説明**|
+|**Name**|**メンバーの種類**|**説明**|
 |:-----|:-----|:-----|
-|[AreFriendsOrColleagues](isocialprofile-arefriendsorcolleagues.md) <br/> |メソッド  <br/> |指定したユーザーを友人かどうかを判断します。  <br/> |
-|[GetActivitiesOfFriendsAndColleagues](isocialprofile-getactivitiesoffriendsandcolleagues.md) <br/> |メソッド  <br/> |Outlook ソーシャル コネクタ 2013 以降、このメソッドは廃止されました。  <br/> |
+|[arefriendsorcolleagues 仲間](isocialprofile-arefriendsorcolleagues.md) <br/> |メソッド  <br/> |指定したユーザーがフレンドであるかどうかを判断します。  <br/> |
+|[GetActivitiesOfFriendsAndColleagues](isocialprofile-getactivitiesoffriendsandcolleagues.md) <br/> |メソッド  <br/> |このメソッドは、Outlook Social Connector 2013 以降では廃止されました。  <br/> |
 |[SetStatus](isocialprofile-setstatus.md) <br/> |メソッド  <br/> |このメソッドは現在サポートされていません。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-Outlook ソーシャル コネクタ (OSC) プロバイダーには、OSC と通信するには、このインターフェイスを実装しなければなりません。
+Outlook Social Connector (.osc) プロバイダーは、このインターフェイスを実装して、.osc と通信します。
   
 ## <a name="see-also"></a>関連項目
 
-- [Outlook ソーシャル コネクタ プロバイダー インターフェイス](outlook-social-connector-provider-interfaces.md)
+- [Outlook Social Connector プロバイダーインターフェイス](outlook-social-connector-provider-interfaces.md)
 

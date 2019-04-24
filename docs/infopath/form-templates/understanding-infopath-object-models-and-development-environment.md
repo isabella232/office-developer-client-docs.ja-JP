@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 29415c5b-9a42-46f4-a9e8-6a7d5bb7bdbf
 description: Microsoft InfoPath 2013 は、フォーム テンプレートでのビジネス ロジック開発用に 2 種類のプログラミング モデルをサポートしており、マネージ コードからの外部自動化もサポートしています。
 ms.openlocfilehash: c2ed1254acf86136ab7144c732aef91ac4c14c53
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303459"
 ---
 # <a name="understanding-infopath-object-models-and-development-environment"></a>InfoPath のオブジェクト モデルと開発環境を理解する
 

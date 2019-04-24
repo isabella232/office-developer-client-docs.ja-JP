@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 53fddc3f-e9d9-db76-6b84-11befdb23fb0
 description: Microsoft InfoPath では、フォーム内のリッチ テキスト ボックス コントロールを、Web サービスから受け取った XML 要素にバインドし、リッチ テキスト ボックス コントロールのデータを Web サービスを通じて XML 要素に送信することができます。要素は XHTML (Extensible HyperText Markup Language) 形式に従っている必要があります。たとえば、リッチ テキストが含まれている MyRichTextElement という名前の要素のスキーマであれば、XML スキーマ定義は次のようになります。
 ms.openlocfilehash: d10f4a8cedcff43d1c351068859aee0edf607c81
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25391816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299847"
 ---
 # <a name="rich-text-and-web-services"></a>リッチ テキストと Web サービス
 
@@ -142,7 +142,7 @@ public void setXhtml(XmlNode xn)
     
 6. **getXHTML** Web サービス メソッドはパラメーターを受け取らないので、[ **次へ**] をクリックします。
     
-7. [ **完了**] をクリックします。
+7. **[完了]** をクリックします。
     
 8. [ **データ**] タブの [ **送信処理**] グループで [ **その他の場所へ**] をクリックし、[ **Web サービス**] をクリックして、同じ Web サービスを送信データに使用します。 
     

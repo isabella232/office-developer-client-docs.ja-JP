@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: e4511af6-d7e7-44ad-a50d-1b7ee04f8215
 description: Microsoft InfoPath は COM (コンポーネント オブジェクト モデル) アプリケーションとして作成されており、外部オートメーションとフォーム テンプレート スクリプトの両方のプログラミング インターフェイスを COM インターフェイスとして公開します。
 ms.openlocfilehash: f3351a0fee6e23de0785aa28b0970c6a90361f16
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303522"
 ---
 # <a name="infopath-2003-compatible-object-models"></a>InfoPath 2003 互換オブジェクト モデル
 

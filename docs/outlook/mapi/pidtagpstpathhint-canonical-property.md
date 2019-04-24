@@ -10,57 +10,57 @@ api_type:
 - COM
 ms.assetid: 9cb4af50-3735-4029-a608-a6e7927019dd
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6b71feb6d5967eab3aa490a256825a2803381f40
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6415ddcec2823192967b8869b46b22b58b08ba5f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286358"
 ---
 # <a name="pidtagpstpathhint-canonical-property"></a>PidTagPstPathHint 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-構成] ダイアログ ボックスには、ユーザーが編集できる、個人用領域 (.pst ファイル) のテーブル名を提供します。 
+ユーザーが編集できる個人用ストレージテーブル (.pst ファイル) 名を [構成] ダイアログボックスで提供します。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_PST_PATH_HINT、PR_PST_PATH_HINT_A、PR_PST_PATH_HINT_W  <br/> |
 |識別子:  <br/> |0x6771  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |パーソナル ストレージ表 (.pst) 内部  <br/> |
+|エリア:  <br/> |パーソナルストレージテーブル (.pst) 内部  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-代わりに**PR_PST_PATH** ([PidTagPstPath](pidtagpstpath-canonical-property.md)) プロパティを使用する場合、[構成] ダイアログ ボックスが開きが、ユーザーは、パスとその他の多くのプロパティを編集するのには使用できません。
+**PR_PST_PATH** ([PidTagPstPath](pidtagpstpath-canonical-property.md)) プロパティが代わりに使用されている場合は、[構成] ダイアログボックスが開きますが、ユーザーはパスやその他の多くのプロパティを編集することはできません。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[MS OXPROPS] 
+[[OXPROPS]] 
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

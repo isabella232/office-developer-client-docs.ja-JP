@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 5d41a536-81ff-733c-2fd7-460798e057c8
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 84ff229e9914ec9074d61023873279b110fb606a
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25397640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286567"
 ---
 # <a name="pidtagprofileserverversion-canonical-property"></a>PidTagProfileServerVersion 標準プロパティ
 
@@ -21,54 +21,54 @@ ms.locfileid: "25397640"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Microsoft Outlook プロファイル内のアカウントが接続されている、Microsoft Exchange Server のバージョンに関する情報を指定します。
+microsoft Outlook プロファイルのアカウントが接続されている microsoft Exchange Server のバージョンに関する情報を指定します。
   
 ## 
 
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_PROFILE_SERVER_VERSION  <br/> |
-|識別子:  <br/> |0x661B  <br/> |
+|識別子:  <br/> |0x661b  <br/> |
 |プロパティの種類:  <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |MAPI プロファイルの構成  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-プロファイルが Exchange Server に接続する 1 つまたは複数のアカウントを指定できますが、同一の Exchange Server に接続する必要があります。
+プロファイルは、exchange サーバーに接続する1つ以上のアカウントを指定できますが、それらは同じ exchange サーバーに接続されている必要があります。
   
-Microsoft Office Outlook 2007 より前のバージョンの Outlook は、アクティブなプロファイルが接続されている Exchange Server のバージョンに関する情報を格納するには、このプロパティを作成できます。 ただし、バージョン情報の形式は、Exchange Server のバージョンごとに異なります。 たとえば、 **PR_PROFILE_SERVER_VERSION** 10 進値 6944 メジャーのみを表すために Outlook ストアは、Microsoft Exchange Server 2003 の**6.5.6944.3**のバージョン id の番号を構築します。 Exchange 2007 接続の場合は、メジャー バージョン番号を格納する Outlook とメジャー ビルド番号のプロパティでこれらの数値の場合は、連結された 16 進数表現。 **8.0.685.24**の Exchange 2007 のバージョン識別子は、10 進数でメジャー バージョン番号 8 とメジャー ビルド番号 685 を持ちます。 0x8 と 0x2AD を取得する両方の数値を 16 進数に変換します。 これら 2 つの数値を連結するには、Outlook 格納値 0x82AD **PR_PROFILE_SERVER_VERSION**で 16 進数表現でします。 
+Microsoft Office outlook 2007 より前のバージョンの outlook では、このプロパティを書き込み、アクティブなプロファイルが接続されている Exchange サーバーのバージョンに関する情報を格納できます。 ただし、バージョン情報の形式は、Exchange Server のバージョンによって異なります。 たとえば、Outlook は**PR_PROFILE_SERVER_VERSION**に格納されている10進値6944で、Microsoft Exchange SERVER 2003 の**6.5.6944.3**のバージョン識別子のメジャービルド番号のみを表します。 Exchange 2007 接続の場合、Outlook は、メジャーバージョン番号とメジャービルド番号を、プロパティにこれらの数値を連結した16進形式で格納します。 **8.0.685.24**の Exchange 2007 バージョン id には、メジャーバージョン番号8とメジャービルド番号685が10進数で含まれています。 両方の数値を16進数に変換すると、0x8 と0x2ad が得られます。 これらの2つの数値を連結すると、Outlook では**PR_PROFILE_SERVER_VERSION**の値0x82ad が16進表現で格納されます。 
   
-Outlook 2007 の読み取りまたはこのプロパティへの書き込みはないです。 **[PR_PROFILE_SERVER_FULL_VERSION](pidtagprofileserverfullversion-canonical-property.md)** をサポートします。 
+Outlook 2007 では、このプロパティの読み取りまたは書き込みは行われません。 **[PR_PROFILE_SERVER_FULL_VERSION](pidtagprofileserverfullversion-canonical-property.md)** がサポートされています。 
   
-**PR_PROFILE_SERVER_VERSION**または**PR_PROFILE_SERVER_FULL_VERSION**のいずれかのみでは、プロファイル内に存在する可能性がありますが、どちらか常に、プロファイル内に存在する保証はありません。 Outlook は、Exchange Server に正常に接続されるまでに、これらのプロパティに書き込めません。 
+**PR_PROFILE_SERVER_VERSION**または**PR_PROFILE_SERVER_FULL_VERSION**のいずれか1つだけがプロファイルに存在する可能性がありますが、プロファイルに常に存在する保証はありません。 Outlook は、Exchange サーバーに正常に接続されるまでは、どちらのプロパティにも書き込みを行いません。 
   
-Outlook オブジェクト モデルでは、アクティブなメールボックスがホストされている Exchange Server のバージョンを検索するのには、 **ExchangeMailboxServerVersion**オブジェクトのプロパティの**名前空間**を使用できます。 
+Outlook オブジェクトモデルでは、 **NameSpace**オブジェクトの**ExchangeMailboxServerVersion**プロパティを使用して、アクティブなメールボックスがホストされている Exchange サーバーのバージョンを検索できます。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義を提供します。
+> プロパティセットの定義を提供します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

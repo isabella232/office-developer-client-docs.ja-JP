@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 634ccd8c-0b5f-4161-875c-0e546a517377
 description: InfoPath 2003 互換オブジェクト モデルに用意されている Application オブジェクトの MachineOnlineState プロパティを使用すると、ユーザーのコンピューターがネットワークに接続されているかどうかをフォーム コードで確認できます。
-ms.openlocfilehash: 858b5d317cf5245dbfb447fa9e118a11ecbe7eb3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 452eb0d92b09dc0c3f9b2c247f7cda243dc8eb13
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303571"
 ---
 # <a name="work-with-offline-solutions-using-the-infopath-object-model"></a>InfoPath オブジェクト モデルを使用してオフライン ソリューションを操作する
 
@@ -119,7 +119,7 @@ InfoPath 2003 互換オブジェクト モデルに用意されている [Applic
     
 4. Internet Explorer で、[ **ファイル**] メニューの [ **オフライン作業**] をクリックします。 
     
-5. InfoPath で **[送信]** をクリックします。 フォームが電子メール メッセージとして送信されることを示すメッセージが表示されます。
+5. InfoPath で、**[送信]** をクリックします。 フォームが電子メール メッセージとして送信されることを示すメッセージが表示されます。
     
 6. **[送信]** をクリックします。フォームがオフラインで送信されたことを示すメッセージが表示されます。
     

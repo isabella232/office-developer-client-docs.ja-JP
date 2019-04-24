@@ -12,23 +12,23 @@ api_type:
 - COM
 ms.assetid: 7ca01bf7-5185-41cc-907e-01f256345997
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 882638d5359154a56fa4438e7a62f213159f916d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0a9bda8831f4a38b62d71a54115c40bb3374d97d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282734"
 ---
 # <a name="sizeddtblgroupbox"></a>SizedDtblGroupBox
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-グループ ボックス コントロールと指定した長さのラベルを記述するための[DTBLGROUPBOX](dtblgroupbox.md)構造体を含む名前付き構造体を作成します。 
+グループボックスコントロールと指定された長さのラベルを表す[dtblgroupbox](dtblgroupbox.md)構造を含む名前付き構造を作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |**DTBLGROUPBOX** <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |**DTBLGROUPBOX** <br/> |
    
 ```cpp
 SizedDtblGroupBox (n, u)
@@ -38,15 +38,15 @@ SizedDtblGroupBox (n, u)
 
 _n_
   
-> グループ ボックスのラベルの長さです。 
+> グループボックスのラベルの長さ。 
     
 _u_
   
-> 新しい構造体の名前です。
+> 新しい構造の名前を指定します。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**SizedDtblGroupBox**マクロを使用して、ラベルの長さがわかっている場合、グループ ボックス コントロールを定義できます。 新しい構造体は、次のメンバーで作成されます。 
+**sizeddtblgroupbox**マクロを使用すると、ラベルの長さが既知の場合に、グループボックスコントロールを定義できます。 次のメンバーで新しい構造が作成されます。 
   
 ```cpp
 DTBLGROUPBOX dtblgroupbox;
@@ -54,7 +54,7 @@ TCHAR lpszLabel[n];
 
 ```
 
-**DTBLGROUPBOX**構造体のポインターとして、 **SizedDtblGroupBox**マクロからの結果の構造にポインターを使用するには、次のキャストを実行します。 
+**sizeddtblgroupbox**マクロの結果として得られる構造体へのポインターを**dtblgroupbox**構造のポインターとして使用するには、次のキャストを実行します。 
   
 ```cpp
 lpDtblGroupBox = (LPDTBLGROUPBOX) &SizedDtblGroupBox;
@@ -64,5 +64,5 @@ lpDtblGroupBox = (LPDTBLGROUPBOX) &SizedDtblGroupBox;
 ## <a name="see-also"></a>関連項目
 
 - [DTBLGROUPBOX](dtblgroupbox.md)
-- [構造体に関連するマクロ](macros-related-to-structures.md)
+- [構造に関連するマクロ](macros-related-to-structures.md)
 

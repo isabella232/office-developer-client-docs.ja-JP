@@ -7,13 +7,13 @@ keywords:
 - infopath 2003 互換のフォーム テンプレート,フォーム テンプレート [InfoPath 2007], 作成する,InfoPath 2003 互換,InfoPath 2007,InfoPath 2003 互換のフォーム テンプレートを作成する
 localization_priority: Normal
 ms.assetid: c746aeb1-902c-440e-830b-5b9efad0ca04
-description: このトピックの手順で、InfoPath 2003 と互換性のあるオブジェクト モデルで動作するフォーム テンプレートを作成する方法について説明します。
-ms.openlocfilehash: 0cea526c2d41674afc6fee152c3e0584e6b69564
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+description: このトピックの手順では、InfoPath 2003 互換オブジェクト モデルを操作するフォーム テンプレートの作成方法を説明します。
+ms.openlocfilehash: 35a9fcfbb0d93a19e013bde6980bc94af3bb5dd9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303641"
 ---
 # <a name="create-a-form-template-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してフォーム テンプレートを作成する
 

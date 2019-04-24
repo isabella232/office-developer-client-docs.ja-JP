@@ -7,27 +7,27 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 4aaf7417-0a03-42a4-a282-599327ec5381
-description: Outlook ソーシャル コネクタ 2013 では、このメソッドは廃止されました。
-ms.openlocfilehash: 54b5cd6d681aa1e8008eade024ef57783bf18ead
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: このメソッドは、Outlook Social Connector 2013 では廃止されました。
+ms.openlocfilehash: c02cf0e8a6d2da3f9fb7704c92e10e0409042393
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285965"
 ---
 # <a name="isocialprofilegetactivitiesoffriendsandcolleagues"></a>ISocialProfile::GetActivitiesOfFriendsAndColleagues
 
-Outlook ソーシャル コネクタ 2013 では、このメソッドは廃止されました。
+このメソッドは、Outlook Social Connector 2013 では廃止されました。
   
 ```cpp
 HRESULT _stdcall GetActivitiesOfFriendsAndColleagues([in] DATE startTime, [out, retval] BSTR* activitiesCollection);
 ```
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-Outlook ソーシャル コネクタ 2013、OSC の活動のみ、オンデマンド同期をサポートしている、キャッシュされていない、または活動のハイブリッド同期を開始します。 OSC では、XML の機能の**cacheActivities**の設定を無視し、不要になったこのメソッドを呼び出します。 参照の動的な活動をサポートするには、 [ISocialSession2::GetActivitiesEx](isocialsession2-getactivitiesex.md)メソッドを実装します。 **GetActivities**と**dynamicActivitiesLookupEx**を**true を指定**する代わりに**ISocialSession2::GetActivitiesEx**を呼び出す OSC を求めるメッセージが表示に設定します。 
+Outlook Social Connector 2013 以降では、アクティビティのオンデマンド同期のみをサポートしており、アクティビティのキャッシュまたはハイブリッド同期はサポートされていません。 .osc は、機能**** XML の cacheactivities 設定を無視し、このメソッドを呼び出すことがなくなります。 動的アクティビティ検索をサポートするには、 [ISocialSession2:: GetActivitiesEx](isocialsession2-getactivitiesex.md)メソッドを実装します。 **getactivities**と**dynamicActivitiesLookupEx**を**true**に設定します。この場合、 **ISocialSession2:: GetActivitiesEx**を呼び出すよう、.osc に通知されます。 
   
-OSC が友人の活動を取得する方法の詳細については、[同期の友人との活動](synchronizing-friends-and-activities.md)を参照してください。 
+.osc がフレンドのアクティビティを取得する方法の詳細については、「[友人とアクティビティを同期](synchronizing-friends-and-activities.md)する」を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

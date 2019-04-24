@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: 0dd12990-5431-4768-9d64-27d4ef6b7b20
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fa7f6ac116bf5255d2598465085bab2695ae2c25
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ed0bbe986f374648e2ee85f3a0d2dfe7bc392e0f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287270"
 ---
 # <a name="dtblcheckbox"></a>DTBLCHECKBOX
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ダイアログ ボックスが表示テーブルの構築に使用するチェック ボックスに関する情報が含まれています。 
+表示テーブルから構築されたダイアログボックスで使用されるチェックボックスに関する情報を格納します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
 |関連するマクロ:  <br/> |[SizedDtblCheckBox](sizeddtblcheckbox.md) <br/> |
    
 ```cpp
@@ -44,33 +44,33 @@ typedef struct _DTBLCHECKBOX
 
 ## <a name="members"></a>Members
 
- **ulbLpszLabel**
+ **ulblpszlabel**
   
-> チェック ボックスが表示されている文字の文字列のメモリ内の位置。 
+> チェックボックスと共に表示される文字列のメモリ内での位置を指定します。 
     
  **ulFlags**
   
-> チェック ボックスのラベルの書式を指定するために使用するフラグのビットマスクです。 次のフラグを設定することができます。
+> チェックボックスラベルの書式を指定するために使用されるフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> ラベルは、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式のラベルです。
+> ラベルは Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、ラベルは ANSI 形式になります。
     
- **ulPRPropertyName**
+ **ulprpropertyname**
   
-> 型 PT_BOOLEAN のプロパティのプロパティ タグです。 このプロパティの値は、チェック ボックスの状態の影響を受けます。
+> PT_BOOLEAN 型のプロパティのプロパティタグ。 このプロパティの値は、チェックボックスの状態によって影響を受けます。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**DTBLCHECKBOX**構造体が 2 つの状態を反映するコントロールのチェック ボックスを示します: (チェック ボックス) を有効になっているか、(空のボックス) を無効にします。 
+**dtblcheckbox**構造体は、2つの状態 (オンボックス) または無効 (空のボックス) のいずれかを反映するコントロールのチェックボックスを記述します。 
   
-**UlPRPropertyName**メンバーは、ブール型のプロパティ値は、チェック ボックスの状態を変更することで操作を説明します。 チェック ボックスが最初に表示されると、MAPI は、既定のプロパティのセットを取得するために表示された表に関連付けられている**IMAPIProp**実装の**GetProps**メソッドを呼び出します。 **DTBLCHECKBOX**構造体のプロパティ タグのプロパティのいずれかのマップ、そのプロパティの値がチェック ボックスの初期値として表示されます。 
+**ulprpropertyname**メンバーは、チェックボックスの状態を変更することによって値を操作する Boolean プロパティを記述します。 チェックボックスが最初に表示されると、MAPI は、表示テーブルに関連付けられている**imapiprop**実装の**GetProps**メソッドを呼び出して、一連の既定のプロパティを取得します。 プロパティのいずれかが**dtblcheckbox**構造体の property タグにマップされている場合、そのプロパティの値はチェックボックスの初期値として表示されます。 
   
-チェック ボックス コントロールは、変更可能なことができます。 これにより、ユーザーの状態を変更します。 変更可能] チェック ボックスは、 **ulCtlFlags** 、 [DTCTL](dtctl.md)構造体のメンバーでは、 **PR_CONTROL_FLAGS** ([PidTagControlFlags](pidtagcontrolflags-canonical-property.md)) のプロパティに DT_EDITABLE フラグを設定します。 チェック ボックスの状態が変更されるとき、MAPI は、プロパティ タグの**DTBLCHECKBOX**構造体のメンバーを新しい状態で識別されるプロパティを設定するのには[IMAPIProp::SetProps](imapiprop-setprops.md)を呼び出します。 
+チェックボックスコントロールを変更できます。 これにより、ユーザーは自分の状態を変更できます。 変更可能なチェックボックスでは、 [DTCTL](dtctl.md)構造の**ulCtlFlags**メンバーおよび**PR_CONTROL_FLAGS** ([PidTagControlFlags](pidtagcontrolflags-canonical-property.md)) プロパティに DT_EDITABLE フラグを設定します。 チェックボックスの状態が変化すると、MAPI は[imapiprop:: setprops](imapiprop-setprops.md)を呼び出して、 **dtblcheckbox**構造のプロパティタグメンバーで識別されたプロパティを新しい状態に設定します。 
   
-たとえば、アドレス帳プロバイダーと、受信者の**PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)) のプロパティの設定を調整するのには、[構成] ダイアログ ボックスで、変更可能なチェック ボックス コントロール場合があります。 ユーザーは、チェック ボックスを選択すると、MAPI はこのプロパティを TRUE に設定します。 チェック ボックスが選択されているプロパティが FALSE に設定します。
+たとえば、アドレス帳プロバイダーでは、受信者の**PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)) プロパティの設定を調整するために、変更可能なチェックボックスコントロールを構成ダイアログボックスに含めることができます。 ユーザーがチェックボックスをオンにすると、MAPI はこのプロパティを TRUE に設定します。 チェックボックスが選択されていない場合、このプロパティは FALSE に設定されます。
   
-テーブルの表示の概要については、[テーブルの表示](display-tables.md)を参照してください。 表示テーブルを実装する方法の詳細については、[表示テーブルを実装する](display-table-implementation.md)を参照してください。 プロパティの型については、 [MAPI プロパティの種類の概要](mapi-property-type-overview.md)を参照してください。
+表示テーブルの概要については、「[テーブルの表示](display-tables.md)」を参照してください。 表示テーブルを実装する方法については、「[表示テーブルを実装](display-table-implementation.md)する」を参照してください。 プロパティの種類の詳細については、「 [MAPI プロパティの種類の概要](mapi-property-type-overview.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

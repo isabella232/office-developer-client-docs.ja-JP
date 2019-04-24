@@ -1,29 +1,29 @@
 ---
-title: CreateRecord データ ブロック (カスタム web アプリケーションのアクセス)
+title: CreateRecord データブロック (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 9dd73bae-a8d5-4d8b-b356-01ac72f7e5d9
 description: CreateRecord データ ブロックを使用して、指定したテーブルに新しいレコードを作成できます。
-ms.openlocfilehash: dc4be7653081c7c02426d84c74b7b56e597706fa
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d89b62180dbe50a0c7dab862b70062a47558c25a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282251"
 ---
-# <a name="createrecord-data-block-access-custom-web-app"></a>CreateRecord データ ブロック (カスタム web アプリケーションのアクセス)
+# <a name="createrecord-data-block-access-custom-web-app"></a>CreateRecord データブロック (Access カスタム web アプリ)
 
-**CreateRecord** データ ブロックを使用して、指定したテーブルに新しいレコードを作成できます。 
+You can use the **CreateRecord** data block to create a new record in the specified table. 
   
 > [!IMPORTANT]
-> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 > [!NOTE]
-> [!メモ] **CreateRecord** データ ブロックはデータ マクロでのみ使用できます。 
+> **CreateRecord** データ ブロックはデータ マクロでのみ使用できます。 
   
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
 **CreateRecord** データ ブロックの引数は次のとおりです。 
   
@@ -31,10 +31,10 @@ ms.locfileid: "19798610"
   
 |**引数名**|**必須**|**説明**|
 |:-----|:-----|:-----|
-|**内のレコードを作成します。** <br/> |はい  <br/> |新しいレコードを作成するテーブルの名前。  <br/> |
-|**エイリアス** <br/> |いいえ  <br/> |レコードを識別する文字列。レコードの別名を使用できます。  <br/> |
+|**Create a Record In**/レコードの作成先 <br/> |はい  <br/> |新しいレコードを作成するテーブルの名前。  <br/> |
+|**Alias** <br/> |いいえ  <br/> |レコードを識別する文字列。レコードの別名を使用できます。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 **CreateRecord** で作成したレコードは自動的にカレント レコードになります。 
   
@@ -45,7 +45,7 @@ ms.locfileid: "19798610"
 |["CancelRecordChange/レコードの変更の取り消し" マクロ アクション](cancelrecordchange-macro-action-access-custom-web-app.md) <br/> |
 |[Comment マクロ ステートメント](comment-macro-block-access-custom-web-app.md) <br/> |
 |[Group マクロ ステートメント](group-macro-block-access-custom-web-app.md) <br/> |
-|[もし。。。そうしたら。。。マクロ ステートメントはその他](ifthenelse-macro-block-access-custom-web-app.md) <br/> |
+|[If...Then...Else マクロ ステートメント](ifthenelse-macro-block-access-custom-web-app.md) <br/> |
 |["SetField/フィールドの設定" マクロ アクション](setfield-macro-action-access-custom-web-app.md) <br/> |
 |["SetLocalVar/ローカル変数の設定" マクロ アクション](setlocalvar-macro-action-access-custom-web-app.md) <br/> |
    

@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 60b4fa23-0075-4f6a-8bd0-9e53e99432d5
 description: Windows ユニバーサル アプリ プラットフォームのサードパーティ アプリを Excel Mobile、PowerPoint Mobile、Word Mobile と統合できます。ユニバーサル アプリを Office アプリと統合する際には、Windows ファイル ピッカー コントラクト、expando プロパティ、キャッシュ ファイル更新プログラム コントラクト を使います。
 ms.openlocfilehash: ad04ccc3ceb6e0f1d53e4aebc12cf9724ab8ab66
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299770"
 ---
 # <a name="integrate-with-office-from-windows-universal-apps"></a>Windows ユニバーサル アプリからの Office との統合
 
@@ -35,9 +35,9 @@ Windows ユニバーサル アプリは、Expando プロパティを使用して
   
 これらのプロパティは、 **System.ExpandoProperties** プロパティ セット内で設定してください。 
   
-|**プロパティ**|**説明**|**型**|**例**|
+|**プロパティ**|**説明**|**種類**|**例**|
 |:-----|:-----|:-----|:-----|
-|**AppDisplayName** <br/> |ユーザーに対して表示するプロバイダー名。Office では、最近使用したドキュメントの一覧などの複数の場所に表示されます。  <br/> |String  <br/> |Contoso  <br/> |
+|**AppDisplayName** <br/> |ユーザーに対して表示するプロバイダー名。Office では、最近使用したドキュメントの一覧などの複数の場所に表示されます。  <br/> |文字列型 (String)  <br/> |Contoso  <br/> |
 |**MicrosoftOfficeOwnershipType** <br/> |ライセンスの場合、ドキュメント/場所が Personal/Consumer か Work/Business かを示します。使用できる値は 1 (Personal) と 2 (Business) です。たとえば、ユーザーのファイルが Contoso Business に保存される場合は Business の値「2」を使用します。  <br/> |Unit32  <br/> | 1 または 2  <br/> たとえば、ユーザーのファイルが Contoso Business に保存される場合は、このファイルに Business の「2」のマークを付ける必要があります。  <br/> |
 |**MicrosoftOfficeTermsOfUse** <br/> |提供した情報が利用規約どおりに正確であることを宣言する法的な文章。このテキストはユーザーに対しては表示されません。ご自分とアプリケーションのプロバイダーと Microsoft の間の同意になります。  <br/> 例については、以下をご覧ください。  <br/> | String  <br/> | [https://go.microsoft.com/fwlink/p/?LinkId=528381](third-party-applications-integrating-with-office-mobile-products.md) にある条項に同意します。 <br/> |
    

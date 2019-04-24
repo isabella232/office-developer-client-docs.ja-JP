@@ -7,32 +7,32 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: b722a157-0d92-404d-9075-39547241dbb7
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 53b7099ae74828a97eb703b865ba30ab385e9a5f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 86f381eff1dab0144afe0f94dcd6dd54d1ad7fa8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285231"
 ---
 # <a name="copying-a-profile"></a>プロファイルのコピー
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロファイルを作成する方法の 1 つでは、既存のプロファイルからコピーし、必要なメッセージ サービスおよびサービス ・ プロバイダーを変更します。 プロファイルをコピーするには、 [MAPIAdminProfiles](mapiadminprofiles.md)関数によって、MAPI によって提供されるプロファイルの管理オブジェクトを使用する必要があります。 
+プロファイルを作成する方法の1つは、既存のプロファイルからコピーして、必要なメッセージサービスおよびサービスプロバイダーを変更することです。 プロファイルのコピーには、 [MAPIAdminProfiles](mapiadminprofiles.md)関数を使用して MAPI で提供されるプロファイル管理オブジェクトを使用します。 
   
  **プロファイルをコピーするには**
   
-1. **IProfAdmin**インターフェイス ポインターを取得するために**MAPIAdminProfiles**を呼び出します。 
+1. **MAPIAdminProfiles**を呼び出して、 **IProfAdmin**インターフェイスポインターを取得します。 
     
-2. プロファイル テーブルにアクセスするのには[IProfAdmin::GetProfileTable](iprofadmin-getprofiletable.md)を呼び出します。 
+2. プロファイルテーブルにアクセスするには、 [IProfAdmin:: getprofiletable](iprofadmin-getprofiletable.md)を呼び出します。 
     
-3. コピーするプロファイルの名前の**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) に一致する[SPropertyRestriction](spropertyrestriction.md)構造を持つプロパティの制限を作成します。 
+3. **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) をコピーするプロファイルの名前と一致させるために、 [spropertyrestriction](spropertyrestriction.md)構造のプロパティ制限を構築します。 
     
-4. プロファイル テーブルに適切な行を検索するのには[IMAPITable::FindRow](imapitable-findrow.md)を呼び出します。 
+4. [IMAPITable:: FindRow](imapitable-findrow.md)を呼び出して、プロファイルテーブルで該当する行を見つけます。 
     
-5. [IProfAdmin::CopyProfile](iprofadmin-copyprofile.md)、 _lpszOldProfileName_パラメーターとして**PR_DISPLAY_NAME**列の値を渡すことを呼び出します。 
+5. [IProfAdmin:: copyprofile](iprofadmin-copyprofile.md)を呼び出し、 **PR_DISPLAY_NAME**列の値を_lpszoldprofilename_パラメーターとして渡します。 
     
 

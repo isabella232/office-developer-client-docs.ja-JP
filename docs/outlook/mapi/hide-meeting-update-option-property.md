@@ -1,5 +1,5 @@
 ---
-title: 会議更新オプションのプロパティを非表示にする
+title: 会議の更新オプションのプロパティを非表示にする
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,45 +12,45 @@ api_type:
 - COM
 ms.assetid: 9e7b413f-a88a-a4ec-8d57-1f3058cce4a4
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 65255e14fd849d730e92bd86027642eef2c687bc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ac7c891fa05560231a257f9bd52ccbbfe564b49d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299511"
 ---
-# <a name="hide-meeting-update-option-property"></a>会議更新オプションのプロパティを非表示にする
+# <a name="hide-meeting-update-option-property"></a>会議の更新オプションのプロパティを非表示にする
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-のみ追加または削除された出席者に会議の更新を送信するオプションを非表示にします。
+追加または削除された出席者にのみ会議の更新を送信するオプションを非表示にします。
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|公開されます。  <br/> |[IMsgStore: IMAPIProp](imsgstoreimapiprop.md)オブジェクト  <br/> |
-|によって作成されます。  <br/> |ストア プロバイダー  <br/> |
-|によってアクセスします。  <br/> |Outlook およびその他のクライアント  <br/> |
+|公開:  <br/> |[IMsgStore: imapiprop](imsgstoreimapiprop.md)オブジェクト  <br/> |
+|作成者:  <br/> |ストアプロバイダー  <br/> |
+|アクセス先:  <br/> |Outlook およびその他のクライアント  <br/> |
 |プロパティの種類:  <br/> |PT_BOOLEAN  <br/> |
-|アクセスの種類:  <br/> |値の取得および設定が可能です。  <br/> |
+|アクセスの種類:  <br/> |読み取り/書き込み  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-ストア機能を提供するストア プロバイダーを実装する必要があります[IMAPIProp: IUnknown](imapipropiunknown.md) 、 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)の呼び出しに渡されたこれらのプロパティのいずれかのプロパティの有効なタグを返すとします。 これらのプロパティのいずれかのプロパティ タグが[IMAPIProp::GetProps](imapiprop-getprops.md)に渡されると、ストア プロバイダーを使用、正しいプロパティ値を返す必要があります。 ストア プロバイダーには、取得、またはこれらのプロパティを設定するには、 [HrGetOneProp](hrgetoneprop.md)と[HrSetOneProp](hrsetoneprop.md)を呼び出すことができます。 
+ストアの機能を提供するには、ストアプロバイダーが[imapiprop: IUnknown](imapipropiunknown.md)を実装し、 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)呼び出しに渡されるこれらのプロパティに対して有効なプロパティタグを返す必要があります。 これらのプロパティのいずれかのプロパティタグが[imapiprop:: GetProps](imapiprop-getprops.md)に渡されると、ストアプロバイダーは、適切なプロパティ値を返す必要があります。 ストアプロバイダーは、 [hrgetoneprop](hrgetoneprop.md)および[hrgetoneprop](hrsetoneprop.md)を呼び出して、これらのプロパティを取得または設定できます。 
   
-このプロパティの値を取得するには、クライアントはまず[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)を使用して、プロパティ タグを取得して、値を取得する[IMAPIProp::GetProps](imapiprop-getprops.md)でこのプロパティのタグを指定する必要があります。 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)を呼び出すときは、 _lppPropNames_の入力パラメーターで示される[MAPINAMEID](mapinameid.md)構造体の次の値を指定します。
+このプロパティの値を取得するには、クライアントはまず[imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)を使用してプロパティタグを取得し、次に[imapiprop:: GetProps](imapiprop-getprops.md)でこのプロパティタグを指定して値を取得する必要があります。 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)を呼び出す場合は、入力パラメーター _lpppropnames_でポイントされている[mapinameid](mapinameid.md)構造に次の値を指定します。
   
 |||
 |:-----|:-----|
-|lpGuid。  <br/> |PS_PUBLIC_STRINGS  <br/> |
-|ulKind。  <br/> |MNID_STRING  <br/> |
-|Kind.lpwstrName。  <br/> |L"urn: スキーマ-マイクロソフト-com:office:outlook #allornonemtgupdatedlg」  <br/> |
+|lpguid:  <br/> |PS_PUBLIC_STRINGS  <br/> |
+|ulkind:  <br/> |MNID_STRING  <br/> |
+|種類が lpwstrname:  <br/> |L "urn: スキーマ-microsoft-com: office: outlook # allornonemtgupdatedlg"  <br/> |
    
-ストア プロバイダー、サーバーを使用して、会議の更新を送信するには、**出席者に更新内容を送信**] ダイアログ ボックスで変更できます。 どの参加者が追加されたり、最初の会議出席依頼した後にユーザーが削除サーバーでは、会議の更新を送信するとき、サーバーは認識できないために、この機能の使用をお勧めします。 このプロパティが**true**の場合、**出席者に更新を送信**] ダイアログ ボックスで**追加または削除された出席者にのみ更新を送信**する] オプションは表示されません。 
+サーバーを使用して会議の更新を送信するストアプロバイダーは、[**出席者への更新プログラムの送信**] ダイアログボックスを変更することができます。 この機能は、サーバーが会議の更新を送信するときに、最初の会議出席依頼以降にユーザーが追加または削除した出席者がわからないために役立ちます。 このプロパティに**true**が設定されている場合、[**出席者に更新**を送信] ダイアログボックスに [出席者に更新**のみを**送信] オプションが表示されません。 
   
-Outlook のバージョンの Microsoft Office Outlook 2003 Service Pack 1 より前の場合、またはその値が**false**の場合、このプロパティは無視されます。
+outlook のバージョンが Microsoft Office Outlook 2003 Service Pack 1 より前の場合、またはその値が**false**の場合、このプロパティは無視されます。
   
 

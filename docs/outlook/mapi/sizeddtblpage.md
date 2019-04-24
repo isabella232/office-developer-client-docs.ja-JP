@@ -12,23 +12,23 @@ api_type:
 - COM
 ms.assetid: 47b2a69d-e902-429f-8b31-166b51aeaf7f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ae3f84c6b219c7becb88737f0d6c9fcb9722ea34
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f14b8d7a9a73997f797f9cfa26a2e574222e839e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282658"
 ---
 # <a name="sizeddtblpage"></a>SizedDtblPage
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-タブ付きページのコントロール、指定した長さのラベル、ヘルプ ファイルのエントリを指定された長さの記述するため[DTBLPAGE](dtblpage.md)構造体を含む名前付き構造体を作成します。 
+タブ付きページコントロールを記述するための[dtblpage](dtblpage.md)構造体、指定された長さのラベル、および指定された長さのヘルプファイルのエントリを含む名前付き構造を作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |**DTBLPAGE** <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |**DTBLPAGE** <br/> |
    
 ```cpp
 SizedDtblPage (n, n1, u)
@@ -38,19 +38,19 @@ SizedDtblPage (n, n1, u)
 
 _n_
   
-> [ページ] タブのラベルの長さです。
+> [ページ] タブのラベルの長さ。
     
 _n1_
   
-> タブ ページ コントロールを使用するヘルプ ファイルを識別する、Mapisvc.inf ファイルに表示されるエントリの長さです。
+> タブ付きページコントロールで使用するヘルプファイルを識別する、mapisvc.inf ファイルに表示されるエントリの長さ。
     
 _u_
   
-> 新しい構造体の名前です。
+> 新しい構造の名前を指定します。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**SizedDtblPage**マクロを使用して、ヘルプ ファイルのエントリと関連付けられているラベルの文字数がわかっている場合は、タブ付きページのコントロールを定義できます。 新しい構造体は、次のメンバーで作成されます。 
+**sizeddtblpage**マクロを使用すると、関連付けられたラベルの文字数とヘルプファイルのエントリがわかっている場合に、タブ付きページコントロールを定義できます。 次のメンバーで新しい構造が作成されます。 
   
 ```cpp
 DTBLPAGE dtblpage;
@@ -58,7 +58,7 @@ TCHAR lpszLabel[n];
 TCHAR lpszComponent[n1];
 ```
 
-**DTBLPAGE**構造体のポインターとして、 **SizedDtblPage**マクロからの結果の構造にポインターを使用するには、次のキャストを実行します。 
+**sizeddtblpage**マクロの結果として得られる構造体へのポインターを**dtblpage**構造ポインターとして使用するには、次のキャストを実行します。 
   
 ```cpp
 lpDtblPage = (LPDTBLPAGE) &SizedDtblPage;
@@ -67,5 +67,5 @@ lpDtblPage = (LPDTBLPAGE) &SizedDtblPage;
 ## <a name="see-also"></a>関連項目
 
 - [DTBLPAGE](dtblpage.md)
-- [構造体に関連するマクロ](macros-related-to-structures.md)
+- [構造に関連するマクロ](macros-related-to-structures.md)
 

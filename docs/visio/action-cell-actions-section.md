@@ -9,21 +9,21 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 435e49ee-0b51-8ce3-0589-3f0717026f4a
 description: ショートカット メニューまたはアクション タグ メニューのコマンドを選択したときに実行される数式が格納されています。
-ms.openlocfilehash: 123b05f9a08c4ffa656e08a51f019f888cf83ed4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e6bc576982cad871804cbcbc5f3d9c6bceb558c5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283066"
 ---
-# <a name="action-cell-actions-section"></a>[Action] セル ([操作] セクション)
+# <a name="action-cell-actions-section"></a>[Action] セル ([Actions] セクション)
 
 ショートカット メニューまたはアクション タグ メニューのコマンドを選択したときに実行される数式が格納されています。
   
 > [!NOTE]
 > Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 [Action] セルは、アクションが発生したときにのみ評価されます。数式の入力時には評価されません。
   
@@ -31,14 +31,14 @@ ms.locfileid: "19804750"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | アクションです。  *名*です。アクション、アクション。 *アクション行の名前します。*  <br/> |
+| セル名 :  <br/> | アクション.  *名前*です。アクションのアクション。 *name*は、actions 行の名前です。  <br/> |
    
 プログラムから、インデックスによって [Action] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionAction** <br/> |
-| 行インデックス:  <br/> |**visRowAction** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+| 行インデックス:  <br/> |**visRowAction** +  *i* = ** 0、1、2...  <br/> |
 | セル インデックス:  <br/> |**visActionAction** <br/> |
    
 

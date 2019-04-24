@@ -1,5 +1,5 @@
 ---
-title: Var 関数 (カスタム web アプリケーションのアクセス)
+title: Var 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: cb2aace1-fa2d-480e-bfc7-44ae399943f5
 description: クエリに指定したフィールドに含まれる値セットとして表現された標本母集団の不偏分散が返されます。
-ms.openlocfilehash: 9937f1985c0a7df5eb06977333ab889947891380
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 80cea512b0386d9b0461c927675ae51be3e0dcda
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304201"
 ---
-# <a name="var-function-access-custom-web-app"></a>Var 関数 (カスタム web アプリケーションのアクセス)
+# <a name="var-function-access-custom-web-app"></a>Var 関数 (Access カスタム web アプリ)
 
 クエリに指定したフィールドに含まれる値セットとして表現された標本母集団の不偏分散が返されます。
   
@@ -23,13 +23,13 @@ ms.locfileid: "19798762"
   
 ## <a name="syntax"></a>構文
 
- **Var**(*数式*) 
+ **Var**(*NumericExpression*) 
   
 **Var** 関数には次の引数があります。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *数式*  <br/> |評価する数値データ、またはそのフィールドのデータを使用して計算を実行する式を含むフィールドを識別する文字列式です。 *数式*内のオペランドには、テーブルのフィールド、定数、または関数 (組み込みまたはユーザー定義することができますが、他の SQL 集計関数のいずれかのない) の名前を含めることができます。  <br/> |
+| *NumericExpression*  <br/> |評価する数値データを含むフィールドを識別するテキスト式。または、そのフィールドのデータを使用して計算を実行する式を指定します。 *NumericExpression*のオペランドには、テーブルフィールドの名前、定数、または関数を含めることができます (組み込みまたはユーザー定義であっても、他の SQL 集計関数は使用できません)。  <br/> |
    
 ## <a name="remarks"></a>解説
 

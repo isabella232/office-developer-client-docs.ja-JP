@@ -12,23 +12,23 @@ api_type:
 - COM
 ms.assetid: 5c64d74a-83a7-4122-b1d1-fcca0f4a6cdb
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 62911e0dec15002f39fff81e8c517c1cb11d0183
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c35a1eb54b29c04bc8eed453272b59aae0ea737e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282776"
 ---
 # <a name="sizedadrlist"></a>SizedADRLIST
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[ADRENTRY](adrentry.md)構造体の指定した数が含まれている指定した名前の[ADRLIST](adrlist.md)構造体を定義します。 
+指定された名前を持つ[adrlist](adrlist.md)構造を定義します。この構造体には、指定した数の[adrlist](adrentry.md)構造が含まれています。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |**ADRLIST** <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |**ADRLIST** <br/> |
    
 ```cpp
 SizedADRLIST (_centries,_name)
@@ -38,15 +38,15 @@ SizedADRLIST (_centries,_name)
 
 __centries_
   
-> 新しい**ADRLIST**構造体に含まれる**ADRENTRY**構造体の数です。 
+> 新しい**adrentry**構造に含める**adrentry**構造体の数。 
     
-__名_
+__名前_
   
-> 新しい**ADRLIST**構造体の名前です。 
+> 新しい**adrlist**構造体の名前。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**SizedADRLIST**マクロを使用して、配列の長さの要件がわかっている場合は、明示的な境界を持つ受信者の一覧を定義できます。 次のコードは、 **SizedADRLIST**マクロ、 **ADRLIST**構造体のポインターにキャストする方法を示しています。 
+**sizedadrlist**マクロを使用すると、配列の長さの要件がわかっている場合に、明示的な境界を持つ受信者リストを定義できます。 次のコードは、 **sizedadrlist**マクロの結果を**adrlist**構造体のポインターにキャストする方法を示しています。 
   
 ```cpp
 lpADRList = (LPADRLIST) &SizedADRList;
@@ -56,5 +56,5 @@ lpADRList = (LPADRLIST) &SizedADRList;
 
 - [ADRLIST](adrlist.md)
 - [ADRENTRY](adrentry.md)
-- [構造体に関連するマクロ](macros-related-to-structures.md)
+- [構造に関連するマクロ](macros-related-to-structures.md)
 

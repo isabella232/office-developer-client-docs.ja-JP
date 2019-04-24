@@ -6,11 +6,11 @@ localization_priority: Normal
 ms.assetid: 74a80e0a-fe60-4356-b238-13de4c2822d9
 description: ソリューションの開発と Office のカスタマイズに関する 方法 コンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、および記事を検索できます。
 ms.openlocfilehash: 92e4da3d6e04082ea3bceb901989ddf134b54c07
-ms.sourcegitcommit: 6a314fdfde4349591ed899019695c36537f45924
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303123"
 ---
 # <a name="office-client-development"></a>Office クライアントの開発
 
@@ -22,7 +22,7 @@ ms.locfileid: "25454489"
   
 ### <a name="office-add-ins"></a>Office アドイン
   
-- [作業の開始](https://docs.microsoft.com/office/dev/add-ins/)
+- [開始](https://docs.microsoft.com/office/dev/add-ins/)
   
 - [プラットフォームの概要](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)
   

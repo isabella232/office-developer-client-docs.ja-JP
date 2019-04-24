@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 4690028e-20ac-297b-4651-801f5159c747
 description: このトピックを読む前に、「InfoPath フォームの追加のセキュリティ概念」を参照し、InfoPath のセキュリティ モデルの概要を理解しておいてください。
-ms.openlocfilehash: 3a72421882e655f34abd1eda30fe7e4fb42c45c0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 5108d8b1967b72ac4805f892bcf3bbae3aecccbe
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299924"
 ---
 # <a name="security-guidelines-for-developing-infopath-forms"></a>InfoPath フォーム開発のためのセキュリティ ガイドライン
 

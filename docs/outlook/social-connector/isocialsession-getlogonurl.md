@@ -1,5 +1,5 @@
 ---
-title: ISocialSessionGetLogonUrl
+title: i、alsessiongetlogonurl
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d61bab07-acb3-433b-8783-c3fe110a5582
-description: Web 認証時にユーザーにブラウザー ベースのフォームを表示するために使用される URL を表す文字列を取得します。
-ms.openlocfilehash: 343919f194b238fc519bb8f6d808b44a8ab6e7b9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: web 認証中にブラウザーベースのフォームをユーザーに提示するために使用される URL を表す文字列を取得します。
+ms.openlocfilehash: 83867282922ea136b9673609cc2ba2f1a206f6ab
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285379"
 ---
 # <a name="isocialsessiongetlogonurl"></a>ISocialSession::GetLogonUrl
 
-Web 認証時にユーザーにブラウザー ベースのフォームを表示するために使用される URL を表す文字列を取得します。
+web 認証中にブラウザーベースのフォームをユーザーに提示するために使用される URL を表す文字列を取得します。
   
 ```cpp
 HRESULT _stdcall GetLogonUrl([out, retval] BSTR* url);
@@ -27,11 +27,11 @@ HRESULT _stdcall GetLogonUrl([out, retval] BSTR* url);
 
 _url_
   
-> [out]Web 認証で使用するフォームの URL を含む文字列です。
+> 読み上げweb 認証で使用するフォームの URL を含む文字列。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-フォームは、ユーザーに提示された後は、 _connectIn_パラメーターに空の文字列で[ISocialSession::LogonWeb](isocialsession-logonweb.md)メソッドが呼び出されます。 
+フォームがユーザーに表示された後、i渡された[alsession:: logonweb](isocialsession-logonweb.md)メソッドが、ユーザーに空の__ 文字列を指定して呼び出されます。 
   
 ## <a name="see-also"></a>関連項目
 

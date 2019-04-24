@@ -1,5 +1,5 @@
 ---
-title: ISocialSessionGetNetworkIdentifier
+title: i識別 alsessiongetnetworkidentifier
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 534e404f-54c6-4d2b-a8d0-d2ee990a972f
-description: 特定のソーシャル ネットワークの接続のソーシャル ネットワークの一意の識別子を表す文字列を取得します。
-ms.openlocfilehash: eb618ba8e8bb37278c1fdb09d984fba141a9d686
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 特定のソーシャルネットワーク接続の一意のソーシャルネットワーク識別子を表す文字列を取得します。
+ms.openlocfilehash: 3051abd6dcccec878e8c53332980731772d543eb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285338"
 ---
 # <a name="isocialsessiongetnetworkidentifier"></a>ISocialSession::GetNetworkIdentifier
 
-特定のソーシャル ネットワークの接続のソーシャル ネットワークの一意の識別子を表す文字列を取得します。 
+特定のソーシャルネットワーク接続の一意のソーシャルネットワーク識別子を表す文字列を取得します。 
   
 ```cpp
 HRESULT _stdcall GetNetworkIdentifier([out, retval] BSTR* networkIdentifier);
@@ -25,13 +25,13 @@ HRESULT _stdcall GetNetworkIdentifier([out, retval] BSTR* networkIdentifier);
 
 ## <a name="parameters"></a>パラメーター
 
-_networkIdentifier_
+_networkidentifier_
   
-> [out]ソーシャル ネットワークの一意な識別子を含む文字列です。
+> 読み上げ一意のソーシャルネットワーク識別子を含む文字列。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-ネットワークの一意の識別子は、Outlook ソーシャル コネクタ (OSC) プロバイダーのソーシャル ネットワークを識別する文字列です。 このメソッドは E_NOTIMPL を返すこともします。
+一意のネットワーク識別子は、Outlook social Connector (.osc) プロバイダーのソーシャルネットワークを識別する文字列です。 このメソッドは、E_NOTIMPL を返すこともできます。
   
 ## <a name="see-also"></a>関連項目
 

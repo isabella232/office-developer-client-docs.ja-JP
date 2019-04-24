@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 0f22ccf2-1004-4731-9d68-f66c01b4588b
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1e3d384f35726ff28bb47f3d537c8a7a1dda6dce
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25399656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299434"
 ---
 # <a name="gettnefstreamcodepage"></a>GetTnefStreamCodepage
 
@@ -21,13 +21,13 @@ ms.locfileid: "25399656"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-トランスポート ニュートラル カプセル化形式 (TNEF) ストリームのコード ページを決定します。
+トランスポートに中立的なカプセル化形式 (TNEF) ストリームのコードページを指定します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |tnef.h  <br/> |
+|ヘッダー ファイル:  <br/> |tnef  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアント アプリケーションとサービス ・ プロバイダーです。  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー。  <br/> |
    
 ```cpp
 HRESULT GetTnefStreamCodepage(
@@ -39,17 +39,17 @@ HRESULT GetTnefStreamCodepage(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpStream_
+ _lpstream_
   
-> [in]TNEF ストリーム メッセージのソースを提供するストレージ ストリーム オブジェクト OLE の**IStream**インターフェイスへのポインター。 
+> 順番TNEF ストリームメッセージのソースを提供する、ストレージストリームオブジェクトの OLE **IStream**インターフェイスへのポインター。 
     
- _lpulCodepage_
+ _lアウトコードページ_
   
-> [out]ストリームのコード ページへのポインター。
+> 読み上げストリームのコードページへのポインター。
     
- _lpulSubCodepage_
+ _lアウト subcodepage_
   
-> [out]ストリームのサブコードのページへのポインター。
+> 読み上げストリームのサブコードページへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -59,19 +59,19 @@ HRESULT GetTnefStreamCodepage(
     
  **MAPI_E_NOT_ENOUGH_DISK**
   
-> TNEF ストリーム内の属性を読み取り中にエラーが発生しました。
+> TNEF ストリームの属性の読み取り中にエラーが発生しました。
     
  **MAPI_E_CORRUPT_DATA**
   
-> ストリームが TNEF ストリームではないか、attOemCodepage 属性を読み取り中にエラーが発生しました。
+> ストリームが TNEF ストリームではなかったか、attoemcodepage 属性の読み取り中にエラーが発生しました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-TNEF ストリームのコード ページとサブコードのページを決定するのにの**attOemCodepage**属性を読み取ることには、 **GetTnefStreamCodepage**関数を使用します。 **AttOemCodepage**が見つからない場合、 **GetTnefStreamCodepage**は、コード ページ 437 と 0 のサブコードのページを返します。 
+**GetTnefStreamCodepage**関数を使用して、TNEF ストリームの**attoemcodepage**属性を読み取り、コードページとサブコードページを特定します。 **attoemcodepage**が見つからない場合、 **GetTnefStreamCodepage**は437のコードページとサブコードページを0に返します。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[attOemCodepage](https://msdn.microsoft.com/library/ee158667%28EXCHG.80%29.aspx)
+[attoemcodepage](https://msdn.microsoft.com/library/ee158667%28EXCHG.80%29.aspx)
 

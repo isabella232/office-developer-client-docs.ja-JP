@@ -12,11 +12,11 @@ localization_priority: Normal
 ms.assetid: c730124c-1886-4a0f-8f06-79763025537d
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 3cd2e5072c8602fe301028e69592220a8345c211
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303865"
 ---
 # <a name="xlfregister-form-1"></a>xlfRegister (形式 1)
 
@@ -78,13 +78,13 @@ XLL のエントリ ポイントの種類を示す、省略可能な引数。既
   
 |||||
 |:-----|:-----|:-----|:-----|
-| _pxMacroType value_ <br/> |0  <br/> |1  <br/> |2  <br/> |
+| _pxMacroType value_ <br/> |.0  <br/> |1-d  <br/> |pbm-2  <br/> |
 |ワークシートから呼び出し可能  <br/> |はい  <br/> |はい  <br/> |いいえ  <br/> |
 |マクロ シートから呼び出し可能  <br/> |はい  <br/> |はい  <br/> |はい  <br/> |
 |定義済みの名前の定義から呼び出し可能  <br/> |はい  <br/> |はい  <br/> |はい  <br/> |
 |条件付き書式の式から呼び出し可能  <br/> |はい  <br/> |はい  <br/> |いいえ  <br/> |
 |ワークシート関数の関数ウィザードに表示される  <br/> |いいえ  <br/> |はい  <br/> |いいえ  <br/> |
-|マクロ シート関数の関数ウィザードに表示される  <br/> |いいえ  <br/> |はい  <br/> |はい  <br/> |
+|マクロ シート関数の関数ウィザードに表示される  <br/> |いいえ  <br/> |あり  <br/> |はい  <br/> |
    
 実際には、ワークシート関数には 1、ワークシートから呼び出すマクロ シートと同等の関数 (タイプ **#** として登録されたもの) には 1、コマンドには 2 を使用する必要があります。 
   
@@ -277,18 +277,16 @@ Excel 2010 以降の Excel では、指定の計算クラスター プロバイ�
   
 |**数値**|**テキスト**|
 |:-----|:-----|
-|1  <br/> |財務  <br/> |
-|2  <br/> |日付 &amp; 時刻  <br/> |
-|3  <br/> |数学 &amp; 三角  <br/> |
-|4  <br/> |テキスト  <br/> |
+|1-d  <br/> |財務  <br/> |
+|pbm-2  <br/> |日付 &amp; 時刻  <br/> |
+|1/3  <br/> |数学 &amp; 三角  <br/> |
+|2/4  <br/> |テキスト  <br/> |
 |5  <br/> |論理演算子  <br/> |
-|6  <br/> |検索 &amp; 参照  <br/> |
+|シックス  <br/> |検索 &amp; 参照  <br/> |
 |7  <br/> |データベース  <br/> |
-|8  <br/> |統計  <br/> |
-|9  <br/> |情報  <br/> |
-| 
-14 
-  <br/> |ユーザー定義  <br/> |
+|~  <br/> |統計  <br/> |
+|i-9  <br/> |情報  <br/> |
+|第  <br/> |ユーザー定義  <br/> |
 ||エンジニアリング (Excel 2007 以降)  <br/> |
 ||キューブ (Excel 2007 以降)  <br/> |
    
@@ -296,10 +294,10 @@ Excel 2010 以降の Excel では、指定の計算クラスター プロバイ�
   
 |**数値**|**テキスト**|
 |:-----|:-----|
-|10  <br/> |コマンド  <br/> |
-|11  <br/> |DDE/外部  <br/> |
-|12  <br/> |ユーザー設定  <br/> |
-|13  <br/> |マクロ制御  <br/> |
+|個  <br/> |コマンド  <br/> |
+|#  <br/> |DDE/外部  <br/> |
+|個  <br/> |ユーザー設定  <br/> |
+|スリー  <br/> |マクロ制御  <br/> |
    
 ### <a name="example"></a>例
 

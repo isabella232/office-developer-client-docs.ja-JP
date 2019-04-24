@@ -9,30 +9,30 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 771a2ab4-578d-51c3-fabd-138f7952bb11
 description: 用紙の給紙方法を指定します。
-ms.openlocfilehash: f1dedf210dfe0dd8cac3d36fdec03fb497f6572c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: eb6e7daccb1743c43a30b34598e47187496e4aac
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301464"
 ---
-# <a name="papersource-cell-printproperties-section"></a>[PaperSource] セル ([印刷のプロパティ] セクション)
+# <a name="papersource-cell-printproperties-section"></a>[PaperSource] セル ([PrintProperties] セクション)
 
 用紙の給紙方法を指定します。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 この設定は、[**プリンターの設定**] ダイアログ ボックスの [**給紙**] の設定に対応しています (このダイアログ ボックスを開くには、[**デザイン**] タブで [**ページ設定**] 矢印をクリックし、[**プリンターの設定**] タブで [**設定**] をクリックします)。
   
-箱選択範囲の場合、Microsoft Windows wingdi.h ファイルで定義されているこのセルにマップ (DMBIN で始まる) の定数に含まれる数値たとえば、7 の値は、DMBIN_AUTO を表します。 
+このセルの数値は、Microsoft Windows ウィング di .h ファイルの bin 選択に対して定義されている定数 (dmbin で始まります) に対応しています。たとえば、値7は DMBIN_AUTO を表します。 
   
-別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [PageSource] セルへの参照を取得するには、次の値を使用します。 
+別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [pagesource] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
 |セル名:  <br/> |PaperSource  <br/> |
    
-プログラムから、インデックスによって [PaperSource] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
+プログラムから、インデックスによって [pagesource] セルへの参照を取得するには、 **CellsSRC**プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

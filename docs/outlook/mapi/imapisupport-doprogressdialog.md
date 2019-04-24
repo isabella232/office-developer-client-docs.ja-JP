@@ -1,5 +1,5 @@
 ---
-title: IMAPISupportDoProgressDialog
+title: imapisupportdo進捗ダイアログ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 74c52b96-e903-444b-8bda-73a08f278c22
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 32174e213334d784220b960364443e60db6d1d19
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 3de29e9af5caa82d2e57c8fcbbdab7d5ddb19dd9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285207"
 ---
 # <a name="imapisupportdoprogressdialog"></a>IMAPISupport::DoProgressDialog
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-進行状況インジケーターを表示する進行中のオブジェクトを取得します。
+進行状況インジケーターを表示する progress オブジェクトを取得します。
   
 ```cpp
 HRESULT DoProgressDialog(
@@ -37,33 +37,33 @@ HRESULT DoProgressDialog(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulUIParam_
+ _uluiparam_
   
-> [in]進行状況インジケーターの親ウィンドウへのハンドル。
+> 順番進行状況インジケーターの親ウィンドウへのハンドル。
     
  _ulFlags_
   
-> [in]オブジェクトの進行状況が進行状況を計算する方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番進捗状況オブジェクトが進捗状況を計算する方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_TOP_LEVEL 
   
-> 親フォルダーなどのトップレベルの項目の進行状況が計算されます。 進行中のオブジェクトは、 [IMAPIProgress::Progress](imapiprogress-progress.md)メソッドの_ulCount_および_ulTotal_パラメーターの値を使用する必要があります-現在の項目と、操作でアイテムの合計をそれぞれ指定する: 進行状況をインクリメントするのには操作のインジケーターです。 
+> 最上位レベルのアイテム (親フォルダーなど) について、進行状況が計算されます。 progress オブジェクトは、imapiprogress の値を使用する必要があり[ます。:P rogress](imapiprogress-progress.md)メソッドの_ulcount_および_ulcount_パラメーター (それぞれ、現在のアイテムおよび操作の合計アイテムを示す) を使用して、進行状況を増分します。操作のインジケーター。 
     
- _lppProgress_
+ _lppprogress_
   
-> [out]進行中のオブジェクトへのポインターへのポインター。
+> 読み上げprogress オブジェクトへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 進行中のオブジェクトが正常に取得しました。
+> progress オブジェクトが正常に取得されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-アドレス帳、メッセージ ストア プロバイダーのサポート オブジェクトの**IMAPISupport::DoProgressDialog**メソッドを実装します。 これらのプロバイダーは、MAPI インターフェイスの実装、 [IMAPIProgress](imapiprogressiunknown.md) 、進捗状況の情報を計算し、標準のダイアログ ボックスを表示するにアクセスするために**DoProgressDialog**を呼び出します。 
+**imapisupport::D o進捗ダイアログ**メソッドは、アドレス帳とメッセージストアプロバイダーのサポートオブジェクトに実装されています。 これらのプロバイダーは**doprogress ダイアログ**を呼び出して、進行状況の情報を計算し、標準ダイアログボックスを表示する[imapiprogress](imapiprogressiunknown.md)インターフェイスの MAPI 実装にアクセスします。 
   
-進行中のオブジェクトと、 **IMAPIProgress**インターフェイスを使用する方法の詳細については、[進行状況のインジケーターの表示](how-to-display-a-progress-indicator.md)を参照してください。
+progress オブジェクトと**imapiprogress**インターフェイスを使用する方法については、「[進行状況インジケーターを表示する](how-to-display-a-progress-indicator.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: RunDataMacro マクロ アクション (カスタム web アプリケーションのアクセス)
+title: RunDataMacro マクロアクション (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: f6010ac5-6c08-4c1b-a811-ff81b30ed5f0
 description: RunDataMacro/データマクロの実行アクションを使用して、スタンドアロンデータ マクロを実行できます。
-ms.openlocfilehash: 55a0ff4c731dc517c5d71aa20d8e46c3b4ff4611
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 68c0e5a3837039bdab1165e686adb3bdf2a5b6f8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304243"
 ---
-# <a name="rundatamacro-macro-action-access-custom-web-app"></a>RunDataMacro マクロ アクション (カスタム web アプリケーションのアクセス)
+# <a name="rundatamacro-macro-action-access-custom-web-app"></a>RunDataMacro マクロアクション (Access カスタム web アプリ)
 
 " **RunDataMacro/データマクロの実行** " アクションを使用して、スタンドアロンデータ マクロを実行できます。 
   
@@ -23,7 +23,7 @@ ms.locfileid: "19798726"
   
 ## <a name="setting"></a>設定
 
-" **RunDataMacro/データマクロの実行** " アクションの引数は次のとおりです。 
+"RunDataMacro/データマクロの実行" アクションの引数は次のとおりです。 
   
 |**アクションの引数**|**説明**|
 |:-----|:-----|
@@ -33,6 +33,6 @@ ms.locfileid: "19798726"
 
 マクロ デザイナーで実行するデータ マクロを選択すると、そのデータ マクロにパラメーターが必要であるかどうかが自動的に判断されます。パラメーターが必要な場合は、引数を入力するテキストボックスが表示されます。
   
-**RunDataMacro**アクションを含むマクロを実行するし、 **RunDataMacro**アクションに到達して、data という名前のマクロが実行されます。 Data という名前のマクロが完了したら、アクセスが元に戻りし、次のアクションを実行します。 
+When you run a macro that contains the **RunDataMacro** action and it reaches the **RunDataMacro** action, Access runs the called data macro. When the called data macro has finished, Access returns to the original macro and runs the next action. 
   
 

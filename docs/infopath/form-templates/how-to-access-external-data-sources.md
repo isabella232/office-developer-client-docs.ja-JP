@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: db7c2521-a1ad-4802-b398-79575d3d310a
 description: InfoPath フォーム テンプレートで作業しているときに、フォームのセカンダリ データ ソースにアクセスしてそこに含まれるデータを操作するコードを書くことができます。
-ms.openlocfilehash: e26708e0033bbfe4110ac522dd1e0a0dd037c31e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: f6957c561231eef0e3e4df6deb09ae89f85afcc5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300197"
 ---
 # <a name="access-external-data-sources"></a>外部データ ソースにアクセスする
 
@@ -36,7 +36,7 @@ InfoPath オブジェクト モデルは、フォームによって使用され�
 
 [DataSourceCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSourceCollection.aspx) クラスには、次のプロパティとメソッドがあります。フォームの開発者は、これらを使用することにより、フォームに含まれている [DataSourceCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSourceCollection.aspx) オブジェクトのインスタンスを管理できます。 
   
-|**名前**|**説明**|
+|**[名前]**|**[説明]**|
 |:-----|:-----|
 |[Count](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSourceCollection.Count.aspx) プロパティ  <br/> |コレクションに含まれている **DataSource** オブジェクト インスタンスの数を返します。  <br/> |
 |[GetEnumerator](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSourceCollection.GetEnumerator.aspx) メソッド  <br/> |コレクションの反復処理に使用できる **IEnumerator** を返します。  <br/> |
@@ -47,7 +47,7 @@ InfoPath オブジェクト モデルは、フォームによって使用され�
 
 [DataSourceCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSourceCollection.aspx) クラスには、次のメソッドとプロパティがあります。フォームの開発者は、これらを使用することにより、InfoPath セカンダリ データ ソースを操作することができます。 
   
-|**名前**|**説明**|
+|**[名前]**|**[説明]**|
 |:-----|:-----|
 |[CreateNavigator](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.CreateNavigator.aspx) メソッド  <br/> |データ ソースへのアクセスおよび編集のための [XPathNavigator](https://msdn.microsoft.com/library/system.xml.xpath.xpathnavigator%28v=vs.110%29.aspx) オブジェクトを返します。  <br/> |
 |[QueryConnection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.QueryConnection.aspx) プロパティ  <br/> |関連付けられたデータ接続オブジェクトへの参照を取得します。  <br/> データ接続に対してクエリを実行し、返されたデータを、 **DataSource** オブジェクトに関連付けられた XML ノードに XML として挿入するには、関連付けられたデータ接続オブジェクトの [Execute](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataConnection.Execute.aspx) メソッドを使用します。  <br/> |
@@ -60,7 +60,7 @@ InfoPath オブジェクト モデルは、フォームによって使用され�
 
 データ接続にアクセスするためのクラスは、さまざまなプロパティとメソッドを提供し、これらは外部データ ソースへの接続を通じてデータを取得および送信します。 **DataSource** オブジェクトに関連付けられるデータ接続は、外部データ接続の種類に依存します。InfoPath は、データ接続にアクセスするために以下のクラスを実装します。 
   
-|**名前**|**説明**|
+|**[名前]**|**[説明]**|
 |:-----|:-----|
 |[AdoQueryConnection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.AdoQueryConnection.aspx) クラス  <br/> |ADO/OLEDB データ ソースのクエリを実行します。Microsoft Access および Microsoft SQL Server に限定されます。  <br/> |
 |[AdoSubmitConnection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.AdoSubmitConnection.aspx) クラス  <br/> |ADO/OLEDB データ ソースにデータを送信します。Microsoft Access および Microsoft SQL Server に限定されます。  <br/> |

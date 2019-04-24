@@ -12,23 +12,23 @@ api_type:
 - COM
 ms.assetid: f0b9c2f4-7011-414d-8e6c-ab22893ef132
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7622baaebf6918cf84c48e53291cf5ec2c0b1a4a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 60a335f85eea8778580e0bd74693a5c28591103c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282629"
 ---
 # <a name="sizedssortorderset"></a>SizedSSortOrderSet
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-並べ替え順の指定した数値を含む名前付き[SSortOrderSet](ssortorderset.md)構造体を作成します。 
+指定した数の並べ替え順序を含む、名前付きの[ssortorderset](ssortorderset.md)構造を作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |**SSortOrderSet** <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |**SSortOrderSet** <br/> |
    
 ```cpp
 SizedSSortOrderSet (_csort,_name)
@@ -38,17 +38,17 @@ SizedSSortOrderSet (_csort,_name)
 
 __csort_
   
-> 新しい構造体に含まれる並べ替え順序の数です。
+> 新しい構造に含める並べ替え順序の数。
     
-__名_
+__名前_
   
-> 新しい構造体の名前です。
+> 新しい構造の名前を指定します。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-明示的な境界を使用して設定の並べ替え順序を作成するのにには、 **SizedSSortOrderSet**マクロを使用します。 
+**sizedssortorderset**マクロを使用して、明示的な境界で並べ替え順序セットを作成します。 
   
-**SSortOrderSet**構造体へのポインターとしての**SizedSSortOrderSet**マクロの結果を新しい構造体を使用するには、次のキャストを実行します。 
+**sizedssortorderset**マクロの結果として得られる新しい構造を、 **ssortorderset**構造へのポインターとして使用するには、次のキャストを実行します。 
   
 ```cpp
 lpSSortOrderSet = (LPSSortOrderSet) &SizedSSortOrderSet;
@@ -58,5 +58,5 @@ lpSSortOrderSet = (LPSSortOrderSet) &SizedSSortOrderSet;
 ## <a name="see-also"></a>関連項目
 
 - [SSortOrderSet](ssortorderset.md)
-- [構造体に関連するマクロ](macros-related-to-structures.md)
+- [構造に関連するマクロ](macros-related-to-structures.md)
 

@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: e0513178-ddcb-4086-ab19-1bc80cf114cc
 description: ここでは、初期化コードと後処理コード、イベント ハンドラーを追加する方法、InfoPath 2003 互換オブジェクト モデルを使用した InfoPath フォーム テンプレートのデバッグと展開の方法、スレッド サポート、および InfoPath マネージ コード ソリューションからの Microsoft XML Core Services (MSXML) の操作について説明します。
-ms.openlocfilehash: 16d49b24b2eed3b7fe15621d47663a94f1958cfa
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 5069636dde87eb473a2b8bef4b58a6006d557085
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303746"
 ---
 # <a name="creating-form-templates-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してフォーム テンプレートを作成する
 

@@ -8,18 +8,18 @@ ms.assetid: cceb8dcb-5ce1-4c32-b057-6201b62a646f
 description: 2 つの式を比較して、"以上" かどうかを判定します。
 localization_priority: Priority
 ms.openlocfilehash: 76472544be950c68f3b5d42fe13b3040e9268f48
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302500"
 ---
 # <a name="greater-than-or-equal-to-access-custom-web-app"></a>以上 (Access カスタム Web アプリ)
 
 2 つの式を比較して、"以上" かどうかを判定します。
   
 > [!IMPORTANT]
-> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/ja-JP/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 ## <a name="syntax"></a>構文
 

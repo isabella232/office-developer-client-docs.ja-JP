@@ -7,15 +7,15 @@ localization_priority: Normal
 ms.assetid: f08f9212-af10-1287-477d-adde7674f523
 description: Microsoft InfoPath エディターのフォームの結合機能を使用すると、複数のフォームのデータを 1 つのフォームに結合することができます。
 ms.openlocfilehash: 598c44bfe63a31237bf82ceb2212b001fbe7cc1f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303725"
 ---
 # <a name="enable-custom-merging-of-infopath-forms"></a>InfoPath フォームのカスタム結合を有効にする
 
-Microsoft InfoPath エディターの**フォームの結合**機能を使用すると、複数のフォームのデータを 1 つのフォームに結合することができます。 これは、データの集計とも呼ばれます。 フォームの結合が有効になっている場合、**[ファイル]** タブ、**[保存と送信]&amp;**、**[インポートとリンク]&amp;** の **[フォームの結合]**、**[フォームの結合]** ボタンの順にクリックし、1 つ以上のフォームを選択して、現在開かれているフォームに結合することができます。 現在開かれているフォームをターゲット フォームと呼び、**[フォームの結合]** ダイアログ ボックスで選択したフォームをソース フォームと呼びます。
+The **Merge Forms** feature of the Microsoft InfoPath editor is designed to combine the data from multiple forms into a single form. This is also known as data aggregation. If merging forms is enabled, you can click the **File** tab, click **Save &amp; Send**, click **Merge Forms** under **Import &amp; Link**, and then click the **Merge Forms** button to select one or more forms to merge with the currently opened form. The form that is currently open is the target form and the forms selected in the **Merge Forms** dialog box are known as the source forms.
   
 フォームの結合によって集計されたデータには、ソース フォームとターゲット フォームのすべてのデータが含まれる場合と、元データの一部のみが含まれる場合があります。既定の動作は次のとおりです。
   

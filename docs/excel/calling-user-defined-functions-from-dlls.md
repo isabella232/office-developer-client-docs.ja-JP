@@ -1,5 +1,5 @@
 ---
-title: Dll からユーザー定義関数の呼び出し
+title: DLL からのユーザー定義関数の呼び出し
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -9,16 +9,16 @@ keywords:
 localization_priority: Normal
 ms.assetid: 99a37108-0083-4240-9c6a-3afa8d7a04f6
 description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
-ms.openlocfilehash: 4e893cf1e54489610315dd5c5d57bd78c3c936d0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9e2ca3f4485fb41c5ab6a48f323b4c0093e747e4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301646"
 ---
-# <a name="calling-user-defined-functions-from-dlls"></a>Dll からユーザー定義関数の呼び出し
+# <a name="calling-user-defined-functions-from-dlls"></a>DLL からのユーザー定義関数の呼び出し
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
 ���[�N�V�[�g����̃��[�U�[��[](xludf.md)�ς݊֐��R�[�h�͂���܂���BUDF ��Ăяo����悤�ɁAC API �� XLL ��p�̊֐��A�܂� [xlUDF ](xludf.md) �֐���G�N�X�|�[�g���܂��B�֐��̍ŏ��̈����́A�֐����ł��镶����ŁA�㑱�̈����� UDF ���ʏ�z�肵�Ă��镶����ł��B 
   
@@ -26,16 +26,16 @@ ms.locfileid: "19798776"
   
 - XLL �̊��S�p�X�ƃt�@�C����
     
-- XLL ����G�N�X�|�[�g���ꂽ UDF �܂��̓R�}���h�̖��O
+- XLL からエクスポートされた UDF またはコマンドの名前
     
-- �߂�l�ƈ����R�[�h������
+- 戻り値と引数コード文字列
     
 > [!NOTE]
 > [!����] XLL �t�@�C������G�N�X�|�[�g���ꂽ�Ƃ��̖��O�́AExcel ���F�����Ă��� UDF �܂��̓R�}���h�̓o�^���Ƃ͈�v���Ȃ��\��������܂��B 
   
 Excel 2007 �ȍ~�́A���̓c�[�� (ATP) �֐��͊��S�ɑg�ݍ��܂�Ă���AC API �ɂ́APRICE �� **xlfPrice** �Ȃǂ̊֐��ɑ΂��邻�̓Ǝ��̗񋓑̂�����܂��B�ȑO�̃o�[�W�����ł́A���������֐��̎g�p�ɂ́A **xlUDF** ��g�p����K�v������܂����B�A�h�C���� Excel 2003 ����� Excel 2007 �ȍ~�̃o�[�W�����Ŏg���K�v������A�A�h�C�������������֐���g���ꍇ�A���[�U�[���ŐV�o�[�W��������肵�āA�K�؂ȕ��@�Ŋ֐���Ăяo���K�v������܂��B 
   
-## <a name="examples"></a>��
+## <a name="examples"></a>例
 
 ���̗�́A���s���� Excel �̃o�[�W������ 2003 �ȑO�̏ꍇ�ɁAATP �֐� **PRICE** ��Ăяo�� **xlUDF** �֐���\���Ă��܂��B�O���[�o�� �o�[�W�����ϐ� (���̗�ł� **gExcelVersion12plus** �Ȃ�) �̐ݒ�ɂ��ẮA [���ʌ݊���](backward-compatibility.md) ��Q�Ƃ��Ă��������B
   
@@ -109,13 +109,13 @@ LPXLOPER12 WINAPI UDF_2(LPXLOPER12 pxArg)
 }
 ```
 
-**UDF\_2**の呼び出し**UDF\_1**、 **pxArg**の値変更されず**Excel12**への呼び出しの後、 **xRetVal**の**UDF_1**によって返される値が含まれています。
+**udf\_2**が**udf\_1**を呼び出す場合、 **pxArg**の値は**Excel12**の呼び出しの後に変更されず、 **UDF_1**によって返された値は**xretval**に格納されます。
   
 ���̕��@�� UDS �ւ̌Ăяo���񐔂𑽂��s���ꍇ�A�܂��ŏ��� [xlfEvaluate �֐�](xlfevaluate.md)��g�p���Ċ֐��̖��O��]���ł��܂��B���̌��ʂ̐��́A **xlfRegister** �֐����Ԃ��o�^ ID �Ɠ����ŁA�֐����̑���� **xlUDF** �֐��ւ̍ŏ��̈����Ƃ��ēn�����Ƃ��ł��܂��B����ɂ�� Excel �́A�֐����̌���������K�v�ȏꍇ�ɔ�ׁA��葬���֐�������A�Ăяo�����Ƃ��ł��܂��B 
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 - [���Ԃ̂����鑀��Ń��[�U�[�ɂ�钆�f�������](permitting-user-breaks-in-lengthy-operations.md)
 - [DLL �܂��� XLL ����̂݌Ăяo���\�� C API �֐�](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
-- [Excel XLL SDK �̊T�v](getting-started-with-the-excel-xll-sdk.md)
+- [Excel XLL SDK の概要](getting-started-with-the-excel-xll-sdk.md)
 

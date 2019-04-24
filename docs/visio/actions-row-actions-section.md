@@ -8,42 +8,41 @@ f1_keywords:
 - Vis_DSS.chm60017
 localization_priority: Normal
 ms.assetid: 29a7464a-b9d4-a8ea-161b-3044de32ed23
-description: カスタム メニューのコマンドをショートカット メニューまたは操作タグに関連付けられたアクションを指定したセルが含まれています。 [操作] セクションには、アクションごとに 1 つのアクションの行が含まれています。
-ms.openlocfilehash: f25ab75fe2bec35b09d2910ef731d11264224b7f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: ショートカットメニューまたはアクションタグメニューで、ユーザー設定のコマンドに関連付けられているアクションを指定するセルが含まれています。 [Actions] セクションには、各アクションごとに 1 つの [Actions] 行があります。
+ms.openlocfilehash: 37464e98b3e4f7d07b2ae4bd391b31ec009b6726
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283045"
 ---
-# <a name="actions-row-actions-section"></a>[Actions] 行 ([操作] セクション)
+# <a name="actions-row-actions-section"></a>[Actions] 行 ([Actions] セクション)
 
-カスタム メニューのコマンドをショートカット メニューまたは操作タグに関連付けられたアクションを指定したセルが含まれています。 [操作] セクションには、アクションごとに 1 つのアクションの行が含まれています。
+ショートカットメニューまたはアクションタグメニューで、ユーザー設定のコマンドに関連付けられているアクションを指定するセルが含まれています。 [Actions] セクションには、各アクションごとに 1 つの [Actions] 行があります。
   
 > [!NOTE]
 > Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。 
   
-アクション行のアクションと呼びます。 *名*と、次のセルが含まれています。 詳細については、特定のセルを参照してください。 
+[Actions] 行の名前は Actions. 次のセルに*名前*とが含まれます。 詳細については、各セルに関連する項目を参照してください。 
   
 |**Cell**|**説明**|
 |:-----|:-----|
-|[Action](action-cell-actions-section.md) <br/> |ショートカット メニューまたはアクション タグ メニューの項目を選択したときに実行される数式が格納されています。
-  <br/> |
-|[Menu](menu-cell-actions-section.md) <br/> |アクション タグやショートカット メニューに表示されるメニュー項目の名前を定義します。  <br/> |
-|[[Tagname]](tagname-cell-actions-section.md) <br/> |このアクションを表示するアクション タグの論理名を指定します。  <br/> |
-|[ButtonFace](buttonface-cell-actions-section.md) <br/> |ショートカット メニューまたはアクション タグ メニューで、項目の横に表示されるアイコンを指定します。  <br/> |
-|[[Sortkey]](sortkey-cell-actions-section.md) <br/> |アクション タグ メニューまたはショートカット メニューに表示されるメニュー項目の順序を指定するための数字です。  <br/> |
-|[Checked](checked-cell-actions-section.md) <br/> |アクション タグやショートカット メニューにメニュー項目がチェックされるかどうかを示します。  <br/> |
+|[Action](action-cell-actions-section.md) <br/> |ショートカット メニューまたはアクション タグ メニューの項目を選択したときに実行される数式が格納されています。  <br/> |
+|[メニュー](menu-cell-actions-section.md) <br/> |アクションタグまたはショートカットメニューに表示されるメニュー項目の名前を定義します。  <br/> |
+|[[tagname]](tagname-cell-actions-section.md) <br/> |このアクションを表示するアクション タグの論理名を指定します。  <br/> |
+|[buttonface]](buttonface-cell-actions-section.md) <br/> |ショートカット メニューまたはアクション タグ メニューで、項目の横に表示されるアイコンを指定します。  <br/> |
+|[[sortkey]](sortkey-cell-actions-section.md) <br/> |アクション タグ メニューまたはショートカット メニューに表示されるメニュー項目の順序を指定するための数字です。  <br/> |
+|[Checked](checked-cell-actions-section.md) <br/> |アクションタグまたはショートカットメニューでメニュー項目がチェックされているかどうかを示します。  <br/> |
 |[Disabled](disabled-cell-actions-section.md) <br/> |ショートカット メニューまたはアクション タグ メニューのメニュー項目が無効かどうかを示します。  <br/> |
 |[ReadOnly](readonly-cell-actions-section.md) <br/> |メニュー項目が読み取り専用 (クリックできない) かどうかを示します。  <br/> |
-|[非表示](invisible-cell-actions-section.md) <br/> |アクション タグ メニューまたはショートカット メニューにメニュー項目が表示されるかどうかを示します。  <br/> |
-|[BeginGroup](begingroup-cell-actions-section.md) <br/> |メニュー、メニュー項目の上に区切り線を挿入するかどうかを示します。  <br/> |
+|[可視](invisible-cell-actions-section.md) <br/> |アクション タグ メニューまたはショートカット メニューにメニュー項目が表示されるかどうかを示します。  <br/> |
+|[BeginGroup](begingroup-cell-actions-section.md) <br/> |メニュー項目の上に区切り記号を挿入するかどうかを指定します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
- 多くのアクションを追加することができます。  *名前*の行、行に意味のある名前を割り当てるし、セルの値を設定します。 既存の [Actions] セクションにカスタム コマンドを追加するには、行を右クリックし、ショートカット メニューの [**行の挿入**] をクリックします。 
+ 必要に応じて [Actions.  必要に応じて行に*名前*を付け、わかりやすい名前を行に割り当て、セルの値を設定します。 既存の [Actions] セクションにカスタム コマンドを追加するには、行を右クリックして、ショートカット メニューの **[行の挿入]** をクリックします。 
   
-行名を赤いテキストで、[シェイプ シート] ウィンドウに表示されるが、これらのセルを参照できます。 アクションには、わかりやすい名前を割り当てます。 *名*の行は、行をクリックし、Actions.Custom 行の名前を作成するなどの*ユーザー設定*] などの名前を入力します。 [Menu] セルを参照するには、行名を使用し、します。 
+これらのセルを行名で参照できます。これは、シェイプシートウィンドウに赤いテキストで表示されます。 アクションにわかりやすい名前を割り当てる。 [*名前*] 行をクリックし、[ *custom* ] などの名前を入力して、行名のアクションを作成します (例: custom)。 その後、[Actions] を使用して [menu] セルを参照できます。 
   
 入力する行名は、セクション内で一意の名前にする必要があります。
   

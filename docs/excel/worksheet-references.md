@@ -1,5 +1,5 @@
 ---
-title: ワークシートの参照
+title: ���[�N�V�[�g�̎Q��
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -9,18 +9,18 @@ keywords:
 localization_priority: Normal
 ms.assetid: 53406fb8-4ca5-4204-a6ad-b21ca9e6a100
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: b7089fb891c96be9182189e3a5f30057721cebbc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 2944f73a3144837a4be8aff7c7fed9a8d2158203
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304026"
 ---
 # <a name="worksheet-references"></a>ワークシートの参照
 
  **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-Microsoft Excel における参照とは、長方形のセル ブロック (1 セルのみの場合もある) を参照するデータ型を指します。または、複数の離散したセル ブロックを参照する場合もあります。 Excel 内部では、現在のシート上のセルに 1 つの参照型を使用します。これは内部参照として知られています。 現在のシートに含まれていないあらゆるセルは、外部参照とも呼ばれる、もう 1 つの参照型で表します。 「作業中」と「現在」の定義については、次のセクションを参照してください。
+A reference in Microsoft Excel is a data type that refers to a rectangular block of cells (which can be just one cell), or in some cases, a number of disjoint blocks of cells. Internally, Excel uses one reference type for cells on the current sheet, known as an internal reference. Any cell that is not on the current sheet is described by another type of reference known as an external reference. See the next section for the definition of active and current.
   
 ## <a name="active-vs-current"></a>作業中と現在
 
@@ -40,7 +40,7 @@ Excel での「作業中」という用語は、ユーザーが表示してい�
 
 内部参照と外部参照の主な違いは、外部参照のデータ型には、ワークシート ID に加えて、参照先セルの記述が含まれていることです。内部参照にはシートへの参照が含まれていません。シートが現在のシートであることを暗黙的に示します。 
   
-多くの C API 関数は、参照を返すか、参照引数を取ります。 参照引数を取る C API 関数は、いずれも内部参照または外部参照のどちらも受け入れます。ただし、**xlSheetNm** 関数は例外であり、外部参照が必要です。 関数によっては、内部参照または外部参照のいずれか一方のみを返します。 たとえば、C API 関数 [xlfCaller](xlfcaller.md) は、定義により、現在のシート上の呼び出し元のセルへの参照を返します。 返される参照は常に内部参照になります。ただし、関数がワークシートのセルから呼び出されたのでない場合、非参照型を返す可能性があります。 C API 関数 [xlSheetId](xlsheetid.md) は、必ず外部参照データ型に含まれるワークシート ID を返します。 
+Many C API functions return references or take reference arguments. Any C API function that takes reference arguments accepts either internal or external references, except the **xlSheetNm** function, which requires an external reference. Some functions only return either internal or external references. For example, the C API function [xlfCaller](xlfcaller.md) returns a reference to the calling cells, by definition, on the current sheet. The returned reference is always an internal reference, although the function can return non-reference types where the function is not called from a worksheet cell. The C API function [xlSheetId](xlsheetid.md) always returns the ID of a worksheet contained within an external reference data type. 
   
 内部参照型と外部参照型の、もう一つの主な違いは、外部参照のデータ型は同じシート上の複数の離散したセル ブロックを表すことができるという点です。内部参照では、現在のシートの 1 ブロックのみを表すことができます。離散した参照は、範囲の引数を取る任意の関数に渡すことができます。
   

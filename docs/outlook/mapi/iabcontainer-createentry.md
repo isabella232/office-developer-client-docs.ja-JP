@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: ea1daf74-d9e3-4304-bf5d-889afeea6ae9
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2f8a6baa9a910b91e633084f1d9cd8ac52b24d5b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 9f80130279e3437dd9be947de97d3f0d4181165e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287029"
 ---
 # <a name="iabcontainercreateentry"></a>IABContainer::CreateEntry
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージングのユーザー、配布リスト、または別のコンテナーにすることができますが、新しいエントリを作成します。
+新しいエントリを作成します。これは、メッセージングユーザー、配布リスト、または別のコンテナーにすることができます。
   
 ```cpp
 HRESULT CreateEntry(
@@ -40,69 +40,69 @@ HRESULT CreateEntry(
 
  _cbEntryID_
   
-> [in]_LpEntryID_パラメーターで指定されたエントリの識別子内のバイト数。 
+> 順番_lな tryid_パラメーターで指定されたエントリ識別子のバイト数。 
     
- _lpEntryID_
+ _lて tryid_
   
-> [in]特定の種類の新しいエントリを作成するためのテンプレートのエントリの識別子へのポインター。 
+> 順番特定の種類の新しいエントリを作成するためのテンプレートのエントリ識別子へのポインター。 
     
- _ulCreateFlags_
+ _ulcreateflags_
   
-> [in]エントリの作成を実行する方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番エントリの作成を実行する方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 CREATE_CHECK_DUP_LOOSE 
   
-> 緩やかなレベルの重複するエントリのチェックを実行する必要があります。 緩やかな重複するエントリのチェックの実装は、特定のプロバイダーです。 などのプロバイダーは、同じ 2 つのエントリの表示名と緩やかな一致を定義できます。
+> 重複したエントリのチェックは、緩やかなレベルで実行する必要があります。 重複していない重複するエントリのチェックは、プロバイダーに固有のものです。 たとえば、プロバイダーは、同じ表示名を持つ2つのエントリとして緩やかな一致を定義できます。
     
 CREATE_CHECK_DUP_STRICT 
   
-> 厳密なレベルの重複するエントリのチェックを実行する必要があります。 厳密な重複するエントリのチェックの実装は、特定のプロバイダーです。 などのプロバイダーは、両方同じ 2 つのエントリの名前とメッセージのアドレスを表示すると、厳密な一致を定義できます。
+> 重複するエントリの厳密なレベルのチェックを実行する必要があります。 厳密に重複したエントリチェックの実装は、プロバイダーに固有のものです。 たとえば、プロバイダーは、同じ表示名とメッセージアドレスの両方を持つ2つのエントリとして厳密な一致を定義できます。
     
 CREATE_REPLACE 
   
-> 2 つ重複していることが判明した場合、新しいエントリは既存のものに置き換えてください。
+> 2つが重複していると判断された場合は、新しいエントリで既存のエントリを置き換える必要があります。
     
  _lppMAPIPropEntry_
   
-> [out]新しく作成されたエントリへのポインターへのポインター。
+> 読み上げ新しく作成されたエントリへのポインターへのポインターを示します。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 新しいエントリが正しく作成されました。
+> 新しいエントリが正常に作成されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IABContainer::CreateEntry**メソッドは、インターフェイスの実装のエントリにさらにアクセスするためにポインターを返す、指定したコンテナーに特定の種類の新しいエントリを作成します。 新しいエントリを作成するには、その一時テーブルで公開されている、利用可能なテンプレートのコンテナーの一覧から選択されているテンプレートを使用します。 呼び出し元の[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを呼び出すと、 **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) のプロパティを要求しているコンテナーの一時テーブルにアクセスします。 
+**IABContainer:: createentry**メソッドは、指定されたコンテナーに特定の型の新しいエントリを作成し、そのエントリにさらにアクセスするためのインターフェイス実装へのポインターを返します。 新しいエントリは、1回限りのテーブルで公開されている使用可能なテンプレートの一覧から選択されたテンプレートを使用して作成されます。 発信者は、 [imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出して、 **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) プロパティを要求することによって、コンテナーの1回限りのテーブルにアクセスします。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**IABContainer::CreateEntry**メソッドをサポートするすべてのコンテナーは、変更可能である必要があります。 変更可能であることを示すには、その**PR_CONTAINER_FLAGS** ([PidTagContainerFlags](pidtagcontainerflags-canonical-property.md)) プロパティで、コンテナーの AB_MODIFIABLE フラグを設定します。 
+**IABContainer:: createentry**メソッドをサポートするすべてのコンテナーを変更可能にする必要があります。 コンテナーの AB_MODIFIABLE フラグを**PR_CONTAINER_FLAGS** ([PidTagContainerFlags](pidtagcontainerflags-canonical-property.md)) プロパティに設定して、それが変更可能であることを示します。 
   
-_UlCreateFlags_フラグをすべてサポートする必要があります。 ただし、解釈し、これらのフラグの使用は、特定の実装-は、実装のコンテキストで意味する CREATE_CHECK_DUP_LOOSE と CREATE_CHECK_DUP_STRICT の意味を判断できます。 できないかのエントリは、重複しているかどうかを判断できませんを作成するエントリを常に許可します。 
+_ulcreateflags_フラグはすべてサポートする必要があります。 ただし、これらのフラグの解釈と使用は実装に固有です。つまり、実装のコンテキストにおける CREATE_CHECK_DUP_LOOSE と CREATE_CHECK_DUP_STRICT の意味を判断できます。 エントリが重複しているかどうかを判断できない場合、または指定しない場合は、常にエントリの作成を許可します。 
   
-プロバイダーによって実装厳密なエントリの表示名を照合することによってチェックがメッセージング アドレス、および検索キーのエントリです。他のプロバイダーでは、名前とアドレスを表示するのには一致するものを制限します。 緩やかなエントリのチェックは、多くの場合のみの表示名を確認することによって実装されます。 
+プロバイダーによっては、エントリの表示名、メッセージアドレス、および検索キーを一致させることによって、厳密なエントリチェックを実装しています。その他のプロバイダーは、表示名とアドレスに一致するものを制限します。 厳密なエントリチェックは、表示名のみをチェックすることによって実装されることがよくあります。 
   
-## <a name="notes-to-host-address-book-provider-implementers"></a>アドレス帳プロバイダーの実装をホストするためのメモ
+## <a name="notes-to-host-address-book-provider-implementers"></a>アドレス帳プロバイダー実装者をホストするためのメモ
 
-コンテナーは、他のプロバイダーのテンプレートの中から、エントリを作成できます、 **CreateEntry**の実装は、作成されたエントリに関連付けられているプロパティの一部またはすべてのストレージを提供する必要があります。 などのエントリの**PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) のプロパティの記憶域を提供する場合は、外部プロバイダーに依存することがなくその [詳細] ダイアログ ボックスを生成できます。 
+コンテナーが他のプロバイダーのテンプレートからエントリを作成できる場合は、 **createentry**の実装によって、作成されたエントリに関連付けられているプロパティの一部またはすべてに対してストレージを提供する必要があります。 たとえば、エントリの**PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) プロパティのストレージを提供している場合は、外部プロバイダーに依存せずに [詳細] ダイアログボックスを生成することができます。 
   
-コンテナーには、 **PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) のプロパティをサポートするためのエントリを作成できます、 **CreateEntry**の実装が、次の操作にする必要があります。 
+コンテナーが**PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) プロパティをサポートするエントリを作成できる場合、 **createentry**の実装は次のことを行う必要があります。 
   
-1. [IMAPISupport::OpenTemplateID](imapisupport-opentemplateid.md)メソッドを呼び出します。 **OpenTemplateID**は、外部プロバイダーのエントリが作成される新しいエントリにバインドするコードを有効にします。 外部プロバイダーでは、ホストのアドレス帳プロバイダーのコンテナー内にそのテンプレートから作成されたエントリの制御を維持するには、このバインド処理をサポートします。 
+1. [imapisupport:: OpenTemplateID](imapisupport-opentemplateid.md)メソッドを呼び出します。 **OpenTemplateID**では、エントリの外部プロバイダーのコードを使用して、作成される新しいエントリにバインドできます。 外部プロバイダーは、このバインドプロセスをサポートして、テンプレートから作成されたエントリに対する制御をホストアドレス帳プロバイダーのコンテナーに保持します。 
     
-2. 、必要な初期化を実行し、新しいオブジェクトにすべての**OpenTemplateID**から、 _lppMAPIPropNew_パラメーターで返されるオブジェクトを外部のプロバイダーのエントリからプロパティを設定します。
+2. 必要な初期化を実行し、外部プロバイダーのエントリから、 **OpenTemplateID**から_lppMAPIPropNew_パラメーターで返されるオブジェクトが返されるすべてのプロパティを新しいオブジェクトに設定します。
     
-**OpenTemplateID**が成功した場合は、 _lpMAPIPropData_パラメーターで指定された実装に直接ではなく、 _lppMAPIPropNew_パラメーターで指定された実装にプロパティをコピーします。 外部プロバイダーから他の任意のエントリを同じように、オフラインで使用する新しいエントリを初期化します。 
+**OpenTemplateID**が正常に終了した場合は、 _lpMAPIPropData_パラメーターで示される実装に直接ではなく、 _lppMAPIPropNew_パラメーターによって示される実装にプロパティをコピーします。 外部プロバイダーからの他のエントリと同様に、オフラインで使用するために新しいエントリを初期化します。 
   
-**OpenTemplateID**には、エラーが返されます、 **CreateEntry**が失敗する必要があります。 作成するエントリを許可しません。 外部のプロバイダーは、プロバイダーで、データに関する判断を行うことができます、ために、外部のプロバイダーに正常にバインドされていないいるテンプレート識別子を持つエントリは作成できません。 
+**OpenTemplateID**がエラーを返す場合、 **createentry**は失敗します。 エントリの作成を許可しません。 外部プロバイダーはプロバイダーのデータについて想定することができるので、外部プロバイダーに正常にバインドされていないテンプレート識別子を使用してエントリを作成しないでください。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**CreateEntry**が返されるときにする、新しいエントリのエントリ id をすぐにアクセスできない場合があります。 アドレス帳のプロバイダーによって、それはないまで利用可能な新しいエントリの[IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを呼び出した後。 
+**createentry**から戻ると、新しいエントリのエントリ識別子にすぐにアクセスすることができます。 アドレス帳プロバイダーによっては、新しいエントリの[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出した後に使用できなくなります。 
   
-重複チェック フラグは、 **CreateEntry**にパラメーターとして渡されます、ただし、 **SaveChanges**が呼び出されるまで操作を確認した後、複製は発生しません。 したがって、 **CreateEntry**ではなく、**たいていは SaveChanges**は、既に既存のエントリを作成しようとすることを示す、MAPI_E_COLLISION などの関連するエラーが返されます。
+重複チェックフラグはパラメーターとして**createentry**に渡されますが、 **SaveChanges**が呼び出されるまで重複したチェック操作は発生しません。 そのため、MAPI_E_COLLISION などの関連エラーは、既に存在するエントリを作成しようとしたことを示しています。これは、 **createentry**ではなく**SaveChanges**によって返されます。
   
 ## <a name="see-also"></a>関連項目
 
@@ -114,7 +114,7 @@ _UlCreateFlags_フラグをすべてサポートする必要があります。 �
   
 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)
   
-[PidTagCreateTemplates 標準プロパティ Property](pidtagcreatetemplates-canonical-property.md)
+[PidTagCreateTemplates 標準プロパティ](pidtagcreatetemplates-canonical-property.md)
   
 [IABContainer : IMAPIContainer](iabcontainerimapicontainer.md)
 

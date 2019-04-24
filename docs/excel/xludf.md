@@ -11,12 +11,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: b608b356-ca5c-47bb-9de8-9b7e2b3924dd
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 8f45f800ca50d2a46792e7cf5e00ac25bd099e8c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 569334847c7612b86f6ddc967f159e2ef425cbbb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303816"
 ---
 # <a name="xludf"></a>xlUDF
 

@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6421c9a2-07f7-4deb-aa43-c50d82cb0002
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 1d55f22de88b274d0403f81717d0fddefbea0219
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 096f57335572c3788fdf129dd3bcf4a76cf62b01
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304166"
 ---
 # <a name="calludf"></a>CallUDF
 
@@ -28,27 +28,27 @@ int CallUDF(int SessionId, WCHAR *XllName, WCHAR *UDFName, LPXLOPER12 pxAsyncHan
 
 _SessionId_
   
-> 呼び出しを行うセッションの ID。
+> �Ăяo����s���Z�b�V������ ID�B
     
 _XLLName_
   
-> ユーザー定義関数が含まれる XLL の名前。
+> ���[�U�[��`�֐����܂܂�� XLL �̖��O�B
     
 _UDFName_
   
-> ユーザー定義関数の名前。
+> ���[�U�[��`�֐��̖��O�B
     
 _CallBackAddr_
   
-> ユーザー定義関数が終了するときにコネクタが呼び出す必要がある関数。
+> ���[�U�[��`�֐����I������Ƃ��ɃR�l�N�^���Ăяo���K�v������֐��B
     
 _pxAsyncHandle_
   
-> Excel とコネクタが、保留中のユーザー定義関数の呼び出しを追跡するために使用する非同期ハンドル。コネクタはこれを使用して、呼び出しが完了した時点で、_CallBackAddr_ 引数で渡された関数ポインターを使用して Excel へのコールバックを行います。 
+> Excel �ƃR�l�N�^���A�ۗ����̃��[�U�[��`�֐��̌Ăяo����ǐՂ��邽�߂Ɏg�p����񓯊��n���h���B�R�l�N�^�ɂ���āA��قǁA�Ăяo�����I�������Ƃ� ( _CallBackAddr_ �����ɓn���ꂽ�֐��|�C���^�[��g�p���� Excel �ɃR�[���o�b�N����Ƃ�) �Ɏg�p����܂��B 
     
 _ArgCount_
   
-> ユーザー定義関数に渡される引数の数。最大値は 255 です。
+> ���[�U�[��`�֐��ɓn���������̐��B�ő�l�� 255 �ł��B
     
 _Parameter1_
   

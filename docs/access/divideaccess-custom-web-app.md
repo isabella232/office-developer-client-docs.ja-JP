@@ -1,19 +1,19 @@
 ---
-title: (カスタム web アプリケーションのアクセス) の (分割)/
+title: /(除算) (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 3d296730-197b-44db-853b-881597dd9b48
 description: ある数を別の数で割ります。
-ms.openlocfilehash: fd5ce0f26d6ea03f14103cd76779a95ca8a34b1f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 48d43b224743949f86c5d206d9919a9e2d6fbcae
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308261"
 ---
-# <a name="-divide-access-custom-web-app"></a>(カスタム web アプリケーションのアクセス) の (分割)/
+# <a name="-divide-access-custom-web-app"></a>/(除算) (Access カスタム web アプリ)
 
 ある数を別の数で割ります。
   
@@ -22,19 +22,19 @@ ms.locfileid: "19798596"
   
 ## <a name="syntax"></a>構文
 
- *配当金*  /  *除数* 
+ *dividend*  /  *divisor* 
   
- *配当金* 除算される数値式です。 Datetime データ型を除く、数値データ型に分類されるデータ型のいずれかの有効な式をすることができます。 
+ *dividend*  Is the numeric expression to divide. Can be any valid expression of any one of the data types of the numeric data type category, except the datetime data type. 
   
- *除数* 被除数を除算する数値式です。 Datetime データ型を除く、数値データ型に分類されるデータ型のいずれかの有効な式をすることができます。 
+ *Divisor*  Is the numeric expression by which to divide the dividend. Can be any valid expression of any one of the data types of the numeric data type category, except the datetime data type. 
   
 ## <a name="return-type"></a>戻り値の型
 
 優先順位の高い引数のデータ型を返します。 
   
-整数の*配当金*が整数の*約数*で分割されている場合は切り捨ての結果の小数部を持つ整数になります。 
+If an integer  *dividend*  is divided by an integer  *divisor*  , the result is an integer that has any fractional part of the result truncated. 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 / 演算子が戻す実際の値は、最初の式を 2 番目の式で割った商です。
   

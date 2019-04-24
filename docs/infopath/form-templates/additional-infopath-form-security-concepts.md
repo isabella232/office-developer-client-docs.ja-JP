@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 77425a61-bf33-b3d8-442a-caee48e54a48
 description: Microsoft InfoPath のセキュリティ モデルは、Internet Explorer に実装されているセキュリティ モデルに基づいています。Internet Explorer のセキュリティ モデルは、セキュリティ ゾーンとレベルの使用によって、安全でない操作からのコンピューターの保護を支援します。InfoPath では、Internet Explorer のセキュリティ モデルと連携して、このセキュリティ モデル内での InfoPath フォームの動作に影響を与える 2 種類のフォーム展開を行うことができます。
 ms.openlocfilehash: 00b0e306507db19f55059fba91277af1ad1714b9
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25387420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303774"
 ---
 # <a name="additional-infopath-form-security-concepts"></a>InfoPath フォームの追加のセキュリティ概念
 
@@ -77,8 +77,8 @@ Microsoft InfoPath の基になっている Internet Explorer のセキュリテ
   
 |**セキュリティ ゾーン/展開**|**操作**|
 |:-----|:-----|
-|インターネット  <br/> |Disabled  <br/> |
-|ローカル イントラネット  <br/> |Disabled  <br/> |
+|インターネット  <br/> |無効  <br/> |
+|ローカル イントラネット  <br/> |無効  <br/> |
 |制限付きサイト  <br/> |Disabled  <br/> |
 |信頼済みサイト  <br/> |プロンプト  <br/> |
 |マイ コンピューター  <br/> |プロンプト  <br/> |
@@ -107,16 +107,16 @@ InfoPath オブジェクト モデル メンバーの悪意のある使用から
 |**セキュリティ ゾーン**|**展開**|**既定のアクセス許可**|
 |:-----|:-----|:-----|
 ||**URL ベース** <br/> |**URN ベース** <br/> |**スクリプトの実行は安全ではないとマークされている ActiveX** <br/> |**クロスドメインでのデータ アクセス** <br/> |**オブジェクト モデルのセキュリティ レベル** <br/> |
-|制限付きサイト  <br/> |N/A  <br/> |N/A  <br/> |N/A  <br/> |N/A  <br/> |N/A  <br/> |
-|インターネット  <br/> |X  <br/> ||無効  <br/> |無効  <br/> |2  <br/> |
-|ローカル イントラネット  <br/> |X  <br/> ||無効  <br/> |プロンプト  <br/> |2  <br/> |
-|信頼済みサイト  <br/> |X  <br/> ||プロンプト  <br/> |有効  <br/> |2  <br/> |
-|ローカル コンピューター  <br/> |X  <br/> |X  <br/> |無効  <br/> |プロンプト  <br/> |2  <br/> |
-|完全に信頼できるフォーム  <br/> |X (信頼された発行元によって署名)  <br/> |X  <br/> |有効  <br/> |有効  <br/> |3  <br/> |
-|完全に信頼できるフォーム  <br/> ||X  <br/> |有効  <br/> |有効  <br/> |3  <br/> |
-|制限あり  <br/> ||X  <br/> |ActiveX なし (制限付きのハードコードされたリストを除く)  <br/> |無効  <br/> |2  <br/> |
-|制限あり  <br/> |X  <br/> ||ActiveX なし (制限付きのハードコードされたリストを除く)  <br/> |無効  <br/> |2  <br/> |
-|制限あり  <br/> |X  <br/> |X  <br/> |ActiveX なし (制限付きのハードコードされたリストを除く)  <br/> |無効  <br/> |2  <br/> |
+|制限付きサイト  <br/> |該当なし  <br/> |該当なし  <br/> |該当なし  <br/> |該当なし  <br/> |該当なし  <br/> |
+|インターネット  <br/> |X  <br/> ||無効  <br/> |無効  <br/> |pbm-2  <br/> |
+|ローカル イントラネット  <br/> |X  <br/> ||無効  <br/> |プロンプト  <br/> |pbm-2  <br/> |
+|信頼済みサイト  <br/> |X  <br/> ||ダイアログを表示する  <br/> |有効  <br/> |pbm-2  <br/> |
+|ローカル コンピューター  <br/> |X  <br/> |X  <br/> |無効  <br/> |プロンプト  <br/> |pbm-2  <br/> |
+|完全に信頼できるフォーム  <br/> |X (信頼された発行元によって署名)  <br/> |X  <br/> |有効  <br/> |有効  <br/> |1/3  <br/> |
+|完全に信頼できるフォーム  <br/> ||X  <br/> |有効  <br/> |有効  <br/> |1/3  <br/> |
+|制限あり  <br/> ||X  <br/> |ActiveX なし (制限付きのハードコードされたリストを除く)  <br/> |無効  <br/> |pbm-2  <br/> |
+|制限あり  <br/> |X  <br/> ||ActiveX なし (制限付きのハードコードされたリストを除く)  <br/> |無効  <br/> |pbm-2  <br/> |
+|制限あり  <br/> |X  <br/> |X  <br/> |ActiveX なし (制限付きのハードコードされたリストを除く)  <br/> |無効  <br/> |pbm-2  <br/> |
    
 フォーム開発時の一般的なセキュリティ ガイドラインの詳細については、「[InfoPath フォーム開発のためのセキュリティ ガイドライン](security-guidelines-for-developing-infopath-forms.md)」を参照してください。
   

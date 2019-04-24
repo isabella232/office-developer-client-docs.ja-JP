@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 32ae2427-882b-45f8-8754-0e8c27fc23ba
 description: InfoPath フォームをプログラムから操作するときは、フォームのウィンドウにアクセスするコードを記述し、ウィンドウに含まれるアイテムの一部をカスタマイズすることができます。Microsoft.Office.InfoPath 名前空間によって提供される InfoPath オブジェクト モデルでは、Window クラスを WindowCollection クラスと共に使用した、フォームのウィンドウへのアクセスがサポートされています。
-ms.openlocfilehash: 5b24798e92849a2d79bf836e12dd91845ee58942
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 018357519e27629c29b2611bd0a88b8d64f0a1eb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303557"
 ---
 # <a name="work-with-form-windows"></a>フォーム ウィンドウを操作する
 
@@ -34,7 +34,7 @@ InfoPath には、次の 2 種類のウィンドウがあります。
 
 [WindowCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.WindowCollection.aspx) クラスには、次のプロパティがあります。フォーム テンプレートの開発者は、これらのプロパティを使用して、フォームに含まれている [Window](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.aspx) オブジェクトを管理できます。 
   
-|**名前**|**説明**|
+|**[名前]**|**[説明]**|
 |:-----|:-----|
 |[Count](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.WindowCollection.Count.aspx) プロパティ  <br/> |コレクションに含まれている [Window](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.aspx) オブジェクトの数を取得します。  <br/> |
 |[Item](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.WindowCollection.Item.aspx) プロパティ  <br/> |指定した [Window](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.aspx) オブジェクトへの参照を取得します。  <br/> |
@@ -43,7 +43,7 @@ InfoPath には、次の 2 種類のウィンドウがあります。
 
 [Window](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.aspx) クラスには、次のメソッドとプロパティがあります。フォームの開発者は、これらを使用することにより、InfoPath ウィンドウを操作できます。 これらのメソッドとプロパティのサポートは、操作対象のウィンドウの種類 ([WindowType](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.WindowType.aspx)) によって異なります。 メソッドとプロパティの中には、ウィンドウの種類がエディター (**WindowType.Editor**) でないと機能しないものがあります。 その他のメソッドとプロパティは、ウィンドウの種類がエディターでも、デザイナー (**WindowType.Designer**) でも機能します。 さらに、InfoPath オブジェクト モデルのすべてのメンバーと同様に、フォーム テンプレートから呼び出す際のメソッドとプロパティのサポートは、セキュリティ レベルおよびフォームのデプロイ方法によって異なります。
   
-|**名前**|**説明**|**ウィンドウの種類のサポート**|
+|**[名前]**|**[説明]**|**ウィンドウの種類のサポート**|
 |:-----|:-----|:-----|
 |[Activate](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.Activate.aspx) メソッド  <br/> |ウィンドウをアクティブ化し、ウィンドウにフォーカスを与えます。  <br/> |**Designer** と **Editor** の両方  <br/> |
 |[Active](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.Active.aspx) プロパティ  <br/> |ウィンドウが現在アクティブなウィンドウかどうかを示す **Boolean** 値を取得します。  <br/> |**Designer** と **Editor** の両方  <br/> |

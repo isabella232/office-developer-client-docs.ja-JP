@@ -1,5 +1,5 @@
 ---
-title: 汎用 DLL の関数
+title: �ėp DLL �̊֐�
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -9,12 +9,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 80ce2247-d69d-45b0-b5e2-4ff0d7078a2c
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: e78f276e58ca1c98786e28ed5167762cf0bfdf7f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 3064e1a09ad8850e121da678f3702a6236574599
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304089"
 ---
 # <a name="functions-in-the-generic-dll"></a>汎用 DLL の関数
 

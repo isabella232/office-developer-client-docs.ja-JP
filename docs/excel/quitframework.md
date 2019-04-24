@@ -11,12 +11,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: d17a3efe-c278-4ef1-b8f9-b958ae012361
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 5c4b122b200d9de0cf098d2bc9e2fbd887ad9ff3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 9408a7938927214802935e54ec8e53b1469e5016
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301625"
 ---
 # <a name="quitframework"></a>QuitFramework
 

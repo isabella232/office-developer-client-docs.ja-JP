@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 730af2da-4c4a-42a7-9d52-56d914107d64
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: aa3c010eafeba7908498965bc0491c993a4a9120
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8aafb849a98028efb37646752a7b49fa5e6ef2ff
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309563"
 ---
 # <a name="iprofadmindeleteprofile"></a>IProfAdmin::DeleteProfile
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 プロファイルを削除します。
   
@@ -36,15 +36,15 @@ HRESULT DeleteProfile(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpszProfileName_
+ _lpszprofilename_
   
-> [in]削除するプロファイルの名前へのポインター。
+> 順番削除するプロファイルの名前へのポインター。
     
  _ulFlags_
   
-> [in]常に NULL を返します。 
+> 順番常に NULL。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -54,21 +54,21 @@ MAPI_E_NOT_FOUND
   
 > 指定されたプロファイルが存在しません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IProfAdmin::DeleteProfile**メソッドは、プロファイルを削除します。 **DeleteProfile**が呼び出されたときに削除するプロファイルを使用している場合、 **DeleteProfile**は S_OK を返しますが、すぐに、プロファイルは削除されません。 代わりに、 **DeleteProfile**は、プロファイルの削除をマークし、不要になった使用されている、すべてのアクティブ ・ セッションの終了したときに後でそれを削除します。 
+**IProfAdmin::D eleteprofile**メソッドは、プロファイルを削除します。 **deleteprofile**を呼び出したときに削除するプロファイルが使用されている場合、 **deleteprofile**は S_OK を返しますが、プロファイルはすぐには削除されません。 代わりに、 **deleteprofile**はプロファイルを削除対象としてマークし、使用されなくなった後に、すべてのアクティブなセッションが終了した時点で削除します。 
   
-プロファイルでは、各メッセージ サービスのエントリ ポイント関数は、 _ulContext_パラメーターに設定された MSG_SERVICE_DELETE 値で呼び出されます。 関数は、サービスを削除し、サービスのプロファイル セクションを削除し、最初に、します。 サービスが削除された後、メッセージ サービスのエントリ ポイント関数は再び呼び出されません。 
+プロファイル内の各メッセージサービスのエントリポイント関数は、 _ulcontext_パラメーターで設定された MSG_SERVICE_DELETE 値を使用して呼び出されます。 最初に、この関数はサービスを削除してから、サービスの [プロファイル] セクションを削除します。 サービスが削除された後に、メッセージサービスエントリポイント関数が再度呼び出されることはありません。 
   
-パスワードがプロファイルを削除する必要はありません。
+プロファイルを削除するためにパスワードは必要ありません。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIProfileFunctions.cpp  <br/> |HrRemoveProfile  <br/> |MFCMAPI では、 **IProfAdmin::DeleteProfile**メソッドを使用して、選択したプロファイルを削除します。  <br/> |
+|MAPIProfileFunctions  <br/> |hrremoveprofile  <br/> |mfcmapi は、 **IProfAdmin::D eleteprofile**メソッドを使用して、選択されているプロファイルを削除します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

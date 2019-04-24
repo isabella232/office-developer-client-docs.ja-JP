@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: f4846dc3-0236-44ed-a1b1-8c13d48fb58a
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 9e22111ec920d89e0874baf71946681c204cacd5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: c3c4ac10003aad8949de94e0f144410af10078b1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309570"
 ---
 # <a name="iprofadmincopyprofile"></a>IProfAdmin::CopyProfile
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 プロファイルをコピーします。
   
@@ -39,43 +39,43 @@ HRESULTCopyProfile(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpszOldProfileName_
+ _lpszoldprofilename_
   
-> [in]コピーするプロファイルの名前へのポインター。
+> 順番コピーするプロファイルの名前へのポインター。
     
- _lpszOldPassword_
+ _lpszoldpassword_
   
-> [in]コピーするプロファイルのパスワードへのポインター。
+> 順番コピーするプロファイルのパスワードへのポインター。
     
- _lpszNewProfileName_
+ _lpsznewprofilename_
   
-> [in]コピー先のプロファイルの新しい名前へのポインター。
+> 順番コピーされたプロファイルの新しい名前へのポインター。
     
- _ulUIParam_
+ _uluiparam_
   
-> [in]すべてのダイアログ ボックスの親ウィンドウまたはこのメソッドを表示するウィンドウへのハンドル。
+> 順番このメソッドが表示するダイアログボックスまたはウィンドウの親ウィンドウへのハンドル。
     
  _ulFlags_
   
-> [in]プロファイルをコピーする方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番プロファイルのコピー方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_DIALOG 
   
-> プロファイルの正しいパスワードをコピーするのにはユーザーの入力を求めるダイアログ ボックスが表示されます。 このフラグが設定されていない場合、ダイアログ ボックスは表示されません。
+> コピーするプロファイルの正しいパスワードをユーザーに確認するダイアログボックスが表示されます。 このフラグが設定されていない場合は、ダイアログボックスは表示されません。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> プロファイルは正常にコピーされました。
+> プロファイルが正常にコピーされました。
     
 MAPI_E_ACCESS_DENIED 
   
-> 新しいプロファイル名は、既存のプロファイルと同じです。
+> 新しいプロファイル名は、既存のプロファイルの名前と同じです。
     
 MAPI_E_LOGON_FAILED 
   
-> コピーするプロファイルのパスワードが正しくないと、MAPI_DIALOG が_ulFlags_パラメーターで設定されていませんでしたので、正しいパスワードを要求するユーザーに、ダイアログ ボックスを表示できませんでした。 
+> コピーするプロファイルのパスワードが正しくありません。 MAPI_DIALOG が_ulflags_パラメーターで設定されていないため、ユーザーに正しいパスワードを要求するためのダイアログボックスを表示できませんでした。 
     
 MAPI_E_NOT_FOUND 
   
@@ -83,21 +83,21 @@ MAPI_E_NOT_FOUND
     
 MAPI_E_USER_CANCEL 
   
-> ユーザー操作がキャンセルされました、通常ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 
+> ユーザーが操作をキャンセルしました。通常は、ダイアログボックスの **[キャンセル**] ボタンをクリックします。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IProfAdmin::CopyProfile**メソッドは、 _lpszNewProfileName_で指定された名前を付けることが_lpszOldProfileName_を指すプロファイルのコピーを使用します。 プロファイルのコピー元と同じパスワードを使用してコピーを残します。
+**IProfAdmin:: copyprofile**メソッドは、 _lpszoldprofilename_によって参照されているプロファイルのコピーを作成し、 _lpszoldprofilename_で指定された名前を付与します。 プロファイルをコピーすると、元のパスワードと同じパスワードでコピーが残ります。
   
-元のプロファイル、そのパスワード、およびコピーの名前は 64 文字までの長さにすることができ、次の文字を含めることができます。
+元のプロファイルの名前、パスワード、およびコピーの長さは最大64文字で、次の文字を含めることができます。
   
-- すべての英数字文字、アクセント記号付き文字およびアンダー スコア文字を含みます。
+- アクセント記号とアンダースコア文字を含むすべての英数字。
     
-- 埋め込みスペースがいない先頭または末尾のスペース。
+- スペースは埋め込まれますが、先頭または末尾にスペースは含まれません。
     
-プロファイルのパスワードは、すべてのオペレーティング システムではサポートされていません。 プロファイルのパスワードをサポートしていないオペレーティング システムで_lpszOldPassword_できます NULL または長さ 0 の文字列へのポインター。 
+プロファイルパスワードは、すべてのオペレーティングシステムでサポートされていません。 プロファイルパスワードをサポートしていないオペレーティングシステムでは、 _lpszoldpassword_は NULL または長さ0の文字列へのポインターにすることができます。 
   
-コピーするプロファイルがパスワードを必要とし、MAPI_DIALOG フラグが設定されている_lpszOldPassword_は、NULL に設定されている場合ユーザーにパスワードの入力を求めるダイアログ ボックスが表示されます。 パスワードが必要ですが、 _lpszOldPassword_は NULL に設定されて、MAPI_DIALOG フラグが設定されていない場合、 **CopyProfile**は MAPI_E_LOGON_FAILED を返します。 
+_lpszoldpassword_が NULL に設定されている場合、コピーされるプロファイルにはパスワードが必要です。また、MAPI_DIALOG フラグが設定されています。ユーザーにパスワードの入力を求めるダイアログボックスが表示されます。 パスワードが必要で、 _lpszoldpassword_が NULL に設定されていて、MAPI_DIALOG フラグが設定されていない場合、 **copyprofile**は MAPI_E_LOGON_FAILED を返します。 
   
 ## <a name="see-also"></a>関連項目
 

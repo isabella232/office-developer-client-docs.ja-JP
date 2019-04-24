@@ -1,5 +1,5 @@
 ---
-title: MAPI データ型
+title: MAPI のデータ型
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -10,24 +10,24 @@ api_type:
 - COM
 ms.assetid: 3d314d4e-553b-4767-a64a-b9cf1839de52
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 85b31361ad39370cf4c935363b341c8378f85e19
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e09e77020d3f2c45ec4033c6945c21850aa1a5bc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307792"
 ---
-# <a name="mapi-data-types"></a>MAPI データ型
+# <a name="mapi-data-types"></a>MAPI のデータ型
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-アルファベット順の次のエントリには、MAPI メソッド、関数、および構造体で使用されるデータの種類のドキュメントが含まれています。 
+次のアルファベットのエントリには、MAPI のメソッド、関数、および構造体で使用されるデータ型のドキュメントが含まれています。 
   
 ||
 |:-----|
-|[BOOKMARK](bookmark.md) <br/> |
+|[ブックマーク](bookmark.md) <br/> |
 |[DNHIER](dnhier.md) <br/> |
 |[DNTBL](dntbl.md) <br/> |
 |[DNTBLE](dntble.md) <br/> |
@@ -48,9 +48,9 @@ ms.locfileid: "22572743"
 |[OlFlagIcon](olflagicon.md) <br/> |
 |[SCODE](scode.md) <br/> |
 |[SKEY](skey.md) <br/> |
-|[SYNC](sync.md) <br/> |
+|[頻度](sync.md) <br/> |
 |[SYNCCONT](synccont.md) <br/> |
-|[同期状態](syncstate.md) <br/> |
+|[SYNCSTATE](syncstate.md) <br/> |
 |[TCHAR](tchar.md) <br/> |
 |[UPDEL](updel.md) <br/> |
 |[UPDELE](updele.md) <br/> |
@@ -67,5 +67,5 @@ ms.locfileid: "22572743"
 
 
 
-[MAPI ���t�@�����X](mapi-reference.md)
+[MAPI リファレンス](mapi-reference.md)
 

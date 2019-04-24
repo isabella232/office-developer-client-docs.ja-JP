@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: a2c18b72-426b-4f63-8454-187e96d26199
 description: ここでは、InfoPath マネージ コード フォーム テンプレートの開発時に行う一般的な開発タスクに関する情報を記載しています。
-ms.openlocfilehash: 9f0bbf36b2533b12ca3f31100c3abc21173d7c6b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: a84bf1a70407ca87e1a83f74856d363d8860d4a1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303438"
 ---
 # <a name="understanding-the-infopath-object-model-and-common-developer-tasks"></a>InfoPath オブジェクト モデルと一般的な開発タスクについて
 

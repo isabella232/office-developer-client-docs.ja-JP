@@ -1,5 +1,5 @@
 ---
-title: メッセージ ストア プロバイダーでのテーブルのグループ化と制限
+title: メッセージストアプロバイダーでのテーブルのグループ化と制限
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,30 +8,30 @@ api_type:
 - COM
 ms.assetid: 01df4be4-98a1-4159-a06d-9ccf4337198f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ec1c07a8d2c88680ebd94cf8ecd6901ed86ad100
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8a45a9fd0d40c16d110fd52be1ac1117e1dd4d04
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299413"
 ---
-# <a name="grouping-and-restricting-tables-in-message-store-providers"></a>メッセージ ストア プロバイダーでのテーブルのグループ化と制限
+# <a name="grouping-and-restricting-tables-in-message-store-providers"></a>メッセージストアプロバイダーでのテーブルのグループ化と制限
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアント アプリケーション頻繁にできるように、フォルダーの内容を表示する方法を制御します。 通常、ユーザーはメッセージを 1 つまたは複数のメッセージのプロパティの値に基づいてグループ化することができますか、特定の条件に一致するメッセージを除外することができます。 使用して、これは、 [IMAPITable: IUnknown](imapitableiunknown.md)インタ フェースです。 クライアント アプリケーションは、ユーザーが指定されている基準に、テーブルから返される行を制限できます。 したがって、メッセージは、次**IMAPITable**メソッドを実装するプロバイダーのニーズを格納します。 
+多くの場合、クライアントアプリケーションでは、フォルダーの内容の表示方法をユーザーが制御できます。 通常、ユーザーは1つまたは複数のメッセージプロパティの値に従ってグループ化されたメッセージを表示するか、または特定の条件に一致するメッセージを除外するかを選択できます。 これは、 [IMAPITable: IUnknown](imapitableiunknown.md)インターフェイスを使用して行われます。 クライアントアプリケーションは、テーブルから返される行を、ユーザーが指定した条件に制限できます。 そのため、メッセージストアプロバイダーでは、次の**IMAPITable**メソッドを実装する必要があります。 
   
-|* * IMAPITable メソッド * *|**説明**|
+|IMAPITable * * メソッド * *|**説明**|
 |:-----|:-----|
-|[IMAPITable::FindRow](imapitable-findrow.md) <br/> |テーブルの指定した条件に一致する行を返します。  <br/> |
-|[IMAPITable::QueryColumns](imapitable-querycolumns.md) <br/> |テーブルまたは現在使用されている列のセット内の列のセットを返します。  <br/> |
-|[IMAPITable::QueryRows](imapitable-queryrows.md) <br/> |指定した位置から、テーブルから 1 つまたは複数の行を返します。  <br/> |
-|[IMAPITable::Restrict](imapitable-restrict.md) <br/> |**FindRow**の以降の呼び出しが制限に一致する行だけを返すには、制限テーブルに適用されます。  <br/> |
-|[IMAPITable::SetColumns](imapitable-setcolumns.md) <br/> |行はテーブルから取得するときに返される列を指定します。  <br/> |
+|[IMAPITable::FindRow](imapitable-findrow.md) <br/> |指定した条件に一致するテーブルの行を返します。  <br/> |
+|[IMAPITable::QueryColumns](imapitable-querycolumns.md) <br/> |テーブル内の列のセット、または現在使用されている列のセットを返します。  <br/> |
+|[IMAPITable::QueryRows](imapitable-queryrows.md) <br/> |指定された位置から開始して、1つまたは複数の行をテーブルから返します。  <br/> |
+|[IMAPITable::Restrict](imapitable-restrict.md) <br/> |**FindRow**への後続の呼び出しが、制限に一致する行のみを返すようにテーブルに制限を適用します。  <br/> |
+|[IMAPITable::SetColumns](imapitable-setcolumns.md) <br/> |テーブルから行が取得されたときに返される列を指定します。  <br/> |
    
-制限を実装するのには複雑になること詳細については、[制限の詳細](about-restrictions.md)を参照してください。 テーブルを実装する方法の詳細については、 [MAPI テーブル](mapi-tables.md)を参照してください。
+制限は、実装するのが複雑な場合があります。詳細については、「[制限につい](about-restrictions.md)て」を参照してください。 テーブルの実装の詳細については、「 [MAPI テーブル](mapi-tables.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

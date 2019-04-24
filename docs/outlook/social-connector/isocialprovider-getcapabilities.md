@@ -1,5 +1,5 @@
 ---
-title: ISocialProviderGetCapabilities
+title: i、alprovidergetcapabilities
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f40d5405-12e3-475b-b731-d2223ab70c1d
-description: プロバイダーの機能を説明する文字列を取得します。
-ms.openlocfilehash: 54e28f22f2dc8fdbe19821d8188087b78c327518
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: プロバイダー機能について説明する文字列を取得します。
+ms.openlocfilehash: cf3d1418ac0ecbfc3f67bb550a24ec71781f2637
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285765"
 ---
 # <a name="isocialprovidergetcapabilities"></a>ISocialProvider::GetCapabilities
 
-プロバイダーの機能を説明する文字列を取得します。
+プロバイダー機能について説明する文字列を取得します。
   
 ```cpp
 HRESULT _stdcall GetCapabilities([out, retval] BSTR* result);
@@ -27,13 +27,13 @@ HRESULT _stdcall GetCapabilities([out, retval] BSTR* result);
 
 _result_
   
-> [out]Outlook ソーシャル コネクタ (OSC) プロバイダーの機能を表す XML 文字列です。
+> 読み上げOutlook Social Connector (.osc) プロバイダーの機能を表す XML 文字列。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-返される_結果_の XML 文字列は、OSC プロバイダーの拡張機能の XML スキーマで定義されている**機能**要素のスキーマ定義に従う必要があります。 
+返された_結果_xml 文字列は、**機能**要素のスキーマ定義に準拠している必要があります。そのためには、プロバイダ拡張用の XML スキーマで定義されています。 
   
-プロバイダーでは、以降、OSC からプロバイダーに正常に動作するを有効にするのには_結果_の文字列を返す必要があります。 
+プロバイダーは、_結果_の文字列を返して、.osc からプロバイダーへの後続の呼び出しが正しく動作するようにする必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

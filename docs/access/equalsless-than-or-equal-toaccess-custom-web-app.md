@@ -1,5 +1,5 @@
 ---
-title: (カスタム web アプリケーションのアクセス) 以下
+title: 以下 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: dc0dc67a-aadf-4a5c-9264-e8df1dcd183f
 description: 2 つの式を比較します。NULL でない式を比較したときに、左側のオペランドの値が右側のオペランドの値よりも小さい場合、結果は TRUE です。それ以外の場合、結果は FALSE です。
-ms.openlocfilehash: 632a9d295201cc6d35d8cf6e5ca00d0e15e0e63e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4a43c83024a7f5318faef25b4505c10246a5eabf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308219"
 ---
-# <a name="less-than-or-equal-to-access-custom-web-app"></a>(カスタム web アプリケーションのアクセス) 以下
+# <a name="less-than-or-equal-to-access-custom-web-app"></a>以下 (Access カスタム web アプリ)
 
 2 つの式を比較します。NULL でない式を比較したときに、左側のオペランドの値が右側のオペランドの値よりも小さい場合、結果は TRUE です。それ以外の場合、結果は FALSE です。
   
@@ -31,6 +31,6 @@ ms.locfileid: "19798579"
   
 ## <a name="return-type"></a>戻り値の型
 
-**ブール型 (Boolean)**
+**Boolean**
   
 

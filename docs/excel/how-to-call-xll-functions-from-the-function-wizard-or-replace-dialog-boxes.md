@@ -9,12 +9,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: dc7e840e-6d1d-427b-97f9-7912e60ec954
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 7ebb33a5b98cebedfca7fb5923e62486bfd85696
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 11189beed13e2ceb99ef04b7a2f966cb4171915c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304019"
 ---
 # <a name="call-xll-functions-from-the-function-wizard-or-replace-dialog-boxes"></a>関数ウィザードまたは [置換] ダイアログ ボックスから XLL 関数を呼び出す
 
@@ -22,9 +22,9 @@ ms.locfileid: "19798894"
   
 多くの場合、Microsoft Excel はブック (計算がマクロの制御下にある場合はブックの一部) の通常の再計算中に XLL 関数を呼び出します。関数は名前付き範囲や条件付き書式設定式に含まれていることがあり、セルの数式には存在しないことがある点に注意してください。
   
-Excel ダイアログ ボックスから関数が呼び出される状況は 2 つあります。 1 つは、**[関数の貼り付けの引数]** ダイアログ ボックスです。ユーザーは、このボックスで一度に 1 つの引数を使用して関数呼び出しを作成できます。 もう 1 つは、Excel の **[置換]** ダイアログ ボックスで数式が変更および再入力されたときです。 **[Paste Function Arguments]** ダイアログ ボックスでは通常、関数を実行しません。 その理由は、実行に長い時間がかかり、ダイアログ ボックスの使用による速度低下を望まないためです。 
+There are two circumstances where a function can be called from an Excel dialog box. One is the **Paste Function Arguments** dialog box, where users are able to construct a function call one argument at a time. The other is when formulas are being modified and reentered by Excel in the **Replace** dialog box. For the **Paste Function Arguments** dialog box, you might not want your function to execute normally. This may be because it takes a long time to execute and you do not want to slow down the use of the dialog box. 
   
-**[関数の貼り付け]** ダイアログ ボックスと **[置換]** ダイアログ ボックスには、どちらにも Windows のクラス名 **bosa_sdm_XL**nn が付いています (n は数値)。 Windows の API 関数 **GetClassName** を使用すると、この名前を Windows ハンドル (HWND 変数型) から取得できます。 さらに、別の関数 **EnumWindows** では、現在開いているトップレベルのウィンドウごとに 1 回、指定したコールバック関数 (DLL 内にあるもの) を呼び出せます。
+Both the **Paste Function** dialog box and the **Replace** dialog box have the Windows class name **bosa_sdm_XL**n, where n is a number. Windows provides an API function, **GetClassName**, that obtains this name from a Windows handle, an HWND variable type. It also provides another function, **EnumWindows**, that calls a supplied callback function (within your DLL) once for every top-level window that is currently open.
   
 コールバック関数は、次の手順でのみ実行する必要があります。
   
@@ -34,7 +34,7 @@ Excel ダイアログ ボックスから関数が呼び出される状況は 2 �
     
 3. クラス名が **bosa_sdm_XL**n の形式であることを確認します。
     
-4. 2 つのダイアログ ボックスを区別する必要がある場合は、特定できるテキストがダイアログ ボックスのタイトルに含まれていることを確認します。 ウィンドウのタイトルは、Windows API 呼び出しの **GetWindowText** を使用することで取得できます。
+4. If you need to distinguish between the two dialog boxes, check if the dialog box title contains some identifying text. The window title is obtained using the Windows API call **GetWindowText**.
     
 次の C++ コードは、Windows に渡されるクラスとコールバックを示しています (上記の手順を実行します)。これは、該当するダイアログ ボックスのどちらかに専用のテストを呼び出す関数から呼び出します。 
   

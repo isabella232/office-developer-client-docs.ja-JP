@@ -1,29 +1,29 @@
 ---
-title: Outlook が Exchange キャッシュ モードではリモート サーバー上のストアにアクセスします。
+title: Outlook が Exchange キャッシュモードの場合にリモートサーバー上のストアにアクセスする
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5c6df156-4015-2d0f-26b7-07055a3f7810
-description: '最終更新日: 2012 年 7 月 2 日'
-ms.openlocfilehash: 8ab92287b6df5b510558d7adf50a61c17a823d74
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2012 年7月2日'
+ms.openlocfilehash: 0d977507f6aff8aa5fbf437b4b718486a71f67dc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299063"
 ---
-# <a name="access-a-store-on-the-remote-server-when-outlook-is-in-cached-exchange-mode"></a>Outlook が Exchange キャッシュ モードではリモート サーバー上のストアにアクセスします。
+# <a name="access-a-store-on-the-remote-server-when-outlook-is-in-cached-exchange-mode"></a>Outlook が Exchange キャッシュモードの場合にリモートサーバー上のストアにアクセスする
  
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックには、 **MAPI_NO_CACHE**フラグを使用して Microsoft Office Outlook が Exchange キャッシュ モードではときに、フォルダーまたはリモート サーバー上のメッセージ ストアにメッセージを開く方法を示している C++ でのコード サンプルが含まれています。 
+このトピックでは、Microsoft Office Outlook が Exchange キャッシュモードの場合に、 **MAPI_NO_CACHE**フラグを使用してリモートサーバー上のメッセージストアでフォルダーまたはメッセージを開く方法を示す、C++ のコードサンプルを示します。 
   
-Exchange キャッシュ モードでは、Outlook ユーザーのメールボックスをリモートの Exchange サーバー上のリモート ・ コピーへのオンライン接続を維持するときに、ユーザーのメールボックスのローカル コピーを使用するように Outlook を許可します。 Outlook が既定では、Exchange キャッシュ モードで実行されている場合、同じセッションにログオンしている MAPI ソリューションでは、キャッシュされたメッセージ ストアに接続されています。 アクセスされているすべてのデータと加えられた変更は、メールボックスのローカル コピーに対して行われます。
+Exchange キャッシュモードでは、outlook はユーザーのメールボックスのローカルコピーを使用して、リモート Exchange サーバー上のユーザーのメールボックスのリモートコピーへのオンライン接続を保持することができます。 Outlook が Exchange キャッシュモードで実行されている場合、既定では、同じセッションにログオンする MAPI ソリューションは、キャッシュされたメッセージストアにも接続されます。 アクセスされるデータと、変更が行われた場合は、メールボックスのローカルコピーに対して行われます。
   
-クライアントまたはサービス プロバイダーは、ローカル メッセージ ストアへの接続をオーバーライドし、 **[IMsgStore::OpenEntry](imsgstore-openentry.md)** を呼び出すときは、 *ulFlags*パラメーターで**MAPI_NO_CACHE**のビットを設定することにより、メッセージまたはリモート ストア上のフォルダーを開きます。 
+クライアントまたはサービスプロバイダーは、ローカルメッセージストアへの接続を上書きし、 **[IMsgStore:: openentry](imsgstore-openentry.md)** を呼び出すときに*ulflags*パラメーターで**MAPI_NO_CACHE**のビットを設定することによって、リモートストア上のメッセージまたはフォルダーを開くことができます。 
   
-次のコード サンプルは、リモート メッセージ ストアのルート フォルダーを開く、 *ulFlags*パラメーターの設定**MAPI_NO_CACHE**フラグを使用して**IMsgStore::OpenEntry**を呼び出す方法を示しています。 
+次のコードサンプルは、 *ulflags*パラメーターに**MAPI_NO_CACHE**フラグを設定して**IMsgStore:: openentry**を呼び出して、リモートメッセージストアのルートフォルダーを開く方法を示しています。 
   
 ```cpp
 HRESULT HrOpenRootFolder ( 
@@ -44,7 +44,7 @@ HRESULT HrOpenRootFolder (
 }
 ```
 
-リモート サーバー上で**MDB_ONLINE**フラグを使用してメッセージ ・ ストアを開いた場合、 **MAPI_NO_CACHE**フラグを使用する必要はありません。 
+リモートサーバーの**MDB_ONLINE**フラグを使用してメッセージストアを開いた場合、 **MAPI_NO_CACHE**フラグを使用する必要はありません。 
   
 ## <a name="see-also"></a>関連項目
 

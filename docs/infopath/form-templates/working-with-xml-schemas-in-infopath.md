@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: c1d70e9f-b9fc-7bdb-107e-d0cd8191607b
 description: Microsoft InfoPath で作成するフォーム テンプレートでは、InfoPath フォームで入力、編集、出力される XML の構造とデータの検証が XML スキーマ (XSD) を使用して実行されます。InfoPath のフォーム デザイン ウィンドウで作成したすべてのフォーム テンプレートには、実行時の検証に使用される XSD スキーマ ファイル (.xsd) が少なくとも 1 つ含まれています。
 ms.openlocfilehash: 25828c3ec21d22a9952452d5a82fe1a3b4bab54c
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303165"
 ---
 # <a name="working-with-xml-schemas-in-infopath"></a>InfoPath で XML スキーマを使用する
 
@@ -254,7 +254,7 @@ XSD スキーマの存在意義は、XML のデータ構造と型のセマンテ
 
 ```
 
-この XML フラグメントでは、*\<file_path\>* 要素が、choice 要素宣言の最初の部分を出所とする必須ノードなのか、choice 要素宣言の 2 番目の部分を出所とする省略可能なノードなのかが判然としません。 この区別は、次の理由で重要になってきます。 
+In this XML fragment, it is not clear whether the  *\<file_path\>*  element is the required node from the first part of the choice declaration or the optional one from the second part of the choice declaration. This distinction is important for the following reasons: 
   
 1. この XML フラグメントが choice 要素宣言の最初の部分に照らして検証される場合、XML はスキーマに対して有効と判断されます。
     

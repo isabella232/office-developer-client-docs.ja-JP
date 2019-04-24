@@ -1,5 +1,5 @@
 ---
-title: MAPI でのメモリを管理します。
+title: MAPI でのメモリの管理
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,19 +9,19 @@ api_type:
 ms.assetid: 9eee6925-ab91-413e-8907-c747ab4a4bb5
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 66489c09be641d8fe9ae5f3ffff46a6d5004f473
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32298097"
 ---
-# <a name="managing-memory-in-mapi"></a>MAPI でのメモリを管理します。
+# <a name="managing-memory-in-mapi"></a>MAPI でのメモリの管理
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-方法とタイミングを割り当てるし、メモリを解放するのには、MAPI を使用するプログラミングの重要な部分です。 MAPI には、関数とマクロの両方を一貫した方法でメモリを管理するために、クライアントまたはサービス プロバイダーを使用できますが用意されています。 3 つの関数は次のとおりです。
+メモリの割り当てと解放の方法とタイミングを知ることは、MAPI を使用したプログラミングの重要な部分です。 MAPI には、クライアントまたはサービスプロバイダーが一貫した方法でメモリを管理するために使用できる関数とマクロの両方が用意されています。 3つの関数は次のとおりです。
   
 [MAPIAllocateBuffer](mapiallocatebuffer.md)
   
@@ -29,9 +29,9 @@ ms.locfileid: "25388071"
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-クライアントとサービス ・ プロバイダーの問題、これらの関数を使用する場合の「所有者」-をリリースする方法を知っているが、-特定のメモリ ブロックを削除します。 サービス プロバイダーのメソッドを呼び出すクライアントは、任意のサイズの戻り値を保持するのに十分な大きさのバッファーを渡す必要がありますありません。 サービス プロバイダーは、 **MAPIAllocateBuffer**を使用しているメモリの適切な量を割り当てることが単にし、必要に応じて、 **MAPIAllocateMore**、およびクライアントが後で元の**MAPIFreeBuffer**サービスに関係なくを使用してはプロバイダーです。 
+クライアントおよびサービスプロバイダーがこれらの機能を使用する場合、誰がどのようなメモリブロックを解放するかを知ることができます。 サービスプロバイダメソッドを呼び出すクライアントは、任意のサイズの戻り値を保持するために十分に大きいバッファーを通過する必要はありません。 サービスプロバイダーは単に、 **MAPIAllocateBuffer**を使用して適切な量のメモリを割り当てることができ、必要に応じて**MAPIAllocateMore**、クライアントは後で**MAPIFreeBuffer**を使用して、サービスに依存することなく、そのメモリを解放できます。供給. 
   
-構造体または特定のサイズの構造体の配列を割り当てるメモリのマクロを使用します。 クライアントとサービス ・ プロバイダーする必要がありますこれらのマクロを使用してではなく手動でメモリを割り当てます。 などの場合は、クライアントは、名前解決の 3 つのエントリを持つ受信者リストの処理を実行する必要がある、 **SizedADRLIST**マクロ使えますの正しい数を**IAddrBook::ResolveName**に渡すための**ADRLIST**構造体を作成するには**ADRENTRY**メンバー。 すべてのメモリ ・ マクロは、MAPIDEFS で定義されます。H ヘッダー ファイルです。 これらのマクロは次のとおりです。 
+メモリマクロは、構造体または特定のサイズの構造の配列を割り当てるために使用されます。 クライアントおよびサービスプロバイダーは、メモリを手動で割り当てる代わりに、これらのマクロを使用する必要があります。 たとえば、クライアントが3つのエントリを持つ受信者リストで名前解決処理を実行する必要がある場合、 **sizedadrlist**マクロを使用して、 **IAddrBook:: ResolveName**に渡される**adrlist**構造を作成し、正しい数の**adrentry**のメンバー。 mapidefs.h では、すべてのメモリマクロが定義されています。H ヘッダーファイル。 これらのマクロは次のとおりです。 
   
 |||
 |:-----|:-----|
@@ -43,6 +43,6 @@ ms.locfileid: "25388071"
 |[SizedDtblGroupBox](sizeddtblgroupbox.md) <br/> |[SizedSSortOrderSet](sizedssortorderset.md) <br/> |
 |[SizedDtblLabel](sizeddtbllabel.md) <br/> | <br/> |
    
-MAPI には、メモリ管理に[IMalloc](https://msdn.microsoft.com/library/ms678425%28VS.85%29.aspx)の COM インターフェイスの使用もサポートしています。 サービス プロバイダーは、 **IMalloc**インターフェイス ポインター式によって与えられます MAPI の初期化時と、 [MAPIGetDefaultMalloc](mapigetdefaultmalloc.md)関数を 1 つを取得することもできます。 **IMalloc**メソッドを使用して MAPI の関数でメモリを管理するために主な利点は COM メソッドを使用して既存のバッファーを再割り当てすることです。 MAPI メモリ関数は、再割り当てをサポートしていません。 
+MAPI では、メモリ管理用の COM インターフェイス[imalloc](https://msdn.microsoft.com/library/ms678425%28VS.85%29.aspx)の使用もサポートしています。 サービスプロバイダーには、初期化時に MAPI によって**imalloc**インターフェイスポインターが与えられ、 [mapigetdefaultmalloc](mapigetdefaultmalloc.md)関数を使用して取得することもできます。 MAPI 関数でメモリを管理するために**imalloc**メソッドを使用する主な利点は、COM メソッドを使用して既存のバッファーを再割り当てできることです。 MAPI メモリ関数は再割り当てをサポートしていません。 
   
 

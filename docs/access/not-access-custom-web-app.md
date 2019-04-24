@@ -1,5 +1,5 @@
 ---
-title: できません (カスタム web アプリケーションのアクセス)
+title: NOT (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: f0f0a65f-5248-4d7c-a4a4-a0cc863b15ec
 description: ブール型 (Boolean) の入力値を反転します。
-ms.openlocfilehash: e455a6fb73c014fca5360a5c048a0b10cdb06507
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b910613a7bf08c79c2f66a417b5faec4886cb8d7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308135"
 ---
-# <a name="not-access-custom-web-app"></a>できません (カスタム web アプリケーションのアクセス)
+# <a name="not-access-custom-web-app"></a>NOT (Access カスタム web アプリ)
 
 ブール型 (Boolean) の入力値を反転します。
   
@@ -29,7 +29,7 @@ ms.locfileid: "19798702"
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *ブール式*  <br/> |有効なブール型 (Boolean) の式を指定します。  <br/> |
+| *BooleanExpression*  <br/> |有効なブール型 (Boolean) の式を指定します。  <br/> |
    
 ## <a name="remarks"></a>解説
 
@@ -37,7 +37,7 @@ ms.locfileid: "19798702"
   
 ||**Not**|
 |:-----|:-----|
-|**場合は TRUE。** <br/> |False  <br/> |
-|**FALSE** <br/> |True  <br/> |
+|**false** <br/> |誤り  <br/> |
+|**FALSE** <br/> |はい  <br/> |
    
 

@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: ed0c14f9-3dcf-49ad-928e-ba872d4d6b5a
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5125fc8f3e36087a05802c38127a8402ae67d468
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 5d4653492028151d7e19a5d5490c8c8949002a4f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283087"
 ---
 # <a name="saving-mapi-properties"></a>MAPI プロパティの保存
 
@@ -21,17 +21,17 @@ ms.locfileid: "22576303"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-多くのオブジェクトは、トランザクション モデルのため、プロパティを変更できない永続的なものは後でコミットされるまでの処理をサポートします。 プロパティへの変更は、 [IMAPIProp::SetProps](imapiprop-setprops.md)および[IMAPIProp::DeleteProps](imapiprop-deleteprops.md)メソッドは、一方、commit の手順は、 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)によって処理されます。 **失敗 savechanges メソッド**の呼び出し、最新のオブジェクトのプロパティにアクセスできることが終了するまでではありません。 
+多くのオブジェクトは処理のトランザクションモデルをサポートしているため、プロパティへの変更は後でコミットされるまで永続的に行われません。 プロパティへの変更は[imapiprop:: setprops](imapiprop-setprops.md)メソッドと[imapiprop::D eleteprops](imapiprop-deleteprops.md)メソッドによって処理されますが、コミット手順は[imapiprop:: SaveChanges](imapiprop-savechanges.md)によって処理されます。 これは、オブジェクトのプロパティの最新バージョンにアクセスできるように**SaveChanges**を正常に呼び出した後には行われません。 
   
-**SaveChanges**には、エラー値 MAPI_E_OBJECT_CHANGED が返された、これは、する別のクライアントが同時に変更をコミットするオブジェクトに警告します。 可能性が、複数のクライアントに対して、オブジェクトを実装すると、正常にプロバイダーによってオブジェクトを開くメソッドを呼び出して、 **OpenEntry** 、MAPI_MODIFY フラグを設定して読み取り/書き込みアクセス許可を付与します。 **OpenEntry**呼び出しは、ストレージ ・ データのスナップショットではこのような返されるオブジェクト。 各とするとこのデータを変更するには、以前の試みを上書きできます。 
+**SaveChanges**がエラー値 MAPI_E_OBJECT_CHANGED を返す場合、これは、別のクライアントがオブジェクトへの変更を同時にコミットしていることを示す警告です。 オブジェクトを実装するプロバイダーによっては、MAPI_MODIFY フラグが設定された**openentry**メソッドを呼び出して読み取り/書き込みアクセス権を付与することによって、複数のクライアントがオブジェクトを正常に開くことができます。 このような**openentry**呼び出しから返されるオブジェクトは、ストレージデータのスナップショットです。 このデータを以降に変更しようとするたびに、以前の試行を上書きできます。 
   
-クライアントでは、 **SaveChanges**から MAPI_E_OBJECT_CHANGED を受信時にするオプションがあります。 
+MAPI_E_OBJECT_CHANGED を**SaveChanges**から受け取る際に、クライアントには次のオプションがあります。 
   
 - 変更を保持するオブジェクトのコピーを作成します。
     
-- **SaveChanges**FORCE_SAVE を指定する別の呼び出しを確認します。 
+- FORCE_SAVE を指定して、再度、 **SaveChanges**を呼び出してください。 
     
-FORCE_SAVE フラグを使用して**SaveChanges**を呼び出すことでは、前回の保存が上書きされ、クライアントの変更を永続的になります。 
+FORCE_SAVE フラグを使用して**SaveChanges**を呼び出すと、以前の保存が上書きされ、クライアントの変更が永続的に行われます。 
   
 ## <a name="see-also"></a>関連項目
 

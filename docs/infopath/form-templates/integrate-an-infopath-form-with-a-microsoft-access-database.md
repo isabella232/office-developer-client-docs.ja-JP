@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5ec9a9c0-b348-4a31-b377-e95db2f92455
 description: Microsoft InfoPath では、Microsoft Access 2010 のデータベースをフォームのプライマリ データ ソースとして、あるいはフォームまたはコントロールのセカンダリ データ ソースとして使用できます。ここでは、Access 2010 データベースをデータ ソースとして使用する方法について説明します。
-ms.openlocfilehash: 30aea15a5e9a8d19f64b3f089b71e859cff93e0e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: dbc39e0d0908214904d77b8955f3d231f0bfb20b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303515"
 ---
 # <a name="integrate-an-infopath-form-with-a-microsoft-access-database"></a>InfoPath フォームと Microsoft Access データベースの統合
 
@@ -28,7 +28,7 @@ InfoPath では **データ接続ウィザード**を使用してデータ接続
 データベースを選択した後は、ウィザードに従って、フォームのデータ ソースとして使用するテーブルをそのデータベースから選択する必要があります。テーブルを追加していくと、テーブル相互のリレーションシップが確立され、[ **データ ソース構造**] ボックスの一覧に、各テーブルとそれらの階層関係が表示されます。[ **テーブルの列を表示する**] チェック ボックスをオンにすると、各テーブルのフィールドの名前が [データ ソース構造] ボックスの一覧に表示されます。各フィールド名の横にあるチェック ボックスを使用して、該当するフィールドをウィザードで作成する SQL ステートメントに含めるかどうかを指定できます。 
   
 > [!NOTE]
-> [!メモ] 各テーブルの主キー フィールドは必ず選択されます。選択を解除することはできません。 
+> 各テーブルの主キー フィールドは必ず選択されます。選択を解除することはできません。 
   
 **データ接続ウィザード**を使用してテーブル、リレーションシップ、およびフィールドを指定したら、[ **SQL の編集**] をクリックして、フォームのデータ ソースの作成に使用される SQL ステートメントを表示できます。[ **SQL の編集**] ダイアログ ボックスの [ **SQL ステートメントのテスト**] をクリックすると、指定した情報からデータ ソースを作成できるかどうかを確認できます。また、[ **SQL の編集**] ダイアログ ボックスでは、表示されている SQL ステートメントを編集して、より複雑なクエリを作成することもできます。 
   

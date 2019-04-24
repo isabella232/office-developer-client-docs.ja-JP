@@ -9,19 +9,19 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: d34c296d-e874-b5f3-9232-e1cfe01c7eab
 description: 図形に定義された各コントロール ハンドルに関する、行およびセルを格納します。
-ms.openlocfilehash: 4e85ba0f59e27679e5c9928bc16ebe10ae302d09
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b0ca91803d866a3d11f255273c2e338d7e7dc74a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282979"
 ---
-# <a name="controls-section"></a>[コントロール] セクション
+# <a name="controls-section"></a>[Controls] セクション
 
 図形に定義された各コントロール ハンドルに関する、行およびセルを格納します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-コントロール ハンドル、シェイプ シート ウィンドウの [**コントロール**] セクションで定義できます。 図形に [ **Controls** ] セクションがあるない場合は、シェイプ シート ウィンドウでいずれかを挿入できます。 [シェイプ シート] ウィンドウを右クリックし、**セクションの挿入**、[**コントロール**] チェック ボックスを選択します。 既存の [ **Controls** ] セクションにコントロール ハンドルを追加するには、行を右クリックし、ショートカット メニューの [**行の挿入**] をクリックします。 
+コントロールハンドルは、[シェイプシート] ウィンドウの [**コントロール**] セクションで定義できます。 図形に [ **Controls** ] セクションがない場合は、[シェイプシート] ウィンドウに挿入できます。 この操作を行うには、[シェイプシート] ウィンドウで右クリックし、[**セクションの挿入**] をクリックして、[**コントロール**] チェック ボックスをオンにします。 既存の [ **Controls** ] セクションにコントロールハンドルを追加するには、行を右クリックして、ショートカットメニューの [**行の挿入**] をクリックします。 
   
 

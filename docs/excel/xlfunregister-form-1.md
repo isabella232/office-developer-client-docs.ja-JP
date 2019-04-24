@@ -1,5 +1,5 @@
 ---
-title: xlfUnregister (形式 1)
+title: xlfUnregister (�`�� 1)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,12 +11,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 850bf65f-a151-44d6-b49f-d53ae2c83760
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 6077027a27c054c5a5e65a751373c41a87cb3836
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 3f5ebc08f89651331186990d8574e3150d4f484a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303893"
 ---
 # <a name="xlfunregister-form-1"></a>xlfUnregister (形式 1)
 

@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: d700b40f-e5b2-4d37-bf1f-8fd3dfa0dda5
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: e32157f41632b782fbacf87e0411c18d167b4279
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 02663570e3173bbd696af732e71f060d9dee49bc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286629"
 ---
 # <a name="imapiformadvisesinkonchange"></a>IMAPIFormAdviseSink::OnChange
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォーム ビューアーのステータスに変更が発生したことを示します。 
+フォームビューアーの状態で変更が発生したことを示します。 
   
 ```cpp
 HRESULT OnChange(
@@ -35,53 +35,53 @@ HRESULT OnChange(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulDir_
+ _uldir_
   
-> [in]ビューアーと、フォーム内の予想される応答で発生した変更に関する情報を提供するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番viewer で発生した変更に関する情報と、フォームで想定される応答を提供するフラグのビットマスク。 次のフラグを設定できます。
     
 VCSTATUS_CATEGORY 
   
-> 別のカテゴリで次または前のメッセージが表示されます。 
+> 別のカテゴリに、次または前のメッセージがあります。 
     
 VCSTATUS_INTERACTIVE 
   
-> フォームは、ユーザー インターフェイスを表示する必要があります。 このフラグが設定されていない場合、フォームが動詞が表示されるユーザー インターフェイスは、通常原因への応答であっても、ユーザー インターフェイスを表示するを抑制する必要があります。 
+> フォームにユーザーインターフェイスが表示されます。 このフラグが設定されていない場合、通常、ユーザーインターフェイスが表示される原因となる動詞に応答している場合でも、フォームはユーザーインターフェイスを表示しません。 
     
 VCSTATUS_MODAL 
   
-> フォームがモーダル フォーム ビューアーに表示します。 
+> フォームビューアーのモーダルにします。 
     
 VCSTATUS_NEXT 
   
-> フォーム ビューアーに次のメッセージが表示されます。 
+> フォームビューアーに次のメッセージがあります。 
     
 VCSTATUS_PREV 
   
-> フォーム ビューアーで前のメッセージが表示されます。 
+> フォームビューアーに前のメッセージがあります。 
     
 VCSTATUS_READONLY 
   
-> 削除、送信、および移動の操作を無効にする必要があります。 
+> Delete、submit、および move 操作を無効にする必要があります。 
     
 VCSTATUS_UNREAD 
   
-> フォーム ビューアーで次または前の未読メ ッ セージがあります。
+> フォームビューアーに、次または前の未読メッセージがあります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 通知が正常に完了しました。
+> 通知は正常に実行されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-フォーム ビューアーは、ビューアーのステータスの変更のフォームを通知するために**IMAPIFormAdviseSink::OnChange**メソッドを呼び出します。 通常、唯一の変更は設定か、ビューアー内の次または前のメッセージの有無に基づいて、VCSTATUS_NEXT または VCSTATUS_PREVIOUS フラグをオフにします。 したがって、フォーム オブジェクトは、有効または、サポートする前または次のアクションを無効にします。 
+フォームビューアーは**IMAPIFormAdviseSink:: OnChange**メソッドを呼び出して、閲覧者のステータスの変更についてフォームに通知します。 通常、この変更は、閲覧者の次または前のメッセージが存在するかどうかに基づいて、VCSTATUS_NEXT または VCSTATUS_PREVIOUS フラグを設定またはクリアすることだけです。 そのため、form オブジェクトは、サポートする次または前のアクションを有効または無効にします。 
   
-VCSTATUS_MODAL と VCSTATUS_INTERACTIVE の設定は、それが作成された後、ビューのコンテキストで変更できません。
+VCSTATUS_MODAL および VCSTATUS_INTERACTIVE の設定は、作成後にビューコンテキストで変更することはできません。
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-このメソッドの特定の実装では、フォームの仕様に完全に依存しています。 フォームのほとんどのオブジェクトは、独自のユーザー インターフェイス (たとえば、有効にするか、ビューアーのステータス フラグのパラメーターと一致するのにには、メニュー コマンドやボタンを無効にするのに場合など) を変更するのにはこのメソッドを使用します。
+このメソッドの具体的な実装は、フォームの仕様に完全に依存しています。 ほとんどの form オブジェクトは、このメソッドを使用してユーザーインターフェイスを変更します (たとえば、メニューコマンドやボタンを有効または無効にしてビューア状態フラグパラメーターに一致させる)。
   
 ## <a name="see-also"></a>関連項目
 

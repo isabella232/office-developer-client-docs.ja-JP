@@ -1,46 +1,46 @@
 ---
-title: EditRecord データ ブロック (カスタム web アプリケーションのアクセス)
+title: '[データの制限] ブロック (Access カスタム web アプリ)'
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 54975434-78b2-4010-b2f9-f277831fa92e
 description: EditRecord データ ブロックを使用して、既存のレコード内の値を変更できます。
-ms.openlocfilehash: 6c214e48326a93cff220b5436d7e7802cd6e3431
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0d9ef6c7689b44a0304309a7537e744eff97c809
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302521"
 ---
-# <a name="editrecord-data-block-access-custom-web-app"></a>EditRecord データ ブロック (カスタム web アプリケーションのアクセス)
+# <a name="editrecord-data-block-access-custom-web-app"></a>[データの制限] ブロック (Access カスタム web アプリ)
 
-**EditRecord** データ ブロックを使用して、既存のレコード内の値を変更できます。 
+You can use the **EditRecord** data block to change the values contained in an existing record. 
   
 > [!IMPORTANT]
-> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 > [!NOTE]
-> [!メモ] **EditRecord** データ ブロックは、データ マクロでのみ使用できます。 
+> EditRecord データ ブロックは、データ マクロでのみ使用できます。 
   
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
 **EditRecord** データ ブロックの引数は次のとおりです。 
   
-|**引数**|**説明**|
+|**Arg1 と Arg2 の値**|**説明**|
 |:-----|:-----|
-|**エイリアス** <br/> |編集するレコードを識別する文字列です。 *別名*引数を指定しない場合、現在のレコードを編集します。  <br/> |
+|**Alias** <br/> |編集するレコードを識別する文字列。 *Alias*引数が指定されていない場合は、カレントレコードが編集されます。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**EditRecord** ステートメントの後に、レコードの変更を確定する前に実行するコマンドのブロックを挿入できます。 **EditRecord** データ ブロックで使用できるアクションは次のとおりです。 
+**EditRecord** ステートメントの後に、レコードの変更を確定する前に実行するコマンドのブロックを挿入できます。**EditRecord** データ ブロックで使用できるアクションは次のとおりです。 
   
 ||
 |:-----|
 |["CancelRecordChange/レコードの変更の取り消し" マクロ アクション](cancelrecordchange-macro-action-access-custom-web-app.md) <br/> |
 |[Comment マクロ ステートメント](comment-macro-block-access-custom-web-app.md) <br/> |
 |[Group マクロ ステートメント](group-macro-block-access-custom-web-app.md) <br/> |
-|[もし。。。そうしたら。。。マクロ ステートメントはその他](ifthenelse-macro-block-access-custom-web-app.md) <br/> |
+|[If...Then...Else マクロ ステートメント](ifthenelse-macro-block-access-custom-web-app.md) <br/> |
 |["SetField/フィールドの設定" マクロ アクション](setfield-macro-action-access-custom-web-app.md) <br/> |
 |["SetLocalVar/ローカル変数の設定" マクロ アクション](setlocalvar-macro-action-access-custom-web-app.md) <br/> |
    

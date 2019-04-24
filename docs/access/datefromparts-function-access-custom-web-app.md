@@ -1,19 +1,19 @@
 ---
-title: DateFromParts 関数 (カスタム web アプリケーションのアクセス)
+title: datefromparts 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 4fa49d5f-12ea-4d14-9a03-28418f01746c
 description: 指定された年、月、および日を表す日付値を返します。
-ms.openlocfilehash: 5a2ff76d99076cf9f53b0dce8c5019f38d910f58
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7d47fe93d1990365f1db5885a3ea8fc056aabb9f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282123"
 ---
-# <a name="datefromparts-function-access-custom-web-app"></a>DateFromParts 関数 (カスタム web アプリケーションのアクセス)
+# <a name="datefromparts-function-access-custom-web-app"></a>datefromparts 関数 (Access カスタム web アプリ)
 
 指定された年、月、および日を表す日付値を返します。
   
@@ -22,23 +22,23 @@ ms.locfileid: "19798540"
   
 ## <a name="syntax"></a>構文
 
-**DateFromParts**(*年**月**日*) 
+**datefromparts**(*年*、*月*、*日*) 
   
 **DateFromParts** 関数の引数は次のとおりです。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *年*  <br/> |年を指定する整数式。  <br/> |
+| *Year*  <br/> |年を指定する整数式  <br/> |
 | *Month*  <br/> |月を指定する整数式 (1 ～ 12)。  <br/> |
-| *日*  <br/> |日を指定する整数式  <br/> |
+| *Day*  <br/> |日を指定する整数式  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 **DateFromParts** は日付値を返します。この値の日付部は指定された年、月、および日に設定され、時刻部は既定に設定されます。引数が有効でない場合、エラーが発生します。必須の引数が null の場合、NULL が返されます。 
   
 ## <a name="example"></a>例
 
-次の式は、 **DateFromParts** 関数を使用して、現在の月の最初の日を計算します。 
+次の式は、**DateFromParts** 関数を使用して、現在の月の最初の日を計算します。 
   
 `DateFromParts(Year(Today()),Month(Today()),1)`
 

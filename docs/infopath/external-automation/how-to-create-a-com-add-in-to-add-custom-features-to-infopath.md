@@ -1,37 +1,37 @@
 ---
-title: COM アドインを作成し、InfoPath にカスタム機能を追加する
+title: InfoPath にカスタム機能を追加する COM アドインを作成する
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- infopath 2007 では、com アドインを作成する InfoPath 2007 では、独自の機能では、COM アドインが [InfoPath 2007] を追加します。
+- infopath 2007、com アドインの作成、infopath 2007、カスタム機能の追加、com アドイン [InfoPath 2007]
 localization_priority: Normal
 ms.assetid: af0b0bc9-20ef-4503-8b3b-8f2a97b671a2
-description: Microsoft InfoPath には、ユーザー エクスペリエンスの編集フォームを拡張するための COM アドインがサポートされています。 COM アドインが最初に追加した InfoPath では、他の Office アプリケーションなど、Microsoft Office Word と Microsoft Office Excel サポートされている COM アドインが Office 2000 以降をサポートします。
+description: Microsoft InfoPath は、ユーザーのフォーム編集を拡張する COM アドインをサポートしています。 最初に com アドインのサポートが InfoPath で追加されましたが、microsoft office Word や microsoft office Excel などの他の office アプリケーションでは、office 2000 以降の com アドインがサポートされています。
 ms.openlocfilehash: f8dd16b161c4ea862cf3b15e56e26a2547c1fc4c
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303788"
 ---
-# <a name="create-a-com-add-in-to-add-custom-features-to-infopath"></a>COM アドインを作成し、InfoPath にカスタム機能を追加する
+# <a name="create-a-com-add-in-to-add-custom-features-to-infopath"></a>InfoPath にカスタム機能を追加する COM アドインを作成する
 
-Microsoft InfoPath には、ユーザー エクスペリエンスの編集フォームを拡張するための COM アドインがサポートされています。 COM アドインが最初に追加した InfoPath では、他の Office アプリケーションなど、Microsoft Office Word と Microsoft Office Excel サポートされている COM アドインが Office 2000 以降をサポートします。
+Microsoft InfoPath は、ユーザーのフォーム編集を拡張する COM アドインをサポートしています。 最初に com アドインのサポートが InfoPath で追加されましたが、microsoft office Word や microsoft office Excel などの他の office アプリケーションでは、office 2000 以降の com アドインがサポートされています。
   
-InfoPath での COM アドイン サポートはフォーム編集環境用に使用できます。COM アドインを使用してもフォーム デザイン環境は拡張できません。
+InfoPath での COM アドイン サポートはフォーム編集環境用に使用できます。 COM アドインを使用してもフォーム デザイン環境は拡張できません。
   
 ## <a name="the-idtextensibility2-interface"></a>IDTExtensibility2 インターフェイス
 
-InfoPath 編集環境は、**IDTExtensibility2** インターフェイスをサポートしますが、その実装は COM アドイン開発者が行う必要があります。**IDTExtensibility2** はデュアル インターフェイス オブジェクトで、編集環境内でイベントとして動作する 5 つのメソッドを提供します。これらのメソッドにより、次の表に記載されている環境のスタートアップおよびシャットダウン条件に COM アドインが対応できます。 
+InfoPath 編集環境は、 **IDTExtensibility2**インターフェイスのサポートを提供します。これは、COM アドインの開発者によって実装されている必要があります。 **IDTExtensibility2**は、イベントとして機能する5つのメソッドを提供するデュアルインターフェイスオブジェクトです。編集環境内。 これらのメソッドにより、次の表に記載されている環境のスタートアップおよびシャットダウン条件に COM アドインが対応できます。 
   
 |**インターフェイス**|**説明**|
 |:-----|:-----|
-|**OnAddInsUpdate (バリアントとして ByVal custom())** <br/> |環境内でのアドインの読み込み時、またはアンロード時に発生します。  <br/> |
-|**OnBeginShutdown (バリアントとして ByVal custom())** <br/> |環境のシャット ダウン中に発生します。  <br/> |
-|**OnConnection (ByVal アプリケーションのオブジェクトとして、ByVal ConnectMode として ext_ConnectMode、ByVal AddInInst のオブジェクトとして、ByVal custom() バリアントとして)** <br/> |アドインが環境に読み込まれると発生します。  <br/> |
-|**OnDisconnection (ByVal の RemoveMode と ext_DisconnectMode、ByVal custom() のバリアントとして)** <br/> |アドインが環境からアンロードされると発生します。  <br/> |
-|**OnStartupComplete (バリアントとして ByVal custom())** <br/> |環境の起動が完了すると発生します。  <br/> |
+|**onaddinsupdate (ByVal custom () As Variant)** <br/> |環境内でのアドインの読み込み時、またはアンロード時に発生します。  <br/> |
+|**OnBeginShutdown ((Variant としての ByVal カスタム ())** <br/> |環境のシャット ダウン中に発生します。  <br/> |
+|**OnConnection (byval Application as object, byval connectmode as ext_ConnectMode, byval addininst as object, byval custom () as Variant)** <br/> |アドインが環境に読み込まれると発生します。  <br/> |
+|**OnDisconnection (byval removemode as ext_DisconnectMode, byval custom () as Variant)** <br/> |アドインが環境からアンロードされると発生します。  <br/> |
+|**OnStartupComplete ((Variant としての ByVal カスタム ())** <br/> |環境の起動が完了すると発生します。  <br/> |
    
 ## <a name="registering-com-add-ins"></a>COM アドインの登録
 
@@ -45,25 +45,25 @@ InfoPath を含め、すべての Office アプリケーションはレジスト
   
 レジストリ キー名はアドインの **ProgIdAttribute** に対応し、次の値が含まれます。 
   
-|**名前**|**型**|**説明**|
+|**名前**|**Type**|**説明**|
 |:-----|:-----|:-----|
-|**FriendlyName** <br/> |**文字列型 (String)** <br/> |**[COM アドイン]** ダイアログ ボックスに表示され、**[セキュリティ センター]** の **[アドイン]** ページに 一覧表示される名前。  <br/> |
+|**FriendlyName** <br/> |**String** <br/> |**[COM アドイン]** ダイアログ ボックスに表示され、**[セキュリティ センター]** の **[アドイン]** ページに 一覧表示される名前。  <br/> |
 |**説明** <br/> |**String** <br/> |**[セキュリティ センター]** でアドインが選択されている場合に表示される文字列。  <br/> |
-|**LoadBehavior** <br/> |**DWORD** <br/> |COM アドインの読み込み方法を指定します。値は 0、1、2、8、および 16 を組み合わせたものです。詳細については、次の表を参照してください。  <br/> |
+|**LoadBehavior** <br/> |**DWORD** <br/> |COM アドインの読み込み方法を指定します。 値は 0、1、2、8、および 16 を組み合わせたものです。 詳細については、次の表を参照してください。  <br/> |
    
-**LoadBehavior** の **DWORD** 値には、編集環境での COM アドインの読み込み方法を示す値が含まれている必要があります。次の表の値、または表中の値の組み合わせを指定できます。たとえば、Visual Studio 2005 で作成される COM アドインには、アプリケーションの起動時に読み込まれた "3" の **LoadBehavior** が含まれ、接続されます。 
+**LoadBehavior** の **DWORD** 値には、編集環境での COM アドインの読み込み方法を示す値が含まれている必要があります。 次の表の値、または表中の値の組み合わせを指定できます。 たとえば、Visual Studio 2005 で作成される COM アドインには、アプリケーションの起動時に読み込まれた "3" の **LoadBehavior** が含まれ、接続されます。 
   
 |**値**|**説明**|
 |:-----|:-----|
-|0  <br/> |切断済み。アドインを **[COM アドイン]** のダイアログ ボックスに非アクティブとして表示します。<br/> |
-|1  <br/> |接続済み。アドインを **[COM アドイン]** のダイアログ ボックスに アクティブとして表示します。<br/> |
-|2  <br/> |起動時に読み込む。アドインは、ホスト アプリケーションの起動時に読み込まれ、接続されます。  <br/> |
-|8  <br/> |必要時に読み込む。アドインは、ユーザーがアドインの機能を使用するボタンをクリックした時など、ホスト アプリケーションが要求した場合に読み込まれ、接続されます。  <br/> |
+|.0  <br/> |切断済み。アドインを **[COM アドイン]** のダイアログ ボックスに非アクティブとして表示します。<br/> |
+|1-d  <br/> |接続済み。アドインを **[COM アドイン]** のダイアログ ボックスに アクティブとして表示します。<br/> |
+|pbm-2  <br/> |起動時に読み込む。アドインは、ホスト アプリケーションの起動時に読み込まれ、接続されます。  <br/> |
+|~  <br/> |必要時に読み込む。アドインは、ユーザーがアドインの機能を使用するボタンをクリックした時など、ホスト アプリケーションが要求した場合に読み込まれ、接続されます。  <br/> |
 |16  <br/> |初回に接続する。アドインを登録した後にユーザーがホスト アプリケーションを実行した時に、アドインは初めて読み込まれます。  <br/> |
    
 ## <a name="creating-a-managed-com-add-in-with-visual-studio-2005-or-visual-studio-2008"></a>Visual Studio 2005 または Visual Studio 2008 を利用したマネージ COM アドインの作成
 
-Microsoft Visual Studio 2005 または Visual Studio 2008 を使用してマネージ COM アドインを作成するには、次の手順で共有アドイン プロジェクトを作成します。  
+Microsoft Visual Studio 2005 または Visual Studio 2008 を使用してマネージ COM アドインを作成するには、次の手順で共有アドイン プロジェクトを作成します。 
   
 1. Visual Studio を起動します。
     
@@ -77,11 +77,11 @@ Microsoft Visual Studio 2005 または Visual Studio 2008 を使用してマネ�
     
 6. **[場所]** ボックスにフォルダーのパスを入力するか、**[参照]** をクリックしてフォルダーのパスを選択し、**[OK]** をクリックします。**共有アドイン ウィザード**が表示されます。 
     
-7. **共有アドイン ウィザード**で **[次へ]** をクリックします。**[プログラミング言語の選択]** ページが表示されます。 
+7. **共有アドイン ウィザード**で **[次へ]** をクリックします。 **[プログラミング言語の選択]** ページが表示されます。 
     
-8. **[Visual Basic を使用してアドインを作成]** をクリックし、**[次へ]** をクリックします。**[アプリケーション ホストの選択]** ページが表示されます。 
+8. **[Visual Basic を使用してアドインを作成]** をクリックし、**[次へ]** をクリックします。 **[アプリケーション ホストの選択]** ページが表示されます。 
     
-9. **Microsoft InfoPath** 以外の各アプリケーションの横にあるボックスのチェックを外して、**[次へ]** をクリックする。**[名前と説明の入力]** ページが表示されます。 
+9. **Microsoft InfoPath** 以外の各アプリケーションの横にあるボックスのチェックを外して、**[次へ]** をクリックする。 **[名前と説明の入力]** ページが表示されます。 
     
 10. **[アドインの名前]** ボックスに、COM アドインの名前を入力します。 
     
@@ -99,7 +99,7 @@ Visual Studio によるプロジェクトの作成後に、2 つのプロジェ�
     
 3. **[COM]** タブの **[Microsoft.InfoPath 2.0 タイプ ライブラリ]** をダブルクリックし、**[OK]** をクリックします。
     
-4. **[Microsoft InfoPath 3.0 タイプ ライブラリ]** への参照を追加すると、削除する必要のある 3 つのアセンブリ (**ADODB**、**MSHTML**、**MSXML2**) への参照も追加されます。**References** の **Solution Explorer** で、これらの参照を右クリックし、次に **[削除]** をクリックします。
+4. **[Microsoft InfoPath 3.0 タイプ ライブラリ]** への参照を追加すると、削除する必要のある 3 つのアセンブリ (**ADODB**、**MSHTML**、**MSXML2**) への参照も追加されます。 **References** の **Solution Explorer** で、これらの参照を右クリックし、次に **[削除]** をクリックします。
     
 ## <a name="viewing-the-registry-settings"></a>レジストリ設定の表示
 
@@ -129,11 +129,11 @@ COM アドインのインストール時に作成されるレジストリ設定�
     
 共有アドイン プロジェクトが開発されたコンピューター以外のコンピューターで使用するマネージ COM アドインをコンパイルするには、次の追加手順に従ってコードをセキュリティで保護してください。他のコンピューターで使用する共有アドイン プロジェクトをセキュリティで保護する方法については、次の 3 つの資料を参照してください。
   
-- [マネージ COM アドインが Office XP での展開](https://go.microsoft.com/fwlink/?LinkID=73473)
+- [Office XP での管理された COM アドインの展開](https://go.microsoft.com/fwlink/?LinkID=73473)
   
-- [COM アドイン Shim ソリューションを使用してマネージ COM アドインで Office XP を展開するには](https://go.microsoft.com/fwlink/?LinkID=73474)
+- [com アドイン Shim ソリューションを使用して Office XP でマネージ COM アドインを展開する](https://go.microsoft.com/fwlink/?LinkID=73474)
   
-- [COM シム ウィザードを使用して Office 拡張機能を分離します。](https://go.microsoft.com/fwlink/?LinkID=73475)
+- [COM Shim ウィザードを使用して Office 拡張機能を分離する](https://go.microsoft.com/fwlink/?LinkID=73475)
   
 > [!IMPORTANT]
 > COM アドインを分離していない場合、メモリ リークが発生し、アプリケーションが不安定になる可能性があります。 
@@ -143,20 +143,20 @@ COM アドインのインストール時に作成されるレジストリ設定�
   
 ## <a name="coding-in-the-com-add-in"></a>COM アドインでのコーディング
 
-InfoPath のフォーム編集環境で発生したアプリケーション イベントは、COM アドインでキャプチャできます。 [ApplicationEvents](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.ApplicationEvents.aspx)オブジェクトの次のイベントは、ユーザー アクションに応答するのには COM アドインによって使用できます。 
+InfoPath のフォーム編集環境で発生したアプリケーション イベントは、COM アドインでキャプチャできます。 COM アドインは、次のような[applicationevents](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.ApplicationEvents.aspx)オブジェクトのイベントを使用して、ユーザー操作に応答できます。 
   
 |**イベント**|**説明**|
 |:-----|:-----|
-|[NewXDocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument.aspx)イベント  <br/> |新しいフォームが作成されるときに発生します。  <br/> |
-|[終了](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.Quit.aspx)イベント  <br/> |ユーザーが InfoPath を終了するときに発生します。  <br/> |
-|[WindowActivate](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate.aspx)イベント  <br/> |任意の文書ウィンドウがアクティブになるときに発生します。  <br/> |
-|[ただし](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate.aspx)イベント  <br/> |任意の文書ウィンドウが非アクティブになったときに発生します。  <br/> |
-|[WindowSize](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowSize.aspx)イベント  <br/> |ドキュメント ウィンドウのサイズが変更されるとき、または移動されるときに発生します。  <br/> |
-|[XDocumentBeforeClose](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose.aspx)イベント  <br/> |開いている文書が閉じる直前に発生します。  <br/> |
-|[XDocumentBeforePrint](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforePrint.aspx)イベント  <br/> |開かれているドキュメントが印刷される直前に発生します。  <br/> |
-|[XDocumentBeforeSave](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeSave.aspx)イベント  <br/> |開かれているドキュメントが保存される直前に発生します。  <br/> |
-|[XDocumentChange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentChange.aspx)イベント  <br/> |新しいフォームが作成されるとき、既存のフォームが開かれるとき、または別のフォームがアクティブになるときに発生します。  <br/> |
-|[XDocumentOpen](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen.aspx)イベント  <br/> |文書が開いたときに発生します。  <br/> |
+|[newxdocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument.aspx)Event  <br/> |新しいフォームが作成されるときに発生します。  <br/> |
+|[Quit](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.Quit.aspx)Event  <br/> |ユーザーが InfoPath を終了するときに発生します。  <br/> |
+|[windowactivate](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate.aspx)Event  <br/> |任意の文書ウィンドウがアクティブになるときに発生します。  <br/> |
+|[windowdeactivate](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate.aspx)Event  <br/> |任意の文書ウィンドウが非アクティブになったときに発生します。  <br/> |
+|[WindowSize](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowSize.aspx)Event  <br/> |ドキュメント ウィンドウのサイズが変更されるとき、または移動されるときに発生します。  <br/> |
+|[XDocumentBeforeClose](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose.aspx)Event  <br/> |開いている文書が閉じる直前に発生します。  <br/> |
+|[xdocumentbeforeprint](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforePrint.aspx)Event  <br/> |開かれているドキュメントが印刷される直前に発生します。  <br/> |
+|[xdocumentbeforesave](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeSave.aspx)Event  <br/> |開かれているドキュメントが保存される直前に発生します。  <br/> |
+|[xdocumentchange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentChange.aspx)Event  <br/> |新しいフォームが作成されるとき、既存のフォームが開かれるとき、または別のフォームがアクティブになるときに発生します。  <br/> |
+|[XDocumentOpen](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen.aspx)Event  <br/> |文書が開いたときに発生します。  <br/> |
    
 COM アドインでこれらのイベントをキャプチャするには、**Connect** クラス内のクラス レベル変数を宣言する必要があります。 
   
@@ -176,9 +176,9 @@ InfoPathApplicationEvents =
    InfoPathApplication.Events;
 ```
 
-[_Application3](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._Application3.aspx)オブジェクトをアドインで、**オブジェクト**が受信した汎用アプリケーションを最初の行にキャストします。 2 行目は、 **_Application3**オブジェクト ( **InfoPathApplication**変数によって表されます) の[イベント](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._Application3.Events.aspx)のプロパティを[ApplicationEvents](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.ApplicationEvents.aspx)オブジェクトにキャストします。 
+最初の行は、アドインが受け取った汎用アプリケーション**オブジェクト**を[application3](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._Application3.aspx)オブジェクトにキャストします。 2番目の行は、 **InfoPathApplication**変数で表される**application3**オブジェクトの[events](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath._Application3.Events.aspx)プロパティを[applicationevents](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.ApplicationEvents.aspx)オブジェクトにキャストします。 
   
-イベント ハンドラーを作成するには、Visual Studio のウィンドウの上部にある **[クラス名]** ドロップダウン ボックスから **InfoPathApplicationEvents** を選択し、次に Visual Studio ウィンドウの上部にある **[メソッド名]** ドロップダウン ボックスから処理したいイベントを選択します。たとえば、フォームを保存するタイミングをコントロールするには、**XDocumentBeforeSave** イベントを処理します。**[メソッド名]** ドロップダウンから **XDocumentBeforeSave** を選択すると、次の手順を自動的に挿入します。 
+イベント ハンドラーを作成するには、Visual Studio のウィンドウの上部にある **[クラス名]** ドロップダウン ボックスから **InfoPathApplicationEvents** を選択し、次に Visual Studio ウィンドウの上部にある **[メソッド名]** ドロップダウン ボックスから処理したいイベントを選択します。 たとえば、フォームを保存するタイミングをコントロールするには、**XDocumentBeforeSave** イベントを処理します。 **[メソッド名]** ドロップダウンから **XDocumentBeforeSave** を選択すると、次の手順を自動的に挿入します。 
   
 ```vb
 Private Sub InfoPathApplicationEvents_XDocumentBeforeSave( _
@@ -200,10 +200,10 @@ private void InfoPathApplicationEvents_XDocumentBeforeSave(
   
 ## <a name="see-also"></a>関連項目
 
-- [Microsoft Office 2000 COM アドインを作成します。](https://go.microsoft.com/fwlink/?LinkID=73468) 
-- [マネージ COM アドインが Visual Studio .NET での Office を作成します。](https://go.microsoft.com/fwlink/?LinkID=73470)
-- [IDTExtensibility2 のイベント プロシージャの使用](https://go.microsoft.com/fwlink/?LinkID=73471)
-- [Office COM アドインを Visual Basic .NET でビルドします。](https://go.microsoft.com/fwlink/?LinkID=73469)
-- [Visual C# .NET を使用して Office COM アドインを作成します。](https://support.microsoft.com/en-us/help/302901/how-to-build-an-office-com-add-in-by-using-visual-c-net)
-- [Office システム SE の Visual Studio 2005年のツールを使用して、InfoPath 2007 のアドインを作成します。](https://msdn.microsoft.com/library/bb968857%28office.12%29.aspx)
+- [Microsoft Office 2000 COM アドインを作成する](https://go.microsoft.com/fwlink/?LinkID=73468) 
+- [Visual Studio .net を使用して Office マネージ COM アドインを作成する](https://go.microsoft.com/fwlink/?LinkID=73470)
+- [IDTExtensibility2 イベントプロシージャを操作する](https://go.microsoft.com/fwlink/?LinkID=73471)
+- [Visual Basic .net を使用して Office COM アドインをビルドする](https://go.microsoft.com/fwlink/?LinkID=73469)
+- [Visual C# .net を使用して Office COM アドインをビルドする](https://support.microsoft.com/en-us/help/302901/how-to-build-an-office-com-add-in-by-using-visual-c-net)
+- [Visual Studio 2005 Tools for Office System SE を使用して InfoPath 2007 アドインを作成する](https://msdn.microsoft.com/library/bb968857%28office.12%29.aspx)
 

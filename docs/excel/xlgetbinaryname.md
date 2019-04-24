@@ -11,18 +11,18 @@ keywords:
 localization_priority: Normal
 ms.assetid: 66af3f78-65b5-42e0-82f9-ffd639d41751
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: d2332967e798b43a350c0733cd7398e2a921add6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 6d063213e3f83451e8a072e71f0878174214f73e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303837"
 ---
 # <a name="xlgetbinaryname"></a>xlGetBinaryName
 
 **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-[xlDefineBinaryName 関数](xldefinebinaryname.md)によって保存されたデータのハンドルを返すのに使用されます。 定義されているバイナリ名が含まれるデータはブックに保存され、いつでも名前でアクセスできます。 詳細については、「[Excel XLL 開発での既知の問題](known-issues-in-excel-xll-development.md)」の「バイナリ名のスコープ制限」を参照してください。
+Used to return a handle for data saved by the [xlDefineBinaryName function](xldefinebinaryname.md). Data with a defined binary name is saved with the workbook and can be accessed by name at any time. For more information, see "Binary name Scope Limitation" in [Known Issues in Excel XLL Development](known-issues-in-excel-xll-development.md).
   
 ```cs
 Excel12(xlGetBinaryName, LPXLOPER12 pxRes, 1, LPXLOPER12 pxName);

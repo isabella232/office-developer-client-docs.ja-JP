@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 2e6c82e7-a025-9df5-a95d-b00b0f39724f
 description: 角度のコサインを返します。
-ms.openlocfilehash: ea213fac19aec8a757369b3b7dcb1b273e488989
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ee8e2f4a256617c37c4aac7876aa33ae04ab2f97
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283010"
 ---
 # <a name="cos-function-visioshapesheet"></a>COS 関数 (VisioShapeSheet)
 
@@ -28,11 +28,11 @@ COS (*角度*)
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _角度_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |コサインを取得する角度を指定します。  <br/> |
+| _直交_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |コサインを取得する角度を指定します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-COS 関数では、*角度*で別の測定単位を指定する場合を除き、ラジアンが使用されます。 
+COS 関数では、*角度*に別の単位を指定しない限り、ラジアンが使用されます。 
   
 ## <a name="example"></a>例
 

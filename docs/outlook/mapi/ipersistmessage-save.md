@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 17875c13-f55b-4538-ac6f-c020281c3175
-description: '�ŏI�X�V��: 2011�N7��23��'
+description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: fa3f1d6339000fcc53e0ee22dafec4362e65ca7f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25397157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309619"
 ---
 # <a name="ipersistmessagesave"></a>IPersistMessage::Save
 
@@ -25,7 +25,7 @@ ms.locfileid: "25397157"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-変更後のフォームを元に読み込みまたは作成したメッセージに保存します。
+変更したフォームを、読み込みまたは作成されたメッセージに保存し直します。
   
 ```cpp
 HRESULT Save(
@@ -36,13 +36,13 @@ HRESULT Save(
 
 ## <a name="parameters"></a>パラメーター
 
- _pMessage_
+ _pmessage_
   
-> [in]メッセージへのポインター。
+> 順番メッセージへのポインター。
     
- _fSameAsLoad_
+ _fsameasload_
   
-> [in]メッセージに示されることを指定する場合は TRUE _pMessage_では、メッセージ フォームが読み込まれるか作成。それ以外の場合、FALSE です。 
+> 順番_pmessage_が指すメッセージが、フォームが読み込まれた、または作成されたメッセージであることを示す場合は TRUE。それ以外の場合は FALSE。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -50,23 +50,23 @@ S_OK
   
 > フォームが正常に保存されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-フォームの閲覧者は、変更後のフォームを元に読み込みまたは作成したメッセージに保存するのには**IPersistMessage::Save**メソッドを呼び出します。 
+フォームビューアーは、 **IPersistMessage:: save**メソッドを呼び出して、変更されたフォームを読み込みまたは作成されたメッセージに戻します。 
   
- **保存**する必要がありますのみ呼び出すことは、フォームの[標準](normal-state.md)の状態で。 
+ **Save**は、フォームが[通常](normal-state.md)の状態にある場合にのみ呼び出す必要があります。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-保存した変更をコミットしません。変更をコミットする呼び出し元の責任です。 **保存**の呼び出し時に除いて、フォームのメッセージに属するプロパティに変更を加えることはありません。 
+保存された変更をコミットしません。変更をコミットするのは発信者のことです。 [**保存**] 呼び出し時以外は、フォームのメッセージに属するプロパティを変更しないでください。 
   
-_FSameAsLoad_が TRUE に設定されている場合は、フォームの既存のメッセージに変更を保存することができます。 _FSameAsLoad_が FALSE に設定されている場合が指す_pMessage_保存を実行する前にメッセージに元のメッセージからコピーすべてのプロパティ必要があります。 プロパティをコピーするのにには、元のメッセージの[IMAPIProp::CopyTo](imapiprop-copyto.md)メソッドを使用します。 
+_fsameasload_が TRUE に設定されている場合は、フォームの既存のメッセージに対する変更を保存できます。 _fsameasload_が FALSE に設定されている場合は、保存を実行する前に、元のメッセージのすべてのプロパティを_pmessage_で示されるメッセージにコピーする必要があります。 元のメッセージの[imapiprop:: CopyTo](imapiprop-copyto.md)メソッドを使用して、プロパティをコピーします。 
   
-すべてのプロパティがコピーされたら、 [NoScribble](noscribble-state.md)の状態を入力します。 エラーが発生しない場合は、S_OK を返します。 それ以外の場合、失敗した操作からのエラーを返します。 
+すべてのプロパティがコピーされたら、 [noscribble](noscribble-state.md)状態を入力します。 エラーが発生しない場合は、S_OK を返します。 それ以外の場合は、失敗したアクションからエラーを返します。 
   
-フォームは、標準以外の任意の状態にすると、 **Save**が呼び出される、E_UNEXPECTED を返します。 
+フォームが通常以外の状態になっているときに**Save**を呼び出すと、E_UNEXPECTED が返されます。 
   
-ストレージ ・ オブジェクトを保存する方法の詳細については、[すること](https://msdn.microsoft.com/library/1c1a20fc-c101-4cbc-a7a6-30613aa387d7%28Office.15%29.aspx)の方法のマニュアルを参照してください。 
+ストレージオブジェクトの保存の詳細については、 [IPersistStorage](https://msdn.microsoft.com/library/1c1a20fc-c101-4cbc-a7a6-30613aa387d7%28Office.15%29.aspx)メソッドのドキュメントを参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

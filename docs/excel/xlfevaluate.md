@@ -11,12 +11,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: deea3ee6-2a32-47ef-bfa4-914891538633
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: e468dc18b8f78f56acaa67c2f23dd53254088ad0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 527f7e932a41103c374e327a1bd0dd4c7d8e92a0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303928"
 ---
 # <a name="xlfevaluate"></a>xlfEvaluate
 
@@ -42,7 +42,7 @@ Excel12(xlfEvaluate, LPXLOPER12 pxRes, 1, LPXLOPER12 pxFormulaText);
 
 文字列には関数のみを含めることができます。コマンドは対応しません。これは、数式バーで **F9** を押した場合と同じです。**xlfEvaluate** がスレッド セーフとして登録された XLL ワークシート関数から呼び出された場合、式にはスレッドセーフ関数のみを含める必要があります。 
   
-**xlfEvaluate** 関数は、主に DLL が定義済みの名前に割り当てられた値を検索できるようにするために使用します。この名前はシート上にあるか、DLL 内で定義された非表示の名前です。 DLL/XLL 内では、ワークシートの名前に少なくとも感嘆符 (!) のプレフィックスを付けて、ワークシートが DLL の外部として解釈される必要があることに注意してください。 詳細については、「[名前と他のワークシートの式を評価する](evaluating-names-and-other-worksheet-formula-expressions.md)」を参照してください。
+The primary use of the **xlfEvaluate** function is to allow DLLs to find out the value assigned to a defined name that is either on a sheet or a hidden name defined within the DLL. Note that within a DLL/XLL, a worksheet name must be prefixed with at least an exclamation mark (!) to ensure that it is interpreted as external to the DLL. For more information, see [Evaluating Names and Other Worksheet Formula Expressions](evaluating-names-and-other-worksheet-formula-expressions.md).
   
  **xlfEvaluate** は、開かれていない外部シートへの参照の評価には使用できません。 
   
@@ -50,7 +50,7 @@ Excel12(xlfEvaluate, LPXLOPER12 pxRes, 1, LPXLOPER12 pxFormulaText);
 
 この例では、**xlfEvaluate** を使用して強制的にテキスト "!B38" をセル B38 の内容にします。 
   
- `\SAMPLES\EXAMPLE\EXAMPLE.C` この関数はコマンド マクロ (**xlcAlert**) を呼び出し、マクロ シートまたはマクロ コマンドから呼び出された場合にのみ正しく動作します。
+ `\SAMPLES\EXAMPLE\EXAMPLE.C`. この関数はコマンド マクロ (**xlcAlert**) を呼び出し、マクロ シートまたはマクロ コマンドから呼び出された場合にのみ正しく動作します。
   
 ```cs
 short WINAPI EvaluateExample(void)

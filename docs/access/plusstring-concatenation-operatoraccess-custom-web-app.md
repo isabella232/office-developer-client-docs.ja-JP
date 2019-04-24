@@ -1,5 +1,5 @@
 ---
-title: + (文字列連結演算子)(カスタム web アプリケーションのアクセス)
+title: + (文字列連結演算子)(Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 24fc83e6-5860-4890-a222-f322fc30a5f9
 description: プラス記号 (+) は、文字列連結を行う文字列連結演算子です。その他のすべての文字列操作は、Substring のような文字列関数を使用して処理されます。
-ms.openlocfilehash: 488744fc485f238b225635b1cdb7a3346dfc0830
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cb684e1484136f84934feed003f205e37512ffd7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308044"
 ---
-# <a name="-string-concatenation-operator-access-custom-web-app"></a>(文字列連結演算子) + (カスタム web アプリケーションのアクセス)
+# <a name="-string-concatenation-operator-access-custom-web-app"></a>+ (文字列連結演算子) (Access カスタム web アプリ)
 
 プラス記号 (+) は、文字列連結を行う文字列連結演算子です。その他のすべての文字列操作は、 **Substring** のような文字列関数を使用して処理されます。 
   
@@ -23,8 +23,8 @@ ms.locfileid: "19798708"
   
 ## <a name="syntax"></a>構文
 
- *TextExpression***+** *TextExpression* 
+ *textexpression***+** *textexpression* 
   
- ** TextExpression 任意の有効なテキスト式。 
+ *TextExpression*  Any valid text expression. 
   
 

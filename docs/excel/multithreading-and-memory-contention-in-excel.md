@@ -1,5 +1,5 @@
 ---
-title: Excel におけるマルチスレッド処理とメモリ競合
+title: Excel 2007 �ɂ�����}���`�X���b�h�����ƃ���������
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 86e1e842-f433-4ea9-8b13-ad2515fc50d8
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: a385728450fc6519d7f5211c186a9d74e623bf7b
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301639"
 ---
 # <a name="multithreading-and-memory-contention-in-excel"></a>Excel におけるマルチスレッド処理とメモリ競合
 
  **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-Excel 2007 より前の バージョンの Microsoft Excel では、すべてのワークシートの計算に 1 つのスレッドを使用します。 ただし、Excel 2007 以降の Excel は、ワークシートの計算に 1 から 1024 の同時実行スレッドを使用するように構成できます。 マルチプロセッサまたはマルチコアのコンピューターでは、既定のスレッド数はプロセッサまたはコアの数と同じです。 したがって、スレッド セーフのセル、またはスレッド セーフの関数のみを含むセルは、同時実行スレッドに割り当てることができ、前回の計算と同様に計算する必要があるという通常の再計算ロジックが適用されます。
+Versions of Microsoft Excel earlier than Excel 2007 use a single thread for all worksheet calculations. However, starting in Excel 2007, Excel can be configured to use from 1 to 1024 concurrent threads for worksheet calculation. On a multi-processor or multi-core computer, the default number of threads is equal to the number of processors or cores. Therefore, thread-safe cells, or cells that only contain functions that are thread safe, can be allotted to concurrent threads, subject to the usual recalculation logic of needing to be calculated after their precedents.
   
 ## <a name="thread-safe-functions"></a>スレッド セーフ関数
 
@@ -99,7 +99,7 @@ LPXLOPER12 WINAPI mtr_safe_example_1(LPXLOPER12 pxArg)
 }
 ```
 
-このアプローチは、次のセクションで説明するアプローチよりも簡単に実装できます。次のセクションで説明するアプローチは TLS API に依存する一方でいくつかのデメリットがあります。 まず、どの種類の **XLOPER**/ **XLOPER12** が返される場合でも、Excel は **xlAutoFree**/ **xlAutoFree12** を呼び出す必要があります。 次に、C API コールバック関数の呼び出しの戻り値である **XLOPER**/ **XLOPER12** を返す際に問題があります。 **XLOPER**/ **XLOPER12** は、Excel によって解放される必要のあるメモリを指す場合がありますが、**XLOPER**/ **XLOPER12** そのものが割り当てられたのと同じ方法で解放される必要があります。 このような **XLOPER**/ **XLOPER12** を XLL ワークシート関数の戻り値として使用する場合は、両方のポインターを適切な方法で開放する必要があることを **xlAutoFree**/ **xlAutoFree12** に通知する簡単な方法がありません。 (**xlbitXLFree** と **xlbitDLLFree** の両方を設定しても問題は解決されません。両方が設定された Excel での **XLOPER/XLOPER12s** の処理は定義されておらず、バージョンによって異なる可能性があるためです。) この問題は、XLL がワークシートに返す、Excel によって割り当てられたすべての **XLOPER/XLOPER12s** のディープ コピーを作成することで回避できます。 
+This approach is simpler to implement than the approach outlined in the next section, which relies on the TLS API, but it has some disadvantages. First, Excel must call **xlAutoFree**/ **xlAutoFree12** whatever the type of the returned **XLOPER**/ **XLOPER12**. Second, there is a problem when returning **XLOPER**/ **XLOPER12**s that are the return value of a call to a C API callback function. The **XLOPER**/ **XLOPER12** may point to memory that needs to be freed by Excel, but the **XLOPER**/ **XLOPER12** itself must be freed in the same way it was allocated. If such an **XLOPER**/ **XLOPER12** is to be used as the return value of an XLL worksheet function, there is no easy way to inform **xlAutoFree**/ **xlAutoFree12** of the need to free both pointers in the appropriate way. (Setting both the **xlbitXLFree** and **xlbitDLLFree** does not solve the problem, as the treatment of **XLOPER/XLOPER12s** in Excel with both set is undefined and might change from version to version.) To work around this problem, the XLL can make deep copies of all Excel-allocated **XLOPER/XLOPER12s** that it returns to the worksheet. 
   
 これらの制限を回避する解決策として、スレッド ローカル **XLOPER/XLOPER12** を設定して返すアプローチがあります。このアプローチでは、 **xlAutoFree/xlAutoFree12** が **XLOPER/XLOPER12** ポインターそのものを開放しないことが要件となります。 
   

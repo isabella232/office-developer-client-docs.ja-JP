@@ -6,11 +6,11 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 1ea99a8f-b005-4b92-b313-923294d20fbf
 ms.openlocfilehash: 71325af974e4778d65bea7d74561bde3c9c8bca2
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25394035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299714"
 ---
 # <a name="office-uri-schemes"></a>Office URI スキーマ
 
@@ -173,7 +173,7 @@ ms-word URI スキームは、Microsoft Word 2013 または Microsoft Word 2010 
 
 この仕様で区切り文字として使用している縦線は、RFC 3986 のセクション 2.2 で区切り文字として使用する可能性のある文字として予約されている文字に含まれないことに注意してください。これは、文字をパーセントでエンコードする必要なしに URI コマンド引数でサポートできる文字のセットを最大化するため、意図的に定めたものです。
   
-< *command-argument* > セグメントの中では RFC 3986 の予約文字である ":" と "/" は区切り文字ではなく、引数データの一部です。したがって、エスケープせずに含める必要があることに注意してください。 
+Within < *command-argument*  > segments the RFC 3986 reserved characters ":" and "/" are part of the argument data, not delimiters, and are therefore included unescaped. 
   
 ### <a name="a-7-security-considerations"></a>A-7. セキュリティに関する考慮事項
 
@@ -216,7 +216,7 @@ ms-powerpoint URI スキームは、Microsoft PowerPoint 2013 または Microsof
 
 この仕様で区切り文字として使用している縦線は、RFC 3986 のセクション 2.2 で区切り文字として使用する可能性のある文字として予約されている文字に含まれないことに注意してください。これは、文字をパーセントでエンコードする必要なしに URI コマンド引数でサポートできる文字のセットを最大化するため、意図的に定めたものです。
   
-< *command-argument* > セグメントの中では RFC 3986 の予約文字である ":" と "/" は区切り文字ではなく、引数データの一部です。したがって、エスケープせずに含める必要があることに注意してください。 
+Within < *command-argument*  > segments the RFC 3986 reserved characters ":" and "/" are part of the argument data, not delimiters, and are therefore included unescaped. 
   
 ### <a name="b-7-security-considerations"></a>B-7. セキュリティに関する考慮事項
 
@@ -259,7 +259,7 @@ ms-excel URI スキームは、Microsoft Excel 2013 または Microsoft Excel 20
 
 この仕様で区切り文字として使用している縦線は、RFC 3986 のセクション 2.2 で区切り文字として使用する可能性のある文字として予約されている文字に含まれないことに注意してください。これは、文字をパーセントでエンコードする必要なしに URI コマンド引数でサポートできる文字のセットを最大化するため、意図的に定めたものです。
   
-< *command-argument* > セグメントの中では RFC 3986 の予約文字である ":" と "/" は区切り文字ではなく、引数データの一部です。したがって、エスケープせずに含める必要があることに注意してください。 
+Within < *command-argument*  > segments the RFC 3986 reserved characters ":" and "/" are part of the argument data, not delimiters, and are therefore included unescaped. 
   
 ### <a name="c-7-security-considerations"></a>C-7. セキュリティに関する考慮事項
 
@@ -386,7 +386,7 @@ ms-project URI スキームは、Microsoft Project 2013 を Web ページから�
 
 この仕様で区切り文字として使用している縦線は、RFC 3986 のセクション 2.2 で区切り文字として使用する可能性のある文字として予約されている文字に含まれないことに注意してください。これは、文字をパーセントでエンコードする必要なしに URI コマンド引数でサポートできる文字のセットを最大化するため、意図的に定めたものです。
   
-< *command-argument* > セグメントの中では RFC 3986 の予約文字である ":" と "/" は区切り文字ではなく、引数データの一部です。したがって、エスケープせずに含める必要があることに注意してください。 
+Within < *command-argument*  > segments the RFC 3986 reserved characters ":" and "/" are part of the argument data, not delimiters, and are therefore included unescaped. 
   
 ### <a name="f-7-security-considerations"></a>F-7. セキュリティに関する考慮事項
 
@@ -460,7 +460,7 @@ ms-spd URI スキームは、Microsoft SharePoint Designer 2013 を Web ペー�
 
 この仕様で区切り文字として使用している縦線は、RFC 3986 のセクション 2.2 で区切り文字として使用する可能性のある文字として予約されている文字に含まれないことに注意してください。これは、文字をパーセントでエンコードする必要なしに URI コマンド引数でサポートできる文字のセットを最大化するため、意図的に定めたものです。
   
-< *command-argument* > セグメントの中では RFC 3986 の予約文字である ":" と "/" は区切り文字ではなく、引数データの一部です。したがって、エスケープせずに含める必要があることに注意してください。 
+Within < *command-argument*  > segments the RFC 3986 reserved characters ":" and "/" are part of the argument data, not delimiters, and are therefore included unescaped. 
   
 ### <a name="h-7-security-considerations"></a>H-7. セキュリティに関する考慮事項
 

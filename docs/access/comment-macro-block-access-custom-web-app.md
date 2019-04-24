@@ -1,26 +1,26 @@
 ---
-title: マクロ ブロックのコメント (カスタム web アプリケーションのアクセス)
+title: Comment マクロブロック (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 1d8977a0-e787-415f-adc0-2e0c53a364a4
 description: Comment ステートメントを使用して、マクロに説明コメントを指定できます。
-ms.openlocfilehash: 4dd8c869494fcc0dd038ef9414a625cffd9c23f1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 93404f24750fd63d42127f71d3593d863c2bf1ba
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282279"
 ---
-# <a name="comment-macro-block-access-custom-web-app"></a>マクロ ブロックのコメント (カスタム web アプリケーションのアクセス)
+# <a name="comment-macro-block-access-custom-web-app"></a>Comment マクロブロック (Access カスタム web アプリ)
 
-**Comment** ステートメントを使用して、マクロに説明コメントを指定できます。 
+The **Comment** statement can be used to provide explanatory remarks in a macro. 
   
 > [!IMPORTANT]
-> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 **Comment** には、最大 1000 文字まで使用できます。ただし、既定ではコメントの先頭行のみが表示されます。 
   

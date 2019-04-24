@@ -12,23 +12,23 @@ api_type:
 - COM
 ms.assetid: 491170af-db35-4d7e-a912-44ffe8c7506b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d797acdbf2abfb88151d69d0c93e743f07afc5c9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 88cf91330dea82dda490b81cc8de6fea0504baf7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282685"
 ---
 # <a name="sizedentryid"></a>SizedENTRYID
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-指定したサイズの**ab**のメンバーを含む名前付き[エントリ ID](entryid.md)構造体を作成します。 
+指定したサイズの**ab**メンバーを含む、名前付き[ENTRYID](entryid.md)構造を作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |**エントリ ID** <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |**ENTRYID** <br/> |
    
 ```cpp
 SizedENTRYID (_cb, _name)
@@ -38,17 +38,17 @@ SizedENTRYID (_cb, _name)
 
 __cb_
   
-> **Ab**の新しい構造体のメンバーのバイト数をカウントします。 
+> 新しい構造の**ab**メンバーのバイト数。 
     
-__名_
+__名前_
   
-> 新しい構造体の名前です。
+> 新しい構造の名前を指定します。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**SizedENTRYID**マクロを使用して、配列の長さの要件を認識した後に、エントリの識別子を定義できます。 明示的な境界を持つエントリ識別子を作成するのにには、このマクロを使用します。 
+**sizedentryid**マクロを使用すると、配列の長さの要件を認識した後にエントリ識別子を定義できます。 このマクロを使用して、明示的な境界を持つエントリ識別子を作成します。 
   
-**エントリ ID**の構造体へのポインターとしての**SizedENTRYID**マクロから得られる新しい構造体を使用するには、次のキャストを実行します。 
+**sizedentryid**マクロの結果として得られる新しい構造を、 **ENTRYID**構造体へのポインターとして使用するには、次のキャストを実行します。 
   
 ```cpp
 lpENTRYID = (LPENTRYID) &SizedENTRYID;
@@ -57,6 +57,6 @@ lpENTRYID = (LPENTRYID) &SizedENTRYID;
 
 ## <a name="see-also"></a>関連項目
 
-- [エントリ ID](entryid.md)
-- [構造体に関連するマクロ](macros-related-to-structures.md)
+- [ENTRYID](entryid.md)
+- [構造に関連するマクロ](macros-related-to-structures.md)
 

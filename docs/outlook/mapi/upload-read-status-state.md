@@ -1,43 +1,43 @@
 ---
-title: 読み取り状況アップロード状態
+title: 読み取り状態のアップロードの状態
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 4d45574e-df87-8c44-4aa7-d41b38406f0a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 41815a88fe1215d2a85a38592e04b0d0bbd43cc6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e8ad2acf019df3f07060c8e8c71a62afd3fca03c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282664"
 ---
-# <a name="upload-read-status-state"></a>読み取り状況アップロード状態
+# <a name="upload-read-status-state"></a>読み取り状態のアップロードの状態
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
- このトピックでは、状態マシンの状態、レプリケーションの状態を読み取り、アップロード中の動作について説明します。 
+ このトピックでは、レプリケーション状態マシンの読み取り状態のアップロード中に行われる処理について説明します。 
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|状態識別子。  <br/> |**LR_SYNC_UPLOAD_MESSAGE_READ** <br/> |
-|関連するデータ構造体。  <br/> |**[UPREAD](upread.md)** <br/> |
-|この状態。  <br/> |[テーブルの状態をアップロードします。](upload-table-state.md) <br/> |
-|この状態。  <br/> |テーブルの状態をアップロードします。  <br/> |
+|状態識別子:  <br/> |**LR_SYNC_UPLOAD_MESSAGE_READ** <br/> |
+|関連データ構造:  <br/> |**[UPREAD](upread.md)** <br/> |
+|この状態から:  <br/> |[テーブルの状態をアップロードする](upload-table-state.md) <br/> |
+|この状態:  <br/> |テーブルの状態をアップロードする  <br/> |
    
 > [!NOTE]
-> レプリケーションの状態マシンは、確定的なステート マシンです。 クライアントを別の 1 つの状態から出発するは、後者から前者に最終的に返す必要があります。 
+> レプリケーション状態マシンは、確定状態のマシンです。 ある状態から別の状態に出発するクライアントは、最終的に後者から元の状態に戻る必要があります。 
   
 ## <a name="description"></a>説明
 
-この状態は、上記アップロード テーブルの状態で指定したフォルダー内のアイテムの読み取り状態をアップロードを開始します。 この状態は、中には、Outlook は、リードのステータスが変更されたフォルダー内の項目の情報が関連付けられている**UPREAD**データ構造体を初期化します。 クライアントは、これらのアイテムを開封済みまたは未読にするとサーバー上の読み取り状態を更新します。 
+この状態は、前のアップロードテーブル状態で指定されたフォルダー内のアイテムの読み取り状態のアップロードを開始します。 この状態の間、Outlook は、関連付けられた**upread**データ構造と、読み取り状態が変更されたフォルダー内のアイテムに関する情報を初期化します。 クライアントは、サーバー上のこれらのアイテムの読み取り状態を、読み取りまたは未読に更新します。 
   
-この状態が終了すると Outlook は、もう一度アップロードしてから、アイテムの読み取り状態を防止するアイテムの読み取りの状態に関する内部情報を消去します。 ローカル ストアは、アップロード ・ テーブルの状態を返します。
+この状態が終了すると、Outlook はアイテムの読み取り状態に関する内部情報をクリアし、アイテムの開封状態が再度アップロードされるのを防ぎます。 ローカルストアは、テーブルのアップロード状態に戻ります。
   
 ## <a name="see-also"></a>関連項目
 
@@ -47,7 +47,7 @@ ms.locfileid: "22573048"
   
 [MAPI �萔](mapi-constants.md)
   
-[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
+[レプリケーション状態のマシンについて](about-the-replication-state-machine.md)
   
-[同期状態](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

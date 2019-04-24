@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: 500f60ed-fdec-4d70-8cf5-664c46643956
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 769ae984e4b6e8610ca7909ea2ac714d9d04d698
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ad8aec8d015849965bea6ac011c8a45e75c69ca1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287108"
 ---
 # <a name="dtpage"></a>DTPAGE
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[BuildDisplayTable](builddisplaytable.md)関数によって、表示された表から組み込まれているダイアログ ボックスについて説明します。 
+[builddisplaytable](builddisplaytable.md)関数によって表示テーブルから構築されたダイアログボックスについて説明します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct DTPAGE
@@ -50,33 +50,33 @@ typedef struct DTPAGE
 
  **cctl**
   
-> **Lpctl**メンバーで指定されたコントロールの数。 
+> **lpctl**メンバーが指すコントロールの数。 
     
- **lpszResourceName**
+ **lpszresourcename**
   
-> ダイアログ ボックスのリソースの名前または整数の識別子へのポインター。 
+> ダイアログボックスリソースの名前または整数識別子へのポインター。 
     
- **lpszComponent**
+ **lpszcomponent**
   
-> MAPISVC.INF の **[ヘルプ ファイルのマッピング]** セクションに表示される文字列へのポインター。 **LpszComponent**が**ulItemID**のメンバーを含む共用体であるため、これらのメンバーの 1 つだけが有効なデータです。 
+> mapisvc.inf の **[Help File Mappings]** セクションに表示される文字列へのポインター。 **lpszcomponent**は**ulitemid**メンバーとの和集合に含まれているため、これらのメンバーのうち1つだけが有効なデータを持っています。 
     
- **ulItemID**
+ **ulitemid**
   
-> ヘルプ ファイル名を読み取ることができますから 65535 以下の値を持つ整数リソース識別子。 **UlItemID**が**lpszComponent**のメンバーを含む共用体であるため、これらのメンバーの 1 つだけが有効なデータです。 
+> ヘルプファイル名を読み取ることができる65535以下の値を持つ整数リソース識別子。 **ulitemid**は**lpszcomponent**メンバーと共用されているため、これらのメンバーのうち1つだけが有効なデータを持っています。 
     
  **lpctl**
   
-> ページ上の各コントロールのいずれかの[DTCTL](dtctl.md)構造体の配列へのポインター。 
+> [DTCTL](dtctl.md)構造体の配列へのポインター。ページ上の各コントロールに対して1つ。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-タブ付きページのヘルプ ファイルを特定するには、整数リソース識別子にハード コーディングされた文字列への**lpszComponent**のメンバーまたは**ulItemID**のメンバーのいずれかを設定します。 
+タブページのヘルプファイルを識別するには、 **lpszcomponent**メンバーをハードコーディングされた文字列または**ulitemid**メンバーのいずれかを整数リソース識別子に設定します。 
   
-**[ヘルプ ファイルのマッピング]** セクションには、MAPISVC 内の各エントリで、です。INF は、コンポーネント、文字列の左側と右側のヘルプ ファイルのパスに、30 文字以内で構成されています。 _HInstance_のパラメーター **BuildDisplayTable**は、 **ulItemID**と**lpszResourceName**の両方を参照ください。 詳細については、 [MAPISVC を参照してください。INF の [ヘルプ ファイルのマッピング] セクションで](mapisvc-inf-help-file-mappings-section.md)。
+mapisvc.inf の **[Help File Mappings]** セクションの各エントリ。INF は、30文字以内のコンポーネント文字列から構成され、左側には右に、ヘルプファイルのパスが表示されます。 **ulitemid**と**lpszresourcename**の両方が**builddisplaytable**の_hInstance_パラメーターにあります。 詳細については、「mapisvc.inf」を参照してください[。INF [Help File Mappings] セクション](mapisvc-inf-help-file-mappings-section.md)
   
-**BuildDisplayTable**では、この構造体を使用して、テーブルを作成、表示コントロールのリソースから表示テーブル自体に**DTPAGE**構造は表示されません。 
+**builddisplaytable**は、この構造を使用して、コントロールリソースから表示テーブルを作成しますが、 **dtpage**構造は表示テーブル自体には表示されません。 
   
-テーブルの表示の概要については、[テーブルの表示](display-tables.md)を参照してください。 表示テーブルを実装する方法の詳細については、[表示テーブルを実装する](display-table-implementation.md)を参照してください。
+表示テーブルの概要については、「[テーブルの表示](display-tables.md)」を参照してください。 表示テーブルを実装する方法については、「[表示テーブルを実装](display-table-implementation.md)する」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

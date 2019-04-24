@@ -1,19 +1,19 @@
 ---
-title: Avg 関数 (カスタム web アプリケーションのアクセス)
+title: Avg 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: d432e823-a255-4860-9c8b-201b2e0476fd
 description: 指定したフィールドにある値の集合の平均値を計算します。
-ms.openlocfilehash: afe832a51fc9cd3b224087a0b06fe539f6a7004b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e67cde12e66f943d3b25fe9cb2fee4fe4aea760f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282335"
 ---
-# <a name="avg-function-access-custom-web-app"></a>Avg 関数 (カスタム web アプリケーションのアクセス)
+# <a name="avg-function-access-custom-web-app"></a>Avg 関数 (Access カスタム web アプリ)
 
 指定したフィールドにある値の集合の平均値を計算します。
   
@@ -22,13 +22,13 @@ ms.locfileid: "19798569"
   
 ## <a name="syntax"></a>構文
 
- **平均**(*数式*) 
+ **Avg**(*NumericExpression*) 
   
 **Avg** 関数には、以下の引数があります。 
   
-|**引数**|**説明**|
+|**Arg1 と Arg2 の値**|**説明**|
 |:-----|:-----|
-|数式  <br/> |平均値、またはそのフィールドのデータを使用して計算を実行する式にする数値データを含むフィールドを識別する文字列式です。 *数式*内のオペランドには、テーブルのフィールド、変数、または関数 (組み込みまたはユーザー定義することができますが、他の SQL 集計関数のいずれかのない) の名前を含めることができます。  <br/> |
+|NumericExpression  <br/> |そのフィールドのデータを使用して計算を実行する数値データを含むフィールドを示す文字列式を指定します。 *NumericExpression*のオペランドには、テーブルのフィールドの名前、変数、または関数を含めることができます (これは、組み込みまたはユーザー定義であっても、他の SQL 集計関数のいずれでもない場合があります)。  <br/> |
    
 ## <a name="remarks"></a>解説
 

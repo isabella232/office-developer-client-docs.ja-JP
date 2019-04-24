@@ -1,22 +1,22 @@
 ---
-title: '- (減算)(カスタム web アプリケーションのアクセス)'
+title: '- さかのぼる(Access カスタム web アプリ)'
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6c893bfa-c2ca-48fa-8a3e-fd5ba3681a18
-description: 2 つの数を減算します。この減算演算子では、日付から数 (日数) を減算することもできます。
-ms.openlocfilehash: 71218cedbfc7421e262bf825427428fd4990d9b4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 2 つの数を減算します。 この減算演算子では、日付から数 (日数) を減算することもできます。
+ms.openlocfilehash: 07f0f555f19e20179066443eba5f16dd747beae1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307869"
 ---
-# <a name="--subtract-access-custom-web-app"></a>-(減算) (カスタム web アプリケーションのアクセス)
+# <a name="--subtract-access-custom-web-app"></a>-(減算) (Access カスタム web アプリ)
 
-2 つの数を減算します。この減算演算子では、日付から数 (日数) を減算することもできます。
+2 つの数を減算します。 この減算演算子では、日付から数 (日数) を減算することもできます。
   
 > [!IMPORTANT]
 > マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
@@ -25,7 +25,7 @@ ms.locfileid: "19798748"
 
  *expression*  -  *expression* 
   
- *式* **ビット**データ型を除く数値のカテゴリ内のデータ型のいずれかの任意の有効な式。 日付または時刻のデータ型では使用できません。 
+ *expression*  Any valid expression of any one of the data types in the numeric category except the **bit** data type. Cannot be used with date or time data types. 
   
 ## <a name="return-value"></a>戻り値
 

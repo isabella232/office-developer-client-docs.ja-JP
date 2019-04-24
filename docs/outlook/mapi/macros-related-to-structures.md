@@ -1,5 +1,5 @@
 ---
-title: 構造体に関連するマクロ
+title: 構造に関連するマクロ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -10,22 +10,22 @@ api_type:
 - COM
 ms.assetid: e58c4954-e6b5-469d-898b-cef0a8fd612c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 177a453f64dd41197b18418eefbfdf9868ad2849
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b334ad61f75e9c27f8981d96a19e1246eef5ed65
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32298503"
 ---
-# <a name="macros-related-to-structures"></a>構造体に関連するマクロ
+# <a name="macros-related-to-structures"></a>構造に関連するマクロ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-このセクションのトピックでは、MAPI の構造体に関連するマクロについて説明します。 詳細については、相互参照の他の文書に、またはこのドキュメントの他のトピックも含まれています。 
+このセクションのトピックでは、MAPI 構造に関連するマクロについて説明します。 詳細については、他の文書への相互参照、またはこのドキュメントの他のトピックも参照してください。 
   
-MAPI の構造体に関連するマクロを次の表に一覧します。
+次の表に、MAPI 構造に関連するマクロの一覧を示します。
   
 |||
 |:-----|:-----|

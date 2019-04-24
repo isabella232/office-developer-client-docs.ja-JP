@@ -12,51 +12,51 @@ api_type:
 - COM
 ms.assetid: c7b21c90-7fdc-48e4-8197-7675978c5d3b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 427eed260dbe56e2a83d7ddccff3eb2cebe8c27c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a0617029fd13cf6968936c97faacedeb333ede9e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286516"
 ---
 # <a name="pidtagproofofsubmissionrequested-canonical-property"></a>PidTagProofOfSubmissionRequested 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ASN.1 の検証用には提出書類の値が含まれています。
+送信値の ASN を含む1つの証明を含みます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_PROOF_OF_SUBMISSION_REQUESTED  <br/> |
 |識別子:  <br/> |0x0028  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |MAPI の封筒  <br/> |
+|エリア:  <br/> |MAPI エンベロープ  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティは、X.400 送信エンベロープ メッセージごとの属性に対応します。
+このプロパティは、メッセージごとの400送信エンベロープ属性に対応します。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

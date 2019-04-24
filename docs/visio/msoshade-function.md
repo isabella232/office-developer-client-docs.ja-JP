@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 905cd1cc-14d3-5d37-89c4-f8461a03dda2
 description: 指定された割合で明度を減らして色を変更します。
-ms.openlocfilehash: f5f6eb0b6009473dcec017e951cca2f90b6c4d55
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 207893552c7378589d4a648bf29ed88fcfd15224
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283711"
 ---
 # <a name="msoshade-function"></a>MSOSHADE 関数
 
@@ -25,17 +25,17 @@ ms.locfileid: "19805911"
   
 ## <a name="syntax"></a>構文
 
-MSOSHADE (* **色** *、* * *deltaLum-* * *) 
+msoshade (* * *color* * *, * * *-deltaLum* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _color_ <br/> |必須  <br/> |**RGB** <br/> |標準の RGB (red、green、blue) による色の値または色への参照。  <br/> |
-| _-deltaLum_ <br/> |必須  <br/> |**Integer** <br/> |白に向かって変化率 (-100%)] または [_色_の値から黒 (100%)。  <br/> |
+| _-deltaLum_ <br/> |必須  <br/> |**整数型 (Integer)** <br/> |パーセンテージを白に変更します (-100%)または黒 (100%)_色_の値から。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-近い_色_の値は、白または黒、小さな変更には特定_の deltaLum_の値によって生成される影。 
+_色_の値が白または黒に近いほど、 _deltaLum_の値によって生成される網掛けの変化が小さくなります。 
   
 

@@ -11,12 +11,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: d34cf20c-a5cd-45fb-9dcb-d49eac2d99dd
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: cd401393b7465442cef9342b942a27456871c68b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 05119226d0b6190a2c4b30846c03a59b5c3cd1d8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303879"
 ---
 # <a name="xlfregisterid"></a>xlfRegisterId
 

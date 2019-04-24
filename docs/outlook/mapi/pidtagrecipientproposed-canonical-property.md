@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 8cb0e46c-0937-482f-be78-1f2e5261b210
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1b09d8d7621121b3652ceb9824f6d36b53844206
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283136"
 ---
 # <a name="pidtagrecipientproposed-canonical-property"></a>PidTagRecipientProposed 標準プロパティ
 
@@ -25,48 +25,48 @@ ms.locfileid: "25388057"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-会議の出席者が反応したかどうかを示します。
+会議の出席者が応答したかどうかを示します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_RECIPIENT_PROPOSED  <br/> |
-|識別子:  <br/> |0x5FE1  <br/> |
+|識別子:  <br/> |0x5fe1  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|エリア:  <br/> |トランスポートにおける受取人  <br/> |
+|エリア:  <br/> |トランスポート受信者  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティの値は、出席者が新しい日時を提案することを示します。 値の false の場合、または、このプロパティがない場合は、まだ応答して、参加者がいないか、出席者からの最新の応答は、新しい日付を含める/時間の提案でしたいないを意味します。 この値を TRUE にすることはできません定期的な一連の出席者のために。
+このプロパティの値が TRUE の場合は、出席者が新しい日付または時刻を提案したことを示します。 値が FALSE の場合、またはこのプロパティが存在しない場合は、出席者がまだ反応していないか、または出席者からの最新の応答に新しい日時の提案が含まれていないことを意味します。 定期的なアイテムの出席者に対しては、この値を TRUE にすることはできません。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
+> 予定、会議出席依頼、および応答メッセージのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

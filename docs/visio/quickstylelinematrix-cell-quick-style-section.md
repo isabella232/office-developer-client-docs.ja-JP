@@ -6,27 +6,27 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3b10221d-30f8-48f5-81ed-0283fdfc3e5d
-description: 0-6 の整数として、図形を継承するクイック スタイルのスタイルを指定します。
-ms.openlocfilehash: 31d5c6e7c3e0e3f10847c44d5545b2687a7e99b0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 図形が継承するクイックスタイルの線のスタイルを、0-6 からの整数で指定します。
+ms.openlocfilehash: e04fc6328d40b0564364aa8feff971628360d813
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282587"
 ---
 # <a name="quickstylelinematrix-cell-quick-style-section"></a>[QuickStyleLineMatrix] セル ([クイック スタイル] セクション)
 
-0-6 の整数として、図形を継承するクイック スタイルのスタイルを指定します。 
+図形が継承するクイックスタイルの線のスタイルを、0-6 からの整数で指定します。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**セル**要素の**N**属性の値によって、別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ **QuickStyleLineMatrix** ] セルへの参照を取得、次のように使用します。 
+別の数式から、 **cell**要素の**N**属性の値によって、または**CellsU**プロパティを使用したプログラムから、名前によって [ **[quickstylelinematrix]** ] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | QuickStyleLineMatrix  <br/> |
+| セル名:  <br/> | [quickstylelinematrix]  <br/> |
    
-プログラムから、インデックスによって [ **QuickStyleLineMatrix** ] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ **[quickstylelinematrix]** ] セルへの参照を取得するには、 **CellsSRC**プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

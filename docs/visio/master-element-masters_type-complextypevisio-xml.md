@@ -1,31 +1,31 @@
 ---
-title: マスター要素 (Masters_Type complexType)'Visio XML (')
+title: Master 要素 (Masters_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: c102fd71-c621-2bde-9fbb-8e9203fdf31e
-description: ドキュメントのマスターを定義する要素が含まれています。
+description: 文書のマスターシェイプを定義する要素を格納します。
 ms.openlocfilehash: f6effa521b7c5ea69d41b6770ee2dbef61af097c
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283966"
 ---
-# <a name="master-element-masterstype-complextype-visio-xml"></a>マスター要素 (Masters_Type complexType)'Visio XML (')
+# <a name="master-element-masterstype-complextype-visio-xml"></a>Master 要素 (Masters_Type complexType) (' Visio XML ')
 
-ドキュメントのマスターを定義する要素が含まれています。
+文書のマスターシェイプを定義する要素を格納します。
   
 ## <a name="element-information"></a>要素情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Master_Type](master_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
-|**文書パーツ** <br/> |masters.xml  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
+|**文書パーツ** <br/> |masters  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -36,38 +36,38 @@ ms.locfileid: "25400489"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。 
+スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[Masters](masters-elementvisio-xml.md) <br/> |[Masters_Type](masters_type-complextypevisio-xml.md) <br/> |ドキュメントの**マスター**の要素が含まれています。  <br/> |
+|[Masters](masters-elementvisio-xml.md) <br/> |[Masters_Type](masters_type-complextypevisio-xml.md) <br/> |文書の**マスター**要素を含みます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**型**|**説明**|
+|**Element**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[Connects](connects-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Connects_Type](connects_type-complextypevisio-xml.md) <br/> |図面内の 2 つの図形間の各接続の**接続**の要素が含まれています。  <br/> |
-|[Icon](icon-element-master_type-complextypevisio-xml.md) <br/> |[Icon_Type](icon_type-complextypevisio-xml.md) <br/> |エンコードされたバイナリ] アイコン (.ico 形式) をドキュメント内の**マスター シェイプ**または**MasterShortcut**要素の MIME (多目的インターネット メール拡張機能) を指定します。  <br/> |
-|[PageSheet](pagesheet-element-master_type-complextypevisio-xml.md) <br/> |[PageSheet_Type](pagesheet_type-complextypevisio-xml.md) <br/> |**マスター シェイプ**または**ページ**の要素のページ シートを定義する要素が含まれています。  <br/> |
-|Shapes  <br/> |Shapes_Type  <br/> |**図形**要素のコレクションが含まれています。  <br/> |
+|[Connects](connects-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Connects_Type](connects_type-complextypevisio-xml.md) <br/> |図面内の2つの図形を接続するための**Connect**要素を含みます。  <br/> |
+|[Icon](icon-element-master_type-complextypevisio-xml.md) <br/> |[Icon_Type](icon_type-complextypevisio-xml.md) <br/> |ドキュメント内の**Master**または**mastershortcut**要素に対してエンコードされた、MIME (多目的インターネットメール内線) のエンコードされたバイナリアイコン (.ico 形式) を指定します。  <br/> |
+|[PageSheet](pagesheet-element-master_type-complextypevisio-xml.md) <br/> |[PageSheet_Type](pagesheet_type-complextypevisio-xml.md) <br/> |**ページ**または**マスター**要素のページシートを定義する要素が含まれています。  <br/> |
+|図形  <br/> |Shapes_Type  <br/> |**Shape**要素のコレクションを格納します。  <br/> |
    
 ### <a name="attributes"></a>属性
 
-|**属性**|**型**|**必須**|**説明**|**使用可能な値**|
+|**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|AlignName  <br/> |xsd:unsignedShort  <br/> |省略可能  <br/> |ステンシル ウィンドウでマスター シェイプのテキストが左、右揃えまたは中央揃えかどうかを指定します。  <br/> |Xsd:unsignedShort の値を入力します。  <br/> |
-|BaseID  <br/> |xsd:string  <br/> |省略可能  <br/> |ドキュメントのマスターを識別する GUID (グローバル一意識別子) です。  <br/> |Xsd:string の値を入力します。  <br/> |
-|非表示  <br/> |xsd:boolean  <br/> |省略可能  <br/> |ユーザー インターフェイスで、マスターが非表示かどうかを指定します。  <br/> |Xsd:boolean の値を入力します。  <br/> |
-|IconSize  <br/> |xsd:unsignedShort  <br/> |省略可能  <br/> |要素のアイコンのサイズ。  <br/> |Xsd:unsignedShort の値を入力します。  <br/> |
-|IconUpdate  <br/> |xsd:boolean  <br/> |省略可能  <br/> |マスター シェイプ自体から、アイコンを自動的に生成するかどうかを指定します。  <br/> |Xsd:boolean の値を入力します。  <br/> |
-|ID  <br/> |xsd:unsignedInt  <br/> |必須  <br/> |その親要素内の要素の一意の ID。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|MatchByName  <br/> |xsd:boolean  <br/> |省略可能  <br/> |マスターが図面ページにドロップされた図面マスター シェイプが既に場合のインスタンスに存在する場合を Microsoft Visio が決定する方法を決定します。  <br/> |Xsd:boolean の値を入力します。  <br/> |
-|名前  <br/> |xsd:string  <br/> |省略可能  <br/> |要素の名前です。  <br/> |Xsd:string の値を入力します。  <br/> |
-|NameU  <br/> |xsd:string  <br/> |省略可能  <br/> |要素の汎用名です。  <br/> |Xsd:string の値を入力します。  <br/> |
-|PatternFlags  <br/> |xsd:unsignedShort  <br/> |省略可能  <br/> |マスターのユーザー設定のパターンとして動作するかどうかを決定します。  <br/> |Xsd:unsignedShort の値を入力します。  <br/> |
-|プロンプト  <br/> |xsd:string  <br/> |省略可能  <br/> |ステータス バー、ツールは、要素の prompt ヒントです。  <br/> |Xsd:string の値を入力します。  <br/> |
-|UniqueID  <br/> |xsd:string  <br/> |省略可能  <br/> |ドキュメント内のマスターを識別する GUID です。  <br/> |Xsd:string の値を入力します。  <br/> |
+|AlignName  <br/> |xsd: アン signedshort  <br/> |省略可能  <br/> |ステンシルウィンドウ内のマスターシェイプのテキストを左、右、または中央に配置するかどうかを指定します。  <br/> |xsd: _ signedshort 型の値。  <br/> |
+|BaseID  <br/> |xsd: string  <br/> |省略可能  <br/> |ドキュメント間でマスターを識別する GUID (グローバル一意識別子)。  <br/> |xsd: string 型の値。  <br/> |
+|Hidden  <br/> |xsd: boolean  <br/> |省略可能  <br/> |ユーザーインターフェイスでマスターシェイプを非表示にするかどうかを指定します。  <br/> |xsd: boolean 型の値。  <br/> |
+|IconSize  <br/> |xsd: アン signedshort  <br/> |省略可能  <br/> |要素のアイコンのサイズ。  <br/> |xsd: _ signedshort 型の値。  <br/> |
+|IconUpdate  <br/> |xsd: boolean  <br/> |省略可能  <br/> |マスターシェイプ自体からアイコンを自動生成するかどうかを指定します。  <br/> |xsd: boolean 型の値。  <br/> |
+|ID  <br/> |xsd: アン signedint  <br/> |必須  <br/> |親要素内の要素の一意の ID。  <br/> |xsd:/signedint 型の値。  <br/> |
+|MatchByName  <br/> |xsd: boolean  <br/> |省略可能  <br/> |図面ページにマスターシェイプのインスタンスがドロップされたときに図面マスターシェイプが既に存在するかどうかを決定する方法を指定します。  <br/> |xsd: boolean 型の値。  <br/> |
+|名前  <br/> |xsd: string  <br/> |省略可能  <br/> |要素の名前。  <br/> |xsd: string 型の値。  <br/> |
+|NameU  <br/> |xsd: string  <br/> |省略可能  <br/> |要素の汎用名。  <br/> |xsd: string 型の値。  <br/> |
+|PatternFlags  <br/> |xsd: アン signedshort  <br/> |省略可能  <br/> |マスター シェイプをユーザー設定のパターンとして使用するかどうかを指定します。  <br/> |xsd: _ signedshort 型の値。  <br/> |
+|プロンプト  <br/> |xsd: string  <br/> |省略可能  <br/> |要素のステータスバーとツールヒントのプロンプト。  <br/> |xsd: string 型の値。  <br/> |
+|UniqueID  <br/> |xsd: string  <br/> |省略可能  <br/> |ドキュメント内のマスターシェイプを識別する GUID。  <br/> |xsd: string 型の値。  <br/> |
    
 

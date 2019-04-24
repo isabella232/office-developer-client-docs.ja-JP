@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: b2b5d6e6-201b-4ad7-8de2-e40f09165e62
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: df3a872aedcba79613a8f2ca2b970069d372eb07
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f4d2c8460e5baf484d30f4861e15a56fcd8d491b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287088"
 ---
 # <a name="entrylist"></a>ENTRYLIST
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[SBinaryArray](sbinaryarray.md)構造体と同じ実装を使用している MAPI オブジェクトを表すエントリの識別子の配列。 
+[sbinaryarray](sbinaryarray.md)構造と同じ実装を使用する MAPI オブジェクトを表すエントリ id の配列。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef SBinaryArray ENTRYLIST, FAR *LPENTRYLIST;
@@ -38,13 +38,13 @@ typedef SBinaryArray ENTRYLIST, FAR *LPENTRYLIST;
 
 ## <a name="members"></a>Members
 
-メンバーの**SBinaryArry**構造体を参照してください。 
+メンバーの**SBinaryArry**構造を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[エントリ ID](entryid.md)
+[ENTRYID](entryid.md)
   
 [SBinaryArray](sbinaryarray.md)
 

@@ -6,41 +6,41 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 850de802-e417-4884-8d14-571de52aa391
-description: ポップアップ ・ ウィンドウで指定されたビューを開きます。
-ms.openlocfilehash: 01e0086dc0b54837cf5f095ec6ac5701b5b0b219
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 指定したビューをポップアップウィンドウで開きます。
+ms.openlocfilehash: 2a8b67fcbf31c42f13b36f06d14d9d046be68c68
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308114"
 ---
 # <a name="openpopup-macro-action-access-custom-web-app"></a>OpenPopup マクロのアクション (カスタム web アプリケーションのアクセス)
 
-ポップアップ ・ ウィンドウで指定されたビューを開きます。
+指定したビューをポップアップウィンドウで開きます。
   
 > [!IMPORTANT]
 > マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 ## <a name="syntax"></a>構文
 
- **OpenPopup**(*ビュー*、 *、=*、*順*) 
+ **openpopup**(*ビュー*、 *Where =*、 *Order By*) 
   
-**OpenPopup**アクションには、次の引数が含まれています。 
+**openpopup**アクションには、次の引数が含まれています。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
 | *View*  <br/> |開くビューの名前を指定します。  <br/> |
-| *場所 =*  <br/> |有効な SQL WHERE 句 (単語なしで) ビュー内のレコードを制限しています。  <br/> |
+| *Where =*  <br/> |ビュー内のレコードを制限する有効な SQL where 句 (単語 where を除く)。  <br/> |
 | *Order By/並び替え*  <br/> |レコードを並べ替えるフィールド (複数可) の名前を含む文字列の式です。必要に応じて ASC キーワードまたは DESC キーワードを含めることもできます。既定では、この引数は空白です。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**OpenPopup**アクションを処理すると、現在のマクロが終了します。 
+**openpopup**アクションが処理されると、現在のマクロは終了します。 
   
-**OpenPopup**アクションが呼び出されたときに、並べ替え、またはユーザーによって適用されたフィルターがクリアされます。 
+**openpopup**アクションが呼び出されると、ユーザーによって適用されたすべての並べ替えまたはフィルター処理がクリアされます。 
   
-*並べ替え*引数は、フィールドまたはレコードをソートするフィールドの名前です。 複数のフィールド名を指定する場合はコンマ (,) で区切ります。 
+The  *OrderBy*  argument is the name of the field or fields on which you want to sort records. When you use more than one field name, separate the names with a comma (,). 
   
-*並べ替え*引数を設定すると、既定では昇順でレコードが並べ替えられます。 
+When you set the  *OrderBy*  argument, the records are sorted by default in ascending order. 
   
 

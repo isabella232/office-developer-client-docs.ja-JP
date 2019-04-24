@@ -1,5 +1,5 @@
 ---
-title: 取得および複数のプロパティを設定します。
+title: 複数プロパティの取得と設定
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,20 +7,20 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 29b7f5f1-afc1-45d9-8867-9312c072e74b
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 88c3e0bdb3cc6660e35faf62c5bb63ec2f6352bc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: dd25751978eb036531238e6372e35934b3ec145a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299378"
 ---
-# <a name="getting-and-setting-multiple-properties"></a>取得および複数のプロパティを設定します。
+# <a name="getting-and-setting-multiple-properties"></a>複数プロパティの取得と設定
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-取得するを最小限にできる限り多くのプロパティを設定して、活動を削減したりし、各プロパティに含まれるオーバーヘッドを削減、リモート呼び出しの数です。 サービス ・ プロバイダーがプロパティを取得または変更のためのリモート プロシージャ コールを行う前に収集しようとすると、複数のプロパティを最初に要求することによってこの作業を最適化できます。
+最も少ない数の呼び出しで可能な限り多くのプロパティを取得および設定することにより、リモートアクティビティは curtailed で、各プロパティに関連するオーバーヘッドが減少します。 サービスプロバイダーは、取得または変更のためにリモートプロシージャコールを行う前にプロパティの収集を試行しますが、開始するために複数のプロパティを要求することによって、この作業を最適化することができます。
   
-などの特定のプロパティ セットに属する名前付きのプロパティと、将来の受信者を記述するルーティング リストを使用する場合は、すべての 2 つの呼び出しを使用して受信者を処理します。 受信者のプロパティと、その他の呼び出しの[IMAPIProp::GetProps](imapiprop-getprops.md)にすべての値を取得するためにすべての識別子を取得するために[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)を 1 つの呼び出しを使用します。 別に、各受信者について、 **GetProps**への呼び出しの後に**GetIDsFromNames**を呼び出すことは、効率が低下します。 
+たとえば、特定のプロパティセットに属する名前付きプロパティを持つ、今後の受信者について説明するルーティングリストを使用している場合は、すべての受信者を2つの呼び出しで処理します。 1つの呼び出しを[imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)に使用して、すべての受信者プロパティの識別子を取得し、その他の[imapiprop:: GetProps](imapiprop-getprops.md)の呼び出しを使用してすべての値を取得します。 別の方法として、 **getidsfromnames**を呼び出して、各受信者の**GetProps**の呼び出しを行う方が、効率が悪くなります。 
   
 

@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: bcf4cda0-2377-4924-ad26-5c2d9f98d594
 description: InfoPath 2003 オブジェクト モデルに反したコーディングが行われているものを含めて、InfoPath マネージ コード フォーム テンプレートのデバッグについては、「コードを含む InfoPath フォーム テンプレートをプレビューおよびデバッグする」を参照してください。
 ms.openlocfilehash: b2ca646037a42dcbe50b5e2b65b4dee3c81adaf5
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300260"
 ---
 # <a name="debug-infopath-projects-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用して InfoPath プロジェクトをデバッグする
 

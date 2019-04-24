@@ -12,53 +12,53 @@ api_type:
 - COM
 ms.assetid: 993f5bca-58a6-455d-8a25-6e08b441ad31
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: cca22b466b1e0d2da9ca9cc009586df08316270c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0d79075ea1db451e0c3d327df9a662e5032ebb22
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286416"
 ---
 # <a name="pidtagprovideruid-canonical-property"></a>PidTagProviderUid 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージを処理するサービス プロバイダーの**MAPIUID**構造体が含まれています。 
+メッセージを処理するサービスプロバイダーの**MAPIUID**構造体が含まれています。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_PROVIDER_UID  <br/> |
-|識別子:  <br/> |0x300C  <br/> |
+|識別子:  <br/> |0x300c  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |一般的な MAPI  <br/> |
+|エリア:  <br/> |MAPI 共通  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティは、すべてのサービス プロバイダーによって計算されます。 [MAPIUID](mapiuid.md)構造体には、関連付けられている、通常、ハードコーディングによって、プロバイダーが含まれています。 通常は、特定のプロバイダーから提供されているアドレス帳コンテナーのみに興味を持っているクライアント アプリケーションによって使用されます。 
+このプロパティは、すべてのサービスプロバイダーによって計算されます。 この構造体には、に関連付けられ、通常はプロバイダーによってハードコーディングされた[MAPIUID](mapiuid.md)構造が含まれています。 通常、特定のプロバイダーによって提供されるアドレス帳コンテナーのみを対象とするクライアントアプリケーションによって使用されます。 
   
-このプロパティは、プロバイダーのテーブルの列のエントリとしてのみ表示されます。
+このプロパティは、プロバイダテーブルの列エントリとしてのみ表示されます。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

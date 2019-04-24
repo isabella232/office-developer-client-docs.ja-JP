@@ -10,11 +10,11 @@ ms.assetid: 7754998f-4e13-4a37-9724-43b6ee6c919b
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 localization_priority: Priority
 ms.openlocfilehash: 886b8e74f00f2e724785d43475ee0ffa3c922710
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304145"
 ---
 # <a name="creating-xlls"></a>XLL を作成する
 
@@ -109,10 +109,10 @@ Excel 2007 以降では、**xlAddInRegister12** 関数が XLL によってエク
   
 ### <a name="xlautofreexlautofree12"></a>xlAutoFree/xlAutoFree12
 
-XLL が開放する必要があるメモリがまだあることを Excel に通知するフラグが設定された **XLOPER**/ **XLOPER12** データ型が XLL ワークシート関数から返されると、Excel は [xlAutoFree/xlAutoFree12](xlautofree-xlautofree12.md) 関数を呼び出します。 これにより、動的に割り当てられた配列、文字列および外部参照をメモリ リークなしに XLL でワークシートに返せるようになります。 **XLOPER12** データ型は、Excel 2007 以降でサポートされています。 詳細については、「[Excel でのメモリ管理](memory-management-in-excel.md)」を参照してください。
+Excel calls the [xlAutoFree/xlAutoFree12](xlautofree-xlautofree12.md) function just after an XLL worksheet function returns an **XLOPER**/ **XLOPER12** data type with a flag set that tells Excel there is memory that the XLL still needs to release. This enables the XLL to return dynamically allocated arrays, strings, and external references to the worksheet without memory leaks. Starting in Excel 2007, the **XLOPER12** data type is supported. For more information, see [Memory Management in Excel](memory-management-in-excel.md).
   
 > [!NOTE]
-> Excel 2007 以降では、Excel がマルチ スレッドのワークシートの再計算を使用するように構成されている場合、**xlAutoFree**/ **xlAutoFree12** 関数は、それを返した関数を呼び出すために使用されたスレッドと同じスレッドで呼び出されます。 **xlAutoFree**/ **xlAutoFree12** の呼び出しは、常に、そのスレッドで後続のワークシートのセルが評価される前に行われます。 これにより、XLL でのスレッド セーフな設計が簡単になります。 詳細については、「[Excel でのマルチ スレッドの再計算](multithreaded-recalculation-in-excel.md)」をご参照ください。 
+> Starting in Excel 2007, when Excel is configured to use multithreaded worksheet recalculation, the **xlAutoFree**/ **xlAutoFree12** function is called on the same thread that was just used to call the function that returned it. The call to **xlAutoFree**/ **xlAutoFree12** is always made before any subsequent worksheet cells are evaluated on that thread. This simplifies thread-safe design in your XLL. For more information, see [Multithreaded Recalculation in Excel](multithreaded-recalculation-in-excel.md). 
   
 ### <a name="creating-64-bit-xlls"></a>64 ビット XLL の作成
 

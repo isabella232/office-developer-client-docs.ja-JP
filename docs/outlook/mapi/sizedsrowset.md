@@ -12,23 +12,23 @@ api_type:
 - COM
 ms.assetid: 419e2c6d-ac3b-46c6-9a12-33f51f6d7f12
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b8c70c8b13025f196fdebb2956939bec840a96f5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: cb1e19a3f3703dc4943a5f6c322f1c8b429da5fa
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282643"
 ---
 # <a name="sizedsrowset"></a>SizedSRowSet
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-指定された行数を格納する名前付き[SRowSet](srowset.md)構造体を作成します。 
+指定した数の行を含む、名前付きの行[セット](srowset.md)構造を作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |**SRowSet** <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |**SRowSet** <br/> |
    
 ```cpp
 SizedSRowSet (_crow, _name)
@@ -38,15 +38,15 @@ SizedSRowSet (_crow, _name)
 
 __クロウズ_
   
-> 新しい構造体に含まれる行の数のカウントです。
+> 新しい構造に含める行の数を指定します。
     
-__名_
+__名前_
   
-> 新しい構造体の名前です。
+> 新しい構造の名前を指定します。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**SRowSet**構造体へのポインターとしての**SizedSRowSet**マクロから得られる新しい構造体を使用するには、次のキャストを実行します。 
+**sizedsrowset**マクロの結果として得られる新しい構造を、 **srowset**構造体へのポインターとして使用するには、次のキャストを実行します。 
   
 ```cpp
 lpSRowSet = (LPSRowSet) &SizedSRowSet;
@@ -56,5 +56,5 @@ lpSRowSet = (LPSRowSet) &SizedSRowSet;
 ## <a name="see-also"></a>関連項目
 
 - [SRowSet](srowset.md)
-- [構造体に関連するマクロ](macros-related-to-structures.md)
+- [構造に関連するマクロ](macros-related-to-structures.md)
 

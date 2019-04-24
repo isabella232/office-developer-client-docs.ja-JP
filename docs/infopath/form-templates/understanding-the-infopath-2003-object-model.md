@@ -1,5 +1,5 @@
 ---
-title: InfoPath 2003 オブジェクト モデルを理解する
+title: InfoPath 2003 オブジェクト モデルについて
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: cd0a890b-5a8b-42c0-abdd-5ce28aff1ba1
 description: ここでは、InfoPath マネージ コード ソリューションのオブジェクト モデルと一般的なプログラミング作業について説明します。
-ms.openlocfilehash: 6fe649d068fd21b46e2a4d2824c1afbf8d9474ca
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 0c07201475bb7bfe24182faf61cc1bf6df733709
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299784"
 ---
 # <a name="understanding-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを理解する
 

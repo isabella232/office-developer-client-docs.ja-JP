@@ -8,17 +8,17 @@ f1_keywords:
 - Vis_DSS.chm82251402
 localization_priority: Normal
 ms.assetid: da9fb933-4e2c-3e2a-1879-6e70db0cd830
-description: 色の青のコンポーネントを返します。 戻り値は、0 ~ 255 の範囲の整数です。 関数は、無効な入力の場合は 0 を返します。
-ms.openlocfilehash: 6a86a0ee91054c89f2def95c0e3521508462bdaa
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 色の青要素を返します。 戻り値は、0 ~ 255 の範囲の整数です。 入力した引数が無効な場合は、0 を返します。
+ms.openlocfilehash: adefbe0f8c2df0ead0f3e50cd5d4945501972865
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297355"
 ---
 # <a name="blue-function"></a>BLUE 関数
 
-色の青のコンポーネントを返します。 戻り値は、0 ~ 255 の範囲の整数です。 関数は、無効な入力の場合は 0 を返します。
+色の青要素を返します。 戻り値は、0 ~ 255 の範囲の整数です。 入力した引数が無効な場合は、0 を返します。
   
 ## <a name="syntax"></a>構文
 
@@ -28,7 +28,7 @@ ms.locfileid: "19804907"
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _expression_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |引数として、図面のカラー テーブルにある色のインデックス、ユーザー設定の色を返す式 (RGB や HSL など)、またはカラー インデックスや色の結果を含むセルへの参照を指定します。  <br/> |
+| _expression_ <br/> |必須  <br/> |**String** <br/> |引数として、図面のカラー テーブルにある色のインデックス、ユーザー設定の色を返す式 (RGB や HSL など)、またはカラー インデックスや色の結果を含むセルへの参照を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
@@ -36,13 +36,13 @@ ms.locfileid: "19804907"
   
 ## <a name="example-1"></a>例 1
 
-青 (Sheet.4!FillForegnd)
+青 (4 枚[fillforegnd]
   
 Sheet.4 の前景の塗りつぶしの色に対する青のコンポーネントを返します。
   
 ## <a name="example-2"></a>例 2
 
-BLUE(13)
+青 (13)
   
 図面で既定の Visio カラー パレットを使用する場合、128 を返します。Visio カラー パレットでは、シアンのインデックスは 13 です。
   

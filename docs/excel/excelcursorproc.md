@@ -11,18 +11,18 @@ keywords:
 localization_priority: Normal
 ms.assetid: 43759617-998d-4030-a17d-c4bbe35ffaf9
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 07be8da4a07b988d5e848048a088859b58ea3a14
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: d3cc41487f0cae31e110249fe148f5370319a39a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304096"
 ---
 # <a name="excelcursorproc"></a>ExcelCursorProc
 
  **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-モーダル ​​ダイアログ ボックスが Microsoft Excel ウインドウ上に表示される際、カーソルは Excel ウィンドウ上でビジー カーソルになります。 この **WndProc** によって、WM_SETCURSOR 型の Windows メッセージが表示され、カーソルは通常の矢印に戻ります。 
+When a modal dialog box is displayed over the Microsoft Excel window, the cursor is a busy cursor over the Excel window. This **WndProc** traps WM_SETCURSOR type Windows messages and changes the cursor back to a normal arrow. 
   
 ```cs
 LRESULT CALLBACK ExcelCursorProc(HWND hwnd, UINT wMsg, WPARAM wParam, LPARAM lParam);

@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: d9622cf4-eaa8-400b-b3ea-0409add8b212
 description: ''
-ms.openlocfilehash: c950b2a13cba9653dc6b1001390806429f590ebe
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 867792ef3e6d9f6754b443a650e6bafa559f0b2e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308009"
 ---
 # <a name="program-flow-functions-access-custom-web-app"></a>プログラム フロー関数 (Access カスタム Web アプリ)
 
@@ -21,8 +21,8 @@ ms.locfileid: "19798720"
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [関数 (カスタム web アプリケーションのアクセス) を選択します。](choose-function-access-custom-web-app.md)
+- [Choose Function (Access カスタム web アプリ)](choose-function-access-custom-web-app.md)
     
-- [IIf 関数 (カスタム web アプリケーションのアクセス)](iif-function-access-custom-web-app.md)
+- [IIf 関数 (Access カスタム web アプリ)](iif-function-access-custom-web-app.md)
     
 

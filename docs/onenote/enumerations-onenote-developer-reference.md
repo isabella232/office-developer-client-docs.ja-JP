@@ -1,214 +1,214 @@
 ---
-title: 列挙体 (OneNote の開発者用リファレンス)
+title: 列挙体 (OneNote 開発者用リファレンス)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 62912d6e-c39e-4f8b-8cdb-ae9b6376cbc0
-description: このトピックでは、OneNote 2013 オブジェクト モデルの列挙体について説明します。
-ms.openlocfilehash: ccd75843326ea5942aa80d02246e59e92331a7d2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: このトピックでは、OneNote 2013 オブジェクトモデルの列挙体について説明します。
+ms.openlocfilehash: 3338e444e5b0bfd0239e363c3161aeb1914b2d53
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299868"
 ---
-# <a name="enumerations-onenote-developer-reference"></a>列挙体 (OneNote の開発者用リファレンス)
+# <a name="enumerations-onenote-developer-reference"></a>列挙体 (OneNote 開発者用リファレンス)
 
-このトピックでは、OneNote 2013 オブジェクト モデルの列挙体について説明します。
+このトピックでは、OneNote 2013 オブジェクトモデルの列挙体について説明します。
   
-## <a name="createfiletype"></a>CreateFileType
+## <a name="createfiletype"></a>createfiletype
 <a name="odc_CreateFileType"> </a>
 
-**OpenHierarchy**メソッドに渡されるとき、その場合は、メソッドに渡されるパスが存在しない場合、作成するオブジェクトの種類を指定します。 
+**openhierarchy**メソッドに渡された場合、メソッドに渡されたパスが存在しない場合は、作成するオブジェクトの種類を指定します (存在する場合)。 
   
-|**メンバー**|**値**|**説明**|
+|**Member**|**値**|**説明**|
 |:-----|:-----|:-----|
-|**cftNone** <br/> |0  <br/> |新しいオブジェクトは作成されません。  <br/> |
-|**cftNotebook** <br/> |1  <br/> |指定した名前と場所を使用してノートブックを作成します。  <br/> |
-|**cftFolder** <br/> |2  <br/> |指定した名前と場所を使用してセクション グループを作成します。  <br/> |
-|**cftSection** <br/> |3  <br/> |指定した名前と場所を使用してセクションを作成します。  <br/> |
+|**cftnone** <br/> |.0  <br/> |新しいオブジェクトを作成しません。  <br/> |
+|**cftnotebook** <br/> |1-d  <br/> |指定された名前と場所を使用してノートブックを作成します。  <br/> |
+|**cftfolder** <br/> |pbm-2  <br/> |指定された名前と場所を使用して、セクショングループを作成します。  <br/> |
+|**cftsection** <br/> |1/3  <br/> |指定された名前と場所を使用してセクションを作成します。  <br/> |
    
 ## <a name="docklocation"></a>DockLocation
 <a name="odc_CreateFileType"> </a>
 
-[ウィンドウ](window-interfaces-onenote.md)のインターフェイスを使用して OneNote 2013 ウィンドウのドッキング位置を示します。 **DockedLocation**に設定すると、プロパティは、OneNote ウィンドウをドッキングする位置を指定します。 この列挙体は、OneNote の 2013年の新機能です。 
+[window](window-interfaces-onenote.md)インターフェイスを使用して OneNote 2013 ウィンドウのドッキング場所を示します。 **docの location**プロパティに設定されている場合は、OneNote ウィンドウをドッキングする位置を指定します。 この列挙は OneNote 2013 で新しく追加されたものです。 
   
-|**メンバー**|**値**|**説明**|
+|**Member**|**値**|**説明**|
 |:-----|:-----|:-----|
-|**dlDefault** <br/> |-1  <br/> |OneNote ウィンドウは、デスクトップの既定の場所に固定されます。  <br/> |
-|**dlLeft** <br/> |1  <br/> |OneNote ウィンドウはデスクトップの左側にドッキングされます。  <br/> |
-|**dlRight** <br/> |2  <br/> |OneNote ウィンドウはデスクトップの右側にドッキングされます。  <br/> |
-|**dlTop** <br/> |3  <br/> |OneNote ウィンドウは、デスクトップの上部にドッキングされます。  <br/> |
-|**dlBottom** <br/> |4  <br/> |OneNote ウィンドウは、デスクトップの下部にドッキングされます。  <br/> |
+|**dldefault** <br/> |-1  <br/> |OneNote ウィンドウは、デスクトップ上の既定の場所に固定されます。  <br/> |
+|**dlleft** <br/> |1-d  <br/> |OneNote ウィンドウは、デスクトップの左側に固定されます。  <br/> |
+|**dlright** <br/> |pbm-2  <br/> |OneNote ウィンドウは、デスクトップの右側に固定されます。  <br/> |
+|**dltop** <br/> |1/3  <br/> |OneNote ウィンドウは、デスクトップの上部に固定されています。  <br/> |
+|**dlbottom** <br/> |2/4  <br/> |OneNote ウィンドウは、デスクトップの下部に固定されています。  <br/> |
    
-## <a name="filinglocation"></a>FilingLocation
+## <a name="filinglocation"></a>filinglocation
 <a name="odc_CreateFileType"> </a>
 
-**SetFilingLocation**メソッドに渡されると、設定を指定コンテンツの種類ファイルの場所のコンテンツ タイプは、OneNote に送信されるとします。 この列挙体は、OneNote の 2013年の新機能です。 
+**setfilinglocation**メソッドに渡されると、コンテンツタイプが OneNote に送信されるときに、ファイリングの場所に設定されるコンテンツの種類を指定します。 この列挙は OneNote 2013 で新しく追加されたものです。 
   
-|**メンバー**|**値**|**説明**|
+|**Member**|**値**|**説明**|
 |:-----|:-----|:-----|
-|**flEMail** <br/> |0  <br/> |Outlook 電子メール メッセージの保存場所を設定します。  <br/> |
-|**flContacts** <br/> |1  <br/> |Outlook の連絡先の保存場所を設定します。  <br/> |
-|**flTasks** <br/> |2  <br/> |Outlook からのタスクの保存場所を設定します。  <br/> |
-|**flMeetings** <br/> |3  <br/> |Outlook の会議の保存場所を設定します。  <br/> |
-|**flWebContent** <br/> |4  <br/> |Internet Explorer のコンテンツの保存場所を設定します。  <br/> |
-|**flPrintOuts** <br/> |5  <br/> |OneNote プリンターから印刷物の保存場所を設定します。  <br/> |
+|**flemail** <br/> |.0  <br/> |Outlook 電子メールメッセージがファイリングされる場所を設定します。  <br/> |
+|**flcontacts** <br/> |1-d  <br/> |Outlook の連絡先をファイリングする場所を設定します。  <br/> |
+|**fltasks** <br/> |pbm-2  <br/> |Outlook のタスクをファイリングする場所を設定します。  <br/> |
+|**flmeetings** <br/> |1/3  <br/> |Outlook 会議がファイリングされる場所を設定します。  <br/> |
+|**flwebcontent** <br/> |2/4  <br/> |Internet Explorer の内容がファイリングされる場所を設定します。  <br/> |
+|**flprintouts** <br/> |5  <br/> |OneNote プリンターからの印刷物がファイリングされる場所を設定します。  <br/> |
    
 ## <a name="filinglocationtype"></a>FilingLocationType
 <a name="odc_CreateFileType"> </a>
 
-**SetFilingLocation**メソッドに渡された場合は、OneNote に送信されるコンテンツの保存場所を指定します。 この列挙体は、OneNote の 2013年の新機能です。 
+**setfilinglocation**メソッドに渡されると、OneNote に送信されるコンテンツが保存される場所を指定します。 この列挙は OneNote 2013 で新しく追加されたものです。 
   
-|**メンバー**|**値**|**説明**|
+|**Member**|**値**|**説明**|
 |:-----|:-----|:-----|
-|**fltNamedSectionNewPage** <br/> |0  <br/> |指定のセクションの新しいページに提出される内容を設定します。  <br/> |
-|**fltCurrentSectionNewPage** <br/> |1  <br/> |現在のセクションの新しいページに提出される内容を設定します。  <br/> |
-|**fltCurrentPage** <br/> |2  <br/> |現在のページに提出される内容を設定します。  <br/> |
-|**fltNamedPage** <br/> |4  <br/> |指定したページに提出される内容を設定します。  <br/> |
+|**fltnamedsectionnewpage** <br/> |.0  <br/> |指定したセクションの新しいページにファイリングするコンテンツを設定します。  <br/> |
+|**fltcurrentsectionnewpage** <br/> |1-d  <br/> |現在のセクションの新しいページにファイリングするコンテンツを設定します。  <br/> |
+|**fltCurrentPage** <br/> |pbm-2  <br/> |現在のページにファイリングするコンテンツを設定します。  <br/> |
+|**fltnamedpage** <br/> |2/4  <br/> |指定したページにファイリングされるコンテンツを設定します。  <br/> |
    
 ## <a name="hierarchyelement"></a>HierarchyElement
 <a name="odc_CreateFileType"> </a>
 
-[IQuickFilingDialog](quick-filing-dialog-box-interfaces-onenote.md)インターフェイスの**TreeDepth**プロパティに割り当てると、クイック ファイリング ダイアログ ボックスが表示されるときに表示するのには、OneNote のツリーの深さを指定します。 **IQuickFilingDialog**オブジェクトの**AddButton**メソッドに渡された場合は、OneNote の階層内の特定の要素を参照します。 この列挙体は、OneNote の 2013年の新機能です。 
+[iquickfilingdialog](quick-filing-dialog-box-interfaces-onenote.md)インターフェイスの**treedepth**プロパティに割り当てられている場合、クイックファイリングダイアログがレンダリングされるときに表示する OneNote ツリーの深さを指定します。 **iquickfilingdialog**オブジェクトの**addbutton**メソッドに渡されると、OneNote 階層の特定の要素を参照します。 この列挙は OneNote 2013 で新しく追加されたものです。 
   
-|**メンバー**|**値**|**説明**|
+|**Member**|**値**|**説明**|
 |:-----|:-----|:-----|
-|**heNone** <br/> |0  <br/> |要素を参照します。  <br/> |
-|**heNotebooks** <br/> |1  <br/> |ノートブックの要素を参照します。  <br/> |
-|**heSectionGroups** <br/> |2  <br/> |セクション グループの各要素を参照します。  <br/> |
-|**heSections** <br/> |4  <br/> |セクションの要素を参照します。  <br/> |
-|**hePages** <br/> |8  <br/> |ページ要素を参照します。  <br/> |
+|**heNone** <br/> |.0  <br/> |要素を参照しません。  <br/> |
+|**henotebooks** <br/> |1-d  <br/> |ノートブックの要素を参照します。  <br/> |
+|**heSectionGroups** <br/> |pbm-2  <br/> |セクショングループ要素を参照します。  <br/> |
+|**heSections** <br/> |2/4  <br/> |Section 要素を参照します。  <br/> |
+|**hepages** <br/> |~  <br/> |ページ要素を参照します。  <br/> |
    
 ## <a name="hierarchyscope"></a>HierarchyScope
 <a name="odc_HierarchyScope"> </a>
 
-**GetHierarchy**メソッドに渡されるときは、ノートブックのノード階層を取得する最も低いレベルを指定します。 
+**GetHierarchy**メソッドに渡されたときに、ノートブックノード階層で取得する最下位のレベルを指定します。 
   
-|**メンバー**|**値**|**説明**|
+|**Member**|**値**|**説明**|
 |:-----|:-----|:-----|
-|**hsSelf** <br/> |0  <br/> |取得の開始] ノードだけが指定されていない子.  <br/> |
-|**hsChildren** <br/> |1  <br/> |サブセクションの上位または下位グループの直下の子ノードの [開始] ノードとなしの子を取得します。  <br/> |
-|**hsNotebooks** <br/> |2  <br/> |[開始] ノードまたはルートの下のすべてのノートブックを取得します。  <br/> |
-|**hsSections** <br/> |3  <br/> |グループのセクションとサブセクションのグループ内のセクションを含む、開始ノードの下のすべてのセクションを取得します。  <br/> |
-|**hsPages** <br/> |4  <br/> |グループのセクションとサブセクションのグループのすべてのページを含む、開始ノードの下のすべてのページを取得します。  <br/> |
+|**hsself** <br/> |.0  <br/> |指定された開始ノードのみを取得し、子孫は取得しません。  <br/> |
+|**hsChildren** <br/> |1-d  <br/> |開始ノードの直下の子ノードを取得し、上位または下位のサブセクショングループに子孫は含まれません。  <br/> |
+|**hsnotebooks** <br/> |pbm-2  <br/> |開始ノードまたはルートの下にあるすべてのノートブックを取得します。  <br/> |
+|**hssections** <br/> |1/3  <br/> |セクショングループとサブセクショングループのセクションを含む、開始ノードの下にあるすべてのセクションを取得します。  <br/> |
+|**hspages** <br/> |2/4  <br/> |セクショングループとサブセクショングループ内のすべてのページを含む、開始ノードの下にあるすべてのページを取得します。  <br/> |
    
-## <a name="newpagestyle"></a>NewPageStyle
+## <a name="newpagestyle"></a>newpagestyle
 <a name="odc_HierarchyScope"> </a>
 
 **CreateNewPage**メソッドに渡されると、新しいページのスタイルを指定します。 
   
-|**メンバー**|**値**|**説明**|
+|**Member**|**値**|**説明**|
 |:-----|:-----|:-----|
-|**npsDefault** <br/> |0  <br/> |ページの既定のスタイルを持つページを作成します。  <br/> |
-|**npsBlankPageWithTitle** <br/> |1  <br/> |タイトルを空白のページを作成します。  <br/> |
-|**npsBlankPageNoTitle** <br/> |2  <br/> |タイトルがまったくない空白のページを作成します。  <br/> |
+|**npsdefault** <br/> |.0  <br/> |既定のページスタイルを持つページを作成します。  <br/> |
+|**nps空白ページ withtitle** <br/> |1-d  <br/> |タイトルを含む空白のページを作成します。  <br/> |
+|**nps空白 pagpagtitle** <br/> |pbm-2  <br/> |タイトルのない空白のページを作成します。  <br/> |
    
 ## <a name="notebookfilterouttype"></a>NotebookFilterOutType
 <a name="odc_HierarchyScope"> </a>
 
-**QFD**オブジェクトの**NotebookFilterOut**メソッドに渡されるときは、QFD のボックスが表示されるときに表示するには、どのようなノートブックを指定します。 
+**qfd**オブジェクトの**NotebookFilterOut**メソッドに渡されたときに、qfd ボックスがレンダリングされるときに表示するノートブックを指定します。 
   
-|**メンバー**|**値**|**説明**|
+|**Member**|**値**|**説明**|
 |:-----|:-----|:-----|
-|**nfoLocal** <br/> |1  <br/> |ローカル ノートブックのみを許可します。  <br/> |
-|**nfoNetwork** <br/> |2  <br/> |UNC または SharePoint のノートブックを使用できます。  <br/> |
-|**nfoWeb** <br/> |4  <br/> |OneDrive のノートブックを使用できます。  <br/> |
-|**nfoNoWacUrl** <br/> |8  <br/> |Web クライアントがない場所で、ノート パソコン。  <br/> |
+|**n¥ local** <br/> |1-d  <br/> |ローカルノートブックのみを許可します。  <br/> |
+|**nfoNetwork** <br/> |pbm-2  <br/> |UNC または SharePoint ノートブックを許可します。  <br/> |
+|**n・ web** <br/> |2/4  <br/> |OneDrive ノートブックを許可します。  <br/> |
+|**nfonowacurl** <br/> |~  <br/> |web クライアントを持たない場所にあるノートブック。  <br/> |
    
-## <a name="pageinfo-updated-for-onenote-2013"></a>PageInfo の (OneNote 2013 の更新)
+## <a name="pageinfo-updated-for-onenote-2013"></a>PageInfo (OneNote 2013 用に更新)
 <a name="odc_PageInfo"> </a>
 
-**GetPageContent**メソッドに渡されると、ページのコンテンツを取得する情報の種類を指定します。 
+**GetPageContent**メソッドに渡されたときに、ページコンテンツと共に返す情報の種類を指定します。 
   
-|**メンバー**|**値**|**説明**|
+|**Member**|**値**|**説明**|
 |:-----|:-----|:-----|
-|**piBasic** <br/> |0  <br/> |のみ基本的なページのコンテンツ、マークアップを選択せず、ファイルの種類のオブジェクトのバイナリ データとバイナリ データ オブジェクトを返します。 これは、標準的な値を渡すことです。  <br/> |
-|**piBinaryData** <br/> |1  <br/> |返します。 ページのコンテンツのすべてのバイナリ データを持つが、選択範囲のマークアップがないと。  <br/> |
-|**piSelection** <br/> |2  <br/> |返します。 ページのコンテンツ、マークアップの選択ですが、バイナリ データがありません。  <br/> |
-|**piBinaryDataSelection** <br/> |3  <br/> |返します。 ページのマークアップを選択し、すべてのバイナリ データのコンテンツ。  <br/> |
-|**piFileType** <br/> |4  <br/> |返しますは、バイナリ データ オブジェクトの型情報をファイルのコンテンツをページします。  <br/> |
-|**piBinaryDataFileType** <br/> |5  <br/> |返すは、オブジェクトのバイナリ データとバイナリ データ オブジェクトの型情報をファイルのコンテンツをページします。  <br/> |
-|**piSelectionFileType** <br/> |6  <br/> |返しますは、バイナリ データの選択範囲マークアップとファイルの種類の情報を持つコンテンツをページします。  <br/> |
-|**piAll** <br/> |7  <br/> |ページのすべてのコンテンツを返します。  <br/> |
+|**pibasic** <br/> |.0  <br/> |選択マークアップを含まない基本的なページコンテンツのみを返します。バイナリデータオブジェクトおよびバイナリデータオブジェクトのファイルの種類を指定します。 これは、渡す標準的な値です。  <br/> |
+|**pibinarydata** <br/> |1-d  <br/> |選択マークがなく、すべてのバイナリデータを含むページコンテンツを返します。  <br/> |
+|**piselection** <br/> |pbm-2  <br/> |選択マークアップを使用して、バイナリデータを持たないページコンテンツを返します。  <br/> |
+|**pibinarydataselection** <br/> |1/3  <br/> |選択マークアップとすべてのバイナリデータを使用してページコンテンツを返します。  <br/> |
+|**piFileType** <br/> |2/4  <br/> |バイナリデータオブジェクトのファイルタイプ情報を持つページコンテンツを返します。  <br/> |
+|**pibinarydatafiletype** <br/> |5  <br/> |binary data オブジェクトおよび binary data オブジェクトのファイルの種類情報を使用してページの内容を返します。  <br/> |
+|**piselectionfiletype** <br/> |シックス  <br/> |バイナリデータの選択マークアップとファイルの種類の情報を使用してページコンテンツを返します。  <br/> |
+|**piall** <br/> |7  <br/> |すべてのページコンテンツを返します。  <br/> |
    
-## <a name="publishformat"></a>PublishFormat
+## <a name="publishformat"></a>publishformat
 <a name="odc_PublishFormat"> </a>
 
-**Publish**メソッドに渡されると、発行されたページを表示する形式を指定します。 
+**Publish**メソッドに渡されると、発行されたページの表示形式を指定します。 
   
-|**メンバー**|**値**|**説明**|
+|**Member**|**値**|**説明**|
 |:-----|:-----|:-----|
-|**pfOneNote** <br/> |0  <br/> |.One の形式では、公開したページです。  <br/> |
-|**pfOneNotePackage** <br/> |1  <br/> |.Onepkg 形式では、公開したページです。  <br/> |
-|**pfMHTML** <br/> |2  <br/> |.Mht 形式では、公開したページです。  <br/> |
-|**pfPDF** <br/> |3  <br/> |.Pdf 形式では、公開したページです。  <br/> |
-|**pfXPS** <br/> |4  <br/> |.Xps 形式では、公開したページです。  <br/> |
-|**pfWord** <br/> |5  <br/> |.Doc または .docx 形式では、公開したページです。  <br/> |
-|**pfEMF** <br/> |6  <br/> |拡張メタファイル (.emf) 形式では、公開したページです。  <br/> |
-|**pfHTML** <br/> |7  <br/> |.Html 形式では、公開したページです。 このメンバーは、OneNote の 2013年の新機能です。  <br/> |
-|**pfOneNote2007** <br/> |8  <br/> |2007 .one の形式では、公開されているページです。 このメンバーは、OneNote の 2013年の新機能です。  <br/> |
+|**pfOneNote** <br/> |.0  <br/> |発行されたページは、. 1 の形式です。  <br/> |
+|**pティー/パッケージ** <br/> |1-d  <br/> |公開されたページは. onepkg 形式です。  <br/> |
+|**pfmhtml** <br/> |pbm-2  <br/> |公開されたページは、.mht 形式です。  <br/> |
+|**pfpdf** <br/> |1/3  <br/> |発行されたページは .pdf 形式です。  <br/> |
+|**pfxps** <br/> |2/4  <br/> |発行されたページは、.xps 形式です。  <br/> |
+|**pfword** <br/> |5  <br/> |発行されたページは .doc または .docx 形式です。  <br/> |
+|**pfEMF** <br/> |シックス  <br/> |公開されたページは、拡張メタファイル (.emf) 形式になっています。  <br/> |
+|**pfhtml** <br/> |7  <br/> |発行されたページは .html 形式です。 このメンバーは OneNote 2013 で新しく追加されたものです。  <br/> |
+|**pfOneNote2007** <br/> |~  <br/> |公開されたページは、2007の1つの形式になっています。 このメンバーは OneNote 2013 で新しく追加されたものです。  <br/> |
    
 ## <a name="recentresulttype"></a>RecentResultType
 <a name="odc_RecentResultType"> </a>
 
-**IQuickFilingDialog**オブジェクトの**SetRecentResults**メソッドに渡された場合は、クイック ファイリング ダイアログ ボックスが表示されるときに表示するのにはどのような最近の結果リストを指定します。 クイック ファイリング ダイアログ ボックスでユーザーが選択した OneNote の保存場所の設定を追跡するために最新の結果の一覧表示されます。 2013 の OneNote で整理、検索、およびアクションのリンクを追跡する 3 つの最近の結果リストがあります。 この列挙体は、OneNote の 2013年の新機能です。 
+**iquickfilingdialog**オブジェクトの**SetRecentResults**メソッドに渡されると、[クイックファイリング] ダイアログボックスを表示したときに表示される最近の結果の一覧を指定します。 最近の結果リストは、ユーザーが [クイックファイリング] ダイアログボックスで選択した OneNote の場所のセットを追跡するために使用されます。 OneNote 2013 には、ファイリング、検索、リンクアクションを追跡する3つの最近の結果リストがあります。 この列挙は OneNote 2013 で新しく追加されたものです。 
   
-|**メンバー**|**値**|**説明**|
+|**Member**|**値**|**説明**|
 |:-----|:-----|:-----|
-|**rrtNone** <br/> |0  <br/> |最近の結果リストを表示するのには設定されません。  <br/> |
-|**rrtFiling** <br/> |1  <br/> |レンダリングする「ファイリング」最近の結果リストをを設定します。  <br/> |
-|**rrtSearch** <br/> |2  <br/> |表示する [検索] の最近の結果リストを設定します。  <br/> |
-|**rrtLinks** <br/> |3  <br/> |表示する [リンク] の最近の結果リストを設定します。  <br/> |
+|**rrtnone** <br/> |.0  <br/> |レンダリングされる最新の結果リストがないように設定します。  <br/> |
+|**rrtfiling** <br/> |1-d  <br/> |表示される "最近の" 結果リストの "ファイリング" を設定します。  <br/> |
+|**rrtsearch** <br/> |pbm-2  <br/> |レンダリングされる "最近の検索結果" リストを設定します。  <br/> |
+|**rrtlinks** <br/> |1/3  <br/> |レンダリングされる "最近の結果" リンクを設定します。  <br/> |
    
 ## <a name="speciallocation"></a>SpecialLocation
 <a name="odc_SpecialLocation"> </a>
 
 **GetSpecialLocation**メソッドに渡されると、取得する特別な場所のパスを指定します。 
   
-|**メンバー**|**値**|**説明**|
+|**Member**|**値**|**説明**|
 |:-----|:-----|:-----|
-|**slBackupFolder** <br/> |0  <br/> |バックアップ フォルダーのフォルダーの場所へのパスを取得します。  <br/> |
-|**slUnfiledNotesSection** <br/> |1  <br/> |落書きノート フォルダーの場所へのパスを取得します。  <br/> |
-|**slDefaultNotebookFolder** <br/> |2  <br/> |既定のノートブック フォルダーの場所へのパスを取得します。  <br/> |
+|**slbackupfolder** <br/> |.0  <br/> |バックアップフォルダーフォルダーの場所へのパスを取得します。  <br/> |
+|**slUnfiledNotesSection** <br/> |1-d  <br/> |落書きノートフォルダーの場所へのパスを取得します。  <br/> |
+|**slDefaultNotebookFolder** <br/> |pbm-2  <br/> |既定のノートブックフォルダーの場所へのパスを取得します。  <br/> |
    
 ## <a name="treecollapsedstatetype"></a>TreeCollapsedStateType
 <a name="odc_SpecialLocation"> </a>
 
-**QFD**オブジェクトの**TreeCollapsedState**メソッドに渡された場合は、階層ツリーを展開または折りたたまれているかどうかを指定します。 
+**qfd**オブジェクトの**TreeCollapsedState**メソッドに渡された場合、階層ツリーを展開するか折りたたむかを指定します。 
   
-|**メンバー**|**値**|**説明**|
+|**Member**|**値**|**説明**|
 |:-----|:-----|:-----|
-|**tcsExpanded** <br/> |0  <br/> |階層ツリーを展開するを設定します。  <br/> |
-|**tcsCollapsed** <br/> |1  <br/> |階層ツリーが折りたたまれているを設定します。  <br/> |
+|**tcsexpanded あります** <br/> |.0  <br/> |階層ツリーを展開済みに設定します。  <br/> |
+|**tcscollapsed** <br/> |1-d  <br/> |階層ツリーを折りたたみに設定します。  <br/> |
    
-## <a name="xmlschema-updated-for-onenote-2013"></a>XMLSchema を (OneNote 2013 の更新)
+## <a name="xmlschema-updated-for-onenote-2013"></a>XMLSchema (OneNote 2013 用に更新)
 <a name="odc_SpecialLocation"> </a>
 
-次の方法のいずれかに渡されると、使用する OneNote の XML スキーマのバージョンを指定します。
+次のいずれかのメソッドに渡された場合は、使用する OneNote XML スキーマのバージョンを指定します。
   
-- **OneNote15.Application.GetPageContent**
+- **OneNote15 GetPageContent**
     
-- **OneNote15.Application.FindMeta**
+- **OneNote15 メタ**
     
-- **OneNote15.Application.FindPages**
+- **OneNote15 ページ**
     
-- **OneNote15.Application.GetHierarchy**
+- **OneNote15 GetHierarchy**
     
-- **OneNote15.Application.GetPageContent**
+- **OneNote15 GetPageContent**
     
-- **OneNote15.Application.UpdateHierarchy**
+- **OneNote15 階層**
     
-- **OneNote15.Application.UpdatePageContent**
+- **OneNote15 UpdatePageContent**
     
-|**メンバー**|**値**|**説明**|
+|**Member**|**値**|**説明**|
 |:-----|:-----|:-----|
-|**xs2007** <br/> |0  <br/> |OneNote 2007 のスキーマを参照します。  <br/> |
-|**xs2010** <br/> |1  <br/> |OneNote 2010 のスキーマを参照します。  <br/> |
-|**xs2013** <br/> |2  <br/> |OneNote 2013 スキーマを参照します。  <br/> |
-|**xsCurrent** <br/> |2  <br/> |OneNote の現在のバージョンのスキーマを参照します。  <br/> <br/>**注**: お勧めしません、ほとんどの場合**xsCurrent**を使用して OneNote の将来のバージョンとの互換性の問題が生じるようです。 代わりにアプリは、xs2013 のように、処理するために構築されたスキーマのバージョンを指定します。           |
+|**xs2007** <br/> |.0  <br/> |OneNote 2007 スキーマを参照します。  <br/> |
+|**xs2010** <br/> |1-d  <br/> |OneNote 2010 スキーマを参照します。  <br/> |
+|**xs2013** <br/> |pbm-2  <br/> |OneNote 2013 スキーマを参照します。  <br/> |
+|**xscurrent** <br/> |pbm-2  <br/> |現在の OneNote のバージョンのスキーマを参照します。  <br/> <br/>**注**: ほとんどの場合、 **xscurrent**を使用することはお勧めしません。今後のバージョンの OneNote での互換性の問題が発生する可能性があります。 代わりに、xs2013 のように、アプリが処理するために作成されたスキーマのバージョンを指定します。           |
    
 ## <a name="see-also"></a>関連項目
 

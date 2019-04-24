@@ -1,5 +1,5 @@
 ---
-title: IMAPIProp IUnknown
+title: imapiprop IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,58 +12,58 @@ api_type:
 - COM
 ms.assetid: 3c9e4e05-cd3a-4b56-9dff-879e33ff6fd5
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a397ac9110429911755552298ffe244343d54a8a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6b0a8923ee5efe22584170ce9853698885527ee8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282472"
 ---
 # <a name="imapiprop--iunknown"></a>IMAPIProp : IUnknown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロパティを操作するには、クライアント、サービス プロバイダー、および MAPI を有効にします。 プロパティをサポートするすべてのオブジェクトは、このインターフェイスを実装します。
+クライアント、サービスプロバイダ、MAPI がプロパティを使用できるようにします。 プロパティをサポートするすべてのオブジェクトは、このインターフェイスを実装します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|によって公開されます。  <br/> |オブジェクトは直接このインターフェイスを公開しません。  <br/> |
-|によって実装されます。  <br/> |サービス プロバイダーおよび MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーション、サービス プロバイダー、および MAPI  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IMAPIProp  <br/> |
-|ポインターの型。  <br/> |LPMAPIPROP  <br/> |
-|トランザクション モデル:  <br/> |抽象クラスで実装されることはありません。  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|公開者:  <br/> |このインターフェイスを直接公開するオブジェクトはありません。  <br/> |
+|実装元:  <br/> |サービスプロバイダーと MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーション、サービスプロバイダー、MAPI  <br/> |
+|インターフェイス識別子:  <br/> |IID_IMAPIProp  <br/> |
+|ポインターの種類:  <br/> |LPMAPIPROP  <br/> |
+|トランザクションモデル:  <br/> |抽象クラス、実装されていません  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[発生しました](imapiprop-getlasterror.md) <br/> |前のエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
-|[SaveChanges](imapiprop-savechanges.md) <br/> |前回の保存操作以降は、オブジェクトに対して行われた変更を永続的になります。  <br/> |
-|[GetProps](imapiprop-getprops.md) <br/> |オブジェクトの 1 つまたは複数のプロパティのプロパティ値を取得します。  <br/> |
-|[Getproplist メソッド](imapiprop-getproplist.md) <br/> |すべてのプロパティのプロパティ タグを返します。  <br/> |
-|[OpenProperty](imapiprop-openproperty.md) <br/> |プロパティにアクセスするために使用するインターフェイスへのポインターを返します。  <br/> |
-|[SetProps](imapiprop-setprops.md) <br/> |1 つまたは複数のプロパティを更新します。  <br/> |
-|[DeleteProps](imapiprop-deleteprops.md) <br/> |オブジェクトから 1 つまたは複数のプロパティを削除します。  <br/> |
-|[CopyTo](imapiprop-copyto.md) <br/> |明確に除外されたプロパティ以外のすべてのプロパティを移動またはコピーします。  <br/> |
-|[CopyProps](imapiprop-copyprops.md) <br/> |選択したプロパティのコピーまたは移動します。  <br/> |
-|[GetNamesFromIDs](imapiprop-getnamesfromids.md) <br/> |1 つまたは複数のプロパティの識別子に対応するプロパティ名を提供します。  <br/> |
-|[GetIDsFromNames](imapiprop-getidsfromnames.md) <br/> |1 つまたは複数のプロパティ名に対応するプロパティの識別子を提供します。  <br/> |
+|[GetLastError](imapiprop-getlasterror.md) <br/> |前のエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
+|[SaveChanges](imapiprop-savechanges.md) <br/> |前回の保存操作以降にオブジェクトに加えられたすべての変更を永続的に行います。  <br/> |
+|[GetProps](imapiprop-getprops.md) <br/> |オブジェクトの1つ以上のプロパティのプロパティ値を取得します。  <br/> |
+|[getproplist](imapiprop-getproplist.md) <br/> |すべてのプロパティのプロパティタグを返します。  <br/> |
+|[openproperty](imapiprop-openproperty.md) <br/> |プロパティへのアクセスに使用できるインターフェイスへのポインターを返します。  <br/> |
+|[setprops による](imapiprop-setprops.md) <br/> |1つまたは複数のプロパティを更新します。  <br/> |
+|[deleteprops](imapiprop-deleteprops.md) <br/> |オブジェクトから1つ以上のプロパティを削除します。  <br/> |
+|[CopyTo](imapiprop-copyto.md) <br/> |明示的に除外されているプロパティ以外のすべてのプロパティをコピーまたは移動します。  <br/> |
+|[copyprops](imapiprop-copyprops.md) <br/> |選択されたプロパティをコピーまたは移動します。  <br/> |
+|[GetNamesFromIDs](imapiprop-getnamesfromids.md) <br/> |1つまたは複数のプロパティ識別子に対応するプロパティ名を提供します。  <br/> |
+|[getidsfromnames](imapiprop-getidsfromnames.md) <br/> |1つまたは複数のプロパティ名に対応するプロパティ識別子を提供します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
- **IMAPIProp**は、次のインターフェイスの基本インターフェイスです。 
+ **imapiprop**は、次のインターフェイスの基本インターフェイスです。 
   
-- [IAttach](iattachimapiprop.md)
+- [iattach](iattachimapiprop.md)
     
-- [IMailUser](imailuserimapiprop.md)
+- [imailuser](imailuserimapiprop.md)
     
 - [IMAPIContainer](imapicontainerimapiprop.md)
     
-- [IMAPIFormInfo](imapiforminfoimapiprop.md)
+- [imapiforminfo](imapiforminfoimapiprop.md)
     
 - [IMAPIStatus](imapistatusimapiprop.md)
     
@@ -73,11 +73,11 @@ ms.locfileid: "22583730"
     
 - [IProfSect](iprofsectimapiprop.md)
     
-- [IPropData](ipropdataimapiprop.md)
+- [ipropdata](ipropdataimapiprop.md)
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
 

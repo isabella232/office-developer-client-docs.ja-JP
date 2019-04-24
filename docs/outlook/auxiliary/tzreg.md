@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: a353e1a3-0187-20af-b9ba-43438f6024d5
-description: 時刻が夏時間の開始時、標準時間へのリターンが発生すると、および夏時間のシフトは、時間数を定義します。
-ms.openlocfilehash: 85812ab053d77c07f9360b6bf3a1faaf72cae573
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 夏時間開始時、標準時への復帰時、およびサマータイムシフトの時間数を定義します。
+ms.openlocfilehash: 136ff6ad0c1a9bc2ad61ef7ba698d66d645165d8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307841"
 ---
 # <a name="tzreg"></a>TZREG
 
-時刻が夏時間の開始時、標準時間へのリターンが発生すると、および夏時間のシフトは、時間数を定義します。
+夏時間開始時、標準時への復帰時、およびサマータイムシフトの時間数を定義します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -31,31 +31,31 @@ typedef struct RenTimeZone {
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
-_lBias_
+_lbias_
   
 > グリニッジ標準時 (GMT) からのオフセット。
     
-_lStandardBias_
+_lstandardbias_
   
-> 標準時間の間のバイアスからのオフセット。
+> 標準時のバイアスからのオフセット。
     
-_lDaylightBias_
+_ldayライトバイアス_
   
-> サマータイム期間中のバイアスからのオフセット。
+> 夏時間時のバイアスからのオフセット。
     
-_stStandardDate_
+_ststandarddate_
   
-> (標準時) に切り替えるには時間です。
+> 標準時に切り替える時刻。
     
-_stDaylightDate_
+_stdaylightdate_
   
-> 夏時間への切り替えにかかる時間です。
+> 夏時間への切り替え時間。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-この構造体は、 **TIME_ZONE_INFORMATION**に似ています。 これは、定期的なミーティングのタイム ゾーン情報を保存するのにはレガシ クライアントで使用する構造体です。
+この構造体は**TIME_ZONE_INFORMATION**に似ています。 これは、従来のクライアントが定期的な会議のタイムゾーン情報を格納するために使用する構造です。
   
 ## <a name="see-also"></a>関連項目
 

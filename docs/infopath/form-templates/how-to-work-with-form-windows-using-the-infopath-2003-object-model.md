@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: fbcf3a04-ee0f-40a6-8edd-583ae203e2e1
 description: InfoPath フォームをプログラムから操作するときは、フォームのウィンドウにアクセスするコードを記述し、ウィンドウに含まれるアイテムの一部をカスタマイズすることができます。InfoPath 2003 互換のオブジェクト モデルでは、WindowsCollection インターフェイスと WindowObject インターフェイスを関連させて使用することにより、フォームのウィンドウにアクセスできます。
-ms.openlocfilehash: 4ca0fb53fd8502773d3e770814a5a24c40b2d79f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: f8939fc562cf16c1bce0f6f88bba659e895254f3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299896"
 ---
 # <a name="work-with-form-windows-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してフォーム ウィンドウを操作する
 
@@ -31,7 +31,7 @@ InfoPath には、次の 2 種類のウィンドウがあります。
 
 **WindowsCollection** インターフェイスには、次のプロパティがあります。フォーム テンプレートの開発者は、これらのプロパティを使用して、フォーム テンプレートに含まれている **WindowObject** インスタンスを管理できます。 
   
-|**名前**|**説明**|
+|**[名前]**|**[説明]**|
 |:-----|:-----|
 |[Count](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Windows.Count.aspx) プロパティ  <br/> |コレクションに含まれている **Window** オブジェクトの数を返します。  <br/> |
 |[Item](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Windows.Item.aspx) プロパティ  <br/> |指定された **Window** オブジェクトの参照を返します。  <br/> **注**: Visual C# では、**Item** プロパティを呼び出す代わりに、インデクサーを使用してコレクションにアクセスします。 例: `thisApplication.Windows[0].Caption`。           |
@@ -40,7 +40,7 @@ InfoPath には、次の 2 種類のウィンドウがあります。
 
 **WindowObject** インターフェイスには、次のメソッドとプロパティがあります。フォームの開発者は、これらを使用して、InfoPath のウィンドウを操作できます。 これらのメソッドとプロパティのサポートは、操作対象のウィンドウの種類 ([XdWindowType](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XdWindowType.aspx)) によって異なります。 メソッドとプロパティの中には、ウィンドウの種類がエディター (**XdWindowType.xdEditorWindow**) でないと機能しないものがあります。 その他のメソッドとプロパティは、ウィンドウの種類がエディターでも、デザイナー (**XdWindowType.xdDesignerWindow**) でも機能します。 さらに、InfoPath オブジェクト モデルのすべてのメンバーと同様に、フォーム テンプレートから呼び出す際のメソッドとプロパティのサポートは、セキュリティ レベルおよびフォームのデプロイ方法によって異なります。
   
-|**名前**|**説明**|**ウィンドウの種類のサポート**|
+|**[名前]**|**[説明]**|**ウィンドウの種類のサポート**|
 |:-----|:-----|:-----|
 |[Activate](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Window2.Activate.aspx) メソッド  <br/> |現在アクティブなウィンドウを指定します。  <br/> |**xdDesignWindow** および **xdEditorWindow**  <br/> |
 |[Active](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Window2.Active.aspx) プロパティ  <br/> |ウィンドウが現在アクティブなウィンドウかどうかを示す **Boolean** 値を返します。  <br/> |**xdDesignWindow** および **xdEditorWindow**  <br/> |

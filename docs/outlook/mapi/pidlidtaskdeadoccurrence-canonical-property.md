@@ -13,11 +13,11 @@ api_type:
 ms.assetid: e78287ff-f8cc-45ea-8da8-e7a7359e651c
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0b740368aae43549e81cf3f4f6de40526c505b6b
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25401516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303431"
 ---
 # <a name="pidlidtaskdeadoccurrence-canonical-property"></a>PidLidTaskDeadOccurrence 標準プロパティ
 
@@ -25,35 +25,35 @@ ms.locfileid: "25401516"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-新しい文字列を生成する必要があるかどうかを示します。
+新しいオカレンスを生成する必要があるかどうかを示します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |dispidTaskDeadOccur  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Task  <br/> |
-|長い ID (LID):  <br/> |0x00008109  <br/> |
+|プロパティセット:  <br/> |PSETID_Task  <br/> |
+|ロング ID (LID):  <br/> |0x00008109  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |エリア:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-定期的なパターンになって実際に過去の最後のインスタンスは、または、指定されたインスタンス数が生成されたとき。 クライアント プロパティを設定この新しいタスクを FALSE または true を指定して定期的な仕事の最後のインスタンスを生成するとき。 新しいインスタンスを生成するタスクをコピーすると、完了したインスタンスでは、コピーで、このプロパティが TRUE に設定が。
+定期的なパターンは、最終インスタンスが過去にある場合、または指定した数のインスタンスが生成された場合には有効になりません。 クライアントは、このプロパティを新しいタスクの場合は FALSE に、定期的なタスクの最後のインスタンスを生成する場合は TRUE に設定します。 タスクをコピーして新しいインスタンスを生成する場合、このプロパティはコピーで TRUE に設定されます。これは、完成したインスタンスです。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
-> タスク、タスクの割り当て、およびタスクの更新に相当する電子をモデル化したいくつかのオブジェクトを定義します。 
+> タスク、タスクの割り当て、およびタスクの更新に相当する電子メールをモデル化する複数のオブジェクトを定義します。 
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -61,9 +61,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

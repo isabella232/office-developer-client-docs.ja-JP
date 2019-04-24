@@ -1,25 +1,25 @@
 ---
-title: IMAP ストアにメッセージをメッセージ全体をダウンロードすることがなくアクセスします。
+title: メッセージ全体をダウンロードすることなく IMAP ストア上のメッセージにアクセスする
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 2a93ab3e-798f-5741-d5e0-bba8c6b437c7
-description: '�ŏI�X�V��: 2011�N7��23��'
+description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 194131148cc36dfff791b4cfae01862e8bbef5cb
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25398445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299077"
 ---
-# <a name="access-a-message-on-an-imap-store-without-downloading-the-entire-message"></a>IMAP ストアにメッセージをメッセージ全体をダウンロードすることがなくアクセスします。
+# <a name="access-a-message-on-an-imap-store-without-downloading-the-entire-message"></a>メッセージ全体をダウンロードすることなく IMAP ストア上のメッセージにアクセスする
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックは、 **[IProxyStoreObject](iproxystoreobject.md)** インターフェイスでは、メッセージ ・ ストアにクエリを実行し、返されたポインターと、 **[IProxyStoreObject::UnwrapNoRef](iproxystoreobject-unwrapnoref.md)** 関数を使用してされた IMAP ストア オブジェクトへのポインターを取得するための C++ のコード サンプルを示しますラップ解除します。 このラップが解除されたストアを使用すると、メッセージ全体のダウンロードを呼び出すことがなく、現在の状態のメッセージへのアクセスができます。 
+このトピックでは、 **[iproxystoreobject](iproxystoreobject.md)** インターフェイスのメッセージストアに対してクエリを実行する C++ のコードサンプルを示し、返されたポインターと**[iproxystoreobject:: UnwrapNoRef](iproxystoreobject-unwrapnoref.md)** 関数を使用して、IMAP ストアオブジェクトへのポインターを取得します。解除. このラップされていないストアを使用すると、メッセージ全体のダウンロードを呼び出すことなく、現在の状態のメッセージにアクセスできます。 
   
-**UnwrapNoRef**では、 **UnwrapNoRef**の呼び出しに成功した後はこの新しいオブジェクトへのポインター、ラップが解除されたストアでの参照カウントは増分されません、ために、参照カウントを維持するために[IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx)を呼び出す必要があります。 
+**UnwrapNoRef**は、ラップされていない store オブジェクトへのこの新しいポインターの参照カウントをインクリメントしないため、 **UnwrapNoRef**の呼び出しに成功した後で、 [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx)を呼び出して参照カウントを維持する必要があります。 
   
 ```cpp
 HRESULT HrUnWrapMDB(LPMDB lpMDBIn, LPMDB* lppMDBOut) 

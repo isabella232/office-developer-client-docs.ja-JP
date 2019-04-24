@@ -8,22 +8,22 @@ f1_keywords:
 - vis_sdr.chm2005
 localization_priority: Normal
 ms.assetid: d03b7fc8-8c94-16cd-1542-11c6a31ff769
-description: 図形またはページのショートカット メニューまたは操作タグ メニューのメニュー項目を説明する行が含まれています。 Microsoft Visio の以前のバージョンでは、タグのアクションをスマート タグと呼びます。[Tagname] セルを使用すると、アクション タグが定義されている操作タグ セクション内の行にアクションを関連付けます。
-ms.openlocfilehash: c5399ef99c55870edca6f956f4f2e5411e4a7a2f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 図形またはページのショートカットメニューまたはアクションタグメニューのメニュー項目を記述する行を含みます。 Microsoft Visio の以前のバージョンでは、アクションタグはスマートタグと呼ばれていました。[TagName] セルは、アクションタグが定義されているアクションタグセクションの行にアクションを関連付けるために使用されます。
+ms.openlocfilehash: 310bf164a0cd1419dbad51cdccf66147d6bcbf89
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283031"
 ---
-# <a name="actions-section"></a>[操作] セクション
+# <a name="actions-section"></a>[Actions] セクション
 
-図形またはページのショートカット メニューまたは操作タグ メニューのメニュー項目を説明する行が含まれています。 Microsoft Visio の以前のバージョンでは、タグのアクションをスマート タグと呼びます。**[Tagname]** セルを使用すると、アクション タグが定義されている**操作タグ**セクション内の行にアクションを関連付けます。 
+図形またはページのショートカットメニューまたはアクションタグメニューのメニュー項目を記述する行を含みます。 Microsoft Visio の以前のバージョンでは、アクションタグはスマートタグと呼ばれていました。[ **TagName** ] セルは、アクションタグが定義されているアクション**タグ**セクションの行にアクションを関連付けるために使用されます。 
   
 > [!NOTE]
 > Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 [**TagName**] セルは、アクション タグが定義される [**アクション タグ**] セクションで各行にアクションを関連付けるために使用されます。 
   

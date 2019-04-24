@@ -1,29 +1,29 @@
 ---
-title: FolderUserFields ストリームのサンプル
+title: folderuserfields ストリームのサンプル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 30e5e887-a324-4ed2-ba2a-eb4c19ba38d2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 76ad693b05e3989bd64ba66565ae4def22110ad0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e5251a619c70221987847830897ba349d63fd9cb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32281367"
 ---
-# <a name="folderuserfields-stream-sample"></a>FolderUserFields ストリームのサンプル
+# <a name="folderuserfields-stream-sample"></a>folderuserfields ストリームのサンプル
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックでは、FolderUserFields ストリームの例について説明します。 ストリームには、ユーザー定義のフィールドの定義が含まれている`TextField1`。 型は、**テキスト**、および FolderUserFields ストリームには、FolderUserFieldsAnsi と FolderUserFieldsUnicode の両方のパーツが含まれています。 詳細については、[フォルダー フィールドのストリームの構造体](folder-fields-stream-structures.md)を参照してください。
+このトピックでは、folderuserfields ストリームの例について説明します。 stream には、 `TextField1`ユーザー定義フィールドの定義が含まれています。 この型は**テキスト**であり、folderuserfields ストリームには、folderuserfields ansi と folderuserfields の両方の unicode パーツが含まれています。 詳細については、「[フォルダーフィールドストリームの構造](folder-fields-stream-structures.md)」を参照してください。
   
-## <a name="data-dump"></a>データのダンプ
+## <a name="data-dump"></a>データダンプ
 
-次のストリームのデータのダンプがバイナリ エディターで表示します。
+次に示すのは、バイナリエディターに表示されるストリームのデータダンプです。
   
-|ストリームのオフセット|データのバイト数|ASCII データ|
+|ストリームオフセット|データバイト|ASCII データ|
 |:-----|:-----|:-----|
 | `0000000000` <br/> | `02 00 00 00 01 00 00 00 0A 00 54 65 78 74 46 69` <br/> | `..........TextFi` <br/> |
 | `0000000010` <br/> | `65 6C 64 31 29 03 02 00 00 00 00 00 C0 00 00 00` <br/> | `eld1).......A...` <br/> |
@@ -41,131 +41,131 @@ ms.locfileid: "22564900"
 | `00000000D0` <br/> | `00 00 00 00 00 00` <br/> | `......` <br/> |
    
 
-**FolderUserFields**ストリームのサンプル データの解析は、次のようにします。
+次に、 **folderuserfields**ストリームのサンプルデータを解析します。
   
-- FolderUserFieldsAnsi: はオフセット 0x0 です。
+- folderuserフィールド ansi: Offset 0x0。
     
-  - FieldDefinitionCount: 0x0 では、4 バイトのオフセット: 0x00000002 (2)。
+  - fielddefinitioncount: Offset 0x0、4バイト: 0x00000002 (2)。
     
-  - FieldDefinitions: オフセット 0x4、2 つの FolderFieldDefinitionA ストリームの配列。
+  - fielddefinitions: Offset 0x4、配列 2 folderfielddefinitiona streams。
     
-    **配列の最初の要素**。
+    **最初の配列要素**:
     
-    - FieldType: 0x4、4 バイトのオフセット: 0x00000001 (ftString)。
+    - FieldType: Offset 0x4、4バイト: 0x00000001 (ftstring)。
       
-    - FieldNameLength: 0x8、2 バイトのオフセット: 0x000A (10)
+    - FieldNameLength: オフセット0x8、2バイト: 0x000a (10)
       
-    - フィールド名: オフセット 0 xa は、10 文字の配列です。 ANSI 文字列の値:「TextField1」です。
+    - FieldName: オフセット0xa、10文字の配列。 ANSI 文字列の値: "TextField1"。
       
-    - 共通: 0x14 をオフセットします。
+    - Common: Offset 0x14。
     
-      - PropSetGuid: 0x14、16 バイトのオフセット: {00020329-0000-0000-C000-000000000046} (PS_PUBLIC_STRINGS)。
+      - propsetguid: Offset 0x14, 16 バイト: {00020329-0000-0000-C000-000000000046} (PS_PUBLIC_STRINGS)。
         
-      - fcapm: 0x24、4 バイトのオフセット: 0x80000007 (FCAPM_CAN_EDIT |FCAPM_CAN_SORT |FCAPM_CAN_GROUP |FCAPM_CAN_EDIT_IN_ITEM)。
+      - fcapm: Offset 0x24、4バイト: 0x80000007 (FCAPM_CAN_EDIT |FCAPM_CAN_SORT |FCAPM_CAN_GROUP |FCAPM_CAN_EDIT_IN_ITEM)
         
-      - dwString: 4 バイト目の 0x28 にオフセット: 0x00000000 です。
+      - dwstring: Offset 0x28、4バイト: 0x00000000。
         
-      - dwBitmap: 0x2C、4 バイトのオフセット: 0x00000000 です。
+      - dwbitmap: Offset 0x2C、4バイト: 0x00000000。
         
-      - dwDisplay: 0x30、4 バイトのオフセット: 0x00000000 です。
+      - dwdisplay: Offset 0x30、4バイト: 0x00000000。
         
-      - iFmt: 0x34, 4 バイトのオフセット: 0x00000000 です。
+      - ifmt: オフセット0x34、4バイト: 0x00000000。
         
-      - wszFormulaLength: 0x38 は、2 バイトのオフセット: 0x0000 (0)。
+      - wszFormulaLength: オフセット0x38、2バイト: 0x0000 (0)。
         
-      - wszFormula: 0x3A、WCHARs が 0 の配列のオフセット。 空の文字列値です。
+      - wszFormula: オフセット0x3a、0 wchars の配列。 空の文字列値。
     
-    **2 番目の配列要素**。
+    **2 番目の配列要素**:
     
-    - FieldType: 0x3A、4 バイトのオフセット: 0x00000000 (ftNone)。
+    - FieldType: オフセット0x3a、4バイト: 0x00000000 (ftnone)。
       
-    - FieldNameLength: 0x3E、2 バイトのオフセット: 0x0000 (0)。
+    - FieldNameLength: オフセット0x3e、2バイト: 0x0000 (0)。
       
-    - フィールド名: オフセット 0x40、文字数が 0 の配列です。 空の文字列値です。
+    - FieldName: オフセット0x40、0文字の配列。 空の文字列値。
       
-    - オフセット 0x40 の一般的な: です。
+    - Common: オフセット0x40。
     
-      - PropSetGuid: 0x40、16 バイトのオフセット: {00000000-0000-0000-0000-000000000000} (GUID_)。
+      - propsetguid: Offset 0x40、16バイト: {00000000-0000-0000-0000-000000000000} (GUID_NULL)。
         
-      - fcapm: 0x50、4 バイトのオフセット: 0x00000000 (0)。
+      - fcapm: オフセット0x50、4バイト: 0x00000000 (0)。
         
-      - dwString: 0x54、4 バイトのオフセット: 0x00000000 です。
+      - dwstring: Offset 0x54、4バイト: 0x00000000。
         
-      - dwBitmap: 0x58、4 バイトのオフセット: 0x00000000 です。
+      - dwbitmap: Offset 0x58、4バイト: 0x00000000。
         
-      - dwDisplay: 0x5C、4 バイトのオフセット: 0x00000000 です。
+      - dwdisplay: Offset 0x5C、4バイト: 0x00000000。
         
-      - iFmt: 0x60、4 バイトのオフセット: 0x00000000 です。
+      - ifmt: オフセット0x60、4バイト: 0x00000000。
         
-      - wszFormulaLength: 0x64、2 バイトのオフセット: 0x0000 (0)。
+      - wszFormulaLength: Offset 0x64、2バイト: 0x0000 (0)。
         
-      - wszFormula: 0x66、WCHARs が 0 の配列のオフセット。 空の文字列値です。
+      - wszFormula: オフセット0x66、0 wchars の配列。 空の文字列値。
     
-- FolderUserFieldsUnicode: 0x66 をオフセットします。
+- folderuserフィールド unicode: Offset 0x66。
     
-  - FieldDefinitionCount: 0x66、4 バイトのオフセット: 0x00000002 (2)。
+  - fielddefinitioncount: Offset 0x66、4バイト: 0x00000002 (2)。
     
-  - FieldDefinitions: 0x6A、FolderFieldDefinitionW の 2 つのストリームの配列をオフセットします。
+  - fielddefinitions: Offset 0x6a、配列 2 folderfielddefinitionw streams。
     
-    **配列の最初の要素**。
+    **最初の配列要素**:
     
-    - FieldType: 0x6A、4 バイトのオフセット: 0x00000001 (ftString)。
+    - FieldType: Offset 0x6a、4バイト: 0x00000001 (ftstring)。
       
-    - FieldNameLength: 0x6E、2 バイトのオフセット: 0x000A (10)。
+    - FieldNameLength: オフセット0x6e、2バイト: 0x000a (10)。
       
-    - フィールド名: 0x70、10 WCHARs の配列のオフセットします。 Unicode 文字列の値:「TextField1」です。
+    - FieldName: Offset 0x70、10の wchars の配列。 Unicode 文字列値: "TextField1"。
       
-    - 0x84: 共通のオフセットです。
+    - Common: オフセット0x84。
     
-      - PropSetGuid: 次の 16 バイトのオフセット: {00020329-0000-0000-C000-000000000046} (PS_PUBLIC_STRINGS)。
+      - propsetguid: Offset 0x84、16バイト: {00020329-0000-0000-C000-000000000046} (PS_PUBLIC_STRINGS)。
         
-      - fcapm: 0x94、4 バイトのオフセット: 0x80000007 (FCAPM_CAN_EDIT |FCAPM_CAN_SORT |FCAPM_CAN_GROUP |FCAPM_CAN_EDIT_IN_ITEM)。
+      - fcapm: オフセット0x94、4バイト: 0x80000007 (FCAPM_CAN_EDIT |FCAPM_CAN_SORT |FCAPM_CAN_GROUP |FCAPM_CAN_EDIT_IN_ITEM)
         
-      - dwString: 0x98、4 バイトのオフセット: 0x00000000 です。
+      - dwstring: Offset 0x98、4バイト: 0x00000000。
         
-      - dwBitmap: 0x9C、4 バイトのオフセット: 0x00000000 です。
+      - dwbitmap: オフセット0x9c、4バイト: 0x00000000。
         
-      - dwDisplay: 0xa0 にある、4 バイトのオフセット: 0x00000000 です。
+      - dwdisplay: Offset 0xa0、4バイト: 0x00000000。
         
-      - iFmt: 0xA4、4 バイトのオフセット: 0x00000000 です。
+      - ifmt: Offset 0xa4、4バイト: 0x00000000。
         
-      - wszFormulaLength: 0xA8、2 バイトのオフセット: 0x0000 (0)。
+      - wszFormulaLength: Offset 0xa8、2バイト: 0x0000 (0)。
         
-      - wszFormula: 0xAA、WCHARs が 0 の配列のオフセット。 空の文字列値です。
+      - wszFormula: Offset 0xaa、配列 0 wchars。 空の文字列値。
     
-    **2 番目の配列要素**。
+    **2 番目の配列要素**:
     
-    - FieldType: 0xAA、4 バイトのオフセット: 0x00000000 (ftNone)。
+    - FieldType: Offset 0xaa、4バイト: 0x00000000 (ftnone)。
       
-    - FieldNameLength: 0xAE、2 バイトのオフセット: 0x0000 (0)。
+    - FieldNameLength: Offset 0xae、2バイト: 0x0000 (0)。
       
-    - フィールド名: 0xB0、WCHARs が 0 の配列をオフセットします。 空の文字列値です。
+    - FieldName: オフセット0xb0、0 wchars の配列。 空の文字列値。
       
-    - 0xB0: 共通のオフセットです。
+    - Common: オフセット0xb0。
     
-      - PropSetGuid: 0xB0、16 バイトのオフセット: {00000000-0000-0000-0000-000000000000} (GUID_)。
+      - propsetguid: Offset 0xb0、16バイト: {00000000-0000-0000-0000-000000000000} (GUID_NULL)。
         
-      - fcapm: 0xC0、4 バイトのオフセット: 0x00000000 (0)。
+      - fcapm: Offset 0xC0、4バイト: 0x00000000 (0)。
         
-      - dwString: 0xC4、4 バイトのオフセット: 0x00000000 です。
+      - dwstring: Offset 0xc4、4バイト: 0x00000000。
         
-      - dwBitmap: 0xC8、4 バイトのオフセット: 0x00000000 です。
+      - dwbitmap: Offset 0xc8、4バイト: 0x00000000。
         
-      - dwDisplay: 0xCC、4 バイトのオフセット: 0x00000000 です。
+      - dwdisplay: Offset 0xcc、4バイト: 0x00000000。
         
-      - iFmt: 0xD0、4 バイトのオフセット: 0x00000000 です。
+      - ifmt: Offset 0xD0、4バイト: 0x00000000。
         
-      - wszFormulaLength: 0xD4、2 バイトのオフセット: 0x0000 (0)。
+      - wszFormulaLength: Offset 0xD4、2バイト: 0x0000 (0)。
         
-      - wszFormula: ように WCHARs が 0 の配列のオフセット。 空の文字列値です。
+      - wszFormula: Offset 0xD6、0 wchars の配列。 空の文字列値。
     
 ## <a name="see-also"></a>関連項目
 
 - [Outlook のアイテムとフィールド](outlook-items-and-fields.md)
-- [PropertyDefinition ストリームの構造](propertydefinition-stream-structure.md)
-- [FieldDefinition ストリームの構造](fielddefinition-stream-structure.md)
-- [SkipBlock ストリームの構造](skipblock-stream-structure.md)
-- [FirstSkipBlockContent ストリームの構造](firstskipblockcontent-stream-structure.md)
-- [PackedAnsiString ストリームの構造](packedansistring-stream-structure.md)
-- [PackedUnicodeString ストリームの構造](packedunicodestring-stream-structure.md)
+- [propertydefinition ストリームの構造](propertydefinition-stream-structure.md)
+- [fielddefinition ストリームの構造](fielddefinition-stream-structure.md)
+- [skipblock ストリームの構造](skipblock-stream-structure.md)
+- [firstskipblockcontent ストリームの構造](firstskipblockcontent-stream-structure.md)
+- [PackedAnsiString Stream 構造](packedansistring-stream-structure.md)
+- [PackedUnicodeString Stream 構造](packedunicodestring-stream-structure.md)
 

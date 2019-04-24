@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 72fb3ee5-f18e-4f9c-adc6-698ac037b79d
 description: フォーム テンプレートのデータ ソースの XML データにアクセスして操作するには、Microsoft.Office.InfoPath 名前空間によって提供されるマネージ コード オブジェクト モデルの多くのメンバーは、System.Xml.XPath 名前空間の XPathNavigator クラスのインスタンスを作成するか、そのインスタンスが渡されます。InfoPath オブジェクト モデルのメンバーから返される XPathNavigator オブジェクトにアクセスした後、XPathNavigator クラスのプロパティとメソッドを使用してデータを操作できます。
 ms.openlocfilehash: f34f2e1a1cbdb8d9e389c864a9b979be20726e6b
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25393041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303550"
 ---
 # <a name="work-with-the-xpathnavigator-and-xpathnodeiterator-classes"></a>XPathNavigator クラスおよび XPathNodeIterator クラスを操作する
 
@@ -151,9 +151,9 @@ myDate.SetValue(strCurDate)
   
 ### <a name="selecting-and-setting-a-set-of-repeating-nodes"></a>繰り返しノードを選択および設定する
 
-個数が不定の繰り返しフィールドまたはグループのセットを指定するには、 **XPathNavigator** クラスの **Select** メソッドを使用します。このメソッドは、 XPathNodeIterator オブジェクトを返します。このオブジェクトを使用して、指定されたノードのコレクションに対して反復処理を実行できます。 
+繰り返される回数が不確かなフィールドまたはグループの一式を指定するには、**XPathNavigator** クラスの **Select** メソッドを使用します。 このメソッドから返される XPathNodeIterator オブジェクトを使用して、指定したノードのコレクションを反復処理できます。 
   
-次の例では、フォーム テンプレートに、 **** という繰り返し要素に連結される `field1`または同様の繰り返しコントロールが含まれていることを想定しています。フィールドの XPath は **Select** メソッドに渡され、返される **XPathNodeIterator** は  `nodes` 変数に割り当てられます。 MoveNext メソッドを使用して、ノードのコレクションに対して反復処理を行います。また、 Current プロパティを使用して、現在のノードに置かれる **XPathNavigator** オブジェクトを返します。最後に、 **Value** プロパティを使用して、各繰り返しフィールドの値を取得して表示します。 
+次の例では、フォーム テンプレートに含まれる**箇条書き**または同様の反復コントロールが、`field1` という名前の繰り返し要素にバインドされていることを前提とします。 フィールドの XPath を **Select** メソッドに渡し、このメソッドから返された **XPathNodeIterator** を `nodes` 変数に割り当てます。 MoveNext メソッドを使用してノードのコレクションを反復処理し、Current プロパティを使用して、現在のノードに位置する **XPathNavigator** オブジェクトを返します。 最後に、**Value** プロパティを使用して、繰り返される各フィールドの値を取得し、表示します。 
   
 ```cs
 string message = String.Empty;

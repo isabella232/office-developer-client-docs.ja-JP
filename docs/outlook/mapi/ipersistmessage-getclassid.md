@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 77eeb468-3432-4ccd-9c1e-1df9ce605193
-description: '�ŏI�X�V��: 2011�N7��23��'
+description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 3f0d98b8ffa13fe238fc0fcf8ff0ec76a3a284eb
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25390458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309626"
 ---
 # <a name="ipersistmessagegetclassid"></a>IPersistMessage::GetClassID
 
@@ -25,7 +25,7 @@ ms.locfileid: "25390458"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームを管理するフォームのサーバーを表す識別子を返します。 
+フォームを管理できるフォームサーバーを表す識別子を返します。 
   
 ```cpp
 HRESULT GetClassID(
@@ -35,9 +35,9 @@ HRESULT GetClassID(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpClassID_
+ _lpclassid_
   
-> [で [チェック アウト]フォームのクラス識別子 (CLSID) へのポインター。
+> [入力]フォームのクラス識別子 (CLSID) へのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -45,11 +45,11 @@ S_OK
   
 > クラス識別子が正常に返されました。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-**IPersistMessge::GetClassID**メソッドは、フォーム サーバーのクラス id に_lpClassID_パラメーターの内容を設定し、S_OK を返します。 フォーム ビューアーは、 **GetClassID**を呼び出すし、正常に返されます、フォームが[初期化されていない](uninitialized-state.md)状態で配置されます。 
+**IPersistMessge:: GetClassID**メソッドは、 _lpclassid_パラメーターの内容をフォームサーバーのクラス識別子に設定し、S_OK を返します。 フォームビューアーが**GetClassID**を呼び出して正常に戻ると、フォームは[初期化](uninitialized-state.md)されていない状態になります。 
   
-構造化ストレージ オブジェクトのクラス識別子を使用する方法の詳細については、 [IPersist::GetClassID](https://msdn.microsoft.com/library/921a3b86-a240-454e-9411-8d653e02b90e.aspx)メソッドのマニュアルを参照してください。 
+構造化ストレージオブジェクトでクラス識別子を使用する方法の詳細については、 [IPersist:: GetClassID](https://msdn.microsoft.com/library/921a3b86-a240-454e-9411-8d653e02b90e.aspx)メソッドのドキュメントを参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

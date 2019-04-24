@@ -8,29 +8,29 @@ f1_keywords:
 - Vis_DSS.chm82251394
 localization_priority: Normal
 ms.assetid: 75807d66-6483-2785-567c-d238067e1e52
-description: コサインが number である角度など、数値のアーク コサインを返します。
-ms.openlocfilehash: 53dbf70793b463193fb038cdc5e51991b4332c16
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 数値のアークコサインを返します。たとえば、コサインが数値である角度です。
+ms.openlocfilehash: fbfb5f6d9879e2e398fb2ae66d8b5c8a76f9251c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283101"
 ---
 # <a name="acos-function"></a>ACOS 関数
 
-番号、たとえば、そのコサインが*数値*の角度のコサインを返します。 
+数値のアークコサインを返します。たとえば、コサインが*数値*である角度です。 
   
 ## <a name="syntax"></a>構文
 
-ACOS (*数*) 
+ACOS (*数値*) 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-入力値が-1 の範囲である必要があります\<番号を = \<= 1、または、#NUM! エラーが返されます。 結果の角度は、0 の範囲の\<角度を = \<= π ラジアン (0\<角度を = \<= 180 度)。
+入力値は、-1 \<= number \<= 1、または #NUM の範囲内である必要があります。 エラーを返します。 結果の\<角度は、0 = angle \<= πラジアン (0 \<= 角度\<= 180 度) の範囲です。
   
 ## <a name="example"></a>例
 
-ACOS(0) 
+ACOS (0) 
   
 90°を返します。 
   

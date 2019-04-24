@@ -7,21 +7,21 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 88950eda-85ae-ad7a-46c6-0e1933d35e04
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 152afd68bea44f3485b2cc566f3f0d2768590704
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: bf60b12a6e4575d3504a112aa2b54fb8c4ae23c7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287036"
 ---
 # <a name="exchangestoreversionnum"></a>EXCHANGE_STORE_VERSION_NUM
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-Microsoft Office Outlook プロファイル内のアカウントが接続されている Microsoft Exchange Server のバージョン情報を格納します。
+microsoft Office Outlook プロファイルのアカウントが接続されている microsoft Exchange Server のバージョン情報を格納します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -35,23 +35,23 @@ typedef struct {
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
- _wMajorVersion_
+ _wmajorversion_
   
-- リリースの機能に重要な新機能と変更が含まれる場合、一般に増加するメジャー バージョン番号です。
+- リリースに重要な新機能と機能の変更が含まれている場合に、通常はメジャーバージョン番号がインクリメントされます。
     
  _wMinorVersion_
   
-- マイナー バージョン番号が特定のメジャー バージョン番号に対応して、リリースには、マイナーの新機能や重要な修正が含まれている場合が一般的に増加します。
+- 特定のメジャーバージョン番号に対応するマイナーバージョン番号。リリースにマイナーな新機能や重要な修正が含まれている場合に、通常は増分されます。
     
- _wBuild_
+ _wbuild_
   
-- メジャー ビルド番号が特定のメジャーおよびマイナー バージョン番号に対応して、新機能や修正プログラムを含む内部のリリースでは一般にインクリメントされます。 リリースの主要な内部コードの分岐、またはマイルス トーンのリリース候補などときにも、この値がインクリメントされます。
+- 特定のメジャーおよびマイナーバージョン番号に対応し、新しい機能またはフィックスを含む内部リリースで一般的にインクリメントされるメジャービルド番号。 この値は、リリース候補のように、リリースが主要な内部コード分岐またはマイルストーンの場合にも増加します。
     
- _wMinorBuild_
+ _wminorbuild_
   
-- 内部リリースの新機能が含まれていますまたは主要なコードの分岐、またはマイルス トーンを示す特定の主要なビルドに対応する修正プログラムで一般に増加するマイナー ビルド番号です。
+- メジャーコード分岐またはマイルストーンを示す、特定の主要ビルドに対応する新機能またはフィックスを含む内部リリースで通常増分されるマイナービルド番号。
     
 ## <a name="see-also"></a>関連項目
 

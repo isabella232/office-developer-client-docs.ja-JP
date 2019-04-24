@@ -1,41 +1,41 @@
 ---
-title: 通知と、InfoPath 2003 オブジェクト モデルを使用してダイアログ ボックスを表示します。
+title: InfoPath 2003 オブジェクト モデルを使用して警告とダイアログ ボックスを表示する
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- infopath 2003 と互換性のあるフォーム テンプレート] ダイアログ ボックスを表示するフォームのテンプレート [InfoPath 2007] ダイアログ ボックスで、アラートを表示するダイアログ ボックスを表示する InfoPath 2003 と互換性のあるフォーム テンプレートを InfoPath 2003 と互換性のあるフォーム テンプレートでの表示、、InfoPath 2003 と互換性のあるフォーム テンプレートは、警告を表示します。
+- infopath 2003 互換のフォームテンプレート、ダイアログボックスの表示、フォームテンプレート [infopath 2007]、ダイアログボックスの表示、警告、infopath の2003互換フォームテンプレートに表示されるダイアログボックス、infopath の2003互換フォームテンプレートでの表示、InfoPath 2003 互換フォームテンプレート、警告を表示する
 localization_priority: Normal
 ms.assetid: 721ac58e-56d9-4e3b-93f1-849e0c94d010
-description: InfoPath 2003 オブジェクト モデルを使用するフォーム テンプレートの機能を拡張するコードを記述する場合は、ダイアログ ボックス内の情報をユーザーに提供すると便利なことがあります。
-ms.openlocfilehash: 1cc0f4c7a6696eae2d3b7058898b4119cede79e7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: InfoPath 2003 オブジェクト モデルを使用するフォーム テンプレートの機能を拡張するためのコードを書く際、ユーザーにダイアログ ボックス形式で情報を表示すると便利な場合があります。
+ms.openlocfilehash: 12088747250037e53a3b7d8d0577936e30d6292c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303613"
 ---
-# <a name="display-alerts-and-dialog-boxes-using-the-infopath-2003-object-model"></a>通知と、InfoPath 2003 オブジェクト モデルを使用してダイアログ ボックスを表示します。
+# <a name="display-alerts-and-dialog-boxes-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用して警告とダイアログ ボックスを表示する
 
-InfoPath 2003 オブジェクト モデルを使用するフォーム テンプレートの機能を拡張するコードを記述する場合は、ダイアログ ボックス内の情報をユーザーに提供すると便利なことがあります。 ダイアログ ボックスおよび関連するユーザー インターフェイス要素をプログラムで表示するには InfoPath で、 [UIObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx)インターフェイスのメソッドを使用して、します。 
+InfoPath 2003 オブジェクト モデルを使用するフォーム テンプレートの機能を拡張するためのコードを書く際、ユーザーにダイアログ ボックス形式で情報を表示すると便利な場合があります。 プログラムによってダイアログボックスと関連するユーザーインターフェイス要素を表示する方法については、「 [UIObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx)インターフェイスのメソッドを使用する」をご利用ください。 
   
 ## <a name="overview-of-the-uiobject-interface"></a>UIObject インターフェイスの概要
 
-[UIObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx)インターフェイスには、次のメソッドは、フォーム開発者がフォームの記入には、InfoPath のユーザーに表示されるダイアログ ボックスのさまざまな種類に使用できますが用意されています。 
+[UIObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx)インターフェイスには、次のメソッドが用意されています。フォームの開発者は、フォームに入力するときに、さまざまな種類のダイアログボックスを InfoPath ユーザーに表示するために使用することができます。 
   
 |名前|説明|
 |:-----|:-----|
-|[警告](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.Alert.aspx) <br/> |指定されたメッセージ文字列を含む単純なメッセージ ボックスが表示されます。 ユーザーから必要な入力がないとメッセージのみを表示する必要があるとき、このメソッドを使用する必要があります。 表示されるダイアログ ボックスは **[ok]** ボタンをクリックして終了します。  <br/> |
-|[確認](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.Confirm.aspx) <br/> |ユーザーが入力可能なメッセージ ボックスをいくつかのボタンと共に表示します。 返される値は、 [XdConfirmChoice](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XdConfirmChoice.aspx)列挙定数のいずれかです。  <br/> |
-|[SetSaveAsDialogFileName](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.SetSaveAsDialogFileName.aspx) <br/> |[名前を**付けて**保存] ダイアログ ボックスでフォームの既定のファイル名を設定します。  <br/> |
-|[SetSaveAsDialogLocation](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.SetSaveAsDialogLocation.aspx) <br/> |[名前を**付けて**保存] ダイアログ ボックスが開いたときに参照するときに開始される最初の場所を設定します。  <br/> |
-|[ShowMailItem](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowMailItem.aspx) <br/> |現在開いているメッセージに関連付けられているフォームの既定の電子メール アプリケーションで新しい電子メール メッセージを作成します。  <br/> |
-|[ShowModalDialog](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowModalDialog.aspx) <br/> |指定された .html ファイルおよび位置引数に基づいて、モーダル ダイアログ ボックスが表示されます。 複数のユーザーに簡単なメッセージを表示して、(以外は、 **[はい]** に用意されている簡単な確認は、ユーザーからのデータの一部を取得する必要がある場合、このメソッドを使用する必要があります。 | **いいえ** | **キャンセル**ボタンで**確認する**方法が表示されます)。  <br/> |
-|[ShowSignatureDialog](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowSignatureDialog.aspx) <br/> |組み込みの **[デジタル署名**] ダイアログ ボックスが表示されます。  <br/> |
+|[通知](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.Alert.aspx) <br/> |指定したメッセージ文字列を含む単純なメッセージ ボックスを表示します。このメソッドは、ユーザーからの入力が必要なく、メッセージを表示する必要がある場合にのみ使用します。表示されるダイアログ ボックスは、[**OK**] ボタンをクリックして閉じることができます。<br/> |
+|[Confirm](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.Confirm.aspx) <br/> |ユーザーが入力可能なメッセージ ボックスをいくつかのボタンと共に表示します。 返される値は、 [XdConfirmChoice](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XdConfirmChoice.aspx)列挙定数のいずれかです。  <br/> |
+|[SetSaveAsDialogFileName](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.SetSaveAsDialogFileName.aspx) <br/> |[**名前を付けて保存**] ダイアログ ボックスにフォームの既定のファイル名を設定します。  <br/> |
+|[SetSaveAsDialogLocation](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.SetSaveAsDialogLocation.aspx) <br/> |[**名前を付けて保存**] ダイアログ ボックスが開いたときに参照を開始する場所を設定します。  <br/> |
+|[ShowMailItem](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowMailItem.aspx) <br/> |既定の電子メールアプリケーションで新しい電子メールメッセージを作成し、現在開いているフォームをメッセージに添付します。  <br/> |
+|[ShowModalDialog](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowModalDialog.aspx) <br/> |指定した .html ファイルと場所引数に基づいてモーダル ダイアログ ボックスを表示します。 このメソッドは、ユーザーに対して単純なメッセージ以外を表示する場合に、ユーザーから何らかのデータを取得する必要がある場合に使用します (**はい** | **いいえ** | **Confirm**メソッドによって表示される **[キャンセル]** ボタン)。  <br/> |
+|[ShowSignatureDialog](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowSignatureDialog.aspx) <br/> |組み込みの [**デジタル署名**] ダイアログ ボックスを表示します。  <br/> |
    
 ## <a name="using-the-uiobject-interface"></a>UIObject インターフェイスの使用
 
-[UIObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx)インターフェイスへのアクセスが[XDocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx)インターフェイスの[UI](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.UI.aspx)は、それ自体は、`thisXDocument`で初期化されている変数、`_Startup`フォーム コードのクラスのメソッドです。 [ShowMailItem](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowMailItem.aspx)と[警告](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.Alert.aspx)、 [UIObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx)インターフェイスのメソッドを使用して次の例に示します。 
+[UIObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx)インターフェイスは、XDocument インターフェイスの[UI](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.UI.aspx)プロパティを通じ[](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx)てアクセスされます。これには`thisXDocument` 、フォームのコードクラスの`_Startup`メソッドで初期化された変数を通じてアクセスします。 次の例では、 [UIObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx)インターフェイスの[showmailitem](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowMailItem.aspx)および[Alert](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.Alert.aspx)メソッドの使用方法を示します。 
   
 ```cs
 thisXDocument.UI.ShowMailItem("someone@example.com","", "", 
@@ -51,7 +51,7 @@ thisXDocument.UI.Alert("The email message has been created.")
 
 ## <a name="using-the-showmodaldialog-method"></a>ShowModalDialog メソッドの使用
 
-この例では、HTML ファイルの show.html で定義されているカスタム ダイアログ ボックスを表示するのには、 [UIObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx)インターフェイスの[ShowModalDialog](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowModalDialog.aspx)メソッドを使用する方法を示します。 
+この例では、 [UIObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx)インターフェイスの[ShowModalDialog](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowModalDialog.aspx)メソッドを使用して、html ファイルの show .html で定義されたカスタムダイアログボックスを表示する方法を示します。 
   
 ```cs
 public void CTRL1_5_OnClick(DocActionEvent e)
@@ -72,7 +72,7 @@ End Sub
 
 ```
 
-Visual C# と Visual Basic のサンプルは、 [ShowModalDialog](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowModalDialog.aspx)メソッドによって呼び出される] ダイアログ ボックスを定義する"show.html"という名前の HTML ファイルに依存します。 この HTML ファイルは、フォームからデータの一部が表示され、ユーザーが値を入力するテキスト ボックスを示しています。 ダイアログ ボックスが閉じられるときに、フォームにテキスト ボックスの値が返されます。 
+visual C# と visual Basic の両方のサンプルは、 [ShowModalDialog](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowModalDialog.aspx)メソッドによって呼び出されるダイアログボックスを定義する ".html を表示する" という名前の html ファイルに依存しています。 この HTML ファイルは、フォームからのデータを表示し、ユーザーが値を入力するためのテキスト ボックスを表示します。 テキスト ボックス内の値は、ダイアログ ボックスが閉じたときにフォームに返されます。 
   
 ```html
 <HTML>
@@ -102,6 +102,6 @@ function BtnClick()
 ```
 
 > [!IMPORTANT]
-> [ShowModalDialog](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowModalDialog.aspx)メソッドを実行するかをプレビューする完全信頼が必要です。 詳細については、[プレビューしその必要とする完全信頼フォーム テンプレートのデバッグ](how-to-preview-and-debug-form-templates-that-require-full-trust.md)を参照してください。 
+> [ShowModalDialog](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowModalDialog.aspx)メソッドを実行またはプレビューするには、完全な信頼が必要です。 詳細については、「[完全信頼が必要なフォームテンプレートをプレビューおよびデバッグする](how-to-preview-and-debug-form-templates-that-require-full-trust.md)」を参照してください。 
   
 

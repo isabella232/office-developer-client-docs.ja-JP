@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c0e7b788-3198-499c-ae21-b2032f929ed9
 description: ログオン時に使用されるユーザー名を表す文字列を返します。
-ms.openlocfilehash: 02485ad2a510a81c64406ea6ec9a0f85c0e4d2f9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6f0d2c68b1af9e7c96f2cd86dc798518e432c7cf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285307"
 ---
 # <a name="isocialsessionloggedonusername"></a>ISocialSession::LoggedOnUserName
 
@@ -25,7 +25,7 @@ ms.locfileid: "19804487"
 
 ## <a name="property-value"></a>プロパティ値
 
-ログオン ユーザーのユーザー名を表す文字列。
+ログオンしているユーザーのユーザー名を表す文字列。
   
 ## <a name="see-also"></a>関連項目
 

@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 7a6f8975-f052-39e9-9dbc-4698852fe5e1
 description: ドキュメント ワークフローは、ワークフローを定義してドキュメント ライブラリで使用できるようにする、Microsoft SharePoint Server 2010 および Microsoft SharePoint Foundation 2010 の機能です。組み込みのワークフロー シナリオとして、ドキュメントの承認回覧手続き、ドキュメントに関するフィードバックの収集などが付属しています。これらは一般的なワークフローのテンプレートであり、特定のニーズに合わせてカスタマイズできます。ワークフローはどのような Office ドキュメントにも関連付けできるほか、InfoPath フォーム テンプレートにワークフロー情報を組み込むように Microsoft InfoPath フォーム テンプレートをデザインすることもできます。
 ms.openlocfilehash: f34e01ad1e1b9851ee8281bc2580cb5d5d270c88
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25392075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303466"
 ---
 # <a name="sharepoint-workflow-support-in-infopath-forms"></a>InfoPath フォームでの SharePoint ワークフローのサポート
 

@@ -1,19 +1,19 @@
 ---
-title: DateWithTimeFromParts 関数 (カスタム web アプリケーションのアクセス)
+title: datewithtimefromparts 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: aa97cbaa-8b14-42e3-a098-938ebe0769eb
 description: 指定した年、月、日、および時刻に基づく日付時刻を返します。
-ms.openlocfilehash: 8cc1fbe700d18c04d944793bcea889424b0cff3f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ee995d346ca27e683f342cf3f611c1147997d24e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32282143"
 ---
-# <a name="datewithtimefromparts-function-access-custom-web-app"></a>DateWithTimeFromParts 関数 (カスタム web アプリケーションのアクセス)
+# <a name="datewithtimefromparts-function-access-custom-web-app"></a>datewithtimefromparts 関数 (Access カスタム web アプリ)
 
 指定した年、月、日、および時刻に基づく日付時刻を返します。
   
@@ -28,11 +28,11 @@ ms.locfileid: "19798538"
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *年*  <br/> |年を指定する整数式。  <br/> |
+| *Year*  <br/> |年を指定する整数式  <br/> |
 | *Month*  <br/> |月を指定する整数式。  <br/> |
-| *日*  <br/> |日を指定する整数式。  <br/> |
-| *Hour*  <br/> |時を指定する整数式。  <br/> |
-| *Minute*  <br/> |分を指定する整数式。  <br/> |
+| *Day*  <br/> |日を指定する整数式  <br/> |
+| *Hour*  <br/> |時を指定する整数式  <br/> |
+| *Minute*  <br/> |分を指定する整数式  <br/> |
 | *Second*  <br/> |秒を指定する整数式。  <br/> |
    
 ## <a name="remarks"></a>解説

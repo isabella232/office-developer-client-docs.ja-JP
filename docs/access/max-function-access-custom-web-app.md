@@ -1,5 +1,5 @@
 ---
-title: Max 関数 (カスタム web アプリケーションのアクセス)
+title: Max 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: b6e0b89f-4975-416d-9f7a-e15fa54d7ee1
 description: クエリまたはテーブルの式の最大値を返します。
-ms.openlocfilehash: 1baf5ee184104a377ded9053a085247d1675d58e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 443897b6d02873458c5dbb4ee9acdac1b6251364
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301765"
 ---
-# <a name="max-function-access-custom-web-app"></a>Max 関数 (カスタム web アプリケーションのアクセス)
+# <a name="max-function-access-custom-web-app"></a>Max 関数 (Access カスタム web アプリ)
 
 クエリまたはテーブルの式の最大値を返します。
   
@@ -29,6 +29,6 @@ ms.locfileid: "19798564"
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *Expression*  <br/> |データを評価する場合、またはそのフィールドのデータを使用して計算を実行する式を含むフィールドを識別する文字列式です。 *式*のオペランドには、テーブルのフィールド、定数、または関数 (組み込みまたはユーザー定義することができますが、他の SQL 集計関数のいずれかのない) の名前を含めることができます。  <br/> |
+| *Expression*  <br/> |評価するデータを含むフィールドを識別する文字列式、またはそのフィールドのデータを使用して計算を実行する式を指定します。 *Expression*のオペランドには、テーブルのフィールドの名前、定数、または関数を含めることができます。これは、組み込みまたはユーザー定義のいずれの SQL 集計関数であってもかまいません。  <br/> |
    
 

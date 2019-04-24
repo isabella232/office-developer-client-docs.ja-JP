@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: fbaa7d64-06ef-46d6-81d5-9d7af1c14b65
 description: ページを複製できるかどうかを、ブール演算型で決定します。
-ms.openlocfilehash: 6cfe8f7a33942f51130ef103b8aba70a5c38b37d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8ce730fcdc2dff5deac44d8c053b84e82a82d4cb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32283665"
 ---
 # <a name="pagelockduplicate-cell-page-properties-section"></a>[PageLockDuplicate] セル ([ページのプロパティ] セクション)
 
@@ -23,13 +23,13 @@ ms.locfileid: "19805958"
 |TRUE  <br/> |このページでは、ページのショートカット メニューの [**複製**] と、**Page.Duplicate** オートメーション メソッドはどちらも無効化されています。  <br/> |
 |FALSE  <br/> |このページは複製できます。  <br/> |
    
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 別の数式から、**Cell** エレメントの **N** 属性の値によって、または **CellsU** プロパティを使用したプログラムから、名前によって [**PageLockDuplicate**] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | PageLockDuplicate  <br/> |
+| セル名:  <br/> | [pagelockduplicate]  <br/> |
    
 プログラムから、インデックスによって [**PageLockDuplicate**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -37,6 +37,6 @@ ms.locfileid: "19805958"
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowPage** <br/> |
-| セル インデックス:  <br/> |**visPageLockDuplicate** <br/> |
+| セル インデックス:  <br/> |**vispagelockduplicate** <br/> |
    
 

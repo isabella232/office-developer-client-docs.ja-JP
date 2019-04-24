@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 7bd4fbbb-49c6-46a1-9584-895e5aa9a772
 description: Microsoft SharePoint Server 2013 と InfoPath Forms Services に展開されるブラウザー互換フォームでは、大部分の InfoPath フォーム使用シナリオで利用される機能とコントロールをサポートしています。しかし、InfoPath Forms Services で提供されるブラウザー互換フォームでは、InfoPath 機能をすべてサポートしているわけではありません。一部の機能とコントロールはサーバーに実装されません。また、サーバーには対応する機能がないこともあります。
-ms.openlocfilehash: 65201358fc651325920bd3eefc863e839bb1f1a6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: e2db35dc535af58b5f5116448f346cd7a527b681
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300148"
 ---
 # <a name="creating-infopath-form-templates-that-work-with-infopath-forms-services"></a>InfoPath Forms Services で動作する InfoPath フォーム テンプレートを作成する
 
@@ -25,55 +25,55 @@ Microsoft SharePoint Server 2013 と InfoPath Forms Services に展開される�
 
 ここでは、InfoPath Forms Services に展開され、InfoPath とブラウザーの両方で開くことができるブラウザー互換フォーム テンプレートでサポートされている機能の一覧を示します。
   
-### <a name="controls"></a>Controls
+### <a name="controls"></a>コントロール
 
 次のコントロールは、InfoPath とブラウザーの両方で開くことができるフォーム テンプレートでサポートされています。
   
-- **テキスト ボックス**
+- **Text Box**
     
-- **リッチ テキスト ボックス** (Microsoft Internet Explorer でのみ編集できます) 
+- **Rich Text Box** (only editable in Microsoft Internet Explorer) 
     
-- **ドロップダウン リスト ボックス**
+- **Drop-Down List Box**
     
-- **リスト ボックス**
+- **List Box**
     
-- **日付の選択** (Internet Explorer 以外のブラウザーではテキスト ボックスとして表示されます) 
+- **Date Picker** (Rendered as a text box on browsers other than Internet Explorer) 
     
-- **チェック ボックス**
+- **Check Box**
     
-- **オプション ボタン**
+- **Option Button**
     
-- **ボタン**
+- **Button**
     
 - **セクション**
     
-- **省略可能セクション**
+- **Optional Section**
     
-- **繰り返しセクション**
+- **Repeating Section**
     
-- **繰り返しテーブル**
+- **Repeating Table**
     
-- **添付ファイル**
+- **File Attachment**
     
 - **ハイパーリンク**
     
-- **式ボックス**
+- **Expression Box**
     
-- **コンボ ボックス**
+- **Combo Box**
     
 - **複数選択リスト ボックス**
     
-- **箇条書き**
+- **Bulleted List**
     
 - **番号付きリスト**
     
-- **標準リスト**
+- **Plain List**
     
-- **画像**
+- **Picture**
     
-- **選択肢グループ**
+- **Choice Group**
     
-- **選択肢セクション**
+- **Choice Section**
     
 - **ユーザー/グループの選択**
     
@@ -118,13 +118,13 @@ InfoPath デザイン モードで **デザイン チェック**機能を使用�
   
 - 繰り返しコントロールに対するフィルター
     
-- **マスター/詳細**
+- **Master/Detail**
     
-- **縦書きラベル**
+- **Vertical Label**
     
-- **横方向の繰り返しテーブル**
+- **Horizontal Repeating Table**
     
-- **インク描画**
+- **Ink Picture**
     
 - **繰り返し再帰セクション**
     
@@ -140,7 +140,7 @@ InfoPath Forms Services ではサポートされていない他の機能
     
 - データベース データ接続は SQL サーバー データベースへの読み取り専用アクセスに制限されます。
     
-- ユーザーの役割
+- ユーザー ロール。
     
 - オブジェクト モデルによるデジタル署名拡張。サーバーでのデジタル署名は Microsoft Internet Explorer でのみ実行される ActiveX コントロールによってサポートされます。
     
@@ -164,9 +164,9 @@ InfoPath Forms Services ではサポートされていない他の機能
     
 - メールの封筒
     
-- [Excel にエクスポート]
+- Excel へのエクスポート
     
-- **インク描画**コントロールを含むタブレット/インク機能 
+- Tablet / Ink Features including **Ink Picture** control 
     
 - 元に戻す/やり直す
     
@@ -194,11 +194,11 @@ InfoPath は、新しいマネージ コード オブジェクト モデルと�
 フォームが Web ブラウザーと InfoPath の両方で開かれたときに実行されるビジネス ロジックを書くには、新しいフォーム テンプレートを作成する際に、[ **フォーム テンプレートのデザイン**] ダイアログ ボックスで [ **ブラウザー互換の機能のみを有効にする**] チェック ボックスをオンにします。InfoPath で開かれたときにのみ追加機能を使用できるビジネス ロジックを書くには、新しいフォーム テンプレートを作成する際に [ **ブラウザー互換の機能のみを有効にする**] チェック ボックスをオフにします。この設定は、フォーム テンプレートの作成後に変更することができます。変更するには、[ **デザイン チェック**] 作業ウィンドウで [ **互換性設定の変更**] をクリックし、[ **ブラウザーまたは InfoPath で開くことができるフォーム テンプレートをデザインする**] チェック ボックスをオンまたはオフにします。ブラウザー互換フォーム テンプレートを作成する場合、InfoPath Forms Services と互換性のないクラスまたはメンバーを使用すると、コンパイラでエラーが表示されます。 
   
 > [!NOTE]
-> マネージ コードが入ったブラウザー対応フォーム テンプレートは、InfoPath Forms Services を使用する SharePoint Server 2010、または共有の場所に発行した後、そのフォーム テンプレートをアップロードし、サーバー管理者の承認を受けた後、実行できるようになります。 
+> [!メモ] マネージ コードが入ったブラウザー対応フォーム テンプレートは、InfoPath Forms Services を使用する SharePoint Server 2010、または共有の場所に発行した後、そのフォーム テンプレートをアップロードし、サーバー管理者の承認を受けた後、実行できるようになります。 
   
 [Microsoft.Office.InfoPath](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) 名前空間によって提供される InfoPath マネージ コード オブジェクト モデルの次のクラスとメンバーは、InfoPath と InfoPath Forms Services の両方でサポートされています。 
   
-|**親クラス**|**Members**|
+|**親クラス**|**メンバー**|
 |:-----|:-----|
 |[AdoQueryConnection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.AdoQueryConnection.aspx) <br/> |[BuildSqlFromXmlNodes](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.AdoQueryConnection.BuildSqlFromXmlNodes.aspx) <br/> |
 ||[Command](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.AdoQueryConnection.Command.aspx) <br/> |
@@ -240,7 +240,7 @@ InfoPath は、新しいマネージ コード オブジェクト モデルと�
 ||[EmailAttachmentType](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.EmailSubmitConnection.EmailAttachmentType.aspx) <br/> |
 ||[Execute](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.EmailSubmitConnection.Execute.aspx) <br/> |
 ||[Introduction](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.EmailSubmitConnection.Introduction.aspx) <br/> |
-||[Subject](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.EmailSubmitConnection.Subject.aspx) <br/> |
+||[件名](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.EmailSubmitConnection.Subject.aspx) <br/> |
 ||[To](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.EmailSubmitConnection.To.aspx) <br/> |
 |[Environment](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Environment.aspx) <br/> |[IsBrowser](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Environment.IsBrowser.aspx) <br/> |
 ||[IsMobile](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Environment.IsMobile.aspx) <br/> |
@@ -358,7 +358,7 @@ InfoPath は、新しいマネージ コード オブジェクト モデルと�
 > [!NOTE]
 > フォームをブラウザーで開くか InfoPath で開くかを指定する条件付きロジックを書く場合、次のオブジェクト モデル メンバーはブラウザー対応のフォーム テンプレートのコードで使用できます。 詳細については、「[実行時の環境を指定する条件付きロジックを書く方法](how-to-write-conditional-logic-that-determines-the-run-time-environment.md)」を参照してください。 
   
-|**親クラス**|**Members**|
+|**親クラス**|**メンバー**|
 |:-----|:-----|
 |[ActionType](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ActionType.aspx) <br/> |[Copy](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ActionType.Copy.aspx) <br/> |
 ||[Cut](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ActionType.Cut.aspx) <br/> |
@@ -430,12 +430,12 @@ InfoPath は、新しいマネージ コード オブジェクト モデルと�
 ||[CC](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MailEnvelope.CC.aspx) <br/> |
 ||[EmailAttachmentType](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MailEnvelope.EmailAttachmentType.aspx) <br/> |
 ||[Introduction](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MailEnvelope.Introduction.aspx) <br/> |
-||[Subject](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MailEnvelope.Subject.aspx) <br/> |
+||[件名](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MailEnvelope.Subject.aspx) <br/> |
 ||[To](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MailEnvelope.To.aspx) <br/> |
 ||[Visible](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MailEnvelope.Visible.aspx) <br/> |
 |[MergeEventArgs](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MergeEventArgs.aspx) <br/> |[CancelableArgs](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MergeEventArgs.CancelableArgs.aspx) <br/> |
 ||[Count](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MergeEventArgs.Count.aspx) <br/> |
-||[Index](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MergeEventArgs.Index.aspx) <br/> |
+||[インデックス](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MergeEventArgs.Index.aspx) <br/> |
 ||[Rollback](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MergeEventArgs.Rollback.aspx) <br/> |
 ||[Xml](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MergeEventArgs.Xml.aspx) <br/> |
 |[Permission](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Permission.aspx) <br/> |[ApplyPolicy](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Permission.ApplyPolicy.aspx) <br/> |
@@ -506,7 +506,7 @@ InfoPath は、新しいマネージ コード オブジェクト モデルと�
 ||[Spelling](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.TaskPaneType.Spelling.aspx) <br/> |
 |[User](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.User.aspx) <br/> |[IsUserMemberOf](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.User.IsUserMemberOf.aspx) <br/> |
 |[UserPermission](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermission.aspx) <br/> |[ExpirationDate](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermission.ExpirationDate.aspx) <br/> |
-||[Permission](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermission.Permission.aspx) <br/> |
+||[アクセス許可](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermission.Permission.aspx) <br/> |
 ||[Remove](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermission.Remove.aspx) <br/> |
 ||[UserId](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermission.UserId.aspx) <br/> |
 |[UserPermissionCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermissionCollection.aspx) <br/> |[Add](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermissionCollection.Add.aspx) <br/> |
@@ -584,7 +584,7 @@ InfoPath は、新しいマネージ コード オブジェクト モデルと�
 ||[UserRole](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.UserRole.aspx) <br/> |
 |[XmlFormCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlFormCollection.aspx) <br/> |[Count](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlFormCollection.Count.aspx) <br/> |
 |[XmlFormCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlFormCollection.aspx) <br/> |[GetEnumerator](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlFormCollection.GetEnumerator.aspx) <br/> |
-||[Item](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlFormCollection.Item.aspx) <br/> |
+||[アイテム](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlFormCollection.Item.aspx) <br/> |
 ||[New](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlFormCollection.New.aspx) <br/> |
 ||[New](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlFormCollection.New.aspx) <br/> |
 ||[NewFromFormTemplate](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlFormCollection.NewFromFormTemplate.aspx) <br/> |

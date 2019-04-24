@@ -1,5 +1,5 @@
 ---
-title: TimeFromParts 関数 (カスタム web アプリケーションのアクセス)
+title: timefromparts 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7f631b7e-6e3c-46dc-a05f-6a07f9a91268
 description: 指定された部分に基づいて時刻値を返します。
-ms.openlocfilehash: 55a4d1c31fdd2248e3e154d83e803d9f5a5ebb06
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8e2105140056bc65e9af0a6eda6e40fc44caed1a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304250"
 ---
-# <a name="timefromparts-function-access-custom-web-app"></a>TimeFromParts 関数 (カスタム web アプリケーションのアクセス)
+# <a name="timefromparts-function-access-custom-web-app"></a>timefromparts 関数 (Access カスタム web アプリ)
 
 指定された部分に基づいて時刻値を返します。
   
@@ -29,9 +29,9 @@ ms.locfileid: "19798743"
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *1 時間*  <br/> |時を指定する整数式。  <br/> |
-| *Minute*  <br/> |分を指定する整数式。  <br/> |
-| *Second*  <br/> |秒を指定する整数式。  <br/> |
+| *Hour*  <br/> |時を指定する整数式  <br/> |
+| *Minute*  <br/> |分を指定する整数式  <br/> |
+| *Second*  <br/> |秒を指定する整数式  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

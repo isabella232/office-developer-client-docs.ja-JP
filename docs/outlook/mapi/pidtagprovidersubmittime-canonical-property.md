@@ -12,53 +12,53 @@ api_type:
 - COM
 ms.assetid: 9e5161d9-fefe-4a12-b7f7-5600f1d2e95b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e08b56fcfea38bf65e8628acfa481716554e2c01
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c5e840250da7ba3b95150f2e83e1eb08b0c61ab5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286423"
 ---
 # <a name="pidtagprovidersubmittime-canonical-property"></a>PidTagProviderSubmitTime 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-トランスポート プロバイダーでは、その基になるメッセージング システムにメッセージが渡されるときの日時が含まれています。
+トランスポートプロバイダーが、基になるメッセージングシステムにメッセージを渡した日時を格納します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_PROVIDER_SUBMIT_TIME  <br/> |
 |識別子:  <br/> |0x0048  <br/> |
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
-|領域:  <br/> |MAPI の封筒  <br/> |
+|エリア:  <br/> |MAPI エンベロープ  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティは、メッセージの送信時に送信トランスポート プロバイダーによって設定が。
+このプロパティは、メッセージの送信時に、送信トランスポートプロバイダーによって設定されます。
   
-このプロパティは、X.400 送信エンベロープ メッセージごとの属性に対応します。 
+このプロパティは、メッセージごとの400送信エンベロープ属性に対応します。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

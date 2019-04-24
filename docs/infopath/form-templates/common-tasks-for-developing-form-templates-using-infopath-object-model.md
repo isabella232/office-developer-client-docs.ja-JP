@@ -1,23 +1,23 @@
 ---
-title: InfoPath オブジェクト モデルを使用してフォーム テンプレートを開発するための一般的なタスク
+title: InfoPath オブジェクトモデルを使用してフォームテンプレートを開発するための一般的なタスク
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- infopath 2003-compatible form templates, common tasks,form templates [InfoPath 2007], common tasks for developing 2003-compatible
+- infopath 2003 互換フォームテンプレート、共通タスク、フォームテンプレート [InfoPath 2007]、2003互換を開発するための一般的なタスク
 localization_priority: Normal
 ms.assetid: 578a38a9-b8d8-42e2-b98b-5e5bb85ebe05
 description: このトピックでは、Microsoft.Office.Interop.InfoPath.SemiTrust に対して動作するフォーム コードを使用してフォーム テンプレートを開発する際に生じる、一般的な疑問への回答をすばやく見つける手段を提供しています。
-ms.openlocfilehash: 902df2e7ca27b0d7760ac01e3f6c2a0c45cd61d5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1c5f72a3fa22cbe54b1290357aae1d2a68dff5b4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303760"
 ---
-# <a name="common-tasks-for-developing-form-templates-using-the-infopath-object-model"></a>InfoPath オブジェクト モデルを使用してフォーム テンプレートを開発するための一般的なタスク
+# <a name="common-tasks-for-developing-form-templates-using-the-infopath-object-model"></a>InfoPath オブジェクトモデルを使用してフォームテンプレートを開発するための一般的なタスク
 
-このトピックでは、 **Microsoft.Office.Interop.InfoPath.SemiTrust** に対して動作するフォーム コードを使用してフォーム テンプレートを開発する際に生じる、一般的な疑問への回答をすばやく見つける手段を提供しています。 
+このトピックでは、**Microsoft.Office.Interop.InfoPath.SemiTrust** に対して動作するフォーム コードを使用してフォーム テンプレートを開発する際に生じる、一般的な疑問への回答をすばやく見つける手段を提供しています。 
   
 ## <a name="projects-and-general-tasks"></a>プロジェクトと一般的なタスク
 
@@ -33,7 +33,7 @@ ms.locfileid: "19799088"
     
 - [[ウォークスルー] InfoPath 2003 オブジェクト モデルを使用して基本的なフォーム テンプレートを作成およびデバッグする方法](walkthrough-create-and-debug-basic-form-template-using-infopath-object-model.md)
     
-## <a name="programming-tasks"></a>プログラミング タスク
+## <a name="programming-tasks"></a>プログラミングタスク
 
 マネージ コード フォーム テンプレートをプログラミングする際によく行う作業。
   
@@ -53,7 +53,7 @@ ms.locfileid: "19799088"
     
 - [InfoPath 2003 オブジェクト モデルを使用して MSXML および System.Xml を操作する](working-with-msxml-and-system-xml-using-the-infopath-2003-object-model.md)
     
-## <a name="data"></a>データ
+## <a name="data"></a>Data
 
 データを操作する際によく行う作業。
   

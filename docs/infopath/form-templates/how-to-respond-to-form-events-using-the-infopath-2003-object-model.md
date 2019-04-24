@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 59e9c1ed-32a8-4bcd-bdfc-9aa568a34d2a
 description: ユーザーがフォームに入力する際に発生する各種イベントに応答するコードを書くことができます。InfoPath 内でイベントの作業を実行するには、InfoPath デザイン モードでイベント ハンドラーを作成します。
-ms.openlocfilehash: dff7b4f1657b7d1450d8b345521a747c0594462b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: b7347f882df991e64bdf4e76c471b1220a84dc58
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300099"
 ---
 # <a name="respond-to-form-events-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してフォーム イベントに応答する
 

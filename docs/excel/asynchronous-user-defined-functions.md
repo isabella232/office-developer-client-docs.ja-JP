@@ -6,25 +6,25 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 142eb27e-fb6f-4da3-bfb7-a88115bbb5d5
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
-ms.openlocfilehash: 5b64dfd4308da4efb5e94010fe1dc9d758a1199c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
+ms.openlocfilehash: 7fdf3bd09914981865c911fd65a78d044ad582f4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304173"
 ---
 # <a name="asynchronous-user-defined-functions"></a>非同期のユーザー定義関数
 
-**適用されます**Excel 2013 |。Office 2013 |Visual Studio 
+**適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-Microsoft Excel 2013 では、ユーザー定義関数を非同期的に呼び出すことができます。 関数を非同期的に呼び出すと、いくつかの計算を同時に実行を許可することでパフォーマンスが向上できます。 計算クラスターでユーザー定義関数を実行するときに関数の呼び出しを非同期的に計算を完了するためにいくつかのコンピューターを使用できます。
+Microsoft Excel 2013 can call user-defined functions asynchronously. Calling functions asynchronously can improve performance by allowing several calculations to run at the same time. When you run user-defined functions on a compute cluster, calling functions asynchronously enables several computers to be used to complete the calculations.
   
 ## <a name="when-to-use-asynchronous-user-defined-functions"></a>非同期のユーザー定義関数を使用する場合
 
-いくつかのユーザー定義関数は、外部リソースを待つ必要があります。 、待機中に、Excel 計算スレッドはブロックされます。 2013 年 Excel でユーザー定義関数を非同期的に実行できます。 これにより、ユーザー定義関数は待機中に他の計算を実行する計算のスレッドが解放されます。
+Some user-defined functions must wait for external resources. While they wait, the Excel calculation thread is blocked. In Excel 2013, user-defined functions can run asynchronously. This frees the calculation thread to run other calculations while the user-defined function waits.
   
-Excel 2007 では、プログラマによって実行できます複数のユーザー定義関数を同時に複数スレッドの再計算に使用されるスレッドの数を増やします。 このメソッドでは、スレッドの数は、アプリケーションを対象にした設定であり、レベルの 1 つの関数またはアドインを制御することはできませんが主な理由に欠点があります。
+In Excel 2007, programmers could run multiple user-defined functions at the same time by increasing the number of threads used in multiple-thread recalculations. This method has drawbacks primarily because the number of threads is a setting scoped to an application and cannot be controlled at the level of a single function or an add-in.
   
 �֐����O�����\�[�X��҂K�v������ꍇ�A�v���O���}�[�͔񓯊��̃��[�U�[��`�֐��̌Ăяo����g�p����K�v������܂��B���Ƃ��΁A�C���^�[�l�b�g��� SOAP �v���𑗐M����֐��́A�l�b�g���[�N�ŗv�����z�M����A�����[�g �T�[�o�[�ŗv�����������A�l�b�g���[�N�Ō��ʂ��Ԃ����̂�҂K�v������܂��B���̏ꍇ�A�d�v�ȃR���s���[�e�B���O�͔��������AExcel �ő��̌v�Z��p�����čs�����Ƃ��ł��܂��B
   
@@ -33,16 +33,16 @@ Excel 2007 では、プログラマによって実行できます複数のユー
 > [!NOTE]
 > [!����] ���[�U�[��`�֐��́A�񓯊��ƃN���X�^�[ �Z�[�t�̗����Ƃ��ēo�^���邱�Ƃ͂ł��܂���B 
   
-## <a name="writing-an-asynchronous-user-defined-function"></a>非同期のユーザー定義関数の記述
+## <a name="writing-an-asynchronous-user-defined-function"></a>非同期のユーザー定義関数を作成する
 
-非同期のユーザー定義関数はハンドルを追跡し、Excel に関数の呼び出しが完了したことを通知する際にそのハンドルを使用する必要があります。非同期のユーザー定義関数は 2 つの部分に分割されます。最初の部分は標準の UDF エントリ ポイントです。これにより、2 番目の別の非同期操作が開始されます。Excel へのコールバックは、UDF エントリ ポイントの間に行う必要があります。その後、関数の最初の開始部分では、その計算スレッドの制御を Excel に返し、Excel によって計算が継続されます。2 番目の非同期操作が完了すると、Excel にコールバックして結果を Excel に提供する必要があります。  
+Asynchronous user-defined functions must keep track of a handle and use that handle when informing Excel that the function call is finished. An asynchronous user-defined function is split into two pieces. The first piece is the standard UDF entry point, which will launch a second, separate asynchronous operation. Callbacks into Excel should be made during the UDF entry point. The first launching portion of the function will then return control of its calculation thread to Excel, which will continue calculation. When the second asynchronous operation is complete, it must call back into Excel and provide Excel with its result. 
   
 > [!NOTE]
 > [!����] �񓯊������ŕK�v�� UDF �ɓn���ꂽ���ׂĂ̈����ɂ��ẮAUDF �G���g�� �|�C���g���Ԃ��ꂽ�Ƃ��� Excel �������̈����������邽�߁A�֐��̏ڍׂ��R�s�[����Ȃ���΂Ȃ�܂���B 
   
 Excel �ł́A�񓯊��� UDF �Ăяo���̃��C�t �T�C�N����Ǘ����邽�߁AXLL �A�h�C�����g�����Ƃ̂ł���C�x���g�̃Z�b�g���񋟂���܂��B�����̃C�x���g�́AExcel �ł̌v�Z�������������A�v�Z���������ꂽ��������܂��B
   
-### <a name="declaring-an-asynchronous-function"></a>非同期関数を宣言します。
+### <a name="declaring-an-asynchronous-function"></a>非同期関数を宣言する
 
 �񓯊��̃��[�U�[��`�֐��̓o�^���ɁA�����񓯊��Ƃ��Đ錾����K�v������܂��B����́AXLOPER12 �\�� (�o�^�^�C�v�̕������ "X" �ƕ\�������) ��|�C���g����p�����[�^�[�� UDF �p�����[�^�[�̈ꗗ�̔C�ӂ̏ꏊ�ɒǉ����邱�Ƃɂ���Ď��s����܂��BExcel �ł́A���̃p�����[�^�[��g�p���Ĕ񓯊��̌Ăяo���n���h����n���܂��BXLL �A�h�C���́A�񓯊��̌Ăяo���n���h���ƁA�֐��̌��ʂ̏������ł����炻�̌��ʂ� Excel �ɓn���K�v������܂��B����ɁAUDF �̖߂�l�̌^�́A������^�̍ŏ��̕����Ƃ��� ">" �ɂ���Ďw�肳��� **void** �łȂ���΂Ȃ�܂���BUDF �̓��������� Excel �ɒl��Ԃ��Ȃ����߁A�߂�l�̌^�� void �ł��B����ɁAXLL �A�h�C�����R�[���o�b�N�ɂ���Ēl��񓯊��ŕԂ��܂��B 
   
@@ -57,17 +57,17 @@ void MyAsyncUDF(LPXLOPER12 arg1, LPXLOPER12 pxAsyncHandle)
 }
 ```
 
-### <a name="returning-values"></a>値を返す
+### <a name="returning-values"></a>戻り値
 
 �񓯊��̌Ăяo���̌��ʂ̏������ł�����A�^ [xlAsyncReturn](xlasyncreturn.md) �̃R�[���o�b�N����s���邱�Ƃɂ���� XLL �A�h�C���͂��̌��ʂ� Excel �ɕԂ��܂��B
   
 **xlAsyncReturn** �́A�Čv�Z���Ɍv�Z�ȊO�̃X���b�h�Ɏg�p�ł���B��̃R�[���o�b�N�ł��B���������āA�񓯊��� UDF �̔񓯊������ő��̃R�[���o�b�N�͎��s���Ȃ��ł��������B 
   
-### <a name="handling-events"></a>イベントの処理
+### <a name="handling-events"></a>イベントを処理する
 
-Excel 2010 �ȍ~�AXLL �͔񓯊��֐��̃��C�t �T�C�N����Ǘ����邽�߂ɐ݌v���ꂽ�C�x���g���M�ł��܂��B�ڂ����́A�u[�C�x���g�̏���](handling-events.md)�v��������������B
+Excel 2010 以降では、xlls は非同期関数のライフサイクルを管理するように設計されたイベントを受け取ることができます。 詳しくは、「[イベントの処理](handling-events.md)」をご覧ください。
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
-- [Excel XLL �̊J��](developing-excel-xlls.md)
+- [Excel XLL の開発](developing-excel-xlls.md)
 

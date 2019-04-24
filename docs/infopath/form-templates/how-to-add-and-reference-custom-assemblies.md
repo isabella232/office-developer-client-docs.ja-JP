@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 20e1f43e-8279-48fc-8f34-16a2729dbc9b
 description: マネージ コードのフォーム テンプレート プロジェクトでカスタム アセンブリへの参照を追加すると、プロジェクトをコンパイルおよび発行したときに、そのアセンブリがフォーム テンプレート ファイル (.xsn) に含められます。
-ms.openlocfilehash: e182930ebe14b6f64d1b90509fe400cc1fb1b26e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 19b5f06231bb03cfac8b32b157e03956b5fc334e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303662"
 ---
 # <a name="add-and-reference-custom-assemblies"></a>カスタム アセンブリを追加および参照する
 
@@ -29,7 +29,7 @@ InfoPath プロジェクト システムがフォーム テンプレート フ�
 
 1. Visual Studio 2012 でフォーム テンプレート プロジェクトを開きます。
     
-2. [ **プロジェクト**] メニューで、[ **参照の追加**] をクリックします。
+2. [ **プロジェクト**] メニューの [ **参照の追加**] をクリックします。
     
 3. [ **参照**] タブで、アセンブリを探して選択し、[ **OK**] をクリックして参照を追加します。 
     

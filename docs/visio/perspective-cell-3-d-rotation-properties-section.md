@@ -6,27 +6,27 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: e07d97a4-9896-4b88-9e76-5a1b3f133094
-description: 度 (0 359.9) で、面内の回転の遠近の角度を決定します。
-ms.openlocfilehash: 6ab087b07dceda6e8f02a3ddb49a50d6159366d4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 遠近回転の遠近の角度を指定します。角度は° (0 ~ 359.9) を指定します。
+ms.openlocfilehash: 4cbefc2fa147a418fa792542e1dc57c39ab2490c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307771"
 ---
 # <a name="perspective-cell-3-d-rotation-properties-section"></a>[Perspective] セル ([3-D 回転のプロパティ] セクション)
 
-度 (0 359.9) で、面内の回転の遠近の角度を決定します。
+遠近回転の遠近の角度を指定します。角度は° (0 ~ 359.9) を指定します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**セル**要素の**N**属性の値によって、別の数式または**CellsU**プロパティを使用したプログラムから、名前によって**透視投影**] セルへの参照を取得、次のように使用します。 
+別の数式から、 **cell**要素の**N**属性の値によって、または**CellsU**プロパティを使用したプログラムから、名前によって [ **Perspective** ] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |パースペクティブ  <br/> |
+|セル名:  <br/> |Perspective  <br/> |
    
-プログラムから、インデックスによって [**分析観点**] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ **Perspective** ] セルへの参照を取得するには、 **CellsSRC**プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

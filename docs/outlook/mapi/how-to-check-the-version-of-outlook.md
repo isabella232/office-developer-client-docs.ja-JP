@@ -1,5 +1,5 @@
 ---
-title: Outlook のバージョンを確認します。
+title: Outlook のバージョンを確認する
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -7,13 +7,13 @@ localization_priority: Normal
 ms.assetid: 672fc380-a29b-4e99-9211-949fd5065723
 description: '�ŏI�X�V��: 2015�N12��7��'
 ms.openlocfilehash: 0a24ae43c84a0631f355a4d7d8dc98a76519563b
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32298475"
 ---
-# <a name="check-the-version-of-outlook"></a>Outlook のバージョンを確認します。
+# <a name="check-the-version-of-outlook"></a>Outlook のバージョンを確認する
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
@@ -172,7 +172,7 @@ Error:
 
 ```
 
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
-- [MAPI �v���O���~���O�̊T�v](mapi-programming-overview.md)
+- [MAPI プログラミングの概要](mapi-programming-overview.md)
 

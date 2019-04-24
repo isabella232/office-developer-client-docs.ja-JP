@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: ab66e26d-74ee-4211-b387-1385183a6803
 description: InfoPath のマネージ コード フォーム テンプレートのフォーム コードは、共通言語ランタイム (CLR) の下で実行されるアセンブリとしてコンパイルされます。これは、フォーム コードを変更するときには、常に、Visual Studio 2012 でプロジェクトを開き、コード エディターで編集し、フォーム テンプレートを再コンパイルして、フォーム テンプレートを再展開する必要があることを意味します。さらに、マネージ コード フォーム テンプレートのプライベート アセンブリは、ホストされる CLR アプリケーション ドメインで実行されるので、完全な信頼を必要とするフォームのセキュリティ設定は、完全な信頼を必要としないフォーム テンプレートとは若干異なります。
-ms.openlocfilehash: 56af865a80df75c7e1d973767066a03310cdde1e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: ba3629e786a224ea950e78bbec9a9fe94d4499de
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303627"
 ---
 # <a name="deploy-infopath-form-templates-with-code"></a>コードを含む InfoPath フォーム テンプレートを展開する
 
@@ -51,7 +51,7 @@ InfoPath のマネージ コード フォーム テンプレートのフォー�
     
 7. [ **発行**] タブをクリックし、目的の発行場所のボタンをクリックします。 
     
-8. フォーム テンプレートがコンパイルされ、**発行ウィザード**が開始されます。 **発行ウィザード**の手順に従って、フォーム テンプレートを展開します。 **発行ウィザード**を使用して、完全な信頼を必要とするフォーム テンプレートを展開する方法の詳細については、InfoPath のヘルプで「完全信頼のフォーム テンプレートを発行する」を参照してください。 
+8. The form template is compiled and the **Publishing Wizard** is launched. Follow the steps in the **Publishing Wizard** to deploy your form template. For more information about using the **Publishing Wizard** to deploy a form template that requires full trust, search InfoPath Help for "Publish a form template with full trust". 
     
  **メモ**
 - フォームにデジタル署名するには、認証されたコード署名用の証明書がコンピューターにインストールされている必要があります。この証明書を取得するには、認証機関またはネットワーク管理者に問い合わせてください。
@@ -71,7 +71,7 @@ InfoPath マネージ コード フォーム テンプレートで実行され�
     
 2. Visual Studio 2012 コード エディターで作業している場合は、InfoPath に切り替えて、[ **ファイル**] タブをクリックし、[ **発行**] をクリックして、目的の発行場所のボタンをクリックします。
     
-    フォーム テンプレートがコンパイルされ、**発行ウィザード**が開始されます。 **発行ウィザード**の手順に従って、フォーム テンプレートを展開します。 **発行ウィザード**を使用する方法の詳細については、InfoPath のヘルプで「フォーム テンプレートを発行する」を参照してください。
+    The form template is compiled and the **Publishing Wizard** is launched. Follow the steps in the **Publishing Wizard** to deploy your form template. For more information about using the **Publishing Wizard**, search InfoPath Help for "Publish a form template".
     
 3. 「[コードを含むフォーム テンプレートのセキュリティ設定を構成する](how-to-configure-security-settings-for-form-templates-with-code.md)」の「特定の URL または UNC にあるフォームに FullTrust を割り当てる」で説明している手順を実行します。
     

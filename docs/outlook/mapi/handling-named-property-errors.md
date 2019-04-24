@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: f56c56d8-db46-4c69-876f-2bbb4a5c1185
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f6c12973a3ee2f9842e74f6f01b94553659dc1ad
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 98b6adbc3a31994768a78b389e16eb3a6ece34bd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299371"
 ---
 # <a name="handling-named-property-errors"></a>名前付きプロパティのエラーの処理
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)�܂���[IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md)�傫�����鏈�����������悤�ɗv������ꍇ�A�G���[�l MAPI_E_TOO_BIG ���Ԃ���܂��B���M�҂ɉ�������K�v������܂��A�o�Ȉ˗��ɕ����A�������̈˗��A���[�v�œK�؂ȃ��\�b�h���܂��B 
   
@@ -33,7 +33,7 @@ ms.locfileid: "22583310"
     
 - 0 �� **MAPINAMEID**�\���̐��̓�e��ݒ肵�܂��B 
     
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 - [MAPI ���O�t���v���p�e�B](mapi-named-properties.md)
 

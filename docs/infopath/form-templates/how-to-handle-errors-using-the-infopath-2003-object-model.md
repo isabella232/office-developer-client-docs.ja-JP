@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: eeb05205-d6f4-4931-b9a9-55a663bb1a25
 description: カスタム アプリケーションを作成する際、開発者はしばしばエラー ハンドリングを行わなければなりません。これには、アプリケーションで発生したエラーをチェックするプログラム コードや、カスタム エラーを作成して発生させるプログラム コードの記述などの作業が伴います。InfoPath 2003 互換オブジェクト モデルでは、ErrorObject オブジェクトと ErrorsCollection コレクションを組み合わせて使用することによるエラー ハンドリングがサポートされています。
-ms.openlocfilehash: 577e531d8943dc8fc3884cd81f68b11ca285c5d3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 93991e33d8867f89454bec08b41ba83e98ab0a17
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300127"
 ---
 # <a name="handle-errors-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してエラーを処理する
 
@@ -25,7 +25,7 @@ InfoPath では、フォームに入力されたデータが XML スキーマ検
 
 **ErrorsCollection** コレクションには、次のメソッドとプロパティがあります。フォームの開発者は、これらを使用することにより、コレクションに含まれている **ErrorObject** オブジェクトを管理できます。 
   
-|**名前**|**説明**|
+|**[名前]**|**[説明]**|
 |:-----|:-----|
 |[Add](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Errors.Add.aspx) メソッド  <br/> |**ErrorObject** オブジェクトを作成し、それをコレクションに追加します。  <br/> |
 |[Delete](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Errors.Delete.aspx) メソッド  <br/> |指定した XML ノードと条件名に関連付けられている、 **ReportError** メソッドを使用して追加したカスタム エラー以外のすべての **ErrorObject** オブジェクトを削除します。  <br/> |
@@ -37,7 +37,7 @@ InfoPath では、フォームに入力されたデータが XML スキーマ検
 
 **ErrorObject** オブジェクトには、次のプロパティがあります。フォームの開発者は、これらを使用することにより、発生したエラーに関する情報にアクセスできます。 
   
-|**名前**|**説明**|
+|**[名前]**|**[説明]**|
 |:-----|:-----|
 |[ConditionName](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Error.ConditionName.aspx) プロパティ  <br/> |**ErrorObject** オブジェクトの型に応じて、エラー条件の名前を取得するか、または **null** を返します。  <br/> |
 |[DetailedErrorMessage](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Error.DetailedErrorMessage.aspx) プロパティ  <br/> |**ErrorObject** オブジェクトの詳細なエラー メッセージを取得または設定します。  <br/> |

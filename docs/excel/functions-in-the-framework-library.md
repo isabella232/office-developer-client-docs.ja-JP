@@ -1,5 +1,5 @@
 ---
-title: フレームワーク ライブラリの関数
+title: �t���[�����[�N ���C�u�����̊֐�
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,12 +9,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 7d9a13fd-9a4c-423e-bb08-4a5be57c7905
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 1d3878e376f95be3b277f1bb1a59545eb0a631ac
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 4eeb9e5db09592e98e9afb763efaa6be18eb2f7e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304054"
 ---
 # <a name="functions-in-the-framework-library"></a>フレームワーク ライブラリの関数
 

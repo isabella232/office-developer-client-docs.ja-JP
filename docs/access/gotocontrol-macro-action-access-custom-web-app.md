@@ -7,19 +7,19 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 6c286821-67d6-4d96-973a-bca7934c7672
 description: GoToControl アクションを使用すると、開いているビューの現在のレコード内で指定したコントロールにフォーカスを移動できます。
-ms.openlocfilehash: ec156d1eb6c510ee38c0268a7b0f51bdde80f887
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 2368933a6277615554a565d3bdd973f7d1f366f8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302577"
 ---
 # <a name="gotocontrol-macro-action-access-custom-web-app"></a>GoToControl マクロ アクション (Access カスタム Web アプリ)
 
 **GoToControl** アクションを使用すると、開いているビューの現在のレコード内で指定したコントロールにフォーカスを移動できます。 
   
 > [!IMPORTANT]
-> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/ja-JP/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 ## <a name="setting"></a>設定
 

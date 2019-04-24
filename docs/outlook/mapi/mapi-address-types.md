@@ -7,32 +7,32 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: eee97982-29be-4dcf-ae11-8a38f0080ea7
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 80e933f5723746dbaeb39271cc813eb0ea56a705
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: b0ff4ecff7a6e834f1e017adc11244657896db03
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32298013"
 ---
 # <a name="mapi-address-types"></a>MAPI アドレスの種類
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージングのすべてのユーザーは、アドレスの種類、 **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) のプロパティに格納されているユーザーのアドレスの形式を記述する文字の文字列に関連付けられます。 アドレスの種類は、アドレスの形式にマップします。 受信者のアドレスの種類を見ると、により、クライアント アプリケーションは、受信者に適切なアドレスの書式を設定する方法を決定できます。 
+すべてのメッセージングユーザーは、 **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) プロパティに格納されているユーザーのアドレスの形式を示す文字列であるアドレスの種類に関連付けられています。 アドレスの種類は、アドレス形式にマップされます。 つまり、受信者のアドレスの種類を調べることで、クライアントアプリケーションは受信者に適したアドレスを書式設定する方法を判断できます。 
   
-などの`SMTP`のアドレスの種類は、標準的なインターネット アドレスを指定します。 
+たとえば、アドレスの`SMTP`種類は標準のインターネットアドレスを指定します。 
   
  `username@companyname.com.`
   
-`EX`のアドレスの種類は、Exchange Server のアドレスを指定します。 
+そして、アドレス`EX`の種類は、Exchange サーバーのアドレスを指定します。 
   
-すべてのアドレス帳のエントリには、有効なアドレスの種類が必要です。 クライアントでは、ユーザーのカスタム受信者のアドレス帳プロバイダーでサポートされていない型を作成するときに、アドレスの種類を指定する必要があります。 、それらをサポートしているエントリのアドレス帳プロバイダーは、有効なアドレスの種類を指定する必要があります。 
+すべてのアドレス帳エントリには、有効なアドレスの種類を指定する必要があります。 クライアントは、アドレス帳プロバイダーによってサポートされていない種類のカスタム受信者を作成するときに、ユーザーにアドレスの種類を指定するよう要求します。 サポートされているエントリについては、アドレス帳プロバイダーが有効なアドレスの種類を提供する必要があります。 
   
-MAPI のみ 1 つのアドレスの種類を定義する: MAPIPDL は、個人用配布リストを意味します。
+MAPI では、個人用配布リストを表すアドレスの種類として、mapipdl が1つだけ定義されています。
   
-セッションのすべてのトランスポート プロバイダーによってサポートされているアドレスの種類の一覧を取得するには、クライアント アプリケーションは、 **IMAPISession::EnumAdrTypes**メソッドを呼び出します。 詳細については、 [IMAPISession::EnumAdrTypes](imapisession-enumadrtypes.md)を参照してください。
+セッション内のすべてのトランスポートプロバイダーでサポートされているアドレスの種類の一覧を取得するために、クライアントアプリケーションは**imapisession:: enumadrtypes**メソッドを呼び出します。 詳細については、「 [imapisession:: enumadrtypes](imapisession-enumadrtypes.md)」を参照してください。
   
 

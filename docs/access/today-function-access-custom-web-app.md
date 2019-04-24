@@ -1,5 +1,5 @@
 ---
-title: Today 関数 (カスタム web アプリケーションのアクセス)
+title: Today 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 8dbcb871-e133-4c98-91bd-b3a00b93bc0b
 description: アプリケーションで定義されたタイムゾーンに従って、現在の日付型の値を返します。
-ms.openlocfilehash: b124fea303331a0e29a8bae10c812493a1307d81
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 46acc3776653d7b37b2c73776a0caec3e480e551
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307848"
 ---
-# <a name="today-function-access-custom-web-app"></a>Today 関数 (カスタム web アプリケーションのアクセス)
+# <a name="today-function-access-custom-web-app"></a>Today 関数 (Access カスタム web アプリ)
 
 アプリケーションで定義されたタイムゾーンに従って、現在の日付型の値を返します。
   
@@ -25,8 +25,8 @@ ms.locfileid: "19798747"
 
  **Today** () 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**Now** 関数はこの関数と似ていますが、正確な時刻を返します。一方、 **Today** は、すべての日付で時刻値 12:00:00 PM を返します。 
+**Now** 関数はこの関数と似ていますが、正確な時刻を返します。一方、**Today** は、すべての日付で時刻値 12:00:00 PM を返します。 
   
 

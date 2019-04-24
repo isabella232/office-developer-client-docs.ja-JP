@@ -1,5 +1,5 @@
 ---
-title: Rand 関数 (カスタム web アプリケーションのアクセス)
+title: Rand 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6390b325-025e-4546-bb19-1cd1c45ceb5a
 description: 0 ～ 1 の擬似ランダム数を返します。
-ms.openlocfilehash: ed0f9991b2b1d9553d6d45524d6b1e4e5321ea7e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 02d914de9d74083a6ebf76f6d0e556fe51954a24
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307995"
 ---
-# <a name="rand-function-access-custom-web-app"></a>Rand 関数 (カスタム web アプリケーションのアクセス)
+# <a name="rand-function-access-custom-web-app"></a>Rand 関数 (Access カスタム web アプリ)
 
 0 ～ 1 の擬似ランダム数を返します。
   
@@ -23,15 +23,15 @@ ms.locfileid: "19798718"
   
 ## <a name="syntax"></a>構文
 
- **Rand 関数**(以下 [*シード*]) 
+ **Rand** ( [  *Seed*  ]) 
   
 **Rand** 関数の引数は次のとおりです。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *Seed*  <br/> |シード値を示す整数式です。 *シード*を指定しない場合は、シード値がランダムに割り当てられます。  <br/> |
+| *Seed*  <br/> |シード値を提供する整数式。 *seed*が指定されていない場合は、シード値がランダムに割り当てられます。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 同じシードを使用して **Rand** 関数を繰り返して呼び出した場合、同じ結果が返されます。 
   

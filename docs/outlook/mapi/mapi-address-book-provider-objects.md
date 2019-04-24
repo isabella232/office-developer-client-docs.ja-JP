@@ -1,5 +1,5 @@
 ---
-title: MAPI アドレス帳プロバイダー オブジェクト
+title: MAPI アドレス帳プロバイダーオブジェクト
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,25 +7,25 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 2fcff3b3-01e7-4758-9c49-0af41abf0d6b
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2963e65f97534cbba368b909fef79c982e81ec26
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: e7e4ef528716f05d198862afa61947fd3993042d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32298165"
 ---
-# <a name="mapi-address-book-provider-objects"></a>MAPI アドレス帳プロバイダー オブジェクト
+# <a name="mapi-address-book-provider-objects"></a>MAPI アドレス帳プロバイダーオブジェクト
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-標準プロバイダーとログオン オブジェクトでは、他は、アドレス帳プロバイダーは、アドレス帳コンテナー、配布リスト、メッセージング ユーザー、テーブル、オブジェクトの状態、および制御を実装します。
+標準のプロバイダーおよびログオンオブジェクトに加えて、アドレス帳プロバイダーはアドレス帳コンテナー、配布リスト、メッセージングユーザー、テーブル、ステータスオブジェクト、およびコントロールを実装します。
   
-次の図は、これらのオブジェクト、対応するインターフェイス、およびそれらを使用する MAPI コンポーネントを示します。
+次の図は、これらのオブジェクト、それに対応するインターフェイス、およびそれらを使用する MAPI コンポーネントを示しています。
   
-![アドレス帳プロバイダーを実装するオブジェクト](media/amapi_64.gif "アドレス帳プロバイダーを実装するオブジェクト")
+![アドレス帳プロバイダーが実装するオブジェクト](media/amapi_64.gif "アドレス帳プロバイダーが実装するオブジェクト")
   
 ## <a name="see-also"></a>関連項目
 
-- [MAPI サービス プロバイダー オブジェクト](mapi-service-provider-objects.md)
+- [MAPI サービスプロバイダオブジェクト](mapi-service-provider-objects.md)
 

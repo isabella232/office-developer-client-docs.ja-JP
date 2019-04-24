@@ -1,19 +1,19 @@
 ---
-title: (カスタム web アプリケーションのアクセス) に等しい
+title: Equals (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 70bc707a-3a61-4d75-816d-0defd0806319
 description: 2 つの値が等しいかどうかを比較します。
-ms.openlocfilehash: efdd06a1735190d63c13c4df8230e1d29d71c1dd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8c551e3dbc057433b49bc2558e08feba5ee3d04f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308226"
 ---
-# <a name="equals-access-custom-web-app"></a>(カスタム web アプリケーションのアクセス) に等しい
+# <a name="equals-access-custom-web-app"></a>Equals (Access カスタム web アプリ)
 
 2 つの値が等しいかどうかを比較します。
   
@@ -30,7 +30,7 @@ ms.locfileid: "19798593"
   
 ## <a name="return-type"></a>戻り値の型
 
-**ブール型 (Boolean)**
+**Boolean**
   
 ## <a name="remarks"></a>注釈
 

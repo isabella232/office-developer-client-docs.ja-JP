@@ -4,11 +4,11 @@ description: カスタム作業ウィンドウなどの Office ソリューシ�
 ms.date: 03/09/2019
 localization_priority: Normal
 ms.openlocfilehash: 0425e5e9dd0f060a6336888cfe6c236b39732080
-ms.sourcegitcommit: 18f3d9462048859fe040e12136ff66f19066764b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31980468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301748"
 ---
 # <a name="handle-high-dpi-and-dpi-scaling-in-your-office-solution"></a>Office ソリューションでの高 DPI と DPI スケーリングの処理
 

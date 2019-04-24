@@ -1,5 +1,5 @@
 ---
-title: MAPI プロパティのエラーを処理します。
+title: MAPI プロパティのエラーの処理
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,31 +7,31 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 23d68d8b-b0b6-4c32-8404-6acd23802db0
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 82f37e2a6f6834c7a8553a3d9d364f7e657d81da
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 1dc676101d4c39544c9dd1fae94000db9963ea02
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299391"
 ---
-# <a name="handling-mapi-property-errors"></a>MAPI プロパティのエラーを処理します。
+# <a name="handling-mapi-property-errors"></a>MAPI プロパティのエラーの処理
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 �S�ʓI�Ɏ��s�����܂��͐��������ꍇ�́A����ɂ́A���� **IMAPIProp**���@�́A�����I�Ȑ�����񍐂��܂��B 
   
 [GetProps](imapiprop-getprops.md)
   
-[SetProps](imapiprop-setprops.md)
+[setprops による](imapiprop-setprops.md)
   
-[DeleteProps](imapiprop-deleteprops.md)
+[deleteprops](imapiprop-deleteprops.md)
   
 [CopyTo](imapiprop-copyto.md)
   
-[CopyProps](imapiprop-copyprops.md)
+[copyprops](imapiprop-copyprops.md)
   
-**GetProps**は、少なくとも 1 つのオブジェクトに対して要求されたプロパティを取得できる場合に、部分的な成功を報告します。 **GetProps**は、MAPI_W_ERRORS_RETURNED の警告を返すと、 **lppPropArray**パラメーターで指定されたプロパティ値の配列で使用できないプロパティについての情報を配置することによって、部分的な成功を示します。 このアレイ上で使用できないプロパティのエントリには、**値**メンバーの**ulPropTag**メンバーと MAPI_E_NOT_FOUND またはその他の適切なエラー値のプロパティの型の PT_ERROR が含まれています。 たとえば、クライアントは、次の 3 つのプロパティを取得するために、フォルダーの**GetProps**メソッドを呼び出すし、3 番目では、メッセージ ストア プロバイダーは、PT_ERROR にプロパティの値の配列の 3 番目のプロパティの型と 3 番目の MAPI_E_NOT_FOUNDプロパティの値です。 
+**GetProps** reports partial success when it can retrieve at least one of the requested properties for an object. **GetProps** indicates partial success by returning the warning MAPI_W_ERRORS_RETURNED and placing information about the unavailable properties in the property value array pointed to by the **lppPropArray** parameter. An unavailable property's entry in this array contains PT_ERROR for the property type in the **ulPropTag** member and MAPI_E_NOT_FOUND or another appropriate error value for the **Value** member. For example, if a client calls a folder's **GetProps** method to retrieve three properties and the third is unavailable, the message store provider places PT_ERROR in the third property type in the property value array and MAPI_E_NOT_FOUND in the third property value. 
   
 **IMAPIProp**���̕��@�ł́A�قȂ镔���I�Ȑ�����񍐂��܂��B�����̕��@�ł́AS_OK ��Ԃ�[SPropProblemArray](spropproblemarray.md)�\����̃G���[����z�u���ĕ����I�Ȑ�����񍐂��܂��B���\�b�h�̐����܂��͎��s�������ǂ����Ɋ֌W�Ȃ��f�[�^���܂܂�� **GetProps**�̃v���p�e�B�l�̔z��Ƃ͈قȂ�A���M�҂ɂ́A�G���[�ɂ��Ċw�K���o�^����Ă���ꍇ�ɂ̂݁A�G���[������ꍇ�ɂ݂̂����̕��@�Ńv���p�e�B�̖��̔z�񂪑��݂��܂��B���M�҂ɂ́A�G���[����o�^����L���� **SPropProblemArray**�|�C���^�[��w�肷��K�v������܂��B 
   

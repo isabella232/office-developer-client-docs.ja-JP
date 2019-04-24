@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: da604c72-c760-4aa3-9574-d59c392753df
 description: InfoPath 2003 互換オブジェクト モデルには、InfoPath アプリケーションに関する情報 (フォームの基になる XML ドキュメント、フォーム定義ファイル (.xsf) などに関する情報) へのアクセスに使用できるオブジェクトとコレクションがあります。これらのデータには、InfoPath オブジェクト モデルの階層構造の最上位レベルにあるオブジェクトを通じてアクセスします。これらのオブジェクトは、Application インターフェイスを通じてインスタンス化されます。
-ms.openlocfilehash: e9cf01ff2ffa939fce5af277e756e679478f8b39
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 849882a97109d91a5807a6798d5a62457ab971fd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303683"
 ---
 # <a name="access-application-data-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してアプリケーション データにアクセスする
 

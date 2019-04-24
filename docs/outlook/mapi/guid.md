@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: e3608c47-06be-4476-a6ef-060fac252387
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 94bafdf0ca84fa31a7df2f022265d5d5d1a99a37
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 12c50ab5936d7fffd364c276ba07ca69d3459ae7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299518"
 ---
 # <a name="guid"></a>GUID
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-グローバル一意識別子 (GUID) をについて説明します。 
+グローバル一意識別子 (GUID) を記述します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiguid.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapiguid. .h  <br/> |
    
 ```cpp
 typedef struct _GUID
@@ -46,35 +46,35 @@ typedef struct _GUID
 
  **Data1**
   
-> 符号なし長整数型のデータの値の場合です。
+> 符号なしの長整数型 (long) のデータ値。
     
  **Data2**
   
-> 符号なし短整数データの値。
+> 符号なし short 整数型のデータ値。
     
  **Data3**
   
-> 符号なし短整数データの値。
+> 符号なし short 整数型のデータ値。
     
  **Data4**
   
 > 符号なしの文字の配列。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
- **GUID**構造体は、次のようの MAPI で使用されます。 
+ **GUID**構造は、次のように MAPI で使用されます。 
   
-- [MAPIUID](mapiuid.md)構造体でサービス プロバイダーを一意に識別します。 
+- [MAPIUID](mapiuid.md)構造で、サービスプロバイダーを一意に識別します。 
     
-- インターフェイス識別子です。
+- インターフェイス識別子の場合。
     
-- プロパティには、名前付きプロパティの名前を設定します。 
+- プロパティの名前付きプロパティのセット。 
     
-メッセージ ストアとアドレス帳プロバイダーは、 **MAPIUID**構造体で使用する**GUID**構造体を生成します。 結果として得られる**MAPIUID**を[IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md)に渡すことによっては、これらのサービス プロバイダーは、その一意の識別子の MAPI を通知します。
+メッセージストアプロバイダーとアドレス帳プロバイダーは、 **MAPIUID**構造で使用する**GUID**構造を生成します。 結果の**MAPIUID**を[imapisupport:: setprovideruid](imapisupport-setprovideruid.md)に渡すことにより、これらのサービスプロバイダーは、一意の識別子を MAPI に通知します。
   
-また、Microsoft リモート プロシージャ コール (RPC) およびオブジェクトの説明言語 (ODL) の実装に使用されます。 これらの使用の詳細については、の*Microsoft RPC プログラマーズ ガイドと参照*、 *OLE プログラマ リファレンス*、および*内部 OLE*、*第 2 版*を参照してください。 
+また、Microsoft リモートプロシージャコール (RPC) およびオブジェクト記述言語 (ODL) の実装でも使用されます。 これらの使用の詳細については、「 *Microsoft RPC プログラマーズガイドとリファレンス*」、「 *ole プログラマーズリファレンス*」、および「 *ole*、 *Second Edition* 」を参照してください。 
   
-**GUID**構造体は、 *Win32 プログラマーズ リファレンス*で定義されます。 MAPI ヘッダー ファイル Mapiguid.h には、MAPI 内で使用する**GUID**構造体の特定の値が定義されています。 
+**GUID**構造は、 *Win32 プログラマーズリファレンス*で定義されています。 mapi 内で使用される**GUID**構造の特定の値は、mapi ヘッダーファイルの mapiguid で定義されます。 
   
 ## <a name="see-also"></a>関連項目
 

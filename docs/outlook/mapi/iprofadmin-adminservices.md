@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 87235fd2-6527-41a1-98ba-b951632a1c81
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a9e596ff8561d5aabc71ffe3540efaeef8f5b83d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2c504f98655e35af62810dd428e8e04878a36dec
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309598"
 ---
 # <a name="iprofadminadminservices"></a>IProfAdmin::AdminServices
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロファイル内のメッセージ サービスを変更する場合、メッセージ サービスの管理オブジェクトへのアクセスを提供します。
+プロファイル内のメッセージサービスに変更を加えるためのメッセージサービス管理オブジェクトへのアクセスを提供します。
   
 ```cpp
 HRESULT AdminServices(
@@ -39,73 +39,73 @@ HRESULT AdminServices(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpszProfileName_
+ _lpszprofilename_
   
-> [in]変更するプロファイルの名前へのポインター。 _LpszProfileName_パラメーターを NULL にする必要がありますはできません。 
+> 順番変更するプロファイルの名前へのポインターを指定します。 _lpszprofilename_パラメーターを NULL にすることはできません。 
     
- _lpszPassword_
+ _lpszpassword_
   
-> [in]常に NULL を返します。 
+> 順番常に NULL。 
     
- _ulUIParam_
+ _uluiparam_
   
-> [in]すべてのダイアログ ボックスの親ウィンドウまたはこのメソッドを表示するウィンドウのハンドルです。
+> 順番このメソッドが表示する任意のダイアログボックスまたはウィンドウの親ウィンドウのハンドル。
     
  _ulFlags_
   
-> [in]メッセージ サービスの管理オブジェクトの検索を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番メッセージサービス管理オブジェクトの取得を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_DIALOG 
   
-> ユーザー インターフェイスの表示を有効にします。 
+> ユーザーインターフェイスの表示を有効にします。 
     
 MAPI_UNICODE 
   
-> プロファイル名は、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の名前です。
+> プロファイル名が Unicode 形式である。 MAPI_UNICODE フラグが設定されていない場合、名前は ANSI 形式になります。
     
- _lppServiceAdmin_
+ _lppserviceadmin_
   
-> [out]メッセージ サービス管理オブジェクトへのポインターへのポインター。
+> 読み上げメッセージサービス管理オブジェクトへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> メッセージ サービスの管理オブジェクトが正常に返されました。
+> メッセージサービス管理オブジェクトが正常に返されました。
     
 MAPI_E_LOGON_FAILED 
   
-> 指定されたプロファイルが存在しないまたはパスワードが間違っていたし、 _ulFlags_で MAPI_DIALOG が設定されていないために、正しいパスワードを要求するユーザーに、ダイアログ ボックスを表示できませんでした。
+> 指定されたプロファイルが存在しないか、またはパスワードが正しくないため、ユーザーに正しいパスワードを要求するためにダイアログボックスを表示できませんでした。 MAPI_DIALOG が_ulflags_で設定されていませんでした。
     
 MAPI_E_USER_CANCEL 
   
-> ユーザー操作がキャンセルされました、通常ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 
+> ユーザーが操作をキャンセルしました。通常は、ダイアログボックスの **[キャンセル**] ボタンをクリックします。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IProfAdmin::AdminServices**メソッドは、プロファイル内のメッセージ サービスの構成を変更のメッセージ サービスの管理オブジェクトへのアクセスを提供します。 
+**IProfAdmin:: adminservices**メソッドは、プロファイル内のメッセージサービスに対する構成変更を行うためのメッセージサービス管理オブジェクトへのアクセスを提供します。 
   
- _LpszPassword_パラメーターは、NULL または長さ 0 の文字列へのポインターである必要があります。 
+ _lpszpassword_パラメーターは、NULL または長さ0の文字列へのポインターである必要があります。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-[IMsgServiceAdmin](imsgserviceadminiunknown.md)ポインターを取得するには、このメソッドまたは[IMAPISession::AdminServices](imapisession-adminservices.md)のいずれか、ですが、厳密に構成のクライアントがあり、メッセージング機能を提供していない場合**IProfAdmin::AdminServices**を呼び出します。 **IProfAdmin::AdminServices**では、セッション オブジェクトを作成できませんし、読み込まれないすべてのサービス プロバイダーでは、パフォーマンスが向上します。 
+[IMsgServiceAdmin](imsgserviceadminiunknown.md)ポインターは、このメソッドまたは[imapisession:: adminservices](imapisession-adminservices.md)のいずれかを呼び出すことによって取得できますが、厳密に構成クライアントがあり、メッセージング機能を提供していない場合は、 **IProfAdmin:: adminservices**を呼び出すことができます。 **IProfAdmin:: adminservices**では、セッションオブジェクトは作成されず、サービスプロバイダーは読み込まれません。これにより、パフォーマンスが向上します。 
   
-**IProfAdmin::AdminServices**を使用して、プロファイルを作成することはできません。 したがって、 _lpszProfileName_では、既存の有効なプロファイルを指定してください。 指定されたプロファイルが存在しない場合、 **IProfAdmin::AdminServices**は MAPI_E_LOGON_FAILED を返します。 
+**IProfAdmin:: adminservices**を使用してプロファイルを作成することはできません。 そのため、 _lpszprofilename_に既存の有効なプロファイルを指定する必要があります。 指定したプロファイルが存在しない場合、 **IProfAdmin:: adminservices**は MAPI_E_LOGON_FAILED を返します。 
   
-プロファイルの名前は 64 文字までの長さにすることができ、次の文字を含めることができます。
+プロファイルの名前は最大64文字の長さにすることができ、次の文字を含めることができます。
   
-- すべての英数字文字、アクセント記号付き文字およびアンダー スコア文字を含みます。 
+- アクセント記号とアンダースコア文字を含むすべての英数字。 
     
-- 埋め込みスペースがいない先頭または末尾のスペース。
+- スペースは埋め込まれますが、先頭または末尾にスペースは含まれません。
     
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIProfileFunctions.cpp  <br/> | HrAddServiceToProfile  <br/> |MFCMAPI では、 **IProfAdmin::AdminServices**メソッドを使用して、サービスを追加するのには選択したプロファイルのメッセージ サービスの管理オブジェクトを開きます。  <br/> |
+|MAPIProfileFunctions  <br/> | hraddservicetoprofile  <br/> |mfcmapi は、 **IProfAdmin:: adminservices**メソッドを使用して、選択されたプロファイルのメッセージサービス管理オブジェクトを開き、サービスを追加します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

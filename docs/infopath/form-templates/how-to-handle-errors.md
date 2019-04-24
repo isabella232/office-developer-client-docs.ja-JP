@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 132cb698-d9a5-4767-b3d1-5dd1343a1ff4
 description: カスタム アプリケーションを作成するときに、開発者はエラー処理を行わなければならないことがよくあります。エラー処理では、アプリケーションで発生したエラーをチェックしたり、カスタム エラーを作成して発生させたりするプログラミング コードを記述します。Microsoft.Office.InfoPath 名前空間によって提供される InfoPath オブジェクト モデルでは、FormError クラスを FormErrorCollection クラスと共に使用するエラー処理がサポートされています。
-ms.openlocfilehash: 3bfad103c31d0b5364d1c75acfbb2f590f7658bb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 30cf649188b7e4cbc35469d2a50540bb13ecb38d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303606"
 ---
 # <a name="handle-errors"></a>エラーを処理する
 
@@ -33,7 +33,7 @@ InfoPath では、次のような場合にエラーが発生する可能性が�
 
 [FormErrorCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorCollection.aspx) クラスには、次のメソッドとプロパティがあります。フォームの開発者は、これらを使用することにより、コレクションに含まれている [FormError](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormError.aspx) オブジェクトを管理できます。 
   
-|**名前**|**説明**|
+|**[名前]**|**[説明]**|
 |:-----|:-----|
 |[Add](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorCollection.Add.aspx) メソッド (+3 オーバーロード)  <br/> |**FormError** オブジェクトを作成し、それをコレクションに追加します。  <br/> |
 |[Delete](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorCollection.Delete.aspx) メソッド (+1 オーバーロード)  <br/> |指定したユーザー定義エラーをコレクションから削除します。  <br/> |
@@ -46,7 +46,7 @@ InfoPath では、次のような場合にエラーが発生する可能性が�
 
 [FormError](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormError.aspx) クラスには、次のプロパティがあります。フォームの開発者は、これらを使用することにより、発生したエラーに関する情報にアクセスできます。 
   
-|**名前**|**説明**|
+|**[名前]**|**[説明]**|
 |:-----|:-----|
 |[DetailedMessage](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormError.DetailedMessage.aspx) プロパティ  <br/> |**FormError** オブジェクトの詳細なエラー メッセージを取得または設定します。  <br/> |
 |[ErrorCode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormError.ErrorCode.aspx) プロパティ  <br/> |**FormError** オブジェクトのエラー コードを取得または設定します。  <br/> |

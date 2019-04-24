@@ -8,11 +8,11 @@ ms.assetid: 13aa6de0-3687-4f46-a1b6-a6e3aabf5981
 description: ソリューションの開発と InfoPath のカスタマイズを行う方法を記載したコンテンツ、技術記事、参照資料、ブログ記事をご覧ください。
 localization_priority: Priority
 ms.openlocfilehash: d5ca854e58b594351ec9665ebc7466d25206b06c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32299777"
 ---
 # <a name="infopath"></a>InfoPath
 

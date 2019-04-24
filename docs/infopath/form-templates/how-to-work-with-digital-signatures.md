@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: fd13fb71-aecf-47bb-8a6b-db70bd90ceeb
 description: Microsoft.Office.InfoPath 名前空間のオブジェクト モデルには、プログラムによってデジタル署名を操作する機能が用意されています。
-ms.openlocfilehash: 1277998edf4feb94da40d82372fd4d96fedf2d54
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: ea657f80f6e38a06a91e19c245eadc203c7c580c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "19799169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303585"
 ---
 # <a name="work-with-digital-signatures"></a>デジタル署名を操作する
 
@@ -41,7 +41,7 @@ InfoPath のデジタル署名機能を使用すると、以下の操作を行�
 
 デジタル署名のオブジェクト モデルには、次のイベントがあります。
   
-|**名前**|**説明**|
+|**[名前]**|**[説明]**|
 |:-----|:-----|
 |[Sign](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Sign.aspx) <br/> |署名するための一連のデータが選択されたときに発生します。  <br/> このイベントを使用すると、デジタル署名に格納されているデータを操作することができます。たとえば、信頼されるタイムスタンプ サーバーからデータを追加したり、トランザクションのサーバー側副署名を追加したりできます。また、このイベントを使用すると、現在のユーザーが特定のグループのメンバーでない場合に署名を拒否することもできます。  <br/> |
    
@@ -49,7 +49,7 @@ InfoPath のデジタル署名機能を使用すると、以下の操作を行�
 
 [Sign](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Sign.aspx) イベントのイベント ハンドラーは、 [SignEventArgs](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignEventArgs.aspx) イベント オブジェクトで動作します。このイベント オブジェクトには、次のプロパティがあります。 
   
-|**名前**|**説明**|
+|**[名前]**|**[説明]**|
 |:-----|:-----|
 |[SignedDataBlock](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignEventArgs.SignedDataBlock.aspx) <br/> |[Sign](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Sign.aspx) イベントを発生させたデータのセットを取得します。  <br/> |
 |[SignatureWizard](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignEventArgs.SignatureWizard.aspx) <br/> |[ **デジタル署名**] ダイアログ ボックスを表示するかどうかを取得または設定します。  <br/> |
@@ -61,14 +61,14 @@ InfoPath のデジタル署名機能を使用すると、以下の操作を行�
 
 デジタル署名のオブジェクト モデルには、次のコレクションがあります。
   
-|**名前**|**説明**|
+|**[名前]**|**[説明]**|
 |:-----|:-----|
 |[SignedDataBlockCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignedDataBlockCollection.aspx) <br/> |InfoPath のデザイン モードでデザイン時に定義されたフォーム テンプレート内の [SignedDataBlock](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignedDataBlock.aspx) オブジェクトのコレクション。  <br/> [SignedDataBlockCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignedDataBlockCollection.aspx) コレクションは、フォームに関連付けられている [SignedDataBlock](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignedDataBlock.aspx) オブジェクトへのアクセスに使用できるプロパティを実装しています。フォームに関連付けられている [SignedDataBlockCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignedDataBlockCollection.aspx) オブジェクトは、 [XmlForm](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.SignedDataBlocks.aspx) クラスの [SignedDataBlocks](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx) プロパティを使用してアクセスできます。  <br/> |
 |[SignatureCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignatureCollection.aspx) <br/> |フォーム内の各 [SignedDataBlock](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Signature.aspx) オブジェクトの [Signature](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignedDataBlock.aspx) オブジェクトのコレクションが格納されています。  <br/> [SignatureCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignatureCollection.aspx) クラスには、フォームに関連付けられている [Signature](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Signature.aspx) オブジェクトへのアクセスや、署名の作成に使用できるプロパティとメソッドが実装されています。 [SignedDataBlock](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignatureCollection.aspx) に関連付けられている [SignatureCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignedDataBlock.aspx) オブジェクトは、 [Signatures](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignedDataBlock.Signatures.aspx) プロパティを使用してアクセスできます。  <br/> [SignatureCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignatureCollection.CreateSignature.aspx) クラスの [CreateSignature](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignatureCollection.aspx) メソッドを使用するときは、 [Signature](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Signature.Sign.aspx) オブジェクトに対して [Sign](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Signature.aspx) メソッドを呼び出すまでは署名が書き込まれないことを覚えておいてください。これらのメソッドは、完全に信頼されたフォーム テンプレートの **Sign** イベント ハンドラーからしか呼び出せません。  <br/> |
    
 デジタル署名のオブジェクト モデルには、次のオブジェクトがあります。
   
-|**名前**|**説明**|
+|**[名前]**|**[説明]**|
 |:-----|:-----|
 |[SignedDataBlock](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignedDataBlock.aspx) <br/> |フォーム内の署名可能な一連のデータを表します。[SignedDataBlock](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignedDataBlock.aspx) オブジェクトには、署名可能なデータ セットをプログラムで操作するために使用できる多数のプロパティと 1 つのメソッドがあります。<br/> |
 |[Signature](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Signature.aspx) <br/> |フォームまたはフォーム内の署名可能な一連のデータに追加されたデジタル署名を表します。[Signature](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Signature.aspx) オブジェクトには、デジタル署名に関する情報の取得に使用できる各プロパティ、および XML デジタル署名ブロックの書き込みとその暗号化ハッシュ値の計算のための [Sign](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Signature.Sign.aspx) メソッドが実装されています。<br/> |

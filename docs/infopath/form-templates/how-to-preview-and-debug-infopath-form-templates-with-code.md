@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: c8387f1c-b34c-490e-8bf9-d824bf98d826
 description: Microsoft InfoPath (Visual Studio 2012 インストール済み) では、フォーム コードをプレビュー モードで実行してデバッグすることができます。フォーム コードのデバッグを開始すると、プロジェクトがコンパイルされて、InfoPath の [プレビュー] ウィンドウにフォームが表示されます。ブレークポイントが設定されたコード行が見つかるとコード エディターにフォーカスが移動し、ブレークポイントを過ぎると [プレビュー] ウィンドウにフォーカスが戻ります。[プレビュー] ウィンドウを閉じるとデバッグが停止します。
-ms.openlocfilehash: c33a7740d5f5dba1f8443f020007a2942bc0fc3e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 8f9ff97fdd5b4b016d96129304fa6f994d7b4561
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300435"
 ---
 # <a name="preview-and-debug-infopath-form-templates-with-code"></a>コードを含む InfoPath フォーム テンプレートをプレビューおよびデバッグする
 
@@ -63,7 +63,7 @@ Microsoft InfoPath (Visual Studio 2012 インストール済み) では、フォ
     
 4. 使用するサンプル データを使って template.xml と同じ構造のファイルを作成し、そのファイルを保存します。
     
-5. [ **ファイル**] タブをクリックして、[ **情報**] タブの [ **フォームのオプション**] をクリックします。 
+5. [**ファイル**] タブをクリックして、[**情報**] タブの [**フォームのオプション**] をクリックします。 
     
 6. [ **フォームのオプション**] ダイアログ ボックスの [ **プレビュー**] カテゴリをクリックし、[ **サンプル データ**] の下の [ **ファイルの場所**] ボックスに作成したサンプル データ ファイルを指定します。 
     

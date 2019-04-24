@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: b51361fe-cf29-f890-9876-5aebe15c73e1
 description: Microsoft InfoPath フォーム テンプレートは、特定のエンド ユーザー シナリオやビジネス ニーズに応じた特定の機能を実現するための、数個のファイルやコンポーネントを組み合わせて構成されます。InfoPath フォームの複雑度は、どのようなニーズに対応するかによって異なります。
-ms.openlocfilehash: 4ef90d3fb55ee38018d2c1226bef5fd59e277186
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 3c5adc7ec1e24af481dff7f4a8d009b2dcb6ba8a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303795"
 ---
 # <a name="about-form-template-components"></a>フォーム テンプレートのコンポーネントについて
 
@@ -21,7 +21,7 @@ InfoPath フォーム テンプレートは、基本的には一種のアプリ�
   
 InfoPath フォーム テンプレートは種類の異なる複数のファイルから構成されている点を理解することが重要です。これらのファイルは総称してフォーム ファイルと呼ばれます。通常、InfoPath フォーム テンプレートは、次の種類のファイルで構成されます。
   
-|**名前**|**Extension**|**説明**|
+|**名前**|**拡張子**|**説明**|
 |:-----|:-----|:-----|
 |フォーム定義  <br/> |.xsf  <br/> |InfoPath で生成されるファイル。フォームで使用される他のファイルとコンポーネントすべてに関する情報が記載されます。このファイルが、フォームのマニフェストとして機能します。  <br/> |
 |XML スキーマ  <br/> |.xsd  <br/> |フォームの基になる XML ドキュメント ファイルに制約を課し、検証するための XML スキーマ ファイル。  <br/> |

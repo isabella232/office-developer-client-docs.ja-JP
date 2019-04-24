@@ -9,44 +9,36 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 8e7c9080-7ef1-0696-a3d2-d8f57ea5ab9b
 description: コネクタの経路の変更方法を指定します。
-ms.openlocfilehash: 448e721d8dd6e287c61488e28b875f76d0fa2977
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b2b9cde309c720493f0e46962b2fe6c2e79545d2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284463"
 ---
-# <a name="confixedcode-cell-shape-layout-section"></a>[ConFixedCode] セル ([図形レイアウト] セクション)
+# <a name="confixedcode-cell-shape-layout-section"></a>[ConFixedCode] セル ([Shape Layout] セクション)
 
 コネクタの経路の変更方法を指定します。
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|0  <br/> |
-          自由に経路を変更します。
-  <br/> |**visSLOConFixedRerouteFreely** <br/> |
-|1  <br/> |
-          必要に応じて経路を再設定します (手動による変更)。
-  <br/> |**visSLOConFixedRerouteAsNeeded** <br/> |
-|2  <br/> |
-          経路変更しません。
-  <br/> |**visSLOConFixedRerouteNever** <br/> |
-|3  <br/> |
-          交差時に経路を変更します。
-  <br/> |**visSLOConFixedRerouteOnCrossover** <br/> |
-|4  <br/> |内部使用のみ。   <br/> |**visSLOConFixedByAlgFrom** <br/> |
-|5  <br/> |内部使用のみ。   <br/> |**visSLOConFixedByAlgTo** <br/> |
-|6  <br/> |内部使用のみ。   <br/> |**visSLOConFixedByAlgFromTo** <br/> |
+|.0  <br/> |自由に経路を変更します。  <br/> |**visSLOConFixedRerouteFreely** <br/> |
+|1-d  <br/> |必要に応じて経路を再設定します (手動による変更)。  <br/> |**visSLOConFixedRerouteAsNeeded** <br/> |
+|pbm-2  <br/> |経路変更しません。  <br/> |**visSLOConFixedRerouteNever** <br/> |
+|1/3  <br/> |交差時に経路を変更します。  <br/> |**visSLOConFixedRerouteOnCrossover** <br/> |
+|2/4  <br/> |システム内部でのみ使用します。  <br/> |**visSLOConFixedByAlgFrom** <br/> |
+|5  <br/> |システム内部でのみ使用します。  <br/> |**visSLOConFixedByAlgTo** <br/> |
+|シックス  <br/> |システム内部でのみ使用します。  <br/> |**visSLOConFixedByAlgFromTo** <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-設定できますでは、このセルの値、動的コネクタを**図形のデザイン**] で [[開発](run-in-developer-mode-display-the-developer-tab.md)] タブで、**動作**をクリックして、[**コネクタ**] タブをクリックします。 
+このセルの値は、動的コネクタを選択し、[[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] で [**基本動作**] をクリックし、[**コネクタ**] タブをクリックして設定することもできます。 
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ConFixedCode] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |ConFixedCode  <br/> |
+|セル名:  <br/> |[confixedcode]  <br/> |
    
 プログラムから、インデックスによって [ConFixedCode] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -54,6 +46,6 @@ ms.locfileid: "19805083"
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionObject** <br/> |
 |行インデックス:  <br/> |**visRowShapeLayout** <br/> |
-|セル インデックス:  <br/> |**visSLOConFixedCode** <br/> |
+|セル インデックス:  <br/> |**visslo# xedcode** <br/> |
    
 

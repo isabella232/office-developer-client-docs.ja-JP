@@ -9,18 +9,18 @@ keywords:
 localization_priority: Normal
 ms.assetid: 65780435-aaa2-47af-b44f-07be7aa769ee
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 63bfc6e94950a621c2367b2d35d25e3de48b344f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: fdee0146ae2199097828e98abb96ffe43a64fc80
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303886"
 ---
 # <a name="xlfgetname"></a>xlfGetName
 
 **適用対象**: Excel 2013 | Office 2013 | Visual Studio 
   
-**[名前の管理]** ダイアログ ボックスの **[参照範囲]** 列に表示される名前の定義を返します。このダイアログ ボックスは、**[数式]** タブの **[定義された名前]** セクションで **[名前の管理]** をクリックすると表示されます。定義に参照が含まれている場合、参照は R1C1 形式の参照として示されます。 **xlfGetName** を使用して、名前で定義されている値を確認します。 定義に対応する名前を取得するには、[xlfGetDef](xlfgetdef.md) を使用します。
+Returns the definition of a name as it appears in the **Refers to** column of the **Name Manager** dialog box, which is displayed when you click **Name Manager** in the **Defined Names** section on the **Formulas** tab. If the definition contains references, they are given as R1C1-style references. Use **xlfGetName** to check the value defined by a name. To get the name that corresponds to a definition, use [xlfGetDef](xlfgetdef.md).
   
 ```cpp
 Excel12(xlfGetName, LPXLOPER12 pxRes, 2, LPXLOPER12 pxNameText, LPXLOPER12 pxInfoType);
@@ -30,7 +30,7 @@ Excel12(xlfGetName, LPXLOPER12 pxRes, 2, LPXLOPER12 pxNameText, LPXLOPER12 pxInf
 
 _pxNameText_ (**xltypeStr**)
   
-シートで定義されている名前、アクティブなブックで定義されている名前への外部参照 (`"!Sales"` など)、または開いているブックで定義されている名前への外部参照 (`"[Book1]SHEET1!Sales"` など) にできます。  また _pxNameText_は非表示にできます。 
+Can be a name defined on the sheet; an external reference to a name defined on the active workbook, for example,  `"!Sales"`; or an external reference to a name defined on a particular open workbook, for example,  `"[Book1]SHEET1!Sales"`.  _pxNameText_ can also be a hidden name. 
   
 _pxInfoType_ (**xltypeBool**)
   

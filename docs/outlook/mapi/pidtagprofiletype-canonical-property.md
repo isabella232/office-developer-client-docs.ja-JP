@@ -12,59 +12,59 @@ api_type:
 - COM
 ms.assetid: 9cc1a1fa-62a7-411b-9b2b-c49d24a38a61
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f87ac0be4d4fcbb1c1a3dd9d407de5461eb556bb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e2d69a7d67d0a09f2155bcfc255c3e0bf8cb0ebe
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286550"
 ---
 # <a name="pidtagprofiletype-canonical-property"></a>PidTagProfileType 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-インフォメーション ストアの種類が含まれています。
+インフォメーションストアの種類を格納します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_PROFILE_TYPE  <br/> |
-|識別子:  <br/> |0x660A  <br/> |
+|識別子:  <br/> |0x660a  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |MAPI プロファイルの構成  <br/> |
+|エリア:  <br/> |MAPI プロファイルの構成  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティの有効な値は次のとおりです。
+このプロパティに指定可能な値は次のとおりです。
   
-- 1-プライマリ ユーザー
+- 1-プライマリユーザー
     
-- 2: 代理人
+- 2-デリゲート
     
-- 3-パブリック ストア
+- 3-パブリックストア
     
-- 4-定期売買
+- 4-サブスクリプション
     
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

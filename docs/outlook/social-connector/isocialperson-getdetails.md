@@ -1,5 +1,5 @@
 ---
-title: ISocialPersonGetDetails
+title: i社会 al個人 getdetails
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9ca3172a-82a3-4483-b0aa-4e848930f6ed
-description: プロフィールの画像に、名、姓、名、URL など、個人の詳細情報を表す文字列を取得します。
-ms.openlocfilehash: 158ce9b5c6a97ffff0325427ed07c74f518941d8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 名、姓、プロファイル画像への URL など、個人の詳細を表す文字列を取得します。
+ms.openlocfilehash: 05cc2565ccd0688c7b8f4eccd6d8f42353d8743e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32286144"
 ---
 # <a name="isocialpersongetdetails"></a>ISocialPerson::GetDetails
 
-プロフィールの画像に、名、姓、名、URL など、個人の詳細情報を表す文字列を取得します。 
+名、姓、プロファイル画像への URL など、個人の詳細を表す文字列を取得します。 
   
 ```cpp
 HRESULT _stdcall GetDetails([out, retval] BSTR* details);
@@ -25,15 +25,15 @@ HRESULT _stdcall GetDetails([out, retval] BSTR* details);
 
 ## <a name="parameters"></a>パラメーター
 
-_詳細情報_
+_details_
   
-> [out]個人の詳細情報を表す XML 文字列値。
+> 読み上げ個人の詳細を表す XML 文字列型 (string) の値。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-返される_詳細情報_の XML 文字列は、Outlook ソーシャル コネクタ (OSC) プロバイダーの機能拡張のスキーマで定義されている**人**の場合は、スキーマ定義に従う必要があります。
+返される_詳細_XML 文字列は、Outlook Social Connector (.osc) プロバイダー拡張機能のスキーマで定義されているように、 **person**のスキーマ定義に準拠している必要があります。
   
-OSC は、ソーシャル ネットワーク上の**GetDetails** OSC プロバイダーをサポートしていますがキャッシュされている場合、またはハイブリッドの同期の友人を呼び出します。 OSC は、最初にログオンしたユーザーの友人の活動を取得、それは[ISocialPerson::GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md)と友人の情報をソーシャル ネットワークにログオンしたユーザーの既定の Outlook ストアに特定の連絡先フォルダーに格納. その後、OSC を呼び出しません**GetFriendsAndColleagues**または**GetDetails**キャッシュの更新間隔の有効期限が切れていない限り。 OSC が連絡先フォルダー内の友人の情報をキャッシュする方法の詳細については、[同期の友人との活動](synchronizing-friends-and-activities.md)を参照してください。
+.osc プロバイダーがソーシャルネットワーク上で友人のキャッシュまたはハイブリッド同期をサポートしている場合、.osc は**getdetails**を呼び出します。 .osc が、ログオンしているユーザーのフレンドのアクティビティを最初に取得するときに、 [iGetFriendsAndColleagues alperson:::](isocialperson-getfriendsandcolleagues.md)を呼び出し、ソーシャルネットワーク固有の連絡先フォルダーに友人の情報を格納します。これには、ログオンユーザーの既定の Outlook ストアが含まれます。. その後、.osc は、キャッシュの更新間隔が経過していない限り、 **GetFriendsAndColleagues**または**getdetails**を呼び出しません。 .osc が連絡先フォルダー内のフレンド情報をキャッシュする方法の詳細については、「[友人とアクティビティを同期](synchronizing-friends-and-activities.md)する」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
