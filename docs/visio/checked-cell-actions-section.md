@@ -9,43 +9,39 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 50937e29-eaa1-0cd0-53cc-dc17e7793e55
 description: ショートカット メニューまたはアクション タグ メニューで項目がチェックされているかどうかを示します。
-ms.openlocfilehash: 7c5bcdbfe5b7d8e796af49c8da6ef0fc233e3d62
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 870823f28d802e7cafa81efbe5617f27b6714885
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341847"
 ---
-# <a name="checked-cell-actions-section"></a><span data-ttu-id="5f3ce-103">[Checked] セル ([操作] セクション)</span><span class="sxs-lookup"><span data-stu-id="5f3ce-103">Checked Cell (Actions Section)</span></span>
+# <a name="checked-cell-actions-section"></a><span data-ttu-id="53f7b-103">[Checked] セル ([Actions] セクション)</span><span class="sxs-lookup"><span data-stu-id="53f7b-103">Checked Cell (Actions Section)</span></span>
 
-<span data-ttu-id="5f3ce-104">ショートカット メニューまたはアクション タグ メニューで項目がチェックされているかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="5f3ce-104">Indicates whether an item is checked on the shortcut or action tag menu.</span></span>
+<span data-ttu-id="53f7b-104">ショートカット メニューまたはアクション タグ メニューで項目がチェックされているかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="53f7b-104">Indicates whether an item is checked on the shortcut or action tag menu.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="5f3ce-105">Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。</span><span class="sxs-lookup"><span data-stu-id="5f3ce-105">In previous versions of Microsoft Visio, action tags are called smart tags.</span></span> 
+> <span data-ttu-id="53f7b-105">Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。</span><span class="sxs-lookup"><span data-stu-id="53f7b-105">In previous versions of Microsoft Visio, action tags are called smart tags.</span></span> 
   
-|<span data-ttu-id="5f3ce-106">**値**</span><span class="sxs-lookup"><span data-stu-id="5f3ce-106">**Value**</span></span>|<span data-ttu-id="5f3ce-107">**説明**</span><span class="sxs-lookup"><span data-stu-id="5f3ce-107">**Description**</span></span>|
+|<span data-ttu-id="53f7b-106">**値**</span><span class="sxs-lookup"><span data-stu-id="53f7b-106">**Value**</span></span>|<span data-ttu-id="53f7b-107">**説明**</span><span class="sxs-lookup"><span data-stu-id="53f7b-107">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="5f3ce-108">TRUE</span><span class="sxs-lookup"><span data-stu-id="5f3ce-108">TRUE</span></span>  <br/> |<span data-ttu-id="5f3ce-109">
-          チェック マークが表示されます。
-</span><span class="sxs-lookup"><span data-stu-id="5f3ce-109">Check mark is displayed.</span></span>  <br/> |
-|<span data-ttu-id="5f3ce-110">FALSE</span><span class="sxs-lookup"><span data-stu-id="5f3ce-110">FALSE</span></span>  <br/> |<span data-ttu-id="5f3ce-111">
-          チェック マークが表示されません (既定値)。
-</span><span class="sxs-lookup"><span data-stu-id="5f3ce-111">Check mark is not displayed (the default).</span></span>  <br/> |
+|<span data-ttu-id="53f7b-108">TRUE</span><span class="sxs-lookup"><span data-stu-id="53f7b-108">TRUE</span></span>  <br/> |<span data-ttu-id="53f7b-109">チェック マークが表示されます。</span><span class="sxs-lookup"><span data-stu-id="53f7b-109">Check mark is displayed.</span></span>  <br/> |
+|<span data-ttu-id="53f7b-110">FALSE</span><span class="sxs-lookup"><span data-stu-id="53f7b-110">FALSE</span></span>  <br/> |<span data-ttu-id="53f7b-111">チェック マークが表示されません (既定値)。</span><span class="sxs-lookup"><span data-stu-id="53f7b-111">Check mark is not displayed (the default).</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="5f3ce-112">注釈</span><span class="sxs-lookup"><span data-stu-id="5f3ce-112">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="53f7b-112">解説</span><span class="sxs-lookup"><span data-stu-id="53f7b-112">Remarks</span></span>
 
-<span data-ttu-id="5f3ce-113">別の数式から、または **CellsU** プロパティを使用してプログラムから、名前によって [Checked] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="5f3ce-113">To get a reference to the Checked cell by name from another formula, or from a program by using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="53f7b-113">別の数式から、または **CellsU** プロパティを使用してプログラムから、名前によって [Checked] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="53f7b-113">To get a reference to the Checked cell by name from another formula, or from a program by using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="5f3ce-114">セル名:</span><span class="sxs-lookup"><span data-stu-id="5f3ce-114">Cell name:</span></span>  <br/> |<span data-ttu-id="5f3ce-115">アクションです。</span><span class="sxs-lookup"><span data-stu-id="5f3ce-115">Actions.</span></span> <span data-ttu-id="5f3ce-116">*名*です。オンになっているアクション。</span><span class="sxs-lookup"><span data-stu-id="5f3ce-116">*name*  .Checked           where Actions.</span></span> <span data-ttu-id="5f3ce-117">*アクション行の名前します。*</span><span class="sxs-lookup"><span data-stu-id="5f3ce-117">*name*  is the name of the Actions row</span></span>  <br/> |
+|<span data-ttu-id="53f7b-114">セル名:</span><span class="sxs-lookup"><span data-stu-id="53f7b-114">Cell name:</span></span>  <br/> |<span data-ttu-id="53f7b-115">アクション.</span><span class="sxs-lookup"><span data-stu-id="53f7b-115">Actions.</span></span> <span data-ttu-id="53f7b-116">*名前*です。アクションを確認しました。</span><span class="sxs-lookup"><span data-stu-id="53f7b-116">*name*  .Checked           where Actions.</span></span> <span data-ttu-id="53f7b-117">*name*は、Actions 行の名前です。</span><span class="sxs-lookup"><span data-stu-id="53f7b-117">*name*  is the name of the Actions row</span></span>  <br/> |
    
-<span data-ttu-id="5f3ce-118">プログラムから、インデックスによって [Checked] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="5f3ce-118">To get a reference to the Checked cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="53f7b-118">プログラムから、インデックスによって [Checked] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="53f7b-118">To get a reference to the Checked cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="5f3ce-119">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="5f3ce-119">Section index:</span></span>  <br/> |<span data-ttu-id="5f3ce-120">**visSectionAction**</span><span class="sxs-lookup"><span data-stu-id="5f3ce-120">**visSectionAction**</span></span> <br/> |
-|<span data-ttu-id="5f3ce-121">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="5f3ce-121">Row index:</span></span>  <br/> |<span data-ttu-id="5f3ce-122">**visRowAction** +  *i* 、 *i* = 0、1、2、.</span><span class="sxs-lookup"><span data-stu-id="5f3ce-122">**visRowAction** +  *i*           where  *i*  = 0, 1, 2, ...</span></span>  <br/> |
-|<span data-ttu-id="5f3ce-123">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="5f3ce-123">Cell index:</span></span>  <br/> |<span data-ttu-id="5f3ce-124">**visActionChecked**</span><span class="sxs-lookup"><span data-stu-id="5f3ce-124">**visActionChecked**</span></span> <br/> |
+|<span data-ttu-id="53f7b-119">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="53f7b-119">Section index:</span></span>  <br/> |<span data-ttu-id="53f7b-120">**visSectionAction**</span><span class="sxs-lookup"><span data-stu-id="53f7b-120">**visSectionAction**</span></span> <br/> |
+|<span data-ttu-id="53f7b-121">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="53f7b-121">Row index:</span></span>  <br/> |<span data-ttu-id="53f7b-122">**visRowAction** +  *i* = \*\* 0、1、2、...</span><span class="sxs-lookup"><span data-stu-id="53f7b-122">**visRowAction** +  *i*           where  *i*  = 0, 1, 2, ...</span></span>  <br/> |
+|<span data-ttu-id="53f7b-123">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="53f7b-123">Cell index:</span></span>  <br/> |<span data-ttu-id="53f7b-124">**visActionChecked**</span><span class="sxs-lookup"><span data-stu-id="53f7b-124">**visActionChecked**</span></span> <br/> |
    
 

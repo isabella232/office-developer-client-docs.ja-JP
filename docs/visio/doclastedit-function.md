@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 843868c5-bb4d-f003-ad4a-b48de78259d1
 description: 図面が最後に編集された日時をシリアル値として返します。
-ms.openlocfilehash: 8f10fae6c31e3e52977a1ffda7bc7a5d2e53f5d9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: aa213d70c5bcebace2b588179f22a60e4e9948b5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334455"
 ---
-# <a name="doclastedit-function"></a><span data-ttu-id="6b842-103">DOCLASTEDIT 関数</span><span class="sxs-lookup"><span data-stu-id="6b842-103">DOCLASTEDIT Function</span></span>
+# <a name="doclastedit-function"></a><span data-ttu-id="1db43-103">DOCLASTEDIT 関数</span><span class="sxs-lookup"><span data-stu-id="1db43-103">DOCLASTEDIT Function</span></span>
 
-<span data-ttu-id="6b842-104">図面が最後に編集された日時をシリアル値として返します。</span><span class="sxs-lookup"><span data-stu-id="6b842-104">Returns, as a serial value, the date and the time that a document was last edited.</span></span>
+<span data-ttu-id="1db43-104">図面が最後に編集された日時をシリアル値として返します。</span><span class="sxs-lookup"><span data-stu-id="1db43-104">Returns, as a serial value, the date and the time that a document was last edited.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="6b842-105">構文</span><span class="sxs-lookup"><span data-stu-id="6b842-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="1db43-105">構文</span><span class="sxs-lookup"><span data-stu-id="1db43-105">Syntax</span></span>
 
-<span data-ttu-id="6b842-106">DOCLASTEDIT()</span><span class="sxs-lookup"><span data-stu-id="6b842-106">DOCLASTEDIT()</span></span>
+<span data-ttu-id="1db43-106">DOCLASTEDIT ()</span><span class="sxs-lookup"><span data-stu-id="1db43-106">DOCLASTEDIT()</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="6b842-107">注釈</span><span class="sxs-lookup"><span data-stu-id="6b842-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1db43-107">解説</span><span class="sxs-lookup"><span data-stu-id="1db43-107">Remarks</span></span>
 
-<span data-ttu-id="6b842-108">値の書式を設定するのにには、 [FORMAT](format-function.md)関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="6b842-108">Use the [FORMAT](format-function.md) function to format the value.</span></span> 
+<span data-ttu-id="1db43-108">戻り値を書式設定するには、[FORMAT](format-function.md) 関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="1db43-108">Use the [FORMAT](format-function.md) function to format the value.</span></span> 
   
 

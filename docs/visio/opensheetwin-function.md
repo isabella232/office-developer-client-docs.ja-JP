@@ -8,24 +8,24 @@ f1_keywords:
 - Vis_DSS.chm82251474
 localization_priority: Normal
 ms.assetid: b574a99d-08f4-29e4-c40a-eb0770580ed5
-description: 新しいウィンドウで、[シェイプ シート] ウィンドウが開きます。
-ms.openlocfilehash: 609dce37429c899a68f485a07adeeb9479a442c2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 新しいウィンドウで [シェイプシート] ウィンドウを開きます。
+ms.openlocfilehash: c68ab1e0c9d52514dff16b7b1b4adbd8789d3e85
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32340132"
 ---
-# <a name="opensheetwin-function"></a><span data-ttu-id="ba63c-103">OPENSHEETWIN 関数</span><span class="sxs-lookup"><span data-stu-id="ba63c-103">OPENSHEETWIN Function</span></span>
+# <a name="opensheetwin-function"></a><span data-ttu-id="6fc65-103">OPENSHEETWIN 関数</span><span class="sxs-lookup"><span data-stu-id="6fc65-103">OPENSHEETWIN Function</span></span>
 
-<span data-ttu-id="ba63c-104">新しいウィンドウで、[シェイプ シート] ウィンドウが開きます。</span><span class="sxs-lookup"><span data-stu-id="ba63c-104">Opens the ShapeSheet window in a new window.</span></span>
+<span data-ttu-id="6fc65-104">新しいウィンドウで [シェイプシート] ウィンドウを開きます。</span><span class="sxs-lookup"><span data-stu-id="6fc65-104">Opens the ShapeSheet window in a new window.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="ba63c-105">構文</span><span class="sxs-lookup"><span data-stu-id="ba63c-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="6fc65-105">構文</span><span class="sxs-lookup"><span data-stu-id="6fc65-105">Syntax</span></span>
 
-<span data-ttu-id="ba63c-106">OPENSHEETWIN( )</span><span class="sxs-lookup"><span data-stu-id="ba63c-106">OPENSHEETWIN( )</span></span>
+<span data-ttu-id="6fc65-106">OPENSHEETWIN( )</span><span class="sxs-lookup"><span data-stu-id="6fc65-106">OPENSHEETWIN( )</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="ba63c-107">注釈</span><span class="sxs-lookup"><span data-stu-id="ba63c-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6fc65-107">解説</span><span class="sxs-lookup"><span data-stu-id="6fc65-107">Remarks</span></span>
 
-<span data-ttu-id="ba63c-p101">以前のバージョンの Visio では、この関数は _OPENSHEETWIN に相当します。Visio 4.0 以降のバージョンでは、どちらのスタイルも使用できます。</span><span class="sxs-lookup"><span data-stu-id="ba63c-p101">In earlier versions of Visio, this function appears as _OPENSHEETWIN. Visio versions 4.0 and later accept either style.</span></span> 
+<span data-ttu-id="6fc65-p101">以前のバージョンの Visio では、この関数は _OPENSHEETWIN に相当します。Visio 4.0 以降のバージョンでは、どちらのスタイルも使用できます。</span><span class="sxs-lookup"><span data-stu-id="6fc65-p101">In earlier versions of Visio, this function appears as _OPENSHEETWIN. Visio versions 4.0 and later accept either style.</span></span> 
   
 

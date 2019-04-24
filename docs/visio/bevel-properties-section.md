@@ -6,20 +6,20 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1e4bb1ca-1840-4053-86da-079e3a3313e8
-description: シェイプにベベル効果の属性を示しています。
-ms.openlocfilehash: ca6c6a7b8e001ab9971b53aea5d64856fb618abf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 図形に適用されているすべてのベベル効果の属性を表示します。
+ms.openlocfilehash: c3affda74ecbeffa3b466a48274f65264018b930
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335638"
 ---
-# <a name="bevel-properties-section"></a><span data-ttu-id="a179b-103">[ベベルのプロパティ] セクション</span><span class="sxs-lookup"><span data-stu-id="a179b-103">Bevel Properties Section</span></span>
+# <a name="bevel-properties-section"></a><span data-ttu-id="38116-103">[ベベルのプロパティ] セクション</span><span class="sxs-lookup"><span data-stu-id="38116-103">Bevel Properties Section</span></span>
 
-<span data-ttu-id="a179b-104">シェイプにベベル効果の属性を示しています。</span><span class="sxs-lookup"><span data-stu-id="a179b-104">Shows the attributes for any bevel effects applied to the shape.</span></span> 
+<span data-ttu-id="38116-104">図形に適用されているすべてのベベル効果の属性を表示します。</span><span class="sxs-lookup"><span data-stu-id="38116-104">Shows the attributes for any bevel effects applied to the shape.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="a179b-105">注釈</span><span class="sxs-lookup"><span data-stu-id="a179b-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="38116-105">解説</span><span class="sxs-lookup"><span data-stu-id="38116-105">Remarks</span></span>
 
-<span data-ttu-id="a179b-106">**図形の書式設定**] ウィンドウ内の図形にベベルを適用することができます (**ホーム** > **図形のスタイル** > **べ** > **3-D オプション**] の**面取りのプロパティ**] セクションのセルを変更することや、シェイプ シート。</span><span class="sxs-lookup"><span data-stu-id="a179b-106">You can apply a bevel to a shape in the **Format Shape** pane (**Home** > **Shape Styles** > **Bevel** > **3-D Options**, or by making changes to the cells in the **Bevel Properties** section of the ShapeSheet.</span></span> 
+<span data-ttu-id="38116-106">図形にベベルを適用するには、[**図形の書式設定**] ウィンドウ ([\*\*\*\* > **ホーム** > **図形のスタイル** > (**3-d) のオプション**]) を使用する\*\*\*\* か、またはシェイプ.</span><span class="sxs-lookup"><span data-stu-id="38116-106">You can apply a bevel to a shape in the **Format Shape** pane (**Home** > **Shape Styles** > **Bevel** > **3-D Options**, or by making changes to the cells in the **Bevel Properties** section of the ShapeSheet.</span></span> 
   
 

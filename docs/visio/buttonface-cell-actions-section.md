@@ -9,38 +9,38 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: cf15b879-a47e-a5a5-bfdd-1d7ea423742f
 description: ショートカット メニューまたはアクション タグ メニューで、項目の横に表示されるアイコンを指定します。
-ms.openlocfilehash: 29ff71bc04e94f97f1526b28bd52c2846327eff1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7ee9c4e7e857acb34ce75429aa0aaf679320b0e8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337549"
 ---
-# <a name="buttonface-cell-actions-section"></a><span data-ttu-id="e4ea7-103">[ButtonFace] セル ([操作] セクション)</span><span class="sxs-lookup"><span data-stu-id="e4ea7-103">ButtonFace Cell (Actions Section)</span></span>
+# <a name="buttonface-cell-actions-section"></a><span data-ttu-id="826f3-103">[ButtonFace] セル ([Actions] セクション)</span><span class="sxs-lookup"><span data-stu-id="826f3-103">ButtonFace Cell (Actions Section)</span></span>
 
-<span data-ttu-id="e4ea7-104">ショートカット メニューまたはアクション タグ メニューで、項目の横に表示されるアイコンを指定します。</span><span class="sxs-lookup"><span data-stu-id="e4ea7-104">Identifies the icon that appears next to an item on a shortcut or action tag menu.</span></span>
+<span data-ttu-id="826f3-104">ショートカット メニューまたはアクション タグ メニューで、項目の横に表示されるアイコンを指定します。</span><span class="sxs-lookup"><span data-stu-id="826f3-104">Identifies the icon that appears next to an item on a shortcut or action tag menu.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="e4ea7-105">Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。</span><span class="sxs-lookup"><span data-stu-id="e4ea7-105">In previous versions of Microsoft Visio, action tags are called smart tags.</span></span> 
+> <span data-ttu-id="826f3-105">Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。</span><span class="sxs-lookup"><span data-stu-id="826f3-105">In previous versions of Microsoft Visio, action tags are called smart tags.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="e4ea7-106">注釈</span><span class="sxs-lookup"><span data-stu-id="e4ea7-106">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="826f3-106">解説</span><span class="sxs-lookup"><span data-stu-id="826f3-106">Remarks</span></span>
 
-<span data-ttu-id="e4ea7-p101">[ButtonFace] セルに含まれる文字列は Microsoft Office のボタン イメージの ID を表します。値ゼロ (0) または空白は、アイコンが表示されないことを示します。</span><span class="sxs-lookup"><span data-stu-id="e4ea7-p101">The string contained in the ButtonFace cell represents the ID of a Microsoft Office button face image. A value of zero (0) or blank means no icon appears.</span></span> 
+<span data-ttu-id="826f3-p101">[ButtonFace] セルに含まれる文字列は Microsoft Office のボタン イメージの ID を表します。値ゼロ (0) または空白は、アイコンが表示されないことを示します。</span><span class="sxs-lookup"><span data-stu-id="826f3-p101">The string contained in the ButtonFace cell represents the ID of a Microsoft Office button face image. A value of zero (0) or blank means no icon appears.</span></span> 
   
-<span data-ttu-id="e4ea7-109">ButtonFace] セルに使用できる Id は、 **CommandBarButton**オブジェクトの**FaceID**プロパティで使用される Id と同じです。</span><span class="sxs-lookup"><span data-stu-id="e4ea7-109">The IDs that can be used in the ButtonFace cell are the same as the IDs used with the **FaceID** property of a **CommandBarButton** object.</span></span> <span data-ttu-id="e4ea7-110">これらの Id の詳細については、MSDN の「コマンド バー ボタンのイメージを使用する」を検索してください。</span><span class="sxs-lookup"><span data-stu-id="e4ea7-110">For more details about these IDs, search for "working with command bar button images" on MSDN.</span></span> 
+<span data-ttu-id="826f3-109">[ButtonFace] セルに使用される ID は、 \*\*CommandBarButton \*\* オブジェクトの  \*\*FaceID \*\* プロパティで使用される ID と同じです。</span><span class="sxs-lookup"><span data-stu-id="826f3-109">The IDs that can be used in the ButtonFace cell are the same as the IDs used with the **FaceID** property of a **CommandBarButton** object.</span></span> <span data-ttu-id="826f3-110">これらの id の詳細については、MSDN の「コマンドバーボタンイメージを使用する」を検索してください。</span><span class="sxs-lookup"><span data-stu-id="826f3-110">For more details about these IDs, search for "working with command bar button images" on MSDN.</span></span> 
   
-<span data-ttu-id="e4ea7-111">別の数式から、または **CellsU** プロパティを使用してプログラムから、名前によって [ButtonFace] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="e4ea7-111">To get a reference to the ButtonFace cell by name from another formula, or from a program by using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="826f3-111">別の数式から、または **CellsU** プロパティを使用してプログラムから、名前によって [ButtonFace] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="826f3-111">To get a reference to the ButtonFace cell by name from another formula, or from a program by using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="e4ea7-112">セル名:</span><span class="sxs-lookup"><span data-stu-id="e4ea7-112">Cell name:</span></span>  <br/> |<span data-ttu-id="e4ea7-113">**アクション**です。</span><span class="sxs-lookup"><span data-stu-id="e4ea7-113">**Actions**.</span></span>  <span data-ttu-id="e4ea7-114">*名*です。</span><span class="sxs-lookup"><span data-stu-id="e4ea7-114">*name*  .</span></span> <span data-ttu-id="e4ea7-115">**ButtonFace**で**動作**します。</span><span class="sxs-lookup"><span data-stu-id="e4ea7-115">**ButtonFace**         where **Actions**.</span></span>  <span data-ttu-id="e4ea7-116">*アクション行の名前します。*</span><span class="sxs-lookup"><span data-stu-id="e4ea7-116">*name*  is the name of the actions row</span></span>  <br/> |
+|<span data-ttu-id="826f3-112">セル名:</span><span class="sxs-lookup"><span data-stu-id="826f3-112">Cell name:</span></span>  <br/> |<span data-ttu-id="826f3-113">**アクション**。</span><span class="sxs-lookup"><span data-stu-id="826f3-113">**Actions**.</span></span>  <span data-ttu-id="826f3-114">*名前*です。</span><span class="sxs-lookup"><span data-stu-id="826f3-114">*name*  .</span></span> <span data-ttu-id="826f3-115">**アクション**を実行する**buttonface** 。</span><span class="sxs-lookup"><span data-stu-id="826f3-115">**ButtonFace**         where **Actions**.</span></span>  <span data-ttu-id="826f3-116">*name*は、actions 行の名前です。</span><span class="sxs-lookup"><span data-stu-id="826f3-116">*name*  is the name of the actions row</span></span>  <br/> |
    
-<span data-ttu-id="e4ea7-117">プログラムから、インデックスによって [ButtonFace] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="e4ea7-117">To get a reference to the ButtonFace cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="826f3-117">プログラムから、インデックスによって [ButtonFace] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="826f3-117">To get a reference to the ButtonFace cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="e4ea7-118">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="e4ea7-118">Section index:</span></span>  <br/> |<span data-ttu-id="e4ea7-119">**visSectionAction**</span><span class="sxs-lookup"><span data-stu-id="e4ea7-119">**visSectionAction**</span></span> <br/> |
-|<span data-ttu-id="e4ea7-120">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="e4ea7-120">Row index:</span></span>  <br/> |<span data-ttu-id="e4ea7-121">**visRowAction** +  *i* 、 **i** = 0, 1, 2.</span><span class="sxs-lookup"><span data-stu-id="e4ea7-121">**visRowAction** +  *i*           where **i** = 0, 1, 2...</span></span>  <br/> |
-|<span data-ttu-id="e4ea7-122">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="e4ea7-122">Cell index:</span></span>  <br/> |<span data-ttu-id="e4ea7-123">**visActionButtonFace**</span><span class="sxs-lookup"><span data-stu-id="e4ea7-123">**visActionButtonFace**</span></span> <br/> |
+|<span data-ttu-id="826f3-118">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="826f3-118">Section index:</span></span>  <br/> |<span data-ttu-id="826f3-119">**visSectionAction**</span><span class="sxs-lookup"><span data-stu-id="826f3-119">**visSectionAction**</span></span> <br/> |
+|<span data-ttu-id="826f3-120">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="826f3-120">Row index:</span></span>  <br/> |<span data-ttu-id="826f3-121">**visRowAction** +  *i* = \*\*\*\* 0、1、2...</span><span class="sxs-lookup"><span data-stu-id="826f3-121">**visRowAction** +  *i*           where **i** = 0, 1, 2...</span></span>  <br/> |
+|<span data-ttu-id="826f3-122">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="826f3-122">Cell index:</span></span>  <br/> |<span data-ttu-id="826f3-123">**visActionButtonFace**</span><span class="sxs-lookup"><span data-stu-id="826f3-123">**visActionButtonFace**</span></span> <br/> |
    
 

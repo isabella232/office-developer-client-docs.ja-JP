@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 683d0d00-1b93-445d-86ff-180a3e6d2323
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 076fb4946af9a80e53fb8452d720c22b351f5ef6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 852ce31ba5ab02ff8f05dee25c9b32acb73130ec
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337969"
 ---
-# <a name="setattribimsgonistg"></a><span data-ttu-id="2ad48-103">SetAttribIMsgOnIStg</span><span class="sxs-lookup"><span data-stu-id="2ad48-103">SetAttribIMsgOnIStg</span></span>
+# <a name="setattribimsgonistg"></a><span data-ttu-id="0fc77-103">SetAttribIMsgOnIStg</span><span class="sxs-lookup"><span data-stu-id="0fc77-103">SetAttribIMsgOnIStg</span></span>
 
   
   
-<span data-ttu-id="2ad48-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="2ad48-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="0fc77-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="0fc77-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="2ad48-105">[OpenIMsgOnIStg](openimsgonistg.md)関数によって提供された[IMessage](imessageimapiprop.md)オブジェクトのプロパティの属性を変更または設定します。</span><span class="sxs-lookup"><span data-stu-id="2ad48-105">Sets or alters attributes of properties on an [IMessage](imessageimapiprop.md) object supplied by the [OpenIMsgOnIStg](openimsgonistg.md) function.</span></span> 
+<span data-ttu-id="0fc77-105">[OpenIMsgOnIStg](openimsgonistg.md)関数によって指定された[IMessage](imessageimapiprop.md)オブジェクトのプロパティの属性を設定または変更します。</span><span class="sxs-lookup"><span data-stu-id="0fc77-105">Sets or alters attributes of properties on an [IMessage](imessageimapiprop.md) object supplied by the [OpenIMsgOnIStg](openimsgonistg.md) function.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="2ad48-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="2ad48-106">Header file:</span></span>  <br/> |<span data-ttu-id="2ad48-107">Imessage.h</span><span class="sxs-lookup"><span data-stu-id="2ad48-107">Imessage.h</span></span>  <br/> |
-|<span data-ttu-id="2ad48-108">によって実装されます。</span><span class="sxs-lookup"><span data-stu-id="2ad48-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="2ad48-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="2ad48-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="2ad48-110">によって呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="2ad48-110">Called by:</span></span>  <br/> |<span data-ttu-id="2ad48-111">クライアント アプリケーション、およびメッセージ ストア プロバイダー</span><span class="sxs-lookup"><span data-stu-id="2ad48-111">Client applications and message store providers</span></span>  <br/> |
+|<span data-ttu-id="0fc77-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="0fc77-106">Header file:</span></span>  <br/> |<span data-ttu-id="0fc77-107">Imessage</span><span class="sxs-lookup"><span data-stu-id="0fc77-107">Imessage.h</span></span>  <br/> |
+|<span data-ttu-id="0fc77-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="0fc77-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="0fc77-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="0fc77-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="0fc77-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="0fc77-110">Called by:</span></span>  <br/> |<span data-ttu-id="0fc77-111">クライアントアプリケーションとメッセージストアプロバイダー</span><span class="sxs-lookup"><span data-stu-id="0fc77-111">Client applications and message store providers</span></span>  <br/> |
    
 ```cpp
 HRESULT SetAttribIMsgOnIStg(
@@ -42,42 +42,42 @@ HRESULT SetAttribIMsgOnIStg(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="2ad48-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="2ad48-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="0fc77-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0fc77-112">Parameters</span></span>
 
- <span data-ttu-id="2ad48-113">_lpObject_</span><span class="sxs-lookup"><span data-stu-id="2ad48-113">_lpObject_</span></span>
+ <span data-ttu-id="0fc77-113">_lpObject_</span><span class="sxs-lookup"><span data-stu-id="0fc77-113">_lpObject_</span></span>
   
-> <span data-ttu-id="2ad48-114">[in]属性が設定されているプロパティのオブジェクトへのポインター。</span><span class="sxs-lookup"><span data-stu-id="2ad48-114">[in] Pointer to the object for which property attributes are being set.</span></span> 
+> <span data-ttu-id="0fc77-114">順番プロパティ属性が設定されているオブジェクトへのポインター。</span><span class="sxs-lookup"><span data-stu-id="0fc77-114">[in] Pointer to the object for which property attributes are being set.</span></span> 
     
- <span data-ttu-id="2ad48-115">_lpPropTags_</span><span class="sxs-lookup"><span data-stu-id="2ad48-115">_lpPropTags_</span></span>
+ <span data-ttu-id="0fc77-115">_lpproptags_</span><span class="sxs-lookup"><span data-stu-id="0fc77-115">_lpPropTags_</span></span>
   
-> <span data-ttu-id="2ad48-116">[in]属性が設定されているプロパティのプロパティを示すプロパティ タグの配列を格納する[SPropTagArray](sproptagarray.md)構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="2ad48-116">[in] Pointer to an [SPropTagArray](sproptagarray.md) structure containing an array of property tags indicating the properties for which property attributes are being set.</span></span> 
+> <span data-ttu-id="0fc77-116">順番プロパティタグの配列が含まれている[SPropTagArray](sproptagarray.md)構造体へのポインター。プロパティの属性が設定されているプロパティを示します。</span><span class="sxs-lookup"><span data-stu-id="0fc77-116">[in] Pointer to an [SPropTagArray](sproptagarray.md) structure containing an array of property tags indicating the properties for which property attributes are being set.</span></span> 
     
- <span data-ttu-id="2ad48-117">_lpPropAttrs_</span><span class="sxs-lookup"><span data-stu-id="2ad48-117">_lpPropAttrs_</span></span>
+ <span data-ttu-id="0fc77-117">_lpPropAttrs_</span><span class="sxs-lookup"><span data-stu-id="0fc77-117">_lpPropAttrs_</span></span>
   
-> <span data-ttu-id="2ad48-118">[in]設定するプロパティの属性を一覧表示する[SPropAttrArray](spropattrarray.md)構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="2ad48-118">[in] Pointer to an [SPropAttrArray](spropattrarray.md) structure listing the property attributes to set.</span></span> 
+> <span data-ttu-id="0fc77-118">順番設定するプロパティ属性を一覧表示する[sproな trarray](spropattrarray.md)構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="0fc77-118">[in] Pointer to an [SPropAttrArray](spropattrarray.md) structure listing the property attributes to set.</span></span> 
     
- <span data-ttu-id="2ad48-119">_lppPropProblems_</span><span class="sxs-lookup"><span data-stu-id="2ad48-119">_lppPropProblems_</span></span>
+ <span data-ttu-id="0fc77-119">_lpppropproblems 問題_</span><span class="sxs-lookup"><span data-stu-id="0fc77-119">_lppPropProblems_</span></span>
   
-> <span data-ttu-id="2ad48-120">[out]返された[SPropProblemArray](spropproblemarray.md)構造体のプロパティの問題のセットが含まれているへのポインター。</span><span class="sxs-lookup"><span data-stu-id="2ad48-120">[out] Pointer to the returned [SPropProblemArray](spropproblemarray.md) structure containing a set of property problems.</span></span> <span data-ttu-id="2ad48-121">この構造体は、 **SetAttribIMsgOnIStg**は、すべてではなく、一部のプロパティを設定することをされている場合に発生する問題を識別します。</span><span class="sxs-lookup"><span data-stu-id="2ad48-121">This structure identifies problems encountered if **SetAttribIMsgOnIStg** has been able to set some properties, but not all.</span></span> <span data-ttu-id="2ad48-122">_LppPropProblems_パラメーターに null ポインターが渡されると場合、は、いくつかのプロパティが設定されていない場合でもにプロパティの問題の配列が返されません。</span><span class="sxs-lookup"><span data-stu-id="2ad48-122">If a pointer to NULL is passed in the  _lppPropProblems_ parameter, no property problem array is returned even if some properties were not set.</span></span> 
+> <span data-ttu-id="0fc77-120">読み上げプロパティの問題のセットを含む、返された[sprop問題の配列](spropproblemarray.md)構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="0fc77-120">[out] Pointer to the returned [SPropProblemArray](spropproblemarray.md) structure containing a set of property problems.</span></span> <span data-ttu-id="0fc77-121">この構造体は、 **SetAttribIMsgOnIStg**が一部のプロパティを設定できた場合に発生する問題を特定します。ただし、すべてではありません。</span><span class="sxs-lookup"><span data-stu-id="0fc77-121">This structure identifies problems encountered if **SetAttribIMsgOnIStg** has been able to set some properties, but not all.</span></span> <span data-ttu-id="0fc77-122">_lpppropproblems_パラメーターに NULL へのポインターが渡された場合、一部のプロパティが設定されていない場合でも、プロパティ問題の配列は返されません。</span><span class="sxs-lookup"><span data-stu-id="0fc77-122">If a pointer to NULL is passed in the  _lppPropProblems_ parameter, no property problem array is returned even if some properties were not set.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="2ad48-123">�߂�l</span><span class="sxs-lookup"><span data-stu-id="2ad48-123">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="0fc77-123">戻り値</span><span class="sxs-lookup"><span data-stu-id="0fc77-123">Return value</span></span>
 
-<span data-ttu-id="2ad48-124">S_OK</span><span class="sxs-lookup"><span data-stu-id="2ad48-124">S_OK</span></span> 
+<span data-ttu-id="0fc77-124">S_OK</span><span class="sxs-lookup"><span data-stu-id="0fc77-124">S_OK</span></span> 
   
-> <span data-ttu-id="2ad48-125">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="2ad48-125">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="0fc77-125">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="0fc77-125">The call succeeded and has returned the expected value or values.</span></span>
     
-<span data-ttu-id="2ad48-126">MAPI_W_ERRORS_RETURNED</span><span class="sxs-lookup"><span data-stu-id="2ad48-126">MAPI_W_ERRORS_RETURNED</span></span> 
+<span data-ttu-id="0fc77-126">MAPI_W_ERRORS_RETURNED</span><span class="sxs-lookup"><span data-stu-id="0fc77-126">MAPI_W_ERRORS_RETURNED</span></span> 
   
-> <span data-ttu-id="2ad48-127">呼び出しは完了しましたが、1 つまたは複数のプロパティにアクセスできませんでしたし、PT_ERROR のプロパティの種類と返されました。</span><span class="sxs-lookup"><span data-stu-id="2ad48-127">The call succeeded overall, but one or more properties could not be accessed and were returned with a property type of PT_ERROR.</span></span>
+> <span data-ttu-id="0fc77-127">呼び出しは全体的に成功しましたが、1つ以上のプロパティがアクセスできず、PT_ERROR のプロパティの種類で返されました。</span><span class="sxs-lookup"><span data-stu-id="0fc77-127">The call succeeded overall, but one or more properties could not be accessed and were returned with a property type of PT_ERROR.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="2ad48-128">注釈</span><span class="sxs-lookup"><span data-stu-id="2ad48-128">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0fc77-128">解説</span><span class="sxs-lookup"><span data-stu-id="0fc77-128">Remarks</span></span>
 
-<span data-ttu-id="2ad48-129">プロパティの属性は、プロパティ オブジェクト、つまり、オブジェクトを実装することでのみアクセスできます、 [IMAPIProp: IUnknown](imapipropiunknown.md)インタ フェースです。</span><span class="sxs-lookup"><span data-stu-id="2ad48-129">Property attributes can only be accessed on property objects, that is, objects implementing the [IMAPIProp : IUnknown](imapipropiunknown.md) interface.</span></span> <span data-ttu-id="2ad48-130">[OpenIMsgOnIStg](openimsgonistg.md)ビルドの MAPI プロパティを OLE 構造化ストレージ オブジェクトで使用できるようにするのには、 [IMessage: IMAPIProp](imessageimapiprop.md) OLE **IStorage**オブジェクト上にあるオブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="2ad48-130">To make MAPI properties available on an OLE structured storage object, [OpenIMsgOnIStg](openimsgonistg.md) builds an [IMessage : IMAPIProp](imessageimapiprop.md) object on top of the OLE **IStorage** object.</span></span> <span data-ttu-id="2ad48-131">このようなオブジェクトのプロパティの属性の設定または**SetAttribIMsgOnIStg**に変更し、 [GetAttribIMsgOnIStg](getattribimsgonistg.md)を取得します。</span><span class="sxs-lookup"><span data-stu-id="2ad48-131">The property attributes on such objects can be set or altered with **SetAttribIMsgOnIStg** and retrieved with [GetAttribIMsgOnIStg](getattribimsgonistg.md).</span></span> 
+<span data-ttu-id="0fc77-129">property 属性は、プロパティオブジェクト (つまり、 [imapiprop: IUnknown](imapipropiunknown.md)インターフェイスを実装するオブジェクト) にのみアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="0fc77-129">Property attributes can only be accessed on property objects, that is, objects implementing the [IMAPIProp : IUnknown](imapipropiunknown.md) interface.</span></span> <span data-ttu-id="0fc77-130">ole 構造化ストレージオブジェクトで MAPI プロパティを使用できるようにするために、 [OpenIMsgOnIStg](openimsgonistg.md)は、ole **IStorage**オブジェクトの先頭に[IMessage: imapiprop](imessageimapiprop.md)オブジェクトをビルドします。</span><span class="sxs-lookup"><span data-stu-id="0fc77-130">To make MAPI properties available on an OLE structured storage object, [OpenIMsgOnIStg](openimsgonistg.md) builds an [IMessage : IMAPIProp](imessageimapiprop.md) object on top of the OLE **IStorage** object.</span></span> <span data-ttu-id="0fc77-131">このようなオブジェクトのプロパティ属性は、 **SetAttribIMsgOnIStg**を使用して設定または変更したり、 [GetAttribIMsgOnIStg](getattribimsgonistg.md)で取得したりできます。</span><span class="sxs-lookup"><span data-stu-id="0fc77-131">The property attributes on such objects can be set or altered with **SetAttribIMsgOnIStg** and retrieved with [GetAttribIMsgOnIStg](getattribimsgonistg.md).</span></span> 
   
- <span data-ttu-id="2ad48-132">**メモ****IMessage**オブジェクトのすべては、 **GetAttribIMsgOnIStg**と**SetAttribIMsgOnIStg**は動作しません。</span><span class="sxs-lookup"><span data-stu-id="2ad48-132">**Note** **GetAttribIMsgOnIStg** and **SetAttribIMsgOnIStg** do not operate on all **IMessage** objects.</span></span> <span data-ttu-id="2ad48-133">-点灯 - **OpenIMsgOnIStg**によって返される**IStorage**オブジェクトは、 **IMessage**に対して有効であるだけです。</span><span class="sxs-lookup"><span data-stu-id="2ad48-133">They are only valid for **IMessage**-on- **IStorage** objects returned by **OpenIMsgOnIStg**.</span></span> 
+ <span data-ttu-id="0fc77-132">**メモ\*\*\*\*GetAttribIMsgOnIStg**および**SetAttribIMsgOnIStg**は、すべての**IMessage**オブジェクトでは動作しません。</span><span class="sxs-lookup"><span data-stu-id="0fc77-132">**Note** **GetAttribIMsgOnIStg** and **SetAttribIMsgOnIStg** do not operate on all **IMessage** objects.</span></span> <span data-ttu-id="0fc77-133">これらは、 **OpenIMsgOnIStg**によって返される\*\*\*\* **IMessage**オブジェクトに対してのみ有効です。</span><span class="sxs-lookup"><span data-stu-id="0fc77-133">They are only valid for **IMessage**-on- **IStorage** objects returned by **OpenIMsgOnIStg**.</span></span> 
   
-<span data-ttu-id="2ad48-134">_LpPropAttrs_パラメーターに番号と、属性の位置は数と、 _lpPropTags_パラメーターで渡されたプロパティ タグの位置が可能でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="2ad48-134">In the  _lpPropAttrs_ parameter, the number and position of the attributes must match the number and position of the property tags passed in the  _lpPropTags_ parameter.</span></span> 
+<span data-ttu-id="0fc77-134">_lpPropAttrs_パラメーターでは、属性の数と位置が、 _lpproptags_パラメーターで渡されるプロパティタグの数と位置に一致する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0fc77-134">In the  _lpPropAttrs_ parameter, the number and position of the attributes must match the number and position of the property tags passed in the  _lpPropTags_ parameter.</span></span> 
   
-<span data-ttu-id="2ad48-135">**SetAttribIMsgOnIStg**関数を使用して、メッセージのプロパティを**IMessage**スキーマで必要なときは読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="2ad48-135">The **SetAttribIMsgOnIStg** function is used to make message properties read-only when required by the **IMessage** schema.</span></span> <span data-ttu-id="2ad48-136">サンプル メッセージ ストア プロバイダーは、この目的で使用します。</span><span class="sxs-lookup"><span data-stu-id="2ad48-136">The sample message store provider uses it for this purpose.</span></span> <span data-ttu-id="2ad48-137">詳細については、[メッセージ](mapi-messages.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2ad48-137">For more information, see [Messages](mapi-messages.md).</span></span> 
+<span data-ttu-id="0fc77-135">**SetAttribIMsgOnIStg**関数は、 **IMessage**スキーマで必要な場合にメッセージプロパティを読み取り専用にするために使用されます。</span><span class="sxs-lookup"><span data-stu-id="0fc77-135">The **SetAttribIMsgOnIStg** function is used to make message properties read-only when required by the **IMessage** schema.</span></span> <span data-ttu-id="0fc77-136">サンプルメッセージストアプロバイダーは、これを目的として使用します。</span><span class="sxs-lookup"><span data-stu-id="0fc77-136">The sample message store provider uses it for this purpose.</span></span> <span data-ttu-id="0fc77-137">詳細については、「[メッセージ](mapi-messages.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0fc77-137">For more information, see [Messages](mapi-messages.md).</span></span> 
   
 

@@ -13,59 +13,59 @@ api_type:
 ms.assetid: ca1eedba-c617-4403-8490-315ab75f2edb
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ea0cd256b025ae519272f32522bebbe6e9e17b5e
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25383703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339815"
 ---
-# <a name="pidlidtoattendeesstring-canonical-property"></a><span data-ttu-id="9a519-103">PidLidToAttendeesString 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="9a519-103">PidLidToAttendeesString Canonical Property</span></span>
+# <a name="pidlidtoattendeesstring-canonical-property"></a><span data-ttu-id="b593a-103">PidLidToAttendeesString 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="b593a-103">PidLidToAttendeesString Canonical Property</span></span>
 
   
   
-<span data-ttu-id="9a519-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="9a519-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="b593a-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b593a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="9a519-105">出席者全員のうっかりしているユーザーも必須出席者の一覧が含まれています。</span><span class="sxs-lookup"><span data-stu-id="9a519-105">Contains a list of all the sendable attendees who are also required attendees.</span></span>
+<span data-ttu-id="b593a-105">出席者が必要とするすべての送信可能出席者の一覧が含まれています。</span><span class="sxs-lookup"><span data-stu-id="b593a-105">Contains a list of all the sendable attendees who are also required attendees.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="9a519-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="9a519-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="9a519-107">dispidToAttendeesString</span><span class="sxs-lookup"><span data-stu-id="9a519-107">dispidToAttendeesString</span></span>  <br/> |
-|<span data-ttu-id="9a519-108">プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="9a519-108">Property set:</span></span>  <br/> |<span data-ttu-id="9a519-109">PSETID_Appointment</span><span class="sxs-lookup"><span data-stu-id="9a519-109">PSETID_Appointment</span></span>  <br/> |
-|<span data-ttu-id="9a519-110">長い ID (LID):</span><span class="sxs-lookup"><span data-stu-id="9a519-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="9a519-111">0x0000823B</span><span class="sxs-lookup"><span data-stu-id="9a519-111">0x0000823B</span></span>  <br/> |
-|<span data-ttu-id="9a519-112">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="9a519-112">Data type:</span></span>  <br/> |<span data-ttu-id="9a519-113">PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="9a519-113">PT_UNICODE</span></span>  <br/> |
-|<span data-ttu-id="9a519-114">エリア:</span><span class="sxs-lookup"><span data-stu-id="9a519-114">Area:</span></span>  <br/> |<span data-ttu-id="9a519-115">会議</span><span class="sxs-lookup"><span data-stu-id="9a519-115">Meetings</span></span>  <br/> |
+|<span data-ttu-id="b593a-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="b593a-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="b593a-107">dispidToAttendeesString</span><span class="sxs-lookup"><span data-stu-id="b593a-107">dispidToAttendeesString</span></span>  <br/> |
+|<span data-ttu-id="b593a-108">プロパティセット:</span><span class="sxs-lookup"><span data-stu-id="b593a-108">Property set:</span></span>  <br/> |<span data-ttu-id="b593a-109">PSETID_Appointment</span><span class="sxs-lookup"><span data-stu-id="b593a-109">PSETID_Appointment</span></span>  <br/> |
+|<span data-ttu-id="b593a-110">ロング ID (LID):</span><span class="sxs-lookup"><span data-stu-id="b593a-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="b593a-111">0x0000823b</span><span class="sxs-lookup"><span data-stu-id="b593a-111">0x0000823B</span></span>  <br/> |
+|<span data-ttu-id="b593a-112">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="b593a-112">Data type:</span></span>  <br/> |<span data-ttu-id="b593a-113">PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="b593a-113">PT_UNICODE</span></span>  <br/> |
+|<span data-ttu-id="b593a-114">エリア:</span><span class="sxs-lookup"><span data-stu-id="b593a-114">Area:</span></span>  <br/> |<span data-ttu-id="b593a-115">Meetings</span><span class="sxs-lookup"><span data-stu-id="b593a-115">Meetings</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="9a519-116">備考</span><span class="sxs-lookup"><span data-stu-id="9a519-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b593a-116">解説</span><span class="sxs-lookup"><span data-stu-id="b593a-116">Remarks</span></span>
 
-<span data-ttu-id="9a519-117">各出席者の値は、出席者のアドレス帳の**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) プロパティです。</span><span class="sxs-lookup"><span data-stu-id="9a519-117">The value for each attendee is the **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) property of the attendee's Address Book.</span></span> <span data-ttu-id="9a519-118">別のエントリは、スペースの後にセミコロンで区切る必要があります。</span><span class="sxs-lookup"><span data-stu-id="9a519-118">Separate entries must be delimited by a semicolon followed by a space.</span></span> <span data-ttu-id="9a519-119">このプロパティが必要ではありません。</span><span class="sxs-lookup"><span data-stu-id="9a519-119">This property is not required.</span></span>
+<span data-ttu-id="b593a-117">各出席者の値は、出席者のアドレス帳の**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) プロパティです。</span><span class="sxs-lookup"><span data-stu-id="b593a-117">The value for each attendee is the **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) property of the attendee's Address Book.</span></span> <span data-ttu-id="b593a-118">エントリを区切るには、セミコロンの後にスペースを付ける必要があります。</span><span class="sxs-lookup"><span data-stu-id="b593a-118">Separate entries must be delimited by a semicolon followed by a space.</span></span> <span data-ttu-id="b593a-119">このプロパティは必須ではありません。</span><span class="sxs-lookup"><span data-stu-id="b593a-119">This property is not required.</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="9a519-120">関連リソース</span><span class="sxs-lookup"><span data-stu-id="9a519-120">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="b593a-120">関連リソース</span><span class="sxs-lookup"><span data-stu-id="b593a-120">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="9a519-121">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="9a519-121">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="b593a-121">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="b593a-121">Protocol specifications</span></span>
 
-<span data-ttu-id="9a519-122">[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="9a519-122">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="b593a-122">[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="b593a-122">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="9a519-123">プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="9a519-123">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="b593a-123">プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="b593a-123">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="9a519-124">[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="9a519-124">[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="b593a-124">[[OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="b593a-124">[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="9a519-125">プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。</span><span class="sxs-lookup"><span data-stu-id="9a519-125">Specifies the properties and operations for appointment, meeting request, and response messages.</span></span>
+> <span data-ttu-id="b593a-125">予定、会議出席依頼、および応答メッセージのプロパティと操作を指定します。</span><span class="sxs-lookup"><span data-stu-id="b593a-125">Specifies the properties and operations for appointment, meeting request, and response messages.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="9a519-126">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="9a519-126">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="b593a-126">ヘッダーファイル</span><span class="sxs-lookup"><span data-stu-id="b593a-126">Header files</span></span>
 
-<span data-ttu-id="9a519-127">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="9a519-127">Mapidefs.h</span></span>
+<span data-ttu-id="b593a-127">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="b593a-127">Mapidefs.h</span></span>
   
-> <span data-ttu-id="9a519-128">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="9a519-128">Provides data type definitions.</span></span>
+> <span data-ttu-id="b593a-128">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="b593a-128">Provides data type definitions.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="9a519-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="9a519-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b593a-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="b593a-129">See also</span></span>
 
 
 
-[<span data-ttu-id="9a519-130">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="9a519-130">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="b593a-130">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="b593a-130">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="9a519-131">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="9a519-131">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="b593a-131">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="b593a-131">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="9a519-132">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="9a519-132">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="b593a-132">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="b593a-132">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="9a519-133">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="9a519-133">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="b593a-133">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="b593a-133">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

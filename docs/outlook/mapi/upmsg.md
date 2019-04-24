@@ -7,21 +7,21 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5fe3956b-819a-3edf-0e49-7a44bcfbabcd
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: fa8b84e7baed74bda25ec1b20bd79fb121a838fd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 1e0e2f9b794c4cee25488a754290922e58b7658d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338872"
 ---
-# <a name="upmsg"></a><span data-ttu-id="a4926-103">UPMSG</span><span class="sxs-lookup"><span data-stu-id="a4926-103">UPMSG</span></span>
+# <a name="upmsg"></a><span data-ttu-id="0c335-103">UPMSG</span><span class="sxs-lookup"><span data-stu-id="0c335-103">UPMSG</span></span>
 
-<span data-ttu-id="a4926-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="a4926-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="0c335-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="0c335-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="a4926-105">[メッセージの状態をアップロード](upload-message-state.md)する際に Outlook アイテムをアップロードする方法の詳細については。</span><span class="sxs-lookup"><span data-stu-id="a4926-105">Information for uploading an Outlook item during the [upload message state](upload-message-state.md).</span></span>
+<span data-ttu-id="0c335-105">[アップロードメッセージの状態](upload-message-state.md)中に Outlook アイテムをアップロードするための情報。</span><span class="sxs-lookup"><span data-stu-id="0c335-105">Information for uploading an Outlook item during the [upload message state](upload-message-state.md).</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="a4926-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="a4926-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="0c335-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="0c335-106">Quick info</span></span>
 
 ```cpp
 struct UPMSG 
@@ -38,90 +38,90 @@ struct UPMSG
 };
 ```
 
-## <a name="members"></a><span data-ttu-id="a4926-107">Members</span><span class="sxs-lookup"><span data-stu-id="a4926-107">Members</span></span>
+## <a name="members"></a><span data-ttu-id="0c335-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="0c335-107">Members</span></span>
 
- <span data-ttu-id="a4926-108">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="a4926-108">_ulFlags_</span></span>
+ <span data-ttu-id="0c335-108">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="0c335-108">_ulFlags_</span></span>
   
-> <span data-ttu-id="a4926-109">[out]/[in] アップロード中に、適切な動作を決定するフラグ。</span><span class="sxs-lookup"><span data-stu-id="a4926-109">[out]/[in] Flags to determine appropriate behavior during the upload.</span></span> 
+> <span data-ttu-id="0c335-109">[out]/[in] フラグを指定して、アップロード中の適切な動作を決定します。</span><span class="sxs-lookup"><span data-stu-id="0c335-109">[out]/[in] Flags to determine appropriate behavior during the upload.</span></span> 
     
-  - <span data-ttu-id="a4926-110">UPM_ASSOC</span><span class="sxs-lookup"><span data-stu-id="a4926-110">UPM_ASSOC</span></span>
+  - <span data-ttu-id="0c335-110">UPM_ASSOC</span><span class="sxs-lookup"><span data-stu-id="0c335-110">UPM_ASSOC</span></span>
     
-    - <span data-ttu-id="a4926-111">[out]項目に関連付けられています。</span><span class="sxs-lookup"><span data-stu-id="a4926-111">[out] Item is associated.</span></span>
+    - <span data-ttu-id="0c335-111">読み上げ項目が関連付けられています。</span><span class="sxs-lookup"><span data-stu-id="0c335-111">[out] Item is associated.</span></span>
     
-  - <span data-ttu-id="a4926-112">UPM_NEW</span><span class="sxs-lookup"><span data-stu-id="a4926-112">UPM_NEW</span></span>
+  - <span data-ttu-id="0c335-112">UPM_NEW</span><span class="sxs-lookup"><span data-stu-id="0c335-112">UPM_NEW</span></span>
     
-    - <span data-ttu-id="a4926-113">[out]新しい項目。</span><span class="sxs-lookup"><span data-stu-id="a4926-113">[out] New item.</span></span> 
+    - <span data-ttu-id="0c335-113">読み上げ新しいアイテム。</span><span class="sxs-lookup"><span data-stu-id="0c335-113">[out] New item.</span></span> 
     
-  - <span data-ttu-id="a4926-114">UPM_MOV</span><span class="sxs-lookup"><span data-stu-id="a4926-114">UPM_MOV</span></span>
+  - <span data-ttu-id="0c335-114">UPM_MOV</span><span class="sxs-lookup"><span data-stu-id="0c335-114">UPM_MOV</span></span>
     
-    - <span data-ttu-id="a4926-115">[out]項目をここに移動しました。</span><span class="sxs-lookup"><span data-stu-id="a4926-115">[out] Item was moved here.</span></span>
+    - <span data-ttu-id="0c335-115">読み上げアイテムはここに移動されました。</span><span class="sxs-lookup"><span data-stu-id="0c335-115">[out] Item was moved here.</span></span>
     
-  - <span data-ttu-id="a4926-116">UPM_MOD_PROPS</span><span class="sxs-lookup"><span data-stu-id="a4926-116">UPM_MOD_PROPS</span></span>
+  - <span data-ttu-id="0c335-116">UPM_MOD_PROPS</span><span class="sxs-lookup"><span data-stu-id="0c335-116">UPM_MOD_PROPS</span></span>
     
-    - <span data-ttu-id="a4926-117">[out]アイテムのプロパティが変更されました。</span><span class="sxs-lookup"><span data-stu-id="a4926-117">[out] Item properties were modified.</span></span>
+    - <span data-ttu-id="0c335-117">読み上げアイテムのプロパティが変更されました。</span><span class="sxs-lookup"><span data-stu-id="0c335-117">[out] Item properties were modified.</span></span>
     
-  - <span data-ttu-id="a4926-118">UPM_HEADER</span><span class="sxs-lookup"><span data-stu-id="a4926-118">UPM_HEADER</span></span>
+  - <span data-ttu-id="0c335-118">UPM_HEADER</span><span class="sxs-lookup"><span data-stu-id="0c335-118">UPM_HEADER</span></span>
     
-    - <span data-ttu-id="a4926-119">[out]メッセージ ヘッダーの項目です。</span><span class="sxs-lookup"><span data-stu-id="a4926-119">[out] Item is a message header.</span></span>
+    - <span data-ttu-id="0c335-119">読み上げアイテムはメッセージヘッダーです。</span><span class="sxs-lookup"><span data-stu-id="0c335-119">[out] Item is a message header.</span></span>
     
-  - <span data-ttu-id="a4926-120">UPM_OK</span><span class="sxs-lookup"><span data-stu-id="a4926-120">UPM_OK</span></span>
+  - <span data-ttu-id="0c335-120">UPM_OK</span><span class="sxs-lookup"><span data-stu-id="0c335-120">UPM_OK</span></span>
     
-    - <span data-ttu-id="a4926-121">[in]アップロードが正常に完了しました。</span><span class="sxs-lookup"><span data-stu-id="a4926-121">[in] Upload was successful.</span></span> <span data-ttu-id="a4926-122">クライアントでは、情報をサーバーにアップロードした後、これを設定します。</span><span class="sxs-lookup"><span data-stu-id="a4926-122">The client sets this after uploading information to the server.</span></span>
+    - <span data-ttu-id="0c335-121">順番アップロードに成功しました。</span><span class="sxs-lookup"><span data-stu-id="0c335-121">[in] Upload was successful.</span></span> <span data-ttu-id="0c335-122">クライアントは、情報をサーバーにアップロードした後にこれを設定します。</span><span class="sxs-lookup"><span data-stu-id="0c335-122">The client sets this after uploading information to the server.</span></span>
     
-  - <span data-ttu-id="a4926-123">UPM_MOVED</span><span class="sxs-lookup"><span data-stu-id="a4926-123">UPM_MOVED</span></span>
+  - <span data-ttu-id="0c335-123">UPM_MOVED</span><span class="sxs-lookup"><span data-stu-id="0c335-123">UPM_MOVED</span></span>
     
-    - <span data-ttu-id="a4926-124">[in]項目が正常に移動されました。</span><span class="sxs-lookup"><span data-stu-id="a4926-124">[in] Item was moved successfully.</span></span>
+    - <span data-ttu-id="0c335-124">順番アイテムは正常に移動されました。</span><span class="sxs-lookup"><span data-stu-id="0c335-124">[in] Item was moved successfully.</span></span>
     
-  - <span data-ttu-id="a4926-125">UPM_COMMIT</span><span class="sxs-lookup"><span data-stu-id="a4926-125">UPM_COMMIT</span></span>
+  - <span data-ttu-id="0c335-125">UPM_COMMIT</span><span class="sxs-lookup"><span data-stu-id="0c335-125">UPM_COMMIT</span></span>
     
-    - <span data-ttu-id="a4926-126">[in]今すぐアップロードの状態を反映します。</span><span class="sxs-lookup"><span data-stu-id="a4926-126">[in] Commit upload state now.</span></span>
+    - <span data-ttu-id="0c335-126">順番今すぐアップロードの状態をコミットします。</span><span class="sxs-lookup"><span data-stu-id="0c335-126">[in] Commit upload state now.</span></span>
     
-  - <span data-ttu-id="a4926-127">UPM_DELETE</span><span class="sxs-lookup"><span data-stu-id="a4926-127">UPM_DELETE</span></span>
+  - <span data-ttu-id="0c335-127">UPM_DELETE</span><span class="sxs-lookup"><span data-stu-id="0c335-127">UPM_DELETE</span></span>
     
-    - <span data-ttu-id="a4926-128">[in]アイテムを今すぐ削除します。</span><span class="sxs-lookup"><span data-stu-id="a4926-128">[in] Delete item now.</span></span>
+    - <span data-ttu-id="0c335-128">順番今すぐアイテムを削除します。</span><span class="sxs-lookup"><span data-stu-id="0c335-128">[in] Delete item now.</span></span>
     
-  - <span data-ttu-id="a4926-129">UPM_SAVE</span><span class="sxs-lookup"><span data-stu-id="a4926-129">UPM_SAVE</span></span>
+  - <span data-ttu-id="0c335-129">UPM_SAVE</span><span class="sxs-lookup"><span data-stu-id="0c335-129">UPM_SAVE</span></span>
     
-    - <span data-ttu-id="a4926-130">[in]アイテムに変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="a4926-130">[in] Save changes to the item.</span></span>
+    - <span data-ttu-id="0c335-130">順番アイテムへの変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="0c335-130">[in] Save changes to the item.</span></span>
     
-<span data-ttu-id="a4926-131">_pmsg_</span><span class="sxs-lookup"><span data-stu-id="a4926-131">_pmsg_</span></span>
+<span data-ttu-id="0c335-131">_pmsg_</span><span class="sxs-lookup"><span data-stu-id="0c335-131">_pmsg_</span></span>
   
-> <span data-ttu-id="a4926-132">[out]アイテム オブジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="a4926-132">[out] Open item object.</span></span> <span data-ttu-id="a4926-133">**LPMESSAGE**の型定義の mapidefs.h を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a4926-133">See mapidefs.h for the type definition of **LPMESSAGE**.</span></span> 
+> <span data-ttu-id="0c335-132">読み上げアイテムオブジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="0c335-132">[out] Open item object.</span></span> <span data-ttu-id="0c335-133">**lpmessage**の種類の定義については、「mapidefs.h」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0c335-133">See mapidefs.h for the type definition of **LPMESSAGE**.</span></span> 
     
-<span data-ttu-id="a4926-134">_meid_</span><span class="sxs-lookup"><span data-stu-id="a4926-134">_meid_</span></span>
+<span data-ttu-id="0c335-134">_meid_</span><span class="sxs-lookup"><span data-stu-id="0c335-134">_meid_</span></span>
   
-> <span data-ttu-id="a4926-135">[out]アイテムのエントリ ID です。</span><span class="sxs-lookup"><span data-stu-id="a4926-135">[out] Entry ID of item.</span></span>
+> <span data-ttu-id="0c335-135">読み上げアイテムのエントリ ID。</span><span class="sxs-lookup"><span data-stu-id="0c335-135">[out] Entry ID of item.</span></span>
     
-<span data-ttu-id="a4926-136">_binReserved1_</span><span class="sxs-lookup"><span data-stu-id="a4926-136">_binReserved1_</span></span>
+<span data-ttu-id="0c335-136">_binReserved1_</span><span class="sxs-lookup"><span data-stu-id="0c335-136">_binReserved1_</span></span>
   
-> <span data-ttu-id="a4926-137">[in]このメンバーは、Outlook の内部使用に予約されている、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a4926-137">[in] This member is reserved for the internal use of Outlook and is not supported.</span></span> 
+> <span data-ttu-id="0c335-137">順番このメンバーは、Outlook の内部使用のために予約されており、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0c335-137">[in] This member is reserved for the internal use of Outlook and is not supported.</span></span> 
     
-<span data-ttu-id="a4926-138">_binReserved2_</span><span class="sxs-lookup"><span data-stu-id="a4926-138">_binReserved2_</span></span>
+<span data-ttu-id="0c335-138">_binReserved2_</span><span class="sxs-lookup"><span data-stu-id="0c335-138">_binReserved2_</span></span>
   
-> <span data-ttu-id="a4926-139">[in]このメンバーは、Outlook の内部使用に予約されている、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="a4926-139">[in] This member is reserved for the internal use of Outlook and is not supported.</span></span> 
+> <span data-ttu-id="0c335-139">順番このメンバーは、Outlook の内部使用のために予約されており、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="0c335-139">[in] This member is reserved for the internal use of Outlook and is not supported.</span></span> 
     
-<span data-ttu-id="a4926-140">_feid_</span><span class="sxs-lookup"><span data-stu-id="a4926-140">_feid_</span></span>
+<span data-ttu-id="0c335-140">_feid_</span><span class="sxs-lookup"><span data-stu-id="0c335-140">_feid_</span></span>
   
-> <span data-ttu-id="a4926-141">[out]項目が移動された場合、元のフォルダーのエントリ ID です。</span><span class="sxs-lookup"><span data-stu-id="a4926-141">[out] Entry ID of the source folder, if item was moved.</span></span>
+> <span data-ttu-id="0c335-141">読み上げアイテムが移動された場合は、ソースフォルダーのエントリ ID。</span><span class="sxs-lookup"><span data-stu-id="0c335-141">[out] Entry ID of the source folder, if item was moved.</span></span>
     
-<span data-ttu-id="a4926-142">_binChg_</span><span class="sxs-lookup"><span data-stu-id="a4926-142">_binChg_</span></span>
+<span data-ttu-id="0c335-142">_binChg_</span><span class="sxs-lookup"><span data-stu-id="0c335-142">_binChg_</span></span>
   
-> <span data-ttu-id="a4926-143">[out]項目が移動された場合は、同期先の項目のキーを変更します。</span><span class="sxs-lookup"><span data-stu-id="a4926-143">[out] Change key of the destination item, if item was moved.</span></span> <span data-ttu-id="a4926-144">**SBinary**の型の定義の mapidefs.h を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a4926-144">See mapidefs.h for the type definition of **SBinary**.</span></span> 
+> <span data-ttu-id="0c335-143">読み上げアイテムが移動された場合は、コピー先アイテムのキーを変更します。</span><span class="sxs-lookup"><span data-stu-id="0c335-143">[out] Change key of the destination item, if item was moved.</span></span> <span data-ttu-id="0c335-144">**sbinary**の型定義については、「mapidefs.h」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0c335-144">See mapidefs.h for the type definition of **SBinary**.</span></span> 
     
-<span data-ttu-id="a4926-145">_binPcl_</span><span class="sxs-lookup"><span data-stu-id="a4926-145">_binPcl_</span></span>
+<span data-ttu-id="0c335-145">_binpcl_</span><span class="sxs-lookup"><span data-stu-id="0c335-145">_binPcl_</span></span>
   
-> <span data-ttu-id="a4926-146">[out]項目が移動された場合は、同期先の項目の一覧を変更します。</span><span class="sxs-lookup"><span data-stu-id="a4926-146">[out] Change list of the destination item, if item was moved.</span></span> <span data-ttu-id="a4926-147">**SBinary**の型の定義の mapidefs.h を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a4926-147">See mapidefs.h for the type definition of **SBinary**.</span></span> 
+> <span data-ttu-id="0c335-146">読み上げアイテムが移動された場合は、コピー先アイテムのリストを変更します。</span><span class="sxs-lookup"><span data-stu-id="0c335-146">[out] Change list of the destination item, if item was moved.</span></span> <span data-ttu-id="0c335-147">**sbinary**の型定義については、「mapidefs.h」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0c335-147">See mapidefs.h for the type definition of **SBinary**.</span></span> 
     
-<span data-ttu-id="a4926-148">_skeySrc_</span><span class="sxs-lookup"><span data-stu-id="a4926-148">_skeySrc_</span></span>
+<span data-ttu-id="0c335-148">_skeysrc_</span><span class="sxs-lookup"><span data-stu-id="0c335-148">_skeySrc_</span></span>
   
-> <span data-ttu-id="a4926-149">[out]項目が移動された場合、元の項目のソースのキーです。</span><span class="sxs-lookup"><span data-stu-id="a4926-149">[out] Source key of the source item, if item was moved.</span></span>
+> <span data-ttu-id="0c335-149">読み上げアイテムが移動された場合は、ソースアイテムのソースキー。</span><span class="sxs-lookup"><span data-stu-id="0c335-149">[out] Source key of the source item, if item was moved.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="a4926-150">関連項目</span><span class="sxs-lookup"><span data-stu-id="a4926-150">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0c335-150">関連項目</span><span class="sxs-lookup"><span data-stu-id="0c335-150">See also</span></span>
 
-- [<span data-ttu-id="a4926-151">レプリケーション API について</span><span class="sxs-lookup"><span data-stu-id="a4926-151">About the Replication API</span></span>](about-the-replication-api.md)
-- [<span data-ttu-id="a4926-152">レプリケーション ステート マシンについて</span><span class="sxs-lookup"><span data-stu-id="a4926-152">About the Replication State Machine</span></span>](about-the-replication-state-machine.md)
-- [<span data-ttu-id="a4926-153">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="a4926-153">MAPI Constants</span></span>](mapi-constants.md)
-- [<span data-ttu-id="a4926-154">FEID</span><span class="sxs-lookup"><span data-stu-id="a4926-154">FEID</span></span>](feid.md)
-- [<span data-ttu-id="a4926-155">MEID</span><span class="sxs-lookup"><span data-stu-id="a4926-155">MEID</span></span>](meid.md)
-- [<span data-ttu-id="a4926-156">SKEY</span><span class="sxs-lookup"><span data-stu-id="a4926-156">SKEY</span></span>](skey.md)
+- [<span data-ttu-id="0c335-151">レプリケーション API について</span><span class="sxs-lookup"><span data-stu-id="0c335-151">About the Replication API</span></span>](about-the-replication-api.md)
+- [<span data-ttu-id="0c335-152">レプリケーション状態のマシンについて</span><span class="sxs-lookup"><span data-stu-id="0c335-152">About the Replication State Machine</span></span>](about-the-replication-state-machine.md)
+- [<span data-ttu-id="0c335-153">MAPI 定数</span><span class="sxs-lookup"><span data-stu-id="0c335-153">MAPI Constants</span></span>](mapi-constants.md)
+- [<span data-ttu-id="0c335-154">FEID</span><span class="sxs-lookup"><span data-stu-id="0c335-154">FEID</span></span>](feid.md)
+- [<span data-ttu-id="0c335-155">MEID</span><span class="sxs-lookup"><span data-stu-id="0c335-155">MEID</span></span>](meid.md)
+- [<span data-ttu-id="0c335-156">SKEY</span><span class="sxs-lookup"><span data-stu-id="0c335-156">SKEY</span></span>](skey.md)
 

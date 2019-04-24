@@ -13,55 +13,55 @@ api_type:
 ms.assetid: a42fb112-7be5-4b7b-a2e0-7e7f7f58b9a4
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a8cab5659f936f530bc1ac4955dfb3b68cea9223
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337955"
 ---
-# <a name="pidlidemail3displayname-canonical-property"></a><span data-ttu-id="029ef-103">PidLidEmail3DisplayName 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="029ef-103">PidLidEmail3DisplayName Canonical Property</span></span>
+# <a name="pidlidemail3displayname-canonical-property"></a><span data-ttu-id="ad7ac-103">PidLidEmail3DisplayName 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="ad7ac-103">PidLidEmail3DisplayName Canonical Property</span></span>
 
   
   
-<span data-ttu-id="029ef-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="029ef-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="ad7ac-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ad7ac-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="029ef-105">3 番目の電子メール アドレスのユーザーが読み取り可能な表示名を指定します。</span><span class="sxs-lookup"><span data-stu-id="029ef-105">Specifies the user-readable display name for the third email address.</span></span>
+<span data-ttu-id="ad7ac-105">3番目の電子メールアドレスに対してユーザーが判読できる表示名を指定します。</span><span class="sxs-lookup"><span data-stu-id="ad7ac-105">Specifies the user-readable display name for the third email address.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="029ef-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="029ef-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="029ef-107">dispidEmail3DisplayName</span><span class="sxs-lookup"><span data-stu-id="029ef-107">dispidEmail3DisplayName</span></span>  <br/> |
-|<span data-ttu-id="029ef-108">プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="029ef-108">Property set:</span></span>  <br/> |<span data-ttu-id="029ef-109">PSETID_Address</span><span class="sxs-lookup"><span data-stu-id="029ef-109">PSETID_Address</span></span>  <br/> |
-|<span data-ttu-id="029ef-110">長い ID (LID):</span><span class="sxs-lookup"><span data-stu-id="029ef-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="029ef-111">0x000080A0</span><span class="sxs-lookup"><span data-stu-id="029ef-111">0x000080A0</span></span>  <br/> |
-|<span data-ttu-id="029ef-112">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="029ef-112">Data type:</span></span>  <br/> |<span data-ttu-id="029ef-113">PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="029ef-113">PT_UNICODE</span></span>  <br/> |
-|<span data-ttu-id="029ef-114">エリア:</span><span class="sxs-lookup"><span data-stu-id="029ef-114">Area:</span></span>  <br/> |<span data-ttu-id="029ef-115">Contact</span><span class="sxs-lookup"><span data-stu-id="029ef-115">Contact</span></span>  <br/> |
+|<span data-ttu-id="ad7ac-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="ad7ac-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="ad7ac-107">dispidEmail3DisplayName</span><span class="sxs-lookup"><span data-stu-id="ad7ac-107">dispidEmail3DisplayName</span></span>  <br/> |
+|<span data-ttu-id="ad7ac-108">プロパティセット:</span><span class="sxs-lookup"><span data-stu-id="ad7ac-108">Property set:</span></span>  <br/> |<span data-ttu-id="ad7ac-109">PSETID_Address</span><span class="sxs-lookup"><span data-stu-id="ad7ac-109">PSETID_Address</span></span>  <br/> |
+|<span data-ttu-id="ad7ac-110">ロング ID (LID):</span><span class="sxs-lookup"><span data-stu-id="ad7ac-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="ad7ac-111">0x000080a0</span><span class="sxs-lookup"><span data-stu-id="ad7ac-111">0x000080A0</span></span>  <br/> |
+|<span data-ttu-id="ad7ac-112">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="ad7ac-112">Data type:</span></span>  <br/> |<span data-ttu-id="ad7ac-113">PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="ad7ac-113">PT_UNICODE</span></span>  <br/> |
+|<span data-ttu-id="ad7ac-114">エリア:</span><span class="sxs-lookup"><span data-stu-id="ad7ac-114">Area:</span></span>  <br/> |<span data-ttu-id="ad7ac-115">連絡先</span><span class="sxs-lookup"><span data-stu-id="ad7ac-115">Contact</span></span>  <br/> |
    
-## <a name="related-resources"></a><span data-ttu-id="029ef-116">関連リソース</span><span class="sxs-lookup"><span data-stu-id="029ef-116">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="ad7ac-116">関連リソース</span><span class="sxs-lookup"><span data-stu-id="ad7ac-116">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="029ef-117">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="029ef-117">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="ad7ac-117">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="ad7ac-117">Protocol specifications</span></span>
 
-<span data-ttu-id="029ef-118">[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="029ef-118">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="ad7ac-118">[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="ad7ac-118">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="029ef-119">プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="029ef-119">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="ad7ac-119">プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="ad7ac-119">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="029ef-120">[[MS OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="029ef-120">[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="ad7ac-120">[[OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="ad7ac-120">[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="029ef-121">プロパティは、連絡先、個人用配布リストの許可の操作を指定します。</span><span class="sxs-lookup"><span data-stu-id="029ef-121">Specifies the properties and operations that are permissible for contacts and personal distribution lists.</span></span>
+> <span data-ttu-id="ad7ac-121">連絡先および個人用配布リストに対して許容されるプロパティと操作を指定します。</span><span class="sxs-lookup"><span data-stu-id="ad7ac-121">Specifies the properties and operations that are permissible for contacts and personal distribution lists.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="029ef-122">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="029ef-122">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="ad7ac-122">ヘッダーファイル</span><span class="sxs-lookup"><span data-stu-id="ad7ac-122">Header files</span></span>
 
-<span data-ttu-id="029ef-123">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="029ef-123">Mapidefs.h</span></span>
+<span data-ttu-id="ad7ac-123">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="ad7ac-123">Mapidefs.h</span></span>
   
-> <span data-ttu-id="029ef-124">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="029ef-124">Provides data type definitions.</span></span>
+> <span data-ttu-id="ad7ac-124">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="ad7ac-124">Provides data type definitions.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="029ef-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="029ef-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ad7ac-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="ad7ac-125">See also</span></span>
 
 
 
-[<span data-ttu-id="029ef-126">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="029ef-126">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="ad7ac-126">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="ad7ac-126">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="029ef-127">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="029ef-127">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="ad7ac-127">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="ad7ac-127">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="029ef-128">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="029ef-128">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="ad7ac-128">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="ad7ac-128">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="029ef-129">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="029ef-129">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="ad7ac-129">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="ad7ac-129">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

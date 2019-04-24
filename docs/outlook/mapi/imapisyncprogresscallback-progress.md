@@ -1,5 +1,5 @@
 ---
-title: IMAPISyncProgressCallbackProgress
+title: imapisyncprogress scallbackprogress
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6797cd1c-8a0b-4f42-ba56-6162d8e7b058
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5803441486f01883d08cd99048d8eae133cd3f14
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 9b44337a4bc9615558ac6337e99ea206ba063b1a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341259"
 ---
-# <a name="imapisyncprogresscallbackprogress"></a><span data-ttu-id="e9480-103">IMAPISyncProgressCallback::Progress</span><span class="sxs-lookup"><span data-stu-id="e9480-103">IMAPISyncProgressCallback::Progress</span></span>
+# <a name="imapisyncprogresscallbackprogress"></a><span data-ttu-id="8cd21-103">IMAPISyncProgressCallback::Progress</span><span class="sxs-lookup"><span data-stu-id="8cd21-103">IMAPISyncProgressCallback::Progress</span></span>
 
   
   
-<span data-ttu-id="e9480-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="e9480-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="8cd21-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="8cd21-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="e9480-105">[送受信] ダイアログ ボックスの状態を更新します。</span><span class="sxs-lookup"><span data-stu-id="e9480-105">Updates the status in the Send/Receive dialog.</span></span> <span data-ttu-id="e9480-106">ストア プロバイダーは、定期的にこの関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="e9480-106">The store provider periodically calls this function.</span></span>
+<span data-ttu-id="8cd21-105">送信/受信ダイアログの状態を更新します。</span><span class="sxs-lookup"><span data-stu-id="8cd21-105">Updates the status in the Send/Receive dialog.</span></span> <span data-ttu-id="8cd21-106">ストアプロバイダーは、この関数を定期的に呼び出します。</span><span class="sxs-lookup"><span data-stu-id="8cd21-106">The store provider periodically calls this function.</span></span>
   
 ```cpp
 HRESULT Progress(
@@ -35,29 +35,29 @@ HRESULT Progress(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="e9480-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="e9480-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="8cd21-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="8cd21-107">Parameters</span></span>
 
- <span data-ttu-id="e9480-108">**pwczsProgress**</span><span class="sxs-lookup"><span data-stu-id="e9480-108">**pwczsProgress**</span></span>
+ <span data-ttu-id="8cd21-108">**pwczsProgress**</span><span class="sxs-lookup"><span data-stu-id="8cd21-108">**pwczsProgress**</span></span>
   
-> <span data-ttu-id="e9480-109">現在進行中のステップを表示する文字列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="e9480-109">A pointer to a string that displays the current progress step.</span></span> <span data-ttu-id="e9480-110">進捗状況を更新するのには NULL を指定できます。</span><span class="sxs-lookup"><span data-stu-id="e9480-110">It can be NULL to update progress.</span></span>
+> <span data-ttu-id="8cd21-109">現在の進行状況のステップを表示する文字列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="8cd21-109">A pointer to a string that displays the current progress step.</span></span> <span data-ttu-id="8cd21-110">進捗状況を更新する場合は、NULL にすることができます。</span><span class="sxs-lookup"><span data-stu-id="8cd21-110">It can be NULL to update progress.</span></span>
     
- <span data-ttu-id="e9480-111">**ulIndex**</span><span class="sxs-lookup"><span data-stu-id="e9480-111">**ulIndex**</span></span>
+ <span data-ttu-id="8cd21-111">**ulindex**</span><span class="sxs-lookup"><span data-stu-id="8cd21-111">**ulIndex**</span></span>
   
-> <span data-ttu-id="e9480-112">進行中の現在の位置。</span><span class="sxs-lookup"><span data-stu-id="e9480-112">The current position in progress.</span></span>
+> <span data-ttu-id="8cd21-112">現在進行中の位置。</span><span class="sxs-lookup"><span data-stu-id="8cd21-112">The current position in progress.</span></span>
     
- <span data-ttu-id="e9480-113">**ulIndexMax**</span><span class="sxs-lookup"><span data-stu-id="e9480-113">**ulIndexMax**</span></span>
+ <span data-ttu-id="8cd21-113">**ulindexmax**</span><span class="sxs-lookup"><span data-stu-id="8cd21-113">**ulIndexMax**</span></span>
   
-> <span data-ttu-id="e9480-114">完全な進捗状況を示すインデックス。</span><span class="sxs-lookup"><span data-stu-id="e9480-114">The index indicating complete progress.</span></span>
+> <span data-ttu-id="8cd21-114">完全な進捗状況を示すインデックス。</span><span class="sxs-lookup"><span data-stu-id="8cd21-114">The index indicating complete progress.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="e9480-115">�߂�l</span><span class="sxs-lookup"><span data-stu-id="e9480-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="8cd21-115">戻り値</span><span class="sxs-lookup"><span data-stu-id="8cd21-115">Return value</span></span>
 
-<span data-ttu-id="e9480-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="e9480-116">S_OK</span></span> 
+<span data-ttu-id="8cd21-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="8cd21-116">S_OK</span></span> 
   
-> <span data-ttu-id="e9480-117">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="e9480-117">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="8cd21-117">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="8cd21-117">The call succeeded and has returned the expected value or values.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="e9480-118">関連項目</span><span class="sxs-lookup"><span data-stu-id="e9480-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8cd21-118">関連項目</span><span class="sxs-lookup"><span data-stu-id="8cd21-118">See also</span></span>
 
 
 
-[<span data-ttu-id="e9480-119">IMAPISyncProgressCallback : IUnknown</span><span class="sxs-lookup"><span data-stu-id="e9480-119">IMAPISyncProgressCallback : IUnknown</span></span>](imapisyncprogresscallbackiunknown.md)
+[<span data-ttu-id="8cd21-119">IMAPISyncProgressCallback : IUnknown</span><span class="sxs-lookup"><span data-stu-id="8cd21-119">IMAPISyncProgressCallback : IUnknown</span></span>](imapisyncprogresscallbackiunknown.md)
 

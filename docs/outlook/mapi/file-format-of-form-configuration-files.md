@@ -1,5 +1,5 @@
 ---
-title: フォーム構成ファイルの形式
+title: フォーム構成ファイルのファイル形式
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,22 +7,22 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 86e4ebd9-6df2-4346-9ce9-580f80a83884
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 95add2ca747a267b825648f0de82e8c8a83d3eb7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: d07d88d7b8b892a82832f91989e322ea3b32e040
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334826"
 ---
-# <a name="file-format-of-form-configuration-files"></a><span data-ttu-id="b064f-103">フォーム構成ファイルの形式</span><span class="sxs-lookup"><span data-stu-id="b064f-103">File format of form configuration files</span></span>
+# <a name="file-format-of-form-configuration-files"></a><span data-ttu-id="c758d-103">フォーム構成ファイルのファイル形式</span><span class="sxs-lookup"><span data-stu-id="c758d-103">File format of form configuration files</span></span>
 
-<span data-ttu-id="b064f-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b064f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="c758d-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="c758d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="b064f-105">フォーム構成ファイルは、フォームを定義するのにはフォームの開発者によって作成された形式のファイルです。</span><span class="sxs-lookup"><span data-stu-id="b064f-105">A form configuration file is a formatted file created by form developers to define a form.</span></span>
+<span data-ttu-id="c758d-105">フォーム構成ファイルは、フォーム開発者がフォームを定義するために作成した形式のファイルです。</span><span class="sxs-lookup"><span data-stu-id="c758d-105">A form configuration file is a formatted file created by form developers to define a form.</span></span>
   
-<span data-ttu-id="b064f-106">フォーム構成ファイルが使用されるためフォーム マネージャーがフォームをロードするのには、フォーム構成ファイルを使用して、各フォームを定義しなければなりません。</span><span class="sxs-lookup"><span data-stu-id="b064f-106">Because form configuration files are used by form managers to load forms, each form must be defined using a form configuration file.</span></span> <span data-ttu-id="b064f-107">フォーム構成ファイルには、.cfg ファイル名の拡張子が必要です。</span><span class="sxs-lookup"><span data-stu-id="b064f-107">Form configuration files must have the .cfg filename extension.</span></span> <span data-ttu-id="b064f-108">ファイルは、Windows 初期化ファイル (.ini ファイル) の一般的な構文に依存します。</span><span class="sxs-lookup"><span data-stu-id="b064f-108">The file follows the general syntax of a Windows initialization file (.ini file).</span></span> 
+<span data-ttu-id="c758d-106">フォーム構成ファイルはフォームマネージャーによってフォームの読み込みに使用されるため、フォーム構成ファイルを使用して各フォームを定義する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c758d-106">Because form configuration files are used by form managers to load forms, each form must be defined using a form configuration file.</span></span> <span data-ttu-id="c758d-107">フォーム構成ファイルには、拡張子が cfg である必要があります。</span><span class="sxs-lookup"><span data-stu-id="c758d-107">Form configuration files must have the .cfg filename extension.</span></span> <span data-ttu-id="c758d-108">このファイルは、Windows 初期化ファイル (.ini ファイル) の一般的な構文に従います。</span><span class="sxs-lookup"><span data-stu-id="c758d-108">The file follows the general syntax of a Windows initialization file (.ini file).</span></span> 
 
-<span data-ttu-id="b064f-109">名前付きのセクションに分かれていて、各セクションには、一連エントリと値にはが含まれています。</span><span class="sxs-lookup"><span data-stu-id="b064f-109">It is divided into named sections, and each section contains a series of entries and values.</span></span> <span data-ttu-id="b064f-110">次の種類のいずれかの値がある: 文字列、表示される文字列、文字列のプラットフォーム、パス、整数、またはグローバル一意識別子、 **GUID**です。</span><span class="sxs-lookup"><span data-stu-id="b064f-110">Values have one of the following types: string, displayed string, platform string, path, integer, or globally unique identifier, **GUID**.</span></span> <span data-ttu-id="b064f-111">フォーム構成ファイルは、任意のテキスト エディターまたはテキスト形式で保存できるワード プロセッサで作成できます。</span><span class="sxs-lookup"><span data-stu-id="b064f-111">Form configuration files can be created with any text editor or word processor that is capable of saving text files.</span></span>
+<span data-ttu-id="c758d-109">このセクションは、指定されたセクションに分かれており、各セクションには一連のエントリと値が含まれています。</span><span class="sxs-lookup"><span data-stu-id="c758d-109">It is divided into named sections, and each section contains a series of entries and values.</span></span> <span data-ttu-id="c758d-110">値の型は、string、表示された文字列、プラットフォーム文字列、パス、整数、またはグローバル一意識別子 ( **GUID**) のいずれかです。</span><span class="sxs-lookup"><span data-stu-id="c758d-110">Values have one of the following types: string, displayed string, platform string, path, integer, or globally unique identifier, **GUID**.</span></span> <span data-ttu-id="c758d-111">フォーム構成ファイルは、テキストファイルの保存が可能なテキストエディターまたはワープロを使用して作成できます。</span><span class="sxs-lookup"><span data-stu-id="c758d-111">Form configuration files can be created with any text editor or word processor that is capable of saving text files.</span></span>
   
 

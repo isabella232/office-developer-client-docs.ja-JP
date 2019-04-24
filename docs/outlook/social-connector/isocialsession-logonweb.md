@@ -1,5 +1,5 @@
 ---
-title: ISocialSessionLogonWeb
+title: i"alsessionalsessionlogonweb
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,58 +7,58 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f4217030-5fd1-4ec4-a83f-752717fbb787
-description: フォーム ベース認証を使用して、ソーシャル ネットワーク サイトにログオンします。
-ms.openlocfilehash: 4af0301d5b619ce7f9ff54b97f54b4b00408a564
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: フォームベース認証を使用してソーシャルネットワークサイトにログオンします。
+ms.openlocfilehash: 7ef7af8c1c2cdb783bdecd71b29635468e19dc6a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335365"
 ---
-# <a name="isocialsessionlogonweb"></a><span data-ttu-id="cee97-103">ISocialSession::LogonWeb</span><span class="sxs-lookup"><span data-stu-id="cee97-103">ISocialSession::LogonWeb</span></span>
+# <a name="isocialsessionlogonweb"></a><span data-ttu-id="cbe5b-103">ISocialSession::LogonWeb</span><span class="sxs-lookup"><span data-stu-id="cbe5b-103">ISocialSession::LogonWeb</span></span>
 
-<span data-ttu-id="cee97-104">フォーム ベース認証を使用して、ソーシャル ネットワーク サイトにログオンします。</span><span class="sxs-lookup"><span data-stu-id="cee97-104">Logs on to the social network site by using forms-based authentication.</span></span>
+<span data-ttu-id="cbe5b-104">フォームベース認証を使用してソーシャルネットワークサイトにログオンします。</span><span class="sxs-lookup"><span data-stu-id="cbe5b-104">Logs on to the social network site by using forms-based authentication.</span></span>
   
 ```cpp
 HRESULT _stdcall LogonWeb([in] BSTR connectIn, [out] BSTR* connectOut);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="cee97-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="cee97-105">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="cbe5b-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="cbe5b-105">Parameters</span></span>
 
-<span data-ttu-id="cee97-106">_connectIn_</span><span class="sxs-lookup"><span data-stu-id="cee97-106">_connectIn_</span></span>
+<span data-ttu-id="cbe5b-106">_//_</span><span class="sxs-lookup"><span data-stu-id="cbe5b-106">_connectIn_</span></span>
   
-> <span data-ttu-id="cee97-107">[in]**Null**では、ログオン フォーム、またはこのメソッドが呼び出されたときに、ログオン プロセスのコンテキストによって、ログオンの資格情報を含む文字列を URL 文字列です。</span><span class="sxs-lookup"><span data-stu-id="cee97-107">[in] A string that is **null**, an URL to a logon form on the web, or a string that contains logon credentials, depending on the context in the logon process when this method is called.</span></span>
+> <span data-ttu-id="cbe5b-107">順番このメソッドが呼び出されたときのログオンプロセスのコンテキストに応じて、 **null**の文字列、web 上のログオンフォームへの URL、またはログオン資格情報を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="cbe5b-107">[in] A string that is **null**, an URL to a logon form on the web, or a string that contains logon credentials, depending on the context in the logon process when this method is called.</span></span>
     
-<span data-ttu-id="cee97-108">_connectOut_</span><span class="sxs-lookup"><span data-stu-id="cee97-108">_connectOut_</span></span>
+<span data-ttu-id="cbe5b-108">_connectout_</span><span class="sxs-lookup"><span data-stu-id="cbe5b-108">_connectOut_</span></span>
   
-> <span data-ttu-id="cee97-109">[out]ログオン資格情報を含む文字列です。</span><span class="sxs-lookup"><span data-stu-id="cee97-109">[out] A string that contains logon credentials.</span></span>
+> <span data-ttu-id="cbe5b-109">読み上げログオン資格情報を含む文字列。</span><span class="sxs-lookup"><span data-stu-id="cbe5b-109">[out] A string that contains logon credentials.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="cee97-110">注釈</span><span class="sxs-lookup"><span data-stu-id="cee97-110">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="cbe5b-110">解説</span><span class="sxs-lookup"><span data-stu-id="cbe5b-110">Remarks</span></span>
 
-<span data-ttu-id="cee97-111">Outlook ソーシャル コネクタ (OSC) は、プロバイダーでは、フォーム ベース認証をサポートしていることを示している場合にのみ、 **LogonWeb**メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="cee97-111">The Outlook Social Connector (OSC) calls the **LogonWeb** method only if the provider indicates that it supports forms-based authentication.</span></span> <span data-ttu-id="cee97-112">プロバイダーでは、**該当****機能**の XML ファイルで**useLogonWebAuth**を設定することでフォーム ベースの認証が必要なことを示します。</span><span class="sxs-lookup"><span data-stu-id="cee97-112">The provider indicates that it requires forms-based authentication by setting **useLogonWebAuth** as **true** in the XML for **capabilities**.</span></span> <span data-ttu-id="cee97-113">プロバイダーでは、 **useLogonWebAuth**が**false**に設定、OSC は基本認証を使用し、 [ISocialSession::Logon](isocialsession-logon.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="cee97-113">If the provider sets **useLogonWebAuth** as **false**, the OSC uses basic authentication and calls the [ISocialSession::Logon](isocialsession-logon.md) method.</span></span> 
+<span data-ttu-id="cbe5b-111">Outlook Social Connector (.osc) は、プロバイダーがフォームベース認証をサポートしていることを示す場合にのみ、 **logonweb**メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="cbe5b-111">The Outlook Social Connector (OSC) calls the **LogonWeb** method only if the provider indicates that it supports forms-based authentication.</span></span> <span data-ttu-id="cbe5b-112">プロバイダーは、XML の**機能**に対して**uselogonwebauth**を**true**に設定することにより、フォームベース認証が必要であることを示します。</span><span class="sxs-lookup"><span data-stu-id="cbe5b-112">The provider indicates that it requires forms-based authentication by setting **useLogonWebAuth** as **true** in the XML for **capabilities**.</span></span> <span data-ttu-id="cbe5b-113">プロバイダーが**uselogonwebauth**を**false**として設定している場合、.osc は基本認証を使用して、 [iime alsession:: Logon](isocialsession-logon.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="cbe5b-113">If the provider sets **useLogonWebAuth** as **false**, the OSC uses basic authentication and calls the [ISocialSession::Logon](isocialsession-logon.md) method.</span></span> 
   
-<span data-ttu-id="cee97-114">フォーム ベース認証を使用して、ソーシャル ネットワーク サイトへのログオンでは、特定の順序で、 **LogonWeb**メソッドと[ISocialSession::GetLogonUrl](isocialsession-getlogonurl.md)メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="cee97-114">Logging on to a social network site by using forms-based authentication involves calling the **LogonWeb** and [ISocialSession::GetLogonUrl](isocialsession-getlogonurl.md) methods in a specific order:</span></span> 
+<span data-ttu-id="cbe5b-114">フォームベース認証を使用してソーシャルネットワークサイトにログオンするには、特定の順序で**logonweb**および[isocial alsession:: getlogonurl](isocialsession-getlogonurl.md)メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="cbe5b-114">Logging on to a social network site by using forms-based authentication involves calling the **LogonWeb** and [ISocialSession::GetLogonUrl](isocialsession-getlogonurl.md) methods in a specific order:</span></span> 
   
-1. <span data-ttu-id="cee97-115">OSC は、最初に**LogonWeb**を呼び出す_connectIn_パラメーターに**null**を渡します。</span><span class="sxs-lookup"><span data-stu-id="cee97-115">The OSC calls **LogonWeb** the first time, passing **null** to the  _connectIn_ parameter.</span></span> 
+1. <span data-ttu-id="cbe5b-115">.osc は、最初に**logonweb**を呼び出し、 **null**を引数__ として指定します。</span><span class="sxs-lookup"><span data-stu-id="cbe5b-115">The OSC calls **LogonWeb** the first time, passing **null** to the  _connectIn_ parameter.</span></span> 
     
-2. <span data-ttu-id="cee97-116">プロバイダーは、OSC のように、OSC_E_AUTH_ERROR エラーを発生させます。</span><span class="sxs-lookup"><span data-stu-id="cee97-116">The provider raises the OSC_E_AUTH_ERROR error to the OSC.</span></span>
+2. <span data-ttu-id="cbe5b-116">プロバイダーは、.osc に OSC_E_AUTH_ERROR エラーを発生させます。</span><span class="sxs-lookup"><span data-stu-id="cbe5b-116">The provider raises the OSC_E_AUTH_ERROR error to the OSC.</span></span>
     
-3. <span data-ttu-id="cee97-117">OSC は、次に**GetLogonUrl**を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="cee97-117">The OSC next calls **GetLogonUrl**.</span></span>
+3. <span data-ttu-id="cbe5b-117">.osc の次のメソッドは、 **getlogonurl**を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="cbe5b-117">The OSC next calls **GetLogonUrl**.</span></span>
     
-4. <span data-ttu-id="cee97-118">プロバイダーは、 **GetLogonUrl**メソッドでは、ログオン ページに適切な URL を返します。</span><span class="sxs-lookup"><span data-stu-id="cee97-118">The provider returns the appropriate URL to a logon page in the **GetLogonUrl** method.</span></span> 
+4. <span data-ttu-id="cbe5b-118">プロバイダーは、 **getlogonurl**メソッドのログオンページに適切な URL を返します。</span><span class="sxs-lookup"><span data-stu-id="cbe5b-118">The provider returns the appropriate URL to a logon page in the **GetLogonUrl** method.</span></span> 
     
-5. <span data-ttu-id="cee97-119">OSC では、 **GetLogonUrl**によって返される URL を使用して、フォーム ベースのログオン ページが表示します。</span><span class="sxs-lookup"><span data-stu-id="cee97-119">The OSC uses the URL returned by **GetLogonUrl** to display the forms-based logon page.</span></span> 
+5. <span data-ttu-id="cbe5b-119">.osc は、 **getlogonurl**によって返される url を使用して、フォームベースのログオンページを表示します。</span><span class="sxs-lookup"><span data-stu-id="cbe5b-119">The OSC uses the URL returned by **GetLogonUrl** to display the forms-based logon page.</span></span> 
     
-6. <span data-ttu-id="cee97-120">OSC を呼び出して**LogonWeb** 2 回目、 _connectIn_パラメーターでのログオン フォームに URL を渡します。</span><span class="sxs-lookup"><span data-stu-id="cee97-120">The OSC then calls **LogonWeb** a second time, passing the URL to the logon form in the  _connectIn_ parameter.</span></span> 
+6. <span data-ttu-id="cbe5b-120">次に、.osc は**logonweb**をもう一度呼び出し、その URL を "/入力" __ パラメーターでログオンフォームに渡します。</span><span class="sxs-lookup"><span data-stu-id="cbe5b-120">The OSC then calls **LogonWeb** a second time, passing the URL to the logon form in the  _connectIn_ parameter.</span></span> 
     
-7. <span data-ttu-id="cee97-121">認証が成功すると、プロバイダーは、OSC を_connectOut_パラメーターにログオン資格情報を返します。</span><span class="sxs-lookup"><span data-stu-id="cee97-121">If authentication succeeds, the provider returns logon credentials in the  _connectOut_ parameter to the OSC.</span></span> <span data-ttu-id="cee97-122">認証が失敗した場合、プロバイダーは、OSC のように、OSC_E_AUTH_ERROR エラーを発生させます。</span><span class="sxs-lookup"><span data-stu-id="cee97-122">If authentication fails, the provider raises the OSC_E_AUTH_ERROR error to the OSC.</span></span> 
+7. <span data-ttu-id="cbe5b-121">認証が成功すると、プロバイダーは、 _connectout_パラメーターのログオン資格情報を .osc に返します。</span><span class="sxs-lookup"><span data-stu-id="cbe5b-121">If authentication succeeds, the provider returns logon credentials in the  _connectOut_ parameter to the OSC.</span></span> <span data-ttu-id="cbe5b-122">認証が失敗した場合、プロバイダーは .osc に OSC_E_AUTH_ERROR エラーを発生させます。</span><span class="sxs-lookup"><span data-stu-id="cbe5b-122">If authentication fails, the provider raises the OSC_E_AUTH_ERROR error to the OSC.</span></span> 
     
-<span data-ttu-id="cee97-123">OSC プロバイダーは、キャッシュされた資格情報を使用してログオンをサポートする場合は、XML の**機能**で**は** **useLogonCached**を指定します。</span><span class="sxs-lookup"><span data-stu-id="cee97-123">If the OSC provider supports logging on using cached credentials, it specifies **useLogonCached** as **true** in the **capabilities** XML.</span></span> <span data-ttu-id="cee97-124">プロバイダーは、プロバイダーは、接続での格納に OSC をしようとしている_connectOut_の文字列に、ログオン資格情報を配置する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cee97-124">The provider should place any logon credentials in the  _connectOut_ string that the provider wants the OSC to store across connections.</span></span> <span data-ttu-id="cee97-125">OSC では、 _connectOut_の文字列は解釈されません。</span><span class="sxs-lookup"><span data-stu-id="cee97-125">The OSC does not interpret the  _connectOut_ string.</span></span> <span data-ttu-id="cee97-126">OSC では、その**useLogonCached**が**true**を確認した後、OSC は、Windows レジストリに格納する前にセキュリティのための文字列を暗号化します。</span><span class="sxs-lookup"><span data-stu-id="cee97-126">After the OSC verifies that **useLogonCached** is **true**, the OSC encrypts the string for security before storing it in the Windows registry.</span></span> <span data-ttu-id="cee97-127">OSC は、 [ISocialSession2::LogonCached](isocialsession2-logoncached.md)を呼び出すことによって、ソーシャル ネットワークへのログオンに 2 回目以降に、 _connectIn_パラメーターにこの文字列を渡します。</span><span class="sxs-lookup"><span data-stu-id="cee97-127">The OSC passes this string to the  _connectIn_ parameter on subsequent attempts to log on to the social network by calling [ISocialSession2::LogonCached](isocialsession2-logoncached.md).</span></span> 
+<span data-ttu-id="cbe5b-123">.osc プロバイダーがキャッシュされた資格情報を使用したログ記録をサポートしている場合は、**機能**XML では**true**としてキャッシュされた**uselogoncached**指定します。</span><span class="sxs-lookup"><span data-stu-id="cbe5b-123">If the OSC provider supports logging on using cached credentials, it specifies **useLogonCached** as **true** in the **capabilities** XML.</span></span> <span data-ttu-id="cbe5b-124">プロバイダーは、接続間に格納するために、プロバイダーが .osc を必要とする_connectout_文字列にログオン資格情報を配置する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cbe5b-124">The provider should place any logon credentials in the  _connectOut_ string that the provider wants the OSC to store across connections.</span></span> <span data-ttu-id="cbe5b-125">.osc は、 _connectout_文字列を解釈しません。</span><span class="sxs-lookup"><span data-stu-id="cbe5b-125">The OSC does not interpret the  _connectOut_ string.</span></span> <span data-ttu-id="cbe5b-126">.osc は、 **uselogoncached**が**true**であることを確認した後、セキュリティのために文字列を暗号化してから Windows レジストリに保存します。</span><span class="sxs-lookup"><span data-stu-id="cbe5b-126">After the OSC verifies that **useLogonCached** is **true**, the OSC encrypts the string for security before storing it in the Windows registry.</span></span> <span data-ttu-id="cbe5b-127">.osc は、 [ISocialSession2:: logoncached](isocialsession2-logoncached.md)を呼び出すことによって、ソーシャルネットワークへの次回のログオン時に、この文字列を引数として渡されます。 __</span><span class="sxs-lookup"><span data-stu-id="cbe5b-127">The OSC passes this string to the  _connectIn_ parameter on subsequent attempts to log on to the social network by calling [ISocialSession2::LogonCached](isocialsession2-logoncached.md).</span></span> 
   
-<span data-ttu-id="cee97-128">エラー コードの詳細については、「[Outlook Social Connector Provider Error Codes](outlook-social-connector-provider-error-codes.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cee97-128">For information about error codes, see [Outlook Social Connector Provider Error Codes](outlook-social-connector-provider-error-codes.md).</span></span>
+<span data-ttu-id="cbe5b-128">エラー コードの詳細については、「[Outlook Social Connector Provider Error Codes](outlook-social-connector-provider-error-codes.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cbe5b-128">For information about error codes, see [Outlook Social Connector Provider Error Codes](outlook-social-connector-provider-error-codes.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="cee97-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="cee97-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cbe5b-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="cbe5b-129">See also</span></span>
 
-- [<span data-ttu-id="cee97-130">ISocialSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="cee97-130">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
-- [<span data-ttu-id="cee97-131">フォーム ベースの認証</span><span class="sxs-lookup"><span data-stu-id="cee97-131">Forms-Based Authentication</span></span>](forms-based-authentication.md)
+- [<span data-ttu-id="cbe5b-130">ISocialSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="cbe5b-130">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
+- [<span data-ttu-id="cbe5b-131">フォームベース認証</span><span class="sxs-lookup"><span data-stu-id="cbe5b-131">Forms-Based Authentication</span></span>](forms-based-authentication.md)
 

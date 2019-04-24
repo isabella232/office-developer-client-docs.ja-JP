@@ -7,24 +7,24 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 70e18534-054f-49e7-9a5d-10db0db132d0
-description: '�ŏI�X�V��: 2011�N7��23��'
+description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 753834ba4df6d0239a484af380e4fe0aa45666b4
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332964"
 ---
-# <a name="creating-a-message-subject"></a><span data-ttu-id="3f09b-103">メッセージの件名の作成</span><span class="sxs-lookup"><span data-stu-id="3f09b-103">Creating a Message Subject</span></span>
+# <a name="creating-a-message-subject"></a><span data-ttu-id="13dac-103">メッセージの件名の作成</span><span class="sxs-lookup"><span data-stu-id="13dac-103">Creating a Message Subject</span></span>
 
   
   
-<span data-ttu-id="3f09b-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="3f09b-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="13dac-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="13dac-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="3f09b-105">**あるの PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md))、メッセージの件名は、メッセージの目的を要約するために使用、省略可能なプロパティです。</span><span class="sxs-lookup"><span data-stu-id="3f09b-105">The subject of a message, **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)), is an optional property, used to summarize the intent of a message.</span></span> <span data-ttu-id="3f09b-106">設定する場合は、文字列を作成して文字 128 バイト以内です。</span><span class="sxs-lookup"><span data-stu-id="3f09b-106">If you choose to set it, make it a character string 128 bytes or less.</span></span> <span data-ttu-id="3f09b-107">128 バイトの制限は、MAPI のによって課された制限ではありません。いくつかのメッセージ ストア プロバイダーによって課された制限することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="3f09b-107">The 128 byte limit is not a limit imposed by MAPI; it is a limit imposed by some message store providers.</span></span> <span data-ttu-id="3f09b-108">それを課すはプロバイダーとの相互運用性を確保するには、サブジェクトが 128 バイトに制限します。</span><span class="sxs-lookup"><span data-stu-id="3f09b-108">To ensure interoperability with providers that do impose it, limit subjects to 128 bytes.</span></span> 
+<span data-ttu-id="13dac-105">メッセージの件名 ([PidTagSubject](pidtagsubject-canonical-property.md)) \*\*\*\* はオプションのプロパティで、メッセージの目的を要約するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="13dac-105">The subject of a message, **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)), is an optional property, used to summarize the intent of a message.</span></span> <span data-ttu-id="13dac-106">この設定を選択した場合は、文字列128バイト以下にしてください。</span><span class="sxs-lookup"><span data-stu-id="13dac-106">If you choose to set it, make it a character string 128 bytes or less.</span></span> <span data-ttu-id="13dac-107">128バイト制限は、MAPI の制限ではありません。一部のメッセージストアプロバイダーによって課される制限です。</span><span class="sxs-lookup"><span data-stu-id="13dac-107">The 128 byte limit is not a limit imposed by MAPI; it is a limit imposed by some message store providers.</span></span> <span data-ttu-id="13dac-108">適用されるプロバイダーとの相互運用性を確保するには、件名を128バイトに制限します。</span><span class="sxs-lookup"><span data-stu-id="13dac-108">To ensure interoperability with providers that do impose it, limit subjects to 128 bytes.</span></span> 
   
-<span data-ttu-id="3f09b-109">いくつかのメッセージ ストア プロバイダーは、 [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)インターフェイスを使用して、ストリームに書き込むために**あるの PR_SUBJECT**を許可しないことに注意します。</span><span class="sxs-lookup"><span data-stu-id="3f09b-109">Be aware that some message store providers do not allow **PR_SUBJECT** to be written to a stream with the [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) interface.</span></span> 
+<span data-ttu-id="13dac-109">一部のメッセージストアプロバイダーでは、 **PR_SUBJECT**を[IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)インターフェイスを使用した stream に書き込むことが許可されていないことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="13dac-109">Be aware that some message store providers do not allow **PR_SUBJECT** to be written to a stream with the [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) interface.</span></span> 
   
-<span data-ttu-id="3f09b-110">**されて**([PidTagSubjectPrefix](pidtagsubjectprefix-canonical-property.md)) は設定されていませんこのプロパティが応答でのみ設定され、メッセージを転送しました。</span><span class="sxs-lookup"><span data-stu-id="3f09b-110">Do not set **PR_SUBJECT_PREFIX** ([PidTagSubjectPrefix](pidtagsubjectprefix-canonical-property.md)); this property is set only on replies and forwarded messages.</span></span> 
+<span data-ttu-id="13dac-110">**PR_SUBJECT_PREFIX** ([PidTagSubjectPrefix](pidtagsubjectprefix-canonical-property.md)) を設定しません。このプロパティは、返信メッセージと転送メッセージに対してのみ設定されます。</span><span class="sxs-lookup"><span data-stu-id="13dac-110">Do not set **PR_SUBJECT_PREFIX** ([PidTagSubjectPrefix](pidtagsubjectprefix-canonical-property.md)); this property is set only on replies and forwarded messages.</span></span> 
   
 

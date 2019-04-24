@@ -12,52 +12,52 @@ api_type:
 - COM
 ms.assetid: 3330ce33-fec5-472b-bb28-16b1410b0eab
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9c63ee66924288ddedcf683c47ab5576be3cf6f4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9aa39c8ee68de42f1722048cb871d07e9a8151a0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335540"
 ---
-# <a name="pidlidremoteentryid-canonical-property"></a><span data-ttu-id="22270-103">PidLidRemoteEntryId 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="22270-103">PidLidRemoteEntryId Canonical Property</span></span>
+# <a name="pidlidremoteentryid-canonical-property"></a><span data-ttu-id="e7716-103">PidLidRemoteEntryId 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="e7716-103">PidLidRemoteEntryId Canonical Property</span></span>
 
   
   
-<span data-ttu-id="22270-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="22270-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="e7716-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="e7716-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="22270-105">リモート アイテムのエントリ ID を示します。</span><span class="sxs-lookup"><span data-stu-id="22270-105">Indicates the entry ID of a remote item.</span></span>
+<span data-ttu-id="e7716-105">リモートアイテムのエントリ ID を示します。</span><span class="sxs-lookup"><span data-stu-id="e7716-105">Indicates the entry ID of a remote item.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="22270-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="22270-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="22270-107">dispidRemoteEID</span><span class="sxs-lookup"><span data-stu-id="22270-107">dispidRemoteEID</span></span>  <br/> |
-|<span data-ttu-id="22270-108">プロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="22270-108">Property set:</span></span>  <br/> |<span data-ttu-id="22270-109">PSETID_Remote</span><span class="sxs-lookup"><span data-stu-id="22270-109">PSETID_Remote</span></span>  <br/> |
-|<span data-ttu-id="22270-110">長い ID (LID):</span><span class="sxs-lookup"><span data-stu-id="22270-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="22270-111">0x00008F01</span><span class="sxs-lookup"><span data-stu-id="22270-111">0x00008F01</span></span>  <br/> |
-|<span data-ttu-id="22270-112">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="22270-112">Data type:</span></span>  <br/> |<span data-ttu-id="22270-113">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="22270-113">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="22270-114">領域:</span><span class="sxs-lookup"><span data-stu-id="22270-114">Area:</span></span>  <br/> |<span data-ttu-id="22270-115">リモート ・ メッセージ</span><span class="sxs-lookup"><span data-stu-id="22270-115">Remote message</span></span>  <br/> |
+|<span data-ttu-id="e7716-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="e7716-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="e7716-107">dispidremoteeid</span><span class="sxs-lookup"><span data-stu-id="e7716-107">dispidRemoteEID</span></span>  <br/> |
+|<span data-ttu-id="e7716-108">プロパティセット:</span><span class="sxs-lookup"><span data-stu-id="e7716-108">Property set:</span></span>  <br/> |<span data-ttu-id="e7716-109">PSETID_Remote</span><span class="sxs-lookup"><span data-stu-id="e7716-109">PSETID_Remote</span></span>  <br/> |
+|<span data-ttu-id="e7716-110">ロング ID (LID):</span><span class="sxs-lookup"><span data-stu-id="e7716-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="e7716-111">0x00008f01</span><span class="sxs-lookup"><span data-stu-id="e7716-111">0x00008F01</span></span>  <br/> |
+|<span data-ttu-id="e7716-112">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="e7716-112">Data type:</span></span>  <br/> |<span data-ttu-id="e7716-113">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="e7716-113">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="e7716-114">エリア:</span><span class="sxs-lookup"><span data-stu-id="e7716-114">Area:</span></span>  <br/> |<span data-ttu-id="e7716-115">リモートメッセージ</span><span class="sxs-lookup"><span data-stu-id="e7716-115">Remote message</span></span>  <br/> |
    
-## <a name="related-resources"></a><span data-ttu-id="22270-116">関連リソース</span><span class="sxs-lookup"><span data-stu-id="22270-116">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="e7716-116">関連リソース</span><span class="sxs-lookup"><span data-stu-id="e7716-116">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="22270-117">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="22270-117">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="e7716-117">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="e7716-117">Protocol specifications</span></span>
 
-<span data-ttu-id="22270-118">[MS OXPROPS]</span><span class="sxs-lookup"><span data-stu-id="22270-118">[[MS-OXPROPS]]</span></span> 
+<span data-ttu-id="e7716-118">[[OXPROPS]]</span><span class="sxs-lookup"><span data-stu-id="e7716-118">[[MS-OXPROPS]]</span></span> 
   
-> <span data-ttu-id="22270-119">プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="22270-119">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="e7716-119">プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="e7716-119">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="22270-120">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="22270-120">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="e7716-120">ヘッダーファイル</span><span class="sxs-lookup"><span data-stu-id="e7716-120">Header files</span></span>
 
-<span data-ttu-id="22270-121">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="22270-121">Mapidefs.h</span></span>
+<span data-ttu-id="e7716-121">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="e7716-121">Mapidefs.h</span></span>
   
-> <span data-ttu-id="22270-122">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="22270-122">Provides data type definitions.</span></span>
+> <span data-ttu-id="e7716-122">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="e7716-122">Provides data type definitions.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="22270-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="22270-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e7716-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="e7716-123">See also</span></span>
 
 
 
-[<span data-ttu-id="22270-124">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="22270-124">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="e7716-124">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="e7716-124">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="22270-125">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="22270-125">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="e7716-125">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="e7716-125">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="22270-126">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="22270-126">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="e7716-126">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="e7716-126">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="22270-127">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="22270-127">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="e7716-127">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="e7716-127">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

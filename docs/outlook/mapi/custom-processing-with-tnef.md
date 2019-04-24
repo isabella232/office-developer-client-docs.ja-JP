@@ -1,5 +1,5 @@
 ---
-title: TNEF を処理するカスタム
+title: TNEF によるユーザー設定処理
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,18 +7,18 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c015335a-8fcd-4b03-abb9-9b6b72000e13
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d9bbba40e5159221cfb3b3692b597b07fb606936
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 3ee219ec09116640903df75ce271f607972dd37e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336772"
 ---
-# <a name="custom-processing-with-tnef"></a><span data-ttu-id="94e0f-103">TNEF を処理するカスタム</span><span class="sxs-lookup"><span data-stu-id="94e0f-103">Custom processing with TNEF</span></span>
+# <a name="custom-processing-with-tnef"></a><span data-ttu-id="6536c-103">TNEF によるユーザー設定処理</span><span class="sxs-lookup"><span data-stu-id="6536c-103">Custom processing with TNEF</span></span>
 
-<span data-ttu-id="94e0f-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="94e0f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="6536c-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="6536c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="94e0f-105">トランスポート プロバイダーでは、添付ファイル自体のプロパティを処理、添付ファイルを個別に送信またはメッセージング システムの添付ファイルのモデルからの送信に、カスタム処理を使用できます。</span><span class="sxs-lookup"><span data-stu-id="94e0f-105">Transport providers can use custom processing to process the properties on an attachment itself, transmit attachments separately, or transmit them through the messaging system's attachment model.</span></span> <span data-ttu-id="94e0f-106">TNEF は、メッセージと添付ファイルを送信し、受信側で再接続するトランスポート プロバイダーを有効にするメカニズムを使用します。</span><span class="sxs-lookup"><span data-stu-id="94e0f-106">TNEF uses a mechanism that enables the transport provider to send the attachments apart from the message and reconnect them on the receiving side.</span></span>
+<span data-ttu-id="6536c-105">トランスポートプロバイダーは、カスタム処理を使用して、添付ファイル自体のプロパティを処理したり、添付ファイルを個別に送信したり、メッセージングシステムの添付モデルを介して送信したりすることができます。</span><span class="sxs-lookup"><span data-stu-id="6536c-105">Transport providers can use custom processing to process the properties on an attachment itself, transmit attachments separately, or transmit them through the messaging system's attachment model.</span></span> <span data-ttu-id="6536c-106">TNEF は、トランスポートプロバイダーがメッセージとは別に添付ファイルを送信し、それらを受信側に再接続できるようにするメカニズムを使用します。</span><span class="sxs-lookup"><span data-stu-id="6536c-106">TNEF uses a mechanism that enables the transport provider to send the attachments apart from the message and reconnect them on the receiving side.</span></span>
   
 

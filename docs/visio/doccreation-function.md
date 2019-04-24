@@ -8,24 +8,24 @@ f1_keywords:
 - Vis_DSS.chm82251604
 localization_priority: Normal
 ms.assetid: dcbc240a-e36d-b27f-02c3-fd1eac04114a
-description: シリアル値として、ドキュメントが作成された日時を返します。
-ms.openlocfilehash: b9d94cf53895b0b4b9fcf84eb32e441c8a2a0196
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: ドキュメントが作成された日付と時刻をシリアル値として返します。
+ms.openlocfilehash: a1f66a8fe2561578a2b37deefcfa6556f10455a0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332726"
 ---
-# <a name="doccreation-function"></a><span data-ttu-id="ea8ce-103">DOCCREATION 関数</span><span class="sxs-lookup"><span data-stu-id="ea8ce-103">DOCCREATION Function</span></span>
+# <a name="doccreation-function"></a><span data-ttu-id="b2600-103">DOCCREATION 関数</span><span class="sxs-lookup"><span data-stu-id="b2600-103">DOCCREATION Function</span></span>
 
-<span data-ttu-id="ea8ce-104">シリアル値として、ドキュメントが作成された日時を返します。</span><span class="sxs-lookup"><span data-stu-id="ea8ce-104">Returns the date and time a document was created, as a serial value.</span></span>
+<span data-ttu-id="b2600-104">ドキュメントが作成された日付と時刻をシリアル値として返します。</span><span class="sxs-lookup"><span data-stu-id="b2600-104">Returns the date and time a document was created, as a serial value.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="ea8ce-105">構文</span><span class="sxs-lookup"><span data-stu-id="ea8ce-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b2600-105">構文</span><span class="sxs-lookup"><span data-stu-id="b2600-105">Syntax</span></span>
 
-<span data-ttu-id="ea8ce-106">DOCCREATION ()</span><span class="sxs-lookup"><span data-stu-id="ea8ce-106">DOCCREATION ()</span></span>
+<span data-ttu-id="b2600-106">DOCCREATION ()</span><span class="sxs-lookup"><span data-stu-id="b2600-106">DOCCREATION ()</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="ea8ce-107">注釈</span><span class="sxs-lookup"><span data-stu-id="ea8ce-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b2600-107">解説</span><span class="sxs-lookup"><span data-stu-id="b2600-107">Remarks</span></span>
 
-<span data-ttu-id="ea8ce-108">戻り値を書式設定するには、FORMAT 関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="ea8ce-108">Use the FORMAT function to format the value.</span></span> 
+<span data-ttu-id="b2600-108">戻り値を書式設定するには、FORMAT 関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="b2600-108">Use the FORMAT function to format the value.</span></span> 
   
 

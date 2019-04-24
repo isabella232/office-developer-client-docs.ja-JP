@@ -12,22 +12,22 @@ api_type:
 - COM
 ms.assetid: 784c8a5a-493e-48e6-8784-ba8122c76e3d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 43703051193ffacec6a54355eeea74edf904f186
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 87be6df27a3e6729cb514118438521d76a66b30c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339838"
 ---
-# <a name="scontentrestriction"></a><span data-ttu-id="f567d-103">SContentRestriction</span><span class="sxs-lookup"><span data-stu-id="f567d-103">SContentRestriction</span></span>
+# <a name="scontentrestriction"></a><span data-ttu-id="967fa-103">SContentRestriction</span><span class="sxs-lookup"><span data-stu-id="967fa-103">SContentRestriction</span></span>
  
-<span data-ttu-id="f567d-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f567d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="967fa-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="967fa-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="f567d-105">検索文字列に一致する内容を持つ列を含む行だけを表形式ビューを制限するために使用されるコンテンツの制限について説明します。</span><span class="sxs-lookup"><span data-stu-id="f567d-105">Describes a content restriction, which is used to limit a table view to only those rows that include a column with contents matching a search string.</span></span> 
+<span data-ttu-id="967fa-105">コンテンツ制限について説明します。これは、テーブルビューを、検索文字列と一致するコンテンツを持つ列を含む行だけに制限するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="967fa-105">Describes a content restriction, which is used to limit a table view to only those rows that include a column with contents matching a search string.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="f567d-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="f567d-106">Header file:</span></span>  <br/> |<span data-ttu-id="f567d-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="f567d-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="967fa-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="967fa-106">Header file:</span></span>  <br/> |<span data-ttu-id="967fa-107">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="967fa-107">Mapidefs.h</span></span>  <br/> |
    
 ```cpp
 typedef struct _SContentRestriction
@@ -39,51 +39,51 @@ typedef struct _SContentRestriction
 
 ```
 
-## <a name="members"></a><span data-ttu-id="f567d-108">Members</span><span class="sxs-lookup"><span data-stu-id="f567d-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="967fa-108">Members</span><span class="sxs-lookup"><span data-stu-id="967fa-108">Members</span></span>
 
-<span data-ttu-id="f567d-109">**ulFuzzyLevel**</span><span class="sxs-lookup"><span data-stu-id="f567d-109">**ulFuzzyLevel**</span></span>
+<span data-ttu-id="967fa-109">**ulFuzzyLevel**</span><span class="sxs-lookup"><span data-stu-id="967fa-109">**ulFuzzyLevel**</span></span>
   
-> <span data-ttu-id="f567d-110">オプションの設定が一致することを確認するときにコンテンツの制限が設定されている preciseness のレベルを定義します。</span><span class="sxs-lookup"><span data-stu-id="f567d-110">Option settings defining the level of preciseness that the content restriction should enforce when you verify for a match.</span></span>
+> <span data-ttu-id="967fa-110">一致するかどうかを確認するときにコンテンツ制限に適用する preciseness レベルを定義するオプション設定。</span><span class="sxs-lookup"><span data-stu-id="967fa-110">Option settings defining the level of preciseness that the content restriction should enforce when you verify for a match.</span></span>
     
-   <span data-ttu-id="f567d-111">**UlFuzzyLevel**メンバーの**下位 16 ビット**は、PT_BINARY と PT_STRING8 プロパティの型に適用し、次の値のいずれかに設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f567d-111">The **lower 16 bits** of the **ulFuzzyLevel** member apply to properties of type PT_BINARY and PT_STRING8 and must be set to one of the following values:</span></span> 
+   <span data-ttu-id="967fa-111">**ulFuzzyLevel**メンバーの**下位16ビット**は、PT_BINARY および PT_STRING8 型のプロパティに適用され、次のいずれかの値に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="967fa-111">The **lower 16 bits** of the **ulFuzzyLevel** member apply to properties of type PT_BINARY and PT_STRING8 and must be set to one of the following values:</span></span> 
     
-   - <span data-ttu-id="f567d-112">FL_FULLSTRING: 一致するには、 **lpProp**の検索文字列含める必要があります**ulPropTag**によって識別されるプロパティにします。</span><span class="sxs-lookup"><span data-stu-id="f567d-112">FL_FULLSTRING: To match, the **lpProp** search string must be contained in the property identified by **ulPropTag**.</span></span>
+   - <span data-ttu-id="967fa-112">FL_FULLSTRING: 一致するには、 **lpprop**検索文字列が**ulPropTag**で識別されるプロパティに含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="967fa-112">FL_FULLSTRING: To match, the **lpProp** search string must be contained in the property identified by **ulPropTag**.</span></span>
         
-   - <span data-ttu-id="f567d-113">FL_PREFIX: 一致するには、 **lpProp**の検索文字列必要があります**ulPropTag**によって識別されるプロパティの先頭にします。</span><span class="sxs-lookup"><span data-stu-id="f567d-113">FL_PREFIX : To match, the **lpProp** search string must appear at the start of the property identified by **ulPropTag**.</span></span> <span data-ttu-id="f567d-114">**LpProp**によって示される検索文字列の長さの分だけ、2 つの文字列を比較する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f567d-114">The two strings should be compared only up to the length of the search string indicated by **lpProp**.</span></span> 
+   - <span data-ttu-id="967fa-113">FL_PREFIX: 一致するには、 **ulPropTag**で識別されるプロパティの先頭に**lpprop**検索文字列を指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="967fa-113">FL_PREFIX : To match, the **lpProp** search string must appear at the start of the property identified by **ulPropTag**.</span></span> <span data-ttu-id="967fa-114">2つの文字列は、 **lpprop**で示される検索文字列の長さまで比較する必要があります。</span><span class="sxs-lookup"><span data-stu-id="967fa-114">The two strings should be compared only up to the length of the search string indicated by **lpProp**.</span></span> 
         
-   - <span data-ttu-id="f567d-115">FL_SUBSTRING: 一致するには、 **lpProp**検索文字列含める必要があります任意の場所**ulPropTag**によって識別されるプロパティにします。</span><span class="sxs-lookup"><span data-stu-id="f567d-115">FL_SUBSTRING: To match, the **lpProp** search string must be contained anywhere in the property identified by **ulPropTag**.</span></span> 
+   - <span data-ttu-id="967fa-115">FL_SUBSTRING: 一致するには、 **lpprop**検索文字列が**ulPropTag**で識別されるプロパティの任意の場所に含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="967fa-115">FL_SUBSTRING: To match, the **lpProp** search string must be contained anywhere in the property identified by **ulPropTag**.</span></span> 
         
-   <span data-ttu-id="f567d-116">**UlFuzzyLevel**メンバーの**上位 16 ビット**では、型 PT_STRING8 プロパティにのみ適用され、任意の組み合わせで次の値を設定することができます。</span><span class="sxs-lookup"><span data-stu-id="f567d-116">The **upper 16 bits** of the **ulFuzzyLevel** member apply only to properties of type PT_STRING8 and can be set to the following values in any combination:</span></span> 
+   <span data-ttu-id="967fa-116">**ulFuzzyLevel**メンバーの**上位16ビット**は、PT_STRING8 型のプロパティにのみ適用され、任意の組み合わせで次の値に設定できます。</span><span class="sxs-lookup"><span data-stu-id="967fa-116">The **upper 16 bits** of the **ulFuzzyLevel** member apply only to properties of type PT_STRING8 and can be set to the following values in any combination:</span></span> 
         
-   - <span data-ttu-id="f567d-117">FL_IGNORECASE: 大文字と小文字を考慮せず、比較を行ってください。</span><span class="sxs-lookup"><span data-stu-id="f567d-117">FL_IGNORECASE: The comparison should be made without considering case.</span></span> 
+   - <span data-ttu-id="967fa-117">FL_IGNORECASE: 比較は、大文字と小文字を区別せずに行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="967fa-117">FL_IGNORECASE: The comparison should be made without considering case.</span></span> 
         
-   - <span data-ttu-id="f567d-118">FL_IGNORENONSPACE: 比較は、アクセント記号などの Unicode が定義されている空白でない文字を無視してください。</span><span class="sxs-lookup"><span data-stu-id="f567d-118">FL_IGNORENONSPACE: The comparison should ignore Unicode-defined non-spacing characters such as diacritical marks.</span></span> 
+   - <span data-ttu-id="967fa-118">FL_IGNORENONSPACE: 比較では、Unicode で定義されたスペース以外の文字 (分音記号など) を無視する必要があります。</span><span class="sxs-lookup"><span data-stu-id="967fa-118">FL_IGNORENONSPACE: The comparison should ignore Unicode-defined non-spacing characters such as diacritical marks.</span></span> 
         
-   - <span data-ttu-id="f567d-119">FL_LOOSE: 比較頂いた一致する限り、大文字と小文字、空白でない文字を無視しています。</span><span class="sxs-lookup"><span data-stu-id="f567d-119">FL_LOOSE: The comparison should give you a match whenever possible, ignoring case and non-spacing characters.</span></span> 
+   - <span data-ttu-id="967fa-119">FL_LOOSE: 比較によって、大文字と小文字を区別せずに、可能な限り一致が得られます。</span><span class="sxs-lookup"><span data-stu-id="967fa-119">FL_LOOSE: The comparison should give you a match whenever possible, ignoring case and non-spacing characters.</span></span> 
     
-<span data-ttu-id="f567d-120">**ulPropTag**</span><span class="sxs-lookup"><span data-stu-id="f567d-120">**ulPropTag**</span></span>
+<span data-ttu-id="967fa-120">**ulPropTag**</span><span class="sxs-lookup"><span data-stu-id="967fa-120">**ulPropTag**</span></span>
   
-> <span data-ttu-id="f567d-121">プロパティ タグが検索文字列の出現箇所をチェックする文字列プロパティを識別します。</span><span class="sxs-lookup"><span data-stu-id="f567d-121">Property tag identifying the string property to be checked for occurrence of the search string.</span></span> 
+> <span data-ttu-id="967fa-121">検索文字列の出現をチェックする文字列プロパティを識別するプロパティタグ。</span><span class="sxs-lookup"><span data-stu-id="967fa-121">Property tag identifying the string property to be checked for occurrence of the search string.</span></span> 
     
-<span data-ttu-id="f567d-122">**lpProp**</span><span class="sxs-lookup"><span data-stu-id="f567d-122">**lpProp**</span></span>
+<span data-ttu-id="967fa-122">**lpprop**</span><span class="sxs-lookup"><span data-stu-id="967fa-122">**lpProp**</span></span>
   
-> <span data-ttu-id="f567d-123">検索文字列として使用する文字列値を格納するプロパティ値の構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="f567d-123">Pointer to a property value structure that contains the string value to use as the search string.</span></span>
+> <span data-ttu-id="967fa-123">検索文字列として使用する文字列値を含むプロパティ値構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="967fa-123">Pointer to a property value structure that contains the string value to use as the search string.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="f567d-124">注釈</span><span class="sxs-lookup"><span data-stu-id="f567d-124">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="967fa-124">解説</span><span class="sxs-lookup"><span data-stu-id="967fa-124">Remarks</span></span>
 
-<span data-ttu-id="f567d-125">**SContentRestriction**構造体には 2 つのプロパティ タグがあります: **lpProp**が指す**ulPropTag**のメンバーと、 **ulPropTag** 、 **SPropValue**構造体のメンバーで、その他のいずれかです。</span><span class="sxs-lookup"><span data-stu-id="f567d-125">There are two property tags in an **SContentRestriction** structure: one in the **ulPropTag** member and the other in the **ulPropTag** member of the **SPropValue** structure pointed to by **lpProp**.</span></span> <span data-ttu-id="f567d-126">両方のタグでは、MAPI プロパティの種類のフィールドだけが必要ですでプロパティの識別子フィールドは無視されます。</span><span class="sxs-lookup"><span data-stu-id="f567d-126">In both tags, MAPI requires only the property type field and ignores the property identifier field.</span></span> <span data-ttu-id="f567d-127">ただし、2 つのプロパティの型が一致する必要がありますか、またはエラー値の制限は、 [IMAPITable::Restrict](imapitable-restrict.md)または[IMAPITable::FindRow](imapitable-findrow.md)への呼び出しで使用すると MAPI_E_TOO_COMPLEX が返されます。</span><span class="sxs-lookup"><span data-stu-id="f567d-127">However, the two property types must match, or else the error value MAPI_E_TOO_COMPLEX is returned when the restriction is used in a call to [IMAPITable::Restrict](imapitable-restrict.md) or [IMAPITable::FindRow](imapitable-findrow.md).</span></span> 
+<span data-ttu-id="967fa-125">**scontentrestriction**構造体には、 **ulPropTag**メンバーと、 **lpprop**でポイントされている**scontentrestriction**構造の**ulPropTag**メンバー内の2つのプロパティタグがあります。</span><span class="sxs-lookup"><span data-stu-id="967fa-125">There are two property tags in an **SContentRestriction** structure: one in the **ulPropTag** member and the other in the **ulPropTag** member of the **SPropValue** structure pointed to by **lpProp**.</span></span> <span data-ttu-id="967fa-126">両方のタグで、MAPI は property type フィールドのみを必要とし、[プロパティ識別子] フィールドは無視されます。</span><span class="sxs-lookup"><span data-stu-id="967fa-126">In both tags, MAPI requires only the property type field and ignores the property identifier field.</span></span> <span data-ttu-id="967fa-127">ただし、2つのプロパティの型が一致している必要があります。または、制限が[imapitable:: Restrict](imapitable-restrict.md)または[imapitable:: FindRow](imapitable-findrow.md)の呼び出しで使用されている場合は、エラー値 MAPI_E_TOO_COMPLEX が返されます。</span><span class="sxs-lookup"><span data-stu-id="967fa-127">However, the two property types must match, or else the error value MAPI_E_TOO_COMPLEX is returned when the restriction is used in a call to [IMAPITable::Restrict](imapitable-restrict.md) or [IMAPITable::FindRow](imapitable-findrow.md).</span></span> 
   
-<span data-ttu-id="f567d-128">FL_FULLSTRING、FL_PREFIX、FL_SUBSTRING の値は、相互に排他的です。</span><span class="sxs-lookup"><span data-stu-id="f567d-128">The values FL_FULLSTRING, FL_PREFIX, and FL_SUBSTRING are mutually exclusive.</span></span> <span data-ttu-id="f567d-129">それらの 1 つだけを設定することができ、それらのいずれかを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f567d-129">Only one of them can be set, and one of them must be set.</span></span> <span data-ttu-id="f567d-130">その意味は固定で、プロバイダーは定義されているとおりに正確にして実装する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f567d-130">Their meanings are fixed, and the provider must implement them exactly as defined.</span></span> <span data-ttu-id="f567d-131">プロバイダーは、これらの値をサポートするためにできない場合、MAPI_E_TOO_COMPLEX を返す必要があります。</span><span class="sxs-lookup"><span data-stu-id="f567d-131">The provider should return MAPI_E_TOO_COMPLEX if it is unable to support these values.</span></span> 
+<span data-ttu-id="967fa-128">FL_FULLSTRING、FL_PREFIX、および FL_SUBSTRING の値は相互に排他的です。</span><span class="sxs-lookup"><span data-stu-id="967fa-128">The values FL_FULLSTRING, FL_PREFIX, and FL_SUBSTRING are mutually exclusive.</span></span> <span data-ttu-id="967fa-129">設定できるのは1つだけで、そのうちの1つを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="967fa-129">Only one of them can be set, and one of them must be set.</span></span> <span data-ttu-id="967fa-130">これらの意味は固定されており、プロバイダーは定義されたとおりに実装する必要があります。</span><span class="sxs-lookup"><span data-stu-id="967fa-130">Their meanings are fixed, and the provider must implement them exactly as defined.</span></span> <span data-ttu-id="967fa-131">プロバイダーは、これらの値をサポートできない場合は MAPI_E_TOO_COMPLEX を返します。</span><span class="sxs-lookup"><span data-stu-id="967fa-131">The provider should return MAPI_E_TOO_COMPLEX if it is unable to support these values.</span></span> 
   
-<span data-ttu-id="f567d-132">FL_IGNORECASE、FL_IGNORENONSPACE、FL_LOOSE の値は独立しています。</span><span class="sxs-lookup"><span data-stu-id="f567d-132">The values FL_IGNORECASE, FL_IGNORENONSPACE, and FL_LOOSE are independent.</span></span> <span data-ttu-id="f567d-133">任意の場所それらのすべての 3 つのゼロからを設定できます。</span><span class="sxs-lookup"><span data-stu-id="f567d-133">Anywhere from zero to all three of them can be set.</span></span> <span data-ttu-id="f567d-134">ガイドラインとしてのみ、その定義が用意されているし、プロバイダーは、各フラグの特定の意味は、独自に実装するために自由です。</span><span class="sxs-lookup"><span data-stu-id="f567d-134">Their definitions are provided as a guideline only, and the provider is free to implement its own specific meaning of each flag.</span></span> <span data-ttu-id="f567d-135">プロバイダーでは指定されたフラグの実装が存在しない場合、エラーは返されません。</span><span class="sxs-lookup"><span data-stu-id="f567d-135">The provider should not return any error indication if it has no implementation of a specified flag.</span></span> 
+<span data-ttu-id="967fa-132">FL_IGNORECASE、FL_IGNORENONSPACE、および FL_LOOSE の値は独立しています。</span><span class="sxs-lookup"><span data-stu-id="967fa-132">The values FL_IGNORECASE, FL_IGNORENONSPACE, and FL_LOOSE are independent.</span></span> <span data-ttu-id="967fa-133">ゼロから3つまでのすべての場所を設定できます。</span><span class="sxs-lookup"><span data-stu-id="967fa-133">Anywhere from zero to all three of them can be set.</span></span> <span data-ttu-id="967fa-134">これらの定義はガイドラインとしてのみ提供されており、プロバイダーは各フラグの固有の意味を自由に実装することができます。</span><span class="sxs-lookup"><span data-stu-id="967fa-134">Their definitions are provided as a guideline only, and the provider is free to implement its own specific meaning of each flag.</span></span> <span data-ttu-id="967fa-135">プロバイダーは、指定されたフラグの実装がない場合は、エラー表示を返さないようにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="967fa-135">The provider should not return any error indication if it has no implementation of a specified flag.</span></span> 
   
-<span data-ttu-id="f567d-136">プロパティが存在しない場合、プロパティに対して設定されたコンテンツの制限の結果は定義されていません。</span><span class="sxs-lookup"><span data-stu-id="f567d-136">The result of a content restriction imposed against a property is undefined when the property does not exist.</span></span> <span data-ttu-id="f567d-137">クライアントは、このような制限について明確に定義された動作が必要で、たとえばプロパティが存在するかどうかでないことが必要なテーブルの列ではありません、既存の制限のあるコンテンツの制限に参加する**と**制限も作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f567d-137">When a client requires well-defined behavior for such a restriction and is not sure whether the property exists for example, it is not a required column of a table it should create an **AND** restriction to join the content restriction with an exist restriction.</span></span> <span data-ttu-id="f567d-138">[SExistRestriction](sexistrestriction.md)構造体を使用すると、既存の制限、**および**制限を定義するのには、 [SAndRestriction](sandrestriction.md)構造体を定義します。</span><span class="sxs-lookup"><span data-stu-id="f567d-138">Use an [SExistRestriction](sexistrestriction.md) structure to define the exist restriction and an [SAndRestriction](sandrestriction.md) structure to define the **AND** restriction.</span></span> 
+<span data-ttu-id="967fa-136">プロパティが存在しない場合、プロパティに対して適用されるコンテンツ制限の結果は未定義です。</span><span class="sxs-lookup"><span data-stu-id="967fa-136">The result of a content restriction imposed against a property is undefined when the property does not exist.</span></span> <span data-ttu-id="967fa-137">クライアントでこのような制限に対して適切に定義された動作が必要であり、そのプロパティが存在するかどうかが不明な場合は、そのプロパティが存在するかどうかは、テーブルの必須列ではないので、コンテンツ制限を既存の制限で結合するための**と**制限を作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="967fa-137">When a client requires well-defined behavior for such a restriction and is not sure whether the property exists for example, it is not a required column of a table it should create an **AND** restriction to join the content restriction with an exist restriction.</span></span> <span data-ttu-id="967fa-138">[sexistrestriction](sexistrestriction.md)構造を使用して、**と**制限を定義するための、存在制限と[SAndRestriction](sandrestriction.md)構造を定義します。</span><span class="sxs-lookup"><span data-stu-id="967fa-138">Use an [SExistRestriction](sexistrestriction.md) structure to define the exist restriction and an [SAndRestriction](sandrestriction.md) structure to define the **AND** restriction.</span></span> 
   
-<span data-ttu-id="f567d-139">**SContentRestriction**構造体および制限の詳細については一般に、[制限の詳細](about-restrictions.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f567d-139">For more information about the **SContentRestriction** structure and restrictions in general, see [About Restrictions](about-restrictions.md).</span></span>
+<span data-ttu-id="967fa-139">**scontentrestriction**構造と一般的な制限の詳細については、「[制限につい](about-restrictions.md)て」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="967fa-139">For more information about the **SContentRestriction** structure and restrictions in general, see [About Restrictions](about-restrictions.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="f567d-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="f567d-140">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="967fa-140">関連項目</span><span class="sxs-lookup"><span data-stu-id="967fa-140">See also</span></span>
 
-- [<span data-ttu-id="f567d-141">SPropValue</span><span class="sxs-lookup"><span data-stu-id="f567d-141">SPropValue</span></span>](spropvalue.md)
-- [<span data-ttu-id="f567d-142">SRestriction</span><span class="sxs-lookup"><span data-stu-id="f567d-142">SRestriction</span></span>](srestriction.md)
-- [<span data-ttu-id="f567d-143">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="f567d-143">MAPI Structures</span></span>](mapi-structures.md)
+- [<span data-ttu-id="967fa-141">SPropValue</span><span class="sxs-lookup"><span data-stu-id="967fa-141">SPropValue</span></span>](spropvalue.md)
+- [<span data-ttu-id="967fa-142">SRestriction</span><span class="sxs-lookup"><span data-stu-id="967fa-142">SRestriction</span></span>](srestriction.md)
+- [<span data-ttu-id="967fa-143">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="967fa-143">MAPI Structures</span></span>](mapi-structures.md)
 
