@@ -8,16 +8,16 @@ f1_keywords:
 - Vis_DSS.chm2000
 localization_priority: Normal
 ms.assetid: 527fa1e1-fb4d-0e56-eab6-ee880de8d140
-description: 1-D 図形の始点と終点に対する x 座標および y 座標を格納します。このセクションは 1-D 図形に対してのみ表示されます。
-ms.openlocfilehash: 583dca94a69461f8ff87a50430e53295a64a1304
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 1-D 図形の始点と終点に対する x 座標および y 座標を格納します。 このセクションは 1-D 図形に対してのみ表示されます。
+ms.openlocfilehash: b2e2aa8176812ccc983a8ccb844c7c5068ac3cf4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346264"
 ---
-# <a name="1-d-endpoints-section"></a><span data-ttu-id="46d5d-104">[1-D エンドポイント] セクション</span><span class="sxs-lookup"><span data-stu-id="46d5d-104">1-D Endpoints Section</span></span>
+# <a name="1-d-endpoints-section"></a><span data-ttu-id="b8e0c-104">[1-D Endpoints] セクション</span><span class="sxs-lookup"><span data-stu-id="b8e0c-104">1-D Endpoints Section</span></span>
 
-<span data-ttu-id="46d5d-p102">1-D 図形の始点と終点に対する x 座標および y 座標を格納します。このセクションは 1-D 図形に対してのみ表示されます。</span><span class="sxs-lookup"><span data-stu-id="46d5d-p102">Contains x- and y-coordinates of the begin point and endpoint of a 1-D shape. This section appears for 1-D shapes only.</span></span>
+<span data-ttu-id="b8e0c-105">1-D 図形の始点と終点に対する x 座標および y 座標を格納します。</span><span class="sxs-lookup"><span data-stu-id="b8e0c-105">Contains x- and y-coordinates of the begin point and endpoint of a 1-D shape.</span></span> <span data-ttu-id="b8e0c-106">このセクションは 1-D 図形に対してのみ表示されます。</span><span class="sxs-lookup"><span data-stu-id="b8e0c-106">This section appears for 1-D shapes only.</span></span>
   
 

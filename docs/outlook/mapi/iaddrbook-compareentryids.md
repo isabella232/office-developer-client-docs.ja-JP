@@ -1,5 +1,5 @@
 ---
-title: IAddrBookCompareEntryIDs
+title: iaddrbookcompareentryids
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7dabc1d3-5ea4-482f-91a9-9ef3009eddd2
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d6f983e49132e7ab6ea402a8e32bb5ec56d1efba
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: b6abecc298df7a86afff9338752a15615c73b3a4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348889"
 ---
-# <a name="iaddrbookcompareentryids"></a><span data-ttu-id="67bbd-103">IAddrBook::CompareEntryIDs</span><span class="sxs-lookup"><span data-stu-id="67bbd-103">IAddrBook::CompareEntryIDs</span></span>
+# <a name="iaddrbookcompareentryids"></a><span data-ttu-id="d685a-103">IAddrBook::CompareEntryIDs</span><span class="sxs-lookup"><span data-stu-id="d685a-103">IAddrBook::CompareEntryIDs</span></span>
 
   
   
-<span data-ttu-id="67bbd-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="67bbd-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="d685a-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="d685a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="67bbd-105">同じアドレス帳オブジェクトを参照しているかどうかを判断するのには、特定のアドレス帳プロバイダーに属している 2 つのエントリ id を比較します。</span><span class="sxs-lookup"><span data-stu-id="67bbd-105">Compares two entry identifiers that belong to a particular address book provider to determine whether they refer to the same address book object.</span></span> 
+<span data-ttu-id="d685a-105">特定のアドレス帳プロバイダーに属する2つのエントリ識別子を比較して、同じアドレス帳オブジェクトを参照しているかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="d685a-105">Compares two entry identifiers that belong to a particular address book provider to determine whether they refer to the same address book object.</span></span> 
   
 ```cpp
 HRESULT CompareEntryIDs(
@@ -38,53 +38,53 @@ HRESULT CompareEntryIDs(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="67bbd-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="67bbd-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="d685a-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d685a-106">Parameters</span></span>
 
- <span data-ttu-id="67bbd-107">_cbEntryID1_</span><span class="sxs-lookup"><span data-stu-id="67bbd-107">_cbEntryID1_</span></span>
+ <span data-ttu-id="d685a-107">_cbEntryID1_</span><span class="sxs-lookup"><span data-stu-id="d685a-107">_cbEntryID1_</span></span>
   
-> <span data-ttu-id="67bbd-108">[in]_LpEntryID1_パラメーターで指定されたエントリの識別子のバイト数です。</span><span class="sxs-lookup"><span data-stu-id="67bbd-108">[in] The byte count in the entry identifier pointed to by the  _lpEntryID1_ parameter.</span></span> 
+> <span data-ttu-id="d685a-108">順番_lpEntryID1_パラメーターによって指定されたエントリ識別子のバイト数。</span><span class="sxs-lookup"><span data-stu-id="d685a-108">[in] The byte count in the entry identifier pointed to by the  _lpEntryID1_ parameter.</span></span> 
     
- <span data-ttu-id="67bbd-109">_lpEntryID1_</span><span class="sxs-lookup"><span data-stu-id="67bbd-109">_lpEntryID1_</span></span>
+ <span data-ttu-id="d685a-109">_lpEntryID1_</span><span class="sxs-lookup"><span data-stu-id="d685a-109">_lpEntryID1_</span></span>
   
-> <span data-ttu-id="67bbd-110">[in]比較する最初のエントリの識別子へのポインター。</span><span class="sxs-lookup"><span data-stu-id="67bbd-110">[in] A pointer to the first entry identifier to be compared.</span></span>
+> <span data-ttu-id="d685a-110">順番比較する最初のエントリ識別子へのポインター。</span><span class="sxs-lookup"><span data-stu-id="d685a-110">[in] A pointer to the first entry identifier to be compared.</span></span>
     
- <span data-ttu-id="67bbd-111">_cbEntryID2_</span><span class="sxs-lookup"><span data-stu-id="67bbd-111">_cbEntryID2_</span></span>
+ <span data-ttu-id="d685a-111">_cbEntryID2_</span><span class="sxs-lookup"><span data-stu-id="d685a-111">_cbEntryID2_</span></span>
   
-> <span data-ttu-id="67bbd-112">[in]_LpEntryID2_パラメーターで指定されたエントリの識別子のバイト数です。</span><span class="sxs-lookup"><span data-stu-id="67bbd-112">[in] The byte count in the entry identifier pointed to by the  _lpEntryID2_ parameter.</span></span> 
+> <span data-ttu-id="d685a-112">順番_lpEntryID2_パラメーターによって指定されたエントリ識別子のバイト数。</span><span class="sxs-lookup"><span data-stu-id="d685a-112">[in] The byte count in the entry identifier pointed to by the  _lpEntryID2_ parameter.</span></span> 
     
- <span data-ttu-id="67bbd-113">_lpEntryID2_</span><span class="sxs-lookup"><span data-stu-id="67bbd-113">_lpEntryID2_</span></span>
+ <span data-ttu-id="d685a-113">_lpEntryID2_</span><span class="sxs-lookup"><span data-stu-id="d685a-113">_lpEntryID2_</span></span>
   
-> <span data-ttu-id="67bbd-114">[in]比較する 2 番目のエントリの識別子へのポインター。</span><span class="sxs-lookup"><span data-stu-id="67bbd-114">[in] A pointer to the second entry identifier to be compared.</span></span>
+> <span data-ttu-id="d685a-114">順番比較する2番目のエントリ id へのポインター。</span><span class="sxs-lookup"><span data-stu-id="d685a-114">[in] A pointer to the second entry identifier to be compared.</span></span>
     
- <span data-ttu-id="67bbd-115">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="67bbd-115">_ulFlags_</span></span>
+ <span data-ttu-id="d685a-115">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="d685a-115">_ulFlags_</span></span>
   
-> <span data-ttu-id="67bbd-116">[����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B</span><span class="sxs-lookup"><span data-stu-id="67bbd-116">[in] Reserved; must be zero.</span></span>
+> <span data-ttu-id="d685a-116">[����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B</span><span class="sxs-lookup"><span data-stu-id="d685a-116">[in] Reserved; must be zero.</span></span>
     
- <span data-ttu-id="67bbd-117">_lpulResult_</span><span class="sxs-lookup"><span data-stu-id="67bbd-117">_lpulResult_</span></span>
+ <span data-ttu-id="d685a-117">_lルー result_</span><span class="sxs-lookup"><span data-stu-id="d685a-117">_lpulResult_</span></span>
   
-> <span data-ttu-id="67bbd-118">[out]比較の結果へのポインター。</span><span class="sxs-lookup"><span data-stu-id="67bbd-118">[out] A pointer to the result of the comparison.</span></span> <span data-ttu-id="67bbd-119">_LpulResult_の内容が TRUE に設定される場合は 2 つのエントリの識別子が同じオブジェクトを参照してください。それ以外の場合、内容は、FALSE に設定されます。</span><span class="sxs-lookup"><span data-stu-id="67bbd-119">The contents of  _lpulResult_ are set to TRUE if the two entry identifiers refer to the same object; otherwise, the contents are set to FALSE.</span></span> 
+> <span data-ttu-id="d685a-118">読み上げ比較結果へのポインター。</span><span class="sxs-lookup"><span data-stu-id="d685a-118">[out] A pointer to the result of the comparison.</span></span> <span data-ttu-id="d685a-119">2つのエントリ識別子が同じオブジェクトを参照する場合、 _lアウト result_の内容は TRUE に設定されます。それ以外の場合は、内容が FALSE に設定されます。</span><span class="sxs-lookup"><span data-stu-id="d685a-119">The contents of  _lpulResult_ are set to TRUE if the two entry identifiers refer to the same object; otherwise, the contents are set to FALSE.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="67bbd-120">�߂�l</span><span class="sxs-lookup"><span data-stu-id="67bbd-120">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="d685a-120">戻り値</span><span class="sxs-lookup"><span data-stu-id="d685a-120">Return value</span></span>
 
-<span data-ttu-id="67bbd-121">S_OK</span><span class="sxs-lookup"><span data-stu-id="67bbd-121">S_OK</span></span> 
+<span data-ttu-id="d685a-121">S_OK</span><span class="sxs-lookup"><span data-stu-id="d685a-121">S_OK</span></span> 
   
-> <span data-ttu-id="67bbd-122">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="67bbd-122">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="d685a-122">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="d685a-122">The call succeeded and has returned the expected value or values.</span></span>
     
-<span data-ttu-id="67bbd-123">MAPI_E_UNKNOWN_ENTRYID</span><span class="sxs-lookup"><span data-stu-id="67bbd-123">MAPI_E_UNKNOWN_ENTRYID</span></span> 
+<span data-ttu-id="d685a-123">MAPI_E_UNKNOWN_ENTRYID</span><span class="sxs-lookup"><span data-stu-id="d685a-123">MAPI_E_UNKNOWN_ENTRYID</span></span> 
   
-> <span data-ttu-id="67bbd-124">_LpEntryID1_または_lpEntryID2_パラメーターで渡されたエントリ id の一方または両方が、アドレス帳プロバイダーで認識されません。</span><span class="sxs-lookup"><span data-stu-id="67bbd-124">One or both of the entry identifiers passed in with the  _lpEntryID1_ or  _lpEntryID2_ parameters are not recognized by any address book provider.</span></span> 
+> <span data-ttu-id="d685a-124">_lpEntryID1_パラメーターまたは_lpEntryID2_パラメーターと共に渡されたエントリ識別子の一方または両方が、アドレス帳プロバイダーによって認識されません。</span><span class="sxs-lookup"><span data-stu-id="d685a-124">One or both of the entry identifiers passed in with the  _lpEntryID1_ or  _lpEntryID2_ parameters are not recognized by any address book provider.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="67bbd-125">注釈</span><span class="sxs-lookup"><span data-stu-id="67bbd-125">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d685a-125">解説</span><span class="sxs-lookup"><span data-stu-id="d685a-125">Remarks</span></span>
 
-<span data-ttu-id="67bbd-126">クライアント アプリケーションとサービス プロバイダーの呼び出し、 **CompareEntryIDs**メソッド 2 つのエントリ id を比較するのには同じオブジェクトを参照しているかどうかを決定する 1 つのアドレス帳プロバイダーに属しています。</span><span class="sxs-lookup"><span data-stu-id="67bbd-126">Client applications and service providers call the **CompareEntryIDs** method to compare two entry identifiers that belongs to a single address book provider to determine whether they refer to the same object.</span></span> <span data-ttu-id="67bbd-127">**CompareEntryIDs**は、オブジェクトが 1 つ以上の有効なエントリ id を持つことができますので便利です。</span><span class="sxs-lookup"><span data-stu-id="67bbd-127">**CompareEntryIDs** is useful because an object can have more than one valid entry identifier.</span></span> <span data-ttu-id="67bbd-128">このような状況には、たとえば、アドレス帳プロバイダーの新しいバージョンをインストールした後が発生します。</span><span class="sxs-lookup"><span data-stu-id="67bbd-128">This situation can occur, for example, after a new version of an address book provider is installed.</span></span> 
+<span data-ttu-id="d685a-126">クライアントアプリケーションおよびサービスプロバイダーは、1つのアドレス帳プロバイダーに属する2つのエントリ識別子を比較して、同じオブジェクトを参照しているかどうかを判断するために、 **compareentryids**メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="d685a-126">Client applications and service providers call the **CompareEntryIDs** method to compare two entry identifiers that belongs to a single address book provider to determine whether they refer to the same object.</span></span> <span data-ttu-id="d685a-127">**compareentryids**は、1つのオブジェクトが複数の有効なエントリ識別子を持つことができるので便利です。</span><span class="sxs-lookup"><span data-stu-id="d685a-127">**CompareEntryIDs** is useful because an object can have more than one valid entry identifier.</span></span> <span data-ttu-id="d685a-128">このような状況は、アドレス帳プロバイダーの新しいバージョンがインストールされた後などに発生します。</span><span class="sxs-lookup"><span data-stu-id="d685a-128">This situation can occur, for example, after a new version of an address book provider is installed.</span></span> 
   
-<span data-ttu-id="67bbd-129">MAPI アドレス帳プロバイダーに、エントリの識別子で登録されている**MAPIUID**構造を持つエントリの識別子の[MAPIUID](mapiuid.md)構造を照合することによって適切なプロバイダーを決定するには、この呼び出しを渡します、プロバイダーです。</span><span class="sxs-lookup"><span data-stu-id="67bbd-129">MAPI passes this call to the address book provider that is responsible for the entry identifiers, determining the appropriate provider by matching the [MAPIUID](mapiuid.md) structure in the entry identifiers with the **MAPIUID** structure registered by the provider.</span></span> 
+<span data-ttu-id="d685a-129">この呼び出しは、エントリ識別子を処理するアドレス帳プロバイダーに渡され、エントリ識別子の[MAPIUID](mapiuid.md)構造と、 **MAPIUID**構造が一致することによって適切なプロバイダーが決定されます。供給.</span><span class="sxs-lookup"><span data-stu-id="d685a-129">MAPI passes this call to the address book provider that is responsible for the entry identifiers, determining the appropriate provider by matching the [MAPIUID](mapiuid.md) structure in the entry identifiers with the **MAPIUID** structure registered by the provider.</span></span> 
   
-<span data-ttu-id="67bbd-130">**CompareEntryIDs**が TRUE に_lpulResult_パラメーターの内容を設定する場合は 2 つのエントリの識別子は、同じオブジェクトを参照してください、別のオブジェクトを参照している場合、 **CompareEntryIDs**は false を指定する内容を設定します。</span><span class="sxs-lookup"><span data-stu-id="67bbd-130">If the two entry identifiers refer to the same object, **CompareEntryIDs** sets the contents of the  _lpulResult_ parameter to TRUE; if they refer to different objects, **CompareEntryIDs** sets the contents to FALSE.</span></span> <span data-ttu-id="67bbd-131">どちらの場合では、 **CompareEntryIDs**は、S_OK を返します。</span><span class="sxs-lookup"><span data-stu-id="67bbd-131">In either case, **CompareEntryIDs** returns S_OK.</span></span> <span data-ttu-id="67bbd-132">**CompareEntryIDs**エントリの識別子に一致する**MAPIUID**構造体を登録されているアドレス帳プロバイダーがない場合に発生する、エラーを取得する場合は、クライアントとプロバイダーはかかりません操作の結果に基づいて、比較します。</span><span class="sxs-lookup"><span data-stu-id="67bbd-132">If **CompareEntryIDs** returns an error, which can occur if no address book provider has registered a **MAPIUID** structure that matches the one in the entry identifiers, clients and providers should not take any action based on the result of the comparison.</span></span> <span data-ttu-id="67bbd-133">実行中のアクションを最も保守的なアプローチを受講する必要があります代わりにします。</span><span class="sxs-lookup"><span data-stu-id="67bbd-133">They should instead take the most conservative approach to the action being performed.</span></span> 
+<span data-ttu-id="d685a-130">2つのエントリ識別子が同じオブジェクトを参照している場合、 **compareentryids**は_lpulresult_パラメーターの内容を TRUE に設定します。異なるオブジェクトを参照している場合、 **compareentryids**は内容を FALSE に設定します。</span><span class="sxs-lookup"><span data-stu-id="d685a-130">If the two entry identifiers refer to the same object, **CompareEntryIDs** sets the contents of the  _lpulResult_ parameter to TRUE; if they refer to different objects, **CompareEntryIDs** sets the contents to FALSE.</span></span> <span data-ttu-id="d685a-131">どちらの場合も、 **compareentryids**は S_OK を返します。</span><span class="sxs-lookup"><span data-stu-id="d685a-131">In either case, **CompareEntryIDs** returns S_OK.</span></span> <span data-ttu-id="d685a-132">**compareentryids**がエラーを返した場合は、アドレス帳プロバイダーが登録されていない**MAPIUID**構造がエントリ識別子内にある場合、クライアントとプロバイダーは、その結果に基づいて操作を行うことはできません。結果.</span><span class="sxs-lookup"><span data-stu-id="d685a-132">If **CompareEntryIDs** returns an error, which can occur if no address book provider has registered a **MAPIUID** structure that matches the one in the entry identifiers, clients and providers should not take any action based on the result of the comparison.</span></span> <span data-ttu-id="d685a-133">そのような場合は、実行するアクションに対して最も慎重な方法をとる必要があります。</span><span class="sxs-lookup"><span data-stu-id="d685a-133">They should instead take the most conservative approach to the action being performed.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="67bbd-134">関連項目</span><span class="sxs-lookup"><span data-stu-id="67bbd-134">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d685a-134">関連項目</span><span class="sxs-lookup"><span data-stu-id="d685a-134">See also</span></span>
 
 
 
-[<span data-ttu-id="67bbd-135">IAddrBook : IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="67bbd-135">IAddrBook : IMAPIProp</span></span>](iaddrbookimapiprop.md)
+[<span data-ttu-id="d685a-135">IAddrBook : IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="d685a-135">IAddrBook : IMAPIProp</span></span>](iaddrbookimapiprop.md)
 

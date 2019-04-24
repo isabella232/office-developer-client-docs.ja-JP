@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 14c171ec-0aec-43ab-8be8-e6bc0ce28a58
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a524a7eb40c33d6de2f64cd5373c9a39a8a1e3df
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ac59aeb3d650c0fbeb5bcdb580e0401cbab58ee6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32347811"
 ---
-# <a name="hrentryidfromsz"></a><span data-ttu-id="11a36-103">HrEntryIDFromSz</span><span class="sxs-lookup"><span data-stu-id="11a36-103">HrEntryIDFromSz</span></span>
+# <a name="hrentryidfromsz"></a><span data-ttu-id="276d9-103">HrEntryIDFromSz</span><span class="sxs-lookup"><span data-stu-id="276d9-103">HrEntryIDFromSz</span></span>
 
   
   
-<span data-ttu-id="11a36-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="11a36-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="276d9-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="276d9-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="11a36-105">ASCII エンコードからエントリ識別子を再作成します。</span><span class="sxs-lookup"><span data-stu-id="11a36-105">Recreates an entry identifier from its ASCII encoding.</span></span> 
+<span data-ttu-id="276d9-105">エントリ id を ASCII エンコードから再作成します。</span><span class="sxs-lookup"><span data-stu-id="276d9-105">Recreates an entry identifier from its ASCII encoding.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="11a36-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="11a36-106">Header file:</span></span>  <br/> |<span data-ttu-id="11a36-107">Mapiutil.h</span><span class="sxs-lookup"><span data-stu-id="11a36-107">Mapiutil.h</span></span>  <br/> |
-|<span data-ttu-id="11a36-108">によって実装されます。</span><span class="sxs-lookup"><span data-stu-id="11a36-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="11a36-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="11a36-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="11a36-110">によって呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="11a36-110">Called by:</span></span>  <br/> |<span data-ttu-id="11a36-111">クライアント アプリケーション</span><span class="sxs-lookup"><span data-stu-id="11a36-111">Client applications</span></span>  <br/> |
+|<span data-ttu-id="276d9-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="276d9-106">Header file:</span></span>  <br/> |<span data-ttu-id="276d9-107">Mapiutil</span><span class="sxs-lookup"><span data-stu-id="276d9-107">Mapiutil.h</span></span>  <br/> |
+|<span data-ttu-id="276d9-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="276d9-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="276d9-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="276d9-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="276d9-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="276d9-110">Called by:</span></span>  <br/> |<span data-ttu-id="276d9-111">クライアント アプリケーション</span><span class="sxs-lookup"><span data-stu-id="276d9-111">Client applications</span></span>  <br/> |
    
 ```cpp
 HRESULT HrEntryIDFromSz(
@@ -41,36 +41,36 @@ HRESULT HrEntryIDFromSz(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="11a36-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="11a36-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="276d9-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="276d9-112">Parameters</span></span>
 
- <span data-ttu-id="11a36-113">_sz_</span><span class="sxs-lookup"><span data-stu-id="11a36-113">_sz_</span></span>
+ <span data-ttu-id="276d9-113">_sz_</span><span class="sxs-lookup"><span data-stu-id="276d9-113">_sz_</span></span>
   
-> <span data-ttu-id="11a36-114">[in]エントリ識別子を作成するから ASCII 文字列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="11a36-114">[in] Pointer to the ASCII string from which to create an entry identifier.</span></span> 
+> <span data-ttu-id="276d9-114">順番エントリ識別子を作成する ASCII 文字列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="276d9-114">[in] Pointer to the ASCII string from which to create an entry identifier.</span></span> 
     
- <span data-ttu-id="11a36-115">_pcb_</span><span class="sxs-lookup"><span data-stu-id="11a36-115">_pcb_</span></span>
+ <span data-ttu-id="276d9-115">_設計_</span><span class="sxs-lookup"><span data-stu-id="276d9-115">_pcb_</span></span>
   
-> <span data-ttu-id="11a36-116">[out]_Ppentry_パラメーターで指定されたエントリの識別子のバイト単位のサイズへのポインター。</span><span class="sxs-lookup"><span data-stu-id="11a36-116">[out] Pointer to the size, in bytes, of the entry identifier pointed to by the  _ppentry_ parameter.</span></span> 
+> <span data-ttu-id="276d9-116">読み上げ_ppentry_パラメーターによって指定されたエントリ識別子のサイズ (バイト数) へのポインター。</span><span class="sxs-lookup"><span data-stu-id="276d9-116">[out] Pointer to the size, in bytes, of the entry identifier pointed to by the  _ppentry_ parameter.</span></span> 
     
- <span data-ttu-id="11a36-117">_ppentry_</span><span class="sxs-lookup"><span data-stu-id="11a36-117">_ppentry_</span></span>
+ <span data-ttu-id="276d9-117">_ppentry_</span><span class="sxs-lookup"><span data-stu-id="276d9-117">_ppentry_</span></span>
   
-> <span data-ttu-id="11a36-118">[out]新しいエントリの識別子を格納する返される[エントリ ID](entryid.md)の構造体へのポインターへのポインター。</span><span class="sxs-lookup"><span data-stu-id="11a36-118">[out] Pointer to a pointer to the returned [ENTRYID](entryid.md) structure that contains the new entry identifier.</span></span> 
+> <span data-ttu-id="276d9-118">読み上げ新しいエントリ識別子を含む、返される[ENTRYID](entryid.md)構造体へのポインターへのポインター。</span><span class="sxs-lookup"><span data-stu-id="276d9-118">[out] Pointer to a pointer to the returned [ENTRYID](entryid.md) structure that contains the new entry identifier.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="11a36-119">�߂�l</span><span class="sxs-lookup"><span data-stu-id="11a36-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="276d9-119">戻り値</span><span class="sxs-lookup"><span data-stu-id="276d9-119">Return value</span></span>
 
-<span data-ttu-id="11a36-120">S_OK</span><span class="sxs-lookup"><span data-stu-id="11a36-120">S_OK</span></span>
+<span data-ttu-id="276d9-120">S_OK</span><span class="sxs-lookup"><span data-stu-id="276d9-120">S_OK</span></span>
   
-> <span data-ttu-id="11a36-121">再作成に成功しました。</span><span class="sxs-lookup"><span data-stu-id="11a36-121">The recreation was successful.</span></span>
+> <span data-ttu-id="276d9-121">再レクリエーションは成功しました。</span><span class="sxs-lookup"><span data-stu-id="276d9-121">The recreation was successful.</span></span>
     
-<span data-ttu-id="11a36-122">MAPI_E_INVALID_ENTRYID</span><span class="sxs-lookup"><span data-stu-id="11a36-122">MAPI_E_INVALID_ENTRYID</span></span>
+<span data-ttu-id="276d9-122">MAPI_E_INVALID_ENTRYID</span><span class="sxs-lookup"><span data-stu-id="276d9-122">MAPI_E_INVALID_ENTRYID</span></span>
   
-> <span data-ttu-id="11a36-123">エントリ ID が無効でした。</span><span class="sxs-lookup"><span data-stu-id="11a36-123">The entry ID was invalid.</span></span>
+> <span data-ttu-id="276d9-123">エントリ ID が無効です。</span><span class="sxs-lookup"><span data-stu-id="276d9-123">The entry ID was invalid.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="11a36-124">注釈</span><span class="sxs-lookup"><span data-stu-id="11a36-124">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="276d9-124">解説</span><span class="sxs-lookup"><span data-stu-id="276d9-124">Remarks</span></span>
 
-<span data-ttu-id="11a36-125">**HrEntryIDFromSz**と[HrSzFromEntryID](hrszfromentryid.md)関数は、文字列とエントリの識別子のバイナリ フォーマット間の変換を提供します。</span><span class="sxs-lookup"><span data-stu-id="11a36-125">The **HrEntryIDFromSz** and [HrSzFromEntryID](hrszfromentryid.md) functions provide conversion between the string and binary formats of entry identifiers.</span></span> 
+<span data-ttu-id="276d9-125">**HrEntryIDFromSz**および[hrszfromentryid](hrszfromentryid.md)関数は、エントリ識別子の文字列形式とバイナリ形式の間の変換を提供します。</span><span class="sxs-lookup"><span data-stu-id="276d9-125">The **HrEntryIDFromSz** and [HrSzFromEntryID](hrszfromentryid.md) functions provide conversion between the string and binary formats of entry identifiers.</span></span> 
   
-## <a name="notes-to-callers"></a><span data-ttu-id="11a36-126">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="11a36-126">Notes to callers</span></span>
+## <a name="notes-to-callers"></a><span data-ttu-id="276d9-126">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="276d9-126">Notes to callers</span></span>
 
-<span data-ttu-id="11a36-127">**HrEntryIDFromSz**関数は、 [MAPIAllocateBuffer](mapiallocatebuffer.md)関数を使用して ASCII 文字列のメモリを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="11a36-127">The **HrEntryIDFromSz** function allocates memory for the ASCII string using the [MAPIAllocateBuffer](mapiallocatebuffer.md) function.</span></span> 
+<span data-ttu-id="276d9-127">**HrEntryIDFromSz**関数は、 [MAPIAllocateBuffer](mapiallocatebuffer.md)関数を使用して、ASCII 文字列のメモリを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="276d9-127">The **HrEntryIDFromSz** function allocates memory for the ASCII string using the [MAPIAllocateBuffer](mapiallocatebuffer.md) function.</span></span> 
   
 

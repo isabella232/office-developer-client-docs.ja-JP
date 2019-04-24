@@ -1,5 +1,5 @@
 ---
-title: IFolderSupportGetSupportMask
+title: ifoldersupportgetsupportmask
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8d8aaeb7-57d7-ba4c-95d1-a5368cfc4afe
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: c51f4a7266e67be08f31daa5afbf23ce0b256252
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 1c27bdc52ebe725c40cbf318fab0678f41cdc287
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350835"
 ---
-# <a name="ifoldersupportgetsupportmask"></a><span data-ttu-id="660d2-103">IFolderSupport::GetSupportMask</span><span class="sxs-lookup"><span data-stu-id="660d2-103">IFolderSupport::GetSupportMask</span></span>
+# <a name="ifoldersupportgetsupportmask"></a><span data-ttu-id="c7cfa-103">IFolderSupport::GetSupportMask</span><span class="sxs-lookup"><span data-stu-id="c7cfa-103">IFolderSupport::GetSupportMask</span></span>
 
   
   
-<span data-ttu-id="660d2-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="660d2-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="c7cfa-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="c7cfa-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="660d2-105">共有フォルダーのサポートに関する情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="660d2-105">Gets information about a folder's support for sharing.</span></span>
+<span data-ttu-id="c7cfa-105">フォルダーの共有のサポートに関する情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="c7cfa-105">Gets information about a folder's support for sharing.</span></span>
   
 ```cpp
 HRESULT GetSupportMask( 
@@ -33,24 +33,24 @@ HRESULT GetSupportMask(
 ); 
 ```
 
-## <a name="parameters"></a><span data-ttu-id="660d2-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="660d2-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="c7cfa-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="c7cfa-106">Parameters</span></span>
 
- <span data-ttu-id="660d2-107">_pdwSupportMask_</span><span class="sxs-lookup"><span data-stu-id="660d2-107">_pdwSupportMask_</span></span>
+ <span data-ttu-id="c7cfa-107">_pdwSupportMask_</span><span class="sxs-lookup"><span data-stu-id="c7cfa-107">_pdwSupportMask_</span></span>
   
-> <span data-ttu-id="660d2-108">[out]フォルダーが共有をサポートしているかを示すビットマスクです。</span><span class="sxs-lookup"><span data-stu-id="660d2-108">[out] A bitmask indicating if the folder supports sharing.</span></span>
+> <span data-ttu-id="c7cfa-108">読み上げフォルダーが共有をサポートしているかどうかを示すビットマスク。</span><span class="sxs-lookup"><span data-stu-id="c7cfa-108">[out] A bitmask indicating if the folder supports sharing.</span></span>
     
- <span data-ttu-id="660d2-109">**FS_NONE**</span><span class="sxs-lookup"><span data-stu-id="660d2-109">**FS_NONE**</span></span>
+ <span data-ttu-id="c7cfa-109">**FS_NONE**</span><span class="sxs-lookup"><span data-stu-id="c7cfa-109">**FS_NONE**</span></span>
   
-> <span data-ttu-id="660d2-110">フォルダーを共有するサポートしていないことを示します。</span><span class="sxs-lookup"><span data-stu-id="660d2-110">Indicates that the folder does not support sharing.</span></span>
+> <span data-ttu-id="c7cfa-110">フォルダーが共有をサポートしていないことを示します。</span><span class="sxs-lookup"><span data-stu-id="c7cfa-110">Indicates that the folder does not support sharing.</span></span>
     
- <span data-ttu-id="660d2-111">**FS_SUPPORTS_SHARING**</span><span class="sxs-lookup"><span data-stu-id="660d2-111">**FS_SUPPORTS_SHARING**</span></span>
+ <span data-ttu-id="c7cfa-111">**FS_SUPPORTS_SHARING**</span><span class="sxs-lookup"><span data-stu-id="c7cfa-111">**FS_SUPPORTS_SHARING**</span></span>
   
-> <span data-ttu-id="660d2-112">共有フォルダーをサポートしていることを示します。</span><span class="sxs-lookup"><span data-stu-id="660d2-112">Indicates that the folder supports sharing.</span></span>
+> <span data-ttu-id="c7cfa-112">フォルダーが共有をサポートしていることを示します。</span><span class="sxs-lookup"><span data-stu-id="c7cfa-112">Indicates that the folder supports sharing.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="660d2-113">�߂�l</span><span class="sxs-lookup"><span data-stu-id="660d2-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c7cfa-113">戻り値</span><span class="sxs-lookup"><span data-stu-id="c7cfa-113">Return value</span></span>
 
-<span data-ttu-id="660d2-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="660d2-114">S_OK</span></span> 
+<span data-ttu-id="c7cfa-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="c7cfa-114">S_OK</span></span> 
   
-> <span data-ttu-id="660d2-115">呼び出しが正常になされました。</span><span class="sxs-lookup"><span data-stu-id="660d2-115">The call was successful.</span></span>
+> <span data-ttu-id="c7cfa-115">呼び出しが正常になされました。</span><span class="sxs-lookup"><span data-stu-id="c7cfa-115">The call was successful.</span></span>
     
 

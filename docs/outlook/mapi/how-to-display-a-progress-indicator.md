@@ -1,5 +1,5 @@
 ---
-title: 進行状況インジケーターを表示します。
+title: 進行状況インジケーターを表示する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,85 +7,85 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 20f5ad5a-b700-4fb5-9658-f71da5a06a12
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 62549cbeea0044ceee8aa2e704b8a9bc271b7e8e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 7b0ce0ab75ffdce045ccde5bf6ea8a7da046f463
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345130"
 ---
-# <a name="display-a-progress-indicator"></a><span data-ttu-id="788a2-103">進行状況インジケーターを表示します。</span><span class="sxs-lookup"><span data-stu-id="788a2-103">Display a progress indicator</span></span>
+# <a name="display-a-progress-indicator"></a><span data-ttu-id="22bc0-103">進行状況インジケーターを表示する</span><span class="sxs-lookup"><span data-stu-id="22bc0-103">Display a progress indicator</span></span>
  
-<span data-ttu-id="788a2-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="788a2-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="22bc0-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="22bc0-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="788a2-105">進行状況インジケーターを表示するには、現在のフラグの設定を取得するために[IMAPIProgress::GetFlags](imapiprogress-getflags.md)を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="788a2-105">To display a progress indicator, call [IMAPIProgress::GetFlags](imapiprogress-getflags.md) to retrieve the current flags setting.</span></span> 
+<span data-ttu-id="22bc0-105">進行状況インジケーターを表示するには、呼び出し[imapiprogress:: getflags](imapiprogress-getflags.md)を呼び出して現在のフラグ設定を取得します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-105">To display a progress indicator, call [IMAPIProgress::GetFlags](imapiprogress-getflags.md) to retrieve the current flags setting.</span></span> 
   
-<span data-ttu-id="788a2-106">MAPI_TOP_LEVEL フラグが設定されている場合は、次の手順に行います。</span><span class="sxs-lookup"><span data-stu-id="788a2-106">If the MAPI_TOP_LEVEL flag is set, complete the following steps:</span></span>
+<span data-ttu-id="22bc0-106">MAPI_TOP_LEVEL フラグが設定されている場合は、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-106">If the MAPI_TOP_LEVEL flag is set, complete the following steps:</span></span>
   
-1. <span data-ttu-id="788a2-107">操作で処理する項目の合計数を変数に格納に設定します。</span><span class="sxs-lookup"><span data-stu-id="788a2-107">Set a variable equal to the total number of items to process in the operation.</span></span> <span data-ttu-id="788a2-108">たとえば、フォルダーの内容をコピーする場合この値は、フォルダー内のサブフォルダーの数とメッセージの数と等しいのようになります。</span><span class="sxs-lookup"><span data-stu-id="788a2-108">For example, if you are copying the contents of a folder, this value will be equal to the number of the subfolders in the folder plus the number of messages.</span></span> 
+1. <span data-ttu-id="22bc0-107">操作で処理するアイテムの合計数を変数として設定します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-107">Set a variable equal to the total number of items to process in the operation.</span></span> <span data-ttu-id="22bc0-108">たとえば、フォルダーの内容をコピーしている場合、この値は、フォルダー内のサブフォルダーとメッセージ数の合計と等しくなります。</span><span class="sxs-lookup"><span data-stu-id="22bc0-108">For example, if you are copying the contents of a folder, this value will be equal to the number of the subfolders in the folder plus the number of messages.</span></span> 
     
-2. <span data-ttu-id="788a2-109">1000 の項目の数で割った値を変数に格納を設定します。</span><span class="sxs-lookup"><span data-stu-id="788a2-109">Set a variable equal to 1000 divided by the number of items.</span></span> 
+2. <span data-ttu-id="22bc0-109">変数を1000に設定し、アイテム数で割った値にします。</span><span class="sxs-lookup"><span data-stu-id="22bc0-109">Set a variable equal to 1000 divided by the number of items.</span></span> 
     
-3. <span data-ttu-id="788a2-110">サブオブジェクトの進行状況を表示する場合、進行中のオブジェクトの[IMAPIProgress::SetLimits](imapiprogress-setlimits.md)メソッドを呼び出すし、次の 3 つのパラメーターの値を渡します。</span><span class="sxs-lookup"><span data-stu-id="788a2-110">If you are showing progress for subobjects, call the progress object's [IMAPIProgress::SetLimits](imapiprogress-setlimits.md) method and pass the following values for the three parameters:</span></span> 
+3. <span data-ttu-id="22bc0-110">サブオブジェクトの進行状況を表示している場合は、progress オブジェクトの[imapiprogress:: setlimits](imapiprogress-setlimits.md)メソッドを呼び出し、3つのパラメーターに次の値を渡します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-110">If you are showing progress for subobjects, call the progress object's [IMAPIProgress::SetLimits](imapiprogress-setlimits.md) method and pass the following values for the three parameters:</span></span> 
     
-   - <span data-ttu-id="788a2-111">_LpulMin_パラメーターを 0 に設定します。</span><span class="sxs-lookup"><span data-stu-id="788a2-111">Set the  _lpulMin_ parameter to 0.</span></span> 
+   - <span data-ttu-id="22bc0-111">lアウト_min_パラメーターを0に設定します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-111">Set the  _lpulMin_ parameter to 0.</span></span> 
     
-   - <span data-ttu-id="788a2-112">_LpulMax_パラメーターを 1000 に設定します。</span><span class="sxs-lookup"><span data-stu-id="788a2-112">Set the  _lpulMax_ parameter to 1000.</span></span> 
+   - <span data-ttu-id="22bc0-112">lアウト_max_パラメーターを1000に設定します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-112">Set the  _lpulMax_ parameter to 1000.</span></span> 
     
-   - <span data-ttu-id="788a2-113">_LpulFlags_パラメーターを MAPI_TOP_LEVEL に設定します。</span><span class="sxs-lookup"><span data-stu-id="788a2-113">Set the  _lpulFlags_ parameter to MAPI_TOP_LEVEL.</span></span> 
+   - <span data-ttu-id="22bc0-113">lアウト_flags_パラメーターを MAPI_TOP_LEVEL に設定します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-113">Set the  _lpulFlags_ parameter to MAPI_TOP_LEVEL.</span></span> 
     
-4. <span data-ttu-id="788a2-114">各オブジェクトを処理するには、次の手順を行います。</span><span class="sxs-lookup"><span data-stu-id="788a2-114">For each object to be processed, complete the following steps:</span></span>
+4. <span data-ttu-id="22bc0-114">処理するオブジェクトごとに、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-114">For each object to be processed, complete the following steps:</span></span>
     
-   1. <span data-ttu-id="788a2-115">**IMAPIProgress::SetLimits**を呼び出すし、次の 3 つのパラメーターの値を渡します。</span><span class="sxs-lookup"><span data-stu-id="788a2-115">Call **IMAPIProgress::SetLimits** and pass the following values for the three parameters:</span></span> 
+   1. <span data-ttu-id="22bc0-115">呼び出し**imapiprogress:: setlimits** 。3つのパラメーターに対して次の値を渡します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-115">Call **IMAPIProgress::SetLimits** and pass the following values for the three parameters:</span></span> 
       
-     - <span data-ttu-id="788a2-116">変数から 1 を引いた現在の項目を掛けた値 2 の手順で設定するには、 _lpulMin_パラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="788a2-116">Set the  _lpulMin_ parameter to the variable set in step 2 multiplied by the current item minus 1.</span></span> 
+     - <span data-ttu-id="22bc0-116">lアウト_min_パラメーターを手順2で設定した変数に、現在のアイテムから1を引いた値を掛けた値に設定します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-116">Set the  _lpulMin_ parameter to the variable set in step 2 multiplied by the current item minus 1.</span></span> 
       
-     - <span data-ttu-id="788a2-117">手順 2 の現在のオブジェクトを掛けた値に設定する変数には、 _lpulMax_パラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="788a2-117">Set the  _lpulMax_ parameter to the variable set in step 2 multiplied by the current object.</span></span> 
+     - <span data-ttu-id="22bc0-117">lアウト_max_パラメーターを、手順2で現在のオブジェクトを乗算した変数セットに設定します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-117">Set the  _lpulMax_ parameter to the variable set in step 2 multiplied by the current object.</span></span> 
       
-     - <span data-ttu-id="788a2-118">_LpulFlags_パラメーターを 0 に設定します。</span><span class="sxs-lookup"><span data-stu-id="788a2-118">Set the  _lpulFlags_ parameter to 0.</span></span> 
+     - <span data-ttu-id="22bc0-118">lアウト_flags_パラメーターを0に設定します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-118">Set the  _lpulFlags_ parameter to 0.</span></span> 
       
-   2. <span data-ttu-id="788a2-119">このオブジェクトに対するすべての処理を行う必要がありますを実行します。</span><span class="sxs-lookup"><span data-stu-id="788a2-119">Perform whatever processing should be done on this object.</span></span> <span data-ttu-id="788a2-120">サブオブジェクト、サブオブジェクトの進行状況を表示する場合、メソッドの_lpProgress_パラメーターで進行中のオブジェクトへのポインターを渡します。</span><span class="sxs-lookup"><span data-stu-id="788a2-120">If this is a subobject and you want to display progress on subobjects, pass a pointer to the progress object in the  _lpProgress_ parameter to the method.</span></span> 
+   2. <span data-ttu-id="22bc0-119">このオブジェクトに対して実行する必要がある処理を実行します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-119">Perform whatever processing should be done on this object.</span></span> <span data-ttu-id="22bc0-120">これがサブオブジェクトで、サブオブジェクトの進行状況を表示する場合は、 _lpprogress_パラメーターの progress オブジェクトへのポインターをメソッドに渡します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-120">If this is a subobject and you want to display progress on subobjects, pass a pointer to the progress object in the  _lpProgress_ parameter to the method.</span></span> 
       
-   3. <span data-ttu-id="788a2-121">[IMAPIProgress::Progress](imapiprogress-progress.md)を呼び出すし、次の 3 つのパラメーターの値を渡します。</span><span class="sxs-lookup"><span data-stu-id="788a2-121">Call [IMAPIProgress::Progress](imapiprogress-progress.md) and pass the following values for the three parameters:</span></span> 
+   3. <span data-ttu-id="22bc0-121">呼び出し[imapiprogress::P rogress](imapiprogress-progress.md) 、3つのパラメーターに次の値を渡します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-121">Call [IMAPIProgress::Progress](imapiprogress-progress.md) and pass the following values for the three parameters:</span></span> 
       
-     - <span data-ttu-id="788a2-122">手順 2 の現在のオブジェクトを掛けた値に設定する変数には、 _ulValue_パラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="788a2-122">Set the  _ulValue_ parameter to the variable set in step 2 multiplied by the current object.</span></span> 
+     - <span data-ttu-id="22bc0-122">_ulvalue_パラメーターに、手順2で現在のオブジェクトを乗算した変数セットを設定します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-122">Set the  _ulValue_ parameter to the variable set in step 2 multiplied by the current object.</span></span> 
       
-     - <span data-ttu-id="788a2-123">現在のオブジェクトには、 _ulCount_パラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="788a2-123">Set the  _ulCount_ parameter to the current object.</span></span> 
+     - <span data-ttu-id="22bc0-123">_ulcount_パラメーターを現在のオブジェクトに設定します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-123">Set the  _ulCount_ parameter to the current object.</span></span> 
       
-     - <span data-ttu-id="788a2-124">手順 1 のオブジェクトの合計数を設定する変数には、 _ulTotal_パラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="788a2-124">Set the  _ulTotal_ parameter to the variable set in step 1, the total number of objects.</span></span> 
+     - <span data-ttu-id="22bc0-124">_ultotal_パラメーターを、手順1で設定した変数 (オブジェクトの合計数) に設定します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-124">Set the  _ulTotal_ parameter to the variable set in step 1, the total number of objects.</span></span> 
     
-<span data-ttu-id="788a2-125">MAPI_TOP_LEVEL フラグが設定されていない場合は、次の手順に行います。</span><span class="sxs-lookup"><span data-stu-id="788a2-125">If the MAPI_TOP_LEVEL flag is not set, complete the following steps:</span></span>
+<span data-ttu-id="22bc0-125">MAPI_TOP_LEVEL フラグが設定されていない場合は、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-125">If the MAPI_TOP_LEVEL flag is not set, complete the following steps:</span></span>
   
-1. <span data-ttu-id="788a2-126">表示の最小値を取得するために、実行中のオブジェクトの[IMAPIProgress::GetMin](imapiprogress-getmin.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="788a2-126">Call the progress object's [IMAPIProgress::GetMin](imapiprogress-getmin.md) method to retrieve the minimum value for the display.</span></span> 
+1. <span data-ttu-id="22bc0-126">状態オブジェクトの[imapiprogress:: getmin](imapiprogress-getmin.md)メソッドを呼び出して、表示の最小値を取得します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-126">Call the progress object's [IMAPIProgress::GetMin](imapiprogress-getmin.md) method to retrieve the minimum value for the display.</span></span> 
     
-2. <span data-ttu-id="788a2-127">表示の最大値を取得するために[IMAPIProgress::GetMax](imapiprogress-getmax.md)を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="788a2-127">Call [IMAPIProgress::GetMax](imapiprogress-getmax.md) to retrieve the maximum value for the display.</span></span> 
+2. <span data-ttu-id="22bc0-127">呼び出し[imapiprogress:: getmax](imapiprogress-getmax.md)を使用して、ディスプレイの最大値を取得します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-127">Call [IMAPIProgress::GetMax](imapiprogress-getmax.md) to retrieve the maximum value for the display.</span></span> 
     
-3. <span data-ttu-id="788a2-128">変数に格納を処理するオブジェクトの合計数に設定します。</span><span class="sxs-lookup"><span data-stu-id="788a2-128">Set a variable equal to the total number of objects to be processed.</span></span> 
+3. <span data-ttu-id="22bc0-128">変数には、処理するオブジェクトの合計数を設定します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-128">Set a variable equal to the total number of objects to be processed.</span></span> 
     
-4. <span data-ttu-id="788a2-129">最大値から最小値を減算し、オブジェクトの合計数で除算して結果を変数に格納を設定します。</span><span class="sxs-lookup"><span data-stu-id="788a2-129">Set a variable equal to the result of subtracting the minimum value from the maximum value and then dividing by the total number of objects.</span></span>
+4. <span data-ttu-id="22bc0-129">最大値から最小値を減算した結果と同じ変数を設定し、オブジェクトの合計数で除算します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-129">Set a variable equal to the result of subtracting the minimum value from the maximum value and then dividing by the total number of objects.</span></span>
     
-5. <span data-ttu-id="788a2-130">各オブジェクトを処理するには、次の手順を行います。</span><span class="sxs-lookup"><span data-stu-id="788a2-130">For each object to be processed, complete the following steps:</span></span>
+5. <span data-ttu-id="22bc0-130">処理するオブジェクトごとに、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-130">For each object to be processed, complete the following steps:</span></span>
     
-   1. <span data-ttu-id="788a2-131">プロバイダーには、サブオブジェクトの進行状況が表示されている場合**IMAPIProgress::SetLimits**を呼び出すし、次の 3 つのパラメーターの値を渡します。</span><span class="sxs-lookup"><span data-stu-id="788a2-131">If your provider is showing progress for subobjects, call **IMAPIProgress::SetLimits** and pass the following values for the three parameters:</span></span> 
+   1. <span data-ttu-id="22bc0-131">プロバイダーでサブオブジェクトの進行状況が表示されている場合は、次の3つのパラメーターに対して、 **imapiprogress:: setlimits**を呼び出し、次の値を渡します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-131">If your provider is showing progress for subobjects, call **IMAPIProgress::SetLimits** and pass the following values for the three parameters:</span></span> 
       
-     - <span data-ttu-id="788a2-132">_LpulMin_パラメーターを設定すると、最小値は、手順 4 で設定する変数を乗算した値 1 を引いた数値です。</span><span class="sxs-lookup"><span data-stu-id="788a2-132">Set the  _lpulMin_ parameter to the minimum value plus the current item minus 1 multiplied by the variable set in step 4.</span></span> 
+     - <span data-ttu-id="22bc0-132">lアウト_min_パラメーターを最小値に、現在のアイテムに1を引いた値を、手順4で設定した変数の値で乗算します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-132">Set the  _lpulMin_ parameter to the minimum value plus the current item minus 1 multiplied by the variable set in step 4.</span></span> 
       
-     - <span data-ttu-id="788a2-133">_LpulMax_パラメーターを設定すると、最小値と現在の単位を手順 4 で設定する変数を乗算します。</span><span class="sxs-lookup"><span data-stu-id="788a2-133">Set the  _lpulMax_ parameter to the minimum value plus the current unit multiplied by the variable set in step 4.</span></span> 
+     - <span data-ttu-id="22bc0-133">lアウト_max_パラメーターを、最小値に、現在の単位に、手順4で設定した変数を掛けた値に設定します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-133">Set the  _lpulMax_ parameter to the minimum value plus the current unit multiplied by the variable set in step 4.</span></span> 
       
-     - <span data-ttu-id="788a2-134">_LpulFlags_パラメーターを 0 に設定します。</span><span class="sxs-lookup"><span data-stu-id="788a2-134">Set the  _lpulFlags_ parameter to 0.</span></span> 
+     - <span data-ttu-id="22bc0-134">lアウト_flags_パラメーターを0に設定します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-134">Set the  _lpulFlags_ parameter to 0.</span></span> 
       
-   2. <span data-ttu-id="788a2-135">このオブジェクトに対するすべての処理を行う必要がありますを実行します。</span><span class="sxs-lookup"><span data-stu-id="788a2-135">Perform whatever processing should be done on this object.</span></span> <span data-ttu-id="788a2-136">オブジェクトには、サブオブジェクトと、プロバイダーには、下位オブジェクトの進行状況が表示されます、メソッドの_lpProgress_パラメーターで進行中のオブジェクトにポインターを渡します。</span><span class="sxs-lookup"><span data-stu-id="788a2-136">If the object is a subobject, and your provider displays progress for subobjects, pass a pointer to the progress object in the  _lpProgress_ parameter to the method.</span></span> 
+   2. <span data-ttu-id="22bc0-135">このオブジェクトに対して実行する必要がある処理を実行します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-135">Perform whatever processing should be done on this object.</span></span> <span data-ttu-id="22bc0-136">オブジェクトがサブオブジェクトであり、プロバイダーがサブオブジェクトの進行状況を表示する場合は、 _lpprogress_パラメーターの progress オブジェクトへのポインターをメソッドに渡します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-136">If the object is a subobject, and your provider displays progress for subobjects, pass a pointer to the progress object in the  _lpProgress_ parameter to the method.</span></span> 
       
-   3. <span data-ttu-id="788a2-137">[IMAPIProgress::Progress](imapiprogress-progress.md)を呼び出すし、次の 3 つのパラメーターの値を渡します。</span><span class="sxs-lookup"><span data-stu-id="788a2-137">Call [IMAPIProgress::Progress](imapiprogress-progress.md) and pass the following values for the three parameters:</span></span> 
+   3. <span data-ttu-id="22bc0-137">呼び出し[imapiprogress::P rogress](imapiprogress-progress.md) 、3つのパラメーターに次の値を渡します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-137">Call [IMAPIProgress::Progress](imapiprogress-progress.md) and pass the following values for the three parameters:</span></span> 
       
-     - <span data-ttu-id="788a2-138">_UlValue_パラメーターを手順 2 の現在のオブジェクトを掛けた値に設定された変数に設定します。</span><span class="sxs-lookup"><span data-stu-id="788a2-138">Set the  _ulValue_ parameter to variable set in step 2 multiplied by the current object.</span></span> 
+     - <span data-ttu-id="22bc0-138">_ulvalue_パラメーターに、手順2で現在のオブジェクトを乗算した変数セットを設定します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-138">Set the  _ulValue_ parameter to variable set in step 2 multiplied by the current object.</span></span> 
       
-     - <span data-ttu-id="788a2-139">_UlCount_パラメーターを 0 に設定します。</span><span class="sxs-lookup"><span data-stu-id="788a2-139">Set the  _ulCount_ parameter to 0.</span></span> 
+     - <span data-ttu-id="22bc0-139">_ulcount_パラメーターを0に設定します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-139">Set the  _ulCount_ parameter to 0.</span></span> 
       
-     - <span data-ttu-id="788a2-140">_UlTotal_パラメーターを 0 に設定します。</span><span class="sxs-lookup"><span data-stu-id="788a2-140">Set the  _ulTotal_ parameter to 0.</span></span> 
+     - <span data-ttu-id="22bc0-140">_ultotal_パラメーターを0に設定します。</span><span class="sxs-lookup"><span data-stu-id="22bc0-140">Set the  _ulTotal_ parameter to 0.</span></span> 
     
-<span data-ttu-id="788a2-141">次のコード例は、5 つのサブフォルダーを含むフォルダーの内容をコピーする操作のすべてのレベルで進行状況を表示するために必要なロジックを示しています。</span><span class="sxs-lookup"><span data-stu-id="788a2-141">The following code example illustrates the logic required to show progress at all levels of an operation that copies the contents of a folder that contains five subfolders.</span></span> 
+<span data-ttu-id="22bc0-141">次のコード例は、5つのサブフォルダーを含むフォルダーの内容をコピーする操作のすべてのレベルで進行状況を表示するために必要なロジックを示しています。</span><span class="sxs-lookup"><span data-stu-id="22bc0-141">The following code example illustrates the logic required to show progress at all levels of an operation that copies the contents of a folder that contains five subfolders.</span></span> 
   
 ```cpp
 lpProgress->GetFlags (lpulFlags);
@@ -123,7 +123,7 @@ else
  
 ```
 
-## <a name="see-also"></a><span data-ttu-id="788a2-142">関連項目</span><span class="sxs-lookup"><span data-stu-id="788a2-142">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="22bc0-142">関連項目</span><span class="sxs-lookup"><span data-stu-id="22bc0-142">See also</span></span>
 
-- [<span data-ttu-id="788a2-143">MAPI の進捗状況</span><span class="sxs-lookup"><span data-stu-id="788a2-143">MAPI Progress Indicators</span></span>](mapi-progress-indicators.md)
+- [<span data-ttu-id="22bc0-143">MAPI 進行状況インジケーター</span><span class="sxs-lookup"><span data-stu-id="22bc0-143">MAPI Progress Indicators</span></span>](mapi-progress-indicators.md)
 

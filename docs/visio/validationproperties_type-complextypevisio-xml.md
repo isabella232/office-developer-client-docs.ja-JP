@@ -1,5 +1,5 @@
 ---
-title: ValidationProperties_Type complexType'Visio XML (')
+title: ValidationProperties_Type complexType (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3b0d1209-4636-ea9c-acf7-895c3300492a
 ms.openlocfilehash: 2fa6724ce6262886379f3ac22625927608184bab
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355980"
 ---
-# <a name="validationpropertiestype-complextype-visio-xml"></a><span data-ttu-id="17a19-102">ValidationProperties_Type complexType'Visio XML (')</span><span class="sxs-lookup"><span data-stu-id="17a19-102">ValidationProperties_Type complexType ('Visio XML')</span></span>
+# <a name="validationpropertiestype-complextype-visio-xml"></a><span data-ttu-id="6f4c6-102">ValidationProperties_Type complexType (' Visio XML ')</span><span class="sxs-lookup"><span data-stu-id="6f4c6-102">ValidationProperties_Type complexType ('Visio XML')</span></span>
 
-## <a name="type-information"></a><span data-ttu-id="17a19-103">型情報</span><span class="sxs-lookup"><span data-stu-id="17a19-103">Type information</span></span>
+## <a name="type-information"></a><span data-ttu-id="6f4c6-103">型情報</span><span class="sxs-lookup"><span data-stu-id="6f4c6-103">Type information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="17a19-104">**名前空間**</span><span class="sxs-lookup"><span data-stu-id="17a19-104">**Namespace**</span></span> <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|<span data-ttu-id="17a19-105">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="17a19-105">**Schema file**</span></span> <br/> |<span data-ttu-id="17a19-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="17a19-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
-|<span data-ttu-id="17a19-107">**拡張ベース**</span><span class="sxs-lookup"><span data-stu-id="17a19-107">**Extension base**</span></span> <br/> |<span data-ttu-id="17a19-108">なし</span><span class="sxs-lookup"><span data-stu-id="17a19-108">None</span></span>  <br/> |
+|<span data-ttu-id="6f4c6-104">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="6f4c6-104">**Namespace**</span></span> <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|<span data-ttu-id="6f4c6-105">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="6f4c6-105">**Schema file**</span></span> <br/> |<span data-ttu-id="6f4c6-106">VisioSchema15-06-05</span><span class="sxs-lookup"><span data-stu-id="6f4c6-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
+|<span data-ttu-id="6f4c6-107">**拡張ベース**</span><span class="sxs-lookup"><span data-stu-id="6f4c6-107">**Extension base**</span></span> <br/> |<span data-ttu-id="6f4c6-108">なし</span><span class="sxs-lookup"><span data-stu-id="6f4c6-108">None</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="17a19-109">定義</span><span class="sxs-lookup"><span data-stu-id="17a19-109">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="6f4c6-109">定義</span><span class="sxs-lookup"><span data-stu-id="6f4c6-109">Definition</span></span>
 
 ```XML
       <xs:complexType name="ValidationProperties_Type">
@@ -39,19 +39,19 @@ ms.locfileid: "25389982"
       
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="17a19-110">要素と属性</span><span class="sxs-lookup"><span data-stu-id="17a19-110">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="6f4c6-110">要素と属性</span><span class="sxs-lookup"><span data-stu-id="6f4c6-110">Elements and attributes</span></span>
 
-<span data-ttu-id="17a19-111">スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="17a19-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="6f4c6-111">スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="6f4c6-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="child-elements"></a><span data-ttu-id="17a19-112">子要素</span><span class="sxs-lookup"><span data-stu-id="17a19-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="6f4c6-112">子要素</span><span class="sxs-lookup"><span data-stu-id="6f4c6-112">Child elements</span></span>
 
-<span data-ttu-id="17a19-113">なし。</span><span class="sxs-lookup"><span data-stu-id="17a19-113">None.</span></span>
+<span data-ttu-id="6f4c6-113">なし。</span><span class="sxs-lookup"><span data-stu-id="6f4c6-113">None.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="17a19-114">属性</span><span class="sxs-lookup"><span data-stu-id="17a19-114">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="6f4c6-114">属性</span><span class="sxs-lookup"><span data-stu-id="6f4c6-114">Attributes</span></span>
 
-|<span data-ttu-id="17a19-115">**属性**</span><span class="sxs-lookup"><span data-stu-id="17a19-115">**Attribute**</span></span>|<span data-ttu-id="17a19-116">**型**</span><span class="sxs-lookup"><span data-stu-id="17a19-116">**Type**</span></span>|<span data-ttu-id="17a19-117">**必須**</span><span class="sxs-lookup"><span data-stu-id="17a19-117">**Required**</span></span>|<span data-ttu-id="17a19-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="17a19-118">**Description**</span></span>|<span data-ttu-id="17a19-119">**使用可能な値**</span><span class="sxs-lookup"><span data-stu-id="17a19-119">**Possible values**</span></span>|
+|<span data-ttu-id="6f4c6-115">**属性**</span><span class="sxs-lookup"><span data-stu-id="6f4c6-115">**Attribute**</span></span>|<span data-ttu-id="6f4c6-116">**型**</span><span class="sxs-lookup"><span data-stu-id="6f4c6-116">**Type**</span></span>|<span data-ttu-id="6f4c6-117">**必須**</span><span class="sxs-lookup"><span data-stu-id="6f4c6-117">**Required**</span></span>|<span data-ttu-id="6f4c6-118">**説明**</span><span class="sxs-lookup"><span data-stu-id="6f4c6-118">**Description**</span></span>|<span data-ttu-id="6f4c6-119">**可能な値**</span><span class="sxs-lookup"><span data-stu-id="6f4c6-119">**Possible values**</span></span>|
 |:-----|:-----|:-----|:-----|:-----|
-|<span data-ttu-id="17a19-120">LastValidated</span><span class="sxs-lookup"><span data-stu-id="17a19-120">LastValidated</span></span>  <br/> |<span data-ttu-id="17a19-121">xsd:dateTime</span><span class="sxs-lookup"><span data-stu-id="17a19-121">xsd:dateTime</span></span>  <br/> |<span data-ttu-id="17a19-122">必須</span><span class="sxs-lookup"><span data-stu-id="17a19-122">required</span></span>  <br/> ||<span data-ttu-id="17a19-123">Xsd:dateTime の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="17a19-123">Values of the xsd:dateTime type.</span></span>  <br/> |
-|<span data-ttu-id="17a19-124">ShowIgnored</span><span class="sxs-lookup"><span data-stu-id="17a19-124">ShowIgnored</span></span>  <br/> |<span data-ttu-id="17a19-125">xsd:boolean</span><span class="sxs-lookup"><span data-stu-id="17a19-125">xsd:boolean</span></span>  <br/> |<span data-ttu-id="17a19-126">必須</span><span class="sxs-lookup"><span data-stu-id="17a19-126">required</span></span>  <br/> ||<span data-ttu-id="17a19-127">Xsd:boolean の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="17a19-127">Values of the xsd:boolean type.</span></span>  <br/> |
+|<span data-ttu-id="6f4c6-120">lastvalidated</span><span class="sxs-lookup"><span data-stu-id="6f4c6-120">LastValidated</span></span>  <br/> |<span data-ttu-id="6f4c6-121">xsd: dateTime</span><span class="sxs-lookup"><span data-stu-id="6f4c6-121">xsd:dateTime</span></span>  <br/> |<span data-ttu-id="6f4c6-122">必須</span><span class="sxs-lookup"><span data-stu-id="6f4c6-122">required</span></span>  <br/> ||<span data-ttu-id="6f4c6-123">xsd: dateTime 型の値。</span><span class="sxs-lookup"><span data-stu-id="6f4c6-123">Values of the xsd:dateTime type.</span></span>  <br/> |
+|<span data-ttu-id="6f4c6-124">showignored</span><span class="sxs-lookup"><span data-stu-id="6f4c6-124">ShowIgnored</span></span>  <br/> |<span data-ttu-id="6f4c6-125">xsd: boolean</span><span class="sxs-lookup"><span data-stu-id="6f4c6-125">xsd:boolean</span></span>  <br/> |<span data-ttu-id="6f4c6-126">必須</span><span class="sxs-lookup"><span data-stu-id="6f4c6-126">required</span></span>  <br/> ||<span data-ttu-id="6f4c6-127">xsd: boolean 型の値。</span><span class="sxs-lookup"><span data-stu-id="6f4c6-127">Values of the xsd:boolean type.</span></span>  <br/> |
    
 

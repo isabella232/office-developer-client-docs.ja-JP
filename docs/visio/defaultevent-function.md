@@ -9,32 +9,32 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 45bd5ed6-2f13-6555-362a-5982595a0ac9
 description: オブジェクトに関連付けられている既定のイベントを実行します。
-ms.openlocfilehash: 2dc3dd3a9622acf2e61e2d5bd070a8ea3263380d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f24befc1cab5ef28cbd69d6ad20b35a6e7eba512
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360285"
 ---
-# <a name="defaultevent-function"></a><span data-ttu-id="ab366-103">DEFAULTEVENT 関数</span><span class="sxs-lookup"><span data-stu-id="ab366-103">DEFAULTEVENT Function</span></span>
+# <a name="defaultevent-function"></a><span data-ttu-id="7a128-103">DEFAULTEVENT 関数</span><span class="sxs-lookup"><span data-stu-id="7a128-103">DEFAULTEVENT Function</span></span>
 
-<span data-ttu-id="ab366-104">オブジェクトに関連付けられている既定のイベントを実行します。</span><span class="sxs-lookup"><span data-stu-id="ab366-104">Performs the default event associated with the object.</span></span>
+<span data-ttu-id="7a128-104">オブジェクトに関連付けられている既定のイベントを実行します。</span><span class="sxs-lookup"><span data-stu-id="7a128-104">Performs the default event associated with the object.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="ab366-105">構文</span><span class="sxs-lookup"><span data-stu-id="ab366-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="7a128-105">構文</span><span class="sxs-lookup"><span data-stu-id="7a128-105">Syntax</span></span>
 
-<span data-ttu-id="ab366-106">DEFAULTEVENT( )</span><span class="sxs-lookup"><span data-stu-id="ab366-106">DEFAULTEVENT( )</span></span>
+<span data-ttu-id="7a128-106">DEFAULTEVENT( )</span><span class="sxs-lookup"><span data-stu-id="7a128-106">DEFAULTEVENT( )</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="ab366-107">注釈</span><span class="sxs-lookup"><span data-stu-id="ab366-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7a128-107">解説</span><span class="sxs-lookup"><span data-stu-id="7a128-107">Remarks</span></span>
 
-<span data-ttu-id="ab366-108">次の表は、いくつかのオブジェクトに関連付けられている既定のイベントの一覧です。</span><span class="sxs-lookup"><span data-stu-id="ab366-108">The following table lists the default event associated with several objects.</span></span>
+<span data-ttu-id="7a128-108">次の表は、いくつかのオブジェクトに関連付けられている既定のイベントの一覧です。</span><span class="sxs-lookup"><span data-stu-id="7a128-108">The following table lists the default event associated with several objects.</span></span>
   
-|<span data-ttu-id="ab366-109">**オブジェクト**</span><span class="sxs-lookup"><span data-stu-id="ab366-109">**Object**</span></span>|<span data-ttu-id="ab366-110">**既定のイベント**</span><span class="sxs-lookup"><span data-stu-id="ab366-110">**Default event**</span></span>|
+|<span data-ttu-id="7a128-109">**Object**</span><span class="sxs-lookup"><span data-stu-id="7a128-109">**Object**</span></span>|<span data-ttu-id="7a128-110">**既定のイベント**</span><span class="sxs-lookup"><span data-stu-id="7a128-110">**Default event**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="ab366-111">図形</span><span class="sxs-lookup"><span data-stu-id="ab366-111">Shape</span></span>  <br/> |<span data-ttu-id="ab366-112">テキストを編集します。</span><span class="sxs-lookup"><span data-stu-id="ab366-112">Edit text.</span></span>  <br/> |
-|<span data-ttu-id="ab366-113">グループ</span><span class="sxs-lookup"><span data-stu-id="ab366-113">Group</span></span>  <br/> |<span data-ttu-id="ab366-114">何も実行しません。</span><span class="sxs-lookup"><span data-stu-id="ab366-114">Do nothing.</span></span>  <br/> |
-|<span data-ttu-id="ab366-115">OLE</span><span class="sxs-lookup"><span data-stu-id="ab366-115">OLE</span></span>  <br/> |<span data-ttu-id="ab366-116">OLE の主要な動詞を実行します。</span><span class="sxs-lookup"><span data-stu-id="ab366-116">Do primary verb.</span></span>  <br/> |
-|<span data-ttu-id="ab366-117">その他</span><span class="sxs-lookup"><span data-stu-id="ab366-117">Other</span></span>  <br/> |<span data-ttu-id="ab366-118">何も実行しません。</span><span class="sxs-lookup"><span data-stu-id="ab366-118">Do nothing.</span></span>  <br/> |
+|<span data-ttu-id="7a128-111">Shape</span><span class="sxs-lookup"><span data-stu-id="7a128-111">Shape</span></span>  <br/> |<span data-ttu-id="7a128-112">テキストを編集します。</span><span class="sxs-lookup"><span data-stu-id="7a128-112">Edit text.</span></span>  <br/> |
+|<span data-ttu-id="7a128-113">グループ</span><span class="sxs-lookup"><span data-stu-id="7a128-113">Group</span></span>  <br/> |<span data-ttu-id="7a128-114">何もしません。</span><span class="sxs-lookup"><span data-stu-id="7a128-114">Do nothing.</span></span>  <br/> |
+|<span data-ttu-id="7a128-115">OLE</span><span class="sxs-lookup"><span data-stu-id="7a128-115">OLE</span></span>  <br/> |<span data-ttu-id="7a128-116">OLE の主要な動詞を実行します。</span><span class="sxs-lookup"><span data-stu-id="7a128-116">Do primary verb.</span></span>  <br/> |
+|<span data-ttu-id="7a128-117">その他</span><span class="sxs-lookup"><span data-stu-id="7a128-117">Other</span></span>  <br/> |<span data-ttu-id="7a128-118">何も実行しません。</span><span class="sxs-lookup"><span data-stu-id="7a128-118">Do nothing.</span></span>  <br/> |
    
-<span data-ttu-id="ab366-119">以前のバージョンの Visio では、この関数は _DEFAULTEVENT に相当し、グループの既定のイベントはグループ ウィンドウを開くことでした。</span><span class="sxs-lookup"><span data-stu-id="ab366-119">In earlier versions of Visio, this function appears as _DEFAULTEVENT and the default event for a group is to open a group window.</span></span> 
+<span data-ttu-id="7a128-119">以前のバージョンの Visio では、この関数は _DEFAULTEVENT に相当し、グループの既定のイベントはグループ ウィンドウを開くことでした。</span><span class="sxs-lookup"><span data-stu-id="7a128-119">In earlier versions of Visio, this function appears as _DEFAULTEVENT and the default event for a group is to open a group window.</span></span> 
   
 

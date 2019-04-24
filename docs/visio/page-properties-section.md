@@ -9,19 +9,19 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 36b5ca44-e4f9-e330-bd76-85587a4a4893
 description: ページの幅、高さ、縮尺などの、ページの属性を制御するセルを格納します。
-ms.openlocfilehash: 0fc1345a5c1ab680535718b3c40d4df878d2b0dd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ab9dc66a338c444c3458c0fc7c295b3640cede9f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "19805959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359249"
 ---
-# <a name="page-properties-section"></a><span data-ttu-id="b4223-103">[ページのプロパティ] セクション</span><span class="sxs-lookup"><span data-stu-id="b4223-103">Page Properties Section</span></span>
+# <a name="page-properties-section"></a><span data-ttu-id="320ee-103">[Page Properties] セクション</span><span class="sxs-lookup"><span data-stu-id="320ee-103">Page Properties Section</span></span>
 
-<span data-ttu-id="b4223-104">ページの幅、高さ、縮尺などの、ページの属性を制御するセルを格納します。</span><span class="sxs-lookup"><span data-stu-id="b4223-104">Contains cells that control page attributes, such as the page width, height, and scale.</span></span>
+<span data-ttu-id="320ee-104">ページの幅、高さ、縮尺などの、ページの属性を制御するセルを格納します。</span><span class="sxs-lookup"><span data-stu-id="320ee-104">Contains cells that control page attributes, such as the page width, height, and scale.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="b4223-105">注釈</span><span class="sxs-lookup"><span data-stu-id="b4223-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="320ee-105">解説</span><span class="sxs-lookup"><span data-stu-id="320ee-105">Remarks</span></span>
 
-<span data-ttu-id="b4223-106">**ページのプロパティ**] セクションのセルに入力をすることによって、または、[**ページ設定**] ダイアログ ボックスを使用してページのプロパティの値を設定することができます ([**デザイン**] タブをクリックして [**ページ設定**] ダイアログ ボックス起動ツール)。</span><span class="sxs-lookup"><span data-stu-id="b4223-106">You can set the values of page properties by making an entry in the **Page Properties** section cell, or by using the **Page Setup** dialog box (on the **Design** tab, click the dialog box launcher in the **Page Setup** group).</span></span> 
+<span data-ttu-id="320ee-106">ページプロパティの値を設定するには、[ **page properties** ] セクションのセルにエントリを作成するか、[**ページ設定**] ダイアログボックス ([**デザイン**] タブで [**ページ設定**] グループのダイアログボックス起動ツールをクリックします) を使用します。</span><span class="sxs-lookup"><span data-stu-id="320ee-106">You can set the values of page properties by making an entry in the **Page Properties** section cell, or by using the **Page Setup** dialog box (on the **Design** tab, click the dialog box launcher in the **Page Setup** group).</span></span> 
   
 

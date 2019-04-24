@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: b39ca52c-4dbe-41c0-9e1b-3998a9dc9742
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fd7bc8f051e9584fc63f22bdbaf9696c2e4d15a3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a0650033e4fea79046eac5757e3d0deb963c38e6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351647"
 ---
-# <a name="imapiformcontainerinstallform"></a><span data-ttu-id="564ce-103">IMAPIFormContainer::InstallForm</span><span class="sxs-lookup"><span data-stu-id="564ce-103">IMAPIFormContainer::InstallForm</span></span>
+# <a name="imapiformcontainerinstallform"></a><span data-ttu-id="98beb-103">IMAPIFormContainer::InstallForm</span><span class="sxs-lookup"><span data-stu-id="98beb-103">IMAPIFormContainer::InstallForm</span></span>
 
   
   
-<span data-ttu-id="564ce-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="564ce-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="98beb-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="98beb-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="564ce-105">フォーム ライブラリにフォームをインストールします。</span><span class="sxs-lookup"><span data-stu-id="564ce-105">Installs a form into a form library.</span></span>
+<span data-ttu-id="98beb-105">フォームライブラリにフォームをインストールします。</span><span class="sxs-lookup"><span data-stu-id="98beb-105">Installs a form into a form library.</span></span>
   
 ```cpp
 HRESULT InstallForm(
@@ -35,88 +35,88 @@ HRESULT InstallForm(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="564ce-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="564ce-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="98beb-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="98beb-106">Parameters</span></span>
 
- <span data-ttu-id="564ce-107">_ulUIParam_</span><span class="sxs-lookup"><span data-stu-id="564ce-107">_ulUIParam_</span></span>
+ <span data-ttu-id="98beb-107">_uluiparam_</span><span class="sxs-lookup"><span data-stu-id="98beb-107">_ulUIParam_</span></span>
   
-> <span data-ttu-id="564ce-108">[in]すべてのダイアログ ボックスの親ウィンドウまたはこのメソッドを表示するウィンドウへのハンドル。</span><span class="sxs-lookup"><span data-stu-id="564ce-108">[in] A handle to the parent window of any dialog boxes or windows that this method displays.</span></span> <span data-ttu-id="564ce-109">_UlUIParam_パラメーターは、クライアント アプリケーションは、 _ulFlags_パラメーターで MAPI_DIALOG フラグを設定しない限り、無視されます。</span><span class="sxs-lookup"><span data-stu-id="564ce-109">The  _ulUIParam_ parameter is ignored unless the client application sets the MAPI_DIALOG flag in the  _ulFlags_ parameter.</span></span> <span data-ttu-id="564ce-110">MAPI_DIALOG が渡されてもいない場合は、 _ulUIParam_パラメーターを NULL にできます。</span><span class="sxs-lookup"><span data-stu-id="564ce-110">The  _ulUIParam_ parameter can be NULL if MAPI_DIALOG is not also passed.</span></span> 
+> <span data-ttu-id="98beb-108">順番このメソッドが表示するダイアログボックスまたはウィンドウの親ウィンドウへのハンドル。</span><span class="sxs-lookup"><span data-stu-id="98beb-108">[in] A handle to the parent window of any dialog boxes or windows that this method displays.</span></span> <span data-ttu-id="98beb-109">_uluiparam_パラメーターは、クライアントアプリケーションが_ulflags_パラメーターに MAPI_DIALOG フラグを設定していない場合は無視されます。</span><span class="sxs-lookup"><span data-stu-id="98beb-109">The  _ulUIParam_ parameter is ignored unless the client application sets the MAPI_DIALOG flag in the  _ulFlags_ parameter.</span></span> <span data-ttu-id="98beb-110">_uluiparam_パラメーターは、MAPI_DIALOG も渡されない場合は NULL になります。</span><span class="sxs-lookup"><span data-stu-id="98beb-110">The  _ulUIParam_ parameter can be NULL if MAPI_DIALOG is not also passed.</span></span> 
     
- <span data-ttu-id="564ce-111">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="564ce-111">_ulFlags_</span></span>
+ <span data-ttu-id="98beb-111">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="98beb-111">_ulFlags_</span></span>
   
-> <span data-ttu-id="564ce-112">[in]フォームのインストールを制御するフラグのビットマスクです。</span><span class="sxs-lookup"><span data-stu-id="564ce-112">[in] A bitmask of flags that controls the installation of the form.</span></span> <span data-ttu-id="564ce-113">次のフラグを設定することができます。</span><span class="sxs-lookup"><span data-stu-id="564ce-113">The following flags can be set:</span></span>
+> <span data-ttu-id="98beb-112">順番フォームのインストールを制御するフラグのビットマスク。</span><span class="sxs-lookup"><span data-stu-id="98beb-112">[in] A bitmask of flags that controls the installation of the form.</span></span> <span data-ttu-id="98beb-113">次のフラグを設定できます。</span><span class="sxs-lookup"><span data-stu-id="98beb-113">The following flags can be set:</span></span>
     
-<span data-ttu-id="564ce-114">MAPI_DIALOG</span><span class="sxs-lookup"><span data-stu-id="564ce-114">MAPI_DIALOG</span></span> 
+<span data-ttu-id="98beb-114">MAPI_DIALOG</span><span class="sxs-lookup"><span data-stu-id="98beb-114">MAPI_DIALOG</span></span> 
   
-> <span data-ttu-id="564ce-115">進行状況情報を提供したり、詳細情報をユーザーに確認するダイアログ ボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="564ce-115">Displays a dialog box to provide progress information or prompt the user for more information.</span></span> <span data-ttu-id="564ce-116">このフラグが設定されていない場合、ダイアログ ボックスは表示されません。</span><span class="sxs-lookup"><span data-stu-id="564ce-116">If this flag is not set, no dialog box is displayed.</span></span>
+> <span data-ttu-id="98beb-115">進捗状況の情報を提供するダイアログボックスを表示します。詳細については、ユーザーに確認します。</span><span class="sxs-lookup"><span data-stu-id="98beb-115">Displays a dialog box to provide progress information or prompt the user for more information.</span></span> <span data-ttu-id="98beb-116">このフラグが設定されていない場合は、ダイアログボックスは表示されません。</span><span class="sxs-lookup"><span data-stu-id="98beb-116">If this flag is not set, no dialog box is displayed.</span></span>
     
-<span data-ttu-id="564ce-117">MAPI_UNICODE</span><span class="sxs-lookup"><span data-stu-id="564ce-117">MAPI_UNICODE</span></span> 
+<span data-ttu-id="98beb-117">MAPI_UNICODE</span><span class="sxs-lookup"><span data-stu-id="98beb-117">MAPI_UNICODE</span></span> 
   
-> <span data-ttu-id="564ce-118">渡された文字列は、Unicode 形式では。</span><span class="sxs-lookup"><span data-stu-id="564ce-118">The passed-in strings are in Unicode format.</span></span> <span data-ttu-id="564ce-119">MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。</span><span class="sxs-lookup"><span data-stu-id="564ce-119">If the MAPI_UNICODE flag is not set, the strings are in ANSI format.</span></span>
+> <span data-ttu-id="98beb-118">渡された文字列は Unicode 形式です。</span><span class="sxs-lookup"><span data-stu-id="98beb-118">The passed-in strings are in Unicode format.</span></span> <span data-ttu-id="98beb-119">MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。</span><span class="sxs-lookup"><span data-stu-id="98beb-119">If the MAPI_UNICODE flag is not set, the strings are in ANSI format.</span></span>
     
-<span data-ttu-id="564ce-120">MAPIFORM_INSTALL_OVERWRITEONCONFLICT</span><span class="sxs-lookup"><span data-stu-id="564ce-120">MAPIFORM_INSTALL_OVERWRITEONCONFLICT</span></span> 
+<span data-ttu-id="98beb-120">MAPIFORM_INSTALL_OVERWRITEONCONFLICT</span><span class="sxs-lookup"><span data-stu-id="98beb-120">MAPIFORM_INSTALL_OVERWRITEONCONFLICT</span></span> 
   
-> <span data-ttu-id="564ce-121">別のフォームによって、メッセージ クラスは、このフォームで処理するハンドルが既に存在する場合は、既存のフォームをこれと置き換えます。</span><span class="sxs-lookup"><span data-stu-id="564ce-121">If another form already exists that handles the message class handled by this form, replace the existing form with this one.</span></span> <span data-ttu-id="564ce-122">MAPI_DIALOG フラグが存在しても場合、このフラグは無視されます。</span><span class="sxs-lookup"><span data-stu-id="564ce-122">This flag is ignored if the MAPI_DIALOG flag is also present.</span></span> 
+> <span data-ttu-id="98beb-121">このフォームによって処理されるメッセージクラスを処理する別のフォームが既に存在する場合は、既存のフォームをこのフォームに置き換えます。</span><span class="sxs-lookup"><span data-stu-id="98beb-121">If another form already exists that handles the message class handled by this form, replace the existing form with this one.</span></span> <span data-ttu-id="98beb-122">MAPI_DIALOG フラグも指定されている場合、このフラグは無視されます。</span><span class="sxs-lookup"><span data-stu-id="98beb-122">This flag is ignored if the MAPI_DIALOG flag is also present.</span></span> 
     
- <span data-ttu-id="564ce-123">_szCfgPathName_</span><span class="sxs-lookup"><span data-stu-id="564ce-123">_szCfgPathName_</span></span>
+ <span data-ttu-id="98beb-123">_szcfgpathname_</span><span class="sxs-lookup"><span data-stu-id="98beb-123">_szCfgPathName_</span></span>
   
-> <span data-ttu-id="564ce-124">[in]フォームの構成ファイルへのパス。</span><span class="sxs-lookup"><span data-stu-id="564ce-124">[in] The path to the form's configuration file.</span></span>
+> <span data-ttu-id="98beb-124">順番フォームの構成ファイルへのパス。</span><span class="sxs-lookup"><span data-stu-id="98beb-124">[in] The path to the form's configuration file.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="564ce-125">�߂�l</span><span class="sxs-lookup"><span data-stu-id="564ce-125">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="98beb-125">戻り値</span><span class="sxs-lookup"><span data-stu-id="98beb-125">Return value</span></span>
 
-<span data-ttu-id="564ce-126">S_OK</span><span class="sxs-lookup"><span data-stu-id="564ce-126">S_OK</span></span> 
+<span data-ttu-id="98beb-126">S_OK</span><span class="sxs-lookup"><span data-stu-id="98beb-126">S_OK</span></span> 
   
-> <span data-ttu-id="564ce-127">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="564ce-127">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="98beb-127">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="98beb-127">The call succeeded and has returned the expected value or values.</span></span>
     
-<span data-ttu-id="564ce-128">MAPI_E_EXTENDED_ERROR</span><span class="sxs-lookup"><span data-stu-id="564ce-128">MAPI_E_EXTENDED_ERROR</span></span> 
+<span data-ttu-id="98beb-128">MAPI_E_EXTENDED_ERROR</span><span class="sxs-lookup"><span data-stu-id="98beb-128">MAPI_E_EXTENDED_ERROR</span></span> 
   
-> <span data-ttu-id="564ce-129">実装エラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="564ce-129">An implementation error occurred.</span></span> <span data-ttu-id="564ce-130">エラーに関連付けられている[MAPIERROR](mapierror.md)構造体を取得するには、 [IMAPIFormContainer::GetLastError](imapiformcontainer-getlasterror.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="564ce-130">To get the [MAPIERROR](mapierror.md) structure that is associated with the error, call the [IMAPIFormContainer::GetLastError](imapiformcontainer-getlasterror.md) method.</span></span> 
+> <span data-ttu-id="98beb-129">実装エラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="98beb-129">An implementation error occurred.</span></span> <span data-ttu-id="98beb-130">エラーに関連付けられている[MAPIERROR](mapierror.md)構造体を取得するには、 [imapiformcontainer:: GetLastError](imapiformcontainer-getlasterror.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="98beb-130">To get the [MAPIERROR](mapierror.md) structure that is associated with the error, call the [IMAPIFormContainer::GetLastError](imapiformcontainer-getlasterror.md) method.</span></span> 
     
-<span data-ttu-id="564ce-131">MAPI_E_USER_CANCEL</span><span class="sxs-lookup"><span data-stu-id="564ce-131">MAPI_E_USER_CANCEL</span></span> 
+<span data-ttu-id="98beb-131">MAPI_E_USER_CANCEL</span><span class="sxs-lookup"><span data-stu-id="98beb-131">MAPI_E_USER_CANCEL</span></span> 
   
-> <span data-ttu-id="564ce-132">ユーザー] ダイアログ ボックスで [**キャンセル**] ボタンをクリックすると、通常、フォームのインストールをキャンセルしました。</span><span class="sxs-lookup"><span data-stu-id="564ce-132">The user canceled the installation of the form, typically by clicking the **Cancel** button in a dialog box.</span></span> 
+> <span data-ttu-id="98beb-132">ユーザーがフォームのインストールをキャンセルしました。通常は、ダイアログボックスの **[キャンセル**] ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="98beb-132">The user canceled the installation of the form, typically by clicking the **Cancel** button in a dialog box.</span></span> 
     
-## <a name="notes-to-implementers"></a><span data-ttu-id="564ce-133">実装者へのメモ</span><span class="sxs-lookup"><span data-stu-id="564ce-133">Notes to implementers</span></span>
+## <a name="notes-to-implementers"></a><span data-ttu-id="98beb-133">実装に関するメモ</span><span class="sxs-lookup"><span data-stu-id="98beb-133">Notes to implementers</span></span>
 
-<span data-ttu-id="564ce-134">フォーム ライブラリのプロバイダーは、 **MAPIERROR**構造体を入力し、次の条件のいずれかが発生した場合は、MAPI_E_EXTENDED_ERROR を返す必要があります。</span><span class="sxs-lookup"><span data-stu-id="564ce-134">Form library providers should fill in a **MAPIERROR** structure and return MAPI_E_EXTENDED_ERROR if any of the following conditions occur:</span></span> 
+<span data-ttu-id="98beb-134">フォームライブラリプロバイダーは、次のいずれかの状況が発生した場合に、 **MAPIERROR**構造に記入し、MAPI_E_EXTENDED_ERROR を返す必要があります。</span><span class="sxs-lookup"><span data-stu-id="98beb-134">Form library providers should fill in a **MAPIERROR** structure and return MAPI_E_EXTENDED_ERROR if any of the following conditions occur:</span></span> 
   
-- <span data-ttu-id="564ce-135">構成ファイルが見つかりません。</span><span class="sxs-lookup"><span data-stu-id="564ce-135">The configuration file is not found.</span></span>
+- <span data-ttu-id="98beb-135">構成ファイルが見つかりません。</span><span class="sxs-lookup"><span data-stu-id="98beb-135">The configuration file is not found.</span></span>
     
-- <span data-ttu-id="564ce-136">構成ファイルを読み取ることができません。</span><span class="sxs-lookup"><span data-stu-id="564ce-136">The configuration file is not readable.</span></span>
+- <span data-ttu-id="98beb-136">構成ファイルは読み取ることができません。</span><span class="sxs-lookup"><span data-stu-id="98beb-136">The configuration file is not readable.</span></span>
     
-- <span data-ttu-id="564ce-137">構成ファイルが有効ではありません。</span><span class="sxs-lookup"><span data-stu-id="564ce-137">The configuration file is invalid.</span></span>
+- <span data-ttu-id="98beb-137">構成ファイルが無効です。</span><span class="sxs-lookup"><span data-stu-id="98beb-137">The configuration file is invalid.</span></span>
     
-## <a name="notes-to-callers"></a><span data-ttu-id="564ce-138">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="564ce-138">Notes to callers</span></span>
+## <a name="notes-to-callers"></a><span data-ttu-id="98beb-138">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="98beb-138">Notes to callers</span></span>
 
-<span data-ttu-id="564ce-139">クライアント アプリケーションは、フォームをフォームの特定のコンテナーにインストールするのには**IMAPIFormContainer::InstallForm**メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="564ce-139">Client applications call the **IMAPIFormContainer::InstallForm** method to install a form into a specific form container.</span></span> <span data-ttu-id="564ce-140">_SzCfgPathName_パラメーターには、フォーム構成ファイル (つまり、フォームとその実装を記述する .cfg ファイルの拡張子を持つファイルの場合) のパスが含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="564ce-140">The  _szCfgPathName_ parameter must contain the path of a form configuration file (that is, a file with the .cfg extension that describes the form and its implementation).</span></span> <span data-ttu-id="564ce-141">_UlFlags_パラメーター内のフラグは、以下のいずれかを指定します。</span><span class="sxs-lookup"><span data-stu-id="564ce-141">The flags in the  _ulFlags_ parameter specify the following:</span></span> 
+<span data-ttu-id="98beb-139">クライアントアプリケーションは、 **imapiformcontainer:: installform**メソッドを呼び出して、特定のフォームコンテナーにフォームをインストールします。</span><span class="sxs-lookup"><span data-stu-id="98beb-139">Client applications call the **IMAPIFormContainer::InstallForm** method to install a form into a specific form container.</span></span> <span data-ttu-id="98beb-140">_szcfgpathname_パラメーターには、フォーム構成ファイル (つまり、フォームとその実装を記述する拡張子が付いたファイル) のパスを含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="98beb-140">The  _szCfgPathName_ parameter must contain the path of a form configuration file (that is, a file with the .cfg extension that describes the form and its implementation).</span></span> <span data-ttu-id="98beb-141">_ulflags_パラメーターのフラグには、次のものを指定します。</span><span class="sxs-lookup"><span data-stu-id="98beb-141">The flags in the  _ulFlags_ parameter specify the following:</span></span> 
   
-- <span data-ttu-id="564ce-142">MAPI_DIALOG フラグが設定されている場合は、ユーザー インターフェイスが表示されます、インストールの詳細を指定するフォームをインストールしているユーザーを有効にします。</span><span class="sxs-lookup"><span data-stu-id="564ce-142">If the MAPI_DIALOG flag is set, a user interface is displayed, enabling the user who is installing the form to specify installation details.</span></span>
+- <span data-ttu-id="98beb-142">MAPI_DIALOG フラグが設定されている場合は、ユーザーインターフェイスが表示され、フォームをインストールしているユーザーがインストールの詳細を指定できます。</span><span class="sxs-lookup"><span data-stu-id="98beb-142">If the MAPI_DIALOG flag is set, a user interface is displayed, enabling the user who is installing the form to specify installation details.</span></span>
     
-- <span data-ttu-id="564ce-143">MAPIFORM_INSTALL_OVERWRITEONCONFLICT フラグが設定されている場合は、同じメッセージ クラスのすべての前のフォームがインストールされているフォームに置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="564ce-143">If the MAPIFORM_INSTALL_OVERWRITEONCONFLICT flag is set, any previous form for the same message class is replaced with the form being installed.</span></span> <span data-ttu-id="564ce-144">それ以外の場合、フォームのインストールは、存在する場合、現在のフォームの説明に統合されます。</span><span class="sxs-lookup"><span data-stu-id="564ce-144">Otherwise, the form installation is merged with the current form description, if one exists.</span></span>
+- <span data-ttu-id="98beb-143">MAPIFORM_INSTALL_OVERWRITEONCONFLICT フラグが設定されている場合、同じメッセージクラスの以前のフォームは、インストールされているフォームに置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="98beb-143">If the MAPIFORM_INSTALL_OVERWRITEONCONFLICT flag is set, any previous form for the same message class is replaced with the form being installed.</span></span> <span data-ttu-id="98beb-144">それ以外の場合は、フォームのインストールは現在のフォームの説明に結合されます (存在する場合)。</span><span class="sxs-lookup"><span data-stu-id="98beb-144">Otherwise, the form installation is merged with the current form description, if one exists.</span></span>
     
-- <span data-ttu-id="564ce-145">MAPI_DIALOG が設定されている場合は、MAPIFORM_INSTALL_OVERWRITEONCONFLICT は無視されます。</span><span class="sxs-lookup"><span data-stu-id="564ce-145">If MAPI_DIALOG is set, MAPIFORM_INSTALL_OVERWRITEONCONFLICT is ignored.</span></span>
+- <span data-ttu-id="98beb-145">MAPI_DIALOG が設定されている場合、MAPIFORM_INSTALL_OVERWRITEONCONFLICT は無視されます。</span><span class="sxs-lookup"><span data-stu-id="98beb-145">If MAPI_DIALOG is set, MAPIFORM_INSTALL_OVERWRITEONCONFLICT is ignored.</span></span>
     
-- <span data-ttu-id="564ce-146">MAPIFORM_INSTALL_OVERWRITEONCONFLICT のフラグでない場合は、差し込み印刷が行われることを意味を設定します。</span><span class="sxs-lookup"><span data-stu-id="564ce-146">The absence of MAPIFORM_INSTALL_OVERWRITEONCONFLICT in the flag set means that a merge will be done.</span></span> <span data-ttu-id="564ce-147">.Cfg ファイルの現在のフォームの説明ではない新しいプラットフォームをインストールして、その他の変更は行われません。</span><span class="sxs-lookup"><span data-stu-id="564ce-147">Any new platforms in the .cfg file that are not currently present in the form description will be installed and no other changes will occur.</span></span>
+- <span data-ttu-id="98beb-146">フラグセットに MAPIFORM_INSTALL_OVERWRITEONCONFLICT がない場合は、マージが行われることを意味します。</span><span class="sxs-lookup"><span data-stu-id="98beb-146">The absence of MAPIFORM_INSTALL_OVERWRITEONCONFLICT in the flag set means that a merge will be done.</span></span> <span data-ttu-id="98beb-147">現在フォームの説明に表示されていない、cfg ファイルの新しいプラットフォームがインストールされ、その他の変更は行われません。</span><span class="sxs-lookup"><span data-stu-id="98beb-147">Any new platforms in the .cfg file that are not currently present in the form description will be installed and no other changes will occur.</span></span>
     
-- <span data-ttu-id="564ce-148">フォーム構成ファイルのパスは、MAPI_UNICODE フラグが設定されている場合は、Unicode 文字列になります。</span><span class="sxs-lookup"><span data-stu-id="564ce-148">If the MAPI_UNICODE flag is set, the path of the form configuration file is a Unicode string.</span></span> 
+- <span data-ttu-id="98beb-148">MAPI_UNICODE フラグが設定されている場合、フォーム構成ファイルのパスは UNICODE 文字列になります。</span><span class="sxs-lookup"><span data-stu-id="98beb-148">If the MAPI_UNICODE flag is set, the path of the form configuration file is a Unicode string.</span></span> 
     
-<span data-ttu-id="564ce-149">**InstallForm**は、MAPI_E_EXTENDED_ERROR を返し、エラーが発生した状態を判断するのには返された[MAPIERROR](mapierror.md)構造体をチェックする必要がある場合、クライアントは[IMAPIFormContainer::GetLastError](imapiformcontainer-getlasterror.md)を呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="564ce-149">Clients should call [IMAPIFormContainer::GetLastError](imapiformcontainer-getlasterror.md) if **InstallForm** returns MAPI_E_EXTENDED_ERROR, and they should check the returned [MAPIERROR](mapierror.md) structure to determine the condition that raised the error.</span></span> 
+<span data-ttu-id="98beb-149">クライアントは[imapiformcontainer:: GetLastError](imapiformcontainer-getlasterror.md)を呼び出し\*\*\*\* て MAPI_E_EXTENDED_ERROR を返す必要があり、返された[MAPIERROR](mapierror.md)構造を調べて、エラーが発生した条件を特定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="98beb-149">Clients should call [IMAPIFormContainer::GetLastError](imapiformcontainer-getlasterror.md) if **InstallForm** returns MAPI_E_EXTENDED_ERROR, and they should check the returned [MAPIERROR](mapierror.md) structure to determine the condition that raised the error.</span></span> 
   
-## <a name="mfcmapi-reference"></a><span data-ttu-id="564ce-150">MFCMAPI 参照</span><span class="sxs-lookup"><span data-stu-id="564ce-150">MFCMAPI reference</span></span>
+## <a name="mfcmapi-reference"></a><span data-ttu-id="98beb-150">MFCMAPI リファレンス</span><span class="sxs-lookup"><span data-stu-id="98beb-150">MFCMAPI reference</span></span>
 
-<span data-ttu-id="564ce-151">MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B</span><span class="sxs-lookup"><span data-stu-id="564ce-151">For MFCMAPI sample code, see the following table.</span></span>
+<span data-ttu-id="98beb-151">MFCMAPI のサンプル コードについては、次の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="98beb-151">For MFCMAPI sample code, see the following table.</span></span>
   
-|<span data-ttu-id="564ce-152">**�t�@�C��**</span><span class="sxs-lookup"><span data-stu-id="564ce-152">**File**</span></span>|<span data-ttu-id="564ce-153">**�֐�**</span><span class="sxs-lookup"><span data-stu-id="564ce-153">**Function**</span></span>|<span data-ttu-id="564ce-154">**�R�����g**</span><span class="sxs-lookup"><span data-stu-id="564ce-154">**Comment**</span></span>|
+|<span data-ttu-id="98beb-152">**ファイル**</span><span class="sxs-lookup"><span data-stu-id="98beb-152">**File**</span></span>|<span data-ttu-id="98beb-153">**関数**</span><span class="sxs-lookup"><span data-stu-id="98beb-153">**Function**</span></span>|<span data-ttu-id="98beb-154">**コメント**</span><span class="sxs-lookup"><span data-stu-id="98beb-154">**Comment**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="564ce-155">FormContainerDlg.cpp</span><span class="sxs-lookup"><span data-stu-id="564ce-155">FormContainerDlg.cpp</span></span>  <br/> |<span data-ttu-id="564ce-156">CFormContainerDlg::OnInstallForm</span><span class="sxs-lookup"><span data-stu-id="564ce-156">CFormContainerDlg::OnInstallForm</span></span>  <br/> |<span data-ttu-id="564ce-157">MFCMAPI では、 **IMAPIFormContainer::InstallForm**メソッドを使用して、フォームのコンテナー内のフォームをインストールします。</span><span class="sxs-lookup"><span data-stu-id="564ce-157">MFCMAPI uses the **IMAPIFormContainer::InstallForm** method to install a form in a form container.</span></span>  <br/> |
+|<span data-ttu-id="98beb-155">FormContainerDlg</span><span class="sxs-lookup"><span data-stu-id="98beb-155">FormContainerDlg.cpp</span></span>  <br/> |<span data-ttu-id="98beb-156">CFormContainerDlg:: oninstallform</span><span class="sxs-lookup"><span data-stu-id="98beb-156">CFormContainerDlg::OnInstallForm</span></span>  <br/> |<span data-ttu-id="98beb-157">mfcmapi は、 **imapiformcontainer:: installform**メソッドを使用してフォームコンテナーにフォームをインストールします。</span><span class="sxs-lookup"><span data-stu-id="98beb-157">MFCMAPI uses the **IMAPIFormContainer::InstallForm** method to install a form in a form container.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="564ce-158">関連項目</span><span class="sxs-lookup"><span data-stu-id="564ce-158">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="98beb-158">関連項目</span><span class="sxs-lookup"><span data-stu-id="98beb-158">See also</span></span>
 
 
 
-[<span data-ttu-id="564ce-159">MAPIERROR</span><span class="sxs-lookup"><span data-stu-id="564ce-159">MAPIERROR</span></span>](mapierror.md)
+[<span data-ttu-id="98beb-159">MAPIERROR</span><span class="sxs-lookup"><span data-stu-id="98beb-159">MAPIERROR</span></span>](mapierror.md)
   
-[<span data-ttu-id="564ce-160">IMAPIFormContainer : IUnknown</span><span class="sxs-lookup"><span data-stu-id="564ce-160">IMAPIFormContainer : IUnknown</span></span>](imapiformcontaineriunknown.md)
+[<span data-ttu-id="98beb-160">IMAPIFormContainer : IUnknown</span><span class="sxs-lookup"><span data-stu-id="98beb-160">IMAPIFormContainer : IUnknown</span></span>](imapiformcontaineriunknown.md)
 
 
-<span data-ttu-id="564ce-161">[�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)</span><span class="sxs-lookup"><span data-stu-id="564ce-161">[MFCMAPI as a Code Sample](mfcmapi-as-a-code-sample.md)</span></span>
+<span data-ttu-id="98beb-161">[�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)</span><span class="sxs-lookup"><span data-stu-id="98beb-161">[MFCMAPI as a Code Sample](mfcmapi-as-a-code-sample.md)</span></span>
 

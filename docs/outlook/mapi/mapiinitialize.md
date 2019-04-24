@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: b9584226-79d2-4d83-8f31-dbfbc50f16c5
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5fcebd1fefa0d077acbe62a45a19a622e13b35fc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6464f16d9ad73b332ff20dc007ef162b9525c6d5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346642"
 ---
-# <a name="mapiinitialize"></a><span data-ttu-id="97e5a-103">MAPIInitialize</span><span class="sxs-lookup"><span data-stu-id="97e5a-103">MAPIInitialize</span></span>
+# <a name="mapiinitialize"></a><span data-ttu-id="5a9ca-103">MAPIInitialize</span><span class="sxs-lookup"><span data-stu-id="5a9ca-103">MAPIInitialize</span></span>
 
   
   
-<span data-ttu-id="97e5a-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="97e5a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="5a9ca-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="5a9ca-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="97e5a-105">MAPI サブシステムの参照カウントをインクリメントし、MAPI DLL のグローバル データを初期化します。</span><span class="sxs-lookup"><span data-stu-id="97e5a-105">Increments the MAPI subsystem reference count and initializes global data for the MAPI DLL.</span></span> 
+<span data-ttu-id="5a9ca-105">mapi サブシステムの参照カウントを増分し、mapi DLL のグローバルデータを初期化します。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-105">Increments the MAPI subsystem reference count and initializes global data for the MAPI DLL.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="97e5a-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="97e5a-106">Header file:</span></span>  <br/> |<span data-ttu-id="97e5a-107">Mapix.h</span><span class="sxs-lookup"><span data-stu-id="97e5a-107">Mapix.h</span></span>  <br/> |
-|<span data-ttu-id="97e5a-108">によって実装されます。</span><span class="sxs-lookup"><span data-stu-id="97e5a-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="97e5a-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="97e5a-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="97e5a-110">によって呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="97e5a-110">Called by:</span></span>  <br/> |<span data-ttu-id="97e5a-111">クライアント アプリケーション</span><span class="sxs-lookup"><span data-stu-id="97e5a-111">Client applications</span></span>  <br/> |
+|<span data-ttu-id="5a9ca-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="5a9ca-106">Header file:</span></span>  <br/> |<span data-ttu-id="5a9ca-107">mapix</span><span class="sxs-lookup"><span data-stu-id="5a9ca-107">Mapix.h</span></span>  <br/> |
+|<span data-ttu-id="5a9ca-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="5a9ca-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="5a9ca-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="5a9ca-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="5a9ca-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="5a9ca-110">Called by:</span></span>  <br/> |<span data-ttu-id="5a9ca-111">クライアント アプリケーション</span><span class="sxs-lookup"><span data-stu-id="5a9ca-111">Client applications</span></span>  <br/> |
    
 ```cpp
 HRESULT MAPIInitialize(
@@ -39,86 +39,86 @@ HRESULT MAPIInitialize(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="97e5a-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="97e5a-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="5a9ca-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5a9ca-112">Parameters</span></span>
 
- <span data-ttu-id="97e5a-113">_lpMapiInit_</span><span class="sxs-lookup"><span data-stu-id="97e5a-113">_lpMapiInit_</span></span>
+ <span data-ttu-id="5a9ca-113">_lpMapiInit_</span><span class="sxs-lookup"><span data-stu-id="5a9ca-113">_lpMapiInit_</span></span>
   
-> <span data-ttu-id="97e5a-114">[in][MAPIINIT_0](mapiinit_0.md)構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="97e5a-114">[in] Pointer to a [MAPIINIT_0](mapiinit_0.md) structure.</span></span> <span data-ttu-id="97e5a-115">_LpMapiInit_パラメーターを NULL に設定することができます。</span><span class="sxs-lookup"><span data-stu-id="97e5a-115">The  _lpMapiInit_ parameter can be set to NULL.</span></span> 
+> <span data-ttu-id="5a9ca-114">順番[MAPIINIT_0](mapiinit_0.md)構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-114">[in] Pointer to a [MAPIINIT_0](mapiinit_0.md) structure.</span></span> <span data-ttu-id="5a9ca-115">_lpMapiInit_パラメーターは NULL に設定できます。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-115">The  _lpMapiInit_ parameter can be set to NULL.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="97e5a-116">�߂�l</span><span class="sxs-lookup"><span data-stu-id="97e5a-116">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="5a9ca-116">戻り値</span><span class="sxs-lookup"><span data-stu-id="5a9ca-116">Return value</span></span>
 
-<span data-ttu-id="97e5a-117">S_OK</span><span class="sxs-lookup"><span data-stu-id="97e5a-117">S_OK</span></span> 
+<span data-ttu-id="5a9ca-117">S_OK</span><span class="sxs-lookup"><span data-stu-id="5a9ca-117">S_OK</span></span> 
   
-> <span data-ttu-id="97e5a-118">MAPI サブシステムの初期化に成功しました。</span><span class="sxs-lookup"><span data-stu-id="97e5a-118">The MAPI subsystem was initialized successfully.</span></span>
+> <span data-ttu-id="5a9ca-118">MAPI サブシステムは正常に初期化されました。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-118">The MAPI subsystem was initialized successfully.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="97e5a-119">注釈</span><span class="sxs-lookup"><span data-stu-id="97e5a-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5a9ca-119">解説</span><span class="sxs-lookup"><span data-stu-id="5a9ca-119">Remarks</span></span>
 
-<span data-ttu-id="97e5a-120">MAPI のサブシステム、および[MAPIUninitialize](mapiuninitialize.md)関数をデクリメントの MAPI リファレンス カウントが**生じます**関数単位の内部参照カウントします。</span><span class="sxs-lookup"><span data-stu-id="97e5a-120">The **MAPIInitialize** function increments the MAPI reference count for the MAPI subsystem, and the [MAPIUninitialize](mapiuninitialize.md) function decrements the internal reference count.</span></span> <span data-ttu-id="97e5a-121">したがって、1 つの関数への呼び出しの数は、他の呼び出しの数に等しくなければなりません。</span><span class="sxs-lookup"><span data-stu-id="97e5a-121">Thus, the number of calls to one function must equal the number of calls to the other.</span></span> <span data-ttu-id="97e5a-122">**生じます**は、MAPI が以前に初期化されていない場合は S_OK を返します。</span><span class="sxs-lookup"><span data-stu-id="97e5a-122">**MAPIInitialize** returns S_OK if MAPI has not been previously initialized.</span></span> 
+<span data-ttu-id="5a9ca-120">**MAPIInitialize**関数は mapi サブシステムの mapi 参照カウントをインクリメントし、 [MAPIUninitialize](mapiuninitialize.md)関数は内部参照カウントをデクリメントします。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-120">The **MAPIInitialize** function increments the MAPI reference count for the MAPI subsystem, and the [MAPIUninitialize](mapiuninitialize.md) function decrements the internal reference count.</span></span> <span data-ttu-id="5a9ca-121">そのため、1つの関数への呼び出しの数は、もう一方への呼び出しの数と等しくなければなりません。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-121">Thus, the number of calls to one function must equal the number of calls to the other.</span></span> <span data-ttu-id="5a9ca-122">MAPI が以前に初期化されていない場合、 **MAPIInitialize**は S_OK を返します。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-122">**MAPIInitialize** returns S_OK if MAPI has not been previously initialized.</span></span> 
   
-<span data-ttu-id="97e5a-123">クライアントまたはサービス プロバイダーは、他のすべての MAPI 呼び出しを行う前に**生じます**を呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="97e5a-123">A client or service provider must call **MAPIInitialize** before making any other MAPI call.</span></span> <span data-ttu-id="97e5a-124">これを行うには、障害が発生すると、MAPI_E_NOT_INITIALIZED の値を取得するクライアントまたはサービス プロバイダーの呼び出しです。</span><span class="sxs-lookup"><span data-stu-id="97e5a-124">Failure to do so causes client or service provider calls to return the MAPI_E_NOT_INITIALIZED value.</span></span> 
+<span data-ttu-id="5a9ca-123">クライアントまたはサービスプロバイダーは、他の MAPI 呼び出しを行う前に**MAPIInitialize**を呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-123">A client or service provider must call **MAPIInitialize** before making any other MAPI call.</span></span> <span data-ttu-id="5a9ca-124">失敗すると、クライアントまたはサービスプロバイダーの呼び出しが MAPI_E_NOT_INITIALIZED の値を返します。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-124">Failure to do so causes client or service provider calls to return the MAPI_E_NOT_INITIALIZED value.</span></span> 
   
-<span data-ttu-id="97e5a-125">**生じます**マルチ スレッド アプリケーションから呼び出すと、次のように宣言されている[MAPIINIT_0](mapiinit_0.md)構造体に、 _lpMapiInit_パラメーターを設定します。</span><span class="sxs-lookup"><span data-stu-id="97e5a-125">When calling **MAPIInitialize** from a multithreaded application, set the  _lpMapiInit_ parameter to a [MAPIINIT_0](mapiinit_0.md) structure that is declared as follows:</span></span> 
+<span data-ttu-id="5a9ca-125">マルチスレッドアプリケーションから**MAPIInitialize**を呼び出すときは、 _lpMapiInit_パラメーターを次のように宣言されている[MAPIINIT_0](mapiinit_0.md)構造に設定します。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-125">When calling **MAPIInitialize** from a multithreaded application, set the  _lpMapiInit_ parameter to a [MAPIINIT_0](mapiinit_0.md) structure that is declared as follows:</span></span> 
   
- <span data-ttu-id="97e5a-126">**MAPIINIT_0**MAPIINIT = {0, MAPI_MULTITHREAD_NOTIFICATIONS}</span><span class="sxs-lookup"><span data-stu-id="97e5a-126">**MAPIINIT_0** MAPIINIT= { 0, MAPI_MULTITHREAD_NOTIFICATIONS}</span></span> 
+ <span data-ttu-id="5a9ca-126">**MAPIINIT_0**MAPIINIT = {0, MAPI_MULTITHREAD_NOTIFICATIONS}</span><span class="sxs-lookup"><span data-stu-id="5a9ca-126">**MAPIINIT_0** MAPIINIT= { 0, MAPI_MULTITHREAD_NOTIFICATIONS}</span></span> 
   
-<span data-ttu-id="97e5a-127">呼び出します。</span><span class="sxs-lookup"><span data-stu-id="97e5a-127">and call:</span></span> 
+<span data-ttu-id="5a9ca-127">そして、次のように呼び出します。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-127">and call:</span></span> 
   
- <span data-ttu-id="97e5a-128">**生じます**(&amp;MAPIINIT)。</span><span class="sxs-lookup"><span data-stu-id="97e5a-128">**MAPIInitialize** (&amp;MAPIINIT);</span></span> 
+ <span data-ttu-id="5a9ca-128">**MAPIInitialize**(&amp;MAPIINIT);</span><span class="sxs-lookup"><span data-stu-id="5a9ca-128">**MAPIInitialize** (&amp;MAPIINIT);</span></span> 
   
-<span data-ttu-id="97e5a-129">この構造体が宣言されると、MAPI は初期化の参照カウントがゼロに達するまで、通知ウィンドウを処理するために別のスレッドを作成します。</span><span class="sxs-lookup"><span data-stu-id="97e5a-129">When this structure is declared, MAPI creates a separate thread to handle the notification window, which continues until the initialize reference count falls to zero.</span></span> <span data-ttu-id="97e5a-130">Windows サービスは、 **ulflags** 、 **MAPIINIT_0**構造体のメンバー MAPI_NT_SERVICE に_lpMapiInit_が指すを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="97e5a-130">A Windows service must set the **ulflags** member of the **MAPIINIT_0** structure pointed to by  _lpMapiInit_ to MAPI_NT_SERVICE.</span></span> 
+<span data-ttu-id="5a9ca-129">この構造体を宣言すると、MAPI は通知ウィンドウを処理する別のスレッドを作成します。これは、初期化の参照カウントが0になるまで続行します。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-129">When this structure is declared, MAPI creates a separate thread to handle the notification window, which continues until the initialize reference count falls to zero.</span></span> <span data-ttu-id="5a9ca-130">Windows サービスでは、 _lpMapiInit_によって参照されている**MAPIINIT_0**構造体の**ulflags**メンバーを MAPI_NT_SERVICE に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-130">A Windows service must set the **ulflags** member of the **MAPIINIT_0** structure pointed to by  _lpMapiInit_ to MAPI_NT_SERVICE.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="97e5a-131">Win32 **DllMain**関数またはその他の機能を作成するか、スレッドを終了するのには**生じます**かから**MAPIUninitialize**を呼び出すことはできません。</span><span class="sxs-lookup"><span data-stu-id="97e5a-131">You cannot call **MAPIInitialize** or **MAPIUninitialize** from within a Win32 **DllMain** function or any other function that creates or terminates threads.</span></span> <span data-ttu-id="97e5a-132">詳細については、[スレッド セーフであるオブジェクトを使用する](using-thread-safe-objects.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="97e5a-132">For more information, see [Using Thread-Safe Objects](using-thread-safe-objects.md).</span></span> 
+> <span data-ttu-id="5a9ca-131">**MAPIInitialize**または**MAPIUninitialize**は、Win32 **DllMain**関数から、またはスレッドを作成または終了する他の関数内から呼び出すことはできません。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-131">You cannot call **MAPIInitialize** or **MAPIUninitialize** from within a Win32 **DllMain** function or any other function that creates or terminates threads.</span></span> <span data-ttu-id="5a9ca-132">詳細については、「[スレッドセーフオブジェクトの使用](using-thread-safe-objects.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-132">For more information, see [Using Thread-Safe Objects](using-thread-safe-objects.md).</span></span> 
   
- <span data-ttu-id="97e5a-133">**生じます**が、拡張エラー情報を返しません。</span><span class="sxs-lookup"><span data-stu-id="97e5a-133">**MAPIInitialize** does not return any extended error information.</span></span> <span data-ttu-id="97e5a-134">その他のほとんどの MAPI 呼び出しとは異なり、戻り値の意味は厳密には定義の初期化に失敗した特定の手順に対応します。</span><span class="sxs-lookup"><span data-stu-id="97e5a-134">Unlike most other MAPI calls, the meanings of its return values are strictly defined to correspond to the particular step of the initialization that failed:</span></span> 
+ <span data-ttu-id="5a9ca-133">**MAPIInitialize**では、拡張エラー情報は返されません。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-133">**MAPIInitialize** does not return any extended error information.</span></span> <span data-ttu-id="5a9ca-134">他のほとんどの MAPI 呼び出しとは異なり、戻り値の意味は、エラーが発生した初期化の特定の手順に対応するように厳密に定義されます。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-134">Unlike most other MAPI calls, the meanings of its return values are strictly defined to correspond to the particular step of the initialization that failed:</span></span> 
   
-1. <span data-ttu-id="97e5a-135">パラメーターとフラグをチェックします。</span><span class="sxs-lookup"><span data-stu-id="97e5a-135">Checks parameters and flags.</span></span>
+1. <span data-ttu-id="5a9ca-135">パラメーターとフラグをチェックします。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-135">Checks parameters and flags.</span></span>
     
-    <span data-ttu-id="97e5a-136">MAPI_E_INVALID_PARAMETER または MAPI_E_UNKNOWN_FLAGS です。</span><span class="sxs-lookup"><span data-stu-id="97e5a-136">MAPI_E_INVALID_PARAMETER or MAPI_E_UNKNOWN_FLAGS.</span></span> <span data-ttu-id="97e5a-137">呼び出し元には、無効なパラメーターまたはフラグが渡されます。</span><span class="sxs-lookup"><span data-stu-id="97e5a-137">Caller passed invalid parameter or flag.</span></span>
+    <span data-ttu-id="5a9ca-136">MAPI_E_INVALID_PARAMETER または MAPI_E_UNKNOWN_FLAGS。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-136">MAPI_E_INVALID_PARAMETER or MAPI_E_UNKNOWN_FLAGS.</span></span> <span data-ttu-id="5a9ca-137">発信者が無効なパラメーターまたはフラグを渡しました。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-137">Caller passed invalid parameter or flag.</span></span>
     
-2. <span data-ttu-id="97e5a-138">MAPI によって必要なレジストリ キーを初期化し、オペレーティング システムの種類を確認します。</span><span class="sxs-lookup"><span data-stu-id="97e5a-138">Initializes registry keys required by MAPI and confirms the type of operating system.</span></span> <span data-ttu-id="97e5a-139">この手順は、クライアント プロセスは、windows サービスとして実行されているし、 **MAPIINIT_0**構造体の MAPI_NT サービス フラグを設定する場合にのみ発生します。</span><span class="sxs-lookup"><span data-stu-id="97e5a-139">This step only happens if the client process is running as a service under Windows and sets the MAPI_NT SERVICE flag in the **MAPIINIT_0** structure.</span></span> 
+2. <span data-ttu-id="5a9ca-138">MAPI に必要なレジストリキーを初期化し、オペレーティングシステムの種類を確認します。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-138">Initializes registry keys required by MAPI and confirms the type of operating system.</span></span> <span data-ttu-id="5a9ca-139">この手順は、クライアントプロセスが Windows でサービスとして実行されていて、 **MAPIINIT_0**構造の MAPI_NT サービスフラグを設定している場合にのみ発生します。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-139">This step only happens if the client process is running as a service under Windows and sets the MAPI_NT SERVICE flag in the **MAPIINIT_0** structure.</span></span> 
     
-    <span data-ttu-id="97e5a-140">MAPI_E_TOO_COMPLEX。</span><span class="sxs-lookup"><span data-stu-id="97e5a-140">MAPI_E_TOO_COMPLEX.</span></span> <span data-ttu-id="97e5a-141">呼び出し元のプロセスは、Windows サービスと、MAPI によって必要なレジストリ キーを初期化できませんでした。</span><span class="sxs-lookup"><span data-stu-id="97e5a-141">The calling process is a Windows service and registry keys required by MAPI could not be initialized.</span></span> 
+    <span data-ttu-id="5a9ca-140">MAPI_E_TOO_COMPLEX。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-140">MAPI_E_TOO_COMPLEX.</span></span> <span data-ttu-id="5a9ca-141">呼び出し元のプロセスは Windows サービスであり、MAPI に必要なレジストリキーを初期化できませんでした。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-141">The calling process is a Windows service and registry keys required by MAPI could not be initialized.</span></span> 
     
-    <span data-ttu-id="97e5a-142">詳細については、アプリケーション イベント ログで使用できる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="97e5a-142">Additional information may be available in the application event log.</span></span>
+    <span data-ttu-id="5a9ca-142">アプリケーションイベントログで追加情報を入手できる場合があります。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-142">Additional information may be available in the application event log.</span></span>
     
-3. <span data-ttu-id="97e5a-143">Ole では、MAPI との互換性をチェックし、OLE を初期化します。</span><span class="sxs-lookup"><span data-stu-id="97e5a-143">Check for the compatibility of MAPI with OLE, then initialize OLE.</span></span>
+3. <span data-ttu-id="5a9ca-143">MAPI と ole が互換性があるかどうかを確認し、ole を初期化します。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-143">Check for the compatibility of MAPI with OLE, then initialize OLE.</span></span>
     
-1. <span data-ttu-id="97e5a-144">OLE の現在のバージョンと MAPI との互換性をチェックします。</span><span class="sxs-lookup"><span data-stu-id="97e5a-144">Checks for compatibility between the current versions of OLE and MAPI.</span></span> 
+1. <span data-ttu-id="5a9ca-144">現在のバージョンの OLE と MAPI の間に互換性があるかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-144">Checks for compatibility between the current versions of OLE and MAPI.</span></span> 
     
-    <span data-ttu-id="97e5a-145">MAPI_E_VERSION。</span><span class="sxs-lookup"><span data-stu-id="97e5a-145">MAPI_E_VERSION.</span></span> <span data-ttu-id="97e5a-146">ワークステーションにインストールされている OLE のバージョンがこのバージョンの MAPI と互換性のあるされません。</span><span class="sxs-lookup"><span data-stu-id="97e5a-146">The version of OLE installed on the workstation is not compatible with this version of MAPI.</span></span>
+    <span data-ttu-id="5a9ca-145">MAPI_E_VERSION。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-145">MAPI_E_VERSION.</span></span> <span data-ttu-id="5a9ca-146">ワークステーションにインストールされている OLE のバージョンは、このバージョンの MAPI と互換性がありません。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-146">The version of OLE installed on the workstation is not compatible with this version of MAPI.</span></span>
     
-2. <span data-ttu-id="97e5a-147">OLE を初期化します。</span><span class="sxs-lookup"><span data-stu-id="97e5a-147">Initializes OLE.</span></span> 
+2. <span data-ttu-id="5a9ca-147">OLE を初期化します。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-147">Initializes OLE.</span></span> 
     
-    <span data-ttu-id="97e5a-148">この手順の場合にのみ、この関数は、記載されていないエラー コードを返すことができます。</span><span class="sxs-lookup"><span data-stu-id="97e5a-148">During this step only, this function can return an error code not listed here.</span></span> <span data-ttu-id="97e5a-149">何らかのエラーが表示_されない_ここでする必要がありますと見なされます、OLE 関数**CoInitialize**に由来します。</span><span class="sxs-lookup"><span data-stu-id="97e5a-149">Any error  _not_ listed here should be assumed to come from the OLE function **CoInitialize**.</span></span>
+    <span data-ttu-id="5a9ca-148">この手順では、この関数では、ここに記載されていないエラーコードを返すことができます。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-148">During this step only, this function can return an error code not listed here.</span></span> <span data-ttu-id="5a9ca-149">ここに記載さ_れていない_エラーは、OLE 関数**CoInitialize**からのものであることを前提としています。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-149">Any error  _not_ listed here should be assumed to come from the OLE function **CoInitialize**.</span></span>
     
-4. <span data-ttu-id="97e5a-150">初期化は、プロセスごとのグローバル変数です。</span><span class="sxs-lookup"><span data-stu-id="97e5a-150">Initializes per-process global variables.</span></span>
+4. <span data-ttu-id="5a9ca-150">プロセスごとのグローバル変数を初期化します。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-150">Initializes per-process global variables.</span></span>
     
-    <span data-ttu-id="97e5a-151">MAPI_E_SESSION_LIMIT。</span><span class="sxs-lookup"><span data-stu-id="97e5a-151">MAPI_E_SESSION_LIMIT.</span></span> <span data-ttu-id="97e5a-152">MAPI 設定コンテキストを現在のプロセスを特定します。</span><span class="sxs-lookup"><span data-stu-id="97e5a-152">MAPI sets up context specific to the current process.</span></span> <span data-ttu-id="97e5a-153">障害は、可能性がある場合に発生するプロセスの数は、特定の数を超えた場合、Win16 または任意のシステムで使用可能なメモリが不足します。</span><span class="sxs-lookup"><span data-stu-id="97e5a-153">Failures may occur on Win16 if the number of processes exceeds a certain number, or on any system if available memory is exhausted.</span></span>
+    <span data-ttu-id="5a9ca-151">MAPI_E_SESSION_LIMIT。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-151">MAPI_E_SESSION_LIMIT.</span></span> <span data-ttu-id="5a9ca-152">MAPI は、現在のプロセスに固有のコンテキストを設定します。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-152">MAPI sets up context specific to the current process.</span></span> <span data-ttu-id="5a9ca-153">プロセスの数が特定の数を超えた場合、または使用可能なメモリが不足している場合は、Win16 でエラーが発生することがあります。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-153">Failures may occur on Win16 if the number of processes exceeds a certain number, or on any system if available memory is exhausted.</span></span>
     
-5. <span data-ttu-id="97e5a-154">初期化は、すべてのプロセスのグローバル変数を共有します。</span><span class="sxs-lookup"><span data-stu-id="97e5a-154">Initializes shared global variables of all processes.</span></span>
+5. <span data-ttu-id="5a9ca-154">すべてのプロセスの共有グローバル変数を初期化します。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-154">Initializes shared global variables of all processes.</span></span>
     
-    <span data-ttu-id="97e5a-155">MAPI_E_NOT_ENOUGH_RESOURCES。</span><span class="sxs-lookup"><span data-stu-id="97e5a-155">MAPI_E_NOT_ENOUGH_RESOURCES.</span></span> <span data-ttu-id="97e5a-156">十分なシステム リソースは、操作を完了できませんでした。</span><span class="sxs-lookup"><span data-stu-id="97e5a-156">Not enough system resources were available to complete the operation.</span></span>
+    <span data-ttu-id="5a9ca-155">MAPI_E_NOT_ENOUGH_RESOURCES。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-155">MAPI_E_NOT_ENOUGH_RESOURCES.</span></span> <span data-ttu-id="5a9ca-156">システムリソースが不足しているため、操作を完了できませんでした。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-156">Not enough system resources were available to complete the operation.</span></span>
     
-6. <span data-ttu-id="97e5a-157">通知エンジンを初期化、MAPI_MULTITHREAD_NOTIFICATIONS フラグによって要求された場合、そのウィンドウとそのスレッドを作成します。</span><span class="sxs-lookup"><span data-stu-id="97e5a-157">Initializes the notification engine, creates its window and its thread if requested by the MAPI_MULTITHREAD_NOTIFICATIONS flag.</span></span> 
+6. <span data-ttu-id="5a9ca-157">通知エンジンを初期化し、MAPI_MULTITHREAD_NOTIFICATIONS フラグによって要求された場合は、ウィンドウとそのスレッドを作成します。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-157">Initializes the notification engine, creates its window and its thread if requested by the MAPI_MULTITHREAD_NOTIFICATIONS flag.</span></span> 
     
-    <span data-ttu-id="97e5a-158">MAPI_E_INVALID_OBJECT。</span><span class="sxs-lookup"><span data-stu-id="97e5a-158">MAPI_E_INVALID_OBJECT.</span></span> <span data-ttu-id="97e5a-159">システム リソースが使い果たされる場合があります。</span><span class="sxs-lookup"><span data-stu-id="97e5a-159">May fail if system resources are exhausted.</span></span> 
+    <span data-ttu-id="5a9ca-158">MAPI_E_INVALID_OBJECT。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-158">MAPI_E_INVALID_OBJECT.</span></span> <span data-ttu-id="5a9ca-159">システムリソースが不足すると、エラーが発生することがあります。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-159">May fail if system resources are exhausted.</span></span> 
     
-7. <span data-ttu-id="97e5a-160">読み込み、プロファイル プロバイダーを初期化します。</span><span class="sxs-lookup"><span data-stu-id="97e5a-160">Loads and initializes the profile provider.</span></span> <span data-ttu-id="97e5a-161">**生じます**が、プロファイル データが格納されているレジストリ キーにアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="97e5a-161">Verifies that **MAPIInitialize** can access the registry key where profile data are stored.</span></span> 
+7. <span data-ttu-id="5a9ca-160">プロファイルプロバイダーを読み込んで初期化します。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-160">Loads and initializes the profile provider.</span></span> <span data-ttu-id="5a9ca-161">**MAPIInitialize**がプロファイルデータが格納されているレジストリキーにアクセスできることを確認します。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-161">Verifies that **MAPIInitialize** can access the registry key where profile data are stored.</span></span> 
     
-    <span data-ttu-id="97e5a-162">MAPI_E_NOT_INITIALIZED。</span><span class="sxs-lookup"><span data-stu-id="97e5a-162">MAPI_E_NOT_INITIALIZED.</span></span> <span data-ttu-id="97e5a-163">プロファイル プロバイダー エラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="97e5a-163">The profile provider has encountered an error.</span></span> 
+    <span data-ttu-id="5a9ca-162">MAPI_E_NOT_INITIALIZED。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-162">MAPI_E_NOT_INITIALIZED.</span></span> <span data-ttu-id="5a9ca-163">プロファイルプロバイダーでエラーが発生しました。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-163">The profile provider has encountered an error.</span></span> 
     
-## <a name="mfcmapi-reference"></a><span data-ttu-id="97e5a-164">MFCMAPI 参照</span><span class="sxs-lookup"><span data-stu-id="97e5a-164">MFCMAPI reference</span></span>
+## <a name="mfcmapi-reference"></a><span data-ttu-id="5a9ca-164">MFCMAPI リファレンス</span><span class="sxs-lookup"><span data-stu-id="5a9ca-164">MFCMAPI reference</span></span>
 
-<span data-ttu-id="97e5a-165">MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B</span><span class="sxs-lookup"><span data-stu-id="97e5a-165">For MFCMAPI sample code, see the following table.</span></span>
+<span data-ttu-id="5a9ca-165">MFCMAPI のサンプル コードについては、次の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-165">For MFCMAPI sample code, see the following table.</span></span>
   
-|<span data-ttu-id="97e5a-166">**�t�@�C��**</span><span class="sxs-lookup"><span data-stu-id="97e5a-166">**File**</span></span>|<span data-ttu-id="97e5a-167">**�֐�**</span><span class="sxs-lookup"><span data-stu-id="97e5a-167">**Function**</span></span>|<span data-ttu-id="97e5a-168">**�R�����g**</span><span class="sxs-lookup"><span data-stu-id="97e5a-168">**Comment**</span></span>|
+|<span data-ttu-id="5a9ca-166">**ファイル**</span><span class="sxs-lookup"><span data-stu-id="5a9ca-166">**File**</span></span>|<span data-ttu-id="5a9ca-167">**関数**</span><span class="sxs-lookup"><span data-stu-id="5a9ca-167">**Function**</span></span>|<span data-ttu-id="5a9ca-168">**コメント**</span><span class="sxs-lookup"><span data-stu-id="5a9ca-168">**Comment**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="97e5a-169">ContentsTableListCtrl.cpp</span><span class="sxs-lookup"><span data-stu-id="97e5a-169">ContentsTableListCtrl.cpp</span></span>  <br/> ||<span data-ttu-id="97e5a-170">MFCMAPI では、いくつかのテーブルの処理を実行するのにバック グラウンド スレッドで MAPI を初期化するために**生じます**メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="97e5a-170">MFCMAPI uses the **MAPIInitialize** method to initialize MAPI on a background thread to do some table processing.</span></span>  <br/> |
+|<span data-ttu-id="5a9ca-169">ContentsTableListCtrl</span><span class="sxs-lookup"><span data-stu-id="5a9ca-169">ContentsTableListCtrl.cpp</span></span>  <br/> ||<span data-ttu-id="5a9ca-170">mfcmapi は、 **MAPIInitialize**メソッドを使用して、バックグラウンドスレッドで MAPI を初期化し、一部のテーブル処理を実行します。</span><span class="sxs-lookup"><span data-stu-id="5a9ca-170">MFCMAPI uses the **MAPIInitialize** method to initialize MAPI on a background thread to do some table processing.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="97e5a-171">関連項目</span><span class="sxs-lookup"><span data-stu-id="97e5a-171">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5a9ca-171">関連項目</span><span class="sxs-lookup"><span data-stu-id="5a9ca-171">See also</span></span>
 
 
 
-<span data-ttu-id="97e5a-172">[�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)</span><span class="sxs-lookup"><span data-stu-id="97e5a-172">[MFCMAPI as a Code Sample](mfcmapi-as-a-code-sample.md)</span></span>
+<span data-ttu-id="5a9ca-172">[�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)</span><span class="sxs-lookup"><span data-stu-id="5a9ca-172">[MFCMAPI as a Code Sample](mfcmapi-as-a-code-sample.md)</span></span>
 

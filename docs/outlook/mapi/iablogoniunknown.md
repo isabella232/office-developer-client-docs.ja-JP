@@ -12,52 +12,52 @@ api_type:
 - COM
 ms.assetid: fe340182-f41e-42e7-b8e8-cc005b1e9a5f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4421fcde6ccd2f2ac6245927d9d5d63ddc5200af
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fc8615fcd984623ae9c17c45fb7b51a4498a723b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348833"
 ---
-# <a name="iablogon--iunknown"></a><span data-ttu-id="35cf7-103">IABLogon : IUnknown</span><span class="sxs-lookup"><span data-stu-id="35cf7-103">IABLogon : IUnknown</span></span>
+# <a name="iablogon--iunknown"></a><span data-ttu-id="2de76-103">IABLogon : IUnknown</span><span class="sxs-lookup"><span data-stu-id="2de76-103">IABLogon : IUnknown</span></span>
 
   
   
-<span data-ttu-id="35cf7-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="35cf7-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="2de76-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="2de76-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="35cf7-105">アドレス帳プロバイダー内のリソースをアクセスします。</span><span class="sxs-lookup"><span data-stu-id="35cf7-105">Accesses resources in an address book provider.</span></span>
+<span data-ttu-id="2de76-105">アドレス帳プロバイダーのリソースにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="2de76-105">Accesses resources in an address book provider.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="35cf7-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="35cf7-106">Header file:</span></span>  <br/> |<span data-ttu-id="35cf7-107">Mapispi.h</span><span class="sxs-lookup"><span data-stu-id="35cf7-107">Mapispi.h</span></span>  <br/> |
-|<span data-ttu-id="35cf7-108">によって公開されます。</span><span class="sxs-lookup"><span data-stu-id="35cf7-108">Exposed by:</span></span>  <br/> |<span data-ttu-id="35cf7-109">アドレス帳ログオン オブジェクト</span><span class="sxs-lookup"><span data-stu-id="35cf7-109">Address book logon objects</span></span>  <br/> |
-|<span data-ttu-id="35cf7-110">によって実装されます。</span><span class="sxs-lookup"><span data-stu-id="35cf7-110">Implemented by:</span></span>  <br/> |<span data-ttu-id="35cf7-111">アドレス帳プロバイダー</span><span class="sxs-lookup"><span data-stu-id="35cf7-111">Address book providers</span></span>  <br/> |
-|<span data-ttu-id="35cf7-112">によって呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="35cf7-112">Called by:</span></span>  <br/> |<span data-ttu-id="35cf7-113">MAPI</span><span class="sxs-lookup"><span data-stu-id="35cf7-113">MAPI</span></span>  <br/> |
-|<span data-ttu-id="35cf7-114">インターフェイスの識別子。</span><span class="sxs-lookup"><span data-stu-id="35cf7-114">Interface identifier:</span></span>  <br/> |<span data-ttu-id="35cf7-115">IID_IABLogon</span><span class="sxs-lookup"><span data-stu-id="35cf7-115">IID_IABLogon</span></span>  <br/> |
-|<span data-ttu-id="35cf7-116">ポインターの型。</span><span class="sxs-lookup"><span data-stu-id="35cf7-116">Pointer type:</span></span>  <br/> |<span data-ttu-id="35cf7-117">LPABLOGON</span><span class="sxs-lookup"><span data-stu-id="35cf7-117">LPABLOGON</span></span>  <br/> |
+|<span data-ttu-id="2de76-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="2de76-106">Header file:</span></span>  <br/> |<span data-ttu-id="2de76-107">Mapispi</span><span class="sxs-lookup"><span data-stu-id="2de76-107">Mapispi.h</span></span>  <br/> |
+|<span data-ttu-id="2de76-108">公開者:</span><span class="sxs-lookup"><span data-stu-id="2de76-108">Exposed by:</span></span>  <br/> |<span data-ttu-id="2de76-109">アドレス帳のログオンオブジェクト</span><span class="sxs-lookup"><span data-stu-id="2de76-109">Address book logon objects</span></span>  <br/> |
+|<span data-ttu-id="2de76-110">実装元:</span><span class="sxs-lookup"><span data-stu-id="2de76-110">Implemented by:</span></span>  <br/> |<span data-ttu-id="2de76-111">アドレス帳プロバイダー</span><span class="sxs-lookup"><span data-stu-id="2de76-111">Address book providers</span></span>  <br/> |
+|<span data-ttu-id="2de76-112">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="2de76-112">Called by:</span></span>  <br/> |<span data-ttu-id="2de76-113">MAPI</span><span class="sxs-lookup"><span data-stu-id="2de76-113">MAPI</span></span>  <br/> |
+|<span data-ttu-id="2de76-114">インターフェイス識別子:</span><span class="sxs-lookup"><span data-stu-id="2de76-114">Interface identifier:</span></span>  <br/> |<span data-ttu-id="2de76-115">IID_IABLogon</span><span class="sxs-lookup"><span data-stu-id="2de76-115">IID_IABLogon</span></span>  <br/> |
+|<span data-ttu-id="2de76-116">ポインターの種類:</span><span class="sxs-lookup"><span data-stu-id="2de76-116">Pointer type:</span></span>  <br/> |<span data-ttu-id="2de76-117">lpablogon</span><span class="sxs-lookup"><span data-stu-id="2de76-117">LPABLOGON</span></span>  <br/> |
    
-## <a name="vtable-order"></a><span data-ttu-id="35cf7-118">Vtable の順序</span><span class="sxs-lookup"><span data-stu-id="35cf7-118">Vtable order</span></span>
+## <a name="vtable-order"></a><span data-ttu-id="2de76-118">v の順序</span><span class="sxs-lookup"><span data-stu-id="2de76-118">Vtable order</span></span>
 
 |||
 |:-----|:-----|
-|[<span data-ttu-id="35cf7-119">発生しました</span><span class="sxs-lookup"><span data-stu-id="35cf7-119">GetLastError</span></span>](iablogon-getlasterror.md) <br/> |<span data-ttu-id="35cf7-120">以前のアドレス帳プロバイダーのエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。</span><span class="sxs-lookup"><span data-stu-id="35cf7-120">Returns a [MAPIERROR](mapierror.md) structure that contains information about the previous address book provider error.</span></span>  <br/> |
-|[<span data-ttu-id="35cf7-121">Logoff</span><span class="sxs-lookup"><span data-stu-id="35cf7-121">Logoff</span></span>](iablogon-logoff.md) <br/> |<span data-ttu-id="35cf7-122">ログオフ処理を開始します。</span><span class="sxs-lookup"><span data-stu-id="35cf7-122">Initiates the logoff process.</span></span>  <br/> |
-|[<span data-ttu-id="35cf7-123">OpenEntry</span><span class="sxs-lookup"><span data-stu-id="35cf7-123">OpenEntry</span></span>](iablogon-openentry.md) <br/> |<span data-ttu-id="35cf7-124">コンテナー、ユーザー、または配布リストにメッセージを開き、さらにアクセスを提供するインターフェイスの実装にポインターを返します。</span><span class="sxs-lookup"><span data-stu-id="35cf7-124">Opens a container, messaging user, or distribution list, and returns a pointer to an interface implementation to provide further access.</span></span>  <br/> |
-|[<span data-ttu-id="35cf7-125">CompareEntryIDs</span><span class="sxs-lookup"><span data-stu-id="35cf7-125">CompareEntryIDs</span></span>](iablogon-compareentryids.md) <br/> |<span data-ttu-id="35cf7-126">同じオブジェクトを参照しているかどうかを決定する 2 つのエントリ id を比較します。</span><span class="sxs-lookup"><span data-stu-id="35cf7-126">Compares two entry identifiers to determine whether they refer to the same object.</span></span>  <br/> |
-|[<span data-ttu-id="35cf7-127">アドバイス</span><span class="sxs-lookup"><span data-stu-id="35cf7-127">Advise</span></span>](iablogon-advise.md) <br/> |<span data-ttu-id="35cf7-128">コンテナー、ユーザー、または配布リストをメッセージに影響を与える特定のイベントの通知を受け取る呼び出し元を登録します。</span><span class="sxs-lookup"><span data-stu-id="35cf7-128">Registers the caller to receive notification of specified events that affect a container, messaging user, or distribution list.</span></span>  <br/> |
-|[<span data-ttu-id="35cf7-129">アドバイズ中止します。</span><span class="sxs-lookup"><span data-stu-id="35cf7-129">Unadvise</span></span>](iablogon-unadvise.md) <br/> |<span data-ttu-id="35cf7-130">**アドバイズ**メソッドへの呼び出しで以前設定された通知をキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="35cf7-130">Cancels notifications that were previously set up with a call to the **Advise** method.</span></span>  <br/> |
-|[<span data-ttu-id="35cf7-131">OpenStatusEntry</span><span class="sxs-lookup"><span data-stu-id="35cf7-131">OpenStatusEntry</span></span>](iablogon-openstatusentry.md) <br/> |<span data-ttu-id="35cf7-132">プロバイダーの状態のオブジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="35cf7-132">Opens the provider's status object.</span></span>  <br/> |
-|[<span data-ttu-id="35cf7-133">OpenTemplateID</span><span class="sxs-lookup"><span data-stu-id="35cf7-133">OpenTemplateID</span></span>](iablogon-opentemplateid.md) <br/> |<span data-ttu-id="35cf7-134">ホストのアドレス帳プロバイダーに存在するデータが含まれている受信者のエントリが表示されます。</span><span class="sxs-lookup"><span data-stu-id="35cf7-134">Opens a recipient entry that has data residing in a host address book provider.</span></span>  <br/> |
-|[<span data-ttu-id="35cf7-135">GetOneOffTable</span><span class="sxs-lookup"><span data-stu-id="35cf7-135">GetOneOffTable</span></span>](iablogon-getoneofftable.md) <br/> |<span data-ttu-id="35cf7-136">送信メッセージの受信者の一覧に追加する受信者を作成するための 1 回限りのテンプレートのテーブルを返します。</span><span class="sxs-lookup"><span data-stu-id="35cf7-136">Returns a table of one-off templates for creating recipients to be added to the recipient list of an outgoing message.</span></span>  <br/> |
-|[<span data-ttu-id="35cf7-137">PrepareRecips</span><span class="sxs-lookup"><span data-stu-id="35cf7-137">PrepareRecips</span></span>](iablogon-preparerecips.md) <br/> |<span data-ttu-id="35cf7-138">メッセージング システムによって後で使用できる受信者のリストを準備します。</span><span class="sxs-lookup"><span data-stu-id="35cf7-138">Prepares a recipient list for later use by the messaging system.</span></span>  <br/> |
+|[<span data-ttu-id="2de76-119">GetLastError</span><span class="sxs-lookup"><span data-stu-id="2de76-119">GetLastError</span></span>](iablogon-getlasterror.md) <br/> |<span data-ttu-id="2de76-120">以前のアドレス帳プロバイダーエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。</span><span class="sxs-lookup"><span data-stu-id="2de76-120">Returns a [MAPIERROR](mapierror.md) structure that contains information about the previous address book provider error.</span></span>  <br/> |
+|[<span data-ttu-id="2de76-121">Logoff</span><span class="sxs-lookup"><span data-stu-id="2de76-121">Logoff</span></span>](iablogon-logoff.md) <br/> |<span data-ttu-id="2de76-122">ログオフプロセスを開始します。</span><span class="sxs-lookup"><span data-stu-id="2de76-122">Initiates the logoff process.</span></span>  <br/> |
+|[<span data-ttu-id="2de76-123">OpenEntry</span><span class="sxs-lookup"><span data-stu-id="2de76-123">OpenEntry</span></span>](iablogon-openentry.md) <br/> |<span data-ttu-id="2de76-124">コンテナー、メッセージングユーザー、または配布リストを開き、インターフェイス実装へのポインターを返して、さらにアクセスできるようにします。</span><span class="sxs-lookup"><span data-stu-id="2de76-124">Opens a container, messaging user, or distribution list, and returns a pointer to an interface implementation to provide further access.</span></span>  <br/> |
+|[<span data-ttu-id="2de76-125">CompareEntryIDs</span><span class="sxs-lookup"><span data-stu-id="2de76-125">CompareEntryIDs</span></span>](iablogon-compareentryids.md) <br/> |<span data-ttu-id="2de76-126">2つのエントリ識別子を比較して、同じオブジェクトを参照しているかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="2de76-126">Compares two entry identifiers to determine whether they refer to the same object.</span></span>  <br/> |
+|[<span data-ttu-id="2de76-127">助言</span><span class="sxs-lookup"><span data-stu-id="2de76-127">Advise</span></span>](iablogon-advise.md) <br/> |<span data-ttu-id="2de76-128">発信者が、コンテナー、メッセージングユーザー、または配布リストに影響を与える指定されたイベントの通知を受信するように登録します。</span><span class="sxs-lookup"><span data-stu-id="2de76-128">Registers the caller to receive notification of specified events that affect a container, messaging user, or distribution list.</span></span>  <br/> |
+|[<span data-ttu-id="2de76-129">アドバイズ</span><span class="sxs-lookup"><span data-stu-id="2de76-129">Unadvise</span></span>](iablogon-unadvise.md) <br/> |<span data-ttu-id="2de76-130">**アドバイズ**メソッドへの呼び出しで以前に設定された通知をキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="2de76-130">Cancels notifications that were previously set up with a call to the **Advise** method.</span></span>  <br/> |
+|[<span data-ttu-id="2de76-131">openstatusentry</span><span class="sxs-lookup"><span data-stu-id="2de76-131">OpenStatusEntry</span></span>](iablogon-openstatusentry.md) <br/> |<span data-ttu-id="2de76-132">プロバイダーの状態オブジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="2de76-132">Opens the provider's status object.</span></span>  <br/> |
+|[<span data-ttu-id="2de76-133">OpenTemplateID</span><span class="sxs-lookup"><span data-stu-id="2de76-133">OpenTemplateID</span></span>](iablogon-opentemplateid.md) <br/> |<span data-ttu-id="2de76-134">ホストアドレス帳プロバイダーに存在するデータを持つ受信者エントリを開きます。</span><span class="sxs-lookup"><span data-stu-id="2de76-134">Opens a recipient entry that has data residing in a host address book provider.</span></span>  <br/> |
+|[<span data-ttu-id="2de76-135">getoneofftable</span><span class="sxs-lookup"><span data-stu-id="2de76-135">GetOneOffTable</span></span>](iablogon-getoneofftable.md) <br/> |<span data-ttu-id="2de76-136">送信メッセージの受信者リストに追加する受信者を作成するための、1回限りのテンプレートのテーブルを返します。</span><span class="sxs-lookup"><span data-stu-id="2de76-136">Returns a table of one-off templates for creating recipients to be added to the recipient list of an outgoing message.</span></span>  <br/> |
+|[<span data-ttu-id="2de76-137">PrepareRecips</span><span class="sxs-lookup"><span data-stu-id="2de76-137">PrepareRecips</span></span>](iablogon-preparerecips.md) <br/> |<span data-ttu-id="2de76-138">メッセージングシステムで後で使用するために、受信者リストを準備します。</span><span class="sxs-lookup"><span data-stu-id="2de76-138">Prepares a recipient list for later use by the messaging system.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="35cf7-139">注釈</span><span class="sxs-lookup"><span data-stu-id="35cf7-139">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2de76-139">解説</span><span class="sxs-lookup"><span data-stu-id="2de76-139">Remarks</span></span>
 
-<span data-ttu-id="35cf7-140">**IABLogon**インターフェイスのメソッドの詳細については、[実装するサービス プロバイダーへのログオン](implementing-service-provider-logon.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="35cf7-140">For general information about the methods of the **IABLogon** interface, see [Implementing Service Provider Logon](implementing-service-provider-logon.md).</span></span>
+<span data-ttu-id="2de76-140">**IABLogon**インターフェイスのメソッドに関する一般的な情報については、「[サービスプロバイダーログオンの実装](implementing-service-provider-logon.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2de76-140">For general information about the methods of the **IABLogon** interface, see [Implementing Service Provider Logon](implementing-service-provider-logon.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="35cf7-141">関連項目</span><span class="sxs-lookup"><span data-stu-id="35cf7-141">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2de76-141">関連項目</span><span class="sxs-lookup"><span data-stu-id="2de76-141">See also</span></span>
 
 
 
-[<span data-ttu-id="35cf7-142">MAPI インターフェイス</span><span class="sxs-lookup"><span data-stu-id="35cf7-142">MAPI Interfaces</span></span>](mapi-interfaces.md)
+[<span data-ttu-id="2de76-142">MAPI のインターフェイス</span><span class="sxs-lookup"><span data-stu-id="2de76-142">MAPI Interfaces</span></span>](mapi-interfaces.md)
 

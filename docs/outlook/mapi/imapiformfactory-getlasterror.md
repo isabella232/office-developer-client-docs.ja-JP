@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4b1d85f6-7996-4839-b985-abf83e305651
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b4d9838846a124b1c81ec9f9fc6309dcd37c7f2d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 2c83f7788d9c01ab02f1a2bc39a35abe2c5a21c5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342148"
 ---
-# <a name="imapiformfactorygetlasterror"></a><span data-ttu-id="df955-103">IMAPIFormFactory::GetLastError</span><span class="sxs-lookup"><span data-stu-id="df955-103">IMAPIFormFactory::GetLastError</span></span>
+# <a name="imapiformfactorygetlasterror"></a><span data-ttu-id="bd275-103">IMAPIFormFactory::GetLastError</span><span class="sxs-lookup"><span data-stu-id="bd275-103">IMAPIFormFactory::GetLastError</span></span>
 
   
   
-<span data-ttu-id="df955-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="df955-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="bd275-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="bd275-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="df955-105">前の工場出荷時のフォーム オブジェクトに発生したエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。</span><span class="sxs-lookup"><span data-stu-id="df955-105">Returns a [MAPIERROR](mapierror.md) structure that contains information about the previous error occurring to the form factory object.</span></span> 
+<span data-ttu-id="bd275-105">form factory オブジェクトに発生する前のエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。</span><span class="sxs-lookup"><span data-stu-id="bd275-105">Returns a [MAPIERROR](mapierror.md) structure that contains information about the previous error occurring to the form factory object.</span></span> 
   
 ```cpp
 HRESULT GetLastError(
@@ -35,51 +35,51 @@ HRESULT GetLastError(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="df955-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="df955-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="bd275-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bd275-106">Parameters</span></span>
 
- <span data-ttu-id="df955-107">_hResult_</span><span class="sxs-lookup"><span data-stu-id="df955-107">_hResult_</span></span>
+ <span data-ttu-id="bd275-107">_hResult_</span><span class="sxs-lookup"><span data-stu-id="bd275-107">_hResult_</span></span>
   
-> <span data-ttu-id="df955-108">[in]以前のメソッドの呼び出しで生成されたエラー値を含む HRESULT のデータ型です。</span><span class="sxs-lookup"><span data-stu-id="df955-108">[in] An HRESULT data type that contains the error value generated in the previous method call.</span></span>
+> <span data-ttu-id="bd275-108">順番前のメソッド呼び出しで生成されたエラー値を含む HRESULT データ型。</span><span class="sxs-lookup"><span data-stu-id="bd275-108">[in] An HRESULT data type that contains the error value generated in the previous method call.</span></span>
     
- <span data-ttu-id="df955-109">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="df955-109">_ulFlags_</span></span>
+ <span data-ttu-id="bd275-109">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="bd275-109">_ulFlags_</span></span>
   
-> <span data-ttu-id="df955-110">[in]返される文字列の種類を制御するフラグのビットマスクです。</span><span class="sxs-lookup"><span data-stu-id="df955-110">[in] A bitmask of flags that controls the type of strings returned.</span></span> <span data-ttu-id="df955-111">次のフラグを設定することができます。</span><span class="sxs-lookup"><span data-stu-id="df955-111">The following flag can be set:</span></span> 
+> <span data-ttu-id="bd275-110">順番返される文字列の種類を制御するフラグのビットマスク。</span><span class="sxs-lookup"><span data-stu-id="bd275-110">[in] A bitmask of flags that controls the type of strings returned.</span></span> <span data-ttu-id="bd275-111">次のフラグを設定できます。</span><span class="sxs-lookup"><span data-stu-id="bd275-111">The following flag can be set:</span></span> 
     
-<span data-ttu-id="df955-112">MAPI_UNICODE</span><span class="sxs-lookup"><span data-stu-id="df955-112">MAPI_UNICODE</span></span> 
+<span data-ttu-id="bd275-112">MAPI_UNICODE</span><span class="sxs-lookup"><span data-stu-id="bd275-112">MAPI_UNICODE</span></span> 
   
-> <span data-ttu-id="df955-113">_LppMAPIError_パラメーターに返された**MAPIERROR**構造体の文字列は、Unicode 形式では。</span><span class="sxs-lookup"><span data-stu-id="df955-113">The strings in the **MAPIERROR** structure returned in the  _lppMAPIError_ parameter are in Unicode format.</span></span> <span data-ttu-id="df955-114">MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。</span><span class="sxs-lookup"><span data-stu-id="df955-114">If the MAPI_UNICODE flag is not set, the strings are in ANSI format.</span></span> 
+> <span data-ttu-id="bd275-113">_lppMAPIError_パラメーターで返される**MAPIERROR**構造体の文字列は、Unicode 形式です。</span><span class="sxs-lookup"><span data-stu-id="bd275-113">The strings in the **MAPIERROR** structure returned in the  _lppMAPIError_ parameter are in Unicode format.</span></span> <span data-ttu-id="bd275-114">MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。</span><span class="sxs-lookup"><span data-stu-id="bd275-114">If the MAPI_UNICODE flag is not set, the strings are in ANSI format.</span></span> 
     
- <span data-ttu-id="df955-115">_lppMAPIError_</span><span class="sxs-lookup"><span data-stu-id="df955-115">_lppMAPIError_</span></span>
+ <span data-ttu-id="bd275-115">_lppMAPIError_</span><span class="sxs-lookup"><span data-stu-id="bd275-115">_lppMAPIError_</span></span>
   
-> <span data-ttu-id="df955-116">[out]エラーのバージョン、コンポーネント、およびコンテキストの情報を格納する返された**MAPIERROR**構造体へのポインターへのポインター。</span><span class="sxs-lookup"><span data-stu-id="df955-116">[out] A pointer to a pointer to the returned **MAPIERROR** structure that contains version, component, and context information for the error.</span></span> <span data-ttu-id="df955-117">取得する**MAPIERROR**構造体が存在しない場合、このパラメーターを NULL に設定することができます。</span><span class="sxs-lookup"><span data-stu-id="df955-117">This parameter can be set to NULL if there is no **MAPIERROR** structure to return.</span></span> 
+> <span data-ttu-id="bd275-116">読み上げエラーのバージョン、コンポーネント、およびコンテキスト情報を含む、返された**MAPIERROR**構造体へのポインターへのポインター。</span><span class="sxs-lookup"><span data-stu-id="bd275-116">[out] A pointer to a pointer to the returned **MAPIERROR** structure that contains version, component, and context information for the error.</span></span> <span data-ttu-id="bd275-117">**MAPIERROR**構造体を返さない場合は、このパラメーターを NULL に設定できます。</span><span class="sxs-lookup"><span data-stu-id="bd275-117">This parameter can be set to NULL if there is no **MAPIERROR** structure to return.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="df955-118">�߂�l</span><span class="sxs-lookup"><span data-stu-id="df955-118">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="bd275-118">戻り値</span><span class="sxs-lookup"><span data-stu-id="bd275-118">Return value</span></span>
 
-<span data-ttu-id="df955-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="df955-119">S_OK</span></span> 
+<span data-ttu-id="bd275-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="bd275-119">S_OK</span></span> 
   
-> <span data-ttu-id="df955-120">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="df955-120">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="bd275-120">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="bd275-120">The call succeeded and has returned the expected value or values.</span></span>
     
-<span data-ttu-id="df955-121">MAPI_E_BAD_CHARWIDTH</span><span class="sxs-lookup"><span data-stu-id="df955-121">MAPI_E_BAD_CHARWIDTH</span></span> 
+<span data-ttu-id="bd275-121">MAPI_E_BAD_CHARWIDTH</span><span class="sxs-lookup"><span data-stu-id="bd275-121">MAPI_E_BAD_CHARWIDTH</span></span> 
   
-> <span data-ttu-id="df955-122">か、MAPI_UNICODE フラグが設定された**発生しました**が、Unicode をサポートしていませんまたは MAPI_UNICODE が設定されていませんでしたし、 **GetLastError**は、Unicode だけをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="df955-122">Either the MAPI_UNICODE flag was set and **GetLastError** does not support Unicode, or MAPI_UNICODE was not set and **GetLastError** supports only Unicode.</span></span> 
+> <span data-ttu-id="bd275-122">MAPI_UNICODE フラグが設定されていて、 **getlasterror**が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、 **getlasterror**が unicode のみをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="bd275-122">Either the MAPI_UNICODE flag was set and **GetLastError** does not support Unicode, or MAPI_UNICODE was not set and **GetLastError** supports only Unicode.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="df955-123">注釈</span><span class="sxs-lookup"><span data-stu-id="df955-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bd275-123">解説</span><span class="sxs-lookup"><span data-stu-id="bd275-123">Remarks</span></span>
 
-<span data-ttu-id="df955-124">**IMAPIFormFactory::GetLastError**メソッドでは、失敗したメソッド呼び出しに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="df955-124">The **IMAPIFormFactory::GetLastError** method supplies information about a prior method call that failed.</span></span> <span data-ttu-id="df955-125">呼び出し元は、ダイアログ ボックスに**MAPIERROR**構造体のデータを含めることによって、エラーの詳細情報をユーザーを提供できます。</span><span class="sxs-lookup"><span data-stu-id="df955-125">Callers can provide their users with detailed information about the error by including the data from the **MAPIERROR** structure in a dialog box.</span></span> 
+<span data-ttu-id="bd275-124">**imapiformfactory:: GetLastError**メソッドは、失敗した前のメソッド呼び出しに関する情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="bd275-124">The **IMAPIFormFactory::GetLastError** method supplies information about a prior method call that failed.</span></span> <span data-ttu-id="bd275-125">呼び出し元は、 **MAPIERROR**構造のデータをダイアログボックスに含めることによって、エラーに関する詳細情報をユーザーに提供できます。</span><span class="sxs-lookup"><span data-stu-id="bd275-125">Callers can provide their users with detailed information about the error by including the data from the **MAPIERROR** structure in a dialog box.</span></span> 
   
-## <a name="notes-to-callers"></a><span data-ttu-id="df955-126">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="df955-126">Notes to callers</span></span>
+## <a name="notes-to-callers"></a><span data-ttu-id="bd275-126">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="bd275-126">Notes to callers</span></span>
 
-<span data-ttu-id="df955-127">**MAPIERROR**の使用を行うことができます構造が、 _lppMAPIError_パラメーターが指す場合、MAPI では 1 つが提供される**GetLastError**が S_OK を返す場合にのみです。</span><span class="sxs-lookup"><span data-stu-id="df955-127">You can make use of the **MAPIERROR** structure pointed to by the  _lppMAPIError_ parameter if MAPI supplies one only if **GetLastError** returns S_OK.</span></span> <span data-ttu-id="df955-128">どのような最後のエラーまたはエラーを報告するのにはそれ以上には、MAPI は判断できません。</span><span class="sxs-lookup"><span data-stu-id="df955-128">Sometimes MAPI cannot determine what the last error was or has nothing more to report about the error.</span></span> <span data-ttu-id="df955-129">このような場合は、NULL へのポインターが返されます_lppMAPIError_の代わりにします。</span><span class="sxs-lookup"><span data-stu-id="df955-129">In this situation, a pointer to NULL is returned in  _lppMAPIError_ instead.</span></span> 
+<span data-ttu-id="bd275-127">_lppMAPIError_パラメーターでポイントされている**MAPIERROR**構造体は、 **GetLastError**が S_OK を返す場合にのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="bd275-127">You can make use of the **MAPIERROR** structure pointed to by the  _lppMAPIError_ parameter if MAPI supplies one only if **GetLastError** returns S_OK.</span></span> <span data-ttu-id="bd275-128">MAPI では、エラーについてのレポートを作成するために最後のエラーが発生したかどうかを判断できない場合があります。</span><span class="sxs-lookup"><span data-stu-id="bd275-128">Sometimes MAPI cannot determine what the last error was or has nothing more to report about the error.</span></span> <span data-ttu-id="bd275-129">このような場合、代わりに_lppMAPIError_で NULL へのポインターが返されます。</span><span class="sxs-lookup"><span data-stu-id="bd275-129">In this situation, a pointer to NULL is returned in  _lppMAPIError_ instead.</span></span> 
   
-<span data-ttu-id="df955-130">**GetLastError**メソッドの詳細については、[拡張エラーの使用](mapi-extended-errors.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="df955-130">For more information about the **GetLastError** method, see [Using Extended Errors](mapi-extended-errors.md).</span></span>
+<span data-ttu-id="bd275-130">**GetLastError**メソッドの詳細については、「[拡張エラーの使用](mapi-extended-errors.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bd275-130">For more information about the **GetLastError** method, see [Using Extended Errors](mapi-extended-errors.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="df955-131">関連項目</span><span class="sxs-lookup"><span data-stu-id="df955-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bd275-131">関連項目</span><span class="sxs-lookup"><span data-stu-id="bd275-131">See also</span></span>
 
 
 
-[<span data-ttu-id="df955-132">MAPIERROR</span><span class="sxs-lookup"><span data-stu-id="df955-132">MAPIERROR</span></span>](mapierror.md)
+[<span data-ttu-id="bd275-132">MAPIERROR</span><span class="sxs-lookup"><span data-stu-id="bd275-132">MAPIERROR</span></span>](mapierror.md)
   
-[<span data-ttu-id="df955-133">MAPIFreeBuffer</span><span class="sxs-lookup"><span data-stu-id="df955-133">MAPIFreeBuffer</span></span>](mapifreebuffer.md)
+[<span data-ttu-id="bd275-133">MAPIFreeBuffer</span><span class="sxs-lookup"><span data-stu-id="bd275-133">MAPIFreeBuffer</span></span>](mapifreebuffer.md)
   
-[<span data-ttu-id="df955-134">IMAPIFormFactory : IUnknown</span><span class="sxs-lookup"><span data-stu-id="df955-134">IMAPIFormFactory : IUnknown</span></span>](imapiformfactoryiunknown.md)
+[<span data-ttu-id="bd275-134">IMAPIFormFactory : IUnknown</span><span class="sxs-lookup"><span data-stu-id="bd275-134">IMAPIFormFactory : IUnknown</span></span>](imapiformfactoryiunknown.md)
 

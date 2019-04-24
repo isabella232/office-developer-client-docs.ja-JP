@@ -1,31 +1,31 @@
 ---
-title: Outlook が Exchange キャッシュ モードではときに、リモート サーバー上のストアを開く
+title: Outlook が Exchange キャッシュモードの場合にリモートサーバーでストアを開く
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: cf01eab7-164d-c3b3-8bb0-9281e2119bc5
 description: '�ŏI�X�V��: 2012�N6��25��'
-ms.openlocfilehash: 7c1b3d3d5eed6bc991f8e4fd702fa197d610c104
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 419c9ae734e8b58d0958970e7127b94d220b8382
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345949"
 ---
-# <a name="open-a-store-on-the-remote-server-when-outlook-is-in-cached-exchange-mode"></a><span data-ttu-id="57729-103">Outlook が Exchange キャッシュ モードではときに、リモート サーバー上のストアを開く</span><span class="sxs-lookup"><span data-stu-id="57729-103">Open a store on the remote server when Outlook is in Cached Exchange Mode</span></span>
+# <a name="open-a-store-on-the-remote-server-when-outlook-is-in-cached-exchange-mode"></a><span data-ttu-id="6bbcd-103">Outlook が Exchange キャッシュモードの場合にリモートサーバーでストアを開く</span><span class="sxs-lookup"><span data-stu-id="6bbcd-103">Open a store on the remote server when Outlook is in Cached Exchange Mode</span></span>
 
-<span data-ttu-id="57729-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="57729-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="6bbcd-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="6bbcd-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="57729-105">このトピックには、 **MDB_ONLINE**フラグを使用して Exchange キャッシュ モードでは、Microsoft Outlook 2010 または Microsoft Outlook 2013 には、リモート サーバー上のメッセージ ストアを開く方法を示している C++ でのコード サンプルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="57729-105">This topic contains a code sample in C++ that shows how to use the **MDB_ONLINE** flag to open a message store on the remote server when Microsoft Outlook 2010 or Microsoft Outlook 2013 is in Cached Exchange Mode.</span></span> 
+<span data-ttu-id="6bbcd-105">このトピックでは、microsoft outlook 2010 または microsoft outlook 2013 が Exchange キャッシュモードの場合に、 **MDB_ONLINE**フラグを使用してリモートサーバーでメッセージストアを開く方法を示す C++ のコードサンプルを示します。</span><span class="sxs-lookup"><span data-stu-id="6bbcd-105">This topic contains a code sample in C++ that shows how to use the **MDB_ONLINE** flag to open a message store on the remote server when Microsoft Outlook 2010 or Microsoft Outlook 2013 is in Cached Exchange Mode.</span></span> 
   
-<span data-ttu-id="57729-106">Exchange キャッシュ モードでは、Outlook 2010 または Outlook 2013 は、リモートの Exchange サーバー上のユーザーのメールボックスのリモート ・ コピーへのオンライン接続を保持している間、ユーザーのメールボックスのローカル コピーを使用するには、Outlook 2010、Outlook 2013 を許可します。</span><span class="sxs-lookup"><span data-stu-id="57729-106">Cached Exchange Mode permits Outlook 2010 and Outlook 2013 to use a local copy of a user's mailbox while Outlook 2010 or Outlook 2013 maintains an online connection to a remote copy of the user's mailbox on the remote Exchange server.</span></span> <span data-ttu-id="57729-107">既定で、Outlook 2010 または Outlook 2013 Exchange キャッシュ モードで動作している、同じセッションにログオンしている MAPI ソリューションでは、キャッシュされたメッセージ ストアに接続されています。</span><span class="sxs-lookup"><span data-stu-id="57729-107">When Outlook 2010 or Outlook 2013 is running in Cached Exchange Mode, by default, any MAPI solutions that log on to the same session are also connected to the cached message store.</span></span> <span data-ttu-id="57729-108">アクセスされているすべてのデータと加えられた変更は、メールボックスのローカル コピーに対して行われます。</span><span class="sxs-lookup"><span data-stu-id="57729-108">Any data that is accessed and any changes that are made are made against the local copy of the mailbox.</span></span>
+<span data-ttu-id="6bbcd-106">Exchange キャッシュモードでは、outlook 2010 と outlook 2013 は、ユーザーのメールボックスのローカルコピーを使用することができます。 outlook 2010 または outlook 2013 は、リモート Exchange サーバー上のユーザーのメールボックスのリモートコピーへのオンライン接続を保持しています。</span><span class="sxs-lookup"><span data-stu-id="6bbcd-106">Cached Exchange Mode permits Outlook 2010 and Outlook 2013 to use a local copy of a user's mailbox while Outlook 2010 or Outlook 2013 maintains an online connection to a remote copy of the user's mailbox on the remote Exchange server.</span></span> <span data-ttu-id="6bbcd-107">outlook 2010 または outlook 2013 が Exchange キャッシュモードで実行されている場合、既定では、同じセッションにログオンする MAPI ソリューションは、キャッシュされたメッセージストアにも接続されます。</span><span class="sxs-lookup"><span data-stu-id="6bbcd-107">When Outlook 2010 or Outlook 2013 is running in Cached Exchange Mode, by default, any MAPI solutions that log on to the same session are also connected to the cached message store.</span></span> <span data-ttu-id="6bbcd-108">アクセスされるデータと、変更が行われた場合は、メールボックスのローカルコピーに対して行われます。</span><span class="sxs-lookup"><span data-stu-id="6bbcd-108">Any data that is accessed and any changes that are made are made against the local copy of the mailbox.</span></span>
   
-<span data-ttu-id="57729-109">クライアントまたはサービス プロバイダーでは、ローカル メッセージ ストアへの接続をオーバーライドでき、リモート サーバー上のストアを開くには、 [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md)を呼び出すときは、 *ulFlags*パラメーターで**MDB_ONLINE**のビットを設定することができます。</span><span class="sxs-lookup"><span data-stu-id="57729-109">A client or service provider can override the connection to the local message store and open the store on the remote server by setting the bit for **MDB_ONLINE** in the  *ulFlags*  parameter when calling [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md).</span></span> <span data-ttu-id="57729-110">ストア正常に開いた後、リモート サーバー上でセッションに使用する、アイテムまたは [リモート ストアのフォルダーを開くに[IMAPISession::OpenEntry](imapisession-openentry.md)を使用できます。</span><span class="sxs-lookup"><span data-stu-id="57729-110">After the store has been successfully opened on the remote server for that session, you can use [IMAPISession::OpenEntry](imapisession-openentry.md) to open items or folders on the remote store.</span></span> 
+<span data-ttu-id="6bbcd-109">クライアントまたはサービスプロバイダーは、ローカルメッセージストアへの接続を上書きし、 [imapisession:: openmsgstore](imapisession-openmsgstore.md)を呼び出すときに*ulflags*パラメーターで**MDB_ONLINE**のビットを設定することによって、リモートサーバー上でストアを開くことができます。</span><span class="sxs-lookup"><span data-stu-id="6bbcd-109">A client or service provider can override the connection to the local message store and open the store on the remote server by setting the bit for **MDB_ONLINE** in the  *ulFlags*  parameter when calling [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md).</span></span> <span data-ttu-id="6bbcd-110">そのセッションのリモートサーバーでストアが正常に開かれた後、 [imapisession:: openentry](imapisession-openentry.md)を使用して、リモートストアのアイテムまたはフォルダーを開くことができます。</span><span class="sxs-lookup"><span data-stu-id="6bbcd-110">After the store has been successfully opened on the remote server for that session, you can use [IMAPISession::OpenEntry](imapisession-openentry.md) to open items or folders on the remote store.</span></span> 
   
-<span data-ttu-id="57729-111">同じ MAPI セッションで同時にキャッシュ モードと非キャッシュ モードで、Exchange ストアを開くことができません。</span><span class="sxs-lookup"><span data-stu-id="57729-111">You cannot open an Exchange store in cached mode and in non-cached mode at the same time in the same MAPI session.</span></span> <span data-ttu-id="57729-112">キャッシュされたメッセージ ストアを既に開いている場合、このフラグで開き、またはこのフラグを使用してリモート サーバー上の Exchange ストアを開く新しい MAPI セッションを開始する前にストアを閉じる必要がありますか。</span><span class="sxs-lookup"><span data-stu-id="57729-112">If you have already opened the cached message store, you must either close the store before you open it with this flag, or open a new MAPI session where you can open the Exchange store on the remote server by using this flag.</span></span>
+<span data-ttu-id="6bbcd-111">同じ MAPI セッションで、キャッシュモードおよび非キャッシュモードでは、Exchange ストアを同時に開くことはできません。</span><span class="sxs-lookup"><span data-stu-id="6bbcd-111">You cannot open an Exchange store in cached mode and in non-cached mode at the same time in the same MAPI session.</span></span> <span data-ttu-id="6bbcd-112">キャッシュ済みのメッセージ ストアを既に開いている場合は、このフラグを使用してストアを開く前にストアを閉じるか、このフラグを使用してリモート サーバー上の Exchange ストアを開くことができる新しい MAPI セッションを開く必要があります。</span><span class="sxs-lookup"><span data-stu-id="6bbcd-112">If you have already opened the cached message store, you must either close the store before you open it with this flag, or open a new MAPI session where you can open the Exchange store on the remote server by using this flag.</span></span>
   
-<span data-ttu-id="57729-113">次のコードは、リモート サーバー上の既定のストアを開く、 *ulFlags*パラメーターの設定**MDB_ONLINE**フラグを使用して**IMAPISession::OpenMsgStore**を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="57729-113">The following code sample shows how to call **IMAPISession::OpenMsgStore** with the **MDB_ONLINE** flag set in the  *ulFlags*  parameter to open the default store on the remote server.</span></span> 
+<span data-ttu-id="6bbcd-113">次のコードサンプルは、 *ulflags*パラメーターで**MDB_ONLINE**フラグを設定して**imapisession:: openmsgstore**を呼び出して、リモートサーバー上の既定のストアを開く方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="6bbcd-113">The following code sample shows how to call **IMAPISession::OpenMsgStore** with the **MDB_ONLINE** flag set in the  *ulFlags*  parameter to open the default store on the remote server.</span></span> 
   
 ```cpp
 HRESULT HrRemoteMessageStore( 
@@ -88,9 +88,9 @@ HRESULT HrRemoteMessageStore(
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="57729-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="57729-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6bbcd-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="6bbcd-114">See also</span></span>
 
-- [<span data-ttu-id="57729-115">MAPI の追加について</span><span class="sxs-lookup"><span data-stu-id="57729-115">About MAPI Additions</span></span>](about-mapi-additions.md) 
-- [<span data-ttu-id="57729-116">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="57729-116">MAPI Constants</span></span>](mapi-constants.md)
-- [<span data-ttu-id="57729-117">Outlook が Exchange キャッシュ モードの場合にリモート サーバーでストアにアクセスする</span><span class="sxs-lookup"><span data-stu-id="57729-117">Access a Store on the Remote Server When Outlook is in Cached Exchange Mode</span></span>](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)
+- [<span data-ttu-id="6bbcd-115">MAPI の追加について</span><span class="sxs-lookup"><span data-stu-id="6bbcd-115">About MAPI Additions</span></span>](about-mapi-additions.md) 
+- [<span data-ttu-id="6bbcd-116">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="6bbcd-116">MAPI Constants</span></span>](mapi-constants.md)
+- [<span data-ttu-id="6bbcd-117">Outlook が Exchange キャッシュ モードの場合にリモート サーバーでストアにアクセスする</span><span class="sxs-lookup"><span data-stu-id="6bbcd-117">Access a Store on the Remote Server When Outlook is in Cached Exchange Mode</span></span>](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)
 

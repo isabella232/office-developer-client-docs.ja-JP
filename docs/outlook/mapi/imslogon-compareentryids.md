@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 481812d6-8e94-4510-b288-55501dd5757c
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: c5b2d7db745cc270c0be7ee2184e86c6a4f97aad
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 4196ed8b949ecb9e23c4bd34380db9cc5a369e23
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348728"
 ---
-# <a name="imslogoncompareentryids"></a><span data-ttu-id="7376a-103">IMSLogon::CompareEntryIDs</span><span class="sxs-lookup"><span data-stu-id="7376a-103">IMSLogon::CompareEntryIDs</span></span>
+# <a name="imslogoncompareentryids"></a><span data-ttu-id="06da7-103">IMSLogon::CompareEntryIDs</span><span class="sxs-lookup"><span data-stu-id="06da7-103">IMSLogon::CompareEntryIDs</span></span>
 
   
   
-<span data-ttu-id="7376a-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="7376a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="06da7-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="06da7-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="7376a-105">同じオブジェクトを参照しているかどうかを決定する 2 つのエントリ id を比較します。</span><span class="sxs-lookup"><span data-stu-id="7376a-105">Compares two entry identifiers to determine whether they refer to the same object.</span></span> <span data-ttu-id="7376a-106">MAPI は、両方のエントリの識別子を比較するには、一意の識別子 (Uid) がそのプロバイダーによって処理される場合にのみ、サービス ・ プロバイダーへの呼び出しを意味します。</span><span class="sxs-lookup"><span data-stu-id="7376a-106">MAPI refers this call to a service provider only if the unique identifiers (UIDs) in both entry identifiers to be compared are handled by that provider.</span></span>
+<span data-ttu-id="06da7-105">2つのエントリ識別子を比較して、同じオブジェクトを参照しているかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="06da7-105">Compares two entry identifiers to determine whether they refer to the same object.</span></span> <span data-ttu-id="06da7-106">MAPI では、両方のエントリ識別子の一意識別子 (uid) がそのプロバイダによって処理される場合にのみ、サービスプロバイダへの呼び出しを参照します。</span><span class="sxs-lookup"><span data-stu-id="06da7-106">MAPI refers this call to a service provider only if the unique identifiers (UIDs) in both entry identifiers to be compared are handled by that provider.</span></span>
   
 ```cpp
 HRESULT CompareEntryIDs(
@@ -38,47 +38,47 @@ HRESULT CompareEntryIDs(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="7376a-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7376a-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="06da7-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="06da7-107">Parameters</span></span>
 
- <span data-ttu-id="7376a-108">_cbEntryID1_</span><span class="sxs-lookup"><span data-stu-id="7376a-108">_cbEntryID1_</span></span>
+ <span data-ttu-id="06da7-108">_cbEntryID1_</span><span class="sxs-lookup"><span data-stu-id="06da7-108">_cbEntryID1_</span></span>
   
-> <span data-ttu-id="7376a-109">[in]_._ _LpEntryID1_パラメーターで指定されたエントリの識別子のバイト単位のサイズ</span><span class="sxs-lookup"><span data-stu-id="7376a-109">[in] The size, in bytes, of the entry identifier pointed to by the  _lpEntryID1_ parameter  _._</span></span>
+> <span data-ttu-id="06da7-109">順番_lpEntryID1_パラメーターによって示されるエントリ識別子のバイト単位のサイズ _。_</span><span class="sxs-lookup"><span data-stu-id="06da7-109">[in] The size, in bytes, of the entry identifier pointed to by the  _lpEntryID1_ parameter  _._</span></span>
     
- <span data-ttu-id="7376a-110">_lpEntryID1_</span><span class="sxs-lookup"><span data-stu-id="7376a-110">_lpEntryID1_</span></span>
+ <span data-ttu-id="06da7-110">_lpEntryID1_</span><span class="sxs-lookup"><span data-stu-id="06da7-110">_lpEntryID1_</span></span>
   
-> <span data-ttu-id="7376a-111">[in]比較する最初のエントリの識別子へのポインター。</span><span class="sxs-lookup"><span data-stu-id="7376a-111">[in] A pointer to the first entry identifier to be compared.</span></span>
+> <span data-ttu-id="06da7-111">順番比較する最初のエントリ識別子へのポインター。</span><span class="sxs-lookup"><span data-stu-id="06da7-111">[in] A pointer to the first entry identifier to be compared.</span></span>
     
- <span data-ttu-id="7376a-112">_cbEntryID2_</span><span class="sxs-lookup"><span data-stu-id="7376a-112">_cbEntryID2_</span></span>
+ <span data-ttu-id="06da7-112">_cbEntryID2_</span><span class="sxs-lookup"><span data-stu-id="06da7-112">_cbEntryID2_</span></span>
   
-> <span data-ttu-id="7376a-113">[in]_._ _LpEntryID2_パラメーターで指定されたエントリの識別子のバイト単位のサイズ</span><span class="sxs-lookup"><span data-stu-id="7376a-113">[in] The size, in bytes, of the entry identifier pointed to by the  _lpEntryID2_ parameter  _._</span></span>
+> <span data-ttu-id="06da7-113">順番_lpEntryID2_パラメーターによって示されるエントリ識別子のバイト単位のサイズ _。_</span><span class="sxs-lookup"><span data-stu-id="06da7-113">[in] The size, in bytes, of the entry identifier pointed to by the  _lpEntryID2_ parameter  _._</span></span>
     
- <span data-ttu-id="7376a-114">_lpEntryID2_</span><span class="sxs-lookup"><span data-stu-id="7376a-114">_lpEntryID2_</span></span>
+ <span data-ttu-id="06da7-114">_lpEntryID2_</span><span class="sxs-lookup"><span data-stu-id="06da7-114">_lpEntryID2_</span></span>
   
-> <span data-ttu-id="7376a-115">[in]比較する 2 番目のエントリの識別子へのポインター。</span><span class="sxs-lookup"><span data-stu-id="7376a-115">[in] A pointer to the second entry identifier to be compared.</span></span>
+> <span data-ttu-id="06da7-115">順番比較する2番目のエントリ id へのポインター。</span><span class="sxs-lookup"><span data-stu-id="06da7-115">[in] A pointer to the second entry identifier to be compared.</span></span>
     
- <span data-ttu-id="7376a-116">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="7376a-116">_ulFlags_</span></span>
+ <span data-ttu-id="06da7-116">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="06da7-116">_ulFlags_</span></span>
   
-> <span data-ttu-id="7376a-117">[����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B</span><span class="sxs-lookup"><span data-stu-id="7376a-117">[in] Reserved; must be zero.</span></span>
+> <span data-ttu-id="06da7-117">[����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B</span><span class="sxs-lookup"><span data-stu-id="06da7-117">[in] Reserved; must be zero.</span></span>
     
- <span data-ttu-id="7376a-118">_lpulResult_</span><span class="sxs-lookup"><span data-stu-id="7376a-118">_lpulResult_</span></span>
+ <span data-ttu-id="06da7-118">_lルー result_</span><span class="sxs-lookup"><span data-stu-id="06da7-118">_lpulResult_</span></span>
   
-> <span data-ttu-id="7376a-119">[out]比較の結果が返されましたへのポインター。</span><span class="sxs-lookup"><span data-stu-id="7376a-119">[out] A pointer to the returned result of the comparison.</span></span> <span data-ttu-id="7376a-120">2 つのエントリの識別子が同じオブジェクトを参照する場合は TRUE。それ以外の場合、FALSE です。</span><span class="sxs-lookup"><span data-stu-id="7376a-120">TRUE if the two entry identifiers refer to the same object; otherwise, FALSE.</span></span>
+> <span data-ttu-id="06da7-119">読み上げ返された比較結果へのポインター。</span><span class="sxs-lookup"><span data-stu-id="06da7-119">[out] A pointer to the returned result of the comparison.</span></span> <span data-ttu-id="06da7-120">2つのエントリ識別子が同じオブジェクトを参照している場合は TRUE。それ以外の場合は FALSE。</span><span class="sxs-lookup"><span data-stu-id="06da7-120">TRUE if the two entry identifiers refer to the same object; otherwise, FALSE.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="7376a-121">�߂�l</span><span class="sxs-lookup"><span data-stu-id="7376a-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="06da7-121">戻り値</span><span class="sxs-lookup"><span data-stu-id="06da7-121">Return value</span></span>
 
-<span data-ttu-id="7376a-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="7376a-122">S_OK</span></span> 
+<span data-ttu-id="06da7-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="06da7-122">S_OK</span></span> 
   
-> <span data-ttu-id="7376a-123">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="7376a-123">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="06da7-123">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="06da7-123">The call succeeded and has returned the expected value or values.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="7376a-124">����</span><span class="sxs-lookup"><span data-stu-id="7376a-124">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="06da7-124">解説</span><span class="sxs-lookup"><span data-stu-id="06da7-124">Remarks</span></span>
 
-<span data-ttu-id="7376a-125">メッセージ ストア プロバイダーは、同じオブジェクトを参照しているかどうかを確認するメッセージ ・ ストア内の指定されたエントリの 2 つのエントリ id を比較する**IMSLogon::CompareEntryIDs**メソッドを実装します。</span><span class="sxs-lookup"><span data-stu-id="7376a-125">Message store providers implement the **IMSLogon::CompareEntryIDs** method to compare two entry identifiers for a given entry in a message store to determine whether they refer to the same object.</span></span> <span data-ttu-id="7376a-126">**CompareEntryIDs**が TRUE に_lpulResult_パラメーターを設定する場合は 2 つのエントリの識別子は、同じオブジェクトを参照してください、別のオブジェクトを参照している場合、 **CompareEntryIDs**は false を指定する_lpulResult_を設定します。</span><span class="sxs-lookup"><span data-stu-id="7376a-126">If the two entry identifiers refer to the same object, **CompareEntryIDs** sets the  _lpulResult_ parameter to TRUE; if they refer to different objects, **CompareEntryIDs** sets  _lpulResult_ to FALSE.</span></span> 
+<span data-ttu-id="06da7-125">メッセージストアプロバイダーは、 **IMSLogon:: compareentryids**メソッドを実装して、メッセージストア内の指定されたエントリの2つのエントリ識別子を比較し、それらが同じオブジェクトを参照しているかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="06da7-125">Message store providers implement the **IMSLogon::CompareEntryIDs** method to compare two entry identifiers for a given entry in a message store to determine whether they refer to the same object.</span></span> <span data-ttu-id="06da7-126">2つのエントリ識別子が同じオブジェクトを参照している場合、 **compareentryids**は_lpulresult_パラメーターを TRUE に設定します。別のオブジェクトを参照している場合、 **compareentryids**は_lpulresult_を FALSE に設定します。</span><span class="sxs-lookup"><span data-stu-id="06da7-126">If the two entry identifiers refer to the same object, **CompareEntryIDs** sets the  _lpulResult_ parameter to TRUE; if they refer to different objects, **CompareEntryIDs** sets  _lpulResult_ to FALSE.</span></span> 
   
- <span data-ttu-id="7376a-127">**CompareEntryIDs**は、オブジェクトが 1 つ以上の有効なエントリ id を持つことができますので便利です。</span><span class="sxs-lookup"><span data-stu-id="7376a-127">**CompareEntryIDs** is useful because an object can have more than one valid entry identifier.</span></span> <span data-ttu-id="7376a-128">これは、たとえば、メッセージ ストア プロバイダーの新しいバージョンをインストールした後に発生します。</span><span class="sxs-lookup"><span data-stu-id="7376a-128">This can occur, for example, after a new version of a message store provider is installed.</span></span> 
+ <span data-ttu-id="06da7-127">**compareentryids**は、1つのオブジェクトが複数の有効なエントリ識別子を持つことができるので便利です。</span><span class="sxs-lookup"><span data-stu-id="06da7-127">**CompareEntryIDs** is useful because an object can have more than one valid entry identifier.</span></span> <span data-ttu-id="06da7-128">これは、たとえば、新しいバージョンのメッセージストアプロバイダーがインストールされた後に発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="06da7-128">This can occur, for example, after a new version of a message store provider is installed.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="7376a-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="7376a-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="06da7-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="06da7-129">See also</span></span>
 
 
 
-[<span data-ttu-id="7376a-130">IMSLogon : IUnknown</span><span class="sxs-lookup"><span data-stu-id="7376a-130">IMSLogon : IUnknown</span></span>](imslogoniunknown.md)
+[<span data-ttu-id="06da7-130">IMSLogon : IUnknown</span><span class="sxs-lookup"><span data-stu-id="06da7-130">IMSLogon : IUnknown</span></span>](imslogoniunknown.md)
 
