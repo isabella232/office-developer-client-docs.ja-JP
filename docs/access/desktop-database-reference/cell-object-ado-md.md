@@ -8,36 +8,36 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 7bb2a479789a8c5bd1825b6cb04e602e0b829dfb
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28725988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296550"
 ---
-# <a name="cell-object-ado-md"></a><span data-ttu-id="969ed-102">Cell オブジェクト (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="969ed-102">Cell object (ADO MD)</span></span>
+# <a name="cell-object-ado-md"></a><span data-ttu-id="bdce2-102">Cell オブジェクト (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="bdce2-102">Cell object (ADO MD)</span></span>
 
 
-<span data-ttu-id="969ed-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="969ed-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="bdce2-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="bdce2-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="969ed-104">セルセットに含まれる、座標軸の交点のデータを表します。</span><span class="sxs-lookup"><span data-stu-id="969ed-104">Represents the data at the intersection of axis coordinates contained in a cellset.</span></span>
+<span data-ttu-id="bdce2-104">セルセットに含まれる、座標軸の交点のデータを表します。</span><span class="sxs-lookup"><span data-stu-id="bdce2-104">Represents the data at the intersection of axis coordinates contained in a cellset.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="969ed-105">解説</span><span class="sxs-lookup"><span data-stu-id="969ed-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bdce2-105">注釈</span><span class="sxs-lookup"><span data-stu-id="bdce2-105">Remarks</span></span>
 
-<span data-ttu-id="969ed-106">**Cell** オブジェクトは、 [Cellset](item-property-ado-md-cellset.md) オブジェクトの [Item](cellset-object-ado-md.md) プロパティによって返されます。</span><span class="sxs-lookup"><span data-stu-id="969ed-106">A **Cell** object is returned by the [Item](item-property-ado-md-cellset.md) property of a [Cellset](cellset-object-ado-md.md) object.</span></span>
+<span data-ttu-id="bdce2-106">**Cell** オブジェクトは、[Cellset](cellset-object-ado-md.md) オブジェクトの [Item](item-property-ado-md-cellset.md) プロパティによって返されます。</span><span class="sxs-lookup"><span data-stu-id="bdce2-106">A **Cell** object is returned by the [Item](item-property-ado-md-cellset.md) property of a [Cellset](cellset-object-ado-md.md) object.</span></span>
 
-<span data-ttu-id="969ed-107">**Cell** オブジェクトのコレクションおよびプロパティを使用すると、次の操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="969ed-107">With the collections and properties of a **Cell** object, you can do the following:</span></span>
+<span data-ttu-id="bdce2-107">**Cell** オブジェクトのコレクションおよびプロパティを使用すると、次の操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="bdce2-107">With the collections and properties of a **Cell** object, you can do the following:</span></span>
 
-- <span data-ttu-id="969ed-108">**Value** プロパティを使用して、 [Cell](value-property-ado-md.md) のデータを返します。</span><span class="sxs-lookup"><span data-stu-id="969ed-108">Return the data in the **Cell** with the [Value](value-property-ado-md.md) property.</span></span>
+- <span data-ttu-id="bdce2-108">**Value** プロパティを使用して、 [Cell](value-property-ado-md.md) のデータを返します。</span><span class="sxs-lookup"><span data-stu-id="bdce2-108">Return the data in the **Cell** with the [Value](value-property-ado-md.md) property.</span></span>
 
-- <span data-ttu-id="969ed-109">**FormattedValue** プロパティを使用して、 [Value](formattedvalue-property-ado-md.md) プロパティの書式設定された表示文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="969ed-109">Return the string representing the formatted display of the **Value** property with the [FormattedValue](formattedvalue-property-ado-md.md) property.</span></span>
+- <span data-ttu-id="bdce2-109">**FormattedValue** プロパティを使用して、 [Value](formattedvalue-property-ado-md.md) プロパティの書式設定された表示文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="bdce2-109">Return the string representing the formatted display of the **Value** property with the [FormattedValue](formattedvalue-property-ado-md.md) property.</span></span>
 
-- <span data-ttu-id="969ed-110">**Ordinal** プロパティを使用して、 **Cellset** 内の [Cell](ordinal-property-ado-md-cell.md) の序数値を返します。</span><span class="sxs-lookup"><span data-stu-id="969ed-110">Return the ordinal value of the **Cell** within the **Cellset** with the [Ordinal](ordinal-property-ado-md-cell.md) property.</span></span>
+- <span data-ttu-id="bdce2-110">**Ordinal** プロパティを使用して、 **Cellset** 内の [Cell](ordinal-property-ado-md-cell.md) の序数値を返します。</span><span class="sxs-lookup"><span data-stu-id="bdce2-110">Return the ordinal value of the **Cell** within the **Cellset** with the [Ordinal](ordinal-property-ado-md-cell.md) property.</span></span>
 
-- <span data-ttu-id="969ed-111">**Positions** コレクションを使用して、 [CubeDef](cubedef-object-ado-md.md) 内の [Cell](positions-collection-ado-md.md) の位置を特定します。</span><span class="sxs-lookup"><span data-stu-id="969ed-111">Determine the position of the **Cell** within the [CubeDef](cubedef-object-ado-md.md) with the [Positions](positions-collection-ado-md.md) collection.</span></span>
+- <span data-ttu-id="bdce2-111">**Positions** コレクションを使用して、 [CubeDef](cubedef-object-ado-md.md) 内の [Cell](positions-collection-ado-md.md) の位置を特定します。</span><span class="sxs-lookup"><span data-stu-id="bdce2-111">Determine the position of the **Cell** within the [CubeDef](cubedef-object-ado-md.md) with the [Positions](positions-collection-ado-md.md) collection.</span></span>
 
-- <span data-ttu-id="969ed-112">標準の ADO **Properties** コレクションを使用して、 [Cell](properties-collection-ado.md) に関するその他の情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="969ed-112">Retrieve other information about the **Cell** with the standard ADO [Properties](properties-collection-ado.md) collection.</span></span>
+- <span data-ttu-id="bdce2-112">標準の ADO **Properties** コレクションを使用して、 [Cell](properties-collection-ado.md) に関するその他の情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="bdce2-112">Retrieve other information about the **Cell** with the standard ADO [Properties](properties-collection-ado.md) collection.</span></span>
 
-<span data-ttu-id="969ed-p101">**Properties** コレクションには、プロバイダー固有のプロパティが含まれます。次の表に、使用できるプロパティを示します。実際に使用できるプロパティの一覧は、プロバイダーの実装によって異なります。使用できるプロパティの完全な一覧については、各自のプロバイダーのドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="969ed-p101">The **Properties** collection contains provider-supplied properties. The following table lists properties that might be available. The actual property list may differ depending upon the implementation of the provider. See the documentation for your provider for a more complete list of available properties.</span></span>
+<span data-ttu-id="bdce2-p101">**Properties** コレクションには、プロバイダー固有のプロパティが含まれます。次の表に、使用できるプロパティを示します。実際に使用できるプロパティの一覧は、プロバイダーの実装によって異なります。使用できるプロパティの完全な一覧については、各自のプロバイダーのドキュメントを参照してください。</span><span class="sxs-lookup"><span data-stu-id="bdce2-p101">The **Properties** collection contains provider-supplied properties. The following table lists properties that might be available. The actual property list may differ depending upon the implementation of the provider. See the documentation for your provider for a more complete list of available properties.</span></span>
 
 <table>
 <colgroup>
@@ -46,34 +46,34 @@ ms.locfileid: "28725988"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="969ed-117">名前</span><span class="sxs-lookup"><span data-stu-id="969ed-117">Name</span></span></p></th>
-<th><p><span data-ttu-id="969ed-118">説明</span><span class="sxs-lookup"><span data-stu-id="969ed-118">Description</span></span></p></th>
+<th><p><span data-ttu-id="bdce2-117">名前</span><span class="sxs-lookup"><span data-stu-id="bdce2-117">Name</span></span></p></th>
+<th><p><span data-ttu-id="bdce2-118">説明</span><span class="sxs-lookup"><span data-stu-id="bdce2-118">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="969ed-119">BackColor</span><span class="sxs-lookup"><span data-stu-id="969ed-119">BackColor</span></span></p></td>
-<td><p><span data-ttu-id="969ed-120">セルを表示するときに使用する背景色。</span><span class="sxs-lookup"><span data-stu-id="969ed-120">Background color used when displaying the cell.</span></span></p></td>
+<td><p><span data-ttu-id="bdce2-119">BackColor</span><span class="sxs-lookup"><span data-stu-id="bdce2-119">BackColor</span></span></p></td>
+<td><p><span data-ttu-id="bdce2-120">セルを表示するときに使用する背景色。</span><span class="sxs-lookup"><span data-stu-id="bdce2-120">Background color used when displaying the cell.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="969ed-121">FontFlags</span><span class="sxs-lookup"><span data-stu-id="969ed-121">FontFlags</span></span></p></td>
-<td><p><span data-ttu-id="969ed-122">フォントの効果を指定するビットマスク。</span><span class="sxs-lookup"><span data-stu-id="969ed-122">Bitmask detailing effects on the font.</span></span></p></td>
+<td><p><span data-ttu-id="bdce2-121">fontflags</span><span class="sxs-lookup"><span data-stu-id="bdce2-121">FontFlags</span></span></p></td>
+<td><p><span data-ttu-id="bdce2-122">フォントの効果を指定するビットマスク。</span><span class="sxs-lookup"><span data-stu-id="bdce2-122">Bitmask detailing effects on the font.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="969ed-123">FontName</span><span class="sxs-lookup"><span data-stu-id="969ed-123">FontName</span></span></p></td>
-<td><p><span data-ttu-id="969ed-124">セル値を表示するために使用するフォント。</span><span class="sxs-lookup"><span data-stu-id="969ed-124">Font used to display the cell value.</span></span></p></td>
+<td><p><span data-ttu-id="bdce2-123">FontName</span><span class="sxs-lookup"><span data-stu-id="bdce2-123">FontName</span></span></p></td>
+<td><p><span data-ttu-id="bdce2-124">セル値を表示するために使用するフォント。</span><span class="sxs-lookup"><span data-stu-id="bdce2-124">Font used to display the cell value.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="969ed-125">フォント サイズ</span><span class="sxs-lookup"><span data-stu-id="969ed-125">FontSize</span></span></p></td>
-<td><p><span data-ttu-id="969ed-126">セル値を表示するために使用するフォントのサイズ。</span><span class="sxs-lookup"><span data-stu-id="969ed-126">Font size used to display the cell value.</span></span></p></td>
+<td><p><span data-ttu-id="bdce2-125">FontSize</span><span class="sxs-lookup"><span data-stu-id="bdce2-125">FontSize</span></span></p></td>
+<td><p><span data-ttu-id="bdce2-126">セル値を表示するために使用するフォントのサイズ。</span><span class="sxs-lookup"><span data-stu-id="bdce2-126">Font size used to display the cell value.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="969ed-127">ForeColor</span><span class="sxs-lookup"><span data-stu-id="969ed-127">ForeColor</span></span></p></td>
-<td><p><span data-ttu-id="969ed-128">セルを表示するときに使用する前景色。</span><span class="sxs-lookup"><span data-stu-id="969ed-128">Foreground color used when displaying the cell.</span></span></p></td>
+<td><p><span data-ttu-id="bdce2-127">ForeColor</span><span class="sxs-lookup"><span data-stu-id="bdce2-127">ForeColor</span></span></p></td>
+<td><p><span data-ttu-id="bdce2-128">セルを表示するときに使用する前景色。</span><span class="sxs-lookup"><span data-stu-id="bdce2-128">Foreground color used when displaying the cell.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="969ed-129">FormatString</span><span class="sxs-lookup"><span data-stu-id="969ed-129">FormatString</span></span></p></td>
-<td><p><span data-ttu-id="969ed-130">書式設定された文字列の値。</span><span class="sxs-lookup"><span data-stu-id="969ed-130">Value in a formatted string.</span></span></p></td>
+<td><p><span data-ttu-id="bdce2-129">FormatString</span><span class="sxs-lookup"><span data-stu-id="bdce2-129">FormatString</span></span></p></td>
+<td><p><span data-ttu-id="bdce2-130">書式設定された文字列の値。</span><span class="sxs-lookup"><span data-stu-id="bdce2-130">Value in a formatted string.</span></span></p></td>
 </tr>
 </tbody>
 </table>

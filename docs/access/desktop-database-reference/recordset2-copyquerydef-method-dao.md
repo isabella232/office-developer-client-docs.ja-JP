@@ -1,5 +1,5 @@
 ---
-title: Recordset2.CopyQueryDef メソッド (DAO)
+title: Recordset2 の copyquerydef メソッド (DAO)
 TOCTitle: CopyQueryDef Method
 ms:assetid: 36689ac0-f8a6-1f3e-4170-799141373777
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192474(v=office.15)
@@ -12,40 +12,40 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 8a643dae0b67cf4f2a2a0148619d9a8f4df7e6f0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307365"
 ---
-# <a name="recordset2copyquerydef-method-dao"></a><span data-ttu-id="7fe18-102">Recordset2.CopyQueryDef メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="7fe18-102">Recordset2.CopyQueryDef method (DAO)</span></span>
+# <a name="recordset2copyquerydef-method-dao"></a><span data-ttu-id="141f1-102">Recordset2 の copyquerydef メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="141f1-102">Recordset2.CopyQueryDef method (DAO)</span></span>
 
 
-<span data-ttu-id="7fe18-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="7fe18-103">**Applies to**: Access 2013, Office 2013</span></span> 
+<span data-ttu-id="141f1-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="141f1-103">**Applies to**: Access 2013, Office 2013</span></span> 
 
-<span data-ttu-id="7fe18-104">レコード セットのプレース ホルダー (Microsoft Access ワークスペースのみ) で表される**[Recordset](recordset-object-dao.md)** オブジェクトを作成するのには**クエリ定義**のコピーである**[QueryDef](querydef-object-dao.md)** オブジェクトの使用を返します。</span><span class="sxs-lookup"><span data-stu-id="7fe18-104">Returns a **[QueryDef](querydef-object-dao.md)** object that is a copy of the **QueryDef** used to create the **[Recordset](recordset-object-dao.md)** object represented by the recordset placeholder (Microsoft Access workspaces only).</span></span> <span data-ttu-id="7fe18-105">.</span><span class="sxs-lookup"><span data-stu-id="7fe18-105"></span></span>
+<span data-ttu-id="141f1-104">recordset の**[](querydef-object-dao.md)** プレースホルダーで表される**[recordset](recordset-object-dao.md)** オブジェクトの作成\*\*\*\* に使用される querydef オブジェクトを返します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="141f1-104">Returns a **[QueryDef](querydef-object-dao.md)** object that is a copy of the **QueryDef** used to create the **[Recordset](recordset-object-dao.md)** object represented by the recordset placeholder (Microsoft Access workspaces only).</span></span> <span data-ttu-id="141f1-105">.</span><span class="sxs-lookup"><span data-stu-id="141f1-105"></span></span>
 
-## <a name="syntax"></a><span data-ttu-id="7fe18-106">構文</span><span class="sxs-lookup"><span data-stu-id="7fe18-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="141f1-106">構文</span><span class="sxs-lookup"><span data-stu-id="141f1-106">Syntax</span></span>
 
-<span data-ttu-id="7fe18-107">*式*です。CopyQueryDef</span><span class="sxs-lookup"><span data-stu-id="7fe18-107">*expression* .CopyQueryDef</span></span>
+<span data-ttu-id="141f1-107">*式*。CopyQueryDef</span><span class="sxs-lookup"><span data-stu-id="141f1-107">*expression* .CopyQueryDef</span></span>
 
-<span data-ttu-id="7fe18-108">\*式\***Recordset2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="7fe18-108">*expression* A variable that represents a **Recordset2** object.</span></span>
+<span data-ttu-id="141f1-108">\*式\***Recordset2**オブジェクトを表す変数を取得します。</span><span class="sxs-lookup"><span data-stu-id="141f1-108">*expression* A variable that represents a **Recordset2** object.</span></span>
 
-## <a name="return-value"></a><span data-ttu-id="7fe18-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="7fe18-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="141f1-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="141f1-109">Return value</span></span>
 
-<span data-ttu-id="7fe18-110">QueryDef</span><span class="sxs-lookup"><span data-stu-id="7fe18-110">QueryDef</span></span>
+<span data-ttu-id="141f1-110">QueryDef</span><span class="sxs-lookup"><span data-stu-id="141f1-110">QueryDef</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="7fe18-111">注釈</span><span class="sxs-lookup"><span data-stu-id="7fe18-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="141f1-111">注釈</span><span class="sxs-lookup"><span data-stu-id="141f1-111">Remarks</span></span>
 
-<span data-ttu-id="7fe18-112">**CopyQueryDef** メソッドを使用すると、 **Recordset** を作成するために使用された **QueryDef** のコピーである、新しい **QueryDef** を作成できます。</span><span class="sxs-lookup"><span data-stu-id="7fe18-112">You can use the **CopyQueryDef** method to create a new **QueryDef** that is a duplicate of the **QueryDef** used to create the **Recordset**.</span></span>
+<span data-ttu-id="141f1-112">**CopyQueryDef** メソッドを使用すると、 **Recordset** の作成に使用された **QueryDef** の複製である新しい **QueryDef** を作成できます。</span><span class="sxs-lookup"><span data-stu-id="141f1-112">You can use the **CopyQueryDef** method to create a new **QueryDef** that is a duplicate of the **QueryDef** used to create the **Recordset**.</span></span>
 
-<span data-ttu-id="7fe18-p102">この **Recordset** の作成に **QueryDef** を使用していない場合はエラーが発生します。 **CopyQueryDef** メソッドを使用する前に **OpenRecordset** メソッドで **Recordset** を開いておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="7fe18-p102">If a **QueryDef** wasn't used to create this **Recordset**, an error occurs. You must first open a **Recordset** with the **OpenRecordset** method before using the **CopyQueryDef** method.</span></span>
+<span data-ttu-id="141f1-p102">**QueryDef** を使用してこの **Recordset** が作成されていない場合は、エラーが発生します。 **CopyQueryDef** メソッドを使用する前に、まず **OpenRecordset** メソッドを使用して **Recordset** を開く必要があります。</span><span class="sxs-lookup"><span data-stu-id="141f1-p102">If a **QueryDef** wasn't used to create this **Recordset**, an error occurs. You must first open a **Recordset** with the **OpenRecordset** method before using the **CopyQueryDef** method.</span></span>
 
-<span data-ttu-id="7fe18-115">このメソッドは、 **QueryDef** から **Recordset** オブジェクトを作成し、関数に **Recordset** を渡し、なんらかの方法でクエリを変更するなど、関数がクエリと同等の SQL を再作成する必要がある場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="7fe18-115">This method is useful when you create a **Recordset** object from a **QueryDef**, and pass the **Recordset** to a function, and the function must re-create the SQL equivalent of the query, for example, to modify it in some way.</span></span>
+<span data-ttu-id="141f1-115">このメソッドは、 **Recordset** オブジェクトを **QueryDef** から作成し、その **Recordset** を関数に渡し、その関数でレコードセットを変更するクエリなどを表す SQL を再作成する必要がある場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="141f1-115">This method is useful when you create a **Recordset** object from a **QueryDef**, and pass the **Recordset** to a function, and the function must re-create the SQL equivalent of the query, for example, to modify it in some way.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7fe18-116">例</span><span class="sxs-lookup"><span data-stu-id="7fe18-116">Example</span></span>
+## <a name="example"></a><span data-ttu-id="141f1-116">例</span><span class="sxs-lookup"><span data-stu-id="141f1-116">Example</span></span>
 
-<span data-ttu-id="7fe18-p103">この例では、 **CopyQueryDef** メソッドを使用して既存の **Recordset** から **QueryDef** のコピーを作成し、SQL プロパティに句を追加して QueryDef のコピーを変更します。永続的な **QueryDef** を作成するときは、SQL プロパティにスペース、セミコロン、または改行を追加できますが、この余分な文字は、SQL ステートメントに新しい句を追加する前に除去しておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="7fe18-p103">This example uses the **CopyQueryDef** method to create a copy of a **QueryDef** from an existing **Recordset** and modifies the copy by adding a clause to the SQL property. When you create a permanent **QueryDef**, spaces, semicolons, or linefeeds may be added to the SQL property; these extra characters must be stripped before any new clauses can be attached to the SQL statement.</span></span>
+<span data-ttu-id="141f1-p103">次の例では、 **CopyQueryDef** メソッドを使用して既存の **Recordset** から **QueryDef** のコピーを作成し、SQL プロパティに句を追加することによってそのコピーを変更します。持続的な **QueryDef** の作成時には、SQL プロパティにスペース、セミコロン、またはラインフィードを追加できますが、SQL ステートメントに新しい句を追加するには、これらの余分な文字を削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="141f1-p103">This example uses the **CopyQueryDef** method to create a copy of a **QueryDef** from an existing **Recordset** and modifies the copy by adding a clause to the SQL property. When you create a permanent **QueryDef**, spaces, semicolons, or linefeeds may be added to the SQL property; these extra characters must be stripped before any new clauses can be attached to the SQL statement.</span></span>
 
 ```vb
     Function CopyQueryNew(rstTemp As Recordset, _ 
@@ -72,7 +72,7 @@ ms.locfileid: "28703490"
 
 <br/>
 
-<span data-ttu-id="7fe18-119">次に、CopyQueryNew() の使用例を示します。</span><span class="sxs-lookup"><span data-stu-id="7fe18-119">This example shows a possible use of CopyQueryNew().</span></span>
+<span data-ttu-id="141f1-119">次の例では、CopyQueryNew() の使用例を示します。</span><span class="sxs-lookup"><span data-stu-id="141f1-119">This example shows a possible use of CopyQueryNew().</span></span>
 
 ```vb
 Sub CopyQueryDefX() 

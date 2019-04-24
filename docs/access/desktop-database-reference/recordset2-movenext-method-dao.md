@@ -1,5 +1,5 @@
 ---
-title: Recordset2.MoveNext メソッド (DAO)
+title: Recordset2 メソッド (DAO)
 TOCTitle: MoveNext Method
 ms:assetid: 0eeb917e-f76a-03ec-9e1e-aa8d501db031
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845265(v=office.15)
@@ -8,38 +8,38 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6f500578182aac74b608117ee4105a6b657057df
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28719912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309556"
 ---
-# <a name="recordset2movenext-method-dao"></a><span data-ttu-id="8fd61-102">Recordset2.MoveNext メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="8fd61-102">Recordset2.MoveNext method (DAO)</span></span>
+# <a name="recordset2movenext-method-dao"></a><span data-ttu-id="3ef82-102">Recordset2 メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="3ef82-102">Recordset2.MoveNext method (DAO)</span></span>
 
 
-<span data-ttu-id="8fd61-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="8fd61-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="3ef82-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="3ef82-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="8fd61-104">指定された **Recordset** オブジェクトの次のレコードに移動し、そのレコードをカレント レコードにします。</span><span class="sxs-lookup"><span data-stu-id="8fd61-104">Moves to the next record in a specified **Recordset** object and make that record the current record.</span></span>
+<span data-ttu-id="3ef82-104">指定された **Recordset** オブジェクトの次のレコードに移動し、そのレコードをカレント レコードにします。</span><span class="sxs-lookup"><span data-stu-id="3ef82-104">Moves to the next record in a specified **Recordset** object and make that record the current record.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="8fd61-105">構文</span><span class="sxs-lookup"><span data-stu-id="8fd61-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="3ef82-105">構文</span><span class="sxs-lookup"><span data-stu-id="3ef82-105">Syntax</span></span>
 
-<span data-ttu-id="8fd61-106">*式*です。MoveNext</span><span class="sxs-lookup"><span data-stu-id="8fd61-106">*expression* .MoveNext</span></span>
+<span data-ttu-id="3ef82-106">*式*。MoveNext</span><span class="sxs-lookup"><span data-stu-id="3ef82-106">*expression* .MoveNext</span></span>
 
-<span data-ttu-id="8fd61-107">\*式\***Recordset2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="8fd61-107">*expression* A variable that represents a **Recordset2** object.</span></span>
+<span data-ttu-id="3ef82-107">\*式\***Recordset2**オブジェクトを表す変数を取得します。</span><span class="sxs-lookup"><span data-stu-id="3ef82-107">*expression* A variable that represents a **Recordset2** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="8fd61-108">注釈</span><span class="sxs-lookup"><span data-stu-id="8fd61-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3ef82-108">注釈</span><span class="sxs-lookup"><span data-stu-id="3ef82-108">Remarks</span></span>
 
-<span data-ttu-id="8fd61-109">**Move** メソッドは、条件を適用せずにレコード間を移動するために使用します。</span><span class="sxs-lookup"><span data-stu-id="8fd61-109">Use the **Move** methods to move from record to record without applying a condition.</span></span>
+<span data-ttu-id="3ef82-109">**Move** メソッドは、条件を適用せずにレコード間を移動するために使用します。</span><span class="sxs-lookup"><span data-stu-id="3ef82-109">Use the **Move** methods to move from record to record without applying a condition.</span></span>
 
-<span data-ttu-id="8fd61-p101">カレント レコードを編集した場合は、他のレコードに移動する前に、必ず **Update** メソッドを使用して変更を保存してください。更新を実行せずに他のレコードに移動すると、変更は警告なしで取り消されます。</span><span class="sxs-lookup"><span data-stu-id="8fd61-p101">If you edit the current record, be sure you use the **Update** method to save the changes before you move to another record. If you move to another record without updating, your changes are lost without warning.</span></span>
+<span data-ttu-id="3ef82-p101">カレント レコードを編集した場合は、他のレコードに移動する前に、必ず **Update** メソッドを使用して変更を保存してください。更新を実行せずに他のレコードに移動すると、変更は警告なしで取り消されます。</span><span class="sxs-lookup"><span data-stu-id="3ef82-p101">If you edit the current record, be sure you use the **Update** method to save the changes before you move to another record. If you move to another record without updating, your changes are lost without warning.</span></span>
 
-<span data-ttu-id="8fd61-p102">**Recordset** を開いた時点では、最初のレコードがカレント レコードで、 **BOF** プロパティは **False** です。 **Recordset** にレコードが含まれていない場合、 **BOF** プロパティは **True** で、カレント レコードはありません。</span><span class="sxs-lookup"><span data-stu-id="8fd61-p102">When you open a **Recordset**, the first record is current and the **BOF** property is **False**. If the **Recordset** contains no records, the **BOF** property is **True**, and there is no current record.</span></span>
+<span data-ttu-id="3ef82-p102">**Recordset** を開いた時点では、最初のレコードがカレント レコードで、 **BOF** プロパティは **False** です。 **Recordset** にレコードが含まれていない場合は、 **BOF** プロパティは **True** で、カレント レコードはありません。</span><span class="sxs-lookup"><span data-stu-id="3ef82-p102">When you open a **Recordset**, the first record is current and the **BOF** property is **False**. If the **Recordset** contains no records, the **BOF** property is **True**, and there is no current record.</span></span>
 
-<span data-ttu-id="8fd61-p103">最後のレコードがカレント レコードであるときに **MoveNext** を使用すると、 **EOF** プロパティは **True** となり、カレント レコードはなくなります。 **MoveNext** を再度使用すると、エラーが発生し、 **EOF** は **True** のままとなります。</span><span class="sxs-lookup"><span data-stu-id="8fd61-p103">If you use **MoveNext** when the last record is current, the **EOF** property is **True**, and there is no current record. If you use **MoveNext** again, an error occurs, and **EOF** remains **True**.</span></span>
+<span data-ttu-id="3ef82-p103">最後のレコードがカレント レコードであるときに **MoveNext** を使用すると、 **EOF** プロパティが **True** となり、カレント レコードがなくなります。 **MoveNext** を再度使用すると、エラーが発生し、 **EOF** プロパティは **True** のままです。</span><span class="sxs-lookup"><span data-stu-id="3ef82-p103">If you use **MoveNext** when the last record is current, the **EOF** property is **True**, and there is no current record. If you use **MoveNext** again, an error occurs, and **EOF** remains **True**.</span></span>
 
-<span data-ttu-id="8fd61-116">レコード セットは、テーブル タイプ**のレコード セット**(Microsoft Access ワークスペースのみ) を参照している場合の移動は現在のインデックスに従います。</span><span class="sxs-lookup"><span data-stu-id="8fd61-116">If recordset refers to a table-type **Recordset** (Microsoft Access workspaces only), movement follows the current index.</span></span> <span data-ttu-id="8fd61-117">現在のインデックスを設定するには、 **Index** プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="8fd61-117">You can set the current index by using the **Index** property.</span></span> <span data-ttu-id="8fd61-118">現在のインデックスを設定しない場合、返されるレコードの順序は未定義となります。</span><span class="sxs-lookup"><span data-stu-id="8fd61-118">If you don't set the current index, the order of returned records is undefined.</span></span>
+<span data-ttu-id="3ef82-116">recordset がテーブルタイプの**recordset**を参照している場合 (Microsoft Access ワークスペースのみ)、移動は現在のインデックスに従います。</span><span class="sxs-lookup"><span data-stu-id="3ef82-116">If recordset refers to a table-type **Recordset** (Microsoft Access workspaces only), movement follows the current index.</span></span> <span data-ttu-id="3ef82-117">現在のインデックスを設定するには、 **Index** プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="3ef82-117">You can set the current index by using the **Index** property.</span></span> <span data-ttu-id="3ef82-118">現在のインデックスを設定しない場合、返されるレコードの順序は未定義となります。</span><span class="sxs-lookup"><span data-stu-id="3ef82-118">If you don't set the current index, the order of returned records is undefined.</span></span>
 
-<span data-ttu-id="8fd61-119">前方のみタイプの**Recordset**オブジェクトでは、 **MoveFirst**、 **MoveLast**、および**MovePrevious**メソッドを使うことはできません。</span><span class="sxs-lookup"><span data-stu-id="8fd61-119">You can't use the **MoveFirst**, **MoveLast**, and **MovePrevious** methods on a forward–only–type **Recordset** object.</span></span>
+<span data-ttu-id="3ef82-119">**MoveFirst**、**MoveLast**、および **MovePrevious** の各メソッドは、前方スクロール タイプの **Recordset** オブジェクトでは使用できません。</span><span class="sxs-lookup"><span data-stu-id="3ef82-119">You can't use the **MoveFirst**, **MoveLast**, and **MovePrevious** methods on a forward–only–type **Recordset** object.</span></span>
 
-<span data-ttu-id="8fd61-120">**Recordset** オブジェクト内のカレント レコードを、指定されたレコード数だけ前方または後方に移動するには、 **Move** メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="8fd61-120">To move the position of the current record in a **Recordset** object a specific number of records forward or backward, use the **Move** method.</span></span>
+<span data-ttu-id="3ef82-120">**Recordset** オブジェクト内のカレント レコードを、指定されたレコード数だけ前方または後方に移動するには、**Move** メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="3ef82-120">To move the position of the current record in a **Recordset** object a specific number of records forward or backward, use the **Move** method.</span></span>
 

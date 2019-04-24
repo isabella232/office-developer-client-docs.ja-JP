@@ -1,5 +1,5 @@
 ---
-title: BeginTrans、CommitTrans、RollbackTrans メソッドの使用例 (vj++)
+title: BeginTrans、CommitTrans、RollbackTrans メソッドの使用例 (VJ + +)
 TOCTitle: BeginTrans, CommitTrans, and RollbackTrans methods example (VJ++)
 ms:assetid: 8c1ca470-792e-4792-8913-fa7d3b46218f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249616(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 976de07f293e4160ac8946205504498931cbdd07
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296844"
 ---
-# <a name="begintrans-committrans-and-rollbacktrans-methods-example-vj"></a><span data-ttu-id="cee77-102">BeginTrans メソッド、CommitTrans メソッド、RollbackTrans メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="cee77-102">BeginTrans, CommitTrans, and RollbackTrans methods example (VJ++)</span></span>
+# <a name="begintrans-committrans-and-rollbacktrans-methods-example-vj"></a><span data-ttu-id="c3155-102">BeginTrans メソッド、CommitTrans メソッド、RollbackTrans メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="c3155-102">BeginTrans, CommitTrans, and RollbackTrans methods example (VJ++)</span></span>
 
 
-<span data-ttu-id="cee77-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="cee77-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="c3155-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="c3155-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="cee77-p101">この例では、データベースの ***Titles*** テーブル内のすべての心理学書の書籍種別を変更します。[BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドで、***Titles*** テーブルに対するすべての変更を分離するトランザクションを開始した後、[CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドで変更を保存します。[RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドを使用すると、[Update](update-method-ado.md) メソッドで保存した変更を変更前の状態に戻すことができます。</span><span class="sxs-lookup"><span data-stu-id="cee77-p101">This example changes the book type of all psychology books in the ***Titles*** table of the database. After the [BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) method starts a transaction that isolates all the changes made to the ***Titles*** table, the [CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) method saves the changes. You can use the [Rollback](begintrans-committrans-and-rollbacktrans-methods-ado.md) method to undo changes that you saved using the [Update](update-method-ado.md) method.</span></span>
+<span data-ttu-id="c3155-104">この例では、データベースの ***Titles*** テーブル内のすべての心理学書の書籍種別を変更します。</span><span class="sxs-lookup"><span data-stu-id="c3155-104">This example changes the book type of all psychology books in the ***Titles*** table of the database.</span></span> <span data-ttu-id="c3155-105">[BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドで、***Titles*** テーブルに対するすべての変更を分離するトランザクションを開始した後、[CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドで変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="c3155-105">After the [BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) method starts a transaction that isolates all the changes made to the ***Titles*** table, the [CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) method saves the changes.</span></span> <span data-ttu-id="c3155-106">[RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドを使用すると、 [Update](update-method-ado.md) メソッドで保存した変更を変更前の状態に戻すことができます。</span><span class="sxs-lookup"><span data-stu-id="c3155-106">You can use the [Rollback](begintrans-committrans-and-rollbacktrans-methods-ado.md) method to undo changes that you saved using the [Update](update-method-ado.md) method.</span></span>
 
 ```java 
  

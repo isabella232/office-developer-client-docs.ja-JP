@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 18275ed4f62e6bad4d6addd796a9f421df0904b4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308772"
 ---
-# <a name="section-iv-ado-extensions-for-data-definition-language-and-security-adox"></a><span data-ttu-id="739a5-102">セクション IV: データ定義言語およびセキュリティの ADO 拡張機能 (ADOX)</span><span class="sxs-lookup"><span data-stu-id="739a5-102">Section IV: ADO extensions for data definition language and security (ADOX)</span></span>
+# <a name="section-iv-ado-extensions-for-data-definition-language-and-security-adox"></a><span data-ttu-id="7b047-102">セクション IV: データ定義言語およびセキュリティの ADO 拡張機能 (ADOX)</span><span class="sxs-lookup"><span data-stu-id="7b047-102">Section IV: ADO extensions for data definition language and security (ADOX)</span></span>
 
-<span data-ttu-id="739a5-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="739a5-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="7b047-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="7b047-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="739a5-104">このセクションには、次の章が含まれます。</span><span class="sxs-lookup"><span data-stu-id="739a5-104">This section contains the following chapter:</span></span>
+<span data-ttu-id="7b047-104">このセクションには、次の章が含まれます。</span><span class="sxs-lookup"><span data-stu-id="7b047-104">This section contains the following chapter:</span></span>
 
-- [<span data-ttu-id="739a5-105">第 15 章: ADOX の基礎</span><span class="sxs-lookup"><span data-stu-id="739a5-105">Chapter 15: ADOX fundamentals</span></span>](chapter-15-adox-fundamentals.md)
+- [<span data-ttu-id="7b047-105">第 15 章: ADOX の基本事項</span><span class="sxs-lookup"><span data-stu-id="7b047-105">Chapter 15: ADOX fundamentals</span></span>](chapter-15-adox-fundamentals.md)
 

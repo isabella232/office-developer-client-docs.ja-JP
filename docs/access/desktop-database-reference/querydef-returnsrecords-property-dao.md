@@ -1,5 +1,5 @@
 ---
-title: QueryDef.ReturnsRecords プロパティ (DAO)
+title: ReturnsRecords プロパティ (DAO)
 TOCTitle: ReturnsRecords Property
 ms:assetid: 3d1e538b-4d60-588f-4a20-89f1e2b434e6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192701(v=office.15)
@@ -12,34 +12,34 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 7d2202aa506750cd0a0d2a84eea5c507c3bb1147
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303340"
 ---
-# <a name="querydefreturnsrecords-property-dao"></a><span data-ttu-id="07a5a-102">QueryDef.ReturnsRecords プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="07a5a-102">QueryDef.ReturnsRecords property (DAO)</span></span>
+# <a name="querydefreturnsrecords-property-dao"></a><span data-ttu-id="6aaff-102">ReturnsRecords プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="6aaff-102">QueryDef.ReturnsRecords property (DAO)</span></span>
 
-<span data-ttu-id="07a5a-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="07a5a-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="6aaff-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="6aaff-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="07a5a-104">外部データベースに対する SQL パススルー クエリでレコードを返すかどうかを示す値を設定または取得します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="07a5a-104">Sets or returns a value that indicates whether an SQL pass-through query to an external database returns records (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="6aaff-104">外部データベースに対する SQL パススルー クエリでレコードを返すかどうかを示す値を設定または取得します (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="6aaff-104">Sets or returns a value that indicates whether an SQL pass-through query to an external database returns records (Microsoft Access workspaces only).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="07a5a-105">構文</span><span class="sxs-lookup"><span data-stu-id="07a5a-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="6aaff-105">構文</span><span class="sxs-lookup"><span data-stu-id="6aaff-105">Syntax</span></span>
 
-<span data-ttu-id="07a5a-106">*式*です。ReturnsRecords</span><span class="sxs-lookup"><span data-stu-id="07a5a-106">*expression* .ReturnsRecords</span></span>
+<span data-ttu-id="6aaff-106">*式*。ReturnsRecords</span><span class="sxs-lookup"><span data-stu-id="6aaff-106">*expression* .ReturnsRecords</span></span>
 
-<span data-ttu-id="07a5a-107">\*式\***クエリ定義**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="07a5a-107">*expression* A variable that represents a **QueryDef** object.</span></span>
+<span data-ttu-id="6aaff-107">\*式\***QueryDef**オブジェクトを表す変数を取得します。</span><span class="sxs-lookup"><span data-stu-id="6aaff-107">*expression* A variable that represents a **QueryDef** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="07a5a-108">注釈</span><span class="sxs-lookup"><span data-stu-id="07a5a-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6aaff-108">注釈</span><span class="sxs-lookup"><span data-stu-id="6aaff-108">Remarks</span></span>
 
-<span data-ttu-id="07a5a-p101">外部データベースに対するすべての SQL パススルー クエリで、レコードが返されるわけではありません。たとえば、SQL UPDATE ステートメントでは、レコードを返さずにレコードを更新しますが、SQL SELECT ステートメントではレコードを返します。クエリでレコードが返される場合、 **ReturnsRecords** プロパティは **True** に設定されます。クエリでレコードが返されない場合、 **ReturnsRecords** プロパティは **False** に設定されます。</span><span class="sxs-lookup"><span data-stu-id="07a5a-p101">Not all SQL pass-through queries to external databases return records. For example, an SQL UPDATE statement updates records without returning records, while an SQL SELECT statement does return records. If the query returns records, set the **ReturnsRecords** property to **True**; if the query doesn't return records, set the **ReturnsRecords** property to **False**.</span></span>
+<span data-ttu-id="6aaff-p101">外部データベースに対するすべての SQL パススルー クエリで、レコードが返されるわけではありません。たとえば、SQL UPDATE ステートメントでは、レコードを返さずにレコードを更新しますが、SQL SELECT ステートメントではレコードを返します。クエリでレコードが返される場合、 **ReturnsRecords** プロパティは **True** に設定されます。クエリでレコードが返されない場合、 **ReturnsRecords** プロパティは **False** に設定されます。</span><span class="sxs-lookup"><span data-stu-id="6aaff-p101">Not all SQL pass-through queries to external databases return records. For example, an SQL UPDATE statement updates records without returning records, while an SQL SELECT statement does return records. If the query returns records, set the **ReturnsRecords** property to **True**; if the query doesn't return records, set the **ReturnsRecords** property to **False**.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="07a5a-112">[!メモ] [ReturnsRecords](querydef-connect-property-dao.md) プロパティを設定する前に、 \*\*\*\*Connect\*\*\*\* プロパティを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="07a5a-112">You must set the **[Connect](querydef-connect-property-dao.md)** property before you set the **ReturnsRecords** property.</span></span>
+> <span data-ttu-id="6aaff-112">**ReturnsRecords**プロパティを設定する前に、 **[Connect](querydef-connect-property-dao.md)** プロパティを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6aaff-112">You must set the **[Connect](querydef-connect-property-dao.md)** property before you set the **ReturnsRecords** property.</span></span>
 
-## <a name="example"></a><span data-ttu-id="07a5a-113">例</span><span class="sxs-lookup"><span data-stu-id="07a5a-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6aaff-113">例</span><span class="sxs-lookup"><span data-stu-id="6aaff-113">Example</span></span>
 
-<span data-ttu-id="07a5a-p102">この例では、 **Connect** プロパティと **ReturnsRecords** プロパティを使用して、Microsoft SQL Server データベースから本年度の現在までの売り上げ金額に基づいて上位 5 冊の本の題名を選択します。売り上げ金額がまったく同じ場合、クエリの結果を表示するリストのサイズを拡張して、その理由を説明するメッセージを印刷します。</span><span class="sxs-lookup"><span data-stu-id="07a5a-p102">This example uses the **Connect** and **ReturnsRecords** properties to select the top five book titles from a Microsoft SQL Server database based on year-to-date sales amounts. In the event of an exact match in sales amounts, the example increases the size of the list displaying the results of the query and prints a message explaining why this occurred.</span></span>
+<span data-ttu-id="6aaff-p102">この例では、 **Connect** プロパティと **ReturnsRecords** プロパティを使用して、Microsoft SQL Server データベースから本年度の現在までの売り上げ金額に基づいて上位 5 冊の本の題名を選択します。売り上げ金額がまったく同じ場合、クエリの結果を表示するリストのサイズを拡張して、その理由を説明するメッセージを印刷します。</span><span class="sxs-lookup"><span data-stu-id="6aaff-p102">This example uses the **Connect** and **ReturnsRecords** properties to select the top five book titles from a Microsoft SQL Server database based on year-to-date sales amounts. In the event of an exact match in sales amounts, the example increases the size of the list displaying the results of the query and prints a message explaining why this occurred.</span></span>
 
 ```vb 
 Sub ClientServerX1() 
@@ -105,7 +105,7 @@ Sub ClientServerX1()
 
 <br/>
 
-<span data-ttu-id="07a5a-116">この例では、 **ReturnsRecords** プロパティとカスタムの **LogMessages** プロパティを使用して、データおよびリモート サーバーで作成されたメッセージを返すパススルー クエリを作成します。</span><span class="sxs-lookup"><span data-stu-id="07a5a-116">This example uses the **ReturnsRecords** property and the custom **LogMessages** property to create a pass-through query that will return data and any messages generated by the remote server.</span></span>
+<span data-ttu-id="6aaff-116">この例では、 **ReturnsRecords** プロパティとカスタムの **LogMessages** プロパティを使用して、データおよびリモート サーバーで作成されたメッセージを返すパススルー クエリを作成します。</span><span class="sxs-lookup"><span data-stu-id="6aaff-116">This example uses the **ReturnsRecords** property and the custom **LogMessages** property to create a pass-through query that will return data and any messages generated by the remote server.</span></span>
 
 ```vb 
 Sub LogMessagesX() 

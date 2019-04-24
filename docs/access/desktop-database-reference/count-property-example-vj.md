@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6b875e2b5dff6f3b6927e73105b6732dfaa6fd0b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295444"
 ---
-# <a name="count-property-example-vj"></a><span data-ttu-id="915ed-102">Count プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="915ed-102">Count property example (VJ++)</span></span>
+# <a name="count-property-example-vj"></a><span data-ttu-id="418d1-102">Count プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="418d1-102">Count property example (VJ++)</span></span>
 
 
-<span data-ttu-id="915ed-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="915ed-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="418d1-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="418d1-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="915ed-104">この例では、***従業員***データベース内の 2 つのコレクションの[Count](count-property-ado.md)プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="915ed-104">This example demonstrates the [Count](count-property-ado.md) property with two collections in the ***Employees*** database.</span></span> <span data-ttu-id="915ed-105">このプロパティで、各コレクション内のオブジェクト数を取得し、これらのコレクションを列挙するループに上限を設定します。</span><span class="sxs-lookup"><span data-stu-id="915ed-105">The property obtains the number of objects in each collection, and sets the upper limit for loops that enumerate these collections.</span></span> <span data-ttu-id="915ed-106">**Count**プロパティを使用せずにこれらのコレクションを列挙するために別の方法は、ステートメントを使用することです。</span><span class="sxs-lookup"><span data-stu-id="915ed-106">Another way to enumerate these collections without using the **Count** property would be to use statements.</span></span>
+<span data-ttu-id="418d1-104">この例では、***Employees*** データベース内の 2 つのコレクションで [Count](count-property-ado.md) プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="418d1-104">This example demonstrates the [Count](count-property-ado.md) property with two collections in the ***Employees*** database.</span></span> <span data-ttu-id="418d1-105">このプロパティで、各コレクション内のオブジェクト数を取得し、これらのコレクションを列挙するループに上限を設定します。</span><span class="sxs-lookup"><span data-stu-id="418d1-105">The property obtains the number of objects in each collection, and sets the upper limit for loops that enumerate these collections.</span></span> <span data-ttu-id="418d1-106">**Count**プロパティを使用せずにこれらのコレクションを列挙する別の方法は、ステートメントを使用することです。</span><span class="sxs-lookup"><span data-stu-id="418d1-106">Another way to enumerate these collections without using the **Count** property would be to use statements.</span></span>
 
 ```java 
  

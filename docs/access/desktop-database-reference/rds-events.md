@@ -1,5 +1,5 @@
 ---
-title: RDS のイベント (アクセス デスクトップ データベース参照)
+title: RDS イベント (Access デスクトップデータベースリファレンス)
 TOCTitle: RDS events
 ms:assetid: cf125916-d50d-9fb4-fecc-95675129d8c1
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250028(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 85d934d765133134e8ab6dcfa7ec6206f2de7dc3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301030"
 ---
-# <a name="rds-events"></a><span data-ttu-id="36837-102">RDS のイベント</span><span class="sxs-lookup"><span data-stu-id="36837-102">RDS events</span></span>
+# <a name="rds-events"></a><span data-ttu-id="49e9d-102">RDS のイベント</span><span class="sxs-lookup"><span data-stu-id="49e9d-102">RDS events</span></span>
 
-<span data-ttu-id="36837-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="36837-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="49e9d-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="49e9d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 <br/>
 
@@ -27,16 +27,16 @@ ms.locfileid: "28711204"
 </colgroup>
 <tbody>
 <tr class="even">
-<th><span data-ttu-id="36837-104">イベント</span><span class="sxs-lookup"><span data-stu-id="36837-104">Event</span></span></th>
-<th><span data-ttu-id="36837-105">説明</span><span class="sxs-lookup"><span data-stu-id="36837-105">Description</span></span></th>
+<th><span data-ttu-id="49e9d-104">イベント</span><span class="sxs-lookup"><span data-stu-id="49e9d-104">Event</span></span></th>
+<th><span data-ttu-id="49e9d-105">説明</span><span class="sxs-lookup"><span data-stu-id="49e9d-105">Description</span></span></th>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="36837-106"><a href="onerror-event-rds.md">onError</a></span><span class="sxs-lookup"><span data-stu-id="36837-106"><a href="onerror-event-rds.md">onError</a></span></span></p></td>
-<td><p><span data-ttu-id="36837-107">処理中にエラーが発生するたびに呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="36837-107">Called whenever an error occurs during an operation.</span></span></p></td>
+<td><p><span data-ttu-id="49e9d-106"><a href="onerror-event-rds.md">onError</a></span><span class="sxs-lookup"><span data-stu-id="49e9d-106"><a href="onerror-event-rds.md">onError</a></span></span></p></td>
+<td><p><span data-ttu-id="49e9d-107">処理中にエラーが発生するたびに呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="49e9d-107">Called whenever an error occurs during an operation.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="36837-108"><a href="onreadystatechange-event-rds.md">onReadyStateChange</a></span><span class="sxs-lookup"><span data-stu-id="36837-108"><a href="onreadystatechange-event-rds.md">onReadyStateChange</a></span></span></p></td>
-<td><p><span data-ttu-id="36837-109"><strong>ReadyState</strong> プロパティの値が変更されるたびに呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="36837-109">Called whenever the value of the <strong>ReadyState</strong> property changes.</span></span></p></td>
+<td><p><span data-ttu-id="49e9d-108"><a href="onreadystatechange-event-rds.md">onReadyStateChange</a></span><span class="sxs-lookup"><span data-stu-id="49e9d-108"><a href="onreadystatechange-event-rds.md">onReadyStateChange</a></span></span></p></td>
+<td><p><span data-ttu-id="49e9d-109"><strong>ReadyState</strong> プロパティの値が変更されるたびに呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="49e9d-109">Called whenever the value of the <strong>ReadyState</strong> property changes.</span></span></p></td>
 </tr>
 </tbody>
 </table>

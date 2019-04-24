@@ -1,5 +1,5 @@
 ---
-title: リレーションのオブジェクト (DAO) を参照
+title: Relations オブジェクト参照 (DAO)
 TOCTitle: Relations
 ms:assetid: 6e803ead-5641-4611-af9a-22c211c238db
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn160922(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: afb452f3b415dc1873e4f5395c16edf86981b4f7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306945"
 ---
-# <a name="relations-object-reference-dao"></a><span data-ttu-id="7827f-102">リレーションのオブジェクト (DAO) を参照</span><span class="sxs-lookup"><span data-stu-id="7827f-102">Relations object reference (DAO)</span></span>
+# <a name="relations-object-reference-dao"></a><span data-ttu-id="6776a-102">Relations オブジェクト参照 (DAO)</span><span class="sxs-lookup"><span data-stu-id="6776a-102">Relations object reference (DAO)</span></span>
 
-<span data-ttu-id="7827f-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="7827f-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="6776a-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="6776a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="7827f-104">Relations コレクション (DAO)</span><span class="sxs-lookup"><span data-stu-id="7827f-104">Relations collection (DAO)</span></span>](relations-collection-dao.md)
-- [<span data-ttu-id="7827f-105">リレーション メンバー (DAO)</span><span class="sxs-lookup"><span data-stu-id="7827f-105">Relations members (DAO)</span></span>](relations-members-dao.md)
-- [<span data-ttu-id="7827f-106">関係のプロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="7827f-106">Relations properties (DAO)</span></span>](relations-properties-dao.md)
-- [<span data-ttu-id="7827f-107">関係の方法 (DAO)</span><span class="sxs-lookup"><span data-stu-id="7827f-107">Relations methods (DAO)</span></span>](relations-methods-dao.md)
+- [<span data-ttu-id="6776a-104">Relations コレクション (DAO)</span><span class="sxs-lookup"><span data-stu-id="6776a-104">Relations collection (DAO)</span></span>](relations-collection-dao.md)
+- [<span data-ttu-id="6776a-105">Relations メンバー (DAO)</span><span class="sxs-lookup"><span data-stu-id="6776a-105">Relations members (DAO)</span></span>](relations-members-dao.md)
+- [<span data-ttu-id="6776a-106">Relations プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="6776a-106">Relations properties (DAO)</span></span>](relations-properties-dao.md)
+- [<span data-ttu-id="6776a-107">Relations メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="6776a-107">Relations methods (DAO)</span></span>](relations-methods-dao.md)
 

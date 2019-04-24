@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 7f1d82a792961b0be398bb0ef8c2c046d9e8b375
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306917"
 ---
-# <a name="sort-property-example-vb"></a><span data-ttu-id="5abad-102">Sort プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="5abad-102">Sort property example (VB)</span></span>
+# <a name="sort-property-example-vb"></a><span data-ttu-id="5a376-102">Sort プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="5a376-102">Sort property example (VB)</span></span>
 
 
-<span data-ttu-id="5abad-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="5abad-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="5a376-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="5a376-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="5abad-104">この例では、[レコード セット](recordset-object-ado.md)オブジェクトの[Sort](sort-property-ado.md)プロパティを使用して、 ***Pubs***データベースの***Authors***テーブルから派生した**レコード セット**の行の順序を変更します。</span><span class="sxs-lookup"><span data-stu-id="5abad-104">This example uses the [Recordset](recordset-object-ado.md) object's [Sort](sort-property-ado.md) property to reorder the rows of a **Recordset** derived from the ***Authors*** table of the ***Pubs*** database.</span></span> <span data-ttu-id="5abad-105">2 次ユーティリティ ルーチンで各行を出力します。</span><span class="sxs-lookup"><span data-stu-id="5abad-105">A secondary utility routine prints each row.</span></span>
+<span data-ttu-id="5a376-104">この例では[、recordset](recordset-object-ado.md)オブジェクトの[Sort](sort-property-ado.md)プロパティを使用して、 ***Pubs***データベースの***Authors***テーブルから派生した**recordset**の行を並べ替えます。</span><span class="sxs-lookup"><span data-stu-id="5a376-104">This example uses the [Recordset](recordset-object-ado.md) object's [Sort](sort-property-ado.md) property to reorder the rows of a **Recordset** derived from the ***Authors*** table of the ***Pubs*** database.</span></span> <span data-ttu-id="5a376-105">2 次ユーティリティ ルーチンで各行を出力します。</span><span class="sxs-lookup"><span data-stu-id="5a376-105">A secondary utility routine prints each row.</span></span>
 
 ```vb 
  
@@ -101,7 +101,7 @@ End Sub
 'EndSortVB 
 ```
 
-<span data-ttu-id="5abad-106">次のコードは、与えられたタイトルと、指定された **Recordset** の内容を出力する 2 次ユーティリティ ルーチンです。</span><span class="sxs-lookup"><span data-stu-id="5abad-106">This is the secondary utility routine that prints the given title, and the contents of the specified **Recordset**.</span></span>
+<span data-ttu-id="5a376-106">次のコードは、与えられたタイトルと、指定された **Recordset** の内容を出力する 2 次ユーティリティ ルーチンです。</span><span class="sxs-lookup"><span data-stu-id="5a376-106">This is the secondary utility routine that prints the given title, and the contents of the specified **Recordset**.</span></span>
 
 ```vb 
  

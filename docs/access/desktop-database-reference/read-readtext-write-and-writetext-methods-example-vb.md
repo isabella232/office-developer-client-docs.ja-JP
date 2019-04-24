@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 44e961d7b3f4b12d8801429ecb78a1a186f5547a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301016"
 ---
-# <a name="read-readtext-write-and-writetext-methods-example-vb"></a><span data-ttu-id="be3a2-102">Read メソッド、ReadText メソッド、Write メソッド、WriteText メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="be3a2-102">Read, ReadText, Write, and WriteText methods example (VB)</span></span>
+# <a name="read-readtext-write-and-writetext-methods-example-vb"></a><span data-ttu-id="9396f-102">Read メソッド、ReadText メソッド、Write メソッド、WriteText メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="9396f-102">Read, ReadText, Write, and WriteText methods example (VB)</span></span>
 
 
-<span data-ttu-id="be3a2-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="be3a2-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="9396f-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="9396f-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="be3a2-p101">この例では、テキスト ボックスの内容を、文字列型の [Stream](stream-object-ado.md) とバイナリ型の **Stream** の両方に読み込む方法を示します。 [Position](position-property-ado.md)、[Size](size-property-ado.md)、[Charset](charset-property-ado.md)、[SetEOS](seteos-method-ado.md) などのその他のプロパティおよびメソッドも示します。</span><span class="sxs-lookup"><span data-stu-id="be3a2-p101">This example demonstrates how to read the contents of a text box into both a text [Stream](stream-object-ado.md) and a binary **Stream**. Other properties and methods shown include [Position](position-property-ado.md), [Size](size-property-ado.md), [Charset](charset-property-ado.md), and [SetEOS](seteos-method-ado.md).</span></span>
+<span data-ttu-id="9396f-p101">この例では、テキスト ボックスの内容を、文字列型の [Stream](stream-object-ado.md) とバイナリ型の **Stream** の両方に読み込む方法を示します。 [Position](position-property-ado.md)、[Size](size-property-ado.md)、[Charset](charset-property-ado.md)、[SetEOS](seteos-method-ado.md) などのその他のプロパティおよびメソッドも示します。</span><span class="sxs-lookup"><span data-stu-id="9396f-p101">This example demonstrates how to read the contents of a text box into both a text [Stream](stream-object-ado.md) and a binary **Stream**. Other properties and methods shown include [Position](position-property-ado.md), [Size](size-property-ado.md), [Charset](charset-property-ado.md), and [SetEOS](seteos-method-ado.md).</span></span>
 
 ```vb 
  

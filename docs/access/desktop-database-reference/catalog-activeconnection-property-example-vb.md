@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2f2e409a7d158ba04e79d300eaacf9edf8cf5622
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296620"
 ---
-# <a name="catalog-activeconnection-property-example-vb"></a><span data-ttu-id="253e5-102">Catalog の ActiveConnection プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="253e5-102">Catalog ActiveConnection property example (VB)</span></span>
+# <a name="catalog-activeconnection-property-example-vb"></a><span data-ttu-id="94823-102">Catalog の ActiveConnection プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="94823-102">Catalog ActiveConnection property example (VB)</span></span>
 
-<span data-ttu-id="253e5-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="253e5-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="94823-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="94823-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="253e5-p101">[ActiveConnection](activeconnection-property-adox.md) プロパティを有効に設定すると、開いている接続によってカタログが開かれます。開いたカタログから、そのカタログに含まれるスキーマ オブジェクトにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="253e5-p101">Setting the [ActiveConnection](activeconnection-property-adox.md) property to a valid, open connection "opens" the catalog. From an open catalog, you can access the schema objects contained within that catalog.</span></span>
+<span data-ttu-id="94823-p101">[ActiveConnection](activeconnection-property-adox.md) プロパティを有効に設定すると、開いている接続によってカタログが開かれます。開いたカタログから、そのカタログに含まれるスキーマ オブジェクトにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="94823-p101">Setting the [ActiveConnection](activeconnection-property-adox.md) property to a valid, open connection "opens" the catalog. From an open catalog, you can access the schema objects contained within that catalog.</span></span>
 
 ```vb 
  
@@ -57,7 +57,7 @@ ms.locfileid: "28704834"
     ' EndOpenConnectionVB 
 ```
 
-<span data-ttu-id="253e5-106">**ActiveConnection** プロパティを有効な接続文字列に設定した場合も、カタログを開くことができます。</span><span class="sxs-lookup"><span data-stu-id="253e5-106">Setting the **ActiveConnection** property to a valid connection string also "opens" the catalog.</span></span>
+<span data-ttu-id="94823-106">**ActiveConnection** プロパティを有効な接続文字列に設定した場合も、カタログを開くことができます。</span><span class="sxs-lookup"><span data-stu-id="94823-106">Setting the **ActiveConnection** property to a valid connection string also "opens" the catalog.</span></span>
 
 ```vb
     ' BeginOpenConnection2VB 

@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9f12838db2323aa9bd4dbfbc018d1614016a10cc
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308786"
 ---
-# <a name="section-iii-ado-multidimensional-ado-md"></a><span data-ttu-id="567cf-102">セクション III: ADO (多次元) (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="567cf-102">Section III: ADO (multidimensional) (ADO MD)</span></span>
+# <a name="section-iii-ado-multidimensional-ado-md"></a><span data-ttu-id="f95b9-102">セクション III: ADO (多次元) (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="f95b9-102">Section III: ADO (multidimensional) (ADO MD)</span></span>
 
-<span data-ttu-id="567cf-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="567cf-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="f95b9-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="f95b9-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="567cf-104">このセクションには、次の章が含まれます。</span><span class="sxs-lookup"><span data-stu-id="567cf-104">This section contains the following chapter:</span></span>
+<span data-ttu-id="f95b9-104">このセクションには、次の章が含まれます。</span><span class="sxs-lookup"><span data-stu-id="f95b9-104">This section contains the following chapter:</span></span>
 
-- [<span data-ttu-id="567cf-105">第 14 章: ADO MD の基礎</span><span class="sxs-lookup"><span data-stu-id="567cf-105">Chapter 14: ADO MD fundamentals</span></span>](chapter-14-ado-md-fundamentals.md)
+- [<span data-ttu-id="f95b9-105">第 14 章: ADO MD の基本事項</span><span class="sxs-lookup"><span data-stu-id="f95b9-105">Chapter 14: ADO MD fundamentals</span></span>](chapter-14-ado-md-fundamentals.md)
 

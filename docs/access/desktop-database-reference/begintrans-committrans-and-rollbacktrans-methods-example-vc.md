@@ -1,5 +1,5 @@
 ---
-title: BeginTrans、CommitTrans、RollbackTrans メソッドの使用例 (vc++)
+title: BeginTrans、CommitTrans、RollbackTrans メソッドの使用例 (VC + +)
 TOCTitle: BeginTrans, CommitTrans, and RollbackTrans methods example (VC++)
 ms:assetid: b2e53b79-4f10-f9cc-59f7-61c9557e5ef2
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249853(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 37a716a60b902556c1e392fe9df5f1e104acffcd
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296837"
 ---
-# <a name="begintrans-committrans-and-rollbacktrans-methods-example-vc"></a><span data-ttu-id="e723c-102">BeginTrans メソッド、CommitTrans メソッド、RollbackTrans メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="e723c-102">BeginTrans, CommitTrans, and RollbackTrans methods example (VC++)</span></span>
+# <a name="begintrans-committrans-and-rollbacktrans-methods-example-vc"></a><span data-ttu-id="90744-102">BeginTrans メソッド、CommitTrans メソッド、RollbackTrans メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="90744-102">BeginTrans, CommitTrans, and RollbackTrans methods example (VC++)</span></span>
 
 
-<span data-ttu-id="e723c-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="e723c-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="90744-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="90744-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="e723c-p101">この例では、データベースの ***Titles*** テーブル内のすべての心理学書の書籍種別を変更します。[BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドで、***Titles*** テーブルに対するすべての変更を分離するトランザクションを開始した後、[CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドで変更を保存します。[RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドを使用すると、[Update](update-method-ado.md) メソッドで保存した変更を変更前の状態に戻すことができます。</span><span class="sxs-lookup"><span data-stu-id="e723c-p101">This example changes the book type of all psychology books in the ***Titles*** table of the database. After the [BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) method starts a transaction that isolates all the changes made to the ***Titles*** table, the [CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) method saves the changes. You can use the [RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) method to undo changes that you saved using the [Update](update-method-ado.md) method.</span></span>
+<span data-ttu-id="90744-104">この例では、データベースの ***Titles*** テーブル内のすべての心理学書の書籍種別を変更します。</span><span class="sxs-lookup"><span data-stu-id="90744-104">This example changes the book type of all psychology books in the ***Titles*** table of the database.</span></span> <span data-ttu-id="90744-105">[BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドで、***Titles*** テーブルに対するすべての変更を分離するトランザクションを開始した後、[CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドで変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="90744-105">After the [BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) method starts a transaction that isolates all the changes made to the ***Titles*** table, the [CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) method saves the changes.</span></span> <span data-ttu-id="90744-106">[RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) メソッドを使用すると、 [Update](update-method-ado.md) メソッドで保存した変更を変更前の状態に戻すことができます。</span><span class="sxs-lookup"><span data-stu-id="90744-106">You can use the [RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) method to undo changes that you saved using the [Update](update-method-ado.md) method.</span></span>
 
 ```cpp 
  
@@ -277,7 +277,7 @@ void PrintProviderError(_ConnectionPtr pConnection)
 // EndBeginTransCpp 
 ```
 
-<span data-ttu-id="e723c-107">**BeginTransX.h**</span><span class="sxs-lookup"><span data-stu-id="e723c-107">**BeginTransX.h**</span></span>
+<span data-ttu-id="90744-107">**BeginTransX**</span><span class="sxs-lookup"><span data-stu-id="90744-107">**BeginTransX.h**</span></span>
 
 ```cpp 
  
