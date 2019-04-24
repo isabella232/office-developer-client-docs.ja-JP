@@ -1,5 +1,5 @@
 ---
-title: フォーム通知の送受信
+title: フォーム通知の送信と受信
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,40 +7,40 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: a4374728-e2bc-47d9-8b03-ba09545a38d8
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 7148383c92b59adb9d3783e079e7c5f28c038eac
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 4ee47b51a98cf732f4e9af2a87fa1734a7250208
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339712"
 ---
-# <a name="sending-and-receiving-form-notifications"></a>フォーム通知の送受信
+# <a name="sending-and-receiving-form-notifications"></a>フォーム通知の送信と受信
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームの通知は、MAPI の両方のビューアーに、フォームとフォームに、ビューアーからの通信を容易にするために使用されます。
+フォーム通知は MAPI で使用され、フォームからビューアーへの通信や、ビューアーからフォームへの通信を容易にすることができます。
   
-フォームは、次のイベントのいずれかが発生したとき、ビューアーに通知を送信します。
+フォームは、次のいずれかのイベントが発生したときに、ビューアーに通知を送信します。
   
-- フォームを閉じる。
+- フォームは閉じられています。
     
-- フォームでは、新しいメッセージが読み込まれます。
+- 新しいメッセージがフォームに読み込まれます。
     
-- セーブ ・ オペレーションが完了しました。
+- 保存操作が完了しました。
     
-- メッセージを送信します。
+- メッセージが送信されます。
     
-内の特定のメソッドに対応している各タイプのイベント[IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md)をフォームのビューアーを実装しなければならないインタ フェースのいずれかです。 イベントが発生したとき、フォームの呼び出しが、ビューアーに対応する**IMAPIViewAdviseSink**メソッドには、シンクの案内です。 などのビューアーの表示に含めることは、新しいメッセージが到着したら、フォームは、 [IMAPIViewAdviseSink::OnNewMessage](imapiviewadvisesink-onnewmessage.md)メソッドを呼び出します。 
+これらの各イベントの種類は、IMAPIViewAdviseSink の特定のメソッドに対応します[。 IUnknown](imapiviewadvisesinkiunknown.md)は、フォームビューアーで実装する必要があるインターフェイスの1つです。 イベントが発生すると、フォームは、ビューアーのアドバイズシンクで対応する**IMAPIViewAdviseSink**メソッドを呼び出します。 たとえば、閲覧者が表示する必要がある新しいメッセージが到着すると、フォームは[IMAPIViewAdviseSink:: onnewmessage](imapiviewadvisesink-onnewmessage.md)メソッドを呼び出します。 
   
-ビューのアドバイス、納得が、ビューアーのようにシンクの実装標準の実装はありません。 などの**OnNewMessage**では、新しく到着したメッセージを含むように現在のフォルダーの内容のテーブルのビューを更新できます。 [IMAPIViewAdviseSink::OnSubmitted](imapiviewadvisesink-onsubmitted.md)を送信されたメッセージのイベントが発生したときに呼び出されるメソッドでは、送信済みアイテム フォルダーに送信されたメッセージをコピーできます。
+自分のビューアーに適した方法で、ビューのアドバイズシンクを実装します。標準の実装はありません。 たとえば、 **onnewmessage**では、現在のフォルダーの contents テーブルのビューを更新して、新しく到着したメッセージを含めることができます。 [IMAPIViewAdviseSink:: onsubmitted](imapiviewadvisesink-onsubmitted.md)で、送信されたメッセージイベントを受信したときに呼び出されるメソッド。送信されたメッセージを [送信済みアイテム] フォルダーにコピーすることができます。
   
-フォームは、フォームに影響する変更が発生したときと、新しいメッセージをロードしている場合、ビューアーから通知を受け取ります。 フォームを通知するために**IMAPIFormAdviseSink**のメソッドのいずれかの呼び出し: [IMAPIFormAdviseSink::OnChange](imapiformadvisesink-onchange.md)または[IMAPIFormAdviseSink::OnActivateNext](imapiformadvisesink-onactivatenext.md)です。 ステータスを通信するためには、 **OnChange**を呼び出します。 たとえば、フォームが表示して最後の項目のフォルダーに新しいメッセージが到着したとき、ということは今すぐ次の項目に VCSTATUS_NEXT フラグを設定しての**OnChange**を呼び出します。 
+フォームに影響を与える変更が発生したとき、および新しいメッセージを読み込むときに、フォームから通知が送信されます。 フォームに通知するには、 **IMAPIFormAdviseSink**: [IMAPIFormAdviseSink:: OnChange](imapiformadvisesink-onchange.md)または[IMAPIFormAdviseSink:: OnActivateNext](imapiformadvisesink-onactivatenext.md)のいずれかのメソッドを呼び出します。 状態を伝達するために、 **OnChange**を呼び出します。 たとえば、新しいメッセージが到着したときに、フォルダーの最後のアイテムがフォームに表示されている場合は、VCSTATUS_NEXT フラグを設定して**OnChange**を呼び出し、次のアイテムがあることを示します。 
   
-フォームを新しいメッセージの到着を通知する**OnActivateNext**を呼び出すこと、できないことがあります表示できるようにします。 メッセージのメッセージ クラスを**OnActivateNext**に渡します。 
+**OnActivateNext**を呼び出して、新しいメッセージの到着をフォームに通知します。これは、表示することができない場合があります。 メッセージのメッセージクラスを**OnActivateNext**に渡します。 
   
-フォーム オブジェクトをクライアント アプリケーションでの通知は、クライアント アプリケーションの**IMAPIViewAdviseSink**のインターフェイスによって処理されます。 詳細についてを参照してください[IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md)。
+クライアントアプリケーションへの form オブジェクトによる通知は、クライアントアプリケーションの**IMAPIViewAdviseSink**インターフェイスによって処理されます。 詳細については、「 [IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md)」を参照してください。
   
 

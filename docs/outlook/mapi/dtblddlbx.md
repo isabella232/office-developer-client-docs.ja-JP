@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: cf60584c-4357-44c7-9d51-f30f7e510c0c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3307bb252ca4436999a541f85657fed9878c798a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 244aaea4902d6be8eda4cdca176436af9b002ba7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32340104"
 ---
 # <a name="dtblddlbx"></a>DTBLDDLBX
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ダイアログ ボックスが表示テーブルの構築に使用するドロップダウン リスト コントロールについて説明します。
+表示テーブルから構築されたダイアログボックスで使用されるドロップダウンリストコントロールについて説明します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _DTBLDDLBX
@@ -42,35 +42,35 @@ typedef struct _DTBLDDLBX
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **ulFlags**
   
-> 予約済み、0 でなければなりません。 
+> 予約済み。0である必要があります。 
     
- **ulPRDisplayProperty**
+ **ulprdisplayproperty**
   
-> 型 PT_TSTRING のプロパティのプロパティ タグです。 このプロパティは、 **ulPRTableName**のメンバーで識別されるテーブル内の列のいずれかです。 このプロパティの値は、一覧に表示されます。 
+> PT_TSTRING 型のプロパティのプロパティタグ。 このプロパティは、 **ulprtablename**メンバーによって識別されるテーブルの列の1つです。 このプロパティの値は、一覧に表示されます。 
     
- **ulPRSetProperty**
+ **ulprsetproperty**
   
-> 任意の型のプロパティのプロパティ タグです。 このプロパティは、 **ulPRTableName**のメンバーで識別されるテーブル内の列のいずれかです。 **UlPRTableName**メンバーで識別されるテーブルの行から**ulPRDisplayProperty**のメンバーのリストのユーザーがプロパティの値を選択すると、対応する**ulPRSetProperty**のメンバーが設定されます。 
+> 任意の型のプロパティのプロパティタグ。 このプロパティは、 **ulprtablename**メンバーによって識別されるテーブルの列の1つです。 リストのユーザーが ulprtablename メンバーによって識別されるテーブルの行から**ulprdisplayproperty**メンバーのプロパティ値**** を選択すると、対応する**ulprsetproperty**メンバーが設定されます。 
     
- **ulPRTableName**
+ **ulprtablename**
   
-> PT_OBJECT、 **OpenProperty**を使用して開くことができる種類のテーブルのプロパティのプロパティ タグを呼び出します。 テーブルが 2 つの列を持つ必要があります: **ulPRDisplayProperty**と**ulPRSetProperty**。 テーブルの行は、リスト内の項目に対応します。
+> **openproperty**呼び出しを使用して開くことができる PT_OBJECT 型のテーブルプロパティのプロパティタグ。 このテーブルには2つの列を指定する必要があります。 **ulprdisplayproperty**および**ulprsetproperty**。 表の行は、リスト内の項目に対応している必要があります。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**DTBLDDLBX**構造体では、展開するまでに、1 つの項目として表示されているドロップダウン リスト コントロールについて説明します。 
+**dtblddlbx**構造体は、ユーザーがそれを展開することになるまで、1つのアイテムとして表示されるドロップダウンリストコントロールについて説明します。 
   
-プロパティ タグで識別される 3 つのプロパティが連携する情報が一覧に表示し、関連するプロパティを設定します。 **UlPRTableName**メンバーは、 [IMAPIProp::OpenProperty](imapiprop-openproperty.md)を呼び出すことによってアクセスされているテーブル オブジェクトです。 テーブルには 2 つの列: **ulPRDisplayProperty**メンバーと**ulPRSetProperty**のメンバーによって識別されるプロパティによって識別されるプロパティの 1 つの列です。 
+プロパティタグによって識別される3つのプロパティが連携して、リスト内の情報を表示し、関連するプロパティを設定します。 **ulprtablename**メンバーは、 [imapiprop:: openproperty](imapiprop-openproperty.md)への呼び出しによってアクセスされる table オブジェクトです。 このテーブルには2つの列があります。 **ulprdisplayproperty**メンバーによって識別されるプロパティの1つの列と、 **ulprsetproperty**メンバーによって識別されるプロパティの列は1つです。 
   
-**UlPRDisplayProperty**プロパティは、リストの表示をドライブします。 ユーザーは、表示値のいずれかを選択すると、MAPI は、 **ulPRSetProperty**のメンバーで識別される、対応するプロパティを設定するのには[IMAPIProp::SetProps](imapiprop-setprops.md)を呼び出します。 つまり、選択した表示のプロパティとして同じ行のプロパティです。 **UlPRSetProperty**メンバーは、 **PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) に設定できません。
+**ulprdisplayproperty**プロパティは、リスト表示を駆動します。 ユーザーが表示から値の1つを選択すると、MAPI は[imapiprop:: setprops](imapiprop-setprops.md)を呼び出して、 **ulprsetproperty**メンバーによって識別される対応するプロパティを設定します。 これは、プロパティが選択した表示プロパティと同じ行にあることを意味します。 **ulprsetproperty**メンバーを**PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) に設定することはできません。
   
-初期値は、MAPI が[IMAPIProp::GetProps](imapiprop-getprops.md)を呼び出すことによって**ulPRSetProperty**のメンバーによって表されるプロパティを取得し、 **ulPRSetProperty**メンバーの値を持つテーブルの行を配置する場合、一覧に表示されます。 最初に表示される値は、 **ulPRDisplayProperty** 、 **ulPRDisplayProperty**構造体のメンバーのプロパティに一致する行をその列の内容です。 リストが最初に表示されるときに表示される初期値を**GetProps** **ulPRDisplayProperty**メンバーで識別されるプロパティの戻り値になります。 
+MAPI が、 [imapiprop:: GetProps](imapiprop-getprops.md)を呼び出して**ulprsetproperty**メンバーによって表されるプロパティを取得し、テーブルの行に**ulprsetproperty**メンバーの値を格納している場合は、リストに初期値が表示されます。 最初に表示される値は、構造体の**ulprdisplayproperty**メンバーのプロパティに一致する行からの**ulprdisplayproperty**列の内容です。 **ulprdisplayproperty**メンバーによって識別されるプロパティの**GetProps**によって返される値は、リストが最初に表示されたときに表示される初期値になります。 
   
-テーブルの表示の概要については、[テーブルの表示](display-tables.md)を参照してください。 表示テーブルを実装する方法の詳細については、[表示テーブルを実装する](display-table-implementation.md)を参照してください。 プロパティの型については、 [MAPI プロパティの種類の概要](mapi-property-type-overview.md)を参照してください。
+表示テーブルの概要については、「[テーブルの表示](display-tables.md)」を参照してください。 表示テーブルを実装する方法については、「[表示テーブルを実装](display-table-implementation.md)する」を参照してください。 プロパティの種類の詳細については、「 [MAPI プロパティの種類の概要](mapi-property-type-overview.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
@@ -89,7 +89,7 @@ typedef struct _DTBLDDLBX
   
 [表示テーブルの実装](display-table-implementation.md)
   
-[表示テーブル](display-tables.md)
+[表の表示](display-tables.md)
   
-[MAPI プロパティの型の概要](mapi-property-type-overview.md)
+[MAPI プロパティの種類の概要](mapi-property-type-overview.md)
 

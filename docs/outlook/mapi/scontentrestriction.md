@@ -12,22 +12,22 @@ api_type:
 - COM
 ms.assetid: 784c8a5a-493e-48e6-8784-ba8122c76e3d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 43703051193ffacec6a54355eeea74edf904f186
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 87be6df27a3e6729cb514118438521d76a66b30c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339838"
 ---
 # <a name="scontentrestriction"></a>SContentRestriction
  
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-検索文字列に一致する内容を持つ列を含む行だけを表形式ビューを制限するために使用されるコンテンツの制限について説明します。 
+コンテンツ制限について説明します。これは、テーブルビューを、検索文字列と一致するコンテンツを持つ列を含む行だけに制限するために使用されます。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SContentRestriction
@@ -43,43 +43,43 @@ typedef struct _SContentRestriction
 
 **ulFuzzyLevel**
   
-> オプションの設定が一致することを確認するときにコンテンツの制限が設定されている preciseness のレベルを定義します。
+> 一致するかどうかを確認するときにコンテンツ制限に適用する preciseness レベルを定義するオプション設定。
     
-   **UlFuzzyLevel**メンバーの**下位 16 ビット**は、PT_BINARY と PT_STRING8 プロパティの型に適用し、次の値のいずれかに設定する必要があります。 
+   **ulFuzzyLevel**メンバーの**下位16ビット**は、PT_BINARY および PT_STRING8 型のプロパティに適用され、次のいずれかの値に設定する必要があります。 
     
-   - FL_FULLSTRING: 一致するには、 **lpProp**の検索文字列含める必要があります**ulPropTag**によって識別されるプロパティにします。
+   - FL_FULLSTRING: 一致するには、 **lpprop**検索文字列が**ulPropTag**で識別されるプロパティに含まれている必要があります。
         
-   - FL_PREFIX: 一致するには、 **lpProp**の検索文字列必要があります**ulPropTag**によって識別されるプロパティの先頭にします。 **LpProp**によって示される検索文字列の長さの分だけ、2 つの文字列を比較する必要があります。 
+   - FL_PREFIX: 一致するには、 **ulPropTag**で識別されるプロパティの先頭に**lpprop**検索文字列を指定する必要があります。 2つの文字列は、 **lpprop**で示される検索文字列の長さまで比較する必要があります。 
         
-   - FL_SUBSTRING: 一致するには、 **lpProp**検索文字列含める必要があります任意の場所**ulPropTag**によって識別されるプロパティにします。 
+   - FL_SUBSTRING: 一致するには、 **lpprop**検索文字列が**ulPropTag**で識別されるプロパティの任意の場所に含まれている必要があります。 
         
-   **UlFuzzyLevel**メンバーの**上位 16 ビット**では、型 PT_STRING8 プロパティにのみ適用され、任意の組み合わせで次の値を設定することができます。 
+   **ulFuzzyLevel**メンバーの**上位16ビット**は、PT_STRING8 型のプロパティにのみ適用され、任意の組み合わせで次の値に設定できます。 
         
-   - FL_IGNORECASE: 大文字と小文字を考慮せず、比較を行ってください。 
+   - FL_IGNORECASE: 比較は、大文字と小文字を区別せずに行う必要があります。 
         
-   - FL_IGNORENONSPACE: 比較は、アクセント記号などの Unicode が定義されている空白でない文字を無視してください。 
+   - FL_IGNORENONSPACE: 比較では、Unicode で定義されたスペース以外の文字 (分音記号など) を無視する必要があります。 
         
-   - FL_LOOSE: 比較頂いた一致する限り、大文字と小文字、空白でない文字を無視しています。 
+   - FL_LOOSE: 比較によって、大文字と小文字を区別せずに、可能な限り一致が得られます。 
     
 **ulPropTag**
   
-> プロパティ タグが検索文字列の出現箇所をチェックする文字列プロパティを識別します。 
+> 検索文字列の出現をチェックする文字列プロパティを識別するプロパティタグ。 
     
-**lpProp**
+**lpprop**
   
-> 検索文字列として使用する文字列値を格納するプロパティ値の構造体へのポインター。
+> 検索文字列として使用する文字列値を含むプロパティ値構造体へのポインター。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**SContentRestriction**構造体には 2 つのプロパティ タグがあります: **lpProp**が指す**ulPropTag**のメンバーと、 **ulPropTag** 、 **SPropValue**構造体のメンバーで、その他のいずれかです。 両方のタグでは、MAPI プロパティの種類のフィールドだけが必要ですでプロパティの識別子フィールドは無視されます。 ただし、2 つのプロパティの型が一致する必要がありますか、またはエラー値の制限は、 [IMAPITable::Restrict](imapitable-restrict.md)または[IMAPITable::FindRow](imapitable-findrow.md)への呼び出しで使用すると MAPI_E_TOO_COMPLEX が返されます。 
+**scontentrestriction**構造体には、 **ulPropTag**メンバーと、 **lpprop**でポイントされている**scontentrestriction**構造の**ulPropTag**メンバー内の2つのプロパティタグがあります。 両方のタグで、MAPI は property type フィールドのみを必要とし、[プロパティ識別子] フィールドは無視されます。 ただし、2つのプロパティの型が一致している必要があります。または、制限が[imapitable:: Restrict](imapitable-restrict.md)または[imapitable:: FindRow](imapitable-findrow.md)の呼び出しで使用されている場合は、エラー値 MAPI_E_TOO_COMPLEX が返されます。 
   
-FL_FULLSTRING、FL_PREFIX、FL_SUBSTRING の値は、相互に排他的です。 それらの 1 つだけを設定することができ、それらのいずれかを設定する必要があります。 その意味は固定で、プロバイダーは定義されているとおりに正確にして実装する必要があります。 プロバイダーは、これらの値をサポートするためにできない場合、MAPI_E_TOO_COMPLEX を返す必要があります。 
+FL_FULLSTRING、FL_PREFIX、および FL_SUBSTRING の値は相互に排他的です。 設定できるのは1つだけで、そのうちの1つを設定する必要があります。 これらの意味は固定されており、プロバイダーは定義されたとおりに実装する必要があります。 プロバイダーは、これらの値をサポートできない場合は MAPI_E_TOO_COMPLEX を返します。 
   
-FL_IGNORECASE、FL_IGNORENONSPACE、FL_LOOSE の値は独立しています。 任意の場所それらのすべての 3 つのゼロからを設定できます。 ガイドラインとしてのみ、その定義が用意されているし、プロバイダーは、各フラグの特定の意味は、独自に実装するために自由です。 プロバイダーでは指定されたフラグの実装が存在しない場合、エラーは返されません。 
+FL_IGNORECASE、FL_IGNORENONSPACE、および FL_LOOSE の値は独立しています。 ゼロから3つまでのすべての場所を設定できます。 これらの定義はガイドラインとしてのみ提供されており、プロバイダーは各フラグの固有の意味を自由に実装することができます。 プロバイダーは、指定されたフラグの実装がない場合は、エラー表示を返さないようにする必要があります。 
   
-プロパティが存在しない場合、プロパティに対して設定されたコンテンツの制限の結果は定義されていません。 クライアントは、このような制限について明確に定義された動作が必要で、たとえばプロパティが存在するかどうかでないことが必要なテーブルの列ではありません、既存の制限のあるコンテンツの制限に参加する**と**制限も作成する必要があります。 [SExistRestriction](sexistrestriction.md)構造体を使用すると、既存の制限、**および**制限を定義するのには、 [SAndRestriction](sandrestriction.md)構造体を定義します。 
+プロパティが存在しない場合、プロパティに対して適用されるコンテンツ制限の結果は未定義です。 クライアントでこのような制限に対して適切に定義された動作が必要であり、そのプロパティが存在するかどうかが不明な場合は、そのプロパティが存在するかどうかは、テーブルの必須列ではないので、コンテンツ制限を既存の制限で結合するための**と**制限を作成する必要があります。 [sexistrestriction](sexistrestriction.md)構造を使用して、**と**制限を定義するための、存在制限と[SAndRestriction](sandrestriction.md)構造を定義します。 
   
-**SContentRestriction**構造体および制限の詳細については一般に、[制限の詳細](about-restrictions.md)を参照してください。
+**scontentrestriction**構造と一般的な制限の詳細については、「[制限につい](about-restrictions.md)て」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

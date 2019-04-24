@@ -12,51 +12,51 @@ api_type:
 - COM
 ms.assetid: d4b1a087-0986-467a-aaa9-fc643f7c56fc
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c89a0a86ac733cd2cce1efc071e47fcb011fec18
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7bd5a030d11577c2afabb8a2253cf4f6129814cc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339236"
 ---
 # <a name="pidtagsubjectmessageid-canonical-property"></a>PidTagSubjectMessageId 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-レポートが生成されているメッセージからコピーされたバイナリ値が含まれています。 
+レポートが生成されるメッセージからコピーされるバイナリ値を格納します。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_SUBJECT_IPM  <br/> |
 |識別子:  <br/> |0x0038  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |MAPI の封筒  <br/> |
+|エリア:  <br/> |MAPI エンベロープ  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-レポートを元のメッセージに関連付けるには、 **PR_REPORT_TAG** ([PidTagReportTag](pidtagreporttag-canonical-property.md)) のプロパティと同様に、このプロパティを使用できます。 
+**PR_REPORT_TAG** ([PidTagReportTag](pidtagreporttag-canonical-property.md)) プロパティなどのこのプロパティを使用して、レポートと元のメッセージを関連付けることができます。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

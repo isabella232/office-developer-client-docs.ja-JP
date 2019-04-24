@@ -1,5 +1,5 @@
 ---
-title: 表示のテーブルと関連する構造体を作成します。
+title: 表示テーブルと関連する構造体の作成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,43 +7,43 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: a8548040-13ed-4a9f-a7ca-de610f94d7df
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: e17306e2b90f26dcef0a0214e78080fe78752e5f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 350272324c3827f4630f0cf35e3ade0ff213ac4d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335615"
 ---
-# <a name="creating-display-tables-and-related-structures"></a>表示のテーブルと関連する構造体を作成します。
+# <a name="creating-display-tables-and-related-structures"></a>表示テーブルと関連する構造体の作成
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-表示テーブルを作成することは、スクリプト言語でプログラムを記述に似ています。 [BuildDisplayTable](builddisplaytable.md)を呼び出すか、またはテーブルの列と行を作成するカスタム コードを作成するか、表示テーブルを作成することができます。 一般に、簡単であるために、 **BuildDisplayTable**テクニックを使用してください。 
+表示テーブルの作成は、スクリプト言語を使用してプログラムを記述するのと似ています。 表示テーブルを作成するには、 [builddisplaytable](builddisplaytable.md)を呼び出すか、カスタムコードを記述して、テーブルの行と列にデータを設定します。 一般に、 **builddisplaytable**手法はより単純なので、使用する必要があります。 
   
-表示のテーブルを作成するための MAPI メッセージを表示する**BuildDisplayTable**を呼び出すことができます、前に、階層構造を構築する必要があります。 [DTPAGE](dtpage.md)、最上位レベルの構造では、1 つのタブ付きプロパティ ページについて説明します。 すべて**DTPAGE**には、構造体は、エディット ボックスやオプション ボタンなど、1 つのコントロールを記述する[DTCTL](dtctl.md)構造です。 **DTCTL**の各構造体には、コントロールの種類に固有である構造体が含まれています。 たとえば、 **DTCTL**構造体は、エディット ボックス コントロールを記述すると、 **DTBLEDIT**構造体が含まれます。 オプション ボタンの**DTCTL**構造体には、 **DTBLRADIOBUTTON**構造体が含まれています。 
+**builddisplaytable**を呼び出して MAPI に表示テーブルを作成するようにするには、まず構造の階層構造を構築する必要があります。 トップレベルの構造である[dtpage](dtpage.md)は、1つのタブ付きプロパティページを記述します。 **dtpage**のすべての構造体は、編集ボックスやオプションボタンなどの1つのコントロールを記述する[DTCTL](dtctl.md)構造体です。 各**DTCTL**構造体には、コントロールの種類に固有の構造が含まれています。 たとえば、 **DTCTL**構造体には、編集ボックスコントロールが記述されている場合、 **DTBLEDIT**構造体が含まれます。 オプションボタンの**DTCTL**構造体には、 **dtblradiobutton**構造体が含まれています。 
   
-これらの構造体は、直接**BuildDisplayTable**。この関数のコンテキスト外の意味があるありません。 **BuildDisplayTable**を呼び出すと、入力パラメーターとして 1 つまたは複数の**DTPAGE**構造体を渡します。 **DTPAGE**構造体には、 **DTCTL**構造体の配列と、配列内の**DTCTL**構造体の数のカウントが含まれています。 ダイアログ ボックスに表示するすべてのコントロールに対して 1 つの構造があります。 **DTPAGE**構造体は、対応するヘルプ ファイル、ダイアログ ボックス リソースの名前を表す文字列もあります。 
+これらの構造は、直接**builddisplaytable**に関連しています。この関数のコンテキストの外部では意味がありません。 **builddisplaytable**を呼び出す場合は、1つ以上の**dtpage**構造を入力パラメーターとして渡します。 **dtpage**構造体には、 **DTCTL**構造体の配列と、配列内の**DTCTL**構造体の数のカウントが含まれています。 ダイアログボックスに表示するコントロールごとに1つの構造があります。 **dtpage**構造体にも、対応するヘルプファイルおよびダイアログボックスリソースの名前を表す文字列があります。 
   
-**DTPAGE**構造内の個々 の**DTCTL**構造体には、コントロールのプロパティを設定するために使用される次のデータが含まれています。 
+**dtpage**構造の各**DTCTL**構造体には、コントロールのプロパティを設定するために使用される次のデータが含まれています。 
   
-- **PR_CONTROL_TYPE** ([PidTagControlType](pidtagcontroltype-canonical-property.md)) を設定するためのコントロールの種類。
+- **PR_CONTROL_TYPE** ([PidTagControlType](pidtagcontroltype-canonical-property.md)) を設定するコントロールの種類を指定します。
     
-- **PR_CONTROL_FLAGS** ([PidTagControlFlags](pidtagcontrolflags-canonical-property.md)) を設定するためのフラグを制御します。
+- **PR_CONTROL_FLAGS** ([PidTagControlFlags](pidtagcontrolflags-canonical-property.md)) を設定するための制御フラグ。
     
-- **PR_CONTROL_ID** ([PidTagControlId](pidtagcontrolid-canonical-property.md)) を設定するためのデータを通知します。
+- **PR_CONTROL_ID** ([PidTagControlId](pidtagcontrolid-canonical-property.md)) を設定するための通知データ。
     
-- **PR_CONTROL_STRUCTURE** ([PidTagControlStructure](pidtagcontrolstructure-canonical-property.md)) を設定するための制御構造です。
+- **PR_CONTROL_STRUCTURE** ([PidTagControlStructure](pidtagcontrolstructure-canonical-property.md)) を設定するためのコントロール構造。
     
-**DTCTL**構造体には、リソース識別子も含まれていると、編集し、コンボ ボックス コントロール、文字のフィルターです。 
+**DTCTL**構造体にもリソース識別子が含まれています。また、エディットコントロールおよびコンボボックスコントロールの場合は、文字フィルターを使用します。 
   
-**DTCTL**構造体の制御構造体のメンバーでは、コントロールの種類に対して一意であるデータについて説明します。 MAPI では、コントロールの種類ごとに別の構造を定義します。 などのエディット コントロールのデータは、 **DTBLEDIT**構造体で表されます。リスト ボックスのデータは、 **DTBLLBX**構造体によって表されます。 
+**DTCTL**構造体の control 構造体メンバーは、コントロールの種類に固有のデータを記述します。 MAPI では、コントロールの種類ごとに異なる構造が定義されています。 たとえば、編集コントロールのデータは、 **DTBLEDIT**構造体で表されます。リストボックスのデータは、 **dtbllbx**構造体で表されます。 
   
-表示テーブルの構造体の 3 つのタイプ間の関係は次の図に表示されます。 表示の次の表に記載されているダイアログ ボックスには 2 つのコントロール: エディット コントロールおよびラベルです。 **DTBLLBX**構造体といくつかの制御構造体は、ラベルの文字の文字列の開始位置を示すラベルのオフセット メンバーがあります。 ラベルの文字列は通常、メモリの構造体の直後に配置します。 
+次の図は、3種類の表示テーブル構造の関係を示しています。 この表示テーブルで説明されているダイアログボックスには、label および edit コントロールという2つのコントロールがあります。 **dtbllbx**構造体には、ラベルオフセットメンバがあります。これには、ラベルの文字列の開始位置を指定します。 通常、ラベル文字文字列は、構造体のすぐ後のメモリに配置されます。 
   
 **表示テーブルの構造**
   
-![テーブルの構造を表示](media/dtstruct.gif "テーブルの構造を表示")
+![テーブル構造を表示]する(media/dtstruct.gif "テーブル構造を表示")する
   
 ## <a name="see-also"></a>関連項目
 

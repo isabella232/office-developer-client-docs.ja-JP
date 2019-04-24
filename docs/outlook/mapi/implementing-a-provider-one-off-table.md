@@ -1,5 +1,5 @@
 ---
-title: プロバイダーの 1 回限りのテーブルの実装
+title: プロバイダーの1回限りのテーブルの実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,50 +7,50 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 8b0dcbfe-6bed-4fb8-a906-009f1d009055
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f484174bd0a83c9bb874bec4896fe3dd925405c7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 023686702b76b5b29acf4304fcfdb3377e8cfcff
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332866"
 ---
-# <a name="implementing-a-provider-one-off-table"></a>プロバイダーの 1 回限りのテーブルの実装
+# <a name="implementing-a-provider-one-off-table"></a>プロバイダーの1回限りのテーブルの実装
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI は、クライアント アプリケーションのユーザーは、送信メッセージに受信者を追加するときに、プロバイダーの[IABLogon::GetOneOffTable](iablogon-getoneofftable.md)メソッドを呼び出します。 通常、要求されたアドレスの種類は、メッセージング システムに固有です。 プロバイダーは、受信者の作成をサポートする場合、サポートされている受信者のアドレスの種類ごとにテンプレートを公開する一時テーブルが必要です。 プロバイダーが受信者の作成をサポートしていない場合は、 **GetOneOffTable**の呼び出しから MAPI_E_NO_SUPPORT を返します。 
+クライアントアプリケーションのユーザーが送信メッセージに受信者を追加すると、MAPI はプロバイダーの[IABLogon:: getoneofftable](iablogon-getoneofftable.md)メソッドを呼び出します。 通常、要求されるアドレスの種類は、メッセージングシステムに固有のものです。 プロバイダーが受信者の作成をサポートしている場合、サポートされている受信者アドレスの種類ごとにテンプレートを公開する、1回限りのテーブルを提供する必要があります。 プロバイダーが受信者の作成をサポートしていない場合は、 **getoneofftable**呼び出しから MAPI_E_NO_SUPPORT を返します。 
   
-MAPI は通常、プロバイダーの一時テーブルを開いたまま、セッションの有効期間をクライアントが呼び出すサブシステムの場合にのみそれを解放するか、ブックの[IMAPIStatus::ValidateState](imapistatus-validatestate.md)メソッドに対応します。 MAPI をするよう、ユーザーにこれらの変更を反映できる場合は、テンプレートを追加または削除、このテーブルで通知を登録します。 
+通常、MAPI はプロバイダーの1回限りのテーブルを開いたままにします。セッションの有効期間は、クライアントがサブシステムまたはアドレス帳の[imapistatus:: validatestate](imapistatus-validatestate.md)メソッドを呼び出した場合に限られます。 この表の MAPI は、テンプレートが追加または削除された場合に、ユーザーに変更を反映することができるようにするために、この表の通知を登録します。 
   
- **IABLogon::GetOneOffTable を実装するには**
+ **IABLogon:: getoneofftable を実装するには**
   
-1. _UlFlags_、flags パラメーターの値を確認してください。 MAPI_UNICODE フラグが設定されて、プロバイダーが Unicode をサポートしていない場合は、失敗し、MAPI_E_BAD_CHARWIDTH を返します。 
+1. flags パラメーターの_ulflags_の値を確認します。 MAPI_UNICODE フラグが設定されており、プロバイダーが UNICODE をサポートしていない場合は、fail および MAPI_E_BAD_CHARWIDTH を返します。 
     
-2. プロバイダーの一時テーブルが既に作成されているを確認します。 一時テーブルは静的であるため、プロバイダーが複数回作成プロセスを経由します。 テーブルが既に存在する場合、それへのポインターを返します。 
+2. プロバイダーの1回限りのテーブルが既に作成されているかどうかを確認します。 通常、1回限りのテーブルは静的であるため、プロバイダーは作成プロセスを複数回実行する必要はありません。 テーブルが既に存在する場合は、そのテーブルへのポインターを返します。 
     
-3. 一時テーブルが存在しない場合は、1 つを作成するのには、 **CreateTable**を呼び出します。 
+3. 1回限りのテーブルがまだ存在しない場合は、 **CreateTable**を呼び出して、1つのテーブルを作成します。 
     
-4. テーブル行の列の次のプロパティを設定します。
+4. 表の行の列に対して次のプロパティを設定します。
     
-  - **PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) にテンプレートを作成できる受信者の種類の名前。 
+  - **PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) を使用して、テンプレートが作成できる受信者の種類の名前を指定します。 
     
-  - **PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md)) に 1 回限りのテンプレートのエントリの識別子です。
+  - **PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md)) は、1回限りのテンプレートのエントリ識別子を示します。
     
-  - **PR_DEPTH**([PidTagDepth](pidtagdepth-canonical-property.md)) の 1 回限りの一覧が表示階層レベルを示す。
+  - **PR_DEPTH**([PidTagDepth](pidtagdepth-canonical-property.md)) は、1回限りのテーブル表示で階層レベルを示します。
     
-  - **PR_SELECTABLE**([PidTagSelectable](pidtagselectable-canonical-property.md)) かどうか、行を表すテンプレートと FALSE それ以外の場合を示すために TRUE に設定します。
+  - **PR_SELECTABLE**([PidTagSelectable](pidtagselectable-canonical-property.md)) を TRUE にして、行がテンプレートを表しているかどうかを示します。それ以外の場合は FALSE を指定します。
     
-  - **PR_ADDRTYPE**([PidTagAddressType](pidtagaddresstype-canonical-property.md)) のテンプレートで作成されたアドレスの種類にします。
+  - **PR_ADDRTYPE**([PidTagAddressType](pidtagaddresstype-canonical-property.md)) は、テンプレートによって作成されたアドレスの種類を示します。
     
-  - **PR_DISPLAY_TYPE**([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) DT_MAILUSER またはテンプレートの表示の種類を示す別の値にします。
+  - **PR_DISPLAY_TYPE**([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) から DT_MAILUSER またはテンプレートの表示の種類を示す別の値を指定します。
     
-  - **PR_INSTANCE_KEY**([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) に固有のバイナリ値です。 
+  - **PR_INSTANCE_KEY**([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) を一意のバイナリ値にします。 
     
-5. テーブルを直接変更するのには[ITableData::HrModifyRow](itabledata-hrmodifyrow.md)を呼び出します。 
+5. テーブルを直接変更するには、 [itabledata:: hrmodifyrow](itabledata-hrmodifyrow.md)を呼び出します。 
     
-6. 呼び出し元に戻るには**IMAPITable**インターフェイスの実装を作成するのには、 [ITableData::HrGetView](itabledata-hrgetview.md)を呼び出します。 
+6. 呼び出し元に返す**IMAPITable**インターフェイス実装を作成するには、 [itabledata:: hrgetview](itabledata-hrgetview.md)を呼び出します。 
     
 

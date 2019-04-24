@@ -1,5 +1,5 @@
 ---
-title: IMAPISecureMessage IUnknown
+title: imapisecuremessage IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,42 +12,42 @@ api_type:
 - COM
 ms.assetid: e6e63104-23db-41a7-a961-d25e2017822e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5f9f80ad8bce08484f4370ea32b2500fe05aa947
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: df646f9b2db9eee7782aa964aa385ad041a0b3d1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338774"
 ---
 # <a name="imapisecuremessage--iunknown"></a>IMAPISecureMessage : IUnknown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 セキュリティで保護されたメッセージを管理するために使用するメソッドを定義します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Exchsec.h  <br/> |
-|によって公開されます。  <br/> |[IMessage: IMAPIProp](imessageimapiprop.md) <br/> |
-|によって実装されます。  <br/> |Microsoft Outlook 2010 と Microsoft Outlook 2013  <br/> |
-|によって呼び出されます。  <br/> |クライアント  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IMAPISECUREMESSAGE  <br/> |
-|ポインターの型。  <br/> |LPMAPISECUREMESSAGE  <br/> |
+|ヘッダー ファイル:  <br/> |exchsec  <br/> |
+|公開者:  <br/> |[IMessage: IMAPIProp](imessageimapiprop.md) <br/> |
+|実装元:  <br/> |microsoft outlook 2010 および microsoft outlook 2013  <br/> |
+|呼び出し元:  <br/> |クライアント  <br/> |
+|インターフェイス識別子:  <br/> |IID_IMAPISECUREMESSAGE  <br/> |
+|ポインターの種類:  <br/> |LPMAPISECUREMESSAGE  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|プレース ホルダー メンバーです。  <br/> |いないサポートまたは文書化されています。  <br/> |
-|プレース ホルダー メンバーです。  <br/> |いないサポートまたは文書化されています。  <br/> |
-|プレース ホルダー メンバーです。  <br/> |いないサポートまたは文書化されています。  <br/> |
-|プレース ホルダー メンバーです。  <br/> |いないサポートまたは文書化されています。  <br/> |
-|[IMAPISecureMessage::GetBaseMessage](imapisecuremessage-getbasemessage.md) <br/> |基になるを取得[IMessage: IMAPIProp](imessageimapiprop.md)この[IMAPISecureMessage: IUnknown](imapisecuremessageiunknown.md)カプセル化することです。  <br/> |
-|プレース ホルダー メンバーです。  <br/> |いないサポートまたは文書化されています。  <br/> |
-|プレース ホルダー メンバーです。  <br/> |いないサポートまたは文書化されています。  <br/> |
-|プレース ホルダー メンバーです。  <br/> |いないサポートまたは文書化されています。  <br/> |
+|Placeholder メンバ。  <br/> |サポートされていないか文書化されていません。  <br/> |
+|Placeholder メンバ。  <br/> |サポートされていないか文書化されていません。  <br/> |
+|Placeholder メンバ。  <br/> |サポートされていないか文書化されていません。  <br/> |
+|Placeholder メンバ。  <br/> |サポートされていないか文書化されていません。  <br/> |
+|[IMAPISecureMessage::GetBaseMessage](imapisecuremessage-getbasemessage.md) <br/> |この[imapisecuremessage: IUnknown](imapisecuremessageiunknown.md)がカプセル化されている、基になる[IMessage: imapiprop](imessageimapiprop.md)を取得します。  <br/> |
+|Placeholder メンバ。  <br/> |サポートされていないか文書化されていません。  <br/> |
+|Placeholder メンバ。  <br/> |サポートされていないか文書化されていません。  <br/> |
+|Placeholder メンバ。  <br/> |サポートされていないか文書化されていません。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

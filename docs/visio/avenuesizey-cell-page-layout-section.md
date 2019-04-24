@@ -8,19 +8,19 @@ f1_keywords:
 - Vis_DSS.chm70
 localization_priority: Normal
 ms.assetid: 9ff2893c-afe5-505e-0b55-48ec1de08a5f
-description: レイアウトの構成] ダイアログ ボックスを使用して図形をレイアウトするときは、図面ページ上の図形間の垂直方向のスペースの量を決定する ([デザイン] タブの [レイアウト] で、再レイアウト] ページをクリックし、他のレイアウト オプションをクリックし、)。
-ms.openlocfilehash: af4089a3b215efaf49b8a45929ca94799fffcba5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '[レイアウトの構成] ダイアログボックスを使用して図形をレイアウトするときの、図面ページ上の図形の垂直方向の間隔を指定します ([デザイン] タブの [レイアウト] で [ページの再レイアウト] をクリックし、[その他のレイアウトオプション] をクリックします)。'
+ms.openlocfilehash: 283de8925e34c470fd1f9e78b8ae58882be8b7fc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338424"
 ---
-# <a name="avenuesizey-cell-page-layout-section"></a>[AvenueSizeY] セル ([ページ レイアウト] セクション)
+# <a name="avenuesizey-cell-page-layout-section"></a>[AvenueSizeY] セル ([Page Layout] セクション)
 
-**レイアウトの構成**] ダイアログ ボックスを使用して図形をレイアウトするときは、図面ページ上の図形間の垂直方向のスペースの量を決定する ([**デザイン**] タブの [**レイアウト**] で、ページの**再レイアウト**] をクリックし、**よりレイアウト オプション**)。
+[**レイアウトの構成**] ダイアログボックスを使用して図形をレイアウトするときの、図面ページ上の図形の垂直方向の間隔を指定します ([**デザイン**] タブの [**レイアウト**] で [ページの**再レイアウト**] をクリックし、[その他] をクリックします)。 **レイアウトオプション**)。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 この値は、[**間隔と図形サイズの設定**] ダイアログ ボックスで設定することもできます (このダイアログ ボックスを開くには、[**デザイン**] タブの [**ページ設定**] グループの矢印をクリックし、[**レイアウトと経路**] タブをクリックして、[**間隔**] をクリックします)。
   
@@ -30,7 +30,7 @@ ms.locfileid: "19804799"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [Avenuesizey]  <br/> |
+| セル名:  <br/> | [avenuesizey]  <br/> |
    
 プログラムから、インデックスによって [AvenueSizeY] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

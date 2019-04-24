@@ -7,21 +7,21 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f28ac144-f5ac-fd83-2b72-8d6e5fd74b6e
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 8c23788d64fe3703c7c46998cade0bd40d2f3dd2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 9c5d8ab5bbac91250f3b8c552ad891c62134526e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338676"
 ---
 # <a name="mscapselector"></a>MSCAP_SELECTOR
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ストアを取得する機能を指定します。
+ストアに対して返す機能を指定します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -36,26 +36,26 @@ typedef enum
 } MSCAP_SELECTOR;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  *MSCAP_SEL_RESERVED1* 
   
-> このメンバーは、Outlook の内部使用に予約されている、サポートされていません。 
+> このメンバーは、Outlook の内部使用のために予約されており、サポートされていません。 
     
  *MSCAP_SEL_RESERVED2* 
   
-> このメンバーは、Outlook の内部使用に予約されている、サポートされていません。 
+> このメンバーは、Outlook の内部使用のために予約されており、サポートされていません。 
     
  *MSCAP_SEL_FOLDER* 
   
-> ストアにフォルダーをサポートする機能です。
+> ストア上のフォルダーのサポートに関する機能。
     
  *MSCAP_SEL_RESERVED3* 
   
-> このメンバーは、Outlook の内部使用に予約されている、サポートされていません。 
+> このメンバーは、Outlook の内部使用のために予約されており、サポートされていません。 
     
  *MSCAP_SEL_RESTRICTION* 
   
-> ストアの制限をサポートする機能です。
+> ストアに対する制限のサポートに関する機能。
     
 

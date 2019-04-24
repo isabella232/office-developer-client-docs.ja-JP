@@ -9,23 +9,23 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: d2f21377-2954-d589-1329-cd23fe3fb4c6
 description: 図形やグループに関するさまざまな属性を格納します。たとえば、図形選択時の表示状態を制御する属性が含まれます。
-ms.openlocfilehash: 8a8138d95a56a79cc4eb0178d861d5d80073cb05
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 16ee384d137dfb4d8544c499519985c712fd56a2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335288"
 ---
-# <a name="miscellaneous-section"></a>[その他] セクション
+# <a name="miscellaneous-section"></a>[Miscellaneous] セクション
 
 図形やグループに関するさまざまな属性を格納します。たとえば、図形選択時の表示状態を制御する属性が含まれます。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 [シェイプシート] ウィンドウ、または図面ウィンドウから [**基本動作**] ダイアログ ボックス ([[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] グループで、[**基本動作**] をクリック) の [**基本動作**] タブで、このセクションの多くのセルに値を設定できます。[Group Properties] セクションのセルを使用して、その他のグループのプロパティを設定できます。 
   
-Visio 5.0 の製品では、このセクションには、 **ObjInteract** ] および [ **ObjBehavior** ] セルが含まれます。 **ObjInteract** ] セルの動作は、[Shape Layout] セクションで次のセルにマップされました: **ShapeFixedCode**、 **ShapePermeableX**、 **ShapePermeableY**、および**ShapePermeablePlace**。 ObjBehavior] セルの動作は、[ **ConFixedCode** ] および [ **ShapeRouteStyle** ] セルにマップされました。 
+Visio バージョン5.0 の製品では、このセクションには**objinteract**および**objinteract**というセルが含まれていました。 [図形のレイアウト] セクションの次のセルに、 **objinteract 相互作用**] セルの動作がマップされるようになりました。 Shape **fixedcode**、 **[shapepermeablex]**、 **[shapepermeabley]**、および **[shapepermeableplace]**。 [objbehavior] セルの動作は、[# **xedcode** ] および [ **[shaperoutestyle]** ] セルにマップされるようになりました。 
   
-Visio 5.0 の日本語版製品では、このセクションには、 **VerticalText**セルが含まれています。 Visio バージョン 2000 の製品と、後で、このセルの値は、**テキスト ブロックの書式**セクションで**TextDirection**セルに格納されます。 
+Visio バージョン5.0 日本語の製品では、このセクションには**垂直のテキスト**セルが含まれていました。 Visio バージョン2000製品以降では、このセルの値は、[ **Text Block Format** ] セクションの [ **textdirection** ] セルに格納されます。 
   
 

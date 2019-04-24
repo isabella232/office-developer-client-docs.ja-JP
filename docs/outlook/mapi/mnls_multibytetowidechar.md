@@ -7,13 +7,13 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 065d78bf-4c9c-48dd-b1f1-b4e59f3f1243
-description: '最終更新日: 2012 年 2 月 21 日'
+description: '最終更新日: 2012 年2月21日'
 ms.openlocfilehash: 1f137aba40703fe84e5753ee6e370262f780f0a3
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338242"
 ---
 # <a name="mnlsmultibytetowidechar"></a>MNLS_MultiByteToWideChar
 
@@ -21,7 +21,7 @@ ms.locfileid: "25389555"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**MultiByteToWideChar**文字の文字列を utf-16 (ワイド文字) の文字列にマップするに似ています。 文字の文字列とは限りませんマルチバイトの文字からは設定されません。
+**MultiByteToWideChar**に似ています。これは、文字列を utf-16 (ワイド文字) 文字列にマッピングします。 文字文字列は、マルチバイト文字セットからのものであるとは限りません。
   
 ```cpp
 int MNLS_MultiByteToWideChar(
@@ -35,36 +35,36 @@ int MNLS_MultiByteToWideChar(
 
 ## <a name="parameters"></a>パラメーター
 
- _uCodePage_
+ _ucodepage_
   
-> [in]変換の実行に使用するコード ページです。
+> 順番変換を実行するために使用するコードページ。
     
  _dwFlags_
   
-> [in]変換の種類を示すフラグです。
+> 順番変換の種類を示すフラグです。
     
- _lpMultiByteStr_
+ _lpmultibytestr_
   
-> [in]変換する文字の文字列へのポインター。
+> 順番変換する文字列へのポインター。
     
- _cchMultiByte_
+ _cchmultibyte バイト_
   
-> [in]_LpMultiByteStr_パラメーターで指定された文字列のバイト単位のサイズです。 
+> 順番_lpmultibytestr_パラメーターで指定された文字列のサイズ (バイト単位)。 
     
  _lpWideCharStr_
   
-> [out]省略可能です。 変換後の文字列を受け取るバッファーへのポインター。
+> [out]省略可能です。 変換された文字列を受け取るバッファーへのポインター。
     
  _cchWideChar_
   
-> [in]_LpWideCharStr_で示されるバッファーの文字のサイズです。
+> 順番_lpWideCharStr_によって示されるバッファーのサイズ (文字数)。
     
 ## <a name="return-value"></a>戻り値
 
-正常終了した場合は、 _lpWideCharStr_で示されるバッファーに書き込まれた文字数を返します。 
+成功した場合、 _lpWideCharStr_によって示されるバッファーに書き込まれた文字数を返します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-この関数は、 **MultiByteToWideChar**の関数をラップします。 詳細については、 [MultiByteToWideChar](https://msdn.microsoft.com/library/dd319072%28VS.85%29.aspx)を参照してください。
+この関数は、 **MultiByteToWideChar**関数をラップします。 詳細については、「 [MultiByteToWideChar](https://msdn.microsoft.com/library/dd319072%28VS.85%29.aspx)」を参照してください。
   
 

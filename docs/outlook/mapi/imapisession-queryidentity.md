@@ -1,5 +1,5 @@
 ---
-title: IMAPISessionQueryIdentity
+title: imapisessionqueryidentity
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a2cdda90-5457-49a7-b98c-7273ffe5cbbc
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6b64653aa87ff7ac983409978a69f59148251d7d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 396320c6b39553da09aa1f45d0c755f40a939382
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335694"
 ---
 # <a name="imapisessionqueryidentity"></a>IMAPISession::QueryIdentity
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 セッションのプライマリ id を提供するオブジェクトのエントリ id を返します。
   
@@ -38,13 +38,13 @@ HRESULT QueryIdentity(
 
  _lpcbEntryID_
   
-> [out]_LppEntryID_パラメーターで指定されたエントリの識別子のバイト数へのポインター。 
+> 読み上げ_lppentryid_パラメーターによって指定されたエントリ識別子のバイト数へのポインター。 
     
- _lppEntryID_
+ _lppentryid_
   
-> [out]プライマリ id を提供するオブジェクトのエントリの識別子へのポインターへのポインター。
+> 読み上げプライマリ id を提供するオブジェクトのエントリ識別子へのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -52,47 +52,47 @@ S_OK
     
 MAPI_W_NO_SERVICE 
   
-> 呼び出しが成功したが、セッションのプライマリ id がありません。 この警告が返されると、呼び出しを成功として処理する必要があります。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
+> 呼び出しは成功しましたが、セッションのプライマリ id がありません。 この警告が返された場合、呼び出しは正常に処理されます。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPISession::QueryIdentity**メソッドは、現在のセッションのプライマリ id を取得し、 _lppEntryID_パラメーターを使用して値を返します。 プライマリ id は、通常、メッセージング、ユーザー セッションのユーザーを表すオブジェクトです。  _lppEntryID_は、 [IMailUser](imailuserimapiprop.md)オブジェクトは、 [PidTagEntryID](pidtagentryid-canonical-property.md)プロパティも格納されているプライマリ id を返します。 [IMAPISession::OpenEntry](imapisession-openentry.md)を使用して**IMailUser**オブジェクトを開くには、 _lppEntryID_で返される値を使用できます。
+**imapisession:: queryidentity**メソッドは、現在のセッションのプライマリ id を取得し、 _lppentryid_パラメーターを使用して値を返します。 プライマリ id は、通常、セッションのユーザーを表す、オブジェクト (通常はメッセージングユーザー) です。  _lppentryid_は、 [PidTagEntryID](pidtagentryid-canonical-property.md)プロパティとしても格納されている[imailuser](imailuserimapiprop.md)オブジェクトのプライマリ id を返します。 _lppentryid_で返された値を使用して、 [imapisession:: openentry](imapisession-openentry.md)を使用して**imailuser**オブジェクトを開くことができます。
   
-複数のメッセージ サービスで多くのサービス プロバイダーは、セッションのプライマリ id を提供できます、ただし、MAPI は 1 つのサービス プロバイダーを指定します。 プライマリ id を提供するサービス プロバイダーは、次の項目を設定します。
+複数のメッセージサービスのサービスプロバイダーの多くは、セッションのプライマリ id を提供していますが、MAPI は1つのサービスプロバイダーを指定します。 プライマリ id を提供するサービスプロバイダーは、次の項目を設定します。
   
-- **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) のプロパティに STATUS_PRIMARY_IDENTITY フラグです。
+- **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) プロパティの STATUS_PRIMARY_IDENTITY フラグ。
     
-- **PR_IDENTITY_DISPLAY** ([PidTagIdentityDisplay](pidtagidentitydisplay-canonical-property.md)) のプロパティです。
+- **PR_IDENTITY_DISPLAY** ([PidTagIdentityDisplay](pidtagidentitydisplay-canonical-property.md)) プロパティ。
     
-- **PR_IDENTITY_ENTRYID** ([PidTagIdentityEntryId](pidtagidentityentryid-canonical-property.md)) のプロパティです。
+- **PR_IDENTITY_ENTRYID** ([PidTagIdentityEntryId](pidtagidentityentryid-canonical-property.md)) プロパティ。
     
-- **PR_IDENTITY_SEARCH_KEY** ([PidTagIdentitySearchKey](pidtagidentitysearchkey-canonical-property.md)) のプロパティです。
+- **PR_IDENTITY_SEARCH_KEY** ([PidTagIdentitySearchKey](pidtagidentitysearchkey-canonical-property.md)) プロパティ。
     
-プライマリ id を提供するサービス プロバイダーに属する場合、メッセージ サービス、メッセージ サービスで、他のサービス ・ プロバイダーはまた PR_IDENTITY プロパティを設定します。 これらのプロパティは、セッションのステータス テーブルに発行されます。 
+プライマリ id を提供するサービスプロバイダーがメッセージサービスに属している場合、メッセージサービス内の他のサービスプロバイダーも PR_IDENTITY プロパティを設定します。 これらのプロパティは、セッションの状態テーブルで公開されます。 
   
-可能であれば、 **QueryIdentity**は、STATUS_PRIMARY_IDENTITY でタグ付けされた状態の行の**PR_IDENTITY_ENTRYID**プロパティの値を返します。 **PR_IDENTITY_ENTRYID**プロパティがプライマリ id の行に表示されない場合は、 **QueryIdentity**はその行の他の情報で作成された一時エントリ id を返します。 
+可能であれば、 **queryidentity**は、STATUS_PRIMARY_IDENTITY でタグ付けされた状態行から**PR_IDENTITY_ENTRYID**プロパティの値を返します。 **PR_IDENTITY_ENTRYID**プロパティがプライマリ id 行にない場合、 **queryidentity**はその行から他の情報で構築された、1回限りのエントリ識別子を返します。 
   
-STATUS_PRIMARY_IDENTITY フラグがすべてのステータス テーブルに**PR_RESOURCE_FLAG**列に表示されない場合は、 **QueryIdentity**は、検出された最初のエントリ id を返します。 取得する適切なエントリの識別子がない場合、 **QueryIdentity**は MAPI_W_NO_SERVICE の警告は成功し、 _lppEntryID_を指すハード コーディングされたエントリの識別子。 
+STATUS_PRIMARY_IDENTITY フラグが状態テーブル内のすべての**PR_RESOURCE_FLAG**列から欠落している場合、 **queryidentity**は、検出された最初のエントリ識別子を返します。 返される適切なエントリ識別子が存在しない場合、 **queryidentity**は警告 MAPI_W_NO_SERVICE で成功し、 _lppentryid_はハードコードされたエントリ識別子になります。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-メッセージ サービスのセッションのプライマリ id を指定するタスクを割り当てるには[IMsgServiceAdmin::SetPrimaryIdentity](imsgserviceadmin-setprimaryidentity.md)メソッドを呼び出すことができます。 
+[IMsgServiceAdmin:: setprimaryidentity](imsgserviceadmin-setprimaryidentity.md)メソッドを呼び出して、メッセージサービスにセッションのプライマリ id を指定するタスクを割り当てることができます。 
   
-プライマリ id を取得する別の方法は、STATUS_PRIMARY_IDENTITY に**PR_RESOURCE_FLAGS**の列を持つ行のステータス テーブルを検索することによってです。 この id 情報を取得する別の方法の詳細については、[状態テーブルおよび状態オブジェクト](status-table-and-status-objects.md)を参照してください。
+プライマリ id を取得するもう1つの方法は、 **PR_RESOURCE_FLAGS**列が STATUS_PRIMARY_IDENTITY に設定されている行の状態テーブルを検索することです。 この代替方法によって id 情報を取得する方法の詳細については、「 [status Table and status Objects](status-table-and-status-objects.md)」を参照してください。
   
-**QueryIdentity**によって返されるプライマリ id のエントリ id を使用してが完了したら、 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出してメモリを解放します。 
+**queryidentity**から返されるプライマリ id のエントリ識別子の使用を終了したら、 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して、そのメモリを解放します。 
   
-識別情報の詳細については一般に、 [MAPI のプライマリ Id](mapi-primary-identity.md)を参照してください。 
+一般的な id の詳細については、「 [MAPI プライマリ id](mapi-primary-identity.md)」を参照してください。 
   
-MAPI セッションの id を取得の詳細については、[主に取得してプロバイダーの Id](retrieving-primary-and-provider-identity.md)を参照してください。 
+MAPI セッション id の取得の詳細については、「[プライマリおよびプロバイダー id を取得](retrieving-primary-and-provider-identity.md)する」を参照してください。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MainDlg.cpp  <br/> |CMainDlg::OnQueryIdentity  <br/> |MFCMAPI では、 **IMAPISession::QueryIdentity**メソッドを使用して、セッションのプライマリ id のアドレス帳のエントリを開きます。  <br/> |
+|maindlg .cpp  <br/> |CMainDlg:: onqueryidentity  <br/> |mfcmapi は、 **imapisession:: queryidentity**メソッドを使用して、セッションのプライマリ id のアドレス帳エントリを開きます。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -109,11 +109,11 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI のプライマリ Id](mapi-primary-identity.md)
+[MAPI プライマリ id](mapi-primary-identity.md)
   
-[プライマリとプロバイダー ID の取得](retrieving-primary-and-provider-identity.md)
+[プライマリとプロバイダー id の取得](retrieving-primary-and-provider-identity.md)
   
-[エラー処理のためのマクロの使用](using-macros-for-error-handling.md)
+[エラー処理にマクロを使用する](using-macros-for-error-handling.md)
   
 [状態テーブルと状態オブジェクト](status-table-and-status-objects.md)
 

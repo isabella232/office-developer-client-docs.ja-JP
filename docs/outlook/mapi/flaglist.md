@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: b4c0655c-1a3a-4f89-a977-0431db596512
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f7a236c2a7e307d278cac5ef413cbd2f600bf09f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a5e508f5f7e6554a115517da87a8eac39f39aecf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336940"
 ---
 # <a name="flaglist"></a>FLAGLIST
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-名前解決の処理中にアドレス エントリのステータスを示すために使用されるフラグの一覧が含まれています。
+名前解決プロセス中にアドレスエントリの状態を示すために使用されるフラグの一覧が含まれています。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct
@@ -44,27 +44,27 @@ typedef struct
 
  **cFlags**
   
-> MAPI 定義のフラグを一覧の数です。
+> リスト内の MAPI 定義フラグの数。
     
  **ulFlags**
   
-> 受信者の名前解決操作のステータスを提供するフラグの配列。 次のフラグを設定することができます。
+> 受信者の名前解決操作の状態を提供するフラグの配列。 次のフラグを設定できます。
     
 MAPI_AMBIGUOUS 
   
-> 受信者が解決されていませんが、エントリの一意の識別子です。 他のアドレス帳コンテナーは、この受信者を解決するのにはいけません。 
+> 受信者は解決されましたが、一意のエントリ識別子には対応していません。 他のアドレス帳コンテナーは、この受信者の解決を試みてはなりません。 
     
 MAPI_RESOLVED 
   
-> 受信者は、エントリの一意の識別子に解決されました。 他のアドレス帳コンテナーは、この受信者を解決するのにはいけません。 
+> 受信者が一意のエントリ識別子に解決されました。 他のアドレス帳コンテナーは、この受信者の解決を試みてはなりません。 
     
 MAPI_UNRESOLVED 
   
-> エントリは解決されていません。 他のアドレス帳コンテナーは、この受信者を解決するようにしてください。
+> エントリは解決されていません。 他のアドレス帳コンテナーは、この受信者の解決を試みます。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**FLAGLIST**構造体は、 [IABContainer::ResolveNames](iabcontainer-resolvenames.md)のパラメーターとして使用されます。 各受信者を解決するのには、 [ADRLIST](adrlist.md)構造体に含まれます。 アドレス帳コンテナーは、各受信者を解決しようとすると、 **FLAGLIST**構造体に対応するエントリに適切なフラグを設定します。 **ADRLIST**構造体のエントリと同じ順序では、 **FLAGLIST**構造体のエントリのすべてです。 これにより、フラグの設定を受信者に関連付けるには簡単です。 
+**flaglist**構造体は、 [IABContainer:: ResolveNames](iabcontainer-resolvenames.md)のパラメーターとして使用されます。 解決される各受信者は、 [adrlist](adrlist.md)構造に含まれています。 アドレス帳コンテナーは各受信者の解決を試みたときに、 **flaglist**構造の対応するエントリに適切なフラグを設定します。 **flaglist**構造体のすべてのエントリは、 **adrlist**構造内のエントリと同じ順序になっています。 これにより、フラグ設定を受信者に簡単に関連付けることができます。 
   
 ## <a name="see-also"></a>関連項目
 

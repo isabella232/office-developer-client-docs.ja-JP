@@ -13,11 +13,11 @@ api_type:
 ms.assetid: b76312c6-7682-4ded-be25-55e21b0b091b
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3961330476cad8947f94152e49c90adb1e8f8b21
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25398074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339285"
 ---
 # <a name="pidtagattachdataobject-canonical-property"></a>PidTagAttachDataObject 標準プロパティ
 
@@ -25,7 +25,7 @@ ms.locfileid: "25398074"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-通常、オブジェクトのリンクと埋め込み (OLE) **IStorage**インターフェイスを使用してアクセスの添付ファイル オブジェクトが含まれています。 
+通常、オブジェクトのリンクと埋め込み (OLE) **IStorage**インターフェイスを通じてアクセスされる attachment オブジェクトが格納されています。 
   
 |||
 |:-----|:-----|
@@ -34,47 +34,47 @@ ms.locfileid: "25398074"
 |データの種類 :   <br/> |PT_OBJECT  <br/> |
 |エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-**PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) プロパティの値が**ATTACH_EMBEDDED_MSG**または**ATTACH_OLE**である場合、このプロパティは、添付ファイルを保持します。 **PR_ATTACH_TAG** ([PidTagAttachTag](pidtagattachtag-canonical-property.md)) からは、OLE のエンコードの種類を決定できます。 
+**PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) プロパティの値が**ATTACH_EMBEDDED_MSG**または**ATTACH_OLE**の場合、このプロパティは添付ファイルを保持します。 OLE エンコードの種類は、 **PR_ATTACH_TAG** ([PidTagAttachTag](pidtagattachtag-canonical-property.md)) から決定できます。 
   
-**ATTACH_EMBEDDED_MSG**の値に関連付けられている添付ファイルの高速アクセスの[IMessage:IMAPIProp](imessageimapiprop.md)インターフェイスを使用できます。 
+**ATTACH_EMBEDDED_MSG**の値に関連付けられた添付ファイルの場合、 [IMessage: imapiprop](imessageimapiprop.md)インターフェイスを使用してアクセスを高速化できます。 
   
-埋め込み動的 OLE オブジェクトは、 **PR_ATTACH_DATA_OBJ**プロパティには、独自のレンダリング情報が含まれています、 **PR_ATTACH_RENDERING** ([PidTagAttachRendering](pidtagattachrendering-canonical-property.md)) のプロパティが存在しないか、または空にする必要があります。 
+埋め込みの動的 OLE オブジェクトの場合、 **PR_ATTACH_DATA_OBJ**プロパティには独自のレンダリング情報が含まれており、 **PR_ATTACH_RENDERING** ([PidTagAttachRendering](pidtagattachrendering-canonical-property.md)) プロパティは存在しないか、または空である必要があります。 
   
-ファイルに添付ファイル、OLE ドキュメントのメッセージ ストア プロバイダーが**PR_ATTACH_DATA_OBJ**で、 [IMAPIProp::OpenProperty](imapiprop-openproperty.md)の呼び出しに応答する必要があり、 **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)の呼び出しに応答可能性があります (オプション)). **PR_ATTACH_DATA_BIN**と**PR_ATTACH_DATA_OBJ**のプロパティは、同じプロパティの識別子を共有し、したがって、同じプロパティの 2 つのレンディションは、します。 
+OLE ドキュメントファイル添付ファイルの場合、メッセージストアプロバイダーは、 **PR_ATTACH_DATA_OBJ**の[imapiprop:: openproperty](imapiprop-openproperty.md)呼び出しに応答し、オプションで**PR_ATTACH_DATA_BIN**の呼び出しに応答する必要があります ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)). **PR_ATTACH_DATA_BIN**プロパティと**PR_ATTACH_DATA_OBJ**プロパティは同じプロパティ識別子を共有するため、同じプロパティの2つのレンディションになります。 
   
-ストレージ オブジェクトでは、OLE 2.0 のドキュメント形式、複合ファイルなど一部のサービス プロバイダーを許可しないメンバーを追加して、パフォーマンスを最適化するように設計された**IStream**のサブクラスである MAPI **IStreamDocfile**インターフェイスを使用して開くことができません。 潜在的な保存は、 **IStreamDocfile**から**PR_ATTACH_DATA_OBJ**を開こうとして正当性を確保します。 **MAPI_E_INTERFACE_NOT_SUPPORTED**が返された場合、クライアントが**IStream**に**PR_ATTACH_DATA_BIN**を開くことができますし。 
+OLE 2.0 docfile 形式の複合ファイルなどのストレージオブジェクトの場合、サービスプロバイダーによっては、MAPI **IStreamDocfile**インターフェイスを使用して開くことができます。これは、他のメンバーを持たない**IStream**のサブクラスで、パフォーマンスを最適化するように設計されています。 保存する可能性がある場合は、 **IStreamDocfile**を使用して**PR_ATTACH_DATA_OBJ**を開くことを試みるのに十分です。 **MAPI_E_INTERFACE_NOT_SUPPORTED**が返された場合、クライアントは**IStream**を使用して**PR_ATTACH_DATA_BIN**を開くことができます。 
   
-クライアント アプリケーションまたはサービス プロバイダーは、 **PR_ATTACH_METHOD**の**PR_ATTACH_DATA_OBJ**を使用して、添付ファイルのサブオブジェクトを開くことができません、 **PR_ATTACH_DATA_BIN**を使用してください。 
+クライアントアプリケーションまたはサービスプロバイダーが、 **PR_ATTACH_METHOD**を使用して**PR_ATTACH_DATA_OBJ**を使用して添付ファイルサブオブジェクトを開くことができない場合は、 **PR_ATTACH_DATA_BIN**を使用する必要があります。 
   
-OLE インターフェイスとフォーマットの詳細については、 [OLE アプリケーションとデータの転送](https://msdn.microsoft.com/library/d4a57956-37ba-44ca-8efc-bf617ad5e77b.aspx)を参照してください。
+ole のインターフェイスおよび形式の詳細については、「 [ole とデータ転送](https://msdn.microsoft.com/library/d4a57956-37ba-44ca-8efc-bf617ad5e77b.aspx)」を参照してください。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルのオブジェクトを処理します。
+> メッセージと添付ファイルオブジェクトを処理します。
     
-## <a name="header-files"></a>ヘッダー ファイル
+## <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

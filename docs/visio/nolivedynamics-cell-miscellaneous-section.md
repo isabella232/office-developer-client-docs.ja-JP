@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: d1c4b9d9-6d64-8ed1-9fc6-2dbf829a75b5
 description: 図形を操作するときに、図形のサイズを動的に変更したり、回転させるかどうかを指定します。
-ms.openlocfilehash: 043571243fe3698561bee8632e7fd18db04c9330
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e332546c1fc5dfc71dfa3b72ea5a58bfef59dc7f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32340986"
 ---
-# <a name="nolivedynamics-cell-miscellaneous-section"></a>[NoLiveDynamics] セル ([その他] セクション)
+# <a name="nolivedynamics-cell-miscellaneous-section"></a>[NoLiveDynamics] セル ([Miscellaneous] セクション)
 
 図形を操作するときに、図形のサイズを動的に変更したり、回転させるかどうかを指定します。
   
@@ -25,7 +25,7 @@ ms.locfileid: "19805920"
 | TRUE  <br/> | 操作中に図形は動的に更新されません。  <br/> |
 | FALSE  <br/> | 操作中に図形は動的に更新されます。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 ライブ ダイナミクスを無効にして、2 次元 (2-D) 図形をサイズ変更または回転すると、選択ボックスが表示されます。図形が 1 次元 (1-D) の場合は、ビジュアル フィードバックは [DynFeedback] セルの値に基づいて行われます。
   
@@ -33,7 +33,7 @@ ms.locfileid: "19805920"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | NoLiveDynamics  <br/> |
+| セル名 :  <br/> | [nolivedynamics]  <br/> |
    
 プログラムから、インデックスによって [NoLiveDynamics] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   

@@ -7,21 +7,21 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2dde7eec-df3d-723c-db08-7ff0b6107a0b
-description: '最終更新日: 2012 年 7 月 2 日'
-ms.openlocfilehash: 3e534f91863e2a1300e03d112d1f532f486eedd9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2012 年7月2日'
+ms.openlocfilehash: 88716719857cfd623d30a3684fc997ea8019455e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334840"
 ---
 # <a name="feid"></a>FEID
 
  
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォルダーの識別子です。 エントリ id とその他の関連する情報が含まれています。
+フォルダーの識別子。 エントリ id とその他の関連情報が含まれています。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -35,35 +35,35 @@ struct FEID
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
- _abFlags_
+ _abflags_
   
-> フォルダーの識別子を 4 バイトのエントリです。 MAPI エントリ id の詳細については、**[エントリ ID](entryid.md)** を参照してください。 
+> フォルダーの4バイトのエントリ id。 MAPI エントリ識別子の詳細については、「 **[ENTRYID](entryid.md)**」を参照してください。 
     
  _muid_
   
-> ストア プロバイダーを識別する GUID。 **MAPIUID**の型の定義の mapidefs.h を参照してください。 
+> ストアプロバイダーを識別する GUID。 **MAPIUID**の型定義については、「mapidefs.h」を参照してください。 
     
  _プレースホルダー_
   
-> このメンバーは、Outlook の内部使用に予約されている、サポートされていません。
+> このメンバーは、Outlook の内部使用のために予約されており、サポートされていません。
     
  _ltid_
   
-> フォルダーの長期的な ID です。
+> フォルダーの長期 ID。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
+[レプリケーション状態のマシンについて](about-the-replication-state-machine.md)
   
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
   
 [LTID](ltid.md)
   
 [UPFLD](upfld.md)
   
-[SYNC](sync.md)
+[頻度](sync.md)
 

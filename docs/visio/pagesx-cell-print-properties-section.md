@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: a10bf4c2-24f4-4c53-39ba-2b8cd5b50d2c
 description: 図面ページに左右を揃えるプリンター ページの番号を指定します。
-ms.openlocfilehash: 4f1cf3286e7b54dc90925bf2f1ab9fe8532022e7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e912aef2277f5a7d2af5352897654ee986836c48
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32340139"
 ---
-# <a name="pagesx-cell-print-properties-section"></a>[PagesX] セル ([印刷のプロパティ] セクション)
+# <a name="pagesx-cell-print-properties-section"></a>[PagesX] セル ([Print Properties] セクション)
 
 図面ページに左右を揃えるプリンター ページの番号を指定します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 この値は、[OnPage] セルが TRUE に設定されているときに限り使用されます。 
   
@@ -28,7 +28,7 @@ ms.locfileid: "19805973"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [Pagesx]  <br/> |
+| セル名:  <br/> | [pagesx]  <br/> |
    
 プログラムから、インデックスによって [PagesX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

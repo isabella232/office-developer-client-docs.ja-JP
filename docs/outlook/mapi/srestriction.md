@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: c12b4409-da6f-480b-87af-1e5baea2e8bd
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5f8a76cb317ac9bf1b6a4dc4a92b6d6f0098e1d7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a2a6d273495df52adb83393dc5549b0872c8f6f3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341742"
 ---
 # <a name="srestriction"></a>SRestriction
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-特定の行をテーブルの表示を制限するフィルターについて説明します。 
+特定の行にテーブルのビューを制限するためのフィルターを記述します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SRestriction
@@ -57,55 +57,55 @@ typedef struct _SRestriction
 
  **rt**
   
-> 制限の種類です。 使用可能な値は次のとおりです。 
+> 制限の種類。 可能な値は次のとおりです。 
     
 RES_AND 
   
-> ビットごとの**AND**演算が適用される制限**と**制限します。 
+> or **** 制限。これは、制限にビット単位の**and**演算を適用します。 
     
 RES_BITMASK 
   
-> ビットマスク制限ビットマスク プロパティの値が適用されます。
+> ビットマスク制限。これは、プロパティ値にビットマスクを適用します。
     
 RES_COMMENT 
   
-> コメント制限、制限付きのコメントを関連付けます。
+> コメント制限。コメントを制限に関連付けます。
     
 RES_COMPAREPROPS 
   
-> 2 つのプロパティ値を比較する、プロパティの比較制限です。
+> 2つのプロパティ値を比較するプロパティ比較制限。
     
 RES_CONTENT 
   
-> コンテンツ制限、特定のコンテンツのプロパティ値を検索します。
+> コンテンツ制限。特定のコンテンツのプロパティ値を検索します。
     
 RES_EXIST 
   
-> プロパティがサポートされているかどうかを決定する既存の制限します。
+> プロパティがサポートされているかどうかを判断する、存在する制限。
     
 RES_NOT 
   
-> **しない**制限、制約を論理**NOT**演算を適用します。 
+> 制限を適用**せず**、制限に対する論理**not**演算を適用します。 
     
 RES_OR 
   
-> **または**制限、制約を論理**OR**演算が適用されます。 
+> **or**制限。これは、制限に対して論理**or**演算を適用します。 
     
 RES_PROPERTY 
   
-> プロパティ制限プロパティの値が特定の値と一致するかどうかを決定します。
+> プロパティの値が特定の値と一致するかどうかを決定するプロパティ制限。
     
 RES_SIZE 
   
-> サイズの制限、プロパティの値が特定のサイズであるかどうかを決定します。
+> サイズ制限。プロパティ値が特定のサイズかどうかを決定します。
     
 RES_SUBRESTRICTION 
   
-> サブ オブジェクト制限メッセージの添付ファイル、または受信者に制限を適用します。
+> サブオブジェクト制限。これは、メッセージの添付ファイルまたは受信者に制限を適用します。
     
  **res**
   
-> 制限構造のフィルターを記述するのに適用する共用体です。 **Res**のメンバーに含まれている特定の構造は、 **rt**のメンバーの値によって異なります。 制限の種類と構造間のマッピングは、次の表に表示されます。 
+> 適用するフィルターを記述する制限構造の和集合。 **res**メンバーに含まれる特定の構造体は、 **rt**メンバーの値に依存します。 次の表に、制限の種類と構造の間のマッピングを示します。 
     
 |||
 |:-----|:-----|
@@ -122,11 +122,11 @@ RES_SUBRESTRICTION
 |RES_SIZE  <br/> |[SSizeRestriction](ssizerestriction.md) <br/> |
 |RES_SUBRESTRICTION  <br/> |[SSubRestriction](ssubrestriction.md) <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-クライアントは、数とそれぞれのテーブルのビュー内の行の種類を制限して、フォルダー内の特定のメッセージを検索するに**SRestriction**構造体を使用します。 テーブルの制限を適用するには、クライアントは、 [IMAPITable::Restrict](imapitable-restrict.md)または[IMAPITable::FindRow](imapitable-findrow.md)のいずれかを呼び出します。 フォルダーの制限を課すには、クライアントは、フォルダーの[IMAPIContainer::SetSearchCriteria](imapicontainer-setsearchcriteria.md)メソッドを呼び出します。 
+クライアントは、 **srestriction**構造を使用して、テーブルのビュー内の行の数と種類を制限したり、フォルダー内の特定のメッセージを検索したりします。 テーブルに制限を課すために、クライアントは[IMAPITable:: Restrict](imapitable-restrict.md)または[imapitable:: FindRow](imapitable-findrow.md)を呼び出します。 フォルダーに制限を課すために、クライアントはフォルダーの[IMAPIContainer:: setsearchcriteria](imapicontainer-setsearchcriteria.md)メソッドを呼び出します。 
   
-テーブルの制限を使用する方法の詳細については、[制限の詳細](about-restrictions.md)を参照してください。 
+テーブルで制限を使用する方法については、「[制限につい](about-restrictions.md)て」を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

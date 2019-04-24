@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 7a9fdf3f-fd76-40fb-8217-967c6efba5f6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a9f0fac76f06bd638aeff89ff096507209cc0287
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d9ad74d8ae02a49ee3c222394caedfd571f84b1c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336695"
 ---
 # <a name="iaddrbookgetdefaultdir"></a>IAddrBook::GetDefaultDir
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-初期のアドレス帳コンテナーのエントリの識別子を返します。
+最初のアドレス帳コンテナーのエントリ識別子を返します。
   
 ```cpp
 HRESULT GetDefaultDir(
@@ -38,31 +38,31 @@ HRESULT GetDefaultDir(
 
  _lpcbEntryID_
   
-> [out]_LppEntryID_パラメーターで指定されたエントリの識別子のバイト数へのポインター。 
+> 読み上げ_lppentryid_パラメーターによって指定されたエントリ識別子のバイト数へのポインター。 
     
- _lppEntryID_
+ _lppentryid_
   
-> [out]既定のコンテナーのエントリの識別子へのポインターへのポインター。
+> 読み上げ既定のコンテナーのエントリ識別子へのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 既定のコンテナーのエントリ id が正常に返されました。
+> 既定のコンテナーのエントリ識別子が正常に返されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-クライアント アプリケーションとサービス ・ プロバイダーは、既定のアドレス帳コンテナーのエントリの識別子を取得するために**GetDefaultDir**メソッドを呼び出します。 既定のコンテナーは、どのようなユーザーに表示されるアドレス帳を最初に開いたときに、アドレス帳に表示されます。 [IAddrBook::SetDefaultDir](iaddrbook-setdefaultdir.md)メソッドを呼び出すことで、既定のコンテナーが設定されていない場合は、MAPI は個人用アドレス帳 (PAB) ではない名前を持つ最初のコンテナーをデフォルトのコンテナーとして割り当てます。 このようなコンテナーが見つからない場合、個人用アドレス帳が既定のコンテナーになります。 
+クライアントアプリケーションおよびサービスプロバイダーは、 **GetDefaultDir**メソッドを呼び出して、既定のアドレス帳コンテナーのエントリ識別子を取得します。 既定のコンテナーは、アドレス帳が最初に開かれたときに、ユーザーにアドレス帳で表示されることを示します。 [IAddrBook:: SetDefaultDir](iaddrbook-setdefaultdir.md)メソッドの呼び出しによって既定のコンテナーが設定されていない場合、MAPI は、個人用アドレス帳 (PAB) ではない名前の最初のコンテナーを既定のコンテナーとして割り当てます。 このようなコンテナーが見つからない場合、PAB は既定のコンテナーになります。 
   
-既定値を設定するのには、ディレクトリ、クライアント、またはプロバイダーは、 **SetDefaultDir**メソッドを呼び出します。 クライアントとプロバイダーは、 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを呼び出すことはありません。アドレス帳への変更は処理されません、ため変更はすぐに反映されます。 
+既定のディレクトリを設定するために、クライアントまたはプロバイダーは**SetDefaultDir**メソッドを呼び出します。 クライアントとプロバイダーは、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出す必要はありません。アドレス帳への変更は処理されないため、変更はすぐに永続的に加えられます。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MainDlg.cpp  <br/> |CMainDlg::OnOpenDefaultDir  <br/> |MFCMAPI では、 **GetDefaultDir**メソッドを使用して、既定のアドレス帳コンテナーの ID を取得します。  <br/> |
+|maindlg .cpp  <br/> |CMainDlg:: OnOpenDefaultDir  <br/> |mfcmapi は、 **GetDefaultDir**メソッドを使用して、既定のアドレス帳コンテナーの ID を取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: IMAPISyncProgressCallbackProgress
+title: imapisyncprogress scallbackprogress
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6797cd1c-8a0b-4f42-ba56-6162d8e7b058
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5803441486f01883d08cd99048d8eae133cd3f14
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 9b44337a4bc9615558ac6337e99ea206ba063b1a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341259"
 ---
 # <a name="imapisyncprogresscallbackprogress"></a>IMAPISyncProgressCallback::Progress
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[送受信] ダイアログ ボックスの状態を更新します。 ストア プロバイダーは、定期的にこの関数を呼び出します。
+送信/受信ダイアログの状態を更新します。 ストアプロバイダーは、この関数を定期的に呼び出します。
   
 ```cpp
 HRESULT Progress(
@@ -39,17 +39,17 @@ HRESULT Progress(
 
  **pwczsProgress**
   
-> 現在進行中のステップを表示する文字列へのポインター。 進捗状況を更新するのには NULL を指定できます。
+> 現在の進行状況のステップを表示する文字列へのポインター。 進捗状況を更新する場合は、NULL にすることができます。
     
- **ulIndex**
+ **ulindex**
   
-> 進行中の現在の位置。
+> 現在進行中の位置。
     
- **ulIndexMax**
+ **ulindexmax**
   
 > 完全な進捗状況を示すインデックス。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   

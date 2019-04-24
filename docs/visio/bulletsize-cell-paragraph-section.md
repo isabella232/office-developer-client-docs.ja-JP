@@ -9,35 +9,35 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 6ff5d07b-17e2-f6ca-1860-5d498a9ebf06
 description: 箇条書きのサイズを指定します。
-ms.openlocfilehash: e1b6bd1b4535a70bf99b9cd90af3e0d52128da01
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8671bc6f5ec40814b13727bc458f74eb2893f839
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337612"
 ---
-# <a name="bulletsize-cell-paragraph-section"></a>[BulletSize] セル ([段落] セクション)
+# <a name="bulletsize-cell-paragraph-section"></a>[BulletSize] セル ([Paragraph] セクション)
 
 箇条書きのサイズを指定します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 この値は、定義済みの箇条書きまたはユーザー設定の箇条書きに対して、パーセントか特定の値のいずれかを指定できます。 
   
-値がゼロ (0) の場合は、行頭文字は、段落の最初の文字と同じフォント サイズ。 値がパーセント値の場合は、行頭文字、段落の最初の文字のフォント サイズに対する割合でサイズが。 負の値は、パーセンテージとして扱われます。
+値がゼロ (0) の場合、行頭文字は、段落の最初の文字と同じフォントサイズになります。 値がパーセントの場合、箇条書きは段落の最初の文字に指定したパーセントのフォント サイズになります。 負の数字はパーセントと見なします。
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [BulletSize] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | Para.BulletFontSize [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+| セル名 :  <br/> | BulletFontSize [ *i* ] *i* = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [BulletSize] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionParagraph** <br/> |
-| 行インデックス:  <br/> |**visRowParagraph** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+| 行インデックス:  <br/> |**visRowParagraph** +  *i* = ** 0、1、2...  <br/> |
 | セル インデックス:  <br/> |**visBulletFontSize** <br/> |
    
 

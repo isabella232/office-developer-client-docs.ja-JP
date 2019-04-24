@@ -1,5 +1,5 @@
 ---
-title: IMAPISessionAdvise
+title: imapisessionadvise
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: a6a6b6b1-31e2-4899-a5fe-74d5d1c2ccfc
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 704a556b97f5fd90989641a17afe5a11d127e51b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d5d87d7be9cb3524445107e975a298d4afd5bf98
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338620"
 ---
 # <a name="imapisessionadvise"></a>IMAPISession::Advise
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-セッションに影響を与える特定のイベントの通知を受け取ることを登録します。
+セッションに影響を与える指定したイベントの通知を受信するように登録します。
   
 ```cpp
 HRESULT Advise(
@@ -41,15 +41,15 @@ HRESULT Advise(
 
  _cbEntryID_
   
-> [in]_LpEntryID_パラメーターで指定されたエントリの識別子のバイト数です。 
+> 順番_lな tryid_パラメーターで指定されたエントリ識別子のバイト数。 
     
- _lpEntryID_
+ _lて tryid_
   
-> [in]アドレス帳またはメッセージ ストアのオブジェクトについては、通知を生成するか、またはセッションにのみ影響するイベントに関する通知を受信するクライアントを登録することを示す、NULL のエントリの識別子へのポインター。 
+> 順番通知を生成する必要があるアドレス帳またはメッセージストアオブジェクトのエントリ id へのポインター。または、クライアントがセッションにのみ影響を与えるイベントに関する通知を受信するように登録していることを示します。 
     
- _ulEventMask_
+ _uleventmask_
   
-> [in]クライアントに興味を持って登録に含めることが通知イベントの種類を示す値のマスク。 _LpEntryID_が NULL の場合は、MAPI セッションのみに影響する重大なエラー イベントのためにクライアントを自動的に登録します。 _LpEntryID_は、エントリ id をポイントしているときに次の値は、 _ulEventMask_パラメーターに有効です。 
+> 順番クライアントが関心を持っている通知イベントの種類を示す値のマスク。また、登録に含める必要があります。 _lな tryid_が NULL の場合、MAPI は、セッションにのみ影響を与える重大なエラーイベントに対してクライアントを自動的に登録します。 _lare tryid_がエントリ識別子を指す場合、 _uleventmask_パラメーターには次の値が有効です。 
     
 fnevCriticalError 
   
@@ -57,31 +57,31 @@ fnevCriticalError
     
 fnevExtended 
   
-> レジスタの特定のアドレス帳またはメッセージに特定のイベントに関する通知では、プロバイダーを格納し、セッションのシャット ダウンします。
+> 特定のアドレス帳またはメッセージストアプロバイダーに固有のイベントと、セッションがシャットダウンしたことに関する通知を登録します。
     
 fnevNewMail 
   
-> 新しいメッセージの到着の通知を登録します。 
+> 新しいメッセージが到着したことに関する通知を登録します。 
     
 fnevObjectCreated 
   
-> 新しいオブジェクトの作成についての通知を登録します。
+> 新しいオブジェクトの作成に関する通知を登録します。
     
 fnevObjectCopied
   
-> コピーされているオブジェクトについての通知を登録します。
+> コピーされているオブジェクトに関する通知を登録します。
     
 fnevObjectDeleted
   
-> 削除されているオブジェクトについての通知を登録します。
+> 削除されるオブジェクトに関する通知を登録します。
     
 fnevObjectModified
   
-> 変更されているオブジェクトについての通知を登録します。
+> 変更されているオブジェクトに関する通知を登録します。
     
 fnevObjectMoved
   
-> 移動されるオブジェクトについての通知を登録します。
+> 移動中のオブジェクトに関する通知を登録します。
     
 fnevSearchComplete
   
@@ -89,57 +89,57 @@ fnevSearchComplete
     
  _lpAdviseSink_
   
-> [in]後続の通知を受信するアドバイズ シンク オブジェクトへのポインター。 このアドバイズ シンク オブジェクトは既に割り当てられている必要があります。
+> 順番後続の通知を受け取るアドバイズシンクオブジェクトへのポインター。 このアドバイズシンクオブジェクトは、既に割り当てられている必要があります。
     
- _lpulConnection_
+ _lアウト接続_
   
-> [out]呼び出し元の間の接続を表す数値を 0 以外の値へのポインターでは、シンク オブジェクトとのセッションを案内します。
+> 読み上げ呼び出し元のアドバイズシンクオブジェクトとセッション間の接続を表す0以外の数値へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 登録が正常に完了しました。
+> 登録に成功しました。
     
 MAPI_E_INVALID_ENTRYID 
   
-> _LpEntryID_で指定されたエントリの識別子は有効なエントリの識別子ではありません。 
+> _lな tryid_が指すエントリ識別子が有効なエントリ識別子を表していません。 
     
 MAPI_E_NO_SUPPORT 
   
-> _LpEntryID_で指定されたエントリの識別子を担当するサービス プロバイダーは、 _ulEventMask_パラメーターで指定したイベントの種類をサポートしていないか、または通知をサポートしていません。 
+> _lな tryid_で指定されたエントリ識別子を担当するサービスプロバイダーは、 _uleventmask_パラメーターで指定されたイベントの種類をサポートしていないか、または通知をサポートしていません。 
     
 MAPI_E_UNKNOWN_ENTRYID 
   
-> _LpEntryID_で指定されたエントリの識別子は、プロファイル内のサービス プロバイダーのいずれかが処理できません。 
+> _lな tryid_で示されるエントリ識別子は、プロファイル内のどのサービスプロバイダーでも処理できません。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPISession::Advise**メソッドでは、シンク オブジェクト、セッション、および必要に応じて、サービス プロバイダーにアドバイスの呼び出し元の間の接続を確立します。 この接続を使用していずれかのアドバイズ シンクに通知を送信するか、 _lpEntryID_が指すオブジェクトに、 _ulEventMask_パラメーターで指定されたその他のイベントが発生します。 _LpEntryID_が NULL の場合は、ターゲット オブジェクトは、セッションとのみ、重大なエラー、および拡張イベントの通知を送信します。 
+**imapisession:: アドバイズ**メソッドは、呼び出し元のアドバイズシンクオブジェクト、セッション、およびサービスプロバイダーの間の接続を確立します。 この接続は、 _uleventmask_パラメーターで指定された1つ以上のイベントが、 _lな tryid_によって参照されるオブジェクトに対して発生したときに、アドバイズシンクに通知を送信するために使用されます。 _lare tryid_が NULL の場合、ターゲットオブジェクトはセッションで、重大なエラーと拡張イベントに対してのみ通知が送信されます。 
   
-_LpEntryID_は、有効なエントリの識別子をポイントしている場合、MAPI は、**担当のサービス プロバイダーに属しているログオン オブジェクトのメソッド**を呼び出します。 などの_lpEntryID_は、配布リストのエントリ id をポイントしている場合、MAPI は、適切なアドレス帳プロバイダーの[IABLogon::Advise](iablogon-advise.md)メソッドを呼び出します。 
+_lpentryid_が有効なエントリ識別子を指している場合、MAPI は、責任のあるサービスプロバイダーに属するログオンオブジェクトの**アドバイズ**メソッドを呼び出します。 たとえば、lIABLogon _tryid_が配布リストのエントリ識別子を指す場合、MAPI は適切なアドレス帳プロバイダーの[:: Advise](iablogon-advise.md)メソッドを呼び出します。 
   
-通知を送信するには、サービス プロバイダーまたは MAPI のいずれかが登録されているアドバイズ シンクの[IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドを呼び出します。 **OnNotify**通知の構造体をパラメーターの 1 つには、特定のイベントを説明する情報が含まれています。
+通知を送信するために、サービスプロバイダーまたは MAPI は、登録されているアドバイズシンクの[IMAPIAdviseSink:: onnotify](imapiadvisesink-onnotify.md)メソッドを呼び出します。 **onnotify**へのパラメーターの1つは通知構造で、特定のイベントを説明する情報が含まれています。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-システムでは複数の実行スレッドをサポートする、 **OnNotify**への呼び出しも発生することが任意のスレッドで任意の時点。 特定のスレッドで特定の時刻にのみ通知が発生する保証が必要な場合は、**メソッド**に渡すアドバイズ シンク オブジェクトを生成する[HrThisThreadAdviseSink](hrthisthreadadvisesink.md)関数を呼び出します。 
+複数の実行スレッドをサポートするシステムでは、 **onnotify**への呼び出しは任意のスレッドでいつでも発生する可能性があります。 特定のスレッドの特定の時点でのみ通知が発生することを保証する必要がある場合は、 [HrThisThreadAdviseSink](hrthisthreadadvisesink.md)関数を呼び出して、**アドバイズ**メソッドに渡すアドバイズシンクオブジェクトを生成します。 
   
-調べるには、クライアントからログオフしたとき、 _lpEntryID_を NULL に設定され_cbEntryID_を 0 に設定の**アドバイス**を呼び出すことによって、サービス ・ プロバイダーに通知を登録します。 ログオフが発生すると、fnevExtended 通知を受け取ります。 
+クライアントがいつログオフしたかを確認するには、 _lcbEntryID tryid_を**** NULL に設定し、 __ を0に設定して、サービスプロバイダーに通知を登録します。 ログオフが発生すると、fnevExtended 通知が表示されます。 
   
-**Advise**への呼び出しが成功した後、登録をキャンセルするのには[IMAPISession::Unadvise](imapisession-unadvise.md)前に、特定の長期的な使用がない限り、アドバイズ シンク オブジェクトを放します。 
+**アドバイズ**の呼び出しが成功し、 [imapisession::](imapisession-unadvise.md)登録をキャンセルする前に、アドバイズシンクを呼び出した後、特定の長期間使用しない限り、アドバイズシンクオブジェクトを解放します。 
   
-通知の処理の概要については、 [MAPI でのイベントの通知](event-notification-in-mapi.md)を参照してください。 
+通知プロセスの概要については、「 [MAPI でのイベント通知](event-notification-in-mapi.md)」を参照してください。 
   
-通知の処理の詳細については、[通知の処理](handling-notifications.md)を参照してください。 
+通知の処理の詳細については、「[通知の処理](handling-notifications.md)」を参照してください。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|BaseDialog.cpp  <br/> |CBaseDialog::OnNotificationsOn  <br/> |MFCMAPI では、 **IMAPISession::Advise**メソッドを使用して、セッションに対して通知を登録します。  <br/> |
+|basedialog  <br/> |cbasedialog:: onnotificationson  <br/> |mfcmapi は、 **imapisession:: アドバイズ**メソッドを使用して、セッションに対する通知を登録します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

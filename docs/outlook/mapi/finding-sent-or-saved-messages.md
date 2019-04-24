@@ -7,29 +7,29 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 6b6714a5-7f36-4a72-9a2a-0d7fdf0e21b7
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5a2e4f4b248cb8eefd5ee37c0c90d5ef9c0d0cac
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 86373fae2753df66d4456cc0fc00f8b289977650
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337129"
 ---
 # <a name="finding-sent-or-saved-messages"></a>送信または保存されたメッセージの検索
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
  **保存または送信したすべての送信メッセージを検索するには**
   
-1. 受信したメッセージを含むフォルダーに送信済みメッセージを含むフォルダーを比較する[IMsgStore::CompareEntryIDs](imsgstore-compareentryids.md)を呼び出します。 
+1. [IMsgStore:: compareentryids](imsgstore-compareentryids.md)を呼び出して、送信したメッセージを含むフォルダーと、受信メッセージを含むフォルダーを比較します。 
     
-2. **PR_IPM_SENTMAIL_ENTRYID** ([PidTagIpmSentMailEntryId](pidtagipmsentmailentryid-canonical-property.md)) を指すように_lpEntryID1_パラメーターと**PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md)) を指すように_lpEntryID2_パラメーターを設定します。
+2. _lpEntryID1_パラメーターを**PR_IPM_SENTMAIL_ENTRYID** ([PidTagIpmSentMailEntryId](pidtagipmsentmailentryid-canonical-property.md)) を指すように設定し、 _lpEntryID2_パラメーターを**PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md)) を指すように設定します。
     
-削除した場合か、メッセージ送信、または、別のフォルダーに送信したメッセージのいずれかに移動した後、この方法は機能しないことに注意します。 
+送信されたメッセージを削除した場合や、送信したメッセージのいずれかを別のフォルダーに移動した場合は、この方法が機能しないことに注意してください。 
   
-受信メッセージを調べることでは、通常、トランスポート プロバイダーによって設定されているプロパティが欠落しているを確認する場合、は、メッセージがトランスポート プロバイダーによって処理されたことを想定できます。 これらのプロパティは次のとおりです。
+受信メッセージを調べている場合、通常はトランスポートプロバイダーによって設定されるプロパティが存在しないことに注意してください。メッセージがトランスポートプロバイダーによって処理されていないことを前提としています。 これらのプロパティは次のとおりです。
   
 - **PR_RECEIVED_BY**プロパティ 
     

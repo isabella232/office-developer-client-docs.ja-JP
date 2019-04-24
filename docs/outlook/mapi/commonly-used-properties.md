@@ -7,23 +7,23 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 887c5e82-170f-4c3c-986f-465c05fbbdbe
-description: '最終更新日: 2011 年 11 月 8 日'
-ms.openlocfilehash: 6d1eadfa4138cbd8173bccd0f31e2cdc89c9d5d6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年11月8日'
+ms.openlocfilehash: 5e9a1832890c65998a1732278367c0e916fb0c5c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334910"
 ---
 # <a name="commonly-used-properties"></a>よく使用されるプロパティ
 
  
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-必須およびオプションの MAPI プロパティのリストは、いくつかの場所に記載されています。
+必須およびオプションの MAPI プロパティの一覧については、いくつかの場所で説明されています。
   
-これらのインタ フェースをサポートするオブジェクトに関連付けられているプロパティの一覧については、次のインターフェイスを参照してください。
+これらのインターフェイスをサポートするオブジェクトに関連付けられているプロパティの一覧については、次のインターフェイスを参照してください。
   
 - [IABContainer : IMAPIContainer](iabcontainerimapicontainer.md)
     
@@ -43,15 +43,15 @@ ms.locfileid: "22577066"
     
 - [IProfSect : IMAPIProp](iprofsectimapiprop.md)
     
-テーブルに必要なプロパティの一覧は、 [MAPI テーブル](mapi-tables.md)内のテーブルの各種類のドキュメントを参照してください。
+テーブルに必要なプロパティの一覧については、 [MAPI テーブル](mapi-tables.md)の表の種類ごとのドキュメントを参照してください。
   
-MAPI によって定義されているメッセージのクラスの必須およびオプションのメッセージのプロパティのリストは、次のトピックを参照してください。 
+MAPI で定義されているメッセージクラスの必須およびオプションのメッセージプロパティの一覧については、以下のトピックを参照してください。 
   
-- [すべてのメッセージの必須プロパティ](required-properties-for-all-messages.md)
+- [すべてのメッセージに必要なプロパティ](required-properties-for-all-messages.md)
     
-- [必須レポート メッセージ プロパティ](required-report-message-properties.md)
+- [必須のレポートメッセージのプロパティ](required-report-message-properties.md)
     
-- [オプションのレポート メッセージ プロパティ](optional-report-message-properties.md)
+- [オプションのレポートメッセージのプロパティ](optional-report-message-properties.md)
     
 - [すべてのメッセージの受信者プロパティ](recipient-properties-for-all-messages.md)
     

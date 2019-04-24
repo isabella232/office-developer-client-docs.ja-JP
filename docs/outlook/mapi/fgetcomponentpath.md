@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2a303458-3283-409a-bc3b-b891f3fcfc22
-description: '�ŏI�X�V��: 2011�N7��23��'
+description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 3456d81935a0a94bc2158eefd321da968dda9983
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335211"
 ---
 # <a name="fgetcomponentpath"></a>FGetComponentPath
 
@@ -25,7 +25,7 @@ ms.locfileid: "25384501"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プライベート Mapi32.dll へのパスを返します。
+プライベート Mapi32 へのパスを返します。
   
 ```cpp
 BOOL FGetComponentPath(
@@ -39,29 +39,29 @@ BOOL FGetComponentPath(
 
 ## <a name="parameters"></a>パラメーター
 
- _szComponent_
+ _szcomponent_
   
-> [in][Mapi32.dll スタブのレジストリ設定](https://msdn.microsoft.com/library/dd162409.aspx)」で説明する MSIComponentID レジストリ キーです。
+> 順番[Mapi32 スタブレジストリ設定](https://msdn.microsoft.com/library/dd162409.aspx)に記述されている MSIComponentID reg キー。
     
- _szQualifier_
+ _szqualifier_
   
-> [in]MSIApplicationLCID または MSIOfficeLCID のサブキーを[特定のバージョンの MAPI 負荷を選択する](how-to-choose-a-specific-version-of-mapi-to-load.md)」に記載します。 修飾子がない場合、呼び出し元が**null**渡すことができます。 
+> 順番「[読み込む特定のバージョンの MAPI を選択する](how-to-choose-a-specific-version-of-mapi-to-load.md)」で説明されている msiapplicationlcid または msiofficeelcid サブキー。 修飾子がない場合、発信者は**null**を渡すことができます。 
     
- _szDllPath_
+ _szdllpath_
   
-> [in]プライベートの Mapi32.dll は、すべての MAPI 機能 (、Mapi32.dll と同じエクスポート) を持つへのパス。
+> 順番完全な MAPI 機能 (Mapi32 と同じエクスポート) を持つ、プライベート Mapi32 へのパスです。
     
- _cchBufferSize_
+ _cchbuffersize_
   
-> [in]_SzDllPath_、文字のサイズです。
+> 順番_szdllpath_のサイズ (文字数)。
     
- _fInstall_
+ _finstall_
   
-> [in]それが存在しない場合は、プライベート、Mapi32.dll コンポーネントをインストールするのには MAPI を指示します。
+> 順番プライベートの Mapi32 コンポーネントが存在しない場合は、そのコンポーネントをインストールするように MAPI に指示します。
     
 ## <a name="return-value"></a>戻り値
 
- **true**
+ **false**
   
 > パスが見つかりました。
     
@@ -69,9 +69,9 @@ BOOL FGetComponentPath(
   
 > パスが見つかりませんでした。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-プライベート Mapi32.dll へのパスを取得したい場合に、 **FGetComponentPath**関数を使用します。 
+**FGetComponentPath**関数は、プライベート Mapi32 へのパスを取得する必要がある場合に使用します。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -80,5 +80,5 @@ BOOL FGetComponentPath(
 [読み込む MAPI の特定のバージョンを選択する](how-to-choose-a-specific-version-of-mapi-to-load.md)
 
 
-[Mapi32.dll スタブのレジストリ設定](https://msdn.microsoft.com/library/dd162409.aspx)
+[Mapi32 スタブのレジストリ設定](https://msdn.microsoft.com/library/dd162409.aspx)
 

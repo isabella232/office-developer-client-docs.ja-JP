@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: fc97cef7-59c3-5be1-34fe-a40b4b33d1d6
 description: 数値のリストの合計を返します。
-ms.openlocfilehash: a64de440868c055ed917b7646a7c1d81318e3eff
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 749bf1620a26c6f4cf793a2f9e596d5720175be0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332496"
 ---
 # <a name="sum-function"></a>SUM 関数
 
@@ -22,7 +22,7 @@ ms.locfileid: "19806591"
   
 ## <a name="syntax"></a>構文
 
-合計 (* * *[数値 1]* * *、* **数値 2* * *,...、* * *[numberN]* * *) 
+合計 (* * *number1* * *, * * *number2* * *,..., * * *[number n]* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -30,7 +30,7 @@ ms.locfileid: "19806591"
 |:-----|:-----|:-----|:-----|
 | _number1_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |最初の数値を指定します。  <br/> |
 | _number2_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |2 番目の数値を指定します。  <br/> |
-| _numberN_ <br/> |省略可能  <br/> |**数値型 (Numeric)** <br/> |n 番目の数値を指定します。  <br/> |
+| _番号 n_ <br/> |省略可能  <br/> |**数値型 (Numeric)** <br/> |n 番目の数値を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
@@ -38,7 +38,7 @@ ms.locfileid: "19806591"
   
 ## <a name="example"></a>例
 
-SUM(5,7,12)
+合計 (5、7、12)
   
 24 を返します。
   

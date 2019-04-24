@@ -8,11 +8,11 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3281d87f72c043803ad52cc00d3c5e971da00aba
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334889"
 ---
 # <a name="rules"></a>ルール
 
@@ -30,7 +30,7 @@ ms.locfileid: "28710490"
 ## <a name="see-also"></a>関連項目
 
 - [予定](appointments.md)
-- [Calendar](calendar.md)
+- [予定表](calendar.md)
 - [メール](mail.md)
 - [タスク](tasks.md)
 - [操作方法 (Outlook 2013 PIA リファレンス)](how-do-i-outlook-2013-pia-reference.md)

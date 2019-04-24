@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 7935ebed-f252-482c-ad8c-757aa2d8501d
-description: '�ŏI�X�V��: 2011�N7��23��'
+description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: d88ce382b6a6b5f98ec5f88c4deb1565d3b60151
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25382590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336345"
 ---
 # <a name="starting-a-mapi-session"></a>MAPI セッションの開始
 
@@ -21,17 +21,17 @@ ms.locfileid: "25382590"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-セッション開始時に実行される作業のかなりの量ですが、必要な作業は最小限にします。 この作業の大半は、MAPI で作業が[生じます](mapiinitialize.md)し、 [MAPILogonEx](mapilogonex.md)の呼び出しの処理です。 どちらの関数は、セッション通知の処理とユーザー インターフェイスなどの側面を制御するための入力パラメーターとしてフラグを受け入れます。 MAPI ライブラリを初期化するために**生じます**し、MAPI サブシステムにログオンする**MAPILogonEx**を呼び出すときに、これらのフラグを設定することの影響をよく理解するのには重要です。 
+セッションの起動時に大量の作業が実行されますが、必要なタスクは最小限で済みます。 この作業の多くは、 [MAPIInitialize](mapiinitialize.md)および[MAPILogonEx](mapilogonex.md)呼び出しの MAPI 処理で行われます。 どちらの関数も、通知処理やユーザーインターフェイスなどのセッションの側面を制御するための入力パラメーターとしてフラグを受け入れます。 **MAPIInitialize**を呼び出して mapi ライブラリと**MAPILogonEx**を初期化し、mapi サブシステムにログオンするときに、これらの各フラグを設定した場合の影響を理解しておくことが重要です。 
   
  **MAPI セッションを開始するには**
   
-1. MAPI ライブラリの標準セットを初期化するために**生じます**を呼び出します。 
+1. **MAPIInitialize**を呼び出して、MAPI ライブラリの標準セットを初期化します。 
     
-2. OLE ライブラリを使用する場合は、 [OleInitialize](https://msdn.microsoft.com/library/9a13e7a0-f2e2-466b-98f5-38d5972fa391%28Office.15%29.aspx)の OLE 関数を呼び出します。
+2. ole ライブラリを使用する必要がある場合は、ole 関数[oleinitialize](https://msdn.microsoft.com/library/9a13e7a0-f2e2-466b-98f5-38d5972fa391%28Office.15%29.aspx)を呼び出します。
     
-3. MAPI ユーティリティ ライブラリを使用する場合は、 [ScInitMapiUtil](scinitmapiutil.md)を呼び出します。
+3. MAPI ユーティリティライブラリを使用する必要がある場合は、 [ScInitMapiUtil](scinitmapiutil.md)を呼び出してください。
     
-4. **MAPILogonEx**は、MAPI サブシステムにログオンするための有効なプロファイルを使用して呼び出します。 **MAPILogonEx**では、各プロファイルに含まれているメッセージ サービスのサービス プロバイダーを必要と考えられる場合の詳細についてユーザーに確認の構成を確認します。 **MAPILogonEx**が完了すると、構成済みのサービス プロバイダーは、サービスの準備が完了です。 
+4. 有効なプロファイルを使用して**MAPILogonEx**を呼び出して、MAPI サブシステムにログオンします。 **MAPILogonEx**は、プロファイルに含まれているメッセージサービスの各サービスプロバイダーの構成を確認し、必要に応じて、ユーザーに追加情報を要求します。 **MAPILogonEx**が完了すると、構成されたサービスプロバイダーがサービスの準備が整います。 
     
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -41,7 +41,7 @@ ms.locfileid: "25382590"
     
 [OLE for MAPI の初期化](initializing-ole-for-mapi.md)
   
-> MAPI を使用するための OLE を初期化するための呼び出しについて説明します。
+> MAPI で使用するために OLE を初期化するために必要な呼び出しについて説明します。
     
 [MAPI ユーティリティの初期化](initializing-the-mapi-utilities.md)
   
@@ -49,6 +49,6 @@ ms.locfileid: "25382590"
     
 [MAPI へのログオン](logging-on-to-mapi.md)
   
-> クライアント アプリケーションが MAPI サブシステムにログオンする方法について説明します。
+> クライアントアプリケーションが MAPI サブシステムにログオンする方法について説明します。
     
 

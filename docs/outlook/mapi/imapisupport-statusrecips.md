@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9c34538e-5ba4-47c8-8002-85afa9d6c067
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: cda629cf78d3f7915b64c130867ed4f8ebbd6f8d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 39d8786bf558ade4599d69e0a764f87fe60d99f3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341770"
 ---
 # <a name="imapisupportstatusrecips"></a>IMAPISupport::StatusRecips
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-配信し、配信不能レポートを生成します。
+配信レポートおよび配信不能レポートを生成します。
   
 ```cpp
 HRESULT StatusRecips(
@@ -36,15 +36,15 @@ LPADRLIST lpRecipList
 
 ## <a name="parameters"></a>パラメーター
 
- _lpMessage_
+ _lpmessage_
   
-> [in]レポートを生成する対象のメッセージへのポインター。
+> 順番レポートを生成するメッセージへのポインター。
     
  _lpRecipList_
   
-> [in]_LpMessage_が指すメッセージの受信者を記述する[ADRLIST](adrlist.md)構造体へのポインターです。
+> 順番_lpmessage_によって示されるメッセージの受信者を記述する[adrlist](adrlist.md)構造体へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -52,21 +52,21 @@ S_OK
     
 MAPI_W_ERRORS_RETURNED 
   
-> 呼び出しは完了しましたが、この種類の受信者の受信者のオプションはありません。 この警告が返されると、呼び出しを成功として処理する必要があります。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
+> 呼び出しは全体的に成功しましたが、この種類の受信者のオプションはありません。 この警告が返された場合、呼び出しは正常に処理されます。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-トランスポート プロバイダーのサポート オブジェクトの**IMAPISupport::StatusRecips**メソッドを実装します。 トランスポート プロバイダーは、その MAPI の送信を要求する**StatusRecips**の 1 つまたは複数のメッセージの受信者に配信または配信不能レポートを呼び出します。 
+**imapisupport:: StatusRecips**メソッドは、トランスポートプロバイダーのサポートオブジェクトに実装されています。 トランスポートプロバイダーは、 **StatusRecips**を呼び出して、MAPI がメッセージの1つ以上の受信者に対して配信レポートまたは配信不能レポートを送信するよう要求します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-メッセージの処理中には、 **StatusRecips**を複数回呼び出すことができます。 ただし、開いているメッセージの**StatusRecips**を呼び出すと場合、は、メッセージの受信者のすべての配信と配信不能の情報を収集し、その受信者のリストに**StatusRecips**を呼び出して、最善を行います。 コレクションの 1 つのポイントは重要ですが、1 人の受信者に複数の**StatusRecips**呼び出しで複数の同じレポートが送信されます。 
+**StatusRecips**は、メッセージの処理中に複数回呼び出すことができます。 ただし、開いているメッセージに対して**StatusRecips**を呼び出す場合は、メッセージの受信者のすべての配信および配信情報を収集し、その受信者リストの**StatusRecips**を呼び出すことをお勧めします。 1つの受信者に対して複数の**StatusRecips**呼び出しを行うと、複数の同一のレポートが送信される可能性があるため、単一のコレクションのポイントが重要です。 
   
-メッセージの配信または_lpRecipList_パラメーターで指定された**ADRLIST**構造体で配信不能に関連するプロパティを格納します。 配信レポートと配信不能レポートの必須およびオプションのプロパティの一覧は、[必要なレポートのメッセージのプロパティ](required-report-message-properties.md)と[オプションのレポート メッセージのプロパティ](optional-report-message-properties.md)を参照してください。 
+_lpRecipList_パラメーターによって示される**adrlist**構造で、メッセージ配信または配信不能に関連するプロパティを格納します。 配信レポートと配信不能レポートの必須およびオプションのプロパティの完全な一覧については、「[必須のレポートメッセージのプロパティ](required-report-message-properties.md)」および「[オプションのレポートメッセージのプロパティ](optional-report-message-properties.md)」を参照してください。 
   
-[MAPIAllocateBuffer](mapiallocatebuffer.md)と[MAPIAllocateMore](mapiallocatemore.md)関数を使用して、 _lpRecipList_の**ADRLIST**構造体のメモリを割り当てます。 MAPI は、関数を呼び出して、 [MAPIFreeBuffer](mapifreebuffer.md) **StatusRecips**が成功した場合にのみメモリを解放します。 
+[MAPIAllocateBuffer](mapiallocatebuffer.md)関数と[MAPIAllocateMore](mapiallocatemore.md)関数を使用して、 _lpRecipList_の**adrlist**構造のメモリを割り当てます。 MAPI では、 **StatusRecips**が正常に終了した場合にのみ[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出すことによってメモリが解放されます。 
   
-配信し、配信不能レポートの概要については、 [MAPI レポート メッセージ](mapi-report-messages.md)を参照してください。
+配信レポートと配信不能レポートの概要については、「 [MAPI レポートメッセージ](mapi-report-messages.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

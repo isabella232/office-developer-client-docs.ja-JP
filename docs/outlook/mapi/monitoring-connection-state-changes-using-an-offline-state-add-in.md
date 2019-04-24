@@ -1,38 +1,38 @@
 ---
-title: オフライン状態のアドインを使用して、監視のための接続状態の変更
+title: オフライン状態アドインを使用した接続状態変更の監視
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: c482ddce-f2b6-222b-aa30-824b1c6f3b14
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d8385b2379f2fde8689ae2c7fc5d177af696f22e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: d24a6d93943883a5503b57ef223d9be777af13d8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338816"
 ---
-# <a name="monitoring-connection-state-changes-using-an-offline-state-add-in"></a>オフライン状態のアドインを使用して、監視のための接続状態の変更
+# <a name="monitoring-connection-state-changes-using-an-offline-state-add-in"></a>オフライン状態アドインを使用した接続状態変更の監視
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-オフライン状態アドインを使用するには接続状態の変更を監視するのには、前に設定し、アドインを初期化する関数を実装する必要があります。 詳細については、[アドインの設定をオフラインの状態](setting-up-an-offline-state-add-in.md)を参照してください。
+オフライン状態アドインを使用して接続状態の変更を監視するには、アドインをセットアップして初期化するための関数を実装する必要があります。 詳細については、「[オフライン状態アドインの設定](setting-up-an-offline-state-add-in.md)」を参照してください。
   
-オフラインの状態を追加で設定した後は、オフラインのオブジェクトを取得するのに**[HrOpenOfflineObj](hropenofflineobj.md)** 関数を使用する必要があります。 このオフラインのオブジェクトを使用すると、状態モニターを初期化および取得し、現在の状態を設定します。 
+オフライン状態アドインをセットアップした後、 **[hro・ offlineobj](hropenofflineobj.md)** 関数を使用してオフラインオブジェクトを取得する必要があります。 このオフラインオブジェクトを使用すると、状態監視を初期化して、現在の状態を取得および設定できます。 
   
-このトピックでは、これらの状態の監視機能は、オフライン状態のサンプル アドイン内のコード例を使用して説明します。 オフライン状態のサンプル アドインは、COM アドインを Outlook に、**オフライン状態**のメニューを追加し、オフライン状態 API を利用してします。 **オフライン状態**] メニューの [使用を有効にするまたは状態の監視を無効にする、現在の状態を確認して現在の状態を変更できます。 ダウンロードしてオフライン状態のサンプル アドインをインストールする方法の詳細については[、オフライン状態のサンプル アドインをインストールする](installing-the-sample-offline-state-add-in.md)」を参照してください。 オフライン状態 API の詳細については、[の「オフライン状態 API](about-the-offline-state-api.md)を参照してください。
+このトピックでは、サンプルのオフライン状態アドインのコード例を使用して、これらの状態監視機能について説明します。 サンプルのオフライン状態アドインは、オフライン状態のメニューを Outlook に追加し**** 、オフライン状態 API を利用する COM アドインです。 **オフライン状態**メニューを使用して、状態監視を有効または無効にしたり、現在の状態を確認したり、現在の状態を変更したりすることができます。 サンプルのオフライン状態アドインのダウンロードやインストールの詳細については、[サンプルのオフライン状態アドインのインストール](installing-the-sample-offline-state-add-in.md)を参照してください。 オフライン状態 API の詳細については、[オフライン状態 API について](about-the-offline-state-api.md)を参照してください。
   
-オフライン状態のアドインが切断されたとき、正常に終了し、アドインをクリーンアップする機能を実装しなければなりません。 詳細については、[オフライン状態追加の接続を切断する](disconnecting-an-offline-state-add-in.md)を参照してください。
+オフライン状態アドインが切断された場合は、アドインを適切に終了してクリーンアップするための関数を実装する必要があります。 詳細については、「[オフライン状態アドインの切断](disconnecting-an-offline-state-add-in.md)」を参照してください。
   
-## <a name="open-offline-object-routine"></a>オフラインのオブジェクトの開いているルーチン
+## <a name="open-offline-object-routine"></a>オフラインオブジェクトルーチンを開く
 
-接続状態の変更が発生したときに通知を受け取るクライアントは、 **[HrOpenOfflineObj](hropenofflineobj.md)** 関数を呼び出す必要があります。 この関数は、 **[IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)** をサポートしているオフラインのオブジェクトを開きます。 **HrOpenOfflineObj**関数は、ConnectionState.h ヘッダー ファイルで定義されます。 
+接続状態の変更が発生したときにクライアントに通知されるようにするには、 **[hroな offlineobj](hropenofflineobj.md)** 関数を呼び出す必要があります。 この関数は、 **[IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)** をサポートするオフラインオブジェクトを開きます。 **hroな offlineobj**関数は、connectionstate. .h ヘッダーファイルで定義されています。 
   
 > [!NOTE]
-> **HrOpenOfflineObj**関数が ImportProcs.h ヘッダー ファイルで次のように宣言されている: `extern HROPENOFFLINEOBJ* pfnHrOpenOfflineObj;`。 
+> **hropenofflineobj**関数は、次のように、importprocs .h ヘッダーファイルで宣言`extern HROPENOFFLINEOBJ* pfnHrOpenOfflineObj;`されています。 
   
-### <a name="hropenofflineobj-example"></a>HrOpenOfflineObj の使用例
+### <a name="hropenofflineobj-example"></a>hro・ offlineofflineobj の例
 
 ```cpp
 typedef HRESULT (STDMETHODCALLTYPE HROPENOFFLINEOBJ)( 
@@ -44,11 +44,11 @@ typedef HRESULT (STDMETHODCALLTYPE HROPENOFFLINEOBJ)(
 );
 ```
 
-## <a name="initialize-monitor-routine"></a>モニターのルーチンを初期化します。
+## <a name="initialize-monitor-routine"></a>モニタールーチンの初期化
 
-`InitMonitor` 、 **HrOpenOfflineObj**関数を呼び出します。 `InitMonitor`関数は、Outlook では、クライアントにコールバック通知を送信することができますので、 **CMyOfflineNotify**を呼び出すし、 **[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)** 変数をコールバックを登録する`AdviseInfo`。
+関数`InitMonitor`は、 **hropenofflineobj**関数を呼び出します。 この`InitMonitor`関数は**CMyOfflineNotify**を呼び出して、Outlook がコールバック通知をクライアントに送信し、コールバック**[](mapioffline_adviseinfo.md)** を MAPIOFFLINE_ADVISEINFO `AdviseInfo`変数で登録できるようにします。
   
-### <a name="initmonitor-example"></a>InitMonitor() の使用例
+### <a name="initmonitor-example"></a>initmonitor () の例
 
 ```cpp
 void InitMonitor(LPCWSTR szProfile) 
@@ -115,11 +115,11 @@ void InitMonitor(LPCWSTR szProfile)
 }
 ```
 
-## <a name="get-current-state-routine"></a>ルーチンの現在の状態の取得
+## <a name="get-current-state-routine"></a>現在の状態ルーチンを取得する
 
-`GetCurrentState`関数は、 **HrOpenOfflineObj**関数を呼び出すし、オフラインのオブジェクトを使用して、現在の接続状態を取得します。 現在の状態が返されます、`ulCurState`で使用されている変数、`CButtonEventHandler::Click`ユーザーに現在の状態を表示する関数です。 
+関数`GetCurrentState`は**hropenofflineobj**関数を呼び出し、オフラインオブジェクトを使用して現在の接続状態を取得します。 現在の状態は`ulCurState`変数で返され、 `CButtonEventHandler::Click`関数でユーザーに現在の状態を表示するために使用されます。 
   
-### <a name="getcurrentstate-example"></a>GetCurrentState() の使用例
+### <a name="getcurrentstate-example"></a>getselected() の例
 
 ```cpp
 ULONG (LPCWSTR szProfile) 
@@ -172,11 +172,11 @@ ULONG (LPCWSTR szProfile)
 }
 ```
 
-## <a name="set-current-state-routine"></a>ルーチンの現在の状態を設定
+## <a name="set-current-state-routine"></a>現在の状態ルーチンを設定する
 
-`SetCurrentState`関数は、 **HrOpenOfflineObj**関数を呼び出すし、オフラインのオブジェクトを使用して、現在の接続状態を設定します。 `CButtonEventHandler::Click`関数呼び出し、`SetCurrentState`関数、および新しい状態で渡されるから、`ulState`変数です。 
+関数`SetCurrentState`は**hropenofflineobj**関数を呼び出し、オフラインオブジェクトを使用して現在の接続状態を設定します。 `CButtonEventHandler::Click`関数は`SetCurrentState`関数を呼び出し、新しい状態は`ulState`変数を介して渡されます。 
   
-### <a name="setcurrentstate-example"></a>SetCurrentState() の使用例
+### <a name="setcurrentstate-example"></a>setlevel() の例
 
 ```cpp
 HRESULT SetCurrentState(LPCWSTR szProfile, ULONG ulFlags, ULONG ulState) 
@@ -239,11 +239,11 @@ HRESULT SetCurrentState(LPCWSTR szProfile, ULONG ulFlags, ULONG ulState)
 }
 ```
 
-## <a name="notification-routine"></a>通知先ルーチン
+## <a name="notification-routine"></a>通知ルーチン
 
-**[IMAPIOfflineNotify::Notify](imapiofflinenotify-notify.md)** 関数は、クライアントの接続状態が変更されたときに通知を送信する Outlook で使用します。 
+**[IMAPIOfflineNotify:: Notify](imapiofflinenotify-notify.md)** 関数は、接続状態が変更されたときに、クライアントに通知を送信するために Outlook によって使用されます。 
   
-### <a name="cmyofflinenotifynotify-example"></a>CMyOfflineNotify::Notify() の使用例
+### <a name="cmyofflinenotifynotify-example"></a>CMyOfflineNotify:: Notify () の例
 
 ```cpp
 void CMyOfflineNotify::Notify(const MAPIOFFLINE_NOTIFY *pNotifyInfo) 
@@ -311,6 +311,6 @@ void CMyOfflineNotify::Notify(const MAPIOFFLINE_NOTIFY *pNotifyInfo)
 - [オフライン状態 API について](about-the-offline-state-api.md)
 - [サンプルのオフライン状態アドインのインストール](installing-the-sample-offline-state-add-in.md)
 - [サンプルのオフライン状態アドインについて](about-the-sample-offline-state-add-in.md)
-- [オフライン状態アドインの設定](setting-up-an-offline-state-add-in.md)
+- [オフライン状態アドインのセットアップ](setting-up-an-offline-state-add-in.md)
 - [オフライン状態アドインの切断](disconnecting-an-offline-state-add-in.md)
 

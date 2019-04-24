@@ -13,11 +13,11 @@ api_type:
 ms.assetid: c65cdda7-9515-4da9-be75-43ebf45a02df
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c6fa0d8f1323e8562a78080f50dbf448b8019ec2
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25383626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334721"
 ---
 # <a name="pidtagconversationindex-canonical-property"></a>PidTagConversationIndex 標準プロパティ
 
@@ -25,54 +25,54 @@ ms.locfileid: "25383626"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-会話スレッド内でこのメッセージの相対的な位置を示すバイナリ値が含まれています。 
+会話スレッド内でこのメッセージの相対位置を示すバイナリ値を格納します。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_CONVERSATION_INDEX  <br/> |
 |識別子:  <br/> |0x0071  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |一般的なメッセージング  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-会話スレッドは、メッセージと返信の系列を表します。 通常連結されたタイムスタンプ値を使用してこのプロパティが実装されます。 **PR_CONVERSATION_TOPIC** ([PidTagConversationTopic](pidtagconversationtopic-canonical-property.md)) が設定されている場合でもの使用はオプションですが。 
+会話スレッドは、一連のメッセージと返信を表します。 このプロパティは、通常、連結されたタイムスタンプ値を使用して実装されます。 **PR_CONVERSATION_TOPIC** ([PidTagConversationTopic](pidtagconversationtopic-canonical-property.md)) が設定されている場合でも、この use はオプションです。 
   
-MAPI には、作成または会話のインデックスを更新する[ScCreateConversationIndex](sccreateconversationindex.md)関数が用意されています。 関数は、長さのバイト配列として現在のインデックス値を受け取るし、最後に連結するタイムスタンプを持つインデックス値を返します。 別のメッセージへの応答を表すメッセージは、このプロパティを更新するのには**ScCreateConversationIndex**を使用する必要があります。 
+MAPI では、スレッドインデックスを作成または更新する[ScCreateConversationIndex](sccreateconversationindex.md)関数が提供されています。 関数は、現在のインデックス値を、カウントされたバイト配列として取得し、最後にタイムスタンプが連結されたインデックス値を返します。 他のメッセージへの返信を表すメッセージでは、 **ScCreateConversationIndex**を使用してこのプロパティを更新する必要があります。 
   
-メッセージ ストア プロバイダーでは、 **PR_CONVERSATION_INDEX**は常に受信または送信メッセージに対して設定することを保証オプションがあります。 この**ScCreateConversationIndex**では、このプロパティが設定されている場合は、既存の値または NULL でない場合のいずれかを実行できます。 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)が呼び出される前に、このアクションを実行する必要があります。 
+メッセージストアプロバイダーには、 **PR_CONVERSATION_INDEX**が受信または送信メッセージで常に設定されることを保証するオプションがあります。 これを行うには、このプロパティが設定されている場合は既存の値、そうでない場合は NULL を使用して、 **ScCreateConversationIndex**を呼び出します。 このアクションは、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)が呼び出される前に実行する必要があります。 
   
-**PR_CONVERSATION_TOPIC**に対して同じ値を持つすべてのメッセージは、メッセージの階層関係を表示するには、このプロパティで並べ替えることができます。 
+**PR_CONVERSATION_TOPIC**の同じ値を持つすべてのメッセージをこのプロパティで並べ替えて、メッセージの階層的な関係を示すことができます。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
-> プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。
+> 電子メールメッセージオブジェクトで許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

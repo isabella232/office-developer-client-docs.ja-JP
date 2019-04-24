@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 205d00df-488d-4888-8782-a1f70f54d720
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 23b4ed78f4b65a5af4c2f3e11fa770030fe4eeee
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 153bcbfd87ea9e85d834cba2fd9028e98fa25750
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32340958"
 ---
 # <a name="fbadrow"></a>FBadRow
 
@@ -30,8 +30,8 @@ ms.locfileid: "22590163"
 |||
 |:-----|:-----|
 |ヘッダー ファイル:  <br/> |Mapival.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |サービス プロバイダー  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |サービス プロバイダー  <br/> |
    
 ```cpp
 ULONG FBadRow(
@@ -43,17 +43,17 @@ ULONG FBadRow(
 
  _lprow_
   
-> [in]検証する行を識別する[SRow](srow.md)構造体へのポインター。 
+> 順番検証する行を識別する[srow](srow.md)構造体へのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
 TRUE 
   
-> 指定された行が有効ではありません。
+> 指定した行は無効です。
     
 FALSE 
   
-> 指定した行が無効です。
+> 指定した行は有効です。
     
 ## <a name="see-also"></a>関連項目
 

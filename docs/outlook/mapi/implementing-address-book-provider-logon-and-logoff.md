@@ -7,35 +7,35 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c4a1fb5d-ae23-445b-a6f0-ef430b03fc9a
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f26e7b7ec607c9714012870d5367a0e775c62f34
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 8d33bccdd01075d692e5a887082ba51ee23bb083
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332929"
 ---
 # <a name="implementing-address-book-provider-logon-and-logoff"></a>アドレス帳プロバイダーのログオンとログオフの実装
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-アドレス帳プロバイダーのメソッドを実装することによってセッションのログオンとログオフをサポートする、 [IABProvider: IUnknown](iabprovideriunknown.md)インタ フェースです。 * * IABProvider * * インターフェイス**IUnknown**から直接継承し、他の 2 つの方法:**ログオン**と**シャット ダウン**します。 
+アドレス帳プロバイダーは、 [IABProvider: IUnknown](iabprovideriunknown.md)インターフェイスのメソッドを実装することによって、セッションのログオンとログオフをサポートします。 * * IABProvider * * インターフェイスは**IUnknown**から直接継承し、次の2つのメソッドを追加します。**ログオン**と**シャットダウン**。 
   
 ## <a name="logoff"></a>Logoff
 
-MAPI は、プロバイダーが現在のプロファイルに追加し、クライアントは、動的再構成をサポートしているときに、すべてのセッションの冒頭に、プロバイダーの[IABProvider::Logon](iabprovider-logon.md)メソッドを呼び出します。 MAPI では、 **IABProvider::Logon**メソッドを呼び出して、アドレス帳プロバイダーは、ログオン プロセスを開始します。 
+MAPI は、プロバイダーの[IABProvider:: Logon](iabprovider-logon.md)メソッドをすべてのセッションの開始時に呼び出し、プロバイダーが現在のプロファイルに追加され、クライアントが動的再構成をサポートするようになります。 MAPI が**IABProvider:: logon**メソッドを呼び出すと、アドレス帳プロバイダーのログオンプロセスが開始されます。 
   
-**IABProvider::Log を実装するには**
+**IABProvider:: Log を実装するには**
   
-1. すべての MAPI によって渡される出力パラメーターのポインターを初期化します。 
+1. MAPI によって渡されたすべての出力パラメータポインターを初期化します。 
     
-2. サポート オブジェクトの**IUnknown::AddRef**メソッドを呼び出して、参照カウントをインクリメントします。 
+2. サポートオブジェクトの**IUnknown:: AddRef**メソッドを呼び出して、参照カウントをインクリメントします。 
     
-3. サポート オブジェクトの[IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md)メソッドを呼び出して、プロバイダーの構成情報を含むプロファイルのセクションを開きます。 変更を加える場合は、 _lpUID_パラメーターと MAPI_MODIFY フラグの NULL を渡します。 
+3. サポートオブジェクトの[imapisupport:: openprofilesection](imapisupport-openprofilesection.md)メソッドを呼び出して、プロバイダーに関する構成情報を含むプロファイルのセクションを開きます。 変更を行う予定がある場合は、 _lpuid_パラメーターと MAPI_MODIFY フラグに NULL を渡します。 
     
-4. プロファイル セクションの[IMAPIProp::GetProps](imapiprop-getprops.md)メソッドを呼び出して、プロバイダーがデータ ファイルまたはデータベース テーブルの名前などのログオンの必要があるプロパティを取得します。 
+4. プロファイルセクションの[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出して、プロバイダーがログオンに必要とするプロパティ (データファイルやデータベーステーブルの名前など) を取得します。 
     
-5. プロパティは、すべて使用可能で有効なことを確認してください。 必要に応じて、許可されている場合は、無効なまたは不足している情報への追加や修正を行うし、メソッドを呼び出してプロファイル セクションの[IMAPIProp::SetProps](imapiprop-setprops.md)をすべての変更を保存するように求めるダイアログ ボックスを表示します。 使用可能にする必要がある一般的なプロパティの一部は次のとおりです。 
+5. プロパティがすべて使用可能で有効であることを確認してください。 必要であり、許可されている場合は、ユーザーに無効な情報や不足している情報を修正または追加するように求めるダイアログボックスを表示し、プロファイルセクションの[imapiprop:: setprops](imapiprop-setprops.md)メソッドを呼び出して変更を保存します。 利用できるようにする必要がある一般的なプロパティのいくつかを次に示します。 
     
    **PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
     
@@ -46,27 +46,27 @@ MAPI は、プロバイダーが現在のプロファイルに追加し、クラ
    **PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md))
     
    > [!NOTE]
-   > **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) または**PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md)) は設定されていません。 ログオン時に、これらのプロパティは読み取り専用です。 
+   > **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) または**PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md)) を設定しないでください。 ログオン時に、これらのプロパティは読み取り専用になります。 
   
-6. 1 つまたは複数の構成のプロパティが利用できない場合は失敗し、MAPI_E_UNCONFIGURED の値を返します。
+6. 1つ以上の構成プロパティが使用できない場合は、エラーが発生し、MAPI_E_UNCONFIGURED 値が返されます。
     
-7. の[MAPIUID](mapiuid.md)を登録するのには[IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md)を呼び出します。 プロバイダーによっては、 **MAPIUID**を作成できます。 
+7. [MAPIUID](mapiuid.md)を登録するには、呼び出し[imapisupport:: setprovideruid](imapisupport-setprovideruid.md)を呼び出します。 プロバイダーは、次の方法で**MAPIUID**を作成できます。 
     
-   - [IMAPISupport::NewUID](imapisupport-newuid.md)メソッドを呼び出しています。 
+   - [imapisupport:: newuid](imapisupport-newuid.md)メソッドを呼び出しています。 
     
-   - UUIDGEN を呼び出しています。EXE ツールを使用して、いずれかのヘッダー ファイルに含めるには、プロバイダーを使用する GUID を定義します。
+   - UUIDGEN を呼び出しています。EXE ツールを使用して、プロバイダーがヘッダーファイルの1つに含める GUID を定義します。
     
-8. 必要な場合を保存**MAPIUID**の新しく作成された現在のプロファイルのプロファイルのセクションを呼び出すことによって * * IMAPIProp::SetProps * * メソッドです。 
+8. 必要に応じて、プロファイルセクションの * * imapiprop:: setprops * * メソッドを呼び出して、新しく作成した**MAPIUID**を現在のプロファイルに保存します。 
     
-9. **** メソッドを呼び出すことによってプロファイル セクションをリリースします。 
+9. **IUnknown:: release**メソッドを呼び出して、プロファイルセクションを解放します。 
     
-10. 新しいログオン オブジェクトをインスタンス化し、この新しいオブジェクトのアドレスに、 _lppABLogon_パラメーターの内容を設定します。 
+10. 新しいログオンオブジェクトをインスタンス化し、 _lppablogon_パラメーターの内容をこの新しいオブジェクトのアドレスに設定します。 
     
-MAPI 呼び出しの可能性があるため、* * ログオン * * セッション中に何回かメソッド、複数のログオン オブジェクトを作成し、作成される各オブジェクトの追跡を維持することで、実装では、この可能性をサポートすることが賢明です。 **ログオン**の複数の呼び出しをサポートにより、クライアント アプリケーションのユーザーなどの異なるアイデンティティまたは使用して、別の配送先とのセッションにログオンします。 
+セッション中に MAPI が * * Logon * * メソッドを何度も呼び出すことができるため、複数のログオンオブジェクトを作成し、作成された各オブジェクトを追跡できるように、実装でこの可能性をサポートすることをお勧めします。 複数の**ログオン**呼び出しをサポートすることにより、クライアントアプリケーションのユーザーは、異なる id を使用してセッションにログオンしたり、別の配信先を使用したりすることができます。 
   
-**シャット ダウン**は、セッションが終了するときに呼び出されます。 MAPI メソッドを呼び出して、 [IABProvider::Shutdown](iabprovider-shutdown.md)最後のタスクの 1 つとして、セッションをシャット ダウンに関連します。 MAPI は、すべてのプロバイダーのログオン オブジェクトをリリースしましたし、最後の呼び出しを受信することがあると見なすことが、プロバイダーは、この呼び出しを受信するとします。 **IABProvider::Shutdown**の実装では、必要と思われる任意の最終的なクリーンアップを実行します。 などのセッションであるか、または解放するがまだ設定されているオブジェクトのメソッド**が**実行中にアイドル状態のエンジンを使用するのには**MAPIInitIdle**が呼び出される場合、プロバイダーでは**MAPIDeinitIdle**を呼び出す可能性があります。 
+**Shutdown**は、セッションが終了するときに呼び出されます。 MAPI は、セッションのシャットダウンに関連する最後のタスクの1つとして[IABProvider:: Shutdown](iabprovider-shutdown.md)メソッドを呼び出します。 MAPI では、プロバイダーのすべてのログオンオブジェクトが解放され、プロバイダーがこの呼び出しを受信するときに、これが最後に受信する呼び出しであると想定できます。 **IABProvider:: Shutdown**の実装で、必要と思われる最終的なクリーンアップを実行します。 たとえば、プロバイダーが**MAPIInitIdle**を呼び出し、セッション中にアイドル状態のエンジンを使用する場合、またはまだ解放されていないオブジェクトの**IUnknown:: Release**メソッドを呼び出した場合、 **MAPIDeinitIdle**を呼び出すことができます。 
   
-最終的なクリーンアップは、プロバイダーがない場合は、その実装を 1 行のコード変更できます。 
+プロバイダーが最終的なクリーンアップを行わない場合は、次の1行のコードでその実装を構成できます。 
   
 ```cpp
 return S_OK;

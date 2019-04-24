@@ -1,5 +1,5 @@
 ---
-title: ISocialSessionLogonWeb
+title: i"alsessionalsessionlogonweb
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f4217030-5fd1-4ec4-a83f-752717fbb787
-description: フォーム ベース認証を使用して、ソーシャル ネットワーク サイトにログオンします。
-ms.openlocfilehash: 4af0301d5b619ce7f9ff54b97f54b4b00408a564
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: フォームベース認証を使用してソーシャルネットワークサイトにログオンします。
+ms.openlocfilehash: 7ef7af8c1c2cdb783bdecd71b29635468e19dc6a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335365"
 ---
 # <a name="isocialsessionlogonweb"></a>ISocialSession::LogonWeb
 
-フォーム ベース認証を使用して、ソーシャル ネットワーク サイトにログオンします。
+フォームベース認証を使用してソーシャルネットワークサイトにログオンします。
   
 ```cpp
 HRESULT _stdcall LogonWeb([in] BSTR connectIn, [out] BSTR* connectOut);
@@ -25,40 +25,40 @@ HRESULT _stdcall LogonWeb([in] BSTR connectIn, [out] BSTR* connectOut);
 
 ## <a name="parameters"></a>パラメーター
 
-_connectIn_
+_//_
   
-> [in]**Null**では、ログオン フォーム、またはこのメソッドが呼び出されたときに、ログオン プロセスのコンテキストによって、ログオンの資格情報を含む文字列を URL 文字列です。
+> 順番このメソッドが呼び出されたときのログオンプロセスのコンテキストに応じて、 **null**の文字列、web 上のログオンフォームへの URL、またはログオン資格情報を含む文字列。
     
-_connectOut_
+_connectout_
   
-> [out]ログオン資格情報を含む文字列です。
+> 読み上げログオン資格情報を含む文字列。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-Outlook ソーシャル コネクタ (OSC) は、プロバイダーでは、フォーム ベース認証をサポートしていることを示している場合にのみ、 **LogonWeb**メソッドを呼び出します。 プロバイダーでは、**該当****機能**の XML ファイルで**useLogonWebAuth**を設定することでフォーム ベースの認証が必要なことを示します。 プロバイダーでは、 **useLogonWebAuth**が**false**に設定、OSC は基本認証を使用し、 [ISocialSession::Logon](isocialsession-logon.md)メソッドを呼び出します。 
+Outlook Social Connector (.osc) は、プロバイダーがフォームベース認証をサポートしていることを示す場合にのみ、 **logonweb**メソッドを呼び出します。 プロバイダーは、XML の**機能**に対して**uselogonwebauth**を**true**に設定することにより、フォームベース認証が必要であることを示します。 プロバイダーが**uselogonwebauth**を**false**として設定している場合、.osc は基本認証を使用して、 [iime alsession:: Logon](isocialsession-logon.md)メソッドを呼び出します。 
   
-フォーム ベース認証を使用して、ソーシャル ネットワーク サイトへのログオンでは、特定の順序で、 **LogonWeb**メソッドと[ISocialSession::GetLogonUrl](isocialsession-getlogonurl.md)メソッドを呼び出す必要があります。 
+フォームベース認証を使用してソーシャルネットワークサイトにログオンするには、特定の順序で**logonweb**および[isocial alsession:: getlogonurl](isocialsession-getlogonurl.md)メソッドを呼び出す必要があります。 
   
-1. OSC は、最初に**LogonWeb**を呼び出す_connectIn_パラメーターに**null**を渡します。 
+1. .osc は、最初に**logonweb**を呼び出し、 **null**を引数__ として指定します。 
     
-2. プロバイダーは、OSC のように、OSC_E_AUTH_ERROR エラーを発生させます。
+2. プロバイダーは、.osc に OSC_E_AUTH_ERROR エラーを発生させます。
     
-3. OSC は、次に**GetLogonUrl**を呼び出します。
+3. .osc の次のメソッドは、 **getlogonurl**を呼び出します。
     
-4. プロバイダーは、 **GetLogonUrl**メソッドでは、ログオン ページに適切な URL を返します。 
+4. プロバイダーは、 **getlogonurl**メソッドのログオンページに適切な URL を返します。 
     
-5. OSC では、 **GetLogonUrl**によって返される URL を使用して、フォーム ベースのログオン ページが表示します。 
+5. .osc は、 **getlogonurl**によって返される url を使用して、フォームベースのログオンページを表示します。 
     
-6. OSC を呼び出して**LogonWeb** 2 回目、 _connectIn_パラメーターでのログオン フォームに URL を渡します。 
+6. 次に、.osc は**logonweb**をもう一度呼び出し、その URL を "/入力" __ パラメーターでログオンフォームに渡します。 
     
-7. 認証が成功すると、プロバイダーは、OSC を_connectOut_パラメーターにログオン資格情報を返します。 認証が失敗した場合、プロバイダーは、OSC のように、OSC_E_AUTH_ERROR エラーを発生させます。 
+7. 認証が成功すると、プロバイダーは、 _connectout_パラメーターのログオン資格情報を .osc に返します。 認証が失敗した場合、プロバイダーは .osc に OSC_E_AUTH_ERROR エラーを発生させます。 
     
-OSC プロバイダーは、キャッシュされた資格情報を使用してログオンをサポートする場合は、XML の**機能**で**は** **useLogonCached**を指定します。 プロバイダーは、プロバイダーは、接続での格納に OSC をしようとしている_connectOut_の文字列に、ログオン資格情報を配置する必要があります。 OSC では、 _connectOut_の文字列は解釈されません。 OSC では、その**useLogonCached**が**true**を確認した後、OSC は、Windows レジストリに格納する前にセキュリティのための文字列を暗号化します。 OSC は、 [ISocialSession2::LogonCached](isocialsession2-logoncached.md)を呼び出すことによって、ソーシャル ネットワークへのログオンに 2 回目以降に、 _connectIn_パラメーターにこの文字列を渡します。 
+.osc プロバイダーがキャッシュされた資格情報を使用したログ記録をサポートしている場合は、**機能**XML では**true**としてキャッシュされた**uselogoncached**指定します。 プロバイダーは、接続間に格納するために、プロバイダーが .osc を必要とする_connectout_文字列にログオン資格情報を配置する必要があります。 .osc は、 _connectout_文字列を解釈しません。 .osc は、 **uselogoncached**が**true**であることを確認した後、セキュリティのために文字列を暗号化してから Windows レジストリに保存します。 .osc は、 [ISocialSession2:: logoncached](isocialsession2-logoncached.md)を呼び出すことによって、ソーシャルネットワークへの次回のログオン時に、この文字列を引数として渡されます。 __ 
   
 エラー コードの詳細については、「[Outlook Social Connector Provider Error Codes](outlook-social-connector-provider-error-codes.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
 - [ISocialSession : IUnknown](isocialsessioniunknown.md)
-- [フォーム ベースの認証](forms-based-authentication.md)
+- [フォームベース認証](forms-based-authentication.md)
 

@@ -1,5 +1,5 @@
 ---
-title: TNEF タグ付きメッセージ テキスト
+title: TNEF タグ付きメッセージテキスト
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,35 +7,35 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 8c65339e-240c-412d-9b71-69c746468bfb
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 1d514dc8b50183e5d07d71b421a441487e933580
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 2b4d4cd790870a024cac6f2ed9952d18a970235a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339593"
 ---
-# <a name="tnef-tagged-message-text"></a>TNEF タグ付きメッセージ テキスト
+# <a name="tnef-tagged-message-text"></a>TNEF タグ付きメッセージテキスト
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-タグ付きのメッセージのテキストは、親メッセージの添付ファイルの位置を解決するのには TNEF が使用されます。 これは、は、添付ファイルの位置にあるメッセージのテキストのプレース ホルダーを追加することによって行われます。 このプレース ホルダー、または添付ファイルのタグは、TNEF 添付ファイルとの位置を解決する方法を知っていることのような方法で添付ファイルを説明します。 タグの形式は次のとおりです。
+タグ付きメッセージテキストは、親メッセージ内の添付ファイルの位置を解決するために TNEF によって使用されます。 これは、添付ファイルの位置に、メッセージテキストにプレースホルダーを追加することによって行われます。 このプレースホルダーまたは attachment タグには、添付ファイルとその位置の解決方法が TNEF にわかるような方法で添付ファイルが記述されています。 タグの書式は次のとおりです。
   
  `[[ <Object Title> : <KeyNum> in <Stream Name> ]] [[ <File Name> : <KeyNum> in <Transport Name> ]]`
   
- **\<オブジェクトのタイトル\>** と**\<ファイル名\>** は、添付ファイル自体から取得される値を含む変数です。 これらの値は利用できませんの場合、タイトルは TNEF の添付ファイルの種類に基づいて、デフォルトとして使用します。 
+ オブジェクトのタイトル** \<\> **とファイル名は、添付ファイル自体から取得される値を含む変数です。 ** \<\> ** これらの値を使用できない場合、タイトルは添付ファイルの種類に基づいて TNEF によって既定で指定されます。 
   
-** \<KeyNum\>** 変数には、TNEF 添付ファイルに割り当てられている添付ファイルのキーのテキスト表現が含まれています。 基本キーの値が渡される[OpenTnefStreamEx](opentnefstreamex.md)の呼び出しにします。 基本値は 0 にできませんする必要があり、 **OpenTnefStreamEx**を呼び出すたびに同じにしないで。 システム時間に基づいて、実行時ライブラリが用意されています、どのようなランダム番号ジェネレーターから 0 であることを保証する限り、擬似乱数を使用することで十分です。
+**keynum\>変数には、TNEF によって添付ファイルに割り当てられた添付ファイルキーのテキスト表現が含まれてい\<** ます。 キーの基本値が[OpenTnefStreamEx](opentnefstreamex.md)呼び出しに渡されます。 **OpenTnefStreamEx**のすべての呼び出しでは、基本値を0にすることはできません。 ゼロにしない限り、ランタイムライブラリが提供する乱数ジェネレーターから、システム時間に基づく擬似乱数を使用することをお勧めします。
   
-**\<トランスポート名\>** [OpenTnefStreamEx](opentnefstreamex.md)の呼び出しまたは**PR_ATTACH_TRANSPORT_NAME** ([PidTagAttachTransportName](pidtagattachtransportname-canonical-property.md)) プロパティの値に渡されるストリーム名が変数に含まれています。
+** \<トランスポート名\> **の変数には、 [OpenTnefStreamEx](opentnefstreamex.md)呼び出しに渡されたストリーム名、または**PR_ATTACH_TRANSPORT_NAME** ([PidTagAttachTransportName](pidtagattachtransportname-canonical-property.md)) プロパティの値が含まれています。
   
 > [!NOTE]
-> **PR_ATTACH_TRANSPORT_NAME**プロパティと**\<トランスポート名\>** を実装するトランスポート プロバイダーの名前とは何もメッセージのテキストのタグ内の変数があります。 これらのアイテムは、トランスポート プロバイダーが、メッセージング システムの添付ファイルの名前を表します。 
+> メッセージテキストタグの**PR_ATTACH_TRANSPORT_NAME**プロパティと** \<トランスポート名\> **の変数には、実装しているトランスポートプロバイダーの名前とは無関係なものがあります。 これらのアイテムは、トランスポートプロバイダーおよびメッセージングシステムの添付ファイルの名前を表します。 
   
-トランスポート プロバイダーは、 [ITnef::OpenTaggedBody](itnef-opentaggedbody.md)メソッドを呼び出すことによってタグ付けされたメッセージ テキストのメッセージが表示されたら、メッセージのテキストがタグ付けされます。 タグ付きテキスト ストリームから読み取る場合、TNEF は、適切なタグを使用して**PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md)) のプロパティに指定したメッセージ テキストの 1 つの文字を置き換えます。 タグ付きのテキスト ストリームに書き込む場合、TNEF タグの受信データを確認、関連付けられている添付ファイルを検索、タグを 1 つの空白文字に置き換えます。
+メッセージテキストは、トランスポートプロバイダーが[ITnef:: OpenTaggedBody](itnef-opentaggedbody.md)メソッドを呼び出して、タグ付きメッセージテキストを要求したときにタグ付けされます。 タグ付きテキストストリームから読み取る場合、TNEF は、 **PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md)) プロパティで指定されたインデックスで、メッセージテキストに含まれていた単一の文字を適切なタグに置き換えます。 タグ付きテキストストリームに書き込む場合、TNEF は受信データのタグをチェックし、関連付けられた添付ファイルを見つけて、タグを1つのスペース文字に置き換えます。
   
-タグ付けされたメッセージのテキストを使用すると、トランスポート プロバイダーを維持できる、メッセージング システムがメッセージのテキストに加えた変更のほとんどに関係なく、添付ファイルの位置に注意してください。
+タグ付きメッセージテキストを使用すると、メッセージングシステムによってメッセージテキストに加えられたほとんどの変更に関係なく、トランスポートプロバイダーが添付ファイルの位置を保持することができます。
   
 

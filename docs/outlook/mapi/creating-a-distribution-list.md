@@ -1,5 +1,5 @@
 ---
-title: 配布リストを作成します。
+title: 配布リストの作成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,23 +7,23 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: b63a6024-910d-4569-a3b4-c3ebf0b32c3d
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f0a6b7af196073d52ce98037b443569dcd1f41e6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 7108ae215562169244100a56cc9b9208d78b1893
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32333027"
 ---
-# <a name="creating-a-distribution-list"></a>配布リストを作成します。
+# <a name="creating-a-distribution-list"></a>配布リストの作成
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアントは、個人用アドレス帳 (PAB) などの変更可能なコンテナーに直接配布リストを作成することができます。
+クライアントは、個人用アドレス帳 (PAB) などの変更可能なコンテナーに配布リストを直接作成することができます。
   
-**個人アドレス帳の配布リストを作成するには**
+**PAB で配布リストを作成するには**
   
-1. プロパティを 1 つのタグ、 **PR_DEF_CREATE_DL** ([PidTagDefCreateDl](pidtagdefcreatedl-canonical-property.md)) で次のようにサイズのプロパティ タグ配列を作成します。
+1. 次のように、 **PR_DEF_CREATE_DL** ([PidTagDefCreateDl](pidtagdefcreatedl-canonical-property.md)) という1つのプロパティタグを持つサイズ付きプロパティタグ配列を作成します。
     
    ```cpp
     SizedPropTagArray(1, tagaDefaultDL) =
@@ -35,7 +35,7 @@ ms.locfileid: "22582547"
     };
    ```
 
-2. 個人アドレス帳のエントリ id を取得するために[られたユーザーのプライマリ](iaddrbook-getpab.md)を呼び出します。 エラーが発生、または**GetPAB**には、0 または NULL が返されますが続行されません。 
+2. [IAddrBook:: getpab](iaddrbook-getpab.md)を呼び出して、pab のエントリ識別子を取得します。 エラーが発生した場合、または**getpab**が0または NULL を返した場合は続行しません。 
     
    ```cpp
     LPENTRYID peidPAB = NULL;
@@ -43,7 +43,7 @@ ms.locfileid: "22582547"
     lpIAddrBook->GetPAB(&cbeidPAB, &peidPAB);
    ```
 
-3. 開くには、個人用アドレス帳[アドレス帳コンテナー](iaddrbook-openentry.md)を呼び出します。 _UlObjType_の出力パラメーターは、MAPI_ABCONT に設定する必要があります。 
+3. [IAddrBook:: openentry](iaddrbook-openentry.md)を呼び出して、PAB を開きます。 _ulobjtype_出力パラメーターは、MAPI_ABCONT に設定する必要があります。 
     
    ```cpp
     ULONG ulObjType = 0;
@@ -55,7 +55,7 @@ ms.locfileid: "22582547"
                     &lpPABCont);
    ```
 
-4. PR_DEF_CREATE_DL プロパティを使用して、配布リストを作成するテンプレートを取得するために、個人用アドレス帳の[IMAPIProp::GetProps](imapiprop-getprops.md)メソッドを呼び出します。 
+4. PAB の[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出して、配布リストを作成するために使用するテンプレートである PR_DEF_CREATE_DL プロパティを取得します。 
     
    ```cpp
     lpPABCont->GetProps(0,
@@ -64,15 +64,15 @@ ms.locfileid: "22582547"
     
    ```
 
-5. **GetProps**が失敗した場合。 
+5. **GetProps**が失敗した場合: 
     
-   1. **IMAPITable**インターフェイスを使用して**PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) のプロパティを開くには、個人用アドレス帳の[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを呼び出します。 
+   1. PAB の[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出して、 **IMAPITable**インターフェイスを持つ**PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) プロパティを開きます。 
       
-   2. **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) の列が"MAPIPDL"にします行を検索するプロパティ条件を作成します。 
+   2. **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) 列が "mapipdl" に等しい行を検索するプロパティ制限を作成します。 
       
-   3. この行を検索するのには[IMAPITable::FindRow](imapitable-findrow.md)を呼び出します。 
+   3. この行を検索するには、 [IMAPITable:: FindRow](imapitable-findrow.md)を呼び出します。 
     
-6. **GetProps**または**FindRow**のいずれかによって返されるエントリの識別子を保存します。
+6. **GetProps**または**FindRow**のどちらかによって返されるエントリ識別子を保存します。
     
    ```cpp
     peidDefDLTpl = lpspvDefDLTpl->Value.bin.pb;
@@ -80,7 +80,7 @@ ms.locfileid: "22582547"
     
    ```
 
-7. 保存されたエントリの識別子によって表されたテンプレートを使用して新しいエントリを作成するのには、個人用アドレス帳の[IABContainer::CreateEntry](iabcontainer-createentry.md)メソッドを呼び出します。 返されるオブジェクトされるメッセージングのユーザーではなく、配布リストと、この呼び出しはリモートとは限りません。 _UlFlags_パラメーター エントリが 2 回追加されることを防ぐために CREATE_CHECK_DUP フラグが渡されることに注意してください。 
+7. PAB の[IABContainer:: createentry](iabcontainer-createentry.md)メソッドを呼び出して、保存したエントリ id で表されるテンプレートを使用して新しいエントリを作成します。 この呼び出しがリモートである場合、返されるオブジェクトがメッセージングユーザーではなく配布リストであると仮定してはなりません。 CREATE_CHECK_DUP フラグは_ulflags_パラメーターで渡されるため、エントリが2回追加されることはありません。 
     
    ```cpp
     lpPABCont->CreateEntry(cbeidDefDLTpl,
@@ -89,16 +89,16 @@ ms.locfileid: "22582547"
                     &lpNewPABEntry);
    ```
 
-8. IID_IDistList を渡すことを確認エントリ、配布リストをサポートするのには、インターフェイス識別子と、新しいエントリの**IUnknown::QueryInterface**メソッドを呼び出して、 [IDistList: IMAPIContainer](idistlistimapicontainer.md)インタ フェースです。 **CreateEntry**は、特定の**IMailUser**または**IDistList**のポインターではなく、 **IMAPIProp**ポインターを返す、ために、配布リスト オブジェクトが作成されたことを確認します。 **QueryInterface**が成功した場合、メッセージングのユーザーではなく、配布リストが作成されていることを確認できます。 
+8. 新しいエントリの**IUnknown:: QueryInterface**メソッドを呼び出して、IID_IDistList をインターフェイス識別子として渡し、エントリが配布リストであるかどうかを確認し、 [IMAPIContainer](idistlistimapicontainer.md)インターフェイスをサポートします。 **createentry**は、より具体的な**imailuser**または**imailuser**ポインターではなく**imapiprop**ポインターを返すので、配布リストオブジェクトが作成されたことを確認します。 **QueryInterface**が成功した場合は、メッセージングユーザーではなく、配布リストが作成されていることを確認できます。 
     
-9. 表示名およびその他のプロパティを設定するのには、配布リストの[IMAPIProp::SetProps](imapiprop-setprops.md)メソッドを呼び出します。 
+9. 配布リストの[imapiprop:: setprops](imapiprop-setprops.md)メソッドを呼び出して、表示名とその他のプロパティを設定します。 
     
-10. 1 つまたは複数のメッセージングのユーザーを追加するのには、配布リストの[IABContainer::CreateEntry](iabcontainer-createentry.md)メソッドを呼び出します。 
+10. 配布リストの[IABContainer:: createentry](iabcontainer-createentry.md)メソッドを呼び出して、1つまたは複数のメッセージングユーザーを追加します。 
     
-11. 保存する準備ができたら、配布リストの[IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを呼び出します。 保存されている配布リストのエントリの識別子を取得するには、KEEP_OPEN_READWRITE フラグを設定し、 [IMAPIProp::GetProps](imapiprop-getprops.md) ([PidTagEntryId](pidtagentryid-canonical-property.md)) の**PR_ENTRYID**プロパティを要求するを呼び出します。
+11. 保存する準備ができたら、配布リストの[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出します。 保存されている配布リストのエントリ識別子を取得するには、KEEP_OPEN_READWRITE フラグを設定してから、 **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティを要求する[imapiprop:: GetProps](imapiprop-getprops.md)を呼び出します。
     
-12. **** メソッドを呼び出すことによって新しい配布リストと、個人用アドレス帳を解放します。 
+12. **IUnknown:: release**メソッドを呼び出して、新しい配布リストと PAB を解放します。 
     
-13. 個人用アドレス帳およびサイズのプロパティ タグ配列のエントリの識別子のメモリを解放するのには[MAPIFreeBuffer](mapifreebuffer.md)を呼び出します。 
+13. [MAPIFreeBuffer](mapifreebuffer.md)を呼び出して、PAB のエントリ識別子とサイズ付きプロパティタグ配列のメモリを解放します。 
     
 

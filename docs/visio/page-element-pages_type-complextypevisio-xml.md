@@ -1,31 +1,31 @@
 ---
-title: ページ要素 (Pages_Type complexType)'Visio XML (')
+title: Page 要素 (Pages_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6e4ac41f-3855-05d8-e659-02c265b8750c
-description: ドキュメント内のページを定義する要素が含まれています。
+description: 文書内のページを定義する要素を格納します。
 ms.openlocfilehash: 800e4ab2c6446ab298747f0492800000bb44cca3
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25398011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334448"
 ---
-# <a name="page-element-pagestype-complextype-visio-xml"></a>ページ要素 (Pages_Type complexType)'Visio XML (')
+# <a name="page-element-pagestype-complextype-visio-xml"></a>Page 要素 (Pages_Type complexType) (' Visio XML ')
 
-ドキュメント内のページを定義する要素が含まれています。
+文書内のページを定義する要素を格納します。
   
 ## <a name="element-information"></a>要素情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Page_Type](page_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
-|**文書パーツ** <br/> |pages.xml  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
+|**文書パーツ** <br/> |ページの xml  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -36,34 +36,34 @@ ms.locfileid: "25398011"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。 
+スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[Pages](pages-elementvisio-xml.md) <br/> |[Pages_Type](pages_type-complextypevisio-xml.md) <br/> |ドキュメントの**ページ**要素が含まれています。  <br/> |
+|[Pages](pages-elementvisio-xml.md) <br/> |[Pages_Type](pages_type-complextypevisio-xml.md) <br/> |文書の**ページ**要素が含まれています。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**型**|**説明**|
+|**Element**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[PageSheet](pagesheet-element-page_type-complextypevisio-xml.md) <br/> |[PageSheet_Type](pagesheet_type-complextypevisio-xml.md) <br/> |**ページ**要素のページ シートを定義する要素が含まれています。  <br/> |
+|[PageSheet](pagesheet-element-page_type-complextypevisio-xml.md) <br/> |[PageSheet_Type](pagesheet_type-complextypevisio-xml.md) <br/> |**page**要素のページシートを定義する要素を格納します。  <br/> |
    
 ### <a name="attributes"></a>属性
 
-|**属性**|**型**|**必須**|**説明**|**使用可能な値**|
+|**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|背景  <br/> |xsd:boolean  <br/> |省略可能  <br/> |ページが背景ページであることを示すフラグです。  <br/> |Xsd:boolean の値を入力します。  <br/> |
-|BackPage  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |このページの背景ページの ID です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|ID  <br/> |xsd:unsignedInt  <br/> |必須  <br/> |その親要素内の要素の一意の ID。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|IsCustomName  <br/> |xsd:boolean  <br/> |省略可能  <br/> |名前がユーザーによってカスタマイズされているかどうかを示します。  <br/> |Xsd:Boolean の値を入力します。  <br/> |
-|IsCustomNameU  <br/> |xsd:boolean  <br/> |省略可能  <br/> |汎用名がユーザーによってカスタマイズされているかどうかを示します。  <br/> |Xsd:Boolean の値を入力します。  <br/> |
-|名前  <br/> |xsd:string  <br/> |省略可能  <br/> |要素の名前です。  <br/> |Xsd:string の値を入力します。  <br/> |
-|NameU  <br/> |xsd:string  <br/> |省略可能  <br/> |要素の汎用名です。  <br/> |Xsd:string の値を入力します。  <br/> |
-|ReviewerID  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |校正用オーバーレイに関連付けられている校閲者の ID です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|ViewCenterX  <br/> |xsd:double  <br/> |省略可能  <br/> |**ViewCenterX**と**ViewCenterY**は、新しいビュー (ウィンドウ) には、最初に開いたときのページで中心点を指定します。  <br/> |Xsd:double 型の値です。  <br/> |
-|ViewCenterY  <br/> |xsd:double  <br/> |省略可能  <br/> |**ViewCenterX**と**ViewCenterY**は、新しいビュー (ウィンドウ) には、最初に開いたときのページで中心点を指定します。  <br/> |Xsd:double 型の値です。  <br/> |
-|ViewScale  <br/> |xsd:double  <br/> |省略可能  <br/> |ページの新しいビュー (ウィンドウ) を開くときに使用する既定の拡大率。 たとえば、1 は 100% です。1.5 = 150% というようにします。  <br/> |Xsd:double 型の値です。  <br/> |
+|背景  <br/> |xsd: boolean  <br/> |省略可能  <br/> |ページが背景ページかどうかを示すフラグ。  <br/> |xsd: boolean 型の値。  <br/> |
+|BackPage  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |このページの背景ページの ID です。  <br/> |xsd:/signedint 型の値。  <br/> |
+|ID  <br/> |xsd: アン signedint  <br/> |必須  <br/> |親要素内の要素の一意の ID。  <br/> |xsd:/signedint 型の値。  <br/> |
+|iscustomname  <br/> |xsd: boolean  <br/> |省略可能  <br/> |ユーザーによって名前がカスタマイズされているかどうかを示します。  <br/> |xsd: Boolean 型の値。  <br/> |
+|IsCustomNameU  <br/> |xsd: boolean  <br/> |省略可能  <br/> |ユーザーが汎用名をカスタマイズしたかどうかを示します。  <br/> |xsd: Boolean 型の値。  <br/> |
+|名前  <br/> |xsd: string  <br/> |省略可能  <br/> |要素の名前。  <br/> |xsd: string 型の値。  <br/> |
+|NameU  <br/> |xsd: string  <br/> |省略可能  <br/> |要素の汎用名。  <br/> |xsd: string 型の値。  <br/> |
+|ReviewerID  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |マークアップオーバーレイに関連付けられているレビュー担当者の ID。  <br/> |xsd:/signedint 型の値。  <br/> |
+|ViewCenterX  <br/> |xsd: double  <br/> |省略可能  <br/> |**ViewCenterX**および**viewcenter y**では、最初に開いたときに新しいビュー (ウィンドウ) が想定するページ上の中心点を指定します。  <br/> |xsd: double 型の値。  <br/> |
+|view中央 y  <br/> |xsd: double  <br/> |省略可能  <br/> |**ViewCenterX**および**viewcenter y**では、最初に開いたときに新しいビュー (ウィンドウ) が想定するページ上の中心点を指定します。  <br/> |xsd: double 型の値。  <br/> |
+|viewscale  <br/> |xsd: double  <br/> |省略可能  <br/> |ページの新しいビュー (ウィンドウ) を開くときに使用する既定の拡大率を設定します。 たとえば、1 = 100% のようにします。1.5 = 150% など。  <br/> |xsd: double 型の値。  <br/> |
    
 

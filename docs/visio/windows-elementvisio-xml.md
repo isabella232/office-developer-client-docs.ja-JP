@@ -1,31 +1,31 @@
 ---
-title: Windows 要素 ' Visio XML (')
+title: Windows 要素 (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1880734a-f086-ce6c-5a93-47851bcdd99d
-description: ドキュメントのウィンドウの要素が含まれています。
+description: 文書のウィンドウ要素を格納します。
 ms.openlocfilehash: df4d4bc48db157bd05fd39177975c9dbeaa5de52
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339824"
 ---
-# <a name="windows-element-visio-xml"></a>Windows 要素 ' Visio XML (')
+# <a name="windows-element-visio-xml"></a>Windows 要素 (' Visio XML ')
 
-ドキュメントの**ウィンドウ**の要素が含まれています。 
+文書の**ウィンドウ**要素を格納します。 
   
 ## <a name="element-information"></a>要素情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Windows_Type](windows_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
-|**文書パーツ** <br/> |windows.xml  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
+|**文書パーツ** <br/> |windows .xml  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -36,7 +36,7 @@ ms.locfileid: "25386804"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。 
+スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
@@ -44,16 +44,15 @@ ms.locfileid: "25386804"
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**型**|**説明**|
+|**Element**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[Window](window-element-windows_type-complextypevisio-xml.md) <br/> |[Window_Type](window_type-complextypevisio-xml.md) <br/> |Microsoft Visio インスタンスで開いているウィンドウを表します。
-  <br/> |
+|[Window](window-element-windows_type-complextypevisio-xml.md) <br/> |[Window_Type](window_type-complextypevisio-xml.md) <br/> |Microsoft Visio インスタンスで開いているウィンドウを表します。  <br/> |
    
 ### <a name="attributes"></a>属性
 
-|**属性**|**型**|**必須**|**説明**|**使用可能な値**|
+|**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|ClientHeight  <br/> |xsd:unsignedShort  <br/> |省略可能  <br/> |表示領域の高さを表します  <br/> |Xsd:unsignedShort の値を入力します。  <br/> |
-|ClientWidth  <br/> |xsd:unsignedShort  <br/> |省略可能  <br/> |表示領域の幅の寸法を表す  <br/> |Xsd:unsignedShort の値を入力します。  <br/> |
+|ClientHeight  <br/> |xsd: アン signedshort  <br/> |省略可能  <br/> |表示領域の高さの次元を表します。  <br/> |xsd: _ signedshort 型の値。  <br/> |
+|ClientWidth  <br/> |xsd: アン signedshort  <br/> |省略可能  <br/> |表示領域の幅の大きさを表します。  <br/> |xsd: _ signedshort 型の値。  <br/> |
    
 

@@ -1,5 +1,5 @@
 ---
-title: FieldDefinition ストリームの構造
+title: fielddefinition ストリームの構造
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,89 +7,89 @@ localization_priority: Normal
 ms.assetid: 93acdbc8-381f-45d5-be6c-0cad066269fe
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 98584e450bb820dbce05b0f8d2c6d15551586130
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25383276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334896"
 ---
-# <a name="fielddefinition-stream-structure"></a>FieldDefinition ストリームの構造
+# <a name="fielddefinition-stream-structure"></a>fielddefinition ストリームの構造
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-FieldDefinition ストリームの構造体には、ユーザー定義のフィールドのフィールドの定義または組み込みのフィールドのデータ バインディングの設定のセットのいずれかが含まれています。
+fielddefinition ストリーム構造には、ユーザー定義フィールドのフィールド定義、または組み込みフィールドのデータバインド設定のセットのいずれかが含まれています。
   
-構造体には、ユーザー定義のフィールドのフィールド定義が含まれている場合にプログラムを使用して、FieldDefinition ストリームの構造を操作できます。 プログラムで作成または構造体には、組み込みのフィールドの設定が含まれている場合は、FieldDefinition 構造体を変更しないようにします。 組み込みのフィールドには、このような設定を維持するために Microsoft Outlook のフォーム デザイナーを使用してください。
+ユーザー定義のフィールドのフィールド定義が構造に含まれている場合は、プログラムを使用して fielddefinition stream 構造を操作できます。 組み込みフィールドの設定が構造に含まれている場合は、プログラムを使用して fielddefinition 構造を作成または変更しないでください。 組み込みフィールドの設定を維持するには、Microsoft Outlook フォームデザイナーを使用する必要があります。
   
 > [!NOTE]
-> Outlook には、フィールドの定義の 2 つの形式がサポートされています: PropDefV1 と PropDefV2。 PropDefV1 形式フィールドの定義にはには、次のデータ要素が含まれています: フラグ、VT、DispId、NmidNameLength、NmidName、NameANSI、FormulaANSI、ValidationRuleANSI、ValidationTextANSI、および ErrorANSI。 PropDefV2 形式には、同じ要素や、InternalType と SkipBlocks の要素が含まれています。 
+> Outlook では、PropDefV1 と PropDefV2 の2つの形式のフィールド定義をサポートしています。 フィールド定義の PropDefV1 形式には、Flags、VT、DispId、NmidNameLength、nmidname、nameansi、FormulaANSI、validationruleansi、validationruleansi、および erroransi の各データ要素が含まれています。 PropDefV2 形式には、同じ要素と、internaltype 要素と skipblocks 要素が含まれています。 
 >
-> Outlook では、PropDefV2 フィールドの定義の形式で FormulaANSI、ValidationRuleANSI、および ValidationTextANSI のデータ要素の Unicode バージョンは保持されません。 場合はこれらの要素には、非 ASCII 文字が含まれている、これらの文字が Outlook を実行しているコンピューターの ANSI コード ページによって一貫性がない解釈可能性があります。 したがって、これらのデータ要素の ASCII 文字のみで構成される文字列の値のみを使用してください。 
+> Outlook では、PropDefV2 フィールド定義形式の FormulaANSI、validationruleansi、および validationruleansi データ要素の Unicode バージョンは保持されません。 これらの要素に ASCII 以外の文字が含まれている場合、Outlook を実行しているコンピューターの ANSI コードページによっては、これらの文字が一貫して解釈されないことがあります。 そのため、これらのデータ要素には、ASCII 文字のみで構成されている文字列値のみを使用する必要があります。 
   
-このストリーム内のデータ要素は、以下に指定した順序で互いのすぐ後、リトル エンディアンのバイト順で格納されます。
+このストリームの Data 要素は、次に示す順序で互いに続けて、リトルエンディアンバイト順に格納されます。
   
-- フラグ: DWORD (4 バイト) の値と意味は次の表に記載されている 1 つ以上のフラグの組み合わせです。
+- flags: DWORD (4 バイト) は、次の表に示すように、値と意味を含む0個以上のフラグの組み合わせです。
     
     |**フラグ名**|**値**|**説明**|
     |:-----|:-----|:-----|
-    |PDO_IS_CUSTOM  <br/> |0x00000001  <br/> |FieldDefinition 構造体には、ユーザー定義フィールドの定義が含まれています。  <br/> |
-    |PDO_REQUIRED  <br/> |0x00000002  <br/> |このフィールドに連結されたフォーム コントロールの**プロパティ**] ダイアログ ボックスの [**検証**] タブでの**値がこのフィールドに必要な**チェック ボックスが選択されます。  <br/> |
-    |PDO_PRINT_SAVEAS  <br/> |0x00000004  <br/> |フォーム コントロールのチェック ボックスは、このフィールドにバインドされている**印刷用には、このフィールドを含めると名前を付けて保存****のプロパティ**] ダイアログ ボックスの [**検証**] タブで選択しました。  <br/> |
-    |PDO_CALC_AUTO  <br/> |0x00000008  <br/> |このフィールドに連結されたフォーム コントロールの**プロパティ**] ダイアログ ボックスの [**値**] タブで**次の数式を自動的に計算**のチェック ボックスが選択されます。  <br/> |
-    |PDO_FT_CONCAT  <br/> |0x00000010  <br/> |これは、フィールドの種類**の組み合わせ**との**組み合わせの式のフィールド**] ダイアログ ボックスで選択した**フィールドの組み合わせすべてを相互に**オプションがあります。  <br/> |
-    |PDO_FT_SWITCH  <br/> |0x00000020  <br/> |このフィールドは、型**の組み合わせ**のと**組み合わせ数式フィールド**] ダイアログ ボックスで**最初の空ではないフィールドだけ、うちの表示**オプションを選択します。  <br/> |
-    |PDO_PRINT_SAVEAS_DEF  <br/> |0x00000040  <br/> |Outlook でこのフラグが設定されていないが、すべてのユーザー定義フィールドの定義に含まれます。  <br/> |
+    |PDO_IS_CUSTOM  <br/> |0x00000001  <br/> |fielddefinition 構造には、ユーザー定義フィールドの定義が含まれています。  <br/> |
+    |PDO_REQUIRED  <br/> |0x00000002  <br/> |このフィールドに連結されているフォームコントロールの場合、[**プロパティ**] ダイアログボックスの [**検証**] タブで、**このフィールドに値**を設定するためのチェックボックスがオンになっている必要があります。  <br/> |
+    |PDO_PRINT_SAVEAS  <br/> |0x00000004  <br/> |このフィールドに連結されているフォームコントロールの場合、[**プロパティ**] ダイアログボックスの [**検証**] タブで [**印刷および名前を付けてこのフィールドを含める**] チェックボックスがオンになっています。  <br/> |
+    |PDO_CALC_AUTO  <br/> |0x00000008  <br/> |このフィールドに連結されているフォームコントロールの場合は、[**プロパティ**] ダイアログボックスの [**値**] タブで、[**この式を自動的に計算**する] チェックボックスがオンになっています。  <br/> |
+    |PDO_FT_CONCAT  <br/> |0x00000010  <br/> |これは型の**組み合わせ**のフィールドであり、**結合フィールドと任意のテキストフラグメント**が、**組み合わせの数式フィールド**ダイアログボックスで選択されている各オプションと共にあります。  <br/> |
+    |PDO_FT_SWITCH  <br/> |0x00000020  <br/> |このフィールドは型の**組み合わせ**であり、[**複合式フィールド**] ダイアログボックスで選択されている次のオプションを無視して、最初の空では**ないフィールドのみを表示**します。  <br/> |
+    |PDO_PRINT_SAVEAS_DEF  <br/> |0x00000040  <br/> |このフラグは Outlook では使用されませんが、すべてのユーザー定義フィールド定義に含まれています。  <br/> |
    
-- VT: ワード (2 バイト)、 [VARENUM](https://msdn.microsoft.com/library/system.runtime.interopservices.varenum.aspx)の列挙体の定数は、フィールドのデータ型です。 
+- VT: WORD (2 バイト)。これは、 [varenum](https://msdn.microsoft.com/library/system.runtime.interopservices.varenum.aspx)列挙の定数であるフィールドのデータ型です。 
     
-- DispId: DWORD (4 バイト) で、フィールドのディスパッチ識別子。 ユーザー定義フィールドの値が 0 を使用します。
+- DispId: フィールドのディスパッチ識別子 (DWORD) (4 バイト)。 ユーザー定義フィールドの場合、値は0になります。
     
-- NmidNameLength: ワード (2 バイト)、NmidName 配列内の要素の数。
+- NmidNameLength: WORD (2 バイト)。 nmidname 配列内の要素の数。
     
-- NmidName: wchar 型の配列。 ユーザー定義フィールドの定義では、これは、Unicode (utf-16) の形式のフィールド名です。 この配列の数は NmidNameLength になります。
+- nmidname: WCHAR の配列。 ユーザー定義のフィールド定義の場合、これはフィールド名の Unicode (utf-16) 表現です。 この配列の数は、NmidNameLength と同じです。
     
-- NameANSI: [PackedAnsiString](packedansistring-stream-structure.md)ストリームの構造体。 これは、ANSI の形式のフィールド名です。 
+- nameansi: [PackedAnsiString](packedansistring-stream-structure.md) stream 構造。 これは、フィールド名の ANSI 表現です。 
     
-- FormulaANSI: PackedAnsiString ストリームの構造体。 これは、フィールドの計算式の ANSI 表現です。 このフィールドに連結されたフォーム コントロールの [**プロパティ**] ダイアログ ボックスの [**値**] タブの [**初期値**] セクションに表示されます。 
+- FormulaANSI: PackedAnsiString stream 構造。 これは、フィールドの計算式を ANSI 表現で表したものです。 このフィールドは、このフィールドに連結されているフォームコントロールの [**プロパティ**] ダイアログボックスの [**値**] タブの [**初期値**] セクションに表示されます。 
     
-- ValidationRuleANSI: PackedAnsiString ストリームの構造体。 これは、フィールドの入力規則の数式の ANSI 表現です。 このフィールドに連結されたフォーム コントロールの [**プロパティ**] ダイアログ ボックスの [**検証**] タブで**入力規則の数式**をテキスト ボックスに表示されます。 
+- validationruleansi: PackedAnsiString stream 構造。 これは、フィールドの検証式の ANSI 表現です。 このフィールドは、このフィールドにバインドされているフォームコントロールの [**プロパティ**] ダイアログボックスの [**入力規則**] タブで、[入力規則の**数式**] テキストボックスに表示されます。 
     
-- ValidationTextANSI: PackedAnsiString ストリームの構造体。 これは、フィールドの入力規則のエラー テキストの ANSI 表現です。 このフィールドに連結されたフォーム コントロールの [**プロパティ**] ダイアログ ボックスの [**検証**] タブで **、検証が失敗した場合は、このメッセージを表示する**ためのテキスト ボックスに表示されます。 
+- validationtextansi: PackedAnsiString stream 構造。 これは、フィールドの検証エラーテキストを ANSI で表現したものです。 このフィールドにバインドされているフォームコントロールの [**プロパティ**] ダイアログボックスの [**検証**] タブで**検証が失敗した場合は、このメッセージを表示**するテキストボックスに表示されます。 
     
-- ErrorANSI: PackedAnsiString ストリームの構造体。 Outlook では、この要素は使用しません。空の文字列には、この要素を設定する必要があります。
+- erroransi: PackedAnsiString stream 構造。 Outlook では、この要素は使用されません。この要素は空の文字列に設定する必要があります。
     
-- InternalType: DWORD (4 バイト) で、フィールドの内部の型。 このデータ要素は、フィールド定義の形式が PropDefV2 である場合にのみ存在します。 内部型では、対応するユーザー定義フィールドの [**新しいフィールド**] ダイアログ ボックス内の型を次の値のいずれかです。 
+- internaltype: DWORD (4 バイト) (フィールドの内部型)。 この data 要素は、フィールド定義の形式が PropDefV2 の場合にのみ存在します。 internal 型は、次のいずれかの値です。各値は、ユーザー定義フィールドの [**新しいフィールド**] ダイアログボックスの型に対応します。 
     
-    |**内部型の名前**|**値**|****新しいフィールド**] ダイアログ ボックス内の対応する型**|
+    |**内部型名**|**値**|**[**新しいフィールド**の対応する種類] ダイアログボックス**|
     |:-----|:-----|:-----|
-    |iTypeString  <br/> |0  <br/> |**Text** <br/> |
-    |iTypeNumber  <br/> |1  <br/> |**番号** <br/> |
-    |iTypePercent  <br/> |2  <br/> |**Percent** <br/> |
-    |通貨型 (Currency)  <br/> |3  <br/> |**通貨型** <br/> |
-    |iTypeBool  <br/> |4  <br/> |**はい/いいえ** <br/> |
+    |iTypeString  <br/> |.0  <br/> |**Text** <br/> |
+    |iTypeNumber  <br/> |1-d  <br/> |**数値** <br/> |
+    |iTypePercent  <br/> |pbm-2  <br/> |**Percent** <br/> |
+    |通貨  <br/> |1/3  <br/> |**通貨** <br/> |
+    |iTypeBool  <br/> |2/4  <br/> |**はい/いいえ** <br/> |
     |iTypeDateTime  <br/> |5  <br/> |**日付/時刻** <br/> |
-    |iTypeDuration  <br/> |6  <br/> |**Duration** <br/> |
-    |iTypeCombination  <br/> |7  <br/> |**組み合わせ**、**組み合わせ数式フィールド**] ダイアログ ボックスで選択されている**最初の空ではないフィールドだけ、うちの表示**オプションを使用しています。  <br/> |
-    |iTypeFormula  <br/> |8  <br/> |**Formula** <br/> |
-    |iTypeResult  <br/> |9  <br/> |このタイプはユーザー定義フィールドは使用されません。  <br/> |
-    |iTypeVariant  <br/> |10  <br/> |このタイプはユーザー定義フィールドは使用されません。  <br/> |
-    |iTypeFloatResult  <br/> |11  <br/> |このタイプはユーザー定義フィールドは使用されません。  <br/> |
-    |iTypeConcat  <br/> |12  <br/> |**組み合わせ**、**参加中のフィールドすべてを相互に****組み合わせ数式フィールド**] ダイアログ ボックスで選択したオプションを使用しています。  <br/> |
-    |iTypeKeywords  <br/> |13  <br/> |**キーワード** <br/> |
-    |iTypeInteger  <br/> |14  <br/> |**Integer** <br/> |
+    |iTypeDuration  <br/> |シックス  <br/> |**Duration** <br/> |
+    |iTypeCombination  <br/> |7  <br/> |**** そして、[**複合式フィールド**] ダイアログボックスで選択されている次のオプションを無視して、最初の空では**ないフィールドのみを表示**します。  <br/> |
+    |iTypeFormula  <br/> |~  <br/> |**Formula** <br/> |
+    |iTypeResult  <br/> |i-9  <br/> |この型は、ユーザー定義フィールドには使用されません。  <br/> |
+    |iTypeVariant  <br/> |個  <br/> |この型は、ユーザー定義フィールドには使用されません。  <br/> |
+    |iTypeFloatResult  <br/> |#  <br/> |この型は、ユーザー定義フィールドには使用されません。  <br/> |
+    |iTypeConcat  <br/> |個  <br/> |**** 組み合わせ、[**フィールド**の結合] ダイアログボックスで選択された [その他] オプションを使用して、**結合フィールドとテキストフラグメント**を指定します。  <br/> |
+    |iTypeKeywords  <br/> |スリー  <br/> |**キーワード** <br/> |
+    |iTypeInteger  <br/> |第  <br/> |**Integer** <br/> |
    
-- SkipBlocks: [SkipBlock](skipblock-stream-structure.md)ストリームの構造を 1 つまたは複数のデータ系列です。 このデータ要素は、フィールド定義の形式が PropDefV2 である場合にのみ存在します。 フィールド定義の形式が PropDefV2 の場合は、系列を少なくとも 1 つの SkipBlock 構造を 0 に等しいサイズのデータ要素を持つ SkipBlock 構造体を含める必要があり、シリーズが開始し、この構造で SkipBlock を終了する必要があります。 
+- skipblocks: 1 つ以上の[skipblocks](skipblock-stream-structure.md)ストリーム構造。 この data 要素は、フィールド定義の形式が PropDefV2 の場合にのみ存在します。 フィールド定義の形式が PropDefV2 の場合、データ系列には、少なくとも1つの skipblock 構造体、Size data 要素を0とする skipblock 構造体、およびこの skipblock 構造を開始して終了する必要があります。 
     
-   SkipBlock 構造体の目的は、SkipBlocks シリーズでの相対的な位置に依存します。 フィールド定義は、PropDefV2 の形式で、最初の構造は、(サイズのデータ要素が 0 より大きい) の終端構造ではない場合、Outlook では、最初の SkipBlock 構造体は、Unicode (utf-16) でフィールド名を指定と見なされます。 
+   skipblock 構造の目的は、skipblock シリーズでの相対位置に依存します。 フィールド定義が PropDefV2 形式の場合、最初の構造体が終端構造ではない (Size data 要素が0より大きい) 場合、Outlook は最初の skipblock 構造を想定して、フィールド名を Unicode (utf-16) で指定します。 
     
    > [!IMPORTANT]
-   > 最初の SkipBlock では、終端の構造は、フィールド名を確認するのには NameANSI のデータ要素が使用されます。 その文字列には、すべての非 ASCII 文字が含まれている場合、これらの文字が Outlook を実行しているコンピューターの ANSI コード ページによって一貫性がない解釈可能性があります。 このような不整合を防ぐために、フィールド定義を作成することで常に最初の SkipBlock を指定することを確認するには、少なくともとフィールド名が含まれています ASCII 以外の文字には。 
+   > 最初の skipblock が終端構造である場合、nameansi data 要素を使用してフィールド名を決定します。 この文字列に ASCII 以外の文字が含まれている場合、Outlook を実行しているコンピューターの ANSI コードページによっては、これらの文字が一貫して解釈されないことがあります。 このような不整合を防ぐには、少なくとも、フィールド名に非 ASCII 文字が含まれている場合は、作成するフィールド定義に最初の skipblock を指定してください。 
   
-   終端の SkipBlock 構造体の前に SkipBlocks シリーズの他の SkipBlock ストリームの構造体としてこのデータを格納できる場合は、フィールド定義の形式の将来のバージョンは、FieldDefinition ストリーム内のデータの追加情報を紹介、サイズのデータ要素が 0 です。 Outlook の以前のバージョンでは、終端の SkipBlock 構造体にこれらの余分な SkipBlock 構造を無視でき、正しくサポートしているすべてのブロックを処理することができます。
+   フィールド定義形式の将来のバージョンで、fielddefinition ストリームに追加のデータが導入されている場合は、このデータを skipblock シリーズに追加の skipblock ストリーム構造体として格納することができます。Size data 要素が0に等しい。 以前のバージョンの Outlook では、このような skipblock 構造を終了することなく、それらの不要な skipblock 構造を無視しても、サポートされているすべてのブロックを正しく処理することができます。
     
 ## <a name="see-also"></a>関連項目
 
 - [Outlook のアイテムとフィールド](outlook-items-and-fields.md)
-- [ストリームの構造](stream-structures.md)
-- [PropertyDefinition ストリームの構造](propertydefinition-stream-structure.md)
+- [Stream 構造体](stream-structures.md)
+- [propertydefinition ストリームの構造](propertydefinition-stream-structure.md)
 

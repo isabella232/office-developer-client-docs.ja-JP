@@ -1,5 +1,5 @@
 ---
-title: IMAPIFormInfoMakeIconFromBinary
+title: imapiforminfomakeiconfrombinary
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4daeddd7-3f0c-4178-ae8d-f74814090d40
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 30f55044327eecee3ab0d8ee2509d7132ab6e8ee
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 418056f7222d5ab05f43a3661c1811bf2ae15be8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342113"
 ---
 # <a name="imapiforminfomakeiconfrombinary"></a>IMAPIFormInfo::MakeIconFromBinary
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームのアイコンのプロパティのいずれかからアイコンを作成します。
+フォームのアイコンプロパティの1つからアイコンを作成します。
   
 ```cpp
 HRESULT MakeIconFromBinary(
@@ -36,23 +36,23 @@ HRESULT MakeIconFromBinary(
 
 ## <a name="parameters"></a>パラメーター
 
- _nPropID_
+ _npropid_
   
-> [in]アイコンのプロパティにプロパティの識別子です。
+> 順番icon プロパティのプロパティ識別子。
     
  _phicon_
   
-> [out]返されるアイコンへのポインター。
+> 読み上げ返されるアイコンへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>����
+## <a name="remarks"></a>解説
 
-クライアント アプリケーションは、フォームのアイコンのプロパティのいずれかからアイコンを作成する**IMAPIFormInfo::MakeIconFromBinary**メソッドを呼び出します。 _NPropID_パラメーターには、 **MakeIconFromBinary**は、フォームのアイコンのプロパティのいずれかのプロパティの識別子をかかります。 このプロパティの識別子を使用すると、アイコンのプロパティの列を含む表形式ビューで表示できるアイコンを構築します。 
+クライアントアプリケーションは、 **imapiforminfo:: makeiconfrombinary**メソッドを呼び出して、フォームのアイコンプロパティの1つからアイコンを作成します。 _npropid_パラメーターでは、 **makeiconfrombinary**は、フォームのアイコンプロパティの1つのプロパティ識別子を受け取ります。 このプロパティ識別子を使用すると、アイコンのプロパティ列を含む表ビューに表示できるアイコンが作成されます。 
   
 ## <a name="see-also"></a>関連項目
 

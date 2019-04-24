@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 3890dd50-e6ca-4859-bada-f6752ab61d41
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e86e9fbf4901b5944775886f38db1ba12c4b122d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 49e6c8254cbd527635685c3f974da57ee3ac82a5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341021"
 ---
 # <a name="fbadrowset"></a>FBadRowSet
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 テーブルの行のセットに含まれるすべてのテーブルの行を検証します。
   
 |||
 |:-----|:-----|
 |ヘッダー ファイル:  <br/> |Mapival.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |サービス プロバイダー  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |サービス プロバイダー  <br/> |
    
 ```cpp
 BOOL FBadRowSet(
@@ -43,17 +43,17 @@ BOOL FBadRowSet(
 
  _lpRowSet_
   
-> [in][SRowSet](srowset.md)構造体を検証する設定の行を識別するへのポインター。 ポインターが NULL の場合は、構造が正しくありません。 
+> 順番検証する行セットを識別する[srowset](srowset.md)構造体へのポインター。 ポインターが NULL の場合、この構造体は無効です。 
     
 ## <a name="return-value"></a>戻り値
 
 TRUE 
   
-> 指定した行セットの行が正しくないか、またはそれ自体を設定した行が有効ではありません。 
+> 指定された行セットの行が無効であるか、行セット自体が無効です。 
     
 FALSE 
   
-> 指定した行セットの行と行は設定自体は、すべてに有効です。
+> 指定した行セットと行セット自体の行はすべて有効です。
     
 ## <a name="see-also"></a>関連項目
 

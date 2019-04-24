@@ -1,5 +1,5 @@
 ---
-title: アドレス帳プロバイダー エントリ ポイント関数の実装
+title: アドレス帳プロバイダーエントリポイント関数の実装
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,41 +8,41 @@ api_type:
 - COM
 ms.assetid: 9375b351-1c84-4728-bcdf-e3e7a44820ed
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 68ba23e6ab23ff7306cd1326b73512b1c9f2a0f9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 00b3b30101ee1efb984cf45afb35b0b085d545ac
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332803"
 ---
-# <a name="implementing-an-address-book-provider-entry-point-function"></a>アドレス帳プロバイダー エントリ ポイント関数の実装
+# <a name="implementing-an-address-book-provider-entry-point-function"></a>アドレス帳プロバイダーエントリポイント関数の実装
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロバイダーとその他のすべてのプロファイルの一部である場合、クライアント アプリケーションの呼び出し[MAPILogonEx](mapilogonex.md)アドレス帳プロバイダーが含まれているプロファイルを使用してセッションを開始するのには、MAPI を読み込みます。 MAPI は、プロファイルを参照して、プロバイダーのエントリ ポイント関数の名前を学習します。 この関数ではありません、DLL エントリ ポイント関数と同じです。**DllMain**の Win32 のドキュメントでのドキュメントを参照してください。 
+クライアントアプリケーションが[MAPILogonEx](mapilogonex.md)を呼び出して、アドレス帳プロバイダーを含むプロファイルを使用してセッションを開始すると、MAPI はプロバイダーとプロファイルの一部である他のすべてを読み込みます。 プロファイルを調べることによって、プロバイダーのエントリポイント関数の名前を MAPI が学習する。 この関数は DLL エントリポイント関数と同じではないことに注意してください。Win32 のドキュメントの**** ドキュメントを参照してください。 
   
-いくつかのエントリ、mapisvc.inf の構成ファイルにする必要があります、すべてのアドレス帳プロバイダーのプロファイルに含まれているがあります。 次の表は、これらのプロファイル] セクションのエントリと、mapisvc.inf ファイルが含める必要があるかどうかを一覧します。
+mapisvc.inf 構成ファイルにはいくつかのエントリがあり、すべてのアドレス帳プロバイダーのプロファイルセクションに含まれていなければなりません。 次の表に、これらのプロファイルセクションエントリと、mapisvc.inf ファイルにそれらを含める必要があるかどうかを示します。
   
-|**プロファイル セクションのエントリ**|**mapisvc.inf の要件**|
+|**プロファイルセクションエントリ**|**mapisvc.inf の要件**|
 |:-----|:-----|
 |PR_DISPLAY_NAME =_文字列_ <br/> |省略可能  <br/> |
 |PR_PROVIDER_DISPLAY =_文字列_ <br/> |必須  <br/> |
-|PR_PROVIDER_DLL_NAME = _DLL のファイル名_ <br/> |必須  <br/> |
-|PR_RESOURCE_TYPE =_長_ <br/> |必須  <br/> |
+|PR_PROVIDER_DLL_NAME = _DLL ファイル名_ <br/> |必須  <br/> |
+|PR_RESOURCE_TYPE = _long_ <br/> |必須  <br/> |
 |PR_RESOURCE_FLAGS =_ビットマスク_ <br/> |省略可能  <br/> |
    
-プロファイル セクションの[IMAPIProp::SetProps](imapiprop-setprops.md)メソッドを呼び出すことによって直接または間接的に MAPISVC.INF を変更することによって、アドレス帳プロバイダーはプロファイルには、この情報を配置できます。 プロファイルは、MAPISVC に関連する情報を使用して構築されます。選択したサービス プロバイダーまたはサービスのメッセージの INF です。 詳細については、組織と MAPISVC の内容です。INF、 [MapiSvc.inf のファイル形式](file-format-of-mapisvc-inf.md)を参照してください。
+アドレス帳プロバイダーは、プロファイルセクションの[imapiprop:: setprops](imapiprop-setprops.md)メソッドを呼び出すか、mapisvc.inf を変更することによって、プロファイルにこの情報を直接配置できます。 プロファイルは、mapisvc.inf の関連情報を使用して作成されます。選択されたサービスプロバイダーまたはメッセージサービスの INF。 mapisvc.inf の組織と内容の詳細については、を参照してください。inf については、「 [File Format of mapisvc.inf](file-format-of-mapisvc-inf.md)」を参照してください。
   
-アドレス帳プロバイダーの DLL のエントリ ポイント関数の名前は[ABProviderInit](abproviderinit.md)である必要があり、 **ABProviderInit**のプロトタイプにそれに従う必要があります。 プロバイダーの DLL のエントリ ポイント関数では、次のタスクを実行します。 
+アドレス帳プロバイダーの DLL エントリポイント関数の名前は、 [abproviderinit](abproviderinit.md)である必要があり、 **abproviderinit**プロトタイプに準拠している必要があります。 プロバイダーの DLL エントリポイント関数で次のタスクを実行します。 
   
-- サービス プロバイダー インターフェイス (SPI) が MAPI を使用して、アドレス帳プロバイダーを使用しているバージョンと互換性のあるバージョンかどうかを確認するのにはのバージョンを確認してください。
+- サービスプロバイダインターフェイス (SPI) のバージョンを調べて、MAPI が、アドレス帳プロバイダーが使用しているバージョンと互換性のあるバージョンを使用していることを確認します。
     
-- アドレス帳プロバイダー オブジェクトのインスタンスを作成します。
+- アドレス帳プロバイダーオブジェクトをインスタンス化します。
     
-**生じます**か、 **MAPIUninitialize**をこの関数に呼び出さないでください。 
+この関数で**MAPIInitialize**または**MAPIUninitialize**のいずれかを呼び出すことはできません。 
   
-DLL エントリ ポイント関数では、プロバイダー オブジェクトをインスタンス化し、MAPI にそのオブジェクトへのポインターを返します。 
+DLL エントリポイント関数は、プロバイダーオブジェクトをインスタンス化し、そのオブジェクトへのポインターを MAPI に返します。 
   
 

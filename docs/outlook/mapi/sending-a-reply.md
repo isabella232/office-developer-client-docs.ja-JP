@@ -1,5 +1,5 @@
 ---
-title: 返信を送信
+title: 返信の送信
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,83 +8,83 @@ api_type:
 - COM
 ms.assetid: 90dafeae-6b61-40e3-8341-d6a11799d0f2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4d8c995f5fbca322fca44cdcbb0de224af6b2fbf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f47741369b1091c0dd24358e063de8f4675000fa
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339782"
 ---
-# <a name="sending-a-reply"></a>返信を送信
+# <a name="sending-a-reply"></a>返信の送信
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアント アプリケーションは、通常、返信の 2 つの種類をサポートします。 元のメッセージと送信者だけでなく、元のメッセージの受信者のリストに含まれている他のすべての受信者に送信される 1 つの送信者にのみ送信される 1 つ。 この 2 つ目の種の応答は、すべてのメッセージの返信とも呼ばれます。
+クライアントアプリケーションは、通常、元のメッセージの送信者にのみ送信される返信と、元のメッセージの受信者リストに含まれている他のすべての受信者に送信される2種類の返信をサポートします。 この2番目の返信の種類は、通常、全員に返信メッセージと呼ばれます。
   
-いずれかのタイプの応答を送信するには、元のメッセージを送信するときと同様のタスクの一部を実装します。 などの既定のメッセージ ストアを開き、送信メッセージのフォルダー、通常、[送信トレイ]、および、返信を作成するのには、送信フォルダーの[IMAPIFolder::CreateMessage](imapifolder-createmessage.md)メソッドを呼び出します。 また、受信トレイでは通常、元のメッセージを保持しているフォルダーを開きます。 別のフォルダーを開く方法については、[メッセージ ストアのフォルダーを開く](opening-a-message-store-folder.md)を参照してください。
+いずれかの種類の返信を送信するには、元のメッセージを送信する場合と同じようなタスクをいくつか実装します。 たとえば、既定のメッセージストアと送信メッセージフォルダー (通常は送信トレイ) を開き、送信フォルダーの[imapifolder:: CreateMessage](imapifolder-createmessage.md)メソッドを呼び出して返信を作成します。 また、元のメッセージを保持するフォルダー (通常は受信トレイ) を開きます。 別のフォルダーを開く方法については、「[メッセージストアフォルダーを開く](opening-a-message-store-folder.md)」を参照してください。
   
-返信を作成し、元のメッセージを作成するには大きな違いは、ことで、返信のプロパティのほとんどはに基づいてまたは元のメッセージのプロパティから直接コピーします。 添付ファイル、メッセージの**PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) のプロパティ-明示的に除外されています。 **PR_RECEIVED_BY_SEARCH_KEY** ([PidTagReceivedBySearchKey](pidtagreceivedbysearchkey-canonical-property.md)) のプロパティで表される受信者およびすべてのブラインド カーボン コピー受信者を削除すると元のメッセージの一覧からすべてのメッセージが作成した返信の受信者の一覧です。 **PR_RECEIVED_BY_SEARCH_KEY**プロパティは、現在のユーザーを表します。 
+返信を作成し、元のメッセージを作成する場合の主な違いは、返信の場合、プロパティのほとんどは元のメッセージのプロパティから直接またはコピーすることです。 添付ファイル-メッセージの**PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) プロパティは、特に除外されています。 すべての返信メッセージの受信者リストは、元のメッセージの一覧から、 **PR_RECEIVED_BY_SEARCH_KEY** ([PidTagReceivedBySearchKey](pidtagreceivedbysearchkey-canonical-property.md)) プロパティによって表される受信者と、すべてのブラインドカーボンコピー受信者が削除されて作成されます。 **PR_RECEIVED_BY_SEARCH_KEY**プロパティは、現在のユーザーを表します。 
   
 ### <a name="to-send-a-reply"></a>返信を送信するには
   
-1. 既定のメッセージ ストアを開きます。 詳細については、[既定のメッセージ ストアを開く](opening-the-default-message-store.md)を参照してください。
+1. 既定のメッセージストアを開きます。 詳細については、「[既定のメッセージストアを開く](opening-the-default-message-store.md)」を参照してください。
     
-2. [送信トレイ] フォルダーを開きます。 詳細については、[メッセージ ストアのフォルダーを開く](opening-a-message-store-folder.md)を参照してください。
+2. [送信トレイ] フォルダーを開きます。 詳細については、「[メッセージストアフォルダーを開く](opening-a-message-store-folder.md)」を参照してください。
     
-3. 返信を作成するのには、[送信トレイ] の[IMAPIFolder::CreateMessage](imapifolder-createmessage.md)メソッドを呼び出します。 
+3. 送信トレイの[imapifolder:: CreateMessage](imapifolder-createmessage.md)メソッドを呼び出して、返信を作成します。 
     
-4. 返信メッセージに次のプロパティをコピーするのには、元のメッセージの[IMAPIProp::CopyTo](imapiprop-copyto.md)メソッドを呼び出します。 
+4. 元のメッセージの[imapiprop:: CopyTo](imapiprop-copyto.md)メソッドを呼び出して、次のプロパティを返信メッセージにコピーします。 
     
-   - **PR\_本体**([PidTagBody](pidtagbody-canonical-property.md)) または**PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) は、リッチ テキスト形式をサポートするかどうかによって異なります。
+   - **リッチ\_** テキスト形式をサポートしているかどうかに応じて、PR 本文 ([PidTagBody](pidtagbody-canonical-property.md)) または**PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))。
     
-   - **PR\_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md))、全体のアドレス帳への返信になる場合。
+   - **[\_PR MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) (応答が受信者一覧全体に送られる場合)。
     
-   - **PR\_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md))。
+   - **PR\_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md))
     
-5. **IMAPIProp::CopyTo**を呼び出すには次のプロパティは含まれません。
+5. **imapiprop:: CopyTo**に対する呼び出しには、次のプロパティを含めないでください。
     
     |||
     |:-----|:-----|
-    |**PR\_クライアント\_送信\_時間** <br/> |**PR\_メッセージ\_配信\_時間** <br/> |
-    |**PR\_メッセージ\_をダウンロード\_時間** <br/> |**PR\_メッセージ\_フラグ** <br/> |
-    |**PR\_作成者\_配信\_REPORT\REQUESTED** <br/> |**PR\_受信数\_REPRESENTING**のプロパティ  <br/> |
-    |**PR\_読み取り\_入荷\_エントリ ID** <br/> |**PR\_読み取り\_入荷\_要求されました。** <br/> |
-    |**PR\_受信\_で**のプロパティ  <br/> |**PR\_返信\_受信者**のプロパティ  <br/> |
-    |**PR\_レポート\_エントリ ID** <br/> |**PR\_送信者**のプロパティ  <br/> |
-    |**PR\_送信\_REPRESENTING**のプロパティ  <br/> |**PR\_SENTMAIL\_エントリ ID** <br/> |
-    |**PR\_件名\_プレフィックス** <br/> | <br/> |
+    |**PR\_クライアント\_送信\_時刻** <br/> |**PR\_メッセージ\_の\_配信時間** <br/> |
+    |**PR\_メッセージ\_の\_ダウンロード時間** <br/> |**PR\_メッセージ\_フラグ** <br/> |
+    |**PR\_発信\_者\_配信レポート \ 要求** <br/> |**プロパティ\_を\_表す PR RCVD**  <br/> |
+    |**PR\_開封\_確認\_の ENTRYID** <br/> |**PR\_開封\_確認\_メッセージの要求** <br/> |
+    |**PR\_BY\_プロパティで受信**  <br/> |**PR\_応答\_受信者**プロパティ  <br/> |
+    |**PR\_レポート\_の ENTRYID** <br/> |**PR\_SENDER**のプロパティ  <br/> |
+    |**PR\_送信\_され**たプロパティ  <br/> |**PR\_送信メール\_の ENTRYID** <br/> |
+    |**PR\_件名\_の接頭辞** <br/> | <br/> |
    
-6. どちらをサポートするメッセージ本文のプロパティに区切り記号のテキストを追加: **PR_BODY**、 **PR_HTM**L、または**PR_RTF_COMPRESSED**。
+6. サポートするメッセージ本文のプロパティ ( **PR_BODY**、 **PR_HTM**L、 **PR_RTF_COMPRESSED**) に区切り文字を追加します。
     
-7. [ScCreateConversationIndex](sccreateconversationindex.md)、元のメッセージの**PR_CONVERSATION_INDEX** ([PidTagConversationIndex](pidtagconversationindex-canonical-property.md)) のプロパティの値を渡してを呼び出します。
+7. [ScCreateConversationIndex](sccreateconversationindex.md)を呼び出し、元のメッセージの**PR_CONVERSATION_INDEX** ([PidTagConversationIndex](pidtagconversationindex-canonical-property.md)) プロパティの値を渡します。
     
-8. 返信のプレフィックスを設定します。 標準を使用している場合"RE:"、 **PR_NORMALIZED_SUBJECT**の先頭にこれらの文字を連結し、この新しい文字列に**あるの PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) を設定します。 **されて**([PidTagSubjectPrefix](pidtagsubjectprefix-canonical-property.md)) を設定することはしません。 3 文字より長い文字列などの非標準のプレフィックスを使用している場合は、**されて**に格納します。 
+8. 返信のプレフィックスを設定します。 標準の "RE:" を使用している場合は、これらの文字を**PR_NORMALIZED_SUBJECT**の先頭に連結し、 **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) をこの新しい文字列に設定します。 **PR_SUBJECT_PREFIX** ([PidTagSubjectPrefix](pidtagsubjectprefix-canonical-property.md)) を設定しません。 3文字を超える文字列など、標準的ではないプリフィックスを使用している場合は、 **PR_SUBJECT_PREFIX**に格納します。 
     
-9. **PR_RCVD_REPRESENTING**プロパティに対応する値には、 **PR_SENT_REPRESENTING**プロパティを設定します。 
+9. **PR_SENT_REPRESENTING**プロパティを**PR_RCVD_REPRESENTING**プロパティの対応する値に設定します。 
     
-10. 設定のエントリの各**PR\_REPLY_RECIPIENT_ENTRIES** ([PidTagReplyRecipientEntries](pidtagreplyrecipiententries-canonical-property.md)) と**PR_REPLY\_RECIPIENT_NAMES** ([PidTagReplyRecipientNames](pidtagreplyrecipientnames-canonical-property.md)) のエントリの識別子および表示名に、プライマリ受信者、受信者の種類は、MAPI_TO です。 これらのプロパティが同期を維持します。 **PR_REPLY_RECIPIENT\_エントリ**と**PR_REPLY_RECIPIENT_NAMES**には、同じ数のエントリが含まれている必要があり、プロパティのいずれかの特定の位置にあるエントリが、他の同じ位置にあるエントリを対応する必要がありますプロパティです。 
+10. **PR\_REPLY_RECIPIENT_ENTRIES** ([PidTagReplyRecipientEntries](pidtagreplyrecipiententries-canonical-property.md)) および**\_PR_REPLY RECIPIENT_NAMES** ([PidTagReplyRecipientNames](pidtagreplyrecipientnames-canonical-property.md)) の各エントリを、エントリ id およびの表示名に設定します。プライマリ受信者— MAPI_TO の種類の受信者。 これらのプロパティを同期したままにします。 つまり、 **PR_REPLY_RECIPIENT\_** entry と**PR_REPLY_RECIPIENT_NAMES**には同じ数のエントリが含まれている必要があり、いずれかのプロパティ内の特定の位置にあるエントリは、もう一方の同じ位置にあるエントリに対応している必要があります。プロパティ. 
     
-11. 返信は、元のメッセージの送信者にのみ送信されるが場合、は、元のメッセージの**PR_SENT_REPRESENTING**プロパティで表され、受信者と 1 つのエントリのアドレス帳を作成します。 受信者リストの作成の詳細については、[受信者リストを作成する](creating-a-recipient-list.md)を参照してください。
+11. 返信が元のメッセージの送信者にのみ送信されている場合は、元のメッセージの**PR_SENT_REPRESENTING**プロパティによって表される受信者リストを1つ作成します。 受信者リストの作成の詳細については、「[受信者リストを作成](creating-a-recipient-list.md)する」を参照してください。
     
-12. 応答がすべての返信の場合は、次のように受信者の一覧を作成します。
+12. 返信が全員に返信の場合は、次のように受信者リストを作成します。
     
-    1. 受信者テーブルにアクセスするための元のメッセージの[IMessage::GetRecipientTable](imessage-getrecipienttable.md)メソッドを呼び出します。 
+    1. 元のメッセージの[IMessage:: get受信者 table](imessage-getrecipienttable.md)メソッドを呼び出して、その受信者テーブルにアクセスします。 
         
-    2. すべてのテーブルの行を取得するために[HrQueryAllRows](hrqueryallrows.md)を呼び出します。 ブラインド カーボン コピー受信者またはユーザーを表し、リストから削除する必要がある場合は、各行の主キー列またはカーボン コピー受信者を表すし、のリストを保持する必要がありますかを決定します。 
+    2. [hrqueryallrows](hrqueryallrows.md)を呼び出して、テーブル内のすべての行を取得します。 各行がプライマリまたはカーボンコピーの受信者を表しているかどうかを判断し、リストに残すか、または bcc 受信者またはユーザーを表す場合は、リストから削除する必要があります。 
         
-    3. **PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) の列を参照して受信者の種類を区別します。 この列は、そのカーボン コピー受信者、および MAPI_BCC のブラインド カーボン コピー受信者のプライマリ受信者用の MAPI_TO、MAPI_CC に設定されます。 
+    3. 受信者の種類を区別するには、 **PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) 列を参照してください。 この列は、プライマリ受信者の場合は MAPI_TO、カーボンコピー受信者の場合は MAPI_CC、ブラインドカーボンコピーの受信者の場合は MAPI_BCC に設定されます。 
         
-    4. 行がユーザーを表すかどうかを確認する元のメッセージの**PR_RECEIVED_BY_SEARCH_KEY**プロパティを使用して**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) の列を比較します。 
+    4. **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) 列を元のメッセージの**PR_RECEIVED_BY_SEARCH_KEY**プロパティと比較して、その行がユーザーを表しているかどうかを判断します。 
         
-    5. 受信者テーブルの[SRowSet](srowset.md)構造内の対応するエントリに関連付けられているメモリを解放する[MAPIFreeBuffer](mapifreebuffer.md)を呼び出すことによって、受信者の一覧から不要な行を削除します。 **SRowSet**内の個々 の[SRow](srow.md)構造体の**lpProps**メンバーの値がゼロにすべての値がゼロに**あう**メンバー プロパティの値の配列内の値のすべてとは NULL に設定します。 
+    5. 受信者リストから不要な行を削除するには、 [MAPIFreeBuffer](mapifreebuffer.md)を呼び出して、受信者テーブルの[srowset](srowset.md)構造内の対応するエントリに関連付けられているメモリを解放します。 プロパティ値の配列のすべての値を0に、すべての**cvalues**メンバーを0に、 **srow**内の各[srow](srow.md)構造のすべての**lpprops**メンバーを NULL に設定します。 
         
-    6. によって元のメッセージの受信者の一覧に送信者を追加**PR\_SENT_REPRESENTING_NAME** ([PidTagSentRepresentingName](pidtagsentrepresentingname-canonical-property.md)) と**PR_SENT_REPRESENTING_ENTRYID** ([PidTagSentRepresentingEntryId](pidtagsentrepresentingentryid-canonical-property.md))プロパティです。 送信者が、ボックスの一覧で重複していないことを確認してください。
+    6. 元のメッセージの**PR\_SENT_REPRESENTING_NAME** ([PidTagSentRepresentingName](pidtagsentrepresentingname-canonical-property.md)) および**PR_SENT_REPRESENTING_ENTRYID** ([PidTagSentRepresentingEntryId](pidtagsentrepresentingentryid-canonical-property.md)) によって表される受信者リストに送信者を追加します。プロパティ. 送信者が一覧に複製されていないことを確認します。
         
-    7. _UlFlags_パラメーターを返信用の新しい受信者一覧を作成するのには、0 に設定、元のメッセージの一覧を基にメッセージを転送または返信メッセージの[IMessage::ModifyRecipients](imessage-modifyrecipients.md)メソッドを呼び出します。 
+    7. 返信メッセージの[IMessage:: modifyrecipients](imessage-modifyrecipients.md)メソッドを呼び出し、 _ulflags_パラメーターを0に設定して、元のメッセージのリストに基づいて、返信または転送されたメッセージの新しい受信者リストを作成します。 
     
-13. [IMessage::SubmitMessage](imessage-submitmessage.md)を保存し、送信するメッセージを保存するのには、返信の[IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを呼び出します。 
+13. 返信の[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出して、メッセージまたは[IMessage:: submitmessage](imessage-submitmessage.md)を保存し、送信します。 
     
 > [!NOTE]
-> アドレス帳の変更を格納する**IMessage::ModifyRecipients**を呼び出す前に、メッセージ フォームを変更するユーザーを許可できます。 ユーザーでは、リストに追加したり、特定のメンバーを削除することができます。 受信者のリストを変更するユーザーを許可する、省略可能なクライアント機能です。 
+> **IMessage:: modifyrecipients**を呼び出して、受信者一覧に変更内容を格納する前に、ユーザーがメッセージフォームで変更できるようにすることができます。 ユーザーは、リストに追加したり、特定のメンバーを削除したりできます。 ユーザーが受信者リストを変更できるようにすることは、オプションのクライアント機能です。 
   
 

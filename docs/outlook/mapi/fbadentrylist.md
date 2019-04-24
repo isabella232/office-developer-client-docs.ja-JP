@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: 270c47c3-ae68-4995-b304-27f861b350d6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 113628ef5487bc66a07d1367c938ed178a8e32ec
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 21ed5a23b96dabdd594547109ecb1e6c048a4844
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341070"
 ---
 # <a name="fbadentrylist"></a>FBadEntryList
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI エントリの識別子の一覧を検証します。 
+MAPI エントリ識別子の一覧を検証します。 
   
 |||
 |:-----|:-----|
 |ヘッダー ファイル:  <br/> |Mapival.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |サービス プロバイダー  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |サービス プロバイダー  <br/> |
    
 ```cpp
 BOOL FBadEntryList(
@@ -41,22 +41,22 @@ BOOL FBadEntryList(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpEntryList_
+ _lペン trylist_
   
-> [in]検証するエントリの識別子の配列を含む[ENTRYLIST](entrylist.md)構造体へのポインター。 
+> 順番検証するエントリ識別子の配列を含む[entrylist](entrylist.md)構造体へのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
 TRUE 
   
-> 表示されたエントリの識別子の 1 つ以上が有効ではありません。 
+> リストされている1つ以上のエントリ識別子が無効です。 
     
 FALSE 
   
-> すべてのエントリが一覧表示されている識別子は、有効です。
+> リストされているすべてのエントリ識別子が有効である。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**FBadEntryList**関数では、エントリの識別子] ボックスの一覧が正しく生成されたかどうかを判断します。 無効な識別子の例は、メモリが正しく割り当てられていないか、不適切なサイズの識別子のいずれかです。 
+**fbadentrylist**関数は、エントリ id の一覧が正しく生成されているかどうかを判断します。 無効な識別子の例としては、メモリが正しく割り当てられていないか、または間違ったサイズの識別子があります。 
   
 

@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 493c87a4-317d-47ec-850b-342cac59594b
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9db1f8e163e44a44df1e798cebccb3639325275e
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25391431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32340083"
 ---
 # <a name="mapi-profiles"></a>MAPI プロファイル
 
@@ -21,56 +21,56 @@ ms.locfileid: "25391431"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロファイルは、サービス ・ プロバイダーおよびコンピューターにインストールされているメッセージのサービスに関する情報を格納します。 すべてのセッションは、ログオン時にクライアントは、使用するプロバイダーとのサービスを説明する 1 つのプロファイルを選択します。 できるプロファイルのコレクションから選択して、クライアントが必要な場合は、既定値として 1 つを確立します。 既定のプロファイルは、クライアントがセッションを開始して、プロファイルを明示的に指定することがないときに自動的に選択されているプロファイルです。
+プロファイルは、コンピューターにインストールされているサービスプロバイダーとメッセージサービスに関する情報を格納します。 セッションごとに、ログオン時のクライアントは、使用するプロバイダーとサービスを記述する1つのプロファイルを選択します。 クライアントはプロファイルのコレクションから選択でき、必要に応じて既定値として1つを設定します。 既定のプロファイルは、クライアントがセッションを開始し、プロファイルを明示的に指定していないときに自動的に選択されるプロファイルです。
   
-これらのトピックでは、バイナリ ストリームに格納されているニックネームのキャッシュの詳細を検索は。
+また、これらのトピックでは、バイナリストリームに格納されているニックネームキャッシュについての説明も記載されています。
   
 - [ニックネーム キャッシュ](nickname-cache.md)
     
-- [オートコンプリート ストリーム](autocomplete-stream.md)
+- [オートコンプリートストリーム](autocomplete-stream.md)
     
-- [バイナリ ファイルの解析](https://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)
+- [バイナリファイルの解析](https://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)
     
-## <a name="profile-sections"></a>プロファイル セクション
+## <a name="profile-sections"></a>プロファイルセクション
 
-プロファイルは、クライアント セクションに分かれていますが、ユーザーにプロファイル プロパティを表示する、または構成を変更するのにはサービス ・ プロバイダーがアクセスします。 プロファイル セクションは、 **IProfSect**インターフェイスを実装する MAPI オブジェクト、 **IMAPIProp**から派生し、追加のメソッドを持たないインタ フェースです。 詳細についてを参照してください[IProfSect: IMAPIProp](iprofsectimapiprop.md)。 その唯一の目的は、プロファイル セクションのプロパティを操作するためです。 クライアントとサービス ・ プロバイダーは、特定のプロファイル セクションに、 **IProfSect**のポインターを取得するためにメソッドを呼び出します。 
+プロファイルは、クライアントとサービスプロバイダーがプロファイルプロパティをユーザーに表示したり、構成を変更したりするためにアクセスするセクションに分かれています。 プロファイルセクションは、 **IProfSect**インターフェイスを実装する MAPI オブジェクトです。このインターフェイスは、 **imapiprop**から派生し、追加のメソッドを持っていません。 詳細については、「 [IProfSect: imapiprop](iprofsectimapiprop.md)」を参照してください。 この唯一の目的は、プロファイルセクションのプロパティを操作することです。 特定のプロファイルセクションへの**IProfSect**ポインターを取得するには、クライアントとサービスプロバイダーは次のメソッドを呼び出します。 
   
 |||
 |:-----|:-----|
-|クライアントが呼び出すことができます。  <br/> |[IMAPISession::OpenProfileSection](imapisession-openprofilesection.md) <br/> |
-|サービス プロバイダーを呼び出すことができます。  <br/> |[IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md) <br/> |
-|クライアントまたはプロバイダーのいずれかを呼び出すことができます。  <br/> |[IProviderAdmin::OpenProfileSection](iprovideradmin-openprofilesection.md) <br/> |
+|クライアントは、以下を呼び出すことができます。  <br/> |[IMAPISession::OpenProfileSection](imapisession-openprofilesection.md) <br/> |
+|サービスプロバイダーは、次のものを呼び出すことができます。  <br/> |[IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md) <br/> |
+|クライアントまたはプロバイダーは、次のいずれかを呼び出すことができます。  <br/> |[IProviderAdmin::OpenProfileSection](iprovideradmin-openprofilesection.md) <br/> |
    
-プロファイルは階層構造により、MAPISVC のように。INF ファイルです。 階層の上部には、プロファイルに関連する情報が含まれているプロファイル セクションがあります。 中間レベルには、特定のメッセージのサービスに関する情報が含まれているセクションが含まれています、下位レベルには、メッセージ サービスのサービス プロバイダーのいずれかに関する情報が含まれているセクションが含まれています。 
+プロファイルは、mapisvc.inf のように階層的に編成されます。INF ファイル 階層の最上位には、プロファイルに関連する情報を含むプロファイルセクションがあります。 中間レベルには、特定のメッセージサービスに関する情報を含むセクションが含まれており、下位レベルには、メッセージサービスのサービスプロバイダーの1つに関する情報を含むセクションが含まれています。 
   
-すべてのプロファイルには、1 つまたは複数のプロファイルのセクションに格納されているいくつかの必要なプロパティがあります。 たとえば、すべてのプロファイルは、 **PR_PROFILE_NAME** ([PidTagProfileName](pidtagprofilename-canonical-property.md)) と**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) のプロパティを持ちます。 プロファイルの検索キーは、MAPIGUID で定義されている値に設定されます。MUID_PROFILE_INSTANCE と H し、常にすべてのプロファイルが既に存在します。 2 つのプロファイルには、同じ名前を持つことができます、検索キーを同時に持つことはできません。 検索キーは、特定の種類のデータではなくバイナリ データとして扱います。
+すべてのプロファイルには、プロファイルの1つ以上のセクションに格納されている必要なプロパティがいくつかあります。 たとえば、すべてのプロファイルには、 **PR_PROFILE_NAME** ([PidTagProfileName](pidtagprofilename-canonical-property.md)) および**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) プロパティがあります。 プロファイルの検索キーは、mapiguid で定義された値に設定されます。H as MUID_PROFILE_INSTANCE として、常にすべてのプロファイルで一意であることが保証されます。 2つのプロファイルは同じ名前を持つことができますが、同じ検索キーを持つことはできません。 検索キーは、特定の種類のデータではなく、バイナリデータとして扱う必要があります。
   
-メッセージ ストア プロバイダーは、プロファイルのプロファイルのセクションで、メッセージ ・ ストアの**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) のプロパティを含めるし、メッセージのプロバイダーを格納して、これらのエントリの同期を維持するには必要です。 メッセージ ストアが作成されると、プロバイダーはこれらのプロファイル セクションに格納されている値に基づいて**PR_DISPLAY_NAME**を設定します。 
+メッセージストアプロバイダーでは、メッセージストアの**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) プロパティをプロファイルのプロファイルセクションに含める必要があり、メッセージストアプロバイダーには、これらのエントリを同期された状態に保つ必要があります。 メッセージストアが作成されると、プロバイダーはこれらのプロファイルセクションに格納されている値に基づいて**PR_DISPLAY_NAME**を設定します。 
   
-プロファイル セクションと**IMAPIProp**を継承する他のオブジェクトとの間の 2 つの主な違いがあります。 
+プロファイルセクションと、 **imapiprop**から継承するその他のオブジェクトには、次の2つの大きな違いがあります。 
   
-- プロファイル セクションでは、トランザクションをサポートしていません。
+- プロファイルセクションは、トランザクションをサポートしていません。
     
-- プロファイル セクションでは、 **IMAPIProp::GetIDsFromNames**と**IMAPIProp::GetNamesFromIDs**の導入から MAPI_E_NO_SUPPORT を取得する、名前付きプロパティをサポートしていません。 詳細については、 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)および[IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md)を参照してください。
+- プロファイルセクションは、名前付きプロパティをサポートしておらず、 **imapiprop:: getidsfromnames**および**imapiprop:: GetNamesFromIDs**の実装から MAPI_E_NO_SUPPORT を返します。 詳細については、 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)および[imapiprop:: GetNamesFromIDs](imapiprop-getnamesfromids.md)を参照してください。
     
-プロファイル セクションでは、トランザクション、 **IMAPIProp::CopyProps**への呼び出しに加えられた変更をサポートしていないため**CopyTo**、または**SetProps**即時に反映します。 詳細については、 [IMAPIProp::CopyProps](imapiprop-copyprops.md)を参照してください。 クライアントとサービス ・ プロバイダーはプロファイル セクションの**IMAPIProp::SaveChanges**メソッドを呼び出すことができ、成功しますが、プロファイル セクションのデータには影響しません。 詳細については、 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)を参照してください。 すぐに変更することは、サービス プロバイダーがユーザーにプロファイル プロパティを表示するクライアントを使用するプロパティ シートを実装する方法に影響します。 ユーザーが延期または変更を元に戻すことができるようにするサービス プロバイダーでは、実際のセクションではなく、プロファイルの各セクションのコピーでは、そのプロパティ シートを実装しなければなりません。 コピーを使用すると、ユーザーが変更を加えるし、後でそれらの変更をキャンセル、元のプロファイル セクションを変更を加えずにそのままです。 
+プロファイルセクションはトランザクションをサポートしていないため、 **imapiprop:: copyprops**、 **CopyTo**、または**setprops**への呼び出しによって加えられた変更は、直ちに有効になります。 詳細については、「 [imapiprop:: copyprops](imapiprop-copyprops.md)」を参照してください。 クライアントおよびサービスプロバイダーは、プロファイルセクションの**imapiprop:: SaveChanges**メソッドを呼び出すことができますが、これは成功しますが、プロファイルセクションのデータには影響しません。 詳細については、「 [imapiprop:: SaveChanges](imapiprop-savechanges.md)」を参照してください。 変更がすぐに発生する場合は、サービスプロバイダーがプロファイルプロパティをユーザーに表示するために使用するプロパティシートを実装する方法に影響を与える可能性があります。 ユーザーが変更を延期または元に戻すことができるようにするサービスプロバイダーは、実際のセクションではなく、プロファイルセクションのコピーを使用して、プロパティシートを実装する必要があります。 コピーを使用すると、ユーザーは変更を加えてから、元のプロファイルセクションを変更しないで、変更を取り消すことができます。 
   
-プロファイルの情報が表示される順序は、MAPI のリソースを構成して、セッション内の割り当てに影響します。 プロファイルの順序では、以下の割り当てが影響を受けます。
+プロファイルに情報が表示される順序によって、MAPI がリソースを構成し、セッションで割り当てが行われる方法が変わります。 プロファイルの順序によって、次の割り当てが影響を受けます。
   
-- 既定のメッセージ ストア
+- 既定のメッセージストア
     
 - 個人用アドレス帳
     
-- 既定のメッセージ ストアの検索パス
+- 既定のメッセージストア検索パス
     
-- 既定のアドレス帳の検索パス
+- 既定のアドレス帳検索パス
     
-- トランスポート プロバイダーの順序
+- トランスポートプロバイダーの順序
     
-MAPI では、STATUS_DEFAULT_STORE フラグの既定のストアができることを示す、 **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) プロパティに設定するプロファイルの最初のメッセージ ストアを使用する既定のメッセージ ストアを設定します。 クライアントは、 **IMAPISession::SetDefaultStore**を呼び出すことによってこの設定を上書きすることができます。 詳細については、 [IMAPISession::SetDefaultStore](imapisession-setdefaultstore.md)を参照してください。
+MAPI では、 **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) プロパティに STATUS_DEFAULT_STORE フラグが設定されているプロファイルの最初のメッセージストアとして既定のメッセージストアが設定されます。これは、既定のストアであることを示します。 クライアントは**imapisession:: setdefaultstore**を呼び出すことによって、この設定を上書きすることができます。 詳細については、「 [imapisession:: setdefaultstore](imapisession-setdefaultstore.md)」を参照してください。
   
-MAPI は、送信および受信メッセージを処理するためのトランスポートの順番を作成します。 特定の種類のメッセージの 2 つ以上のトランスポート プロバイダーが登録されると、MAPI はこの順序を使用して、どのプロバイダーがメッセージを処理する必要がありますを決定します。 MAPI でトランスポート プロバイダーは、1 つの例外 - 輸送船の**PR_RESOURCE_FLAGS**プロパティに STATUS_XP_PREFER_LAST フラグを設定するプロファイルに追加されたが、順序で配置最後の順序を使用するトランスポートの順番を設定します。 クライアントは、 **IMsgServiceAdmin::MsgServiceTransportOrder**を呼び出すことによって、トランスポートの順番を設定できます。 詳細については、 [IMsgServiceAdmin::MsgServiceTransportOrder](imsgserviceadmin-msgservicetransportorder.md)を参照してください。
+MAPI は、送信メッセージと受信メッセージを処理するためのトランスポート順序を作成します。 特定の種類のメッセージに対して複数のトランスポートプロバイダーが登録されている場合、MAPI はこの順序を使用して、メッセージを処理する必要があるプロバイダーを決定します。 MAPI は、トランスポートプロバイダーがプロファイルに追加された順序を、1つの例外として設定します。これは、 **PR_RESOURCE_FLAGS**プロパティに STATUS_XP_PREFER_LAST フラグを設定したトランスポートが順に最後に配置されます。 クライアントは、 **IMsgServiceAdmin:: msgservicetransportorder**を呼び出すことで、トランスポート順序を設定できます。 詳細については、「 [IMsgServiceAdmin:: msgservicetransportorder](imsgserviceadmin-msgservicetransportorder.md)」を参照してください。
   
-サービス プロバイダーおよびメッセージ サービスを注文するためのガイドラインも競合しています。 競合がある場合、コードは競合を解決する必要があります。 メール コントロール パネルのプログラムを使用すると、期待どおりに、プロバイダーが構成されているかどうかを判断するのには作成したプロファイルを検査します。
+サービスプロバイダーとメッセージサービスの注文に関するガイドラインは、競合する場合があります。 競合がある場合は、コードで競合を解決する必要があります。 メールコントロールパネルプログラムを使用して、作成したプロファイルを調べ、プロバイダーが期待どおりに構成されているかどうかを判断できます。
   
 

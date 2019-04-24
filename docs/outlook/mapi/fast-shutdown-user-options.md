@@ -9,11 +9,11 @@ ms.assetid: 220aeab5-20f6-4520-96c9-8aaa0e8ea15b
 description: '最終更新日: 2012 年 6 月 26 日'
 localization_priority: Priority
 ms.openlocfilehash: 3c60862733c6b38e60650ae9daba9bba578fcd58
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341077"
 ---
 # <a name="fast-shutdown-user-options"></a>高速シャットダウンのユーザー オプション
 

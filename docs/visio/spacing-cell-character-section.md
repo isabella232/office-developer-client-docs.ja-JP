@@ -8,19 +8,19 @@ f1_keywords:
 - vis_sdr.chm955
 localization_priority: Normal
 ms.assetid: 46feb136-01ac-1303-66ab-d772c0ec41a0
-description: 複数の文字間の間隔を制御します。間隔は、1/20 ポイント単位で増減できます。
-ms.openlocfilehash: ee714306e22cafb7f6d805851a6f977e93172377
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 複数の文字間の間隔を制御します。 間隔は、1/20 ポイント単位で増減できます。
+ms.openlocfilehash: 927b6203b81af453411cdd13b6f8c8342507a61b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334903"
 ---
-# <a name="spacing-cell-character-section"></a>[Spacing] セル ([文字] セクション)
+# <a name="spacing-cell-character-section"></a>[Spacing] セル ([Character] セクション)
 
-複数の文字間の間隔を制御します。間隔は、1/20 ポイント単位で増減できます。
+複数の文字間の間隔を制御します。 間隔は、1/20 ポイント単位で増減できます。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 このセルの値は、[**テキスト**] ダイアログ ボックスを使用して設定することもできます (このダイアログ ボックスを開くには、[**ホーム**] タブで [**フォント**] 矢印をクリックします)。 
   
@@ -28,14 +28,14 @@ ms.locfileid: "19806552"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |Char.Letterspace [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+|セル名:  <br/> |Letterspace [ *i* ] *i* = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [Spacing] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionCharacter** <br/> |
-|行インデックス:  <br/> |**visRowCharacter** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+|行インデックス:  <br/> |**visRowCharacter** +  *i* = ** 0、1、2...  <br/> |
 |セル インデックス:  <br/> |**visCharacterLetterspace** <br/> |
    
 

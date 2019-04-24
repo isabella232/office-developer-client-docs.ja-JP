@@ -12,51 +12,51 @@ api_type:
 - HeaderDef
 ms.assetid: ec1b8e14-b27d-4a28-b9b7-f36f7c3e7427
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 66eac870ffcb524be95b773697f06b2d9c03376b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2edc65b4c0dad964e83b2731528124a86c87a32d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338116"
 ---
 # <a name="pidtagcontactaddressbookuid-canonical-property"></a>PidTagContactAddressBookUid 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-連絡先アドレス帳には、このセッションを識別する UID が含まれています。
+連絡先アドレス帳のこのセッションを識別する UID を含みます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_CONTAB_UID  <br/> |
 |識別子:  <br/> |0x6601  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |連絡先のアドレス帳  <br/> |
+|エリア:  <br/> |連絡先のアドレス帳  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-構成されている複数の連絡先アドレス帳を使っている場合、それぞれのこのプロパティを設定する必要があります。 
+複数の連絡先アドレス帳が構成されている場合は、このプロパティをそれぞれに設定する必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

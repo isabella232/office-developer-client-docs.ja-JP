@@ -13,11 +13,11 @@ api_type:
 ms.assetid: bcc0cda0-02bc-49a5-9fb9-850b4c2867c1
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 90e5b370dace12dbe529465259b8551516fda491
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338060"
 ---
 # <a name="pidnamekeywords-canonical-property"></a>PidNameKeywords 標準プロパティ
 
@@ -25,39 +25,39 @@ ms.locfileid: "25386370"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-キーワードやメッセージのオブジェクトのカテゴリが含まれています。
+message オブジェクトのキーワードまたはカテゴリを含みます。
   
 |||
 |:-----|:-----|
 |フレンドリ名:  <br/> |なし  <br/> |
-|プロパティを設定します。  <br/> |PS_PUBLIC_STRINGS  <br/> |
-|プロパティ名:  <br/> |Keywords  <br/> |
+|プロパティセット:  <br/> |PS_PUBLIC_STRINGS  <br/> |
+|プロパティ名:  <br/> |キーワード  <br/> |
 |データの種類 :   <br/> |PT_MV_UNICODE  <br/> |
-|エリア:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |一般的なメッセージング  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-メッセージのオブジェクトでは、このプロパティの複数値文字列内の各文字列の長さのカテゴリを指定する複数行文字列値は 256 未満である必要があります。
+message オブジェクトのカテゴリを指定する複数文字列の値。このプロパティの複数値を持つ文字列内の各文字列の長さは、256未満である必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルのオブジェクトを処理します。
+> メッセージと添付ファイルオブジェクトを処理します。
     
-[[MS OXODOC]](https://msdn.microsoft.com/library/103007c8-5066-4bed-84e3-4465907af098%28Office.15%29.aspx)
+[[OXODOC]](https://msdn.microsoft.com/library/103007c8-5066-4bed-84e3-4465907af098%28Office.15%29.aspx)
   
-> プロパティは、ドキュメントに対する許可の操作を指定します。
+> ドキュメントに対して許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -65,9 +65,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

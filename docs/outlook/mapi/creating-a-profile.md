@@ -7,30 +7,30 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 80867adf-6786-47a9-9d3f-4aef4a7d7c66
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5c6a16b62987a5338e1f14d362ba9d0ba9836e8e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 842a8d9f2f08125fbede037dabf8ae6f6790d547
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332950"
 ---
 # <a name="creating-a-profile"></a>プロファイルの作成
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアントは、プロファイル ウィザードを使用するか、カスタム コードを記述することによって、2 つの方法のいずれかでプロファイルを作成できます。
+クライアントは、プロファイルウィザードを使用するか、またはカスタムコードを作成することによって、プロファイルを作成できます。
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-[プロファイル ウィザードを使用したプロファイルの作成](creating-a-profile-by-using-the-profile-wizard.md)
+[プロファイルウィザードを使用してプロファイルを作成する](creating-a-profile-by-using-the-profile-wizard.md)
   
-> プロファイル ウィザード、対話形式で、メッセージ サービス、およびサービス プロバイダーを選択するユーザーを有効にすると、プロファイルを作成するアプリケーションを起動する方法について説明します。
+> ユーザーがメッセージサービスとサービスプロバイダーを対話的に選択できるようにすることにより、プロファイルを作成するアプリケーションであるプロファイルウィザードを起動する方法について説明します。
     
-[ユーザー設定コードを使用したプロファイルの作成](creating-a-profile-by-using-custom-code.md)
+[カスタムコードを使用してプロファイルを作成する](creating-a-profile-by-using-custom-code.md)
   
-> 、メッセージ サービスの特定のセットを必要とする非対話型クライアント アプリケーションにとって最善の選択肢では多くの場合 C または C++ のコードを記述する方法について説明します。
+> C または C++ のコードを記述する方法について説明します。多くの場合、特定のメッセージサービスのセットを必要とする非対話型のクライアントアプリケーションに最適な選択です。
     
 

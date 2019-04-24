@@ -12,51 +12,51 @@ api_type:
 - HeaderDef
 ms.assetid: f75ea086-9d65-4396-a2e3-1751351e56d3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 601734fbaf3157fd0f3f3637b807a511076a6124
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ceb9181a3d8669f8cf9a62eff12ad07148b42e48
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334679"
 ---
 # <a name="pidtagconversioneits-canonical-property"></a>PidTagConversionEits 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-変換を記述するには、転送中のメッセージに適用されるエンコードされた情報の種類 (含む) が含まれています。
+変換を記述するために転送中のメッセージに適用される、エンコードされた情報の種類 (eits が含まれます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_CONVERSION_EITS  <br/> |
-|識別子:  <br/> |0x000C  <br/> |
+|識別子:  <br/> |0x000c  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |Exchange  <br/> |
+|エリア:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-X.400 の環境では、配信不能と配信の両方のレポートのこのプロパティを使用します。
+このプロパティは、配信不能レポートと配信レポートの両方に使用されます。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

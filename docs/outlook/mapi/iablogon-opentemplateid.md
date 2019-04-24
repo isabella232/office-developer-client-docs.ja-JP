@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 751c36d3-c39e-4357-a60a-88685a378de0
-description: '�ŏI�X�V��: 2011�N7��23��'
+description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: bc68878a25873533162df7e1671e483c3bb77865
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334749"
 ---
 # <a name="iablogonopentemplateid"></a>IABLogon::OpenTemplateID
 
@@ -25,7 +25,7 @@ ms.locfileid: "25384634"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ホストのアドレス帳プロバイダーに存在するデータが含まれている受信者のエントリが表示されます。
+ホストアドレス帳プロバイダーに存在するデータを持つ受信者エントリを開きます。
   
 ```cpp
 HRESULT OpenTemplateID(
@@ -43,87 +43,87 @@ HRESULT OpenTemplateID(
 
  _cbTemplateID_
   
-> [in]_LpTemplateID_パラメーターで指定されたテンプレートの識別子のバイト数です。 
+> 順番_lpTemplateID_パラメーターによって指定されるテンプレート識別子のバイト数。 
     
  _lpTemplateID_
   
-> [in]テンプレート識別子、または受信者のエントリを開くことの**PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) のプロパティへのポインター。
+> 順番開く受信者エントリのテンプレート識別子または**PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) プロパティへのポインター。
     
- _ulTemplateFlags_
+ _ultemplateflags_
   
-> [in]テンプレート識別子によって表される項目を開く方法を指定するためのフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番テンプレート識別子で表されるエントリを開く方法を示すために使用されるフラグのビットマスク。 次のフラグを設定できます。
     
 FILL_ENTRY 
   
-> テンプレート識別子によって表される項目に基づいて、コンテナーでホスト プロバイダーに新しいエントリを作成しています。 **IABLogon::OpenTemplateID**メソッドを使用してホスト プロバイダーのエントリの特定の初期化を実行する必要がありますか、 [IMAPIProp: IUnknown](imapipropiunknown.md) _lpMAPIPropData_のパラメーターまたは戻り値のカスタム**IMAPIProp の実装**インターフェイスの実装は、 _lppMAPIPropNew_パラメーターにします。 
+> ホストプロバイダーは、テンプレート識別子によって表されるエントリに基づいて、コンテナー内に新しいエントリを作成しています。 **IABLogon:: OpenTemplateID**メソッドは、 _lpMAPIPropData_パラメーターの[imapiprop: IUnknown](imapipropiunknown.md)実装を使用してホストプロバイダーのエントリの特定の初期化を実行するか、カスタム imapiprop を返す必要があります。 **** _lppMAPIPropNew_パラメーターでのインターフェイスの実装。 
     
  _lpMAPIPropData_
   
-> [in]**IMAPIProp**から派生したホスト プロバイダーのプロパティのオブジェクトとインターフェイスの実装へのポインター。
+> 順番ホストプロバイダーの property オブジェクトへのポインターと、 **imapiprop**から派生したインターフェイスの実装。
     
- _lpInterface_
+ _lpinterface_
   
-> [in]_LppMAPIPropNew_パラメーターで返されるインターフェイス ポインターの型を表すインターフェイス識別子 (IID) へのポインター。 標準のユーザー インターフェイスのメッセージを返します**null**を渡す[IMailUser: IMAPIProp](imailuserimapiprop.md)。
+> 順番_lppMAPIPropNew_パラメーターで返されるインターフェイスポインターの種類を表すインターフェイス識別子 (IID) へのポインター。 **null**を渡すと、標準のメッセージングユーザーインターフェイス、 [imailuser: imapiprop](imailuserimapiprop.md)が返されます。
     
  _lppMAPIPropNew_
   
-> [out]**IMAPIProp**から派生したプロパティがバインドされているオブジェクトとインターフェイスの実装へのポインター。
+> 読み上げバインドされた property オブジェクトへのポインターと、 **imapiprop**から派生したインターフェイスの実装。
     
  _lpMAPIPropSibling_
   
-> [out]予約されています。**null**にする必要があります。
+> 読み上げ予約語**null**である必要があります。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 適切なコードは、ホスト プロバイダーに関連するデータを正常にバインドされました。
+> 適切なコードがホストプロバイダーの関連データに正常にバインドされました。
     
 MAPI_E_NO_SUPPORT 
   
-> オブジェクトは、テンプレートの Id をサポートしていません。
+> オブジェクトはテンプレート id をサポートしていません。
     
 MAPI_E_UNKNOWN_ENTRYID 
   
-> アドレス帳プロバイダーでは、 _lpTemplateID_パラメーターに渡されるテンプレート識別子は認識されません。 
+> _lpTemplateID_パラメーターで渡されたテンプレート識別子がアドレス帳プロバイダーで認識されません。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-**IABLogon::OpenTemplateID**メソッドは、ホスト プロバイダーのコンテナー内にあるそれぞれのエントリのコピーの制御を維持する必要のあるアドレス帳プロバイダーによってのみ実装されます。 **OpenTemplateID**を実装するプロバイダーは、外部のアドレス帳プロバイダーと呼ばれます。 ホスト プロバイダーがコピーしたエントリを作成またはコピーした項目を開くには、 [IMAPISupport::OpenTemplateID](imapisupport-opentemplateid.md)を呼び出すし、MAPI は、 **IABLogon::OpenTemplateID**の呼び出しに渡されます。 **IABLogon::OpenTemplateID**は、エントリを表示し、ホスト プロバイダー内のデータにそれを制御するコードをバインドします。 
+**IABLogon:: OpenTemplateID**メソッドは、ホストプロバイダーのコンテナーにあるエントリのコピーに対する制御を維持する必要があるアドレス帳プロバイダーによってのみ実装されます。 **OpenTemplateID**を実装するプロバイダーは、外部アドレス帳プロバイダーと呼ばれます。 ホストプロバイダーは[imapisupport:: OpenTemplateID](imapisupport-opentemplateid.md)を呼び出してコピーされたエントリを作成するか、コピーされたエントリを開くと、 **IABLogon:: OpenTemplateID**の呼び出しに MAPI が渡されます。 **IABLogon:: OpenTemplateID**はエントリを開き、ホストプロバイダーのデータに制御するコードをバインドします。 
   
-エントリ id を使用するのではなく、 **IABLogon::OpenTemplateID**は、エントリのテンプレートの識別子、 **PR_TEMPLATEID**、別のプロパティを使用します。 テンプレート識別子は、ホスト プロバイダーでのデータにバインドする必要がありますコードを持つエントリをサポートする必要があります。
+**IABLogon:: OpenTemplateID**は、エントリ識別子を使用するのではなく、別のプロパティ、エントリのテンプレート識別子、 **PR_TEMPLATEID**を使用します。 ホストプロバイダーのデータにコードをバインドする必要があるエントリに対して、テンプレート識別子をサポートする必要があります。
   
-いくつかのアドレス帳プロバイダーが**IABLogon::OpenTemplateID**を実装する場合の例は次のとおり。 
+アドレス帳プロバイダーが**IABLogon:: OpenTemplateID**を実装する必要がある場合の例としては、次のようなものがあります。 
   
-- そのままとするためにコピーしたエントリのデータを定期的に更新するには、元と同期されます。
+- コピーしたエントリのデータを定期的に更新して、元のデータと同期されたままにします。
     
-- 機能を実装する動的にサーバー上のデータからのエントリの詳細の表に表示される一覧の作成など、ホスト プロバイダーを実装できません。
+- サーバー上のデータからエントリの詳細表に表示されるリストを動的に設定するなど、ホストプロバイダーが実装できない機能を実装します。
     
-- ホスト プロバイダーのエントリのプロパティと、 **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) を含む別の詳細表示の編集コントロールの値からの計算など、元のエントリとの間の対話を制御するにはアドレスのコンポーネントです。
+- ホストプロバイダーのエントリ内のプロパティと元の項目の間の相互作用を制御するには、 **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) を、異なる詳細表示にある編集コントロールの値を使用して計算します。住所のコンポーネント。
     
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-ホスト プロバイダーにコピーまたは、プロバイダーからのエントリを作成し、 **IABLogon::OpenTemplateID**を通じてプロパティ オブジェクトの実装を指定する、ほとんどのエントリを維持するために呼び出しを処理します。 ただし、ホスト プロバイダーにこれらの呼び出しを転送するため、ホスト プロバイダーの呼び出しを傍受でき、呼び出しを転送する前にカスタム処理を実行します。
+ホストプロバイダーは、プロバイダーからエントリをコピーまたは作成するときに、 **IABLogon:: OpenTemplateID**を使用してプロパティオブジェクトの実装を提供するときに、エントリを維持するために、ほとんどの呼び出しを処理します。 ただし、ホストプロバイダーは、このような呼び出しを自分に転送する必要があるので、呼び出しを転送する前に、ホストプロバイダーは任意の呼び出しを受信し、カスタム処理を実行できます。
   
-プロパティのオブジェクトの実装では、次のガイドラインを使用してください。
+property オブジェクトの実装では、次のガイドラインを使用する必要があります。
   
-- [IMAPIProp::GetProps](imapiprop-getprops.md)が呼び出されると場合は、処理と計算されたプロパティは、要求するかどうかを決定します。 ホスト プロバイダーには、メジャーのプロパティに対するすべての要求を転送します。 
+- [imapiprop:: GetProps](imapiprop-getprops.md)が呼び出されたときに、要求が計算されたプロパティを対象としているかどうかを判別し、ある場合は処理します。 非計算プロパティのすべての要求をホストプロバイダーに転送します。 
     
-- 開くには[IMAPIProp::OpenProperty](imapiprop-openproperty.md)が呼び出されたときに詳細を除く任意のテーブルはテーブルを表示する、要求を処理します。 ほとんどのテーブルは、ホスト プロバイダーに正確にコピーできません。 **IMAPITable**実装これらの要求されたテーブルを生成する必要があります。 ホスト プロバイダーに詳細テーブルの**PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) のプロパティをコピーする必要があります。 これにより、ローカルにテーブルを生成するには、このプロバイダーです。 表示テーブルの通知を生成するテーブルの表示の実装をラップすることもできます。 
+- [imapiprop:: openproperty](imapiprop-openproperty.md)を呼び出して、詳細表示テーブル以外の任意のテーブルを開いた場合は、要求を処理します。 ほとんどのテーブルは、ホストプロバイダに正確にコピーすることはできません。 これらの要求されたテーブルに対して**IMAPITable**実装を生成する必要があります。 詳細表**PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) プロパティをホストプロバイダーにコピーする必要があります。 これにより、このプロバイダーはテーブルをローカルに生成できるようになります。 表示テーブルの通知を生成するために、表示テーブルの実装をラップする必要がある場合があります。 
     
-- [IMAPIProp::SetProps](imapiprop-setprops.md)が呼び出されると、ホスト プロバイダーは、プロパティを設定するを許可する前にデータを検証できます。 すべての必要なプロパティが設定された計算を確認することができます。 エラーが検出された場合は、適切なエラー値を返すと、可能なら、 [IMAPIProp::GetLastError](imapiprop-getlasterror.md)で、追加の説明です。
+- [imapiprop:: setprops](imapiprop-setprops.md)が呼び出されると、ホストプロバイダーはプロパティを設定する前にデータを検証することができます。 必要なすべてのプロパティが設定または計算されたことを確認できます。 エラーが検出された場合は、適切なエラー値を返します。可能であれば、 [imapiprop:: GetLastError](imapiprop-getlasterror.md)から追加の説明を返します。
     
-- [IMAPIProp::SaveChanges](imapiprop-savechanges.md)が呼び出されると、ホスト プロバイダーすることも、エントリを保存する前に、処理を実行します。 ホスト プロバイダーのエントリで、新しいアドレスなど、変更されたプロパティの影響を受けるすべてのデータを保存する必要があります。 
+- [imapiprop:: SaveChanges](imapiprop-savechanges.md)が呼び出されると、ホストプロバイダーはエントリを保存する前に処理を実行することができます。 新しいアドレスなど、変更されたプロパティの影響を受けるすべてのデータを、ホストプロバイダのエントリに保存する必要があります。 
     
-一般に、ホスト プロバイダーに渡されたエントリの実装を行うすべての関連するプロパティのコンテキストに固有の操作を実行するメソッドをインターセプトします。 FILL_ENTRY フラグが_ulTemplateFlags_パラメーターで渡された場合は、エントリのすべてのプロパティを設定します。 
+一般的には、ホストプロバイダーに渡すエントリの実装によって、関連するプロパティのコンテキスト固有の操作を実行するすべてのメソッドがインターセプトされます。 FILL_ENTRY フラグが_ultemplateflags_パラメーターに渡された場合は、エントリのすべてのプロパティを設定します。 
   
-_LppMAPIPropNew_パラメーターで新しい property オブジェクトを取得する場合は、参照を維持するために、ホスト プロバイダーのプロパティのオブジェクトの[IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx)メソッドを呼び出します。 **IMAPIProp**実装は、 _lppMAPIPropNew_で返されるバインドされたオブジェクトをすべての呼び出しをルーティングするプロパティのホスト オブジェクトのそれぞれの対応するメソッドにバインドされたオブジェクトによって処理される、後。 
+_lppMAPIPropNew_パラメーターで新しい property オブジェクトを取得する場合は、ホストプロバイダーの property オブジェクトの[IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx)メソッドを呼び出して、参照を維持します。 _lppMAPIPropNew_での**imapiprop**の実装によって返されたバインドオブジェクトを経由するすべての呼び出しは、バインドされたオブジェクトによって処理された後、host property オブジェクトの対応するメソッドにルーティングされる必要があります。 
   
-バインドされたプロパティ オブジェクトを通じて渡される任意の名前付きプロパティのプロパティ id は、プロバイダーの識別子の名前空間には。 [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md)メソッドの実装は、任意のテンプレートに固有のタスクを実行できるようにするプロパティの名前を判断します。 同様に、ホスト プロバイダーに渡す、プロバイダーのプロパティは、名前空間である必要があります。 などの**OpenTemplateID**では、名前付きプロパティを設定する場合必要がありますを使用する、識別子の 1 つの名前- [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)メソッドを呼び出すことによって、必要に応じて、作成します。 
+バインドされた property オブジェクトを通じて渡される名前付きプロパティのプロパティ識別子は、プロバイダーの識別子名前空間にあります。 [imapiprop:: GetNamesFromIDs](imapiprop-getnamesfromids.md)メソッドを実装すると、テンプレート固有のタスクを実行できるように、プロパティの名前を決定する必要があります。 同様に、プロバイダーがホストプロバイダーに渡すプロパティも、名前空間に存在する必要があります。 たとえば、 **OpenTemplateID**で名前付きプロパティを設定する場合は、必要に応じて、 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)メソッドを呼び出すことによって、その名前に識別子の1つを使用する必要があります。 
   
-_LpTemplateID_に渡されたエントリ id を認識していない場合は、MAPI_E_UNKNOWN_ENTRYID を返します。
+_lpTemplateID_で渡されたエントリ識別子を認識しない場合は、MAPI_E_UNKNOWN_ENTRYID を返します。
   
-アドレス帳テンプレートの識別子を操作する方法の詳細については、[外部のアドレス帳プロバイダーとしての機能](acting-as-a-foreign-address-book-provider.md)を参照してください。
+アドレス帳テンプレート識別子を操作する方法の詳細については、「[外部アドレス帳プロバイダーとして機能](acting-as-a-foreign-address-book-provider.md)する」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

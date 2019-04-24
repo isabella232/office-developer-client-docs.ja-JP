@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 8674b288-43a3-6376-35ca-9dbaa3a1851e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a89f6dd14e8bbea9d0d4145dc05bf332af95234a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a8a6546c38c629c193c1978998c95918943fe5c7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336632"
 ---
 # <a name="iconvertersessionsettextwrapping"></a>IConverterSession::SetTextWrapping
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-テキストの折り返しのコンバーターから[IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md)で返される MIME ストリームの幅を設定します。
+[iconvertersession:: MAPIToMIMEStm](iconvertersession-mapitomimestm.md)でコンバータが返す MIME ストリームのテキストの折り返し幅を設定します。
   
 ```cpp
 HRESULT IConverterSession::SetTextWrapping ( 
@@ -38,26 +38,26 @@ HRESULT IConverterSession::SetTextWrapping (
 
  *fWrapText* 
   
-> [in]テキストを折り返すかどうかどうか。
+> 順番テキストを折り返すかどうかを指定します。
     
  *ulWrapWidth* 
   
-> [in]テキストの折り返しの幅を使用します。
+> 順番文字列の折り返し幅を使用します。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK
   
 > 呼び出しが正常になされました。
     
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MapiMime.cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI では、MimeToMAPI を使用して、MAPI メッセージを EML ファイルに変換します。  <br/> |
-|MapiMime.cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI では、MAPIToMIMEStm を使用して、MAPI メッセージを EML ファイルに変換します。  <br/> |
+|mapimime .cpp  <br/> |ImportEMLToIMessage  <br/> |mfcmapi は MimeToMAPI を使用して、EML ファイルを MAPI メッセージに変換します。  <br/> |
+|mapimime .cpp  <br/> |ExportIMessageToEML  <br/> |mfcmapi は、MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -78,5 +78,5 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 [IConverterSession::SetSaveFormat](iconvertersession-setsaveformat.md)
 
 
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
 

@@ -1,5 +1,5 @@
 ---
-title: メッセージの送信
+title: メッセージを送信する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,28 +7,28 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 4fa47824-b4ef-41e1-9096-c1b1cdacd7ac
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 6845c3d86fb3d34119a296ebbae76a7322d7d8c1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 01fd66033da0f24948913f47a752d555eca655fe
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339747"
 ---
-# <a name="sending-a-message"></a>メッセージの送信
+# <a name="sending-a-message"></a>メッセージを送信する
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージを送信する準備ができたら、 [IMessage::SubmitMessage](imessage-submitmessage.md)メソッドを呼び出します。 **SubmitMessage**では、発信キューにメッセージを配置し、メッセージの**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) のプロパティで、MSGFLAG_SUBMIT フラグを設定します。
+メッセージを送信する準備ができたら、 [IMessage:: submitmessage](imessage-submitmessage.md)メソッドを呼び出します。 **submitmessage**は、メッセージを送信キューに配置し、メッセージの**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティに MSGFLAG_SUBMIT フラグを設定します。
   
-メッセージ ストア プロバイダーでは、トランスポート プロバイダーでは、密に結合されている場合は、メッセージング システムに配信するトランスポートに直接メッセージを示します。 されていない場合は、発信キューが変更された MAPI スプーラー通知メッセージ ストア プロバイダーを組み合わせることで、緊密にし MAPI スプーラーは、適切なトランスポート プロバイダーにメッセージを転送します。
+メッセージストアプロバイダーは、トランスポートプロバイダーと密に結び付けられている場合、メッセージをメッセージングシステムに配信するトランスポートに直接付与します。 密結合されていない場合、メッセージストアプロバイダーは、送信キューが変更されたことを mapi スプーラーに通知し、mapi スプーラーは適切なトランスポートプロバイダーにメッセージを転送します。
   
-送信操作をキャンセルするユーザーを許可する場合は、この機能を実装するために[IMsgStore::AbortSubmit](imsgstore-abortsubmit.md)を呼び出します。 **AbortSubmit**では、発信キューからメッセージを削除します。 ユーザーは、基になるメッセージング システムにメッセージが指定されるまでに発生してから、送信を停止するのにはできることができます。 
+ユーザーが送信操作を取り消すことができるようにする場合は、 [IMsgStore:: abortsubmit](imsgstore-abortsubmit.md)を呼び出してこの機能を実装します。 **abortsubmit**は、発信キューからメッセージを削除します。 ユーザーは、メッセージが基になるメッセージングシステムに渡されるまで、送信を停止することを許可できます。 
   
-**SubmitMessage**では、MAPI_E_CORRUPT_DATA が返された場合を想定しています送信されるデータが失われるようになりました。 2 番目の時間を送信する前に、 [IMAPIProp::SetProps](imapiprop-setprops.md)と[IMAPIProp::SaveChanges](imapiprop-savechanges.md)を呼び出すことによって、メッセージを再書き込みします。 **IMAPIProp**のこれらの呼び出しが失敗した場合、または**SubmitMessage**には、2 回目が失敗した場合は、ユーザーにエラーを表示します。 
+**submitmessage**が MAPI_E_CORRUPT_DATA を返す場合は、送信されるデータが失われたと仮定します。 2回目の送信を試行する前に、 [imapiprop:: setprops](imapiprop-setprops.md)と[imapiprop:: SaveChanges](imapiprop-savechanges.md)を呼び出して、メッセージを再度書き込みます。 これらの**imapiprop**の呼び出しが失敗するか、または**submitmessage**が2回目に失敗した場合は、ユーザーにエラーを表示します。 
   
-**SubmitMessage**を正常に呼び出し、受信者の一覧に割り当てられたメモリをすべて解放し、メッセージとその添付ファイルを解放します。 メッセージが送信されると、MAPI にはこれらのオブジェクトのポインターをその他の操作はできません。 1 つの例外が**リ ス**を呼び出しています。 多くのメッセージ ストア プロバイダーに送信されたメッセージのエントリ id が無効になるために、他の呼び出しは許可されません。
+**submitmessage**を正常に呼び出した後、受信者リストに割り当てられているメモリを解放し、メッセージとその添付ファイルを解放します。 メッセージが送信されると、MAPI では、これらのオブジェクトのポインターに対して他の操作は許可されません。 1つの例外は、 **IUnknown:: Release**を呼び出すことです。 多くのメッセージストアプロバイダーは、送信されたメッセージのエントリ id を無効にするため、他の通話は許可されません。
   
 

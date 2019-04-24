@@ -7,29 +7,29 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0ec70417-5b23-45af-95a0-1b26f6791699
 description: イメージを限定しているパスの図形座標への参照を格納します。
-ms.openlocfilehash: 9f1c159e303c1d7bc3467c36756a422a3f325c7b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cfbbb3ca7294f751f088df7c3284bf6461270af7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341861"
 ---
-# <a name="clippingpath-cell-foreign-image-info-section"></a>[ClippingPath] セル ([外部画像情報] セクション)
+# <a name="clippingpath-cell-foreign-image-info-section"></a>[ClippingPath] セル ([外部イメージの情報] セクション)
 
 イメージを限定しているパスの図形座標への参照を格納します。 
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
-[**ClippingPath**] セルが有効なパスを示している場合、イメージがクリップされるため、イメージはパス内で描画されます。[**ClippingPath**] セルが空か、無効なエントリが格納されている場合は、イメージは、スケール値とオフセット値を使用した角形のクリップで描画されます。  
+[**ClippingPath**] セルが有効なパスを示している場合、イメージがクリップされるため、イメージはパス内で描画されます。 [**ClippingPath**] セルが空か、無効なエントリが格納されている場合は、イメージは、スケール値とオフセット値を使用した角形のクリップで描画されます。 
   
 > [!NOTE]
-> イメージのシェイプ シートの[[Geometry](geometry-section.md) ] セクションで定義されたパスだけは、 **ClippingPath**セルの有効なエントリです。 シートの相互参照は、画像クリッピングパスを定義するのには使用できません。 
+> イメージのシェイプシートの [ [Geometry](geometry-section.md) ] セクションで定義されているパスのみが、 **[clippingpath]** セルの有効なエントリです。 イメージのクリッピング パスの定義に、シート間参照は使用できません。 
   
 別の数式によって、**Cell** エレメントの **N** 属性の値から、または **CellsU** プロパティを使用したプログラムから、名前によって [**ClippingPath**] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | ClippingPath  <br/> |
+| セル名:  <br/> | [clippingpath]  <br/> |
    
 プログラムから、インデックスによって [**ClippingPath**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -39,7 +39,7 @@ ms.locfileid: "19805008"
 | 行インデックス:  <br/> |**visRowForeign** <br/> |
 | セル インデックス:  <br/> |**visFrgnImgClippingPath** <br/> |
    
-## <a name="example"></a>次の使用例では、テーブルからレコードを削除できないようにします。
+## <a name="example"></a>例
 
 次の操作を実行して、イメージの境界図形を楕円に変更できます。
   
@@ -51,12 +51,12 @@ ms.locfileid: "19805008"
     
 - [**セクションの挿入**] ダイアログ ボックスで、[**図形座標**] を選択して [**OK**] をクリックします。
     
-- 新しいジオメトリ セクション (例:"Geometry2"など) では、1 つを除くすべての行を削除します。
+- [新しい Geometry] セクション (例: "Geometry2") で、1行を除くすべてを削除します。
     
 - 残りの行を右クリックして、[**図形要素の変更**] をクリックします。
     
 - [**図形要素の変更**] ダイアログ ボックスで、[**楕円**] を選択して [**OK**] をクリックします。
     
-- **外部イメージ**セクションで、 **ClippingPath**のセルの数式を設定します`="Geometry2.Path"`し、数式を使用します。 
+- [**外部イメージ**] セクションで、 **[clippingpath]** セルの数式をに`="Geometry2.Path"`設定して、その数式を確定します。 
     
 

@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 655774a6-588c-44c7-903b-4497b7eccbc2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 954609cbc62039c0d60874bde83fde50d1d11c30
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 56a5f153dbd563397b9216af32a715692d0876d7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341609"
 ---
 # <a name="msgserviceentry"></a>MSGSERVICEENTRY
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ サービスの構成をサポートするメッセージ サービスのエントリ ポイント関数のプロトタイプを定義します。 
+メッセージサービスのエントリポイント関数のプロトタイプを定義して、メッセージサービスの構成をサポートします。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapispi.h  <br/> |
-|によって実装される関数の定義:  <br/> |メッセージ サービス  <br/> |
-|によって呼び出される関数を定義します。  <br/> |MAPI  <br/> |
+|ヘッダー ファイル:  <br/> |Mapispi  <br/> |
+|定義された関数の実装:  <br/> |メッセージサービス  <br/> |
+|によって呼び出された定義済み関数:  <br/> |MAPI  <br/> |
    
 ```cpp
 HRESULT MSGSERVICEENTRY(
@@ -52,93 +52,93 @@ HRESULT MSGSERVICEENTRY(
 
  _hInstance_
   
-> [in]サービス providerDLL のインスタンスのハンドル。 ハンドルは通常、リソースを取得するために使用されます。 
+> 順番サービスプロバイダー dll のインスタンスのハンドル。 通常、ハンドルはリソースを取得するために使用されます。 
     
- _lpMalloc_
+ _lpmalloc_
   
-> [in]OLE **IMalloc**インターフェイスを公開すること、メモリ アロケーター オブジェクトへのポインター。 メッセージ サービスは、 **IStream**などの特定のインターフェイスを使用する場合、この割り当て方法を使用する必要があります。 
+> 順番OLE **imalloc**インターフェイスを公開するメモリアロケーターオブジェクトへのポインター。 **IStream**などの特定のインターフェイスを使用する場合、メッセージサービスはこの割り当て方法を使用する必要がある場合があります。 
     
  _lpMAPISup_
   
-> [in]ポインター、 [IMAPISupport: IUnknown](imapisupportiunknown.md)インターフェイスの実装です。 
+> 順番[imapisupport: IUnknown](imapisupportiunknown.md)インターフェイスの実装へのポインター。 
     
- _ulUIParam_
+ _uluiparam_
   
-> [in]関数にユーザー インターフェイスの情報を渡すための実装に固有の値です。 _UlUIParam_パラメーターの構成] ダイアログ ボックスの親ウィンドウのハンドル、HWND 型にキャスト、ULONG_PTR) の種類の。 0 の値は、親ウィンドウがないことを示します。 
+> 順番関数またはゼロにユーザーインターフェイス情報を渡すために使用される実装固有の値。 _uluiparam_パラメーターは、構成ダイアログボックスの親ウィンドウハンドルで、型 HWND (ULONG_PTR へのキャスト) です。 値が0の場合は、親ウィンドウがないことを示します。 
     
  _ulFlags_
   
-> [in]サービスの関数のエントリのオプションを示すフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番サービスエントリ関数のオプションを示すフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 渡された文字列は、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。 
+> 渡された文字列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。 
     
 MSG_SERVICE_UI_READ_ONLY 
   
-> サービスの構成のユーザー インターフェイスは現在の構成を表示する必要がありますが、それを変更するユーザーを許可しません。 
+> サービスの構成ユーザーインターフェイスは現在の構成を表示しますが、ユーザーはそれを変更することはできません。 
     
 SERVICE_UI_ALLOWED 
   
-> 必要な場合に表示される、[構成] ダイアログ ボックスを許可します。 SERVICE_UI_ALLOWED フラグを設定すると、 _lpProps_プロパティの値の配列が空または無効な構成が含まれていない場合にのみ、ダイアログ ボックスが表示されます。 SERVICE_UI_ALLOWED が設定されていない場合、SERVICE_UI_ALWAYS フラグが設定されている場合、ダイアログ ボックスが表示されますも可能性があります。 
+> 必要に応じて、構成ダイアログボックスを表示することを許可します。 SERVICE_UI_ALLOWED フラグが設定されている場合、 _lpprops_プロパティの値の配列が空であるか、有効な構成が含まれていない場合にのみ、ダイアログボックスが表示されます。 SERVICE_UI_ALLOWED が設定されていない場合、SERVICE_UI_ALWAYS フラグが設定されている場合は、ダイアログボックスが表示されることがあります。 
     
 UI_CURRENT_PROVIDER_FIRST 
   
-> その他のダイアログ ボックスの上にアクティブなプロバイダーの構成] ダイアログ ボックスを表示するように要求します。 
+> 他のダイアログボックスの上に、アクティブなプロバイダーの構成ダイアログボックスが表示されるように要求します。 
     
 SERVICE_UI_ALWAYS 
   
-> メッセージ サービスの構成] ダイアログ ボックスを表示する必要があります。 SERVICE_UI_ALWAYS フラグが設定されていない場合、SERVICE_UI_ALLOWED フラグが設定されていて有効な構成情報は、 _lpProps_プロパティの値の配列から、[構成] ダイアログ ボックスが表示されますも可能性があります。 ユーザー インターフェイスを表示するを許可するには、SERVICE_UI_ALLOWED または SERVICE_UI_ALWAYS のいずれかを設定しなければなりません。 
+> 構成ダイアログボックスを表示するには、メッセージサービスが必要です。 SERVICE_UI_ALWAYS フラグが設定されていない場合でも、SERVICE_UI_ALLOWED フラグが設定されており、有効な構成情報が_lpprops_プロパティ値の配列から利用できない場合は、構成ダイアログボックスが表示されることがあります。 ユーザーインターフェイスを表示できるようにするには、SERVICE_UI_ALLOWED または SERVICE_UI_ALWAYS のいずれかを設定する必要があります。 
     
- _ulContext_
+ _ulcontext_
   
-> [in]MAPI を現在実行している構成の処理。 _UlContext_パラメーターは、次の値のいずれかに含まれます。 
+> 順番MAPI が現在実行している構成操作。 _ulcontext_パラメーターには、次のいずれかの値を格納します。 
     
 MSG_SERVICE_CONFIGURE 
   
-> サービスの構成には、プロファイルに変更する必要があります。 SERVICE_UI_ALWAYS フラグが設定されている場合、サービスは、[構成] ダイアログ ボックスに表示されます。 ダイアログ ボックスは、SERVICE_UI_ALLOWED フラグが設定されており、 _lpProps_パラメーターが空か、無効な構成データが含まれていない場合にも表示されます。 _LpProps_に有効なデータが含まれている場合は、ダイアログ ボックスを表示する必要があり、サービスは、構成の変更を行うためこのデータを使用する必要があります。 
+> サービスの構成の変更は、プロファイルで行う必要があります。 SERVICE_UI_ALWAYS フラグが設定されている場合、サービスはその構成ダイアログボックスを表示する必要があります。 SERVICE_UI_ALLOWED フラグが設定されていて、 _lpprops_パラメーターが空であるか、有効な構成データが含まれていない場合にも、ダイアログボックスが表示されます。 _lpprops_に有効なデータが含まれている場合、ダイアログボックスは表示されず、サービスはこのデータを使用して構成の変更を行う必要があります。 
     
 MSG_SERVICE_CREATE 
   
-> サービスは、プロファイルに追加されます。 SERVICE_UI_ALWAYS または SERVICE_UI_ALLOWED のいずれかのフラグが設定されている場合、サービスは、[構成] ダイアログ ボックスに表示されます。 どちらのフラグが設定されている場合、サービスが失敗する必要があります。 
+> サービスはプロファイルに追加されています。 SERVICE_UI_ALWAYS または SERVICE_UI_ALLOWED フラグのどちらかが設定されている場合、サービスはその構成ダイアログボックスを表示する必要があります。 どちらのフラグも設定されていない場合、サービスは失敗します。 
     
 MSG_SERVICE_DELETE 
   
-> プロファイルからサービスを削除しています。 このイベントを受け取ると、サービスは、S_OK を返す必要があります。
+> サービスがプロファイルから削除されています。 このイベントを受け取った後、サービスは S_OK を返す必要があります。
     
 MSG_SERVICE_INSTALL 
   
-> サービスは、ネットワーク、フロッピー ディスク、またはその他の外部メディアからユーザーのワークステーションにインストールされました。 このイベントを受信した後、サービスは、通常、S_OK を返します。 
+> サービスは、ネットワーク、フロッピーディスク、またはその他の外部メディアからユーザーのワークステーションにインストールされています。 このイベントを受け取った後、サービスは通常 S_OK を返します。 
     
 MSG_SERVICE_PROVIDER_CREATE 
   
-> サービスがプロバイダーの追加のインスタンスを作成することを要求します。 サービスは、この操作をサポートする場合は、 [IProviderAdmin::CreateProvider](iprovideradmin-createprovider.md)をに呼び出す必要があります。 サービスがこの操作をサポートしていない場合は、MAPI_E_NO_SUPPORT を返すことです。 
+> プロバイダーの追加のインスタンスを作成するようにサービスに要求します。 サービスがこの操作をサポートしている場合は、 [IProviderAdmin:: createprovider](iprovideradmin-createprovider.md)を呼び出す必要があります。 サービスがこの操作をサポートしていない場合は、MAPI_E_NO_SUPPORT を返すことができます。 
     
 MSG_SERVICE_PROVIDER_DELETE 
   
-> サービスがプロバイダーのインスタンスを削除することを要求します。 サービスは、この操作をサポートする場合は、 [IProviderAdmin::DeleteProvider](iprovideradmin-deleteprovider.md)をに呼び出す必要があります。 サービスがこの操作をサポートしていない場合は、MAPI_E_NO_SUPPORT を返すことです。
+> プロバイダーインスタンスを削除するようにサービスに要求します。 サービスがこの操作をサポートしている場合は、 [IProviderAdmin::D eleteprovider](iprovideradmin-deleteprovider.md)を呼び出す必要があります。 サービスがこの操作をサポートしていない場合は、MAPI_E_NO_SUPPORT を返すことができます。
     
 MSG_SERVICE_UNINSTALL 
   
-> サービスを削除しています。 このイベントを受信した後、サービスはサービスを終了し、成功した場合の値を返す前に行う必要があります任意のクリーンアップ タスクを実行できます。 ユーザーは、削除をキャンセルした場合、サービスは、MAPI_E_USER_CANCEL を返す必要があります。 
+> サービスが削除されています。 このイベントを受け取った後、サービスは、サービスが終了する前に実行する必要があるクリーンアップタスクを実行してから、成功の値を返します。 ユーザーが削除をキャンセルすると、サービスは MAPI_E_USER_CANCEL を返します。 
     
- _あう_
+ _cvalues_
   
-> [in]_LpProps_パラメーターが指す配列内のプロパティ値の数です。 _あう_パラメーターの値は、プロパティの値を渡すことは、MAPI がない場合は 0 です。 
+> 順番_lpprops_パラメーターによって指定された配列内のプロパティ値の数。 MAPI がプロパティ値を渡さない場合、 _cvalues_パラメーターの値は0になります。 
     
- _lpProps_
+ _lpprops_
   
-> [in][SPropValue](spropvalue.md)の省略可能な配列へのポインターでは、メッセージ サービスを構成する際にこの関数を使用するプロバイダーでサポートされているプロパティの値を示す構造体します。 関数は、 _ulContext_パラメーターを MSG_SERVICE_CONFIGURE に設定されている場合にだけこのパラメーターを使用します。 このパラメーターは、個人用アドレス帳サービスなどのファイル ・ ベースのサービスのファイルへのパスを渡すに通常使用されます。 _UlFlags_パラメーターに MSG_SERVICE_CONFIGURE フラグが渡されない場合、 _lpProps_パラメーターは 0 にする必要があります。 
+> 順番関数がメッセージサービスを構成するときに使用する、プロバイダーでサポートされているプロパティの値を示す[spropvalue](spropvalue.md)構造のオプションの配列へのポインター。 この関数は、 _ulcontext_パラメーターが MSG_SERVICE_CONFIGURE に設定されている場合にのみ、このパラメーターを使用します。 このパラメーターは、通常、個人用アドレス帳サービスなど、ファイルベースのサービスのファイルへのパスを渡すために使用されます。 MSG_SERVICE_CONFIGURE フラグが_ulflags_パラメーターに渡されていない場合、 _lpprops_パラメーターは0である必要があります。 
     
- _lpProviderAdmin_
+ _lpprovideradmin_
   
-> [in]関数は、現在のメッセージ サービスで特定のプロバイダーのプロファイル セクションを検索に使用できる[IProviderAdmin:IUnknown](iprovideradminiunknown.md)インターフェイスへのポインター。 
+> 順番IProviderAdmin へのポインター [: IUnknown](iprovideradminiunknown.md)インターフェイスは、現在のメッセージサービスの特定のプロバイダーのプロファイルセクションを検索するために使用できます。 
     
  _lppMapiError_
   
-> [out][MAPIERROR](mapierror.md)構造体へのポインター。 [MAPIAllocateBuffer](mapiallocatebuffer.md)関数では、構造体が割り当てられます。 ほとんどの構造体は_lpszError_のメンバーで有効なエラー メッセージ文字列を含むすべてのメンバーはオプションですが。 構造体の_lpszComponent_または_lpszError_のメンバーが存在する場合は、基本構造に[MAPIFreeBuffer](mapifreebuffer.md)を 1 回の呼び出しによって、メモリを解放最終的にする必要があります。 
+> 読み上げ[MAPIERROR](mapierror.md)構造体へのポインター。 この構造体は、 [MAPIAllocateBuffer](mapiallocatebuffer.md)関数を使用して割り当てられます。 すべてのメンバーはオプションですが、ほとんどの構造体には_lpszerror_メンバーに有効なエラーメッセージ文字列が含まれています。 構造体の_lpszcomponent_または_lpszcomponent_メンバーが存在する場合は、基本構造で[MAPIFreeBuffer](mapifreebuffer.md)を1回呼び出すことによって、最終的にメモリを解放する必要があります。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -146,34 +146,34 @@ S_OK
     
 MAPI_E_UNCONFIGURED 
   
-> サービス プロバイダーが構成されていません。 
+> サービスプロバイダーが構成されていません。 
     
 MAPI_E_USER_CANCEL 
   
-> ユーザー操作がキャンセルされました、通常ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 
+> ユーザーが操作をキャンセルしました。通常は、ダイアログボックスの **[キャンセル**] ボタンをクリックします。 
     
 MAPI_E_NO_SUPPORT 
   
-> プロバイダーは、そのオブジェクトへの変更をサポートしていないか、または変更の通知をサポートしていません。 
+> プロバイダーは、オブジェクトへの変更をサポートしていないか、変更の通知をサポートしていません。 
     
 MAPI_E_BAD_CHARWIDTH 
   
-> か、MAPI_UNICODE フラグが設定された実装は Unicode をサポートしていないまたは MAPI_UNICODE が設定されていませんでしたし、実装には、Unicode のみサポートしています。
+> MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode がサポートされているかどうか。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**MSGSERVICEENTRY**関数のプロトタイプを使用して定義された関数は、それ自体を構成するのにはまたはその他のサービスに固有のアクションを実行するのには、メッセージ サービスを使用できます。 関数は、主にユーザーがメッセージ サービスに固有の設定を変更できるダイアログ ボックスを提供します。 _LpProps_パラメーターで渡されたプロパティ値の配列を使用して、プログラムによる構成もサポートできます。 プログラムによる構成は、サービスがサポートするプロファイル ウィザードでは、することが必要な場合を除き、省略可能です。 
+**msgserviceentry**関数プロトタイプを使用して定義された関数は、メッセージサービスが自分自身を構成したり、その他のサービス固有のアクションを実行したりすることができます。 この関数は、主に、ユーザーがメッセージサービスに固有の設定を変更できるダイアログボックスを furnishes します。 _lpprops_パラメーターで渡されたプロパティ値の配列を使用して、プログラムによる構成をサポートすることもできます。 プログラムによる構成は、サービスが必要なプロファイルウィザードをサポートしていない限り、オプションです。 
   
-MAPI は、コントロール パネルのアプリケーションまたは[IMsgServiceAdmin::CreateMsgService](imsgserviceadmin-createmsgservice.md)または[IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)を呼び出すクライアント アプリケーションへの応答として、このエントリ ポイントを呼び出します。 
+MAPI は、このエントリポイントをコントロールパネルアプリケーションから呼び出すか、 [IMsgServiceAdmin:: CreateMsgService](imsgserviceadmin-createmsgservice.md)または[IMsgServiceAdmin:: ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)を呼び出しているクライアントアプリケーションに応答して呼び出します。 
   
-MAPI でないを配置制限関数の名前をメッセージ サービス**MSGSERVICEENTRY**のプロトタイプを使用してですが、 **ServiceEntry**の名前を希望します。 関数の序数に制限はありませんし、1 つのプロバイダー DLL が 1 つ以上の関数を含めることができます。 ただし、関数の 1 つだけに**ServiceEntry**を付けることができます。 
+MAPI では、メッセージサービスが**msgserviceentry** prototype に使用する関数名に制限はありませんが、name **serviceentry**が優先されます。 関数の序数には制限がありません。1つのプロバイダー DLL に複数の関数を含めることができます。 ただし、 **serviceentry**という名前の関数は1つだけにすることができます。 
   
-メッセージ サービスでは、構成ダイアログ ボックスの実装を簡略化するのに、 [BuildDisplayTable](builddisplaytable.md)関数、および[IMAPISupport::DoConfigPropsheet](imapisupport-doconfigpropsheet.md)メソッドを使用できます。 
+メッセージサービスでは、 [builddisplaytable](builddisplaytable.md)関数と[imapisupport::D oconfigpropsheet](imapisupport-doconfigpropsheet.md)メソッドを使用して、構成ダイアログボックスの実装を簡単にすることができます。 
   
-MSG_SERVICE_UNINSTALL 操作をキャンセルするのにはユーザーのことができます。 この例では、 **ServiceEntry**関数では、ユーザーがサービスを削除することはできませんし、サービスがインストールされている場合は、MAPI_E_USER_CANCEL を返すことを確認して確認してください。 
+ユーザーは MSG_SERVICE_UNINSTALL 操作を取り消すことができます。 この場合、 **serviceentry**関数は、サービスが削除されないことを確認するためにユーザーに確認し、サービスがインストールされたままの場合は MAPI_E_USER_CANCEL を返します。 
   
-**MSGSERVICEENTRY**プロトタイプでは関数では、HRESULT の値のいずれかを返します。 MAPI は、 [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)へのクライアントの呼び出しに応答する場合にこの値を転送します。 
+**msgserviceentry**プロトタイプに基づく関数は、表示されている HRESULT 値の1つを返します。 MAPI は、 [IMsgServiceAdmin:: ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)へのクライアントの呼び出しに応答するときにこの値を転送します。 
   
-サービス エントリ関数をエクスポートするメッセージ サービスは、メッセージ サービスのセクションで、 **PR_SERVICE_DLL_NAME** ([PidTagServiceDllName](pidtagservicedllname-canonical-property.md)) と**PR_SERVICE_ENTRY_NAME** ([PidTagServiceEntryName](pidtagserviceentryname-canonical-property.md)) のプロパティを含める必要があります。MAPISVC.INF。 
+サービスエントリ関数をエクスポートするメッセージサービスには、 **PR_SERVICE_DLL_NAME** ([PidTagServiceDllName](pidtagservicedllname-canonical-property.md)) および**PR_SERVICE_ENTRY_NAME** ([PidTagServiceEntryName](pidtagserviceentryname-canonical-property.md)) のプロパティが含まれている必要があります。MAPISVC.INF。 
   
 

@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: ab9fcebc-1550-3b9e-e3b4-e8b92424390b
 description: 前景ページ上の図形を、同じページにある他のオブジェクトや背景ページ上の図形にスナップするかどうかを指定します。
-ms.openlocfilehash: b95dafda9ebef36db34f60585ab3ed2164ade415
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 665130e9f9f938349028ffa1d1c06224e746de5d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335323"
 ---
-# <a name="inhibitsnap-cell-page-properties-section"></a>[InhibitSnap] セル ([ページのプロパティ] セクション)
+# <a name="inhibitsnap-cell-page-properties-section"></a>[InhibitSnap] セル ([Page Properties] セクション)
 
 前景ページ上の図形を、同じページにある他のオブジェクトや背景ページ上の図形にスナップするかどうかを指定します。
   
@@ -25,13 +25,13 @@ ms.locfileid: "19805585"
 | TRUE  <br/> | ページ上のスナップ操作をすべて無効にします。ただし、ルーラーとグリッドへのスナップは除きます。  <br/> |
 | FALSE  <br/> | スナップ操作を有効にします。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [InhibitSnap] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | InhibitSnap  <br/> |
+| セル名:  <br/> | [inhibitsnap]  <br/> |
    
 プログラムから、インデックスによって [InhibitSnap] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

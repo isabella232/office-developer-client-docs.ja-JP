@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: fec5d5ac-bca6-4fff-b264-45cdb6b37f55
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 96dddc438df67b76f854827eab4dc3e210523243
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4eef7c0b1078cb9e7ced21e2403f0b3948362d6c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341035"
 ---
 # <a name="fbadrglpnameid"></a>FBadRglpNameID
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-名前付きプロパティを記述する構造体の配列を検証し、その割り当てを確認します。 
+名前付きプロパティを記述し、それらの割り当てを検証する構造体の配列を検証します。 
   
 |||
 |:-----|:-----|
 |ヘッダー ファイル:  <br/> |Mapival.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |サービス プロバイダー  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |サービス プロバイダー  <br/> |
    
 ```cpp
 BOOL FBadRglpNameID(
@@ -42,26 +42,26 @@ BOOL FBadRglpNameID(
 
 ## <a name="parameters"></a>パラメーター
 
- _lppNameId_
+ _lppnameid_
   
-> [in]名前付きプロパティを記述する[MAPINAMEID](mapinameid.md)構造体の配列へのポインター。 
+> 順番名前付きプロパティを説明する[mapinameid](mapinameid.md)構造の配列へのポインター。 
     
- _Cname_
+ _cname_
   
-> [in]_LppNameId_パラメーターが指す配列内の名前付きプロパティの構造体の数です。 
+> 順番_lppnameid_パラメーターで指定された、配列内の名前付きプロパティ構造体の数。 
     
 ## <a name="return-value"></a>戻り値
 
 TRUE 
   
-> 1 つ以上の指定したプロパティの名前の構造体が有効ではありません。 
+> 指定された1つ以上のプロパティ名の構造が無効です。 
     
 FALSE 
   
-> 指定したプロパティの名前の構造体は、すべて有効です。
+> 指定したプロパティ名の構造体はすべて有効です。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)または[IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md)への呼び出しをセットアップするとき、 **FBadRglpNameID**関数を使用できます。 
+**fbadrglpnameid**関数は、 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)または[imapiprop:: GetNamesFromIDs](imapiprop-getnamesfromids.md)の呼び出しを設定するときに使用できます。 
   
 

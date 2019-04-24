@@ -1,5 +1,5 @@
 ---
-title: メッセージのメッセージ ストア プロバイダーのタスクを送信します。
+title: メッセージを送信するメッセージストアプロバイダーのタスク
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,78 +8,78 @@ api_type:
 - COM
 ms.assetid: acbfd3ae-bfdc-4103-bed2-6bcf7b9c448c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4af052cdbd354d321a1d9e1dd0feb004501c8eb0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b65113e59b236b1f13596627a8669ae458f76369
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338431"
 ---
-# <a name="sending-messages-message-store-provider-tasks"></a>メッセージの送信: メッセージ ストア プロバイダーのタスク
+# <a name="sending-messages-message-store-provider-tasks"></a>メッセージの送信: メッセージストアプロバイダーのタスク
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ ストア プロバイダーは、クライアントがメッセージの[IMessage::SubmitMessage](imessage-submitmessage.md)メソッドを呼び出すと、プロセスを送信するメッセージに関連する取得します。 複数のメッセージを送信する場合は、メッセージ ・ ストアの**SubmitMessage**呼び出しのクライアントが使用されることと同じ順序でを送信する必要があります。 
+メッセージストアプロバイダーは、クライアントがメッセージの[IMessage:: submitmessage](imessage-submitmessage.md)メソッドを呼び出したときに、メッセージ送信プロセスに関与します。 複数のメッセージが送信される場合、メッセージストアは、その送信メッセージ呼び出しに使用されたのと**** 同じ順序でメッセージを送信する必要があります。 
   
-メッセージ ストア プロバイダーでは、MAPI スプーラーが参加するかどうかを指定します。 メッセージ ストア プロバイダーが密に結合されていない場合、メッセージは、プリプロセスを必要とまたは密結合のストアとトランスポートを処理できないすべての受信者、MAPI スプーラーが関与している必要があります。 
+メッセージストアプロバイダーは、MAPI スプーラーを含めるかどうかを決定します。 メッセージストアプロバイダーが密結合されていない場合、メッセージには前処理が必要です。または、密結合ストアとトランスポートはすべての受信者を処理できません。 MAPI スプーラーが関与する必要があります。 
   
-次の手順では、メッセージ ストア プロバイダーのメッセージを送信するために必要なタスクについて説明します。 
+次の手順では、メッセージを送信するためにメッセージストアプロバイダーに必要なタスクについて説明します。 
   
-**IMessage::SubmitMessage では、メッセージは、プロバイダーを格納**します。
+**IMessage:: submitmessage で、メッセージストアプロバイダーは**次のようになります。
   
-1. メッセージ、MSGFLAG_RESEND フラグを**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティに設定があり、クライアントにエラーを返す場合は、 [IMAPISupport::PrepareSubmit](imapisupport-preparesubmit.md)を呼び出します。 **PrepareSubmit**は、メッセージの宛先リストの各受信者の**PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) のプロパティをチェックします。
+1. MSGFLAG_RESEND フラグが**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティに設定されている場合にメッセージを再送信し、クライアントにエラーを返す場合は、 [imapisupport を呼び出します。](imapisupport-preparesubmit.md) **PrepareSubmit**は、メッセージの受信者の一覧に含まれる各受信者の**PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) プロパティをチェックします。
     
-   - MAPI_SUBMITTED フラグが設定されている場合、受信者が元のメッセージを受信しなかったことを示す**PrepareSubmit**フラグをクリアし、**れない**([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) プロパティを TRUE に設定します。 
+   - 受信者が元のメッセージを受信しなかったことを示す MAPI_SUBMITTED フラグが設定されている場合、 **PrepareSubmit**はフラグをクリアし、 **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) プロパティを TRUE に設定します。 
     
-   - MAPI_SUBMITTED フラグが設定されていない場合、受信者に、元のメッセージを受け取ったことを示す**PrepareSubmit** 、 **PR_RECIPIENT_TYPE**プロパティを MAPI_P1 に変更**れない**プロパティを TRUE に設定してを返しますクライアントに**PrepareSubmit**によって生成されたエラーです。 
+   - MAPI_SUBMITTED フラグが設定されておらず、受信者が元のメッセージを受信したことを示している場合、 **PrepareSubmit**は**PR_RECIPIENT_TYPE**プロパティを MAPI_P1 に変更し、 **PR_RESPONSIBILITY**プロパティを TRUE に設定して、クライアントに対して**PrepareSubmit**によって生成されたエラー。 
     
 2. メッセージの**PR_MESSAGE_FLAGS**プロパティに MSGFLAG_SUBMIT フラグを設定します。 
     
-3. **れない**受信者テーブルの列が存在し、まだと仮定しての責任、メッセージを送信するためのトランスポートが含まれていないことを示すために FALSE に設定します。 
+3. recipient テーブルに**PR_RESPONSIBILITY**の列が存在することを確認し、メッセージの送信に関してまだ責任を負っていないトランスポートがないことを示すために FALSE に設定します。 
     
-4. **PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md)) のプロパティの元の日時を設定します。
+4. **PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md)) プロパティで、発信元の日付と時刻を設定します。
     
-5. [IMAPISupport::ExpandRecips](imapisupport-expandrecips.md)を呼び出します。 
+5. [imapisupport:: ExpandRecips](imapisupport-expandrecips.md)を呼び出します。 
     
-   - すべての個人用配布リストとカスタム受信者を展開し、すべての変更された表示名を元の名前に置き換えます。
-   - 重複した名前を削除します。
-   - 必要な処理を確認し、前処理が必要な場合、NEEDS_PREPROCESSING フラグと**PR_PREPROCESS** ([PidTagPreprocess](pidtagpreprocess-canonical-property.md)) は、MAPI の予約済みのプロパティを設定します。 
-   - メッセージ ・ ストアは、トランスポートと密接に関連し、すべての受信者を処理できない場合は、NEEDS_SPOOLER フラグを設定します。 
+   - すべての個人用配布リストとカスタム受信者を展開し、変更されたすべての表示名を元の名前に置き換えます。
+   - 重複する名前を削除します。
+   - 必要な前処理を確認し、前処理が必要な場合は、NEEDS_PREPROCESSING フラグおよび**PR_PREPROCESS** ([PidTagPreprocess](pidtagpreprocess-canonical-property.md)) プロパティ (MAPI 用に予約されているプロパティ) を設定します。 
+   - メッセージストアがトランスポートと密に結合しており、すべての受信者を処理できない場合は、NEEDS_SPOOLER フラグを設定します。 
     
-6. NEEDS_PREPROCESSING メッセージのフラグが設定されている場合は、次のタスクを実行します。
+6. NEEDS_PREPROCESSING メッセージフラグが設定されている場合に、次のタスクを実行します。
     
-   - **PR_SUBMIT_FLAGS** ([PidTagSubmitFlags](pidtagsubmitflags-canonical-property.md)) プロパティで設定された SUBMITFLAG_PREPROCESS ビットを使用して、送信キューにメッセージを配置します。
-   - MAPI スプーラー キューが変更されたことを通知します。
-   - 、クライアントに制御を返しますし、メッセージ フロー、MAPI スプーラーを無効にします。 
+   - SUBMITFLAG_PREPROCESS ビットを**PR_SUBMIT_FLAGS** ([PidTagSubmitFlags](pidtagsubmitflags-canonical-property.md)) プロパティに設定して、メッセージを送信キューに配置します。
+   - キューが変更されたことを MAPI スプーラーに通知します。
+   - クライアントに制御を戻し、メッセージフローを MAPI スプーラーで続行します。 
    - MAPI スプーラーは、次のタスクを実行します。
-     - IMsgStore::SetLockState を呼び出すことによって、メッセージをロックします。 
-     - すべての登録の順序でプリプロセッサ関数を呼び出すことによって必要な前処理を実行します。 トランスポート プロバイダーでは、前処理の関数を登録するのには IMAPISupport::RegisterPreprocessor を呼び出します。 
-     - メッセージ ・ ストアに事前処理が完了したことを示すメッセージを開いた状態で IMessage::SubmitMessage を呼び出します。
+     - IMsgStore:: SetLockState を呼び出して、メッセージをロックします。 
+     - 登録の順序ですべての前処理関数を呼び出すことによって、必要な前処理を実行します。 トランスポートプロバイダーは、imapisupport:: registerpreprocessor プロセッサを呼び出して前処理関数を登録します。 
+     - 処理が完了したことをメッセージストアに示すように、開いているメッセージの IMessage:: submitmessage を呼び出します。
 
 <br/>
 
-かどうかがなく、前処理が処理された場合に、MAPI スプーラーが**SubmitMessage**を呼び出すと、次の 2 つの手順はクライアント プロセスで発生します。 
+前処理が行われていない場合、および MAPI スプーラーが前処理**メッセージ**を呼び出した場合、クライアントプロセスでは次の2つの手順が発生します。 
 
-**メッセージは、プロバイダーを格納**します。
+**メッセージストアプロバイダー**:
 
-1. メッセージ ・ ストアは、トランスポートに密に結合し、NEEDS_SPOOLER フラグは、 [IMAPISupport::ExpandRecips](imapisupport-expandrecips.md)から返された場合は、次のタスクを実行します。
+1. メッセージストアがトランスポートに密接に結合されており、NEEDS_SPOOLER フラグが[imapisupport:: ExpandRecips](imapisupport-expandrecips.md)から返された場合は、次のタスクを実行します。
     
-   - 処理可能なすべての受信者を処理します。
-   - **れない**プロパティを設定しますが、処理するすべての受信者。 
-   - このストアの密結合とトランスポートのすべての受信者がわかっている場合は、次のタスクを実行します。
-     - メッセージのプリプロセスまたは、メッセージ ・ ストア プロバイダーの要望をお勧めするため、メッセージのフックを呼び出すことができるメッセージの処理を完了するのには MAPI スプーラーは、IMAPISupport::CompleteMsg を呼び出します。 メッセージ フローは、次の手順に従って、MAPI スプーラーを続行します。  
-     - メッセージのプリプロセスがしないか、メッセージ ストア プロバイダーは、メッセージの処理を完了するのには MAPI スプーラーを希望しない場合は、次のタスクを実行します。
-       - コピーの場合、PR_SENTMAIL_ENTRYID (PidTagSentMailEntryId) プロパティでは、エントリ id によって識別されたフォルダーにメッセージを設定します。
+   - 処理できる受信者を処理します。
+   - 処理するすべての受信者に対して、 **PR_RESPONSIBILITY**プロパティを TRUE に設定します。 
+   - すべての受信者がこの密結合ストアとトランスポートに知られている場合は、次のタスクを実行します。
+     - メッセージがプリプロセスされた場合、またはメッセージストアプロバイダーが MAPI スプーラーでメッセージ処理を完了しようとしている場合は、メッセージのフックを呼び出すことができるようにします。 次の手順で説明するように、メッセージフローは MAPI スプーラーで続行されます。  
+     - メッセージがプリプロセスされていない場合、またはメッセージストアプロバイダーが MAPI スプーラーでメッセージ処理を完了させない場合は、次のタスクを実行します。
+       - PR_SENTMAIL_ENTRYID (PidTagSentMailEntryId) プロパティで設定されている場合、エントリ識別子によって識別されるフォルダーにメッセージをコピーします。
        - PR_DELETE_AFTER_SUBMIT (PidTagDeleteAfterSubmit) プロパティが TRUE に設定されている場合は、メッセージを削除します。
-       - ロックされている場合、メッセージのロックを解除します。
-       - クライアントに返します。 メッセージ フローは、完了です。 
+       - ロックされている場合は、メッセージのロックを解除します。
+       - クライアントに戻ります。 メッセージフローが完了しました。 
    
-2. トランスポートにメッセージ ・ ストアが密に結合されない、メッセージ ・ ストアに知られていたすべての受信者または NEEDS_SPOOLER フラグが設定されている場合は、次のタスクを実行します。
+2. メッセージストアがトランスポートに密接に結合されておらず、すべての受信者がメッセージストアを認識していない場合、または NEEDS_SPOOLER フラグが設定されている場合は、次のタスクを実行します。
     
-   - **PR_SUBMIT_FLAGS**プロパティに SUBMITFLAG_PREPROCESS ビットを設定せず、送信キューにメッセージを配置します。 
-   - 発信キューは、テーブルの通知を生成することによって変更された MAPI スプーラーに通知します。 
-   - クライアント、およびメッセージの流れに戻りますが、MAPI スプーラーが実行するタスクのセットを使用して続行します。
+   - **PR_SUBMIT_FLAGS**プロパティの SUBMITFLAG_PREPROCESS ビットを設定せずに、メッセージを送信キューに配置します。 
+   - テーブル通知を生成することによって、送信キューが変更されたことを MAPI スプーラーに通知します。 
+   - クライアントに戻り、メッセージフローは MAPI スプーラーによって実行される一連のタスクを続行します。
     
-メッセージは、MAPI スプーラーによって処理されるには、メッセージ ストア プロバイダーは、メッセージの**PR_SUBMIT_FLAGS**プロパティを SUBMITFLAG_LOCKED に設定します。 SUBMITFLAG_LOCKED フラグは、MAPI スプーラーが、排他的使用のためのメッセージをロックしていることを示します。 メッセージが 1 つ以上のプリプロセッサ関数を使用して、トランスポート プロバイダーが登録されている前処理を必要とする場合、 **PR_SUBMIT_FLAGS** SUBMITFLAG_PREPROCESS の他の値が設定されています。 
+メッセージが MAPI スプーラーによって処理される場合、メッセージストアプロバイダーは、メッセージの**PR_SUBMIT_FLAGS**プロパティを SUBMITFLAG_LOCKED に設定します。 SUBMITFLAG_LOCKED フラグは、MAPI スプーラーが排他的使用のためにメッセージをロックしたことを示します。 **PR_SUBMIT_FLAGS、** SUBMITFLAG_PREPROCESS のその他の値は、メッセージがトランスポートプロバイダーによって登録された1つ以上のプリプロセッサ関数の前処理を必要とするときに設定されます。 
   
 

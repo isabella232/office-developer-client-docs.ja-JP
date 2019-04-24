@@ -13,11 +13,11 @@ api_type:
 ms.assetid: a61056e7-365c-4972-abf7-26e2ab07105d
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3b4e5fa7228cf243c79a8ec0c9e2b73b7da21c6f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25398788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336359"
 ---
 # <a name="pidtagsearchfolderdefinition-canonical-property"></a>PidTagSearchFolderDefinition 標準プロパティ
 
@@ -25,48 +25,48 @@ ms.locfileid: "25398788"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-検索条件を指定するデータが含まれています。
+検索条件を指定するデータを格納します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_WB_SF_DEFINITION  <br/> |
-|識別子:  <br/> |0x6845  <br/> |
+|識別子:  <br/> |0x684 5  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |検索  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティに含まれるバイナリ ラージ オブジェクト (BLOB) の各フィールドの特定のコンテンツは、 **PidTagSearchFolderTemplateId** ([PidTagSearchFolderTemplateId](pidtagsearchfoldertemplateid-canonical-property.md)) のプロパティで指定されているテンプレートの ID に依存します。 BLOB の構造と検索テンプレートの詳細については、 [[MS OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)を参照してください。 
+このプロパティに含まれるバイナリラージオブジェクト (BLOB) の各フィールドの特定のコンテンツは、 **PidTagSearchFolderTemplateId** ([PidTagSearchFolderTemplateId](pidtagsearchfoldertemplateid-canonical-property.md)) プロパティで指定されているテンプレート ID によって異なります。 BLOB 構造および検索テンプレートの詳細については、「 [[OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)」を参照してください。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
+[[OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
   
-> プロパティや検索フォルダーの一覧の構成を操作するための動作を指定します。
+> 検索フォルダーリストの構成を操作するためのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

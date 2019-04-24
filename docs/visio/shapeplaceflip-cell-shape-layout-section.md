@@ -9,36 +9,36 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 40008507-d9e4-9c0e-603f-d5e6da73a94b
 description: '[レイアウトの構成] ダイアログ ボックスを使用して図形をレイアウトするときに、配置可能な図形をページ上で反転および回転する方法、またはそのいずれかの方法を指定します (このダイアログ ボックスを開くには、[デザイン] タブの [レイアウト] グループで、[ページの再レイアウト] をクリックして、[その他のレイアウト オプション] をクリックします)。'
-ms.openlocfilehash: 76941b9c50e6f2c68ea9abf54e81dcd18be13a70
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 72ef1b67dd87d842e6a4372d1eb08d614f0eb2d3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332670"
 ---
-# <a name="shapeplaceflip-cell-shape-layout-section"></a>[ShapePlaceFlip] セル ([図形レイアウト] セクション)
+# <a name="shapeplaceflip-cell-shape-layout-section"></a>[ShapePlaceFlip] セル ([Shape Layout] セクション)
 
 [**レイアウトの構成**] ダイアログ ボックスを使用して図形をレイアウトするときに、配置可能な図形をページ上で反転および回転する方法、またはそのいずれかの方法を指定します (このダイアログ ボックスを開くには、[**デザイン**] タブの [**レイアウト**] グループで、[**ページの再レイアウト**] をクリックして、[**その他のレイアウト オプション**] をクリックします)。
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|0  <br/> |ページの既定値を使用します。  <br/> |**visLOFlipDefault** <br/> |
-|1  <br/> |水平方向に反転します。  <br/> |**visLOFlipX** <br/> |
-|2  <br/> |垂直方向に反転します。  <br/> |**visLOFlipY** <br/> |
-|4  <br/> |0 ～ 270°の範囲で 90°ずつ回転します。  <br/> |**visLOFlipRotate** <br/> |
-|8  <br/> |反転しません。  <br/> |**visLOFlipNone** <br/> |
+|.0  <br/> |ページの既定値を使用します。  <br/> |**visLOFlipDefault** <br/> |
+|1-d  <br/> |水平方向に反転します。  <br/> |**visLOFlipX** <br/> |
+|pbm-2  <br/> |垂直方向に反転します。  <br/> |**visLOFlipY** <br/> |
+|2/4  <br/> |0 ～ 270°の範囲で 90°ずつ回転します。  <br/> |**visLOFlipRotate** <br/> |
+|~  <br/> |反転しません。  <br/> |**visLOFlipNone** <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 [ShapePlaceFlip] セルの値を使用すると、配置可能な図形の向きを、接続先となっている別の配置可能な図形に合わせることができます。
   
-図面ページでこの動作を*すべて*の図形を設定するには、[ページ レイアウト] PlaceFlip セルを使用します。 
+図面ページ上の*すべて*の図形に対してこの動作を設定するには、[ページレイアウト] セクションの [配置] セルを使用します。 
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ShapePlaceFlip] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |ShapePlaceFlip  <br/> |
+|セル名:  <br/> |[shapeplaceflip]  <br/> |
    
 プログラムから、インデックスによって [ShapePlaceFlip] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -46,6 +46,6 @@ ms.locfileid: "19806402"
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionObject** <br/> |
 |行インデックス:  <br/> |**visRowShapeLayout** <br/> |
-|セル インデックス:  <br/> |**visSLOPlaceFlip** <br/> |
+|セル インデックス:  <br/> |**vissloフェース eflip** <br/> |
    
 

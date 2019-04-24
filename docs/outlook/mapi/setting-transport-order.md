@@ -1,5 +1,5 @@
 ---
-title: 転送順序の設定
+title: トランスポート順序の設定
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,28 +7,28 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 4a140ec3-9520-4119-a975-0fb6c1049967
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 6e4c318678fdce7976140ff8f480ae638fd3ca4c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: efa2d6ab9edbd50634093b5185ef9036689f1379
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339390"
 ---
-# <a name="setting-transport-order"></a>転送順序の設定
+# <a name="setting-transport-order"></a>トランスポート順序の設定
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI スプーラーに送信メッセージを処理できるトランスポート プロバイダーを宣言するための識別子とアドレスの種類に基づく責任が割り当てられます。 トランスポート プロバイダーがサポートされているアドレスの種類と識別子のリストを発行する- **MAPIUID**構造体に格納されている: MAPI がログオンの直後に、 [IXPLogon::AddressTypes](ixplogon-addresstypes.md)メソッドを呼び出すとします。 受信者のアドレスの種類は、 **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) プロパティに格納されます。
+MAPI スプーラーは、トランスポートプロバイダーが処理できる、アドレスの種類と識別子に基づいて、送信メッセージの責任を割り当てます。 トランスポートプロバイダーは、 **MAPIUID**構造に格納されているサポートされているアドレスの種類と識別子の一覧を発行します。これは、MAPI が[IXPLogon:: AddressTypes](ixplogon-addresstypes.md)メソッドをログオンした直後に呼び出したときに行います。 受信者のアドレスの種類は、その**PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) プロパティに格納されます。
   
-アドレスの種類を登録することを示します MAPI トランスポート プロバイダーは、登録されているアドレスの種類を設定、 **PR_ADDRTYPE**プロパティを使用して受信者に配信できること。 同様にの**MAPIUID**に登録するには、トランスポート プロバイダーが登録されている**MAPIUID**のエントリの識別子によって表される受信者に提供できることを示します。
+アドレスの種類を登録すると、トランスポートプロバイダーは、 **PR_ADDRTYPE**プロパティが登録されているアドレスの種類に設定された受信者に配信できる MAPI に示されます。 同様に、 **MAPIUID**の登録は、トランスポートプロバイダーが登録済みの**MAPIUID**を持つエントリ id で表される受信者に配信できることを示します。
   
-ほとんどのトランスポート プロバイダーの登録の 1 つまたは複数のアドレスの種類です。数は、 **MAPIUID**で登録します。 アドレス帳プロバイダーと密に結合し、そのエントリの識別子の形式を理解するためのトランスポート プロバイダーは、 **MAPIUID**、それによってパフォーマンスの向上によってメッセージを処理するために登録できます。 このような密結合のトランスポート プロバイダーから抽出できます、受信者の電子メール アドレスおよびその他の必要な情報のエントリ id、 **IMAPISupport::OpenEntry**の呼び出しを使用してそれを開くことがなく。 
+ほとんどのトランスポートプロバイダーは、1つまたは複数のアドレスの種類に対して登録します。**MAPIUID**による登録はほとんどありません。 アドレス帳プロバイダーと密接に結合され、そのエントリ識別子形式を理解しているトランスポートプロバイダーは、 **MAPIUID**によってメッセージを処理するように登録できます。これにより、パフォーマンスが向上します。 これらの密結合トランスポートプロバイダーは、受信者の電子メールアドレスやその他の必要な情報を**imapisupport:: openentry**呼び出しを使用して開くことなく、エントリ識別子から抽出できます。 
   
-MAPI は、トランスポート プロバイダーは、複数のトランスポート プロバイダーは、同じアドレスの種類または**MAPIUID**に登録しているときに使用される順序が維持されます。 [IMsgServiceAdmin::MsgServiceTransportOrder](imsgserviceadmin-msgservicetransportorder.md)を呼び出すことによって、この順序を上書きすることができ、 _lpUIDList_パラメーターで指定されたすべてのアクティブなトランスポート プロバイダーの**MAPIUID**s の順序付きリストを渡すことです。。 
+MAPI は、複数のトランスポートプロバイダーが同じアドレスの種類または**MAPIUID**に登録されている場合に使用されるトランスポートプロバイダーの順序を保持します。 この順序を上書きするには、 [IMsgServiceAdmin:: msgservicetransportorder](imsgserviceadmin-msgservicetransportorder.md)を呼び出し、 _lpuidlist_パラメーターで示されているすべてのアクティブなトランスポートプロバイダーの**MAPIUID**s の順序付きリストを渡します。 
   
-アクティブなトランスポート プロバイダーの 1 つで処理可能なアドレスの種類のすべての一覧を取得するには、 [IMAPISession::EnumAdrTypes](imapisession-enumadrtypes.md)を呼び出します。 **EnumAdrTypes**は、現在のセッションでアクティブになっているトランスポート プロバイダーによってサポートされているアドレスの種類を説明する文字列の配列を返します。 
+アクティブなトランスポートプロバイダーのいずれかによって処理可能なすべてのアドレスの種類の一覧を取得するには、 [imapisession:: enumadrtypes](imapisession-enumadrtypes.md)を呼び出します。 **enumadrtypes**は、現在のセッションでアクティブなトランスポートプロバイダーによってサポートされているアドレスの種類を表す文字列の配列を返します。 
   
 

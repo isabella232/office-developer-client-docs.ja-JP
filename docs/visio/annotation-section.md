@@ -9,23 +9,23 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 616c822e-1bb2-4980-7e45-0c2be77dd801
 description: 図面ページに挿入されたコメントについての情報を格納します。
-ms.openlocfilehash: 1824c8f087d999ae76ecc4227df44a0ba7001f6a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f874a574940a5f56b1d1680b9b4b32730e1e79f7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341399"
 ---
-# <a name="annotation-section"></a>[注釈] セクション
+# <a name="annotation-section"></a>[Annotation] セクション
 
 図面ページに挿入されたコメントについての情報を格納します。 
   
 > [!NOTE]
-> このセクションでは、Microsoft Visio 2013 で .vsd ファイルを開くときにのみ、または .vsd ファイルの形式で .vsdx ファイルを保存するときにコメントを追跡に使用されます。 Visio 2013 で、新しい .vsdx ドキュメント内のコメントを追跡するためには使用されません。 
+> このセクションは、Microsoft Visio 2013 で .vsd ファイルを開くとき、または .vsd ファイル形式で .vsdx ファイルを保存するときにのみコメントを追跡するために使用されます。 Visio 2013 の新しい .vsdx ドキュメントでコメントを追跡するためには使用されません。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-ページのシェイプ シートの [ **Annotation** ] セクションには、元の図面ページまたは [校正履歴オーバーレイ ページ (校閲者によって図面に追加されたマークアップを含むページ) であるかどうか、図面内のページに追加された各コメントの 1 つの行が含まれています。 **Annotation** ] セクションでは、インクまたはその他の図形ではなく、コメントを使用して追加された校正履歴についての情報が含まれていません。 
+ページのシェイプシートの [ **Annotation** ] セクションには、図面内のページに追加されたコメントごとに1つの行が含まれています。これは、元の図面ページであっても、またはマークアップオーバーレイページ (レビュー担当者が図面に追加されたマークアップを含むページ) です。 コメントではなく、インクまたはその他の図形を使用して追加された校正履歴についての情報は、[**注釈**] セクションには含まれません。 
   
 ページのシェイプシートを表示するには、そのページに何も選択されていないことを確認し、そのページを右クリックして、[**シェイプシートの表示**] をクリックします。
   

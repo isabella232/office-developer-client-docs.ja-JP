@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: d423f7b5-23b8-44dd-bca3-6590182dc42d
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 004498ac94aadaa075d87d4dd3c675c8cd5f4feb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: db1c23f33e604d6aafdd8a046566c7390c281ad8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339222"
 ---
 # <a name="iaddrbookpreparerecips"></a>IAddrBook::PrepareRecips
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージング システムによって後で使用できる受信者のリストを準備します。 
+メッセージングシステムで後で使用するために、受信者リストを準備します。 
   
 ```cpp
 HRESULT PrepareRecips(
@@ -35,43 +35,43 @@ HRESULT PrepareRecips(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]エントリを開く方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番エントリが開かれる方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_CACHE_ONLY
   
-> 名前解決を実行するのにには、オフライン アドレス帳のみを使用します。 たとえば、このフラグを使用すると、exchange キャッシュ モードでグローバル アドレス一覧 (GAL) を開くと、クライアントとサーバー間のトラフィックを作成することがなく、キャッシュからそのアドレス帳のエントリにアクセスするのにクライアント アプリケーションを許可します。 このフラグは、Exchange のアドレス帳プロバイダーでのみサポートします。
+> 名前解決を実行するには、オフラインアドレス帳のみを使用します。 たとえば、このフラグを使用して、クライアントアプリケーションが exchange キャッシュモードでグローバルアドレス一覧 (GAL) を開き、クライアントとサーバーの間のトラフィックを作成せずに、キャッシュからそのアドレス帳のエントリにアクセスできるようにすることができます。 このフラグは、Exchange アドレス帳プロバイダーによってのみサポートされています。
     
  _lpSPropTagArray_
   
-> [in]更新する必要が存在する場合、プロパティを示すプロパティ タグの配列を含む[SPropTagArray](sproptagarray.md)構造体へのポインター。 _LpSPropTagArray_パラメーターは NULL にできます。 
+> 順番更新が必要なプロパティがある場合に、そのプロパティを示すプロパティタグの配列を含む[SPropTagArray](sproptagarray.md)構造体へのポインター。 _lpSPropTagArray_パラメーターは NULL にすることができます。 
     
  _lpRecipList_
   
-> [in]受信者のリストを格納する[ADRLIST](adrlist.md)構造体へのポインター。 
+> 順番受信者のリストを含む[adrlist](adrlist.md)構造体へのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 宛先リストの準備ができました。
+> 受信者リストが正常に準備されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-クライアントとサービス ・ プロバイダーは、以下を実行する**PrepareRecips**メソッドを呼び出します。 
+クライアントおよびサービスプロバイダーは、 **PrepareRecips**メソッドを呼び出して次の処理を行います。 
   
-- _LpRecipList_パラメーター内のすべての受信者は、長期的なエントリの識別子であることを確認します。 
+- _lpRecipList_パラメーターのすべての受信者が長期間のエントリ識別子を持っていることを確認します。 
     
-- _LpRecipList_パラメーターでは、各受信者が、 _lpSPropTagArray_パラメーターに表示されるプロパティを持っていると、受信者の一覧の先頭にこれらのプロパティが表示されることを確認します。 
+- _lpRecipList_パラメーターの各受信者の_lpSPropTagArray_パラメーターにプロパティがリストされていること、およびこれらのプロパティが受信者リストの先頭に表示されることを確認します。 
     
-MAPI では、長期のエントリ id を各受信者の短期的なエントリの識別子に変換します。 必要に応じて、適切なアドレス帳プロバイダーから受信者の長期のエントリ id を取得して、追加プロパティが要求されました。
+MAPI は、各受信者の短い用語エントリ識別子を長期のエントリ識別子に変換します。 必要に応じて、受信者の長期入力識別子が適切なアドレス帳プロバイダーから取得され、追加のプロパティが要求されます。
   
-個々 の受信者エントリ、要求されたプロパティの順序は最初に、後に既にエントリが存在していたすべてのプロパティ。 _LpSPropTagArray_パラメーターで要求されたプロパティのいずれかが適切なアドレス帳プロバイダーによって処理されない場合、そのプロパティの型が PT_ERROR に設定されます。 プロパティ値は MAPI_E_NOT_FOUND または具体的な理由がなぜ [のプロパティは利用できませんが、別の値に設定されます。 _LpRecipList_パラメーターに含まれる個々 の[SPropValue](spropvalue.md)構造体を個別に解放するために[MAPIAllocateBuffer](mapiallocatebuffer.md)と[MAPIAllocateMore](mapiallocatemore.md)関数を使用して個別に割り当てる必要があります。 
+個別の受信者エントリでは、要求されたプロパティが最初に並べ替えられ、その後にエントリに既に存在していたプロパティが続きます。 _lpSPropTagArray_パラメーターで要求されたプロパティの1つ以上が、適切なアドレス帳プロバイダーによって処理されない場合は、そのプロパティの種類は PT_ERROR に設定されます。 プロパティの値は、MAPI_E_NOT_FOUND に設定されるか、プロパティが使用できないより具体的な理由を示す別の値に設定されます。 _lpRecipList_パラメーターに含まれる各[spropvalue](spropvalue.md)構造体は、 [MAPIAllocateBuffer](mapiallocatebuffer.md)関数と[MAPIAllocateMore](mapiallocatemore.md)関数を使用して個別に割り当てる必要があります。これにより、個別に解放することができます。 
   
-PT_ERROR 詳細については、[プロパティの型](property-types.md)を参照してください。
+PT_ERROR の詳細については、「[プロパティの種類](property-types.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

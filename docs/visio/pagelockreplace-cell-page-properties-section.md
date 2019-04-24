@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 59c36555-42af-4729-aea7-0332d1da6e3b
 description: このページで [図形の置換] ボタンを無効にするかどうかを示します。
-ms.openlocfilehash: b3956b3e2f2fcd5c4f82089e08a6e32200374778
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c0495d47a81ed7a23e758c531f7d754291c47852
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339481"
 ---
 # <a name="pagelockreplace-cell-page-properties-section"></a>[PageLockReplace] セル ([ページのプロパティ] セクション)
 
@@ -21,15 +21,15 @@ ms.locfileid: "19805964"
 |**値**|**説明**|
 |:-----|:-----|
 |TRUE  <br/> |このページがアクティブなとき、[**図形の変更**] ボタンは灰色表示されます。  <br/> |
-|FALSE  <br/> |このページによって [**図形の変更**] ボタンが無効になることはありません。**DocumentSheet** の **DocLockReplace** が **TRUE** に設定されている場合、または選択した図形の [**LockReplace**] セルが **TRUE** に設定されている場合は、このボタンが引き続き灰色表示される可能性があります。<br/> |
+|FALSE  <br/> |このページによって [**図形の変更**] ボタンが無効になることはありません。 **DocumentSheet** の **DocLockReplace** が **TRUE** に設定されている場合、または選択した図形の [**LockReplace**] セルが **TRUE** に設定されている場合は、このボタンが引き続き灰色表示される可能性があります。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 別の数式から、**Cell** エレメントの **N** 属性の値によって、または **CellsU** プロパティを使用したプログラムから、名前によって [**PageLockReplace**] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | PageLockReplace  <br/> |
+| セル名:  <br/> | [pagelockreplace]  <br/> |
    
 プログラムから、インデックスによって [**PageLockReplace**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -37,6 +37,6 @@ ms.locfileid: "19805964"
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowPage** <br/> |
-| セル インデックス:  <br/> |**visPageLockReplace** <br/> |
+| セル インデックス:  <br/> |**vispagelockreplace** <br/> |
    
 

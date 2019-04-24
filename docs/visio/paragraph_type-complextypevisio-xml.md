@@ -1,5 +1,5 @@
 ---
-title: Paragraph_Type complexType'Visio XML (')
+title: Paragraph_Type complexType (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,20 +7,20 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 23409c92-5e66-1e11-54a0-677d18e4e03a
 ms.openlocfilehash: 8a57a0df516f998e4e815240f1405962e11f848d
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338809"
 ---
-# <a name="paragraphtype-complextype-visio-xml"></a>Paragraph_Type complexType'Visio XML (')
+# <a name="paragraphtype-complextype-visio-xml"></a>Paragraph_Type complexType (' Visio XML ')
 
 ## <a name="type-information"></a>型情報
 
 |||
 |:-----|:-----|
-|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15-06-05  <br/> |
 |**拡張ベース** <br/> |Section_Type  <br/> |
    
 ## <a name="definition"></a>定義
@@ -44,11 +44,11 @@ ms.locfileid: "25389002"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。 
+スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**型**|**説明**|
+|**Element**|**型**|**説明**|
 |:-----|:-----|:-----|
 |[Row](row-element-paragraph-sectionvisio-xml.md) <br/> |[ParagraphRow_Type](paragraphrow_type-complextypevisio-xml.md) <br/> ||
    

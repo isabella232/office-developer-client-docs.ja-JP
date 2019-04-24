@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: fa5498ab-2f8a-42f8-ba9d-1d555768594f
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 00c7560427ece58026030ce6895d60aec7cc5a2e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 5605de7dbcc18197748713bcf909839690d7259f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336352"
 ---
 # <a name="iid"></a>IID
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI インターフェイスの識別子を記述するために使用する[GUID](guid.md)構造体について説明します。 
+MAPI インターフェイスの識別子を記述するために使用される[GUID](guid.md)構造を記述します。 
   
 ```cpp
 typedef struct _GUID
@@ -40,13 +40,13 @@ typedef struct _GUID
 
 ## <a name="members"></a>Members
 
-**GUID**構造体を参照してください。 
+**GUID**構造を参照してください。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-MAPI インターフェイスを一意に識別して、特定のインターフェイスをオブジェクトに関連付けるには、 **IID**の構造体が使用されます。 などの場合、クライアントへの呼び出し[IMAPISession::OpenEntry](imapisession-openentry.md)フォルダーを開き、クライアント パラメーターを設定_lpInterface_ **IID**を指すように、 [IMAPIFolder](imapifolderimapicontainer.md)インターフェイスを表します。 MAPI では、IID_IMAPIFolder に**IMAPIFolderIID**を定義します。 **IID**の構造は、OLE インターフェイスを一意に識別するのにも使用されます。 
+**IID**構造は、MAPI インターフェイスを一意に識別し、特定のインターフェイスをオブジェクトに関連付けるために使用されます。 たとえば、クライアントが[imapisession:: openentry](imapisession-openentry.md)を呼び出してフォルダーを開くと、クライアントは[imapisession](imapifolderimapicontainer.md)インターフェイスを表す**IID**を指すように_lpinterface_パラメーターを設定します。 MAPI は、IID_IMAPIFolder する**IMAPIFolderIID**を定義します。 **IID**の構造体は、OLE インターフェイスを一意に識別するためにも使用されます。 
   
-MAPI インターフェイスの特定の**IID**の構造体のすべては、Mapiguid.h ヘッダー ファイルで定義されます。 
+MAPI インターフェイスの特定の**IID**構造はすべて、mapiguid .h ヘッダーファイルで定義されています。 
   
 ## <a name="see-also"></a>関連項目
 

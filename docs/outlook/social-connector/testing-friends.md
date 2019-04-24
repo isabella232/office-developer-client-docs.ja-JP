@@ -7,79 +7,79 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 109c34b6-911b-4dfc-9799-aadf47172e84
-description: このトピックでは、テストおよび該当する場合、プロバイダーでサポートされている同期モードによって、Outlook ソーシャル コネクタ (OSC) プロバイダーがその友人や、友人以外のデータを適切に返すことを確認するシナリオについて説明します。
-ms.openlocfilehash: 232977836833a9ef981ebef38c9ee243ea2dd2ed
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: このトピックでは、プロバイダーがサポートする同期モードに応じて、Outlook Social Connector (.osc) プロバイダーが友人および友人以外のデータを適切に返すことを確認するテストとシナリオについて説明します。
+ms.openlocfilehash: 1c97342fd5b219b15b1f58dbc065fc268f8e81d7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338788"
 ---
 # <a name="testing-friends"></a>友だちのテスト
 
-このトピックでは、テストおよび該当する場合、プロバイダーでサポートされている同期モードによって、Outlook ソーシャル コネクタ (OSC) プロバイダーがその友人や、友人以外のデータを適切に返すことを確認するシナリオについて説明します。
+このトピックでは、プロバイダーがサポートする同期モードに応じて、Outlook Social Connector (.osc) プロバイダーが友人および友人以外のデータを適切に返すことを確認するテストとシナリオについて説明します。
 
 <a name="olosc_TestingFriends_CachedSync"> </a>
 
-## <a name="cached-synchronization"></a>キャッシュの同期
+## <a name="cached-synchronization"></a>キャッシュされた同期
 
-OSC プロバイダーは、 [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md)プロバイダーが友人のデータのキャッシュの同期をサポートしているかどうかを決定する、OSC を実装します。 [ISocialPerson::GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md)を呼び出すと、OSC は、ソーシャル ネットワークにログオンしているユーザーの既定の Outlook ストアに特定の連絡先フォルダーに返された友人のデータを格納します。 OSC は、各フレンドのプロフィールの画像を取得するには、 [ISocialSession::GetPerson](isocialsession-getperson.md)と[ISocialPerson::GetPicture](isocialperson-getpicture.md)にも呼び出されます。 
+.osc プロバイダーは、 [isocialprovider:: getcapabilities](isocialprovider-getcapabilities.md)を実装します。この関数は、プロバイダーがフレンドのデータのキャッシュ同期をサポートしているかどうかを判断するために、.osc 呼び出しを行います。 [iGetFriendsAndColleagues alperson::](isocialperson-getfriendsandcolleagues.md)を呼び出すと、.osc は、ログオンユーザーの既定の Outlook ストアで、返されたフレンドのデータをソーシャルネットワーク固有の連絡先フォルダーに格納します。 また、次のようにして、各フレンドのプロファイル画像を取得するために、 [isocialsession:: getperson](isocialsession-getperson.md)および[iな alperson:: getperson](isocialperson-getpicture.md)を呼び出します。 
   
-### <a name="initiate-synchronization"></a>同期を開始します。
+### <a name="initiate-synchronization"></a>同期を開始する
 
-同期を開始するを有効にして、デバッグ] をクリックして**連絡先を同期する**Microsoft Office Fluent ユーザー インターフェイスのリボンのコンポーネントで。 OSC デバッグ ボタンの詳細については[、プロバイダーをデバッグ](debugging-a-provider.md)」を参照してください。 
+同期を開始するには、Microsoft Office Fluent ユーザーインターフェイスのリボンコンポーネントで [デバッグ] ボタンをオンにして、その**連絡先**を使用します。 [デバッグ] ボタンの詳細については、「[プロバイダーをデバッグする](debugging-a-provider.md)」を参照してください。 
   
-### <a name="test-scenarios"></a>シナリオをテストします。
+### <a name="test-scenarios"></a>テスト シナリオ
 
-友人のデータのキャッシュが正しくことを確認するのには、次の項目をテストします。
+次の項目をテストして、友人のデータが正しくキャッシュされていることを確認します。
   
-|**項目をテストするには**|**予想される動作**|
+|**テストするアイテム**|**予期される動作**|
 |:-----|:-----|
-|[連絡先] フォルダー  <br/> |ソーシャル ネットワークの特定の連絡先フォルダーは、ユーザーの既定の Outlook ストアに存在します。  <br/> |
-|友人のデータを**ISocialPerson::GetFriendsAndColleagues**によって返される <br/> |各友人は、特定のネットワークの連絡先フォルダーの連絡先に対応しています。  <br/> |
-|友人のデータ  <br/> |各友人の連絡先のフィールドには、正しいデータが存在します。  <br/> |
-|友人のプロフィールの画像が**ISocialPerson::GetPicture**によって返される <br/> |各友人の連絡先アイテムには、プロフィールの画像が含まれています。  <br/> |
+|連絡先フォルダー  <br/> |ソーシャルネットワーク固有の連絡先フォルダーは、ユーザーの既定の Outlook ストアに存在します。  <br/> |
+|iGetFriendsAndColleagues によって返されるフレンドのデータ **::** <br/> |各フレンドは、ネットワーク固有の連絡先フォルダー内の連絡先に対応します。  <br/> |
+|Friends のデータ  <br/> |各フレンドの連絡先フィールドに適切なデータがあります。  <br/> |
+|i入力されたユーザーによって返される友人のプロファイル画像 **:: getpicture** <br/> |各フレンドの連絡先アイテムには、プロフィール画像が含まれています。  <br/> |
 
 <a name="olosc_TestingFriends_OnDemandSync"> </a>
 
 ## <a name="on-demand-synchronization"></a>オンデマンド同期
 
-OSC プロバイダーは、 **ISocialProvider::GetCapabilities**プロバイダーがオンデマンドの同期や友人の友人ではないをサポートするかどうかを確認するのには、OSC の呼び出しを実装します。 Outlook 人物情報ウィンドウに表示されている方のため、OSC を取得、これらの方のために返されるハッシュの SMTP アドレスを[ISocialSession2::GetPeopleDetails](isocialsession2-getpeopledetails.md)を呼び出して、(メモリ) にデータを格納します。 
+.osc プロバイダーは、 **isocialprovider:: getcapabilities**を実装します。この関数は、プロバイダーが友人および非友人のオンデマンド同期をサポートしているかどうかを判断するために、.osc を呼び出します。 [Outlook People] ウィンドウに表示される人物については、.osc は SMTP アドレスを取得してハッシュし、 [ISocialSession2:: GetPeopleDetails](isocialsession2-getpeopledetails.md)を呼び出し、これらのユーザーに対して返されるデータを (メモリ内に) 保存します。 
   
-### <a name="determining-friends-and-non-friends"></a>友人と友人ではないを決定します。
+### <a name="determining-friends-and-non-friends"></a>友人と非友人を決定する
 
-ハッシュされた SMTP アドレスが**GetPeopleDetails**に渡されますが、人が友人や友人ではないかどうかを判断するキーです。 人に自分のソーシャル ネットワーク アカウントの SMTP アドレスが含まれていない場合、またはその人がソーシャル ネットワーク上の別の電子メール アドレスで友人の場合でも、 **GetPeopleDetails**も**nonfriend**その人のとして返します、 **friendStatus** 、 _personsCollection_パラメーターにします。 また、フレンドではありませんが、自分のソーシャル ネットワーク アカウントの SMTP アドレスを指定したユーザーでは、返されたデータが含まれています以外の友人にその人のプライバシーの設定で許可された使用可能なのみです。 
+**GetPeopleDetails**に渡されるハッシュされた SMTP アドレスは、ユーザーがフレンドであるか友人であるかを判断するための鍵となります。 自分のソーシャルネットワークアカウントにその SMTP アドレスが含まれていない場合や、その人物がソーシャルネットワーク上の別の電子メールアドレスによって友人である場合でも、 **GetPeopleDetails**は、 **** **その人物に対して非フレンドをfriendStatus**は、_個人コレクション_のパラメーターです。 また、友人以外のユーザーがソーシャルネットワークアカウントで SMTP アドレスを指定している場合、返されるデータには、そのユーザーのプライバシー設定によって許可されている場合に、フレンド以外に対して使用可能なもののみが含まれます。 
   
-### <a name="creating-test-subjects-for-friends-and-non-friends"></a>友人と友人ではないテストの情報カテゴリを作成します。
+### <a name="creating-test-subjects-for-friends-and-non-friends"></a>友人および非友人のテスト対象を作成する
 
-友人のテストの対象を作成するには、自分のソーシャル ネットワーク アカウントでそのアドレスを含むユーザーと、そのネットワークにログオン中のユーザーとフレンドのステータスを持つユーザーの SMTP アドレスを識別します。 その SMTP アドレスを含む電子メール メッセージを作成します。 同様に、以外の友人のテストの対象を作成するには、ユーザーの SMTP アドレスを識別する人はそのアドレスでは、ログオン中のユーザーのフレンドではありませんし、まだ、ソーシャル ネットワーク上での活動を表示するのにはフレンド以外を使用するのには自分のプライバシーの設定で指定しました。k です。 その SMTP アドレスを含む電子メール メッセージを作成します。 
+友人のテスト件名を作成するには、そのアドレスをソーシャルネットワークアカウントに含めるユーザーの SMTP アドレスを識別し、そのネットワークでログオンしているユーザーのフレンド状態を持っているユーザーを特定します。 その SMTP アドレスを含む電子メールメッセージを作成します。 同様に、フレンド以外のテスト件名を作成するには、そのアドレスによってログオンしているユーザーのフレンドではないユーザーの SMTP アドレスを識別します。さらに、そのユーザーのプライバシー設定で指定されているユーザーが、自分のプライバシー設定で、そのユーザーのアクティビティをソーシャル networ で表示できないようにします。万. その SMTP アドレスを含む電子メールメッセージを作成します。 
   
-Outlook エクスプ ローラーで、友人 (または友人ではない) を含む電子メール メッセージを選択すると、人物情報ウィンドウは、受信者を表示します。 人物情報ウィンドウで、友人、友人ではない) を選択すると、テストするのにはプロバイダーが個人情報を提供することできます。
+Outlook エクスプローラーで、友達 (または友人以外) を含む電子メールメッセージを選択すると、[人] ウィンドウに受信者が表示されます。 [人] ウィンドウで友人 (または友人以外) を選択すると、プロバイダーがその人物に関する情報を提供しているかどうかをテストできます。
   
-### <a name="test-scenarios"></a>シナリオをテストします。
+### <a name="test-scenarios"></a>テスト シナリオ
 
-プロバイダーが友人と友人ではないについての情報を適切に提供していることを確認するには、次のシナリオでテストします。
+プロバイダーが友人や友人以外に関する情報を適切に提供しているかどうかを確認するには、次のシナリオをテストします。
   
-|**シナリオ**|**予想される動作**|
+|**シナリオ**|**予期される動作**|
 |:-----|:-----|
-|人物情報ウィンドウで選択したユーザーは、ソーシャル ネットワークにログオン中のユーザーのフレンドです。  <br/> |人物情報ウィンドウには、ソーシャル ネットワーク上の人の活動が表示されます。  <br/> |
-|人物情報ウィンドウで選択されている人は、ソーシャル ネットワークにログオン中のユーザーの非友人が、友人で非表示に自分の活動が可能に。  <br/> |人物情報ウィンドウには、ソーシャル ネットワーク上の人の活動が表示されます。  <br/> |
+|[人] ウィンドウで選択されたユーザーは、ソーシャルネットワーク上でログオンしているユーザーと友人になります。  <br/> |[人] ウィンドウには、ソーシャルネットワーク上のその人物の活動が表示されます。  <br/> |
+|People ウィンドウで選択されたユーザーは、ソーシャルネットワーク上のログオンしているユーザーのフレンドではありませんが、自分のアクティビティを友人以外のユーザーに表示することが許可されています。  <br/> |[人] ウィンドウには、ソーシャルネットワーク上のその人物の活動が表示されます。  <br/> |
 
 <a name="olosc_TestingFriends_OnDemandSync"> </a>
 
 ## <a name="hybrid-synchronization"></a>ハイブリッド同期
 
-OSC プロバイダーでは、友人や友人ではないのハイブリッド同期をサポートする場合、OSC は、次を行います。 
+.osc プロバイダーが友人と友人以外のハイブリッド同期をサポートしている場合、.osc は次の処理を行います。 
   
-- OSC では、ソーシャル ネットワークに固有の連絡先フォルダーにログオンしているユーザーの友人の情報を格納します。
+- .osc は、ログオンしているユーザーのフレンドの情報をソーシャルネットワーク固有の連絡先フォルダーに格納します。
     
-- OSC では、ソーシャル ネットワークからオン ・ デマンドの友人ではないの情報を取得し、メモリ内のみではなくフォルダーに格納します。
+- .osc は、ソーシャルネットワークから非友人の情報を取得し、それをフォルダー内に格納するのではなく、メモリのみに格納します。
     
-ハイブリッド同期をテストするには、[キャッシュの同期](#olosc_TestingFriends_CachedSync)で、友人のテストの推奨事項とその友人ではないの[オンデマンド同期](#olosc_TestingFriends_OnDemandSync)のセクションに従います。 
+ハイブリッド同期をテストするには、友人のキャッシュされた[同期](#olosc_TestingFriends_CachedSync)セクションのテスト提案と、非友人の場合は「[オンデマンド同期](#olosc_TestingFriends_OnDemandSync)」セクションのテスト候補に従います。 
   
 ## <a name="see-also"></a>関連項目
 
-- [友人や活動を同期します。](synchronizing-friends-and-activities.md) 
-- [友人の XML](xml-for-friends.md)
-- [OSC プロバイダーをリリースする準備をします。](getting-ready-to-release-an-osc-provider.md)
+- [フレンドとアクティビティの同期](synchronizing-friends-and-activities.md) 
+- [Friends の XML](xml-for-friends.md)
+- [.osc プロバイダーをリリースする準備をする](getting-ready-to-release-an-osc-provider.md)
 

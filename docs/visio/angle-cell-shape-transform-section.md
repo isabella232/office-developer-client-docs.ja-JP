@@ -9,24 +9,24 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: d05a001c-9001-90d9-5028-f38b90acc53e
 description: 親図形を基準としたときの、図形の現在の回転角度を表します。1-D 図形の回転角度を決定する既定の数式は =ATAN2(EndY-BeginY,EndX-BeginX) です。
-ms.openlocfilehash: ff052c5b254f9b49a97f5d362a4643e16a27b85d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 85f64c6111b492940d278a5558508a2dea6b1e1a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341469"
 ---
-# <a name="angle-cell-shape-transform-section"></a>[Angle] セル ([図形変換] セクション)
+# <a name="angle-cell-shape-transform-section"></a>[Angle] セル ([Shape Transform] セクション)
 
 親図形を基準としたときの、図形の現在の回転角度を表します。1-D 図形の回転角度を決定する既定の数式は =ATAN2(EndY-BeginY,EndX-BeginX) です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Angle] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | Angle  <br/> |
+| セル名 :  <br/> | 角度  <br/> |
    
 プログラムから、インデックスによって [Angle] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

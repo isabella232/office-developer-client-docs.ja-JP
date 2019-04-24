@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: b08a6558-519f-44e0-aeff-9919544d515e
 description: ドキュメントのページを複製できるかどうかを、ブール演算型で決定します。
-ms.openlocfilehash: 97bca23a7dc9150f66eb0c87834fca72c215448b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3f3274c6cfadb81ef514a179279bdaed3543b654
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338543"
 ---
 # <a name="doclockduplicatepage-cell-document-properties-section"></a>[DocLockDuplicatePage] セル ([ドキュメントのプロパティ] セクション)
 
@@ -23,13 +23,13 @@ ms.locfileid: "19805247"
 |TRUE  <br/> |ページのショートカット メニューの  [**複製**] と、**Page.Duplicate** オートメーション メソッドはどちらも無効化されています。  <br/> |
 |FALSE  <br/> |このページは複製できます。  <br/> |
    
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 別の数式から、**Cell** エレメントの **N** 属性の値によって、または **CellsU** プロパティを使用したプログラムから、名前によって [**DocLockDuplicatePage**] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | DocLockDuplicatePage  <br/> |
+| セル名:  <br/> | [doclockduplicatepage]  <br/> |
    
 プログラムから、インデックスによって [**DocLockDuplicatePage**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

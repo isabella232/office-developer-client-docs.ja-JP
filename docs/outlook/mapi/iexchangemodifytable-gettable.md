@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 97df32c4-07c6-41f1-84e7-c6e87d396e34
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d28ce67c6b45f3d0b04d645946ea3f4b3a263c48
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 87c60f424e08eea011bb643041196ca9445a3aa1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336618"
 ---
 # <a name="iexchangemodifytablegettable"></a>IExchangeModifyTable::GetTable
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI テーブルのオブジェクトのインターフェイスへのポインターを返します。
+MAPI table オブジェクトのインターフェイスへのポインターを返します。
   
 ```cpp
 HRESULT GetTable( 
@@ -35,11 +35,11 @@ HRESULT GetTable(
 
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]予約されています。0 (ゼロ) にする必要があります。
+> 順番予約語0 (ゼロ) である必要があります。
     
 ACLTABLE_FREEBUSY
   
@@ -47,23 +47,23 @@ ACLTABLE_FREEBUSY
     
 frightsFreeBusyDetailed
   
-> ACLTABLE_FREEBUSY が渡された場合は、新しい空き時間情報の権限の詳細を表示を提供します。
+> ACLTABLE_FREEBUSY が渡されると、新しい空き時間情報の詳細が表示されます。
     
 frightsFreeBusySimple
   
-> ACLTABLE_FREEBUSY が渡された場合は、新しい空き時間情報の権限の表示を提供します。
+> ACLTABLE_FREEBUSY が渡されると、新しい空き時間情報が簡単に表示されます。
     
- _lppTable_
+ _lpptable_
   
-> [out]指す、 [IMAPITable: IUnknown](imapitableiunknown.md)インターフェイスは、テーブル オブジェクトが含まれています。 
+> 読み上げtable オブジェクトを含む[IMAPITable: IUnknown](imapitableiunknown.md)インターフェイスを指します。 
     
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|RulesDlg.cpp  <br/> |CRulesDlg::OnRefreshView  <br/> |MFCMAPI では、 **IExchangeModifyTable::GetTable**メソッドを使用して、ルールのテーブルを取得します。  <br/> |
+|ルール  <br/> |crulesdlg:: onrefreshview  <br/> |mfcmapi は、 **IExchangeModifyTable:: GetTable**メソッドを使用してルールのテーブルを取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

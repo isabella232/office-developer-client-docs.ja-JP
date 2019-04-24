@@ -13,11 +13,11 @@ api_type:
 ms.assetid: b8c0c871-51d8-4752-ad4b-607463a9f837
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: dd5805cb0ee6b172506a532a513d06f57c583eee
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25396268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337017"
 ---
 # <a name="pidlidlogstart-canonical-property"></a>PidLidLogStart 標準プロパティ
 
@@ -25,35 +25,35 @@ ms.locfileid: "25396268"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ジャーナル メッセージの開始日時を表します。
+ジャーナルメッセージの開始日と開始時刻を表します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidLogStart  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Log  <br/> |
-|長い ID (LID):  <br/> |0x00008706  <br/> |
+|関連するプロパティ:  <br/> |dispidlogstart  <br/> |
+|プロパティセット:  <br/> |PSETID_Log  <br/> |
+|ロング ID (LID):  <br/> |0x00008706  <br/> |
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
-|エリア:  <br/> |ジャーナル  <br/> |
+|エリア:  <br/> |仕訳帳  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-時刻を世界協定時刻 (UTC) で活動を開始したときは、 **dispidCommonStart** ([PidLidCommonStart](pidlidcommonstart-canonical-property.md)) のプロパティと同じである必要があります。
+世界協定時刻 (UTC) で開始されたアクティビティの開始時刻は、 **dispidcommonstart** ([PidLidCommonStart](pidlidcommonstart-canonical-property.md)) プロパティと同じである必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOJRNL]](https://msdn.microsoft.com/library/2aa04fd2-0f36-4ce4-9178-c0fc70aa8d43%28Office.15%29.aspx)
+[[OXOJRNL]](https://msdn.microsoft.com/library/2aa04fd2-0f36-4ce4-9178-c0fc70aa8d43%28Office.15%29.aspx)
   
-> プロパティとは、仕訳帳の許可の操作を指定します。
+> 仕訳帳に対して許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -61,9 +61,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

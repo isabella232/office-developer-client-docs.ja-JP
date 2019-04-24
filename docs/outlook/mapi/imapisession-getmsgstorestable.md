@@ -1,5 +1,5 @@
 ---
-title: IMAPISessionGetMsgStoresTable
+title: imapisessiongetmsgstorestable
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 77db2dff-4534-440f-a05c-635711cbc2c3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: cc0039cf2210446704d25b2156bd4ff50041a524
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5fced633023ebf00efaf5b667dc7994eeb5de316
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338830"
 ---
 # <a name="imapisessiongetmsgstorestable"></a>IMAPISession::GetMsgStoresTable
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-セッション ・ プロファイル内のすべてのメッセージ ・ ストアに関する情報を含むメッセージ ストアのテーブルへのアクセスを提供します。
+セッションプロファイル内のすべてのメッセージストアに関する情報を含むメッセージストアテーブルへのアクセスを提供します。
   
 ```cpp
 HRESULT GetMsgStoresTable(
@@ -34,21 +34,21 @@ HRESULT GetMsgStoresTable(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]文字の文字列の列の形式を決定するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番文字列の列の形式を決定するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> Unicode 形式では、文字列型の列です。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列型の列です。
+> 文字列列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列列は ANSI 形式になります。
     
- _lppTable_
+ _lpptable_
   
-> [out]メッセージ ストアのテーブルへのポインターへのポインター。
+> 読み上げメッセージストアテーブルへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -56,27 +56,27 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> MAPI_UNICODE フラグが設定され、セッションが Unicode をサポートしていません。
+> MAPI_UNICODE フラグが設定されていて、セッションは UNICODE をサポートしていません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPISession::GetMsgStoresTable**メソッドは、メッセージ ストアのテーブルへのポインターを取得、テーブルが管理している MAPI プロファイル内の各の開いているメッセージ ストアについての情報が含まれる。 
+**imapisession:: getmsgstorestable**メソッドは、メッセージストアテーブルへのポインターを取得します。このテーブルは、プロファイル内の開いている各メッセージストアに関する情報を含む MAPI によって保持されます。 
   
-テーブルを格納、メッセージの必須およびオプションの列の一覧については、[メッセージ ストアのテーブル](message-store-tables.md)を参照してください。 
+メッセージストアテーブルの必須およびオプションの列の完全な一覧については、「 [message store Tables](message-store-tables.md)」を参照してください。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-MAPI は、変更が発生するたびに、セッション中に、メッセージ ストアのテーブルを更新、ため **、メッセージ ストアのテーブルのこれらの変更の通知を登録するメソッド**を呼び出します。 行われた変更は、新しいメッセージ ストアの追加、削除、既存のストア、および、既定のストアに変更します。 
+MAPI は、セッション中に変更が発生するたびにメッセージストアテーブルを更新するので、メッセージストアテーブルの**Advise**メソッドを呼び出して、これらの変更について通知されるように登録します。 変更できるのは、新しいメッセージストアの追加、既存のストアの削除、および既定のストアに対する変更です。 
   
-_UlFlags_パラメーターに MAPI_UNICODE フラグを設定する、 [IMAPITable::QueryColumns](imapitable-querycolumns.md)メソッドと[IMAPITable::QueryRows](imapitable-queryrows.md)メソッドから返される列の形式に影響します。 このフラグは、 [IMAPITable::QuerySortOrder](imapitable-querysortorder.md)メソッドによって返される並べ替え順序のプロパティの種類も制御します。 
+_ulflags_パラメーターの MAPI_UNICODE フラグを設定すると、 [imapitable:: querycolumns](imapitable-querycolumns.md)および[imapitable:: QueryRows](imapitable-queryrows.md)メソッドから返される列の形式に影響します。 このフラグは、 [IMAPITable:: querysortorder](imapitable-querysortorder.md)メソッドによって返される並べ替え順序で、プロパティの種類を制御することもできます。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MainDlg.cpp  <br/> |CMainDlg::OnOpenMessageStoreTable  <br/> |MFCMAPI では、 **IMAPISession::GetMsgStoresTable**メソッドを使用して、MFCMAPI のメイン ダイアログ ボックスでレンダリングできるように、メッセージ ストアのテーブルを取得します。  <br/> |
+|maindlg .cpp  <br/> |CMainDlg:: onopenmessagestoretable  <br/> |mfcmapi は、 **imapisession:: getmsgstorestable**メソッドを使用して、メッセージストアテーブルを取得して、mfcmapi のメインダイアログボックスに表示できるようにします。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -101,5 +101,5 @@ MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ���
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[メッセージ ストア テーブル](message-store-tables.md)
+[メッセージストアテーブル](message-store-tables.md)
 

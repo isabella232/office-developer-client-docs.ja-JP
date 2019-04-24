@@ -7,33 +7,33 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: a52f4bcd-6e17-4623-a469-53be1f2758b1
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 556ea9faedf0d9a02b0cff1bb2f1750289cc4d1e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: ae8e553cf2e19ae1ba06ca09aad84eae9f7d1238
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32333076"
 ---
 # <a name="copying-mapi-properties"></a>MAPI プロパティのコピー
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアントとサービス ・ プロバイダーにコピーできます 1 つまたは複数オブジェクトのプロパティの次の**IMAPIProp**メソッドおよび API 関数をクリックすると。 
+クライアントおよびサービスプロバイダーは、次の**imapiprop**メソッドと API 関数を使用して、1つ以上のオブジェクトのプロパティをコピーできます。 
   
-- [IMAPIProp::CopyTo](imapiprop-copyto.md)メソッドは、オプションで選択したプロパティを除く、他のオブジェクトにすべてのオブジェクトのプロパティをコピーします。 **CopyTo**は、コピーまたは任意の種類のオブジェクトを移動するのに使用されます。 
+- [imapiprop:: CopyTo](imapiprop-copyto.md)メソッドは、必要に応じて、選択したプロパティを除外して、オブジェクトのすべてのプロパティを別のオブジェクトにコピーします。 **CopyTo**は、任意の種類のオブジェクトをコピーまたは移動するために使用されます。 
     
-- [IMAPIProp::CopyProps](imapiprop-copyprops.md)メソッドは、オブジェクトの選択したプロパティをコピーします。 **CopyProps**は、主に使用するメッセージに使用されます。 クライアント作成する場合、メッセージの返信、転送されたコピー **CopyProps**ハンドルの元のメッセージから、適切なプロパティをコピーします。 
+- [imapiprop:: copyprops](imapiprop-copyprops.md)メソッドは、オブジェクトの選択されたプロパティをコピーします。 **copyprops**は、主にメッセージで使用されます。 クライアントがメッセージの転送コピーまたは応答を作成すると、 **copyprops**は、元のメッセージから適切なプロパティをコピーする処理を行います。 
     
-- [PropCopyMore](propcopymore.md)関数は、別に、1 つの場所から 1 つのプロパティ値をコピーします。 **PropCopyMore**を使用して、注意が必要です。 できます-一度に 1 つの値をコピーするときに-多くの小さなメモリ ブロックを割り当てるし、メモリをフラグメント化します。 
+- [propcopymore](propcopymore.md)関数は、1つのプロパティ値をある場所から別の場所にコピーします。 **propcopymore**は慎重に使用してください。 これは、一度に1つの値をコピーするときに、少数のメモリブロックを割り当て、メモリをフラグメント化することができます。 
     
-- [ScCopyProps](sccopyprops.md)関数では、一括でプロパティの値をコピーします。 **ScCopyProps**は、切り離されたメモリ ブロックから構築されているプロパティの値をコピーできます。 新しいプロパティの配列を返します。 
+- [sccopyprops](sccopyprops.md)関数は、プロパティの値を一括でコピーします。 **sccopyprops**では、メモリブロックのないメモリブロックから構築されたプロパティ値をコピーできます。 このメソッドは、新しいプロパティ配列を返します。 
     
-- **ScCopyProps**によって返されるプロパティの配列をディスクに保存する場合は、ポインターを調整する[ScRelocProps](screlocprops.md)関数を使用します。 **ScRelocProps**を 2 回呼び出す必要があります。データの操作を記述する前に、アドレスを調整するには、1 回だけ読み取り操作中にもう一度し。 **ScRelocProps**関数は、プロパティ値の配列が最初に 1 つの割り当てに割り当てられたものとします。 
+- **sccopyprops**によって返されるプロパティの配列をディスクに格納する場合は、 [ScRelocProps](screlocprops.md)関数を使用してポインターを調整します。 **ScRelocProps**は2回呼び出す必要があります。データ操作を書き込む前にアドレスを調整した後、読み取り操作中に再びアドレスを調整します。 **ScRelocProps**関数は、プロパティ値の配列が最初は単一の割り当てで割り当てられていることを前提としています。 
     
-API 関数は、上記リスト プロパティのコピーを別のオブジェクトの 1 つのオブジェクトからではなく、メモリ内で説明します。 これらの関数は現在サポートされていませんが、将来のリリースではサポートされていない可能性があります。
+前のリストで説明した API 関数は、オブジェクトから別のオブジェクトへのプロパティではなく、メモリ内のプロパティをコピーします。 これらの関数は現在サポートされていますが、今後のリリースではサポートされない可能性があります。
   
 ## <a name="see-also"></a>関連項目
 

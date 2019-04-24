@@ -9,29 +9,29 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: e593e95d-f975-481d-69cd-619049d4427d
 description: このアクションに関連付けられているアクション タグの名前を指定します。
-ms.openlocfilehash: e1495a34769cbcfdd687491855d1f9c761de2b4e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e7bf5db940934d168ac2adb86d05b0374b0fd265
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332390"
 ---
-# <a name="tagname-cell-actions-section"></a>[TagName ] セル ([操作] セクション)
+# <a name="tagname-cell-actions-section"></a>[TagName] セル ([Actions] セクション)
 
 このアクションに関連付けられているアクション タグの名前を指定します。
   
 > [!NOTE]
 > Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 [Actions] セクションの [TagName] セルは、[Action Tags] セクションの [TagName] セルと一緒に、アクション タグとそのアクションを関連付ける働きをします。 
   
-- アクションの行の [tagname] セルが空白の場合、[操作] メニューのタグではなく、ショートカット メニューのアクションが表示されます。
+- [Actions] 行の [TagName] セルが空白の場合は、アクションタグメニューではなく、ショートカットメニューにアクションが表示されます。
     
-- アクション行の [tagname] セルの値には、スマート タグ行の [tagname] セルの値が一致すると、アクションを [アクション] メニューのタグが表示されます。
+- [Actions] 行の [tagname] セル値が [Smart Tags] 行の [tagname] セル値と一致する場合、アクションはアクションタグメニューに表示されます。
     
-- アクションの [tagname] セルが値を持つタグ行の [tagname] の値に一致しない場合は、そのアクションは任意のアクション タグのメニューまたはショートカット メニューに表示されません。
+- アクションの [tagname] セルに値があっても、どの図形タグ行の [tagname] の値と一致しない場合、そのアクションはアクションタグメニューまたはショートカットメニューに表示されません。
     
 - いくつかのスマート タグ行の [TagName] の値が同じ場合、すべてに同じアクションが表示されます。
     
@@ -39,14 +39,14 @@ ms.locfileid: "19806619"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |アクションです。 *名*です。TagNamewhere アクションです。  *アクション行の名前します。*  <br/> |
+|セル名:  <br/> |アクション. *名前*です。tagnamewhere を指定します。  *name*は、Actions 行の名前です。  <br/> |
    
 プログラムから、インデックスによって [TagName] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionAction** <br/> |
-|行インデックス:  <br/> |**visRowAction** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+|行インデックス:  <br/> |**visRowAction** +  *i* = ** 0、1、2...  <br/> |
 |セル インデックス:  <br/> |**visActionTagName** <br/> |
    
 

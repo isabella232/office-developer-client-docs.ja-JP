@@ -9,31 +9,31 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 7d4416b2-429b-713e-61dc-8b2ead0e6053
 description: 親図形の原点を基準として、図形の水平方向の中心を揃えるための垂直ガイドまたはガイド点の水平方向の位置を指定します。
-ms.openlocfilehash: 342385dc2d08efd95e8dbad9d96ab59b2133ed7c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6249c994299582d52a7f54a0c75370851dfad498
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341546"
 ---
-# <a name="aligncenter-cell-alignment-section"></a>[AlignCenter] セル ([配置] セクション)
+# <a name="aligncenter-cell-alignment-section"></a>[AlignCenter] セル ([Alignment] セクション)
 
 親図形の原点を基準として、図形の水平方向の中心を揃えるための垂直ガイドまたはガイド点の水平方向の位置を指定します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [AlignCenter] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | AlignCenter  <br/> |
+| セル名 :  <br/> | [aligncenter]  <br/> |
    
 プログラムから、インデックスによって [AlignCenter] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
-| 行インデックス:  <br/> |**visRowAlign** <br/> |
+| 行インデックス :  <br/> |**visRowAlign** <br/> |
 | セル インデックス:  <br/> |**visAlignCenter** <br/> |
    
 

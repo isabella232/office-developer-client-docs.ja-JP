@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: 4af8e79a-697e-44a1-8576-fdc57726e9ef
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d58a216a41ff8fe93387ce6d9d1d6aa16f36f224
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 00355546717ca61492750cb1dd113d20114b0695
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334812"
 ---
 # <a name="filetime"></a>FILETIME
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-符号なし 64 ビットの日付と、ファイルの時刻の値を保持します。 この値は、1601 年 1 月 1 日の開始以降の 100 ナノ秒単位の数を表します。 
+ファイルの、未署名の64ビットの日付と時刻の値を保持します。 この値は、1601年1月1日からの100ナノ秒単位の数を表します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _FILETIME
@@ -42,19 +42,19 @@ typedef struct _FILETIME
 
 ## <a name="members"></a>Members
 
- **dwLowDateTime**
+ **dwlowdatetime**
   
-> ファイル時刻の値の下位 32 ビットです。 
+> file time 値の低順位32ビット。 
     
  **dwHighDateTime**
   
-> ファイル時刻の値の上位の 32 ビットです。
+> file time 値の上位32ビット。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-タイプ PT_SYSTIME のプロパティは、 **FILETIME**構造体の値を持ちます。 このようなプロパティでは、**値**メンバー [SPropValue](spropvalue.md)構造体の定義内の**FILETIME**データ型があります。 
+PT_SYSTIME 型のプロパティには、その値の**FILETIME**構造があります。 このようなプロパティは、 [spropvalue](spropvalue.md)構造の定義において、**値**メンバーの**FILETIME**データ型を持っています。 
   
-**FILETIME**構造体の定義は、 _Win32 プログラマーズ リファレンス_では、MAPI のヘッダー ファイル Mapidefs.h には。 MAPI では、Win32 の定義が使用可能な場合が定義されているかどうかを確認するには、条件付きで構造体を定義します。 
+**FILETIME**構造体の定義は、 _Win32 プログラマーズリファレンス_および MAPI ヘッダーファイル mapidefs.h にあります。 MAPI は、Win32 定義が使用できない場合に、その構造が定義されていることを確認するために、その構造を定義します。 
   
 ## <a name="see-also"></a>関連項目
 

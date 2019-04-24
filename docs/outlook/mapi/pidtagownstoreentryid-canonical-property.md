@@ -12,51 +12,51 @@ api_type:
 - COM
 ms.assetid: 6a82ee90-10a1-49e0-8f3a-a2cd9f490f99
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 54014ab25d268c161465349b4e33c6a1df19f140
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 16a23c4e711bf9f7b670dff8b3e8f65371aa6bda
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335449"
 ---
 # <a name="pidtagownstoreentryid-canonical-property"></a>PidTagOwnStoreEntryId 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-トランスポートの密結合のメッセージ ストアのエントリ id が含まれています。
+トランスポートの密結合メッセージストアのエントリ id を格納します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_OWN_STORE_ENTRYID  <br/> |
-|識別子:  <br/> |0x3E06  <br/> |
+|識別子:  <br/> |0x3e06  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |メッセージ ストアのプロパティ  <br/> |
+|エリア:  <br/> |メッセージストアのプロパティ  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティは、いずれかが存在する場合に、密結合のストアのエントリの識別子を指定します。 たとえば、トランスポート プロバイダーは、個人用のフォルダーは MAPI スプーラーがストアに、トランスポート プロバイダーを接続できるようにするエントリの識別子を格納を指定できます。
+このプロパティは、密結合ストアがある場合は、そのエントリ識別子を指定します。 たとえば、トランスポートプロバイダーは、パブリックフォルダーストアエントリ識別子を指定して、MAPI スプーラーがトランスポートプロバイダーをストアに接続できるようにすることができます。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

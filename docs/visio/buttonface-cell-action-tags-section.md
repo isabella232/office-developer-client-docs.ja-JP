@@ -10,13 +10,13 @@ localization_priority: Normal
 ms.assetid: 26f370e1-5193-f47d-7b60-3597975be650
 description: アクション タグ ボタンに表示されるボタン イメージの ID を示します。
 ms.openlocfilehash: e74b3281d894cebd8491112181198d427f0d337f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337540"
 ---
-# <a name="buttonface-cell-action-tags-section"></a>[ButtonFace] セル ([操作タグ] セクション)
+# <a name="buttonface-cell-action-tags-section"></a>[ButtonFace] セル ([Action Tags] セクション)
 
 アクション タグ ボタンに表示されるボタン イメージの ID を示します。 
   
@@ -25,22 +25,22 @@ ms.locfileid: "25385481"
   
 ## <a name="remarks"></a>解説
 
-[ButtonFace] セル内の文字列は Microsoft Office のボタン イメージの ID を示します。値 0 (ゼロ) または空白の場合、標準アクション タグの "i" 情報ボタン ( ![標準アクション タグの"i"情報ボタン](media/InfoPS_ZA10180114.gif).
+[ButtonFace] セル内の文字列は Microsoft Office のボタン イメージの ID を示します。 値 0 (ゼロ) または空白は、標準のアクションタグ "i" [情報] ボタンに既定で設定されます。 ![標準アクションタグ "i" [情報] ボタン](media/InfoPS_ZA10180114.gif).
   
-ButtonFace] セルに使用できる Id は、 **CommandBarButton**オブジェクトの**FaceID**プロパティで使用される Id と同じです。 これらの Id の詳細については、MSDN の「コマンド バー ボタンのイメージを使用する」を検索してください。 
+[ButtonFace] セルに使用される ID は、 **CommandBarButton ** オブジェクトの  **FaceID ** プロパティで使用される ID と同じです。 これらの id の詳細については、MSDN の「コマンドバーボタンイメージを使用する」を検索してください。 
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ButtonFace] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | スマート タグです。  *名*です。ButtonFace、スマート タグです。 *タグのアクション行の名前します。*  <br/> |
+| セル名:  <br/> | タグ.  *名前*です。SmartTags を指定します。 *name*は、アクションタグ行の名前です。  <br/> |
    
 プログラムから、インデックスによって [ButtonFace] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
-| セクション インデックス:  <br/> |**visSectionSmartTag** <br/> |
-| 行インデックス:  <br/> |**visRowSmartTag** +  *i* 、 *i* = 0, 1, 2.  <br/> |
-| セル インデックス:  <br/> |**visSmartTagButtonFace** <br/> |
+| セクション インデックス :  <br/> |**visSectionSmartTag** <br/> |
+| 行インデックス:  <br/> |**visRowSmartTag** +  *i* = ** 0、1、2...  <br/> |
+| セル インデックス :  <br/> |**visSmartTagButtonFace** <br/> |
    
 

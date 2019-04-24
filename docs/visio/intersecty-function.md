@@ -8,17 +8,17 @@ f1_keywords:
 - Vis_DSS.chm82251445
 localization_priority: Normal
 ms.assetid: a298eead-044b-6f40-54c7-e0e6088baa19
-description: Y を返しますが、ローカル座標系で) の 2 本の線が交差する点の座標です。
-ms.openlocfilehash: c3c0e9afef317ed4c647f1d236c4c3a29c6cdaa6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 2本の線が交わる点の y 座標 (ローカル座標系) を返します。
+ms.openlocfilehash: 6fcd06e7086d52b9c45f1deb9d4c191f1a7b1fd2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335260"
 ---
 # <a name="intersecty-function"></a>INTERSECTY 関数
 
-*Y*が返されますが、ローカル座標系で) の 2 本の線が交差する点の座標です。 
+2本の線が交わる点の*y*座標 (ローカル座標系) を返します。 
   
 ## <a name="syntax"></a>構文
 
@@ -28,18 +28,18 @@ INTERSECTX (* * *x1* * *、* * *y1* * *、* * *angle1* * *、* * *x2* * *、* * 
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _x1_ <br/> |必須  <br/> |**番号** <br/> |_X_の最初の行の上の点の座標です。  <br/> |
-| _y1_ <br/> |必須  <br/> |**番号** <br/> |_Y_-最初の行の上の点の座標です。  <br/> |
-| _angle1_ <br/> |必須  <br/> |**番号** <br/> | 1 本目の線の [Angle] セルにある値を指定します。  <br/> |
-| _x2_ <br/> |必須  <br/> |**番号** <br/> |_X_の 2 番目の線上の点の座標です。  <br/> |
-| _y2_ <br/> |必須  <br/> |**番号** <br/> |_Y_の 2 つ目のライン上の点の座標です。  <br/> |
-| _angle2_ <br/> |必須  <br/> |**番号** <br/> |2 本目の線の [Angle] セルにある値を指定します。  <br/> |
+| _x1_ <br/> |必須  <br/> |**数値** <br/> |最初の線にある点の_x_座標です。  <br/> |
+| _y1_ <br/> |必須  <br/> |**数値** <br/> |最初の線にある点の_y_座標です。  <br/> |
+| _angle1_ <br/> |必須  <br/> |**数値** <br/> | 1 本目の線の [Angle] セルにある値を指定します。  <br/> |
+| _x_ <br/> |必須  <br/> |**数値** <br/> |2番目の線にある点の_x_座標です。  <br/> |
+| _y2_ <br/> |必須  <br/> |**数値** <br/> |2番目の線にある点の_y_座標です。  <br/> |
+| _angle2_ <br/> |必須  <br/> |**数値** <br/> |2 本目の線の [Angle] セルにある値を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
-数値
+番号
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 各線は点 (*x,y*) と角度によって定義されます。 
   
@@ -49,8 +49,8 @@ Microsoft Visio で、この関数は、回転したガイドに接着されて�
   
 ## <a name="example"></a>例
 
-INTERSECTY (VertGuide!VertGuide [pinx]![Piny]、VertGuide!HorzGuide の角度です。HorzGuide [pinx]![Piny]、HorzGuide!角度) 
+INTERSECTY (vertguide!PinX、vertguide!PinY、vertguide!Angle、HorzGuide!PinX、HorzGuide!PinY、HorzGuide!直交 
   
-*Y*を返します-ページ単位での交差ポイントの VertGuide と HorzGuide の座標です。 
+vertguide と HorzGuide の交差点の*y*座標をページ単位で返します。 
   
 

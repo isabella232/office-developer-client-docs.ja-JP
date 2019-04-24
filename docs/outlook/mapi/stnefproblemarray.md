@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: 115d845b-4168-4d49-b880-219ee28baa9a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 924ddbc7c2ad1ed84ce6927ae089b6eb223bfb92
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 721b14f101e87299f654507f94d4a957f905cac1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336499"
 ---
 # <a name="stnefproblemarray"></a>STnefProblemArray
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-エンコード中に発生した問題を処理する 1 つまたは複数、またはトランスポート ニュートラル カプセル化形式 (TNEF) ストリームのデコードを記述する**STnefProblem**構造体の配列が含まれています。 
+トランスポートニュートラルカプセル化形式 (TNEF) ストリームのエンコードまたはデコード中に発生した1つ以上の処理上の問題について説明する**STnefProblem**構造体の配列が含まれています。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Tnef.h  <br/> |
+|ヘッダー ファイル:  <br/> |Tnef  <br/> |
    
 ```cpp
 typedef struct _STnefProblemArray
@@ -42,19 +42,19 @@ typedef struct _STnefProblemArray
 
 ## <a name="members"></a>Members
 
- **cProblem**
+ **cproblem**
   
-> **かかわる問題**のメンバーで指定された配列内の要素の数。 
+> **aproblem**メンバーで指定されている配列内の要素の数。 
     
- **かかわる問題**
+ **aproblem**
   
-> [STnefProblem](stnefproblem.md)構造体の配列です。 各構造体には、プロパティまたは属性の問題の処理に関する情報が含まれています。 
+> [STnefProblem](stnefproblem.md)構造体の配列。 各構造体には、プロパティまたは属性処理の問題に関する情報が含まれています。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-[ITnef::ExtractProps](itnef-extractprops.md)メソッドと[ITnef::Finish](itnef-finish.md)メソッドの出力パラメーターが、構造体の**STnefProblemArray**と**ExtractProps へのポインターを受信する属性またはプロパティの処理中に問題が発生した場合****終了**各 MAPI_W_ERRORS_RETURNED の値を返すとします。 このエラー値は、処理中に問題が発生したし、 **STnefProblemArray**構造体が生成されたことを示します。 
+属性またはプロパティの処理中に問題が発生した場合、 [ITnef:: ExtractProps](itnef-extractprops.md)メソッドと[ITnef:: Finish](itnef-finish.md)メソッドの出力パラメーターは、それぞれ**STnefProblemArray**構造体へのポインターを受け取り、 **ExtractProps****完了**するたびに、MAPI_W_ERRORS_RETURNED 値を返します。 このエラー値は、処理中に問題が発生し、 **STnefProblemArray**構造が生成されたことを示します。 
   
-**STnefProblem**構造体は、属性またはプロパティの処理中に生成されていない場合場合は、クライアント アプリケーションがその属性またはプロパティの処理が成功したことがあると仮定して続行できます。 唯一の例外は、ブロックをカプセル化のデコード中に問題が発生したときに発生します。 このデコード中にエラーが発生した場合は、構造体に[SCODE](scode.md)として MAPI_E_UNABLE_TO_COMPLETE が返されます。 この例では、ブロックに対応するコンポーネントのデコードを停止して、別のコンポーネントが続きますをデコードすること。 
+属性またはプロパティの処理中に**STnefProblem**構造体が生成されない場合、クライアントアプリケーションは、その属性またはプロパティの処理が正常に終了したことを前提として続行できます。 唯一の例外は、カプセル化ブロックのデコード中に問題が発生した場合です。 このデコード中にエラーが発生した場合は、MAPI_E_UNABLE_TO_COMPLETE を構造内の[SCODE](scode.md)として返すことができます。 この場合、ブロックに対応するコンポーネントのデコードが停止され、別のコンポーネントでデコードが続行されます。 
   
 ## <a name="see-also"></a>関連項目
 

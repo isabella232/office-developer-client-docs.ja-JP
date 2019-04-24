@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 04b0fa5b-1680-cfe2-6aaf-0502ad196027
 description: グループをロックして、グループを解除できないようにします。
-ms.openlocfilehash: 4d09d514a3fff8ada40c67eb9cd9537539a1039a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0cb2c0653780dcb653e5903faaaa0ebf30ea9d69
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19805773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341793"
 ---
-# <a name="lockgroup-cell-protection-section"></a>[LockGroup] セル ([保護] セクション)
+# <a name="lockgroup-cell-protection-section"></a>[LockGroup] セル ([Protection] セクション)
 
 グループをロックして、グループを解除できないようにします。
   
@@ -25,7 +25,7 @@ ms.locfileid: "19805773"
 |TRUE  <br/> |グループを解除できません。  <br/> |
 |FALSE  <br/> |グループを解除できます。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 [LockGroupCell] 値を TRUE に設定すると、グループのメンバーである図形が削除されるのを防ぐこともできます。
   
@@ -33,7 +33,7 @@ ms.locfileid: "19805773"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[Lockgroup]  <br/> |
+|セル名:  <br/> |[lockgroup]  <br/> |
    
 プログラムから、インデックスによって [LockGroup] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

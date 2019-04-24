@@ -9,36 +9,36 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 28d1cd60-4fb6-9feb-1a13-0962798ac1ad
 description: アクション タグとそのアクションを関連付けるキーとして使用されるアクション タグの名前です。
-ms.openlocfilehash: dbac3d4dff9d2ffd18bba75db56cafc08f5e0ee8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 777d6c1098888c9835c1ad367bb70926b835180b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332397"
 ---
-# <a name="tagname-cell-action-tags-section"></a>[TagName] セル ([操作タグ] セクション)
+# <a name="tagname-cell-action-tags-section"></a>[TagName] セル ([Action Tags] セクション)
 
 アクション タグとそのアクションを関連付けるキーとして使用されるアクション タグの名前です。
   
 > [!NOTE]
 > Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
- 操作タグ セクションの [tagname] セルとそのアクションのアクション タグを関連付けるには [操作] セクションの [tagname] セルと一緒に動作します。 [操作] セクション内の行も [tagname] セルがあり、このセルと同じ [tagname] セルの値がある行がこのアクションのタグに対して実行するアクションを定義します。 
+ [Action Tags] セクションの [TagName] セルは、[Actions] セクションの [TagName] セルと一緒に、アクション タグとそのアクションを関連付ける働きをします。 [Actions] セクションの行には、[tagname] セルがあり、このセルと同じ tagname セル値が指定されている行には、このアクションタグに対して実行するアクションが定義されています。 
   
 別の数式から、または **CellsU** プロパティを使用してプログラムから、名前によって [TagName] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | スマート タグです。  *名*です。タグ名、スマート タグです。 *タグのアクション行の名前します。*  <br/> |
+| セル名:  <br/> | タグ.  *名前*です。TagName。 SmartTags *name*は、アクションタグ行の名前です。  <br/> |
    
 プログラムから、インデックスによって [TagName] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionSmartTag** <br/> |
-| 行インデックス:  <br/> |**visRowSmartTag** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+| 行インデックス:  <br/> |**visRowSmartTag** +  *i* = ** 0、1、2...  <br/> |
 | セル インデックス:  <br/> |**visSmartTagName** <br/> |
    
 

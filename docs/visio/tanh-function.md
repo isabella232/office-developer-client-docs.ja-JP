@@ -9,40 +9,38 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 0ffdfc22-cbae-b397-226a-2cfcc6ca56c7
 description: 角度の双曲正接を返します。
-ms.openlocfilehash: 1cef04ab03cdc0acfdb6970cd9699a9340a63077
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e88d24b93d06cc606d96d5a4e4a3f834b706245a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332383"
 ---
 # <a name="tanh-function"></a>TANH 関数
 
-角度の双曲正接を返します。
-    
- 
+角度の双曲正接を返します。 
   
 ## <a name="syntax"></a>構文
 
-TANH (* **角度** *) 
+TANH (* * *angle* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _角度_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |Hypbolic タンジェントを取得する対象の角度です。  <br/> |
+| _直交_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |双曲タンジェントを取得する角度を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
 数値型 (Numeric)
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-TANH 関数では、*角度*で別の測定単位を指定する場合を除き、ラジアンが使用されます。 
+TANH 関数では、*角度*に別の単位を指定しない限り、ラジアンが使用されます。 
   
 ## <a name="example"></a>例
 
-TANH(-45) 
+TANH (-45) 
   
 -0.6558 を返します。 
   

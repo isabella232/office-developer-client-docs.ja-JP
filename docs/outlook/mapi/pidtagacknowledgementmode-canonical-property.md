@@ -12,56 +12,56 @@ api_type:
 - HeaderDef
 ms.assetid: 23329ca3-89f9-4e5a-9c8a-6262f2a2d26f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 28b42e6abee5d918dbcca69c13642f3ebcc859e1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: cee99b93d41ac8cd4a3dee18cad6cd4ab01cabe3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335282"
 ---
 # <a name="pidtagacknowledgementmode-canonical-property"></a>PidTagAcknowledgementMode 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージの受信確認モードの識別子が含まれています。
+メッセージ受信のモードの識別子を含みます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_ACKNOWLEDGEMENT_MODE  <br/> |
 |識別子:  <br/> |0x0001  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |Exchange  <br/> |
+|エリア:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティは、次の値の 1 つだけ持つことができます。
+このプロパティには、次のいずれかの値を指定できます。
   
 |**値**|**説明**|
 |:-----|:-----|
-|0  <br/> |手動受信を確認します。  <br/> |
-|1  <br/> |自動受信を確認します。  <br/> |
+|.0  <br/> |手動での受信確認。  <br/> |
+|1-d  <br/> |自動応答。  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

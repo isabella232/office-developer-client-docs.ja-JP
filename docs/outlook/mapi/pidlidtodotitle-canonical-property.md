@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 94cf031f-4c78-441d-9c01-55905b4974e0
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7ed69d9bab84a5c572026bb9480249c1212e3376
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25397584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339943"
 ---
 # <a name="pidlidtodotitle-canonical-property"></a>PidLidToDoTitle 標準プロパティ
 
@@ -25,41 +25,41 @@ ms.locfileid: "25397584"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-統合の to do リストでは、このメッセージ オブジェクトを識別するユーザーを指定できるテキストが含まれています。
+統合されたタスク一覧でこのメッセージオブジェクトを識別するためのユーザー specifiable テキストを含みます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |dispidToDoTitle  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Common  <br/> |
-|長い ID (LID):  <br/> |0x000085A4  <br/> |
+|プロパティセット:  <br/> |PSETID_Common  <br/> |
+|ロング ID (LID):  <br/> |0x000085a4  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
 |エリア:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-タスクでこのプロパティを設定しない必要があります。 空のプロパティを指定するには、長さ 0 の文字列にこのプロパティを設定しないでが代わりにそれを削除します。 
+このプロパティは、タスクに設定してはなりません。 空のプロパティを指定する場合は、このプロパティを長さ0の文字列に設定しないで、削除します。 
   
-メッセージ オブジェクト、およびプロパティのフラグを付けることが存在しない場合、クライアントは、このプロパティに**PR_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md)) の値を記述する必要があります。
+message オブジェクトのフラグを設定したときに、そのプロパティが存在しない場合、クライアントはこのプロパティに**PR_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md)) の値を書き込む必要があります。
   
-統合の to do リストでこのプロパティが存在しない場合、クライアント置き換える必要があります**PR_NORMALIZED_SUBJECT**プロパティの値を to do リストにこのプロパティを表示するときです。 
+統合されたタスク一覧でこのプロパティが存在しない場合は、このプロパティをタスク一覧に表示するときに、クライアントは**PR_NORMALIZED_SUBJECT**プロパティの値を置換する必要があります。 
   
-下書きメッセージ オブジェクトでは、[クライアントは、送信者のフラグを実装している場合このプロパティは、 **dispidRequest** ([PidLidFlagRequest](pidlidflagrequest-canonical-property.md)) と同じ値に設定する必要があります。
+下書きのメッセージオブジェクトで、クライアントが sender フラグを実装している場合、このプロパティは**dispidrequest** ([PidLidFlagRequest](pidlidflagrequest-canonical-property.md)) と同じ値に設定する必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
+[[OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
   
-> プロパティ フラグに関連する操作を指定します。
+> フラグに関連するプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -72,9 +72,9 @@ Mapidefs.h
 [PidLidFlagRequest ���K���̃v���p�e�B](pidlidflagrequest-canonical-property.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

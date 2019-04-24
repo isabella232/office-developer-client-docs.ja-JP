@@ -1,5 +1,5 @@
 ---
-title: 受信者情報を表示します。
+title: 受信者情報の表示
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,42 +7,42 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 7ffec274-ee90-44c7-ab2e-7dfb502517a6
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 4610d9e643541e39144f2af86a2d64928b8e9ca7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: e1c31e5edf702dd8f172f67e7055a96ae4cfff1c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337038"
 ---
-# <a name="displaying-recipient-information"></a>受信者情報を表示します。
+# <a name="displaying-recipient-information"></a>受信者情報の表示
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI には、受信者の詳細を表示するためのコモン ダイアログ ボックスが用意されています。 **IMAPIProp**実装とディスプレイ テーブルから、[詳細情報] ダイアログ ボックスが作成されます。 表示された表の詳細の表示の外観を記述して、 **IMAPIProp**の実装は、受信者のデータを制御します。 プロバイダーは、表示された表と各受信者の**IMAPIProp**の実装を提供する必要があります。 
+MAPI には、受信者の詳細を表示するためのコモンダイアログボックスが用意されています。 [詳細] ダイアログボックスは、表示テーブルと**imapiprop**の実装から作成されます。 表示テーブルは、詳細表示の外観を示し、 **imapiprop**の実装は受信者のデータを制御します。 プロバイダーは、受信者ごとに表示テーブルと**imapiprop**実装を提供する必要があります。 
   
-[DTPAGE](dtpage.md)構造体を定義し、 [BuildDisplayTable](builddisplaytable.md)を呼び出すには、表示された表を作成する最も簡単な方法です。 ただし、一部のプロバイダーでは、具体的には読み取り専用プロバイダーを 1 回限りの受信者の作成は、 **IPropData**を使用します。 **IMAPIProp**の実装は、オブジェクトのプロパティの任意の型にできます。 
+表示テーブルを作成する最も簡単な方法は、 [dtpage](dtpage.md)構造を定義して[builddisplaytable](builddisplaytable.md)を呼び出すことです。 ただし、1回限りの受信者の作成を許可するプロバイダーによっては、特に読み取り専用プロバイダーがある場合は、 **ipropdata**を使用します。 **imapiprop**の実装には、任意の種類の property オブジェクトを指定できます。 
   
-このダイアログ ボックスを起動するための 2 つの方法があります: [IAddrBook::Details](iaddrbook-details.md)と[IMAPISupport::Details](imapisupport-details.md)。 プロバイダーを呼び出すと、受信者の詳細を要求するこれらのメソッドのいずれか、MAPI はまずコンテナーの[IMAPIContainer::OpenEntry](imapicontainer-openentry.md)メソッドを呼び出すことによって、受信者を開きます。 次に**PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) のプロパティを要求するための受信者の[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを呼び出します。 **PR_DETAILS_TABLE**は、受信者の詳細表示のテーブルを表すプロパティです。 
+このダイアログボックスを呼び出すには、次の2つの方法があります。 [IAddrBook::D etails](iaddrbook-details.md) and [imapisupport::D etails](imapisupport-details.md)。 プロバイダーが、受信者の詳細を要求するために、これらのメソッドのいずれかを呼び出すと、まず、まず、そのコンテナーの[IMAPIContainer:: openentry](imapicontainer-openentry.md)メソッドを呼び出して受信者を開きます。 次に、受信者の[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出して、 **PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) プロパティを要求します。 **PR_DETAILS_TABLE**は、受信者の詳細表示テーブルを表すプロパティです。 
   
-[IPropData: IMAPIProp](ipropdataimapiprop.md)以下の手順で説明したようにテーブル コントロールの表示上の変更を監視するインターフェイスを使用することができます。 
+次の手順で説明するように、 [ipropdata: imapiprop](ipropdataimapiprop.md)インターフェイスを使用して、表示テーブルコントロールの変更を監視できます。 
   
-## <a name="monitor-changes-to-a-control"></a>コントロールへの変更を監視します。
+## <a name="monitor-changes-to-a-control"></a>コントロールに加えられた変更を監視する
   
-1. ユーザーは、コントロールへのアクセス権を取得、前に、コントロールのアクセスを IPROP_CLEAN に設定するのには[IPropData::HrSetObjAccess](ipropdata-hrsetobjaccess.md)を呼び出します。 
+1. ユーザーがコントロールにアクセスできるようにするには、 [ipropdata:: HrSetObjAccess](ipropdata-hrsetobjaccess.md)を呼び出して、コントロールのアクセスを IPROP_CLEAN に設定します。 
     
-2. ダイアログ ボックスを操作するユーザーを許可します。 
+2. ユーザーがダイアログボックスで作業できるようにします。 
     
-3. ユーザーが完了したら、コントロールの現在のアクセス レベルを取得するために[IPropData::HrGetPropAccess](ipropdata-hrgetpropaccess.md)を呼び出します。 
+3. ユーザーが終了したら、 [ipropdata:: hrgetpropaccess](ipropdata-hrgetpropaccess.md)を呼び出して、コントロールの現在のアクセスレベルを取得します。 
     
-4. アクセス レベルが IPROP_DIRTY の場合は、ユーザーがコントロールを変更します。 プロバイダーは次のとおりです。
+4. アクセスレベルが IPROP_DIRTY の場合、ユーザーはコントロールを変更しています。 プロバイダーは次のようにする必要があります。
     
-   - IPROP_CLEAN にレベルのアクセス権を設定するのには[IPropData::HrSetPropAccess](ipropdata-hrsetpropaccess.md)を呼び出します。 
+   - [ipropdata:: hrsetpropaccess](ipropdata-hrsetpropaccess.md)を呼び出して、アクセスレベルを IPROP_CLEAN に戻します。 
     
-   - プロパティの変更を取得し、 [IMAPIProp::SetProps](imapiprop-setprops.md)を呼び出すことによって更新するのには、プロパティのデータ オブジェクトの[IMAPIProp::GetProps](imapiprop-getprops.md)メソッドを呼び出します。
+   - プロパティデータオブジェクトの[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出して、変更されたプロパティを取得し、 [imapiprop:: setprops](imapiprop-setprops.md)を呼び出して更新します。
     
-5. アクセス レベルがまだ IPROP_CLEAN である場合、コントロールは変更されていません。 
+5. アクセスレベルが依然として IPROP_CLEAN の場合、コントロールは変更されていません。 
     
-表示のテーブルを作成する方法の詳細については、[テーブルの表示](display-tables.md)を参照してください。
+表示テーブルの作成の詳細については、「[表の表示](display-tables.md)」を参照してください。
   
 

@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: 95513b5a-fd3b-46f2-a6c0-094500ae4ca7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3d9db53dd752367570fc10aaabe3143b3b3ea917
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3ee1b84e36ef014fab87ca910115675c905f6a09
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332642"
 ---
 # <a name="changeproptype"></a>CHANGE_PROP_TYPE
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロパティ タグのプロパティの型を指定した値に更新されます。 プロパティの識別子は変更はありません。 
+プロパティタグのプロパティの種類を、指定した値に更新します。 プロパティ識別子は変更されません。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |[SPropValue](spropvalue.md) <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |[SPropValue](spropvalue.md) <br/> |
    
 ```cpp
 CHANGE_PROP_TYPE (ulPropTag, ulPropType)
@@ -40,11 +40,11 @@ CHANGE_PROP_TYPE (ulPropTag, ulPropType)
 
  _ulPropTag_
   
-> 変更するプロパティ タグです。
+> 変更するプロパティタグを指定します。
     
- _ulPropType_
+ _ulproptype_
   
-> プロパティの型の新しい値。
+> プロパティ型の新しい値。
     
 ## <a name="see-also"></a>関連項目
 
@@ -53,5 +53,5 @@ CHANGE_PROP_TYPE (ulPropTag, ulPropType)
 [SPropValue](spropvalue.md)
 
 
-[構造体に関連するマクロ](macros-related-to-structures.md)
+[構造に関連するマクロ](macros-related-to-structures.md)
 

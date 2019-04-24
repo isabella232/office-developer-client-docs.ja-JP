@@ -12,51 +12,51 @@ api_type:
 - COM
 ms.assetid: 1dd14858-2ce6-4629-a2f1-82d23cd6576b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 273796430cb2ed1badd96ddb9c8fae8b251e5802
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 159a25347cd64b44f42dbb5052425ebb67894a9b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341130"
 ---
 # <a name="pidtagserviceinstallid-canonical-property"></a>PidTagServiceInstallId 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロバイダーのコンポーネントの ID です。
+プロバイダーのコンポーネント ID。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_SERVICE_INSTALL_ID、PR_SERVICE_INSTALL_ID_A、PR_SERVICE_INSTALL_ID_W  <br/> |
-|識別子:  <br/> |0x3D13  <br/> |
+|識別子:  <br/> |0x3d13  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |MAPI プロファイル  <br/> |
+|エリア:  <br/> |MAPI プロファイル  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-これらのプロパティは、プロバイダーをインストールする**MsiProvideQualifiedComponent**呼び出しのコンポーネントのパラメーターとして使用できます。 
+これらのプロパティは、プロバイダーをインストールするための**MsiProvideQualifiedComponent**呼び出しの component パラメーターとして使用できます。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 7406b46d-b42d-187c-70e8-123c4da7e781
 description: セル数式が Date 情報を含むときに使用するカレンダーを指定します。
-ms.openlocfilehash: 2bca91fd2efc283bcc8f2c5037c4d81dd9bcffc5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f756b0d445bd3f90b67e0b1412bd7ac51a8cdb7e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337514"
 ---
-# <a name="calendar-cell-miscellaneous-section"></a>[Calendar] セル ([その他] セクション)
+# <a name="calendar-cell-miscellaneous-section"></a>[Calendar] セル ([Miscellaneous] セクション)
 
 セル数式が Date 情報を含むときに使用するカレンダーを指定します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 使用できる値は、0 (西暦)、1 (イスラム暦)、2 (ヘブライ太陰暦)、3 (台湾暦)、4 (和暦)、5 (タイ仏暦)、6 (韓国檀紀)、7 (サカ暦)、8 (英語 (音訳))、および 9 (フランス語 (音訳)) です。 
   
@@ -28,7 +28,7 @@ ms.locfileid: "19804935"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | Calendar  <br/> |
+| セル名 :  <br/> | カレンダー  <br/> |
    
 プログラムから、インデックスによって [Calendar] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -36,6 +36,6 @@ ms.locfileid: "19804935"
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowMisc** <br/> |
-| セル インデックス:  <br/> |**visObjCalendar** <br/> |
+| セル インデックス:  <br/> |**visobjcalendar** <br/> |
    
 

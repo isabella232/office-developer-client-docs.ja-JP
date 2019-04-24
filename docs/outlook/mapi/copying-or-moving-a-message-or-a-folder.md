@@ -1,5 +1,5 @@
 ---
-title: コピーまたはメッセージまたはフォルダーを移動します。
+title: メッセージまたはフォルダーのコピーまたは移動
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 72290fd3-00d7-4055-bbfa-0c47b6e0f62d
-description: '最終更新日: 2011 年 11 月 8 日'
-ms.openlocfilehash: 97e7c90c2fdc715d7d0749300cc62854fffa6447
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年11月8日'
+ms.openlocfilehash: c5e92c44d7078560ed84d72b3477d5cf2e809353
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32333041"
 ---
-# <a name="copying-or-moving-a-message-or-a-folder"></a>コピーまたはメッセージまたはフォルダーを移動します。
+# <a name="copying-or-moving-a-message-or-a-folder"></a>メッセージまたはフォルダーのコピーまたは移動
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアントは、コピーまたはメッセージまたはフォルダーを移動する 4 つの方法のいずれかを使用できます。
+クライアントは、次の4つの方法のいずれかを使用して、メッセージまたはフォルダーをコピーまたは移動できます。
   
 - [IMAPIFolder::CopyFolder](imapifolder-copyfolder.md)
     
@@ -29,60 +29,60 @@ ms.locfileid: "22563983"
     
 - [IMAPIProp::CopyProps](imapiprop-copyprops.md)
     
-適切なフラグとパラメーターを設定することにより**CopyTo**と**CopyProps**が動作するように**CopyFolder**または**CopyMessages**のようにします。 どのメソッドを呼び出すを決定する際に、次の問題を考慮してください。
+適切なフラグとパラメーターを設定することによって、 **CopyTo**および copyprops を**copyprops**や**** **copyprops**と同じように動作させることができます。 呼び出すメソッドを決定するときは、以下の点を考慮してください。
   
-- コピーまたは、フォルダーまたはメッセージを移動しますか。
+- フォルダーまたはメッセージをコピーまたは移動していますか。
     
-- どの程度ご存知のフォルダーまたはメッセージを移動またはコピーできるのですか。
+- 移動またはコピーするフォルダーまたはメッセージについて、どのくらいの程度知っていますか。
     
-- フォルダーの数や、メッセージのプロパティを移動またはコピーされますか。
+- フォルダーまたはメッセージのプロパティの数はどれだけ移動またはコピーされますか。
     
-**IMAPIProp**メソッドは、コピーまたは移動するフォルダーまたはメッセージのいずれかを使用できます。 **IMAPIFolder::CopyMessages**は、メッセージだけです。**IMAPIFolder::CopyFolder**は、フォルダーにのみで動作します。 
+**imapiprop**メソッドを使用して、フォルダーまたはメッセージのいずれかをコピーまたは移動できます。 **imapifolder:: copymessages**はメッセージのみを処理します。**imapifolder:: copyfolder**はフォルダーのみを使用します。 
   
-**IMAPIFolder**メソッドを使用してもフォルダーまたはメッセージをコピーまたは移動によってサポートされるプロパティのすべての知識が必要ありませんが、 **IMAPIProp**メソッドを使用するいくつかの知識が必要です。 **IMAPIProp::CopyProps**とのコピーまたは移動するフォルダーまたはメッセージのプロパティを明示的に指定できる必要があります。 **IMAPIProp::CopyTo**、コピーまたは移動するすべてのプロパティ、する場合を除き、明示的に指定してくださいどれを除外する必要があります。 これらのメソッドの詳細については、 [MAPI プロパティのコピー](copying-mapi-properties.md)を参照してください。
+**imapifolder**メソッドを使用しても、コピーまたは移動するフォルダーやメッセージでサポートされているプロパティを認識する必要はありませんが、 **imapifolder**のメソッドを使用するには、いくつかの知識が必要です。 **imapiprop:: copyprops**を使用すると、コピーまたは移動するフォルダーまたはメッセージのプロパティを明示的に指定できる必要があります。 **imapiprop:: CopyTo**を使用すると、すべてのプロパティをコピーまたは移動するのでない限り、除外する必要があるものを明示的に指定する必要があります。 これらのメソッドの詳細については、「 [MAPI プロパティをコピー](copying-mapi-properties.md)する」を参照してください。
   
-コピーまたは移動するプロパティの数は、使用する方法の決定に影響を与えます。 コピーまたは複数のメッセージを移動する場合は、 **IMAPIFolder::CopyMessages**を呼び出します。 代替の選択肢は、フォルダーの**PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)) のプロパティだけをコピーするのには**IMAPIProp::CopyProps**を呼び出すことです。 次の手順では、 **CopyMessages**を使用する方法を示します。 
+コピーまたは移動するプロパティの数は、どのメソッドを使用するかによって決定に影響する場合があります。 複数のメッセージをコピーまたは移動する場合は、 **imapifolder:: copymessages**を呼び出してください。 別の選択肢として、フォルダーの**PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)) プロパティのみをコピーするのには、 **imapiprop:: copyprops**を呼び出すことをお勧めします。 次の手順は、 **copymessages**の使用方法を示しています。 
   
-### <a name="to-copy-or-move-one-or-more-messages"></a>コピーまたは 1 つまたは複数のメッセージを移動するには
+### <a name="to-copy-or-move-one-or-more-messages"></a>1つまたは複数のメッセージをコピーまたは移動するには
   
-1. 元とコピー先のフォルダーの有効なエントリの識別子を検索します。
+1. コピー元とコピー先のフォルダーの有効なエントリ識別子を見つけます。
     
-2. [IMAPISession::OpenEntry](imapisession-openentry.md)または[IMsgStore::OpenEntry](imsgstore-openentry.md)のいずれかを呼び出すと、MAPI_MODIFY フラグを設定して、読み取り/書き込みモードでこれらのフォルダーを開きます。 
+2. これらのフォルダーを読み取り/書き込みモードで開くには、 [imapisession:: openentry](imapisession-openentry.md)または[IMsgStore:: openentry](imsgstore-openentry.md)を呼び出し、MAPI_MODIFY フラグを設定します。 
     
-3. **OpenEntry**から返されたインターフェイス ポインターが**IMAPIFolder**インターフェイス ポインターであることを確認します。 いない場合は、LPMAPIFOLDER 型にキャストします。 
+3. **openentry**から返されるインターフェイスポインターが**imapifolder**インターフェイスポインターであることを確認します。 含まれていない場合は、LPMAPIFOLDER 型にキャストします。 
     
-4. コピーまたは移動する 1 つまたは複数のメッセージを表すエントリの識別子の配列を作成します。 
+4. コピーまたは移動する1つ以上のメッセージを表すエントリ識別子の配列を作成します。 
     
-5. 次のフラグのセットを使用して**IMAPIFolder::CopyMessages**を呼び出します。 
+5. 次のフラグが設定された**copymessages:: imapifolder::** を呼び出します。 
     
-   - 移動操作を実行する場合は、MESSAGE_MOVE です。 
+   - 移動操作を実行する場合は、MESSAGE_MOVE。 
     
-   - MESSAGE_DIALOG とウィンドウのパスは、 _ulUIParam_パラメーターに処理する場合は、進行状況インジケーターを表示するフォルダー。 
+   - MESSAGE_DIALOG を使用して、フォルダーで進行状況インジケーターを表示する場合は、 _uluiparam_パラメーターでウィンドウハンドルを渡します。 
     
-6. 元とコピー先のフォルダーの**IMAPIFolder**のポインターを解放します。 
+6. コピー元とコピー先のフォルダーの**imapifolder**ポインターを解放します。 
     
-別のフォルダーにフォルダーの内容全体をコピーする場合は、元のフォルダーの**IMAPIFolder::CopyFolder**または**IMAPIProp::CopyTo**メソッドを呼び出します。 
+フォルダーの完全なコンテンツを別のフォルダーにコピーする場合は、ソースフォルダーの**imapifolder:: copyfolder**または**imapifolder:: CopyTo**メソッドを呼び出します。 
   
-フォルダーのプロパティの一部をコピーするには、 **IMAPIProp::CopyProps**メソッドを呼び出します。 ほとんどのフォルダーのプロパティをコピーするには、 **IMAPIProp::CopyTo**を呼び出します。 
+いくつかのフォルダーのプロパティをコピーするには、 **imapiprop:: copyprops**メソッドを呼び出します。 フォルダーのプロパティの大部分をコピーするには、 **imapiprop:: CopyTo**を呼び出します。 
   
-たとえば、フォルダーの**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) および**PR_COMMENT** ([PidTagComment](pidtagcomment-canonical-property.md)) のプロパティをコピーする場合は、次のオプションがあります。
+たとえば、フォルダーの**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) および**PR_COMMENT** ([PidTagComment](pidtagcomment-canonical-property.md)) プロパティをコピーする場合は、次のオプションがあります。
   
-- フォルダーのプロパティのすべてをコピーし、新しいフォルダーから不要なエントリを削除するのには**IMAPIFolder::CopyFolder**を呼び出します。 
+- **imapifolder:: copyfolder**を呼び出して、フォルダーのすべてのプロパティをコピーし、不要なものを新しいフォルダーから削除します。 
     
-- **CopyTo**を呼び出すし、すべての**PR_DISPLAY_NAME**と**PR_COMMENT**以外のフォルダーのプロパティを除外します。 
+- **CopyTo**を呼び出して、 **PR_DISPLAY_NAME**と**PR_COMMENT**を除くすべてのフォルダーのプロパティを除外します。 
     
-- **CopyProps**、 **PR_DISPLAY_NAME**と**PR_COMMENT**を含む配列に渡してを呼び出します。 
+- **PR_DISPLAY_NAME**および**PR_COMMENT**を include 配列に渡して、呼び出し**copyprops**を呼び出します。 
     
-この例では、 **CopyProps**に最適な選択肢小さいプロパティのセットをコピーするためにするものですのでを実装する最も簡単な呼び出し。 
+この場合、 **copyprops**は、一連のプロパティをコピーするために使用することを意図したものであり、実装するのに最も簡単な方法であるというのが最良の選択です。 
   
-コピーまたはメッセージを含めずに、フォルダーのプロパティのみを移動、フォルダーの**IMAPIProp::CopyTo**メソッドを呼び出すし、次のプロパティを除外します。 
+フォルダーのプロパティのみをコピーまたは移動するには、メッセージを含めずに、フォルダーの**imapiprop:: CopyTo**メソッドを呼び出し、次のプロパティを除外します。 
   
 - **PR_CONTAINER_CONTENTS**([PidTagContainerContents](pidtagcontainercontents-canonical-property.md))
     
 - **PR_FOLDER_ASSOCIATED_CONTENTS**([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md))
     
-コピー メソッドは S_OK を MAPI_W_PARTIAL_COMPLETION、完全な成功を示す部分的な成功またはエラーを示すを返すことができます。 MAPI_W_PARTIAL_COMPLETION が返された場合より詳細なエラーにアクセスする**HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
+copy メソッドは、S_OK を返すことができ、成功の合計、MAPI_W_PARTIAL_COMPLETION、部分的な成功、またはエラーを示します。 MAPI_W_PARTIAL_COMPLETION が返された場合は、 **HR_FAILED**マクロを使用して、より具体的なエラーにアクセスします。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
   
-両方では、Unicode はサポートされていない別の 1 つのメッセージ ストアからメッセージをコピーする場合は、情報がコード ページ変換が失われることに注意します。 通常かわからないかどうか、メッセージ ・ ストアは、1 つまたは両方の形式をサポートとして ASCII 文字列または Unicode 文字列としてのテキストのプロパティをコピーするかどうかを判断することが不可能になります。 Unicode をサポートする場合は、実行しようと Unicode のコピーです。エラー値 MAPI_E_BAD_CHARWIDTH で失敗した場合、ASCII に頼る。
+メッセージを別のメッセージストアにコピーし、Unicode を両方でサポートしていない場合は、コードページの変換によって情報が失われる可能性があることに注意してください。 通常、メッセージストアが1つまたは両方の形式をサポートしているかどうかを知ることができないため、テキストプロパティを ASCII 文字列としてコピーするか、Unicode 文字列としてコピーするかを決定することはできません。 unicode をサポートしている場合は、unicode コピーを実行してみてください。エラー値 MAPI_E_BAD_CHARWIDTH でエラーが発生した場合は、ASCII にします。
   
 

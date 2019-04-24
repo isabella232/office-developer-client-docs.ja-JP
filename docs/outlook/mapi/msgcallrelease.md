@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 23c08597-41f0-4f48-a63e-79962fa812bc
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e9a1c416cbf992c9cbcfb5de42d302ff16e7f521
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9ffaab1e9cc381be2abfb389f4b72067dca2438b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338564"
 ---
 # <a name="msgcallrelease"></a>MSGCALLRELEASE
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[OpenIMsgOnIStg](openimsgonistg.md)関数を使用してその上に構築された**IMessage**オブジェクトの最終的なリリース後**IStorage**インターフェイスを解放するコールバック関数を定義します。 
+[OpenIMsgOnIStg](openimsgonistg.md)関数を使用して、その上に構築された**IMessage**オブジェクトの最終リリース後に、 **IStorage**インターフェイスを解放できるコールバック関数を定義します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Imessage.h  <br/> |
-|によって実装される関数の定義:  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
-|によって呼び出される関数を定義します。  <br/> |MAPI  <br/> |
+|ヘッダー ファイル:  <br/> |Imessage  <br/> |
+|定義された関数の実装:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|によって呼び出された定義済み関数:  <br/> |MAPI  <br/> |
    
 ```cpp
 typedef void (STDAPICALLTYPE MSGCALLRELEASE)(
@@ -41,13 +41,13 @@ typedef void (STDAPICALLTYPE MSGCALLRELEASE)(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulCallerData_
+ _ulcallerdata_
   
-> [in]**IMessage**インターフェイスの呼び出し元のアプリケーションの情報が含まれています。 
+> 順番**IMessage**インターフェイスに関する通話アプリケーション情報が保存されています。 
     
- _lpMessage_
+ _lpmessage_
   
-> [in]最上位のメッセージおよびリリースされた添付ファイルへのポインター。
+> 順番最上位レベルのメッセージと、解放された添付ファイルへのポインター。
     
 ## <a name="return-value"></a>Return value
 

@@ -1,5 +1,5 @@
 ---
-title: コンテナーの 1 回限りのテーブルの実装
+title: コンテナーの1回限りのテーブルの実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,22 +7,22 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: eabbde74-49a1-4eeb-a01d-67e45ae4b343
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d468943f84f1d23f1b4b84881e69cee0041a5bae
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 72dc73b6ed8519be2d8010544fdd5dc5b7b0f759
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332887"
 ---
-# <a name="implementing-a-container-one-off-table"></a>コンテナーの 1 回限りのテーブルの実装
+# <a name="implementing-a-container-one-off-table"></a>コンテナーの1回限りのテーブルの実装
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-コンテナーの 1 つに属している一時テーブルにアクセスするには、MAPI は**IMAPITable**と**PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) のプロパティを開くには、コンテナーの[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを呼び出します。インタ フェースです。 コンテナーがクライアント アプリケーションでコンテナーに受信者を追加しようとするときに、一時テーブルを取得しようとしています。 コンテナーは、いずれかの受信者を許可している場合、プロバイダー独自のテーブルの実装を返すか、MAPI 実装を取得する[IMAPISupport::GetOneOffTable](imapisupport-getoneofftable.md)を呼び出します。 
+コンテナーの1つに属する1回限りのテーブルにアクセスするために、MAPI はコンテナーの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出して、 **IMAPITable**で**PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) プロパティを開きます。インターフェイス. クライアントアプリケーションがコンテナーに受信者を追加しようとしているときに、コンテナーは、1回限りのテーブルを返すように求められます。 コンテナーで受信者が許可されている場合、プロバイダーは、独自のテーブル実装を返すか、または[imapisupport:: getoneofftable](imapisupport-getoneofftable.md)を呼び出して MAPI 実装を取得できます。 
   
-コンテナーの一時テーブル内のテンプレートのセットは、特定のコンテナーが保持できる受信者の種類を反映します。 通常、1 つまたは 2 つのテンプレート、個々 のメッセージングのユーザーまたは配布リストを作成するためのテンプレートが含まれます。 **PR_DEF_CREATE_MAILUSER** ([PidTagDefCreateMailuser](pidtagdefcreatemailuser-canonical-property.md)) と**PR_DEF_CREATE_DL** ([PidTagDefCreateDl](pidtagdefcreatedl-canonical-property.md)) のプロパティ] では、これらのテンプレートのエントリ id が保持されます。 ただし、コンテナーでは、これらの種類のエントリに限定されるわけではありませんです。 受信者または受信者以外のエントリは、ディレクトリなどの他の種類が格納できます。 
+コンテナーの1回限りのテーブル内の一連のテンプレートは、特定のコンテナーが保持できる受信者の種類を反映している必要があります。 通常、これには1つまたは2つのテンプレート (個々のメッセージングユーザーまたは配布リストを作成するためのテンプレート) が含まれます。 これらのテンプレートのエントリ識別子は、 **PR_DEF_CREATE_MAILUSER** ([PidTagDefCreateMailuser](pidtagdefcreatemailuser-canonical-property.md)) および**PR_DEF_CREATE_DL** ([PidTagDefCreateDl](pidtagdefcreatedl-canonical-property.md)) プロパティに格納されています。 ただし、コンテナーはこれらの種類のエントリに制限されることはありません。 他の種類の受信者またはディレクトリなどの受信者以外のエントリを保持できます。 
   
 

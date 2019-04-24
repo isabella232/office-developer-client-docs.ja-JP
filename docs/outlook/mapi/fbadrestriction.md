@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: 6ad3638c-d088-4a89-9b0d-f5b672162203
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3d729e2a12ee19ee3aa4ded71263697eb739f154
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: eb3e0d5a96121f63166da2025743b7ef89f4ecf6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32340965"
 ---
 # <a name="fbadrestriction"></a>FBadRestriction
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルのビューを制限するために使用制限を検証します。 
+テーブルビューの制限に使用される制限を検証します。 
   
 |||
 |:-----|:-----|
 |ヘッダー ファイル:  <br/> |Mapival.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |サービス プロバイダー  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |サービス プロバイダー  <br/> |
    
 ```cpp
 ULONG FBadRestriction(
@@ -43,20 +43,20 @@ ULONG FBadRestriction(
 
  _lpres_
   
-> [in]検証する制限を定義する[SRestriction](srestriction.md)構造体です。 
+> 順番検証する制限を定義する[srestriction](srestriction.md)構造。 
     
 ## <a name="return-value"></a>戻り値
 
 TRUE 
   
-> 指定した制限、または 1 つ以上の subrestrictions では、が有効ではありません。 
+> 指定した制限または1つ以上のサブ制限が無効です。 
     
 FALSE 
   
-> 指定された制限とそのすべての subrestrictions は、有効です。
+> 指定した制限とそのすべてのサブ制限が有効である。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-制限を確認すると、特定の行、テーブルの行を検索する[IMAPITable::FindRow](imapitable-findrow.md)メソッドおよび[IMAPIContainer](imapicontainerimapiprop.md)のメソッドは、テーブルを制限するのには、 [IMAPITable::Restrict](imapitable-restrict.md)メソッドの呼び出しで渡すことができます。コンテナー オブジェクトの制限を実行するインターフェイスです。 
+制限が検証されたら、 [imapitable:: Restrict](imapitable-restrict.md)メソッドへの呼び出しで、テーブルを特定の行に制限したり、 [imapitable:: FindRow](imapitable-findrow.md)メソッドを使用してテーブルの行を検索したり、 [IMAPIContainer](imapicontainerimapiprop.md)のメソッドに渡したりすることができます。container オブジェクトに対する制限を実行するインターフェイス。 
   
 

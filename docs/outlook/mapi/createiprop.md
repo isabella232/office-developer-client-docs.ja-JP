@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 9bf68814-2564-433d-b762-3d2c83ca3c60
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8d6eb011e65ad44f4183eb5821697dcf2508032c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e318d7a709a09e67ebf423db0263985523d2fc28
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32333034"
 ---
 # <a name="createiprop"></a>CreateIProp
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロパティのデータ オブジェクトは、 [IPropData](ipropdataimapiprop.md)オブジェクトを作成します。 
+プロパティデータオブジェクト ( [ipropdata](ipropdataimapiprop.md)オブジェクト) を作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 SCODE CreateIProp(
@@ -46,31 +46,31 @@ SCODE CreateIProp(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpInterface_
+ _lpinterface_
   
-> [in]インターフェイス識別子 (IID) のプロパティのデータ オブジェクトへのポインター。 有効なインタ フェース識別子は、IID_IMAPIPropData です。 プロパティのデータ オブジェクトの標準的なインターフェイスにキャストするのには_lppPropData_パラメーターで返されるプロパティのデータ オブジェクトは、 _lpInterface_パラメーターに NULL を渡すことも。 
+> 順番プロパティデータオブジェクトのインターフェイス識別子 (IID) へのポインター。 有効なインターフェイス識別子は IID_IMAPIPropData です。 _lpinterface_パラメーターで NULL を渡すと、 _lpppropdata_パラメーターで返される property data オブジェクトが、プロパティデータオブジェクトの標準インターフェイスにキャストされることもあります。 
     
  _lpAllocateBuffer_
   
-> [in]メモリの割り当てに使用する[MAPIAllocateBuffer](mapiallocatebuffer.md)関数へのポインター。 
+> 順番メモリの割り当てに使用される[MAPIAllocateBuffer](mapiallocatebuffer.md)関数へのポインター。 
     
  _lpAllocateMore_
   
-> [in]追加メモリの割り当てに使用する[MAPIAllocateMore](mapiallocatemore.md)関数へのポインター。 
+> 順番追加のメモリを割り当てるために使用される[MAPIAllocateMore](mapiallocatemore.md)関数へのポインター。 
     
- _lpFreeBuffer_
+ _lpfreebuffer_
   
-> [in]メモリを解放するために使用する、 [MAPIFreeBuffer](mapifreebuffer.md)関数へのポインター。 
+> 順番メモリを解放するために使用される[MAPIFreeBuffer](mapifreebuffer.md)関数へのポインター。 
     
- _lpvReserved_
+ _lpvreserved_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B 
     
- _lppPropData_
+ _lpppropdata_
   
-> [out]返されるプロパティのデータ オブジェクトへのポインターへのポインター。
+> 読み上げ返されたプロパティデータオブジェクトへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -78,10 +78,10 @@ S_OK
     
 MAPI_E_INTERFACE_NOT_SUPPORTED 
   
-> このオブジェクトには、要求されたインターフェイスはサポートされていません。
+> 要求されたインターフェイスは、このオブジェクトではサポートされていません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-_LpAllocateBuffer_、 _lpAllocateMore_、および_lpFreeBuffer_の入力パラメーターは、それぞれ[MAPIAllocateBuffer](mapiallocatebuffer.md)、 [MAPIAllocateMore](mapiallocatemore.md)、および[MAPIFreeBuffer](mapifreebuffer.md)関数では、] をポイントします。 **CreateIProp**を呼び出すクライアント アプリケーションが MAPI の関数を同じ名前でポインターを渡しますサービス プロバイダーは、これらの関数は、初期化の呼び出しで受信した、 [IMAPISupport::GetMemAllocRoutines](imapisupport-getmemallocroutines.md)メソッドの呼び出しで取得したポインターを渡します。 
+_lpAllocateBuffer_、 _lpAllocateMore_、および_lpfreebuffer_の入力パラメーターは、それぞれ、 [MAPIAllocateBuffer](mapiallocatebuffer.md)、 [MAPIAllocateMore](mapiallocatemore.md)、および[MAPIFreeBuffer](mapifreebuffer.md)関数を指しています。 **createiprop**を呼び出すクライアントアプリケーションは、という名前の MAPI 関数へのポインターをパスに渡します。サービスプロバイダーは、初期化呼び出しで受け取った、または[imapiallocルーチン](imapisupport-getmemallocroutines.md)メソッドへの呼び出しによって取得したこれらの関数へのポインターを渡します。 
   
 

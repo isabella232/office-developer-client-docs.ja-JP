@@ -9,38 +9,38 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: cf15b879-a47e-a5a5-bfdd-1d7ea423742f
 description: ショートカット メニューまたはアクション タグ メニューで、項目の横に表示されるアイコンを指定します。
-ms.openlocfilehash: 29ff71bc04e94f97f1526b28bd52c2846327eff1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7ee9c4e7e857acb34ce75429aa0aaf679320b0e8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337549"
 ---
-# <a name="buttonface-cell-actions-section"></a>[ButtonFace] セル ([操作] セクション)
+# <a name="buttonface-cell-actions-section"></a>[ButtonFace] セル ([Actions] セクション)
 
 ショートカット メニューまたはアクション タグ メニューで、項目の横に表示されるアイコンを指定します。
   
 > [!NOTE]
 > Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 [ButtonFace] セルに含まれる文字列は Microsoft Office のボタン イメージの ID を表します。値ゼロ (0) または空白は、アイコンが表示されないことを示します。 
   
-ButtonFace] セルに使用できる Id は、 **CommandBarButton**オブジェクトの**FaceID**プロパティで使用される Id と同じです。 これらの Id の詳細については、MSDN の「コマンド バー ボタンのイメージを使用する」を検索してください。 
+[ButtonFace] セルに使用される ID は、 **CommandBarButton ** オブジェクトの  **FaceID ** プロパティで使用される ID と同じです。 これらの id の詳細については、MSDN の「コマンドバーボタンイメージを使用する」を検索してください。 
   
 別の数式から、または **CellsU** プロパティを使用してプログラムから、名前によって [ButtonFace] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |**アクション**です。  *名*です。 **ButtonFace**で**動作**します。  *アクション行の名前します。*  <br/> |
+|セル名:  <br/> |**アクション**。  *名前*です。 **アクション**を実行する**buttonface** 。  *name*は、actions 行の名前です。  <br/> |
    
 プログラムから、インデックスによって [ButtonFace] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionAction** <br/> |
-|行インデックス:  <br/> |**visRowAction** +  *i* 、 **i** = 0, 1, 2.  <br/> |
+|行インデックス:  <br/> |**visRowAction** +  *i* = **** 0、1、2...  <br/> |
 |セル インデックス:  <br/> |**visActionButtonFace** <br/> |
    
 

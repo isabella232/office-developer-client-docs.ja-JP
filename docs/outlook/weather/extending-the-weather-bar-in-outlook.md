@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 3b355b98-dd7d-4f16-8257-367e5dd61b34
 description: Outlook 2013 で天気予報バー用サードパーティの天気予報 Web サービスをプラグインとして指定して、ユーザーの選択する場所の天気予報データを提供する方法について説明します。
 ms.openlocfilehash: 0423e149306bf7562dd525f1b7460a63cbace372
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336577"
 ---
 # <a name="extending-the-weather-bar-in-outlook"></a>Outlook の天気予報バーの拡張
 
@@ -80,9 +80,9 @@ Outlook の天気予報バーには、地理上の場所における気象情報
   
 |||
 |:-----|:-----|
-|**キー** <br/> |HKCU\Software\Microsoft\Office\15.0\Outlook\Options\Calendar  <br/> |
+|**Key** <br/> |HKCU\Software\Microsoft\Office\15.0\Outlook\Options\Calendar  <br/> |
 |**値の名前** <br/> |**WeatherServiceUrl** <br/> |
-|**値の型** <br/> |REG_SZ  <br/> |
+|**値の種類** <br/> |REG_SZ  <br/> |
 |**既定値** <br/> |EMPTY_STRING  <br/> |
 |**説明** <br/> |天気予報データ サービスの URL  <br/> |
    
@@ -99,10 +99,10 @@ Outlook の天気予報バーには、地理上の場所における気象情報
   
 |||
 |:-----|:-----|
-|**キー** <br/> |HKCU\Software\Microsoft\Office\15.0\Outlook\Options\Calendar  <br/> |
+|**Key** <br/> |HKCU\Software\Microsoft\Office\15.0\Outlook\Options\Calendar  <br/> |
 |**値の名前** <br/> |**DisableWeather** <br/> |
 |**値の型** <br/> |REG_DWORD  <br/> |
-|**既定値** <br/> |0  <br/> |
+|**既定値** <br/> |.0  <br/> |
 |**説明** <br/> |値 0 の場合、天気予報バーが有効になります。それ以外の値の場合、天気予報バーは無効になります。  <br/> |
    
 天気予報バー機能がグループ ポリシーによってオフにされている場合、[ **予定表**] タブに [ **予定表に天気予報を表示する**] チェック ボックスは表示されません。この機能を再びオンにする場合は、管理者にお問い合わせください。 
@@ -120,7 +120,7 @@ Office がインターネットに接続可能であることを確認してく�
 |**キー** <br/> |HKCU\Software\Microsoft\Office\15.0\Common\Internet  <br/> |
 |**値の名前** <br/> |**UseOnlineContent** <br/> |
 |**値の型** <br/> |REG_DWORD  <br/> |
-|**既定値** <br/> |2  <br/> |
+|**既定値** <br/> |pbm-2  <br/> |
 |**説明** <br/> |値 2 の場合、天気予報バーが有効になります。それ以外の値の場合、天気予報バーは無効になります。  <br/> |
    
 天気予報バー機能がグループ ポリシーによってオフにされている場合、[ **予定表**] タブに [ **予定表に天気予報を表示する**] チェック ボックスは表示されません。この機能を再びオンにする場合は、管理者にお問い合わせください。 
@@ -208,7 +208,7 @@ Contoso Weather は、以下の XML を応答として返すことにより、�
 
 Outlook は既定で MSN Weather を使用することになっていますが、ユーザーが天気予報バーをカスタマイズして別の天気予報サービスを使用するようにした後、再び MSN Weather を使用する場合、ユーザーは、単に Windows レジストリの **WeatherServiceUrl** キーを削除することができます。このレジストリ キーを削除すると、Outlook がリセットされ、MSN Weather が使用されるようになります。 
   
-## <a name="conclusion"></a>終わりに
+## <a name="conclusion"></a>まとめ
 <a name="ol15_weatherbar_conclusion"> </a>
 
 Outlook 予定表の天気予報バーでは、指定された場所の天気予報を提供するため、既定値として MSN Weather が使用されます。ユーザーは、指定した場所の天気予報情報を表示できます。また、Outlook Weather Location XML Schema および Outlook Weather Information XML Schema をサポートし、Outlook とのシンプルな Web サービス プロトコルに準拠することにより、天気予報バーにサードパーティ天気予報データ サービスを統合することもできます。

@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: 6058c78b-05d4-45a3-988c-1fbf8322125e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e0797364eb4ec24793f64bad2f4d838507c236e4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a8fa683fecd59ec813fee0c15d5b4f08084c645d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338312"
 ---
 # <a name="dtblbutton"></a>DTBLBUTTON
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ディスプレイ テーブルから作成されたダイアログ ボックスのボタン コントロールに関する情報が含まれています。
+表示テーブルから作成されたダイアログボックスのボタンコントロールに関する情報を格納します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
 |関連するマクロ:  <br/> |[SizedDtblButton](sizeddtblbutton.md) <br/> |
    
 ```cpp
@@ -44,31 +44,31 @@ typedef struct _DTBLBUTTON
 
 ## <a name="members"></a>Members
 
- **ulbLpszLabel**
+ **ulblpszlabel**
   
-> ボタンに表示される文字の文字列のメモリ内の位置。
+> ボタンに表示される文字列のメモリ内での位置を指定します。
     
  **ulFlags**
   
-> **UlbLpszLabel**メンバーで指定されたラベルの書式を指定するために使用するフラグのビットマスクです。 次のフラグを設定することができます。 
+> **ulblpszlabel**メンバーが指すラベルの形式を指定するために使用されるフラグのビットマスク。 次のフラグを設定できます。 
     
 MAPI_UNICODE 
   
-> ラベルは、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式のラベルです。
+> ラベルは Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、ラベルは ANSI 形式になります。
     
- **ulPRControl**
+ **ulprcontrol**
   
-> PT_OBJECT [IMAPIControl](imapicontroliunknown.md)インターフェイスを実装する種類のプロパティのプロパティ タグです。 ボタンをクリックすると、MAPI は、このプロパティを取得するために表示された表の[IMAPIProp](imapipropiunknown.md)の実装の[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを呼び出します。 
+> [IMAPIControl](imapicontroliunknown.md)インターフェイスを実装する PT_OBJECT 型のプロパティのプロパティタグ。 ボタンがクリックされると、MAPI は、表示テーブルの[imapiprop](imapipropiunknown.md)実装に対して[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出し、このプロパティを取得します。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-ボタン コントロールを記述する**DTBLBUTTON**構造体をクリックすると、操作を開始するユーザーに許可します。 通常、ボタンをクリックすると、表示されるモーダル ダイアログ ボックスまたはプログラムのタスクが呼び出されます。 サービス プロバイダーには、ボタン コントロールで何かを実装できます。 ボタンは、他のコントロールの値に基づいてタスクを実行することになって場合、それらのコントロールが、DT_SET_IMMEDIATE フラグを設定した必要があります。 
+**dtblbutton**構造体は、ボタンをクリックすると、ユーザーが操作を開始できるようにするコントロールを記述します。 通常、ボタンをクリックすると、モーダルダイアログボックスが表示されるか、プログラムによってタスクが呼び出されます。 サービスプロバイダーは、ボタンコントロールを使用して任意のものを実装できます。 他のコントロールの値に基づいてタスクを実行するようにボタンが設定されている場合、これらのコントロールでは DT_SET_IMMEDIATE フラグが設定されている必要があります。 
   
-**UlbLpszLabel**メンバーは、ボタンに表示される文字の文字列のメモリ内の位置です。 サービス プロバイダーは、アンパサンド文字を追加できます (&amp;) ボタンのラベルのウィンドウのアクセラレータを指定します。 アクセラレータ キーを押すとボタンをクリックすると同じ効果を持ちます。 
+**ulblpszlabel**メンバーは、ボタンに表示される文字列のメモリ内の位置を示します。 サービスプロバイダーは、ボタンのラベルで&amp;Windows accelerator を示すために、アンパサンド文字 () を追加することができます。 アクセラレータキーを押すと、ボタンをクリックした場合と同じ結果になります。 
   
-**UlPRControl**メンバーは、オブジェクトのプロパティを記述する、 **IMAPIProp::OpenProperty**メソッドを使用する開くと、コントロール オブジェクトへのポインターを返します。 **IMAPIControl**インターフェイスをサポートするコントロール オブジェクトを実装するは、MAPI 機能を拡張し、ボタンがクリックされたときに発生するタスクまたは操作を定義する方法です。 **IMAPIControl**ボタンを操作するための 2 つの方法を提供する: ボタンとボタンのクリックを処理するために[アクティブ化](imapicontrol-activate.md)を有効または無効にするのには、 [GetState](imapicontrol-getstate.md) 。 
+**ulprcontrol**メンバーは、 **imapiprop:: openproperty**メソッドを使用して開かれたときに、コントロールオブジェクトへのポインターを取得するオブジェクトのプロパティを記述します。 **IMAPIControl**インターフェイスをサポートする control オブジェクトを実装することは、MAPI 機能セットを拡張し、ボタンがクリックされたときに実行する操作またはタスクを定義する方法です。 **IMAPIControl**では、ボタンを有効または無効にするための 2 [](imapicontrol-activate.md)つのメソッドと、ボタンのクリックを処理するための[GetState](imapicontrol-getstate.md)を提供します。 
   
-テーブルの表示の概要については、[テーブルの表示](display-tables.md)を参照してください。 表示テーブルを実装する方法の詳細については、[表示テーブルを実装する](display-table-implementation.md)を参照してください。
+表示テーブルの概要については、「[テーブルの表示](display-tables.md)」を参照してください。 表示テーブルを実装する方法については、「[表示テーブルを実装](display-table-implementation.md)する」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

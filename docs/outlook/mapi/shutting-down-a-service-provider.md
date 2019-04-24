@@ -1,5 +1,5 @@
 ---
-title: サービス プロバイダーのシャットダウン
+title: サービスプロバイダーのシャットダウン
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -9,67 +9,67 @@ api_type:
 ms.assetid: e518830b-0aaa-4ce4-a85a-07e4f00750a9
 description: '�ŏI�X�V��: 2015�N12��7��'
 ms.openlocfilehash: 4e25dad1e04927e10af38cdfbf8f30c9bd04234b
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339208"
 ---
-# <a name="shutting-down-a-service-provider"></a>サービス プロバイダーのシャットダウン
+# <a name="shutting-down-a-service-provider"></a>サービスプロバイダーのシャットダウン
 
  
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアントがセッションを終了し、すべてのアクティブなサービス プロバイダーをシャット ダウンするには、 [IMAPISession::Logoff](imapisession-logoff.md)メソッドを呼び出すと、MAPI は順に次メソッドを呼び出します。 
+クライアントが[imapisession:: Logoff](imapisession-logoff.md)メソッドを呼び出してセッションを終了し、すべてのアクティブなサービスプロバイダーをシャットダウンすると、次のメソッドが呼び出されます。 
   
-- アドレス帳プロバイダーの[IABLogon::Logoff](iablogon-logoff.md)にします。 
+- [IABLogon:: ログオフ](iablogon-logoff.md)アドレス帳プロバイダー。 
     
-- メッセージ ストア プロバイダーの[IMSLogon::Logoff](imslogon-logoff.md)にします。 
+- [IMSLogon:: ログオフ](imslogon-logoff.md)するメッセージストアプロバイダー。 
     
-- トランスポート プロバイダーの[IXPLogon::TransportLogoff](ixplogon-transportlogoff.md)にします。 
+- [IXPLogon::](ixplogon-transportlogoff.md)トランスポートプロバイダーの transportlogoff。 
     
-これらのメソッドでは、ような実装があります。 ログオフ メソッドを実行する主要なタスクは次のとおりです。
+これらのメソッドには、同様の実装があります。 logoff メソッドが実行する主要なタスクは次のとおりです。
   
-- すべてのサブオブジェクトを含め、開いているオブジェクトと状態オブジェクトを解放します。
+- サブオブジェクトおよびステータスオブジェクトを含む、開いているオブジェクトをすべて解放します。
     
-- メソッド サポート オブジェクトの[リ ス](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx)の参照カウントをデクリメントします。 
+- サポートオブジェクトの[IUnknown:: Release](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx)メソッドを呼び出して、参照カウントをデクリメントします。 
     
-- プロバイダーの登録済みの[MAPIUID](mapiuid.md)構造体のすべてを削除しています。 
+- プロバイダーの登録済みの[MAPIUID](mapiuid.md)構造体をすべて削除します。 
     
-- ステータスの表に、プロバイダーの行を削除しています。
+- 状態テーブルのプロバイダーの行を削除します。
     
-- 次のように、リソースのクリーンアップに関連するすべてのタスクを実行するには。
+- リソースのクリーンアップに関連するすべてのタスクを実行します。たとえば、次のようになります。
     
-  - リモート サーバーとの接続を終了しています。
+  - リモートサーバーとの接続を終了します。
     
-  - ログオン オブジェクトの参照をデクリメントする操作をカウントします。
+  - ログオンオブジェクトの参照カウントをデクリメントします。
     
-  - ログオン オブジェクトをプロバイダーが格納されているログオン オブジェクトの一覧から削除しています。
+  - プロバイダーが格納するログオンオブジェクトの一覧から、ログオンオブジェクトを削除します。
     
-  - デバッグ モードでのメモリをリークしているオブジェクトを検索するのにはトレースを発行します。
+  - デバッグモードで、リークしたメモリがあるオブジェクトを検索するためのトレースを発行します。
     
-ログオフ メソッドから制御が戻るとき、MAPI が次に呼び出されます。
+logoff メソッドが戻ると、MAPI は次のように呼び出します。
   
-- ログオン オブジェクトの**リ ス**の方法です。 
+- ログオンオブジェクトの**IUnknown:: Release**メソッド。 
     
-- プロバイダー オブジェクトの最終的なクリーンアップ タスクを実行するのにはメソッドを**シャット ダウン**します。 、プロバイダーの種類によって次の方法のいずれかが呼び出されます。 
+- 最終的なクリーンアップタスクを実行するには、プロバイダーオブジェクトの**Shutdown**メソッドを使用します。 プロバイダーの種類に応じて、次のいずれかのメソッドが呼び出されます。 
     
-  - アドレス帳プロバイダーの[IABProvider::Shutdown](iabprovider-shutdown.md) 
+  - [IABProvider::](iabprovider-shutdown.md)アドレス帳プロバイダーのシャットダウン 
     
-  - メッセージ ストア プロバイダーの[IMSProvider::Shutdown](imsprovider-shutdown.md) 
+  - [IMSProvider::](imsprovider-shutdown.md)メッセージストアプロバイダーのシャットダウン 
     
-  - トランスポート プロバイダーの[IXPProvider::Shutdown](ixpprovider-shutdown.md) 
+  - [ixpprovider:: Shutdown](ixpprovider-shutdown.md) for transport providers 
     
-- プロバイダー オブジェクトの**リ ス**の方法です。 
+- プロバイダーオブジェクトの**IUnknown:: Release**メソッド。 
     
-プロバイダーがメッセージ ・ ストアの場合は、 [IMsgStore::StoreLogoff](imsgstore-storelogoff.md)へのクライアント呼び出しがシャット ダウン処理を開始してもできます。 **StoreLogoff**は、1 つの特定のメッセージ ストア プロバイダーをシャット ダウンし、セッションに影響を与えません。 メッセージ ストア プロバイダーだけをこの方法でシャット ダウンをできます。特定のアドレス帳またはトランスポート プロバイダーをシャット ダウンする明示的な方法はありません。 の**StoreLogoff**に応答する方法についての情報を呼び出して、[シャット ダウン、メッセージ ストア プロバイダー](shutting-down-a-message-store-provider.md)を参照してください。
+プロバイダーがメッセージストアの場合、 [IMsgStore:: storelogoff](imsgstore-storelogoff.md)へのクライアント呼び出しでも、シャットダウンプロセスが開始されます。 **storelogoff**は、1つの特定のメッセージストアプロバイダーをシャットダウンし、セッションには影響を与えません。 このメソッドを使用すると、メッセージストアプロバイダーのみをシャットダウンできます。特定のアドレス帳またはトランスポートプロバイダーをシャットダウンする明示的な方法はありません。 **storelogoff**呼び出しに応答する方法については、「[メッセージストアプロバイダーのシャットダウン](shutting-down-a-message-store-provider.md)」を参照してください。
   
-MAPI は、Win32 API 関数**終わった**が、最後のアクティブなクライアントが[MAPIUninitialize](mapiuninitialize.md)を呼び出した後に行われた呼び出しを呼び出すと、プロバイダーの DLL がアンロードされるされます。 この時点で、シャット ダウン、サービス ・ プロバイダーが完了しましたが。 
+MAPI が Win32 API 関数**FreeLibrary**を呼び出すときに、プロバイダーの DLL がアンロードされます。最後にアクティブなクライアントが[MAPIUninitialize](mapiuninitialize.md)を呼び出した後で行われます。 この時点で、サービスプロバイダーはシャットダウンを終了しています。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI サービス プロバイダー](mapi-service-providers.md)
+[MAPI サービスプロバイダー](mapi-service-providers.md)
 

@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: fffbefd6-8b0b-0023-6b03-026d1c6e885e
 description: 1-D 図形を別の図形に接着するときに静的接着 (点から点) と動的接着 (図形から図形) のどちらを使用するかを指定します。
-ms.openlocfilehash: 162827521cda6fe4a37d17a8f7d36d7a36718519
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ae4eddf17c6e7b5e56cb3397f03d0721d965c9b7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339516"
 ---
-# <a name="gluetype-cell-glue-info-section"></a>[GlueType] セル ([接着情報] セクション)
+# <a name="gluetype-cell-glue-info-section"></a>[GlueType] セル ([Glue Info] セクション)
 
 1-D 図形を別の図形に接着するときに静的接着 (点から点) と動的接着 (図形から図形) のどちらを使用するかを指定します。
   
@@ -25,10 +25,10 @@ ms.locfileid: "19805481"
 | &amp;H0  <br/> | 既定値です。動的コネクタの場合にだけ動的接着を使用します。それ以外の場合は静的接着を使用します。  <br/> |**visGlueTypeDefault** <br/> |
 | &amp;H1  <br/> | 動的接着を使用します。  <br/> | Visio 2002 で廃止されました。  <br/> |
 | &amp;H2  <br/> | 動的接着を使用します。  <br/> |**visGlueTypeWalking** <br/> |
-| &amp;H4  <br/> | 動的接着を使用しません。  <br/> |**作成** <br/> |
+| &amp;H4  <br/> | 動的接着を使用しません。  <br/> |**visGlueTypeNoWalking** <br/> |
 | &amp;H8  <br/> | この 2-D 図形に対しては、動的接着による接続はできません。  <br/> |**visGlueTypeNoWalkingTo** <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 このセルの値が 1、2、または 3 の場合、次の操作のいずれかが行われたときに動的接着が使用されます。
   
@@ -44,7 +44,7 @@ ms.locfileid: "19805481"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [Gluetype]  <br/> |
+| セル名:  <br/> | [gluetype]  <br/> |
    
 プログラムから、インデックスによって [GlueType] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

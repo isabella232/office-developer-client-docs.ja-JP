@@ -8,23 +8,23 @@ f1_keywords:
 - Vis_DSS.chm585
 localization_priority: Normal
 ms.assetid: 16b0e293-eeef-34b4-aeb0-4472815dd543
-description: 図形の線の太さを指定します。線の太さを設定するには、有効な単位を使用して数値を入力します。
-ms.openlocfilehash: a5207607d90ef6a79dcb3acc191521b73e2cdf54
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 図形の線の太さを指定します。 線の太さを設定するには、有効な単位を使用して数値を入力します。
+ms.openlocfilehash: 654a93f939226bedab2e40ab591dad0e3f872267
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341812"
 ---
-# <a name="lineweight-cell-line-format-section"></a>[LineWeight] セル ([線の書式設定] セクション)
+# <a name="lineweight-cell-line-format-section"></a>[LineWeight] セル ([Line Format] セクション)
 
-図形の線の太さを指定します。線の太さを設定するには、有効な単位を使用して数値を入力します。
+図形の線の太さを指定します。 線の太さを設定するには、有効な単位を使用して数値を入力します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 LineWeight の値は、[**線**] ダイアログ ボックスで設定することもできます (このダイアログ ボックスを表示するには、[**ホーム**] タブの [**図形**] で、[**線**] をクリックし、[**太さ**] をポイントして、[**その他の線**] をクリックします)。
   
-**Visio のオプション**] ダイアログ ボックスで指定したテキストの長さの単位を使用する測定単位を入力しない場合 (、[**ファイル**] タブをクリックし、[**オプション**] をクリック) します。 線の太さは、図面の縮尺に依存しません。 図面縮尺を変更して、線の太さは変わりません。 
+単位が入力されていない場合は、[ **Visio のオプション**] ダイアログボックスで指定されたテキストの測定単位を使用します ([**ファイル**] タブをクリックし、[**オプション**] をクリックします)。 線の太さは、図面の縮尺による影響を受けません。 図面の縮尺を変更しても、線の太さは変わりません。 
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LineWeight] セルへの参照を取得するには、次の値を使用します。 
   

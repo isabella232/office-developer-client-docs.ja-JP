@@ -1,5 +1,5 @@
 ---
-title: サーバー フォルダーのサイズ プロパティを表示する
+title: サーバーフォルダーのサイズプロパティを表示する
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,49 +12,49 @@ api_type:
 - COM
 ms.assetid: 38429fdb-be93-213a-a780-80f9837f55fa
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f1ec10bde39f853a80540b48216478edc4e41f12
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 85a8b5216eac1dd4e4cebd1313cb31c9b5d70227
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337080"
 ---
-# <a name="display-server-folder-sizes-property"></a>サーバー フォルダーのサイズ プロパティを表示する
+# <a name="display-server-folder-sizes-property"></a>サーバーフォルダーのサイズプロパティを表示する
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-Outlook の **[フォルダー サイズ**] ダイアログ ボックスでサーバー上の指定したフォルダーのサイズを表示します。 
+サーバー上の指定されたフォルダーのサイズが [Outlook**フォルダーサイズ**] ダイアログボックスに表示されます。 
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|公開されます。  <br/> |[IMsgStore: IMAPIProp](imsgstoreimapiprop.md)オブジェクト  <br/> |
-|によって作成されます。  <br/> |ストア プロバイダー  <br/> |
-|によってアクセスします。  <br/> |Outlook およびその他のクライアント  <br/> |
+|公開:  <br/> |[IMsgStore: imapiprop](imsgstoreimapiprop.md)オブジェクト  <br/> |
+|作成者:  <br/> |ストアプロバイダー  <br/> |
+|アクセス先:  <br/> |Outlook およびその他のクライアント  <br/> |
 |プロパティの種類:  <br/> |PT_BOOLEAN  <br/> |
-|アクセスの種類:  <br/> |値の取得および設定が可能です。  <br/> |
+|アクセスの種類:  <br/> |読み取り/書き込み  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-ストア機能を提供するストア プロバイダーを実装する必要があります[IMAPIProp: IUnknown](imapipropiunknown.md) 、 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)の呼び出しに渡されたこれらのプロパティのいずれかのプロパティの有効なタグを返すとします。 これらのプロパティのいずれかのプロパティ タグが[IMAPIProp::GetProps](imapiprop-getprops.md)に渡されると、ストア プロバイダーを使用、正しいプロパティ値を返す必要があります。 ストア プロバイダーには、取得、またはこれらのプロパティを設定するには、 [HrGetOneProp](hrgetoneprop.md)と[HrSetOneProp](hrsetoneprop.md)を呼び出すことができます。 
+ストアの機能を提供するには、ストアプロバイダーが[imapiprop: IUnknown](imapipropiunknown.md)を実装し、 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)呼び出しに渡されるこれらのプロパティに対して有効なプロパティタグを返す必要があります。 これらのプロパティのいずれかのプロパティタグが[imapiprop:: GetProps](imapiprop-getprops.md)に渡されると、ストアプロバイダーは、適切なプロパティ値を返す必要があります。 ストアプロバイダーは、 [hrgetoneprop](hrgetoneprop.md)および[hrgetoneprop](hrsetoneprop.md)を呼び出して、これらのプロパティを取得または設定できます。 
   
-このプロパティの値を取得するには、クライアントはまず[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)を使用して、プロパティ タグを取得して、値を取得する[IMAPIProp::GetProps](imapiprop-getprops.md)でこのプロパティのタグを指定する必要があります。 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)を呼び出すときは、 _lppPropNames_の入力パラメーターで示される[MAPINAMEID](mapinameid.md)構造体の次の値を指定します。
+このプロパティの値を取得するには、クライアントはまず[imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)を使用してプロパティタグを取得し、次に[imapiprop:: GetProps](imapiprop-getprops.md)でこのプロパティタグを指定して値を取得する必要があります。 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)を呼び出す場合は、入力パラメーター _lpppropnames_でポイントされている[mapinameid](mapinameid.md)構造に次の値を指定します。
   
 |||
 |:-----|:-----|
-|lpGuid。  <br/> |PS_PUBLIC_STRINGS  <br/> |
-|ulKind。  <br/> |MNID_STRING  <br/> |
-|Kind.lpwstrName。  <br/> |L"urn: スキーマ-マイクロソフト-com:office:outlook #serverfoldersizes」  <br/> |
+|lpguid:  <br/> |PS_PUBLIC_STRINGS  <br/> |
+|ulkind:  <br/> |MNID_STRING  <br/> |
+|種類が lpwstrname:  <br/> |L "urn: スキーマ-microsoft-com: office: outlook # serverfoldersizes"  <br/> |
    
-Microsoft Outlook 2003 Service Pack (SP) 1年では、このプロパティがサポートされています。 Outlook のバージョンが Outlook 2003 SP 1 より前の場合、またはその値が**false**の場合は、ローカル ストアにフォルダーのサイズのみが表示されます。 このプロパティは、Outlook 2003 SP 1 を使用するストアに設定されている場合、Outlook は、サーバーとローカル ドライブに指定した各フォルダーのサイズを照会します。 
+このプロパティは、Microsoft Outlook 2003 Service Pack (SP) 1 でサポートされています。 outlook のバージョンが outlook 2003 SP 1 より前の場合、またはその値が**false**の場合、outlook はローカルストア上のフォルダーのサイズのみを表示します。 outlook 2003 SP 1 を使用するストアにこのプロパティが設定されている場合、outlook はサーバー上の指定された各フォルダーとローカルドライブのサイズを照会します。 
   
-クエリを実行するサーバー上のフォルダーのサイズの Outlook フォルダーを開くと、ストアで[IMsgStore::OpenEntry](imsgstore-openentry.md)、 **MAPI_NO_CACHE**、このフラグを渡すと、 **PR_MESSAGE_SIZE_EXTENDED**を照会し、. ストア プロバイダーは、サーバー上でフォルダーのサイズを返す必要があります。
+サーバー上のフォルダーサイズを照会するには、Outlook は[IMsgStore:: openentry](imsgstore-openentry.md)を使用してストアのフォルダーを開き、フラグ**MAPI_NO_CACHE**を渡してから、 **PR_MESSAGE_SIZE_EXTENDED**に対するクエリを実行します。 その後、ストアプロバイダーは、サーバー上のフォルダーサイズを返す必要があります。
   
-クエリを実行するローカル ドライブ上のフォルダーのサイズは、Outlook は、 **MAPI_NO_CACHE**フラグを設定しない] フォルダーを開きます。 それに基づいて、クエリの**PR_MESSAGE_SIZE_EXTENDED**です。ストア プロバイダーは、ローカル ドライブ上の指定したフォルダーのサイズを返す必要があります。
+ローカルドライブのフォルダーのサイズを照会するには、 **MAPI_NO_CACHE**フラグを指定せずにフォルダーを開きます。 その後、 **PR_MESSAGE_SIZE_EXTENDED**に対するクエリを行います。ストアプロバイダーは、ローカルドライブ上の指定されたフォルダーのサイズを返す必要があります。
   
-このプロパティを設定するストア プロバイダーをサーバーにストアの内容を同期は、Outlook の **[フォルダー サイズ**] ダイアログ ボックスでサーバーにフォルダーのサイズのデータを表示できます。 ユーザーは、現在のサーバー ストレージ使用状況とサーバーのクォータを比較し、ことができます。 
+このプロパティセットを使用すると、ストアのコンテンツをサーバーに同期するストアプロバイダーは、Outlook の [**フォルダーサイズ**] ダイアログボックスで、サーバー上のフォルダーサイズデータを表示できます。 その後、ユーザーは現在のサーバー記憶域の使用状況をサーバークォータと比較できます。 
   
 

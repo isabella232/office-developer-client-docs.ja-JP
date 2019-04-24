@@ -7,44 +7,44 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 144c7179-b390-479f-a2aa-324974f04eba
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a4245b5dd1b70d4cf695190c65b447cf92566ef7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 9151b76f74dead5cac771dbdc091bbee03359aec
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339727"
 ---
 # <a name="selecting-a-receive-folder"></a>受信フォルダーの選択
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-受信フォルダーは、特定クラスの着信メッセージを配置する場所です。 IPM と関連するレポート メッセージは、MAPI では、既定のフォルダーを受信するように、[受信トレイ] が割り当てられます。 IPC および関連するレポート メッセージは、MAPI では、既定のフォルダーを受信するようにメッセージ ・ ストアのルート フォルダーが割り当てられます。 これらの割り当てを変更したり、他のメッセージ クラスの追加の割り当てを確認できます。 行う明示的な受信フォルダーの割り当て、クライアントでサポートされているクラスは、省略可能なメッセージです。
+受信フォルダーには、特定のクラスの受信メッセージが配置されます。 IPM および関連するレポートメッセージの場合、MAPI は既定の受信フォルダーとして受信トレイを割り当てます。 IPC および関連するレポートメッセージの場合、MAPI はメッセージストアのルートフォルダーを既定の受信フォルダーとして割り当てます。 その他のメッセージクラスについては、これらの割り当てを変更したり、追加の割り当てを行ったりすることができます。 クライアントでサポートされているメッセージクラスに対して明示的な受信フォルダーの割り当てを行うことはオプションです。
   
-受信のメッセージ クラスは、割り当てられている受信フォルダーを持たない場合、メッセージ ストア プロバイダーは自動的に着信クラスの使用可能な最長のプレフィックスと一致するクラスの受信フォルダーを使用します。 たとえば、次のように、クライアントにはメッセージ クラス IPM の場合です。Note.MyDocument とのみが表示される確立されているフォルダーが IPM メッセージの受信トレイで、このメッセージは、受信トレイにあるため IPM。Note.MyDocument は、IPM の基本クラスから派生します。
+受信メッセージクラスに、受信フォルダーが割り当てられていない場合、メッセージストアプロバイダーは、受信クラスの可能な最大プレフィックスに一致するクラスの受信フォルダーを自動的に使用します。 たとえば、クライアントがクラス IPM というメッセージを受信するとします。メモ: 設定済みの受信フォルダーのみが、ipm メッセージの受信トレイに配置されます。このメッセージは、ipm.注: MyDocument は基本クラス IPM から派生します。
   
-IPC メッセージの受信フォルダーを割り当てる際は、IPM サブツリーからフォルダーを使用しないでください。 IPM メッセージのみ、これらのフォルダーを予約する必要があります。 メッセージ ストアのルート フォルダー内に含まれているフォルダーを使用します。 
+IPC メッセージの受信フォルダーを割り当てる場合は、IPM サブツリーのフォルダーは使用しないでください。 これらのフォルダーは、IPM メッセージ専用に予約されている必要があります。 代わりに、メッセージストアのルートフォルダー内に格納されているフォルダーを使用します。 
   
- **IPM メッセージ クラスの受信フォルダーを作成するには**
+ **IPM メッセージクラスの受信フォルダーを作成するには**
   
-1. **PR_IPM_SUBTREE_ENTRYID** ([PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md)) のプロパティを取得するために、メッセージ ストアの[IMAPIProp::GetProps](imapiprop-getprops.md)メソッドを呼び出します。 
+1. メッセージストアの[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出して、 **PR_IPM_SUBTREE_ENTRYID** ([PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md)) プロパティを取得します。 
     
-2. 開く IPM サブツリーのルート フォルダーにメッセージ ・ ストア内のエントリの識別子としては、 **PR_IPM_SUBTREE_ENTRYID**と[IMsgStore::OpenEntry](imsgstore-openentry.md)を呼び出します。 
+2. [IMsgStore:: openentry](imsgstore-openentry.md)を entry 識別子として**PR_IPM_SUBTREE_ENTRYID**で呼び出し、メッセージストア内の IPM サブツリーのルートフォルダーを開きます。 
     
-3. 受信フォルダーを作成するのには[IMAPIFolder::CreateFolder](imapifolder-createfolder.md)を呼び出します。 
+3. [imapifolder:: CreateFolder](imapifolder-createfolder.md)を呼び出して、受信フォルダーを作成します。 
     
-4. IPM メッセージ クラスに新しいフォルダーをマップするのには[IMsgStore::SetReceiveFolder](imsgstore-setreceivefolder.md)を呼び出します。 
+4. [IMsgStore:: setreceivefolder](imsgstore-setreceivefolder.md)を呼び出して、新しいフォルダーを IPM メッセージクラスにマップします。 
     
- **IPC メッセージ クラスの受信フォルダーを作成するには**
+ **IPC メッセージクラスの受信フォルダーを作成するには**
   
-1. メッセージ ・ ストアのルート フォルダーを開くに null のエントリの識別子を使用して[IMsgStore::OpenEntry](imsgstore-openentry.md)を呼び出します。 
+1. [IMsgStore::](imsgstore-openentry.md) null エントリ識別子を持つ openentry を呼び出して、メッセージストアのルートフォルダーを開きます。 
     
-2. 受信フォルダーを作成するのには[IMAPIFolder::CreateFolder](imapifolder-createfolder.md)を呼び出します。 
+2. [imapifolder:: CreateFolder](imapifolder-createfolder.md)を呼び出して、受信フォルダーを作成します。 
     
-3. IPC メッセージ クラスに新しいフォルダーをマップするのには[IMsgStore::SetReceiveFolder](imsgstore-setreceivefolder.md)を呼び出します。 
+3. [IMsgStore:: setreceivefolder](imsgstore-setreceivefolder.md)を呼び出して、新しいフォルダーを IPC メッセージクラスにマップします。 
     
-関連するレポート メッセージ用のメッセージに使用する受信フォルダーを割り当てます。 IPM をクライアントが受信した場合などです。注意のメッセージのいずれかを設定では、将来の IPM のフォルダーが表示されます。注意のメッセージと同じ Report.IPM.Note のメッセージ用のフォルダーが表示されます。
+関連するレポートメッセージのメッセージに使用する受信フォルダーを割り当てます。 たとえば、クライアントが IPM を受信したとします。メッセージを確認し、今後の IPM 用に1つの受信フォルダーをセットアップします。メモメッセージと、今後の報告メッセージの同じ受信フォルダー。
   
 

@@ -6,30 +6,26 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: f496d698-7f08-69cc-4379-df18a2c2fd7e
-ms.openlocfilehash: e44cd18c3f7673761f457db9cd4bfe00a8ab89bc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: caa86e33d0d7aa9ca31cbbf8939e17b581877669
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337192"
 ---
-# <a name="eventmultidrop-cell-events-section"></a>[EventMultiDrop] セル ([イベント] セクション)
+# <a name="eventmultidrop-cell-events-section"></a>[EventMultiDrop] セル ([Events] セクション)
 
-インスタンスまたはシェイプを複製したり貼り付けたときに、図面ページに複数の図形をドロップしたときに評価されるイベント セルです。
+図面ページに複数の図形をインスタンスとしてドロップしたとき、または図形を複製または貼り付けたときに評価されるイベントセルです。
   
 イベント セルはイベントの発生時にのみ評価されます。数式の入力時には評価されません。
   
-別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [EventMultiDrop] セルを参照するには、次の値を使用します。
-
- 
+別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [EventMultiDrop] セルを参照するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |EventMultiDrop  <br/> |
+|セル名:  <br/> |[eventmultidrop]  <br/> |
    
-プログラムから、インデックスによって [EventMultiDrop] セルを参照するには、**CellsSRC** プロパティを使用し、次の引数を指定します。
-
- 
+プログラムから、インデックスによって [EventMultiDrop] セルを参照するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

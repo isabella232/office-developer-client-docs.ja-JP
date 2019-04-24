@@ -8,19 +8,19 @@ f1_keywords:
 - vis_sdr.chm60032
 localization_priority: Normal
 ms.assetid: c1e3d7bf-e6b6-65f1-ae40-80c8ba4821cd
-description: ドキュメントの校閲者のマークアップに割り当てられた色を表す RGB 値です。
-ms.openlocfilehash: a8771bb35cfc1b57990f24e1a0a3d677f9cffc0b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 図面校閲者のマークアップに割り当てられている色を表す RGB 値。
+ms.openlocfilehash: d9df6605ca6c8a22353978b9483989ecfc08130d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341819"
 ---
-# <a name="color-cell-reviewer-section"></a>[Color] セル ([レビュー担当者] セクション)
+# <a name="color-cell-reviewer-section"></a>[Color] セル ([Reviewer] セクション)
 
-ドキュメントの校閲者のマークアップに割り当てられた色を表す RGB 値です。 
+図面校閲者のマークアップに割り当てられている色を表す RGB 値。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 色は、赤、青、緑、紫、オレンジ、青緑、グレーの順番で校閲者に割り当てられます。校閲者がそれ以上いる場合には、再度先頭から順番に割り当てられます。 
   
@@ -30,14 +30,14 @@ ms.locfileid: "19805030"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | Reviewer.Color [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+| セル名:  <br/> | 校閲者の色 [ *i* ] *i* = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [Color] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionReviewer** <br/> |
-| 行インデックス:  <br/> |**visRowReviewer** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+| 行インデックス:  <br/> |**visRowReviewer** +  *i* = ** 0、1、2...  <br/> |
 | セル インデックス:  <br/> |**visReviewerColor** <br/> |
    
 

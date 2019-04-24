@@ -7,48 +7,48 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 18df25b7-16b7-44cd-a9a0-5276966c1fd4
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a32c73f8a907b371c4d0f1c07050d44fd45801ec
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: b4efdd8d8238d4bc7e89a1153b9be34c7af76355
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336996"
 ---
 # <a name="finding-a-profile-name"></a>プロファイル名の検索
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアントは、セッション、既定のプロファイルの名前、またはコンピューターにインストールされている別のプロファイルの名前を現在使用されているプロファイルの名前を検索する必要があります。
+クライアントは、セッションで現在使用されているプロファイルの名前、既定のプロファイルの名前、またはコンピューターにインストールされている代替プロファイルの名前を検索する必要がある場合があります。
   
-セッションの実行中にプロファイルの名前を取得するためにいくつかの方法があります。 必ずしも 1 つのセッションで使用されているプロファイルの名前を検索する場合は、最初の手順を使用します。 既定のプロファイルの名前を検索する場合は、2 番目の手順を使用します。 セッションの現在のプロファイルの名前を検索する場合は、最後の手順を使用します。 
+セッション中にプロファイルの名前を取得するには、いくつかの方法があります。 セッションで使用されているものとは限らないプロファイルの名前を検索する必要がある場合は、最初の手順を使用します。 既定のプロファイルの名前を検索する必要がある場合は、2番目の手順を使用します。 セッションの現在のプロファイルの名前を検索する必要がある場合は、last プロシージャを使用します。 
   
  **任意のプロファイルの名前を検索するには**
   
-1. **IProfAdmin**インターフェイス ポインターを取得するために[MAPIAdminProfiles](mapiadminprofiles.md)を呼び出します。 
+1. [MAPIAdminProfiles](mapiadminprofiles.md)を呼び出して、 **IProfAdmin**インターフェイスポインターを取得します。 
     
-2. プロファイル テーブルにアクセスするのには[IProfAdmin::GetProfileTable](iprofadmin-getprofiletable.md)を呼び出します。 
+2. プロファイルテーブルにアクセスするには、 [IProfAdmin:: getprofiletable](iprofadmin-getprofiletable.md)を呼び出します。 
     
-3. プロファイル テーブルの[IMAPITable::QueryRows](imapitable-queryrows.md)メソッドを呼び出して、テーブル内の行のすべてを取得し、ターゲット ・ プロファイルを表すかどうかを確認するには、各 1 を調べる。 
+3. プロファイルテーブルの[IMAPITable:: QueryRows](imapitable-queryrows.md)メソッドを呼び出して、テーブル内のすべての行を取得し、それぞれの行を調べてターゲットプロファイルを表しているかどうかを確認します。 
     
- **デフォルトのプロファイルの名前を検索するには**
+ **既定のプロファイルの名前を検索するには**
   
 1. [MAPIAdminProfiles](mapiadminprofiles.md)を呼び出します。
     
-2. プロファイル テーブルにアクセスするのには[IProfAdmin::GetProfileTable](iprofadmin-getprofiletable.md)を呼び出します。 
+2. プロファイルテーブルにアクセスするには、 [IProfAdmin:: getprofiletable](iprofadmin-getprofiletable.md)を呼び出します。 
     
-3. TRUE の値を持つ**PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md)) に一致する[SPropertyRestriction](spropertyrestriction.md)構造を持つプロパティの制限を作成します。
+3. **PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md)) と値が TRUE に一致する[spropertyrestriction](spropertyrestriction.md)構造を持つプロパティ制限を構築します。
     
-4. 既定のプロファイルを表すプロファイル テーブルの行を検索するのには[IMAPITable::FindRow](imapitable-findrow.md)を呼び出します。 **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) 列には、既定のプロファイルの名前が含まれています。
+4. [ [IMAPITable:: FindRow](imapitable-findrow.md)を呼び出して、既定のプロファイルを表すプロファイルテーブルの行を検索します。 **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) 列には、既定のプロファイルの名前が含まれています。
     
  **現在のプロファイルの名前を検索するには**
   
-現在のプロファイルの名前を検索するには、次の手順のいずれかを行います。
+現在のプロファイルの名前を検索するには、次のいずれかの手順を実行します。
   
-- 現在のプロファイルのセクションのいずれかを表す[MAPIUID](mapiuid.md)の構造体がある場合は、 [IMAPISession::OpenProfileSection](imapisession-openprofilesection.md)に_lpUID_パラメーターで渡すことです。 [IMAPIProp::GetProps](imapiprop-getprops.md)メソッドを使用してプロファイル セクションの**PR_PROFILE_NAME** ([PidTagProfileName](pidtagprofilename-canonical-property.md)) のプロパティを取得します。 
+- 現在のプロファイルのセクションの1つを表す[MAPIUID](mapiuid.md)構造体がある場合は、 _lpuid_パラメーターにそのセクションを渡して[imapisession:: openprofile](imapisession-openprofilesection.md)のセクションに渡します。 [imapiprop:: GetProps](imapiprop-getprops.md)メソッドを使用して、プロファイルセクションの**PR_PROFILE_NAME** ([PidTagProfileName](pidtagprofilename-canonical-property.md)) プロパティを取得します。 
     
-- ステータス テーブルにアクセスし、MAPI_SUBSYSTEM に設定されて、 **PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md)) の列を持つ行を見つけるには、 [IMAPISession::GetStatusTable](imapisession-getstatustable.md)を呼び出します。 この行の**PR_DISPLAY_NAME**列は、プロファイルの名前です。 使用されないステータス テーブル開始時にすべてのトランスポート プロバイダーを初期化して、MAPI スプーラーが終了するまでアプリケーションをブロックするためです。 これによって、パフォーマンスが低下します。 
+- 呼び出し[imapisession:: getstatustable](imapisession-getstatustable.md)は状態テーブルにアクセスして、その**PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md)) 列が MAPI_SUBSYSTEM に設定されている行を検索します。 この行の**PR_DISPLAY_NAME**列はプロファイル名です。 起動時に状態テーブルを使用しないでください。これは、MAPI スプーラーがすべてのトランスポートプロバイダーの初期化を終了するまでアプリケーションをブロックするためです。 これにより、パフォーマンスが低下する可能性があります。 
     
 

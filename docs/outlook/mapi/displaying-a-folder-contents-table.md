@@ -1,5 +1,5 @@
 ---
-title: フォルダーの内容のテーブルを表示します。
+title: フォルダー コンテンツ テーブルの表示
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,38 +7,38 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 14a4c123-776d-4a32-9688-8a4402dd1f53
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 51c88e8c062a409db305e893b82f43d8c8ac7094
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 56847283afaf41c1d45cdb875ddf49eaa5881175
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339936"
 ---
-# <a name="displaying-a-folder-contents-table"></a>フォルダーの内容のテーブルを表示します。
+# <a name="displaying-a-folder-contents-table"></a>フォルダー コンテンツ テーブルの表示
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォルダーの内容のテーブルには、そのメッセージのすべてについての概要情報が含まれています。 メッセージ クラスに対応する受信フォルダーの内容のテーブルで、新しい着信メッセージについての概要情報が表示されます。 この情報をユーザーが利用できるように、テーブルを取得し、適切な列と行を表示します。
+フォルダーの contents テーブルには、すべてのメッセージに関する概要情報が含まれています。 新しい受信メッセージに関する概要情報は、メッセージクラスの受信フォルダーのコンテンツテーブルに表示されます。 ユーザーがこの情報を使用できるようにするには、テーブルを取得し、必要に応じて列と行を表示します。
   
-**フォルダーの内容のテーブルを表示するには**
+**フォルダコンテンツテーブルを表示するには**
   
-1. [IMsgStore::OpenEntry](imsgstore-openentry.md)テーブルを含むフォルダーのエントリ id を渡すことを呼び出します。
+1. [IMsgStore:: openentry](imsgstore-openentry.md)を呼び出し、テーブルを含むフォルダーのエントリ識別子を渡します。
     
-2. その内容のテーブルを開くにはフォルダーの[IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md)メソッドを呼び出します。 
+2. フォルダーの[IMAPIContainer:: getcontentstable](imapicontainer-getcontentstable.md)メソッドを呼び出して、そのコンテンツテーブルを開きます。 
     
-3. 特定の列を指定するテーブルの[IMAPITable::SetColumns](imapitable-setcolumns.md)メソッドを呼び出して、必要な場合は、内容のテーブルの表示を制限します。 
+3. 必要に応じて、テーブルの[IMAPITable:: SetColumns](imapitable-setcolumns.md)メソッドを呼び出して特定の列を指定することによって、contents テーブルの表示を制限します。 
     
-4. 特定の行をフィルター選択するテーブルの[IMAPITable::Restrict](imapitable-restrict.md)メソッドを呼び出して、必要な場合は、内容のテーブルの表示を制限します。 場合は、たとえば、読み取ることがまだ設定されて、特定のメッセージ クラスのメッセージだけを表示するのには。 
+4. 必要に応じて、テーブルの[IMAPITable:: Restrict](imapitable-restrict.md)メソッドを呼び出して、特定の行をフィルター処理することによって、contents テーブルの表示を制限します。 たとえば、まだ読まれていない特定のメッセージクラスを持つメッセージのみを表示する場合は、次のようにします。 
     
-    1. **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md))、目的のメッセージ クラス プロパティに一致する[SPropertyRestriction](spropertyrestriction.md)構造体にプロパティ制約を作成します。 
+    1. **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) プロパティと目的のメッセージクラスを一致させるプロパティ制限を[spropertyrestriction](spropertyrestriction.md)構造で作成します。 
         
-    2. プロパティ タグと MSGFLAG_UNREAD の値として**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) をマスクとして使用する[SBitMaskRestriction](sbitmaskrestriction.md)構造体では、ビットマスクの制限を作成します。
+    2. **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) をプロパティタグとして使用し、MSGFLAG_UNREAD 値をマスクとして使用する[sbitmaskrestriction](sbitmaskrestriction.md)構造で、ビットマスク制限を作成します。
         
-    3. プロパティは、ビットマスクの制限を結合する[SAndRestriction](sandrestriction.md)構造に制約を作成します。 
+    3. プロパティとビットマスク制限を結合する[SAndRestriction](sandrestriction.md)構造で制限を作成します。 
     
-5. テーブルの[IMAPITable::SortTable](imapitable-sorttable.md)メソッドを呼び出して、必要な場合は、内容のテーブルを並べ替えます。 
+5. 必要に応じて、テーブルの[IMAPITable:: sorttable](imapitable-sorttable.md)メソッドを呼び出して、コンテンツテーブルを並べ替えます。 
     
-6. 処理の内容のテーブルからすべての行を取得するために[IMAPITable::QueryRows](imapitable-queryrows.md)を呼び出します。 
+6. 処理のために contents テーブルからすべての行を取得するには、 [IMAPITable:: QueryRows](imapitable-queryrows.md)を呼び出します。 
     
 

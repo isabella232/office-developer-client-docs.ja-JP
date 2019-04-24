@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 83b69e8f-0b5a-4992-b5b8-160d3bdfa22a
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 45b6b3fb0c67d854fddf3773c06cef7b36f54992
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25394462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339327"
 ---
 # <a name="pidtagattachlongfilename-canonical-property"></a>PidTagAttachLongFilename 標準プロパティ
 
@@ -25,7 +25,7 @@ ms.locfileid: "25394462"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-添付ファイルの長いファイル名とパスを除外する拡張子が含まれています。 
+添付ファイルの長いファイル名と拡張子を含みます (パスを除く)。 
   
 |||
 |:-----|:-----|
@@ -34,53 +34,53 @@ ms.locfileid: "25394462"
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-これらのプロパティは、ATTACH_BY_VALUE、ATTACH_BY_REFERENCE、ATTACH_BY_REF_RESOLVE、および ATTACH_BY_REF_ONLY **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) プロパティの値に適用されます。 長いファイル名をサポートしているプラットフォームは、 **PR_ATTACH_LONG_FILENAME**と**PR_ATTACH_FILENAME** ([PidTagAttachFilename](pidtagattachfilename-canonical-property.md)) のプロパティの両方を送信するとき、設定する必要があり、確認してください**PR_ATTACH_LONG_FILENAME**最初に受信しています。 
+これらのプロパティは、 **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) プロパティの ATTACH_BY_VALUE、ATTACH_BY_REFERENCE、ATTACH_BY_REF_RESOLVE、および ATTACH_BY_REF_ONLY の各値に関連しています。 長いファイル名をサポートするプラットフォームは、送信時に**PR_ATTACH_LONG_FILENAME**プロパティと**PR_ATTACH_FILENAME** ([PidTagAttachFilename](pidtagattachfilename-canonical-property.md)) プロパティの両方を設定する必要があります。また、 **PR_ATTACH_LONG_FILENAME** first when をチェックする必要があります。いう. 
   
-クライアント アプリケーションは、メッセージを受信するホスト コンピューターは、長いファイル名をサポートしている場合に使用する推奨の長いファイル名にこのプロパティを設定する必要があります。 **PR_ATTACH_LONG_FILENAME**は、 **PR_ATTACH_EXTENSION** ([PidTagAttachExtension](pidtagattachextension-canonical-property.md)) のプロパティが指定されていない場合は、ファイル名の拡張子を指定して、添付ファイルを保存するため、ファイル名として使用できます。 
+クライアントアプリケーションは、メッセージを受信するホストコンピューターが長いファイル名をサポートしている場合に、このプロパティに推奨される長いファイル名を設定する必要があります。 **PR_ATTACH_LONG_FILENAME**は、添付ファイルを保存するためのファイル名として使用でき、 **PR_ATTACH_EXTENSION** ([PidTagAttachExtension](pidtagattachextension-canonical-property.md)) プロパティが指定されていない場合は、ファイル拡張子を指定します。 
   
-**PR_ATTACH_FILENAME**によって提供されるファイル名とは異なりこの名前は 8 文字のファイル名と拡張子が 3 文字に制限はありません。 代わりに、ことができます最大 256 文字、ファイル名、拡張子、および区切り記号のピリオドを含みます。 
+**PR_ATTACH_FILENAME**によって提供されるファイル名とは異なり、この名前は8文字のファイル名に加えて、3文字の拡張子に制限されません。 その代わりに、ファイル名、内線番号、区切り期間など、最大256文字の長さを指定できます。 
   
-MAPI は、ファイル名に ANSI 文字セットでのみ動作します。 OEM 文字セットでファイル名を使用するクライアント アプリケーションする必要があります ANSI に変換する、MAPI を呼び出す前にします。 
+MAPI は、ANSI 文字セットのファイル名に対してのみ機能します。 OEM 文字セットでファイル名を使用するクライアントアプリケーションは、MAPI を呼び出す前に、それらを ANSI に変換する必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルのオブジェクトを処理します。
+> メッセージと添付ファイルオブジェクトを処理します。
     
-[[MS OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
-> メッセージ オブジェクト インターネット標準の電子メールの表記規則からに変換します。
+> インターネット標準の電子メールの規則からメッセージオブジェクトに変換します。
     
-[[MS OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
+[[OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
   
-> 権限管理でエンコードされたメッセージのプロパティを指定します。
+> 権限が管理されたエンコード済みメッセージのプロパティを指定します。
     
-[[MS OXOUM]](https://msdn.microsoft.com/library/2a0696c5-2caf-4f20-87fb-085db430afec%28Office.15%29.aspx)
+[[OXOUM]](https://msdn.microsoft.com/library/2a0696c5-2caf-4f20-87fb-085db430afec%28Office.15%29.aspx)
   
-> プロパティとは、ボイス メールと fax メッセージを表示するための許可の操作を指定します。
+> ボイスメールおよび fax メッセージを表すために許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mmapitags.h
+Mmapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -10,25 +10,25 @@ api_type:
 - COM
 ms.assetid: f84c6e70-e74e-4ca2-961c-0260ea277b00
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a8ba845143d962b3627f57a60f45742227bc9f35
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5290cc871f47d9410651492fd520520d7f2e5e77
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339915"
 ---
 # <a name="mapi-structures"></a>MAPI の構造
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-アルファベット順の次のエントリでは、MAPI の構造体について説明します。 詳細については、相互参照の他の文書に、またはこのドキュメントの他のトピックも含まれています。
+次のアルファベット順のエントリは、MAPI 構造について説明します。 詳細については、他の文書への相互参照、またはこのドキュメントの他のトピックも参照してください。
   
 |||
 |:-----|:-----|
 |[ADRENTRY](adrentry.md) <br/> |[ADRLIST](adrlist.md) <br/> |
-|[ADRPARM](adrparm.md) <br/> |[CURRENCY](currency.md) <br/> |
+|[ADRPARM](adrparm.md) <br/> |[単位](currency.md) <br/> |
 |[CONTAB_ENTRYID](contab_entryid.md) <br/> |[DIR_ENTRYID](dir_entryid.md) <br/> |
 |[DTBLBUTTON](dtblbutton.md) <br/> |[DTBLCHECKBOX](dtblcheckbox.md) <br/> |
 |[DTBLCOMBOBOX](dtblcombobox.md) <br/> |[DTBLDDLBX](dtblddlbx.md) <br/> |
@@ -37,7 +37,7 @@ ms.locfileid: "22584787"
 |[DTBLMVDDLBOX](dtblmvddlbox.md) <br/> |[DTBLMVLISTBOX](dtblmvlistbox.md) <br/> |
 |[DTBLPAGE](dtblpage.md) <br/> |[DTBLRADIOBUTTON](dtblradiobutton.md) <br/> |
 |[DTCTL](dtctl.md) <br/> |[DTPAGE](dtpage.md) <br/> |
-|[エントリ ID](entryid.md) <br/> |[ENTRYLIST](entrylist.md) <br/> |
+|[ENTRYID](entryid.md) <br/> |[ENTRYLIST](entrylist.md) <br/> |
 |[ERROR_NOTIFICATION](error_notification.md) <br/> |[EXTENDED_NOTIFICATION](extended_notification.md) <br/> |
 |[FILETIME](filetime.md) <br/> |[FLAGLIST](flaglist.md) <br/> |
 |[FLATENTRY](flatentry.md) <br/> |[FLATENTRYLIST](flatentrylist.md) <br/> |
@@ -76,7 +76,7 @@ ms.locfileid: "22584787"
 
 
 
-[MAPI の関数、コールバック、およびマクロ](mapi-functions-callbacks-and-macros.md)
+[MAPI の関数、コールバック、マクロ](mapi-functions-callbacks-and-macros.md)
 
 
 [MAPI ���t�@�����X](mapi-reference.md)

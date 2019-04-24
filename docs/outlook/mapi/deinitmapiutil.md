@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: e0b8dc9c-cc46-4d27-9497-7a55a0bfdff5
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e84dbc0976f5c438a7e0b5fd7cddcbf1c0659f40
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a9654efc34280941cdbc727bce9912a0a39d0fb9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336842"
 ---
 # <a name="deinitmapiutil"></a>DeinitMapiUtil
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ユーティリティ関数が明示的に呼び出される[ScInitMapiUtil](scinitmapiutil.md)関数によって、暗黙的に[生じます](mapiinitialize.md)を解放します。 
+[ScInitMapiUtil](scinitmapiutil.md)関数または暗黙的に[MAPIInitialize](mapiinitialize.md)関数によって明示的に呼び出されたユーティリティ関数を解放します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーション  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
    
 ```cpp
 VOID DeinitMapiUtil( void );
@@ -45,10 +45,10 @@ VOID DeinitMapiUtil( void );
 
 なし 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**DeinitMapiUtil**関数は、 [ScInitMapiUtil](scinitmapiutil.md)または[生じます](mapiinitialize.md)を使用して初期化関数を解放します。 
+**DeinitMapiUtil**関数は、 [ScInitMapiUtil](scinitmapiutil.md)または[MAPIInitialize](mapiinitialize.md)を使用して初期化された関数を解放します。 
   
-**ScInitMapiUtil**によって呼び出される関数の使用が完了すると、それらを解放する**DeinitMapiUtil**を明示的に呼び出す必要があります。 [MAPIUninitialize](mapiuninitialize.md)は対照的に、 **DeinitMapiUtil**を暗黙的に呼び出します。 
+**ScInitMapiUtil**によって呼び出される関数の使用が完了したら、 **DeinitMapiUtil**を明示的に呼び出して解放する必要があります。 これに対して、 [MAPIUninitialize](mapiuninitialize.md)は暗黙的に**DeinitMapiUtil**を呼び出します。 
   
 

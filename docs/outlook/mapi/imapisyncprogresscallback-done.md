@@ -1,5 +1,5 @@
 ---
-title: IMAPISyncProgressCallbackDone
+title: imapisync進行 scallbackdone
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: aaa8eb56-f22f-4c5a-a224-807ff001e0ca
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: cdd3db3f3779c2078b90352e19f8da6b29cffb8d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 8d397e12b8b24c5031e6e6d89d98134d487a815b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341273"
 ---
 # <a name="imapisyncprogresscallbackdone"></a>IMAPISyncProgressCallback::Done
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
- Microsoft Outlook に通知の同期が完了しています。 
+ 同期が完了したことを Microsoft Outlook に通知します。 
   
 ```cpp
 HRESULT Done(
@@ -36,15 +36,15 @@ HRESULT Done(
 
 ## <a name="parameters"></a>パラメーター
 
- **hThreadDoneEvent**
+ **h月間 addoneevent**
   
-> ハンドルを閉じるための Microsoft Outlook を許可するのに渡されるイベントです。 NULL にすることができます。
+> Microsoft Outlook がハンドルを閉じることができるようにするイベントを返します。 NULL でもかまいません。
     
  **hResult**
   
-> 進行状況の最終的な状態を示す HRESULT。
+> 進行状況の最終状態を示す HRESULT。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   

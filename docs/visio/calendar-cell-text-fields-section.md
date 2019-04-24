@@ -8,19 +8,19 @@ f1_keywords:
 - vis_sdr.chm60029
 localization_priority: Normal
 ms.assetid: 0c3e275e-25f0-3681-03f4-257145c19690
-description: データ型が Date のときに、テキスト フィールドに使用するカレンダーを指定します。
-ms.openlocfilehash: 6d9d3ef0addb1d6081e2046ca7a5a663eb2a9c8c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: データ型が Date のときに、テキストフィールドに使用するカレンダーを指定します。
+ms.openlocfilehash: e90f757fb176375c8f9e9d5744e09b67afaca527
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337500"
 ---
-# <a name="calendar-cell-text-fields-section"></a>[Calendar] セル ([テキスト フィールド] セクション)
+# <a name="calendar-cell-text-fields-section"></a>[Calendar] セル ([Text Fields] セクション)
 
-データ型が Date のときに、テキスト フィールドに使用するカレンダーを指定します。
+データ型が Date のときに、テキストフィールドに使用するカレンダーを指定します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 使用できる値は、0 (西暦)、1 (イスラム暦)、2 (ヘブライ太陰暦)、3 (台湾暦)、4 (和暦)、5 (タイ仏暦)、6 (韓国檀紀)、7 (サカ暦)、8 (英語 (音訳))、および 9 (フランス語 (音訳)) です。 
   
@@ -28,14 +28,14 @@ ms.locfileid: "19804925"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | Fields.Calendar [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+| セル名 :  <br/> | フィールド。 *i* = ** <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [Calendar] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionTextField** <br/> |
-| 行インデックス:  <br/> |**visRowField** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+| 行インデックス:  <br/> |**visRowField** +  *i* = ** 0、1、2...  <br/> |
 | セル インデックス:  <br/> |**visFieldCalendar** <br/> |
    
 

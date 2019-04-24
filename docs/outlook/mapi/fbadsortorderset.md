@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: b7f80e0a-8ddd-4b24-ab63-2078a8152058
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3b3f88495cafbd6ea764ca8901ac67c23749aebe
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 31840923e24cddd0dc3dfa9cc67b610d0dcd7e47
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336975"
 ---
 # <a name="fbadsortorderset"></a>FBadSortOrderSet
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メモリの割り当てを確認し、設定の並べ替え順序を検証します。 
+メモリの割り当てを確認して、設定された並べ替え順序を検証します。 
   
 |||
 |:-----|:-----|
 |ヘッダー ファイル:  <br/> |Mapival.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |サービス プロバイダー  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |サービス プロバイダー  <br/> |
    
 ```cpp
 ULONG FBadSortOrderSet(
@@ -43,20 +43,20 @@ ULONG FBadSortOrderSet(
 
  _lpsos_
   
-> [in]設定を検証する並べ替え順序を識別する[SSortOrderSet](ssortorderset.md)構造体へのポインター。 
+> 順番検証するように設定されている並べ替え順序を識別する、 [ssortorderset](ssortorderset.md)構造体へのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
 TRUE 
   
-> 指定した並べ替え順序の設定が正しくありません。 
+> 指定された並べ替え順序セットが無効です。 
     
 FALSE 
   
-> 有効では、指定した並べ替え順序を設定します。
+> 指定された並べ替え順序の設定は有効です。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**FBadSortOrderSet**関数は、 [IMAPITable::SortTable](imapitable-sorttable.md)メソッドのような並べ替えメソッドへの呼び出しの準備に使用できます。 
+**fbadsortorderset**関数を使用して、 [IMAPITable:: sorttable](imapitable-sorttable.md)メソッドなどの sort メソッドの呼び出しを準備できます。 
   
 

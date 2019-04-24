@@ -12,22 +12,22 @@ api_type:
 - COM
 ms.assetid: b465d015-9b62-4986-b0df-118121f60602
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 371d0305f8f00e66704bae03f93857c7275b6a10
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bc511ea4b3ec4eea9e38f744bcb8f277108085cc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336898"
 ---
 # <a name="flatentrylist"></a>FLATENTRYLIST
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[FLATENTRY](flatentry.md)構造体の配列が含まれています。 
+[FLATENTRY](flatentry.md)構造体の配列を格納します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
 |関連するマクロ:  <br/> |[CbFLATENTRYLIST](cbflatentrylist.md)、 [CbNewFLATENTRYLIST](cbnewflatentrylist.md) <br/> |
    
 ```cpp
@@ -42,25 +42,25 @@ typedef struct
 
 ## <a name="members"></a>Members
 
-**cEntries**
+**centries**
   
-> **AbEntries**メンバーが記載されている配列内の**FLATENTRY**構造体の数です。 
+> **abentries**メンバーによって記述された、配列内の**FLATENTRY**構造体の数。 
     
-**cbEntries**
+**cbentries**
   
-> **AbEntries**で説明されている配列内のバイト数。 
+> **abentries**で記述された配列内のバイト数。 
     
-**abEntries**
+**abentries**
   
-> バイト配列 1 つまたは複数の**FLATENTRY**構造体を含むエンド ・ ツー ・ エンド配置します。 
+> 1つまたは複数の**FLATENTRY**構造を含むバイト配列。エンドツーエンドで配置されています。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**AbEntries**アレイでは、各**FLATENTRY**構造体が揃えられた自然な境界に揃えられます。 余分なバイトは、確かに自然の配置の 2 つの**FLATENTRY**構造体の間に埋め込み文字として含まれます。 配列内の最初の**FLATENTRY**構造体は、 **abEntries**メンバーのオフセットが 8 であるために常に、正しく配置されます。 次の構造体のオフセットの計算には、最初のエントリのサイズを使用して、次に 4 の倍数に切り上げられます。 **FLATENTRY**構造体のサイズを計算するのにには、 [CbFLATENTRY](cbflatentry.md)マクロを使用します。 
+**abentries**配列では、各**FLATENTRY**構造は、自然に配置された境界に沿って配置されます。 2つの**FLATENTRY**構造体間で自然な配置が行われるように、パディングとして追加のバイトが含まれています。 **abentries**メンバーのオフセットは8であるため、配列内の最初の**FLATENTRY**構造体は常に正確に調整されます。 次の構造体のオフセットを計算するには、最初のエントリのサイズを、次の4つの倍数まで切り上げて使用します。 [CbFLATENTRY](cbflatentry.md)マクロを使用して、 **FLATENTRY**構造体のサイズを計算します。 
   
-などの 2 番目の**FLATENTRY**構造体は、最初のエントリのオフセットを加えた次の 4 バイトに丸められた最初のエントリの長さで構成されているオフセットから開始されます。 最初のエントリの長さは、 **abEntry**メンバーの長さを足したものを**cb**のメンバーの長さです。 
+たとえば、2番目の**FLATENTRY**構造体は、最初のエントリのオフセットと、次の4バイトに丸められた最初のエントリの長さで構成されるオフセットから始まります。 最初のエントリの長さは、 **cb**メンバーの長さに**abentry**メンバーの長さを加えたものです。 
   
-次のコード サンプルでは、 **FLATENTRYLIST**構造体のオフセットを計算する方法を示します。 その_lpFlatEntry_が、リスト内の最初の構造体へのポインターであることと仮定します。 
+次のコードサンプルは、 **FLATENTRYLIST**構造体でオフセットを計算する方法を示しています。 _lpFlatEntry_はリスト内の最初の構造体へのポインターであると仮定します。 
   
 ```cpp
 (offsetof(lpFlatEntry->ab) // for example, 4

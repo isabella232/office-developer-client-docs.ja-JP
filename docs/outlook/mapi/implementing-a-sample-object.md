@@ -1,5 +1,5 @@
 ---
-title: サンプル オブジェクトを実装します。
+title: サンプル オブジェクトの実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,21 +7,21 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 23b6ad1a-0b50-429f-8819-ab72c56581c2
-description: '�ŏI�X�V��: 2011�N7��23��'
+description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: a681e68c0718e49da331946d75ecb7b4fab7afe2
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25396793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332831"
 ---
-# <a name="implementing-a-sample-object"></a>サンプル オブジェクトを実装します。
+# <a name="implementing-a-sample-object"></a>サンプル オブジェクトの実装
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-通知シンク オブジェクト-オブジェクトをサポートする、 [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md)インターフェイス-は、MAPI オブジェクトの通知を処理するためのクライアント アプリケーションを実装することです。 **IMAPIAdviseSink**では、 [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx)から直接継承し、 **OnNotify**1 つのメソッドが含まれています。 したがって、アドバイズ シンク オブジェクトを実装するには、クライアントは**IUnknown**の 3 つの方法と[OnNotify](imapiadvisesink-onnotify.md)コードを作成します。
+アドバイズシンクオブジェクト- [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md)インターフェイスをサポートするオブジェクトは、クライアントアプリケーションが通知を処理するために実装する MAPI オブジェクトです。 **IMAPIAdviseSink**は[IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx)から直接継承し、 **notify**という1つのメソッドのみを含みます。 そのため、アドバイズシンクオブジェクトを実装するために、クライアントは**IUnknown**および[onnotify](imapiadvisesink-onnotify.md)の3つのメソッドのコードを作成します。
   
-Mapidefs.h ヘッダー ファイルでは、次のように**DECLARE_MAPI_INTERFACE**を使用して、 **IMAPIAdviseSink**インターフェイスの実装を定義します。
+mapidefs.h ヘッダーファイルは、次のように**DECLARE_MAPI_INTERFACE**を使用して**IMAPIAdviseSink**インターフェイスの実装を定義します。
   
 ```cpp
 #define      INTERFACE  IMAPIAdviseSink
@@ -34,9 +34,9 @@ DECLARE_MAPI_INTERFACE_(IMAPIAdviseSink, IUnknown)
  
 ```
 
-実装するクライアントは、シンク オブジェクトは、手動でまたは**MAPI_IUNKNOWN_METHODS**と**MAPI_IMAPIADVISESINK_METHODS**のマクロを使用に、そのオブジェクトのインタ フェースを定義できますを案内します。 オブジェクトの実装は、オブジェクト間での整合性を確保し、時間と労力を節約するのには可能な限りインターフェイスのマクロを使用してください。 
+アドバイズシンクオブジェクトを実装するクライアントは、手動で、または**MAPI_IUNKNOWN_METHODS**および**MAPI_IMAPIADVISESINK_METHODS**マクロを使用して、オブジェクト内でインターフェイスを定義できます。 オブジェクト実装者は、可能な限りインターフェイスマクロを使用して、オブジェクト間の一貫性を確保し、時間と労力を節約する必要があります。 
   
-通常はわずか数行のコードが必要なために、 [IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)と[リ ス](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)のメソッドの実装は比較的簡単です。 したがって、クライアントとオブジェクトを実装するサービス プロバイダーは、 **AddRef**および**Release**の実装のインラインを作成できます。 次のコードは、C++ を定義する方法を示します**AddRef**および**Release**のインライン実装のシンク オブジェクトに通知します。
+[iunknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)メソッドと[iunknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドの実装は比較的単純です。通常はわずかな数行のコードが必要になります。 そのため、オブジェクトを実装するクライアントおよびサービスプロバイダーは、 **AddRef**および**Release**の実装をインラインにすることができます。 次のコードは、 **AddRef**および**Release**のインライン実装を使用して C++ アドバイズシンクオブジェクトを定義する方法を示しています。
   
 ```cpp
 class  CMAPIAdviseSink : public IMAPIAdviseSink
@@ -75,13 +75,13 @@ private :
  
 ```
 
-C では、アドバイズ シンク オブジェクトは、次の要素で構成されます。
+C では、アドバイズシンクオブジェクトは次の要素で構成されています。
   
-- 各**IUnknown**と**IMAPIAdviseSink**内のメソッドの実装へのポインターが含まれている vtable へのポインター。
+- **IUnknown**および**IMAPIAdviseSink**の各メソッドの実装へのポインターを含む vtable へのポインター。
     
-- データ メンバーです。
+- データメンバー。
     
-次のコード例では、C のアドバイズ シンク オブジェクトを定義し、v テーブルを作成する方法を示します。 
+次のコード例は、C でアドバイズシンクオブジェクトを定義し、その vtable を構築する方法を示しています。 
   
 ```cpp
 // Object definition.
@@ -103,7 +103,7 @@ static const ADVISE_Vtbl vtblADVISE =
  
 ```
 
-C 内のオブジェクトを宣言した後する必要があります初期化する vtable ポインターを構築された、vtable のアドレスに設定することで次のコードに示すように。
+C でオブジェクトを宣言した後、次のコードに示すように、vtable ポインターを構築された vtable のアドレスに設定して初期化する必要があります。
   
 ```cpp
 LPADVISESINK lpMyObj = NULL;

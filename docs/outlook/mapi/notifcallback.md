@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 416008b4-13aa-4387-8c12-f8f2ca252391
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 17b038fea2dd1614f94f005e32b9e6ba4423dbda
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0e2a1a582894e082722d73422fc8bafe34c4230c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334476"
 ---
 # <a name="notifcallback"></a>NOTIFCALLBACK
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI 呼び出しをイベント通知を送信するコールバック関数を定義します。 このコールバック関数は、 [HrAllocAdviseSink](hrallocadvisesink.md)関数を呼び出すことによって作成されたアドバイズ シンク オブジェクトにラップするときにのみ使用できます。 
+イベント通知を送信するために MAPI が呼び出すコールバック関数を定義します。 このコールバック関数は、 [HrAllocAdviseSink](hrallocadvisesink.md)関数を呼び出すことによって作成されたアドバイズシンクオブジェクトでラップされている場合にのみ使用できます。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|によって実装される関数の定義:  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
-|によって呼び出される関数を定義します。  <br/> |MAPI  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|定義された関数の実装:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|によって呼び出された定義済み関数:  <br/> |MAPI  <br/> |
    
 ```cpp
 ULONG (STDAPICALLTYPE NOTIFCALLBACK)(
@@ -43,31 +43,31 @@ ULONG (STDAPICALLTYPE NOTIFCALLBACK)(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpvContext_
+ _lpvcontext_
   
-> [in]任意の値へのポインターは、MAPI では、それを呼び出すときに、コールバック関数に渡されます。 この値は重要では、クライアント アプリケーションまたはサービス プロバイダーにアドレスを表すことができます。 通常、C++ コードでは、 _lpvContext_パラメーターのポインターを表します C++ オブジェクトにします。 
+> 順番MAPI がコールバック関数に渡す任意の値へのポインター。 この値は、クライアントアプリケーションまたはサービスプロバイダーにとって重要なアドレスを表すことができます。 通常、c++ コードの場合、 _lpvcontext_パラメーターは c++ オブジェクトへのポインターを表します。 
     
- _cNotification_
+ _cnotification_
   
-> [in]_LpNotifications_パラメーターで指定された配列内のイベント通知の数です。 
+> 順番lpnotifications パラメーターで指定された、配列__ 内のイベント通知の数。 
     
- _lpNotifications_
+ _lpnotifications_
   
-> [out]この関数が書き込む場所[通知](notification.md)の構造体の配列をバッファーへのポインターには、イベント通知が含まれています。 
+> 読み上げこの関数がイベント通知を含む[通知](notification.md)構造の配列を書き込む場所へのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
-**NOTIFCALLBACK**関数のプロトタイプ用の有効な戻り値のセットは、クライアント アプリケーションまたはサービス プロバイダーでこの関数を実装するかどうかによって異なります。 クライアントは、S_OK を返す常にする必要があります。 プロバイダーには、S_OK または CALLBACK_DISCONTINUE のいずれかを返すことができます。 
+**NOTIFCALLBACK**関数プロトタイプに対して有効な戻り値のセットは、関数がクライアントアプリケーションまたはサービスプロバイダーで実装されているかどうかによって異なります。 クライアントは常に S_OK を返します。 プロバイダーは、S_OK または CALLBACK_DISCONTINUE のいずれかを返すことができます。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-CALLBACK_DISCONTINUE は、有効な戻り値の同期のコールバック関数だけです。MAPI すぐに停止するこの通知のコールバックの処理を要求します。 CALLBACK_DISCONTINUE が返された場合は、MAPI は[IMAPISupport::Notify](imapisupport-notify.md)すると、NOTIFY_CANCELED に_lpUlFlags_パラメーターを設定します。 
+CALLBACK_DISCONTINUE は、同期コールバック関数に対してのみ有効な戻り値です。この通知のコールバックの処理を直ちに停止するように MAPI に要求します。 CALLBACK_DISCONTINUE が返されると、MAPI は[imapisupport:: NOTIFY](imapisupport-notify.md)から戻るときに_lNOTIFY_CANCELED flags_パラメーターをに設定します。 
   
-同期コールバック関数の機能に制約は、次のように。
+以下に、同期コールバック関数で可能な処理に関する制限を示します。
   
-- これが原因で、別の同期通知を生成することはできません。
+- 別の同期通知が生成されることはありません。
     
-- ユーザー インターフェイスを表示することはできません。
+- ユーザーインターフェイスを表示することはできません。
     
 ## <a name="see-also"></a>関連項目
 

@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 50937e29-eaa1-0cd0-53cc-dc17e7793e55
 description: ショートカット メニューまたはアクション タグ メニューで項目がチェックされているかどうかを示します。
-ms.openlocfilehash: 7c5bcdbfe5b7d8e796af49c8da6ef0fc233e3d62
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 870823f28d802e7cafa81efbe5617f27b6714885
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341847"
 ---
-# <a name="checked-cell-actions-section"></a>[Checked] セル ([操作] セクション)
+# <a name="checked-cell-actions-section"></a>[Checked] セル ([Actions] セクション)
 
 ショートカット メニューまたはアクション タグ メニューで項目がチェックされているかどうかを示します。
   
@@ -25,27 +25,23 @@ ms.locfileid: "19805025"
   
 |**値**|**説明**|
 |:-----|:-----|
-|TRUE  <br/> |
-          チェック マークが表示されます。
-  <br/> |
-|FALSE  <br/> |
-          チェック マークが表示されません (既定値)。
-  <br/> |
+|TRUE  <br/> |チェック マークが表示されます。  <br/> |
+|FALSE  <br/> |チェック マークが表示されません (既定値)。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 別の数式から、または **CellsU** プロパティを使用してプログラムから、名前によって [Checked] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |アクションです。 *名*です。オンになっているアクション。 *アクション行の名前します。*  <br/> |
+|セル名:  <br/> |アクション. *名前*です。アクションを確認しました。 *name*は、Actions 行の名前です。  <br/> |
    
 プログラムから、インデックスによって [Checked] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionAction** <br/> |
-|行インデックス:  <br/> |**visRowAction** +  *i* 、 *i* = 0、1、2、.  <br/> |
+|行インデックス:  <br/> |**visRowAction** +  *i* = ** 0、1、2、...  <br/> |
 |セル インデックス:  <br/> |**visActionChecked** <br/> |
    
 

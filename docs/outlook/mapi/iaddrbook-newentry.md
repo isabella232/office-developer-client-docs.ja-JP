@@ -1,5 +1,5 @@
 ---
-title: IAddrBookNewEntry
+title: iaddrbooknewentry
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8d2d786b-e621-456d-b087-3373df6f8ac5
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: eaf472a380acd62cddb2c20c35335ccb1e2ce07f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 285da82d143524d2b2cf73ed3e5f1e3aeef6f9b3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336716"
 ---
 # <a name="iaddrbooknewentry"></a>IAddrBook::NewEntry
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-アドレス帳コンテナー、または送信メッセージの受信者の一覧には、新しい受信者を追加します。
+新しい受信者をアドレス帳コンテナーまたは送信メッセージの受信者リストに追加します。
   
 ```cpp
 HRESULT NewEntry(
@@ -42,71 +42,71 @@ HRESULT NewEntry(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulUIParam_
+ _uluiparam_
   
-> [in]ダイアログ ボックスの親ウィンドウへのハンドル。
+> 順番ダイアログボックスの親ウィンドウへのハンドル。
     
  _ulFlags_
   
-> [in]使用されるテキストの種類を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番使用されるテキストの種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 渡された文字列は、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。
+> 渡された文字列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
     
- _cbEIDContainer_
+ _cbeidcontainer_
   
-> [in]_LpEIDContainer_パラメーターで指定されたエントリの識別子のバイト数です。 
+> 順番_lpeidcontainer_パラメーターで指定されたエントリ識別子のバイト数。 
     
- _lpEIDContainer_
+ _lpeidcontainer_
   
-> [in]新しい受信者を追加するコンテナーのエントリの識別子へのポインター。 _CbEIDContainer_パラメーターが 0 の場合は、 **NewEntry**メソッドは[IAddrBook::CreateOneOff](iaddrbook-createoneoff.md)メソッドが呼び出された場合と同様の受信者のエントリの識別子と、テンプレートの一覧を返します。 
+> 順番新しい受信者を追加するコンテナーのエントリ識別子へのポインター。 _cbeidcontainer_パラメーターが0の場合、 **newentry**メソッドは、 [IAddrBook:: createoneoff](iaddrbook-createoneoff.md)メソッドが呼び出された場合と同様に、受信者エントリ識別子とテンプレートのリストを返します。 
     
- _cbEIDNewEntryTpl_
+ _cbeidnewentrytpl_
   
-> [in]_LpEIDNewEntryTpl_パラメーターで指定されたエントリの識別子のバイト数です。 
+> 順番_lpeidnewentrytpl_パラメーターによって指摘されたエントリ識別子のバイト数。 
     
- _lpEIDNewEntryTpl_
+ _lpeidnewentrytpl_
   
-> [in]新しい受信者を作成するために使用する 1 回限りのテンプレートへのポインター。 0、 _cbEIDNewEntryTpl_し、 _lpEIDNewEntryTpl_が NULL の場合、 **NewEntry**は、ユーザーが新しいエントリを追加するためのテンプレートの一覧から選択できますダイアログ ボックスを表示します。 
+> 順番新しい受信者の作成に使用される1回限りのテンプレートへのポインター。 _cbeidnewentrytpl_が0で、 _lpeidnewentrytpl_が NULL の場合、 **newentry**は、ユーザーが新しいエントリを追加するためのテンプレートのリストから選択できるダイアログボックスを表示します。 
     
  _lpcbEIDNewEntry_
   
-> [out]_LppEIDNewEntry_パラメーターで指定されたエントリの識別子のバイト数へのポインター。 
+> 読み上げ_lppeidnewentry_パラメーターによって示されるエントリ識別子のバイト数へのポインター。 
     
- _lppEIDNewEntry_
+ _lppeidnewentry_
   
-> [out]新しい受信者のエントリの識別子へのポインターへのポインター。
+> 読み上げ新しい受信者のエントリ識別子へのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 新しいアドレス帳のエントリが正しく作成されました。
+> 新しいアドレス帳エントリが正常に作成されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**NewEntry**メソッドは、新しいアドレス帳のエントリ、または送信するメッセージに対処するために使用するコンテナーに直接追加するを作成します。 
+**newentry**メソッドは、コンテナーに直接追加したり、送信メッセージのアドレス指定に使用したりするために、新しいアドレス帳のエントリを作成します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-特定のコンテナーに追加する新しいエントリを設定する場合は、コンテナーのエントリの識別子とエントリの識別子のバイト数を_cbEIDContainer_に_lpEIDContainer_を設定します。 
+新しいエントリを特定のコンテナーに追加する場合は、 _lpeidcontainer_をコンテナーのエントリ id と_cbeidcontainer_に、エントリ識別子のバイト数に設定します。 
   
-送信メッセージの受信者の一覧に追加する新しいエントリを設定する場合は、NULL と 0 を_cbEIDContainer_に_lpEIDContainer_を設定します。 
+送信メッセージの受信者一覧に新しいエントリを追加する場合は、 _lpeidcontainer_を NULL に、 _cbeidcontainer_を0に設定します。 
   
-作成するエントリの種類を選択するのにはクライアント アプリケーションのユーザーを許可する場合は、 _cbEIDNewEntryTpl_内の 0 と_lpEIDNewEntryTpl_に NULL を渡します。 **NewEntry**メソッドには、MAPI の一時テーブルでサポートされている MAPI アドレス帳プロバイダーによって、セッションのテンプレートの一覧が表示されます。 各テンプレートには、1 つまたは複数のアドレスの種類の受信者のエントリを作成できます。 
+クライアントアプリケーションのユーザーが作成するエントリの種類を選択できるようにする場合は、 _lpeidnewentrytpl_で_cbeidnewentrytpl_および NULL に0を渡します。 **newentry**メソッドは、mapi でサポートされているテンプレートの一覧、およびセッション内の各アドレス帳プロバイダーによって mapi の1回限りのテーブルを表示します。 各テンプレートは、1つまたは複数のアドレスの種類の受信者エントリを作成できます。 
   
-新しいエントリのエントリの識別子を保持する場合は、 _lpcbEIDNewEntry_および_lppEIDNewEntry_パラメーターで有効なポインターを渡します。 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出すことによって操作を終了したら、このエントリの識別子を解放する責任があります。 
+新しいエントリのエントリ識別子を保持する場合は、 _lpcbEIDNewEntry_および_lppeidnewentry_パラメーターに有効なポインターを渡します。 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出すことで、このエントリ識別子を解放する責任があります。 
   
-変更可能なコンテナーに新しいエントリを追加するのには特定のテンプレートを使用するには、次の手順を使用します。
+特定のテンプレートを使用して、変更可能なコンテナーに新しいエントリを追加するには、次の手順を使用します。
   
-1. 開くには、移動先のコンテナーでは、 [IMAPISession::OpenEntry](imapisession-openentry.md)メソッドを呼び出すし、コンテナーのエントリの識別子を_lpEntryID_パラメーターを設定します。 
+1. [imapisession:: openentry](imapisession-openentry.md)メソッドを呼び出して、宛先コンテナーを開き、lな_tryid_パラメーターをコンテナーのエントリ識別子に設定します。 
     
-2. 、移動先のコンテナーの[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを呼び出すし、IID_IMAPITable に**PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) に_ulPropTag_パラメーターは、 _lpiid_パラメーターを設定します。 コンテナーでは、新しいエントリを作成するため、サポートされるすべてのテンプレートを一覧表示する一時テーブルを返します。 
+2. 転送先コンテナーの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出し、 _ulPropTag_パラメーターを**PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) に、 _lpiid_パラメーターを IID_IMAPITable に設定します。 コンテナーは、新しいエントリの作成に対してサポートされているすべてのテンプレートを一覧表示する1回限りのテーブルを返します。 
     
-3. 特定の種類のエントリを作成するためのテンプレートを表す行を取得します。 **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) の列では、テンプレートでサポートされているアドレスの種類を示します。
+3. 作成する特定の種類のエントリのテンプレートを表す行を取得します。 **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) 列は、テンプレートでサポートされているアドレスの種類を示します。
     
-4. **NewEntry**メソッドを呼び出すし、 _lpEIDNewEntryTpl_を選択したテンプレートのエントリの識別子に設定します。 エントリの識別子は、一時テーブル内のテンプレートの行から**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) の列になります。 _CbEIDContainer_の 0 と_lpEIDContainer_に NULL を渡します。 新しいエントリのエントリの識別子を保持する場合は、 _lppEIDNewEntry_パラメーターに有効なポインターを渡します。 
+4. **newentry**メソッドを呼び出し、 _lpeidnewentrytpl_を、選択したテンプレートのエントリ識別子に設定します。 エントリ id は、1回限りのテーブルのテンプレートの行の**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) 列になります。 _lpeidcontainer_で、 _cbeidcontainer_に0を渡し、NULL を渡します。 新しいエントリのエントリ識別子を保持する場合は、 _lppeidnewentry_パラメーターに有効なポインターを渡します。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -116,7 +116,7 @@ S_OK
   
 [IMAPIProp::OpenProperty](imapiprop-openproperty.md)
   
-[PidTagCreateTemplates 標準プロパティ Property](pidtagcreatetemplates-canonical-property.md)
+[PidTagCreateTemplates 標準プロパティ](pidtagcreatetemplates-canonical-property.md)
   
 [IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

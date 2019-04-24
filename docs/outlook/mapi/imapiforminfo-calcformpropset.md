@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: cc3ffb8d-9cc4-47d3-9aa9-02c3a5b7775c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7d0c044caf430c944d8912d050e4dbaba659c8b5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0b62c21348da71c1ee863f70d6e6a549a5d10003
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342127"
 ---
 # <a name="imapiforminfocalcformpropset"></a>IMAPIFormInfo::CalcFormPropSet
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームを使用するプロパティの完全なセットへのポインターを返します。
+フォームが使用するプロパティの完全なセットへのポインターを返します。
   
 ```cpp
 HRESULT CalcFormPropSet(
@@ -34,21 +34,21 @@ HRESULT CalcFormPropSet(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]返される文字列の種類を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 関数が返す文字列は、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。
+> 返される文字列は、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
     
- _ppFormPropArray_
+ _ppformproparray_
   
-> [out]返された[SMAPIFormPropArray](smapiformproparray.md)構造体へのポインターへのポインター。 
+> 読み上げ返された[smapiformproparray](smapiformproparray.md)の構造体へのポインターへのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -56,15 +56,15 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> か、MAPI_UNICODE フラグが設定された実装は Unicode をサポートしていないまたは MAPI_UNICODE が設定されていませんでしたし、実装は、Unicode だけをサポートしています。
+> MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
     
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MFCOutput.cpp  <br/> |_OutputFormInfo  <br/> |MFCMAPI は、オブジェクトの情報をフォームのデバッグ出力を作成するときに**IMAPIFormInfo::CalcFormPropSet**メソッドを使用します。  <br/> |
+|mfcoutput .cpp  <br/> |出力 forminfo (_c)  <br/> |mfcmapi は、フォーム情報オブジェクトのデバッグ出力を作成するときに**imapiforminfo:: CalcFormPropSet**メソッドを使用します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

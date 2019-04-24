@@ -1,5 +1,5 @@
 ---
-title: IMAPISessionShowForm
+title: imapisessionshowform
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 233cf936-34db-42d4-b5e3-17a93acb2009
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e9e0ad958acc40dd28f3d9aab9996c1b7a36f38a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8b90dee3958a20994f9a60d104ae714ad95307d3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335666"
 ---
 # <a name="imapisessionshowform"></a>IMAPISession::ShowForm
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームが表示されます。
+フォームを表示します。
   
 ```cpp
 HRESULT ShowForm(
@@ -45,59 +45,59 @@ HRESULT ShowForm(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulUIParam_
+ _uluiparam_
   
-> [in]フォームの親ウィンドウへのハンドル。
+> 順番フォームの親ウィンドウへのハンドル。
     
- _lpMsgStore_
+ _lpmsgstore_
   
-> [in]_LpParentFolder_パラメーターが指すフォルダーが含まれるメッセージ ・ ストアへのポインターです。 
+> 順番_lpparentfolder_パラメーターによって指定されたフォルダーを含むメッセージストアへのポインター。 
     
- _lpParentFolder_
+ _lpparentfolder_
   
-> [in]_UlMessageToken_パラメーターに関連付けられているメッセージが作成されたフォルダーへのポインター。 
+> 順番_ulmessagetoken_パラメーターに関連付けられたメッセージが作成されたフォルダーへのポインター。 
     
- _lpInterface_
+ _lpinterface_
   
-> [in]フォームに表示されるメッセージへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 _LpInterface_パラメーターは、NULL または IID_IMessage である必要があります。 NULL を渡すことは、標準的なインタ フェース、 [IMessage](imessageimapiprop.md)、使用中になります。 
+> 順番フォームに表示されるメッセージへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 _lpinterface_パラメーターは、NULL または IID_IMessage である必要があります。 NULL 結果を標準インターフェイス[IMessage](imessageimapiprop.md)で使用します。 
     
- _ulMessageToken_
+ _ulmessagetoken_
   
-> [in]フォームに表示されるメッセージに関連付けられているトークンです。 [IMAPISession::PrepareForm](imapisession-prepareform.md)の以前の呼び出しからは、 _lpulMessageToken_パラメーターの内容を_ulMessageToken_パラメーターを設定しなければなりません。
+> 順番フォームに表示されるメッセージに関連付けられているトークン。 _ulmessagetoken_パラメーターは、以前の imapisession への呼び出しの_lアウト messagetoken_パラメーターの内容に設定する必要があります。 [:P repareform](imapisession-prepareform.md)。
     
- _lpMessageSent_
+ _lpメッセージ ent_
   
-> [in]予約されています。NULL である必要があります。 
+> 順番予約語NULL である必要があります。 
     
  _ulFlags_
   
-> [in]メッセージを保存する方法とするかどうかを制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番メッセージを保存する方法と方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_NEW_MESSAGE 
   
-> メッセージが保存されていない (つまり、 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドはそのことはありませんが呼び出されました)。 
+> メッセージが一度も保存されていません (つまり、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドが呼び出されていない)。 
     
 MAPI_POST_MESSAGE 
   
-> メッセージは、その親フォルダーに保存する必要があります。 メッセージを送信するのには処理されませんが、代わりに、フォルダーに投稿します。 このフラグが設定されていない場合メッセージが送信トレイにコピーされを送信するための処理します。 
+> メッセージは、親フォルダーに保存する必要があります。 メッセージは送信用に処理されませんが、代わりにフォルダーに投稿されます。 このフラグが設定されていない場合、メッセージは送信トレイにコピーされ、送信用に処理されます。 
     
- _ulMessageStatus_
+ _ulmessagestatus_
   
-> [in]_UlMessageToken_パラメーターのトークンに関連付けられたメッセージの**PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) のプロパティからコピーしたフラグのビットマスクです。 フラグは、メッセージの状態に関する情報を提供します。 
+> 順番_ulmessagetoken_パラメーターのトークンに関連付けられているメッセージの**PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) プロパティからコピーされたフラグのビットマスク。 フラグは、メッセージの状態に関する情報を提供します。 
     
- _ulMessageFlags_
+ _ulmessageflags_
   
-> [in]_UlMessageToken_パラメーターのトークンに関連付けられたメッセージの**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) のプロパティからコピーしたフラグのビットマスクです。 これらのフラグさらに、メッセージの状態に関する情報を提供します。 
+> 順番_ulmessagetoken_パラメーターのトークンに関連付けられているメッセージの**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティからコピーされたフラグのビットマスク。 これらのフラグは、メッセージの状態に関する詳細情報を提供します。 
     
- _ulAccess_
+ _ulaccess_
   
-> [in]フォームに表示されるメッセージのアクセス許可レベルを示すフラグです。 この情報は、 _ulMessageToken_パラメーターのトークンに関連付けられたメッセージの ([PidTagAccess](pidtagaccess-canonical-property.md)) である**PR_ACCESS**プロパティからコピーされます。 
+> 順番フォームに表示されるメッセージのアクセス許可レベルを示すフラグ。 この情報は、 _ulmessagetoken_パラメーターのトークンに関連付けられているメッセージの**PR_ACCESS** ([PidTagAccess](pidtagaccess-canonical-property.md)) プロパティからコピーされます。 
     
- _lpszMessageClass_
+ _lpszmessageclass_
   
-> [in]**PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) は、 _ulMessageToken_パラメーターのトークンに関連付けられているメッセージのコピーをフォームに表示されているメッセージのメッセージ クラスへのポインター。 
+> 順番フォームに表示されているメッセージのメッセージクラスへのポインター。 _ulmessagetoken_パラメーターのトークンに関連付けられているメッセージの**PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) プロパティからコピーします。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -105,25 +105,25 @@ S_OK
     
 MAPI_E_USER_CANCEL 
   
-> ユーザー操作がキャンセルされました、通常ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 
+> ユーザーが操作をキャンセルしました。通常は、ダイアログボックスの **[キャンセル**] ボタンをクリックします。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPISession::ShowForm**メソッドには、 **IMAPISession::PrepareForm**メソッドによって準備されているメッセージ フォームが表示されます。 
+**imapisession:: showform**メソッドは、 **imapisession::P repareform**メソッドによって準備されたメッセージフォームを表示します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**PrepareForm**メソッドの_lpMessage_パラメーターで渡されたメッセージに対する単一の参照だけが必要です。 
+**PrepareForm**メソッドの_lpmessage_パラメーターで渡されるメッセージへの参照は1つだけにする必要があります。 
   
-フォームの実装が MAPI によって記載されているものとは別のエラー値を返すことに注意します。 これらのエラー値を使用すると、エラー状態のより正確な判断を下すため、これの操作を行います。 MAPI_E_CALL_FAILED とそれ以外の場合、これらのエラーを処理します。 
+フォーム実装は、MAPI で文書化されているもの以外のエラー値を返すことができることに注意してください。 これらのエラー値を使用して、エラー条件をより正確に判断できるようにする場合は、このようにします。 それ以外の場合は、MAPI_E_CALL_FAILED を処理するのと同様に、これらのエラーを処理します。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIFormFunctions.cpp  <br/> |OpenMessageModal  <br/> |MFCMAPI では、モーダル形式でメッセージを表示するのには、 **PrepareForm**メソッドと**IMAPISession::ShowForm**メソッドを使用します。  <br/> |
+|MAPIFormFunctions  <br/> |openmessagemodal  <br/> |mfcmapi は、 **imapisession:: showform**メソッドを**PrepareForm**メソッドと共に使用して、モーダルフォームにメッセージを表示します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

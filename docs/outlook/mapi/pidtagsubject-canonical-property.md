@@ -13,11 +13,11 @@ api_type:
 ms.assetid: aa7ba4d9-c5e0-4ce7-a34e-65f675223bc9
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0cf9e9f8c10f8d27bd174b8b6f2bf19812dc269d
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339257"
 ---
 # <a name="pidtagsubject-canonical-property"></a>PidTagSubject 標準プロパティ
 
@@ -25,54 +25,54 @@ ms.locfileid: "25386307"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-全メッセージの件名が含まれています。
+メッセージの完全な件名を含みます。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |あるの PR_SUBJECT、PR_SUBJECT_A、PR_SUBJECT_W  <br/> |
+|関連するプロパティ:  <br/> |PR_SUBJECT、PR_SUBJECT_A、PR_SUBJECT_W  <br/> |
 |識別子:  <br/> |0x0037  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|エリア:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |一般的なメッセージング  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-これらのプロパティは、すべてのメッセージ オブジェクトに対して推奨されています。 
+これらのプロパティは、すべてのメッセージオブジェクトで推奨されます。 
   
-これらのプロパティは、常にフルの件名のテキストをプレフィックスと正規化された件名を連結したものでは、です。 プレフィックスがない場合は、正規化された件名は、件名の場合と同じにします。 メッセージを保存またはトランスポートのこれらのプロパティとルールを使用する正規化された件名を計算するために**されて**([PidTagSubjectPrefix](pidtagsubjectprefix-canonical-property.md)) のプロパティの両方は、 **PR_NORMALIZED_SUBJECT** ([で説明されているプロバイダーの使用PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md))。
+これらのプロパティは常に、完全な件名のテキスト (プレフィックスと正規化された件名の連結) です。 プレフィックスがない場合は、正規化された件名を件名と同じにする必要があります。 メッセージストアまたはトランスポートプロバイダーは、これらのプロパティと**PR_SUBJECT_PREFIX** ([PidTagSubjectPrefix](pidtagsubjectprefix-canonical-property.md)) プロパティの両方を使用して、 **PR_NORMALIZED_SUBJECT**に記述されている規則を使用して正規化されたサブジェクトを計算します ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md))
   
-256 文字は、通常は短い文字列は、件名のプロパティと、メッセージ ストア プロバイダーがそれらに**IStream**インターフェイスをサポートする義務を負いません。 クライアントは、 **IMAPIProp**インターフェイスを介してアクセスを最初に試行し、 **MAPI_E_NOT_ENOUGH_MEMORY**が返された場合にのみ、 **IStream**に頼る必要があります常に。 
+件名のプロパティは通常、256文字未満の小さな文字列で、メッセージストアプロバイダーは、それらの**IStream**インターフェイスをサポートする義務がありません。 クライアントは、常に**imapiprop**インターフェイスを使用してアクセスを試行し、 **MAPI_E_NOT_ENOUGH_MEMORY**が返された場合にのみ**IStream**に頼る必要があります。 
   
-レポートの場合は、このプロパティは、元のメッセージの件名の前に、メッセージに何が起こったかを示す文字列を含みます。
+レポートの場合、このプロパティには、メッセージに対して発生したことを示す文字列が前にある、元のメッセージの件名が含まれます。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルのオブジェクトを処理します。
+> メッセージと添付ファイルオブジェクトを処理します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 17b4af7f-7967-422b-996c-792705c93ad3
-description: ソーシャル ネットワークにログオン中のユーザーのフレンドとして、emailAddresses パラメーターと displayName パラメーターで識別されるユーザーを追加します。
-ms.openlocfilehash: 2f4df9afc4c769cce0502792373702c1281fcad7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: emailaddresses および displayName パラメーターで指定された人物を、ソーシャルネットワーク上のログオンユーザーのフレンドとして追加します。
+ms.openlocfilehash: b44b442ba928b48411e5b1fc8a0c8b76477022ae
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339656"
 ---
 # <a name="isocialsession2followpersonex"></a>ISocialSession2::FollowPersonEx
 
-ソーシャル ネットワークにログオン中のユーザーのフレンドとして、 _emailAddresses_パラメーターと_displayName_パラメーターで識別されるユーザーを追加します。 
+_emailaddresses_および_displayName_パラメーターで指定された人物を、ソーシャルネットワーク上のログオンユーザーのフレンドとして追加します。 
   
 ```cpp
 HRESULT _stdcall FollowPersonEx([in] SAFEARRAY(BSTR) emailAddresses, [in] BSTR displayName);
@@ -27,21 +27,21 @@ HRESULT _stdcall FollowPersonEx([in] SAFEARRAY(BSTR) emailAddresses, [in] BSTR d
 
 _emailAddresses_
   
-> [in]ソーシャル ネットワーク上のユーザーの 1 つまたは複数の有効な SMTP アドレスを含む配列です。
+> 順番ソーシャルネットワーク上の個人の1つまたは複数の有効な SMTP アドレスが格納された配列。
     
 _displayName_
   
-> [in]友人として追加するユーザーの表示名を含む文字列です。
+> 順番フレンドとして追加する人物の表示名を含む文字列。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-Outlook ソーシャル コネクタ (OSC) は、多くの場合よりも OSC プロバイダー、 **emailAddresses**パラメーターの配列内の SMTP アドレスの最初の要素は、プライマリ SMTP アドレスと仮定できます。 
+Outlook Social Connector (.osc) が**emailaddresses**パラメーターの配列内の SMTP アドレスよりも多い場合、.osc プロバイダーは最初の要素がプライマリ SMTP アドレスであると見なすことができます。 
   
-プロバイダーは**機能**XML で**は** **followPerson**要素を設定するには、ネットワーク上のユーザーが一致する_emailAddresses_の要素がない場合、プロバイダーは、OSC_E_NOT_FOUND エラーを返す必要があります。 設定した場合、プロバイダー **followPerson** **false**として**の機能**で、プロバイダーは、OSC_E_FAIL エラーを返す必要があります。 
+プロバイダーが [**機能**] XML **** で [ **true** ] に設定されている場合、_電子メールアドレス_のどの要素もネットワーク上のユーザーと一致しない場合、プロバイダーは OSC_E_NOT_FOUND エラーを返す必要があります。 プロバイダーが**権限**で OSC_E_FAIL **** を**false**として設定している場合、プロバイダーはエラーを返す必要があります。 
   
-**FollowPersonEx**メソッドが成功した場合、プロバイダー文字列を使用できます、 _displayName_パラメーターで SMTP アドレスを使用してユーザーをアドレス指定するのではなく、その後友人に確認の電子メールでユーザーに対応します。 その一方で、プロバイダーがあります OSC の_displayName_パラメーターに空の文字列を渡すことを処理するために。 
+このメソッド**** が正常に実行された場合、プロバイダーは_displayName_パラメーターの文字列を使用して、SMTP アドレスでその人物にアドレス指定するのではなく、その人物に対して任意のフレンドリな確認メールを送信することができます。 一方、プロバイダーは、 _displayName_パラメーターに空の文字列を渡して、.osc を処理できる必要があります。 
   
-プロバイダーは、 [ISocialSession2](isocialsession2iunknown.md)インターフェイスを実装するし、 **true**では、XML の機能として**followPerson**を設定するには、OSC は、 [ISocialSession::FollowPerson](isocialsession-followperson.md)の代わりに**FollowPersonEx**を呼び出します。 プロバイダーは、 **true**として**followPerson**を設定しましたが、 **ISocialSession2**インターフェイスを実装しません、 **FollowPersonEx**が OSC_E_NOTIMPL のエラーを返す場合、OSC は**ISocialSession::FollowPerson**を呼び出します。
+プロバイダーが[ISocialSession2](isocialsession2iunknown.md)インターフェイスを実装していて**** 、capabilities XML に**true**として設定されて**** いる場合、.osc は、 [i alsession::](isocialsession-followperson.md)という形式ではなく、次のようにします。 プロバイダーが**true**とし**** て**ISocialSession2**インターフェイスを実装していない場合、または**** OSC_E_NOTIMPL エラーが発生した場合、.osc は**i alsession::** という名前を呼び出します。
   
 ## <a name="see-also"></a>関連項目
 

@@ -12,51 +12,51 @@ api_type:
 - HeaderDef
 ms.assetid: b0f5393b-f923-4802-8ea0-daf58cd4bace
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 545249f4777abc7d1a0a566631c777a6a1ba190b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0a93105f01502ae5b12e0bc8c6f2daa63693959b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334357"
 ---
 # <a name="pidtagcontactaddressbookstoreentryids-canonical-property"></a>PidTagContactAddressBookStoreEntryIds 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-帳のエントリが見つかった連絡先のアドレスとして機能するフォルダー内のストアのエントリ Id が含まれています。
+連絡先アドレス帳のエントリとして機能するフォルダーが見つかったストアのエントリ id を格納します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_CONTAB_STORE_ENTRYIDS  <br/> |
 |識別子:  <br/> |0x6626  <br/> |
 |データの種類 :   <br/> |PT_MV_BINARY  <br/> |
-|領域:  <br/> |連絡先のアドレス帳  <br/> |
+|エリア:  <br/> |連絡先のアドレス帳  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-これは、アドレス帳の連絡先のプロファイル セクションのプロパティです。
+これは、連絡先のアドレス帳の [プロファイル] セクションのプロパティです。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: c820cb95-92e8-5d56-22d7-0a984acc6c59
 description: 角度のタンジェントを返します。
-ms.openlocfilehash: 508bc704c3256072a927143ea2f7f656357da0a2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9ece28baa29f1fdc7d7d31938dc83d8f68f8982d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332348"
 ---
 # <a name="tan-function-visioshapesheet"></a>TAN 関数 (VisioShapeSheet)
 
@@ -22,21 +22,21 @@ ms.locfileid: "19806615"
   
 ## <a name="syntax"></a>構文
 
-TAN (* **角度** *) 
+TAN (* * *angle* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _角度_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |タンジェントを取得する対象の角度です。  <br/> |
+| _直交_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |タンジェントを取得する角度を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
 数値型 (Numeric)
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-TAN 関数では、*角度*で別の測定単位を指定する場合を除き、ラジアンが使用されます。 
+TAN 関数では、*角度*に別の単位を指定しない限り、ラジアンが使用されます。 
   
 ## <a name="example"></a>例
 

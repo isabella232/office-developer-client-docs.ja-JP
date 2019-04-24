@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: 746d63fa-bfb7-479f-94dc-ba40011c1ec9
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7bcaf230eed9cf21388b68f06ab678dc143f64ee
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0c33633c4decd697cf241f8b7c27360f776a1ade
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332761"
 ---
 # <a name="proptype"></a>PROP_TYPE
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-指定されたプロパティ タグのプロパティの型を返します。
+指定したプロパティタグのプロパティの種類を返します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |[SPropValue](spropvalue.md) <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |[SPropValue](spropvalue.md) <br/> |
    
 ```cpp
 PROP_TYPE (ulPropTag)
@@ -40,13 +40,13 @@ PROP_TYPE (ulPropTag)
 
  _ulPropTag_
   
-> プロパティ タグを取得するプロパティの型が含まれています。
+> 返されるプロパティの型を含む property タグ。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-プロパティの種類を調べるには、 **PROP_TYPE**マクロを使用できます。 PT_BINARY が返される値の PROP_TYPE (**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))) の結果を呼び出すなどです。
+**PROP_TYPE**マクロを使用して、プロパティの種類を調べることができます。 たとえば、PROP_TYPE (**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))) を呼び出すと、値 PT_BINARY が返されます。
   
-プロパティのすべてのタグには、下位ワード (ビット 0 ~ 15) のプロパティの型と、上位ワード (16 ~ 31 のビット) のプロパティの識別子が含まれています。 **PROP_TYPE**マクロは、プロパティの型を抽出し返される整数の 15 からビット 0 に配置します。 戻り値の残りのビットは、0 に設定されます。 
+すべてのプロパティタグには、下位ワード (ビット 0 ~ 15) のプロパティの種類と、上位ワード (ビット 16 ~ 31) のプロパティの識別子が含まれています。 **PROP_TYPE**マクロは、プロパティの型を抽出し、それをビット 0 ~ 15 の整数に設定して返します。 戻り値の残りのビットは0に設定されます。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -55,5 +55,5 @@ PROP_TYPE (ulPropTag)
 [SPropValue](spropvalue.md)
 
 
-[構造体に関連するマクロ](macros-related-to-structures.md)
+[構造に関連するマクロ](macros-related-to-structures.md)
 

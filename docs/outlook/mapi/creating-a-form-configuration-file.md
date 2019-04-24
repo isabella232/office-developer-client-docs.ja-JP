@@ -1,5 +1,5 @@
 ---
-title: フォーム構成ファイルの作成
+title: フォーム構成ファイルを作成する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,29 +7,29 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: aaf3b33d-ad2d-4ef8-847f-1ab1eaf08706
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d8159d93aef020d7c9c1b56be4cf6256f80b8aa3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 97ecafb2e4159c680fd23607f5ed6f8ea3156de7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32333020"
 ---
-# <a name="creating-a-form-configuration-file"></a>フォーム構成ファイルの作成
+# <a name="creating-a-form-configuration-file"></a>フォーム構成ファイルを作成する
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォーム構成ファイルは、フォーム マネージャーを使用しているとクライアント アプリケーションの両方のフォームに関する情報を提供します。 フォーム構成ファイルには、メッセージング クライアント、フォームによって実装された動詞およびフォームでサポートされているプラットフォームで使用するフォームによって公開されたプロパティを含むフォームの場合、広範な仕様が含まれています。
+フォーム構成ファイルは、使用されているフォームマネージャーとクライアントアプリケーションの両方のフォームに関する情報を提供します。 フォーム構成ファイルには、フォームについての詳細な仕様が含まれています。これには、メッセージングクライアントで使用するためにフォームによって発行されるプロパティ、フォームによって実装される動詞、フォームでサポートされているプラットフォームが含まれます。
   
-フォーム構成ファイルは、.cfg ファイルの拡張子を持つファイル、Windows の初期化ファイルのような形式には プレーン テキスト ファイル セクションの数とすることをお勧めします。 各セクションは、セクション名を角かっこで囲まれているから始まります。 各セクションには、値およびそのセクションに関連する設定を定義する 1 つまたは複数の行が含まれています。 次の種類のいずれかの値があります。
+フォーム構成ファイルは、拡張子が cfg のファイルで、Windows 初期化ファイルに似た形式になっています。 これは、いくつかのセクションがあるプレーンテキストファイルです。 各セクションは、角かっこで囲まれたセクション名で始まります。 各セクションには、そのセクションに関連する値と設定を定義する1つまたは複数の行が含まれています。 値の型は次のいずれかです。
   
 - String
     
 - 表示される文字列
     
-- プラットフォームの文字列
+- プラットフォーム文字列
     
 - パス名
     
@@ -37,11 +37,11 @@ ms.locfileid: "22584170"
     
 - GUID
     
-.Cfg ファイルのセクションの詳細については、[フォーム構成ファイルの形式のファイル](file-format-of-form-configuration-files.md)を参照してください。
+cfg ファイルのセクションの詳細については、「[フォーム構成ファイルのファイル形式](file-format-of-form-configuration-files.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI フォーム サーバーの開発](developing-mapi-form-servers.md)
+[MAPI フォームサーバーの開発](developing-mapi-form-servers.md)
 

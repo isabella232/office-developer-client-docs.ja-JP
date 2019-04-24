@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7ac2a8d4-6890-4346-a6b6-34deca9dab50
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 3732d8cbfaf9a6a10c62eae9e7a12b04de8a80ee
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 326a78ed512ec82a9f16b1540aad60954ab2d864
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338410"
 ---
 # <a name="iablogongetoneofftable"></a>IABLogon::GetOneOffTable
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-送信メッセージの受信者の一覧に追加する受信者を作成するための 1 回限りのテンプレートのテーブルを返します。
+送信メッセージの受信者リストに追加する受信者を作成するための、1回限りのテンプレートのテーブルを返します。
   
 ```cpp
 HRESULT GetOneOffTable(
@@ -34,41 +34,41 @@ HRESULT GetOneOffTable(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]テーブルに含まれている文字列型の列の種類を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番テーブルに含まれる文字列型 (string) の列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> Unicode 形式では、文字列型の列です。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列型の列です。
+> 文字列列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列列は ANSI 形式になります。
     
- _lppTable_
+ _lpptable_
   
-> [out]一時テーブルへのポインターへのポインター。
+> 読み上げ1回限りのテーブルへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 一時テーブルが正常に取得しました。
+> 1回限りのテーブルが正常に取得されました。
     
 MAPI_E_BAD_CHARWIDTH 
   
-> MAPI_UNICODE フラグが設定されたアドレス帳プロバイダーが Unicode をサポートしていないまたは MAPI_UNICODE が設定されていませんでしたし、アドレス帳プロバイダーは、Unicode だけをサポートしています。
+> MAPI_UNICODE フラグが設定されていて、アドレス帳プロバイダーが unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、アドレス帳プロバイダーが unicode のみをサポートしています。
     
 MAPI_E_NO_SUPPORT 
   
-> アドレス帳プロバイダーは、1 回限りのテンプレートを提供していません。
+> アドレス帳プロバイダーでは、1回限りのテンプレートは提供されません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-MAPI では、受信者を作成するのには使用可能な 1 回限りのテンプレートを作成する**GetOneOffTable**メソッドを呼び出します。 新しい受信者は、送信メッセージの受信者の一覧に追加されます。 アドレス帳プロバイダーは、MAPI のテンプレートの変更を通知するために一時テーブルの通知をサポートする必要があります。 MAPI では、動的更新を有効にするのには開いている一時テーブルを保持します。 
+MAPI は、 **getoneofftable**メソッドを呼び出して、受信者を作成するために1回限りのテンプレートを使用できるようにします。 新しい受信者が送信メッセージの受信者一覧に追加されます。 アドレス帳プロバイダーは、テンプレートの変更を MAPI に通知するために、1回限りのテーブルに対する通知をサポートする必要があります。 MAPI は、動的更新を有効にするために、1回限りのテーブルを開いたままにします。 
   
-アドレス帳プロバイダーは、そのコンテナーの一時テーブルをサポートできます。 呼び出し元は、コンテナーの[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを呼び出すと、 **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) のプロパティを要求して、この一時テーブルを取得します。 このテーブルを使用できるテンプレートを使用すると、コンテナーに受信者を追加します。 一時テーブルの 2 つの種類の違いについては、[一時テーブルを実装する](implementing-one-off-tables.md)を参照してください。
+また、アドレス帳プロバイダーは、各コンテナーに対して1回限りのテーブルをサポートすることもできます。 発信者は、コンテナーの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出して、 **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) プロパティを要求することによって、この1回限りのテーブルを取得します。 この表で使用できるテンプレートは、受信者をコンテナーに追加するために使用されます。 2種類の一度限りのテーブルの違いについては、「 [1 回限りのテーブルの実装](implementing-one-off-tables.md)」を参照してください。
   
-アドレス帳プロバイダーの一時テーブルに必要な列のリストは、[一時テーブル](one-off-tables.md)を参照してください。
+アドレス帳プロバイダーの1回限りのテーブルで必要な列の一覧については、「 [1 回限りのテーブル](one-off-tables.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

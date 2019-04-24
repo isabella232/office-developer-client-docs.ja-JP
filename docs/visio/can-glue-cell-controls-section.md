@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 1c4c4ae2-b3fa-ed45-c6e5-22bedb2523db
 description: コントロール ハンドルを他の図形に接着できるかを指定します。
-ms.openlocfilehash: c7b6764e25deab3345b7b3cecd6cf12dde74a84c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2f5e65ab72c584f88b56e273b0d73abf969a6588
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337255"
 ---
-# <a name="can-glue-cell-controls-section"></a>[Can Glue] セル ([コントロール] セクション)
+# <a name="can-glue-cell-controls-section"></a>[Can Glue] セル ([Controls] セクション)
 
 コントロール ハンドルを他の図形に接着できるかを指定します。
   
@@ -25,20 +25,20 @@ ms.locfileid: "19804930"
 | TRUE  <br/> | コントロール ハンドルを接着できます。  <br/> |
 | FALSE  <br/> | コントロール ハンドルを接着できません。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Can Glue] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | 制御します。  *名*です。CanGluewhere を制御します。  *名*は、コントロールの行の名前です。  <br/> |
+| セル名 :  <br/> | 管理.  *名前*です。CanGluewhere コントロール  *name*は、コントロール行の名前です。  <br/> |
    
 プログラムから、インデックスによって [Can Glue] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionControls** <br/> |
-| 行インデックス:  <br/> |**visRowControl** +  *i* 、 *i* = 0、1、2、.  <br/> |
-| セル インデックス:  <br/> |**visCtlGlue** <br/> |
+| 行インデックス:  <br/> |**visRowControl** +  *i* = ** 0、1、2、...  <br/> |
+| セル インデックス:  <br/> |**visctlglue** <br/> |
    
 

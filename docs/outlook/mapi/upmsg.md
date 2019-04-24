@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5fe3956b-819a-3edf-0e49-7a44bcfbabcd
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: fa8b84e7baed74bda25ec1b20bd79fb121a838fd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 1e0e2f9b794c4cee25488a754290922e58b7658d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338872"
 ---
 # <a name="upmsg"></a>UPMSG
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[メッセージの状態をアップロード](upload-message-state.md)する際に Outlook アイテムをアップロードする方法の詳細については。
+[アップロードメッセージの状態](upload-message-state.md)中に Outlook アイテムをアップロードするための情報。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -38,89 +38,89 @@ struct UPMSG
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  _ulFlags_
   
-> [out]/[in] アップロード中に、適切な動作を決定するフラグ。 
+> [out]/[in] フラグを指定して、アップロード中の適切な動作を決定します。 
     
   - UPM_ASSOC
     
-    - [out]項目に関連付けられています。
+    - 読み上げ項目が関連付けられています。
     
   - UPM_NEW
     
-    - [out]新しい項目。 
+    - 読み上げ新しいアイテム。 
     
   - UPM_MOV
     
-    - [out]項目をここに移動しました。
+    - 読み上げアイテムはここに移動されました。
     
   - UPM_MOD_PROPS
     
-    - [out]アイテムのプロパティが変更されました。
+    - 読み上げアイテムのプロパティが変更されました。
     
   - UPM_HEADER
     
-    - [out]メッセージ ヘッダーの項目です。
+    - 読み上げアイテムはメッセージヘッダーです。
     
   - UPM_OK
     
-    - [in]アップロードが正常に完了しました。 クライアントでは、情報をサーバーにアップロードした後、これを設定します。
+    - 順番アップロードに成功しました。 クライアントは、情報をサーバーにアップロードした後にこれを設定します。
     
   - UPM_MOVED
     
-    - [in]項目が正常に移動されました。
+    - 順番アイテムは正常に移動されました。
     
   - UPM_COMMIT
     
-    - [in]今すぐアップロードの状態を反映します。
+    - 順番今すぐアップロードの状態をコミットします。
     
   - UPM_DELETE
     
-    - [in]アイテムを今すぐ削除します。
+    - 順番今すぐアイテムを削除します。
     
   - UPM_SAVE
     
-    - [in]アイテムに変更を保存します。
+    - 順番アイテムへの変更を保存します。
     
 _pmsg_
   
-> [out]アイテム オブジェクトを開きます。 **LPMESSAGE**の型定義の mapidefs.h を参照してください。 
+> 読み上げアイテムオブジェクトを開きます。 **lpmessage**の種類の定義については、「mapidefs.h」を参照してください。 
     
 _meid_
   
-> [out]アイテムのエントリ ID です。
+> 読み上げアイテムのエントリ ID。
     
 _binReserved1_
   
-> [in]このメンバーは、Outlook の内部使用に予約されている、サポートされていません。 
+> 順番このメンバーは、Outlook の内部使用のために予約されており、サポートされていません。 
     
 _binReserved2_
   
-> [in]このメンバーは、Outlook の内部使用に予約されている、サポートされていません。 
+> 順番このメンバーは、Outlook の内部使用のために予約されており、サポートされていません。 
     
 _feid_
   
-> [out]項目が移動された場合、元のフォルダーのエントリ ID です。
+> 読み上げアイテムが移動された場合は、ソースフォルダーのエントリ ID。
     
 _binChg_
   
-> [out]項目が移動された場合は、同期先の項目のキーを変更します。 **SBinary**の型の定義の mapidefs.h を参照してください。 
+> 読み上げアイテムが移動された場合は、コピー先アイテムのキーを変更します。 **sbinary**の型定義については、「mapidefs.h」を参照してください。 
     
-_binPcl_
+_binpcl_
   
-> [out]項目が移動された場合は、同期先の項目の一覧を変更します。 **SBinary**の型の定義の mapidefs.h を参照してください。 
+> 読み上げアイテムが移動された場合は、コピー先アイテムのリストを変更します。 **sbinary**の型定義については、「mapidefs.h」を参照してください。 
     
-_skeySrc_
+_skeysrc_
   
-> [out]項目が移動された場合、元の項目のソースのキーです。
+> 読み上げアイテムが移動された場合は、ソースアイテムのソースキー。
     
 ## <a name="see-also"></a>関連項目
 
 - [レプリケーション API について](about-the-replication-api.md)
-- [レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
-- [MAPI �萔](mapi-constants.md)
+- [レプリケーション状態のマシンについて](about-the-replication-state-machine.md)
+- [MAPI 定数](mapi-constants.md)
 - [FEID](feid.md)
 - [MEID](meid.md)
 - [SKEY](skey.md)

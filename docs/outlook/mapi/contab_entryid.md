@@ -8,24 +8,24 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 84251222-dac4-4f4d-97b9-aa0e2cd26c44
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ff088dc5bf62f407692c9eec649ff388f79d549d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a2a204f76b62c8c6bc6d8a4e793c936a0184dc65
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335078"
 ---
 # <a name="contabentryid"></a>CONTAB_ENTRYID
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-連絡先フォルダーのエントリ ID が含まれています。
+連絡先フォルダーのエントリ ID を格納します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |msomapiutil.h  <br/> |
+|ヘッダー ファイル:  <br/> |msomapiutil  <br/> |
    
 ```cpp
 #pragma pack(4) 
@@ -44,48 +44,48 @@ typedef struct _contab_entryid
 
 ## <a name="members"></a>Members
 
- **abFlags**
+ **abflags**
   
-> オブジェクトを記述する情報を提供するフラグのビットマスクです。 詳細については、[エントリ ID](entryid.md)の構造体の**abFlags**フィールドの説明を参照してください。 
+> オブジェクトについての情報を提供するフラグのビットマスク。 詳細については、 [ENTRYID](entryid.md)構造の**abflags**フィールドの説明を参照してください。 
     
  **muid**
   
-> ストア プロバイダーを識別する GUID。
+> ストアプロバイダーを識別する GUID。
     
- **ulVersion**
+ **ulversion**
   
-> **CONTAB_ENTRYID**構造体のバージョン番号です。 CONTAB_VERSION に設定する必要があります。 
+> **CONTAB_ENTRYID**構造体のバージョン番号。 CONTAB_VERSION に設定する必要があります。 
     
- **ulType**
+ **ultype**
   
-> 連絡先のエントリ ID の種類を表す整数。 次の値のいずれかを指定する必要があります。
+> 連絡先エントリ ID の種類を表す整数。 次のいずれかの値であることが必要です。
     
-|**名前**|**説明**|
+|**[名前]**|**[説明]**|
 |:-----|:-----|
-|CONTAB_USER  <br/> |���b�Z�[�W���O ���[�U�[ �I�u�W�F�N�g�ł��B  <br/> |
+|CONTAB_USER  <br/> |メッセージングを処理するユーザー オブジェクトです。  <br/> |
 |CONTAB_DISTLIST  <br/> |�z�z���X�g �I�u�W�F�N�g�ł��B  <br/> |
    
- **ulIndex**
+ **ulindex**
   
-> 電子メールのプロパティのサブセットへのインデックスです。
+> 電子メールプロパティのサブセットに対するインデックス。
     
  **cbeid**
   
-> 連絡先アドレス帳内のこのエントリに関連付けられている取引先担当者のメッセージのエントリ id のサイズです。
+> 連絡先のアドレス帳で、このエントリに関連付けられている連絡先メッセージのエントリ id のサイズ。
     
  **abeid**
   
-> 連絡先アドレス帳内のこのエントリに関連付けられている取引先担当者のメッセージのエントリ id です。
+> 連絡先アドレス帳のこのエントリに関連付けられている連絡先メッセージのエントリ識別子。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-連絡先のアドレス帳は、アドレス帳を電子メール アドレスまたは fax 番号のいずれかを持つ連絡先フォルダー内のすべての連絡先アイテムを含むです。 連絡先のアドレス帳内の各エントリは、電子メール アドレスまたは fax 番号のいずれかに関連付けられます。 連絡先アイテムは、最大 3 つの電子メール アドレスを持つことができますので、3 つの fax 番号を 6 つまでのエントリに対応する連絡先のアドレス帳で連絡先アイテムを表すことができます。
+連絡先アドレス帳は、電子メールアドレスまたは fax 番号のいずれかの連絡先フォルダー内のすべての連絡先アイテムを含むアドレス帳です。 連絡先のアドレス帳の各エントリは、電子メールアドレスまたは fax 番号と関連付けられています。 連絡先アイテムは最大3つの電子メールアドレスと3つの fax 番号を持つことができるので、連絡先アイテムは対応する連絡先アドレス帳の最大6つのエントリで表すことができます。
   
-連絡先のアドレス帳の目的は、ユーザーの連絡先フォルダーの連絡先に電子メール メッセージのアドレス指定をサポートします。 Contab32.dll を Microsoft Outlook 2010 と Microsoft Outlook 2013 でサポートされる連絡先のアドレス帳プロバイダーには。
+連絡先アドレス帳の目的は、連絡先フォルダー内の連絡先に電子メールメッセージを送信するユーザーをサポートすることです。 microsoft outlook 2010 および microsoft outlook 2013 がサポートしている連絡先アドレス帳プロバイダーは contab32 です。
   
-**CONTAB_ENTRYID**構造体は、基になる MAPI 連絡先メッセージに表示される情報のサブセットをサポートします。 特定の連絡先のアドレス帳エントリが関連付けられている取引先担当者のメッセージを識別します。 
+**CONTAB_ENTRYID**構造体は、基になる MAPI 連絡先メッセージ内に存在する情報のサブセットをサポートします。 特定の連絡先アドレス帳エントリに関連付けられている連絡先メッセージを識別します。 
   
-**Cbeid**と**abeid**フィールドは、 **ulType**フィールドの値は、CONTAB_DISTLIST または CONTAB_USER に設定されている場合にのみ有効です。 **UlType**フィールドの値を設定するには CONTAB_ROOT、CONTAB_SUBROOT、または CONTAB_CONTAINER、 [DIR_ENTRYID](dir_entryid.md)構造体を代わりに使用する必要があります。 
+**cbeid**および**abeid**フィールドは、 **ultype**フィールドの値が CONTAB_DISTLIST または CONTAB_USER に設定されている場合にのみ有効です。 **ultype**フィールドの値が CONTAB_ROOT、CONTAB_SUBROOT、または CONTAB_CONTAINER に設定されている場合は、代わりに[DIR_ENTRYID](dir_entryid.md)構造を使用する必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -8,17 +8,17 @@ f1_keywords:
 - Vis_DSS.chm82251468
 localization_priority: Normal
 ms.assetid: 14268877-d791-91d1-cff6-657c01e63e0f
-description: '#NA のエラー値を返します。'
-ms.openlocfilehash: 017601d9dbfb8cba6727eff5544fea26b4918f6d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'エラー値 #NA! を返します。'
+ms.openlocfilehash: 25e7f8450b2aa379629f55e59d53e93c5f29bb51
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335148"
 ---
 # <a name="na-function"></a>NA 関数
 
-#NA のエラー値を返します。 
+エラー値 #NA! を返します。 
   
 情報が含まれていないシェイプシートのセルで NA 関数を使用すると、セルの既定値が計算で使用されなくなります。
   
@@ -28,7 +28,7 @@ NA( )
   
 ### <a name="return-value"></a>戻り値
 
-String
+文字列
   
 ## <a name="remarks"></a>注釈
 

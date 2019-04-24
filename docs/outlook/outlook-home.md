@@ -7,11 +7,11 @@ ms.assetid: 59d639e4-d171-4556-a1b9-bf9ecb1f85cf
 description: ソリューションの開発と Outlook のカスタマイズに関する HowTo コンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、および技術記事を検索できます。
 localization_priority: Priority
 ms.openlocfilehash: e3f07a7a265882c9a5f30aca6fab9072ac2805cd
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336373"
 ---
 # <a name="outlook"></a>Outlook
 

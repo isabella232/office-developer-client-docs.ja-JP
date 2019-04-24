@@ -1,5 +1,5 @@
 ---
-title: '[DisplayMode] セル ([操作タグ] セクション)'
+title: DisplayMode セル (Action Tags セクション)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,28 +8,28 @@ f1_keywords:
 - Vis_DSS.chm60039
 localization_priority: Normal
 ms.assetid: 0dfad40b-f97e-0c4a-2102-7344d1317b82
-description: アクションのタグには、ユーザーがタグの上、ポインターを移動すると、図形が選択されている場合、またはすべての時間が表示されるかどうかを決定します。
-ms.openlocfilehash: 4cb0666ca8de28247309de4fc0d2ff23e8b37d8a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: ユーザーがタグの上にポインターを移動したとき、図形を選択したとき、または常に [アクション] タグを表示するかどうかを指定します。
+ms.openlocfilehash: 0254ad361c63dfdeddaf8a1c2173e99aa1c05398
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332733"
 ---
-# <a name="displaymode-cell-action-tags-section"></a>[DisplayMode] セル ([操作タグ] セクション)
+# <a name="displaymode-cell-action-tags-section"></a>DisplayMode セル (Action Tags セクション)
 
-アクションのタグには、ユーザーがタグの上、ポインターを移動すると、図形が選択されている場合、またはすべての時間が表示されるかどうかを決定します。
+ユーザーがタグの上にポインターを移動したとき、図形を選択したとき、または常に [アクション] タグを表示するかどうかを指定します。
   
 > [!NOTE]
 > Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。 
   
 |**値**|**表示モード**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| 0  <br/> | タグ (デフォルト) の上にマウスを置いたときに表示されます。  <br/> |**visSmartTagDispModeMouseOver** <br/> |
-| 1  <br/> | 図形を選択したときに表示します。  <br/> |**visSmartTagDispModeShapeSelected** <br/> |
-| 2  <br/> | 常に表示します。  <br/> |**visSmartTagDispModeAlways** <br/> |
+| .0  <br/> | タグ上でマウスを一時停止したときに表示されます (既定値)。  <br/> |**visSmartTagDispModeMouseOver** <br/> |
+| 1-d  <br/> | 図形を選択したときに表示します。  <br/> |**visSmartTagDispModeShapeSelected** <br/> |
+| pbm-2  <br/> | 常に表示します。  <br/> |**visSmartTagDispModeAlways** <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 アクション タグは、印刷時や発行時には表示されません。 
   
@@ -39,14 +39,14 @@ ms.locfileid: "19805219"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | スマート タグです。  *名*です。DisplayMode、スマート タグです。 *タグのアクション行の名前します。*  <br/> |
+| セル名:  <br/> | タグ.  *名前*です。DisplayMode の場合は、SmartTags。 *name*は、アクションタグ行の名前です。  <br/> |
    
 プログラムから、インデックスによって [DisplayMode] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionSmartTag** <br/> |
-| 行インデックス:  <br/> |**visRowSmartTag** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+| 行インデックス:  <br/> |**visRowSmartTag** +  *i* = ** 0、1、2...  <br/> |
 | セル インデックス:  <br/> |**visSmartTagDisplayMode** <br/> |
    
 

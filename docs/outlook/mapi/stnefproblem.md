@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: 3fe651b7-0ddf-42fd-8277-9224505be1a8
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 90829f8fff530d22a7dee68dc227655064147cee
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 19d20a3fb06f6a0a0671ba4bfd938da314001778
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336380"
 ---
 # <a name="stnefproblem"></a>STnefProblem
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-エンコードまたはトランスポート ニュートラル カプセル化形式 (TNEF) ストリームのデコード中に発生するプロパティまたは属性の処理の問題についての情報が含まれています。
+トランスポートニュートラルカプセル化形式 (TNEF) ストリームのエンコードまたはデコード中に発生したプロパティまたは属性処理の問題に関する情報が含まれています。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Tnef.h  <br/> |
+|ヘッダー ファイル:  <br/> |Tnef  <br/> |
    
 ```cpp
 typedef struct _STnefProblem
@@ -44,33 +44,33 @@ typedef struct _STnefProblem
 
 ## <a name="members"></a>Members
 
- **ulComponent**
+ **ulcomponent**
   
-> 問題が発生した処理の種類です。 メッセージの処理中に問題が発生した場合は、 **ulComponent**メンバーが 0 に設定されます。 添付ファイルの処理中に問題が発生した場合、 **ulComponent**は対応する添付ファイルの**PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) の値に設定されています。
+> 問題が発生した処理の種類。 メッセージ処理中に問題が発生した場合、 **ulcomponent**メンバーは0に設定されます。 添付ファイルの処理中に問題が発生した場合、 **ulcomponent**は対応する添付ファイルの**PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) 値に設定されます。
     
- **ulAttribute**
+ **ulattribute**
   
-> プロパティに関連付けられている属性は、 **ulPropTag**のメンバー、または、TNEF の処理の問題が発生したときとカプセル化をデコードすることをブロックする、次のいずれかの示されています。 
+> 属性。 **ulPropTag**メンバーによって示されるプロパティに関連付けられている属性。または、カプセル化ブロックのデコード時に TNEF 処理の問題が発生した場合は、次のいずれかの値になります。 
     
  _attMAPIProps_
   
-> メッセージのレベル
+> メッセージレベル
     
- _attAttachment_
+ _添付ファイル_
   
-> 添付ファイルのレベル
+> 添付ファイルレベル
     
  **ulPropTag**
   
-> ケース**ulPropTag**が 0 に設定されている、カプセル化、ブロックをデコードするときに問題が発生する場合を除き、TNEF 処理の問題の原因となったプロパティのプロパティ タグです。 
+> **ulPropTag**が0に設定されている場合を除き、TNEF 処理の問題の原因となったプロパティのプロパティタグ。 
     
- **scode**
+ **scode as scode**
   
-> エラーの処理中に発生した問題を示す値。
+> 処理中に発生した問題を示すエラー値。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**STnefProblem**構造体は、属性またはプロパティの処理中に生成されていない場合場合は、アプリケーションがその属性またはプロパティの処理が成功したことを前提として続けることができます。 唯一の例外は、ブロックをカプセル化のデコード中に問題が発生したときに発生します。 この例では、ブロックに対応するコンポーネントのデコードを停止して、別のコンポーネントが続きますをデコードすること。 
+属性またはプロパティの処理中に**STnefProblem**構造体が生成されない場合、アプリケーションは、その属性またはプロパティの処理が正常に終了したことを前提として続行できます。 唯一の例外は、カプセル化ブロックのデコード中に問題が発生した場合です。 この場合、ブロックに対応するコンポーネントのデコードが停止され、別のコンポーネントでデコードが続行されます。 
   
 ## <a name="see-also"></a>関連項目
 

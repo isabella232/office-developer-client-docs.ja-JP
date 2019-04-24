@@ -1,5 +1,5 @@
 ---
-title: IMAPISync SynchronizeInBackground
+title: imapisync SynchronizeInBackground
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: c4aaca65-d553-476c-8c6d-5f880b6efdc1
 description: '最終更新日: 2012 年 6 月 26 日'
-ms.openlocfilehash: ee6fe07df894213331ab51f9abaa4008247dac07
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 108073f5e4833d9641e67065eb642320352fffe4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341371"
 ---
 # <a name="imapisync--synchronizeinbackground"></a>IMAPISync : SynchronizeInBackground
 
  
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
- 同期を開始します。 このメソッドは、Microsoft Outlook 2010 と Microsoft Outlook 2013 で呼び出され、メッセージ ストア プロバイダーによって実装されています。 
+ 同期を開始します。 このメソッドは、microsoft outlook 2010 および microsoft outlook 2013 によって呼び出され、メッセージストアプロバイダーによって実装されます。 
   
 ```cpp
 HRESULT SynchronizeInBackground (
@@ -37,9 +37,9 @@ HRESULT SynchronizeInBackground (
 
  _psibpb_
   
-> プロバイダーと同期するを通知し、同期中に使用できるインターフェイスにアクセスします。 それは、 [MAPISIB](mapisib.md)構造です。 
+> 同期される対象をプロバイダーに通知し、同期中に使用できるインターフェイスへのアクセスを提供します。 [MAPISIB](mapisib.md)構造です。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   

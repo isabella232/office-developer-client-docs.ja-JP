@@ -1,5 +1,5 @@
 ---
-title: ログオン オブジェクトの実装
+title: ログオンオブジェクトの実装
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,68 +8,68 @@ api_type:
 - COM
 ms.assetid: 41e5c88c-d79d-4e9f-81f4-c4365cfaa15d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 99a8473abf01467c534c0ea829e342fa46489e99
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f9d77313012c2d133dc9352707ebc5e0c69c9973
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332845"
 ---
-# <a name="implementing-a-logon-object"></a>ログオン オブジェクトの実装
+# <a name="implementing-a-logon-object"></a>ログオンオブジェクトの実装
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-すべてのアドレス帳、メッセージ ・ ストア、およびトランスポート プロバイダーは、 [IABProvider::Logon](iabprovider-logon.md)、 [IMSProvider::Logon](imsprovider-logon.md)、または[IXPProvider::TransportLogon](ixpprovider-transportlogon.md)の実装の一部としてのログオン オブジェクトをインスタンス化します。 ログオン オブジェクトでは、MAPI クライアントの要求のためのメソッドを実装します。 サービス プロバイダーの種類によっては、ログオン オブジェクトは次のインターフェイスのいずれかでサポートされます。 
+すべてのアドレス帳、メッセージストア、およびトランスポートプロバイダーは、 [IABProvider:: logon](iabprovider-logon.md)、 [IMSProvider:: logon](imsprovider-logon.md)、または[ixpprovider:: transportlogon](ixpprovider-transportlogon.md)の実装の一環として、ログオンオブジェクトをインスタンス化します。 Logon オブジェクト MAPI サービスクライアントからの要求を支援するメソッドを実装します。 サービスプロバイダーの種類に応じて、ログオンオブジェクトは次のいずれかのインターフェイスをサポートします。 
   
-|**ログオン オブジェクトのインタ フェース**|**サービス プロバイダー**|
+|**ログオンオブジェクトインターフェイス**|**サービスプロバイダー**|
 |:-----|:-----|
 |[IABLogon : IUnknown](iablogoniunknown.md) <br/> |アドレス帳プロバイダー  <br/> |
-|[IMSLogon : IUnknown](imslogoniunknown.md) <br/> |メッセージ ストア プロバイダー  <br/> |
-|[IXPLogon : IUnknown](ixplogoniunknown.md) <br/> |トランスポート プロバイダー  <br/> |
+|[IMSLogon : IUnknown](imslogoniunknown.md) <br/> |メッセージストアプロバイダー  <br/> |
+|[IXPLogon : IUnknown](ixplogoniunknown.md) <br/> |トランスポートプロバイダー  <br/> |
    
-アドレス帳とメッセージ ・ ストア プロバイダーの実装次の機能で、ログオン オブジェクト。
+アドレス帳およびメッセージストアプロバイダーは、ログオンオブジェクトに次の機能を実装します。
   
-- イベント通知 (**アドバイズ**と**Unadvise**メソッド) をサポートします。 イベント通知の詳細については、 [MAPI でのイベントの通知](event-notification-in-mapi.md)を参照してください。 ログオン オブジェクトの通知をサポートの詳細については、[イベント通知のサポート](supporting-event-notification.md)を参照してください。 
+- イベント通知のサポート (**アドバイズ**および**アドバイズ**中止メソッド)。 イベント通知の概要については、「 [MAPI でのイベント通知](event-notification-in-mapi.md)」を参照してください。 ログオンオブジェクトでの通知のサポートの詳細については、「[サポートイベントの通知](supporting-event-notification.md)」を参照してください。 
     
-- (**CompareEntryIDs**メソッド) エントリ識別子を比較します。 エントリ id の詳細については、 [MAPI エントリの識別子](mapi-entry-identifiers.md)を参照してください。 **CompareEntryIDs**メソッドをログオン オブジェクトのエントリ id を比較することに関する詳細については、[オブジェクトへのアクセスをサポートしているとの比較](supporting-object-access-and-comparison.md)を参照してください。
+- エントリ識別子の比較 (**compareentryids**メソッド)。 エントリ識別子に関する一般的な情報については、「 [MAPI エントリ識別子](mapi-entry-identifiers.md)」を参照してください。 ログオンオブジェクトの**compareentryids**メソッドでのエントリ識別子の比較の詳細については、「[オブジェクトのアクセスと比較のサポート](supporting-object-access-and-comparison.md)」を参照してください。
     
-- 追加のエラー情報 (**GetLastError**メソッド) にアクセスします。 MAPI でのエラー処理の詳細については、 [MAPI でエラーが処理](error-handling-in-mapi.md)を参照してください。 
+- 追加のエラー情報 (**GetLastError**メソッド) へのアクセス。 mapi でのエラー処理の詳細については、「 [mapi でのエラー処理](error-handling-in-mapi.md)」を参照してください。 
     
-- サービス プロバイダー (**OpenEntry**メソッド) が実装されているオブジェクトにアクセスします。 詳細については、[オブジェクトへのアクセスをサポートしているとの比較](supporting-object-access-and-comparison.md)を参照してください。
+- サービスプロバイダ (**openentry**メソッド) によって実装されたオブジェクトへのアクセス。 詳細については、「[オブジェクトのアクセスと比較のサポート](supporting-object-access-and-comparison.md)」を参照してください。
     
-- 状態オブジェクト (**OpenStatusEntry**メソッド) にアクセスします。 ステータス オブジェクトの詳細については、 [MAPI オブジェクトのステータス](mapi-status-objects.md)を参照してください。 状態オブジェクトを実装する詳細については、[状態オブジェクトの実装](status-object-implementation.md)を参照してください。
+- status オブジェクト (**openstatusentry**メソッド) へのアクセス。 状態オブジェクトの概要については、「 [MAPI 状態オブジェクト](mapi-status-objects.md)」を参照してください。 状態オブジェクトの実装に関する具体的な情報については、「 [status オブジェクトの実装](status-object-implementation.md)」を参照してください。
     
-- ログオフ プロセス (**ログオフ**の方法)。 詳細については、[シャット ダウン、サービス ・ プロバイダー](shutting-down-a-service-provider.md)を参照してください。
+- ログオフプロセス (**logoff**メソッド)。 詳細については、「[サービスプロバイダーをシャットダウンする](shutting-down-a-service-provider.md)」を参照してください。
     
-プロバイダーが、アドレス帳プロバイダーの場合は、以下の方法と関連する機能も実装します。
+プロバイダーがアドレス帳プロバイダーの場合は、次のメソッドと関連する機能も実装します。
   
-- [IABLogon::GetOneOffTable](iablogon-getoneofftable.md)の新しい受信者を作成するためにサポートしているテンプレートの一覧を提供します。 詳細については、[一時テーブル](one-off-tables.md)または[一時テーブル プロバイダーを実装する](implementing-a-provider-one-off-table.md)を参照してください。
+- [IABLogon:: getoneofftable](iablogon-getoneofftable.md)新しい受信者の作成に対してサポートされているテンプレートの一覧を提供します。 詳細については、「 [1 回限りのテーブル](one-off-tables.md)の実装」または「[プロバイダーの1回限りのテーブルの実装](implementing-a-provider-one-off-table.md)」を参照してください。
     
-- データが含まれる受信者の実装へのアクセスを提供する[IABLogon::OpenTemplateID](iablogon-opentemplateid.md)は、ホストのアドレス帳に存在します。 詳細については、[外部のアドレス帳プロバイダーとしての機能](acting-as-a-foreign-address-book-provider.md)を参照してください。 
+- [IABLogon:: OpenTemplateID](iablogon-opentemplateid.md)を使用して、ホストアドレス帳プロバイダーにデータが存在する受信者の実装へのアクセスを提供します。 詳細については、「[外部アドレス帳プロバイダーとして機能する](acting-as-a-foreign-address-book-provider.md)」を参照してください。 
     
-- [IABLogon::PrepareRecips](iablogon-preparerecips.md)の適切なプロパティが受信者のリスト内の受信者のすべての利用可能であることを確認します。 詳細については、 [IABLogon::PrepareRecips](iablogon-preparerecips.md)を参照してください。 
+- [IABLogon: reparerecips](iablogon-preparerecips.md)を使用して、受信者リスト内のすべての受信者に対して適切なプロパティが利用可能であることを確認します。 詳細については、「 [IABLogon::P reparerecips](iablogon-preparerecips.md)」を参照してください。 
     
-トランスポート プロバイダーのログオン オブジェクトを実装して、 [IXPLogon: IUnknown](ixplogoniunknown.md)、サービス ・ プロバイダーの他の型によって実装されているログオン オブジェクトとはまったく異なります。 他のログオン オブジェクトと共通の 2 つのみの機能がある: [IXPLogon::OpenStatusEntry](ixplogon-openstatusentry.md)メソッドを通じて状態オブジェクト、および[IXPLogon::TransportLogoff](ixplogon-transportlogoff.md)メソッドからのログオフ操作へのアクセス。 トランスポート プロバイダーは、そのログオン オブジェクトで次の独自の機能を実装します。 
+[IXPLogon: IUnknown](ixplogoniunknown.md)を実装するトランスポートプロバイダーのログオンオブジェクトは、他の種類のサービスプロバイダーによって実装されるログオンオブジェクトとは大きく異なります。 他のログオンオブジェクトとの共通点は2つあります。 [IXPLogon:: openstatusentry](ixplogon-openstatusentry.md)メソッドを使用した状態オブジェクトへのアクセス、および[IXPLogon:: transportlogoff](ixplogon-transportlogoff.md)メソッドによるログオフ操作。 トランスポートプロバイダーは、それぞれのログオンオブジェクトに、次のような固有の機能を実装します。 
   
-- ([IXPLogon::AddressTypes](ixplogon-addresstypes.md)メソッド) のアドレスの種類を登録します。 アドレスの種類を登録の詳細については、[トランスポート プロバイダーおよび MAPI スプーラーの運用モデル](transport-provider-and-mapi-spooler-operational-model.md)を参照してください。
+- アドレスの種類の登録 ([IXPLogon:: AddressTypes](ixplogon-addresstypes.md)メソッド)。 アドレスの種類の登録の詳細については、「 [Transport Provider and MAPI Spooler Operational Model](transport-provider-and-mapi-spooler-operational-model.md)」を参照してください。
     
-- メッセージの転送 ([IXPLogon::StartMessage](ixplogon-startmessage.md)、 [IXPLogon::EndMessage](ixplogon-endmessage.md)、および[IXPLogon::SubmitMessage](ixplogon-submitmessage.md)メソッド) をコントロールできます。 詳細については、[メッセージ受信モデル](message-reception-model.md)、 [MAPI スプーラーと対話する](interacting-with-the-mapi-spooler.md)、および[メッセージの送信モデル](message-submission-model.md)を参照してください。
+- メッセージ転送の制御 ([IXPLogon:: startmessage](ixplogon-startmessage.md), [IXPLogon:: endmessage](ixplogon-endmessage.md), and [IXPLogon:: submitmessage](ixplogon-submitmessage.md)メソッド)。 詳細については、「[メッセージ受信モデル](message-reception-model.md)」、「 [MAPI スプーラーとの対話](interacting-with-the-mapi-spooler.md)」、および「[メッセージ送信モデル](message-submission-model.md)」を参照してください。
     
-- 内部状態の検証 ([IXPLogon::ValidateState](ixplogon-validatestate.md)メソッド)。 
+- 内部状態の検証 ([IXPLogon:: validatestate](ixplogon-validatestate.md)メソッド)。 
     
-- ([IXPLogon::FlushQueues](ixplogon-flushqueues.md)メソッド) を必要に応じてメッセージをアップロードまたはダウンロードできます。 詳細については、 [FlushQueues メソッドを実装する](implementing-the-flushqueues-method.md)を参照してください。
+- 必要に応じてメッセージをダウンロードまたはアップロードする機能 ([IXPLogon:: flushqueues](ixplogon-flushqueues.md)メソッド)。 詳細については、「 [flushqueues メソッドの実装](implementing-the-flushqueues-method.md)」を参照してください。
     
-- 保留中のメッセージ ([IXPLogon::Poll](ixplogon-poll.md)メソッド) を照会する機能です。 詳細については、[メッセージ受信のモデル](message-reception-model.md)を参照してください。
+- 保留中のメッセージを照会する機能 ([IXPLogon::P oll](ixplogon-poll.md)メソッド)。 詳細については、「[メッセージ受信モデル](message-reception-model.md)」を参照してください。
     
-- アイドル状態の検出 ([IXPLogon::Idle](ixplogon-idle.md)メソッド)。 
+- アイドル状態の検出 ([IXPLogon:: idle](ixplogon-idle.md)メソッド)。 
     
-- MAPI スプーラーを無効 ([IXPLogon::TransportNotify](ixplogon-transportnotify.md)メソッド) との相互作用します。 
+- MAPI スプーラー ([IXPLogon:: transportnotify](ixplogon-transportnotify.md)メソッド) との相互作用。 
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[サービス プロバイダー ログオンの実装](implementing-service-provider-logon.md)
+[サービスプロバイダーログオンの実装](implementing-service-provider-logon.md)
 

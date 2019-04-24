@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 7a52f46c-371c-46d0-8d66-e154482e8269
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 07acfd8715dccad8833ee14ac8e573fb995539ba
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25399705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337948"
 ---
 # <a name="pidnameexchangejunkemailmovestamp-canonical-property"></a>PidNameExchangeJunkEmailMoveStamp 標準プロパティ
 
@@ -25,39 +25,39 @@ ms.locfileid: "25399705"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ必要があるために処理できませんスパム フィルターによってメッセージが既に処理されたか、安全にされたことを示すメッセージが永続化された値が含まれています。
+メッセージが既に処理されているか、または安全なので、メッセージがスパムフィルターによって処理されないことを示す永続的なメッセージ値が格納されています。
   
 |||
 |:-----|:-----|
 |フレンドリ名:  <br/> |なし  <br/> |
-|プロパティを設定します。  <br/> |PS_PUBLIC_STRINGS  <br/> |
+|プロパティセット:  <br/> |PS_PUBLIC_STRINGS  <br/> |
 |プロパティ名:  <br/> |https://schemas.microsoft.com/exchange/junkemailmovestamp  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |メッセージのセキュリティ保護します。  <br/> |
+|エリア:  <br/> |セキュリティで保護されたメッセージング  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティがスタンプ迷惑メール ルールを移動するか、それ以外の場合は、すべてのメッセージには、コンテンツが信頼されています。
+このプロパティは、迷惑メールルールによって移動されるすべてのメッセージ、または信頼できるコンテンツとしてスタンプされます。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
+[[OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
   
-> 許可/禁止リストの処理、迷惑メール メッセージの決定を可能にします。
+> 許可/ブロックリストの処理と、迷惑メールメッセージの決定を有効にします。
     
-[[MS OXORSS]](https://msdn.microsoft.com/library/53bc9634-0040-4b5a-aecd-29781d826009%28Office.15%29.aspx)
+[[OXORSS]](https://msdn.microsoft.com/library/53bc9634-0040-4b5a-aecd-29781d826009%28Office.15%29.aspx)
   
-> RSS 項目を表すための操作のプロパティを指定します。
+> RSS アイテムを表すプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -65,9 +65,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

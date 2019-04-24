@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 6a0dff65-1055-487c-9d15-4cfe336f2ad7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: dc90f15835de35354a271d87a736366a4caf8dd9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9d9fd04776742383f40c6989bcf588b24b33d84b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339796"
 ---
 # <a name="sdatetimearray"></a>SDateTimeArray
 
@@ -25,11 +25,11 @@ ms.locfileid: "22578781"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-PT_MV_SYSTIME の種類のプロパティを説明するために使用する時刻の値の配列が含まれています。
+PT_MV_SYSTIME 型のプロパティを記述するために使用される時間の値の配列を格納します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SDateTimeArray
@@ -42,17 +42,17 @@ typedef struct _SDateTimeArray
 
 ## <a name="members"></a>Members
 
- **あう**
+ **cvalues**
   
-> **Lpft**メンバーが指す配列内の値の数です。 
+> **lpft**メンバーが指す配列内の値の数。 
     
  **lpft**
   
-> Time 値を格納する[FILETIME](filetime.md)構造体の配列へのポインター。 
+> 時刻の値を含む[FILETIME](filetime.md)構造体の配列へのポインター。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-PT_MV_SYSTIME の詳細については、[プロパティの種類の一覧](property-types.md)を参照してください。
+PT_MV_SYSTIME の詳細については、「[プロパティの種類の一覧](property-types.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

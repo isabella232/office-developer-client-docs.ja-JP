@@ -13,11 +13,11 @@ api_type:
 ms.assetid: f2b126fc-41fa-4dc4-9f13-07bc4f621d0b
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: b9e3236affa9612356e68044d2943ea7b9276384
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25394383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336849"
 ---
 # <a name="pidlidsharinginitiatorname-canonical-property"></a>PidLidSharingInitiatorName 標準プロパティ
 
@@ -30,30 +30,30 @@ ms.locfileid: "25394383"
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |dispidSharingInitiatorName  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Sharing  <br/> |
-|長い ID (LID):  <br/> |0x00008A07  <br/> |
+|プロパティセット:  <br/> |PSETID_Sharing  <br/> |
+|ロング ID (LID):  <br/> |0x00008A07  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
 |エリア:  <br/> |共有  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティは、 **dispidSharingInitiatorEid** ([PidLidSharingInitiatorEntryId](pidlidsharinginitiatorentryid-canonical-property.md)) で識別されるアドレス帳からの**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) の値を設定する必要があります、無視してください。 
+このプロパティは、 **dispidSharingInitiatorEid** ([PidLidSharingInitiatorEntryId](pidlidsharinginitiatorentryid-canonical-property.md)) で識別されるアドレス帳から、 **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) の値に設定する必要があります。無視する必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXSHARE]](https://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)
+[[OXSHARE]](https://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)
   
-> クライアント間でのメールボックスのフォルダーを共有します。
+> クライアント間でメールボックスフォルダーを共有します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -61,9 +61,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

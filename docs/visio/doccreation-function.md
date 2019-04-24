@@ -8,23 +8,23 @@ f1_keywords:
 - Vis_DSS.chm82251604
 localization_priority: Normal
 ms.assetid: dcbc240a-e36d-b27f-02c3-fd1eac04114a
-description: シリアル値として、ドキュメントが作成された日時を返します。
-ms.openlocfilehash: b9d94cf53895b0b4b9fcf84eb32e441c8a2a0196
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: ドキュメントが作成された日付と時刻をシリアル値として返します。
+ms.openlocfilehash: a1f66a8fe2561578a2b37deefcfa6556f10455a0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332726"
 ---
 # <a name="doccreation-function"></a>DOCCREATION 関数
 
-シリアル値として、ドキュメントが作成された日時を返します。
+ドキュメントが作成された日付と時刻をシリアル値として返します。
   
 ## <a name="syntax"></a>構文
 
 DOCCREATION ()
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 戻り値を書式設定するには、FORMAT 関数を使用します。 
   

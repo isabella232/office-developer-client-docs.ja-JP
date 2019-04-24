@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: 64cef938-ef6f-43bb-8f6e-d4cd4d6c9888
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 493176029be3e7b154188aa164a95a8bc9c0e7d9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 94e412f2f542298adcedf4414c19b5303330cf2f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339418"
 ---
 # <a name="dtblradiobutton"></a>DTBLRADIOBUTTON
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-オプション ボタン グループの一部となる 1 つのラジオ ・ ボタンをについて説明します。 ラジオ ボタン グループは、表示された表から組み込まれているダイアログ ボックスで使用されます。
+ラジオボタングループの一部となる1つのラジオボタンを表します。 ラジオボタングループは、表示テーブルから構築されたダイアログボックスで使用されます。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _DTBLRADIOBUTTON
@@ -45,37 +45,37 @@ typedef struct _DTBLRADIOBUTTON
 
 ## <a name="members"></a>Members
 
- **ulbLpszLabel**
+ **ulblpszlabel**
   
-> ラジオ ・ ボタンの文字の文字列のラベルのメモリ内の位置。
+> ラジオボタンの文字列ラベルの文字をメモリ内に配置します。
     
  **ulFlags**
   
-> **UlbLpszLabel**メンバーで指定されたラベルの書式を指定するために使用するフラグのビットマスクです。 次のフラグを設定することができます。 
+> **ulblpszlabel**メンバーが指すラベルの形式を指定するために使用されるフラグのビットマスク。 次のフラグを設定できます。 
     
 MAPI_UNICODE 
   
-> ラベルは、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式のラベルです。
+> ラベルは Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、ラベルは ANSI 形式になります。
     
- **ulcButtons**
+ **ulcbuttons**
   
-> ラジオ ボタン グループ内のボタンの数。 表示された表の一連の行では、グループ内の他のボタンの**DTBLRADIOBUTTON**構造体を含める必要があります。 **UlcButtons**メンバーのそれぞれの行、同じ値が含まれている必要があります。 
+> ラジオボタングループのボタン数。 グループ内の他のボタンの**dtblradiobutton**構造体は、表示テーブルの連続する行に含まれている必要があります。 これらの各行には、 **ulcbuttons**メンバーと同じ値が含まれている必要があります。 
     
  **ulPropTag**
   
-> 型 PT_LONG のプロパティのプロパティ タグです。 ラジオ ボタン グループの最初の選択は、このプロパティの初期値に基づきます。 グループ内の各ボタンには、 **ulPropTag**の同じプロパティを設定する必要があります。 
+> PT_LONG 型のプロパティのプロパティタグ。 ラジオボタングループでの最初の選択は、このプロパティの初期値に基づいています。 グループ内の各ボタンには、 **ulPropTag**を同じプロパティに設定する必要があります。 
     
- **lReturnValue**
+ **lreturnvalue**
   
 > 選択したボタンを識別する一意の番号です。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**DTBLRADIOBUTTON**構造体では、ラジオ ボタンのボタンのグループに関連付けられているボタン コントロールについて説明します。 グループ内のボタンを 1 つだけをチェックすることができます。設定するグループの他のボタンを 1 つのボタンを設定します。 
+**dtblradiobutton**構造体は、ボタンのグループに関連付けられているボタンコントロールのラジオボタンを表します。 グループ内の1つのボタンだけをチェックできます。1つのボタンを設定すると、グループ内の他のボタンが未設定になります。 
   
-ボタンの数は、グループ内のラジオ ボタンの数です。 グループ内の他のオプション ボタンの構造体は、表示された表のそれ以降の行でなければなりません。 各構造体は、そのボタンの数の値が同じで必要があります。
+[ボタン数] は、グループ内のオプションボタンの数を示します。 グループ内の他のオプションボタンの構造は、表示テーブル内の後続の行にある必要があります。 これらの各構造体は、ボタンの数と同じ値を持つ必要があります。
   
-テーブルの表示の概要については、[テーブルの表示](display-tables.md)を参照してください。 表示テーブルを実装する方法の詳細については、[表示テーブルを実装する](display-table-implementation.md)を参照してください。
+表示テーブルの概要については、「[テーブルの表示](display-tables.md)」を参照してください。 表示テーブルを実装する方法については、「[表示テーブルを実装](display-table-implementation.md)する」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

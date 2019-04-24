@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 56430658-a798-c004-b4ba-363443f43ded
 description: 不適切な数式を含むセルには、エラー値が表示されます。
-ms.openlocfilehash: 301f566151362727daf8236f8ca88fca8758054e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 5219becdd1af888e424a2fe33faa7df5a06f61fb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332607"
 ---
 # <a name="about-error-values"></a>エラー値について
 

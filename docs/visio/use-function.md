@@ -8,35 +8,35 @@ f1_keywords:
 - Vis_DSS.chm82251510
 localization_priority: Normal
 ms.assetid: 410c4187-21f3-d959-750e-9dc6095fba9a
-description: 行パターン、塗りつぶしパターン、または LinePattern、FillPattern、BeginArrow、または [endarrow] セルに格納するときの図形に名前と呼ばれる線の端点を適用します。
-ms.openlocfilehash: 0b6668e57a8f997a69fece51cbc5bd1b1574a576
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '[linepattern]、[fillpattern]、[beginarrow]、または [endarrow] セルに配置されたときに、name という名前の線パターン、塗りつぶしパターン、または線の端点を図形に適用します。'
+ms.openlocfilehash: ddd15c1c127fafa1a230545d544c74956f5c0262
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337150"
 ---
 # <a name="use-function"></a>USE 関数
 
-行パターン、塗りつぶしパターン、または LinePattern、FillPattern、BeginArrow、または [endarrow] セルに格納するときの図形に_名前_と呼ばれる線の端点を適用します。 
+[linepattern]、[fillpattern]、[beginarrow]、または [endarrow] セルに配置されたときに、name という_名前_の線パターン、塗りつぶしパターン、または線の端点を図形に適用します。 
   
 ## <a name="syntax"></a>構文
 
-使用 ("* **名前** *") 
+USE ("* * *name* * *") 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _name_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |有効なマスター シェイプの名前である、任意の文字列を指定します。  <br/> |
+| _name_ <br/> |必須  <br/> |**String** <br/> |有効なマスター シェイプの名前である、任意の文字列を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
-数値
+番号
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-_Name_という名前のマスター ドキュメントの図面ステンシル上にある場合は、行パターン、塗りつぶしパターン、矢印の始点、または矢印の終点でパターンが適用されます。 
+_名前_が付けられたマスターシェイプが文書のステンシルにある場合、パターンは、線のパターン、塗りつぶしのパターン、矢印の始点、または終点の矢印として適用されます。 
   
 この関数は常に 254 を返します。
   

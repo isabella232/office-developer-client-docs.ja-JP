@@ -1,5 +1,5 @@
 ---
-title: IMAPISupportCopyFolder
+title: imapisupportcopyfolder
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: c2e0939f-0668-473f-856c-a27af094070b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6ffbf74496d4b61357a0fb473b82deedf39ee576
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 11ee944a14f8c9bd881b9c79a4ce66817275e73a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341028"
 ---
 # <a name="imapisupportcopyfolder"></a>IMAPISupport::CopyFolder
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-現在の親フォルダーから別の親フォルダーにフォルダーを移動またはコピーします。
+フォルダーを現在の親フォルダーから別の親フォルダーにコピーまたは移動します。
   
 ```cpp
 HRESULT CopyFolder(
@@ -44,49 +44,49 @@ HRESULT CopyFolder(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpSrcInterface_
+ _lpsrcinterface_
   
-> [in]コピーまたは移動するフォルダーの親フォルダーへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。
+> 順番コピーまたは移動するフォルダーの親フォルダーにアクセスするために使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。
     
- _lpSrcFolder_
+ _lpsrcfolder_
   
-> [in]コピーまたは移動するフォルダーの親フォルダーへのポインター。 
+> 順番コピーまたは移動するフォルダーの親フォルダーへのポインター。 
     
  _cbEntryID_
   
-> [in]_LpEntryID_で指定されたエントリの識別子のバイト数です。
+> 順番エントリ識別子のバイト数が_lな tryid_で示されます。
     
- _lpEntryID_
+ _lて tryid_
   
-> [in]コピーまたは移動するフォルダーのエントリの識別子へのポインター。 
+> 順番コピーまたは移動するフォルダーのエントリ識別子へのポインター。 
     
- _lpInterface_
+ _lpinterface_
   
-> [in]予約されています。NULL である必要があります。
+> 順番予約語NULL である必要があります。
     
- _lpDestFolder_
+ _lpdestfolder_
   
-> [in]コピーまたは移動するフォルダーを受信するフォルダーへのポインター。
+> 順番コピーまたは移動するフォルダーを受け取るフォルダーへのポインター。
     
- _lpszNewFolderName_
+ _lpsznewfoldername_
   
-> [in]コピーまたは移動したフォルダーの名前へのポインターそれ以外の場合、NULL、コピーまたは移動したフォルダーがソース フォルダー ( _lpEntryID_で指定されたフォルダー) と同じ名前を持つ必要があることを示します。
+> 順番コピーまたは移動したフォルダーの名前へのポインター。それ以外の場合は、コピーまたは移動されたフォルダーの名前がソースフォルダーと同じであることを示します ( _lな tryid_で示されるフォルダー)。
     
- _ulUIParam_
+ _uluiparam_
   
-> [in]進行状況インジケーターのダイアログ ボックスのウィンドウと関連するウィンドウのハンドルです。 _UlFlags_パラメーターに FOLDER_DIALOG フラグが設定されていない限り、 _ulUIParam_パラメーターは無視されます。 
+> 順番[進行状況インジケーター] ダイアログボックスと関連するウィンドウのウィンドウのハンドル。 _uluiparam_パラメーターは、 _ulflags_パラメーターで FOLDER_DIALOG フラグが設定されていない場合は無視されます。 
     
- _lpProgress_
+ _lpprogress_
   
-> [in]進行状況インジケーターを表示する進行中のオブジェクトへのポインター。 _LpProgress_に NULL を渡した場合、メッセージ ストア プロバイダーは、MAPI 処理中のオブジェクトの実装を使用して進行状況のインジケーターを表示します。 _UlFlags_に FOLDER_DIALOG フラグが設定されていない限り、 _lpProgress_パラメーターは無視されます。
+> 順番進行状況インジケーターを表示する progress オブジェクトへのポインター。 _lpprogress_で NULL が渡された場合、メッセージストアプロバイダーは MAPI 進行状況オブジェクトの実装を使用して進行状況インジケーターを表示します。 FOLDER_DIALOG フラグが_ulflags_で設定されていない場合、 _lpprogress_パラメーターは無視されます。
     
  _ulFlags_
   
-> [in]コピーまたは移動操作を実現する方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番コピー操作または移動操作の実行方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 COPY_SUBFOLDERS 
   
-> すべてのフォルダーのサブフォルダーは、コピーまたは移動する必要があります。 コピー操作のために COPY_SUBFOLDERS が設定されていない場合は、 _lpEntryID_によって識別されたフォルダーのみがコピーされます。 移動操作で、COPY_SUBFOLDERS の動作は既定のフラグが設定されているかどうかに関係なくです。 
+> すべてのフォルダーのサブフォルダーをコピーまたは移動する必要があります。 コピー操作で COPY_SUBFOLDERS が設定されていない場合は、 _l tryid_で識別されるフォルダーのみがコピーされます。 移動操作では、フラグが設定されているかどうかに関係なく、COPY_SUBFOLDERS の動作が既定値になります。 
     
 FOLDER_DIALOG 
   
@@ -94,45 +94,45 @@ FOLDER_DIALOG
     
 FOLDER_MOVE 
   
-> フォルダーの移動の代わりにコピーします。 FOLDER_MOVE が設定されていない場合、フォルダーをコピーします。
+> フォルダーはコピーではなく移動する必要があります。 FOLDER_MOVE が設定されていない場合は、フォルダーがコピーされます。
     
 MAPI_UNICODE 
   
-> フォルダーの名前は、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式のフォルダーの名前です。
+> フォルダーの名前は、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、フォルダーの名前は ANSI 形式になります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> フォルダーは正常にコピーまたは移動されています。
+> フォルダーが正常にコピーまたは移動されました。
     
 MAPI_E_COLLISION 
   
-> 移動またはコピーされているフォルダーの名前は、コピー先のフォルダーのサブフォルダーの名前と同じです。 メッセージ ストア プロバイダーは、フォルダー名が一意である必要があります。 完了せず、操作を停止します。
+> 移動またはコピーするフォルダーの名前が、移動先フォルダーのサブフォルダーの名前と同じです。 メッセージストアプロバイダーでは、フォルダー名が一意である必要があります。 操作は完了せずに停止します。
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> 呼び出しが成功したが、すべてのエントリが正常にコピーされました。 この警告が返されると、呼び出しを成功として処理する必要があります。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
+> 呼び出しは成功しましたが、すべてのエントリが正常にコピーされませんでした。 この警告が返された場合、呼び出しは正常に処理されます。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-メッセージ ストア プロバイダーのサポート オブジェクトの**IMAPISupport::CopyFolder**メソッドを実装します。 メッセージ ストア プロバイダーは、コピーまたは別の 1 つの親フォルダーから 1 つのフォルダーを移動する[IMAPIFolder::CopyFolder](imapifolder-copyfolder.md)の実装では、 **IMAPISupport::CopyFolder**を呼び出すことができます。 
+**imapisupport:: copyfolder**メソッドは、メッセージストアプロバイダーサポートオブジェクトに実装されています。 メッセージストアプロバイダーは、 [imapisupport:](imapifolder-copyfolder.md) : copyfolder の実装で**imapisupport:: copyfolder**を呼び出して、1つの親フォルダーから別のフォルダーに1つのフォルダーをコピーまたは移動することができます。 
   
- **IMAPISupport::CopyFolder**は、コピー先のフォルダーのサブフォルダーとしてコピーまたは移動したフォルダーを追加します。 
+ **imapisupport:: copyfolder**移動先フォルダーのサブフォルダーとして、コピーまたは移動したフォルダーを追加します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
- **IMAPISupport::CopyFolder**は、名前を変更してフォルダーと、コピーまたは移動の影響を受けるフォルダーのサブフォルダーの移動を同時に使用できます。 コピーまたは移動、コピーまたは移動したフォルダーにネストされたすべてのサブフォルダー、 _ulFlags_で COPY_SUBFOLDERS フラグを渡します。 
+ **imapisupport:: copyfolder**を使用すると、フォルダーの名前変更と移動、および影響を受けたフォルダーのサブフォルダーのコピーまたは移動を同時に行うことができます。 コピーまたは移動したフォルダーでネストされているすべてのサブフォルダーをコピーまたは移動するには、COPY_SUBFOLDERS フラグを_ulflags_に渡します。 
   
-次に、次の条件の値を返すことを期待される結果します。
+次の条件下では、次の戻り値が予想されます。
   
-|**条件**|**戻り値**|
+|**Condition**|**戻り値**|
 |:-----|:-----|
-|**CopyFolder**は正常にコピーまたは適用可能な場合、フォルダーとそのすべてのサブフォルダーを移動します。  <br/> |S_OK  <br/> |
-|**CopyFolder**は、正常にコピーまたはすべてのフォルダーを移動できませんでした。  <br/> |MAPI_W_PARTIAL_COMPLETION  <br/> |
-|**CopyFolder**は完了できませんでした。  <br/> |エラー値  <br/> |
+|**** 必要に応じて、フォルダーとそのすべてのサブフォルダーがコピーまたは移動されました。  <br/> |S_OK  <br/> |
+|**copyfolder**は、すべてのフォルダーを正常にコピーまたは移動できませんでした。  <br/> |MAPI_W_PARTIAL_COMPLETION  <br/> |
+|**copyfolder**を完了できませんでした。  <br/> |任意のエラー値  <br/> |
    
-**CopyFolder**では、エラー値が返された場合は、作業が実行されなかったことを想定しては続行できません。 1 つまたは複数のフォルダーでしたコピーされたり、 **CopyFolder**にエラーが発生した前に移動します。 
+**copyfolder**がエラー値を返した場合は、処理が行われていないという前提で続行しないでください。 **copyfolder**でエラーが発生する前に、1つ以上のフォルダーがコピーまたは移動された可能性があります。 
   
 ## <a name="see-also"></a>関連項目
 

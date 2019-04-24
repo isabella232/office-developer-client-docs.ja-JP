@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 5bb1cc81-f3fd-a835-1449-233dbd1a62b6
 description: ビットマップ イメージの明るさを調整します。0 ～ 49% の範囲で値を入力するとイメージの輝度が下がります。51 ～ 100% の範囲で値を入力するとイメージの輝度が上がります。既定値は 50% です。
-ms.openlocfilehash: 688a6cacfa9100ad116b9bf06926194c24712219
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ae1390d2db3adad86a8afcbeaff88172a841d030
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338025"
 ---
-# <a name="brightness-cell-image-properties-section"></a>[Brightness] セル ([画像のプロパティ] セクション)
+# <a name="brightness-cell-image-properties-section"></a>[Brightness] セル ([Image Properties] セクション)
 
 ビットマップ イメージの明るさを調整します。0 ～ 49% の範囲で値を入力するとイメージの輝度が下がります。51 ～ 100% の範囲で値を入力するとイメージの輝度が上がります。既定値は 50% です。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Brightness] セルへの参照を取得するには、次の値を使用します。 
   
@@ -34,6 +34,6 @@ ms.locfileid: "19804917"
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowImage** <br/> |
-| セル インデックス:  <br/> |**visImageBrightness** <br/> |
+| セル インデックス:  <br/> |**viシム age輝度** <br/> |
    
 

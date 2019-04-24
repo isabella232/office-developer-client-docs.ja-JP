@@ -12,43 +12,43 @@ api_type:
 - COM
 ms.assetid: a1929ab8-4813-468b-9768-cdf7f848cfce
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1f51d14160c5fd80c3e65f5e4c38d3347748136b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e335caafd2a136724707d04b6679a2971697920f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336436"
 ---
 # <a name="pidtagsearch-canonical-property"></a>PidTagSearch 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-高度な検索に使用されるコンテナー オブジェクトが含まれています。
+高度な検索に使用される container オブジェクトが格納されています。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_SEARCH  <br/> |
 |識別子:  <br/> |0x3607  <br/> |
 |データの種類 :   <br/> |PT_OBJECT  <br/> |
-|領域:  <br/> |アドレス帳コンテナー  <br/> |
+|エリア:  <br/> |アドレス帳コンテナー  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-プロパティを提供する高度な検索機能をサポートしていないコンテナーがありませんでした。
+高度な検索機能をサポートしていないコンテナーは、プロパティを指定する必要はありません。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
@@ -57,9 +57,9 @@ Mapitags.h
 [IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

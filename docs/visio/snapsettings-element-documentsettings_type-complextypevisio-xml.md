@@ -1,31 +1,31 @@
 ---
-title: SnapSettings 要素 (DocumentSettings_Type complexType)'Visio XML (')
+title: snapsettings 要素 (DocumentSettings_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6e86e943-bd29-0a7b-3d6a-d91281f98777
-description: 図形のスナップとスナップがアクティブなウィンドウ内でオブジェクトを指定します。
+description: ウィンドウのスナップがアクティブなときに、図形をスナップするオブジェクトを指定します。
 ms.openlocfilehash: 68c2bd198a20047ce4f56fe06630177a17319191
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25401679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334490"
 ---
-# <a name="snapsettings-element-documentsettingstype-complextype-visio-xml"></a>SnapSettings 要素 (DocumentSettings_Type complexType)'Visio XML (')
+# <a name="snapsettings-element-documentsettingstype-complextype-visio-xml"></a>snapsettings 要素 (DocumentSettings_Type complexType) (' Visio XML ')
 
-図形のスナップとスナップがアクティブなウィンドウ内でオブジェクトを指定します。
+ウィンドウのスナップがアクティブなときに、図形をスナップするオブジェクトを指定します。
   
 ## <a name="element-information"></a>要素情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[SnapSettings_Type](snapsettings_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
-|**文書パーツ** <br/> |document.xml  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
+|**文書パーツ** <br/> |文書の xml  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -36,13 +36,13 @@ ms.locfileid: "25401679"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。 
+スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[DocumentSettings](documentsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[DocumentSettings_Type](documentsettings_type-complextypevisio-xml.md) <br/> |ドキュメントの設定を指定する要素が含まれています。  <br/> |
+|[documentsettings](documentsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[DocumentSettings_Type](documentsettings_type-complextypevisio-xml.md) <br/> |ドキュメントの設定を指定する要素を格納します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -52,23 +52,23 @@ ms.locfileid: "25401679"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-次の表の値の合計値があります。
+値には、次の表の値の合計を指定できます。
   
 |**値**|**説明**|
 |:-----|:-----|
-|0  <br/> |何もスナップしません。  <br/> |
-|1  <br/> |ルーラーの目盛りにスナップします。  <br/> |
-|2  <br/> |グリッドにスナップします。  <br/> |
-|4  <br/> |ガイドにスナップします。  <br/> |
-|8  <br/> |選択ハンドルにスナップします。  <br/> |
+|.0  <br/> |何もスナップしません。  <br/> |
+|1-d  <br/> |ルーラーの目盛りにスナップします。  <br/> |
+|pbm-2  <br/> |グリッドにスナップします。  <br/> |
+|2/4  <br/> |ガイドにスナップします。  <br/> |
+|~  <br/> |選択ハンドルにスナップします。  <br/> |
 |16  <br/> |頂点にスナップします。  <br/> |
 |32  <br/> |接続ポイントにスナップします。  <br/> |
-|256  <br/> |図形の可視のエッジにスナップします。  <br/> |
-|512  <br/> |図形枠にスナップします。  <br/> |
+|256  <br/> |表示されている図形の端にスナップします。  <br/> |
+|512  <br/> |整列ボックスにスナップします。  <br/> |
 |1024  <br/> |図形の補助線オプションにスナップします。  <br/> |
-|32768  <br/> |スナップが無効になります。  <br/> |
+|32768  <br/> |スナップは無効です。  <br/> |
 |65536  <br/> |交点にスナップします。  <br/> |
    
 

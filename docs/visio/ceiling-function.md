@@ -8,48 +8,48 @@ f1_keywords:
 - Vis_DSS.chm82251405
 localization_priority: Normal
 ms.assetid: 1a8d6d48-7ae3-5483-28d2-5b1706088a53
-description: 次の複数のインスタンスには、0 (ゼロ) から数値を丸めます。 複数を指定しない場合、次の整数を 0 から数に丸めます。
-ms.openlocfilehash: fa982b44ea4a73e7da614c49a52cd50efd612f20
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 数値を 0 (ゼロ) から複数の次のインスタンスに切り上げます。 multiple が指定されていない場合、数値は0から次の整数に丸められます。
+ms.openlocfilehash: 449f17d1b68c116cccb2635723a3f6277d0ac2a9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337227"
 ---
 # <a name="ceiling-function"></a>CEILING 関数
 
-_複数_の次のインスタンスを 0 (ゼロ) から数値を四捨五入します。 _複数_を指定しない場合、次の整数に 0 から番号を丸めます。 
+数値を 0 (ゼロ) から_複数_の次のインスタンスに切り上げます。 _multiple_が指定されていない場合、数値は0から次の整数に丸められます。 
   
 ## <a name="syntax"></a>構文
 
-天井 (* **番号** *、* **複数** *) 
+天井 (* **数値** *, * * *multiple* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _number_ <br/> |必須  <br/> |**番号** <br/> |切り上げの対象となる数値を指定します。  <br/> |
-| _複数_ <br/> |必須  <br/> |**番号** <br/> |丸めを行う複数。  <br/> |
+| _number_ <br/> |必須  <br/> |**数値** <br/> |切り上げの対象となる数値を指定します。  <br/> |
+| _マルチ_ <br/> |必須  <br/> |**数値** <br/> |複数のに丸める。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
- _番号_と_複数_は、同一の記号、または、#NUM を持つ必要があります! エラーが返されます。 #Value! の値には、_番号_または_複数_のいずれかを変換できません! 場合、 エラーが返されます。 _番号_または_複数_のいずれかが 0 の場合、結果は 0 になります。 
+ _数値_と_複数_の値は、同じ記号または #NUM である必要があります。 エラーを返します。 _数値_、または_複数_の値を値に変換できない場合は、#VALUE します。 エラーを返します。 _数値_または_倍数_が0の場合、結果は0になります。 
   
 ## <a name="example-1"></a>例 1
 
-CEILING(3.7)
+天井 (3.7)
   
 4 を返します
   
 ## <a name="example-2"></a>例 2
 
-CEILING(-3.7)
+天井 (-3.7)
   
 -4 を返します
   
 ## <a name="example-3"></a>例 3
 
-天井 (3.7, 0.25)
+天井 (3.7、0.25)
   
 3.75 を返します
   

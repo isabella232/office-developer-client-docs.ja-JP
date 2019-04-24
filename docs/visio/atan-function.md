@@ -8,21 +8,21 @@ f1_keywords:
 - Vis_DSS.chm82251396
 localization_priority: Normal
 ms.assetid: 19b77fbb-32c9-4fc9-4c07-a0a713f7fdca
-description: タンジェントが number である角度など、数値のアーク タンジェントを返します。 結果として得られる角度は -π/2 の範囲で、< = 角度 < = π/2 ラジアン (-90 < = 角度 < = 90 °)。
-ms.openlocfilehash: aa49b3b6e5e6227ed219563e3ff7e8e8bb85ef45
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 数値のアークタンジェント (タンジェントが number である角度など) を返します。 結果の角度は -PI/2 <= 角度 <= PI/2 ラジアン (-90 <= 角度 <= 90°) の範囲になります。
+ms.openlocfilehash: b690d1267503e704549bd74eacf06b414db98137
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341316"
 ---
 # <a name="atan-function"></a>ATAN 関数
 
-そのタンジェントが_数値_である角度など、数値のアーク タンジェントを返します。 結果として得られる角度は -π/2 の範囲で、< = 角度 < = π/2 ラジアン (-90 < = 角度 < = 90 °)。 
+数値のアークタンジェント (タンジェントが_number_である角度など) を返します。 結果の角度は -PI/2 <= 角度 <= PI/2 ラジアン (-90 <= 角度 <= 90°) の範囲になります。 
   
 ## <a name="syntax"></a>構文
 
-ATAN (* **番号** *) 
+ATAN (* **数値** *) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -32,7 +32,7 @@ ATAN (* **番号** *)
    
 ## <a name="example"></a>例
 
-ATAN(1) 
+ATAN (1) 
   
 45°を返します 
   

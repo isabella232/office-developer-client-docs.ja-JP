@@ -8,47 +8,47 @@ f1_keywords:
 - Vis_DSS.chm82251403
 localization_priority: Normal
 ms.assetid: 461abfc1-d2cc-2354-1c2f-395c9e351a78
-description: (VBA) プロジェクトを Microsoft Visual Basic for Applications プロシージャを呼び出します。
-ms.openlocfilehash: 04065384453e55b745daa89273fb4c23b32fb90c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Microsoft Visual Basic for Applications (VBA) プロジェクトのプロシージャを呼び出します。
+ms.openlocfilehash: 7e0f0bafa39d6c1eb1fd39535506981c937ce8a1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337241"
 ---
 # <a name="callthis-function"></a>CALLTHIS 関数
 
-(VBA) プロジェクトを Microsoft Visual Basic for Applications プロシージャを呼び出します。
+Microsoft Visual Basic for Applications (VBA) プロジェクトのプロシージャを呼び出します。
   
 ## <a name="syntax"></a>構文
 
-CALLTHIS ("* **手順** *」、["* **プロジェクト** *」]、[* * *arg1* * *、* **引数 2* * *,...]) 
+CALLTHIS ("* **プロシージャ** *", ["* * *project* * *"], [* * *arg1* * *, * * *arg2* * *,...]) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _手順_ <br/> |必須  <br/> |**文字列型 (String)** <br/> | 呼び出すプロシージャの名前を指定します。  <br/> |
+| _プロシージャ_ <br/> |必須  <br/> |**String** <br/> | 呼び出すプロシージャの名前を指定します。  <br/> |
 | _プロジェクト_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |プロシージャが含まれるプロジェクトを指定します。  <br/> |
-| _arg_ <br/> |省略可能  <br/> |**数値型 (Number)、文字列型 (String)、日付型 (Date)、または通貨型 (Currency)** <br/> |パラメーターとしてプロシージャに渡されます。  <br/> |
+| _引き_ <br/> |省略可能  <br/> |**数値型 (Number)、文字列型 (String)、日付型 (Date)、または通貨型 (Currency)** <br/> |パラメーターとしてプロシージャに渡されます。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 VBA プロジェクトでは、*プロシージャ*は次のように定義されます。 
   
-プロシージャ (*vsoShape*としてほとんどの場合において [arg1 と arg2... の種類として、入力]) 
+プロシージャ (*vsoShape*として、arg1 as type、arg2 as type...]) 
   
-*vsoShape*への参照が評価される CALLTHIS 数式を含んだ**Shape**オブジェクトおよび_arg1_、 *arg2*がその数式で指定された引数。 
+ここで、 *vsoShape*は、評価されている CALLTHIS 数式と、 _arg1_、 *arg2* ... を含む**Shape**オブジェクトへの参照です。は、その数式で指定された引数です。 
   
-その*vsoShape*は、C++ のメンバー プロシージャに渡される"this"引数と同じように非常に近いものに注意してください。したがって名前"CALLTHIS"にします。 実際には、CALLTHIS を含む数式を含むセル読み取ることができるようには、「このプロシージャ呼び出すし、、図形に対する参照を渡すこと。 
+*vsoShape*は、C++ メンバープロシージャに渡される "this" 引数と非常によく似ています。そのため、"CALLTHIS" という名前になります。 実際には、CALLTHIS を含む数式を含むセルは、"このプロシージャを呼び出して、その図形への参照を渡す" ということを読み取ることができます。 
   
-_プロジェクト_が指定されている場合、Microsoft Visio は、1 つ含まれている_プロジェクト_と呼び出し_プロシージャ_そのプロジェクト内のすべての開いているドキュメントをスキャンします。 _プロジェクト_が省略されるか null の場合 ("")、Visio では、対象となる CALLTHIS 数式を含む文書の VBA プロジェクト内の_プロシージャ_が前提としています。 
+_project_が指定されている場合、project を含むすべての開い__ ているドキュメントをスキャンし、そのプロジェクトの_プロシージャ_を呼び出します。 _project_が省略された場合、または null ("") の場合、Visio は、評価されている CALLTHIS 数式を含むドキュメントの VBA プロジェクトに、_プロシージャ_があると見なします。 
   
-_Arg1_に数値、 _arg2..._ は外部単位で渡されます。 たとえば、高さが 3 cm の図形から [Height] セルの値を渡すと、3 が渡されます。 渡すには別の単位数が、FORMATEX 関数を使用または明示的に null 単位 1 組、0 ft + 高さなどを追加することで単位を変換します。 
+_引数 arg1_に含ま__ れる数値は、外部単位で渡されます。 たとえば、高さが 3 cm の図形から [Height] セルの値を渡すと、3 が渡されます。 数値を別の単位に変換して渡すには、FORMATEX 関数を使用するか、NULL 値と単位の組み合わせを追加して明示的に単位を適用します (0 ft + Height など)。 
   
-CALLTHIS 関数の 2 番目のカンマはオプションです。 それは、プロシージャに追加する追加のパラメーターの数に対応しています。 以外の場合は、追加パラメーターを使用しないと、 `(vsoShape as Visio.Shape)` 、2 つ目のコンマを追加しません。CALLTHIS("",) を使用します。 2 つのパラメーターを追加する場合は、たとえば、CALLTHIS("",,,) を使用します。 
+CALLTHIS 関数の 2 番目のカンマはオプションです。 これは、プロシージャに追加するパラメーターの数に応じて指定します。 その他のパラメーターを使用しない場合は`(vsoShape as Visio.Shape)` 、を除き、2番目のコンマを追加しません。CALLTHIS ("",) を使用します。 たとえばパラメーターを 2 つ追加する場合は、CALLTHIS("",,,) のように記述します。 
   
-CALLTHIS 関数は常に 0 に評価し、_プロシージャ_への呼び出しは、再計算処理が完了したら、アイドル時間中に発生します。  _プロシージャ_は、値を返すことができますが、Visio では無視されます。  _プロシージャ_では、CALLTHIS 数式を上書きする場合を除き、Visio は、ドキュメント内の数式または他のセルの結果を設定することで認識できる値がない_プロシージャ_を呼び出したセルを返します。
+CALLTHIS 関数は常に0に評価され、再計算プロセスが終了した後、アイドル時間中に_プロシージャ_の呼び出しが発生します。  _プロシージャ_は値を返すことができますが、Visio では無視されます。  _プロシージャ_は、文書内の別のセルの数式または結果を設定することで、Visio が認識できる値を返しますが、CALLTHIS 数式を上書きするのではなく、_プロシージャ_を呼び出したセルを設定します。
   
 CALLTHIS 関数では、図面のプロジェクトが別のプロジェクトを参照していなくても、そのプロジェクトを呼び出すことができます。この点が、RUNADDON 関数とは異なる点です。 
   
@@ -79,13 +79,13 @@ CALLTHIS("q",,0 cm+Height,Width)
   
 ## <a name="example-3"></a>例 3
 
-*ThisDocument*クラス モジュールに次の手順を使用します。 
+*ThisDocument*クラスモジュールでは、次の手順を使用します。 
   
 図形の [EventDblClick] セルでは、上記のプロシージャと共に次のいずれかの構文を使用します。
   
-CALLTHIS("ThisDocument.A",)
+CALLTHIS ("ThisDocument",)
   
-CALLTHIS("ThisDocument.B",,"Click")
+CALLTHIS ("ThisDocument",, "Click")
   
 CALLTHIS("ThisDocument.C",,"Click", " OK.")
   

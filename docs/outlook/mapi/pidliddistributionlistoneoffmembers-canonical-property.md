@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 0b92e654-9e2d-4c2e-9a63-d5fac603b0c0
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: fed4395274cb790ab8ab7ecf0456d4ecb9ec0134
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25383346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335050"
 ---
 # <a name="pidliddistributionlistoneoffmembers-canonical-property"></a>PidLidDistributionListOneOffMembers 標準プロパティ
 
@@ -25,39 +25,39 @@ ms.locfileid: "25383346"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-個人用配布リストのメンバーに対応する 1 回限りのエントリ Id の一覧を指定します。
+個人用配布リストのメンバーに対応する1回限りの entryids のリストを指定します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |dispidDLOneOffMembers  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Address  <br/> |
-|長い ID (LID):  <br/> |0x00008054  <br/> |
+|プロパティセット:  <br/> |PSETID_Address  <br/> |
+|ロング ID (LID):  <br/> |0x00008054  <br/> |
 |データの種類 :   <br/> |PT_MV_BINARY  <br/> |
-|エリア:  <br/> |Contact  <br/> |
+|エリア:  <br/> |連絡先  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-これらの一時エントリ Id は、表示名と個人用配布リストのメンバーの電子メール アドレスをカプセル化します。
+これらの1回限りの entryids は、個人用配布リストのメンバーの表示名と電子メールアドレスをカプセル化します。
   
-**DispidDLMembers** ([PidLidDistributionListMembers](pidliddistributionlistmembers-canonical-property.md)) プロパティを使用して同期する必要があります、クライアントまたはサーバーは、このプロパティを設定する場合: [ **dispidDLOneOffMembers** ] プロパティのエントリごとに、必要がありますエントリと同じで**dispidDLMembers**プロパティに配置します。 
+クライアントまたはサーバーがこのプロパティを設定する場合は、 **dispiddlmembers** ([PidLidDistributionListMembers](pidliddistributionlistmembers-canonical-property.md)) プロパティと同期する必要があります。 **dispidDLOneOffMembers**プロパティの各エントリに対して、同じエントリが存在する必要があります。**dispiddlmembers**プロパティ内の位置。 
   
-**DispidDLOneOffMembers**を設定するとき、クライアントまたはサーバーする必要があることを確認の合計サイズ 15,000 バイト未満のサイズ。
+**dispidDLOneOffMembers**を設定する場合、クライアントまたはサーバーは、その合計サイズが15000バイトのサイズよりも小さいことを確認する必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
-> プロパティは、連絡先、個人用配布リストの許可の操作を指定します。
+> 連絡先および個人用配布リストに対して許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -65,9 +65,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

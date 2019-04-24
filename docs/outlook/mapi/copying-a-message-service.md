@@ -1,5 +1,5 @@
 ---
-title: メッセージ サービスのコピー
+title: メッセージサービスのコピー
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,24 +7,24 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 01e8ad76-973a-42fa-96aa-f41aabc12b4f
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 8388d14446a230b032e49ad0d614c85e79b8ece8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: a4db4ed1c3098226891edca054621fe145daaa1f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32333055"
 ---
-# <a name="copying-a-message-service"></a>メッセージ サービスのコピー
+# <a name="copying-a-message-service"></a>メッセージサービスのコピー
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
- **メッセージ サービスをプロファイルにコピーするには**
+ **メッセージサービスをプロファイルにコピーするには**
   
-- [IMsgServiceAdmin::CopyMsgService](imsgserviceadmin-copymsgservice.md)を呼び出します。
+- Call [IMsgServiceAdmin:: copymsgservice](imsgserviceadmin-copymsgservice.md)。
     
-メッセージ サービスをコピーすると、サービスの新しいインスタンスがオリジナルと全く同じように構成します。 場合があります**CopyMsgService**では、MAPI_E_ACCESS_DENIED エラーが返されます。 このエラーの戻り値の最も一般的な原因は、自身を複製するのには許可されていないメッセージ サービスです。 
+メッセージサービスがコピーされると、サービスの新しいインスタンスは元のインスタンスとまったく同じ方法で構成されます。 **copymsgservice**がエラー MAPI_E_ACCESS_DENIED を返す場合があります。 このエラーが返される最も一般的な原因は、メッセージサービスが重複して複製されないようにすることです。 
   
 

@@ -1,5 +1,5 @@
 ---
-title: IMessage IMAPIProp
+title: IMessage imapiprop
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,47 +12,47 @@ api_type:
 - COM
 ms.assetid: 7e244d40-595e-432c-aa8c-f9f62ca3c138
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b594297d364ba4f5a3ff7da603d2fe7c2fe8cf07
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 217411dc8bae12a3d7544a4cfd189c4c8f863195
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332873"
 ---
 # <a name="imessage--imapiprop"></a>IMessage : IMAPIProp
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 メッセージ、添付ファイル、および受信者を管理します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|によって公開されます。  <br/> |Message オブジェクト  <br/> |
-|によって実装されます。  <br/> |メッセージ ストア プロバイダー  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーション  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IMessage  <br/> |
-|ポインターの型。  <br/> |LPMESSAGE  <br/> |
-|トランザクション モデル:  <br/> |トランザクション処理  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|公開者:  <br/> |Message オブジェクト  <br/> |
+|実装元:  <br/> |メッセージストアプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
+|インターフェイス識別子:  <br/> |IID_IMessage  <br/> |
+|ポインターの種類:  <br/> |lpmessage  <br/> |
+|トランザクションモデル:  <br/> |一括  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[GetAttachmentTable](imessage-getattachmenttable.md) <br/> |メッセージの添付ファイル テーブルを返します。  <br/> |
-|[OpenAttach](imessage-openattach.md) <br/> |添付ファイルを開きます。  <br/> |
-|[CreateAttach](imessage-createattach.md) <br/> |新しい添付ファイルを作成します。  <br/> |
-|[DeleteAttach](imessage-deleteattach.md) <br/> |添付ファイルを削除します。  <br/> |
-|[GetRecipientTable](imessage-getrecipienttable.md) <br/> |メッセージの受信者テーブルを取得します。  <br/> |
-|[ModifyRecipients](imessage-modifyrecipients.md) <br/> |�ǉ��A�폜�A�܂��̓��b�Z�[�W�̎�M�҂�ύX���܂��B  <br/> |
-|[SubmitMessage](imessage-submitmessage.md) <br/> |メッセージのすべての変更内容を保存し、送信の準備が完了としてマークを付けます。  <br/> |
-|[SetReadFlag](imessage-setreadflag.md) <br/> |設定し、メッセージの**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) のプロパティに MSGFLAG_READ フラグをクリアまたはリードのレポートの送信を管理します。  <br/> |
+|[getattachmenttable](imessage-getattachmenttable.md) <br/> |メッセージの添付ファイルテーブルを返します。  <br/> |
+|[openattach](imessage-openattach.md) <br/> |添付ファイルを開きます。  <br/> |
+|[createattach](imessage-createattach.md) <br/> |新しい添付ファイルを作成します。  <br/> |
+|[deleteattach](imessage-deleteattach.md) <br/> |添付ファイルを削除します。  <br/> |
+|[get受信者テーブル](imessage-getrecipienttable.md) <br/> |メッセージの recipient テーブルを返します。  <br/> |
+|[modifyrecipients](imessage-modifyrecipients.md) <br/> |�ǉ��A�폜�A�܂��̓��b�Z�[�W�̎�M�҂�ύX���܂��B  <br/> |
+|[submitmessage](imessage-submitmessage.md) <br/> |メッセージに加えられたすべての変更を保存し、送信の準備ができたことをマークします。  <br/> |
+|[setreadflag](imessage-setreadflag.md) <br/> |メッセージの**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティの MSGFLAG_READ フラグを設定またはクリアし、閲覧レポートの送信を管理します。  <br/> |
    
-そのライフ サイクル中にいくつかの時点でメッセージの次のプロパティが必要です。 読み取り専用プロパティのほとんどは、クライアントがメッセージの[IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを呼び出すと、メッセージ ストア プロバイダーによって設定されます。 その他の読み取り専用プロパティは、トランスポート プロバイダーによって設定されています。 
+次のプロパティは、ライフサイクルのある時点でのメッセージに必要です。 読み取り専用プロパティのほとんどは、クライアントがメッセージの[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出したときに、メッセージストアプロバイダーによって設定されます。 その他の読み取り専用プロパティは、トランスポートプロバイダーによって設定されます。 
   
-|**クラスのすべてのメッセージに必要なプロパティ**|**Access**|
+|**すべてのクラスのメッセージに必要なプロパティ**|**Access**|
 |:-----|:-----|
 |**PR_CREATION_TIME**([PidTagCreationTime](pidtagcreationtime-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_DISPLAY_BCC**([PidTagDisplayBcc](pidtagdisplaybcc-canonical-property.md))  <br/> |読み取り専用  <br/> |
@@ -61,8 +61,8 @@ ms.locfileid: "22588532"
 |**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_LAST_MODIFICATION_TIME**([PidTagLastModificationTime](pidtaglastmodificationtime-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_MESSAGE_ATTACHMENTS**([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_MESSAGE_CLASS**([PidTagMessageClass](pidtagmessageclass-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
-|**PR_MESSAGE_FLAGS**([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |
+|**PR_MESSAGE_CLASS**([PidTagMessageClass](pidtagmessageclass-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
+|**PR_MESSAGE_FLAGS**([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
 |**PR_MESSAGE_RECIPIENTS**([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_MESSAGE_SIZE**([PidTagMessageSize](pidtagmessagesize-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_MESSAGE_CC_ME**([PidTagMessageCcMe](pidtagmessageccme-canonical-property.md))  <br/> |読み取り専用  <br/> |
@@ -80,13 +80,13 @@ ms.locfileid: "22588532"
 |**PR_STORE_ENTRYID**([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_STORE_RECORD_KEY**([PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
    
-次のプロパティはすべて読み取り専用**PR_BODY**以外のクライアントには。 クライアントは、レポートを処理する際に、このプロパティを作成します。
+次のプロパティはすべて、クライアントに対して読み取り専用になっており、 **PR_BODY**は例外です。 クライアントは、レポートを処理するときにこのプロパティを作成します。
   
-|**レポート メッセージのプロパティ**|
+|**レポートメッセージのプロパティ**|
 |:-----|
 |**PR_BODY**([PidTagBody](pidtagbody-canonical-property.md))  <br/> |
-|**PR_CONVERSATION_INDEX**([PidTagConversationIndex](pidtagconversationindex-canonical-property.md))  <br/> |
-|**PR_CONVERSATION_TOPIC**([PidTagConversationTopic](pidtagconversationtopic-canonical-property.md))  <br/> |
+|**PR_CONVERSATION_INDEX** ([PidTagConversationIndex](pidtagconversationindex-canonical-property.md))  <br/> |
+|**PR_CONVERSATION_TOPIC** ([PidTagConversationTopic](pidtagconversationtopic-canonical-property.md))  <br/> |
 |**PR_MESSAGE_CLASS** <br/> |
 |**PR_MESSAGE_DELIVERY_TIME**([PidTagMessageDeliveryTime](pidtagmessagedeliverytime-canonical-property.md))  <br/> |
 |**PR_ORIGINAL_DELIVERY_TIME**([PidTagOriginalDeliveryTime](pidtagoriginaldeliverytime-canonical-property.md))  <br/> |
@@ -100,16 +100,16 @@ ms.locfileid: "22588532"
 |**PR_REPORT_TIME**([PidTagReportTime](pidtagreporttime-canonical-property.md))  <br/> |
 |**PR_SEARCH_KEY** <br/> |
 |**PR_SENDER**プロパティ  <br/> |
-|**あるの PR_SUBJECT**([PidTagSubject](pidtagsubject-canonical-property.md))  <br/> |
+|**PR_SUBJECT**([PidTagSubject](pidtagsubject-canonical-property.md))  <br/> |
    
-|**メッセージの受信者のプロパティ**|**Access**|**必須または省略可能です**|
+|**メッセージ受信者のプロパティ**|**Access**|**必須または省略可能**|
 |:-----|:-----|:-----|
 |**PR_ADDRTYPE**([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |読み取り専用  <br/> |必須  <br/> |
-|**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |必須  <br/> |
-|**PR_DISPLAY_TYPE**([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))  <br/> |値の取得および設定が可能です。  <br/> |必須  <br/> |
+|**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |必須  <br/> |
+|**PR_DISPLAY_TYPE**([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |必須  <br/> |
 |**PR_EMAIL_ADDRESS**([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |読み取り専用  <br/> |省略可能  <br/> |
 |**PR_ENTRYID** <br/> |読み取り専用  <br/> |必須  <br/> |
 |**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |読み取り専用  <br/> |必須  <br/> |
-|**PR_SEARCH_KEY** <br/> |読み取り専用  <br/> |省略可能  <br/> |
+|**PR_SEARCH_KEY** <br/> |読み取り専用  <br/> |省略可  <br/> |
    
 

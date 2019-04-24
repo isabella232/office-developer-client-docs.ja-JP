@@ -1,5 +1,5 @@
 ---
-title: IMAPIFormFactory IUnknown
+title: imapiformfactory IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 637be364-c393-430a-84b3-2c96aa553c22
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c60b542852653bd617b5b9f604bbc44d575e5cb3
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342120"
 ---
 # <a name="imapiformfactory--iunknown"></a>IMAPIFormFactory : IUnknown
 
@@ -25,34 +25,34 @@ ms.locfileid: "25384767"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-分散コンピューティング環境では、構成可能な実行時のフォームの使用をサポートしています。 
+分散コンピューティング環境での構成可能な実行時フォームの使用をサポートします。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
-|によって公開されます。  <br/> |ファクトリ オブジェクトのフォーム  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
+|公開者:  <br/> |Form factory オブジェクト  <br/> |
 |実装元:  <br/> |フォーム サーバー  <br/> |
-|呼び出し元:  <br/> |フォームの閲覧者  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IMAPIFormFactory  <br/> |
-|ポインターの型。  <br/> |LPMAPIFORMFACTORY  <br/> |
+|呼び出し元:  <br/> |フォームビューアー  <br/> |
+|インターフェイス識別子:  <br/> |IID_IMAPIFormFactory  <br/> |
+|ポインターの種類:  <br/> |LPMAPIFORMFACTORY  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[CreateClassFactory](imapiformfactory-createclassfactory.md) <br/> |フォームのクラス ファクトリ オブジェクトを返します。  <br/> |
-|[発生しました](imapiformfactory-getlasterror.md) <br/> |前の工場出荷時のフォーム オブジェクトに発生したエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
-|[LockServer](imapiformfactory-lockserver.md) <br/> |開いているフォームのサーバーは、メモリ内に保持します。  <br/> |
+|[CreateClassFactory](imapiformfactory-createclassfactory.md) <br/> |フォームのクラスファクトリオブジェクトを返します。  <br/> |
+|[GetLastError](imapiformfactory-getlasterror.md) <br/> |form factory オブジェクトに発生する前のエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
+|[lockserver](imapiformfactory-lockserver.md) <br/> |開いているフォームサーバーをメモリに保持します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-[IClassFactory](https://msdn.microsoft.com/library/ms694364%28VS.85%29.aspx)インターフェイスは、 **IMAPIFormFactory**インターフェイスがベースし、 **IMAPIFormFactory**を実装するオブジェクトは、 **IClassFactory**からも継承する必要があります。
+**imapiformfactory**インターフェイスは[IClassFactory](https://msdn.microsoft.com/library/ms694364%28VS.85%29.aspx)インターフェイスに基づいており、 **imapiformfactory**を実装するオブジェクトも**IClassFactory**から継承する必要があります。
   
- **IMAPIFormFactory**は、フォーム サーバーが 1 つ以上のメッセージ クラスをサポートしている場合、新しいフォーム オブジェクトを作成するフォームの閲覧者が使用するインターフェイス (つまり、1 つ以上の入力フォームのオブジェクトの)。 
+ **imapiformfactory**は、フォームサーバーが複数のメッセージクラス (複数の種類のフォームオブジェクト) をサポートしている場合に、フォームビューアーが新しいフォームオブジェクトを作成するために使用するインターフェイスです。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
 

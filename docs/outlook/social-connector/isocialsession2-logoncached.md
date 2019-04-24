@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8cac444b-0e81-44ff-a7a0-87793b533e26
-description: キャッシュされた資格情報を使用して、ソーシャル ネットワーク サイトにログオンします。
-ms.openlocfilehash: 098ccd2cd3a55affed683886ce1e297ed725475b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: キャッシュされた資格情報を使用してソーシャルネットワークサイトにログオンします。
+ms.openlocfilehash: b79c692c01022dd10ecb8d4085f0aedb28a810c5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336506"
 ---
 # <a name="isocialsession2logoncached"></a>ISocialSession2::LogonCached
 
-キャッシュされた資格情報を使用して、ソーシャル ネットワーク サイトにログオンします。
+キャッシュされた資格情報を使用してソーシャルネットワークサイトにログオンします。
   
 ```cpp
 HRESULT _stdcall LogonCached([in] BSTR connectIn, [in] BSTR userName, [in] BSTR password,  [out] BSTR connectOut);
@@ -25,29 +25,29 @@ HRESULT _stdcall LogonCached([in] BSTR connectIn, [in] BSTR userName, [in] BSTR 
 
 ## <a name="parameters"></a>パラメーター
 
-_connectIn_
+_//_
   
-> [in]空の場合し、OSC が**LogonCached**を呼び出し、コンテキストによって、ログオンの資格情報を含む文字列です。
+> 順番この文字列は、.osc が**logoncached**を呼び出しているコンテキストに応じて、空の場合と、ログオン資格情報が含まれている場合があります。
     
 _userName_
   
-> [in]ユーザー名を含む文字列です。
+> 順番ユーザー名を含む文字列。
     
 _password_
   
-> [in]ユーザーのパスワードを含む文字列です。
+> 順番ユーザーのパスワードを含む文字列。
     
-_connectOut_
+_connectout_
   
-> [out]資格情報が含まれている不透明な文字列です。
+> 読み上げ資格情報を含む符号化文字列。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**機能** [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md)から返された XML の**場合は true**として**useLogonCached**が設定されている場合にのみ、認証にこのメソッドが呼び出されます。
+このメソッドは、 [iime alprovider:: getcapabilities](isocialprovider-getcapabilities.md)によって返される**機能**XML で**uselogoncached**が**true**に設定されている場合にのみ、認証のために呼び出されます。
   
-Outlook ソーシャル コネクタ (OSC) では、 **LogonCached**を呼び出し、 _connectIn_に空の文字列と空以外の_ユーザー名_と_パスワード_の文字列を渡します。 プロバイダーでは、ソーシャル ネットワークにログオンする_ユーザー名_と_パスワード_を使用して、認証が成功した場合は、OSC に不透明な_connectOut_パラメーターを返します。 認証が失敗した場合、プロバイダーは、OSC に OSC_E_LOGON_FAILURE エラーを返します。 
+Outlook Social Connector (.osc) は、 **logoncached**を呼び出し、空の文字列を__ 指定します。ユーザー名とパスワードは空ではない_ユーザー名_と_パスワード_文字列を渡します。 プロバイダーは、ソーシャルネットワークにログオンするために_ユーザー名_と_パスワード_を使用し、認証が成功した場合は、不透明な_connectout_パラメーターを .osc に返します。 認証が失敗した場合、プロバイダーは、OSC_E_LOGON_FAILURE エラーを .osc に返します。 
   
-_ConnectOut_パラメーターでは、OSC に不透明な文字列し、は、パラメーターに渡される、 _connectIn_回目以降のソーシャル ネットワークにログオンするための OSC で。 プロバイダーは、プロバイダーが接続間にわたって格納 OSC _connectOut_文字列の任意の資格情報を配置する必要があります。 OSC では、 _connectOut_、内の文字列を解釈しません。 し、Windows レジストリに格納する前にセキュリティ上の目的の文字列を暗号化します。
+_connectout_パラメーターは、.osc に対する不透明な文字列であり、.osc によっ__ てソーシャルネットワークにログオンするために、次に試行されたときに、このパラメーターに渡されます。 プロバイダーは、接続間に格納するために、プロバイダーが .osc を必要とするすべての資格情報を_connectout_文字列に配置する必要があります。 .osc は、 _connectout_の文字列を解釈しないで、セキュリティ上の理由で文字列を暗号化してから、Windows レジストリに保存します。
   
 ## <a name="see-also"></a>関連項目
 

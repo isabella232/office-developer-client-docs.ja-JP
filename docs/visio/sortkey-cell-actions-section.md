@@ -9,21 +9,21 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: c0c4b668-f31b-336f-4434-e94a4804ff7c
 description: ショートカット メニューまたはアクション タグ メニューに表示されるアクションの順序を指定する数字です。
-ms.openlocfilehash: 5a5db1276d1f2544b5b2b76301c30a2bedd4be63
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d4eb98055f199f603003b068dca9fa7b4e377e52
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334525"
 ---
-# <a name="sortkey-cell-actions-section"></a>[SortKey] セル ([操作] セクション)
+# <a name="sortkey-cell-actions-section"></a>[SortKey] セル ([Actions] セクション)
 
 ショートカット メニューまたはアクション タグ メニューに表示されるアクションの順序を指定する数字です。
   
 > [!NOTE]
 > Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 ショートカット メニューまたはアクション タグ メニューのアクションは、最小の数値から最大の数値の順に並べられ、最小の数値がメニューの一番上に表示されます。2 つのアクション行で [SortKey] セルの値が同じ場合は、物理的な行の順序で並べられます。既定値は 0 (ゼロ) です。
   
@@ -31,14 +31,14 @@ ms.locfileid: "19806562"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |アクションです。 *名*です。SortKeywhere アクションです。  *アクション行の名前します。*  <br/> |
+|セル名:  <br/> |アクション. *名前*です。SortKeywhere アクション。  *name*は、Actions 行の名前です。  <br/> |
    
 プログラムから、インデックスによって [SortKey] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionAction** <br/> |
-|行インデックス:  <br/> |**visRowAction** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+|行インデックス:  <br/> |**visRowAction** +  *i* = ** 0、1、2...  <br/> |
 |セル インデックス:  <br/> |**visActionSortKey** <br/> |
    
 

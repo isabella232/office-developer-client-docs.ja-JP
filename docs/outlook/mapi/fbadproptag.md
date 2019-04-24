@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.assetid: 143bd3c6-5a55-4122-8522-9c48473aa781
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 943dab0141581adc32c184b0042a063a4ec05c3e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9764be2788db8d2649be8708cad4ec67a85af845
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341000"
 ---
 # <a name="fbadproptag"></a>FBadPropTag
 
@@ -25,13 +25,13 @@ ms.locfileid: "22582883"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定されたプロパティ タグを検証します。 
+指定されたプロパティタグを検証します。 
   
 |||
 |:-----|:-----|
 |ヘッダー ファイル:  <br/> |Mapival.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |サービス プロバイダー  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |サービス プロバイダー  <br/> |
    
 ```cpp
 ULONG FBadPropTag(
@@ -43,21 +43,21 @@ ULONG FBadPropTag(
 
  _ulPropTag_
   
-> [in]検証するプロパティ タグです。
+> 順番検証するプロパティタグ。
     
 ## <a name="return-value"></a>戻り値
 
 TRUE 
   
-> 指定されたプロパティ タグは、有効な MAPI プロパティ タグではありません。 
+> 指定されたプロパティタグは、有効な MAPI プロパティタグではありません。 
     
 FALSE 
   
-> 指定されたプロパティ タグは、有効な MAPI プロパティ タグです。
+> 指定されたプロパティタグは、有効な MAPI プロパティタグです。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**FBadPropTag**関数では、MAPI 定義に基づいて、指定されたプロパティ タグを検証します。 Sures プロパティの型は、MAPI によって定義された型のいずれかをその型のプロパティの識別子が定義されていることを確認します。 
+**FBadPropTag**関数は、MAPI 定義に基づいて指定されたプロパティタグを検証します。 プロパティの型が MAPI で定義されている型の1つであり、プロパティ識別子がその型に定義されていることを sures にします。 
   
 ## <a name="see-also"></a>関連項目
 

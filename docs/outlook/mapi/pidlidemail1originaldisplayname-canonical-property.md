@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 991c2969-0180-4c7d-95ee-e62fd24d67ef
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a20ae8e3f19073bfb88d58db516a0e5f93d91445
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25399866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335043"
 ---
 # <a name="pidlidemail1originaldisplayname-canonical-property"></a>PidLidEmail1OriginalDisplayName 標準プロパティ
 
@@ -25,35 +25,35 @@ ms.locfileid: "25399866"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-連絡先に対して指定されている電子メール アドレスに対応する最初の表示名を指定します。
+連絡先に対して指定されている電子メールアドレスに対応する最初の表示名を指定します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |dispidEmail1OriginalDisplayName  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Address  <br/> |
-|長い ID (LID):  <br/> |0x00008084  <br/> |
+|プロパティセット:  <br/> |PSETID_Address  <br/> |
+|ロング ID (LID):  <br/> |0x00008084  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
-|エリア:  <br/> |Contact  <br/> |
+|エリア:  <br/> |連絡先  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-**DispidEmail1AddrType** ([PidLidEmail1AddressType](pidlidemail1addresstype-canonical-property.md)) プロパティの値が"SMTP"の場合は、それぞれの**dispidEmail1OriginalDisplayName**プロパティの値と同じにそれぞれの**の値dispidEmail1EmailAddress** ([PidLidEmail1EmailAddress](pidlidemail1emailaddress-canonical-property.md)) のプロパティです。 このプロパティには、 **dispidEmail1EmailAddress**プロパティの 1 つに相当する代替のユーザー ・ フレンドリーなアドレスが表示されます。 
+**dispidEmail1AddrType** ([PidLidEmail1AddressType](pidlidemail1addresstype-canonical-property.md)) プロパティの値が "SMTP" の場合、それぞれの**dispidEmail1OriginalDisplayName**プロパティの値は、それぞれ**のプロパティの値と等しくなければなりません。dispidEmail1EmailAddress** ([PidLidEmail1EmailAddress](pidlidemail1emailaddress-canonical-property.md)) プロパティ。 このプロパティには、 **dispidEmail1EmailAddress**プロパティのユーザーフレンドリなアドレスが表示されます。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
-> プロパティは、連絡先、個人用配布リストの許可の操作を指定します。
+> 連絡先および個人用配布リストに対して許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -61,9 +61,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

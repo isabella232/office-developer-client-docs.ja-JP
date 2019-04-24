@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 2c7af147-f7eb-41ef-8403-93584a2041ba
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: fd1ad923acca5a75d06e6b15ae7ae7411edefb92
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342008"
 ---
 # <a name="pidlidbusinesscardcardpicture-canonical-property"></a>PidLidBusinessCardCardPicture 標準プロパティ
 
@@ -25,35 +25,35 @@ ms.locfileid: "25400398"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-名刺に使用するイメージが含まれています。
+名刺で使用する画像が保存されています。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidBCCardPicture  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Address  <br/> |
-|長い ID (LID):  <br/> |0x00008041  <br/> |
+|関連するプロパティ:  <br/> |dispidbccardpicture  <br/> |
+|プロパティセット:  <br/> |PSETID_Address  <br/> |
+|ロング ID (LID):  <br/> |0x00008041  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |Contact  <br/> |
+|エリア:  <br/> |連絡先  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティの値は、ポータブル ネットワーク グラフィックス (PNG) または JPEG ストリームのいずれかである必要があります。 このプロパティを次のように**dispidBCDisplayDefinition** ([PidLidBusinessCardDisplayDefinition](pidlidbusinesscarddisplaydefinition-canonical-property.md)) のプロパティと組み合わせて使用する必要があります: **dispidBCCardPicture**は、取引先担当者の場合に表示されなく**dispidBCDisplayDefinition**が存在しません。 このプロパティもしないで**dispidBCCardPicture**内のデータは、名刺の画像を必要としない場合は存在します。 
+このプロパティの値は、ポータブルネットワークグラフィックス (PNG) または JPEG ストリームのいずれかである必要があります。 このプロパティは、 **dispidbcdisplaydefinition** ([PidLidBusinessCardDisplayDefinition](pidlidbusinesscarddisplaydefinition-canonical-property.md)) プロパティと共に使用する必要があります。 **dispidbcdisplaydefinition**が連絡先に存在しない場合**は、次のようにします。dispidbcdisplaydefinition**が存在しません。 このプロパティは、 **dispidbccardpicture**のデータがカードイメージを必要としない場合にも存在しないようにする必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
-> プロパティは、連絡先、個人用配布リストの許可の操作を指定します。
+> 連絡先および個人用配布リストに対して許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -61,9 +61,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

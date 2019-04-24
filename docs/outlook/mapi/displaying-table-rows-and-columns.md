@@ -1,5 +1,5 @@
 ---
-title: テーブルの行と列の表示
+title: 表の行と列の表示
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,53 +8,53 @@ api_type:
 - COM
 ms.assetid: 49567a8d-b58d-4636-bead-a1f84b4f111d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: dba7bd1fb7b0ca9bc23dbc45e07f44d0cc0dc8fe
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f9f1cc0bebf3c90a5c12f2714e8ab7eea59104da
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337024"
 ---
-# <a name="displaying-table-rows-and-columns"></a>テーブルの行と列の表示
+# <a name="displaying-table-rows-and-columns"></a>表の行と列の表示
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
- 新しい電子メールの受信者を定義するユーザーを有効にするのには、アドレス帳プロバイダーがプロパティ ページを使用できます。 
+ プロパティページは、ユーザーが新しい電子メール受信者を定義できるように、アドレス帳プロバイダーが使用できます。 
   
-表示された対応する表には、コントロールごとに 1 つ、4 つの行が含まれています。 位置を示す列の値は次のとおりです。
+対応する表示テーブルには、コントロールごとに1つずつ、4つの行が含まれています。 position を示す列の値は次のようになります。
   
-|**Control**|**XPOS**|**YPOS**|**DELTAX**|**DELTAY**|
+|**Control**|**XPOS**|**YPOS**|**deltax**|**deltay**|
 |:-----|:-----|:-----|:-----|:-----|
-|名前ラベルを表示  <br/> |14  <br/> |18  <br/> |49  <br/> |8  <br/> |
-|表示名の編集] ボックス  <br/> |76  <br/> |16  <br/> |89  <br/> |12  <br/> |
-|電子メール アドレスのラベル  <br/> |14  <br/> |42  <br/> |50  <br/> |8  <br/> |
-|電子メール アドレスの編集] ボックス  <br/> |76  <br/> |40  <br/> |89  <br/> |12  <br/> |
-|チェック ボックス  <br/> |14  <br/> |64  <br/> |90  <br/> |12  <br/> |
+|表示名ラベル  <br/> |第  <br/> |個  <br/> |49  <br/> |~  <br/> |
+|[表示名] 編集ボックス  <br/> |76  <br/> |16  <br/> |89  <br/> |個  <br/> |
+|電子メールアドレスラベル  <br/> |第  <br/> |42  <br/> |50  <br/> |~  <br/> |
+|メールアドレスの編集ボックス  <br/> |76  <br/> |40  <br/> |89  <br/> |個  <br/> |
+|チェック ボックス  <br/> |第  <br/> |64  <br/> |90  <br/> |個  <br/> |
    
-この次の表では、コントロールの種類、 **PR_CONTROL_TYPE** ([PidTagControlType](pidtagcontroltype-canonical-property.md)) のプロパティ、および、 **PR_CONTROL_FLAGS** ([PidTagControlFlags](pidtagcontrolflags-canonical-property.md)) プロパティのフラグのビットマスクの適切な値を示しています。
+次の表は、コントロールの種類、 **PR_CONTROL_TYPE** ([PidTagControlType](pidtagcontroltype-canonical-property.md)) プロパティ、フラグのビットマスク、 **PR_CONTROL_FLAGS** ([PidTagControlFlags](pidtagcontrolflags-canonical-property.md)) プロパティの適切な値を示しています。
   
-|**Control**|**型**|**Flags**|
+|**Control**|**Type**|**Flags**|
 |:-----|:-----|:-----|
-|名前ラベルを表示  <br/> |DTCT_LABEL  <br/> |0  <br/> |
-|表示名の編集] ボックス  <br/> |DTCT_EDIT  <br/> |DT_EDITABLE | DT_REQUIRED  <br/> |
-|電子メール アドレスのラベル  <br/> |DTCT_LABEL  <br/> |0  <br/> |
-|電子メール アドレスの編集] ボックス  <br/> |DTCT_EDIT  <br/> |DT_EDITABLE | DT_REQUIRED  <br/> |
+|表示名ラベル  <br/> |DTCT_LABEL  <br/> |.0  <br/> |
+|[表示名] 編集ボックス  <br/> |DTCT_EDIT  <br/> |DT_EDITABLE | DT_REQUIRED  <br/> |
+|電子メールアドレスラベル  <br/> |DTCT_LABEL  <br/> |.0  <br/> |
+|メールアドレスの編集ボックス  <br/> |DTCT_EDIT  <br/> |DT_EDITABLE | DT_REQUIRED  <br/> |
 |チェック ボックス  <br/> |DTCT_CHECKBOX  <br/> |DT_EDITABLE  <br/> |
    
-最後の表は、各コントロールを関連付けられているコントロールの構造体の内容です。 直接次の構造体のメモリ内の各ラベルのコントロールの値が表示されることに注意してください。
+最後の表に、関連付けられたコントロール構造の内容を含む各コントロールの一覧を示します。 ラベルコントロールのそれぞれの値は、構造体のすぐ後のメモリに表示されることに注意してください。
   
 |**Control**|**Structure**|
 |:-----|:-----|
-|名前ラベルを表示  <br/> |{sizeof(DTBLLABEL)、0}"表示名:"  <br/> |
-|表示名の編集] ボックス  <br/> |{sizeof(DTBLEDIT)、0、80、PR_DISPLAY_NAME}  <br/> |
-|電子メール アドレスのラベル  <br/> |{sizeof(DTBLLABEL)、0}"電子メール アドレス:"  <br/> |
-|電子メール アドレスの編集] ボックス  <br/> |{sizeof(DTBLEDIT)、0、80、PR_EMAIL_ADDRESS}  <br/> |
+|表示名ラベル  <br/> |{sizeof (dtbllabel), 0}"表示名:"  <br/> |
+|[表示名] 編集ボックス  <br/> |{sizeof (DTBLEDIT)、0、80、PR_DISPLAY_NAME}  <br/> |
+|電子メールアドレスラベル  <br/> |{sizeof (dtbllabel), 0}"電子メールアドレス:"  <br/> |
+|メールアドレスの編集ボックス  <br/> |{sizeof (DTBLEDIT)、0、80、PR_EMAIL_ADDRESS}  <br/> |
 |チェック ボックス  <br/> |PR_SEND_RICH_INFO  <br/> |
    
 > [!NOTE]
-> **[Ok]**、**キャンセル**、および**ヘルプ**のボタンは、表示された表には含まれません。 ユーザー ・ インタ フェースは、表示テーブルにないコントロールを追加することによって、ダイアログ ボックスにコンテキストを追加できます。 
+> **[OK]**、 **[キャンセル**]、[**ヘルプ**] の各ボタンは、表示テーブルに含まれていません。 ユーザーインターフェイスでは、表示テーブルにないコントロールを追加することによって、ダイアログボックスにコンテキストを追加することができます。 
   
 ## <a name="see-also"></a>関連項目
 

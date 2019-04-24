@@ -9,37 +9,37 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: cf063c05-5789-e037-700b-1e70df00e254
 description: 図形のテキストでの大文字小文字による区別を指定します。すべて大文字 (1) および先頭文字のみ大文字 (2) を選択した場合、すべてのテキストを大文字で入力すると、テキストの表示状態は変わりません。この 2 つのオプションを有効にするには、テキストを小文字で入力する必要があります。
-ms.openlocfilehash: 9acd786b6fa38aec42990f1fd942174367f1135e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 50ceaa1188caded40d36b8837c346fbbba2e14d2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337234"
 ---
-# <a name="case-cell-character-section"></a>[Case] セル ([文字] セクション)
+# <a name="case-cell-character-section"></a>[Case] セル ([Character] セクション)
 
 図形のテキストでの大文字小文字による区別を指定します。すべて大文字 (1) および先頭文字のみ大文字 (2) を選択した場合、すべてのテキストを大文字で入力すると、テキストの表示状態は変わりません。この 2 つのオプションを有効にするには、テキストを小文字で入力する必要があります。
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| 0  <br/> | 通常  <br/> |**visCaseNormal** <br/> |
-| 1  <br/> | すべて大文字  <br/> |**visCaseAllCaps** <br/> |
-| 2  <br/> | 先頭文字のみ大文字  <br/> |**visCaseInitialCaps** <br/> |
+| .0  <br/> | 通常  <br/> |**visCaseNormal** <br/> |
+| 1-d  <br/> | すべて大文字  <br/> |**viscaseallcaps** <br/> |
+| pbm-2  <br/> | 先頭文字のみ大文字  <br/> |**viscaseinitialcaps** <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Case] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | Char.Case [ *i* ]、 *i* = < 1 > では、2、3、.  <br/> |
+| セル名 :  <br/> | 文字種 [ *i* ] *i* = <1>、2、3、...  <br/> |
    
 プログラムから、インデックスによって [Case] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionCharacter** <br/> |
-| 行インデックス:  <br/> |**visRowCharacter** +  *i* 、 *i* = 0、1、2、.  <br/> |
+| 行インデックス:  <br/> |**visRowCharacter** +  *i* = ** 0、1、2、...  <br/> |
 | セル インデックス:  <br/> |**visCharacterCase** <br/> |
    
 

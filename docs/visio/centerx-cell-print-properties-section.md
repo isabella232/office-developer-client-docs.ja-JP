@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 890e2537-66a5-2863-c78d-320b42565ea7
 description: 図面ページをプリンター ページの左右の中央に揃えるかどうかを指定します。
-ms.openlocfilehash: a12b60f7d183a27d938bd18a1f571ef01af455d2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 13b05ed71248a3f8fada947fca6b203c6ab19c6d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341896"
 ---
-# <a name="centerx-cell-print-properties-section"></a>[CenterX] セル ([印刷のプロパティ] セクション)
+# <a name="centerx-cell-print-properties-section"></a>[CenterX] セル ([Print Properties] セクション)
 
 図面ページをプリンター ページの左右の中央に揃えるかどうかを指定します。 
   
@@ -25,7 +25,7 @@ ms.locfileid: "19805001"
 | TRUE  <br/> | 図面ページをプリンター ページの左右の中央に揃えます。  <br/> |
 | FALSE  <br/> | 図面ページをプリンター ページの左右の中央に揃えません (既定値)。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 既定では、図面ページはプリンター ページの上と左に揃えられます。[CenterX] セルと [CenterY] セルを TRUE に設定すると、図面ページはプリンター ページの中央 (並べて表示する必要がある場合は複数ページの中央) に揃えられます。 
   
@@ -33,7 +33,7 @@ ms.locfileid: "19805001"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [Centerx]  <br/> |
+| セル名 :  <br/> | [centerx]  <br/> |
    
 プログラムから、インデックスによって [CenterX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

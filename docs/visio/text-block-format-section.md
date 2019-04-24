@@ -9,19 +9,19 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 7109ca54-1012-bf38-a8e9-946826abbb18
 description: 図形のテキスト ブロックでのテキストの配置、余白、およびタブ位置を制御するセルを格納します。
-ms.openlocfilehash: 2c797af0d719500c88e09ce960c6e6150c122a46
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a5009ec99ac7b2ec5abcb72adfbdb1c954d37f09
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332330"
 ---
-# <a name="text-block-format-section"></a>[テキスト ブロックの書式設定] セクション
+# <a name="text-block-format-section"></a>[Text Block Format] セクション
 
 図形のテキスト ブロックでのテキストの配置、余白、およびタブ位置を制御するセルを格納します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**テキスト**] ダイアログ ボックスを使用して、これらのテキスト属性を設定することもできます ([**ホーム**] タブの [**フォント**] ダイアログ ボックス起動ツール] をクリック) します。 
+[**テキスト**] ダイアログボックスを使用してこれらのテキスト属性を設定することもできます ([**ホーム**] タブの [**フォント**] グループで、ダイアログボックス起動ツールをクリックします)。 
   
 

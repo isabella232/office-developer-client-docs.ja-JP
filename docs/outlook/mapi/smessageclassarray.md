@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: 05f8c191-db2b-4174-8b3c-a9fdabfe6ac8
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b2caa70600bd32234e38420f274bcd5c46ffb070
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 01b42c04244d35d72dd856222b4bab543b84db45
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339663"
 ---
 # <a name="smessageclassarray"></a>SMessageClassArray
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ クラスの文字列へのポインターの配列が含まれています。
+メッセージクラスの文字列へのポインターの配列を格納します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
 |関連するマクロ:  <br/> |[CbMessageClassArray](cbmessageclassarray.md) <br/> |
    
 ```cpp
@@ -43,15 +43,15 @@ typedef struct
 
 ## <a name="members"></a>Members
 
- **あう**
+ **cvalues**
   
-> 配列内のメッセージ クラスの文字列ポインターの数。
+> 配列内のメッセージクラス文字列ポインターの数。
     
- **aMessageClass**
+ **amessageclass**
   
-> メッセージ クラスの文字列へのポインターの配列です。
+> メッセージクラスの文字列へのポインターの配列です。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 **SMessageClassArray**構造体は、次のメソッドのパラメーターとして渡されます。 
   

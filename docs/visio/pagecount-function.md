@@ -8,17 +8,17 @@ f1_keywords:
 - Vis_DSS.chm82251578
 localization_priority: Normal
 ms.assetid: a8c6c1d9-3452-a31e-ec91-345d201a4b82
-description: ドキュメントの前景ページの数を返します。
-ms.openlocfilehash: 53bf54d131c72d34aba3d4d307c80387f07c0555
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 文書内の前景ページの数を返します。
+ms.openlocfilehash: f862f8285a30531a64f995dfbfd7070a6de9509f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334385"
 ---
 # <a name="pagecount-function"></a>PAGECOUNT 関数
 
-ドキュメントの前景ページの数を返します。 
+文書内の前景ページの数を返します。 
   
 ## <a name="syntax"></a>構文
 
@@ -26,6 +26,6 @@ PAGECOUNT ()
   
 ### <a name="return-value"></a>戻り値
 
-数値
+番号
   
 

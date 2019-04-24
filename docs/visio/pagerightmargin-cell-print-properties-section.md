@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: f864c759-ed94-8ab7-d664-cc04b3ed743e
 description: 印刷ページの右余白を指定します。
-ms.openlocfilehash: 951a16ff20e294b68ed5447d330f4e7cbc100c82
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d30669626fe07379521d61554010ae1bd7b0e83a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339495"
 ---
-# <a name="pagerightmargin-cell-print-properties-section"></a>[PageRightMargin] セル ([印刷のプロパティ] セクション)
+# <a name="pagerightmargin-cell-print-properties-section"></a>[PageRightMargin] セル ([Print Properties] セクション)
 
 印刷ページの右余白を指定します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 この値は物理単位を表し、縮尺または図面の単位には影響されません。たとえば、このセルの値が 0.25 インチなら、ページ単位がフィートの場合でも、この余白は 0.25 インチです。単位が明示されていない場合、既定ではこの値にページ単位が使用されます。 
   
@@ -28,7 +28,7 @@ ms.locfileid: "19805963"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | PageRightMargin  <br/> |
+| セル名 :  <br/> | [pagerightmargin]  <br/> |
    
 プログラムから、インデックスによる [PageRightMargin] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   

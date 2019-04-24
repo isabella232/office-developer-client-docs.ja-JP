@@ -1,5 +1,5 @@
 ---
-title: Mapi クライアントのシャット ダウン
+title: MAPI でのクライアント シャットダウン
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,31 +8,31 @@ api_type:
 - COM
 ms.assetid: 04ec21b8-8cd8-4d2d-92e7-aa73f4315e1e
 description: '最終更新日: 2012 年 6 月 26 日'
-ms.openlocfilehash: cfa4f1838cef5b5f4940775ec79c9a4b39b336fc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f2d41ad36472f39e434e3f17757559ada5e08fbd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334854"
 ---
-# <a name="client-shutdown-in-mapi"></a>Mapi クライアントのシャット ダウン 
+# <a name="client-shutdown-in-mapi"></a>MAPI でのクライアント シャットダウン 
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI クライアントが前に、と同じ方法をシャット ダウンことができます Microsoft Outlook 2010 で開始して、Microsoft Outlook 2013 を含む、または高速シャット ダウンを使用することができます。 正常に発生することが高速シャット ダウンは、MAPI クライアント、MAPI プロバイダー、およびクライアント コンピューターの管理者は、高速シャット ダウンをサポートする必要があります。 
+microsoft outlook 2010 以降では、microsoft outlook 2013 を含む MAPI クライアントは、以前と同じ方法でシャットダウンするか、高速シャットダウンを使用することができます。 高速シャットダウンを正常に実行するには、クライアントコンピューターの mapi クライアント、mapi プロバイダー、および管理者が高速シャットダウンをサポートしている必要があります。 
   
-このセクションのトピックでは、高速シャット ダウンを実行するクライアントに対して MAPI のサポートについて説明します。
+このセクションのトピックでは、高速シャットダウンを実行するクライアントの MAPI サポートについて説明します。
   
 [高速シャットダウンの概要](fast-shutdown-overview.md)
   
-> このトピックでは、高速シャット ダウンの基本的なメカニズムについて説明します。
+> このトピックでは、高速シャットダウンの基本的なメカニズムについて説明します。
     
-[高速シャットダウンのユーザー オプション](fast-shutdown-user-options.md)
+[高速シャットダウンのユーザーオプション](fast-shutdown-user-options.md)
   
-> このトピックでは、管理者がユーザーの MAPI クライアントのユーザー レベルでの高速シャット ダウンを採用するのに利用できる選択肢について説明します。
+> このトピックでは、管理者がユーザーの MAPI クライアントに対してユーザーレベルで高速シャットダウンを導入する際に使用できる選択肢について説明します。
     
 [高速シャットダウンのためのベスト プラクティス](best-practices-for-fast-shutdown.md)
   
-> このトピックでは、MAPI クライアントのシャット ダウン時にデータの損失を防ぐために高速シャット ダウン インターフェイスを使用するベスト プラクティスを推奨します。
+> このトピックでは、高速シャットダウンインターフェイスを使用して、MAPI クライアントのシャットダウン時のデータ損失を防止するためのベストプラクティスについて説明します。
     
 

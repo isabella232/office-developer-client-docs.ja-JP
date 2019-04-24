@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: 5e444b62-d6b6-4cfc-8601-d34aa004c1e6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ef38893c9ad44556cc9220809b5e407f86fd2642
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 324cfe9d7c412b3bb0e3150b8eec51aaeb6a0e93
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338662"
 ---
 # <a name="dtblgroupbox"></a>DTBLGROUPBOX
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ディスプレイ テーブルから作成されたダイアログ ボックスで使用するグループ ボックス コントロールについて説明します。
+表示テーブルから構築されたダイアログボックスで使用されるグループボックスコントロールを表します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
 |関連するマクロ:  <br/> |[SizedDtblGroupBox](sizeddtblgroupbox.md) <br/> |
    
 ```cpp
@@ -43,23 +43,23 @@ typedef struct _DTBLGROUPBOX
 
 ## <a name="members"></a>Members
 
- **ulbLpszLabel**
+ **ulblpszlabel**
   
-> グループ ボックスに付属している文字列のメモリ内の位置。 表示されている場合は、ボックスの上端、左側にあるラベルが表示されます。
+> グループボックスに付属する文字列のメモリ内での位置を指定します。 ラベルが表示されている場合は、ボックスの左上に表示されます。
     
  **ulFlags**
   
-> **UlbLpszLabel**メンバーで指定されたラベルの書式を指定するために使用するフラグのビットマスクです。 次のフラグを設定することができます。 
+> **ulblpszlabel**メンバーが指すラベルの形式を指定するために使用されるフラグのビットマスク。 次のフラグを設定できます。 
     
 MAPI_UNICODE 
   
-> ラベルは、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式のラベルです。
+> ラベルは Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、ラベルは ANSI 形式になります。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**DTBLGROUPBOX**構造体では、ダイアログ ボックスで他のコントロールを視覚的に関連付けるために使用される、グループ ボックス コントロールについて説明します。 強調表示の方法は、ボックスで他のコントロールを囲む必要があります。 
+**dtblgroupbox**構造体は、ダイアログボックス内の他のコントロールを視覚的に関連付けるために使用されるグループボックスコントロールを表します。 強調表示の方法では、他のコントロールをボックスで囲む必要があります。 
   
-テーブルの表示の概要については、[テーブルの表示](display-tables.md)を参照してください。 表示テーブルを実装する方法の詳細については、[表示テーブルを実装する](display-table-implementation.md)を参照してください。
+表示テーブルの概要については、「[テーブルの表示](display-tables.md)」を参照してください。 表示テーブルを実装する方法については、「[表示テーブルを実装](display-table-implementation.md)する」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

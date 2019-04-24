@@ -1,5 +1,5 @@
 ---
-title: IConverterSession IUnknown
+title: iconvertersession IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,46 +12,46 @@ api_type:
 - COM
 ms.assetid: 24f7a14a-aa6f-4045-054b-4a7aefef25e4
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 316e17e7804e754eed4ee4fef27211fb5173d4bc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2db55d6318cf02dd131d07b34841922e61605147
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336688"
 ---
 # <a name="iconvertersession--iunknown"></a>IConverterSession : IUnknown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MIME オブジェクト、および MAPI メッセージ間の変換を使用できます。 これは、インターネット経由でメッセージの転送に便利なことができます。
+MIME オブジェクトと MAPI メッセージ間の変換を可能にします。 これは、インターネット経由でメッセージを転送する場合に役立ちます。
   
 |||
 |:-----|:-----|
 |提供元:  <br/> |CLSID_IConverterSession  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IConverterSession  <br/> |
+|インターフェイス識別子:  <br/> |IID_IConverterSession  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|**[SetAdrBook](iconvertersession-setadrbook.md)** <br/> |MAPI メッセージを MIME ストリームに変換するときにあいまいなアドレスを解決するのには MIME コンバーターに MAPI を使用して MAPI アドレス帳を指定します。  <br/> |
-|**[SetEncoding](iconvertersession-setencoding.md)** <br/> |変換時に使用するエンコーディングを初期化します。  <br/> |
-| *プレース ホルダー メンバー*  <br/> | *いないサポートまたは文書化されています。*  <br/> |
+|**[setadrbook](iconvertersession-setadrbook.md)** <br/> |mapi メッセージを mime ストリームに変換するときに、あいまいなアドレスを解決するために mapi から mime コンバータが使用するオプションの mapi アドレス帳を指定します。  <br/> |
+|**[setencoding](iconvertersession-setencoding.md)** <br/> |変換時に使用するエンコードを初期化します。  <br/> |
+| *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません。*  <br/> |
 |**[MIMEToMAPI](iconvertersession-mimetomapi.md)** <br/> |MIME ストリームを MAPI メッセージに変換します。  <br/> |
 |**[MAPIToMIMEStm](iconvertersession-mapitomimestm.md)** <br/> |MAPI メッセージを MIME ストリームに変換します。  <br/> |
-| *プレース ホルダー メンバー*  <br/> | *いないサポートまたは文書化されています。*  <br/> |
-| *プレース ホルダー メンバー*  <br/> | *いないサポートまたは文書化されています。*  <br/> |
-| *プレース ホルダー メンバー*  <br/> | *いないサポートまたは文書化されています。*  <br/> |
-|**[SetTextWrapping](iconvertersession-settextwrapping.md)** <br/> |テキストの折り返しの MIME ストリームを表すコンバーター **MAPIToMIMEStm**の幅を設定します。  <br/> |
-|**[SetSaveFormat](iconvertersession-setsaveformat.md)** <br/> |コンバーターには、 **MAPIToMIMEStm**の MIME ストリームを取得する書式を設定します。  <br/> |
-| *プレース ホルダー メンバー*  <br/> | *いないサポートまたは文書化されています。*  <br/> |
-|**[SetCharSet](iconvertersession-setcharset.md)** <br/> |MIME コンバーターに MAPI が MAPI メッセージを MIME ストリームに変換するときに使用する、省略可能な文字の設定を指定します。  <br/> |
+| *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません。*  <br/> |
+| *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません。*  <br/> |
+| *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません。*  <br/> |
+|**[SetTextWrapping](iconvertersession-settextwrapping.md)** <br/> |**MAPIToMIMEStm**でコンバータが返す MIME ストリームのテキストの折り返し幅を設定します。  <br/> |
+|**[setsaveformat](iconvertersession-setsaveformat.md)** <br/> |コンバーターが**MAPIToMIMEStm**で MIME ストリームを返す形式を設定します。  <br/> |
+| *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません。*  <br/> |
+|**[setcharset](iconvertersession-setcharset.md)** <br/> |mapi メッセージを mime ストリームに変換するときに mapi から mime コンバータが使用するオプションの文字セットを指定します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**MAPIToMIMEStm**を使用して変換を実行する前に、 **SetEncoding**を呼び出します。 
+**MAPIToMIMEStm**を使用して変換を実行する前に、 **setencoding**を呼び出します。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -59,5 +59,5 @@ MIME オブジェクト、および MAPI メッセージ間の変換を使用で
 
 [MAPI-MIME 会話 API について](about-the-mapi-mime-conversion-api.md)
   
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
 

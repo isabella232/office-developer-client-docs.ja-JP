@@ -8,32 +8,32 @@ f1_keywords:
 - Vis_DSS.chm82251504
 localization_priority: Normal
 ms.assetid: 5a10892f-c8fa-c127-2f5a-564009ce5411
-description: テキスト行を超えている maximumwidth 図形で構成されたテキストの高さを返しません。
-ms.openlocfilehash: 9a80dafcf80a1dcba968a0f60465aae4e2a2758b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: テキスト行が maximumwidth を超える場合に、構成されたテキストの高さを図形内に返します。
+ms.openlocfilehash: 7455f58f14f9a4a0ae1fcd5375dba5d5860d3852
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332364"
 ---
 # <a name="textheight-function"></a>TEXTHEIGHT 関数
 
-テキスト行を超えている_maximumwidth_図形で構成されたテキストの高さを返しません。 
+テキスト行が_maximumwidth_を超える場合に、構成されたテキストの高さを図形内に返します。 
   
 ## <a name="syntax"></a>構文
 
-TEXTHEIGHT (* **なります。[Thetext]* * * * * *[] maximumwidth* * *) 
+TEXTHEIGHT (* * 図形の場合) ** テキスト * * * * *[, maximumwidth]* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _なります! テキスト_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |セルへの参照では、接続先の図形の [thetext] という名前です。  _なります!_ テキストを取得する図形の名前です。  <br/> |
+| _offename! テキスト_ <br/> |必須  <br/> |**String** <br/> |ターゲットとなる図形の [TheText] セルに対する参照を指定します。  _shapename!_ は、テキストを取得する図形の名前です。  <br/> |
 | _maximumwidth_ <br/> |省略可能  <br/> |**数値型 (Numeric)** <br/> |テキスト ブロックの最大幅を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
-String
+文字列
   
 ## <a name="remarks"></a>注釈
 

@@ -8,21 +8,21 @@ f1_keywords:
 - Vis_DSS.chm82251395
 localization_priority: Normal
 ms.assetid: 7d917be4-65b1-002f-48cc-6d81916a1157
-description: そのサインが number である角度など、数値のアークサインを返します。
-ms.openlocfilehash: e5ed8f9fc8c85ac4816fede03bfe6f6af5cbf5f0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 数値のアークサイン (正弦が数値である角度など) を返します。
+ms.openlocfilehash: a7585dc07053466203f11cc04ce249ceb62fbda0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341525"
 ---
 # <a name="asin-function"></a>ASIN 関数
 
-そのサインが*数値*である角度など、数値のアークサインを返します。 
+数値のアークサイン (正弦が*数値*である角度など) を返します。 
   
 ## <a name="syntax"></a>構文
 
-ASIN (* **番号** *) 
+アークサイン (* **数値** *) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -30,13 +30,13 @@ ASIN (* **番号** *)
 |:-----|:-----|:-----|:-----|
 | _number_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |角度のサインを指定します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-入力値が-1 の範囲である必要があります < =*数*< = 1、または、#NUM! エラーが返されます。 結果として得られる角度は -π/2 の範囲で、< =*角度*< = π/2 ラジアン (-90 < =*角度*< = 90 °)。 
+入力値は、-1 < = *number* < = 1、または #NUM の範囲内である必要があります。 エラーを返します。 結果の角度は、-pi/2 < = *angle* < = π/2 ラジアン (-90 < = *angle* < = 90 °) の範囲になります。 
   
 ## <a name="example"></a>例
 
-ASIN(1)
+アークサイン (1)
   
 90°を返します
   

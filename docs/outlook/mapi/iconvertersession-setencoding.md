@@ -1,5 +1,5 @@
 ---
-title: IConverterSessionSetEncoding
+title: iconvertersessionsetencoding
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,17 +13,17 @@ api_type:
 ms.assetid: a9624d3f-a636-0267-5cbd-de0db42f9c22
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5a81e04d112e0adf201dcacf03673daac77a04ab
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25382422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341301"
 ---
 # <a name="iconvertersessionsetencoding"></a>IConverterSession::SetEncoding
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-変換時に使用するエンコーディングを初期化します。
+変換時に使用されるエンコードを初期化します。
   
 ```cpp
 HRESULT IConverterSession:: SetEncoding ( 
@@ -35,7 +35,7 @@ HRESULT IConverterSession:: SetEncoding (
 
 _et_
   
-> ( [ENCODINGTYPE](https://msdn.microsoft.com/library/aa374936%28VS.85%29.aspx) ) の値です。 次の値のみがサポートされています。 
+> [ENCODINGTYPE](https://msdn.microsoft.com/library/aa374936%28VS.85%29.aspx)値。 次の値のみがサポートされています。 
     
    - IET_BASE64
    - IET_UUENCODE
@@ -47,13 +47,13 @@ _et_
 
 E_INVALIDARG
   
-> 渡されるエンコードの種類が無効でした。
+> 渡されたエンコードの種類が無効です。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-[IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md)を使用して変換を実行する前に、 **SetEncoding**を呼び出します。 
+[iconvertersession:: MAPIToMIMEStm](iconvertersession-mapitomimestm.md)を使用して変換を実行する前に、 **setencoding**を呼び出します。 
   
-メール アイテムの最も外側のメッセージの本文のみのエンコーディングを設定するのにには、 **SetEncoding**を使用します。 Microsoft Outlook 2010 と Microsoft Outlook 2013 は、個々 の添付ファイルのエンコーディングを選択します。 
+**setencoding**を使用して、メールアイテムの最も外側のメッセージ本文にのみエンコードを設定します。 microsoft outlook 2010 および microsoft outlook 2013 各添付ファイルのエンコード方法を選択します。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -61,8 +61,8 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MapiMime.cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI では、MimeToMAPI を使用して、MAPI メッセージを EML ファイルに変換します。  <br/> |
-|MapiMime.cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI では、MAPIToMIMEStm を使用して、MAPI メッセージを EML ファイルに変換します。  <br/> |
+|mapimime .cpp  <br/> |ImportEMLToIMessage  <br/> |mfcmapi は MimeToMAPI を使用して、EML ファイルを MAPI メッセージに変換します。  <br/> |
+|mapimime .cpp  <br/> |ExportIMessageToEML  <br/> |mfcmapi は、MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -73,5 +73,5 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
 - [IConverterSession::SetCharSet](iconvertersession-setcharset.md)
 - [IConverterSession::SetSaveFormat](iconvertersession-setsaveformat.md)
 - [IConverterSession::SetTextWrapping](iconvertersession-settextwrapping.md)
-- [MAPI �萔](mapi-constants.md)
+- [MAPI 定数](mapi-constants.md)
 

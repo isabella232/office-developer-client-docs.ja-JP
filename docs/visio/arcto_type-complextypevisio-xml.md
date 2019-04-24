@@ -1,5 +1,5 @@
 ---
-title: ArcTo_Type complexType'Visio XML (')
+title: ArcTo_Type complexType (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,20 +7,20 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: c30c80eb-6327-ebc3-7ea4-8b2fc7525cc0
 ms.openlocfilehash: 73a89d7535a81700a875f68905de844f876a6181
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25390150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341413"
 ---
-# <a name="arctotype-complextype-visio-xml"></a>ArcTo_Type complexType'Visio XML (')
+# <a name="arctotype-complextype-visio-xml"></a>ArcTo_Type complexType (' Visio XML ')
 
 ## <a name="type-information"></a>型情報
 
 |||
 |:-----|:-----|
-|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15-06-05  <br/> |
 |**拡張ベース** <br/> |GeometryRow_Type  <br/> |
    
 ## <a name="definition"></a>定義
@@ -46,11 +46,11 @@ ms.locfileid: "25390150"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。 
+スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
   
 ### <a name="child-elements"></a>子要素
 
-|**要素**|**型**|**説明**|
+|**Element**|**型**|**説明**|
 |:-----|:-----|:-----|
 |[Cell](cell-element-arcto-rowvisio-xml.md) <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> ||
    

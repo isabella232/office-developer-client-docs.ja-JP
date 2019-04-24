@@ -8,31 +8,31 @@ f1_keywords:
 - Vis_DSS.chm82251581
 localization_priority: Normal
 ms.assetid: 519d79d4-9178-2231-c26d-aa7f31a43412
-description: シートのマスター シェイプの名前として、文字列を返しますか、シートは、マスターを持っていない場合は、'マスターなし' を文字列を返します。
-ms.openlocfilehash: c1d5891fba0f967cde4a4e9ca58d07f87239f0b0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: シートのマスターシェイプ名を文字列として返します。または、シートにマスターシェイプがない場合は、文字列 ' master ' を返します。
+ms.openlocfilehash: 7732cf9e8b23e2fd0fc2e3f2cc8d9ef4f39fd67f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341798"
 ---
 # <a name="mastername-function"></a>MASTERNAME 関数
 
-シートのマスター シェイプの名前として、文字列を取得または設定の文字列を返します"\<マスターなし\>」シートは、マスターを持っていない場合。
+シートのマスターシェイプ名を文字列として返します。または\<、シート\>にマスターシェイプがない場合は、文字列 "master" を返します。
   
 ## <a name="syntax"></a>構文
 
-MASTERNAME ([* * *langID_opt* * *]) 
+mastername ([* * *langID_opt* * *]) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _langID_opt_ <br/> |省略可能  <br/> |**番号** <br/> |関数が返す文字列の言語を指定します。ローカル言語を指定するには、0 (既定値) を使用します。汎用言語を指定するには、750 を使用します。  <br/> |
+| _langID_opt_ <br/> |省略可能  <br/> |**数値** <br/> |関数が返す文字列の言語を指定します。ローカル言語を指定するには、0 (既定値) を使用します。汎用言語を指定するには、750 を使用します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
-String
+文字列
   
 ## <a name="remarks"></a>注釈
 

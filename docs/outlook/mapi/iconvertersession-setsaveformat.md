@@ -1,5 +1,5 @@
 ---
-title: IConverterSessionSetSaveFormat
+title: iconvertersessionsetsaveformat
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,17 +13,17 @@ api_type:
 ms.assetid: e5308a94-5191-2109-a881-b4f4a7ff1c61
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: b528d6ef45c02b27f8e07d151793fc338f9af7b1
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25394357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336639"
 ---
 # <a name="iconvertersessionsetsaveformat"></a>IConverterSession::SetSaveFormat
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-コンバーターが[IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md)で、MIME ストリームを取得する書式を設定します。
+[iconvertersession:: MAPIToMIMEStm](iconvertersession-mapitomimestm.md)で、コンバータが MIME ストリームを返す形式を設定します。
   
 ```cpp
 HRESULT IConverterSession::SetSaveFormat ( 
@@ -35,10 +35,10 @@ HRESULT IConverterSession::SetSaveFormat (
 
 _mstSaveFormat_
   
-> [in]保存の MIME ストリームに使用する書式を設定します。 詳細については、 [MIMESAVETYPE](https://msdn.microsoft.com/library/ms715128%28VS.85%29.aspx)列挙型を参照してください。
+> 順番MIME ストリームに使用される保存形式。 詳細については、「 [MIMESAVETYPE](https://msdn.microsoft.com/library/ms715128%28VS.85%29.aspx)」という列挙型を参照してください。
     
-  - **SAVE_RFC1521**: 既定値は、MIME を使用します。      
-  - **SAVE_RFC822**: でも、uuencode を使用します。
+  - **SAVE_RFC1521**: 既定の MIME を使用します。      
+  - **SAVE_RFC822**: uuencode を使用します。
     
 ## <a name="return-values"></a>戻り値
 
@@ -52,8 +52,8 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MapiMime.cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI では、MimeToMAPI を使用して、MAPI メッセージを EML ファイルに変換します。  <br/> |
-|MapiMime.cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI では、MAPIToMIMEStm を使用して、MAPI メッセージを EML ファイルに変換します。  <br/> |
+|mapimime .cpp  <br/> |ImportEMLToIMessage  <br/> |mfcmapi は MimeToMAPI を使用して、EML ファイルを MAPI メッセージに変換します。  <br/> |
+|mapimime .cpp  <br/> |ExportIMessageToEML  <br/> |mfcmapi は、MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -64,5 +64,5 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
 - [IConverterSession::SetCharSet](iconvertersession-setcharset.md)
 - [IConverterSession::SetEncoding](iconvertersession-setencoding.md)
 - [IConverterSession::SetTextWrapping](iconvertersession-settextwrapping.md)
-- [MAPI �萔](mapi-constants.md)
+- [MAPI 定数](mapi-constants.md)
 

@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: a36465e2-7be9-4bd6-8091-685f0a045aa9
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a20fdd45c39cc2147f8fdc7b1998ff6d1b0797bb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: af3c1f5135e90274c0251c5a0addf339c14f36c0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339299"
 ---
 # <a name="iablogonlogoff"></a>IABLogon::Logoff
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ログオフ処理を開始します。
+ログオフプロセスを開始します。
   
 ```cpp
 HRESULT Logoff(
@@ -33,29 +33,29 @@ HRESULT Logoff(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> ログオフ処理が正常に開始されました。
+> ログオフプロセスが正常に開始されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-ログオフ処理は通常、クライアントがセッションを終了するのには[IMAPISession::Logoff](imapisession-logoff.md)メソッドを呼び出すときに起動します。 MAPI は、ログオフ処理を開始するのには、各アドレス帳プロバイダーの**IABLogon::Logoff**メソッドを呼び出します。 
+ログオフプロセスは、通常、クライアントが[imapisession:: logoff](imapisession-logoff.md)メソッドを呼び出してセッションを終了するときに開始されます。 次に、MAPI は各アドレス帳プロバイダーの**IABLogon:: logoff**メソッドを呼び出して、ログオフプロセスを開始します。 
   
-**IABLogon::Logoff**メソッドは、次のこと。 
+**IABLogon:: Logoff**メソッドは、次の処理を行います。 
   
-- サブオブジェクトまたは状態オブジェクトなど、すべての開いているオブジェクトを解放します。
+- すべてのオブジェクトを解放します (任意のオブジェクト、または status オブジェクトなど)。
     
-- プロバイダーのサポートのオブジェクトを解放します。
+- プロバイダーのサポートオブジェクトを解放します。
     
-アドレス帳プロバイダーのログオフ処理の詳細については、[シャット ダウン、サービス ・ プロバイダー](shutting-down-a-service-provider.md)を参照してください。
+アドレス帳プロバイダーのログオフプロセスの詳細については、「[サービスプロバイダーをシャットダウンする](shutting-down-a-service-provider.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

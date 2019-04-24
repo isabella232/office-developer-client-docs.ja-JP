@@ -9,11 +9,11 @@ api_type:
 ms.assetid: cca4c70d-b73a-4834-80b5-9cb5889f63cc
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: a91ab8497a690fd4b99f76274d0213284253fd06
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25394119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334469"
 ---
 # <a name="component-object-model-and-mapi"></a>コンポーネント オブジェクト モデルと MAPI
 
@@ -21,7 +21,7 @@ ms.locfileid: "25394119"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Windows SDK ドキュメントには、コンポーネント オブジェクト モデル (COM) に準拠しているオブジェクトを実装するための規則の包括的な説明が含まれています。 これらの規則は、以下を実行する方法を対処します。
+Windows SDK ドキュメントには、コンポーネントオブジェクトモデル (COM) に準拠するオブジェクトを実装するための規則についての包括的な説明が含まれています。 これらのルールは、次の操作を実行する方法に対応しています。
   
 - インターフェイスとオブジェクトを設計します。
     
@@ -31,9 +31,9 @@ Windows SDK ドキュメントには、コンポーネント オブジェクト 
     
 - 参照カウントを処理します。
     
-- アパートメント スレッド オブジェクトを実装します。
+- アパートメントスレッドオブジェクトを実装します。
     
-すべての MAPI オブジェクトと見なされます com [IUnknown](https://msdn.microsoft.com/library/ms680509%28VS.85%29.aspx)から継承するインターフェイスを実装するため、MAPI は、状況によっては標準の COM の規則からの逸脱します。 この偏差から、開発者は、実装でより柔軟にすることができます。 などの任意の COM インターフェイスと同様に、MAPI インターフェイスでは、作成者と呼び出し元のコントラクトについて説明します。 インタ フェースが作成され、公開、その定義はことはできず、変更されません。 この説明では、MAPI が外れていないが、説明を多少緩和します。 実装では特定のメソッドを実装するのにはエラー値は次のいずれかを呼び出し元に返すことができます。 
+すべての mapi オブジェクトは、 [IUnknown](https://msdn.microsoft.com/library/ms680509%28VS.85%29.aspx)から継承するインターフェイスを実装するため、com ベースであると見なされますが、一部の状況では、標準的な com ルールによって異なります。 この偏差により、開発者は実装をより柔軟にすることができます。 たとえば、すべての COM インターフェイスと同様に、MAPI インターフェイスは、実装側と呼び出し元との間の契約を記述します。 インターフェイスを作成して発行すると、その定義は変更できなくなります。 MAPI はこの説明から逸脱しませんが、説明は少し relaxes ます。 実装者は、特定のメソッドを実装しないことを選択でき、次のいずれかのエラー値を呼び出し元に返します。 
   
 - MAPI_E_NO_SUPPORT
     
@@ -43,15 +43,15 @@ Windows SDK ドキュメントには、コンポーネント オブジェクト 
     
 - MAPI_E_TYPE_NO_SUPPORT
     
-標準の COM の規則からの偏差は、次の表に説明します。
+次の表では、標準 COM ルールのその他の相違点について説明します。
   
-|**COM プログラミングの規則**|**MAPI のバリエーション**|
+|**COM プログラミングルール**|**MAPI のバリエーション**|
 |:-----|:-----|
-|インターフェイスのメソッド内のすべての文字列パラメーターには、Unicode をする必要があります。  <br/> |MAPI インターフェイスは、Unicode または ANSI のいずれかの文字列パラメーターを許可するように定義されます。 文字列パラメーターをとるメソッドの多くもパラメーターを持つ、 **ulFlags**です。**ulFlags**に MAPI_UNICODE フラグの値の文字列パラメーターの幅が表示されます。 一部の MAPI インターフェイスをサポートしない Unicode MAPI_UNICODE フラグが設定されている場合は、MAPI_E_BAD_CHARWIDTH を返します。  <br/> |
-|すべてのインターフェイス メソッドは、HRESULT の戻り値の型が必要です。  <br/> |MAPI 以外の HRESULT 値を返すには、少なくとも 1 つのメソッドを持つ: [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)。  <br/> |
-|呼び出し元および実装する必要があります解放し、メモリ インタ フェースのパラメーターの標準的な COM タスク アロケーターを使用しています。  <br/> |MAPI のすべてのメソッドは、インターフェイスのパラメーター用のメモリを管理するために[MAPIAllocateBuffer](mapiallocatebuffer.md)、 [MAPIAllocateMore](mapiallocatemore.md)、および[MAPIFreeBuffer](mapifreebuffer.md)は、リンクされたアロケーターを使用します。 [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)など、OLE によって定義されたインターフェイスのすべての MAPI 実装では、標準的な COM タスク アロケーターを使用します。  <br/> |
-|すべてのポインター パラメーターする必要があります明示的に設定する NULL にメソッドが失敗したとき。  <br/> |MAPI インターフェイスでは、ポインター パラメーターを NULL に設定または変更しないままメソッドを配置するかを失敗する必要があります。 OLE によって明示的に定義されているインタ フェースのすべての MAPI 実装では、失敗した場合に null パラメーターを設定します。  <br/> |
-|可能な限り、集約可能オブジェクトを実装します。  <br/> |MAPI インターフェイスは、集約可能ではありません。  <br/> |
+|インターフェイスメソッドのすべての文字列パラメーターは Unicode にする必要があります。  <br/> |MAPI インターフェイスは、Unicode または ANSI 文字列パラメーターのいずれかを許可するように定義されています。 文字列パラメーターを持つ多くのメソッドに**ulflags**パラメーターも指定されています。文字列パラメータの幅は、 **ulflags**の MAPI_UNICODE フラグの値で示されます。 一部の MAPI インターフェイスは、Unicode をサポートしておらず、MAPI_UNICODE フラグが設定されている場合は MAPI_E_BAD_CHARWIDTH を返します。  <br/> |
+|すべてのインターフェイスメソッドには、戻り値の型が HRESULT である必要があります。  <br/> |MAPI には、HRESULT でない値: [IMAPIAdviseSink:: onnotify](imapiadvisesink-onnotify.md)を返すメソッドが少なくとも1つあります。  <br/> |
+|呼び出し元と実装者は、標準の COM タスク allocators を使用して、インターフェイスパラメーターのメモリを割り当てて解放する必要があります。  <br/> |すべての MAPI メソッドは、リンクされた allocators [MAPIAllocateBuffer](mapiallocatebuffer.md)、 [MAPIAllocateMore](mapiallocatemore.md)、および[MAPIFreeBuffer](mapifreebuffer.md)を使用して、インターフェイスパラメーターのメモリを管理します。 [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)など、OLE によって定義されたインターフェイスのすべての MAPI 実装は、標準の COM タスク allocators を使用します。  <br/> |
+|メソッドが失敗した場合は、すべての out ポインターパラメーターを明示的に NULL に設定する必要があります。  <br/> |MAPI インターフェイスでは、out ポインターパラメーターを NULL に設定するか、またはメソッドが失敗した場合は変更しないままにする必要があります。 OLE によって定義されたインターフェイスのすべての MAPI 実装は、失敗時にパラメーターを NULL に明示的に設定します。  <br/> |
+|可能な限り、集約可能なオブジェクトを実装します。  <br/> |MAPI インターフェイスは集約できません。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -64,5 +64,5 @@ Windows SDK ドキュメントには、コンポーネント オブジェクト 
 [MAPIFreeBuffer](mapifreebuffer.md)
 
 
-[MAPI オブジェクトとインターフェイスの概要](mapi-object-and-interface-overview.md)
+[MAPI のオブジェクトとインターフェイスの概要](mapi-object-and-interface-overview.md)
 

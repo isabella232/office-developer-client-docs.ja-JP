@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: 2872130d-a36b-46ea-bfd1-4700fe3dd41b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ba93cd0343121751ab12514fe3f09e5a480d5b23
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 84b44b4b054a2b2617502a6a463a6d4a89546804
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336443"
 ---
 # <a name="statusobjectnotification"></a>STATUS_OBJECT_NOTIFICATION
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-変更によって影響のある状態のオブジェクトについて説明します。 
+変更によって影響を受けた状態オブジェクトを示します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct
@@ -46,31 +46,31 @@ typedef struct
 
  **cbEntryID**
   
-> **LpEntryID**メンバーが指すエントリの識別子のバイト数をカウントします。 
+> **lな tryid**メンバーによって指摘されたエントリ識別子のバイト数。 
     
- **lpEntryID**
+ **lて tryid**
   
-> ステータスが変更されたオブジェクトのエントリの識別子へのポインター。
+> 変更された状態オブジェクトのエントリ識別子へのポインター。
     
- **あう**
+ **cvalues**
   
-> **LpPropVals**メンバーが指す配列内の[SPropValue](spropvalue.md)構造体の数です。 
+> **lppropvals**メンバーによって参照されている、配列内の[spropvalue](spropvalue.md)構造体の数。 
     
- **lpPropVals**
+ **lppropvals**
   
-> ステータスが変更されたオブジェクトのプロパティを記述する**SPropValue**構造体の配列へのポインター。 
+> 変更されたステータスオブジェクトのプロパティを記述する**spropvalue**構造体の配列へのポインター。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**STATUS_OBJECT_NOTIFICATION**構造では、[通知](notification.md)の構造体のメンバー**情報**に含まれる構造体の共用体のメンバーの 1 つです。 **STATUS_OBJECT_NOTIFICATION**構造体では、イベントの種類の_fnevStatusObjectModified_の状態のオブジェクトの通知に含まれています。 オブジェクトのステータスの通知は、内部の MAPI 通知です。クライアントとサービス ・ プロバイダーは、登録できませんし、サービス ・ プロバイダーが生成できません。
+**STATUS_OBJECT_NOTIFICATION**構造体は、[通知](notification.md)構造の**info**メンバに含まれている構造体の和集合のメンバーのいずれかです。 **STATUS_OBJECT_NOTIFICATION**構造体は、 _fnevStatusObjectModified_型のイベントに対するステータスオブジェクト通知に含まれています。 状態オブジェクト通知は MAPI の内部通知です。クライアントおよびサービスプロバイダーはそれを登録できず、サービスプロバイダーはそれを生成できません。
   
-通知の詳細については、次の表に記載されているトピックを参照してください。
+通知の詳細については、次の表で説明するトピックを参照してください。
   
 |**トピック**|**説明**|
 |:-----|:-----|
-|[MAPI のイベント通知](event-notification-in-mapi.md) <br/> |通知と通知のイベントの概要です。  <br/> |
-|[通知の処理](handling-notifications.md) <br/> |クライアントが通知を処理する方法について説明します。  <br/> |
-|[イベント通知のサポート](supporting-event-notification.md) <br/> |サービス プロバイダーが、 **IMAPISupport**メソッドを使用して、通知を生成する方法について説明します。  <br/> |
+|[MAPI のイベント通知](event-notification-in-mapi.md) <br/> |通知イベントと通知イベントの一般的な概要。  <br/> |
+|[通知の処理](handling-notifications.md) <br/> |クライアントが通知を処理する方法についての説明。  <br/> |
+|[イベント通知のサポート](supporting-event-notification.md) <br/> |サービスプロバイダーが**imapisupport**メソッドを使用して通知を生成する方法についての説明。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

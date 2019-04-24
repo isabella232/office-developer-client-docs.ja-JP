@@ -12,53 +12,53 @@ api_type:
 - COM
 ms.assetid: 9ec80a93-9e8f-46be-a1d4-7648aae47fec
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 236349a6b53eeb2f5c18c841c05cfb80a3fce824
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: da01385f83d9af9ad02eeb2fed08e3bc22d4df84
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32336401"
 ---
 # <a name="pidtagservicedeletefiles-canonical-property"></a>PidTagServiceDeleteFiles 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ サービスのアンインストール時に削除するファイル名の一覧が含まれています。
+メッセージサービスがアンインストールされたときに削除されるファイル名の一覧が含まれています。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_SERVICE_DELETE_FILES、PR_SERVICE_DELETE_FILES_A、PR_SERVICE_DELETE_FILES_W  <br/> |
-|識別子:  <br/> |0x3D10  <br/> |
+|識別子:  <br/> |0x3d10  <br/> |
 |データの種類 :   <br/> |PT_MV_STRING8、PT_MV_UNICODE  <br/> |
-|領域:  <br/> |MAPI プロファイル  <br/> |
+|エリア:  <br/> |MAPI プロファイル  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-メッセージ サービスをアンインストールするのには、コントロール パネルを使用する場合、これらのプロパティに含まれているボックスの一覧でファイル名がコンピューターから削除されます。 含めないでください、ボックスの一覧で複数のメッセージ サービスをサポートする任意の DLL または追加のメッセージ サービスを誤って削除された可能性があります。
+これらのプロパティに含まれるリスト内のファイル名は、コントロールパネルを使用してメッセージサービスをアンインストールするときにコンピューターから削除されます。 複数のメッセージサービスをサポートする DLL がリストに含まれていない場合、または追加のメッセージサービスが誤って削除された可能性があります。
   
-MAPI は、ファイル名でのみ動作し、ANSI 文字セットで、その他の文字列が渡されます。 OEM 文字セットでファイル名を使用するアプリケーションする必要があります ANSI に変換する、MAPI を呼び出す前にします。
+MAPI は、ファイル名、およびその他の文字列が ANSI 文字セットに渡された場合にのみ機能します。 OEM 文字セットでファイル名を使用するアプリケーションは、MAPI を呼び出す前に、それらを ANSI に変換する必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 08958abb-9d66-5a83-dac3-4cbfd1f6d85e
 description: 段落の第 1 行目と箇条書き行頭文字の間の距離を表します。
-ms.openlocfilehash: fe22b81113ab6537922ad4627aa53f34f2e62c48
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a98967cb5f9541434745c3b3d6afafde0878074a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332287"
 ---
-# <a name="textposafterbullet-cell-paragraph-section"></a>[TextPosAfterBullet] セル ([段落] セクション)
+# <a name="textposafterbullet-cell-paragraph-section"></a>[TextPosAfterBullet] セル ([Paragraph] セクション)
 
 段落の第 1 行目と箇条書き行頭文字の間の距離を表します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 この距離は、[IndFirst] セル内に含まれている距離 (既定の左インデント) に追加されます。この値は、図面の縮尺による影響を受けません。 
   
@@ -28,14 +28,14 @@ ms.locfileid: "19806631"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | Para.TextPosAfterBullet [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+| セル名 :  <br/> | 段落の行頭文字 [ *i* ] = <1>、 ** 2、3...  <br/> |
    
 プログラムから、インデックスによって [TextPosAfterBullet] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionParagraph** <br/> |
-| 行インデックス:  <br/> |**visRowParagraph** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+| 行インデックス:  <br/> |**visRowParagraph** +  *i* = ** 0、1、2...  <br/> |
 | セル インデックス:  <br/> |**visTextPosAfterBullet** <br/> |
    
 

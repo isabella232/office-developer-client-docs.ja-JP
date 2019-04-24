@@ -8,19 +8,19 @@ f1_keywords:
 - vis_sdr.chm870
 localization_priority: Normal
 ms.assetid: d6fe2574-b719-f38e-b1f1-592a812f1682
-description: フォントの幅を制御します。このセルの既定値は 100% です。
-ms.openlocfilehash: fedbc0aec23320d03ca358f34babda56eaab31e4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: フォントの幅を制御します。 このセルの既定値は 100% です。
+ms.openlocfilehash: 60e896772ddd1d59e1a1da7f2c0e90893658c624
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341630"
 ---
-# <a name="scale-cell-character-section"></a>[Scale] セル ([文字] セクション)
+# <a name="scale-cell-character-section"></a>[Scale] セル ([Character] セクション)
 
-フォントの幅を制御します。このセルの既定値は 100% です。
+フォントの幅を制御します。 このセルの既定値は 100% です。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 フォントの幅を狭くするには、1 ～ 99% の間でパーセントを設定します。フォントの幅を広くするには、101 ～ 600% の間で設定します。
   
@@ -30,14 +30,14 @@ ms.locfileid: "19806348"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |Char.FontScale [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+|セル名:  <br/> |文字 fontscale [ *i* ] *i* = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [Scale] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionCharacter** <br/> |
-|行インデックス:  <br/> |**visRowCharacter** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+|行インデックス:  <br/> |**visRowCharacter** +  *i* = ** 0、1、2...  <br/> |
 |セル インデックス:  <br/> |**visCharacterFontScale** <br/> |
    
 

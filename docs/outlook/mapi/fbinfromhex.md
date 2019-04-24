@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 47e6c576-bd99-4410-8e41-7dd3159b23b7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 87a470c1c682225eb1deefba9ccc8c12fbdc49c9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 55c7deec9d29ae22a07b2f5ccd1c832d56782c03
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341644"
 ---
 # <a name="fbinfromhex"></a>FBinFromHex
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-バイナリ データを 16 進数の文字列形式に変換します。 
+16進数値の文字列表現をバイナリデータに変換します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 BOOL FBinFromHex(
@@ -44,21 +44,21 @@ BOOL FBinFromHex(
 
  _sz_
   
-> [in]変換する null で終わる ASCII 文字列へのポインター。 Unicode 文字列ではありません。 有効な文字には、9 つと両方大文字と小文字の文字 A f を 16 進文字 0 にはが含まれます。
+> 順番変換する null で終わる ASCII 文字列へのポインター。 Unicode 文字列ではありません。 有効な文字には、16進数の0から9までの文字、および大文字と小文字の両方が使用できます。
     
  _pb_
   
-> [out]返される 2 進数へのポインター。
+> 読み上げ返されたバイナリ番号へのポインター。
     
 ## <a name="return-value"></a>戻り値
 
 TRUE 
   
-> 文字列は、2 進数に正常に変換されました。 
+> 文字列は、バイナリの数値に正しく変換されました。 
     
 FALSE 
   
-> 入力文字列には、無効な ASCII 16 進数文字が含まれています。
+> 入力文字列に無効な ASCII 16 進文字が含まれています。
     
 ## <a name="see-also"></a>関連項目
 

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 50c91fe6-2a61-4348-a16d-fd5c501b0715
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: cb73a0e09436177b8b53a05588508886ee28a0a5
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25383304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342029"
 ---
 # <a name="pidlidbusystatus-canonical-property"></a>PidLidBusyStatus 標準プロパティ
 
@@ -25,24 +25,24 @@ ms.locfileid: "25383304"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-予定の有無を表します。
+予定に対するユーザーの空き時間情報を表します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |dispidBusyStatus  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
-|長い ID (LID):  <br/> |0x00008205  <br/> |
+|プロパティセット:  <br/> |PSETID_Appointment  <br/> |
+|ロング ID (LID):  <br/> |0x00008205  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |予定表  <br/> |
+|エリア:  <br/> |カレンダー  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティは、オブジェクトが記載されているイベントで、ユーザーの可用性を指定し、以下に指定した値のいずれかである必要があります。
+このプロパティは、オブジェクトによって記述されたイベントに対してユーザーが利用できるかどうかを指定し、次の値のいずれかである必要があります。
   
 |**値**|**説明**|
 |:-----|:-----|
 |0x00000000  <br/> |予定なし。  <br/> |
-|0x00000001  <br/> |ユーザーは、予定されている仮の予定のイベントです。  <br/> |
+|0x00000001  <br/> |ユーザーには、スケジュールされた仮のイベントがあります。  <br/> |
 |0x00000002  <br/> |予定あり。  <br/> |
 |0x00000003  <br/> |外出中。  <br/> |
    
@@ -50,17 +50,17 @@ ms.locfileid: "25383304"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
+> 予定、会議出席依頼、および応答メッセージのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -68,9 +68,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

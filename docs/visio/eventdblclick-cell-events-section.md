@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: ca949013-f998-1bce-39e5-ac6f68ab2392
 description: 図形をダブルクリックしたときに評価されるイベント セルです。
-ms.openlocfilehash: 623d1d095d3269cd9c82fa8d0d6601933a163f92
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a50e88ecd8e432629e246f7038dfcc9626725cc5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337171"
 ---
-# <a name="eventdblclick-cell-events-section"></a>[EventDblClick] セル ([イベント] セクション)
+# <a name="eventdblclick-cell-events-section"></a>[EventDblClick] セル ([Events] セクション)
 
 図形をダブルクリックしたときに評価されるイベント セルです。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 イベント セルはイベントの発生時にのみ評価されます。数式の入力時には評価されません。
   
@@ -28,7 +28,7 @@ ms.locfileid: "19805323"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | EventDblClick  <br/> |
+| セル名 :  <br/> | eventdblclick]  <br/> |
    
 プログラムから、インデックスによって [EventDblClick] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

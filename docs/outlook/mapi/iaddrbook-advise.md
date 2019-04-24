@@ -1,5 +1,5 @@
 ---
-title: IAddrBookAdvise
+title: iaddrbookadvise
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 2def89ed-e4ce-446a-8b80-132d11ae8f8b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 43569b22cace7b2700d37ace49fd734b45fec73c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7abafafd3d4bd9618d85a7dac34e4556545167bb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334756"
 ---
 # <a name="iaddrbookadvise"></a>IAddrBook::Advise
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-アドレス帳の 1 つまたは複数のエントリへの変更に関する通知を受信するクライアントまたはサービス プロバイダーを登録します。
+クライアントまたはサービスプロバイダーに、アドレス帳の1つまたは複数のエントリの変更に関する通知を受信するように登録します。
   
 ```cpp
 HRESULT Advise(
@@ -41,17 +41,17 @@ HRESULT Advise(
 
  _cbEntryID_
   
-> [in]_LpEntryID_パラメーターで指定されたエントリの識別子のバイト数です。 
+> 順番_lな tryid_パラメーターで指定されたエントリ識別子のバイト数。 
     
- _lpEntryID_
+ _lて tryid_
   
-> [in]メッセージング ユーザー、または_ulEventMask_パラメーターで示された種類の変更が発生したときに通知を生成する配布リスト、アドレス帳コンテナーのエントリの識別子へのポインター。 
+> 順番_uleventmask_パラメーターに記述されている種類または種類の変更が発生したときに通知を生成するアドレス帳コンテナー、メッセージングユーザー、または配布リストのエントリ識別子へのポインター。 
     
- _ulEventMask_
+ _uleventmask_
   
-> [in]受け取る、呼び出し元を登録する 1 つ以上の通知イベントです。 各イベントは、発生した変更に関する情報を含む特定の通知構造体に関連付けられます。 _UlEventMask_およびそれらに対応する構造体の有効な値を次の表に一覧します。 
+> 順番発信者が受信するように登録している1つ以上の通知イベント。 各イベントは、発生した変更に関する情報を含む特定の通知構造に関連付けられています。 次の表に、 _uleventmask_の有効な値とそれに対応する構造を示します。 
     
-|**通知イベント**|**対応する構造体**|
+|**通知イベント**|**対応する構造**|
 |:-----|:-----|
 |**fnevCriticalError** <br/> |[ERROR_NOTIFICATION](error_notification.md) <br/> |
 |**fnevObjectCreated** <br/> |[OBJECT_NOTIFICATION](object_notification.md) <br/> |
@@ -63,13 +63,13 @@ HRESULT Advise(
    
  _lpAdviseSink_
   
-> [in]オブジェクトへのポインター、アドバイズ シンクの通知の要求対象となるイベントが発生したときに呼び出されます。
+> 順番通知が要求されたイベントが発生したときに呼び出されるアドバイズシンクオブジェクトへのポインター。
     
- _lpulConnection_
+ _lアウト接続_
   
-> [out]通知の登録を表す、0 以外の接続数へのポインター。
+> 読み上げ通知登録を表す0以外の接続番号へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -77,29 +77,29 @@ S_OK
     
 MAPI_E_INVALID_ENTRYID 
   
-> _LpEntryID_に渡されたエントリ id のアドレス帳プロバイダーは、対応するエントリの通知を登録できませんでした。 
+> _lな tryid_で渡されたエントリ id を処理するアドレス帳プロバイダーが、対応するエントリの通知を登録できませんでした。 
     
 MAPI_E_NO_SUPPORT 
   
-> 通知は、 _lpEntryID_パラメーターで渡されたエントリ id によって識別されるオブジェクトのアドレス帳のプロバイダーではサポートされていません。 
+> 通知は、 _lpentryid_パラメーターで渡されたエントリ id によって識別されるオブジェクトを担当するアドレス帳プロバイダーではサポートされていません。 
     
 MAPI_E_UNKNOWN_ENTRYID 
   
-> _LpEntryID_に渡されたエントリ id は、プロファイル内のアドレス帳プロバイダーのいずれかが処理できません。 
+> _lな tryid_で渡されるエントリ識別子は、プロファイル内のどのアドレス帳プロバイダーでも処理できません。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-クライアントとサービス ・ プロバイダー**の特定の種類または種類のアドレス帳エントリに通知を登録するメソッド**を呼び出します。 通知の種類は、 _ulEventMask_パラメーターに渡されるイベント マスクによって示されます。 
+クライアントおよびサービスプロバイダーは、**アドバイズ**メソッドを呼び出して、アドレス帳エントリの特定の種類または通知の種類を登録します。 通知の種類は、 _uleventmask_パラメーターで渡されるイベントマスクによって示されます。 
   
-MAPI では、 _lpEntryID_パラメーターのエントリの識別子で示されるエントリは、アドレス帳プロバイダーにこの**アドバイス**の呼び出しを転送します。 アドレス帳プロバイダーは、登録自体を処理するか、または[IMAPISupport::Subscribe](imapisupport-subscribe.md)、呼び出し元を登録するのには MAPI メッセージを表示するのには、サポート メソッドを呼び出します。 登録の成功を表す、0 以外の接続の数が返されます。
+MAPI は、この**アドバイズ**呼び出しを、 _lpentryid_パラメーターのエントリ id で示されているように、エントリを担当するアドレス帳プロバイダーに転送します。 アドレス帳プロバイダーは、登録自体を処理するか、または support メソッドの[imapisupport:: Subscribe](imapisupport-subscribe.md)を呼び出して、MAPI に発信者の登録を促します。 成功した登録を表す、0以外の接続番号が返されます。
   
-通知の登録で指定された種類のエントリに変更が発生すると、アドレス帳プロバイダーは、 _lpAdviseSink_パラメーターで指定されているアドバイズ シンク オブジェクトの[IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドを呼び出します。 **OnNotify**メソッドには、イベントを記述するデータを含む入力パラメーターとして、[通知](notification.md)の構造体が含まれています。 
+通知登録によって示される型のエントリが変更されるたびに、アドレス帳プロバイダーは、 _lpAdviseSink_パラメーターで指定されたアドバイズシンクオブジェクトの[IMAPIAdviseSink:: onnotify](imapiadvisesink-onnotify.md)メソッドを呼び出します。 **onnotify**メソッドには、イベントを記述するためのデータを含む入力パラメーターとして[通知](notification.md)構造が含まれています。 
   
-アドレス帳プロバイダーによって登録されているオブジェクトに、または後で変更の直後**OnNotify**への呼び出しが発生します。 複数の実行スレッドをサポートしているシステムでは、任意のスレッドで**OnNotify**への呼び出しが発生します。 **アドバイズ**に渡されるアドバイズ シンク オブジェクトを作成する[HrThisThreadAdviseSink](hrthisthreadadvisesink.md)関数を呼び出すことで特定のスレッドでこれらの通知が発生するクライアントを要求できます。 
+アドレス帳プロバイダーに応じて、 **onnotify**への呼び出しは、登録されたオブジェクトへの変更の直後または後で発生することがあります。 複数の実行スレッドをサポートするシステムでは、 **onnotify**への呼び出しは任意のスレッドで発生する可能性があります。 クライアントは、 [HrThisThreadAdviseSink](hrthisthreadadvisesink.md)関数を呼び出して、**アドバイズ**に渡されるアドバイズシンクオブジェクトを作成することで、これらの通知が特定のスレッドで発生することを要求できます。 
   
-クライアントが解放する必要がありますので、アドレス帳プロバイダーが**アドバイズ**を正常に完了が呼び出すし、 [IAddrBook::Unadvise](iaddrbook-unadvise.md)する前に呼び出しの通知をキャンセルした後は、いつでもクライアントから渡されたアドバイズ シンク オブジェクトを解放できます。アドバイズ シンク オブジェクト**アドバイズ**が返されるときにします。 
+アドレス帳プロバイダーは、**アドバイズ**呼び出しが正常に完了した後、 [IAddrBook:: アドバイズ](iaddrbook-unadvise.md)中止呼び出しの前にクライアントによって渡されたアドバイズシンクオブジェクトを解放できるため、通知をキャンセルするには、クライアントがリリースする必要があります。**アドバイズ**から返されるアドバイズシンクオブジェクト。 
   
-通知プロセスの詳細については、 [MAPI でのイベントの通知](event-notification-in-mapi.md)を参照してください。
+通知プロセスの詳細については、「 [MAPI でのイベント通知](event-notification-in-mapi.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

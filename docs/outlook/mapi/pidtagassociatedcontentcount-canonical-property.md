@@ -12,51 +12,51 @@ api_type:
 - HeaderDef
 ms.assetid: 79bbdd84-a3a7-4472-9447-8b0ddbf163ef
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fa04f897687fb96431225b297399df977dbf944f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f301bb50cc0d28126040a80cccb5d4e5566aebac
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339922"
 ---
 # <a name="pidtagassociatedcontentcount-canonical-property"></a>PidTagAssociatedContentCount 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォルダーの内容が関連付けられているテーブル内の項目の数が含まれています。
+フォルダーの関連付けられたコンテンツテーブル内のアイテムの数が含まれます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_ASSOC_CONTENT_COUNT  <br/> |
 |識別子:  <br/> |0x3617  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |Folder  <br/> |
+|エリア:  <br/> |フォルダー  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティには、フォルダーの内容のテーブル内のエントリの数が含まれています。 
+このプロパティには、フォルダーの contents テーブル内のエントリの数が含まれます。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

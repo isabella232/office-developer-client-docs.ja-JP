@@ -8,35 +8,35 @@ f1_keywords:
 - Vis_DSS.chm1028735
 localization_priority: Normal
 ms.assetid: f9db8623-9fcf-7037-2d11-d509f463025d
-description: X ページ座標内のコメント マーカーの座標です。
-ms.openlocfilehash: 454c28c6f15c705148155751d533a516aae7d2d0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: ページ座標内のコメントマーカーの x 座標です。
+ms.openlocfilehash: fdd9e2850a3285a2fcf4cc05fa056accd71052a9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341309"
 ---
-# <a name="x-cell-annotation-section"></a>[X] セル ([注釈] セクション)
+# <a name="x-cell-annotation-section"></a>[X] セル ([Annotation] セクション)
 
-*X*のページ座標内のコメント マーカーの座標です。 
+ページ座標内のコメントマーカーの*x*座標です。 
   
 > [!NOTE]
-> このセルは、Microsoft Visio 2013 で .vsd ファイルを開くときにのみ、または .vsd ファイルの形式で .vsdx ファイルを保存するときにコメントを追跡するために使用されます。 Visio 2013 で .vsdx のドキュメント内のコメントを追跡するためには使用されません。 
+> このセルは、Microsoft Visio 2013 で .vsd ファイルを開くとき、または .vsd ファイル形式で .vsdx ファイルを保存するときにのみ、コメントの追跡に使用されます。 これは、Visio 2013 の .vsdx ドキュメントでコメントを追跡するためには使用されません。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [X] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | Annotation.X [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+| セル名:  <br/> | <1> [ *i* ]: *i* =、2、3...  <br/> |
    
 プログラムから、インデックスによって [X] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionAnnotation** <br/> |
-| 行インデックス:  <br/> |**visRowAnnotation** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+| 行インデックス:  <br/> |**visRowAnnotation** +  *i* = ** 0、1、2...  <br/> |
 | セル インデックス:  <br/> |**visAnnotationX** <br/> |
    
 

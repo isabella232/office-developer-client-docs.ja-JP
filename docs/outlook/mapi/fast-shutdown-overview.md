@@ -8,48 +8,48 @@ api_type:
 - COM
 ms.assetid: a7830d73-427c-4f8b-86f4-51e040c142c3
 description: '最終更新日: 2012 年 6 月 26 日'
-ms.openlocfilehash: 8b8335fb2722e193f0eab1288b8ffdb2aa62df8b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8c33214b04e7c41eab173196c09f145c20ddf219
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341101"
 ---
 # <a name="fast-shutdown-overview"></a>高速シャットダウンの概要
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-高速シャット ダウンは、簡易クライアントがクライアント プロセスが終了する前に、データや設定を保存するのにはアクティブな MAPI セッションを持っているすべてのプロバイダーに通知する、クライアント プロセスのシャット ダウンを開始するのには MAPI クライアントのための機構です。 このトピックでは、高速シャット ダウンの基本的なメカニズムについて説明します。 
+高速シャットダウンは、クライアントがアクティブな mapi セッションを持っているすべてのプロバイダーに、クライアントプロセスが終了する前にデータおよび設定を保存するように通知する、mapi クライアントのメカニズムです。 このトピックでは、高速シャットダウンの基本的なメカニズムについて説明します。 
 
-MAPI サブシステムは、Microsoft Outlook 2010 で起動して、Microsoft Outlook 2013 を含むようになりました、 [IMAPIClientShutdown: IUnknown](imapiclientshutdowniunknown.md)インタ フェースです。 Outlook およびその他の MAPI クライアントは、クライアントのプロセスを終了するのには既定の機構として、高速シャット ダウンを採用することができます。 クライアント コンピューターの Windows レジストリにユーザー レベルの設定は、そのコンピューターでそのユーザーのすべての MAPI クライアント用の高速シャット ダウンの導入を制御します。 レジストリ設定の詳細については、[高速シャット ダウンのユーザー オプション](fast-shutdown-user-options.md)を参照してください。
+microsoft outlook 2010 以降では、microsoft outlook 2013 を含む現在、MAPI サブシステムは[IMAPIClientShutdown: IUnknown](imapiclientshutdowniunknown.md)インターフェイスを提供しています。 Outlook およびその他の MAPI クライアントは、クライアントプロセスを終了するための既定のメカニズムとして、高速シャットダウンを採用できます。 クライアントコンピューターの Windows レジストリのユーザーレベルの設定により、そのコンピューター上のそのユーザーのすべての MAPI クライアントに対する高速シャットダウンの導入が制御されます。 レジストリ設定の詳細については、「 [Fast Shutdown User Options](fast-shutdown-user-options.md)」を参照してください。
   
-それを使用する必要がある場合は、MAPI クライアントでは、高速シャット ダウンを採用する必要がある、 **IMAPIClientShutdown: IUnknown**インタ フェースです。 以下は、クライアントがシャット ダウンしようとするときのイベントの標準的なコースです。 
+MAPI クライアントで高速シャットダウンを導入する必要がある場合は、 **IMAPIClientShutdown: IUnknown**インターフェイスを使用する必要があります。 クライアントがシャットダウンしようとする場合の一般的なイベントの例を次に示します。 
   
-1. MAPI クライアントは、MAPI サブシステムが高速シャット ダウンをサポートしているかどうかを決定する[IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md)メソッドを呼び出すことによって、シャット ダウンを開始します。 
+1. mapi クライアントは、 [IMAPIClientShutdown:: queryfastshutdown](imapiclientshutdown-queryfastshutdown.md)メソッドを呼び出してシャットダウンを開始し、mapi サブシステムが高速シャットダウンをサポートしているかどうかを判断します。 
     
-2. MAPI サブシステムは、次の手順を使用して、クライアントの**IMAPIClientShutdown::QueryFastShutdown**の呼び出しに使用可能な高速シャット ダウンのサポートを使用して応答します。 
+2. MAPI サブシステムは、次の手順を使用して、クライアントの**IMAPIClientShutdown:: queryfastshutdown**呼び出しに対して使用可能な高速シャットダウンサポートで応答します。 
     
-    1. プロバイダーが実装されている場合、MAPI サブシステムが MAPI クライアント プロセスが、アクティブな MAPI セッションを各 MAPI プロバイダーの[IMAPIProviderShutdown::QueryFastShutdown](imapiprovidershutdown-queryfastshutdown.md)メソッドを呼び出し、 [IMAPIProviderShutdown: IUnknown](imapiprovidershutdowniunknown.md)インタ フェースです。 
+    1. mapi サブシステムは、mapi クライアントプロセスがアクティブな mapi セッションを持つ mapi プロバイダーごとに、imapiprovidershutdown: [: queryfastshutdown](imapiprovidershutdown-queryfastshutdown.md)メソッドを呼び出します。これは、プロバイダーが[imapiprovidershutdown: IUnknown](imapiprovidershutdowniunknown.md)を実装している場合です。インターフェイス. 
         
        > [!NOTE]
-       >  MAPI サブシステムは、常にクエリを実行しからの MAPI プロバイダーに通知、 **IMAPIProviderShutdown: IUnknown**次の順序では、各 MAPI セッション内でのインターフェイス。
-       > 1. トランスポート プロバイダー
+       >  mapi サブシステムは常に、次の順序で mapi プロバイダーに対して、 **imapiprovidershutdown: IUnknown**インターフェイスを通じて mapi プロバイダーに対してクエリを実行し、それぞれの mapi セッションで通知します。
+       > 1. トランスポートプロバイダー
        > 2. アドレス帳プロバイダー
-       > 3. ストア プロバイダー 
+       > 3. ストアプロバイダー 
     
-    2. クライアント コンピューターでそのユーザーの高速シャット ダウンのレジストリ設定によっては、MAPI サブシステムは、 **IMAPIClientShutdown::QueryFastShutdown**への適切なリターン コードを指定します。 リターン コードは、S_OK または MAPI_E_NO_SUPPORT のいずれかです。
+    2. クライアントコンピューターでのそのユーザーの高速シャットダウンのレジストリ設定に応じて、MAPI サブシステムは**IMAPIClientShutdown:: queryfastshutdown**に対して適切なリターンコードを指定します。 戻り値のコードは、S_OK または MAPI_E_NO_SUPPORT のいずれかです。
         
-    3. MAPI クライアントは、MAPI サブシステムにシャット ダウンするという意図を示すために[IMAPIClientShutdown::NotifyProcessShutdown](imapiclientshutdown-notifyprocessshutdown.md)メソッドを呼び出します。 
+    3. mapi クライアントは[IMAPIClientShutdown:: notifyprocessshutdown](imapiclientshutdown-notifyprocessshutdown.md)メソッドを呼び出して、mapi サブシステムにシャットダウンの意図を示します。 
         
-    4. MAPI サブシステムは、MAPI クライアントをシャット ダウンする読み込まれた各 MAPI プロバイダーに指示します。 これらのプロバイダーを実装しているため、 **IMAPIProviderShutdown: IUnknown**インタ フェースでは、MAPI サブシステムは対応する[IMAPIProviderShutdown::NotifyProcessShutdown](imapiprovidershutdown-notifyprocessshutdown.md)メソッドを呼び出します。 
+    4. mapi サブシステムは、読み込まれた mapi プロバイダーごとに、mapi クライアントがシャットダウンすることを示します。 **imapiprovidershutdown: IUnknown**インターフェイスを実装しているプロバイダーの MAPI サブシステムは、対応する[imapiprovidershutdown:: notifyprocessshutdown](imapiprovidershutdown-notifyprocessshutdown.md)メソッドを呼び出します。 
         
-    5. MAPI クライアントは、MAPI サブシステムには、クライアント プロセスがすぐに終了することを示すために[IMAPIClientShutdown::DoFastShutdown](imapiclientshutdown-dofastshutdown.md)メソッドを呼び出します。 
+    5. mapi クライアントは[IMAPIClientShutdown::D ofastshutdown](imapiclientshutdown-dofastshutdown.md)メソッドを呼び出して、クライアントプロセスが直ちに終了したことを mapi サブシステムに示します。 
         
-    6. MAPI サブシステムは、MAPI クライアントのプロセスを終了すること、読み込まれた各 MAPI プロバイダーを示します。 これらのプロバイダーを実装しているため、 **IMAPIProviderShutdown: IUnknown**インタ フェースでは、MAPI サブシステムは対応する[IMAPIProviderShutdown::DoFastShutdown](imapiprovidershutdown-dofastshutdown.md)メソッドを呼び出します。 この時点では、これらの MAPI プロバイダーがデータと設定を保存するなど、必要なすべてのアクションがすぐにすべての参照を切断しを終了するには、MAPI クライアントのための準備の完了を確認する必要があります。 
+    6. mapi サブシステムは、mapi クライアントプロセスを終了する、読み込まれた各 mapi プロバイダーを示します。 **imapiprovidershutdown: IUnknown**インターフェイスを実装しているプロバイダーの MAPI サブシステムは、対応する[imapiprovidershutdown::D ofastshutdown](imapiprovidershutdown-dofastshutdown.md)メソッドを呼び出します。 この時点で、これらの mapi プロバイダーは、データや設定の保存など、必要なすべての操作が完了したことを、mapi クライアントが直ちにすべての参照を切断して終了することを確認する必要があります。 
     
 ## <a name="see-also"></a>関連項目
 
-- [Mapi クライアントのシャット ダウン](client-shutdown-in-mapi.md)
-- [高速シャットダウンのユーザー オプション](fast-shutdown-user-options.md)
+- [MAPI でのクライアント シャットダウン](client-shutdown-in-mapi.md)
+- [高速シャットダウンのユーザーオプション](fast-shutdown-user-options.md)
 - [高速シャットダウンのためのベスト プラクティス](best-practices-for-fast-shutdown.md)
 

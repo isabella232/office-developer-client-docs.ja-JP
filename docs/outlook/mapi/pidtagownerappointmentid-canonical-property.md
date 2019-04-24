@@ -13,11 +13,11 @@ api_type:
 ms.assetid: b5eea554-6bca-42d1-b943-1327f0d70584
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7ad68a8ba527879871e79dd85e79d577291d32a8
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335442"
 ---
 # <a name="pidtagownerappointmentid-canonical-property"></a>PidTagOwnerAppointmentId 標準プロパティ
 
@@ -25,48 +25,48 @@ ms.locfileid: "25386049"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-所有者のスケジュールで予定の識別子が含まれています。
+所有者のスケジュールにある予定の識別子が含まれています。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_OWNER_APPT_ID  <br/> |
 |識別子:  <br/> |0x0062  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |Appointment  <br/> |
+|エリア:  <br/> |予定  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティは、会議出席依頼で使用されます。 エントリの識別子ですが、送信者のスケジュールで予定を一意に識別する長整数型を表していません。
+このプロパティは、会議出席依頼で使用されます。 これはエントリ識別子を表すものではなく、送信者のスケジュール内の予定を一意に識別する長整数型 (long) です。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
+> 予定、会議出席依頼、および応答メッセージのプロパティと操作を指定します。
     
-[[MS OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
+[[OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
   
-> IETF RFC2445、RFC2446、RFC2447、および予定と会議のオブジェクトに変換します。
+> IETF RFC2445、RFC2446、RFC2447、予定および会議の各オブジェクトを変換します。
     
-[[MS OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
+[[OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
   
-> エンコードし、メッセージと添付ファイルのオブジェクトを効率的なストリーム形式をデコードします。
+> メッセージと添付ファイルオブジェクトをエンコードし、効率的なストリーム表現にデコードします。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-mapitags.h
+mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
@@ -75,9 +75,9 @@ mapitags.h
 [PidTagOriginalAuthorSearchKey 標準プロパティ](pidtagoriginalauthorsearchkey-canonical-property.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

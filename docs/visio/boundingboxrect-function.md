@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1f66d2b2-ec9e-cd58-7642-96850fe4589e
 description: 図形の境界ボックスの、指定した端の座標を返します。
-ms.openlocfilehash: 2c850cb213ec0093ead53cd860f92e38da46f27e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0018118eb0991fe9dc1da0eb000566b69d8a4b4d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338053"
 ---
 # <a name="boundingboxrect-function"></a>BOUNDINGBOXRECT 関数
 
@@ -25,29 +25,29 @@ ms.locfileid: "19804928"
   
 ## <a name="syntax"></a>構文
 
-BOUNDINGBOXRECT (* **インデックス** *) 
+BOUNDINGBOXRECT (* * *Index* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _Index_ <br/> |必須  <br/> |**Integer** <br/> |座標を取得する図形の境界ボックスの端。使用可能な値については、「備考」を参照してください。  <br/> |
+| _Index_ <br/> |必須  <br/> |**整数型 (Integer)** <br/> |座標を取得する図形の境界ボックスの端。 使用可能な値については、「備考」を参照してください。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
- **番号**
+ **数値**
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
- *インデックス*には、次の値のいずれかを指定できます。 
+ *Index*には、次のいずれかの値を指定できます。 
   
 |**Item**|**値**|
 |:-----|:-----|
-|左端  <br/> |0  <br/> |
-|右端  <br/> |1  <br/> |
-|上端  <br/> |2  <br/> |
-|下端  <br/> |3  <br/> |
+|左端  <br/> |.0  <br/> |
+|右端  <br/> |1-d  <br/> |
+|上端  <br/> |pbm-2  <br/> |
+|下端  <br/> |1/3  <br/> |
    
-図形に親がある場合、戻り値はその親の座標系では。
+図形に親がある場合、戻り値はその親の座標系になります。
   
 

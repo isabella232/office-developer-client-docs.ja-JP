@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 46146424-b4c9-2240-36c0-19bb35ec51d1
 description: 図面が校正履歴用にチェックされているかどうかを示します。
-ms.openlocfilehash: 69430122b0a7665d7daa4a6b28f3a51745b74473
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4e0860639b0d89fce2c35a8947bd5ac00fcc63e5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338634"
 ---
-# <a name="addmarkup-cell-document-properties-section"></a>[AddMarkup] セル ([ドキュメントのプロパティ] セクション)
+# <a name="addmarkup-cell-document-properties-section"></a>[AddMarkup] セル ([Document Properties] セクション)
 
 図面が校正履歴用にチェックされているかどうかを示します。
   
@@ -25,12 +25,12 @@ ms.locfileid: "19804776"
 |TRUE  <br/> |図面はチェックされています。  <br/> |
 |FALSE  <br/> |図面はチェックされていません (既定値)。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-AddMarkup セルが TRUE に設定、レビュー担当者は、元の図面ページに、マークアップ オーバーレイ ページに追加のマークアップと変更が適用されます。 [Addmarkup] セルが FALSE で、校正履歴の記録とオフは、変更元の図面ページに適用されます。
+AddMarkup セルが TRUE に設定されている場合、校閲者が校正履歴を追加しており、変更はオリジナルの図面ページではなく校正履歴のオーバーレイ ページに適用されます。 AddMarkup セルが FALSE に設定されている場合、校正履歴の記録はオフになっており、変更はオリジナルの図面ページに適用されます。
   
 > [!NOTE]
-> GUARD 関数を使用して、ドキュメントのマークアップを防ぐことができます。 AddMarkup セルに数式が含まれている場合は = GUARD(FALSE)、校正履歴の**記録**を無効にします。 
+> GUARD 関数を使用してドキュメントにマークアップを表示しないようにすることができます。 [addmarkup] セルに = GUARD (FALSE) という数式が含まれている場合は、[校正履歴の**記録**] コマンドは無効になります。 
   
 この設定は、[**校閲**] タブの [**校正履歴**] グループにある [**校正履歴の記録**] コマンドに相当します。 
   
@@ -38,7 +38,7 @@ AddMarkup セルが TRUE に設定、レビュー担当者は、元の図面ペ�
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[Addmarkup]  <br/> |
+|セル名:  <br/> |[addmarkup]  <br/> |
    
 プログラムから、インデックスによって [AddMarkup] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

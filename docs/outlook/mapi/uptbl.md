@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 39d9ad3b-ff4b-8378-a3ac-d5621c7ef7f1
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: bdfabdf02fc0fa6222418bd0fb87e9b6c17d936a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: b401f54df020fb6553cbdcc5b85206ee422a8429
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338858"
 ---
 # <a name="uptbl"></a>UPTBL
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[テーブルの状態をアップロード](upload-table-state.md)する時にフォルダーの内容をアップロードする方法の詳細については。
+[テーブルのアップロード状態](upload-table-state.md)中にフォルダーのコンテンツをアップロードするための情報。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -39,60 +39,60 @@ struct UPTBL
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 _ulFlags_
   
-> [in]アップロード中に適切な動作を決定するフラグを設定します。
+> 順番アップロード中の適切な動作を決定するフラグ。
     
   - UPT_OK
     
-    - [in]アップロードが正常に完了しました。 クライアントでは、フォルダーの内容をサーバーにアップロードした後、これを設定します。
+    - 順番アップロードに成功しました。 クライアントは、フォルダーの内容をサーバーにアップロードした後に、これを設定します。
     
 _pstmReserved_
   
-> [out]このメンバーは、Outlook の内部使用に予約されている、サポートされていません。 
+> [out] このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
     
 _pszName_
   
-> [out]フォルダーの名前です。
+> [out] フォルダーの名前です。
     
 _feid_
   
-> [out]フォルダーのエントリ ID です。
+> [out] フォルダーのエントリ ID です。
     
 _uintReserved_
   
-> [out]このメンバーは、Outlook の内部使用に予約されている、サポートされていません。 
+> [out] このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
     
 _rgte_
   
-> [out]フォルダーに通常 (または非表示) の項目と関連付けられている (非表示) の項目について次の情報を保持する構造体: _rgte [0]_ は通常と関連付けられているアイテムについては、 _rgte [1]_ 。 
+> 読み上げ_rgte [0]_ が通常のアイテムに対して、および関連付けられている (または非表示の) アイテムに対して次の情報を保持する構造。 _rgte [1]_ は関連アイテム用です。 
     
-   - 新しいまたは変更されたアイテムの数
-   - 読み取りの項目の数 
+   - 新規または変更されたアイテムの数
+   - 読み取りアイテム数 
    - 削除済みアイテムの数
     
- _iEnt_
+ _ient_
   
-> [out]_セント_で指定された変更の数をアップロードするかを追跡するためにインデックスを作成します。
+> 読み上げで指定された変更数をアップロードする__ 追跡対象のインデックス。
     
-_セント_
+_fea-cent-logging-service_
   
-> [out]フォルダーへの変更の数です。
+> 読み上げフォルダーに対する変更の数。
     
 _pupmovHead_
   
-> [out][UPMOV](upmov.md)構造体のチェーンです。 
+> 読み上げ[upmov](upmov.md)構造体のチェーン。 
     
-_保持_
+_保持され_
   
-> [out]このメンバーは、Outlook の内部使用に予約されている、サポートされていません。
+> [out] このメンバーは Outlook の内部使用のために予約されており、サポートされていません。
     
 ## <a name="see-also"></a>関連項目
 
 - [レプリケーション API について](about-the-replication-api.md)
-- [レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
-- [MAPI �萔](mapi-constants.md)
+- [レプリケーション状態のマシンについて](about-the-replication-state-machine.md)
+- [MAPI 定数](mapi-constants.md)
 - [UPTBLE](uptble.md)
 

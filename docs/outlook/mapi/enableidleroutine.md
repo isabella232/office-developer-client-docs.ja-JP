@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 332ea831-bdf9-4dbd-b9c7-a80f8ba11b3b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c53bd63e60281e999d0d379913b3609e9472a40e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e04c872762665f4b3a22559dc2ed1504e7b8f9af
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339397"
 ---
 # <a name="enableidleroutine"></a>EnableIdleRoutine
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-有効または[FNIDLE](fnidle.md)ベース アイドル ルーチンを無効にします。 
+[FNIDLE](fnidle.md)ベースのアイドルルーチンを有効または無効にします。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 VOID EnableIdleRoutine(
@@ -44,31 +44,31 @@ VOID EnableIdleRoutine(
 
  _ftg_
   
-> [in]関数を有効または無効になっているアイドル状態のルーチンを識別するタグです。 
+> 順番有効または無効にする idle ルーチンを識別する関数タグ。 
     
- _fEnable_
+ _fenable_
   
-> [in]TRUE が含まれる場合、アイドル状態のエンジンする必要がありますを有効にするアイドル状態のルーチン、または FALSE 場合は、無効にする必要があります。
+> 順番アイドルエンジンがアイドル状態のルーチンを有効にする必要がある場合は TRUE、無効にする場合は FALSE を指定します。
     
 ## <a name="return-value"></a>Return value
 
 なし。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-次の関数では、MAPI アイドル エンジンと[FNIDLE](fnidle.md)関数のプロトタイプに基づくのアイドル処理ルーチンを処理します。 
+次の関数は、MAPI アイドルエンジンと、 [FNIDLE](fnidle.md)関数プロトタイプに基づいてアイドルルーチンを処理します。 
   
-|**アイドル状態の日常的な関数**|**使用状況**|
+|**Idle ルーチン関数**|**使用法**|
 |:-----|:-----|
-|[ChangeIdleRoutine](changeidleroutine.md) <br/> |登録されているアイドル状態のルーチンの特性を変更します。  <br/> |
-|[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |MAPI システムから登録されているアイドル状態のルーチンを削除します。  <br/> |
-|**EnableIdleRoutine** <br/> |無効または MAPI システムから削除することがなく、登録されているアイドル状態のルーチンを再度有効にします。  <br/> |
-|[FtgRegisterIdleRoutine](ftgregisteridleroutine.md) <br/> |MAPI システム、またはそれを有効にせずに、アイドル状態のルーチンを追加します。  <br/> |
-|[MAPIDeInitIdle](mapideinitidle.md) <br/> |呼び出し元のアプリケーションの MAPI アイドル エンジンをシャット ダウンします。  <br/> |
-|[MAPIInitIdle](mapiinitidle.md) <br/> |呼び出し元のアプリケーションの MAPI アイドル エンジンを初期化します。  <br/> |
+|[ChangeIdleRoutine](changeidleroutine.md) <br/> |登録されているアイドルルーチンの特性を変更します。  <br/> |
+|[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |登録されているアイドルルーチンを MAPI システムから削除します。  <br/> |
+|**EnableIdleRoutine** <br/> |登録済みのアイドル状態を、MAPI システムから削除せずに無効または再度有効にします。  <br/> |
+|[FtgRegisterIdleRoutine](ftgregisteridleroutine.md) <br/> |アイドルルーチンを MAPI システムに追加するか、有効にします。  <br/> |
+|[MAPIDeInitIdle](mapideinitidle.md) <br/> |呼び出し元アプリケーションの MAPI アイドルエンジンをシャットダウンします。  <br/> |
+|[MAPIInitIdle](mapiinitidle.md) <br/> |呼び出し元アプリケーションの MAPI アイドルエンジンを初期化します。  <br/> |
    
- **ChangeIdleRoutine**、 **DeregisterIdleRoutine**、および**EnableIdleRoutine**関数のタグは、 **FtgRegisterIdleRoutine**によって返される入力パラメーターとして実行します。 
+ **changeidleroutine**、 **DeregisterIdleRoutine**、および**EnableIdleRoutine**は、 **FtgRegisterIdleRoutine**によって返される function タグを入力パラメーターとして受け取ります。 
   
-プラットフォーム用のすべてのフォア グラウンド タスクがアイドル状態になると、MAPI アイドル エンジンは実行する準備が最高の優先順位のアイドル ルーチンを呼び出します。 同じ優先順位のアイドル処理ルーチンの間で順序を呼び出すことの保証はありません。 
+プラットフォームのすべてのフォアグラウンドタスクがアイドル状態になると、MAPI アイドルエンジンは、実行の準備ができている最も優先度の高いアイドルルーチンを呼び出します。 同じ優先度のアイドルルーチン間での通話順序は保証されません。 
   
 

@@ -7,22 +7,22 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: cd2f595f-4dd0-4704-b670-6857d6c843ca
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: aa2120b5d64eece76f8882489de4388b04afa053
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 1ed047424e4a6d64c08b511a15769c081a0d8c4e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339404"
 ---
 # <a name="encoding-recipient-tables-by-using-tnef"></a>TNEF を使用した受信者テーブルのエンコード
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-TNEF ストリームに、受信者テーブルのエンコーディングは、多くのメッセージング システムの受信者の一覧を直接サポートするために必要はほとんどありません。 一般に、受信者のプロパティは、メッセージのヘッダーで送信されます。 受信者テーブルを含めることが必要な場合は、TNEF は、通常の処理の一部として受信者テーブルをエンコードできます。 これは、は、TNEF の処理の初期段階で行われます。 トランスポート プロバイダーは、信頼のリストで指定されている**PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) プロパティを使用して、 [ITnef::AddProps](itnef-addprops.md)メソッドを呼び出すことによって、メッセージの受信者テーブルを含めることができます。 TNEF は、メッセージの受信者テーブルを取得、列セットに対してクエリを実行し、TNEF ストリームに、テーブルのすべての行を処理します。
+ほとんどのメッセージングシステムは受信者リストを直接サポートしているため、TNEF ストリームへの受信者テーブルのエンコードはほとんど必要ありません。 通常、受信者のプロパティはメッセージヘッダーで送信されます。 受信者テーブルを含める必要がある場合、TNEF は通常の処理の一部として受信者テーブルをエンコードできます。 これは、TNEF 処理の初期段階で行われます。 トランスポートプロバイダーには、対象リストに指定されている**PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) プロパティを使用して[ITnef:: addprops](itnef-addprops.md)メソッドを呼び出すことによって、メッセージの受信者テーブルを含めることができます。 tnef は、メッセージから受信者テーブルを取得し、その列セットをクエリして、テーブルの各行を TNEF ストリームに処理します。
   
-別の方法では、トランスポート プロバイダーをエンコードする前に、受信者テーブルを変更する必要がある場合があります。 トランスポート プロバイダーは、必要なテーブルを作成し、 [ITnef::EncodeRecips](itnef-encoderecips.md)メソッドを呼び出してできます。 _LpRecipTable_パラメーターに NULL を渡した場合、受信者テーブルから直接取得されますメッセージ**ITnef::AddProps**で説明されているようです。
+代替メソッドは、エンコードされる前にトランスポートプロバイダーが受信者テーブルを変更する必要がある場合に使用できます。 トランスポートプロバイダーは必要なテーブルを作成し、 [ITnef:: EncodeRecips](itnef-encoderecips.md)メソッドを呼び出します。 _lpRecipTable_パラメーターで NULL が渡された場合、受信者テーブルは**ITnef:: addprops**の説明に従ってメッセージから直接取得されます。
   
 

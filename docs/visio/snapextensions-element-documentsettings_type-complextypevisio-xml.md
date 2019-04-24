@@ -1,31 +1,31 @@
 ---
-title: SnapExtensions 要素 (DocumentSettings_Type complexType)'Visio XML (')
+title: snapextensions 要素 (DocumentSettings_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: d55b6676-125f-7cf1-509d-21dee548f5a1
-description: 特定のスナップインの拡張機能の設定が有効か、作業中のウィンドウを無効になっているかどうかを指定します。
+description: アクティブウィンドウに対して特定のスナップ延長の設定を有効にするか無効にするかを指定します。
 ms.openlocfilehash: 9f21653fca7f1f5fa7be7449f1e588cf5ef67263
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25387616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334532"
 ---
-# <a name="snapextensions-element-documentsettingstype-complextype-visio-xml"></a>SnapExtensions 要素 (DocumentSettings_Type complexType)'Visio XML (')
+# <a name="snapextensions-element-documentsettingstype-complextype-visio-xml"></a>snapextensions 要素 (DocumentSettings_Type complexType) (' Visio XML ')
 
-特定のスナップインの拡張機能の設定が有効か、作業中のウィンドウを無効になっているかどうかを指定します。 
+アクティブウィンドウに対して特定のスナップ延長の設定を有効にするか無効にするかを指定します。 
   
 ## <a name="element-information"></a>要素情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[SnapExtensions_Type](snapextensions_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
-|**文書パーツ** <br/> |document.xml  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
+|**文書パーツ** <br/> |文書の xml  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -36,13 +36,13 @@ ms.locfileid: "25387616"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。 
+スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[DocumentSettings](documentsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[DocumentSettings_Type](documentsettings_type-complextypevisio-xml.md) <br/> |ドキュメントの設定を指定する要素が含まれています。  <br/> |
+|[documentsettings](documentsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[DocumentSettings_Type](documentsettings_type-complextypevisio-xml.md) <br/> |ドキュメントの設定を指定する要素を格納します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -52,27 +52,25 @@ ms.locfileid: "25387616"
 
 なし。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-**SnapExtensions**要素の値は、次の表の値の合計にできます。 
+**snapextensions**要素の値には、次の表の値の合計を指定できます。 
   
 |**値**|**説明**|
 |:-----|:-----|
-|0  <br/> |何もスナップしません。  <br/> |
-|1  <br/> |配置ボックスの拡張機能にスナップします。  <br/> |
-|2  <br/> |軸の拡張機能を中心にスナップします。  <br/> |
-|4  <br/> |カーブ正接の拡張機能にスナップします。  <br/> |
-|8  <br/> |拡張子の端点にスナップします。  <br/> |
-|16  <br/> |拡張子の中間点にスナップします。  <br/> |
-|32  <br/> |線形拡張子にスナップします。  <br/> |
-|64  <br/> |拡張子のカーブにスナップします。  <br/> |
-| 
-128 
-  <br/> |端点の垂直な拡張子にスナップします。  <br/> |
-|256  <br/> |垂直な拡張機能の中間点にスナップします。  <br/> |
-|512  <br/> |水平引き出し線の端点にスナップします。  <br/> |
-|1024  <br/> |垂直引き出し線の端点にスナップします。  <br/> |
-|2048  <br/> |楕円の中心の拡張機能にスナップします。  <br/> |
-|4096  <br/> |等角図の角度の拡張機能にスナップします。  <br/> |
+|.0  <br/> |何もスナップしません。  <br/> |
+|1-d  <br/> |図形枠の補助線にスナップします。  <br/> |
+|pbm-2  <br/> |中央軸の拡張位置にスナップします。  <br/> |
+|2/4  <br/> |曲線正接拡張機能にスナップします。  <br/> |
+|~  <br/> |エンドポイント拡張機能にスナップします。  <br/> |
+|16  <br/> |中点拡張機能にスナップします。  <br/> |
+|32  <br/> |直線の延長形にスナップします。  <br/> |
+|64  <br/> |曲線拡張機能にスナップします。  <br/> |
+|128  <br/> |端点の垂直拡張線にスナップします。  <br/> |
+|256  <br/> |中点の垂線拡張にスナップします。  <br/> |
+|512  <br/> |端点の水平方向の拡張位置にスナップします。  <br/> |
+|1024  <br/> |端点の垂直方向の拡張位置にスナップします。  <br/> |
+|2048  <br/> |楕円形の中央拡張機能にスナップします。  <br/> |
+|4096  <br/> |等角投影の角度の拡張にスナップします。  <br/> |
    
 

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 43b51a66-71fa-4e10-93e4-d533b48af4de
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 7bf69e560142ab282d6545389e02766389e4d018
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: f8c129e772870804ef464765b2035a3582317a09
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341392"
 ---
 # <a name="iaddrbookgetsearchpath"></a>IAddrBook::GetSearchPath
 
@@ -25,7 +25,7 @@ ms.locfileid: "22580699"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[IAddrBook::ResolveName](iaddrbook-resolvename.md)メソッドによって開始された名前解決の処理に含まれるコンテナーのエントリ id の順序付きリストを返します。 
+[IAddrBook:: ResolveName](iaddrbook-resolvename.md)メソッドによって開始された名前解決プロセスに含まれるコンテナーのエントリ id の順序付きリストを返します。 
   
 ```cpp
 HRESULT GetSearchPath(
@@ -34,41 +34,41 @@ HRESULT GetSearchPath(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]検索パスで返される文字列の種類を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番検索パスで返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 関数が返す文字列は、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。
+> 返される文字列は、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
     
  _lppSearchPath_
   
-> [out]コンテナーのエントリ id の順序付きリストへのポインターへのポインター。 **GetSearchPath** [SRowSet](srowset.md)構造体の順序付きリストを格納します。 アドレス帳の階層内のコンテナーがない場合、 **SRowSet**構造体で 0 が返されます。 
+> 読み上げコンテナーエントリ識別子の順序付きリストへのポインターへのポインター。 **GetSearchPath**は、注文されたリストを[srowset](srowset.md)構造に格納します。 アドレス帳の階層にコンテナーが存在しない場合は、 **srowset**構造体に0が返されます。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 検索パスが正常に取得しました。
+> 検索パスが正常に取得されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-クライアントとサービス ・ プロバイダーは、 **ResolveName**メソッドを使用して名前を解決するために使用される検索パスを取得する**GetSearchPath**メソッドを呼び出します。 通常、クライアントは、それを取得するために**GetSearchPath**を呼び出す前に、プロファイルにコンテナーの検索パスを確立するために[IAddrBook::SetSearchPath](iaddrbook-setsearchpath.md)メソッドを呼び出します。 ただし、 **SetSearchPath**の呼び出しは、省略可能です。 
+クライアントおよびサービスプロバイダーは、 **GetSearchPath**メソッドを呼び出して、 **ResolveName**メソッドで名前を解決するために使用される検索パスを取得します。 通常、クライアントは[IAddrBook:: SetSearchPath](iaddrbook-setsearchpath.md)メソッドを呼び出して、プロファイルにコンテナー検索パスを設定してから、 **GetSearchPath**を呼び出して取得します。 ただし、 **SetSearchPath**の呼び出しはオプションです。 
   
-**SetSearchPath**が呼び出されていない場合**GetSearchPath**パスを構築を通じて、アドレス帳の階層テーブルです。 **GetSearchPath**によって設定された既定の検索パスは、次の順序で次のコンテナーで構成されます。 
+**SetSearchPath**が呼び出されていない場合、 **GetSearchPath**はアドレス帳の階層テーブルを使用してパスを作成します。 **GetSearchPath**によって確立される既定の検索パスは、次の順序で構成されています。 
   
-1. 個人用アドレス帳 (PAB) では通常、読み取り/書き込みアクセス許可を持つ最初のコンテナーです。
+1. 読み取り/書き込みアクセス許可を持つ最初のコンテナー。通常は個人用アドレス帳 (PAB)。
     
-2. その**PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) プロパティが DT_GLOBAL に設定されているすべてのコンテナーです。 この設定は、受信者コンテナーを保持していることを示します。 
+2. **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) プロパティが DT_GLOBAL に設定されているすべてのコンテナー。 この設定は、コンテナーが受信者を保持することを示します。 
     
-3. DT_GLOBAL フラグが、 **PR_DISPLAY_TYPE**プロパティと既定のコンテナーに設定されているコンテナーがない場合、既定値として指定されているコンテナーは、読み取り/書き込みアクセス許可を持つ最初のコンテナーとは異なります。 
+3. **PR_DISPLAY_TYPE**プロパティに DT_GLOBAL フラグが設定されていて、既定のコンテナーが読み取り/書き込みアクセス許可を持つ最初のコンテナーと異なる場合に、既定として指定されているコンテナー。 
     
-**SetSearchPath**が呼び出されると、 **GetSearchPath**は、プロファイルに格納されているアドレス帳コンテナーを使用してパスを作成します。 **GetSearchPath**は、呼び出し元に返す前に、このパスを検証します。 
+**SetSearchPath**が呼び出されている場合、 **GetSearchPath**は、プロファイルに格納されているアドレス帳のコンテナーを使用してパスを作成します。 **GetSearchPath**は、このパスを呼び出し元に返す前に検証します。 
   
-**SetSearchPath**の最初の呼び出しの後に、 **GetSearchPath**によって返される検索パスを変更するのには**SetSearchPath**以降の呼び出しを使用してください。 つまり、呼び出し元のクライアントやプロバイダーは、デフォルトの検索パスを**SetSearchPath**に最初の呼び出し後受信しません。
+**SetSearchPath**の最初の呼び出しの後、 **SetSearchPath**の以降の呼び出しを使用して、 **GetSearchPath**によって返される検索パスを変更する必要があります。 言い換えると、呼び出し元のクライアントまたはプロバイダーは、 **SetSearchPath**の最初の呼び出しの後に既定の検索パスを受信しません。
   
 ## <a name="see-also"></a>関連項目
 

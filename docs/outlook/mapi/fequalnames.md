@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 4dd58b0b-dc39-4782-a9ec-05e353c90927
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 09c6540f2a224b7dc89a62c34cfb0c867cef4632
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8f71b30bd02af8f768da86218456feadda8ea1b6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334882"
 ---
 # <a name="fequalnames"></a>FEqualNames
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-2 つの MAPI 名前付きプロパティが同じかどうかを判断します。 
+2つの MAPI 名前付きプロパティが同じかどうかを判断します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 BOOL FEqualNames(
@@ -44,26 +44,26 @@ BOOL FEqualNames(
 
  _lpName1_
   
-> [in]最初の名前付きプロパティを記述する[MAPINAMEID](mapinameid.md)構造体へのポインター。 
+> 順番最初の名前付きプロパティを説明する[mapinameid](mapinameid.md)構造体へのポインター。 
     
  _lpName2_
   
-> [in]2 番目の名前付きプロパティを記述する**MAPINAMEID**構造体へのポインター。 
+> 順番2番目の名前付きプロパティを説明する**mapinameid**構造体へのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
 TRUE 
   
-> 2 つのプロパティ名は、同じです。 
+> 2つのプロパティ名は同じです。 
     
 FALSE 
   
-> 2 つのプロパティ名が等しくないです。
+> 2つのプロパティ名は同じではありません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**FEqualNames**関数は、 **MAPINAMEID**構造体は[GUID](guid.md)が含まれていて、複数の方法でプロパティ名自体を表すことができますので便利です。 つまり、バイナリの簡単な方法で 2 つの構造体を比較することはできません。 
+**mapinameid**構造には[GUID](guid.md)が含まれ、プロパティ名自体を複数の方法で表すことができるので、 **FEqualNames**関数は便利です。 これは、2つの構造体を単純な binary メソッドと比較できないことを意味します。 
   
-テスト プロセスは、プロパティ名の文字列の大文字小文字を区別します。 
+テストプロセスでは、プロパティ名文字列の大文字と小文字が区別されます。 
   
 

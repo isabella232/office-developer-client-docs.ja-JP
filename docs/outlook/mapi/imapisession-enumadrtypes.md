@@ -1,5 +1,5 @@
 ---
-title: IMAPISessionEnumAdrTypes
+title: imapisessionenumadrtypes
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9a3702a4-8a6b-4c0c-a90f-02be3a2bfa05
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 050068b542616d1ad4d133b289aba46db2888519
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 3b2e41c4b1bfc4879717df0c73bbcd45a724ca60
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338438"
 ---
 # <a name="imapisessionenumadrtypes"></a>IMAPISession::EnumAdrTypes
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-現在は廃止されています。 セッション内のすべてのトランスポート プロバイダーによって処理可能なアドレスの種類を返します。 
+現在は廃止されています。 セッション内のすべてのトランスポートプロバイダーで処理できるアドレスの種類を返します。 
   
 ```cpp
 HRESULT EnumAdrTypes(
@@ -35,37 +35,37 @@ HRESULT EnumAdrTypes(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]返されるアドレスの種類の形式を示すフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番返されるアドレスの種類の形式を示すフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> Unicode 形式では、アドレスの種類です。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式のアドレスの種類です。
+> アドレスの種類は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、アドレスの種類は ANSI 形式になります。
     
  _lpcAdrTypes_
   
-> [out]_LpppszAdrTypes_パラメーターが指すアドレスの種類の数へのポインターです。 
+> 読み上げ_lpppszadrtypes_パラメーターが指すアドレスの種類の数へのポインター。 
     
- _lpppszAdrTypes_
+ _lpppszadrtypes_
   
-> [out]アドレスの種類へのポインターの配列へのポインター。
+> 読み上げアドレスの種類へのポインターの配列へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > アドレスの種類が正常に取得されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPISession::EnumAdrTypes**メソッドは、セッション内のすべてのアクティブなトランスポート プロバイダーによって処理可能なアドレスの種類のリストを返します。 現在読み込まれていないトランスポート プロバイダーのアドレスの種類は、一覧には含まれません。 MAPI は、 [IXPLogon::AddressTypes](ixplogon-addresstypes.md)メソッドを呼び出すと、1 つまたは複数のアドレスの種類を処理するトランスポート プロバイダーを登録します。 
+**imapisession:: enumadrtypes**メソッドは、セッション内のすべてのアクティブなトランスポートプロバイダーによって処理できるアドレスの種類の一覧を返します。 現在読み込まれていないトランスポートプロバイダーのアドレスの種類は、一覧に含まれていません。 トランスポートプロバイダーは、MAPI が[IXPLogon:: AddressTypes](ixplogon-addresstypes.md)メソッドを呼び出すときに、1つまたは複数のアドレスの種類を処理するように登録します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-_LpppszAdrTypes_パラメーターが指す文字列の配列を解放するのには[MAPIFreeBuffer](mapifreebuffer.md)を呼び出します。 
+[MAPIFreeBuffer](mapifreebuffer.md)を呼び出して、 _lpppszadrtypes_パラメーターで指定された文字列配列を解放します。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1bae0af9-229d-e114-4feb-bf6d7a7d8b08
 description: 指定した割合で明度を増やして色を変更します。
-ms.openlocfilehash: 50e81b5202174c61905d3914c50feddcb05a91cd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d63b90d0cd6fcb35e23a8efa4ca9e13e2838bc21
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335197"
 ---
 # <a name="msotint-function"></a>MSOTINT 関数
 
@@ -25,17 +25,17 @@ ms.locfileid: "19805940"
   
 ## <a name="syntax"></a>構文
 
-MSOTINT (* **色** *、* * *deltaLum* * *) 
+msotint (* * *color* * *, * * *deltaLum* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _color_ <br/> |必須  <br/> |**RGB** <br/> |標準の RGB (red、green、blue) による色の値または色への参照。  <br/> |
-| _deltaLum_ <br/> |必須  <br/> |**Integer** <br/> |白に向かって変化率 (-100%)] または [_色_の値から黒 (100%)。  <br/> |
+| _deltaLum_ <br/> |必須  <br/> |**整数型 (Integer)** <br/> |パーセンテージを白に変更します (-100%)または黒 (100%)_色_の値から。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-近い_色_の値は、白または黒、小さな変更には特定の_deltaLum_の値によって生成される濃淡。 
+_色_の値が白または黒に近いほど、特定の_deltaLum_値によって生成される濃淡に対する変更が小さくなります。 
   
 

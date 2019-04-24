@@ -1,5 +1,5 @@
 ---
-title: IMAPIPropSetProps
+title: imapipropsetprops
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 49f007c9-42e5-4391-8b83-988c9b0ebdba
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 93bfcce9c45a4c6fd4d57be8c1222be286e0a945
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 87709f8a77471637d7652982669bcba93ca2e1dd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341014"
 ---
 # <a name="imapipropsetprops"></a>IMAPIProp::SetProps
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-1 つまたは複数のプロパティを更新します。
+1つまたは複数のプロパティを更新します。
   
 ```cpp
 HRESULT SetProps(
@@ -37,79 +37,79 @@ HRESULT SetProps(
 
 ## <a name="parameters"></a>パラメーター
 
- _あう_
+ _cvalues_
   
-> [in]_LpPropArray_パラメーターで指定されたプロパティ値の数。 _あう_パラメーターを 0 にする必要がありますはできません。 
+> 順番_lpproparray_パラメーターが指すプロパティ値の数。 _cvalues_パラメーターは0以外でなければなりません。 
     
- _lpPropArray_
+ _lpproparray_
   
-> [in]更新するプロパティの値を含む[SPropValue](spropvalue.md)構造体の配列へのポインター。 
+> 順番更新するプロパティ値を含む[spropvalue](spropvalue.md)構造体の配列へのポインター。 
     
- _lppProblems_
+ _lppproblems 問題_
   
-> [で [チェック アウト][SPropProblemArray](spropproblemarray.md)構造体へのポインターへのポインターの入力でそれ以外の場合、NULL の場合、エラー情報の必要性がないことを示します。 _LppProblems_が入力時に有効なポインターである場合は、 **SetProps**は、1 つまたは複数のプロパティを更新中にエラーに関する詳細な情報を返します。 
+> [入力]input の場合は、 [spropの配列](spropproblemarray.md)構造体へのポインターへのポインターを返します。それ以外の場合、エラー情報を必要としないことを示す NULL。 _lppproblems_が入力の有効なポインターである場合、 **setprops**は、1つ以上のプロパティの更新中に発生したエラーに関する詳細情報を返します。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> プロパティは正常に更新されました。
+> プロパティが正常に更新されました。
     
-次の値が返される、 **SPropProblemArray**構造体には戻り値としてではなく**SetProps**。
+次の値は、 **spropの配列**構造で返すことができますが、 **setprops**の戻り値としては返されません。
   
 MAPI_E_BAD_CHARWIDTH 
   
-> か、MAPI_UNICODE フラグが設定された実装は Unicode をサポートしていないまたは MAPI_UNICODE が設定されていませんでしたし、実装は、Unicode だけをサポートしています。
+> MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
     
 MAPI_E_COMPUTED 
   
-> 読み取り専用オブジェクトを担当するサービス ・ プロバイダーによって計算されるため、プロパティを更新できません。
+> プロパティは読み取り専用で、オブジェクトを処理するサービスプロバイダーによって計算されるため、更新できません。
     
 MAPI_E_INVALID_TYPE 
   
-> プロパティの型が正しくありません。
+> プロパティの種類が無効です。
     
 MAPI_E_NO_ACCESS 
   
-> しようとは、読み取り専用オブジェクトを変更するか、ユーザーが十分なアクセス許可を持っているオブジェクトへのアクセスにしました。
+> 読み取り専用オブジェクトを変更しようとしたか、またはユーザーが十分なアクセス許可を持っていないオブジェクトにアクセスしようとしました。
     
 MAPI_E_NOT_ENOUGH_MEMORY 
   
-> プロパティは、リモート プロシージャ コール (RPC) のバッファー サイズを超えているために更新できません。
+> このプロパティは、リモートプロシージャコール (RPC) のバッファーサイズよりも大きいため、更新できません。
     
 MAPI_E_UNEXPECTED_TYPE 
   
-> プロパティの型は、呼び出し元の実装の型ではありません。
+> プロパティの型は、呼び出し元の実装で想定される型ではありません。
     
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) のプロパティ タグと**PT_ERROR**の型を持つすべてのプロパティを無視します。 **SPropProblemArray**構造の変更や問題の報告は行いません。 
+**PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) プロパティタグと、 **PT_ERROR**型のすべてのプロパティを無視します。 **sprop問題の配列**構造で、変更を加えたり、問題を報告したりしないでください。 
   
-**PT_OBJECT**の型のプロパティは、プロパティ値の配列に含まれている場合は、MAPI_E_INVALID_PARAMETER を返します。 複数値プロパティは、配列と**あう**メンバーに含まれている場合、このエラーは 0 に設定を返します。 
+プロパティ値の配列に**PT_OBJECT**型のプロパティが含まれている場合は、MAPI_E_INVALID_PARAMETER を返します。 また、複数値のプロパティが配列に含まれており、その**cvalues**メンバーが0に設定されている場合にも、このエラーを返します。 
   
-全体の呼び出しが成功すると、一部のプロパティの設定に問題がある場合は、S_OK を返すし、 _lppProblems_パラメーターが指す**SPropProblemArray**構造体の適切なエントリで、問題に関する情報を格納します。 
+呼び出しが全体的に成功しても、一部のプロパティの設定に問題がある場合は、S_OK を返し、 _lppproblems_パラメーターが指す**sprop問題の配列**構造の適切なエントリに問題に関する情報を格納します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-サービス プロバイダーによって指定されたプロパティの識別子を使用していたよりも、別の種類を含むプロパティ タグを渡すことによってプロパティの型を変更することがあります。
+また、サービスプロバイダーによっては、プロパティの種類を変更できるようにするために、特定のプロパティ識別子で以前に使用されていたのとは異なる種類のプロパティタグを渡すことができます。
   
-オブジェクトでサポートされていないプロパティのプロパティ タグを含めるし、 **SetProps**の実装では、新しいプロパティの作成、プロパティがオブジェクトに追加されます。 新しいプロパティのために使用されたプロパティの識別子が格納されている、以前の値は破棄されます。 
+オブジェクトでサポートされていないプロパティのプロパティタグを指定し、 **setprops**の実装で新しいプロパティを作成できる場合、プロパティはオブジェクトに追加されます。 新しいプロパティに使用されたプロパティ識別子に格納されていた以前の値は、すべて破棄されます。 
   
-S_OK の戻り値が正常に更新されたすべてのプロパティを保証していないことに注意します。 一部のプロバイダーは、 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)や[IMAPIProp::GetProps](imapiprop-getprops.md)などのプロバイダーの介入が必要な呼び出しを受け取るまで、 **SetProps**呼び出しをキャッシュします。 したがって、以降の呼び出しで**SetProps**の呼び出しに関連するエラー値を受け取ることが。 
+S_OK 戻り値は、すべてのプロパティが正常に更新されたことを保証するものではないことに注意してください。 一部のプロバイダーは、 **setprops**呼び出しを受信するまで、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)または[imapiprop:: GetProps](imapiprop-getprops.md)などのプロバイダーの介入を必要とする呼び出しを受け取るまでキャッシュします。 そのため、以降の呼び出しで**setprops**呼び出しに関連するエラー値を受け取ることができます。 
   
-**SetProps**には、S_OK が返された場合は、個々 のプロパティの更新に問題の_lppProblems_が指す**SPropProblemArray**の構造体を確認してください。 **SetProps**がエラーを返した場合、プロパティの問題の配列をチェックすることはしません。 オブジェクトの[IMAPIProp::GetLastError](imapiprop-getlasterror.md)メソッドを呼び出す代わりに、します。 
+**setprops**が S_OK を返す場合は、個々のプロパティの更新時に問題が発生したことを確認するために、 _lppproblems_に示されている**sprop問題の配列**構造を確認します。 **setprops**がエラーを返す場合は、プロパティの問題の配列をチェックしません。 代わりに、オブジェクトの[imapiprop:: GetLastError](imapiprop-getlasterror.md)メソッドを呼び出します。 
   
-大きなプロパティを更新するとき**SetProps**は失敗し、MAPI_E_NOT_ENOUGH_MEMORY を返すことができます。 プロパティの最大サイズがないと、さまざまなオブジェクトは、さまざまな制限を持つことができます。 大きな可能性のあるプロパティを扱う場合は、 **SetProps**がこのエラーの値を返す場合は、インターフェイス識別子として IID_IStream と[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを呼び出すように準備します。 
+大きなプロパティを更新する場合、 **setprops**は失敗して MAPI_E_NOT_ENOUGH_MEMORY を返します。 プロパティの最大サイズはありません。また、オブジェクトごとに異なる制限を設定することもできます。 大きなプロパティを処理する場合は、 **setprops**がこのエラー値を返す場合、IID_IStream をインターフェイス識別子として使用して、 [imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出すように準備してください。 
   
-**SPropProblemArray**構造体を解放する[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出します。 
+[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して、 **spropの配列**構造を解放します。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|PropertyEditor.cpp  <br/> |CPropertyEditor::WriteSPropValueToObject  <br/> |MFCMAPI では、プロパティに書き込むオブジェクトのプロパティが編集された後に、 **IMAPIProp::SetProps**メソッドを使用します。  <br/> |
+|propertyeditor .cpp  <br/> |cpropertyeditor:: writespropvaluetoobject  <br/> |mfcmapi は、 **imapiprop:: setprops**メソッドを使用して、プロパティが編集された後、そのプロパティをオブジェクトに書き戻します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

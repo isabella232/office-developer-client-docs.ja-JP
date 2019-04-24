@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d146ee74-0c3a-5fdd-b1aa-af6498550801
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: fd593b68ef7ca25b1f8ceec613786cdbdd03fd76
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 1df2c665f8e9d7a0bd6d47ec59b2adf706bead75
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338865"
 ---
 # <a name="upreade"></a>UPREADE
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[アップロード ステータスの状態を読み取り](upload-read-status-state.md)中にはアイテムの読み取り状態をアップロードする情報を拡張します。
+[[読み取り状態のアップロード] 状態](upload-read-status-state.md)の間にアイテムの読み取り状態をアップロードするための拡張情報。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -31,36 +31,36 @@ struct UPREADE
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 _ulFlags_
   
->  [out]/[in] アップロード中に適切な動作を決定するフラグ。 
+>  [out]/[in] フラグを指定して、アップロード中の適切な動作を決定します。 
     
   - UPR_ASSOC
     
-    - [out]アイテムが非表示にします。
+    - 読み上げ項目は表示されません。
     
   - UPR_READ
     
-    - [out]アイテムの読み取り状態が変更されました。
+    - 読み上げアイテムの読み取り状態が変更されました。
     
   - UPR_OK
     
-    - [in]アップロードが正常に完了しました。 クライアントでは、情報をサーバーにアップロードした後、これを設定します。
+    - 順番アップロードに成功しました。 クライアントは、情報をサーバーにアップロードした後にこれを設定します。
     
   - UPR_COMMIT
     
-    - [in]アップロード アイテムの読み取り状態を[テーブルの状態をアップロード](upload-table-state.md)するバッチ処理の終了を待機しているのではなく複数の項目。 
+    - 順番この時点でアイテムの読み取り状態をアップロードします。これは、1つ以上のアイテムをバッチ処理するために、[アップロードテーブルの状態](upload-table-state.md)が終了するのを待つ代わりに行います。 
     
 _skey_
   
-> [out]ソース項目のキー。
+> 読み上げアイテムのソースキー。
     
 ## <a name="see-also"></a>関連項目
 
 - [レプリケーション API について](about-the-replication-api.md)
-- [レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
-- [MAPI �萔](mapi-constants.md)
+- [レプリケーション状態のマシンについて](about-the-replication-state-machine.md)
+- [MAPI 定数](mapi-constants.md)
 - [UPREAD](upread.md)
 

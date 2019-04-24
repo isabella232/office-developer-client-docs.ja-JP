@@ -1,5 +1,5 @@
 ---
-title: IMAPISessionGetStatusTable
+title: imapisessiongetstatustable
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 53428f8d-4838-46d1-a0ab-cafb194f4cc3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 48a69fa49735014dcbfffad0673f1d4da62452e7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 17e936093536f548d16021523d9434f09777c6d9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338762"
 ---
 # <a name="imapisessiongetstatustable"></a>IMAPISession::GetStatusTable
 
@@ -25,7 +25,7 @@ ms.locfileid: "22594832"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ステータス テーブル、セッション内のすべての MAPI リソースに関する情報が含まれているテーブルへのアクセスを提供します。
+状態テーブル (セッション内のすべての MAPI リソースに関する情報を含むテーブル) へのアクセスを提供します。
   
 ```cpp
 HRESULT GetStatusTable(
@@ -34,41 +34,41 @@ HRESULT GetStatusTable(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]文字の文字列の列の形式を決定するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番文字列の列の形式を決定するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> Unicode 形式では、文字列型の列です。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列型の列です。
+> 文字列列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列列は ANSI 形式になります。
     
- _lppTable_
+ _lpptable_
   
-> [out]ステータス テーブルへのポインターへのポインター。
+> 読み上げ状態テーブルへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > テーブルが正常に返されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPISession::GetStatusTable**メソッドは、セッション内のすべての MAPI リソースに関する情報を含むステータス テーブルへのアクセスを提供します。 MAPI サブシステムについての情報のテーブルの 1 行、1 行、MAPI スプーラーを無効、統合アドレス帳の 1 つの行とプロファイルには、各サービス プロバイダーの 1 つの行があります。 
+**imapisession:: getstatustable**メソッドは、セッション内のすべての MAPI リソースに関する情報を含む状態テーブルへのアクセスを提供します。 このテーブルには、mapi サブシステムに関する情報、mapi スプーラーの1行、統合アドレス帳の1行、プロファイル内のサービスプロバイダーごとに1つの行があります。 
   
-状態テーブル内の必須および省略可能な列の一覧については、[ステータス ・ テーブル](status-tables.md)を参照してください。 
+[状態] テーブルの必須およびオプションの列の完全な一覧については、「 [status Tables](status-tables.md)」を参照してください。 
   
-_UlFlags_パラメーターに MAPI_UNICODE フラグを設定する、 [IMAPITable::QueryColumns](imapitable-querycolumns.md)メソッドと[IMAPITable::QueryRows](imapitable-queryrows.md)メソッドから返される列の形式に影響します。 このフラグは、 [IMAPITable::QuerySortOrder](imapitable-querysortorder.md)メソッドによって返される並べ替え順序のプロパティの種類も制御します。 
+_ulflags_パラメーターの MAPI_UNICODE フラグを設定すると、 [imapitable:: querycolumns](imapitable-querycolumns.md)および[imapitable:: QueryRows](imapitable-queryrows.md)メソッドから返される列の形式に影響します。 このフラグは、 [IMAPITable:: querysortorder](imapitable-querysortorder.md)メソッドによって返される並べ替え順序で、プロパティの種類を制御することもできます。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MainDlg.cpp  <br/> |CMainDlg::OnStatusTable  <br/> |MFCMAPI では、 **IMAPISession::GetStatusTable**メソッドを使用してレンダリングされる状態のテーブルを取得します。  <br/> |
+|maindlg .cpp  <br/> |CMainDlg:: onstatustable  <br/> |mfcmapi は、 **imapisession:: getstatustable**メソッドを使用して、レンダリングされる状態テーブルを取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

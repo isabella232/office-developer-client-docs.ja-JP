@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 32676003-ba32-886f-1185-4760cb0e30e3
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2aeca1a65a859ac9502995a463bc4869609bcd15
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25383815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334962"
 ---
 # <a name="fixmapi"></a>FixMAPI
 
@@ -21,13 +21,13 @@ ms.locfileid: "25383815"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-によってバックアップ コピーが mapi32.dll のコピーの現在のクライアント コンピューター、および MAPI スタブ ライブラリのリストア mapi32.dll mapistub.dll。
+クライアントコンピューターに mapi32 の現在のコピーのバックアップコピーを作成し、mapi32 を MAPI スタブライブラリ mapistub に復元して復元します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|によってエクスポートされます。  <br/> |mapistub.dll  <br/> |
+|エクスポート対象:  <br/> |mapistub  <br/> |
 |呼び出し元:  <br/> |クライアント  <br/> |
 |実装元:  <br/> |Windows  <br/> |
    
@@ -37,23 +37,23 @@ DWORD STDAPICALLTYPE FixMAPI(void);
 
 ## <a name="return-values"></a>戻り値
 
-関数が成功した場合は、0 以外の値を返します。
+関数が正常に終了した場合、戻り値は0以外の値になります。
   
-関数が失敗した場合は 0 を返します。 拡張エラー情報を取得するには、Microsoft Windows ソフトウェア開発キット (SDK) 関数、 **[GetLastError](https://msdn.microsoft.com/library/ms679360.aspx)** を呼び出します。 
+関数が失敗した場合、戻り値は0になります。 拡張エラー情報を取得するには、Microsoft Windows Software Development Kit (SDK) 関数 ( **[GetLastError](https://msdn.microsoft.com/library/ms679360.aspx)**) を呼び出します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
- **FixMAPI**では、ファイルが読み取り専用としてマークされている場合、現在の mapi32.dll ファイルは置換されません。 
+ **FixMAPI**は、ファイルが読み取り専用としてマークされている場合は、現在の mapi32 ファイルを置き換えません。 
   
- **FixMAPI**では、Microsoft Exchange Server がコンピューターにインストールされている場合、現在の mapi32.dll は置換されません。 
+ **FixMAPI**は、Microsoft Exchange Server がコンピューターにインストールされている場合は、現在の mapi32 を置き換えません。 
   
-**FixMAPI**では、特定のコンピューター上の mapi32.dll のコピーの現在のバックアップ ・ コピーと [mapi32.dll] から別の名前がバックアップ ・ コピーで割り当てられます。 バックアップ ・ コピーには、そのアセンブリの後続の呼び出しを指示します。 
+**FixMAPI**がコンピューターに mapi32 の現在のコピーのバックアップコピーを作成すると、"mapi32" とは異なる名前がバックアップコピーに割り当てられます。 その後、そのアセンブリに対する後続の呼び出しがバックアップコピーに送られます。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[KB 256946: Outlook 2000 を起動したときにプログラムの競合のエラー メッセージが表示されます。](https://support.microsoft.com/kb/256946)
+[KB 256946: Outlook 2000 の起動時にプログラムの競合エラーメッセージが表示される](https://support.microsoft.com/kb/256946)
   
-[KB 228457: Fixmapi.exe ツールの説明は、Internet Explorer 5 に含まれる](https://support.microsoft.com/kb/228457)
+[KB 228457: Internet Explorer 5 に含まれる Fixmapi ツールについて説明します。](https://support.microsoft.com/kb/228457)
 

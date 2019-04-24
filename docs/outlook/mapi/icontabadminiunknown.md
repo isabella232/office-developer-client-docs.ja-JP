@@ -1,5 +1,5 @@
 ---
-title: IContabAdmin IUnknown
+title: icontabadmin IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,34 +12,34 @@ api_type:
 - COM
 ms.assetid: 1f72ab6c-14da-47b7-97ab-f729914214ba
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d75f74de323e2ba70675a02e388d6d1539cd30ed
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1423f76b5aade400d8b828fe63a275e14b6a0c6e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32337108"
 ---
 # <a name="icontabadmin--iunknown"></a>IContabAdmin : IUnknown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-削除は、Microsoft Outlook 2010、Outlook 2013 の Microsoft のアドレス帳からフォルダーを問い合わせてください。
+microsoft outlook 2010 および microsoft outlook 2013 アドレス帳から連絡先フォルダーを削除します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |cabadmin.h  <br/> |
-|によって公開されます。  <br/> ||
-|によって実装されます。  <br/> |[IABContainer : IMAPIContainer](iabcontainerimapicontainer.md) <br/> |
-|によって呼び出されます。  <br/> |CRM  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IContabAdmin  <br/> |
-|ポインターの型。  <br/> ||
+|ヘッダー ファイル:  <br/> |cabadmin  <br/> |
+|公開者:  <br/> ||
+|実装元:  <br/> |[IABContainer : IMAPIContainer](iabcontainerimapicontainer.md) <br/> |
+|呼び出し元:  <br/> |CRM  <br/> |
+|インターフェイス識別子:  <br/> |IID_IContabAdmin  <br/> |
+|ポインターの種類:  <br/> ||
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[IContabAdmin::RemoveStore](icontabadmin-removestore.md) <br/> |連絡先アドレス帳 (CAB) のアドレス帳の階層から指定されたエントリ ID で指定されたを削除します。  <br/> |
+|[IContabAdmin::RemoveStore](icontabadmin-removestore.md) <br/> |指定したエントリ ID によって指定された連絡先アドレス帳 (CAB) をアドレス帳階層から削除します。  <br/> |
    
 

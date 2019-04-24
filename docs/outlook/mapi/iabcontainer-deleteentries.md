@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 70a24811-0c41-4b44-8c63-7ef807bc9051
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4140dc39b7f866b0372e5940aef5efc0524ad593
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e3b238129e55e03da33ef3af75ecce7e73fbad03
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32339383"
 ---
 # <a name="iabcontainerdeleteentries"></a>IABContainer::DeleteEntries
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-一般ユーザー、配布リスト、またはその他のコンテナーをメッセージング、1 つまたは複数のエントリを削除します。
+1つ以上のエントリ (通常、メッセージングユーザー、配布リスト、またはその他のコンテナー) を削除します。
   
 ```cpp
 HRESULT DeleteEntries(
@@ -36,31 +36,31 @@ HRESULT DeleteEntries(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpEntries_
+ _lpentries_
   
-> [in]削除されるエントリを表すエントリの識別子を含む[ENTRYLIST](entrylist.md)構造体の配列へのポインター。 
+> 順番削除されるエントリを表すエントリ識別子を含む[entrylist](entrylist.md)構造体の配列へのポインター。 
     
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 指定したエントリが削除されました。 
+> 指定したエントリが正常に削除されました。 
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> 呼び出しが成功したが、1 つまたは複数のエントリを削除できませんでした。 この値が返されると、呼び出しを成功として処理する必要があります。 この値をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
+> 呼び出しは成功しましたが、1つ以上のエントリを削除できませんでした。 この値が返されると、呼び出しが成功したとして処理されます。 この値をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
     
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|Abdlg.cpp  <br/> |CabDlg::OnDeleteSelectedItem  <br/> |MFCMAPI では、 **DeleteEntries**メソッドを使用して、アドレス帳コンテナーから特定のエントリを削除します。  <br/> |
+|abdlg .cpp  <br/> |cabdlg:: OnDeleteSelectedItem  <br/> |mfcmapi は、 **deleteentries**メソッドを使用して、アドレス帳コンテナーから特定のエントリを削除します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

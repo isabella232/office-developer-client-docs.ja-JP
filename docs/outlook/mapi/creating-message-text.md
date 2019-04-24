@@ -1,5 +1,5 @@
 ---
-title: メッセージ テキストを作成します。
+title: メッセージ テキストの作成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,66 +7,66 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 70d1fb24-91a9-4043-8c9d-be1523012e6b
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: bd840c7bef0607db37c6477bd8f4a7320a8188c6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 5b4a4107d6326a61f50a4023ebc2538f699224b5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335722"
 ---
-# <a name="creating-message-text"></a>メッセージ テキストを作成します。
+# <a name="creating-message-text"></a>メッセージ テキストの作成
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-いくつかのメッセージは、受信者一覧と件名の行では、IPM では具体的には、ほとんどのメッセージの内容よりもそれ以上の構成されています。メッセージに注意してください、テキストが含まれています。 メッセージをテキスト形式または書式設定された、3 つのプロパティに格納されます: **PR\_本体**([PidTagBody](pidtagbody-canonical-property.md)) **PR\_HTML** ([PidTagHtml](pidtaghtml-canonical-property.md))、 **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))。 
+一部のメッセージは、受信者リストと件名行 (特に、ほとんどのメッセージの内容) だけで構成されていますが、特に IPM.メモメッセージには、テキストが含まれます。 メッセージテキストは、標準または書式設定することができ、 **pr\_本文**([PidTagBody](pidtagbody-canonical-property.md))、 **pr\_HTML** ([PidTagHtml](pidtaghtml-canonical-property.md))、および**PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) の3つのプロパティに格納されます。 
 
-設定の場合は、クライアントでは、テキスト ベースで**PR\_本文**。 **PR_RTF_COMPRESSED**のみまたは両方の**PR_RTF_COMPRESSED**のいずれかに設定で、リッチ テキスト形式式 (RTF) 書式設定されたテキストをサポートする場合、 **PR\_本文**に使用しているメッセージ ストア プロバイダーに依存します。 RTF に対応して、クライアントは、rtf 形式に対応したメッセージ ・ ストアを使用しているときのみ**PR_RTF_COMPRESSED**を設定します。 RTF に対応して、クライアントが RTF に対応していないメッセージ ストアを使用している場合は、両方のプロパティを設定します。 クライアントは、HTML をサポートする場合は、 **PR_HTML**プロパティを設定します。 
+クライアントがプレーンテキストベースの場合は、 **PR\_本文**を設定します。 リッチテキスト形式 (RTF) で書式設定されたテキストをサポートする場合は、使用しているメッセージストアプロバイダーに応じて、 **PR_RTF_COMPRESSED** only または**PR_RTF_COMPRESSED**と**PR\_本文**のどちらかを設定します。 rtf 対応のクライアントが rtf 対応のメッセージストアを使用している場合、 **PR_RTF_COMPRESSED**のみが設定されます。 rtf 対応のクライアントが rtf 対応ではないメッセージストアを使用している場合、両方のプロパティを設定します。 クライアントが HTML をサポートしている場合は、 **PR_HTML**プロパティを設定します。 
   
-## <a name="determine-whether-your-message-store-supports-rich-text-format"></a>メッセージ ・ ストアがリッチ テキスト形式をサポートしているかどうかを決定します。
+## <a name="determine-whether-your-message-store-supports-rich-text-format"></a>メッセージストアがリッチテキスト形式をサポートしているかどうかを確認する
   
-1. **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) のプロパティを取得するために、メッセージ ストアの[IMAPIProp::GetProps](imapiprop-getprops.md)メソッドを呼び出します。
+1. メッセージストアの[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出して、 **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) プロパティを取得します。
     
-2. STORE_RTF_OK ビットを確認します。 STORE_RTF_OK が設定されている場合、メッセージ ストア プロバイダーは、rtf 形式のテキストをサポートします。 設定されていない場合、メッセージ ストア プロバイダーは、テキスト形式のみをサポートします。
+2. STORE_RTF_OK ビットをチェックします。 STORE_RTF_OK が設定されている場合、メッセージストアプロバイダーは RTF テキストをサポートします。 設定されていない場合、メッセージストアプロバイダーはプレーンテキストのみをサポートします。
     
-## <a name="determine-whether-your-message-store-supports-html"></a>メッセージ ・ ストアが HTML をサポートしているかどうかを決定します。
+## <a name="determine-whether-your-message-store-supports-html"></a>メッセージストアが HTML をサポートしているかどうかを判断する
   
-1. **PR_STORE_SUPPORT_MASK**プロパティを取得するために、メッセージ ストアの[IMAPIProp::GetProps](imapiprop-getprops.md)メソッドを呼び出します。 
+1. メッセージストアの[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出して、 **PR_STORE_SUPPORT_MASK**プロパティを取得します。 
     
-2. STORE_HTML_OK ビットを確認します。 STORE_HTML_OK が設定されている場合、メッセージ ストア プロバイダーは、HTML テキストをサポートします。 
+2. STORE_HTML_OK ビットをチェックします。 STORE_HTML_OK が設定されている場合、メッセージストアプロバイダーは HTML テキストをサポートします。 
     
-## <a name="set-prrtfcompressed"></a>PR の設定\_RTF_COMPRESSED
+## <a name="set-prrtfcompressed"></a>PR\_RTF_COMPRESSED の設定
   
-1. **PR_RTF_COMPRESSED**プロパティを開くには、メッセージの[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを呼び出して、インターフェイス識別子として IID_IStream を指定して、タグを設定するフラグを設定します。 
+1. メッセージの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出して、 **PR_RTF_COMPRESSED**プロパティを開き、IID_IStream をインターフェイス識別子として指定し、MAPI_CREATE フラグを設定します。 
     
-2. STORE_UNCOMPRESSED_RTF ビットがメッセージ ストアの**PR_STORE_SUPPORT_MASK**プロパティで設定されている場合、STORE_UNCOMPRESSED_RTF フラグを渡す、 [WrapCompressedRTFStream](wrapcompressedrtfstream.md)関数を呼び出します。 
+2. [WrapCompressedRTFStream](wrapcompressedrtfstream.md)関数を呼び出し、STORE_UNCOMPRESSED_RTF ビットがメッセージストアの**PR_STORE_SUPPORT_MASK**プロパティで設定されている場合は STORE_UNCOMPRESSED_RTF フラグを渡します。 
     
-3. 呼び出すことによって、元のストリームを解放する、* * が * * メソッドです。 
+3. * * IUnknown:: Release * * メソッドを呼び出して、元のストリームを解放します。 
     
-4. いずれかを呼び出す * * IStream::Write * * または**WrapCompressedRTFStream**からメッセージのテキストをストリームに書き込むには、 **IStream::CopyTo**が返されます。
+4. * * IStream:: Write * * または**IStream:: CopyTo**を呼び出して、 **WrapCompressedRTFStream**から返されたストリームにメッセージテキストを書き込みます。
     
-5. **コミット**し、**リリース**のメソッドを呼び出す、 **OpenProperty**メソッドから返されるストリーム。 
+5. **openproperty**メソッドから返されたストリームで、 **Commit**メソッドと**Release**メソッドを呼び出します。 
     
-この時点で、メッセージ ストア プロバイダーは、rtf 形式をサポートする場合に必要なすべてが行われます。 メッセージ ストア プロバイダーを作成してメッセージの内容を同期して、書式設定を処理するために依存することができます、 **PR\_本文**プロパティが必要な場合です。 RTF に対応してメッセージ ・ ストアでは、同期を処理するために[行う](rtfsync.md)を呼び出します。 場合 RTF\_SYNC_BODY_CHANGED フラグが TRUE に設定されて、プロバイダーが**PR_BODY**プロパティを再計算します。 
+この時点で、メッセージストアプロバイダーが RTF をサポートしている場合は、必要なすべての処理が完了しています。 メッセージストアプロバイダーによって、メッセージの内容と書式設定の同期を処理したり、必要に応じて**PR\_本文**のプロパティを作成したりすることができます。 RTF 対応のメッセージは、同期を処理するために、 [rtfsync](rtfsync.md)という呼び出しを格納します。 RTF\_SYNC_BODY_CHANGED フラグが TRUE に設定されている場合、プロバイダーは**PR_BODY**プロパティを再計算します。 
   
-メッセージ ストア プロバイダーが RTF をサポートしていない場合は、 **PR_BODY**プロパティを設定することで rtf 形式以外のメッセージの内容を追加することもする必要があります。 
+メッセージストアプロバイダーが rtf をサポートしていない場合は、 **PR_BODY**プロパティを設定することによって、rtf 以外のメッセージコンテンツも追加する必要があります。 
   
-## <a name="set-prhtml"></a>PR_HTML を設定します。
+## <a name="set-prhtml"></a>PR_HTML の設定
   
-1. **IStream**インターフェイスを使用して**PR_HTML**プロパティを表示する[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを呼び出します。 
+1. [imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出して、 **IStream**インターフェイスを使用して**PR_HTML**プロパティを開きます。 
     
-2. **OpenProperty**から返されるストリームにメッセージのテキスト データを書き込むには、 **IStream::Write**を呼び出します。 
+2. 呼び出し**IStream:: write**は、 **openproperty**から返されたストリームにメッセージテキストデータを書き込みます。 
     
-3. 変更をコミットし、そのメモリを解放するには、 **IStream::Commit**と**リ ス**を呼び出します。 
+3. 変更をコミットしてメモリを解放するため、 **IStream:: commit**および**IUnknown:: Release**を呼び出します。 
     
-## <a name="set-prbody"></a>PR_BODY を設定します。
+## <a name="set-prbody"></a>PR_BODY の設定
   
-1. **IStream**インターフェイスを使用して**PR_BODY**プロパティを表示する[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを呼び出します。 
+1. [imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出して、 **IStream**インターフェイスを使用して**PR_BODY**プロパティを開きます。 
     
-2. **OpenProperty**から返されるストリームにメッセージのテキスト データを書き込むには、 **IStream::Write**を呼び出します。 
+2. 呼び出し**IStream:: write**は、 **openproperty**から返されたストリームにメッセージテキストデータを書き込みます。 
     
-3. 書式設定されたテキストの同期を[行う](rtfsync.md)関数を呼び出します。 これは新しいメッセージであるため、rtf 形式とテキスト形式の両方のバージョンのメッセージ テキストが変更されたことを示すために RTF_SYNC_RTF_CHANGED と RTF_SYNC_BODY_CHANGED の両方のフラグを設定します。 **** **PR_RTF_IN_SYNC** ([PidTagRtfInSync](pidtagrtfinsync-canonical-property.md)) など、メッセージ ストア プロバイダーを必要とするいくつかの関連するプロパティを設定し、それらをメッセージに書き込みます。
+3. [rtfsync](rtfsync.md)関数を呼び出して、テキストと書式を同期します。 これは新しいメッセージなので、RTF_SYNC_RTF_CHANGED と RTF_SYNC_BODY_CHANGED の両方のフラグを設定して、RTF 形式とテキスト形式のメッセージテキストの両方が変更されたことを示します。 **rtfsync**は、メッセージストアプロバイダーが必要とするいくつかの関連するプロパティ ( **PR_RTF_IN_SYNC** ([PidTagRtfInSync](pidtagrtfinsync-canonical-property.md)) など) を設定し、メッセージに書き込みます。
     
-4. 変更をコミットし、そのメモリを解放するには、 **IStream::Commit**と**リ ス**を呼び出します。 
+4. 変更をコミットしてメモリを解放するため、 **IStream:: commit**および**IUnknown:: Release**を呼び出します。 
     
 

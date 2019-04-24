@@ -8,11 +8,11 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1b6c88d40236ffb6cc3201b659a39e4d869de188
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335393"
 ---
 # <a name="synchronize-outlook-with-a-sharepoint-folder"></a>Outlook と SharePoint のフォルダーを同期させる
 
@@ -23,13 +23,13 @@ ms.locfileid: "28718715"
 > [!NOTE] 
 > 次のコード例は、『[Programming Applications for Microsoft Office Outlook 2007](https://www.amazon.com/gp/product/0735622493?ie=UTF8&tag=msmsdn-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0735622493)』からの抜粋です。
 
-Outlook では、予定表、連絡先リスト、タスク リスト、ディスカッション掲示板、SharePoint フォルダーにドキュメント ライブラリを同期することができます。 同期を行う際に指定された URL に基づいて、Outlook は SharePoint フォルダーと同じベース タイプのフォルダーを新規に作成します。 たとえば、SharePoint の予定表フォルダーと同期させると Outlook に新しい予定表フォルダーが作成されます。 SharePoint と同期されるフォルダーは、ユーザーのメールボックスの外にある固有の Outlook 個人用フォルダー (.pst) ファイルに保存されます。 [OpenSharedFolder (文字列、オブジェクト、オブジェクト、オブジェクト)](https://msdn.microsoft.com/library/bb610157\(v=office.15\))メソッドは[名前空間](https://msdn.microsoft.com/library/bb645857\(v=office.15\))オブジェクトのを使用して、SharePoint フォルダーと接続することができます。 なお、stssync:// URL を使用して、SharePoint フォルダーを開くために Outlook で必要とされる SharePoint サーバーの詳細、フォルダー パス、その他の情報を提供する必要があります。
+Outlook では、予定表、連絡先リスト、タスク リスト、ディスカッション掲示板、SharePoint フォルダーにドキュメント ライブラリを同期することができます。 同期を行う際に指定された URL に基づいて、Outlook は SharePoint フォルダーと同じベース タイプのフォルダーを新規に作成します。 たとえば、SharePoint の予定表フォルダーと同期させると、Outlook 内に新しい予定表フォルダーが作成されます。 SharePoint と同期されるフォルダーは、ユーザーのメールボックスの外にある固有の Outlook 個人用フォルダー (.pst) ファイルに保存されます。 [OpenSharedFolder (文字列、オブジェクト、オブジェクト、オブジェクト)](https://msdn.microsoft.com/library/bb610157\(v=office.15\))メソッドは[名前空間](https://msdn.microsoft.com/library/bb645857\(v=office.15\))オブジェクトのを使用して、SharePoint フォルダーと接続することができます。 なお、stssync:// URL を使用して、SharePoint フォルダーを開くために Outlook で必要とされる SharePoint サーバーの詳細、フォルダー パス、その他の情報を提供する必要があります。
 
 プログラムで SharePoint フォルダーと接続するときは、共有関係を作成するために使用する適切な URL を決定する必要があります。 フォルダーの SharePoint ユーザー インターフェイスに stssync:// URL は明記されていないため、手動で移動先フォルダーを Outlook にリンクします。 その後、次のコード例で、最初のプロシージャである DisplaySharePointUrl を使用して正しい URL を取得します。 DisplaySharePointUrl は、[表](https://msdn.microsoft.com/library/bb652856\(v=office.15\))オブジェクトを使用して、アクティブなエクスプローラー ウィンドウの現在のフォルダー内から共有バインディング情報を探します。 1 つ以上のバインド コンテキストが検出されると、使用可能なすべての共有コンテキストの URL が表示されます。
 
 共有のリレーションシップを作成する適切な URL が手に入りました。 Outlook の新しい SharePoint フォルダーを同期させるには、URL をコピーして、2 番目のプロシージャである AddSpsFolder 内の文字列変数 CalendarUrl の代入部分に貼り付けます。 AddSpsFolder は、Outlook の新しい SharePoint フォルダーの同期を自動化するために、**NameSpace.OpenSharedFolder** メソッドを `stssync://`URL (今回は、DisplaySharePointUrl プロシージャによって作られた URL) で使用します。 AddSpsFolderalso は、"例 SPS カレンダー" というカスタム フォルダーを提供し、このフォルダーで既定の Time to Live (TTL) を使うよう Outlook に指示します。 SharePoint フォルダーは、アイテムの添付ファイルを常にダウンロードするため、ここで指定する必要はありません。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

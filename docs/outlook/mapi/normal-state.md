@@ -1,5 +1,5 @@
 ---
-title: Normal 状態
+title: 通常の状態
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,28 +9,28 @@ api_type:
 ms.assetid: 8b2acad7-5ef8-44db-911f-3bd2a7ca2778
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: d7b50a92c58dd7ab1f03cb4cf84acc2d4a2b404b
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32335744"
 ---
-# <a name="normal-state"></a>Normal 状態
+# <a name="normal-state"></a>通常の状態
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-通常の状態では、form オブジェクトが変更を保存するか、フォームを閉じるなどの操作を開始するクライアント アプリケーションを待機して、その時間のほとんどを費やしています。 次の表では、通常の状態から有効な遷移について説明します。
+通常の状態とは、フォームオブジェクトが最も多くの時間を費やしている場所で、クライアントアプリケーションが変更を保存したり、フォームを閉じたりするなどの操作を開始するのを待機します。 次の表は、通常の状態から許可される遷移を示しています。
   
-|**IPersistMessage メソッド**|**操作**|**新しい状態**|
+|**IPersistMessage メソッド**|**Action**|**新しい状態**|
 |:-----|:-----|:-----|
-|[IPersistMessage::Save](ipersistmessage-save.md)(_pMessage = =_ NULL _fSameAsLoad = =_ TRUE)  <br/> または  <br/> **IPersistMessage::Save**(_pMessage! =_ NULL _fSameAsLoad = =_ は FALSE)  <br/> |保存に変更されたすべての埋め込み OLE オブジェクトを再帰的にします。 メッセージ オブジェクトには、メッセージ データを保存します。 [NoScribble](noscribble-state.md)状態で後で使用できる_fSameAsLoad_フラグを格納します。  <br/> |NoScribble  <br/> |
-|**IPersistMessage::Save**(_pMessage! =_ NULL _fSameAsLoad = =_ TRUE)  <br/> |これは、この**保存**の呼び出しはメモリ不足の状況で使用され、メモリ不足によって失敗する必要がありますが、前の例と同じです。  <br/> |NoScribble  <br/> |
-|[IPersistMessage::HandsOffMessage](ipersistmessage-handsoffmessage.md) <br/> |再帰的には、埋め込みメッセージでは、 **HandsOffMessage**メソッドまたは埋め込まれた OLE オブジェクトの OLE の[IPersistStorage::HandsOffStorage](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d%28Office.15%29.aspx)メソッドを呼び出します。 メッセージ オブジェクトを解放し、埋め込みオブジェクトまたはメッセージ。  <br/> |[HandsOffFromNormal](handsofffromnormal-state.md) <br/> |
-|[IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md)、 [IPersistMessage::InitNew](ipersistmessage-initnew.md)または[IPersistMessage::Load](ipersistmessage-load.md) <br/> |最後のエラーを設定、E_UNEXPECTED を返します。  <br/> |Normal  <br/> |
-|[IPersistMessage::GetLastError](ipersistmessage-getlasterror.md) <br/> |最後のエラーを返します。  <br/> |Normal  <br/> |
-|他の[IPersistMessage: IUnknown](ipersistmessageiunknown.md)メソッドまたはその他のインターフェイスのメソッド  <br/> |マニュアルで説明するように実装、 [IPersistMessage: IUnknown](ipersistmessageiunknown.md)インタ フェースです。  <br/> |Normal  <br/> |
+|[IPersistMessage:: 保存](ipersistmessage-save.md)(_pmessage = =_ NULL、 _fsameasload = =_ TRUE)  <br/> または  <br/> **IPersistMessage:: 保存**(_pmessage! =_ NULL、 _fsameasload = =_ FALSE)  <br/> |変更されたすべての埋め込み OLE オブジェクトを、再帰的に保存します。 メッセージのデータをメッセージオブジェクトに保存します。 今後使用するために_fsameasload_フラグを[noscribble](noscribble-state.md)状態で保存します。  <br/> |NoScribble  <br/> |
+|**IPersistMessage:: 保存**(_pmessage! =_ NULL、 _fsameasload = =_ TRUE)  <br/> |これは前の例と同じですが、この**Save**呼び出しはメモリが不足している状況では使用されていますが、メモリ不足の場合は失敗しません。  <br/> |NoScribble  <br/> |
+|[IPersistMessage::HandsOffMessage](ipersistmessage-handsoffmessage.md) <br/> |埋め込まれ**** たメッセージに対して、または ole [IPersistStorage:: 配布用](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d%28Office.15%29.aspx)の ole オブジェクトに対して、配布のために、このメソッドを再帰的に呼び出します。 メッセージオブジェクトおよび埋め込まれたメッセージまたはオブジェクトを解放します。  <br/> |[HandsOffFromNormal](handsofffromnormal-state.md) <br/> |
+|[IPersistMessage:: SaveCompleted](ipersistmessage-savecompleted.md), [IPersistMessage:: InitNew](ipersistmessage-initnew.md)または[IPersistMessage:: Load](ipersistmessage-load.md) <br/> |最後のエラーをに設定し、E_UNEXPECTED を返します。  <br/> |標準  <br/> |
+|[IPersistMessage::GetLastError](ipersistmessage-getlasterror.md) <br/> |直前のエラーを返します。  <br/> |標準  <br/> |
+|その他の[IPersistMessage: IUnknown](ipersistmessageiunknown.md)メソッドまたは他のインターフェイスからのメソッド  <br/> |[IPersistMessage: IUnknown](ipersistmessageiunknown.md)インターフェイスのドキュメントで説明されているとおりに実装します。  <br/> |標準  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

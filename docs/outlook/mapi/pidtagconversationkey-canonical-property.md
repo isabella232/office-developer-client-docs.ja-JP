@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 52c97d6c-7f4b-4522-aeac-0c1ed8475952
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 00c65dae9bc29fe9cdb310b819ba99d6d46ebfe3
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32334700"
 ---
 # <a name="pidtagconversationkey-canonical-property"></a>PidTagConversationKey 標準プロパティ
 
@@ -21,44 +21,44 @@ ms.locfileid: "25389765"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**IPM を検索するときにのみ、Microsoft Outlook で使用される対話鍵が含まれています。MessageManager** Post Office プロトコル (POP3) アカウントのダウンロードの履歴を格納しているメッセージなどのメッセージです。 Microsoft Exchange Server で、このプロパティは廃止されました。 
+IPM を検索するときにのみ、Microsoft Outlook で使用される会話キーが含まれ**ます。MessageManager**メッセージ (Post Office Protocol (POP3) アカウントのダウンロード履歴が含まれているメッセージなど)。 このプロパティは、Microsoft Exchange Server では廃止されました。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_CONVERSATION_KEY  <br/> |
 |識別子:  <br/> |0x000B  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |一般的なメッセージング  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-会話メッセージのプロパティを[トランスポート ニュートラル カプセル化形式 (TNEF)](transport-neutral-encapsulation-format-tnef.md)に変換すると電子メール メッセージにアクセスするときに、このプロパティを使用できません。代わりに、 [PidTagConversationIndex](pidtagconversationindex-canonical-property.md)および[PidTagConversationTopic](pidtagconversationtopic-canonical-property.md)の標準的なプロパティを使用します。 
+会話として電子メールメッセージにアクセスし、メッセージのプロパティを[トランスポートに中立的なカプセル化形式 (TNEF)](transport-neutral-encapsulation-format-tnef.md)に変換する場合は、このプロパティを使用しないでください。代わりに、 [PidTagConversationIndex](pidtagconversationindex-canonical-property.md)プロパティと[PidTagConversationTopic](pidtagconversationtopic-canonical-property.md)標準プロパティを使用します。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > 関連する Microsoft Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
-> プロパティは、電子メール メッセージのオブジェクトに対して許可する操作を指定します。
+> 電子メールメッセージオブジェクトで許容されるプロパティと操作を指定します。
     
-[[MS OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
+[[OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
   
-> エンコードし、メッセージと添付ファイルのオブジェクトを効率的なストリーム形式をデコードします。
+> メッセージと添付ファイルオブジェクトをエンコードし、効率的なストリーム表現にデコードします。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
@@ -66,11 +66,11 @@ Mapitags.h
 
 [IPM サブツリー](ipm-subtree.md)
   
-[MAPI ���ʂȃt�H���_�[](mapi-special-folders.md)
+[MAPI の特殊フォルダー](mapi-special-folders.md)
   
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
