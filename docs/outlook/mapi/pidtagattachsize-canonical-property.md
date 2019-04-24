@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 768b3215-dd9f-4aa0-b52c-178ca81a7b07
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: f3e4f19ab43a3da7c4840d762d5131813c83d996
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25399747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32361090"
 ---
 # <a name="pidtagattachsize-canonical-property"></a>PidTagAttachSize 標準プロパティ
 
@@ -25,38 +25,38 @@ ms.locfileid: "25399747"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-添付ファイルのすべてのプロパティのサイズの合計 (バイト単位) にはが含まれています。 
+添付ファイルのすべてのプロパティのサイズの合計 (バイト単位) を格納します。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_ATTACH_SIZE  <br/> |
-|識別子:  <br/> |0x0e20 が使えるはず  <br/> |
+|識別子:  <br/> |0x0e20  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-サブオブジェクトの添付ファイルが、 **PR_ATTACH_SIZE**プロパティを公開することをお勧めします。 **PR_ATTACH_SIZE**に含まれている合計には、 **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) または**PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) のプロパティのサイズが含まれています。 したがって、 **PR_ATTACH_SIZE**は、通常、単独での添付ファイルの内容より大きくです。 
+attachment サブオブジェクトは**PR_ATTACH_SIZE**プロパティを公開することをお勧めします。 **PR_ATTACH_SIZE**に含まれる合計には、 **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) または**PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) プロパティのサイズが含まれます。 したがって、 **PR_ATTACH_SIZE**は通常、添付ファイルの内容よりも大きくなります。 
   
-モデム経由でリモートの転送を実行する前に添付ファイルのおおよそのサイズを確認し、添付ファイルをディスクに保存するときに進行状況インジケーターを表示するのには、このプロパティを使用できます。 添付された OLE オブジェクトで特に便利です。 
+このプロパティを使用すると、モデムによるリモート転送を実行する前に添付ファイルのおおよそのサイズを確認したり、添付ファイルをディスクに保存するときに進行状況インジケーターを表示したりできます。 これは、OLE オブジェクトの添付に特に便利です。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルのオブジェクトを処理します。
+> メッセージと添付ファイルオブジェクトを処理します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-mapitags.h
+mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
@@ -65,9 +65,9 @@ mapitags.h
 [PidTagMessageSize 標準プロパティ](pidtagmessagesize-canonical-property.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

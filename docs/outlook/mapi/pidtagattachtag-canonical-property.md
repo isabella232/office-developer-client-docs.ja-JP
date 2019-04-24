@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 3d223809-b697-47c6-bc3c-2206aff7ad33
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5a908b3543dff5cf011c9bd4d5d05b3a07004ead
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32361083"
 ---
 # <a name="pidtagattachtag-canonical-property"></a>PidTagAttachTag 標準プロパティ
 
@@ -25,42 +25,42 @@ ms.locfileid: "25400454"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-添付ファイルを提供するアプリケーションを指定する ASN.1 オブジェクト識別子が含まれています。 
+添付ファイルを提供したアプリケーションを指定する、ASN. 1 つのオブジェクト識別子を含みます。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_ATTACH_TAG  <br/> |
-|識別子:  <br/> |0x370A  <br/> |
+|識別子:  <br/> |0x370a  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティは、最初の添付ファイルを生成したアプリケーションを識別します。
+このプロパティは、添付ファイルを最初に生成したアプリケーションを識別します。
   
- **メモ****PR_ATTACH_ENCODING** ([PidTagAttachEncoding](pidtagattachencoding-canonical-property.md)) と**PR_ATTACH_TAG**のプロパティとは違います。 ペアにしたり、関連にはしないでください。 **PR_ATTACH_ENCODING**では、添付ファイル内のデータを変換するためのアルゴリズムを識別します。 「オブジェクト」より一般的な意味では、用語のオブジェクト識別子、および X.400 の使用法よりオブジェクト指向プログラミング。 
+ **メモ****PR_ATTACH_ENCODING** ([PidTagAttachEncoding](pidtagattachencoding-canonical-property.md)) および**PR_ATTACH_TAG**プロパティは、混同しないようにしてください。 ペアになっていないか、関連付けられていません。 **PR_ATTACH_ENCODING**添付ファイル内のデータの変換に使用するアルゴリズムを指定します。 "object" は、用語オブジェクトの識別子、およびオブジェクト指向プログラミングの場合よりも、X の使用法でより一般的な意味を持ちます。 
   
-オブジェクトの識別子の構文と例のオブジェクト識別子は、MAPIOID で定義されます。H ヘッダー ファイルです。 **PR_ATTACH_TAG**の値は、MAPIOID で定義されている制限付きではありません。H. 
+オブジェクト識別子の構文とサンプルオブジェクトの識別子は、MAPIOID で定義されています。H ヘッダーファイル。 **PR_ATTACH_TAG**の値は、MAPIOID で定義されている値に限定されません。H. 
   
-これらのオブジェクト識別子の詳細については、ASN.1、X.208、X.209 のマニュアルを参照してください。 ファイル転送の本文パーツ (FTBP) 環境の要素の参照がアプリケーションのオブジェクト識別子が検索されます。 
+これらのオブジェクト識別子の詳細については、209個のドキュメントを参照してください。 オブジェクト識別子は、ファイル転送本文パーツ (ftbp) 環境のアプリケーション参照要素にあります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルのオブジェクトを処理します。
+> メッセージと添付ファイルオブジェクトを処理します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
@@ -69,9 +69,9 @@ Mapitags.h
 [PidTagAttachMimeTag 標準プロパティ](pidtagattachmimetag-canonical-property.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

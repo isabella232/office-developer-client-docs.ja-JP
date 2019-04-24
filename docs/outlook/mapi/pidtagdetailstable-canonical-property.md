@@ -12,56 +12,56 @@ api_type:
 - HeaderDef
 ms.assetid: 7a0ccad3-f497-4871-b733-771e6cb8ef6a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 1602d1753d9f7f6e6f407a85dab0a33255db7aae
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 74eae4a4ed742c3bb90496f5975ad7dac6ff798f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360838"
 ---
 # <a name="pidtagdetailstable-canonical-property"></a>PidTagDetailsTable 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-埋め込み表示テーブル オブジェクトが含まれています。
+埋め込みの表示テーブルオブジェクトを格納します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_DETAILS_TABLE  <br/> |
 |識別子:  <br/> |0x3605  <br/> |
 |データの種類 :   <br/> |PT_OBJECT  <br/> |
-|領域:  <br/> |MAPI のコンテナー  <br/> |
+|エリア:  <br/> |MAPI コンテナー  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティをオブジェクトの[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドに渡すことは、表示された表の作成を可能にする[IMAPITable](imapitableiunknown.md)インターフェイスを返します。 MAPI では、このテーブルを使用して、 [IAddrBook::Details](iaddrbook-details.md)の呼び出しへの応答で、アドレス帳のオブジェクトのプロパティ シートを表示します。 
+このプロパティを、オブジェクトの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドに渡すと、表示テーブルを作成できる[IMAPITable](imapitableiunknown.md)インターフェイスが返されます。 MAPI では、このテーブルを使用して、 [IAddrBook::D etails](iaddrbook-details.md)呼び出しへの応答として、アドレス帳オブジェクトのプロパティシートを表示します。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[PidTagCreateTemplates 標準プロパティ Property](pidtagcreatetemplates-canonical-property.md)
+[PidTagCreateTemplates 標準プロパティ](pidtagcreatetemplates-canonical-property.md)
   
 [PidTagSearch 標準プロパティ](pidtagsearch-canonical-property.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

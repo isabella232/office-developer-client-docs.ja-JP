@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: 5f570d9b-eb3d-4fc7-bcbe-348a0b8fe9e9
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ccad74a9f2553bf29af124821c6d6a87dcde3303
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 987020bd6fd49fcba9453075cd502bd5cea4c3a3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32361153"
 ---
 # <a name="slpstrarray"></a>SLPSTRArray
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-PT_MV_STRING8 の種類のプロパティを説明するために使用する文字列値の配列が含まれています。
+PT_MV_STRING8 型のプロパティを記述するために使用される文字列値の配列を格納します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SLPSTRArray
@@ -42,17 +42,17 @@ typedef struct _SLPSTRArray
 
 ## <a name="members"></a>Members
 
- **あう**
+ **cvalues**
   
-> **LppszA**メンバーが指す配列内の値の数です。 
+> **lppszA**メンバーが指す配列内の値の数。 
     
  **lppszA**
   
-> 8 ビット文字の null 終了文字列の配列へのポインター。
+> null で終了した8ビット文字の文字列の配列へのポインター。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-PT_MV_STRING8 の詳細については、[プロパティの種類の一覧](property-types.md)を参照してください。
+PT_MV_STRING8 の詳細については、「[プロパティの種類の一覧](property-types.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

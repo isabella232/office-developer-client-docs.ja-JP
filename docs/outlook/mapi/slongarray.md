@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: 57435634-202d-4998-9931-4562f1a66f5f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a44974accea30b5d1406c9cc74570012f61639e5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9b1c5a09a60240efa9d4fa117f0d8fe8113169d5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32361167"
 ---
 # <a name="slongarray"></a>SLongArray
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-PT_MV_LONG の種類のプロパティを説明するために使用する long 型の値型の配列が含まれています。 
+PT_MV_LONG 型のプロパティを記述するために使用される LONG 値型の配列を格納します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SLongArray
@@ -42,17 +42,17 @@ typedef struct _SLongArray
 
 ## <a name="members"></a>Members
 
- **あう**
+ **cvalues**
   
-> **Lpl**メンバーが指す配列内の値の数です。 
+> **lpl**メンバによって示された配列内の値の数。 
     
  **lpl**
   
-> LONG 値の配列へのポインター。
+> 長整数型 (LONG) の値の配列へのポインター。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-PT_MV_LONG の詳細については、[プロパティの種類の一覧](property-types.md)を参照してください。
+PT_MV_LONG の詳細については、「[プロパティの種類の一覧](property-types.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

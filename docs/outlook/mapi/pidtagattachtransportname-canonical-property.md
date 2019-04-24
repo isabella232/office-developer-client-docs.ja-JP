@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 701fca52-0f96-4019-80cd-c0ccd059ff9b
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: bd3a22bf55d03f3a9f06bf5c19650407bcc5627d
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32361069"
 ---
 # <a name="pidtagattachtransportname-canonical-property"></a>PidTagAttachTransportName 標準プロパティ
 
@@ -25,46 +25,46 @@ ms.locfileid: "25400517"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-TNEF メッセージに関連付けられるように変更された添付ファイルの名前が含まれています。 
+TNEF メッセージに関連付けることができるように変更された添付ファイルの名前が含まれています。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_ATTACH_TRANSPORT_NAME、PR_ATTACH_TRANSPORT_NAME_A、PR_ATTACH_TRANSPORT_NAME_W  <br/> |
-|識別子:  <br/> |0x370C  <br/> |
+|識別子:  <br/> |0x370c  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-TNEF およびトランスポート プロバイダーは、これらのプロパティを使用します。 通常クライアント アプリケーションで使用します。 
+TNEF とトランスポートプロバイダーは、これらのプロパティを使用します。 通常、クライアントアプリケーションでは使用できません。 
   
-これらのプロパティは、基になるメッセージング システムでは、指定されたファイル名をサポートしていない場合、TNEF で通常使用されます。 などのユーザー設定を名前付きの 5 つのファイルなど、同じ名前の複数のファイルを添付するときに使用します。SYS です。 トランスポート プロバイダーは、一意であるかどうかを確認するのには名前を変更しなければなりません。 各変更後の名前は、その添付ファイルの**PR_ATTACH_TRANSPORT_NAME**および関連付けられたプロパティに表示されます。 
+これらのプロパティは、基になるメッセージングシステムが提供されたファイル名をサポートしていない場合に、TNEF でよく使用されます。 たとえば、ユーザーが同じ名前で複数のファイルを添付する場合に使用されます (CONFIG という名前のファイルが5つある場合など)。disk.sys. トランスポートプロバイダーが一意であることを確認するには、名前を変更する必要があります。 変更された各名前は、その添付ファイルの**PR_ATTACH_TRANSPORT_NAME**および関連するプロパティに表示されます。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルのオブジェクトを処理します。
+> メッセージと添付ファイルオブジェクトを処理します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -9,23 +9,23 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: cc4c373c-f073-e3c9-3aaa-a4abf050cd20
 description: テキスト フィールドの種類を示します。
-ms.openlocfilehash: d4b94b46e83935de14400468957adbdc8f6cb171
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c2f891620f704a3c48861124b886e49d356960ba
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360992"
 ---
-# <a name="objectkind-cell-text-fields-section"></a>[ObjectKind] セル ([テキスト フィールド] セクション)
+# <a name="objectkind-cell-text-fields-section"></a>[ObjectKind] セル ([Text Fields] セクション)
 
 テキスト フィールドの種類を示します。
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| 0  <br/> | 標準  <br/> |**visTFOKStandard** <br/> |
-| 1  <br/> |縦中横  <br/> |**visTFOKHorizontaInVertical** <br/> |
+| .0  <br/> | 標準  <br/> |**visTFOKStandard** <br/> |
+| 1-d  <br/> |縦中横  <br/> |**visTFOKHorizontaInVertical** <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 テキスト フィールドは、次のいずれかの種類に該当します。
   
@@ -37,14 +37,14 @@ ms.locfileid: "19805929"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | Fields.ObjectKind [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+| セル名 :  <br/> | Fields. objectkind [ *i* ] *i* = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [ObjectKind] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionTextField** <br/> |
-| 行インデックス:  <br/> |**visRowField** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+| 行インデックス:  <br/> |**visRowField** +  *i* = ** 0、1、2...  <br/> |
 | セル インデックス:  <br/> |**visFieldObjectKind** <br/> |
    
 

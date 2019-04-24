@@ -9,27 +9,27 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 4015506a-e24a-0276-c854-7791a7019067
 description: 特定のプリンター ページ番号に図面を印刷するかどうかを示します。
-ms.openlocfilehash: 5b695ccf6fa2364809e2f5124b9f55ea6aab50e0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 61d45a5bffdbb1afd5db9c608f80bc4f797f5191
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360985"
 ---
-# <a name="onpage-cell-print-properties-section"></a>[OnPage] セル ([印刷のプロパティ] セクション)
+# <a name="onpage-cell-print-properties-section"></a>[OnPage] セル ([Print Properties] セクション)
 
 特定のプリンター ページ番号に図面を印刷するかどうかを示します。 
   
 |**値**|**説明**|
 |:-----|:-----|
-|TRUE  <br/> |プリンター ページの数を定義する図面ページに合わせてください。  <br/> |
+|TRUE  <br/> |図面ページをプリンターページの定義済みの数に調整します。  <br/> |
 |FALSE  <br/> |プリンター ページを定義済みの図面ページ番号に合わせません。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 [OnPage] セルが TRUE に設定されている場合は、[PagesX] セルおよび [PagesY] セルを使用して、図面に合うプリンター ページ番号が特定されます。[ScaleX] セルおよび [ScaleY] セル内の値は無視されます。これは "自動サイズ" 設定と見なすことができます。
   
-この値**に合わせる**] オプション、[**ページ設定**] ダイアログ ボックスの [**印刷設定**] タブ上に対応 ([**デザイン**] タブで、矢印をクリック、 **[ページ設定**)。 
+この値は、[ **** **ページ設定**] ダイアログボックス ([**デザイン**] タブの [**ページ設定**] 矢印をクリック) の [プリンターの設定] タブの [**印刷の設定**] オプションに対応しています。 
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [OnPage] セルへの参照を取得するには、次の値を使用します。 
   

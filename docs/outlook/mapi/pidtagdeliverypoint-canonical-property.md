@@ -12,81 +12,81 @@ api_type:
 - HeaderDef
 ms.assetid: 715a9dbd-78f8-41e1-a76e-29448d06ec19
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2d8157c761cd21d5c8fcdf04948646d8102e774a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e18b08bcbd76cacf7dbb5b5fd36d80d5f266364d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360880"
 ---
 # <a name="pidtagdeliverypoint-canonical-property"></a>PidTagDeliveryPoint 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-使用して、メッセージまたは受信者に配信されるように機能エンティティの種類を指定します。 
+機能エンティティの性質を指定します。これにより、メッセージが受信者に配信されたかどうかを指定します。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_DELIVERY_POINT  <br/> |
-|識別子:  <br/> |0x0C07  <br/> |
+|識別子:  <br/> |0x0c07  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |MAPI 受信者  <br/> |
+|エリア:  <br/> |MAPI 受信者  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティは、次の値の 1 つだけ持つことができます。 
+このプロパティには、次のいずれかの値を指定できます。 
   
 MAPI_MH_DP_ML 
   
-> 配布リストに配信、配信は、先に配布することが多くの受信者にメッセージをポイントします。
+> 配布リストに配信されます。この配信ポイントによって、メッセージが多数の受信者に配布される場合があります。
     
 MAPI_MH_DP_MS 
   
-> 代わりに、受信者に直接のメッセージ ・ ストアに配信されます。
+> 受信者に直接配信される代わりに、メッセージストアに配信されます。
     
 MAPI_MH_DP_OTHER_AU 
   
-> FAX システムなどの物理的な配信アクセス ユニット (PDAU)、以外のアクセス単位 (AU) に配信されます。
+> FAX システムなどの物理的な配信アクセス装置 (pdau) 以外のアクセスユニット (au) に配信されます。
     
 MAPI_MH_DP_PDAU 
   
-> 人間の郵便キャリアなどの物理的な配信アクセス ユニットに配信されます。
+> ユーザーは、実際の郵便電話会社などの物理的な配信アクセス単位に配信されます。
     
 MAPI_MH_DP_PDS_PATRON 
   
-> 従来の郵便番号のメールボックスなどの物理的な配信システムの patron に配信されます。
+> 従来の郵便メールボックスのような、物理的な配信システムの場合に送信されます。
     
 MAPI_MH_DP_PRIVATE_UA 
   
-> 社内メッセージング システム内のクライアントなど、プライベートなユーザー エージェント (UA) に配信されます。
+> 社内メッセージングシステムのクライアントなど、プライベートユーザーエージェント (UA) に配信されます。
     
 MAPI_MH_DP_PUBLIC_UA 
   
-> パブリックのユーザー エージェント、またはサービス プロバイダーに提供します。
+> パブリックユーザーエージェントまたはパブリックサービスプロバイダに配信されます。
     
-既定値は、MAPI_MH_DP_PRIVATE_UA、つまり、MAPI クライアントです。 
+既定値は MAPI_MH_DP_PRIVATE_UA です。つまり、MAPI クライアントです。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

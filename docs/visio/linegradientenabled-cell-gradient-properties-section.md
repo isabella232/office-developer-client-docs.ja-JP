@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 276a661f-d14e-404a-a494-ae36601a8ce3
 description: 線または図形の境界線で線のグラデーションを有効にするかどうかを決定します。
-ms.openlocfilehash: d78a94a25c0290bd5e58522c9a45955868f31b32
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1d2b33275d26bb0c8e5550bcb7cf282c64d34544
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32361139"
 ---
 # <a name="linegradientenabled-cell-gradient-properties-section"></a>[LineGradientEnabled] セル ([グラデーションのプロパティ] セクション)
 
@@ -23,13 +23,13 @@ ms.locfileid: "19805693"
 |TRUE  <br/> |グラデーションは、図形の線または境界線に表示されます。  <br/> |
 |FALSE  <br/> |グラデーションは、図形の線または境界線に表示されません。  <br/> |
    
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 別の数式から、**Cell** エレメントの **N** 属性の値によって、または **CellsU** プロパティを使用したプログラムから、名前によって [**LineGradientEnabled**] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | LineGradientEnabled  <br/> |
+| セル名:  <br/> | [linegradientenabled]  <br/> |
    
 プログラムから、インデックスによって [**LineGradientEnabled**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

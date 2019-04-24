@@ -8,17 +8,17 @@ f1_keywords:
 - Vis_DSS.chm82253243
 localization_priority: Normal
 ms.assetid: 9b456a87-d990-7ab2-d8a1-e91dca78650f
-description: 既定では Microsoft Visio のシェイプ シート ウィンドウが表示されません。 シェイプ シートにアクセスするには、Visio を開発モード ([開発] タブを表示する) で実行する必要があります。
-ms.openlocfilehash: d8dc31272d98eae9c0ef1765954181bbce1634c3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '[シェイプシート] ウィンドウは、Microsoft Visio では既定では非表示になっています。 シェイプシートにアクセスするには、Visio を開発モードで実行する必要があります ([開発] タブを表示)。'
+ms.openlocfilehash: b18bca69f7acea29d3c43ff57b22b132baa9c6fe
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360950"
 ---
-# <a name="open-the-shapesheet-for-a-shape-page-or-document"></a>図形、ページ、ドキュメントのためのシェイプシートを開く
+# <a name="open-the-shapesheet-for-a-shape-page-or-document"></a>図形、ページ、またはドキュメントのシェイプシートを開く
 
-既定では Microsoft Visio のシェイプ シート ウィンドウが表示されません。 シェイプ シートにアクセスするには、Visio を開発モード ([開発] タブを表示する) で実行する必要があります。
+[シェイプシート] ウィンドウは、Microsoft Visio では既定では非表示になっています。 シェイプシートにアクセスするには、Visio を開発モードで実行する必要があります ([開発] タブを表示)。
   
 ### <a name="to-run-visio-in-developer-mode"></a>Visio を開発モードで実行する
 

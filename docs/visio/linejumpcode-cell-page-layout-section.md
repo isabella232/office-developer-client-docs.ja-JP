@@ -9,27 +9,27 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 56f9043d-a632-65df-c710-45867cce1627
 description: 飛び越し点を表示するコネクタを指定します。
-ms.openlocfilehash: abb7208c2cfbd6b1423e091efc1d526f8b10b57d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7b5b8c8f1de160a4dc766d30a5f518c5653c270b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32361118"
 ---
-# <a name="linejumpcode-cell-page-layout-section"></a>[LineJumpCode] セル ([ページ レイアウト] セクション)
+# <a name="linejumpcode-cell-page-layout-section"></a>[LineJumpCode] セル ([Page Layout] セクション)
 
 飛び越し点を表示するコネクタを指定します。
   
 |**値**|**飛び越し点を表示するコネクタ**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|0  <br/> |なし  <br/> |**visPLOJumpNone** <br/> |
-|1  <br/> |横の線  <br/> |**visPLOJumpHorizontal** <br/> |
-|2  <br/> |縦の線  <br/> |**visPLOJumpVertical** <br/> |
-|3  <br/> |最後の経路  <br/> |**visPLOJumpLastRouted** <br/> |
-|4  <br/> |最後に表示した線 ( *z*内の図形を上位の順)  <br/> |**visPLOJumpDisplayOrder** <br/> |
-|5  <br/> |最初の行が表示されます ( *z*の一番下にある図形の順序)  <br/> |**visPLOJumpReverseDisplayOrder** <br/> |
+|.0  <br/> |None  <br/> |**visPLOJumpNone** <br/> |
+|1-d  <br/> |横の線  <br/> |**visPLOJumpHorizontal** <br/> |
+|pbm-2  <br/> |縦の線  <br/> |**visPLOJumpVertical** <br/> |
+|1/3  <br/> |最後の経路  <br/> |**visPLOJumpLastRouted** <br/> |
+|2/4  <br/> |最後に表示された線 ( *z*オーダーの最上位の図形)  <br/> |**visPLOJumpDisplayOrder** <br/> |
+|5  <br/> |最初に表示された行 ( *z*オーダーの一番下にある図形)  <br/> |**visPLOJumpReverseDisplayOrder** <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 このセルの値は、[**ページ設定**] ダイアログ ボックスの [**レイアウトと経路**] タブで設定することもできます (このダイアログ ボックスを開くには、[**デザイン**] タブで [**ページ設定**] 矢印をクリックして、[**レイアウトと経路**] をクリックします)。
   
@@ -37,7 +37,7 @@ ms.locfileid: "19805698"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |LineJumpCode  <br/> |
+|セル名:  <br/> |[linejumpcode]  <br/> |
    
 プログラムから、インデックスによって [LineJumpCode] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

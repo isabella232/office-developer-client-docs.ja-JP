@@ -7,129 +7,129 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3362639a-8098-47ab-ba94-ee89e4920032
-description: Microsoft Outlook ・ ソーシャル コネクタ (OSC) プロバイダーの XML スキーマで友人の要素では、ソーシャル ネットワークでは、Outlook ユーザーに関連付けられている担当者の一覧についての情報を指定するのには、OSC プロバイダーを使用します。
-ms.openlocfilehash: 07f1bb77e7912e3973fd2af8a70275642b72039c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Microsoft Outlook Social Connector (.osc) プロバイダ XML スキーマのフレンド要素を使用すると、.osc プロバイダーは、ソーシャルネットワーク内の Outlook ユーザーに関連付けられた人物のリストに関する情報を指定できます。
+ms.openlocfilehash: df3bf03c5fd1dcdac3096411bc60bcb1eeec661e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32361160"
 ---
 # <a name="xml-for-friends"></a>友だち用 XML
 
-Microsoft Outlook ・ ソーシャル コネクタ (OSC) プロバイダーの XML スキーマで**友人**の要素では、ソーシャル ネットワークでは、Outlook ユーザーに関連付けられている担当者の一覧についての情報を指定するのには、OSC プロバイダーを使用します。 OSC プロバイダーは、キャッシュの同期をサポートする場合、ソーシャル ネットワーク上の Outlook ユーザーのフレンドのみがこの人の一覧に含まれます。 OSC では、オン ・ デマンドまたはハイブリッドの同期をサポートする場合このリストは Outlook ユーザーの非友人や友人の両方を含む可能性があります。 
+Microsoft Outlook Social Connector (.osc) プロバイダ XML スキーマの**フレンド**要素を使用すると、.osc プロバイダーは、ソーシャルネットワーク内の Outlook ユーザーに関連付けられた人物のリストに関する情報を指定できます。 .osc プロバイダーがキャッシュ同期をサポートしている場合、このユーザーの一覧には、ソーシャルネットワーク上の Outlook ユーザーのフレンドのみが含まれます。 .osc がオンデマンドまたはハイブリッド同期をサポートしている場合、このリストには、Outlook ユーザーの友人と友人以外の両方が含まれることがあります。 
 
-リストの各メンバーは、**人**名、姓、名、電子メール アドレスなどの詳細情報をサポートする XML スキーマで要素として表されます。 OSC プロバイダーでは、ソーシャル ネットワークからの友人の情報を同期するのには OSC、必要な方法に関係なく、**友人**や**人**の要素を使用します。 **人**の子要素は、ソーシャル ネットワークをサポートしていますがキャッシュされている場合は、ソーシャル ネットワークに特定の Outlook 連絡先フォルダー内のファイルを格納する友人を容易にする、Outlook の連絡先のプロパティ、またはハイブリッドのいくつかのようなことに注意してください。友人が Outlook の連絡先フォルダーに同期します。 
+リスト内の各ユーザーは、XML スキーマで**person**要素として表され、名、姓、電子メールアドレスなどの詳細をサポートします。 .osc プロバイダーは、ユーザーがソーシャルネットワークからフレンド情報を同期する方法にかかわらず、 **friends**要素と**person**要素を使用します。 **person**の子要素は、outlook 連絡先の一部のプロパティに似ているため、ソーシャルネットワークがキャッシュまたはハイブリッドをサポートしている場合は、ソーシャルネットワークに固有の outlook 連絡先フォルダーに友人を格納することが容易になります。Outlook の連絡先フォルダーへのフレンドの同期。 
 
-## <a name="example-scenarios"></a>シナリオの例
+## <a name="example-scenarios"></a>シナリオ例
 
-次の例のシナリオでは、機能拡張 API の呼び出し、OSC プロバイダーを実装し、OSC は友人の情報を取得するのには、OSC プロバイダーを表示します。 情報は、OSC プロバイダーの XML スキーマに準拠する XML 文字列で表されます。
+次の例は、.osc プロバイダーが実装し、.osc がフレンド情報を取得するための、.osc プロバイダーの機能拡張 API 呼び出しを示しています。 情報は、.osc プロバイダ xml スキーマに準拠する xml 文字列で表されます。
   
-友人 XML の例は、[友人の XML の例](friends-xml-example.md)を参照してください。 友人の情報を同期の詳細については、[同期の友人との活動](synchronizing-friends-and-activities.md)を参照してください。
+friends xml の例については、「 [friends xml の例](friends-xml-example.md)」を参照してください。 フレンドの同期の詳細については、「[友人とアクティビティを同期](synchronizing-friends-and-activities.md)する」を参照してください。
 
-### <a name="scenario-1-get-a-list-of-friends"></a>シナリオ 1: 友人の一覧を取得します。
+### <a name="scenario-1-get-a-list-of-friends"></a>シナリオ 1: 友人のリストを取得する
 
-シナリオ 1: OSC は、各友人の友人、および[ISocialPerson](isocialpersoniunknown.md)オブジェクトや画像の一覧を取得します。 
+シナリオ 1-.osc 友人のリストと、各フレンドの[isocialperson](isocialpersoniunknown.md)オブジェクトおよび画像を取得します。 
     
-1. OSC プロバイダーをサポートしているソーシャル ネットワーク サイトからのフレンドを表示させ、OSC フレンド情報をキャッシュすることを示します、OSC を**の子要素は、 **getFriends**と**cacheFriends**要素を使用して機能**要素です。 
+1. ソーシャルネットワークサイトからのフレンドの表示をサポートし、.osc がフレンド情報をキャッシュできるようにする .osc プロバイダーは、 **getfriends**要素と**cacheFriends**要素を使用して、.osc に対して、その子要素**であるを示します。capabilities**要素。 
     
-2. OSC プロバイダーでは、 [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md)、 [ISocialSession::GetPerson](isocialsession-getperson.md)、 [ISocialPerson::GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md)、および[ISocialPerson::GetPicture](isocialperson-getpicture.md)メソッドも実装します。 
+2. また、.osc プロバイダーは、 [iGetFriendsAndColleagues alprovider:: getcapabilities](isocialprovider-getcapabilities.md)、 [i alsession:: getcapabilities](isocialsession-getperson.md)、 [i alperson::](isocialperson-getfriendsandcolleagues.md)::: [getcapabilities](isocialperson-getpicture.md)メソッドを実装します。 
     
-3. OSC は、次の要素の値を確認するのには**ISocialProvider::GetCapabilities**を呼び出します: OSC プロバイダーはプロバイダーのことを確認するのには、ソーシャル ネットワーク、および**cacheFriends**からのフレンドを表示をサポートすることを確認するのには**getFriends**友人のキャッシュをサポートしています。 
+3. .osc は**icacheFriends alprovider:: getcapabilities**を呼び出して、次の要素の値を確認します。 **getcapabilities**は、.osc プロバイダーがソーシャルネットワークからの友人の表示をサポートしていることを確認し、 **** を実行してプロバイダーが機能していることを確認します。フレンドのキャッシュをサポートします。 
     
-4. OSC では、Outlook のユーザーの**ISocialPerson**オブジェクトを取得する**ISocialSession::GetPerson**を呼び出します。 
+4. .osc は、 **iな alsession:: getperson**を呼び出して、Outlook ユーザーの**isocialsession**オブジェクトを取得します。 
     
-5. Outlook のユーザーを取得する**ISocialPerson::GetFriendsAndColleagues**を呼び出して、OSC の_personCollection_パラメーターの文字列にフレンド リストが返されます。 _PersonCollection_文字列は、XML スキーマ内の**フレンド**要素の XML スキーマ定義に準拠します。 
+5. .osc は**iGetFriendsAndColleagues alperson::** を呼び出して、_個人コレクション_のパラメーター文字列で返された Outlook ユーザーのフレンドリストを取得します。 _個人コレクション_文字列は、xml スキーマの**friends**要素の xml スキーマ定義に準拠しています。 
     
-6. _PersonCollection_ XML 文字列内の各友人は、OSC は、その友人の**ISocialPerson**オブジェクトを取得する**ISocialSession::GetPerson**を呼び出すための**ユーザー Id**要素の値を取得します。 
+6. _個人コレクション_XML 文字列の各フレンドについて、.osc は、そのフレンドの**isocialsession**オブジェクトを取得するために、**次**のように、 **userID**要素の値を取得します。 
     
-7. OSC は**personCollection** XML 文字列内の各フレンドのフレンドの画像リソースを取得するのには[ISocialPerson::GetPicture](isocialperson-getpicture.md)を呼び出します。 
+7. **個人コレクション**XML 文字列内の各フレンドについて、.osc は i指定された[alperson:: getpicture](isocialperson-getpicture.md)を呼び出して、そのフレンドの画像リソースを取得します。 
     
-   OSC さらに加えることの活動と詳細情報 (電子メール アドレスなど) を取得する**ISocialPerson**オブジェクトでの呼び出しその友人。 
+   .osc は、その友人のアクティビティと詳細 (たとえば、電子メールアドレス) を取得するために、 **iコード alperson**オブジェクトに対してさらに呼び出しを行うことができます。 
     
-### <a name="scenario-2-synchronize-friends"></a>シナリオ 2: 同期の友人 
+### <a name="scenario-2-synchronize-friends"></a>シナリオ 2: 友人を同期する 
 
-シナリオ 2: OSC は、友人を動的に同期します。
+シナリオ 2: .osc は、友人を動的に同期します。
     
-1. OSC プロバイダー以外の友人や友人のオン ・ デマンドの同期をサポートすることを示します、OSC を**getFriends**と**dynamicContactsLookup**の要素を使用しています。 OSC プロバイダーも**実装しています。** 要素を設定します。 3 つすべての要素は、**機能**の子要素です。 
+1. 友人および友人以外のオンデマンド同期をサポートする .osc プロバイダーは、 **getfriends**要素と**dynamicContactsLookup**要素を使用して、.osc に対してを示します。 .osc プロバイダーは、 **hashfunction**要素も設定します。 3つすべての要素は、**機能**の子要素です。 
     
-2. OSC プロバイダーでは、 [ISocialSession2::GetPeopleDetails](isocialsession2-getpeopledetails.md)メソッドも実装します。 
+2. .osc プロバイダーは、 [ISocialSession2:: GetPeopleDetails](isocialsession2-getpeopledetails.md)メソッドも実装します。 
     
-3. OSC では、 **getFriends**友人や、オンデマンドの同期の友人と友人ではない、OSC プロバイダーがサポートしていることを確認するのには**dynamicContactsLookup**の値を確認するのには**ISocialProvider::GetCapabilities**を呼び出します。 OSC は、**実装しています。** OSC プロバイダーでサポートされているの値をメモにもなります。 
+3. .osc は**idynamicContactsLookup alprovider:: getcapabilities**を呼び出して、.osc プロバイダーが友人や友人以外のフレンドとオンデマンドの同期をサポートしていることを確認するために、 **getcapabilities**および**** の値をチェックします。 また、.osc は、.osc プロバイダーがサポートする**hashfunction**の値をメモします。 
     
-4. 、人物情報ウィンドウに表示される各ユーザーの、OSC はユーザーの電子メール アドレスを収集し、それを**実装しています。** で指定されたハッシュ関数を使用して暗号化します。 これは、 **hashedAddresses**要素の XML スキーマ定義に準拠する XML 文字列を形成します。 
+4. [人] ウィンドウに表示される各ユーザーについて、.osc は、ユーザーの電子メールアドレスを収集し、 **hashfunction**で指定されたハッシュ関数を使用してそれを暗号化します。 これにより、 **hashedAddresses**要素の xml スキーマ定義に準拠した xml 文字列が形成されます。 
     
-5. OSC では、 **ISocialSession2::GetPeopleDetails**、 _personAddresses_のパラメーターとして、ハッシュ化されたアドレスの場合は、この XML 文字列を提供する_personsCollection_パラメーターでは、担当者の更新の詳細情報を動的に取得するを呼び出します。 _PersonsCollection_パラメーターの文字列は、XML スキーマ内の**フレンド**要素の XML スキーマ定義に準拠します。 
+5. .osc は**ISocialSession2:: GetPeopleDetails**を呼び出して、この XML 文字列を_個人住所_パラメーターとして提供します。これを使用すると、個人の更新された詳細を個人の_コレクション_パラメーターで動的に取得できます。 _個人コレクション_パラメータ文字列は、xml スキーマの**friends**要素の xml スキーマ定義に準拠しています。 
 
 ## <a name="parent-and-child-elements"></a>親要素と子要素
 
-**友人**スキーマの 2 つの最上位レベル要素を次に示します。 
+次に、**フレンド**スキーマの2つのトップレベル要素を示します。 
   
 |**要素**|**説明**|
 |:-----|:-----|
-|**友人** <br/> |**人**の要素の一覧のルート要素を表します。 **ISocialPerson::GetFriendsAndColleagues**、 [ISocialSession::FindPerson](isocialsession-findperson.md)、および**ISocialSession2::GetPeopleDetails**は、**友人**の要素のスキーマ定義に準拠する XML 文字列を返します。  <br/> |
-|**人物** <br/> |**人**の要素の一覧で 1 人のユーザーを表します。 [ISocialPerson::GetDetails](isocialperson-getdetails.md)メソッドでは、**人**の要素のスキーマ定義に準拠する XML 文字列を返します。  <br/> |
+|**待ち** <br/> |**person**要素のリストのルート要素を表します。 **iGetFriendsAndColleagues**、 [i alsession:: findperson](isocialsession-findperson.md)、および**ISocialSession2:: GetPeopleDetails**は、**フレンド**要素のスキーマ定義に準拠した XML 文字列を返します。  <br/> |
+|**人物** <br/> |**person**要素のリスト内の1人のユーザーを表します。 [i指定 alperson:: getdetails](isocialperson-getdetails.md)メソッドは、 **person**要素のスキーマ定義に準拠した XML 文字列を返します。  <br/> |
    
-OSC プロバイダーの XML スキーマ内の**ユーザー**要素の子要素を次の表に示します。 
+次の表では、.osc プロバイダ XML スキーマの**person**要素の各子要素について説明します。 
   
-のどの要素には、必須またはオプションを含む、OSC プロバイダーの XML スキーマの完全な定義は、 [Outlook ソーシャル コネクタ プロバイダーの XML スキーマ](outlook-social-connector-provider-xml-schema.md)を参照してください。
+必要な要素やオプションの要素を含む、.osc プロバイダ XML スキーマの完全な定義については、「 [Outlook Social Connector プロバイダーの xml スキーマ](outlook-social-connector-provider-xml-schema.md)」を参照してください。
   
 |**要素**|**説明**|
 |:-----|:-----|
-|**アドレス** <br/> |人の物理的な住所。  <br/> |
-|**記念日** <br/> |イベント、個人の記念日。  <br/> |
-|**askmeabout** <br/> |利息またはユーザーの専門知識のトピックを示します。  <br/> |
-|**birthday** <br/> |担当者の生年月日の日付です。  <br/> |
-|**businessAddress** <br/> |人の職場の物理的な住所。  <br/> |
-|**businessCity** <br/> |人の職場の市町村。  <br/> |
-|**businessCountryOrRegion** <br/> |国または地域のワークプ レースです。  <br/> |
-|**businessState** <br/> |人の職場の都道府県です。  <br/> |
-|**businessZip** <br/> |郵便番号の人の職場です。  <br/> |
-|**セル** <br/> |担当者の携帯電話番号です。  <br/> |
-|**市区町村** <br/> |個人の住所の市町村。  <br/> |
-|**会社** <br/> |ユーザーに関連付けられている会社の名前です。  <br/> |
-|**countryOrRegion** <br/> |国または地域の人の住所です。  <br/> |
-|**creationTime** <br/> |ソーシャル ネットワーク上のユーザーのプロファイルの作成時刻です。  <br/> |
-|**emailAddress** <br/> |ユーザーのプライマリ電子メール アドレスです。  <br/> |
-|**emailAddress2** <br/> |ユーザーのセカンダリ電子メール アドレスです。  <br/> |
-|**emailAddress3** <br/> |人の 3 番目の電子メール アドレスです。  <br/> |
-|**expirationTime** <br/> |ソーシャル ネットワークのユーザーのプロファイル データの有効期限時間。  <br/> |
-|**表題** <br/> |人は、Outlook で連絡先ファイルを連絡先として登録する文字列です。  <br/> |
-|**firstName** <br/> |名またはユーザーの名前を指定します。  <br/> |
-|**friendStatus** <br/> |ソーシャル ネットワークにログオンしたユーザーがこのユーザーのフレンドの状態です。 次の値のいずれかである必要があります:**友人**、 **nonfriend**、**保留中**、 **pendingin**、 **pendingout**。  <br/> |
-|**fullName** <br/> |ユーザーの完全名。  <br/> |
-|**性別** <br/> |人の性別です。 次の値のいずれかである必要があります: **(オス)**、 **(メス)**、**指定されていません**。  <br/> |
-|**homePhone** <br/> |ユーザーの自宅電話番号です。  <br/> |
-|**index** <br/> |_PersonsAddresses_文字列パラメーターでのユーザーのハッシュ化されたアドレスの場所は、 **ISocialSession2::GetPeopleDetails**メソッドの呼び出しに渡されます。 人の**人**XML の**GetPeopleDetails**によって返される_personsCollection_の文字列を示します。  <br/> |
-|**業界** <br/> |人が行っている業界です。  <br/> |
-|**interests** <br/> |興味や趣味の人です。  <br/> |
-|**lastModificationTime** <br/> |ソーシャル ネットワークのユーザーのプロファイルが最後に変更された時刻です。  <br/> |
-|**lastName** <br/> |最後の名前またはユーザーの姓です。  <br/> |
-|**location** <br/> |人の場所です。  <br/> |
-|**ニックネーム** <br/> |短い名前、またはユーザーの名前が作成されました。  <br/> |
-|**otherAddress** <br/> |人の代替住所です。  <br/> |
-|**otherCity** <br/> |人の代替住所の市町村。  <br/> |
-|**otherCountryOrRegion** <br/> |国または地域の代替住所です。  <br/> |
-|**otherState** <br/> |人の代替住所の都道府県です。  <br/> |
-|**otherZip** <br/> |Zip または人の代替住所の郵便番号です。  <br/> |
-|**電話** <br/> |担当者の主な連絡先の電話番号です。  <br/> |
-|**pictureUrl** <br/> |人のプロフィールの画像の URL です。  <br/> |
-|**リレーションシップ** <br/> |ログオン中のユーザーにこの人の関係です。  <br/> |
-|**学校** <br/> |人またはにする学校です。  <br/> |
-|**skills** <br/> |人の個人のスキルです。  <br/> |
-|**state** <br/> |人の住所の都道府県です。  <br/> |
-|**title** <br/> |ユーザーの名前を追加指定します。  <br/> |
-|**ユーザー Id** <br/> |ソーシャル ネットワーク上のユーザーを識別する ID です。  <br/> |
-|**webProfilePage** <br/> |ユーザーのプロファイルを含む web ページのアドレスです。  <br/> |
-|**web サイト** <br/> |個人の web サイトです。  <br/> |
-|**workPhone** <br/> |人の会社の電話番号です。  <br/> |
-|**zip** <br/> |Zip コードまたはユーザーの住所の郵便番号です。  <br/> |
+|**address** <br/> |個人の住所 (物理的な番地)。  <br/> |
+|**記念** <br/> |その人物に対するイベントの記念日。  <br/> |
+|**: askmeabout** <br/> |ユーザーの関心事項または専門知識。  <br/> |
+|**birthday** <br/> |その人物の出生日。  <br/> |
+|**businessAddress** <br/> |個人の職場の住所 (物理的な番地)。  <br/> |
+|**businesscity** <br/> |ユーザーの職場の市区町村。  <br/> |
+|**businessCountryOrRegion** <br/> |個人の職場の国または地域。  <br/> |
+|**businessstate** <br/> |個人の職場の都道府県。  <br/> |
+|**businesszip** <br/> |個人の職場の郵便番号。  <br/> |
+|**セル** <br/> |個人の携帯電話番号。  <br/> |
+|**市街** <br/> |個人の住所の市町村。  <br/> |
+|**company** <br/> |個人に関連付けられている会社の名前。  <br/> |
+|**countryOrRegion** <br/> |ユーザーの物理的な住所の国または地域。  <br/> |
+|**creationTime** <br/> |ソーシャルネットワーク上の個人のプロファイルの作成日時。  <br/> |
+|**emailAddress** <br/> |ユーザーのプライマリ電子メールアドレス。  <br/> |
+|**emailAddress2** <br/> |個人の第2メールアドレス。  <br/> |
+|**emailAddress3** <br/> |個人の第3の電子メールアドレス。  <br/> |
+|**expirationTime** <br/> |ソーシャルネットワーク上のユーザーのプロファイルデータの有効期限が切れる時刻。  <br/> |
+|**fileAs** <br/> |ユーザーが Outlook の連絡先ファイルの連絡先としてファイリングされる文字列。  <br/> |
+|**firstName** <br/> |個人の名前または指定された名前。  <br/> |
+|**friendStatus** <br/> |ソーシャルネットワークにログオンしているユーザーを持つこの人物のフレンド状態。 **friend**、 **nonfriend**、 **pending**、 **pendingin**、 **pendingin**のいずれかの値であることが必要です。  <br/> |
+|**fullName** <br/> |個人の氏名。  <br/> |
+|**女性** <br/> |人物の性別。 次のいずれかの値である必要があります。**男性**、**女性**、**未指定**。  <br/> |
+|**homePhone** <br/> |個人の自宅の電話番号。  <br/> |
+|**index** <br/> |**ISocialSession2:: GetPeopleDetails**メソッドの呼び出しに渡される個人のハッシュ化されたアドレスの場所を個人の_アドレス_文字列パラメーターで指定します。 また、 **GetPeopleDetails**によって**** 返される個人の_コレクション_文字列の個人 XML を示します。  <br/> |
+|**あらゆる** <br/> |その人物が従事している業界。  <br/> |
+|**interests** <br/> |個人の趣味または趣味。  <br/> |
+|**lastModificationTime** <br/> |ユーザーのプロファイルがソーシャルネットワーク上で最後に変更された時刻。  <br/> |
+|**lastName** <br/> |ユーザーの姓または姓。  <br/> |
+|**location** <br/> |ユーザーの場所。  <br/> |
+|**ニックネーム** <br/> |個人の短い名前または発明された名前。  <br/> |
+|**otherAddress** <br/> |個人の代替住所。  <br/> |
+|**othercity** <br/> |個人の代替住所の市区町村。  <br/> |
+|**otherCountryOrRegion** <br/> |個人の代替住所の国または地域。  <br/> |
+|**otherstate** <br/> |個人の代替住所の都道府県。  <br/> |
+|**otherzip** <br/> |個人の代替住所の郵便番号。  <br/> |
+|**代わり** <br/> |個人の主要な連絡先の電話番号。  <br/> |
+|**pictureUrl** <br/> |個人のプロフィール画像の URL。  <br/> |
+|**対** <br/> |この人物とログオンしているユーザーとの関係。  <br/> |
+|**学校** <br/> |その人物が参加または移行した教育機関。  <br/> |
+|**skills** <br/> |個人の個人スキル。  <br/> |
+|**state** <br/> |個人の現物住所の都道府県。  <br/> |
+|**title** <br/> |ユーザーの名前に追加された指定。  <br/> |
+|**userID** <br/> |ソーシャルネットワーク上の人物を識別する ID。  <br/> |
+|**webprofilepage** <br/> |個人のプロファイルを含む web ページアドレス。  <br/> |
+|<b0><a1/&gt;</b0> <br/> |個人の web サイト。  <br/> |
+|**workPhone** <br/> |個人の会社の電話番号。  <br/> |
+|**国内** <br/> |個人の住所の郵便番号です。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
-- [友人の XML の例](friends-xml-example.md)  
-- [友人や活動を同期します。](synchronizing-friends-and-activities.md)  
-- [機能のための XML](xml-for-capabilities.md) 
-- [活動の XML](xml-for-activities.md)
-- [OSC の XML スキーマを使用してプロバイダーの開発](developing-a-provider-with-the-osc-xml-schema.md)
+- [Friends XML の例](friends-xml-example.md)  
+- [フレンドとアクティビティの同期](synchronizing-friends-and-activities.md)  
+- [機能の XML](xml-for-capabilities.md) 
+- [アクティビティの XML](xml-for-activities.md)
+- [.osc XML スキーマを使用してプロバイダーを開発する](developing-a-provider-with-the-osc-xml-schema.md)
 

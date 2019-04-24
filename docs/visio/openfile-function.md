@@ -8,29 +8,29 @@ f1_keywords:
 - Vis_DSS.chm82251471
 localization_priority: Normal
 ms.assetid: ff59ab04-a589-cf9e-db3b-20658a7dffdc
-description: ドキュメント ウィンドウがアクティブになりますが既に開いていない場合は、Microsoft Visio の図面を開きます。
-ms.openlocfilehash: 7d4778fc4641465e88303b8515365172fd8be0ff
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Microsoft Visio 図面を開いていない場合は開き、ドキュメントウィンドウをアクティブにします。
+ms.openlocfilehash: 5a89a658e560d144007ec19796de82b9949bea82
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360957"
 ---
 # <a name="openfile-function"></a>OPENFILE 関数
 
-ドキュメント ウィンドウがアクティブになりますが既に開いていない場合は、Microsoft Visio の図面を開きます。
+Microsoft Visio 図面を開いていない場合は開き、ドキュメントウィンドウをアクティブにします。
   
 ## <a name="syntax"></a>構文
 
- **OPENFILE**(_ファイル名_)
+ **OPENFILE**( _"filename"_)
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| filename <br/> |必須  <br/> |**文字列型 (String)** <br/> |開くには必要なファイルのパスを含むファイルの名前です。  <br/> |
+| _filename_ <br/> |必須  <br/> |**String** <br/> |開くファイルの名前 (ファイルパスを含む) を指定します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 複数の OPENFILE 関数を呼び出すと待ち行列に入り、評価する順序に従って実行されます。視覚的な編集ができるように、現在の Visio 図面をアクティブにすると (埋め込み先編集モード)、新しい Visio インスタンスが要求されたファイル名で起動されます。 
   
@@ -42,6 +42,6 @@ ms.locfileid: "19805942"
 
  `OPENFILE("C:/MyFile.vsdx")`
   
-新しいウィンドウで、指定されたファイル"MyFile.vsdx"を開くか、ファイルが既に開いている場合にウィンドウを表示します。 
+指定したファイル "myfile.txt" を新しいウィンドウで開きます。または、ファイルが既に開いている場合は、ウィンドウをアクティブにします。 
   
 

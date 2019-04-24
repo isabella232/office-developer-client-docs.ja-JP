@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 04d444a5-e97f-48e6-89a5-8a6cb2136408
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 75d390edd06aaf826f6b8c2d996e4e08bf6a7334
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360852"
 ---
 # <a name="pidtagdepth-canonical-property"></a>PidTagDepth 標準プロパティ
 
@@ -25,44 +25,44 @@ ms.locfileid: "25384214"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-インデント、または階層テーブル内のオブジェクトのレベルの相対レベルを表す整数値が含まれています。
+階層テーブル内のオブジェクトのインデントまたは深さの相対レベルを表す整数を含みます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_DEPTH  <br/> |
 |識別子:  <br/> |0x3005  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |一般的な MAPI  <br/> |
+|エリア:  <br/> |MAPI 共通  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティでは、内容のテーブル、または階層テーブル内の階層の深さにも行の分類のレベルを指定できます。 深さは、します 0 が一番左のカテゴリを表す、0 から始まる。 すべての場合は、プロパティの値は、絶対値ではなく、相対値を表します。 階層テーブルの深さの値は階層テーブルの取得元となるコンテナーを基準としました。 ルート コンテナーの場合は、深さが絶対の深さを表していません。 
+このプロパティを使用して、コンテンツテーブルの行の分類レベル、または階層テーブル内の階層の深さを指定することもできます。 深さは0から始まり、0は左端のカテゴリを表します。 すべての場合において、プロパティ値は絶対値ではなく相対値を表します。 たとえば、階層テーブルでは、depth の値は、階層テーブルを取得したコンテナーを基準としています。 深さは、ルートコンテナーからの絶対深さを表すものではありません。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXCTABL]](https://msdn.microsoft.com/library/d33612dc-36a8-4623-8a26-c156cf8aae4b%28Office.15%29.aspx)
+[[OXCTABL]](https://msdn.microsoft.com/library/d33612dc-36a8-4623-8a26-c156cf8aae4b%28Office.15%29.aspx)
   
-> テーブルのコア オブジェクトに許容される操作が含まれます。
+> コアテーブルオブジェクトの許容可能な操作が含まれています。
     
-[[MS OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
-> プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。
+> ユーザー、連絡先、グループ、およびリソースのリストのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
@@ -73,9 +73,9 @@ Mapitags.h
 [PidTagSelectable 標準プロパティ](pidtagselectable-canonical-property.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   
