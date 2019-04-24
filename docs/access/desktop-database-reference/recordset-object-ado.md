@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 636681cf8e0c20f078387b21974141a9cb66cfcd
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28719996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300477"
 ---
 # <a name="recordset-object-ado"></a>Recordset オブジェクト (ADO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 基になるテーブルのレコードセット全体、またはコマンドの実行によって返された結果を表します。 **Recordset** オブジェクトでは、常にレコードセット内の 1 つのレコードのみをカレント レコードとして参照します。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 プロバイダーのデータを操作するには、 **Recordset** オブジェクトを使用します。ADO を使用する場合は、 **Recordset** オブジェクトを使用してほぼすべてのデータを操作します。すべての **Recordset** オブジェクトは、レコード (行) とフィールド (列) から構成されています。プロバイダーがサポートする機能によっては、一部の **Recordset** のメソッドまたはプロパティを使用できない場合があります。
 
@@ -36,7 +36,7 @@ ADO では、次の 4 種類のカーソルが定義されています。
 
   - **前方スクロール カーソル**: **Recordset** 内で前方向のスクロールのみ許可します。他のユーザーによる追加、変更、または削除は表示されません。 **Recordset** のスクロールが 1 回だけで十分な場合は、これによってパフォーマンスを向上できます。
 
-カーソルの種類を選択する**レコード セット**を開く前に[CursorType](cursortype-property-ado.md)プロパティを設定するか、 [Open](open-method-ado-recordset.md)メソッドを使用して*CursorType*引数を渡します。 プロバイダーによっては、カーソルのすべての種類をサポートしていないものもあります。 プロバイダーのマニュアルを確認してください。 カーソルの種類を指定しない場合、ADO では既定で前方スクロール カーソルが開かれます。
+**Recordset** を開く前に [CursorType](cursortype-property-ado.md) プロパティを設定してカーソルの種類を選択するか、[Open](open-method-ado-recordset.md) メソッドを使用して引数 *CursorType* を渡します。プロバイダーによっては、カーソルのすべての種類をサポートしていないものもあります。プロバイダーのマニュアルを確認してください。カーソルの種類を指定しない場合、ADO では既定で前方スクロール カーソルが開かれます。
 
 [CursorLocation](cursorlocation-property-ado.md) プロパティを **adUseClient** に設定して **Recordset** を開く場合、 **Field** オブジェクトの [UnderlyingValue](field-object-ado.md) プロパティは、返された **Recordset** オブジェクトでは使用できません。一部のプロバイダーと共に使用すると (たとえば、Microsoft ODBC Provider for OLE DB を Microsoft SQL Server と組み合わせて)、 **Open** メソッドで接続文字列を渡すことによって、 [Recordset](connection-object-ado.md) オブジェクトを前に定義した **Connection** オブジェクトと無関係に作成できます。ADO は、この場合も [Connection](connection-object-ado.md) オブジェクトを作成しますが、このオブジェクトをオブジェクト変数に割り当てることはありません。ただし、同じ接続上で複数の **Recordset** オブジェクトを開く場合、明示的に **Connection** オブジェクトを作成して開く必要があります。こうすることで、 **Connection** オブジェクトがオブジェクト変数に割り当てられます。 **Recordset** オブジェクトを開くときにこのオブジェクト変数を使用しなかった場合、同じ接続文字列を渡しても、ADO によって新しい各 **Recordset** に新しい **Connection** オブジェクトが作成されます。
 

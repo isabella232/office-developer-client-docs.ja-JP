@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e7825d55c6f0c2f900f61a325265dce048f965e5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308282"
 ---
 # <a name="xml-persistence-format"></a>XML 永続化形式
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ## <a name="xml-persistence-format"></a>XML の保存形式
 
@@ -66,7 +66,7 @@ xmlns:z="#RowsetSchema">
 
 スキーマ定義は XML-Data の仕様に準拠し、すべて検証できます (ただし、検証は Internet Explorer 5 では行われません)。この仕様については、[W3C XML-Data ノート (英語)](https://www.w3.org/TR/1998/NOTE-XML-data-0105/)で確認できます。XML-Data は、現在、 **Recordset** の保存をサポートしている唯一のスキーマ形式です。
 
-データ セクションには、荷主 (Shipper) に関する情報を含む 3 つの行があります。 空の行セットのデータ セクションは空である可能性がありますが、`<rs:data>`タグが存在する必要があります。 データがない可能性がありますを記述するタグの簡単なだけで`<rs:data>`です。 プレフィックスが "rs" のタグは、urn:schemas-microsoft-com:rowset によって定義された名前空間にあることを示します。 このスキーマの完全な定義については、このドキュメントの付録を参照してください。
+データ セクションには、荷主 (Shipper) に関する情報を含む 3 つの行があります。 空の行セットの場合、データセクションは空の場合が`<rs:data>`ありますが、タグが存在する必要があります。 データがない場合は、タグの省略形を単純`<rs:data>`に記述することができます。 プレフィックスが "rs" のタグは、urn:schemas-microsoft-com:rowset によって定義された名前空間にあることを示します。 このスキーマの完全な定義については、このドキュメントの付録を参照してください。
 
 ## <a name="xml-persistence-format"></a>XML の保存形式
 
@@ -116,5 +116,5 @@ xmlns:z="#RowsetSchema">
 
 スキーマ定義は XML-Data の仕様に準拠し、すべて検証できます (ただし、検証は Internet Explorer 5 では行われません)。この仕様については、[W3C XML-Data ノート (英語)](https://www.w3.org/TR/1998/NOTE-XML-data-0105/)で確認できます。XML-Data は、現在、 **Recordset** の保存をサポートしている唯一のスキーマ形式です。
 
-データ セクションには、荷主 (Shipper) に関する情報を含む 3 つの行があります。 空の行セットのデータ セクションは空である可能性がありますが、`<rs:data>`タグが存在する必要があります。 データがない可能性がありますを記述するタグの簡単なだけで`<rs:data>`です。 プレフィックスが "rs" のタグは、urn:schemas-microsoft-com:rowset によって定義された名前空間にあることを示します。 このスキーマの完全な定義については、このドキュメントの付録を参照してください。
+データ セクションには、荷主 (Shipper) に関する情報を含む 3 つの行があります。 空の行セットの場合、データセクションは空の場合が`<rs:data>`ありますが、タグが存在する必要があります。 データがない場合は、タグの省略形を単純`<rs:data>`に記述することができます。 プレフィックスが "rs" のタグは、urn:schemas-microsoft-com:rowset によって定義された名前空間にあることを示します。 このスキーマの完全な定義については、このドキュメントの付録を参照してください。
 

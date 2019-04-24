@@ -1,5 +1,5 @@
 ---
-title: 可能列挙 (DAO)
+title: recordstatusenum 列挙 (DAO)
 TOCTitle: RecordStatusEnum Enumeration
 ms:assetid: bf4492f2-8d8f-f10f-7a3c-d6296d2ce96b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822784(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: eb7bffaf91db9e1170702d2e36393da669dbe0c6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309235"
 ---
-# <a name="recordstatusenum-enumeration-dao"></a>可能列挙 (DAO)
+# <a name="recordstatusenum-enumeration-dao"></a>recordstatusenum 列挙 (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **RecordStatus** プロパティで、一括更新の場合の現在のレコードの更新状態を示すために使用します。
 
@@ -36,28 +36,28 @@ ms.locfileid: "28710504"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>dbRecordDBDeleted</p></td>
-<td><p>4</p></td>
+<td><p>dbrecorddbdeleted</p></td>
+<td><p>2/4</p></td>
 <td><p>レコードはローカルで削除され、データベース内でも削除されました。</p></td>
 </tr>
 <tr class="even">
-<td><p>dbRecordDeleted</p></td>
-<td><p>3</p></td>
+<td><p>dbrecorddeleted</p></td>
+<td><p>1/3</p></td>
 <td><p>レコードは削除されましたが、データベース内ではまだ削除されていません。</p></td>
 </tr>
 <tr class="odd">
 <td><p>dbRecordModified</p></td>
-<td><p>1</p></td>
+<td><p>1-d</p></td>
 <td><p>レコードは変更されましたが、データベース内では更新されていません。</p></td>
 </tr>
 <tr class="even">
-<td><p>dbRecordNew</p></td>
-<td><p>2</p></td>
+<td><p>dbrecordnew</p></td>
+<td><p>pbm-2</p></td>
 <td><p>レコードは <strong>AddNew</strong> メソッドによって挿入されましたが、データベースにはまだ挿入されていません。</p></td>
 </tr>
 <tr class="odd">
 <td><p>dbRecordUnmodified</p></td>
-<td><p>0</p></td>
+<td><p>.0</p></td>
 <td><p>(既定値) レコードはまだ変更されていないか、正しく更新されました。</p></td>
 </tr>
 </tbody>

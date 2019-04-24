@@ -1,5 +1,5 @@
 ---
-title: Workspaces.Delete メソッド (DAO)
+title: Workspaces メソッド (DAO)
 TOCTitle: Delete Method
 ms:assetid: 0774a791-63da-a31a-552a-c5aa4d1f1b50
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844977(v=office.15)
@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 68a4583fd96682622476f523e6e5d6129b3be575
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308310"
 ---
-# <a name="workspacesdelete-method-dao"></a>Workspaces.Delete メソッド (DAO)
+# <a name="workspacesdelete-method-dao"></a>Workspaces メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 指定された **Workspace** を **Workspaces** コレクションから削除します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。(***名前***) を削除します。
+*式*。削除 (***名前***)
 
-*式***ワークスペース**オブジェクトを表す変数です。
+*式***workspace**オブジェクトを表す変数を取得します。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -45,7 +45,7 @@ ms.locfileid: "28701383"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Name</em></p></td>
+<td><p><em>名前</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>削除するワークスペースの名前。</p></td>

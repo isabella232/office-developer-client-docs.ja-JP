@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: cf6fe02616134f864a0e07092951ab9cf49aadbc
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308933"
 ---
 # <a name="saveobject-macro-action"></a>SaveObject マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**SaveObject**アクションを使用するには指定されていない場合、指定された Access オブジェクトまたはアクティブなオブジェクトのいずれかを保存します。 場合によっては (**クイック アクセス ツールバー**の [名前を**付けて**保存] と同じ機能です) に新しい名前を持つアクティブなオブジェクトを保存することもできます。
+You can use the **SaveObject** action to save either a specified Access object or the active object if none is specified. You can also save the active object with a new name in some cases (this functions the same as the **Save As** command on the **Quick Access Toolbar**).
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
+> このアクションは、データベースが信頼されていない場合には許可されません。 
 
 ## <a name="setting"></a>設定値
 
-**SaveObject**アクションには、次の引数があります。
+"SaveObject/オブジェクトの保存" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -45,7 +45,7 @@ ms.locfileid: "28701873"
 <tbody>
 <tr class="odd">
 <td><p><strong>Object Type/オブジェクトの種類</strong></p></td>
-<td><p>保存するオブジェクトの型。 [マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>オブジェクトの種類</strong>] ボックスの一覧で [ <strong>テーブル</strong>]、[ <strong>クエリ</strong>]、[ <strong>フォーム</strong>]、[ <strong>レポート</strong>]、[ <strong>マクロ</strong>]、[ <strong>モジュール</strong>]、[ <strong>データ アクセス ページ</strong>]、[ <strong>サーバー ビュー</strong>]、[ <strong>ダイアグラム</strong>]、[ <strong>ストアド プロシージャ</strong>]、[ <strong>関数</strong>] のいずれかをクリックします。 アクティブなオブジェクトを選択するには、場合は、この引数を空白のままにします。 この引数でオブジェクト タイプを選択する場合、<strong>オブジェクト名</strong>の引数で既存のオブジェクトの名前を選択します。</p></td>
+<td><p>The type of object you want to save. Click <strong>Table</strong>, <strong>Query</strong>, <strong>Form</strong>, <strong>Report</strong>, <strong>Macro</strong>, <strong>Module</strong>, <strong>Data Access Page</strong>, <strong>Server View</strong>, <strong>Diagram</strong>, <strong>Stored Procedure</strong>, or <strong>Function</strong> in the <strong>Object Type</strong> box in the <strong>Action Arguments</strong> section of the Macro Builder pane. To select the active object, leave this argument blank. If you select an object type in this argument, you must select an existing object's name in the <strong>Object Name</strong> argument.  </p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Object Name/オブジェクト名</strong></p></td>
@@ -55,26 +55,26 @@ ms.locfileid: "28701873"
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**SaveObject**アクションは、保存したりするユーザーが明示的に開くことができるすべてのデータベース オブジェクトに対して動作します。 指定されたオブジェクトは、オブジェクトには影響を**SaveObject**アクションを開く必要があります。 このアクションは、オブジェクトを選択して、**クイック アクセス ツールバー**の**保存**をクリックして保存すると同じ効果を持ちます。 
+The **SaveObject** action works on all database objects that the user can explicitly open and save. The specified object must be open for the **SaveObject** action to have any effect on the object. This action has the same effect as selecting an object and then saving it by clicking **Save** on the **Quick Access Toolbar**. 
 
-**オブジェクトの型**引数を指定しないと、[**オブジェクト名**] 引数に新しい名前を入力、**名前を付けて**[**クイック アクセス ツールバー**] をクリックし、アクティブなオブジェクトの新しい名前を入力すると同じ効果を持ちます。 **SaveObject**アクションを使用して保存し、マクロの**名前を付けて保存**コマンドを実行するオブジェクトを指定できます。
+Leaving the **Object Type** argument blank and entering a new name in the **Object Name** argument has the same effect as clicking **Save As** on the **Quick Access Toolbar**, and entering a new name for the active object. Using the **SaveObject** action enables you to specify an object to save and to perform a **Save As** command from a macro.
 
 > [!NOTE]
-> **SaveObject**アクションを使用して、次のいずれかを新しい名前で保存できません。
-> - フォーム ビューまたはデータシート ビューのフォーム
-> - 印刷プレビューでレポート
+> You can't use the **SaveObject** action to save any of the following with a new name:
+> - フォームビューまたはデータシートビューのフォーム
+> - 印刷プレビューのレポート
 > - モジュール
-> - データシート ビューまたは印刷プレビューで、[サーバー] ビュー
-> - ページ ビューで、データ アクセス ページ
-> - データシート ビューまたは印刷プレビューでテーブル
-> - クエリ データシート ビューまたは印刷プレビューで
-> - データシート ビューまたは印刷プレビューでストアド プロシージャ
+> - データシートビューまたは印刷プレビューのサーバービュー
+> - ページビューでのデータアクセスページ
+> - データシートビューまたは印刷プレビューのテーブル
+> - データシートビューまたは印刷プレビューのクエリ
+> - データシートビューまたは印刷プレビューのストアドプロシージャ
 
-**SaveObject**アクション、またはライブラリ データベースでは、現在のデータベースで実行するマクロで行われたものであるかどうか常に指定したオブジェクトまたはアクティブ オブジェクト データベースに保存される、オブジェクトが作成されました。
+The **SaveObject** action, whether it's carried out in a macro run in the current database or in a library database, always saves the specified object or the active object in the database in which the object was created.
 
-新しい名前を持つアクティブなオブジェクトを保存する名前は、この種類の既存のオブジェクトの名前と同じ場合は、ダイアログ ボックスは、既存のオブジェクトを上書きするかどうかを確認します。 **よって**の**警告の**引数を**No**に設定すると、ダイアログ ボックスが表示されていないし、古いオブジェクトが自動的に上書きされます。
+If you save the active object with a new name, but the name is the same as the name of an existing object of this type, a dialog box asks if you want to overwrite the existing object. If you've set the **Warnings On** argument of the **SetWarnings** action to **No**, the dialog box isn't displayed and the old object is automatically overwritten.
 
-Visual Basic for Applications (VBA) モジュールに**SaveObject**アクションを実行するには、 **DoCmd**オブジェクトの**Save**メソッドを使用します。
+To run the **SaveObject** action in a Visual Basic for Applications (VBA) module, use the **Save** method of the **DoCmd** object.
 

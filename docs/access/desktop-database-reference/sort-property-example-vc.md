@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e23cf573d51e52c74f4bbf24801f4bd6f47ea22a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306924"
 ---
 # <a name="sort-property-example-vc"></a>Sort プロパティの使用例 (VC++)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-この例では、[レコード セット](recordset-object-ado.md)オブジェクトの[Sort](sort-property-ado.md)プロパティを使用して、 **Pubs**データベースの***Authors***テーブルから派生した**レコード セット**の行の順序を変更します。 2 次ユーティリティ ルーチンで各行を出力します。
+この例では[、recordset](recordset-object-ado.md)オブジェクトの[Sort](sort-property-ado.md)プロパティを使用して、 **Pubs**データベースの***Authors***テーブルから派生した**recordset**の行を並べ替えます。 2 次ユーティリティ ルーチンで各行を出力します。
 
 ```cpp 
  

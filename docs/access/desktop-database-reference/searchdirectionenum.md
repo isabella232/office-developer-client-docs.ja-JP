@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9f9fdf9dd5908b65ae3b6f6ce5a44eba07e4d9bb
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308807"
 ---
 # <a name="searchdirectionenum"></a>SearchDirectionEnum
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [Recordset](recordset-object-ado.md) 内のレコードの検索方向を表します。
 
@@ -36,20 +36,20 @@ ms.locfileid: "28709860"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>adSearchBackward</strong></p></td>
+<td><p><strong>adsearchbackward</strong></p></td>
 <td><p>-1</p></td>
 <td><p>後方検索をし、<strong>Recordset</strong> の先頭で終了します。一致するレコードが見つからない場合、レコード ポインターは <a href="bof-eof-properties-ado.md">BOF</a> に移動します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adSearchForward</strong></p></td>
-<td><p>1</p></td>
+<td><p><strong>adsearchforward</strong></p></td>
+<td><p>1-d</p></td>
 <td><p>前方検索をし、<strong>Recordset</strong> の末尾で終了します。一致するレコードが見つからない場合、レコード ポインターは <a href="bof-eof-properties-ado.md">EOF</a> に移動します。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC に相当
+### <a name="adowfc-equivalent"></a>ADO/WFC と同等
 
 パッケージ: **com.ms.wfc.data**
 
@@ -64,10 +64,10 @@ ms.locfileid: "28709860"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.SearchDirection.BACKWARD</p></td>
+<td><p>AdoEnums の逆方向</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.SearchDirection.FORWARD</p></td>
+<td><p>AdoEnums の方向</p></td>
 </tr>
 </tbody>
 </table>

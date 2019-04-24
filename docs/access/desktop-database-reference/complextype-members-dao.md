@@ -1,5 +1,5 @@
 ---
-title: 複合型のメンバー (DAO)
+title: ComplexType メンバー (DAO)
 TOCTitle: ComplexType Members
 ms:assetid: 5f0001fb-f46b-8e4c-0bd9-613c831eca96
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194740(v=office.15)
@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 7f8531d2135dd19e672c1f9533afc4ef6494b904
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296046"
 ---
-# <a name="complextype-members-dao"></a>複合型のメンバー (DAO)
+# <a name="complextype-members-dao"></a>ComplexType メンバー (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 複数値を持つフィールドを表します。
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 <table>
 <colgroup>

@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3075c0c9bd8267f6b30773a846523172eb2ef603
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296417"
 ---
 # <a name="chapter-8-understanding-cursors-and-locks"></a>第 8 章: カーソルとロックについて
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 アプリケーションのデータ アクセス要件に最も適した、最も効率的な種類のカーソルを選択するには、カーソルの動作を理解することが大切です。カーソルの構成が最適でない場合、データ アクセス操作の速度が極端に低下することがあります。
 
@@ -24,11 +24,11 @@ ADO **Recordset** オブジェクトの機能の多くは、カーソルの種�
 
 この章では、次のトピックについて説明します。
 
-- [カーソルとは何ですか。](what-is-a-cursor.md)
+- [カーソルとは](what-is-a-cursor.md)
 - [カーソル位置の重要性](the-significance-of-cursor-location.md)
 - [OLE DB 用 Microsoft Cursor Service](the-microsoft-cursor-service-for-ole-db.md)
 - [CacheSize を使用する](using-cachesize.md)
-- [カーソルとロックの特徴](cursor-and-lock-characteristics.md)
-- [(ADO) のカーソルの種類](types-of-cursors.md)
-- [ロックとは何ですか。(ADO)](what-is-a-lock.md)
+- [カーソルとロックの特性](cursor-and-lock-characteristics.md)
+- [カーソルの種類 (ADO)](types-of-cursors.md)
+- [ロックとはADO](what-is-a-lock.md)
 

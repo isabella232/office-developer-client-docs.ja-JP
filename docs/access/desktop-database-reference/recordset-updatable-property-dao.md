@@ -1,5 +1,5 @@
 ---
-title: Recordset.Updatable プロパティ (DAO)
+title: Recordset プロパティ (DAO)
 TOCTitle: Updatable Property
 ms:assetid: 2d4bdcef-1b10-b542-ce0f-6172c271131b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192110(v=office.15)
@@ -8,28 +8,28 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 722ccc2334cd00ed89a1193709023db039ba9fd3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307547"
 ---
-# <a name="recordsetupdatable-property-dao"></a>Recordset.Updatable プロパティ (DAO)
+# <a name="recordsetupdatable-property-dao"></a>Recordset プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-DAO オブジェクトを変更できるかどうかを示す値を取得します。値の取得のみ可能です。ブール型 ( **Boolean**) の値を使用します。
+DAO オブジェクトを変更できるかどうかを示す値を返します。 値の取得のみ可能なブール型 (**Boolean**) の値です。
 
 ## <a name="syntax"></a>構文
 
-*式*です。更新可能です
+*式*。できる
 
-*式***レコード セット**オブジェクトを表す変数です。
+*式***Recordset**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
-スナップショットと前方スクロールのタイプの Recordset オブジェクトは常に**False**を返します。
+スナップショットタイプおよび前方スクロールタイプの Recordset オブジェクトでは、常に**False**が返されます。
 
 オブジェクトの種類の中には、更新できないフィールドが含まれている場合がよくあります。たとえば、一部のフィールドしか変更できないようなダイナセット タイプの **Recordset** オブジェクトを作成することもできます。これらのフィールドは固定にすることも、自動的に増加するデータを含めることもでき、また更新可能なテーブルと更新できないテーブルを組み合わせたクエリによってダイナセットを得ることもできます。
 

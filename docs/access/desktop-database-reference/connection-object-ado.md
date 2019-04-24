@@ -12,19 +12,19 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: ed736a0e52ff45cd0fed63f1ba5bd7060d7a2380
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295878"
 ---
 # <a name="connection-object-ado"></a>Connection オブジェクト (ADO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 データ ソースに対して開かれている接続を表します。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **Connection** オブジェクトは、データ ソースとの固有のセッションを表します。クライアント/サーバー データベース システムの場合、このオブジェクトは、サーバーへの実際のネットワーク接続に相当します。プロバイダーがサポートする機能によっては、 **Connection** オブジェクトの一部のコレクション、メソッド、またはプロパティを使用できない場合があります。
 
@@ -61,7 +61,7 @@ ms.locfileid: "28718414"
 
 ### <a name="execute-a-command-as-a-native-method-of-a-connection-object"></a>コマンドを Connection オブジェクト固有のメソッドとして実行する
 
-コマンドを実行するには、 **Command** オブジェクトの [Name](name-property-ado.md) プロパティを使用して、コマンドに名前を設定します。 **Command** オブジェクトの **ActiveConnection** プロパティを該当する接続に設定します。次に、ステートメントを、コマンド名 ( **Connection** オブジェクトのメソッド名として)、パラメーター、 **Recordset** オブジェクト (行を取得する場合) の順に指定して発行します。 **Recordset** プロパティを設定して、結果の **Recordset** をカスタマイズします。次に例を示します。
+コマンドを実行するには、**Command** オブジェクトの [Name](name-property-ado.md) プロパティを使用して、コマンドに名前を設定します。**Command** オブジェクトの **ActiveConnection** プロパティを該当する接続に設定します。次に、ステートメントを、コマンド名 (**Connection** オブジェクトのメソッド名として)、パラメーター、**Recordset** オブジェクト (行を取得する場合) の順に指定して発行します。**Recordset** プロパティを設定して、結果の **Recordset** をカスタマイズします。次に例を示します。
 
 ```vb
     Dim cnn As New ADODB.Connection
@@ -78,7 +78,7 @@ ms.locfileid: "28718414"
 
 ### <a name="execute-a-stored-procedure-as-a-native-method-of-a-connection-object"></a>ストアド プロシージャを Connection オブジェクト固有のメソッドとして実行する
 
-ストアド プロシージャを実行するには、ステートメントを、ストアド プロシージャ名 ( **Connection** オブジェクトのメソッド名として)、パラメーターの順に指定して発行します。ADO では、パラメーターの種類について最適なものが推測されます。次に例を示します。
+ストアド プロシージャを実行するには、ステートメントを、ストアド プロシージャ名 (**Connection** オブジェクトのメソッド名として)、パラメーターの順に指定して発行します。ADO では、パラメーターの種類について最適なものが推測されます。次に例を示します。
 
 ```vb
     Dim cnn As New ADODB.Connection

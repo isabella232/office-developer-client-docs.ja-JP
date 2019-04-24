@@ -1,5 +1,5 @@
 ---
-title: ワークスペースのメンバー (DAO)
+title: Workspace メンバー (DAO)
 TOCTitle: Workspace Members
 ms:assetid: 13ac7d41-1b25-20d2-5c85-0f21bfd38328
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845437(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8a2105c13f5f7ce9a75e7e18e20477d8b283543a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28719234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302595"
 ---
-# <a name="workspace-members-dao"></a>ワークスペースのメンバー (DAO)
+# <a name="workspace-members-dao"></a>Workspace メンバー (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 Workspace オブジェクトは、ユーザー用に名前付きセッションを定義します。これには開いているデータベースが含まれ、同時実行トランザクションのメカニズムを提供し、Microsoft Access ワークスペースの場合は、セキュリティが設定されたワークグループをサポートします。
 
@@ -37,7 +37,7 @@ Workspace オブジェクトは、ユーザー用に名前付きセッション�
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="workspace-begintrans-method-dao.md">BeginTrans</a></strong></p></td>
-<td><p>新しいトランザクションを開始します。値の取得および設定が可能です。データベース型 ( <strong>Database</strong>) の値を使用します。</p></td>
+<td><p>新しいトランザクションを開始します。 読み取り/書き込みの<strong>データベース</strong>です。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="workspace-close-method-dao.md">閉じる</a></strong></p></td>
@@ -48,12 +48,12 @@ Workspace オブジェクトは、ユーザー用に名前付きセッション�
 <td><p>現在のトランザクションを終了し、変更を保存します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="workspace-createdatabase-method-dao.md">データベース</a></strong></p></td>
+<td><p><strong><a href="workspace-createdatabase-method-dao.md">CreateDatabase</a></strong></p></td>
 <td><p>新しい <strong><a href="database-object-dao.md">Database</a></strong> オブジェクトを作成し、そのデータベースをディスクに保存し、開かれた <strong>Database</strong> オブジェクトとして返します (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="workspace-openconnection-method-dao.md">OpenConnection</a></strong></p></td>
-<td><p><strong>注</strong>: Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。 Microsoft Office Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</p>
+<td><p><strong>注</strong>: ODBCDirect ワークスペースは、Microsoft access 2013 ではサポートされていません。 Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</p>
 <p>ODBC データ ソースの <strong><a href="connection-object-dao.md">Connection</a></strong> オブジェクトを開きます (ODBCDirect ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
@@ -62,13 +62,13 @@ Workspace オブジェクトは、ユーザー用に名前付きセッション�
 </tr>
 <tr class="odd">
 <td><p><strong><a href="workspace-rollback-method-dao.md">Rollback</a></strong></p></td>
-<td><p>現在のトランザクションを終了し、 <strong>Workspace</strong> オブジェクト内のすべてのデータベースを、現在のトランザクションが開始される前の状態に戻します。</p></td>
+<td><p>現在のトランザクションを終了し、<strong>Workspace</strong> オブジェクト内のデータベースを現在のトランザクションが開始された時点の状態に戻します。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 <table>
 <colgroup>
@@ -84,15 +84,15 @@ Workspace オブジェクトは、ユーザー用に名前付きセッション�
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="workspace-connections-property-dao.md">Connections</a></strong></p></td>
-<td><p>指定された <strong>Workspace</strong> の現在の接続を表す <strong>Connections</strong> コレクションを取得します。値の取得のみ可能です。</p></td>
+<td><p>指定された <strong>Workspace</strong> の現在の接続を表す <strong>Connections</strong> コレクションを取得します。 読み取り専用です。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="workspace-databases-property-dao.md">Databases</a></strong></p></td>
-<td><p>指定された <strong>Workspace</strong> の開いているデータベースを表す <strong>Databases</strong> コレクションを取得します。値の取得のみ可能です。</p></td>
+<td><p>指定された <strong>Workspace</strong> の開いているデータベースを表す <strong>Databases</strong> コレクションを取得します。 値の取得のみ可能です。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="workspace-defaultcursordriver-property-dao.md">DefaultCursorDriver</a></strong></p></td>
-<td><p><strong>注</strong>: Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。 Microsoft Office Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</p>
+<td><p><strong>注</strong>: ODBCDirect ワークスペースは、Microsoft access 2013 ではサポートされていません。 Microsoft Office Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</p>
 <p><strong><a href="dbengine-openconnection-method-dao.md">OpenConnection</a></strong> メソッドまたは <strong><a href="dbengine-opendatabase-method-dao.md">OpenDatabase</a></strong> メソッドによって作成された接続で使用されるカーソル ドライバーの種類を設定または取得します (ODBCDirect ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
@@ -101,7 +101,7 @@ Workspace オブジェクトは、ユーザー用に名前付きセッション�
 </tr>
 <tr class="odd">
 <td><p><strong><a href="workspace-logintimeout-property-dao.md">LoginTimeout</a></strong></p></td>
-<td><p>ODBC データベースへのログオンを試みてからエラーが発生するまでの秒数を設定または取得します。</p></td>
+<td><p>ODBC データベースへのログオン試行でエラーが発生するまでの秒数を設定または取得します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="workspace-name-property-dao.md">Name</a></strong></p></td>
@@ -112,8 +112,8 @@ Workspace オブジェクトは、ユーザー用に名前付きセッション�
 <td><p>指定したオブジェクトの <strong><a href="properties-collection-dao.md">Properties</a></strong> コレクションを取得します。値の取得のみ可能です。  </p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="workspace-type-property-dao.md">型</a></strong></p></td>
-<td><p>オブジェクトの操作の種類またはデータ型を示す値を設定または取得します。値の取得のみ可能です。整数型 ( <strong>Integer</strong> ) の値を使用します。</p></td>
+<td><p><strong><a href="workspace-type-property-dao.md">種類</a></strong></p></td>
+<td><p>オブジェクトの操作の種類またはデータ型を示す値を設定あるいは取得します。値の取得のみ可能です。整数型 (<strong>Integer</strong>) の値を使用します。</p></td>
 </tr>
 </tbody>
 </table>

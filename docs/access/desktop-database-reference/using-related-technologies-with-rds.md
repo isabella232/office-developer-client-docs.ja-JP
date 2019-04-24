@@ -8,31 +8,31 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3e58978145a59a0057f5c7218afe417f8455fcb3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32305978"
 ---
 # <a name="using-related-technologies-with-rds"></a>RDS 関連技術の使用
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ここでは、次の技術的観点から、RDS の使用方法に関する情報を示します。
 
-- [ODBC 接続プールで RDS を使用します。](using-rds-with-odbc-connection-pooling.md)
+- [RDS を ODBC 接続プールと共に使用する](using-rds-with-odbc-connection-pooling.md)
 
 - [コンポーネント サービスでのビジネス オブジェクトの実行](running-business-objects-in-component-services.md)
 
-**インターネット インフォメーション サービス**Microsoft インターネット インフォメーション サービス (IIS) の詳細については、Microsoft インターネット インフォメーション サービス web サイトを参照してください。
+**インターネットインフォメーションサービス**microsoft インターネットインフォメーションサービス (IIS) の詳細については、microsoft インターネットインフォメーションサービスの web サイトを参照してください。
 
-**Active Server Pages**Microsoft Active Server Pages (ASP) に関する詳細については、Microsoft Active Server Pages の web サイトを参照してください。
+**アクティブなサーバーページ**microsoft active server pages (ASP) の詳細については、microsoft active server pages の web サイトを参照してください。
 
-**Microsoft コンポーネント サービス**コンポーネント サービスの詳細については、Microsoft Transaction Server web サイトを参照してください。
+**Microsoft コンポーネントサービス**コンポーネントサービスの詳細については、Microsoft Transaction Server の web サイトを参照してください。
 
-**Microsoft SQL Server**Microsoft SQL Server の詳細については、Microsoft SQL Server web サイトを参照してください。
+**Microsoft SQL Server**microsoft sql server の詳細については、microsoft sql server の web サイトを参照してください。
 
-**Microsoft Internet Explorer**Microsoft Internet Explorer の詳細については、Microsoft Internet Explorer の web サイトおよび MSDN ライブラリと Web ワーク ショップの web サイトを参照してください。
+**Microsoft Internet Explorer**microsoft internet explorer の詳細については、microsoft internet explorer の web サイトおよび MSDN ライブラリおよび Web ワークショップの web サイトを参照してください。
 
-**Microsoft Windows NT サーバーまたは Windows 2000 Server**Microsoft Windows NT サーバーまたは Windows 2000 Server のセキュリティの詳細については、Microsoft Windows web サイトを参照してください。
+**Microsoft windows NT server/windows 2000 server**microsoft windows NT server または windows 2000 server のセキュリティの詳細については、microsoft windows の web サイトを参照してください。
 

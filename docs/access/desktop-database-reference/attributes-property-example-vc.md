@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: cb5a7050e17dfc1424809cfc5588236ed61d602f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296942"
 ---
 # <a name="attributes-property-example-vc"></a>Attributes プロパティの使用例 (VC++)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ここでは、[Column](attributes-property-adox.md) の [Attributes](column-object-adox.md) プロパティの使用例を示します。このプロパティを **adColNullable** に設定すると、 [Recordset](recordset-object-ado.md)[Field](field-object-ado.md) の値に空の文字列を設定できるようになります。この状態で、ユーザーはデータが認識されていないレコードとデータが適用されていないレコードを区別できます。
 
@@ -222,7 +222,7 @@ void AttributesX(void)
 // EndAttributesCpp 
 ```
 
-**ADOXAttributesX.h**
+**ADOXAttributesX**
 
 ```cpp
     // BeginAttributesH 

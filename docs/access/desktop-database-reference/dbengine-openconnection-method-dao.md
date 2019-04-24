@@ -1,5 +1,5 @@
 ---
-title: DBEngine.OpenConnection メソッド (DAO)
+title: DBEngine 接続メソッド (DAO)
 TOCTitle: OpenConnection Method
 ms:assetid: 778a581f-be42-94ee-e5c6-4cbc1843450d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196074(v=office.15)
@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 845c710954d83003f49a6cd9db21ae3f3bfab383
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294261"
 ---
-# <a name="dbengineopenconnection-method-dao"></a>DBEngine.OpenConnection メソッド (DAO)
+# <a name="dbengineopenconnection-method-dao"></a>DBEngine 接続メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ## <a name="syntax"></a>構文
 
-*式*です。されます (***名前***、***オプション***、***読み取り専用***、***接続***)
+*式*。openconnection (***名前***、***オプション***、 ***ReadOnly***、 ***Connect***)
 
-*式***DBEngine**オブジェクトを表す変数です。
+*式***DBEngine**オブジェクトを表す変数を取得します。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -47,28 +47,28 @@ ms.locfileid: "28704603"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Name</em></p></td>
+<td><p><em>名前</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>文字列型 (String)</strong></p></td>
+<td><p><strong>String</strong></p></td>
 <td><p>文字列式を指定します。「解説」の説明を参照してください。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Options</em></p></td>
-<td><p>省略可能</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
+<td><p>Optional</p></td>
+<td><p><strong>Variant</strong></p></td>
 <td><p>「解説」に記載されている接続のさまざまなオプションを設定します。ODBC ドライバー マネージャーは、この値に基づき、データ ソース名 (DSN)、ユーザー名、パスワードなどの接続情報の指定をユーザーに求めます。</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>ReadOnly</em></p></td>
-<td><p>省略可能</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
+<td><p>Optional</p></td>
+<td><p><strong>Variant</strong></p></td>
 <td><p><strong>True</strong> に設定すると、接続が読み取り専用アクセスで開かれ、 <strong>False</strong> (既定値) に設定すると、読み取り/書き込みアクセスで開かれます。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Connect</em></p></td>
-<td><p>省略可能</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
-<td><p>ODBC 接続文字列です。 この文字列の固有の要素および構文については、 <strong><a href="connection-connect-property-dao.md">Connect</a></strong> プロパティのトピックを参照してください。 先頭に追加された&quot;ODBC;&quot;が必要です。</p></td>
+<td><p>Optional</p></td>
+<td><p><strong>Variant</strong></p></td>
+<td><p>ODBC 接続文字列です。 この文字列の固有の要素および構文については、 <strong><a href="connection-connect-property-dao.md">Connect</a></strong> プロパティのトピックを参照してください。 先頭&quot;に ODBC があります。&quot;が必要です。</p></td>
 </tr>
 </tbody>
 </table>
@@ -80,11 +80,11 @@ Connection
 
 ## <a name="remarks"></a>注釈
 
-**OpenConnection** メソッドは、ODBCDirect ワークスペースから ODBC データ ソースへの接続を確立するために使用します。 **OpenConnection** メソッドは、 **OpenDatabase** と似ていますが、同じではありません。主な違いは、 **OpenConnection** が ODBCDirect ワークスペースでしか使用できないことです。
+**OpenConnection** メソッドは、ODBCDirect ワークスペースから ODBC データ ソースへの接続を確立するために使用します。**OpenConnection** メソッドは、**OpenDatabase** と似ていますが、同じではありません。主な違いは、**OpenConnection** が ODBCDirect ワークスペースでしか使用できないことです。
 
-登録済みの ODBC データ ソース名 (DSN) を指定すると、接続の引数で、引数 name は任意の有効な文字列を使用でき、**接続**オブジェクトの**Name**プロパティも提供されます。 接続の引数には、有効な DSN が含まれていない場合、名前は、 **Name**プロパティもありますが、有効な ODBC DSN を参照しなければなりません。 場合名前し、接続のどちらも、有効な DSN が含まれている ODBC ドライバ ・ マネージャーは、ユーザーに必要な接続情報を要求する (オプションの引数) を使用して設定できます。 この場合、ユーザーが指定した DSN が **Name** プロパティの値となります。
+connect 引数に、登録されている ODBC データソース名 (DSN) を指定した場合、name 引数には任意の有効な文字列を指定できます。また、 **Connection**オブジェクトの**name**プロパティも提供します。 有効な dsn が connect 引数に含まれていない場合、name は有効な ODBC DSN を参照する必要があります。これは**name**プロパティでもあります。 名前も connect にも有効な DSN が含まれていない場合は、ODBC ドライバマネージャーを (options 引数を使用して) 設定して、必要な接続情報をユーザーに要求できます。 この場合、ユーザーが指定した DSN が **Name** プロパティの値となります。
 
-引数 options では、接続を確立するための情報の入力をユーザーに求めるかどうか、どのような場合にユーザー入力を求めるか、接続を非同期で開くかどうかを指定します。次のいずれかの定数を使用できます。
+options 引数は、ユーザーに接続を確立するかどうか、および接続を非同期で開くかどうかを決定します。 次のいずれかの定数を使用できます。
 
 <table>
 <colgroup>
@@ -99,11 +99,11 @@ Connection
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>dbDriverNoPrompt</strong></p></td>
-<td><p>ODBC ドライバー マネージャーは、<em>name</em> および <em>connect</em> に指定された接続文字列を使用します。情報が不足していると、実行時エラーが発生します。</p></td>
+<td><p><strong>dbdrivernoprompt</strong></p></td>
+<td><p>ODBC ドライバー マネージャーは、<em>name</em> および <em>connect</em> に指定された接続文字列を使用します。 情報が不足していると、実行時エラーが発生します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>そのまま使用</strong></p></td>
+<td><p><strong>dbDriverPrompt</strong></p></td>
 <td><p>ODBC ドライバー マネージャーは、<em>dhname</em> または <em>connect</em> で指定された関連情報を示す [<strong>接続する ODBC データ ソース</strong>] ダイアログ ボックスを開きます。接続文字列は、ユーザーがダイアログ ボックスで選択した DSN を使用して作成されますが、ユーザーが DSN を指定しなかった場合は、既定の DSN が使用されます。</p></td>
 </tr>
 <tr class="odd">
@@ -116,7 +116,7 @@ Connection
 </tr>
 <tr class="odd">
 <td><p><strong>dbRunAsync</strong></p></td>
-<td><p>メソッドを非同期で実行します。 この定数は、他の<em>オプション</em>の定数のいずれかを使用できます。</p></td>
+<td><p>メソッドを非同期で実行します。 この定数は、<em>options</em> で他の任意の定数と共に使用できます。</p></td>
 </tr>
 </tbody>
 </table>

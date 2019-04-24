@@ -1,5 +1,5 @@
 ---
-title: Recordset2.NoMatch プロパティ (DAO)
+title: Recordset2 プロパティ (DAO)
 TOCTitle: NoMatch Property
 ms:assetid: 2d7a02ff-a2bf-5f0e-bd71-a6d42c25b13a
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192114(v=office.15)
@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8c3168dcce9fb13d057380e7a1a4ef89f8814e02
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309395"
 ---
-# <a name="recordset2nomatch-property-dao"></a>Recordset2.NoMatch プロパティ (DAO)
+# <a name="recordset2nomatch-property-dao"></a>Recordset2 プロパティ (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**[Seek](recordset2-seek-method-dao.md)** メソッドを使用するかまたは **[Find](recordset2-findfirst-method-dao.md)** メソッドの 1 つを使用して、特定のレコードが見つかったかどうかを示します (Microsoft Access ワークスペースのみ)。
+**[Seek](recordset2-seek-method-dao.md)** メソッドを使用するかまたは **[Find](recordset2-findfirst-method-dao.md)** メソッドの 1 つを使用して特定のレコードが見つかったかどうかを示します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。NoMatch
+*式*。NoMatch
 
-*式***Recordset2**オブジェクトを表す変数です。
+*式***Recordset2**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
@@ -35,7 +35,7 @@ ms.locfileid: "28706689"
 **Seek** メソッドまたは **Find** メソッドで検出されず、 **NoMatch** プロパティが **True** に設定されると、カレント レコードは無効になります。そのレコードに戻る必要がある場合は、 **Seek** メソッドまたは **Find** メソッドを使用する前に、カレント レコードのブックマークを取得してください。
 
 > [!NOTE]
-> [!メモ] [Recordset](recordset-movefirst-method-dao.md) オブジェクトでいずれの ****Move**** メソッドを使用しても、そのオブジェクトの **NoMatch** プロパティの設定値には反映されません。
+> **Recordset**オブジェクトで**[Move](recordset-movefirst-method-dao.md)** メソッドを使用しても、 **NoMatch**プロパティの設定値には影響しません。
 
 ## <a name="example"></a>例
 

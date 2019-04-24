@@ -8,25 +8,25 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 195d9f5d882fd252b1b10e937fe851c4830c52d3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296053"
 ---
 # <a name="comparison-of-microsoft-access-sql-and-ansi-sql"></a>Microsoft Access SQL と ANSI SQL の比較
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-Microsoft Access データベース エンジン SQL は、ANSI 文字セット 89 レベル 1 の仕様にほぼ準拠しています。 ただし、ANSI SQL の特定の機能では、Microsoft Access SQL で実装されていません。 その一方で、ANSI SQL ではサポートされていない予約語や機能が実装されています。
+Microsoft Access データベース エンジン SQL は、ANSI 文字セット 89 レベル 1 の仕様にほぼ準拠しています。 ただし、Microsoft access SQL では、ANSI SQL の一部の機能は実装されていません。 その一方で、ANSI SQL ではサポートされていない予約語や機能が実装されています。
 
-## <a name="major-differences"></a>主な相違点
+## <a name="major-differences"></a>主な違い
 
 - Microsoft Office Access SQL と ANSI SQL とでは、異なる予約語およびデータ型があります。詳細については、「[SQL 予約語](sql-reserved-words.md)」および「[Microsoft Jet データベース エンジン SQL と ANSI SQL のデータ型](equivalent-ansi-sql-data-types.md)」を参照してください。Microsoft Office Access Database Engine OLE DB Provider と組み合わせて使うと、追加の予約語を使用できます。
 
 - **[Between...And](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/and-operator)**
     
-  *式 1*\[いない\]**の間で** *value1* **と** *value2*
+  *expr1*\[ *value1* **と** *value2* \] **の間で**はない
     
   Microsoft Access SQL では、引数 *value1* に引数 *value2* より大きい値を指定できますが、ANSI SQL では引数 *value1* は必ず引数 *value2* 以下の値である必要があります。
 
@@ -64,7 +64,7 @@ Microsoft Access データベース エンジン SQL は、ANSI 文字セット 
 
 - Microsoft Access SQL では、ANSI SQL よりも強力な式がサポートされています。
 
-## <a name="enhanced-features-of-microsoft-access-sql"></a>Microsoft Access SQL の拡張機能
+## <a name="enhanced-features-of-microsoft-access-sql"></a>Microsoft access SQL の拡張機能
 
 Microsoft Access SQL には、次の拡張機能があります。
 
@@ -74,11 +74,11 @@ Microsoft Access SQL には、次の拡張機能があります。
 
 - パラメーター クエリの定義に使用する [PARAMETERS](parameters-declaration-microsoft-access-sql.md) 宣言。
 
-## <a name="ansi-sql-features-not-supported-in-microsoft-access-sql"></a>Microsoft Access SQL ではサポートされていない ANSI SQL の機能
+## <a name="ansi-sql-features-not-supported-in-microsoft-access-sql"></a>Microsoft access SQL でサポートされていない ANSI SQL 機能
 
 Microsoft Access SQL では、ANSI SQL の次の機能がサポートされていません。
 
 - DISTINCT 集計関数の参照。たとえば、Microsoft Access SQL では、SUM(DISTINCT *columnname*) のような DISTINCT 集計関数の参照がサポートされていません。
 
-- 制限する*nn* ROWS 句クエリで返される行の数を制限するために使用します。 クエリの適用範囲を制限するために使用できるのは、 [WHERE 句](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql)のみです。
+- クエリが返す行数を制限する LIMIT TO *nn* ROWS 句。クエリの適用範囲を制限するために使用できるのは、[WHERE 句](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql)のみです。
 

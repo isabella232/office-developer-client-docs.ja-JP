@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ae8341151c7bf7d90585794061647ba33a5c4ea7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32305902"
 ---
 # <a name="using-ado-for-internet-publishing"></a>Internet Publishing 用の ADO の使用
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
 
-「[OLE DB Provider for Internet Publishing](the-ole-db-provider-for-internet-publishing.md)」では、ADO を使用して異種データにアクセスする場合の具体的な例が示されています。 このセクションの例は、特定のインターネット パブリッシング プロバイダーを使用してありますが、中には、電子メール ストア プロバイダーなどの異機種混在のデータを他のプロバイダーで ADO を使用する場合、基本的な部分がのようなはずです。
+「[OLE DB Provider for Internet Publishing](the-ole-db-provider-for-internet-publishing.md)」では、ADO を使用して異種データにアクセスする場合の具体的な例が示されています。 このセクションの例は、インターネット発行プロバイダーの使用に固有のものですが、他のプロバイダーとの ADO を電子メールストアのプロバイダーなどの異種データに対して使用する場合には、この原則は似ています。
 
 ## <a name="urls"></a>URL
 
@@ -31,11 +31,11 @@ URL の使用の詳細については、「[絶対 URL と相対 URL](absolute-a
 
 ## <a name="record-fields"></a>レコードのフィールド
 
-異種データと同種データの主な違いをデータ、または**レコード**の行ごとに、別の列、または**フィールド**のセットを持つことができます。 同種データの場合は、各行が同じ列のセットを持ちます。 インターネット発行プロバイダーに固有のフィールドの詳細については、[レコードおよびプロバイダー提供のフィールド](records-and-provider-supplied-fields.md)を参照してください。
+The distinguishing difference between heterogeneous data and homogeneous data is that for the former, each row of data, or **Record**, can have a different set of columns, or **Fields**. For homogeneous data, each row has the same set of columns. For more information about the fields specific to the Internet Publishing Provider, see [Records and Provider-Supplied Fields](records-and-provider-supplied-fields.md).
 
 ## <a name="appending-new-fields"></a>新規フィールドの追加
 
-一部の ADO オブジェクトは、 **Record** オブジェクトおよび **Stream** オブジェクトと連携するように拡張されています。
+一部の ADO オブジェクトは、**Record** オブジェクトおよび **Stream** オブジェクトと連携するように拡張されています。
 
   - [Fields](fields-collection-ado.md) コレクションの [Append](append-method-ado.md) メソッドは、 [Field](field-object-ado.md) オブジェクトを作成してコレクションに追加しますが、 **Field** の値を指定することもできます。
 
@@ -45,4 +45,4 @@ URL の使用の詳細については、「[絶対 URL と相対 URL](absolute-a
 
 ## <a name="see-also"></a>関連項目
 
-- [インターネット公開の例のトピック](internet-publishing-scenario.md)
+- [インターネット発行シナリオのトピック](internet-publishing-scenario.md)

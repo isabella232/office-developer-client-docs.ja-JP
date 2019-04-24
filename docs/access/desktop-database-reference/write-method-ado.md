@@ -1,5 +1,5 @@
 ---
-title: メソッド - を作成するには、ActiveX データ オブジェクト (ADO)
+title: Write メソッド-ActiveX データオブジェクト (ADO)
 TOCTitle: Write method (ADO)
 ms:assetid: cabe4581-409f-7f05-bd59-d495bfb2c6fd
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249986(v=office.15)
@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c6f4bba55ec3a32d206d3a7bfd001e96cd94923e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302465"
 ---
 # <a name="write-method-ado"></a>Write メソッド (ADO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 バイナリ データを [Stream](stream-object-ado.md) オブジェクトに書き込みます。
 
 ## <a name="syntax"></a>構文
 
-*ストリーム*。*バッファー*の書き込み
+*ストリーム*。書き込み*バッファー*
 
 ## <a name="parameters"></a>パラメーター
 
@@ -30,7 +30,7 @@ ms.locfileid: "28702517"
 |:--------|:----------|
 |*Buffer* |書き込むバイト配列の入ったバリアント型 ( **Variant** ) の値を指定します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 指定したバイトが、各バイト間にスペースを一切挿入することなく **Stream** オブジェクトに書き込まれます。
 

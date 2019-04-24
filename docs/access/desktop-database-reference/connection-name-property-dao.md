@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2698f00d68451870b06c1b5e9ed0b849e3950f11
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295885"
 ---
 # <a name="connectionname-property-dao"></a>Connection.Name プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **[Connection](connection-object-dao.md)** オブジェクトの名前を取得します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。名
+*式*。拡張子
 
-*式***接続**オブジェクトを表す変数です。
+*式***Connection**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 

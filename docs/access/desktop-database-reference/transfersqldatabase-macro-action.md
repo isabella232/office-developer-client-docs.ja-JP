@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 5ed20555726d0a6f63f0e48fb154cedb411ef8cd
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306847"
 ---
 # <a name="transfersqldatabase-macro-action"></a>TransferSQLDatabase マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-Access プロジェクトで、Microsoft SQL Server 7.0 以降のデータベースを別の SQL Server 7.0、またはそれ以降のデータベースを転送するのに**TransferSQLDatabase**アクションを使用できます。 データベースを転送することに関する詳細については、SQL Server のマニュアルを参照してください。
+In an Access project, you can use the **TransferSQLDatabase** action to transfer a Microsoft SQL Server 7.0 or later database to another SQL Server 7.0 or later database. データベースの転送の詳細については、SQL Server のドキュメントを参照してください。
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。
+> このアクションは、データベースが信頼されていない場合には許可されません。
 
 ## <a name="setting"></a>設定値
 
-**TransferSQLDatabase**アクションには、次の引数があります。
+"TransferSQLDatabase/SQLデータベースの転送" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -44,24 +44,24 @@ Access プロジェクトで、Microsoft SQL Server 7.0 以降のデータベー
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Server</strong></p></td>
+<td><p><strong>サーバー</strong></p></td>
 <td><p>転送先の SQL Server 7.0 以降のデータベース サーバーの名前を指定します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Database</strong></p></td>
+<td><p><strong>データベース</strong></p></td>
 <td><p>転送先のサーバーに作成される新しいデータベースの名前を指定します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Use Trusted Connection/セキュリティ接続を使用する</strong></p></td>
-<td><p>指定またはが存在しないかどうかは、SQL Server に信頼関係接続です。 場合は、信頼関係接続と<strong>ログイン名</strong>と<strong>パスワード</strong>の引数は必須ではありませんし、 <strong>[はい]</strong>に設定します。 <strong>いいえ</strong>、<strong>ログイン</strong>および<strong>パスワード</strong>の引数に設定が必要な場合です。 既定値は [ <strong>はい</strong>] です。 信頼関係接続を使用すると、SQL Server のセキュリティは、ネットワークとデータベースに 1 つのログを提供する Windows オペレーティング システムのセキュリティと統合します。</p></td>
+<td><p>SQL Server への信頼された接続があるかどうかを指定します。 <strong>[はい]</strong>に設定すると、信頼された接続があり、 <strong>Login</strong>および<strong>Password</strong>引数は必須ではありません。 <strong>No</strong>に設定されている場合、 <strong>Login</strong>および<strong>Password</strong>引数は必須です。 既定値は [ <strong>はい</strong>] です。 信頼された接続を使用すると、SQL Server のセキュリティが Windows オペレーティングシステムのセキュリティと統合され、ネットワークおよびデータベースに対して単一のログオンが提供されます。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Login/ログイン</strong></p></td>
+<td><p><strong>ログイン</strong></p></td>
 <td><p>転送先のサーバーへのログイン名を指定します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Password</strong></p></td>
-<td><p><strong>ログイン</strong>引数のパスワード。 このパスワードは、Access プロジェクト内のテキストとして格納されますが、データベースの転送操作中に非表示。</p></td>
+<td><p>"Login/ログイン" 引数のパスワードを指定します。このパスワードは Access プロジェクトにテキストとして格納されますが、データベースの転送処理中は表示されません。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Transfer Copy Data/データ コピーの転送</strong></p></td>
@@ -71,11 +71,11 @@ Access プロジェクトで、Microsoft SQL Server 7.0 以降のデータベー
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 データベースの転送中は、その他の操作を実行できません。
 
-**TransferSQLDatabase**アクションでは、既定では、コピーのデータ、データ定義、データベース オブジェクト、および既定値、テキスト制約、ルックアップ値などの拡張プロパティです。
+The **TransferSQLDatabase** action, by default, copies data, data definitions, database objects, and extended properties, such as default values, text constraints, and lookup values.
 
 データベースを転送するには、次の要件があります。
 
@@ -86,5 +86,5 @@ Access プロジェクトで、Microsoft SQL Server 7.0 以降のデータベー
   > [!NOTE]
   > [!メモ] リンク サーバーは、データベースの転送時には転送されません。
 
-**TransferSQLDatabase**アクションを Visual Basic for Applications (VBA) のモジュールで実行するには、 **DoCmd**オブジェクトの**TransferSQLDatabase**メソッドを使用します。
+To run the **TransferSQLDatabase** action in a Visual Basic for Applications (VBA) module, use the **TransferSQLDatabase** method of the **DoCmd** object.
 

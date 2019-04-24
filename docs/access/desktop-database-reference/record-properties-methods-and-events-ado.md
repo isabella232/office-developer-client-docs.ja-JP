@@ -1,5 +1,5 @@
 ---
-title: レコードのプロパティ、メソッド、およびイベント (ADO)
+title: Record のプロパティ、メソッド、およびイベント (ADO)
 TOCTitle: Properties, Methods, and Events
 ms:assetid: c38c915c-da8f-ce52-cf36-7463829d2278
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249956(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e8d7cbf0620d896044edd41f783180148bceae66
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300715"
 ---
-# <a name="record-properties-methods-and-events-ado"></a>レコードのプロパティ、メソッド、およびイベント (ADO)
+# <a name="record-properties-methods-and-events-ado"></a>Record のプロパティ、メソッド、およびイベント (ADO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ## <a name="propertiescollections"></a>プロパティ/コレクション
 
@@ -27,7 +27,7 @@ ms.locfileid: "28710994"
 - [Properties コレクション](properties-collection-ado.md)
 - [RecordType プロパティ](recordtype-property-ado.md)
 - [Source プロパティ (ADO Record)](source-property-ado-record.md)
-- [状態プロパティ](state-property-ado.md)
+- [State プロパティ](state-property-ado.md)
 
 
 ## <a name="methods"></a>メソッド
@@ -38,7 +38,7 @@ ms.locfileid: "28710994"
 - [DeleteRecord メソッド](deleterecord-method-ado.md)
 - [GetChildren メソッド](getchildren-method-ado.md)
 - [MoveRecord メソッド](moverecord-method-ado.md)
-- [Open メソッド (ADO レコード)](open-method-ado-record.md)
+- [Open メソッド (ADO Record)](open-method-ado-record.md)
 
 ## <a name="events"></a>イベント
 

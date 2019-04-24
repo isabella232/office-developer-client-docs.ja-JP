@@ -1,5 +1,5 @@
 ---
-title: RDS プロパティ (Access データベースをデスクトップ リファレンス)
+title: RDS プロパティ (Access デスクトップデータベースリファレンス)
 TOCTitle: RDS properties
 ms:assetid: 002989dc-0022-d3a2-ddd2-2230837b3a63
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248775(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 35d3552705ff358f34a40aa51a2ec13b4b80f6d2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300841"
 ---
 # <a name="rds-properties"></a>RDS プロパティ
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 <br/>
 
@@ -56,7 +56,7 @@ ms.locfileid: "28716053"
 </tr>
 <tr class="odd">
 <td><p><a href="handler-property-rds.md">ハンドラー</a></p></td>
-<td><p><strong>RDSServer.DataFactory</strong>のおよび<em>ハンドラー</em>によって使用されるパラメーターの機能を拡張するサーバー側のカスタマイズ プログラム (<em>ハンドラー</em>) の名前を示します。</p></td>
+<td><p><strong>rdsserver.datafactory</strong>の機能を拡張するサーバー側のカスタマイズプログラム (<em>ハンドラー</em>) の名前と、<em>ハンドラー</em>で使用されるパラメーターを示します。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="internettimeout-property-rds.md">InternetTimeout</a></p></td>
@@ -67,11 +67,11 @@ ms.locfileid: "28716053"
 <td><p><strong>DataControl</strong> オブジェクトがデータを取得して <strong>Recordset</strong> オブジェクトに格納するときの進行状況を示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="recordset-sourcerecordset-properties-rds.md">レコード セットおよび SourceRecordset</a></p></td>
+<td><p><a href="recordset-sourcerecordset-properties-rds.md">Recordset および SourceRecordset</a></p></td>
 <td><p>カスタム ビジネス オブジェクトから返された <strong>Recordset</strong> オブジェクトを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="server-property-rds.md">Server</a></p></td>
+<td><p><a href="server-property-rds.md">サーバー</a></p></td>
 <td><p>インターネット インフォメーション サービス (IIS) 名および通信プロトコルを示します。</p></td>
 </tr>
 <tr class="even">

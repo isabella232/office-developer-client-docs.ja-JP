@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 35322ec058d31f92288fd06a4e8434a4256c2d74
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296648"
 ---
 # <a name="cancel-method-rds"></a>Cancel メソッド (RDS)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 保留中の非同期メソッド呼び出しの実行を取り消します。
 
@@ -25,7 +25,7 @@ ms.locfileid: "28720766"
 
 *RDS*。 *DataControl*。キャンセル
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**Cancel** を呼び出すと、 [ReadyState](readystate-property-rds.md) が自動的に **adcReadyStateLoaded** に設定され、 [Recordset](recordset-object-ado.md) は空になります。
+**Cancel** を呼び出すと、[ReadyState](readystate-property-rds.md) が自動的に **adcReadyStateLoaded** に設定され、[Recordset](recordset-object-ado.md) は空になります。
 

@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 5bae48f3e9b2b5c3967b955c41ba01c634546164
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302597"
 ---
 # <a name="xml-recordset-persistence-scenario"></a>XML レコードセットの永続化シナリオ
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 このシナリオでは、 **Response** オブジェクトの内容を Active Server Pages (ASP) の **Response** オブジェクトに直接保存する ASP アプリケーションを作成します。
 
@@ -32,14 +32,14 @@ ms.locfileid: "28711533"
 3.  データを送信します。
 4.  データを受信し、表示します。
 
-## <a name="step-1-set-up-the-application"></a>手順 1: アプリケーションを設定します。
+## <a name="step-1-set-up-the-application"></a>手順 1: アプリケーションをセットアップする
 
-1. **XMLPersist**をという名前のスクリプトのアクセス許可を持つ IIS 仮想ディレクトリを作成します。 
+1. 「スクリプト権限を使用して**xmlpersist** 」という名前の IIS 仮想ディレクトリを作成します。 
 
-2. フォルダーを仮想ディレクトリが指す、1 つの名前付き**XMLResponse.asp**、およびその他の**Default.htm**に 2 つの新しいテキスト ファイルを作成します。
+2. 仮想ディレクトリをポイントするフォルダーに2つの新しいテキストファイルを作成します。このファイルには、 **xmlresponse**という名前の、もう1つの**default.htm**という名前が付けられます。
 
 
-## <a name="step-2-get-the-data"></a>手順 2: データを取得します。
+## <a name="step-2-get-the-data"></a>手順 2: データを取得する
 
 この手順では、ADO の **Recordset** を開いてクライアントに送信する準備を行うコードを記述します。 
 
@@ -68,11 +68,11 @@ ms.locfileid: "28711533"
         adoRec.Open strSQL, adoCon, adOpenStatic, adLockOptimistic, adCmdText 
    ```
 
-2. StrCon でデータ ソースのパラメーターの値を Microsoft SQL Server コンピューターの名前に変更することを確認します。
+2. 必ず、strcon のデータソースパラメーターの値を Microsoft SQL Server コンピュータの名前に変更してください。
 
 3. ファイルを開いたままで、次の手順に進みます。
 
-## <a name="step-3-send-the-data"></a>手順 3: データを送信します。
+## <a name="step-3-send-the-data"></a>手順 3: データを送信する
 
 **Recordset** の準備が完了したので、これを XML として ASP **Response** オブジェクトに保存して、クライアントに送信する必要があります。 
 
@@ -92,15 +92,15 @@ ms.locfileid: "28711533"
     %> 
    ```
 
-   ASP**応答**オブジェクトが**レコード セット**の[保存](save-method-ado.md)メソッドの保存先として指定されていることを確認します。 **Save** メソッドの保存先には、 **IStream** インターフェイスをサポートする任意のオブジェクト (ADO の [Stream](stream-object-ado.md) オブジェクトなど)、または、 **Recordset** の保存先の完全なパスを含むファイル名を指定できます。
+   ASP **Response**オブジェクトは、 **Recordset** [Save](save-method-ado.md)メソッドの宛先として指定されていることに注意してください。 **Save** メソッドの保存先には、 **IStream** インターフェイスをサポートする任意のオブジェクト (ADO の [Stream](stream-object-ado.md) オブジェクトなど)、または、 **Recordset** の保存先の完全なパスを含むファイル名を指定できます。
 
-2. XMLResponse.asp を保存して閉じ、次の手順に進みます。 Adovbs.inc ファイルを c: からコピーも\\Program Files\\ファイルの一般的な\\システム\\XMLResponse.asp ファイルがあるフォルダーにフォルダーを Ado。
+2. XMLResponse.asp を保存して閉じ、次の手順に進みます。 また、\\adovbs.inc ファイルを C: Program Files\\Common Files\\System\\Ado フォルダーから xmlresponse .asp ファイルと同じフォルダーにコピーします。
 
-## <a name="step-4-receive-and-display-the-data"></a>手順 4: が受信し、データを表示
+## <a name="step-4-receive-and-display-the-data"></a>手順 4: データを受信して表示する
 
-この手順では、埋め込みの[rds. で HTML ファイルを作成しますDataControl](datacontrol-object-rds.md)オブジェクトを**レコード セット**を得るための XMLResponse.asp ファイルをポイントします。 
+この手順では、埋め込みの RDS を含む HTML ファイルを作成し[ます。](datacontrol-object-rds.md) **Recordset**を取得するために xmlresponse .asp ファイルをポイントする DataControl オブジェクト。 
 
-1. Windows メモ帳などのテキスト エディターで default.htm を開き、次のコードを追加します。 URL の "sqlserver" は、実際に使用するサーバー コンピューターの名前に置き換えてください。
+1. Windows メモ帳などのテキストエディターを使用して default.htm を開き、次のコードを追加します。 URL の "sqlserver" は、実際に使用するサーバー コンピューターの名前に置き換えてください。
 
    ```html 
     
@@ -123,11 +123,11 @@ ms.locfileid: "28711533"
     </HTML> 
    ```
 
-2. Default.htm ファイルを閉じ、XMLResponse.asp を保存した同じフォルダーに保存します。 
+2. Close the default.htm file and save it to the same folder where you saved XMLResponse.asp. 
 
-3. Internet Explorer 4.0 を使用して、後で、URL を開くまたは`https://<sqlserver>/XMLPersist/default.htm`し、結果を確認します。 データは、バインドされた DHTML テーブルに表示されます。 
+3. Internet Explorer 4.0 以降を使用して、URL `https://<sqlserver>/XMLPersist/default.htm`を開き、結果を確認します。 The data is displayed in a bound DHTML table. 
 
-4. URL を開くようになりました`https://<sqlserver>/XMLPersist/XMLResponse.asp`し、結果を確認します。 XML が表示されます。
+4. 次に、URL `https://<sqlserver>/XMLPersist/XMLResponse.asp`を開いて結果を確認します。 The XML is displayed.
 
 
 

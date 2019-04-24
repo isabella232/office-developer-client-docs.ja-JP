@@ -1,5 +1,5 @@
 ---
-title: 静的カーソル (デスクトップ データベース参照のアクセス)
+title: 静的カーソル (Access デスクトップデータベースリファレンス)
 TOCTitle: Static cursors
 ms:assetid: 1acf7fc5-fb12-e59e-f480-dde378a29c53
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248950(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2eb019a6fc960d58771ff5ab0de7dca547c55f1c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308541"
 ---
 # <a name="static-cursors"></a>静的カーソル
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 静的カーソルは、カーソルを最初に開いたときの状態の結果セットを常に表示します。実装によって、静的カーソルは読み取り専用または読み取り/書き込みのいずれかで、前方および後方のスクロール機能を提供します。通常、静的カーソルでは、カーソルを開いた後にメンバーシップ、順序、または結果セットの値に加えられた変更を検出しません。静的カーソルは、カーソル自体の更新、削除、および挿入を検出できますが、そのような機能は不要です。
 

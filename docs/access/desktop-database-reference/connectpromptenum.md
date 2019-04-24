@@ -1,5 +1,5 @@
 ---
-title: ConnectPromptEnum (デスクトップ データベース参照のアクセス)
+title: ConnectPromptEnum (Access デスクトップデータベースリファレンス)
 TOCTitle: ConnectPromptEnum
 ms:assetid: 81dff685-b2e4-467e-75cc-b8c5bf80fb75
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249561(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 54643a66316d7f534553c20ecc3aafdf755fb857
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295668"
 ---
 # <a name="connectpromptenum"></a>ConnectPromptEnum
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 データ ソースとの接続を開くときに、不足しているパラメーターを要求するダイアログ ボックスを表示するかどうかを表します。
 
@@ -37,30 +37,30 @@ ms.locfileid: "28701110"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>される</strong></p></td>
-<td><p>1</p></td>
+<td><p><strong>adpromptalways</strong></p></td>
+<td><p>1-d</p></td>
 <td><p>常に要求します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adPromptComplete</strong></p></td>
-<td><p>2</p></td>
+<td><p><strong>adpromptcomplete</strong></p></td>
+<td><p>pbm-2</p></td>
 <td><p>さらに情報が必要な場合に要求します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adPromptCompleteRequired</strong></p></td>
-<td><p>3</p></td>
+<td><p>1/3</p></td>
 <td><p>さらに情報が必要だが、任意のパラメーターが禁止されている場合に要求します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adPromptNever</strong></p></td>
-<td><p>4</p></td>
+<td><p><strong>adpromptnever</strong></p></td>
+<td><p>2/4</p></td>
 <td><p>要求しません。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC に相当
+### <a name="adowfc-equivalent"></a>ADO/WFC と同等
 
 パッケージ: **com.ms.wfc.data**
 
@@ -75,16 +75,16 @@ ms.locfileid: "28701110"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.ConnectPrompt.ALWAYS</p></td>
+<td><p>AdoEnums。常に</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.ConnectPrompt.COMPLETE</p></td>
+<td><p>AdoEnums の完全なメッセージ</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.ConnectPrompt.COMPLETEREQUIRED</p></td>
+<td><p>AdoEnums COMPLETEREQUIRED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.ConnectPrompt.NEVER</p></td>
+<td><p>AdoEnums のメッセージを表示しない</p></td>
 </tr>
 </tbody>
 </table>

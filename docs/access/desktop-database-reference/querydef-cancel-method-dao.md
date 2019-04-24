@@ -1,5 +1,5 @@
 ---
-title: QueryDef.Cancel メソッド (DAO)
+title: QueryDef メソッド (DAO)
 TOCTitle: Cancel Method
 ms:assetid: 91e61012-c01c-4c24-185c-bdadb7f33a58
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197642(v=office.15)
@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 56a4ba804dba25eb0b4722bcf5396229ee003f43
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301121"
 ---
-# <a name="querydefcancel-method-dao"></a>QueryDef.Cancel メソッド (DAO)
+# <a name="querydefcancel-method-dao"></a>QueryDef メソッド (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ## <a name="syntax"></a>構文
 
-*式*です。キャンセル
+*式*。キャンセル
 
-*式***クエリ定義**オブジェクトを表す変数です。
+*式***QueryDef**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
-**Cancel**メソッドを使用して、**実行**または**されます**メソッドの非同期呼び出しの実行を中止する (つまり、メソッドが dbRunAsync オプションを指定して呼び出されました)。 終了するメソッドで dbRunAsync が使用できない場合、**キャンセル**実行時エラー戻ります。
+**Cancel**メソッドを使用して、非同期の**Execute**メソッドまたは**openconnection**メソッドの呼び出し (つまり、dbrunasync オプションを指定してメソッドが呼び出された場合) の実行を終了します。 終了しようとしているメソッドで dbrunasync が使用されていない場合、 **Cancel**は実行時エラーを返します。
 

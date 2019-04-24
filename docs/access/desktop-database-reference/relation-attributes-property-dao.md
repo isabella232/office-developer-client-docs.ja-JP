@@ -1,5 +1,5 @@
 ---
-title: Relation.Attributes プロパティ (DAO)
+title: Relation プロパティ (DAO)
 TOCTitle: Attributes Property
 ms:assetid: db19d2ad-5965-214c-211d-9a8eb9c3c522
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835337(v=office.15)
@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2dc6bd5ccc607854ab59de51bdb96d9ceebe1acf
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309115"
 ---
-# <a name="relationattributes-property-dao"></a>Relation.Attributes プロパティ (DAO)
+# <a name="relationattributes-property-dao"></a>Relation プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**Relation** オブジェクトの 1 つまたは複数の属性を示す値を設定または取得します。値の取得および設定が可能です。長整数型 ( **Long**) の値を使用します。
+**Relation**オブジェクトの1つ以上の特性を示す値を設定または取得します。 値の取得と設定が可能な長整数型 (**Long**) の値です。
 
 ## <a name="syntax"></a>構文
 
-*式*です。属性
+*式*。Attributes
 
-*式***Relation**オブジェクトを表す変数です。
+*式***Relation**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
@@ -33,7 +33,7 @@ ms.locfileid: "28708887"
 
 ## <a name="example"></a>例
 
-次の例では、Northwind データベースの **Field**、 **Relation**、および **TableDef** の各オブジェクトの **Attributes** プロパティを表示します。
+この例では、ノースウィンド データベースの **Field**、**Relation**、および **TableDef** の各オブジェクトの **Attributes** プロパティを表示します。
 
 ```vb 
 Sub AttributesX() 

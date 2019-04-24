@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c929bcf5dc7f5267c2e7d3a8dac5ed6bfb55b20b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302878"
 ---
 # <a name="propertyattributesenum"></a>PropertyAttributesEnum
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [Property](property-object-ado.md) オブジェクトの属性を表します。
 
@@ -37,26 +37,26 @@ ms.locfileid: "28717266"
 <tbody>
 <tr class="odd">
 <td><p><strong>adPropNotSupported</strong></p></td>
-<td><p>0</p></td>
+<td><p>.0</p></td>
 <td><p>プロバイダーがプロパティをサポートしていないことを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adPropRequired</strong></p></td>
-<td><p>1</p></td>
+<td><p><strong>adproprequired</strong></p></td>
+<td><p>1-d</p></td>
 <td><p>データ ソースを初期化するには、ユーザーがこのプロパティ値を指定する必要があることを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adPropOptional</strong></p></td>
-<td><p>2</p></td>
+<td><p><strong>adpropoptional すべて</strong></p></td>
+<td><p>pbm-2</p></td>
 <td><p>ユーザーがこのプロパティ値を指定しなくてもデータ ソースを初期化できることを表します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adPropRead</strong></p></td>
+<td><p><strong>adpropread</strong></p></td>
 <td><p>512</p></td>
 <td><p>ユーザーがプロパティを読み取り可能であることを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adPropWrite</strong></p></td>
+<td><p><strong>adpropwrite</strong></p></td>
 <td><p>1024</p></td>
 <td><p>ユーザーがプロパティを設定できることを示します。</p></td>
 </tr>
@@ -64,7 +64,7 @@ ms.locfileid: "28717266"
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC に相当
+### <a name="adowfc-equivalent"></a>ADO/WFC と同等
 
 パッケージ: **com.ms.wfc.data**
 
@@ -79,19 +79,19 @@ ms.locfileid: "28717266"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.PropertyAttributes.NOTSUPPORTED</p></td>
+<td><p>AdoEnums NOTSUPPORTED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.PropertyAttributes.REQUIRED</p></td>
+<td><p>AdoEnums 属性。必須</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.PropertyAttributes.OPTIONAL</p></td>
+<td><p>AdoEnums 属性。省略可能</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.PropertyAttributes.READ</p></td>
+<td><p>AdoEnums 属性を取得します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.PropertyAttributes.WRITE</p></td>
+<td><p>AdoEnums の作成</p></td>
 </tr>
 </tbody>
 </table>

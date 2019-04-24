@@ -1,5 +1,5 @@
 ---
-title: Recordset.EditMode プロパティ (DAO)
+title: Recordset プロパティ (DAO)
 TOCTitle: EditMode Property
 ms:assetid: 3cf67f64-c8c3-ad0a-ce00-6f37a3c264ee
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192697(v=office.15)
@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 326f23f95f9ccf8763f76b21df8955c39198a88c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307652"
 ---
-# <a name="recordseteditmode-property-dao"></a>Recordset.EditMode プロパティ (DAO)
+# <a name="recordseteditmode-property-dao"></a>Recordset プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 カレント レコードの編集状態を示す値を返します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。EditMode
+*式*。EditMode
 
-*式***レコード セット**オブジェクトを表す変数です。
+*式***Recordset**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 

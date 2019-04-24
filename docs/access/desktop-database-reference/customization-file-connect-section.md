@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8652aa2c028350aab79cdf101cba189026b9a5ae
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295143"
 ---
 # <a name="customization-file-connect-section"></a>カスタマイズ ファイルの Connect セクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ハンドラーの既定の動作では、すべての接続が拒否されます。 **connect** セクションで、この動作の例外を指定します。たとえば、 **connect** セクションが 1 つもないか、あっても空の場合、既定では接続は行われません。
 
@@ -43,7 +43,7 @@ ms.locfileid: "28702853"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>引数</p></th>
+<th><p>パーツ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
@@ -53,7 +53,7 @@ ms.locfileid: "28702853"
 <td><p>これが接続文字列のエントリであることを示すリテラル文字列。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><em>接続文字列</em></strong></p></td>
+<td><p><strong><em>connectionString</em></strong></p></td>
 <td><p>クライアントのすべての接続文字列を置き換える文字列。</p></td>
 </tr>
 <tr class="odd">
@@ -61,9 +61,8 @@ ms.locfileid: "28702853"
 <td><p>これがアクセス エントリであることを示すリテラル文字列。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><em>アクセス権</em></strong></p></td>
-<td><p>次のアクセス権のいずれかを指定します。
-</p>
+<td><p><strong><em>accessright</em></strong></p></td>
+<td><p>次のアクセス権のいずれかを指定します。</p>
 <p></p>
 <ul>
 <li><p><strong>NoAccess</strong> ユーザーは、データ ソースにアクセスできません。</p></li>
@@ -76,5 +75,5 @@ ms.locfileid: "28702853"
 </table>
 
 
-(この効果を使用して、ハンドラーの既定の動作を無効にする) のすべての接続を許可して、[**既定の接続**] セクションでアクセス エントリを設定、削除、または任意の他の**接続***識別子*のセクションをコメントにする場合。
+すべての接続を許可する (つまり、既定のハンドラー動作を無効にする) 場合は、[ **connect default** ] セクションの [access] エントリをに設定し、[他の**接続***識別子*を削除またはコメントアウトする] セクションを追加します。
 

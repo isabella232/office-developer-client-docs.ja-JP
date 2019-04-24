@@ -1,5 +1,5 @@
 ---
-title: 接続のプロパティ、メソッド、およびイベント (ADO)
+title: Connection のプロパティ、メソッド、およびイベント (ADO)
 TOCTitle: Properties, Methods, and Events
 ms:assetid: e78329a4-0b90-9ae5-f3d7-e56815a396fd
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250174(v=office.15)
@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e1fa956a5045e9678c45c74a160e3bb80e78e627
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295843"
 ---
-# <a name="connection-properties-methods-and-events-ado"></a>接続のプロパティ、メソッド、およびイベント (ADO)
+# <a name="connection-properties-methods-and-events-ado"></a>Connection のプロパティ、メソッド、およびイベント (ADO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ## <a name="propertiescollections"></a>プロパティ/コレクション
 
-- [属性のプロパティ](attributes-property-ado.md)
+- [Attributes プロパティ](attributes-property-ado.md)
 - [CommandTimeout プロパティ](commandtimeout-property-ado.md)
 - [ConnectionString プロパティ](connectionstring-property-ado.md)
 - [ConnectionTimeout プロパティ](connectiontimeout-property-ado.md)
@@ -37,17 +37,17 @@ ms.locfileid: "28721529"
 
 ## <a name="methods"></a>メソッド
 
-- [BeginTrans、CommitTrans、および RollbackTrans メソッド](begintrans-committrans-and-rollbacktrans-methods-ado.md)
+- [BeginTrans メソッド、CommitTrans メソッド、RollbackTrans メソッド](begintrans-committrans-and-rollbacktrans-methods-ado.md)
 - [Cancel メソッド](cancel-method-ado.md)
 - [Close メソッド](close-method-ado.md)
-- [メソッド (ADO 接続の場合) を実行します。](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection)
+- [Execute メソッド (ADO Connection)](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection)
 - [Open メソッド (ADO Connection)](open-method-ado-connection.md)
 - [OpenSchema メソッド](openschema-method-ado.md)
 
 
 ## <a name="events"></a>イベント
 
-- [BeginTransComplete、CommitTransComplete、および RollbackTransComplete イベント](begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md)
+- [BeginTransComplete イベント、CommitTransComplete イベント、RollbackTransComplete イベント](begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md)
 - [ConnectComplete イベントと Disconnect イベント](connectcomplete-and-disconnect-events-ado.md)
 - [ExecuteComplete イベント](executecomplete-event-ado.md)
 - [InfoMessage イベント](infomessage-event-ado.md)

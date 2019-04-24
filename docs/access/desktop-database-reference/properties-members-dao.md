@@ -1,5 +1,5 @@
 ---
-title: プロパティのメンバー (DAO)
+title: Properties メンバー (DAO)
 TOCTitle: Properties Members
 ms:assetid: 04cd45ae-3a1e-6090-534d-de10363744c4
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844853(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 137616721dab202e0122ccf8947d2a20a7a0509d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301261"
 ---
-# <a name="properties-members-dao"></a>プロパティのメンバー (DAO)
+# <a name="properties-members-dao"></a>Properties メンバー (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-Properties コレクションには、オブジェクトの特定のインスタンスのすべての **[Property](property-object-dao.md)** オブジェクトが含まれます。
+Properties コレクションには、オブジェクトの特定のインスタンスのすべての**[Property](property-object-dao.md)** オブジェクトが含まれています。
 
 ## <a name="methods"></a>メソッド
 

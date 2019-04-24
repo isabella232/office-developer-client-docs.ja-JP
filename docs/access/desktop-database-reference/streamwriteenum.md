@@ -1,5 +1,5 @@
 ---
-title: StreamWriteEnum (デスクトップ データベース参照のアクセス)
+title: streamwriteenum (Access デスクトップデータベースリファレンス)
 TOCTitle: StreamWriteEnum
 ms:assetid: b4356999-d7a8-abfa-f6a8-6c2dd04b9257
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249861(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 87144e5409fb54cf0cb8f59ad4d593ab05d694a4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308478"
 ---
 # <a name="streamwriteenum"></a>StreamWriteEnum
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [Stream](stream-object-ado.md) オブジェクトに書き込む文字列に、行区切り記号を追加するかどうかを表します。
 
@@ -38,19 +38,19 @@ ms.locfileid: "28706171"
 <tbody>
 <tr class="odd">
 <td><p><strong>adWriteChar</strong></p></td>
-<td><p>0</p></td>
+<td><p>.0</p></td>
 <td><p>既定値。<strong>Stream</strong> オブジェクトに、<em>Data</em> パラメーターで指定したテキスト文字列を書き込みます。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adWriteLine</strong></p></td>
-<td><p>1</p></td>
+<td><p><strong>adwriteline</strong></p></td>
+<td><p>1-d</p></td>
 <td><p><strong>Stream</strong> オブジェクトに、テキスト文字列と行区切り記号を書き込みます。<a href="lineseparator-property-ado.md">LineSeparator</a> プロパティが定義されていない場合は、実行時エラーを返します。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC に相当
+### <a name="adowfc-equivalent"></a>ADO/WFC と同等
 
 これらの定数に ADO/WFC 等価はありません。
 

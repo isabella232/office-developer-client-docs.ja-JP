@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a85faf900860dabb809a10a92985559b7a7cf2ef
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297131"
 ---
 # <a name="append-method-ado"></a>Append メソッド (ADO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 コレクションにオブジェクトを追加します。コレクションが [Fields](fields-collection-ado.md) である場合は、コレクションに追加する前に、新しい [Field](field-object-ado.md) オブジェクトを作成できます。
 
 ## <a name="syntax"></a>構文
 
-*コレクション*です。*オブジェクト*を追加します。
+*コレクション*。Append*オブジェクト*
 
-*フィールド*です。*名前*、*種類*、 *DefinedSize*、 *Attrib* *FieldValue*を追加します。
+*フィールド*。Append *Name*、 *Type*、*未定義サイズ*、 *Attrib*、 *FieldValue*
 
 ## <a name="parameters"></a>パラメーター
 
@@ -39,7 +39,7 @@ ms.locfileid: "28706080"
 |*Attrib* |省略可能です。新しいフィールドの属性を指定する [FieldAttributeEnum](fieldattributeenum.md) 値です。既定値は **adFldDefault** です。値を指定しないと、*Type* に基づく属性が設定されます。|
 |*FieldValue* |省略可能です。新しいフィールドの値を表すバリアント型 ( **Variant** ) の値です。値を指定しないと、フィールドは Null 値で追加されます。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 ### <a name="parameters-collection"></a>Parameters コレクション
 
@@ -51,7 +51,7 @@ ms.locfileid: "28706080"
 
 ### <a name="fields-collection"></a>Fields コレクション
 
-*FieldValue*パラメーターは、**レコード セット**オブジェクトではなく、 [Record](record-object-ado.md)オブジェクトに**Field**オブジェクトを追加する場合にのみ有効です。 **Record** オブジェクトは、フィールドの追加と値の設定を同時に行うことができます。 **Recordset** オブジェクトの場合は、 **Recordset** を閉じた状態でフィールドを作成し、その後、 **Recordset** を開いてフィールドに値を設定する必要があります。
+*FieldValue* パラメーターは、**Field** オブジェクトを [Record](record-object-ado.md) オブジェクトに (**Recordset** オブジェクトではなく) 追加する場合にのみ有効です。**Record** オブジェクトは、フィールドの追加と値の設定を同時に行うことができます。**Recordset** オブジェクトの場合は、**Recordset** を閉じた状態でフィールドを作成し、その後、**Recordset** を開いてフィールドに値を設定する必要があります。
 
 
 > [!NOTE]
@@ -62,7 +62,7 @@ ms.locfileid: "28706080"
 
 ### <a name="recordset"></a>Recordset
 
-[CursorLocation](cursorlocation-property-ado.md) プロパティを設定しないで **Append** メソッドを呼び出した場合、 **Recordset** オブジェクトの **Open** メソッドを呼び出すと、 [CursorLocation](cursorlocationenum.md) が自動的に [adUseClient](recordset-object-ado.md) ( [CursorLocationEnum](open-method-ado-recordset.md) 値) に設定されます。
+[CursorLocation](cursorlocation-property-ado.md) プロパティを設定しないで **Append** メソッドを呼び出した場合、[Recordset](recordset-object-ado.md) オブジェクトの [Open](open-method-ado-recordset.md) メソッドを呼び出すと、**CursorLocation** が自動的に **adUseClient** ([CursorLocationEnum](cursorlocationenum.md) 値) に設定されます。
 
 開いている **Recordset** の **Fields** コレクションで、または **ActiveConnection** プロパティが設定されている **Recordset** で [Append](activeconnection-property-ado.md) メソッドを呼び出すと、実行時エラーが発生します。フィールドを追加できるのは、開かれておらず、まだデータ ソースに接続されていない **Recordset** に対してだけです。通常、これは、 **Recordset** オブジェクトが、 [CreateRecordset](createrecordset-method-rds.md) メソッドで作成されている場合、またはオブジェクト変数に割り当てられている場合です。
 

@@ -1,5 +1,5 @@
 ---
-title: Recordset.BatchCollisions プロパティ (DAO)
+title: Recordset プロパティ (DAO)
 TOCTitle: BatchCollisions Property
 ms:assetid: 53e5572b-770c-9ea5-31a5-984abdf66faa
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194079(v=office.15)
@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 61f60567ac170a0ecde2d4bd46589d2308b7788f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300862"
 ---
-# <a name="recordsetbatchcollisions-property-dao"></a>Recordset.BatchCollisions プロパティ (DAO)
+# <a name="recordsetbatchcollisions-property-dao"></a>Recordset プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ## <a name="syntax"></a>構文
 
-*式*です。BatchCollisions
+*式*。BatchCollisions
 
-*式***レコード セット**オブジェクトを表す変数です。
+*式***Recordset**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
@@ -33,5 +33,5 @@ ms.locfileid: "28700374"
 
 競合するレコードを修正した後、バッチモードの **Update** メソッドを再び呼び出すことができます。ここで DAO はもう一度バッチ更新を試み、再び **BatchCollisions** プロパティに、2 回目の実行で失敗したレコードのセットが反映されます。以前の実行が正常に終了したレコードは、 **[RecordStatus](recordset-recordstatus-property-dao.md)** プロパティが dbRecordUnmodified に設定されているため、現在の実行には送信されません。このプロセスは、競合が発生する限り続行できますが、更新を中止して結果セットを閉じることもできます。
 
-この配列は、バッチモードの **Update** メソッドを実行するたびに再作成されます。
+この配列は、バッチ モード **Update** メソッドを実行するたびに再作成されます。
 

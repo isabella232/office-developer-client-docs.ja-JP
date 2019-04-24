@@ -12,20 +12,20 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: c978a6a227266fa43c1102fc109be2b81262de8e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296123"
 ---
 # <a name="commandtype-property-ado"></a>CommandType プロパティ (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [Command](command-object-ado.md) オブジェクトの型を示します。
 
-## <a name="settings-and-return-values"></a>設定値および戻り値
+## <a name="settings-and-return-values"></a>設定値と戻り値
 
 1 つまたは複数の [CommandTypeEnum](commandtypeenum.md) 値を設定または取得します。
 
@@ -33,7 +33,7 @@ ms.locfileid: "28717147"
 > [!メモ] **CommandType** では、 **adCmdFile** または **adCmdTableDirect** の **CommandTypeEnum** 値を使用しないでください。これらの値は、 [Recordset](open-method-ado-recordset.md) の [Open](requery-method-ado.md) メソッドと [Requery](recordset-object-ado.md) メソッドのオプションとしてのみ使用することができます。
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **CommandType** プロパティは、 [CommandText](commandtext-property-ado.md) プロパティの評価を最適化するために使用します。
 

@@ -1,5 +1,5 @@
 ---
-title: Recordset2.FillCache メソッド (DAO)
+title: Recordset2 メソッド (DAO)
 TOCTitle: FillCache Method
 ms:assetid: 28a70997-a8d4-73e6-171a-61286e3d3485
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192007(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 2098df82375ac47b7d5abe0bd63b0af2bb29ba40
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309703"
 ---
-# <a name="recordset2fillcache-method-dao"></a>Recordset2.FillCache メソッド (DAO)
+# <a name="recordset2fillcache-method-dao"></a>Recordset2 メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-Microsoft Access データベース エンジンに接続している ODBC データ ソースのデータを格納している **Recordset** オブジェクトについて、ローカル キャッシュの全部または一部にデータを格納します (Microsoft Access データベース エンジンに接続している ODBC データベースのみ)。
+Microsoft Access データベース エンジンに接続されている ODBC データ ソースからのデータを格納する、 **Recordset** オブジェクト用のローカル キャッシュの全体または一部を埋めます (Microsoft Access データベース エンジンに接続された ODBC データベースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。FillCache (***行***、 ***StartBookmark***)
+*式*。FillCache (***Rows***、 ***startbookmark***)
 
-*式***Recordset2**オブジェクトを表す変数です。
+*式***Recordset2**オブジェクトを表す変数を取得します。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -50,15 +50,15 @@ Microsoft Access データベース エンジンに接続している ODBC デ�
 <tbody>
 <tr class="odd">
 <td><p><em>Rows</em></p></td>
-<td><p>省略可能</p></td>
-<td><p><strong>Variant (バリアント型)</strong></p></td>
-<td><p>キャッシュに格納する行数を表す、サブタイプが整数型 (<strong>Integer</strong>) であるバリアント型 (<strong>Variant</strong>) の値。この引数を省略した場合、<strong><a href="recordset2-cachesize-property-dao.md">CacheSize</a></strong> プロパティの設定値によって値が指定されます。</p></td>
+<td><p>Optional</p></td>
+<td><p><strong>Variant</strong></p></td>
+<td><p>キャッシュに格納する行の数を指定する、サブタイプが整数型 (<strong>Integer</strong>) のバリアント型 (<strong>Variant</strong>) の値です。 この引数を省略すると、値は<strong><a href="recordset2-cachesize-property-dao.md">CacheSize</a></strong>プロパティの設定によって決まります。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>StartBookmark</em></p></td>
-<td><p>省略可能</p></td>
-<td><p><strong>Variant (バリアント型)</strong></p></td>
-<td><p>ブックマークを表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。このブックマークで示されたレコードから、キャッシュへの読み込みが開始されます。この引数を省略した場合、<strong><a href="recordset2-cachestart-property-dao.md">CacheStart</a></strong> プロパティによって示されたレコードから、キャッシュへの読み込みが開始されます。</p></td>
+<td><p>Optional</p></td>
+<td><p><strong>Variant</strong></p></td>
+<td><p>ブックマークを指定する、サブタイプが文字列型 (<strong>String</strong>) のバリアント型 (<strong>Variant</strong>) の値です。 このブックマークで示されたレコードを始点としてキャッシュが埋められます。 この引数を省略すると、 <strong><a href="recordset2-cachestart-property-dao.md">cachestart</a></strong>プロパティによって示されたレコードから、キャッシュに格納されます。</p></td>
 </tr>
 </tbody>
 </table>
@@ -66,23 +66,23 @@ Microsoft Access データベース エンジンに接続している ODBC デ�
 
 ## <a name="remarks"></a>注釈
 
-キャッシュを使用すると、リモート サーバーからデータを取得するアプリケーションのパフォーマンスが向上します。キャッシュは、サーバーから最近取得したデータを格納しておくローカル メモリ内の領域ですが、これはアプリケーションの実行中にそのデータが再び要求されるであろうということを前提としています。サーバーからデータを取得するにはキャッシュ内のデータを使用するよりも時間がかかるため、ユーザーがデータが要求すると、そのデータがキャッシュにないかが最初に調べられます。ODBC データベース ソース以外からのデータはキャッシュに保存されません。
+キャッシュを使用すると、リモート サーバーからデータを取得するアプリケーションのパフォーマンスが向上します。キャッシュは、直近に取得されたデータを保持するローカル メモリ内の領域で、アプリケーションの実行中にそのデータが再び要求されることを想定したものです。ユーザーがデータを要求すると、Microsoft Access データベース エンジンは、サーバーからそのデータを取得するのではなく、まずキャッシュにそのデータが保持されているかどうかを確認します。これは、前者の方法では時間がかかるからです。キャッシュには、ODBC データ ソース以外のデータは保存されません。
 
-取得されたレコードがそのつどキャッシュに格納されるのを待つ代わりに、任意の時点で **FillCache** メソッドを使用して、明示的にキャッシュに格納できます。 **FillCache** を使用すると、レコードが 1 つずつではなく、一度にまとめて格納されるため、処理速度が向上します。たとえば、アプリケーションでは、画面にレコードを表示している間に、 **FillCache** を使用して次に表示する画面のレコードを取得します。
+**FillCache** メソッドを使用すると、レコードの取得によってキャッシュが埋まるまで待たなくても、いつでも明示的にキャッシュを埋めることができます。 **FillCache** では、一度に 1 レコードずつではなく、複数のレコードが取得されるため、キャッシュをより迅速に埋めることができます。たとえば、レコードを画面いっぱいに表示している場合、アプリケーションでは、 **FillCache** を使用して、次に表示する画面いっぱいのレコードが取得されます。
 
-Microsoft Access データベース エンジンに接続している ODBC データ ソースに **Recordset** オブジェクトを使用してアクセスする場合は、ローカル キャッシュを設定できます。キャッシュを作成するには、リモート データ ソースから **Recordset** オブジェクトを開き、次に **Recordset** の **CacheSize** プロパティと **CacheStart** プロパティを設定します。
+**Recordset** オブジェクトを使用してアクセスする Microsoft Access データベース エンジンに接続されたすべての ODBC データ ソースには、ローカル キャッシュを割り当てることができます。キャッシュを作成するには、リモート データ ソースから **Recordset** オブジェクトを開き、 **Recordset** の **CacheSize** プロパティと **CacheStart** プロパティを設定します。
 
-行および startbookmark は、レコードの一部がはみ出しているのか、 **CacheSize**プロパティと**CacheStart**プロパティで指定されたレコードの範囲の完全に外側の範囲を作成する場合、この範囲外のレコード セットの一部は無視され、読み込まれなくなりますキャッシュします。
+rows および startbookmark では、 **CacheSize**プロパティと**cachestart**プロパティで指定されたレコード範囲の一部または全体の外側にある範囲のレコードが作成される場合、この範囲外の recordset の部分は無視され、読み込まれません。をキャッシュに入れます。
 
-**FillCache** で要求したレコードの数がリモート データ ソースに残っているレコードの数よりも多い場合は、残りのレコードのみが取得され、エラーは発生しません。
+**FillCache** によって要求されたレコード数が、リモート データ ソースに残っているレコード数を上回っている場合、Microsoft Access データベース エンジンは、残っているレコードのみを取得します。この場合、エラーは発生しません。
 
 > [!NOTE]
 > - キャッシュから取得したレコードには、他のユーザーが平行してソース データに加えた変更は反映されていません。
-> - **FillCache** では、まだキャッシュされていないレコードのみが取得されます。キャッシュされたすべてのデータの更新を強制実行するには、 **Recordset** の **CacheSize** をいったん 0 に設定し、当初に要求したキャッシュのサイズに再び設定してから、 **FillCache** を使用します。
+> - **FillCache** では、まだキャッシュされていないレコードだけが取得されます。キャッシュされたすべてのデータを強制的に更新するには、 **Recordset** の **CacheSize** プロパティを 0 に設定し、最初に要求したキャッシュのサイズにリセットしてから、 **FillCache** を使用します。
 
 ## <a name="example"></a>例
 
-次の使用例では、 **CreateTableDef** メソッドと **FillCache** メソッド、および **CacheSize**、 **CacheStart**、 **SourceTableName** の各プロパティを使用して、リンク テーブルのレコードを 2 回列挙します。次に、50 件のレコードをキャッシュして、すべてのレコードを 2 回列挙します。最後に、リンク テーブルを使用して、キャッシュされていない実行とキャッシュされた実行のパフォーマンス統計を表示します。
+次の例では、 **CreateTableDef** メソッドと **FillCache** メソッド、および **CacheSize**、 **CacheStart**、 **SourceTableName** の各プロパティを使用して、リンクされたテーブルのレコードを 2 回列挙します。その後、50 レコードのキャッシュを使用してレコードを 2 回列挙します。さらに、リンクされたテーブルの処理にキャッシュを使用しなかった場合と使用した場合のパフォーマンス統計を表示します。
 
 ```vb
     Sub ClientServerX3() 

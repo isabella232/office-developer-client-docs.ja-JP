@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d2bf2479c2a34291f245783ebaecd75ba31d2ac8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297075"
 ---
 # <a name="append-method-adox-tables"></a>Append メソッド (ADOX Tables)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 新しい [Table](table-object-adox.md) オブジェクトを [Tables](tables-collection-adox.md) コレクションに追加します。
 
 ## <a name="syntax"></a>構文
 
-*テーブル*です。*テーブル*を追加します。
+*表**テーブル*の追加
 
 ## <a name="parameters"></a>パラメーター
 
@@ -30,7 +30,7 @@ ms.locfileid: "28706059"
 |:--------|:----------|
 |*Table* | 追加する **Table** への参照を含むバリアント型 ( **Variant** ) の値、または作成して追加するテーブルの名前を指定します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 プロバイダーがテーブルの作成をサポートしていない場合は、エラーが発生します。
 

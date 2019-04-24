@@ -1,5 +1,5 @@
 ---
-title: 列とテーブルの追加方法、名前プロパティの使用例 (VB)
+title: 列とテーブルの Append メソッドと Name プロパティの使用例 (VB)
 TOCTitle: Columns and Tables Append Methods, Name property example (VB)
 ms:assetid: 39458400-f30c-0636-19f2-c2c2788a6534
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249140(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d68078c24f2bee9f935b71d60cb15986d26d00ac
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296228"
 ---
-# <a name="columns-and-tables-append-methods-name-property-example-vb"></a>列とテーブルの追加方法、名前プロパティの使用例 (VB)
+# <a name="columns-and-tables-append-methods-name-property-example-vb"></a>列とテーブルの Append メソッドと Name プロパティの使用例 (VB)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 次のコードでは、新しいテーブルの作成方法を示します。
 

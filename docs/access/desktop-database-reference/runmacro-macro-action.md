@@ -12,15 +12,15 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: d9e86fb7d60af94d6ecde71b2a857a3cc5b9bcb8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306854"
 ---
 # <a name="runmacro-macro-action"></a>RunMacro マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **RunMacro** アクションを使用すると、マクロを実行できます。マクロ グループ内のマクロも実行できます。
 
@@ -32,9 +32,9 @@ ms.locfileid: "28712338"
 
 - 独自のメニュー コマンドにマクロを割り当てる場合
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
-**RunMacro** アクションの引数は次のとおりです。
+"**RunMacro**/マクロの実行" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -49,8 +49,8 @@ ms.locfileid: "28712338"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>マクロ名</strong></p></td>
-<td><p>実行するマクロの名前を指定します。 マクロ ビルダー] ウィンドウの [<strong>マクロ名</strong>] ボックス、[<strong>アクションの引数</strong>] セクションでは、現在のデータベース内のすべてのマクロ (およびマクロ グループ) を示しています。 マクロがマクロ グループ内にある場合は、リストにマクロ グループ名の下<em>中</em>として表示されます。<em>マクロ名</em>です。 この引数は省略できません。 <strong>ライブラリ データベースでこのアクション</strong>を含むマクロを実行すると、Access はライブラリ データベースでこの名前のマクロを検索し、現在のデータベース内に正しく表示されないです。</p></td>
+<td><p><strong>Macro Name/マクロ名</strong></p></td>
+<td><p>The name of the macro to run. The <strong>Macro Name</strong> box in the <strong>Action Arguments</strong> section of the Macro Builder pane shows all macros (and macro groups) in the current database. マクロがマクログループ内にある場合は、 <em>macrogroupname</em>としてリストのマクログループ名の下に一覧表示されます。<em>macroname</em> This is a required argument. If you run a macro containing the <strong>RunMacro</strong> action in a library database, Microsoft Access looks for the macro with this name in the library database and doesn't look for it in the current database.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Repeat Count/実行回数</strong></p></td>
@@ -58,14 +58,14 @@ ms.locfileid: "28712338"
 </tr>
 <tr class="odd">
 <td><p><strong>Repeat Expression/繰り返し条件式</strong></p></td>
-<td><p><strong>True</strong> (-1) または<strong>False</strong> (0) に評価される式を指定します。 式が <strong>False</strong> に評価される場合、マクロの実行は停止します。 この式は、マクロを実行するたびに評価されます。</p></td>
+<td><p><strong>True</strong> (–1) または <strong>False</strong> (0) に評価される式を指定します。式が <strong>False</strong> に評価される場合、マクロの実行は停止します。この式は、マクロを実行するたびに評価されます。</p></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**Macro Name/マクロ名** 引数にマクロ グループ名を入力すると、マクロ グループ内の最初のマクロが実行されます。
+**Macro Name/マクロ名**引数にマクロ グループ名を入力すると、マクロ グループ内の最初のマクロが実行されます。
 
 このアクションの動作は、[ **データベース ツール**] タブの [ **マクロの実行**] をクリックし、マクロを選択して、[ **OK**] をクリックした場合と同じです。ただし、このコマンドではマクロを 1 回だけ実行するのに対し、 **RunMacro** アクションでは必要なだけ何回でもマクロを実行できます。
 

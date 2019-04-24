@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 58bde31a3386e3c129933d02e6464de5bc18fd68
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308625"
 ---
 # <a name="sortorder-property-example-vb"></a>SortOrder プロパティの使用例 (VB)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 この例では、[Index](sortorder-property-adox.md) の [Columns](column-object-adox.md) コレクションに追加された [Column](columns-collection-adox.md) の [SortOrder](index-object-adox.md) プロパティの機能を示します。このコードは、 **Employees** テーブルの Country 列に昇順のインデックスを追加してレコードを表示します。次に、 **Employees** テーブルの Country 列に降順のインデックスを追加して、レコードを再表示します。これにより、昇順と降順のインデックスの違いを示します。
 

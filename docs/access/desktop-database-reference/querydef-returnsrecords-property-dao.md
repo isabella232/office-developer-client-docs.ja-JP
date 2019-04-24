@@ -1,5 +1,5 @@
 ---
-title: QueryDef.ReturnsRecords プロパティ (DAO)
+title: ReturnsRecords プロパティ (DAO)
 TOCTitle: ReturnsRecords Property
 ms:assetid: 3d1e538b-4d60-588f-4a20-89f1e2b434e6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192701(v=office.15)
@@ -12,30 +12,30 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 7d2202aa506750cd0a0d2a84eea5c507c3bb1147
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303340"
 ---
-# <a name="querydefreturnsrecords-property-dao"></a>QueryDef.ReturnsRecords プロパティ (DAO)
+# <a name="querydefreturnsrecords-property-dao"></a>ReturnsRecords プロパティ (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 外部データベースに対する SQL パススルー クエリでレコードを返すかどうかを示す値を設定または取得します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。ReturnsRecords
+*式*。ReturnsRecords
 
-*式***クエリ定義**オブジェクトを表す変数です。
+*式***QueryDef**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
 外部データベースに対するすべての SQL パススルー クエリで、レコードが返されるわけではありません。たとえば、SQL UPDATE ステートメントでは、レコードを返さずにレコードを更新しますが、SQL SELECT ステートメントではレコードを返します。クエリでレコードが返される場合、 **ReturnsRecords** プロパティは **True** に設定されます。クエリでレコードが返されない場合、 **ReturnsRecords** プロパティは **False** に設定されます。
 
 > [!NOTE]
-> [!メモ] [ReturnsRecords](querydef-connect-property-dao.md) プロパティを設定する前に、 ****Connect**** プロパティを設定する必要があります。
+> **ReturnsRecords**プロパティを設定する前に、 **[Connect](querydef-connect-property-dao.md)** プロパティを設定する必要があります。
 
 ## <a name="example"></a>例
 

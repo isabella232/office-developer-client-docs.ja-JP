@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: ac1a2c8a603fb74b56d71f73605455ecdbc87035
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308695"
 ---
 # <a name="setfilter-macro-action"></a>SetFilter マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**SetFilter**アクションを使用すると、アクティブなデータシート、フォーム、レポート、またはテーブル内のレコードにフィルターを適用します。
+"SetFilter/フィルターの実行" アクションを使用すると、アクティブ データシート、アクティブ フォーム、アクティブ レポート、またはアクティブ テーブルのレコードに対してフィルターを適用できます。
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
-**SetFilter**アクションには、次の引数があります。
+"SetFilter/フィルターの実行" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -41,12 +41,12 @@ ms.locfileid: "28698681"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Filter Name</p></td>
-<td><p>指定した場合は、クエリの名前、またはクエリとして保存されているフィルターの名前です。 クライアント データベースでこの引数または WhereCondition 引数が必要です。 Web データベースでこの引数は使用できません。</p></td>
+<td><p>Filter Name/フィルター名</p></td>
+<td><p>指定した場合は、クエリの名前、またはクエリとして保存されているフィルターの名前。 クライアントデータベースでは、この引数または WhereCondition 引数は必須です。 web データベースでは、この引数は使用できません。</p></td>
 </tr>
 <tr class="even">
-<td><p>Where Condition</p></td>
-<td><p>指定した場合は、データシート、フォーム、レポート、またはテーブルでレコードを制限する SQL WHERE 句を示します。 Web データベースでは、この引数が必要です。</p></td>
+<td><p>Where Condition/Where 条件式</p></td>
+<td><p>指定した場合は、データシート、フォーム、レポート、またはテーブルのレコードを制限する SQL WHERE 句。 web データベースでは、この引数は必須です。</p></td>
 </tr>
 <tr class="odd">
 <td><p>コントロール名</p></td>
@@ -58,21 +58,21 @@ ms.locfileid: "28698681"
 
 ## <a name="remarks"></a>注釈
 
-Web データベースでは、"Where Condition/Where 条件式" 引数の先頭に (=) を付けることはできません。
+Web データベースでは、Where Condition 引数の先頭に (=) を付けることはできません。
 
 このアクションを実行すると、アクティブであり、かつフォーカスがあるテーブル、フォーム、レポート、またはデータシート (クエリ結果など) に対してフィルターが適用されます。
 
 アクティブなオブジェクトの **Filter** プロパティを使用すると、"WhereCondition/Where 条件式" 引数を保存して、後で適用できます。フィルターは、それを作成したオブジェクトに保存されます。そのオブジェクトが開くと自動的に読み込まれますが、自動的に適用されることはありません。
 
-クライアントでは、オブジェクトが開かれると、自動的にフィルターを適用するのには、データベースは、 **FilterOnLoad**プロパティを True に設定します。
+クライアントデータベースで、オブジェクトを開いたときにフィルターを自動的に適用するには、 **FilterOnLoad**プロパティを True に設定します。
 
-Web データベースでは、オブジェクトを開いたときに自動的にフィルターを適用するに**SetFilter**アクションをマクロに追加でオブジェクトの**OnLoad**イベントにマクロを追加します。
+Web データベースで、オブジェクトを開いたときにフィルターを自動的に適用するには、マクロに "SetFilter/フィルターの実行" アクションを追加し、このマクロをオブジェクトの OnLoad イベントに追加します。
 
 ## <a name="example"></a>例
 
-次の例では、 SetFilter アクションを使用して、マクロが定義されているフォームにフィルターを適用する方法を示します。
+次の例では、SetFilter アクションを使用して、マクロが定義されているフォームにフィルターを適用する方法を示します。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     OpenForm

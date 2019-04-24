@@ -1,5 +1,5 @@
 ---
-title: Recordset.LockEdits プロパティ (DAO)
+title: LockEdits プロパティ (DAO)
 TOCTitle: LockEdits Property
 ms:assetid: baa11b24-a330-eaa4-bd03-b8b9739d209e
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822514(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 54f91dea98f4f47057eb673a0fae08c8ac2b6f1c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300463"
 ---
-# <a name="recordsetlockedits-property-dao"></a>Recordset.LockEdits プロパティ (DAO)
+# <a name="recordsetlockedits-property-dao"></a>LockEdits プロパティ (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 編集時に有効になるロック状態の種類を示す値を設定または取得します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。LockEdits
+*式*。LockEdits
 
-*式***レコード セット**オブジェクトを表す変数です。
+*式***Recordset**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
@@ -47,12 +47,12 @@ ms.locfileid: "28707711"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>True</p></td>
+<td><p>正しい</p></td>
 <td><p>既定値です。排他的ロックが有効になります。Edit メソッドを呼び出した直後に、編集中のレコードが含まれているページがロックされます。</p></td>
 </tr>
 <tr class="even">
-<td><p>False</p></td>
-<td><p>オプティミスティック ロックが有効を編集するためです。 Update メソッドが実行されるまで、レコードを含むページはロックされていません。</p></td>
+<td><p>誤り</p></td>
+<td><p>編集に対して共有的ロックが有効になります。 Update メソッドが実行されるまで、record を含むページはロックされません。</p></td>
 </tr>
 </tbody>
 </table>
@@ -67,7 +67,7 @@ ms.locfileid: "28707711"
 Microsoft Access データベース エンジンに接続された ODBC データ ソースを使用する場合は、 **LockEdits** プロパティを常に **False** に設定するか、または共有的ロックを有効にします。Microsoft Access データベース エンジンは、外部のデータベース サーバーで使用されるロック機能に対する制御は行いません。
 
 > [!NOTE]
-> **[何らか](connection-openrecordset-method-dao.md)** のメソッドの引数 lockedits を設定して**レコード セット**を開いたとき、 **LockEdits**の値を事前設定できます。 Lockedits 引数を**dbPessimistic**に設定に**は True**、 **LockEdits**プロパティが設定され、設定 lockedits を他の任意の値には**False**に**LockEdits**プロパティを設定します。
+> **[OpenRecordset](connection-openrecordset-method-dao.md)** メソッドの引数 lockedits を事前に設定しておくと、初めて **Recordset** オブジェクトを開くときに **LockEdits** プロパティの値を設定できます。 引数 lockedits を **dbPessimistic** に設定すると **LockEdits** プロパティが **True** に設定され、lockedits をそれ以外の値に設定すると **LockEdits** プロパティが **False** に設定されます。
 
 ## <a name="example"></a>例
 

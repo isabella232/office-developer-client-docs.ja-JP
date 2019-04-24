@@ -1,5 +1,5 @@
 ---
-title: 新機能では、ActiveX データ オブジェクト (ADO)
+title: ActiveX Data Objects (ADO) の新機能
 TOCTitle: What's new in ADO
 ms:assetid: fd3d0f9c-e9df-d130-13e3-757620e9400c
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250297(v=office.15)
@@ -8,39 +8,39 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 593daf08da1b4ce435d17f2a6deedfa3e89dbd32
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302612"
 ---
 # <a name="whats-new-in-ado"></a>ADO の新機能
 
-**適用されます**Access 2013、Office 2013。 
+**適用先:** Access 2013、Office 2013 
  
-ADO 2.5 リリースには、次に示す新機能および拡充されたマニュアルが含まれています。この一覧では、ADO、ADO MD、および ADOX を扱っています。
+ADO 2.5 リリースには、次に示す新機能および拡充されたマニュアルが含まれています。 この一覧では、ADO、ADO MD、および ADOX を扱っています。
 
 ## <a name="new-features"></a>新機能
 
 - **[レコードとストリーム](chapter-10-records-and-streams.md)**
 
-  ADO の今回のリリースでは、[レコード](record-object-ado.md)オブジェクトを表し、ファイル ・ システム、およびフォルダーやメッセージの電子メール システムのディレクトリやファイルなどを管理できますが導入されています。 **Record** は [Recordset](recordset-object-ado.md) の行を表すこともできますが、 **Record** オブジェクトと **Recordset** オブジェクトでは、メソッドおよびプロパティが異なります。
+  このリリースの ADO には、ファイルシステム内のディレクトリやファイル、電子メールシステム内のフォルダーやメッセージなどを表す、または管理する[Record](record-object-ado.md)オブジェクトが導入されています。 **Record** は [Recordset](recordset-object-ado.md) の行を表すこともできますが、 **Record** オブジェクトと **Recordset** オブジェクトでは、メソッドおよびプロパティが異なります。
 
   新しい [Stream](stream-object-ado.md) オブジェクトは、ファイルやメッセージのストリームを構成するバイトまたはテキストのバイナリ ストリームの読み取り、書き込み、および管理を行うための手段を提供します。
 
-- **[URL の使用方法](absolute-and-relative-urls.md)**
+- **[URL の使用状況](absolute-and-relative-urls.md)**
 
   このリリースでは、データ ストア オブジェクトを指定するための接続文字列やコマンド テキストに代わる手段として、Uniform Resource Locator (URL) の使用が導入されました。URL は、既存の [Connection](connection-object-ado.md) オブジェクトや **Recordset** オブジェクトだけでなく、新しい **Record** オブジェクトや **Stream** オブジェクトでも使用できます。
 
-  このリリースでは、ADO では、独自の URL スキームを認識する OLE DB プロバイダーがサポートしています。 などの[OLE DB プロバイダー](microsoft-ole-db-provider-for-internet-publishing.md)*,* 、Windows 2000 ファイル システムをアクセスするには、既存の HTTP スキームを認識します。
+  With this release, ADO supports OLE DB providers that recognize their own URL schemes. たとえば、Windows 2000 ファイルシステムにアクセスする[OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md)** は、既存の HTTP スキームを認識します。
 
-- **[ドキュメント ソース プロバイダー用の特殊なフィールド](records-and-provider-supplied-fields.md)**
+- **[ドキュメントソースプロバイダー用の特殊なフィールド](records-and-provider-supplied-fields.md)**
 
-  プロバイダーでは、*ドキュメント ソース*プロバイダーと呼ばれる特別なクラスでは、フォルダーやドキュメントを管理します。 ドキュメントを表す**Record**オブジェクトまたは**Recordset**オブジェクトがドキュメントのフォルダーを表す、ドキュメント ソース プロバイダーは、ドキュメントの特性を記述したフィールドの一意なセットでこれらのオブジェクトを作成します。 これらのフィールドは、*リソース***の Record**または**Recordset**を構成します。
+  *ドキュメントソース*プロバイダーと呼ばれる、プロバイダーの特別なクラスで、フォルダーとドキュメントを管理します。 When a **Record** object represents a document, or a **Recordset** object represents a folder of documents, the document source provider populates those objects with a unique set of fields that describe characteristics of the document. これらのフィールドは、*リソース***レコード**または**レコードセット**を構成します。
 
-## <a name="new-reference-topics"></a>新しいリファレンス トピック
+## <a name="new-reference-topics"></a>新しいリファレンストピック
 
-### <a name="properties"></a>Properties
+### <a name="properties"></a>プロパティ
 
 このリリースでは、以下の新しいプロパティが組み込まれました。
 
@@ -57,20 +57,20 @@ ADO 2.5 リリースには、次に示す新機能および拡充されたマニ
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="charset-property-ado.md">文字セット</a></p></td>
+<td><p><a href="charset-property-ado.md">Charset</a></p></td>
 <td><p>テキスト <strong>Stream</strong> オブジェクトの変換後の文字セットを示します。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="eos-property-ado.md">EOS</a></p></td>
-<td><p>現在の位置がストリームの末尾にあるかどうかを示します。</p></td>
+<td><p>現在の位置がストリームの最後かどうかを示します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lineseparator-property-ado.md">LineSeparator</a></p></td>
-<td><p>テキスト <strong>Stream</strong> オブジェクトの行区切り文字として使用するバイナリ文字を示します。</p></td>
+<td><p>テキスト <strong>Stream</strong> オブジェクトで行区切り文字として使用するバイナリ文字を示します。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="mode-property-ado.md">Mode</a></p></td>
-<td><p><strong>Connection</strong> オブジェクト、 <strong>Record</strong> オブジェクト、または <strong>Stream</strong> オブジェクトで使用可能なデータ変更権限を示します。</p></td>
+<td><p><strong>Connection</strong>、<strong>Record</strong>、または <strong>Stream</strong> オブジェクトでデータを変更するために使用できる権限を示します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="parenturl-property-ado.md">ParentURL</a></p></td>
@@ -94,10 +94,10 @@ ADO 2.5 リリースには、次に示す新機能および拡充されたマニ
 </tr>
 <tr class="even">
 <td><p><a href="state-property-ado.md">State</a></p></td>
-<td><p>対象になるすべてのオブジェクトについて、オブジェクトの状態が開いているか、閉じているかを示します。 非同期メソッドを実行する対象になるすべてのオブジェクトについて、オブジェクトの状態が接続、実行、取得のいずれであるかを示します。</p></td>
+<td><p>対象になるすべてのオブジェクトについて、オブジェクトの状態が開いているか、閉じているかを示します。 非同期メソッドを実行しているオブジェクトで該当するものすべてについて、オブジェクトの現在の状態が接続中、実行中、または取得中のいずれであるかを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="type-property-ado-stream.md">型</a></p></td>
+<td><p><a href="type-property-ado-stream.md">Type</a></p></td>
 <td><p><strong>Stream</strong> オブジェクトに含まれるデータの種類を示します (バイナリまたはテキスト)。</p></td>
 </tr>
 </tbody>
@@ -120,19 +120,19 @@ ADO 2.5 リリースには、次に示す新機能および拡充されたマニ
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="copyrecord-method-ado.md">定義</a></p></td>
+<td><p><a href="copyrecord-method-ado.md">CopyRecord</a></p></td>
 <td><p>ファイルまたはディレクトリとその内容を、別の場所にコピーします。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="copyto-method-ado.md">CopyTo</a></p></td>
-<td><p><strong>ストリーム</strong><strong>オブジェクト</strong>で、指定した文字数またはバイト (<strong>の種類</strong>) によって異なりますを別の<strong>Stream</strong>オブジェクトにコピーします。</p></td>
+<td><p><strong>stream</strong> <strong>オブジェクト</strong>内の指定された文字数またはバイト数 (<strong>型</strong>によって異なります) を別の<strong>stream</strong>オブジェクトにコピーします。</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="deleterecord-method-ado.md">DeleteRecord</a></p></td>
 <td><p>ファイルまたはディレクトリとそのすべてのサブディレクトリを削除します。</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="flush-method-ado.md">フラッシュ</a></p></td>
+<td><p><a href="flush-method-ado.md">揃え</a></p></td>
 <td><p>ADO バッファーに残っている <strong>Stream</strong> オブジェクトの内容を、<strong>Stream</strong> オブジェクトに関連付けられた、基になるオブジェクトに反映します。</p></td>
 </tr>
 <tr class="odd">
@@ -144,7 +144,7 @@ ADO 2.5 リリースには、次に示す新機能および拡充されたマニ
 <td><p>既存のファイルの内容を、<strong>Stream</strong> オブジェクトに読み込みます。</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="moverecord-method-ado.md">関係</a></p></td>
+<td><p><a href="moverecord-method-ado.md">MoveRecord</a></p></td>
 <td><p>ファイルまたはディレクトリとその内容を、別の場所に移動します。</p></td>
 </tr>
 <tr class="even">
@@ -153,15 +153,15 @@ ADO 2.5 リリースには、次に示す新機能および拡充されたマニ
 </tr>
 <tr class="odd">
 <td><p><a href="open-method-ado-stream.md">Open</a></p></td>
-<td><p>バイナリ データまたはテキスト データのストリームを操作するために <strong>Stream</strong> オブジェクトを開きます。</p></td>
+<td><p>バイナリ データまたはテキスト データのストリームを操作するための <strong>Stream</strong> オブジェクトを開きます。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="read-method-ado.md">Read</a></p></td>
-<td><p>バイナリ型の <strong>Stream</strong> オブジェクトから、指定されたバイト数を読み取ります。</p></td>
+<td><p>バイナリ <strong>Stream</strong> オブジェクトから、指定されたバイト数を読み取ります。</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="readtext-method-ado.md">ReadText</a></p></td>
-<td><p>文字列型の <strong>Stream</strong> オブジェクトから、指定された文字数を読み取ります。</p></td>
+<td><p>テキスト <strong>Stream</strong> オブジェクトから、指定された文字数を読み取ります。</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="savetofile-method-ado.md">SaveToFile</a></p></td>
@@ -187,11 +187,11 @@ ADO 2.5 リリースには、次に示す新機能および拡充されたマニ
 </table>
 
 
-## <a name="new-and-enhanced-documentation"></a>新規および拡充されたドキュメント
+## <a name="new-and-enhanced-documentation"></a>新機能と強化されたドキュメント
 
 - **[コード例のトピック](ado-code-examples.md)**
 
-  例は、Microsoft Visual C++、Microsoft Visual j で記述されたコード例を格納するために展開されています。 これらのコード例は、コピーしてエディターに貼り付けることができます。
+  この例は、microsoft visual C++ および microsoft visual J++ で記述されたコード例を含むように展開されています。 これらのコード例は、コピーしてエディターに貼り付けることができます。
 
 - **[プロバイダーのトピック](appendix-a-providers.md)**
 
@@ -199,5 +199,5 @@ ADO 2.5 リリースには、次に示す新機能および拡充されたマニ
 
 - **[ADO を使ったプログラミング](appendix-c-programming-with-ado.md)**
 
-  この新しいセクションには、さまざまなプログラミング言語で ADO を使用するためのヒントが含まれます。 ADO と ADO/WFC と、新しい情報を開発者が Microsoft Visual Basic、Microsoft Visual Basic Scripting Edition、Microsoft JScript、Microsoft Visual C++ を使用して特定の Visual C++ の拡張機能のための既存の構文インデックスが含まれていますかMicrosoft Visual J では。
+  この新しいセクションには、さまざまなプログラミング言語で ADO を使用するためのヒントが含まれます。 このファイルには、ado および ado/WFC 用の Visual C++ 拡張機能のための既存の構文インデックスと、microsoft visual basic、microsoft visual basic Scripting Edition、microsoft JScript、microsoft visual C++、またはその他の開発者に固有の新しい情報が含まれています。Microsoft Visual J++。
 

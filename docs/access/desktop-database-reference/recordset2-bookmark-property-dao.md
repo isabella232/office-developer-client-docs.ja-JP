@@ -1,5 +1,5 @@
 ---
-title: Recordset2.Bookmark プロパティ (DAO)
+title: Recordset2 プロパティ (DAO)
 TOCTitle: Bookmark Property
 ms:assetid: 7366d550-2f72-ed10-b230-eb144a6f874b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195857(v=office.15)
@@ -8,34 +8,34 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 31791e9fb3c7081989232e36a90b184ed7e31866
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307449"
 ---
-# <a name="recordset2bookmark-property-dao"></a>Recordset2.Bookmark プロパティ (DAO)
+# <a name="recordset2bookmark-property-dao"></a>Recordset2 プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **Recordset** オブジェクト内のカレント レコードを一意に識別するブックマークを設定または取得します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。ブックマーク
+*式*。ブックマーク
 
-*式***Recordset2**オブジェクトを表す変数です。
+*式***Recordset2**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
-**レコード セット**オブジェクトを Microsoft Access データベース エンジンのテーブルを基に、 **Bookmarkable**プロパティの値は、true の場合、およびそのレコード セットの**Bookmark**プロパティを使用することができます。 ただし、他のデータベース製品はブックマークをサポートしていない場合があります。 たとえば、主キーを持たないリンク テーブルの Paradox に準拠する **Recordset2** オブジェクトではブックマークを使用できません。
+Microsoft access データベースエンジンのテーブルを基にした**Recordset**オブジェクトの場合、 **Bookmarkable**プロパティの値は True になり、その recordset で**Bookmark**プロパティを使用できます。 ただし、他のデータベース製品はブックマークをサポートしていない場合があります。 たとえば、主キーを持たないリンク テーブルの Paradox に準拠する **Recordset2** オブジェクトではブックマークを使用できません。
 
 **Recordset** オブジェクトを作成するか開くと、その各レコードは既に一意のブックマークを持っています。 **Bookmark** プロパティの値を変数に代入することにより、カレント レコードのブックマークを保存できます。別のレコードに移動した後、 **Recordset** オブジェクトの **Bookmark** プロパティをその変数の値に設定すると、いつでもそのレコードに戻ることができます。
 
-作成できるブックマークの数に制限はありません。カレント レコード以外のレコードのブックマークを作成するには、目的のレコードに移動してから、そのレコードを識別する文字列型 ( **String** ) の変数に **Bookmark** プロパティの値を代入します。
+作成できるブックマークの数に制限はありません。カレント レコード以外のレコードのブックマークを作成するには、目的のレコードに移動してから、そのレコードを識別する文字列型 ( **String**) の変数に **Bookmark** プロパティの値を代入します。
 
-**Recordset** オブジェクトでブックマークがサポートされるかどうかを確認するには、 [Bookmark](recordset2-bookmarkable-property-dao.md) プロパティを使用する前に、 ****Bookmarkable**** プロパティの値を調べます。 **Bookmarkable**プロパティが False の場合は、 **Recordset**オブジェクトがブックマークをサポートしていませんし、**ブックマーク**を使用してプロパティをトラップ可能なエラーの結果です。
+**Recordset** オブジェクトでブックマークがサポートされるかどうかを確認するには、**Bookmark** プロパティを使用する前に、**[Bookmarkable](recordset2-bookmarkable-property-dao.md)** プロパティの値を調べます。 **Bookmarkable**プロパティが False の場合、 **Recordset**オブジェクトはブックマークをサポートしていません。 **Bookmark**プロパティを使用すると、トラップ可能なエラーになります。
 
 **[Clone](recordset2-clone-method-dao.md)** メソッドを使用して **Recordset** オブジェクトのコピーを作成した場合、複製元および複製された **Recordset** オブジェクトの **Bookmark** プロパティの設定は同一になり、相互に使用することができます。一方、異なる **Recordset** オブジェクトのブックマークは、たとえ同一のオブジェクトまたは同一の SQL ステートメントを使用して作成したものであっても、相互に使用することはできません。
 

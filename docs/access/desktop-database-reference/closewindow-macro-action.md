@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 4397846abdc0d10b6bfa0e6a1eb5c0c435fc862a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296291"
 ---
 # <a name="closewindow-macro-action"></a>CloseWindow マクロ アクション
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 " **CloseWindow/ウィンドウを閉じる** " アクションを使用すると、指定した Access ドキュメント タブを閉じることができます。何も指定しない場合は、アクティブなドキュメント タブが閉じます。
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**CloseWindow**アクションには、次の引数があります。
+"CloseWindow/ウィンドウを閉じる" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -46,14 +46,14 @@ ms.locfileid: "28709853"
 <td><p>ドキュメント タブを閉じるオブジェクトの種類を指定します。[マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>オブジェクトの種類</strong>] ボックスの一覧で [ <strong>テーブル</strong>]、[ <strong>クエリ</strong>]、[ <strong>フォーム</strong>]、[ <strong>レポート</strong>]、[ <strong>マクロ</strong>]、[ <strong>モジュール</strong>]、[ <strong>データ アクセス ページ</strong>]、[ <strong>サーバー ビュー</strong>]、[ <strong>ダイアグラム</strong>]、[ <strong>ストアド プロシージャ</strong>]、[ <strong>関数</strong>] のいずれかをクリックします。アクティブなドキュメント タブを選択する場合は、この引数を指定しません。  </p>
 
 > [!NOTE]
-> モジュールでは、Visual Basic エディターを終了する場合、**オブジェクトの型**引数に**モジュール**を使用する必要があります。
+> Visual Basic Editor でモジュールを閉じる場合は、"Object Type/オブジェクトの種類" 引数に "モジュール" を指定する必要があります。
 
 
 <p></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Object Name/オブジェクト名</strong></p></td>
-<td><p>閉じるオブジェクトの名前。 [ <strong>オブジェクト名</strong> ] ボックスには、データベース内のオブジェクトのうち、" <strong>Object Type/オブジェクトの種類</strong> " 引数で選択した種類のオブジェクトがすべて表示されます。 閉じるオブジェクトをクリックします。 <strong>オブジェクトの型</strong>引数を空白のままにする場合は、この引数を指定しないも。</p></td>
+<td><p>The name of the object to be closed. The <strong>Object Name</strong> box shows all objects in the database of the type selected by the <strong>Object Type</strong> argument. Click the object to close. If you leave the <strong>Object Type</strong> argument blank, leave this argument blank also.  </p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Save/オブジェクトの保存</strong></p></td>
@@ -63,11 +63,11 @@ ms.locfileid: "28709853"
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**CloseWindow**アクションは、すべてのユーザーが明示的に開くことができるデータベース オブジェクトまたは閉じる動作します。 このアクションは、オブジェクトを選択して、オブジェクトのドキュメント タブを右クリックして [ショートカット] メニューの [**閉じる**] をクリックしてしたり、オブジェクトの**閉じる**ボタンをクリックして終了すると同じ効果を持ちます。
+The **CloseWindow** action works on all database objects that the user can explicitly open or close. This action has the same effect as selecting an object and then closing it by right-clicking the object's document tab and then clicking **Close** on the shortcut menu, or clicking the **Close** button for the object.
 
-**保存**引数は、**プロンプト**に設定されて、 **CloseWindow**アクションを実行する前にオブジェクトが保存されていない場合は、マクロが終了する前にオブジェクトを保存するのにを求めるダイアログ ボックスが表示されます。 **よって**の**警告の**引数を**No**に設定した場合ダイアログ ボックスが表示されないと、オブジェクトが自動的に保存します。
+If the **Save** argument is set to **Prompt** and the object hasn't already been saved before the **CloseWindow** action is carried out, a dialog box prompts the user to save the object before the macro closes it. If you have set the **Warnings On** argument of the **SetWarnings** action to **No**, the dialog box is not displayed and the object is automatically saved.
 
-**CloseWindow**アクションを Visual Basic for Applications (VBA) のモジュールで実行するには、 **DoCmd**オブジェクトの**CloseWindow**メソッドを使用します。
+To run the **CloseWindow** action in a Visual Basic for Applications (VBA) module, use the **CloseWindow** method of the **DoCmd** object.
 

@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f2c7697d4ae8b830afb53eee10e7dd59a7dc8db4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296165"
 ---
 # <a name="command-object-overview"></a>Command オブジェクトの概要
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **Command** オブジェクトのコレクション、メソッド、およびプロパティを使用すると、次の操作を実行できます。
 

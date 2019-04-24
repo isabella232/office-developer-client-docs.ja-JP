@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: ce16b86ea06e041d490d0c68917daf18bd80dbb6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306721"
 ---
 # <a name="renameobject-macro-action"></a>RenameObject マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**RenameObject**アクションを使用するには、指定されたデータベース オブジェクトの名前を変更します。
+You can use the **RenameObject** action to rename a specified database object.
 
 > [!NOTE]
 > [!メモ] データベースが信頼されていない場合、このアクションは許可されません。
 
 ## <a name="setting"></a>設定値
 
-**RenameObject**アクションには、次の引数があります。
+"RenameObject/オブジェクト名の変更" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -53,23 +53,23 @@ ms.locfileid: "28698387"
 </tr>
 <tr class="odd">
 <td><p><strong>Old Name/古い名前</strong></p></td>
-<td><p>名前を変更するオブジェクトの名前。 <strong>古い名前</strong>] ボックスでは、<strong>オブジェクトの種類</strong>の引数で選択した種類のデータベース内のすべてのオブジェクトを示しています。 <strong>オブジェクトの型</strong>引数を空白のままにする場合は、この引数を指定しないも。</p><p><strong>注</strong>: 場合は、ライブラリ データベースで<STRONG>名前を変更</STRONG>アクションを含むマクロを実行すると、最初の検索にライブラリ データベースで、し、[現在のデータベース内にこの名前のオブジェクト。</p></td>
+<td><p>名前を変更するオブジェクトの名前を指定します。 [<strong>以前の名前</strong>] ボックスには、<strong>オブジェクトの種類</strong>の引数で選択した種類のデータベースのすべてのオブジェクトが表示されます。 If you leave the <strong>Object Type</strong> argument blank, leave this argument blank also.</p><p><strong>注</strong>: ライブラリデータベースで " <STRONG>Rename/名前の変更</STRONG>" アクションを含むマクロを実行すると、この名前のオブジェクトが、最初にライブラリデータベースで検索され、次にカレントデータベースで検索されます。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 データベース オブジェクトの新しい名前は、Access のオブジェクトの名前付け規則に従う必要があります。
 
 開いているオブジェクトの名前は変更できません。
 
-**オブジェクトの種類**と、**古い名前**の引数を空白のままにする場合は、ナビゲーション ウィンドウで選択したオブジェクトが変更されます。 ナビゲーション ウィンドウでオブジェクトを選択するには、 **[はい]** に設定**をナビゲーション ウィンドウ**に引数を指定して**SelectObject**アクションを使用できます。
+If you leave the **Object Type** and **Old Name** arguments blank, Access renames the object selected in the Navigation Pane. To select an object in the Navigation Pane, you can use the **SelectObject** action with the **In Navigation Pane** argument set to **Yes**.
 
-ナビゲーション ウィンドウで右クリックし、**名前の変更**をクリックすると新しい名前を入力して、オブジェクトを変更することもできます。 **RenameObject**アクションでは、ナビゲーション ウィンドウでオブジェクトを最初に選択する必要はありませんし、新しい名前を入力するマクロを停止する必要はありません。
+You can also rename an object by right-clicking it in the Navigation Pane, clicking **Rename**, and entering a new name. With the **RenameObject** action, you don't have to select the object first in the Navigation Pane, and you don't have to stop the macro to enter the new name.
 
-このアクションは、 **CopyObject**アクションの新しい名前の下にあるオブジェクトのコピーが作成されるとは異なります。
+This action differs from the **CopyObject** action, which creates a copy of the object under a new name.
 
-Visual Basic for Applications (VBA) モジュールに**RenameObject**アクションを実行するには、 **DoCmd**オブジェクトの**Rename**メソッドを使用します。
+To run the **RenameObject** action in a Visual Basic for Applications (VBA) module, use the **Rename** method of the **DoCmd** object.
 

@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b706ffed14fdb440f3c3192c7c36015343f2e134
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300925"
 ---
 # <a name="raiseerror-macro-action"></a>RaiseError マクロ アクション
 
-**適用されます**Access 2013、Office 2013。 
+**適用先:** Access 2013、Office 2013 
 
-**RaiseError**アクションは、**[エラー時](onerror-macro-action.md)** のマクロ アクションで処理できる例外をスローします。
+The **RaiseError** action throws an exception that can be handled by the **[OnError](onerror-macro-action.md)** macro action.
 
 > [!NOTE]
-> [!メモ] " **RaiseError** /エラーの生成" アクションは、データ マクロでのみ使用できます。
+> The **RaiseError** action is available only in Data Macros.
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
-**RaiseError**アクションには、次の引数があります。
+"RaiseError/エラーの生成" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -42,7 +42,7 @@ ms.locfileid: "28726037"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Error Number/エラー番号</p></td>
+<td><p>エラー番号</p></td>
 <td><p>はい</p></td>
 <td><p>長整数型のデータ入力に解決される数値または式。</p></td>
 </tr>
@@ -57,13 +57,13 @@ ms.locfileid: "28726037"
 
 ## <a name="remarks"></a>注釈
 
-**RaiseError**アクションは、**[前に変更](before-change-macro-event.md)** または**[削除をする前に](before-delete-macro-event.md)** マクロのイベントで呼び出されると、イベントはキャンセルされます。
+If the **RaiseError** action is called in a **[Before Change](before-change-macro-event.md)** or **[Before Delete](before-delete-macro-event.md)** macro event, the event is cancelled.
 
-エラーの処理は、**エラー時**のアクティブなステートメントがない場合、 **RaiseError**操作によってスローされたエラーは、 **USysApplicationLog**システム ・ テーブルに追加されます。 **RaiseError**の動作は、 **USysApplicationLog**テーブルに書き込み、 **[カテゴリ**] 列が自動的に**実行**する設定します。
+If there is not an active **OnError** statment that is handling errors, then the error thrown by the **RaiseError** action is added to the **USysApplicationLog** system table. When the **RaiseError** action to writes to the **USysApplicationLog** table, the **Category** column is automatically set to **Execution**.
 
-**USysApplicationLog**テーブルを表示するには、次の手順に従います。
+To see the **USysApplicationLog** table, use the following steps:
 
-1.  [**ファイル**] メニューのをクリックし、[**オプション**] をクリックします。
+1.  [**ファイル**] メニューをクリックし、[**オプション**] をクリックします。
 
 2.  [ **Access のオプション**] ダイアログ ボックスで [ **カレント データベース**] タブをクリックします。
 
@@ -75,9 +75,9 @@ ms.locfileid: "28726037"
 
 ## <a name="example"></a>例
 
-次の例は、" RaiseError" アクションを使用して Before Change データ マクロ イベントを取り消す方法を示します。 AssignedTo フィールドが更新されると、 LookupRecord データ ブロックを使用して、割り当てられた技術者が未解決サービス リクエストに現在割り当てられているかどうかが確認されます。 これが true の場合は、変更する前にイベントをキャンセルするとレコードは更新されません。
+次の例は、" RaiseError" アクションを使用して Before Change データ マクロ イベントを取り消す方法を示します。 AssignedTo フィールドが更新されると、 LookupRecord データ ブロックを使用して、割り当てられた技術者が未解決サービス リクエストに現在割り当てられているかどうかが確認されます。 これが true の場合、Before Change イベントは取り消され、レコードは更新されません。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     /* Get the name of the technician  */
