@@ -1,5 +1,5 @@
 ---
-title: プロバイダー テーブル
+title: プロバイダーテーブル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,24 +8,24 @@ api_type:
 - COM
 ms.assetid: 99709a4c-cb52-436e-a322-02ded5d65ce5
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ccc51f33ff681021492949c2180fe70940157f4f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2b81f4aebae692d28ed492df102d59ba34debf63
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328463"
 ---
-# <a name="provider-tables"></a>プロバイダー テーブル
+# <a name="provider-tables"></a>プロバイダーテーブル
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロバイダー テーブルには、サービス プロバイダーに関する情報が含まれています。 別のプロバイダーの 2 つのテーブルは、MAPI によって実装され、クライアントによって使用される両方。 アクセス、 [IMsgServiceAdmin::GetProviderTable](imsgserviceadmin-getprovidertable.md)メソッドを呼び出すことによって、最初の表は、すべての現在のプロファイル プロバイダーに関する情報を保持します。 2 番目のテーブルでは、 [IProviderAdmin::GetProviderTable](iprovideradmin-getprovidertable.md)を使用してアクセスは、すべてのメッセージ サービスのサービス プロバイダーに関する情報を格納するテーブルを作成します。
+プロバイダーテーブルには、サービスプロバイダーに関する情報が含まれています。 2つの異なるプロバイダーテーブルがあり、両方とも MAPI によって実装され、クライアントによって使用されます。 [IMsgServiceAdmin:: getprovidertable](imsgserviceadmin-getprovidertable.md)メソッドを呼び出してアクセスする最初のテーブルは、現在のプロファイルのすべてのプロバイダーに関する情報を保持します。 [IProviderAdmin:: getprovidertable](iprovideradmin-getprovidertable.md)を通じてアクセスされる2番目の表は、メッセージサービスのすべてのサービスプロバイダーに関する情報を格納するテーブルを作成します。
   
-これら 2 つのテーブルには、他の違いがあります。 **IMsgServiceAdmin::GetProviderTable**を通じて利用可能なプロバイダーのテーブルには、サービス ・ プロバイダーを表し、 **IProviderAdmin::GetProviderTable**を使用可能なテーブルを表す行を含めることがある行だけが含まれています。サービス プロバイダーに関連付けられている追加の情報です。 MAPISVC.INF の「項目」キーワードを使用してプロファイルには、この余分な情報が追加されます。 プロバイダーに追加のプロファイル セクションが設定されているときは、 **PR_SERVICE_EXTRA_UIDS** ([PidTagServiceExtraUids](pidtagserviceextrauids-canonical-property.md)) のプロパティでこれらのセクションで**MAPIUID**の値を格納します。 **PR_SERVICE_EXTRA_UIDS**は、サービス プロファイルの [メッセージ] セクションに保存されます。 
+これらの2つのテーブルには別の違いがあります。 **IMsgServiceAdmin:: getprovidertable**で利用できるプロバイダテーブルには、サービスプロバイダを表す行のみが含まれていますが、 **IProviderAdmin:: getprovidertable**を通じて使用可能な表には、を表す行を含めることができます。サービスプロバイダーに関連付けられている追加情報。 この追加情報は、mapisvc.inf の "Sections" キーワードを使用してプロファイルに追加されます。 プロバイダーに特別なプロファイルセクションがある場合は、これらのセクションの**MAPIUID**値を**PR_SERVICE_EXTRA_UIDS** ([PidTagServiceExtraUids](pidtagserviceextrauids-canonical-property.md)) プロパティに格納します。 **PR_SERVICE_EXTRA_UIDS**は、[メッセージサービスプロファイル] セクションに保存されます。 
   
-次のプロパティは、必須の列が両方の種類のプロバイダーのテーブルで設定を構成します。
+次のプロパティは、両方の種類のプロバイダーテーブルで必要な列セットを作成します。
   
 |||
 |:-----|:-----|
@@ -35,11 +35,11 @@ ms.locfileid: "22566139"
 |**PR_RESOURCE_FLAGS**([PidTagResourceFlags](pidtagresourceflags-canonical-property.md))  <br/> |**PR_RESOURCE_TYPE**([PidTagResourceType](pidtagresourcetype-canonical-property.md))  <br/> |
 |**PR_SERVICE_NAME**([PidTagServiceName](pidtagservicename-canonical-property.md))  <br/> |**PR_SERVICE_UID**([PidTagServiceUid](pidtagserviceuid-canonical-property.md))  <br/> |
    
-現在のトランスポートの順番を表示する、またはそれを変更するのには、プロバイダーのテーブルを使用できます。 現在の注文を表示するには、MAPI_TRANSPORT_PROVIDER に**PR_RESOURCE_TYPE**プロパティを使用してこれらの行だけを取得するために制限を作成します。 使用して**PR_PROVIDER_ORDINAL**の並べ替えキーとしてテーブルを並べ替えるし、 [IMAPITable::QueryRows](imapitable-queryrows.md)メソッドまたは[HrQueryAllRows](hrqueryallrows.md)関数のいずれかでのすべての行を取得します。 
+プロバイダーテーブルを使用して、現在のトランスポート順序を表示したり、変更したりすることができます。 現在の順序を表示するには、 **PR_RESOURCE_TYPE**プロパティが MAPI_TRANSPORT_PROVIDER に設定されている行のみを取得する制限を作成します。 その後、 **PR_PROVIDER_ORDINAL**を並べ替えキーとして使用して、テーブルを並べ替え、 [IMAPITable:: QueryRows](imapitable-queryrows.md)メソッドまたは[hrqueryallrows](hrqueryallrows.md)関数のいずれかを使用してすべての行を取得します。 
   
-トランスポートの順番を変更するに同じ制限を適用し、行を取得します。 トランスポート プロバイダーの一意の識別子を表す、 **PR_PROVIDER_UID**プロパティからの値の配列を作成します。 識別子は、目的の順序では、ときに、 [IMsgServiceAdmin::MsgServiceTransportOrder](imsgserviceadmin-msgservicetransportorder.md)メソッドに渡します。 
+トランスポート順序を変更するには、同じ制限を適用して行を取得します。 次に、トランスポートプロバイダーの一意の識別子を表す**PR_PROVIDER_UID**プロパティから値の配列を作成します。 識別子が目的の順序になったら、 [IMsgServiceAdmin:: msgservicetransportorder](imsgserviceadmin-msgservicetransportorder.md)メソッドに渡します。 
   
-使用可能なプロバイダーのテーブルが行われて、追加またはプロバイダーの削除など、その後の変更は反映されません。
+プロバイダーテーブルが使用可能になると、その後の変更 (プロバイダーの追加や削除など) は反映されません。
   
 ## <a name="see-also"></a>関連項目
 

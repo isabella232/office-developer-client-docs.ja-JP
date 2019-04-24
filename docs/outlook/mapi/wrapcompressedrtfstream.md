@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 0949e066-aa28-4ede-ac88-b2dccd5098e8
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a7095907a1fb437e225922d0bef08b4ad79a4b6f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 710e0e2fc334194e33c6d8ba1296e4c7b1938bc0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32325628"
 ---
 # <a name="wrapcompressedrtfstream"></a>WrapCompressedRTFStream
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-圧縮されていない形式 (リッチ テキスト) ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) である**PR_RTF_COMPRESSED**プロパティで使用されている圧縮形式からテキストのストリームを作成します。 
+**PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) プロパティで使用される圧縮形式から、圧縮されていないリッチテキスト形式 (RTF) でテキストストリームを作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーション  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
    
 ```cpp
 HRESULT WrapCompressedRTFStream(
@@ -43,41 +43,41 @@ HRESULT WrapCompressedRTFStream(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpCompressedRTFStream_
+ _lp圧縮 sedrtfstream_
   
-> [in]メッセージの PR_RTF_COMPRESSED プロパティで開かれているストリームへのポインター。 
+> 順番メッセージの PR_RTF_COMPRESSED プロパティで開いているストリームへのポインター。 
     
  _ulFlags_
   
-> [in]関数のオプション フラグのビットマスクです。 次のフラグを設定することができます。
+> 順番関数のオプションフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_MODIFY 
   
-> かどうか、クライアントでは、読み取りまたは返されたラップされたストリーム インターフェイスを作成する予定です。 
+> クライアントが、返されるラップされた stream インターフェイスの読み取りまたは書き込みを行うかどうかを指定します。 
     
 STORE_UNCOMPRESSED_RTF 
   
-> 非圧縮の rtf 形式は、 _lpCompressedRTFStream_で示されるストリームに書き込む必要があります。
+> 非圧縮 RTF は、lpな形式のストリームに__ 書き込む必要があります。
     
- _lpUncompressedRTFStream_
+ _lp非暗号化 sedrtfstream_
   
-> [out]**WrapCompressedRTFStream**が非圧縮の rtf 形式のストリームを返す場所へのポインター。 
+> 読み上げ**WrapCompressedRTFStream**が圧縮されていない RTF のストリームを返す場所へのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>����
+## <a name="remarks"></a>解説
 
-MAPI_MODIFY フラグが渡された場合、 _ulFlags_パラメーターで、 _lpCompressedRTFStream_パラメーター必要があります読み取りおよび書き込み用に開かれています。 Rtf 形式のテキストが圧縮されていない、新しいは、 _lpUncompressedRTFStream_で返されるストリームのインタ フェースに書き込まれる必要があります。 既存のストリームを追加することはできません、ため、メッセージ テキスト全体を書き込む必要があります。 
+MAPI_MODIFY フラグが_ulflags_パラメーターに渡されている場合、 _lp sedrtfstream_パラメーターは、読み取りおよび書き込みのために既に開いている必要があります。 新しい、非圧縮 RTF テキストは、lp、暗号化されていない_sedrtfストリーム_で返される stream インターフェイスに書き込まれる必要があります。 既存のストリームを追加することはできないため、メッセージテキスト全体を記述する必要があります。 
   
-_UlFlags_パラメーターに 0 を渡した場合、 _lpCompressedRTFStream_開くことができます読み取り専用です。 _LpUncompressedRTFStream_で返されるストリームのインタ フェースからのみ、メッセージ テキスト全体を読み取ることができます。 ストリームの中間の開始を検索することはできません。 
+_ulflags_パラメーターに0が渡された場合、 _lp圧縮 sedrtfstream_を読み取り専用で開くことができます。 lpout の出力によって返されるストリームインターフェイスからは、メッセージ__ テキスト全体のみを読み取ることができます。 ストリームの途中から検索することはできません。 
   
- **WrapCompressedRTFStream**では、圧縮されたストリームのポインターをストリームの先頭に設定されていると仮定しています。 返された圧縮解除されたストリームでは、特定の OLE **IStream**のメソッドはサポートされていません。 **IStream::Clone**、 **IStream::LockRegion**、 **IStream::Revert**、 **IStream::Seek**、 **IStream::SetSize**、 **IStream::Stat**、および**IStream::UnlockRegion**が含まれます。 ストリーム全体をコピーするために読み取り/書き込みループが必要です。 
+ **WrapCompressedRTFStream**は、圧縮ストリームのポインターがストリームの先頭に設定されていることを前提としています。 特定の OLE **IStream**メソッドは、返される非圧縮ストリームではサポートされていません。 **IStream:: Clone**、 **istream:: lockregion**、 **istream:: Revert**、 **istream:: Seek**、istream: **: SetSize**、 **istream:: Stat**、および**istream:: UnlockRegion**が含まれています。 ストリーム全体にコピーするためには、読み取り/書き込みループが必要です。 
   
-クライアントが圧縮されていない形式で新しい RTF を書き込むためのストリームに直接書き込むのではなく、 **WrapCompressedRTFStream**を使用してください。 RTF に対応していないクライアントは、 **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) のプロパティに STORE_UNCOMPRESSED_RTF フラグを検索し、設定されている場合に、 **WrapCompressed RTFStream**に渡すこと必要があります。 
+クライアントは新しい RTF を圧縮されていない形式で書き込むので、ストリームに直接書き込むのではなく、 **WrapCompressedRTFStream**を使用する必要があります。 RTF 対応クライアントは、 **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) プロパティで STORE_UNCOMPRESSED_RTF フラグを検索し、設定されている場合は**WrapCompressed RTFStream**に渡す必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

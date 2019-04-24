@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 603d698f-a025-538c-8767-18e7716a9a5f
 description: 図形の塗りつぶしのパターンで背景に使用する色 (塗りつぶし部分) を指定します。
-ms.openlocfilehash: d1222026887313d7737a3a0ded9e798e9bf5ea30
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f4df5d2b44a50380c996b9b2e0f7cda7d212093b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322513"
 ---
-# <a name="fillbkgnd-cell-fill-format-section"></a>[FillBkgnd] セル ([塗りつぶしの書式設定] セクション)
+# <a name="fillbkgnd-cell-fill-format-section"></a>[FillBkgnd] セル ([Fill Format] セクション)
 
 図形の塗りつぶしのパターンで背景に使用する色 (塗りつぶし部分) を指定します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 色を設定するには、0 ～ 23 の数値を入力します。
   
@@ -32,7 +32,7 @@ ms.locfileid: "19805371"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [Fillbkgnd]  <br/> |
+| セル名:  <br/> | [fillbkgnd]  <br/> |
    
 プログラムから、インデックスによって [FillBkgnd] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

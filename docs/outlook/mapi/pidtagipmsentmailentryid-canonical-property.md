@@ -12,51 +12,51 @@ api_type:
 - HeaderDef
 ms.assetid: f6877435-6b26-4060-924f-a65591ad9538
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ee2e9e7f73e03e0a201a5ff41ea6e37a78c668a1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fd29afc93bc952bb619dfac752fae232bf7991cf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327859"
 ---
 # <a name="pidtagipmsentmailentryid-canonical-property"></a>PidTagIpmSentMailEntryId 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-標準的な個人間メッセージ (IPM) の [送信済みアイテム フォルダーのエントリ id が含まれています。 
+標準の個人間メッセージ (IPM) の送信済みアイテムフォルダーのエントリ識別子を含みます。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_IPM_SENTMAIL_ENTRYID  <br/> |
-|識別子:  <br/> |0x35E4  <br/> |
+|識別子:  <br/> |0x35e4  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |Folder  <br/> |
+|エリア:  <br/> |フォルダー  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-、送信した個人間のメッセージは通常、送信済みアイテム フォルダーに配置されます。 クライアントは、送信されたメッセージの**PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) のプロパティを設定するのにはこのプロパティを使用できます。 
+送信後、個人間メッセージは通常、[送信済みアイテム] フォルダーに配置されます。 クライアントは、このプロパティを使用して、送信されたメッセージに対して**PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) プロパティを設定できます。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

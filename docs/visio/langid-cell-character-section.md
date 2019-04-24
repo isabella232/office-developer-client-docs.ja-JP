@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: c68289b8-ef45-9e1e-12ae-6613587e4990
 description: テキストの記入に使用した言語を示します。
-ms.openlocfilehash: e503abb2365635fa25a4dbec54b7fe3da4043fa8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e1f244d6d8e31201576a9a88ace9701814b0e0a1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326923"
 ---
-# <a name="langid-cell-character-section"></a>[LangID] セル ([文字] セクション)
+# <a name="langid-cell-character-section"></a>[LangID] セル ([Character] セクション)
 
 テキストの記入に使用した言語を示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 Microsoft Office アプリケーションがサポートしている言語の一覧は、[[DocLangID](doclangid-cell-document-properties-section.md)] セル ([Document Properties] セクション) を参照してください。 
   
@@ -28,14 +28,14 @@ Microsoft Office アプリケーションがサポートしている言語の一
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | Char.LangID [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+| セル名:  <br/> | <1> [ *i* ]、 *i* =、2、3...  <br/> |
    
 プログラムから、インデックスによって [LangID] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionCharacter** <br/> |
-| 行インデックス:  <br/> |**visRowCharacter** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+| 行インデックス:  <br/> |**visRowCharacter** +  *i* = ** 0、1、2...  <br/> |
 | セル インデックス:  <br/> |**visCharacterLangID** <br/> |
    
 

@@ -1,53 +1,53 @@
 ---
-title: MapiSvc.inf でのサービスおよびサービス プロバイダーの登録
+title: mapisvc.inf でのサービスおよびサービスプロバイダーの登録
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: a04acf17-4b2d-458e-9852-b6074acac096
-description: '最終更新日: 2013 年 7 月 18 日'
+description: '最終更新日: 2013 年7月18日'
 ms.openlocfilehash: adc6318ab36818b4c423bb6b1dc1b083b3fb54eb
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328372"
 ---
-# <a name="registering-services-and-service-providers-in-mapisvcinf"></a>MapiSvc.inf でのサービスおよびサービス プロバイダーの登録
+# <a name="registering-services-and-service-providers-in-mapisvcinf"></a>mapisvc.inf でのサービスおよびサービスプロバイダーの登録
 
  
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-システムに新しいプロバイダーをインストールするには、新しいプロバイダーを指すように、MapiSvc.inf ファイルを更新する必要があります。 通知 MAPI プロバイダーのダイナミック リンク ライブラリ (.dll) を検索する場所の次のよう、標準のプロパティの構成中に設定します。
+システムに新しいプロバイダーをインストールするには、新しいプロバイダーをポイントするように mapisvc.inf ファイルを更新する必要があります。 構成中に設定される標準プロパティ。次のように、プロバイダーのダイナミックリンクライブラリ (.dll) を検索する場所を MAPI に通知します。
   
-- **PR_SERVICE_DLL_NAME**は、 **[メッセージ サービス]** セクションで指定されます。 
+- **PR_SERVICE_DLL_NAME**は **[Message SERVICE]** セクションで指定されます。 
     
-- **PR_PROVIDER_DLL_NAME**は、 **[サービス プロバイダー]** セクションで指定されます。 
+- **PR_PROVIDER_DLL_NAME**は **[サービスプロバイダ]** セクションで指定されます。 
     
 > [!NOTE]
-> (32 のサフィックス) がない場合、プロバイダーの .dll の名前を設定することを予想にされます。 MAPI は、し、それを探すパス上で、プロバイダーを読み込みます。 
+> プロバイダーの .dll の名前 (サフィックスが "32" なし) を設定することが想定されています。 その後、MAPI は、そのパスでプロバイダーを検索することによってプロバイダーを読み込みます。 
   
-## <a name="putting-a-path-in-mapisvcinf"></a>MapiSvc.inf にパスを配置すること
+## <a name="putting-a-path-in-mapisvcinf"></a>mapisvc.inf にパスを配置する
 
-[プログラム ファイル、MAPI プロバイダーが動作できるようにするのには path 変数の更新を必要とするほとんどのアプリケーションをインストールします。 制限がいくつかの Microsoft Outlook 2010、Outlook 2013 は、MAPI プロバイダーに完全なパスに対応できます。
+ほとんどのアプリケーションは、プログラムファイルの下にインストールされます。 MAPI プロバイダーが動作するようにするには、path 変数を更新する必要があります。 いくつかの制限により、Microsoft outlook 2010 と outlook 2013 は MAPI プロバイダーへの完全なパスに対応できます。
   
-MapiSvc.inf のプロバイダーを登録すると、ときに**PR_SERVICE_DLL_NAME**と**PR_PROVIDER_DLL_NAME**は、MAPI プロパティのプロバイダーの完全なパスを配置する可能性があります。
+mapisvc.inf にプロバイダーを登録する場合、MAPI プロパティ**PR_SERVICE_DLL_NAME**および**PR_PROVIDER_DLL_NAME**にプロバイダーへの完全なパスを含めることができます。
   
-いずれかのプロパティの完全なパス必要がありますサフィックス 32、MAPI は、ファイルを検索する前にファイル名を追加し続けるため。 つまり"c:\mypath\myprovider.dll"のパスを登録する場合は、MAPI がしようとする"c:\mypath\myprovider32.dll"を読み込めません。
+どちらのプロパティでも、ファイルを検索する前にファイル名に追加されたままになるので、完全なパスはサフィックスが "32" でなければなりません。 これは、"c:\mypath\myprovider.dll" というパスを登録すると、MAPI が "c:\mypath\myprovider32.dll" を読み込もうとすることを意味します。
   
-Outlook の完全なパスに対応するために MAPI が想定されていません、つまり、他のピリオドを含むパスでは使用できません、次のようにパスを使用することはできませんので、文字列の最初の期間を検索しながらなどの挿入が行われます"c:\my.path\myprovider.dll"または"c:\mypath\my.provider.dll"です。
+Outlook の MAPI は完全なパスに対応するように設計されていないため、文字列の最初のピリオドを検索することによって、"32" サフィックスを挿入します。これは、他のピリオドを含むパスを使用できないため、次のようなパスは使用できません。"c:\my.path\myprovider.dll" または "c:\mypath\my.provider.dll"。
   
-ストア プロバイダーのプロバイダーの名前をパラメーターとして受け取り、 **WrapStoreEntryID**関数を使用してエントリの識別子が生成されます。 
+ストアプロバイダーでは、 **WrapStoreEntryID**関数を使用してエントリ識別子を生成することもあります。これは、プロバイダーの名前をパラメーターとして取ります。 
   
 > [!IMPORTANT]
-> MapiSvc.inf の完全パスを使用する場合は、 **WrapStoreEntryID**への呼び出しで同じパスを使用する必要があります。 
+> mapisvc.inf で完全なパスを使用している場合は、 **WrapStoreEntryID**へのすべての呼び出しで同じパスを使用する必要があります。 
   
-さらに、 [GetACP](https://msdn.microsoft.com/library/windows/desktop/dd318070%28v=vs.85%29.aspx/)関数が用意されているコード ページを使用して Unicode との間に使用するパスを変換することがあります。 
+また、使用するパスは、 [getacp](https://msdn.microsoft.com/library/windows/desktop/dd318070%28v=vs.85%29.aspx/)関数によって提供されるコードページを使用して、Unicode との間で変換される場合があります。 
   
 > [!CAUTION]
-> [MultiByteToWideChar](https://msdn.microsoft.com/library/windows/desktop/dd319072%28v=vs.85%29.aspx/)と[WideCharToMultiByte](https://msdn.microsoft.com/library/windows/desktop/dd374130%28v=vs.85%29.aspx/)関数を使用して、このようなラウンドト リップに対応できない文字を含むパスを選択する場合、障害が発生します。 
+> [MultiByteToWideChar](https://msdn.microsoft.com/library/windows/desktop/dd319072%28v=vs.85%29.aspx/)および[WideCharToMultiByte](https://msdn.microsoft.com/library/windows/desktop/dd374130%28v=vs.85%29.aspx/)関数を使用して、このようなラウンドトリップを使用できない文字が含まれているパスを選択すると、エラーが発生します。 
   
-この機能のデモでは、GitHub の[PST のラップのサンプル](https://github.com/stephenegriffin/Outlook2010CodeSamples)が更新されました - **MergeWithMapiSvc**と**GenerateProviderPath**では、関連する機能です。
+この機能のデモを行うために、GitHub でラップされた[PST サンプル](https://github.com/stephenegriffin/Outlook2010CodeSamples)が改訂されました。関連する機能は**MergeWithMapiSvc**および**generateproviderpath**にあります。
   
 

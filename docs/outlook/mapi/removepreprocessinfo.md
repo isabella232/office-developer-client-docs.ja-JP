@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 25f46937-abac-4a0b-83db-eeac9451c112
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c90b569414c1710cc1065fdb4fd72738e265ebff
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d80c73aef780a0da39f3939f71462488a067de5f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328379"
 ---
 # <a name="removepreprocessinfo"></a>RemovePreprocessInfo
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-削除は、メッセージから、 [PreprocessMessage](preprocessmessage.md)ベースの関数によって書き込まれた情報をプリプロセスします。 
+[PreprocessMessage](preprocessmessage.md)ベースの関数によって作成された前処理された情報をメッセージから削除します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapispi.h  <br/> |
-|によって実装される関数の定義:  <br/> |トランスポート プロバイダー  <br/> |
-|によって呼び出される関数を定義します。  <br/> |MAPI スプーラー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapispi  <br/> |
+|定義された関数の実装:  <br/> |トランスポートプロバイダー  <br/> |
+|によって呼び出された定義済み関数:  <br/> |MAPI スプーラー  <br/> |
    
 ```cpp
 HRESULT RemovePreprocessInfo(
@@ -41,20 +41,20 @@ HRESULT RemovePreprocessInfo(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpMessage_
+ _lpmessage_
   
-> [in]削除する元となる情報は、プリプロセス済みのメッセージへのポインター。
+> 順番削除する情報があるプリプロセスされたメッセージへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK
   
-> プリプロセス済みの情報が正常に削除されました。
+> 前処理された情報が正常に削除されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-MAPI スプーラーは、 **RemovePreprocessInfo**に基づく関数を呼び出します。 トランスポート プロバイダーは、同時並行の**PreprocessMessage**ベースの関数を登録するときに、 [IMAPISupport::RegisterPreprocessor](imapisupport-registerpreprocessor.md)メソッドの呼び出しで**RemovePreprocessInfo**ベースの関数を登録します。 
+MAPI スプーラーは、 **removepreprocessinfo**に基づいて関数を呼び出します。 トランスポートプロバイダーは、 [imapisupport:: registerpreprocessor プロセッサ](imapisupport-registerpreprocessor.md)メソッドへの呼び出しで、並列**PreprocessMessage**ベースの関数を登録するのと同時に、 **removepreprocessinfo**に基づく関数を登録します。 
   
-Fax 転送のための適切なレンダリング イメージは、 [PreprocessMessage](preprocessmessage.md)関数のプロトタイプで定義された関数が記述したプリプロセス済みの情報の例です。 通常、MAPI スプーラーは、プリプロセス済みの情報を含むメッセージを送信した後は**RemovePreprocessInfo**関数を呼び出します。 
+[PreprocessMessage](preprocessmessage.md)関数プロトタイプによって定義された関数によって書き込まれたプリプロセスされた情報の例として、fax 送信に適したイメージレンダリングがあります。 MAPI スプーラーは、通常、前処理された情報を含むメッセージを送信した後に、 **removepreprocessinfo**関数を呼び出します。 
   
 

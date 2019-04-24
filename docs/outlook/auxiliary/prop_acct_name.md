@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 260ee328-e73f-48bc-7762-d592b7d42afc
 description: アカウント名を設定または返します。
-ms.openlocfilehash: 820a234e3986091a93aaf2eb82d7fde1636e0511
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 90b62548694687d9357f4302af36e4c8efeb8c0c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327623"
 ---
 # <a name="propacctname"></a>PROP_ACCT_NAME
 
@@ -26,12 +26,12 @@ ms.locfileid: "19799561"
 |:-----|:-----|
 |識別子:  <br/> |0x0002  <br/> |
 |プロパティの種類:  <br/> |PT_UNICODE  <br/> |
-|プロパティ タグ。  <br/> |0x0002001F  <br/> |
-|アクセス:  <br/> |値の取得および設定が可能です。  <br/> |
+|プロパティタグ:  <br/> |0x0002001F  <br/> |
+|接続  <br/> |読み取り/書き込み  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-取得または[IOlkAccount::GetProp](iolkaccount-getprop.md)または[IOlkAccount::SetProp](iolkaccount-setprop.md)をそれぞれ使用して、このプロパティを設定します。
+[IOlkAccount:: getprop](iolkaccount-getprop.md)または[IOlkAccount:: setprop](iolkaccount-setprop.md)を使用して、このプロパティを取得または設定します。
   
 ## <a name="see-also"></a>関連項目
 

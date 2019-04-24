@@ -7,21 +7,21 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 568f2336-cb4d-3f2c-a304-d29cdb0bcbcc
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 887c66277b54e2e14c7f67c76b8e9dd4fa8bc719
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 7338edc13227e303ec5fa47da4a5d9ee611c6749
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326153"
 ---
 # <a name="upread"></a>UPREAD
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[アップロード ステータスの状態を読み取り](upload-read-status-state.md)中にはアイテムの読み取り状態をアップロードする方法の詳細については。
+[アップロードの読み取り](upload-read-status-state.md)状態の状態中にアイテムの読み取り状態をアップロードするための情報。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -33,15 +33,15 @@ struct UPREAD
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  _pupre_
   
->  [out]**[UPREADE](upreade.md)** エントリのベクターです。 
+>  読み上げ**[upreade](upreade.md)** エントリのベクトル。 
     
- _セント_
+ _fea-cent-logging-service_
   
->  [out]**UPREADE**エントリの数です。 
+>  読み上げ**upreade**エントリの数。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -49,9 +49,9 @@ struct UPREAD
 
 [レプリケーション API について](about-the-replication-api.md)
   
-[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
+[レプリケーション状態のマシンについて](about-the-replication-state-machine.md)
   
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
   
 [UPREADE](upreade.md)
 

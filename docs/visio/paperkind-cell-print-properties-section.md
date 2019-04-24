@@ -9,28 +9,28 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: b2c9616f-a144-eb99-54b6-b53745c7b4d6
 description: ページを印刷する用紙の種類を指定します。
-ms.openlocfilehash: 03659553ab32afd20d1a5a40b85a8bbf107dbb08
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 694aa1fb8b52f5ae323c47e9aab8715b4a48dfb0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327063"
 ---
-# <a name="paperkind-cell-print-properties-section"></a>[PaperKind] セル ([印刷のプロパティ] セクション)
+# <a name="paperkind-cell-print-properties-section"></a>[PaperKind] セル ([Print Properties] セクション)
 
 ページを印刷する用紙の種類を指定します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-この設定は、[**印刷設定**] ダイアログ ボックスで**用紙サイズ**の設定に対応して ([**デザイン**] タブで、 **[ページ設定**の矢印をクリックし、[**プリンターの設定**] タブで、**設定**ボタンをクリック) します。 
+この設定は、[**デザイン**] タブの [**ページ設定**] 矢印をクリックし、[印刷**設定**] タブの [**設定**] ボタンをクリックすると表示される、[**印刷設定**] ダイアログボックスの [**用紙サイズ**] の設定に対応しています。 
   
-用紙の Microsoft Windows wingdi.h ファイル内のこのセルにマップが付いて DMPAPER) の定数に含まれる数値が定義されています。 
+このセルの数値は、Microsoft Windows の DMPAPER ファイルで用紙を選択するために定義されている定数 (プレフィックスは) に対応しています。 
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [PageKind] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |PaperKind  <br/> |
+|セル名:  <br/> |[paperkind]  <br/> |
    
 プログラムから、インデックスによって [PaperKind] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

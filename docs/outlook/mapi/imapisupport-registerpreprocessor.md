@@ -1,5 +1,5 @@
 ---
-title: IMAPISupportRegisterPreprocessor
+title: imapisupportregisterpreprocessor プロセッサ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9b5659ab-2b49-41ab-92ce-ca343e35d670
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 87f5e3f159542359f614a6ab698e6f06a2faf41a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 58215de6cc4e9e68386f8f017839752acc6e1753
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326566"
 ---
 # <a name="imapisupportregisterpreprocessor"></a>IMAPISupport::RegisterPreprocessor
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-トランスポート プロバイダーのプリプロセッサ関数 ( [PreprocessMessage](preprocessmessage.md)プロトタイプに準拠する関数) を登録します。 
+トランスポートプロバイダーのプリプロセッサ関数 ( [PreprocessMessage](preprocessmessage.md)プロトタイプに準拠する関数) を登録します。 
   
 ```cpp
 HRESULT RegisterPreprocessor(
@@ -40,47 +40,47 @@ ULONG ulFlags
 
 ## <a name="parameters"></a>パラメーター
 
- _lpMuid_
+ _lpmuid_
   
-> [in]プリプロセッサ関数を処理するための識別子を格納する[MAPIUID](mapiuid.md)構造体へのポインター。 _LpMuid_パラメーターは NULL にできます。 
+> 順番プリプロセッサ関数が処理する識別子を含む[MAPIUID](mapiuid.md)構造体へのポインター。 _lpmuid_パラメーターは NULL にすることができます。 
     
- _lpszAdrType_
+ _lpszadrtype_
   
-> [in]メッセージのアドレスの種類へのポインター、関数では、FAX、SMTP、または X500 などです。 _LpszAdrType_パラメーターは NULL にできます。 
+> 順番FAX、SMTP、または X500 など、関数が操作するメッセージのアドレスの種類へのポインター。 _lpszadrtype_パラメーターは NULL にすることができます。 
     
  _lpszDLLName_
   
-> [in]プリプロセッサ関数のエントリ ポイントを含むダイナミック リンク ライブラリ (DLL) の名前へのポインター。
+> 順番プリプロセッサ関数のエントリポイントが格納されているダイナミックリンクライブラリ (DLL) の名前へのポインター。
     
- _lpszPreprocess_
+ _lpszpreprocess_
   
-> [in]プリプロセッサ関数の名前へのポインター。 _LpszPreprocess_パラメーターは NULL にできます。 
+> 順番プリプロセッサ関数の名前へのポインター。 _lpszpreprocess_パラメーターは NULL にすることができます。 
     
- _lpszRemovePreprocessInfo_
+ _lpszremovepreprocessinfo_
   
-> [in]プリプロセッサの情報 ( [RemovePreprocessInfo](removepreprocessinfo.md)のプロトタイプに準拠する関数) を削除する関数の名前へのポインター。 _LpszRemovePreprocessInfo_パラメーターは NULL にできます。 
+> 順番プリプロセッサ情報 ( [removepreprocessinfo](removepreprocessinfo.md)プロトタイプに準拠する関数) を削除する関数の名前へのポインター。 _lpszremovepreprocessinfo_パラメーターは NULL にすることができます。 
     
  _ulFlags_
   
-> 予約されています。0 にする必要があります。
+> 予約語0である必要があります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > プリプロセッサ関数が正常に登録されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-だけに、トランスポート プロバイダーのサポート オブジェクトの**IMAPISupport::RegisterPreprocessor**メソッドを実装します。 トランスポート プロバイダーは、プリプロセッサ関数 ( [PreprocessMessage](preprocessmessage.md)プロトタイプに準拠する関数) を登録するのには**RegisterPreprocessor**を呼び出します。 MAPI スプーラーを呼び出すことができますには、プリプロセッサ関数を登録する必要があります。 
+**imapisupport:: registerpreprocessor プロセッサ**メソッドは、トランスポートプロバイダーサポートオブジェクトのみに実装されています。 トランスポートプロバイダーは、 **registerpreprocessor**プロセッサを呼び出してプリプロセッサ関数 ( [PreprocessMessage](preprocessmessage.md)プロトタイプに準拠する関数) を登録します。 MAPI スプーラーが呼び出す前に、プリプロセッサ関数を登録する必要があります。 
   
-_LpszPreprocess_、 _lpszRemovePreprocessInfo_、および_lpszDLLName_パラメーター、Win32 の**GetProcAddress**関数をプリプロセッサの DLL への呼び出しと組み合わせて使用できる文字列を参照する必要があります。正しく呼び出されるエントリ ポイントです。 
+_lpszpreprocess_、 _lpszremovepreprocessinfo_、および_lpszDLLName_パラメーターは、Win32 **GetProcAddress**関数への呼び出しと共に使用できる文字列をポイントする必要があります。これにより、プリプロセッサの DLL を使用できるようになります。エントリポイントが正しく呼び出されます。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-プリプロセッサの呼び出しでは、トランスポート プロバイダーの順序に固有です。 これは、する場合は、プロバイダーの前に別のトランスポート プロバイダーは、メッセージを処理することが、プリプロセッサ関数は呼び出されませんそのメッセージを意味します。 プリプロセッサ関数は、処理するメッセージに対してのみ呼び出されます。
+preprocessors の呼び出しは、トランスポートプロバイダーの順序によって異なります。 これは、プロバイダーよりも前の別のトランスポートプロバイダーがメッセージを処理できる場合、そのメッセージに対してプリプロセッサ関数が呼び出されないことを意味します。 プリプロセッサ関数は、処理するメッセージに対してのみ呼び出されます。
   
-[MAPIUID](mapiuid.md)構造体、またはアドレスの種類に格納されているか、特定 id を処理するためのプリプロセッサ関数を記述できます。 _LpMuid_パラメーターおよび_lpszAdrType_パラメーターのアドレスの種類で、両方の**MAPIUID**構造体を指定すると、 **MAPIUID**またはアドレスの種類のいずれかに一致するメッセージの受信者に対して、関数が呼び出されます。 _LpMuid_は、NULL、 _lpszAdrType_は、NULL 以外の場合は、 _lpszAdrType_で指定された型に一致するアドレスを持つ受信者にのみ、関数が呼び出されます。 _LpMuid_は、NULL ではないし、 _lpszAdrType_が NULL の場合、受信者のアドレスの種類に関係なく**MAPIUID**に一致するため、関数が呼び出されます。 両方が NULL である場合、メッセージのすべての受信者に対して、関数が呼び出されます。
+プリプロセッサ関数を記述して、 [MAPIUID](mapiuid.md)構造またはアドレスの種類に格納されている特定の識別子を処理することができます。 _lpmuid_パラメーターに**MAPIUID**構造体と、 _lpszadrtype_パラメーターにアドレスの種類の両方を指定すると、 **MAPIUID**またはアドレスの種類のいずれかに一致するメッセージ受信者に対して、関数が呼び出されます。 _lpmuid_が null で、 _lpszadrtype_が null 以外の場合、この関数は、 _lpszadrtype_で指定された型に一致するアドレスを持つ受信者に対してのみ呼び出されます。 _lpmuid_が null 以外で、 _lpszadrtype_が null の場合、アドレスの種類に関係なく、 **MAPIUID**に一致する受信者に対して関数が呼び出されます。 両方の値が NULL の場合は、メッセージのすべての受信者に対して関数が呼び出されます。
   
 ## <a name="see-also"></a>関連項目
 

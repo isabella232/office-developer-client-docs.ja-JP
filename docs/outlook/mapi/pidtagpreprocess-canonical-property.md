@@ -12,44 +12,44 @@ api_type:
 - COM
 ms.assetid: c59a6ce9-6b1f-4395-961e-c3af2945f05e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: cfbeb6c60069d57d9a42082e80b2a45fd3410767
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d573916682e4857b367a898d22f2cff5af47ef27
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327224"
 ---
 # <a name="pidtagpreprocess-canonical-property"></a>PidTagPreprocess 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージの前処理が必要な場合、TRUE が格納されます。
+メッセージが前処理を必要とする場合は TRUE が含まれます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_PREPROCESS  <br/> |
-|識別子:  <br/> |0x0E22  <br/> |
+|識別子:  <br/> |0x0e22  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |MAPI 以外から送信できます。  <br/> |
+|エリア:  <br/> |MAPI ノンノンアウトテーブル  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 > [!IMPORTANT]
-> このプロパティを使用しません。 MAPI によって使用するために予約されています。 
+> このプロパティを使用しません。 MAPI で使用するために予約されています。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
@@ -58,9 +58,9 @@ Mapitags.h
 [PidTagSubmitFlags 標準プロパティ](pidtagsubmitflags-canonical-property.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

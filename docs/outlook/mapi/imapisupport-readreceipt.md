@@ -1,5 +1,5 @@
 ---
-title: IMAPISupportReadReceipt
+title: imapisupportreadreceipt
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: ef31b61a-93b6-4ae8-bc71-f5ef5caf43f4
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: e785d42639d51dab154a0bde239f858a92ddd143
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 1915004847fdfd27c97656223866aaab9d3e59c9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326307"
 ---
 # <a name="imapisupportreadreceipt"></a>IMAPISupport::ReadReceipt
 
@@ -25,7 +25,7 @@ ms.locfileid: "22588623"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-読み取りまたはメッセージの nonread のレポートを生成します。
+メッセージの読み取りまたは非開封レポートを生成します。
   
 ```cpp
 HRESULT ReadReceipt(
@@ -35,55 +35,55 @@ LPMESSAGE FAR * lppEmptyMessage
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]読み取りまたは nonread のレポートの生成方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番読み取りまたは非開封レポートの生成方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_NON_READ 
   
-> Nonread のレポートが生成されます。 MAPI_NON_READ が設定されていない場合は、リードのレポートが生成されます。
+> 非開封レポートが生成されます。 MAPI_NON_READ が設定されていない場合は、読み取りレポートが生成されます。
     
  _lpReadMessage_
   
-> [in]レポートを生成するかについては、メッセージへのポインター。
+> 順番レポートを生成するメッセージへのポインター。
     
- _lppEmptyMessage_
+ _lppemptymessage_
   
-> [で [チェック アウト]入力では、 _lppEmptyMessage_は、空のメッセージへのポインターを指しています。 出力では、 _lppEmptyMessage_は、レポート メッセージへのポインターをポイントします。 
+> [入力]入力時に、 _lppemptymessage_は空のメッセージへのポインターを指します。 出力では、 _lppemptymessage_はレポートメッセージへのポインターを指します。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > レポートが正常に生成されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPISupport::ReadReceipt**メソッドは、メッセージ ストア プロバイダーのサポートのオブジェクトに対してのみ実装されます。 メッセージ ストア プロバイダーは、読み取りまたは_lpReadMessage_パラメーターで指定されたメッセージの nonread のレポートを生成するための MAPI に指示するために**ReadReceipt**を呼び出します。 
+**imapisupport:: readreceipt**メソッドは、メッセージストアプロバイダーサポートオブジェクトに対してのみ実装されます。 メッセージストアプロバイダーは、 **readreceipt**を呼び出して、MAPI に、 _lpReadMessage_パラメーターによって示されるメッセージの読み取りレポートまたは非開封レポートを生成するように指示します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**PR_READ_RECEIPT_REQUESTED** ([PidTagReadReceiptRequested](pidtagreadreceiptrequested-canonical-property.md)) プロパティが設定されて、次の条件のいずれかが true の場合は、 **ReadReceipt**を呼び出します。
+**PR_READ_RECEIPT_REQUESTED** ([PidTagReadReceiptRequested](pidtagreadreceiptrequested-canonical-property.md)) プロパティが設定されていて、次のいずれかの条件に該当する場合は、 **readreceipt**を呼び出します。
   
-- メッセージが読み取られています。
+- メッセージが開封されました。
     
-- メッセージを移動するとします。
+- メッセージが移動されました。
     
 - メッセージがコピーされました。
     
-- メッセージの[IMessage::SetReadFlag](imessage-setreadflag.md)メソッドが呼び出されました。 
+- メッセージの[IMessage:: setreadflag](imessage-setreadflag.md)メソッドが呼び出されました。 
     
-メッセージが削除されると、 **ReadReceipt**を呼び出さないようにします。 
+メッセージが削除されたときに、 **readreceipt**を呼び出しません。 
   
-読み取りまたは nonread のレポートは、メッセージの 1 回だけ送信してください。 メッセージの読み取り状態を追跡し、1 つのメッセージの複数のレポートを送信できません。
+読み取りまたは非開封レポートは、メッセージに対して1回だけ送信する必要があります。 メッセージの開封状態を追跡し、1つのメッセージに対して複数のレポートを送信しません。
   
-_LppEmptyMessage_パラメーターは、MAPI は、 **ReadReceipt**から返されるときに、有効なレポートのメッセージをポイントしている場合、メッセージを送信し、その**の IUnknown:s:Release を呼び出すことによって、ポインターを解放する[IMessage::SubmitMessage](imessage-submitmessage.md)メソッドを呼び出す**メソッドです。 
+MAPI が**readreceipt**から返されたときに、 _lppemptymessage_パラメーターが有効なレポートメッセージを指している場合は、 [IMessage:: submitmessage](imessage-submitmessage.md)メソッドを呼び出してメッセージを送信し、 **IUnknown: s: release を呼び出してポインターを解放します。** メソッド。 
   
-**ReadReceipt**が失敗した場合、送信されることがなくメッセージを解放する必要があります。 メッセージの読み取り状態を保存する場合は後で、読み取りまたは nonread のレポートを生成しようとすることができます。 
+**readreceipt**が失敗した場合、メッセージは送信されずに解放される必要があります。 メッセージの開封状態を格納する場合は、後で読み取りまたは非開封レポートを生成することができます。 
   
-非表示にするか、フォルダー内のストアによって生成される読み取りおよび nonread のレポートを表示します。 隠しフォルダーに読み取りおよび nonread のレポートを格納する、強固なセキュリティを実装できます。
+フォルダー内のストアによって生成される読み取りおよび非開封レポートを表示または非表示にすることができます。 読み取りおよび非開封レポートを隠しフォルダーに格納することで、より厳密なセキュリティを実装できます。
   
 ## <a name="see-also"></a>関連項目
 

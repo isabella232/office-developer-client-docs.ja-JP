@@ -1,5 +1,5 @@
 ---
-title: IMAPISupport IUnknown
+title: imapisupport IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 92bfe604-18dd-46a1-9ae8-0b04167606bd
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4843a52d7441de1e1ab545e80346db8dd308c4bf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6da488408d3be9464d6ae1e016d5095707d451e4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32325649"
 ---
 # <a name="imapisupport--iunknown"></a>IMAPISupport : IUnknown
 
@@ -25,116 +25,116 @@ ms.locfileid: "22590205"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-サービス プロバイダーおよびメッセージ サービスのエントリ ポイント関数では、通常実行するタスクの実装を提供します。 MAPI プロバイダー オブジェクトのログオン メソッドを呼び出すと、サービス プロバイダーからのサポートのオブジェクトへのポインターが表示されます。 メッセージ サービスでは、そのエントリ ポイント関数の呼び出しでのサポートのオブジェクト ポインターが表示されます。
+通常はサービスプロバイダーとメッセージサービスエントリポイント関数によって実行されるタスクの実装を提供します。 サービスプロバイダーは、MAPI がプロバイダーオブジェクトのログオン方法を呼び出している場合、サポートオブジェクトへのポインターを受け取ります。 メッセージサービスは、そのエントリポイント関数の呼び出しで、サポートオブジェクトポインターを受け取ります。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapispi.h  <br/> |
-|によって公開されます。  <br/> |サポート オブジェクト  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |サービス プロバイダー  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IMAPISup  <br/> |
-|ポインターの型。  <br/> |LPMAPISUP  <br/> |
+|ヘッダー ファイル:  <br/> |Mapispi  <br/> |
+|公開者:  <br/> |サポートオブジェクト  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |サービス プロバイダー  <br/> |
+|インターフェイス識別子:  <br/> |IID_IMAPISup  <br/> |
+|ポインターの種類:  <br/> |LPMAPISUP  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[発生しました](imapisupport-getlasterror.md) <br/> |以前のサポート オブジェクトのエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
-|[GetMemAllocRoutines](imapisupport-getmemallocroutines.md) <br/> |MAPI メモリの割り当てと割り当て解除関数 ([MAPIAllocateBuffer](mapiallocatebuffer.md)、 [MAPIAllocateMore](mapiallocatemore.md)、および[MAPIFreeBuffer](mapifreebuffer.md)) のアドレスを取得します。  <br/> |
-|[Subscribe](imapisupport-subscribe.md) <br/> |MAPI 経由の通知を受信するアドバイズ シンクを登録します。  <br/> |
-|[Unsubscribe](imapisupport-unsubscribe.md) <br/> |**Subscribe**メソッドを呼び出して、以前に設定されている通知を送信するための責任をキャンセルします。  <br/> |
-|[Notify](imapisupport-notify.md) <br/> |通知の**Subscribe**メソッドを最初に登録されたアドバイズ ソースに指定されたイベントの通知を送信します。  <br/> |
-|[ModifyStatusRow](imapisupport-modifystatusrow.md) <br/> |ステータス テーブルを変更するには、新しい行を追加したり、既存の行を変更します。  <br/> |
-|[OpenProfileSection](imapisupport-openprofilesection.md) <br/> |現在のプロファイルのセクションを開き、さらにアクセスするための[IProfSect](iprofsectimapiprop.md)ポインターを返します。  <br/> |
-|[RegisterPreprocessor](imapisupport-registerpreprocessor.md) <br/> |トランスポート プロバイダーのプリプロセッサ関数 ( [PreprocessMessage](preprocessmessage.md)プロトタイプに準拠する関数) を登録します。  <br/> |
-|[NewUID](imapisupport-newuid.md) <br/> |一意の識別子として使用する新しい[MAPIUID](mapiuid.md)構造体を作成します。  <br/> |
-|[MakeInvalid](imapisupport-makeinvalid.md) <br/> |オブジェクトを使用不可としてマークを付けます。  <br/> |
-|[SpoolerYield](imapisupport-spooleryield.md) <br/> |必要と見なされるすべてのタスクを実行できるように、MAPI スプーラーを CPU の制御を提供します。  <br/> |
-|[SpoolerNotify](imapisupport-spoolernotify.md) <br/> |またはサービスの要求のステータスが変更された、MAPI スプーラーに通知します。  <br/> |
-|[CreateOneOff](imapisupport-createoneoff.md) <br/> |一時アドレスのエントリ id を作成します。  <br/> |
-|[SetProviderUID](imapisupport-setprovideruid.md) <br/> |サービス プロバイダーを一意に表す**MAPIUID**構造体を登録します。  <br/> |
-|[CompareEntryIDs](imapisupport-compareentryids.md) <br/> |同じオブジェクトを参照しているかどうかを決定する 2 つのエントリ id を比較します。  <br/> |
-|[OpenTemplateID](imapisupport-opentemplateid.md) <br/> |外部のアドレス帳で受信者のエントリが表示されます。  <br/> |
-|[OpenEntry](imapisupport-openentry.md) <br/> |オブジェクトを開き、さらにアクセスするためのインターフェイス ポインターを返します。  <br/> |
-|[GetOneOffTable](imapisupport-getoneofftable.md) <br/> |MAPI の一時テーブル (すべてのアドレスが新しい受信者を作成するためのサポートについてプロバイダーを登録しているテンプレートの一覧) へのポインターを返します。  <br/> |
-|[住所](imapisupport-address.md) <br/> |共通のアドレス] ダイアログ ボックスが表示されます。  <br/> |
-|[詳細](imapisupport-details.md) <br/> |特定のアドレス帳のエントリに関する詳細情報を表示するダイアログ ボックスが表示されます。  <br/> |
-|[NewEntry](imapisupport-newentry.md) <br/> |アドレス帳コンテナーに直接、または送信メッセージの受信者の一覧には、新しい受信者を追加します。  <br/> |
-|[DoConfigPropsheet](imapisupport-doconfigpropsheet.md) <br/> |構成のプロパティ シートを表示します。  <br/> |
-|[CopyMessages](imapisupport-copymessages.md) <br/> |別のフォルダーに 1 つのフォルダーからのコピーや移動メッセージです。  <br/> |
-|[CopyFolder](imapisupport-copyfolder.md) <br/> |現在の親フォルダーから別の親フォルダーにフォルダーを移動またはコピーします。  <br/> |
-|[DoCopyTo](imapisupport-docopyto.md) <br/> |明確に除外されたプロパティを 1 つのオブジェクトのすべてのプロパティを別のオブジェクトを移動またはコピーします。  <br/> |
-|[DoCopyProps](imapisupport-docopyprops.md) <br/> |オブジェクトの 1 つまたは複数のプロパティを別のオブジェクトを移動またはコピーします。  <br/> |
-|[DoProgressDialog](imapisupport-doprogressdialog.md) <br/> |進行状況インジケーターを表示する進行中のオブジェクトを取得します。  <br/> |
-|[ReadReceipt](imapisupport-readreceipt.md) <br/> |読み取りまたはメッセージの nonread のレポートを生成します。  <br/> |
-|[PrepareSubmit](imapisupport-preparesubmit.md) <br/> |MAPI スプーラーに送信するためには、メッセージを準備します。  <br/> |
-|[ExpandRecips](imapisupport-expandrecips.md) <br/> |メッセージの受信者リスト、特定の配布リストの展開を完了します。  <br/> |
-|[DoSentMail](imapisupport-dosentmail.md) <br/> |���M���ꂽ���b�Z�[�W��������܂��B  <br/> |
+|[GetLastError](imapisupport-getlasterror.md) <br/> |以前のサポートオブジェクトエラーに関する情報を含む[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
+|[getmemallocroutines](imapisupport-getmemallocroutines.md) <br/> |MAPI メモリ割り当て関数および割り当て解除関数 ([MAPIAllocateBuffer](mapiallocatebuffer.md)、 [MAPIAllocateMore](mapiallocatemore.md)、および[MAPIFreeBuffer](mapifreebuffer.md)) のアドレスを取得します。  <br/> |
+|[こう](imapisupport-subscribe.md) <br/> |通知を MAPI 経由で受信するようにアドバイズシンクを登録します。  <br/> |
+|[登録を解除する](imapisupport-unsubscribe.md) <br/> |**Subscribe**メソッドの呼び出しによって以前に確立された通知を送信する責任を取り消します。  <br/> |
+|[Notify](imapisupport-notify.md) <br/> |指定したイベントの通知を、 **Subscribe**メソッドによって最初に通知用に登録したアドバイズソースに送信します。  <br/> |
+|[modifystatusrow](imapisupport-modifystatusrow.md) <br/> |新しい行を追加するか、または既存の行を変更して、状態テーブルを変更します。  <br/> |
+|[openプロファイル '](imapisupport-openprofilesection.md) <br/> |現在のプロファイルのセクションを開き、さらにアクセスできるように[IProfSect](iprofsectimapiprop.md)ポインターを返します。  <br/> |
+|[registerpreprocessor プロセッサ](imapisupport-registerpreprocessor.md) <br/> |トランスポートプロバイダーのプリプロセッサ関数 ( [PreprocessMessage](preprocessmessage.md)プロトタイプに準拠する関数) を登録します。  <br/> |
+|[newuid](imapisupport-newuid.md) <br/> |一意の識別子として使用する新しい[MAPIUID](mapiuid.md)構造を作成します。  <br/> |
+|[makeinvalid](imapisupport-makeinvalid.md) <br/> |オブジェクトを使用不可としてマークします。  <br/> |
+|[SpoolerYield](imapisupport-spooleryield.md) <br/> |MAPI スプーラーに CPU を制御します。これにより、必要なタスクを実行できるようになります。  <br/> |
+|[SpoolerNotify](imapisupport-spoolernotify.md) <br/> |状態の変更またはサービスの要求の MAPI スプーラーに通知します。  <br/> |
+|[createoneoff](imapisupport-createoneoff.md) <br/> |1回限りのアドレスのエントリ id を作成します。  <br/> |
+|[setprovideruid](imapisupport-setprovideruid.md) <br/> |サービスプロバイダーを一意に表す**MAPIUID**構造体を登録します。  <br/> |
+|[CompareEntryIDs](imapisupport-compareentryids.md) <br/> |2つのエントリ識別子を比較して、同じオブジェクトを参照しているかどうかを判断します。  <br/> |
+|[OpenTemplateID](imapisupport-opentemplateid.md) <br/> |外部アドレス帳プロバイダーの受信者エントリを開きます。  <br/> |
+|[OpenEntry](imapisupport-openentry.md) <br/> |オブジェクトを開き、さらにアクセスするためのインターフェイスポインターを返します。  <br/> |
+|[getoneofftable](imapisupport-getoneofftable.md) <br/> |MAPI の1回限りのテーブルへのポインター (すべてのアドレス帳プロバイダーが新しい受信者を作成するためにサポートするテンプレートのリスト) を返します。  <br/> |
+|[Address](imapisupport-address.md) <br/> |[共通のアドレス] ダイアログボックスを表示します。  <br/> |
+|[詳細](imapisupport-details.md) <br/> |特定のアドレス帳エントリの詳細を表示するダイアログボックスを表示します。  <br/> |
+|[newentry](imapisupport-newentry.md) <br/> |アドレス帳コンテナーまたは送信メッセージの受信者リストに、新しい受信者を直接追加します。  <br/> |
+|[doconfigpropsheet](imapisupport-doconfigpropsheet.md) <br/> |構成プロパティシートを表示します。  <br/> |
+|[copymessages](imapisupport-copymessages.md) <br/> |メッセージを1つのフォルダーから別のフォルダーにコピーまたは移動します。  <br/> |
+|[CopyFolder](imapisupport-copyfolder.md) <br/> |フォルダーを現在の親フォルダーから別の親フォルダーにコピーまたは移動します。  <br/> |
+|[docopyto](imapisupport-docopyto.md) <br/> |明示的に除外されたプロパティを除き、1つのオブジェクトのすべてのプロパティを別のオブジェクトにコピーまたは移動します。  <br/> |
+|[docopyprops](imapisupport-docopyprops.md) <br/> |オブジェクトの1つまたは複数のプロパティを別のオブジェクトにコピーまたは移動します。  <br/> |
+|[do進捗ダイアログ](imapisupport-doprogressdialog.md) <br/> |進行状況インジケーターを表示する progress オブジェクトを取得します。  <br/> |
+|[ReadReceipt](imapisupport-readreceipt.md) <br/> |メッセージの読み取りまたは非開封レポートを生成します。  <br/> |
+|[PrepareSubmit](imapisupport-preparesubmit.md) <br/> |MAPI スプーラーに送信するためのメッセージを準備します。  <br/> |
+|[ExpandRecips](imapisupport-expandrecips.md) <br/> |特定の配布リストを展開し、メッセージの受信者の一覧を完成させる。  <br/> |
+|[do送信メール](imapisupport-dosentmail.md) <br/> |���M���ꂽ���b�Z�[�W��������܂��B  <br/> |
 |[OpenAddressBook](imapisupport-openaddressbook.md) <br/> |アドレス帳へのアクセスを提供します。  <br/> |
-|[CompleteMsg](imapisupport-completemsg.md) <br/> |メッセージのポスト プロセスを実行します。  <br/> |
-|[StoreLogoffTransports](imapisupport-storelogofftransports.md) <br/> |メッセージ ストアの正常型解放を要求します。  <br/> |
-|[StatusRecips](imapisupport-statusrecips.md) <br/> |配信し、配信不能レポートを生成します。  <br/> |
-|[WrapStoreEntryID](imapisupport-wrapstoreentryid.md) <br/> |MAPI の標準的な形式のエントリ id をメッセージ ・ ストアの内部のエントリの識別子に変換します。  <br/> |
-|[ModifyProfile](imapisupport-modifyprofile.md) <br/> |永続的なプロファイルのセクションを保存するメッセージを変更します。  <br/> |
-|[IStorageFromStream](imapisupport-istoragefromstream.md) <br/> |ストリームにアクセスするためのストレージ オブジェクトを実装します。  <br/> |
-|[GetSvcConfigSupportObj](imapisupport-getsvcconfigsupportobj.md) <br/> |メッセージ サービスのサポート オブジェクトを作成します。  <br/> |
+|[すべてのアウトの sg](imapisupport-completemsg.md) <br/> |メッセージに対して後処理を実行します。  <br/> |
+|[storelogofftransports](imapisupport-storelogofftransports.md) <br/> |メッセージストアの正常なリリースを要求します。  <br/> |
+|[StatusRecips](imapisupport-statusrecips.md) <br/> |配信レポートおよび配信不能レポートを生成します。  <br/> |
+|[WrapStoreEntryID](imapisupport-wrapstoreentryid.md) <br/> |メッセージストアの内部エントリ識別子を MAPI 標準形式のエントリ id に変換します。  <br/> |
+|[modifyprofile](imapisupport-modifyprofile.md) <br/> |メッセージストアプロファイルセクションの変更を永続的に行います。  <br/> |
+|[istoragefromstream](imapisupport-istoragefromstream.md) <br/> |stream にアクセスするためのストレージオブジェクトを実装します。  <br/> |
+|[GetSvcConfigSupportObj](imapisupport-getsvcconfigsupportobj.md) <br/> |メッセージサービスサポートオブジェクトを作成します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-書籍、メッセージ ・ ストア、トランスポート プロバイダー、および各サービスは、独自のサポート オブジェクトを持つメッセージに対応します。 サービス プロバイダーおよびメッセージ サービスは、他のインターフェイス メソッドの実装の一部としてサポート オブジェクトでメソッドを呼び出します。 各サポートのさまざまなオブジェクトには、呼び出し元に適用する方法の完全な実装適用されているメソッドは、MAPI_E_NO_SUPPORT を返します。 アドレス帳プロバイダーのサポート オブジェクトでは、次のメソッドの実装を持ちます。
+各アドレス帳、メッセージストア、トランスポートプロバイダー、およびメッセージサービスには、それぞれ独自のサポートオブジェクトがあります。 サービスプロバイダーとメッセージサービスは、他のインターフェイスメソッドの実装の一部として、サポートオブジェクト内のメソッドを呼び出します。 それぞれの異なるサポートオブジェクトには、呼び出し元に適用されるメソッドの実装が完全に実装されています。該当しないメソッドは MAPI_E_NO_SUPPORT を返します。 アドレス帳プロバイダーのサポートオブジェクトには、次のメソッドの実装があります。
   
 ||||
 |:-----|:-----|:-----|
-|**住所** <br/> |**CompareEntryIDs** <br/> |**CreateOneOff** <br/> |
-|**詳細** <br/> |**DoConfigPropsheet** <br/> |**DoProgressDialog** <br/> |
-|**発生しました** <br/> |**GetMemAllocRoutines** <br/> |**GetOneOffTable** <br/> |
-|**IStorageFromStream** <br/> |**GetSvcConfigSupportObj** <br/> |**MakeInvalid** <br/> |
-|**ModifyStatusRow** <br/> |**NewEntry** <br/> |**NewUID** <br/> |
+|**Address** <br/> |**CompareEntryIDs** <br/> |**createoneoff** <br/> |
+|**詳細** <br/> |**doconfigpropsheet** <br/> |**do進捗ダイアログ** <br/> |
+|**GetLastError** <br/> |**getmemallocroutines** <br/> |**getoneofftable** <br/> |
+|**istoragefromstream** <br/> |**GetSvcConfigSupportObj** <br/> |**makeinvalid** <br/> |
+|**modifystatusrow** <br/> |**newentry** <br/> |**newuid** <br/> |
 |**Notify** <br/> |**OpenAddressBook** <br/> |**OpenEntry** <br/> |
-|**OpenProfileSection** <br/> |**OpenTemplateID** <br/> |**SetProviderUID** <br/> |
-|**Subscribe** <br/> |**Unsubscribe** <br/> |**WrapStoreEntryID** <br/> |
+|**openプロファイル '** <br/> |**OpenTemplateID** <br/> |**setprovideruid** <br/> |
+|**こう** <br/> |**登録を解除する** <br/> |**WrapStoreEntryID** <br/> |
    
-メッセージ ストア プロバイダーのサポートのオブジェクトでは、次のメソッドの実装を持ちます。
+メッセージストアプロバイダーのサポートオブジェクトには、次のメソッドの実装があります。
   
 ||||
 |:-----|:-----|:-----|
-|**CompareEntryIDs** <br/> |**CompleteMsg** <br/> |**CopyFolder** <br/> |
-|**CopyMessages** <br/> |**CreateOneOff** <br/> |**DoCopyProps** <br/> |
-|**DoCopyTo** <br/> |**DoConfigPropsheet** <br/> |**DoProgressDialog** <br/> |
-|**DoSentMail** <br/> |**ExpandRecips** <br/> |**発生しました** <br/> |
-|**GetMemAllocRoutines** <br/> |**GetSvcConfigSupportObj** <br/> |**MakeInvalid** <br/> |
-|**IStorageFromStream** <br/> |**ModifyProfile** <br/> |**ModifyStatusRow** <br/> |
-|**NewUID** <br/> |**Notify** <br/> |**OpenAddressBook** <br/> |
-|**OpenEntry** <br/> |**OpenProfileSection** <br/> |**PrepareSubmit** <br/> |
-|**ReadReceipt** <br/> |**SetProviderUID** <br/> |**SpoolerNotify** <br/> |
-|**StoreLogoffTransports** <br/> |**Subscribe** <br/> |**Unsubscribe** <br/> |
+|**CompareEntryIDs** <br/> |**すべてのアウトの sg** <br/> |**CopyFolder** <br/> |
+|**copymessages** <br/> |**createoneoff** <br/> |**docopyprops** <br/> |
+|**docopyto** <br/> |**doconfigpropsheet** <br/> |**do進捗ダイアログ** <br/> |
+|**do送信メール** <br/> |**ExpandRecips** <br/> |**GetLastError** <br/> |
+|**getmemallocroutines** <br/> |**GetSvcConfigSupportObj** <br/> |**makeinvalid** <br/> |
+|**istoragefromstream** <br/> |**modifyprofile** <br/> |**modifystatusrow** <br/> |
+|**newuid** <br/> |**Notify** <br/> |**OpenAddressBook** <br/> |
+|**OpenEntry** <br/> |**openプロファイル '** <br/> |**PrepareSubmit** <br/> |
+|**ReadReceipt** <br/> |**setprovideruid** <br/> |**SpoolerNotify** <br/> |
+|**storelogofftransports** <br/> |**こう** <br/> |**登録を解除する** <br/> |
 |**WrapStoreEntryID** <br/> |
    
-トランスポート プロバイダーのサポートのオブジェクトでは、次のメソッドの実装を持ちます。
+トランスポートプロバイダーのサポートオブジェクトには、次のメソッドの実装があります。
   
 ||||
 |:-----|:-----|:-----|
-|**DoConfigPropsheet** <br/> |**CompareEntryIDs** <br/> |**CreateOneOff** <br/> |
-|**GetMemAllocRoutines** <br/> |**GetSvcConfigSupportObj** <br/> |**発生しました** <br/> |
-|**IStorageFromStream** <br/> |**MakeInvalid** <br/> |**ModifyStatusRow** <br/> |
-|**OpenAddressBook** <br/> |**RegisterPreprocessor** <br/> |**NewUID** <br/> |
-|**Notify** <br/> |**OpenProfileSection** <br/> |**OpenEntry** <br/> |
+|**doconfigpropsheet** <br/> |**CompareEntryIDs** <br/> |**createoneoff** <br/> |
+|**getmemallocroutines** <br/> |**GetSvcConfigSupportObj** <br/> |**GetLastError** <br/> |
+|**istoragefromstream** <br/> |**makeinvalid** <br/> |**modifystatusrow** <br/> |
+|**OpenAddressBook** <br/> |**registerpreprocessor プロセッサ** <br/> |**newuid** <br/> |
+|**Notify** <br/> |**openプロファイル '** <br/> |**OpenEntry** <br/> |
 |**StatusRecips** <br/> |**SpoolerNotify** <br/> |**SpoolerYield** <br/> |
-|**WrapStoreEntryID** <br/> |**Subscribe** <br/> |**Unsubscribe** <br/> |
+|**WrapStoreEntryID** <br/> |**こう** <br/> |**登録を解除する** <br/> |
    
-メッセージ サービスのサポート対象では、次のメソッドの実装を持ちます。
+メッセージサービスサポートオブジェクトには、次のメソッドの実装があります。
   
 |||
 |:-----|:-----|
-|**DoConfigPropsheet** <br/> |**発生しました** <br/> |
-|**GetMemAllocRoutines** <br/> |**GetSvcConfigSupportObj** <br/> |
-|**MakeInvalid** <br/> |**NewUID** <br/> |
-|**OpenProfileSection** <br/> |
+|**doconfigpropsheet** <br/> |**GetLastError** <br/> |
+|**getmemallocroutines** <br/> |**GetSvcConfigSupportObj** <br/> |
+|**makeinvalid** <br/> |**newuid** <br/> |
+|**openプロファイル '** <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
 

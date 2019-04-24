@@ -13,11 +13,11 @@ api_type:
 ms.assetid: c611640b-1a70-4a76-b7ff-c8ad8d320892
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 22a1a62f4ee6ff492f36eb18e2d92c8d70febd72
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25382611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326125"
 ---
 # <a name="pidtagaddressbookhierarchicalrootdepartment"></a>PidTagAddressBookHierarchicalRootDepartment
 
@@ -25,43 +25,43 @@ ms.locfileid: "25382611"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
- (HAB) の階層構造のアドレスのルートの識別名 (DN) が含まれています。 
+ 階層アドレスルート (HAB) の識別名 (DN) を含みます。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_EMS_AB_HAB_ROOT_DEPARTMENT、PR_EMS_AB_HAB_ROOT_DEPARTMENT_A  <br/> |
-|プロパティを設定します。  <br/> |アドレス帳  <br/> |
-|長い ID (LID):  <br/> |0x8C98  <br/> |
+|プロパティセット:  <br/> |アドレス帳  <br/> |
+|ロング ID (LID):  <br/> |0x8c98  <br/> |
 |データの種類 :   <br/> |PT_STRING8  <br/> |
 |エリア:  <br/> |Exchange アドレス帳  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-これは、グローバル アドレス一覧 (GAL) コンテナーのプロパティであり、階層的なアドレスのルートの識別名を表します。 このプロパティは、Active Directory ドメイン サービス (AD DS) しないとオフライン アドレス帳に存在だけです。 呼び出し元は、リモート プロシージャ呼び出しを避けるために GetProps 呼び出しに MAPI_CACHE_ONLY を渡す必要があります。 これが存在しない場合、呼び出し元は、ルート部署が見つかりません PT_OBJECT の種類は、PR_EMS_AB_HAB_ROOT_DEPARTMENT を使用する必要があります。 
+これはグローバルアドレス一覧 (GAL) コンテナーのプロパティであり、階層的なアドレスルートの識別名を表します。 このプロパティは、オフラインアドレス帳にのみ存在し、Active Directory ドメインサービス (AD DS) には含まれません。 呼び出し元は、リモートプロシージャコールを回避するために MAPI_CACHE_ONLY を GetProps 呼び出しに渡す必要があります。 このパラメーターが存在しない場合、発信者は PT_OBJECT 型の PR_EMS_AB_HAB_ROOT_DEPARTMENT を使用して、ルート部署を検索する必要があります。 
   
-ルート部署が取得した後は、MAPI_MAILUSER または MAPI_DISTLIST オブジェクトの種類があります。 オブジェクトの種類が MAPI_DISTLIST の場合は、新しいスキーマを採用します。 オブジェクトの種類が MAPI_MAILUSER の場合は、前のスキーマを採用されています。 
+ルート部門が取得されると、MAPI_MAILUSER または MAPI_DISTLIST のオブジェクトタイプを持つことができます。 オブジェクトの種類が MAPI_DISTLIST の場合は、新しいスキーマが使用されています。 オブジェクトの種類が MAPI_MAILUSER の場合、前のスキーマが使用されています。 
   
-- Microsoft Office Outlook 2007 Service Pack 2 には、両方のスキーマがサポートされています。 
+- Microsoft Office Outlook 2007 Service Pack 2 は、両方のスキーマをサポートしています。 
     
-- Microsoft Outlook 2010 および Microsoft Outlook 2013 は、新しいスキーマをサポートします。
+- microsoft outlook 2010 および microsoft outlook 2013 は、新しいスキーマをサポートしています。
     
-新しいスキーマで部門のすべてのグループも、配布リスト、MAPI_DISTLIST の種類の。 部門のグループ、および部門別のグループ内の部門のメンバーを取得するには、配布リストのメンバーと同様に PR_EMS_AB_MEMBER を使用します。
+新しいスキーマでは、すべての部署グループが配布リストであり、MAPI_DISTLIST 型でもあります。 部署グループのメンバー、および部署グループ内の部署は、PR_EMS_AB_MEMBER を使用して配布リストのメンバーとまったく同じように取得されます。
   
-ルート部署が取得した後は、MAPI_MAILUSER または MAPI_DISTLIST オブジェクトの種類があります。 オブジェクトの種類が MAPI_DISTLIST の場合は、新しいスキーマが使用されています。 オブジェクトの種類が MAPI_MAILUSER の場合は、古いスキーマが使用されています。 
+ルート部門が取得されると、MAPI_MAILUSER または MAPI_DISTLIST のオブジェクトタイプを持つことができます。 オブジェクトの種類が MAPI_DISTLIST の場合は、新しいスキーマが使用されています。 オブジェクトの種類が MAPI_MAILUSER の場合は、古いスキーマが使用されています。 
   
-新しいスキーマですべての部門別のグループも Dl、型 MAPI_DISTLIST の。
+新しいスキーマでは、すべての部署グループは dl でもあり、MAPI_DISTLIST 型です。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Microsoft Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Microsoft Exchange Server プロトコルの仕様への参照を提供します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -69,9 +69,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

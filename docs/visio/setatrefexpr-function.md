@@ -8,17 +8,17 @@ f1_keywords:
 - Vis_DSS.chm1027317
 localization_priority: Normal
 ms.assetid: c1bd7819-b53b-bff1-69c1-6d78e8fb278b
-description: ユーザー インターフェイス (UI) またはオートメーションでのアクションによって設定される値を格納します。
-ms.openlocfilehash: c664717afcc2b81e55495fd1957a86ef1b021d0d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: ユーザーインターフェイス (UI) またはオートメーションのアクションによって設定された値を格納します。
+ms.openlocfilehash: 5ca7b59d0ced9c3da346c416826ac89e6b4001da
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326006"
 ---
 # <a name="setatrefexpr-function"></a>SETATREFEXPR 関数
 
-ユーザー インターフェイス (UI) またはオートメーションでのアクションによって設定される値を格納します。
+ユーザーインターフェイス (UI) またはオートメーションのアクションによって設定された値を格納します。
   
 ## <a name="syntax"></a>構文
 
@@ -28,13 +28,13 @@ SETATREFEXPR ([* * *expr_opt* * *])
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _expr_opt_ <br/> |省略可能  <br/> |**多様** <br/> |値または SETATREF 関数で参照されているセルに代入される式によって置き換えられる式です。 指定されていない場合、初期値は 0 (ゼロ) にします。  <br/> |
+| _expr_opt_ <br/> |省略可能  <br/> |**さまざま** <br/> |SETATREF 関数で参照先のセルに割り当てられる値または式によって置き換えられる式を指定します。 指定しない場合、初期値は 0 (ゼロ) になります。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 SETATREFEXPR 式の値は、SETATREFEXPR 式を含むセルを参照する別のセルの SETATREF 関数から設定することもできます。 
   
-SETATREFEXPR 関数を SETATREF 関数にパラメーターとして使用するのには制限されません。 
+SETATREF 関数のパラメーターとして SETATREFEXPR 関数を使用することに制限はありません。 
   
 ## <a name="example-1"></a>例 1
 
@@ -50,9 +50,9 @@ User.GridX =2 in
   
 User.GridY =2 in
   
-[Pinx] = INT (SETATREFEXPR ()/User.GridX +.5)\*User.GridX
+PinX = INT (SETATREFEXPR ()/User.GridX + .5)\*GridX
   
-[Piny] = INT (SETATREFEXPR ()/User.GridY +.5)\*User.GridY
+PinY = INT (SETATREFEXPR ()/User.GridY + .5)\*ユーザー. GridY
   
 ## <a name="example-3"></a>例 3
 

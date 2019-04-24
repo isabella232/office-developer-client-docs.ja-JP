@@ -1,5 +1,5 @@
 ---
-title: 通知の強制
+title: 通知を強制する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,23 +7,23 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 9c7d6605-73ee-468c-981b-e0853106c9ba
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5affce8ab7a8b08019816ad9485641c401dd80c9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 54eaf9e67da1b520896122c937508a90700a0b84
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328099"
 ---
-# <a name="forcing-a-notification"></a>通知の強制
+# <a name="forcing-a-notification"></a>通知を強制する
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-サービス プロバイダーの使用の場合、 [IMAPISupport: IUnknown](imapisupportiunknown.md)通知は、MAPI の方法が非表示のウィンドウとその対応するウィンドウ プロシージャを使用して通知を提供します。 各プロセスが通知を受信するには、MAPI は、非表示のウィンドウに特別なメッセージを投稿します。 このメッセージは、MAPIDEFS で定義されている定数**szMAPINotificationMsg**と呼ばれます。H. 
+サービスプロバイダーが[imapisupport:](imapisupportiunknown.md) notification 用に IUnknown メソッドを使用すると、MAPI は非表示ウィンドウと対応するウィンドウプロシージャを使用して通知を配信します。 各プロセスが通知を受信するには、MAPI が非表示のウィンドウに特別なメッセージを投稿します。 このメッセージは、mapidefs.h で定義されている定数**szMAPINotificationMsg**を使用して名前が付けられます。H. 
   
-非表示のウィンドウのウィンドウ プロシージャは、 **szMAPINotificationMsg**メッセージを処理するとき、これらの通知が表示されます。 通知が配信されることを保証するには、待ってから、この**szMAPINotificationMsg**のメッセージをディスパッチする必要があります。 これを達成するためのロジックを実装することを行うだけでかなりが、MAPI は MAPI DLL にエントリ ポイントがさらに簡単な処理を行うには、 [HrDispatchNotifications](hrdispatchnotifications.md)と呼ばれるを提供します。 クライアントに通知を受信するには、次のように**HrDispatchNotifications**を呼び出します。 
+これらの通知は、非表示のウィンドウのウィンドウプロシージャが**szMAPINotificationMsg**メッセージを処理するときに表示されます。 通知が配信されることを保証するには、この**szMAPINotificationMsg**メッセージを待機してディスパッチする必要があります。 これを実現するためのロジックを実装することは非常に簡単ですが、mapi は[HrDispatchNotifications](hrdispatchnotifications.md)と呼ばれる mapi DLL にエントリポイントを提供して、処理をさらに簡単にします。 クライアントで通知を受信するには、次のように**HrDispatchNotifications**を呼び出します。 
   
 ```cpp
 HRESULT hr = HrDispatchNotifications(0);

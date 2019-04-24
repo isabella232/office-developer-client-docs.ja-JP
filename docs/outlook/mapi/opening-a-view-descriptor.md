@@ -7,30 +7,30 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 1940feb0-9e0f-4d96-9fb9-b9a35a0aa661
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 680d80c0827399f3b7a0ea5819e51be654a05810
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: ce53e5a91f6fa340728872457eae7f6514e287aa
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326209"
 ---
 # <a name="opening-a-view-descriptor"></a>ビュー記述子を開く
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-標準表示モード、既定のビューまたは個人用ビューの任意の数に多くのフォルダーを開くことができます。 ビューでは、フォルダーの内容を表示する方法について説明します。 標準のビューは、別のビューがない場合に、最初にフォルダーを開くときに使用されます。 代替ビューが存在する場合は、フォルダーを開くに使用してください。
+通常のビュー、既定のビュー、または任意の数の個人用ビューを使用して、多くのフォルダーを開くことができます。 ビューは、フォルダーの内容を表示する方法について説明します。 標準表示モードは、代替ビューがない場合、またはフォルダーを初めて開いたときに使用されます。 代替ビューが存在する場合は、それを使用してフォルダーを開く必要があります。
   
-ビューは、ビュー記述子と呼ばれるメッセージの説明です。 ビュー記述子では、通常、関連付けられているメッセージとして作成し、[共通] または [個人用のビュー フォルダーまたは IPM の任意のフォルダー内に表示されます。
+ビューは、ビュー記述子と呼ばれるメッセージで記述されます。 通常は、関連付けられたメッセージとして作成され、[共通] または [個人用ビュー] フォルダーまたは任意の IPM フォルダーに表示することができます。
   
-### <a name="to-open-a-view-descriptor"></a>ビュー記述子を開く
+### <a name="to-open-a-view-descriptor"></a>ビュー記述子を開くには
   
-1. フォルダーの内容を関連するテーブルを取得するために[IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md)を呼び出します。 
+1. [IMAPIContainer:: getcontentstable](imapicontainer-getcontentstable.md)を呼び出して、フォルダーの関連付けられたコンテンツテーブルを取得します。 
     
-2. ビュー記述子用に予約されたメッセージ クラスのメッセージだけを検索する制限を作成し、テーブルを制限する[IMAPITable::Restrict](imapitable-restrict.md)と、適切な行を取得するために[IMAPITable::QueryRows](imapitable-queryrows.md)を呼び出すか、.
+2. ビュー記述子に予約されたメッセージクラスを持つメッセージのみを特定する制限[](imapitable-restrict.md)を作成し、次のように、適切な行を取得するには、テーブルと imapitable:: [QueryRows](imapitable-queryrows.md)を制限します。
     
-   **PR_DEFAULT_VIEW_ENTRYID** ([PidTagDefaultViewEntryId](pidtagdefaultviewentryid-canonical-property.md)) のプロパティを取得するために、フォルダーの[IMAPIProp::GetProps](imapiprop-getprops.md)メソッドを呼び出します。 **PR_DEFAULT_VIEW_ENTRYID**には、フォルダーの既定のビューの記述子が含まれるメッセージのエントリ id が含まれています。 フォルダーは、 [IMAPIFolder::CreateMessage](imapifolder-createmessage.md)および[IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md)への呼び出しに MAPI_ASSOCIATED フラグの使用をサポートしている場合、この呼び出しは成功します。
+   フォルダーの[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出して、その**PR_DEFAULT_VIEW_ENTRYID** ([PidTagDefaultViewEntryId](pidtagdefaultviewentryid-canonical-property.md)) プロパティを取得します。 **PR_DEFAULT_VIEW_ENTRYID**には、フォルダーの既定のビュー記述子を含むメッセージのエントリ識別子が含まれています。 フォルダーが[imapifolder:: CreateMessage](imapifolder-createmessage.md)および[IMAPIContainer:: getcontentstable](imapicontainer-getcontentstable.md)への呼び出しで MAPI_ASSOCIATED フラグの使用をサポートしている場合、この呼び出しは成功します。
     
-3. 開くビュー記述子のエントリの識別子を使用して[IMsgStore::OpenEntry](imsgstore-openentry.md)を呼び出します。 
+3. を開くには、 [IMsgStore:: openentry](imsgstore-openentry.md)という名前のビュー記述子のエントリ識別子を使用します。 
     
 

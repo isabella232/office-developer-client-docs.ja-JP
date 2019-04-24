@@ -8,19 +8,19 @@ f1_keywords:
 - Vis_DSS.chm82251266
 localization_priority: Normal
 ms.assetid: bc8f5469-e79f-4a68-73cb-d11c938353a4
-description: テキスト ブロックの右の枠線と、そのブロックに含まれるテキストとの間隔を指定します。既定値は 0.1 インチです。
-ms.openlocfilehash: 57fdb320395a9a6562983a0148b37c4a70a9a9b6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: テキスト ブロックの右の枠線と、そのブロックに含まれるテキストとの間隔を指定します。 既定値は 0.1 インチです。
+ms.openlocfilehash: 7a9d2406792e9e57c6acd0e4291b624633e70dcb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326776"
 ---
-# <a name="rightmargin-cell-text-block-format-section"></a>[RightMargin] セル ([テキスト ブロックの書式設定] セクション)
+# <a name="rightmargin-cell-text-block-format-section"></a>[RightMargin] セル ([Text Block Format] セクション)
 
-テキスト ブロックの右の枠線と、そのブロックに含まれるテキストとの間隔を指定します。既定値は 0.1 インチです。
+テキスト ブロックの右の枠線と、そのブロックに含まれるテキストとの間隔を指定します。 既定値は 0.1 インチです。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 この値は、図面の縮尺による影響を受けません。図面の縮尺を変更しても、右余白は変わりません。
   
@@ -34,8 +34,8 @@ ms.locfileid: "19806236"
   
 |||
 |:-----|:-----|
-| セクション インデックス:  <br/> |**visSectionObject** <br/> |
+| セクション インデックス :  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowText** <br/> |
-| セル インデックス:  <br/> |**visTxtBlkRightMargin** <br/> |
+| セル インデックス :  <br/> |**visTxtBlkRightMargin** <br/> |
    
 

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 573f40c5-e0d2-4281-8c22-10a1ae1f0dee
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d246fc0cfc60d0a2b9ff12ee70eae2366cf9b53a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: a2da3f6851e45a70dcd4604396a85430c539a830
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322394"
 ---
 # <a name="imapisecuremessagegetbasemessage"></a>IMAPISecureMessage::GetBaseMessage
 
@@ -25,7 +25,7 @@ ms.locfileid: "22594839"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-基になるを取得[IMessage: IMAPIProp](imessageimapiprop.md)この[IMAPISecureMessage: IUnknown](imapisecuremessageiunknown.md)カプセル化することです。 
+この[imapisecuremessage: IUnknown](imapisecuremessageiunknown.md)がカプセル化されている、基になる[IMessage: imapiprop](imessageimapiprop.md)を取得します。 
   
 ```cpp
 HRESULT GetBaseMessage(
@@ -37,9 +37,9 @@ HRESULT GetBaseMessage(
 
  _ppmsg_
   
-> [out]セキュリティで保護されたメッセージのオブジェクト。
+> 読み上げセキュリティで保護されたメッセージオブジェクト。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK
   

@@ -7,31 +7,31 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8cb8f916-f061-4c4c-ad1b-40d44af3345a
-description: OSC では、ソーシャル ネットワークの OSC プロバイダーの機能を決定する ISocialProvider::GetCapabilities メソッドを呼び出します。
-ms.openlocfilehash: 82bb5322118fa3ebd7610f56b8f34ae95b59a40f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '.osc は、ソーシャルネットワークの .osc プロバイダーの機能を判断するために、imethod alprovider:: getcapabilities メソッドを呼び出します。'
+ms.openlocfilehash: 9d504fb64368a6910feaa38f0ef19ed631b4d4e3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327189"
 ---
 # <a name="getting-activities"></a>アクティビティの取得
 
-OSC では、ソーシャル ネットワークの OSC プロバイダーの機能を決定する[ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md)メソッドを呼び出します。 **GetActivities**と**dynamicActivitiesLookupEx** **機能**の返された XML 要素では、OSC プロバイダーが要求と活動をメモリに格納することで取得の活動をサポートしていることを示す、OSC、次のことができます。呼び出しシーケンスです。 OSC では、ハッシュ関数を**実装しています。** 要素で XML の**機能**を指定もメモします。 OSC では、活動と情報を取得 ( [ISocialPerson](isocialpersoniunknown.md)インターフェイスでサポートされている)、ソーシャル ネットワーク上の非友人や友人を次の順序でメソッドを呼び出します。 
+.osc は、ソーシャルネットワークの .osc プロバイダーの機能を判断するために、 [imethod alprovider:: getcapabilities](isocialprovider-getcapabilities.md)メソッドを呼び出します。 返された**機能**XML の**getactivities**要素と**dynamicActivitiesLookupEx**要素が、.osc プロバイダーが必要に応じてアクティビティを取得し、アクティビティをメモリに格納していることを示している場合、.osc は次のことを行うことができます。呼び出しシーケンス。 また、.osc は、 **capabilities** XML の**hashfunction**要素で指定されているハッシュ関数についても注意してください。 .osc は、ソーシャルネットワーク上の友人および友人以外のアクティビティと情報 (isocial [alperson](isocialpersoniunknown.md)インターフェイスでサポートされる) を取得するために、次のシーケンスのメソッドを呼び出します。 
   
-1. [ISocialSession::GetLoggedOnUser](isocialsession-getloggedonuser.md) -、OSC は認証プロセスの最後に、ユーザーが認証されるための[ISocialProfile](isocialprofileisocialperson.md)インターフェイスを取得するのには**GetLoggedOnUser**を呼び出します。 認証の詳細については、[基本認証](basic-authentication.md)と[フォーム ベース認証](forms-based-authentication.md)を参照してください。
+1. [iGetLoggedOnUser alsession::](isocialsession-getloggedonuser.md) —認証プロセスの最後に、.osc が**GetLoggedOnUser**を呼び出して、認証されているユーザーの[i alprofile](isocialprofileisocialperson.md)インターフェイスを取得します。 認証の詳細については、「[基本認証](basic-authentication.md)」および「[フォームベース認証](forms-based-authentication.md)」を参照してください。
     
-2. [ISocialSession2::GetActivitiesEx](isocialsession2-getactivitiesex.md) -、OSC を取得 Outlook 人物情報ウィンドウに表示されている担当者、およびに返されたハッシュの SMTP アドレスを**ISocialSession2::GetActivitiesEx**を呼び出して、(メモリ内) のアクティビティ データを格納します。これらの担当者。 OSC は、_アクティビティ_、ログオン中のユーザーの友人の活動のコレクションを格納する文字列には、出力パラメーターを取得します。 この文字列は、 **activityFeed**要素のスキーマ定義に準拠しています。 
+2. [ISocialSession2:: GetActivitiesEx](isocialsession2-getactivitiesex.md) — [Outlook People] ウィンドウに表示されている人の場合、このアクティビティは SMTP アドレスを取得してハッシュし、 **ISocialSession2::::: GetActivitiesEx**、およびストア (メモリ) を呼び出します。返されるアクティビティデータこれらの人物。 .osc は、出力パラメーター [_アクティビティ_] を取得します。これは、ログオンしているユーザーのフレンドのアクティビティのコレクションを含む文字列です。 この文字列は、 **activityfeed**要素のスキーマ定義に準拠しています。 
     
-3. [ISocialSession::GetPerson](isocialsession-getperson.md) - **activityFeed** **GetActivitiesEx**から返された XML 内の**activityDetails**要素ごとには、その活動を所有する人物の**ownerID**要素です。 OSC では、その**ownerID**値を使用して、その人の**ISocialPerson**インターフェイスを取得するのには**GetPerson**を呼び出します。 
+3. [iGetActivitiesEx alsession:: getperson](isocialsession-getperson.md) — **** によって返される**activitydetails** XML 内の各**activitydetails**要素に、そのアクティビティを所有しているユーザーを示す**ownerID**要素があります。 .osc は、その**ownerID**値を使用して**getperson**を呼び出し、その人物の**i alperson**インターフェイスを取得します。 
     
-4. [ISocialPerson::GetDetails](isocialperson-getdetails.md) -、OSC 3 のステップから取得された**ISocialPerson**オブジェクトに基づき、名、姓、名など、その人の詳細を取得する**GetDetails**を呼び出します。 OSC **activityFeed**手順 2 で、 **GetActivitiesEx**から返された XML 内の**activityDetails**要素で指定されているそれぞれのアクティビティで同じことが行えます。 
+4. [ichanged alperson:: getdetails](isocialperson-getdetails.md) —手順3で取得した**i指定 alperson**オブジェクトに基づき、.osc は**getdetails**を呼び出して、その人物 (名や姓など) の詳細を取得します。 この .osc は、手順2で**GetActivitiesEx**によって返される**activitydetails** XML の**activitydetails**要素で指定されている各アクティビティに対して同じ操作を行うことができます。 
     
 > [!NOTE]
-> OSC では、既定の間隔で活動のキャッシュを更新します。 活動キャッシュの更新の詳細については、[同期の友人との活動](synchronizing-friends-and-activities.md)を参照してください。 
+> .osc は、アクティビティキャッシュを既定の間隔で更新します。 アクティビティキャッシュの更新の詳細については、「[友人とアクティビティを同期](synchronizing-friends-and-activities.md)する」を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 
-- [機能のための XML](xml-for-capabilities.md)
-- [OSC の典型的な呼び出しシーケンス](osc-typical-calling-sequences.md)
+- [機能の XML](xml-for-capabilities.md)
+- [通常の呼び出しシーケンスの .osc](osc-typical-calling-sequences.md)
 

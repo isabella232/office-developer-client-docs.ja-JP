@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: e135ba67-97be-4ce0-a72e-93c49ed7d6e2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c823a4e3d08d9082a3b5ac5c4bd8169612caa16e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 27ec919d720e1089d6e102f20485d936c9dc9808
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328001"
 ---
 # <a name="ftmuldw"></a>FtMulDw
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-32 ビットの符号なし整数を符号なしの 64 ビット整数を乗算します。
+符号なしの64ビット整数を、符号なしの32ビット整数で乗算します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 FILETIME FtMulDw(
@@ -44,14 +44,14 @@ FILETIME FtMulDw(
 
  _べき乗_
   
-> [in]マルチ プライアで 32 ビットの符号なし整数を含むダブル ワード。 
+> 順番符号なし32ビットの整数乗数を含む二重の単語。 
     
- _被乗数_
+ _Multiplicand_
   
-> [in]_乗数_パラメーターの値が乗算されます、64 ビットの符号なし整数を格納する[FILETIME](filetime.md)構造体。 
+> 順番_乗数_パラメーターの値で乗算する、符号なしの64ビット整数を含む[FILETIME](filetime.md)構造。 
     
 ## <a name="return-value"></a>戻り値
 
-**FtMulDw**関数は、2 つの整数の積を格納する**FILETIME**構造体を返します。 2 つの入力パラメーターは変更されません。 
+**FtMulDw**関数は、2つの整数の積を含む**FILETIME**構造を返します。 2つの入力パラメーターは変更されません。 
   
 

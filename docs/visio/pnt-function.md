@@ -8,39 +8,39 @@ f1_keywords:
 - Vis_DSS.chm82251480
 localization_priority: Normal
 ms.assetid: d14a735c-0278-922f-7823-79adf6cb1e64
-description: 座標で表される点を返します。 x および y 値を 1 つにします。
-ms.openlocfilehash: be00f7d5ae55f70407e35eca43881a6d3f70ec13
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 座標 x と y によって表される点を、1つの値として返します。
+ms.openlocfilehash: c0a12aa18f4c766ea1f5b0fa1d827804d766713c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322352"
 ---
 # <a name="pnt-function"></a>PNT 関数
 
-座標_x_と_y_を 1 つの値で表される点を返します。 
+座標_x_と_y_によって表される点を、1つの値として返します。 
   
 ## <a name="syntax"></a>構文
 
-Pnt 関数 (* * *x y* * *) 
+PNT (* * *x, y* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _x, y_ <br/> |必須  <br/> |**数値型 (Number),数値型 (Number)** <br/> |現在の図形の座標系にある点の座標を指定します。  <br/> |
+| _x、y_ <br/> |必須  <br/> |**数値型 (Number),数値型 (Number)** <br/> |現在の図形の座標系にある点の座標を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
-点
+Point
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-ポイントに座標を変換すると、 *x*および*y*を操作しなくても図形座標を変更するのには、座標を別々 にします。 
+座標をポイントに変換すると、 *x*座標と*y*座標を個別に操作しなくても図形の座標を変更できます。 
   
 ## <a name="example"></a>例
 
-PNT(PinX,PinY) 
+PNT (PinX、PinY) 
   
 [PinX] と [PinY] で表される点を返します。 
   

@@ -1,192 +1,192 @@
 ---
-title: プロジェクトのオンライン追加の JavaScript オブジェクト モデル (JSOM) を使用して開発
+title: JavaScript オブジェクトモデル (jsom) を使用して Project Online アドインを開発する
 manager: soliver
 ms.date: 11/08/2016
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 4a4b1ad2-de46-421d-a698-53c20c90b93a
-description: この資料では、オンラインのプロジェクトと、利便性を強化するためにプロジェクトをオンラインでマイクロソフトのアドインを開発について説明します。 開発プロジェクトは、チュートリアルとして実装されます。 アドインをこの資料の使用しプロジェクト名とプロジェクトのオンライン アカウントから発行されたプロジェクトの Id が表示されますを読み込んで使用すると、個々 のプロジェクトに関連付けられている取得タスクへのドリル ダウンします。
+description: この記事では、project online の利便性を向上させるための Microsoft project online アドイン開発について説明します。 開発プロジェクトは、チュートリアルとして実装されています。 この記事で使用されているアドインでは、project Online アカウントから発行済みプロジェクトのプロジェクト名と id を読み込んで表示することができ、個々のプロジェクトに関連付けられたタスクを取得するためにドリルダウンすることができます。
 ms.openlocfilehash: 0a472a6300f18aaa65649f44d944445642a59e1a
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25399306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322691"
 ---
-# <a name="developing-a-project-online-add-in-using-the-javascript-object-model-jsom"></a>プロジェクトのオンライン追加の JavaScript オブジェクト モデル (JSOM) を使用して開発
+# <a name="developing-a-project-online-add-in-using-the-javascript-object-model-jsom"></a>JavaScript オブジェクトモデル (jsom) を使用して Project Online アドインを開発する
 
-プロジェクト オンラインと、利便性を強化するためにプロジェクトをオンラインでマイクロソフトのアドインの開発について説明します。 開発プロジェクトは、チュートリアルとして実装されます。 アドインをこの資料の使用しプロジェクト名とプロジェクトのオンライン アカウントから発行されたプロジェクトの Id が表示されますを読み込んで使用すると、個々 のプロジェクトに関連付けられている取得タスクへのドリル ダウンします。
+この記事では、project online の利便性を向上させるための Microsoft project online アドイン開発について説明します。 開発プロジェクトは、チュートリアルとして実装されています。 この記事で使用されているアドインでは、project Online アカウントから発行済みプロジェクトのプロジェクト名と id を読み込んで表示することができ、個々のプロジェクトに関連付けられたタスクを取得するためにドリルダウンすることができます。
   
-実行時に、アドインの一覧は次の次の図に似ています。
+実行時に、アドインの一覧は次の図のようになります。
   
-![スクリーン ショットは、JSOM プロジェクトとタスクの一覧を表示](media/766e5914-f048-48f4-9282-291f55e6e90d.png "スクリーン ショットは、JSOM プロジェクトとタスクの一覧を表示")
+![jsom のプロジェクトとタスクの一覧を示すスクリーンショット](media/766e5914-f048-48f4-9282-291f55e6e90d.png "jsom のプロジェクトとタスクの一覧を示すスクリーンショット")
   
-この例の目的は、プロジェクト オンラインでクエリを実行して、サービスからの各要求のコンテキストを設定するとの相互作用です。 ユーザー インターフェイス (UI) 要素には、最低限の注意が表示されます。 代わりに、ソースの一覧では、UI に関するコメントを提供します。
+この例の目的は、Project Online との対話と、サービスからの要求ごとにクエリを実行してコンテキストを設定することです。 ユーザーインターフェイス (UI) 要素には、特に注意が払われません。 その代わりに、ソースリストには UI に関するコメントが記載されています。
   
 > [!NOTE]
-> 例のアドインで、Visual Studio プロジェクトのソース ファイルがある: https://github.com/OfficeDev/Project-JSOM-List-Projects-Tasks....。 手元ソース ファイルの参照として、資料を参照するときにそれぞれを補完するもの、もう一方に。 Visual Studio 内のファイルがプロジェクトのビルドとは、最小限の変更を実行可能: PWA のフォルダーに、プロジェクトのオンラインのテナントの代わりに、URL です。 
+> サンプルアドインのソースファイル (Visual Studio プロジェクト) は、から入手できhttps://github.com/OfficeDev/Project-JSOM-List-Projects-Tasks....ます。 記事を読む際に、ソースファイルを参照できるようにしておきます。 Visual Studio プロジェクトのファイルがビルドされ、最小限の変更で実行可能になります。これは、project Online テナントの URL を PWA フォルダーに置き換えることです。 
   
 ## <a name="background"></a>背景
 
-オンラインのプロジェクトは、プロジェクト ポートフォリオ管理 (PPM) と調整し、ポートフォリオ、プログラム、およびプロジェクトを管理するプロジェクト管理オフィス (PMO) のソリューションを企業に提供している Office 365 サービスです。 オンラインのプロジェクトは、プロジェクトのデスクトップ エディションによりさまざまな製品まだ、オンライン プロジェクトも含まれていますを維持し、プロジェクトのライフ サイクル全体にわたってプロジェクトの詳細を追跡する機能。 SharePoint Online のオンラインのプロジェクトがビルドされます。
+project Online は、ポートフォリオ、プログラム、プロジェクトを調整して管理するプロジェクトポートフォリオ管理 (PPM) および project management Office (PMO) ソリューションを企業に提供する Office 365 サービスです。 project Online は、project デスクトップエディションとは異なるオファーリングです。しかし、project Online には、プロジェクトのライフサイクルを通じてプロジェクトの詳細を維持および追跡する機能がまだ含まれています。 Project online は SharePoint online 上に構築されています。
   
-プロジェクト オンライン ホストされている追加のクライアント側オブジェクト モデル API とやり取りする JavaScript とリソース ・ ファイルで構成されます。 アドインをユーザーが訪問した、JavaScript とリソースがダウンロードされ、ブラウザー内で実行されます。 アドイン プロジェクトをオンラインにする非同期の呼び出しは、サービスとの対話の作成、取得、更新、またはデータを削除するかどうかは、します。 
+Project Online のホスト型アドインは、クライアント側オブジェクトモデル API とやり取りする JavaScript およびリソースファイルで構成されています。 ユーザーがアドインを訪問すると、JavaScript とリソースがダウンロードされ、ブラウザー内で実行されます。 このアドインは、データを作成、取得、更新、削除するかどうかにかかわらず、Project Online への非同期呼び出しを行い、サービスと対話します。 
   
-オンラインのプロジェクトは、アドインから他のテナントに属する情報を保護するために複数のアクションを 1 つを実行します。つまり、アドインからの要求と対話する、独立したサイトの作成はプロジェクトのオンラインのようにします。 オンライン プロジェクトのホストでは、カスタム コードが実行されません。 
+Project Online は、アドインから他のテナントに属する情報を保護するためのもう1つのアクションを実行します。つまり、Project Online は、アドインからの要求を操作する分離されたサイトを作成します。 プロジェクトオンラインホスト上で実行されるカスタムコードはありません。 
   
-オンライン プロジェクトのアドインの開発のセットアップでは、Visual Studio SharePoint アドイン プロジェクトの種類を使用します。 アドインが、JavaScript で記述され、プロジェクトの JavaScript オブジェクト モデル (JSOM) を使用して、プロジェクトのオンライン サービスと対話します。 JSOM では、SharePoint の JSOM からの機能の多くを継承します。
+project Online アドインの開発セットアップでは、Visual Studio SharePoint アドインプロジェクトの種類を使用します。 アドインは javascript で記述され、プロジェクト javascript オブジェクトモデル (jsom) を使用して project Online サービスを操作します。 jsom は、SharePoint jsom から多くの機能を継承します。
   
 > [!NOTE]
-> アドインの発行し Office ストアで販売または SharePoint 上のプライベート アプリケーション カタログに配置できます。 詳細についてを参照してください[の展開、Office アドインを発行し、](https://docs.microsoft.com/office/dev/add-ins/publish/publish)。
+> アドインは、Office ストアで発行して販売したり、SharePoint 上のプライベートアプリカタログに展開したりできます。 詳細については、「 [Office アドインを展開して発行する](https://docs.microsoft.com/office/dev/add-ins/publish/publish)」を参照してください。
 > 
-> この資料で使用されているアドインの開発者用のサンプルは、します。実稼働環境で使用するためのものではありません。 主な目的では、オンラインのプロジェクトのアプリケーション開発の例を示します。 
+> この記事で使用されているアドインは、開発者向けのサンプルです。これは、運用環境での使用を目的としたものではありません。 主な目的は、Project Online のアプリ開発の例を示すことです。 
   
 ## <a name="prerequisites"></a>前提条件
 
-サポートされている Windows 環境には、次の項目を追加します。
+サポートされている Windows 環境に以下の項目を追加します。
   
-- **4.0 またはそれ以降の.NET Framework**: バージョン 4.0 フレームワークの完全なバージョンに互換性がします。 ダウンロード サイトは、 https://msdn.microsoft.com/vstudio/aa496123.aspx。
+- **.net Framework 4.0**以降: バージョン4.0 のフレームワークの完全なバージョンは互換性があります。 ダウンロード サイトは https://msdn.microsoft.com/vstudio/aa496123.aspx です。
     
-- **2013 またはそれ以降の Visual Studio の**。  
+- **Visual Studio 2013 以降**:  
     
-   - Visual Studio 2015 のプロフェッショナル ・ エディションはアウト - 標準の準備が、使用にhttps://www.visualstudio.com/en-us/products/visual-studio-professional-with-msdn-vs.aspx。
+   - Visual Studio 2015 のプロフェッショナルエディションは、すぐにご利用いただけhttps://www.visualstudio.com/en-us/products/visual-studio-professional-with-msdn-vs.aspxます。また、から入手できます。
     
-   - Visual Studio 2015 の community edition は、 https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx。 このエディションには、Visual Studio の Microsoft Office の開発ツールを手動でインストールが必要です。
+   - Visual Studio 2015 のコミュニティエディションは、でhttps://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx入手できます。 このエディションでは、Microsoft Office Developer Tools for Visual Studio を手動でインストールする必要があります。
     
-   Visual Studio 用の Microsoft Office 開発ツールは、 https://www.visualstudio.com/en-us/features/office-tools-vs.aspx。
+   Microsoft Office Developer Tools for Visual Studio は、からhttps://www.visualstudio.com/en-us/features/office-tools-vs.aspx入手できます。
     
-- **A プロジェクト オンライン アカウント**: これは、ホスティング サービスへのアクセスを提供します。 プロジェクトのオンライン アカウントを取得する方法についてを参照してくださいhttps://products.office.com/en-us/Project/project-online-portfolio-management。
+- **Project Online アカウント**: これにより、ホスティングサービスへのアクセスが可能になります。 Project Online アカウントの入手の詳細については、https://products.office.com/en-us/Project/project-online-portfolio-management をご覧ください。
     
-   アドインのユーザーがプロジェクトのオンラインのテナントのいくつかのプロジェクトにアクセスするための十分な権限を持っていることを確認します。 
+   アドインユーザーに、Project Online テナントの一部のプロジェクトにアクセスするための十分な権限があることを確認します。 
     
-- **ホスト サイト上のプロジェクト**情報が挿入されます。
+- 情報が格納されている**ホストサイト上のプロジェクト**。
     
 > [!NOTE]
-> 標準の.NET Framework は、使用する正しいフレームワークです。 [.NET Framework 4 クライアント プロファイル] を使用することはしません。 
+> 標準の .net framework は、適切なフレームワークを使用します。 ".net Framework 4 クライアントプロファイル" は使用しないでください。 
   
-### <a name="set-up-the-visual-studio-project"></a>Visual Studio プロジェクトを設定します
+### <a name="set-up-the-visual-studio-project"></a>Visual Studio プロジェクトを設定する
 
-アプリケーションのセットアップは、新しいプロジェクトを作成する、適切なライブラリとリンク、および必要な名前空間を宣言することで構成されます。 Visual Studio には、いくつかの種類の開発プロジェクトが表示されます。 セクションとは、簡単な非常に基本的なです。 値の情報がある 1 つの場所に統合します。
+アプリケーションのセットアップでは、新しいプロジェクトを作成し、適切なライブラリをリンクし、必要な名前空間を宣言します。 Visual Studio では、複数の種類の開発プロジェクトが提供されています。 このセクションは短時間で、非常に基本的なものです。 この値は、情報が1つの場所に結合されていることを示します。
   
-#### <a name="select-a-visual-studio-project"></a>Visual Studio プロジェクトを選択します。
+#### <a name="select-a-visual-studio-project"></a>Visual Studio プロジェクトを選択する
 
-アドインの適切な種類のプロジェクトを作成するには、次の手順を行う必要があります。 画面上で発生するキーワードは、**太字**属性を持ちます。 
+アドインに適した種類のプロジェクトを作成するには、次の手順を実行する必要があります。 画面に表示されたキーワードには、**太字**の属性があります。 
   
-1. [ファイル] メニューから**ファイル**を選択して > **新規** > **プロジェクト**。 
+1. [ファイル] メニューの [ **** > **新しい** > **プロジェクト**] を選択します。 
     
-2. 左側のウィンドウでインストールされたテンプレート] から選択して**C#** > **Office**SharePoint/ > **Web アドイン**です。 
+2. インストールされているテンプレートの左側のウィンドウで、[ **C#** > **Office/SharePoint** > **Web アドイン**] を選択します。 
     
-3. 中央のウィンドウの上部には、 **.NET Framework 4**を選択またはそれ以降です。4.6 を現在のバージョンには。 
+3. 中央のウィンドウの上部で、[ **.net Framework 4**以降] を選択します。現在のバージョンは4.6 です。 
     
-4. 中央のウィンドウでアプリケーションの種類を**SharePoint のアドインを**選択します。 
+4. 中央のウィンドウの [アプリケーションの種類] で、[ **SharePoint アドイン**] を選択します。 
     
-5. 下部のセクションで、プロジェクトとソリューション名の場所と名前を指定します。 
+5. 下部のセクションで、プロジェクトの名前と場所、ソリューション名を指定します。 
     
-6. 下部のセクションで、**ソリューションのディレクトリを作成**チェック ボックスをオンします。 
+6. また、下部のセクションで、[**ソリューションのディレクトリを作成**] ボックスがオンになっていることを確認します。 
     
-7. 初期プロジェクトを作成するのには **[ok]** をクリックします。 
+7. [**OK**] をクリックして、初期プロジェクトを作成します。 
     
-Visual Studio のウィザードは、以下のダイアログのいくつかのオンライン プロジェクトの設定サイト (と呼ばれる SharePoint 設定ダイアログ ボックス内) に関するフォロー アップの質問をいくつかを要求します。 質問を以下に示します。
+Visual Studio ウィザードは、次の2つのダイアログボックスで、Project Online 設定サイト (ダイアログ内の SharePoint 設定と呼ばれます) についてのいくつかの質問を行います。 質問は次のとおりです。
   
-1. SharePoint サイトはどのようなアドインをデバッグに使用しますか。 PWA サイトの URL を指定して次のようにhttps://contoso.sharepoint.com/sites/pwa。
+1. アドインのデバッグに使用する SharePoint サイトを指定します。 のような PWA サイトの URL を指定しhttps://contoso.sharepoint.com/sites/pwaます。
     
-2. SharePoint で、アドインをホストする方法を指定しますか。 [X] を選択して**SharePoint でホストされています**。
+2. SharePoint アドインをどのようにホストしますか? [X] **SharePoint ホスト型**を選択します。
     
-   SharePoint アドインに関する詳細については、ホスティングなどのオプションでは、 [SharePoint のアドイン](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins)を参照してください。
+   ホスティングオプションを含む sharepoint アドインの詳細については、「 [sharepoint アドイン](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins)」を参照してください。
     
-3. [ **次へ**] をクリックします。 
+3. **[次へ]** をクリックします。 
     
-アドインの SharePoint のオンライン バージョンを指定する 2 つ目の追加のダイアログが表示されたら。 
+2番目の追加のダイアログで、アドインの SharePoint Online バージョンを指定するよう求められます。 
   
-1. 対象とするように追加する SharePoint の最も古いバージョンとは何ですか。 [X] を選択して S **harePoint オンライン**。 
+1. アドインの対象となる SharePoint の最も古いバージョンは何ですか。 [X] S **harePoint-Online**を選択します。 
     
-2. [ **完了**] をクリックします。 
+2. **[完了]** をクリックします。 
     
-Visual Studio は、プロジェクトが作成され、プロジェクトのオンライン サイトにアクセスします。 
+Visual Studio によってプロジェクトが作成され、project Online サイトにアクセスします。 
   
-### <a name="enable-sideloading-on-the-project-online-site"></a>プロジェクトのオンライン サイト上の sideloading を有効にします。
+### <a name="enable-sideloading-on-the-project-online-site"></a>Project Online サイトでサイドローディングを有効にする
 
-Sideloading は、テストとオンライン プロジェクトのアドインをデバッグするための機構です。Sideloading の 2 つのスクリプトが必要があります: テストおよびアドインのデバッグが完了したら、sideloading を無効にする別のプロジェクトのオンライン サイトで sideloading を有効にする 1 つ。
+サイドローディングは、Project Online アドインをテストおよびデバッグするためのメカニズムです。サイドローディングには2つのスクリプトが必要です。1つは、Project Online サイトでサイドローディングを有効にする方法と、アドインのテストとデバッグを完了した後にサイドローディングを無効にするためのスクリプトです。
   
-Sideloading を設定する方法の詳細については、[アプリケーション開発者以外のサイト コレクション内の SideLoading を有効にする](https://blogs.msdn.microsoft.com/officeapps/2013/12/10/enable-app-sideloading-in-your-non-developer-site-collection/)を参照してください。
+サイドローディングのセットアップの詳細については、「[開発者以外のサイトコレクションでアプリのサイドローディングを有効にする](https://blogs.msdn.microsoft.com/officeapps/2013/12/10/enable-app-sideloading-in-your-non-developer-site-collection/)」を参照してください。
   
 > [!NOTE]
-> Sideloading アプリケーションは、開発者とテスト機能です。 **運用環境で使用しない目的**があります。 Sideload アプリケーションではありませんを定期的に行うか、機能を使用してアクティブにするよりも長時間の有効なアプリケーションの sideloading を維持します。 
+> サイドローディングアプリは開発/テストの機能です。 これは、**運用環境での使用を目的**としたものではありません。 アプリを定期的にサイドロードさせないでください。または、アプリのサイドロードは、この機能を使用している時間よりも長く有効にしておきます。 
   
-## <a name="add-content-to-the-add-in-project"></a>アドイン プロジェクトにコンテンツを追加します。
+## <a name="add-content-to-the-add-in-project"></a>アドインプロジェクトにコンテンツを追加する
 
-プロジェクトを作成すると、デバッグの機構を設定する、アプリケーションにコンテンツを追加する次のタスクが含まれます。
+プロジェクトを作成し、デバッグ機構を設定した後、アプリにコンテンツを追加すると、次のタスクが実行されます。
   
-- アプリケーション スコープの設定
+- アプリケーションスコープの設定
     
-- JSOM ライブラリをリンク
+- jsom ライブラリのリンク
     
-- アドインに UI 要素を追加します。
+- UI 要素をアドインに追加する
     
-- 初期化し、プロジェクトのオンライン サービスに接続します。
+- Project Online サービスを初期化して接続する
     
-- プロジェクトとの詳細とプロパティを取得します。
+- プロジェクトと詳細/プロパティを取得する
     
-- プロジェクトを表示します。
+- プロジェクトの表示
     
-- プロジェクトのタスクを表示します。
+- プロジェクトのタスクを表示する
     
-アドイン プロジェクトでは、多数のファイルで構成されます。 この例では、以下のファイルを編集する必要があります。 
+アドインプロジェクトは、多くのファイルで構成されています。 この例では、次のファイルを編集する必要があります。 
   
-- AppManifest.xml
+- appmanifest.xml
     
-- Default.aspx
+- default.aspx
     
-- App.js
+- アプリケーション .js
     
-- App.css - 省略可能です。アドイン用に開発されたスタイルの定義が含まれています
+- app.xaml-省略可能。アドイン用に開発されたスタイル定義が含まれています。
     
-移動など試用版からサブスクリプションのサイトでは、サーバー間の接続およびサイトの URL を含む、プロジェクトのプロパティを更新することができます、プロジェクトのオンラインのテナントが変更された場合は、[プロパティ] ウィンドウ**のビュー**で利用可能なを使用して > **のプロパティウィンドウ**コマンドです。 
+試用版からサブスクリプションサイトへの移動など、project Online テナントの変更によっては、[プロパティ] ウィンドウ**** > を使用して、サーバー接続やサイトの URL など、プロジェクトのプロパティを更新できます。**Window**コマンド 
   
-プロジェクトにファイルを追加することもできます。 その場合は、(コンテンツ、イメージ、ページ、またはスクリプト) を新しいファイルを含めるには、同じグループ内にある、Elements.xml ファイルを更新する必要があります。 プロジェクト ファイルの詳細については、 [SharePoint アドインのパッケージとアプリケーション マニフェストの構造を表示する](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/explore-the-app-manifest-structure-and-the-package-of-a-sharepoint-add-in)を参照してください。
+プロジェクトにファイルを追加することもできます。 その場合は、同じグループ (コンテンツ、画像、ページ、またはスクリプト) にある要素の .xml ファイルを更新して、新しいファイルを含める必要があります。 プロジェクトファイルの詳細については、「 [SharePoint アドインのアプリマニフェスト構造とパッケージを調査](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/explore-the-app-manifest-structure-and-the-package-of-a-sharepoint-add-in)する」を参照してください。
   
-### <a name="set-application-scope"></a>アプリケーション スコープの設定
+### <a name="set-application-scope"></a>アプリケーションスコープの設定
 
-追加のサービス情報をクエリ結果に返される前に定義されたスコープまたはアクセス許可のレベルが必要です。 このアドインの場合、Visual Studio プロジェクトに次のスコープを使用します。 この変更は、AppManifest.xml ファイルを [アクセス許可] タブで使用します。
+このアドインには、サービスがクエリ結果に情報を返す前に定義されたスコープまたはアクセス許可レベルが必要です。 このアドインでは、Visual Studio プロジェクトに対して次のスコープを使用します。 この変更は、[アクセス許可] タブの appmanifest.xml ファイルに対して行われます。
 
-|スコープ|アクセス許可|
+|Scope|アクセス許可|
 |:-----|:-----|
-|複数のプロジェクト (Project Server)  <br/> |Read  <br/> |
+|複数のプロジェクト (Project Server)  <br/> |読み取り  <br/> |
    
-アプリケーションのスコープを設定した後、ファイルを保存します。 それ以外の場合、データは返されません、サービスから。 
+アプリケーションスコープを設定した後、ファイルを保存します。 それ以外の場合、サービスからデータは返されません。 
   
-### <a name="link-the-jsom-library"></a>JSOM ライブラリをリンクします。
+### <a name="link-the-jsom-library"></a>jsom ライブラリをリンクする
 
-ランタイム プロジェクト オンライン ライブラリ、PS.js、PS.debug.js は、プロジェクトをオンラインで提供されており、最新のバージョンは、常に。 JavaScript 追加のプラグインを使用して、JSOM は、これらのライブラリのいずれかにリンクしなければなりません。 Default.aspx ファイルには、リンクの定義が追加されます。 PS.js または PS.debug.js を使用するコマンドにあるコードの一部です。
+実行時の project online ライブラリ (js および .ps) は project online で提供されており、常に最新のバージョンです。 jsom を使用する JavaScript アドインは、これらのライブラリのいずれかとリンクする必要があります。 リンク定義が default.aspx ファイルに追加されます。 .js または pcl を使用するためのコマンドは、app.config ファイルにあるコードに含まれています。
   
-PS.js または PS.debug.js の定義については、次のコマンドを追加、 `<asp:Content ContentPlaceHolderID="PlaceHolderAdditionalPageHead"` sp.js の「SharePoint:ScriptLink」次の要素です。 
+次のコマンドを、node.js の「SharePoint: scriptlink」の後にある`<asp:Content ContentPlaceHolderID="PlaceHolderAdditionalPageHead"`要素に追加して、次のコマンドを実行します。 
   
 ```js
 <SharePoint:ScriptLink name="PS.js" runat="server" OnDemand="false" LoadAfterUI="true" Localizable="false" />
 ```
 
 > [!NOTE]
-> PS.js または PS.debug.js の**オンデマンド ・** 属性が**false**に設定します。 
+> この場合、-js または-.js の**OnDemand**属性は**false**に設定されます。 
   
-### <a name="add-ui-elements-to-the-add-in"></a>アドインに UI 要素を追加します。
+### <a name="add-ui-elements-to-the-add-in"></a>UI 要素をアドインに追加する
 
-使用例を追加でいくつかのコンポーネントで構成されます。 Default.aspx ファイルには、静的な要素の説明があります。 動的な要素の説明とすべてのコンポーネントのコードがあります。 コンポーネントに関するコメントは、ソース コードの一覧を参照してください。 アドインの UI コンポーネントの一覧を以下に示します。
+サンプルアドインは、いくつかのコンポーネントで構成されています。 静的要素の説明は、default.aspx ファイルにあります。 すべてのコンポーネントの動的な要素の記述とコードは、アプリケーション .js ファイルにあります。 コンポーネントに関するコメントについては、ソースコードの一覧を参照してください。 次に、アドインの UI コンポーネントの一覧を示します。
   
-- Title
+- タイトル
     
-- 紹介文言
+- 導入の説明
     
-- 表からタスクを削除するボタン
+- テーブルからタスクを削除するボタン
     
-- プロジェクト ID、名前、およびタスクの情報を一覧表示するテーブルです。
+- プロジェクト ID と名前、およびタスク情報を一覧表示する表。
     
-- タスクのタスクのデータをテーブルにインポートする (プロジェクトごとに 1 回クローン作成) ボタン。
+- [タスク] ボタン (プロジェクトごとに1回複製されます)。タスクデータをテーブルにインポートします。
     
-タイトル、プロジェクトのテーブルのヘッダー部分など、ユーザー インターフェイスの詳細は、Default.aspx のプロジェクト ファイルを参照してください。
+ユーザーインターフェイスの詳細 (プロジェクトテーブルのタイトル、ヘッダー部分など) については、default.aspx プロジェクトファイルを参照してください。
   
-### <a name="initialize-and-connect-to-the-host-system"></a>初期化し、ホスト システムへの接続
+### <a name="initialize-and-connect-to-the-host-system"></a>ホストシステムを初期化して接続する
 
-App.js ファイルには、JavaScript コードが含まれています。 アドインの PS.js が、ブラウザーにロードし、initializePage 関数を呼び出します。 InitializePage は、オンライン プロジェクトのエンドポイントへのコンテキストを取得し、loadProjects 関数を開始します。
+app.config ファイルには、JavaScript コードが含まれています。 アドインはブラウザーで .ps を読み込み、initializepage 関数を呼び出します。 initializepage は、Project Online エンドポイントへのコンテキストを取得し、loadprojects 関数を開始します。
   
 ```js
     'use strict';
@@ -208,13 +208,13 @@ App.js ファイルには、JavaScript コードが含まれています。 ア�
 
 ```
 
-### <a name="retrieve-the-projects"></a>プロジェクトを取得します。
+### <a name="retrieve-the-projects"></a>プロジェクトを取得する
 
-LoadProjects 関数は、プロジェクトの名前と Id のサービスを照会します。 
+loadprojects 関数は、プロジェクト名と id のサービスを照会します。 
   
-アプリケーションの取得、プロジェクト名とプロジェクト id。プロジェクトに関するその他の情報は、利用可能なを取得するプロパティを明示的に識別するのには load メソッドを変更することによってアクセスできます。 例は、コメントとしてコード内に提供されます。 
+アプリケーションは、プロジェクト名とプロジェクト Id を取得します。プロジェクトに関するその他の情報は、使用可能で、load メソッドを変更して、取得するプロパティを明示的に特定することによってアクセスできます。 この例は、コメントとしてコードで提供されています。 
   
-クエリが成功すると、追加で displayProjects を呼び出すことで続行されます。 
+クエリが成功した場合、アドインは displayprojects を呼び出すことによって続行されます。 
   
 ```js
     //Query CSOM and get the list of projects in PWA
@@ -231,9 +231,9 @@ LoadProjects 関数は、プロジェクトの名前と Id のサービスを照
 
 ```
 
-### <a name="display-the-projects"></a>プロジェクトを表示します。
+### <a name="display-the-projects"></a>プロジェクトを表示する
 
-DisplayProjects 関数は、テーブル、プロジェクトごとに 1 行と、特定のプロジェクトのタスクを表示するボタンを作成します。 
+displayprojects 関数は、テーブル、プロジェクトごとに1行、および特定のプロジェクトのタスクを表示するボタンを作成します。 
   
 ```js
     //Display the projects with names and ids in a table
@@ -260,13 +260,13 @@ DisplayProjects 関数は、テーブル、プロジェクトごとに 1 行と�
 ```
 
 > [!NOTE]
-> While は、アクセス ID および名前のプロパティをループします。 これは、次に、同じプロパティにアクセスする関数を呼び出すソース コード プロジェクトと少し異なります。 
+> while ループは、ID プロパティと name プロパティにアクセスします。 これは、同じプロパティにアクセスする関数を呼び出すソースコードプロジェクトとはわずかに異なります。 
   
-### <a name="display-the-tasks-for-a-project"></a>プロジェクトのタスクを表示します。
+### <a name="display-the-tasks-for-a-project"></a>プロジェクトのタスクを表示する
 
-、アドインの一部の中に、タスクは、最初の読み込みの一部ではありません。 ユーザーがプロジェクトに関連付けられているタスクに関心を持っていない場合は、btnLoadTasks イベント ハンドラーを使用してリストに表示するタスクと、"タスクの表示] ボタンをクリックすると。 
+アドインの一部であるタスクは、最初の読み込みの一部ではありません。 ユーザーがプロジェクトに関連付けられているタスクに関心を持っている場合は、[タスクの表示] ボタンをクリックすると、btnloadtasks イベントハンドラーを使用してタスクが一覧に表示されます。 
   
-BtnLoadTasks イベント ハンドラーの適切なプロジェクトの ID を持つサーバーから、指定されたプロジェクトのタスクを要求します。 取得した後 btnLoadTasks は、画面上のタスクを表示するのには displayTasks に、[タスク] ボックスの一覧を渡します。
+btnloadtasks イベントハンドラーは、適切なプロジェクト ID を使用して、サーバーから指定したプロジェクトのタスクを要求します。 取得した btnloadtasks は、タスクリストを表示タスクに渡して、タスクを画面に表示します。
   
 ```js
     //Query CSOM and get the list of tasks for a specific project
@@ -295,7 +295,7 @@ BtnLoadTasks イベント ハンドラーの適切なプロジェクトの ID �
 
 ```
 
-DisplayTasks 関数には、プロジェクト項目のすぐ下にある指定されたプロジェクトに関連付けられているタスクが表示されます。
+displaytasks 関数は、指定したプロジェクトに関連付けられているタスクをプロジェクトエントリのすぐ下に表示します。
   
 ```js
     //Insert tasks for the specified project immediately underneath the project entry 
@@ -325,15 +325,15 @@ DisplayTasks 関数には、プロジェクト項目のすぐ下にある指定�
 ```
 
 > [!NOTE]
-> While は、タスク ID にアクセスし、名前のプロパティをループします。 これは、次に、同じプロパティにアクセスする関数を呼び出すソース コード プロジェクトと少し異なります。 
+> while ループは、タスク ID と名前のプロパティにアクセスします。 これは、同じプロパティにアクセスする関数を呼び出すソースコードプロジェクトとはわずかに異なります。 
   
-1 つのプロジェクトのタスクの出力の例に従います。
+1つのプロジェクトのタスクの出力例を次に示します。
   
-![プロジェクトのタスクの出力を示すスクリーン ショット](media/f6500a3f-000b-4f3e-9be6-9a74d0bea15e.png "プロジェクトのタスクの出力を示すスクリーン ショット")
+![プロジェクトタスクの出力を示すスクリーンショット](media/f6500a3f-000b-4f3e-9be6-9a74d0bea15e.png "プロジェクトタスクの出力を示すスクリーンショット")
   
 ## <a name="see-also"></a>関連項目
 
-ドキュメントとオンライン プロジェクトと CSOM を使用したアプリケーション開発に関連するサンプルでは、[プロジェクト開発のポータル](https://developer.microsoft.com/en-us/project)を参照してください。
+Project Online および CSOM を使用したアプリケーション開発に関するドキュメントとサンプルについては、[Project 開発ポータル](https://developer.microsoft.com/en-us/project)をご覧ください。
     
 
 

@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: e372c670-e9a0-4352-b70a-3a054b036124
-description: さまざまな言語表現との間の比較演算を使用できます。 ロケール id (LCID) の値をインターネット技術標準化委員会言語タグ (BCP 47) の値を変換するためには適しています。
-ms.openlocfilehash: 6a05a850f5908ac5a4f6a4a72b2ce56b4c98f137
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 異なる言語表現間での比較操作を可能にします。 これは、インターネットエンジニアリングのタスクフォースの言語タグ (BCP 47) の値をロケール id (LCID) の値に変換するために最適です。
+ms.openlocfilehash: 9c2dc96cefe7a1cfcd06947dcc54453dcef276fc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327819"
 ---
 # <a name="language-function"></a>LANGUAGE 関数
 
-さまざまな言語表現との間の比較演算を使用できます。 ロケール id (LCID) の値をインターネット技術標準化委員会言語タグ (BCP 47) の値を変換するためには適しています。
+異なる言語表現間での比較操作を可能にします。 これは、インターネットエンジニアリングのタスクフォースの言語タグ (BCP 47) の値をロケール id (LCID) の値に変換するために最適です。
   
 ## <a name="version-information"></a>バージョン情報
 
@@ -31,20 +31,20 @@ ms.locfileid: "19805675"
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _lcid_or_bcp47_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |言語の LCID または BCP 47 の値です。  <br/> |
+| _lcid_or_bcp47_ <br/> |必須  <br/> |**String** <br/> |言語の LCID または BCP 47 の値。  <br/> |
    
 ## <a name="return-value"></a>戻り値
 
-整数型 (Integer)
+整数
   
 ## <a name="example"></a>例
 
  `LANGUAGE("en-us")`
   
-'1033' の値を返します。
+' 1033 ' の値を返します。
   
  `LANGUAGE("es-es")`
   
-'3082' の値を返します。
+' 3082 ' の値を返します。
   
 

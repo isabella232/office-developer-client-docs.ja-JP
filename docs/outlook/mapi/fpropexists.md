@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 33c00752-cdc1-4cbe-8fca-6b06c78bd362
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0d016c83678d9c1c94ee4ad4b8e12723c03f7bda
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7190065c687524302bae362a2e25d3848e17d1bc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327273"
 ---
 # <a name="fpropexists"></a>FPropExists
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-**IMAPIProp**、 [IMessage](imessageimapiprop.md)や[IMAPIFolder](imapifolderimapicontainer.md)などから派生した[IMAPIProp](imapipropiunknown.md)インターフェイスまたはインターフェイスの指定されたプロパティ タグを検索します。 
+[imapiprop](imapipropiunknown.md)インターフェイス内の指定されたプロパティタグ、または**imapiprop**( [IMessage](imessageimapiprop.md)や[imapiprop](imapifolderimapicontainer.md)など) から派生したインターフェイスを検索します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 BOOL FPropExists(
@@ -44,24 +44,24 @@ BOOL FPropExists(
 
  _pobj_
   
-> [in]**IMAPIProp**インターフェイス内のプロパティ タグを検索する**IMAPIProp**から派生したインターフェイスへのポインター。 
+> 順番プロパティタグを検索する**imapiprop**から派生した**imapiprop**インターフェイスまたはインターフェイスへのポインター。 
     
  _ulPropTag_
   
-> [in]検索するプロパティ タグです。
+> 順番検索するプロパティタグを指定します。
     
 ## <a name="return-value"></a>戻り値
 
 TRUE 
   
-> 指定されたプロパティ タグの一致が見つかりました。 
+> 指定したプロパティタグに一致するものが見つかりました。 
     
 FALSE 
   
-> 指定されたプロパティ タグの一致は見つかりませんでした。
+> 指定されたプロパティタグに一致するものが見つかりませんでした。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-型 PT_UNSPECIFIED、 _ulPropTag_パラメーターのプロパティ タグの場合、 **FPropExists**関数は、プロパティの識別子にのみ基づいて一致するを探します。 それ以外の場合、一致が、型を含め、全体のプロパティ タグです。 
+_ulPropTag_パラメーターの property タグに type PT_UNSPECIFIED が指定されている場合、 **fpropexists**関数は、プロパティ識別子のみに基づいて一致を検索します。 それ以外の場合は、型を含むプロパティタグ全体の一致が照合されます。 
   
 

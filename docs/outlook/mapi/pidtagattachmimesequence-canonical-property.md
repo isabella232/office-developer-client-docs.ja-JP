@@ -12,51 +12,51 @@ api_type:
 - HeaderDef
 ms.assetid: d2a84f24-b4a5-4e16-9219-7a579a31a8f8
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b8fe0dd61247d3473db4cc728ecfa2c83682b691
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ae9b79abea9a1b2b31867b9ed575e16e8f1c4474
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327280"
 ---
 # <a name="pidtagattachmimesequence-canonical-property"></a>PidTagAttachMimeSequence 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MIME メッセージの添付ファイルの MIME のシーケンス番号が含まれています。
+mime メッセージ添付ファイルの mime シーケンス番号が含まれています。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_ATTACH_MIME_SEQUENCE  <br/> |
 |識別子:  <br/> |0x3710  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |メッセージの添付ファイルのプロパティ  <br/> |
+|エリア:  <br/> |メッセージ添付ファイルのプロパティ  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティが使用される MHTML をサポートするためです。 MIME メッセージの MIME のマルチパートのボディ部の親内の添付ファイルのシーケンス番号を表します。
+このプロパティは、MHTML サポートに使用されます。 mime メッセージの親 mime マルチパート本体内の添付ファイルのシーケンス番号を表します。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

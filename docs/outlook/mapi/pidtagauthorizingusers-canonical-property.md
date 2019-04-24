@@ -12,51 +12,51 @@ api_type:
 - HeaderDef
 ms.assetid: d291777e-c0c6-4de2-9bf5-5c1d95f3db6c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 806ce556d77d704a1da866c6c69363cb59bd1c7d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 74ae66a4f9b8eb1c80251009441739efbd844901
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326664"
 ---
 # <a name="pidtagauthorizingusers-canonical-property"></a>PidTagAuthorizingUsers 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージの送信が承認されているユーザーのエントリの識別子の一覧が含まれています。
+メッセージの送信を承認したユーザーのエントリ id の一覧が含まれています。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_AUTHORIZING_USERS  <br/> |
 |識別子:  <br/> |0x0003  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |Exchange  <br/> |
+|エリア:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-メッセージ ・ ストアでは、このプロパティは保持されません。
+このプロパティは、メッセージストアで保持されません。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

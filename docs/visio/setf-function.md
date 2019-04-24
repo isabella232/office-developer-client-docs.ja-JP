@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: fcf415c1-171f-b75f-6e40-2bbdbe8b1cfb
 description: セルの数式を設定します。
-ms.openlocfilehash: a1e6a12014a77a20c0968b3ed2f7bc25badad8ce
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 63050de92394ebbdce6cfe053e15347ca3ce5c7f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32325838"
 ---
 # <a name="setf-function"></a>SETF 関数
 
@@ -22,34 +22,34 @@ ms.locfileid: "19806373"
   
 ## <a name="syntax"></a>構文
 
-SETF (GETREF (* **セル** *)、* **式** *) 
+setf (getref (* * *cell* * *), * * *formula* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _セル_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |セルの数式を設定するのには。  <br/> |
-| _formula_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |使用する数式を指定します。  <br/> |
+| _セル_ <br/> |必須  <br/> |**String** <br/> |数式を設定するセルを指定します。  <br/> |
+| _formula_ <br/> |必須  <br/> |**String** <br/> |使用する数式を指定します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-評価するときは、_セル_に新しい数式が_数式_内の式の結果になります。 _数式_は、引用符で囲まれたが、引用符で囲まれた式が_セル_に書き込まれます。 _セル_を文字列に設定するには、3 つの引用符 () で_数式_を囲みます。 
+評価された場合、_数式_の式の結果は、_セル_の新しい数式になります。 _数式_が引用符で囲まれている場合は、引用符で囲まれた式が_セル_に書き込まれます。 _セル_を文字列に設定するには、_数式_を3組の引用符で囲みます。 
   
 循環処理を避けるために、ターゲット セルは、GETREF() による参照を使用して指定するか、または文字列として指定する必要があります。Microsoft Visio では、図形を別の図面に移動したときに参照が調整されるので、GETREF を使用することをお勧めします。
   
-_セル_が GETREF を使用して指定されていない場合、または文字列として、関数には、エラーが返され、ないセルの数式を変更します。 _数式_に構文エラーが含まれている場合、関数はエラーを返し、_セル_の数式は変更されません。 
+getref または文字列として_セル_が指定されていない場合、関数はエラーを返し、セルの数式は変更されません。 _数式_に構文エラーがある場合、関数はエラーを返し、_セル_の数式は変更されません。 
   
 ## <a name="example-1"></a>例 1
 
-SETF (GETREF(Scratch.A1)、1.5 で\*6 + 1 ft)
+setf (getref (A1)、1.5 の場合は\* 6 + 1 ft)
   
 Scratch.A1 の数式を 21 インチに設定します。
   
 ## <a name="example-2"></a>例 2
 
-SETF (GETREF(Scratch.A1)、"の 1.5 \* 6 + 1 フィート」)
+setf (getref (A1)、"1.5 in \* 6+ 1 ft")
   
-最初の数式を設定します。 A1 に、式 1.5\*6 + 1 フィートです。
+最初の数式を設定します。 A1 を 6 + 1 ft\*の式1.5 に指定します。
   
 ## <a name="example-3"></a>例 3
 

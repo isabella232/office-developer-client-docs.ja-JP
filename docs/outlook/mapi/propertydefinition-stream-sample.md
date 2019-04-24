@@ -1,29 +1,29 @@
 ---
-title: PropertyDefinition ストリームのサンプル
+title: propertydefinition ストリームのサンプル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 7919f4d7-04df-4a96-a5b1-b7b460890486
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fc216302cb68be4b0e9d57f60f491adebcba1975
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 63a8141221c0ff7a8c6ffee20587b682386f87b5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328505"
 ---
-# <a name="propertydefinition-stream-sample"></a>PropertyDefinition ストリームのサンプル
+# <a name="propertydefinition-stream-sample"></a>propertydefinition ストリームのサンプル
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-PropertyDefinition ストリームの例について説明します。 ストリームには、ユーザー定義のフィールドの定義が含まれている`TextField1`。 型は、**テキスト**、および PropDefV2 の形式では、定義します。
+このトピックでは、propertydefinition stream の例について説明します。 stream には、 `TextField1`ユーザー定義フィールドの定義が含まれています。 この型は**テキスト**であり、定義は PropDefV2 形式になっています。
   
-## <a name="data-dump"></a>データのダンプ
+## <a name="data-dump"></a>データダンプ
 
-次のストリームのデータのダンプがバイナリ エディターで表示します。
+次に示すのは、バイナリエディターに表示されるストリームのデータダンプです。
   
-|ストリームのオフセット|データのバイト数|ASCII データ|
+|ストリームオフセット|データバイト|ASCII データ|
 |:-----|:-----|:-----|
 | `0000000000` <br/> | `03 01 01 00 00 00 45 00 00 00 08 00 00 00 00 00` <br/> | `???...E...?.....` <br/> |
 | `0000000010` <br/> | `0A 00 54 00 65 00 78 00 74 00 46 00 69 00 65 00` <br/> | `?.T.e.x.t.F.i.e.` <br/> |
@@ -32,82 +32,82 @@ PropertyDefinition ストリームの例について説明します。 ストリ
 | `0000000040` <br/> | `65 00 78 00 74 00 46 00 69 00 65 00 6C 00 64 00` <br/> | `e.x.t.F.i.e.l.d.` <br/> |
 | `0000000050` <br/> | `31 00 00 00 00 00` <br/> | `1.....` <br/> |
    
-PropertyDefinition ストリームのサンプル データの解析は、次のようにします。
+次に、propertydefinition ストリームのサンプルデータを解析します。
   
-- バージョン: 0x0 では、2 バイトのオフセット: 0x0103 (PropDefV2)。
+- バージョン: Offset 0x0、2バイト: 0x0103 (PropDefV2)。
     
-- FieldDefinitionCount: 0x2、4 バイトのオフセット: 0x1 (1)。
+- fielddefinitioncount: Offset 0x2、4バイト: 0x1 (1)。
     
-- FieldDefinitions: 0x6、1 の FieldDefinition ストリームの配列をオフセットします。
+- fielddefinitions: Offset 0x6、1つの fielddefinitions stream の配列。
     
-  - フラグ: 0x6、4 バイトのオフセット: 0x45 (PDO_IS_CUSTOM |PDO_PRINT_SAVEAS |PDO_PRINT_SAVEAS_DEF)。
+  - フラグ: オフセット0x6、4バイト: 0x45 (PDO_IS_CUSTOM |PDO_PRINT_SAVEAS |PDO_PRINT_SAVEAS_DEF)
     
-  - VT: オフセットの 2 バイトの 0 xa: 0x8 (**VT_BSTR**)。
+  - VT: オフセット0xa、2バイト: 0x8 (**VT_BSTR**)。
     
-  - DispId: 0 xc、4 バイトのオフセット: 0x0 (0)。
+  - DispId: Offset 0xC、4バイト: 0x0 (0)。
     
-  - NmidNameLength: 0x10、2 バイトのオフセット: 0 xa (10)。
+  - NmidNameLength: オフセット0x10、2バイト: 0xa (10)。
     
-  - NmidName: 0x12, WCHARs が 10 の配列のオフセットします。 Unicode 文字列の値:「TextField1」です。
+  - nmidname: Offset 0x12、10の wchars の配列。 Unicode 文字列値: "TextField1"。
     
-  - NameANSI: 0x26、PackedAnsiString ストリームをオフセットします。
+  - nameansi: Offset 0x26, PackedAnsiString stream。
     
-    - 長さ: オフセット 0x26、1 バイト: 0 xa (10)。
+    - 長さ: Offset 0x26、1バイト: 0xa (10)。
       
-    - 文字: 0x27、10 文字の配列をオフセットします。 ANSI 文字列の値:「TextField1」です。
+    - 文字: Offset 0x27、10文字の配列。 ANSI 文字列の値: "TextField1"。
     
-  - FormulaANSI: オフセットれました、PackedAnsiString のストリーム。
+  - FormulaANSI: オフセット0x31、PackedAnsiString stream。
     
-    - 長さ: オフセットれました、1 バイト: 0x0 (0)。
+    - 長さ: オフセット0x31、1バイト: 0x0 (0)。
       
-    - 文字: 0x32、0 文字の配列をオフセットします。 空の ANSI 文字列。
+    - 文字: Offset 0x32、0文字の配列。 空の ANSI 文字列。
     
-  - ValidationRuleANSI: 0x32、PackedAnsiString ストリームをオフセットします。
+  - validationruleansi: Offset 0x32、PackedAnsiString stream。
     
-    - 長さ: オフセット 0x32、1 バイト: 0x0 (0)。
+    - 長さ: Offset 0x32、1バイト: 0x0 (0)。
       
-    - 文字: 0x33、0 文字の配列をオフセットします。 空の ANSI 文字列。
+    - 文字: Offset 0x33、0文字の配列。 空の ANSI 文字列。
     
-  - ValidationTextANSI: 0x33、PackedAnsiString ストリームをオフセットします。
+  - validationtextansi: Offset 0x33, PackedAnsiString stream。
     
-    - 長さ: オフセット 0x33、1 バイト: 0x0 (0)。
+    - 長さ: Offset 0x33、1バイト: 0x0 (0)。
       
-    - 文字: は、0x34, 0 の文字の配列をオフセットします。 空の ANSI 文字列。
+    - 文字: オフセット0x34、0文字の配列。 空の ANSI 文字列。
     
-  - ErrorANSI: 0x34, PackedAnsiString ストリームをオフセットします。
+  - erroransi: オフセット0x34、PackedAnsiString stream。
     
-    - 長さ: オフセット 0x34, 1 バイト: 0x0 (0)。
+    - 長さ: オフセット0x34、1バイト: 0x0 (0)。
       
-    - 文字: 0x35、文字数が 0 の配列のオフセットします。 空の ANSI 文字列。
+    - 文字: Offset 0x35、0文字の配列。 空の ANSI 文字列。
     
-  - InternalType: 0x35、4 バイトのオフセット: 0x0 (iTypeString)。
+  - internaltype: Offset 0x35、4バイト: 0x0 (iTypeString)。
     
-  - SkipBlocks: 0x39、一連の SkipBlock ストリームのオフセットします。
+  - skipblocks: オフセット0x39、一連の skipblocks ストリーム。
     
-  - 最初の SkipBlock
+  - 最初の skipblock
     
-    - サイズ: 0x39、4 バイトのオフセット: 0x15 (21)。
+    - サイズ: オフセット0x39、4バイト: 0x15 (21)。
       
-    - コンテンツ: 0x3D、21 のバイト配列をオフセットします。 これは最初の SkipBlock ストリームでは、この配列には、FirstSkipBlockContent ストリームが含まれています。
+    - コンテンツ: Offset 0x3d、配列21バイト。 これは最初の skipblock ストリームなので、この配列には firstskipblockcontent ストリームが含まれています。
       
-      - フィールド名: 0x3D、PackedUnicodeString ストリームをオフセットします。
+      - FieldName: Offset 0x3d、PackedUnicodeString stream。
         
-        - 長さ: オフセット 0x3D、1 バイト: 0 xa (10)。
+        - 長さ: Offset 0x3d、1バイト: 0xa (10)。
           
-        - 文字: オフセット 0x3E、WCHARs の 10 個の配列です。 Unicode 文字列の値:「TextField1」です。
+        - 文字: オフセット0x3e、10の wchars の配列。 Unicode 文字列値: "TextField1"。
     
-  - 2 番目の SkipBlock
+  - 2番目の skipblock
     
-    - サイズ: 使用、4 バイトのオフセット: 0x0 (0)。 これは、終端の SkipBlock ストリームです。
+    - サイズ: オフセット0x52、4バイト: 0x0 (0)。 これは、終了した skipblock ストリームです。
     
 ## <a name="see-also"></a>関連項目
 
 - [Outlook のアイテムとフィールド](outlook-items-and-fields.md)
-- [ストリームの構造](stream-structures.md)
-- [PropertyDefinition ストリームの構造](propertydefinition-stream-structure.md)
-- [FieldDefinition ストリームの構造](fielddefinition-stream-structure.md)
-- [SkipBlock ストリームの構造](skipblock-stream-structure.md)
-- [FirstSkipBlockContent ストリームの構造](firstskipblockcontent-stream-structure.md)
-- [PackedAnsiString ストリームの構造](packedansistring-stream-structure.md)
-- [PackedUnicodeString ストリームの構造](packedunicodestring-stream-structure.md)
+- [Stream 構造体](stream-structures.md)
+- [propertydefinition ストリームの構造](propertydefinition-stream-structure.md)
+- [fielddefinition ストリームの構造](fielddefinition-stream-structure.md)
+- [skipblock ストリームの構造](skipblock-stream-structure.md)
+- [firstskipblockcontent ストリームの構造](firstskipblockcontent-stream-structure.md)
+- [PackedAnsiString Stream 構造](packedansistring-stream-structure.md)
+- [PackedUnicodeString Stream 構造](packedunicodestring-stream-structure.md)
 

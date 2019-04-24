@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 2d63768e-afdb-4b3f-de49-f9ba69ae5391
 description: 図形のテキストまたはテキストの構成が変更されたときに評価されるイベント セルです。
-ms.openlocfilehash: 942ccee4478c87243207d8d65785857758d2a068
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6aa5e14f339d0030d8421eaae62b0e481be91fc7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326678"
 ---
-# <a name="thetext-cell-events-section"></a>[TheText] セル ([イベント] セクション)
+# <a name="thetext-cell-events-section"></a>[TheText] セル ([Events] セクション)
 
 図形のテキストまたはテキストの構成が変更されたときに評価されるイベント セルです。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 イベント セルはイベントの発生時にのみ評価されます。数式の入力時には評価されません。[TheText] セルを使用して、再計算をトリガーできます。たとえば TEXTWIDTH( ) および TEXTHEIGHT( ) 関数を使用してテキストの幅と高さを再計算できます。
   
@@ -28,7 +28,7 @@ ms.locfileid: "19806648"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | テキスト  <br/> |
+| セル名 :  <br/> | [thetext]  <br/> |
    
 プログラムから、インデックスによって [TheText] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

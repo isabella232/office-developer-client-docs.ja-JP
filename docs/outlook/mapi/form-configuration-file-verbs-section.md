@@ -7,27 +7,27 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: e7e1f371-9e9a-4bec-a0b3-87753a16f5e0
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 6a06283e3eb072e1f502d0b1bd303ce9f0733578
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: bb7d49d69fadab54212ff7e8b50ac969e4890c0a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327497"
 ---
 # <a name="form-configuration-file-verbs-section"></a>フォーム構成ファイル [Verbs] セクション
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-**[動詞]** セクションには、フォームでサポートされている動詞の完全なセットが一覧表示されます。 **[動詞]** セクションの形式は次のとおりです。 
+**[verb]** セクションには、フォームでサポートされている動詞の完全なセットが表示されます。 **[verb]** セクションの形式は次のとおりです。 
   
- **[動詞]**
+ **動詞**
   
- **Verb1** =  _の文字列_
+ **Verb1** =  _文字列_
   
-**[動詞]** セクションの例を次に示します。 
+**[verb]** セクションの例を次に示します。 
   
 ```cpp
 [Verbs]
@@ -36,19 +36,19 @@ Verb2=2
 
 ```
 
-各動詞が個別に定義されている **[動詞**。 _文字列_**]** のセクションです。 A **[動詞**。 _文字列_**]** では、フォームによって提供される 1 つの動詞をについて説明します。 **表示名**のエントリを **[動詞**。 _文字列_**]** のセクションでは、ユーザー インターフェイスに表示されるコマンド名を指定します。 **コード**のエントリは、 [IMAPIForm::DoVerb](imapiform-doverb.md)メソッドに渡された動詞の数に対応します。 構文、 **[動詞**。 _文字列_**]** のセクションでは。 
+各動詞は個別の [動詞で定義されて**います。** _文字列_**]** セクション A **[動詞。** _文字列_**]** セクションでは、フォームで提供される1つの動詞について説明します。 **[動詞**内の**DisplayName**エントリ。 _文字列_**]** セクションは、ユーザーインターフェイスに表示されるコマンド名を指定します。 **コード**エントリは、imapiform で渡された動詞番号に対応します[::D overb](imapiform-doverb.md)メソッド。 [動詞の構文を使用し**ます。** _文字列_**]** セクションは次のとおりです。 
   
- **[動詞です。** _文字列_**]**
+ **xexch50.** _文字列_**]**
   
- **表示名** =  _の文字列が表示されます_
+ **DisplayName** =  _表示文字列_
   
- **コード** =  _の整数_
+ **コード** =  _整数_
   
- **フラグ** =  _の整数_
+ **Flags** =  _整数_
   
- **属性にして** =  _の整数_
+ **Attribs** =  _整数_
   
-次の例では、 **[動詞**。 _文字列_**]** のセクションです。 
+次に、[動詞の例を示し**ます。** _文字列_**]** セクション 
   
 ```cpp
 [Verb.1]
@@ -64,6 +64,6 @@ Attribs=2
 
 ```
 
-このセクションに記載されている動詞は、 [IMAPIFormInfo::CalcVerbSet メソッド](imapiforminfo-calcverbset.md)を使用するクライアントによって取得されます。 動詞は、フォームの[IMAPIForm::DoVerb](imapiform-doverb.md)メソッドを呼び出すと、コードの数を実行する動詞を渡すことによってアクティブ化されます。 
+このセクションに記載されている動詞は、 [imapiforminfo:: CalcVerbSet メソッド](imapiforminfo-calcverbset.md)を使用してクライアントによって取得されます。 動詞は、フォームの[imapiform::D overb](imapiform-doverb.md)メソッドを呼び出し、実行する動詞のコード番号を渡すことによってアクティブ化されます。 
   
 

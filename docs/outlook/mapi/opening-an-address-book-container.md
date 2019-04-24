@@ -1,5 +1,5 @@
 ---
-title: アドレス帳コンテナーを開く
+title: アドレス帳のコンテナーを開く
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,62 +7,62 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 89383b27-618c-4ccb-9e16-f66235c98bfe
-description: '最終更新日: 2011 年 11 月 8 日'
-ms.openlocfilehash: 79f1f9254e69e1871e886fa0bb3fbb66e2aab128
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年11月8日'
+ms.openlocfilehash: 97fa9f9750174c112c431c62f6171f674856fa86
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326580"
 ---
-# <a name="opening-an-address-book-container"></a>アドレス帳コンテナーを開く
+# <a name="opening-an-address-book-container"></a>アドレス帳のコンテナーを開く
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI を開くには、アドレス帳が統合されて後、は、1 つまたは複数のアドレス帳コンテナー内の受信者にアクセスを開きます。
+MAPI 統合アドレス帳を開いたら、1つ以上のアドレス帳コンテナーを開いて、その内部の受信者にアクセスします。
   
-アドレス帳の最上位のコンテナーを開くには、NULL のエントリの識別子を使用して[アドレス帳コンテナー](iaddrbook-openentry.md)を呼び出します。 
+アドレス帳のトップレベルのコンテナーを開くには、NULL エントリ識別子を持つ[IAddrBook:: openentry](iaddrbook-openentry.md)を呼び出します。 
   
-読み取り専用のアドレス帳コンテナーを実装することができますまたは読み取り/書き込みアクセス。 読み取り専用コンテナーは、参照用にのみ使用されます。 クライアントが新しいエントリを作成、削除および既存のエントリを変更できるように、読み取り/書き込みのコンテナーを変更できます。 個人用アドレス帳 (PAB) のすべてのコンテナーは、コンテナーの読み取り/書き込みとして実装されます。 
+アドレス帳コンテナーは、読み取り専用または読み取り/書き込みアクセスで実装できます。 読み取り専用コンテナーは、参照にのみ使用されます。 読み取り/書き込みコンテナーを変更して、クライアントが新しいエントリを作成したり、既存のエントリを削除したり、変更したりできるようにすることができます。 すべての個人用アドレス帳 (PAB) コンテナーは、読み取り/書き込みコンテナーとして実装されます。 
   
-より低いレベルのコンテナーを開くには、 **OpenEntry**を呼び出すし、開かれるコンテナーのエントリの識別子を指定します。 
+任意の下位レベルのコンテナーを開くには、 **openentry**を呼び出し、開くコンテナーのエントリ識別子を指定します。 
   
-## <a name="open-the-container-designated-as-the-pab"></a>個人アドレス帳として指定されているコンテナーを開く
+## <a name="open-the-container-designated-as-the-pab"></a>PAB として指定されたコンテナーを開きます。
   
-1. 個人用アドレス帳のエントリの識別子を取得する[られたユーザーのプライマリ](iaddrbook-getpab.md)を呼び出します。 
+1. [IAddrBook:: getpab](iaddrbook-getpab.md)を呼び出して、pab のエントリ識別子を取得します。 
     
-2. [アドレス帳コンテナー](iaddrbook-openentry.md)には、このエントリの識別子を渡します。
+2. このエントリ識別子を[IAddrBook:: openentry](iaddrbook-openentry.md)に渡します。
     
-## <a name="open-a-container-that-is-not-the-pab"></a>個人アドレス帳ではないコンテナーを開く
+## <a name="open-a-container-that-is-not-the-pab"></a>PAB ではないコンテナーを開く
   
-1. 開くには、アドレス帳のルート コンテナーの NULL エントリ識別子を使用して[アドレス帳コンテナー](iaddrbook-openentry.md)を呼び出します。 
+1. [IAddrBook::](iaddrbook-openentry.md) NULL エントリ識別子を持つ openentry を呼び出して、アドレス帳のルートコンテナーを開きます。 
     
-2. 階層テーブルを取得するのには、ルート コンテナーの[IMAPIContainer::GetHierarchyTable](imapicontainer-gethierarchytable.md)メソッドを呼び出して、アドレス帳内の最上位のコンテナーのすべてのリスト。 
+2. ルートコンテナーの[IMAPIContainer:: GetHierarchyTable](imapicontainer-gethierarchytable.md)メソッドを呼び出して、その階層テーブルを取得します。これには、アドレス帳のすべてのトップレベルコンテナーのリストが含まれます。 
     
-3. 場合は、コンテナーを開くには、特定の種類のです。
+3. 開くコンテナーが特定の種類の場合:
     
-   - **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) を持つプロパティ タグは、コンテナーの値の型、プロパティ、関係の RELOP_EQ の**SPropertyRestriction**構造体を作成します。 **PR_DISPLAY_TYPE**は、それらの間、多くの値を設定できます。 
+   - プロパティタグ、プロパティ値のコンテナーの種類、およびリレーションシップの RELOP_EQ に対して、 **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) を使用して**spropertyrestriction**構造を作成します。 **PR_DISPLAY_TYPE**には、複数の値を設定できます。 
     
-   - グローバル アドレス一覧に属しているコンテナーの階層テーブルを制限する DT_GLOBAL です。
+   - DT_GLOBAL は、階層テーブルをグローバルアドレス一覧に含まれるコンテナーに制限します。
     
-   - コンテナーがローカルのアドレス帳に所属するテーブルを制限する DT_LOCAL です。
+   - DT_LOCAL は、ローカルアドレス帳に属するコンテナーにテーブルを制限します。
     
-   - 変更可能なコンテナーにテーブルを制限する DT_MODIFIABLE です。
+   - DT_MODIFIABLE を使用して、変更可能なコンテナーにテーブルを制限します。
     
-   - **PR_ENTRYID**、 **PR_DISPLAY_TYPE**、および興味の他のすべての列を含む[SPropTagArray](sproptagarray.md)構造体を作成します。 
+   - **PR_ENTRYID**、 **PR_DISPLAY_TYPE**、およびその他の目的の列を含む[SPropTagArray](sproptagarray.md)構造を作成します。 
     
-   - [HrQueryAllRows](hrqueryallrows.md)で、プロパティの制限とプロパティ タグ配列を渡してを呼び出します。 **HrQueryAllRows**は、0 個または複数の行、指定した型に属するすべてのコンテナーの 1 つの行が返されます。 行の任意の数の戻り値を処理するために準備します。 
+   - [hrqueryallrows](hrqueryallrows.md)を呼び出し、プロパティの制限とプロパティタグの配列を渡します。 **hrqueryallrows**は、0個以上の行を返します。これは、指定された種類に属するすべてのコンテナーにつき1行です。 任意の数の行の戻り値を処理できるように準備します。 
     
-   - 目的のコンテナーを表す行の**PR_ENTRYID**列のエントリの識別子を使用して**アドレス帳コンテナー**を呼び出します。 
+   - 目的のコンテナーを表す行の**PR_ENTRYID**列から、エントリ識別子を持つ**IAddrBook:: openentry**を呼び出します。 
     
-4. 場合は、コンテナーを開くには、特定のアドレス帳プロバイダーに属します。
+4. 開くコンテナーが特定のアドレス帳プロバイダーに属している場合:
     
-   - プロパティ タグ、プロパティの値として、プロバイダー固有の値との関係の RELOP_EQ の**PR_AB_PROVIDERS** ([PidTagAbProviders](pidtagabproviders-canonical-property.md)) と、 [SPropertyRestriction](spropertyrestriction.md)構造体を作成します。 通常プロバイダー固有の値は、グローバルに一意の識別子または GUID です。 アドレス帳プロバイダーのヘッダー ファイルのいずれかで公開されているこの値が表示されます。 
+   - プロパティタグに対して**PR_AB_PROVIDERS** ([PidTagAbProviders](pidtagabproviders-canonical-property.md)) を使用して[spropertyrestriction](spropertyrestriction.md)構造を作成し、プロパティ値にプロバイダー固有の値を指定し、リレーションシップに RELOP_EQ を指定します。 通常、プロバイダー固有の値は、グローバルに一意の識別子または GUID です。 この値は、アドレス帳プロバイダーのヘッダーファイルのいずれかに公開されています。 
     
-   - **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))、 **PR_AB_PROVIDERS**、および興味の他のすべての列を含む[SPropTagArray](sproptagarray.md)構造体を作成します。 
+   - **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))、 **PR_AB_PROVIDERS**、およびその他の目的の列を含む[SPropTagArray](sproptagarray.md)構造を作成します。 
     
-   - [HrQueryAllRows](hrqueryallrows.md)で、プロパティの制限とプロパティ タグ配列を渡してを呼び出します。 プロファイルで指定したアドレス帳プロバイダーがない場合は、 **HrQueryAllRows**を 0 個の行に戻ります。 プロバイダーの構成方法に応じて、プロバイダーの最上位のコンテナーの 1 つまたは複数の行を返すことです。 
+   - [hrqueryallrows](hrqueryallrows.md)を呼び出し、プロパティの制限とプロパティタグの配列を渡します。 指定したアドレス帳プロバイダーがプロファイルにない場合、 **hrqueryallrows**は0行を返します。 プロバイダーがどのように編成されているかに応じて、プロバイダーの最上位のコンテナーに対して1つ以上の行を返すことができます。 
     
-   - 目的のコンテナーを表す行の**PR_ENTRYID**列のエントリの識別子を使用して[アドレス帳コンテナー](iaddrbook-openentry.md)を呼び出します。 興味があることをコンテナーが最上位のコンテナーでない場合は、最上位のコンテナーを検索し、階層を移動します。 
+   - 目的のコンテナーを表す行の**PR_ENTRYID**列から、エントリ識別子を持つ[IAddrBook:: openentry](iaddrbook-openentry.md)を呼び出します。 目的のコンテナーが最上位のコンテナーではない場合は、最上位のコンテナーを見つけて、階層をスキャンします。 
     
 

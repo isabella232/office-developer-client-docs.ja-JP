@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: df6eacf4-1cf9-4c25-806f-f87c38dad597
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 38b60180ae7c417bf34998e72f96b353ace02859
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ee0ff8d32436f71020be2cdc91d6677bd4ec8e43
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32325656"
 ---
 # <a name="xpproviderinit"></a>XPProviderInit
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-操作のためのトランスポート プロバイダーを初期化します。
+操作のためにトランスポートプロバイダーを初期化します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapispi.h  <br/> |
-|によって実装されます。  <br/> |トランスポート プロバイダー  <br/> |
-|によって呼び出されます。  <br/> |MAPI  <br/> |
+|ヘッダー ファイル:  <br/> |Mapispi  <br/> |
+|実装元:  <br/> |トランスポートプロバイダー  <br/> |
+|呼び出し元:  <br/> |MAPI  <br/> |
    
 ```cpp
 HRESULT XPProviderInit(
@@ -51,45 +51,45 @@ HRESULT XPProviderInit(
 
  _hInstance_
   
-> [in]DLL が読み込まれるときに使用されるトランスポート プロバイダーのダイナミック リンク ライブラリ (DLL)、MAPI のインスタンスです。
+> 順番dll を読み込んだときに MAPI が使用するトランスポートプロバイダーのダイナミックリンクライブラリ (dll) のインスタンス。
     
- _lpMalloc_
+ _lpmalloc_
   
-> [in]OLE **IMalloc**インターフェイスを公開すること、メモリ アロケーター オブジェクトへのポインター。 トランスポート プロバイダーは、 **IStream**などの特定のインターフェイスを使用する場合、この割り当て方法を使用する必要があります。 
+> 順番OLE **imalloc**インターフェイスを公開するメモリアロケーターオブジェクトへのポインター。 **IStream**などの特定のインターフェイスを使用する場合、トランスポートプロバイダーはこの allocation メソッドを使用する必要がある場合があります。 
     
  _lpAllocateBuffer_
   
-> [in]メモリの割り当てに使用する[MAPIAllocateBuffer](mapiallocatebuffer.md)関数へのポインター。 
+> 順番メモリの割り当てに使用される[MAPIAllocateBuffer](mapiallocatebuffer.md)関数へのポインター。 
     
  _lpAllocateMore_
   
-> [in]追加メモリの割り当てに使用する[MAPIAllocateMore](mapiallocatemore.md)関数へのポインター。 
+> 順番追加のメモリを割り当てるために使用される[MAPIAllocateMore](mapiallocatemore.md)関数へのポインター。 
     
- _lpFreeBuffer_
+ _lpfreebuffer_
   
-> [in]メモリを解放するために使用する、 [MAPIFreeBuffer](mapifreebuffer.md)関数へのポインター。 
+> 順番メモリを解放するために使用される[MAPIFreeBuffer](mapifreebuffer.md)関数へのポインター。 
     
  _ulFlags_
   
-> [in]フラグのビットマスクです。 次のフラグを設定することができます。
+> 順番フラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_NT_SERVICE 
   
-> プロバイダーは、Windows サービス、特別な種類のすべてのユーザー インターフェイスにアクセスすることがなくプロセスのコンテキストで行われます。 
+> プロバイダーは、ユーザーインターフェイスにアクセスできない特別な種類のプロセスである Windows サービスのコンテキストに読み込まれています。 
     
  _ulMAPIVer_
   
-> [in]Mapi.dll を使用するサービス プロバイダー インターフェイス (SPI) のバージョン番号です。 現在のバージョン番号は、Mapispi.h ヘッダー ファイルを参照してください。 
+> 順番Mapi .dll が使用するサービスプロバイダインターフェイス (SPI) のバージョン番号。 現在のバージョン番号については、Mapispi ヘッダーファイルを参照してください。 
     
- _lpulProviderVer_
+ _lアウト providerver_
   
-> [out]このトランスポート プロバイダーを使用する SPI のバージョン番号へのポインター。 
+> 読み上げこのトランスポートプロバイダーが使用する SPI のバージョン番号へのポインター。 
     
- _lppXPProvider_
+ _lppxps プロバイダ_
   
-> [out]初期化されたトランスポート プロバイダー オブジェクトへのポインターへのポインター。
+> 読み上げ初期化されたトランスポートプロバイダオブジェクトへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -97,21 +97,21 @@ S_OK
     
 MAPI_E_VERSION 
   
-> MAPI によって使用されている SPI のバージョンは、このプロバイダーで使用されている SPI との互換性ではありません。
+> MAPI で使用されている spi バージョンは、このプロバイダーで使用されている spi と互換性がありません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-MAPI は、クライアント ログオンを次のトランスポート プロバイダーを初期化するために**XPProviderInit**エントリ ポイント関数が呼び出されます。 **XPProviderInit**は、クライアントのプロファイルで指定されたトランスポート プロバイダーごとに 1 回呼び出されます。 
+MAPI は、クライアントログオンの後にトランスポートプロバイダーを初期化するために、エントリポイント関数の**xps providerinit**を呼び出します。 クライアントのプロファイルに指定されている各トランスポートプロバイダーに対して、 **xps providerinit**が1回呼び出されます。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-トランスポート プロバイダーは、プロバイダーの DLL にエントリ ポイント関数として**XPProviderInit**を実装する必要があります。 実装は、 **XPPROVIDERINIT**関数のプロトタイプで指定されている Mapispi.h もに基づいている必要があります。 MAPI では、型を使用する標準的な MAPI の初期化の呼び出し、CDECL 呼び出し規約に従う**XPProviderInit**を STDMAPIINITCALLTYPE、 **XPPROVIDERINIT**を定義します。 CDECL の利点は、呼び出しのパラメーターの数が定義されているパラメーターの数と一致しない場合でも呼び出しを試行することができます。 
+トランスポートプロバイダーは、プロバイダーの DLL で、エントリポイント関数として、 **xps providerinit**を実装する必要があります。 この実装は、Mapispi でも指定されている、 **xps の init**関数プロトタイプに基づいている必要があります。 mapi では、STDMAPIINITCALLTYPE という標準の MAPI 初期化呼び出しの種類であるを使用するように、 **xps の init**が定義されています。これにより、 **xps の init**は CDECL の呼び出し規則に従います。 CDECL の利点は、呼び出し元のパラメーターの数が定義されたパラメーターの数と一致しない場合でも、呼び出しを試行できることです。 
   
-同時使用中、または同じプロファイルで複数回表示されるは、いくつかのプロファイルに表示される結果として、プロバイダーを複数回初期化できます。 プロバイダー オブジェクトには、コンテキストが含まれている、ため**XPProviderInit**ごとの初期化を同じプロセスで複数回初期化の場合でも_lppXPProvider_で、別のプロバイダー オブジェクトを返す必要があります。 
+プロバイダーは、複数のプロファイルに同時に表示された結果、または同じプロファイルに複数回出現した結果として、複数回初期化することができます。 プロバイダーオブジェクトにはコンテキストが含まれているため、同じプロセス内で複数の初期化があっても、各初期化に対して、 **xps providerinit**は別のプロバイダーオブジェクトを_lppxps プロバイダー_で返す必要があります。 
   
-トランスポート プロバイダーは、 _lpAllocateBuffer_、 _lpAllocateMore_、および多くのメモリの割り当てと割り当て解除の_lpFreeBuffer_が指す関数を使用する必要があります。 具体的には、プロバイダーでは、 [IMAPIProp::GetProps](imapiprop-getprops.md)や[IMAPITable::QueryRows](imapitable-queryrows.md)などのオブジェクトのインターフェイスを呼び出すときにクライアント アプリケーションで使用するメモリの割り当てにこれらの関数を使用する必要があります。 プロバイダーは、OLE のメモリ アロケーターを使用しても期待しています、する場合は、 _lpMalloc_パラメーターで指定されたアロケーター オブジェクトの**IUnknown::AddRef**メソッドを呼び出します。 
+トランスポートプロバイダーは、 _lpAllocateBuffer_、 _lpAllocateMore_、および_lpfreebuffer_が指す関数を使用して、ほとんどのメモリの割り当てと割り当てを解除する必要があります。 特に、プロバイダーはこれらの関数を使用して、 [imapiprop:: GetProps](imapiprop-getprops.md) 、 [IMAPITable:: QueryRows](imapitable-queryrows.md)などのオブジェクトインターフェイスを呼び出すときに、クライアントアプリケーションが使用するメモリを割り当てる必要があります。 プロバイダーが OLE メモリアロケーターを使用することを前提としている場合は、 _lpmalloc_パラメーターで指定されたアロケーターオブジェクトの**IUnknown:: AddRef**メソッドを呼び出す必要があります。 
   
-**XPProviderInit**の作成方法の詳細については、[トランスポート プロバイダーの初期化](initializing-the-transport-provider.md)を参照してください。 エントリ ポイント関数の詳細については、[サービス プロバイダーのエントリ ポイント関数を実装する](implementing-a-service-provider-entry-point-function.md)を参照してください。 
+**xp の init**の記述の詳細については、「[トランスポートプロバイダーの初期化](initializing-the-transport-provider.md)」を参照してください。 エントリポイント関数の詳細については、「[サービスプロバイダーエントリポイント関数の実装](implementing-a-service-provider-entry-point-function.md)」を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

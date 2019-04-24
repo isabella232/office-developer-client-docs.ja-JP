@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 30d8268e-0c64-401d-8799-e8e1ba78b88f
-description: Outlook プロファイル間で一意であるアカウントの識別子を返します。
-ms.openlocfilehash: 9b2e30c0f57a54af219e68a8c2fe91e5dba4ddbe
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Outlook プロファイル全体で一意のアカウント識別子を返します。
+ms.openlocfilehash: 209f7dd89b8d947b999f2a068373aaf61a3e9784
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327630"
 ---
 # <a name="propacctminiuid"></a>PROP_ACCT_MINI_UID
 
-Outlook プロファイル間で一意であるアカウントの識別子を返します。
+Outlook プロファイル全体で一意のアカウント識別子を返します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -26,14 +26,14 @@ Outlook プロファイル間で一意であるアカウントの識別子を返
 |:-----|:-----|
 |識別子:  <br/> |0x0003  <br/> |
 |プロパティの種類:  <br/> |PT_LONG  <br/> |
-|プロパティ タグ。  <br/> |0x00030003  <br/> |
-|アクセス:  <br/> |読み取り専用  <br/> |
+|プロパティタグ:  <br/> |0x0003000 3  <br/> |
+|接続  <br/> |読み取り専用  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-[IOlkAccount::GetProp](iolkaccount-getprop.md)を使用してこのプロパティを取得します。 クライアントがこのプロパティを設定しようとすると、このプロパティは**E_OLK_PROP_READ_ONLY**を返します。 
+[IOlkAccount:: getprop](iolkaccount-getprop.md)を使用して、このプロパティを取得します。 クライアントがこのプロパティを設定しようとすると、このプロパティは**E_OLK_PROP_READ_ONLY**を返します。 
   
-このプロパティとは異なる[PROP_ACCT_ID](prop_acct_id.md)の値は、アカウントが作成されたプロファイルの内外でのアカウントを一意に識別**PROP_ACCT_ID**はその 1 つのプロファイル内のすべてのアカウント間でのみ一意ですが、そのアカウントが作成されました。 別の Outlook プロファイルとアカウントの別のセットを別のコンピューター上にこれらのプロパティを含むメッセージを移動すると、 **PROP_ACCT_MINI_UID**は元のプロファイルでは、元のアカウントを一意に識別することができます。 ただし、 **PROP_ACCT_ID**可能性がある競合する可能性が 2 番目のコンピューターのプロファイルにアカウントを使用しています。 
+このプロパティの値は、アカウントが作成されたプロファイルの内部と外部のアカウントを一意に識別するという点で[PROP_ACCT_ID](prop_acct_id.md)とは異なりますが、 **PROP_ACCT_ID**はその1つのプロファイル内のすべてのアカウント間でのみ一意です。アカウントが作成された。 これらのプロパティを持つメッセージが、異なる Outlook プロファイルおよび異なるアカウントのセットを持つ2番目のコンピューターに移動すると、 **PROP_ACCT_MINI_UID**は元のプロファイルで元のアカウントを一意に識別できます。 ただし、 **PROP_ACCT_ID**は、2番目のコンピューターのプロファイルのアカウントと競合する可能性があります。 
   
 ## <a name="see-also"></a>関連項目
 

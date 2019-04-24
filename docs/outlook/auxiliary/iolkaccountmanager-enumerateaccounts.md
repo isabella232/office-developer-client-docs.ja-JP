@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: dbb8342b-e4e0-f89d-3e14-b4c7049095ef
 description: 特定のカテゴリまたは種類のアカウントの列挙子を取得します。
-ms.openlocfilehash: f9b332c0bbc90b1a8f5f944492448055f23c0668
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d0d383dee0e76dd6310d01bd1482e307c2374856
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322051"
 ---
 # <a name="iolkaccountmanagerenumerateaccounts"></a>IOlkAccountManager::EnumerateAccounts
 
@@ -34,7 +34,7 @@ HRESULT IOlkAccountManager::EnumerateAccounts (
 
 ## <a name="parameters"></a>パラメーター
 
-_pclsidCategory_
+_pclsidcategory_
   
 > [in]列挙するカテゴリのクラスの id。値は、次のいずれかする必要があります。
     
@@ -44,7 +44,7 @@ _pclsidCategory_
     
    - CLSID_OlkStore 
     
-_pclsidType_
+_pclsidtype_
   
 > [in]アカウントの種類を列挙するのクラス識別子。値は、次のいずれかする必要があります。
     
@@ -62,7 +62,7 @@ _dwFlags_
   
 > [in]動作を変更するフラグです。サポートされている唯一の値は OLK_ACCOUNT_NO_FLAGS です。
     
-_ppEnum_
+_ppenum_
   
 > [out] An enumerator that supports the [IOlkEnum](iolkenum.md) interface. 
     
@@ -73,11 +73,11 @@ _ppEnum_
 |S_OK  <br/> |呼び出しが成功しました。  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |アカウント マネージャーが使用するために初期化されていません。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 NULL を指定するカテゴリの指定した型のすべてのアカウントの列挙子を返します。同様に、NULL の種類を指定すると、指定したカテゴリのすべてのアカウントの列挙子を返します。
   
- **IOlkAccountManager::EnumerateAccounts** は、Exchange アカウントのアドレス帳カテゴリをサポートしていません。 アカウントが Exchange アカウントの場合 (*pclsidType*は**CLSID_OlkMAPIAccount** )、アドレス帳を実装しているアカウントを列挙しようとして (*prgclsidCategory*は**CLSID_OlkAddressBook** )、**を呼び出すIOlkAccountManager::EnumerateAccounts**アカウントの列挙子の*ppEnum*で、Exchange アカウントが返されません。 
+ **IOlkAccountManager::EnumerateAccounts** は、Exchange アカウントのアドレス帳カテゴリをサポートしていません。 アカウントが Exchange アカウント (*pclsidtype*が**CLSID_OlkMAPIAccount** ) で、アドレス帳を実装するアカウント (*prgclsidCategory*が**CLSID_OlkAddressBook** ) を列挙しようとしている場合は、 **IOlkAccountManager:: EnumerateAccounts**は、accounts 列挙*ppenum*の Exchange アカウントを返しません。 
   
 ## <a name="see-also"></a>関連項目
 

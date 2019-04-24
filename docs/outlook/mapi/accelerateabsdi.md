@@ -12,24 +12,24 @@ api_type:
 - HeaderDef
 ms.assetid: da67dcf4-1411-4fc9-992c-115485019bd3
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 101e74f3e35e3664dd29e59f166b2f0af6e1dcba
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 46e87caa68a45a188272340db408c52546f02a57
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322128"
 ---
 # <a name="accelerateabsdi"></a>ACCELERATEABSDI
  
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-モードレスのアドレス帳のダイアログ ボックスのアクセラレータ キーを処理するコールバック関数を定義します。 
+[モードレスアドレス帳] ダイアログボックスで、アクセラレータキーを処理するためのコールバック関数を定義します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|によって実装される関数の定義:  <br/> |MAPI  <br/> |
-|によって呼び出される関数を定義します。  <br/> |クライアント アプリケーション  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|定義された関数の実装:  <br/> |MAPI  <br/> |
+|によって呼び出された定義済み関数:  <br/> |クライアント アプリケーション  <br/> |
    
 ```cpp
 BOOL (STDMETHODCALLTYPE ACCELERATEABSDI)( 
@@ -40,24 +40,24 @@ BOOL (STDMETHODCALLTYPE ACCELERATEABSDI)(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulUIParam_
+ _uluiparam_
   
-> [in]ユーザー インターフェイスの情報を関数に渡すために使用される実装固有の値です。 Microsoft Windows で実行中のアプリケーションで_ulUIParam_ ] ダイアログ ボックスの親ウィンドウ ハンドルは、され型の HWND の**ULONG_PTR**にキャストします。 0 の値は、親ウィンドウがないことを示します。 
+> 順番ユーザーインターフェイス情報を関数に渡すために使用される実装固有の値。 Microsoft Windows 上で実行されているアプリケーションでは、 _uluiparam_はダイアログボックスの親ウィンドウハンドルで、 **ULONG_PTR**にキャストする型 HWND です。 値が0の場合は、親ウィンドウがないことを示します。 
     
  _lpvmsg_
   
-> [in]Windows メッセージへのポインター。
+> 順番Windows メッセージへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
-**ACCELERATEABSDI**のプロトタイプを持つ関数は、メッセージを処理する場合に TRUE を返します。 
+**ACCELERATEABSDI**プロトタイプを使用している関数は、メッセージを処理する場合は TRUE を返します。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**ACCELERATEABSDI**のプロトタイプでは関数は、クライアント アプリケーションが、 _ulFlags_ 、 [ADRPARM](adrparm.md)構造体のメンバーで、DIALOG_SDI フラグを設定する場合にのみは、モードレス ダイアログ ボックスでのみ使用します。 
+**ACCELERATEABSDI**プロトタイプに基づく関数は、モードレスダイアログでのみ使用されます。つまり、クライアントアプリケーションが[ADRPARM](adrparm.md)構造の_ulflags_メンバーで DIALOG_SDI フラグを設定している場合に限られます。 
   
-モードレス ダイアログ ボックスでは、独自のループではなく、クライアント アプリケーションの Windows メッセージ ループを共有します。 アプリケーション メッセージ ループを制御するには、CTRL キーを押しながら P キーを押すなど印刷用のアクセラレータ キー、 **ACCELERATEABSDI**を呼び出すため、ダイアログの使用に基づいて関数をテストし、動作にどのようなアクセラレータ キーを認識しません。 
+モードレスダイアログは、独自のループを持たずに、クライアントアプリケーションの Windows メッセージループを共有します。 メッセージループを制御するアプリケーションでは、ダイアログで使用されるアクセラレータキーがわからないため、 **ACCELERATEABSDI**ベースの関数を呼び出して、CTRL + P などのアクセラレータキーをテストし、操作することができます。 
   
-クライアントのメッセージ ループの呼び出し**ACCELERATEABSDI**は、クライアントが[IAddrBook::Address](iaddrbook-address.md)メソッドを使用して、モードレスのアドレス帳] ダイアログ ボックスを呼び出したときに関数を基づいています。 MAPI は、 [DISMISSMODELESS](dismissmodeless.md)関数のプロトタイプでは関数を呼び出すと、この呼び出しが終了します。 
+クライアントのメッセージループは、 [IAddrBook:: address](iaddrbook-address.md)メソッドを使用して、モードレスアドレス帳ダイアログボックスを呼び出したときに**ACCELERATEABSDI**ベースの関数を呼び出します。 この呼び出しは、MAPI が[DISMISSMODELESS](dismissmodeless.md)関数プロトタイプに基づいて関数を呼び出したときに終了します。 
   
 

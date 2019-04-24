@@ -1,26 +1,26 @@
 ---
-title: 作成、取得、更新、およびプロジェクトのサーバーの JavaScript を使用してプロジェクトを削除します。
+title: Project Server JavaScript を使用してプロジェクトを作成、取得、更新、および削除する
 manager: soliver
 ms.date: 08/10/2016
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 6b690938-05bc-46a3-a40e-30f081403767
-description: 現在の ProjectContext のインスタンスを取得します。取得し、サーバー上の発行済みプロジェクトのコレクションを反復処理します。作成、取得、チェック アウト、および、プロジェクトのサーバーの JavaScript オブジェクト モデルを使用してプロジェクトを削除します。プロジェクトのプロパティを変更してください。
+description: 現在の projectcontext インスタンスを取得します。サーバー上の発行済みプロジェクトのコレクションを取得し、反復処理を行います。project Server JavaScript オブジェクトモデルを使用して、プロジェクトの作成、取得、チェックアウト、削除を行うことができます。プロジェクトのプロパティを変更します。
 ms.openlocfilehash: 10dac7edfa3e84cebfd0585bc8c4bff1ea22ea44
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25382912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322667"
 ---
-# <a name="create-retrieve-update-and-delete-projects-using-project-server-javascript"></a>作成、取得、更新、およびプロジェクトのサーバーの JavaScript を使用してプロジェクトを削除します。
+# <a name="create-retrieve-update-and-delete-projects-using-project-server-javascript"></a>Project Server JavaScript を使用してプロジェクトを作成、取得、更新、および削除する
 
-この資料のシナリオは、現在の**ProjectContext**のインスタンスを取得する方法を表示します。取得し、サーバー上の発行済みプロジェクトのコレクションを反復処理します。作成、取得、チェック アウト、および、プロジェクトのサーバーの JavaScript オブジェクト モデルを使用してプロジェクトを削除します。プロジェクトのプロパティを変更してください。 
+この記事のシナリオでは、現在の**projectcontext**インスタンスを取得する方法について説明します。サーバー上の発行済みプロジェクトのコレクションを取得し、反復処理を行います。project Server JavaScript オブジェクトモデルを使用して、プロジェクトの作成、取得、チェックアウト、削除を行うことができます。プロジェクトのプロパティを変更します。 
   
 > [!NOTE]
-> これらのシナリオは SharePoint アプリケーション ページのマークアップでカスタム コードを定義しますが、ページの Visual Studio 2012 を作成する分離コード ファイルを使用しません。 
+> これらのシナリオでは、SharePoint アプリケーションページのマークアップにカスタムコードを定義していますが、ページ用に Visual Studio 2012 が作成する分離コードファイルは使用しません。 
   
-## <a name="prerequisites-for-working-with-project-server-2013-projects-in-the-javascript-object-model"></a>JavaScript オブジェクト モデルでは、プロジェクトを Project Server 2013 を使用するための前提条件
+## <a name="prerequisites-for-working-with-project-server-2013-projects-in-the-javascript-object-model"></a>JavaScript オブジェクトモデルで Project Server 2013 プロジェクトを使用するための前提条件
 
 この記事で説明するシナリオを実行するには、次の製品をインストールおよび構成する必要があります。
   
@@ -29,39 +29,39 @@ ms.locfileid: "25382912"
 - Visual Studio 2012
 - Office Developer Tools for Visual Studio 2012
     
-SharePoint Server 2013 に拡張機能を配置し、プロジェクトへの投稿のアクセス許可も必要です。
+また、SharePoint Server 2013 に拡張機能を展開し、プロジェクトに投稿する権限も必要です。
   
 > [!NOTE]
-> 次の手順では、Project Server 2013 を実行しているコンピューター上で開発することを前提としています。 
+> これらの手順は、Project Server 2013 を実行しているコンピューター上で開発していることを前提としています。 
   
 ## <a name="create-the-visual-studio-solution"></a>Visual Studio ソリューションを作成する
 <a name="pj15_CRUDProjectsJSOM_Setup"> </a>
 
-次の手順では、SharePoint のプロジェクトとアプリケーション ページに含まれている Visual Studio 2012 のソリューションを作成します。 ページには、プロジェクトを操作するためのロジックが含まれています。
+次の手順では、SharePoint プロジェクトとアプリケーションページを含む Visual Studio 2012 ソリューションを作成します。 ページには、プロジェクトを操作するためのロジックが含まれます。
   
 ### <a name="to-create-the-sharepoint-project-in-visual-studio"></a>Visual Studio で SharePoint を作成するには
 
-1. Project Server 2013 を実行しているコンピューターに管理者として Visual Studio 2012 を実行します。
+1. Project Server 2013 を実行しているコンピューターで、Visual Studio 2012 を管理者として実行します。
     
 2. メニュー バーで、[ **ファイル**]、[ **新規作成**]、[ **プロジェクト**] の順に選択します。
     
-3. [ **新しいプロジェクト**] ダイアログ ボックスで、上部のドロップダウン リストから [ **.NET Framework 4.5**] を選択します。 
+3. [**新しいプロジェクト**] ダイアログ ボックスで、ダイアログ ボックスの上部にあるドロップダウン リストから [**.NET Framework 4.5**] を選択します。 
     
 4. [**Office/SharePoint**] テンプレート カテゴリで、[**SharePoint ソリューション**] を選択してから、[**SharePoint 2013 プロジェクト**] テンプレートを選択します。 
     
-5. ProjectsJSOM、プロジェクトの名前し、 **[OK** ] ボタンをクリックします。 
+5. プロジェクトに「プロジェクト名」という名前を指定し、[ **OK** ] ボタンを選択します。 
     
 6. [ **SharePoint カスタマイズ ウィザード**] ダイアログ ボックスで、[ **ファーム ソリューションとして配置する**] を選択して、[ **完了**] をクリックします。 
     
-7. Project Web App インスタンスの URL と一致する**ProjectsJSOM**プロジェクトの**サイトの URL**プロパティの値を編集する (たとえば、 `https://ServerName/PWA`)。
+7. project Web App インスタンスの url と一致するよう**** に、プロジェクトの**サイト url**プロパティの値を編集します (例: `https://ServerName/PWA`)。
     
 ### <a name="to-create-the-application-page-in-visual-studio"></a>Visual Studio でアプリケーション ページを作成するには
 
 1. **ソリューション エクスプローラー**で、**ProjectsJSOM** プロジェクトのショートカット メニューを開き、SharePoint のマップされた "Layouts" フォルダーを追加します。 
     
-2. **レイアウト**フォルダーに**ProjectsJSOM**フォルダーのショートカット メニューを開くし、ProjectsList.aspx をという名前の新しい SharePoint アプリケーション ページを追加します。
+2. **Layouts**フォルダーで、**プロジェクトプロジェクト**のショートカットメニューを開き、新しい SharePoint アプリケーションページを「プロジェクトリスト .aspx」という名前で追加します。
     
-3. **ProjectsList.aspx** ページのショートカット メニューを開き、[**スタートアップ アイテムとして設定**] を選択します。
+3. [**ProjectsList.aspx**] ページのショートカット メニューを開き、[**スタートアップ アイテムとして設定**] を選択します。
     
 4. **ProjectsList.aspx** ページのマークアップで、"Main" **asp:Content** タグ内のユーザー インターフェイス コントロールを次のように定義します。 
     
@@ -80,7 +80,7 @@ SharePoint Server 2013 に拡張機能を配置し、プロジェクトへの投
    ```
 
    > [!NOTE]
-   > これらのコントロールは、すべてのシナリオで使用されるとは限りません。たとえば、"プロジェクトの作成" シナリオでは **textarea** および **button**コントロールを使用しません。 
+   > これらのコントロールは、すべてのシナリオで使用する必要はありません。 たとえば、"プロジェクトの作成" シナリオでは **textarea** および **button**コントロールを使用しません。 
   
 5. **span** タグを閉じた後で、**SharePoint:ScriptLink** タグ、**SharePoint:FormDigest** タグ、および **script** タグを次のように追加します。 
     
@@ -92,32 +92,32 @@ SharePoint Server 2013 に拡張機能を配置し、プロジェクトへの投
     </script>
    ```
 
-   **SharePoint:ScriptLink**タグは、Project Server 2013 の JavaScript オブジェクト モデルを定義する PS.js ファイルを参照します。 **SharePoint:FormDigest**タグは、サーバーのコンテンツを更新する操作が必要なときに、セキュリティ検証のメッセージ ダイジェストを生成します。 
+   **SharePoint: scriptlink**タグは、プロジェクトサーバー2013の JavaScript オブジェクトモデルを定義する、.ps ファイルを参照します。 **SharePoint: formdigest**タグは、サーバーのコンテンツを更新する操作で必要とされる場合に、セキュリティ検証のためにメッセージダイジェストを生成します。 
     
 6. プレースホルダー コメントを、次のいずれかの手順のコードで置換します。
     
-   - [JavaScript オブジェクト モデルを使用して Project Server 2013 のプロジェクトを作成します。](#pj15_CRUDProjectsJSOM_CreateProjects)
+   - [JavaScript オブジェクトモデルを使用して Project Server 2013 プロジェクトを作成する](#pj15_CRUDProjectsJSOM_CreateProjects)
     
-   - [JavaScript オブジェクト モデルを使用して Project Server 2013 のプロジェクトを更新します。](#pj15_CRUDProjectsJSOM_UpdateProjects)
+   - [JavaScript オブジェクトモデルを使用して Project Server 2013 プロジェクトを更新する](#pj15_CRUDProjectsJSOM_UpdateProjects)
     
-   - [JavaScript オブジェクト モデルを使用して Project Server 2013 のプロジェクトを削除します。](#pj15_CRUDProjectsJSOM_DeleteProjects)
+   - [JavaScript オブジェクトモデルを使用して Project Server 2013 プロジェクトを削除する](#pj15_CRUDProjectsJSOM_DeleteProjects)
     
-7. アプリケーション ページをテストするには、メニュー バーで、[**デバッグ**]、[**デバッグ開始**] の順に選択します。web.config ファイルの変更を確認するプロンプトが表示されたら、[**OK**] をクリックします。
+7. アプリケーション ページをテストするには、メニュー バーの [**デバッグ**] を選択し、[**デバッグの開始**] をクリックします。web.config ファイルの変更を求められたら、[**OK**] を選択します。
     
-## <a name="create-project-server-2013-projects-by-using-the-javascript-object-model"></a>JavaScript オブジェクト モデルを使用して Project Server 2013 のプロジェクトを作成します。
+## <a name="create-project-server-2013-projects-by-using-the-javascript-object-model"></a>JavaScript オブジェクトモデルを使用して Project Server 2013 プロジェクトを作成する
 <a name="pj15_CRUDProjectsJSOM_CreateProjects"> </a>
 
-このセクションの手順では、JavaScript オブジェクト モデルを使用してプロジェクトを作成します。 プロシージャには、次の大まかな手順が含まれています。
+このセクションの手順では、JavaScript オブジェクトモデルを使用してプロジェクトを作成します。 手順には、次の概要手順が含まれます。
   
 1. 現在の **ProjectContext** インスタンスを取得します。 
     
-2. **ProjectCreationInformation** オブジェクトを作成して、プロジェクトの初期プロパティを指定します。**ProjectCreationInformation.set_name** 関数を使用して、必要な **name** プロパティを指定します。 
+2. **ProjectCreationInformation** オブジェクトを作成して、プロジェクトの初期プロパティを指定します。 **ProjectCreationInformation.set_name** 関数を使用して、必要な **name** プロパティを指定します。 
     
-3. **ProjectContext.get_projects** 関数を使用して、発行済みのプロジェクトをサーバーから取得します。**get_projects** 関数は **ProjectCollection** オブジェクトを返します。 
+3. **ProjectContext.get_projects** 関数を使用して、発行済みのプロジェクトをサーバーから取得します。 **get_projects** 関数は **ProjectCollection** オブジェクトを返します。 
     
 4. **ProjectCollection.add** 関数を使用し、**ProjectCreationInformation** オブジェクトを渡して、コレクションに新しいプロジェクトを追加します。 
     
-5. **ProjectCollection.update** 関数および **ProjectContext.waitForQueueAsync** 関数を使用してコレクションを更新します。**update** 関数は、**waitForQueueAsync** に渡す **QueueJob** オブジェクトを返します。この呼び出しは、プロジェクトも発行します。
+5. **ProjectCollection.update** 関数と **ProjectContext.waitForQueueAsync** 関数を使用してコレクションを更新します。 **update** 関数は、**waitForQueueAsync** に渡す **QueueJob** オブジェクトを返します。 この呼び出しは、プロジェクトも発行します。
     
 「**Visual Studio でアプリケーション ページを作成するには**」の手順で追加した **script** タグの間に、次に示すコードを貼り付けます。 
   
@@ -187,24 +187,24 @@ SharePoint Server 2013 に拡張機能を配置し、プロジェクトへの投
     }
 ```
 
-## <a name="update-project-server-2013-projects-by-using-the-javascript-object-model"></a>JavaScript オブジェクト モデルを使用して Project Server 2013 のプロジェクトを更新します。
+## <a name="update-project-server-2013-projects-by-using-the-javascript-object-model"></a>JavaScript オブジェクトモデルを使用して Project Server 2013 プロジェクトを更新する
 <a name="pj15_CRUDProjectsJSOM_UpdateProjects"> </a>
 
-このセクションの手順では、JavaScript オブジェクト モデルを使用して、プロジェクトの**開始日**のプロパティを更新します。 プロシージャには、次の大まかな手順が含まれています。 
+このセクションの手順では、JavaScript オブジェクトモデルを使用してプロジェクトの**startDate**プロパティを更新します。 手順には、次の概要手順が含まれます。 
   
 1. 現在の **ProjectContext** インスタンスを取得します。 
     
-2. **ProjectContext.get_projects** 関数を使用して、発行済みのプロジェクトをサーバーから取得します。**get_projects** 関数は **ProjectCollection** オブジェクトを返します。 
+2. **ProjectContext.get_projects** 関数を使用して、発行済みのプロジェクトをサーバーから取得します。 **get_projects** 関数は **ProjectCollection** オブジェクトを返します。 
     
 3. **ProjectContext.load** 関数と **ProjectContext.executeQueryAsync** 関数を使用して、サーバーで要求を実行します。 
     
 4. **ProjectContext.getById** 関数を使用して、**PublishedProject** オブジェクトを取得します。 
     
-5. **Project.checkOut** 関数を使用してターゲット プロジェクトをチェックアウトします。**checkOut** 関数は、発行されたプロジェクトのドラフト バージョンを返します。 
+5. **Project.checkOut** 関数を使用してターゲット プロジェクトをチェックアウトします。 **checkOut** 関数は、発行されたプロジェクトのドラフト バージョンを返します。 
     
 6. **DraftProject.set_startDate** 関数を使用して、プロジェクトの開始日を変更します。 
     
-7. **DraftProject.publish** 関数と **ProjectContext.waitForQueueAsync** 関数を使用してプロジェクトを発行します。**publish** 関数は、**waitForQueueAsync** に渡す **QueueJob** オブジェクトを返します。
+7. **DraftProject.publish** 関数と **ProjectContext.waitForQueueAsync** 関数を使用してプロジェクトを発行します。 **publish** 関数は、**waitForQueueAsync** に渡す **QueueJob** オブジェクトを返します。
     
 「**Visual Studio でアプリケーション ページを作成するには**」の手順で追加した **script** タグの間に、次に示すコードを貼り付けます。 
   
@@ -270,14 +270,14 @@ SharePoint Server 2013 に拡張機能を配置し、プロジェクトへの投
     }
 ```
 
-## <a name="delete-project-server-2013-projects-by-using-the-javascript-object-model"></a>JavaScript オブジェクト モデルを使用して Project Server 2013 のプロジェクトを削除します。
+## <a name="delete-project-server-2013-projects-by-using-the-javascript-object-model"></a>JavaScript オブジェクトモデルを使用して Project Server 2013 プロジェクトを削除する
 <a name="pj15_CRUDProjectsJSOM_DeleteProjects"> </a>
 
-このセクションの手順では、JavaScript オブジェクト モデルを使用してプロジェクトを削除します。 プロシージャには、次の大まかな手順が含まれています。
+このセクションの手順では、JavaScript オブジェクトモデルを使用してプロジェクトを削除します。 手順には、次の概要手順が含まれます。
   
 1. 現在の **ProjectContext** インスタンスを取得します。 
     
-2. **ProjectContext.get_projects** 関数を使用して、発行済みのプロジェクトをサーバーから取得します。**get_projects** 関数は **ProjectCollection** オブジェクトを返します。 
+2. **ProjectContext.get_projects** 関数を使用して、発行済みのプロジェクトをサーバーから取得します。 **get_projects** 関数は **ProjectCollection** オブジェクトを返します。 
     
 3. **ProjectContext.load** 関数と **ProjectContext.executeQueryAsync** 関数を使用して、サーバーで要求を実行します。 
     
@@ -285,7 +285,7 @@ SharePoint Server 2013 に拡張機能を配置し、プロジェクトへの投
     
 5. **ProjectCollection.remove** 関数に渡すことでプロジェクトを削除します。 
     
-6. **ProjectCollection.update** 関数と **ProjectContext.waitForQueueAsync** 関数を使用してコレクションを更新します。**update** 関数は、**waitForQueueAsync** に渡す **QueueJob** オブジェクトを返します。
+6. **ProjectCollection.update** 関数と **ProjectContext.waitForQueueAsync** 関数を使用してコレクションを更新します。 **update** 関数は、**waitForQueueAsync** に渡す **QueueJob** オブジェクトを返します。
     
 「**Visual Studio でアプリケーション ページを作成するには**」の手順で追加した **script** タグの間に、次に示すコードを貼り付けます。 
   

@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: b4218aa6-1591-49db-9782-f286135fc79a
 description: このセクションでは、 Outlookの POP3 プロバイダーでの使用方法の固有 ID リスト (UIDL) 履歴、POP3 アカウントのプロバイダーがダウンロードまたは複数回、同じメッセージのダウンロードを避けるために、POP3 サーバーから削除するメッセージを識別するについて説明します。
 ms.openlocfilehash: 35c50d83c317ebefa52fd9bfcb348c8411a06f25
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25394686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322247"
 ---
 # <a name="managing-message-downloads-for-pop3-accounts"></a>管理メッセージは POP3 アカウントをダウンロードします。
 
@@ -24,9 +24,9 @@ ms.locfileid: "25394686"
   
 POP アカウントのメッセージは、一意の識別子 (Uid) で識別されます。電子メール クライアントがメール サーバーに残ります UIDL マップを関連付けるその UID をメールボックスに送信された各メッセージを取得するために、UIDL コマンドを使用します。クライアントはダウンロードまたはクライアント上で受信トレイを削除するメッセージの UIDL 履歴も取得します。クライアントは、UIDL 履歴に基づき、メッセージは新しいをダウンロードするかを確認できます。
 
-- [POP3 アカウントの履歴をダウンロードするメッセージを検索する](locating-the-message-download-history-for-a-pop3-account.md): このトピックでは、メール クライアントがクライアントの POP3 アカウントの受信トレイ内のメッセージの UIDL 履歴を取得する[PidTagAttachDataBinary](https://msdn.microsoft.com/library/3b0a8b28-863e-4b96-a4c0-fdb8f40555b9%28Office.15%29.aspx)プロパティにアクセスする方法について説明します。 
+- [pop3 アカウントのメッセージダウンロード履歴の検索](locating-the-message-download-history-for-a-pop3-account.md): このトピックでは、メールクライアントが[PidTagAttachDataBinary](https://msdn.microsoft.com/library/3b0a8b28-863e-4b96-a4c0-fdb8f40555b9%28Office.15%29.aspx)プロパティにアクセスして、pop3 アカウントのクライアント受信トレイ内のメッセージの UIDL 履歴を取得する方法について説明します。 
     
-- [POP3 アカウントの履歴をダウンロードするメッセージを解析](parsing-the-message-download-history-for-a-pop3-account.md)しますここで、UIDL の履歴をダウンロードまたは削除するメッセージを識別するクライアントの POP3 アカウントの受信トレイ内のメッセージを表す POP3 の BLOB を解析する方法について説明。アカウントです。
+- [[pop3 アカウントのメッセージのダウンロード履歴を解析](parsing-the-message-download-history-for-a-pop3-account.md)する]: このトピックでは、pop3 アカウントのクライアント受信トレイ内のメッセージの UIDL 履歴を表す pop3 BLOB を解析し、そのメッセージに対してダウンロードまたは削除されたメッセージを特定する方法について説明します。分割払.
     
 ## <a name="see-also"></a>関連項目
 

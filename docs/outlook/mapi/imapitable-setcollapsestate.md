@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 31325e8f-1cf9-49b2-8118-953996b0037f
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 51c239897e5e225a0765f78404526e2836371f30
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 7351457dc5b72cfc4a7ef9f91e9d33a80ca98c39
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328834"
 ---
 # <a name="imapitablesetcollapsestate"></a>IMAPITable::SetCollapseState
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[IMAPITable::GetCollapseState](imapitable-getcollapsestate.md)メソッドへの前回の呼び出しによって保存されたデータを使用して分類されたテーブルの現在の展開または折りたたみの状態を再構築します。 
+以前の[IMAPITable:: GetCollapseState](imapitable-getcollapsestate.md)メソッドの呼び出しによって保存されたデータを使用して、カテゴリ化されたテーブルの現在の展開状態または折りたたみ状態を再構築します。 
   
 ```cpp
 HRESULT SetCollapseState(
@@ -36,57 +36,57 @@ BOOKMARK FAR * lpbkLocation
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> 予約されています。0 にする必要があります。
+> 予約語0である必要があります。
     
  _cbCollapseState_
   
-> [in]_PbCollapseState_パラメーターが指す構造体のバイト数をカウントします。 
+> 順番_pbCollapseState_パラメーターによって参照されている構造体のバイト数。 
     
  _pbCollapseState_
   
-> [in]テーブル ビューを再構築するために必要なデータを含む構造体へのポインター。
+> 順番テーブルビューを再構築するために必要なデータを含む構造体へのポインター。
     
  _lpbkLocation_
   
-> [out]折りたたまれた状態または展開された状態の再構築するテーブル内の行を識別するブックマークへのポインター。 このブックマークと[IMAPITable::GetCollapseState](imapitable-getcollapsestate.md)への呼び出し内の_lpbInstanceKey_パラメーターで渡されるインスタンスのキーは、同じ行を識別します。 
+> 読み上げ折りたたまれているか展開された状態を示す、テーブル内の行を識別するブックマークへのポインター。 このブックマークとインスタンスキーが[IMAPITable:: GetCollapseState](imapitable-getcollapsestate.md)の呼び出しで_lpbInstanceKey_パラメーターに渡された場合、同じ行を識別します。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 分類されたテーブルの状態が正常に再構築されました。
+> カテゴリ化されたテーブルの状態が正常に再構築されました。
     
 MAPI_E_BUSY 
   
-> 別の操作は、操作の開始を防止する処理中です。 実行中の操作を完了できるか、それを停止する必要があります。
+> 操作が開始されないように、別の操作が進行中です。 進行中の操作が完了することを許可するか、停止する必要があります。
     
 MAPI_E_UNABLE_TO_COMPLETE 
   
-> テーブルでは、折りたたまれた状態または展開されたビューの再構築が完了できませんでした。
+> テーブルで、折りたたまれたビューまたは展開されたビューの再構築を完了できませんでした。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPITable::SetCollapseState**メソッドは、テーブル ビューの展開または折りたたみの状態を再確立します。 **SetCollapseState**および**GetCollapseState**が次のように協力しています。 
+**IMAPITable:: SetCollapseState**メソッドは、テーブルビューの展開または折りたたみ状態を再度確立します。 **SetCollapseState**と**GetCollapseState**は、次のように連携して動作します。 
   
-1. 分類されたテーブルの状態を変更しようとしていますが、すべての変更前の状態に関連するデータを保存するのには[IMAPITable::GetCollapseState](imapitable-getcollapsestate.md)が呼び出されます。 
+1. カテゴリ内のテーブルの状態が変更されるときに、 [IMAPITable:: GetCollapseState](imapitable-getcollapsestate.md)が呼び出され、変更前の状態に関するすべてのデータが保存されます。 
     
-2. テーブルのビューを保存した状態に復元するに**SetCollapseState**が呼び出されます。 **GetCollapseState**によって保存されたデータは、 **SetCollapseState**に渡されます。 **SetCollapseState**は、状態を復元するのにはそのデータを使用することです。 
+2. テーブルのビューを保存された状態に復元するには、 **SetCollapseState**が呼び出されます。 **GetCollapseState**によって保存されたデータは、 **SetCollapseState**に渡されます。 **SetCollapseState**は、そのデータを使用して状態を復元できます。 
     
-3. **SetCollapseState**は、出力パラメーターとして**GetCollapseState**への入力として渡されるインスタンスのキーとして同じ行を識別するブックマークを返します。
+3. **SetCollapseState**は、 **GetCollapseState**への入力として渡されたインスタンスキーと同じ行を識別するブックマークを出力パラメーターとして返します。
     
-分類されたテーブルの詳細については、[並べ替えや分類](sorting-and-categorization.md)を参照してください。 
+カテゴリ別テーブルの詳細については、「[並べ替えと分類](sorting-and-categorization.md)」を参照してください。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-並べ替え順序および制限、正確に同じである**GetCollapseState**の呼び出しの時と同様に確認する責任があります。 変更を行った結果を予測できるので**SetCollapseState**は呼び出されません。 **GetCollapseState**とし、 **SortTable** **SetCollapseState**を呼び出す前に、並べ替えのキーを変更するのなど、クライアントが呼び出す場合は、これが起こります。 安全のため、保存されたデータは復元を続行する前に有効なことを確認してください。 
+並べ替えの順序と制限が**GetCollapseState**呼び出し時とまったく同じであることを確認する責任があります。 変更が行われた場合、結果は予測できないため、 **SetCollapseState**を呼び出すことはできません。 これは、たとえば、クライアントが**GetCollapseState**を呼び出してから、 **SetCollapseState**を呼び出す前に並べ替えキーを変更するために、 **sorttable**を呼び出した場合に発生する可能性があります。 安全にするには、復元を続行する前に、保存したデータが有効であることを確認してください。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**SetCollapseState**を呼び出すには、する必要がありますが以前と呼ばれる**GetCollapseState**。 カテゴリを確立する並べ替え順序は、どちらのメソッドも同じにする必要があります。 並べ替え順が異なる場合、 **SetCollapseState**操作の結果は予測できません。 
+**SetCollapseState**を呼び出すには、以前に**GetCollapseState**と呼ばれていなければなりません。 カテゴリを確立する並べ替え順序は、両方の方法で同じである必要があります。 並べ替え順序が異なる場合、 **SetCollapseState**操作の結果は予測できません。 
   
 ## <a name="see-also"></a>関連項目
 

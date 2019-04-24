@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0ae21571-2299-6407-807c-428668bb6798
-description: 夏時間のすべての過去、現在、および将来のタイム ゾーン シフトの規則を含む全体のタイム ゾーンを表します。
-ms.openlocfilehash: f436216f5da882ea8ac144e6bd384e51e31abb8e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 夏時間のすべての過去、現在、および今後のタイムゾーンシフトルールを含むタイムゾーン全体を表します。
+ms.openlocfilehash: 5f7000ecc1fa602b330670c2ee1c39f673a11a65
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328295"
 ---
 # <a name="tzdefinition"></a>TZDEFINITION
 
-夏時間のすべての過去、現在、および将来のタイム ゾーン シフトの規則を含む全体のタイム ゾーンを表します。
+夏時間のすべての過去、現在、および今後のタイムゾーンシフトルールを含むタイムゾーン全体を表します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -29,29 +29,29 @@ typedef struct {
 } TZDEFINITION;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
-_wFlags_
+_wflags_
   
-> Windows レジストリ内のタイム ゾーンを表すキー名が有効であることを示します。 各タイム ゾーンは、常に、キーの名前で識別する必要があります、ためこのメンバーは常に値を持つ**TZDEFINITION_FLAG_VALID_KEYNAME**。
+> Windows レジストリのタイムゾーンを表すキー名が有効であることを示します。 各タイムゾーンは常にキー名によって識別される必要があるため、このメンバーの値は常に**TZDEFINITION_FLAG_VALID_KEYNAME**にする必要があります。
     
 _pwszKeyName_
   
-> Windows レジストリには、このタイム ゾーンのキーの名前です。 この名前はローカライズされませんする必要があります。 **MAX_PATH**、Windows ソフトウェア開発キット (SDK) のヘッダー ファイル windows.h で定義されている最大サイズがあります。 
+> Windows レジストリ内のこのタイムゾーンのキーの名前。 この名前はローカライズしないでください。 これは、windows Software Development Kit (SDK) ヘッダーファイル windows で定義されている**MAX_PATH**の最大サイズを持ちます。 
     
-_cRules_
+_crules しくみ_
   
-> この定義のタイム ゾーン規則の数です。 ルールの最大数は、 **TZ_MAX_RULES**です。 
+> この定義のタイムゾーンルールの数。 ルールの最大数は**TZ_MAX_RULES**です。 
     
-_rgRules_
+_rgrules_
   
-> シフトが発生する可能性を示す規則の配列。
+> シフトが発生するタイミングを記述するルールの配列です。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-*RgRules*では、少なくとも 1 つのルールをする必要があります。 *RgRules*の最初のルールは、最初のルールの*stStart*に関係なく、2 番目のルールが開始されるまでに使用するルールを使用すると見なされます。 
+*rgrules* 、少なくとも1つのルールが必要です。 [ *rgrules*の最初のルールは、最初のルールの*ststart*に関係なく、2番目のルールが開始されるまで使用するルールと見なされます。 
   
-規則は必要があります古いものから順に並べ替えられます。 以前の規則が新しいルールを起動したときに終了すると判断したため、ルール間の重複はありません。
+ルールは、最も古いものから [最新] に順に並べ替える必要があります。 ルール間に重複が許可されていないため、新しいルールが開始される前のルールが終了したと見なされます。
   
 ## <a name="see-also"></a>関連項目
 

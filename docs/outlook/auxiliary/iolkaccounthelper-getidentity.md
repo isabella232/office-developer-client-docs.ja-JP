@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: ea8b8f02-959f-cd71-9cfe-5ebdf4bae2bc
 description: アカウントのプロファイル名を取得します。
 ms.openlocfilehash: d725f309a29b026395e2795a49d31b45a4a49562
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322107"
 ---
 # <a name="iolkaccounthelpergetidentity"></a>IOlkAccountHelper::GetIdentity
 
@@ -33,23 +33,23 @@ HRESULT IOlkAccountHelper::GetIdentity (
 
 _pwszIdentity_
   
-> [in][out]プロファイルの名前。
+> 順番読み上げプロファイル名。
     
 _pcch_
   
-> [in][out]このメソッドを呼び出した時に (文字数) のサイズが割り当てられている_pwszIdentity_が含まれています。 関数が戻るとき、返されるプロファイル名の 0 終端文字を含めて、実際の長さが含まれています。 
+> 順番読み上げこのメソッドを呼び出すと、割り当てられている_pwszIdentity_のサイズ (文字数) が格納されます。 戻り時には、返されるプロファイル名の実際の長さ (0 終端文字を含む) が格納されます。 
     
 ## <a name="return-values"></a>戻り値
 
 |**HRESULT 型**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |呼び出しが成功しました。  <br/> |
-|E_OUTOFMEMORY  <br/> |返されるプロファイル名は、 _pwszIdentity_のサイズを超えています。  <br/> |
-|E_INVALIDARG  <br/> | _pcch_は、NULL です。  <br/> |
+|E_OUTOFMEMORY  <br/> |返されたプロファイル名が_pwszIdentity_のサイズを超えています。  <br/> |
+|E_INVALIDARG  <br/> | _pcch_が NULL です。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-_PwszIdentity_プロファイルの名前を保持するには小さすぎる場合は、返された場合は、設定できませんし、 _pcch_ _pwszIdentity_に必要なサイズをポイントします。
+_pwszIdentity_が小さすぎてプロファイル名を保持できない場合は、戻り値に設定されず、 _pcch_は_pwszIdentity_に必要なサイズをポイントします。
   
 ## <a name="see-also"></a>関連項目
 

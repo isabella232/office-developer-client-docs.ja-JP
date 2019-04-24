@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 102cce17-43ee-e313-3412-a72d6ee18fe6
 description: テキストの上に線を描画するかどうかを指定します。
-ms.openlocfilehash: 3ceb0f5bcb6f66098938e49ea5f176921d0c9808
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d5df39c2f12890d5fb4881346516abdb4f2b8099
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327049"
 ---
-# <a name="overline-cell-character-section"></a>[Overline] セル ([文字] セクション)
+# <a name="overline-cell-character-section"></a>[Overline] セル ([Character] セクション)
 
 テキストの上に線を描画するかどうかを指定します。
   
@@ -25,7 +25,7 @@ ms.locfileid: "19805946"
 |TRUE  <br/> |テキストの上に線を描画します。  <br/> |
 |FALSE  <br/> |テキストの上に線を描画しません。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 このセルの値は、[**テキスト**] ダイアログ ボックスを使用して設定することもできます (このダイアログ ボックスを開くには、[**ホーム**] タブで [**フォント**] 矢印をクリックします)。 
   
@@ -33,14 +33,14 @@ ms.locfileid: "19805946"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |Char.Overline [ *i* ]、 *i* = < 1 > 2 です。 3.  <br/> |
+|セル名:  <br/> |文字の上線 [ *i* ] ** = <1>、2。 3...  <br/> |
    
 プログラムから、インデックスによって [Overline] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionCharacter** <br/> |
-|行インデックス:  <br/> |**visRowCharacter** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+|行インデックス:  <br/> |**visRowCharacter** +  *i* = ** 0、1、2...  <br/> |
 |セル インデックス:  <br/> |**visCharacterOverline** <br/> |
    
 

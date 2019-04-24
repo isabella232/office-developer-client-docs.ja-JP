@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: d6341acc-c6ca-4605-93af-77230040339d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 86dfaa8fbc9ff24d38472f1339a22534086d890b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d142e19fc4721cec4dde0df7fc030a001121da63
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328883"
 ---
 # <a name="imapitablequerycolumns"></a>IMAPITable::QueryColumns
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルの列の一覧を返します。
+テーブルの列のリストを返します。
   
 ```cpp
 HRESULT QueryColumns(
@@ -34,21 +34,21 @@ LPSPropTagArray FAR * lpPropTagArray
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]のどの列の設定を示すフラグのビットマスクが返されます。 次のフラグを設定することができます。
+> 順番返される列セットを示すフラグのビットマスク。 次のフラグを設定できます。
     
 TBL_ALL_COLUMNS 
   
-> テーブルは、すべての利用可能な列を返す必要があります。
+> テーブルは使用可能なすべての列を返します。
     
  _lpPropTagArray_
   
-> [out]列のプロパティ タグを含む[SPropTagArray](sproptagarray.md)構造体へのポインターを設定します。 
+> 読み上げ列セットのプロパティタグを含む[SPropTagArray](sproptagarray.md)構造体へのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -56,33 +56,33 @@ S_OK
     
 MAPI_E_BUSY 
   
-> 別の操作により、列の進行状況の設定の取得操作の開始されます。 実行中の操作を完了できるか、それを停止する必要があります。
+> 別の操作が進行中であるため、列セットの取得操作を開始できません。 進行中の操作が完了することを許可するか、停止する必要があります。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-取得する場合に、 **IMAPITable::QueryColumns**メソッドを呼び出すことができます。 
+**IMAPITable:: querycolumns**メソッドを呼び出すと、次のものを取得できます。 
   
-- 既定の列をテーブルに設定します。
+- テーブルの既定の列セット。
     
-- 表については、 [IMAPITable::SetColumns](imapitable-setcolumns.md)メソッドの呼び出しによって設定されるを設定します。 
+- [IMAPITable:: SetColumns](imapitable-setcolumns.md)メソッドの呼び出しによって確立された、テーブルの現在の列セット。 
     
-- テーブル、使用可能な列は必ずしも現在のセットの一部の設定の完全な列。
+- テーブルの完全な列セット。使用可能な列ですが、現在のセットの一部ではありません。
     
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-TBL_ALL_COLUMNS フラグが設定されていない場合、 **IMAPITable::QueryColumns**は、テーブルの既定値または**IMAPITable::SetColumns**を呼び出すことで、テーブルが影響を受けてかどうかによって、現在の列のセットを返します。 **SetColumns**では、順序とテーブルの列のセット内の列の選択範囲を変更します。 
+TBL_ALL_COLUMNS フラグを設定しない場合、 **imapitable:: querycolumns**は、テーブルの既定または現在の列セットを返します。これは、テーブルが**IMAPITable:: SetColumns**の呼び出しの影響を受けたかどうかによって決まります。 **SetColumns**は、テーブルの列セット内の列の順序と選択範囲を変更します。 
   
-TBL_ALL_COLUMNS フラグを設定すると、すべての列がテーブルの列のセットにすることのできる**QueryColumns**が返されます。 
+TBL_ALL_COLUMNS フラグを設定した場合、 **querycolumns**は、テーブルの列セットに設定可能なすべての列を返します。 
   
-関数を呼び出して、 [MAPIFreeBuffer](mapifreebuffer.md) 、 _lpPropTagArray_パラメーターで示されるプロパティ タグ配列用のメモリを解放します。 
+[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して、 _lpPropTagArray_パラメーターによって示されるプロパティタグ配列のメモリを解放します。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::DoSetColumns  <br/> |MFCMAPI では、 **IMAPITable::QueryColumns**メソッドを使用して、現在の列をユーザーが編集できるように、テーブルの設定を取得します。  <br/> |
+|ContentsTableListCtrl  <br/> |CContentsTableListCtrl::D osetcolumns  <br/> |mfcmapi は、 **IMAPITable:: querycolumns**メソッドを使用して、テーブルの現在の列セットを取得し、ユーザーが編集できるようにします。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

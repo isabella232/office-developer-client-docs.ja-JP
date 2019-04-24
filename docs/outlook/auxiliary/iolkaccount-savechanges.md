@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 8f1ab61e-7d1c-50d5-ae21-8cb4b08d729c
-description: レジストリ ストアに書き込むことによって、アカウント オブジェクトに変更をコミットします。
-ms.openlocfilehash: ebff8af8af8a7512b577b36a2c31f76f3297a19d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: レジストリストアに書き込むことによって、アカウントオブジェクトへの変更をコミットします。
+ms.openlocfilehash: c23cefbbda62de9b7e159e500d95b8db5ff34ef4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322261"
 ---
 # <a name="iolkaccountsavechanges"></a>IOlkAccount::SaveChanges
 
-レジストリ ストアに書き込むことによって、アカウント オブジェクトに変更をコミットします。
+レジストリストアに書き込むことによって、アカウントオブジェクトへの変更をコミットします。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -38,13 +38,13 @@ _dwFlags_
 
 |**HRESULT 型**|**Description**|
 |:-----|:-----|
-|S_OK  <br/> |メソッドが正常に完了しました。  <br/> |
-|E_ACCT_NOT_FOUND  <br/> |指定されたアカウントを見つけることができません。  <br/> |
+|S_OK  <br/> |メソッドが正常に終了しました。  <br/> |
+|E_ACCT_NOT_FOUND  <br/> |指定されたアカウントが見つかりません。  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |アカウント マネージャーが使用するために初期化されていません。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-[IOlkAccount::SetProp](iolkaccount-setprop.md)を使用してアカウントのプロパティの値を変更した後は、このような変更を保存するのには**IOlkAccount::SaveChanges**を使用します。 
+[IOlkAccount:: setprop](iolkaccount-setprop.md)を使用して、account プロパティの値を変更した後、 **IOlkAccount:: SaveChanges**を使用してそのような変更を保存します。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: IMAPISupportDoConfigPropsheet
+title: imapisupportdoconfigpropsheet
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3899c49c-a0ec-4dca-92e8-e801cd4908cf
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 3b3499de9446c83cfc3b97b4d6b02e7c430b65f6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: cd8727104af694d456074614b5ea7c222c9b91b9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322373"
 ---
 # <a name="imapisupportdoconfigpropsheet"></a>IMAPISupport::DoConfigPropsheet
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-構成のプロパティ シートを表示します。
+構成プロパティシートを表示します。
   
 ```cpp
 HRESULT DoConfigPropsheet(
@@ -40,45 +40,45 @@ HRESULT DoConfigPropsheet(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulUIParam_
+ _uluiparam_
   
-> [in]プロパティ シートの親ウィンドウへのハンドル。
+> 順番プロパティシートの親ウィンドウへのハンドル。
     
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lpszTitle_
+ _lpsztitle_
   
-> [in]プロパティ シートのタイトルへのポインター。
+> 順番プロパティシートのタイトルへのポインター。
     
- _lpDisplayTable_
+ _lpdisplaytable_
   
-> [in]プロパティ シート上のコントロールを表示するを記述する表示のテーブルへのポインター。
+> 順番プロパティシートに表示されるコントロールを説明する表示テーブルへのポインター。
     
- _lpConfigData_
+ _lpconfigdata_
   
-> [in]プロパティ シートに表示される設定のプロパティにアクセスするために使用する[IMAPIProp](imapipropiunknown.md)実装へのポインター。 
+> 順番プロパティシートに表示される構成プロパティにアクセスするために使用される[imapiprop](imapipropiunknown.md)実装へのポインター。 
     
- _ulTopPage_
+ _ultoppage_
   
-> [in]プロパティ ・ シートの一番上の既定ページの 0 から始まるインデックス。
+> 順番プロパティシートの既定のトップページの0から始まるインデックス。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 構成のプロパティ シートが表示されます。
+> 構成プロパティシートが表示されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-サポートのすべてのオブジェクトの**IMAPISupport::DoConfigPropsheet**メソッドを実装します。 **DoConfigPropSheet**は、サービス プロバイダーとサービスのメッセージのプロパティを表示するための標準のユーザー インターフェイスを提供します。 ユーザーは、一貫性のある Windows のインターフェイスから利用できるように、すべての構成プロパティが表示されますのこの標準のダイアログ ボックスを使用してください。 
+**imapisupport::D oconfigpropsheet**メソッドは、すべてのサポートオブジェクトに実装されています。 **doconfigpropsheet**は、サービスプロバイダーとメッセージサービスのプロパティを表示するための標準的なユーザーインターフェイスを提供します。 ユーザーが一貫した Windows インターフェイスを利用できるようにするには、すべての構成プロパティでこの標準ダイアログボックスを使用する必要があります。 
   
-サービス プロバイダーは、 [IMAPIStatus::SettingsDialog](imapistatus-settingsdialog.md)メソッドまたはプロパティの詳細を表示するボタンですから、それぞれの実装の一部として**DoConfigPropSheet**を呼び出します。 メッセージ サービスは、メッセージ サービスのエントリ ポイント関数から**DoConfigPropSheet**を呼び出します。 
+サービスプロバイダーは、 [imapistatus:: settingsdialog](imapistatus-settingsdialog.md)メソッドの実装の一部として、またはプロパティの詳細を表示するために使用されるボタンから、 **doconfigpropsheet**を呼び出します。 メッセージサービスは、メッセージサービスエントリポイント関数から**doconfigpropsheet**を呼び出します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-[BuildDisplayTable](builddisplaytable.md)関数を呼び出すことによって、またはカスタム コードと、 _lpDisplayTable_パラメーターが指す、表示された表を作成できます。 
+_lpdisplaytable_パラメーターによって示される表示テーブルは、 [builddisplaytable](builddisplaytable.md)関数またはカスタムコードを呼び出すことによって作成できます。 
   
 ## <a name="see-also"></a>関連項目
 

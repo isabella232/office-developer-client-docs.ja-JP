@@ -1,5 +1,5 @@
 ---
-title: 必須レポート メッセージ プロパティ
+title: 必須のレポートメッセージのプロパティ
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,38 +8,38 @@ api_type:
 - COM
 ms.assetid: 68b14538-332d-4bdb-9a5c-8bb27272e089
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d42bcf531c09ca2486b0181b86bae72e223d2007
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 82e951a161445513a05ba78a06387d556fb8bc7d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328701"
 ---
-# <a name="required-report-message-properties"></a>必須レポート メッセージ プロパティ
+# <a name="required-report-message-properties"></a>必須のレポートメッセージのプロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-次の表では、クライアントが期待できますを参照してくださいサポートされているレポートのメッセージのプロパティについて説明します。
+次の表では、クライアントがレポートメッセージでサポートされていると予想されるプロパティについて説明します。
   
 |**プロパティ**|**説明**|
 |:-----|:-----|
-|**PR_ORIGINAL_DISPLAY_BCC**([PidTagOriginalDisplayBcc](pidtagoriginaldisplaybcc-canonical-property.md))  <br/> **PR_ORIGINAL_DISPLAY_CC**([PidTagOriginalDisplayCc](pidtagoriginaldisplaycc-canonical-property.md))  <br/> **PR_ORIGINAL_DISPLAY_TO**([PidTagOriginalDisplayTo](pidtagoriginaldisplayto-canonical-property.md))  <br/> |MAPI では通常、レポートの作成者によって設定されます。  <br/> |
+|**PR_ORIGINAL_DISPLAY_BCC**([PidTagOriginalDisplayBcc](pidtagoriginaldisplaybcc-canonical-property.md))  <br/> **PR_ORIGINAL_DISPLAY_CC**([PidTagOriginalDisplayCc](pidtagoriginaldisplaycc-canonical-property.md))  <br/> **PR_ORIGINAL_DISPLAY_TO**([PidTagOriginalDisplayTo](pidtagoriginaldisplayto-canonical-property.md))  <br/> |レポートの作成者 (通常は MAPI) によって設定されます。  <br/> |
 |||
-|**PR_ORIGINAL_SUBJECT**([PidTagOriginalSubject](pidtagoriginalsubject-canonical-property.md))  <br/> |MAPI では通常、レポートの作成者によって設定されます。  <br/> |
-|**PR_ORIGINAL_SUBMIT_TIME**([PidTagOriginalSubmitTime](pidtagoriginalsubmittime-canonical-property.md))  <br/> |MAPI では通常、レポートの作成者によって設定されます。  <br/> |
-|**PR_CONVERSATION_INDEX**([PidTagConversationIndex](pidtagconversationindex-canonical-property.md))  <br/> **PR_CONVERSATION_TOPIC**([PidTagConversationTopic](pidtagconversationtopic-canonical-property.md))  <br/> |MAPI では通常、レポートの作成者によって設定されます。  <br/> |
+|**PR_ORIGINAL_SUBJECT**([PidTagOriginalSubject](pidtagoriginalsubject-canonical-property.md))  <br/> |レポートの作成者 (通常は MAPI) によって設定されます。  <br/> |
+|**PR_ORIGINAL_SUBMIT_TIME**([PidTagOriginalSubmitTime](pidtagoriginalsubmittime-canonical-property.md))  <br/> |レポートの作成者 (通常は MAPI) によって設定されます。  <br/> |
+|**PR_CONVERSATION_INDEX** ([PidTagConversationIndex](pidtagconversationindex-canonical-property.md))  <br/> **PR_CONVERSATION_TOPIC** ([PidTagConversationTopic](pidtagconversationtopic-canonical-property.md))  <br/> |レポートの作成者 (通常は MAPI) によって設定されます。  <br/> |
 |||
-|**PR_MESSAGE_CLASS**([PidTagMessageClass](pidtagmessageclass-canonical-property.md))  <br/> |MAPI では通常、レポートの作成者によって設定されます。  <br/> |
-|**PR_REPORT_TEXT**([PidTagReportText](pidtagreporttext-canonical-property.md))  <br/> |MAPI では通常、レポートの作成者によって設定されます。  <br/> |
-|**PR_BODY**([PidTagBody](pidtagbody-canonical-property.md))  <br/> |レポートが表示される前に、クライアントで設定します。  <br/> |
-|**PR_REPORT_TIME**([PidTagReportTime](pidtagreporttime-canonical-property.md))  <br/> |MAPI では通常、レポートの作成者によって設定されます。  <br/> |
-|**PR_ORIGINAL_DELIVERY_TIME**([PidTagOriginalDeliveryTime](pidtagoriginaldeliverytime-canonical-property.md))  <br/> |MAPI では通常、レポートの作成者によって設定されます。 読み取りステータス レポートのみ。  <br/> |
-|**あるの PR_SUBJECT**([PidTagSubject](pidtagsubject-canonical-property.md))  <br/> |レポートが表示される前に、クライアントで設定します。  <br/> |
-|**PR_MESSAGE_DELIVERY_TIME**([PidTagMessageDeliveryTime](pidtagmessagedeliverytime-canonical-property.md))  <br/> |MAPI では通常、レポートの作成者によって設定されます。  <br/> |
-|**PR_REPORT_TAG**([PidTagReportTag](pidtagreporttag-canonical-property.md))  <br/> |MAPI では通常、レポートの作成者によって設定されます。  <br/> |
-|**PR_SEARCH_KEY**([PidTagSearchKey](pidtagsearchkey-canonical-property.md))  <br/> |MAPI では通常、レポートの作成者によって設定されます。  <br/> |
-|**PR_SENDER_ADDRTYPE**([PidTagSenderAddressType](pidtagsenderaddresstype-canonical-property.md))  <br/> **PR_SENDER_EMAIL_ADDRESS**([PidTagSenderEmailAddress](pidtagsenderemailaddress-canonical-property.md))  <br/> **PR_SENDER_ENTRYID**([PidTagSenderEntryId](pidtagsenderentryid-canonical-property.md))  <br/> **PR_SENDER_NAME**([PidTagSenderName](pidtagsendername-canonical-property.md))  <br/> **PR_SENDER_SEARCH_KEY**([PidTagSenderSearchKey](pidtagsendersearchkey-canonical-property.md))  <br/> |MAPI では通常、レポートの作成者によって設定されます。  <br/> |
+|**PR_MESSAGE_CLASS**([PidTagMessageClass](pidtagmessageclass-canonical-property.md))  <br/> |レポートの作成者 (通常は MAPI) によって設定されます。  <br/> |
+|**PR_REPORT_TEXT**([PidTagReportText](pidtagreporttext-canonical-property.md))  <br/> |レポートの作成者 (通常は MAPI) によって設定されます。  <br/> |
+|**PR_BODY**([PidTagBody](pidtagbody-canonical-property.md))  <br/> |レポートが表示される前にクライアントによって設定されます。  <br/> |
+|**PR_REPORT_TIME**([PidTagReportTime](pidtagreporttime-canonical-property.md))  <br/> |レポートの作成者 (通常は MAPI) によって設定されます。  <br/> |
+|**PR_ORIGINAL_DELIVERY_TIME**([PidTagOriginalDeliveryTime](pidtagoriginaldeliverytime-canonical-property.md))  <br/> |レポートの作成者 (通常は MAPI) によって設定されます。 読み取り状態レポートの場合のみ。  <br/> |
+|**PR_SUBJECT**([PidTagSubject](pidtagsubject-canonical-property.md))  <br/> |レポートが表示される前にクライアントによって設定されます。  <br/> |
+|**PR_MESSAGE_DELIVERY_TIME**([PidTagMessageDeliveryTime](pidtagmessagedeliverytime-canonical-property.md))  <br/> |レポートの作成者 (通常は MAPI) によって設定されます。  <br/> |
+|**PR_REPORT_TAG**([PidTagReportTag](pidtagreporttag-canonical-property.md))  <br/> |レポートの作成者 (通常は MAPI) によって設定されます。  <br/> |
+|**PR_SEARCH_KEY**([PidTagSearchKey](pidtagsearchkey-canonical-property.md))  <br/> |レポートの作成者 (通常は MAPI) によって設定されます。  <br/> |
+|**PR_SENDER_ADDRTYPE**([PidTagSenderAddressType](pidtagsenderaddresstype-canonical-property.md))  <br/> **PR_SENDER_EMAIL_ADDRESS**([PidTagSenderEmailAddress](pidtagsenderemailaddress-canonical-property.md))  <br/> **PR_SENDER_ENTRYID**([PidTagSenderEntryId](pidtagsenderentryid-canonical-property.md))  <br/> **PR_SENDER_NAME**([PidTagSenderName](pidtagsendername-canonical-property.md))  <br/> **PR_SENDER_SEARCH_KEY**([PidTagSenderSearchKey](pidtagsendersearchkey-canonical-property.md))  <br/> |レポートの作成者 (通常は MAPI) によって設定されます。  <br/> |
    
 

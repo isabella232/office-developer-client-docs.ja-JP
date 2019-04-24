@@ -1,5 +1,5 @@
 ---
-title: IMAPISupportDetails
+title: imapisupportdetails
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1a62efa2-dd6b-4acb-a760-defa601c20c9
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 3c1bfccf635b96dd0744d888e69b4af5b8df0fa2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: bdc57a6e951e54640fe3c638977c6a5f16986e68
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322359"
 ---
 # <a name="imapisupportdetails"></a>IMAPISupport::Details
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-特定のアドレス帳のエントリに関する詳細情報を表示するダイアログ ボックスが表示されます。
+特定のアドレス帳エントリの詳細を表示するダイアログボックスを表示します。
   
 ```cpp
 HRESULT Details(
@@ -43,63 +43,63 @@ HRESULT Details(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpulUIParam_
+ _l出 uiparam_
   
-> [out]返されたダイアログ ボックスの親ウィンドウへのハンドルへのポインター。
+> 読み上げ返されたダイアログボックスの親ウィンドウへのハンドルへのポインター。
     
  _lpfnDismiss_
   
-> [in][DISMISSMODELESS](dismissmodeless.md)のプロトタイプでは関数へのポインター。 このメンバーは、DIALOG_SDI フラグが設定されている中で示されるように、モードレス ダイアログ ボックスのバージョンにのみ適用されます。 MAPI 関数を呼び出す**DISMISSMODELESS**ユーザーが、アドレスのモードレス ダイアログ ボックスを閉じると、 **IMAPISupport::Details**ダイアログ ボックスがアクティブではないことを呼び出しているクライアントに通知します。 
+> 順番[DISMISSMODELESS](dismissmodeless.md)プロトタイプに基づく関数へのポインター、または NULL。 このメンバーは、DIALOG_SDI フラグが設定されている場合のように、ダイアログボックスのモードレスバージョンにのみ適用されます。 MAPI は、ユーザーがモードレスアドレスダイアログボックスを閉じたときに**DISMISSMODELESS**関数を呼び出し、imapisupport を呼び出していることをクライアントに通知し**ます。 etails**は、このダイアログボックスがアクティブでなくなったことを示します。 
     
  _lpvDismissContext_
   
-> [in]_LpfnDismiss_パラメーターが指す、 **DISMISSMODELESS**関数に渡すコンテキスト情報へのポインターです。 このパラメーターは、 _ulFlags_パラメーターに DIALOG_SDI フラグを含めることで、モードレス ダイアログ ボックスのバージョンにのみ適用されます。 
+> 順番_lpfnDismiss_パラメーターが指す**DISMISSMODELESS**関数に渡すコンテキスト情報へのポインター。 このパラメーターは、DIALOG_SDI フラグを_ulflags_パラメーターに含めることによって、ダイアログボックスのモードレスバージョンにのみ適用されます。 
     
  _cbEntryID_
   
-> [in]_LpEntryID_パラメーターで指定されたエントリの識別子のバイト数です。 
+> 順番_lな tryid_パラメーターで指定されたエントリ識別子のバイト数。 
     
- _lpEntryID_
+ _lて tryid_
   
-> [in]詳細情報が表示されているエントリの識別子へのポインター。
+> 順番詳細が表示されるエントリ識別子へのポインター。
     
- _lpfButtonCallback_
+ _lpfbuttoncallback_
   
-> [in][LPFNBUTTON](lpfnbutton.md)関数のプロトタイプでは関数へのポインター。 **LPFNBUTTON**関数では、[詳細情報] ダイアログ ボックスにボタンを追加します。 
+> 順番[LPFNBUTTON](lpfnbutton.md)関数プロトタイプに基づく関数へのポインター。 **LPFNBUTTON**関数は、[詳細] ダイアログボックスにボタンを追加します。 
     
- _lpvButtonContext_
+ _lpvbuttoncontext_
   
-> [in]_LpfButtonCallback_パラメーターで指定された関数のパラメーターとして使用するデータへのポインター。 
+> 順番_lpfbuttoncallback_パラメーターで指定された関数のパラメーターとして使用されるデータへのポインター。 
     
- _lpszButtonText_
+ _lpszbuttontext_
   
-> [in]そのボタンは拡張可能な場合は、[追加] ボタンに適用するテキストを含む文字列へのポインター。 _LpszButtonText_パラメーターは、拡張ボタンは、必要でない場合、NULL にすることがあります。 
+> 順番追加されたボタンが拡張可能な場合に、そのボタンに適用されるテキストを含む文字列へのポインター。 拡張ボタンを必要としない場合は、 _lpszbuttontext_パラメーターを NULL に設定する必要があります。 
     
  _ulFlags_
   
-> [in]_LpszButtonText_パラメーターのテキストの種類を制御するフラグのビットマスクです。 次のフラグを設定することができます。 
+> 順番_lpszbuttontext_パラメーターのテキストの種類を制御するフラグのビットマスク。 次のフラグを設定できます。 
     
 DIALOG_MODAL
   
-> 共通のアドレス] ダイアログ ボックスのモーダル バージョンを表示します。 このフラグは、DIALOG_SDI と相互に排他的です。
+> [共通アドレス] ダイアログボックスのモーダルバージョンを表示します。 このフラグは、DIALOG_SDI とは相互に排他的です。
     
 DIALOG_SDI
   
->  モードレスのバージョンの共通のアドレス] ダイアログ ボックスを表示します。 このフラグは、DIALOG_MODAL と相互に排他的です。 
+>  [共通アドレス] ダイアログボックスのモードレスバージョンを表示します。 このフラグは、DIALOG_MODAL とは相互に排他的です。 
     
 MAPI_UNICODE 
   
-> 渡された文字列は、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。
+> 渡された文字列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 詳細] ダイアログ ボックスは、アドレス帳のエントリを正常に表示されました。
+> アドレス帳エントリに対して [詳細] ダイアログボックスが正常に表示されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-アドレス帳プロバイダーのサポート オブジェクトの**IMAPISupport::Details**メソッドを実装します。 アドレス帳プロバイダーは、アドレス帳の特定のエントリについて説明するダイアログ ボックスを表示する**詳細情報**を呼び出します。 ボタンを追加する、クライアントの定義] ダイアログ ボックスには、 _lpfButtonCallback_、 _lpvButtonContext_、および_lpszButtonText_パラメーターを使用できます。 ボタンがクリックされると、MAPI は、 _lpvButtonContext_のボタンとデータの両方のエントリ id を渡すこと_lpfButtonCallback_で指定されたコールバック関数を呼び出します。 拡張ボタンが必要でない場合_lpszButtonText_は NULL である必要があります。 
+**imapisupport::D etails**メソッドは、アドレス帳プロバイダーサポートオブジェクトに対して実装されています。 アドレス帳プロバイダーは、アドレス帳の特定のエントリに関する詳細情報を表示するダイアログボックスを表示するために呼び出す**詳細情報**を提供します。 _lpfbuttoncallback_、 _lpfbuttoncallback_、および_lpszbuttontext_パラメーターを使用して、クライアント定義ボタンをダイアログボックスに追加できます。 ボタンがクリックされると、MAPI は_lpfbuttoncallback_が指すコールバック関数を呼び出し、ボタンのエントリ識別子と_lpfbuttoncallback_のデータの両方を渡します。 拡張ボタンが必要ない場合は、 _lpszbuttontext_を NULL にする必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

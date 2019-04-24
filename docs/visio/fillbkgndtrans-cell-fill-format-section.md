@@ -9,24 +9,22 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 87065350-ba9a-aae8-47f6-f263f6700d08
 description: 図形の塗りつぶしのパターンに対して、背景 (塗りつぶし部分) に適用される透過性レベルを指定します。
-ms.openlocfilehash: c8dcec8cc0bdb87700bb85754298ec4755bae7d0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 64c5d09fb18f089769e025893b9fac8b1878fca1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322485"
 ---
-# <a name="fillbkgndtrans-cell-fill-format-section"></a>[FillBkgndTrans] セル ([塗りつぶしの書式設定] セクション)
+# <a name="fillbkgndtrans-cell-fill-format-section"></a>[FillBkgndTrans] セル ([Fill Format] セクション)
 
 図形の塗りつぶしのパターンに対して、背景 (塗りつぶし部分) に適用される透過性レベルを指定します。
   
 |**値**|**説明**|
 |:-----|:-----|
-|
-          0 ～ 100
-  <br/> |透過性をパーセントで表します。既定値は 0% (完全に不透明) です。  <br/> |
+|0 ～ 100  <br/> |透過性をパーセントで表します。既定値は 0% (完全に不透明) です。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 値は、最も近い 0.5% 単位の値に丸められます。値 100% は完全な透明を表します。塗りつぶしが完全に透明な図形は、図面ページでは塗りつぶしがない図形と同じように表示されますが、ページ上の他のオブジェクトに対しては、透過性が 0% の場合と同様な状態で相互に影響し合います。
   
@@ -36,7 +34,7 @@ ms.locfileid: "19805378"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |FillBkgndTrans  <br/> |
+|セル名:  <br/> |[fillbkgndtrans]  <br/> |
    
 プログラムから、インデックスによって [FillBkgndTrans] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

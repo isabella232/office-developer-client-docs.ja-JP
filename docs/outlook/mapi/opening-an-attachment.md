@@ -7,49 +7,49 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c0350698-5304-40cd-903d-279471f3c226
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 768528c59d7aa5888c0d0427f86b8be8e1d33669
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 39da1e02622d81cd12a2d4673b827d49bf418128
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326174"
 ---
 # <a name="opening-an-attachment"></a>添付ファイルを開く
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-添付ファイルを開くには、そのデータを表示する必要があります。 たとえば、添付ファイルを開くと、ファイルの内容が表示されます。 その添付ファイルの番号を使用して添付ファイルを開くが、メッセージとフォルダーを開くと、エントリの識別子を使用して、- **PR_ATTACH_NUM**のプロパティです。 詳細については、 **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) を参照してください。 添付ファイル番号は、メッセージの添付ファイル テーブルを使用できます。
+添付ファイルを開くには、そのデータを表示する必要があります。 たとえば、添付ファイルが開かれると、ファイルの内容が表示されます。 メッセージとフォルダーはエントリ識別子を使用して開かれますが、添付ファイルは、添付ファイルの番号 ( **PR_ATTACH_NUM**プロパティ) を使用して開かれます。 詳細については、「 **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md))」を参照してください。 添付ファイルの番号は、メッセージの添付ファイルテーブルを通じて使用できます。
   
-### <a name="to-open-all-attachments-in-a-message"></a>メッセージですべての添付ファイルを開く
+### <a name="to-open-all-attachments-in-a-message"></a>メッセージ内のすべての添付ファイルを開くには
   
-1. その添付ファイル テーブルにアクセスするためのメッセージの[IMessage::GetAttachmentTable](imessage-getattachmenttable.md)メソッドを呼び出します。 
+1. メッセージの[IMessage:: getattachmenttable](imessage-getattachmenttable.md)メソッドを呼び出して、その添付ファイルテーブルにアクセスします。 
     
-2. テーブル内のすべての行を取得するために[HrQueryAllRows](hrqueryallrows.md)を呼び出します。 
+2. [hrqueryallrows](hrqueryallrows.md)を呼び出して、テーブル内のすべての行を取得します。 
     
-3. 行ごと。 
+3. 各行の場合: 
     
-    1. メッセージの**IMessage::OpenAttach**メソッドの呼び出しで [ **PR_ATTACH_NUM** ] 列で表される添付ファイルの数を渡すことによって、添付ファイルを開きます。 詳細については、 [IMessage::OpenAttach](imessage-openattach.md)を参照してください。 **OpenAttach**は、添付ファイルのプロパティへのアクセスを提供する**IAttach**の実装へのポインターを返します。 
+    1. 添付ファイルを開くには、 **PR_ATTACH_NUM**列で表された添付ファイルの番号を、メッセージの**IMessage:: openattach**メソッドへの呼び出しで渡します。 詳細については、「 [IMessage:: openattach](imessage-openattach.md)」を参照してください。 **openattach**は、添付ファイルのプロパティへのアクセスを提供する**iattach**実装へのポインターを返します。 
         
-    2. その**PR_ATTACH_METHOD**プロパティを取得するために、添付ファイルの**IMAPIProp::GetProps**メソッドを呼び出します。 詳細については、 [IMAPIProp::GetProps](imapiprop-getprops.md)と**PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) を参照してください。
+    2. 添付ファイルの**imapiprop:: GetProps**メソッドを呼び出して、その**PR_ATTACH_METHOD**プロパティを取得します。 詳細については、「 [imapiprop:: GetProps](imapiprop-getprops.md) and **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md))」を参照してください。
         
-    3. **PR_ATTACH_METHOD**は、ATTACH_BY_REF_ONLY に設定されている場合は、 **PR_ATTACH_PATHNAME**プロパティを取得するために**IMAPIProp::GetProps**を呼び出します。 詳細については、 **PR_ATTACH_PATHNAME** ([PidTagAttachPathname](pidtagattachpathname-canonical-property.md)) を参照してください。
+    3. **PR_ATTACH_METHOD**が ATTACH_BY_REF_ONLY に設定されている場合は、 **PR_ATTACH_PATHNAME**プロパティを取得するために**imapiprop:: GetProps**を呼び出します。 詳細については、「 **PR_ATTACH_PATHNAME** ([PidTagAttachPathname](pidtagattachpathname-canonical-property.md))」を参照してください。
         
-    4. 場合**PR\_ATTACH_METHOD**アタッチに設定されて\_BY_VALUE を開くには**IMAPIProp::OpenProperty**を呼び出し、 **PR\_ATTACH_DATA_BIN** **IStream**インターフェイスを使用してプロパティです。 この手順を次のサンプル コードを参照してください。 詳細については、 [IMAPIProp::OpenProperty](imapiprop-openproperty.md)と**PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) を参照してください。
+    4. **pr\_ATTACH_METHOD**が BY_VALUE を接続\_するように設定されている場合は、 **imapiprop:: openproperty**を呼び出して、 **IStream**インターフェイスで**PR\_ATTACH_DATA_BIN**プロパティを開きます。 この手順の次のサンプルコードを参照してください。 詳細については、「 [imapiprop:: openproperty](imapiprop-openproperty.md) and **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md))」を参照してください。
         
-    5. **PR_ATTACH_METHOD**は、ATTACH_OLE と、添付ファイルに設定されている場合は、OLE 2 オブジェクトです。 
+    5. **PR_ATTACH_METHOD**が ATTACH_OLE に設定されていて、添付ファイルが OLE 2 オブジェクトの場合は、次のようになります。 
         
-        1. 開くには**IMAPIProp::OpenProperty**を呼び出し、 **PR\_ATTACH_DATA_OBJ** **IStreamDocfile**インタ フェースを持つプロパティです。 **IStream**を最小限のオーバーヘッドでの構造化ストレージの実装であるために、このインターフェイスを使用しようとしてください。 詳細については、 **PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) を参照してください。
+        1. **IStreamDocfile**インターフェイスを使用して**PR\_ATTACH_DATA_OBJ**プロパティを開くには、 **imapiprop:: openproperty**を呼び出します。 このインターフェイスは、少なくともオーバーヘッドが少ない構造化ストレージで機能することが保証される**IStream**の実装であるため、使用してみてください。 詳細については、「 **PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md))」を参照してください。
             
-        2. **OpenProperty**呼び出しが失敗した場合は、 **IStreamDocfile**インタ フェースを持つ**PR_ATTACH_DATA_BIN**プロパティを取得するには、もう一度を呼び出します。 
+        2. **openproperty**呼び出しが失敗した場合は、 **IStreamDocfile**インターフェイスを使用して**PR_ATTACH_DATA_BIN**プロパティを取得するために、もう一度呼び出します。 
             
-        3. この 2 番目の**OpenProperty**呼び出しが失敗した場合、もう一度**PR_ATTACH_DATA_OBJ**を取得するために**OpenProperty**をコールします。 ただし、 **IStreamDocfile**を指定するのではなく、 **IStorage**インターフェイスを指定します。 
+        3. この2番目の**openproperty**呼び出しが失敗した場合は、 **openproperty**を呼び出して**PR_ATTACH_DATA_OBJ**を取得してください。 ただし、 **IStreamDocfile**を指定するのではなく、 **IStorage**インターフェイスを指定します。 
     
-4. **PR_ATTACH_METHOD**は、ATTACH_EMBEDDED_MSG に設定されている場合は、エラーを格納する**PR_ATTACH_DATA_OBJ**の値の異常なことはできません。 テーブルの作成者とすることはありませんを返すオブジェクトの型が一致するためです。 添付されたメッセージへのポインターを取得するには、 **IMessage::OpenAttach**を使用して添付ファイルを開きます。 その**IMAPIProp::OpenProperty**メソッドを呼び出すことによって添付ファイルのデータにアクセスします。 詳細については、 [IMessage::OpenAttach](imessage-openattach.md)および[IMAPIProp::OpenProperty](imapiprop-openproperty.md)を参照してください。
+4. **PR_ATTACH_METHOD**が ATTACH_EMBEDDED_MSG に設定されている場合は、 **PR_ATTACH_DATA_OBJ**の値がエラーを含むことが珍しくありません。 これは、ユーザーとテーブルの実装者が、返すオブジェクトの種類について合意することができないためです。 添付されたメッセージへのポインターを取得するには、 **IMessage:: openattach**を使用して添付ファイルを開きます。 その後、 **imapiprop:: openproperty**メソッドを呼び出して、添付ファイルデータにアクセスします。 詳細については、「 [IMessage:: openattach](imessage-openattach.md) and [imapiprop:: openattach](imapiprop-openproperty.md)」を参照してください。
     
-添付ファイルが読み取り/書き込みまたは読み取り専用モードで開かれているを要求することができます。 読み取り専用では、既定のモード、およびメッセージ ストア プロバイダーの多くは、クライアントの要求に関係なく、このモードですべての添付ファイルを開きます。 メッセージ ストア プロバイダーが最高レベルのアクセスが与えられているアクセス権のレベルを決定するのには、開いている添付ファイルの**PR_ACCESS_LEVEL**プロパティを取得し、そのことができますを与えることを要求するのには MAPI_BEST_ACCESS フラグを渡します。 詳細については、 **PR_ACCESS_LEVEL** ([PidTagAccessLevel](pidtagaccesslevel-canonical-property.md)) を参照してください。
+読み取り/書き込みモードまたは読み取り専用モードで添付ファイルを開くように要求することができます。 読み取り専用は既定のモードで、多くのメッセージストアプロバイダーは、要求されたクライアントに関係なく、すべての添付ファイルをこのモードで開きます。 MAPI_BEST_ACCESS フラグを渡して、メッセージストアプロバイダーが最高レベルのアクセス権を付与することを要求し、開いている添付ファイルの**PR_ACCESS_LEVEL**プロパティを取得して、実際に付与されているアクセスレベルを判断します。 詳細については、「 **PR_ACCESS_LEVEL** ([PidTagAccessLevel](pidtagaccesslevel-canonical-property.md))」を参照してください。
   
-次の例では、添付ファイルのデータを開く方法を示しています**PR\_ATTACH_DATA_BIN**プロパティ。 2 つのストリームへのポインターが割り当てられます。 ファイルと添付ファイルのいずれかのいずれかです。 **OpenStreamOnFile**関数では、ファイル ストリームが読み取り専用モードで開きます。 添付ファイルの**IMAPIProp::OpenProperty**メソッドを呼び出すには、読み取り/書き込みモードで添付ファイルのストリームを開きます。 詳細については、 **PR_ATTACH_DATA_BIN**、 [OpenStreamOnFile](openstreamonfile.md)、および[IMAPIProp::OpenProperty](imapiprop-openproperty.md)を参照してください。 コードは、ファイル ストリームから添付ファイルのストリームにコピーし、両方のストリームを解放します。
+次の例は、添付ファイルの**PR\_ATTACH_DATA_BIN**プロパティでデータを開く方法を示しています。 2つのストリームにポインターを割り当てます。1つはファイル用、もう1つは添付ファイル用です。 **openstreamonfile**関数は、ファイルストリームを読み取り専用モードで開きます。 添付ファイルの**imapiprop:: openproperty**メソッドを呼び出すと、添付ファイルストリームが読み取り/書き込みモードで開きます。 詳細については、「 **PR_ATTACH_DATA_BIN**」、「 [openstreamonfile](openstreamonfile.md)」、および「 [imapiprop:: openproperty](imapiprop-openproperty.md)」を参照してください。 その後、コードはファイルストリームから添付ファイルストリームにコピーし、両方のストリームを解放します。
   
 ```cpp
 LPSTREAM pStreamFile, pStreamAtt;

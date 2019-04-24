@@ -1,5 +1,5 @@
 ---
-title: IMAPIStatusChangePassword
+title: imapistatuschangepassword
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0cd1026a-342d-4d05-91ed-d3decced5bf3
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: e09a1de5f85edd7e352a090c573fed9ca16f017f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 2c824b6b994bfb31b5e6ac7fed0eeae88c47cdba
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328281"
 ---
 # <a name="imapistatuschangepassword"></a>IMAPIStatus::ChangePassword
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ユーザー インターフェイスを表示せずには、サービス プロバイダーのパスワードを変更します。 サービス プロバイダーを実装する状態オブジェクトには、このメソッドはサポートされて必要に応じてします。
+ユーザーインターフェイスを表示せずに、サービスプロバイダーのパスワードを変更します。 このメソッドは、サービスプロバイダーが実装する status オブジェクトで必要に応じてサポートされます。
   
 ```cpp
 HRESULT ChangePassword(
@@ -39,43 +39,43 @@ HRESULT ChangePassword(
 
  _lpOldPass_
   
-> [in]古いパスワードへのポインター。
+> 順番古いパスワードへのポインター。
     
- _lpNewPass_
+ _lpnewpass_
   
-> [in]新しいパスワードへのポインター。
+> 順番新しいパスワードへのポインター。
     
  _ulFlags_
   
-> [in]パスワードの形式を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番パスワードの形式を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> パスワードは、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式のパスワードです。
+> パスワードは Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、パスワードは ANSI 形式になります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> パスワードの変更が正常に完了しました。
+> パスワードの変更に成功しました。
     
 MAPI_E_NO_ACCESS 
   
-> _LpOldPass_で指定された古いパスワードが正しくありません。 
+> _lpOldPass_が指す古いパスワードが無効です。 
     
 MAPI_E_NO_SUPPORT 
   
-> 状態オブジェクトは、この操作をサポートしていません状態オブジェクトの**PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) のプロパティに STATUS_CHANGE_PASSWORD フラグがない場合で示される。
+> status オブジェクトの**PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) プロパティに STATUS_CHANGE_PASSWORD フラグが設定されていない場合、status オブジェクトはこの操作をサポートしていません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-ステータスのすべてのオブジェクトは、 **IMAPIStatus::ChangePassword**メソッドをサポートします。 クライアントがパスワードの入力を必要とするサービス ・ プロバイダーでのみサポートされています。 MAPI が実装している状態のオブジェクトの [なし] は、パスワードの変更操作をサポートします。 
+すべてのステータスオブジェクトが**imapistatus:: ChangePassword**メソッドをサポートするわけではありません。 クライアントがパスワードを入力する必要があるサービスプロバイダーのみがサポートしています。 MAPI で実装されているステータスオブジェクトは、パスワードの変更操作をサポートしていません。 
   
- **パスワードの変更**は、ユーザーの介入なしプログラムで、パスワードを変更します。 
+ **ChangePassword**ユーザーによる操作なしで、プログラムによってパスワードを変更します。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-リモート トランスポート プロバイダーは、ここで指定されている**パスワードの変更**を実装します。 特別な考慮事項はありません。 
+リモートトランスポートプロバイダーは、ここで指定したように**ChangePassword**を実装します。 特別な考慮事項はありません。 
   
 ## <a name="see-also"></a>関連項目
 

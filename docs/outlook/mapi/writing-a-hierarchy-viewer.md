@@ -7,48 +7,48 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 4c939a8c-8148-4add-b181-5a12e6d32309
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 6ff394c95dfa3166d39dcba4b0c577dcfac7b8d8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 5f6ebd20afc3b8d029fa7c632c55982862664055
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32325642"
 ---
 # <a name="writing-a-hierarchy-viewer"></a>階層ビューアーの作成
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-階層ビューアーは、フォルダーとアドレス帳コンテナーの階層テーブルを表示するために使用されるユーザー インターフェイス コンポーネントです。 階層ビューアーでは、さまざまなレベル、オン ・ デマンドでの各レベルを変更することで、階層のメンバーを表示できます。
+階層ビューアーは、フォルダーとアドレス帳のコンテナー階層テーブルを表示するために使用されるユーザーインターフェイスコンポーネントです。 階層の閲覧者は、さまざまなレベルで階層のメンバーを表示したり、必要に応じて各レベルを拡張して縮小したりできます。
   
-コンテナーのプロパティ、 **PR_DEPTH** ([PidTagDepth](pidtagdepth-canonical-property.md)) は、階層のメンバーを表示するレベルを制御します。 最上位のアドレス帳コンテナーまたはフォルダーを表すエントリがある、 **PR_DEPTH**プロパティを 0 に設定します。 このプロパティの値は連続したレベルにあるエントリを順に増加します。 ユーザーが最上位のコンテナーを展開し、表示するを選択すると**PR_DEPTH**を持つすべてのコンテナーは 1 に設定します。 ユーザーには、これらのサブコンテナーのいずれかが拡張されと 2、 **PR_DEPTH**のセットを使用してコンテナーを表示するように。 
+container プロパティ**PR_DEPTH** ([PidTagDepth](pidtagdepth-canonical-property.md)) は、階層のメンバーが表示されるレベルを制御します。 トップレベルのアドレス帳のコンテナーまたはフォルダーを表すエントリは、 **PR_DEPTH**プロパティが0に設定されています。 このプロパティの値は、シーケンシャルレベルのエントリに対して順次インクリメントされます。 つまり、ユーザーが最上位のコンテナーを選択して展開するときに、 **PR_DEPTH**が1に設定されているすべてのコンテナーを表示します。 ユーザーがこれらのサブコンテナーの1つを展開すると、 **PR_DEPTH**が2に設定されているコンテナーが表示されます。 
   
-階層ビューアーでは、深さの別の範囲をサポートします。 ビューアーに 1 つまたは 2 つのレベルを制限することや、複数のレベルをサポートするには、優先度、拡張性のある階層を表示する場合。 
+階層ビューアーでは、異なる深さの範囲がサポートしています。 ビューアーを1つまたは2つのレベルのみに制限することも、複数のレベルをサポートすることもできます。拡張性の高い階層を表示する場合は、優先度を設定することができます。 
   
-アドレス帳には、アドレス帳内の最上位のコンテナーの階層ビューアーが用意されています。 
+アドレス帳には、アドレス帳の最上位のコンテナーの階層ビューアーがあります。 
   
- **アドレス帳の階層テーブルにアクセスするには**
+ **アドレス帳階層テーブルにアクセスするには**
   
-1. [アドレス帳コンテナー](iaddrbook-openentry.md)を null のエントリの識別子を渡すことを開くには、アドレス帳のルート コンテナーを呼び出します。
+1. [IAddrBook:: openentry](iaddrbook-openentry.md)を呼び出し、null エントリ識別子を渡して、アドレス帳のルートコンテナーを開きます。
     
-2. MAPI アドレス帳の階層テーブルにアクセスするためのルート コンテナーの[IMAPIContainer::GetHierarchyTable](imapicontainer-gethierarchytable.md)メソッドを呼び出します。 
+2. ルートコンテナーの[IMAPIContainer:: GetHierarchyTable](imapicontainer-gethierarchytable.md)メソッドを呼び出して、MAPI アドレス帳の階層テーブルにアクセスします。 
     
- **既定のメッセージ ストアの階層テーブルにアクセスするには**
+ **既定のメッセージストアの階層テーブルにアクセスするには**
   
-1. メッセージ ストアにアクセスする[IMAPISession::GetMsgStoresTable](imapisession-getmsgstorestable.md)を呼び出します。 
+1. 呼び出し[imapisession:: getmsgstorestable](imapisession-getmsgstorestable.md)メッセージストアテーブルにアクセスできます。 
     
-2. [SPropertyRestriction](spropertyrestriction.md)構造体を使用して**PR_DEFAULT_STORE** ([PidTagDefaultStore](pidtagdefaultstore-canonical-property.md)) プロパティが TRUE に設定を持つ行のみのテーブルを制限する制約を作成します。 
+2. [spropertyrestriction](spropertyrestriction.md)構造を使用して制限を構築し、 **PR_DEFAULT_STORE** ([PidTagDefaultStore](pidtagdefaultstore-canonical-property.md)) プロパティが TRUE に設定されている行だけにテーブルを制限します。 
     
-3. [IMAPITable::FindRow](imapitable-findrow.md)を渡すことを**SPropertyRestriction**既定のメッセージ ストアを表す行を検索するを呼び出します。 
+3. [IMAPITable:: FindRow](imapitable-findrow.md)を呼び出し、 **spropertyrestriction**を渡して、既定のメッセージストアを表す行を見つけます。 
     
-4. [IMAPISession::OpenEntry](imapisession-openentry.md)既定のメッセージ ストアのテーブルの行のメッセージ ストアから**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティに渡すことを呼び出します。
+4. メッセージストアテーブルの既定のメッセージストアの行から**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティを渡して、 [imapisession:: openentry](imapisession-openentry.md)を呼び出します。
     
-5. **PR_IPM_SUBTREE_ENTRYID** ([PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md)) のプロパティを取得するために、メッセージ ストアの[IMAPIProp::GetProps](imapiprop-getprops.md)メソッドを呼び出します。
+5. メッセージストアの[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出して、 **PR_IPM_SUBTREE_ENTRYID** ([PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md)) プロパティを取得します。
     
-6. メッセージ ストアの IPM サブツリーのルート フォルダーを開く、 **PR_IPM_SUBTREE_ENTRYID**プロパティを渡すメッセージ ストアの[IMsgStore::OpenEntry](imsgstore-openentry.md)メソッドを呼び出します。 
+6. メッセージストアの[IMsgStore:: openentry](imsgstore-openentry.md)メソッドを呼び出して、 **PR_IPM_SUBTREE_ENTRYID**プロパティを渡し、メッセージストアの IPM サブツリーのルートフォルダーを開きます。 
     
-7. 階層テーブルにアクセスするための IPM のルート フォルダーの[IMAPIContainer::GetHierarchyTable](imapicontainer-gethierarchytable.md)メソッドを呼び出します。 
+7. IPM ルートフォルダーの[IMAPIContainer:: GetHierarchyTable](imapicontainer-gethierarchytable.md)メソッドを呼び出して、その階層テーブルにアクセスします。 
     
 

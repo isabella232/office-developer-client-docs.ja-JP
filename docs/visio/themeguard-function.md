@@ -6,25 +6,25 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: a556eadc-9ee6-7a29-ca05-6250b612790c
-description: 現在のテーマの適切な設定を使用するようにするのには図形のセルの書式設定を保護します。
-ms.openlocfilehash: 10a7772995b9cc22e53ff577b2f663d7c97d0816
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 図形の書式設定セルを保護して、現在のテーマの適切な側面を使用していることを確認します。
+ms.openlocfilehash: c20d43f9d03296a3c529a6c8f59cf27489dcdc51
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326755"
 ---
 # <a name="themeguard-function"></a>THEMEGUARD 関数
 
-現在のテーマの適切な設定を使用するようにするのには図形のセルの書式設定を保護します。
+図形の書式設定セルを保護して、現在のテーマの適切な側面を使用していることを確認します。
   
 ## <a name="syntax"></a>構文
 
-THEMEGUARD()
+THEMEGUARD ()
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-THEMEGUARD 関数をセルに適用すること防ぐことはできませんが、ガードを適用する関数と同じ方法で手動で書式設定をします。 ユーザー インターフェイスまたはオートメーションを使用してプログラムを使用して、図形を書式設定する場合、THEMEGUARD 式をオーバーライドすると、手動の書式設定の値を格納する数式に、SETATREFEXPR 関数を追加する場合を除き、します。 
+THEMEGUARD 関数をセルに適用しても、GUARD 関数の場合と同様、手動でフォーマットを適用することは可能です。 ユーザーインターフェイスの図形に書式を適用した場合、またはオートメーションを使用して、手動で書式設定する値を格納するために SETATREFEXPR 関数を数式に含める場合を除き、THEMEGUARD 数式は上書きされます。 
   
 ## <a name="example"></a>例
 

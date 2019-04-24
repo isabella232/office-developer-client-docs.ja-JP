@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: f26384f1-467e-4343-92b3-0425da9d2123
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 179d76b56c1ba9b40768c691d0b1555377f7adb7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 26d6ffe66a5e7749c9d8c4e5210e9f72de808932
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328870"
 ---
 # <a name="imapitablequeryrows"></a>IMAPITable::QueryRows
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-現在のカーソル位置から開始し、テーブルから 1 つまたは複数の行を返します。
+現在のカーソル位置から、1つまたは複数の行をテーブルから返します。
   
 ```cpp
 HRESULT QueryRows(
@@ -37,87 +37,87 @@ LPSRowSet FAR * lppRows
 
 ## <a name="parameters"></a>パラメーター
 
- _lRowCount_
+ _lrowcount_
   
-> [in]返される行の最大数。
+> 順番返される行の最大数。
     
  _ulFlags_
   
-> [in]行を返す方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番行が返される方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 TBL_NOADVANCE 
   
-> カーソルが行の取得の結果として進化するを防ぎます。 TBL_NOADVANCE フラグが設定されている場合、カーソルが指す最初の行が返されます。 TBL_NOADVANCE フラグが設定されていない場合、カーソルは、返された最後の行を次の行をポイントします。
+> 行の取得の結果として、カーソルが昇格しないようにします。 TBL_NOADVANCE フラグが設定されている場合、カーソルは返される最初の行を指します。 TBL_NOADVANCE フラグが設定されていない場合、カーソルは、返される最後の行の次の行を指します。
     
- _lppRows_
+ _lpprows_
   
-> [out]テーブルの行を保持している[SRowSet](srowset.md)構造体へのポインターへのポインター。 
+> 読み上げテーブルの行を保持する[srowset](srowset.md)構造体へのポインターへのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 行は正常に返されました。
+> 行が正常に返されました。
     
 MAPI_E_BUSY 
   
-> 別の操作は、行の取得操作の開始を防止する処理中です。 実行中の操作を完了できるか、それを停止する必要があります。
+> 別の操作が進行中なので、行取得操作を開始できません。 進行中の操作が完了することを許可するか、停止する必要があります。
     
 MAPI_E_INVALID_PARAMETER 
   
-> _IRowCount_パラメーターは、0 に設定されています。 
+> _irowcount_パラメーターは0に設定されています。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPITable::QueryRows**メソッドは、テーブルから 1 つまたは複数行のデータを取得します。 _IRowCount_パラメーターの値は、検索の開始点に影響します。 _IRowCount_が正の場合は、現在位置から前方に行が読み取られます。 _IRowCount_が負の場合は、**スプーラー**は、指定された行の数を逆方向に移動開始点をリセットします。 カーソルをリセットした後は、前方の順序で行が読み取られます。 
+**IMAPITable:: QueryRows**メソッドは、テーブルから1つまたは複数のデータ行を取得します。 _irowcount_パラメーターの値は、取得の開始点に影響します。 _irowcount_が正の場合は、現在の位置から順に行が読み取られます。 _irowcount_が負の場合、 **QueryRows**は指定された行数だけ後方に移動して開始点をリセットします。 カーソルがリセットされると、行は前方に読み上げられます。 
   
-[SRowSet](srowset.md)構造体を_lppRows_パラメーターが指す**カラス**のメンバーでは、返される行の数を示します。 場合は 0 個の行が返されます。 
+_lpprows_パラメーターが指す[srowset](srowset.md)構造の**cRows**メンバは、返される行数を示しています。 0行が返される場合: 
   
-- テーブルの先頭にカーソルが位置し、 _IRowCount_の値が負の値です。 - または - 
+- カーソルは既にテーブルの先頭に配置されており、 _irowcount_の値が負になります。 や 
     
-- テーブルの末尾にカーソルが既に配置されているし、 _IRowCount_の値が正の数値です。 
+- カーソルは既にテーブルの最後に配置されており、 _irowcount_の値は正です。 
     
-列とその順序の数は、行ごとに同じです。 行のプロパティが存在しません、またはプロパティを読み取り中にエラーがありますが、行のプロパティに [ **SPropValue**構造体には、次の値が含まれています。 
+列の数とその順序は、各行で同じです。 行のプロパティが存在しない場合、またはプロパティの読み取りエラーが発生した場合、行内のプロパティの**spropvalue**構造体には次の値が含まれています。 
   
-- **UlPropTag**メンバーのプロパティの型の PT_ERROR。 
+- **ulPropTag**メンバーのプロパティの種類の PT_ERROR。 
     
-- **値**メンバーの MAPI_E_NOT_FOUND。 
+- **Value**メンバーの MAPI_E_NOT_FOUND。 
     
-_LppRows_パラメーターで指定された行セット内の[SPropValue](spropvalue.md)構造体に使用されるメモリ必要があります個別に割り当てられ、行ごとに解放します。 [MAPIFreeBuffer](mapifreebuffer.md)を使用して、プロパティ値の構造体を解放して行を解放するために設定します。 **スプーラー**への呼び出しでは、0 を返す、ただし、先頭または末尾の表に示す**SRowSet**構造のみ必要がありますが解放されます。 割り当ておよび**SRowSet**構造体にメモリを解放する方法の詳細については、 [ADRLIST および SRowSet 構造体のメモリを管理する](managing-memory-for-adrlist-and-srowset-structures.md)を参照してください。
+_lpprows_パラメーターによって指定された行セットの[spropvalue](spropvalue.md)構造体に使用されるメモリは、各行に対して個別に割り当てて解放する必要があります。 [MAPIFreeBuffer](mapifreebuffer.md)を使用して、プロパティの値構造を解放し、行セットを解放します。 **QueryRows**の呼び出しによって0が返されますが、テーブルの先頭または末尾を示している場合は、 **srowset**構造自体のみを解放する必要があります。 **srowset**構造のメモリを割り当てて解放する方法の詳細については、「 [adrlist および srowset 構造体のメモリの管理](managing-memory-for-adrlist-and-srowset-structures.md)」を参照してください。
   
-返される行とは、返される順序は、かどうか成功した呼び出しに加えられた[IMAPITable::Restrict](imapitable-restrict.md)および[IMAPITable::SortTable](imapitable-sorttable.md)によって異なります。 **制限**は、制限で指定された条件に一致する行だけを返すには、**スプーラー**の原因と、ビューから行をフィルター処理します。 **SortTable**は、標準を確立または**スプーラー**によって返される行の順序に影響を与えず、並べ替え順序を分類します。 **SortTable**に渡された[SSortOrderSet](ssortorderset.md)の構造体で指定された順序では、返される行です。
+返される行と、返される順序は、 [IMAPITable:: Restrict](imapitable-restrict.md)と[imapitable:: sorttable](imapitable-sorttable.md)に成功したかどうかによって異なります。 ビューからフィルター行を**制限**します。これにより、 **QueryRows**は、制限で指定された条件に一致する行のみを返します。 **sorttable**は、標準または分類された並べ替え順序を確立し、 **QueryRows**によって返される一連の行に影響します。 返される行は、 [ssortorderset](ssortorderset.md)構造で指定された順序で**sorttable**に渡されます。
   
-行ごとに列が返されに[IMAPITable::SetColumns](imapitable-setcolumns.md)するかどうかの正常な呼び出しがありましたが返される順序に依存しています。 **SetColumns**では、テーブルと、それらを含めるように順序の列に含まれるプロパティを指定する、列のセットを確立します。 **SetColumns**呼び出しを行った場合それぞれの行と列の順序で特定の列の設定の呼び出しで指定した列と同じです。 **SetColumns**呼び出しが作成されなかった場合、テーブルは、既定の列セットを返します。 
+各行に返される列と返される順序は、 [IMAPITable:: SetColumns](imapitable-setcolumns.md)に正常に呼び出しが行われたかどうかによって異なります。 **SetColumns**は列セットを確立し、テーブルの列に含めるプロパティと、それらを含める順序を指定します。 **SetColumns**呼び出しが行われている場合、各行の特定の列とそれらの列の順序は、呼び出しで指定された列セットと一致します。 **SetColumns**呼び出しが行われていない場合、テーブルは既定の列セットを返します。 
   
-なしのこれらの呼び出しを行った場合は、**スプーラー**はテーブルのすべての行を返します。 各行には、既定の順序で設定する既定の列が含まれています。 
+これらの呼び出しが行われていない場合、 **QueryRows**はテーブル内のすべての行を返します。 各行には、既定の順序で設定された既定の列が含まれています。 
   
-[IMAPITable::SetColumns](imapitable-setcolumns.md)への呼び出しで確立された列のセットには、PR_NULL に設定された列が含まれている_lppRows_で返される行セット内で[SPropValue](spropvalue.md)配列に空のスロットが含まれます。 
+[IMAPITable:: SetColumns](imapitable-setcolumns.md)の呼び出しで設定された列セットが PR_NULL に設定されている場合、 _lpprows_で返される行セット内の[spropvalue](spropvalue.md)配列には空のスロットが含まれます。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-列セットに含まれる、サポートされていない列を要求する呼び出し元を許可できます。 この問題が発生したときは、サポートされていない列のプロパティの値のプロパティ タグは MAPI_E_NOT_FOUND のプロパティの型の部分で PT_ERROR を配置します。 
+発信者は、サポートされていない列を列セットに含めることを要求できます。 この場合、PT_ERROR をプロパティタグのプロパティの種類部分に配置し、サポートされていない列のプロパティ値に MAPI_E_NOT_FOUND を設定します。 
   
-要件ではなく、要求には、ローの数を処理します。 返品できます任意の場所から 0 個の行では、要求数、クエリの方向に行がない場合。 
+行カウントは、要件ではなく要求として処理します。 クエリの方向に行がない場合は、要求された数になるまで、0行から任意の値を返すことができます。 
   
-ユーザーに表示される行を分類した表のビューでは、要求時にデータの範囲について、有効な判断を行うし、余分な作業を避けるために呼び出し元を許可する行のみを返します。 
+カテゴリ別のテーブルビューから行が要求されたときにユーザーに表示される行のみを返します。これにより、呼び出し元は、データの範囲に関する有効な前提条件を作成し、余分な作業を避けることができます。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-通常は最終的に、 _lRowCount_パラメーターで指定した数の行です。 ただし、メモリまたは実装の制限が問題である場合、または操作に達すると、テーブルの前後処理の途中では、**スプーラー**は要求されたよりも行数が少ないを返します。 
+通常は、 _lrowcount_パラメーターで指定した行数だけ行が入力されます。 ただし、メモリまたは実装の制限が問題になる場合や、処理がテーブルの先頭または末尾に達した後に発生した場合、 **QueryRows**は要求されたよりも少ない行数を返します。 
   
-**スプーラー**では、MAPI_E_BUSY が返された場合は、 [IMAPITable::WaitForCompletion](imapitable-waitforcompletion.md)メソッドを呼び出すし、非同期操作が完了すると、**スプーラー**への呼び出しを再試行してください。 
+**QueryRows**が MAPI_E_BUSY を返す場合は、 [IMAPITable:: waitforcompletion](imapitable-waitforcompletion.md)メソッドを呼び出して、非同期操作が完了したときに**QueryRows**の呼び出しを再試行します。 
   
-**スプーラー**を呼び出すときは、非同期通知のタイミングになる戻る**スプーラー**から基になるデータを正確に表現する行セットを引き起こす可能性ことに注意します。 たとえば、メッセージが対応する通知の受信前に削除する削除された行の行に返されると、フォルダーの内容の表の次に**スプーラー**に呼び出しを設定します。 常に通知データのユーザーのビューを更新する前に到着するまで待機します。 
+**QueryRows**を呼び出すときは、非同期通知のタイミングが原因で、 **QueryRows**から返される行セットが、基になるデータを正確に表示しない可能性があることに注意してください。 たとえば、メッセージを削除した後、それに対応する通知を受信する前に、フォルダーの contents テーブルに**QueryRows**を呼び出すと、削除された行が行セットに返されることになります。 ユーザーのデータの表示を更新する前に通知が到着するのを常に待機します。 
   
-テーブルから行を取得する方法の詳細については、[テーブルの行からのデータの取得](retrieving-data-from-table-rows.md)を参照してください。
+テーブルから行を取得する方法の詳細については、「[テーブルの行からデータを取得](retrieving-data-from-table-rows.md)する」を参照してください。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl.cpp  <br/> |DwThreadFuncLoadTable  <br/> |MFCMAPI では、 **IMAPITable::QueryRows**メソッドを使用して、ビューにロードするテーブル内の行を取得します。  <br/> |
+|ContentsTableListCtrl  <br/> |dwthreadの loadtable  <br/> |mfcmapi は、 **IMAPITable:: QueryRows**メソッドを使用して、ビューに読み込むテーブル内の行を取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

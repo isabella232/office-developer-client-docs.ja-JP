@@ -5,21 +5,21 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: a70c1445-03d5-9585-2bdb-d03c608b313b
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 83123e1794070ecd545c8983750a21349e77cb31
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 6b8b3e8a41c52fef5b3ff4050292740a01216761
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322149"
 ---
 # <a name="about-the-attachment-security-api"></a>添付セキュリティ API について
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-添付ファイル セキュリティ API では、添付ファイルが Outlook によって安全でないと見なされの表示とインデックスの作成がブロックされているかどうかを検出する Outlook ソリューションを使用します。 次の定義およびインタ フェースを提供します。
+添付ファイルセキュリティ API を使用すると、outlook ソリューションで添付ファイルが outlook によって安全でないと見なされ、表示およびインデックス処理がブロックされているかどうかを検出できます。 これにより、次の定義とインターフェイスが提供されます。
   
 定義
   
@@ -27,6 +27,6 @@ ms.locfileid: "22592370"
     
 インターフェイス
   
-- **[IAttachmentSecurity](iattachmentsecurityiunknown.md)**
+- **[iattachmentsecurity](iattachmentsecurityiunknown.md)**
     
 

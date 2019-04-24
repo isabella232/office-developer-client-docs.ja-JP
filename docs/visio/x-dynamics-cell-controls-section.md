@@ -8,19 +8,19 @@ f1_keywords:
 - Vis_DSS.chm1145
 localization_priority: Normal
 ms.assetid: 9757dfb4-6d37-0517-17fe-7593ff12bbfe
-description: X を表す-ローカル座標でのコントロール ハンドルのアンカー ポイントの座標です。
-ms.openlocfilehash: 9dee2381c15ed2817df9f89ebc830cf31bf64c1f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: コントロールハンドルのアンカーポイントの x 座標を、ローカル座標で表します。
+ms.openlocfilehash: 7aef1fe779ae9b862e88eccf0112eb8696377858
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322303"
 ---
-# <a name="x-dynamics-cell-controls-section"></a>[X Dynamics] セル ([コントロール] セクション)
+# <a name="x-dynamics-cell-controls-section"></a>[X Dynamics] セル ([Controls] セクション)
 
-*X*を表す-ローカル座標でのコントロール ハンドルのアンカー ポイントの座標です。 
+コントロールハンドルのアンカーポイントの*x*座標を、ローカル座標で表します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 アンカー ポイントは、ダイナミックス機能を使うときのラバーバンディングに使用されます。
   
@@ -28,14 +28,14 @@ ms.locfileid: "19806834"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | 制御します。  *名*です。XDynwhere を制御します。  *名*は、コントロールの行の名前です。  <br/> |
+| セル名 :  <br/> | 管理.  *名前*です。XDynwhere コントロール  *name*は、コントロール行の名前です。  <br/> |
    
 プログラムから、インデックスによって [X Dynamics] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionControls** <br/> |
-| 行インデックス:  <br/> |**visRowControl** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+| 行インデックス:  <br/> |**visRowControl** +  *i* = ** 0、1、2...  <br/> |
 | セル インデックス:  <br/> |**visCtlXDyn** <br/> |
    
 

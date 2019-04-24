@@ -1,40 +1,40 @@
 ---
-title: ストリームの構造
+title: Stream 構造体
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 9e305071-b6a5-4bd8-892e-25553d04bb15
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5f372e93457f2b7ef8830ae6bd0363f6b3a7bd60
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 7f1f1e028797edaa0afb45df4f39aca15ff6d425
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327441"
 ---
-# <a name="stream-structures"></a>ストリームの構造
+# <a name="stream-structures"></a>Stream 構造体
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-Outlook アイテムのユーザー定義のフィールドの定義は、 [PidLidPropertyDefinitionStream](pidlidpropertydefinitionstream-canonical-property.md)プロパティに格納されます。 このプロパティの値は、ユーザー定義フィールドと組み込みの Outlook アイテムのフィールドのデータ バインディングの設定の定義を格納するバイナリ ストリームです。 このセクションでは、ストリームの構造体を次に分割されて、バイナリ ストリームの構造に関する情報を提供します。 
+Microsoft Outlook アイテムのユーザー定義フィールドの定義は、 [PidLidPropertyDefinitionStream](pidlidpropertydefinitionstream-canonical-property.md)プロパティに格納されます。 このプロパティの値は、Outlook アイテムの組み込みフィールドのユーザー定義フィールドおよびデータバインド設定の定義を含むバイナリストリームです。 このセクションでは、バイナリストリームの構造に関する情報を、次のストリーム構造で分けて説明します。 
   
 > [!NOTE]
-> これら (たとえば、PropertyDefinition、FieldDefinition、および SkipBlock) は、ストリームの構造とそのデータ要素の名前を選択し、プログラミング ・ インタ フェースの Messaging API (MAPI)、技術的には含まれていないドキュメントにのみ記載されて実際のストリームの構造体の目的。 開発者はこれらのアプリケーションでストリーム構造とデータ要素をラベル付けを選択する際です。 
+> これらの stream 構造体の名前 (propertydefinition、fielddefinition、および skipblock など) とそのデータ要素は、メッセージング API (MAPI) のプログラミングインターフェイスの一部ではありません。ここでは、ドキュメントにのみ記載されています。実際のストリーム構造の目的。 開発者は、ユーザーが選択したときに、これらの stream 構造体とデータ要素にラベルを付けることができます。 
   
-- [PropertyDefinition ストリームの構造](propertydefinition-stream-structure.md)
+- [propertydefinition ストリームの構造](propertydefinition-stream-structure.md)
     
-- [FieldDefinition ストリームの構造](fielddefinition-stream-structure.md)
+- [fielddefinition ストリームの構造](fielddefinition-stream-structure.md)
     
-- [SkipBlock ストリームの構造](skipblock-stream-structure.md)
+- [skipblock ストリームの構造](skipblock-stream-structure.md)
     
-- [FirstSkipBlockContent ストリームの構造](firstskipblockcontent-stream-structure.md)
+- [firstskipblockcontent ストリームの構造](firstskipblockcontent-stream-structure.md)
     
-- [PackedAnsiString ストリームの構造](packedansistring-stream-structure.md)
+- [PackedAnsiString Stream 構造](packedansistring-stream-structure.md)
     
-- [PackedUnicodeString ストリームの構造](packedunicodestring-stream-structure.md)
+- [PackedUnicodeString Stream 構造](packedunicodestring-stream-structure.md)
     
 ## <a name="see-also"></a>関連項目
 
@@ -44,5 +44,5 @@ Outlook アイテムのユーザー定義のフィールドの定義は、 [PidL
   
 [新しいユーザー定義フィールドの定義を追加する](how-to-add-a-definition-for-a-new-user-defined-field.md)
   
-[PropertyDefinition ストリームのサンプル](propertydefinition-stream-sample.md)
+[propertydefinition ストリームのサンプル](propertydefinition-stream-sample.md)
 

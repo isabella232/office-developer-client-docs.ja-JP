@@ -9,25 +9,25 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 2f9c11ba-a316-bc34-60d4-0a41b2af486f
 description: 線の最後の頂点に対して、矢印を付けるか、または別の書式の端点を適用するかを指定します。
-ms.openlocfilehash: fa37e4896fdab0f2e8fee6d94aa38c72519a7e6d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 54ef11125a8774914a60897850fb75cd4ab949a5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328904"
 ---
-# <a name="endarrow-cell-line-format-section"></a>[EndArrow] セル ([線の書式設定] セクション)
+# <a name="endarrow-cell-line-format-section"></a>[EndArrow] セル ([Line Format] セクション)
 
 線の最後の頂点に対して、矢印を付けるか、または別の書式の端点を適用するかを指定します。
   
 |**値**|**説明**|
 |:-----|:-----|
-|0  <br/> |矢印を付けません。  <br/> |
-|1-45  <br/> |さまざまな矢印のスタイル。入力した値は、[**線**] ダイアログ ボックスでインデックスが付けられたエントリに対応します。  <br/> |
+|.0  <br/> |矢印を付けません。  <br/> |
+|1 ～ 45  <br/> |さまざまな矢印のスタイル。入力した値は、[**線**] ダイアログ ボックスでインデックスが付けられたエントリに対応します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-この値は、[**線**] ダイアログ ボックスで設定することもできます (このダイアログ ボックスを開くには、[**ホーム**] タブの [**図形**] グループで、[**線**] をクリックし、[**矢印**]、[**その他の矢印**] の順にクリックします)。 EndArrowSize] セルにある矢印のサイズが設定されています。
+この値は、[**線**] ダイアログ ボックスで設定することもできます (このダイアログ ボックスを開くには、[**ホーム**] タブの [**図形**] グループで、[**線**] をクリックし、[**矢印**]、[**その他の矢印**] の順にクリックします)。 矢印のサイズは [EndArrowSize] セルで設定します。
   
 USE 関数を使用して、このセルにユーザー設定の線の端を指定することもできます。 
   
@@ -35,7 +35,7 @@ USE 関数を使用して、このセルにユーザー設定の線の端を指�
   
 |||
 |:-----|:-----|
-|セル名 :  <br/> |[Endarrow]  <br/> |
+|セル名 :  <br/> |[endarrow]  <br/> |
    
 プログラムから、インデックスによって [EndArrow] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

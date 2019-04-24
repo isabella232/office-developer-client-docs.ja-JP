@@ -7,11 +7,11 @@ ms.assetid: 641659f2-3c0a-43af-96f1-2521b4b06680
 description: Outlook MAPI を使用して、特定のタスクを実行する方法や特定のサービス プロバイダーを実装する方法を示すコードのサンプル。
 localization_priority: Priority
 ms.openlocfilehash: b4d866d1e064c722228af4dbc16cf5f7251603d9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328148"
 ---
 # <a name="mapi-samples"></a>MAPI のサンプル
 

@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: f5db43e9-687b-d467-1be1-3737e3f91c27
 description: アカウントの既定の配信ストアのエントリ ID を表します。
-ms.openlocfilehash: 72c5325e70a6e8b42ee433d8d674c2b2ea0c8398
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d803c539ec99da4d7fb31063f48237788f3ac3d9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327672"
 ---
 # <a name="propacctdeliverystore"></a>PROP_ACCT_DELIVERY_STORE
 
@@ -26,14 +26,14 @@ ms.locfileid: "19799556"
 |:-----|:-----|
 |識別子:  <br/> |0x0018  <br/> |
 |プロパティの種類:  <br/> |PT_BINARY  <br/> |
-|プロパティ タグ。  <br/> |0x00180102  <br/> |
-|アクセス:  <br/> |値の取得および設定が可能です。  <br/> |
+|プロパティタグ:  <br/> |0x00180102  <br/> |
+|接続  <br/> |読み取り/書き込み  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-取得または[IOlkAccount::GetProp](iolkaccount-getprop.md)または[IOlkAccount::SetProp](iolkaccount-setprop.md)をそれぞれ使用して、このプロパティを設定します。
+[IOlkAccount:: getprop](iolkaccount-getprop.md)または[IOlkAccount:: setprop](iolkaccount-setprop.md)を使用して、このプロパティを取得または設定します。
   
-アカウントの既定の配信ストアとして設定して、店舗の副作用の 1 つは Outlook を起動するとき Outlook が作成されるそのストアの検索フォルダーが存在し、to do バーのストアを一覧表示する操作を行いますがされていない場合。
+アカウントの既定の配信ストアとしてストアを設定する場合の副次的な影響の1つは、outlook を起動したときに、そのストアの検索フォルダーがまだ存在しない場合はそのストアの検索フォルダーを作成し、そのストアを To do バーに表示することです。
   
 ## <a name="see-also"></a>関連項目
 

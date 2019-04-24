@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: e316a424-d789-4ce5-bcc6-263049f3659e
 description: SMTP アカウントに使用する暗号化された接続の種類を指定します。
-ms.openlocfilehash: e1c8c8dacf953407d4cbb114aa5ee0a4cdb6acf5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 67eae5c9c5ca1b7f664ceaac0463ef3f3c9a291a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328330"
 ---
 # <a name="propsmtpsecureconnection"></a>PROP_SMTP_SECURE_CONNECTION
 
@@ -22,21 +22,21 @@ SMTP アカウントに使用する暗号化された接続の種類を指定し
 
 |||
 |:-----|:-----|
-|識別子:  <br/> |0x020A  <br/> |
+|識別子:  <br/> |0x020a  <br/> |
 |プロパティの種類:  <br/> |PT_DWORD  <br/> |
-|プロパティ タグ。  <br/> |0x020A0003  <br/> |
-|アクセス:  <br/> |読み取り専用  <br/> |
+|プロパティタグ:  <br/> |0x020A0003  <br/> |
+|接続  <br/> |読み取り専用  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-値には、以下の定数のいずれかを指定できます。 その値の[定数 (アカウント管理 API)](constants-account-management-api.md)を参照してください。 
+この値には、次の定数のいずれかを指定できます。 値については、「 [Constants (Account management API)](constants-account-management-api.md) 」を参照してください。 
   
-|**定数**|**説明**|
+|**Constants**|**説明**|
 |:-----|:-----|
-|**ENCRYPT_CONN_NO_SECURITY** <br/> |暗号化を使用しません。  <br/> |
-|**ENCRYPT_CONN_SSL** <br/> |セキュア ソケット レイヤー (SSL) 暗号化を使用します。  <br/> |
-|**ENCRYPT_CONN_TLS** <br/> |トランスポート層セキュリティ (TLS) の暗号化および認証プロトコルを使用します。  <br/> |
-|**ENCRYPT_CONN_AUTO** <br/> |自動的に検出し、メール サーバーでサポートされている暗号化方式を使用します。  <br/> |
+|**ENCRYPT_CONN_NO_SECURITY** <br/> |暗号化は使用しないでください。  <br/> |
+|**ENCRYPT_CONN_SSL** <br/> |Secure Socket Layer (SSL) 暗号化を使用します。  <br/> |
+|**ENCRYPT_CONN_TLS** <br/> |TLS (Transport Layer Security) 暗号化と認証プロトコルを使用します。  <br/> |
+|**ENCRYPT_CONN_AUTO** <br/> |メールサーバーでサポートされている暗号化方法を自動的に検出して使用します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

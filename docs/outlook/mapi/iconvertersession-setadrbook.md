@@ -1,5 +1,5 @@
 ---
-title: IConverterSessionSetAdrBook
+title: iconvertersessionsetadrbook
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: d276ab19-17f4-01c7-4b44-b578e631b5fe
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ae00fd0711b8fcae01db6a89da7607d79d8757c1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7645208e6a0256957deb3a71ba3e04ad125a6b61
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326895"
 ---
 # <a name="iconvertersessionsetadrbook"></a>IConverterSession::SetAdrBook
 
@@ -25,7 +25,7 @@ ms.locfileid: "22584360"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI メッセージを MIME ストリームに変換するときにあいまいなアドレスを解決するのには MIME コンバーターに MAPI を使用して MAPI アドレス帳を指定します。
+mapi メッセージを mime ストリームに変換するときに、あいまいなアドレスを解決するために mapi から mime コンバータが使用するオプションの mapi アドレス帳を指定します。
   
 ```cpp
 HRESULT IConverterSession::SetAdrBook( 
@@ -34,28 +34,28 @@ LPADRBOOK pab);
 
 ## <a name="parameters"></a>パラメーター
 
- _個人用アドレス帳_
+ _個人_
   
-> [in]ポインター、 [IAddrBook: IMAPIProp](iaddrbookimapiprop.md) 、MAPI MIME への変換からに使用するインターフェイスです。 アドレス帳は必要がなくなったとき、このパラメーターを**null**に設定します。これは、インターフェイスを解放し、コンバーターをリセットし、任意のアドレス帳を使用していません。 
+> 順番MAPI から MIME への変換で使用される[IAddrBook: imapiprop](iaddrbookimapiprop.md)インターフェイスへのポインター。 アドレス帳を必要としなくなった場合は、このパラメーターを**null**に設定します。これにより、インターフェイスが解放され、すべてのアドレス帳を使用しないようにコンバータがリセットされます。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK
   
-> 関数の呼び出しが成功します。
+> 関数呼び出しが成功しました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-MAPI に変換するメッセージを MIME ストリームを一般的には必要ありません MAPI プロファイルにログオンします。 ただし、変換するための MAPI アドレス帳を指定する場合は、アドレス帳を取得するのにはプロファイルにログオンしている必要があります。
+mapi メッセージを MIME ストリームに変換する必要はありません。通常、mapi プロファイルにログオンする必要はありません。 ただし、変換に MAPI アドレス帳を指定するには、アドレス帳を取得するためにプロファイルにログオンする必要があります。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MapiMime.cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI では、MimeToMAPI を使用して、MAPI メッセージを EML ファイルに変換します。  <br/> |
-|MapiMime.cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI では、MAPIToMIMEStm を使用して、MAPI メッセージを EML ファイルに変換します。  <br/> |
+|mapimime .cpp  <br/> |ImportEMLToIMessage  <br/> |mfcmapi は MimeToMAPI を使用して、EML ファイルを MAPI メッセージに変換します。  <br/> |
+|mapimime .cpp  <br/> |ExportIMessageToEML  <br/> |mfcmapi は、MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

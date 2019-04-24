@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: dcbab309-8754-40d8-94d1-5567f2989487
 description: SMTP アカウントのパスワードを表します。
-ms.openlocfilehash: b0b7d0eafb9287507e6cb6bfb48999c63b0a601a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a22e2e6e449403abbd5751b4e7fc14c1a6ea0650
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326559"
 ---
 # <a name="propsmtppassword"></a>PROP_SMTP_PASSWORD
 
@@ -24,8 +24,8 @@ SMTP アカウントのパスワードを表します。
 |:-----|:-----|
 |識別子:  <br/> |0x0205  <br/> |
 |プロパティの種類:  <br/> |PT_UNICODE|SECURE_FLAG  <br/> |
-|プロパティ タグ。  <br/> |0x2058001F  <br/> |
-|アクセス:  <br/> |読み取り専用  <br/> |
+|プロパティタグ:  <br/> |0x2058001f  <br/> |
+|接続  <br/> |読み取り専用  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

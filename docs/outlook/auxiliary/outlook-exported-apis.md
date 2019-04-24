@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: a0fd2123-7c7a-40f3-8249-af2c9e9f272c
-description: ここでは、Outlook にエクスポートする Api のリファレンス コンテンツを提供します。
-ms.openlocfilehash: 3e42448bcc1769bbac8ad120f7dab9406857ed92
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: このセクションでは、Outlook によってエクスポートされる api のリファレンスコンテンツについて説明します。
+ms.openlocfilehash: 9c8adb8d23dfc44bf739cd5b980204611fb4dd31
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327749"
 ---
 # <a name="outlook-exported-apis"></a>Outlook でエクスポートされている API
 
-ここでは、Outlook にエクスポートする Api のリファレンス コンテンツを提供します。
+このセクションでは、Outlook によってエクスポートされる api のリファレンスコンテンツについて説明します。
 
-- [定数](constants-outlook-exported-apis.md)
+- [Constants](constants-outlook-exported-apis.md)
     
 - [データ型](data-types-outlook-exported-apis.md)
     

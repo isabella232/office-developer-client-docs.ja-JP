@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: f46e8aa3-d2c2-45a2-93fe-1c40107fbf16
-description: SMTP アカウントのセキュア ソケット レイヤー (SSL) プロトコルを使用するかどうかを指定します。
-ms.openlocfilehash: b935e575338d39041bbdd6737b04a71dfe7f65b6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: SMTP アカウントに Secure Socket Layer (SSL) プロトコルを使用するかどうかを指定します。
+ms.openlocfilehash: 64856322ec0afce80777417f781c22b927ed5e2d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328309"
 ---
 # <a name="propsmtpssl"></a>PROP_SMTP_SSL
 
-SMTP アカウントのセキュア ソケット レイヤー (SSL) プロトコルを使用するかどうかを指定します。
+SMTP アカウントに Secure Socket Layer (SSL) プロトコルを使用するかどうかを指定します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -24,12 +24,12 @@ SMTP アカウントのセキュア ソケット レイヤー (SSL) プロトコ
 |:-----|:-----|
 |識別子:  <br/> |0x0202  <br/> |
 |プロパティの種類:  <br/> |PT_DWORD  <br/> |
-|プロパティ タグ。  <br/> |0x02020003  <br/> |
-|アクセス:  <br/> |読み取り専用  <br/> |
+|プロパティタグ:  <br/> |0x02020003  <br/> |
+|接続  <br/> |読み取り専用  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-ゼロの値の SSL 暗号化を使用して、SSL 暗号化を使用して、それ以外の場合はありません。
+ゼロ値は、ssl 暗号化を使用しないことを意味します。それ以外の場合は ssl 暗号化を使用します。
   
 ## <a name="see-also"></a>関連項目
 

@@ -8,31 +8,31 @@ f1_keywords:
 - Vis_DSS.chm82251592
 localization_priority: Normal
 ms.assetid: df88c55f-c098-dd4c-bf53-c7d7b60cf719
-description: Microsoft Visio の内部のテキスト フィールドの表示形式コードに一致する図の書式設定文字列を返します。
-ms.openlocfilehash: 1528cefd65ed0c7c1dde02fa390babf26442b4d3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Microsoft Visio の内部テキストフィールドの書式設定コードと一致する形式の画像文字列を返します。
+ms.openlocfilehash: 1ab24c602c7975cf6be22a564a8b9ee9aa0d6f46
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322548"
 ---
 # <a name="fieldpicture-function"></a>FIELDPICTURE 関数
 
-Microsoft Visio の内部のテキスト フィールドの表示形式コードに一致する図の書式設定文字列を返します。
+Microsoft Visio の内部テキストフィールドの書式設定コードと一致する形式の画像文字列を返します。
   
 ## <a name="syntax"></a>構文
 
-FIELDPICTURE (* **コード** *) 
+fieldpicture (* * *code* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _code_ <br/> |必須  <br/> |**番号** <br/> | テキスト フィールドの書式設定コードを指定します。  <br/> |
+| _code_ <br/> |必須  <br/> |**数値** <br/> | テキスト フィールドの書式設定コードを指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
-String
+文字列
   
 ## <a name="remarks"></a>注釈
 
@@ -40,7 +40,7 @@ String
   
 ## <a name="example"></a>例
 
-FIELDPICTURE(0) 
+fieldpicture (0) 
   
 書式形式の文字列 "esc(0)" を返します。この文字列を FORMAT 関数で使用する場合、小数点以下 1 位までと小文字の単位を含む数値を指定することになります。 
   

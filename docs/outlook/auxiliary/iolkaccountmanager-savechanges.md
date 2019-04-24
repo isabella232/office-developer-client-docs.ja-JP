@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 32a5d4b7-ead7-24e7-58f2-750232263a0d
-description: 指定されたアカウントに変更を保存します。
-ms.openlocfilehash: 87b513659b632e88697fb63d1aeccccb77ed9fd1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 指定したアカウントに変更内容を保存します。
+ms.openlocfilehash: dbb1dffa1725e96bd2ab635341718ce53738b864
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322023"
 ---
 # <a name="iolkaccountmanagersavechanges"></a>IOlkAccountManager::SaveChanges
 
-指定されたアカウントに変更を保存します。
+指定したアカウントに変更内容を保存します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -31,9 +31,9 @@ HRESULT IOlkAccountManager::SaveChanges (
 
 ## <a name="parameters"></a>パラメーター
 
-_dwAcctID_
+_dwて tid_
   
-> [in]アカウント ID を保存します。 
+> 順番保存するアカウント ID。 
     
 _dwFlags_
   
@@ -43,13 +43,13 @@ _dwFlags_
 
 |**HRESULT 型**|**Description**|
 |:-----|:-----|
-|S_OK  <br/> |呼び出しに成功しました  <br/> |
-|E_ACCT_NOT_FOUND  <br/> |指定されたアカウントが見つかりませんでした。  <br/> |
+|S_OK  <br/> |呼び出しが成功した  <br/> |
+|E_ACCT_NOT_FOUND  <br/> |指定されたアカウントが見つかりません。  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |アカウント マネージャーが使用するために初期化されていません。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-[IOlkAccount::SetProp](iolkaccount-setprop.md)を使用してアカウントのプロパティの値を変更した後に、このような変更を保存するのには**IOlkAccountManager::SaveChanges**または[IOlkAccount::SaveChanges](iolkaccount-savechanges.md)を使用します。 
+[IOlkAccount:: setprop](iolkaccount-setprop.md)を使用して、account プロパティの値を変更した後、 **IOlkAccountManager:: savechanges**または[IOlkAccount:: savechanges](iolkaccount-savechanges.md)を使用してこれらの変更を保存します。 
   
 ## <a name="see-also"></a>関連項目
 

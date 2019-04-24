@@ -12,23 +12,23 @@ api_type:
 - COM
 ms.assetid: d8c9d18c-4043-41f3-8501-8be8e3a2c9ac
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: cbead0a9953ae5106e1fcc7d07d965d4dc7bacb9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7ab4e4e9e51849037a91a071f16294cfdf10870c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328568"
 ---
 # <a name="proptag"></a>PROP_TAG
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-指定したプロパティの型と識別子を組み合わせることによって作成されたプロパティ タグを返します。 
+指定したプロパティの種類と識別子を結合して作成されたプロパティタグを返します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連の構造体。  <br/> |[SPropValue](spropvalue.md) <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連する構造:  <br/> |[SPropValue](spropvalue.md) <br/> |
    
 ```cpp
 PROP_TAG (ulPropType, ulPropID)
@@ -36,29 +36,29 @@ PROP_TAG (ulPropType, ulPropID)
 
 ## <a name="parameters"></a>パラメーター
 
-_ulPropType_
+_ulproptype_
   
-> 新しいプロパティ タグのプロパティの型。
+> 新しいプロパティタグのプロパティの種類。
     
-_ulPropID_
+_ulpropid_
   
-> 新しいプロパティ タグのプロパティの識別子です。
+> 新しいプロパティタグのプロパティ識別子。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**プロペラ\_タグ**マクロは型の_ulPropType_と_ulPropID_で指定されている識別子のプロパティのプロパティ タグを作成します。 たとえば、次のように、 **PROP_TAG**マクロを使用してエントリ識別子のプロパティ タグを作成できます。 
+**PROP\_タグ**マクロは、 _ulproptype_型のプロパティと_ulpropid_で指定された識別子のプロパティタグを作成します。 たとえば、エントリ識別子のプロパティタグは、次のように**PROP_TAG**マクロを使用して作成できます。 
   
 ```cpp
 PROP_TAG( PT_BINARY, 0x0FFF)
 
 ```
 
-PT_BINARY で、プロパティの型が返されるプロパティ タグの下位 16 ビットに含まれているし、上位 16 ビットが 0 xffff のプロパティ識別子を格納します。
+返される property タグの下位16ビットには、プロパティの型 PT_BINARY が含まれており、上位16ビットにはプロパティ識別子の0xffff が含まれています。
   
-プロパティ タグの詳細については、 [MAPI プロパティ タグ](mapi-property-tags.md)を参照してください。
+プロパティタグの詳細については、「 [MAPI プロパティタグ](mapi-property-tags.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
 - [SPropValue](spropvalue.md)
-- [構造体に関連するマクロ](macros-related-to-structures.md)
+- [構造に関連するマクロ](macros-related-to-structures.md)
 

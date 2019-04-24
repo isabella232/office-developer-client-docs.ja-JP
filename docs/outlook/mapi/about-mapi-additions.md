@@ -5,23 +5,23 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 78e2806d-bb6f-cd96-21f1-b7c667c73c33
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5f4aa6444eb02831b299a5ca6e0c54b6b2d0a6fa
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: fefa77a15cc2b8c72a41b29e6299f159a893cee8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322163"
 ---
 # <a name="about-mapi-additions"></a>MAPI の追加について
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI の追加機能は、Api などのデータ型、関数、およびプロパティは、以前いない公開され、MAPI のプログラマーズ リファレンスの一部として記述する MAPI メッセージング アプリケーション プログラミング インターフェイス () が属しています。 次の定義とプロパティが含まれます。
+mapi 追加機能は、メッセージングアプリケーションプログラミングインターフェイス (mapi) に属する api (データ型、関数、プロパティなど) で、以前は公開されておらず、mapi プログラマーズリファレンスの一部として文書化されています。 これらには、次の定義とプロパティが含まれています。
   
 ## <a name="constant-definitions"></a>定数の定義
 
-- **[追加の MAPI の定数](mapi-constants.md)**
+- **[その他の MAPI 定数](mapi-constants.md)**
   
 ## <a name="data-types"></a>データ型
 
@@ -29,7 +29,7 @@ MAPI の追加機能は、Api などのデータ型、関数、およびプロ�
     
 - **[FollowUpStatus](followupstatus.md)**
     
-- **[Gender](gender.md)**
+- **[性別](gender.md)**
     
 - **[OlFlagIcon](olflagicon.md)**
     
@@ -39,7 +39,7 @@ MAPI の追加機能は、Api などのデータ型、関数、およびプロ�
     
 ## <a name="properties"></a>プロパティ
 
-次のプロパティは、一般に、メッセージ オブジェクトによって公開されます。
+通常、次のプロパティは message オブジェクトで公開されます。
   
 - **[PR_BODY_W](pidtagbody-canonical-property.md)**
     
@@ -79,11 +79,11 @@ MAPI の追加機能は、Api などのデータ型、関数、およびプロ�
     
 - **[PR_SUBJECT_W](pidtagsubject-canonical-property.md)**
     
-次のプロパティは、アドレス帳の内容のテーブルのオブジェクトによって公開されます。
+次のプロパティは、アドレス帳の contents table オブジェクトで公開されています。
   
 - **[PR_DISPLAY_TYPE_EX](pidtagdisplaytypeex-canonical-property.md)**
     
-次のプロパティは、アドレス帳コンテナー オブジェクトによって公開されます。
+アドレス帳のコンテナーオブジェクトでは、次のプロパティが公開されます。
   
 - **[PR_EMS_AB_SERVER](pidtagemsabserver-canonical-property.md)**
     
@@ -91,13 +91,13 @@ MAPI の追加機能は、Api などのデータ型、関数、およびプロ�
     
 - **[PR_EMS_AB_SERVER_W](pidtagemsabserver-canonical-property.md)**
     
-次のプロパティは、フォルダーのオブジェクトによって公開されます。
+folder オブジェクトでは、次のプロパティが公開されます。
   
 - **[PR_AGING_GRANULARITY](pidtagaginggranularity-canonical-property.md)**
     
 - **[PR_AGING_PERIOD](pidtagagingperiod-canonical-property.md)**
     
-次のプロパティは、メッセージング ユーザーのオブジェクトによって公開されます。
+次のプロパティは、メッセージングユーザーオブジェクトによって公開されます。
   
 - **[PR_ASSISTANT_TELEPHONE_NUMBER_W](pidtagassistanttelephonenumber-canonical-property.md)**
     
@@ -189,7 +189,7 @@ MAPI の追加機能は、Api などのデータ型、関数、およびプロ�
     
 - **[PR_WEDDING_ANNIVERSARY](pidtagweddinganniversary-canonical-property.md)**
     
-次のプロパティは、プロファイルのセクションのオブジェクトによって公開されます。
+次のプロパティは、プロファイルセクションオブジェクトによって公開されます。
   
 - **[PR_PROFILE_SERVER_FULL_VERSION](pidtagprofileserverfullversion-canonical-property.md)**
     
@@ -207,7 +207,7 @@ MAPI の追加機能は、Api などのデータ型、関数、およびプロ�
     
 - **[PR_ROH_PROXY_SERVER](pidtagrpcoverhttpproxyserver-canonical-property.md)**
     
-次のプロパティは、ストア オブジェクトによって公開されます。
+store オブジェクトでは、次のプロパティが公開されます。
   
 - **[PR_IPM_APPOINTMENT_ENTRYID](pidtagipmappointmententryid-canonical-property.md)**
     
@@ -221,7 +221,7 @@ MAPI の追加機能は、Api などのデータ型、関数、およびプロ�
     
 - **[PR_IPM_TASK_ENTRYID](pidtagipmtaskentryid-canonical-property.md)**
     
-次のプロパティは、ストア オブジェクトによって公開され、ストア内の電子メールの特定の要素の検索で使用されます。
+次のプロパティは、ストアオブジェクトによって公開され、ストア上の電子メールの特定の要素を検索するために使用されます。
   
 - **[PR_SEARCH_ATTACHMENTS_W](pidtagsearchattachments-canonical-property.md)**
     

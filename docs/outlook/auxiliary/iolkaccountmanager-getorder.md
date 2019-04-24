@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: bd22026c-e4f7-2f25-0ef2-5d9539fd7eee
-description: アカウントの指定したカテゴリの順序を取得します。
-ms.openlocfilehash: d05e354e25d49a51b3d3f8f053c2b39dc37b333f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 指定されたアカウントのカテゴリの順序を取得します。
+ms.openlocfilehash: 3eb6dd96caa43f81eba86a389c938ef90c9533b2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322030"
 ---
 # <a name="iolkaccountmanagergetorder"></a>IOlkAccountManager::GetOrder
 
-アカウントの指定したカテゴリの順序を取得します。
+指定されたアカウントのカテゴリの順序を取得します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -32,9 +32,9 @@ HRESULT IOlkAccountManager::GetOrder (
 
 ## <a name="parameters"></a>パラメーター
 
-_pclsidCategory_
+_pclsidcategory_
   
-> [in]順序を取得する対象のカテゴリのクラス ID です。 値は、次のいずれかする必要があります。
+> 順番注文を取得するカテゴリクラス ID。 値は、次のいずれかする必要があります。
     
    - CLSID_OlkMail
     
@@ -44,23 +44,23 @@ _pclsidCategory_
     
 _pcAccts_
   
->  [out]アカウントの数です。 
+>  読み上げアカウントの数。 
     
 _prgAccts_
   
-> [out]アカウントの配列へのポインター。
+> 読み上げアカウントの配列へのポインター。
     
 ## <a name="return-values"></a>戻り値
 
 |**HRESULT 型**|**Description**|
 |:-----|:-----|
-|S_OK  <br/> |呼び出しに成功しました  <br/> |
+|S_OK  <br/> |呼び出しが成功した  <br/> |
 |E_INVALIDARG  <br/> |いくつかの引数は無効です。  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |アカウント マネージャーが使用するために初期化されていません。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このメソッドを呼び出す前に呼び出し元はである*prgAccts*ポイントの配列ののみ、配列のポインター *prgAccts*がないメモリを割り当てます。 このメソッドから制御が戻った後、呼び出し元は、 *prgAccts*に割り当てられたメモリを解放するのには[IOlkAccountManager::FreeMemory](iolkaccountmanager-freememory.md)を使用する必要があります。 
+このメソッドを呼び出す前に、呼び出し元は配列ポインターのみを割り当てますが、 *prgAccts*は*prgAccts*ポイントの配列のメモリを割り当てません。 このメソッドが返された後、呼び出し元は[IOlkAccountManager:: FreeMemory](iolkaccountmanager-freememory.md)を使用して、 *prgAccts*に割り当てられているメモリを解放する必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

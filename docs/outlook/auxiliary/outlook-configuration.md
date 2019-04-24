@@ -6,21 +6,21 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: ff1a6843-6dd6-4527-9fc1-70da288cb9e7
-description: このセクションでは、項目の競合を解決するには、オフライン アドレス帳の更新時間を決定して自動構成のドメインを登録するように Outlook を構成する方法について説明します。
-ms.openlocfilehash: ba45c022fa35bf87911aaa2b8b272d03a0703bae
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: このセクションでは、アイテムの競合を解決するように Outlook を構成する方法、オフラインアドレス帳の更新時刻を決定する方法、および自動構成用にドメインを登録する方法について説明します。
+ms.openlocfilehash: 781d1fe34a8918fdb96900e4f191ea36cf1b732c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327784"
 ---
 # <a name="outlook-configuration"></a>Outlook の構成
 
-このセクションでは、項目の競合を解決するには、オフライン アドレス帳の更新時間を決定して自動構成のドメインを登録するように Outlook を構成する方法について説明します。
+このセクションでは、アイテムの競合を解決するように Outlook を構成する方法、オフラインアドレス帳の更新時刻を決定する方法、および自動構成用にドメインを登録する方法について説明します。
 
 - [ユーザー設定アイテム タイプの競合解決について](about-conflict-resolution-for-custom-item-types.md)
     
-- [オフライン アドレス帳の最終更新時について](about-the-last-update-time-of-an-offline-address-book.md)
+- [オフラインアドレス帳の最終更新時刻について](about-the-last-update-time-of-an-offline-address-book.md)
     
 - [自動構成のための新しいドメインの登録について](about-registering-a-new-domain-for-automatic-configuration.md)
     

@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: fe447899-d37a-4775-a09d-13ba3a878008
-description: アカウントの電子メール アドレスを指定します。
-ms.openlocfilehash: 7d0bbba2dcb104326c360da6a10f3e19d1740e46
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: アカウントの電子メールアドレスを指定します。
+ms.openlocfilehash: 115941fdf2fdec01da8d6bc1320ac6cdc0930ffa
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326531"
 ---
 # <a name="propacctuseremailaddr"></a>PROP_ACCT_USER_EMAIL_ADDR
 
-アカウントの電子メール アドレスを指定します。
+アカウントの電子メールアドレスを指定します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -24,14 +24,14 @@ ms.locfileid: "19799571"
   
 |||
 |:-----|:-----|
-|識別子:  <br/> |0x000C  <br/> |
+|識別子:  <br/> |0x000c  <br/> |
 |プロパティの種類:  <br/> |PT_UNICODE  <br/> |
-|プロパティ タグ。  <br/> |0x000C001F  <br/> |
-|アクセス:  <br/> |値の取得および設定が可能です。  <br/> |
+|プロパティタグ:  <br/> |0x000c001f  <br/> |
+|接続  <br/> |読み取り/書き込み  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
- **PROP_ACCT_USER_EMAIL_ADDR**は、すべてのアカウントが存在するように想定されていません。 [PROP_MAPI_IDENTITY_ENTRYID](prop_mapi_identity_entryid.md)がない**PROP_ACCT_USER_EMAIL_ADDR**、たとえば、Exchange アカウントがある、SMTP と POP3 アカウントの中にこの状況が一変します。
+ **PROP_ACCT_USER_EMAIL_ADDR**は、すべてのアカウントに存在するとは想定されていません。 たとえば、Exchange アカウントは[PROP_MAPI_IDENTITY_ENTRYID](prop_mapi_identity_entryid.md)を持つことはできますが、 **PROP_ACCT_USER_EMAIL_ADDR**はできませんが、SMTP/POP3 アカウントの場合は、状況を逆にします。
   
 ## <a name="see-also"></a>関連項目
 

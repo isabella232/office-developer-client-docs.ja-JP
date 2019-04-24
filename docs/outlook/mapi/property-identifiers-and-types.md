@@ -1,5 +1,5 @@
 ---
-title: プロパティの識別子と型
+title: プロパティの識別子と種類
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,24 +7,24 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 39a5c97c-5ac8-47a8-b193-a4b3ba6a02a5
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 423992e0485e8e3092cfc4126164576906d51149
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: caba60b7059d1c1f8f0440aeb55abb88801fbc9a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328540"
 ---
-# <a name="property-identifiers-and-types"></a>プロパティの識別子と型
+# <a name="property-identifiers-and-types"></a>プロパティの識別子と種類
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-すべての MAPI プロパティは、プロパティ タグで表されます。 プロパティ タグは、高でのプロパティの識別子を格納する 32 ビット符号なし整数値が 16 ビットを注文し、下位のプロパティの型は、16 ビットを注文します。 Mapitags.h ヘッダー ファイルでは、MAPI によって定義されたプロパティのすべてのプロパティ タグが含まれます。
+すべての MAPI プロパティは、property タグで表されます。 プロパティタグは、上位16ビットのプロパティの識別子と、下位16ビットのプロパティの型を含む、32ビットの符号なし整数値です。 MAPI で定義されているすべてのプロパティのプロパティタグは、mapitags ヘッダーファイルに含まれています。
   
-プロパティ識別子を使用して、プロパティの使用およびその責任者を指定します。 プロパティ識別子は、MAPI によって範囲に分かれています。識別子が範囲に該当する場所は、その使用法と所有権を示します。 
+プロパティ識別子は、プロパティがどのように使用されるか、およびそのプロパティの責任者を示すために使用されます。 プロパティ識別子は MAPI で範囲に分割されます。範囲内の識別子は、その使用と所有権を示します。 
   
-プロパティの型を使用して、プロパティのデータの形式を指定します。 MAPI は、すべての有効な型を定義します。 クライアントと新しいプロパティを作成するサービス プロバイダーは、これらの種類のいずれかで使用しなければなりません。 Mapidefs.h ヘッダー ファイルでは、すべてのプロパティの種類が含まれます。
+プロパティの種類は、プロパティのデータの形式を示すために使用されます。 MAPI は、すべての有効な種類を定義します。 新しいプロパティを作成するクライアントおよびサービスプロバイダーは、これらの種類のいずれかを使用する必要があります。 すべてのプロパティの種類は、mapidefs.h ヘッダーファイルに含まれています。
   
 

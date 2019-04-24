@@ -7,37 +7,37 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 2baed391-85bd-4e88-8800-c19bc2d2d54a
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d9b52edf7f4633fdf9c925a8d8db4953590713b3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: a3faed3dda2461cab749c824fc97c2074e62375f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22562933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328673"
 ---
 # <a name="resolving-a-recipient-name"></a>受信者名の解決
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージが処理されると、ときに、各受信者に関連するプロパティを持つ受信者のリストが組み込まれています。 メッセージが送信されるまでに、長期のエントリ id を受信者のこれらのプロパティのいずれかの必要があります。 **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) のプロパティが各受信者に含まれていることを確認するには、受信者リストは、 [IAddrBook への呼び出し内のパラメーターに_lpAdrList_の内容を記述する[ADRLIST](adrlist.md)構造体を渡します。ResolveName](iaddrbook-resolvename.md)。
+メッセージがアドレス指定されると、受信者リストは各受信者に関連するプロパティを使用して作成されます。 メッセージが送信されるときに、これらのプロパティの1つは、受信者の長い用語のエントリ id である必要があります。 各受信者に**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティが含まれていることを確認するには、受信者の一覧について説明する[adrlist](adrlist.md)構造を IAddrBook:: の呼び出しの_lpadrlist_パラメーターの内容に渡します。 [ResolveName](iaddrbook-resolvename.md)。
   
- **ResolveName** **SPropValue**の対応する[ADRENTRY](adrentry.md)構造体の内のエントリの識別子が存在することが示されているように、既に解決された**ADRLIST**構造体のエントリを無視することで処理を開始します。配列です。 次に、 **ResolveName**は、2 種類の受信者に 1 回限りのエントリ id を自動的に割り当てます。 
+ **ResolveName**は、既に解決されている**adrlist**構造のエントリを無視することによって処理を開始します。これは、対応する[adrlist](adrentry.md)構造の**spropvalue**にエントリ識別子が存在することによって示されます。配列. 次に、 **ResolveName**は、1回限りのエントリ識別子を2種類の受信者に自動的に割り当てます。 
   
-- インターネット アドレスとして書式設定されたアドレスを持つ受信者
+- アドレスがインターネットアドレスとして書式設定された受信者
     
-- 受信者アドレスの形式次のとおりです。
+- アドレスが次の形式に設定されている受信者。
     
      `displayname[address type:email address]`
     
-残りのすべてのエントリの**ResolveName**の表示名に正確に一致するアドレス帳が検索されます。 **ResolveName**では、 **PR_AB_SEARCH_PATH** ([PidTagAbSearchPath](pidtagabsearchpath-canonical-property.md)) プロパティを使用して、一連のコンテナーを検索し、検索順序を決定します。 MAPI は、すべての名前を解決しようとするすべてのコンテナーの[IABContainer::ResolveNames](iabcontainer-resolvenames.md)メソッドを呼び出します。 コンテナーによってはサポートしていないため**ResolveNames**コンテナーには、MAPI_E_NO_SUPPORT が返された場合、MAPI には、その内容のテーブルに対して**PR_ANR** ([PidTagAnr](pidtaganr-canonical-property.md)) プロパティの制限が適用されます。 すべてのアドレス帳コンテナーは、この制限を名前解決をサポートする必要があります。 すべての名前が解決した後はそれ以上のコンテナーの呼び出しが行われます。 すべてのコンテナーが呼び出されると、あいまいな、または未解決の名前が残る場合は、MAPI では、残りの名前を解決するのにはユーザーに確認するの可能な場合にダイアログ ボックスが表示されます。
+残りのすべてのエントリについて、 **ResolveName**は、表示名の完全一致のアドレス帳を検索します。 **ResolveName**は、 **PR_AB_SEARCH_PATH** ([PidTagAbSearchPath](pidtagabsearchpath-canonical-property.md)) プロパティを使用して、検索するコンテナーのセットと検索順序を決定します。 MAPI は、すべてのコンテナーの[IABContainer:: ResolveNames](iabcontainer-resolvenames.md)メソッドを呼び出して、すべての名前の解決を試みます。 一部のコンテナーは**ResolveNames**をサポートしていないため、コンテナーが MAPI_E_NO_SUPPORT を返す場合、MAPI は、そのコンテンツテーブルに対して**PR_ANR** ([PidTagAnr](pidtaganr-canonical-property.md)) プロパティ制限を適用します。 この制限を使用して名前解決をサポートするには、すべてのアドレス帳コンテナーが必要です。 すべての名前が解決されると、それ以降のコンテナー呼び出しは行われません。 すべてのコンテナーが呼び出されたが、あいまいまたは未解決の名前が残っている場合は、ユーザーに残りの名前の解決を求めるメッセージが表示される場合は、MAPI がダイアログボックスを表示します。
   
-**PR_ANR**制限では、 **ADRLIST**構造体での表示名に対して**PR_ANR**プロパティの値と一致します。 **PR_ANR**プロパティの制限を持つコンテナーの内容のテーブルのビューを制限すると、「最適な推測」プロバイダーの意味のあるプロパティと一致する、検索の種類を実行するアドレス帳プロバイダーが発生します。 などの 1 つのアドレス帳プロバイダー可能性があります常に名と一致**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) に対しては、受信者の一覧でプロパティを選択するには管理者は、別可能性があります。
+**PR_ANR**制限は、 **adrlist**構造の表示名に対する**PR_ANR**プロパティの値と一致します。 **PR_ANR**プロパティ制限を使用してコンテナーの contents テーブルの表示を制限すると、アドレス帳プロバイダーは、プロバイダーにとって意味のあるプロパティに一致する検索の種類として "最適な推測" を実行することになります。 たとえば、1つのアドレス帳プロバイダーは、 **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) に対して受信者リスト内の名前と一致する場合がありますが、管理者はこのプロパティを選択できます。
   
- **アドレス帳コンテナーの内容のテーブルで PR_ANR プロパティの制限を設定するのには**
+ **アドレス帳コンテナーの contents テーブルに PR_ANR プロパティ制限を設定するには**
   
-1. 次のコードに示すように[SRestriction](srestriction.md)構造体を作成します。 
+1. 次のコードに示すように、 [srestriction](srestriction.md)構造を作成します。 
     
   ```cpp
   SRestriction SRestrict;
@@ -49,6 +49,6 @@ ms.locfileid: "22562933"
    
   ```
 
-2. 内容**SRestriction**構造体を_lpRestriction_パラメーターとして渡して、テーブルの[IMAPITable::Restrict](imapitable-restrict.md)メソッドを呼び出します。 
+2. コンテンツテーブルの[IMAPITable:: Restrict](imapitable-restrict.md)メソッドを呼び出し、 **srestriction**構造を_lpRestriction_パラメーターとして渡します。 
     
 

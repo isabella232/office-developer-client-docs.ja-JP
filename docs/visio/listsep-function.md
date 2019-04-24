@@ -8,17 +8,17 @@ f1_keywords:
 - Vis_DSS.chm82251882
 localization_priority: Normal
 ms.assetid: 73dc5981-2c8c-e76e-e4bd-e65a7c8db242
-description: 現在のユーザー ロケールの一覧の区切り文字列を返します。
-ms.openlocfilehash: 77610b2cf3cc515fb5d3e8b4c6c48de98ab4acc2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 現在のユーザーロケールのリスト区切り文字列を返します。
+ms.openlocfilehash: 901442a3c2af8509855b8b038057e7f813634ea1
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322345"
 ---
 # <a name="listsep-function"></a>LISTSEP 関数
 
-現在のユーザー ロケールの一覧の区切り文字列を返します。
+現在のユーザーロケールのリスト区切り文字列を返します。
   
 ## <a name="syntax"></a>構文
 
@@ -30,6 +30,6 @@ String
   
 ## <a name="example"></a>例
 
-SETF(GETREF(user.extent) を表します (幅&amp;ListSep() &amp; 「の高さ)」) 
+setf (getref (ユーザーエクステント), "MAX (Width" &amp; listsep () &amp; "Height)") 
   
 

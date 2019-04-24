@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 341ad06b-1caa-49bb-b859-cb512f6fb55d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4b02fc316001ae11d64988cc29d0e62e9adde55e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: cb20469adec938817fedf1b00789304625b388c8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328008"
 ---
 # <a name="ftaddft"></a>FtAddFt
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-別の 1 つの符号なし 64 ビット整数を追加します。
+符号なしの64ビットの整数をもう1つ追加します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 FILETIME FtAddFt(
@@ -44,14 +44,14 @@ FILETIME FtAddFt(
 
  _Addend1_
   
-> [in]追加する最初の符号なし 64 ビット整数を格納する[FILETIME](filetime.md)構造体。 
+> 順番追加する最初の未署名の64ビット整数を含む[FILETIME](filetime.md)構造体。 
     
  _Addend2_
   
-> [in]追加する 2 番目の符号なし 64 ビット整数を格納する**FILETIME**構造体。 
+> 順番追加する2番目の符号なし64ビット整数を含む**FILETIME**構造。 
     
 ## <a name="return-value"></a>戻り値
 
-**FtAddFt**関数は、2 つの整数の合計を格納する**FILETIME**構造体を返します。 2 つの入力パラメーターは変更されません。 
+**ftaddft**関数は、2つの整数の合計を含む**FILETIME**構造を返します。 2つの入力パラメーターは変更されません。 
   
 

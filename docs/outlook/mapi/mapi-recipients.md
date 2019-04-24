@@ -8,12 +8,12 @@ api_type:
 - COM
 ms.assetid: 88a4360d-6ab8-466e-8ebd-af80227ee00a
 description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 6af54b773b875531437a275f14c961a06ef799ff
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ebdaf47b4f20763574ffac73bddeb3eb4eeb95df
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328218"
 ---
 # <a name="mapi-recipients"></a>MAPI ��M��
 
@@ -31,13 +31,13 @@ ms.locfileid: "22569520"
     
 - 行識別子、または**PR_ROWID** ([PidTagRowid](pidtagrowid-canonical-property.md))
     
-メッセージには、名前解決の処理が行われましたが、各受信者もがエントリの識別子、または**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) の列です。 メッセージが送信されると、受信者テーブルの行が 2 つ以上の列を追加します。
+メッセージが名前解決プロセスに切り替えられた後、各受信者には、エントリ識別子または**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) 列もあります。 And when the message has been submitted, the rows in the recipient table will add two more columns:
   
 - アドレスの種類、または**PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))
     
-- トランスポートの役割または**れない**([PidTagResponsibility](pidtagresponsibility-canonical-property.md))
+- トランスポート責任、または**PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md))
     
-クライアントは、その**IMessage::GetRecipientTable**メソッドまたは**IMAPIProp::OpenProperty**メソッドを呼び出すことによって、メッセージの受信者テーブルを取得できます。 詳細については、 [IMessage::GetRecipientTable](imessage-getrecipienttable.md)および[IMAPIProp::OpenProperty](imapiprop-openproperty.md)を参照してください。 メッセージ ストア プロバイダーは、これらの方法の両方をサポートする必要があります。 **OpenProperty**のアプローチでは、クライアントがインターフェイス識別子とプロパティ タグと**PR_MESSAGE_RECIPIENTS**として IID_IMAPITable を指定することが必要です。 **PR_MESSAGE_RECIPIENTS**([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) は、メッセージの受信者テーブルを表すテーブル オブジェクトのプロパティです。 メッセージ ストア プロバイダーは、メッセージごとに**PR_MESSAGE_RECIPIENTS**を設定し、 **IMAPIProp::GetPropList**メソッドから返されるプロパティ タグの配列に追加する必要があります。 詳細については、 [IMAPIProp::GetPropList](imapiprop-getproplist.md)を参照してください。
+Clients can retrieve a message's recipient table by calling its **IMessage::GetRecipientTable** method or its **IMAPIProp::OpenProperty** method. For more information, see [IMessage::GetRecipientTable](imessage-getrecipienttable.md) and [IMAPIProp::OpenProperty](imapiprop-openproperty.md). Message store providers are expected to support both of these approaches. The **OpenProperty** approach requires that the client specify IID_IMAPITable as the interface identifier and **PR_MESSAGE_RECIPIENTS** as the property tag. **PR_MESSAGE_RECIPIENTS**([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) は、メッセージの受信者テーブルを表す table オブジェクトプロパティです。 Message store providers are required to set **PR_MESSAGE_RECIPIENTS** for each message and include it in the array of property tags returned from the **IMAPIProp::GetPropList** method. For more information, see [IMAPIProp::GetPropList](imapiprop-getproplist.md).
   
 ��M�҂̃e�[�u���𑀍삷����@�̏ڍׂɂ��ẮA [��M�҂̃e�[�u��](recipient-tables.md)��Q�Ƃ��Ă��������B
   
@@ -47,7 +47,7 @@ ms.locfileid: "22569520"
     
 - �q�̐�������M�҂ɓK�p���邩��������ʐ������܂��B
     
-MAPI アドレス帳からエントリをコピーするか、新しいエントリを作成することによって、クライアントはメッセージに受信者を追加できます。 一時アドレスと呼ばれる、これらの新しいエントリでは、一時的に存在することがまたは変更可能なコンテナー内で永続的に保存されます。 受信者をアドレス帳から取得されますがある、エントリの id がアドレス帳プロバイダーに関連付けられている、1 回限りの受信者は MAPI によってフォーマットされているエントリの識別子をあります。 トランスポート プロバイダーとさまざまな種類のアドレスを持つクライアント関連の 1 回限りのエントリの識別子です。 
+Clients can add recipients to a message by copying entries from the MAPI address book or by creating new entries. These new entries, called one-offs, can exist temporarily or be saved permanently in a modifiable container. Whereas recipients that are taken from the address book have entry identifiers associated with their address book provider, one-off recipients have entry identifiers that are formatted by MAPI. Transport providers and clients associate one-off entry identifiers with various types of addresses. 
   
 �g�����X�|�[�g �v���o�C�_�[�ʘb **IMAPISupport::CreateOneOff** ���M�̃A�h���X�� 1 �����̃G���g�����ʎq��쐬���郁�b�Z�[�W�̏ꍇ�B 
   
@@ -73,6 +73,6 @@ MAPI アドレス帳からエントリをコピーするか、新しいエント
   
 ��M�҂Ƀ��b�Z�[�W���\������Ȃ��ꍇ�́A�����đ��M���悤�Ƃ��܂������A��M�҂��R�s�[����܂�����̎�ސݒ肪 MAPI_P1 ��đ��M���鈶���w�肵�܂��B�ꕔ�̎�M�҂ɂ́A���b�Z�[�W���\�������A�����̏ꍇ�A���� **PR_RECIPIENT_TYPE**�v���p�e�B�́A���b�Z�[�W��đ������Ƃ� MAPI_SUBMITTED �t���O�̓�e�ƃ}�[�N����܂��B�N���C�A���g�̓v���C�}���̎�M�҂�������邽�߂ɕK�v�Ȃ܂��́A **PR_RECIPIENT_TYPE**�����M�҂� MAPI_TO �ɐݒ肵�܂��B���̑��̂��ׂĂ̎�ނ̓I�v�V�����ł��B 
   
- **れない**は、トランスポート プロバイダーに受信者への送信を処理するように動作しているかどうかを示すために設定されています。 送信メッセージが送信されると、すべての受信者**れない**を FALSE に設定します。 トランスポート プロバイダーは、1 つまたは複数の受信者に送信するための責任を主張とその**れない**プロパティが TRUE に設定します。 
+ **PR_RESPONSIBILITY** is set to indicate to the transport provider whether or not it should handle sending to the recipient. When an outgoing message is first sent, all of the recipients set **PR_RESPONSIBILITY** to FALSE. As a transport provider claims responsibility for sending to one or more of the recipients, their **PR_RESPONSIBILITY** properties are set to TRUE. 
   
 

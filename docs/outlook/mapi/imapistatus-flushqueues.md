@@ -1,5 +1,5 @@
 ---
-title: IMAPIStatusFlushQueues
+title: imapistatusflushqueues
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: d6b01a91-b452-4b2c-9802-698e7b0f4169
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 30aaaaa250155215149a941da7f7e528d65b8dc3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 5f8396ca84192e485d33fb5a96f641361b717584
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328195"
 ---
 # <a name="imapistatusflushqueues"></a>IMAPIStatus::FlushQueues
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-送信またはアップロードまたはダウンロードをすぐに受信を待機しているすべてのメッセージを強制的にします。 MAPI スプーラーの状態のオブジェクトおよびトランスポート プロバイダーを実装する状態オブジェクトは、このメソッドをサポートします。
+送信または受信を待機しているすべてのメッセージを直ちにアップロードまたはダウンロードすることを強制します。 トランスポートプロバイダーが実装する MAPI スプーラー状態オブジェクトと状態オブジェクトは、このメソッドをサポートしています。
   
 ```cpp
 HRESULT FlushQueues(
@@ -38,71 +38,71 @@ HRESULT FlushQueues(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulUIParam_
+ _uluiparam_
   
-> [in]すべてのダイアログ ボックスの親ウィンドウまたはこのメソッドを表示するウィンドウへのハンドル。
+> 順番このメソッドが表示するダイアログボックスまたはウィンドウの親ウィンドウへのハンドル。
     
- _cbTargetTransport_
+ _cbtargettransport_
   
-> [in]_LpTargetTransport_パラメーターで指定されたエントリの識別子のバイト数です。 _CbTargetTransport_パラメーターは、MAPI スプーラーを無効の状態のオブジェクトへの呼び出しでのみ設定されています。 トランスポート プロバイダーへの呼び出し、 _cbTargetTransport_パラメーターが 0 に設定されます。 
+> 順番_lptargettransport_パラメーターで指定されたエントリ識別子のバイト数。 _cbtargettransport_パラメーターは、MAPI スプーラーの status オブジェクトへの呼び出しに対してのみ設定されます。 トランスポートプロバイダーの呼び出しの場合、 _cbtargettransport_パラメーターは0に設定されます。 
     
- _lpTargetTransport_
+ _lptargettransport_
   
-> [in]そのメッセージ キューをフラッシュするのには、トランスポート プロバイダーのエントリの識別子へのポインター。 _LpTargetTransport_パラメーターは、MAPI スプーラーを無効の状態のオブジェクトへの呼び出しでのみ設定されています。 トランスポート プロバイダーへの呼び出し、 _lpTargetTransport_パラメーターは NULL に設定します。 
+> 順番メッセージキューをフラッシュするトランスポートプロバイダーのエントリ識別子へのポインター。 _lptargettransport_パラメーターは、MAPI スプーラーの status オブジェクトへの呼び出しに対してのみ設定されます。 トランスポートプロバイダーの呼び出しの場合、 _lptargettransport_パラメーターは NULL に設定されます。 
     
  _ulFlags_
   
-> [in]フラッシュ操作を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番フラッシュ操作を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 FLUSH_ASYNC_OK 
   
-> フラッシュ操作が非同期的に発生することができます。 このフラグは、MAPI スプーラーを無効の状態のオブジェクトにのみ適用されます。 
+> フラッシュ操作は非同期的に発生する可能性があります。 このフラグは、MAPI スプーラーの状態オブジェクトにのみ適用されます。 
     
 FLUSH_DOWNLOAD 
   
-> 受信メッセージ キューをフラッシュする必要があります。
+> 受信メッセージキューをフラッシュする必要があります。
     
 FLUSH_FORCE 
   
-> フラッシュ操作にする必要がありますパフォーマンスが低下する可能性も関係なく、発生します。 非同期型のトランスポート プロバイダーを対象としたとき、このフラグを設定する必要があります。
+> フラッシュ操作は、パフォーマンスが低下する可能性があるにもかかわらず、発生します。 このフラグは、非同期トランスポートプロバイダーを対象とする場合に設定する必要があります。
     
 FLUSH_NO_UI 
   
-> ステータス オブジェクトでは、進行状況のインジケーターが表示されない必要があります。
+> status オブジェクトは、進行状況インジケーターを表示しません。
     
 FLUSH_UPLOAD 
   
-> 送信メッセージのキューをフラッシュする必要があります。
+> 送信メッセージキューをフラッシュする必要があります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> フラッシュ操作が正常に完了しました。
+> フラッシュ操作が正常に終了しました。
     
 MAPI_E_BUSY 
   
-> 別の操作が実行中です。完了するために許可するか、停止する、この操作を開始する前に。
+> 別の操作が進行中です。この操作を開始するには、これを完了させるか、停止する必要があります。
     
 MAPI_E_NO_SUPPORT 
   
-> 状態オブジェクトは、この操作をサポートしていません状態オブジェクトの**PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) のプロパティに STATUS_FLUSH_QUEUES フラグがない場合で示される。
+> status オブジェクトの**PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) プロパティに STATUS_FLUSH_QUEUES フラグが設定されていない場合、status オブジェクトはこの操作をサポートしていません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPIStatus::FlushQueues**メソッドは、MAPI スプーラーを無効またはトランスポート プロバイダーすぐに発信キュー内のすべてのメッセージを送信または受信キューからすべてのメッセージを受信するを要求します。 **FlushQueues**は、MAPI スプーラーの状態のオブジェクトのみが、トランスポート プロバイダーの供給状態のオブジェクトによって実装されます。 
+**imapistatus:: flushqueues**メソッドは、MAPI スプーラーまたはトランスポートプロバイダーが、送信キュー内のすべてのメッセージを直ちに送信するか、または受信キューからすべてのメッセージを受信することを要求します。 **flushqueues**は、トランスポートプロバイダーが提供する MAPI スプーラー状態オブジェクトと状態オブジェクトによってのみ実装されます。 
   
-非同期要求のクライアントは、作業を続行できるように、MAPI_E_BUSY が返されます。 
+クライアントが処理を続行できるように、非同期要求に対して MAPI_E_BUSY を返す必要があります。 
   
-既定では、 **FlushQueues**は、同期操作です。フラッシュが完了するまで、制御は呼び出し側に返されません。 のみ、フラッシュ操作 MAPI スプーラーが実行できる可能性があります。クライアントは、FLUSH_ASYNC_OK フラグを設定することによってこの動作を要求します。 
+既定では、 **flushqueues**は同期操作です。コントロールは、フラッシュが完了するまで呼び出し元に戻りません。 MAPI スプーラーによって実行されるフラッシュ操作だけが非同期になることができます。クライアントは、FLUSH_ASYNC_OK フラグを設定してこの動作を要求します。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**FlushQueues**のリモート トランスポート プロバイダーの実装では、キューをフラッシュする方法を制御するため、ログオン オブジェクトの [状態] 行で、 **PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md)) のプロパティのビットを設定します。 リモート ビューアーは、FLUSH_UPLOAD フラグに合格した場合、 **FlushQueues**メソッドは、STATUS_INBOUND_ENABLED と STATUS_INBOUND_ACTIVE のビットを設定します。 リモート ビューアーは、FLUSH_DOWNLOAD フラグに合格した場合、 **FlushQueues**メソッドは、STATUS_OUTBOUND_ENABLED と STATUS_OUTBOUND_ACTIVE のビットを設定します。 **FlushQueues**では、S_OK を返す必要がありますし。 MAPI スプーラーを無効にし、アップロードし、メッセージをダウンロードするには、適切なアクションが開始されます。 
+リモートトランスポートプロバイダーの**flushqueues**の実装は、キューのフラッシュ方法を制御するために、ログオンオブジェクトの状態行の**PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md)) プロパティにビットを設定します。 リモートビューアーが FLUSH_UPLOAD フラグを渡す場合、 **flushqueues**メソッドは STATUS_INBOUND_ENABLED と STATUS_INBOUND_ACTIVE ビットを設定する必要があります。 リモートビューアーが FLUSH_DOWNLOAD フラグを渡す場合、 **flushqueues**メソッドは STATUS_OUTBOUND_ENABLED と STATUS_OUTBOUND_ACTIVE ビットを設定する必要があります。 **flushqueues**は S_OK を返す必要があります。 その後、MAPI スプーラーは、メッセージをアップロードしてダウンロードするための適切なアクションを開始します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-MAPI スプーラーの状態のオブジェクトへの呼び出しは、するか、適切なトランスポート プロバイダーからすべてのメッセージを転送するディレクティブです。 個々 のトランスポート プロバイダーの状態のオブジェクトを呼び出すと、そのプロバイダーのメッセージだけが影響を受けます。
+MAPI スプーラー状態オブジェクトの呼び出しは、適切なトランスポートプロバイダーとの間のすべてのメッセージを転送するためのディレクティブです。 個別のトランスポートプロバイダーの status オブジェクトを呼び出すと、そのプロバイダーのメッセージのみが影響を受けます。
   
 ## <a name="see-also"></a>関連項目
 

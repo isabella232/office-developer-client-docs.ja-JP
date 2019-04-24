@@ -7,42 +7,42 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 3bc4aea5-ab01-4ba5-a4ad-7a9a76c6bf55
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 8c82ff28dca4fc50c7801a533f7ad757b839cddf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 98c4bd0dba630db32fdb2309be3d29ebc13b1131
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328225"
 ---
 # <a name="mapi-session-handling"></a>MAPI �Z�b�V�����̏���
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-サービス プロバイダーと、基になるメッセージング システムと通信するには、セッションを確立する必要があります。 MAPI セッションは、クライアントからその他の MAPI コンポーネントへのリンクです。 結果として正常にセッションを開始、MAPI クライアントに返しますセッション オブジェクトへのポインター、 **IMAPISession**インターフェイスを実装するオブジェクトです。 詳細についてを参照してください[IMAPISession: IUnknown](imapisessioniunknown.md)。 アドレス帳、メッセージ ストア プロバイダーのオブジェクトにアクセスする、いくつかのテーブルにアクセス、フォームを表示する、トランスポート プロバイダーのプロパティを設定およびプロファイルおよびメッセージ サービス管理を実行するのには、 **IMAPISession**インターフェイスのメソッドを使用できます。 
+サービスプロバイダおよび基盤となるメッセージングシステムと通信するには、事前にセッションを確立しておく必要があります。 mapi セッションは、クライアントから他の mapi コンポーネントへのリンクです。 セッションが正常に開始された結果、MAPI はクライアントに session オブジェクトへのポインターを返します。これは、 **imapisession**インターフェイスを実装するオブジェクトです。 詳細については、「 [imapisession: IUnknown](imapisessioniunknown.md)」を参照してください。 **imapisession**インターフェイスのメソッドを使用すると、アドレス帳およびメッセージストアプロバイダーのオブジェクトにアクセスし、複数のテーブルにアクセスしたり、フォームを表示したり、トランスポートプロバイダーのプロパティを設定したり、プロファイルとメッセージサービスの管理を実行したりすることができます。 
   
 ## <a name="in-this-section"></a>このセクションの内容
 
 [MAPI セッションの開始](starting-a-mapi-session.md)
   
-> MAPI セッションを開始する方法について説明しより詳細な情報を含むトピックへのリンクが含まれています。
+> MAPI セッションを開始する方法について説明し、詳細情報を含むトピックへのリンクを示します。
     
 [MAPI セッションの終了](ending-a-mapi-session.md)
   
 > MAPI セッションを終了する方法について説明します。
     
-[セッションを使用したオブジェクトへのアクセス](accessing-objects-by-using-the-session.md)
+[セッションを使用してオブジェクトにアクセスする](accessing-objects-by-using-the-session.md)
   
-> セッション オブジェクトにアクセスするセッションのポインターを使用する方法について説明します。
+> セッションポインターを使用して session オブジェクトにアクセスする方法について説明します。
     
-[プライマリとプロバイダー ID の取得](retrieving-primary-and-provider-identity.md)
+[プライマリとプロバイダー id の取得](retrieving-primary-and-provider-identity.md)
   
-> プロバイダーの id、プライマリを取得するためのプロパティについて説明します。
+> プライマリとプロバイダーの id を取得するために使用されるプロパティについて説明します。
     
 [状態テーブルと状態オブジェクト](status-table-and-status-objects.md)
   
-> 状態テーブルから情報にアクセスする方法をについて説明します。
+> 状態テーブルから情報にアクセスする方法について説明します。
     
 

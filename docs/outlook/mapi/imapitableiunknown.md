@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: f25be2b1-0f94-4a0c-b29d-d2201dc70ab7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a5504711bdeac4ef94cbe47395ceb8163b60ad68
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d6a13799da4ef9315f9c23317fa18853d71c72f9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328799"
 ---
 # <a name="imapitable--iunknown"></a>IMAPITable : IUnknown
 
@@ -25,48 +25,48 @@ ms.locfileid: "22584332"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルの読み取り専用ビューを提供します。 **IMAPITable**は、テーブルの表示方法を操作するクライアントとサービス ・ プロバイダーによって使用されます。 
+テーブルの読み取り専用のビューを提供します。 **IMAPITable**は、クライアントとサービスプロバイダーが表の表示方法を操作するために使用されます。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|によって公開されます。  <br/> |テーブル オブジェクト  <br/> |
-|によって実装されます。  <br/> |サービス プロバイダーおよび MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーション、サービス ・ プロバイダー  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IMAPITable  <br/> |
-|ポインターの型。  <br/> |LPMAPITABLE  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|公開者:  <br/> |Table オブジェクト  <br/> |
+|実装元:  <br/> |サービスプロバイダーと MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーション、サービスプロバイダー  <br/> |
+|インターフェイス識別子:  <br/> |IID_IMAPITable  <br/> |
+|ポインターの種類:  <br/> |LPMAPITABLE  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[発生しました](imapitable-getlasterror.md) <br/> |テーブルの前のエラーに関する情報を含む[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
-|[アドバイス](imapitable-advise.md) <br/> |テーブルに影響を与えず、指定されたイベントの通知を受け取ることを登録します。  <br/> |
-|[アドバイズ中止します。](imapitable-unadvise.md) <br/> |**IMAPITable::Advise**メソッドへの呼び出しは、設定済みの通知の送信をキャンセルします。  <br/> |
-|[GetStatus](imapitable-getstatus.md) <br/> |テーブルのステータスおよび種類を返します。  <br/> |
-|[SetColumns](imapitable-setcolumns.md) <br/> |特定のプロパティと、テーブル内の列として表示するプロパティの順序を定義します。  <br/> |
-|[QueryColumns](imapitable-querycolumns.md) <br/> |テーブルの列の一覧を返します。  <br/> |
-|[な](imapitable-getrowcount.md) <br/> |テーブル内の行の合計数を返します。  <br/> |
-|[SeekRow](imapitable-seekrow.md) <br/> |テーブル内の特定の位置にカーソルを移動します。  <br/> |
-|[SeekRowApprox](imapitable-seekrowapprox.md) <br/> |テーブルのおおよその小数部から成る位置にカーソルを移動します。  <br/> |
-|[QueryPosition](imapitable-queryposition.md) <br/> |小数部の値に基づいて、カーソルの現在のテーブルの行位置を取得します。  <br/> |
-|[FindRow](imapitable-findrow.md) <br/> |特定の検索条件に一致するテーブル内には、次の行を検索します。  <br/> |
-|[制限します。](imapitable-restrict.md) <br/> |指定した条件に一致する行のみに設定した行を減らすこと、テーブルにフィルターを適用します。  <br/> |
-|[CreateBookmark](imapitable-createbookmark.md) <br/> |テーブルの現在の位置をマークします。  <br/> |
-|[FreeBookmark](imapitable-freebookmark.md) <br/> |ブックマークに関連付けられているメモリを解放します。  <br/> |
-|[SortTable](imapitable-sorttable.md) <br/> |並べ替え条件に基づいて、テーブルの行を順序付けします。  <br/> |
-|[QuerySortOrder](imapitable-querysortorder.md) <br/> |テーブルの現在の並べ替え順序を取得します。  <br/> |
-|[QueryRows](imapitable-queryrows.md) <br/> |現在のカーソル位置から開始し、テーブルから 1 つまたは複数の行を返します。  <br/> |
-|[中止](imapitable-abort.md) <br/> |テーブルの現在進行中のすべての非同期操作を停止します。  <br/> |
-|[ExpandRow](imapitable-expandrow.md) <br/> |テーブル ビューをカテゴリに属しているリーフ行の追加、折りたたまれているテーブルのカテゴリを展開します。  <br/> |
-|[CollapseRow](imapitable-collapserow.md) <br/> |テーブル ・ ビューのカテゴリに属するリーフ行を削除する、拡張テーブルのカテゴリを折りたたみます。  <br/> |
-|[WaitForCompletion](imapitable-waitforcompletion.md) <br/> |1 つまたは複数の非同期操作の進行状況でテーブルに完了するまでの処理を中断します。  <br/> |
-|[GetCollapseState](imapitable-getcollapsestate.md) <br/> |現在を再構築するために必要なデータを返しますは、折りたたむか、カテゴリ別のテーブルの状態を展開します。  <br/> |
-|[SetCollapseState](imapitable-setcollapsestate.md) <br/> |**IMAPITable::GetCollapseState**メソッドへの前回の呼び出しによって保存されたデータを使用して分類されたテーブルの現在の展開または折りたたみの状態を再構築します。  <br/> |
+|[GetLastError](imapitable-getlasterror.md) <br/> |表の前のエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
+|[助言](imapitable-advise.md) <br/> |テーブルに影響を与える指定したイベントの通知を受信するように登録します。  <br/> |
+|[アドバイズ](imapitable-unadvise.md) <br/> |**IMAPITable:: Advise**メソッドへの呼び出しを使用して、以前に設定した通知の送信をキャンセルします。  <br/> |
+|[GetStatus](imapitable-getstatus.md) <br/> |テーブルの状態と種類を返します。  <br/> |
+|[SetColumns](imapitable-setcolumns.md) <br/> |表に列として表示されるプロパティとプロパティの順序を定義します。  <br/> |
+|[querycolumns](imapitable-querycolumns.md) <br/> |テーブルの列のリストを返します。  <br/> |
+|[GetRowCount](imapitable-getrowcount.md) <br/> |テーブル内の行の総数を返します。  <br/> |
+|[seekrow](imapitable-seekrow.md) <br/> |テーブル内の特定の位置にカーソルを移動します。  <br/> |
+|[seekrowapprox](imapitable-seekrowapprox.md) <br/> |テーブル内のおおよその分数位置にカーソルを移動します。  <br/> |
+|[queryposition](imapitable-queryposition.md) <br/> |小数値に基づいて、カーソルの現在のテーブル行の位置を取得します。  <br/> |
+|[FindRow](imapitable-findrow.md) <br/> |特定の検索条件に一致するテーブル内の次の行を検索します。  <br/> |
+|[Restrict](imapitable-restrict.md) <br/> |テーブルにフィルターを適用し、指定された条件に一致する行だけを行のセットに絞ります。  <br/> |
+|[createbookmark](imapitable-createbookmark.md) <br/> |テーブルの現在の位置を示します。  <br/> |
+|[freebookmark](imapitable-freebookmark.md) <br/> |ブックマークに関連付けられているメモリを解放します。  <br/> |
+|[sorttable](imapitable-sorttable.md) <br/> |並べ替えの基準に基づいて、テーブルの行の順序を示します。  <br/> |
+|[querysortorder](imapitable-querysortorder.md) <br/> |テーブルの現在の並べ替え順序を取得します。  <br/> |
+|[QueryRows](imapitable-queryrows.md) <br/> |現在のカーソル位置から、1つまたは複数の行をテーブルから返します。  <br/> |
+|[中止](imapitable-abort.md) <br/> |テーブルに対して現在進行中のすべての非同期操作を停止します。  <br/> |
+|[expandrow](imapitable-expandrow.md) <br/> |折りたたまれたテーブルカテゴリを展開し、そのカテゴリに属するリーフ行をテーブルビューに追加します。  <br/> |
+|[CollapseRow](imapitable-collapserow.md) <br/> |拡張されたテーブルカテゴリを折りたたみ、テーブルビューからそのカテゴリに属するリーフ行を削除します。  <br/> |
+|[waitforcompletion](imapitable-waitforcompletion.md) <br/> |テーブルで進行中の1つ以上の非同期操作が完了するまで処理を中断します。  <br/> |
+|[GetCollapseState](imapitable-getcollapsestate.md) <br/> |カテゴリ化されたテーブルの現在の折りたたまれた状態または展開された状態を再構築するために必要なデータを返します。  <br/> |
+|[SetCollapseState](imapitable-setcollapsestate.md) <br/> |以前の**IMAPITable:: GetCollapseState**メソッドの呼び出しによって保存されたデータを使用して、カテゴリ化されたテーブルの現在の展開状態または折りたたみ状態を再構築します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
 

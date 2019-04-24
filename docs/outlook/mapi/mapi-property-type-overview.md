@@ -1,5 +1,5 @@
 ---
-title: MAPI プロパティの型の概要
+title: MAPI プロパティの種類の概要
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,55 +7,55 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: b762f5fb-7c2c-4303-96f7-0b6e657146c9
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2de51e1cf0f29c91e39eb3c6dbaab065fd7d5972
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 58dd25f09b76d97fd6441915225756a19f4ec3cb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328263"
 ---
-# <a name="mapi-property-type-overview"></a>MAPI プロパティの型の概要
+# <a name="mapi-property-type-overview"></a>MAPI プロパティの種類の概要
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロパティの型は、MAPIDEFS では、MAPI によって定義されている定数です。H ヘッダー ファイルのプロパティ値の基になるデータ型を示す。 すべてのプロパティは、MAPI、クライアント アプリケーション、またはサービス ・ プロバイダーに定義されているかどうかを使用して、これらの種類のいずれかです。 
+プロパティの種類は、mapidefs.h で MAPI によって定義される定数です。プロパティ値の基になるデータ型を示す H ヘッダーファイル。 すべてのプロパティ (MAPI、クライアントアプリケーション、またはサービスプロバイダーによって定義されているかどうか) は、次のいずれかの種類を使用します。 
   
-プロパティの型は、次のような名前付け規則のプロパティ タグを使用に設定します。 多くのプロパティの種類には、単一値と複数値の両方のバージョンがインストールされています。 1 つの値を持つプロパティには、1 つの整数や文字列などの型の 1 つの値が含まれています。 単一値のプロパティを表すために使用する定数には、2 つの部分: プレフィックス PT_ と時間の長い、STRING8 など、実際の型を記述する文字列。 
+プロパティの種類は、プロパティタグに使用する名前付け規則に似ています。 多くのプロパティの種類には、単一値と複数値の両方のバージョンがあります。 単一の値のプロパティには、1つの整数または文字列などの1つの型の値が含まれています。 単一の値のプロパティを表す定数は、次の2つの部分で構成されます。プレフィックス PT_ と、LONG または STRING8 などの実際の型を表す文字列。 
   
-複数値プロパティには、その型の 1 つ以上の値が含まれています。 OLE バリアント型の配列とは異なりは、同じ種類の複数値を持つプロパティに含まれる値です。 複数値を持つプロパティを表すために使用する定数は、対応する 1 つの値を表す定数基本型と、MV_FLAG フラグを組み合わせることによって作成されます。 次の 3 つの部分があります: MV_ の後に PT_ というプレフィックスの後に型を表す文字列。 たとえば、複数の整数を格納しているプロパティの型は、PT_MV_LONG、PT_MV_STRING8 は、複数の文字列をします。
+複数値プロパティには、その型の複数の値が含まれています。 OLE バリアント型 (variant) の配列とは異なり、複数値プロパティのすべての値は同じ型です。 複数値プロパティを表すために使用される定数は、MV_FLAG フラグと、それに対応する基本型を表す単一値定数を組み合わせて作成します。 次の3つの部分があります。プレフィックス PT_ の後に MV_ が続き、その後に型を記述する文字列が続きます。 たとえば、複数の整数を含むプロパティの型は PT_MV_LONG で、複数の文字列は PT_MV_STRING8 です。
   
-次の図は、複数値の整数では、PT_MV_LONG の種類のプロパティを記述する[SPropValue](spropvalue.md)構造体の構造を示します。 **値**のメンバーは、プロパティとそれらの値の配列へのポインターに整数値の数のカウントを含むように拡張されます。 
+次の図は、PT_MV_LONG 型のプロパティとして、複数値の整数を記述する[spropvalue](spropvalue.md)構造体の構造を示しています。 **Value**メンバーは、プロパティの整数値の数と、それらの値の配列へのポインターを含むように展開されています。 
   
 **複数値プロパティ**
   
-![複数値のプロパティ](media/amapi_12.gif "複数値のプロパティ")
+![複数値プロパティ](media/amapi_12.gif "複数値プロパティ")
   
-複数値をサポートするプロパティは省略可能、MAPI は、クライアントとサービス ・ プロバイダーをサポートして両方の種類のプロパティのため、有効に MAPI 準拠のコンポーネント間の対話をよりことをお勧めします。
+複数値プロパティのサポートはオプションですが、mapi 準拠のコンポーネント間の相互作用を可能にするため、クライアントとサービスプロバイダーは両方の種類のプロパティをサポートすることをお勧めします。
   
-次の図では、すべて**SPropValue**構造体に格納されている場所を示すさまざまなプロパティ型の定数の一覧表示されます。 **値**のメンバーのサイズは、特定のタイプによって異なります。 対応する複数値があるすべての単一値の型に注意してください。 
+次の図は、さまざまなプロパティの種類の定数を示しています。これは、 **spropvalue**構造に格納されている場所を示しています。 **値**メンバーのサイズは、特定の型によって異なります。 単一値の型には、複数の値が対応しているわけではないことに注意してください。 
   
 **プロパティ タイプ定数**
   
-![プロパティの型の定数](media/amapi_11.gif "プロパティの型の定数")
+![プロパティの種類定数](media/amapi_11.gif "プロパティの種類定数")
   
-クライアントとサービス プロバイダーのプロパティは、2 つの手順に従う必要があります。
+プロパティを使用するクライアントおよびサービスプロバイダーは、次の2つの手順に従う必要があります。
   
-1. プロパティが使用可能または使用できないかを確認します。
+1. プロパティが利用可能かどうかを判断します。
     
-2. 可能な場合、プロパティの値を取得します。
+2. 可能な場合は、プロパティの値を取得します。
     
-クライアントまたはサービス プロバイダーが必要なプロパティの存在をチェックだけ場合があります。それ以外の場合は、特定の値を確認する必要があります。 たとえば、トランスポート プロバイダーが処理のためのアクションの 3 つの異なるコースをある、 **PR\_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)) のプロパティ、メッセージで送信されるかどうかを示すブール値書式設定されたテキストです。 場合**PR\_SEND_RICH_INFO**は、トランスポート プロバイダーは、TRUE に設定すると、書式設定されたテキストを送信します。 FALSE に設定されている場合は、伝送する前に書式設定されたテキストが破棄されます。 **PR_SEND_RICH_INFO**では、トランスポート プロバイダーは、次のようにアクションのどのような場合は、その既定コースは特定のプロバイダーにします。 
+クライアントまたはサービスプロバイダーは、プロパティの存在のみをチェックする必要がある場合があります。その他の場合は、特定の値を確認する必要があります。 たとえば、トランスポートプロバイダーには、 **\_PR SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)) プロパティを処理するための3つの異なるコースがあります。これは、メッセージを送信する必要があるかどうかを示すブール値です。書式付きテキスト。 **PR\_SEND_RICH_INFO**が TRUE に設定されている場合、トランスポートプロバイダーは書式設定されたテキストを送信します。 FALSE に設定されている場合は、書式設定されたテキストは送信前に破棄されます。 **PR_SEND_RICH_INFO**が使用できない場合、トランスポートプロバイダーは、特定のプロバイダー向けの既定のアクションの実行に従います。 
   
-MAPI は、PT_UNSPECIFIED は、クライアントまたはサービス プロバイダーは、プロパティの型が不明の場合は、プロパティを取得するために使用できる特殊なプロパティ型を定義します。型の事前知識がないプロパティを取得するには、クライアントまたはサービス プロバイダーはオブジェクトの[IMAPIProp::GetProps](imapiprop-getprops.md)メソッドを呼び出すし、プロパティ タグのプロパティの識別子と、PT_UNSPECIFIED プロパティのデータ型を渡します。 **GetProps**に、PT_UNSPECIFIED を適切な型に置き換えてプロパティの[SPropValue](spropvalue.md)構造体を返します。 **GetProps**を実装するサービス プロバイダーは、PT_UNSPECIFIED をサポートする必要があります。 
+MAPI は、プロパティの種類が不明な場合にクライアントまたはサービスプロバイダーがプロパティを取得するために使用できる特別なプロパティの種類 PT_UNSPECIFIED を定義します。プロパティを取得するときに、その型を事前に理解していない場合、クライアントまたはサービスプロバイダーは、オブジェクトの[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出し、プロパティの識別子と PT_UNSPECIFIED プロパティの種類で構成されたプロパティタグを渡します。 **GetProps**は、プロパティの[spropvalue](spropvalue.md)構造を返します。 PT_UNSPECIFIED は適切な型に置き換えられます。 **GetProps**を実装するサービスプロバイダーは、PT_UNSPECIFIED をサポートするために必要です。 
   
-MAPI オブジェクトのいくつかは、オブジェクトを自体はプロパティをサポートします。 PT_OBJECT 型は、オブジェクトのプロパティであります。 通常これらのプロパティ、クライアント、サービス プロバイダーにアクセスするのには**IMAPIProp::GetProps**を使用する代わりにユーザーのいずれかの[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッド、オブジェクトのアクセス、またはメソッドの適切なインターフェイスを指定します。プロパティをサポートします。 
+一部の MAPI オブジェクトは、自身のオブジェクトであるプロパティをサポートしています。 オブジェクトのプロパティの型は PT_OBJECT です。 これらのプロパティにアクセスするには、 **imapiprop:: GetProps**を使用するのではなく、通常、クライアントおよびサービスプロバイダーは、 [imapiprop:: openproperty](imapiprop-openproperty.md)メソッドをユーザーとして指定し、access の適切なインターフェイスを指定するか、またはオブジェクトに対するメソッドを指定します。プロパティをサポートします。 
   
-オブジェクトのプロパティの値にアクセスするため、オブジェクトの使用するインタ フェースのいずれかの**GetProps**が適切ではありませんが含まれます。 **GetProps**、呼び出し元がプロパティの値をアクセス**SPropValue**構造体を使用。 **IMAPIProp::OpenProperty**では、呼び出し元は、オブジェクトにアクセスできるインターフェイスへのポインターを取得します。 **OpenProperty**は、オブジェクトのプロパティを取得するために常に使用できます。 すべてのオブジェクト プロパティを使用して、オブジェクトのメソッドを呼び出して、他のオプションが得られません。 
+object プロパティの値にアクセスするには、オブジェクトのインターフェイスの1つを使用する必要があるため、 **GetProps**は適切ではありません。 **GetProps**では、発信者は**spropvalue**構造を使用してプロパティの値にアクセスします。 **imapiprop:: openproperty**を使用すると、呼び出し元は、オブジェクトにアクセスできるインターフェイスへのポインターを取得します。 **openproperty**は、常にオブジェクトプロパティを取得するために使用できます。 その他のオプションは、オブジェクトのメソッドを呼び出すことはできません。すべての object プロパティで使用することはできません。 
   
-たとえば、すべてのフォルダーには、2 つのテーブル、階層テーブルおよび内容のテーブルがサポートされています。 これらのテーブルには、フォルダーのプロパティプロパティ タグは、 **PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) および**PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)) です。 テーブルは、アクセスの**IMAPITable**インターフェイスを必要とするオブジェクトです。 クライアントは、階層テーブルの内容のテーブル、またはフォルダーの[IMAPIProp::OpenProperty にアクセスするためのフォルダーの[IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md)メソッドにアクセスするためのフォルダーの[IMAPIContainer::GetHierarchyTable](imapicontainer-gethierarchytable.md)メソッドを呼び出すことができます。](imapiprop-openproperty.md)いずれかのテーブルにアクセスするメソッドです。 **OpenProperty**を呼び出すには、クライアントは、最初のパラメーターと 2 番目のパラメーターとしてのアクセスに使用するインターフェイスのインターフェイス識別子とプロパティのプロパティ タグを渡します。 これらのパラメーターは、 **PR_CONTAINER_HIERARCHY**または**PR_CONTAINER_CONTENTS**と**IID_IMAPITable**になります。
+たとえば、すべてのフォルダーは、階層テーブルと contents テーブルという2つのテーブルをサポートしています。 これらのテーブルは、フォルダーのプロパティです。これらのプロパティタグは、 **PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) および**PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)) です。 テーブルは、access の**IMAPITable**インターフェイスを必要とするオブジェクトです。 クライアントは、フォルダーの[IMAPIContainer:: GetHierarchyTable](imapicontainer-gethierarchytable.md)メソッドを呼び出して、階層テーブルにアクセスします。フォルダーの[IMAPIContainer:: getcontentstable](imapicontainer-getcontentstable.md)メソッドを使用して、コンテンツテーブルにアクセスします。または、フォルダーの[imapiprop:: openproperty](imapiprop-openproperty.md)どちらかのテーブルにアクセスするメソッド。 **openproperty**を呼び出すために、クライアントはプロパティのプロパティタグを最初のパラメーターとして渡し、2番目のパラメーターとしてのアクセスに使用するインターフェイスのインターフェイス識別子を渡します。 これらのパラメーターは、 **PR_CONTAINER_HIERARCHY**または**PR_CONTAINER_CONTENTS**と**IID_IMAPITable**になります。
   
-単一値および複数値プロパティの型の完全なリストは、[プロパティの型](property-types.md)を参照してください。 
+単一値と複数値のプロパティの種類の完全な一覧については、「[プロパティの種類](property-types.md)」を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

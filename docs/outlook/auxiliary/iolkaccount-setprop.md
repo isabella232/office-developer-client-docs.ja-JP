@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 883b1c5d-47dd-a006-b5f1-130691bdd019
-description: 指定したアカウントのプロパティの値を設定します。
-ms.openlocfilehash: 2bb8a323f5f3399b9eac1cfdf9ac18faddfdb259
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 指定された account プロパティの値を設定します。
+ms.openlocfilehash: 94134cee7886177ab840a6caff7d70d65bf9d4cb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322254"
 ---
 # <a name="iolkaccountsetprop"></a>IOlkAccount::SetProp
 
-指定したアカウントのプロパティの値を設定します。
+指定された account プロパティの値を設定します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -31,24 +31,24 @@ HRESULT IOlkAccount::SetProp(
 
 ## <a name="parameters"></a>パラメーター
 
-_dwProp_
+_dwprop_
   
-> [in]設定するアカウントのプロパティのプロパティ タグです。
+> 順番設定する account プロパティのプロパティタグ。
     
-_pVar_
+_pvar_
   
-> [in]指定したプロパティの値です。
+> 順番指定したプロパティの値を指定します。
     
 ## <a name="return-values"></a>戻り値
 
 |**HRESULT 型**|**Description**|
 |:-----|:-----|
-|S_OK  <br/> |メソッドの呼び出しに成功しました。  <br/> |
-|E_INVALIDARG  <br/> |プロパティの無効なタグが指定されました。  <br/> |
+|S_OK  <br/> |メソッドの呼び出しが成功しました。  <br/> |
+|E_INVALIDARG  <br/> |無効なプロパティタグが指定されました。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-[IOlkAccount::SaveChanges](iolkaccount-savechanges.md)を使用して、アカウントのプロパティの値に変更を保存します。 
+[IOlkAccount:: SaveChanges](iolkaccount-savechanges.md)を使用して、アカウントプロパティの値に対する変更を保存します。 
   
 ## <a name="see-also"></a>関連項目
 

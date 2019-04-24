@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 75ed353c-7d3e-e148-4057-715e82a0f32c
-description: 夏時間の開始時とでそのタイム ゾーン規則最初が発効した年のタイム ゾーン規則の情報を指定します。
+description: 夏時間の開始時期と、そのタイムゾーン規則が最初に有効になる年を示すタイムゾーンルールの情報を指定します。
 ms.openlocfilehash: 71ede7c0061a058c2dd85c7b9b36c42583a6bb84
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25392698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328617"
 ---
 # <a name="tzrule"></a>TZRULE
 
-夏時間の開始時とでそのタイム ゾーン規則最初が発効した年のタイム ゾーン規則の情報を指定します。 
+夏時間の開始時期と、そのタイムゾーン規則が最初に有効になる年を示すタイムゾーンルールの情報を指定します。 
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -28,27 +28,27 @@ typedef struct {
 } TZRULE;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
-_wFlags_
+_wflags_
   
-> このメンバーに設定されているフラグは、このタイム ゾーン規則の特定の詳細を確認します。 使用できるフラグは次のとおりです。
+> このメンバーに設定されているフラグは、このタイムゾーンルールの詳細を識別します。 使用可能なフラグは次のとおりです。
     
-   - **TZRULE_FLAG_EFFECTIVE_TZREG** -現在使用すると、ルールを識別します。 1 つのルールは、有効なルールとしてマークできます。 他のすべての規則は、比較目的でのみです。 
+   - **TZRULE_FLAG_EFFECTIVE_TZREG** —現在使用されている必要のあるルールを識別します。 有効なルールとしてマークできるルールは1つだけです。 他のすべてのルールは比較のみを目的としています。 
     
-   - **TZRULE_FLAG_RECUR_CURRENT_TZREG**などの定期的な会議は、 [PidLidTimeZoneStruct](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)のルールに一致するルールを識別します。 これになる場合は、新しいより包括的なプロパティに注意してください、古いバージョンのクライアントで**PidLidTimeZoneStruct**が大幅に変更されているかどうかを検出するために使用できます。 
+   - **TZRULE_FLAG_RECUR_CURRENT_TZREG** : 定期的な会議では、 [PidLidTimeZoneStruct](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)のルールと一致するルールを識別します。 これは、 **PidLidTimeZoneStruct**が従来のクライアントによって大幅に変更されているかどうかを検出するために使用できます。これは、その他の詳細な完全なプロパティを認識しません。 
     
-_stStart_
+_ststart_
   
-> 世界協定時刻 (UTC) で、タイム ゾーン規則を開始した時刻。
+> タイムゾーンルールが開始された協定世界時 (UTC) の時間。
     
 _TZReg_
   
-> タイム ゾーン規則のタイム ゾーン情報。
+> タイムゾーンルールのタイムゾーン情報。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-この構造体は、タイム ゾーン規則が有効になるときを示す追加情報を提供することによって[TZREG](tzreg.md)を補強します。 
+この構造体は、タイムゾーンルールがいつ有効になるかを示す追加情報を提供することによって、 [TZREG](tzreg.md)を強化します。 
   
 ## <a name="see-also"></a>関連項目
 

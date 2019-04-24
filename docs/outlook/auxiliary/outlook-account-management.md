@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 369cf384-94b6-4d41-8938-afdcbd13f132
-description: このセクションでは、アカウント情報へのアクセスを提供し、アカウントの変更通知をサポートしているアカウント管理 API について説明します。 迷惑メールからアカウントを保護して、POP3 アカウントのメッセージのダウンロードを管理する方法についても含まれています。
-ms.openlocfilehash: 7348e73dfaf510bd7726586ba55ab2b37c2c893c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: このセクションでは、アカウント情報へのアクセスを提供し、アカウント変更通知をサポートするアカウント管理 API について説明します。 また、スパムからアカウントを保護し、POP3 アカウントのメッセージダウンロードを管理する方法についても説明します。
+ms.openlocfilehash: 425739639562a91586d23b41de119916886e2c4a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322114"
 ---
 # <a name="outlook-account-management"></a>Outlook アカウント管理
 
-このセクションでは、アカウント情報へのアクセスを提供し、アカウントの変更通知をサポートしているアカウント管理 API について説明します。 迷惑メールからアカウントを保護して、POP3 アカウントのメッセージのダウンロードを管理する方法についても含まれています。
+このセクションでは、アカウント情報へのアクセスを提供し、アカウント変更通知をサポートするアカウント管理 API について説明します。 また、スパムからアカウントを保護し、POP3 アカウントのメッセージダウンロードを管理する方法についても説明します。
 
 - [アカウント管理 API について](about-the-account-management-api.md)
     

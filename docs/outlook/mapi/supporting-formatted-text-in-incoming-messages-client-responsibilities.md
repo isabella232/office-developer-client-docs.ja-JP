@@ -1,5 +1,5 @@
 ---
-title: 着信メッセージ クライアントの責任でテキストを書式設定をサポート
+title: 受信メッセージでの書式付きテキストのサポートクライアントの責任
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,39 +7,39 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 79727700-5ef1-4a29-9ed0-fd46c7de3202
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d8fdd9ea4dfbc40d7e800be5e2df666738d2cd23
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 7f3cf5b245bdcd2c2707f0e2028d52a15c7e0f6b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327413"
 ---
 # <a name="supporting-formatted-text-in-incoming-messages-client-responsibilities"></a>受信メッセージでの書式付きテキストのサポート: クライアントの責任
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージング システム間でメッセージが転送されると、MAPI スプーラーはリッチ テキストの書式設定がメッセージのテキストとの同期であることを確認します。 MAPI スプーラーは、トランスポート プロバイダーに渡すメッセージの折り返しが設定されたバージョン内から[行う](rtfsync.md)関数を呼び出します。 トランスポート プロバイダーは、 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを呼び出すことによってメッセージに加えられた変更内容を保存し、新しい受信者にルーティングします。 
+メッセージはメッセージングシステム間で転送されるため、MAPI スプーラーは、リッチテキスト形式がメッセージテキストと同期したままになるようにします。 MAPI スプーラーは、ラップされたバージョンのメッセージ内から、トランスポートプロバイダーに渡される[rtfsync](rtfsync.md) function を呼び出します。 トランスポートプロバイダーは、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出して、メッセージに加えられた変更を保存し、新しい受信者にルーティングします。 
   
-書式付きテキストを同期し、 **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) または**PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) のいずれかを開き、受信者の RTF に対応するクライアント アプリケーションでは、テキストを表示するメッセージが開いたら、必要があります。、プロパティが使用されます。
+受信者の RTF 対応クライアントアプリケーションがメッセージを開いてテキストを表示する場合は、テキストを書式設定と同期して、 **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) または**PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) のどちらかを開く必要があります。使用できるプロパティに応じて異なります。
   
- **メッセージ、rtf 形式に対応していないクライアントを開く**
+ **メッセージ、RTF 対応クライアントを開くには**
   
-1. メッセージ ・ ストアが RTF に対応していない場合、書式が設定されたメッセージのテキストの同期を**行う**を呼び出します。 RTF_SYNC_BODY_CHANGED フラグは、 **PR_RTF_IN_SYNC** ([PidTagRtfInSync](pidtagrtfinsync-canonical-property.md)) のプロパティがないか、FALSE に設定されている場合、 _ulFlags_パラメーターに渡さする必要があります。 RTF に対応してメッセージ ・ ストアを使用するクライアントでは、そのメッセージ ・ ストアを管理するため**へ**の呼び出しをする必要がなくなります。 
+1. メッセージストアが RTF に対応していない場合は、 **rtfsync**を呼び出してメッセージテキストと書式設定を同期します。 **PR_RTF_IN_SYNC** ([PidTagRtfInSync](pidtagrtfinsync-canonical-property.md)) プロパティが存在しない場合、または FALSE に設定されている場合は、 _ulflags_パラメーターで RTF_SYNC_BODY_CHANGED フラグを渡す必要があります。 RTF 対応のメッセージストアを使用しているクライアントは、メッセージストアがそれを処理するため、 **rtfsync**呼び出しを行わないでください。 
     
-2. メッセージのテキストが更新されている場合は、 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)を呼び出します。 
+2. メッセージテキストが更新された場合は、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)を呼び出します。 
     
-3. **PR_RTF_COMPRESSED**プロパティを開くには、 [IMAPIProp::OpenProperty](imapiprop-openproperty.md)を呼び出します。 **PR_RTF_COMPRESSED**が利用できない場合は、メッセージの内容を表示する代わりに**PR_BODY**プロパティを開いてください。 
+3. **PR_RTF_COMPRESSED**プロパティを開くには、 [imapiprop:: openproperty](imapiprop-openproperty.md)を呼び出します。 **PR_RTF_COMPRESSED**が使用できない場合は、代わりに**PR_BODY**プロパティを開いて、メッセージの内容を表示する必要があります。 
     
-4. 使用可能な場合は、圧縮された rtf 形式のデータの圧縮されていないバージョンを作成する[WrapCompressedRTFStream](wrapcompressedrtfstream.md)関数を呼び出します。 
+4. 圧縮された RTF データの圧縮されていないバージョンを作成するには、 [WrapCompressedRTFStream](wrapcompressedrtfstream.md)関数を呼び出します。 
     
-5. 非圧縮の rtf 形式のデータまたはテキスト形式のデータをユーザーに表示します。
+5. 非圧縮 RTF データまたはプレーンテキストデータをユーザーに表示します。
     
- **** メッセージが更新されたかどうかを示すブール値を返します。 この値が TRUE を返した場合は、永続的な更新を行うには、ある時点で**SaveChanges**を呼び出します。 **** 返します後すぐに呼び出しがありませんでした。 
+ **rtfsync**メッセージが更新されたかどうかを示すブール値を返します。 この値が TRUE を返す場合は、任意の時点で**SaveChanges**を呼び出して更新を永続的に行います。 **rtfsync**が返された直後に呼び出しを行う必要はありません。 
   
 > [!NOTE]
-> 非常に多くのコンポーネントは、受信する前に書式設定されたテキストを処理するため、破損の可能性があります。 この破損は、メッセージ ストア プロバイダー、サードパーティ製アプリケーションが、ゲートウェイ、または転送エラーからものがあります。 
+> 受信する前に、多くのコンポーネントが書式設定されたテキストを処理するため、破損の可能性があります。 この破損は、メッセージストアプロバイダー、サードパーティアプリケーション、ゲートウェイ、または転送エラーによって発生する可能性があります。 
   
 

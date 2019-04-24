@@ -8,25 +8,25 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2635a829-0f3a-49ed-a672-2f350a2cf979
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f073dbb9655585ee56ab38be35bea4ef320042c0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f308c1f6f3cd2c9904dd94cd6761517bd5b410b6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328022"
 ---
 # <a name="ftadcft"></a>FtAdcFt
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-キャリー フラグを使用して必要に応じて、別の 1 つの符号なし 64 ビット整数を追加します。
+符号なしの64ビット整数をもう1つ別に追加します。オプションで、キャリーフラグを使用します。
   
 |||
 |:-----|:-----|
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 FILETIME FtAdcFt( 
@@ -40,23 +40,23 @@ FILETIME FtAdcFt(
 
  _ft1_
   
-> [in]追加する最初の符号なし 64 ビット整数を格納する[FILETIME](filetime.md)構造体。 
+> 順番追加する最初の未署名の64ビット整数を含む[FILETIME](filetime.md)構造体。 
     
  _ft2_
   
-> [in]追加する 2 番目の符号なし 64 ビット整数を格納する FILETIME 構造体。
+> 順番追加する2番目の符号なし64ビット整数を含む FILETIME 構造。
     
  _pwCarry_
   
-> [in, out オプション]入力では、着信へのポインターは、フラグを実行します。 出力では、追加の実行結果へのポインター。 このパラメーターは、実行結果が必要でない場合、NULL にすることができます。
+> [入力、出力、オプション]入力時に、着信キャリーフラグへのポインター。 出力時に、追加のキャリー結果へのポインター。 キャリー result が必要ない場合は、このパラメーターを NULL にすることができます。
     
 ## <a name="return-value"></a>戻り値
 
-**FtAdcFt**関数は、2 つの整数の合計を格納する**FILETIME**構造体を返します。 2 つの入力パラメーターは変更されません。 、合計の実行結果が含まれる**pwCarry**が NULL 以外の場合は、0 または 1 のいずれかです。 
+**ftadcft**関数は、2つの整数の合計を含む**FILETIME**構造を返します。 2つの入力パラメーターは変更されません。 **pwCarry**が NULL 以外の場合は、sum のキャリー結果 (0 または 1) を含みます。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-_PwCarry_が NULL の場合に、 **FtAdcFt**関数を**FtAddFt**と同じです。 _PwCarry_が NULL でない場合は 0 ポイント、 **FtAdcFt**は、 **FtAddFt**を返す同じ**FILETIME**値を返します。 
+**ftadcft**関数は、 _pwCarry_が NULL の場合、 **ftaddft**と同じです。 _pwCarry_が NULL ではなく0をポイントしている場合、 **ftadcft**は**ftaddft**が返すのと同じ**FILETIME**値を返します。 
   
 ## <a name="see-also"></a>関連項目
 

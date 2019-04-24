@@ -1,5 +1,5 @@
 ---
-title: TNEF ユーザー設定添付ファイル処理を使用したメッセージの受信
+title: TNEF カスタム添付ファイル処理を使用したメッセージの受信
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -8,33 +8,33 @@ api_type:
 - COM
 ms.assetid: bb5082fa-8fe3-46fe-b2de-b6dd1af79ea7
 description: '�ŏI�X�V��: 2015�N12��7��'
-ms.openlocfilehash: 67c202e5130bd35e1277c5260bc1702043eadd95
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 046b537d41b318fa857ef77f1906edcf2c3aa2bf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328428"
 ---
-# <a name="receiving-messages-by-using-tnef-custom-attachment-processing"></a>TNEF ユーザー設定添付ファイル処理を使用したメッセージの受信
+# <a name="receiving-messages-by-using-tnef-custom-attachment-processing"></a>TNEF カスタム添付ファイル処理を使用したメッセージの受信
 
  
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-TNEF メッセージを受信するには、添付ファイルの処理をカスタマイズします。
+カスタマイズされた添付ファイル処理を伴う TNEF メッセージを受信するには
   
-1. 転送可能なすべてのプロパティをインポートする、メッセージング システムをサポートしている-新しい MAPI メッセージへの受信メッセージから。 これには、TNEF データ ストリームが含まれているメッセージのテキストが含まれます。
+1. 受信メッセージから新しい MAPI メッセージに、すべての送信機テーブルプロパティ (メッセージングシステムがサポートするもの) をインポートします。 これには、TNEF データストリームを含むメッセージテキストが含まれます。
     
-2. 識別し、特別な TNEF ストリームが含まれている添付ファイルをデコードします。
+2. TNEF ストリームを含む特殊な添付ファイルを識別し、デコードします。
     
-3. 新しい MAPI メッセージに添付ファイルを MAPI への受信メッセージからのすべての添付ファイルを抽出します。 リカバリされたファイル名、または、添付ファイルを識別するその他のマーカー配置、 **PR_ATTACH_TRANSPORT_NAME** ([PidTagAttachTransportName](pidtagattachtransportname-canonical-property.md)) のプロパティに新しい添付ファイルする[ITnef::ExtractProps](itnef-extractprops.md)メソッド関連付けることができます後で正しい添付ファイル メッセージのテキストでエンコードされた添付ファイルのタグです。 
+3. 受信メッセージからすべての添付ファイルを新しい mapi メッセージの mapi 添付ファイルに抽出します。 回復されたファイル名、または添付ファイルの他の識別マーカーを、 [ITnef:: ExtractProps](itnef-extractprops.md)メソッドを使用して、新しい添付ファイルの**PR_ATTACH_TRANSPORT_NAME** ([PidTagAttachTransportName](pidtagattachtransportname-canonical-property.md)) プロパティに配置する必要があります。後で、適切な添付ファイルを、メッセージテキストでエンコードされた添付ファイルタグに関連付けることができます。 
     
-4. TNEF ストリームをデコードの周りをラップし、 [OpenTnefStreamEx](opentnefstreamex.md)関数の呼び出しで新しい MAPI メッセージには、そのオブジェクトを使用する OLE **IStream**インターフェイスを作成します。 
+4. デコードされた TNEF ストリームをラップする OLE **IStream**インターフェイスを作成し、そのオブジェクトを[OpenTnefStreamEx](opentnefstreamex.md)関数の呼び出しで新しい MAPI メッセージと共に使用します。 
     
-5. TNEF データ ストリームからのメッセージの nontransmittable プロパティを回復する**ITnef::ExtractProps**メソッドを呼び出します。 
+5. **ITnef:: ExtractProps**メソッドを呼び出して、TNEF データストリームからメッセージのノン非対称テーブルプロパティを回復します。 
     
-6. タグと MAPI_MODIFY フラグのセットを使用して[ITnef::OpenTaggedBody](itnef-opentaggedbody.md)メソッドを呼び出します。 この呼び出しは、メッセージから添付ファイル タグが削除、MAPI メッセージに添付ファイルの位置情報に変換して、します。 
+6. MAPI_CREATE および MAPI_MODIFY フラグセットを使用して、 [ITnef:: OpenTaggedBody](itnef-opentaggedbody.md)メソッドを呼び出します。 この呼び出しは、メッセージテキストから attachment タグを削除し、それを MAPI メッセージの添付ファイルの位置情報に変換します。 
     
-7. MAPI スプーラーによってメッセージを配信します。
+7. MAPI スプーラーを経由してメッセージを配信します。
     
 

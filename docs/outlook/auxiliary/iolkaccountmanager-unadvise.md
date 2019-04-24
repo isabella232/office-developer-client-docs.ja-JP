@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: ea5cbf9f-25cc-9cca-9be0-d2deed576153
-description: 通知のすべてのアカウントのアカウント マネージャーを使用するクライアントの登録を解除します。
-ms.openlocfilehash: 0632bc6bd98e218cf323262ea480b020185438f3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: すべてのアカウントの通知について、アカウントマネージャーでクライアントの登録を解除します。
+ms.openlocfilehash: 0b954413b06cb1aa1b6fc4e0e9666f108bf81fbe
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322009"
 ---
 # <a name="iolkaccountmanagerunadvise"></a>IOlkAccountManager::Unadvise
 
-通知のすべてのアカウントのアカウント マネージャーを使用するクライアントの登録を解除します。 
+すべてのアカウントの通知について、アカウントマネージャーでクライアントの登録を解除します。 
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -31,9 +31,9 @@ HRESULT Unadvise(
 
 ## <a name="parameters"></a>パラメーター
 
-_dwCookie_
+_dwcookie_
   
-> [in][IOlkAccountManager::Advise](iolkaccountmanager-advise.md)によって返される cookie です。
+> 順番[IOlkAccountManager:: アドバイズ](iolkaccountmanager-advise.md)によって返される cookie。
     
 ## <a name="return-values"></a>戻り値
 

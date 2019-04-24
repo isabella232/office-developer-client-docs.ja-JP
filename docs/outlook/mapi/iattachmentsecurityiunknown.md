@@ -1,5 +1,5 @@
 ---
-title: IAttachmentSecurity IUnknown
+title: iattachmentsecurity IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 69609f73-5884-9e2b-ab78-a2e0ece3a1d1
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f182610f9cf4874cc18c409960e1f8b23f853d4f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a8464c8265ebc1754f7909be5413620e7f76db5f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326986"
 ---
 # <a name="iattachmentsecurity--iunknown"></a>IAttachmentSecurity : IUnknown
 
@@ -25,27 +25,27 @@ ms.locfileid: "22574827"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-添付ファイルが安全でないと表示して、インデックス作成のブロックと見なされますかどうかを確認する Microsoft Outlook 2010、Outlook 2013 のマイクロソフトのソリューションを使用できます。
+microsoft outlook 2010 および microsoft outlook 2013 ソリューションを使用して、添付ファイルが安全でないと見なされ、表示およびインデックス作成がブロックされているかどうかを確認します。
   
 |||
 |:-----|:-----|
-|インターフェイスの識別子。  <br/> |IID_IAttachmentSecurity  <br/> |
+|インターフェイス識別子:  <br/> |IID_IAttachmentSecurity  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[IAttachmentSecurity::IsAttachmentBlocked](iattachmentsecurity-isattachmentblocked.md) <br/> |指定した添付ファイルが表示して、インデックス作成の Outlook 2010 または Outlook 2013 でブロックされているかどうかを確認します。  <br/> |
+|[IAttachmentSecurity::IsAttachmentBlocked](iattachmentsecurity-isattachmentblocked.md) <br/> |指定された添付ファイルが outlook 2010 または outlook 2013 によってブロックされているかどうかを確認し、表示およびインデックスを作成します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-Outlook 2010、Outlook 2013 のソリューションでは、添付ファイルがブロックされているかどうかを確認するには、このインターフェイスを照会できます。 Outlook 2010 または Outlook 2013 でブロックされる添付ファイルは、どのように Outlook 2010 または Outlook 2013 が構成され、管理者が適用するポリシーによって異なります。
+outlook 2010 および outlook 2013 ソリューションは、このインターフェイスを照会して、添付ファイルがブロックされているかどうかを確認できます。 outlook 2010 または outlook 2013 によってブロックされている添付ファイルは、outlook 2010 または outlook 2013 がどのように構成されているか、および管理者が適用したポリシーによって異なります。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
   
-[添付がプロセスされていることを確認する](how-to-verify-an-attachment-is-blocked.md)
+[添付ファイルがブロックされていることを確認する](how-to-verify-an-attachment-is-blocked.md)
 

@@ -12,51 +12,51 @@ api_type:
 - HeaderDef
 ms.assetid: fa03d819-2621-4990-80ae-4140b83a8a85
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3b0332fb81dadb0f10ab6f55fae317349ab9b8d4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ec73a456f87b18905c180803d26720ef09254c7e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327896"
 ---
 # <a name="pidtagipmoutboxentryid-canonical-property"></a>PidTagIpmOutboxEntryId 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-標準的な個人間メッセージ (IPM) の [送信トレイ] フォルダーのエントリ id が含まれています。 
+標準の個人間メッセージ (IPM) 送信トレイフォルダーのエントリ識別子を含みます。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_IPM_OUTBOX_ENTRYID  <br/> |
-|識別子:  <br/> |0x35E2  <br/> |
+|識別子:  <br/> |0x35e2  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |Folder  <br/> |
+|エリア:  <br/> |フォルダー  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-通常、送信メッセージは送信トレイ フォルダーに作成されます。 個人間メッセージを送信するためには、このフォルダーに配置します。 
+通常、送信メッセージは送信トレイフォルダーに作成されます。 送信用に、個人間メッセージをこのフォルダーに配置する必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

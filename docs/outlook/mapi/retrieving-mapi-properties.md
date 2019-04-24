@@ -1,5 +1,5 @@
 ---
-title: MAPI プロパティを取得します。
+title: MAPI プロパティの取得
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -8,22 +8,22 @@ api_type:
 - COM
 ms.assetid: bd3f9f59-9020-46e6-9560-86a7a0eeca20
 description: '�ŏI�X�V��: 2015�N12��7��'
-ms.openlocfilehash: 1404239a54f9b8991099a66831e3364d9a683d1d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9666c551543cefd12ee8c902db1a2372aab20632
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328645"
 ---
-# <a name="retrieving-mapi-properties"></a>MAPI プロパティを取得します。
+# <a name="retrieving-mapi-properties"></a>MAPI プロパティの取得
 
  
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアントまたはサービス プロバイダーは、オブジェクトからプロパティを取得、プロパティの値、型、および識別子、オブジェクトに、利用できます。 
+クライアントまたはサービスプロバイダーがオブジェクトからプロパティを取得すると、そのオブジェクトはプロパティの値、型、および識別子を使用できるようになります。 
   
-クライアントとサービス ・ プロバイダーは、次のいずれかを呼び出すことによってオブジェクトのプロパティを取得できます。
+クライアントおよびサービスプロバイダーは、次のいずれかを呼び出すことによって、オブジェクトのプロパティを取得できます。
   
 [IMAPIProp::GetProps](imapiprop-getprops.md)
   
@@ -31,42 +31,42 @@ ms.locfileid: "22566335"
   
 [HrGetOneProp](hrgetoneprop.md)
   
-**GetProps**メソッドを使用して、アクセスの特別なまたは代替のインタ フェースの必要がない 1 つまたは複数のプロパティを取得します。 これは**GetProps**に使用できるプロパティは整数、ブール値など、小さなことを意味します。 
+**GetProps**メソッドは、access の特殊なインターフェイスまたは代替インターフェイスを必要としない1つ以上のプロパティを取得するために使用されます。 これは、 **GetProps**で使用できるプロパティが、整数やブール値などの小さいことを意味します。 
   
  **複数のプロパティを取得するには**
   
-1. 取得するプロパティの数を保持するのに十分な大きさ[SPropTagArray](sproptagarray.md)構造体を割り当てます。 
+1. 取得するプロパティの数を保持するのに十分な大きさの[SPropTagArray](sproptagarray.md)構造体を割り当てます。 
     
-2. **あう**、 **SPropTagArray**構造体のメンバーを取得しても、ターゲット プロパティのいずれかの可能な場合は、識別子と型に**aulPropTag**の各メンバーを設定するプロパティの数を設定します。 型が不明な場合は、PT_UNSPECIFIED に設定します。 型と識別子の両方がない既知の場合は、 [IMAPIProp::GetPropList](imapiprop-getproplist.md)を呼び出すことによってこの情報を検索します。 **Getproplist メソッド**は、すべてのオブジェクトのサポートされているプロパティを持つプロパティ タグ配列を返します。 プロパティの名前があるのみの場合は、関連付けられている識別子にアクセスする[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)を呼び出します。 
+2. **SPropTagArray**構造体の**cvalues**メンバーを取得するプロパティの数に設定し、各**aulPropTag**メンバーを、可能であれば、いずれかのターゲットプロパティの識別子と種類に設定します。 種類が不明な場合は、PT_UNSPECIFIED に設定します。 型と識別子の両方が不明な場合は、 [imapiprop:: getproplist](imapiprop-getproplist.md)を呼び出すことによって、この情報を特定します。 **getproplist**は、オブジェクトでサポートされているすべてのプロパティを持つプロパティタグ配列を返します。 プロパティ名のみを使用できる場合は、関連付けられている識別子にアクセスするには、 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)を呼び出します。 
     
-3. プロパティまたはプロパティを開くには、 [IMAPIProp::GetProps](imapiprop-getprops.md)を呼び出します。 
+3. プロパティまたはプロパティを開くには、 [imapiprop:: GetProps](imapiprop-getprops.md)を呼び出します。 
     
-**OpenProperty**メソッドを使用して、アクセスの**IStream**または[IMAPITable](imapitableiunknown.md)などの代替のインタ フェースを必要とする大規模なプロパティを開きます。 **OpenProperty**は、通常大きな文字の文字列、バイナリ、およびオブジェクトのプロパティを開くに使用し、のみ 1 つのプロパティを同時に開くことができます。 呼び出し元は、入力パラメーターの 1 つとして要求されるその他のインターフェイスの識別子を渡します。 
+**openproperty**メソッドを使用すると、access の**IStream**や[IMAPITable](imapitableiunknown.md)などの代替インターフェイスを必要とする、より大きなプロパティを開くことができます。 **openproperty**は、通常、ラージ文字列、バイナリ、およびオブジェクトのプロパティを開くために使用され、一度に1つのプロパティしか開くことができません。 発信者は、入力パラメーターの1つとして必要な追加インターフェイスの識別子を渡します。 
   
-**PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md))、テキスト ベースのメッセージの本文、 **PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) を保持するプロパティを保持するプロパティを開くときは、 **OpenProperty**の一般的な用途のいくつか、OLE オブジェクトまたはメッセージの添付ファイルと**PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)) は、フォルダーまたはアドレス帳コンテナーの内容テーブルを保持するプロパティです。 
+**openproperty**の一般的な使用方法には、 **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) を開くプロパティ (テキストベースのメッセージの本文を保持するプロパティ) **PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) があります。OLE オブジェクトまたはメッセージの添付ファイル、および**PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md))。フォルダーまたはアドレス帳のコンテナーの内容の表を保持するプロパティ。 
   
-プロパティに応じて、 **OpenProperty**から別のインターフェイスが要求されます。 **IStream**をバイトのストリームとして読み書きするプロパティのデータを可能にするインタ フェースは通常、 **PR_BODY**にアクセスするため使用されます。 [IMessage](imessageimapiprop.md)または**IStream**のいずれかが**PR_ATTACH_DATA_OBJ**にアクセスするために使えます。 **IStream**を使用して、TNEF 形式のメッセージは、標準的なメッセージは、埋め込みメッセージの添付ファイルは**IMessage**を使用します。 **PR_CONTAINER_CONTENTS**は、table オブジェクトであるために、 [IMAPITable](imapitableiunknown.md)にアクセスします。
+プロパティによっては、 **openproperty**から別のインターフェイスが要求されます。 **IStream**は、プロパティデータをバイトストリームとして読み書きできるようにするインターフェイスです。通常、 **PR_BODY**へのアクセスに使用されます。 [IMessage](imessageimapiprop.md)または**IStream**のどちらかを使用して**PR_ATTACH_DATA_OBJ**にアクセスできます。 標準メッセージである埋め込みメッセージ添付ファイルは**IMessage**を使用しますが、TNEF 形式のメッセージでは**IStream**が使用されます。 **PR_CONTAINER_CONTENTS**は table オブジェクトなので、 [IMAPITable](imapitableiunknown.md)でアクセスします。
   
- **PR_ATTACH_DATA_BIN プロパティの添付ファイルの取得**
+ **添付ファイルの PR_ATTACH_DATA_BIN プロパティを取得するには**
   
-1. ファイルのストリームを開く[OpenStreamOnFile](openstreamonfile.md)関数を呼び出します。 
+1. [openstreamonfile](openstreamonfile.md)関数を呼び出して、ファイルのストリームを開きます。 
     
-2. **IStream**インターフェイスを使用して**PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) のプロパティを取得するメッセージの[IMAPIProp::OpenProperty](imapiprop-openproperty.md)のメソッドを呼び出します。 MAPI_MODIFY とタグの両方のフラグを設定します。 
+2. メッセージの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出して、 **IStream**インターフェイスを使用して**PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) プロパティを取得します。 MAPI_MODIFY と MAPI_CREATE の両方のフラグを設定します。 
     
-3. **STATSTG**構造体を割り当てるし、そのサイズを決定するファイル ストリームの**IStream::Stat**メソッドの呼び出しで渡すことです。 フラグ STREAM_SEEK_END を使用して**IStream::Seek**を呼び出すには、ストリームのサイズを決定する別の方法です。 
+3. **STATSTG**構造体を割り当て、ファイルストリームの**IStream:: Stat**メソッドへの呼び出しに渡して、サイズを決定します。 ストリームのサイズを確認する別の方法として、 **IStream:: Seek**を STREAM_SEEK_END というフラグが付いています。 
     
-4. 添付ファイルのストリームに、ファイルのストリームからデータをコピーするのには、ストリームの**IStream::CopyTo**メソッドを呼び出します。 
+4. ストリームの**IStream:: CopyTo**メソッドを呼び出して、ファイルのストリームから添付ファイルストリームにデータをコピーします。 
     
-5. コピー操作が完了すると、それぞれ**が**メソッドを呼び出すことによって両方のストリームを解放します。 
+5. コピー操作が終了したら、 **IUnknown:: release**メソッドを呼び出して両方のストリームを解放します。 
     
-**IStream**を使用すると、プロパティへのアクセスのサービス プロバイダーによっては、ストリームでのプロパティのサイズを自動的に送信します。 ストリーム サイズの戻り値のプロパティを開くときに、フラグを遅らせることができます、MAPI_DEFERRED_ERRORS と**OpenProperty**を呼び出すことです。 **IStream::Stat**が、MAPI_DEFERRED_ERRORS と**OpenProperty**フラグを設定した後に、このサイズを取得するために呼び出される場合は、この一連の呼び出しは、余分なリモート プロシージャ呼び出しを強制するためにパフォーマンスが低下します。 パフォーマンスへの影響を避けるためには、クライアントが**OpenProperty**し、**統計値**の呼び出しの間の任意の MAPI メソッドを呼び出すことができます。
+**IStream**がプロパティアクセスに使用されている場合、一部のサービスプロバイダーは、プロパティのサイズを stream に自動的に送り返します。 MAPI_DEFERRED_ERRORS フラグを使用して**openproperty**を呼び出すと、プロパティのオープンとストリームサイズの戻りが遅延する可能性があります。 MAPI_DEFERRED_ERRORS フラグが設定された**openproperty** after でこの size を取得するために**IStream:: Stat**が呼び出された場合、この一連の呼び出しによってリモートプロシージャコールが強制的に実行されるため、パフォーマンスが影響を受けます。 パフォーマンスヒットを回避するために、クライアントは**openproperty**への呼び出しと**Stat**の間で任意の MAPI メソッドを呼び出すことができます。
   
-**OpenProperty**と同様に、 [HrGetOneProp](hrgetoneprop.md)関数は、一度に 1 つのプロパティを開きます。 **HrGetOneProp**は、ローカル マシン上に対象のオブジェクトが存在する場合にのみ使用する必要があります。 対象のオブジェクトをローカルで使用できない場合は、複数のリモート プロシージャ コールとパフォーマンスの低下につながる**HrGetOneProp**を繰り返し使用します。 
+[hrgetoneprop](hrgetoneprop.md)関数 ( **openproperty**など) は、一度に1つのプロパティを開きます。 **hrgetoneprop**は、ターゲットオブジェクトがローカルコンピューター上に存在する場合にのみ使用してください。 ターゲットオブジェクトがローカルで使用できない場合、 **hrgetoneprop**を繰り返し使用すると、複数のリモートプロシージャコールが発生し、パフォーマンスが低下することがあります。 
   
-いくつかのプロパティを必要とする呼び出し元ループ内で**HrGetOneProp**または**OpenProperty**を呼び出すか、 **GetProps**に 1 つの呼び出しを実行します。 **GetProps**を 1 回呼び出すことは、効率的です。 
+複数のプロパティを必要とする発信者は、ループで**hrgetoneprop**または**openproperty**を呼び出すか、 **GetProps**に対して1回の呼び出しを行うことができます。 **GetProps**の呼び出しは、より効率的です。 
   
 > [!NOTE]
-> セキュリティで保護されたプロパティは、 **GetProps**、 **HrGetOneProp**、または**getproplist メソッド**の呼び出しでは、他のプロパティを使用して自動的にご利用いただけません。 セキュリティで保護されたプロパティは、そのプロパティの識別子を使用して明示的に要求する必要があります。 
+> セキュリティで保護されたプロパティは、 **GetProps**、 **hrgetoneprop**、または**getproplist**呼び出しの他のプロパティでは、自動的には使用できません。 セキュリティで保護されたプロパティは、プロパティ識別子を使用して明示的に要求する必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

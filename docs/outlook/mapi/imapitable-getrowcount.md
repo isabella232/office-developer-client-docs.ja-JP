@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 44a12c92-7462-4acf-9520-5d4c2d7f1d47
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 71178f1a531bd381387e0aa7fbacb02d4431a401
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b13bf3bdd8392efc42ad189e48dffad8636f0708
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328890"
 ---
 # <a name="imapitablegetrowcount"></a>IMAPITable::GetRowCount
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブル内の行の合計数を返します。 
+テーブル内の行の総数を返します。 
   
 ```cpp
 HRESULT GetRowCount(
@@ -34,57 +34,57 @@ ULONG FAR * lpulCount
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> 予約されています。0 にする必要があります。
+> 予約語0である必要があります。
     
- _lpulCount_
+ _lルー count_
   
-> [out]テーブル内の行の数へのポインター。
+> 読み上げ表の行数へのポインターを指定します。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> ローの数が正常に返されました。
+> 行数が正常に返されました。
     
 MAPI_E_BUSY 
   
-> 別の操作は、行カウントの取得操作の開始を防止する処理中です。 実行中の操作を完了できるか、それを停止する必要があります。
+> 別の操作が進行中であるため、行カウントの取得操作を開始できません。 進行中の操作が完了することを許可するか、停止する必要があります。
     
 MAPI_E_NO_SUPPORT 
   
-> テーブルは、行の数を計算できません。
+> テーブルで行数を計算できません。
     
 MAPI_W_APPROX_COUNT 
   
-> 呼び出しが成功したが、行数の正確な判断できませんでした可能性のあるメモリの制約があるために、おおよその行数が返されました。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 [エラー処理のためのマクロを使用する](using-macros-for-error-handling.md)を参照してください。
+> 呼び出しは成功しましたが、メモリの制約によって正確な行の数を特定できなかったため、おおよその行数が返されました。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPITable::GetRowCount**メソッドは、テーブル内の行の合計数を取得します。 
+**IMAPITable:: getrowcount**メソッドは、テーブル内の行の合計数を取得します。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-テーブルの正確な行数を判断できない、戻り値の MAPI_W_APPROX_COUNT と、おおよその行が、 _lpulCount_パラメーターの内容をカウントします。 
+テーブルの正確な行数を特定できない場合は、 _lMAPI_W_APPROX_COUNT count_パラメーターの内容で、および近似値の行数を返します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-データを取得するために、 [IMAPITable::QueryRows](imapitable-queryrows.md)メソッドの呼び出しを行う前にテーブルの行の数を検索する使用**な**を保持します。 テーブルに 20 未満の行がある場合は、テーブル全体を取得するために**QueryPosition**を呼び出しても安全です。 テーブルに 20 を超える行がある場合は、 **QueryPosition**を複数回呼び出すことを検討してくださいし、呼び出しのたびに取得される行の数を制限します。 
+データを取得するために[IMAPITable:: QueryRows](imapitable-queryrows.md)メソッドを呼び出す前に、 **getrowcount**を使用して、テーブルに保持されている行の数を調べます。 テーブルに20行未満の行がある場合は、 **queryposition**を呼び出してテーブル全体を取得するのが安全です。 テーブルに20行を超える行がある場合は、複数の呼び出しを**queryposition**に設定し、呼び出しごとに取得する行数を制限することを検討してください。 
   
-いくつかのテーブルをサポートしない**な**MAPI_E_NO_SUPPORT を取得します。 **な**はサポートされていない場合、 [IMAPITable::QueryPosition](imapitable-queryposition.md)を呼び出す別の方法を引き起こすことがあります。 **QueryPosition**から結果には、現在の行と最後の行の間の関係を指定できます。 
+一部のテーブルは、 **getrowcount**をサポートせず、MAPI_E_NO_SUPPORT を返します。 **getrowcount**がサポートされていない場合、次の方法で[IMAPITable:: queryposition](imapitable-queryposition.md)を呼び出すことができます。 **queryposition**からの結果を使用して、現在の行と最後の行の間の関係を判断できます。 
   
-**な**に MAPI_E_BUSY が返されるは、行の数を取得するために一時的にできないため、ときに、 [IMAPITable::WaitForCompletion](imapitable-waitforcompletion.md)メソッドを呼び出します。 **WaitForCompletion**が返されるときは、**な**への呼び出しを再試行します。 非同期操作が進行中かどうかを検出するために別の方法では、 [IMAPITable::GetStatus](imapitable-getstatus.md)メソッドを呼び出すし、 _lpulTableState_パラメーターの内容を確認します。 
+一時的に行数を取得できないために**getrowcount**が MAPI_E_BUSY を返す場合は、 [IMAPITable:: waitforcompletion](imapitable-waitforcompletion.md)メソッドを呼び出します。 **waitforcompletion**が戻るときに、 **getrowcount**への呼び出しを再試行します。 非同期操作が進行中かどうかを検出する別の方法として、 [IMAPITable:: GetStatus](imapitable-getstatus.md)メソッドを呼び出し、 _lpultablestate_パラメーターの内容を確認する方法があります。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIFunctions.cpp  <br/> |CopyFolderContents  <br/> |MFCMAPI では、 **IMAPITable::GetRowCount**メソッドを使用して、コピーを実行するのにはメモリの割り当てができるように、ソース テーブルでは、行の数を決定します。  <br/> |
+|MAPIFunctions  <br/> |copyfoldercontents  <br/> |mfcmapi は、 **IMAPITable:: getrowcount**メソッドを使用して、ソーステーブルにある行数を調べて、コピーを実行するためのメモリを割り当てることができるようにします。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

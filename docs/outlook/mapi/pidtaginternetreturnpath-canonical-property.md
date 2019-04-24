@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 4530dbcf-9436-4f29-b79e-1bb0f791f60b
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c2d8eaf627f789c3e862a83d71e4ca2e3e55e1e0
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327959"
 ---
 # <a name="pidtaginternetreturnpath-canonical-property"></a>PidTagInternetReturnPath 標準プロパティ
 
@@ -25,7 +25,7 @@ ms.locfileid: "25388204"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-多目的インターネット メール拡張 (MIME) メッセージのリターン ・ パスのヘッダー フィールドの値が含まれています。 メッセージの送信者の電子メール アドレスです。
+マルチパーパスインターネットメール内線 (MIME) メッセージのリターンパスヘッダーフィールドの値を格納します。 メッセージの送信者の電子メールアドレス。
   
 |||
 |:-----|:-----|
@@ -34,47 +34,47 @@ ms.locfileid: "25388204"
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティの値を取得するには、まず[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)を使用して、プロパティ タグを取得して値を取得する[IMAPIProp::GetProps](imapiprop-getprops.md)でこのプロパティのタグを指定します。 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)を呼び出すときは、 _lppPropNames_の入力パラメーターで示される[MAPINAMEID](mapinameid.md)構造体の次の値を指定します。
+このプロパティの値を取得するには、最初に[imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)を使用してプロパティタグを取得し、次に[imapiprop:: GetProps](imapiprop-getprops.md)でこのプロパティタグを指定して、値を取得します。 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)を呼び出す場合は、入力パラメーター _lpppropnames_でポイントされている[mapinameid](mapinameid.md)構造に次の値を指定します。
   
 |||
 |:-----|:-----|
-|lpGuid。  <br/> |PS_INTERNET_HEADERS  <br/> |
-|ulKind。  <br/> |MNID_STRING  <br/> |
-|Kind.lpwstrName。  <br/> |L「リターン ・ パス」  <br/> |
+|lpguid:  <br/> |PS_INTERNET_HEADERS  <br/> |
+|ulkind:  <br/> |MNID_STRING  <br/> |
+|種類が lpwstrname:  <br/> |L "戻りパス"  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
+[[OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
   
-> IETF RFC2445、RFC2446、RFC2447、および予定と会議のオブジェクトに変換します。
+> IETF RFC2445、RFC2446、RFC2447、予定および会議の各オブジェクトを変換します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
 [MAPI �萔](mapi-constants.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

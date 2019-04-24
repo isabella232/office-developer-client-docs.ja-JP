@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 8e5b42e3-844f-488c-ba6f-b74c447b1d59
 description: Exchange アカウントの UID を含む ACCT_BIN 構造体を表します。
 ms.openlocfilehash: 6bb529da82cc24e41ddc70c5031f84050a2ece25
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326552"
 ---
 # <a name="propmapiemsmdbuid"></a>PROP_MAPI_EMSMDB_UID
 
@@ -26,14 +26,14 @@ Exchange アカウントの UID を含む[ACCT_BIN](acct_bin.md)構造体を表�
 |:-----|:-----|
 |識別子:  <br/> |0x2009  <br/> |
 |プロパティの種類:  <br/> |PT_BINARY  <br/> |
-|プロパティ タグ。  <br/> |0x20090102  <br/> |
-|アクセス:  <br/> |読み取り専用  <br/> |
+|プロパティタグ:  <br/> |0x20090102  <br/> |
+|接続  <br/> |読み取り専用  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-[IOlkAccount::GetProp](iolkaccount-getprop.md)を使用してこのプロパティを取得します。
+[IOlkAccount:: getprop](iolkaccount-getprop.md)を使用して、このプロパティを取得します。
   
-[PROP_ACCT_IS_EXCH](prop_acct_is_exch.md)を使用して、アカウントが Exchange アカウントかどうかを確認します。 場合は、**プロペラ\_MAPI_EMSMDB_UID** 、 **emsmdbUID**は、Exchange アカウントの一意の ID が含まれています**ACCT_BIN**は、です。 アカウントが Exchange アカウントでない場合は、このプロパティは定義されていません。
+[PROP_ACCT_IS_EXCH](prop_acct_is_exch.md)を使用して、アカウントが Exchange アカウントであるかどうかを確認します。 その場合、 **PROP\_MAPI_EMSMDB_UID**は、Exchange アカウントの一意の ID である**emsmdbUID**を含む**ACCT_BIN**です。 アカウントが Exchange アカウントではない場合、このプロパティは未定義です。
   
 ## <a name="see-also"></a>関連項目
 

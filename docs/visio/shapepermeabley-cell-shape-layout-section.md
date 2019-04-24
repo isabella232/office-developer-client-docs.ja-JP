@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 90701ecf-3d34-2eac-9ee9-7965e16c0f7c
 description: コネクタの接続経路が、配置可能な図形上を垂直方向に通過するかどうかを指定します。
-ms.openlocfilehash: 4a7a389ec1d753b8582b7ff0b921a615e582b1ef
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 62f8bfa0fdfb5c483836f344e8b784dc9092fded
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326517"
 ---
-# <a name="shapepermeabley-cell-shape-layout-section"></a>[ShapePermeableY] セル ([図形レイアウト] セクション)
+# <a name="shapepermeabley-cell-shape-layout-section"></a>[ShapePermeableY] セル ([Shape Layout] セクション)
 
 コネクタの接続経路が、配置可能な図形上を垂直方向に通過するかどうかを指定します。
   
@@ -25,9 +25,9 @@ ms.locfileid: "19806392"
 |TRUE  <br/> |コネクタの接続経路は、配置可能な図形上を垂直方向に通過します。  <br/> |
 |FALSE  <br/> |コネクタの接続経路は、配置可能な図形上を垂直方向に通過できません。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**動作**] ダイアログ ボックスの [**配置**] タブで、このセルの値を設定することもできます (図形を選択して、[[開発](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] で、[**動作**] をクリックし、[**配置**] タブをクリックして). 
+このセルの値は、[**基本動作**] ダイアログボックスの [**配置**] タブで設定することもできます (図形が選択されている場合)、[[開発](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] グループで、[**基本動作**] をクリックし、[**配置**] タブをクリックします。). 
   
 Visio 2000 より前のバージョンでは、[Miscellaneous] セクションで [ObjInteract] セルを使用してこの動作を設定していました。
   
@@ -35,7 +35,7 @@ Visio 2000 より前のバージョンでは、[Miscellaneous] セクション�
   
 |||
 |:-----|:-----|
-|セル名 :  <br/> |ShapePermeableY  <br/> |
+|セル名 :  <br/> |[shapepermeabley]  <br/> |
    
 プログラムから、インデックスによって [ShapePermeableY] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -43,6 +43,6 @@ Visio 2000 より前のバージョンでは、[Miscellaneous] セクション�
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionObject** <br/> |
 |行インデックス:  <br/> |**visRowShapeLayout** <br/> |
-|セル インデックス:  <br/> |**visSLOPermY** <br/> |
+|セル インデックス:  <br/> |**visslopermy** <br/> |
    
 

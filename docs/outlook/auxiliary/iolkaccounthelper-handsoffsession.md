@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 9f71fdef-5df5-0892-b64c-293a2f22f5c3
-description: IOlkAccountHelper::GetMapiSession によって返された MAPI セッション オブジェクトを解放します。
-ms.openlocfilehash: 71931be73e75e858224d3da2c92071341ac45e72
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'IOlkAccountHelper:: GetMapiSession によって返された MAPI セッションオブジェクトを解放します。'
+ms.openlocfilehash: c481cee1ecb8c2bd3997cdee8ae86c9c3b5a712e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322093"
 ---
 # <a name="iolkaccounthelperhandsoffsession"></a>IOlkAccountHelper::HandsOffSession
 
-- [IOlkAccountHelper::GetMapiSession](iolkaccounthelper-getmapisession.md)によって返された MAPI セッション オブジェクトを解放します。
+- [IOlkAccountHelper:: GetMapiSession](iolkaccounthelper-getmapisession.md)によって返された MAPI セッションオブジェクトを解放します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -30,8 +30,8 @@ HRESULT IOlkAccountHelper::HandsOffSession( );
 
 |**HRESULT 型**|**Description**|
 |:-----|:-----|
-|S_OK  <br/> |**IOlkAccountHelper**の実装では、 **IOlkAccountHelper::GetMapiSession**で返される、独自の MAPI セッションを作成する場合は、ここでは、セッションを解放してと S_OK を返す必要があります。  <br/> |
-|E_NOTIMPL  <br/> |**IOlkAccountHelper**の実装では、独自の MAPI セッションを作成しなかった場合のみ E_NOTIMPL を返す必要があります。 この例では、これは、戻り値はサポートされているだけです。  <br/> |
+|S_OK  <br/> |**IOlkAccountHelper**の実装で**IOlkAccountHelper:: GetMapiSession**で返される独自の MAPI セッションを作成する場合は、ここでセッションを解放し、S_OK を返す必要があります。  <br/> |
+|E_NOTIMPL  <br/> |**IOlkAccountHelper**の実装で独自の MAPI セッションが作成されていない場合は、E_NOTIMPL のみを返す必要があります。 この場合、サポートされている唯一の戻り値です。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

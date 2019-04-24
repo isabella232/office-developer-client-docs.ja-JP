@@ -13,11 +13,11 @@ api_type:
 ms.assetid: d5d289b2-d4d6-49ab-bf8b-945cb35272fc
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 37a0e31ea368f091e3ad9c46473d3d33299d5a21
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25396604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32325726"
 ---
 # <a name="pidtagaddressbookhierarchicalishierarchicalgroup"></a>PidTagAddressBookHierarchicalIsHierarchicalGroup
 
@@ -25,13 +25,13 @@ ms.locfileid: "25396604"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-配布リストの部門別のグループも場合 TRUE が含まれています。 このプロパティは、配布リストでのみ使用できます。
+配布リストが部署グループでもある場合は、TRUE が含まれます。 このプロパティは、配布リストでのみ使用できます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_EMS_AB_HAB_IS_HIERARCHICAL_GROUP  <br/> |
-|プロパティを設定します。  <br/> |アドレス帳  <br/> |
-|長い ID (LID):  <br/> |0x8CDD  <br/> |
+|プロパティセット:  <br/> |アドレス帳  <br/> |
+|ロング ID (LID):  <br/> |0x8cdd  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |エリア:  <br/> |Exchange アドレス帳  <br/> |
    
@@ -39,17 +39,17 @@ ms.locfileid: "25396604"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Microsoft Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Microsoft Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOABK]](https://msdn.microsoft.com/library/cc433489%28v=exchg.80%29)
+[[OXOABK]](https://msdn.microsoft.com/library/cc433489%28v=exchg.80%29)
   
-> プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。
+> ユーザー、連絡先、グループ、およびリソースのリストのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -57,9 +57,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

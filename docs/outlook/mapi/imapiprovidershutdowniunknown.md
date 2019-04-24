@@ -1,5 +1,5 @@
 ---
-title: IMAPIProviderShutdown IUnknown
+title: imapiprovidershutdown IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,55 +12,55 @@ api_type:
 - COM
 ms.assetid: fd86c8a5-f251-46c3-ace9-515e94e504ac
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 81b7b0c235f610e7aaa0c17ecd1760df5d382552
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 92067b5badfb2aab40f3b3735a164bc09321702c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322408"
 ---
 # <a name="imapiprovidershutdown--iunknown"></a>IMAPIProviderShutdown : IUnknown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI プロバイダーが、シャット ダウンに応答できるように、MAPI クライアントの高速シャット ダウンの MAPI プロバイダーに通知するために MAPI サブシステムを使用できます。
+mapi サブシステムが mapi クライアントの高速シャットダウンの mapi プロバイダーに通知できるようにして、mapi プロバイダーがシャットダウンに応答できるようにします。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|によって公開されます。  <br/> |プロバイダー オブジェクト: [IXPProvider](ixpprovideriunknown.md)、 [IABProvider](iabprovideriunknown.md)、または[IMSProvider](imsprovideriunknown.md) <br/> |
-|によって実装されます。  <br/> |MAPI プロバイダー  <br/> |
-|によって呼び出されます。  <br/> |MAPI サブシステム  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IMAPIProviderShutdown  <br/> |
-|ポインターの型。  <br/> |LPMAPIPROVIDERSHUTDOWN  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|公開者:  <br/> |プロバイダーオブジェクト: [ixpprovider](ixpprovideriunknown.md)、 [IABProvider](iabprovideriunknown.md)、または[IMSProvider](imsprovideriunknown.md) <br/> |
+|実装元:  <br/> |MAPI プロバイダー  <br/> |
+|呼び出し元:  <br/> |MAPI サブシステム  <br/> |
+|インターフェイス識別子:  <br/> |IID_IMAPIProviderShutdown  <br/> |
+|ポインターの種類:  <br/> |LPMAPIPROVIDERSHUTDOWN  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[QueryFastShutdown](imapiprovidershutdown-queryfastshutdown.md) <br/> |クエリは高速シャット ダウンの MAPI プロバイダーをサポートします。  <br/> |
-|[NotifyProcessShutdown](imapiprovidershutdown-notifyprocessshutdown.md) <br/> |MAPI プロバイダーをプロバイダーは、データ損失を防ぐための処置を行うことができるように、高速シャット ダウンを行う MAPI クライアントを送信することを示します。  <br/> |
-|[DoFastShutdown](imapiprovidershutdown-dofastshutdown.md) <br/> |示します MAPI プロバイダーに MAPI クライアントが、すぐに終了している MAPI プロバイダーがデータの損失を防ぐために加えられた変更を永続化できるようにします。  <br/> |
+|[QueryFastShutdown](imapiprovidershutdown-queryfastshutdown.md) <br/> |MAPI プロバイダーに対して、高速シャットダウンのサポートを照会します。  <br/> |
+|[notifyprocessshutdown](imapiprovidershutdown-notifyprocessshutdown.md) <br/> |mapi クライアントが高速シャットダウンを実行することを mapi プロバイダーに示します。これにより、プロバイダーはデータ損失を防止するアクションを実行できるようになります。  <br/> |
+|[dofastshutdown](imapiprovidershutdown-dofastshutdown.md) <br/> |mapi プロバイダーに対して、mapi クライアントが直ちに終了していることを示します。したがって、データ損失を防止するために mapi プロバイダーは変更を保持します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-高速シャット ダウンにより、MAPI クライアントは、短時間の処理を終了することを願って読み込まれていて、クライアント後 MAPI プロバイダーが、保存、MAPI の設定とデータです。 MAPI クライアントは常に高速シャット ダウンを開始して、MAPI のサブシステム読み込まれている MAPI プロバイダーから高速シャット ダウンをサポートするためにクエリを実行する必要があります。 管理者は、すべての MAPI クライアントの高速シャット ダウンを許可する必要があるプロバイダーのサポートのレベルを指定するのにはユーザー レベルで、Windows のレジストリを設定できます。 レジストリ設定の詳細については、[高速シャット ダウンのユーザー オプション](fast-shutdown-user-options.md)を参照してください。 ただし、データを失うことがなく正常に実行するのには高速シャット ダウンは、MAPI プロバイダーは、 **IMAPIProviderShutdown**インターフェイスを実装する必要があります。 
+高速シャットダウンを使用すると、クライアントとロードされた mapi プロバイダーが mapi の設定とデータを保存した後に、mapi クライアントが短時間でプロセスを終了することができます。 mapi クライアントは、常に高速シャットダウンを開始し、読み込み済みの mapi プロバイダーからの高速シャットダウンのサポートのために mapi サブシステムに対してクエリを実行する必要があります。 管理者は、ユーザーレベルで Windows レジストリを設定して、すべての MAPI クライアントの高速シャットダウンを可能にするために必要なプロバイダーサポートのレベルを指定することができます。 レジストリ設定の詳細については、「 [Fast Shutdown User Options](fast-shutdown-user-options.md)」を参照してください。 しかし、データ損失が発生することなく、高速なシャットダウンが正常に実行されるようにするには、MAPI プロバイダーが**imapiprovidershutdown**インターフェイスを実装する必要があります。 
   
-クライアントの高速シャット ダウンをサポートするために必要な MAPI プロバイダーは、MAPI サブシステムに、 **IMAPIProviderShutdown::QueryFastShutdown**メソッドで S_OK を返す必要があります。 MAPI プロバイダーが MAPI の設定とデータの保存に必要な操作を実行する必要があります MAPI サブシステムは、その後、 **IMAPIProviderShutdown::NotifyProcessShutdown**と**IMAPIProviderShutdown::DoFastShutdown**メソッドを呼び出しますと、クライアントの終了を準備します。 
+クライアントの高速シャットダウンをサポートする必要がある mapi プロバイダーは、 **imapiprovidershutdown:: queryfastshutdown**メソッド内の mapi サブシステムに S_OK を返す必要があります。 mapi サブシステムが、 **imapiprovidershutdown:: notifyprocessshutdown**および**imapiprovidershutdown**を呼び出した場合、mapi プロバイダーは mapi の設定とデータを保存するために必要なアクションを実行する必要があります。クライアントの終了を準備します。 
   
-クライアントの高速シャット ダウンをサポートするために必要としない MAPI プロバイダーの**IMAPIProviderShutdown**インターフェイスを実装し、MAPI_E_NO_SUPPORT を返す**IMAPIProviderShutdown::QueryFastShutdown**メソッドがある必要がありますも。 MAPI クライアントとして outlook でこのすべての外部参照を終了する前に解放するまで待機するように Outlook が発生します。 
+クライアントの高速シャットダウンをサポートする必要がない MAPI プロバイダーは、まだ**imapiprovidershutdown**インターフェイスを実装していて、 **imapiprovidershutdown:: queryfastshutdown**メソッドが MAPI_E_NO_SUPPORT を返すようにしてください。 outlook を MAPI クライアントとして使用する場合、outlook は、すべての外部参照が終了するまで待機します。 
   
-によって**IMAPIProviderShutdown**インターフェイスを実装しない、高速シャット ダウンのレジストリ設定が必ずしもユーザーの Windows クライアントの高速シャット ダウンを防止します。 
+高速シャットダウンのためのユーザーの Windows レジストリ設定によっては、 **imapiprovidershutdown**インターフェイスを実装していないと、クライアントの高速シャットダウンが必ずしも妨げられるわけではありません。 
   
-高速シャット ダウンのプロセスの詳細については、[高速シャット ダウンの概要](fast-shutdown-overview.md)を参照してください。 高速シャット ダウンを正常に実行する方法の詳細については、[高速シャット ダウンのベスト ・ プラクティス](best-practices-for-fast-shutdown.md)を参照してください。
+高速シャットダウンのプロセスの詳細については、「[高速シャットダウンの概要](fast-shutdown-overview.md)」を参照してください。 高速シャットダウンを正常に実行する方法については、「[ファストシャットダウンのベストプラクティス](best-practices-for-fast-shutdown.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
   
-[Mapi クライアントのシャット ダウン](client-shutdown-in-mapi.md)
+[MAPI でのクライアント シャットダウン](client-shutdown-in-mapi.md)
 

@@ -9,31 +9,31 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: a1736a5c-421c-2bdb-b164-76a8cd06cc3d
 description: 配置可能な図形について、配置時の動作を指定します。
-ms.openlocfilehash: 6ae83fa70cc545c88080ce27046bd8c226c060e3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: eae44a0579129fbe8da1c0cc8c37318beb024563
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32325733"
 ---
-# <a name="shapefixedcode-cell-shape-layout-section"></a>[ShapeFixedCode] セル ([図形レイアウト] セクション)
+# <a name="shapefixedcode-cell-shape-layout-section"></a>[ShapeFixedCode] セル ([Shape Layout] セクション)
 
 配置可能な図形について、配置時の動作を指定します。
   
 |**値**|**選択モード**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|&amp;H1  <br/> |**レイアウトの構成**] ダイアログ ボックスを使用して図形をレイアウトするとき、この図形を移動しません。  <br/> |**visSLOFixedPlacement** <br/> |
-|&amp;H2  <br/> |この図形は移動しません。また他の図形をこの図形の上に配置できません。  <br/> |**visSLOFixedPlow** <br/> |
+|&amp;H1  <br/> |[**レイアウトの構成**] ダイアログボックスを使用して図形をレイアウトするときに、この図形は移動しません。  <br/> |**visslofixedplacement** <br/> |
+|&amp;H2  <br/> |この図形は移動しません。また他の図形をこの図形の上に配置できません。  <br/> |**visslofixedplow 移動** <br/> |
 |&amp;H4  <br/> |この図形は移動しません。ただし他の図形をこの図形の上に配置できます。  <br/> |**visSLOFixedPermeablePlow** <br/> |
-|&amp;H20 (32)  <br/> |迂回するときに、接続ポイントの位置を無視します。  <br/> |**visSLOFixedConnPtsIgnore** <br/> |
-|&amp;H40 (64)  <br/> |接続ポイントがある側だけに迂回します。  <br/> |**visSLOFixedConnPtsOnly** <br/> |
-|&amp;H80 (128)  <br/> |この図形の外周には接着しません。代わりに、図形の図形枠に接着します。  <br/> |**visSLOFixedNoFoldToShape** <br/> |
+|&amp;H20 (32)  <br/> |迂回するときに、接続ポイントの位置を無視します。  <br/> |**visslofixedconnptsignore** <br/> |
+|&amp;H40 (64)  <br/> |接続ポイントがある側だけに迂回します。  <br/> |**visslofixedconnptsonly** <br/> |
+|&amp;H80 (128)  <br/> |この図形の外周には接着しません。 代わりに、図形の図形枠に接着します。  <br/> |**visSLOFixedNoFoldToShape** <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**動作**] ダイアログ ボックスの [**配置**] タブで、このセルの値を設定することもできます (図形を選択して、[[開発](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] で、[**動作**] をクリックし、[**配置**] タブをクリックして). 
+このセルの値は、[**基本動作**] ダイアログボックスの [**配置**] タブで設定することもできます (図形が選択されている場合)、[[開発](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] グループで、[**基本動作**] をクリックし、[**配置**] タブをクリックします。). 
   
-このセルの値の任意の組み合わせを設定することができます。 値 3 を入力するたとえば、(&amp;H3)、**レイアウトの構成**] ダイアログ ボックスを使用して図形をレイアウトするときの動きを排除する ([**デザイン**] タブの [**レイアウト**] で、**ページの再レイアウト**] をクリックし、 **他のレイアウト オプション**) または図形の近くに他の配置可能な図形を配置するときとします。 
+このセルには、上記の値を任意に組み合わせて設定できます。 たとえば、値 3&amp;(H3) を入力すると、[レイアウトの**構成**] ダイアログボックス ([**デザイン**] タブの [**レイアウト**] グループで、[ページ******の再レイアウト] をクリックし、[] をクリックします) を使用して、図形をレイアウトするときに移動を省略できます。** その他のレイアウトオプション) と、他の配置可能な図形を図形の上または近くに配置する場合。 
   
 Visio 2000 より前のバージョンでは、[Miscellaneous] セクションで [ObjInteract] セルを使用してこの動作を設定していました。 
   
@@ -41,7 +41,7 @@ Visio 2000 より前のバージョンでは、[Miscellaneous] セクション�
   
 |||
 |:-----|:-----|
-|セル名 :  <br/> |ShapeFixedCode  <br/> |
+|セル名 :  <br/> |[shapefixedcode]  <br/> |
    
 プログラムから、インデックスによって [ShapeFixedCode] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -49,6 +49,6 @@ Visio 2000 より前のバージョンでは、[Miscellaneous] セクション�
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionObject** <br/> |
 |行インデックス:  <br/> |**visRowShapeLayout** <br/> |
-|セル インデックス:  <br/> |**visSLOFixedCode** <br/> |
+|セル インデックス:  <br/> |**visslofixedcode** <br/> |
    
 

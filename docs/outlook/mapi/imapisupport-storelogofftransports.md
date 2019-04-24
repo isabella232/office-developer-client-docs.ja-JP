@@ -1,5 +1,5 @@
 ---
-title: IMAPISupportStoreLogoffTransports
+title: imapisupportstorelogofftransports
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: f21fba96-c5ca-4d41-9b93-c7955ab7327f
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b77a58b04e5cdeee7a9e84051a6ed287c1a20115
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 30c91ec7a5a28b0c270da5223a2a245fb504d8c5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326496"
 ---
 # <a name="imapisupportstorelogofftransports"></a>IMAPISupport::StoreLogoffTransports
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ ストアの正常型解放を要求します。
+メッセージストアの正常なリリースを要求します。
   
 ```cpp
 HRESULT StoreLogoffTransports(
@@ -35,69 +35,69 @@ ULONG FAR * lpulFlags
 
 ## <a name="parameters"></a>パラメーター
 
- _lpulFlags_
+ _lアウトフラグ_
   
-> [で [チェック アウト]メッセージ ストアのログオフが行われる方法を制御するフラグのビットマスクです。 入力ではこのパラメーターのすべてのフラグは相互に排他的です。呼び出しは、次のフラグの 1 つだけを設定できます。
+> [入力]メッセージストアのログオフを実行する方法を制御するフラグのビットマスク。 入力時に、このパラメーターのすべてのフラグは相互に排他的です。呼び出しごとに設定できるのは、次に示すフラグのいずれか1つだけです。
     
 LOGOFF_ABORT 
   
-> ログオフする前に、このストア用のトランスポート プロバイダーのアクティビティを停止する必要があります。 活動が停止し、MAPI スプーラーがストアにログオフした後、コントロールがクライアントに返されます。 場合は、任意のトランスポート処理が行われて、ログオフが発生しないと、MAPI スプーラーまたはトランスポート プロバイダーの動作の変更は行われません。 現在の活動はありません、MAPI スプーラーは、ストアを解放します。 
+> このストアのトランスポートプロバイダーのアクティビティは、ログオフの前に停止する必要があります。 アクティビティが停止し、MAPI スプーラーがストアからログオフした後に、制御がクライアントに返されます。 いずれかのトランスポートアクティビティが行われている場合は、ログオフは行われず、MAPI スプーラーまたはトランスポートプロバイダーの動作が変更されることはありません。 現在、アクティビティがない場合、MAPI スプーラーはストアを解放します。 
     
 LOGOFF_NO_WAIT 
   
-> MAPI スプーラーは、ストアを解放し、すべての送信メールを送信する準備が整っているが送信された直後に、コントロールをクライアントに返す必要があります。 メッセージ ・ ストアに既定の受信トレイがある場合は、任意のプロセスでメッセージを受信すると、それ以上の受信が無効になります。 
+> MAPI スプーラーは、送信できる状態になっているすべての送信メールが送信された直後に、ストアを解放し、制御をクライアントに返します。 メッセージストアに既定の受信トレイがある場合は、処理中のメッセージを受信すると、さらに受信を無効にします。 
     
 LOGOFF_ORDERLY 
   
-> MAPI スプーラーが、ストアを解放し、保留中のメッセージが終了した後すぐにクライアントに制御を返す必要がありますを処理します。 新しいメッセージは処理されません。 
+> MAPI スプーラーは、保留中のメッセージの処理が完了した直後にストアを解放し、制御をクライアントに返します。 新しいメッセージを処理する必要はありません。 
     
 LOGOFF_PURGE 
   
-> LOGOFF_NO_WAIT フラグと同じように動作します。 LOGOFF_PURGE フラグは、完了した後、呼び出し側にコントロールを返します。 
+> LOGOFF_NO_WAIT フラグと同じ働きをします。 LOGOFF_PURGE フラグは、完了後に呼び出し元に制御を戻します。 
     
 LOGOFF_QUIET 
   
-> ログオフする必要がありますトランスポート プロバイダーのすべてのアクティビティが行われる場合は発生しません。 出力フラグとして実行されているアクティビティの種類が返されます。
+> トランスポートプロバイダーのアクティビティが実行されている場合は、ログオフする必要はありません。 実行されるアクティビティの種類は、出力のフラグとして返されます。
     
     On output, MAPI spooler can return one or more of the following flags:
     
 LOGOFF_COMPLETE 
   
-> ログオフを完了できます。 ストアに関連付けられているすべてのリソースが解放されているし、オブジェクトが無効になっています。 MAPI スプーラーを実行しているか、すべての要求が実行されます。 この時点で、メッセージ ・ ストアの**リ ス**のメソッドのみを呼び出す必要があります。 
+> ログオフを完了できます。 ストアに関連付けられているすべてのリソースが解放され、オブジェクトが無効にされました。 MAPI スプーラーが実行されたか、すべての要求を実行します。 この時点で、メッセージストアの**IUnknown:: Release**メソッドのみを呼び出す必要があります。 
     
 LOGOFF_INBOUND 
   
-> メッセージ現在に由来してストアに 1 つまたは複数のトランスポート プロバイダー。 
+> メッセージが、1つまたは複数のトランスポートプロバイダーからストアに送られてきている。 
     
 LOGOFF_OUTBOUND 
   
-> 1 つまたは複数のトランスポート プロバイダーによって、ストアからメッセージを送信されている現在は。 
+> 現在、1つ以上のトランスポートプロバイダーによってストアからメッセージが送信されています。 
     
 LOGOFF_OUTBOUND_QUEUE 
   
-> ストアの送信キューには現在のメッセージがあります。
+> 現在、ストアの送信キューにメッセージがあります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> ログオフ プロシージャが正常に完了しました。
+> ログオフ手順は正常に実行されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-メッセージ ストア プロバイダーのサポート オブジェクトの**IMAPISupport::StoreLogoffTransports**メソッドを実装します。 メッセージ ストア プロバイダーは、クライアント アプリケーションにメッセージ ・ ストアとして MAPI ハンドル トランスポート プロバイダーのアクティビティを終了する方法をある程度制御を提供する**StoreLogoffTransports**を呼び出します。 
+**imapisupport:: storelogofftransports**メソッドは、メッセージストアプロバイダーサポートオブジェクトに対して実装されています。 メッセージストアプロバイダーは、 **storelogofftransports**を呼び出して、クライアントアプリケーションに、メッセージストアを閉じるときのトランスポートプロバイダーアクティビティの処理方法を制御できるようにします。 
   
-別のプロセスに同じプロファイルを開いてログオフするのには、ストアがある場合は、MAPI は**StoreLogoffTransports**への呼び出しを無視し、 _lpulFlags_パラメーターに LOGOFF_COMPLETE フラグを返します。 
+別のプロセスが同じプロファイルに対してストアを開いて開いた場合、MAPI は**storelogofftransports**への呼び出しを無視し、 _lpulflags_パラメーターでフラグ LOGOFF_COMPLETE を返します。 
   
-**StoreLogoffTransports**からの戻り値を次のストア プロバイダーの動作は、 _lpulFlags_システムの状態を示し、ログオフ時の動作については、クライアントに伝達するの値に基づいている必要があります。 
+**storelogofftransports**からの戻り値に続くストアプロバイダーの動作は、システム状態を示す_lpulflags_の値に基づいている必要があります。これは、システム状態を示し、ログオフ動作に関するクライアント命令を伝達します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
- **StoreLogoffTransports**は、通常、ストア プロバイダーの[IMsgStore::StoreLogoff](imsgstore-storelogoff.md)メソッドから呼び出されます。 ただしに呼び出すこともできます**が**メソッドのメッセージ ・ ストアから。 実装する**StoreLogoffTransports**への呼び出しが開始されているかどうかを確認することができますので、メッセージ ・ ストアの**Release**メソッドが発生しました。 呼び出しが実行されていない場合は、LOGOFF_ABORT フラグを設定して**StoreLogoffTransports**を呼び出します。 
+ **storelogofftransports**は、通常、ストアプロバイダーの[IMsgStore:: storelogoff](imsgstore-storelogoff.md)メソッドから呼び出されます。 ただし、メッセージストアの**IUnknown:: Release**メソッドからも呼び出すことができます。 **storelogofftransports**への呼び出しが発生したかどうかを確認できるように、メッセージストアの**Release**メソッドを実装します。 呼び出しが発生していない場合は、LOGOFF_ABORT フラグが設定された**storelogofftransports**を呼び出します。 
   
-_LpulFlags_パラメーターは、クライアントがメッセージ ・ ストアをシャット ダウンする必要がありますを示すフラグを設定します。 _UlFlags_ **StoreLogoff**への呼び出しに対応するパラメーターの設定に基づいて適切な設定を決定します。 クライアントには、 _ulFlags_ LOGOFF_ORDERLY に設定すると、 **StoreLogoff**メソッドが呼び出されると、 _ulFlags_に LOGOFF_ORDERLY の設定で**StoreLogoffTransports**を呼び出す必要があります。 
+_lアウト flags_パラメーターは、クライアントがメッセージストアをシャットダウンする必要があるかどうかを示すフラグに設定されています。 **storelogoff**への呼び出しで対応するパラメーターの設定に基づいて、 _ulflags_に適切な設定を決定します。 つまり、 _ulflags_を LOGOFF_ORDERLY に設定してクライアントが**storelogoff**メソッドを呼び出した場合は、 _ulflags_を LOGOFF_ORDERLY に設定して**storelogoffトランスポート**を呼び出す必要があります。 
   
-メッセージ ストア ログオフ処理の詳細については、[シャット ダウン、メッセージ ストア プロバイダー](shutting-down-a-message-store-provider.md)を参照してください。
+メッセージストアのログオフプロセスの詳細については、「[メッセージストアプロバイダーのシャットダウン](shutting-down-a-message-store-provider.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

@@ -6,34 +6,34 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: e1bc4900-d261-f692-386b-139ef6960212
-description: メッセージの主要な accountsendstamp を指定します。
+description: メッセージのプライマリ accountsendstamp を指定します。
 ms.openlocfilehash: 902c71bd4a1bd5a25ab50c4b26bcfa6d5e8489e6
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25394085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327707"
 ---
 # <a name="pidtagprimarysendaccount"></a>PidTagPrimarySendAccount
 
-メッセージをプライマリ アカウントの「送信」スタンプを指定します。
+メッセージのプライマリアカウント "send" スタンプを指定します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_PRIMARY_SEND_ACCOUNT  <br/> |
-|識別子:  <br/> |0x0E28  <br/> |
+|識別子:  <br/> |0x0e28  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
-|エリア:  <br/> |Account  <br/> |
+|エリア:  <br/> |アカウント  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティは、MAPI のメッセージ オブジェクトに適用されます。 受信したメッセージは、プライマリ アカウントの「送信」スタンプはアカウントには、転送または返信を送信するかを示します。 送信メッセージでは、メッセージを送信するアカウントを決定します。 その値が、 [PROP_ACCT_SEND_STAMP](prop_acct_send_stamp.md) 、 [IOlkAccount](iolkaccount.md)のインターフェイス、メッセージが送信されているアカウントからです。 
+このプロパティは、MAPI メッセージオブジェクトに適用されます。 受信メッセージの場合、プライマリアカウントの "送信" スタンプは、転送または返信を送信するアカウントを示します。 送信メッセージの場合は、メッセージを送信するアカウントを決定します。 この値は、メッセージが送信されるアカウントの[IOlkAccount](iolkaccount.md)インターフェイスの[PROP_ACCT_SEND_STAMP](prop_acct_send_stamp.md)値です。 
   
 ## <a name="see-also"></a>関連項目
 
 - [定数 (アカウント管理 API)](constants-account-management-api.md)
-- [MAPI プロパティ](https://msdn.microsoft.com/library/3b980217-b65b-442b-8c18-b8b9f3ff487a%28Office.15%29.aspx)
+- [MAPI のプロパティ](https://msdn.microsoft.com/library/3b980217-b65b-442b-8c18-b8b9f3ff487a%28Office.15%29.aspx)
 - [PidTagPrimarySendAccount 標準プロパティ](https://msdn.microsoft.com/library/2f268b3b-2e4c-4aea-8879-bdd0ac1df35c%28Office.15%29.aspx)
 

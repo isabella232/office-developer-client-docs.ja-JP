@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 25368f6c-4fba-4381-840c-ca122bd31b5f
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7e61e98d1db1ab3acb958da353d8d22870937632
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25387021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328715"
 ---
 # <a name="pidtagjunkincludecontacts-canonical-property"></a>PidTagJunkIncludeContacts 標準プロパティ
 
@@ -25,7 +25,7 @@ ms.locfileid: "25387021"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-連絡先フォルダー内の連絡先の電子メール アドレスが迷惑メール フィルターについては特別に扱うかどうかを示します。
+連絡先フォルダー内の連絡先の電子メールアドレスがスパムフィルターに関して特別に処理されるかどうかを示します。
   
 |||
 |:-----|:-----|
@@ -34,41 +34,41 @@ ms.locfileid: "25387021"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |スパム  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-"0x00000001"に設定すると、これらの電子メール アドレスする必要がありますを先に設定、迷惑メール ルールの制限の「信頼された」の連絡先電子メール アドレスの部分をこれらのアドレスからのメールが「迷惑メール」として扱われます。 "0x00000000"に設定すると、連絡先フォルダーから電子メール アドレスする必要がありますに追加できません迷惑メールのルールとルールのセクションは NULL である必要があります。
+"0x00000001" に設定されている場合、これらの電子メールアドレスは、これらのアドレスからのメールが "not 迷惑" として扱われるように、迷惑メールルール制限の "信頼できる連絡先の電子メールアドレス" 部分に設定する必要があります。 "0x00000000" に設定されている場合は、連絡先フォルダーからの電子メールアドレスを迷惑メールルールに追加してはいけません。また、ルールのセクションは NULL である必要があります。
   
-このプロパティが"0x00000001"と追加した連絡先が迷惑メール ルールの「信頼されたアドレス帳にまだ含まれていない電子メール アドレスを持つ場合の値である場合制限これらの電子メール アドレスを追加しなければなりません。 このプロパティが"0x00000000"の場合は、操作する必要はありません。
+このプロパティが "0x00000001" という値で存在し、追加された連絡先の電子メールアドレスが迷惑メールルールの [信頼できる連絡先] セクションにまだ含まれていない場合は、それらの電子メールアドレスを制限に追加する必要があります。 このプロパティが "0x00000000" の場合は、何もする必要はありません。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
+[[OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
   
-> 許可/禁止リストの処理、迷惑メール メッセージの決定を可能にします。
+> 許可/ブロックリストの処理と、迷惑メールメッセージの決定を有効にします。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

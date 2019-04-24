@@ -1,5 +1,5 @@
 ---
-title: メッセージの配信を再送信
+title: 未配信メッセージの再送信
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,42 +7,42 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 71768db3-a107-47c6-8e6b-775e8d40ac36
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: cdb1ef3cf6db2a1b63b68a105867aa6624b80c2c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: ddd0c1419531b0822bb98df51f47e12e63dcf242
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328680"
 ---
-# <a name="resending-an-undelivered-message"></a>メッセージの配信を再送信
+# <a name="resending-an-undelivered-message"></a>未配信メッセージの再送信
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-トランスポート プロバイダーは、送信したメッセージを正常に配信できない場合に、配信不能レポート (NDR) を送信します。 クライアントはユーザーがこれらの配信不能メッセージの再送を試みることができるかどうか。 サポートする場合、メッセージを再送信 MAPI によって提供されるフォームを使用してか、独自に実装します。 MAPI フォームが可能であれば、失敗した受信者と配信の失敗の理由の名前を表示し、ボタンが含まれていますが、選択すると、メッセージを再送信するユーザーに許可します。
+送信したメッセージを正常に配信できない場合、トランスポートプロバイダーは配信不能レポート (NDR) を送信します。 ユーザーがこれらの未配信メッセージの再送信を試みることができるかどうかは、クライアントによって設定されます。 メッセージの再送信をサポートする場合は、MAPI で提供されたフォームを使用するか、または独自のフォームを実装できます。 MAPI フォームには、失敗した受信者の名前と、可能であれば配信エラーの理由が表示され、ユーザーがメッセージを再送信できるようにするボタンが含まれています。
   
-再送信されたメッセージを受信すると、元のメッセージとまったく同じになります。 受信者は、転送の最初の試行は、またはそれ以降の試行で配信されたメッセージとを区別することことがあります。 このメッセージに返信は、メッセージが送信された正常に初めて場合とまったく同様に動作するはず。
+再送信メッセージを受信すると、元のメッセージとまったく同じように表示されます。 受信者は、送信時に最初に配信されたメッセージとその後の試行で区別できないようにする必要があります。 このメッセージの返信は、メッセージが最初に正常に送信された場合とまったく同じように動作します。
   
-### <a name="to-resend-an-undelivered-message"></a>メッセージの配信を再送信するには
+### <a name="to-resend-an-undelivered-message"></a>未配信のメッセージを再送信するには
   
-1. 新しいメッセージを作成するのには[IMAPIFolder::CreateMessage](imapifolder-createmessage.md)を呼び出します。 
+1. [imapifolder:: CreateMessage](imapifolder-createmessage.md)を呼び出して、新しいメッセージを作成します。 
     
-2. 元のメッセージからコピーするすべてのプロパティを除く、* * PR_MESSAGE_RECIPIENTS * * ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) のプロパティ、および**PR_SENDER**と**PR_SENT_REPRESENTING**のプロパティです。 次のプロパティの変更を行います。 
+2. * * PR_MESSAGE_RECIPIENTS * * ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) プロパティ、 **PR_SENDER** 、 **PR_SENT_REPRESENTING**の各プロパティを除く、元のメッセージのすべてのプロパティをコピーします。 次のプロパティを変更してください。 
     
-   - **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) に、レポートの設定 * * PR_ORIG_MESSAGE_CLASS * * ([PidTagOriginalMessageClass](pidtagoriginalmessageclass-canonical-property.md)) のプロパティです。
+   - **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) を report の * * PR_ORIG_MESSAGE_CLASS * * ([PidTagOriginalMessageClass](pidtagoriginalmessageclass-canonical-property.md)) プロパティに設定します。
     
-   - **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティでは、MSGFLAG_RESEND フラグを設定します。
+   - **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティで MSGFLAG_RESEND フラグを設定します。
     
-   - **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) のプロパティを元のメッセージの**PR_ORIGINAL_ENTRYID** ([PidTagOriginalEntryId](pidtagoriginalentryid-canonical-property.md)) に設定します。
+   - 元のメッセージの**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティに、 **PR_ORIGINAL_ENTRYID** ([PidTagOriginalEntryId](pidtagoriginalentryid-canonical-property.md)) を設定します。
     
-   - 各受信者について、 **PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) のプロパティに MAPI_SUBMITTED を設定します。 
+   - 各受信者について、 **PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) プロパティで MAPI_SUBMITTED を設定します。 
     
-   - 失敗した各受信者が重複してください。 重複した受信者の**PR_RECIPIENT_TYPE**プロパティを MAPI_P1 に変更します。 したがって、障害が発生した受信者ごとにエントリーがあるようになりました 2 受信者テーブルの: **PR_RECIPIENT_TYPE**で 1 つが元の値に設定し、MAPI_P1 に**PR_RECIPIENT_TYPE**と、その他の設定です。 
+   - 失敗した受信者ごとに複製します。 複製された受信者の**PR_RECIPIENT_TYPE**プロパティを MAPI_P1 に変更します。 そのため、失敗した受信者ごとに、受信者テーブルに2つのエントリがあります。1つは、 **PR_RECIPIENT_TYPE**が元の値に設定され、もう一方が**PR_RECIPIENT_TYPE**が MAPI_P1 に設定されている場合です。 
     
-3. 会話が必要な場合にトラッキングを設定するのには[ScCreateConversationIndex](sccreateconversationindex.md)を呼び出します。 
+3. 必要に応じて、 [ScCreateConversationIndex](sccreateconversationindex.md)を呼び出して会話追跡を設定します。 
     
-4. 受信者の一覧を更新するための新しいメッセージの[IMessage::ModifyRecipients](imessage-modifyrecipients.md)メソッドを呼び出します。 
+4. 新しいメッセージの[IMessage:: modifyrecipients](imessage-modifyrecipients.md)メソッドを呼び出して、受信者リストを更新します。 
     
-5. 保存し、新しいメッセージを送信する[IMessage::SubmitMessage](imessage-submitmessage.md)を呼び出します。 
+5. [IMessage:: submitmessage](imessage-submitmessage.md)を呼び出して、新しいメッセージを保存して送信します。 
     
 

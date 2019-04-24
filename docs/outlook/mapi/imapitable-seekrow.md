@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 93ac63ae-f254-45e1-a9b1-347d69d2ed9f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: aead09eb10a3015a54867f14011c56b686bc8624
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fbc990a8c962883aa07987b200d1d2fd55434f93
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328827"
 ---
 # <a name="imapitableseekrow"></a>IMAPITable::SeekRow
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 テーブル内の特定の位置にカーソルを移動します。
   
@@ -39,7 +39,7 @@ LONG FAR * lplRowsSought
 
  _bkOrigin_
   
-> [in]シーク操作の開始位置を識別するブックマークです。 、 [IMAPITable::CreateBookmark](imapitable-createbookmark.md)メソッドを使用してブックマークを作成することができますか、次の定義済み値の 1 つ渡すことができます。 
+> 順番シーク操作の開始位置を識別するブックマーク。 ブックを作成するには、 [IMAPITable:: createbookmark](imapitable-createbookmark.md)メソッドを使用するか、次の定義済みの値のいずれかを渡すことができます。 
     
 BOOKMARK_BEGINNING 
   
@@ -47,21 +47,21 @@ BOOKMARK_BEGINNING
     
 BOOKMARK_CURRENT 
   
-> シーク操作は、カーソルが配置されているテーブル内の行から開始します。 
+> カーソルが置かれているテーブルの行からシーク操作を開始します。 
     
 BOOKMARK_END 
   
-> テーブルの末尾からシーク操作を開始します。 
+> テーブルの最後からシーク操作を開始します。 
     
- _lRowCount_
+ _lrowcount_
   
-> [in]移動する行の数の符号付きの数、ブックマークから、 _bkOrigin_パラメーターで識別されます。 
+> 順番_bkOrigin_パラメーターによって識別されるブックマークから開始して、移動する行数の符号付き数。 
     
- _lplRowsSought_
+ _lplrowssought_
   
-> [out]_LRowCount_がシーク操作で処理された行の数を入力すると、 _lplRowsSought_のポイントの有効なポインターである場合は、先の符号は、前方または後方検索の方向を示します。 _LRowCount_が負の場合は、 _lplRowsSought_が負の値です。 
+> 読み上げ_lrowcount_が入力の有効なポインターである場合、 _lplrowssは_、シーク操作で処理された行数を指していることを示します。の符号は、検索の方向 (前方または後方) を示します。 _lrowcount_が負の場合、 _lplrowssは_負の値になります。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -69,47 +69,47 @@ S_OK
     
 MAPI_E_BUSY 
   
-> 別の操作は、行のシーク操作の開始を防止する処理中です。 実行中の操作を完了できるか、それを停止する必要があります。
+> 別の操作が進行中であるため、行シーク操作を開始できません。 進行中の操作が完了することを許可するか、停止する必要があります。
     
 MAPI_E_INVALID_BOOKMARK 
   
-> 削除されたため、または要求された最後の行を越えることがあるために、 _bkOrigin_パラメーターで指定されたブックマークは無効です。 
+> _bkOrigin_パラメーターで指定されたブックマークは、削除されたか、要求された最後の行を超えているため、無効です。 
     
 MAPI_W_POSITION_CHANGED 
   
-> 呼び出しが成功したが、最後に使用されたときと同じ行に、 _bkOrigin_パラメーターで指定されたブックマークが設定されないことです。 ブックマークが使用されていない場合は不要になった同じ位置に作成されたときと同じ この警告が返されると、呼び出しを成功として処理する必要があります。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、[エラーを処理するためのマクロの使用](using-macros-for-error-handling.md)を参照してください。
+> 呼び出しは成功しましたが、 _bkOrigin_パラメーターで指定されたブックマークは、最後に使用されたときと同じ行に設定されていません。 ブックマークが使用されていない場合は、作成時と同じ位置になりません。 この警告が返された場合、呼び出しは正常に処理されます。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPITable::SeekRow**メソッドは、カーソルの新しい BOOKMARK_CURRENT の位置を確立します。 _LRowCount_パラメーターでは、カーソルを移動する行と移動の方向の数を示します。 
+**IMAPITable:: seekrow**メソッドは、カーソルの新しい BOOKMARK_CURRENT 位置を確立します。 _lrowcount_パラメーターは、カーソルが移動する行の数と移動の方向を示します。 
   
-結果の位置がテーブルの最後の行以外の場合は、最後の行の後、カーソルが配置されます。 結果の位置がテーブルの最初の行の前にある場合は、最初の行の先頭にカーソルが配置されます。 
+結果の位置が表の最後の行を超える場合、カーソルは最後の行の後に配置されます。 結果の位置がテーブルの最初の行より前にある場合、カーソルは先頭行の先頭に配置されます。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-_BkOrigin_で指定された行がテーブルに存在していませんし、新しいブックマークの位置を確立することはできません、する場合は、MAPI_E_INVALID_BOOKMARK を返します。 _BkOrigin_で指定された行が存在しないと、新しいブックマークの位置を確立することができます、MAPI_W_POSITION_CHANGED を返します。 
+_bkOrigin_によって参照される行がテーブルに存在しなくなり、ブックマークの新しい位置を設定できない場合は、MAPI_E_INVALID_BOOKMARK を返します。 _bkOrigin_によって参照される行が存在しなくなり、ブックマークの新しい位置を設定できる場合は、MAPI_W_POSITION_CHANGED を返します。 
   
-テーブルの表示が折りたたまれている行を示すブックマークを使用することがまだできます。 呼び出し元がこのようなブックマークにカーソルを移動しようとすると場合、は、次の表示されている行にカーソルを移動し、MAPI_W_POSITION_CHANGED を返します。 
+テーブルビューから折りたたまれている行を指すブックマークは、引き続き使用できます。 呼び出し元がこのようなブックマークにカーソルを移動しようとした場合は、カーソルを次の表示される行に移動し、MAPI_W_POSITION_CHANGED を返します。 
   
-位置の使用時に、または行が折りたたまれているときに見えなくなり、折りたたまれているためにブックマークを移動することができます。 ブックマークは、行が折りたたまれているときに移動する場合は、かを示すかどうか、ブックマークが最後に使用してから移動、ことはありませんが使用されて、作成されてからブックマークに少ししてください。
+使用時または行が折りたたまれたときに、表示されていない位置のブックマークを移動できます。 行が折りたたまれたときにブックマークが移動された場合は、ブックマークが最後に使用されてから移動したか、または作成後に一度も使用されていない場合は、ブックマークが移動したかどうかを示すビットを保持します。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**SeekRow**の逆方向の移動を示す、 _lRowCount_の負の値を渡します。 テーブルの先頭を検索するには、 _lRowCount_と_bkOrigin_の BOOKMARK_BEGINNING の値に 0 を渡します。 
+**seekrow**の後方移動を指定するには、 _lrowcount_に負の値を渡します。 テーブルの先頭を検索するには、 _lrowcount_の0と、 _bkOrigin_の値 BOOKMARK_BEGINNING を渡します。 
   
-多くのテーブル内の行がある場合は、 **SeekRow**操作が低下することができます。 パフォーマンスは、 _lplRowsSought_パラメーターの内容で返される行の数を必要とする場合にも影響します。 
+テーブルに多数の行がある場合、 **seekrow**操作が遅くなることがあります。 _lplrowssought_パラメーターの内容で行数を返す必要がある場合は、パフォーマンスに影響することもあります。 
   
- **SeekRow**は、実際を検索、正または負の場合、 _lRowCount_が指す変数の行の数を返します。 通常の操作で、返す必要があります_lplRowsSought_の値が同じように_lRowCount_、ために渡された検索は先頭またはテーブルの末尾に到達しない限り。 
+ **seekrow**は、 _lrowcount_によって参照される変数内で実際に検索された行の数 (正または負) を返します。 通常の操作では、検索によってテーブルの先頭または末尾に到達した場合を除いて、 _lrowcount_ _rowssが_渡されたときと同じ値を返す必要があります。 
   
-設定しないで_lRowCount_を番号に 50 を超える。 多数の行をシーク、 [IMAPITable::SeekRowApprox](imapitable-seekrowapprox.md)メソッドを使用します。 
+_lrowcount_を50より大きい数値に設定しないでください。 より多くの行をシークするには、 [IMAPITable:: seekrowapprox](imapitable-seekrowapprox.md)メソッドを使用します。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIProcessor.cpp  <br/> |CMAPIProcessor::ProcessMailboxTable  <br/> |MFCMAPI では、 **IMAPITable::SeekRow**メソッドを使用して、処理する前にテーブルの先頭を見つけます。  <br/> |
+|MAPIProcessor  <br/> |cmapiprocessor::P rocessmailboxtable  <br/> |mfcmapi は、 **IMAPITable:: seekrow**メソッドを使用して、処理の前にテーブルの先頭を特定します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -10,13 +10,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8660c701-f7f4-8d92-7984-5dae7f677783
-description: '最終更新日: 2017 年 9 月 20日'
+description: '最終更新日: 2017 年9月20日'
 ms.openlocfilehash: 55c547c4dae1acc3e9874edc7778f53a5d34f957
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326945"
 ---
 # <a name="iconvertersessionmapitomimestm"></a>IConverterSession::MAPIToMIMEStm
  
@@ -37,63 +37,63 @@ HRESULT IConverterSession::MAPIToMIMEStm(
 
  _pmsg_
   
-> [in]変換するメッセージへのポインター。 **LPMESSAGE**の型定義の mapidefs.h を参照してください。
+> 順番変換するメッセージへのポインター。 **lpmessage**の種類の定義については、「mapidefs.h」を参照してください。
     
  _pstm_
   
-> [out]ストリームを出力する[IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)インターフェイスです。 
+> 読み上げストリームを出力する[IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)インターフェイス。 
     
  _ulFlags_
   
->  [in]コンバーターで特定のアクションを示すフラグです。 
+>  順番コンバータの特定のアクションを示すフラグ。 
     
 CCSF_8BITHEADERS
   
-> コンバーターは、8 ビットのヘッダーを許可する必要があります。
+> コンバータでは8ビットヘッダーが許可されている必要があります。
     
 CCSF_EMBEDDED_MESSAGE
   
-> 未送信の X で送信された未送信の情報が保持されます。
+> 送信/未送信の情報は、X 未送信の情報として保持されます。
     
 CCSF_GLOBAL_MESSAGE
   
-> コンバーターは、国際的なメッセージ (EAI/RFC6530) を構築する必要があります。
+> コンバータは、国際メッセージ (EAI/RFC6530) を作成する必要があります。
     
 CCSF_INCLUDE_BCC
   
-> MAPI メッセージの BCC 受信者は、MIME ストリームに入れるべきです。
+> MAPI メッセージの BCC 受信者は、MIME ストリームに含める必要があります。
     
 CCSF_NO_MSGID
   
-> 送信メッセージのメッセージ Id フィールドは含まれません。
+> 送信メッセージには、メッセージ Id フィールドを含めないでください。
     
 CCSF_NOHEADERS
   
-> コンバーターでは、外部のメッセージのヘッダーを無視してください。
+> コンバーターは、外部メッセージのヘッダーを無視する必要があります。
     
 CCSF_PLAIN_TEXT_ONLY
   
-> コンバーター テキスト形式を送信する必要があります。
+> コンバータは、プレーンテキストのみを送信する必要があります。
     
 CCSF_SMTP
   
-> コンバーターは、SMTP メッセージが渡されています。 このフラグを設定することが常にする必要があります。
+> コンバーターに SMTP メッセージが渡されています。 このフラグは常に設定する必要があります。
     
 CCSF_USE_RTF
   
-> コンバーターは、HTML から MIME メッセージ内の RTF 形式に変換する必要があります。
+> コンバーターは、MIME メッセージの HTML から RTF 形式に変換する必要があります。
     
 CCSF_USE_TNEF
   
-> コンバーターでは、MIME メッセージのトランスポート ニュートラル カプセル化形式 (TNEF) 形式を使用します。
+> コンバーターは、MIME メッセージでトランスポートニュートラルカプセル化形式 (TNEF) 形式を使用する必要があります。
     
 ## <a name="return-values"></a>戻り値
 
 E_INVALIDARG
   
-> 無効なフラグが渡された、または*pmsg*または*pstm*では NULL です。 
+> 無効なフラグが渡されたか、 *pmsg*または*pstm*が NULL です。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 標準の Outlook メッセージの種類に対してのみサポートされています。
   
@@ -103,8 +103,8 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MapiMime.cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI では、MimeToMAPI を使用して、MAPI メッセージを EML ファイルに変換します。  <br/> |
-|MapiMime.cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI では、MAPIToMIMEStm を使用して、MAPI メッセージを EML ファイルに変換します。  <br/> |
+|mapimime .cpp  <br/> |ImportEMLToIMessage  <br/> |mfcmapi は MimeToMAPI を使用して、EML ファイルを MAPI メッセージに変換します。  <br/> |
+|mapimime .cpp  <br/> |ExportIMessageToEML  <br/> |mfcmapi は、MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -131,5 +131,5 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
 [PidLidUseTnef ���K���̃v���p�e�B](pidlidusetnef-canonical-property.md)
 
 
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
 

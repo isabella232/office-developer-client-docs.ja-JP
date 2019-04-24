@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: ce5e8c43-06af-4afc-9138-5cc51d8fc401
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: e6803c54ddd60c1bcebbe7a139c2edf2e7f4449d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: bbb79097d03a8ea09cb4aff374231ee780e15395
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328841"
 ---
 # <a name="imapitableseekrowapprox"></a>IMAPITable::SeekRowApprox
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルのおおよその小数部から成る位置にカーソルを移動します。 
+テーブル内のおおよその分数位置にカーソルを移動します。 
   
 ```cpp
 HRESULT SeekRowApprox(
@@ -36,15 +36,15 @@ ULONG ulDenominator
 
 ## <a name="parameters"></a>パラメーター
 
- _ulNumerator_
+ _ulnumerator_
   
-> [in]テーブルの位置を表す分数の分子へのポインター。 _UlNumerator_パラメーターが 0 の場合は、分母の値に関係なく、テーブルの先頭にカーソルが配置されます。 _UlNumerator_が_ulDenominator_のパラメーターと等しい場合は、カーソルはテーブルの最後の行の後です。 
+> 順番テーブルの位置を表す分数の分子へのポインター。 _ulnumerator_パラメーターが0の場合、カーソルは分母値に関係なく、テーブルの先頭に配置されます。 _ulnumerator_が_ulnumerator_パラメーターと等しい場合、カーソルは最後の表の行の後に配置されます。 
     
- _ulDenominator_
+ _uldenominator_
   
-> [in]テーブルの位置を表す分数の分母となるへのポインター。 _UlDenominator_パラメーターは、ゼロにすることはできません。 
+> 順番テーブルの位置を表す分数の分母へのポインター。 _uldenominator_パラメーターを0にすることはできません。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -52,17 +52,17 @@ S_OK
     
 MAPI_E_BUSY 
   
-> 別の操作は、シーク操作の開始行を防止する処理中です。 実行中の操作を完了できるか、それを停止する必要があります。
+> 別の操作が進行中であるため、行のシーク操作を開始できません。 進行中の操作が完了することを許可するか、停止する必要があります。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPITable::SeekRowApprox**メソッドを呼び出した後、テーブルのカーソル位置は、ヒューリスティックによって、正確なことができない場合があります分数です。 たとえば、特定のプロバイダーを実装バイナリ ツリーは、上にテーブル パフォーマンス上の理由から、ツリーの最上部にテーブルの中間点を扱うこと。 ツリーのバランスがとれていない場合、使用される中間点があります、表の途中で正確に。 
+**IMAPITable:: seekrowapprox**メソッドを呼び出した後のテーブル内のカーソルの位置は、分母がヒューリスティックで、正確ではない可能性があります。 たとえば、特定のプロバイダーでは、パフォーマンス上の理由からツリーの最上位として表の中間点を処理して、バイナリツリーの上にテーブルを実装する場合があります。 ツリーが分散されていない場合、使用される中間点は、テーブルを正確に半分になることはありません。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-スクロール バーの実装にデータを提供する**SeekRowApprox**を呼び出します。 などの場合は、スクロール ボックス 2 と 3、スクロール バーを置くと、そのアクションをモデル**SeekRowApprox**を呼び出すと、 _ulNumerator_と_ulDenominator_を使用して同等の小数部から成る値を渡すことによって。 **SeekRowApprox**の検索では、テーブルの先頭からの絶対常にします。 テーブルの末尾に移動するには、 _ulNumerator_と_ulDenominator_の値は同じである必要があります。 
+スクロールバーの実装のデータを提供するために、 **seekrowapprox**を呼び出します。 たとえば、ユーザーがスクロールボックスをスクロールバーの下に移動した場合は、 **seekrowapprox**呼び出し、 _ulnumerator_と_ulnumerator_を使用して同等の小数点以下の値を渡すことによって、そのアクションをモデル化することができます。 **seekrowapprox** search は、常にテーブルの先頭からの絶対パスです。 テーブルの末尾に移動するには、 _ulnumerator_と_ulnumerator_の値が同じである必要があります。 
   
-適切な任意の数のスキームを使用します。 テーブルを中間の位置にシークに、1/2、10 月 20、または 50 または 100 を指定できます。 
+適切な番号スキームを使用してください。 つまり、テーブルの途中で位置をシークするには、1/2、10/20、または50/100 を指定できます。 
   
 ## <a name="see-also"></a>関連項目
 

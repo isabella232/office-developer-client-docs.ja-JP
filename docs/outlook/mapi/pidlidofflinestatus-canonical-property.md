@@ -12,52 +12,52 @@ api_type:
 - COM
 ms.assetid: ee69f0c4-b552-4cfd-8a39-a822d414549e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7d9f8cf4fbdeab70e40447411ed8efd35ef7899e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 537b45420390903d67722c074a1edcc04a0aede8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326300"
 ---
 # <a name="pidlidofflinestatus-canonical-property"></a>PidLidOfflineStatus 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[MS LISTSWS] を実装するサーバー上のドキュメント ファイルの状態を決定します。
+[MS] を実装しているサーバー上のドキュメントファイルの状態を判別します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ  <br/> |dispidOfflineStatus  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Common  <br/> |
-|長い ID (LID):  <br/> |0x000085B9  <br/> |
+|関連付けられたプロパティ  <br/> |dispidOfflineStatus  <br/> |
+|プロパティセット:  <br/> |PSETID_Common  <br/> |
+|ロング ID (LID):  <br/> |0x000085b9  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |一般的なメッセージング  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-次の表は、このプロパティの値を示しています。
+次の表に、このプロパティに指定できる値を示します。
   
 |**値**|**説明**|
 |:-----|:-----|
-|0  <br/> |ドキュメントがチェック アウトされていません。  <br/> |
-|1  <br/> |ドキュメントが現在のユーザーにチェック アウトします。  <br/> |
-|2  <br/> |ドキュメントがチェック アウトされていません、ですが、現在のユーザーが現在のコンピューター上で編集するために保存するファイルのコピーを持っています。  <br/> |
+|.0  <br/> |ドキュメントはチェックアウトされていません。  <br/> |
+|1-d  <br/> |ドキュメントは現在のユーザーにチェックアウトされています。  <br/> |
+|pbm-2  <br/> |ドキュメントはチェックアウトされていませんが、現在のユーザーは現在のコンピューターで編集のために保存されたファイルのコピーを持っています。  <br/> |
    
-このプロパティは、ローカルで計算されがサーバーに送信されません、いつでもユーザーが別のアカウントにアイテムをドラッグしない限り。 その場合は、ユーザー定義のカスタム プロパティとして扱われます。
+このプロパティはローカルで計算され、ユーザーが別のアカウントにアイテムをドラッグしない限り、常にサーバーに送信されません。 その場合は、ユーザー定義のカスタムプロパティとして扱われます。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[MS OXPROPS] 
+[[OXPROPS]] 
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -65,9 +65,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

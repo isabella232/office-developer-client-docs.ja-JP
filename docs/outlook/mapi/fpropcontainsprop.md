@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: 43da5b59-7691-49aa-b83c-753d43bfd8fd
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b08d3af8c61d8ced31e822bb787d49ad90b4df54
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ea56996ad56bb4ce93d103a75eba2c29e6059a87
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328043"
 ---
 # <a name="fpropcontainsprop"></a>FPropContainsProp
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-文字列またはバイナリ配列は、1 つが含まれている他の一般的に、2 つのプロパティ値を比較します。 
+2つのプロパティ値 (通常は文字列またはバイナリ配列) を比較して、一方に他方が含まれているかどうかを確認します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 BOOL FPropContainsProp(
@@ -41,48 +41,48 @@ BOOL FPropContainsProp(
 
 ## <a name="parameters"></a>パラメーター
 
-_lpSPropValueDst_
+_lpspropvaluedst_
   
-> [in]_LpSPropValueSrc_パラメーターで指定された検索文字列を含む可能性があるプロパティの値を定義する[SPropValue](spropvalue.md)構造体へのポインター。 
+> 順番_lpspropバリュー rc_パラメーターで指定された検索文字列を含むことができるプロパティ値を定義する[spropvalue](spropvalue.md)構造体へのポインター。 
     
-_lpSPropValueSrc_
+_lpspropて rc_
   
-> [in]_LpSPropValueDst_パラメーターで指定されたプロパティの値で**FPropContainsProp**を検索する検索文字列を定義する**SPropValue**構造体へのポインター。 
+> 順番**fpropan prop**が、 _lpspropvaluedst_パラメーターで指定されたプロパティ値をシークする、 **spropvalue**構造体へのポインター。 
     
 _ulFuzzyLevel_
   
-> [in]オプションの設定 preciseness のレベルを定義する、比較で使用します。 
+> 順番比較で使用する preciseness のレベルを定義するオプション設定。 
 
-  - **下位 16 ビット**は、PT_BINARY と PT_STRING8 型のプロパティに適用されます。 次の値の 1 つだけを設定する必要があります。
+  - **下位16ビット**は、PT_BINARY および PT_STRING8 型のプロパティに適用されます。 次の値のいずれかを正確に設定する必要があります。
       
-    - FL_FULLSTRING: _lpSPropValueSrc_の検索文字列を_lpSPropValueDst_で識別されるプロパティの値と同じにする必要があります。
+    - FL_FULLSTRING: _lpspropvalues rc_検索文字列は、 _lpspropvaluedst_で識別されるプロパティ値と等しくなければなりません。
         
-    - FL_PREFIX: _lpSPropValueSrc_の検索文字列は、 _lpSPropValueDst_によって識別されるプロパティの値の先頭にあります。 _LpSPropValueSrc_によって示される検索文字列の長さの分だけ、2 つの値を比較する必要があります。 
+    - FL_PREFIX: lpspropvaluesrc の検索文字列は、 _lpspropvaluedst_で識別されるプロパティ値の先頭に配置する必要があります。 __ 2つの値は、 _lpspropvalues rc_で示される検索文字列の長さまで比較する必要があります。 
         
-    - FL_SUBSTRING: _lpSPropValueSrc_の検索文字列に含まれなければならない任意の場所_lpSPropValueDst_によって識別されるプロパティの値。 
+    - FL_SUBSTRING: lpspropvaluesrc の検索文字列は、 _lpspropvaluedst_で識別されるプロパティ値の任意の場所に格納されている必要があります。 __ 
       
-  - **上位 16 ビット**は PT_STRING8 の種類のプロパティにのみ適用されます。 任意の組み合わせで次の値に設定できます。
+  - **上位16ビット**は、PT_STRING8 型のプロパティにのみ適用されます。 これらの値は、次の任意の組み合わせで設定できます。
     
-    - FL_IGNORECASE: 大文字と小文字を考慮せず、比較を行ってください。 
+    - FL_IGNORECASE: 比較は大文字と小文字の区別を考慮せずに行う必要があります。 
         
-    - FL_IGNORENONSPACE: 比較は、アクセント記号などの非スペーシング文字の Unicode で定義されているを無視してください。 
+    - FL_IGNORENONSPACE: 比較では、Unicode で定義されたスペーシング文字 (アクセント記号など) を無視する必要があります。 
         
-    - FL_LOOSE: 比較が一致する限り、大文字と小文字を示す必要がありますと小文字を区別し、非スペーシング文字。
+    - FL_LOOSE: 比較では、大文字と小文字の区別を無視して、可能な限り一致を示す必要があります。
     
 ## <a name="return-value"></a>戻り値
 
 TRUE 
   
-> パラメーターはすべて有効ですし、 _lpSPropValueSrc_の検索文字列が含まれている_lpSPropValueDst_プロパティの値で指定しました。 
+> パラメーターはすべて有効で、lpspropvaluesrc の検索文字列は_lpspropvaluedst_プロパティ値に指定されたとおりに含まれています。 __ 
     
 FALSE 
   
-> PT_STRING8 または PT_BINARY 型は比較対象のプロパティ値、プロパティ値は、さまざまな種類のまたは_lpSPropValueSrc_の検索文字列が含まれていない_lpSPropValueDst_のプロパティの値で指定しました。 
+> 比較対象のプロパティ値が PT_STRING8 または PT_BINARY の型ではないか、プロパティ値が異なる型で__ あるか、lpspropvaluesrc 検索文字列が_lpspropvaluedst_プロパティ値で指定されたとおりに含まれていません。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-比較メソッドは、 [SPropValue](spropvalue.md)プロパティの定義で指定されたプロパティの型および_ulFuzzyLevel_パラメーターで指定したあいまいレベル ヒューリスティックによって異なります。 テーブルを生成するための制限を準備するのには、 [FPropCompareProp](fpropcompareprop.md)と**FPropContainsProp**関数を使用できます。 
+比較方法は、 [spropvalue](spropvalue.md)プロパティの定義に指定されているプロパティの種類と、 _ulFuzzyLevel_パラメーターで指定されているファジーレベルヒューリスティックによって異なります。 [fpropcompareprop](fpropcompareprop.md)および**fpropの prop**関数を使用して、テーブルの生成に関する制限を準備できます。 
   
-PT_BINARY プロパティの型では、 _ulFuzzyLevel_の上位 16 ビットは無視されます。 _UlFuzzyLevel_の設定が存在しないか無効な場合、完全な文字列の完全一致が実行されます。 プロパティの包含構造の詳細については、 [SContentRestriction](scontentrestriction.md)構造体を参照してください。 
+プロパティの種類が PT_BINARY の場合、 _ulFuzzyLevel_の上位16ビットは無視されます。 _ulFuzzyLevel_の設定が指定されていない場合、または無効な場合は、完全な文字列の完全一致が実行されます。 プロパティコンテインメントの詳細については、 [scontentrestriction](scontentrestriction.md)構造を参照してください。 
   
 

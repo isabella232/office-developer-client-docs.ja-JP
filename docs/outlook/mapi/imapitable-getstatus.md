@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: f114f1fa-bc05-4587-875b-71548c5912ea
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: cda3de1719ec1b7cfca1a9ecdad7bc3b59a8b17d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ec305fc872d1bf1718592dabdd230617d50d3f54
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328897"
 ---
 # <a name="imapitablegetstatus"></a>IMAPITable::GetStatus
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルのステータスおよび種類を返します。
+テーブルの状態と種類を返します。
   
 ```cpp
 HRESULT GetStatus(
@@ -36,85 +36,85 @@ ULONG FAR * lpulTableType
 
 ## <a name="parameters"></a>パラメーター
 
- _lpulTableStatus_
+ _lpultablestatus_
   
-> [out]テーブルのステータスを示す値へのポインター。 次の値のいずれかが返されます。
+> 読み上げテーブルの状態を示す値へのポインター。 次のいずれかの値を返すことができます。
     
 TBLSTAT_COMPLETE 
   
-> 操作が進行中ではありません。
+> 進行中の操作はありません。
     
 TBLSTAT_QCHANGED 
   
-> テーブルの内容が変更された expectantly。 並べ替えまたは制限の操作に起因する変更は、このステータス値は返されません。
+> 表の内容が expectantly 変更されました。 この状態値は、並べ替えまたは制限の操作によって発生した変更に対しては返されません。
     
 TBLSTAT_RESTRICT_ERROR 
   
-> [IMAPITable::Restrict](imapitable-restrict.md)操作中にエラーが発生しました。 
+> [IMAPITable:: Restrict](imapitable-restrict.md)操作中にエラーが発生しました。 
     
 TBLSTAT_RESTRICTING 
   
-> **IMAPITable::Restrict**操作が進行中です。 
+> **IMAPITable:: Restrict**操作が進行中です。 
     
 TBLSTAT_SETCOL_ERROR 
   
-> [IMAPITable::SetColumns](imapitable-setcolumns.md)操作中にエラーが発生しました。 
+> [IMAPITable:: SetColumns](imapitable-setcolumns.md)操作中にエラーが発生しました。 
     
 TBLSTAT_SETTING_COLS 
   
-> **IMAPITable::SetColumns**操作が進行中です。 
+> **IMAPITable:: SetColumns**操作が進行中です。 
     
 TBLSTAT_SORT_ERROR 
   
-> [IMAPITable::SortTable](imapitable-sorttable.md)操作中にエラーが発生しました。 
+> [IMAPITable:: sorttable](imapitable-sorttable.md)操作中にエラーが発生しました。 
     
 TBLSTAT_SORTING 
   
-> **IMAPITable::SortTable**操作が進行中です。 
+> **IMAPITable:: sorttable**操作が進行中です。 
     
  _lpulTableType_
   
-> [out]テーブルのタイプを示す値へのポインター。 次の 3 つのテーブルの種類のいずれかが返されます。
+> 読み上げテーブルの種類を示す値へのポインター。 次の3種類のテーブルのいずれかを返すことができます。
     
 TBLTYPE_DYNAMIC 
   
-> テーブルの内容は動的です。行と列の値は、基になるデータの変化に応じて変更できます。
+> テーブルの内容は動的です。行と列の値は、基になるデータが変更されたときに変更されることがあります。
     
 TBLTYPE_KEYSET 
   
-> テーブル内の行は固定ですが、これらの行に列の値は動的で、基になるデータの変化に応じて変更できます。
+> テーブル内の行は固定されていますが、これらの行の列の値は動的であり、基になるデータの変更として変更できます。
     
 TBLTYPE_SNAPSHOT 
   
-> テーブルは、静的および基になるデータが変更されたとき、その内容が変更されません。
+> テーブルは静的であり、基になるデータが変更されてもその内容は変更されません。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > テーブルの状態が正常に返されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPTable::GetStatus**メソッドは、テーブルの種類と現在の状態に関する情報を取得します。 
+**IMAPTable:: GetStatus**メソッドは、テーブルの種類と現在の状態に関する情報を取得します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-ほかの 3 つの**IMAPITable**メソッドと組み合わせて**GetStatus**を使用するにはこれらの操作の状態を監視し、テーブル上の効果を確認します。 **IMAPITable**呼び出しを次のいずれかを行った後に、 **GetStatus**を呼び出します。 
+**GetStatus**を3つの他の**IMAPITable**メソッドと組み合わせて使用すると、これらの操作の状態を監視し、テーブルに対する効果を確認できます。 次の**IMAPITable**呼び出しのいずれかを行った後、 **GetStatus**を呼び出します。 
   
-- [IMAPITable::Restrict](imapitable-restrict.md)の制限を設定します。 
+- [IMAPITable::](imapitable-restrict.md)制限を設定します。 
     
-- [IMAPITable::SortTable](imapitable-sorttable.md)の並べ替え順序を確立します。 
+- [IMAPITable:: sorttable](imapitable-sorttable.md)は、並べ替えの順序を設定します。 
     
-- 列を定義するのには[IMAPITable::SetColumns](imapitable-setcolumns.md)を設定します。 
+- [IMAPITable:: SetColumns](imapitable-setcolumns.md)列セットを定義します。 
     
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::GetStatus  <br/> |MFCMAPI では、 **IMAPITable::GetStatus**メソッドを使用して、テーブルのステータスを報告します。  <br/> |
+|ContentsTableListCtrl  <br/> |CContentsTableListCtrl:: GetStatus  <br/> |mfcmapi は、 **IMAPITable:: GetStatus**メソッドを使用して、テーブルの状態を報告します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

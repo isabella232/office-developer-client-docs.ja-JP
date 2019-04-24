@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: ca8fbac6-b6f1-46ab-90a1-fc16f0d5824c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 39a184f00ccf54d4fa4477bbdf3086f3e44bddb0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 95c2e52760bd7d65351b4dd2091b68a43cd2f97c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328036"
 ---
 # <a name="freepadrlist"></a>FreePadrlist
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[ADRLIST](adrlist.md)構造体を破棄し、すべてのアレイ メンバーと構造体に割り当てられたメモリを含む、関連付けられているメモリを解放します。 
+[adrlist](adrlist.md)構造体を破棄し、すべてのメンバー配列および構造体に割り当てられたメモリを含む、関連するメモリを解放します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 void FreePadrlist(
@@ -43,7 +43,7 @@ void FreePadrlist(
 
  _padrlist_
   
-> [in]破棄する**ADRLIST**構造体へのポインター。 
+> 順番破棄する**adrlist**構造体へのポインター。 
     
 ## <a name="return-value"></a>Return value
 
@@ -51,17 +51,17 @@ void FreePadrlist(
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**FreePadrlist**の実装の一部としては、MAPI は、完全な構造を解放する前に**ADRLIST**構造体のすべてのエントリを解放する[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出します。 このためこのようなすべてのエントリは[ADRLIST](adrlist.md)構造体の割り当て規則に従っている必要があります、個人を使用して[MAPIAllocateBuffer](mapiallocatebuffer.md)を各メンバーの配列と構造体を呼び出します。 
+[MAPIFreeBuffer](mapifreebuffer.md)関数は、 **freepadrlist**の実装の一環として、完全な構造を解放する前に**adrlist**構造体のすべてのエントリを解放するために呼び出します。 そのため、このようなエントリはすべて、各メンバーの配列および構造に対して個別の[MAPIAllocateBuffer](mapiallocatebuffer.md)呼び出しを使用して、 [adrlist](adrlist.md)構造の割り当てルールに従っている必要があります。 
   
-**ADRLIST**と**SRowSet**構造体のメモリの割り当ての詳細については、 [ADRLIST および SRowSet 構造体のメモリを管理する](managing-memory-for-adrlist-and-srowset-structures.md)を参照してください。 
+**adrlist**および**srowset**構造体のメモリ割り当ての詳細については、「 [adrlist および srowset 構造体のメモリの管理](managing-memory-for-adrlist-and-srowset-structures.md)」を参照してください。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**�R�����g**|
 |:-----|:-----|:-----|
-|MAPIABFunctions.cpp  <br/> |AddOneOffAddress  <br/> |MFCMAPI では、 **FreePadrlist**メソッドを使用して、1 回限りのアドレスをメッセージに追加するのには構築された ADRLIST 構造体を解放します。  <br/> |
+|MAPIABFunctions  <br/> |addoneoffaddress  <br/> |mfcmapi は、 **freepadrlist**メソッドを使用して、メッセージに1回限りのアドレスを追加するために構築された adrlist 構造を解放します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

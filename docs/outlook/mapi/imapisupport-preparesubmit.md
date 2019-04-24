@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 467242e3-96c9-4280-9cbc-9ecfe3f279cf
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5f45a6457bba738b290d967260bbd34c0f88f93f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 738eb346ec5388cbd94b32598236ef2ca05740f3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326321"
 ---
 # <a name="imapisupportpreparesubmit"></a>IMAPISupport::PrepareSubmit
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI スプーラーに送信するためには、メッセージを準備します。
+MAPI スプーラーに送信するためのメッセージを準備します。
   
 ```cpp
 HRESULT PrepareSubmit(
@@ -36,35 +36,35 @@ ULONG FAR * lpulFlags
 
 ## <a name="parameters"></a>パラメーター
 
- _lpMessage_
+ _lpmessage_
   
-> [in]準備するのには、メッセージへのポインター。
+> 順番準備するメッセージへのポインター。
     
- _lpulFlags_
+ _lアウトフラグ_
   
-> [で [チェック アウト]入力では、 _lpulFlags_パラメーターは予約されており、0 にする必要があります。 出力では、 _lpulFlags_は NULL にする必要があります。 
+> [入力]入力では、 _lな flags_パラメーターは予約されており、0である必要があります。 出力時には、 _lアウトフラグ_は NULL である必要があります。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> メッセージの準備ができました。
+> メッセージが正常に準備されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-メッセージ ストア プロバイダーのサポート オブジェクトの**IMAPISupport::PrepareSubmit**メソッドを実装します。 メッセージ ストア プロバイダーは、MAPI スプーラーに送信するためのメッセージを準備するのには[IMessage::SubmitMessage](imessage-submitmessage.md)メソッドの実装では、 **PrepareSubmit**を呼び出します。 
+**imapisupport::P reparemethod**は、メッセージストアプロバイダーサポートオブジェクトに実装されています。 メッセージストアプロバイダーは、MAPI スプーラーに送信するためのメッセージを準備するために、 [IMessage:: submitmessage](imessage-submitmessage.md)メソッドの実装で**PrepareSubmit**を呼び出します。 
   
- **PrepareSubmit**は、MSGFLAG_RESEND フラグが、 **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティで設定されたメッセージを処理するために使用されます。 MSGFLAG_RESEND は、最初の送信が失敗したときに再送信する要求を含むメッセージに設定されています。 メッセージを正常に受信する受信者の一覧で受信者の指定しませんでしたが、 **PrepareSubmit**が決定します。 
+ **PrepareSubmit**は、MSGFLAG_RESEND フラグが**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティに設定されているメッセージを処理するために使用されます。 MSGFLAG_RESEND は、最初の送信に失敗したときに再送信する要求を含むメッセージに対して設定されます。 **PrepareSubmit**は、受信者一覧の受信者がメッセージを正常に受信したかどうかを判断します。 
   
-受信者の一覧にアクセスするには、 **PrepareSubmit**は、メッセージの[IMessage::GetRecipientTable](imessage-getrecipienttable.md)メソッドを呼び出します。 受信者のデータを取得するのには、 **PrepareSubmit**は、受信者テーブルの[IMAPITable::QueryRows](imapitable-queryrows.md)メソッドを呼び出します。 テーブル内の各行の**PrepareSubmit**は**PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) のプロパティをチェックし、次の操作のいずれか。
+受信者リストにアクセスするため、 **PrepareSubmit**はメッセージの[IMessage:: getrecipient table](imessage-getrecipienttable.md)メソッドを呼び出します。 受信者のデータを取得するために、 **PrepareSubmit**は受信者テーブルの[IMAPITable:: QueryRows](imapitable-queryrows.md)メソッドを呼び出します。 **PrepareSubmit**は、表の各行に対して**PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) プロパティをチェックし、次のいずれかの操作を行います。
   
-- MAPI_SUBMITTED フラグが設定されている場合、 **PrepareSubmit**はフラグをクリアし、**れない**([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) プロパティを FALSE に設定します。
+- MAPI_SUBMITTED フラグが設定されている場合、 **PrepareSubmit**はフラグをクリアし、 **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) プロパティを FALSE に設定します。
     
-- MAPI_SUBMITTED フラグが設定されていない場合、 **PrepareSubmit**は**PR_RECIPIENT_TYPE**を MAPI_P1 に変更し、true を指定する**れない**を設定します。 
+- MAPI_SUBMITTED フラグが設定されていない場合、 **PrepareSubmit**は**PR_RECIPIENT_TYPE**を MAPI_P1 に変更し、 **PR_RESPONSIBILITY**を TRUE に設定します。 
     
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**PrepareSubmit**を呼び出すと、前に、 [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md)メソッドを呼び出したあり、 _ulFlags_パラメーターに NOTIFY_READYTOSEND フラグを設定することを確認してください。 **SpoolerNotify**の呼び出しは、 **PrepareSubmit**への呼び出しの前にセッションごとに 1 回行う必要があります。 **SpoolerNotify**では、MAPI スプーラーを同期し、により、ログオンしているすべての必要なトランスポート プロバイダーのアドレスの種類を登録します。 
+**PrepareSubmit**を呼び出す前に、 [imapisupport:: SpoolerNotify](imapisupport-spoolernotify.md)メソッドを呼び出し、 _ulflags_パラメーターに NOTIFY_READYTOSEND フラグを設定していることを確認してください。 **SpoolerNotify**呼び出しは、 **PrepareSubmit**を呼び出す前に、セッションごとに1回実行する必要があります。 **SpoolerNotify**は、MAPI スプーラーを同期させ、必要なすべてのトランスポートプロバイダーがログオンしており、そのアドレスの種類が登録されていることを確認します。 
   
 ## <a name="see-also"></a>関連項目
 

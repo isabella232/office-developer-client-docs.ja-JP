@@ -13,11 +13,11 @@ api_type:
 ms.assetid: f75229e3-5f44-4298-8706-9eddf0ef124c
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 607105bd58a14a3510f1ae71246069440a4f05cb
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326195"
 ---
 # <a name="openimsgsession"></a>OpenIMsgSession
 
@@ -25,13 +25,13 @@ ms.locfileid: "25389625"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-作成し、その中に作成されたメッセージをグループ化するメッセージ セッションを開きます。 
+その中で作成されたメッセージをグループ化するメッセージセッションを作成して開きます。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Imessage.h  <br/> |
+|ヘッダー ファイル:  <br/> |Imessage  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 SCODE OpenIMsgSession(
@@ -43,17 +43,17 @@ SCODE OpenIMsgSession(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpMalloc_
+ _lpmalloc_
   
-> [in]OLE [IMalloc](https://docs.microsoft.com/windows/desktop/api/objidl/nn-objidl-imalloc)インターフェイスを公開すること、メモリ アロケーター オブジェクトへのポインター。 MAPI では、OLE [IStorage](https://docs.microsoft.com/windows/desktop/api/objidl/nn-objidl-istorage)インターフェイスを使用する場合、この割り当てメソッドを使用する必要があります。 
+> 順番OLE [imalloc](https://docs.microsoft.com/windows/desktop/api/objidl/nn-objidl-imalloc)インターフェイスを公開するメモリアロケーターオブジェクトへのポインター。 MAPI は、OLE [IStorage](https://docs.microsoft.com/windows/desktop/api/objidl/nn-objidl-istorage)インターフェイスで作業するときに、この割り当て方法を使用する必要があります。 
     
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B 
     
- _lppMsgSess_
+ _lppmsgsess_
   
-> [out]返されるメッセージのセッション オブジェクトへのポインターへのポインター。
+> 読み上げ返されたメッセージセッションオブジェクトへのポインターへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -63,7 +63,7 @@ S_OK
     
 MAPI_E_INVALID_PARAMETER
   
->  _lpMalloc_または_lppMsgSess_は、NULL です。 
+>  _lpmalloc_または_lppmsgsess_ NULL です。 
     
 MAPI_E_INVALID_FLAGS
   
@@ -71,16 +71,16 @@ MAPI_E_INVALID_FLAGS
     
 MAPI_UNICODE
   
-> この関数を呼び出す場合、クライアントまたはサービス プロバイダーは、Unicode の .msg ファイルを作成するのには MAPI_UNICODE フラグを設定します。 [Imessage](imessageimapiprop.md)ファイルでは、その PR_STORE_SUPPORT_MASK に STORE_UNICODE_OK を示しています、Unicode プロパティをサポートしています。 
+> この関数を呼び出すと、クライアントまたはサービスプロバイダーは、MAPI_UNICODE フラグを設定して、UNICODE の .msg ファイルを作成します。 生成された[Imessage](imessageimapiprop.md)ファイルは、PR_STORE_SUPPORT_MASK に STORE_UNICODE_OK を表示し、UNICODE プロパティをサポートします。 
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-メッセージ セッションがクライアント アプリケーションによって使用され、いくつかに対処するために必要なサービス プロバイダーに関連する MAPI [IMessage: IMAPIProp](imessageimapiprop.md)オブジェクトの基になる OLE **IStorage**オブジェクトの上に構築します。 クライアントまたはプロバイダーは、 **OpenIMsgSession**と[CloseIMsgSession](closeimsgsession.md)関数を使用して、メッセージ セッション中には、このようなメッセージの作成をラップします。 メッセージ セッションを開くと、クライアントまたはプロバイダーのポインターに渡します - **IStorage**オブジェクトの新しい**IMessage**を作成する[OpenIMsgOnIStg](openimsgonistg.md)への呼び出しで。 
+メッセージセッションは、基になる OLE **IStorage**オブジェクトの上に構築された複数の関連する MAPI [IMessage: imapiprop](imessageimapiprop.md)オブジェクトを処理するクライアントアプリケーションおよびサービスプロバイダーによって使用されます。 クライアントまたはプロバイダーは、 **OpenIMsgSession**関数と[CloseIMsgSession](closeimsgsession.md)関数を使用して、メッセージセッション内のメッセージの作成をラップします。 メッセージセッションが開かれると、クライアントまたはプロバイダーは、 [OpenIMsgOnIStg](openimsgonistg.md)への呼び出しによって、新しい**IMessage**オブジェクトを作成するために**** ポインターを渡します。 
   
-メッセージ セッションの追跡 - 点灯 - **IStorage**オブジェクトのすべての添付ファイルとメッセージの他のプロパティだけでなく、セッションの期間中に作成されたすべての**IMessage**です。 クライアントまたはプロバイダーを呼び出すと**CloseIMsgSession**、これらすべてのオブジェクトを閉じます。 -点灯 - **IStorage**オブジェクト**IMessage**を終了する唯一の方法は、 **CloseIMsgSession**を呼び出すことです。 
+メッセージセッションは、メッセージのすべての添付ファイルと**** その他のプロパティに加えて、セッションの期間中に作成されたすべての**IMessage**オブジェクトを追跡します。 クライアントまたはプロバイダーが**CloseIMsgSession**を呼び出すと、これらのすべてのオブジェクトが閉じられます。 **CloseIMsgSession**の呼び出しは、 **IMessage**で、 **IStorage**オブジェクトを閉じる唯一の方法です。 
   
- **OpenIMsgSession**は、クライアントと OLE **IStorage**オブジェクトに関連するいくつかのメッセージを処理する能力を必要とするプロバイダーが使用されます。 だけこのような 1 つのメッセージを同時に開くことが、複数のメッセージと**OpenIMsgSession**とメッセージ セッションを作成する理由を追跡する必要はありません。 
+ **OpenIMsgSession**は、複数の関連するメッセージを OLE **IStorage**オブジェクトとして処理する機能を必要とするクライアントとプロバイダーによって使用されます。 そのようなメッセージを一度に1つだけ開く場合は、複数のメッセージを追跡する必要がなく、 **OpenIMsgSession**を使用してメッセージセッションを作成する理由もありません。 
   
-基になる OLE オブジェクトを扱うことはため、MAPI は、OLE のメモリの割り当てを使用する必要があります。 OLE 構造化ストレージ オブジェクトと OLE のメモリの割り当ての詳細については、 [OLE アプリケーションとデータの転送](https://msdn.microsoft.com/library/d4a57956-37ba-44ca-8efc-bf617ad5e77b.aspx)を参照してください。 
+基になる ole オブジェクトを処理しているため、MAPI は ole メモリ割り当てを使用する必要があります。 ole 構造化ストレージオブジェクトと ole メモリ割り当ての詳細については、「 [ole とデータ転送](https://msdn.microsoft.com/library/d4a57956-37ba-44ca-8efc-bf617ad5e77b.aspx)」を参照してください。 
   
 

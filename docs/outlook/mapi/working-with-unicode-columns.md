@@ -1,5 +1,5 @@
 ---
-title: Unicode 列の操作
+title: Unicode 列の使用
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,23 +7,23 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 2cd55464-263f-4f83-b874-524271773934
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: ffeee38920bf1c864b93e6513913c140cb658d8b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 76d1afb750dc81b889ca8e5eb3639145c061bfc2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32325572"
 ---
-# <a name="working-with-unicode-columns"></a>Unicode 列の操作
+# <a name="working-with-unicode-columns"></a>Unicode 列の使用
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-PT_STRING8 プロパティの型であり、標準の 8 ビット文字または 16 ビット Unicode 文字は、PT_UNICODE プロパティの型は、使用して、テーブル内の文字列を表すことができます。 テーブルの実装側は、自由に、それぞれのテーブルが Unicode 文字列をサポートするかどうかを選択します。 Unicode では、機能セットを拡張することによって、クライアントとサービス ・ プロバイダーの両方の値を追加、ためには、Unicode をサポート可能な限りことをお勧めします。 
+表の文字列は、プロパティの種類が PT_STRING8 の標準の8ビット文字、またはプロパティの種類が PT_UNICODE である16ビットの Unicode 文字を使用して表すことができます。 表の実装者は、テーブルが Unicode 文字列をサポートしているかどうかを自由に選択できます。 unicode は、機能セットを拡張することによって、クライアントとサービスプロバイダーの両方の値を追加するため、可能な限り unicode をサポートすることをお勧めします。 
   
-テーブルの多くのメソッドは、Unicode を使用する、文字列プロパティの値が期待どおりかどうかを決定するフラグを受け入れます。 入力で MAPI_UNICODE フラグを指定することを示しますテーブル実装する呼び出しで渡されるすべての文字列プロパティの値が Unicode 文字列であり、PT_UNICODE のプロパティの種類があること。 出力では、このフラグは、返される文字列のすべてのプロパティ値に Unicode 文字列では、可能な場合を示します。 フラグが入力または出力の意味を持つかどうかは、このメソッドによって異なります。 Unicode をサポートしていませんし、MAPI_UNICODE フラグが渡されるテーブルの実装では、MAPI_E_BAD_CHAR_WIDTH の値を返します。
+多くの table メソッドは、文字列プロパティの値が Unicode であることを想定しているかどうかを指定するフラグを受け入れます。 入力時に、MAPI_UNICODE フラグを指定すると、呼び出しに渡されたすべての文字列プロパティの値が UNICODE 文字列であり、プロパティの種類が PT_UNICODE であることをテーブルの実装に示します。 出力時、このフラグは、返されるすべての文字列プロパティ値が Unicode 文字列であることを示します (可能な場合)。 フラグが入力または出力に対して意味を持つかどうかは、メソッドによって決まります。 Unicode をサポートしておらず、MAPI_UNICODE フラグが渡されるテーブル実装では、MAPI_E_BAD_CHAR_WIDTH 値を返します。
   
 ## <a name="see-also"></a>関連項目
 

@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: e219adf6-e591-72e6-b9bd-2fc62eb5142d
-description: アカウントの指定したカテゴリの順序を変更します。
-ms.openlocfilehash: fcb27404471c9b551320027b0ed6979926ad3d58
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 指定したアカウントのカテゴリの順序を変更します。
+ms.openlocfilehash: 29dfe4fd1bda9e323481297167361650c3b3a173
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322044"
 ---
 # <a name="iolkaccountmanagersetorder"></a>IOlkAccountManager::SetOrder
 
-アカウントの指定したカテゴリの順序を変更します。
+指定したアカウントのカテゴリの順序を変更します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -33,9 +33,9 @@ HRESULT SetOrder(
 
 ## <a name="parameters"></a>パラメーター
 
-_pclsidCategory_
+_pclsidcategory_
   
-> [in]順序を設定するカテゴリ クラスの ID です。 値は、次のいずれかする必要があります。
+> 順番順序を設定するカテゴリクラス ID。 この値は、次のいずれかである必要があります。
     
    - CLSID_OlkAddressBook
     
@@ -43,24 +43,24 @@ _pclsidCategory_
     
 _cAccts_
   
-> [in]アカウントの数です。
+> 順番アカウントの数。
     
 _rgAccts_
   
-> [in]アカウント Id の配列。 配列のサイズは、 _cAccts_です。
+> 順番アカウント id の配列。 配列のサイズは_cAccts_です。
     
 ## <a name="return-values"></a>戻り値
 
 |**HRESULT 型**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |呼び出しが成功しました。  <br/> |
-|E_ACCT_WRONG_SORT_ORDER  <br/> |新しい並べ替え順より古い並べ替え順序もアカウントの数が異なるがあります。  <br/> |
+|E_ACCT_WRONG_SORT_ORDER  <br/> |新しい並べ替え順序には、古い並べ替え順序とは異なる数のアカウントがあります。  <br/> |
 |E_INVALIDARG  <br/> |いくつかの引数は無効です。  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |アカウント マネージャーが使用するために初期化されていません。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-呼び出し元は、配列のポインターの_prgAccts_である_prgAccts_ポイントの配列にメモリを割り当てます。 
+呼び出し元は、配列ポインター _prgAccts_および_prgAccts_がポイントする配列のメモリを割り当てます。 
   
 ## <a name="see-also"></a>関連項目
 

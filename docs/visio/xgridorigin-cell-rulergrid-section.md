@@ -1,5 +1,5 @@
 ---
-title: '[XGridOrigin] セル ([ルーラーとグリッド] セクション)'
+title: '[xgridorigin] セル&amp; ([ルーラ Grid] セクション)'
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,26 +9,26 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 2b1a8902-b1d4-c3d9-8c9f-1a28fddacc59
 description: グリッド原点の水平方向の座標を指定します。
-ms.openlocfilehash: 0cc6ff10f9bb4ba7ee0a13a48cb55b7dcd0fa013
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ee58ea7d950dd7e422f8a60a13bac8aa4ed353a6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322310"
 ---
-# <a name="xgridorigin-cell-ruler-amp-grid-section"></a>[XGridOrigin] セル ([ルーラーとグリッド] セクション)
+# <a name="xgridorigin-cell-ruler-amp-grid-section"></a>[xgridorigin] セル&amp; ([ルーラ Grid] セクション)
 
 グリッド原点の水平方向の座標を指定します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このセルは水平方向の**グリッドの基準**に対応してオプションで、**ルーラー&amp;グリッド**] ダイアログ ボックス ([**表示**] タブで、矢印をクリック**を表示**します。 
+このセルは、[**ルーラー &amp;グリッド**] ダイアログボックス ([**表示**] タブの [表示] 矢印をクリックすると**表示**されます) の [水平方向の**グリッド線**] オプションに対応しています。 
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [XGridOrigin] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |XGridOrigin  <br/> |
+|セル名:  <br/> |[xgridorigin]  <br/> |
    
 プログラムから、インデックスによって [XGridOrigin] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

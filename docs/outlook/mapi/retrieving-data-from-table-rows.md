@@ -1,5 +1,5 @@
 ---
-title: テーブルの行からデータを所得する
+title: テーブルの行からデータを取得する
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,36 +8,36 @@ api_type:
 - COM
 ms.assetid: 19a42794-a3a2-4336-af2a-473f24431252
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7b8690871dbe5b7234645f00cabab9c65706141e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2f389d26ec80b9af3ed28c5eb85b589c9cbb26c5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328659"
 ---
-# <a name="retrieving-data-from-table-rows"></a>テーブルの行からデータを所得する
+# <a name="retrieving-data-from-table-rows"></a>テーブルの行からデータを取得する
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルから行を取得する必要があります。
+テーブルから行を取得するには、次の処理が必要です。
   
 - すべての列のプロパティ値を取得します。
     
 - 現在の位置を変更します。
     
-エントリ id は、ほとんどのテーブルで必要な列のいずれかの- **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) は、行を表すオブジェクトを開くことを使用することができます。 このエントリ id は、通常、いずれかのテーブルの有効期間を超えて保持されませんが、短期的なエントリ id です。 ただし、テーブルのみを実装するサービス プロバイダーは、エントリの識別子の 1 つの型をサポートしている場合長期的な識別子である、ことができます。
+ほとんどのテーブルで必要な列の1つはエントリ識別子 ( **** [PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティで、これを使用して行を表すオブジェクトを開くことができます。 このエントリ識別子は、通常、短い用語のエントリ識別子です。これは、テーブルの有効期間を超えて保持されないものです。 ただし、テーブルを実装するサービスプロバイダーが1つの種類のエントリ識別子のみをサポートする場合は、長期の識別子になることがあります。
   
-クライアントとサービス ・ プロバイダーは、以下の行を取得する呼び出しのいずれかで作成できます。
+クライアントとサービスプロバイダーは、次のいずれかの呼び出しを行って行を取得できます。
   
 |||
 |:-----|:-----|
-|[IMAPITable::QueryRows](imapitable-queryrows.md) <br/> |前方または後方のいずれかの方向の現在の行で始まる行の指定した数を取得します。  <br/> |
-|[HrQueryAllRows](hrqueryallrows.md) <br/> |すべてのテーブルの行を取得します。  <br/> |
-|[ITableData::HrQueryRow](itabledata-hrqueryrow.md) <br/> |そのインデックス列の値に基づいてテーブルの行を取得します。 **PR_INSTANCE_KEY**([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) は、通常、テーブルのインデックスの列です。  <br/> |
+|[IMAPITable::QueryRows](imapitable-queryrows.md) <br/> |前方または後方のどちらかの方向に、現在の行から始まる指定された数の行を取得します。  <br/> |
+|[HrQueryAllRows](hrqueryallrows.md) <br/> |テーブル内のすべての行を取得します。  <br/> |
+|[ITableData::HrQueryRow](itabledata-hrqueryrow.md) <br/> |インデックス列の値に従って、テーブル内の行を取得します。 **PR_INSTANCE_KEY**([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) は、通常、テーブルのインデックス列です。  <br/> |
    
-オプションのプロパティは、テーブル内の列の 1 つとして含まれているが、他のユーザーは実行できないときに、列の有効な値がいくつかの行のがあります。 列の有効な値が存在するかどうかは、行の情報を提供するオブジェクトがプロパティを設定するかどうかによって異なります。 オブジェクトの実装によって**PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) として、テーブル、または任意の値で存在しないプロパティを表すことができます。 テーブルのユーザーが存在しないし、無意味な値を持つプロパティとプロパティは存在し、有効な値であることの間で区別するために注意が必要である必要があります。 
+オプションのプロパティがテーブルの列の1つとして含まれている場合、一部の行には列に有効な値が含まれている場合がありますが、それ以外の場合もあります。 列に有効な値が存在するかどうかは、その行の情報を提供するオブジェクトがプロパティを設定するかどうかによって決まります。 オブジェクトの実装によっては、存在しないプロパティをテーブルで**PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) または任意の値として表すことができます。 テーブルのユーザーは、存在しないプロパティと、存在しない値および有効な値を持つプロパティを慎重に区別する必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

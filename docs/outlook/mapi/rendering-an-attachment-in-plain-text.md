@@ -1,5 +1,5 @@
 ---
-title: テキスト形式での添付ファイルの表示
+title: テキスト形式での添付ファイルのレンダリング
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,36 +7,36 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 72b447e9-b4f2-4557-baf5-0afefe463749
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 031f8f17ae98bd62043a2cd8ce6c8c2d55a19c9f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 587736e7ca2f30468b169a33cea34927f857382c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328358"
 ---
-# <a name="rendering-an-attachment-in-plain-text"></a>テキスト形式での添付ファイルの表示
+# <a name="rendering-an-attachment-in-plain-text"></a>テキスト形式での添付ファイルのレンダリング
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-レンダリングするテキスト形式のメッセージで添付ファイル添付ファイルの**PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md)) のプロパティを取得し、 **PR_ATTACH_RENDERING** ([PidTagAttachRendering](pidtagattachrendering-canonical-property.md)) 内のデータに適用します。プロパティです。 **PR_RENDERING_POSITION**を取得する 2 とおりの方法があります。
+テキスト形式のメッセージに添付ファイルを表示するには、添付ファイルの**PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md)) プロパティを取得し、 **PR_ATTACH_RENDERING**のデータに適用します ([PidTagAttachRendering](pidtagattachrendering-canonical-property.md))。プロパティ. **PR_RENDERING_POSITION**を取得するには、次の2つの方法があります。
   
-- メッセージの**IMessage::OpenAttach**メソッドを呼び出すことによって、添付ファイルを開くし、 **PR_RENDERING_POSITION**プロパティの添付ファイルの**IMAPIProp::GetProps**メソッドを呼び出すことによって。 詳細については、 [IMessage::OpenAttach](imessage-openattach.md)および[IMAPIProp::GetProps](imapiprop-getprops.md)を参照してください。
+- メッセージの**IMessage:: openattach**メソッドを呼び出して添付ファイルを開き、添付ファイルの**imapiprop:: GetProps**メソッドを呼び出して**PR_RENDERING_POSITION**プロパティを要求します。 詳細については、「 [IMessage:: openattach](imessage-openattach.md) and [imapiprop:: GetProps](imapiprop-getprops.md)」を参照してください。
     
-- メソッドを呼び出してメッセージの**IMessage::GetAttachmentTable**を添付ファイル テーブルにアクセスし、 **PR_RENDERING_POSITION**プロパティを保持する列を取得します。 この方法は、常に推奨します。 詳細については、 [IMessage::GetAttachmentTable](imessage-getattachmenttable.md)を参照してください。
+- メッセージの**IMessage:: getattachmenttable**メソッドを呼び出して、その添付ファイルテーブルにアクセスし、 **PR_RENDERING_POSITION**プロパティを保持する列を取得します。 この方法は常に推奨されます。 詳細については、「 [IMessage:: getattachmenttable](imessage-getattachmenttable.md)」を参照してください。
     
-RTF に対応していない多くのメッセージ ストアを計算しない**PR_RENDERING_POSITION**クライアントは、メッセージの**PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) のプロパティを要求するまでに留意してください。 それまでは、 **PR_RENDERING_POSITION**は、通常、概算値を表します。 メッセージ ストア プロバイダーは、パフォーマンスを強化するために概算値をクライアントに提供できるのです。 
+RTF 対応メッセージストアの多くは、クライアントがメッセージの**PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) プロパティを要求するまで**PR_RENDERING_POSITION**を計算しないことに注意してください。 その時点まで、 **PR_RENDERING_POSITION**は通常近似値を表します。 メッセージストアプロバイダーは、パフォーマンスを向上させるために概数値をクライアントに提供できます。 
   
-ファイルまたはバイナリ添付ファイルのレンダリングは、その**PR_ATTACH_RENDERING**プロパティに格納されます。 **PR_RENDERING_POSITION**を取得するのと同じ方法で**PR_ATTACH_RENDERING**を取得する選択がある: 添付ファイルや添付ファイル テーブルから直接。 **PR_ATTACH_RENDERING**、最初の方法のですより時間がかかる方が安全です。 メッセージ ストア プロバイダーの中では、255 バイト、または 510 バイトまでのいくつかの場合、テーブルの列を切り捨て、ためには、 **PR_ATTACH_RENDERING**列に完全なレンダリングが含まれていることを確認することは困難です。 添付ファイルから直接プロパティを検索する場合に常に完了となります。 
+ファイルまたはバイナリ添付ファイルのレンダリングは、 **PR_ATTACH_RENDERING**プロパティに格納されます。 **PR_RENDERING_POSITION**を取得した場合と同じ方法で**PR_ATTACH_RENDERING**を取得する方法として、添付ファイルまたは添付ファイルテーブルから直接取得する方法があります。 **PR_ATTACH_RENDERING**の場合、最初の戦略は時間がかかることもありますが、より安全です。 一部のメッセージストアプロバイダーでは、表の列が255バイトに切り捨てられるか、場合によっては510バイトで切り捨てられることがあるため、 **PR_ATTACH_RENDERING**列に完全なレンダリングが含まれていることを確認するのは困難です。 添付ファイルから直接プロパティを取得する場合は、常に完了します。 
   
-OLE もメッセージの添付ファイルは、 **PR_ATTACH_RENDERING**を設定します。 代わりに、OLE 1 の添付ファイルの表示については、メッセージのテキスト ストリームに格納されます。 OLE 2 の添付ファイルの記憶域オブジェクトの子の特別なストリームに格納されます。 メッセージの添付ファイルの情報を表示、フォーム マネージャーを通じて利用可能です。 
+OLE もメッセージ添付ファイルも**PR_ATTACH_RENDERING**に設定することはできません。 代わりに、OLE 1 添付ファイルのレンダリング情報は、メッセージテキストストリームに格納されます。 OLE 2 の添付ファイルの場合は、ストレージオブジェクトの特別な子ストリームに格納されます。 メッセージの添付ファイルのレンダリング情報は、フォームマネージャーから使用できます。 
   
  **メッセージの添付ファイルのレンダリングを取得するには**
   
-1. フォーム マネージャーにアクセスするのにには、メッセージのメッセージ クラスを使用します。
+1. フォームマネージャーにアクセスするには、メッセージのメッセージクラスを使用します。
     
-2. フォーム マネージャーの**PR_MINI_ICON**プロパティにアクセスします。 詳細については、 **PR_MINI_ICON** ([PidTagMiniIcon](pidtagminiicon-canonical-property.md)) を参照してください。
+2. フォームマネージャーの**PR_MINI_ICON**プロパティにアクセスします。 詳細については、「 **PR_MINI_ICON** ([PidTagMiniIcon](pidtagminiicon-canonical-property.md))」を参照してください。
     
 

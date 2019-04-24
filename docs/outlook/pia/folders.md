@@ -1,5 +1,5 @@
 ---
-title: フォルダー
+title: Folders
 TOCTitle: Folders
 ms:assetid: b72b5705-d77a-4cad-873d-457b9fb6553e
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff184634(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ecf342c54d1aa2020fbfad4175a220b2aefecbe3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327183"
 ---
 # <a name="folders"></a>フォルダー
 
-このセクションでは、フォルダーに関連するサンプル タスクを示します。 [Folder](https://msdn.microsoft.com/library/bb645774\(v=office.15\)) オブジェクトは、Microsoft Outlook アイテムが保存されるフォルダーの階層構造を表します。 フォルダーの例として、[予定表]、[メール]、[削除済みアイテム] などのフォルダーが挙げられます。 Outlook プライマリ相互運用機能アセンブリ (PIA) では、**Folder** オブジェクトのメンバーが、[MAPIFolder](https://msdn.microsoft.com/library/bb624369\(v=office.15\)) オブジェクトのメンバーとして公開されています。
+This section provides sample tasks that involve folders. [Folder](https://msdn.microsoft.com/library/bb645774\(v=office.15\)) objects represent the folder hierarchy where Microsoft Outlook items are stored. Examples of folders include the Calendar, Mail, and Deleted Items folders. In the Outlook Primary Interop Assembly (PIA), members of the **Folder** object are exposed as members of the [MAPIFolder](https://msdn.microsoft.com/library/bb624369\(v=office.15\)) object.
 
 ## <a name="in-this-section"></a>このセクションの内容
 

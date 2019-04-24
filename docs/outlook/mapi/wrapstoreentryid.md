@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: b20107e3-5e23-4cde-9cd6-670c914ea70a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 45263396e69852a9ae17ff6fce284663bdf2fb07
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e797a80cf8659baa7ca935f94b3ab65c200530a3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32325670"
 ---
 # <a name="wrapstoreentryid"></a>WrapStoreEntryID
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージング システムがメッセージ ストアの内部のエントリの識別子をより使用可能なエントリ id に変換します。 
+メッセージストアの内部エントリ識別子を、メッセージングシステムによって使用可能なエントリ id に変換します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 WrapStoreEntryID(
@@ -44,46 +44,46 @@ WrapStoreEntryID(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]フラグのビットマスクです。 次のフラグを設定することができます。
+> 順番フラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 文字列は、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。 
+> 文字列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。 
     
  _szDLLName_
   
-> [in]メッセージ ストア プロバイダーの DLL の名前。 
+> 順番メッセージストアプロバイダー DLL の名前。 
     
  _cbOrigEntry_
   
-> [in]メッセージ ・ ストアの元のエントリ id のバイト単位のサイズです。 
+> 順番メッセージストアの元のエントリ識別子のサイズ (バイト単位)。 
     
- _lpOrigEntry_
+ _lporigentry_
   
-> [in]元のエントリ id が含まれている[エントリ ID](entryid.md)の構造体へのポインター。 
+> 順番元のエントリ識別子を含む[ENTRYID](entryid.md)構造体へのポインター。 
     
  _lpcbWrappedEntry_
   
-> [out]バイト単位で、新しいエントリ id のサイズへのポインター。 
+> 読み上げ新しいエントリ識別子のサイズ (バイト単位) へのポインター。 
     
  _lppWrappedEntry_
   
-> [out]新しいエントリの識別子を含む**エントリ ID**の構造体へのポインターへのポインター。 
+> 読み上げ新しいエントリ識別子を含む**ENTRYID**構造体へのポインターへのポインター。 
     
 ## <a name="return-value"></a>Return value
 
 なし。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-メッセージ ストアのオブジェクトは、そのメッセージ ・ ストアのサービス プロバイダーの coresident にのみ意味を持つエントリの内部識別子を保持します。 その他のメッセージング コンポーネントでは、MAPI には、ラップされたメッセージ ・ ストアに属していると認識可能な内部のエントリ id のバージョンが用意されています。 Coresident サービス ・ プロバイダーは常に指定する元のラップが解除されたメッセージ ストアのエントリ id です。クライアント アプリケーションは、常にでは、その使用可能な任意の場所のメッセージング ドメインと他のドメインに、ラップされたバージョンを指定してする必要があります。 
+メッセージストアオブジェクトは、そのメッセージストアとのサービスプロバイダ coresident にのみ意味がある内部エントリ識別子を保持します。 その他のメッセージングコンポーネントの場合、MAPI は、メッセージストアに属しているものとして認識できるようにするために、ラップされたバージョンの内部エントリ識別子を提供します。 coresident サービスプロバイダーには、必ず、元のラップされていないメッセージストアエントリ識別子を指定する必要があります。クライアントアプリケーションには常にラップされたバージョンが指定されている必要があります。これは、メッセージングドメインとその他のドメイン内の任意の場所で使用できます。 
   
-サービス プロバイダーは、 **WrapStoreEntryID**関数または**WrapStoreEntryID**関数を呼び出し、 [IMAPISupport::WrapStoreEntryID](imapisupport-wrapstoreentryid.md)メソッドのいずれかを使用して、メッセージ ストアのエントリの識別子を折り返すことができます。 プロバイダーはメッセージ ストアの**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) を公開するときのエントリ id をラップする必要がありますプロパティまたは書き込みを行うことと、[プロファイル] セクションに**PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md)) を公開するときにプロパティです。 [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md)の呼び出しに応答する場合、MAPI は、メッセージ ストアのエントリの識別子をラップします。 
+サービスプロバイダーは、 **WrapStoreEntryID**関数または[imapisupport:: WrapStoreEntryID](imapisupport-wrapstoreentryid.md)メソッドのいずれかを使用して、メッセージストアエントリ識別子をラップできます。このメソッドは、 **WrapStoreEntryID**関数を呼び出します。 プロバイダーは、メッセージストアの**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティを公開するか、プロファイルセクションに書き込むとき、および**PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md)) を公開するときに、エントリ識別子をラップする必要があります。プロパティ. MAPI は、 [imapisession:: openmsgstore](imapisession-openmsgstore.md)呼び出しに応答するときに、メッセージストアエントリ識別子をラップします。 
   
-クライアント アプリケーションでは、MAPI にラップされたメッセージ ストアのエントリの識別子を渡しますと、の呼び出しでは、 [IMAPISession::OpenEntry](imapisession-openentry.md) MAPI のラップを解除のエントリ id [IMSProvider::Logon](imsprovider-logon.md)や[などのプロバイダーのメソッドを呼び出すために使用する前にIMSProvider::CompareStoreIDs](imsprovider-comparestoreids.md)。 
+クライアントアプリケーションが、ラップされたメッセージストアエントリ識別子を mapi に渡すと ( [imapisession:: openentry](imapisession-openentry.md)呼び出しなど)、mapi は、 [IMSProvider:: Logon](imsprovider-logon.md) [などのプロバイダーメソッドを呼び出す前に、エントリ識別子をラップします。IMSProvider:: comparestoreids](imsprovider-comparestoreids.md)。 
   
 

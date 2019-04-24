@@ -7,50 +7,50 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 4d0ff834-253b-4e8c-a5be-6e4745a2a66c
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: bfaa4fd5f561c8138461db6ce8b9033c2a75b96b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 7f37d65e4beb328c2c92cf0c2ab28586af6bee45
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327469"
 ---
 # <a name="formatted-text-in-mapi"></a>MAPI の書式付きテキスト
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージのテキストは格納できるテキスト形式を使用して転送したり、書式設定されたテキスト。 書式設定されたテキストで、1 つまたは複数のフォント、フォント サイズなど、テキストの色の外観を変更することによりメッセージのテキストを強化します。 お勧めしますがすべてのクライアントとすべてのメッセージ ストア プロバイダーが書式設定されたテキストをサポート可能な限り、します。 メッセージの読みやすさを向上し、容易かつ効率的にメッセージの処理をすることによって値を追加するメッセージの書式設定されたテキストをサポートします。
+メッセージのテキストは、プレーンテキストまたは書式設定されたテキストを使用して保存および転送できます。 書式設定されたテキストは、たとえば1つまたは複数のフォント、フォントサイズ、テキストの色などの外観を変更することによって、メッセージテキストを拡張します。 すべてのクライアントと可能な限り、すべてのメッセージストアプロバイダーが書式設定されたテキストをサポートすることをお勧めします。 メッセージで書式設定されたテキストをサポートすることで、メッセージの読みやすさが向上し、メッセージの処理がより簡単で効率的になるため、価値が高まります。
   
-書式設定されたテキストは、さまざまな方法で実装できます。 リッチ テキスト形式 (RTF) で、最も一般的な方法です。 MAPI メッセージのテキスト情報を保持するための 3 つの転送可能なプロパティを定義する: **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md))、 **PR_HTML** ([PidTagHtml](pidtaghtml-canonical-property.md))、HTML、 **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)のテキストに) 圧縮された rtf 形式のテキストにします。 メッセージ テキストの書式設定されたバージョンであるため 2 回バージョンと同じサイズ、書式を設定せず、rtf 形式のテキストは、メッセージの転送、 **PR_RTF_COMPRESSED**プロパティに格納する前に圧縮されています。 画面にメッセージを表示するのには時間がある場合は、MAPI によって提供されるユーティリティ関数を使用して圧縮されたことはできません。 
+書式設定されたテキストは、さまざまな方法で実装できます。 リッチテキスト形式 (RTF) を使用する方法が最も一般的です。 MAPI は、メッセージテキスト情報を保持するための3つの**PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) のプロパティを定義します。プレーンテキスト、 **PR_HTML** ([PidTagHtml](pidtaghtml-canonical-property.md))、および**PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md) )) を使用して、圧縮された RTF テキストを表示します。 書式設定されていない場合、メッセージテキストの書式設定されたバージョンは、2倍の大きさになる可能性があるので、RTF テキストはメッセージと共に転送されて**PR_RTF_COMPRESSED**プロパティに格納される前に圧縮されます。 メッセージを画面に表示する時間になると、MAPI で提供されるユーティリティ関数を使用して圧縮が解除されます。 
   
-MAPI は、これら 2 つのメッセージ テキストのプロパティを定義し、それらの間の変換のためのメカニズム RTF に対応していないクライアントはクライアントとサポートしないメッセージング システムと相互運用できるように書式設定されたテキストです。
+MAPI は、RTF 対応クライアントが書式付きテキストをサポートしていないクライアントおよびメッセージングシステムと相互運用できるように、これら2つのメッセージテキストプロパティと、それらを変換するためのメカニズムを定義します。
   
 ### 
 
-[テキストと書式設定の同期](synchronizing-text-and-formatting.md)
+[テキストと書式設定を同期する](synchronizing-text-and-formatting.md)
   
-> RTF メッセージ テキストの書式設定と同期を維持する方法について説明します。
+> RTF メッセージテキストを書式設定と同期させる方法について説明します。
     
 [送信メッセージでの書式付きテキストのサポート: クライアントの責任](supporting-formatted-text-in-outgoing-messages-client-responsibilities.md)
   
-> 送信するメッセージの書式設定されたテキストをサポートするためのクライアント アプリケーションの責任について説明します。
+> 送信メッセージで書式設定されたテキストをサポートするためのクライアントアプリケーションの役割について説明します。
     
 [受信メッセージでの書式付きテキストのサポート: クライアントの責任](supporting-formatted-text-in-incoming-messages-client-responsibilities.md)
   
-> 受信メッセージの書式設定されたテキストをサポートするためのクライアント アプリケーションの責任について説明します。
+> 受信メッセージで書式設定されたテキストをサポートするためのクライアントアプリケーションの役割について説明します。
     
-[書式付きテキストのサポート: メッセージ ストアの責任](supporting-formatted-text-message-store-responsibilities.md)
+[書式付きテキストのサポート: メッセージストアの責任](supporting-formatted-text-message-store-responsibilities.md)
   
-> 書式設定されたテキストをサポートするためのメッセージ ストアの役割について説明します。
+> 書式設定されたテキストをサポートするメッセージストアの責任について説明します。
     
-[書式付きテキストのサポート: 添付ファイルの表示](supporting-formatted-text-rendering-attachments.md)
+[書式付きテキストのサポート: 添付ファイルのレンダリング](supporting-formatted-text-rendering-attachments.md)
   
-> 添付ファイルを表示する場所を選択する方法について説明します。
+> 添付ファイルのレンダリング先を選択する方法について説明します。
     
 [書式付きテキストのサポート: ゲートウェイの責任](supporting-formatted-text-gateway-responsibilities.md)
   
-> 書式設定されたテキスト メッセージを送信および受信のゲートウェイの役割について説明します。
+> 送信および受信の書式付きテキストメッセージのゲートウェイの役割について説明します。
     
 

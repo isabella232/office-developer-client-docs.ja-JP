@@ -1,5 +1,5 @@
 ---
-title: メッセージ ストア プロバイダー用の通知の提供
+title: メッセージストアプロバイダー用の通知の提供
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,25 +7,25 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c0e1cdba-ceb6-4a3f-8449-79d1a0ad1adf
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 3722893ae57a108b338725e46c975e92c0f8ff72
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: a28e6e6f008517a6b1c2c82dfa391b478963880f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328470"
 ---
-# <a name="providing-notifications-for-message-store-providers"></a>メッセージ ストア プロバイダー用の通知の提供
+# <a name="providing-notifications-for-message-store-providers"></a>メッセージストアプロバイダー用の通知の提供
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-通知は省略可能ですが、適切なメッセージ ストア プロバイダーの非常に重要な含まにはれています。 クライアント アプリケーションと MAPI スプーラーは、メッセージ ストア プロバイダーからの通知メッセージを送信または受信側の受信メッセージを送信するときに、良好なパフォーマンスを取得するに依存します。 クライアントと、MAPI スプーラーは、メッセージ ストア プロバイダーから通知を受信する前に機能できますが、変更せずにメッセージ ・ ストア内のユーザーに通知することはできません。 通常、ユーザーが、クライアントは、メッセージ ストアを次に開くまで、新しいメッセージが到着したことを確認することことを意味では、フォルダーが表示されます。
+通知はオプションですが、適切なメッセージストアプロバイダーの非常に重要な部分です。 クライアントアプリケーションと MAPI スプーラーは、メッセージストアプロバイダーからの通知に依存して、送信メッセージの送信または受信メッセージの受信時のパフォーマンスを向上させます。 クライアントと MAPI スプーラーは、メッセージストアプロバイダーから通知を受信せずに機能しますが、メッセージストアの変更をユーザーに通知することはできません。 通常、これは、クライアントが次にメッセージストアの受信フォルダーを開くまで、新しいメッセージが到着するのをユーザーが確認できないことを意味します。
   
-クライアントは、 [IMsgStore::Advise](imsgstore-advise.md)メソッドを呼び出して、通知を登録します。 クライアントのパスで、 [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md)インタ フェースは、クライアントが受け取るでは通知の種類を示すビットマスク、**アドバイズ**を格納、メッセージのどのオブジェクトを示す**エントリ Id**要求に適用されます。 オブジェクト (たとえば、メッセージ ・ ストア内の受信フォルダーに新しいメッセージが到着したときなど) に関連するイベントが発生すると、メッセージ ストア プロバイダーまたはオブジェクト自体はメソッドを呼び出す[IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) **のすべてのIMAPIAdviseSink**そのイベントの種類に対して登録されているオブジェクト。 
+[IMsgStore:: Advise](imsgstore-advise.md)メソッドを呼び出すことにより、クライアントは通知を登録します。 クライアントは[IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md)インターフェイスを渡します。これは、クライアントが受け取る通知の種類を示すビットマスクと、メッセージストア内のどのオブジェクトが**アドバイス**を示すかを示す**EntryID**です。要求はに適用されます。 オブジェクトで関連するイベントが発生した場合 (たとえば、メッセージストア内の受信フォルダーに新しいメッセージが到着したときなど)、メッセージストアプロバイダーまたはオブジェクト自体[](imapiadvisesink-onnotify.md)が、**すべてのに対して IMAPIAdviseSink:: onnotify メソッドを呼び出す必要があります。** そのイベントの種類に対して登録されている IMAPIAdviseSink オブジェクト。 
   
-場合でも、メッセージの格納プロバイダー決して通知メッセージ ・ ストア内の変更の場合は、他の MAPI コンポーネント MAPI_E_NO_SUPPORT を取得する**IMsgStore::Advise**を実装する必要がありますが、します。 プロバイダーを格納、メッセージからの通知が他のコンポーネントに通知されます。 
+メッセージストアプロバイダーがメッセージストア内の変更の他の MAPI コンポーネントに通知しない場合でも、MAPI_E_NO_SUPPORT を返すには**IMsgStore:: アドバイズ**を実装する必要があります。 これは、メッセージストアプロバイダーからの通知を必要としない他のコンポーネントに通知します。 
   
 ## <a name="see-also"></a>関連項目
 

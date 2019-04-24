@@ -1,5 +1,5 @@
 ---
-title: メッセージ ストア プロバイダーを使用したメッセージ受信
+title: メッセージストアプロバイダーを使用したメッセージの受信
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,43 +7,43 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 4763951e-ccfd-453e-b99c-5c7d5efb90c2
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 8a5df2e8f50d8de05ec43b03ae5b56887e76d505
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: c93a4b56489c2bfb458e2e1cd872073e64d9998a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328449"
 ---
-# <a name="receiving-messages-by-using-message-store-providers"></a>メッセージ ストア プロバイダーを使用したメッセージ受信
+# <a name="receiving-messages-by-using-message-store-providers"></a>メッセージストアプロバイダーを使用したメッセージの受信
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ ストア プロバイダーは、受信メッセージの送信をサポートする必要はありません (メッセージを使用するには、トランスポート プロバイダーおよび MAPI スプーラーは、メッセージの配信場所としてプロバイダーを格納するは、機能をサポートする)。 ただし、メッセージ ストア プロバイダーが受信したメッセージの送信をサポートしていない場合、既定のメッセージ ストアとして使用できません。
+メッセージストアプロバイダーは、受信メッセージの送信をサポートする必要はありません (つまり、トランスポートプロバイダーと MAPI スプーラーがメッセージの配信ポイントとしてメッセージストアプロバイダーを使用することをサポートしています)。 ただし、メッセージストアプロバイダーが受信メッセージの送信をサポートしていない場合は、既定のメッセージストアとして使用することはできません。
   
-受信メッセージの送信をサポートするために、メッセージ ストア プロバイダーは、次の。
+受信メッセージの送信をサポートするために、メッセージストアプロバイダーは次のことを行う必要があります。
   
-- クライアント アプリケーションが受信メッセージを見つけることができますので、 [IMsgStore::GetReceiveFolderTable](imsgstore-getreceivefoldertable.md)メソッドと[IMsgStore::GetReceiveFolder](imsgstore-getreceivefolder.md)メソッドをサポートします。 
+- クライアントアプリケーションが受信メッセージを検索できるように、 [IMsgStore:: getreceivefoldertable](imsgstore-getreceivefoldertable.md)および[IMsgStore:: getreceivefolder](imsgstore-getreceivefolder.md)メソッドをサポートします。 
     
-- [IMsgStore::NotifyNewMail](imsgstore-notifynewmail.md)メソッドをサポートして、MAPI スプーラーが新しいメッセージが到着したメッセージ ストア プロバイダーに通知できるようにします。 
+- [IMsgStore:: NotifyNewMail](imsgstore-notifynewmail.md)メソッドをサポートします。これにより、MAPI スプーラーは、新しいメッセージが到着したことをメッセージストアプロバイダーに通知できるようになります。 
     
-- 通知を実装するは、クライアントが新しいメッセージの通知を登録できるようにします。 通知はオプションですが、プロバイダーが実装する必要があります。
+- 通知を実装して、クライアントが新しいメッセージ通知を登録できるようにします。 通知はオプションですが、プロバイダーで実装する必要があります。
     
-メッセージ ・ ストアに受信メッセージが配信されるときに発生する一連のメソッド呼び出しは次のとおりです。
+受信メッセージがメッセージストアに配信されるときに実行されるメソッド呼び出しのシーケンスは次のとおりです。
   
-1. MAPI スプーラーは、 [IMAPIFolder](imapifolderimapicontainer.md)インターフェイスを取得するのには [受信トレイ] の[エントリ Id](entryid.md)を持つ[IMsgStore::OpenEntry](imsgstore-openentry.md)を呼び出します。 
+1. MAPI スプーラーは、受信トレイ[EntryID](entryid.md)を持つ[IMsgStore:: openentry](imsgstore-openentry.md)を呼び出して、 [imapifolder](imapifolderimapicontainer.md)インターフェイスを取得します。 
     
-2. MAPI スプーラーは、新しいメッセージ オブジェクトを取得する[IMAPIFolder::CreateMessage](imapifolder-createmessage.md)を呼び出します。 
+2. MAPI スプーラーは、 [imapifolder:: CreateMessage](imapifolder-createmessage.md)を呼び出して、新しい message オブジェクトを取得します。 
     
-3. MAPI スプーラーは、トランスポート プロバイダーへのメッセージ オブジェクトを渡します。
+3. MAPI スプーラーは、メッセージオブジェクトをトランスポートプロバイダーに渡します。
     
-4. トランスポート プロバイダーは、基になるメッセージング システムからのデータをメッセージのプロパティを格納し、メッセージ オブジェクトの[IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを呼び出します。 
+4. トランスポートプロバイダーは、メッセージのプロパティに、基になるメッセージングシステムのデータを格納し、message オブジェクトの[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出します。 
     
-5. メッセージ ストア プロバイダーは、新しいメッセージが到着した登録済みのクライアントに通知するのには、通知方法を使用します。
+5. メッセージストアプロバイダーは、通知方法を使用して、登録されているクライアントに新しいメッセージが到着したことを通知します。
     
-6. MAPI スプーラーでは、メッセージ ストアの[IMsgStore::NotifyNewMail](imsgstore-notifynewmail.md)メソッドを呼び出します。 
+6. MAPI スプーラーは、メッセージストアの[IMsgStore:: NotifyNewMail](imsgstore-notifynewmail.md)メソッドを呼び出します。 
     
 ## <a name="see-also"></a>関連項目
 

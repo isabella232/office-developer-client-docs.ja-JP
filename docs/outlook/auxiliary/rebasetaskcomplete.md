@@ -6,26 +6,26 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 2de5c77c-3fac-cfb6-3719-68df4013cf11
-description: 予定の再配置の完了を報告します。
+description: 予定のリベースの完了を報告します。
 ms.openlocfilehash: 9fab0d06bf0b9856b9a968f5c0db1bb15b0fe0bd
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328323"
 ---
 # <a name="rebasetaskcomplete"></a>RebaseTaskComplete
 
-予定の再配置の完了を報告します。
+予定のリベースの完了を報告します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |tzmovelib.h  <br/> |
-|実装元:  <br/> |MAPI クライアント アプリケーション  <br/> |
-|呼び出し元:  <br/> |Outlook の再配置オブジェクト  <br/> |
-|ポインターの型。  <br/> |**PFNREBASETASKCOMPLETE** tzmovelib.h で定義されています。  <br/> |
+|ヘッダー ファイル:  <br/> |、tzmovelib.h  <br/> |
+|実装元:  <br/> |MAPI クライアントアプリケーション  <br/> |
+|呼び出し元:  <br/> |Outlook のリベース/再配置オブジェクト  <br/> |
+|ポインターの種類:  <br/> |、tzmovelib.h で定義されている**PFNREBASETASKCOMPLETE**  <br/> |
    
 ```cpp
 void STDAPICALLTYPE RebaseTaskComplete(  
@@ -40,37 +40,37 @@ void STDAPICALLTYPE RebaseTaskComplete(
 
 ## <a name="parameters"></a>パラメーター
 
-_ulRowIndex_
+_ulrowindex_
   
-> [in]処理された行です。 このインデックスは、 [IOlkApptRebaser::BeginRebaseAppointments](iolkapptrebaser-beginrebaseappointments.md)に渡される**[SRowSet](https://msdn.microsoft.com/library/7e3761be-afd6-46cb-9a08-25e9016c1241%28Office.15%29.aspx)** 構造体を指します。
+> 順番処理された行です。 このインデックスは、 [IOlkApptRebaser:: beginrebaseappointments](iolkapptrebaser-beginrebaseappointments.md)に渡される**[srowset](https://msdn.microsoft.com/library/7e3761be-afd6-46cb-9a08-25e9016c1241%28Office.15%29.aspx)** 構造を参照します。
     
 _pRowCur_
   
-> in] 項目が処理されたことを説明する**[SRow](https://msdn.microsoft.com/library/369c2d5c-8c2b-4314-9cb2-aaa89580aa2b%28Office.15%29.aspx)** 構造体へのポインター。 
+> in] 処理されたアイテムを説明する**[srow](https://msdn.microsoft.com/library/369c2d5c-8c2b-4314-9cb2-aaa89580aa2b%28Office.15%29.aspx)** 構造体へのポインター。 
     
-_hrResult_
+_hrresult_
   
-> [in]再配置操作の結果を示す**HRESULT** 。 
+> 順番リベース操作の結果を示す**HRESULT** 。 
     
-_fModified_
+_fmodified_
   
-> [in]アイテムが変更されたかどうかを指定します。
+> 順番アイテムが変更されたかどうかを指定します。
     
-_fSentUpdate_
+_f文の更新_
   
-> [in]指定送信された会議がメッセージを更新するかどうか。 
+> 順番会議更新メッセージが送信されたかどうかを指定します。 
     
-_pError_
+_の場合_
   
-> [in]拡張エラー情報を含む**MAPIERROR**構造体へのポインター。 
+> 順番拡張エラー情報を含む**MAPIERROR**構造体へのポインター。 
     
 ## <a name="return-values"></a>戻り値
 
 呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。
   
-## <a name="remarks"></a>解釈
+## <a name="remarks"></a>解説
 
-[IOlkApptRebaser](iolkapptrebaser.md)インターフェイスを使用する MAPI クライアント アプリケーションは、項目の更新の完了を追跡するためにこの関数を実装します。 
+[IOlkApptRebaser](iolkapptrebaser.md)インターフェイスを使用する MAPI クライアントアプリケーションは、この関数を実装して、アイテムの更新の完了を追跡します。 
   
 ## <a name="see-also"></a>関連項目
 

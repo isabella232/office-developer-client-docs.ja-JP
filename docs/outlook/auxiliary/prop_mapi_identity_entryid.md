@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: c64db8ea-d6ad-4fb9-97aa-958e5a0daf8f
-description: 取得または、アカウントのアドレス帳のエントリ ID を設定します。
+description: アカウントのアドレス帳エントリ ID を取得または設定します。
 ms.openlocfilehash: 2352f64b46e9884e95b7bf1f3693321f7cd224ca
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326433"
 ---
 # <a name="propmapiidentityentryid"></a>PROP_MAPI_IDENTITY_ENTRYID
 
-取得または、アカウントのアドレス帳のエントリ ID を設定します。
+アカウントのアドレス帳エントリ ID を取得または設定します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -26,12 +26,12 @@ ms.locfileid: "25400349"
 |:-----|:-----|
 |識別子:  <br/> |0x2002  <br/> |
 |プロパティの種類:  <br/> |PT_BINARY  <br/> |
-|プロパティ タグ。  <br/> |0x20020102  <br/> |
-|アクセス:  <br/> |値の取得および設定が可能です。  <br/> |
+|プロパティタグ:  <br/> |0x20020102  <br/> |
+|接続  <br/> |読み取り/書き込み  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
- **プロペラ\_MAPI\_の ID\_エントリ ID**のすべてのアカウントの存在ではありません。 たとえば、Exchange アカウントがある**プロペラ\_MAPI\_の ID\_ENTRYID**設定ではなく[プロペラ\_ACCT_USER_EMAIL_ADDR](prop_acct_user_email_addr.md)、SMTP と POP3 アカウントの場合は、逆です。 **プロペラ\_MAPI_IDENTITY_ENTRYID** [IMAPISession::QueryIdentity](https://msdn.microsoft.com/library/a2cdda90-5457-49a7-b98c-7273ffe5cbbc%28Office.15%29.aspx)の_lppEntryID_によって返される値を次のようなエントリ ID を返します。 
+ **PROP\_MAPI\_id\_の ENTRYID**は、すべてのアカウントに存在するとは想定されていません。 たとえば、Exchange アカウントでは、prop [\_ACCT_USER_EMAIL_ADDR](prop_acct_user_email_addr.md)ではなく、 **prop\_\_MAPI\_IDENTITY ENTRYID**が設定されている場合がありますが、SMTP/POP3 アカウントでは、状況は逆転しています。 **PROP\_MAPI_IDENTITY_ENTRYID**は、 [imapisession:: queryidentity](https://msdn.microsoft.com/library/a2cdda90-5457-49a7-b98c-7273ffe5cbbc%28Office.15%29.aspx)の_lppentryid_によって返される値に似たエントリ ID を返します。 
   
 ## <a name="see-also"></a>関連項目
 

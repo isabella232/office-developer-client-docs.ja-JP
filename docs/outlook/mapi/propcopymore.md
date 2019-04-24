@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: 133d47cf-3592-44f3-8cdd-be402d160ee4
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 635525a1c2c3234d724534d225eb07022afc9956
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 827cdb919499a068f7932d8f1f7ec264ddc5b47c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328554"
 ---
 # <a name="propcopymore"></a>PropCopyMore
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-1 つのプロパティの値を元の場所から先の場所にコピーします。 
+1つのプロパティ値をソースの場所から移動先の場所にコピーします。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 SCODE PropCopyMore(
@@ -44,38 +44,38 @@ SCODE PropCopyMore(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpSPropValueDest_
+ _lpspropvaluedest_
   
-> [out]書き込みます、 [SPropValue](spropvalue.md)構造体がコピーされたプロパティ値を定義する場所へのポインター。 
+> 読み上げこの関数がコピーされたプロパティ値を定義する[spropvalue](spropvalue.md)構造を書き込む場所へのポインター。 
     
- _lpSPropValueSrc_
+ _lpspropて rc_
   
-> [in]コピーするプロパティの値を含む[SPropValue](spropvalue.md)構造体へのポインター。 
+> 順番コピーするプロパティ値を含む[spropvalue](spropvalue.md)構造体へのポインター。 
     
  _lpfAllocMore_
   
-> [in]先にコピーするプロパティを保持するのに十分な大きさがない場合、追加のメモリの割り当てに使用する[MAPIAllocateMore](mapiallocatemore.md)関数へのポインター。 
+> 順番コピーするプロパティを保持するには、コピー先の場所が十分でない場合に、追加のメモリを割り当てるために使用される[MAPIAllocateMore](mapiallocatemore.md)関数へのポインター。 
     
- _lpvObject_
+ _lpvobject_
   
-> [in]対象の**MAPIAllocateMore**は領域を割り当てる必要がある場合、オブジェクトへのポインター。 
+> 順番**MAPIAllocateMore**が必要に応じてスペースを割り当てるオブジェクトへのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK
   
-> 1 つのプロパティの値は、正常にコピーされました。
+> 単一のプロパティ値が正常にコピーされました。
     
 MAPI_E_NO_SUPPORT
   
-> 不明なプロパティの種類が発生しました。
+> 不明なプロパティの種類が検出されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-クライアント アプリケーションまたはサービス プロバイダーは、それを別の場所で使用するために解放しようとしているテーブルのプロパティをコピーするのには、 **PropCopyMore**関数を使用することができます。 
+クライアントアプリケーションまたはサービスプロバイダーは、 **propcopymore**関数を使用して、別の場所で使用するために解放されることになるテーブルからプロパティをコピーできます。 
   
- **PropCopyMore**は PT_STRING8、 [SPropValue](spropvalue.md)構造に適合しないなどの型がプロパティの値をコピーしない限り、メモリを割り当てる必要はありません。 、これらの大規模なプロパティは、関数は、 _lpfAllocMore_パラメーターで、ポインターが渡されます[MAPIAllocateMore](mapiallocatemore.md)関数を使用してメモリを割り当てます。 
+ コピーされたプロパティ値が PT_STRING8 など、 [spropvalue](spropvalue.md)構造に適合しない場合を除いて、 **propcopymore**はメモリを割り当てる必要はありません。 このような大きなプロパティの場合、関数は、ポインターが_lpfAllocMore_パラメータで渡される[MAPIAllocateMore](mapiallocatemore.md)関数を使用してメモリを割り当てます。 
   
-**PropCopyMore**の injudicious の使用にはメモリがフラグメント化します。代わりに[ScCopyProps](sccopyprops.md)関数を使用してください。 
+injudicious use **propcopymore**の断片メモリ。代わりに、 [sccopyprops](sccopyprops.md)関数の使用を検討してください。 
   
 

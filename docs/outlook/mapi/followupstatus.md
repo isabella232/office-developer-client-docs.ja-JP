@@ -7,21 +7,21 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c3d0f6c4-4597-784f-8d44-6e5d905895b4
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 6b57ed45e067ce2debd40e033d386ad2b5ae895a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 2280ae9271ca73af33f395bf9e41a9ee8fa62f96
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327525"
 ---
 # <a name="followupstatus"></a>FollowUpStatus
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージの別のフォロー アップのステータスを指定します。
+メッセージの別のフォローアップ状態を指定します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -34,23 +34,23 @@ enum FollowUpStatus {
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
- _flwupNone_
+ _flwupnone_
   
-> フラグが指定されていません。
+> フォローアップは指定されていません。
     
- _flwupComplete_
+ _flwupcomplete_
   
-> メッセージは完了です。
+> メッセージが完成しました。
     
- _flwupMarked_
+ _flwupmarked_
   
-> メッセージは、フラグを設定します。
+> メッセージには、フォローアップのマークが付けられます。
     
- _flwupMAX_
+ _flwupmax_
   
-> フォロー アップのためにサポートされている別の状態の数です。
+> フォローアップに対してサポートされているさまざまな状態の数。
     
 ## <a name="see-also"></a>関連項目
 

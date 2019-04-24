@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 510b2e21-ba27-47dd-87cb-2a549e31fa28
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 502bc24ece37c91e2cac23cf8486df96d5a71377
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 2e44d824bbb5cc96c51d7ca91eb639001bc52a71
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328875"
 ---
 # <a name="imapitablequeryposition"></a>IMAPITable::QueryPosition
 
@@ -25,7 +25,7 @@ ms.locfileid: "22584339"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-小数部の値に基づいて、カーソルの現在のテーブルの行位置を取得します。
+小数値に基づいて、カーソルの現在のテーブル行の位置を取得します。
   
 ```cpp
 HRESULT QueryPosition(
@@ -37,41 +37,41 @@ ULONG FAR * lpulDenominator
 
 ## <a name="parameters"></a>パラメーター
 
- _lpulRow_
+ _lの行_
   
-> [out]現在の行の行番号へのポインター。 行番号は 0 から始まります。テーブルの最初の行は 0 です。 
+> 読み上げ現在の行の番号へのポインター。 行番号は0から始まります。表の最初の行は0になります。 
     
- _lpulNumerator_
+ _lアウト分子_
   
-> [out]テーブルの位置を識別する分数の分子の部分へのポインター。
+> 読み上げテーブルの位置を識別する分数の分子へのポインター。
     
- _lpulDenominator_
+ _lアウト分母_
   
-> [out]テーブルの位置を識別する分数の分母となるへのポインター。 _LpulDenominator_パラメーターは、ゼロにすることはできません。 
+> 読み上げテーブルの位置を識別する分数の分母へのポインター。 _lアウト分母_パラメーターを0にすることはできません。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> メソッドでは、 _lpulRow_、 _lpulNumerator_、 _lpulDenominator_で有効な値が返されます。
+> メソッドは、 _lな行_の有効な値、l出た_分子_、および_lアウト分母_を返しました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPITable::QueryPosition**メソッドは、現在の行位置を指定し、現在の行とテーブルの末尾には、相対的な位置を示す小数部の値の番号の両方を返します。 MAPI は、読み取られる次の行として、現在の行を定義します。 
+**IMAPITable:: queryposition**メソッドは、現在の行の位置を決定し、現在の行の数と、テーブルの最後までの相対位置を示す小数値を返します。 MAPI は、現在の行を読み取る次の行として定義します。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-_LpulDenominator_パラメーターのテーブルの行の正確な数を取得する必要はありません。概算値となります。 
+_lアウト分母_パラメーターのテーブル内の行の正確な数を返す必要はありません。近似値になることがあります。 
   
-、現在の行を特定できない場合は、 _lpulRow_に 0 xffffffff の値を返します。
+現在の行を特定できない場合は、 _lアウト row_で値0xffffffff を返します。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**QueryPosition**を使用すると、スクロール バーのスクロール ボックスを配置します。 100 行を含むテーブルでの**QueryPosition**は、 _lpulDenominator_パラメーターに 100、75、 _lpulRow_パラメーターで、 _lpulNumerator_パラメーターで 75 の値を返す場合は、スクロール ボックス 3/4 を配置することスクロール バーの間での方法です。 
+**queryposition**を使用して、スクロールバーのスクロールボックスを配置できます。 たとえば、100行を含むテーブルで、 **queryposition**が l出_分子_パラメーターで75の値を返し、l出_分母_パラメーターで100を返した場合は、スクロールボックス__ を次のように配置できます。をスクロールバーの上方向に移動します。 
   
-テーブル内の行の数をされている_lpulDenominator_の値に依存しません。 **QueryPosition**は、正確な行にカーソルが配置されていることを常に識別できません。 
+テーブル内の行の数として、 _lアウト分母_の値に依存しないようにしてください。 **queryposition**は、カーソルが置かれている正確な行を常に識別することはできません。 
   
-**QueryPosition**への呼び出しには、大量メモリ、特に大規模な分類されたテーブルにはが含まれます。 _LpulRow_パラメーターは、0 xffffffff に設定されている場合、大量のメモリは**QueryPosition**を現在の行を特定するために必要でした。 _LpulNumerator_および_lpulDenominator_パラメーターで指定された行にテーブルを配置する[IMAPITable::SeekRowApprox](imapitable-seekrowapprox.md)メソッドを呼び出します。 ただし、常にされないように**QueryPosition**がメモリが倍にしていない場合、同じ行を現在の位置として確立するために**SeekRowApprox** 。 
+**queryposition**の呼び出しでは、特に、大きな分類されたテーブルの場合は、大量のメモリが関係することがあります。 lの_行_パラメーターが0xffffffff に設定されている場合、 **queryposition**が現在の行を特定するために必要なメモリの量が多すぎます。 [IMAPITable:: seekrowapprox](imapitable-seekrowapprox.md)メソッドを呼び出して、 _lpulnumerator_パラメーターと_lアウト分母_パラメーターで識別される行にテーブルを配置します。 ただし、メモリが係数で**** ない場合は、同じ行**queryposition**が現在の位置として設定されていると常に期待してはいけません。 
   
 ## <a name="see-also"></a>関連項目
 

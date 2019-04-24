@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: 0f8f9fc4-4940-4c0a-92cc-2a6409b9a13f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0686cee9bf6fa47332f75f99e1d2a2d35cb7e7fb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b1109b3201e1b1e4a78c3a0fe0f2eb4d0cd43c05
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328015"
 ---
 # <a name="freeprows"></a>FreeProws
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[SRowSet](srowset.md)構造体を破棄し、すべてのアレイ メンバーと構造体に割り当てられたメモリを含む、関連付けられているメモリを解放します。 
+[srowset](srowset.md)構造を破棄し、すべてのメンバー配列および構造体に割り当てられたメモリを含む、関連するメモリを解放します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 void FreeProws(
@@ -43,7 +43,7 @@ void FreeProws(
 
  _prows_
   
-> [in]破棄する**SRowSet**構造体へのポインター。 
+> 順番破棄する**srowset**構造体へのポインター。 
     
 ## <a name="return-value"></a>Return value
 
@@ -51,17 +51,17 @@ void FreeProws(
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**FreeProws**の実装の一部としては、MAPI は、完全な構造を解放する前に**SRowSet**構造内のすべてのエントリを解放する[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出します。 このためこのようなすべてのエントリは[SRowSet](srowset.md)構造体の割り当て規則に従っている必要があります、個人を使用して[MAPIAllocateBuffer](mapiallocatebuffer.md)を各メンバーの配列と構造体を呼び出します。 
+MAPI の実装の一部と**** して、MAPI は[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して、完全な構造を解放する前に、 **srowset**構造のすべてのエントリを解放します。 そのため、このようなすべてのエントリは、各メンバーの配列および構造に対して個別の[MAPIAllocateBuffer](mapiallocatebuffer.md)呼び出しを使用して、 [srowset](srowset.md)構造の割り当てルールに従っている必要があります。 
   
-**ADRLIST**と**SRowSet**構造体のメモリの割り当ての詳細については、 [ADRLIST および SRowSet 構造体のメモリを管理する](managing-memory-for-adrlist-and-srowset-structures.md)を参照してください。 
+**adrlist**および**srowset**構造体のメモリ割り当ての詳細については、「 [adrlist および srowset 構造体のメモリの管理](managing-memory-for-adrlist-and-srowset-structures.md)」を参照してください。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl.cpp  <br/> |DwThreadFuncLoadTable  <br/> |MFCMAPI では、 **FreeProws**メソッドを使用して、処理するテーブルの行を含む、SRowSet 構造体を解放します。  <br/> |
+|ContentsTableListCtrl  <br/> |dwthreadの loadtable  <br/> |mfcmapi は、 **freeprows**メソッドを使用して、処理されているテーブルの行を含む srowset 構造を解放します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

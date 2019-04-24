@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 69b466b6-3f65-479a-8148-644443331927
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: dbd69ab7719d5def312792995a4a74c202efeec7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: ea211b8bb0bdcdd60b34396c44c37c23cbf66413
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328166"
 ---
 # <a name="mapi-programming-elements"></a>MAPI プログラミング要素
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ここには、 [MAPI 参照](mapi-reference.md)内のプログラミング要素の概要が含まれています。 
+このセクションでは、 [MAPI リファレンス](mapi-reference.md)に含まれるプログラミング要素の概念の概要について説明します。 
   
 ## <a name="see-also"></a>関連項目
 

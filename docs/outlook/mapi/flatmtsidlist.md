@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: b66c2815-72bc-4535-b34c-899bb830f29e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0f1495549df751c59ab84e2b16fffbaf2f4f9fa5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bd9bfe4d1411b84a7811235aa68728afaefe64ab
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327308"
 ---
 # <a name="flatmtsidlist"></a>FLATMTSIDLIST
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-それぞれの X.400 メッセージ転送システム (MTS) エントリ識別子が含まれています、 [MTSID](mtsid.md)構造体の配列が含まれています。 
+には、 [MTSID](mtsid.md)構造体の配列が格納されています。それぞれには、1つのメッセージトランスポートシステム (MTS) エントリ識別子が含まれています。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
 |関連するマクロ:  <br/> |[CbFLATMTSIDLIST](cbflatmtsidlist.md)、 [CbNewFLATMTSIDLIST](cbnewflatmtsidlist.md) <br/> |
    
 ```cpp
@@ -44,23 +44,23 @@ typedef struct
 
 ## <a name="members"></a>Members
 
- **cMTSIDs**
+ **cmtsids**
   
-> **MTSID**の構造体**abMTSIDs**のメンバーによって説明されている配列内の数です。 
+> **abmtsids**メンバーによって記述された、配列内の**MTSID**構造体の数。 
     
- **cbMTSIDs**
+ **cbmtsids**
   
-> **AbMTSIDs**で説明されている配列内のバイト数。
+> **abmtsids**で記述された配列のバイト数。
     
- **abMTSIDs**
+ **abmtsids**
   
-> **MTSID**の構造体 1 つまたは複数にはが含まれているバイト配列。 
+> 1つまたは複数の**MTSID**構造体を含むバイト配列。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-X.400 メッセージングの**FLATMTSIDLIST**構造体の使用は、MAPI メッセージの[FLATENTRYLIST](flatentrylist.md)構造体の使用に対応します。 MAPI は、メッセージの処理中に、X.400 のプロパティを維持するために**FLATMTSIDLIST**構造体を使用します。 サービス プロバイダーは、着信および発信 X.400 メッセージを処理する場合、 **FLATMTSIDLIST**構造体を使用します。 
+**FLATMTSIDLIST**におけるこの構造体の使用は、MAPI メッセージングでの[FLATENTRYLIST](flatentrylist.md)構造の使用に対応しています。 MAPI では、 **FLATMTSIDLIST**構造を使用して、メッセージ処理時に x. プロパティを維持します。 サービスプロバイダーは、受信および送信の X. 400 メッセージを処理するときに、 **FLATMTSIDLIST**構造体を使用します。 
   
-**AbMTSIDs**アレイでは、 **MTSID**の各構造体が揃えられた自然な境界に揃えられます。 余分なバイトは、確かに自然の配置の 2 つの**MTSID**構造体の間に埋め込み文字として含まれます。 配列内の最初の**MTSID**構造体は、 **abMTSIDs**メンバーのオフセットが 8 であるために常に、正しく配置されます。 次の構造体のオフセットの計算には、最初のエントリのサイズを使用して、次に 4 の倍数に切り上げられます。 **MTSID**構造体のサイズを計算するのにには、 [CbNewMTSID](cbnewmtsid.md)マクロを使用します。 
+**abmtsids**配列では、各**MTSID**構造は、自然に配置された境界に沿って配置されます。 2つの**MTSID**構造体間で自然な配置が行われるように、パディングとして追加のバイトが含まれています。 **abmtsids**メンバのオフセットは8であるため、配列内の最初の**MTSID**構造体は常に正確に調整されます。 次の構造体のオフセットを計算するには、最初のエントリのサイズを、次の4つの倍数まで切り上げて使用します。 [CbNewMTSID](cbnewmtsid.md)マクロを使用して、 **MTSID**構造体のサイズを計算します。 
   
 ## <a name="see-also"></a>関連項目
 

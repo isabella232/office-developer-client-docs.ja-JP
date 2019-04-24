@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 544c87e5-887d-82ec-bf1a-0d95027fe0ec
-ms.openlocfilehash: 3526825ea9409d36c41e37d2fe605b883b398a56
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5657aeb5f710281a1dcb482b3ebf15049e085b11
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322002"
 ---
 # <a name="iolkaccountmanager"></a>IOlkAccountManager
 
@@ -21,41 +21,41 @@ ms.locfileid: "19799491"
 
 |||
 |:-----|:-----|
-|継承します。  <br/> |[IOlkErrorUnknown](iolkerrorunknown.md) <br/> |
-|によって実装されます。  <br/> |Outlook  <br/> |
+|継承元:  <br/> |[IOlkErrorUnknown](iolkerrorunknown.md) <br/> |
+|実装元:  <br/> |Outlook  <br/> |
 |提供元:  <br/> |CLSID_OlkAccountManager  <br/> |
-|によって呼び出されます。  <br/> |クライアント  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IOlkAccountManager  <br/> |
+|呼び出し元:  <br/> |クライアント  <br/> |
+|インターフェイス識別子:  <br/> |IID_IOlkAccountManager  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[Init](iolkaccountmanager-init.md) <br/> |使用のアカウント マネージャーを初期化します。  <br/> |
-|[DisplayAccountList](iolkaccountmanager-displayaccountlist.md) <br/> |**アカウントの設定**または**新しいアカウントの追加**] ダイアログ ボックスが表示されます。  <br/> |
-| *プレース ホルダー メンバー*  <br/> | *サポートされているまたは文書化されていません。*  <br/> |
-| *プレース ホルダー メンバー*  <br/> | *サポートされているまたは文書化されていません。*  <br/> |
-| *プレース ホルダー メンバー*  <br/> | *サポートされているまたは文書化されていません。*  <br/> |
-| *プレース ホルダー メンバー*  <br/> | *サポートされているまたは文書化されていません。*  <br/> |
-| *プレース ホルダー メンバー*  <br/> | *サポートされているまたは文書化されていません。*  <br/> |
-|[FindAccount](iolkaccountmanager-findaccount.md) <br/> |プロパティの値によっては、アカウントを検索します。  <br/> |
-| *プレース ホルダー メンバー*  <br/> | *サポートされているまたは文書化されていません。*  <br/> |
-| *プレース ホルダー メンバー*  <br/> | *サポートされているまたは文書化されていません。*  <br/> |
-| *プレース ホルダー メンバー*  <br/> | *サポートされているまたは文書化されていません。*  <br/> |
-|[DeleteAccount](iolkaccountmanager-deleteaccount.md) <br/> |指定したアカウントを削除します。  <br/> |
-| *プレース ホルダー メンバー*  <br/> | *サポートされているまたは文書化されていません。*  <br/> |
-|[SaveChanges](iolkaccountmanager-savechanges.md) <br/> |指定されたアカウントに変更を保存します。  <br/> |
-|[GetOrder](iolkaccountmanager-getorder.md) <br/> |アカウントの指定したカテゴリの順序を取得します。  <br/> |
-|[SetOrder](iolkaccountmanager-setorder.md) <br/> |アカウントの指定したカテゴリの順序を変更します。  <br/> |
-|[EnumerateAccounts](iolkaccountmanager-enumerateaccounts.md) <br/> |特定のカテゴリおよび種類のアカウントの列挙子を取得します。  <br/> |
-| *プレース ホルダー メンバー*  <br/> | *サポートされているまたは文書化されていません。*  <br/> |
-| *プレース ホルダー メンバー*  <br/> | *サポートされているまたは文書化されていません。*  <br/> |
+|[Init](iolkaccountmanager-init.md) <br/> |使用するアカウントマネージャーを初期化します。  <br/> |
+|[displayaccountlist](iolkaccountmanager-displayaccountlist.md) <br/> |[**アカウント設定**] または [**新しいアカウントの追加**] ダイアログボックスを表示します。  <br/> |
+| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
+| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
+| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
+| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
+| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
+|[findaccount](iolkaccountmanager-findaccount.md) <br/> |プロパティ値でアカウントを検索します。  <br/> |
+| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
+| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
+| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
+|[deleteaccount](iolkaccountmanager-deleteaccount.md) <br/> |指定されたアカウントを削除します。  <br/> |
+| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
+|[SaveChanges](iolkaccountmanager-savechanges.md) <br/> |指定したアカウントに変更内容を保存します。  <br/> |
+|[getorder](iolkaccountmanager-getorder.md) <br/> |指定されたアカウントのカテゴリの順序を取得します。  <br/> |
+|[setorder](iolkaccountmanager-setorder.md) <br/> |指定したアカウントのカテゴリの順序を変更します。  <br/> |
+|[EnumerateAccounts](iolkaccountmanager-enumerateaccounts.md) <br/> |特定のカテゴリと種類のアカウントの列挙子を取得します。  <br/> |
+| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
+| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
 |[FreeMemory](iolkaccountmanager-freememory.md) <br/> |**IOlkAccountManager**インターフェイスによって割り当てられたメモリを解放します。  <br/> |
-|[アドバイス](iolkaccountmanager-advise.md) <br/> |クライアントをすべてのアカウントに関する通知のアカウント マネージャーに登録します。  <br/> |
-|[アドバイズ中止します。](iolkaccountmanager-unadvise.md) <br/> |通知のすべてのアカウントのアカウント マネージャーを使用するクライアントの登録を解除します。  <br/> |
-| *プレース ホルダー メンバー*  <br/> | *サポートされているまたは文書化されていません。*  <br/> |
-| *プレース ホルダー メンバー*  <br/> | *サポートされているまたは文書化されていません。*  <br/> |
-| *プレース ホルダー メンバー*  <br/> | *サポートされているまたは文書化されていません。*  <br/> |
+|[助言](iolkaccountmanager-advise.md) <br/> |アカウントマネージャーにクライアントを登録して、すべてのアカウントに関する通知を行います。  <br/> |
+|[アドバイズ](iolkaccountmanager-unadvise.md) <br/> |すべてのアカウントの通知について、アカウントマネージャーでクライアントの登録を解除します。  <br/> |
+| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
+| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
+| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
