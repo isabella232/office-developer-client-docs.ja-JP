@@ -12,37 +12,37 @@ keywords:
 localization_priority: Normal
 ms.assetid: 5b74d618-db3a-4d84-bd17-4fee7ae3b51e
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 5ebe58dba32c2cf0382bf0811713eaa0a5471dda
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: cabd44ab828a2cfe22253e9aaf12abf7b7709d69
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310361"
 ---
-# <a name="tempnumtempnum12"></a><span data-ttu-id="8cbfe-104">TempNum/TempNum12</span><span class="sxs-lookup"><span data-stu-id="8cbfe-104">TempNum/TempNum12</span></span>
+# <a name="tempnumtempnum12"></a><span data-ttu-id="1ddbb-104">TempNum/TempNum12</span><span class="sxs-lookup"><span data-stu-id="1ddbb-104">TempNum/TempNum12</span></span>
 
- <span data-ttu-id="8cbfe-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="8cbfe-105">Applies to: Excel 2013 | Office 2013 | Visual Studio</span></span> 
+ <span data-ttu-id="1ddbb-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="1ddbb-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
   
-<span data-ttu-id="8cbfe-106">Microsoft Excel ワークシートの番号を含む一時 **XLOPER**/ **XLOPER12** を作成するフレームワーク ライブラリ関数 (IEEE 8 バイトの倍精度浮動小数点型)。</span><span class="sxs-lookup"><span data-stu-id="8cbfe-106">Framework library function that creates a temporary **XLOPER**/ **XLOPER12** containing a Microsoft Excel worksheet number (an IEEE 8-byte double).</span></span> 
+<span data-ttu-id="1ddbb-106">Microsoft Excel ワークシートの番号を含む一時 **XLOPER**/ **XLOPER12** を作成するフレームワーク ライブラリ関数 (IEEE 8 バイトの倍精度浮動小数点型)。</span><span class="sxs-lookup"><span data-stu-id="1ddbb-106">Framework library function that creates a temporary **XLOPER**/ **XLOPER12** containing a Microsoft Excel worksheet number (an IEEE 8-byte double).</span></span> 
   
 ```cs
 LPXLOPER TempNum(double d);
 LPXLOPER12 TempNum12(double d);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="8cbfe-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="8cbfe-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="1ddbb-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="1ddbb-107">Parameters</span></span>
 
- <span data-ttu-id="8cbfe-108">_d_ (**double**)</span><span class="sxs-lookup"><span data-stu-id="8cbfe-108">_d_ (**double**)</span></span>
+ <span data-ttu-id="1ddbb-108">_d_ (**double**)</span><span class="sxs-lookup"><span data-stu-id="1ddbb-108">_d_ (**double**)</span></span>
   
-<span data-ttu-id="8cbfe-p101">対象の値。IEEE 規格の非正規数は現在サポートされていないため、ゼロに丸められます。負の無限大に対応しています。</span><span class="sxs-lookup"><span data-stu-id="8cbfe-p101">The intended value. Note that IEEE sub-normal numbers are not currently supported and are rounded to zero. Negative infinity is supported.</span></span>
+<span data-ttu-id="1ddbb-p101">対象の値。IEEE 規格の非正規数は現在サポートされていないため、ゼロに丸められます。負の無限大に対応しています。</span><span class="sxs-lookup"><span data-stu-id="1ddbb-p101">The intended value. Note that IEEE sub-normal numbers are not currently supported and are rounded to zero. Negative infinity is supported.</span></span>
   
-## <a name="return-value"></a><span data-ttu-id="8cbfe-112">戻り値</span><span class="sxs-lookup"><span data-stu-id="8cbfe-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="1ddbb-112">戻り値</span><span class="sxs-lookup"><span data-stu-id="1ddbb-112">Return value</span></span>
 
-<span data-ttu-id="8cbfe-113">渡される値を含む数値型 **xltypeNum** を返します。渡された値が非正規数の場合はゼロを返します。</span><span class="sxs-lookup"><span data-stu-id="8cbfe-113">Returns a numeric **xltypeNum** containing the value passed in or zero if the passed in value was sub-normal.</span></span> 
+<span data-ttu-id="1ddbb-113">渡される値を含む数値型 **xltypeNum** を返します。渡された値が非正規数の場合はゼロを返します。</span><span class="sxs-lookup"><span data-stu-id="1ddbb-113">Returns a numeric **xltypeNum** containing the value passed in or zero if the passed in value was sub-normal.</span></span> 
   
-## <a name="example"></a><span data-ttu-id="8cbfe-114">例</span><span class="sxs-lookup"><span data-stu-id="8cbfe-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1ddbb-114">例</span><span class="sxs-lookup"><span data-stu-id="1ddbb-114">Example</span></span>
 
-<span data-ttu-id="8cbfe-115">この例では、**TempNum12** 関数を使用して、**xlfGetWorkspace** に引数を渡しています。</span><span class="sxs-lookup"><span data-stu-id="8cbfe-115">This example uses the **TempNum12** function to pass an argument to **xlfGetWorkspace**.</span></span>
+<span data-ttu-id="1ddbb-115">この例では、**TempNum12** 関数を使用して、**xlfGetWorkspace** に引数を渡しています。</span><span class="sxs-lookup"><span data-stu-id="1ddbb-115">This example uses the **TempNum12** function to pass an argument to **xlfGetWorkspace**.</span></span>
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   
@@ -56,9 +56,9 @@ short WINAPI TempNumExample(void)
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="8cbfe-116">関連項目</span><span class="sxs-lookup"><span data-stu-id="8cbfe-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1ddbb-116">関連項目</span><span class="sxs-lookup"><span data-stu-id="1ddbb-116">See also</span></span>
 
 
 
-[<span data-ttu-id="8cbfe-117">フレームワーク ライブラリの関数</span><span class="sxs-lookup"><span data-stu-id="8cbfe-117">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
+[<span data-ttu-id="1ddbb-117">フレームワーク ライブラリの関数</span><span class="sxs-lookup"><span data-stu-id="1ddbb-117">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
 

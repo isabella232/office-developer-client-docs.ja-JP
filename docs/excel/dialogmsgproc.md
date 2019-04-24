@@ -11,50 +11,50 @@ keywords:
 localization_priority: Normal
 ms.assetid: 9a538e83-ba34-4806-bb8c-7cda3beb6b66
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 3a69d192babbcf0419850e203f51d8cfd81cdef6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 1de1b73f5672067f07518ef3367d77349395a1c3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32310963"
 ---
-# <a name="dialogmsgproc"></a><span data-ttu-id="2da89-104">DIALOGMsgProc</span><span class="sxs-lookup"><span data-stu-id="2da89-104">DIALOGMsgProc</span></span>
+# <a name="dialogmsgproc"></a><span data-ttu-id="0d87a-104">DIALOGMsgProc</span><span class="sxs-lookup"><span data-stu-id="0d87a-104">DIALOGMsgProc</span></span>
 
-<span data-ttu-id="2da89-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="2da89-105">Applies to: Excel 2013 | Office 2013 | Visual Studio</span></span> 
+<span data-ttu-id="0d87a-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="0d87a-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
   
-<span data-ttu-id="2da89-106">この手順は [fShowDialog](fshowdialog.md) が表示する Windows のネイティブ ダイアログ ボックスに関連するものです。</span><span class="sxs-lookup"><span data-stu-id="2da89-106">This procedure is associated with the native Windows dialog box that [fShowDialog](fshowdialog.md) displays.</span></span> <span data-ttu-id="2da89-107">この手順で、ユーザーによるダイアログ ボックスのボタン、入力フィールド、またはコントロールのいずれかの操作時に発生するイベント (メッセージ) 用に Windows が呼び出すサービス ルーチンを用意します。</span><span class="sxs-lookup"><span data-stu-id="2da89-107">This procedure is associated with the native Windows dialog box that fShowDialog displays. It provides the service routines called by Windows for the events (messages) that occur when the user operates one of the dialog box's buttons, entry fields, or controls.</span></span> 
+<span data-ttu-id="0d87a-p101">This procedure is associated with the native Windows dialog box that [fShowDialog](fshowdialog.md) displays. It provides the service routines called by Windows for the events (messages) that occur when the user operates one of the dialog box's buttons, entry fields, or controls.</span><span class="sxs-lookup"><span data-stu-id="0d87a-p101">This procedure is associated with the native Windows dialog box that [fShowDialog](fshowdialog.md) displays. It provides the service routines called by Windows for the events (messages) that occur when the user operates one of the dialog box's buttons, entry fields, or controls.</span></span> 
   
 ```cs
 BOOL CALLBACK DIALOGMsgProc(HWND hWndDlg, UINT message, WPARAM wParam, LPARAM lParam);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="2da89-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="2da89-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="0d87a-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0d87a-108">Parameters</span></span>
 
- <span data-ttu-id="2da89-109">_hWndDlg_ (**HWND**)</span><span class="sxs-lookup"><span data-stu-id="2da89-109">_hWndDlg_ (**HWND**)</span></span>
+ <span data-ttu-id="0d87a-109">_hWndDlg_ (**HWND**)</span><span class="sxs-lookup"><span data-stu-id="0d87a-109">_hWndDlg_ (**HWND**)</span></span>
   
-<span data-ttu-id="2da89-110">ダイアログ ボックスの HWND Windows ハンドルを含んでいます。</span><span class="sxs-lookup"><span data-stu-id="2da89-110">Contains the HWND Windows handle of the dialog box.</span></span>
+<span data-ttu-id="0d87a-110">ダイアログ ボックスの HWND Windows ハンドルを含んでいます。</span><span class="sxs-lookup"><span data-stu-id="0d87a-110">Contains the HWND Windows handle of the dialog box.</span></span>
   
- <span data-ttu-id="2da89-111">_message_ (**UINT**)</span><span class="sxs-lookup"><span data-stu-id="2da89-111">_message_ (**UINT**)</span></span>
+ <span data-ttu-id="0d87a-111">_message_ (**UINT**)</span><span class="sxs-lookup"><span data-stu-id="0d87a-111">_message_ (**UINT**)</span></span>
   
-<span data-ttu-id="2da89-112">応答メッセージ</span><span class="sxs-lookup"><span data-stu-id="2da89-112">The message to respond to.</span></span>
+<span data-ttu-id="0d87a-112">応答メッセージ</span><span class="sxs-lookup"><span data-stu-id="0d87a-112">The message to respond to.</span></span>
   
- <span data-ttu-id="2da89-113">_wParam_ (**WPARAM**)</span><span class="sxs-lookup"><span data-stu-id="2da89-113">_wParam_ (**WPARAM**)</span></span>
+ <span data-ttu-id="0d87a-113">_wParam_ (**WPARAM**)</span><span class="sxs-lookup"><span data-stu-id="0d87a-113">_wParam_ (**WPARAM**)</span></span>
   
- <span data-ttu-id="2da89-114">_lParam_ (**LPARAM**)</span><span class="sxs-lookup"><span data-stu-id="2da89-114">_lParam_ (**LPARAM**)</span></span>
+ <span data-ttu-id="0d87a-114">_lParam_ (**LPARAM**)</span><span class="sxs-lookup"><span data-stu-id="0d87a-114">_lParam_ (**LPARAM**)</span></span>
   
-<span data-ttu-id="2da89-115">Windows より渡される引数</span><span class="sxs-lookup"><span data-stu-id="2da89-115">Arguments passed by Windows.</span></span>
+<span data-ttu-id="0d87a-115">Windows より渡される引数</span><span class="sxs-lookup"><span data-stu-id="0d87a-115">Arguments passed by Windows.</span></span>
   
-## <a name="property-valuereturn-value"></a><span data-ttu-id="2da89-116">プロパティ値/戻り値</span><span class="sxs-lookup"><span data-stu-id="2da89-116">Property Value/Return Value</span></span>
+## <a name="property-valuereturn-value"></a><span data-ttu-id="0d87a-116">プロパティ値/戻り値</span><span class="sxs-lookup"><span data-stu-id="0d87a-116">Property value/Return value</span></span>
 
- <span data-ttu-id="2da89-117">メッセージが処理された場合は **TRUE**、そうでない場合は **FALSE**。</span><span class="sxs-lookup"><span data-stu-id="2da89-117">**TRUE** if message processed, **FALSE** if not.</span></span> 
+ <span data-ttu-id="0d87a-117">メッセージが処理された場合は **TRUE**、そうでない場合は **FALSE**。</span><span class="sxs-lookup"><span data-stu-id="0d87a-117">**TRUE** if message processed, **FALSE** if not.</span></span> 
   
-### <a name="example"></a><span data-ttu-id="2da89-118">例</span><span class="sxs-lookup"><span data-stu-id="2da89-118">Example</span></span>
+### <a name="example"></a><span data-ttu-id="0d87a-118">例</span><span class="sxs-lookup"><span data-stu-id="0d87a-118">Example</span></span>
 
-<span data-ttu-id="2da89-119">この関数のソース コードについては、`\SAMPLES\GENERIC\GENERIC.C` を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2da89-119">See  `\SAMPLES\GENERIC\GENERIC.C` for the source code for this function.</span></span> 
+<span data-ttu-id="0d87a-119">この関数のソース コードについては、`\SAMPLES\GENERIC\GENERIC.C` を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0d87a-119">See  `\SAMPLES\GENERIC\GENERIC.C` for the source code for this function.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="2da89-120">関連項目</span><span class="sxs-lookup"><span data-stu-id="2da89-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0d87a-120">関連項目</span><span class="sxs-lookup"><span data-stu-id="0d87a-120">See also</span></span>
 
 
 
-[<span data-ttu-id="2da89-121">汎用 DLL の関数</span><span class="sxs-lookup"><span data-stu-id="2da89-121">Functions in the Generic DLL</span></span>](functions-in-the-generic-dll.md)
+[<span data-ttu-id="0d87a-121">汎用 DLL の関数</span><span class="sxs-lookup"><span data-stu-id="0d87a-121">Functions in the Generic DLL</span></span>](functions-in-the-generic-dll.md)
 
