@@ -1,5 +1,5 @@
 ---
-title: '[YRulerDensity] セル ([ルーラーとグリッド] セクション)'
+title: '[yrulerdensity] セル&amp; ([ルーラーグリッド] セクション)'
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,40 +9,40 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: aebcd321-9d1c-e04e-7c85-3ec1ed851561
 description: ページのルーラーに対して、垂直方向の小区分を指定します。
-ms.openlocfilehash: 4b5dcba7a5cb1a588f742b1c2ea6b430cb2af12c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c92c48f6c86fc794cf6f53a87fdb99e67a73b9f5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357205"
 ---
-# <a name="yrulerdensity-cell-ruler-amp-grid-section"></a><span data-ttu-id="19b74-103">[YRulerDensity] セル ([ルーラーとグリッド] セクション)</span><span class="sxs-lookup"><span data-stu-id="19b74-103">YRulerDensity Cell (Ruler &amp; Grid Section)</span></span>
+# <a name="yrulerdensity-cell-ruler-amp-grid-section"></a><span data-ttu-id="94515-103">[yrulerdensity] セル&amp; ([ルーラーグリッド] セクション)</span><span class="sxs-lookup"><span data-stu-id="94515-103">YRulerDensity Cell (Ruler &amp; Grid Section)</span></span>
 
-<span data-ttu-id="19b74-104">ページのルーラーに対して、垂直方向の小区分を指定します。</span><span class="sxs-lookup"><span data-stu-id="19b74-104">Specifies the vertical subdivisions on the ruler for the page.</span></span>
+<span data-ttu-id="94515-104">ページのルーラーに対して、垂直方向の小区分を指定します。</span><span class="sxs-lookup"><span data-stu-id="94515-104">Specifies the vertical subdivisions on the ruler for the page.</span></span>
   
-|<span data-ttu-id="19b74-105">**値**</span><span class="sxs-lookup"><span data-stu-id="19b74-105">**Value**</span></span>|<span data-ttu-id="19b74-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="19b74-106">**Description**</span></span>|<span data-ttu-id="19b74-107">**オートメーション定数**</span><span class="sxs-lookup"><span data-stu-id="19b74-107">**Automation constant**</span></span>|
+|<span data-ttu-id="94515-105">**値**</span><span class="sxs-lookup"><span data-stu-id="94515-105">**Value**</span></span>|<span data-ttu-id="94515-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="94515-106">**Description**</span></span>|<span data-ttu-id="94515-107">**オートメーション定数**</span><span class="sxs-lookup"><span data-stu-id="94515-107">**Automation constant**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="19b74-108">0</span><span class="sxs-lookup"><span data-stu-id="19b74-108">0</span></span>  <br/> |<span data-ttu-id="19b74-109">固定</span><span class="sxs-lookup"><span data-stu-id="19b74-109">Fixed</span></span>  <br/> |<span data-ttu-id="19b74-110">**visRulerFixed**</span><span class="sxs-lookup"><span data-stu-id="19b74-110">**visRulerFixed**</span></span> <br/> |
-|<span data-ttu-id="19b74-111">8 (&amp;H8)</span><span class="sxs-lookup"><span data-stu-id="19b74-111">8 (&amp;H8)</span></span>  <br/> |<span data-ttu-id="19b74-112">粗い</span><span class="sxs-lookup"><span data-stu-id="19b74-112">Coarse</span></span>  <br/> |<span data-ttu-id="19b74-113">**visRulerCoarse**</span><span class="sxs-lookup"><span data-stu-id="19b74-113">**visRulerCoarse**</span></span> <br/> |
-|<span data-ttu-id="19b74-114">16 (&amp;H10)</span><span class="sxs-lookup"><span data-stu-id="19b74-114">16 (&amp;H10)</span></span>  <br/> |<span data-ttu-id="19b74-115">標準 (既定値)</span><span class="sxs-lookup"><span data-stu-id="19b74-115">Normal (Default)</span></span>  <br/> |<span data-ttu-id="19b74-116">**visRulerNormal**</span><span class="sxs-lookup"><span data-stu-id="19b74-116">**visRulerNormal**</span></span> <br/> |
-|<span data-ttu-id="19b74-117">32 (&amp;H20)</span><span class="sxs-lookup"><span data-stu-id="19b74-117">32 (&amp;H20)</span></span>  <br/> |<span data-ttu-id="19b74-118">細かい</span><span class="sxs-lookup"><span data-stu-id="19b74-118">Fine</span></span>  <br/> |<span data-ttu-id="19b74-119">**visRulerFine**</span><span class="sxs-lookup"><span data-stu-id="19b74-119">**visRulerFine**</span></span> <br/> |
+|<span data-ttu-id="94515-108">.0</span><span class="sxs-lookup"><span data-stu-id="94515-108">0</span></span>  <br/> |<span data-ttu-id="94515-109">Fixed</span><span class="sxs-lookup"><span data-stu-id="94515-109">Fixed</span></span>  <br/> |<span data-ttu-id="94515-110">**visrulerfixed**</span><span class="sxs-lookup"><span data-stu-id="94515-110">**visRulerFixed**</span></span> <br/> |
+|<span data-ttu-id="94515-111">8 (&amp;H8)</span><span class="sxs-lookup"><span data-stu-id="94515-111">8 (&amp;H8)</span></span>  <br/> |<span data-ttu-id="94515-112">粗い</span><span class="sxs-lookup"><span data-stu-id="94515-112">Coarse</span></span>  <br/> |<span data-ttu-id="94515-113">**visrulercoarse**</span><span class="sxs-lookup"><span data-stu-id="94515-113">**visRulerCoarse**</span></span> <br/> |
+|<span data-ttu-id="94515-114">16 (&amp;H10)</span><span class="sxs-lookup"><span data-stu-id="94515-114">16 (&amp;H10)</span></span>  <br/> |<span data-ttu-id="94515-115">標準 (既定値)</span><span class="sxs-lookup"><span data-stu-id="94515-115">Normal (Default)</span></span>  <br/> |<span data-ttu-id="94515-116">**visrulernormal**</span><span class="sxs-lookup"><span data-stu-id="94515-116">**visRulerNormal**</span></span> <br/> |
+|<span data-ttu-id="94515-117">32 (&amp;H20)</span><span class="sxs-lookup"><span data-stu-id="94515-117">32 (&amp;H20)</span></span>  <br/> |<span data-ttu-id="94515-118">いい</span><span class="sxs-lookup"><span data-stu-id="94515-118">Fine</span></span>  <br/> |<span data-ttu-id="94515-119">**visrulerfine**</span><span class="sxs-lookup"><span data-stu-id="94515-119">**visRulerFine**</span></span> <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="19b74-120">注釈</span><span class="sxs-lookup"><span data-stu-id="19b74-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="94515-120">解説</span><span class="sxs-lookup"><span data-stu-id="94515-120">Remarks</span></span>
 
-<span data-ttu-id="19b74-121">このセル内の垂直方向の**目盛り**] オプションに対応して、**ルーラー&amp;グリッド**] ダイアログ ボックス ([**表示**] タブで、矢印をクリック**を表示する**)。</span><span class="sxs-lookup"><span data-stu-id="19b74-121">This cell corresponds to the vertical **Subdivisions** option in the **Ruler &amp; Grid** dialog box (on the **View** tab, click the **Show** arrow).</span></span> 
+<span data-ttu-id="94515-121">このセルは、[**ルーラー &amp;グリッド**] ダイアログボックス ([**表示**] タブの [**表示**] 矢印をクリック) の [垂直方向の**目盛り**] オプションに対応しています。</span><span class="sxs-lookup"><span data-stu-id="94515-121">This cell corresponds to the vertical **Subdivisions** option in the **Ruler &amp; Grid** dialog box (on the **View** tab, click the **Show** arrow).</span></span> 
   
-<span data-ttu-id="19b74-122">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [YRulerDensity] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="19b74-122">To get a reference to the YRulerDensity cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="94515-122">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [YRulerDensity] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="94515-122">To get a reference to the YRulerDensity cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="19b74-123">セル名 :</span><span class="sxs-lookup"><span data-stu-id="19b74-123">Cell name:</span></span>  <br/> |<span data-ttu-id="19b74-124">YRulerDensity</span><span class="sxs-lookup"><span data-stu-id="19b74-124">YRulerDensity</span></span>  <br/> |
+|<span data-ttu-id="94515-123">セル名 :</span><span class="sxs-lookup"><span data-stu-id="94515-123">Cell name:</span></span>  <br/> |<span data-ttu-id="94515-124">[yrulerdensity]</span><span class="sxs-lookup"><span data-stu-id="94515-124">YRulerDensity</span></span>  <br/> |
    
-<span data-ttu-id="19b74-125">プログラムから、インデックスによって [YRulerDensity] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="19b74-125">To get a reference to the YRulerDensity cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="94515-125">プログラムから、インデックスによって [YRulerDensity] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="94515-125">To get a reference to the YRulerDensity cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="19b74-126">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="19b74-126">Section index:</span></span>  <br/> |<span data-ttu-id="19b74-127">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="19b74-127">**visSectionObject**</span></span> <br/> |
-|<span data-ttu-id="19b74-128">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="19b74-128">Row index:</span></span>  <br/> |<span data-ttu-id="19b74-129">**visRowRulerGrid**</span><span class="sxs-lookup"><span data-stu-id="19b74-129">**visRowRulerGrid**</span></span> <br/> |
-|<span data-ttu-id="19b74-130">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="19b74-130">Cell index:</span></span>  <br/> |<span data-ttu-id="19b74-131">**visYRulerDensity**</span><span class="sxs-lookup"><span data-stu-id="19b74-131">**visYRulerDensity**</span></span> <br/> |
+|<span data-ttu-id="94515-126">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="94515-126">Section index:</span></span>  <br/> |<span data-ttu-id="94515-127">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="94515-127">**visSectionObject**</span></span> <br/> |
+|<span data-ttu-id="94515-128">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="94515-128">Row index:</span></span>  <br/> |<span data-ttu-id="94515-129">**visRowRulerGrid**</span><span class="sxs-lookup"><span data-stu-id="94515-129">**visRowRulerGrid**</span></span> <br/> |
+|<span data-ttu-id="94515-130">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="94515-130">Cell index:</span></span>  <br/> |<span data-ttu-id="94515-131">**visyrulerdensity**</span><span class="sxs-lookup"><span data-stu-id="94515-131">**visYRulerDensity**</span></span> <br/> |
    
 

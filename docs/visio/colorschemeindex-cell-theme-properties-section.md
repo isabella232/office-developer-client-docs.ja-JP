@@ -6,32 +6,32 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: fb84f71e-59c4-43d4-a28b-c3d6f267d2ae
-description: テーマを整数として後、は、図形の配色パターンのインデックスを決定します。
-ms.openlocfilehash: 03f354890c8dbce74da6b1171b3b3aaf4bf73ad3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 図形の配色が後にかかるテーマのインデックスを整数で指定します。
+ms.openlocfilehash: d67363b48454a717914b8ff9e39952609d848118
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357100"
 ---
-# <a name="colorschemeindex-cell-theme-properties-section"></a><span data-ttu-id="59b64-103">[ColorSchemeIndex] セル ([テーマのプロパティ] セクション)</span><span class="sxs-lookup"><span data-stu-id="59b64-103">ColorSchemeIndex Cell (Theme Properties Section)</span></span>
+# <a name="colorschemeindex-cell-theme-properties-section"></a><span data-ttu-id="d4d6a-103">[ColorSchemeIndex] セル ([テーマのプロパティ] セクション)</span><span class="sxs-lookup"><span data-stu-id="d4d6a-103">ColorSchemeIndex Cell (Theme Properties Section)</span></span>
 
-<span data-ttu-id="59b64-104">テーマを整数として後、は、図形の配色パターンのインデックスを決定します。</span><span class="sxs-lookup"><span data-stu-id="59b64-104">Determines the index of the theme that the shape's color scheme takes after, as an integer.</span></span>
+<span data-ttu-id="d4d6a-104">図形の配色が後にかかるテーマのインデックスを整数で指定します。</span><span class="sxs-lookup"><span data-stu-id="d4d6a-104">Determines the index of the theme that the shape's color scheme takes after, as an integer.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="59b64-105">注釈</span><span class="sxs-lookup"><span data-stu-id="59b64-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d4d6a-105">解説</span><span class="sxs-lookup"><span data-stu-id="d4d6a-105">Remarks</span></span>
 
-<span data-ttu-id="59b64-106">**セル**要素の**N**属性の値によって、別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ **ColorSchemeIndex** ] セルへの参照を取得、次のように使用します。</span><span class="sxs-lookup"><span data-stu-id="59b64-106">To get a reference to the **ColorSchemeIndex** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="d4d6a-106">別の数式から、 **cell**要素の**N**属性の値によって、または**CellsU**プロパティを使用したプログラムから、名前によって [ **[colorschemeindex]** ] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="d4d6a-106">To get a reference to the **ColorSchemeIndex** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="59b64-107">セル名:</span><span class="sxs-lookup"><span data-stu-id="59b64-107">Cell name:</span></span>  <br/> | <span data-ttu-id="59b64-108">ColorSchemeIndex</span><span class="sxs-lookup"><span data-stu-id="59b64-108">ColorSchemeIndex</span></span>  <br/> |
+| <span data-ttu-id="d4d6a-107">セル名:</span><span class="sxs-lookup"><span data-stu-id="d4d6a-107">Cell name:</span></span>  <br/> | <span data-ttu-id="d4d6a-108">[colorschemeindex]</span><span class="sxs-lookup"><span data-stu-id="d4d6a-108">ColorSchemeIndex</span></span>  <br/> |
    
-<span data-ttu-id="59b64-109">プログラムから、インデックスによって [ **ColorSchemeIndex** ] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="59b64-109">To get a reference to the **ColorSchemeIndex** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="d4d6a-109">プログラムから、インデックスによって [ **[colorschemeindex]** ] セルへの参照を取得するには、 **CellsSRC**プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="d4d6a-109">To get a reference to the **ColorSchemeIndex** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="59b64-110">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="59b64-110">Section index:</span></span>  <br/> |<span data-ttu-id="59b64-111">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="59b64-111">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="59b64-112">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="59b64-112">Row index:</span></span>  <br/> |<span data-ttu-id="59b64-113">**visRowThemeProperties**</span><span class="sxs-lookup"><span data-stu-id="59b64-113">**visRowThemeProperties**</span></span> <br/> |
-| <span data-ttu-id="59b64-114">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="59b64-114">Cell index:</span></span>  <br/> |<span data-ttu-id="59b64-115">**visColorSchemeIndex**</span><span class="sxs-lookup"><span data-stu-id="59b64-115">**visColorSchemeIndex**</span></span> <br/> |
+| <span data-ttu-id="d4d6a-110">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="d4d6a-110">Section index:</span></span>  <br/> |<span data-ttu-id="d4d6a-111">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="d4d6a-111">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="d4d6a-112">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="d4d6a-112">Row index:</span></span>  <br/> |<span data-ttu-id="d4d6a-113">**visRowThemeProperties**</span><span class="sxs-lookup"><span data-stu-id="d4d6a-113">**visRowThemeProperties**</span></span> <br/> |
+| <span data-ttu-id="d4d6a-114">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="d4d6a-114">Cell index:</span></span>  <br/> |<span data-ttu-id="d4d6a-115">**visColorSchemeIndex**</span><span class="sxs-lookup"><span data-stu-id="d4d6a-115">**visColorSchemeIndex**</span></span> <br/> |
    
 

@@ -7,21 +7,21 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 63c47e94-f603-aef9-afed-e3819bd79408
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a27f38e759862c7091205a6f9a8aa1cde90c38e3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 64348347ea930e6a6a80b9a9075299d2e3109eda
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360705"
 ---
-# <a name="syncstate"></a><span data-ttu-id="a9048-103">SYNCSTATE</span><span class="sxs-lookup"><span data-stu-id="a9048-103">SYNCSTATE</span></span>
+# <a name="syncstate"></a><span data-ttu-id="24013-103">SYNCSTATE</span><span class="sxs-lookup"><span data-stu-id="24013-103">SYNCSTATE</span></span>
 
-<span data-ttu-id="a9048-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="a9048-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="24013-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="24013-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="a9048-105">この構造体は、レプリケーションの状態機械の状態を定義します。</span><span class="sxs-lookup"><span data-stu-id="a9048-105">This structure defines the states for the replication state machine.</span></span>
+<span data-ttu-id="24013-105">この構造体は、レプリケーション状態マシンの状態を定義します。</span><span class="sxs-lookup"><span data-stu-id="24013-105">This structure defines the states for the replication state machine.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="a9048-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="a9048-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="24013-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="24013-106">Quick info</span></span>
 
 ```cpp
 typedef enum { 
@@ -41,9 +41,9 @@ typedef enum {
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="a9048-107">関連項目</span><span class="sxs-lookup"><span data-stu-id="a9048-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="24013-107">関連項目</span><span class="sxs-lookup"><span data-stu-id="24013-107">See also</span></span>
 
-- [<span data-ttu-id="a9048-108">レプリケーション API について</span><span class="sxs-lookup"><span data-stu-id="a9048-108">About the Replication API</span></span>](about-the-replication-api.md)
-- [<span data-ttu-id="a9048-109">レプリケーション ステート マシンについて</span><span class="sxs-lookup"><span data-stu-id="a9048-109">About the Replication State Machine</span></span>](about-the-replication-state-machine.md)
-- [<span data-ttu-id="a9048-110">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="a9048-110">MAPI Constants</span></span>](mapi-constants.md)
+- [<span data-ttu-id="24013-108">レプリケーション API について</span><span class="sxs-lookup"><span data-stu-id="24013-108">About the Replication API</span></span>](about-the-replication-api.md)
+- [<span data-ttu-id="24013-109">レプリケーション状態のマシンについて</span><span class="sxs-lookup"><span data-stu-id="24013-109">About the Replication State Machine</span></span>](about-the-replication-state-machine.md)
+- [<span data-ttu-id="24013-110">MAPI 定数</span><span class="sxs-lookup"><span data-stu-id="24013-110">MAPI Constants</span></span>](mapi-constants.md)
 

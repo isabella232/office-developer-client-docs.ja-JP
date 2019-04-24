@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 33d70748-0d3f-4be4-bcb5-7ec048887944
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 640923511241b08e5a86e9733aab5cc2e9237c23
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2a2439bae79b497f018391983e2c4b03a35eee70
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348791"
 ---
-# <a name="imsgstorecompareentryids"></a><span data-ttu-id="2ab4c-103">IMsgStore::CompareEntryIDs</span><span class="sxs-lookup"><span data-stu-id="2ab4c-103">IMsgStore::CompareEntryIDs</span></span>
+# <a name="imsgstorecompareentryids"></a><span data-ttu-id="5d137-103">IMsgStore::CompareEntryIDs</span><span class="sxs-lookup"><span data-stu-id="5d137-103">IMsgStore::CompareEntryIDs</span></span>
 
   
   
-<span data-ttu-id="2ab4c-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="2ab4c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="5d137-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="5d137-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="2ab4c-105">メッセージ ストアの同じエントリを参照しているかどうかを決定する 2 つのエントリ id を比較します。</span><span class="sxs-lookup"><span data-stu-id="2ab4c-105">Compares two entry identifiers to determine whether they refer to the same entry in a message store.</span></span> <span data-ttu-id="2ab4c-106">MAPI は、両方のエントリの識別子を比較するには、一意の識別子 (Uid) がそのプロバイダーによって処理される場合にのみ、サービス ・ プロバイダーへの呼び出しを渡します。</span><span class="sxs-lookup"><span data-stu-id="2ab4c-106">MAPI passes this call to a service provider only if the unique identifiers (UIDs) in both entry identifiers to be compared are handled by that provider.</span></span>
+<span data-ttu-id="5d137-105">2つのエントリ識別子を比較して、メッセージストア内の同じエントリを参照しているかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="5d137-105">Compares two entry identifiers to determine whether they refer to the same entry in a message store.</span></span> <span data-ttu-id="5d137-106">MAPI は、両方のエントリ識別子の一意識別子 (uid) がそのプロバイダーによって処理される場合にのみ、この呼び出しをサービスプロバイダーに渡します。</span><span class="sxs-lookup"><span data-stu-id="5d137-106">MAPI passes this call to a service provider only if the unique identifiers (UIDs) in both entry identifiers to be compared are handled by that provider.</span></span>
   
 ```cpp
 HRESULT CompareEntryIDs(
@@ -38,68 +38,68 @@ HRESULT CompareEntryIDs(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="2ab4c-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="2ab4c-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="5d137-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5d137-107">Parameters</span></span>
 
- <span data-ttu-id="2ab4c-108">_cbEntryID1_</span><span class="sxs-lookup"><span data-stu-id="2ab4c-108">_cbEntryID1_</span></span>
+ <span data-ttu-id="5d137-108">_cbEntryID1_</span><span class="sxs-lookup"><span data-stu-id="5d137-108">_cbEntryID1_</span></span>
   
-> <span data-ttu-id="2ab4c-109">[in]_._ _LpEntryID1_パラメーターで指定されたエントリの識別子のバイト数</span><span class="sxs-lookup"><span data-stu-id="2ab4c-109">[in] The byte count in the entry identifier pointed to by the  _lpEntryID1_ parameter  _._</span></span>
+> <span data-ttu-id="5d137-109">順番_lpEntryID1_パラメーターによって指定されたエントリ識別子のバイト数 _。_</span><span class="sxs-lookup"><span data-stu-id="5d137-109">[in] The byte count in the entry identifier pointed to by the  _lpEntryID1_ parameter  _._</span></span>
     
- <span data-ttu-id="2ab4c-110">_lpEntryID1_</span><span class="sxs-lookup"><span data-stu-id="2ab4c-110">_lpEntryID1_</span></span>
+ <span data-ttu-id="5d137-110">_lpEntryID1_</span><span class="sxs-lookup"><span data-stu-id="5d137-110">_lpEntryID1_</span></span>
   
-> <span data-ttu-id="2ab4c-111">[in]比較する最初のエントリの識別子へのポインター。</span><span class="sxs-lookup"><span data-stu-id="2ab4c-111">[in] A pointer to the first entry identifier to be compared.</span></span>
+> <span data-ttu-id="5d137-111">順番比較する最初のエントリ識別子へのポインター。</span><span class="sxs-lookup"><span data-stu-id="5d137-111">[in] A pointer to the first entry identifier to be compared.</span></span>
     
- <span data-ttu-id="2ab4c-112">_cbEntryID2_</span><span class="sxs-lookup"><span data-stu-id="2ab4c-112">_cbEntryID2_</span></span>
+ <span data-ttu-id="5d137-112">_cbEntryID2_</span><span class="sxs-lookup"><span data-stu-id="5d137-112">_cbEntryID2_</span></span>
   
-> <span data-ttu-id="2ab4c-113">[in]_._ _LpEntryID2_パラメーターで指定されたエントリの識別子のバイト数</span><span class="sxs-lookup"><span data-stu-id="2ab4c-113">[in] The byte count in the entry identifier pointed to by the  _lpEntryID2_ parameter  _._</span></span>
+> <span data-ttu-id="5d137-113">順番_lpEntryID2_パラメーターによって指定されたエントリ識別子のバイト数 _。_</span><span class="sxs-lookup"><span data-stu-id="5d137-113">[in] The byte count in the entry identifier pointed to by the  _lpEntryID2_ parameter  _._</span></span>
     
- <span data-ttu-id="2ab4c-114">_lpEntryID2_</span><span class="sxs-lookup"><span data-stu-id="2ab4c-114">_lpEntryID2_</span></span>
+ <span data-ttu-id="5d137-114">_lpEntryID2_</span><span class="sxs-lookup"><span data-stu-id="5d137-114">_lpEntryID2_</span></span>
   
-> <span data-ttu-id="2ab4c-115">[in]比較する 2 番目のエントリの識別子へのポインター。</span><span class="sxs-lookup"><span data-stu-id="2ab4c-115">[in] A pointer to the second entry identifier to be compared.</span></span>
+> <span data-ttu-id="5d137-115">順番比較する2番目のエントリ id へのポインター。</span><span class="sxs-lookup"><span data-stu-id="5d137-115">[in] A pointer to the second entry identifier to be compared.</span></span>
     
- <span data-ttu-id="2ab4c-116">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="2ab4c-116">_ulFlags_</span></span>
+ <span data-ttu-id="5d137-116">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="5d137-116">_ulFlags_</span></span>
   
-> <span data-ttu-id="2ab4c-117">[����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B</span><span class="sxs-lookup"><span data-stu-id="2ab4c-117">[in] Reserved; must be zero.</span></span>
+> <span data-ttu-id="5d137-117">[����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B</span><span class="sxs-lookup"><span data-stu-id="5d137-117">[in] Reserved; must be zero.</span></span>
     
- <span data-ttu-id="2ab4c-118">_lpulResult_</span><span class="sxs-lookup"><span data-stu-id="2ab4c-118">_lpulResult_</span></span>
+ <span data-ttu-id="5d137-118">_lルー result_</span><span class="sxs-lookup"><span data-stu-id="5d137-118">_lpulResult_</span></span>
   
-> <span data-ttu-id="2ab4c-119">[out]比較の結果へのポインター。</span><span class="sxs-lookup"><span data-stu-id="2ab4c-119">[out] A pointer to the result of the comparison.</span></span> <span data-ttu-id="2ab4c-120">2 つのエントリの識別子が同じオブジェクトを参照する場合は TRUE。それ以外の場合、FALSE です。</span><span class="sxs-lookup"><span data-stu-id="2ab4c-120">TRUE if the two entry identifiers refer to the same object; otherwise, FALSE.</span></span>
+> <span data-ttu-id="5d137-119">読み上げ比較結果へのポインター。</span><span class="sxs-lookup"><span data-stu-id="5d137-119">[out] A pointer to the result of the comparison.</span></span> <span data-ttu-id="5d137-120">2つのエントリ識別子が同じオブジェクトを参照している場合は TRUE。それ以外の場合は FALSE。</span><span class="sxs-lookup"><span data-stu-id="5d137-120">TRUE if the two entry identifiers refer to the same object; otherwise, FALSE.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="2ab4c-121">�߂�l</span><span class="sxs-lookup"><span data-stu-id="2ab4c-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="5d137-121">戻り値</span><span class="sxs-lookup"><span data-stu-id="5d137-121">Return value</span></span>
 
-<span data-ttu-id="2ab4c-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="2ab4c-122">S_OK</span></span> 
+<span data-ttu-id="5d137-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="5d137-122">S_OK</span></span> 
   
-> <span data-ttu-id="2ab4c-123">比較は正常に終了しました。</span><span class="sxs-lookup"><span data-stu-id="2ab4c-123">The comparison was successful.</span></span>
+> <span data-ttu-id="5d137-123">比較に成功しました。</span><span class="sxs-lookup"><span data-stu-id="5d137-123">The comparison was successful.</span></span>
     
-<span data-ttu-id="2ab4c-124">MAPI_E_UNKNOWN_ENTRYID</span><span class="sxs-lookup"><span data-stu-id="2ab4c-124">MAPI_E_UNKNOWN_ENTRYID</span></span> 
+<span data-ttu-id="5d137-124">MAPI_E_UNKNOWN_ENTRYID</span><span class="sxs-lookup"><span data-stu-id="5d137-124">MAPI_E_UNKNOWN_ENTRYID</span></span> 
   
-> <span data-ttu-id="2ab4c-125">一方または両方のパラメーターを参照しないオブジェクトでは、場合によって対応するオブジェクトが開かれていないとには利用できませんので、指定されたエントリの識別子が表示されます。</span><span class="sxs-lookup"><span data-stu-id="2ab4c-125">One or both of the entry identifiers specified as parameters do not refer to objects, possibly because the corresponding objects are unopened and unavailable at present.</span></span>
+> <span data-ttu-id="5d137-125">パラメーターとして指定されたいずれかまたは両方のエントリ識別子がオブジェクトを参照していない可能性があります。対応するオブジェクトは未開封であり、現在は使用できないためです。</span><span class="sxs-lookup"><span data-stu-id="5d137-125">One or both of the entry identifiers specified as parameters do not refer to objects, possibly because the corresponding objects are unopened and unavailable at present.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="2ab4c-126">注釈</span><span class="sxs-lookup"><span data-stu-id="2ab4c-126">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5d137-126">解説</span><span class="sxs-lookup"><span data-stu-id="5d137-126">Remarks</span></span>
 
-<span data-ttu-id="2ab4c-127">**IMsgStore::CompareEntryIDs**メソッドは、同じオブジェクトを参照しているかどうかを確認するメッセージ ・ ストアに属する 2 つのエントリ id を比較します。</span><span class="sxs-lookup"><span data-stu-id="2ab4c-127">The **IMsgStore::CompareEntryIDs** method compares two entry identifiers that belong to the message store to determine whether they refer to the same object.</span></span> 
+<span data-ttu-id="5d137-127">**IMsgStore:: compareentryids**メソッドは、メッセージストアに属する2つのエントリ識別子を比較して、同じオブジェクトを参照しているかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="5d137-127">The **IMsgStore::CompareEntryIDs** method compares two entry identifiers that belong to the message store to determine whether they refer to the same object.</span></span> 
   
-## <a name="notes-to-callers"></a><span data-ttu-id="2ab4c-128">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="2ab4c-128">Notes to callers</span></span>
+## <a name="notes-to-callers"></a><span data-ttu-id="5d137-128">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="5d137-128">Notes to callers</span></span>
 
- <span data-ttu-id="2ab4c-129">**CompareEntryIDs**は、オブジェクト (たとえば、メッセージ ストア プロバイダーの新しいバージョンをインストールした後) の 2 つ以上の有効なエントリ id を持つことができますので便利です。</span><span class="sxs-lookup"><span data-stu-id="2ab4c-129">**CompareEntryIDs** is useful because an object can have more than one valid entry identifier (for example, after a new version of a message store provider is installed).</span></span> 
+ <span data-ttu-id="5d137-129">**compareentryids**は、1つのオブジェクトが複数の有効なエントリ識別子を持つことができるので便利です (たとえば、新しいバージョンのメッセージストアプロバイダーがインストールされた後)。</span><span class="sxs-lookup"><span data-stu-id="5d137-129">**CompareEntryIDs** is useful because an object can have more than one valid entry identifier (for example, after a new version of a message store provider is installed).</span></span> 
   
-<span data-ttu-id="2ab4c-130">**CompareEntryIDs**がエラーを返した場合は、比較の結果に基づいてアクションになりません。</span><span class="sxs-lookup"><span data-stu-id="2ab4c-130">If **CompareEntryIDs** returns an error, do not take any action based on the result of the comparison.</span></span> <span data-ttu-id="2ab4c-131">代わりにかかる可能性のある最も保守的なアプローチをします。</span><span class="sxs-lookup"><span data-stu-id="2ab4c-131">Instead, take the most conservative approach possible.</span></span> <span data-ttu-id="2ab4c-132">**CompareEntryIDs**は、一方または両方のエントリの識別子で、無効な**MAPIUID**が含まれているなどの場合に失敗する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="2ab4c-132">**CompareEntryIDs** might fail if, for example, one or both of the entry identifiers contains an invalid **MAPIUID**.</span></span> 
+<span data-ttu-id="5d137-130">**compareentryids**がエラーを返す場合は、比較の結果に基づいてアクションを実行しないでください。</span><span class="sxs-lookup"><span data-stu-id="5d137-130">If **CompareEntryIDs** returns an error, do not take any action based on the result of the comparison.</span></span> <span data-ttu-id="5d137-131">その代わりに、可能な限り最も厳しい方法を採用します。</span><span class="sxs-lookup"><span data-stu-id="5d137-131">Instead, take the most conservative approach possible.</span></span> <span data-ttu-id="5d137-132">たとえば、エントリ識別子の一方または両方に無効な**MAPIUID**が含まれている場合、 **compareentryids**は失敗する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="5d137-132">**CompareEntryIDs** might fail if, for example, one or both of the entry identifiers contains an invalid **MAPIUID**.</span></span> 
   
-## <a name="mfcmapi-reference"></a><span data-ttu-id="2ab4c-133">MFCMAPI 参照</span><span class="sxs-lookup"><span data-stu-id="2ab4c-133">MFCMAPI reference</span></span>
+## <a name="mfcmapi-reference"></a><span data-ttu-id="5d137-133">MFCMAPI リファレンス</span><span class="sxs-lookup"><span data-stu-id="5d137-133">MFCMAPI reference</span></span>
 
-<span data-ttu-id="2ab4c-134">MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B</span><span class="sxs-lookup"><span data-stu-id="2ab4c-134">For MFCMAPI sample code, see the following table.</span></span>
+<span data-ttu-id="5d137-134">MFCMAPI のサンプル コードについては、次の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5d137-134">For MFCMAPI sample code, see the following table.</span></span>
   
-|<span data-ttu-id="2ab4c-135">**�t�@�C��**</span><span class="sxs-lookup"><span data-stu-id="2ab4c-135">**File**</span></span>|<span data-ttu-id="2ab4c-136">**�֐�**</span><span class="sxs-lookup"><span data-stu-id="2ab4c-136">**Function**</span></span>|<span data-ttu-id="2ab4c-137">**�R�����g**</span><span class="sxs-lookup"><span data-stu-id="2ab4c-137">**Comment**</span></span>|
+|<span data-ttu-id="5d137-135">**ファイル**</span><span class="sxs-lookup"><span data-stu-id="5d137-135">**File**</span></span>|<span data-ttu-id="5d137-136">**関数**</span><span class="sxs-lookup"><span data-stu-id="5d137-136">**Function**</span></span>|<span data-ttu-id="5d137-137">**コメント**</span><span class="sxs-lookup"><span data-stu-id="5d137-137">**Comment**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="2ab4c-138">BaseDialog.cpp</span><span class="sxs-lookup"><span data-stu-id="2ab4c-138">BaseDialog.cpp</span></span>  <br/> |<span data-ttu-id="2ab4c-139">CBaseDialog::OnCompareEntryIDs</span><span class="sxs-lookup"><span data-stu-id="2ab4c-139">CBaseDialog::OnCompareEntryIDs</span></span>  <br/> |<span data-ttu-id="2ab4c-140">MFCMAPI では、 **IMsgStore::CompareEntryIDs**メソッドを使用して、エントリ Id を比較します。</span><span class="sxs-lookup"><span data-stu-id="2ab4c-140">MFCMAPI uses the **IMsgStore::CompareEntryIDs** method to compare entry IDs.</span></span>  <br/> |
+|<span data-ttu-id="5d137-138">basedialog</span><span class="sxs-lookup"><span data-stu-id="5d137-138">BaseDialog.cpp</span></span>  <br/> |<span data-ttu-id="5d137-139">cbasedialog:: oncompareentryids</span><span class="sxs-lookup"><span data-stu-id="5d137-139">CBaseDialog::OnCompareEntryIDs</span></span>  <br/> |<span data-ttu-id="5d137-140">mfcmapi は、 **IMsgStore:: compareentryids**メソッドを使用してエントリ id を比較します。</span><span class="sxs-lookup"><span data-stu-id="5d137-140">MFCMAPI uses the **IMsgStore::CompareEntryIDs** method to compare entry IDs.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="2ab4c-141">関連項目</span><span class="sxs-lookup"><span data-stu-id="2ab4c-141">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5d137-141">関連項目</span><span class="sxs-lookup"><span data-stu-id="5d137-141">See also</span></span>
 
 
 
-[<span data-ttu-id="2ab4c-142">MAPIUID</span><span class="sxs-lookup"><span data-stu-id="2ab4c-142">MAPIUID</span></span>](mapiuid.md)
+[<span data-ttu-id="5d137-142">MAPIUID</span><span class="sxs-lookup"><span data-stu-id="5d137-142">MAPIUID</span></span>](mapiuid.md)
   
-[<span data-ttu-id="2ab4c-143">IMsgStore: IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="2ab4c-143">IMsgStore : IMAPIProp</span></span>](imsgstoreimapiprop.md)
+[<span data-ttu-id="5d137-143">IMsgStore: IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="5d137-143">IMsgStore : IMAPIProp</span></span>](imsgstoreimapiprop.md)
 
 
-<span data-ttu-id="2ab4c-144">[�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)</span><span class="sxs-lookup"><span data-stu-id="2ab4c-144">[MFCMAPI as a Code Sample](mfcmapi-as-a-code-sample.md)</span></span>
+<span data-ttu-id="5d137-144">[�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)</span><span class="sxs-lookup"><span data-stu-id="5d137-144">[MFCMAPI as a Code Sample](mfcmapi-as-a-code-sample.md)</span></span>
 

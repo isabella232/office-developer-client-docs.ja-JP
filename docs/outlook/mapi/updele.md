@@ -7,21 +7,21 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c38aa8be-ae77-0c40-9843-42e07b80db6b
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2361d225c07d60fab40465b27ad393ca10f6d8eb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 9bd61739b14d0ec382a9d582689c1049fe89429b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360544"
 ---
-# <a name="updele"></a><span data-ttu-id="e3f82-103">UPDELE</span><span class="sxs-lookup"><span data-stu-id="e3f82-103">UPDELE</span></span>
+# <a name="updele"></a><span data-ttu-id="4f0f5-103">UPDELE</span><span class="sxs-lookup"><span data-stu-id="4f0f5-103">UPDELE</span></span>
 
-<span data-ttu-id="e3f82-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="e3f82-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="4f0f5-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="4f0f5-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="e3f82-105">ローカル ストアで削除済みアイテムの情報を拡張します。</span><span class="sxs-lookup"><span data-stu-id="e3f82-105">Extended information for items that have been deleted in a local store.</span></span> <span data-ttu-id="e3f82-106">[アップロード ステータスの状態を削除](upload-delete-status-state.md)する時にこの情報が使用されます。</span><span class="sxs-lookup"><span data-stu-id="e3f82-106">This information is used during the [upload delete status state](upload-delete-status-state.md).</span></span>
+<span data-ttu-id="4f0f5-105">ローカルストアで削除されたアイテムの拡張情報。</span><span class="sxs-lookup"><span data-stu-id="4f0f5-105">Extended information for items that have been deleted in a local store.</span></span> <span data-ttu-id="4f0f5-106">この情報は、削除の状態の[アップロード](upload-delete-status-state.md)中に使用されます。</span><span class="sxs-lookup"><span data-stu-id="4f0f5-106">This information is used during the [upload delete status state](upload-delete-status-state.md).</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="e3f82-107">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="e3f82-107">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="4f0f5-107">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="4f0f5-107">Quick info</span></span>
 
 ```cpp
 struct UPDELE 
@@ -36,66 +36,66 @@ struct UPDELE
 };
 ```
 
-## <a name="members"></a><span data-ttu-id="e3f82-108">Members</span><span class="sxs-lookup"><span data-stu-id="e3f82-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="4f0f5-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="4f0f5-108">Members</span></span>
 
-<span data-ttu-id="e3f82-109">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="e3f82-109">_ulFlags_</span></span>
+<span data-ttu-id="4f0f5-109">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="4f0f5-109">_ulFlags_</span></span>
   
-> <span data-ttu-id="e3f82-110">[out]/[in] アップロード中に、適切な動作を決定するフラグ。</span><span class="sxs-lookup"><span data-stu-id="e3f82-110">[out]/[in] Flags to determine appropriate behavior during uploading.</span></span>
+> <span data-ttu-id="4f0f5-110">[out]/[in] アップロード中の適切な動作を決定するフラグです。</span><span class="sxs-lookup"><span data-stu-id="4f0f5-110">[out]/[in] Flags to determine appropriate behavior during uploading.</span></span>
     
-  - <span data-ttu-id="e3f82-111">UPD_ASSOC</span><span class="sxs-lookup"><span data-stu-id="e3f82-111">UPD_ASSOC</span></span>
+  - <span data-ttu-id="4f0f5-111">UPD_ASSOC</span><span class="sxs-lookup"><span data-stu-id="4f0f5-111">UPD_ASSOC</span></span>
     
-    - <span data-ttu-id="e3f82-112">[out]項目に関連付けられています。</span><span class="sxs-lookup"><span data-stu-id="e3f82-112">[out] Item is associated.</span></span>
+    - <span data-ttu-id="4f0f5-112">読み上げ項目が関連付けられています。</span><span class="sxs-lookup"><span data-stu-id="4f0f5-112">[out] Item is associated.</span></span>
     
-  - <span data-ttu-id="e3f82-113">UPD_MOV</span><span class="sxs-lookup"><span data-stu-id="e3f82-113">UPD_MOV</span></span>
+  - <span data-ttu-id="4f0f5-113">UPD_MOV</span><span class="sxs-lookup"><span data-stu-id="4f0f5-113">UPD_MOV</span></span>
     
-    - <span data-ttu-id="e3f82-114">[out]項目移動されました。</span><span class="sxs-lookup"><span data-stu-id="e3f82-114">[out] Item was moved out.</span></span>
+    - <span data-ttu-id="4f0f5-114">読み上げアイテムが移動されました。</span><span class="sxs-lookup"><span data-stu-id="4f0f5-114">[out] Item was moved out.</span></span>
     
-  - <span data-ttu-id="e3f82-115">UPD_OK</span><span class="sxs-lookup"><span data-stu-id="e3f82-115">UPD_OK</span></span> 
+  - <span data-ttu-id="4f0f5-115">UPD_OK</span><span class="sxs-lookup"><span data-stu-id="4f0f5-115">UPD_OK</span></span> 
     
-    - <span data-ttu-id="e3f82-116">[in]アップロードが正常に完了しました。</span><span class="sxs-lookup"><span data-stu-id="e3f82-116">[in] Upload was successful.</span></span> <span data-ttu-id="e3f82-117">クライアントでは、情報をサーバーにアップロードした後、これを設定します。</span><span class="sxs-lookup"><span data-stu-id="e3f82-117">The client sets this after uploading information to server.</span></span>
+    - <span data-ttu-id="4f0f5-116">順番アップロードに成功しました。</span><span class="sxs-lookup"><span data-stu-id="4f0f5-116">[in] Upload was successful.</span></span> <span data-ttu-id="4f0f5-117">クライアントは、情報をサーバーにアップロードした後にこれを設定します。</span><span class="sxs-lookup"><span data-stu-id="4f0f5-117">The client sets this after uploading information to server.</span></span>
     
-  - <span data-ttu-id="e3f82-118">UPD_MOVED</span><span class="sxs-lookup"><span data-stu-id="e3f82-118">UPD_MOVED</span></span>
+  - <span data-ttu-id="4f0f5-118">UPD_MOVED</span><span class="sxs-lookup"><span data-stu-id="4f0f5-118">UPD_MOVED</span></span>
     
-    - <span data-ttu-id="e3f82-119">[in]項目が正常に移動されました。</span><span class="sxs-lookup"><span data-stu-id="e3f82-119">[in] Item was moved successfully.</span></span>
+    - <span data-ttu-id="4f0f5-119">順番アイテムは正常に移動されました。</span><span class="sxs-lookup"><span data-stu-id="4f0f5-119">[in] Item was moved successfully.</span></span>
     
-  - <span data-ttu-id="e3f82-120">UPD_UPDATE</span><span class="sxs-lookup"><span data-stu-id="e3f82-120">UPD_UPDATE</span></span>
+  - <span data-ttu-id="4f0f5-120">UPD_UPDATE</span><span class="sxs-lookup"><span data-stu-id="4f0f5-120">UPD_UPDATE</span></span>
     
-    - <span data-ttu-id="e3f82-121">[in]変更、ソース項目をマークします。</span><span class="sxs-lookup"><span data-stu-id="e3f82-121">[in] Mark source item as modified.</span></span>
+    - <span data-ttu-id="4f0f5-121">順番ソースアイテムを変更済みとしてマークします。</span><span class="sxs-lookup"><span data-stu-id="4f0f5-121">[in] Mark source item as modified.</span></span>
     
-  - <span data-ttu-id="e3f82-122">UPD_COMMIT</span><span class="sxs-lookup"><span data-stu-id="e3f82-122">UPD_COMMIT</span></span>
+  - <span data-ttu-id="4f0f5-122">UPD_COMMIT</span><span class="sxs-lookup"><span data-stu-id="4f0f5-122">UPD_COMMIT</span></span>
     
-    - <span data-ttu-id="e3f82-123">[in]アップロード状態ようになりました (項目 0) をコミットします。</span><span class="sxs-lookup"><span data-stu-id="e3f82-123">[in] Commit upload state now (entry 0).</span></span>
+    - <span data-ttu-id="4f0f5-123">順番今すぐアップロードの状態をコミットします (エントリ 0)。</span><span class="sxs-lookup"><span data-stu-id="4f0f5-123">[in] Commit upload state now (entry 0).</span></span>
     
-<span data-ttu-id="e3f82-124">_skey_</span><span class="sxs-lookup"><span data-stu-id="e3f82-124">_skey_</span></span>
+<span data-ttu-id="4f0f5-124">_skey_</span><span class="sxs-lookup"><span data-stu-id="4f0f5-124">_skey_</span></span>
   
-> <span data-ttu-id="e3f82-125">[out]ソース項目のキー。</span><span class="sxs-lookup"><span data-stu-id="e3f82-125">[out] Source key of item.</span></span>
+> <span data-ttu-id="4f0f5-125">読み上げアイテムのソースキー。</span><span class="sxs-lookup"><span data-stu-id="4f0f5-125">[out] Source key of item.</span></span>
     
-<span data-ttu-id="e3f82-126">_dwReserved_</span><span class="sxs-lookup"><span data-stu-id="e3f82-126">_dwReserved_</span></span>
+<span data-ttu-id="4f0f5-126">_dwreserved_</span><span class="sxs-lookup"><span data-stu-id="4f0f5-126">_dwReserved_</span></span>
   
-> <span data-ttu-id="e3f82-127">[out]このメンバーは、Outlook の内部使用に予約されている、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="e3f82-127">[out] This member is reserved for the internal use of Outlook and is not supported.</span></span>
+> <span data-ttu-id="4f0f5-127">[out] このメンバーは Outlook の内部使用のために予約されており、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4f0f5-127">[out] This member is reserved for the internal use of Outlook and is not supported.</span></span>
     
-<span data-ttu-id="e3f82-128">_binChg_</span><span class="sxs-lookup"><span data-stu-id="e3f82-128">_binChg_</span></span>
+<span data-ttu-id="4f0f5-128">_binChg_</span><span class="sxs-lookup"><span data-stu-id="4f0f5-128">_binChg_</span></span>
   
-> <span data-ttu-id="e3f82-129">[out]項目が移動された場合は、同期先項目のキーを変更します。</span><span class="sxs-lookup"><span data-stu-id="e3f82-129">[out] Change key of destination item if item has been moved.</span></span>
+> <span data-ttu-id="4f0f5-129">読み上げアイテムが移動された場合は、コピー先アイテムのキーを変更します。</span><span class="sxs-lookup"><span data-stu-id="4f0f5-129">[out] Change key of destination item if item has been moved.</span></span>
     
-<span data-ttu-id="e3f82-130">_binPcl_</span><span class="sxs-lookup"><span data-stu-id="e3f82-130">_binPcl_</span></span>
+<span data-ttu-id="4f0f5-130">_binpcl_</span><span class="sxs-lookup"><span data-stu-id="4f0f5-130">_binPcl_</span></span>
   
-> <span data-ttu-id="e3f82-131">[out]項目が移動された場合は、同期先項目の一覧を変更します。</span><span class="sxs-lookup"><span data-stu-id="e3f82-131">[out] Change list of destination item if item has been moved.</span></span>
+> <span data-ttu-id="4f0f5-131">読み上げアイテムが移動された場合は、コピー先アイテムのリストを変更します。</span><span class="sxs-lookup"><span data-stu-id="4f0f5-131">[out] Change list of destination item if item has been moved.</span></span>
     
-<span data-ttu-id="e3f82-132">_skeyDst_</span><span class="sxs-lookup"><span data-stu-id="e3f82-132">_skeyDst_</span></span>
+<span data-ttu-id="4f0f5-132">_skeydst_</span><span class="sxs-lookup"><span data-stu-id="4f0f5-132">_skeyDst_</span></span>
   
-> <span data-ttu-id="e3f82-133">[out]同期先項目の項目のソースのキーに移動されました。</span><span class="sxs-lookup"><span data-stu-id="e3f82-133">[out] Source key of destination item if item has been moved.</span></span>
+> <span data-ttu-id="4f0f5-133">読み上げアイテムが移動された場合のコピー先アイテムのソースキー。</span><span class="sxs-lookup"><span data-stu-id="4f0f5-133">[out] Source key of destination item if item has been moved.</span></span>
     
-<span data-ttu-id="e3f82-134">_pupmov_</span><span class="sxs-lookup"><span data-stu-id="e3f82-134">_pupmov_</span></span>
+<span data-ttu-id="4f0f5-134">_pupmov_</span><span class="sxs-lookup"><span data-stu-id="4f0f5-134">_pupmov_</span></span>
   
-> <span data-ttu-id="e3f82-135">[out]アイテムのコピー先フォルダーの情報を移動するとします。</span><span class="sxs-lookup"><span data-stu-id="e3f82-135">[out] Destination folder information if item has been moved.</span></span>
+> <span data-ttu-id="4f0f5-135">読み上げアイテムが移動された場合の移動先フォルダーの情報。</span><span class="sxs-lookup"><span data-stu-id="4f0f5-135">[out] Destination folder information if item has been moved.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="e3f82-136">関連項目</span><span class="sxs-lookup"><span data-stu-id="e3f82-136">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4f0f5-136">関連項目</span><span class="sxs-lookup"><span data-stu-id="4f0f5-136">See also</span></span>
 
-- [<span data-ttu-id="e3f82-137">レプリケーション API について</span><span class="sxs-lookup"><span data-stu-id="e3f82-137">About the Replication API</span></span>](about-the-replication-api.md) 
-- [<span data-ttu-id="e3f82-138">レプリケーション ステート マシンについて</span><span class="sxs-lookup"><span data-stu-id="e3f82-138">About the Replication State Machine</span></span>](about-the-replication-state-machine.md)
-- [<span data-ttu-id="e3f82-139">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="e3f82-139">MAPI Constants</span></span>](mapi-constants.md)
-- [<span data-ttu-id="e3f82-140">SKEY</span><span class="sxs-lookup"><span data-stu-id="e3f82-140">SKEY</span></span>](skey.md)
-- [<span data-ttu-id="e3f82-141">UPDEL</span><span class="sxs-lookup"><span data-stu-id="e3f82-141">UPDEL</span></span>](updel.md)
-- [<span data-ttu-id="e3f82-142">UPMOV</span><span class="sxs-lookup"><span data-stu-id="e3f82-142">UPMOV</span></span>](upmov.md)
+- [<span data-ttu-id="4f0f5-137">レプリケーション API について</span><span class="sxs-lookup"><span data-stu-id="4f0f5-137">About the Replication API</span></span>](about-the-replication-api.md) 
+- [<span data-ttu-id="4f0f5-138">レプリケーション状態のマシンについて</span><span class="sxs-lookup"><span data-stu-id="4f0f5-138">About the Replication State Machine</span></span>](about-the-replication-state-machine.md)
+- [<span data-ttu-id="4f0f5-139">MAPI 定数</span><span class="sxs-lookup"><span data-stu-id="4f0f5-139">MAPI Constants</span></span>](mapi-constants.md)
+- [<span data-ttu-id="4f0f5-140">SKEY</span><span class="sxs-lookup"><span data-stu-id="4f0f5-140">SKEY</span></span>](skey.md)
+- [<span data-ttu-id="4f0f5-141">UPDEL</span><span class="sxs-lookup"><span data-stu-id="4f0f5-141">UPDEL</span></span>](updel.md)
+- [<span data-ttu-id="4f0f5-142">UPMOV</span><span class="sxs-lookup"><span data-stu-id="4f0f5-142">UPMOV</span></span>](upmov.md)
 

@@ -1,5 +1,5 @@
 ---
-title: '[XRulerOrigin] セル ([ルーラーとグリッド] セクション)'
+title: '[xrulerorigin] セル&amp; ([ルーラ Grid] セクション)'
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -9,33 +9,33 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 328f8ab5-217f-0336-0d56-611eff509fe8
 description: ページの x 軸のルーラーに対して、ゼロ点を指定します。
-ms.openlocfilehash: 78fab70c8489ddcdfe450ef9f9fd88b6c5040211
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d66fd324718ec46b1209c4726eeb2d27c21db8b0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346453"
 ---
-# <a name="xrulerorigin-cell-ruler-amp-grid-section"></a><span data-ttu-id="3aace-103">[XRulerOrigin] セル ([ルーラーとグリッド] セクション)</span><span class="sxs-lookup"><span data-stu-id="3aace-103">XRulerOrigin Cell (Ruler &amp; Grid Section)</span></span>
+# <a name="xrulerorigin-cell-ruler-amp-grid-section"></a><span data-ttu-id="88486-103">[xrulerorigin] セル&amp; ([ルーラ Grid] セクション)</span><span class="sxs-lookup"><span data-stu-id="88486-103">XRulerOrigin Cell (Ruler &amp; Grid Section)</span></span>
 
-<span data-ttu-id="3aace-104">ページの x 軸のルーラーに対して、ゼロ点を指定します。</span><span class="sxs-lookup"><span data-stu-id="3aace-104">Specifies the zero point on the x-axis ruler for the page.</span></span>
+<span data-ttu-id="88486-104">ページの x 軸のルーラーに対して、ゼロ点を指定します。</span><span class="sxs-lookup"><span data-stu-id="88486-104">Specifies the zero point on the x-axis ruler for the page.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="3aace-105">注釈</span><span class="sxs-lookup"><span data-stu-id="3aace-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="88486-105">解説</span><span class="sxs-lookup"><span data-stu-id="88486-105">Remarks</span></span>
 
-<span data-ttu-id="3aace-106">このセルは、水平**ルーラーのゼロ点**] オプションに対応して、**ルーラー&amp;グリッド**] ダイアログ ボックス ([**表示**] タブで、矢印をクリック**を表示する**)。</span><span class="sxs-lookup"><span data-stu-id="3aace-106">This cell corresponds to the horizontal **Ruler zero** option in the **Ruler &amp; Grid** dialog box (on the **View** tab, click the **Show** arrow).</span></span> 
+<span data-ttu-id="88486-106">このセルは、[**ルーラー &amp;グリッド**] ダイアログボックス ([**表示**] タブの [**表示**] 矢印をクリック) の [水平**ルーラーゼロ**] オプションに対応しています。</span><span class="sxs-lookup"><span data-stu-id="88486-106">This cell corresponds to the horizontal **Ruler zero** option in the **Ruler &amp; Grid** dialog box (on the **View** tab, click the **Show** arrow).</span></span> 
   
-<span data-ttu-id="3aace-107">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [XRulerOrigin] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="3aace-107">To get a reference to the XRulerOrigin cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="88486-107">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [XRulerOrigin] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="88486-107">To get a reference to the XRulerOrigin cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="3aace-108">セル名 :</span><span class="sxs-lookup"><span data-stu-id="3aace-108">Cell name:</span></span>  <br/> |<span data-ttu-id="3aace-109">XRulerOrigin</span><span class="sxs-lookup"><span data-stu-id="3aace-109">XRulerOrigin</span></span>  <br/> |
+|<span data-ttu-id="88486-108">セル名 :</span><span class="sxs-lookup"><span data-stu-id="88486-108">Cell name:</span></span>  <br/> |<span data-ttu-id="88486-109">[xrulerorigin]</span><span class="sxs-lookup"><span data-stu-id="88486-109">XRulerOrigin</span></span>  <br/> |
    
-<span data-ttu-id="3aace-110">プログラムから、インデックスによって [XRulerOrigin] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="3aace-110">To get a reference to the XRulerOrigin cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="88486-110">プログラムから、インデックスによって [XRulerOrigin] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="88486-110">To get a reference to the XRulerOrigin cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="3aace-111">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="3aace-111">Section index:</span></span>  <br/> |<span data-ttu-id="3aace-112">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="3aace-112">**visSectionObject**</span></span> <br/> |
-|<span data-ttu-id="3aace-113">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="3aace-113">Row index:</span></span>  <br/> |<span data-ttu-id="3aace-114">**visRowRulerGrid**</span><span class="sxs-lookup"><span data-stu-id="3aace-114">**visRowRulerGrid**</span></span> <br/> |
-|<span data-ttu-id="3aace-115">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="3aace-115">Cell index:</span></span>  <br/> |<span data-ttu-id="3aace-116">**visXRulerOrigin**</span><span class="sxs-lookup"><span data-stu-id="3aace-116">**visXRulerOrigin**</span></span> <br/> |
+|<span data-ttu-id="88486-111">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="88486-111">Section index:</span></span>  <br/> |<span data-ttu-id="88486-112">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="88486-112">**visSectionObject**</span></span> <br/> |
+|<span data-ttu-id="88486-113">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="88486-113">Row index:</span></span>  <br/> |<span data-ttu-id="88486-114">**visRowRulerGrid**</span><span class="sxs-lookup"><span data-stu-id="88486-114">**visRowRulerGrid**</span></span> <br/> |
+|<span data-ttu-id="88486-115">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="88486-115">Cell index:</span></span>  <br/> |<span data-ttu-id="88486-116">**visXRulerOrigin**</span><span class="sxs-lookup"><span data-stu-id="88486-116">**visXRulerOrigin**</span></span> <br/> |
    
 

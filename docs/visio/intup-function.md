@@ -8,44 +8,44 @@ f1_keywords:
 - Vis_DSS.chm82251446
 localization_priority: Normal
 ms.assetid: ce193ce1-c7fd-6609-ad37-a3a28b30a1bd
-description: 次の整数に切り上げます。
-ms.openlocfilehash: f54a08fa059d50102a6377b7e368e7e388297acc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 数値を次の整数に切り上げます。
+ms.openlocfilehash: 405345ae1d22d599df85e2a640445c8c681ec2f6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357289"
 ---
-# <a name="intup-function"></a><span data-ttu-id="1d3b6-103">INTUP 関数</span><span class="sxs-lookup"><span data-stu-id="1d3b6-103">INTUP Function</span></span>
+# <a name="intup-function"></a><span data-ttu-id="2c567-103">INTUP 関数</span><span class="sxs-lookup"><span data-stu-id="2c567-103">INTUP Function</span></span>
 
-<span data-ttu-id="1d3b6-104">次の整数に切り上げます。</span><span class="sxs-lookup"><span data-stu-id="1d3b6-104">Rounds a number up to the next integer.</span></span>
+<span data-ttu-id="2c567-104">数値を次の整数に切り上げます。</span><span class="sxs-lookup"><span data-stu-id="2c567-104">Rounds a number up to the next integer.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="1d3b6-105">構文</span><span class="sxs-lookup"><span data-stu-id="1d3b6-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="2c567-105">構文</span><span class="sxs-lookup"><span data-stu-id="2c567-105">Syntax</span></span>
 
-<span data-ttu-id="1d3b6-106">INTUP (* **番号** *)</span><span class="sxs-lookup"><span data-stu-id="1d3b6-106">INTUP(** *number* ** )</span></span> 
+<span data-ttu-id="2c567-106">intup (\* \* *number* \* \*)</span><span class="sxs-lookup"><span data-stu-id="2c567-106">INTUP(\*\* *number* \*\* )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="1d3b6-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="1d3b6-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="2c567-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="2c567-107">Parameters</span></span>
 
-|<span data-ttu-id="1d3b6-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="1d3b6-108">**Name**</span></span>|<span data-ttu-id="1d3b6-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="1d3b6-109">**Required/Optional**</span></span>|<span data-ttu-id="1d3b6-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="1d3b6-110">**Data Type**</span></span>|<span data-ttu-id="1d3b6-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="1d3b6-111">**Description**</span></span>|
+|<span data-ttu-id="2c567-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="2c567-108">**Name**</span></span>|<span data-ttu-id="2c567-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="2c567-109">**Required/Optional**</span></span>|<span data-ttu-id="2c567-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="2c567-110">**Data Type**</span></span>|<span data-ttu-id="2c567-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="2c567-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="1d3b6-112">_number_</span><span class="sxs-lookup"><span data-stu-id="1d3b6-112">_number_</span></span> <br/> |<span data-ttu-id="1d3b6-113">必須</span><span class="sxs-lookup"><span data-stu-id="1d3b6-113">Required</span></span>  <br/> |<span data-ttu-id="1d3b6-114">**番号**</span><span class="sxs-lookup"><span data-stu-id="1d3b6-114">**Number**</span></span> <br/> |<span data-ttu-id="1d3b6-115">切り上げの対象となる数値を指定します。</span><span class="sxs-lookup"><span data-stu-id="1d3b6-115">The number to round up.</span></span>  <br/> |
+| <span data-ttu-id="2c567-112">_number_</span><span class="sxs-lookup"><span data-stu-id="2c567-112">_number_</span></span> <br/> |<span data-ttu-id="2c567-113">必須</span><span class="sxs-lookup"><span data-stu-id="2c567-113">Required</span></span>  <br/> |<span data-ttu-id="2c567-114">**数値**</span><span class="sxs-lookup"><span data-stu-id="2c567-114">**Number**</span></span> <br/> |<span data-ttu-id="2c567-115">切り上げの対象となる数値を指定します。</span><span class="sxs-lookup"><span data-stu-id="2c567-115">The number to round up.</span></span>  <br/> |
    
-## <a name="example-1"></a><span data-ttu-id="1d3b6-116">例 1</span><span class="sxs-lookup"><span data-stu-id="1d3b6-116">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="2c567-116">例 1</span><span class="sxs-lookup"><span data-stu-id="2c567-116">Example 1</span></span>
 
-<span data-ttu-id="1d3b6-117">INTUP(3.2)</span><span class="sxs-lookup"><span data-stu-id="1d3b6-117">INTUP(3.2)</span></span>
+<span data-ttu-id="2c567-117">intup (3.2)</span><span class="sxs-lookup"><span data-stu-id="2c567-117">INTUP(3.2)</span></span>
   
-<span data-ttu-id="1d3b6-118">4 を返します。</span><span class="sxs-lookup"><span data-stu-id="1d3b6-118">Returns 4.</span></span>
+<span data-ttu-id="2c567-118">4 を返します。</span><span class="sxs-lookup"><span data-stu-id="2c567-118">Returns 4.</span></span>
   
-## <a name="example-2"></a><span data-ttu-id="1d3b6-119">例 2</span><span class="sxs-lookup"><span data-stu-id="1d3b6-119">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="2c567-119">例 2</span><span class="sxs-lookup"><span data-stu-id="2c567-119">Example 2</span></span>
 
-<span data-ttu-id="1d3b6-120">INTUP(-3.2)</span><span class="sxs-lookup"><span data-stu-id="1d3b6-120">INTUP(-3.2)</span></span>
+<span data-ttu-id="2c567-120">intup (-3.2)</span><span class="sxs-lookup"><span data-stu-id="2c567-120">INTUP(-3.2)</span></span>
   
-<span data-ttu-id="1d3b6-121">-3 を返します。</span><span class="sxs-lookup"><span data-stu-id="1d3b6-121">Returns -3.</span></span>
+<span data-ttu-id="2c567-121">-3 を返します。</span><span class="sxs-lookup"><span data-stu-id="2c567-121">Returns -3.</span></span>
   
-## <a name="example-3"></a><span data-ttu-id="1d3b6-122">例 3</span><span class="sxs-lookup"><span data-stu-id="1d3b6-122">Example 3</span></span>
+## <a name="example-3"></a><span data-ttu-id="2c567-122">例 3</span><span class="sxs-lookup"><span data-stu-id="2c567-122">Example 3</span></span>
 
-<span data-ttu-id="1d3b6-123">INTUP(3)</span><span class="sxs-lookup"><span data-stu-id="1d3b6-123">INTUP(3)</span></span>
+<span data-ttu-id="2c567-123">intup (3)</span><span class="sxs-lookup"><span data-stu-id="2c567-123">INTUP(3)</span></span>
   
-<span data-ttu-id="1d3b6-124">3 を返します。</span><span class="sxs-lookup"><span data-stu-id="1d3b6-124">Returns 3.</span></span>
+<span data-ttu-id="2c567-124">3 を返します。</span><span class="sxs-lookup"><span data-stu-id="2c567-124">Returns 3.</span></span>
   
 

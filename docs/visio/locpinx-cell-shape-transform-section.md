@@ -8,34 +8,34 @@ f1_keywords:
 - vis_sdr.chm680
 localization_priority: Normal
 ms.assetid: b82feade-5793-8a6e-3ff4-69a4cbdd2cf9
-description: X を表す-図形の原点を基準として、図形の pin (回転の中心) の座標。 [Locpinx] を決定するための既定の数式は次のとおりです。
-ms.openlocfilehash: 17f7b0fde9a54f6596f2f87f866d30b908e062b5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 図形の原点を基準としたときの、図形の pin (回転の中心) の x 座標を表します。 [LocPinX] を決定する既定の数式は次のとおりです。
+ms.openlocfilehash: 2eb5c328eed3c97652173670c426b83b8c358833
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358052"
 ---
-# <a name="locpinx-cell-shape-transform-section"></a><span data-ttu-id="be0ce-104">[LocPinX] セル ([図形変換] セクション)</span><span class="sxs-lookup"><span data-stu-id="be0ce-104">LocPinX Cell (Shape Transform Section)</span></span>
+# <a name="locpinx-cell-shape-transform-section"></a><span data-ttu-id="e7869-104">[LocPinX] セル ([Shape Transform] セクション)</span><span class="sxs-lookup"><span data-stu-id="e7869-104">LocPinX Cell (Shape Transform Section)</span></span>
 
-<span data-ttu-id="be0ce-105">*X*を表す-図形の原点を基準として、図形の pin (回転の中心) の座標。</span><span class="sxs-lookup"><span data-stu-id="be0ce-105">Represents the  *x*  -coordinate of the shape's pin (center of rotation) in relation to the origin of the shape.</span></span> <span data-ttu-id="be0ce-106">[Locpinx] を決定するための既定の数式は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="be0ce-106">The default formula for determining LocPinX is:</span></span> 
+<span data-ttu-id="e7869-105">図形の原点を基準としたときの、図形の pin (回転の中心) の*x*座標を表します。</span><span class="sxs-lookup"><span data-stu-id="e7869-105">Represents the  *x*  -coordinate of the shape's pin (center of rotation) in relation to the origin of the shape.</span></span> <span data-ttu-id="e7869-106">[LocPinX] を決定する既定の数式は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="e7869-106">The default formula for determining LocPinX is:</span></span> 
   
-<span data-ttu-id="be0ce-107">= 幅\*0.5</span><span class="sxs-lookup"><span data-stu-id="be0ce-107">= Width \* 0.5</span></span>
+<span data-ttu-id="e7869-107">= 幅\* 0.5</span><span class="sxs-lookup"><span data-stu-id="e7869-107">= Width \* 0.5</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="be0ce-108">注釈</span><span class="sxs-lookup"><span data-stu-id="be0ce-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e7869-108">解説</span><span class="sxs-lookup"><span data-stu-id="e7869-108">Remarks</span></span>
 
-<span data-ttu-id="be0ce-109">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LocPinX] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="be0ce-109">To get a reference to the LocPinX cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="e7869-109">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LocPinX] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="e7869-109">To get a reference to the LocPinX cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="be0ce-110">セル名:</span><span class="sxs-lookup"><span data-stu-id="be0ce-110">Cell name:</span></span>  <br/> | <span data-ttu-id="be0ce-111">[Locpinx]</span><span class="sxs-lookup"><span data-stu-id="be0ce-111">LocPinX</span></span>  <br/> |
+| <span data-ttu-id="e7869-110">セル名:</span><span class="sxs-lookup"><span data-stu-id="e7869-110">Cell name:</span></span>  <br/> | <span data-ttu-id="e7869-111">[locpinx]</span><span class="sxs-lookup"><span data-stu-id="e7869-111">LocPinX</span></span>  <br/> |
    
-<span data-ttu-id="be0ce-112">プログラムから、インデックスによって [LocPinX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="be0ce-112">To get a reference to the LocPinX cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="e7869-112">プログラムから、インデックスによって [LocPinX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="e7869-112">To get a reference to the LocPinX cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="be0ce-113">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="be0ce-113">Section index:</span></span>  <br/> |<span data-ttu-id="be0ce-114">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="be0ce-114">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="be0ce-115">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="be0ce-115">Row index:</span></span>  <br/> |<span data-ttu-id="be0ce-116">**visRowXFormOut**</span><span class="sxs-lookup"><span data-stu-id="be0ce-116">**visRowXFormOut**</span></span> <br/> |
-| <span data-ttu-id="be0ce-117">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="be0ce-117">Cell index:</span></span>  <br/> |<span data-ttu-id="be0ce-118">**visXFormLocPinX**</span><span class="sxs-lookup"><span data-stu-id="be0ce-118">**visXFormLocPinX**</span></span> <br/> |
+| <span data-ttu-id="e7869-113">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="e7869-113">Section index:</span></span>  <br/> |<span data-ttu-id="e7869-114">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="e7869-114">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="e7869-115">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="e7869-115">Row index:</span></span>  <br/> |<span data-ttu-id="e7869-116">**visRowXFormOut**</span><span class="sxs-lookup"><span data-stu-id="e7869-116">**visRowXFormOut**</span></span> <br/> |
+| <span data-ttu-id="e7869-117">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="e7869-117">Cell index:</span></span>  <br/> |<span data-ttu-id="e7869-118">**visXFormLocPinX**</span><span class="sxs-lookup"><span data-stu-id="e7869-118">**visXFormLocPinX**</span></span> <br/> |
    
 

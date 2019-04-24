@@ -6,27 +6,27 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6a79f124-20a2-e119-4c58-25da99ecc555
-description: Color1 と color2 の明度の差を返します。
-ms.openlocfilehash: 032c1f40e1d33388404f4015740a382271fa8a6b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: color1 と color2 の間の明度の差を返します。
+ms.openlocfilehash: 654ce6a92402278d8b6a6db1e03d0a6fa1f4575f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357996"
 ---
-# <a name="lumdiff-function"></a><span data-ttu-id="81e56-103">LUMDIFF 関数</span><span class="sxs-lookup"><span data-stu-id="81e56-103">LUMDIFF Function</span></span>
+# <a name="lumdiff-function"></a><span data-ttu-id="aecf8-103">LUMDIFF 関数</span><span class="sxs-lookup"><span data-stu-id="aecf8-103">LUMDIFF Function</span></span>
 
-<span data-ttu-id="81e56-104">*Color1*と*color2*の明度の差を返します。</span><span class="sxs-lookup"><span data-stu-id="81e56-104">Returns the difference in luminosity between  *color1*  and  *color2*  .</span></span> 
+<span data-ttu-id="aecf8-104">*color1*と*color2*の間の明度の差を返します。</span><span class="sxs-lookup"><span data-stu-id="aecf8-104">Returns the difference in luminosity between  *color1*  and  *color2*  .</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="81e56-105">構文</span><span class="sxs-lookup"><span data-stu-id="81e56-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="aecf8-105">構文</span><span class="sxs-lookup"><span data-stu-id="aecf8-105">Syntax</span></span>
 
-<span data-ttu-id="81e56-106">LUMDIFF (* * *color1* * *、* * *color2* * *)</span><span class="sxs-lookup"><span data-stu-id="81e56-106">LUMDIFF(** *color1* **, ** *color2* ** )</span></span> 
+<span data-ttu-id="aecf8-106">LUMDIFF (\* \* *color1* \* *、* \* *color2* \* \*)</span><span class="sxs-lookup"><span data-stu-id="aecf8-106">LUMDIFF(\*\* *color1* \*\*, \*\* *color2* \*\* )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="81e56-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="81e56-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="aecf8-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="aecf8-107">Parameters</span></span>
 
-|<span data-ttu-id="81e56-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="81e56-108">**Name**</span></span>|<span data-ttu-id="81e56-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="81e56-109">**Required/Optional**</span></span>|<span data-ttu-id="81e56-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="81e56-110">**Data Type**</span></span>|<span data-ttu-id="81e56-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="81e56-111">**Description**</span></span>|
+|<span data-ttu-id="aecf8-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="aecf8-108">**Name**</span></span>|<span data-ttu-id="aecf8-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="aecf8-109">**Required/Optional**</span></span>|<span data-ttu-id="aecf8-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="aecf8-110">**Data Type**</span></span>|<span data-ttu-id="aecf8-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="aecf8-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="81e56-112">_color1_</span><span class="sxs-lookup"><span data-stu-id="81e56-112">_color1_</span></span> <br/> |<span data-ttu-id="81e56-113">必須</span><span class="sxs-lookup"><span data-stu-id="81e56-113">Required</span></span>  <br/> |<span data-ttu-id="81e56-114">**数値**</span><span class="sxs-lookup"><span data-stu-id="81e56-114">**Numeric**</span></span> <br/> |<span data-ttu-id="81e56-115">最初の色の Microsoft Visio カラー インデックスまたは RGB 値を指定します。</span><span class="sxs-lookup"><span data-stu-id="81e56-115">The Microsoft Visio color index or RGB value of the first color.</span></span>  <br/> |
-| <span data-ttu-id="81e56-116">_color2_</span><span class="sxs-lookup"><span data-stu-id="81e56-116">_color2_</span></span> <br/> |<span data-ttu-id="81e56-117">必須</span><span class="sxs-lookup"><span data-stu-id="81e56-117">Required</span></span>  <br/> |<span data-ttu-id="81e56-118">**数値**</span><span class="sxs-lookup"><span data-stu-id="81e56-118">**Numeric**</span></span> <br/> |<span data-ttu-id="81e56-119">2 番目の色の Microsoft Visio カラー インデックスまたは RGB 値を指定します。</span><span class="sxs-lookup"><span data-stu-id="81e56-119">The Microsoft Visio color index or RGB value of the second color.</span></span>  <br/> |
+| <span data-ttu-id="aecf8-112">_color1_</span><span class="sxs-lookup"><span data-stu-id="aecf8-112">_color1_</span></span> <br/> |<span data-ttu-id="aecf8-113">必須</span><span class="sxs-lookup"><span data-stu-id="aecf8-113">Required</span></span>  <br/> |<span data-ttu-id="aecf8-114">**数値型 (Numeric)**</span><span class="sxs-lookup"><span data-stu-id="aecf8-114">**Numeric**</span></span> <br/> |<span data-ttu-id="aecf8-115">最初の色の Microsoft Visio カラー インデックスまたは RGB 値を指定します。</span><span class="sxs-lookup"><span data-stu-id="aecf8-115">The Microsoft Visio color index or RGB value of the first color.</span></span>  <br/> |
+| <span data-ttu-id="aecf8-116">_color2_</span><span class="sxs-lookup"><span data-stu-id="aecf8-116">_color2_</span></span> <br/> |<span data-ttu-id="aecf8-117">必須</span><span class="sxs-lookup"><span data-stu-id="aecf8-117">Required</span></span>  <br/> |<span data-ttu-id="aecf8-118">**数値型 (Numeric)**</span><span class="sxs-lookup"><span data-stu-id="aecf8-118">**Numeric**</span></span> <br/> |<span data-ttu-id="aecf8-119">2 番目の色の Microsoft Visio カラー インデックスまたは RGB 値を指定します。</span><span class="sxs-lookup"><span data-stu-id="aecf8-119">The Microsoft Visio color index or RGB value of the second color.</span></span>  <br/> |
    
 

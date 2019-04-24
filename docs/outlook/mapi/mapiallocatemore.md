@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: 3e48f76a-bc97-4cbc-9082-c07dd674b73e
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0e6226dd0fc9c04070ed3d1dda1770f77fbc585c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 01980b2da735838eeffa9afa5a0d139b69e76d0c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357317"
 ---
-# <a name="mapiallocatemore"></a><span data-ttu-id="54477-103">MAPIAllocateMore</span><span class="sxs-lookup"><span data-stu-id="54477-103">MAPIAllocateMore</span></span>
+# <a name="mapiallocatemore"></a><span data-ttu-id="c4aee-103">MAPIAllocateMore</span><span class="sxs-lookup"><span data-stu-id="c4aee-103">MAPIAllocateMore</span></span>
 
   
   
-<span data-ttu-id="54477-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="54477-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="c4aee-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="c4aee-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="54477-105">[MAPIAllocateBuffer](mapiallocatebuffer.md)関数で割り当てられている別のバッファーにリンクされているメモリ バッファーを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="54477-105">Allocates a memory buffer that is linked to another buffer previously allocated with the [MAPIAllocateBuffer](mapiallocatebuffer.md) function.</span></span> 
+<span data-ttu-id="c4aee-105">[MAPIAllocateBuffer](mapiallocatebuffer.md)関数で以前に割り当てられた別のバッファーにリンクされているメモリバッファーを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="c4aee-105">Allocates a memory buffer that is linked to another buffer previously allocated with the [MAPIAllocateBuffer](mapiallocatebuffer.md) function.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="54477-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="54477-106">Header file:</span></span>  <br/> |<span data-ttu-id="54477-107">Mapix.h</span><span class="sxs-lookup"><span data-stu-id="54477-107">Mapix.h</span></span>  <br/> |
-|<span data-ttu-id="54477-108">によって実装されます。</span><span class="sxs-lookup"><span data-stu-id="54477-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="54477-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="54477-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="54477-110">によって呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="54477-110">Called by:</span></span>  <br/> |<span data-ttu-id="54477-111">クライアント アプリケーションとサービス ・ プロバイダー</span><span class="sxs-lookup"><span data-stu-id="54477-111">Client applications and service providers</span></span>  <br/> |
+|<span data-ttu-id="c4aee-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="c4aee-106">Header file:</span></span>  <br/> |<span data-ttu-id="c4aee-107">mapix</span><span class="sxs-lookup"><span data-stu-id="c4aee-107">Mapix.h</span></span>  <br/> |
+|<span data-ttu-id="c4aee-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="c4aee-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="c4aee-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="c4aee-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="c4aee-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="c4aee-110">Called by:</span></span>  <br/> |<span data-ttu-id="c4aee-111">クライアントアプリケーションとサービスプロバイダー</span><span class="sxs-lookup"><span data-stu-id="c4aee-111">Client applications and service providers</span></span>  <br/> |
    
 ```cpp
 SCODE MAPIAllocateMore(
@@ -41,30 +41,30 @@ SCODE MAPIAllocateMore(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="54477-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="54477-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="c4aee-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="c4aee-112">Parameters</span></span>
 
- <span data-ttu-id="54477-113">_cbSize_</span><span class="sxs-lookup"><span data-stu-id="54477-113">_cbSize_</span></span>
+ <span data-ttu-id="c4aee-113">_cbSize_</span><span class="sxs-lookup"><span data-stu-id="c4aee-113">_cbSize_</span></span>
   
-> <span data-ttu-id="54477-114">[in]割り当てられる新しいバッファーのバイト単位のサイズです。</span><span class="sxs-lookup"><span data-stu-id="54477-114">[in] Size, in bytes, of the new buffer to be allocated.</span></span> 
+> <span data-ttu-id="c4aee-114">順番割り当てる新しいバッファーのサイズをバイト単位で指定します。</span><span class="sxs-lookup"><span data-stu-id="c4aee-114">[in] Size, in bytes, of the new buffer to be allocated.</span></span> 
     
- <span data-ttu-id="54477-115">_lpObject_</span><span class="sxs-lookup"><span data-stu-id="54477-115">_lpObject_</span></span>
+ <span data-ttu-id="c4aee-115">_lpObject_</span><span class="sxs-lookup"><span data-stu-id="c4aee-115">_lpObject_</span></span>
   
-> <span data-ttu-id="54477-116">[in]**MAPIAllocateBuffer**を使用して割り当てられている既存の MAPI バッファーへのポインター。</span><span class="sxs-lookup"><span data-stu-id="54477-116">[in] Pointer to an existing MAPI buffer allocated using **MAPIAllocateBuffer**.</span></span>
+> <span data-ttu-id="c4aee-116">順番**MAPIAllocateBuffer**を使用して割り当てられた既存の MAPI バッファーへのポインター。</span><span class="sxs-lookup"><span data-stu-id="c4aee-116">[in] Pointer to an existing MAPI buffer allocated using **MAPIAllocateBuffer**.</span></span>
     
- <span data-ttu-id="54477-117">_lppBuffer_</span><span class="sxs-lookup"><span data-stu-id="54477-117">_lppBuffer_</span></span>
+ <span data-ttu-id="c4aee-117">_lppbuffer_</span><span class="sxs-lookup"><span data-stu-id="c4aee-117">_lppBuffer_</span></span>
   
-> <span data-ttu-id="54477-118">[out]返されるへのポインターでは、バッファーが新しく割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="54477-118">[out] Pointer to the returned, newly allocated buffer.</span></span>
+> <span data-ttu-id="c4aee-118">読み上げ新しく割り当てられたバッファーへのポインター。</span><span class="sxs-lookup"><span data-stu-id="c4aee-118">[out] Pointer to the returned, newly allocated buffer.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="54477-119">�߂�l</span><span class="sxs-lookup"><span data-stu-id="54477-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c4aee-119">戻り値</span><span class="sxs-lookup"><span data-stu-id="c4aee-119">Return value</span></span>
 
-<span data-ttu-id="54477-120">S_OK</span><span class="sxs-lookup"><span data-stu-id="54477-120">S_OK</span></span> 
+<span data-ttu-id="c4aee-120">S_OK</span><span class="sxs-lookup"><span data-stu-id="c4aee-120">S_OK</span></span> 
   
-> <span data-ttu-id="54477-121">呼び出しが成功し、要求されたメモリへのポインターが返されます。</span><span class="sxs-lookup"><span data-stu-id="54477-121">The call succeeded and has returned a pointer to the requested memory.</span></span>
+> <span data-ttu-id="c4aee-121">呼び出しが成功し、要求されたメモリへのポインターが返されました。</span><span class="sxs-lookup"><span data-stu-id="c4aee-121">The call succeeded and has returned a pointer to the requested memory.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="54477-122">注釈</span><span class="sxs-lookup"><span data-stu-id="54477-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c4aee-122">解説</span><span class="sxs-lookup"><span data-stu-id="c4aee-122">Remarks</span></span>
 
-<span data-ttu-id="54477-123">**MAPIAllocateMore**の中に処理を呼び出す、呼び出し元の実装は、オペレーティング システムからメモリ ブロックを取得します。</span><span class="sxs-lookup"><span data-stu-id="54477-123">During **MAPIAllocateMore** call processing, the calling implementation acquires a block of memory from the operating system.</span></span> <span data-ttu-id="54477-124">メモリ バッファーは、偶数のバイト アドレスに割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="54477-124">The memory buffer is allocated on an even-numbered byte address.</span></span> <span data-ttu-id="54477-125">長整数型のアクセスがより効率的なプラットフォームでは、オペレーティング システムは、バイト単位でサイズが 4 の倍数のアドレスにバッファーを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="54477-125">On platforms where long integer access is more efficient, the operating system allocates the buffer on an address whose size in bytes is a multiple of four.</span></span> 
+<span data-ttu-id="c4aee-123">**MAPIAllocateMore**呼び出し処理の間、呼び出し側の実装はオペレーティングシステムからメモリブロックを取得します。</span><span class="sxs-lookup"><span data-stu-id="c4aee-123">During **MAPIAllocateMore** call processing, the calling implementation acquires a block of memory from the operating system.</span></span> <span data-ttu-id="c4aee-124">メモリバッファーは、偶数番号のバイトアドレスに割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="c4aee-124">The memory buffer is allocated on an even-numbered byte address.</span></span> <span data-ttu-id="c4aee-125">長い整数アクセスがより効率的になるプラットフォームでは、オペレーティングシステムは、バイト数が4の倍数であるアドレスにバッファーを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="c4aee-125">On platforms where long integer access is more efficient, the operating system allocates the buffer on an address whose size in bytes is a multiple of four.</span></span> 
   
-<span data-ttu-id="54477-126">**MAPIAllocateMore**で割り当てられたバッファーを解放する唯一の方法では、 [MAPIFreeBuffer](mapifreebuffer.md)関数に_lpObject_パラメーターで指定されたバッファーのポインターを渡します。</span><span class="sxs-lookup"><span data-stu-id="54477-126">The only way to release a buffer allocated with **MAPIAllocateMore** is to pass the buffer pointer specified in the  _lpObject_ parameter to the [MAPIFreeBuffer](mapifreebuffer.md) function.</span></span> <span data-ttu-id="54477-127">[MAPIAllocateBuffer](mapiallocatebuffer.md)と**MAPIAllocateMore**で割り当てられたメモリ バッファーの間のリンクは、1 回の呼び出しの両方のバッファーを解放する**MAPIFreeBuffer**を有効にします。</span><span class="sxs-lookup"><span data-stu-id="54477-127">The link between the memory buffers allocated with [MAPIAllocateBuffer](mapiallocatebuffer.md) and **MAPIAllocateMore** enables **MAPIFreeBuffer** to release both buffers with a single call.</span></span> 
+<span data-ttu-id="c4aee-126">**MAPIAllocateMore**で割り当てられたバッファーを解放する唯一の方法は、 _lpObject_パラメーターで指定したバッファーポインターを[MAPIFreeBuffer](mapifreebuffer.md)関数に渡すことです。</span><span class="sxs-lookup"><span data-stu-id="c4aee-126">The only way to release a buffer allocated with **MAPIAllocateMore** is to pass the buffer pointer specified in the  _lpObject_ parameter to the [MAPIFreeBuffer](mapifreebuffer.md) function.</span></span> <span data-ttu-id="c4aee-127">[MAPIAllocateBuffer](mapiallocatebuffer.md)および**MAPIAllocateMore**で割り当てられたメモリバッファー間のリンクによって、 **MAPIFreeBuffer**は両方のバッファーを1回の呼び出しで解放できます。</span><span class="sxs-lookup"><span data-stu-id="c4aee-127">The link between the memory buffers allocated with [MAPIAllocateBuffer](mapiallocatebuffer.md) and **MAPIAllocateMore** enables **MAPIFreeBuffer** to release both buffers with a single call.</span></span> 
   
 
