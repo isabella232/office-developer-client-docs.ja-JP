@@ -12,11 +12,11 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: c3424fd4b85108120ea4accc2dfa65d55394f0d2
-ms.sourcegitcommit: e59070b67358b3700ca677149a849768c144c1a3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291436"
 ---
 # <a name="initializing-the-microsoft-excel-driver"></a>Microsoft Office Excel ドライバーの初期化
 
@@ -118,7 +118,7 @@ Microsoft Access データベース エンジンで使用される、Excel キ�
 <tr class="odd">
 <td><p>isamtype</p></td>
 <td><p>REG_DWORD</p></td>
-<td><p>1</p></td>
+<td><p>1-d</p></td>
 </tr>
 <tr class="even">
 <td><p>indexdialog</p></td>
@@ -147,7 +147,7 @@ Microsoft Access データベース エンジンで使用される、Excel キ�
 ## <a name="using-the-typeguessrows-setting-for-excel-driver"></a>Excel ドライバーの TypeGuessRows 設定を使用する
 Microsoft Excel ドライバーを使用する場合は、 **TypeGuessRows**レジストリ値を使用して、データ型をチェックする行の数を構成できます。 **TypeGuessRows**の値は、次のレジストリサブキーの下にあります。
 
-# [<a name="office-2016"></a>Office 2016](#tab/office-2016)
+# <a name="office-2016taboffice-2016"></a>[Office 2016](#tab/office-2016)
 
 Office の MSI インストールの場合
 
@@ -181,7 +181,7 @@ Office のクイック実行インストールの場合
 
 列の予想されるデータ型と一致しないデータが検出された場合、そのデータは**Null**値として返されます。 インポート時に、列のデータ型が混在している場合は、 **ImportMixedTypes**設定によって設定されたデータ型に列全体がキャストされます。
 
-# [<a name="office-2013"></a>Office 2013](#tab/office-2013)
+# <a name="office-2013taboffice-2013"></a>[Office 2013](#tab/office-2013)
 
 32ビット版の windows または64ビット版の office (64 ビット版の windows) の場合:
 
@@ -203,7 +203,7 @@ Office のクイック実行インストールの場合
 
 列の予想されるデータ型と一致しないデータが検出された場合、そのデータは**Null**値として返されます。 インポート時に、列のデータ型が混在している場合は、 **ImportMixedTypes**設定によって設定されたデータ型に列全体がキャストされます。
 
-# [<a name="office-2010"></a>Office 2010](#tab/office-2010)
+# <a name="office-2010taboffice-2010"></a>[Office 2010](#tab/office-2010)
 
 32ビット版の windows または64ビット版の office (64 ビット版の windows) の場合:
 

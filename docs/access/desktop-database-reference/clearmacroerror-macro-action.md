@@ -12,39 +12,39 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: f42386674ff76d550fb47a971860b4e1a5905236
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296375"
 ---
 # <a name="clearmacroerror-macro-action"></a>ClearMacroError マクロ アクション
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
-**ClearMacroError**アクションを使用すると、 **MacroError**オブジェクトに格納されているエラーについての情報をクリアします。
+You can use the **ClearMacroError** action to clear information about an error that is stored in the **MacroError** object.
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**ClearMacroError**アクションの引数ではありません。
+"ClaerMacroError/マクロエラーのクリア" アクションには、引数はありません。
 
 ## <a name="remarks"></a>注釈
 
-- マクロでエラーが発生すると、エラーに関する情報が **MacroError** オブジェクトに格納されます。 エラー メッセージが表示されないようにするのには、**[エラー時](onerror-macro-action.md)** のアクションを使用しない場合は、マクロが停止し、エラー情報が標準エラー メッセージに表示されます。 ただし、エラー メッセージが表示されないようにするのには、**エラー時**のアクションを使用した場合を条件またはカスタム エラー メッセージでは、 **MacroError**オブジェクトに格納された情報を使用します。
+- マクロでエラーが発生すると、エラーに関する情報が **MacroError** オブジェクトに格納されます。 " **[OnError](onerror-macro-action.md)** /エラー時" アクションを使用してエラーメッセージが表示されないようにしていない場合は、マクロが停止し、エラー情報が標準的なエラーメッセージに表示されます。 ただし、" **OnError** /エラー時" アクションを使用してエラーメッセージが表示されないようにした場合は、 **MacroError**オブジェクトに格納されている情報を条件またはカスタムエラーメッセージで使用することをお勧めします。
     
-  エラーが処理された後、 **MacroError**オブジェクト内の情報は古く、 **ClearMacroError**アクションを使用してオブジェクトを消去することをお勧めします。 これにより、 **MacroError**オブジェクトのエラー番号が 0 にリセットし、エラーの説明、マクロ名、アクション名、条件、および引数など、オブジェクトに格納されているエラーに関するその他の情報をクリアします。 このようにすると、後で再度 **MacroError** オブジェクトを調査して、別のエラーが発生していないかを確認できます。
+  After an error has been handled, the information in the **MacroError** object is out of date, so it is a good idea to clear the object by using the **ClearMacroError** action. Doing so resets the error number in the **MacroError** object to 0 and clears any other information about the error that is stored in the object, such as the error description, macro name, action name, condition, and arguments. This way, you can inspect the **MacroError** object again later to see if another error has occurred.
 
-- **ClearMacroError**アクションを使用して、マクロの末尾にする必要はありませんのでは、 **MacroError**オブジェクトが任意のマクロが終了すると自動的にクリアされます。
+- The **MacroError** object is automatically cleared when any macro ends, so you do not need to use the **ClearMacroError** action at the end of a macro.
 
 - **MacroError** オブジェクトには、一度に 1 つのエラー情報のみが格納されます。マクロで複数のエラーが発生した場合は、最後のエラーに関する情報だけが **MacroError** オブジェクトに格納されます。
 
-- **ClearMacroError**アクションは、VBA モジュールで実行するには、 **DoCmd**オブジェクトの**ClearMacroError**メソッドを使用します。
+- To run the **ClearMacroError** action in a VBA module, use the **ClearMacroError** method of the **DoCmd** object.
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
-次のマクロは、**次**の引数**OnError**アクションを使用して、エラー メッセージが表示されないようにし **、このアクション**を使用して、フォームを開きます。 この例では、エラーが意図的に前のレコードに移動するのには、 **GoToRecord**アクションを使用して作成します。 条件**\[MacroError\]です\[。数\]\<\>0** 、 **MacroError**オブジェクトをテストします。 エラーが発生した場合、エラー番号は、0 以外の場合、および**メッセージ ボックス**のアクションを実行します。 メッセージ ボックスが表示されます (ここでは、 **GoToRecord**アクション)、エラーを発生させたアクションの名前と、エラー番号が表示されます。 最後に、 **ClearMacroError**アクションを実行すると、 **MacroError**オブジェクトがクリアされます。
+The following macro uses the **OnError** action with the **Next** argument to suppress error messages, and then uses the **OpenForm** action to open a form. For this example, an error is deliberately created by using the **GoToRecord** action to go to the previous record. 条件** \[MacroError\]。\[0\]\<\>を指定**すると、 **MacroError**オブジェクトがテストされます。 If an error has occurred, the error number is non-zero, and the **MessageBox** action runs. The message box displays the name of the action that caused the error (in this case, the **GoToRecord** action), and the error number is displayed. Finally, running the **ClearMacroError** action clears the **MacroError** object.
 
 <table>
 <colgroup>
@@ -63,22 +63,22 @@ ms.locfileid: "28721634"
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>OnError</strong></p></td>
-<td><p><strong>移動</strong>:<strong>次へ</strong></p></td>
+<td><p><strong>[次へ] に移動し</strong>ます。 <strong></strong></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p><strong>OpenForm</strong></p></td>
-<td><p><strong>フォーム名</strong>: CategoryForm<strong>ビュー</strong>: <strong>FormWindow モード</strong>:<strong>標準</strong></p></td>
+<td><p><strong>フォーム名</strong>: カテゴリフォーム<strong>ビュー</strong>: <strong>formwindow Mode</strong>: <strong>Normal</strong></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>GoToRecord</strong></p></td>
-<td><p><strong>オブジェクトの種類</strong>: <strong>FormObject 名</strong>: CategoryForm<strong>レコード</strong>: 前</p></td>
+<td><p><strong>オブジェクトの種類</strong>: <strong>formoboffname</strong>: カテゴリフォーム<strong>レコード</strong>: 以前</p></td>
 </tr>
 <tr class="even">
-<td><p>[MacroError] です。[番号]&lt; &gt;0</p></td>
+<td><p>[MacroError]。件数&lt; &gt;0</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>メッセージ</strong>: =&quot;エラー # &quot; &amp; [MacroError] です。[番号]&amp; &quot; [ &quot; &amp; [MacroError] です。[アクション名]&amp; &quot;アクション。&quot;<strong>ビープ音を鳴らす</strong>: <strong>YesType</strong>: 情報</p></td>
+<td><p><strong>Message</strong>: =&quot;Error # &quot; &amp; [MacroError].件数&amp; &quot; [ &quot; MacroError] &amp;ActionName&amp; &quot;アクション。&quot;<strong>警告音</strong>: <strong>yestype</strong>: 情報</p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>

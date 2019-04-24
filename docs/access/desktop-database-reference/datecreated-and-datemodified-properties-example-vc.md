@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c74b90ad45055689c7235e4062b83d71919c02a4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294415"
 ---
 # <a name="datecreated-and-datemodified-properties-example-vc"></a>DateCreated プロパティと DateModified プロパティの使用例 (VC++)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ここでは、新しい [Column](datecreated-property-adox.md) を既存の [Table](datemodified-property-adox.md) に追加したり、新しい [Table](column-object-adox.md) を作成したりすることで、 [DateCreated](table-object-adox.md) プロパティおよび **DateModified** プロパティの使用例を示します。この例を実行するには DateOutput プロシージャが必要です。
 

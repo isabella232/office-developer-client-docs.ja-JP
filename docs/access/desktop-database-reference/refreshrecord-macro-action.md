@@ -12,50 +12,50 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: d8682c19686650ab193536658c6b56961f289174
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307080"
 ---
 # <a name="refreshrecord-macro-action"></a>RefreshRecord マクロ アクション
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**RefreshRecord**アクションを使用すると、アクティブ フォームまたはアクティブ データシートの現在のセット内のレコードに加えられた変更を反映するために基になるレコード ソースを更新します。
+You can use the **RefreshRecord** action to update the underlying record source for the active form or datasheet to reflect changes made to the records in the current set.
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**RefreshRecord**アクションは、現在のセット内のレコードに加えられた変更のみを示しています。 **RefreshRecord**アクションで、データベースが実際に再いないため現在のセット追加されたか、データベースは、最後に再クエリのために削除されたレコードを除外するレコードは含まれません不要になったクエリまたはフィルターの条件を満たすレコードを除外するされます。 データベースのクエリを再実行するには、 **[Requery](requery-macro-action.md)** メソッドを使用します。 フォームのレコード ソースをクエリすると、ときに現在のレコードのセットはレコード ソースのすべてのデータを正確に反映します。
+the **RefreshRecord** action shows only changes made to records in the current set. Because the **RefreshRecord** action does not actually requery the database, the current set will not include records that have been added or exclude records that have been deleted since the database was last requeried; Nor will it exclude records that no longer satisfy the criteria of the query or filter. To requery the database, use the **[Requery](requery-macro-action.md)** method. When the record source for a form is requeried, the current set of records will accurately reflect all data in the record source.
 
 このマクロ アクションの動作は、このマクロ アクションをクライアント データベースで呼び出しているか、または Web データベースで呼び出しているかによって異なります。
 
 ## <a name="client-database"></a>クライアント データベースの場合
 
-クライアント データベースでは、アクティブ フォームまたはアクティブ データシートの現在のセット内のデータに加えられた変更を反映するために基になるレコード ソースを更新するのに**RefreshRecord**アクションを使用できます。 現在のユーザーによって、またはマルチ ユーザー環境で他のユーザーによって加えられた変更も含まれます。 **[Refresh](https://docs.microsoft.com/office/vba/api/Access.Form.Refresh)** メソッドと同じであります。
+In a client database, you can use the **RefreshRecord** action to update the underlying record source for the active form or datasheet to reflect changes made to the data in the current set. Changes include those made by the current user or by other users in a multiuser environment. It is equivalent to the **[Refresh](https://docs.microsoft.com/office/vba/api/Access.Form.Refresh)** method.
 
-**RefreshRecord**マクロ アクションでは、クライアント データベースで、次が行われます。
+The **RefreshRecord** macro action does the following in a client database:
 
 1.  アクティブ フォームまたはアクティブ データシートのレコード ソースを更新し、現在のレコード セットの行に対する変更を反映します。ODBC リンク テーブルについては、現在のレコード セットに対する変更をデータ ソースから取得します。
 
-2.  現在のレコード セットを更新し、変更を反映します。 表示に変更される場合は、レコード ソース内の行を削除すると、\#削除します。
+2.  現在のレコード セットを更新し、変更を反映します。 レコードソースの行が削除されている場合は、[削除済み\#] と表示されます。
 
-3.  アクティブまたはすべてを表示するデータシートを更新およびレコードの変更\#現在のセット内のレコードを削除します。
+3.  アクティブまたはデータシートを更新して、現在の\#セットの変更されたレコードと削除されたレコードを表示します。
 
 4.  アクティブ フォームまたはアクティブ データシートのサブフォームおよびサブレポートに再クエリを行います。
 
 ## <a name="web-database"></a>Web データベースの場合
 
-Web データベースでは、アクティブ フォームまたはアクティブ データシートの現在のセット内のレコードに加えられた変更を反映するために基になるレコード ソースを更新するのに**RefreshRecord**アクションを使用できます。 現在のユーザーまたは他のユーザーによって加えられた変更も含まれます。
+In a web database, you can use the **RefreshRecord** action to update the underlying record source for the active form or datasheet to reflect changes made to the records in the current set. Changes include those made by the current user or other users.
 
-**RefreshRecord**マクロ アクションでは、web データベースで、次が行われます。
+The **RefreshRecord** macro action does the following in a web database:
 
 1.  現在のレコード セットのベース テーブルに対する変更を、サーバーから取得します。ODBC リンク テーブルについては、現在のレコード セットに対する変更をデータ ソースから取得します。
 
-2.  現在のレコード セットを更新し、変更を反映します。 表示するのには変更される場合は現在のセット内の行を削除すると、\#削除します。
+2.  現在のレコード セットを更新し、変更を反映します。 現在のセットの行が削除されている場合は、[削除\#済み] を表示するように変更されます。
 
-3.  更新アクティブなフォームまたはデータシートを表示するのには変更されたレコード、および\#現在のセット内のレコードを削除します。
+3.  アクティブなフォームまたはデータシートを更新して、現在\#のセットの変更されたレコードと削除されたレコードを表示します。
 
 4.  アクティブ フォームまたはアクティブ データシートのサブフォームおよびサブレポートに再クエリを行います。
 

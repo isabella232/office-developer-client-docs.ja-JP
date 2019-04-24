@@ -1,5 +1,5 @@
 ---
-title: キーセット カーソル (デスクトップ データベース参照のアクセス)
+title: キーセットカーソル (Access デスクトップデータベースリファレンス)
 TOCTitle: Keyset cursors
 ms:assetid: 4b6e5f90-4413-4fb3-0a08-2cb89d3c61f7
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249236(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 200b10599683a5b5877952664c04e94b2523cfee
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290716"
 ---
 # <a name="keyset-cursors"></a>キーセット カーソル
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 キーセット カーソルの変更検出機能は、静的カーソルと動的カーソルの中間です。静的カーソルと同様、キーセット カーソルでは、結果セットのメンバーシップと順序に対する変更が常に検出されるわけではありません。一方、結果セット内の行の値に対する変更は、動的カーソルと同様に検出されます。
 

@@ -1,5 +1,5 @@
 ---
-title: DataSpace オブジェクト (RDS)
+title: スペースオブジェクト (RDS)
 TOCTitle: DataSpace object (RDS)
 ms:assetid: 7db181d5-422b-49fe-b6af-a20f5da520ff
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249527(v=office.15)
@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f77617d4ddfb0160b8a418f55582a380067fde70
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294464"
 ---
-# <a name="dataspace-object-rds"></a>DataSpace オブジェクト (RDS)
+# <a name="dataspace-object-rds"></a>スペースオブジェクト (RDS)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 中間層にあるカスタム ビジネス オブジェクトにクライアント側プロキシを作成します。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 リモート データ サービスでは、クライアント側コンポーネントが中間層にあるビジネス オブジェクトと通信するために、ビジネス オブジェクト プロキシが必要となります。プロキシは、プロセスまたはマシンの境界を越えて、アプリケーションの [Recordset](recordset-object-ado.md) データを簡単にパッケージ化したり、パッケージ化を解除したり、送信 (マーシャリング) したりできます。
 

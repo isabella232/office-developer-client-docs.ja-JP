@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 7985df074caee9b1508be9c045ac84f2f8ef248f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309104"
 ---
 # <a name="recordtype-property-ado"></a>RecordType プロパティ (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [Record](record-object-ado.md) オブジェクトの種類を示します。
 
@@ -25,7 +25,7 @@ ms.locfileid: "28705478"
 
 [RecordTypeEnum](recordtypeenum.md) 値を返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **RecordType** プロパティは値の取得のみ可能です。
 

@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: a2ef6c5f38064ae3253cd7e0e58732f63294ceb3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306686"
 ---
 # <a name="repaintobject-macro-action"></a>RepaintObject マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-指定されていない場合は、保留中の指定されたデータベース オブジェクトまたはアクティブなデータベース オブジェクトでは、画面の更新を完了する**RepaintObject**アクションを使用できます。 このような更新には、オブジェクトのコントロールの再計算が含まれます。
+"RepaintObject/オブジェクトの再描画" アクションを使用すると、表示が更新されていないデータベース オブジェクトを再描画できます。データベース オブジェクトが指定されている場合はそのオブジェクトを再描画し、指定されていない場合はアクティブなデータベース オブジェクトを再描画します。このとき、コントロールの再計算も行われます。
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**RepaintObject**アクションには、次の引数があります。
+"RepaintObject/オブジェクトの再描画" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -46,23 +46,23 @@ ms.locfileid: "28722831"
 </tr>
 <tr class="even">
 <td><p><strong>オブジェクト名</strong></p></td>
-<td><p>再描画するオブジェクトの名前。 [ <strong>オブジェクト名</strong> ] ボックスには、データベース内のオブジェクトのうち、" <strong>Object Type/オブジェクトの種類</strong> " 引数で選択した種類のオブジェクトがすべて表示されます。 <strong>オブジェクトの型</strong>引数を空白のままにする場合は、この引数を指定しないも。</p></td>
+<td><p>再描画するオブジェクトの名前を指定します。 [ <strong>オブジェクト名</strong>] ボックスには、データベース内のオブジェクトのうち、 <strong>Object Type/オブジェクトの種類</strong> 引数で選択した種類のオブジェクトがすべて表示されます。 If you leave the <strong>Object Type</strong> argument blank, leave this argument blank also.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 Microsoft Access では、他の保留中のタスクの実行が終わるまで画面は更新されません。このアクションを使うと、指定したオブジェクトのコントロールを即座に再描画できます。このアクションは、次のような場合に使うと効果的です。
 
-- いくつかのコントロールの値を変更するのには **、アクション**を使用します。 アクセスの変更をすぐに表示されないことが他のコントロール (演算コントロールなど) が変更されたコントロールの値に依存している場合に特に。
+- When you use the **SetValue** action to change values in a number of controls. Access might not show the changes immediately, especially if other controls (such as calculated controls) depend on values in the changed controls.
 
 - 表示しているフォームのすべてのコントロールにデータが確実に表示されるようにする場合。たとえば、フォームを開いた直後は、OLE オブジェクトを含むコントロールのデータが表示されないことがあります。
 
 > [!NOTE]
-> - この動作は、オブジェクトの基になるテーブルまたはクエリからレコードの追加、変更、削除は反映されませんので、データベースの再クエリを発生しません。 オブジェクトまたはそのコントロールのいずれかのソースを再クエリ**再クエリ**アクションを使用します。 最新のレコードを表示し、適用されたフィルターを削除するには、**解除**を使用します。
-> - **RepaintObject**アクション [**ホーム**] タブ、フォームやデータシートの現在表示されているレコードにするか、他のユーザーが行った変更をすべてを表示する [**レコード**] グループで [**更新**] をクリックと同じ効果がありません。
+> - This action doesn't cause a requery of the database, so it doesn't show new and changed records or remove deleted records from the object's underlying table or query. Use the **Requery** action to requery the source of the object or one of its controls. Use the **ShowAllRecords** action to display the most recent records and remove any applied filters.
+> - **RepaintObject**アクションの動作は、[**ホーム**] タブの [**レコード**] グループで [最新の情報に**更新**] をクリックした場合と同じです。これには、フォームおよびデータシートに現在表示されているレコードに対して行った変更やその他のユーザーが表示されます。
 
-**RepaintObject**アクションを Visual Basic for Applications (VBA) のモジュールで実行するには、 **DoCmd**オブジェクトの**RepaintObject**メソッドを使用します。
+Visual Basic for applications (VBA) モジュールで**RepaintObject**アクションを実行するには、 **DoCmd**オブジェクトの**RepaintObject**メソッドを使用します。
 

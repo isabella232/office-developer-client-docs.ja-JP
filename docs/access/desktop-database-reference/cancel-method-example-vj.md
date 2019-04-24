@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 72625820abe74b5a6a8989893a7ed0ab1bfec3b6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296662"
 ---
 # <a name="cancel-method-example-vj"></a>Cancel メソッドの使用例 (VJ++)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 この例では、接続がビジー状態の場合に、[Cancel](cancel-method-ado.md) メソッドを使用して、 [Connection](connection-object-ado.md) オブジェクトで実行しているコマンドを取り消します。
 

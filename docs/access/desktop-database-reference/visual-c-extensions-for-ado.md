@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: fc69d3244cf6faf3aa91fe954e4b39323cf13abf
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302755"
 ---
-# <a name="visual-c-extensions-for-ado"></a>ADO 用の Visual C++ Extensions
+# <a name="visual-c-extensions-for-ado"></a>ADO 用 Visual C++ Extensions
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-ADO Visual C++ でのプログラミングの推奨される方法を使用して、**\#インポート**ディレクティブについては、 [Microsoft Visual C++ での ADO プログラミング](visual-c-ado-programming.md)で説明したようです。 しかし、ADO の以前のバージョンでは、Visual C++ を使用するプログラミングの代替方法として、Visual C++ Extensions が提供されていました。 ここで Visual C++ の拡張機能のコードを維持する必要があります人のためのこの機能の説明ですが、使用して新しい ADO コードを記述する必要があります\#**をインポート**します。
+visual c++ で ado をプログラミングする方法として推奨されるのは、「 [Microsoft visual c++ ado プログラミング](visual-c-ado-programming.md)」で説明されているように、 ** \#import**ディレクティブを使用する方法です。 しかし、ADO の以前のバージョンでは、Visual C++ を使用するプログラミングの代替方法として、Visual C++ Extensions が提供されていました。 このセクションでは、Visual C++ Extensions コードを維持する必要がある場合にこの機能について説明\#します。ただし、新しい ADO コードは**import**を使用して記述する必要があります。
 
 Visual C++ を使用するプログラマが、ADO でデータを取得する際に直面する手間のかかる作業の 1 つに、バリアント データ型 (Variant) として返されたデータを C++ データ型に変換し、変換したデータをさらにクラスまたは構造体に格納するという作業があります。バリアント データ型を使用して C++ データ型を取得すると、手間がかかるだけでなくパフォーマンスも低下します。
 

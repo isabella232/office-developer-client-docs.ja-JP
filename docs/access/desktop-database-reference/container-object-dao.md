@@ -1,5 +1,5 @@
 ---
-title: コンテナー オブジェクト (DAO)
+title: Container オブジェクト (DAO)
 TOCTitle: Container Object
 ms:assetid: 22e487cd-e966-fe68-fff3-c680b460cbeb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff191764(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c9ebbeae35387f4fd59c39d4c20df6033edb06b0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295633"
 ---
-# <a name="container-object-dao"></a>コンテナー オブジェクト (DAO)
+# <a name="container-object-dao"></a>Container オブジェクト (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **Container** オブジェクトは、同じような種類の **Document** オブジェクトを 1 つにグループ化します。
 
@@ -43,7 +43,7 @@ ms.locfileid: "28702125"
 <td><p>保存されたデータベース</p></td>
 </tr>
 <tr class="even">
-<td><p>Tables</p></td>
+<td><p>テーブル</p></td>
 <td><p>保存されたテーブルおよびクエリ</p></td>
 </tr>
 <tr class="odd">
@@ -70,11 +70,11 @@ ms.locfileid: "28702125"
 
 コレクション内の **Container** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。
 
-- **Containers**(0)
+- **コンテナー**.0
 
-- **コンテナー**(以下「*名前*」)
+- **コンテナー**("*name*")
 
-- **コンテナー**\!\[*名*\]
+- ****\!コンテナー\[*名*\]
 
 ## <a name="example"></a>例
 

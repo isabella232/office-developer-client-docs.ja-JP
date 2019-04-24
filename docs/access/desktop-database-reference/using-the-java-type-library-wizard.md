@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a27491acabd19f688eca4159a36dcfcfc486a026
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32312083"
 ---
-# <a name="using-the-java-type-library-wizard"></a>Java Type Library ウィザードを使用する
+# <a name="using-the-java-type-library-wizard"></a>Java タイプ ライブラリ ウィザードの使用
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-Java タイプ ライブラリ ウィザードでは、機能の Visual J では 1.x では、開発環境の [**ツール**] メニューに統合されています。 その目的は、タイプ ライブラリを検索し、COM オブジェクトへのアクセスを可能にする Java インタ フェースを作成します。 Visual j 6.0 の Java タイプ ライブラリ ウィザードは[Windows Foundation クラスの ADO](ado-wfc-programming.md)を交換済み。
+The Java Type Library Wizard is a feature of Visual J++ 1.x, integrated into the **Tools** menu of the development environment. Its purpose is to search a type library and create a Java interface that allows access to COM objects. For Visual J++ 6.0, the Java Type Library Wizard has been replaced with [ADO for Windows Foundation Classes](ado-wfc-programming.md).
 
 Java Type Library ウィザードは、[Microsoft SDK for Java](using-the-microsoft-sdk-for-java.md) に組み込まれているコマンド ライン ツールと同様の結果を生成します。ただし、Microsoft SDK for Java で生成されるクラス ラッパーとは異なり、ウィザードが生成するクラス ラッパーにステップ インすることはできません。
 
-Java タイプ ライブラリ ウィザードでは、次の場所に、クラスが生成されます: \\ \<windows ディレクトリ\>\\Java\\trustlib\\msado15。 クラスが生成されるディレクトリにある Summary.txt ファイルでは、生成されたクラス定義を確認できます。
+java Type Library ウィザードは、次の場所にクラスを生成\\ \<します\>\\。\\windows ディレクトリ\\Java trustlib msado15.dll。 クラスが生成されるディレクトリにある Summary.txt ファイルでは、生成されたクラス定義を確認できます。
 
 Java Type Library ウィザードは、所定のタイプ ライブラリにある列挙型を INT (整数) 型に変換します。また、タイプ ライブラリの各列挙型に対応するインターフェイスも定義します。ADO 列挙型の値は、次の構文で参照できます。
 
@@ -43,11 +43,11 @@ Cmd1.putCommandType( msado15.CommandTypeEnum.adCmdStoredProc );
 
 その他のコード例については、「[ADO Java クラス ラッパー](ado-java-class-wrappers.md)」を参照してください。
 
-**Visual J では 1.*x のバージョンの Java タイプ ライブラリ ウィザードを実行するには***
+**Visual J++ バージョン1から Java Type Library ウィザードを実行するには***
 
-1.  **ツール**] メニューの [ **Java タイプ ライブラリ ウィザード]** を選択します。
+1.  From the **Tools** menu, select **Java Type Library Wizard**.
 
-2.  [Microsoft ActiveX データ オブジェクト ライブラリ] を選択し、[ **OK**] をクリックします。 ここではこの内のファイルを生成する (re)、 \\ADO の trustlib ディレクトリ (既定では c:\\winnt\\java\\trustlib\\msado15)。 既に ADO のクラスを生成するには、Java の Microsoft SDK を使用する場合、Java タイプ ライブラリ ウィザードからのもので置き換えられます。
+2.  Select "Microsoft ActiveX Data Objects Library" and click **OK**. この時点で (re) は、ADO \\の trustlib ディレクトリ (既定では、c:\\winnt\\java\\trustlib\\msado15.dll) にファイルを生成します。 If you used the Microsoft SDK for Java to already generate classes for ADO, they will be replaced with those from the Java Type Library Wizard.
 
-3.  これらのファイルを使用するには、プロジェクトを開く、Visual J では。 **[プロジェクト**] メニューから**プロジェクトに追加**を選択します。 **ファイル**を選択しのすべてを追加します。生成された JAVA ファイル、 \\trustlib ディレクトリ (既定では c:\\winnt\\java\\trustlib\\msado15) をプロジェクトにします。
+3.  To use these files, open your project in Visual J++. From the **Project** menu, choose **Add To Project**. [**ファイル**] を選択し、すべてのを追加します。trustlib ディレクトリで生成\\された JAVA ファイル (既定では\\c\\:\\winnt java\\trustlib msado15.dll) がプロジェクトに生成されます。
 

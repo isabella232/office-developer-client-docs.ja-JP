@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 26c259452e23bed8d2937f9d86c78d4d52be2993
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294086"
 ---
 # <a name="delete-method-example-vbscript"></a>Delete メソッドの使用例 (VBScript)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 この例では、[Delete](delete-method-ado-recordset.md) メソッドを使用して、指定されたレコードを [Recordset](recordset-object-ado.md) から削除します。
 
 次の例は、Active Server Page (ASP) で使用してください。
 
-**Find** を使用してファイル Adovbs.inc を検索し、使用するディレクトリに置きます。 メモ帳または別のテキスト エディターに次のコードを貼り付けますを切り取ってそれを**DeleteVBS.asp**として保存します。 任意のクライアント ブラウザーに結果を表示します。
+Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use. Cut and paste the following code into Notepad or another text editor, and save it as **DeleteVBS.asp**. You can view the result in any client browser.
 
 例を実行するときは、最初に [AddNew](addnew-method-example-vbscript.md) の例を使用してレコードをいくつか追加します。その後で、それらのレコードを削除してください。任意のクライアント ブラウザーで結果を確認します。
 

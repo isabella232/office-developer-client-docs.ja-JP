@@ -8,32 +8,32 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e8142d4fc4fc0036f80693f0bff779d9f3f2a62e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294100"
 ---
 # <a name="delete-method-ado-recordset"></a>Delete メソッド (ADO Recordset)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 カレント レコードまたはレコードのグループを削除します。
 
 ## <a name="syntax"></a>構文
 
-*レコード セット*です。*AffectRecords*を削除します。
+*recordset*。[影響]*レコード*を削除する
 
 ## <a name="parameters"></a>パラメーター
 
 |パラメーター|説明|
 |:--------|:----------|
-|*AffectRecords* |[Delete](affectenum.md) メソッドで操作するレコードの数を決める **AffectEnum** 値を指定します。既定値は **adAffectCurrent** です。|
+|*影響のあるレコード* |[Delete](affectenum.md) メソッドで操作するレコードの数を決める **AffectEnum** 値を指定します。既定値は **adAffectCurrent** です。|
 
 > [!NOTE]
 > [!メモ] **adAffectAll** と **adAffectAllChapters** は、 **Delete** では無効な引数です。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **Delete** メソッドを使用すると、 [Recordset](recordset-object-ado.md) オブジェクト内のカレント レコードまたはレコードのグループは削除の対象としてマークされます。レコードを削除できない **Recordset** オブジェクトの場合は、エラーが発生します。即時更新モードでは、削除は直ちにデータベースに反映されます。データベースの整合性違反などにより削除を実行できない場合、レコードは **Update** を呼び出した後も編集モードのままになります。そのため、 [Close](cancelupdate-method-ado.md)、[Move](close-method-ado.md)、[NextRecordset](move-method-ado.md) などによりカレント レコードから移動する前に、 [CancelUpdate](nextrecordset-method-ado.md) を使用して更新を取り消す必要があります。
 

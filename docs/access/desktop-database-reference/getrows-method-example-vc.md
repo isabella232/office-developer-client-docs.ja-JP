@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1b60d51d407ed25d189f325bf18a7b16b0563149
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292203"
 ---
 # <a name="getrows-method-example-vc"></a>GetRows メソッドの使用例 (VC++)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 この例では、[GetRows](getrows-method-ado.md) メソッドを使用して [Recordset](recordset-object-ado.md) から指定した数の行を取得し、結果データを配列に格納します。 **EOF** に達した場合、および他のユーザーに削除されたレコードを [GetRows](bof-eof-properties-ado.md) が取得しようとした場合、 **GetRows** メソッドが返す行数は指定より少なくなります。2 番目の場合のみ、 **False** が返されます。このプロシージャを実行するには、GetRowsOK 関数が必要です。
 

@@ -1,5 +1,5 @@
 ---
-title: データ シェイプ (デスクトップ データベース参照のアクセス)
+title: データシェイプ (Access デスクトップデータベースリファレンス)
 TOCTitle: Data shaping
 ms:assetid: 650571cc-6874-2cdb-dd76-0804d1cc4e38
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249390(v=office.15)
@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ad507ac8c963f1d6ead7bc3bf444e694d83f90e3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295038"
 ---
 # <a name="data-shaping"></a>データ シェイプ
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 データ シェイプにより、シェイプされた **Recordset** の列や、列によって表されるエンティティ間の関連付け、および **Recordset** にデータを入力するときの方法を定義できるようになります。
 
 シェイプされた **Recordset** の列には、Microsoft SQL Server などのデータ プロバイダーからのデータ、他の **Recordset** への参照、 **Recordset** の 1 つの行での計算から導き出される値、 **Recordset** 全体にわたる 1 つの列に対する操作から導き出される値などを含めることができます。また、新規に作成された空の列も含めることができます。
 
-別の**レコード セット**への参照が含まれる列の値を取得するとき、ADO は実際の**レコード セット**は参照によって表される自動的に返します。 別の**レコード セット**が含まれている**レコード セット**は、階層レコード セットと呼ばれます。 階層レコード セットの*親*を含んでいるし、*子*が含まれているレコード セットを*親と子*の関係が発生します。 *章*と呼ばれる子のサブセットへの参照を実際には、**レコード セット**への参照です。 1 つの親は、複数の子**レコード セット**を参照することができません。
+When you retrieve the value of a column that contains a reference to another **Recordset**, ADO automatically returns the actual **Recordset** represented by the reference. A **Recordset** that contains another **Recordset** is called a hierarchical recordset. 階層 recordset は*親と子*の関係を示しています。*親*は recordset に含まれており、*子*は包含された recordset です。 **Recordset**への参照は、実際には、 *chapter*と呼ばれる子のサブセットへの参照です。 A single parent may reference more than one child **Recordset**.
 
 Shape コマンド構文によって、シェイプされた **Recordset** をプログラムで作成できます。その後、プログラムから、または適切なビジュアル コントロールによって、 **Recordset** のコンポーネントにアクセスできます。シェイプ コマンドは、他の ADO コマンド テキストと同じように発行されます。
 
@@ -38,9 +38,9 @@ Shape コマンド構文を使用して、階層 **Recordset** オブジェク�
 
 シェイプ コマンドおよびその結果生成される階層の例については、「Using the Data Shaping Service for OLE DB: A Closer Look」 (英語) を参照してください。
 
-このセクションには、次のトピックが含まれています。
+このセクションでは、以下のトピックについて説明します。
 
 - [リシェイプ](reshaping.md)
 - [孫の集計](grandchild-aggregates.md)
 - [COMPUTE 句の挿入によってパラメーター化されたコマンド](parameterized-commands-with-intervening-compute-commands.md)
-- [階層レコード セットを永続化します。](persisting-hierarchical-recordsets.md)
+- [階層レコードセットの永続化](persisting-hierarchical-recordsets.md)

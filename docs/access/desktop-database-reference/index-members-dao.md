@@ -1,5 +1,5 @@
 ---
-title: インデックス メンバー (DAO)
+title: Index メンバー (DAO)
 TOCTitle: Index Members
 ms:assetid: e261c5fa-ca7d-0d63-1c29-48e9231b39d1
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835712(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 895f29a5dd3e7ed267b96d6a46dc2c8710b4998e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291797"
 ---
-# <a name="index-members-dao"></a>インデックス メンバー (DAO)
+# <a name="index-members-dao"></a>Index メンバー (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 Index オブジェクトは、データベース テーブルからアクセスされるレコードの順序、および重複するレコードを受け付けるかどうかを指定して、データに効率的にアクセスできるようにします。外部データベースの場合、Index オブジェクトは、外部キー側のテーブルに対して設定されたインデックスを記述します (Microsoft Access ワークスペースの場合のみ)。
 
@@ -47,7 +47,7 @@ Index オブジェクトは、データベース テーブルからアクセス�
 </table>
 
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>プロパティ
 
 <table>
 <colgroup>
@@ -71,11 +71,11 @@ Index オブジェクトは、データベース テーブルからアクセス�
 </tr>
 <tr class="odd">
 <td><p><strong><a href="index-fields-property-dao.md">Fields</a></strong></p></td>
-<td><p>指定したオブジェクトに格納されているすべての <strong>Field</strong> オブジェクトを表す <strong>Fields</strong> コレクションを取得します。値の取得および設定が可能です。</p></td>
+<td><p>指定されたオブジェクト用に保存されているすべての <strong>Field</strong> オブジェクトを表す <strong>Fields</strong> コレクションを取得します。 値の取得および設定が可能です。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="index-foreign-property-dao.md">Foreign</a></strong></p></td>
-<td><p><strong><a href="index-object-dao.md">Index</a></strong> オブジェクトがテーブルの外部キーを表すかどうかを示す値を取得します (Microsoft Access ワークスペースのみ)。</p></td>
+<td><p><strong><a href="index-object-dao.md">Index</a></strong>オブジェクトがテーブルの外部キーを表すかどうかを示す値を返します (Microsoft Access ワークスペースのみ)。 .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="index-ignorenulls-property-dao.md">IgnoreNulls</a></strong></p></td>
@@ -94,11 +94,11 @@ Index オブジェクトは、データベース テーブルからアクセス�
 <td><p>指定したオブジェクトの <strong><a href="properties-collection-dao.md">Properties</a></strong> コレクションを取得します。値の取得のみ可能です。  </p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="index-required-property-dao.md">必須</a></strong></p></td>
+<td><p><strong><a href="index-required-property-dao.md">Required</a></strong></p></td>
 <td><p><strong><a href="field-object-dao.md">Field</a></strong> オブジェクトに非 Null 値が必要かどうかを示す値を設定または取得します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="index-unique-property-dao.md">Unique</a></strong></p></td>
+<td><p><strong><a href="index-unique-property-dao.md">一意</a></strong></p></td>
 <td><p><strong><a href="index-object-dao.md">Index</a></strong> オブジェクトがテーブルの固有 (キー) インデックスを表すかどうかを示す値を設定または取得します (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 </tbody>

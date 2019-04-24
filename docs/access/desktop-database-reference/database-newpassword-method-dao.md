@@ -1,5 +1,5 @@
 ---
-title: Database.NewPassword メソッド (DAO)
+title: NewPassword メソッド (DAO)
 TOCTitle: NewPassword Method
 ms:assetid: 01c1c454-d651-222c-225a-2b02734a1b7a
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844754(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 20f09dbfba50526409472f7eb804ba2c47e4d1d5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294856"
 ---
-# <a name="databasenewpassword-method-dao"></a>Database.NewPassword メソッド (DAO)
+# <a name="databasenewpassword-method-dao"></a>NewPassword メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 既存の Microsoft Access データベース エンジンのデータベースのパスワードを変更します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。NewPassword (***bstrOld***、 ***bstrNew***)
+*式*。NewPassword (***bstrOld***、 ***bstrnew***)
 
-*式***データベース**オブジェクトを返すオブジェクト式を指定します。
+*式***Database**オブジェクトを返す式を指定します。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -58,17 +58,17 @@ ms.locfileid: "28708670"
 <td><p><em>bstrNew</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>String</strong></p></td>
-<td><p><strong>Database</strong>オブジェクトの<strong>Password</strong>プロパティの新しい設定します。</p>
-<p><strong>注</strong>: 大文字と小文字の英字、数字、および記号を組み合わせた強力なパスワードを使用します。 これらの文字を混在させたものになっていないパスワードは強固とはいえません。 たとえば、Y6dh!et5 は安全性の高いパスワードです。 House27 は推測されやすいパスワードです。 また、高い安全性を保ちながらも、書き留めておかなくても覚えておくことができるパスワードを使用してください。</p>
+<td><p><strong>Database</strong>オブジェクトの<strong>Password</strong>プロパティの新しい設定。</p>
+<p><strong>注</strong>: 大文字と小文字、数字、記号を組み合わせた強力なパスワードを使用します。 これらの文字を混在させたものになっていないパスワードは強固とはいえません。 たとえば、Y6dh!et5 は安全性の高いパスワードです。 House27 は推測されやすいパスワードです。 強力なパスワードでありながら、書き留めておかなくても覚えておくことができるパスワードを使用してください。</p>
 </td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-BstrOld および bstrNew の文字列は、長さは最大 20 文字し、ASCII 文字 0 (null) 以外の任意の文字を含めることができます。 パスワードをクリアするには、長さ 0 の文字列を使用します ("") bstrNew のです。
+bstrOld および bstrnew 文字列は最大20文字まで指定でき、ASCII 文字 0 (null) 以外の任意の文字を含めることができます。 パスワードをクリアするには、bstrnew に長さ0の文字列 ("") を使用します。
 
 パスワードでは、大文字と小文字が区別されます。
 

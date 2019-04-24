@@ -1,5 +1,5 @@
 ---
-title: Recordset2.Index プロパティ (DAO)
+title: Recordset2 プロパティ (DAO)
 TOCTitle: Index Property
 ms:assetid: 614bdf53-aca3-25ef-a23c-50095b345d20
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194872(v=office.15)
@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 05a29ff9dbe720fe7c5539639b20e0abdc3c587b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307302"
 ---
-# <a name="recordset2index-property-dao"></a>Recordset2.Index プロパティ (DAO)
+# <a name="recordset2index-property-dao"></a>Recordset2 プロパティ (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 テーブル タイプの **[Recordset](index-object-dao.md)** オブジェクト内にある現在の **[Index](recordset-object-dao.md)** オブジェクトの名前を示す値を設定または取得します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。インデックス
+*式*。順
 
-*式***Recordset2**オブジェクトを表す変数です。
+*式***Recordset2**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
@@ -32,22 +32,22 @@ ms.locfileid: "28716769"
 
 指定する **Index** オブジェクトは前もって定義しておく必要があります。存在していない **Index** オブジェクトに **Index** プロパティを設定するか、または [**Seek**](recordset2-seek-method-dao.md) メソッドを使用するときに **Index** プロパティが設定されていない場合、トラップ可能なエラーが発生します。
 
-**TableDef** オブジェクトの **Indexes** コレクションを調べ、 **TableDef** オブジェクトから作成されたテーブル タイプの **Recordset** オブジェクトに使用できる **Index** オブジェクトを特定します。
+**TableDef** オブジェクトの **Indexes** コレクションを調べて、その **TableDef** オブジェクトから作成された、テーブル タイプの **Recordset** オブジェクトに使用できる **Index** オブジェクトを識別します。
 
 テーブルの新しいインデックスを作成する場合は、新しい **Index** オブジェクトを作成し、そのプロパティを設定して、基になる **TableDef** オブジェクトの **Indexes** コレクションにそのオブジェクトを追加した後、再び **Recordset** オブジェクトを開きます。
 
-テーブル タイプの **Recordset** オブジェクトは、基になる **TableDef** オブジェクトにインデックスを定義した場合にのみ、レコードを必要な順序で取得できます。 別の順序でレコードを並べ替えるには、ORDER BY 句を持つ SQL ステートメントを使用して、ダイナセット タイプ、スナップショット タイプまたは前方のみタイプの**Recordset**オブジェクトを開くことができます。
+テーブル タイプの **Recordset** オブジェクトは、基になる **TableDef** オブジェクトにインデックスを定義した場合にのみ、レコードを必要な順序で取得できます。別の順序でレコードを並べ替えるには、SQL ステートメントで ORDER BY 句を使用して、ダイナセット タイプ、スナップショット タイプ、または前方スクロール タイプの **Recordset** オブジェクトを開きます。
 
 > [!NOTE]
 > - テーブルにインデックスを作成するのは必須ではありません。大きなテーブルではインデックスを持たないと、特定のレコードへのアクセスまたは **Recordset** オブジェクトの作成に長い時間がかかる場合があります。一方、インデックスを多く作成しすぎると、すべてのインデックスが自動的に更新されるため、更新、追加、および削除を実行する速度が低下します。
 > - インデックスを持たないテーブルから返されるレコードの順序は特定できません。
-> - [Index](field-attributes-property-dao.md) オブジェクト内にある各 [**Field**](field-object-dao.md) オブジェクトの ****Attributes**** プロパティによってレコードの順序が決まり、その結果、そのインデックスに対して使用するアクセス方法が決まります。
+> - **index**オブジェクト内の各**[Field](field-object-dao.md)** オブジェクトの**[Attributes](field-attributes-property-dao.md)** プロパティによってレコードの順序が決まり、その結果、そのインデックスに使用するアクセス方法が決まります。
 > - 一意のインデックスを使用すると、最適な方法でレコードを検索できます。
 > - インデックスは、ベース テーブルの物理的な順序には影響を与えません。特定のインデックスを選択するか、 **Recordset** オブジェクトを開く際の、テーブル タイプの **Recordset** オブジェクトによるレコードへのアクセス方法にのみ影響を与えます。
 
 ## <a name="example"></a>例
 
-この例では、 **Index** プロパティを使用して、テーブル タイプの **Recordset** オブジェクトにさまざまなレコード順序を設定します。
+この例では、**Index** プロパティを使用して、テーブル タイプの **Recordset** オブジェクトにさまざまなレコード順序を設定します。
 
 ```vb
     Sub IndexPropertyX() 
@@ -91,7 +91,7 @@ ms.locfileid: "28716769"
 
 <br/>
 
-この例では、 **Seek** メソッドを使用して、ユーザーが ID 番号に基づき製品を検索できるようにする方法を示します。
+次の例では、 **Seek** メソッドを使用して、ユーザーが ID 番号に基づいて製品を検索できるようにする方法を示しています。
 
 ```vb
     Sub SeekX() 

@@ -1,5 +1,5 @@
 ---
-title: Field2.DefaultValue プロパティ (DAO)
+title: Field2 プロパティ (DAO)
 TOCTitle: DefaultValue Property
 ms:assetid: 709c9580-520e-46ce-7d70-e409872184bb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195744(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 845a2e0c7ffa5d54d73c4fcec1a6c785468d734e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292833"
 ---
-# <a name="field2defaultvalue-property-dao"></a>Field2.DefaultValue プロパティ (DAO)
+# <a name="field2defaultvalue-property-dao"></a>Field2 プロパティ (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **Field2** オブジェクトの既定値を設定または取得します。 [**Fields**](fields-collection-dao.md) コレクションに追加されていない **Field2** オブジェクトの場合、このプロパティは値の取得および設定が可能です (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。既定値
+*式*。DefaultValue
 
-*式***Field2**オブジェクトを表す変数です。
+*式***Field2**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
@@ -53,15 +53,15 @@ ms.locfileid: "28717343"
 <tbody>
 <tr class="odd">
 <td><p>Index オブジェクト</p></td>
-<td><p>サポートしません。</p></td>
+<td><p>サポートされていません</p></td>
 </tr>
 <tr class="even">
 <td><p>QueryDef オブジェクト</p></td>
-<td><p>値の取得のみ可能です。</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="odd">
 <td><p>Recordset オブジェクト</p></td>
-<td><p>値の取得のみ可能です。</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="even">
 <td><p>Relation オブジェクト</p></td>
@@ -69,7 +69,7 @@ ms.locfileid: "28717343"
 </tr>
 <tr class="odd">
 <td><p>TableDef オブジェクト</p></td>
-<td><p>値の取得および設定が可能です。</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 </tbody>
 </table>

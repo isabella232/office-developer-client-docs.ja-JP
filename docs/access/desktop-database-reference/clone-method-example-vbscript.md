@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1fc3341f4ec662c17e2a7c274b1cc3af215c877c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296333"
 ---
 # <a name="clone-method-example-vbscript"></a>Clone メソッドの使用例 (VBScript)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 この例では、[Clone](clone-method-ado.md) メソッドを使用して [Recordset](recordset-object-ado.md) のコピーを作成し、ユーザーが各コピーのレコード ポインターを個別に配置できるようにします。
 
-次の例は、Active Server Pages (ASP) で使用してください。 この例では、Microsoft Access を含む、Northwind データベースを使用します。 切り取りメモ帳またはほかのテキスト エディターに次のコードを貼り付けして**CloneVBS.asp**として保存します。 任意のクライアント ブラウザーに結果を表示します。
+Use the following example in an Active Server Page (ASP). This example uses the Northwind database distributed with Microsoft Access. Cut and paste the following code to Notepad or another text editor and save it as **CloneVBS.asp**. You can view the result in any client browser.
 
-RsCustomerList.Source の行を変更する例を実行するには、「お客様」を RsCustomerList.Source = = 大きなテーブルをカウントするには、「製品」です。
+この例を実行するには、行 rscustomers リストを変更します。 source = "Products" は、より大きなテーブルをカウントします。
 
 ```vb 
  

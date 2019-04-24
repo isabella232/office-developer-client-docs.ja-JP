@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: caaf755ebd63f1805d0c77ef79a0f5863a85050e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300687"
 ---
 # <a name="recordopenoptionsenum"></a>RecordOpenOptionsEnum
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-[Record](record-object-ado.md) を開くときのオプションを表します。これらの値は OR 演算子で結合できます。
+[Record](record-object-ado.md) を開くときのオプションを表します。 これらの値は OR 演算子で結合できます。
 
 <table>
 <colgroup>
@@ -36,32 +36,32 @@ ms.locfileid: "28708766"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>adDelayFetchFields</strong></p></td>
+<td><p><strong>addelayfetchfields</strong></p></td>
 <td><p>0x8000</p></td>
 <td><p>プロバイダーに対して、<strong>Record</strong> に関連付けられたフィールドは、当初は取得する必要がなく、フィールドへの最初のアクセス時に取得できることを示します。このフラグが指定されていない場合の既定動作では、<strong>Record</strong> オブジェクトのすべてのフィールドが取得されます。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adDelayFetchStream</strong></p></td>
+<td><p><strong>addelayfetchstream</strong></p></td>
 <td><p>0x4000</p></td>
 <td><p>プロバイダーに対して、<strong>Record</strong> に関連付けられた既定ストリームを当初は取得する必要がないことを示します。このフラグが指定されていない場合の既定動作では、<strong>Record</strong> オブジェクトに関連付けられた既定ストリームが取得されます。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adOpenAsync</strong></p></td>
+<td><p><strong>adopenasync</strong></p></td>
 <td><p>0x1000</p></td>
 <td><p><strong>Record</strong> オブジェクトが非同期モードで開かれることを示します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adOpenExecuteCommand</strong></p></td>
-<td><p>0x10000</p></td>
+<td><p>「その他」</p></td>
 <td><p>Source 文字列に、実行されるコマンド テキストが含まれることを示します。この値は、<strong>Recordset.Open</strong> の <strong>adCmdText</strong> オプションと等価です。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adOpenRecordUnspecified</strong></p></td>
+<td><p><strong>adopenrecordunspecified</strong></p></td>
 <td><p>-1</p></td>
 <td><p>既定値。オプションが指定されていないことを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adOpenOutput</strong></p></td>
+<td><p><strong>adopenoutput</strong></p></td>
 <td><p>0x800000</p></td>
 <td><p>実行可能スクリプト (拡張子が .ASP のページなど) があるノードをソースが指定している場合、実行したスクリプトの結果が、開いている <strong>Record</strong> に含まれることを示します。この値は、コレクションのないレコードにのみ有効です。</p></td>
 </tr>
@@ -69,7 +69,7 @@ ms.locfileid: "28708766"
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC に相当
+### <a name="adowfc-equivalent"></a>ADO/WFC と同等
 
 これらの定数に ADO/WFC 等価はありません。
 

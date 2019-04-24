@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f077634abea6fadfe5c4305fc25b28e6d57bf13e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306238"
 ---
 # <a name="update-method-ado"></a>Update メソッド (ADO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-[Recordset](recordset-object-ado.md) オブジェクトのカレント行、または [Record](fields-collection-ado.md) オブジェクトの [Fields](record-object-ado.md) コレクションに加えた変更を保存します。
+[Recordset](recordset-object-ado.md) オブジェクトのカレント行、または [Record](record-object-ado.md) オブジェクトの [Fields](fields-collection-ado.md) コレクションに加えた変更を保存します。
 
 ## <a name="syntax"></a>構文
 
-*レコード セット*です。*フィールド*、*値*を更新します。
+*recordset*。*フィールド*、*値*を更新する
 
-*レコード*です。 *フィールド*です。更新
+*レコード*。 *フィールド*。更新
 
 ## <a name="parameters"></a>パラメーター
 
@@ -33,7 +33,7 @@ ms.locfileid: "28710637"
 |*Fields* |省略可能です。変更する単一のフィールドの名前を表すバリアント型 ( **Variant** ) の値、または複数のフィールドの名前か順序を表すバリアント型 ( **Variant** ) の配列を指定します。|
 |*Values* |省略可能です。新しいレコードでの単一のフィールドの値を表すバリアント型 ( **Variant** ) の値、または複数のフィールドの値を表すバリアント型 ( **Variant** ) の配列を指定します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 ### <a name="recordset"></a>Recordset
 
@@ -57,7 +57,7 @@ ms.locfileid: "28710637"
 
 ### <a name="record"></a>Record
 
-**Update** メソッドは、 [Record](fields-collection-ado.md) オブジェクトの **Fields** コレクションへのフィールドの追加、削除、および更新を完了させます。
+**Update** メソッドは、**Record** オブジェクトの [Fields](fields-collection-ado.md) コレクションへのフィールドの追加、削除、および更新を完了させます。
 
 たとえば、 **Delete** メソッドで削除されたフィールドは、直ちに削除のマークが付けられますが、コレクション内には残されます。これらのフィールドをプロバイダーのコレクションから実際に削除するには、 **Update** メソッドを呼び出す必要があります。
 

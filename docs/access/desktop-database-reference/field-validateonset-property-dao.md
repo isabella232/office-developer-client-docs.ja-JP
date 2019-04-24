@@ -1,5 +1,5 @@
 ---
-title: Field.ValidateOnSet プロパティ (DAO)
+title: validateonset property プロパティ (DAO)
 TOCTitle: ValidateOnSet Property
 ms:assetid: 00245a8a-a78f-b0a8-3eb3-11dd27873984
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844720(v=office.15)
@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 2d8fb358ab757d826bcfcd335aada8825e3ba980
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292959"
 ---
-# <a name="fieldvalidateonset-property-dao"></a>Field.ValidateOnSet プロパティ (DAO)
+# <a name="fieldvalidateonset-property-dao"></a>validateonset property プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 オブジェクトの **[Value](field-object-dao.md)** プロパティの設定時に、 **[Field](field-value-property-dao.md)** オブジェクトの値を直ちに検証するかどうかを指定する値を設定または取得します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。ValidateOnSet
+*式*。ValidateOnSet
 
-*式***Field**オブジェクトを表す変数です。
+*式***Field**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 

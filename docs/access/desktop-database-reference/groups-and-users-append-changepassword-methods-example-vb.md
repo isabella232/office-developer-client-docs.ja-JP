@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a1801dafe83ed2fc0752ef189c41e70318ef690f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292091"
 ---
 # <a name="groups-and-users-append-changepassword-methods-example-vb"></a>Groups と Users の Append メソッドおよび ChangePassword メソッドの使用例 (VB)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-この例では、新しい [Group](group-object-adox.md) および新しい [User](user-object-adox.md) をシステムに追加することによって、[Groups](groups-collection-adox.md) の [Append](append-method-adox-groups.md) メソッドと [Users](users-collection-adox.md) の [Append](append-method-adox-users.md) メソッドの機能を示します。新しい **Group** は、新しい **User** の ** Groups** コレクションに追加されます。したがって、新しい **User** が **Group** に追加されます。また、[ChangePassword](changepassword-method-adox.md) メソッドは、**User** のパスワードを指定するために使用されます。
+This example demonstrates the [Append](append-method-adox-groups.md) method of [Groups](groups-collection-adox.md), as well as the [Append](append-method-adox-users.md) method of [Users](users-collection-adox.md) by adding a new [Group](group-object-adox.md) and a new [User](user-object-adox.md) to the system. The new **Group** is appended to the **Groups** collection of the new **User**. Consequently, the new **User** is added to the **Group**. Also, the [ChangePassword](changepassword-method-adox.md) method is used to specify the **User** password.
 
 ```vb 
  

@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 5fef8dbec1d8861dd8c3421735baed2fcc7d4cde
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308821"
 ---
 # <a name="section-i-activex-data-objects"></a>セクション I: ActiveX データ オブジェクト
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 このセクションは以下の章で構成されています。
 
-- [第 1 章: ADO に関する基本事項](chapter-1-ado-fundamentals.md)
+- [第 1 章: ADO の基本事項](chapter-1-ado-fundamentals.md)
 - [第 2 章: データの取得](chapter-2-getting-data.md)
 - [第 3 章: データの検査](chapter-3-examining-data.md)
 - [第 4 章: データの編集](chapter-4-editing-data.md)

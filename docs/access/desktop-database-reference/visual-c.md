@@ -1,5 +1,5 @@
 ---
-title: Visual C++ (デスクトップ データベース参照のアクセス)
+title: Visual C++ (Access デスクトップデータベースリファレンス)
 TOCTitle: Visual C++
 ms:assetid: 31d27968-e7bd-02fa-efad-26039bea30b8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249091(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 082790c33840bfeacf0c1a6bd38af34c0617f4fe
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303403"
 ---
 # <a name="visual-c"></a>Visual C++
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-ここでは、Microsoft Visual C++ で ADO イベントをインスタンス化する方法の概略を示します。 詳細については、 [ADO イベント モデルの使用例 (vc++)](ado-events-model-example-vc.md)を参照してください。
+ここでは、Microsoft Visual C++ で ADO イベントをインスタンス化する方法の概略を示します。 詳細については、「 [ADO Events Model example (VC + +)](ado-events-model-example-vc.md) 」を参照してください。
 
 ファイル adoint.h で定義されている **ConnectionEventsVt** インターフェイスおよび **RecordsetEventsVt** インターフェイスから派生するクラスを作成します。
 
@@ -49,7 +49,7 @@ class CRstEvent : public RecordsetEventsVt
 // EndEventExampleVC01 
 ```
 
-両方のクラスに、各イベント ハンドラー メソッドを実装します。 各メソッドは単 S の HRESULT を返すことが十分では\_OK です。 しかし、イベント ハンドラーが使用できることを通知すると、既定ではそのイベント ハンドラーが継続的に呼び出されます。 これを無効にして、2 回目以降は通知しないよう要求するには、 **adStatus** を **adStatusUnwantedEvent** に設定します。
+両方のクラスに、各イベント ハンドラー メソッドを実装します。 各メソッドは、HRESULT の\_戻り値を返すだけで十分です。 しかし、イベント ハンドラーが使用できることを通知すると、既定ではそのイベント ハンドラーが継続的に呼び出されます。 これを無効にして、2 回目以降は通知しないよう要求するには、 **adStatus** を **adStatusUnwantedEvent** に設定します。
 
 ```cpp 
  

@@ -1,5 +1,5 @@
 ---
-title: Field2.AllowZeroLength プロパティ (DAO)
+title: AllowZeroLength プロパティ (DAO)
 TOCTitle: AllowZeroLength Property
 ms:assetid: d3795634-527f-b4c5-b606-50f9945cac12
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834791(v=office.15)
@@ -8,31 +8,31 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3125a5669ea8aa016d8554be0357572d56c08ecf
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292910"
 ---
-# <a name="field2allowzerolength-property-dao"></a>Field2.AllowZeroLength プロパティ (DAO)
+# <a name="field2allowzerolength-property-dao"></a>AllowZeroLength プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
-長さが 0 の文字列 ("") が、テキスト型またはメモ型の [Field2](field-value-property-dao.md) オブジェクトの ****Value**** プロパティの有効な設定値かどうかを示す値を設定または取得します (Microsoft Access ワークスペースのみ)。
+長さ0の文字列 ("") が、テキスト型またはメモ型の**Field2**オブジェクトの**[value](field-value-property-dao.md)** プロパティの有効な設定値かどうかを示す値を設定または取得します (Microsoft access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。AllowZeroLength
+*式*。AllowZeroLength
 
-*式***Field2**オブジェクトを表す変数です。
+*式***Field2**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
 **Fields** コレクションに追加されていないオブジェクトの場合、このプロパティは値の取得および設定が可能です。
 
-**Fields** コレクションに追加されると、 **AllowZeroLength** プロパティを使用できるかどうかは、次の表に示すように、 **Fields** コレクションを含むオブジェクトによって異なります。
+**Fields** コレクションに追加されると、**AllowZeroLength** プロパティを使用できるかどうかは、次の表に示すように、**Fields** コレクションを含むオブジェクトによって異なります。
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ ms.locfileid: "28721179"
 <tbody>
 <tr class="odd">
 <td><p><strong>Index</strong> オブジェクト</p></td>
-<td><p>サポートしません。</p></td>
+<td><p>サポートされない</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>QueryDef</strong> オブジェクト</p></td>
@@ -56,7 +56,7 @@ ms.locfileid: "28721179"
 </tr>
 <tr class="odd">
 <td><p><strong>Recordset</strong> オブジェクト</p></td>
-<td><p>読み取り専用</p></td>
+<td><p>値の取得のみ可能です。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Relation</strong> オブジェクト</p></td>

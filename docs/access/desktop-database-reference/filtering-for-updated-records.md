@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 791cbbd16eef7baf95fd51ab8624a04dc687166b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292399"
 ---
 # <a name="filtering-for-updated-records"></a>更新済みのレコードのフィルター処理
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-## <a name="filtering-for-updated-records"></a>更新済みのレコードのフィルター処理
+## <a name="filtering-for-updated-records"></a>更新されたレコードにフィルターを適用する
 
 **UpdateBatch** を呼び出す前に、 **Recordset** の **Filter** プロパティを使用して、 **Recordset** が開かれた後、または **UpdateBatch** が最後に呼び出された後に変更されたレコードだけを表示させることができます。これには、次に示すように、 **Filter** を **adFilterPendingRecords** に設定して、更新されるレコードの数を確認します。
 

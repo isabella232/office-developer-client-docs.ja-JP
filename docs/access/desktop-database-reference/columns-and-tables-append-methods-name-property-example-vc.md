@@ -1,5 +1,5 @@
 ---
-title: 列とテーブルの追加方法、名前プロパティの使用例 (vc++)
+title: 列とテーブルの Append メソッドと Name プロパティの使用例 (VC + +)
 TOCTitle: Columns and Tables Append Methods, Name property example (VC++)
 ms:assetid: 6586aaed-2556-1d33-c1ab-135a598f7d13
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249392(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0fa9f903317e337b06afb4c2d0fdc1c3085df50d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296221"
 ---
-# <a name="columns-and-tables-append-methods-name-property-example-vc"></a>列とテーブルの追加方法、名前プロパティの使用例 (vc++)
+# <a name="columns-and-tables-append-methods-name-property-example-vc"></a>列とテーブルの Append メソッドと Name プロパティの使用例 (VC + +)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 次のコードでは、新しいテーブルの作成方法を示します。
 

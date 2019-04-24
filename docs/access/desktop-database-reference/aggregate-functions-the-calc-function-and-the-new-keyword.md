@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 25f52489430465235a928fff3c38469ec6ba83ad
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297194"
 ---
 # <a name="aggregate-functions-the-calc-function-and-the-new-keyword"></a>集計関数、CALC 関数、NEW キーワード
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-データ シェイプと、次の関数がサポートされています。 *チャプター エイリアス*は、操作することで、列を含むチャプターに割り当てられた名前です。
+データ シェイプ機能では、次の関数がサポートされています。 演算の対象となる列を含むチャプターに付けられる名前は、"チャプター エイリアス" です。
 
-チャプター エイリアスは、完全修飾名、*列名、* すべてピリオドで区切られたを含むチャプターにつながるので構成されている可能性があります。 など chap1、親章には、子の章では、chap2 が含まれている場合、amt、チャプター列を持つし、修飾名は chap1.chap2.amt になります。
+チャプター エイリアスは、完全修飾名で表すことができます。これには、対象となる列名を含むチャプターに至るまでの各チャプター列の名前を、ピリオドで区切って表記します。たとえば、親チャプター chap1 に子チャプター chap2 が含まれており、chap2 に集計列 amt が含まれている場合、完全修飾名は chap1.chap2.amt となります。
 
 <table>
 <colgroup>
@@ -36,33 +36,32 @@ ms.locfileid: "28718050"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>合計 (<em>チャプター エイリアス</em>です<em>。列名</em>)</p></td>
+<td><p>SUM (<em>チャプターエイリアス)</em><em>列名</em>)</p></td>
 <td><p>指定された列に含まれるすべての値の合計を計算します。</p></td>
 </tr>
 <tr class="even">
-<td><p>AVG (<em>チャプター エイリアス</em>です<em>。列名</em>)</p></td>
+<td><p>AVG (<em>チャプター-エイリアス)</em><em>列名</em>)</p></td>
 <td><p>指定された列に含まれるすべての値の平均値を計算します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>MAX (<em>チャプター エイリアス</em>です<em>。列名</em>)</p></td>
+<td><p>MAX (<em>チャプターエイリアス)</em><em>列名</em>)</p></td>
 <td><p>指定された列内の最大値を計算します。</p></td>
 </tr>
 <tr class="even">
-<td><p>MIN (<em>チャプター エイリアス</em>です<em>。列名</em>)</p></td>
+<td><p>MIN (<em>チャプターエイリアス)</em><em>列名</em>)</p></td>
 <td><p>指定された列内の最小値を計算します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>カウント (<em>チャプター エイリアス</em>[.<em>列名</em>])</p></td>
+<td><p>COUNT (<em>chapter-alias</em>[.<em>列名</em>])</p></td>
 <td><p>指定されたエイリアス内の行数をカウントします。列が指定されている場合は、その列が null でない行のみがカウント対象となります。</p></td>
 </tr>
 <tr class="even">
-<td><p>STDEV (<em>チャプター エイリアス</em>です<em>。列名</em>)</p></td>
+<td><p>STDEV (<em>チャプターエイリアス)</em><em>列名</em>)</p></td>
 <td><p>指定された列内の標準偏差を計算します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>任意 (<em>チャプター エイリアス</em>です<em>。列名</em>)</p></td>
-<td><p>指定された列の値です。ANY の値を予測できるのは、その列の値がチャプター内の全行について同じである場合のみです。
-</p><p><strong>注</strong>: 列に、章内の行のすべてに同じ値が含まれていない場合 SHAPE コマンド任意に返す任意の関数の値を指定する値の 1 つです。</p></td>
+<td><p>任意 (<em>チャプター-エイリアス)</em><em>列名</em>)</p></td>
+<td><p>指定された列の値です。 ANY の値を予測できるのは、その列の値がチャプター内の全行について同じである場合のみです。</p><p><strong>注</strong>: 列に、チャプター内のすべての行について同じ値が含まれていない場合、SHAPE コマンドは、ANY 関数の値となる値の1つを任意に返します。</p></td>
 </tr>
 </tbody>
 </table>
@@ -82,7 +81,7 @@ ms.locfileid: "28718050"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>計算式 (<em>式</em>)</p></td>
+<td><p>CALC (<em>式</em>)</p></td>
 <td><p>任意の式を計算しますが、CALC 関数を含む <strong>Recordset</strong> の行のみが対象となります。「<a href="visual-basic-for-applications-functions.md">Visual Basic for Applications の関数</a>」に記載されている関数を使用した任意の式を計算できます。</p></td>
 </tr>
 </tbody>
@@ -103,7 +102,7 @@ ms.locfileid: "28718050"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>新しい<em>フィールドの種類</em>[(<em>幅</em> | <em>スケール</em> | <em>精度</em> | <em>エラー</em> [、<em>スケール</em> | <em>エラー</em>])]</p></td>
+<td><p>新しい<em>フィールドの種類</em>[(<em>width</em> | <em>scale</em> | <em>precision</em> | <em>error</em> [, <em>scale</em> | <em>error</em>])]</p></td>
 <td><p>指定された型の空の列を <strong>Recordset</strong> に追加します。</p></td>
 </tr>
 </tbody>
@@ -111,7 +110,7 @@ ms.locfileid: "28718050"
 
 <br/>
 
-NEW キーワードと共に渡す*フィールドの型*には、次のデータ型のいずれかを指定できます。
+NEW キーワードと共に渡すフィールドの型には、次のデータ型のうちいずれかを指定できます。
 
 <table>
 <colgroup>
@@ -127,11 +126,11 @@ NEW キーワードと共に渡す*フィールドの型*には、次のデー�
 <tbody>
 <tr class="odd">
 <td><p>DBTYPE_BSTR</p></td>
-<td><p>adBSTR</p></td>
+<td><p>adbstr</p></td>
 </tr>
 <tr class="even">
 <td><p>DBTYPE_BOOL</p></td>
-<td><p>adBoolean</p></td>
+<td><p>adboolean</p></td>
 </tr>
 <tr class="odd">
 <td><p>DBTYPE_DECIMAL</p></td>
@@ -139,43 +138,43 @@ NEW キーワードと共に渡す*フィールドの型*には、次のデー�
 </tr>
 <tr class="even">
 <td><p>DBTYPE_UI1</p></td>
-<td><p>adUnsignedTinyInt</p></td>
+<td><p>adアン signedtinyint</p></td>
 </tr>
 <tr class="odd">
 <td><p>DBTYPE_I1</p></td>
-<td><p>adTinyInt</p></td>
+<td><p>adtinyint</p></td>
 </tr>
 <tr class="even">
 <td><p>DBTYPE_UI2</p></td>
-<td><p>adUnsignedSmallInt</p></td>
+<td><p>adアン signedsmallint</p></td>
 </tr>
 <tr class="odd">
 <td><p>DBTYPE_UI4</p></td>
-<td><p>adUnsignedInt</p></td>
+<td><p>adアン signedint</p></td>
 </tr>
 <tr class="even">
 <td><p>DBTYPE_I8</p></td>
-<td><p>adBigInt</p></td>
+<td><p>adbigint</p></td>
 </tr>
 <tr class="odd">
 <td><p>DBTYPE_UI8</p></td>
-<td><p>adUnsignedBigInt</p></td>
+<td><p>adアン signedbigint</p></td>
 </tr>
 <tr class="even">
 <td><p>DBTYPE_GUID</p></td>
-<td><p>adGuid</p></td>
+<td><p>adguid</p></td>
 </tr>
 <tr class="odd">
 <td><p>DBTYPE_BYTES</p></td>
-<td><p>adBinary、ない、adLongVarBinary</p></td>
+<td><p>adbinary、い、adlongvarbinary</p></td>
 </tr>
 <tr class="even">
-<td><p>が</p></td>
-<td><p>ファミリ、それぞれ、adLongVarChar</p></td>
+<td><p>DBTYPE_STR</p></td>
+<td><p>adchar、adVarChar、adlongvarchar</p></td>
 </tr>
 <tr class="odd">
 <td><p>DBTYPE_WSTR</p></td>
-<td><p>adWChar、adVarWChar、adLongVarWChar</p></td>
+<td><p>adwchar、adVarWChar、adlongvarwchar</p></td>
 </tr>
 <tr class="even">
 <td><p>DBTYPE_NUMERIC</p></td>
@@ -183,15 +182,15 @@ NEW キーワードと共に渡す*フィールドの型*には、次のデー�
 </tr>
 <tr class="odd">
 <td><p>DBTYPE_DBDATE</p></td>
-<td><p>adDBDate</p></td>
+<td><p>addbdate</p></td>
 </tr>
 <tr class="even">
 <td><p>DBTYPE_DBTIME</p></td>
-<td><p>adDBTime</p></td>
+<td><p>addbtime</p></td>
 </tr>
 <tr class="odd">
 <td><p>DBTYPE_DBTIMESTAMP</p></td>
-<td><p>adDBTimeStamp</p></td>
+<td><p>addbtimestamp</p></td>
 </tr>
 <tr class="even">
 <td><p>DBTYPE_VARNUMERIC</p></td>
@@ -199,15 +198,15 @@ NEW キーワードと共に渡す*フィールドの型*には、次のデー�
 </tr>
 <tr class="odd">
 <td><p>DBTYPE_FILETIME</p></td>
-<td><p>adFileTime</p></td>
+<td><p>adfiletime</p></td>
 </tr>
 <tr class="even">
 <td><p>DBTYPE_ERROR</p></td>
-<td><p>adError</p></td>
+<td><p>aderror</p></td>
 </tr>
 </tbody>
 </table>
 
 
-新しいフィールドがあるとき decimal 型 (OLE db では、DBTYPE\_10 進数、または ADO では、adDecimal)、有効桁数と小数点部桁数の値を指定する必要があります。
+新しいフィールドの型が decimal (OLE DB、DBTYPE\_decimal、または ADO, adDecimal) の場合、精度とスケールの値を指定する必要があります。
 

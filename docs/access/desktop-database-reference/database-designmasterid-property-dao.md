@@ -1,5 +1,5 @@
 ---
-title: Database.DesignMasterID プロパティ (DAO)
+title: Database. designmasterid プロパティ (DAO)
 TOCTitle: DesignMasterID Property
 ms:assetid: c0545561-d44f-5479-8ae0-e3955db91761
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822824(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: a189d16880fccdc34c169aee61c6781e1d86afa8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294933"
 ---
-# <a name="databasedesignmasterid-property-dao"></a>Database.DesignMasterID プロパティ (DAO)
+# <a name="databasedesignmasterid-property-dao"></a>Database. designmasterid プロパティ (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 レプリカ セットでデザイン マスターを一意に識別する 16 バイトの値を設定または取得します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。DesignMasterID
+*式*。DesignMasterID
 
-*式***データベース**オブジェクトを表す変数です。
+*式***Database**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 

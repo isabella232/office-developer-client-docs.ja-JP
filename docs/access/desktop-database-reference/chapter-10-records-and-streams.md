@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1a47ac1f850905546651ffbdd708887bf7d74940
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296494"
 ---
 # <a name="chapter-10-records-and-streams"></a>第 10 章: レコードとストリーム
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ADO には現在、リレーショナル データベースなどのデータ ソース内の情報にアクセスするための主な手段として、[Recordset](recordset-object-ado.md) オブジェクトがあります。ただし、プロバイダーによっては、プロバイダーからのデータを操作できる代替または補足オブジェクトとして、 [Record](record-object-ado.md) オブジェクトおよび [Stream](stream-object-ado.md) オブジェクトがサポートされています。 **Record** 動作の特性については、使用しているプロバイダーのマニュアルを参照してください。
 
@@ -24,9 +24,9 @@ ADO には現在、リレーショナル データベースなどのデータ �
 
 **Record** オブジェクトは、**Recordset** の 1 つの行として主に使用されます。ただし、**Records** は、**Recordsets** に比べ機能的に制限され、プロパティやメソッドも異なります。**Record** オブジェクトのデータのソースは、プロバイダーから 1 行のデータを返すコマンドにすることができます。そのため、1 行のデータを返すクエリから結果を取り出す場合は、**Recordset** オブジェクトではなく **Record** オブジェクトを使用すると、より複雑な **Recordset** オブジェクトのインスタンス作成という負荷を排除することができます。
 
-特に、従来のリレーショナル データベースではないデータ ソースのプロバイダー (**Microsoft OLE DB Provider for Internet Publishing**) を使用することで、 [Record](microsoft-ole-db-provider-for-internet-publishing.md) オブジェクトを他の目的に使用することもできます。処理する必要のある情報の多くは、データベース内のテーブルとしてではなく、電子メール システム内のメッセージおよび最新のファイル システム内のファイルとして存在していることがあります。このような場合、 **Record** オブジェクトと **Stream** オブジェクトを使用すると、リレーショナル データベース以外のソースに格納された情報に容易にアクセスできるようになります。
+特に、従来のリレーショナル データベースではないデータ ソースのプロバイダー ([Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md)) を使用することで、**Record** オブジェクトを他の目的に使用することもできます。処理する必要のある情報の多くは、データベース内のテーブルとしてではなく、電子メール システム内のメッセージおよび最新のファイル システム内のファイルとして存在していることがあります。このような場合、**Record** オブジェクトと **Stream** オブジェクトを使用すると、リレーショナル データベース以外のソースに格納された情報に容易にアクセスできるようになります。
 
-**Record**オブジェクトでは、表現でき、ファイル ・ システムまたはフォルダーとメッセージの電子メール システムのディレクトリおよびファイルなどのデータを管理することができます。 このような目的の場合、 **Record** のソースは、開かれた **Connection** オブジェクトと連動する、開かれた [Recordset](connection-object-ado.md) のカレント行または絶対 URL や相対 URL にすることができます。
+**Record**オブジェクトは、ファイルシステム内のディレクトリやファイル、電子メールシステムのフォルダーやメッセージなどのデータを表すことができます。 このような目的の場合、 **Record** のソースは、開かれた **Connection** オブジェクトと連動する、開かれた [Recordset](connection-object-ado.md) のカレント行または絶対 URL や相対 URL にすることができます。
 
 通常、 **Recordset** は、フォルダーやディレクトリなどの階層内のコンテナーや親を表すときに使用されます。 **Record** は、ファイルやドキュメントなど、親コンテナーの 1 つのノードについて特定の情報を返すときに使用されます。このような種類の情報を表すときに **Records** が使用される主な理由は、これらのデータ ソースが異なった要素を持つためです。これは、各 **Record** のフィールドのセットおよび数が、それぞれ異なっていることを意味します。データベースからの行を含む従来の **Recordsets** の要素は同種、つまり、各行のフィールドの数およびタイプは同じです。
 
@@ -57,4 +57,4 @@ ADO には現在、リレーショナル データベースなどのデータ �
 - [セッションと永続化](streams-and-persistence.md)
 - [レコードとプロバイダー供給のフィールド](records-and-provider-supplied-fields.md)
 - [絶対 URL と相対 URL](absolute-and-relative-urls.md)
-- [ADO を使用してインターネット パブリッシング (ADO) を](using-ado-for-internet-publishing.md)
+- [インターネット発行に ado を使用する (ado)](using-ado-for-internet-publishing.md)

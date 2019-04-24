@@ -1,5 +1,5 @@
 ---
-title: TableDef.Attributes プロパティ (DAO)
+title: TableDef プロパティ (DAO)
 TOCTitle: Attributes Property
 ms:assetid: d01588c3-e94e-06bd-6568-974873411f2d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834701(v=office.15)
@@ -8,25 +8,25 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: abdb0d07f2293a53fccaf0d628c301750027acc6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314393"
 ---
-# <a name="tabledefattributes-property-dao"></a>TableDef.Attributes プロパティ (DAO)
+# <a name="tabledefattributes-property-dao"></a>TableDef プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
-**TableDef** オブジェクトの 1 つまたは複数の属性を示す値を設定または取得します。値の取得および設定が可能です。長整数型 ( **Long** ) の値を使用します。
+**TableDef** オブジェクトの 1 つまたは複数の属性を示す値を設定または取得します。値の取得および設定が可能です。長整数型 (**Long**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。属性
+*式*。Attributes
 
-*式***テーブル定義**オブジェクトを表す変数です。
+*式***TableDef**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
@@ -34,7 +34,7 @@ ms.locfileid: "28716160"
 
 ## <a name="example"></a>例
 
-次の例では、Northwind データベースの **Field**、 **Relation**、および **TableDef** の各オブジェクトの **Attributes** プロパティを表示します。
+この例では、ノースウィンド データベースの **Field**、**Relation**、および **TableDef** の各オブジェクトの **Attributes** プロパティを表示します。
 
 ```vb 
 Sub AttributesX() 

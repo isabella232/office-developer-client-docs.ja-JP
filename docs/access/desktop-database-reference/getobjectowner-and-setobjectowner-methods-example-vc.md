@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b1227d60555dcb8da919e75bfa773fd64103a956
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292280"
 ---
 # <a name="getobjectowner-and-setobjectowner-methods-example-vc"></a>GetObjectOwner メソッドと SetObjectOwner メソッドの使用例 (VC++)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-この例では、[GetObjectOwner](getobjectowner-method-adox.md) メソッドと [SetObjectOwner](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox) メソッドの機能を示します。 このコード グループの存在を前提としています (の[グループおよびユーザーの追加、パスワードの変更方法の例 (vc++)](groups-and-users-append-changepassword-methods-example-vc.md)このグループをシステムに追加する方法についてを参照してください) の会計です。 Categories テーブルの所有者は Accounting に設定されます。
+この例では、[GetObjectOwner](getobjectowner-method-adox.md) メソッドと [SetObjectOwner](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox) メソッドの機能を示します。 このコードでは、グループアカウンティングが存在することを前提としています (このグループをシステムに追加する方法については、 [Groups と Users の Append メソッドおよび ChangePassword メソッドの使用例 (VC + +)](groups-and-users-append-changepassword-methods-example-vc.md)を参照してください)。 Categories テーブルの所有者は Accounting に設定されます。
 
 ```cpp 
  

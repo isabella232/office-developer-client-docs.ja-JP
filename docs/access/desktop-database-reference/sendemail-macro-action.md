@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c0fa220b3088cde46b0e82631c06520afd839c64
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314652"
 ---
 # <a name="sendemail-macro-action"></a>SendEmail マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**SendEmail**アクションは、電子メール メッセージを送信します。
+**SendEmail**アクションは、電子メールメッセージを送信します。
 
 > [!NOTE]
-> [!メモ] **SendEmail** アクションは、データ マクロでのみ使用できます。
+> **SendEmail** アクションは、データ マクロでのみ使用できます。
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
 **SendEmail** アクションの引数は次のとおりです。
 
@@ -44,17 +44,17 @@ ms.locfileid: "28701670"
 <tr class="odd">
 <td><p><strong>To/宛先</strong></p></td>
 <td><p>はい</p></td>
-<td><p>[メッセージの [<strong>宛先</strong>] 行を追加する名前を持つメッセージの受信者です。セミコロン (;) でこの引数に (および、 <em>Cc</em>と<em>Bcc</em>の引数) を指定した受信者の名前を区切ります。</p></td>
+<td><p>メッセージで [<strong>宛先</strong>] 行に含めるメッセージ受信者名。この引数 (および <em>Cc</em> 引数と <em>Bcc</em> 引数) で複数の受信者名を指定する場合は、セミコロン (;) で区切ります。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Cc/CC</strong></p></td>
 <td><p>いいえ</p></td>
-<td><p>メッセージの受信者、[cc] に入力する名前 (&quot;カーボン コピー&quot;)、メッセージ内の行です。</p></td>
+<td><p>メッセージの Cc (&quot;カーボンコピー&quot;) 行に配置するメッセージの受信者名。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Bcc/BCC</strong></p></td>
 <td><p>いいえ</p></td>
-<td><p>メッセージの宛先、Bcc に入力する名前 (&quot;ブラインド カーボン コピー&quot;)、メッセージ内の行です。</p></td>
+<td><p>メッセージの Bcc (&quot;ブラインドカーボンコピー&quot;) 行に配置するメッセージの受信者名を指定します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Subject/件名</strong></p></td>
@@ -70,7 +70,7 @@ ms.locfileid: "28701670"
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **SendEmail** アクションは、 **[After Delete](after-delete-macro-event.md)** マクロ イベント、 **[After Insert](after-insert-macro-event.md)** マクロ イベント、および **[After Update](after-update-macro-event.md)** マクロ イベントでのみ使用できます。
 

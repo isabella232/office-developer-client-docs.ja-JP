@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 88c8b7ff347235bbdc29745e9f5383933d3d1dda
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292763"
 ---
 # <a name="field2-object-dao"></a>Field2 オブジェクト (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **Field2** オブジェクトは、共通のデータ型およびプロパティの共通セットを持つ、データの列を表します。
 
@@ -36,11 +36,11 @@ ms.locfileid: "28713143"
 
 コレクション内で **Field2** オブジェクトをそのインデックスまたはその **Name** プロパティの設定値によって参照するには、次のいずれかの構文形式を使用します。
 
-**Fields**(0)
+**Fields**.0
 
-**フィールド**("name")
+**Fields**("name")
 
-**フィールド**\!\[名\]
+****\!フィールド\[名\]
 
 ユーザーが作成して **Fields** コレクションに追加する **Field2** オブジェクトの **Value** プロパティを、同じ構文を使用して参照することもできます。フィールド参照のコンテキストにより、 **Field2** オブジェクトと **Field** オブジェクトの **Value** プロパティのいずれを参照するかが決まります。
 
@@ -48,7 +48,7 @@ ms.locfileid: "28713143"
 
 次の例は、複数値フィールドが含まれる Recordset 内を移動する方法を示します。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     Sub PrintStudentsAndClasses()

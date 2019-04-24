@@ -1,5 +1,5 @@
 ---
-title: StringFormatEnum (デスクトップ データベース参照のアクセス)
+title: stringformatenum (Access デスクトップデータベースリファレンス)
 TOCTitle: StringFormatEnum
 ms:assetid: ab069d67-d983-f390-5d45-876a9f9d9691
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249794(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 89eb3e9c972b19bc9908f29ce5ec5e42c8974d54
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314463"
 ---
 # <a name="stringformatenum"></a>StringFormatEnum
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 文字列として [Recordset](recordset-object-ado.md) を取得するときの形式を表します。
 
@@ -37,15 +37,15 @@ ms.locfileid: "28712275"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>adClipString</strong></p></td>
-<td><p>2</p></td>
+<td><p><strong>でき</strong></p></td>
+<td><p>pbm-2</p></td>
 <td><p>行が <em>RowDelimiter</em> によって、列が <em>ColumnDelimiter</em> によって、null 値が <em>NullExpr</em> によって区切られます。<a href="getstring-method-ado.md">GetString</a> メソッドのこれらの 3 つのパラメーターは、<strong>adClipString</strong> の <em>StringFormat</em> とのみ併用できます。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC に相当
+### <a name="adowfc-equivalent"></a>ADO/WFC と同等
 
 パッケージ: **com.ms.wfc.data**
 
@@ -60,7 +60,7 @@ ms.locfileid: "28712275"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.StringFormat.CLIPSTRING</p></td>
+<td><p>AdoEnums の StringFormat 文字列</p></td>
 </tr>
 </tbody>
 </table>

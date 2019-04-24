@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: c5972ad630efe3afe27565924c7c6a8a2230a9f2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314575"
 ---
 # <a name="setproperty-macro-action"></a>SetProperty マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**SetProperty**アクションを使用すると、フォームまたはレポート上のコントロールのプロパティを設定します。
+You can use the **SetProperty** action to set a property for a control on a form or a report.
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**SetProperty**アクションには、次の引数があります。
+"SetProperty/プロパティの設定" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -42,35 +42,35 @@ ms.locfileid: "28703218"
 <tbody>
 <tr class="odd">
 <td><p>コントロール名</p></td>
-<td><p>フィールドまたはプロパティの値を設定するコントロールの名前を入力します。 コントロール名だけをしない完全な構文を使用します。 カレント フォームまたはカレント レポートのプロパティを設定する場合は、この引数を指定しないでください。</p></td>
+<td><p>プロパティ値を設定する対象のフィールドまたはコントロールの名前を入力します。 完全な構文ではなく、コントロール名のみを指定してください。 カレント フォームまたはカレント レポートのプロパティを設定する場合は、この引数を指定しないでください。</p></td>
 </tr>
 <tr class="even">
 <td><p>プロパティ</p></td>
-<td><p>設定するプロパティを選択します。 このアクションを使用して設定できるプロパティの一覧については、この資料の<strong>「解説」</strong>セクションを参照してください。</p></td>
+<td><p>設定するプロパティを選択します。このアクションを使用して設定できるプロパティの一覧については、この記事の「解説」セクションを参照してください。</p></td>
 </tr>
 <tr class="odd">
 <td><p>値</p></td>
-<td><p>プロパティを設定する値を入力します。 プロパティの値を持つか、[はい] またはいいえ、 <strong>-1</strong>を使用して、[はい] を [いいえ] は<strong>0</strong></p></td>
+<td><p>プロパティに対して設定する値を入力します。値が [はい] または [いいえ] のどちらかになるプロパティでは、[はい] の場合は「-1」、[いいえ] の場合は「0」を入力します。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-- **SetProperty**操作を使用するには、コントロールの次のプロパティを設定するのには:**有効になっている**、**表示**、**ロックされている**、**左**、**上**、**幅**、**高さ****前景の色**、**背景色**、または**キャプション**です。
+- "SetProperty/プロパティの設定" アクションを使用すると、コントロールの "Enabled/使用可能"、"Visible/可視"、"Locked/ロック"、"Left/左"、"Top/上"、"Width/幅"、"Height/高さ"、"Fore Color/前景色"、"Back Color/背景色"、または "Caption/標題" の各プロパティを設定できます。
 
-- 引数の***値***に無効な値を入力すると、エラーは発生しませんが、アクセスは、引数を解釈する方法によって、別の値にプロパティを変更する場合があります。
+- " ***value/値***" 引数に無効な値を入力すると、エラーは発生しませんが、引数がどのように解釈されるかに応じて、プロパティは別の値に変更される可能性があります。
 
-- フォームまたはレポートのプロパティを設定する対象のコントロールを含むを選択するアクションを実行した後にする場合にのみ、独立マクロ**SetProperty**操作を使用できます。 フォームまたはレポートが開いていない場合は、] を選択して、 **OpenForm**または**OpenReport**アクションを使用することができます。 フォームまたはレポートが既に開いている場合をオンに**します**を使用することができます。 プロパティを設定するのには、 **SetProperty**操作を使用できます。 オブジェクトを選択することは、プロパティを設定する対象のコントロールと同じフォームまたはレポート上のコントロールに埋め込まれているマクロで**SetProperty**操作を使用する場合に必要ではありません。
+- You can use the **SetProperty** action in a stand-alone macro only if you precede it with an action that selects the form or report containing the control for which you are setting the property. If the form or report is not open, you can use the **OpenForm** or **OpenReport** action to open and select it. If the form or report is already open, you can use the **SelectObject** action to select it. You can then use the **SetProperty** action to set the property. Selecting the object is not necessary if you use the **SetProperty** action in a macro which is embedded in a control on the same form or report as the control for which you are setting the property.
 
-- VBA モジュールでは、 **SetProperty**アクションを実行するには、 **DoCmd**オブジェクトの**SetProperty**メソッドを使用します。
+- To run the **SetProperty** action in a VBA module, use the **SetProperty** method of the **DoCmd** object.
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
-**MyTextBox** ] テキスト ボックスの表示/非表示を切り替えるには、SetProperty 操作を使用する例を次に示します。
+次の例は、"SetProperty/プロパティの設定" アクションを使用して、 **MyTextBox**テキストボックスの表示/非表示を切り替える方法を示しています。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     Submacro: TestVisible

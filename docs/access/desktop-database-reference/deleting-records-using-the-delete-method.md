@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a476e9bc57224b0e46afb31bf092450c26de0a17
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293967"
 ---
 # <a name="deleting-records-using-the-delete-method"></a>Delete メソッドによるレコードの削除
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **Delete** メソッドを使用すると、 **Recordset** オブジェクト内の現在のレコード、またはレコードのグループが削除されるよう設定されます。 **Recordset** オブジェクトでレコードの削除が認められていない場合は、エラーが発生します。イミディエイト更新モードを使用している場合、削除操作はデータベース内で直ちに実行されます。データベースの整合性違反などによってレコードの削除が正常に実行できない場合、レコードは **Update** が呼び出された後も編集モードのまま変化しません。このため、 [Close](cancelupdate-method-ado.md)、[Move](close-method-ado.md)、[NextRecordset](move-method-ado.md) などを使用して現在のレコードから移動する前に、 [CancelUpdate](nextrecordset-method-ado.md) を使用して更新を取り消す必要があります。
 
@@ -33,9 +33,9 @@ ms.locfileid: "28699066"
 
 **Delete** メソッドは、 **Delete** 操作の対象となるレコードを指定できるオプションの引数を受け取ります。この引数に指定できる値は、次の ADO **AffectEnum** 列挙定数のうちどちらかのみです。
 
-  - **adAffectCurrent**現在のレコードのみに影響します。
+  - **現在の範囲内の adて**いる現在のレコードにのみ影響します。
 
-  - **adAffectGroup**現在の**Filter**プロパティの設定を満たすレコードのみに影響します。 このオプションを使用するには、 **Filter** プロパティが、 **FilterGroupEnum** 値、または **Bookmarks** の配列に設定されている必要があります。
+  - adています。**グループ**現在の**Filter**プロパティの設定を満たすレコードのみに影響します。 このオプションを使用するには、 **Filter** プロパティが、 **FilterGroupEnum** 値、または **Bookmarks** の配列に設定されている必要があります。
 
 次のコードでは、 **Delete** メソッドを呼び出すときに **adAffectGroup** を指定する例を示します。この例では、いくつかのレコードをサンプルの **Recordset** に追加し、データベースを更新します。次に、フィルター列挙定数である **adFilterAffectedRecords** 使用して **Recordset** をフィルター処理し、新しく追加されたレコードのみ **Recordset** 内に表示されるようにします。最後に、 **Delete** メソッドを呼び出し、現在の **Filter** プロパティの設定を満たすすべてのレコード (新しいレコード) を削除するよう指定します。
 

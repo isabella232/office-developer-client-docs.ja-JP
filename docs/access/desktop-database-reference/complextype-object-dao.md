@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a71ff3c12ede9170b8e7f53d473156edb0697ccc
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296039"
 ---
 # <a name="complextype-object-dao"></a>ComplexType オブジェクト (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 複数値を持つフィールドを表します。
 
 ## <a name="version-information"></a>バージョン情報
 
-追加バージョン: Access 2007
+追加されたバージョン: Access 2007
 
 ## <a name="remarks"></a>注釈
 
-[ComplexType](complextype-fields-property-dao.md) オブジェクトの [**Fields**](fields-collection-dao.md) コレクションを取得するには、 ****Fields**** プロパティを使用します。
+**ComplexType**オブジェクトの**[fields](fields-collection-dao.md)** コレクションを取得するには、 **[fields](complextype-fields-property-dao.md)** プロパティを使用します。
 

@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: afea442aa535660b5bb618297640db8fbd546dec
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293897"
 ---
 # <a name="dimension-object-ado-md"></a>Dimension オブジェクト (ADO MD)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 1 つ以上のメンバーの階層を含む、多次元キューブの次元の 1 つを表します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **Dimension** オブジェクトのコレクションおよびプロパティを使用すると、次の操作を実行できます。
 
@@ -48,11 +48,11 @@ ms.locfileid: "28712828"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>カタログ名</p></td>
+<td><p>CatalogName</p></td>
 <td><p>このキューブが属しているカタログの名前。</p></td>
 </tr>
 <tr class="even">
-<td><p>キューブ名</p></td>
+<td><p>CubeName</p></td>
 <td><p>キューブの名前。</p></td>
 </tr>
 <tr class="odd">
@@ -60,19 +60,19 @@ ms.locfileid: "28712828"
 <td><p>既定の階層の固有の名前。</p></td>
 </tr>
 <tr class="even">
-<td><p>Description</p></td>
+<td><p>説明</p></td>
 <td><p>キューブの説明。</p></td>
 </tr>
 <tr class="odd">
-<td><p>DimensionCaption</p></td>
+<td><p>dimensioncaption</p></td>
 <td><p>次元に関連付けられているラベルまたはキャプション。</p></td>
 </tr>
 <tr class="even">
-<td><p>DimensionCardinality</p></td>
+<td><p>dimensioncardinality</p></td>
 <td><p>次元のメンバー数。</p></td>
 </tr>
 <tr class="odd">
-<td><p>DimensionGUID</p></td>
+<td><p>dimensionguid</p></td>
 <td><p>次元の GUID。</p></td>
 </tr>
 <tr class="even">
@@ -80,11 +80,11 @@ ms.locfileid: "28712828"
 <td><p>次元の名前。</p></td>
 </tr>
 <tr class="odd">
-<td><p>DimensionOrdinal</p></td>
+<td><p>dimensionordinal</p></td>
 <td><p>キューブを構成する次元のグループ内の次元の序数。</p></td>
 </tr>
 <tr class="even">
-<td><p>DimensionType</p></td>
+<td><p>dimensiontype</p></td>
 <td><p>次元の種類。</p></td>
 </tr>
 <tr class="odd">
@@ -92,7 +92,7 @@ ms.locfileid: "28712828"
 <td><p>次元の明確な名前。</p></td>
 </tr>
 <tr class="even">
-<td><p>スキーマ名</p></td>
+<td><p>SchemaName</p></td>
 <td><p>このキューブが属しているスキーマの名前。</p></td>
 </tr>
 </tbody>

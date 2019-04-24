@@ -1,5 +1,5 @@
 ---
-title: 編集モードを決定します。
+title: 編集モードを決定する
 TOCTitle: Determining Edit mode
 ms:assetid: 45e21fa7-94e8-3449-e062-09cbcf15cba8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249215(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b5b62bc282a99472d0e7399ee9f3dd9d0648f0c7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293918"
 ---
-# <a name="determining-edit-mode"></a>編集モードを決定します。
+# <a name="determining-edit-mode"></a>編集モードを決定する
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ADO では、現在のレコードに関連付けられた編集バッファーが保持されます。 **EditMode** プロパティは、このバッファーに変更が加えられたかどうかや、新しいレコードが作成されたかどうかを示します。 **EditMode** を使用すると、現在のレコードの編集ステータスを判断できます。編集処理が中断された場合に、保留中の変更を確認し、 **Update** メソッドまたは **CancelUpdate** メソッドを使用する必要があるかどうかを判断できます。
 

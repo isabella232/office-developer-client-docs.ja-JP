@@ -1,5 +1,5 @@
 ---
-title: 不一致データのブロック
+title: LookupRecord データブロック
 TOCTitle: LookupRecord data block
 ms:assetid: 750dc8ca-3bab-c3d1-c91d-2196f9c0604d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195882(v=office.15)
@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 920f0830a310452962eb5dd1c21be63215bf0f03
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289792"
 ---
-# <a name="lookuprecord-data-block"></a>不一致データのブロック
+# <a name="lookuprecord-data-block"></a>LookupRecord データブロック
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**LookupRecord** データ ブロックは、特定のレコードに対して一連のアクションを実行します。
+A **LookupRecord** data block performs a set of actions on a specific record.
 
 > [!NOTE]
-> [!メモ] **LookupRecord** データ ブロックは、データ マクロでのみ使用できます。
+> LookupRecord  データ ブロックは、データ マクロでのみ使用できます。
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
 **LookupRecord** アクションの引数は次のとおりです。
 
@@ -44,7 +44,7 @@ ms.locfileid: "28716013"
 <tr class="odd">
 <td><p>In</p></td>
 <td><p>はい</p></td>
-<td><p>操作対象のレコードを識別する文字列です。 <em></em>引数は、テーブル、選択クエリ、または SQL ステートメントの名前を含めることができます。</p><p><strong>注</strong>: 指定されたレコードは、リンク テーブルまたは ODBC データ ソースに格納されたデータを含めることはできません。</p></td>
+<td><p>操作するレコードを識別する文字列を指定します。<em></em>In 引数にはテーブルの名前、選択クエリ、または SQL ステートメントが含まれます。</p><p><strong>注</strong>: 指定されたレコードには、リンクテーブルまたは ODBC データソースに格納されているデータを含めることはできません。</p></td>
 </tr>
 <tr class="even">
 <td><p>Where Condition/Where 条件式</p></td>
@@ -54,7 +54,7 @@ ms.locfileid: "28716013"
 <tr class="odd">
 <td><p>エイリアス</p></td>
 <td><p>いいえ</p></td>
-<td><p><em></em>引数で指定されたレコードに別の名前を提供する文字列です。 あいまいな参照を防ぐへの参照のテーブル名を短くには、よく使用されます。 <em>エイリアス</em>が指定されていない場合、テーブルまたはクエリの名前がエイリアスとして使用します。</p></td>
+<td><p><em></em>In 引数で指定したレコードの別名となる文字列。以降の参照用にテーブル名を短くして、あいまいな参照を防ぐ目的でよく使用されます。<em></em>Alias が指定されていない場合、表またはクエリ名前がエイリアスとして使用されます。</p></td>
 </tr>
 </tbody>
 </table>
@@ -62,13 +62,13 @@ ms.locfileid: "28716013"
 
 ## <a name="remarks"></a>注釈
 
-** *条件*引数で指定した抽出条件は、複数のレコードを指定する場合、**不一致**のデータ ブロック、最初のレコードにのみ動作します。
+*In* 引数および "*Where Condition/Where 条件式*" 引数で指定した条件に複数のレコードが該当する場合、**LookupRecord** データ ブロックは 1 つ目のレコードにのみ適用されます。
 
 ## <a name="example"></a>例
 
-次の例は、 SetReturnVar アクションを使用して名前付きデータ マクロから値を返す方法を示します。" CurrentServiceRequest" という名前の **ReturnVar** が、名前付きデータ マクロの呼び出し元であるマクロまたは Visual Basic for Applications (VBA) サブルーチンに返されます。
+次の例は、 SetReturnVar アクションを使用して名前付きデータ マクロから値を返す方法を示します。 " CurrentServiceRequest" という名前の **ReturnVar** が、名前付きデータ マクロの呼び出し元であるマクロまたは Visual Basic for Applications (VBA) サブルーチンに返されます。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     RunDataMacro
@@ -85,7 +85,7 @@ ms.locfileid: "28716013"
 
 <br/>
 
-次の例は、" RaiseError" アクションを使用して Before Change データ マクロ イベントを取り消す方法を示します。 AssignedTo フィールドが更新されると、 LookupRecord データ ブロックを使用して、割り当てられた技術者が未解決サービス リクエストに現在割り当てられているかどうかが確認されます。これが真の場合、 Before Change イベントが取り消されて、レコードは更新されません。
+次の例は、" RaiseError" アクションを使用して Before Change データ マクロ イベントを取り消す方法を示します。 AssignedTo フィールドが更新されると、 LookupRecord データ ブロックを使用して、割り当てられた技術者が未解決サービス リクエストに現在割り当てられているかどうかが確認されます。 これが真の場合、 Before Change イベントが取り消されて、レコードは更新されません。
 
 ```vb
     /* Get the name of the technician  */

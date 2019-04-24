@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0556c40823facf5bdddbbe67874d6417b416674e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293260"
 ---
 # <a name="execute-requery-and-clear-methods-example-jscript"></a>Execute メソッド、Requery メソッド、Clear メソッドの使用例 (JScript)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 この例では、**Command** オブジェクトの [Execute](command-object-ado.md) メソッドを実行する場合と [Connection](connection-object-ado.md) オブジェクトの [Execute](requery-method-ado.md) メソッドを実行する場合を示します。また、 [Requery](recordset-object-ado.md) メソッドを使用して [Recordset](clear-method-ado.md) 内の最新のデータを取得し、 [Clear](errors-collection-ado.md) メソッドを使用して **Errors** コレクションの内容をクリアします ( **Errors** コレクションには、 [Recordset](activeconnection-property-ado.md) の [ActiveConnection](recordset-object-ado.md) プロパティの **Connection** オブジェクトからアクセスします)。このファイルに "ExecuteJS.asp" という名前を付けます。
 

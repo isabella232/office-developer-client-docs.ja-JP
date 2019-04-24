@@ -1,5 +1,5 @@
 ---
-title: 接続のコレクション (DAO)
+title: Connections コレクション (DAO)
 TOCTitle: Connections collection
 ms:assetid: 65d073be-a84b-e3f2-cb43-b87ffa60e497
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195178(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 66f122b7bdaa9069b839cd5884b5da5da48a15f9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295787"
 ---
-# <a name="connections-collection-dao"></a>接続のコレクション (DAO)
+# <a name="connections-collection-dao"></a>Connections コレクション (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 > [!NOTE]
 > [!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。
@@ -25,17 +25,17 @@ ms.locfileid: "28713507"
 
 ## <a name="remarks"></a>注釈
 
-**Connection** オブジェクトを開くと、 **Workspace** の **Connections** コレクションに自動的に追加されます。 [**Close**](connection-close-method-dao.md) メソッドを使用して **Connection** オブジェクトを閉じると、オブジェクトは **Connections** コレクションから削除されます。 [Connection](recordset-object-dao.md) オブジェクトを閉じる前に、開いているすべての ****Recordset**** オブジェクトを閉じる必要があります。
+**Connection** オブジェクトを開くと、**Workspace** の **Connections** コレクションに自動的に追加されます。 **[close](connection-close-method-dao.md)** メソッドを使用して**Connection**オブジェクトを閉じると、 **Connections**コレクションからそのオブジェクトが削除されます。 **接続**を閉じる前に、開いているすべての**[Recordset](recordset-object-dao.md)** オブジェクトを閉じておく必要があります。
 
-**Connection** オブジェクトを開くと同時に、対応する **[Database](database-object-dao.md)** オブジェクトが作成され、同じ [Workspace](databases-collection-dao.md) の ****Databases**** コレクションに追加されます。同様に、 **Connection** を閉じると、 **Databases** コレクションの対応する **Database** が削除されます。
+**Connection**オブジェクトを開くと同時に、対応する**[Database](database-object-dao.md)** オブジェクトが作成され、同じ**ワークスペース**内の**[Databases](databases-collection-dao.md)** コレクションに追加されます。また、その逆も同様です。 同様に、**Connection** を閉じると、**Databases** コレクションの対応する **Database** が削除されます。
 
 **Connection** の **Name** プロパティの設定は、データベース ファイルを指定するための文字列です。コレクション内の **Connection** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。
 
-- **Connections**(0)
+- **接続**.0
 
-- **接続**(以下「*名前*」)
+- **接続**("*name*")
 
-- **接続**\!\[*名*\]
+- ****\!接続\[*名*\]
 
 
 > [!NOTE]
@@ -44,7 +44,7 @@ ms.locfileid: "28713507"
 
 ## <a name="example"></a>例
 
-この例では、 **Database** オブジェクトを開いて **Connection** オブジェクトと **Connections** コレクション、および 2 つの ODBCDirect **Connection** オブジェクトの例を示し、各オブジェクトで使用できるプロパティの一覧を示します。
+この例では、**Database** オブジェクトを開いて **Connection** オブジェクトと **Connections** コレクション、および 2 つの ODBCDirect **Connection** オブジェクトの例を示し、各オブジェクトで使用できるプロパティの一覧を示します。
 
 ```vb 
 Sub ConnectionObjectX() 

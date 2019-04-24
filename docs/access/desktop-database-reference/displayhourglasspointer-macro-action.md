@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: a5635b2b97066394b8596dbcdb50c84abf429719
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293834"
 ---
 # <a name="displayhourglasspointer-macro-action"></a>DisplayHourglassPointer マクロ アクション
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-砂時計のマウス ポインターを変更するのには、 **DisplayHourglassPointer**アクションを使用することができます (または選択した別のアイコン)、マクロの実行中にします。 このアクションによって、マクロが実行中であることを視覚的に示すことができます。 マクロ アクションまたはマクロ自体の実行に時間がかかる場合に使用すると便利です。
+You can use the **DisplayHourglassPointer** action to change the mouse pointer to an image of an hourglass (or another icon you've chosen) while a macro is running. This action can provide a visual indication that the macro is running. This is especially useful when a macro action or the macro itself takes a long time to run.
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**DisplayHourglassPointer**アクションには、次の引数があります。
+"DisplayHourglassPointer/砂時計ポインターの表示" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -49,15 +49,15 @@ ms.locfileid: "28715131"
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このアクションは、" **Echo/エコー** " アクションでエコーをオフにした場合によく使用します。 エコーがオフの場合、アクセスは、マクロが終了するまで画面の更新を中断します。
+このアクションは、" **Echo/エコー** " アクションでエコーをオフにした場合によく使用します。 エコーがオフの場合、マクロが終了するまで、Access は画面の更新を中断します。
 
-自動的にリセット、**砂時計型インデント マーカーの**引数に [ **No**マクロの実行が完了するとします。
+Access automatically resets the **Hourglass On** argument to **No** when the macro finishes running.
 
 > [!NOTE]
 > - Microsoft Windows では、Windows コントロール パネルの [**マウスのプロパティ**] ダイアログ ボックスで [**待ち状態**] に設定されたアイコンが使用されます。すべての Windows オペレーティング システムで、既定の設定は砂時計アイコンです。
 > - 別のアイコンを選択することもできます。
 
-Visual Basic for Applications (VBA) モジュールに**DisplayHourglassPointer**アクションを実行するには、 **DoCmd**オブジェクトの**Hourglass**メソッドを使用します。
+Visual Basic for Applications (VBA) モジュールで "DisplayHourglassPointer/砂時計ポインターの表示" アクションを実行するには、DoCmd オブジェクトの Hourglass メソッドを使用します。
 

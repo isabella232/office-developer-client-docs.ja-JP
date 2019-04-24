@@ -1,5 +1,5 @@
 ---
-title: テーブル定義のメンバー (DAO)
+title: テーブル定義メンバー (DAO)
 TOCTitle: TableDefs Members
 ms:assetid: 7a365303-1e7d-0c01-67ed-defcc76577d1
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196175(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: fe8ba97e3d8306b8dc8b0415fdf50e4c7041d7f2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314085"
 ---
-# <a name="tabledefs-members-dao"></a>テーブル定義のメンバー (DAO)
+# <a name="tabledefs-members-dao"></a>テーブル定義メンバー (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 TableDefs コレクションには、データベースに格納されているすべての TableDef オブジェクトが含まれます (Microsoft Access ワークスペースのみ)。
 
@@ -67,7 +67,7 @@ TableDefs コレクションには、データベースに格納されている�
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="tabledefs-count-property-dao.md">Count</a></strong></p></td>
-<td><p>指定したコレクション内のオブジェクトの数を取得します。値の取得のみ可能です。</p></td>
+<td><p>指定したコレクション内のオブジェクトの数を取得します。 値の取得のみ可能です。</p></td>
 </tr>
 </tbody>
 </table>

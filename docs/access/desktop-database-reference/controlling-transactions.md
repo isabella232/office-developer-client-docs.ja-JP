@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ced1ae7b32d25fbae53c670959a4a6c77bcea0be
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295549"
 ---
 # <a name="controlling-transactions"></a>トランザクションを制御する
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-*トランザクション*では、先頭と末尾の一連の接続の両端でデータ アクセス操作を区切ります。 トランザクションの機能によって、データ ソース、**接続**オブジェクトも使用するを作成し、トランザクションを管理できます。 たとえば、Microsoft SQL Server 2000 上のデータベースにアクセスするには、Microsoft OLE DB プロバイダーの SQL Server を使用して、作成できますを実行するコマンドの複数の入れ子になったトランザクション。
+*トランザクション*は、1つの接続で発生した一連のデータアクセス操作の開始と終了を区切ります。 Subject to the transactional capabilities of your data source, the **Connection** object also allows you to create and manage transactions. For example, using the Microsoft OLE DB Provider for SQL Server to access a database on Microsoft SQL Server 2000, you can create multiple nested transactions for the commands you execute.
 
 ADO では、トランザクション内の操作によって発生するデータ ソースの変更が、すべて正常に実行されるか、まったく実行されないかのいずれかになります。
 

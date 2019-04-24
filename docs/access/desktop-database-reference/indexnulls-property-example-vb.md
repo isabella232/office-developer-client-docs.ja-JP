@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 488e37f53218a7dabfa6248ea1da7630f82818a6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291470"
 ---
 # <a name="indexnulls-property-example-vb"></a>IndexNulls プロパティの使用例 (VB)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-この例では、[Index](indexnulls-property-adox.md) の [IndexNulls](index-object-adox.md) プロパティの機能を示します。 このコードでは、新規インデックスが作成され、ユーザーが List1 という名前のリスト ボックスに入力した内容に基づいて **IndexNulls** の値が設定されます。 次に、**インデックス**は、 *Northwind* [カタログ](catalog-object-adox.md)の [**社員**][テーブル](table-object-adox.md)に追加されます。 新しい **Index** が [Employees](recordset-object-ado.md) テーブルに基づいて **Recordset** に適用され、 **Recordset** が開きます。 新しいレコードが **Employees** テーブルに追加され、 **Null** 値がインデックス フィールドに入ります。 この新しいレコードが表示されるかどうかは、 **IndexNulls** プロパティの設定によって決まります。
+この例では、[Index](indexnulls-property-adox.md) の [IndexNulls](index-object-adox.md) プロパティの機能を示します。 このコードでは、新規インデックスが作成され、ユーザーが List1 という名前のリスト ボックスに入力した内容に基づいて **IndexNulls** の値が設定されます。 その後、**インデックス**は*Northwind* [カタログ](catalog-object-adox.md)の**Employees** [テーブル](table-object-adox.md)に追加されます。 新しい **Index** が [Employees](recordset-object-ado.md) テーブルに基づいて **Recordset** に適用され、 **Recordset** が開きます。 新しいレコードが **Employees** テーブルに追加され、 **Null** 値がインデックス フィールドに入ります。 この新しいレコードが表示されるかどうかは、 **IndexNulls** プロパティの設定によって決まります。
 
 ```vb
     ' IndexNullsVB 

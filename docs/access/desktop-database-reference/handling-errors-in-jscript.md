@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f06584ef752e0be7f68b3f661fbdba50b52cd20e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292042"
 ---
 # <a name="handling-errors-in-jscript"></a>JScript でのエラー処理
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 Microsoft JScript のコードでは、 **Connection** オブジェクトの **Errors** コレクションの **Count** プロパティを確認する必要があります。このプロパティの値が 0 より大きい場合は、他の言語の場合と同様、コレクションを反復処理し、値を表示します。
 

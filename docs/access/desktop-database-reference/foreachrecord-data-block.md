@@ -1,5 +1,5 @@
 ---
-title: ForEachRecord データ ブロック
+title: ForEachRecord データブロック
 TOCTitle: ForEachRecord data block
 ms:assetid: be369196-230e-1f92-e36b-667048eef2be
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822743(v=office.15)
@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 84ab685b946e390645027790e5b1402561527ab6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292329"
 ---
-# <a name="foreachrecord-data-block"></a>ForEachRecord データ ブロック
+# <a name="foreachrecord-data-block"></a>ForEachRecord データブロック
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **ForEachRecord** データ ブロックは、ドメイン内のレコードごとにステートメントのセットを繰り返します。
 
 > [!NOTE]
-> [!メモ] **ForEachRecord** データ ブロックは、データ マクロでのみ使用できます。
+> **ForEachRecord** データ ブロックは、データ マクロでのみ使用できます。
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
-" **ForEachRecord** /レコードごと" アクションの引数は次のとおりです。
+ForEachRecord アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -42,19 +42,19 @@ ms.locfileid: "28706346"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>で</strong></p></td>
+<td><p><strong>順番</strong></p></td>
 <td><p>はい</p></td>
-<td><p>ステートメントを実行するレコードのドメインを識別する文字列を指定します。<em>In</em> 引数には、テーブル名、選択クエリ、または SQL ステートメントを含めることができます。</p><p><strong>注</strong>: 指定されたドメインにリンクされているテーブルまたは ODBC データ ソースに格納されたデータを含めることはできません。</p></td>
+<td><p>実行するステートメントの対象レコードのドメインを識別する文字列。In<em></em> 引数には、テーブル名、選択クエリ、または SQL ステートメントを含めることができます。</p><p><strong>注</strong>: 指定されたドメインには、リンクテーブルまたは ODBC データソースに格納されているデータを含めることはできません。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Where Condition</strong></p></td>
+<td><p>Where Condition/Where 条件式</p></td>
 <td><p>いいえ</p></td>
 <td><p><strong>ForEachRecord</strong> データ ブロックを適用するデータの範囲を制限するための文字列式を指定します。たとえば、多くの場合、抽出条件は SQL 式の WHERE 句と同じ役割を果たします (ただし WHERE という語は使用しません)。抽出条件を省略すると、<strong>ForEachRecord</strong> データ ブロックは In<em></em> 引数で指定したドメイン全体に適用されます。抽出条件に含めるフィールドは、In<em></em> にも含まれている必要があります。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Alias</strong></p></td>
 <td><p>いいえ</p></td>
-<td><p><em></em>引数で指定されたドメインの代替名を提供する文字列です。 あいまいな参照を防ぐへの参照のテーブル名を短くには、よく使用されます。<em>エイリアス</em>が指定されていない場合、テーブルまたはクエリの名前がエイリアスとして使用します。</p></td>
+<td><p>In<em></em> 引数で指定したドメインの別名となる文字列。 多くの場合、あいまいな参照を防ぐために、後で参照するためにテーブル名を短くするために使用されます。<em>alias</em>が指定されていない場合は、テーブル名またはクエリ名がエイリアスとして使用されます。</p></td>
 </tr>
 </tbody>
 </table>
@@ -62,5 +62,5 @@ ms.locfileid: "28706346"
 
 ## <a name="remarks"></a>注釈
 
-[ForEachRecord](exitforeachrecord-macro-action.md) データ ブロックを即座に終了するには、" ****ExitForEachRecord/レコードごとに終了**** " アクションを使用します。
+Use the **[ExitForEachRecord](exitforeachrecord-macro-action.md)** action to exit a **ForEachRecord** data block immediately.
 

@@ -1,5 +1,5 @@
 ---
-title: フィールド メンバー (DAO)
+title: Fields メンバー (DAO)
 TOCTitle: Fields Members
 ms:assetid: b7ba5b21-03f4-6ac0-2acc-777da3d22839
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822428(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a6bfefea569d5298b5fa5c69b1cf610592c9f952
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292539"
 ---
-# <a name="fields-members-dao"></a>フィールド メンバー (DAO)
+# <a name="fields-members-dao"></a>Fields メンバー (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 Fields コレクションには、Index、QueryDef、Relation、Recordset、または TableDef オブジェクトのすべての格納済み Field オブジェクトが含まれます。
 
@@ -67,7 +67,7 @@ Fields コレクションには、Index、QueryDef、Relation、Recordset、ま�
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="fields-count-property-dao.md">Count</a></strong></p></td>
-<td><p>指定したコレクション内のオブジェクトの数を取得します。整数型 ( <strong>Integer</strong>) の値を使用します。</p></td>
+<td><p>指定したコレクション内のオブジェクトの数を取得します。 整数型 ( <strong>Integer</strong>) の値を使用します。</p></td>
 </tr>
 </tbody>
 </table>

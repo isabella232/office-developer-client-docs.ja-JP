@@ -1,5 +1,5 @@
 ---
-title: Web サーバー コンピューターにゲストの特権を付与します。RDS ゲスト権限
+title: web サーバーコンピューターへのゲスト権限の付与RDS ゲストの権限
 TOCTitle: Granting guest privileges to a web server computer; RDS guest privileges
 ms:assetid: 4ec9c05b-36f6-de22-b848-0cb8573f9dd1
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249254(v=office.15)
@@ -8,29 +8,29 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8c0ee29125bf06ef51d1ac511838bdd09231e1a6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292126"
 ---
-# <a name="granting-guest-privileges-to-a-web-server-computer-rds-guest-privileges"></a>Web サーバー コンピューターにゲストの特権を付与します。RDS ゲスト権限
+# <a name="granting-guest-privileges-to-a-web-server-computer-rds-guest-privileges"></a>web サーバーコンピューターへのゲスト権限の付与RDS ゲストの権限
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-匿名 web サーバー アカウント (IUSR\_*コンピューター名*) RDS を使用する web サーバー コンピューターの Guests ローカル グループに追加する必要があります
+RDS を使用するには、\_web サーバーコンピューターの Guests ローカルグループに匿名 web サーバーアカウント (IUSR*ComputerName*) を追加する必要があります。
 
-**Web サーバー コンピューターへのゲストの特権を付与するには**
+**web サーバーコンピューターへのゲスト権限を付与するには**
 
-1.  Microsoft Windows 2000 Server コンピューターに [**スタート**] ボタン、**プログラム**] をポイント **[管理ツール**] をポイントし、し、[**コンピューターの管理**] をクリックします。
+1.  Microsoft Windows 2000 Server コンピューターで、[**スタート**] をクリックし、[**プログラム**]、[**管理ツール**] の順にポイントし、[**コンピューターの管理**] をクリックします。
 
-2.  コンソール ツリーで、**ローカル ユーザーとグループ**は、[**グループ**] をクリックします。
+2.  In the console tree, in **Local Users and Groups**, click **Groups**.
 
-3.  **Guests**ローカル グループを選択します。 **[操作**] メニューから**プロパティ**を選択します。
+3.  Select the **Guests** local group. From the **Action** menu, choose **Properties**.
 
-4.  **Guests のプロパティ**] ダイアログ ボックスで、[**追加**を] をクリックします。
+4.  In the **Guests Properties** dialog box, click **Add**.
 
-5.  匿名 web サーバー アカウントは、 **[ユーザーまたはグループ**] ダイアログ ボックスの一覧に表示されない場合は、その名前を入力 (IUSR\_*コンピューター名*) 空白の下にボックスし、[**追加**] をクリックします。
+5.  匿名 web サーバーアカウントが **[ユーザーまたはグループの選択**] ダイアログボックスの一覧に表示されない場合は、その\_名前 (IUSR*ComputerName*) を下部の空のボックスに入力し、[**追加**] をクリックします。
 
 6.  **[OK]** をクリックします。
 

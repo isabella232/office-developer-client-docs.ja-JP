@@ -1,5 +1,5 @@
 ---
-title: Field2.DataUpdatable プロパティ (DAO)
+title: DataUpdatable プロパティ (DAO)
 TOCTitle: DataUpdatable Property
 ms:assetid: e6619c4e-26b1-777b-f0de-78fed3dbc890
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835966(v=office.15)
@@ -8,31 +8,31 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 88a57ff2daeaaaab202daad55f01eebc6bdf86dd
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292840"
 ---
-# <a name="field2dataupdatable-property-dao"></a>Field2.DataUpdatable プロパティ (DAO)
+# <a name="field2dataupdatable-property-dao"></a>DataUpdatable プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
 **Field2** オブジェクトで表されるフィールドのデータが更新可能かどうかを示す値を返します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。DataUpdatable
+*式*。DataUpdatable
 
-*式***Field2**オブジェクトを表す変数です。
+*式***Field2**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
-このプロパティを使用して、 [Field2](field-value-property-dao.md) オブジェクトの ****Value**** プロパティの設定値が変更可能かどうかを識別します。このプロパティは、 ****Attributes**** プロパティが [dbAutoIncrField](field-attributes-property-dao.md) の **Field2** オブジェクトでは常に **False** です。
+このプロパティを使用して、 **Field2**オブジェクトの**[Value](field-value-property-dao.md)** プロパティの設定値を変更できるかどうかを判断します。 このプロパティは、**[Attributes](field-attributes-property-dao.md)** プロパティが **dbAutoIncrField** の **Field2** オブジェクトでは常に **False** です。
 
-DataUpdatable プロパティは、QueryDef、Recordset、および Relation の各オブジェクトの Fields コレクションに追加される Field2 オブジェクトでは使用できますが、Index オブジェクトまたは TableDef オブジェクトの Fields コレクションに追加される Field2 オブジェクトでは使用できません。
+You can use the **DataUpdatable** property on **Field2** objects that are appended to the **[Fields](fields-collection-dao.md)** collection of **[QueryDef](querydef-object-dao.md)**, **[Recordset](recordset-object-dao.md)**, and **[Relation](relation-object-dao.md)** objects, but not the **Fields** collection of **[Index](index-object-dao.md)** or **[TableDef](tabledef-object-dao.md)** objects.
 
 ## <a name="example"></a>例
 

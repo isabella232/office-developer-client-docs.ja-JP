@@ -1,5 +1,5 @@
 ---
-title: DBEngine.Workspaces プロパティ (DAO)
+title: DBEngine プロパティ (DAO)
 TOCTitle: Workspaces Property
 ms:assetid: 7b4b2a61-b61a-c442-3000-d2fb1419bfd5
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196194(v=office.15)
@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: d4dd221d55b9f5deecf142daddf96132990c016b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294184"
 ---
-# <a name="dbengineworkspaces-property-dao"></a>DBEngine.Workspaces プロパティ (DAO)
+# <a name="dbengineworkspaces-property-dao"></a>DBEngine プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-アクティブな、隠されていない **Workspace** オブジェクトをすべて含む **Workspaces** コレクションを返します。値の取得のみ可能です。
+アクティブな、隠されていない **Workspace** オブジェクトをすべて含む **Workspaces** コレクションを返します。 読み取り専用です。
 
 ## <a name="syntax"></a>構文
 
-*式*です。ワークスペース
+*式*。ス
 
-*式***DBEngine**オブジェクトを表す変数です。
+*式***DBEngine**オブジェクトを表す変数を取得します。
 

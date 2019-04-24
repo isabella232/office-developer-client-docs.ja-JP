@@ -1,5 +1,5 @@
 ---
-title: ロック (デスクトップ データベース参照のアクセス) の種類
+title: ロックの種類 (Access デスクトップデータベースリファレンス)
 TOCTitle: Types of Locks
 ms:assetid: 8276edca-f603-2487-a2ca-73e618c0f11e
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249565(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 47b212be1922f783889f1e5be436a616909dc5c6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314162"
 ---
 # <a name="types-of-locks"></a>ロックの種類
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
 
@@ -33,13 +33,13 @@ ms.locfileid: "28699535"
 
 ## <a name="adlockpessimistic"></a>adLockPessimistic
 
-レコード単位の排他的ロックを指定します。プロバイダーは、レコードの編集が正常に行われることを確実にするために必要な操作 (通常は編集の直前にレコードに対するデータ ソースでのロック) を実行します。これは、編集を開始すると、 **Update** を呼び出してロックを解除するまで、他のユーザーがそのレコードを使用できないことを意味します。この種類のロックは、予約システムなど、データを同時に変更できないシステムで使用します。
+レコード単位の排他的ロックを指定します。プロバイダーは、レコードの編集が正常に行われることを確実にするために必要な操作 (通常は編集の直前にレコードに対するデータ ソースでのロック) を実行します。これは、編集を開始すると、**Update** を呼び出してロックを解除するまで、他のユーザーがそのレコードを使用できないことを意味します。この種類のロックは、予約システムなど、データを同時に変更できないシステムで使用します。
 
-## <a name="adlockreadonly"></a>adLockReadOnly
+## <a name="adlockreadonly"></a>adlockreadonly です
 
 読み取り専用のレコードを指定します。データの変更はできません。読み取り専用ロックは、サーバーでレコードのロックを保持する必要がないため、"最も高速な" ロックです。
 
-## <a name="adlockunspecified"></a>adLockUnspecified
+## <a name="adlockunspecified"></a>adlockunspecified
 
 ロックの種類を指定しません。
 

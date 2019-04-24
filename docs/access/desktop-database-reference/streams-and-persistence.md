@@ -8,28 +8,28 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 5a6f49368def305964119edcb06b5bcc80c278d2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314435"
 ---
 # <a name="streams-and-persistence"></a>セッションと永続化
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-[レコード セット](recordset-object-ado.md)オブジェクト[の保存](save-method-ado.md)方法、店舗、*引き続き発生する*ファイル、および[Open](open-method-ado-recordset.md)メソッドには、**レコード セット**は、そのファイルから**レコード セット**を復元します。
+[recordset](recordset-object-ado.md)オブジェクトの[Save](save-method-ado.md)メソッドは、 **recordset**をファイルに保存または*保持*し、 [Open](open-method-ado-recordset.md)メソッドでそのファイルから**recordset**を復元します。
 
 ADO 2.5 では、 **Save** メソッドと **Open** メソッドを使用して、 **Recordset** を [Stream](stream-object-ado.md) オブジェクトに永続化することもできます。この機能は、リモート データ サービス (RDS) および Active Server Pages (ASP) と併せて使用すると特に役に立ちます。
 
 ASP ページでの永続性の使用方法の詳細については、最新の ASP のマニュアルを参照してください。
 
-以下では、 **Stream** オブジェクトと永続性を使用する方法についてのシナリオをいくつか示します。
+以下では、**Stream** オブジェクトと永続性を使用する方法についてのシナリオをいくつか示します。
 
 ## <a name="scenario-1"></a>シナリオ 1
 
-このシナリオでは、 **Recordset** をファイルに保存した後、 **Stream** に単純に保存します。その後、永続化したストリームを別の **Recordset** で開きます。
+このシナリオでは、**Recordset** をファイルに保存した後、**Stream** に単純に保存します。その後、永続化したストリームを別の **Recordset** で開きます。
 
 ```vb 
  
@@ -51,7 +51,7 @@ rs2.Open stm
 
 ## <a name="scenario-2"></a>シナリオ 2
 
-このシナリオでは、 **Recordset** を **Stream** に XML 形式で永続化します。その後、検査、操作、または表示できる文字列として **Stream** を読み取ります。
+このシナリオでは、**Recordset** を **Stream** に XML 形式で永続化します。その後、検査、操作、または表示できる文字列として **Stream** を読み取ります。
 
 ```vb 
  
@@ -79,7 +79,7 @@ strRst = stm.ReadText(adReadAll)
 
 ## <a name="scenario-3"></a>シナリオ 3
 
-この例では、 **Recordset** を XML として **Response** オブジェクトに直接永続化する ASP コードを示します。
+この例では、**Recordset** を XML として **Response** オブジェクトに直接永続化する ASP コードを示します。
 
 ```vb 
  

@@ -12,32 +12,32 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 35637781035b7a449ba574cf5f6c84f2cb5223db
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306588"
 ---
 # <a name="restorewindow-macro-action"></a>RestoreWindow マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**RestoreWindow**アクションを使用すると、元のサイズを最大化または最小化されたウィンドウを復元します。
+You can use the **RestoreWindow** action to restore a maximized or minimized window to its previous size.
 
 > [!NOTE]
 > [!メモ] このアクションは、Visual Basic Editor のコード ウィンドウには適用できません。コード ウィンドウへの影響の詳細については、 **WindowState** プロパティのトピックを参照してください。
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**RestoreWindow**アクション引数はありません。
+"RestoreWindow/ウィンドウを元のサイズに戻す" アクションには、引数はありません。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-この操作は、選択したオブジェクトに対して機能します。 オブジェクトが最小化されている場合、 **SelectObject**アクションを使用して選択して、 **RestoreWindow**アクションを使用して元のサイズに復元できます。
+This action works on the selected object. If an object has been minimized, you can first select it by using the **SelectObject** action and then restore it to its previous size by using the **RestoreWindow** action.
 
-移動または復元したウィンドウのサイズは、 **MoveAndSizeWindow**アクションを使用できます。
+You can use the **MoveAndSizeWindow** action to move or size a window that you have restored.
 
-**RestoreWindow**アクションは、ウィンドウの右上隅で [**復元**] ボタンをクリックするか、ウィンドウの**コントロール**メニューの [**復元**] コマンドをクリックすると同じです。
+The **RestoreWindow** action has the same effect as clicking the **Restore** button in the window's upper-right corner or clicking the **Restore** command on the window's **Control** menu.
 
-Visual Basic for Applications (VBA) モジュールに**RestoreWindow**アクションを実行するには、 **DoCmd**オブジェクトの**復元**方法を使用します。
+To run the **RestoreWindow** action in a Visual Basic for Applications (VBA) module, use the **Restore** method of the **DoCmd** object.
 

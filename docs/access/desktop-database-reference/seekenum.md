@@ -1,5 +1,5 @@
 ---
-title: SeekEnum (デスクトップ データベース参照のアクセス)
+title: seekenum (Access デスクトップデータベースリファレンス)
 TOCTitle: SeekEnum
 ms:assetid: a0574809-db2d-8759-18cc-fb1cf776e8fd
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249737(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2f8334cbfc8e0f6a362a36e03984739d1d52b6f6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314659"
 ---
 # <a name="seekenum"></a>SeekEnum
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 実行する [Seek](seek-method-ado.md) の種類を表します。
 
@@ -37,32 +37,32 @@ ms.locfileid: "28698611"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>adSeekFirstEQ</p></td>
-<td><p>1</p></td>
+<td><p>adseekの手順 q</p></td>
+<td><p>1-d</p></td>
 <td><p><em>KeyValues</em> と一致する最初のキーを検索します。</p></td>
 </tr>
 <tr class="even">
-<td><p>adSeekLastEQ</p></td>
-<td><p>2</p></td>
+<td><p>adseeklasteq</p></td>
+<td><p>pbm-2</p></td>
 <td><p><em>KeyValues</em> と一致する最後のキーを検索します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>adSeekAfterEQ</p></td>
-<td><p>4</p></td>
+<td><p>adseekaftereq</p></td>
+<td><p>2/4</p></td>
 <td><p><em>KeyValues</em> と一致するキー、またはその直後のキーのいずれかを検索します。</p></td>
 </tr>
 <tr class="even">
-<td><p>adSeekAfter</p></td>
-<td><p>8</p></td>
+<td><p>adseekafter</p></td>
+<td><p>~</p></td>
 <td><p><em>KeyValues</em> と一致するキーの直後のキーを検索します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>adSeekBeforeEQ</p></td>
+<td><p>adseekbeforeeq</p></td>
 <td><p>16</p></td>
 <td><p><em>KeyValues</em> と一致するキー、またはその直前のキーのいずれかを検索します。</p></td>
 </tr>
 <tr class="even">
-<td><p>adSeekBefore</p></td>
+<td><p>adseekbefore</p></td>
 <td><p>32</p></td>
 <td><p><em>KeyValues</em> と一致するキーの直前のキーを検索します。</p></td>
 </tr>
@@ -70,7 +70,7 @@ ms.locfileid: "28698611"
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC に相当
+### <a name="adowfc-equivalent"></a>ADO/WFC と同等
 
 パッケージ: **com.ms.wfc.data**
 
@@ -85,22 +85,22 @@ ms.locfileid: "28698611"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.Seek.FIRSTEQ</p></td>
+<td><p>AdoEnums (問)</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.Seek.LASTEQ</p></td>
+<td><p>AdoEnums の自動応答</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.Seek.AFTEREQ</p></td>
+<td><p>AdoEnums eq</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.Seek.AFTER</p></td>
+<td><p>AdoEnums</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.Seek.BEFOREEQ</p></td>
+<td><p>AdoEnums eq</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.Seek.BEFORE</p></td>
+<td><p>AdoEnums</p></td>
 </tr>
 </tbody>
 </table>

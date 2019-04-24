@@ -12,34 +12,34 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 262e6781b61018cec3d52dbb930f380d3ff5bd85
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289750"
 ---
 # <a name="maximizewindow-macro-action"></a>MaximizeWindow マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-タブ付きドキュメントではなく重ねて表示されるウィンドウを使用するアクセスを構成する場合は、Access ウィンドウ全体に表示されるので、作業中のウィンドウを拡大する**MaximizeWindow**アクションを使用できます。 このアクションを使用すると、アクティブ ウィンドウ内でのオブジェクトの表示範囲を拡大できます。
+タブ付きドキュメントではなく、重なっているウィンドウを使用するように Access が構成されている場合は、[**最大化] ウィンドウ**アクションを使用してアクティブウィンドウを拡大し、access ウィンドウに表示されるようにすることができます。 このアクションを使用すると、アクティブ ウィンドウ内でのオブジェクトの表示範囲を拡大できます。
 
 > [!NOTE]
 > [!メモ] このアクションは、Visual Basic Editor のコード ウィンドウには適用できません。コード ウィンドウへの影響の詳細については、 **WindowState** プロパティのトピックを参照してください。
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**MaximizeWindow**アクション引数はありません。
+"MaximizeWindow/ウィンドウの最大化" アクションには、引数はありません。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このアクションは、ウィンドウの右上隅の [**最大化**] ボタンをクリックするか、[**コントロール**] メニューのウィンドウの**最大化**をクリックすると同じです。
+This action has the same effect as clicking the **Maximize** button in the window's upper-right corner or clicking **Maximize** on the window's **Control** menu.
 
-**RestoreWindow**アクションを使用すると、元のサイズを最大化したウィンドウを復元します。
+You can use the **RestoreWindow** action to restore a maximized window to its previous size.
 
 > [!TIP]
-> - アクティブ ウィンドウ以外のウィンドウを最大化したい場合は、 **SelectObject**アクションを使用する必要があります。
-> - Access で 1 つのウィンドウを最大化すると、その他のウィンドウを開くときやその他のウィンドウに切り替えたときにも、それらのウィンドウはすべて最大化されます。 ただし、ポップアップ フォームは最大化されません。 他のウィンドウが最大化されたときにそのサイズを維持するためにフォームを実行する場合に、 **[はい]** に、[ **PopUp** ] プロパティを設定します。
+> - You may need to use the **SelectObject** action if the window you want to maximize isn't the active window.
+> - When you maximize a window in Access, all other windows are also maximized when you open them or switch to them. However, pop-up forms aren't maximized. If you want a form to maintain its size when other windows are maximized, set its **PopUp** property to **Yes**.
 
-モジュールの Visual Basic for Applications の**MaximizeWindow**アクションを実行するには、 **DoCmd**オブジェクトの**最大化**の方法を使用します。
+To run the **MaximizeWindow** action in a Visual Basic for Applications module, use the **Maximize** method of the **DoCmd** object.
 

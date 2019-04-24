@@ -1,5 +1,5 @@
 ---
-title: ドキュメントのオブジェクト (DAO) を参照
+title: Documents オブジェクト参照 (DAO)
 TOCTitle: Documents Object
 ms:assetid: 62d40d09-9083-4ddd-b08d-12e45092d029
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn142217(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4fac59c6753162af5d18ea5ce9bb6c3fd66d11f1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293715"
 ---
-# <a name="documents-object-reference-dao"></a>ドキュメントのオブジェクト (DAO) を参照
+# <a name="documents-object-reference-dao"></a>Documents オブジェクト参照 (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-- [ドキュメント コレクション (DAO)](documents-collection-dao.md)
-- [ドキュメントのメンバー (DAO)](documents-members-dao.md)
-- [ドキュメントのプロパティ (DAO)](documents-properties-dao.md)
-- [ドキュメントの方法 (DAO)](documents-methods-dao.md)
+- [Documents コレクション (DAO)](documents-collection-dao.md)
+- [Documents メンバー (DAO)](documents-members-dao.md)
+- [Documents プロパティ (DAO)](documents-properties-dao.md)
+- [Documents メソッド (DAO)](documents-methods-dao.md)
 

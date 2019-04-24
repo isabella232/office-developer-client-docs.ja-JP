@@ -1,5 +1,5 @@
 ---
-title: Database.PopulatePartial メソッド (DAO)
+title: PopulatePartial メソッド (DAO)
 TOCTitle: PopulatePartial Method
 ms:assetid: fa3227a2-c961-6a98-32b3-5b6e5329a21d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837034(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 9e0f77c356e0a13c2a1a83986a92c2b25029ecb4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294800"
 ---
-# <a name="databasepopulatepartial-method-dao"></a>Database.PopulatePartial メソッド (DAO)
+# <a name="databasepopulatepartial-method-dao"></a>PopulatePartial メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 部分レプリカ内の変更をフル レプリカと同期させ、部分レプリカ内のすべてのレコードを消去し、現在のレプリカ フィルターに基づいて部分レプリカのデータを再設定します (Microsoft Office Access データベース エンジンのデータベースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。PopulatePartial (***DbPathName***)
+*式*。PopulatePartial (***dbpathname***)
 
-*式***データベース**オブジェクトを表す変数です。
+*式***Database**オブジェクトを表す変数を取得します。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -60,7 +60,7 @@ ms.locfileid: "28709923"
 
 ## <a name="remarks"></a>注釈
 
-部分レプリカとフル レプリカを同期させると、部分レプリカ内に "孤立化した" レコードが作成されることがあります。 たとえばに、 **[ReplicaFilter](tabledef-replicafilter-property-dao.md)** で、[得意先] テーブルがある場合」領域 = 'CA'"です。 ユーザーが部分レプリカで得意先の地域を CA から NY に変更し、その後、 **[Synchronize](database-synchronize-method-dao.md)** メソッドを使用して同期が行われた場合、この変更がフル レプリカに反映されますが、部分レプリカ内で NY を持つレコードはレプリカのフィルター抽出条件に一致しなくなるため、孤立化します。
+部分レプリカとフル レプリカを同期させると、部分レプリカ内に "孤立化した" レコードが作成されることがあります。 たとえば、 **[ReplicaFilter](tabledef-replicafilter-property-dao.md)** が "Region = ' CA '" に設定されている Customers テーブルがあるとします。 ユーザーが部分レプリカで得意先の地域を CA から NY に変更し、その後、 **[Synchronize](database-synchronize-method-dao.md)** メソッドを使用して同期が行われた場合、この変更がフル レプリカに反映されますが、部分レプリカ内で NY を持つレコードはレプリカのフィルター抽出条件に一致しなくなるため、孤立化します。
 
 孤立化したレコードの問題を解決するには、 **PopulatePartial** メソッドを使用します。 **PopulatePartial** メソッドは **Synchronize** メソッドと似ていますが、すべての変更をフル レプリカと同期させ、部分レプリカ内のすべてのレコードを削除し、現在のレプリカ フィルターに基づいて部分レプリカを再設定します。レプリカ フィルターが変更されていない場合でも、 **PopulatePartial** は必ず部分レプリカ内のすべてのレコードを消去し、現在のフィルターに基づいて部分レプリカを再設定します。
 

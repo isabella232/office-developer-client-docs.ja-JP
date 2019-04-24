@@ -1,5 +1,5 @@
 ---
-title: Recordsets.Count プロパティ (DAO)
+title: Recordsets プロパティ (DAO)
 TOCTitle: Count Property
 ms:assetid: 4362aa16-c8e9-e517-887e-c4532bd1eef9
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192940(v=office.15)
@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a81c1ede8a3afb95e39b2c33fb8112119faf8bd8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309291"
 ---
-# <a name="recordsetscount-property-dao"></a>Recordsets.Count プロパティ (DAO)
+# <a name="recordsetscount-property-dao"></a>Recordsets プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-指定したコレクション内のオブジェクトの数を取得します。整数型 ( **Integer**) の値を使用します。
+指定したコレクション内のオブジェクトの数を取得します。 整数型 ( **Integer**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。カウント
+*式*。量
 
-*式***レコード セット**オブジェクトを表す変数です。
+*式***recordset**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 

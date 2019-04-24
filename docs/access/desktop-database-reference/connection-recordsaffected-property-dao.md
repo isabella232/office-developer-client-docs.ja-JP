@@ -1,5 +1,5 @@
 ---
-title: Connection.RecordsAffected プロパティ (DAO)
+title: RecordsAffected プロパティ (DAO)
 TOCTitle: RecordsAffected Property
 ms:assetid: abce8e96-9ed4-b162-207f-52605d7af8ee
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821486(v=office.15)
@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9f401620cf57ffe15bc2d1dbee0dde0f4af8a3db
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295815"
 ---
-# <a name="connectionrecordsaffected-property-dao"></a>Connection.RecordsAffected プロパティ (DAO)
+# <a name="connectionrecordsaffected-property-dao"></a>RecordsAffected プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-直前に呼び出された **[Execute](connection-execute-method-dao.md)** メソッドの影響を受けるレコード数を返します。
+最後に呼び出した **[Execute](connection-execute-method-dao.md)** メソッドの処理対象となったレコードの数を取得します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。RecordsAffected
+*式*。RecordsAffected
 
-*式***接続**オブジェクトを表す変数です。
+*式***Connection**オブジェクトを表す変数を取得します。
 
