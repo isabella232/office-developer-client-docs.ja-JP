@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c2d8af2ac4dc49d8ff2236ac49f372864d0d21f6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293281"
 ---
-# <a name="execute-requery-and-clear-methods-example-vj"></a><span data-ttu-id="5410a-102">Execute メソッド、Requery メソッド、Clear メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="5410a-102">Execute, Requery, and Clear methods example (VJ++)</span></span>
+# <a name="execute-requery-and-clear-methods-example-vj"></a><span data-ttu-id="eb644-102">Execute メソッド、Requery メソッド、Clear メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="eb644-102">Execute, Requery, and Clear methods example (VJ++)</span></span>
 
 
-<span data-ttu-id="5410a-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="5410a-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="eb644-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="eb644-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="5410a-104">この例では、[コマンド](command-object-ado.md)オブジェクトと[接続](connection-object-ado.md)オブジェクトの両方から実行した場合は、 **Execute**メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="5410a-104">This example demonstrates the **Execute** method when run from both a [Command](command-object-ado.md) object and a [Connection](connection-object-ado.md) object.</span></span> <span data-ttu-id="5410a-105">また、 [Requery](requery-method-ado.md)メソッド、レコード セット内の現在のデータを取得して、 [Errors](errors-collection-ado.md)コレクションの内容を消去するのには、 [Clear](clear-method-ado.md)メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="5410a-105">It also uses the [Requery](requery-method-ado.md) method to retrieve current data in a recordset, and the [Clear](clear-method-ado.md) method to clear the contents of the [Errors](errors-collection-ado.md) collection.</span></span> <span data-ttu-id="5410a-106">ExecuteCommand プロシージャおよび PrintOutput プロシージャは、この手順を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5410a-106">The ExecuteCommand and PrintOutput procedures are required for this procedure to run.</span></span>
+<span data-ttu-id="eb644-p101">This example demonstrates the **Execute** method when run from both a [Command](command-object-ado.md) object and a [Connection](connection-object-ado.md) object. It also uses the [Requery](requery-method-ado.md) method to retrieve current data in a recordset, and the [Clear](clear-method-ado.md) method to clear the contents of the [Errors](errors-collection-ado.md) collection. The ExecuteCommand and PrintOutput procedures are required for this procedure to run.</span><span class="sxs-lookup"><span data-stu-id="eb644-p101">This example demonstrates the **Execute** method when run from both a [Command](command-object-ado.md) object and a [Connection](connection-object-ado.md) object. It also uses the [Requery](requery-method-ado.md) method to retrieve current data in a recordset, and the [Clear](clear-method-ado.md) method to clear the contents of the [Errors](errors-collection-ado.md) collection. The ExecuteCommand and PrintOutput procedures are required for this procedure to run.</span></span>
 
 ```java 
  

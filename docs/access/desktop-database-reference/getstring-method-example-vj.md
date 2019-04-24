@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 7af4670ad06f05fedc576f1b2ba0d627d71d7292
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292175"
 ---
-# <a name="getstring-method-example-vj"></a><span data-ttu-id="2c82c-102">GetString メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="2c82c-102">GetString method example (VJ++)</span></span>
+# <a name="getstring-method-example-vj"></a><span data-ttu-id="90fff-102">GetString メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="90fff-102">GetString method example (VJ++)</span></span>
 
 
-<span data-ttu-id="2c82c-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="2c82c-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="90fff-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="90fff-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="2c82c-104">この例では、[GetString](getstring-method-ado.md) メソッドの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="2c82c-104">This example demonstrates the [GetString](getstring-method-ado.md) method.</span></span>
+<span data-ttu-id="90fff-104">この例では、[GetString](getstring-method-ado.md) メソッドの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="90fff-104">This example demonstrates the [GetString](getstring-method-ado.md) method.</span></span>
 
-<span data-ttu-id="2c82c-105">データ アクセスの問題をデバッグ中で、小規模な [Recordset](recordset-object-ado.md) の現在の内容をすばやく簡単に出力することを想定しています。</span><span class="sxs-lookup"><span data-stu-id="2c82c-105">Assume you are debugging a data access problem and want a quick, simple way of printing the current contents of a small [Recordset](recordset-object-ado.md).</span></span>
+<span data-ttu-id="90fff-105">データ アクセスの問題をデバッグ中で、小規模な [Recordset](recordset-object-ado.md) の現在の内容をすばやく簡単に出力することを想定しています。</span><span class="sxs-lookup"><span data-stu-id="90fff-105">Assume you are debugging a data access problem and want a quick, simple way of printing the current contents of a small [Recordset](recordset-object-ado.md).</span></span>
 
 ```java 
  

@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b1e7d18f8068e3ea12d74eca9d208764662765df
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292364"
 ---
-# <a name="find-method-example-vc"></a><span data-ttu-id="6e3c9-102">Find メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="6e3c9-102">Find method example (VC++)</span></span>
+# <a name="find-method-example-vc"></a><span data-ttu-id="a8c2b-102">Find メソッドの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="a8c2b-102">Find method example (VC++)</span></span>
 
 
-<span data-ttu-id="6e3c9-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="6e3c9-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="a8c2b-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="a8c2b-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="6e3c9-104">この例では、[レコード セット](recordset-object-ado.md)オブジェクトの[Find](find-method-ado.md)メソッドを使用して、検索して、 ***Pubs***データベース内のビジネス書籍の数をカウントします。</span><span class="sxs-lookup"><span data-stu-id="6e3c9-104">This example uses the [Recordset](recordset-object-ado.md) object's [Find](find-method-ado.md) method to locate and count the number of business titles in the ***Pubs*** database.</span></span> <span data-ttu-id="6e3c9-105">基になるプロバイダーは同様の機能をサポートしていないものと仮定します。</span><span class="sxs-lookup"><span data-stu-id="6e3c9-105">The example assumes the underlying provider does not support similar functionality.</span></span>
+<span data-ttu-id="a8c2b-104">この例では、[Recordset](recordset-object-ado.md) オブジェクトの [Find](find-method-ado.md) メソッドを使用して ***Pubs*** データベースを検索し、役職の数をカウントします。</span><span class="sxs-lookup"><span data-stu-id="a8c2b-104">This example uses the [Recordset](recordset-object-ado.md) object's [Find](find-method-ado.md) method to locate and count the number of business titles in the ***Pubs*** database.</span></span> <span data-ttu-id="a8c2b-105">基になるプロバイダーは同様の機能をサポートしていないものと仮定します。</span><span class="sxs-lookup"><span data-stu-id="a8c2b-105">The example assumes the underlying provider does not support similar functionality.</span></span>
 
 ```cpp 
  
@@ -188,7 +188,7 @@ void PrintComError(_com_error &e)
 // EndFindCpp 
 ```
 
-<span data-ttu-id="6e3c9-106">**FindX.h**</span><span class="sxs-lookup"><span data-stu-id="6e3c9-106">**FindX.h**</span></span>
+<span data-ttu-id="a8c2b-106">**findx .h**</span><span class="sxs-lookup"><span data-stu-id="a8c2b-106">**FindX.h**</span></span>
 
 ```cpp 
  

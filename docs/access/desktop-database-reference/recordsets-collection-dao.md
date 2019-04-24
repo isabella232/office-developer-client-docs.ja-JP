@@ -1,5 +1,5 @@
 ---
-title: レコード セット コレクション (DAO)
+title: Recordsets コレクション (DAO)
 TOCTitle: Recordsets Collection
 ms:assetid: 246d9a78-4ce8-6393-982b-77ac00cd85bb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff191819(v=office.15)
@@ -8,40 +8,40 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3b935e05264497c7ad09ada4a8c50c775845857b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309304"
 ---
-# <a name="recordsets-collection-dao"></a><span data-ttu-id="aad44-102">レコード セット コレクション (DAO)</span><span class="sxs-lookup"><span data-stu-id="aad44-102">Recordsets collection (DAO)</span></span>
+# <a name="recordsets-collection-dao"></a><span data-ttu-id="df3fb-102">Recordsets コレクション (DAO)</span><span class="sxs-lookup"><span data-stu-id="df3fb-102">Recordsets collection (DAO)</span></span>
 
-<span data-ttu-id="aad44-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="aad44-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="df3fb-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="df3fb-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="aad44-104">**Recordsets** コレクションには、 **Connection** または **Database** オブジェクト内のすべての開いている **Recordset** オブジェクトが含まれます。</span><span class="sxs-lookup"><span data-stu-id="aad44-104">A **Recordsets** collection contains all open **Recordset** objects in a **Connection** or **Database** object.</span></span>
+<span data-ttu-id="df3fb-104">**Recordsets** コレクションには、 **Connection** または **Database** オブジェクト内のすべての開いている **Recordset** オブジェクトが含まれます。</span><span class="sxs-lookup"><span data-stu-id="df3fb-104">A **Recordsets** collection contains all open **Recordset** objects in a **Connection** or **Database** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="aad44-105">注釈</span><span class="sxs-lookup"><span data-stu-id="aad44-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="df3fb-105">注釈</span><span class="sxs-lookup"><span data-stu-id="df3fb-105">Remarks</span></span>
 
-<span data-ttu-id="aad44-106">DAO オブジェクトを使用する場合は、 **Recordset** オブジェクトを使用してほぼすべてのデータを操作します。</span><span class="sxs-lookup"><span data-stu-id="aad44-106">When you use DAO objects, you manipulate data almost entirely using **Recordset** objects.</span></span>
+<span data-ttu-id="df3fb-106">DAO オブジェクトを使用する場合は、 **Recordset** オブジェクトを使用してほぼすべてのデータを操作します。</span><span class="sxs-lookup"><span data-stu-id="df3fb-106">When you use DAO objects, you manipulate data almost entirely using **Recordset** objects.</span></span>
 
-<span data-ttu-id="aad44-107">新しい **Recordset** オブジェクトは、 **Recordset** オブジェクトを開いたときに **Recordsets** コレクションに自動的に追加され、オブジェクトを閉じたときに自動的に削除されます。</span><span class="sxs-lookup"><span data-stu-id="aad44-107">A new **Recordset** object is automatically added to the **Recordsets** collection when you open the **Recordset** object, and is automatically removed when you close it.</span></span>
+<span data-ttu-id="df3fb-107">新しい **Recordset** オブジェクトは、 **Recordset** オブジェクトを開いたときに **Recordsets** コレクションに自動的に追加され、オブジェクトを閉じたときに自動的に削除されます。</span><span class="sxs-lookup"><span data-stu-id="df3fb-107">A new **Recordset** object is automatically added to the **Recordsets** collection when you open the **Recordset** object, and is automatically removed when you close it.</span></span>
 
-<span data-ttu-id="aad44-p101">**Recordset** オブジェクト変数は必要な数だけ作成できます。異なる **Recordset** オブジェクトでも、競合せずに同じテーブル、クエリ、およびフィールドにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="aad44-p101">You can create as many **Recordset** object variables as needed. Different **Recordset** objects can access the same tables, queries, and fields without conflicting.</span></span>
+<span data-ttu-id="df3fb-p101">**Recordset** オブジェクト変数は必要な数だけ作成できます。異なる **Recordset** オブジェクトでも、競合せずに同じテーブル、クエリ、およびフィールドにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="df3fb-p101">You can create as many **Recordset** object variables as needed. Different **Recordset** objects can access the same tables, queries, and fields without conflicting.</span></span>
 
-<span data-ttu-id="aad44-110">コレクション内の **Recordset** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="aad44-110">To refer to a **Recordset** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
+<span data-ttu-id="df3fb-110">コレクション内の **Recordset** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="df3fb-110">To refer to a **Recordset** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
 
-- <span data-ttu-id="aad44-111">**Recordsets**(0)</span><span class="sxs-lookup"><span data-stu-id="aad44-111">**Recordsets**(0)</span></span>
+- <span data-ttu-id="df3fb-111">**Recordsets**(0)</span><span class="sxs-lookup"><span data-stu-id="df3fb-111">**Recordsets**(0)</span></span>
 
-- <span data-ttu-id="aad44-112">**レコード セット**("name")</span><span class="sxs-lookup"><span data-stu-id="aad44-112">**Recordsets**("name")</span></span>
+- <span data-ttu-id="df3fb-112">**Recordsets**("name")</span><span class="sxs-lookup"><span data-stu-id="df3fb-112">**Recordsets**("name")</span></span>
 
-- <span data-ttu-id="aad44-113">**レコード セット**\!\[名\]</span><span class="sxs-lookup"><span data-stu-id="aad44-113">**Recordsets**\!\[name\]</span></span>
+- <span data-ttu-id="df3fb-113">**レコードセット**\!\[名\]</span><span class="sxs-lookup"><span data-stu-id="df3fb-113">**Recordsets**\!\[name\]</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="aad44-p102">[!メモ] 同じデータ ソースまたはデータベースから **Recordset** オブジェクトを複数回開いて、 **Recordsets** コレクションに重複する名前を作成できます。 **Recordset** オブジェクトをオブジェクト変数に割り当て、変数名で参照する必要があります。</span><span class="sxs-lookup"><span data-stu-id="aad44-p102">You can open a **Recordset** object from the same data source or database more than once, creating duplicate names in the **Recordsets** collection. You should assign **Recordset** objects to object variables and refer to them by variable name.</span></span>
+> <span data-ttu-id="df3fb-p102">[!メモ] 同じデータ ソースまたはデータベースから **Recordset** オブジェクトを複数回開いて、 **Recordsets** コレクションに重複する名前を作成できます。 **Recordset** オブジェクトをオブジェクト変数に割り当て、変数名で参照する必要があります。</span><span class="sxs-lookup"><span data-stu-id="df3fb-p102">You can open a **Recordset** object from the same data source or database more than once, creating duplicate names in the **Recordsets** collection. You should assign **Recordset** objects to object variables and refer to them by variable name.</span></span>
 
-## <a name="example"></a><span data-ttu-id="aad44-116">例</span><span class="sxs-lookup"><span data-stu-id="aad44-116">Example</span></span>
+## <a name="example"></a><span data-ttu-id="df3fb-116">例</span><span class="sxs-lookup"><span data-stu-id="df3fb-116">Example</span></span>
 
-<span data-ttu-id="aad44-117">次の使用例は、4 種類の **Recordset** オブジェクトを開き、現在の **Recordsets** オブジェクトの Recordsets コレクションを列挙して、各 **Recordsets** オブジェクトの **Database** コレクションを列挙することで、 **Properties** オブジェクトおよび **Recordset** コレクションを示します。</span><span class="sxs-lookup"><span data-stu-id="aad44-117">This example demonstrates **Recordset** objects and the **Recordsets** collection by opening four different types of **Recordsets**, enumerating the Recordsets collection of the current **Database**, and enumerating the **Properties** collection of each **Recordset**.</span></span>
+<span data-ttu-id="df3fb-117">次の使用例は、4 種類の **Recordset** オブジェクトを開き、現在の **Recordsets** オブジェクトの Recordsets コレクションを列挙して、各 **Recordsets** オブジェクトの **Database** コレクションを列挙することで、 **Properties** オブジェクトおよび **Recordset** コレクションを示します。</span><span class="sxs-lookup"><span data-stu-id="df3fb-117">This example demonstrates **Recordset** objects and the **Recordsets** collection by opening four different types of **Recordsets**, enumerating the Recordsets collection of the current **Database**, and enumerating the **Properties** collection of each **Recordset**.</span></span>
 
 ```vb
     Sub RecordsetX() 

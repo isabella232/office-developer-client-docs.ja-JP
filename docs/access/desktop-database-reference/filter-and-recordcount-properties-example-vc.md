@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d97c653f1bbcdc648de4641f7faf3b9e8fcb2d64
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292469"
 ---
-# <a name="filter-and-recordcount-properties-example-vc"></a><span data-ttu-id="13393-102">Filter プロパティと RecordCount プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="13393-102">Filter and RecordCount properties example (VC++)</span></span>
+# <a name="filter-and-recordcount-properties-example-vc"></a><span data-ttu-id="3bfcf-102">Filter プロパティと RecordCount プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="3bfcf-102">Filter and RecordCount properties example (VC++)</span></span>
 
 
-<span data-ttu-id="13393-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="13393-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="3bfcf-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="3bfcf-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="13393-p101">この例では、[Filter](filter-property-ado.md) プロパティを使って、既存の [Recordset](recordset-object-ado.md) に適用されている特定の条件に基づいて新規 **Recordset** を開きます。この例では、 [RecordCount](recordcount-property-ado.md) プロパティを使って、2 つの **Recordset** 内のレコードの数を示します。このプロシージャを実行するには、FilterField 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="13393-p101">This example uses the [Filter](filter-property-ado.md) property to open a new [Recordset](recordset-object-ado.md) based on a specified condition applied to an existing **Recordset**. It uses the [RecordCount](recordcount-property-ado.md) property to show the number of records in the two **Recordsets**. The FilterField function is required for this procedure to run.</span></span>
+<span data-ttu-id="3bfcf-p101">この例では、[Filter](filter-property-ado.md) プロパティを使って、既存の [Recordset](recordset-object-ado.md) に適用されている特定の条件に基づいて新規 **Recordset** を開きます。この例では、 [RecordCount](recordcount-property-ado.md) プロパティを使って、2 つの **Recordset** 内のレコードの数を示します。このプロシージャを実行するには、FilterField 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="3bfcf-p101">This example uses the [Filter](filter-property-ado.md) property to open a new [Recordset](recordset-object-ado.md) based on a specified condition applied to an existing **Recordset**. It uses the [RecordCount](recordcount-property-ado.md) property to show the number of records in the two **Recordsets**. The FilterField function is required for this procedure to run.</span></span>
 
 ```cpp 
  
@@ -320,7 +320,7 @@ void PrintComError(_com_error &e)
 // EndFilterCpp 
 ```
 
-<span data-ttu-id="13393-107">**FilterX.h**</span><span class="sxs-lookup"><span data-stu-id="13393-107">**FilterX.h**</span></span>
+<span data-ttu-id="3bfcf-107">**filterx .h**</span><span class="sxs-lookup"><span data-stu-id="3bfcf-107">**FilterX.h**</span></span>
 
 ```cpp 
  

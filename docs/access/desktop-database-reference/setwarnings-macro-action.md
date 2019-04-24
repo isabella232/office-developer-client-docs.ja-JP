@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: acf541bde41c282b752532cb74d5ec4fa4a13ca9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308660"
 ---
-# <a name="setwarnings-macro-action"></a><span data-ttu-id="655aa-102">SetWarnings マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="655aa-102">SetWarnings macro action</span></span>
+# <a name="setwarnings-macro-action"></a><span data-ttu-id="b042d-102">SetWarnings マクロ アクション</span><span class="sxs-lookup"><span data-stu-id="b042d-102">SetWarnings macro action</span></span>
 
-<span data-ttu-id="655aa-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="655aa-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="b042d-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="b042d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="655aa-104">**よって**を使用すると、システム メッセージを有効または無効にします。</span><span class="sxs-lookup"><span data-stu-id="655aa-104">You can use the **SetWarnings** action to turn system messages on or off.</span></span>
+<span data-ttu-id="b042d-104">You can use the **SetWarnings** action to turn system messages on or off.</span><span class="sxs-lookup"><span data-stu-id="b042d-104">You can use the **SetWarnings** action to turn system messages on or off.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="655aa-105">[!メモ] データベースが信頼されていない場合、このアクションは許可されません。</span><span class="sxs-lookup"><span data-stu-id="655aa-105">This action will not be allowed if the database is not trusted.</span></span> 
+> <span data-ttu-id="b042d-105">[!メモ] データベースが信頼されていない場合、このアクションは許可されません。</span><span class="sxs-lookup"><span data-stu-id="b042d-105">This action will not be allowed if the database is not trusted.</span></span> 
 
-## <a name="setting"></a><span data-ttu-id="655aa-106">設定値</span><span class="sxs-lookup"><span data-stu-id="655aa-106">Setting</span></span>
+## <a name="setting"></a><span data-ttu-id="b042d-106">設定値</span><span class="sxs-lookup"><span data-stu-id="b042d-106">Setting</span></span>
 
-<span data-ttu-id="655aa-107">**よって**では、次の引数があります。</span><span class="sxs-lookup"><span data-stu-id="655aa-107">The **SetWarnings** action has the following argument.</span></span>
+<span data-ttu-id="b042d-107">"SetWarnings/メッセージの設定" アクションの引数は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="b042d-107">The **SetWarnings** action has the following argument.</span></span>
 
 <table>
 <colgroup>
@@ -38,31 +38,31 @@ ms.locfileid: "28710406"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="655aa-108">アクションの引数</span><span class="sxs-lookup"><span data-stu-id="655aa-108">Action argument</span></span></p></th>
-<th><p><span data-ttu-id="655aa-109">説明</span><span class="sxs-lookup"><span data-stu-id="655aa-109">Description</span></span></p></th>
+<th><p><span data-ttu-id="b042d-108">アクションの引数</span><span class="sxs-lookup"><span data-stu-id="b042d-108">Action argument</span></span></p></th>
+<th><p><span data-ttu-id="b042d-109">説明</span><span class="sxs-lookup"><span data-stu-id="b042d-109">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="655aa-110"><strong>Warnings On/メッセージの表示</strong></span><span class="sxs-lookup"><span data-stu-id="655aa-110"><strong>Warnings On</strong></span></span></p></td>
-<td><p><span data-ttu-id="655aa-p101">システム メッセージを表示するかどうかを指定します。[マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] にある [<strong>メッセージの表示</strong>] ボックスで、システム メッセージを表示する場合は [<strong>はい</strong>]、システム メッセージを表示しない場合は [<strong>いいえ</strong>] をクリックします。既定値は [<strong>いいえ</strong>] です。</span><span class="sxs-lookup"><span data-stu-id="655aa-p101">Specifies whether system messages are displayed. Click <strong>Yes</strong> (to turn on system messages) or <strong>No</strong> (to turn off system messages) in the <strong>Warnings On</strong> box in the <strong>Action Arguments</strong> section of the Macro Builder Pane. The default is <strong>No</strong>.</span></span></p></td>
+<td><p><span data-ttu-id="b042d-110"><strong>Warnings On/メッセージの表示</strong></span><span class="sxs-lookup"><span data-stu-id="b042d-110"><strong>Warnings On</strong></span></span></p></td>
+<td><p><span data-ttu-id="b042d-p101">システム メッセージを表示するかどうかを指定します。[マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] にある [<strong>メッセージの表示</strong>] ボックスで、システム メッセージを表示する場合は [<strong>はい</strong>]、システム メッセージを表示しない場合は [<strong>いいえ</strong>] をクリックします。既定値は [<strong>いいえ</strong>] です。</span><span class="sxs-lookup"><span data-stu-id="b042d-p101">Specifies whether system messages are displayed. Click <strong>Yes</strong> (to turn on system messages) or <strong>No</strong> (to turn off system messages) in the <strong>Warnings On</strong> box in the <strong>Action Arguments</strong> section of the Macro Builder Pane. The default is <strong>No</strong>.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="655aa-114">解説</span><span class="sxs-lookup"><span data-stu-id="655aa-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b042d-114">注釈</span><span class="sxs-lookup"><span data-stu-id="b042d-114">Remarks</span></span>
 
-<span data-ttu-id="655aa-p102">このアクションを使用すると、モーダルな通知やメッセージ ボックスによってマクロが停止しないようにすることができます。ただし、エラー メッセージは常に表示されます。また、[ **OK**]、[ **キャンセル**]、[ **はい**]、[ **いいえ**] などのボタンをクリックする以外に、テキストの入力やオプションの選択を必要とするダイアログ ボックスも表示されます。</span><span class="sxs-lookup"><span data-stu-id="655aa-p102">You can use this action to prevent modal warnings and message boxes from stopping the macro. However, error messages are always displayed. Also, Microsoft Access displays any dialog boxes that require input other than just choosing a button (such as **OK**, **Cancel**, **Yes**, or **No**) — for example, any dialog box that requires you to enter text or select one of several options.</span></span>
+<span data-ttu-id="b042d-p102">このアクションを使用すると、モーダルな通知やメッセージ ボックスによってマクロが停止しないようにすることができます。ただし、エラー メッセージは常に表示されます。また、[ **OK**]、[ **キャンセル**]、[ **はい**]、[ **いいえ**] などのボタンをクリックする以外に、テキストの入力やオプションの選択を必要とするダイアログ ボックスも表示されます。</span><span class="sxs-lookup"><span data-stu-id="b042d-p102">You can use this action to prevent modal warnings and message boxes from stopping the macro. However, error messages are always displayed. Also, Microsoft Access displays any dialog boxes that require input other than just choosing a button (such as **OK**, **Cancel**, **Yes**, or **No**) — for example, any dialog box that requires you to enter text or select one of several options.</span></span>
 
-<span data-ttu-id="655aa-p103">"Warnings On/メッセージの表示" 引数を [ **いいえ**] に設定してこのアクションを実行すると、通知やメッセージ ボックスが表示されたときに **Enter** キーを押した場合と同じ動作になります。通常、通知やメッセージが表示された場合は、[ **OK**] ボタンまたは [ **はい**] ボタンを選択します。</span><span class="sxs-lookup"><span data-stu-id="655aa-p103">Carrying out this action with the **Warnings On** argument set to **No** has the same effect as pressing ENTER whenever a warning or message box is displayed. Typically, an **OK** or **Yes** button is chosen in response to the warning or message.</span></span>
+<span data-ttu-id="b042d-p103">"Warnings On/メッセージの表示" 引数を [ **いいえ**] に設定してこのアクションを実行すると、通知やメッセージ ボックスが表示されたときに **Enter** キーを押した場合と同じ動作になります。通常、通知やメッセージが表示された場合は、[ **OK**] ボタンまたは [ **はい**] ボタンを選択します。</span><span class="sxs-lookup"><span data-stu-id="b042d-p103">Carrying out this action with the **Warnings On** argument set to **No** has the same effect as pressing ENTER whenever a warning or message box is displayed. Typically, an **OK** or **Yes** button is chosen in response to the warning or message.</span></span>
 
-<span data-ttu-id="655aa-120">マクロが完了すると、自動的にシステム メッセージの表示がオンに戻ります。</span><span class="sxs-lookup"><span data-stu-id="655aa-120">When the macro finishes, Access automatically turns the display of system messages back on.</span></span>
+<span data-ttu-id="b042d-120">マクロが完了すると、自動的にシステム メッセージの表示がオンに戻ります。</span><span class="sxs-lookup"><span data-stu-id="b042d-120">When the macro finishes, Access automatically turns the display of system messages back on.</span></span>
 
-<span data-ttu-id="655aa-121">多くの場合、それが完了するまで、マクロの結果を非表示にする**エコー**のアクションでは、このアクションを使用します。</span><span class="sxs-lookup"><span data-stu-id="655aa-121">Often, you'll use this action with the **Echo** action, which hides the results of a macro until it's finished.</span></span> <span data-ttu-id="655aa-122">**よって**を使用すると、警告と同様のメッセージ ボックスを非表示にします。</span><span class="sxs-lookup"><span data-stu-id="655aa-122">You can use the **SetWarnings** action to hide the warnings and message boxes as well.</span></span>
+<span data-ttu-id="b042d-p104">Often, you'll use this action with the **Echo** action, which hides the results of a macro until it's finished. You can use the **SetWarnings** action to hide the warnings and message boxes as well.</span><span class="sxs-lookup"><span data-stu-id="b042d-p104">Often, you'll use this action with the **Echo** action, which hides the results of a macro until it's finished. You can use the **SetWarnings** action to hide the warnings and message boxes as well.</span></span>
 
 > [!WARNING]
-> <span data-ttu-id="655aa-123">**よって**がマクロとのやりとりを簡略化できますが、システム メッセージを無効にするには注意が必要です。</span><span class="sxs-lookup"><span data-stu-id="655aa-123">Although the **SetWarnings** action can simplify interactions with macros, you must be careful about turning system messages off.</span></span> <span data-ttu-id="655aa-124">状況によっては、特定の警告メッセージが表示される場合は、マクロを続行するはありません。</span><span class="sxs-lookup"><span data-stu-id="655aa-124">In some situations, you won't want to continue a macro if a certain warning message is displayed.</span></span> <span data-ttu-id="655aa-125">しない限り、すべてのマクロ アクションの結果を確実に把握して、このアクションの使用を避ける必要があります。</span><span class="sxs-lookup"><span data-stu-id="655aa-125">Unless you're confident of the outcome of all macro actions, you should avoid using this action.</span></span>
+> <span data-ttu-id="b042d-p105">Although the **SetWarnings** action can simplify interactions with macros, you must be careful about turning system messages off. In some situations, you won't want to continue a macro if a certain warning message is displayed. Unless you're confident of the outcome of all macro actions, you should avoid using this action.</span><span class="sxs-lookup"><span data-stu-id="b042d-p105">Although the **SetWarnings** action can simplify interactions with macros, you must be careful about turning system messages off. In some situations, you won't want to continue a macro if a certain warning message is displayed. Unless you're confident of the outcome of all macro actions, you should avoid using this action.</span></span>
 
-<span data-ttu-id="655aa-126">実行するには**よって**を Visual Basic for Applications (VBA) モジュールで**DoCmd**オブジェクトの**SetWarnings**メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="655aa-126">To run the **SetWarnings** action in a Visual Basic for Applications (VBA) module, use the **SetWarnings** method of the **DoCmd** object.</span></span>
+<span data-ttu-id="b042d-126">To run the **SetWarnings** action in a Visual Basic for Applications (VBA) module, use the **SetWarnings** method of the **DoCmd** object.</span><span class="sxs-lookup"><span data-stu-id="b042d-126">To run the **SetWarnings** action in a Visual Basic for Applications (VBA) module, use the **SetWarnings** method of the **DoCmd** object.</span></span>
 

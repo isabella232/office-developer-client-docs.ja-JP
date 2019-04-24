@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f7f20d27ddabad4d91e215537708328f75e98b34
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294247"
 ---
-# <a name="dbengine-object-reference-dao"></a><span data-ttu-id="4c20e-102">DBEngine オブジェクト参照 (DAO)</span><span class="sxs-lookup"><span data-stu-id="4c20e-102">DBEngine object reference (DAO)</span></span>
+# <a name="dbengine-object-reference-dao"></a><span data-ttu-id="c998d-102">DBEngine オブジェクト参照 (DAO)</span><span class="sxs-lookup"><span data-stu-id="c998d-102">DBEngine object reference (DAO)</span></span>
 
-<span data-ttu-id="4c20e-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="4c20e-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="c998d-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="c998d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="4c20e-104">DBEngine オブジェクト (DAO)</span><span class="sxs-lookup"><span data-stu-id="4c20e-104">DBEngine object (DAO)</span></span>](dbengine-object-dao.md)
-- [<span data-ttu-id="4c20e-105">DBEngine メンバー (DAO)</span><span class="sxs-lookup"><span data-stu-id="4c20e-105">DBEngine members (DAO)</span></span>](dbengine-members-dao.md)
-- [<span data-ttu-id="4c20e-106">DBEngine プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="4c20e-106">DBEngine properties (DAO)</span></span>](dbengine-properties-dao.md)
-- [<span data-ttu-id="4c20e-107">DBEngine の方法 (DAO)</span><span class="sxs-lookup"><span data-stu-id="4c20e-107">DBEngine methods (DAO)</span></span>](dbengine-methods-dao.md)
+- [<span data-ttu-id="c998d-104">DBEngine オブジェクト (DAO)</span><span class="sxs-lookup"><span data-stu-id="c998d-104">DBEngine object (DAO)</span></span>](dbengine-object-dao.md)
+- [<span data-ttu-id="c998d-105">DBEngine メンバー (DAO)</span><span class="sxs-lookup"><span data-stu-id="c998d-105">DBEngine members (DAO)</span></span>](dbengine-members-dao.md)
+- [<span data-ttu-id="c998d-106">DBEngine プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="c998d-106">DBEngine properties (DAO)</span></span>](dbengine-properties-dao.md)
+- [<span data-ttu-id="c998d-107">DBEngine メソッド (DAO)</span><span class="sxs-lookup"><span data-stu-id="c998d-107">DBEngine methods (DAO)</span></span>](dbengine-methods-dao.md)
 

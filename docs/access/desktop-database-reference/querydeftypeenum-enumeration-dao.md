@@ -1,5 +1,5 @@
 ---
-title: QueryDefTypeEnum 列挙型 (DAO)
+title: querydeftypeenum 列挙 (DAO)
 TOCTitle: QueryDefTypeEnum Enumeration
 ms:assetid: 4327af31-daa1-88a2-fef5-8894181eee8c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192931(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8ef030ff22bd323fbbb9b080c84878f98c587fcd
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300918"
 ---
-# <a name="querydeftypeenum-enumeration-dao"></a><span data-ttu-id="07c1c-102">QueryDefTypeEnum 列挙型 (DAO)</span><span class="sxs-lookup"><span data-stu-id="07c1c-102">QueryDefTypeEnum enumeration (DAO)</span></span>
+# <a name="querydeftypeenum-enumeration-dao"></a><span data-ttu-id="9c1db-102">querydeftypeenum 列挙 (DAO)</span><span class="sxs-lookup"><span data-stu-id="9c1db-102">QueryDefTypeEnum enumeration (DAO)</span></span>
 
 
-<span data-ttu-id="07c1c-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="07c1c-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="9c1db-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="9c1db-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="07c1c-104">" **Type**/種類" プロパティで、 **QueryDef** オブジェクトの種類を指定するために使用します。</span><span class="sxs-lookup"><span data-stu-id="07c1c-104">Used with the **Type** property to specify the type of **QueryDef** object.</span></span>
+<span data-ttu-id="9c1db-104">" **Type**/種類" プロパティで、 **QueryDef** オブジェクトの種類を指定するために使用します。</span><span class="sxs-lookup"><span data-stu-id="9c1db-104">Used with the **Type** property to specify the type of **QueryDef** object.</span></span>
 
 <table>
 <colgroup>
@@ -29,78 +29,76 @@ ms.locfileid: "28704799"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="07c1c-105">名前</span><span class="sxs-lookup"><span data-stu-id="07c1c-105">Name</span></span></p></th>
-<th><p><span data-ttu-id="07c1c-106">値</span><span class="sxs-lookup"><span data-stu-id="07c1c-106">Value</span></span></p></th>
-<th><p><span data-ttu-id="07c1c-107">説明</span><span class="sxs-lookup"><span data-stu-id="07c1c-107">Description</span></span></p></th>
+<th><p><span data-ttu-id="9c1db-105">名前</span><span class="sxs-lookup"><span data-stu-id="9c1db-105">Name</span></span></p></th>
+<th><p><span data-ttu-id="9c1db-106">値</span><span class="sxs-lookup"><span data-stu-id="9c1db-106">Value</span></span></p></th>
+<th><p><span data-ttu-id="9c1db-107">説明</span><span class="sxs-lookup"><span data-stu-id="9c1db-107">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="07c1c-108">dbQAction</span><span class="sxs-lookup"><span data-stu-id="07c1c-108">dbQAction</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-109">240</span><span class="sxs-lookup"><span data-stu-id="07c1c-109">240</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-110">アクション クエリ</span><span class="sxs-lookup"><span data-stu-id="07c1c-110">Action query</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-108">dbqaction</span><span class="sxs-lookup"><span data-stu-id="9c1db-108">dbQAction</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-109">240</span><span class="sxs-lookup"><span data-stu-id="9c1db-109">240</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-110">アクション クエリ</span><span class="sxs-lookup"><span data-stu-id="9c1db-110">Action query</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="07c1c-111">dbQAppend</span><span class="sxs-lookup"><span data-stu-id="07c1c-111">dbQAppend</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-112">64</span><span class="sxs-lookup"><span data-stu-id="07c1c-112">64</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-113">追加クエリ</span><span class="sxs-lookup"><span data-stu-id="07c1c-113">Append query</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-111">dbqappend</span><span class="sxs-lookup"><span data-stu-id="9c1db-111">dbQAppend</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-112">64</span><span class="sxs-lookup"><span data-stu-id="9c1db-112">64</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-113">追加クエリ</span><span class="sxs-lookup"><span data-stu-id="9c1db-113">Append query</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="07c1c-114">dbQCompound</span><span class="sxs-lookup"><span data-stu-id="07c1c-114">dbQCompound</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-115">160</span><span class="sxs-lookup"><span data-stu-id="07c1c-115">160</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-116">複合クエリ</span><span class="sxs-lookup"><span data-stu-id="07c1c-116">Compound query</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-114">dbqcompound</span><span class="sxs-lookup"><span data-stu-id="9c1db-114">dbQCompound</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-115">160</span><span class="sxs-lookup"><span data-stu-id="9c1db-115">160</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-116">複合クエリ</span><span class="sxs-lookup"><span data-stu-id="9c1db-116">Compound query</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="07c1c-117">dbQCrosstab</span><span class="sxs-lookup"><span data-stu-id="07c1c-117">dbQCrosstab</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-118">16</span><span class="sxs-lookup"><span data-stu-id="07c1c-118">16</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-119">クロス集計クエリ</span><span class="sxs-lookup"><span data-stu-id="07c1c-119">Crosstab query</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-117">dbqcrosstab 集計</span><span class="sxs-lookup"><span data-stu-id="9c1db-117">dbQCrosstab</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-118">16</span><span class="sxs-lookup"><span data-stu-id="9c1db-118">16</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-119">クロス集計クエリ</span><span class="sxs-lookup"><span data-stu-id="9c1db-119">Crosstab query</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="07c1c-120">dbQDDL</span><span class="sxs-lookup"><span data-stu-id="07c1c-120">dbQDDL</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-121">96</span><span class="sxs-lookup"><span data-stu-id="07c1c-121">96</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-122">DDL (データ定義言語) クエリ</span><span class="sxs-lookup"><span data-stu-id="07c1c-122">Data-definition language (DDL) query</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-120">dbqddl</span><span class="sxs-lookup"><span data-stu-id="9c1db-120">dbQDDL</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-121">96</span><span class="sxs-lookup"><span data-stu-id="9c1db-121">96</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-122">DDL (データ定義言語) クエリ</span><span class="sxs-lookup"><span data-stu-id="9c1db-122">Data-definition language (DDL) query</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="07c1c-123">dbQDelete</span><span class="sxs-lookup"><span data-stu-id="07c1c-123">dbQDelete</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-124">32</span><span class="sxs-lookup"><span data-stu-id="07c1c-124">32</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-125">削除クエリ</span><span class="sxs-lookup"><span data-stu-id="07c1c-125">Delete query</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-123">dbqdelete</span><span class="sxs-lookup"><span data-stu-id="9c1db-123">dbQDelete</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-124">32</span><span class="sxs-lookup"><span data-stu-id="9c1db-124">32</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-125">削除クエリ</span><span class="sxs-lookup"><span data-stu-id="9c1db-125">Delete query</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="07c1c-126">dbQMakeTable</span><span class="sxs-lookup"><span data-stu-id="07c1c-126">dbQMakeTable</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-127">80</span><span class="sxs-lookup"><span data-stu-id="07c1c-127">80</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-128">テーブル作成クエリ</span><span class="sxs-lookup"><span data-stu-id="07c1c-128">Make-table query</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-126">dbqmaketable</span><span class="sxs-lookup"><span data-stu-id="9c1db-126">dbQMakeTable</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-127">80</span><span class="sxs-lookup"><span data-stu-id="9c1db-127">80</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-128">テーブル作成クエリ</span><span class="sxs-lookup"><span data-stu-id="9c1db-128">Make-table query</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="07c1c-129">dbQProcedure</span><span class="sxs-lookup"><span data-stu-id="07c1c-129">dbQProcedure</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-130">224</span><span class="sxs-lookup"><span data-stu-id="07c1c-130">224</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-131">ストアド プロシージャを実行する SQL プロシージャ</span><span class="sxs-lookup"><span data-stu-id="07c1c-131">SQL procedure that executes a stored procedure</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-129">dbqprocedure</span><span class="sxs-lookup"><span data-stu-id="9c1db-129">dbQProcedure</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-130">224</span><span class="sxs-lookup"><span data-stu-id="9c1db-130">224</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-131">ストアド プロシージャを実行する SQL プロシージャ</span><span class="sxs-lookup"><span data-stu-id="9c1db-131">SQL procedure that executes a stored procedure</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="07c1c-132">dbQSelect</span><span class="sxs-lookup"><span data-stu-id="07c1c-132">dbQSelect</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-133">0</span><span class="sxs-lookup"><span data-stu-id="07c1c-133">0</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-134">選択クエリ</span><span class="sxs-lookup"><span data-stu-id="07c1c-134">Select query</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-132">dbqselect</span><span class="sxs-lookup"><span data-stu-id="9c1db-132">dbQSelect</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-133">.0</span><span class="sxs-lookup"><span data-stu-id="9c1db-133">0</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-134">選択クエリ</span><span class="sxs-lookup"><span data-stu-id="9c1db-134">Select query</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="07c1c-135">dbQSetOperation</span><span class="sxs-lookup"><span data-stu-id="07c1c-135">dbQSetOperation</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-136"> 
-128 
-</span><span class="sxs-lookup"><span data-stu-id="07c1c-136">128</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-137">結合クエリ</span><span class="sxs-lookup"><span data-stu-id="07c1c-137">Set operation query</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-135">dbQSetOperation</span><span class="sxs-lookup"><span data-stu-id="9c1db-135">dbQSetOperation</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-136">128</span><span class="sxs-lookup"><span data-stu-id="9c1db-136">128</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-137">結合クエリ</span><span class="sxs-lookup"><span data-stu-id="9c1db-137">Set operation query</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="07c1c-138">dbQSPTBulk</span><span class="sxs-lookup"><span data-stu-id="07c1c-138">dbQSPTBulk</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-139">144</span><span class="sxs-lookup"><span data-stu-id="07c1c-139">144</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-140">一括操作クエリ</span><span class="sxs-lookup"><span data-stu-id="07c1c-140">Bulk operation query</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-138">dbqsptbulk</span><span class="sxs-lookup"><span data-stu-id="9c1db-138">dbQSPTBulk</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-139">144</span><span class="sxs-lookup"><span data-stu-id="9c1db-139">144</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-140">一括操作クエリ</span><span class="sxs-lookup"><span data-stu-id="9c1db-140">Bulk operation query</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="07c1c-141">dbQSQLPassThrough</span><span class="sxs-lookup"><span data-stu-id="07c1c-141">dbQSQLPassThrough</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-142">112</span><span class="sxs-lookup"><span data-stu-id="07c1c-142">112</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-143">SQL パススルー クエリ</span><span class="sxs-lookup"><span data-stu-id="07c1c-143">SQL pass-through query</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-141">dbqsqlpassthrough</span><span class="sxs-lookup"><span data-stu-id="9c1db-141">dbQSQLPassThrough</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-142">112</span><span class="sxs-lookup"><span data-stu-id="9c1db-142">112</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-143">SQL パススルー クエリ</span><span class="sxs-lookup"><span data-stu-id="9c1db-143">SQL pass-through query</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="07c1c-144">dbQUpdate</span><span class="sxs-lookup"><span data-stu-id="07c1c-144">dbQUpdate</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-145">48</span><span class="sxs-lookup"><span data-stu-id="07c1c-145">48</span></span></p></td>
-<td><p><span data-ttu-id="07c1c-146">更新クエリ</span><span class="sxs-lookup"><span data-stu-id="07c1c-146">Update query</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-144">dbQUpdate</span><span class="sxs-lookup"><span data-stu-id="9c1db-144">dbQUpdate</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-145">48</span><span class="sxs-lookup"><span data-stu-id="9c1db-145">48</span></span></p></td>
+<td><p><span data-ttu-id="9c1db-146">更新クエリ</span><span class="sxs-lookup"><span data-stu-id="9c1db-146">Update query</span></span></p></td>
 </tr>
 </tbody>
 </table>

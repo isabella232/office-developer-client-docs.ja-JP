@@ -1,5 +1,5 @@
 ---
-title: インスタンス (RDS) (ADO)
+title: スペース (RDS) (ADO)
 TOCTitle: DataSpace (RDS)
 ms:assetid: eb9d33ab-e71d-42e0-bbfc-d7de80656dae
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250196(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6b65960364081929f0b69367aa94793594881038
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294457"
 ---
-# <a name="dataspace-rds-ado"></a><span data-ttu-id="c3e5d-102">インスタンス (RDS) (ADO)</span><span class="sxs-lookup"><span data-stu-id="c3e5d-102">DataSpace (RDS) (ADO)</span></span>
+# <a name="dataspace-rds-ado"></a><span data-ttu-id="c1b4d-102">スペース (RDS) (ADO)</span><span class="sxs-lookup"><span data-stu-id="c1b4d-102">DataSpace (RDS) (ADO)</span></span>
 
-<span data-ttu-id="c3e5d-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="c3e5d-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="c1b4d-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="c1b4d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="c3e5d-104">DataSpace オブジェクト (RDS)</span><span class="sxs-lookup"><span data-stu-id="c3e5d-104">DataSpace object (RDS)</span></span>](dataspace-object-rds.md)
-- [<span data-ttu-id="c3e5d-105">インスタンスのプロパティ、メソッド、およびイベント (RDS)</span><span class="sxs-lookup"><span data-stu-id="c3e5d-105">DataSpace properties, methods, and events (RDS)</span></span>](dataspace-properties-methods-and-events-rds.md)
+- [<span data-ttu-id="c1b4d-104">スペースオブジェクト (RDS)</span><span class="sxs-lookup"><span data-stu-id="c1b4d-104">DataSpace object (RDS)</span></span>](dataspace-object-rds.md)
+- [<span data-ttu-id="c1b4d-105">すべてのプロパティ、メソッド、およびイベント (RDS)</span><span class="sxs-lookup"><span data-stu-id="c1b4d-105">DataSpace properties, methods, and events (RDS)</span></span>](dataspace-properties-methods-and-events-rds.md)
 

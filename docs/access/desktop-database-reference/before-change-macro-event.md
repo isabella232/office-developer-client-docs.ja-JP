@@ -14,26 +14,26 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: b37fb96ddfeaabc97c6f445f8951876e8026fbfe
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296858"
 ---
-# <a name="before-change-macro-event"></a><span data-ttu-id="c1fcc-102">Before Change マクロ イベント</span><span class="sxs-lookup"><span data-stu-id="c1fcc-102">Before Change macro event</span></span>
+# <a name="before-change-macro-event"></a><span data-ttu-id="75e17-102">Before Change マクロ イベント</span><span class="sxs-lookup"><span data-stu-id="75e17-102">Before Change macro event</span></span>
 
-<span data-ttu-id="c1fcc-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="75e17-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="75e17-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="c1fcc-104">**変更する前に**イベントは、レコードが変更されたとき、変更がコミットされる前に発生します。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-104">The **Before Change** event occurs when a record changes, but before the change is committed.</span></span>
+<span data-ttu-id="75e17-104">The **Before Change** event occurs when a record changes, but before the change is committed.</span><span class="sxs-lookup"><span data-stu-id="75e17-104">The **Before Change** event occurs when a record changes, but before the change is committed.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="c1fcc-105">**変更**する前にイベントは、データ マクロでのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-105">The **Before Change** event is available only in Data Macros.</span></span>
+> <span data-ttu-id="75e17-105">Before Change イベントは、データ マクロでのみ使用できます。</span><span class="sxs-lookup"><span data-stu-id="75e17-105">The **Before Change** event is available only in Data Macros.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="c1fcc-106">備考</span><span class="sxs-lookup"><span data-stu-id="c1fcc-106">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="75e17-106">注釈</span><span class="sxs-lookup"><span data-stu-id="75e17-106">Remarks</span></span>
 
-<span data-ttu-id="c1fcc-107">レコードの前に発生する操作を実行**する前に変更**イベントを使用して変更されます。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-107">Use the **Before Change** event to perform any actions that you want to occur before a record is changed.</span></span> <span data-ttu-id="c1fcc-108">**変更**する前に、検証を実行して、カスタム エラー メッセージが発生する通常使用されます。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-108">The **Before Change** is commonly used to perform validation and to raise custom error messages.</span></span>
+<span data-ttu-id="75e17-p101">Before Change イベントでは、レコードの変更を確定する前に特定のアクションを実行します。通常は、検証の実行やカスタム エラー メッセージの生成を行います。</span><span class="sxs-lookup"><span data-stu-id="75e17-p101">Use the **Before Change** event to perform any actions that you want to occur before a record is changed. The **Before Change** is commonly used to perform validation and to raise custom error messages.</span></span>
 
-<span data-ttu-id="c1fcc-109">**更新 (以下「*フィールド名*」)** 関数を使用すると、フィールドが変更されたかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-109">You can use the **Updated("*Field Name*")** function to determine whether a field has changed.</span></span> <span data-ttu-id="c1fcc-110">次のコード例では、PaidInFull フィールドが変更されたかどうかを決定する**If**ステートメントを使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-110">The following code example shows how to use an **If** statement to determine whether the PaidInFull field has been changed.</span></span>
+<span data-ttu-id="75e17-109">**Updated ("*Field Name*")** 関数を使用して、フィールドが変更されたかどうかを調べることができます。</span><span class="sxs-lookup"><span data-stu-id="75e17-109">You can use the **Updated("*Field Name*")** function to determine whether a field has changed.</span></span> <span data-ttu-id="75e17-110">次のコード例は、 **if**ステートメントを使用して、paidinfull フィールドが変更されているかどうかを判断する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="75e17-110">The following code example shows how to use an **If** statement to determine whether the PaidInFull field has been changed.</span></span>
 
 ```vb
     If  Updated("PaidInFull")   Then 
@@ -43,9 +43,9 @@ ms.locfileid: "28703959"
     End If 
 ```
 
-<span data-ttu-id="c1fcc-111">によって作成される新しいレコード**を変更する前に**イベントを発生するかどうか、または既存のレコードへの変更を確認するのにには、 **IsInsert**プロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-111">Use the **IsInsert** property to determine whether the **Before Change** event was triggered by a new record being created or a change to an existing record.</span></span> <span data-ttu-id="c1fcc-112">**IsInsert** en の既存のレコードへの変更によってイベントが発生した場合、新しいレコードでは、 **false を指定**して、イベントが発生した場合**は True**プロパティが含まれます。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-112">They **IsInsert** property contains **True** if the event was triggered by a new record, **False** if the event was triggered by a change to en existing record.</span></span>
+<span data-ttu-id="75e17-p103">Use the **IsInsert** property to determine whether the **Before Change** event was triggered by a new record being created or a change to an existing record. They **IsInsert** property contains **True** if the event was triggered by a new record, **False** if the event was triggered by a change to en existing record.</span><span class="sxs-lookup"><span data-stu-id="75e17-p103">Use the **IsInsert** property to determine whether the **Before Change** event was triggered by a new record being created or a change to an existing record. They **IsInsert** property contains **True** if the event was triggered by a new record, **False** if the event was triggered by a change to en existing record.</span></span>
 
-<span data-ttu-id="c1fcc-113">次のコード例は、 **IsInsert**プロパティを使用するための構文を示しています。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-113">The following code example shows the syntax for using the **IsInsert** property.</span></span>
+<span data-ttu-id="75e17-113">The following code example shows the syntax for using the **IsInsert** property.</span><span class="sxs-lookup"><span data-stu-id="75e17-113">The following code example shows the syntax for using the **IsInsert** property.</span></span>
 
 ```vb
     If   [IsInsert] = True   Then 
@@ -59,23 +59,23 @@ ms.locfileid: "28703959"
     End If
 ```
 
-<span data-ttu-id="c1fcc-114">次の構文を使用して、フィールド内の以前の値にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-114">You can use access a the previous value in a field by using the following syntax.</span></span>
+<span data-ttu-id="75e17-114">次の構文を使用して、フィールド内の以前の値にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="75e17-114">You can use access a the previous value in a field by using the following syntax.</span></span>
 
 ```vb
     [Old].[Field Name]
 ```
 
-<span data-ttu-id="c1fcc-115">たとえば、QuantityInStock フィールド内の以前の値にアクセスするには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-115">For example, to access the previous value of the QuantityInStock field, use the following syntax.</span></span>
+<span data-ttu-id="75e17-115">たとえば、QuantityInStock フィールド内の以前の値にアクセスするには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="75e17-115">For example, to access the previous value of the QuantityInStock field, use the following syntax.</span></span>
 
 ```vb
     [Old].[QuantityInStock]
 ```
 
-<span data-ttu-id="c1fcc-116">以前の値は、**変更**する前にイベントが終了すると完全に削除されます。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-116">The previous values are deleted permanently when the **Before Change** event ends.</span></span>
+<span data-ttu-id="75e17-116">The previous values are deleted permanently when the **Before Change** event ends.</span><span class="sxs-lookup"><span data-stu-id="75e17-116">The previous values are deleted permanently when the **Before Change** event ends.</span></span>
 
-<span data-ttu-id="c1fcc-117">**RaiseError**アクションを使用して**変更**する前にイベントをキャンセルできます。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-117">You can cancel the **Before Change** event by using the **RaiseError** action.</span></span> <span data-ttu-id="c1fcc-118">エラーが発生したとき、**変更**する前にイベントに含まれる変更は破棄されます。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-118">When an error is raised the changes contained in the **Before Change** event are discarded.</span></span>
+<span data-ttu-id="75e17-p104">You can cancel the **Before Change** event by using the **RaiseError** action. When an error is raised the changes contained in the **Before Change** event are discarded.</span><span class="sxs-lookup"><span data-stu-id="75e17-p104">You can cancel the **Before Change** event by using the **RaiseError** action. When an error is raised the changes contained in the **Before Change** event are discarded.</span></span>
 
-<span data-ttu-id="c1fcc-119">**変更**する前にイベントで使用できるマクロのコマンドを次の表に一覧します。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-119">The following table lists macro commands that can be used in the**Before Change** event.</span></span>
+<span data-ttu-id="75e17-119">Before Change イベントで使用できるマクロ コマンドは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="75e17-119">The following table lists macro commands that can be used in the**Before Change** event.</span></span>
 
 <table>
 <colgroup>
@@ -84,66 +84,66 @@ ms.locfileid: "28703959"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="c1fcc-120">コマンドの種類</span><span class="sxs-lookup"><span data-stu-id="c1fcc-120">Command Type</span></span></p></th>
-<th><p><span data-ttu-id="c1fcc-121">コマンド</span><span class="sxs-lookup"><span data-stu-id="c1fcc-121">Command</span></span></p></th>
+<th><p><span data-ttu-id="75e17-120">コマンドの種類</span><span class="sxs-lookup"><span data-stu-id="75e17-120">Command Type</span></span></p></th>
+<th><p><span data-ttu-id="75e17-121">Command</span><span class="sxs-lookup"><span data-stu-id="75e17-121">Command</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="c1fcc-122">プログラム フロー</span><span class="sxs-lookup"><span data-stu-id="c1fcc-122">Program Flow</span></span></p></td>
-<td><p><span data-ttu-id="c1fcc-123"><a href="comment-macro-statement.md">Comment マクロ ステートメント</a></span><span class="sxs-lookup"><span data-stu-id="c1fcc-123"><a href="comment-macro-statement.md">Comment macro statement</a></span></span></p></td>
+<td><p><span data-ttu-id="75e17-122">プログラム フロー</span><span class="sxs-lookup"><span data-stu-id="75e17-122">Program Flow</span></span></p></td>
+<td><p><span data-ttu-id="75e17-123"><a href="comment-macro-statement.md">Comment マクロ ステートメント</a></span><span class="sxs-lookup"><span data-stu-id="75e17-123"><a href="comment-macro-statement.md">Comment macro statement</a></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="c1fcc-124">プログラム フロー</span><span class="sxs-lookup"><span data-stu-id="c1fcc-124">Program Flow</span></span></p></td>
-<td><p><span data-ttu-id="c1fcc-125"><a href="group-macro-statement.md">Group マクロ ステートメント</a></span><span class="sxs-lookup"><span data-stu-id="c1fcc-125"><a href="group-macro-statement.md">Group macro statement</a></span></span></p></td>
+<td><p><span data-ttu-id="75e17-124">プログラム フロー</span><span class="sxs-lookup"><span data-stu-id="75e17-124">Program Flow</span></span></p></td>
+<td><p><span data-ttu-id="75e17-125"><a href="group-macro-statement.md">Group マクロ ステートメント</a></span><span class="sxs-lookup"><span data-stu-id="75e17-125"><a href="group-macro-statement.md">Group macro statement</a></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="c1fcc-126">プログラム フロー</span><span class="sxs-lookup"><span data-stu-id="c1fcc-126">Program Flow</span></span></p></td>
-<td><p><span data-ttu-id="c1fcc-127"><a href="if-then-else-macro-block.md">If...Then...Else マクロ ブロック</a></span><span class="sxs-lookup"><span data-stu-id="c1fcc-127"><a href="if-then-else-macro-block.md">If...Then...Else macro block</a></span></span></p></td>
+<td><p><span data-ttu-id="75e17-126">プログラム フロー</span><span class="sxs-lookup"><span data-stu-id="75e17-126">Program Flow</span></span></p></td>
+<td><p><span data-ttu-id="75e17-127"><a href="if-then-else-macro-block.md">If...Then...Else マクロ ブロック</a></span><span class="sxs-lookup"><span data-stu-id="75e17-127"><a href="if-then-else-macro-block.md">If...Then...Else macro block</a></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="c1fcc-128">データ ブロック</span><span class="sxs-lookup"><span data-stu-id="c1fcc-128">Data Block</span></span></p></td>
-<td><p><span data-ttu-id="c1fcc-129"><a href="lookuprecord-data-block.md">マクロ アクションの不一致</a></span><span class="sxs-lookup"><span data-stu-id="c1fcc-129"><a href="lookuprecord-data-block.md">LookupRecord macro action</a></span></span></p></td>
+<td><p><span data-ttu-id="75e17-128">データ ブロック</span><span class="sxs-lookup"><span data-stu-id="75e17-128">Data Block</span></span></p></td>
+<td><p><span data-ttu-id="75e17-129"><a href="lookuprecord-data-block.md">LookupRecord マクロアクション</a></span><span class="sxs-lookup"><span data-stu-id="75e17-129"><a href="lookuprecord-data-block.md">LookupRecord macro action</a></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="c1fcc-130">データ アクション</span><span class="sxs-lookup"><span data-stu-id="c1fcc-130">Data Action</span></span></p></td>
-<td><p><span data-ttu-id="c1fcc-131"><a href="clearmacroerror-macro-action.md">ClearMacroError マクロ アクション</a></span><span class="sxs-lookup"><span data-stu-id="c1fcc-131"><a href="clearmacroerror-macro-action.md">ClearMacroError macro action</a></span></span></p></td>
+<td><p><span data-ttu-id="75e17-130">データ アクション</span><span class="sxs-lookup"><span data-stu-id="75e17-130">Data Action</span></span></p></td>
+<td><p><span data-ttu-id="75e17-131"><a href="clearmacroerror-macro-action.md">ClearMacroError マクロ アクション</a></span><span class="sxs-lookup"><span data-stu-id="75e17-131"><a href="clearmacroerror-macro-action.md">ClearMacroError macro action</a></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="c1fcc-132">データ アクション</span><span class="sxs-lookup"><span data-stu-id="c1fcc-132">Data Action</span></span></p></td>
-<td><p><span data-ttu-id="c1fcc-133"><a href="onerror-macro-action.md">OnError マクロ アクション</a></span><span class="sxs-lookup"><span data-stu-id="c1fcc-133"><a href="onerror-macro-action.md">OnError macro action</a></span></span></p></td>
+<td><p><span data-ttu-id="75e17-132">データ アクション</span><span class="sxs-lookup"><span data-stu-id="75e17-132">Data Action</span></span></p></td>
+<td><p><span data-ttu-id="75e17-133"><a href="onerror-macro-action.md">OnError マクロ アクション</a></span><span class="sxs-lookup"><span data-stu-id="75e17-133"><a href="onerror-macro-action.md">OnError macro action</a></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="c1fcc-134">データ アクション</span><span class="sxs-lookup"><span data-stu-id="c1fcc-134">Data Action</span></span></p></td>
-<td><p><span data-ttu-id="c1fcc-135"><a href="raiseerror-macro-action.md">RaiseError マクロ アクション</a></span><span class="sxs-lookup"><span data-stu-id="c1fcc-135"><a href="raiseerror-macro-action.md">RaiseError macro action</a></span></span></p></td>
+<td><p><span data-ttu-id="75e17-134">データ アクション</span><span class="sxs-lookup"><span data-stu-id="75e17-134">Data Action</span></span></p></td>
+<td><p><span data-ttu-id="75e17-135"><a href="raiseerror-macro-action.md">RaiseError マクロ アクション</a></span><span class="sxs-lookup"><span data-stu-id="75e17-135"><a href="raiseerror-macro-action.md">RaiseError macro action</a></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="c1fcc-136">データ アクション</span><span class="sxs-lookup"><span data-stu-id="c1fcc-136">Data Action</span></span></p></td>
-<td><p><span data-ttu-id="c1fcc-137"><a href="setfield-macro-action.md">SetField マクロ アクション</a></span><span class="sxs-lookup"><span data-stu-id="c1fcc-137"><a href="setfield-macro-action.md">SetField macro action</a></span></span></p></td>
+<td><p><span data-ttu-id="75e17-136">データ アクション</span><span class="sxs-lookup"><span data-stu-id="75e17-136">Data Action</span></span></p></td>
+<td><p><span data-ttu-id="75e17-137"><a href="setfield-macro-action.md">SetField マクロ アクション</a></span><span class="sxs-lookup"><span data-stu-id="75e17-137"><a href="setfield-macro-action.md">SetField macro action</a></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="c1fcc-138">データ アクション</span><span class="sxs-lookup"><span data-stu-id="c1fcc-138">Data Action</span></span></p></td>
-<td><p><span data-ttu-id="c1fcc-139"><a href="setlocalvar-macro-action.md">SetLocalVar マクロ アクション</a></span><span class="sxs-lookup"><span data-stu-id="c1fcc-139"><a href="setlocalvar-macro-action.md">SetLocalVar macro action</a></span></span></p></td>
+<td><p><span data-ttu-id="75e17-138">データ アクション</span><span class="sxs-lookup"><span data-stu-id="75e17-138">Data Action</span></span></p></td>
+<td><p><span data-ttu-id="75e17-139"><a href="setlocalvar-macro-action.md">SetLocalVar マクロ アクション</a></span><span class="sxs-lookup"><span data-stu-id="75e17-139"><a href="setlocalvar-macro-action.md">SetLocalVar macro action</a></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="c1fcc-140">データ アクション</span><span class="sxs-lookup"><span data-stu-id="c1fcc-140">Data Action</span></span></p></td>
-<td><p><span data-ttu-id="c1fcc-141"><a href="stopmacro-macro-action.md">StopMacro マクロ アクション</a></span><span class="sxs-lookup"><span data-stu-id="c1fcc-141"><a href="stopmacro-macro-action.md">StopMacro macro action</a></span></span></p></td>
+<td><p><span data-ttu-id="75e17-140">データ アクション</span><span class="sxs-lookup"><span data-stu-id="75e17-140">Data Action</span></span></p></td>
+<td><p><span data-ttu-id="75e17-141"><a href="stopmacro-macro-action.md">StopMacro マクロ アクション</a></span><span class="sxs-lookup"><span data-stu-id="75e17-141"><a href="stopmacro-macro-action.md">StopMacro macro action</a></span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="c1fcc-142">**変更**する前にイベントをキャプチャするデータ マクロを作成するには、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-142">To create a Data Macro that captures the **Before Change** event, use the following steps:</span></span>
+<span data-ttu-id="75e17-142">To create a Data Macro that captures the **Before Change** event, use the following steps:</span><span class="sxs-lookup"><span data-stu-id="75e17-142">To create a Data Macro that captures the **Before Change** event, use the following steps:</span></span>
 
-1.  <span data-ttu-id="c1fcc-143">**変更**する前にイベントをキャプチャするテーブルを開きます。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-143">Open the table for which you want to capture the **Before Change** event.</span></span>
+1.  <span data-ttu-id="75e17-143">Open the table for which you want to capture the **Before Change** event.</span><span class="sxs-lookup"><span data-stu-id="75e17-143">Open the table for which you want to capture the **Before Change** event.</span></span>
 
-2.  <span data-ttu-id="c1fcc-144">[ **テーブル**] タブの [ **イベント前**] で、[ **変更前**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-144">On the **Table** tab, in the **Before Events** group, click **Before Change**.</span></span>
+2.  <span data-ttu-id="75e17-144">[ **テーブル**] タブの [ **イベント前**] で、[ **変更前**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="75e17-144">On the **Table** tab, in the **Before Events** group, click **Before Change**.</span></span>
 
-<span data-ttu-id="c1fcc-145">空のデータ マクロがマクロ デザイナーに表示されます。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-145">An empty data macro is displayed in the macro designer.</span></span>
+<span data-ttu-id="75e17-145">空のデータ マクロがマクロ デザイナーに表示されます。</span><span class="sxs-lookup"><span data-stu-id="75e17-145">An empty data macro is displayed in the macro designer.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c1fcc-146">例</span><span class="sxs-lookup"><span data-stu-id="c1fcc-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="75e17-146">例</span><span class="sxs-lookup"><span data-stu-id="75e17-146">Example</span></span>
 
-<span data-ttu-id="c1fcc-147">次のコード例では、状態のフィールドを検証するために**変更**する前にイベントを使用します。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-147">The following code example uses the **Before Change** event to validate the Status fields.</span></span> <span data-ttu-id="c1fcc-148">[解像度] フィールドに不適切な値が含まれている場合、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-148">An error is raised if an inappropriate value is contained in the Resolution field.</span></span>
+<span data-ttu-id="75e17-147">次のコード例では、 **Before Change**イベントを使用して、状態フィールドを検証します。</span><span class="sxs-lookup"><span data-stu-id="75e17-147">The following code example uses the **Before Change** event to validate the Status fields.</span></span> <span data-ttu-id="75e17-148">An error is raised if an inappropriate value is contained in the Resolution field.</span><span class="sxs-lookup"><span data-stu-id="75e17-148">An error is raised if an inappropriate value is contained in the Resolution field.</span></span>
 
 ```vb 
  
@@ -172,15 +172,15 @@ End If
  
 ```
 
-<span data-ttu-id="c1fcc-149">この例をマクロ デザイナーで表示するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-149">To view this example in the macro designer, use the following steps.</span></span>
+<span data-ttu-id="75e17-149">この例をマクロ デザイナーで表示するには、次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="75e17-149">To view this example in the macro designer, use the following steps.</span></span>
 
-1.  <span data-ttu-id="c1fcc-150">**変更**する前にイベントをキャプチャするテーブルを開きます。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-150">Open the table for which you want to capture the **Before Change** event.</span></span>
+1.  <span data-ttu-id="75e17-150">Open the table for which you want to capture the **Before Change** event.</span><span class="sxs-lookup"><span data-stu-id="75e17-150">Open the table for which you want to capture the **Before Change** event.</span></span>
 
-2.  <span data-ttu-id="c1fcc-151">[ **テーブル**] タブの [ **イベント前**] で、[ **変更前**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-151">On the **Table** tab, in the **Before Events** group, click **Before Change**.</span></span>
+2.  <span data-ttu-id="75e17-151">[ **テーブル**] タブの [ **イベント前**] で、[ **変更前**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="75e17-151">On the **Table** tab, in the **Before Events** group, click **Before Change**.</span></span>
 
-3.  <span data-ttu-id="c1fcc-152">コード例を次のコードを選択し、クリップボードにコピーするのには**CTRL + C**キーを押します。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-152">Select the code in the following code example and then press **CTRL+C** to copy it to the Clipboard.</span></span>
+3.  <span data-ttu-id="75e17-152">次のコード例のコードを選択し、 **CTRL + C**キーを押してクリップボードにコピーします。</span><span class="sxs-lookup"><span data-stu-id="75e17-152">Select the code in the following code example and then press **CTRL+C** to copy it to the Clipboard.</span></span>
 
-4.  <span data-ttu-id="c1fcc-153">マクロ デザイナー ウィンドウをアクティブにして、 **ctrl キーと V**キーを押します。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-153">Activate the macro designer window and then press **CTRL+V**.</span></span>
+4.  <span data-ttu-id="75e17-153">[マクロデザイナー] ウィンドウをアクティブにして、CTRL キーを押し**ながら V**キーを押します。</span><span class="sxs-lookup"><span data-stu-id="75e17-153">Activate the macro designer window and then press **CTRL+V**.</span></span>
 
 
 
@@ -228,9 +228,9 @@ End If
 </DataMacros>
 ```
 
-<span data-ttu-id="c1fcc-154">次の例は、" RaiseError" アクションを使用して Before Change データ マクロ イベントを取り消す方法を示します。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-154">The following example shows how to use the RaiseError action to cancel the Before Change data macro event.</span></span> <span data-ttu-id="c1fcc-155">AssignedTo フィールドが更新されると、 LookupRecord データ ブロックを使用して、割り当てられた技術者が未解決サービス リクエストに現在割り当てられているかどうかが確認されます。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-155">When the AssignedTo field is updated, a LookupRecord data block is used to determine whether the assigned technician is currently assigned to an open service request.</span></span> <span data-ttu-id="c1fcc-156">これが true の場合は、変更する前にイベントをキャンセルするとレコードは更新されません。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-156">If this is true, then the Before Change event is cancelled and the record is not updated.</span></span>
+<span data-ttu-id="75e17-154">次の例は、" RaiseError" アクションを使用して Before Change データ マクロ イベントを取り消す方法を示します。</span><span class="sxs-lookup"><span data-stu-id="75e17-154">The following example shows how to use the RaiseError action to cancel the Before Change data macro event.</span></span> <span data-ttu-id="75e17-155">AssignedTo フィールドが更新されると、 LookupRecord データ ブロックを使用して、割り当てられた技術者が未解決サービス リクエストに現在割り当てられているかどうかが確認されます。</span><span class="sxs-lookup"><span data-stu-id="75e17-155">When the AssignedTo field is updated, a LookupRecord data block is used to determine whether the assigned technician is currently assigned to an open service request.</span></span> <span data-ttu-id="75e17-156">これが true の場合、Before Change イベントは取り消され、レコードは更新されません。</span><span class="sxs-lookup"><span data-stu-id="75e17-156">If this is true, then the Before Change event is cancelled and the record is not updated.</span></span>
 
-<span data-ttu-id="c1fcc-157">**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。</span><span class="sxs-lookup"><span data-stu-id="c1fcc-157">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
+<span data-ttu-id="75e17-157">**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。</span><span class="sxs-lookup"><span data-stu-id="75e17-157">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
 
 ```vb
     /* Get the name of the technician  */

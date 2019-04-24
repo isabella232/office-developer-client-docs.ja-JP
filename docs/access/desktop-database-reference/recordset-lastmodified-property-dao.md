@@ -1,5 +1,5 @@
 ---
-title: Recordset.LastModified プロパティ (DAO)
+title: Recordset プロパティ (DAO)
 TOCTitle: LastModified Property
 ms:assetid: 7386f25b-bde1-a446-e980-640696a3bfec
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195859(v=office.15)
@@ -12,32 +12,32 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 232a87b1d34cacccaeb7c380ec522f5ba1def028
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28725932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300498"
 ---
-# <a name="recordsetlastmodified-property-dao"></a><span data-ttu-id="d1c11-102">Recordset.LastModified プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="d1c11-102">Recordset.LastModified property (DAO)</span></span>
+# <a name="recordsetlastmodified-property-dao"></a><span data-ttu-id="c5aef-102">Recordset プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="c5aef-102">Recordset.LastModified property (DAO)</span></span>
 
 
-<span data-ttu-id="d1c11-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="d1c11-103">**Applies to**: Access 2013, Office 2013</span></span> 
+<span data-ttu-id="c5aef-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="c5aef-103">**Applies to**: Access 2013, Office 2013</span></span> 
 
-<span data-ttu-id="d1c11-104">最も最近追加または変更したレコードを示すブックマークを取得します。</span><span class="sxs-lookup"><span data-stu-id="d1c11-104">Returns a bookmark indicating the most recently added or changed record.</span></span>
+<span data-ttu-id="c5aef-104">最後に追加または変更されたレコードを示すブックマークを返します。</span><span class="sxs-lookup"><span data-stu-id="c5aef-104">Returns a bookmark indicating the most recently added or changed record.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="d1c11-105">構文</span><span class="sxs-lookup"><span data-stu-id="d1c11-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="c5aef-105">構文</span><span class="sxs-lookup"><span data-stu-id="c5aef-105">Syntax</span></span>
 
-<span data-ttu-id="d1c11-106">*式*です。LastModified</span><span class="sxs-lookup"><span data-stu-id="d1c11-106">*expression* .LastModified</span></span>
+<span data-ttu-id="c5aef-106">*式*。LastModified</span><span class="sxs-lookup"><span data-stu-id="c5aef-106">*expression* .LastModified</span></span>
 
-<span data-ttu-id="d1c11-107">\*式\***レコード セット**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="d1c11-107">*expression* A variable that represents a **Recordset** object.</span></span>
+<span data-ttu-id="c5aef-107">\*式\***Recordset**オブジェクトを表す変数を取得します。</span><span class="sxs-lookup"><span data-stu-id="c5aef-107">*expression* A variable that represents a **Recordset** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="d1c11-108">注釈</span><span class="sxs-lookup"><span data-stu-id="d1c11-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c5aef-108">注釈</span><span class="sxs-lookup"><span data-stu-id="c5aef-108">Remarks</span></span>
 
-<span data-ttu-id="d1c11-p101">**LastModified** プロパティを使用すると、最後に追加または更新したレコードに移動できます。 **LastModified** プロパティは、テーブル タイプおよびダイナセット タイプの **[Recordset](recordset-object-dao.md)** オブジェクトで使用します。 **LastModified** プロパティに値を設定するには、 **Recordset** オブジェクト自体に対してレコードを追加または変更する必要があります。</span><span class="sxs-lookup"><span data-stu-id="d1c11-p101">You can use the **LastModified** property to move to the most recently added or updated record. Use the **LastModified** property with table- and dynaset-type **[Recordset](recordset-object-dao.md)** objects. A record must be added or modified in the **Recordset** object itself in order for the **LastModified** property to have a value.</span></span>
+<span data-ttu-id="c5aef-p101">**LastModified** プロパティを使用すると、最後に追加または更新したレコードに移動できます。 **LastModified** プロパティは、テーブル タイプおよびダイナセット タイプの **[Recordset](recordset-object-dao.md)** オブジェクトで使用します。 **LastModified** プロパティに値を設定するには、 **Recordset** オブジェクト自体に対してレコードの追加または変更を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="c5aef-p101">You can use the **LastModified** property to move to the most recently added or updated record. Use the **LastModified** property with table- and dynaset-type **[Recordset](recordset-object-dao.md)** objects. A record must be added or modified in the **Recordset** object itself in order for the **LastModified** property to have a value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d1c11-112">例</span><span class="sxs-lookup"><span data-stu-id="d1c11-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c5aef-112">例</span><span class="sxs-lookup"><span data-stu-id="c5aef-112">Example</span></span>
 
-<span data-ttu-id="d1c11-113">この例では、 **LastModified** プロパティを使用して、カレント レコードを参照するポインターを、変更したレコードおよび新しく作成したレコードの両方に移動します。</span><span class="sxs-lookup"><span data-stu-id="d1c11-113">This example uses the **LastModified** property to move the current record pointer to both a record that has been modified and a newly created record.</span></span>
+<span data-ttu-id="c5aef-113">この例では、 **LastModified** プロパティを使用して、カレント レコードを参照するポインターを、変更したレコードおよび新しく作成したレコードの両方に移動します。</span><span class="sxs-lookup"><span data-stu-id="c5aef-113">This example uses the **LastModified** property to move the current record pointer to both a record that has been modified and a newly created record.</span></span>
 
 ```vb
     Sub LastModifiedX() 
@@ -98,7 +98,7 @@ ms.locfileid: "28725932"
 
 <br/>
 
-<span data-ttu-id="d1c11-p102">この例では、 **AddNew** メソッドを使用して、指定した名前を持つ新しいレコードを作成します。このプロシージャを実行するには、AddName 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="d1c11-p102">This example uses the **AddNew** method to create a new record with the specified name. The AddName function is required for this procedure to run.</span></span>
+<span data-ttu-id="c5aef-p102">この例では、 **AddNew** メソッドを使用して、指定した名前を持つ新しいレコードを作成します。このプロシージャを実行するには、AddName 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="c5aef-p102">This example uses the **AddNew** method to create a new record with the specified name. The AddName function is required for this procedure to run.</span></span>
 
 ```vb
     Sub AddNewX() 

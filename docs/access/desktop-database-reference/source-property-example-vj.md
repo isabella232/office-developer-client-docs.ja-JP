@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3cde69999eddb21e504ec0de08dd9e0ccb3f5e73
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306873"
 ---
-# <a name="source-property-example-vj"></a><span data-ttu-id="763e2-102">Source プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="763e2-102">Source property example (VJ++)</span></span>
+# <a name="source-property-example-vj"></a><span data-ttu-id="f048e-102">Source プロパティの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="f048e-102">Source property example (VJ++)</span></span>
 
 
-<span data-ttu-id="763e2-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="763e2-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="f048e-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="f048e-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="763e2-104">この例では、異なるデータ ソースに基づく 3 つの [Recordset](source-property-ado-recordset.md) オブジェクトを開くことによって、 [Source](recordset-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="763e2-104">This example demonstrates the [Source](source-property-ado-recordset.md) property by opening three [Recordset](recordset-object-ado.md) objects based on different data sources.</span></span>
+<span data-ttu-id="f048e-104">この例では、異なるデータ ソースに基づく 3 つの [Recordset](source-property-ado-recordset.md) オブジェクトを開くことによって、 [Source](recordset-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="f048e-104">This example demonstrates the [Source](source-property-ado-recordset.md) property by opening three [Recordset](recordset-object-ado.md) objects based on different data sources.</span></span>
 
 ```java 
  

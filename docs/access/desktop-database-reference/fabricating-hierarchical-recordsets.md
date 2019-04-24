@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f644f25a04c5573a93aa106884473fed6b45440e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293204"
 ---
-# <a name="fabricating-hierarchical-recordsets"></a><span data-ttu-id="55f29-102">階層レコードセットの生成</span><span class="sxs-lookup"><span data-stu-id="55f29-102">Fabricating hierarchical Recordsets</span></span>
+# <a name="fabricating-hierarchical-recordsets"></a><span data-ttu-id="60edd-102">階層レコードセットの生成</span><span class="sxs-lookup"><span data-stu-id="60edd-102">Fabricating hierarchical Recordsets</span></span>
 
 
-<span data-ttu-id="55f29-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="55f29-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="60edd-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="60edd-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="55f29-104">次の例では、親、子、および孫の **Recordset** の列を定義するデータ シェイプ文法を使用することにより、基になるデータ ソースなしで階層レコードセットを作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="55f29-104">The following example shows how to fabricate a hierarchical Recordset without an underlying data source by using the data shaping grammar to define columns for parent, child, and grandchild **Recordsets**.</span></span>
+<span data-ttu-id="60edd-104">次の例では、親、子、および孫の **Recordset** の列を定義するデータ シェイプ文法を使用することにより、基になるデータ ソースなしで階層レコードセットを作成する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="60edd-104">The following example shows how to fabricate a hierarchical Recordset without an underlying data source by using the data shaping grammar to define columns for parent, child, and grandchild **Recordsets**.</span></span>
 
-<span data-ttu-id="55f29-p101">階層 **Recordset** を作成するには、Microsoft Data Shaping Service for OLE DB (MSDataShape) を指定する必要があり、 [Connection](connection-object-ado.md) オブジェクトの [Open](open-method-ado-connection.md) メソッドの接続文字列パラメーターで Data Provider 値に NONE を指定してもかまいません。詳細については、「 [データ シェイプに必要なプロバイダー](required-providers-for-data-shaping.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="55f29-p101">To fabricate a hierarchical **Recordset**, you must specify the Microsoft Data Shaping Service for OLE DB (MSDataShape), and you may specify a Data Provider value of NONE in the connection string parameter of the [Connection](connection-object-ado.md) object's [Open](open-method-ado-connection.md) method. For more information, see [Required Providers for Data Shaping](required-providers-for-data-shaping.md).</span></span>
+<span data-ttu-id="60edd-p101">階層 **Recordset** を作成するには、Microsoft Data Shaping Service for OLE DB (MSDataShape) を指定する必要があり、 [Connection](connection-object-ado.md) オブジェクトの [Open](open-method-ado-connection.md) メソッドの接続文字列パラメーターで Data Provider 値に NONE を指定してもかまいません。詳細については、「 [データ シェイプに必要なプロバイダー](required-providers-for-data-shaping.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="60edd-p101">To fabricate a hierarchical **Recordset**, you must specify the Microsoft Data Shaping Service for OLE DB (MSDataShape), and you may specify a Data Provider value of NONE in the connection string parameter of the [Connection](connection-object-ado.md) object's [Open](open-method-ado-connection.md) method. For more information, see [Required Providers for Data Shaping](required-providers-for-data-shaping.md).</span></span>
 
 ```vb
     Dim cn As New ADODB.Connection
@@ -48,5 +48,5 @@ ms.locfileid: "28715579"
     rsCustomers.Open strShape, cn, adOpenStatic, adLockOptimistic, -1
 ```
 
-<span data-ttu-id="55f29-107">後、作成された**レコード セット**で、設定、操作、またはそのファイルに永続化します。</span><span class="sxs-lookup"><span data-stu-id="55f29-107">After the **Recordset** has been fabricated, it can be populated, manipulated, or persisted to a file.</span></span>
+<span data-ttu-id="60edd-107">作成された**Recordset**は、ファイルに設定、操作、または永続化することができます。</span><span class="sxs-lookup"><span data-stu-id="60edd-107">After the **Recordset** has been fabricated, it can be populated, manipulated, or persisted to a file.</span></span>
 

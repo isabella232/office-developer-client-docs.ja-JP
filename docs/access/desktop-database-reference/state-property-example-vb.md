@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0fee1be7c599dbab649652331c958978916d3ad2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306378"
 ---
-# <a name="state-property-example-vb"></a><span data-ttu-id="5d83d-102">State プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="5d83d-102">State property example (VB)</span></span>
+# <a name="state-property-example-vb"></a><span data-ttu-id="40c9e-102">State プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="40c9e-102">State property example (VB)</span></span>
 
 
-<span data-ttu-id="5d83d-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="5d83d-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="40c9e-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="40c9e-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="5d83d-104">この例では、非同期接続を開き、非同期コマンドを実行している間、[State](state-property-ado.md) プロパティを使用してメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="5d83d-104">This example uses the [State](state-property-ado.md) property to display a message while asynchronous connections are opening and asynchronous commands are executing.</span></span>
+<span data-ttu-id="40c9e-104">この例では、非同期接続を開き、非同期コマンドを実行している間、[State](state-property-ado.md) プロパティを使用してメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="40c9e-104">This example uses the [State](state-property-ado.md) property to display a message while asynchronous connections are opening and asynchronous commands are executing.</span></span>
 
 ```vb 
  

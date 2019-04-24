@@ -8,26 +8,26 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 0f74532693f1054dd9d187757af840a3a00b451f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293939"
 ---
-# <a name="description-property-ado-md"></a><span data-ttu-id="91c93-102">Description プロパティ (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="91c93-102">Description property (ADO MD)</span></span>
+# <a name="description-property-ado-md"></a><span data-ttu-id="3c99c-102">Description プロパティ (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="3c99c-102">Description property (ADO MD)</span></span>
 
 
-<span data-ttu-id="91c93-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="91c93-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="3c99c-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="3c99c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="91c93-104">現在のオブジェクトを説明するテキストを取得します。</span><span class="sxs-lookup"><span data-stu-id="91c93-104">Returns a text explanation of the current object.</span></span>
+<span data-ttu-id="3c99c-104">現在のオブジェクトを説明するテキストを取得します。</span><span class="sxs-lookup"><span data-stu-id="3c99c-104">Returns a text explanation of the current object.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="91c93-105">戻り値</span><span class="sxs-lookup"><span data-stu-id="91c93-105">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="3c99c-105">戻り値</span><span class="sxs-lookup"><span data-stu-id="3c99c-105">Return values</span></span>
 
-<span data-ttu-id="91c93-106">文字列型 ( **String** ) の値を取得します。値の取得のみが可能です。</span><span class="sxs-lookup"><span data-stu-id="91c93-106">Returns a **String** and is read-only.</span></span>
+<span data-ttu-id="3c99c-106">文字列型 (**String**) の値を取得します。値の取得のみが可能です。</span><span class="sxs-lookup"><span data-stu-id="3c99c-106">Returns a **String** and is read-only.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="91c93-107">解説</span><span class="sxs-lookup"><span data-stu-id="91c93-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3c99c-107">注釈</span><span class="sxs-lookup"><span data-stu-id="3c99c-107">Remarks</span></span>
 
-<span data-ttu-id="91c93-p101">[Member](member-object-ado-md.md) オブジェクトでは、 **Description** プロパティはメジャー メンバーと数式メンバーのみに適用されます。これ以外のメンバーに対しては、 **Description** は空の文字列 ("") を返します。メンバーの種類の詳細については、「 [Type プロパティ (ADO MD)](type-property-ado-md.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="91c93-p101">For [Member](member-object-ado-md.md) objects, **Description** applies only to measure and formula members. **Description** returns an empty string ("") for all other types of members. For more information about the various types of members, see the [Type](type-property-ado-md.md) property.</span></span>
+<span data-ttu-id="3c99c-p101">[Member](member-object-ado-md.md) オブジェクトでは、 **Description** プロパティはメジャー メンバーと数式メンバーのみに適用されます。これ以外のメンバーに対しては、 **Description** は空の文字列 ("") を返します。メンバーの種類の詳細については、「 [Type プロパティ (ADO MD)](type-property-ado-md.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3c99c-p101">For [Member](member-object-ado-md.md) objects, **Description** applies only to measure and formula members. **Description** returns an empty string ("") for all other types of members. For more information about the various types of members, see the [Type](type-property-ado-md.md) property.</span></span>
 
-<span data-ttu-id="91c93-p102">このプロパティは、**Level** オブジェクトに属する [Member](level-object-ado-md.md) オブジェクトでのみサポートされています。 **Position** オブジェクトに属する [Member](position-object-ado-md.md) オブジェクトからこのプロパティが参照されると、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="91c93-p102">This property is only supported on **Member** objects belonging to a [Level](level-object-ado-md.md) object. An error occurs when this property is referenced from **Member** objects belonging to a [Position](position-object-ado-md.md) object.</span></span>
+<span data-ttu-id="3c99c-p102">このプロパティは、**Level** オブジェクトに属する [Member](level-object-ado-md.md) オブジェクトでのみサポートされています。 **Position** オブジェクトに属する [Member](position-object-ado-md.md) オブジェクトからこのプロパティが参照されると、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="3c99c-p102">This property is only supported on **Member** objects belonging to a [Level](level-object-ado-md.md) object. An error occurs when this property is referenced from **Member** objects belonging to a [Position](position-object-ado-md.md) object.</span></span>
 

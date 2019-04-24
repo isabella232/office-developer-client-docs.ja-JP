@@ -1,5 +1,5 @@
 ---
-title: Database.RecordsAffected プロパティ (DAO)
+title: RecordsAffected プロパティ (DAO)
 TOCTitle: RecordsAffected Property
 ms:assetid: 1c591231-21dd-f0b1-4ba6-87784c5890d3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845732(v=office.15)
@@ -8,28 +8,28 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a1bcb9ac1140b275d0c7a2441f58d2ced0e0f82c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294744"
 ---
-# <a name="databaserecordsaffected-property-dao"></a><span data-ttu-id="ec9a7-102">Database.RecordsAffected プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="ec9a7-102">Database.RecordsAffected property (DAO)</span></span>
+# <a name="databaserecordsaffected-property-dao"></a><span data-ttu-id="e1ed2-102">RecordsAffected プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="e1ed2-102">Database.RecordsAffected property (DAO)</span></span>
 
 
-<span data-ttu-id="ec9a7-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="ec9a7-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="e1ed2-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="e1ed2-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="ec9a7-104">直前に呼び出された **[Execute](connection-execute-method-dao.md)** メソッドの影響を受けるレコード数を返します。</span><span class="sxs-lookup"><span data-stu-id="ec9a7-104">Returns the number of records affected by the most recently invoked **[Execute](connection-execute-method-dao.md)** method.</span></span>
+<span data-ttu-id="e1ed2-104">最後に呼び出した **[Execute](connection-execute-method-dao.md)** メソッドの処理対象となったレコードの数を取得します。</span><span class="sxs-lookup"><span data-stu-id="e1ed2-104">Returns the number of records affected by the most recently invoked **[Execute](connection-execute-method-dao.md)** method.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="ec9a7-105">構文</span><span class="sxs-lookup"><span data-stu-id="ec9a7-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="e1ed2-105">構文</span><span class="sxs-lookup"><span data-stu-id="e1ed2-105">Syntax</span></span>
 
-<span data-ttu-id="ec9a7-106">*式*です。RecordsAffected</span><span class="sxs-lookup"><span data-stu-id="ec9a7-106">*expression* .RecordsAffected</span></span>
+<span data-ttu-id="e1ed2-106">*式*。RecordsAffected</span><span class="sxs-lookup"><span data-stu-id="e1ed2-106">*expression* .RecordsAffected</span></span>
 
-<span data-ttu-id="ec9a7-107">\*式\***データベース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="ec9a7-107">*expression* A variable that represents a **Database** object.</span></span>
+<span data-ttu-id="e1ed2-107">\*式\***Database**オブジェクトを表す変数を取得します。</span><span class="sxs-lookup"><span data-stu-id="e1ed2-107">*expression* A variable that represents a **Database** object.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ec9a7-108">例</span><span class="sxs-lookup"><span data-stu-id="ec9a7-108">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e1ed2-108">例</span><span class="sxs-lookup"><span data-stu-id="e1ed2-108">Example</span></span>
 
-<span data-ttu-id="ec9a7-p101">次の使用例は、 **Database** オブジェクトおよび **QueryDef** オブジェクトから実行されるアクション クエリと共に **RecordsAffected** プロパティを使用します。このプロシージャを実行するには、RecordsAffectedOutput 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="ec9a7-p101">This example uses the **RecordsAffected** property with action queries executed from a **Database** object and from a **QueryDef** object. The RecordsAffectedOutput function is required for this procedure to run.</span></span>
+<span data-ttu-id="e1ed2-p101">次の使用例は、 **Database** オブジェクトおよび **QueryDef** オブジェクトから実行されるアクション クエリと共に **RecordsAffected** プロパティを使用します。このプロシージャを実行するには、RecordsAffectedOutput 関数が必要です。</span><span class="sxs-lookup"><span data-stu-id="e1ed2-p101">This example uses the **RecordsAffected** property with action queries executed from a **Database** object and from a **QueryDef** object. The RecordsAffectedOutput function is required for this procedure to run.</span></span>
 
 ```vb
     Sub RecordsAffectedX() 

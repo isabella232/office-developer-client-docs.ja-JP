@@ -1,5 +1,5 @@
 ---
-title: Database.QueryDefs プロパティ (DAO)
+title: データベースのクエリ定義プロパティ (DAO)
 TOCTitle: QueryDefs Property
 ms:assetid: f589eb3c-658f-9bd1-423a-5a641f19b9fa
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836728(v=office.15)
@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: d1a16f2ee39233dc42af0afeb3c07d8c4294ac14
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294786"
 ---
-# <a name="databasequerydefs-property-dao"></a><span data-ttu-id="f3ab4-102">Database.QueryDefs プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="f3ab4-102">Database.QueryDefs property (DAO)</span></span>
+# <a name="databasequerydefs-property-dao"></a><span data-ttu-id="55b08-102">データベースのクエリ定義プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="55b08-102">Database.QueryDefs property (DAO)</span></span>
 
 
-<span data-ttu-id="f3ab4-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="f3ab4-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="55b08-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="55b08-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="f3ab4-p101">指定したデータベースのすべての **QueryDef** オブジェクトを含む **QueryDefs** コレクションを返します。値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="f3ab4-p101">Returns a **QueryDefs** collection that contains all of the **QueryDef** objects of the specified database. Read-only.</span></span>
+<span data-ttu-id="55b08-104">指定したデータベースのすべての **QueryDef** オブジェクトを含む **QueryDefs** コレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="55b08-104">Returns a **QueryDefs** collection that contains all of the **QueryDef** objects of the specified database.</span></span> <span data-ttu-id="55b08-105">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="55b08-105">Read-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f3ab4-106">構文</span><span class="sxs-lookup"><span data-stu-id="f3ab4-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="55b08-106">構文</span><span class="sxs-lookup"><span data-stu-id="55b08-106">Syntax</span></span>
 
-<span data-ttu-id="f3ab4-107">*式*です。クエリ定義</span><span class="sxs-lookup"><span data-stu-id="f3ab4-107">*expression* .QueryDefs</span></span>
+<span data-ttu-id="55b08-107">*式*。QueryDefs</span><span class="sxs-lookup"><span data-stu-id="55b08-107">*expression* .QueryDefs</span></span>
 
-<span data-ttu-id="f3ab4-108">\*式\***データベース**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="f3ab4-108">*expression* A variable that represents a **Database** object.</span></span>
+<span data-ttu-id="55b08-108">\*式\***Database**オブジェクトを表す変数を取得します。</span><span class="sxs-lookup"><span data-stu-id="55b08-108">*expression* A variable that represents a **Database** object.</span></span>
 

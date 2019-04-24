@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3046917d41be9c3fa9934931765048ef4558345a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293960"
 ---
-# <a name="deleterule-property-example-vc"></a><span data-ttu-id="f0857-102">DeleteRule プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="f0857-102">DeleteRule property example (VC++)</span></span>
+# <a name="deleterule-property-example-vc"></a><span data-ttu-id="b294e-102">DeleteRule プロパティの使用例 (VC++)</span><span class="sxs-lookup"><span data-stu-id="b294e-102">DeleteRule property example (VC++)</span></span>
 
 
-<span data-ttu-id="f0857-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="f0857-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="b294e-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="b294e-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="f0857-p101">ここでは、[Key](deleterule-property-adox.md) オブジェクトの [DeleteRule](key-object-adox.md) プロパティの使用例を示します。このコードでは、新しい [Table オブジェクト](table-object-adox.md) を追加して新しい主キーを定義し、 **DeleteRule** を **adRICascade** に設定します。</span><span class="sxs-lookup"><span data-stu-id="f0857-p101">This example demonstrates the [DeleteRule](deleterule-property-adox.md) property of a [Key](key-object-adox.md) object. The code appends a new [Table](table-object-adox.md) and then defines a new primary key, setting **DeleteRule** to **adRICascade**.</span></span>
+<span data-ttu-id="b294e-p101">ここでは、[Key](deleterule-property-adox.md) オブジェクトの [DeleteRule](key-object-adox.md) プロパティの使用例を示します。このコードでは、新しい [Table オブジェクト](table-object-adox.md) を追加して新しい主キーを定義し、 **DeleteRule** を **adRICascade** に設定します。</span><span class="sxs-lookup"><span data-stu-id="b294e-p101">This example demonstrates the [DeleteRule](deleterule-property-adox.md) property of a [Key](key-object-adox.md) object. The code appends a new [Table](table-object-adox.md) and then defines a new primary key, setting **DeleteRule** to **adRICascade**.</span></span>
 
 ```cpp 
  

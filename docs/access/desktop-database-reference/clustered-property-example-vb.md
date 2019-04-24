@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 75556927bc5d3e10526da6a45bfe1e4f6d8abea2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296270"
 ---
-# <a name="clustered-property-example-vb"></a><span data-ttu-id="4505e-102">Clustered プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="4505e-102">Clustered property example (VB)</span></span>
+# <a name="clustered-property-example-vb"></a><span data-ttu-id="db649-102">Clustered プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="db649-102">Clustered property example (VB)</span></span>
 
 
-<span data-ttu-id="4505e-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="4505e-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="db649-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="db649-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="4505e-104">ここでは、[Index](clustered-property-adox.md) の [Clustered](index-object-adox.md) プロパティの使用例を示します。</span><span class="sxs-lookup"><span data-stu-id="4505e-104">This example demonstrates the [Clustered](clustered-property-adox.md) property of an [Index](index-object-adox.md).</span></span> <span data-ttu-id="4505e-105">Microsoft Jet データベースはサポートできないというクラスター化インデックスは、次の使用例は、 *Northwind*データベース内のすべてのインデックスの**Clustered**プロパティを**False**が戻りますので注意してください。</span><span class="sxs-lookup"><span data-stu-id="4505e-105">Note that Microsoft Jet databases do not support clustered indexes, so this example will return **False** for the **Clustered** property of all indexes in the *Northwind* database.</span></span>
+<span data-ttu-id="db649-p101">ここでは、[Index](index-object-adox.md) の [Clustered](clustered-property-adox.md) プロパティの使用例を示します。Microsoft Jet データベースでは、クラスター化インデックスがサポートされていないため、この例では *Northwind* データベースにあるすべてのインデックスの **Clustered** プロパティに対して、**False** が返されます。</span><span class="sxs-lookup"><span data-stu-id="db649-p101">This example demonstrates the [Clustered](clustered-property-adox.md) property of an [Index](index-object-adox.md). Note that Microsoft Jet databases do not support clustered indexes, so this example will return **False** for the **Clustered** property of all indexes in the *Northwind* database.</span></span>
 
 ```vb 
  

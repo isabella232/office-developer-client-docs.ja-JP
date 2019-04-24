@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 586dc434dfe2c3176232a98fe63005300ce13d55
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294072"
 ---
-# <a name="delete-method-example-vj"></a><span data-ttu-id="40b72-102">Delete メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="40b72-102">Delete method example (VJ++)</span></span>
+# <a name="delete-method-example-vj"></a><span data-ttu-id="949a2-102">Delete メソッドの使用例 (VJ++)</span><span class="sxs-lookup"><span data-stu-id="949a2-102">Delete method example (VJ++)</span></span>
 
 
-<span data-ttu-id="40b72-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="40b72-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="949a2-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="949a2-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="40b72-104">この例では、[Delete](delete-method-ado-recordset.md) メソッドを使用して、指定されたレコードを [Recordset](recordset-object-ado.md) から削除します。</span><span class="sxs-lookup"><span data-stu-id="40b72-104">This example uses the [Delete](delete-method-ado-recordset.md) method to remove a specified record from a [Recordset](recordset-object-ado.md).</span></span>
+<span data-ttu-id="949a2-104">この例では、[Delete](delete-method-ado-recordset.md) メソッドを使用して、指定されたレコードを [Recordset](recordset-object-ado.md) から削除します。</span><span class="sxs-lookup"><span data-stu-id="949a2-104">This example uses the [Delete](delete-method-ado-recordset.md) method to remove a specified record from a [Recordset](recordset-object-ado.md).</span></span>
 
 ```java 
  

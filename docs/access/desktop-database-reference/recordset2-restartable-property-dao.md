@@ -1,5 +1,5 @@
 ---
-title: Recordset2.Restartable プロパティ (DAO)
+title: Recordset2 プロパティ (DAO)
 TOCTitle: Restartable Property
 ms:assetid: 9b1c40f8-5a33-2527-a7b6-bef4cb991d7e
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198019(v=office.15)
@@ -8,34 +8,34 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 873911ff8475a0b37f3f67d9cb2c01afc577487d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309089"
 ---
-# <a name="recordset2restartable-property-dao"></a><span data-ttu-id="ab24a-102">Recordset2.Restartable プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="ab24a-102">Recordset2.Restartable property (DAO)</span></span>
+# <a name="recordset2restartable-property-dao"></a><span data-ttu-id="5d6c3-102">Recordset2 プロパティ (DAO)</span><span class="sxs-lookup"><span data-stu-id="5d6c3-102">Recordset2.Restartable property (DAO)</span></span>
 
 
-<span data-ttu-id="ab24a-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="ab24a-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="5d6c3-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="5d6c3-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="ab24a-104">**[Recordset](recordset-object-dao.md)** オブジェクトの基になるクエリを再実行する **[Requery](recordset2-requery-method-dao.md)** メソッドを、 **Recordset** オブジェクトがサポートするかどうかを示す値を取得します。</span><span class="sxs-lookup"><span data-stu-id="ab24a-104">Returns a value that indicates whether a **[Recordset](recordset-object-dao.md)** object supports the **[Requery](recordset2-requery-method-dao.md)** method, which re-executes the query on which the **Recordset** object is based.</span></span>
+<span data-ttu-id="5d6c3-104">**[Recordset](recordset-object-dao.md)** オブジェクトの基になるクエリを再実行する **[Requery](recordset2-requery-method-dao.md)** メソッドを、 **Recordset** オブジェクトがサポートするかどうかを示す値を取得します。</span><span class="sxs-lookup"><span data-stu-id="5d6c3-104">Returns a value that indicates whether a **[Recordset](recordset-object-dao.md)** object supports the **[Requery](recordset2-requery-method-dao.md)** method, which re-executes the query on which the **Recordset** object is based.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="ab24a-105">構文</span><span class="sxs-lookup"><span data-stu-id="ab24a-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5d6c3-105">構文</span><span class="sxs-lookup"><span data-stu-id="5d6c3-105">Syntax</span></span>
 
-<span data-ttu-id="ab24a-106">*式*です。再開可能</span><span class="sxs-lookup"><span data-stu-id="ab24a-106">*expression* .Restartable</span></span>
+<span data-ttu-id="5d6c3-106">*式*。dbms</span><span class="sxs-lookup"><span data-stu-id="5d6c3-106">*expression* .Restartable</span></span>
 
-<span data-ttu-id="ab24a-107">\*式\***Recordset2**オブジェクトを表す変数です。</span><span class="sxs-lookup"><span data-stu-id="ab24a-107">*expression* A variable that represents a **Recordset2** object.</span></span>
+<span data-ttu-id="5d6c3-107">\*式\***Recordset2**オブジェクトを表す変数を取得します。</span><span class="sxs-lookup"><span data-stu-id="5d6c3-107">*expression* A variable that represents a **Recordset2** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="ab24a-108">注釈</span><span class="sxs-lookup"><span data-stu-id="ab24a-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5d6c3-108">注釈</span><span class="sxs-lookup"><span data-stu-id="5d6c3-108">Remarks</span></span>
 
-<span data-ttu-id="ab24a-109">テーブル タイプの **Recordset** オブジェクトは、常に **False** を返します。</span><span class="sxs-lookup"><span data-stu-id="ab24a-109">Table-type **Recordset** objects always return **False**.</span></span>
+<span data-ttu-id="5d6c3-109">テーブル タイプの **Recordset** オブジェクトは、常に **False** を返します。</span><span class="sxs-lookup"><span data-stu-id="5d6c3-109">Table-type **Recordset** objects always return **False**.</span></span>
 
-<span data-ttu-id="ab24a-p101">**Recordset** オブジェクトに対して **Requery** メソッドを使用する前に、 **Restartable** プロパティを確認します。そのオブジェクトの **Restartable** プロパティが **False** に設定されている場合は、基になる **[QueryDef](connection-openrecordset-method-dao.md)** オブジェクトの **[OpenRecordset](querydef-object-dao.md)** メソッドを使用してクエリを再実行します。</span><span class="sxs-lookup"><span data-stu-id="ab24a-p101">Check the **Restartable** property before using the **Requery** method on a **Recordset** object. If the object's **Restartable** property is set to **False**, use the **[OpenRecordset](connection-openrecordset-method-dao.md)** method on the underlying **[QueryDef](querydef-object-dao.md)** object to re-execute the query.</span></span>
+<span data-ttu-id="5d6c3-p101">**Recordset** オブジェクトに対して **Requery** メソッドを使用する前に、 **Restartable** プロパティを確認します。そのオブジェクトの **Restartable** プロパティが **False** に設定されている場合は、基になる **[QueryDef](connection-openrecordset-method-dao.md)** オブジェクトの **[OpenRecordset](querydef-object-dao.md)** メソッドを使用してクエリを再実行します。</span><span class="sxs-lookup"><span data-stu-id="5d6c3-p101">Check the **Restartable** property before using the **Requery** method on a **Recordset** object. If the object's **Restartable** property is set to **False**, use the **[OpenRecordset](connection-openrecordset-method-dao.md)** method on the underlying **[QueryDef](querydef-object-dao.md)** object to re-execute the query.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ab24a-112">例</span><span class="sxs-lookup"><span data-stu-id="ab24a-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5d6c3-112">例</span><span class="sxs-lookup"><span data-stu-id="5d6c3-112">Example</span></span>
 
-<span data-ttu-id="ab24a-113">以下の例は、さまざまな **Recordset** オブジェクトの **Restartable** プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="ab24a-113">This example demonstrates the **Restartable** property with different **Recordset** objects.</span></span>
+<span data-ttu-id="5d6c3-113">以下の例は、さまざまな **Recordset** オブジェクトの **Restartable** プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="5d6c3-113">This example demonstrates the **Restartable** property with different **Recordset** objects.</span></span>
 
 ```vb
     Sub RestartableX()

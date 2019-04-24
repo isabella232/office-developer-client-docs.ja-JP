@@ -8,37 +8,37 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f3b08c9df435c7ce995a40af7b8ad5466b79245d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308926"
 ---
-# <a name="savetofile-method-ado"></a><span data-ttu-id="682ff-102">SaveToFile メソッド (ADO)</span><span class="sxs-lookup"><span data-stu-id="682ff-102">SaveToFile method (ADO)</span></span>
+# <a name="savetofile-method-ado"></a><span data-ttu-id="7a5b8-102">SaveToFile メソッド (ADO)</span><span class="sxs-lookup"><span data-stu-id="7a5b8-102">SaveToFile method (ADO)</span></span>
 
-<span data-ttu-id="682ff-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="682ff-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="7a5b8-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="7a5b8-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="682ff-104">[Stream](stream-object-ado.md) のバイナリの内容をファイルに保存します。</span><span class="sxs-lookup"><span data-stu-id="682ff-104">Saves the binary contents of a [Stream](stream-object-ado.md) to a file.</span></span>
+<span data-ttu-id="7a5b8-104">[Stream](stream-object-ado.md) のバイナリの内容をファイルに保存します。</span><span class="sxs-lookup"><span data-stu-id="7a5b8-104">Saves the binary contents of a [Stream](stream-object-ado.md) to a file.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="682ff-105">構文</span><span class="sxs-lookup"><span data-stu-id="682ff-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="7a5b8-105">構文</span><span class="sxs-lookup"><span data-stu-id="7a5b8-105">Syntax</span></span>
 
-<span data-ttu-id="682ff-106">*ストリーム*。SaveToFile*ファイル名*、 *SaveOptions*</span><span class="sxs-lookup"><span data-stu-id="682ff-106">*Stream*.SaveToFile*FileName*, *SaveOptions*</span></span>
+<span data-ttu-id="7a5b8-106">*ストリーム*。SaveToFile*ファイル名*、 *saveoptions*</span><span class="sxs-lookup"><span data-stu-id="7a5b8-106">*Stream*.SaveToFile*FileName*, *SaveOptions*</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="682ff-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="682ff-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="7a5b8-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7a5b8-107">Parameters</span></span>
 
-|<span data-ttu-id="682ff-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="682ff-108">Parameter</span></span>|<span data-ttu-id="682ff-109">説明</span><span class="sxs-lookup"><span data-stu-id="682ff-109">Description</span></span>|
+|<span data-ttu-id="7a5b8-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7a5b8-108">Parameter</span></span>|<span data-ttu-id="7a5b8-109">説明</span><span class="sxs-lookup"><span data-stu-id="7a5b8-109">Description</span></span>|
 |:--------|:----------|
-|<span data-ttu-id="682ff-110">*FileName*</span><span class="sxs-lookup"><span data-stu-id="682ff-110">*FileName*</span></span> |<span data-ttu-id="682ff-p101">**Stream** の内容の保存先であるファイルの完全修飾名を含む文字列型 ( **String** ) の値を指定します。有効なローカルの場所、または UNC 値を介してアクセスできる場所への保存が可能です。</span><span class="sxs-lookup"><span data-stu-id="682ff-p101">A **String** value that contains the fully-qualified name of the file to which the contents of the **Stream** will be saved. You can save to any valid local location, or any location you have access to via a UNC value.</span></span>|
-|<span data-ttu-id="682ff-113">*SaveOptions*</span><span class="sxs-lookup"><span data-stu-id="682ff-113">*SaveOptions*</span></span> |<span data-ttu-id="682ff-p102">保存するファイルがまだ存在しない場合に、 [SaveToFile](saveoptionsenum.md) メソッドで新しいファイルを作成するかどうかを **SaveOptionsEnum** 値で指定します。既定値は **adSaveCreateNotExists** です。これらのオプションでは、指定したファイルが存在しない場合にエラーが発生するように指定できます。また、 **SaveToFile** メソッドで既存ファイルの現在の内容を上書きするように指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="682ff-p102">A [SaveOptionsEnum](saveoptionsenum.md) value that specifies whether a new file should be created by **SaveToFile**, if it does not already exist. Default value is **adSaveCreateNotExists**. With these options you can specify that an error occurs if the specified file does not exist. You can also specify that **SaveToFile** overwrites the current contents of an existing file.</span></span>|
+|<span data-ttu-id="7a5b8-110">*FileName*</span><span class="sxs-lookup"><span data-stu-id="7a5b8-110">*FileName*</span></span> |<span data-ttu-id="7a5b8-p101">**Stream** の内容の保存先であるファイルの完全修飾名を含む文字列型 ( **String** ) の値を指定します。有効なローカルの場所、または UNC 値を介してアクセスできる場所への保存が可能です。</span><span class="sxs-lookup"><span data-stu-id="7a5b8-p101">A **String** value that contains the fully-qualified name of the file to which the contents of the **Stream** will be saved. You can save to any valid local location, or any location you have access to via a UNC value.</span></span>|
+|<span data-ttu-id="7a5b8-113">*saveoptions ロックが*</span><span class="sxs-lookup"><span data-stu-id="7a5b8-113">*SaveOptions*</span></span> |<span data-ttu-id="7a5b8-p102">保存するファイルがまだ存在しない場合に、 [SaveToFile](saveoptionsenum.md) メソッドで新しいファイルを作成するかどうかを **SaveOptionsEnum** 値で指定します。既定値は **adSaveCreateNotExists** です。これらのオプションでは、指定したファイルが存在しない場合にエラーが発生するように指定できます。また、 **SaveToFile** メソッドで既存ファイルの現在の内容を上書きするように指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="7a5b8-p102">A [SaveOptionsEnum](saveoptionsenum.md) value that specifies whether a new file should be created by **SaveToFile**, if it does not already exist. Default value is **adSaveCreateNotExists**. With these options you can specify that an error occurs if the specified file does not exist. You can also specify that **SaveToFile** overwrites the current contents of an existing file.</span></span>|
 
 > [!NOTE]
-> <span data-ttu-id="682ff-118">[!メモ] **adSaveCreateOverwrite** を設定して既存ファイルを上書きすると、 **SaveToFile** メソッドによって、元の既存ファイルから、新しい [EOS](eos-property-ado.md) 以降のバイトがすべて削除されます。</span><span class="sxs-lookup"><span data-stu-id="682ff-118">If you overwrite an existing file (when **adSaveCreateOverwrite** is set), **SaveToFile** truncates any bytes from the original existing file that follow the new [EOS](eos-property-ado.md).</span></span>
+> <span data-ttu-id="7a5b8-118">[!メモ] **adSaveCreateOverwrite** を設定して既存ファイルを上書きすると、 **SaveToFile** メソッドによって、元の既存ファイルから、新しい [EOS](eos-property-ado.md) 以降のバイトがすべて削除されます。</span><span class="sxs-lookup"><span data-stu-id="7a5b8-118">If you overwrite an existing file (when **adSaveCreateOverwrite** is set), **SaveToFile** truncates any bytes from the original existing file that follow the new [EOS](eos-property-ado.md).</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="682ff-119">解説</span><span class="sxs-lookup"><span data-stu-id="682ff-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7a5b8-119">注釈</span><span class="sxs-lookup"><span data-stu-id="7a5b8-119">Remarks</span></span>
 
-<span data-ttu-id="682ff-p103">**SaveToFile** メソッドを使用すると、 **Stream** オブジェクトの内容をローカル ファイルにコピーできます。 **Stream** オブジェクトの内容やプロパティは変更されません。 **SaveToFile** メソッドを呼び出す前に、 **Stream** オブジェクトが開かれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="682ff-p103">**SaveToFile** may be used to copy the contents of a **Stream** object to a local file. There is no change in the contents or properties of the **Stream** object. The **Stream** object must be open before calling **SaveToFile**.</span></span>
+<span data-ttu-id="7a5b8-p103">**SaveToFile** メソッドを使用すると、 **Stream** オブジェクトの内容をローカル ファイルにコピーできます。 **Stream** オブジェクトの内容やプロパティは変更されません。 **SaveToFile** メソッドを呼び出す前に、 **Stream** オブジェクトが開かれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="7a5b8-p103">**SaveToFile** may be used to copy the contents of a **Stream** object to a local file. There is no change in the contents or properties of the **Stream** object. The **Stream** object must be open before calling **SaveToFile**.</span></span>
 
-<span data-ttu-id="682ff-p104">このメソッドでは、 **Stream** オブジェクトと基になるソースの関連付けは変更されません。 **Stream** オブジェクトは、開かれたときのソースである元の URL または **Record** に関連付けられたままになります。</span><span class="sxs-lookup"><span data-stu-id="682ff-p104">This method does not change the association of the **Stream** object to its underlying source. The **Stream** object will still be associated with the original URL or **Record** that was its source when opened.</span></span>
+<span data-ttu-id="7a5b8-p104">このメソッドでは、 **Stream** オブジェクトと基になるソースの関連付けは変更されません。 **Stream** オブジェクトは、開かれたときのソースである元の URL または **Record** に関連付けられたままになります。</span><span class="sxs-lookup"><span data-stu-id="7a5b8-p104">This method does not change the association of the **Stream** object to its underlying source. The **Stream** object will still be associated with the original URL or **Record** that was its source when opened.</span></span>
 
-<span data-ttu-id="682ff-125">**SaveToFile** メソッドの操作後、ストリーム内の現在の位置 ([Position](position-property-ado.md)) は、ストリームの先頭 (0) に設定されます。</span><span class="sxs-lookup"><span data-stu-id="682ff-125">After a **SaveToFile** operation, the current position ([Position](position-property-ado.md)) in the stream is set to the beginning of the stream (0).</span></span>
+<span data-ttu-id="7a5b8-125">**SaveToFile** メソッドの操作後、ストリーム内の現在の位置 ([Position](position-property-ado.md)) は、ストリームの先頭 (0) に設定されます。</span><span class="sxs-lookup"><span data-stu-id="7a5b8-125">After a **SaveToFile** operation, the current position ([Position](position-property-ado.md)) in the stream is set to the beginning of the stream (0).</span></span>
 

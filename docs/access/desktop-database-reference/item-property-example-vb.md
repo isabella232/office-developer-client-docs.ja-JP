@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: df39d66db67652c840980aa01e15cd39a437bc48
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290916"
 ---
-# <a name="item-property-example-vb"></a><span data-ttu-id="ea5e2-102">Item プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="ea5e2-102">Item property example (VB)</span></span>
+# <a name="item-property-example-vb"></a><span data-ttu-id="4202b-102">Item プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="4202b-102">Item property example (VB)</span></span>
 
 
-<span data-ttu-id="ea5e2-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="ea5e2-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="4202b-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="4202b-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="ea5e2-p101">この例では、[Item](item-property-ado.md) プロパティを使用してコレクションのメンバーにアクセスする方法を示します。この例では、パラメーター化されたコマンドを使用して、***Pubs*** データベースの ***Authors*** テーブルを開いています。</span><span class="sxs-lookup"><span data-stu-id="ea5e2-p101">This example demonstrates how the [Item](item-property-ado.md) property accesses members of a collection. The example opens the ***Authors*** table of the ***Pubs*** database with a parameterized command.</span></span>
+<span data-ttu-id="4202b-104">この例では、[Item](item-property-ado.md) プロパティを使用してコレクションのメンバーにアクセスする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="4202b-104">This example demonstrates how the [Item](item-property-ado.md) property accesses members of a collection.</span></span> <span data-ttu-id="4202b-105">この例では、パラメーター化されたコマンドを使用して、***Pubs*** データベースの ***Authors*** テーブルを開いています。</span><span class="sxs-lookup"><span data-stu-id="4202b-105">The example opens the ***Authors*** table of the ***Pubs*** database with a parameterized command.</span></span>
 
-<span data-ttu-id="ea5e2-p102">データベースに対して発行されるコマンドのパラメーターには、[Command](command-object-ado.md) オブジェクトの [Parameters](parameters-collection-ado.md) コレクションから、インデックスと名前でアクセスします。また、返される [Recordset](recordset-object-ado.md) のフィールドには、そのオブジェクトの [Fields](fields-collection-ado.md) コレクションから、インデックスと名前でアクセスします。</span><span class="sxs-lookup"><span data-stu-id="ea5e2-p102">The parameter in the command issued against the database is accessed from the [Command](command-object-ado.md) object's [Parameters](parameters-collection-ado.md) collection by index and name. The fields of the returned [Recordset](recordset-object-ado.md) are then accessed from that object's [Fields](fields-collection-ado.md) collection by index and name.</span></span>
+<span data-ttu-id="4202b-p102">データベースに対して発行されるコマンドのパラメーターには、[Command](command-object-ado.md) オブジェクトの [Parameters](parameters-collection-ado.md) コレクションから、インデックスと名前でアクセスします。また、返される [Recordset](recordset-object-ado.md) のフィールドには、そのオブジェクトの [Fields](fields-collection-ado.md) コレクションから、インデックスと名前でアクセスします。</span><span class="sxs-lookup"><span data-stu-id="4202b-p102">The parameter in the command issued against the database is accessed from the [Command](command-object-ado.md) object's [Parameters](parameters-collection-ado.md) collection by index and name. The fields of the returned [Recordset](recordset-object-ado.md) are then accessed from that object's [Fields](fields-collection-ado.md) collection by index and name.</span></span>
 
 ```vb 
  

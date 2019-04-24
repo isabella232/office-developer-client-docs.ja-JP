@@ -8,38 +8,38 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 92983163a909e72c3da142ebcf63b7e0723e96af
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308268"
 ---
-# <a name="writetext-method-ado"></a><span data-ttu-id="da6f4-102">WriteText メソッド (ADO)</span><span class="sxs-lookup"><span data-stu-id="da6f4-102">WriteText method (ADO)</span></span>
+# <a name="writetext-method-ado"></a><span data-ttu-id="d13da-102">WriteText メソッド (ADO)</span><span class="sxs-lookup"><span data-stu-id="d13da-102">WriteText method (ADO)</span></span>
 
-<span data-ttu-id="da6f4-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="da6f4-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="d13da-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="d13da-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="da6f4-104">指定されたテキスト文字列を [Stream](stream-object-ado.md) オブジェクトに書き込みます。</span><span class="sxs-lookup"><span data-stu-id="da6f4-104">Writes a specified text string to a [Stream](stream-object-ado.md) object.</span></span>
+<span data-ttu-id="d13da-104">指定されたテキスト文字列を [Stream](stream-object-ado.md) オブジェクトに書き込みます。</span><span class="sxs-lookup"><span data-stu-id="d13da-104">Writes a specified text string to a [Stream](stream-object-ado.md) object.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="da6f4-105">構文</span><span class="sxs-lookup"><span data-stu-id="da6f4-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d13da-105">構文</span><span class="sxs-lookup"><span data-stu-id="d13da-105">Syntax</span></span>
 
-<span data-ttu-id="da6f4-106">*ストリーム*。WriteText*データ*、*オプション*</span><span class="sxs-lookup"><span data-stu-id="da6f4-106">*Stream*.WriteText*Data*, *Options*</span></span>
+<span data-ttu-id="d13da-106">*ストリーム*。WriteText*データ*、*オプション*</span><span class="sxs-lookup"><span data-stu-id="d13da-106">*Stream*.WriteText*Data*, *Options*</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="da6f4-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="da6f4-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="d13da-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d13da-107">Parameters</span></span>
 
-|<span data-ttu-id="da6f4-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="da6f4-108">Parameter</span></span>|<span data-ttu-id="da6f4-109">説明</span><span class="sxs-lookup"><span data-stu-id="da6f4-109">Description</span></span>|
+|<span data-ttu-id="d13da-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d13da-108">Parameter</span></span>|<span data-ttu-id="d13da-109">説明</span><span class="sxs-lookup"><span data-stu-id="d13da-109">Description</span></span>|
 |:--------|:----------|
-|<span data-ttu-id="da6f4-110">*Data*</span><span class="sxs-lookup"><span data-stu-id="da6f4-110">*Data*</span></span> |<span data-ttu-id="da6f4-111">書き込むテキストが格納された文字列型 ( **String** ) の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="da6f4-111">A **String** value that contains the text in characters to be written.</span></span>|
-|<span data-ttu-id="da6f4-112">*Options*</span><span class="sxs-lookup"><span data-stu-id="da6f4-112">*Options*</span></span> |<span data-ttu-id="da6f4-p101">省略可能です。指定された文字列の末尾に行区切り文字を書き込むかどうかを指定する [StreamWriteEnum](streamwriteenum.md) 値を指定します。</span><span class="sxs-lookup"><span data-stu-id="da6f4-p101">Optional. A [StreamWriteEnum](streamwriteenum.md) value that specifies whether a line separator character must be written at the end of the specified string.</span></span>|
+|<span data-ttu-id="d13da-110">*Data*</span><span class="sxs-lookup"><span data-stu-id="d13da-110">*Data*</span></span> |<span data-ttu-id="d13da-111">書き込むテキストが格納された文字列型 ( **String** ) の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="d13da-111">A **String** value that contains the text in characters to be written.</span></span>|
+|<span data-ttu-id="d13da-112">*Options*</span><span class="sxs-lookup"><span data-stu-id="d13da-112">*Options*</span></span> |<span data-ttu-id="d13da-p101">省略可能です。指定された文字列の末尾に行区切り文字を書き込むかどうかを指定する [StreamWriteEnum](streamwriteenum.md) 値を指定します。</span><span class="sxs-lookup"><span data-stu-id="d13da-p101">Optional. A [StreamWriteEnum](streamwriteenum.md) value that specifies whether a line separator character must be written at the end of the specified string.</span></span>|
 
-## <a name="remarks"></a><span data-ttu-id="da6f4-115">解説</span><span class="sxs-lookup"><span data-stu-id="da6f4-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d13da-115">注釈</span><span class="sxs-lookup"><span data-stu-id="d13da-115">Remarks</span></span>
 
-<span data-ttu-id="da6f4-116">指定した文字列が、各文字列間にスペースや文字を挿入することなく **Stream** オブジェクトに書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="da6f4-116">Specified strings are written to the **Stream** object without any intervening spaces or characters between each string.</span></span>
+<span data-ttu-id="d13da-116">指定した文字列が、各文字列間にスペースや文字を挿入することなく **Stream** オブジェクトに書き込まれます。</span><span class="sxs-lookup"><span data-stu-id="d13da-116">Specified strings are written to the **Stream** object without any intervening spaces or characters between each string.</span></span>
 
-<span data-ttu-id="da6f4-p102">カレント [Position](position-property-ado.md) は、書き込まれたデータの次の文字に設定されます。 **WriteText** メソッドがストリーム内の残りのデータを切り捨てることはありません。後ろの文字を切り捨てるには、 [SetEOS](seteos-method-ado.md) を呼び出してください。</span><span class="sxs-lookup"><span data-stu-id="da6f4-p102">The current [Position](position-property-ado.md) is set to the character following the written data. The **WriteText** method does not truncate the rest of the data in a stream. If you want to truncate these characters, call [SetEOS](seteos-method-ado.md).</span></span>
+<span data-ttu-id="d13da-p102">カレント [Position](position-property-ado.md) は、書き込まれたデータの次の文字に設定されます。 **WriteText** メソッドがストリーム内の残りのデータを切り捨てることはありません。後ろの文字を切り捨てるには、 [SetEOS](seteos-method-ado.md) を呼び出してください。</span><span class="sxs-lookup"><span data-stu-id="d13da-p102">The current [Position](position-property-ado.md) is set to the character following the written data. The **WriteText** method does not truncate the rest of the data in a stream. If you want to truncate these characters, call [SetEOS](seteos-method-ado.md).</span></span>
 
-<span data-ttu-id="da6f4-120">現在の [EOS](eos-property-ado.md) 位置を越えて書き込みを行うと、新しい文字がすべて格納できるように [Stream](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream) の **Size** が大きくなり、 **EOS** が **Stream** 内の新しい末尾バイトへと移動します。</span><span class="sxs-lookup"><span data-stu-id="da6f4-120">If you write past the current [EOS](eos-property-ado.md) position, the [Size](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream) of the **Stream** will be increased to contain any new characters, and **EOS** will move to the new last byte in the **Stream**.</span></span>
+<span data-ttu-id="d13da-120">現在の [EOS](eos-property-ado.md) 位置を越えて書き込みを行うと、新しい文字がすべて格納できるように [Stream](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream) の **Size** が大きくなり、 **EOS** が **Stream** 内の新しい末尾バイトへと移動します。</span><span class="sxs-lookup"><span data-stu-id="d13da-120">If you write past the current [EOS](eos-property-ado.md) position, the [Size](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream) of the **Stream** will be increased to contain any new characters, and **EOS** will move to the new last byte in the **Stream**.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="da6f4-p103">**WriteText** メソッドは、テキスト ストリーム ([Type](type-property-ado-stream.md) が **adTypeText**) で使用します。バイナリ ストリーム (**Type** が **adTypeBinary**) の場合は、[Write](write-method-ado.md) を使用してください。</span><span class="sxs-lookup"><span data-stu-id="da6f4-p103">The **WriteText** method is used with text streams ([Type](type-property-ado-stream.md) is **adTypeText**). For binary streams (**Type** is **adTypeBinary**), use [Write](write-method-ado.md).</span></span>
+> <span data-ttu-id="d13da-p103">**WriteText** メソッドは、テキスト ストリーム ([Type](type-property-ado-stream.md) が **adTypeText**) で使用します。バイナリ ストリーム (**Type** が **adTypeBinary**) の場合は、[Write](write-method-ado.md) を使用してください。</span><span class="sxs-lookup"><span data-stu-id="d13da-p103">The **WriteText** method is used with text streams ([Type](type-property-ado-stream.md) is **adTypeText**). For binary streams (**Type** is **adTypeBinary**), use [Write](write-method-ado.md).</span></span>
 
 

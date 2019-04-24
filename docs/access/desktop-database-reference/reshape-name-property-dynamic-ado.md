@@ -1,5 +1,5 @@
 ---
-title: 名前の動的なプロパティ (ADO) の形状を変更します。
+title: リシェイプ Name 動的プロパティ (ADO)
 TOCTitle: Reshape Name dynamic property (ADO)
 ms:assetid: 59ef99c8-da40-5cf6-b987-d47ea1433f45
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249307(v=office.15)
@@ -8,32 +8,32 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b606960238e2f9a08d034ed92a79f7a767a1a5f7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306602"
 ---
-# <a name="reshape-name-dynamic-property-ado"></a><span data-ttu-id="4f399-102">名前の動的なプロパティ (ADO) の形状を変更します。</span><span class="sxs-lookup"><span data-stu-id="4f399-102">Reshape Name dynamic property (ADO)</span></span>
+# <a name="reshape-name-dynamic-property-ado"></a><span data-ttu-id="e4a0b-102">リシェイプ Name 動的プロパティ (ADO)</span><span class="sxs-lookup"><span data-stu-id="e4a0b-102">Reshape Name dynamic property (ADO)</span></span>
 
 
-<span data-ttu-id="4f399-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="4f399-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="e4a0b-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="e4a0b-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="4f399-104">[Recordset](recordset-object-ado.md) オブジェクトの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="4f399-104">Specifies a name for the [Recordset](recordset-object-ado.md) object.</span></span>
+<span data-ttu-id="e4a0b-104">[Recordset](recordset-object-ado.md) オブジェクトの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="e4a0b-104">Specifies a name for the [Recordset](recordset-object-ado.md) object.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="4f399-105">戻り値</span><span class="sxs-lookup"><span data-stu-id="4f399-105">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="e4a0b-105">戻り値</span><span class="sxs-lookup"><span data-stu-id="e4a0b-105">Return values</span></span>
 
-<span data-ttu-id="4f399-106">**Recordset** の名前である文字列型 ( **String** ) の値を返します。</span><span class="sxs-lookup"><span data-stu-id="4f399-106">Returns a **String** value that is the name of the **Recordset**.</span></span>
+<span data-ttu-id="e4a0b-106">**Recordset** の名前である文字列型 (**String**) の値を返します。</span><span class="sxs-lookup"><span data-stu-id="e4a0b-106">Returns a **String** value that is the name of the **Recordset**.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="4f399-107">解説</span><span class="sxs-lookup"><span data-stu-id="4f399-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e4a0b-107">注釈</span><span class="sxs-lookup"><span data-stu-id="e4a0b-107">Remarks</span></span>
 
-<span data-ttu-id="4f399-108">名前は、接続中、または **Recordset** が閉じられるまで保持されます。</span><span class="sxs-lookup"><span data-stu-id="4f399-108">Names persist for the duration of the connection or until the **Recordset** is closed.</span></span>
+<span data-ttu-id="e4a0b-108">名前は、接続中、または **Recordset** が閉じられるまで保持されます。</span><span class="sxs-lookup"><span data-stu-id="e4a0b-108">Names persist for the duration of the connection or until the **Recordset** is closed.</span></span>
 
-<span data-ttu-id="4f399-p101">**Reshape Name** プロパティは、主に [Microsoft Data Shaping Service for OLE DB (ADO サービス コンポーネント) ](microsoft-data-shaping-service-for-ole-db-ado-service-provider.md)サービス プロバイダーのリシェイプ機能で使用されます。リシェイプでは、一意の名前を使います。</span><span class="sxs-lookup"><span data-stu-id="4f399-p101">The **Reshape Name** property is primarily intended for use with the re-shaping feature of the [Microsoft Data Shaping Service for OLE DB](microsoft-data-shaping-service-for-ole-db-ado-service-provider.md) service provider. Names must be unique in order to participate in re-shaping.</span></span>
+<span data-ttu-id="e4a0b-p101">**Reshape Name** プロパティは、主に [Microsoft Data Shaping Service for OLE DB (ADO サービス コンポーネント) ](microsoft-data-shaping-service-for-ole-db-ado-service-provider.md)サービス プロバイダーのリシェイプ機能で使用されます。リシェイプでは、一意の名前を使います。</span><span class="sxs-lookup"><span data-stu-id="e4a0b-p101">The **Reshape Name** property is primarily intended for use with the re-shaping feature of the [Microsoft Data Shaping Service for OLE DB](microsoft-data-shaping-service-for-ole-db-ado-service-provider.md) service provider. Names must be unique in order to participate in re-shaping.</span></span>
 
-<span data-ttu-id="4f399-p102">このプロパティは読み取り専用ですが、Recordset の作成時に間接的に設定できます。たとえば、SHAPE コマンド句で Recordset を作成し、それに "AS" キーワードで別名を付けた場合、その別名は Reshape Name プロパティに割り当てられます。別名が宣言されていない場合、Reshape Name プロパティには、データ シェイプ サービスにより生成される一意の名前が割り当てられます。別名が、既存の **Recordset** の名前と同じ場合、それらのいずれかが解放されるまで、いずれの **Recordset** もリシェイプされません。既定の動作は、ADO Connection の "Unique Reshape Names" (「Microsoft Data Shaping Service for OLE DB」を参照) プロパティを TRUE に設定すると変更できます。このように変更すると、名前を一意にする必要のある場合にユーザーによって割り当てられた名前を変更できる権限が、データ シェイプ サービスに与えられます。</span><span class="sxs-lookup"><span data-stu-id="4f399-p102">This property is read-only, but can be set indirectly when a Recordset is created. For example, if a clause of a SHAPE command creates a Recordset and gives it an alias name with the "AS" keyword, then the alias is assigned to the Reshape Name property. If no alias is declared then the reshape name property is assigned a unique name generated by the data shaping service. If the alias name is the same as the name of an existing **Recordset**, neither **Recordset** be reshaped until one of them is released. The default behavior can be changed by setting the "Unique Reshape Names" (See "Microsoft Data shaping service for OLE DB") property on the ADO connection to TRUE. This give the data shaping service permission to change user assigend names if necessary to insure uniqueness.</span></span>
+<span data-ttu-id="e4a0b-p102">このプロパティは読み取り専用ですが、Recordset の作成時に間接的に設定できます。たとえば、SHAPE コマンド句で Recordset を作成し、それに "AS" キーワードで別名を付けた場合、その別名は Reshape Name プロパティに割り当てられます。別名が宣言されていない場合、Reshape Name プロパティには、データ シェイプ サービスにより生成される一意の名前が割り当てられます。別名が、既存の **Recordset** の名前と同じ場合、それらのいずれかが解放されるまで、いずれの **Recordset** もリシェイプされません。既定の動作は、ADO Connection の "Unique Reshape Names" (「Microsoft Data Shaping Service for OLE DB」を参照) プロパティを TRUE に設定すると変更できます。このように変更すると、名前を一意にする必要のある場合にユーザーによって割り当てられた名前を変更できる権限が、データ シェイプ サービスに与えられます。</span><span class="sxs-lookup"><span data-stu-id="e4a0b-p102">This property is read-only, but can be set indirectly when a Recordset is created. For example, if a clause of a SHAPE command creates a Recordset and gives it an alias name with the "AS" keyword, then the alias is assigned to the Reshape Name property. If no alias is declared then the reshape name property is assigned a unique name generated by the data shaping service. If the alias name is the same as the name of an existing **Recordset**, neither **Recordset** be reshaped until one of them is released. The default behavior can be changed by setting the "Unique Reshape Names" (See "Microsoft Data shaping service for OLE DB") property on the ADO connection to TRUE. This give the data shaping service permission to change user assigend names if necessary to insure uniqueness.</span></span>
 
-<span data-ttu-id="4f399-p103">**Reshape Name** プロパティは、SHAPE コマンドで **Recordset** を参照する場合や、データ シェイプ サービスで生成したために名前がわからない場合に使用します。その場合、 **Reshape Name** プロパティによって返される文字列にコマンドを連結することによって、SHAPE コマンドを生成できます。</span><span class="sxs-lookup"><span data-stu-id="4f399-p103">Use the **Reshape Name** property when you want to refer to a **Recordset** in a SHAPE command, or when you don't know its name because it was generated by Data Shaping Service. In that case, you could generate a SHAPE command by concatenating the command around the string returned by the **Reshape Name** property.</span></span>
+<span data-ttu-id="e4a0b-p103">**Reshape Name** プロパティは、SHAPE コマンドで **Recordset** を参照する場合や、データ シェイプ サービスで生成したために名前がわからない場合に使用します。その場合、 **Reshape Name** プロパティによって返される文字列にコマンドを連結することによって、SHAPE コマンドを生成できます。</span><span class="sxs-lookup"><span data-stu-id="e4a0b-p103">Use the **Reshape Name** property when you want to refer to a **Recordset** in a SHAPE command, or when you don't know its name because it was generated by Data Shaping Service. In that case, you could generate a SHAPE command by concatenating the command around the string returned by the **Reshape Name** property.</span></span>
 
-<span data-ttu-id="4f399-119">**Reshape Name** は、 **CursorLocation** プロパティを [adUseClient](properties-collection-ado.md) に設定したときに、 [Recordset](cursorlocation-property-ado.md) オブジェクトの **Properties** コレクションに追加される動的プロパティです。</span><span class="sxs-lookup"><span data-stu-id="4f399-119">**Reshape Name** is a dynamic property appended to the **Recordset** object's [Properties](properties-collection-ado.md) collection when the [CursorLocation](cursorlocation-property-ado.md) property is set to **adUseClient**.</span></span>
+<span data-ttu-id="e4a0b-119">**Reshape Name** は、 **CursorLocation** プロパティを [adUseClient](properties-collection-ado.md) に設定したときに、 [Recordset](cursorlocation-property-ado.md) オブジェクトの **Properties** コレクションに追加される動的プロパティです。</span><span class="sxs-lookup"><span data-stu-id="e4a0b-119">**Reshape Name** is a dynamic property appended to the **Recordset** object's [Properties](properties-collection-ado.md) collection when the [CursorLocation](cursorlocation-property-ado.md) property is set to **adUseClient**.</span></span>
 

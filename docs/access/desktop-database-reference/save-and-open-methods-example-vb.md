@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2e4eff3eae32cf4d910a44eca5a733ac044a7829
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308982"
 ---
-# <a name="save-and-open-methods-example-vb"></a><span data-ttu-id="3caf2-102">Save メソッドと Open メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="3caf2-102">Save and Open methods example (VB)</span></span>
+# <a name="save-and-open-methods-example-vb"></a><span data-ttu-id="04309-102">Save メソッドと Open メソッドの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="04309-102">Save and Open methods example (VB)</span></span>
 
 
-<span data-ttu-id="3caf2-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="3caf2-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="04309-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="04309-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="3caf2-104">次の 3 つの例では、[Save](save-method-ado.md) メソッドと [Open](open-method-ado-recordset.md) メソッドを組み合わせて使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="3caf2-104">These three examples demonstrate how the [Save](save-method-ado.md) and [Open](open-method-ado-recordset.md) methods can be used together.</span></span>
+<span data-ttu-id="04309-104">次の 3 つの例では、[Save](save-method-ado.md) メソッドと [Open](open-method-ado-recordset.md) メソッドを組み合わせて使用する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="04309-104">These three examples demonstrate how the [Save](save-method-ado.md) and [Open](open-method-ado-recordset.md) methods can be used together.</span></span>
 
-<span data-ttu-id="3caf2-p101">出張先に、データベースに含まれているテーブルを持っていく必要があるとします。この場合、出かける前に [Recordset](recordset-object-ado.md) としてデータにアクセスし、持ち出し可能な形式で保存します。出張先では、接続されていないローカルな **Recordset** として **Recordset** にアクセスします。そして **Recordset** に変更を加え、再度保存します。最後に、会社に戻ってから、データベースに再度接続し、出張中に加えた変更でデータベースを更新します。</span><span class="sxs-lookup"><span data-stu-id="3caf2-p101">Assume you are going on a business trip and want to take along a table from a database. Before you go, you access the data as a [Recordset](recordset-object-ado.md) and save it in a transportable form. When you arrive at your destination, you access the **Recordset** as a local, disconnected **Recordset**. You make changes to the **Recordset**, then save it again. Finally, when you return home, you connect to the database again and update it with the changes you made on the road.</span></span>
+<span data-ttu-id="04309-p101">出張先に、データベースに含まれているテーブルを持っていく必要があるとします。この場合、出かける前に [Recordset](recordset-object-ado.md) としてデータにアクセスし、持ち出し可能な形式で保存します。出張先では、接続されていないローカルな **Recordset** として **Recordset** にアクセスします。そして **Recordset** に変更を加え、再度保存します。最後に、会社に戻ってから、データベースに再度接続し、出張中に加えた変更でデータベースを更新します。</span><span class="sxs-lookup"><span data-stu-id="04309-p101">Assume you are going on a business trip and want to take along a table from a database. Before you go, you access the data as a [Recordset](recordset-object-ado.md) and save it in a transportable form. When you arrive at your destination, you access the **Recordset** as a local, disconnected **Recordset**. You make changes to the **Recordset**, then save it again. Finally, when you return home, you connect to the database again and update it with the changes you made on the road.</span></span>
 
-<span data-ttu-id="3caf2-110">まず、***Authors*** テーブルにアクセスして保存します。</span><span class="sxs-lookup"><span data-stu-id="3caf2-110">First, access and save the ***Authors*** table.</span></span>
+<span data-ttu-id="04309-110">まず、***Authors*** テーブルにアクセスして保存します。</span><span class="sxs-lookup"><span data-stu-id="04309-110">First, access and save the ***Authors*** table.</span></span>
 
 ```vb 
  
@@ -83,7 +83,7 @@ End Sub
 
 <br/>
 
-<span data-ttu-id="3caf2-111">ここで出張先に到着しました。</span><span class="sxs-lookup"><span data-stu-id="3caf2-111">At this point, you have arrived at your destination.</span></span> <span data-ttu-id="3caf2-112">***Authors***テーブルは、ローカル、切断された**レコード セット**としてアクセスされます。</span><span class="sxs-lookup"><span data-stu-id="3caf2-112">You will access the ***Authors*** table as a local, disconnected **Recordset**.</span></span> <span data-ttu-id="3caf2-113">保存したファイルにアクセスするために使用しているコンピューターで**MSPersist**プロバイダーがする必要があることを忘れないでください a:\\Pubs.xml。</span><span class="sxs-lookup"><span data-stu-id="3caf2-113">Don't forget you must have the **MSPersist** provider on the machine that you are using in order to access the saved file, a:\\Pubs.xml.</span></span>
+<span data-ttu-id="04309-111">ここで出張先に到着しました。</span><span class="sxs-lookup"><span data-stu-id="04309-111">At this point, you have arrived at your destination.</span></span> <span data-ttu-id="04309-112">接続されていないローカルな ***Recordset*** として **Authors** テーブルにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="04309-112">You will access the ***Authors*** table as a local, disconnected **Recordset**.</span></span> <span data-ttu-id="04309-113">保存されたファイル\\にアクセスするには、使用しているコンピューター上の**mspersist**プロバイダーが必要です。</span><span class="sxs-lookup"><span data-stu-id="04309-113">Don't forget you must have the **MSPersist** provider on the machine that you are using in order to access the saved file, a:\\Pubs.xml.</span></span>
 
 ```vb 
  
@@ -133,7 +133,7 @@ End Sub
 
 <br/>
 
-<span data-ttu-id="3caf2-p103">会社に戻ってきました。出張中に加えた変更でデータベースを更新します。</span><span class="sxs-lookup"><span data-stu-id="3caf2-p103">Finally, you return home. Now update the database with your changes.</span></span>
+<span data-ttu-id="04309-114">会社に戻ってきました。</span><span class="sxs-lookup"><span data-stu-id="04309-114">Finally, you return home.</span></span> <span data-ttu-id="04309-115">出張中に加えた変更でデータベースを更新します。</span><span class="sxs-lookup"><span data-stu-id="04309-115">Now update the database with your changes.</span></span>
 
 ```vb 
  

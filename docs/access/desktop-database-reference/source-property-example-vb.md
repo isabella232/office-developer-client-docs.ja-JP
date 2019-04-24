@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4e14eeee7c8ea31cf21b045b1d355d7a30ddf96b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306407"
 ---
-# <a name="source-property-example-vb"></a><span data-ttu-id="eca63-102">Source プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="eca63-102">Source property example (VB)</span></span>
+# <a name="source-property-example-vb"></a><span data-ttu-id="06d05-102">Source プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="06d05-102">Source property example (VB)</span></span>
 
 
-<span data-ttu-id="eca63-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="eca63-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="06d05-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="06d05-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="eca63-104">この例では、異なるデータ ソースに基づく 3 つの [Recordset](source-property-ado-recordset.md) オブジェクトを開くことによって、 [Source](recordset-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="eca63-104">This example demonstrates the [Source](source-property-ado-recordset.md) property by opening three [Recordset](recordset-object-ado.md) objects based on different data sources.</span></span>
+<span data-ttu-id="06d05-104">この例では、異なるデータ ソースに基づく 3 つの [Recordset](source-property-ado-recordset.md) オブジェクトを開くことによって、 [Source](recordset-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="06d05-104">This example demonstrates the [Source](source-property-ado-recordset.md) property by opening three [Recordset](recordset-object-ado.md) objects based on different data sources.</span></span>
 
 ```vb 
  

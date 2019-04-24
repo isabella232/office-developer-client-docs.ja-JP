@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a4d66edef0ca8a789c912d3c4d00c57f4a17ef36
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301450"
 ---
-# <a name="prepared-property-example-vb"></a><span data-ttu-id="fe5c7-102">Prepared プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="fe5c7-102">Prepared property example (VB)</span></span>
+# <a name="prepared-property-example-vb"></a><span data-ttu-id="72d84-102">Prepared プロパティの使用例 (VB)</span><span class="sxs-lookup"><span data-stu-id="72d84-102">Prepared property example (VB)</span></span>
 
 
-<span data-ttu-id="fe5c7-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="fe5c7-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="72d84-103">**適用先:** Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="72d84-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="fe5c7-104">この例では、準備済みのバージョンと準備されていないバージョンの 2 つの [Command](prepared-property-ado.md) オブジェクトを開くことによって、 [Prepared](command-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="fe5c7-104">This example demonstrates the [Prepared](prepared-property-ado.md) property by opening two [Command](command-object-ado.md) objects — one prepared and one not prepared.</span></span>
+<span data-ttu-id="72d84-104">この例では、準備済みのバージョンと準備されていないバージョンの 2 つの [Command](prepared-property-ado.md) オブジェクトを開くことによって、 [Prepared](command-object-ado.md) プロパティの機能を示します。</span><span class="sxs-lookup"><span data-stu-id="72d84-104">This example demonstrates the [Prepared](prepared-property-ado.md) property by opening two [Command](command-object-ado.md) objects — one prepared and one not prepared.</span></span>
 
 ```vb 
  
