@@ -7,36 +7,36 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: a409c49b-b390-021e-2ec1-7a5932a0c8de
 description: アカウントの既定の配信フォルダーのエントリ ID を表します。
-ms.openlocfilehash: 56b648b6a79e7497cab1980a86ca11d1c7a6aa3e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1bac4890791edfe661599d383e2cb048bf4c42fb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327700"
 ---
-# <a name="propacctdeliveryfolder"></a><span data-ttu-id="21d01-103">PROP_ACCT_DELIVERY_FOLDER</span><span class="sxs-lookup"><span data-stu-id="21d01-103">PROP_ACCT_DELIVERY_FOLDER</span></span>
+# <a name="propacctdeliveryfolder"></a><span data-ttu-id="3d192-103">PROP_ACCT_DELIVERY_FOLDER</span><span class="sxs-lookup"><span data-stu-id="3d192-103">PROP_ACCT_DELIVERY_FOLDER</span></span>
 
-<span data-ttu-id="21d01-104">アカウントの既定の配信フォルダーのエントリ ID を表します。</span><span class="sxs-lookup"><span data-stu-id="21d01-104">Represents the Entry ID of the default delivery folder for the account.</span></span>
+<span data-ttu-id="3d192-104">アカウントの既定の配信フォルダーのエントリ ID を表します。</span><span class="sxs-lookup"><span data-stu-id="3d192-104">Represents the Entry ID of the default delivery folder for the account.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="21d01-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="21d01-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="3d192-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="3d192-105">Quick info</span></span>
 
-<span data-ttu-id="21d01-106">[IOlkAccount](iolkaccount.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="21d01-106">See [IOlkAccount](iolkaccount.md).</span></span>
+<span data-ttu-id="3d192-106">[IOlkAccount](iolkaccount.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3d192-106">See [IOlkAccount](iolkaccount.md).</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="21d01-107">識別子:</span><span class="sxs-lookup"><span data-stu-id="21d01-107">Identifier:</span></span>  <br/> |<span data-ttu-id="21d01-108">0x0019</span><span class="sxs-lookup"><span data-stu-id="21d01-108">0x0019</span></span>  <br/> |
-|<span data-ttu-id="21d01-109">プロパティの種類:</span><span class="sxs-lookup"><span data-stu-id="21d01-109">Property type:</span></span>  <br/> |<span data-ttu-id="21d01-110">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="21d01-110">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="21d01-111">プロパティ タグ。</span><span class="sxs-lookup"><span data-stu-id="21d01-111">Property tag:</span></span>  <br/> |<span data-ttu-id="21d01-112">0x00190102</span><span class="sxs-lookup"><span data-stu-id="21d01-112">0x00190102</span></span>  <br/> |
-|<span data-ttu-id="21d01-113">アクセス:</span><span class="sxs-lookup"><span data-stu-id="21d01-113">Access:</span></span>  <br/> |<span data-ttu-id="21d01-114">値の取得および設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="21d01-114">Read/write</span></span>  <br/> |
+|<span data-ttu-id="3d192-107">識別子:</span><span class="sxs-lookup"><span data-stu-id="3d192-107">Identifier:</span></span>  <br/> |<span data-ttu-id="3d192-108">0x0019</span><span class="sxs-lookup"><span data-stu-id="3d192-108">0x0019</span></span>  <br/> |
+|<span data-ttu-id="3d192-109">プロパティの種類:</span><span class="sxs-lookup"><span data-stu-id="3d192-109">Property type:</span></span>  <br/> |<span data-ttu-id="3d192-110">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="3d192-110">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="3d192-111">プロパティタグ:</span><span class="sxs-lookup"><span data-stu-id="3d192-111">Property tag:</span></span>  <br/> |<span data-ttu-id="3d192-112">0x00190102</span><span class="sxs-lookup"><span data-stu-id="3d192-112">0x00190102</span></span>  <br/> |
+|<span data-ttu-id="3d192-113">接続</span><span class="sxs-lookup"><span data-stu-id="3d192-113">Access:</span></span>  <br/> |<span data-ttu-id="3d192-114">読み取り/書き込み</span><span class="sxs-lookup"><span data-stu-id="3d192-114">Read/write</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="21d01-115">注釈</span><span class="sxs-lookup"><span data-stu-id="21d01-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3d192-115">解説</span><span class="sxs-lookup"><span data-stu-id="3d192-115">Remarks</span></span>
 
-<span data-ttu-id="21d01-116">取得または[IOlkAccount::GetProp](iolkaccount-getprop.md)または[IOlkAccount::SetProp](iolkaccount-setprop.md)をそれぞれ使用して、このプロパティを設定します。</span><span class="sxs-lookup"><span data-stu-id="21d01-116">Get or set this property by using [IOlkAccount::GetProp](iolkaccount-getprop.md) or [IOlkAccount::SetProp](iolkaccount-setprop.md), respectively.</span></span>
+<span data-ttu-id="3d192-116">[IOlkAccount:: getprop](iolkaccount-getprop.md)または[IOlkAccount:: setprop](iolkaccount-setprop.md)を使用して、このプロパティを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="3d192-116">Get or set this property by using [IOlkAccount::GetProp](iolkaccount-getprop.md) or [IOlkAccount::SetProp](iolkaccount-setprop.md), respectively.</span></span>
   
-<span data-ttu-id="21d01-117">既定の配布フォルダーは、**受信トレイ**です。</span><span class="sxs-lookup"><span data-stu-id="21d01-117">The default delivery folder is **Inbox**.</span></span>
+<span data-ttu-id="3d192-117">既定の配信フォルダーは**受信トレイ**です。</span><span class="sxs-lookup"><span data-stu-id="3d192-117">The default delivery folder is **Inbox**.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="21d01-118">関連項目</span><span class="sxs-lookup"><span data-stu-id="21d01-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3d192-118">関連項目</span><span class="sxs-lookup"><span data-stu-id="3d192-118">See also</span></span>
 
-- [<span data-ttu-id="21d01-119">アカウント管理 API について</span><span class="sxs-lookup"><span data-stu-id="21d01-119">About the Account Management API</span></span>](about-the-account-management-api.md)  
-- [<span data-ttu-id="21d01-120">定数 (アカウント管理 API)</span><span class="sxs-lookup"><span data-stu-id="21d01-120">Constants (Account management API)</span></span>](constants-account-management-api.md)
+- [<span data-ttu-id="3d192-119">アカウント管理 API について</span><span class="sxs-lookup"><span data-stu-id="3d192-119">About the Account Management API</span></span>](about-the-account-management-api.md)  
+- [<span data-ttu-id="3d192-120">定数 (アカウント管理 API)</span><span class="sxs-lookup"><span data-stu-id="3d192-120">Constants (Account management API)</span></span>](constants-account-management-api.md)
 

@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7663c640-396e-4720-9345-370d0856bd49
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a3343381709b7ce3370ba481ad8dbb935c7d4165
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 778ff8f36478740e5ee23ba439db1e328eca2e06
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328813"
 ---
-# <a name="imapitablewaitforcompletion"></a><span data-ttu-id="a5511-103">IMAPITable::WaitForCompletion</span><span class="sxs-lookup"><span data-stu-id="a5511-103">IMAPITable::WaitForCompletion</span></span>
+# <a name="imapitablewaitforcompletion"></a><span data-ttu-id="60313-103">IMAPITable::WaitForCompletion</span><span class="sxs-lookup"><span data-stu-id="60313-103">IMAPITable::WaitForCompletion</span></span>
 
   
   
-<span data-ttu-id="a5511-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="a5511-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="60313-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="60313-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="a5511-105">1 つまたは複数の非同期操作の進行状況でテーブルに完了するまでの処理を中断します。</span><span class="sxs-lookup"><span data-stu-id="a5511-105">Suspends processing until one or more asynchronous operations in progress on the table have completed.</span></span>
+<span data-ttu-id="60313-105">テーブルで進行中の1つ以上の非同期操作が完了するまで処理を中断します。</span><span class="sxs-lookup"><span data-stu-id="60313-105">Suspends processing until one or more asynchronous operations in progress on the table have completed.</span></span>
   
 ```cpp
 HRESULT WaitForCompletion(
@@ -35,51 +35,51 @@ ULONG FAR * lpulTableStatus
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="a5511-106">�p�����[�^�[</span><span class="sxs-lookup"><span data-stu-id="a5511-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="60313-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="60313-106">Parameters</span></span>
 
- <span data-ttu-id="a5511-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="a5511-107">_ulFlags_</span></span>
+ <span data-ttu-id="60313-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="60313-107">_ulFlags_</span></span>
   
-> <span data-ttu-id="a5511-108">予約されています。0 にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="a5511-108">Reserved; must be zero.</span></span>
+> <span data-ttu-id="60313-108">予約語0である必要があります。</span><span class="sxs-lookup"><span data-stu-id="60313-108">Reserved; must be zero.</span></span>
     
- <span data-ttu-id="a5511-109">_ulTimeout_</span><span class="sxs-lookup"><span data-stu-id="a5511-109">_ulTimeout_</span></span>
+ <span data-ttu-id="60313-109">_ultimeout_</span><span class="sxs-lookup"><span data-stu-id="60313-109">_ulTimeout_</span></span>
   
-> <span data-ttu-id="a5511-110">[in]非同期操作または操作が完了するまで待機するミリ秒単位の最大数。</span><span class="sxs-lookup"><span data-stu-id="a5511-110">[in] Maximum number of milliseconds to wait for the asynchronous operation or operations to complete.</span></span> <span data-ttu-id="a5511-111">完了が発生するまで無期限に待機するには、 _ulTimeout_を 0 xffffffff に設定します。</span><span class="sxs-lookup"><span data-stu-id="a5511-111">To wait indefinitely until completion occurs, set  _ulTimeout_ to 0xFFFFFFFF.</span></span> 
+> <span data-ttu-id="60313-110">順番非同期操作または操作が完了するまでの最大待機時間 (ミリ秒)。</span><span class="sxs-lookup"><span data-stu-id="60313-110">[in] Maximum number of milliseconds to wait for the asynchronous operation or operations to complete.</span></span> <span data-ttu-id="60313-111">完了するまで無期限に待機するには、 _ultimeout_を0xffffffff に設定します。</span><span class="sxs-lookup"><span data-stu-id="60313-111">To wait indefinitely until completion occurs, set  _ulTimeout_ to 0xFFFFFFFF.</span></span> 
     
- <span data-ttu-id="a5511-112">_lpulTableStatus_</span><span class="sxs-lookup"><span data-stu-id="a5511-112">_lpulTableStatus_</span></span>
+ <span data-ttu-id="60313-112">_lpultablestatus_</span><span class="sxs-lookup"><span data-stu-id="60313-112">_lpulTableStatus_</span></span>
   
-> <span data-ttu-id="a5511-113">[で [チェック アウト]有効なポインターまたは NULL のいずれかは、入力します。</span><span class="sxs-lookup"><span data-stu-id="a5511-113">[in, out] On input, either a valid pointer or NULL.</span></span> <span data-ttu-id="a5511-114">出力では、 _lpulTableStatus_が有効なポインターである場合、ポイント テーブルの最新の状態にします。</span><span class="sxs-lookup"><span data-stu-id="a5511-114">On output, if  _lpulTableStatus_ is a valid pointer, it points to the most recent status of the table.</span></span> <span data-ttu-id="a5511-115">_LpulTableStatus_が NULL の場合は、ステータス情報は返されません。</span><span class="sxs-lookup"><span data-stu-id="a5511-115">If  _lpulTableStatus_ is NULL, no status information is returned.</span></span> <span data-ttu-id="a5511-116">**WaitForCompletion**失敗の HRESULT 値が返された場合の_lpulTableStatus_の内容は定義されていません。</span><span class="sxs-lookup"><span data-stu-id="a5511-116">If **WaitForCompletion** returns an unsuccessful HRESULT value, the contents of  _lpulTableStatus_ are undefined.</span></span> 
+> <span data-ttu-id="60313-113">[入力]入力では、有効なポインターまたは NULL のいずれかです。</span><span class="sxs-lookup"><span data-stu-id="60313-113">[in, out] On input, either a valid pointer or NULL.</span></span> <span data-ttu-id="60313-114">出力では、 _lpultablestatus_が有効なポインターの場合は、テーブルの最新の状態を指します。</span><span class="sxs-lookup"><span data-stu-id="60313-114">On output, if  _lpulTableStatus_ is a valid pointer, it points to the most recent status of the table.</span></span> <span data-ttu-id="60313-115">_lpultablestatus_が NULL の場合、ステータス情報は返されません。</span><span class="sxs-lookup"><span data-stu-id="60313-115">If  _lpulTableStatus_ is NULL, no status information is returned.</span></span> <span data-ttu-id="60313-116">**waitforcompletion**が失敗した HRESULT 値を返す場合、 _lpultablestatus_の内容は未定義です。</span><span class="sxs-lookup"><span data-stu-id="60313-116">If **WaitForCompletion** returns an unsuccessful HRESULT value, the contents of  _lpulTableStatus_ are undefined.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="a5511-117">�߂�l</span><span class="sxs-lookup"><span data-stu-id="a5511-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="60313-117">戻り値</span><span class="sxs-lookup"><span data-stu-id="60313-117">Return value</span></span>
 
-<span data-ttu-id="a5511-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="a5511-118">S_OK</span></span> 
+<span data-ttu-id="60313-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="60313-118">S_OK</span></span> 
   
-> <span data-ttu-id="a5511-119">待ち操作が正常に完了しました。</span><span class="sxs-lookup"><span data-stu-id="a5511-119">The wait operation was successful.</span></span>
+> <span data-ttu-id="60313-119">待機操作が正常に完了しました。</span><span class="sxs-lookup"><span data-stu-id="60313-119">The wait operation was successful.</span></span>
     
-<span data-ttu-id="a5511-120">MAPI_E_NO_SUPPORT</span><span class="sxs-lookup"><span data-stu-id="a5511-120">MAPI_E_NO_SUPPORT</span></span> 
+<span data-ttu-id="60313-120">MAPI_E_NO_SUPPORT</span><span class="sxs-lookup"><span data-stu-id="60313-120">MAPI_E_NO_SUPPORT</span></span> 
   
-> <span data-ttu-id="a5511-121">テーブルは、非同期操作の完了の待機をサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="a5511-121">The table does not support waiting for the completion of asynchronous operations.</span></span>
+> <span data-ttu-id="60313-121">このテーブルでは、非同期操作の完了を待機することはサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="60313-121">The table does not support waiting for the completion of asynchronous operations.</span></span>
     
-<span data-ttu-id="a5511-122">MAPI_E_TIMEOUT</span><span class="sxs-lookup"><span data-stu-id="a5511-122">MAPI_E_TIMEOUT</span></span> 
+<span data-ttu-id="60313-122">MAPI_E_TIMEOUT</span><span class="sxs-lookup"><span data-stu-id="60313-122">MAPI_E_TIMEOUT</span></span> 
   
-> <span data-ttu-id="a5511-123">非同期操作または操作は、指定した時間に完了しませんでした。</span><span class="sxs-lookup"><span data-stu-id="a5511-123">The asynchronous operation or operations did not complete in the specified time.</span></span>
+> <span data-ttu-id="60313-123">非同期の操作または操作は、指定された時間内に完了しませんでした。</span><span class="sxs-lookup"><span data-stu-id="60313-123">The asynchronous operation or operations did not complete in the specified time.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="a5511-124">注釈</span><span class="sxs-lookup"><span data-stu-id="a5511-124">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="60313-124">解説</span><span class="sxs-lookup"><span data-stu-id="60313-124">Remarks</span></span>
 
-<span data-ttu-id="a5511-125">**IMAPITable::WaitForCompletion**メソッドは、テーブルのため現在の非同期操作が完了するまでの処理を中断します。</span><span class="sxs-lookup"><span data-stu-id="a5511-125">The **IMAPITable::WaitForCompletion** method suspends processing until any asynchronous operations currently under way for the table have completed.</span></span> <span data-ttu-id="a5511-126">**WaitForCompletion**ことができます、非同期操作のいずれか完全に完了または中断される前に、 _ulTimeout_で示されたミリ秒数を実行します。</span><span class="sxs-lookup"><span data-stu-id="a5511-126">**WaitForCompletion** can allow the asynchronous operations either to fully complete or to run for a certain number of milliseconds, as indicated by  _ulTimeout_, before being interrupted.</span></span> <span data-ttu-id="a5511-127">進行中の非同期操作を検出するためには、 [IMAPITable::GetStatus](imapitable-getstatus.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="a5511-127">To detect asynchronous operations in progress, call the [IMAPITable::GetStatus](imapitable-getstatus.md) method.</span></span> 
+<span data-ttu-id="60313-125">**IMAPITable:: waitforcompletion**メソッドは、テーブルに対して現在実行されているすべての非同期操作が完了するまで処理を中断します。</span><span class="sxs-lookup"><span data-stu-id="60313-125">The **IMAPITable::WaitForCompletion** method suspends processing until any asynchronous operations currently under way for the table have completed.</span></span> <span data-ttu-id="60313-126">**waitforcompletion**を使用すると、非同期操作を完全に完了するか、または_ultimeout_で指定された回数だけ実行してから中断することができます。</span><span class="sxs-lookup"><span data-stu-id="60313-126">**WaitForCompletion** can allow the asynchronous operations either to fully complete or to run for a certain number of milliseconds, as indicated by  _ulTimeout_, before being interrupted.</span></span> <span data-ttu-id="60313-127">進行中の非同期操作を検出するには、 [IMAPITable:: GetStatus](imapitable-getstatus.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="60313-127">To detect asynchronous operations in progress, call the [IMAPITable::GetStatus](imapitable-getstatus.md) method.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="a5511-128">関連項目</span><span class="sxs-lookup"><span data-stu-id="a5511-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="60313-128">関連項目</span><span class="sxs-lookup"><span data-stu-id="60313-128">See also</span></span>
 
 
 
-[<span data-ttu-id="a5511-129">IMAPITable::GetRowCount</span><span class="sxs-lookup"><span data-stu-id="a5511-129">IMAPITable::GetRowCount</span></span>](imapitable-getrowcount.md)
+[<span data-ttu-id="60313-129">IMAPITable::GetRowCount</span><span class="sxs-lookup"><span data-stu-id="60313-129">IMAPITable::GetRowCount</span></span>](imapitable-getrowcount.md)
   
-[<span data-ttu-id="a5511-130">IMAPITable::GetStatus</span><span class="sxs-lookup"><span data-stu-id="a5511-130">IMAPITable::GetStatus</span></span>](imapitable-getstatus.md)
+[<span data-ttu-id="60313-130">IMAPITable::GetStatus</span><span class="sxs-lookup"><span data-stu-id="60313-130">IMAPITable::GetStatus</span></span>](imapitable-getstatus.md)
   
-[<span data-ttu-id="a5511-131">IMAPITable::Restrict</span><span class="sxs-lookup"><span data-stu-id="a5511-131">IMAPITable::Restrict</span></span>](imapitable-restrict.md)
+[<span data-ttu-id="60313-131">IMAPITable::Restrict</span><span class="sxs-lookup"><span data-stu-id="60313-131">IMAPITable::Restrict</span></span>](imapitable-restrict.md)
   
-[<span data-ttu-id="a5511-132">IMAPITable::SetColumns</span><span class="sxs-lookup"><span data-stu-id="a5511-132">IMAPITable::SetColumns</span></span>](imapitable-setcolumns.md)
+[<span data-ttu-id="60313-132">IMAPITable::SetColumns</span><span class="sxs-lookup"><span data-stu-id="60313-132">IMAPITable::SetColumns</span></span>](imapitable-setcolumns.md)
   
-[<span data-ttu-id="a5511-133">IMAPITable::SortTable</span><span class="sxs-lookup"><span data-stu-id="a5511-133">IMAPITable::SortTable</span></span>](imapitable-sorttable.md)
+[<span data-ttu-id="60313-133">IMAPITable::SortTable</span><span class="sxs-lookup"><span data-stu-id="60313-133">IMAPITable::SortTable</span></span>](imapitable-sorttable.md)
   
-[<span data-ttu-id="a5511-134">IMAPITable : IUnknown</span><span class="sxs-lookup"><span data-stu-id="a5511-134">IMAPITable : IUnknown</span></span>](imapitableiunknown.md)
+[<span data-ttu-id="60313-134">IMAPITable : IUnknown</span><span class="sxs-lookup"><span data-stu-id="60313-134">IMAPITable : IUnknown</span></span>](imapitableiunknown.md)
 

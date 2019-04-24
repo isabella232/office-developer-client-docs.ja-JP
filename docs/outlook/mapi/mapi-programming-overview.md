@@ -1,5 +1,5 @@
 ---
-title: MAPI �v���O���~���O�̊T�v
+title: MAPI プログラミングの概要
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,33 +8,33 @@ api_type:
 - COM
 ms.assetid: 30ac637a-874f-4660-b5d0-d28d69486f64
 description: '�ŏI�X�V��: 2012�N6��25��'
-ms.openlocfilehash: bd9cdd9119f94e1f7684be34e1b4ef6fb40ab2bf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d69d15f0f635c81bea30401b3a6d6e3ccf620112
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328274"
 ---
-# <a name="mapi-programming-overview"></a><span data-ttu-id="af56e-103">MAPI �v���O���~���O�̊T�v</span><span class="sxs-lookup"><span data-stu-id="af56e-103">MAPI Programming Overview</span></span>
+# <a name="mapi-programming-overview"></a><span data-ttu-id="5ced9-103">MAPI プログラミングの概要</span><span class="sxs-lookup"><span data-stu-id="5ced9-103">MAPI Programming Overview</span></span>
 
   
   
-<span data-ttu-id="af56e-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="af56e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="5ced9-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="5ced9-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="af56e-105">この Microsoft Outlook メッセージング API (MAPI) の参照は、C に書かれてと、C++ 開発者は、さまざまなニーズし、メッセージが発生します。</span><span class="sxs-lookup"><span data-stu-id="af56e-105">This Microsoft Outlook Messaging API (MAPI) Reference is written for C and C++ developers with a variety of needs and experience with messaging.</span></span> <span data-ttu-id="af56e-106">開発者にとって、メッセージング機能を持つアプリケーションを拡張するために MAPI を使用する、特定の前提となる知識は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="af56e-106">For those developers who want to use MAPI to augment their applications that have messaging features, no specific prerequisite knowledge is required.</span></span> <span data-ttu-id="af56e-107">メッセージの背景と、コンポーネント オブジェクト モデル (COM) 本格的なワークグループ アプリケーション、または特殊なメッセージング システムのサービス用のドライバーを作成するのには MAPI を使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="af56e-107">You need a background in messaging and the Component Object Model (COM) to use MAPI to create full-scale workgroup applications or drivers for specialized messaging system services.</span></span>
+<span data-ttu-id="5ced9-105">この Microsoft Outlook Messaging API (MAPI) リファレンスは、C および C++ 開発者がさまざまなニーズに対応し、メッセージングを利用するために作成されています。</span><span class="sxs-lookup"><span data-stu-id="5ced9-105">This Microsoft Outlook Messaging API (MAPI) Reference is written for C and C++ developers with a variety of needs and experience with messaging.</span></span> <span data-ttu-id="5ced9-106">MAPI を使用してメッセージング機能を備えたアプリケーションを拡張する開発者にとって、特定の前提条件となる知識は必要ありません。</span><span class="sxs-lookup"><span data-stu-id="5ced9-106">For those developers who want to use MAPI to augment their applications that have messaging features, no specific prerequisite knowledge is required.</span></span> <span data-ttu-id="5ced9-107">メッセージングおよびコンポーネントオブジェクトモデル (COM) を使用して MAPI を使用し、専用のメッセージングシステムサービスに対してフルスケールのワークグループアプリケーションまたはドライバーを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5ced9-107">You need a background in messaging and the Component Object Model (COM) to use MAPI to create full-scale workgroup applications or drivers for specialized messaging system services.</span></span>
   
-<span data-ttu-id="af56e-108">開発作業を開始する前に MAPI を使用する方法に関する次の情報を考慮する必要がありますログオン プロセス、およびプロファイルとメッセージ サービスの作成および構成方法。</span><span class="sxs-lookup"><span data-stu-id="af56e-108">Before starting development work, you should consider the following information about how to use MAPI, the logon process, and how profiles and message services are created and configured.</span></span>
+<span data-ttu-id="5ced9-108">開発作業を開始する前に、MAPI の使用方法、ログオンプロセス、プロファイルとメッセージサービスの作成および構成方法に関する以下の情報を考慮する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5ced9-108">Before starting development work, you should consider the following information about how to use MAPI, the logon process, and how profiles and message services are created and configured.</span></span>
   
-<span data-ttu-id="af56e-109">メッセージング アプリケーション プログラム インターフェイス (MAPI) は、メールが有効なアプリケーションを作成する開発者が使用できる関数の拡張セットです。</span><span class="sxs-lookup"><span data-stu-id="af56e-109">The Messaging Application Program Interface (MAPI) is an extensive set of functions that developers can use to create mail-enabled applications.</span></span> <span data-ttu-id="af56e-110">フル機能のライブラリは、MAPI と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="af56e-110">The full function library is known as MAPI.</span></span> <span data-ttu-id="af56e-111">MAPI は、クライアント コンピューター、作成およびメッセージの管理、クライアントのメールボックス、サービス ・ プロバイダーなどの管理上のメッセージング システムを完全に制御を有効にします。</span><span class="sxs-lookup"><span data-stu-id="af56e-111">MAPI enables complete control over the messaging system on the client computer, creation and management of messages, management of the client mailbox, service providers, and so on.</span></span>
+<span data-ttu-id="5ced9-109">メッセージングアプリケーションプログラムインターフェイス (MAPI) は、開発者がメールが有効なアプリケーションを作成するために使用できる豊富な機能セットです。</span><span class="sxs-lookup"><span data-stu-id="5ced9-109">The Messaging Application Program Interface (MAPI) is an extensive set of functions that developers can use to create mail-enabled applications.</span></span> <span data-ttu-id="5ced9-110">完全な関数ライブラリは MAPI と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="5ced9-110">The full function library is known as MAPI.</span></span> <span data-ttu-id="5ced9-111">MAPI を使用すると、クライアントコンピューター上のメッセージングシステムを完全に制御し、メッセージの作成と管理、クライアントメールボックスの管理、サービスプロバイダーなどを行うことができます。</span><span class="sxs-lookup"><span data-stu-id="5ced9-111">MAPI enables complete control over the messaging system on the client computer, creation and management of messages, management of the client mailbox, service providers, and so on.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="af56e-112">拡張 MAPI は MAPI と同じは単と呼ばれるに MAPI MAPI ドキュメントで。</span><span class="sxs-lookup"><span data-stu-id="af56e-112">Extended MAPI is the same as MAPI, and is simply referred to as MAPI in the MAPI documentation.</span></span> 
+> <span data-ttu-id="5ced9-112">拡張 mapi は mapi と同じであり、mapi ドキュメントでは単に mapi と呼ばれます。</span><span class="sxs-lookup"><span data-stu-id="5ced9-112">Extended MAPI is the same as MAPI, and is simply referred to as MAPI in the MAPI documentation.</span></span> 
   
- <span data-ttu-id="af56e-113">**簡易 MAPI**</span><span class="sxs-lookup"><span data-stu-id="af56e-113">**Simple MAPI**</span></span>
+ <span data-ttu-id="5ced9-113">**簡易 MAPI**</span><span class="sxs-lookup"><span data-stu-id="5ced9-113">**Simple MAPI**</span></span>
   
-<span data-ttu-id="af56e-114">簡易 MAPI は、Microsoft Windows ベースのアプリケーションに機能をメッセージングの基本的なレベルを追加することを可能にする一連の関数を提供します。</span><span class="sxs-lookup"><span data-stu-id="af56e-114">Simple MAPI provides a set of functions that enables you to add a basic level of messaging functionality to Microsoft Windows-based applications.</span></span>
+<span data-ttu-id="5ced9-114">簡易 MAPI には、Microsoft Windows ベースのアプリケーションに対して、基本的なレベルのメッセージング機能を追加できるようにする一連の関数が用意されています。</span><span class="sxs-lookup"><span data-stu-id="5ced9-114">Simple MAPI provides a set of functions that enables you to add a basic level of messaging functionality to Microsoft Windows-based applications.</span></span>
   
 > [!IMPORTANT]
-> <span data-ttu-id="af56e-115">MAPISendMail 簡易 MAPI の関数は、Microsoft Outlook 2013 と Microsoft Outlook 2010 でサポートされます。</span><span class="sxs-lookup"><span data-stu-id="af56e-115">The Simple MAPI function MAPISendMail is supported by Microsoft Outlook 2013 and Microsoft Outlook 2010.</span></span> <span data-ttu-id="af56e-116">シンプル MAPI の関数は他の Windows になりました。</span><span class="sxs-lookup"><span data-stu-id="af56e-116">Other Simple MAPI functions have been deprecated in Windows.</span></span> 
+> <span data-ttu-id="5ced9-115">簡易 MAPI 関数 MAPISendMail は、microsoft outlook 2013 および microsoft outlook 2010 でサポートされています。</span><span class="sxs-lookup"><span data-stu-id="5ced9-115">The Simple MAPI function MAPISendMail is supported by Microsoft Outlook 2013 and Microsoft Outlook 2010.</span></span> <span data-ttu-id="5ced9-116">Windows では、他の簡単な MAPI 機能は廃止されました。</span><span class="sxs-lookup"><span data-stu-id="5ced9-116">Other Simple MAPI functions have been deprecated in Windows.</span></span> 
   
 

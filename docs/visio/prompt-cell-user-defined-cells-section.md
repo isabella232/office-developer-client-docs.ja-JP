@@ -8,32 +8,32 @@ f1_keywords:
 - Vis_DSS.chm840
 localization_priority: Normal
 ms.assetid: d0f91e7d-2373-cfef-e105-fb17e77c7f2d
-description: ユーザー定義のセルに関する説明プロンプトまたはコメントを指定します。 アプリケーションでは、プロンプトのテキストがテキスト文字列であることを示すには引用符 () で自動的に囲まれます。 等号 (=) を入力して引用符を省略した場合は、このアプリケーションを評価するセルの数式を入力することができます。
-ms.openlocfilehash: a7f8757af3e324a89f49bf5d19185b7a22173ff5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: ユーザー定義のセルに関する説明プロンプトまたはコメントを指定します。 アプリケーションは、テキスト文字列であることを示すために、プロンプトテキストを二重引用符 () で自動的に囲みます。 等号 (=) を入力し、引用符を省略した場合、このセルにはアプリケーションが評価する数式を入力できます。
+ms.openlocfilehash: 7684025e03bd3f4f68893179b1df00cc0cb535e2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326888"
 ---
-# <a name="prompt-cell-user-defined-cells-section"></a><span data-ttu-id="1fbac-105">[Prompt] セル ([ユーザー定義セル] セクション)</span><span class="sxs-lookup"><span data-stu-id="1fbac-105">Prompt Cell (User-Defined Cells Section)</span></span>
+# <a name="prompt-cell-user-defined-cells-section"></a><span data-ttu-id="f9538-105">[Prompt] セル ([User-Defined Cells] セクション)</span><span class="sxs-lookup"><span data-stu-id="f9538-105">Prompt Cell (User-Defined Cells Section)</span></span>
 
-<span data-ttu-id="1fbac-p102">ユーザー定義のセルに関する説明プロンプトまたはコメントを指定します。プロンプト テキストは自動的に引用符 (" ") で囲まれ、テキスト文字列として認識されます。このセルに数式を入力するには、等号 (=) を入力して引用符を省略します。これにより、数式はアプリケーションによって評価されます。</span><span class="sxs-lookup"><span data-stu-id="1fbac-p102">Specifies a descriptive prompt or comment for the user-defined cell. The application automatically encloses the prompt text in quotation marks (" ") to indicate that it is a text string. If you type an equal sign (=) and omit the quotation marks, you can enter a formula in this cell that the application evaluates.</span></span>
+<span data-ttu-id="f9538-p102">ユーザー定義のセルに関する説明プロンプトまたはコメントを指定します。プロンプト テキストは自動的に引用符 (" ") で囲まれ、テキスト文字列として認識されます。このセルに数式を入力するには、等号 (=) を入力して引用符を省略します。これにより、数式はアプリケーションによって評価されます。</span><span class="sxs-lookup"><span data-stu-id="f9538-p102">Specifies a descriptive prompt or comment for the user-defined cell. The application automatically encloses the prompt text in quotation marks (" ") to indicate that it is a text string. If you type an equal sign (=) and omit the quotation marks, you can enter a formula in this cell that the application evaluates.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="1fbac-109">備考</span><span class="sxs-lookup"><span data-stu-id="1fbac-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f9538-109">解説</span><span class="sxs-lookup"><span data-stu-id="f9538-109">Remarks</span></span>
 
-<span data-ttu-id="1fbac-110">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Prompt] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="1fbac-110">To get a reference to the Prompt cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="f9538-110">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Prompt] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="f9538-110">To get a reference to the Prompt cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="1fbac-111">セル名:</span><span class="sxs-lookup"><span data-stu-id="1fbac-111">Cell name:</span></span>  <br/> | <span data-ttu-id="1fbac-112">ユーザーです。</span><span class="sxs-lookup"><span data-stu-id="1fbac-112">User.</span></span>  <span data-ttu-id="1fbac-113">*名*です。プロンプトの場所のユーザーです。</span><span class="sxs-lookup"><span data-stu-id="1fbac-113">*Name*  .Prompt            where User.</span></span>  <span data-ttu-id="1fbac-114">*名前*は、行の名前</span><span class="sxs-lookup"><span data-stu-id="1fbac-114">*Name*  is the row name</span></span>  <br/> |
+| <span data-ttu-id="f9538-111">セル名:</span><span class="sxs-lookup"><span data-stu-id="f9538-111">Cell name:</span></span>  <br/> | <span data-ttu-id="f9538-112">マニュアル.</span><span class="sxs-lookup"><span data-stu-id="f9538-112">User.</span></span>  <span data-ttu-id="f9538-113">*名前*です。ユーザーにプロンプトを表示します。</span><span class="sxs-lookup"><span data-stu-id="f9538-113">*Name*  .Prompt            where User.</span></span>  <span data-ttu-id="f9538-114">*name*には、行の名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="f9538-114">*Name*  is the row name</span></span>  <br/> |
    
-<span data-ttu-id="1fbac-115">プログラムから、インデックスによって [Prompt] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="1fbac-115">To get a reference to the Prompt cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="f9538-115">プログラムから、インデックスによって [Prompt] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="f9538-115">To get a reference to the Prompt cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="1fbac-116">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="1fbac-116">Section index:</span></span>  <br/> |<span data-ttu-id="1fbac-117">**visSectionUser**</span><span class="sxs-lookup"><span data-stu-id="1fbac-117">**visSectionUser**</span></span> <br/> |
-| <span data-ttu-id="1fbac-118">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="1fbac-118">Row index:</span></span>  <br/> |<span data-ttu-id="1fbac-119">**visRowUser +***i* 、 *i* = 0, 1, 2.</span><span class="sxs-lookup"><span data-stu-id="1fbac-119">**visRowUser +** *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
-| <span data-ttu-id="1fbac-120">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="1fbac-120">Cell index:</span></span>  <br/> |<span data-ttu-id="1fbac-121">**visUserPrompt**</span><span class="sxs-lookup"><span data-stu-id="1fbac-121">**visUserPrompt**</span></span> <br/> |
+| <span data-ttu-id="f9538-116">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="f9538-116">Section index:</span></span>  <br/> |<span data-ttu-id="f9538-117">**visSectionUser**</span><span class="sxs-lookup"><span data-stu-id="f9538-117">**visSectionUser**</span></span> <br/> |
+| <span data-ttu-id="f9538-118">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="f9538-118">Row index:</span></span>  <br/> |<span data-ttu-id="f9538-119">\*\*visRowUser +\*\*\*\* i = \*\* 0、1、2...</span><span class="sxs-lookup"><span data-stu-id="f9538-119">**visRowUser +** *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
+| <span data-ttu-id="f9538-120">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="f9538-120">Cell index:</span></span>  <br/> |<span data-ttu-id="f9538-121">**visUserPrompt**</span><span class="sxs-lookup"><span data-stu-id="f9538-121">**visUserPrompt**</span></span> <br/> |
    
 

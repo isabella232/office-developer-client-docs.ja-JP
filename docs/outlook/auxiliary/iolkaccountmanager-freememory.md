@@ -7,20 +7,20 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: acb67186-ab38-e918-5402-2526307a5bd0
 description: IOlkAccountManager インターフェイスによって割り当てられたメモリを解放します。
-ms.openlocfilehash: 85ba4d0d47eb5c879fa562e3147860533ef59f23
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3e680e1e26d6c9b12c2dd4a7d48df4dbeae14154
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322058"
 ---
-# <a name="iolkaccountmanagerfreememory"></a><span data-ttu-id="9c5c6-103">IOlkAccountManager::FreeMemory</span><span class="sxs-lookup"><span data-stu-id="9c5c6-103">IOlkAccountManager::FreeMemory</span></span>
+# <a name="iolkaccountmanagerfreememory"></a><span data-ttu-id="f5ed0-103">IOlkAccountManager::FreeMemory</span><span class="sxs-lookup"><span data-stu-id="f5ed0-103">IOlkAccountManager::FreeMemory</span></span>
 
-<span data-ttu-id="9c5c6-104">[IOlkAccountManager](iolkaccountmanager.md)インターフェイスによって割り当てられたメモリを解放します。</span><span class="sxs-lookup"><span data-stu-id="9c5c6-104">Frees memory allocated by the [IOlkAccountManager](iolkaccountmanager.md) interface.</span></span> 
+<span data-ttu-id="f5ed0-104">[IOlkAccountManager](iolkaccountmanager.md)インターフェイスによって割り当てられたメモリを解放します。</span><span class="sxs-lookup"><span data-stu-id="f5ed0-104">Frees memory allocated by the [IOlkAccountManager](iolkaccountmanager.md) interface.</span></span> 
   
-## <a name="quick-info"></a><span data-ttu-id="9c5c6-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="9c5c6-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="f5ed0-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="f5ed0-105">Quick info</span></span>
 
-<span data-ttu-id="9c5c6-106">See [IOlkAccountManager](iolkaccountmanager.md).</span><span class="sxs-lookup"><span data-stu-id="9c5c6-106">See [IOlkAccountManager](iolkaccountmanager.md).</span></span>
+<span data-ttu-id="f5ed0-106">See [IOlkAccountManager](iolkaccountmanager.md).</span><span class="sxs-lookup"><span data-stu-id="f5ed0-106">See [IOlkAccountManager](iolkaccountmanager.md).</span></span>
   
 ```cpp
 HRESULT IOlkAccountManager::FreeMemory (  
@@ -28,21 +28,21 @@ HRESULT IOlkAccountManager::FreeMemory (
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="9c5c6-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="9c5c6-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="f5ed0-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f5ed0-107">Parameters</span></span>
 
-<span data-ttu-id="9c5c6-108">_pv_</span><span class="sxs-lookup"><span data-stu-id="9c5c6-108">_pv_</span></span>
+<span data-ttu-id="f5ed0-108">_pv_</span><span class="sxs-lookup"><span data-stu-id="f5ed0-108">_pv_</span></span>
   
-> <span data-ttu-id="9c5c6-109">[in]解放するメモリへのポインター。</span><span class="sxs-lookup"><span data-stu-id="9c5c6-109">[in] A pointer to the memory to free.</span></span>
+> <span data-ttu-id="f5ed0-109">順番解放するメモリへのポインター。</span><span class="sxs-lookup"><span data-stu-id="f5ed0-109">[in] A pointer to the memory to free.</span></span>
     
-## <a name="return-values"></a><span data-ttu-id="9c5c6-110">戻り値</span><span class="sxs-lookup"><span data-stu-id="9c5c6-110">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="f5ed0-110">戻り値</span><span class="sxs-lookup"><span data-stu-id="f5ed0-110">Return values</span></span>
 
-<span data-ttu-id="9c5c6-111">呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。</span><span class="sxs-lookup"><span data-stu-id="9c5c6-111">S_OK if the call succeeded; otherwise, an error code.</span></span>
+<span data-ttu-id="f5ed0-111">呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。</span><span class="sxs-lookup"><span data-stu-id="f5ed0-111">S_OK if the call succeeded; otherwise, an error code.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="9c5c6-112">解釈</span><span class="sxs-lookup"><span data-stu-id="9c5c6-112">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f5ed0-112">解説</span><span class="sxs-lookup"><span data-stu-id="f5ed0-112">Remarks</span></span>
 
-<span data-ttu-id="9c5c6-113">[IOlkAccountManager::GetOrder](iolkaccountmanager-getorder.md)によって割り当てられたメモリを解放するのにには、このメソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="9c5c6-113">Use this method to release memory allocated by [IOlkAccountManager::GetOrder](iolkaccountmanager-getorder.md).</span></span>
+<span data-ttu-id="f5ed0-113">[IOlkAccountManager:: getorder](iolkaccountmanager-getorder.md)によって割り当てられたメモリを解放するには、このメソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="f5ed0-113">Use this method to release memory allocated by [IOlkAccountManager::GetOrder](iolkaccountmanager-getorder.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="9c5c6-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="9c5c6-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f5ed0-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="f5ed0-114">See also</span></span>
 
-- [<span data-ttu-id="9c5c6-115">IOlkAccountManager::GetOrder</span><span class="sxs-lookup"><span data-stu-id="9c5c6-115">IOlkAccountManager::GetOrder</span></span>](iolkaccountmanager-getorder.md)
+- [<span data-ttu-id="f5ed0-115">IOlkAccountManager::GetOrder</span><span class="sxs-lookup"><span data-stu-id="f5ed0-115">IOlkAccountManager::GetOrder</span></span>](iolkaccountmanager-getorder.md)
 

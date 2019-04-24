@@ -1,5 +1,5 @@
 ---
-title: アドレス帳のエントリを削除します。
+title: アドレス帳エントリの削除
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,28 +7,28 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 107ebcd7-b612-4139-b676-c3851f15bc74
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2c5d7a2114f4a85b9f63cd778e899a83d335ff45
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 1d5ae33b08c85c9ee93764d762c2ec251fddd265
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328351"
 ---
-# <a name="removing-address-book-entries"></a><span data-ttu-id="81715-103">アドレス帳のエントリを削除します。</span><span class="sxs-lookup"><span data-stu-id="81715-103">Removing address book entries</span></span>
+# <a name="removing-address-book-entries"></a><span data-ttu-id="2e449-103">アドレス帳エントリの削除</span><span class="sxs-lookup"><span data-stu-id="2e449-103">Removing address book entries</span></span>
   
-<span data-ttu-id="81715-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="81715-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="2e449-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="2e449-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="81715-105">1 つまたは複数の受信者を削除するのには、コンテナーの[IABContainer::DeleteEntries](iabcontainer-deleteentries.md)メソッドと呼びます。</span><span class="sxs-lookup"><span data-stu-id="81715-105">Your container's [IABContainer::DeleteEntries](iabcontainer-deleteentries.md) method is called to remove one or more recipients.</span></span> <span data-ttu-id="81715-106">**DeleteEntries**には 2 つのパラメーター: 削除する受信者を表すエントリ id と予約済みのフラグの値の配列。</span><span class="sxs-lookup"><span data-stu-id="81715-106">**DeleteEntries** has two parameters: an array of entry identifiers representing the recipients to be deleted and a reserved flags value.</span></span> <span data-ttu-id="81715-107">コンテナーのコンテンツ テーブルに影響を受ける受信者を削除します。受信者を削除するには、ほかのコンテナーに受信者を表す内容のテーブルの行を削除しなければなりません。</span><span class="sxs-lookup"><span data-stu-id="81715-107">Deleting a recipient affects the contents table of your container; in addition to deleting the recipient, your container must delete the contents table row that represents the recipient.</span></span> <span data-ttu-id="81715-108">行がテーブルから削除された、ときに、コンテナーは、各登録済みのクライアントにテーブルの通知を発行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="81715-108">When the row has been removed from the table, your container must issue a table notification to each registered client.</span></span> 
+<span data-ttu-id="2e449-105">コンテナーの[IABContainer::D eleteentries](iabcontainer-deleteentries.md)メソッドを呼び出して、1人または複数の受信者を削除します。</span><span class="sxs-lookup"><span data-stu-id="2e449-105">Your container's [IABContainer::DeleteEntries](iabcontainer-deleteentries.md) method is called to remove one or more recipients.</span></span> <span data-ttu-id="2e449-106">**deleteentries**には、削除する受信者と予約済みのフラグ値を表すエントリ識別子の配列という2つのパラメーターがあります。</span><span class="sxs-lookup"><span data-stu-id="2e449-106">**DeleteEntries** has two parameters: an array of entry identifiers representing the recipients to be deleted and a reserved flags value.</span></span> <span data-ttu-id="2e449-107">受信者の削除は、コンテナーの contents テーブルに影響します。受信者を削除するだけでなく、コンテナーは、受信者を表すコンテンツテーブルの行を削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2e449-107">Deleting a recipient affects the contents table of your container; in addition to deleting the recipient, your container must delete the contents table row that represents the recipient.</span></span> <span data-ttu-id="2e449-108">行がテーブルから削除されている場合、コンテナーは登録された各クライアントに対してテーブル通知を発行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2e449-108">When the row has been removed from the table, your container must issue a table notification to each registered client.</span></span> 
   
-### <a name="to-implement-iabcontainerdeleteentries"></a><span data-ttu-id="81715-109">IABContainer::DeleteEntries を実装するには</span><span class="sxs-lookup"><span data-stu-id="81715-109">To implement IABContainer::DeleteEntries</span></span>
+### <a name="to-implement-iabcontainerdeleteentries"></a><span data-ttu-id="2e449-109">IABContainer を実装するには::D eleteentries</span><span class="sxs-lookup"><span data-stu-id="2e449-109">To implement IABContainer::DeleteEntries</span></span>
   
-1. <span data-ttu-id="81715-110">コンテナーからのエントリの識別子によって表される各受信者を削除します。</span><span class="sxs-lookup"><span data-stu-id="81715-110">Delete each recipient represented by the entry identifier from your container.</span></span>
+1. <span data-ttu-id="2e449-110">エントリ id で表される各受信者をコンテナーから削除します。</span><span class="sxs-lookup"><span data-stu-id="2e449-110">Delete each recipient represented by the entry identifier from your container.</span></span>
     
-2. <span data-ttu-id="81715-111">コンテナーの内容のテーブルが開いている場合。</span><span class="sxs-lookup"><span data-stu-id="81715-111">If your container's contents table is open:</span></span>
+2. <span data-ttu-id="2e449-111">コンテナーの contents テーブルが開いている場合は、次のようになります。</span><span class="sxs-lookup"><span data-stu-id="2e449-111">If your container's contents table is open:</span></span>
     
-   - <span data-ttu-id="81715-112">**UlTableEvent**メンバーが TABLE_ROW_DELETED に設定内容が削除されたテーブルの行ごとに登録されているクライアントに_fnevTableModified_の通知を送信します。</span><span class="sxs-lookup"><span data-stu-id="81715-112">Send an  _fnevTableModified_ notification with the **ulTableEvent** member set to TABLE_ROW_DELETED to registered clients for each deleted contents table row.</span></span> <span data-ttu-id="81715-113">プロバイダーは、通知ユーティリティを使用する場合は、これらの通知を送信するのには[IMAPISupport::Notify](imapisupport-notify.md)を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="81715-113">If your provider uses the notification utility, call [IMAPISupport::Notify](imapisupport-notify.md) to send these notifications.</span></span> 
+   - <span data-ttu-id="2e449-112">**ultableevent**メンバーを TABLE_ROW_DELETED に設定して、削除された各目次の表の行について、登録済みのクライアントに_fnevTableModified_通知を送信します。</span><span class="sxs-lookup"><span data-stu-id="2e449-112">Send an  _fnevTableModified_ notification with the **ulTableEvent** member set to TABLE_ROW_DELETED to registered clients for each deleted contents table row.</span></span> <span data-ttu-id="2e449-113">プロバイダーが通知ユーティリティを使用している場合は、次のような通知を送信するように、 [imapisupport:: Notify](imapisupport-notify.md)を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="2e449-113">If your provider uses the notification utility, call [IMAPISupport::Notify](imapisupport-notify.md) to send these notifications.</span></span> 
     
-   - <span data-ttu-id="81715-114">プロバイダーは、オブジェクトの通知をサポートする場合も、 _fnevObjectDeleted_通知を送信します。</span><span class="sxs-lookup"><span data-stu-id="81715-114">If your provider supports object notifications, also send an  _fnevObjectDeleted_ notification.</span></span> 
+   - <span data-ttu-id="2e449-114">プロバイダーがオブジェクト通知をサポートしている場合は、 _fnevObjectDeleted_通知も送信します。</span><span class="sxs-lookup"><span data-stu-id="2e449-114">If your provider supports object notifications, also send an  _fnevObjectDeleted_ notification.</span></span> 
     
 

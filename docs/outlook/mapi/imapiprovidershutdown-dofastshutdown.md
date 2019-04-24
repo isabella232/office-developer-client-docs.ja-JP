@@ -1,5 +1,5 @@
 ---
-title: IMAPIProviderShutdownDoFastShutdown
+title: imapiprovidershutdowndofastshutdown
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,38 +11,38 @@ api_name:
 api_type:
 - COM
 ms.assetid: d2b66a8e-2e28-4c32-af95-38d345c7bbd7
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: faa061ae323dd744d12e4f9abec713c71379feba
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 4ff93ed9353d58ef6b68823bebf8b5b27a0df6e8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322422"
 ---
-# <a name="imapiprovidershutdowndofastshutdown"></a><span data-ttu-id="c2b84-103">IMAPIProviderShutdown::DoFastShutdown</span><span class="sxs-lookup"><span data-stu-id="c2b84-103">IMAPIProviderShutdown::DoFastShutdown</span></span>
+# <a name="imapiprovidershutdowndofastshutdown"></a><span data-ttu-id="09817-103">IMAPIProviderShutdown::DoFastShutdown</span><span class="sxs-lookup"><span data-stu-id="09817-103">IMAPIProviderShutdown::DoFastShutdown</span></span>
 
   
   
-<span data-ttu-id="c2b84-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="c2b84-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="09817-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="09817-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="c2b84-105">示します MAPI プロバイダーに MAPI クライアントが、すぐに終了している MAPI プロバイダーがデータの損失を防ぐために加えられた変更を永続化できるようにします。</span><span class="sxs-lookup"><span data-stu-id="c2b84-105">Indicates to the MAPI provider that the MAPI client is exiting immediately, so that the MAPI provider will persist changes to prevent data loss.</span></span>
+<span data-ttu-id="09817-105">mapi プロバイダーに対して、mapi クライアントが直ちに終了していることを示します。したがって、データ損失を防止するために mapi プロバイダーは変更を保持します。</span><span class="sxs-lookup"><span data-stu-id="09817-105">Indicates to the MAPI provider that the MAPI client is exiting immediately, so that the MAPI provider will persist changes to prevent data loss.</span></span>
   
 ```cpp
 HRESULT DoFastShutdown ();
 ```
 
-## <a name="return-value"></a><span data-ttu-id="c2b84-106">�߂�l</span><span class="sxs-lookup"><span data-stu-id="c2b84-106">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="09817-106">戻り値</span><span class="sxs-lookup"><span data-stu-id="09817-106">Return value</span></span>
 
-<span data-ttu-id="c2b84-107">S_OK</span><span class="sxs-lookup"><span data-stu-id="c2b84-107">S_OK</span></span>
+<span data-ttu-id="09817-107">S_OK</span><span class="sxs-lookup"><span data-stu-id="09817-107">S_OK</span></span>
   
-> <span data-ttu-id="c2b84-108">MAPI プロバイダーを即座に終了するのには MAPI クライアントの準備ができました。</span><span class="sxs-lookup"><span data-stu-id="c2b84-108">The MAPI provider is ready for the MAPI client to exit immediately.</span></span> 
+> <span data-ttu-id="09817-108">mapi プロバイダーは、mapi クライアントが直ちに終了する準備ができています。</span><span class="sxs-lookup"><span data-stu-id="09817-108">The MAPI provider is ready for the MAPI client to exit immediately.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="c2b84-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="c2b84-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="09817-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="09817-109">See also</span></span>
 
 
 
-[<span data-ttu-id="c2b84-110">IMAPIProviderShutdown : IUnknown</span><span class="sxs-lookup"><span data-stu-id="c2b84-110">IMAPIProviderShutdown : IUnknown</span></span>](imapiprovidershutdowniunknown.md)
+[<span data-ttu-id="09817-110">IMAPIProviderShutdown : IUnknown</span><span class="sxs-lookup"><span data-stu-id="09817-110">IMAPIProviderShutdown : IUnknown</span></span>](imapiprovidershutdowniunknown.md)
 
 
-[<span data-ttu-id="c2b84-111">Mapi クライアントのシャット ダウン</span><span class="sxs-lookup"><span data-stu-id="c2b84-111">Client Shutdown in MAPI</span></span>](client-shutdown-in-mapi.md)
+[<span data-ttu-id="09817-111">MAPI でのクライアント シャットダウン</span><span class="sxs-lookup"><span data-stu-id="09817-111">Client Shutdown in MAPI</span></span>](client-shutdown-in-mapi.md)
 

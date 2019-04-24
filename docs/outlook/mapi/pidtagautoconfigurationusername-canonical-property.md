@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: 05dfa0e2-4ab1-4f57-9009-6a815aca87bd
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c061760fd089db0e56c79479d2d095627355d72e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
-ms.translationtype: HT
+ms.openlocfilehash: 519acb46a1401b60c47dfbb764b2e0250fd54f89
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32326643"
 ---
-# <a name="pidtagautoconfigurationusername-canonical-property"></a><span data-ttu-id="ccc58-103">PidTagAutoConfigurationUserName 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="ccc58-103">PidTagAutoConfigurationUserName Canonical Property</span></span>
+# <a name="pidtagautoconfigurationusername-canonical-property"></a><span data-ttu-id="34f4f-103">PidTagAutoConfigurationUserName 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="34f4f-103">PidTagAutoConfigurationUserName Canonical Property</span></span>
 
   
   
-<span data-ttu-id="ccc58-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ccc58-104">**Applies to:** Office 365 | Outlook | Outlook 2016 \*</span></span> 
+<span data-ttu-id="34f4f-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="34f4f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="ccc58-105">ユーザーの表示名を表します。</span><span class="sxs-lookup"><span data-stu-id="ccc58-105">Represents the user's display name.</span></span>
+<span data-ttu-id="34f4f-105">ユーザーの表示名を表します。</span><span class="sxs-lookup"><span data-stu-id="34f4f-105">Represents the user's display name.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="ccc58-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="ccc58-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="ccc58-107">PR_AUTOCFG_USER_NAME_W</span><span class="sxs-lookup"><span data-stu-id="ccc58-107">PR_AUTOCFG_USER_NAME_W</span></span>  <br/> |
-|<span data-ttu-id="ccc58-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="ccc58-108">Identifier:</span></span>  <br/> |<span data-ttu-id="ccc58-109">0x67FE</span><span class="sxs-lookup"><span data-stu-id="ccc58-109">0x67FE</span></span>  <br/> |
-|<span data-ttu-id="ccc58-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="ccc58-110">Data type:</span></span>  <br/> |<span data-ttu-id="ccc58-111">PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="ccc58-111">PT_UNICODE</span></span>  <br/> |
-|<span data-ttu-id="ccc58-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="ccc58-112">Area:</span></span>  <br/> |<span data-ttu-id="ccc58-113">メッセージの添付ファイル</span><span class="sxs-lookup"><span data-stu-id="ccc58-113">Message attachment</span></span>  <br/> |
+|<span data-ttu-id="34f4f-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="34f4f-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="34f4f-107">PR_AUTOCFG_USER_NAME_W</span><span class="sxs-lookup"><span data-stu-id="34f4f-107">PR_AUTOCFG_USER_NAME_W</span></span>  <br/> |
+|<span data-ttu-id="34f4f-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="34f4f-108">Identifier:</span></span>  <br/> |<span data-ttu-id="34f4f-109">0x67FE</span><span class="sxs-lookup"><span data-stu-id="34f4f-109">0x67FE</span></span>  <br/> |
+|<span data-ttu-id="34f4f-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="34f4f-110">Data type:</span></span>  <br/> |<span data-ttu-id="34f4f-111">PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="34f4f-111">PT_UNICODE</span></span>  <br/> |
+|<span data-ttu-id="34f4f-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="34f4f-112">Area:</span></span>  <br/> |<span data-ttu-id="34f4f-113">メッセージの添付ファイル</span><span class="sxs-lookup"><span data-stu-id="34f4f-113">Message attachment</span></span>  <br/> |
    
 

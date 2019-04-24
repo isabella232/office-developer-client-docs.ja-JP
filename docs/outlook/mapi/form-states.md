@@ -7,38 +7,38 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: dfc9fbf1-90d4-4756-92d9-032ac56a9c50
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 195a82bfcc163ee01d2d42c71e79a8f5c9c620e5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 61d20ff7010151a82c53cafc69270e6925796a5c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327518"
 ---
-# <a name="form-states"></a><span data-ttu-id="cfbae-103">フォームの状態</span><span class="sxs-lookup"><span data-stu-id="cfbae-103">Form states</span></span>
+# <a name="form-states"></a><span data-ttu-id="c3ebd-103">フォームの状態</span><span class="sxs-lookup"><span data-stu-id="c3ebd-103">Form states</span></span>
 
-<span data-ttu-id="cfbae-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="cfbae-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="c3ebd-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="c3ebd-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="cfbae-105">フォーム オブジェクトは、それらにどのようなメソッドが呼び出された、およびそれらのメソッドを実行する際にエラーが発生しているかどうかによって、5 つの異なる状態のいずれかで指定できます。</span><span class="sxs-lookup"><span data-stu-id="cfbae-105">Form objects can be in one of five distinct states, depending on what methods have been called in them and whether any errors have occurred in performing those methods.</span></span> <span data-ttu-id="cfbae-106">状態は次のトピックで説明します。</span><span class="sxs-lookup"><span data-stu-id="cfbae-106">The states are described in the following topics:</span></span>
+<span data-ttu-id="c3ebd-105">フォームオブジェクトは、どのメソッドが呼び出されたか、およびそれらのメソッドの実行時にエラーが発生したかどうかに応じて、5つの異なる状態のいずれかになります。</span><span class="sxs-lookup"><span data-stu-id="c3ebd-105">Form objects can be in one of five distinct states, depending on what methods have been called in them and whether any errors have occurred in performing those methods.</span></span> <span data-ttu-id="c3ebd-106">これらの状態については、以下のトピックで説明します。</span><span class="sxs-lookup"><span data-stu-id="c3ebd-106">The states are described in the following topics:</span></span>
   
-- [<span data-ttu-id="cfbae-107">Uninitialized 状態</span><span class="sxs-lookup"><span data-stu-id="cfbae-107">Uninitialized State</span></span>](uninitialized-state.md)
+- [<span data-ttu-id="c3ebd-107">未初期化状態</span><span class="sxs-lookup"><span data-stu-id="c3ebd-107">Uninitialized State</span></span>](uninitialized-state.md)
     
-- [<span data-ttu-id="cfbae-108">Normal 状態</span><span class="sxs-lookup"><span data-stu-id="cfbae-108">Normal State</span></span>](normal-state.md)
+- [<span data-ttu-id="c3ebd-108">通常の状態</span><span class="sxs-lookup"><span data-stu-id="c3ebd-108">Normal State</span></span>](normal-state.md)
     
-- [<span data-ttu-id="cfbae-109">NoScribble 状態</span><span class="sxs-lookup"><span data-stu-id="cfbae-109">NoScribble State</span></span>](noscribble-state.md)
+- [<span data-ttu-id="c3ebd-109">noscribble 状態</span><span class="sxs-lookup"><span data-stu-id="c3ebd-109">NoScribble State</span></span>](noscribble-state.md)
     
-- [<span data-ttu-id="cfbae-110">HandsOffAfterSave 状態</span><span class="sxs-lookup"><span data-stu-id="cfbae-110">HandsOffAfterSave State</span></span>](handsoffaftersave-state.md)
+- [<span data-ttu-id="c3ebd-110">保存の状態を処理する</span><span class="sxs-lookup"><span data-stu-id="c3ebd-110">HandsOffAfterSave State</span></span>](handsoffaftersave-state.md)
     
-- [<span data-ttu-id="cfbae-111">HandsOffFromNormal 状態</span><span class="sxs-lookup"><span data-stu-id="cfbae-111">HandsOffFromNormal State</span></span>](handsofffromnormal-state.md)
+- [<span data-ttu-id="c3ebd-111">標準の状態</span><span class="sxs-lookup"><span data-stu-id="c3ebd-111">HandsOffFromNormal State</span></span>](handsofffromnormal-state.md)
     
-<span data-ttu-id="cfbae-112">状態は、主に、フォーム オブジェクト内のデータの状態に関連します。</span><span class="sxs-lookup"><span data-stu-id="cfbae-112">The states primarily relate to the status of the data in the form object.</span></span> <span data-ttu-id="cfbae-113">さまざまな状態では、フォーム オブジェクトは、データ、および、どの時点では、フォームでデータを保存する際に変更を許可する必要があるかどうかを保存するには、データが必要かどうかを反映します。</span><span class="sxs-lookup"><span data-stu-id="cfbae-113">The different states reflect whether the data needs to be saved, whether the form object should allow modifications to the data, and what point in the process of saving the data the form is in.</span></span> <span data-ttu-id="cfbae-114">ように、フォームの状態およびそれらの間の遷移がある他の操作、フォームのサーバーの実装の[IPersistMessage: IUnknown](ipersistmessageiunknown.md)よりも、他のメソッドのインターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="cfbae-114">As such, the form states and transitions between them have more to do with your form server's implementation of [IPersistMessage : IUnknown](ipersistmessageiunknown.md) interface methods than any other.</span></span> <span data-ttu-id="cfbae-115">これらの状態の知識は、フォーム サーバーを実装する必要があります、MAPI フォーム インターフェイスの適切な実装に非常に便利です。</span><span class="sxs-lookup"><span data-stu-id="cfbae-115">Knowledge of these states is very useful for proper implementation of the MAPI form interfaces that your form server must implement.</span></span> 
+<span data-ttu-id="c3ebd-112">状態は、主に form オブジェクト内のデータの状態に関連しています。</span><span class="sxs-lookup"><span data-stu-id="c3ebd-112">The states primarily relate to the status of the data in the form object.</span></span> <span data-ttu-id="c3ebd-113">さまざまな状態は、データを保存する必要があるかどうか、フォームオブジェクトがデータに変更を加えることができるかどうか、およびフォームがどのようなデータを保存するかを表します。</span><span class="sxs-lookup"><span data-stu-id="c3ebd-113">The different states reflect whether the data needs to be saved, whether the form object should allow modifications to the data, and what point in the process of saving the data the form is in.</span></span> <span data-ttu-id="c3ebd-114">そのため、フォームの状態と、それらの間の切り替えは、フォームサーバーの IPersistMessage の実装とは他のものよりも、 [IUnknown](ipersistmessageiunknown.md)インターフェイスメソッドの実装によって大きくなります。</span><span class="sxs-lookup"><span data-stu-id="c3ebd-114">As such, the form states and transitions between them have more to do with your form server's implementation of [IPersistMessage : IUnknown](ipersistmessageiunknown.md) interface methods than any other.</span></span> <span data-ttu-id="c3ebd-115">これらの状態に関する知識は、フォームサーバーで実装する必要がある MAPI フォームインターフェイスを適切に実装するのに非常に役立ちます。</span><span class="sxs-lookup"><span data-stu-id="c3ebd-115">Knowledge of these states is very useful for proper implementation of the MAPI form interfaces that your form server must implement.</span></span> 
   
-<span data-ttu-id="cfbae-116">このセクションのトピックでは、他の状態への遷移が発生するを許可する操作と、さまざまな状態について説明します。</span><span class="sxs-lookup"><span data-stu-id="cfbae-116">The topics in this section describe the various states, along with the allowed actions that cause transitions to other states.</span></span> <span data-ttu-id="cfbae-117">トピックに記載されていないすべての遷移を指定することはできません。</span><span class="sxs-lookup"><span data-stu-id="cfbae-117">Any transitions not listed in the topics are not allowed.</span></span> <span data-ttu-id="cfbae-118">場合は、フォーム オブジェクトでは、[許可しない] の切り替えを行うための状態の間、メッセージング クライアントが予想され、クライアント、またはフォーム オブジェクトの予期しない動作が発生する可能性がありますの方法では動作しません。</span><span class="sxs-lookup"><span data-stu-id="cfbae-118">If your form objects make disallowed transitions between states, they will not behave in the ways that messaging clients expect and could cause unpredictable client or form object behavior.</span></span>
+<span data-ttu-id="c3ebd-116">このセクションのトピックでは、さまざまな状態と、他の状態に遷移する可能性がある許可されるアクションについて説明します。</span><span class="sxs-lookup"><span data-stu-id="c3ebd-116">The topics in this section describe the various states, along with the allowed actions that cause transitions to other states.</span></span> <span data-ttu-id="c3ebd-117">これらのトピックに記載されていない遷移は許可されません。</span><span class="sxs-lookup"><span data-stu-id="c3ebd-117">Any transitions not listed in the topics are not allowed.</span></span> <span data-ttu-id="c3ebd-118">フォームオブジェクトで状態間の移行が許可されない場合は、メッセージングクライアントが予期している方法では動作せず、予期しないクライアントまたはフォームオブジェクトの動作が発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="c3ebd-118">If your form objects make disallowed transitions between states, they will not behave in the ways that messaging clients expect and could cause unpredictable client or form object behavior.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="cfbae-119">いくつかの状態の遷移は、以前の状態からの情報に依存します。</span><span class="sxs-lookup"><span data-stu-id="cfbae-119">Some state transitions depend on information from previous states.</span></span> <span data-ttu-id="cfbae-120">フォーム サーバーは、後の状態の変更を容易にするメッセージのプロパティの値が変更されたかどうかを示すためには、そのフォーム オブジェクトにフラグを実装する可能性が高い必要があります。</span><span class="sxs-lookup"><span data-stu-id="cfbae-120">Your form server will most likely have to implement a flag in its form objects to indicate whether the values of the message's properties have been changed to facilitate later state changes.</span></span> 
+> <span data-ttu-id="c3ebd-119">一部の状態遷移は、以前の状態の情報に依存します。</span><span class="sxs-lookup"><span data-stu-id="c3ebd-119">Some state transitions depend on information from previous states.</span></span> <span data-ttu-id="c3ebd-120">フォームサーバーでは、多くの場合、メッセージのプロパティの値が変更されているかどうかを示すフラグを form オブジェクトに実装する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c3ebd-120">Your form server will most likely have to implement a flag in its form objects to indicate whether the values of the message's properties have been changed to facilitate later state changes.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="cfbae-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="cfbae-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c3ebd-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="c3ebd-121">See also</span></span>
 
-- [<span data-ttu-id="cfbae-122">MAPI フォーム サーバーの開発</span><span class="sxs-lookup"><span data-stu-id="cfbae-122">Developing MAPI Form Servers</span></span>](developing-mapi-form-servers.md)
+- [<span data-ttu-id="c3ebd-122">MAPI フォームサーバーの開発</span><span class="sxs-lookup"><span data-stu-id="c3ebd-122">Developing MAPI Form Servers</span></span>](developing-mapi-form-servers.md)
 

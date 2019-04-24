@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 510b2e21-ba27-47dd-87cb-2a549e31fa28
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 502bc24ece37c91e2cac23cf8486df96d5a71377
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 2e44d824bbb5cc96c51d7ca91eb639001bc52a71
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328875"
 ---
-# <a name="imapitablequeryposition"></a><span data-ttu-id="8eb89-103">IMAPITable::QueryPosition</span><span class="sxs-lookup"><span data-stu-id="8eb89-103">IMAPITable::QueryPosition</span></span>
+# <a name="imapitablequeryposition"></a><span data-ttu-id="cf0b2-103">IMAPITable::QueryPosition</span><span class="sxs-lookup"><span data-stu-id="cf0b2-103">IMAPITable::QueryPosition</span></span>
 
   
   
-<span data-ttu-id="8eb89-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="8eb89-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="cf0b2-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="cf0b2-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="8eb89-105">小数部の値に基づいて、カーソルの現在のテーブルの行位置を取得します。</span><span class="sxs-lookup"><span data-stu-id="8eb89-105">Retrieves the current table row position of the cursor, based on a fractional value.</span></span>
+<span data-ttu-id="cf0b2-105">小数値に基づいて、カーソルの現在のテーブル行の位置を取得します。</span><span class="sxs-lookup"><span data-stu-id="cf0b2-105">Retrieves the current table row position of the cursor, based on a fractional value.</span></span>
   
 ```cpp
 HRESULT QueryPosition(
@@ -35,49 +35,49 @@ ULONG FAR * lpulDenominator
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="8eb89-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="8eb89-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="cf0b2-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="cf0b2-106">Parameters</span></span>
 
- <span data-ttu-id="8eb89-107">_lpulRow_</span><span class="sxs-lookup"><span data-stu-id="8eb89-107">_lpulRow_</span></span>
+ <span data-ttu-id="cf0b2-107">_lの行_</span><span class="sxs-lookup"><span data-stu-id="cf0b2-107">_lpulRow_</span></span>
   
-> <span data-ttu-id="8eb89-108">[out]現在の行の行番号へのポインター。</span><span class="sxs-lookup"><span data-stu-id="8eb89-108">[out] Pointer to the number of the current row.</span></span> <span data-ttu-id="8eb89-109">行番号は 0 から始まります。テーブルの最初の行は 0 です。</span><span class="sxs-lookup"><span data-stu-id="8eb89-109">The row number is zero-based; the first row in the table is zero.</span></span> 
+> <span data-ttu-id="cf0b2-108">読み上げ現在の行の番号へのポインター。</span><span class="sxs-lookup"><span data-stu-id="cf0b2-108">[out] Pointer to the number of the current row.</span></span> <span data-ttu-id="cf0b2-109">行番号は0から始まります。表の最初の行は0になります。</span><span class="sxs-lookup"><span data-stu-id="cf0b2-109">The row number is zero-based; the first row in the table is zero.</span></span> 
     
- <span data-ttu-id="8eb89-110">_lpulNumerator_</span><span class="sxs-lookup"><span data-stu-id="8eb89-110">_lpulNumerator_</span></span>
+ <span data-ttu-id="cf0b2-110">_lアウト分子_</span><span class="sxs-lookup"><span data-stu-id="cf0b2-110">_lpulNumerator_</span></span>
   
-> <span data-ttu-id="8eb89-111">[out]テーブルの位置を識別する分数の分子の部分へのポインター。</span><span class="sxs-lookup"><span data-stu-id="8eb89-111">[out] Pointer to the numerator for the fraction identifying the table position.</span></span>
+> <span data-ttu-id="cf0b2-111">読み上げテーブルの位置を識別する分数の分子へのポインター。</span><span class="sxs-lookup"><span data-stu-id="cf0b2-111">[out] Pointer to the numerator for the fraction identifying the table position.</span></span>
     
- <span data-ttu-id="8eb89-112">_lpulDenominator_</span><span class="sxs-lookup"><span data-stu-id="8eb89-112">_lpulDenominator_</span></span>
+ <span data-ttu-id="cf0b2-112">_lアウト分母_</span><span class="sxs-lookup"><span data-stu-id="cf0b2-112">_lpulDenominator_</span></span>
   
-> <span data-ttu-id="8eb89-113">[out]テーブルの位置を識別する分数の分母となるへのポインター。</span><span class="sxs-lookup"><span data-stu-id="8eb89-113">[out] Pointer to the denominator for the fraction identifying the table position.</span></span> <span data-ttu-id="8eb89-114">_LpulDenominator_パラメーターは、ゼロにすることはできません。</span><span class="sxs-lookup"><span data-stu-id="8eb89-114">The  _lpulDenominator_ parameter cannot be zero.</span></span> 
+> <span data-ttu-id="cf0b2-113">読み上げテーブルの位置を識別する分数の分母へのポインター。</span><span class="sxs-lookup"><span data-stu-id="cf0b2-113">[out] Pointer to the denominator for the fraction identifying the table position.</span></span> <span data-ttu-id="cf0b2-114">_lアウト分母_パラメーターを0にすることはできません。</span><span class="sxs-lookup"><span data-stu-id="cf0b2-114">The  _lpulDenominator_ parameter cannot be zero.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="8eb89-115">�߂�l</span><span class="sxs-lookup"><span data-stu-id="8eb89-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="cf0b2-115">戻り値</span><span class="sxs-lookup"><span data-stu-id="cf0b2-115">Return value</span></span>
 
-<span data-ttu-id="8eb89-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="8eb89-116">S_OK</span></span> 
+<span data-ttu-id="cf0b2-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="cf0b2-116">S_OK</span></span> 
   
-> <span data-ttu-id="8eb89-117">メソッドでは、 _lpulRow_、 _lpulNumerator_、 _lpulDenominator_で有効な値が返されます。</span><span class="sxs-lookup"><span data-stu-id="8eb89-117">The method returned valid values in  _lpulRow_,  _lpulNumerator_, and  _lpulDenominator_.</span></span>
+> <span data-ttu-id="cf0b2-117">メソッドは、 _lな行_の有効な値、l出た_分子_、および_lアウト分母_を返しました。</span><span class="sxs-lookup"><span data-stu-id="cf0b2-117">The method returned valid values in  _lpulRow_,  _lpulNumerator_, and  _lpulDenominator_.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="8eb89-118">注釈</span><span class="sxs-lookup"><span data-stu-id="8eb89-118">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="cf0b2-118">解説</span><span class="sxs-lookup"><span data-stu-id="cf0b2-118">Remarks</span></span>
 
-<span data-ttu-id="8eb89-119">**IMAPITable::QueryPosition**メソッドは、現在の行位置を指定し、現在の行とテーブルの末尾には、相対的な位置を示す小数部の値の番号の両方を返します。</span><span class="sxs-lookup"><span data-stu-id="8eb89-119">The **IMAPITable::QueryPosition** method determines the current row position and returns both the number of the current row and a fractional value indicating its relative position to the end of the table.</span></span> <span data-ttu-id="8eb89-120">MAPI は、読み取られる次の行として、現在の行を定義します。</span><span class="sxs-lookup"><span data-stu-id="8eb89-120">MAPI defines the current row as the next row to be read.</span></span> 
+<span data-ttu-id="cf0b2-119">**IMAPITable:: queryposition**メソッドは、現在の行の位置を決定し、現在の行の数と、テーブルの最後までの相対位置を示す小数値を返します。</span><span class="sxs-lookup"><span data-stu-id="cf0b2-119">The **IMAPITable::QueryPosition** method determines the current row position and returns both the number of the current row and a fractional value indicating its relative position to the end of the table.</span></span> <span data-ttu-id="cf0b2-120">MAPI は、現在の行を読み取る次の行として定義します。</span><span class="sxs-lookup"><span data-stu-id="cf0b2-120">MAPI defines the current row as the next row to be read.</span></span> 
   
-## <a name="notes-to-implementers"></a><span data-ttu-id="8eb89-121">実装者へのメモ</span><span class="sxs-lookup"><span data-stu-id="8eb89-121">Notes to implementers</span></span>
+## <a name="notes-to-implementers"></a><span data-ttu-id="cf0b2-121">実装に関するメモ</span><span class="sxs-lookup"><span data-stu-id="cf0b2-121">Notes to implementers</span></span>
 
-<span data-ttu-id="8eb89-122">_LpulDenominator_パラメーターのテーブルの行の正確な数を取得する必要はありません。概算値となります。</span><span class="sxs-lookup"><span data-stu-id="8eb89-122">You do not need to return the exact number of rows in the table for the  _lpulDenominator_ parameter; it can be an approximation.</span></span> 
+<span data-ttu-id="cf0b2-122">_lアウト分母_パラメーターのテーブル内の行の正確な数を返す必要はありません。近似値になることがあります。</span><span class="sxs-lookup"><span data-stu-id="cf0b2-122">You do not need to return the exact number of rows in the table for the  _lpulDenominator_ parameter; it can be an approximation.</span></span> 
   
-<span data-ttu-id="8eb89-123">、現在の行を特定できない場合は、 _lpulRow_に 0 xffffffff の値を返します。</span><span class="sxs-lookup"><span data-stu-id="8eb89-123">If you cannot determine the current row, return a value of 0xFFFFFFFF in  _lpulRow_.</span></span>
+<span data-ttu-id="cf0b2-123">現在の行を特定できない場合は、 _lアウト row_で値0xffffffff を返します。</span><span class="sxs-lookup"><span data-stu-id="cf0b2-123">If you cannot determine the current row, return a value of 0xFFFFFFFF in  _lpulRow_.</span></span>
   
-## <a name="notes-to-callers"></a><span data-ttu-id="8eb89-124">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="8eb89-124">Notes to callers</span></span>
+## <a name="notes-to-callers"></a><span data-ttu-id="cf0b2-124">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="cf0b2-124">Notes to callers</span></span>
 
-<span data-ttu-id="8eb89-125">**QueryPosition**を使用すると、スクロール バーのスクロール ボックスを配置します。</span><span class="sxs-lookup"><span data-stu-id="8eb89-125">You can use **QueryPosition** to position a scroll box in a scroll bar.</span></span> <span data-ttu-id="8eb89-126">100 行を含むテーブルでの**QueryPosition**は、 _lpulDenominator_パラメーターに 100、75、 _lpulRow_パラメーターで、 _lpulNumerator_パラメーターで 75 の値を返す場合は、スクロール ボックス 3/4 を配置することスクロール バーの間での方法です。</span><span class="sxs-lookup"><span data-stu-id="8eb89-126">For example, in a table containing 100 rows, if **QueryPosition** returns a value of 75 in the  _lpulNumerator_ parameter, 100 in the  _lpulDenominator_ parameter, and 75 in the  _lpulRow_ parameter, you can position the scroll box 3/4 of the way across the scroll bar.</span></span> 
+<span data-ttu-id="cf0b2-125">**queryposition**を使用して、スクロールバーのスクロールボックスを配置できます。</span><span class="sxs-lookup"><span data-stu-id="cf0b2-125">You can use **QueryPosition** to position a scroll box in a scroll bar.</span></span> <span data-ttu-id="cf0b2-126">たとえば、100行を含むテーブルで、 **queryposition**が l出_分子_パラメーターで75の値を返し、l出_分母_パラメーターで100を返した場合は、スクロールボックス__ を次のように配置できます。をスクロールバーの上方向に移動します。</span><span class="sxs-lookup"><span data-stu-id="cf0b2-126">For example, in a table containing 100 rows, if **QueryPosition** returns a value of 75 in the  _lpulNumerator_ parameter, 100 in the  _lpulDenominator_ parameter, and 75 in the  _lpulRow_ parameter, you can position the scroll box 3/4 of the way across the scroll bar.</span></span> 
   
-<span data-ttu-id="8eb89-127">テーブル内の行の数をされている_lpulDenominator_の値に依存しません。</span><span class="sxs-lookup"><span data-stu-id="8eb89-127">Do not rely on the value in  _lpulDenominator_ being the number of rows in the table.</span></span> <span data-ttu-id="8eb89-128">**QueryPosition**は、正確な行にカーソルが配置されていることを常に識別できません。</span><span class="sxs-lookup"><span data-stu-id="8eb89-128">**QueryPosition** cannot always identify the exact row that the cursor is positioned on.</span></span> 
+<span data-ttu-id="cf0b2-127">テーブル内の行の数として、 _lアウト分母_の値に依存しないようにしてください。</span><span class="sxs-lookup"><span data-stu-id="cf0b2-127">Do not rely on the value in  _lpulDenominator_ being the number of rows in the table.</span></span> <span data-ttu-id="cf0b2-128">**queryposition**は、カーソルが置かれている正確な行を常に識別することはできません。</span><span class="sxs-lookup"><span data-stu-id="cf0b2-128">**QueryPosition** cannot always identify the exact row that the cursor is positioned on.</span></span> 
   
-<span data-ttu-id="8eb89-129">**QueryPosition**への呼び出しには、大量メモリ、特に大規模な分類されたテーブルにはが含まれます。</span><span class="sxs-lookup"><span data-stu-id="8eb89-129">A call to **QueryPosition** might involve large amounts of memory, particularly for large categorized tables.</span></span> <span data-ttu-id="8eb89-130">_LpulRow_パラメーターは、0 xffffffff に設定されている場合、大量のメモリは**QueryPosition**を現在の行を特定するために必要でした。</span><span class="sxs-lookup"><span data-stu-id="8eb89-130">If the  _lpulRow_ parameter is set to 0xFFFFFFFF, too much memory was required for **QueryPosition** to determine the current row.</span></span> <span data-ttu-id="8eb89-131">_LpulNumerator_および_lpulDenominator_パラメーターで指定された行にテーブルを配置する[IMAPITable::SeekRowApprox](imapitable-seekrowapprox.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="8eb89-131">Call the [IMAPITable::SeekRowApprox](imapitable-seekrowapprox.md) method to position the table to the row identified by the  _lpulNumerator_ and  _lpulDenominator_ parameters.</span></span> <span data-ttu-id="8eb89-132">ただし、常にされないように**QueryPosition**がメモリが倍にしていない場合、同じ行を現在の位置として確立するために**SeekRowApprox** 。</span><span class="sxs-lookup"><span data-stu-id="8eb89-132">However, do not always expect **SeekRowApprox** to establish as the current position the same row **QueryPosition** would have if memory had not been a factor.</span></span> 
+<span data-ttu-id="cf0b2-129">**queryposition**の呼び出しでは、特に、大きな分類されたテーブルの場合は、大量のメモリが関係することがあります。</span><span class="sxs-lookup"><span data-stu-id="cf0b2-129">A call to **QueryPosition** might involve large amounts of memory, particularly for large categorized tables.</span></span> <span data-ttu-id="cf0b2-130">lの_行_パラメーターが0xffffffff に設定されている場合、 **queryposition**が現在の行を特定するために必要なメモリの量が多すぎます。</span><span class="sxs-lookup"><span data-stu-id="cf0b2-130">If the  _lpulRow_ parameter is set to 0xFFFFFFFF, too much memory was required for **QueryPosition** to determine the current row.</span></span> <span data-ttu-id="cf0b2-131">[IMAPITable:: seekrowapprox](imapitable-seekrowapprox.md)メソッドを呼び出して、 _lpulnumerator_パラメーターと_lアウト分母_パラメーターで識別される行にテーブルを配置します。</span><span class="sxs-lookup"><span data-stu-id="cf0b2-131">Call the [IMAPITable::SeekRowApprox](imapitable-seekrowapprox.md) method to position the table to the row identified by the  _lpulNumerator_ and  _lpulDenominator_ parameters.</span></span> <span data-ttu-id="cf0b2-132">ただし、メモリが係数で\*\*\*\* ない場合は、同じ行**queryposition**が現在の位置として設定されていると常に期待してはいけません。</span><span class="sxs-lookup"><span data-stu-id="cf0b2-132">However, do not always expect **SeekRowApprox** to establish as the current position the same row **QueryPosition** would have if memory had not been a factor.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="8eb89-133">関連項目</span><span class="sxs-lookup"><span data-stu-id="8eb89-133">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cf0b2-133">関連項目</span><span class="sxs-lookup"><span data-stu-id="cf0b2-133">See also</span></span>
 
 
 
-[<span data-ttu-id="8eb89-134">IMAPITable::SeekRowApprox</span><span class="sxs-lookup"><span data-stu-id="8eb89-134">IMAPITable::SeekRowApprox</span></span>](imapitable-seekrowapprox.md)
+[<span data-ttu-id="cf0b2-134">IMAPITable::SeekRowApprox</span><span class="sxs-lookup"><span data-stu-id="cf0b2-134">IMAPITable::SeekRowApprox</span></span>](imapitable-seekrowapprox.md)
   
-[<span data-ttu-id="8eb89-135">IMAPITable : IUnknown</span><span class="sxs-lookup"><span data-stu-id="8eb89-135">IMAPITable : IUnknown</span></span>](imapitableiunknown.md)
+[<span data-ttu-id="cf0b2-135">IMAPITable : IUnknown</span><span class="sxs-lookup"><span data-stu-id="cf0b2-135">IMAPITable : IUnknown</span></span>](imapitableiunknown.md)
 

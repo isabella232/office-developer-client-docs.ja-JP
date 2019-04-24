@@ -1,5 +1,5 @@
 ---
-title: IMAPISupportDoCopyProps
+title: imapisupportdocopyprops
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2446ef52-578a-4004-9719-de9b0207ccad
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a30a323874c847d9a08b00512cfd30ff3cf5c5ff
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 24107ae1926c8590da6a823a354eeae72d72f248
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322366"
 ---
-# <a name="imapisupportdocopyprops"></a><span data-ttu-id="48481-103">IMAPISupport::DoCopyProps</span><span class="sxs-lookup"><span data-stu-id="48481-103">IMAPISupport::DoCopyProps</span></span>
+# <a name="imapisupportdocopyprops"></a><span data-ttu-id="bf2cf-103">IMAPISupport::DoCopyProps</span><span class="sxs-lookup"><span data-stu-id="bf2cf-103">IMAPISupport::DoCopyProps</span></span>
 
   
   
-<span data-ttu-id="48481-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="48481-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="bf2cf-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="bf2cf-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="48481-105">オブジェクトの 1 つまたは複数のプロパティを別のオブジェクトを移動またはコピーします。</span><span class="sxs-lookup"><span data-stu-id="48481-105">Copies or moves one or more properties of an object to another object.</span></span>
+<span data-ttu-id="bf2cf-105">オブジェクトの1つまたは複数のプロパティを別のオブジェクトにコピーまたは移動します。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-105">Copies or moves one or more properties of an object to another object.</span></span>
   
 ```cpp
 HRESULT DoCopyProps(
@@ -41,143 +41,143 @@ HRESULT DoCopyProps(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="48481-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="48481-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="bf2cf-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bf2cf-106">Parameters</span></span>
 
- <span data-ttu-id="48481-107">_lpSrcInterface_</span><span class="sxs-lookup"><span data-stu-id="48481-107">_lpSrcInterface_</span></span>
+ <span data-ttu-id="bf2cf-107">_lpsrcinterface_</span><span class="sxs-lookup"><span data-stu-id="bf2cf-107">_lpSrcInterface_</span></span>
   
-> <span data-ttu-id="48481-108">[in]コピーまたは移動するプロパティを持つオブジェクトへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。</span><span class="sxs-lookup"><span data-stu-id="48481-108">[in] A pointer to the interface identifier (IID) that represents the interface to be used to access the object with the properties to be copied or moved.</span></span>
+> <span data-ttu-id="bf2cf-108">順番コピーまたは移動するプロパティを持つオブジェクトへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-108">[in] A pointer to the interface identifier (IID) that represents the interface to be used to access the object with the properties to be copied or moved.</span></span>
     
- <span data-ttu-id="48481-109">_lpSrcObj_</span><span class="sxs-lookup"><span data-stu-id="48481-109">_lpSrcObj_</span></span>
+ <span data-ttu-id="bf2cf-109">_lpsrcobj_</span><span class="sxs-lookup"><span data-stu-id="bf2cf-109">_lpSrcObj_</span></span>
   
-> <span data-ttu-id="48481-110">[in]コピーまたは移動するにはプロパティを格納しているオブジェクトへのポインター。</span><span class="sxs-lookup"><span data-stu-id="48481-110">[in] A pointer to the object that contains the properties to be copied or moved.</span></span>
+> <span data-ttu-id="bf2cf-110">順番コピーまたは移動するプロパティを含むオブジェクトへのポインターを指定します。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-110">[in] A pointer to the object that contains the properties to be copied or moved.</span></span>
     
- <span data-ttu-id="48481-111">_lpIncludeProps_</span><span class="sxs-lookup"><span data-stu-id="48481-111">_lpIncludeProps_</span></span>
+ <span data-ttu-id="bf2cf-111">_lpincludeprops_</span><span class="sxs-lookup"><span data-stu-id="bf2cf-111">_lpIncludeProps_</span></span>
   
-> <span data-ttu-id="48481-112">[in]コピーまたは移動するにはプロパティを指定するプロパティ タグのカウント済み配列を含む[SPropTagArray](sproptagarray.md)構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="48481-112">[in] A pointer to an [SPropTagArray](sproptagarray.md) structure that contains a counted array of property tags that indicate the properties to copy or move.</span></span> <span data-ttu-id="48481-113">_LpIncludeProps_パラメーターは、NULL にすることはできません。</span><span class="sxs-lookup"><span data-stu-id="48481-113">The  _lpIncludeProps_ parameter cannot be NULL.</span></span> 
+> <span data-ttu-id="bf2cf-112">順番コピーまたは移動するプロパティを示す、カウントされたプロパティタグの配列を含む[SPropTagArray](sproptagarray.md)構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-112">[in] A pointer to an [SPropTagArray](sproptagarray.md) structure that contains a counted array of property tags that indicate the properties to copy or move.</span></span> <span data-ttu-id="bf2cf-113">_lpincludeprops_パラメーターを NULL にすることはできません。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-113">The  _lpIncludeProps_ parameter cannot be NULL.</span></span> 
     
- <span data-ttu-id="48481-114">_ulUIParam_</span><span class="sxs-lookup"><span data-stu-id="48481-114">_ulUIParam_</span></span>
+ <span data-ttu-id="bf2cf-114">_uluiparam_</span><span class="sxs-lookup"><span data-stu-id="bf2cf-114">_ulUIParam_</span></span>
   
-> <span data-ttu-id="48481-115">[in]進行状況インジケーターの親ウィンドウへのハンドル。</span><span class="sxs-lookup"><span data-stu-id="48481-115">[in] A handle to the parent window of the progress indicator.</span></span>
+> <span data-ttu-id="bf2cf-115">順番進行状況インジケーターの親ウィンドウへのハンドル。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-115">[in] A handle to the parent window of the progress indicator.</span></span>
     
- <span data-ttu-id="48481-116">_lpProgress_</span><span class="sxs-lookup"><span data-stu-id="48481-116">_lpProgress_</span></span>
+ <span data-ttu-id="bf2cf-116">_lpprogress_</span><span class="sxs-lookup"><span data-stu-id="bf2cf-116">_lpProgress_</span></span>
   
-> <span data-ttu-id="48481-117">[in]進行状況のインジケーターの実装へのポインター。</span><span class="sxs-lookup"><span data-stu-id="48481-117">[in] A pointer to an implementation of a progress indicator.</span></span> <span data-ttu-id="48481-118">_LpProgress_パラメーターに NULL が渡されると、MAPI 実装を使用して進行状況のインジケーターが表示されます。</span><span class="sxs-lookup"><span data-stu-id="48481-118">If NULL is passed in the  _lpProgress_ parameter, the progress indicator is displayed by using the MAPI implementation.</span></span> <span data-ttu-id="48481-119">_UlFlags_パラメーターで MAPI_DIALOG フラグが設定されていない場合、 _lpProgress_パラメーターは無視されます。</span><span class="sxs-lookup"><span data-stu-id="48481-119">The  _lpProgress_ parameter is ignored unless the MAPI_DIALOG flag is set in the  _ulFlags_ parameter.</span></span> 
+> <span data-ttu-id="bf2cf-117">順番進行状況インジケーターの実装へのポインター。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-117">[in] A pointer to an implementation of a progress indicator.</span></span> <span data-ttu-id="bf2cf-118">_lpprogress_パラメーターで NULL が渡された場合は、MAPI 実装を使用して進行状況インジケーターが表示されます。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-118">If NULL is passed in the  _lpProgress_ parameter, the progress indicator is displayed by using the MAPI implementation.</span></span> <span data-ttu-id="bf2cf-119">MAPI_DIALOG フラグが_ulflags_パラメーターで設定されていない場合、 _lpprogress_パラメーターは無視されます。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-119">The  _lpProgress_ parameter is ignored unless the MAPI_DIALOG flag is set in the  _ulFlags_ parameter.</span></span> 
     
- <span data-ttu-id="48481-120">_lpDestInterface_</span><span class="sxs-lookup"><span data-stu-id="48481-120">_lpDestInterface_</span></span>
+ <span data-ttu-id="bf2cf-120">_lpdestinterface_</span><span class="sxs-lookup"><span data-stu-id="bf2cf-120">_lpDestInterface_</span></span>
   
-> <span data-ttu-id="48481-121">[in]プロパティをコピーまたは移動を受信するオブジェクトへのアクセスに使用するインターフェイスを表すインターフェイス識別子へのポインター。</span><span class="sxs-lookup"><span data-stu-id="48481-121">[in] A pointer to the interface identifier that represents the interface to be used to access the object to receive the properties that are copied or moved.</span></span>
+> <span data-ttu-id="bf2cf-121">順番コピーまたは移動されるプロパティを受け取るためのオブジェクトへのアクセスに使用されるインターフェイスを表すインターフェイス識別子へのポインター。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-121">[in] A pointer to the interface identifier that represents the interface to be used to access the object to receive the properties that are copied or moved.</span></span>
     
- <span data-ttu-id="48481-122">_lpDestObj_</span><span class="sxs-lookup"><span data-stu-id="48481-122">_lpDestObj_</span></span>
+ <span data-ttu-id="bf2cf-122">_lpdestobj_</span><span class="sxs-lookup"><span data-stu-id="bf2cf-122">_lpDestObj_</span></span>
   
-> <span data-ttu-id="48481-123">[in]コピーまたは移動先のプロパティを表示するオブジェクトへのポインター。</span><span class="sxs-lookup"><span data-stu-id="48481-123">[in] A pointer to the object to receive the copied or moved properties.</span></span>
+> <span data-ttu-id="bf2cf-123">順番コピーまたは移動したプロパティを受け取るオブジェクトへのポインター。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-123">[in] A pointer to the object to receive the copied or moved properties.</span></span>
     
- <span data-ttu-id="48481-124">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="48481-124">_ulFlags_</span></span>
+ <span data-ttu-id="bf2cf-124">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="bf2cf-124">_ulFlags_</span></span>
   
-> <span data-ttu-id="48481-125">[in]コピーまたは移動操作の実行方法を制御するフラグのビットマスクです。</span><span class="sxs-lookup"><span data-stu-id="48481-125">[in] A bitmask of flags that controls how the copy or move operation is performed.</span></span> <span data-ttu-id="48481-126">次のフラグを設定することができます。</span><span class="sxs-lookup"><span data-stu-id="48481-126">The following flags can be set:</span></span>
+> <span data-ttu-id="bf2cf-125">順番コピー操作または移動操作の実行方法を制御するフラグのビットマスク。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-125">[in] A bitmask of flags that controls how the copy or move operation is performed.</span></span> <span data-ttu-id="bf2cf-126">次のフラグを設定できます。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-126">The following flags can be set:</span></span>
     
-<span data-ttu-id="48481-127">MAPI_DIALOG</span><span class="sxs-lookup"><span data-stu-id="48481-127">MAPI_DIALOG</span></span> 
+<span data-ttu-id="bf2cf-127">MAPI_DIALOG</span><span class="sxs-lookup"><span data-stu-id="bf2cf-127">MAPI_DIALOG</span></span> 
   
-> <span data-ttu-id="48481-128">進行状況のインジケーターが表示されます。</span><span class="sxs-lookup"><span data-stu-id="48481-128">Displays a progress indicator.</span></span>
+> <span data-ttu-id="bf2cf-128">進行状況インジケーターを表示します。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-128">Displays a progress indicator.</span></span>
     
-<span data-ttu-id="48481-129">MAPI_MOVE</span><span class="sxs-lookup"><span data-stu-id="48481-129">MAPI_MOVE</span></span> 
+<span data-ttu-id="bf2cf-129">MAPI_MOVE</span><span class="sxs-lookup"><span data-stu-id="bf2cf-129">MAPI_MOVE</span></span> 
   
-> <span data-ttu-id="48481-130">**DoCopyProps**は、コピー操作ではなく移動操作を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="48481-130">**DoCopyProps** should perform a move operation instead of a copy operation.</span></span> <span data-ttu-id="48481-131">このフラグが設定されていない場合、 **DoCopyProps**は、コピー操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="48481-131">When this flag is not set, **DoCopyProps** performs a copy operation.</span></span> 
+> <span data-ttu-id="bf2cf-130">**docopyprops**は、コピー操作ではなく、移動操作を実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-130">**DoCopyProps** should perform a move operation instead of a copy operation.</span></span> <span data-ttu-id="bf2cf-131">このフラグが設定されていない場合、 **docopyprops**はコピー操作を実行します。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-131">When this flag is not set, **DoCopyProps** performs a copy operation.</span></span> 
     
-<span data-ttu-id="48481-132">MAPI_NOREPLACE</span><span class="sxs-lookup"><span data-stu-id="48481-132">MAPI_NOREPLACE</span></span> 
+<span data-ttu-id="bf2cf-132">MAPI_NOREPLACE</span><span class="sxs-lookup"><span data-stu-id="bf2cf-132">MAPI_NOREPLACE</span></span> 
   
-> <span data-ttu-id="48481-133">コピー先オブジェクトの既存のプロパティを上書きしてはなりません。</span><span class="sxs-lookup"><span data-stu-id="48481-133">Existing properties in the destination object should not be overwritten.</span></span> <span data-ttu-id="48481-134">このフラグが設定されていない場合、 **DoCopyProps**には、既存のプロパティが上書きされます。</span><span class="sxs-lookup"><span data-stu-id="48481-134">When this flag is not set, **DoCopyProps** overwrites existing properties.</span></span> 
+> <span data-ttu-id="bf2cf-133">対象のオブジェクト内の既存のプロパティは、上書きしないようにしてください。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-133">Existing properties in the destination object should not be overwritten.</span></span> <span data-ttu-id="bf2cf-134">このフラグが設定されていない場合、 **docopyprops**は既存のプロパティを上書きします。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-134">When this flag is not set, **DoCopyProps** overwrites existing properties.</span></span> 
     
- <span data-ttu-id="48481-135">_lppProblems_</span><span class="sxs-lookup"><span data-stu-id="48481-135">_lppProblems_</span></span>
+ <span data-ttu-id="bf2cf-135">_lppproblems 問題_</span><span class="sxs-lookup"><span data-stu-id="bf2cf-135">_lppProblems_</span></span>
   
-> <span data-ttu-id="48481-136">[で [チェック アウト][SPropProblemArray](spropproblemarray.md)構造体へのポインターへのポインターの入力でそれ以外の場合、NULL、エラー情報の必要性を示すしません。</span><span class="sxs-lookup"><span data-stu-id="48481-136">[in, out] On input, a pointer to a pointer to an [SPropProblemArray](spropproblemarray.md) structure; otherwise, NULL, which indicates no need for error information.</span></span> <span data-ttu-id="48481-137">_LppProblems_が入力時に有効なポインターである場合は、 **DoCopyProps**は、1 つまたは複数のプロパティのコピーでエラーに関する詳細な情報を返します。</span><span class="sxs-lookup"><span data-stu-id="48481-137">If  _lppProblems_ is a valid pointer on input, **DoCopyProps** returns detailed information about errors in copying one or more properties.</span></span> 
+> <span data-ttu-id="bf2cf-136">[入力]input の場合は、 [spropの配列](spropproblemarray.md)構造体へのポインターへのポインターを返します。それ以外の場合は、エラー情報を必要としないことを示す NULL。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-136">[in, out] On input, a pointer to a pointer to an [SPropProblemArray](spropproblemarray.md) structure; otherwise, NULL, which indicates no need for error information.</span></span> <span data-ttu-id="bf2cf-137">_lppproblems_が入力の有効なポインターである場合、 **docopyprops**は、1つ以上のプロパティをコピーする際のエラーに関する詳細情報を返します。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-137">If  _lppProblems_ is a valid pointer on input, **DoCopyProps** returns detailed information about errors in copying one or more properties.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="48481-138">�߂�l</span><span class="sxs-lookup"><span data-stu-id="48481-138">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="bf2cf-138">戻り値</span><span class="sxs-lookup"><span data-stu-id="bf2cf-138">Return value</span></span>
 
-<span data-ttu-id="48481-139">S_OK</span><span class="sxs-lookup"><span data-stu-id="48481-139">S_OK</span></span> 
+<span data-ttu-id="bf2cf-139">S_OK</span><span class="sxs-lookup"><span data-stu-id="bf2cf-139">S_OK</span></span> 
   
-> <span data-ttu-id="48481-140">プロパティは、コピーまたは移動されて正常にします。</span><span class="sxs-lookup"><span data-stu-id="48481-140">Properties were successfully copied or moved.</span></span>
+> <span data-ttu-id="bf2cf-140">プロパティが正常にコピーまたは移動されました。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-140">Properties were successfully copied or moved.</span></span>
     
-<span data-ttu-id="48481-141">MAPI_E_COLLISION</span><span class="sxs-lookup"><span data-stu-id="48481-141">MAPI_E_COLLISION</span></span> 
+<span data-ttu-id="bf2cf-141">MAPI_E_COLLISION</span><span class="sxs-lookup"><span data-stu-id="bf2cf-141">MAPI_E_COLLISION</span></span> 
   
-> <span data-ttu-id="48481-142">先のオブジェクトのプロパティをコピーまたは移動を既にが存在して MAPI_NOREPLACE フラグを設定します。</span><span class="sxs-lookup"><span data-stu-id="48481-142">A property to be copied or moved already exists in the destination object and the MAPI_NOREPLACE flag is set.</span></span> 
+> <span data-ttu-id="bf2cf-142">コピーまたは移動されるプロパティは、対象オブジェクトに既に存在し、MAPI_NOREPLACE フラグが設定されています。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-142">A property to be copied or moved already exists in the destination object and the MAPI_NOREPLACE flag is set.</span></span> 
     
-<span data-ttu-id="48481-143">MAPI_E_FOLDER_CYCLE</span><span class="sxs-lookup"><span data-stu-id="48481-143">MAPI_E_FOLDER_CYCLE</span></span> 
+<span data-ttu-id="bf2cf-143">MAPI_E_FOLDER_CYCLE</span><span class="sxs-lookup"><span data-stu-id="bf2cf-143">MAPI_E_FOLDER_CYCLE</span></span> 
   
-> <span data-ttu-id="48481-144">ソース オブジェクトには直接または間接的に目的のオブジェクトが含まれています。</span><span class="sxs-lookup"><span data-stu-id="48481-144">The source object directly or indirectly contains the destination object.</span></span> <span data-ttu-id="48481-145">重要な作業が実行された前に、この条件が検出された元とコピー先のオブジェクトを部分的に変更された可能性がありますので。</span><span class="sxs-lookup"><span data-stu-id="48481-145">Significant work might have been performed before this condition was discovered, so the source and destination objects might be partially modified.</span></span> 
+> <span data-ttu-id="bf2cf-144">source オブジェクトは、直接または間接的に対象のオブジェクトを含みます。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-144">The source object directly or indirectly contains the destination object.</span></span> <span data-ttu-id="bf2cf-145">この条件が検出される前に、重要な作業が実行されている可能性があるので、移行元と移行先のオブジェクトの一部が変更されている可能性があります。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-145">Significant work might have been performed before this condition was discovered, so the source and destination objects might be partially modified.</span></span> 
     
-<span data-ttu-id="48481-146">MAPI_E_INTERFACE_NOT_SUPPORTED</span><span class="sxs-lookup"><span data-stu-id="48481-146">MAPI_E_INTERFACE_NOT_SUPPORTED</span></span> 
+<span data-ttu-id="bf2cf-146">MAPI_E_INTERFACE_NOT_SUPPORTED</span><span class="sxs-lookup"><span data-stu-id="bf2cf-146">MAPI_E_INTERFACE_NOT_SUPPORTED</span></span> 
   
-> <span data-ttu-id="48481-147">ソース オブジェクトでは、 _lpSrcInterface_パラメーターで指定されたインターフェイスはサポートされていないか、先のオブジェクトでは、 _lpDestInterface_パラメーターで指定されたインターフェイスはサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="48481-147">The interface identified by the  _lpSrcInterface_ parameter is not supported by the source object, or the interface identified by the  _lpDestInterface_ parameter is not supported by the destination object.</span></span> 
+> <span data-ttu-id="bf2cf-147">_lpsrcinterface_パラメーターによって識別されるインターフェイスは、source オブジェクトではサポートされていません。また、 _lpsrcinterface_パラメーターで指定されたインターフェイスは、destination オブジェクトではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-147">The interface identified by the  _lpSrcInterface_ parameter is not supported by the source object, or the interface identified by the  _lpDestInterface_ parameter is not supported by the destination object.</span></span> 
     
-<span data-ttu-id="48481-148">MAPI_E_NO_ACCESS</span><span class="sxs-lookup"><span data-stu-id="48481-148">MAPI_E_NO_ACCESS</span></span> 
+<span data-ttu-id="bf2cf-148">MAPI_E_NO_ACCESS</span><span class="sxs-lookup"><span data-stu-id="bf2cf-148">MAPI_E_NO_ACCESS</span></span> 
   
-> <span data-ttu-id="48481-149">呼び出し元が十分なアクセス許可を持っているオブジェクトにアクセスしようとしました。</span><span class="sxs-lookup"><span data-stu-id="48481-149">An attempt was made to access an object for which the caller has insufficient permissions.</span></span> <span data-ttu-id="48481-150">目的のオブジェクトは、ソース オブジェクトと同じ場合、このエラーが返されます。</span><span class="sxs-lookup"><span data-stu-id="48481-150">This error is returned if the destination object is the same as the source object.</span></span>
+> <span data-ttu-id="bf2cf-149">発信者が十分なアクセス許可を持っていないオブジェクトにアクセスしようとしました。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-149">An attempt was made to access an object for which the caller has insufficient permissions.</span></span> <span data-ttu-id="bf2cf-150">destination オブジェクトがソースオブジェクトと同じ場合、このエラーが返されます。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-150">This error is returned if the destination object is the same as the source object.</span></span>
     
-<span data-ttu-id="48481-151">次の値が返される、 **SPropProblemArray**構造体には戻り値としてではなく**DoCopyProps**。</span><span class="sxs-lookup"><span data-stu-id="48481-151">The following values can be returned in the **SPropProblemArray** structure, but not as return values for **DoCopyProps**.</span></span> <span data-ttu-id="48481-152">これらのエラーは、1 つのプロパティに適用されます。</span><span class="sxs-lookup"><span data-stu-id="48481-152">These errors apply to a single property.</span></span>
+<span data-ttu-id="bf2cf-151">次の値は、 **spropの配列**構造で返すことができますが、 **docopyprops**の戻り値としては返されません。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-151">The following values can be returned in the **SPropProblemArray** structure, but not as return values for **DoCopyProps**.</span></span> <span data-ttu-id="bf2cf-152">これらのエラーは、1つのプロパティに適用されます。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-152">These errors apply to a single property.</span></span>
   
-<span data-ttu-id="48481-153">MAPI_E_BAD_CHARWIDTH</span><span class="sxs-lookup"><span data-stu-id="48481-153">MAPI_E_BAD_CHARWIDTH</span></span> 
+<span data-ttu-id="bf2cf-153">MAPI_E_BAD_CHARWIDTH</span><span class="sxs-lookup"><span data-stu-id="bf2cf-153">MAPI_E_BAD_CHARWIDTH</span></span> 
   
-> <span data-ttu-id="48481-154">か、MAPI_UNICODE フラグが設定された**DoCopyProps**は、Unicode をサポートしていませんまたは MAPI_UNICODE が設定されていないと**DoCopyProps**は、Unicode だけをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="48481-154">Either the MAPI_UNICODE flag was set and **DoCopyProps** does not support Unicode, or MAPI_UNICODE was not set and **DoCopyProps** supports only Unicode.</span></span> 
+> <span data-ttu-id="bf2cf-154">MAPI_UNICODE フラグが設定されており、 **docopyprops**が unicode をサポートしていないか、MAPI_UNICODE が設定されておらず、 **docopyprops**が unicode のみをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-154">Either the MAPI_UNICODE flag was set and **DoCopyProps** does not support Unicode, or MAPI_UNICODE was not set and **DoCopyProps** supports only Unicode.</span></span> 
     
-<span data-ttu-id="48481-155">MAPI_E_COMPUTED</span><span class="sxs-lookup"><span data-stu-id="48481-155">MAPI_E_COMPUTED</span></span> 
+<span data-ttu-id="bf2cf-155">MAPI_E_COMPUTED</span><span class="sxs-lookup"><span data-stu-id="bf2cf-155">MAPI_E_COMPUTED</span></span> 
   
-> <span data-ttu-id="48481-156">コピー先オブジェクトの所有者によって計算される、読み取り専用プロパティであるために、呼び出し元がプロパティを変更できません。</span><span class="sxs-lookup"><span data-stu-id="48481-156">The property cannot be modified by the caller because it is a read-only property, computed by the owner of the destination object.</span></span> <span data-ttu-id="48481-157">このエラーは重大です。呼び出し元は、コピー操作を続行を許可する必要があります。</span><span class="sxs-lookup"><span data-stu-id="48481-157">This error is not severe; the caller should allow the copy operation to continue.</span></span>
+> <span data-ttu-id="bf2cf-156">このプロパティは読み取り専用プロパティであるため、呼び出し元が変更することはできません。これは、対象オブジェクトの所有者によって計算されます。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-156">The property cannot be modified by the caller because it is a read-only property, computed by the owner of the destination object.</span></span> <span data-ttu-id="bf2cf-157">このエラーは重大ではありません。呼び出し元がコピー操作を続行できるようにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-157">This error is not severe; the caller should allow the copy operation to continue.</span></span>
     
-<span data-ttu-id="48481-158">MAPI_E_INVALID_TYPE</span><span class="sxs-lookup"><span data-stu-id="48481-158">MAPI_E_INVALID_TYPE</span></span> 
+<span data-ttu-id="bf2cf-158">MAPI_E_INVALID_TYPE</span><span class="sxs-lookup"><span data-stu-id="bf2cf-158">MAPI_E_INVALID_TYPE</span></span> 
   
-> <span data-ttu-id="48481-159">プロパティの型が正しくありません。</span><span class="sxs-lookup"><span data-stu-id="48481-159">The property type is invalid.</span></span>
+> <span data-ttu-id="bf2cf-159">プロパティの種類が無効です。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-159">The property type is invalid.</span></span>
     
-<span data-ttu-id="48481-160">MAPI_E_UNEXPECTED_TYPE</span><span class="sxs-lookup"><span data-stu-id="48481-160">MAPI_E_UNEXPECTED_TYPE</span></span> 
+<span data-ttu-id="bf2cf-160">MAPI_E_UNEXPECTED_TYPE</span><span class="sxs-lookup"><span data-stu-id="bf2cf-160">MAPI_E_UNEXPECTED_TYPE</span></span> 
   
-> <span data-ttu-id="48481-161">プロパティの型は、呼び出し元が要求する型ではありません。</span><span class="sxs-lookup"><span data-stu-id="48481-161">The property type is not the type that the caller expects.</span></span>
+> <span data-ttu-id="bf2cf-161">プロパティの型が、呼び出し元が想定している型ではありません。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-161">The property type is not the type that the caller expects.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="48481-162">注釈</span><span class="sxs-lookup"><span data-stu-id="48481-162">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bf2cf-162">解説</span><span class="sxs-lookup"><span data-stu-id="bf2cf-162">Remarks</span></span>
 
-<span data-ttu-id="48481-163">メッセージ ストア プロバイダーのサポート オブジェクトの**IMAPISupport::DoCopyProps**メソッドを実装します。</span><span class="sxs-lookup"><span data-stu-id="48481-163">The **IMAPISupport::DoCopyProps** method is implemented for message store provider support objects.</span></span> <span data-ttu-id="48481-164">メッセージ ストア プロバイダーは、そのフォルダーとメッセージの[IMAPIProp::CopyProps](imapiprop-copyprops.md)メソッドを実装するために**DoCopyProps**を呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="48481-164">Message store providers can call **DoCopyProps** to implement the [IMAPIProp::CopyProps](imapiprop-copyprops.md) method for their folders and messages.</span></span> <span data-ttu-id="48481-165">**DoCopyProps**にコピーまたは移動のプロパティで_lpIncludeProps_で指定されたプロパティ タグ配列を識別し、 _lpSrcObj_が指すオブジェクトに存在します。</span><span class="sxs-lookup"><span data-stu-id="48481-165">**DoCopyProps** copies or moves the properties that are identified in the property tag array pointed to by  _lpIncludeProps_ and that are present in the object pointed to by  _lpSrcObj_.</span></span> 
+<span data-ttu-id="bf2cf-163">**imapisupport::D ocopyprops**メソッドは、メッセージストアプロバイダーサポートオブジェクトに実装されています。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-163">The **IMAPISupport::DoCopyProps** method is implemented for message store provider support objects.</span></span> <span data-ttu-id="bf2cf-164">メッセージストアプロバイダーは、 **docopyprops**を呼び出して、フォルダーとメッセージに[imapiprop:: copyprops](imapiprop-copyprops.md)メソッドを実装できます。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-164">Message store providers can call **DoCopyProps** to implement the [IMAPIProp::CopyProps](imapiprop-copyprops.md) method for their folders and messages.</span></span> <span data-ttu-id="bf2cf-165">**docopyprops**は、 _lpincludeprops_が指すプロパティタグ配列で指定されているプロパティをコピーまたは移動します。これは、 _lpsrcobj_が指すオブジェクトに存在します。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-165">**DoCopyProps** copies or moves the properties that are identified in the property tag array pointed to by  _lpIncludeProps_ and that are present in the object pointed to by  _lpSrcObj_.</span></span> 
   
-## <a name="notes-to-callers"></a><span data-ttu-id="48481-166">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="48481-166">Notes to callers</span></span>
+## <a name="notes-to-callers"></a><span data-ttu-id="bf2cf-166">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="bf2cf-166">Notes to callers</span></span>
 
-<span data-ttu-id="48481-167">_LpSrcInterface_および_lpDestInterface_パラメーターが同じインターフェイス識別子、および、 _lpSrcObj_および_lpDestObj_パラメーターを含める必要があります、2 つのメッセージなど、同じ種類のオブジェクト間でプロパティをコピーすると、同じ種類のオブジェクトをポイントする必要があります。</span><span class="sxs-lookup"><span data-stu-id="48481-167">When you copy properties between objects of the same type, such as two messages, the  _lpSrcInterface_ and  _lpDestInterface_ parameters must contain the same interface identifier, and the  _lpSrcObj_ and  _lpDestObj_ parameters must point to objects of the same type.</span></span> <span data-ttu-id="48481-168">_LpDestInterface_は、NULL に設定されている場合、 **DoCopyProps**は MAPI_E_INVALID_PARAMETER を返します。</span><span class="sxs-lookup"><span data-stu-id="48481-168">If  _lpDestInterface_ is set to NULL, **DoCopyProps** returns MAPI_E_INVALID_PARAMETER.</span></span> <span data-ttu-id="48481-169">許容可能なインタ フェース識別子は無効なポインターをセット_lpDestObj_に_lpDestInterface_を設定した場合、結果は予測できません。</span><span class="sxs-lookup"><span data-stu-id="48481-169">If you set  _lpDestInterface_ to an acceptable interface identifier, but set  _lpDestObj_ to an invalid pointer, the results are unpredictable.</span></span> <span data-ttu-id="48481-170">ほとんどの場合、プロバイダーは失敗します。</span><span class="sxs-lookup"><span data-stu-id="48481-170">Most likely your provider will fail.</span></span> 
+<span data-ttu-id="bf2cf-167">2つのメッセージなど、同じ種類のオブジェクト間でプロパティをコピーする場合、 _lpsrcinterface_パラメーターと_lpsrcinterface_パラメーターには同じインターフェイス識別子を含める必要があります。 _lpsrcobj_パラメーターと lpsrcinterface パラメーターは同じである必要があります。 __ 同じ種類のオブジェクトをポイントする必要があります。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-167">When you copy properties between objects of the same type, such as two messages, the  _lpSrcInterface_ and  _lpDestInterface_ parameters must contain the same interface identifier, and the  _lpSrcObj_ and  _lpDestObj_ parameters must point to objects of the same type.</span></span> <span data-ttu-id="bf2cf-168">_lpdestinterface_が NULL に設定されている場合、 **docopyprops**は MAPI_E_INVALID_PARAMETER を返します。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-168">If  _lpDestInterface_ is set to NULL, **DoCopyProps** returns MAPI_E_INVALID_PARAMETER.</span></span> <span data-ttu-id="bf2cf-169">_lpdestinterface_を受け入れ可能なインターフェイス識別子に設定しても、 _lpdestinterface_を無効なポインターに設定した場合、結果は予測できません。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-169">If you set  _lpDestInterface_ to an acceptable interface identifier, but set  _lpDestObj_ to an invalid pointer, the results are unpredictable.</span></span> <span data-ttu-id="bf2cf-170">多くの場合、プロバイダーは失敗します。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-170">Most likely your provider will fail.</span></span> 
   
-<span data-ttu-id="48481-171">上書き先のオブジェクトのプロパティのいずれかしない場合は、MAPI_NOREPLACE フラグを設定します。</span><span class="sxs-lookup"><span data-stu-id="48481-171">Set the MAPI_NOREPLACE flag if you do not want any of the properties in the destination object to be overwritten.</span></span> <span data-ttu-id="48481-172">ソース オブジェクト内に存在し、上書きされないプロパティを目的のオブジェクトには、削除したり、変更するはありません。</span><span class="sxs-lookup"><span data-stu-id="48481-172">Properties in the destination object that exist in the source object and are not overwritten are not deleted or modified.</span></span>
+<span data-ttu-id="bf2cf-171">変換先オブジェクトのプロパティを上書きする必要がない場合は、MAPI_NOREPLACE フラグを設定します。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-171">Set the MAPI_NOREPLACE flag if you do not want any of the properties in the destination object to be overwritten.</span></span> <span data-ttu-id="bf2cf-172">コピー元のオブジェクトに存在し、上書きされていない対象のオブジェクトのプロパティは、削除または変更されません。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-172">Properties in the destination object that exist in the source object and are not overwritten are not deleted or modified.</span></span>
   
-<span data-ttu-id="48481-173">メッセージの受信者のリストをコピーするのには、 _lpIncludeProps_パラメーターで指定されたプロパティ タグ配列の**PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) のプロパティが含まれます。</span><span class="sxs-lookup"><span data-stu-id="48481-173">To copy a message's recipient list, include the **PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) property in the property tag array pointed to by the  _lpIncludeProps_ parameter.</span></span> <span data-ttu-id="48481-174">メッセージの添付ファイルをコピーするには、 **PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) のプロパティが含まれます。</span><span class="sxs-lookup"><span data-stu-id="48481-174">To copy the message's attachments, include the **PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) property.</span></span> 
+<span data-ttu-id="bf2cf-173">メッセージの宛先リストをコピーするには、 _lpincludeprops_パラメーターで指定されたプロパティタグ配列に**PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) プロパティを含めます。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-173">To copy a message's recipient list, include the **PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) property in the property tag array pointed to by the  _lpIncludeProps_ parameter.</span></span> <span data-ttu-id="bf2cf-174">メッセージの添付ファイルをコピーするには、 **PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) プロパティを含めます。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-174">To copy the message's attachments, include the **PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) property.</span></span> 
   
-<span data-ttu-id="48481-175">フォルダーまたはアドレス帳コンテナーの階層構造または内容のテーブルをコピーするには、プロパティ タグ配列の**PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) または**PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)) を含めます。</span><span class="sxs-lookup"><span data-stu-id="48481-175">To copy a folder or address book container's hierarchy or contents table, include **PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) or **PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)) in the property tag array.</span></span> <span data-ttu-id="48481-176">フォルダーの内容を関連するテーブルを含めるには、 **PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md)) のプロパティを配列に指定します。</span><span class="sxs-lookup"><span data-stu-id="48481-176">To include a folder's associated contents table, include the **PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md)) property in the array.</span></span>
+<span data-ttu-id="bf2cf-175">フォルダーまたはアドレス帳コンテナーの階層またはコンテンツテーブルをコピーするには、 **PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) または**PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)) をプロパティタグ配列に含めます。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-175">To copy a folder or address book container's hierarchy or contents table, include **PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) or **PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)) in the property tag array.</span></span> <span data-ttu-id="bf2cf-176">フォルダーに関連付けられたコンテンツテーブルを含めるには、 **PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md)) プロパティを配列に含めます。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-176">To include a folder's associated contents table, include the **PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md)) property in the array.</span></span>
   
-<span data-ttu-id="48481-177">サブフォルダーは、コピーまたは移動は場合、その内容がコピーまたは、 **SPropTagArray**構造体で示されているプロパティの使用に関係なく、完全に移動します。</span><span class="sxs-lookup"><span data-stu-id="48481-177">If subfolders are copied or moved, their contents are copied or moved in their entirety, regardless of the use of properties indicated by the **SPropTagArray** structure.</span></span> 
+<span data-ttu-id="bf2cf-177">サブフォルダーをコピーまたは移動すると、 **SPropTagArray**構造で指定されているプロパティの使用に関係なく、その内容がコピーまたは移動されます。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-177">If subfolders are copied or moved, their contents are copied or moved in their entirety, regardless of the use of properties indicated by the **SPropTagArray** structure.</span></span> 
   
- <span data-ttu-id="48481-178">**DoCopyProps**は、グローバル エラーの全体としての操作で発生して、プロパティのいずれかで発生する個々 のエラーを報告します。</span><span class="sxs-lookup"><span data-stu-id="48481-178">**DoCopyProps** reports global errors that occur with the operation as a whole, and individual errors that occur with one or more of the properties.</span></span> <span data-ttu-id="48481-179">これらの個々 のエラーは、 **SPropProblemArray**構造体に配置されます。</span><span class="sxs-lookup"><span data-stu-id="48481-179">These individual errors are put in an **SPropProblemArray** structure.</span></span> <span data-ttu-id="48481-180">プロパティ問題配列構造体パラメーターに有効なポインターではなく NULL を渡すことにより、プロパティ レベルでレポートのエラーを抑制できます。</span><span class="sxs-lookup"><span data-stu-id="48481-180">You can suppress error reporting at the property level by passing NULL, rather than a valid pointer, for the property problem array structure parameter.</span></span> 
+ <span data-ttu-id="bf2cf-178">**docopyprops**は、操作が全体として発生するグローバルエラーと、1つ以上のプロパティで発生する個々のエラーを報告します。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-178">**DoCopyProps** reports global errors that occur with the operation as a whole, and individual errors that occur with one or more of the properties.</span></span> <span data-ttu-id="bf2cf-179">これらの個々のエラーは、 **sprop問題の配列**構造に配置されます。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-179">These individual errors are put in an **SPropProblemArray** structure.</span></span> <span data-ttu-id="bf2cf-180">プロパティ問題の array 構造パラメーターに対して、有効なポインターではなく NULL を渡すことにより、プロパティレベルでエラー報告を抑制することができます。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-180">You can suppress error reporting at the property level by passing NULL, rather than a valid pointer, for the property problem array structure parameter.</span></span> 
   
-<span data-ttu-id="48481-181">エラーに関する情報を受信する場合は、 _lppProblems_パラメーターに有効な**SPropProblemArray**構造体のポインターを渡します。</span><span class="sxs-lookup"><span data-stu-id="48481-181">If you want to receive information about errors, pass a valid **SPropProblemArray** structure pointer in the  _lppProblems_ parameter.</span></span> <span data-ttu-id="48481-182">**DoCopyProps**に S_OK が返されるときは、構造内の個々 のプロパティを持つ可能性のあるエラーを確認します。</span><span class="sxs-lookup"><span data-stu-id="48481-182">When **DoCopyProps** returns S_OK, check for possible errors with individual properties in the structure.</span></span> <span data-ttu-id="48481-183">**DoCopyProps**にエラーが返されるとき、 **SPropProblemArray**構造体の情報は返されません。</span><span class="sxs-lookup"><span data-stu-id="48481-183">When **DoCopyProps** returns an error, no information is returned in the **SPropProblemArray** structure.</span></span> <span data-ttu-id="48481-184">代わりに、詳細なエラー情報を取得するために[IMAPISupport::GetLastError](imapisupport-getlasterror.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="48481-184">Instead, call the [IMAPISupport::GetLastError](imapisupport-getlasterror.md) method to retrieve detailed error information.</span></span> 
+<span data-ttu-id="bf2cf-181">エラーに関する情報を受信する必要がある場合は、 _lppproblems_パラメーターに有効な**sprop問題の配列**構造ポインターを渡します。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-181">If you want to receive information about errors, pass a valid **SPropProblemArray** structure pointer in the  _lppProblems_ parameter.</span></span> <span data-ttu-id="bf2cf-182">**docopyprops**が S_OK を返す場合、構造内の各プロパティにエラーがあるかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-182">When **DoCopyProps** returns S_OK, check for possible errors with individual properties in the structure.</span></span> <span data-ttu-id="bf2cf-183">**docopyprops**がエラーを返す場合、 **sprop問題の配列**構造に情報は返されません。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-183">When **DoCopyProps** returns an error, no information is returned in the **SPropProblemArray** structure.</span></span> <span data-ttu-id="bf2cf-184">代わりに、 [imapisupport:: GetLastError](imapisupport-getlasterror.md)メソッドを呼び出して詳細なエラー情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-184">Instead, call the [IMAPISupport::GetLastError](imapisupport-getlasterror.md) method to retrieve detailed error information.</span></span> 
   
-<span data-ttu-id="48481-185">**DoCopyProps**では、S_OK が返された場合は、 [MAPIFreeBuffer](mapifreebuffer.md)関数の呼び出しによって返された**SPropProblemArray**構造体を解放します。</span><span class="sxs-lookup"><span data-stu-id="48481-185">If **DoCopyProps** returns S_OK, free the returned **SPropProblemArray** structure by calling the [MAPIFreeBuffer](mapifreebuffer.md) function.</span></span> 
+<span data-ttu-id="bf2cf-185">**docopyprops**が S_OK を返す場合は、 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出すことによって返された**spropの配列**構造を解放します。</span><span class="sxs-lookup"><span data-stu-id="bf2cf-185">If **DoCopyProps** returns S_OK, free the returned **SPropProblemArray** structure by calling the [MAPIFreeBuffer](mapifreebuffer.md) function.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="48481-186">関連項目</span><span class="sxs-lookup"><span data-stu-id="48481-186">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bf2cf-186">関連項目</span><span class="sxs-lookup"><span data-stu-id="bf2cf-186">See also</span></span>
 
 
 
-[<span data-ttu-id="48481-187">IMAPIProp::CopyProps</span><span class="sxs-lookup"><span data-stu-id="48481-187">IMAPIProp::CopyProps</span></span>](imapiprop-copyprops.md)
+[<span data-ttu-id="bf2cf-187">IMAPIProp::CopyProps</span><span class="sxs-lookup"><span data-stu-id="bf2cf-187">IMAPIProp::CopyProps</span></span>](imapiprop-copyprops.md)
   
-[<span data-ttu-id="48481-188">IMAPISupport::CopyMessages</span><span class="sxs-lookup"><span data-stu-id="48481-188">IMAPISupport::CopyMessages</span></span>](imapisupport-copymessages.md)
+[<span data-ttu-id="bf2cf-188">IMAPISupport::CopyMessages</span><span class="sxs-lookup"><span data-stu-id="bf2cf-188">IMAPISupport::CopyMessages</span></span>](imapisupport-copymessages.md)
   
-[<span data-ttu-id="48481-189">IMAPISupport::DoCopyTo</span><span class="sxs-lookup"><span data-stu-id="48481-189">IMAPISupport::DoCopyTo</span></span>](imapisupport-docopyto.md)
+[<span data-ttu-id="bf2cf-189">IMAPISupport::DoCopyTo</span><span class="sxs-lookup"><span data-stu-id="bf2cf-189">IMAPISupport::DoCopyTo</span></span>](imapisupport-docopyto.md)
   
-[<span data-ttu-id="48481-190">IMAPISupport::GetLastError</span><span class="sxs-lookup"><span data-stu-id="48481-190">IMAPISupport::GetLastError</span></span>](imapisupport-getlasterror.md)
+[<span data-ttu-id="bf2cf-190">IMAPISupport::GetLastError</span><span class="sxs-lookup"><span data-stu-id="bf2cf-190">IMAPISupport::GetLastError</span></span>](imapisupport-getlasterror.md)
   
-[<span data-ttu-id="48481-191">PidTagContainerContents 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="48481-191">PidTagContainerContents Canonical Property</span></span>](pidtagcontainercontents-canonical-property.md)
+[<span data-ttu-id="bf2cf-191">PidTagContainerContents 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="bf2cf-191">PidTagContainerContents Canonical Property</span></span>](pidtagcontainercontents-canonical-property.md)
   
-[<span data-ttu-id="48481-192">PidTagContainerHierarchy 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="48481-192">PidTagContainerHierarchy Canonical Property</span></span>](pidtagcontainerhierarchy-canonical-property.md)
+[<span data-ttu-id="bf2cf-192">PidTagContainerHierarchy 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="bf2cf-192">PidTagContainerHierarchy Canonical Property</span></span>](pidtagcontainerhierarchy-canonical-property.md)
   
-[<span data-ttu-id="48481-193">PidTagFolderAssociatedContents 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="48481-193">PidTagFolderAssociatedContents Canonical Property</span></span>](pidtagfolderassociatedcontents-canonical-property.md)
+[<span data-ttu-id="bf2cf-193">PidTagFolderAssociatedContents 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="bf2cf-193">PidTagFolderAssociatedContents Canonical Property</span></span>](pidtagfolderassociatedcontents-canonical-property.md)
   
-[<span data-ttu-id="48481-194">PidTagMessageAttachments 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="48481-194">PidTagMessageAttachments Canonical Property</span></span>](pidtagmessageattachments-canonical-property.md)
+[<span data-ttu-id="bf2cf-194">PidTagMessageAttachments 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="bf2cf-194">PidTagMessageAttachments Canonical Property</span></span>](pidtagmessageattachments-canonical-property.md)
   
-[<span data-ttu-id="48481-195">PidTagMessageRecipients 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="48481-195">PidTagMessageRecipients Canonical Property</span></span>](pidtagmessagerecipients-canonical-property.md)
+[<span data-ttu-id="bf2cf-195">PidTagMessageRecipients 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="bf2cf-195">PidTagMessageRecipients Canonical Property</span></span>](pidtagmessagerecipients-canonical-property.md)
   
-[<span data-ttu-id="48481-196">SPropProblemArray</span><span class="sxs-lookup"><span data-stu-id="48481-196">SPropProblemArray</span></span>](spropproblemarray.md)
+[<span data-ttu-id="bf2cf-196">SPropProblemArray</span><span class="sxs-lookup"><span data-stu-id="bf2cf-196">SPropProblemArray</span></span>](spropproblemarray.md)
   
-[<span data-ttu-id="48481-197">SPropTagArray</span><span class="sxs-lookup"><span data-stu-id="48481-197">SPropTagArray</span></span>](sproptagarray.md)
+[<span data-ttu-id="bf2cf-197">SPropTagArray</span><span class="sxs-lookup"><span data-stu-id="bf2cf-197">SPropTagArray</span></span>](sproptagarray.md)
   
-[<span data-ttu-id="48481-198">IMAPISupport: IUnknown</span><span class="sxs-lookup"><span data-stu-id="48481-198">IMAPISupport : IUnknown</span></span>](imapisupportiunknown.md)
+[<span data-ttu-id="bf2cf-198">IMAPISupport: IUnknown</span><span class="sxs-lookup"><span data-stu-id="bf2cf-198">IMAPISupport : IUnknown</span></span>](imapisupportiunknown.md)
 

@@ -9,41 +9,39 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 5a6ddb97-39b8-4e24-9b89-7a1e3bb261d5
 description: 角度のサインを返します。
-ms.openlocfilehash: 19504f2f19b8523e0f081dbba0359986a940762b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 00701656d400264c206f4a48ed88cf94f0902dc3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328582"
 ---
-# <a name="sin-function-visioshapesheet"></a><span data-ttu-id="3f3a8-103">SIN 関数 (VisioShapeSheet)</span><span class="sxs-lookup"><span data-stu-id="3f3a8-103">SIN Function (VisioShapeSheet)</span></span>
+# <a name="sin-function-visioshapesheet"></a><span data-ttu-id="1232c-103">SIN 関数 (VisioShapeSheet)</span><span class="sxs-lookup"><span data-stu-id="1232c-103">SIN Function (VisioShapeSheet)</span></span>
 
-<span data-ttu-id="3f3a8-104">角度のサインを返します。
-    
-</span><span class="sxs-lookup"><span data-stu-id="3f3a8-104">Returns the sine of an angle.</span></span> 
+<span data-ttu-id="1232c-104">角度のサインを返します。</span><span class="sxs-lookup"><span data-stu-id="1232c-104">Returns the sine of an angle.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="3f3a8-105">構文</span><span class="sxs-lookup"><span data-stu-id="3f3a8-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="1232c-105">構文</span><span class="sxs-lookup"><span data-stu-id="1232c-105">Syntax</span></span>
 
-<span data-ttu-id="3f3a8-106">SIN (* **角度** *)</span><span class="sxs-lookup"><span data-stu-id="3f3a8-106">SIN(** *angle* ** )</span></span> 
+<span data-ttu-id="1232c-106">SIN (\* \* *angle* \* \*)</span><span class="sxs-lookup"><span data-stu-id="1232c-106">SIN(\*\* *angle* \*\* )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="3f3a8-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3f3a8-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="1232c-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="1232c-107">Parameters</span></span>
 
-|<span data-ttu-id="3f3a8-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="3f3a8-108">**Name**</span></span>|<span data-ttu-id="3f3a8-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="3f3a8-109">**Required/Optional**</span></span>|<span data-ttu-id="3f3a8-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="3f3a8-110">**Data Type**</span></span>|<span data-ttu-id="3f3a8-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="3f3a8-111">**Description**</span></span>|
+|<span data-ttu-id="1232c-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="1232c-108">**Name**</span></span>|<span data-ttu-id="1232c-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="1232c-109">**Required/Optional**</span></span>|<span data-ttu-id="1232c-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="1232c-110">**Data Type**</span></span>|<span data-ttu-id="1232c-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="1232c-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="3f3a8-112">_角度_</span><span class="sxs-lookup"><span data-stu-id="3f3a8-112">_angle_</span></span> <br/> |<span data-ttu-id="3f3a8-113">必須</span><span class="sxs-lookup"><span data-stu-id="3f3a8-113">Required</span></span>  <br/> |<span data-ttu-id="3f3a8-114">**数値型 (Numeric)**</span><span class="sxs-lookup"><span data-stu-id="3f3a8-114">**Numeric**</span></span> <br/> |<span data-ttu-id="3f3a8-115">サインを取得する角度を指定します。</span><span class="sxs-lookup"><span data-stu-id="3f3a8-115">The angle of which to get the sine.</span></span>  <br/> |
+| <span data-ttu-id="1232c-112">_直交_</span><span class="sxs-lookup"><span data-stu-id="1232c-112">_angle_</span></span> <br/> |<span data-ttu-id="1232c-113">必須</span><span class="sxs-lookup"><span data-stu-id="1232c-113">Required</span></span>  <br/> |<span data-ttu-id="1232c-114">**数値型 (Numeric)**</span><span class="sxs-lookup"><span data-stu-id="1232c-114">**Numeric**</span></span> <br/> |<span data-ttu-id="1232c-115">サインを取得する角度を指定します。</span><span class="sxs-lookup"><span data-stu-id="1232c-115">The angle of which to get the sine.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="3f3a8-116">戻り値</span><span class="sxs-lookup"><span data-stu-id="3f3a8-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="1232c-116">戻り値</span><span class="sxs-lookup"><span data-stu-id="1232c-116">Return value</span></span>
 
-<span data-ttu-id="3f3a8-117">数値</span><span class="sxs-lookup"><span data-stu-id="3f3a8-117">Number</span></span>
+<span data-ttu-id="1232c-117">番号</span><span class="sxs-lookup"><span data-stu-id="1232c-117">Number</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="3f3a8-118">備考</span><span class="sxs-lookup"><span data-stu-id="3f3a8-118">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1232c-118">解説</span><span class="sxs-lookup"><span data-stu-id="1232c-118">Remarks</span></span>
 
-<span data-ttu-id="3f3a8-119">SIN 関数では、_角度_で別の測定単位を指定する場合を除き、ラジアンが使用されます。</span><span class="sxs-lookup"><span data-stu-id="3f3a8-119">The SIN function uses radians unless you specify a different unit of measure in  _angle_.</span></span>
+<span data-ttu-id="1232c-119">SIN 関数では、 _angle_に別の単位を指定しない限り、ラジアンが使用されます。</span><span class="sxs-lookup"><span data-stu-id="1232c-119">The SIN function uses radians unless you specify a different unit of measure in  _angle_.</span></span>
   
-## <a name="example"></a><span data-ttu-id="3f3a8-120">例</span><span class="sxs-lookup"><span data-stu-id="3f3a8-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1232c-120">例</span><span class="sxs-lookup"><span data-stu-id="1232c-120">Example</span></span>
 
-<span data-ttu-id="3f3a8-121">SIN(45 deg)</span><span class="sxs-lookup"><span data-stu-id="3f3a8-121">SIN(45 deg)</span></span> 
+<span data-ttu-id="1232c-121">SIN(45 deg)</span><span class="sxs-lookup"><span data-stu-id="1232c-121">SIN(45 deg)</span></span> 
   
-<span data-ttu-id="3f3a8-122">0.7071 を返します。</span><span class="sxs-lookup"><span data-stu-id="3f3a8-122">Returns 0.7071.</span></span> 
+<span data-ttu-id="1232c-122">0.7071 を返します。</span><span class="sxs-lookup"><span data-stu-id="1232c-122">Returns 0.7071.</span></span> 
   
 

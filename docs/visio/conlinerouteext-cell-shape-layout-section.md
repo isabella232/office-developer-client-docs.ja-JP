@@ -9,37 +9,37 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: cafd7589-1c94-b9bc-b1a6-40f7c15fba71
 description: コネクタの外観を指定します。
-ms.openlocfilehash: 7724466b6ad225fcf39243bc80ba2e440f3b700b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 19fe948daf7aa3d67db858849ecb2b15f40ba02d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32327105"
 ---
-# <a name="conlinerouteext-cell-shape-layout-section"></a><span data-ttu-id="d973f-103">[ConLineRouteExt] セル ([図形レイアウト] セクション)</span><span class="sxs-lookup"><span data-stu-id="d973f-103">ConLineRouteExt Cell (Shape Layout Section)</span></span>
+# <a name="conlinerouteext-cell-shape-layout-section"></a><span data-ttu-id="01425-103">[ConLineRouteExt] セル ([Shape Layout] セクション)</span><span class="sxs-lookup"><span data-stu-id="01425-103">ConLineRouteExt Cell (Shape Layout Section)</span></span>
 
-<span data-ttu-id="d973f-104">コネクタの外観を指定します。</span><span class="sxs-lookup"><span data-stu-id="d973f-104">Determines the appearance of a connector.</span></span>
+<span data-ttu-id="01425-104">コネクタの外観を指定します。</span><span class="sxs-lookup"><span data-stu-id="01425-104">Determines the appearance of a connector.</span></span>
   
-|<span data-ttu-id="d973f-105">**値**</span><span class="sxs-lookup"><span data-stu-id="d973f-105">**Value**</span></span>|<span data-ttu-id="d973f-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="d973f-106">**Description**</span></span>|<span data-ttu-id="d973f-107">**オートメーション定数**</span><span class="sxs-lookup"><span data-stu-id="d973f-107">**Automation constant**</span></span>|
+|<span data-ttu-id="01425-105">**値**</span><span class="sxs-lookup"><span data-stu-id="01425-105">**Value**</span></span>|<span data-ttu-id="01425-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="01425-106">**Description**</span></span>|<span data-ttu-id="01425-107">**オートメーション定数**</span><span class="sxs-lookup"><span data-stu-id="01425-107">**Automation constant**</span></span>|
 |:-----|:-----|:-----|
-| <span data-ttu-id="d973f-108">0</span><span class="sxs-lookup"><span data-stu-id="d973f-108">0</span></span>  <br/> | <span data-ttu-id="d973f-109">既定値です。ページの設定を使用します。</span><span class="sxs-lookup"><span data-stu-id="d973f-109">Default; use page setting</span></span>  <br/> |<span data-ttu-id="d973f-110">**visLORouteExtDefault**</span><span class="sxs-lookup"><span data-stu-id="d973f-110">**visLORouteExtDefault**</span></span> <br/> |
-| <span data-ttu-id="d973f-111">1</span><span class="sxs-lookup"><span data-stu-id="d973f-111">1</span></span>  <br/> | <span data-ttu-id="d973f-112">直線</span><span class="sxs-lookup"><span data-stu-id="d973f-112">Straight</span></span>  <br/> |<span data-ttu-id="d973f-113">**visLORouteExtStraight**</span><span class="sxs-lookup"><span data-stu-id="d973f-113">**visLORouteExtStraight**</span></span> <br/> |
-| <span data-ttu-id="d973f-114">2</span><span class="sxs-lookup"><span data-stu-id="d973f-114">2</span></span>  <br/> | <span data-ttu-id="d973f-115">曲線</span><span class="sxs-lookup"><span data-stu-id="d973f-115">Curved</span></span>  <br/> |<span data-ttu-id="d973f-116">**visLORouteExtNURBS**</span><span class="sxs-lookup"><span data-stu-id="d973f-116">**visLORouteExtNURBS**</span></span> <br/> |
+| <span data-ttu-id="01425-108">.0</span><span class="sxs-lookup"><span data-stu-id="01425-108">0</span></span>  <br/> | <span data-ttu-id="01425-109">既定値です。ページの設定を使用します。</span><span class="sxs-lookup"><span data-stu-id="01425-109">Default; use page setting</span></span>  <br/> |<span data-ttu-id="01425-110">**visLORouteExtDefault**</span><span class="sxs-lookup"><span data-stu-id="01425-110">**visLORouteExtDefault**</span></span> <br/> |
+| <span data-ttu-id="01425-111">1-d</span><span class="sxs-lookup"><span data-stu-id="01425-111">1</span></span>  <br/> | <span data-ttu-id="01425-112">普通</span><span class="sxs-lookup"><span data-stu-id="01425-112">Straight</span></span>  <br/> |<span data-ttu-id="01425-113">**visLORouteExtStraight**</span><span class="sxs-lookup"><span data-stu-id="01425-113">**visLORouteExtStraight**</span></span> <br/> |
+| <span data-ttu-id="01425-114">pbm-2</span><span class="sxs-lookup"><span data-stu-id="01425-114">2</span></span>  <br/> | <span data-ttu-id="01425-115">曲線</span><span class="sxs-lookup"><span data-stu-id="01425-115">Curved</span></span>  <br/> |<span data-ttu-id="01425-116">**visLORouteExtNURBS**</span><span class="sxs-lookup"><span data-stu-id="01425-116">**visLORouteExtNURBS**</span></span> <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="d973f-117">注釈</span><span class="sxs-lookup"><span data-stu-id="d973f-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="01425-117">解説</span><span class="sxs-lookup"><span data-stu-id="01425-117">Remarks</span></span>
 
-<span data-ttu-id="d973f-118">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ConLineRouteExt] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="d973f-118">To get a reference to the ConLineRouteExt cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="01425-118">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ConLineRouteExt] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="01425-118">To get a reference to the ConLineRouteExt cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="d973f-119">セル名:</span><span class="sxs-lookup"><span data-stu-id="d973f-119">Cell name:</span></span>  <br/> | <span data-ttu-id="d973f-120">ConLineRouteExt</span><span class="sxs-lookup"><span data-stu-id="d973f-120">ConLineRouteExt</span></span>  <br/> |
+| <span data-ttu-id="01425-119">セル名:</span><span class="sxs-lookup"><span data-stu-id="01425-119">Cell name:</span></span>  <br/> | <span data-ttu-id="01425-120">[conlinerouteext]</span><span class="sxs-lookup"><span data-stu-id="01425-120">ConLineRouteExt</span></span>  <br/> |
    
-<span data-ttu-id="d973f-121">プログラムから、インデックスによって [ConLineRouteExt] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="d973f-121">To get a reference to the ConLineRouteExt cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="01425-121">プログラムから、インデックスによって [ConLineRouteExt] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="01425-121">To get a reference to the ConLineRouteExt cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="d973f-122">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="d973f-122">Section index:</span></span>  <br/> |<span data-ttu-id="d973f-123">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="d973f-123">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="d973f-124">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="d973f-124">Row index:</span></span>  <br/> |<span data-ttu-id="d973f-125">**visRowShapeLayout**</span><span class="sxs-lookup"><span data-stu-id="d973f-125">**visRowShapeLayout**</span></span> <br/> |
-| <span data-ttu-id="d973f-126">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="d973f-126">Cell index:</span></span>  <br/> |<span data-ttu-id="d973f-127">**visSLOLineRouteExt**</span><span class="sxs-lookup"><span data-stu-id="d973f-127">**visSLOLineRouteExt**</span></span> <br/> |
+| <span data-ttu-id="01425-122">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="01425-122">Section index:</span></span>  <br/> |<span data-ttu-id="01425-123">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="01425-123">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="01425-124">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="01425-124">Row index:</span></span>  <br/> |<span data-ttu-id="01425-125">**visRowShapeLayout**</span><span class="sxs-lookup"><span data-stu-id="01425-125">**visRowShapeLayout**</span></span> <br/> |
+| <span data-ttu-id="01425-126">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="01425-126">Cell index:</span></span>  <br/> |<span data-ttu-id="01425-127">**visSLOLineRouteExt**</span><span class="sxs-lookup"><span data-stu-id="01425-127">**visSLOLineRouteExt**</span></span> <br/> |
    
 

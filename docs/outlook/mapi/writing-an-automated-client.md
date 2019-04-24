@@ -1,5 +1,5 @@
 ---
-title: 自動化クライアントの作成
+title: 自動クライアントの作成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,32 +7,32 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: b8f9ac1a-b377-4f83-8fb6-ed85ab9053d0
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 504e10efa4f540d64469f6aaab22b3f9e9e1157d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: f9ce3452bbc2d3297cc67168835a9387235746a8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32325593"
 ---
-# <a name="writing-an-automated-client"></a><span data-ttu-id="07d7e-103">自動化クライアントの作成</span><span class="sxs-lookup"><span data-stu-id="07d7e-103">Writing an Automated Client</span></span>
+# <a name="writing-an-automated-client"></a><span data-ttu-id="09ab6-103">自動クライアントの作成</span><span class="sxs-lookup"><span data-stu-id="09ab6-103">Writing an Automated Client</span></span>
 
   
   
-<span data-ttu-id="07d7e-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="07d7e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="09ab6-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="09ab6-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="07d7e-105">自動化されたクライアント アプリケーションは、ユーザー インターフェイスを表示しない、無人で実行されるアプリケーションです。</span><span class="sxs-lookup"><span data-stu-id="07d7e-105">An automated client application is an application that runs unattended, displaying no user interface.</span></span>
+<span data-ttu-id="09ab6-105">自動化されたクライアントアプリケーションは、無人で実行されるアプリケーションであり、ユーザーインターフェイスは表示されません。</span><span class="sxs-lookup"><span data-stu-id="09ab6-105">An automated client application is an application that runs unattended, displaying no user interface.</span></span>
   
- <span data-ttu-id="07d7e-106">既定では、多数の MAPI インターフェイスのメソッドは、ユーザー インターフェイスを表示します。</span><span class="sxs-lookup"><span data-stu-id="07d7e-106">By default, many MAPI interface methods show a user interface.</span></span> <span data-ttu-id="07d7e-107">すべてのこれらのメソッドには、許可] または [この表示を抑制するようにクライアントを許可するフラグが設定されています。</span><span class="sxs-lookup"><span data-stu-id="07d7e-107">All of these methods have flags that allow a client to either allow or suppress this display.</span></span> <span data-ttu-id="07d7e-108">MAPI には、これらのフラグを尊重するサービス プロバイダーが必要と、常にこれらの期待を満たしていないいくつかのプロバイダーがあります。</span><span class="sxs-lookup"><span data-stu-id="07d7e-108">Although MAPI expects service providers to honor these flags, there are some providers that do not always meet these expectations.</span></span> <span data-ttu-id="07d7e-109">フラグを保持しない正当な理由は、サービス プロバイダーのユーザー インターフェイスの抑制を許可しない別のサービスに依存します。</span><span class="sxs-lookup"><span data-stu-id="07d7e-109">A legitimate reason for not honoring the flags is the reliance of the service provider on another service that does not allow user interface suppression.</span></span> <span data-ttu-id="07d7e-110">自動のクライアントを開発する場合を使用しているサービス プロバイダーとそれらの構成方法に注意してください。</span><span class="sxs-lookup"><span data-stu-id="07d7e-110">If you are developing an automated client, pay careful attention to the service providers you are using and how they are configured.</span></span> <span data-ttu-id="07d7e-111">すべての呼び出し、ユーザー インターフェイスを非表示になるは成功したとは限りません。</span><span class="sxs-lookup"><span data-stu-id="07d7e-111">Do not assume that all of your calls to suppress a user interface will be successful.</span></span> 
+ <span data-ttu-id="09ab6-106">既定では、多くの MAPI インターフェイスメソッドにユーザーインターフェイスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="09ab6-106">By default, many MAPI interface methods show a user interface.</span></span> <span data-ttu-id="09ab6-107">これらのすべてのメソッドには、クライアントがこのディスプレイを許可または抑制できるようにするフラグがあります。</span><span class="sxs-lookup"><span data-stu-id="09ab6-107">All of these methods have flags that allow a client to either allow or suppress this display.</span></span> <span data-ttu-id="09ab6-108">MAPI はサービスプロバイダーにこれらのフラグを認識させる必要がありますが、常にこれらの要件を満たしていないプロバイダーもあります。</span><span class="sxs-lookup"><span data-stu-id="09ab6-108">Although MAPI expects service providers to honor these flags, there are some providers that do not always meet these expectations.</span></span> <span data-ttu-id="09ab6-109">このフラグを許可しない正当な理由として、ユーザーインターフェイスの抑制を許可しない別のサービスのサービスプロバイダーの依存が挙げられます。</span><span class="sxs-lookup"><span data-stu-id="09ab6-109">A legitimate reason for not honoring the flags is the reliance of the service provider on another service that does not allow user interface suppression.</span></span> <span data-ttu-id="09ab6-110">自動クライアントを開発している場合は、使用しているサービスプロバイダーとその構成方法に十分注意を払う必要があります。</span><span class="sxs-lookup"><span data-stu-id="09ab6-110">If you are developing an automated client, pay careful attention to the service providers you are using and how they are configured.</span></span> <span data-ttu-id="09ab6-111">ユーザーインターフェイスを抑制するためのすべての呼び出しが成功することを前提としていません。</span><span class="sxs-lookup"><span data-stu-id="09ab6-111">Do not assume that all of your calls to suppress a user interface will be successful.</span></span> 
   
-<span data-ttu-id="07d7e-112">自動化されたクライアント プロファイル内の各メッセージ サービスの適切な構成で利用できる必要な情報が必要です。</span><span class="sxs-lookup"><span data-stu-id="07d7e-112">Automated clients must have the necessary information available for proper configuration of each of the message services in the profile.</span></span> <span data-ttu-id="07d7e-113">ログオン時に構成情報を提供する 2 つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="07d7e-113">There are two ways to supply configuration information at logon time:</span></span>
+<span data-ttu-id="09ab6-112">自動化されたクライアントには、プロファイル内の各メッセージサービスを適切に構成するために必要な情報が含まれている必要があります。</span><span class="sxs-lookup"><span data-stu-id="09ab6-112">Automated clients must have the necessary information available for proper configuration of each of the message services in the profile.</span></span> <span data-ttu-id="09ab6-113">ログオン時に構成情報を提供するには、次の2つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="09ab6-113">There are two ways to supply configuration information at logon time:</span></span>
   
-- <span data-ttu-id="07d7e-114">サービス プロバイダーは、プロファイルからの情報を取得できます。</span><span class="sxs-lookup"><span data-stu-id="07d7e-114">The service provider can retrieve information from the profile.</span></span>
+- <span data-ttu-id="09ab6-114">サービスプロバイダーはプロファイルから情報を取得できます。</span><span class="sxs-lookup"><span data-stu-id="09ab6-114">The service provider can retrieve information from the profile.</span></span>
     
-- <span data-ttu-id="07d7e-115">サービス プロバイダーは情報をユーザーにメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="07d7e-115">The service provider can prompt the user for information.</span></span> 
+- <span data-ttu-id="09ab6-115">サービスプロバイダーは、ユーザーに情報の入力を求めることができます。</span><span class="sxs-lookup"><span data-stu-id="09ab6-115">The service provider can prompt the user for information.</span></span> 
     
-<span data-ttu-id="07d7e-116">2 番目のオプションが自動化されたクライアントが使用できないため、これらのクライアントは、最初のオプションを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="07d7e-116">Since the second option is unavailable to automated clients, these clients must use the first option.</span></span> <span data-ttu-id="07d7e-117">クライアントは、このオプションは常に動作することを確認するには、慎重に自分のプロファイルを構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="07d7e-117">Clients must configure their profiles carefully to ensure that this option always works.</span></span>
+<span data-ttu-id="09ab6-116">2番目のオプションは自動クライアントでは使用できないため、これらのクライアントは最初のオプションを使用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="09ab6-116">Since the second option is unavailable to automated clients, these clients must use the first option.</span></span> <span data-ttu-id="09ab6-117">このオプションが常に機能するように、クライアントはプロファイルを慎重に構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="09ab6-117">Clients must configure their profiles carefully to ensure that this option always works.</span></span>
   
-<span data-ttu-id="07d7e-118">自動化されたクライアントは、MAPI セッションを開始するのには[MAPILogonEx](mapilogonex.md)関数の呼び出しで常に MAPI_NO_MAIL フラグを設定します。</span><span class="sxs-lookup"><span data-stu-id="07d7e-118">Automated clients always set the MAPI_NO_MAIL flag in the [MAPILogonEx](mapilogonex.md) function call to begin a MAPI session.</span></span> 
+<span data-ttu-id="09ab6-118">自動クライアントは、MAPI セッションを開始するために、常に[MAPILogonEx](mapilogonex.md)関数呼び出しの MAPI_NO_MAIL フラグを設定します。</span><span class="sxs-lookup"><span data-stu-id="09ab6-118">Automated clients always set the MAPI_NO_MAIL flag in the [MAPILogonEx](mapilogonex.md) function call to begin a MAPI session.</span></span> 
   
 

@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: e135ba67-97be-4ce0-a72e-93c49ed7d6e2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c823a4e3d08d9082a3b5ac5c4bd8169612caa16e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 27ec919d720e1089d6e102f20485d936c9dc9808
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32328001"
 ---
-# <a name="ftmuldw"></a><span data-ttu-id="a9a19-103">FtMulDw</span><span class="sxs-lookup"><span data-stu-id="a9a19-103">FtMulDw</span></span>
+# <a name="ftmuldw"></a><span data-ttu-id="f08d8-103">FtMulDw</span><span class="sxs-lookup"><span data-stu-id="f08d8-103">FtMulDw</span></span>
 
   
   
-<span data-ttu-id="a9a19-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="a9a19-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="f08d8-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f08d8-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="a9a19-105">32 ビットの符号なし整数を符号なしの 64 ビット整数を乗算します。</span><span class="sxs-lookup"><span data-stu-id="a9a19-105">Multiplies an unsigned 64-bit integer by an unsigned 32-bit integer.</span></span>
+<span data-ttu-id="f08d8-105">符号なしの64ビット整数を、符号なしの32ビット整数で乗算します。</span><span class="sxs-lookup"><span data-stu-id="f08d8-105">Multiplies an unsigned 64-bit integer by an unsigned 32-bit integer.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="a9a19-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="a9a19-106">Header file:</span></span>  <br/> |<span data-ttu-id="a9a19-107">Mapiutil.h</span><span class="sxs-lookup"><span data-stu-id="a9a19-107">Mapiutil.h</span></span>  <br/> |
-|<span data-ttu-id="a9a19-108">によって実装されます。</span><span class="sxs-lookup"><span data-stu-id="a9a19-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="a9a19-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="a9a19-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="a9a19-110">によって呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="a9a19-110">Called by:</span></span>  <br/> |<span data-ttu-id="a9a19-111">クライアント アプリケーションとサービス ・ プロバイダー</span><span class="sxs-lookup"><span data-stu-id="a9a19-111">Client applications and service providers</span></span>  <br/> |
+|<span data-ttu-id="f08d8-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="f08d8-106">Header file:</span></span>  <br/> |<span data-ttu-id="f08d8-107">Mapiutil</span><span class="sxs-lookup"><span data-stu-id="f08d8-107">Mapiutil.h</span></span>  <br/> |
+|<span data-ttu-id="f08d8-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="f08d8-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="f08d8-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="f08d8-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="f08d8-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="f08d8-110">Called by:</span></span>  <br/> |<span data-ttu-id="f08d8-111">クライアントアプリケーションとサービスプロバイダー</span><span class="sxs-lookup"><span data-stu-id="f08d8-111">Client applications and service providers</span></span>  <br/> |
    
 ```cpp
 FILETIME FtMulDw(
@@ -40,18 +40,18 @@ FILETIME FtMulDw(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="a9a19-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="a9a19-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="f08d8-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f08d8-112">Parameters</span></span>
 
- <span data-ttu-id="a9a19-113">_べき乗_</span><span class="sxs-lookup"><span data-stu-id="a9a19-113">_Multiplier_</span></span>
+ <span data-ttu-id="f08d8-113">_べき乗_</span><span class="sxs-lookup"><span data-stu-id="f08d8-113">_Multiplier_</span></span>
   
-> <span data-ttu-id="a9a19-114">[in]マルチ プライアで 32 ビットの符号なし整数を含むダブル ワード。</span><span class="sxs-lookup"><span data-stu-id="a9a19-114">[in] A double word that contains the unsigned 32-bit integer multiplier.</span></span> 
+> <span data-ttu-id="f08d8-114">順番符号なし32ビットの整数乗数を含む二重の単語。</span><span class="sxs-lookup"><span data-stu-id="f08d8-114">[in] A double word that contains the unsigned 32-bit integer multiplier.</span></span> 
     
- <span data-ttu-id="a9a19-115">_被乗数_</span><span class="sxs-lookup"><span data-stu-id="a9a19-115">_Multiplicand_</span></span>
+ <span data-ttu-id="f08d8-115">_Multiplicand_</span><span class="sxs-lookup"><span data-stu-id="f08d8-115">_Multiplicand_</span></span>
   
-> <span data-ttu-id="a9a19-116">[in]_乗数_パラメーターの値が乗算されます、64 ビットの符号なし整数を格納する[FILETIME](filetime.md)構造体。</span><span class="sxs-lookup"><span data-stu-id="a9a19-116">[in] A [FILETIME](filetime.md) structure that contains the unsigned 64-bit integer to be multiplied by the value in the  _Multiplier_ parameter.</span></span> 
+> <span data-ttu-id="f08d8-116">順番_乗数_パラメーターの値で乗算する、符号なしの64ビット整数を含む[FILETIME](filetime.md)構造。</span><span class="sxs-lookup"><span data-stu-id="f08d8-116">[in] A [FILETIME](filetime.md) structure that contains the unsigned 64-bit integer to be multiplied by the value in the  _Multiplier_ parameter.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="a9a19-117">戻り値</span><span class="sxs-lookup"><span data-stu-id="a9a19-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="f08d8-117">戻り値</span><span class="sxs-lookup"><span data-stu-id="f08d8-117">Return value</span></span>
 
-<span data-ttu-id="a9a19-118">**FtMulDw**関数は、2 つの整数の積を格納する**FILETIME**構造体を返します。</span><span class="sxs-lookup"><span data-stu-id="a9a19-118">The **FtMulDw** function returns a **FILETIME** structure that contains the product of the two integers.</span></span> <span data-ttu-id="a9a19-119">2 つの入力パラメーターは変更されません。</span><span class="sxs-lookup"><span data-stu-id="a9a19-119">The two input parameters remain unchanged.</span></span> 
+<span data-ttu-id="f08d8-118">**FtMulDw**関数は、2つの整数の積を含む**FILETIME**構造を返します。</span><span class="sxs-lookup"><span data-stu-id="f08d8-118">The **FtMulDw** function returns a **FILETIME** structure that contains the product of the two integers.</span></span> <span data-ttu-id="f08d8-119">2つの入力パラメーターは変更されません。</span><span class="sxs-lookup"><span data-stu-id="f08d8-119">The two input parameters remain unchanged.</span></span> 
   
 
