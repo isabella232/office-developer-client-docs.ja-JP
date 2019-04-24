@@ -9,19 +9,19 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 89bcde81-4530-bd00-6e2e-fab7deec175b
 description: ページに定義されたすべてのレイヤー、および各レイヤーに設定されたプロパティを表示します。
-ms.openlocfilehash: 36be01460351ae9934bc0c94910b252095fca1d3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 058c8cbe2ee38a0ebc52935f7108d51ec4f2aef5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309472"
 ---
-# <a name="layers-section"></a><span data-ttu-id="9076b-103">[レイヤー] セクション</span><span class="sxs-lookup"><span data-stu-id="9076b-103">Layers Section</span></span>
+# <a name="layers-section"></a><span data-ttu-id="6acf9-103">[Layers] セクション</span><span class="sxs-lookup"><span data-stu-id="6acf9-103">Layers Section</span></span>
 
-<span data-ttu-id="9076b-104">ページに定義されたすべてのレイヤー、および各レイヤーに設定されたプロパティを表示します。</span><span class="sxs-lookup"><span data-stu-id="9076b-104">Shows all layers defined for the page and the properties set for each layer.</span></span> 
+<span data-ttu-id="6acf9-104">ページに定義されたすべてのレイヤー、および各レイヤーに設定されたプロパティを表示します。</span><span class="sxs-lookup"><span data-stu-id="6acf9-104">Shows all layers defined for the page and the properties set for each layer.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="9076b-105">注釈</span><span class="sxs-lookup"><span data-stu-id="9076b-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6acf9-105">解説</span><span class="sxs-lookup"><span data-stu-id="6acf9-105">Remarks</span></span>
 
-<span data-ttu-id="9076b-p101">このセクションは、ページの [シェイプシート] ウィンドウでのみ表示できるページ プロパティです。このセクションのセルは、[**レイヤー プロパティ**] ダイアログ ボックスのオプションに対応しています (このダイアログ ボックスを開くには、[**ホーム**] タブの [**編集**] グループで、[**レイヤー**] をクリックして、[**レイヤー プロパティ**] をクリックします)。</span><span class="sxs-lookup"><span data-stu-id="9076b-p101">This section is a page property that can be viewed only in the ShapeSheet window for a page. Its cells correspond to the options in the **Layer Properties** dialog box (on the **Home** tab, in the **Editing** group, click **Layers**, and then click **Layer Properties**).</span></span>
+<span data-ttu-id="6acf9-p101">このセクションは、ページの [シェイプシート] ウィンドウでのみ表示できるページ プロパティです。このセクションのセルは、[**レイヤー プロパティ**] ダイアログ ボックスのオプションに対応しています (このダイアログ ボックスを開くには、[**ホーム**] タブの [**編集**] グループで、[**レイヤー**] をクリックして、[**レイヤー プロパティ**] をクリックします)。</span><span class="sxs-lookup"><span data-stu-id="6acf9-p101">This section is a page property that can be viewed only in the ShapeSheet window for a page. Its cells correspond to the options in the **Layer Properties** dialog box (on the **Home** tab, in the **Editing** group, click **Layers**, and then click **Layer Properties**).</span></span>
   
 

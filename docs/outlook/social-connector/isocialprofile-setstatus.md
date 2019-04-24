@@ -1,5 +1,5 @@
 ---
-title: ISocialProfileSetStatus
+title: iこの alprofilesetstatus
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,22 +8,22 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 34fe2a35-6fb2-4c18-88f3-0edbb19716f1
 description: このメソッドは現在サポートされていません。
-ms.openlocfilehash: 8640c3bf3d5db75e68baa38868a0f281d47b2126
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3b3bf2b5ee77e0debf65bb754ddd2276121569a9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285891"
 ---
-# <a name="isocialprofilesetstatus"></a><span data-ttu-id="8d092-103">ISocialProfile::SetStatus</span><span class="sxs-lookup"><span data-stu-id="8d092-103">ISocialProfile::SetStatus</span></span>
+# <a name="isocialprofilesetstatus"></a><span data-ttu-id="4b27d-103">ISocialProfile::SetStatus</span><span class="sxs-lookup"><span data-stu-id="4b27d-103">ISocialProfile::SetStatus</span></span>
 
-<span data-ttu-id="8d092-104">このメソッドは現在サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="8d092-104">This method is currently not supported.</span></span> 
+<span data-ttu-id="4b27d-104">このメソッドは現在サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4b27d-104">This method is currently not supported.</span></span> 
   
 ```cpp
 HRESULT _stdcall SetStatus(BSTR status);
 ```
 
-## <a name="see-also"></a><span data-ttu-id="8d092-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="8d092-105">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4b27d-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="4b27d-105">See also</span></span>
 
-- [<span data-ttu-id="8d092-106">ISocialProfile : ISocialPerson</span><span class="sxs-lookup"><span data-stu-id="8d092-106">ISocialProfile : ISocialPerson</span></span>](isocialprofileisocialperson.md)
+- [<span data-ttu-id="4b27d-106">ISocialProfile : ISocialPerson</span><span class="sxs-lookup"><span data-stu-id="4b27d-106">ISocialProfile : ISocialPerson</span></span>](isocialprofileisocialperson.md)
 

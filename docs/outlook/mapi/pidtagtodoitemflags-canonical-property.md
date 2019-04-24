@@ -13,71 +13,71 @@ api_type:
 ms.assetid: bb7ccb45-ce08-4d22-9259-db15cd267e34
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6ddc7231afef0a224b92be7fe86216e56200ab70
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284484"
 ---
-# <a name="pidtagtodoitemflags-canonical-property"></a><span data-ttu-id="2654e-103">PidTagToDoItemFlags 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="2654e-103">PidTagToDoItemFlags Canonical Property</span></span>
+# <a name="pidtagtodoitemflags-canonical-property"></a><span data-ttu-id="ea928-103">PidTagToDoItemFlags 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="ea928-103">PidTagToDoItemFlags Canonical Property</span></span>
 
   
   
-<span data-ttu-id="2654e-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="2654e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="ea928-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ea928-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="2654e-105">To do アイテムのフラグが設定された状態を表します。</span><span class="sxs-lookup"><span data-stu-id="2654e-105">Represents a To-Do item's flagged condition.</span></span>
+<span data-ttu-id="ea928-105">To do アイテムのフラグが設定された条件を表します。</span><span class="sxs-lookup"><span data-stu-id="ea928-105">Represents a To-Do item's flagged condition.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="2654e-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="2654e-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="2654e-107">PR_TODO_ITEM_FLAGS</span><span class="sxs-lookup"><span data-stu-id="2654e-107">PR_TODO_ITEM_FLAGS</span></span>  <br/> |
-|<span data-ttu-id="2654e-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="2654e-108">Identifier:</span></span>  <br/> |<span data-ttu-id="2654e-109">0x0E2B</span><span class="sxs-lookup"><span data-stu-id="2654e-109">0x0E2B</span></span>  <br/> |
-|<span data-ttu-id="2654e-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="2654e-110">Data type:</span></span>  <br/> |<span data-ttu-id="2654e-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="2654e-111">PT_LONG</span></span>  <br/> |
-|<span data-ttu-id="2654e-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="2654e-112">Area:</span></span>  <br/> |<span data-ttu-id="2654e-113">MAPI 以外から送信できます。</span><span class="sxs-lookup"><span data-stu-id="2654e-113">MAPI non-transmittable</span></span>  <br/> |
+|<span data-ttu-id="ea928-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="ea928-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="ea928-107">PR_TODO_ITEM_FLAGS</span><span class="sxs-lookup"><span data-stu-id="ea928-107">PR_TODO_ITEM_FLAGS</span></span>  <br/> |
+|<span data-ttu-id="ea928-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="ea928-108">Identifier:</span></span>  <br/> |<span data-ttu-id="ea928-109">0x0e2b</span><span class="sxs-lookup"><span data-stu-id="ea928-109">0x0E2B</span></span>  <br/> |
+|<span data-ttu-id="ea928-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="ea928-110">Data type:</span></span>  <br/> |<span data-ttu-id="ea928-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="ea928-111">PT_LONG</span></span>  <br/> |
+|<span data-ttu-id="ea928-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="ea928-112">Area:</span></span>  <br/> |<span data-ttu-id="ea928-113">MAPI ノンノンアウトテーブル</span><span class="sxs-lookup"><span data-stu-id="ea928-113">MAPI non-transmittable</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="2654e-114">備考</span><span class="sxs-lookup"><span data-stu-id="2654e-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ea928-114">解説</span><span class="sxs-lookup"><span data-stu-id="ea928-114">Remarks</span></span>
 
-<span data-ttu-id="2654e-115">このプロパティは、ビット フィールドの各ビットが 1 に設定する次の表に関連付けられている条件を適用する場合は 0 です。</span><span class="sxs-lookup"><span data-stu-id="2654e-115">This property is a bit field in which each bit should be set to 1 if the associated condition in the following table applies, otherwise 0.</span></span>
+<span data-ttu-id="ea928-115">このプロパティは、次の表の関連付けられた条件が適用される場合は、各ビットが1に設定されるビットフィールドです。それ以外の場合は0になります。</span><span class="sxs-lookup"><span data-stu-id="ea928-115">This property is a bit field in which each bit should be set to 1 if the associated condition in the following table applies, otherwise 0.</span></span>
   
 ||||
 |:-----|:-----|:-----|
-|<span data-ttu-id="2654e-116">数値</span><span class="sxs-lookup"><span data-stu-id="2654e-116">Numeric value</span></span>  <br/> |<span data-ttu-id="2654e-117">名前</span><span class="sxs-lookup"><span data-stu-id="2654e-117">Name</span></span>  <br/> |<span data-ttu-id="2654e-118">説明</span><span class="sxs-lookup"><span data-stu-id="2654e-118">Description</span></span>  <br/> |
-|<span data-ttu-id="2654e-119">存在しません。</span><span class="sxs-lookup"><span data-stu-id="2654e-119">Not present</span></span>  <br/> |<span data-ttu-id="2654e-120">N/A</span><span class="sxs-lookup"><span data-stu-id="2654e-120">N/A</span></span>  <br/> |<span data-ttu-id="2654e-121">フラグなし</span><span class="sxs-lookup"><span data-stu-id="2654e-121">Unflagged</span></span>  <br/> |
-|<span data-ttu-id="2654e-122">1</span><span class="sxs-lookup"><span data-stu-id="2654e-122">1</span></span>  <br/> |<span data-ttu-id="2654e-123">todoTimeFlagged</span><span class="sxs-lookup"><span data-stu-id="2654e-123">todoTimeFlagged</span></span>  <br/> |<span data-ttu-id="2654e-124">オブジェクトは、フラグが設定された時間です。</span><span class="sxs-lookup"><span data-stu-id="2654e-124">Object is time flagged</span></span>  <br/> |
-|<span data-ttu-id="2654e-125">8</span><span class="sxs-lookup"><span data-stu-id="2654e-125">8</span></span>  <br/> |<span data-ttu-id="2654e-126">todoRecipientFlagged</span><span class="sxs-lookup"><span data-stu-id="2654e-126">todoRecipientFlagged</span></span>  <br/> |<span data-ttu-id="2654e-127">下書きメッセージ オブジェクトにのみ設定する必要があり、受信者のオブジェクトのフラグが設定されていることを意味します。</span><span class="sxs-lookup"><span data-stu-id="2654e-127">Should only be set on a draft message object, and it means that the object is flagged for recipients.</span></span>  <br/> |
+|<span data-ttu-id="ea928-116">数値</span><span class="sxs-lookup"><span data-stu-id="ea928-116">Numeric value</span></span>  <br/> |<span data-ttu-id="ea928-117">名前</span><span class="sxs-lookup"><span data-stu-id="ea928-117">Name</span></span>  <br/> |<span data-ttu-id="ea928-118">説明</span><span class="sxs-lookup"><span data-stu-id="ea928-118">Description</span></span>  <br/> |
+|<span data-ttu-id="ea928-119">存在しない</span><span class="sxs-lookup"><span data-stu-id="ea928-119">Not present</span></span>  <br/> |<span data-ttu-id="ea928-120">該当なし</span><span class="sxs-lookup"><span data-stu-id="ea928-120">N/A</span></span>  <br/> |<span data-ttu-id="ea928-121">なし</span><span class="sxs-lookup"><span data-stu-id="ea928-121">Unflagged</span></span>  <br/> |
+|<span data-ttu-id="ea928-122">1-d</span><span class="sxs-lookup"><span data-stu-id="ea928-122">1</span></span>  <br/> |<span data-ttu-id="ea928-123">todoTimeFlagged</span><span class="sxs-lookup"><span data-stu-id="ea928-123">todoTimeFlagged</span></span>  <br/> |<span data-ttu-id="ea928-124">オブジェクトは時刻のフラグが設定されている</span><span class="sxs-lookup"><span data-stu-id="ea928-124">Object is time flagged</span></span>  <br/> |
+|<span data-ttu-id="ea928-125">~</span><span class="sxs-lookup"><span data-stu-id="ea928-125">8</span></span>  <br/> |<span data-ttu-id="ea928-126">todoRecipientFlagged</span><span class="sxs-lookup"><span data-stu-id="ea928-126">todoRecipientFlagged</span></span>  <br/> |<span data-ttu-id="ea928-127">下書きのメッセージオブジェクトにのみ設定する必要があります。これは、オブジェクトに受信者のフラグが設定されていることを意味します。</span><span class="sxs-lookup"><span data-stu-id="ea928-127">Should only be set on a draft message object, and it means that the object is flagged for recipients.</span></span>  <br/> |
    
-<span data-ttu-id="2654e-128">テーブルで指定されていないすべてのビットは予約されています。</span><span class="sxs-lookup"><span data-stu-id="2654e-128">All bits that are not specified in the table are reserved.</span></span> <span data-ttu-id="2654e-129">これらは、無視する必要がありますが、設定されている場合に保持されます。</span><span class="sxs-lookup"><span data-stu-id="2654e-129">They must be ignored, but should be preserved if they are set.</span></span>
+<span data-ttu-id="ea928-128">表で指定されていないビットはすべて予約されています。</span><span class="sxs-lookup"><span data-stu-id="ea928-128">All bits that are not specified in the table are reserved.</span></span> <span data-ttu-id="ea928-129">これらは無視する必要がありますが、設定されている場合は保存する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ea928-129">They must be ignored, but should be preserved if they are set.</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="2654e-130">関連リソース</span><span class="sxs-lookup"><span data-stu-id="2654e-130">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="ea928-130">関連リソース</span><span class="sxs-lookup"><span data-stu-id="ea928-130">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="2654e-131">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="2654e-131">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="ea928-131">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="ea928-131">Protocol specifications</span></span>
 
-<span data-ttu-id="2654e-132">[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="2654e-132">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="ea928-132">[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="ea928-132">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="2654e-133">関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="2654e-133">Provides references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="ea928-133">関連する Exchange Server プロトコル仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="ea928-133">Provides references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="2654e-134">[[MS OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="2654e-134">[[MS-OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="ea928-134">[[OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="ea928-134">[[MS-OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="2654e-135">プロパティ フラグに関連する操作を指定します。</span><span class="sxs-lookup"><span data-stu-id="2654e-135">Specifies the properties and operations related to flagging.</span></span>
+> <span data-ttu-id="ea928-135">フラグに関連するプロパティと操作を指定します。</span><span class="sxs-lookup"><span data-stu-id="ea928-135">Specifies the properties and operations related to flagging.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="2654e-136">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="2654e-136">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="ea928-136">ヘッダーファイル</span><span class="sxs-lookup"><span data-stu-id="ea928-136">Header files</span></span>
 
-<span data-ttu-id="2654e-137">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="2654e-137">Mapidefs.h</span></span>
+<span data-ttu-id="ea928-137">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="ea928-137">Mapidefs.h</span></span>
   
-> <span data-ttu-id="2654e-138">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="2654e-138">Provides data type definitions.</span></span>
+> <span data-ttu-id="ea928-138">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="ea928-138">Provides data type definitions.</span></span>
     
-<span data-ttu-id="2654e-139">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="2654e-139">Mapitags.h</span></span>
+<span data-ttu-id="ea928-139">Mapitags</span><span class="sxs-lookup"><span data-stu-id="ea928-139">Mapitags.h</span></span>
   
-> <span data-ttu-id="2654e-140">代替名として記載されているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="2654e-140">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="ea928-140">代替名としてリストされているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="ea928-140">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="2654e-141">関連項目</span><span class="sxs-lookup"><span data-stu-id="2654e-141">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ea928-141">関連項目</span><span class="sxs-lookup"><span data-stu-id="ea928-141">See also</span></span>
 
 
 
-[<span data-ttu-id="2654e-142">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="2654e-142">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="ea928-142">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="ea928-142">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="2654e-143">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="2654e-143">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="ea928-143">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="ea928-143">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="2654e-144">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="2654e-144">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="ea928-144">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="ea928-144">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="2654e-145">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="2654e-145">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="ea928-145">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="ea928-145">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

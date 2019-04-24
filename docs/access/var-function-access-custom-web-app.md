@@ -1,5 +1,5 @@
 ---
-title: Var 関数 (カスタム web アプリケーションのアクセス)
+title: Var 関数 (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,32 +7,32 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: cb2aace1-fa2d-480e-bfc7-44ae399943f5
 description: クエリに指定したフィールドに含まれる値セットとして表現された標本母集団の不偏分散が返されます。
-ms.openlocfilehash: 9937f1985c0a7df5eb06977333ab889947891380
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 80cea512b0386d9b0461c927675ae51be3e0dcda
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304201"
 ---
-# <a name="var-function-access-custom-web-app"></a><span data-ttu-id="060e7-103">Var 関数 (カスタム web アプリケーションのアクセス)</span><span class="sxs-lookup"><span data-stu-id="060e7-103">Var Function (Access custom web app)</span></span>
+# <a name="var-function-access-custom-web-app"></a><span data-ttu-id="306f9-103">Var 関数 (Access カスタム web アプリ)</span><span class="sxs-lookup"><span data-stu-id="306f9-103">Var Function (Access custom web app)</span></span>
 
-<span data-ttu-id="060e7-104">クエリに指定したフィールドに含まれる値セットとして表現された標本母集団の不偏分散が返されます。</span><span class="sxs-lookup"><span data-stu-id="060e7-104">Returns the statistical variance for a population sample represented as a set of values contained in a specified field in a query.</span></span>
+<span data-ttu-id="306f9-104">クエリに指定したフィールドに含まれる値セットとして表現された標本母集団の不偏分散が返されます。</span><span class="sxs-lookup"><span data-stu-id="306f9-104">Returns the statistical variance for a population sample represented as a set of values contained in a specified field in a query.</span></span>
   
 > [!IMPORTANT]
-> <span data-ttu-id="060e7-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="060e7-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="306f9-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="306f9-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="060e7-107">構文</span><span class="sxs-lookup"><span data-stu-id="060e7-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="306f9-107">構文</span><span class="sxs-lookup"><span data-stu-id="306f9-107">Syntax</span></span>
 
- <span data-ttu-id="060e7-108">**Var**(*数式*)</span><span class="sxs-lookup"><span data-stu-id="060e7-108">**Var** (*NumericExpression*)</span></span> 
+ <span data-ttu-id="306f9-108">**Var**(*NumericExpression*)</span><span class="sxs-lookup"><span data-stu-id="306f9-108">**Var** (*NumericExpression*)</span></span> 
   
-<span data-ttu-id="060e7-109">**Var** 関数には次の引数があります。</span><span class="sxs-lookup"><span data-stu-id="060e7-109">The **Var** function contains the following argument.</span></span> 
+<span data-ttu-id="306f9-109">**Var** 関数には次の引数があります。</span><span class="sxs-lookup"><span data-stu-id="306f9-109">The **Var** function contains the following argument.</span></span> 
   
-|<span data-ttu-id="060e7-110">**引数名**</span><span class="sxs-lookup"><span data-stu-id="060e7-110">**Argument name**</span></span>|<span data-ttu-id="060e7-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="060e7-111">**Description**</span></span>|
+|<span data-ttu-id="306f9-110">**引数名**</span><span class="sxs-lookup"><span data-stu-id="306f9-110">**Argument name**</span></span>|<span data-ttu-id="306f9-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="306f9-111">**Description**</span></span>|
 |:-----|:-----|
-| <span data-ttu-id="060e7-112">*数式*</span><span class="sxs-lookup"><span data-stu-id="060e7-112">*NumericExpression*</span></span>  <br/> |<span data-ttu-id="060e7-113">評価する数値データ、またはそのフィールドのデータを使用して計算を実行する式を含むフィールドを識別する文字列式です。</span><span class="sxs-lookup"><span data-stu-id="060e7-113">A text expression identifying the field that contains the numeric data you want to evaluate or an expression that performs a calculation using the data in that field.</span></span> <span data-ttu-id="060e7-114">*数式*内のオペランドには、テーブルのフィールド、定数、または関数 (組み込みまたはユーザー定義することができますが、他の SQL 集計関数のいずれかのない) の名前を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="060e7-114">Operands in  *NumericExpression*  can include the name of a table field, a constant, or a function (which can be either intrinsic or user-defined but not one of the other SQL aggregate functions).</span></span>  <br/> |
+| <span data-ttu-id="306f9-112">*NumericExpression*</span><span class="sxs-lookup"><span data-stu-id="306f9-112">*NumericExpression*</span></span>  <br/> |<span data-ttu-id="306f9-113">評価する数値データを含むフィールドを識別するテキスト式。または、そのフィールドのデータを使用して計算を実行する式を指定します。</span><span class="sxs-lookup"><span data-stu-id="306f9-113">A text expression identifying the field that contains the numeric data you want to evaluate or an expression that performs a calculation using the data in that field.</span></span> <span data-ttu-id="306f9-114">*NumericExpression*のオペランドには、テーブルフィールドの名前、定数、または関数を含めることができます (組み込みまたはユーザー定義であっても、他の SQL 集計関数は使用できません)。</span><span class="sxs-lookup"><span data-stu-id="306f9-114">Operands in  *NumericExpression*  can include the name of a table field, a constant, or a function (which can be either intrinsic or user-defined but not one of the other SQL aggregate functions).</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="060e7-115">解説</span><span class="sxs-lookup"><span data-stu-id="060e7-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="306f9-115">解説</span><span class="sxs-lookup"><span data-stu-id="306f9-115">Remarks</span></span>
 
- <span data-ttu-id="060e7-p103">**Var** は、数値列でのみ使用できます。Null 値は無視されます。</span><span class="sxs-lookup"><span data-stu-id="060e7-p103">**Var** can be used with numeric columns only. Null values are ignored.</span></span> 
+ <span data-ttu-id="306f9-p103">**Var** は、数値列でのみ使用できます。Null 値は無視されます。</span><span class="sxs-lookup"><span data-stu-id="306f9-p103">**Var** can be used with numeric columns only. Null values are ignored.</span></span> 
   
 

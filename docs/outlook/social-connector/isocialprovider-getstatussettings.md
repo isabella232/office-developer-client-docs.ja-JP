@@ -1,5 +1,5 @@
 ---
-title: ISocialProviderGetStatusSettings
+title: i、alprovidergetstatussettings
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,22 +8,22 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f4fef896-0803-4fdb-a40b-34bf15e20e4b
 description: このメソッドは現在サポートされていません。
-ms.openlocfilehash: 15c7189834bd57309b901f4607a3b7010f6d013b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 430fa8f73a47eda1bd1cb8caff7917508f76ffa7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285752"
 ---
-# <a name="isocialprovidergetstatussettings"></a><span data-ttu-id="09631-103">ISocialProvider::GetStatusSettings</span><span class="sxs-lookup"><span data-stu-id="09631-103">ISocialProvider::GetStatusSettings</span></span>
+# <a name="isocialprovidergetstatussettings"></a><span data-ttu-id="6a0ea-103">ISocialProvider::GetStatusSettings</span><span class="sxs-lookup"><span data-stu-id="6a0ea-103">ISocialProvider::GetStatusSettings</span></span>
 
-<span data-ttu-id="09631-104">このメソッドは現在サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="09631-104">This method is currently not supported.</span></span> 
+<span data-ttu-id="6a0ea-104">このメソッドは現在サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6a0ea-104">This method is currently not supported.</span></span> 
   
 ```cpp
 HRESULT _stdcall GetStatusSettings([out] BSTR* statusDefault, [out] int* maxStatusLength);
 ```
 
-## <a name="see-also"></a><span data-ttu-id="09631-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="09631-105">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6a0ea-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="6a0ea-105">See also</span></span>
 
-- [<span data-ttu-id="09631-106">ISocialProvider : IUnknown</span><span class="sxs-lookup"><span data-stu-id="09631-106">ISocialProvider : IUnknown</span></span>](isocialprovideriunknown.md)
+- [<span data-ttu-id="6a0ea-106">ISocialProvider : IUnknown</span><span class="sxs-lookup"><span data-stu-id="6a0ea-106">ISocialProvider : IUnknown</span></span>](isocialprovideriunknown.md)
 

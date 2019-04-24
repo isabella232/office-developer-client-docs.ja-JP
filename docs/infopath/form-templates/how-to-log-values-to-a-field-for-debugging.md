@@ -6,31 +6,31 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5874dc28-1b10-48a3-8287-9474db0b7435
 description: InfoPath フォーム テンプレートをデバッグするときは、通常、フォーム内のフィールドに値のログを直接記録し、フォームのテスト セッション中にデバッグ データのレコードを作成すると有効です。次の手順では、マルチライン フィールドを作成し、ヘルパー関数 (フィールドにデバッグ データのログを記録する関数) をフォーム コードに追加する方法について説明します。
-ms.openlocfilehash: f763e6b5d14fe5a5b4d9218af4acd0bc05a242af
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: HT
+ms.openlocfilehash: 28f2a1ad3c13aefd9f898bdf397c9103df98d3c9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303578"
 ---
-# <a name="log-values-to-a-field-for-debugging"></a><span data-ttu-id="3659a-104">デバッグのために値のログをフィールドに記録する</span><span class="sxs-lookup"><span data-stu-id="3659a-104">Log values to a field for debugging</span></span>
+# <a name="log-values-to-a-field-for-debugging"></a><span data-ttu-id="5a45f-104">デバッグのために値のログをフィールドに記録する</span><span class="sxs-lookup"><span data-stu-id="5a45f-104">Log values to a field for debugging</span></span>
 
-<span data-ttu-id="3659a-p102">InfoPath フォーム テンプレートをデバッグするときは、通常、フォーム内のフィールドに値のログを直接記録し、フォームのテスト セッション中にデバッグ データのレコードを作成すると有効です。次の手順では、マルチライン フィールドを作成し、ヘルパー関数 (フィールドにデバッグ データのログを記録する関数) をフォーム コードに追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="3659a-p102">When debugging an InfoPath form template, it is often useful to log values directly into a field in the form to create a record of debug data during a session of testing the form. The following procedures show how to create a multi-line field, and then add helper functions to the form code that enable you log debug data into that field.</span></span>
+<span data-ttu-id="5a45f-p102">InfoPath フォーム テンプレートをデバッグするときは、通常、フォーム内のフィールドに値のログを直接記録し、フォームのテスト セッション中にデバッグ データのレコードを作成すると有効です。次の手順では、マルチライン フィールドを作成し、ヘルパー関数 (フィールドにデバッグ データのログを記録する関数) をフォーム コードに追加する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="5a45f-p102">When debugging an InfoPath form template, it is often useful to log values directly into a field in the form to create a record of debug data during a session of testing the form. The following procedures show how to create a multi-line field, and then add helper functions to the form code that enable you log debug data into that field.</span></span>
   
-## <a name="create-a-multi-line-text-field"></a><span data-ttu-id="3659a-107">マルチライン テキスト フィールドを作成する</span><span class="sxs-lookup"><span data-stu-id="3659a-107">To create a multi-line text field</span></span>
+## <a name="create-a-multi-line-text-field"></a><span data-ttu-id="5a45f-107">マルチライン テキスト フィールドを作成する</span><span class="sxs-lookup"><span data-stu-id="5a45f-107">Create a multi-line text field</span></span>
 
-1. <span data-ttu-id="3659a-108">**テキスト ボックス** コントロールをフォームに追加した後、複数行を表示できるようにテキスト ボックスのサイズを変更します。</span><span class="sxs-lookup"><span data-stu-id="3659a-108">Add a **Text Box** control to the form, and then resize it so that it can display multiple lines.</span></span> 
+1. <span data-ttu-id="5a45f-108">**テキスト ボックス** コントロールをフォームに追加した後、複数行を表示できるようにテキスト ボックスのサイズを変更します。</span><span class="sxs-lookup"><span data-stu-id="5a45f-108">Add a **Text Box** control to the form, and then resize it so that it can display multiple lines.</span></span> 
     
-2. <span data-ttu-id="3659a-109">テキスト ボックスを右クリックし、**[テキスト ボックスのプロパティ]** をクリックしてから、**[表示]** タブで **[マルチライン]** チェック ボックスをクリックします。</span><span class="sxs-lookup"><span data-stu-id="3659a-109">Right-click the text box, click **Text Box Properties**, and then click the **Multi-line** check box on the **Display** tab.</span></span> 
+2. <span data-ttu-id="5a45f-109">テキスト ボックスを右クリックし、**[テキスト ボックスのプロパティ]** をクリックしてから、**[表示]** タブで **[マルチライン]** チェック ボックスをクリックします。</span><span class="sxs-lookup"><span data-stu-id="5a45f-109">Right-click the text box, click **Text Box Properties**, and then click the **Multi-line** check box on the **Display** tab.</span></span> 
     
-## <a name="add-helper-functions-to-log-debug-information-to-the-field"></a><span data-ttu-id="3659a-110">フィールドにデバッグ情報のログを記録するヘルパー関数を追加する</span><span class="sxs-lookup"><span data-stu-id="3659a-110">To add helper functions to log debug information to the field</span></span>
+## <a name="add-helper-functions-to-log-debug-information-to-the-field"></a><span data-ttu-id="5a45f-110">フィールドにデバッグ情報のログを記録するヘルパー関数を追加する</span><span class="sxs-lookup"><span data-stu-id="5a45f-110">Add helper functions to log debug information to the field</span></span>
 
-1. <span data-ttu-id="3659a-111">**[開発者]** タブで、**[コード エディター]** をクリックし、ダイアログ ボックスが表示されたら、フォーム テンプレートを保存します。</span><span class="sxs-lookup"><span data-stu-id="3659a-111">On the **Developer** tab, click **Code Editor**, and then save the form template if you are prompted.</span></span>
+1. <span data-ttu-id="5a45f-111">**[開発者]** タブで、**[コード エディター]** をクリックし、ダイアログ ボックスが表示されたら、フォーム テンプレートを保存します。</span><span class="sxs-lookup"><span data-stu-id="5a45f-111">On the **Developer** tab, click **Code Editor**, and then save the form template if you are prompted.</span></span>
     
-2. <span data-ttu-id="3659a-112">コード エディターで、次の 3 つのヘルパー関数を、フォーム コード ファイル内のパブリック クラスに追加します。</span><span class="sxs-lookup"><span data-stu-id="3659a-112">In the Code Editor, add the following three helper functions to the public class in the form code file.</span></span>
+2. <span data-ttu-id="5a45f-112">コード エディターで、次の 3 つのヘルパー関数を、フォーム コード ファイル内のパブリック クラスに追加します。</span><span class="sxs-lookup"><span data-stu-id="5a45f-112">In the Code Editor, add the following three helper functions to the public class in the form code file.</span></span>
     
    > [!IMPORTANT]
-   > <span data-ttu-id="3659a-113">`debugFieldXpath` 関数の  `AddToDebugField` 変数に設定されている値を、最初の手順で作成したコントロールに連結するフィールド用の正しい XPath 式に更新します。</span><span class="sxs-lookup"><span data-stu-id="3659a-113">Make sure that you update the value set for the  `debugFieldXpath` variable in the  `AddToDebugField` function to the correct XPath expression for the field bound to the control that you created in the first procedure.</span></span> 
+   > <span data-ttu-id="5a45f-113">`debugFieldXpath` 関数の  `AddToDebugField` 変数に設定されている値を、最初の手順で作成したコントロールに連結するフィールド用の正しい XPath 式に更新します。</span><span class="sxs-lookup"><span data-stu-id="5a45f-113">Make sure that you update the value set for the  `debugFieldXpath` variable in the  `AddToDebugField` function to the correct XPath expression for the field bound to the control that you created in the first procedure.</span></span> 
   
     ```cs
         private void AddToDebugField(string valueToAdd)
@@ -76,11 +76,11 @@ ms.locfileid: "19799129"
     ```
 
 > [!NOTE] 
-> <span data-ttu-id="3659a-114">Visual Basic を使用している場合は、フォーム コード ファイルの一番上のディレクティブに、`Imports Microsoft.VisualBasic.Constants` を追加します。</span><span class="sxs-lookup"><span data-stu-id="3659a-114">[!VISUAL BASIC NOTE] When using Visual Basic, add  `Imports Microsoft.VisualBasic.Constants` to the directives at the top of the form code file.</span></span> 
+> <span data-ttu-id="5a45f-114">Visual Basic を使用している場合は、フォーム コード ファイルの一番上のディレクティブに、`Imports Microsoft.VisualBasic.Constants` を追加します。</span><span class="sxs-lookup"><span data-stu-id="5a45f-114">When using Visual Basic, add  `Imports Microsoft.VisualBasic.Constants` to the directives at the top of the form code file.</span></span> 
   
-## <a name="test-the-addtodebugfield-function"></a><span data-ttu-id="3659a-115">AddToDebugField 関数をテストする</span><span class="sxs-lookup"><span data-stu-id="3659a-115">Test the AddToDebugField function</span></span>
+## <a name="test-the-addtodebugfield-function"></a><span data-ttu-id="5a45f-115">AddToDebugField 関数をテストする</span><span class="sxs-lookup"><span data-stu-id="5a45f-115">Test the AddToDebugField function</span></span>
 
-1. <span data-ttu-id="3659a-116">**[開発者]** タブで、**[Loading イベント]** をクリックし、次のコード行をイベント ハンドラーに追加します。</span><span class="sxs-lookup"><span data-stu-id="3659a-116">On the **Developer** tab, click **Loading Event**, and then add the following line of code to the event handler.</span></span>
+1. <span data-ttu-id="5a45f-116">**[開発者]** タブで、**[Loading イベント]** をクリックし、次のコード行をイベント ハンドラーに追加します。</span><span class="sxs-lookup"><span data-stu-id="5a45f-116">On the **Developer** tab, click **Loading Event**, and then add the following line of code to the event handler.</span></span>
     
    ```cs
     AddToDebugField("Form loaded");
@@ -90,7 +90,7 @@ ms.locfileid: "19799129"
     AddToDebugField("Form loaded")
    ```
 
-2. <span data-ttu-id="3659a-117">[ **開発**] タブの [ **ViewSwitched イベント**] をクリックし、次のコード行をイベント ハンドラーに追加します。</span><span class="sxs-lookup"><span data-stu-id="3659a-117">On the **Developer** tab, click **View Switched Event**, and then add the following line of code to the event handler.</span></span>
+2. <span data-ttu-id="5a45f-117">[ **開発**] タブの [ **ViewSwitched イベント**] をクリックし、次のコード行をイベント ハンドラーに追加します。</span><span class="sxs-lookup"><span data-stu-id="5a45f-117">On the **Developer** tab, click **View Switched Event**, and then add the following line of code to the event handler.</span></span>
     
    ```cs
     AddToDebugField("View switched: " + this.CurrentView.ViewInfo.Name);
@@ -100,8 +100,8 @@ ms.locfileid: "19799129"
     AddToDebugField("View switched: " &amp; Me.CurrentView.ViewInfo.Name)
    ```
 
-3. <span data-ttu-id="3659a-118">[ **ホーム**] タブの [ **プレビュー**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="3659a-118">On the **Home** tab, click **Preview**.</span></span>
+3. <span data-ttu-id="5a45f-118">[ **ホーム**] タブの [ **プレビュー**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5a45f-118">On the **Home** tab, click **Preview**.</span></span>
     
-   <span data-ttu-id="3659a-p103">デバッグ フィールドに 2 つの項目が表示されます。1 つは、フォームが読み込まれたことを示す項目で、もう 1 つは、ビューの名前を示す項目です。これらの例では、フォームを開くときに発生するイベントのイベント ハンドラーを使用しています。ただし、フォームが読み込まれた後は、フォームのコンテキスト内で実行される他のコードからだけでなく、他のイベント ハンドラーからも、 `AddToDebugField` 関数を呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="3659a-p103">The debug field should display two entries: one indicating that the form is loaded, and another indicating the name of the view. These examples use event handlers for events that occur as the form is opened. However, after the form is loaded, you can call the  `AddToDebugField` function from other event handlers in addition to any other code running in the context of the form.</span></span> 
+   <span data-ttu-id="5a45f-p103">デバッグ フィールドに 2 つの項目が表示されます。1 つは、フォームが読み込まれたことを示す項目で、もう 1 つは、ビューの名前を示す項目です。これらの例では、フォームを開くときに発生するイベントのイベント ハンドラーを使用しています。ただし、フォームが読み込まれた後は、フォームのコンテキスト内で実行される他のコードからだけでなく、他のイベント ハンドラーからも、 `AddToDebugField` 関数を呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="5a45f-p103">The debug field should display two entries: one indicating that the form is loaded, and another indicating the name of the view. These examples use event handlers for events that occur as the form is opened. However, after the form is loaded, you can call the  `AddToDebugField` function from other event handlers in addition to any other code running in the context of the form.</span></span> 
   
 

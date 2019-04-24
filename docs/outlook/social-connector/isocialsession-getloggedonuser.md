@@ -7,29 +7,29 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: bd6bdaf6-52d5-4308-9c3d-869f6e1a6608
-description: ログオン中のユーザーを表す ISocialProfile インターフェイスを取得します。
-ms.openlocfilehash: 05e645fa62441b8c9001cf3ec043add36b8593dd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: ログオンユーザーを表す isocialprofile インターフェイスを取得します。
+ms.openlocfilehash: 6c15d9d016f7445f8887f7d0fc87a1f36fb99b94
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32285475"
 ---
-# <a name="isocialsessiongetloggedonuser"></a><span data-ttu-id="2c3e2-103">ISocialSession::GetLoggedOnUser</span><span class="sxs-lookup"><span data-stu-id="2c3e2-103">ISocialSession::GetLoggedOnUser</span></span>
+# <a name="isocialsessiongetloggedonuser"></a><span data-ttu-id="b6f54-103">ISocialSession::GetLoggedOnUser</span><span class="sxs-lookup"><span data-stu-id="b6f54-103">ISocialSession::GetLoggedOnUser</span></span>
 
-<span data-ttu-id="2c3e2-104">ログオン中のユーザーを表す[ISocialProfile](isocialprofileisocialperson.md)インターフェイスを取得します。</span><span class="sxs-lookup"><span data-stu-id="2c3e2-104">Gets an [ISocialProfile](isocialprofileisocialperson.md) interface that represents the logged-on user.</span></span> 
+<span data-ttu-id="b6f54-104">ログオンユーザーを表す[isocialprofile](isocialprofileisocialperson.md)インターフェイスを取得します。</span><span class="sxs-lookup"><span data-stu-id="b6f54-104">Gets an [ISocialProfile](isocialprofileisocialperson.md) interface that represents the logged-on user.</span></span> 
   
 ```cpp
 HRESULT _stdcall GetLoggedOnUser([out, retval] ISocialProfile** result);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="2c3e2-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="2c3e2-105">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="b6f54-105">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b6f54-105">Parameters</span></span>
 
-<span data-ttu-id="2c3e2-106">_result_</span><span class="sxs-lookup"><span data-stu-id="2c3e2-106">_result_</span></span>
+<span data-ttu-id="b6f54-106">_result_</span><span class="sxs-lookup"><span data-stu-id="b6f54-106">_result_</span></span>
   
-> <span data-ttu-id="2c3e2-107">[out]**ISocialProfile**インターフェイスです。</span><span class="sxs-lookup"><span data-stu-id="2c3e2-107">[out] An **ISocialProfile** interface.</span></span> 
+> <span data-ttu-id="b6f54-107">読み上げiの式**alprofile**インターフェイス。</span><span class="sxs-lookup"><span data-stu-id="b6f54-107">[out] An **ISocialProfile** interface.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="2c3e2-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="2c3e2-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b6f54-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="b6f54-108">See also</span></span>
 
-- [<span data-ttu-id="2c3e2-109">ISocialSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="2c3e2-109">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
+- [<span data-ttu-id="b6f54-109">ISocialSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="b6f54-109">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
 

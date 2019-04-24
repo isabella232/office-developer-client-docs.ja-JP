@@ -1,5 +1,5 @@
 ---
-title: プログラム フロー (カスタム web アプリケーションのアクセス)
+title: プログラムフロー (Access カスタム web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -7,24 +7,24 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: bfc3548e-f4e5-4e07-896e-6884269085e5
 description: ''
-ms.openlocfilehash: 215f5c36d8fbda4c37e1854e0a30b6e531845d15
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: eba94f7789ca8cb1cd809fdf3814f26e1d9bed27
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308023"
 ---
-# <a name="program-flow-access-custom-web-app"></a><span data-ttu-id="1ab5a-102">プログラム フロー (カスタム web アプリケーションのアクセス)</span><span class="sxs-lookup"><span data-stu-id="1ab5a-102">Program flow (Access custom web app)</span></span>
+# <a name="program-flow-access-custom-web-app"></a><span data-ttu-id="add6c-102">プログラムフロー (Access カスタム web アプリ)</span><span class="sxs-lookup"><span data-stu-id="add6c-102">Program flow (Access custom web app)</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="1ab5a-p101">[!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="1ab5a-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="add6c-p101">[!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="add6c-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
-## <a name="in-this-section"></a><span data-ttu-id="1ab5a-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="1ab5a-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="add6c-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="add6c-105">In this section</span></span>
 
-- [<span data-ttu-id="1ab5a-106">マクロ ブロックのコメント (カスタム web アプリケーションのアクセス)</span><span class="sxs-lookup"><span data-stu-id="1ab5a-106">Comment Macro Block (Access custom web app)</span></span>](comment-macro-block-access-custom-web-app.md)
+- [<span data-ttu-id="add6c-106">Comment マクロブロック (Access カスタム web アプリ)</span><span class="sxs-lookup"><span data-stu-id="add6c-106">Comment Macro Block (Access custom web app)</span></span>](comment-macro-block-access-custom-web-app.md)
     
-- [<span data-ttu-id="1ab5a-107">もし。。。そうしたら。。。他のマクロ ブロック (カスタム web アプリケーションのアクセス)</span><span class="sxs-lookup"><span data-stu-id="1ab5a-107">If...Then...Else Macro Block (Access custom web app)</span></span>](ifthenelse-macro-block-access-custom-web-app.md)
+- [<span data-ttu-id="add6c-107">もし。。。そうしたら。。。Else マクロブロック (Access カスタム web アプリ)</span><span class="sxs-lookup"><span data-stu-id="add6c-107">If...Then...Else Macro Block (Access custom web app)</span></span>](ifthenelse-macro-block-access-custom-web-app.md)
     
-- [<span data-ttu-id="1ab5a-108">マクロ ブロックのグループ (カスタム web アプリケーションのアクセス)</span><span class="sxs-lookup"><span data-stu-id="1ab5a-108">Group Macro Block (Access custom web app)</span></span>](group-macro-block-access-custom-web-app.md)
+- [<span data-ttu-id="add6c-108">Group マクロブロック (Access カスタム web アプリ)</span><span class="sxs-lookup"><span data-stu-id="add6c-108">Group Macro Block (Access custom web app)</span></span>](group-macro-block-access-custom-web-app.md)
     
 
