@@ -1,5 +1,5 @@
 ---
-title: プロパティ コレクション (DAO)
+title: Properties コレクション (DAO)
 TOCTitle: Properties collection
 ms:assetid: cd07184a-a261-29c9-542f-bc2eff6f4af6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834455(v=office.15)
@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 515d28f0d7d99359c36df79cf3b8769d8f71e06d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301282"
 ---
-# <a name="properties-collection-dao"></a>プロパティ コレクション (DAO)
+# <a name="properties-collection-dao"></a>Properties コレクション (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **Properties** コレクションには、オブジェクトの特定のインスタンスのすべての **[Property](property-object-dao.md)** オブジェクトが含まれます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **Connection** オブジェクトと **Error** オブジェクトを除くすべての DAO オブジェクトには、 **Properties** コレクションがあり、特定の組み込み **Property** オブジェクトが含まれます。この **Property** オブジェクトは、通常は単にプロパティと呼ばれ、オブジェクトのそれぞれのインスタンスの特徴を一意に指定します。
 
@@ -33,20 +33,20 @@ ms.locfileid: "28715516"
 
 コレクション内の組み込み **Property** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。
 
-- オブジェクトです。**プロパティ**(0)
+- 対象.**プロパティ**.0
 
-- オブジェクトです。**プロパティ**("name")
+- 対象.**プロパティ**("name")
 
-- オブジェクトです。**プロパティ**\!\[名\]
+- 対象.**プロパティ**\! \[名前\]
 
 組み込みプロパティの場合、次の構文を使用することもできます。
 
 - object.name
 
 > [!NOTE]
-> ユーザー定義のプロパティでは、完全なオブジェクトを使用する必要があります。**プロパティ**("name") の構文です。
+> ユーザー定義のプロパティの場合は、オブジェクト全体を使用する必要があります。**プロパティ**("name") の構文を指定します。
 
-同じ構文を使って、 **Property** オブジェクトの **Value** プロパティを参照することもできます。 **Property** オブジェクト自身、または **Property** オブジェクトの **Value** プロパティのどちらを参照するのかは、参照のコンテキストで決まります。
+同じ構文を使って、 **Property** オブジェクトの **Value** プロパティを参照することもできます。 **Property** オブジェクト自身と **Property** オブジェクトの **Value** プロパティのいずれを参照するかは、参照のコンテキストで決まります。
 
 ## <a name="example"></a>例
 

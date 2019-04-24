@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b3c98d8795bb7039c0ae158414401dc5d754066f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295500"
 ---
 # <a name="copydatabasefile-macro-action"></a>CopyDatabaseFile マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-" **CopyDatabaseFile/データベースファイルのコピー** " アクションを使用すると、Access プロジェクトに接続されている Microsoft SQL Server 7.0 以降のカレント データベースのコピーを作成できます。 アクセスでは、現在のデータベースをデタッチし、移行先サーバーに結び付けます。 データベースの切断と接続の詳細については、SQL Server のドキュメントを参照してください。
+" **CopyDatabaseFile/データベースファイルのコピー** " アクションを使用すると、Access プロジェクトに接続されている Microsoft SQL Server 7.0 以降のカレント データベースのコピーを作成できます。 Access は、現在のデータベースをデタッチして、そのデータベースを転送先サーバーに接続します。 データベースの切断と接続の詳細については、SQL Server のドキュメントを参照してください。
 
 > [!NOTE]
 > [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
@@ -26,7 +26,7 @@ ms.locfileid: "28699444"
 
 ## <a name="setting"></a>設定値
 
-**データベースファイルのコピー**操作では、次の引数があります。
+"CopyDatabaseFile/データベースファイルのコピー" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -46,21 +46,21 @@ ms.locfileid: "28699444"
 </tr>
 <tr class="even">
 <td><p><strong>Overwrite Existing File/既存ファイルの上書き</strong></p></td>
-<td><p>同じ名前の既存のファイルを置換するかどうかを指定します。 場合<strong>[はい]</strong>に設定し、ファイル名が既に存在する、ファイルは上書きされます。 場合は<strong>No</strong>に設定ファイル名が既に存在する、ファイルが上書きされないと、アクションは失敗します。 ファイルが既に存在しない場合、この設定は無視されます。 既定値は [ <strong>はい</strong>] です。</p></td>
+<td><p>既存のファイルを同じ名前のファイルで置き換えるかどうかを指定します。[はい] に設定した場合に、同じ名前のファイルが既に存在すると、ファイルは上書きされます。[いいえ] に設定した場合、同じ名前のファイルが既に存在すると、ファイルは上書きされず、アクションは失敗します。同じ名前のファイルが存在しない場合、この設定は無視されます。既定値は [はい] です。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Disconnect All Users/全ユーザーの切断</strong></p></td>
-<td><p>データベースからユーザーを強制的かどうかを指定します。 場合は<strong>[はい]</strong>に設定、現在のデータベースに接続されているすべてのユーザーを切断し、データベースのコピー操作を続行できます。 場合設定<strong>なし</strong>もう 1 つまたはより多くのユーザーは、コピーのデータベース操作が失敗する、データベースに接続しています。 既定値は [ <strong>いいえ</strong>] です。</p><p><strong>警告</strong>: 適切な警告は、データの損失につながる可能性がなく、データベースからユーザーを切断します。</p></td>
+<td><p>ユーザーを強制的にデータベースから切断するかどうかを指定します。 [はい] に設定した場合は、カレント データベースに接続されているすべてのユーザーを切断し、データベースのコピー操作を進めることができます。 [いいえ] に設定した場合は、データベースに接続しているユーザーが 1 人でもいると、データベースのコピー操作は失敗します。 既定値は [いいえ] です。</p><p><strong>警告</strong>: 適切な警告なしにデータベースからユーザーを切断すると、データが失われる可能性があります。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 コピー操作は同期操作であるため、データベースのコピーが完了するまで他の操作は実行できません。
 
-**データベースファイルのコピー**操作は、データ、データ定義、およびデータベース オブジェクトをコピーするだけでなく、既定値、テキスト制約、ルックアップ値などの拡張プロパティもコピーします。
+The **CopyDatabaseFile** action not only copies data, data definitions, and database objects, but also copies extended properties, such as default values, text constraints, and lookup values.
 
 データベースのコピー操作の要件を次に示します。
 
@@ -76,5 +76,5 @@ ms.locfileid: "28699444"
 
 - コピーを実行するユーザーは、コピー元とコピー先の両方の SQL Server コンピューターにおいて sysadmin ロールのメンバーである必要がありです。
 
-モジュールの Visual Basic for Applications では、**データベースファイルのコピー**操作を実行するには、 **DoCmd**オブジェクトの**データベースファイルのコピー**メソッドを使用します。
+To run the **CopyDatabaseFile** action in a Visual Basic for Applications module, use the **CopyDatabaseFile** method of the **DoCmd** object.
 

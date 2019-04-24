@@ -1,5 +1,5 @@
 ---
-title: Recordset.StillExecuting プロパティ (DAO)
+title: StillExecuting プロパティ (DAO)
 TOCTitle: StillExecuting Property
 ms:assetid: 0e53c98f-17ac-3569-d780-540a6932013e
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845245(v=office.15)
@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1195a45c3846cf79a45c16cda8e23bc95ef8156d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307568"
 ---
-# <a name="recordsetstillexecuting-property-dao"></a>Recordset.StillExecuting プロパティ (DAO)
+# <a name="recordsetstillexecuting-property-dao"></a>StillExecuting プロパティ (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ## <a name="syntax"></a>構文
 
-*式*です。StillExecuting
+*式*。StillExecuting
 
-*式***レコード セット**オブジェクトを表す変数です。
+*式***Recordset**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 

@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e4549c8817361cfb5b9fa730ee37ca6a07edc98b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297061"
 ---
 # <a name="appendix-a-providers"></a>付録 A: プロバイダー
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
-このセクションでは、次の 3 つの種類のプロバイダー: データ プロバイダー、サービス プロバイダー、およびサービスのコンポーネントです。 プロバイダーは、2 つのカテゴリに分類されます: データとサービスを提供するものです。 *データ プロバイダー*は、独自のデータを所有し、表形式でアプリケーションに公開します。 *サービス プロバイダー*では、作成や、ADO アプリケーションの機能を強化して、データの利用によってサービスをカプセル化します。 として*サービスのコンポーネント*、その他のサービス プロバイダーまたはコンポーネントと連携して動作するサービス プロバイダーはさらに定義も可能性があります。
+ここでは、データ プロバイダー、サービス プロバイダー、およびサービス コンポーネントの 3 種類のプロバイダーについて説明します。プロバイダーは、データを提供するものとサービスを提供するものの 2 つに大別されます。"データ プロバイダー" は、独自のデータを所有し、表形式でアプリケーションに公開します。"サービス プロバイダー" は、データを作成および利用することによってサービスをカプセル化し、ADO アプリケーションの機能を強化します。サービス プロバイダーはさらに、他のサービス プロバイダーやサービス コンポーネントと連携して動作する "サービス コンポーネント" として定義される場合もあります。
 
 ## <a name="data-providers"></a>データ プロバイダー
 
@@ -43,7 +43,7 @@ Microsoft から現在入手可能な各データ プロバイダーの詳細に
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>対象</p></th>
+<th><p>項目</p></th>
 <th><p>トピック</p></th>
 </tr>
 </thead>
@@ -96,13 +96,13 @@ Microsoft から現在入手可能な各データ プロバイダーの詳細に
 
 - [Microsoft OLE DB Remoting Provider (ADO サービス プロバイダー)](microsoft-ole-db-remoting-provider-ado-service-provider.md)
 
-## <a name="service-components"></a>サービス コンポーネント
+## <a name="service-components"></a>サービスコンポーネント
 
 [Cursor Service for OLE DB](microsoft-cursor-service-for-ole-db-ado-service-component.md) サービス コンポーネントは、データ プロバイダーのカーソル サポート機能を補完します。また、サービス コンポーネントはキーワードを必要とし、動的プロパティを持ちます。
 
 プロバイダーの詳細については、Microsoft Data Access Components SDK の Microsoft OLE DB のマニュアルまたは「[データ プラットフォーム デベロッパー センター](https://docs.microsoft.com/sql/connect/sql-data-developer?view=sql-server-2017)」を参照してください。
 
-## <a name="provider-commands"></a>プロバイダーのコマンド
+## <a name="provider-commands"></a>プロバイダーコマンド
 
-プロバイダーごとに一覧表示、アプリケーションがプロバイダーのコマンドとして SQL ステートメントを入力するユーザーを許可する場合、常にユーザー入力を検証し、警戒をハッカーの攻撃の一部としてなど、危険性のある SQL ステートメントを使用して、ユーザーが入力します。
+ここにリストされている各プロバイダーについて、アプリケーションでユーザーがプロバイダーコマンドとして SQL ステートメントを入力できるようにする場合は、常にユーザー入力を検証して、のような潜在的な危険な sql ステートメントを使用したハッカー攻撃を受ける可能性があります (など)。ユーザー入力。
 

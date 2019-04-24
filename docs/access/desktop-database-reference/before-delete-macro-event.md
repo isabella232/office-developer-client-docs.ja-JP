@@ -12,38 +12,38 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 2b2a4f978a4af2ba79cab7807f0142d35d7d30c7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296914"
 ---
 # <a name="before-delete-macro-event"></a>Before Delete マクロ イベント
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**削除する前に**イベントは、レコードが削除されると、変更がコミットされる前に発生します。
+The **Before Delete** event occurs when a record is deleted, but before the change is committed.
 
 > [!NOTE]
-> **前に Delete**イベントは、データ マクロでのみ使用可能です。
+> Before Delete イベントは、データ マクロでのみ使用できます。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-使用して、レコードの前に発生する操作を実行**する前に削除**イベントが削除されます。 **変更**する前に、検証を実行して、カスタム エラー メッセージが発生する通常使用されます。
+Use the **Before Delete** event to perform any actions that you want to occur before a record is deleted. The **Before Change** is commonly used to perform validation and to raise custom error messages.
 
-次の構文を使用して、削除するレコードの値にアクセスすることができます。
+削除するレコード内の値には、次の構文を使用してアクセスできます。
 
 `[Old].[Field Name]`
 
-など、削除するレコードの QuantityInStock フィールドの値にアクセスするには、次の構文を使用します。
+たとえば、削除するレコードの QuantityInStock フィールドの値にアクセスするには、次の構文を使用します。
 
 `[Old].[QuantityInStock]`
 
-**削除する前に**イベントが終了したとき、削除するレコードに含まれる値が完全に削除します。
+The values contained in the record to be deleted are deleted permanently when the **Before Delete** event ends.
 
-**RaiseError**アクションを使用して、**削除する前に**イベントをキャンセルできます。 エラーが発生すると**する前に Delete**イベントに含まれる変更は破棄されます。
+You can cancel the **Before Delete** event by using the **RaiseError** action. エラーが発生した場合、 **Before Delete**イベントに含まれる変更は破棄されます。
 
-**削除する前に**イベントで使用できるマクロのコマンドを次の表に一覧します。
+The following table lists macro commands that can be used in the **Before Delete** event.
 
 <table>
 <colgroup>
@@ -53,7 +53,7 @@ ms.locfileid: "28705002"
 <thead>
 <tr class="header">
 <th><p>コマンドの種類</p></th>
-<th><p>コマンド</p></th>
+<th><p>Command</p></th>
 </tr>
 </thead>
 <tbody>
@@ -71,7 +71,7 @@ ms.locfileid: "28705002"
 </tr>
 <tr class="even">
 <td><p>データ ブロック</p></td>
-<td><p><a href="lookuprecord-data-block.md">マクロ アクションの不一致</a></p></td>
+<td><p><a href="lookuprecord-data-block.md">LookupRecord マクロアクション</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>データ アクション</p></td>
@@ -97,9 +97,9 @@ ms.locfileid: "28705002"
 </table>
 
 
-**削除する前に**イベントをキャプチャするデータ マクロを作成するには、次の手順を使用します。
+To create a Data macro that captures the **Before Delete** event, use the following steps.
 
-1.  **削除する前に**イベントをキャプチャするテーブルを開きます。
+1.  Open the table for which you want to capture the **Before Delete** event.
 
-2.  [**表**] タブで、[**前に、のイベント**] を選択**する前に削除**します。
+2.  [**テーブル**] タブの [**イベント前**] グループで、[**削除前**] を選択します。
 

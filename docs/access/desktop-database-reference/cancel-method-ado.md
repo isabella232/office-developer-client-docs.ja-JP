@@ -12,25 +12,25 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 791803bb8935ffab24e5aed7e4e6a77360e82b65
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296676"
 ---
 # <a name="cancel-method-ado"></a>Cancel メソッド (ADO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 保留中の非同期メソッド呼び出しの実行を取り消します。
 
 ## <a name="syntax"></a>構文
 
-*オブジェクト*です。キャンセル
+*オブジェクト*。キャンセル
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-非同期メソッド呼び出し (つまり、 **adAsyncConnect** 、 **adAsyncExecute** 、または **adAsyncFetch** オプションを指定して呼び出されたメソッド) の実行を中止するには、 **Cancel** メソッドを使用します。
+非同期メソッド呼び出し (つまり、**adAsyncConnect**、**adAsyncExecute**、または **adAsyncFetch** オプションを指定して呼び出されたメソッド) の実行を中止するには、**Cancel** メソッドを使用します。
 
 次の表は、特定の種類のオブジェクトに対して **Cancel** メソッドを使用したときに中止される操作です。
 

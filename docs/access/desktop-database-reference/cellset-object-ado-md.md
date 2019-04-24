@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c8cb75ad7277386cfe81b2edcffa234498318444
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296515"
 ---
 # <a name="cellset-object-ado-md"></a>Cellset オブジェクト (ADO MD)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-多次元クエリの結果を表します。キューブまたは他のセルセットから選択されたセルのコレクションになります。
+多次元クエリの結果を表します。 キューブまたは他のセルセットから選択されたセルのコレクションになります。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **Cellset** 内のデータは、直接の配列のようなアクセス方法を使用して取得できます。特定のメンバーに "ドリル ダウン" してそのメンバーに関するデータを取得できます。たとえば、次のコードは、cst というセルセットの最初の軸の最初の位置の最初のメンバーのキャプションを返します。
 

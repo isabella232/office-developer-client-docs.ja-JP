@@ -1,5 +1,5 @@
 ---
-title: ChildCount プロパティ (ADO MD)
+title: childcount プロパティ (ADO MD)
 TOCTitle: ChildCount property (ADO MD)
 ms:assetid: ff1872f0-d5f6-174e-0473-7997a462ca81
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250309(v=office.15)
@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4f8e0fc98d7868eb5462bd7d8714e1a8eda1cfcf
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296382"
 ---
-# <a name="childcount-property-ado-md"></a>ChildCount プロパティ (ADO MD)
+# <a name="childcount-property-ado-md"></a>childcount プロパティ (ADO MD)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 階層内で、現在の [Member](member-object-ado-md.md) オブジェクトが親であるメンバーの数を示します。
 
 ## <a name="return-values"></a>戻り値
 
-長整数型 ( **Long** ) の値を取得します。値の取得のみが可能です。
+長整数型 (**Long**) の値を取得します。値の取得のみが可能です。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **ChildCount** プロパティを使用して、 **Member** が持つ子の数の概算を取得します。 **Member** の子自体は、 [Children](children-property-ado-md.md) プロパティを使用して取得します。
 

@@ -1,5 +1,5 @@
 ---
-title: BeginTransComplete、CommitTransComplete、RollbackTransComplete イベント (ADO)
+title: begintranscomplete、committranscomplete、RollbackTransComplete events (ADO)
 TOCTitle: BeginTransComplete, CommitTransComplete, and RollbackTransComplete events (ADO)
 ms:assetid: 9d0ae38e-530a-7a89-a344-f3ab401c2e35
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249713(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a6f86e17a44ec0813176a023a02710fded627488
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296823"
 ---
-# <a name="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado"></a>BeginTransComplete イベント、CommitTransComplete イベント、RollbackTransComplete イベント (ADO)
+# <a name="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado"></a>begintranscomplete イベント、committranscomplete イベント、および RollbackTransComplete イベント (ADO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 これらのイベントは、[Connection](connection-object-ado.md) オブジェクトに対する関連付けられた操作の実行の終了後に呼び出されます。
 
@@ -24,26 +24,26 @@ ms.locfileid: "28702895"
 
 - **CommitTransComplete** は、 [CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) の操作が終了した後に呼び出されます。
 
-- **RollbackTransComplete** は、 [RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) の操作が終了した後に呼び出されます。
+- **RollbackTransComplete** は、[RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md) の操作が終了した後に呼び出されます。
 
 ## <a name="syntax"></a>構文
 
-BeginTransComplete*TransactionLevel*、 *pError*、 *adStatus* *pConnection*
+begintranscomplete*transactionlevel*、 ** 状態、 *adstatus*、 *pconnection*
 
-CommitTransComplete*pError*、 *adStatus*、 *pConnection*
+committranscomplete** の手順、 *adstatus*、 *pconnection*
 
-RollbackTransComplete*pError*、 *adStatus*、 *pConnection*
+RollbackTransComplete** の*状態、adstatus*、 *pconnection*
 
 ## <a name="parameters"></a>パラメーター
 
 |パラメーター|説明|
 |:--------|:----------|
-|*TransactionLevel* |長整数型 ( **Long** ) の値であり、このイベントを発生させた **BeginTrans** の新規トランザクション レベルが格納されます。|
-|*pError* |[Error](error-object-ado.md) オブジェクトです。 EventStatusEnum の値が**adStatusErrorsOccurred**の場合に発生したエラーについて説明します。それ以外の場合、設定されていません。|
-|*adStatus* |[EventStatusEnum](eventstatusenum.md)。 このパラメーターを **adStatusUnwantedEvent** に設定すると、これらのイベントから制御が戻る前に後続の通知が行われるのを防ぐことができます。|
-|*pConnection* |このイベントが発生した **Connection** オブジェクトです。|
+|*transactionlevel* |長整数型 ( **Long** ) の値であり、このイベントを発生させた **BeginTrans** の新規トランザクション レベルが格納されます。|
+|*の場合* |[Error](error-object-ado.md) オブジェクトです。 eventstatusenum の値が**adstatuserrorソケット**の場合に発生したエラーについて説明します。それ以外の場合は、設定されません。|
+|*adStatus* |[eventstatusenum](eventstatusenum.md)。 このパラメーターを **adStatusUnwantedEvent** に設定すると、これらのイベントから制御が戻る前に後続の通知が行われるのを防ぐことができます。|
+|*pconnection* |このイベントが発生した **Connection** オブジェクトです。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 Visual C++ では、複数の **Connection** が同じイベント処理メソッドを共有できます。メソッドは返された **Connection** オブジェクトを使って、どのオブジェクトがイベントを発生させたかを判別します。
 

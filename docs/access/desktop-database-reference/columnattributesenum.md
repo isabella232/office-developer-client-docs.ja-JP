@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 182fa7d7258c19d5460202ae8425a013ab7b9437
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296235"
 ---
 # <a name="columnattributesenum"></a>ColumnAttributesEnum
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [Column](column-object-adox.md) の属性を示します。
 
@@ -36,13 +36,13 @@ ms.locfileid: "28712128"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>adColFixed</strong></p></td>
-<td><p>1</p></td>
+<td><p><strong>adcolfixed</strong></p></td>
+<td><p>1-d</p></td>
 <td><p>列は、固定長です。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adColNullable</strong></p></td>
-<td><p>2</p></td>
+<td><p><strong>と</strong></p></td>
+<td><p>pbm-2</p></td>
 <td><p>列に、Null 値を含めることができます。</p></td>
 </tr>
 </tbody>

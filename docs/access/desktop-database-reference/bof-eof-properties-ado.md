@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d36a65ce8a6808f2128749bd7fbc6e468acbd279
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296788"
 ---
 # <a name="bof-eof-properties-ado"></a>BOF プロパティと EOF プロパティ (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **BOF** カレント レコードの位置が [Recordset](recordset-object-ado.md) オブジェクトの最初のレコードより前にあることを示します。
 
@@ -25,11 +25,11 @@ ms.locfileid: "28726128"
 
 ## <a name="return-value"></a>戻り値
 
-**BOF** プロパティと **EOF** プロパティは、ブール型 ( **Boolean** ) の値を返します。
+**BOF** プロパティと **EOF** プロパティは、ブール型 (**Boolean**) の値を返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**BOF** プロパティと **EOF** プロパティを使用すると、 **Recordset** オブジェクトにレコードが格納されているかどうかを調べたり、レコード間を移動したときに **Recordset** オブジェクトの範囲を越えていないかを調べたりすることができます。
+**BOF** プロパティと **EOF** プロパティを使用すると、**Recordset** オブジェクトにレコードが格納されているかどうかを調べたり、レコード間を移動したときに **Recordset** オブジェクトの範囲を越えていないかを調べたりすることができます。
 
 **BOF** プロパティは、カレント レコードの位置が先頭レコードより前にある場合に **True** (-1) を返し、カレント レコードの位置が先頭レコードにあるか、またはそれより後ろにある場合に **False** (0) を返します。
 
@@ -54,38 +54,38 @@ ms.locfileid: "28726128"
 <thead>
 <tr class="header">
 <th><p></p></th>
-<th><p>MoveFirst、<br />
+<th><p>MoveFirst<br />
 MoveLast</p></th>
-<th><p>MovePrevious、<br />
-移動&lt;0</p></th>
+<th><p>MovePrevious<br />
+移動&lt; 0</p></th>
 <th><p><br />
 Move 0</p></th>
-<th><p>MoveNext、<br />
-移動&gt;0</p></th>
+<th><p>MoveNext<br />
+移動&gt; 0</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>BOF = true の場合、</strong><br />
+<td><p><strong>BOF = True、</strong><br />
 <strong>EOF = False</strong></p></td>
 <td><p>可</p></td>
-<td><p>エラー</p></td>
-<td><p>エラー</p></td>
+<td><p>Error</p></td>
+<td><p>Error</p></td>
 <td><p>可</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>BOF = False の場合、</strong><br />
+<td><p><strong>BOF = False、</strong><br />
 <strong>EOF = True</strong></p></td>
 <td><p>可</p></td>
 <td><p>可</p></td>
-<td><p>エラー</p></td>
-<td><p>エラー</p></td>
+<td><p>Error</p></td>
+<td><p>Error</p></td>
 </tr>
 <tr class="odd">
 <td><p>両方とも <strong>True</strong></p></td>
 <td><p>エラー</p></td>
-<td><p>エラー</p></td>
-<td><p>エラー</p></td>
+<td><p>Error</p></td>
+<td><p>Error</p></td>
 <td><p>エラー</p></td>
 </tr>
 <tr class="even">
@@ -101,7 +101,7 @@ Move 0</p></th>
 
 **Move** メソッドが使用可となっている場合、そのメソッドがレコードを正常に配置できるという保証をしているわけではありません。その **Move** メソッドを呼び出してもエラーが発生しないことを意味しているだけです。
 
-次の表は、各種 **Move** メソッドを呼び出して、正常にレコードを配置できなかった場合に、 **BOF** プロパティと **EOF** プロパティの設定がどうなるかを示します。
+次の表は、各種 **Move** メソッドを呼び出して、正常にレコードを配置できなかった場合に、**BOF** プロパティと **EOF** プロパティの設定がどうなるかを示します。
 
 <table>
 <colgroup>
@@ -119,8 +119,8 @@ Move 0</p></th>
 <tbody>
 <tr class="odd">
 <td><p><strong>MoveFirst</strong>、 <strong>MoveLast</strong></p></td>
-<td><p><strong>True</strong>に設定します。</p></td>
-<td><p><strong>True</strong>に設定します。</p></td>
+<td><p><strong>True</strong> に設定</p></td>
+<td><p><strong>True</strong> に設定</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Move</strong> 0</p></td>
@@ -133,7 +133,7 @@ Move 0</p></th>
 <td><p>変化なし</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>MoveNext</strong>、<strong>移動</strong> &gt; 0</p></td>
+<td><p><strong>MoveNext</strong>、 <strong>Move</strong> &gt; 0</p></td>
 <td><p>変化なし</p></td>
 <td><p><strong>True</strong> に設定</p></td>
 </tr>

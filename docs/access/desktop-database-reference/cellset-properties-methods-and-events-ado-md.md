@@ -1,5 +1,5 @@
 ---
-title: セルセットのプロパティ、メソッド、およびイベント (ADO MD)
+title: Cellset のプロパティ、メソッド、およびイベント (ADO MD)
 TOCTitle: Properties, Methods, and Events
 ms:assetid: 7745f93c-5cc7-e6f8-143a-3470be0c1c0a
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249488(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8cb1c2774d7dc408eef85fd1303ea31f942cb3bf
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296522"
 ---
-# <a name="cellset-properties-methods-and-events-ado-md"></a>セルセットのプロパティ、メソッド、およびイベント (ADO MD)
+# <a name="cellset-properties-methods-and-events-ado-md"></a>Cellset のプロパティ、メソッド、およびイベント (ADO MD)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ## <a name="propertiescollections"></a>プロパティ/コレクション
 
@@ -26,7 +26,7 @@ ms.locfileid: "28717133"
 - [Item プロパティ (Cellset)](item-property-ado-md-cellset.md)
 - [Properties コレクション](properties-collection-ado.md)
 - [Source プロパティ](source-property-ado-md.md)
-- [状態プロパティ](state-property-ado-md.md)
+- [State プロパティ](state-property-ado-md.md)
 
 ## <a name="methods"></a>メソッド
 

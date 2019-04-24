@@ -1,5 +1,5 @@
 ---
-title: ActiveX データ オブジェクト (ADO) メソッドを閉じる
+title: Close メソッド-ActiveX データオブジェクト (ADO)
 TOCTitle: Close method (ADO)
 ms:assetid: 26a7cced-ebeb-70be-f5de-96a35711bc37
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249029(v=office.15)
@@ -8,26 +8,26 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 269a782e85fab1e5dc47cd32f2e2c11306e11470
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296312"
 ---
 # <a name="close-method-ado"></a>Close メソッド (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 開いているオブジェクトおよびそれに関連するすべてのオブジェクトを閉じます。
 
 ## <a name="syntax"></a>構文
 
-*オブジェクト*です。閉じる
+*object*.Close
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**Close** メソッドは、 [Connection](connection-object-ado.md) オブジェクト、 [Record](record-object-ado.md) オブジェクト、 [Recordset](recordset-object-ado.md) オブジェクト、または [Stream](stream-object-ado.md) オブジェクトを閉じて、関連するすべてのシステム リソースを解放する場合に使用します。 オブジェクトを閉じてもメモリからは削除されず、プロパティ設定を変更してもう一度開くことができます。 メモリからオブジェクトを完全に排除するには、オブジェクトを閉じた後、オブジェクト変数に*Nothing* (Visual Basic) でを設定します。
+**Close** メソッドは、 [Connection](connection-object-ado.md) オブジェクト、 [Record](record-object-ado.md) オブジェクト、 [Recordset](recordset-object-ado.md) オブジェクト、または [Stream](stream-object-ado.md) オブジェクトを閉じて、関連するすべてのシステム リソースを解放する場合に使用します。 オブジェクトを閉じてもメモリからは削除されず、プロパティ設定を変更してもう一度開くことができます。 オブジェクトをメモリから完全に削除するには、オブジェクトを閉じた後に、オブジェクト変数を*Nothing* (Visual Basic) に設定します。
 
 **Connection**
 

@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 04212a8bf63d5039c6548463612f006f0d116229
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301408"
 ---
 # <a name="printout-macro-action"></a>PrintOut マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**プリント アウト**のアクションを使用するには、開いているデータベースのアクティブ オブジェクトを印刷します。 データシート、レポート、フォーム、データ アクセス ページ、およびモジュールを印刷できます。
+You can use the **PrintOut** action to print the active object in the open database. You can print datasheets, reports, forms, data access pages, and modules.
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
+> このアクションは、データベースが信頼されていない場合には許可されません。 
 
 ## <a name="setting"></a>設定値
 
-**印刷**操作では、次の引数があります。
+"PrintOut/印刷" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -45,7 +45,7 @@ ms.locfileid: "28718596"
 <tbody>
 <tr class="odd">
 <td><p><strong>Print Range/印刷範囲</strong></p></td>
-<td><p>印刷する範囲。 <strong>すべて</strong>(ユーザーが印刷のすべてのオブジェクト)、<strong>選択範囲</strong>(ユーザーが選択されているオブジェクトの一部を印刷できます)、または<strong>ページ</strong>(ユーザーはページの範囲を<strong>ページから</strong><strong>ページへ</strong>の引数に指定できます) をクリックして、<strong>で印刷範囲</strong>、[マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションのボックスです。 既定値は [ <strong>すべてのレコード</strong>] です。</p></td>
+<td><p>The range to print. Click <strong>All</strong> (the user can print all of the object), <strong>Selection</strong> (the user can print the part of the object that's selected), or <strong>Pages</strong> (the user can specify a range of pages in the <strong>Page From</strong> and <strong>Page To</strong> arguments) in the <strong>Print Range</strong> box in the <strong>Action Arguments</strong> section of the Macro Builder pane. The default is <strong>All</strong>.  </p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Page From/開始ページ</strong></p></td>
@@ -65,20 +65,20 @@ ms.locfileid: "28718596"
 </tr>
 <tr class="even">
 <td><p><strong>Collate Copies/部単位で印刷</strong></p></td>
-<td><p>部単位で印刷する場合は [はい]、部単位で印刷しない場合は [いいえ] をクリックします。この引数を [いいえ] に設定すると、[はい] の場合より速く印刷できます。既定値は [はい] です。</p></td>
+<td><p>Click <strong>Yes</strong> (collate the printed copies) or <strong>No</strong> (do not collate copies). The object may print faster if this argument is set to <strong>No</strong>. The default is <strong>Yes</strong>.  </p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このアクションの動作は、オブジェクトを選択し、[ **ファイル**] タブをクリックして、[ **印刷**] をクリックした場合と同じです。ただし、このアクションを使用する場合は、[ **印刷**] ダイアログ ボックスは表示されません。
 
 > [!TIP]
-> 頻繁に使用する特定の印刷設定をした場合は、引数内のこれらの設定で**プリント アウト**のアクションを含むマクロを作成します。
+> If you have particular print settings you use frequently, create a macro containing a **PrintOut** action with these settings in its arguments.
 
-このアクションの引数は、[**印刷**] ダイアログ ボックスのオプションに対応しています。 ただし、操作を**行って** **[検索し、置換**] ダイアログ ボックスとは異なり引数の設定値とは共用されません、 **[印刷**] ダイアログ ボックスのオプションです。
+The arguments for this action correspond to options in the **Print** dialog box. However, unlike the **FindRecord** action and **Find and Replace** dialog box, the argument settings aren't shared with the **Print** dialog box options.
 
-Visual Basic for Applications (VBA) モジュールの**印刷**操作を実行するには、 **DoCmd**オブジェクトの**PrintOut**メソッドを使用します。
+To run the **PrintOut** action in a Visual Basic for Applications (VBA) module, use the **PrintOut** method of the **DoCmd** object.
 

@@ -1,5 +1,5 @@
 ---
-title: Recordset.FindLast メソッド (DAO)
+title: FindLast メソッド (DAO)
 TOCTitle: FindLast Method
 ms:assetid: 65236519-3474-a760-99bc-2e8f6bfeee7a
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195128(v=office.15)
@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 306f817779c47b48843df0fb51a023002ed88bf4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300953"
 ---
-# <a name="recordsetfindlast-method-dao"></a>Recordset.FindLast メソッド (DAO)
+# <a name="recordsetfindlast-method-dao"></a>FindLast メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ダイナセット タイプまたはスナップショット タイプの **[Recordset](recordset-object-dao.md)** オブジェクトで、指定された条件を満たす最後のレコードを検索し、そのレコードをカレント レコードにします (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。FindLast (***条件***)
+*式*。FindLast (***Criteria***)
 
-*式***レコード セット**オブジェクトを表す変数です。
+*式***Recordset**オブジェクトを表す変数を取得します。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -48,7 +48,7 @@ ms.locfileid: "28708775"
 <td><p><em>Criteria</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>String</strong></p></td>
-<td><p>レコードの検索に使用する文字列です。SQL ステートメントの WHERE 句に似ていますが、WHERE という語は付けません。</p></td>
+<td><p>レコードの検索に使用する文字列です。 SQL ステートメントの WHERE 句に似ていますが、WHERE という語は付けません。</p></td>
 </tr>
 </tbody>
 </table>
@@ -100,7 +100,7 @@ ms.locfileid: "28708775"
 </table>
 
 
-**Recordset** の末尾までデータが格納されていない状態で **FindLast** メソッドを使用すると、検索が始まる前に、Microsoft Access データベース エンジンによってレコードセットが末尾まで埋められます。
+**Recordset** の末尾までデータが格納されていない状態で **FindLast** メソッドを使用すると、検索が始まる前に、Microsoft Access データベースによってレコードセットが末尾まで埋められます。
 
 ただし、いずれかの **Find** メソッドを使用した場合と、 **Move** メソッドを使用した場合の結果は同じではありません。後者は、条件を指定せずに、最初のレコード、最後のレコード、次のレコード、または前のレコードをカレント レコードにするだけです。Find 操作の後に Move 操作を使用する場合もあります。
 
@@ -110,17 +110,17 @@ ms.locfileid: "28708775"
 
 Microsoft Access データベース エンジンに接続している ODBC データベースでダイナセット タイプの大きな **Recordset** オブジェクトを操作している場合、 **Find** メソッド、 **Sort** プロパティ、または **Filter** プロパティを使用すると、処理速度が遅いことがあります。パフォーマンスを向上するには、カスタマイズした ORDER BY 句または WHERE 句のある SQL クエリ、パラメーター クエリ、またはインデックスが作成されている特定のレコードを取得する **QueryDef** オブジェクトを使用します。
 
-日付を含むフィールドを検索するときは、米国バージョンの Microsoft Access データベース エンジンを使用していない場合でも、米国の日付形式 (month-day-year) を使用する必要があります。それ以外の日付形式を使用すると、データが検出されない場合があります。日付を変換するには、Visual Basic の **Format** 関数を使用します。次に例を示します。
+日本語版の Microsoft Access データベース エンジンを使用する場合であっても、日付が格納されたフィールドを検索するときは米国の日付形式 (month-day-year) を使用することが推奨され、使用しないとデータが検出されないことがあります。Visual Basic の **Format** 関数を使用して、日付を変換してください。次に例を示します。
 
 ```vb
     rstEmployees.FindFirst "HireDate > #" _ 
         & Format(mydate, 'm-d-yy' ) & "#" 
 ```
 
-基準は、整数以外の値に連結された文字列の作成し、システムのパラメーターは、米国以外の小数点の記号、カンマなどを指定する場合 (たとえば、strSQL ="価格\>"& lngPrice でと lngPrice = 125,50) をしようとするときにエラーが発生しました。メソッドを呼び出します。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、SQL で小数点の記号として使用できるのはピリオドのみであるためです。
+criteria が整数以外の値で連結された文字列で構成されており、システムパラメーターでコンマ以外の小数点 (例: strsql = "PRICE \> " & lngPrice, and lngPrice = 125, 50) を指定した場合は、次の操作を実行するとエラーが発生します。メソッドを呼び出します。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、Microsoft Access の SQL で小数点の記号として使用できるのはピリオドのみであるためです。
 
 > [!NOTE]
-> - 最高のパフォーマンスを*基準*する必要がありますいずれかの方法でフォーム"*フィールド* = *値*"*フィールド*が、インデックス付きのフィールド内にある基になるベース テーブル、または「*フィールド**のプレフィックス*と同じように」*フィールド*がある、*プレフィックス*と基になるベース テーブルでインデックス付きのフィールドは、プレフィックス検索文字列 (たとえば、「アート *」) です。
+> - ** 最適なパフォーマンスを得るには、*条件*が、基になるベーステーブルのインデックス付きフィールドであるか、"field LIKE *prefix*" で** あるというフォームの** "*フィールド* = *値*" である必要があります。基になるベーステーブルと*プレフィックス*のインデックスフィールドは、プレフィックス検索文字列 ("ART *" など) です。
 > - 一般に、同じような検索を行う場合は、 **Find** メソッドよりも **Seek** メソッドを使用する方がパフォーマンスが優れています。ただし、これを使用できるのは、テーブル タイプの **Recordset** オブジェクトだけを検索対象とする場合です。
 
 

@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 96ddc7fc1a93543f0eea2b42a3d423ec25a00636
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300904"
 ---
 # <a name="record-object-ado"></a>Record オブジェクト (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [Recordset](recordset-object-ado.md) オブジェクトやデータ プロバイダーの行、または、半構造化データ プロバイダーから返されるファイルやディレクトリなどのオブジェクトを表します。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **Record** オブジェクトはデータの 1 つの行を表し、1 行から成る **Recordset** に概念が似ています。プロバイダーの機能によっては、1 行から成る **Recordset** の代わりに、 **Record** オブジェクトが直接プロバイダーから返される場合があります (たとえば、1 行のみ選択する SQL クエリを実行したときなど)。また、 **Record** オブジェクトは、 **Recordset** オブジェクトから直接取得されることもあります。または、Microsoft Exchange OLE DB Provider などの半構造化データ プロバイダーから直接 **Record** オブジェクトが返される場合もあります。
 
@@ -33,12 +33,12 @@ ms.locfileid: "28721508"
 
 **Record** オブジェクトは、階層構造のデータ間を移動する手段としても使用できます。 **Record** オブジェクトを作成して、それを大規模なツリー構造の特定のサブツリーのルートにすると、新しい **Record** オブジェクトを子ノードとして開くことができます。
 
-リソース (たとえば、ファイルまたはディレクトリ) は、絶対 URL で一意に識別できます。 暗黙的に[接続](connection-object-ado.md)オブジェクトが作成され、絶対 URL を持つ**レコード**を開くと**Record**オブジェクトに設定します。 **接続**オブジェクトは、 [ActiveConnection](activeconnection-property-ado.md)プロパティを使用して**Record**オブジェクトに明示的に設定することがあります。 ファイルとディレクトリの**接続**オブジェクトを通じてアクセス可能な*コンテキスト***レコード**操作が発生する可能性を定義します。
+A resource (for example, a file or directory) can be uniquely identified by an absolute URL. A [Connection](connection-object-ado.md) object is implicitly created and set to the **Record** object when the **Record** is opened with an absolute URL. A **Connection** object may explicitly be set to the **Record** object via the [ActiveConnection](activeconnection-property-ado.md) property. **Connection**オブジェクトを使用してアクセスできるファイルとディレクトリは、 **Record**操作が発生する可能性がある*コンテキスト*を定義します。
 
 データを変更または移動する **Record** オブジェクトのメソッドでは相対 URL も利用でき、相対 URL では、絶対 URL または **Connection** オブジェクト コンテキストを起点としてリソースを検索します。
 
 > [!NOTE]
-> [!メモ] http スキームを使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、[絶対と相対 Url](absolute-and-relative-urls.md)を参照してください。
+> [!メモ] http スキームを使用している URL は、[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) を自動的に呼び出します。 詳細については、「[絶対 url と相対 url](absolute-and-relative-urls.md)」を参照してください。
 
 
 
@@ -56,9 +56,9 @@ ms.locfileid: "28721508"
 
   - **Source** プロパティを使用して、 **Record** の派生元となる絶対 URL、相対 URL、または [Recordset](source-property-ado-record.md) を示すことができます。
 
-  - **State** プロパティを使用して、 [Record](state-property-ado.md) の現在のステータスを示すことができます。
+  - [State](state-property-ado.md) プロパティを使用して、**Record** の現在のステータスを示すことができます。
 
-  - **レコード**の種類を示す、*単純な**コレクション*、または*構造化されたドキュメント*: [RecordType](recordtype-property-ado.md)プロパティを使用して。
+  - [RecordType](recordtype-property-ado.md)プロパティを使用して、**レコード**の種類 (*単純*、*コレクション*、または*構造化ドキュメント*) を指定します。
 
   - [Cancel](cancel-method-ado.md) メソッドを使用して、非同期操作の実行を停止できます。
 

@@ -1,5 +1,5 @@
 ---
-title: Recordset2.AddNew メソッド (DAO)
+title: Recordset2 メソッド (DAO)
 TOCTitle: AddNew Method
 ms:assetid: 25c7d207-185c-943b-405e-b138ffb8b3e2
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff191874(v=office.15)
@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 49a69b5e8603e72faaba480ea9069d3668bd6de1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307498"
 ---
-# <a name="recordset2addnew-method-dao"></a>Recordset2.AddNew メソッド (DAO)
+# <a name="recordset2addnew-method-dao"></a>Recordset2 メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
  
 更新可能な **Recordset2** オブジェクトの新しいレコードを作成します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。AddNew
+*式*。AddNew
 
-*式***Recordset2**オブジェクトを表す変数です。
+*式***Recordset2**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
@@ -49,7 +49,7 @@ ms.locfileid: "28699346"
 **AddNew** を使用する前にカレント レコードであったレコードは、そのままカレント レコードとなります。新しいレコードをカレント レコードにするには、 **[Bookmark](recordset2-bookmark-property-dao.md)** プロパティを **[LastModified](recordset2-lastmodified-property-dao.md)** プロパティの設定で指定されたブックマークに設定します。
 
 > [!NOTE]
-> [!メモ] レコードを追加、編集、削除するには、基になるデータ ソースのレコードに一意のインデックスが存在している必要があります。一意のインデックスが存在しない場合、Microsoft Access ワークスペースでは **AddNew** 、 **Delete** 、または **Edit** メソッドを呼び出したときに "アクセスが拒否されました。" のエラーが発生します。
+> [!メモ] レコードを追加、編集、削除するには、基になるデータ ソースのレコードに一意なインデックスが存在している必要があります。一意なインデックスが存在しない場合、Microsoft Access ワークスペースでは **AddNew**、 **Delete**、または **Edit** メソッドを呼び出したときに "アクセスが拒否されました。" のエラーが発生します。
 
 ## <a name="example"></a>例
 

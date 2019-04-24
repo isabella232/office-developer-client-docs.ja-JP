@@ -1,5 +1,5 @@
 ---
-title: プロバイダー エラー (アクセス デスクトップ データベース参照)
+title: プロバイダーエラー (Access デスクトップデータベースリファレンス)
 TOCTitle: Provider errors
 ms:assetid: 9c39d450-6e67-b2fd-aeb5-849e6b65fd54
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249710(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: d175cdaa007a354d12304dceff0352a923de2291
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301128"
 ---
 # <a name="provider-errors"></a>プロバイダー エラー
 
 
-**適用されます**Access 2013、Office 2013。 
+**適用先:** Access 2013、Office 2013 
 
 プロバイダー エラーが発生すると、実行時エラー -2147467259 が返されます。このエラーを受け取った場合は、アクティブな **Connection** オブジェクトの、処理の内容を表す 1 つ以上のエラーが含まれる **Errors** コレクションを調べます。
 
@@ -62,7 +62,7 @@ End Function
 
 ## <a name="the-error-object"></a>Error オブジェクト
 
-**Error** オブジェクトを調べると、発生したエラーの種類を特定し、さらにエラーの原因になったアプリケーションまたはオブジェクトを特定できます。 **Error** オブジェクトのプロパティは、次のとおりです。
+**Error** オブジェクトを調べると、発生したエラーの種類を特定し、さらにエラーの原因になったアプリケーションまたはオブジェクトを特定できます。**Error** オブジェクトのプロパティは、次のとおりです。
 
 <table>
 <colgroup>
@@ -77,15 +77,15 @@ End Function
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Description</strong></p></td>
+<td><p><strong>説明</strong></p></td>
 <td><p>発生したエラーを説明するテキストです。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>HelpContext、HelpFile</strong></p></td>
+<td><p><strong>helpcontext、HelpFile</strong></p></td>
 <td><p>発生したエラーの説明を含むヘルプ トピックとヘルプ ファイルを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>以下</strong></p></td>
+<td><p><strong>NativeError</strong></p></td>
 <td><p>プロバイダー固有のエラー番号です。</p></td>
 </tr>
 <tr class="even">
@@ -104,7 +104,7 @@ End Function
 </table>
 
 
-ADO **Error** オブジェクトは、標準の Visual Basic **Err** オブジェクトによく似ています。発生したエラーの情報は、プロパティによって表されます。エラーの番号以外に、2 種類の関連情報も返されます。 **NativeError** プロパティには、使用しているプロバイダーに固有のエラー番号が格納されます。前の例では、プロバイダーは Microsoft OLE DB Provider for SQL Server であるため、 **NativeError** には SQL Server に固有のエラーが格納されます。 **SQLState** プロパティには、SQL ステートメント内のエラーを示す 5 桁のコードが設定されます。
+ADO **Error** オブジェクトは、標準の Visual Basic **Err** オブジェクトによく似ています。発生したエラーの情報は、プロパティによって表されます。エラーの番号以外に、2 種類の関連情報も返されます。**NativeError** プロパティには、使用しているプロバイダーに固有のエラー番号が格納されます。前の例では、プロバイダーは Microsoft OLE DB Provider for SQL Server であるため、**NativeError** には SQL Server に固有のエラーが格納されます。**SQLState** プロパティには、SQL ステートメント内のエラーを示す 5 桁のコードが設定されます。
 
 ## <a name="event-related-errors"></a>イベント関連エラー
 

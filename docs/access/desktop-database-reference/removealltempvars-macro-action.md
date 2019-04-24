@@ -12,37 +12,37 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: eade809a6e3982dc0dc4cf94ae382af72e8f454e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306798"
 ---
 # <a name="removealltempvars-macro-action"></a>RemoveAllTempVars マクロ アクション
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
-**SetTempVar**アクションを使用して作成したすべての一時変数を削除するのには**RemoveAllTempVars**アクションを使用することができます。
+"RemoveAllTempVars/すべての一時変数の削除" アクションは、"SetTempVar/一時変数の設定" アクションを使用して作成したすべての一時変数を削除するために使用します。
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**RemoveAllTempVars**アクションの引数ではありません。
+"RemoveAllTempVars/すべての一時変数の削除" アクションには、引数はありません。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
   - 一度に定義しておくことのできる一時変数は、最大 255 個です。一時変数は、削除しなければ、データベースまたはプロジェクトを閉じるまでメモリに残ったままとなります。不要となった一時変数は削除することをお勧めします。
 
   - データベースまたはプロジェクトを閉じると、すべての一時変数が自動的に削除されます。
 
-  - 1 つの一時変数を削除するに**RemoveTempVar**アクションを使用して、その引数を削除する一時変数の名前に設定します。
+  - To remove a single temporary variable, use the **RemoveTempVar** action and set its argument to the name of the temporary variable you want to remove.
 
-  - VBA モジュールで**RemoveAllTempVars**アクションを実行するには、**一時変数**オブジェクトの**RemoveAll**メソッドを使用します。
+  - To run the **RemoveAllTempVars** action in a VBA module, use the **RemoveAll** method of the **TempVars** object.
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
-次のマクロでは、一時変数を作成し、条件とメッセージ ボックスで使用して、 **RemoveAllTempVars**アクションを使用して一時変数を削除する方法を示します。
+The following macro demonstrates how to create a temporary variable, use it in a condition and a message box, and then remove the temporary variable by using the **RemoveAllTempVars** action.
 
 <table>
 <colgroup>
@@ -61,12 +61,12 @@ ms.locfileid: "28705079"
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>SetTempVar</strong></p></td>
-<td><p><strong>名前</strong>: MyVar<strong>式</strong>: InputBox (&quot;、0 以外の数値を入力してください&quot;)。</p></td>
+<td><p><strong>名前</strong>: MyVar<strong>Expression</strong>: InputBox (&quot;0 以外の数値を入力し&quot;ます。)</p></td>
 </tr>
 <tr class="even">
 <td><p>[TempVars]![MyVar]&lt;&gt;0</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>メッセージ</strong>: =&quot;を入力する&quot; &amp; [一時変数]![MyVar]&amp; &quot;.&quot;<strong>ビープ音を鳴らす</strong>: <strong>YesType</strong>:<strong>情報</strong></p></td>
+<td><p><strong>メッセージ</strong>: =&quot;入力&quot; &amp;した [TempVars]!MyVar&amp; &quot;.&quot;<strong>警告音</strong>: <strong>yestype</strong>:<strong>情報</strong></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>

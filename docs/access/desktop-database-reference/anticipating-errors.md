@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c4bd130ca05527c7761ca587781c1fd4f939ebe9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297173"
 ---
 # <a name="anticipating-errors"></a>エラーの予測
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 エラーの防止は、エラーの処理以上に重要です。この最後のセクションでは、エラーが発生する可能性を抑えるために、アプリケーションで実現可能な予防策の一部を示します。
 

@@ -1,5 +1,5 @@
 ---
-title: クエリ定義のメンバー (DAO)
+title: クエリ定義メンバー (DAO)
 TOCTitle: QueryDefs Members
 ms:assetid: d178fa87-cf01-cb5b-357d-45d8b4e1b0ed
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834754(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e5f77697bbf0f9231500f325545c0e6ccd9c45fe
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301023"
 ---
-# <a name="querydefs-members-dao"></a>クエリ定義のメンバー (DAO)
+# <a name="querydefs-members-dao"></a>クエリ定義メンバー (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 QueryDefs コレクションには、Microsoft Access データベース エンジン データベースの Database オブジェクトのすべての QueryDef オブジェクトが含まれます。
 
@@ -67,7 +67,7 @@ QueryDefs コレクションには、Microsoft Access データベース エン�
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="querydefs-count-property-dao.md">Count</a></strong></p></td>
-<td><p>指定したコレクション内のオブジェクトの数を取得します。値の取得のみ可能です。</p></td>
+<td><p>指定したコレクション内のオブジェクトの数を取得します。 値の取得のみ可能です。</p></td>
 </tr>
 </tbody>
 </table>

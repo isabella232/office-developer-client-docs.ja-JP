@@ -12,20 +12,20 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: e7bf54934c6be215b2be5f32160d74fc2b4ab346
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306840"
 ---
 # <a name="runapplication-macro-action"></a>RunApplication マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 <table>
 <thead>
 <tr class="header">
-<th><img src="media/access-alert-security.gif" title="セキュリティに関する注意" alt="Security note" /><strong>セキュリティ メモ</strong></th>
+<th><img src="media/access-alert-security.gif" title="セキュリティ メモ" alt="Security note" /><strong>セキュリティに関するメモ</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -35,14 +35,14 @@ ms.locfileid: "28721788"
 </tbody>
 </table>
 
-**RunApplication**アクションを使用すると、Microsoft access から Microsoft Excel、Word、または Microsoft PowerPoint など、Windows ベースまたは ms-dos アプリケーションを実行します。 たとえば、Excel スプレッドシートのデータを Access データベースに貼り付ける可能性があります。
+You can use the **RunApplication** action to run a Microsoft Windows-based or MS-DOS-based application, such as Microsoft Excel, Microsoft Word, or Microsoft PowerPoint, from within Microsoft Access. For example, you may want to paste Excel spreadsheet data into your Access database.
 
 > [!NOTE]
-> [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
+> このアクションは、データベースが信頼されていない場合には許可されません。 
 
 ## <a name="setting"></a>設定値
 
-**RunApplication**アクションには、次の引数があります。
+"RunApplication/アプリケーションの実行" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -64,15 +64,15 @@ ms.locfileid: "28721788"
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このアクションで指定したアプリケーションは、画面の一番手前で起動します。このアクションが定義されているマクロは、アプリケーションの起動後も継続して実行されます。
 
-他のアプリケーションと Access の間でデータを転送するには、Windows のダイナミック データ エクス (チェンジ DDE) 機能やクリップボードを使用します。 **"キー送信"** アクションを使用すると、(ただし、DDE は、データを転送するためのより効率的な方法です)、その他のアプリケーションにキーストロークを送信します。 オートメーションを使用してアプリケーション間でデータを共有することもできます。
+You can transfer data between the other application and Access by using the Microsoft Windows dynamic data exchange (DDE) facility or the Clipboard. You can use the **SendKeys** action to send keystrokes to the other application (although DDE is a more efficient method for transferring data). You can also share data among applications by using automation.
 
 MS-DOS ベースのアプリケーションは、Windows 環境の MS-DOS ウィンドウで実行します。
 
 Windows オペレーティング システムでは、エクスプローラーからプログラムを起動する方法、[ **スタート**] メニューの [ **ファイル名を指定して実行**] コマンドを使用する方法、Windows のデスクトップでプログラム アイコンをダブルクリックする方法など、さまざまな方法でアプリケーションを実行できます。
 
-Visual Basic for Applications (VBA) モジュールでは、 **RunApplication**アクションを実行することはできません。 VBA **Shell**関数を使用してください。
+You can't run the **RunApplication** action in a Visual Basic for Applications (VBA) module. Use the VBA **Shell** function instead.
 

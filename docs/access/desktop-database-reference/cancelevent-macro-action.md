@@ -12,29 +12,29 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: b55fc51f70bcc2c9d2f7e93cf9c79228cd2fe440
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296634"
 ---
 # <a name="cancelevent-macro-action"></a>CancelEvent マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 " **CancelEvent/イベントのキャンセル** " アクションを使用して、このアクションが定義されたマクロが Access で実行される原因となったイベントを取り消すことができます。" **BeforeUpdate/更新前処理** "、" **OnOpen/開く時** "、" **OnUnload/読み込み解除時** "、" **OnPrint/印刷時** " などのイベント プロパティに、このマクロ名を設定します。
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**モーダル**引数はありません。
+"CancelEvent/イベントのキャンセル" アクションには、引数はありません。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-フォームでは、通常に、 **BeforeUpdate**イベントのプロパティに入力検査マクロで**イベントのキャンセル**操作を使用します。 コントロールまたはレコードにデータを入力すると、ときに、データベースにデータを追加する前にマクロが実行されます。 データには、マクロの入力検査の条件が失敗した場合、**イベントのキャンセル**操作は、開始する前に更新処理をキャンセルします。
+In a form, you typically use the **CancelEvent** action in a validation macro with the **BeforeUpdate** event property. When a user enters data in a control or record, Access runs the macro before adding the data to the database. If the data fails the validation conditions in the macro, the **CancelEvent** action cancels the update process before it starts.
 
-多くの場合、アクションを使用するこのアクションが**メッセージ ボックス**で、データの入力検査の条件が失敗したことを示すために、入力されるデータの種類に関する有用な情報を提供します。
+Often, you use this action with the **MessageBox** action to indicate that the data has failed the validation conditions and to provide helpful information about the kind of data that should be entered.
 
-次のイベントは、**イベントのキャンセル**操作をキャンセルできます。
+The following events can be canceled by the **CancelEvent** action.
 
 <table>
 <colgroup>
@@ -77,22 +77,22 @@ ms.locfileid: "28710175"
 </table>
 
 > [!NOTE]
-> **MouseDown**イベントと**イベントのキャンセル**操作を使用するにはオブジェクトを右クリックしたときに発生するイベントをキャンセルするだけです。
+> You can use the **CancelEvent** action with the **MouseDown** event only to cancel the event that occurs when you right-click an object.
 
-コントロールの**OnDblClick**イベント プロパティの設定は、**イベントのキャンセル**操作を含むマクロを指定する場合、アクションは、 **DblClick**イベントをキャンセルします。
+If a control's **OnDblClick** event property setting specifies a macro containing the **CancelEvent** action, the action cancels the **DblClick** event.
 
 取り消し可能なイベントでは、イベントのマクロが実行された後に、イベントの既定の動作 (イベント発生時の通常の動作) が実行されます。したがって、既定の動作を取り消すことができます。たとえば、テキスト ボックスでカーソル位置にある単語をダブルクリックすると、通常は、その単語が選択されます。 **DblClick** イベントのマクロで、この既定の動作を取り消し、テキスト ボックスのデータに関する情報を表示するフォームを開くなどの別のアクションを実行することができます。取り消し不可能なイベントでは、イベントのマクロが実行される前に、既定の動作が実行されます。
 
 > [!NOTE]
-> フォームの**OnUnload**イベント プロパティは、**イベントのキャンセル**操作を実行するマクロを指定する場合、フォームを閉じることはできません。 **イベントのキャンセル**操作を実行するか、マクロを開くし、**イベントのキャンセル**操作を削除する原因となった条件を修正する必要がありますか。 フォームがモーダル フォームの場合は、マクロを開くことはできません。
+> If a form's **OnUnload** event property specifies a macro that carries out a **CancelEvent** action, you won't be able to close the form. You must either correct the condition that caused the **CancelEvent** action to be carried out or open the macro and delete the **CancelEvent** action. If the form is a modal form, you won't be able to open the macro.
 
-アクションを実行するには、**イベントのキャンセル**Visual Basic for Applications (VBA) のモジュールで、 **DoCmd**オブジェクトの**CancelEvent**メソッドを使用します。
+To carry out the **CancelEvent** action in a Visual Basic for Applications (VBA) module, use the **CancelEvent** method of the **DoCmd** object.
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 マクロによるデータの入力検査
 
-次の入力検査マクロでは、"仕入先" フォームで入力された郵便番号を確認します。 このマクロでは、" **StopMacro/マクロの中止** "、" **MessageBox/メッセージボックス** "、" **CancelEvent/イベントのキャンセル** "、および " **GoToControl/コントロールの移動** " の各アクションの使い方を示します。 条件式では、フォームのレコードに入力された都道府県と郵便番号を確認します。 都道府県に対して郵便番号が正しく入力されていない場合、マクロはメッセージ ボックスを表示して、レコードの保存を取り消します。 これは、し、郵便番号] コントロールに戻り、エラーを修正することができます。 このマクロは "仕入先" フォームの " **BeforeUpdate/更新前処理** " プロパティに設定します。
+次の入力検査マクロでは、"仕入先" フォームで入力された郵便番号を確認します。このマクロでは、"StopMacro/マクロの中止"、"MessageBox/メッセージボックス"、"CancelEvent/イベントのキャンセル"、および "GoToControl/コントロールの移動" の各アクションの使い方を示します。条件式では、フォームのレコードに入力された都道府県と郵便番号を確認します。都道府県に対して郵便番号が正しく入力されていない場合、マクロはメッセージ ボックスを表示して、レコードの保存を取り消します。その後、[郵便番号] コントロールに戻り、エラーを修正することができます。このマクロは "仕入先" フォームの "BeforeUpdate/更新前処理" プロパティに設定します。
 
 <table>
 <colgroup>
@@ -106,18 +106,18 @@ ms.locfileid: "28710175"
 <th><p>条件</p></th>
 <th><p>アクション</p></th>
 <th><p>引数: 設定値</p></th>
-<th><p>コメント</p></th>
+<th><p>Comment</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>IsNull([CountryRegion])</p></td>
+<td><p>IsNull ([都道府県])</p></td>
 <td><p>StopMacro</p></td>
 <td><p></p></td>
-<td><p>[都道府県] が<strong>Null</strong>の場合は、郵便番号を検証できません。</p></td>
+<td><p>If CountryRegion is <strong>Null</strong>, postal code can't be validated.</p></td>
 </tr>
 <tr class="even">
-<td><p>[都道府県](&quot;フランス&quot;、&quot;イタリア&quot;、&quot;スペイン&quot;) と Len ([郵便番号]) &lt; &gt; 5</p></td>
+<td><p>地域In (&quot;フランス&quot;、&quot;イタリア&quot;、&quot;スペイン&quot;) および Len ([郵便番号]) &lt; &gt; 5</p></td>
 <td><p>MessageBox</p></td>
 <td><p>"Message/メッセージ": 郵便番号は 7 文字である必要があります。 "Beep/警告音": <strong>はい</strong> Type/メッセージの種類: <strong>情報</strong> Title/メッセージ タイトル: 郵便番号エラー  </p></td>
 <td><p>郵便番号が 7 文字でない場合にメッセージを表示します。</p></td>
@@ -135,7 +135,7 @@ ms.locfileid: "28710175"
 <td><p></p></td>
 </tr>
 <tr class="odd">
-<td><p>[都道府県](&quot;オーストラリア&quot;、&quot;シンガポール&quot;) と Len ([郵便番号]) &lt; &gt; 4</p></td>
+<td><p>地域In (&quot;オーストラリア&quot;、&quot;シンガポール&quot;) および Len ([郵便番号]) &lt; &gt; 4</p></td>
 <td><p>MessageBox</p></td>
 <td><p>"Message/メッセージ": 郵便番号は 7 文字である必要があります。 "Beep/警告音": <strong>はい</strong> Type/メッセージの種類: <strong>情報</strong> Title/メッセージ タイトル: 郵便番号エラー  </p></td>
 <td><p>郵便番号が 7 文字でない場合にメッセージを表示します。</p></td>
@@ -153,7 +153,7 @@ ms.locfileid: "28710175"
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>([都道府県] =&quot;カナダ&quot;)([郵便番号] が気に入らない&quot;[A-Z] [0-9] [A-Z] [0-9] [A-Z] [0-9]&quot;)</p></td>
+<td><p>([都道府県] = &quot;カナダ&quot;)And ([郵便番号] Not Like&quot;[0-9] [0-9] [0-9] [0-9] ([a-z] [0-9]&quot;)</p></td>
 <td><p>MessageBox</p></td>
 <td><p>"Message/メッセージ": 郵便番号が無効です。たとえば、広島県の郵便番号の上 3 桁は 720 ～ 739 です。 Beep/警告音: <strong>はい</strong> Type/メッセージの種類: <strong>情報</strong> Title/メッセージ タイトル: 郵便番号エラー  </p></td>
 <td><p>[都道府県] が広島県で、郵便番号の上 3 桁が 720 ～ 739 でない場合にメッセージを表示します。</p></td>

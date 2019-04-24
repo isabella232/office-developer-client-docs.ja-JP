@@ -12,28 +12,28 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: f524a544736f68bcfa6bd15e3bcc720ffa2bc4d6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297215"
 ---
 # <a name="after-delete-macro-event"></a>After Delete マクロ イベント
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**後 Delete**イベントは、レコードが削除された後に発生します。
+The **After Delete** event occurs after a record is deleted.
 
 > [!NOTE]
-> **削除した後**のイベントは、データ マクロでのみ使用可能です。
+> After Delete イベントは、データ マクロでのみ使用できます。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-レコードが削除されるときに発生する操作を実行**した後は、Delete**イベントを使用します。 **後を削除**するための一般的な使用法には、ビジネス ルール、ワークフローを強制すること、回数の集計の更新通知を送信するなどがあります。
+After Delete イベントでは、レコードを削除したときに特定のアクションを実行します。通常は、ビジネス ルールやワークフローの実行、総計の更新、通知の送信などを行います。
 
-**後 Delete**イベントが発生すると削除されたレコードに含まれている値を利用できます。 増分または減分の合計、監査証跡を作成または*WhereCondition*引数の既存の値と比較して、削除する値を使用することがあります。
+When the **After Delete** event occurs, the values contained in the deleted record are still available. 削除された値を使用して合計を増減したり、監査トレールを作成したり、 *WhereCondition*引数の既存の値と比較したりすることができます。
 
-**更新 (以下「*フィールド名*」)** 関数を使用すると、フィールドが変更されたかどうかを判断します。 コード例を次に示します If を使用する方法を決定する staement では、PaidInFull フィールドが変更されたかどうかを確認します。
+**Updated ("*Field Name*")** 関数を使用して、フィールドが変更されたかどうかを調べることができます。 The following code example shows how to use an If staement to determine determine whether the PaidInFull field has been changed.
 
 ```vb 
  
@@ -53,9 +53,9 @@ End If
 
 `[Old].[QuantityInStock]`
 
-**削除した後**のイベントが終了したとき、削除されたレコードに含まれている値が完全に削除します。
+The values contained in the deleted record are deleted permanently when the **After Delete** event ends.
 
-**削除した後**のイベントでは、次のマクロ コマンドを使用できます。
+次のマクロコマンドは、 **After Delete**イベントで使用できます。
 
 <table>
 <colgroup>
@@ -65,7 +65,7 @@ End If
 <thead>
 <tr class="header">
 <th><p>コマンドの種類</p></th>
-<th><p>コマンド</p></th>
+<th><p>Command</p></th>
 </tr>
 </thead>
 <tbody>
@@ -83,19 +83,19 @@ End If
 </tr>
 <tr class="even">
 <td><p>データ ブロック</p></td>
-<td><p><a href="createrecord-data-block.md">CreateRecord マクロ アクション</a></p></td>
+<td><p><a href="createrecord-data-block.md">CreateRecord マクロアクション</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>データ ブロック</p></td>
-<td><p><a href="editrecord-data-block.md">EditRecord マクロ アクション</a></p></td>
+<td><p><a href="editrecord-data-block.md">"レコードの操作" マクロアクション</a></p></td>
 </tr>
 <tr class="even">
 <td><p>データ ブロック</p></td>
-<td><p><a href="foreachrecord-data-block.md">ForEachRecord マクロ アクション</a></p></td>
+<td><p><a href="foreachrecord-data-block.md">ForEachRecord マクロアクション</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>データ ブロック</p></td>
-<td><p><a href="lookuprecord-data-block.md">不一致データのブロック</a></p></td>
+<td><p><a href="lookuprecord-data-block.md">LookupRecord データブロック</a></p></td>
 </tr>
 <tr class="even">
 <td><p>データ アクション</p></td>
@@ -153,25 +153,25 @@ End If
 </table>
 
 
-**削除した後**のイベントをキャプチャするデータ マクロを作成するには、次の手順を使用します。
+After Delete イベントをキャプチャするデータ マクロを作成するには、次の手順に従います。
 
-1.  **削除**イベントをキャプチャするテーブルを開きます。
+1.  After Delete イベントをキャプチャするテーブルを開きます。
 
-2.  [ **テーブル**] タブの [ **イベント後**] で、[ **削除後処理**] をクリックします。
+2.  [**テーブル**] タブの [**イベント後**] で、[**削除後処理**] をクリックします。
 
 空のデータ マクロがマクロ デザイナーに表示されます。
 
 ## <a name="example"></a>例
 
-次のコード例では、寄付のテーブルからレコードが削除されたときに、いくつか処理を実行するのに**後削除**イベントを使用します。 レコードを削除すると、寄付の金額は、DonationsReceived テーブル内のフィールド、DonationsReceived、寄付金提供者の表に TotalDonatedField の subracted フォームです。
+次のコード例では、After Delete イベントを使用して、Donations テーブルからレコードを削除したときに特定の処理を実行します。 レコードが削除されると、寄付の金額は、DonationsReceived テーブルの DonationsReceived フィールドと、[寄付] テーブル内の TotalDonatedField の値になります。
 
-**マクロ デザイナーに貼り付けることができるマクロのコピーを表示するのにはここをクリックします。**
+**Click here to view a copy of the macro that you can paste into Macro Designer.**
 
 この例をマクロ デザイナーで表示するには、次の手順に従います。
 
-1.  **削除**イベントをキャプチャするテーブルを開きます。
+1.  After Delete イベントをキャプチャするテーブルを開きます。
 
-2.  [ **テーブル**] タブの [ **イベント後**] で、[ **削除後処理**] をクリックします。
+2.  [**テーブル**] タブの [**イベント後**] で、[**削除後処理**] をクリックします。
 
 3.  以下のコードを選択して、Ctrl キーを押しながら C キーを押して、クリップボードにコピーします。
 

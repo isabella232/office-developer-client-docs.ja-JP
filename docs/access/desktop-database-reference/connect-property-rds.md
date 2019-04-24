@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 42e7dd643985cee9aef8887099eb90dcdb381f4e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295983"
 ---
 # <a name="connect-property-rds"></a>Connect プロパティ (RDS)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 クエリおよび更新操作が実行されるデータベース名を示します。
 
@@ -24,14 +24,14 @@ ms.locfileid: "28706738"
 
 ## <a name="syntax"></a>構文
 
-デザイン時:\<パラメーターの名前 [接続] の値を = =「接続文字列」\>
+デザイン時: \<パラメーター名 = "Connect" VALUE = "ConnectionString"\>
 
-実行時間: DataControl.Connect =「接続文字列」
+実行時間: DataControl = "ConnectionString"
 
 ## <a name="parameters"></a>パラメーター
 
 |パラメーター|説明|
 |:--------|:----------|
-|*ConnectionString* |有効な接続文字列を指定します。接続文字列全般の説明については、[ConnectionString](connectionstring-property-ado.md) プロパティかプロバイダーのマニュアルを参照してください。<br/><br/>**注**: rds. の**のプロバイダーとして MS Remote を指定します。DataControl** 4 層のシナリオを作成します。 3 層を超えるシナリオについては未確認なので避けてください。|
-|*DataControl* |**RDS.DataControl** オブジェクトを表すオブジェクト変数を指定します。|
+|*ConnectionString* |有効な接続文字列を指定します。接続文字列全般の説明については、[ConnectionString](connectionstring-property-ado.md) プロパティかプロバイダーのマニュアルを参照してください。<br/><br/>**注**: MS Remote を RDS のプロバイダーとして指定し**ます。DataControl**は、4層のシナリオを作成します。 3 層を超えるシナリオについては未確認なので避けてください。|
+|*DataControl* |**RDS.DataControl** オブジェクトを表すオブジェクト変数。|
 

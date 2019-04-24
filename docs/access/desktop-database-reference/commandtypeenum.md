@@ -1,5 +1,5 @@
 ---
-title: CommandTypeEnum (デスクトップ データベース参照のアクセス)
+title: commandtypeenum (Access デスクトップデータベースリファレンス)
 TOCTitle: CommandTypeEnum
 ms:assetid: 9ad8f155-88a0-00eb-2855-1e1a2a677437
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249700(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a9114128771d4753265208dada763ac0c9f796d1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296116"
 ---
 # <a name="commandtypeenum"></a>CommandTypeEnum
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 コマンド引数の解釈方法を表します。
 
@@ -37,28 +37,28 @@ ms.locfileid: "28714277"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>adCmdUnspecified</strong></p></td>
+<td><p><strong>adcmdunspecified</strong></p></td>
 <td><p>-1</p></td>
 <td><p>コマンドの種類の引数を指定しません。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adCmdText</strong></p></td>
-<td><p>1</p></td>
+<td><p><strong>adcmdtext で</strong></p></td>
+<td><p>1-d</p></td>
 <td><p><a href="commandtext-property-ado.md">CommandText</a> を、コマンドまたはストアド プロシージャのテキスト定義として評価します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adCmdTable</strong></p></td>
-<td><p>2</p></td>
+<td><p><strong>adcmdtable</strong></p></td>
+<td><p>pbm-2</p></td>
 <td><p><strong>CommandText</strong> を、内部的に生成された SQL クエリから返された列のみで構成されるテーブル名として評価します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adCmdStoredProc</strong></p></td>
-<td><p>4</p></td>
+<td><p>2/4</p></td>
 <td><p><strong>CommandText</strong> をストアド プロシージャ名として評価します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adCmdUnknown</strong></p></td>
-<td><p>8</p></td>
+<td><p><strong>adcmdunknown</strong></p></td>
+<td><p>~</p></td>
 <td><p>既定値。<strong>CommandText</strong> プロパティのコマンドの種類が不明であることを示します。</p></td>
 </tr>
 <tr class="even">
@@ -69,13 +69,13 @@ ms.locfileid: "28714277"
 <tr class="odd">
 <td><p><strong>adCmdTableDirect</strong></p></td>
 <td><p>512</p></td>
-<td><p><strong>CommandText</strong>を指定された列は、返されたすべてのテーブル名として評価します。 <strong>Recordset.Open</strong>または<strong>Requery</strong>とのみに使用します。 <a href="seek-method-ado.md">Seek</a>メソッドを使用するには、 <strong>adCmdTableDirect</strong>に<strong>レコード セット</strong>を開く必要があります。 この値は、<a href="executeoptionenum.md">ExecuteOptionEnum</a> の値 <strong>adAsyncExecute</strong> と組み合わせて使用できません。</p></td>
+<td><p><strong>CommandText</strong> を、すべての列が返されたテーブル名として評価します。 <strong>Recordset.Open</strong> または <strong>Requery</strong> と組み合わせてのみ使用できます。 <a href="seek-method-ado.md">Seek</a> メソッドを使用する場合、<strong>Recordset</strong> は <strong>adCmdTableDirect</strong> を指定して開く必要があります。 この値は、<a href="executeoptionenum.md">ExecuteOptionEnum</a> の値 <strong>adAsyncExecute</strong> と組み合わせて使用できません。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC に相当
+### <a name="adowfc-equivalent"></a>ADO/WFC と同等
 
 パッケージ: **com.ms.wfc.data**
 
@@ -90,25 +90,25 @@ ms.locfileid: "28714277"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums.CommandType.UNSPECIFIED</p></td>
+<td><p>AdoEnums</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.CommandType.TEXT</p></td>
+<td><p>AdoEnums</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.CommandType.TABLE</p></td>
+<td><p>AdoEnums</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.CommandType.STOREDPROC</p></td>
+<td><p>AdoEnums STOREDPROC</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.CommandType.UNKNOWN</p></td>
+<td><p>AdoEnums</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums.CommandType.FILE</p></td>
+<td><p>AdoEnums</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums.CommandType.TABLEDIRECT</p></td>
+<td><p>AdoEnums 直接</p></td>
 </tr>
 </tbody>
 </table>
