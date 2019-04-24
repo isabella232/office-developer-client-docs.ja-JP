@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b977fc4273068ac52efe8960761a9e28a6234e2e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314071"
 ---
 # <a name="understanding-the-customization-file"></a>カスタマイズ ファイルの概要
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-カスタマイズ ファイルの各セクション ヘッダーは、角かっこで構成されています (**\[**) の種類とパラメーターが含まれています。 4 つのセクションの種類は、リテラル文字列は、**接続**を、 **sql**、 **userlist**、または**ログ**が表示されます。 パラメーターは、リテラル文字列、既定値、ユーザー指定の識別子、または何もです。
+カスタマイズファイルの各セクションヘッダーは、type と parameter を**\[** 含む角かっこ () で構成されています。 4つのセクションの種類は、リテラル文字列**connect**、 **sql**、 **userlist**、または**logs**で示されます。 パラメーターは、リテラル文字列、既定値、ユーザー指定の識別子、または何も指定されていません。
 
 つまり、各セクションは以下のセクション ヘッダーのいずれかで示されます。
 
@@ -42,13 +42,13 @@ ms.locfileid: "28721886"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>引数</p></th>
+<th><p>パーツ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>connect</strong></p></td>
+<td><p><strong>結び付ける</strong></p></td>
 <td><p>接続文字列を変更するリテラル文字列です。</p></td>
 </tr>
 <tr class="even">
@@ -60,7 +60,7 @@ ms.locfileid: "28721886"
 <td><p>特定のユーザーのアクセス権を変更するリテラル文字列です。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>logs</strong></p></td>
+<td><p><strong>ログ</strong></p></td>
 <td><p>操作エラーを記録するログ ファイルを指定するリテラル文字列です。</p></td>
 </tr>
 <tr class="odd">
@@ -68,8 +68,8 @@ ms.locfileid: "28721886"
 <td><p>識別子が指定されていない場合、または検出されない場合に使用されるリテラル文字列です。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>identifier</em></p></td>
-<td><p><strong>接続</strong>文字列または<strong>コマンド</strong>文字列内の文字列に一致する文字列です。</p>
+<td><p><em>識別子</em></p></td>
+<td><p>"接続" 文字列または "コマンド" 文字列内の文字列と一致する文字列です。</p>
 <p></p>
 <ul>
 <li><p>セクション ヘッダーに <strong>connect</strong> があり、識別子の文字列が接続文字列内にある場合は、connect セクションが使用されます。</p></li>
@@ -86,7 +86,7 @@ ms.locfileid: "28721886"
 
 各セクションは次の状況下で使用されます。
 
-  - **接続**のセクションを使用すると、クライアントの値の部分文字列のキーワードを接続する場合は"**データ ソース = 値*」、*.* **接続**セクション id と一致。
+  - connect **** セクションは、クライアントの connect 文字列キーワードの値の部分が "**Data Source = * * * value*" で、 **connect**セクションの識別子と一致する場合に使用され*ます。*
 
   - **sql** セクションは、クライアントのコマンド文字列が **sql** セクションの識別子と一致する文字列を含んでいる場合に使用されます。
 

@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c056f2b0922402ea7cde7cf767969b73f912f572
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292168"
 ---
 # <a name="gotocontrol-macro-action"></a>GoToControl マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 " **GoToControl/コントロールの移動** " アクションを使用すると、開いているフォーム、フォームのデータシート、テーブルのデータシート、またはクエリのデータシートのカレント レコードの、指定したフィールドまたはコントロールにフォーカスを移動できます。このアクションにより、特定のフィールドまたはコントロールにフォーカスを移動することができます。このフィールドまたはコントロールは、比較を行ったり " **FindRecord/レコードの検索** " アクションを実行したりするときに使用します。また、このアクションを使用して、フォーム内を一定の条件に従って移動することもできます。たとえば、"健康保険" フォームの [既婚] コントロールに [いいえ] が設定されると、自動的に [配偶者またはパートナーの名前] コントロールをスキップして、次のコントロールにフォーカスを移動することができます。
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
 > [!NOTE]
-> [!メモ] このアクションは、データ アクセス ページでは使用できません。
+> このアクションは、データ アクセス ページでは使用できません。
 
-" **GoToControl/コントロールの移動** " アクションの引数は次のとおりです。
+"**GoToControl/コントロールの移動**" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -41,10 +41,8 @@ ms.locfileid: "28715201"
 <tbody>
 <tr class="odd">
 <td><p><strong>コントロール名</strong></p></td>
-<td><p>フォーカスの移動先のフィールドまたはコントロールの名前を指定します。[マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>コントロール名</strong>] ボックスにフィールドまたはコントロールの名前を入力します。この引数は省略できません。  
- 
-</p>
-<p><strong>注</strong>: 引数に<strong>コントロール名</strong>、完全修飾識別子ではなく、フォームのフィールドまたはコントロールの名前だけを入力してください。製品です。[プロダクト ID] です。</p></td>
+<td><p>フォーカスの移動先のフィールドまたはコントロールの名前を指定します。 [マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>コントロール名</strong>] ボックスにフィールドまたはコントロールの名前を入力します。 この引数は省略できません。</p>
+<p><strong>注</strong>: form などの完全修飾識別子ではなく、フィールドまたはコントロールの名前のみを " <strong>control name/コントロール名</strong>" 引数に入力します。製品![製品 ID]</p></td>
 </tr>
 </tbody>
 </table>
@@ -52,7 +50,7 @@ ms.locfileid: "28715201"
 
 ## <a name="remarks"></a>注釈
 
-" **GoToControl/コントロールの移動** " アクションで、非表示のフォームのコントロールにフォーカスを移動することはできません。
+"**GoToControl/コントロールの移動**" アクションで、非表示のフォームのコントロールにフォーカスを移動することはできません。
 
 > [!TIP]
 > [!ヒント] " **GoToControl/コントロールの移動** " アクションを使用すると、サブフォームに移動することもできます (サブフォームはコントロールの一種です)。移動後に、サブフォームの特定のレコードに移動するには、" **GoToControl/コントロールの移動** " アクションを使用します。" **GoToControl/コントロールの移動** " アクションを使って、サブフォームの特定のコントロールに移動することもできます。それには、サブフォームに移動してから、サブフォームのコントロールに移動します。
@@ -75,7 +73,7 @@ Visual Basic for Applications (VBA) モジュールで " **GoToControl/コント
 <tr class="header">
 <th><p>アクション</p></th>
 <th><p>引数: 設定値</p></th>
-<th><p>コメント</p></th>
+<th><p>Comment</p></th>
 </tr>
 </thead>
 <tbody>
@@ -86,12 +84,12 @@ Visual Basic for Applications (VBA) モジュールで " **GoToControl/コント
 </tr>
 <tr class="even">
 <td><p><strong>CloseWindow</strong></p></td>
-<td><p><strong>オブジェクトの種類</strong>: <strong>FormObject 名</strong>: 製品の一覧<strong>を保存</strong>:<strong>なし</strong></p></td>
+<td><p><strong>オブジェクトの種類</strong>: <strong>formobject 名前</strong>: 製品リストの<strong>保存</strong>:<strong>いいえ</strong></p></td>
 <td><p>[製品リスト] フォームを閉じます。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>OpenForm</strong></p></td>
-<td><p><strong>フォーム名</strong>: 製品の<strong>表示</strong>: <strong>FormData モード</strong>: <strong>AddWindow モード</strong>:<strong>標準</strong></p></td>
+<td><p><strong>フォーム名</strong>: Products<strong>ビュー</strong>: <strong>formdata mode</strong>: <strong>addwindow mode</strong>: <strong>Normal</strong></p></td>
 <td><p>[製品] フォームを開きます。</p></td>
 </tr>
 <tr class="even">
@@ -124,20 +122,20 @@ Visual Basic for Applications (VBA) モジュールで " **GoToControl/コント
 <th><p>条件</p></th>
 <th><p>アクション</p></th>
 <th><p>引数: 設定値</p></th>
-<th><p>コメント</p></th>
+<th><p>Comment</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>IsNull([CountryRegion])</p></td>
+<td><p>IsNull ([都道府県])</p></td>
 <td><p><strong>StopMacro</strong></p></td>
 <td><p></p></td>
 <td><p>[都道府県] の値が <strong>Null</strong> の場合は、郵便番号を検証できません。</p></td>
 </tr>
 <tr class="even">
-<td><p>[都道府県](&quot;フランス&quot;、&quot;イタリア&quot;、&quot;スペイン&quot;) と Len ([郵便番号]) &lt; &gt; 5</p></td>
+<td><p>地域In (&quot;フランス&quot;、&quot;イタリア&quot;、&quot;スペイン&quot;) および Len ([郵便番号]) &lt; &gt; 5</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>メッセージ</strong>: 郵便番号のコードは 5 文字である必要があります。 <strong>ビープ音を鳴らす</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: 郵便番号エラー</p></td>
+<td><p><strong>Message/メッセージ</strong>: 郵便番号は 7 文字である必要があります。 <strong>Beep</strong>: <strong>yestype</strong>: 情報<strong>タイトル</strong>: 郵便番号のエラー</p></td>
 <td><p>郵便番号が 7 文字でない場合にメッセージを表示します。</p></td>
 </tr>
 <tr class="odd">
@@ -149,13 +147,13 @@ Visual Basic for Applications (VBA) モジュールで " **GoToControl/コント
 <tr class="even">
 <td><p></p></td>
 <td><p><strong>GoToControl</strong></p></td>
-<td><p><strong>コントロール名</strong>: [郵便番号]</p></td>
+<td><p><strong>Control Name/コントロール名</strong>: 郵便番号</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
-<td><p>[都道府県](&quot;オーストラリア&quot;、&quot;シンガポール&quot;) と Len ([郵便番号]) &lt; &gt; 4</p></td>
+<td><p>地域In (&quot;オーストラリア&quot;、&quot;シンガポール&quot;) および Len ([郵便番号]) &lt; &gt; 4</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p>"Message/メッセージ": 郵便番号は 7 文字である必要があります。 <strong>ビープ音を鳴らす</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: 郵便番号エラー</p></td>
+<td><p>"Message/メッセージ": 郵便番号は 7 文字である必要があります。 <strong>Beep</strong>: <strong>yestype</strong>: 情報<strong>タイトル</strong>: 郵便番号のエラー</p></td>
 <td><p>郵便番号が 7 文字でない場合にメッセージを表示します。</p></td>
 </tr>
 <tr class="even">
@@ -167,13 +165,13 @@ Visual Basic for Applications (VBA) モジュールで " **GoToControl/コント
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>GoToControl</strong></p></td>
-<td><p><strong>コントロール名</strong>: [郵便番号]</p></td>
+<td><p><strong>Control Name/コントロール名</strong>: 郵便番号</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>([都道府県] =&quot;カナダ&quot;)([郵便番号] が気に入らない&quot;[A-Z] [0-9] [A-Z] [0-9] [A-Z] [0-9]&quot;)</p></td>
+<td><p>([都道府県] = &quot;カナダ&quot;)And ([郵便番号] Not Like&quot;[0-9] [0-9] [0-9] [0-9] ([a-z] [0-9]&quot;)</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>メッセージ</strong>: 郵便番号のコードが有効ではありません。 カナダのコードの例: H1J 1C 3<strong>ビープ音を鳴らす</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: 郵便番号コードのエラー</p></td>
+<td><p><strong>Message</strong>: 郵便番号が無効です。 カナダコードの例: H1J 1c3 <strong>Beep</strong>: <strong>yestype</strong>: <strong>informationtitle</strong>: 郵便番号エラー</p></td>
 <td><p>[都道府県] が広島県で、郵便番号の上 3 桁が 720 ～ 739 でない場合にメッセージを表示します。</p></td>
 </tr>
 <tr class="odd">

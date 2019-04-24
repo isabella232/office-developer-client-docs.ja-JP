@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ce08ac5952151471ce74afd9a8a49600d8e8f633
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314134"
 ---
 # <a name="fields-collection"></a>Fields コレクション
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **Fields** コレクションは、ADO に組み込まれたコレクションの 1 つです。コレクションは、並べ替えられた項目のセットで、単位と呼ばれることもあります。
 
@@ -73,11 +73,11 @@ objField = objRecordset.Fields(0)
 
 ## <a name="using-the-refresh-method"></a>Refresh メソッドを使用する
 
-他のいくつかの ADO コレクションと異なり、 **Fields** コレクションで **Refresh** メソッドを使用しても目に見える効果はありません。基になるデータベース構造から変更を取得するには、 **Requery** メソッドを使用するか、 **Recordset** オブジェクトがブックマークをサポートしていない場合は、 **MoveFirst** メソッドを使用する必要があります。このメソッドにより、コマンドがプロバイダーに対して再実行されます。
+他のいくつかの ADO コレクションと異なり、**Fields** コレクションで **Refresh** メソッドを使用しても目に見える効果はありません。基になるデータベース構造から変更を取得するには、**Requery** メソッドを使用するか、**Recordset** オブジェクトがブックマークをサポートしていない場合は、**MoveFirst** メソッドを使用する必要があります。このメソッドにより、コマンドがプロバイダーに対して再実行されます。
 
 ## <a name="adding-fields-to-a-recordset"></a>Recordset にフィールドを追加する
 
-**Append** メソッドは、 **Recordset** にフィールドを追加するために使用されます。
+**Append** メソッドは、**Recordset** にフィールドを追加するために使用されます。
 
 **Append** メソッドを使用すると、データ ソースへの接続を開かなくても、 **Recordset** をプログラムによって製造できます。開いている **Recordset** 、または **ActiveConnection** プロパティが設定されている **Recordset** の **Fields** コレクションで **Append** メソッドを呼び出すと、実行時エラーが発生します。フィールドを追加できるのは、開いていない状態で、データ ソースにも接続されていない **Recordset** のみです。ただし、新しく追加された **Fields** に値を指定するには、 **Recordset** をまず開く必要があります。
 

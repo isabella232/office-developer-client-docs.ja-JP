@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e53cd4b6d4a61a226103eb443bac7f3b4f92d908
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314050"
 ---
 # <a name="tables-collection-adox"></a>Tables コレクション (ADOX)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 カタログのすべての [Table](table-object-adox.md) オブジェクトを含みます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [Tables](append-method-adox-tables.md) コレクションの **Append** メソッドは、ADOX に対して一意です。次のことができます。
 

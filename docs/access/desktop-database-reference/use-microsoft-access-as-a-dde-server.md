@@ -13,22 +13,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 0750bdce0e1cda383c48f9c16e62e00997fdfb0a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32313392"
 ---
 # <a name="use-microsoft-access-as-a-dde-server"></a>Microsoft Access を DDE サーバーとして使う
 
-**適用されます**Access 2013、Office 2013。 
+**適用先:** Access 2013、Office 2013 
 
 Access は、DDE 先 (クライアント) アプリケーションまたは DDE 元 (サーバー) アプリケーションとして、Dynamic Data Exchange (DDE) 機能をサポートします。たとえば、クライアントとして動作する Word などのアプリケーションは、サーバーとして動作する Access データベースからのデータを DDE を通じて要求できます。
 
 > [!TIP]
 > [!ヒント] 他のアプリケーションから Access のオブジェクトを操作する必要がある場合は、オートメーションを使うこともできます。
 
-クライアントとサーバーの間で DDE 変換を行う場合は、特定のトピックを指定します。 トピックとなるのは、サーバー アプリケーションがサポートする形式のデータ ファイルか、またはサーバー アプリケーション自体の情報を与える System トピックです。 特定のトピックについての会話の開始後は、そのトピックに関連付けられているデータ項目だけを転送できます。
+クライアントとサーバーの間で DDE 変換を行う場合は、特定のトピックを指定します。 トピックとなるのは、サーバー アプリケーションがサポートする形式のデータ ファイルか、またはサーバー アプリケーション自体の情報を与える System トピックです。 特定のトピックで会話が開始されると、そのトピックに関連付けられているデータ項目のみが転送されます。
 
 たとえば、Word を実行中に Access のデータベースに含まれるデータを Word 文書に挿入する場合は、 **DDEInitiate** 関数で DDE チャネルを開き、データベースのファイル名をトピックに指定します。これで、データベースから Word へ、チャネルを通じてデータを送信できるようになります。
 
@@ -44,7 +44,7 @@ Access を DDE サーバーとして使う場合は、以下のトピックが�
 
 - Access の SQL ステートメント (*sqlstring* トピック)
 
-DDE 通信を確立した後は、クライアントからサーバー アプリケーションにコマンドを送信する**DDEExecute**ステートメントを使ってことができます。 Access を DDE サーバーとして使う場合は、次の内容が有効なコマンドとして認識されます。
+DDE 会話を確立したら、 **DDEExecute**ステートメントを使用して、クライアントからサーバーアプリケーションにコマンドを送信できます。 Access を DDE サーバーとして使う場合は、次の内容が有効なコマンドとして認識されます。
 
 - カレント データベースのマクロの名前。
 
@@ -55,7 +55,7 @@ DDE 通信を確立した後は、クライアントからサーバー アプリ
 > [!NOTE]
 > [!メモ] マクロのアクションを **DDEExecute** ステートメントとして指定するときは、 **DoCmd** オブジェクトの構文に従い、アクション名と引数は、角かっこ ([ ]) で囲む必要があります。ただし、DDE を通じて操作されるアプリケーションは、組み込み定数を認識しません。また、引数の文字列にカンマが含まれている場合は、その文字列を二重引用符 ("") で囲む必要があります。カンマが含まれない文字列は、二重引用符で囲む必要はありません。
 
-クライアント アプリケーションは、 **DDERequest** 関数を使って、開いている DDE チャネルを通じてサーバー アプリケーションにテキスト データを要求できます。 または、 **DDEPoke** ステートメントを使って、サーバー アプリケーションにデータを送信することもできます。 データ転送の完了後、クライアントは、DDE チャネルを終了するのには、 **DDETerminate**ステートメントまたは**DDETerminateAll**ステートメントをすべての開いているチャネルを閉じるを使用できます。
+クライアント アプリケーションは、 **DDERequest** 関数を使って、開いている DDE チャネルを通じてサーバー アプリケーションにテキスト データを要求できます。 または、 **DDEPoke** ステートメントを使って、サーバー アプリケーションにデータを送信することもできます。 データ転送の完了後、クライアントは**DDETerminate**ステートメントを使用して DDE チャネルを閉じるか、 **DDETerminateAll**ステートメントを使用して、開いているすべてのチャネルを閉じることができます。
 
 > [!NOTE]
 > [!メモ] クライアント アプリケーションで DDE チャネルを通じてデータを受信した後は、メモリ資源を浪費しないように、DDE チャネルを閉じてください。
@@ -95,7 +95,7 @@ DDE 通信を確立した後は、クライアントからサーバー アプリ
 
 ## <a name="the-system-topic"></a>System トピック
 
-システム トピックは、Microsoft のすべての Windows ベース アプリケーションの標準的なトピックです。 アプリケーションでサポートされているその他のトピックに関する情報を提供します。 この情報にアクセスするに、コードは、*トピック*の引数では、 **DDEInitiate**関数を呼び出して、最初と、引数*item*に指定された次のいずれかで、 **DDERequest**ステートメントを実行する必要があります。
+System トピックは、すべての Windows 対応アプリケーションで使用できる標準的なトピックです。 このトピックは、そのアプリケーションでサポートされるトピックに関する情報を返します。 この情報にアクセスするには、最初に*topic*引数を指定して**DDEInitiate**関数を呼び出し、次に*item*引数に次のいずれかを指定して**DDERequest**ステートメントを実行する必要があります。
 
 <table>
 <colgroup>
@@ -104,13 +104,13 @@ DDE 通信を確立した後は、クライアントからサーバー アプリ
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>アイテム</p></th>
-<th><p>返される値</p></th>
+<th><p>Item</p></th>
+<th><p>戻り値</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>SysItems</p></td>
+<td><p>sysitems</p></td>
 <td><p>Access で System トピックがサポートするアイテムの一覧です。</p></td>
 </tr>
 <tr class="even">
@@ -119,7 +119,7 @@ DDE 通信を確立した後は、クライアントからサーバー アプリ
 </tr>
 <tr class="odd">
 <td><p>Status</p></td>
-<td><p>&quot;ビジー状態である&quot;または&quot;準備ができた&quot;。</p></td>
+<td><p>&quot;取り込み&quot;中&quot;また&quot;は準備中です。</p></td>
 </tr>
 <tr class="even">
 <td><p>Topics</p></td>
@@ -144,9 +144,9 @@ DDE 通信を確立した後は、クライアントからサーバー アプリ
     DDEExecute intChan1, "[OpenDatabase C:\Access\Samples\Northwind.mdb]"
 ```
 
-## <a name="the-database-topic"></a>データベース トピック
+## <a name="the-database-topic"></a>データベーストピック
 
-*データベース*トピックは、既存のデータベースのファイル名です。 基本通り (Northwind)、またはそのパスおよび .mdb ファイルの拡張子のいずれかを入力することができます (c:\\アクセス\\のサンプル\\Northwind.mdb)。 データベースとの DDE 通信を開始すると、そのデータベース内のオブジェクトのリストを要求できます。
+*database*トピックは、既存のデータベースのファイル名です。 基本的な名前 (northwind) だけを入力することも、そのパスと .mdb の拡張子 (C:\\Access\\の\\サンプル northwind.mdb) を入力することもできます。 After you start a DDE conversation with the database, you can request a list of the objects in that database.
 
 > [!NOTE]
 > [!メモ] Access のワークグループ情報ファイルに対するクエリを実行するために DDE を使うことはできません。
@@ -160,21 +160,21 @@ DDE 通信を確立した後は、クライアントからサーバー アプリ
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>アイテム</p></th>
-<th><p>返される値</p></th>
+<th><p>Item</p></th>
+<th><p>戻り値</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>TableList</p></td>
-<td><p>テーブルの一覧</p></td>
+<td><p>tablelist</p></td>
+<td><p>テーブルのリスト</p></td>
 </tr>
 <tr class="even">
-<td><p>QueryList</p></td>
+<td><p>querylist</p></td>
 <td><p>クエリの一覧</p></td>
 </tr>
 <tr class="odd">
-<td><p>FormList</p></td>
+<td><p>formlist</p></td>
 <td><p>フォームの一覧</p></td>
 </tr>
 <tr class="even">
@@ -182,12 +182,12 @@ DDE 通信を確立した後は、クライアントからサーバー アプリ
 <td><p>レポートの一覧</p></td>
 </tr>
 <tr class="odd">
-<td><p>MacroList</p></td>
+<td><p>マクロリスト</p></td>
 <td><p>マクロの一覧</p></td>
 </tr>
 <tr class="even">
-<td><p>ModuleList</p></td>
-<td><p>モジュールのリスト</p></td>
+<td><p>modulelist</p></td>
+<td><p>モジュールの一覧</p></td>
 </tr>
 <tr class="odd">
 <td><p>ViewList</p></td>
@@ -198,7 +198,7 @@ DDE 通信を確立した後は、クライアントからサーバー アプリ
 <td><p>ストアド プロシージャの一覧</p></td>
 </tr>
 <tr class="odd">
-<td><p>DatabaseDiagramList</p></td>
+<td><p>databaseダイアグラムのリスト</p></td>
 <td><p>データベース ダイアグラムの一覧</p></td>
 </tr>
 </tbody>
@@ -219,15 +219,15 @@ DDE 通信を確立した後は、クライアントからサーバー アプリ
     DDEExecute intChan2, "[OpenForm Employees,0,,,1,0]"
 ```
 
-## <a name="the-table-topic"></a>テーブル トピック
+## <a name="the-table-topic"></a>表のトピック
 
 これらのトピックの構文は、以下のとおりです。
 
-_データベース名_です。**テーブル**_テーブル名_
+_databasename_ ;**表**_tablename_
 
-_データベース名_です。**クエリ**_queryname_
+_databasename_ ;**クエリ**_queryname_
 
-_データベース名_です。**SQL**[ _sqlstring_ ]
+_databasename_ ;**SQL**[ _sqlstring_ ]
 
 <br/>
 
@@ -238,14 +238,14 @@ _データベース名_です。**SQL**[ _sqlstring_ ]
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>指定項目</p></th>
+<th><p>パーツ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><em>databasename</em></p></td>
-<td><p>テーブルやクエリが含まれるデータベース、または SQL ステートメントを適用するデータベースの名前で、末尾にセミコロン (;) を付けます。データベース名の拡張子は省略できます (たとえば Northwind)。または、フル パス名と拡張子を指定することもできます (たとえば C:\\Access\Samples\Northwind.mdb)。</p></td>
+<td><p>The name of the database that the table or query is in or that the SQL statement applies to, followed by a semicolon (;). The database name can be just the base name (Northwind) or its full path and .mdb extension (C:\Access\Samples\Northwind.mdb).</p></td>
 </tr>
 <tr class="even">
 <td><p><em>tablename</em></p></td>
@@ -273,8 +273,8 @@ _データベース名_です。**SQL**[ _sqlstring_ ]
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>アイテム</p></th>
-<th><p>返される値</p></th>
+<th><p>Item</p></th>
+<th><p>戻り値</p></th>
 </tr>
 </thead>
 <tbody>
@@ -291,34 +291,34 @@ _データベース名_です。**SQL**[ _sqlstring_ ]
 <td><p>このフィールド名で指定される行を返します。</p></td>
 </tr>
 <tr class="even">
-<td><p>フィールド名です。T</p></td>
+<td><p>FieldNamesなく</p></td>
 <td><p>1 行目がフィールド名、2 行目がそのデータ型の 2 行を返します。</p>
-<p>これらは、返される値です。</p>
+<p>返される値は次のとおりです。</p>
 <p>値</p>
 <p><ul>
-<li>0</li>
-<li>1</li>
-<li>2</li>
-<li>3</li>
-<li>4</li>
+<li>.0</li>
+<li>1-d</li>
+<li>pbm-2</li>
+<li>1/3</li>
+<li>2/4</li>
 <li>5</li>
-<li>6</li>
+<li>シックス</li>
 <li>7</li>
-<li>8</li>
-<li>9</li>
-<li>10</li>
-<li>11</li>
-<li>12</li>
+<li>~</li>
+<li>i-9</li>
+<li>個</li>
+<li>#</li>
+<li>個</li>
 </ul>
 </p>
 </td>
 </tr>
 <tr class="even">
-<td><p>Nextrow を指定</p></td>
+<td><p>NextRow</p></td>
 <td><p>テーブルまたはクエリの現在の行の次の行のデータを返します。チャネルを開いた時点では、NextRow を指定すると最初の行のデータが返されます。現在の行が最終行のときに NextRow を指定すると、要求は失敗します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>Prevrow を指定します。</p></td>
+<td><p>PrevRow</p></td>
 <td><p>テーブルまたはクエリの現在の行の前の行のデータを返します。チャネルを開いた時点では、PrevRow を指定すると最終行のデータが返されます。現在の行が最初の行のときに PrevRow を指定すると、要求は失敗します。</p></td>
 </tr>
 <tr class="even">
@@ -330,16 +330,16 @@ _データベース名_です。**SQL**[ _sqlstring_ ]
 <td><p>テーブルまたはクエリの最後の行を返します。</p></td>
 </tr>
 <tr class="even">
-<td><p>FieldCount</p></td>
+<td><p>fieldcount</p></td>
 <td><p>テーブルまたはクエリのフィールドの総数を返します。</p></td>
 </tr>
 <tr class="odd">
 <td><p>SQLText</p></td>
-<td><p>テーブルまたはクエリを示す SQL ステートメントです。 テーブルは、この項目はフォームで、SQL ステートメントを返します&quot;選択`*`<em>テーブル</em>です。&quot;.</p></td>
+<td><p>テーブルまたはクエリを示す SQL ステートメントです。 テーブルの場合、このアイテムはフォーム&quot;の選択`*` <em>テーブル</em>で SQL ステートメントを返します。&quot;.</p></td>
 </tr>
 <tr class="even">
 <td><p>SQLText;<em>n</em></p></td>
-<td><p><em>N</em>で、SQL ステートメントの文字のチャンクは、テーブルまたはクエリは、 <em>n</em>は最大 256 の整数を表します。 たとえば、クエリは、次の SQL ステートメントで表される: 項目&quot;SQLText; 7&quot; ] タブで区切られた次のチャンクを取得: アイテム&quot;SQLText; 7&quot; ] タブで区切られた次のチャンクを返します。</p></td>
+<td><p><em>n</em>文字のチャンクで構成される SQL ステートメント。 n は、テーブルまたはクエリを表します。ここで、 <em>n</em>は256までの整数です。 たとえば、クエリが次の SQL ステートメントで表されているとします&quot;。アイテム SQLText&quot; ; 7 は、次のタブで区切られ&quot;たチャンクを&quot;返します。 item SQLText; 7 は、次のタブで区切られたチャンクを返します。</p></td>
 </tr>
 </tbody>
 </table>

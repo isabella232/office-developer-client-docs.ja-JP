@@ -8,28 +8,28 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4737cf5af48ef35e5d71cfc1b4525354dbc82bfc
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314876"
 ---
 # <a name="system-requirements-for-the-address-book-application"></a>アドレス帳アプリケーションのシステム要件
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 Address Book サンプル アプリケーションをセットアップするためには、次のソフトウェアおよびデータベースの要件を満たしている必要があります。
 
 **ソフトウェアの要件**
 
-この web アプリケーションを実行するサーバー コンピューターのソフトウェア要件は次のとおりです。
+この web アプリケーションを実行するためのサーバーコンピュータソフトウェア要件は次のとおりです。
 
-  - Microsoft Windows NT Server 4.0、Service Pack 3 以降、または Microsoft Windows 2000 サーバーです。
+  - microsoft windows NT server 4.0、Service Pack 3 以降、または microsoft windows 2000 server。
 
   - Active Server Pages を含む Microsoft Internet Information Services (IIS) 3.0 以降
 
-この web アプリケーションを実行するため、クライアント コンピューターのソフトウェア要件は次のとおりです。
+この web アプリケーションを実行するためのクライアントコンピューターソフトウェア要件は次のとおりです。
 
   - Microsoft Internet Explorer 4.0 以降
 
@@ -39,7 +39,7 @@ Address Book サンプル アプリケーションをセットアップするた
 
 このサンプルを使用するには、次のものが必要です。
 
-  - 運用の Microsoft SQL Server バージョン 6.5 以降のデータベース サーバーを使用しています。
+  - 運用中の Microsoft SQL server バージョン6.5 以降のデータベースサーバー。
 
   - データベースを作成し、サンプル データを設定する権限
 

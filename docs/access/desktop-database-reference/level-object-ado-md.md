@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 70fb359aa4faa0bcfc99f0b1700b0eb51f665bc0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290115"
 ---
 # <a name="level-object-ado-md"></a>Level オブジェクト (ADO MD)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 階層内で同じランクを持つメンバーのセットが含まれます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **Level** オブジェクトのコレクションおよびプロパティを使用すると、次の操作を実行できます。
 
@@ -52,15 +52,15 @@ ms.locfileid: "28722061"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>カタログ名</p></td>
+<td><p>CatalogName</p></td>
 <td><p>このキューブが属しているカタログの名前。</p></td>
 </tr>
 <tr class="even">
-<td><p>キューブ名</p></td>
+<td><p>CubeName</p></td>
 <td><p>キューブの名前。</p></td>
 </tr>
 <tr class="odd">
-<td><p>Description</p></td>
+<td><p>説明</p></td>
 <td><p>レベルの説明。</p></td>
 </tr>
 <tr class="even">
@@ -72,15 +72,15 @@ ms.locfileid: "28722061"
 <td><p>階層の明確な名前。</p></td>
 </tr>
 <tr class="even">
-<td><p>LevelCaption</p></td>
+<td><p>levelcaption</p></td>
 <td><p>レベルに関連付けられているラベルまたはキャプション。</p></td>
 </tr>
 <tr class="odd">
-<td><p>LevelCardinality</p></td>
+<td><p>levelcardinality</p></td>
 <td><p>レベルのメンバー数。</p></td>
 </tr>
 <tr class="even">
-<td><p>LevelGUID</p></td>
+<td><p>levelguid</p></td>
 <td><p>レベルの GUID。</p></td>
 </tr>
 <tr class="odd">
@@ -88,11 +88,11 @@ ms.locfileid: "28722061"
 <td><p>レベルの名前。</p></td>
 </tr>
 <tr class="even">
-<td><p>LevelNumber</p></td>
+<td><p>levelnumber</p></td>
 <td><p>階層のルートとレベルの距離。</p></td>
 </tr>
 <tr class="odd">
-<td><p>LevelType</p></td>
+<td><p>leveltype</p></td>
 <td><p>レベルの種類。</p></td>
 </tr>
 <tr class="even">
@@ -100,7 +100,7 @@ ms.locfileid: "28722061"
 <td><p>レベルの明確な名前。</p></td>
 </tr>
 <tr class="odd">
-<td><p>スキーマ名</p></td>
+<td><p>SchemaName</p></td>
 <td><p>このキューブが属しているスキーマの名前。</p></td>
 </tr>
 </tbody>

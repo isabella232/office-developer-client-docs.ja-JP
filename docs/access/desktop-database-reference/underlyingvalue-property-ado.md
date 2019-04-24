@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6d1618a0cb310c1e564fe18289da6a2d35e91d0b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314001"
 ---
 # <a name="underlyingvalue-property-ado"></a>UnderlyingValue プロパティ (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
 
@@ -25,9 +25,9 @@ ms.locfileid: "28717294"
 
 ## <a name="return-value"></a>戻り値
 
-**Field** の値を示すバリアント型 ( **Variant** ) の値を返します。
+**Field** の値を示すバリアント型 (**Variant**) の値を返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 データベースから現在のフィールド値を返すには、 **UnderlyingValue** プロパティを使用します。 **UnderlyingValue** プロパティ内のフィールド値は、トランザクションで参照できる値であり、別のトランザクションによる最近の更新の結果である可能性があります。この値は、 [Recordset](originalvalue-property-ado.md) に最初に返された値を反映する [OriginalValue](recordset-object-ado.md) プロパティとは異なる場合があります。
 
@@ -37,5 +37,5 @@ ms.locfileid: "28717294"
 
 ## <a name="record"></a>Record
 
-[Record](record-object-ado.md) オブジェクトの場合、 [Update](update-method-ado.md) が呼び出される前に追加されたフィールドについては、このプロパティは空になります。
+[Record](record-object-ado.md) オブジェクトの場合、[Update](update-method-ado.md) が呼び出される前に追加されたフィールドについては、このプロパティは空になります。
 

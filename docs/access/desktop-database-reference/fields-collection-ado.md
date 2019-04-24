@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a537756483361733c087d5dc1c6bba6e649d17d6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292574"
 ---
 # <a name="fields-collection-ado"></a>Fields コレクション (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-[Recordset](field-object-ado.md) オブジェクトまたは [Record](recordset-object-ado.md) オブジェクトのすべての [Field](record-object-ado.md) オブジェクトを格納します。
+[Recordset](recordset-object-ado.md) オブジェクトまたは [Record](record-object-ado.md) オブジェクトのすべての [Field](field-object-ado.md) オブジェクトを格納します。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **Recordset** オブジェクトには、 **Field** オブジェクトから構成される **Fields** コレクションがあります。各 **Field** オブジェクトは、 **Recordset** の 1 つの列に対応します。コレクションの **Refresh** メソッドを呼び出すと、 **Recordset** を開く前に [Fields](refresh-method-ado.md) コレクションにフィールドを追加できます。
 

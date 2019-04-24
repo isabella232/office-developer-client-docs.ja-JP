@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 7534ae84b57d14450009865ea330a4c54d4cfb44
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292140"
 ---
 # <a name="gotorecord-macro-action"></a>GoToRecord マクロ アクション
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**GoToRecord**アクションを使用するには、開いているテーブル、フォーム、またはクエリの結果セットで、指定されたレコードをカレント レコードにします。
+"GoToRecord/レコードの移動" アクションを使用すると、開いているテーブル、フォーム、またはクエリの結果セットで、指定したレコードをカレント レコードにすることができます。
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-" **GoToRecord/レコードの移動** " アクションの引数は次のとおりです。
+"**GoToRecord/レコードの移動**" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -47,7 +47,7 @@ ms.locfileid: "28708481"
 </tr>
 <tr class="even">
 <td><p><strong>オブジェクト名</strong></p></td>
-<td><p>現在のレコードにレコードを格納するオブジェクトの名前。 <strong>オブジェクト名</strong>] ボックスでは、<strong>オブジェクトの型</strong>引数で指定した型の現在のデータベース内のすべてのオブジェクトを示しています。 <strong>オブジェクトの型</strong>引数を空白のままにする場合は、この引数を指定しないも。</p></td>
+<td><p>カレント レコードにするレコードが含まれているオブジェクトの名前を指定します。[オブジェクト名] ボックスには、カレント データベースに含まれる、"Object Type/オブジェクトの種類" 引数で指定した種類のオブジェクトがすべて表示されます。"Object Type/オブジェクトの種類" 引数を指定しない場合は、この引数も指定しないでください。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Record</strong></p></td>
@@ -55,13 +55,13 @@ ms.locfileid: "28708481"
 </tr>
 <tr class="even">
 <td><p><strong>Offset</strong></p></td>
-<td><p>整数型または整数値に評価される式です。 式の前に等号 (=) (<strong>=</strong>)。 この引数は、カレント レコードのレコードを指定します。 2 つの方法では、<strong>この引数</strong>を使用できます。</p>
+<td><p>整数値、または結果が整数値となる式を指定します。 式の前には等号 (<strong>=</strong>) を付ける必要があります。 この引数では、カレント レコードにするレコードを指定します。 この引数の使用方法は 2 とおりあります。</p>
 <ul>
-<li><p><strong>Record</strong>引数は、<strong>次</strong>または<strong>前</strong>に、Microsoft Office Access 2007 は、前方または後方は、<strong>この引数</strong>で指定されたレコードの数を移動します。</p></li>
-<li><p><strong>レコード</strong>の引数が<strong>移動先</strong>にある場合は、<strong>オフセット</strong>の引数に等しい数のレコードに移動します。 レコード番号は、ウィンドウの下部にあるレコード番号ボックスに表示されます。</p>
-<p><strong>注</strong>:<strong>最初</strong>、<strong>最後</strong>、または<strong>新しい</strong><strong>レコード</strong>の引数の設定を使用する場合<strong>、この引数</strong>は無視されます。 大きすぎて<strong>オフセット</strong>の引数を入力する場合は、エラー メッセージが表示されます。 <strong>オフセット</strong>の引数に負の値を入力できません。</p></li>
-<li><p><strong>Record</strong>引数は、<strong>次</strong>または<strong>前</strong>に、Microsoft Office Access 2007 は、前方または後方は、<strong>この引数</strong>で指定されたレコードの数を移動します。</p></li>
-<li><p><strong>レコード</strong>の引数が<strong>移動先</strong>にある場合は、<strong>オフセット</strong>の引数に等しい数のレコードに移動します。 レコード番号は、ウィンドウの下部にあるレコード番号ボックスに表示されます。</p></li>
+<li><p><strong>Record</strong>引数が Previous また<strong></strong>は<strong>Previous</strong>に指定されている場合、Microsoft Office Access 2007 は、 <strong>Offset</strong>引数で指定したレコード数を前方または後方に移動します。</p></li>
+<li><p><strong>record</strong>引数に<strong>Go を</strong>指定すると、引数<strong>Offset</strong>と等しい数のレコードに移動します。 レコード番号は、ウィンドウの下部にあるレコード番号ボックスに表示されます。</p>
+<p><strong>注</strong>: <strong>Record</strong>引数の<strong>最初</strong>、<strong>最後</strong>、または<strong>新しい</strong>設定を使用すると、引数<strong>Offset</strong>は無視されます。 引数<strong>Offset</strong>に大きすぎる値を入力すると、エラーメッセージが表示されます。 <strong>Offset</strong>引数に負の数を入力することはできません。</p></li>
+<li><p><strong>Record</strong>引数が Previous また<strong></strong>は<strong>Previous</strong>に指定されている場合、Microsoft Office Access 2007 は、 <strong>Offset</strong>引数で指定したレコード数を前方または後方に移動します。</p></li>
+<li><p><strong>record</strong>引数に<strong>Go を</strong>指定すると、引数<strong>Offset</strong>と等しい数のレコードに移動します。 レコード番号は、ウィンドウの下部にあるレコード番号ボックスに表示されます。</p></li>
 </ul>
 </td>
 </tr>
@@ -69,15 +69,15 @@ ms.locfileid: "28708481"
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 レコードの特定のコントロールにフォーカスがある場合、このアクションを実行しても、新しいフォームの同じコントロールにフォーカスがとどまります。
 
-**** **新規**設定を使用すると、フォームまたはテーブルの末尾に空白のレコードに移動して新しいデータを入力することができます。
+You can use the **New** setting for the **Record** argument to move to the blank record at the end of a form or table so you can enter new data.
 
-このアクションでは、[**ホーム**] タブの [**検索**] ボタンの下の矢印をクリックし、[移動]**を**クリックすると似ています。 **最初**、**最後**、**次****前**、および、[**移動**] コマンドのサブコマンドを**新しいレコード**に、**最初**、**最後**、**次****前**、選択したオブジェクトに同じ効果があります。**** **新規**設定します。 ウィンドウの下部にあるナビゲーション ボタンを使用してレコードに移動することもできます。
+This action is similar to clicking the arrow below the **Find** button on the **Home** tab and then clicking **Go To**. The **First**, **Last**, **Next**, **Previous**, and **New Record** subcommands of the **Go To** command have the same effect on the selected object as the **First**, **Last**, **Next**, **Previous**, and **New** settings for the **Record** argument. You can also move to records by using the navigation buttons at the bottom of the window.
 
-**GoToRecord**アクションを使用すると、**オブジェクト型**および**オブジェクト名**の引数を非表示のフォームを指定する場合、非表示のフォームの現在のレコードにレコードを作成します。
+You can use the **GoToRecord** action to make a record on a hidden form the current record if you specify the hidden form in the **Object Type** and **Object Name** arguments.
 
-**GoToRecord**アクションを Visual Basic for Applications (VBA) のモジュールで実行するには、 **DoCmd**オブジェクトの**GoToRecord**メソッドを使用します。
+To run the **GoToRecord** action in a Visual Basic for Applications (VBA) module, use the **GoToRecord** method of the **DoCmd** object.
 

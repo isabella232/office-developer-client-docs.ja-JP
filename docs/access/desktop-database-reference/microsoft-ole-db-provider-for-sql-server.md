@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c4faa664ed9001c1c06906f58c7d873faf75a5d0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288891"
 ---
 # <a name="microsoft-ole-db-provider-for-sql-server"></a>Microsoft OLE DB Provider for SQL Server
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 Microsoft OLE DB Provider for SQL Server (SQLOLEDB) を使用すると、ADO から Microsoft SQL Server にアクセスできます。
 
 ## <a name="connection-string-parameters"></a>接続文字列のパラメーター
 
-このプロバイダーに接続するには、 [ConnectionString](connectionstring-property-ado.md)プロパティを*プロバイダー*の引数を設定します。
+このプロバイダーに接続するには、[ConnectionString](connectionstring-property-ado.md) プロパティの *Provider* 引数を次のように設定します。
 
 ```sql 
  
@@ -83,7 +83,7 @@ User ID=userName;Password=userPassword;"
 
 ## <a name="provider-specific-connection-parameters"></a>プロバイダー固有の接続パラメーター
 
-このプロバイダーは、ADO で定義されたパラメーターに加えて、プロバイダー固有の接続パラメーターをサポートしています。ADO の接続プロパティと同様に、これらのプロバイダー固有のプロパティは [Connection](properties-collection-ado.md) の [Properties](connection-object-ado.md) コレクションで設定することも、 **ConnectionString** の一部として設定することもできます。
+このプロバイダーは、ADO で定義されたパラメーターに加えて、プロバイダー固有の接続パラメーターをサポートしています。ADO の接続プロパティと同様に、これらのプロバイダー固有のプロパティは [Connection](connection-object-ado.md) の [Properties](properties-collection-ado.md) コレクションで設定することも、**ConnectionString** の一部として設定することもできます。
 
 <table>
 <colgroup>
@@ -98,7 +98,7 @@ User ID=userName;Password=userPassword;"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>度</p></td>
+<td><p>Trusted_Connection</p></td>
 <td><p>ユーザー認証モードを示します。このパラメーターは <strong>Yes</strong> または <strong>No</strong> に設定できます。既定値は <strong>No</strong> です。このプロパティが <strong>Yes</strong> に設定されている場合、SQLOLEDB は Microsoft Windows NT 認証モードを使用して、<strong>Location</strong> プロパティおよび <a href="datasource-property-ado.md">Datasource</a> プロパティの値で指定されている SQL Server データベースへのユーザー アクセスを許可します。このプロパティが <strong>No</strong> に設定されている場合、SQLOLEDB は混合モードを使用して SQL Server データベースへのユーザー アクセスを許可します。SQL Server のログイン名およびパスワードは、<strong>User Id</strong> プロパティと <strong>Password</strong> プロパティで指定します。</p></td>
 </tr>
 <tr class="even">
@@ -111,7 +111,7 @@ User ID=userName;Password=userPassword;"
 </tr>
 <tr class="even">
 <td><p>Network Library</p></td>
-<td><p>SQL Server と通信するために使用するネットワーク ライブラリ (ダイナミック リンク ライブラリ) の名前を示します。 パスまたはファイル名の拡張子が .dll の名前は含まれません。 既定値は、SQL Server クライアントの構成によって提供されます。</p></td>
+<td><p>SQL Server との通信に使用するネットワーク ライブラリ (ダイナミック リンク ライブラリ) の名前を示します。 この名前には、パスやファイル名拡張子 .dll を含めないでください。 既定値は、SQL Server クライアントの構成によって提供されます。</p></td>
 </tr>
 <tr class="odd">
 <td><p>Use Procedure for Prepare</p></td>
@@ -181,7 +181,7 @@ SQLOLEDB では、SQL Server のカーソルを使用して、複数のコマン
 
 ## <a name="dynamic-properties"></a>動的プロパティ
 
-Microsoft OLE DB Provider for SQL Server は、開かれていない **Connection** オブジェクト、 [Recordset](connection-object-ado.md) オブジェクト、および [Command](recordset-object-ado.md) オブジェクトの [Properties](command-object-ado.md) コレクションに動的プロパティを挿入します。
+Microsoft OLE DB Provider for SQL Server は、開かれていない [Connection](connection-object-ado.md) オブジェクト、[Recordset](recordset-object-ado.md) オブジェクト、および [Command](command-object-ado.md) オブジェクトの **Properties** コレクションに動的プロパティを挿入します。
 
 以下の表は、各動的プロパティの ADO 名と OLE DB 名の対応表です。 「OLE DB プログラマ リファレンス」では、「説明」欄に ADO プロパティ名が示されています。プロパティの詳細については、「OLE DB プログラマ リファレンス」を参照してください。OLE DB プロパティ名をキーワードとして検索するか、「付録 C: プロパティ表」を参照してください。
 
@@ -526,7 +526,7 @@ Microsoft OLE DB Provider for SQL Server は、開かれていない **Connectio
 <td><p>DBPROP_IConnectionPointContainer</p></td>
 </tr>
 <tr class="odd">
-<td><p>IConvertType</p></td>
+<td><p>iconverttype</p></td>
 <td><p>DBPROP_IConvertType</p></td>
 </tr>
 <tr class="even">
@@ -822,7 +822,7 @@ Microsoft OLE DB Provider for SQL Server は、開かれていない **Connectio
 <td><p>DBPROP_IConnectionPointContainer</p></td>
 </tr>
 <tr class="even">
-<td><p>IConvertType</p></td>
+<td><p>iconverttype</p></td>
 <td><p>DBPROP_IConvertType</p></td>
 </tr>
 <tr class="odd">

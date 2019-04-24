@@ -12,40 +12,40 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: c92a43ce2f4417fde83a544022a90cfca572bf60
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292350"
 ---
 # <a name="findnextrecord-macro-action"></a>FindNextRecord マクロ アクション
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-前の操作を**行って**または、[**検索し、置換**] ダイアログ ボックスの値で指定された条件を満たす次のレコードを検索する**FindNextRecord**アクションを使用することができます ([**ホーム**] タブの [**検索**] をクリック) します。 **FindNextRecord**アクションを使用するにはレコードを繰り返し検索します。 たとえば、すべてのレコードの中から特定の得意先のレコードを連続して検索できます。
+You can use the **FindNextRecord** action to find the next record that meets the criteria specified by the previous **FindRecord** action or the value in the **Find and Replace** dialog box (on the **Home** tab, click **Find**). You can use the **FindNextRecord** action to search repeatedly for records. For example, you can move successively through all the records for a specific customer.
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**FindNextRecord**アクション引数はありません。 **FindNextRecord**アクションは、次の操作を**行って**または、[**検索し、置換**] ダイアログ ボックスで設定した基準を満たすレコードを検索します。 **FindRecord**アクションの引数は、 **[検索し、置換**] ダイアログ ボックスでオプションを使用して共有されます。
+The **FindNextRecord** action doesn't have any arguments. The **FindNextRecord** action finds the next record that meets the criteria set either by the **FindRecord** action or in the **Find and Replace** dialog box. The arguments for the **FindRecord** action are shared with the options in the **Find and Replace** dialog box.
 
-検索条件を設定するには、操作を**行って**を使用します。 通常、マクロで操作を**行って**を入力し、 **FindNextRecord**アクションを使用して同じ条件を満たすレコードを検索します。 場合のみ、特定の条件のレコードを検索するのには満たされている、 **FindNextRecord**アクションのアクション行の [**条件**] 列に条件式を入力できます。
+To set the search criteria, use the **FindRecord** action. Typically, you enter a **FindRecord** action in a macro and then use the **FindNextRecord** action to find succeeding records that meet the same criteria. To search for records only when a certain condition is met, you can enter a conditional expression in the **Condition** column of the action row for the **FindNextRecord** action.
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このアクションの動作は、[ **検索と置換**] ダイアログ ボックスの [ **次を検索**] をクリックした場合と同じです。
+このアクションの動作は、[**検索と置換**] ダイアログ ボックスの [**次を検索**] をクリックした場合と同じです。
 
 > [!NOTE]
-> 操作を**行って**は、テーブル、クエリ、およびフォームの [**ホーム**] タブの [**検索**] コマンドに対応しています、[コード] ウィンドウで [**編集**] メニューの [**検索**] コマンドに対応していません。 モジュール内のテキストを検索する操作を**行って**、 **FindNextRecord**アクションを使うことはできません。
+> Although the **FindRecord** action corresponds to the **Find** command on the **Home** tab for tables, queries, and forms, it doesn't correspond to the **Find** command on the **Edit** menu in the Code window. You can't use the **FindRecord** action or **FindNextRecord** action to search for text in modules.
 
 > [!TIP]
-> 操作を**行って**の**現在のフィールド**の引数を **[はい]** に設定するとは、検索対象となる、**を使用する前にデータを格納しているコントロールにフォーカスを移動するのには**フォーカスを移動**を使用する必要があります。FindNextRecord**アクション。
+> If you've set the **Only Current Field** argument of the **FindRecord** action to **Yes**, you may need to use the **GoToControl** action to move the focus to the control containing the data you're searching for before you use the **FindNextRecord** action.
 
-現在選択されているテキストがある場合、検索する文字列と同じ**FindNextRecord**のマクロ アクション実行時に、選択範囲、選択範囲は、同じフィールドで、同じレコードの直後、検索が開始されます。 選択されているテキストと検索テキストが異なる場合は、カレント レコードの先頭から検索が開始されます。 このため、1 つのレコードに同じ検索条件を満たすテキストが複数存在する場合の検索が可能です。
+If the currently selected text is the same as the search text at the time the **FindNextRecord** macro action is carried out, the search begins immediately following the selection, in the same field as the selection, and in the same record. Otherwise, the search begins at the start of the current record. This enables you to find multiple instances of the same search criteria that might appear in a single record.
 
-ただし、 **FindNextRecord**アクションを含むマクロを実行するコマンド ボタンを使用する場合、検索条件の最初のインスタンスが見つからないを繰り返しします。 この現象は、一致する値を含むフィールドからフォーカスを削除するコマンド ボタンをクリックするとされるために発生します。 **FindNextRecord**アクションは、レコードの先頭から検索し、開始されます。 この問題を避けるためには、カスタム ツールバーのボタンや AutoKeys マクロで定義されているキーの組み合わせなど、フォーカスを変更しない方法を使用してマクロを実行します。 代わりに、マクロの**FindNextRecord**アクションを実行する前に、検索条件を含むフィールドにフォーカスを設定します。
+However, note that if you use a command button to run a macro containing the **FindNextRecord** action, the first instance of the search criteria will be found repeatedly. This behavior occurs because clicking the command button removes the focus from the field containing the matching value. The **FindNextRecord** action will then begin searching from the start of the record. To avoid this problem, run the macro by using a technique that doesn't change the focus, such as a custom toolbar button or a key combination defined in an AutoKeys macro. Alternatively, set the focus in the macro to the field containing the search criteria before you carry out the **FindNextRecord** action.
 
-**No**に設定する**最初の検索**引数を指定して操作を**行って**を含むマクロを実行するコマンド ボタンを使用する場合も同じ現象が発生します。
+The same behavior also occurs if you use a command button to run a macro containing the **FindRecord** action with the **Find First** argument set to **No**.
 
-モジュールの Visual Basic for Applications の**FindNextRecord**アクションを実行するには、 **DoCmd**オブジェクトの**FindNext**メソッドを使用します。
+To run the **FindNextRecord** action in a Visual Basic for Applications module, use the **FindNext** method of the **DoCmd** object.
 

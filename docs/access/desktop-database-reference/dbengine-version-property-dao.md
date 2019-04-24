@@ -1,5 +1,5 @@
 ---
-title: DBEngine.Version プロパティ (DAO)
+title: DBEngine プロパティ (DAO)
 TOCTitle: Version Property
 ms:assetid: b2807dc1-604f-4423-289a-ff38a3d9f31b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822024(v=office.15)
@@ -12,26 +12,26 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 7e22645127f18ad815c398fd38f9ac4615dfadc9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294191"
 ---
-# <a name="dbengineversion-property-dao"></a>DBEngine.Version プロパティ (DAO)
+# <a name="dbengineversion-property-dao"></a>DBEngine プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-現在使用中の DAO のバージョンを返します。値の取得のみ可能です。文字列型 ( **String**) の値を使用します。
+rreturns 現在使用されている DAO のバージョンを返します。 値の取得のみ可能な文字列型 (**String**) の値です。
 
 ## <a name="syntax"></a>構文
 
-*式*です。バージョン
+*式*。バージョン
 
-*式***DBEngine**オブジェクトを表す変数です。
+*式***DBEngine**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 
-戻り値は、"<メジャー>.<マイナー>" の形式で評価結果がバージョン番号になる文字列型 (String) の値です。たとえば、"3.0" などです。製品のバージョン番号は、バージョン番号 (3)、ピリオド、およびリリース番号 (0) で構成されます。
+戻り値は、"<メジャー>.<マイナー>" の形式で評価結果がバージョン番号になる文字列型 (String) の値です。 For example, "3.0". The product version number consists of the version number (3), a period, and the release number (0).
 

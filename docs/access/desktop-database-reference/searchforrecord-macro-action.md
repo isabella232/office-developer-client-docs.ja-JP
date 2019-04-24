@@ -12,20 +12,20 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: efa763a77250e1d5c617358f31421804c772468b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314645"
 ---
 # <a name="searchforrecord-macro-action"></a>SearchForRecord マクロ アクション
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **SearchForRecord** アクションは、テーブル、クエリ、フォーム、またはレポート内の特定のレコードを検索するために使用します。
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
 **SearchForRecord** アクションの引数は次のとおりです。
 
@@ -60,7 +60,7 @@ ms.locfileid: "28702111"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>設定値</p></th>
+<th><p>設定</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
@@ -87,19 +87,19 @@ ms.locfileid: "28702111"
 </div></td>
 </tr>
 <tr class="even">
-<td><p><strong>Where Condition</strong></p></td>
-<td><p>SQL の WHERE 句、のみなしの word と同じ構文を使用して検索の条件を入力してください&quot;、&quot;。 次に例を示します。</p>
+<td><p><strong>Where Condition/Where 条件式</strong></p></td>
+<td><p>SQL where 句と同じ構文を使用して検索条件を入力します。 where &quot;&quot;という単語は含まれません。 For example,</p>
 <p>`Description = "Beverages"`</p>
-<p>フォームのテキスト ボックスにある値を含む条件を作成するには、条件の最初の部分と、検索対象の値を含むテキスト ボックスの名前を連結する式を作成する必要があります。 たとえば、次の条件では、"説明" フィールドで frmCategories というフォーム上の txtDescription というテキスト ボックスに含まれる値を検索します。 等号 (=) に注意してください (<strong>=</strong>) の式、およびテキスト ボックス参照の両側に単一引用符 (<strong>'</strong>) の先頭にします。</p>
+<p>フォームのテキスト ボックスにある値を含む条件を作成するには、条件の最初の部分と、検索対象の値を含むテキスト ボックスの名前を連結する式を作成する必要があります。 たとえば、次の条件では、"説明" フィールドで frmCategories というフォーム上の txtDescription というテキスト ボックスに含まれる値を検索します。 式の先頭に等号<strong>=</strong>() があることと、テキストボックスリファレンスのどちらかの側に単一引用符 (<strong>'</strong>) を使用していることに注意してください。</p>
 <p>`="Description = ' " & Forms![frmCategories]![txtDescription] & "'"`</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-- 複数のレコードが **Where Condition/Where 条件式** 引数の条件と一致した場合は、次の要因によって、検出されるレコードが決まります。
+- 複数のレコードが **Where Condition/Where 条件式**引数の条件と一致した場合は、次の要因によって、検出されるレコードが決まります。
     
   - **Record/レコード引数の設定: ****Record/レコード**引数の詳細については、「設定値」セクションの表を参照してください。
     
@@ -119,13 +119,13 @@ ms.locfileid: "28702111"
         
     `Description = "Beverages" and CategoryID = 11`
     
-  - フォームまたはレポートのレコード ソース内にあってもフォームまたはレポートには表示されないフィールドを参照できます。前の例では、フォームまたはレポートに Description も CategoryID も表示されない場合でも、条件は機能します。
+  - フォームまたはレポートのレコード ソース内にあってもフォームまたはレポートには表示されないフィールドを参照できます。 前の例では、フォームまたはレポートに Description も CategoryID も表示されない場合でも、条件は機能します。
     
   - **\<** 、 **\>** 、 **AND** 、 **OR** 、 **BETWEEN** などの論理演算子を使用できます。 **FindRecord** アクションでは、検索対象の文字列と完全に一致する文字列、検索対象の文字列で始まる文字列、検索対象の文字列を含む文字列のみが検索されます。
 
 ## <a name="example"></a>例
 
-次のマクロは、まず **OpenTable** アクションを使用して [商品区分] テーブルを開きます。次に、 **SearchForRecord** アクションを使用して、テーブル内で [説明] フィールドが "飲料" である最初のレコードを検索します。
+次のマクロは、まず **OpenTable** アクションを使用して [商品区分] テーブルを開きます。次に、**SearchForRecord** アクションを使用して、テーブル内で [説明] フィールドが "飲料" である最初のレコードを検索します。
 
 <table>
 <colgroup>
@@ -141,11 +141,11 @@ ms.locfileid: "28702111"
 <tbody>
 <tr class="odd">
 <td><p><strong>OpenTable</strong></p></td>
-<td><p><strong>テーブル名</strong>: カテゴリの<strong>表示</strong>: <strong>DatasheetData モード</strong>:<strong>編集</strong></p></td>
+<td><p><strong>テーブル名</strong>: Categories<strong>ビュー</strong>: <strong>DatasheetData Mode</strong>:<strong>編集</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SearchForRecord</strong></p></td>
-<td><p><strong>オブジェクトの種類</strong>:<strong>大域オフセットテーブルオブジェクトファイル名前</strong>: カテゴリ<strong>レコード</strong>: <strong>FirstWhere の状態</strong>: 説明 =&quot;飲料&quot;</p></td>
+<td><p><strong>オブジェクトの種類</strong>: <strong>TableObject Name</strong>: Categories<strong>Record</strong>: <strong>firstwhere Condition</strong>: Description &quot;= 飲料&quot;</p></td>
 </tr>
 </tbody>
 </table>

@@ -1,5 +1,5 @@
 ---
-title: Index.Clustered プロパティ (DAO)
+title: Clustered プロパティ (DAO)
 TOCTitle: Clustered Property
 ms:assetid: dd0876a9-b7fe-c8c8-e675-5ed758ce5bd3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835375(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 060963dc47c933fee903cd9b220adb45c7f63df6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291853"
 ---
-# <a name="indexclustered-property-dao"></a>Index.Clustered プロパティ (DAO)
+# <a name="indexclustered-property-dao"></a>Clustered プロパティ (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **Index** オブジェクトがテーブルのクラスター化インデックスを表すかどうかを示す値を設定または取得します (Microsoft Access ワークスペースのみ)。値の取得および設定が可能です。ブール型 ( **Boolean**) の値を使用します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。クラスター化
+*式*。クラスタ
 
-*式***インデックス**オブジェクトを返すオブジェクト式を指定します。
+*式***Index**オブジェクトを返す式を指定します。
 
 ## <a name="remarks"></a>注釈
 
@@ -40,6 +40,6 @@ ms.locfileid: "28706705"
 
 > [!NOTE]
 > - Microsoft Access データベース エンジンはクラスター化インデックスをサポートしていないため、Microsoft Access データベース エンジン データベースでは **Clustered** プロパティは無視されます。
-> - ODBC データ ソースの場合、 **Clustered**プロパティ常に返します**false を指定**します。ODBC データ ソースはクラスター化インデックスを持つかどうかは検出されません。
+> - ODBC データソースの場合、 **Clustered**プロパティは常に**False**を返します。ODBC データソースにクラスター化インデックスがあるかどうかは検出されません。
 
 

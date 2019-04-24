@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 7d436ec9102c4c75688b6c6ac973ca85e8c280d0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291707"
 ---
 # <a name="index-property-ado"></a>Index プロパティ (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [Recordset](recordset-object-ado.md) オブジェクトに対して現在有効なインデックスの名前を示します。
 
-## <a name="settings-and-return-values"></a>設定値および戻り値
+## <a name="settings-and-return-values"></a>設定値と戻り値
 
-インデックス名を表す文字列型 ( **String** ) の値を設定または取得します。
+インデックス名を表す文字列型 (**String**) の値を設定または取得します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **Index** プロパティで指定したインデックスは、 **Recordset** オブジェクトの基になるベース テーブルで事前に宣言しておく必要があります。つまり、インデックスは、ADOX [Index](index-object-adox.md) オブジェクトとしてプログラムで宣言しておくか、ベース テーブルの作成時に宣言しておきます。
 
@@ -43,7 +43,7 @@ ms.locfileid: "28709104"
 
 インデックスの設定が可能で、[LockType](locktype-property-ado.md) プロパティが **adLockPessimistic** または **adLockOptimistic** の場合は、 [UpdateBatch](updatebatch-method-ado.md) 操作が暗黙的に実行されます。これによって、現在のグループと、影響下のグループが解放されます。既存のフィルターがすべて解放され、現在の行の位置は、並べ替えられた **Recordset** の最初の行に移動します。
 
-**Index** プロパティは、 [Seek](seek-method-ado.md) メソッドと一緒に使用します。 基になるプロバイダーが **Index** プロパティをサポートしていないために **Seek** メソッドがサポートされていない場合は、代わりに [Find](find-method-ado.md) メソッドを使用してください。 [サポートしています](supports-method-ado.md)**(adIndex)** メソッドを使用して、 **Recordset**オブジェクトがインデックスをサポートしているかどうかを決定します。
+**Index** プロパティは、 [Seek](seek-method-ado.md) メソッドと一緒に使用します。 基になるプロバイダーが **Index** プロパティをサポートしていないために **Seek** メソッドがサポートされていない場合は、代わりに [Find](find-method-ado.md) メソッドを使用してください。 **Recordset**オブジェクトが、 [supports](supports-method-ado.md)メソッド **(adindex)** でのインデックスをサポートしているかどうかを判断します。
 
 どちらもインデックスを扱いますが、組み込み **Index** プロパティは、動的な [Optimize](optimize-property-dynamic-ado.md) プロパティとは無関係です。
 

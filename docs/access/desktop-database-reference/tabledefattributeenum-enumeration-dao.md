@@ -1,5 +1,5 @@
 ---
-title: TableDefAttributeEnum 列挙型 (DAO)
+title: tabledefattributeenum 列挙 (DAO)
 TOCTitle: TableDefAttributeEnum Enumeration
 ms:assetid: 5a0dea24-9092-1642-a3d9-29f0de0a4ee4
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194433(v=office.15)
@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: dca910ff7ae8fb4ce72c488829166dae1201f535
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314239"
 ---
-# <a name="tabledefattributeenum-enumeration-dao"></a>TableDefAttributeEnum 列挙型 (DAO)
+# <a name="tabledefattributeenum-enumeration-dao"></a>tabledefattributeenum 列挙 (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**TableDef** オブジェクトの属性を決定するために、 **Attributes** プロパティと共に使用されます。
+**TableDef** オブジェクトの属性を決定するために、**Attributes** プロパティと共に使用されます。
 
 <table>
 <colgroup>
@@ -46,22 +46,22 @@ ms.locfileid: "28711631"
 <td><p>リンクされた非 ODBC データベース テーブル。</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbAttachExclusive</p></td>
+<td><p>dbattachexclusive</p></td>
 <td><p>65536</p></td>
 <td><p>リンクされた Microsoft Access データベース エンジン テーブルを排他的に開きます。</p></td>
 </tr>
 <tr class="even">
-<td><p>dbAttachSavePWD</p></td>
+<td><p>dbattachsavepwd</p></td>
 <td><p>131072</p></td>
 <td><p>リンクされたリモート テーブルのユーザー ID とパスワードを保存します。</p></td>
 </tr>
 <tr class="odd">
 <td><p>dbHiddenObject</p></td>
-<td><p>1</p></td>
+<td><p>1-d</p></td>
 <td><p>隠しテーブル (一時的な用途用)。</p></td>
 </tr>
 <tr class="even">
-<td><p>dbSystemObject</p></td>
+<td><p>dbsystemobject</p></td>
 <td><p>-2147483646</p></td>
 <td><p>システム テーブル。</p></td>
 </tr>

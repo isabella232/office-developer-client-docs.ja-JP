@@ -1,5 +1,5 @@
 ---
-title: ユーザー オブジェクト (ADOX のデスクトップのデータベース参照のアクセス)
+title: User オブジェクト (ADOX-Access デスクトップデータベースリファレンス)
 TOCTitle: User object (ADOX)
 ms:assetid: e88b9a8a-e70f-c7ca-cb8c-bd274ff24948
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250178(v=office.15)
@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3299a6c0742e7fcbbd26532f3522fdc96b7956b2
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32313161"
 ---
 # <a name="user-object-adox"></a>User オブジェクト (ADOX)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 保護されているデータベースへの権限を持つユーザー アカウントを表します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [Catalog](users-collection-adox.md) の [Users](catalog-object-adox.md) コレクションは、カタログのすべてのユーザーを表します。 **Group** の [Users](group-object-adox.md) コレクションは、特定のグループのユーザーのみを表します。
 

@@ -1,5 +1,5 @@
 ---
-title: (デスクトップ データベース参照のアクセス) のカーソルの種類
+title: カーソルの種類 (Access デスクトップデータベースリファレンス)
 TOCTitle: Types of Cursors
 ms:assetid: 589f3755-3cf5-9470-bd66-8e8afa218fc5
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249299(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6493d746f43ac8d923e5b1b9d6dcd3de44b411ec
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314029"
 ---
 # <a name="types-of-cursors"></a>カーソルの種類
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 アプリケーションでは、通常、必要なデータ アクセス機能を提供する最も単純なカーソルを使用することをお勧めします。基本機能 (前方移動のみ、読み取り専用、静的、スクロール型、バッファーなし) よりも優れた追加的特性には、クライアントのメモリ、ネットワークの負荷、パフォーマンスなどの面で、それぞれ代償があります。多くの場合、既定のカーソル オプションを選択すると、アプリケーションで実際に必要なものよりも複雑なカーソルが生成されます。
 

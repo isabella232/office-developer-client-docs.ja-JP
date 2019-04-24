@@ -12,20 +12,20 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: dc582046ff1981a82fab9c9c551b0064c1e8c1de
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296172"
 ---
 # <a name="command-object-ado"></a>Command オブジェクト (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 データ ソースに対して実行する特定のコマンドを定義します。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
 **Command** オブジェクトを使用すると、データベースに対してクエリを実行して [Recordset](recordset-object-ado.md) オブジェクトのレコードを取得したり、一括操作を実行したり、データベースの構造を操作したりできます。プロバイダーの機能によっては、 **Command** の一部のコレクション、メソッド、またはプロパティを参照すると、エラーが発生する場合があります。
 

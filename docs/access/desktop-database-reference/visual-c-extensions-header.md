@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 60dbf94824c5563196c549e2276b903ea814b1fb
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32311327"
 ---
 # <a name="visual-c-extensions-header"></a>Visual C++ Extensions のヘッダー
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 次のヘッダー **icrsint.h** で詳細が記述されているインターフェイスを使用することで、クライアントは、 **Recordset** から取得したフィールドを、 **CADORecordBinding** から派生したクラスで定義されている変数に格納できます。アクセスするフィールドごとに、ADO バインディング マクロを指定する必要があります。
 

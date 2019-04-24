@@ -1,5 +1,5 @@
 ---
-title: TableDefs.Delete メソッド (DAO)
+title: Delete メソッド (DAO)
 TOCTitle: Delete Method
 ms:assetid: 130bb50d-17c3-b2ab-9360-0d91d0cee131
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845419(v=office.15)
@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 63f543fd86e309372e0432c3e45513cd9d3942ab
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32313994"
 ---
-# <a name="tabledefsdelete-method-dao"></a>TableDefs.Delete メソッド (DAO)
+# <a name="tabledefsdelete-method-dao"></a>Delete メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 指定された **TableDef** オブジェクトを **TableDefs** コレクションから削除します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。(***名前***) を削除します。
+*式*。削除 (***名前***)
 
-*式***テーブル定義**オブジェクトを表す変数です。
+*式***テーブル定義**オブジェクトを表す変数を取得します。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -45,7 +45,7 @@ ms.locfileid: "28709321"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Name</em></p></td>
+<td><p><em>名前</em></p></td>
 <td><p>必須</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>削除する TableDef の名前です。</p></td>
@@ -56,5 +56,5 @@ ms.locfileid: "28709321"
 
 ## <a name="remarks"></a>注釈
 
-**テーブル定義**オブジェクトが新しいし、データベースに追加されていない場合にのみ、または**テーブル定義**の**更新できる**プロパティが**True**に設定すると、Delete メソッドはサポートされています。
+Delete メソッドは、**TableDef** オブジェクトがデータベースに追加されていない新しいオブジェクトである場合、または **TableDef** の **Updatable** プロパティが **True** に設定されている場合にのみ使用できます。
 

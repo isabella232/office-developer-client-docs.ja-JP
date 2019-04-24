@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 080281ae0deb25fa10fcdccd8577d3aab076c2cd
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32312069"
 ---
 # <a name="visual-c-extensions-example"></a>Visual C++ Extensions の例
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 このプログラムは、値がフィールドからどのように取得され、C/C++ 変数に変換されるかを示します。
 
-この例では、スマート ポインター、」の呼び出し、 **IADORecordBinding**インターフェイスに対する参照カウントの COM 固有の詳細情報を自動的に処理することも活用します。
+この例では、 **IADORecordBinding**インターフェイスの呼び出しおよび参照カウントに関する COM 固有の詳細を自動的に処理する "スマートポインター" も利用します。
 
 スマート ポインターを使用しない場合は、次のようにコーディングします。
 
@@ -35,7 +35,7 @@ TESTHR(pRs->QueryInterface(
 if (picRs) picRs->Release(); 
 ```
 
-スマート ポインターを使用する IADORecordBindingPtr 型から派生次のステートメントで IADORecordBinding インターフェイスからの種類。
+スマートポインターを使用すると、次のステートメントを使用して、IADORecordBinding インターフェイスの型から IADORecordBindingPtr 型を派生させることができます。
 
 ```cpp 
  
@@ -49,7 +49,7 @@ _COM_SMARTPTR_TYPEDEF(IADORecordBinding, __uuidof(IADORecordBinding));
 IADORecordBindingPtr picRs(pRs); 
 ```
 
-PicRs、スマート ポインターのコンス トラクターは、**レコード セット**オブジェクトでは、Visual C++ の拡張機能が実装されている、ため、 \_RecordsetPtr ポインター、pRs です。 コンス トラクターが pRs を使用して検索する QueryInterface を呼び出すのでは、 \_RecordsetPtr ポインター、pRs です。 コンス トラクターには、IADORecordBinding インターフェイスを検索するのには、pRs を使用して QueryInterface が呼び出されます。
+Visual C++ 拡張機能は**Recordset**オブジェクトによって実装されるので、スマートポインターの "ピクチャ" という\_コンストラクターは、RecordsetPtr ポインター pRs を受け取ります。 コンストラクタは、pRs を使用して QueryInterface を検索し\_、RecordsetPtr ポインター pRs を取得します。 コンストラクターは、pRs を使用して QueryInterface を呼び出し、IADORecordBinding インターフェイスを検索します。
 
 ```cpp 
  

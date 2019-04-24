@@ -1,5 +1,5 @@
 ---
-title: テーブル定義のメンバー (DAO)
+title: TableDef メンバー (DAO)
 TOCTitle: TableDef Members
 ms:assetid: bc55315e-bafe-d89e-ad31-fd4c9bb6486e
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822714(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ff9f6841b50b70f8846c829f0ee7b911c84c0e04
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314904"
 ---
-# <a name="tabledef-members-dao"></a>テーブル定義のメンバー (DAO)
+# <a name="tabledef-members-dao"></a>TableDef メンバー (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 TableDef オブジェクトは、ベース テーブルまたはリンク テーブルのストアド定義を表します (Microsoft Access ワークスペースのみ)。
 
@@ -48,7 +48,7 @@ TableDef オブジェクトは、ベース テーブルまたはリンク テー
 <td><p>新しいユーザー定義の <strong><a href="property-object-dao.md">Property</a></strong> オブジェクトを作成します (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="tabledef-openrecordset-method-dao.md">何らか</a></strong></p></td>
+<td><p><strong><a href="tabledef-openrecordset-method-dao.md">OpenRecordset</a></strong></p></td>
 <td><p>新しい <strong><a href="recordset-object-dao.md">Recordset</a></strong> オブジェクトを作成して <strong>Recordsets</strong> コレクションに追加します。</p></td>
 </tr>
 <tr class="odd">
@@ -127,7 +127,7 @@ TableDef オブジェクトは、ベース テーブルまたはリンク テー
 </tr>
 <tr class="even">
 <td><p><strong><a href="tabledef-validationrule-property-dao.md">ValidationRule</a></strong></p></td>
-<td><p>データの変更時またはテーブルへの追加時に、フィールド内のデータを検証する値を設定または取得します (Microsoft Access ワークスペースのみ) 。値の取得および設定が可能です。文字列型 ( <strong>String</strong> ) の値を使用します。  </p></td>
+<td><p>データの変更時またはテーブルへの追加時に、フィールド内のデータを検証する値を設定または取得します (Microsoft Access ワークスペースのみ) 。値の取得および設定が可能です。文字列型 ( <strong>String</strong> ) の値を使用します。    </p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="tabledef-validationtext-property-dao.md">ValidationText</a></strong></p></td>

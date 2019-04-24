@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8ed643ca3b1341d7f933901e15c20c84acb025f5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289722"
 ---
 # <a name="maxrecords-property-ado"></a>MaxRecords プロパティ (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 クエリから [Recordset](recordset-object-ado.md) に返す最大レコード数を示します。
 
-## <a name="settings-and-return-values"></a>設定値および戻り値
+## <a name="settings-and-return-values"></a>設定値と戻り値
 
-返される最大レコード数を示す長整数型 ( **Long** ) の値を設定または取得します。既定値は 0 (制限なし) です。
+返される最大レコード数を示す長整数型 ( **Long** ) の値を設定または取得します。 既定値は 0 (制限なし) です。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **MaxRecords** プロパティは、プロバイダーがデータ ソースから返すレコード数を制限するために使用します。このプロパティの既定値は 0 で、プロバイダーが要求されたすべてのレコードを返すことを意味します。
 

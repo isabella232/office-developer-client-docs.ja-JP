@@ -12,22 +12,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: f08b9a8980fc6f08a9f91366d38f65e4365a037e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314625"
 ---
 # <a name="setdisplayedcategories-macro-action"></a>SetDisplayedCategories マクロ アクション
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**SetDisplayedCategories**アクションを使用すると、カテゴリ**のカテゴリに移動**] の下のナビゲーション ウィンドウのタイトル バーに表示を指定します。 などのオブジェクトは**作成日**順が表示されるように、ナビゲーション ウィンドウを切り替えられないようにする場合は、タイトル バーのドロップダウン リスト内のオプションを非表示にする、このアクションを使用できます。
+You can use the **SetDisplayedCategories** action to specify which categories are displayed under **Navigate to Category** in the title bar of the Navigation Pane. For example, if you want to prevent users from switching the Navigation Pane so that it displays objects sorted by **Created Date**, you can use this action to hide that option in the title bar's drop-down list.
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**SetDisplayedCategories**アクションには、次の引数があります。
+"SetDisplayedCategories/表示されるカテゴリの設定" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -43,21 +43,21 @@ ms.locfileid: "28711421"
 <tbody>
 <tr class="odd">
 <td><p><strong>Show</strong></p></td>
-<td><p>カテゴリを表示する場合は [<strong>はい</strong>] を選択します。カテゴリを非表示にする場合は [<strong>いいえ</strong>] を選択します。</p></td>
+<td><p>カテゴリを表示する場合は [<strong>はい</strong>] を選択します。 カテゴリを非表示にする場合は [<strong>いいえ</strong>] を選択します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>カテゴリ</strong></p></td>
-<td><p>表示または非表示にするカテゴリの名前を入力または選択します。すべてのカテゴリを表示または非表示にする場合は、この引数を指定しないでください。</p></td>
+<td><p>表示または非表示にするカテゴリの名前を入力または選択します。 すべてのカテゴリを表示または非表示にする場合は、この引数を指定しないでください。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
   - ナビゲーション ウィンドウのタイトル バーに表示される標題は、現在アクティブなフィルター (使用されている場合) を示します。タイトル バーの任意の場所をクリックすると、ドロップダウン リストが表示されます。[ **カテゴリに移動**] の下に、このマクロ アクションが制御する項目が表示されます。
 
-  - のみこの操作を有効またはカテゴリは、指定したカテゴリの表示を無効になります。任意のナビゲーション ウィンドウの表示の切り替えを行うことはできません。 などのオブジェクトは**作成日**順に表示している**SetDisplayedCategories**アクションを使用して、[**作成日**] オプションを無効にする場合は、アクセス、ナビゲーション ウィンドウに切り替わらない別のカテゴリ。
+  - This action only enables or disables the display of the specified category or categories; it does not perform any switching of the Navigation Pane display. For example, if you are displaying objects sorted by **Creation Date** and you use the **SetDisplayedCategories** action to disable the **Creation Date** option, Access does not switch the Navigation Pane to another category.
 
-  - **SetDisplayedCategories**アクションは、VBA モジュールで実行するには、 **DoCmd**オブジェクトの**SetDisplayedCategories**メソッドを使用します。
+  - To run the **SetDisplayedCategories** action in a VBA module, use the **SetDisplayedCategories** method of the **DoCmd** object.
 

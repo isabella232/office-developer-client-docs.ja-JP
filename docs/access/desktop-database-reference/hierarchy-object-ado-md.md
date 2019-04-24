@@ -8,20 +8,20 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: c6668dfd40f7d0d26bcfa2ca4149acdc713e14c6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291930"
 ---
 # <a name="hierarchy-object-ado-md"></a>Hierarchy オブジェクト (ADO MD)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [次元](dimension-object-ado-md.md)のメンバーを集約または "まとめる" ための 1 つの方法です。次元は 1 つ以上の階層ごとに集約できます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **Hierarchy** オブジェクトのコレクションおよびプロパティを使用すると、次の操作を実行できます。
 
@@ -48,27 +48,27 @@ ms.locfileid: "28726044"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AllMember</p></td>
+<td><p>allmember</p></td>
 <td><p>最高レベルのロールアップにおける階層のメンバー。</p></td>
 </tr>
 <tr class="even">
-<td><p>カタログ名</p></td>
+<td><p>CatalogName</p></td>
 <td><p>このキューブが属しているカタログの名前。</p></td>
 </tr>
 <tr class="odd">
-<td><p>キューブ名</p></td>
+<td><p>CubeName</p></td>
 <td><p>キューブの名前。</p></td>
 </tr>
 <tr class="even">
-<td><p>できるよ</p></td>
+<td><p>DefaultMember</p></td>
 <td><p>この階層の既定のメンバーの固有の名前。</p></td>
 </tr>
 <tr class="odd">
-<td><p>Description</p></td>
+<td><p>説明</p></td>
 <td><p>階層の説明。</p></td>
 </tr>
 <tr class="even">
-<td><p>DimensionType</p></td>
+<td><p>dimensiontype</p></td>
 <td><p>この階層が属している次元の種類。</p></td>
 </tr>
 <tr class="odd">
@@ -96,7 +96,7 @@ ms.locfileid: "28726044"
 <td><p>階層の明確な名前。</p></td>
 </tr>
 <tr class="odd">
-<td><p>スキーマ名</p></td>
+<td><p>SchemaName</p></td>
 <td><p>このキューブが属しているスキーマの名前。</p></td>
 </tr>
 </tbody>

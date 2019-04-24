@@ -1,5 +1,5 @@
 ---
-title: フィールド オブジェクト (デスクトップ データベース参照のアクセス)
+title: Field オブジェクト (Access デスクトップデータベースリファレンス)
 TOCTitle: The Field object
 ms:assetid: 55531e04-d74f-6394-df64-1660e5d572ca
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249284(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 2cbd5752399e5a14f08b7eb944e3a028ba53f561
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314022"
 ---
 # <a name="field-object"></a>Field オブジェクト
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 各 **Field** オブジェクトは、通常、データベース テーブル内の列に対応しています。ただし、 **Field** では、チャプターと呼ばれる他の **Recordset** へのポインターを表すこともできます。チャプター列などの例外については、このガイドの後半で説明します。
 
@@ -40,17 +40,17 @@ ms.locfileid: "28716874"
 
 - プロバイダーがバッチ更新をサポートしている場合は、 **OriginalValue** プロパティおよび **UnderlyingValue** プロパティを使用して、バッチ更新中に発生するフィールドの値の不一致を解決できます。
 
-## <a name="describing-a-field"></a>フィールドを記述します。
+## <a name="describing-a-field"></a>フィールドを記述する
 
 以降のトピックでは、[Field](field-object-ado.md) オブジェクト自体に関する情報、つまりフィールドのメタデータを表す **Field** オブジェクトのプロパティについて説明します。この情報を使用すると、 **Recordset** のスキーマについて多くのことを確認できます。これらのプロパティには、 **Type** 、 **DefinedSize** と **ActualSize** 、 **Name** 、 **NumericScale** と **Precision** などがあります。
 
-## <a name="discovering-the-data-type"></a>データ型を検出します。
+## <a name="discovering-the-data-type"></a>データ型の検出
 
-**Type**プロパティは、フィールドのデータ型を示します。 ADO でサポートされているデータ型の列挙定数については、 *ADO プログラマーズ リファレンス*に[格納](datatypeenum.md)してください。
+The **Type** property indicates the data type of the field. ado でサポートされているデータ型の列挙定数については、「 *ado プログラマーズリファレンス*」の「 [DataTypeEnum](datatypeenum.md) 」を参照してください。
 
 **adNumeric** などの浮動小数点型については、より多くの情報を取得できます。 **NumericScale** プロパティは、 **Field** の値を表現するために使用する小数部の桁数を示します。 **Precision** プロパティは、 **Field** の値を表現するために使用する最大桁数を指定します。
 
-## <a name="determining-field-size"></a>フィールドのサイズを決定します。
+## <a name="determining-field-size"></a>フィールドサイズを決定する
 
 **DefinedSize** プロパティを使用すると、 **Field** オブジェクトのデータ容量を確認できます。
 
@@ -58,7 +58,7 @@ ms.locfileid: "28716874"
 
 **DefinedSize** プロパティと **ActualSize** プロパティの目的は異なります。たとえば、宣言された型が **adVarChar** で、 **DefinedSize** プロパティの値が 50 である **Field** オブジェクトに、文字が 1 つだけ含まれているとします。この場合、返される **ActualSize** プロパティの値は、この 1 文字のバイト単位の長さとなります。
 
-## <a name="determining-field-contents"></a>フィールドの内容を決定します。
+## <a name="determining-field-contents"></a>フィールドの内容を確認する
 
 データ ソースから取得された列の識別子は、 **Field** の **Name** プロパティで表されます。 **Field** オブジェクトの **Value** プロパティは、フィールドの実際の値を返したり、設定したりするために使用します。これは既定のプロパティです。
 
@@ -67,13 +67,13 @@ ms.locfileid: "28716874"
 > [!NOTE]
 > [!メモ] 新しい **Field** を **Recordset** に追加する場合は、 **Recordset Field** の値を設定できません。新しい **Field** は、閉じている **Recordset** に追加できます。追加した後に **Recordset** を開いて、これらの新しい **Field** に値を割り当てる必要があります。
 
-## <a name="getting-more-field-information"></a>フィールドに関する詳細情報を取得します。
+## <a name="getting-more-field-information"></a>その他のフィールド情報を取得する
 
 ADO オブジェクトには、組み込みのプロパティと動的プロパティという 2 種類のプロパティがあります。これまでは、 **Field** オブジェクトの組み込みのプロパティについてのみ説明してきました。
 
-組み込みのプロパティは、これらのプロパティは、ADO に実装されていると、構文を使用して、すべての新しいオブジェクトにすぐに利用可能です。 これらのプロパティは、オブジェクトの **Properties** コレクションに **Property** オブジェクトとして格納されません。
+組み込みプロパティは、ADO で実装されているプロパティであり、構文を使用して、任意の新しいオブジェクトですぐに使用できます。 これらのプロパティは、オブジェクトの **Properties** コレクションに **Property** オブジェクトとして格納されません。
 
-動的プロパティは、基になるデータ プロバイダーによって定義され、該当する ADO オブジェクトの **Properties** コレクションに含まれます。 たとえば、プロバイダー固有のプロパティには、 **Recordset** オブジェクトがトランザクションや更新をサポートしているかどうかを示すものがあります。 これらの追加のプロパティは、その **Recordset** オブジェクトの **Properties** コレクションに、 **Property** オブジェクトとして格納されます。 動的プロパティは、MyObject.Properties(0) の構文を使用して、このコレクションを通じてのみ参照できるか、または MyObject.Properties("Name")。
+動的プロパティは、基になるデータ プロバイダーによって定義され、該当する ADO オブジェクトの **Properties** コレクションに含まれます。 たとえば、プロバイダー固有のプロパティには、 **Recordset** オブジェクトがトランザクションや更新をサポートしているかどうかを示すものがあります。 これらの追加のプロパティは、その **Recordset** オブジェクトの **Properties** コレクションに、 **Property** オブジェクトとして格納されます。 動的プロパティは、MyObject プロパティ (0) または myobject プロパティ ("Name") の構文を使用して、コレクションを通じてのみ参照できます。
 
 どちらの種類のプロパティも削除できません。
 
@@ -104,7 +104,7 @@ ADO オブジェクトには、組み込みのプロパティと動的プロパ�
 'EndFieldProps 
 ```
 
-## <a name="dealing-with-binary-data"></a>バイナリ データを処理します。
+## <a name="dealing-with-binary-data"></a>バイナリデータの処理
 
 [Field](appendchunk-method-ado.md) オブジェクトの **AppendChunk** メソッドを使用すると、そのオブジェクトに長いバイナリ データまたは文字データを格納できます。システムのメモリ容量が少ない場合、 **AppendChunk** メソッドを使用して、長い値の全体ではなく一部を操作できます。
 
@@ -122,5 +122,5 @@ ADO オブジェクトには、組み込みのプロパティと動的プロパ�
 
 **Field** オブジェクトの **GetChunk** メソッドまたは **AppendChunk** メソッドを使用したときに、カレント レコードが存在しない場合は、エラー 3021 (カレント レコードがありません) が発生します。
 
-これらのメソッドを使用してバイナリ データを操作する例は、 *ADO プログラマーズ リファレンス* [AppendChunk メソッド](appendchunk-method-ado.md)と[GetChunk メソッド](getchunk-method-ado.md)の例を参照してください。
+これらのメソッドを使用してバイナリデータを操作する例については、「 *ADO プログラマリファレンス*」の[appendchunk メソッド](appendchunk-method-ado.md)と[GetChunk メソッド](getchunk-method-ado.md)の例を参照してください。
 

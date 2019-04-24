@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3816e1699865b1e58c745e9fb466c37885833802
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32312048"
 ---
 # <a name="views-append-method-example-vb"></a>Views の Append メソッドの使用例 (VB)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 次のコードでは、基になるデータ ソースに新しいビューを作成するための、[Command](command-object-ado.md) オブジェクトおよび [Views](views-collection-adox.md) コレクションの [Append](append-method-adox-views.md) メソッドの使用方法を示します。
 

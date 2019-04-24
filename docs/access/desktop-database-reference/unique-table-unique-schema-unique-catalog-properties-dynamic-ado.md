@@ -1,5 +1,5 @@
 ---
-title: 固有のテーブル、一意のスキーマ カタログを表す一意の動的なプロパティ (ADO)
+title: unique Table、unique Schema、unique Catalog 動的プロパティ (ADO)
 TOCTitle: Unique Table, Unique Schema, Unique Catalog dynamic properties (ADO)
 ms:assetid: e6374782-755b-322b-21de-6d6a386dcd98
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250169(v=office.15)
@@ -8,30 +8,30 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 5f4bf93afc200edd88e89cf5d4e90435c2476942
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32313749"
 ---
-# <a name="unique-table-unique-schema-unique-catalog-dynamic-properties-ado"></a>固有のテーブル、一意のスキーマ カタログを表す一意の動的なプロパティ (ADO)
+# <a name="unique-table-unique-schema-unique-catalog-dynamic-properties-ado"></a>unique Table、unique Schema、unique Catalog 動的プロパティ (ADO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 複数のベース テーブルに対する JOIN 操作で形成された [Recordset](recordset-object-ado.md) 中の、特定のベース テーブルに対する変更を細かく制御します。
 
   - **Unique Table** は、更新、挿入、および削除の操作ができるベース テーブルの名前を指定します。
 
-  - **固有のスキーマ**は、*スキーマ*、またはテーブルの所有者の名前を指定します。
+  - **Unique schema**は、*スキーマ*、またはテーブルの所有者の名前を指定します。
 
-  - **固有のカタログ**は、*カタログ*、またはテーブルを含むデータベースの名前を指定します。
+  - **Unique catalog**は、*カタログ*、またはテーブルを含むデータベースの名前を指定します。
 
-## <a name="settings-and-return-values"></a>設定値および戻り値
+## <a name="settings-and-return-values"></a>設定値と戻り値
 
-テーブル、スキーマ、またはカタログの名前である文字列型 ( **String** ) の値を設定または取得します。
+テーブル、スキーマ、またはカタログの名前である文字列型 (**String**) の値を設定または取得します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 対象となるベース テーブルは、一意なカタログ名、スキーマ名、およびテーブル名で識別します。 **Unique Table** プロパティが設定されている場合、 **Unique Schema** プロパティまたは **Unique Catalog** プロパティの値がベース テーブルを検索するために使用されます。 **Unique Table** プロパティを設定する前に **Unique Schema** プロパティと **Unique Catalog** プロパティのどちらかまたは両方を設定するのが本来の順序ですが、必ずしもそうする必要はありません。
 

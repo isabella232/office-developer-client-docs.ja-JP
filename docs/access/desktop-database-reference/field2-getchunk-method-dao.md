@@ -1,5 +1,5 @@
 ---
-title: Field2.GetChunk メソッド (DAO)
+title: Field2 メソッド (DAO)
 TOCTitle: GetChunk method
 ms:assetid: 5d3a66c0-8216-d701-0a91-b79fbbc822b8
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194600(v=office.15)
@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6a4b850658ca4ab36b0d4f4cbed7266d39b4ff8d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292777"
 ---
-# <a name="field2getchunk-method-dao"></a>Field2.GetChunk メソッド (DAO)
+# <a name="field2getchunk-method-dao"></a>Field2 メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-すべてを返します。 または**[Recordset](recordset-object-dao.md)** オブジェクトの**[Fields](fields-collection-dao.md)** コレクション内の**メモ**型または**長の BinaryField2**オブジェクトの内容の一部です。
+**[Recordset](recordset-object-dao.md)** オブジェクトの**[Fields](fields-collection-dao.md)** コレクションに含まれる、**メモ型 (Memo** ) または**長い field2**オブジェクトの内容のすべてまたは一部を返します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。GetChunk (***オフセット***、***バイト数***)
+*式*。GetChunk (***オフセット***、***バイト***)
 
-*式***Field2**オブジェクトを表す変数です。
+*式***Field2**オブジェクトを表す変数を取得します。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -47,13 +47,13 @@ ms.locfileid: "28722859"
 <tr class="odd">
 <td><p><em>Offset</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>Long</strong></p></td>
+<td><p><strong>長整数型 (Long)</strong></p></td>
 <td><p>コピーを開始する前にスキップするバイト数。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>バイト</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>Long</strong></p></td>
+<td><p><strong>長整数型 (Long)</strong></p></td>
 <td><p>取得するバイト数。</p></td>
 </tr>
 </tbody>
@@ -68,12 +68,12 @@ ms.locfileid: "28722859"
 
 **GetChunk** から返されたバイト数は変数に代入されます。 **GetChunk** を使用して、データの値全体の一部を 1 つずつ取得します。分割された値を集めて元の値に戻すには、 **[AppendChunk](field-appendchunk-method-dao.md)** メソッドを使用します。
 
-**オフセットが 0 の場合は、フィールドの最初のバイトからコピーが開始します。**
+offset が0の場合、 **GetChunk**はフィールドの最初のバイトからコピーを開始します。
 
-Numbytes がフィールド内のバイト数より大きい場合、 **GetChunk**はフィールドに実際の残りのバイト数を返します。
+numbytes がフィールドのバイト数よりも大きい場合、 **GetChunk**はフィールドに実際に残っているバイト数を返します。
 
 > [!NOTE]
-> [!メモ] 文字列の場合はメモ型 ( **Memo**) のフィールドを使用し、ロング バイナリ型 ( **Long Binary**) のフィールドにはバイナリ データのみ格納してください。この逆を行うと、予期しない結果を招きます。
+> [!メモ] 文字列の場合はメモ型 ( **Memo**) のフィールドを使用し、ロング バイナリ型 ( **Long Binary**) のフィールドにはバイナリ データのみ格納してください。 この逆を行うと、予期しない結果を招きます。
 
 ## <a name="example"></a>例
 

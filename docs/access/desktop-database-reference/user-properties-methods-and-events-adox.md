@@ -8,25 +8,25 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 691e1e4e329fe6a68a2826c43c1fd3453095ce5d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32312958"
 ---
 # <a name="user-properties-methods-and-events-adox"></a>ユーザーのプロパティ、メソッド、およびイベント (ADOX)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ## <a name="propertiescollections"></a>プロパティ/コレクション
 
-- [グループ コレクション](groups-collection-adox.md)
+- [Groups コレクション](groups-collection-adox.md)
 - [Name プロパティ](name-property-adox.md)
-- [プロパティのコレクション](properties-collection-ado.md)
+- [Properties コレクション](properties-collection-ado.md)
 
 ## <a name="methods"></a>メソッド
 
-- [パスワードの変更方法](changepassword-method-adox.md)
+- [ChangePassword メソッド](changepassword-method-adox.md)
 - [GetPermissions メソッド](getpermissions-method-adox.md)
 - [SetPermissions メソッド](setpermissions-method-adox.md)
 

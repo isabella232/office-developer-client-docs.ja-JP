@@ -8,42 +8,42 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: ea7f3e27a75b4483cb8cf46e27d4492f831cff33
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314400"
 ---
 # <a name="submitchanges-method-rds"></a>SubmitChanges メソッド (RDS)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-ローカルにキャッシュされていて更新可能な [Recordset](recordset-object-ado.md) の保留中の変更を、 [Connect](connect-property-rds.md) プロパティまたは [URL](url-property-rds.md) プロパティで指定されているデータ ソースに送信します。
+ローカルにキャッシュされていて更新可能な [Recordset](recordset-object-ado.md) の保留中の変更を、[Connect](connect-property-rds.md) プロパティまたは [URL](url-property-rds.md) プロパティで指定されているデータ ソースに送信します。
 
 ## <a name="syntax"></a>構文
 
 *DataControl*。SubmitChanges
 
-*DataFactory*。SubmitChanges*接続*、*レコード セット*
+*DataFactory*。SubmitChanges*Connection*、 *Recordset*
 
 ## <a name="parameters"></a>パラメーター
 
 |パラメーター|説明|
 |:--------|:----------|
 |*DataControl* |[RDS.DataControl](datacontrol-object-rds.md) オブジェクトを表すオブジェクト変数。|
-|*DataFactory* |[RDSServer.DataFactory](datafactory-object-rdsserver.md) オブジェクトを表すオブジェクト変数を指定します。|
+|*DataFactory* |[RDSServer.DataFactory](datafactory-object-rdsserver.md) オブジェクトを表すオブジェクト変数。|
 |*Connection* |**RDS.DataControl** オブジェクトの **Connect** プロパティで作成された接続を表す文字列型 ( **String** ) の値。|
-|*Recordset* |**Recordset** オブジェクトを表すオブジェクト変数です。|
+|*Recordset* |**Recordset** オブジェクトを表すオブジェクト変数。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-[RDS.DataControl](connect-property-rds.md) オブジェクトで [SubmitChanges](server-property-rds.md) メソッドを使用するには、その前に [Connect](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/sql-property-ado) プロパティ、 **Server** プロパティ、および **SQL** プロパティを設定しておく必要があります。
+**RDS.DataControl** オブジェクトで **SubmitChanges** メソッドを使用するには、その前に [Connect](connect-property-rds.md) プロパティ、[Server](server-property-rds.md) プロパティ、および [SQL](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/sql-property-ado) プロパティを設定しておく必要があります。
 
 [SubmitChanges](cancelupdate-method-rds.md) を呼び出した後に同じ **Recordset** オブジェクトに対して **CancelUpdate** メソッドを呼び出しても、既に変更がコミットされているため、その **CancelUpdate** 呼び出しは失敗します。
 
 変更を加えられたレコードだけが変更を反映させるために送信され、すべての変更が成功するか、またはすべてまとめて失敗します。
 
-**SubmitChanges**は、*既定*の**RDSServer.DataFactory**オブジェクトでのみ使用できます。 カスタム ビジネス オブジェクトには、このメソッドは使用できません。
+**SubmitChanges**は、*既定*の**rdsserver.datafactory**オブジェクトでのみ使用できます。 カスタム ビジネス オブジェクトには、このメソッドは使用できません。
 
 **URL** プロパティが設定されている場合、 **SubmitChanges** は、その URL で指定された場所に変更内容を送信します。
 

@@ -8,26 +8,26 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 487212acd8847928e1fab405593edb172d0172d0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289785"
 ---
 # <a name="making-a-connection"></a>接続の作成
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-データ ソースに接続するには、*接続文字列*、プロバイダーおよびデータ ソースごとに、パラメーターが異なる場合がありますを参照してください。 詳細については、「[接続文字列](creating-the-connection-string.md)」を参照してください。
+データソースに接続するには、*接続文字列*を指定する必要があります。これらのパラメーターは、プロバイダーとデータソースごとに異なる場合があります。 For more information, see [Creating the Connection String](creating-the-connection-string.md).
 
-ADO では、多くの場合、 **Connection** オブジェクトの **Open** メソッドを使用して接続を開きます。 **Open** メソッドの構文は次のとおりです。
+ADO では、多くの場合、**Connection** オブジェクトの **Open** メソッドを使用して接続を開きます。**Open** メソッドの構文は次のとおりです。
 
 ```vb
 Dim connection as New ADODB.Connection 
 connection.Open ConnectionString, UserID, Password, OpenOptions
 ```
 
-または、ショートカットの手法では、 **Recordset.Open**、暗黙的な接続を開くし、1 回の操作では、その接続上でコマンドを発行するを呼び出すことができます。 これには、 **Open**メソッドを*暗黙的*な有効な接続文字列で渡すことです。 Visual Basic 内の各メソッドの構文を以下に示します。
+代わりに、**Recordset.Open** というショートカット コマンドを呼び出す方法もあります。この方法では、一度の操作で、暗黙的な接続を開き、その接続に関するコマンドを発行できます。これには、**Open** メソッドの *ActiveConnection* 引数として、有効な接続文字列を渡します。ここでは、各メソッドの構文を Visual Basic で示しています。
 
 ```vb
 Dim recordset as ADODB.Recordset 

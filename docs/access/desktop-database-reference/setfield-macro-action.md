@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4fbf7252729c7b376da6ebe67f59941c1caf924d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314617"
 ---
 # <a name="setfield-macro-action"></a>SetField マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-" **SetField** /フィールドの設定" アクションを使用すると、フィールドに値を割り当てることができます。
+The **SetField** action can be used to assign a value to a field.
 
 > [!NOTE]
-> [!メモ] " **SetField** /フィールドの設定" アクションは、データ マクロでのみ使用できます。
+> "**SetField**/フィールドの設定" アクションは、データ マクロでのみ使用できます。
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
-" **SetField** /フィールドの設定" アクションの引数は次のとおりです。
+"SetField/フィールドの設定" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -40,7 +40,7 @@ ms.locfileid: "28722320"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Name</strong></p></td>
+<td><p><strong>名前</strong></p></td>
 <td><p>フィールドを識別する文字列。</p></td>
 </tr>
 <tr class="even">
@@ -53,5 +53,5 @@ ms.locfileid: "28722320"
 
 ## <a name="remarks"></a>注釈
 
-**SetField**アクションは、 **[CreateRecord](createrecord-data-block.md)** または**[EditRecord](editrecord-data-block.md)** のデータ ブロックの外部では使用できません。
+The **SetField** action cannot be used outside of an **[CreateRecord](createrecord-data-block.md)** or **[EditRecord](editrecord-data-block.md)** data block.
 

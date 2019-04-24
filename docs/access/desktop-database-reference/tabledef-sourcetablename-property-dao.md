@@ -1,5 +1,5 @@
 ---
-title: TableDef.SourceTableName プロパティ (DAO)
+title: TableDef tablename プロパティ (DAO)
 TOCTitle: SourceTableName Property
 ms:assetid: 3c02f5f6-70ae-39ec-0984-8d6b81992418
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192675(v=office.15)
@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: bd2610e728d97d3a9fc2f6359a42fd3cdccb11e5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314260"
 ---
-# <a name="tabledefsourcetablename-property-dao"></a>TableDef.SourceTableName プロパティ (DAO)
+# <a name="tabledefsourcetablename-property-dao"></a>TableDef tablename プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。 
+**適用先:** Access 2013、Office 2013 
 
 リンク テーブルの名前、またはベース テーブルの名前を指定する値を設定または取得します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。SourceTableName
+*式*。SourceTableName
 
-*式***テーブル定義**オブジェクトを表す変数です。
+*式***TableDef**オブジェクトを表す変数を取得します。
 
 ## <a name="remarks"></a>注釈
 

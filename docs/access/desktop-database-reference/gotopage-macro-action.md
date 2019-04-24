@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 10d55b435a59594eaf3e8380b6690ebbda63a258
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292161"
 ---
 # <a name="gotopage-macro-action"></a>GoToPage マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**GoToPage**アクションを使用すると、アクティブ フォームの指定したページの先頭のコントロールにフォーカスを移動します。 このアクションは、関連のある情報を改ページで分割しているフォームを作成した場合に使用できます。 たとえば、社員フォームの最初のページに個人情報、2 ページ目に会社情報、3 ページ目に売上情報があるとします。 **GoToPage**アクションを使用すると、目的のページに移動します。 また、タブ コントロールを使用すると、1 つのフォーム上で複数のページに情報を表示することもできます。
+You can use the **GoToPage** action to move the focus in the active form to the first control on a specified page. You can use this action if you have created a form with page breaks that contains groups of related information. For example, you might have an Employees form with personal information on one page, office information on another page, and sales information on a third page. You can use the **GoToPage** action to move to the desired page. You can also present multiple pages of information on a single form by using tab controls.
 
-## <a name="setting"></a>設定値
+## <a name="setting"></a>Setting
 
-**GoToPage**アクションには、次の引数があります。
+"GoToPage/ページの移動" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -41,34 +41,34 @@ ms.locfileid: "28712373"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>ページ番号</strong></p></td>
-<td><p>フォーカスを移動するページの数です。 マクロ ビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションの<strong>ページ番号</strong>ボックスにページ番号を入力します。 この引数を指定しないと、フォーカスはカレント ページにとどまります。 表示するページの部分を表示するのには、<strong>右</strong>と<strong>下</strong>の引数を使用できます。</p></td>
+<td><p><strong>Page Number/ページ番号</strong></p></td>
+<td><p>フォーカスを移動するページの番号を指定します。 [マクロビルダー] ウィンドウの [<strong>アクションの引数</strong>] セクションにある [<strong>ページ</strong>番号] ボックスにページ番号を入力します。 この引数を指定しないと、フォーカスはカレント ページにとどまります。 <strong>右</strong>および<strong>下</strong>の引数を使用して、表示するページの一部を表示できます。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Right</strong></p></td>
-<td><p>ページで、スポットの水平方向の位置は、ウィンドウの左端に表示するウィンドウの左端から計測されます。 <strong></strong>引数を指定する場合に必要です。</p></td>
+<td><p>ページの左端を表示する水平方向の位置を、そのページを表示するウィンドウの左端からの距離で指定します。"Down/下" 引数を指定する場合は、この引数は省略できません。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Down</strong></p></td>
-<td><p>ページ上の場所の垂直方向の位置は、ウィンドウの上端に表示するウィンドウの上端から測定されます。 <strong>右</strong>の引数を指定する場合に必要です。</p></td>
+<td><p>ページの上端を表示する垂直方向の位置を、そのページを表示するウィンドウの上端からの距離で指定します。"Right/右" 引数を指定する場合は、この引数は省略できません。</p></td>
 </tr>
 </tbody>
 </table>
 
 > [!NOTE]
-> **右**と**下**の引数は、インチまたはセンチメートル、Windows コントロール パネルの [地域の設定によって測定されます。
+> "Right/右" 引数と "Down/下" 引数は、インチまたは cm 単位で指定します。どちらの単位を使用するかは、Windows コントロール パネルの地域の設定によって決まります。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-ページで指定された最初のコントロール (フォームのタブ オーダーで定義されている) を選択するのには、このアクションを使用できます。 **フォーカスを移動**を使用すると、フォーム上の特定のコントロールに移動できます。
+このアクションを使用すると、指定ページの最初のコントロール (フォームのタブ オーダーで定義されたコントロール) を選択できます。フォーム上の特定のコントロールに移動するには、"GoToControl/コントロールの移動" アクションを使用します。
 
-Access ウィンドウよりも大きいページでは、フォームの**右**と**下**の引数を使用できます。 " **Page Number/ページ番号** " 引数を使用して目的のページに移動し、次に " **Right/右** " 引数と " **Down/下** " 引数を使ってページの必要な部分を表示します。 このとき、ウィンドウの左上隅から、引数で指定した間隔を置いた位置に、ページの左上隅が表示されます。
+Access ウィンドウよりも大きいページを持つフォームの場合は、引数**Right**および**Down**を使用できます。 " **Page Number/ページ番号** " 引数を使用して目的のページに移動し、次に " **Right/右** " 引数と " **Down/下** " 引数を使ってページの必要な部分を表示します。 このとき、ウィンドウの左上隅から、引数で指定した間隔を置いた位置に、ページの左上隅が表示されます。
 
-**GoToPage**アクションは、次の場合に使用できません。
+You can't use the **GoToPage** action in the following cases:
 
 - 非表示のフォームのページにフォーカスを移動する場合
 
 - タブ コントロール内の別のページにフォーカスを移動する場合
 
-Visual Basic for Applications (VBA) モジュールでは、 **GoToPage**アクションを実行するには、 **DoCmd**オブジェクトの**GoToPage**メソッドを使用します。
+To run the **GoToPage** action in a Visual Basic for Applications (VBA) module, use the **GoToPage** method of the **DoCmd** object.
 

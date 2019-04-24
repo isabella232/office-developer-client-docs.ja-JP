@@ -1,5 +1,5 @@
 ---
-title: カタログの参照をオブジェクト (ADOX)
+title: Catalog オブジェクト (ADOX) リファレンス
 TOCTitle: Catalog object (ADOX)
 ms:assetid: f1d6cf51-1b7a-4d7d-8c16-d1a7468ddfc3
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250228(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: e1971a27a6570ceff621c4b8c0b66db7e6224196
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32296585"
 ---
-# <a name="catalog-object-adox-reference"></a>カタログの参照をオブジェクト (ADOX)
+# <a name="catalog-object-adox-reference"></a>Catalog オブジェクト (ADOX) リファレンス
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 - [Catalog オブジェクト (ADOX)](catalog-object-adox.md)
-- [カタログのプロパティ、メソッド、およびイベント (ADOX)](catalog-properties-methods-and-events-adox.md)
+- [Catalog のプロパティ、メソッド、およびイベント (ADOX)](catalog-properties-methods-and-events-adox.md)
 

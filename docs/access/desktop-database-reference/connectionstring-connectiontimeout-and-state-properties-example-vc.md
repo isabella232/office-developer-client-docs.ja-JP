@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 929b81deeeab2fdc849d7a1ec9b7bf6b835d569e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295738"
 ---
 # <a name="connectionstring-connectiontimeout-and-state-properties-example-vc"></a>ConnectionString プロパティ、ConnectionTimeout プロパティ、State プロパティの使用例 (VC++)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 この例では、[Connection](connectionstring-property-ado.md) オブジェクトを開くための、 [ConnectionString](connection-object-ado.md) プロパティのさまざまな使い方を示します。また、 [ConnectionTimeout](connectiontimeout-property-ado.md) プロパティを使って接続のタイムアウト時間を設定し、 [State](state-property-ado.md) プロパティを使って接続の状態を確認します。このプロシージャを実行するには、GetState 関数が必要です。
 

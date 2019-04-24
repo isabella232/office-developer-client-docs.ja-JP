@@ -8,29 +8,29 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9316bc4302a559fa44082a0576595707157e9d64
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289886"
 ---
 # <a name="loadfromfile-method-ado"></a>LoadFromFile メソッド (ADO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 既存のファイルの内容を [Stream](stream-object-ado.md) に読み込みます。
 
 ## <a name="syntax"></a>構文
 
-*ストリーム*。LoadFromFile*ファイル名*
+*ストリーム*。LoadFromFile *FileName*
 
 ## <a name="parameters"></a>パラメーター
 
 |名前 |説明|
 |:----|:----------|
-|*FileName* |**Stream** に読み込むファイルの名前を含む文字列型 ( **String** ) の値を指定します。 *ファイル名*には、任意の有効なパスと UNC 形式の名前を含めることができます。 指定したファイルが存在しない場合は、実行時エラーが発生します。|
+|*FileName* |**Stream** に読み込むファイルの名前を含む文字列型 (**String**) の値を指定します。*FileName* には UNC 形式のパスとファイル名を指定できます。指定したファイルが存在しない場合は、実行時エラーが発生します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このメソッドを使用して、ローカル ファイルの内容を **Stream** オブジェクトに読み込むことができます。この方法で、ローカル ファイルの内容をサーバーにアップロードできます。
 

@@ -1,5 +1,5 @@
 ---
-title: TableDef.CreateIndex メソッド (DAO)
+title: TableDef index メソッド (DAO)
 TOCTitle: CreateIndex Method
 ms:assetid: 857b25c1-01fa-b926-0c74-7105e71b7505
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196791(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: baa82b659cc2260d4a003c644b2d03d6c897fd21
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314372"
 ---
-# <a name="tabledefcreateindex-method-dao"></a>TableDef.CreateIndex メソッド (DAO)
+# <a name="tabledefcreateindex-method-dao"></a>TableDef index メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。 
+**適用先:** Access 2013、Office 2013 
 
-新しい **[Index](index-object-dao.md)** オブジェクトを作成します (Microsoft Access ワークスペースのみ)。
+新しい**[Index](index-object-dao.md)** オブジェクトを作成します (Microsoft access ワークスペースのみ)。 .
 
 ## <a name="syntax"></a>構文
 
-*式*です。CreateIndex (***名***)
+*式*。createindex (***名前***)
 
-*式***テーブル定義**オブジェクトを表す変数です。
+*式***TableDef**オブジェクトを表す変数を取得します。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -50,9 +50,9 @@ ms.locfileid: "28706236"
 <tbody>
 <tr class="odd">
 <td><p><em>Name</em></p></td>
-<td><p>省略可能</p></td>
-<td><p><strong>Variant (バリアント型)</strong></p></td>
-<td><p>新しい <strong>Index</strong> オブジェクトの一意の名前を表す文字列型 (<strong>String</strong>) の値。有効な <strong>Index</strong> 名の詳細については、<strong>Name</strong> プロパティを参照してください。</p></td>
+<td><p>Optional</p></td>
+<td><p><strong>Variant</strong></p></td>
+<td><p>新しい <strong>Index</strong> オブジェクトの一意の名前を表す文字列型 (<strong>String</strong>) の値。 有効な <strong>Index</strong> 名の詳細については、<strong>Name</strong> プロパティを参照してください。</p></td>
 </tr>
 </tbody>
 </table>
@@ -64,9 +64,9 @@ Index
 
 ## <a name="remarks"></a>注釈
 
-**CreateIndex** メソッドを使用して、 **TableDef** オブジェクトの新しい **Index** オブジェクトを作成できます。 **CreateIndex**の使用時に省略可能な名前の一部を省略した場合は、設定または新しいオブジェクトをコレクションに追加する前に、 **Name**プロパティをリセットするに適切な代入ステートメントを使用できます。 オブジェクトの追加後に **Name** プロパティを設定できるかどうかは、 **Indexes** コレクションを格納しているオブジェクトの種類によって決まります。 詳細については、 **Name** プロパティのトピックを参照してください。
+**CreateIndex** メソッドを使用して、 **TableDef** オブジェクトの新しい **Index** オブジェクトを作成できます。 **createindex**を使用するときに省略可能な名前の部分を省略した場合は、新しいオブジェクトをコレクションに追加する前に、適切な代入ステートメントを使用して、 **name**プロパティを設定またはリセットできます。 オブジェクトの追加後に **Name** プロパティを設定できるかどうかは、 **Indexes** コレクションを格納しているオブジェクトの種類によって決まります。 詳細については、 **Name** プロパティのトピックを参照してください。
 
-名は、既にコレクションのメンバーであるオブジェクトを参照している場合、 **[Append](fields-append-method-dao.md)** メソッドを使用すると、実行時エラーが発生します。
+name が既にコレクションのメンバーであるオブジェクトを参照している場合、 **[Append](fields-append-method-dao.md)** メソッドを使用すると、実行時エラーが発生します。
 
 コレクションから **Index** オブジェクトを削除するには、コレクションの **[Delete](fields-delete-method-dao.md)** メソッドを使用します。
 

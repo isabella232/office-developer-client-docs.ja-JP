@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 4f5ffae4880cadb90f47f1ac348ffc8b3ea58785
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32288912"
 ---
 # <a name="microsoft-ole-db-provider-for-odbc"></a>Microsoft OLE DB Provider for ODBC
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ADO または RDS のプログラマにとって、すべてのデータ ソースで OLE DB インターフェイスが公開され、ADO で直接データ ソースを呼び出すことができるのが理想的です。OLE DB インターフェイスを実装するデータベース ベンダーは増えていますが、まだこのインターフェイスを公開していないデータ ソースもあります。ただし、現在使用されている事実上すべての DBMS システムは、ODBC によるアクセスが可能です。
 
@@ -30,7 +30,7 @@ ODBC ドライバーは、Microsoft SQL Server、Microsoft Access (Microsoft Jet
 
 ## <a name="connection-string-parameters"></a>接続文字列パラメーター
 
-このプロバイダーに接続するには、**ConnectionString** プロパティの [Provider=](connectionstring-property-ado.md) 引数を次のように設定します。
+このプロバイダーに接続するには、[ConnectionString](connectionstring-property-ado.md) プロパティの **Provider=** 引数を次のように設定します。
 
 ```sql 
  
@@ -80,7 +80,7 @@ MSDASQL
 </tr>
 <tr class="odd">
 <td><p><strong>URL</strong></p></td>
-<td><p>ファイルまたは web フォルダーで公開されているディレクトリの URL を指定します。</p></td>
+<td><p>web フォルダーに公開されているファイルまたはディレクトリの URL を指定します。</p></td>
 </tr>
 </tbody>
 </table>
@@ -100,17 +100,17 @@ MSDASQL
 
 `"[Provider=MSDASQL;] DRIVER=driver; SERVER=server;DATABASE=database; UID=user; PWD=password"`
 
-**DSN**または**FileDSN**を使用する場合は Windows のコントロール パネルの [ODBC データ ソース アドミニストレーターを使用する必要があります定義します。 Microsoft Windows 2000 では、odbc データ ソース アドミニストレーターは管理ツールの下にあります。 以前のバージョンの Windows では、odbc データ ソース アドミニストレーター アイコンは**32 ビット ODBC**または**ODBC**では単に呼ばれます。
+If you use a **DSN** or **FileDSN**, it must be defined through the ODBC Data Source Administrator in the Windows Control Panel. In Microsoft Windows 2000, the ODBC Administrator is located under Administrative Tools. In previous versions of Windows, the ODBC Administrator icon is named **32-bit ODBC** or simply **ODBC**.
 
 **DSN** を設定する代わりに、"SQL Server" などの ODBC ドライバー (**DRIVER=**)、サーバー名 (**SERVER=**)、およびデータベース名 (**DATABASE=**) を指定することもできます。
 
 ユーザー アカウント名 (**UID=**) と、そのユーザー アカウントのパスワード (**PWD=**) を、ODBC 固有のパラメーターまたは ADO で定義された標準的な *user* パラメーターと *password* パラメーターで指定できます。
 
-**DSN**の定義が既にデータベースを指定して、*別のデータベースに接続する**DSN**に加えて*データベース*パラメーター*を指定できます。 **DSN**を使用するときに常に**データベース*パラメーター*を含めることをお勧めします。 これは、ように**DSN**の定義を確認した後、他のユーザーがデータベースの既定のパラメーターを変更する適切なデータベースに接続すること。
+**dsn**定義は既にデータベースを指定しています** が、別のデータベースに接続するために**dsn**だけでなく*database*パラメーターを指定することもできます。 **DSN**を使用するときは *、* 常に*database*パラメーターを含めることをお勧めします。 This will ensure that you connect to the proper database in the event that another user changed the default database parameter since you last checked the **DSN** definition.
 
 ## <a name="provider-specific-connection-properties"></a>プロバイダー固有の Connection のプロパティ
 
-OLE DB Provider for ODBC は、 [Connection](properties-collection-ado.md) オブジェクトの **Properties** コレクションにプロパティを追加します。次の表は、これらのプロパティの一覧で、かっこ内は対応する OLE DB プロパティ名です。
+OLE DB Provider for ODBC は、**Connection** オブジェクトの [Properties](properties-collection-ado.md) コレクションにプロパティを追加します。次の表は、これらのプロパティの一覧で、かっこ内は対応する OLE DB プロパティ名です。
 
 <table>
 <colgroup>
@@ -125,7 +125,7 @@ OLE DB Provider for ODBC は、 [Connection](properties-collection-ado.md) オ�
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>アクセス手順<br />
+<td><p>アクセス可能な手順<br />
 (KAGPROP_ACCESSIBLEPROCEDURES)</p></td>
 <td><p>ユーザーがストアド プロシージャにアクセスできるかどうかを示します。</p></td>
 </tr>
@@ -155,32 +155,32 @@ OLE DB Provider for ODBC は、 [Connection](properties-collection-ado.md) オ�
 <td><p>ドライバーがデータ ソース内のファイルを、テーブルとして扱うか、カタログとして扱うかを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>エスケープ句のように<br />
+<td><p>Like Escape 句<br />
 (KAGPROP_LIKEESCAPECLAUSE)</p></td>
 <td><p>ドライバーが、WHERE 句の LIKE 述語でパーセント記号 (%) および下線記号 (_) のエスケープ文字を定義および使用できるかどうかを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p>によるグループ内の最大列<br />
+<td><p>Group By の最大列<br />
 (KAGPROP_MAXCOLUMNSINGROUPBY)</p></td>
 <td><p>SELECT ステートメントの GROUP BY 句に記述できる最大列数を示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>インデックスの最大列<br />
+<td><p>インデックスの最大列数<br />
 (KAGPROP_MAXCOLUMNSININDEX)</p></td>
 <td><p>インデックスに格納できる最大列数を示します。</p></td>
 </tr>
 <tr class="even">
-<td><p>Order By の中の最大列<br />
+<td><p>Order By における最大列数<br />
 (KAGPROP_MAXCOLUMNSINORDERBY)</p></td>
 <td><p>SELECT ステートメントの ORDER BY 句に記述できる最大列数を示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>選択中の最大列<br />
+<td><p>Select の最大列<br />
 (KAGPROP_MAXCOLUMNSINSELECT)</p></td>
 <td><p>SELECT ステートメントの SELECT 部分に記述できる最大列数を示します。</p></td>
 </tr>
 <tr class="even">
-<td><p>テーブルの最大列<br />
+<td><p>テーブルの最大列数<br />
 (KAGPROP_MAXCOLUMNSINTABLE)</p></td>
 <td><p>テーブルの最大列数を示します。</p></td>
 </tr>
@@ -190,7 +190,7 @@ OLE DB Provider for ODBC は、 [Connection](properties-collection-ado.md) オ�
 <td><p>ODBC ドライバーがサポートする数値関数を示します。関数名とこのビットマスクで使用される関連付けられた値の一覧については、ODBC マニュアルの「Appendix E: Scalar Functions」 (英語) を参照してください。</p></td>
 </tr>
 <tr class="even">
-<td><p>外部結合の機能<br />
+<td><p>外部参加機能<br />
 (KAGPROP_OJCAPABILITY)</p></td>
 <td><p>プロバイダーがサポートする OUTER JOIN の種類を示します。</p></td>
 </tr>
@@ -225,7 +225,7 @@ OLE DB Provider for ODBC は、 [Connection](properties-collection-ado.md) オ�
 <td><p>ODBC ドライバーがサポートする時刻/日付関数を示します。関数名とこのビットマスクで使用される関連付けられた値の一覧については、ODBC マニュアルの「Appendix E: Scalar Functions」を参照してください。</p></td>
 </tr>
 <tr class="odd">
-<td><p>SQL の文法のサポート<br />
+<td><p>SQL 文法のサポート<br />
 (KAGPROP_ODBCSQLCONFORMANCE)</p></td>
 <td><p>ODBC ドライバーがサポートする SQL 文法を示します。</p></td>
 </tr>
@@ -235,7 +235,7 @@ OLE DB Provider for ODBC は、 [Connection](properties-collection-ado.md) オ�
 
 ## <a name="provider-specific-recordset-and-command-properties"></a>プロバイダー固有の Recordset および Command のプロパティ
 
-OLE DB Provider for ODBC は、 **Recordset** オブジェクトと **Command** オブジェクトの **Properties** コレクションにプロパティを追加します。次の表は、これらのプロパティの一覧で、かっこ内は対応する OLE DB プロパティ名です。
+OLE DB Provider for ODBC は、**Recordset** オブジェクトと **Command** オブジェクトの **Properties** コレクションにプロパティを追加します。次の表は、これらのプロパティの一覧で、かっこ内は対応する OLE DB プロパティ名です。
 
 <table>
 <colgroup>
@@ -260,17 +260,17 @@ OLE DB Provider for ODBC は、 **Recordset** オブジェクトと **Command** 
 <td><p>2 人のユーザーがデータ ソースの同じデータに同時にアクセスしようとしたときに発生する問題を減少させるための方法を示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>順方向専用カーソルの BLOB のアクセシビリティ<br />
+<td><p>前方のみカーソルでの BLOB アクセシビリティ<br />
 (KAGPROP_BLOBSONFOCURSOR)</p></td>
 <td><p>前方のみのカーソルの使用時に BLOB <strong>Fields</strong> にアクセスできるかどうかを示します。</p></td>
 </tr>
 <tr class="even">
-<td><p>SQL_FLOAT、SQL_DOUBLE、および SQL_REAL を QBU WHERE 句に含める<br />
+<td><p>SQL_FLOAT、SQL_DOUBLE、および SQL_REAL を qbu WHERE 句に含める<br />
 (KAGPROP_INCLUDENONEXACT)</p></td>
 <td><p>SQL_FLOAT、SQL_DOUBLE、および SQL_REAL の値を QBU WHERE 句に含めることができるかどうかを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p>挿入後の最後の行の位置<br />
+<td><p>挿入後の最終行の位置<br />
 (KAGPROP_POSITIONONNEWROW)</p></td>
 <td><p>新規レコードをテーブルに挿入した後、テーブルの最後の行が現在の行になるかどうかを示します。</p></td>
 </tr>
@@ -285,7 +285,7 @@ OLE DB Provider for ODBC は、 **Recordset** オブジェクトと **Command** 
 <td><p><strong>Recordset</strong> で使用されるカーソルの種類を示します。</p></td>
 </tr>
 <tr class="even">
-<td><p>マーシャ リングできる行セットを生成します。<br />
+<td><p>マーシャリングできる行セットを生成する<br />
 (KAGPROP_MARSHALLABLE)</p></td>
 <td><p>ODBC ドライバーがマーシャリング可能なレコードセットを生成することを示します。</p></td>
 </tr>
@@ -297,11 +297,11 @@ OLE DB Provider for ODBC は、 **Recordset** オブジェクトと **Command** 
 
 [Command](command-object-ado.md) オブジェクトの使用方法は、データ ソースおよび受け付けられるクエリまたはコマンド ステートメントの種類によって大きく異なります。
 
-ODBC には、ストアド プロシージャを呼び出すための独自の構文があります。 **コマンド**オブジェクト、 [Connection](connection-object-ado.md)オブジェクトの**Execute**メソッドの*CommandText*引数、または[Recordset](recordset-object-ado.md)の**Open**メソッドの*Source*引数の[CommandText](commandtext-property-ado.md)プロパティのオブジェクトは、この構文を使用して文字列に渡します。
+ODBC には、ストアド プロシージャを呼び出すための独自の構文があります。**Command** オブジェクトの [CommandText](commandtext-property-ado.md) プロパティ、[Connection](connection-object-ado.md) オブジェクトの **Execute** メソッドの *CommandText* 引数、または [Recordset](recordset-object-ado.md) オブジェクトの **Open** メソッドの *Source* 引数の場合は、次の構文で文字列を渡します。
 
 `"{ [ ? = ] call procedure [ ( ? [, ? [ ,  ]] ) ] }"`
 
-**?** はそれぞれ [Parameters](parameters-collection-ado.md) コレクションのオブジェクトを参照します。最初の **?** は **Parameters**(0) を参照し、次の **?** は **Parameters**(1) を参照し、以下同様に続きます。
+**?** はそれぞれ [Parameters](parameters-collection-ado.md) コレクションのオブジェクトを参照します。 最初の **?** 参照する**パラメーター**(0)、次に参照し**ます。** **パラメーター**(1) などを参照します。
 
 パラメーターの参照は省略可能で、ストアド プロシージャの構造に依存します。パラメーターを定義していないストアド プロシージャを呼び出す場合の構文は、次のようになります。
 
@@ -338,145 +338,145 @@ ODBC には、ストアド プロシージャを呼び出すための独自の�
 <thead>
 <tr class="header">
 <th><p>プロパティ</p></th>
-<th><p>前方向</p></th>
-<th><p>動的</p></th>
-<th><p>キーセット</p></th>
-<th><p>静的</p></th>
+<th><p>ForwardOnly</p></th>
+<th><p>Dynamic</p></th>
+<th><p>Keyset</p></th>
+<th><p>Static</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><a href="absolutepage-property-ado.md">AbsolutePage</a></p></td>
-<td><p>利用不可</p></td>
-<td><p>利用不可</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>使用不可</p></td>
+<td><p>使用不可</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="absoluteposition-property-ado.md">AbsolutePosition</a></p></td>
-<td><p>利用不可</p></td>
-<td><p>利用不可</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>使用不可</p></td>
+<td><p>使用不可</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="activeconnection-property-ado.md">ActiveConnection</a></p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="bof-eof-properties-ado.md">BOF</a></p></td>
-<td><p>値の取得のみ</p></td>
-<td><p>値の取得のみ</p></td>
-<td><p>値の取得のみ</p></td>
-<td><p>値の取得のみ</p></td>
+<td><p>読み取り専用</p></td>
+<td><p>読み取り専用</p></td>
+<td><p>読み取り専用</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="bookmark-property-ado.md">Bookmark</a></p></td>
-<td><p>利用不可</p></td>
-<td><p>利用不可</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>使用不可</p></td>
+<td><p>使用不可</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="cachesize-property-ado.md">CacheSize</a></p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="cursorlocation-property-ado.md">CursorLocation</a></p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="cursortype-property-ado.md">カーソル。</a></p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
+<td><p><a href="cursortype-property-ado.md">CursorType</a></p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="editmode-property-ado.md">EditMode</a></p></td>
-<td><p>値の取得のみ</p></td>
-<td><p>値の取得のみ</p></td>
-<td><p>値の取得のみ</p></td>
-<td><p>値の取得のみ</p></td>
+<td><p>読み取り専用</p></td>
+<td><p>読み取り専用</p></td>
+<td><p>読み取り専用</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="filter-property-ado.md">フィルター</a></p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
+<td><p><a href="filter-property-ado.md">Filter</a></p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="locktype-property-ado.md">ロック。</a></p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
+<td><p><a href="locktype-property-ado.md">LockType</a></p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="marshaloptions-property-ado.md">スレッド</a></p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
+<td><p><a href="marshaloptions-property-ado.md">MarshalOptions</a></p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="maxrecords-property-ado.md">MaxRecords</a></p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="pagecount-property-ado.md">PageCount</a></p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
 <td><p>利用不可</p></td>
-<td><p>値の取得のみ</p></td>
-<td><p>値の取得のみ</p></td>
+<td><p>読み取り専用</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="pagesize-property-ado.md">PageSize</a></p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="recordcount-property-ado.md">RecordCount</a></p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
 <td><p>利用不可</p></td>
-<td><p>値の取得のみ</p></td>
-<td><p>値の取得のみ</p></td>
+<td><p>読み取り専用</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="source-property-ado-recordset.md">Source</a></p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
-<td><p>値の取得および設定</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
+<td><p>読み取り/書き込み</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="state-property-ado.md">State</a></p></td>
-<td><p>値の取得のみ</p></td>
-<td><p>値の取得のみ</p></td>
-<td><p>値の取得のみ</p></td>
-<td><p>値の取得のみ</p></td>
+<td><p>読み取り専用</p></td>
+<td><p>読み取り専用</p></td>
+<td><p>読み取り専用</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="status-property-ado-recordset.md">状態</a></p></td>
-<td><p>値の取得のみ</p></td>
-<td><p>値の取得のみ</p></td>
-<td><p>値の取得のみ</p></td>
-<td><p>値の取得のみ</p></td>
+<td><p>読み取り専用</p></td>
+<td><p>読み取り専用</p></td>
+<td><p>読み取り専用</p></td>
+<td><p>読み取り専用</p></td>
 </tr>
 </tbody>
 </table>
@@ -497,10 +497,10 @@ ODBC には、ストアド プロシージャを呼び出すための独自の�
 <thead>
 <tr class="header">
 <th><p>メソッド</p></th>
-<th><p>前方向</p></th>
-<th><p>動的</p></th>
-<th><p>キーセット</p></th>
-<th><p>静的</p></th>
+<th><p>ForwardOnly</p></th>
+<th><p>Dynamic</p></th>
+<th><p>Keyset</p></th>
+<th><p>Static</p></th>
 </tr>
 </thead>
 <tbody>
@@ -617,14 +617,14 @@ ODBC には、ストアド プロシージャを呼び出すための独自の�
 <td><p>はい</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="resync-method-ado.md">再同期</a></p></td>
+<td><p><a href="resync-method-ado.md">Resync</a></p></td>
 <td><p>いいえ</p></td>
 <td><p>いいえ</p></td>
 <td><p>はい</p></td>
 <td><p>はい</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="supports-method-ado.md">サポートしています</a></p></td>
+<td><p><a href="supports-method-ado.md">機能</a></p></td>
 <td><p>はい</p></td>
 <td><p>はい</p></td>
 <td><p>はい</p></td>
@@ -652,7 +652,7 @@ ODBC には、ストアド プロシージャを呼び出すための独自の�
 
 ## <a name="dynamic-properties"></a>動的プロパティ
 
-Microsoft OLE DB Provider for ODBC は、開かれていない **Connection** オブジェクト、 [Recordset](connection-object-ado.md) オブジェクト、および [Command](recordset-object-ado.md) オブジェクトの [Properties](command-object-ado.md) コレクションに動的プロパティを挿入します。
+Microsoft OLE DB Provider for ODBC は、開かれていない [Connection](connection-object-ado.md) オブジェクト、[Recordset](recordset-object-ado.md) オブジェクト、および [Command](command-object-ado.md) オブジェクトの **Properties** コレクションに動的プロパティを挿入します。
 
 以下の表は、各動的プロパティの ADO 名と OLE DB 名の対応表です。 「OLE DB プログラマ リファレンス」では、「説明」欄に ADO プロパティ名が示されています。プロパティの詳細については、「OLE DB プログラマ リファレンス」を参照してください。OLE DB プロパティ名をキーワードとして検索するか、「付録 C: プロパティ表」を参照してください。
 
@@ -761,7 +761,7 @@ Microsoft OLE DB Provider for ODBC は、開かれていない **Connection** �
 <td><p>DBPROP_INIT_LCID</p></td>
 </tr>
 <tr class="odd">
-<td><p>Location</p></td>
+<td><p>場所</p></td>
 <td><p>DBPROP_INIT_LOCATION</p></td>
 </tr>
 <tr class="even">
@@ -1001,7 +1001,7 @@ Microsoft OLE DB Provider for ODBC は、開かれていない **Connection** �
 <td><p>DBPROP_IConnectionPointContainer</p></td>
 </tr>
 <tr class="odd">
-<td><p>IConvertType</p></td>
+<td><p>iconverttype</p></td>
 <td><p>DBPROP_IConvertType</p></td>
 </tr>
 <tr class="even">
@@ -1261,7 +1261,7 @@ Microsoft OLE DB Provider for ODBC は、開かれていない **Connection** �
 <td><p>DBPROP_IConnectionPointContainer</p></td>
 </tr>
 <tr class="odd">
-<td><p>IConvertType</p></td>
+<td><p>iconverttype</p></td>
 <td><p>DBPROP_IConvertType</p></td>
 </tr>
 <tr class="even">
@@ -1446,5 +1446,5 @@ Microsoft OLE DB Provider for ODBC は、開かれていない **Connection** �
 
 ## <a name="see-also"></a>関連項目
 
-特定の実装および ODBC 用 Microsoft OLE DB プロバイダーの機能の情報に関する詳細については、 [OLE DB プログラマ ガイド」](https://docs.microsoft.com/previous-versions/windows/desktop/ms713643(v=vs.85))を参照してくださいまたは[データ プラットフォーム デベロッパー センター](https://docs.microsoft.com/sql/connect/sql-data-developer?view=sql-server-2017)を参照してください。
+Microsoft ole db Provider for ODBC に関する特定の実装と機能に関する情報については、「 [OLE db プログラマガイド」](https://docs.microsoft.com/previous-versions/windows/desktop/ms713643(v=vs.85))または「[データプラットフォームデベロッパーセンター](https://docs.microsoft.com/sql/connect/sql-data-developer?view=sql-server-2017)」を参照してください。
 

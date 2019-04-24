@@ -8,17 +8,17 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 617dca5ced5410e2023657ea1b0b748066f7843f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314057"
 ---
 # <a name="ole-db-provider-for-internet-publishing"></a>OLE DB Provider for Internet Publishing
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-ADO[レコード](record-object-ado.md)および[ストリーム](stream-object-ado.md)オブジェクトは、そのインターネット公開インターネット発行プロバイダー () にアクセスし、web フォルダーまたは FrontPage によって処理されるファイルなどのリソースを操作する Microsoft OLE DB プロバイダーを使用できます。 ADO を使用して、 **Record** 、 **Stream** 、または [Recordset](recordset-object-ado.md) のソースを URL に指定することができます。 その後、リソースをアップロード、ダウンロード、移動、コピー、および削除したり、リソースのプロパティを直接操作することができるようになります。
+ADO [Record](record-object-ado.md)オブジェクトと[Stream](stream-object-ado.md)オブジェクトは、microsoft OLE DB provider for internet publishing (internet publishing provider) と共に使用して、web フォルダーや microsoft FrontPage で提供されるファイルなどのリソースにアクセスしたり、操作したりすることができます。 ADO を使用して、 **Record** 、 **Stream** 、または [Recordset](recordset-object-ado.md) のソースを URL に指定することができます。 その後、リソースをアップロード、ダウンロード、移動、コピー、および削除したり、リソースのプロパティを直接操作することができるようになります。
 
 Internet Publishing Provider で **Records** と **Streams** を使用するコード例については、「 [インターネットに発行するためのシナリオ](internet-publishing-scenario.md)」を参照してください。
 
@@ -33,14 +33,14 @@ ADO を Internet Publishing Provider に接続するには、3 つの方法が�
     objConn.Open "URL=https://servername" 
   ```
 
-- 接続文字列の*Provider*キーワードに Msdaipp.dso を指定します。 次に例を示します。
+- 接続文字列の *Provider* キーワードに Msdaipp.dso を指定します。 次に例を示します。
     
   ```vb 
      
     objConn.Open "provider=MSDAIPP.DSO;data source=https://servername" 
   ```
 
-- [Connection](provider-property-ado.md) オブジェクトの [Provider](connection-object-ado.md) プロパティに Msdaipp.dso を指定します。次に例を示します。
+- [Connection](provider-property-ado.md) オブジェクトの [Provider](connection-object-ado.md) プロパティに Msdaipp.dso を指定します。 次に例を示します。
     
   ```vb 
      
@@ -49,7 +49,7 @@ ADO を Internet Publishing Provider に接続するには、3 つの方法が�
   ```
 
 > [!NOTE]
-> プロバイダー、*プロバイダー*の接続文字列キーワードまたは**プロバイダー**のプロパティのいずれかの値として Msdaipp.dso が明示的に指定されている場合は使用できません"URL ="接続文字列にします。 "URL=" を使用すると、エラーが発生します。 このトピックで前述したように、URL を単に指定代わりに、します。
+> *Provider* 接続文字列キーワードまたは **Provider** プロパティのいずれかでプロバイダーの値として明示的に Msdaipp.dso を指定すると、接続文字列に "URL=" を使用することはできません。 そのようにした場合は、エラーが発生します。 代わりに、このトピックで前述したように URL を指定するだけです。
 
 Internet Publishing Provider の詳細については、「[Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md)」を参照してください。または、OLE DB Provider for Internet Publishing が一緒にインストールされるソース アプリケーションである Windows 2000、Office 2000、または Internet Explorer 5.0 に付属しているプロバイダー マニュアルを参照してください。
 

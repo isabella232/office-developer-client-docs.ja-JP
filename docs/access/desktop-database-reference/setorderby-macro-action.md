@@ -12,20 +12,20 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: 86834cd8b6132e8939067c0e34037ca1b0ef8bad
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314610"
 ---
 # <a name="setorderby-macro-action"></a>SetOrderBy マクロ アクション
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 **SetOrderBy** アクションを使用し、フォーム、レポート、テーブル、またはクエリ結果のレコードを並べ替えることができます。
 
-## <a name="setting"></a>設定
+## <a name="setting"></a>Setting
 
 **SetOrderBy** アクションの引数は次のとおりです。
 
@@ -53,7 +53,7 @@ ms.locfileid: "28704421"
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このマクロ アクションを実行すると、アクティブであり、かつフォーカスがあるテーブル、フォーム、レポート、またはデータシート (クエリ結果) に対して並べ替えが適用されます。
 

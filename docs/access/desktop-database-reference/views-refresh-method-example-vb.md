@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 9018ae314f814f3adca3268beba2f82e4e0ea2fa
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32312160"
 ---
 # <a name="views-refresh-method-example-vb"></a>Views の Refresh メソッドの使用例 (VB)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 次のコードでは、[Catalog](views-collection-adox.md) の [Views](catalog-object-adox.md) コレクションを更新する方法を示します。この処理は、 [Catalog](view-object-adox.md) の **View** オブジェクトにアクセスする前に行う必要があります。
 

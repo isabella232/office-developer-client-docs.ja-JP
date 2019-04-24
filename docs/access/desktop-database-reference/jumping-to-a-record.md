@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 08d8a3d7b3d6012867a91aa306f45872bfebb2e1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290787"
 ---
 # <a name="jumping-to-a-record"></a>レコードへのジャンプ
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 次の構文で [Move](move-method-ado.md) メソッドを使用すると、 **Recordset** 内を指定した数の分だけ前後に移動できます。
 
@@ -34,9 +34,9 @@ oRs.Move NumRecords, Start
 
 **Move** の呼び出しにより、現在のレコードの位置が最後のレコードよりも後に移動した場合、現在のレコードの位置は、**Recordset** 内の最後のレコードの後に設定されます (**EOF** が **True** になる)。**EOF** プロパティが既に **True** の場合、前方に移動しようとするとエラーが発生します。
 
-空の **Recordset** オブジェクトから **Move** メソッドを呼び出すと、エラーが発生します。
+空の **Recordset** オブジェクトで **Move** メソッドを呼び出すと、エラーが発生します。
 
-引数*Start*でブックマークを指定した場合、移動は、 **Recordset**オブジェクトがブックマークをサポートするいると仮定して、このブックマークを持つレコードを基準にしてが。 ブックマークは、 [Bookmark](bookmark-property-ado.md) プロパティを使用して取得します。 引数を指定しない場合は、現在のレコードを基準にして移動します。
+**Recordset** オブジェクトでブックマークがサポートされている場合、*Start* 引数でブックマークを指定すると、このブックマークが指すレコードを基準にして移動します。ブックマークは、[Bookmark](bookmark-property-ado.md) プロパティを使用して取得します。引数を指定しない場合は、現在のレコードを基準にして移動します。
 
-*NumRecords*引数を現在のレコード位置が現在キャッシュされているレコード グループの範囲外に移動する、プロバイダーからのレコードをローカルにキャッシュ、 **CacheSize**プロパティを使用する場合、レコードの新しいグループを取得するために ADO を強制的に移動先のレコードから開始しています。 **CacheSize** プロパティが、新規に取得されるグループのサイズを決定し、移動先のレコードが最初に取得されるレコードになります。
+**CacheSize** プロパティを使用してプロバイダーからのレコードをローカルにキャッシュしている場合、*NumRecords* 引数を渡して、現在キャッシュされているレコード グループの範囲外に現在のレコード位置を移動すると、移動先のレコードから始まる新規レコード グループが強制的に取得されます。**CacheSize** プロパティが、新規に取得されるグループのサイズを決定し、移動先のレコードが最初に取得されるレコードになります。
 

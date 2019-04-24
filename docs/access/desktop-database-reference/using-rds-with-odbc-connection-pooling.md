@@ -8,22 +8,22 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 87d380fdc52cdee2aa834fd6e78ff1b761a0e93a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32312118"
 ---
 # <a name="using-rds-with-odbc-connection-pooling"></a>RDS を ODBC 接続プールと共に使用する
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ODBC データ ソースを使用している場合は、インターネット インフォメーション サービス (IIS) の接続プール オプションを使って、クライアントの読み込みのパフォーマンスを向上できます。接続プールは接続のためのリソース マネージャーで、頻繁に使用される接続を開いた状態に保つことができます。
 
 接続プールを有効にする方法については、インターネット インフォメーション サービスのドキュメントを参照してください。
 
-接続プールを有効にすることがあります件名の web サーバーに他の制約では、Microsoft インターネット インフォメーション サービスのドキュメントで説明したように注意してください。
+Microsoft インターネットインフォメーションサービスのドキュメントで説明されているように、接続プールを有効にすると、web サーバーに他の制限が適用されることに注意してください。
 
 接続プールの安定性とパフォーマンスの向上を確保するには、TCP/IP ソケット ネットワーク ライブラリを使用するように Microsoft SQL Server を構成する必要があります。
 
@@ -31,7 +31,7 @@ ODBC データ ソースを使用している場合は、インターネット �
 
   - TCP/IP ソケットを使用するように SQL Server コンピューターを構成する。
 
-  - TCP/IP ソケットを使用する web サーバーを構成します。
+  - tcp/ip ソケットを使用するように web サーバーを構成します。
 
 ## <a name="configuring-the-sql-server-computer-to-use-tcpip-sockets"></a>TCP/IP ソケットを使用するように SQL Server コンピューターを構成する
 
@@ -41,83 +41,83 @@ SQL Server コンピューター上で SQL Server セットアップ プログ�
 
 **Microsoft SQL Server 6.5 の場合**
 
-1.  **[スタート**] メニューから [**プログラム**] をポイントし、[ **Microsoft SQL Server 6.5**をポイントし、 **SQL セットアップ**] をクリックします。
+1.  From the **Start** menu, point to **Programs**, point to **Microsoft SQL Server 6.5**, and then click **SQL Setup**.
 
-2.  2 回 [**続行**を] をクリックします。
+2.  Click **Continue** twice.
 
-3.  **Microsoft SQL Server-オプション**] ダイアログ ボックスでは、**ネットワーク サポートの変更**を選択し、し、[**続行**] をクリックします。
+3.  In the **Microsoft SQL Server — Options** dialog box, select **Change Network Support**, and then click **Continue**.
 
-4.  [ **TCP/IP ソケット**] チェック ボックスを選択すると、かどうかを確認し、[ **OK**] をクリックします。
+4.  Make sure the **TCP/IP Sockets** check box is selected, and click **OK**.
 
-5.  終了するには **[続行**] をクリックし、セットアップを終了します。
+5.  Click **Continue** to finish, and exit setup.
 
 **Microsoft SQL Server 7.0 の場合**
 
-1.  **[スタート**] メニューから [**プログラム**] をポイントし、[ **Microsoft SQL Server 7.0**をポイントし、**サーバー ネットワーク ユーティリティ**] をクリックします。
+1.  From the **Start** menu, point to **Programs**, point to **Microsoft SQL Server 7.0**, and then click **Server Network Utility**.
 
-2.  ダイアログ ボックスの [**全般**] タブで [**追加**] をクリックします。
+2.  On the **General** tab of the dialog box, click **Add**.
 
-3.  **ネットワーク ライブラリ設定の追加**] ダイアログ ボックスで、 **TCP/IP**をクリックします。
+3.  In the **Add Network Library Configuration** dialog box, click **TCP/IP**.
 
-4.  **ポート番号**と**プロキシのアドレス**ボックスに、ネットワーク管理者から提供されたポート番号とプロキシ アドレスを入力します。
+4.  In the **Port number** and **Proxy address** boxes, enter the port number and proxy address provided by your network administrator.
 
-5.  終了するには **[ok]** をクリックし、セットアップを終了します。
+5.  Click **OK** to finish, and exit setup.
 
-## <a name="configuring-the-web-server-to-use-tcpip-sockets"></a>Web サーバーが TCP/IP ソケットを使用するを構成します。
+## <a name="configuring-the-web-server-to-use-tcpip-sockets"></a>tcp/ip ソケットを使用するように web サーバーを構成する
 
-TCP/IP ソケットを使用する web サーバーを構成する 2 つのオプションがあります。 Web サーバーからすべての SQL サーバーをアクセスするかどうかに依存するは、または web サーバーから特定の SQL Server だけにアクセスします。
+tcp/ip ソケットを使用するように web サーバーを構成するには、2つのオプションがあります。 web サーバーからすべての sql server にアクセスできるかどうか、または web サーバーから特定の sql server だけにアクセスできるかどうかによって決まります。
 
-すべての SQL サーバーには web サーバーからアクセスした場合は、web サーバー コンピューターで SQL Server クライアント設定ユーティリティを実行する必要があります。 次の手順では、TCP/IP ソケット ネットワーク ライブラリを使用するのには、この IIS web サーバーから作成されたすべての SQL Server 接続の既定のネットワーク ライブラリを変更します。
+すべての sql サーバーが web サーバーからアクセスされている場合は、web サーバーコンピューターで sql server クライアント設定ユーティリティを実行する必要があります。 次の手順では、この IIS web サーバーから作成されたすべての SQL server 接続の既定のネットワークライブラリを変更して、tcp/ip ソケットネットワークライブラリを使用します。
 
-**Web サーバー (すべての SQL サーバー) を構成するには**
+**web サーバー (すべての SQL server) を構成するには**
 
 **Microsoft SQL Server 6.5 の場合**
 
-1.  **[スタート**] メニューから [**プログラム**] をポイントし、[ **Microsoft SQL Server 6.5**をポイントし、[ **SQL クライアント設定ユーティリティ**] をクリックします。
+1.  From the **Start** menu, point to **Programs**, point to **Microsoft SQL Server 6.5**, and then click **SQL Client Configuration Utility**.
 
-2.  **ネットワーク ライブラリ**] タブをクリックします。
+2.  Click the **Net Library** tab.
 
-3.  **デフォルト ネットワーク**] ボックスで、 **TCP/IP ソケット**を選択します。
+3.  In the **Default Network** box, select **TCP/IP Sockets**.
 
-4.  変更を保存し、ユーティリティを終了する**終了**をクリックします。
+4.  Click **Done** to save changes and exit the utility.
 
 **Microsoft SQL Server 7.0 の場合**
 
-1.  **[スタート**] メニューからは、**プログラム**、 **Microsoft SQL Server 7.0**をポイントし、**クライアント ネットワーク ユーティリティ**] をクリックします。
+1.  From the **Start** menu, point to **Programs**, point to **Microsoft SQL Server 7.0**, and then click **Client Network Utility**.
 
-2.  [**全般**] タブをクリックします。
+2.  [**General**] タブをクリックします。
 
-3.  **既定のネットワーク ライブラリ**] ボックスで、 **TCP/IP**をクリックします。
+3.  In the **Default network library** box, click **TCP/IP**.
 
-4.  変更を保存し、ユーティリティを終了して **[ok]** をクリックします。
+4.  Click **OK** to save changes and exit the utility.
 
-Web サーバーから特定の SQL Server にアクセスした場合は、web サーバー コンピューターで SQL Server クライアント設定ユーティリティを実行する必要があります。 特定の SQL Server 接続のネットワーク ライブラリを変更するには、次のように web サーバー コンピューターで SQL Server クライアント ソフトウェアを構成します。
+web サーバーから特定の sql server にアクセスする場合は、web サーバーコンピューターで sql server クライアント設定ユーティリティを実行する必要があります。 特定の sql server 接続のネットワークライブラリを変更するには、web サーバーコンピューターで sql server クライアントソフトウェアを次のように構成します。
 
-**(特定の SQL Server) の web サーバーを構成するのには**
+**web サーバーを構成するには (特定の SQL server)**
 
 **Microsoft SQL Server 6.5 の場合**
 
-1.  **[スタート**] メニューから [**プログラム**] をポイントし、[ **Microsoft SQL Server 6.5**をポイントし、[ **SQL クライアント設定ユーティリティ**] をクリックします。
+1.  From the **Start** menu, point to **Programs**, point to **Microsoft SQL Server 6.5**, and then click **SQL Client Configuration Utility**.
 
-2.  [**詳細設定**] タブをクリックします。
+2.  Click the **Advanced** tab.
 
-3.  [**サーバー** ] ボックスで、 **TCP/IP ソケット**を使用する接続先のサーバーの名前を入力します。
+3.  In the **Server** box, type the name of the server to connect to using **TCP/IP Sockets**.
 
-4.  [ **DLL 名**] ボックスで、 **TCP/IP ソケット**を選択します。
+4.  In the **DLL Name** box, select **TCP/IP Sockets**.
 
-5.  **追加/変更**] をクリックします。 このサーバーをポイントするすべてのデータ ソースが TCP/IP ソケットを使用ようになりました。
+5.  Click **Add/Modify**. All data sources pointing to this server will now use TCP/IP Sockets.
 
-6.  **完了**] をクリックします。
+6.  Click **Done**.
 
 **Microsoft SQL Server 7.0 の場合**
 
-1.  **[スタート**] メニューから [**プログラム**] をポイントし、[ **Microsoft SQL Server 7.0**をポイントし、**クライアント設定ユーティリティ**] をクリックします。
+1.  From the **Start** menu, point to **Programs**, point to **Microsoft SQL Server 7.0**, and then click **Client Configuration Utility**.
 
-2.  [**全般**] タブをクリックします。
+2.  Click the **General** tab.
 
-3.  **[追加]** をクリックします。
+3.  Click **Add**.
 
-4.  **サーバー別名**] ボックスで、サーバーの別名を入力します。 [**ネットワーク ライブラリ**] ボックスで、 **TCP/IP**をクリックします。 [**コンピューター名**] ボックスで、TCP/IP ソケット クライアントをリッスンしているコンピューターのコンピューター名を入力します。 [**ポート番号**] ボックスで、SQL Server がリッスンするポートを入力します。
+4.  Enter the alias of the server in the **Server alias** box. In the **Network libraries** box, click **TCP/IP**. In the **Computer name** box, enter the computer name of the computer that listens for TCP/IP Sockets clients. In the **Port number** box, enter the port on which the SQL Server listens.
 
-5.  **[Ok]**、し **[ok]** もう一度ユーティリティを終了する] をクリックします。
+5.  Click **OK**, and then **OK** again to exit the utility.
 

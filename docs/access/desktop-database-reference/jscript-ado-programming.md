@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 88a84f6fa3604286ca27651cefc999c96ff41d0e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32290892"
 ---
 # <a name="jscript-ado-programming"></a>JScript ADO プログラミング
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
 ## <a name="creating-an-ado-project"></a>ADO プロジェクトの作成
@@ -26,11 +26,11 @@ Microsoft JScript では、タイプ ライブラリをサポートしていな�
 
 ただし、ADO では JScript 用の次の定義を納めた 2 つのインクルード ファイルを用意しています。
 
-- サーバー側スクリプトを使用する Adojavas.inc を装着されている c:\\Program Files\\共通ファイル\\システム\\ado\\既定のフォルダーです。
+- サーバー側スクリプトでは adojavas.inc を使用します。これは、既定で c\\: Program\\Files Common\\Files\\System\\ ado フォルダーにインストールされます。
 
-- C: にインストールするクライアント側スクリプトを使用する Adcjavas.inc の\\Program Files\\ファイルの一般的な\\システム\\msdac\\既定のフォルダー。
+- クライアント側スクリプトでは、Adcjavas を使用します。これは、既定で\\c:\\Program Files\\Common\\Files System\\ msdac フォルダーにインストールされます。
 
-コピーし定数の定義これらのファイルからを ASP ページに貼り付けるか、Adojavas.inc ファイルを web サイト上のフォルダーにコピーし、次のように、ASP ページから参照、サーバー側のスクリプトを実行する場合。
+定数定義は、これらのファイルから ASP ページにコピーして貼り付けるか、またはサーバー側スクリプトを実行している場合は、adojavas.inc ファイルを web サイトのフォルダーにコピーして、次のように asp ページから参照します。
 
 ```javascript  
  
@@ -49,7 +49,7 @@ Rs1 = Server.CreateObject("ADODB.Recordset");
 
 ## <a name="jscript-example"></a>JScript の例
 
-次のコードは、 **Recordset** オブジェクトを開く Active Server Page (ASP) ファイルにおける JScript サーバー側プログラミングの一般的な例です。
+次のコードは、**Recordset** オブジェクトを開く Active Server Page (ASP) ファイルにおける JScript サーバー側プログラミングの一般的な例です。
 
 ```javascript 
  

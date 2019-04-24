@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 8bf2234e5935c2a1a13871e7e45c980fb9f33109
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28713780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32312062"
 ---
-# <a name="using-visual-c-extensions"></a>Visual C++ Extensions を使用する
+# <a name="using-visual-c-extensions"></a>Visual C++ Extensions の使用
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ## <a name="the-iadorecordbinding-interface"></a>IADORecordBinding インターフェイス
 
@@ -29,9 +29,9 @@ ADO 用 Microsoft Visual C++ Extensions は、[Recordset](recordset-object-ado.m
 
 ## <a name="binding-entries"></a>バインディング エントリ
 
-ADO 用の Visual C++ の拡張機能では、C または C++ の変数に、[レコード セット](recordset-object-ado.md)オブジェクトのフィールドをマップします。 フィールドと変数の間のマッピングの定義は、*バインディング エントリ*と呼ばれます。 マクロでは、数値、固定長と可変長のデータのバインドのエントリを提供します。 Visual C++ の拡張機能のクラス、 **CADORecordBinding**から派生したクラスでは、バインディング エントリおよび C または C++ の変数が宣言されています。 **CADORecordBinding**クラスは、バインディング エントリ マクロによって内部的に定義されます。
+The Visual C++ Extensions for ADO map fields of a [Recordset](recordset-object-ado.md) object to C/C++ variables. フィールドと変数の間のマッピングの定義を*バインドエントリ*と呼びます。 Macros provide binding entries for numeric, fixed-length, and variable-length data. The binding entries and C/C++ variables are declared in a class derived from the Visual C++ Extensions class, **CADORecordBinding**. The **CADORecordBinding** class is defined internally by the binding entry macros.
 
-内部的に、ADO は、OLE DB の**DBBINDING**構造体にこれらのマクロにパラメーターをマップし、移動し、フィールドと変数間のデータの変換を管理する OLE DB**アクセサー**オブジェクトを作成します。 OLE DB とで構成されるデータを定義する 3 つの部分:*バッファー*のデータが格納されます。*ステータス*を示すかどうか、フィールドが正常にバッファーに格納された、または、フィールドに変数を復元する方法データの*長さ*。 ( *OLE DB プログラマ リファレンス*、第 6 章を参照してください: 詳細についてはデータの取得と設定します)。
+ADO internally maps the parameters in these macros to an OLE DB **DBBINDING** structure and creates an OLE DB **Accessor** object to manage the movement and conversion of data between fields and variables. OLE DB は、データが格納される*バッファー*の3つの部分で構成されるデータを定義します。フィールドがバッファーに正常に格納されたかどうか、または変数をフィールドに復元する方法を示す*状態*。データの*長さ*。 (詳細については、「 *OLE DB プログラマリファレンス*」、「6章: データの取得と設定」を参照してください)。
 
 ## <a name="header-file"></a>ヘッダー ファイル
 
@@ -48,7 +48,7 @@ ADO 用 Visual C++ Extensions を使用するには、アプリケーション�
 
 1.  **CADORecordBinding** クラスから派生するクラスを作成します。
 
-2.  バインディング エントリおよび対応する C/C++ 変数を派生クラスで指定します。 ブラケットの間でバインディング エントリ**を開始\_ADO\_バインド**と**エンド\_ADO\_バインド**マクロ。 マクロの末尾にコンマまたはセミコロンを使用しないでください。 適切な区切り文字がマクロによって自動的に指定されます。 C/C++ 変数にマップするフィールドごとに、バインディング エントリを 1 つ指定します。 適切なメンバーを使用して、 **ADO\_固定\_長さ\_エントリ**、 **ADO\_数値\_エントリ**、または**ADO\_変数\_長さ\_エントリ**マクロのファミリです。
+2.  バインディング エントリおよび対応する C/C++ 変数を派生クラスで指定します。 ado バインドマクロと**\_END ado\_バインド**マクロの間のバインドエントリをブラケットにします。 **\_\_** マクロの末尾にコンマまたはセミコロンを使用しないでください。 適切な区切り文字がマクロによって自動的に指定されます。 C/C++ 変数にマップするフィールドごとに、バインディング エントリを 1 つ指定します。 **ado\_\_の固定長\_エントリ**、ado **\_の数値\_** エントリ、または ado **\_\_の可変長\_エントリ**ファミリのマクロの適切なメンバーを使用します。
 
 3.  アプリケーションで、 **CADORecordBinding** から派生したクラスのインスタンスを作成します。 **Recordset** から **IADORecordBinding** インターフェイスを取得します。その後、 **BindToRecordset** メソッドを呼び出して、 **Recordset** のフィールドを C/C++ 変数にバインドします。
 
@@ -68,7 +68,7 @@ ADO 用 Visual C++ Extensions を使用するには、アプリケーション�
 
 `AddNew(CADORecordBinding *binding)` 
 
-**Update** メソッドは、ADO の同名の [Update](update-method-ado.md) メソッドを呼び出して、 **Recordset** を更新します。
+**Update** メソッドは、ADO の同名の [Update](update-method-ado.md) メソッドを呼び出して、**Recordset** を更新します。
 
 `Update(CADORecordBinding *binding)` 
 
@@ -78,32 +78,32 @@ ADO 用 Visual C++ Extensions を使用するには、アプリケーション�
 
 **adDate** や **adBoolean** などの固定長データ、 **adTinyInt** 、 **adInteger** 、 **adDouble** などの数値データ、および **adChar** 、 **adVarChar** 、 **adVarBinary** などの可変長データに対し、マクロ ファミリが用意されています。 **adVarNumeric** を除くすべての数値型は、固定長型でもあります。各マクロ ファミリは、それぞれ異なるパラメーター セットを持っているので、必要のないバインディング情報を除外できます。
 
-詳細について*OLE DB プログラマ リファレンス」* の「付録 a データ型を参照してください。
+追加情報については、「OLE DB プログラマ リファレンス」の「付録 A データ型」を参照してください。
 
-_**バインディング エントリの開始**_
+_**バインドエントリの開始**_
 
-**開始\_ADO\_バインド**(*クラス*)
+**\_ADO\_バインドの開始**(*クラス*)
 
-_**固定長データ**_
+_**固定長のデータ**_
 
-**ADO\_固定\_長さ\_エントリ**(*、序数、データ型、バッファーの状態の変更*を)  
-**ADO\_固定\_長さ\_ENTRY2**(*序数、データ型、バッファーの変更*を)
+**ADO\_の\_固定\_長のエントリ**(*序数、データ型、バッファー、状態、変更*)  
+**ADO\_固定\_長\_ENTRY2**(*序数、データ型、バッファー、変更*)
 
 _**数値データ**_
 
-**ADO\_数値\_エントリ**(*序数、データ型、バッファー、精度、小数点部桁数、ステータス、変更*を)  
-**ADO\_数値\_ENTRY2**(*序数、データ型、バッファー、精度、スケールの変更*を)
+**ADO\_の\_数値エントリ**(*序数、データ型、バッファー、精度、規模、状態、変更*)  
+**ADO\_の\_数値 ENTRY2**(*序数、データ型、バッファー、精度、小数点以下の桁数、変更*)
 
 _**可変長データ**_
 
-**ADO\_変数\_長さ\_エントリ**(*序数、データ型、バッファー、サイズ、状態、長さ、変更*を)  
-**ADO\_変数\_長さ\_ENTRY2**(*序数、データ型、バッファー、サイズ、状態の変更*を)  
-**ADO\_変数\_長さ\_ENTRY3**(*序数、データ型、バッファー、サイズ、長さ、変更*を)  
-**ADO\_変数\_長さ\_ENTRY4**(*、序数、データ型、バッファーのサイズを変更*)
+**ADO\_の\_可変長\_エントリ**(*序数、データ型、バッファー、サイズ、状態、長さ、変更*)  
+**ADO\_の\_可変長\_ENTRY2**(*序数、データ型、バッファー、サイズ、状態、変更*)  
+**ADO\_\_可変長\_ENTRY3**(*序数、データ型、バッファー、サイズ、長さ、変更*)  
+**ADO\_\_可変長\_ENTRY4**(*序数、データ型、バッファー、サイズ、変更*)
 
-_**バインディング エントリの終了**_
+_**バインディングエントリの終了**_
 
-**エンド\_ADO\_バインド**()
+**\_ADO\_バインドを終了**する()
 
 <table>
 <colgroup>
@@ -118,7 +118,7 @@ _**バインディング エントリの終了**_
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>クラス</em></p></td>
+<td><p><em>Class</em></p></td>
 <td><p>バインディング エントリおよび C/C++ 変数を定義するクラスです。</p></td>
 </tr>
 <tr class="even">
@@ -135,12 +135,11 @@ _**バインディング エントリの終了**_
 </tr>
 <tr class="odd">
 <td><p><em>Size</em></p></td>
-<td><p>バイト数で示す <em>Buffer</em> の最大サイズです。<em>Buffer</em> に可変長文字列を格納する場合は、末尾のゼロを含んだサイズになります。</p></td>
+<td><p>バイト数で示す <em>Buffer</em> の最大サイズです。 <em>Buffer</em> に可変長文字列を格納する場合は、末尾のゼロを含んだサイズになります。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>状態</em></p></td>
-<td><p><em>Buffer</em> の内容が有効かどうか、および <em>DataType</em> へのフィールドの変換が成功したかどうかを示す変数の名前です。
- この変数で最も重要な 2 つの値は、変換が成功したことを示す <strong>adFldOK</strong> と、フィールドの値が VT_NULL 型の VARIANT であって単なる空ではないことを示す <strong>adFldNull</strong> です。 <em>ステータス</em>の値が次の表に記載されている&quot;のステータス値。&quot;</p></td>
+<td><p><em>Buffer</em> の内容が有効かどうか、および <em>DataType</em> へのフィールドの変換が成功したかどうかを示す変数の名前です。 この変数で最も重要な 2 つの値は、変換が成功したことを示す <strong>adFldOK</strong> と、フィールドの値が VT_NULL 型の VARIANT であって単なる空ではないことを示す <strong>adFldNull</strong> です。 <em>status</em>に指定できる値は、 &quot;次の表の状態値で示されます。&quot;</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>Modify</em></p></td>
@@ -148,7 +147,7 @@ _**バインディング エントリの終了**_
  バインドされたフィールドを ADO が更新できるようにするには、ブール型の <em>modify</em> パラメーターを TRUE に設定します。確認だけでフィールドを変更しない場合は FALSE に設定します。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Precision</em></p></td>
+<td><p><em>精度</em></p></td>
 <td><p>数値変数で表すことのできる桁数です。</p></td>
 </tr>
 <tr class="odd">
@@ -165,7 +164,7 @@ _**バインディング エントリの終了**_
 
 ## <a name="status-values"></a>Status の値
 
-*Status*変数の値は、フィールドが変数に正常にコピーされたかどうかを示します。
+*Status* 変数の値は、フィールドが変数に正常にコピーされたかどうかを示します。
 
 データを設定するときは、*Status* を **adFldNull** に設定することで、**Recordset** フィールドを Null に設定する必要があることを示すことができます。
 
@@ -184,74 +183,73 @@ _**バインディング エントリの終了**_
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>adFldOK</strong></p></td>
-<td><p>0</p></td>
+<td><p><strong>adfldok</strong></p></td>
+<td><p>.0</p></td>
 <td><p>Null ではないフィールド値が返されました。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adFldBadAccessor</strong></p></td>
-<td><p>1</p></td>
+<td><p><strong>adfldbadaccessor</strong></p></td>
+<td><p>1-d</p></td>
 <td><p>バインディングが無効です。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adFldCantConvertValue</strong></p></td>
-<td><p>2</p></td>
+<td><p><strong>adfldcantconvertvalue</strong></p></td>
+<td><p>pbm-2</p></td>
 <td><p>符号の不一致またはデータのオーバーフロー以外の理由で、値を変換できませんでした。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adFldNull</strong></p></td>
-<td><p>3</p></td>
-<td><p>フィールドを取得するときは、Null 値が返されたことを示します。
- フィールドを設定するときは、フィールドが <strong>NULL</strong> そのものをエンコードできない場合 (文字配列または整数など)、フィールドを <strong>NULL</strong> に設定する必要があることを示します。</p></td>
+<td><p>1/3</p></td>
+<td><p>フィールドを取得するときは、Null 値が返されたことを示します。 フィールドを設定するときは、フィールドが <strong>NULL</strong> そのものをエンコードできない場合 (文字配列または整数など)、フィールドを <strong>NULL</strong> に設定する必要があることを示します。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adFldTruncated</strong></p></td>
-<td><p>4</p></td>
+<td><p><strong>adfldtruncated</strong></p></td>
+<td><p>2/4</p></td>
 <td><p>可変長データまたは数値の桁が切り捨てられました。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adFldSignMismatch</strong></p></td>
+<td><p><strong>adfldsignmismatch</strong></p></td>
 <td><p>5</p></td>
 <td><p>値は符号付きですが、変数のデータ型は符号なしです。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adFldDataOverFlow</strong></p></td>
-<td><p>6</p></td>
+<td><p><strong>adflddataoverflow</strong></p></td>
+<td><p>シックス</p></td>
 <td><p>変数のデータ型に格納できる値を超えています。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adFldCantCreate</strong></p></td>
+<td><p><strong>adfldcantcreate</strong></p></td>
 <td><p>7</p></td>
 <td><p>未知の列の型であり、フィールドは既に開かれています。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adFldUnavailable</strong></p></td>
-<td><p>8</p></td>
+<td><p><strong>adfldunavailable 不可</strong></p></td>
+<td><p>~</p></td>
 <td><p>フィールド値を特定できませんでした。たとえば、新規の未割り当てフィールドで既定値が設定されていません。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adFldPermissionDenied</strong></p></td>
-<td><p>9</p></td>
+<td><p><strong>adfldpermissiondenied</strong></p></td>
+<td><p>i-9</p></td>
 <td><p>更新時に、データの書き込み権限が与えられていませんでした。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adFldIntegrityViolation</strong></p></td>
-<td><p>10</p></td>
+<td><p>個</p></td>
 <td><p>更新時に、フィールド値が列の整合性に違反していました。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adFldSchemaViolation</strong></p></td>
-<td><p>11</p></td>
+<td><p><strong>adfldschemaviolation</strong></p></td>
+<td><p>#</p></td>
 <td><p>更新時に、フィールド値が列のスキーマに違反していました。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adFldBadStatus</strong></p></td>
-<td><p>12</p></td>
+<td><p><strong>adfldbadadstatus</strong></p></td>
+<td><p>個</p></td>
 <td><p>更新時に、無効なステータス パラメーターがありました。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adFldDefault</strong></p></td>
-<td><p>13</p></td>
+<td><p><strong>adflddefault</strong></p></td>
+<td><p>スリー</p></td>
 <td><p>更新時に、既定値が使用されました。</p></td>
 </tr>
 </tbody>

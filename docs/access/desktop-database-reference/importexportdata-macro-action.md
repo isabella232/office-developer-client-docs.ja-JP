@@ -12,24 +12,24 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Normal
 ms.openlocfilehash: e0cdf85461276d26005bc3066a387031a1086691
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291888"
 ---
 # <a name="importexportdata-macro-action"></a>ImportExportData マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-インポートまたは現在の Access データベース (.mdb または .accdb) または Access プロジェクト (.adp) と他のデータベース間でデータをエクスポートするのには、 **ImportExportData**アクションを使用できます。 Microsoft Access データベースでは、他のデータベースからカレント データベースにテーブルをリンクすることもできます。 テーブルをリンクすると、テーブル自体は他のデータベース内にあっても、そのテーブルのデータにアクセスできます。
+You can use the **ImportExportData** action to import or export data between the current Access database (.mdb or .accdb) or Access project (.adp) and another database. For Microsoft Access databases, you can also link a table to the current Access database from another database. With a linked table, you have access to the table's data while the table itself remains in the other database.
 
 > [!NOTE]
 > [!メモ] データベースが信頼されていない場合、このアクションは許可されません。 
 
-## <a name="settings"></a>設定値
+## <a name="settings"></a>設定
 
-**ImportExportData**アクションには、次の引数があります。
+"ImportExportData/データのインポート/エクスポート" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -45,7 +45,7 @@ ms.locfileid: "28714746"
 <tbody>
 <tr class="odd">
 <td><p><strong>Transfer Type/変換の種類</strong></p></td>
-<td><p>変換の種類を指定します。[マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>変換の種類</strong>] ボックスで、[ <strong>インポート</strong>]、[ <strong>エクスポート</strong>]、または [ <strong>リンク</strong>] を選択します。既定値は [ <strong>インポート</strong>] です。  </p><p><strong>注</strong>: Access プロジェクト (.adp) では、<strong>リンク</strong>の転送の種類はサポートされていません。</p></td>
+<td><p>変換の種類を指定します。[マクロ ビルダー] ウィンドウの [ <strong>アクションの引数</strong>] セクションにある [ <strong>変換の種類</strong>] ボックスで、[ <strong>インポート</strong>]、[ <strong>エクスポート</strong>]、または [ <strong>リンク</strong>] を選択します。既定値は [ <strong>インポート</strong>] です。  </p><p><strong>注意</strong>: Access プロジェクト (.adp) では、転送の種類 <strong>[リンク]</strong> はサポートされていません。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Database Type/データベースの種類</strong></p></td>
@@ -60,8 +60,8 @@ ms.locfileid: "28714746"
 <li><p>[ <strong>リンク テーブルを作成してソース データにリンクする</strong>] をクリックし、[ <strong>OK</strong>] をクリックします。</p></li>
 <li><p>[ <strong>テーブルのリンク</strong>] ダイアログ ボックスでテーブルを選択し、[ <strong>OK</strong>] をクリックします。</p></li>
 </ol>
-<p>新しくリンクしたテーブルをデザイン ビューで開きし、[<strong>デザイン</strong>] タブの [<strong>ツール</strong> <strong>] プロパティ ・ シート</strong>をクリックしてテーブルのプロパティを表示します。 <strong>説明</strong>プロパティの設定値のテキストは、このテーブルの接続文字列です。</p>
-<p>ODBC 接続文字列の詳細については、ヘルプ ファイルまたは ODBC ドライバーの ODBC データベースには、この種類の他の資料を参照してください。</p></td>
+<p>Open the newly linked table in Design view and view the table properties by clicking <strong>Property Sheet</strong> on the <strong>Design</strong> tab, under <strong>Tools</strong>. The text in the <strong>Description</strong> property setting is the connection string for this table.  </p>
+<p>odbc 接続文字列の詳細については、この odbc データベースの odbc ドライバーのヘルプファイルまたはその他のドキュメントを参照してください。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Object Type/オブジェクトの種類</strong></p></td>
@@ -83,7 +83,7 @@ ms.locfileid: "28714746"
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 Access のデータベースと他のデータベースの間で、テーブルのインポートやエクスポートを行うことができます。また、Access の選択クエリを他のデータベースにエクスポートすることもできます。クエリの結果セットはテーブルとしてエクスポートされます。Access のデータベース間では、Access のあらゆるデータベース オブジェクトをインポートまたはエクスポートできます。
 
@@ -91,7 +91,7 @@ Access のデータベースと他のデータベースの間で、テーブル�
 
 アクセスしようとしているデータベースでパスワードが要求される場合は、マクロの実行時に表示されるダイアログ ボックスにパスワードを入力します。
 
-**ImportExportData**アクションは、[**外部データ**] タブの [**インポート**または**エクスポート**のコマンドに似ています。 これらのコマンドを使用すると、Access データベースまたは別の種類のデータベース、スプレッドシート、またはテキスト ファイルなどのデータ ソースを選択します。 データベースを選択する場合は、インポートまたはエクスポート (のデータベースにアクセス) するオブジェクトの種類、オブジェクト、およびデータベースからのインポートまたはエクスポートまたはリンクによって、その他のオプションの名前を選択する 1 つまたは複数のダイアログ ボックスが表示されます。 **ImportExportData**アクションの引数は、これらのダイアログ ボックスでオプションを反映します。
+The **ImportExportData** action is similar to the commands on the **External Data** tab, under **Import** or **Export**. You can use these commands to select a source of data, such as an Access database or another type of database, a spreadsheet, or a text file. If you select a database, one or more dialog boxes appear in which you select the type of object to import or export (for Access databases), the name of the object, and other options, depending on the database you are importing from or exporting or linking to. The arguments for the **ImportExportData** action reflect the options in these dialog boxes.
 
 リンクする dBASE テーブルにインデックス情報を指定する場合は、まず、次の手順でテーブルをリンクします。
 
@@ -105,10 +105,10 @@ Access のデータベースと他のデータベースの間で、テーブル�
 
 5.  この時点で、リンク テーブルへのリンクを削除できます。
 
-この dBASE テーブルをリンクする**ImportExportData**アクションを使用する次の時間は、指定したインデックス情報が使用されます。
+The next time you use the **ImportExportData** action to link this dBASE table, Access uses the index information that you've specified.
 
 > [!NOTE]
 > [!メモ] リンクしたテーブルに対してクエリを実行するか、フィルターを適用する場合は、大文字と小文字が区別されます。
 
-Visual Basic for Applications (VBA) モジュールに**ImportExportData**アクションを実行するには、 **DoCmd**オブジェクトの**TransferDatabase**メソッドを使用します。
+To run the **ImportExportData** action in a Visual Basic for Applications (VBA) module, use the **TransferDatabase** method of the **DoCmd** object.
 

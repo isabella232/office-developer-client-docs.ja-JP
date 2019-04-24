@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 27bdc82b1ea8cd3fc019b036de98a921dd7bc9bb
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292238"
 ---
 # <a name="getrows-method-example-vb"></a>GetRows メソッドの使用例 (VB)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-この例では、 [GetRows](getrows-method-ado.md) メソッドを使用して、指定した数の行を [Recordset](recordset-object-ado.md) から取得し、結果データを配列に設定します。 **GetRows** メソッドでは、 [EOF](bof-eof-properties-ado.md) に達した場合、および他のユーザーによって削除されたレコードを **GetRows** が取得しようとした場合に、指定よりも少ない数の行が返されます。2 番目の場合のみ、 **False** が返されます。このプロシージャを実行するには、GetRowsOK 関数が必要です。
+次の例では、 [GetRows](getrows-method-ado.md) メソッドを使用して、指定された数の行を [Recordset](recordset-object-ado.md) から取得し、結果データを配列に格納します。 **GetRows** メソッドは、 [EOF](bof-eof-properties-ado.md) に到達したとき、または他のユーザーが削除したレコードを **GetRows** で取得しようとしたときの 2 つの場合に、要求された数よりも少ない行を返します。この関数は、後者の場合にのみ **False** を返します。このプロシージャを実行するには、GetRowsOK 関数が必要です。
 
 ```vb 
  
