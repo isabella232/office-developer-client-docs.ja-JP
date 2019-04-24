@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 12c07302-472f-4e4f-8087-1bdf0dc09a5a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3df5e012867623d1c5e8fb5c3c93103548ab97be
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0fb867d662064dfe5ff7759dba4b36a4635a2914
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346838"
 ---
 # <a name="hrthisthreadadvisesink"></a>HrThisThreadAdviseSink
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-スレッドの安全のための既存のアドバイズ シンクをラップするアドバイズ シンクを作成します。 
+スレッドの安全性を確保するために既存のアドバイズシンクをラップするアドバイズシンクを作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーション  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
    
 ```cpp
 HrThisThreadAdviseSink(
@@ -44,30 +44,30 @@ HrThisThreadAdviseSink(
 
  _lpAdviseSink_
   
-> [in]ラップするアドバイズ シンクへのポインター。 
+> 順番ラップするアドバイズシンクへのポインター。 
     
  _lppAdviseSink_
   
-> [out]_LpAdviseSink_パラメーターが指す、アドバイズ シンクをラップする新しいアドバイズ シンクへのポインターへのポインターです。 
+> 読み上げ_lpAdviseSink_パラメーターで指定されたアドバイズシンクをラップする新しいアドバイズシンクへのポインターへのポインター。 
     
 ## <a name="return-value"></a>Return value
 
 なし。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-ラッパーでは、通知が**HrThisThreadAdviseSink**関数を呼び出した同じスレッドで呼び出されることになっていることを確認します。 この関数は、特定のスレッド上で実行する必要があります通知コールバックを保護するために使用されます。 
+ラッパーの目的は、 **HrThisThreadAdviseSink**関数を呼び出したのと同じスレッドで通知が呼び出されるようにすることです。 この関数は、特定のスレッドで実行する必要がある通知コールバックを保護するために使用されます。 
   
-クライアント アプリケーションは、通知が生成されるときは、クライアントが以前の**のアドバイスで渡されたアドバイズ シンク オブジェクトの[IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドがコールされたときに制限するのには**HrThisThreadAdviseSink**を使用する必要があります。** を呼び出します。 任意に生成するのには、通知が許可されている場合通知の実装可能性があります、クライアントにマルチ スレッド処理がこれに該当する場合。 たとえば、クライアントは、マルチ スレッドの呼び出しをサポートしていない Microsoft Foundation クラス ライブラリのいずれかのライブラリを使用する場合があります。 別のスレッドに通知は、このようなクライアント、テストが困難で、エラーを起こしやすい。 
+クライアントアプリケーションは、 **HrThisThreadAdviseSink**を使用して通知を生成するタイミングを制限する必要があります。つまり、前のアドバイスでクライアントによって渡されたアドバイズシンクオブジェクトの[IMAPIAdviseSink:: onnotify](imapiadvisesink-onnotify.md)メソッドに対して呼び出しが行われたときです。 **** 呼び出し。 通知を任意に生成することが許可されている場合、通知の実装によって、クライアントが適切でない場合には、マルチスレッド操作になることがあります。 たとえば、クライアントは、Microsoft Foundation クラスライブラリの1つなど、マルチスレッド呼び出しをサポートしていないライブラリを使用する場合があります。 別のスレッドで通知を行うと、このようなクライアントはテストが難しくなり、エラーが発生しやすくなります。 
   
- **HrThisThreadAdviseSink**は、 **OnNotify**呼び出しは、これらの適切な時刻にのみ発生することを確認します。 
+ **HrThisThreadAdviseSink**は、次の適切な時間にのみ、 **onnotify**呼び出しが発生することを確認します。 
   
-- 中の任意の MAPI メソッドの呼び出しを処理します。 
+- MAPI メソッドの呼び出しの処理中。 
     
-- Windows メッセージの処理します。 
+- Windows メッセージの処理中。 
     
-**HrThisThreadAdviseSink**が実装されると、任意のスレッドでの新規のアドバイズ シンクの**OnNotify**メソッドへの呼び出しは、 **HrThisThreadAdviseSink**が呼び出された対象のスレッドで実行される元の通知方法を発生します。 
+**HrThisThreadAdviseSink**が実装されている場合、すべてのスレッドで新しいアドバイズシンクの**onnotify**メソッドを呼び出すと、 **HrThisThreadAdviseSink**が呼び出されたスレッドで元の通知方法が実行されます。 
   
-通知の詳細については、アドバイズ シンク[で MAPI イベント通知](event-notification-in-mapi.md)と[通知シンク オブジェクトを実装する](implementing-an-advise-sink-object.md)を参照してください。 
+通知およびアドバイズシンクの詳細については、「 [MAPI でのイベント通知](event-notification-in-mapi.md)」および「[アドバイズシンクオブジェクトの実装](implementing-an-advise-sink-object.md)」を参照してください。 
   
 

@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 14c171ec-0aec-43ab-8be8-e6bc0ce28a58
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a524a7eb40c33d6de2f64cd5373c9a39a8a1e3df
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ac59aeb3d650c0fbeb5bcdb580e0401cbab58ee6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32347811"
 ---
 # <a name="hrentryidfromsz"></a>HrEntryIDFromSz
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ASCII エンコードからエントリ識別子を再作成します。 
+エントリ id を ASCII エンコードから再作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーション  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
    
 ```cpp
 HRESULT HrEntryIDFromSz(
@@ -45,32 +45,32 @@ HRESULT HrEntryIDFromSz(
 
  _sz_
   
-> [in]エントリ識別子を作成するから ASCII 文字列へのポインター。 
+> 順番エントリ識別子を作成する ASCII 文字列へのポインター。 
     
- _pcb_
+ _設計_
   
-> [out]_Ppentry_パラメーターで指定されたエントリの識別子のバイト単位のサイズへのポインター。 
+> 読み上げ_ppentry_パラメーターによって指定されたエントリ識別子のサイズ (バイト数) へのポインター。 
     
  _ppentry_
   
-> [out]新しいエントリの識別子を格納する返される[エントリ ID](entryid.md)の構造体へのポインターへのポインター。 
+> 読み上げ新しいエントリ識別子を含む、返される[ENTRYID](entryid.md)構造体へのポインターへのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK
   
-> 再作成に成功しました。
+> 再レクリエーションは成功しました。
     
 MAPI_E_INVALID_ENTRYID
   
-> エントリ ID が無効でした。
+> エントリ ID が無効です。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**HrEntryIDFromSz**と[HrSzFromEntryID](hrszfromentryid.md)関数は、文字列とエントリの識別子のバイナリ フォーマット間の変換を提供します。 
+**HrEntryIDFromSz**および[hrszfromentryid](hrszfromentryid.md)関数は、エントリ識別子の文字列形式とバイナリ形式の間の変換を提供します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**HrEntryIDFromSz**関数は、 [MAPIAllocateBuffer](mapiallocatebuffer.md)関数を使用して ASCII 文字列のメモリを割り当てます。 
+**HrEntryIDFromSz**関数は、 [MAPIAllocateBuffer](mapiallocatebuffer.md)関数を使用して、ASCII 文字列のメモリを割り当てます。 
   
 

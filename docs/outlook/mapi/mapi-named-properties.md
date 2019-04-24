@@ -7,29 +7,29 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 464b1297-9d90-47bd-afc4-3dc63b106cb7
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5a6ba7af5e497ba59b43e9b80cfc9595961ed10e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: d83b98b4f06c648676852673a694a63b78f568b0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345865"
 ---
 # <a name="mapi-named-properties"></a>MAPI ���O�t���v���p�e�B
  
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI には、プロパティに名前を割り当てるため、これらの名前を一意の識別子にマップするため、および永続的なこのマッピングを行うための機能が用意されています。 識別子のマッピングへの永続的な名前は、セッション間でプロパティ名が有効なまま、です。
+MAPI には、プロパティに名前を割り当てたり、これらの名前を一意の識別子にマップしたり、このマッピングを永続的にするための機能が用意されています。 id マッピングの永続名を指定すると、プロパティ名はセッション間で有効なままになります。
   
-名前付きプロパティを定義するには、クライアントまたはサービス プロバイダーの名前になり[MAPINAMEID](mapinameid.md)構造体に格納します。 ための名前は、32 ビットのグローバルに一意の識別子または GUID、およびどちらか、Unicode 文字の文字列または数値の値、名前付きプロパティの作成者は、重複除外を恐れることがなく意味のある名前を作成できます。 名が一意では、それらの識別子の値に関係なく使用できます。 
+名前付きプロパティを定義するには、クライアントまたはサービスプロバイダーが名前を作成し、それを[mapinameid](mapinameid.md)構造に格納します。 名前は32ビットのグローバル一意識別子 (GUID) と、Unicode 文字列または数値のいずれかで構成されるため、名前付きプロパティの作成者は、重複を恐れることなく、わかりやすい名前を作成できます。 名前は一意であり、識別子の値に関係なく使用できます。 
   
-名前付きプロパティをサポートするためにサービス ・ プロバイダーは 2 つのメソッドを実装する: [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)と[IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md) -の名前と識別子の間で変換して、 [IMAPIProp::GetProps](imapiprop-getprops.md) [を許可するにはIMAPIProp::SetProps](imapiprop-setprops.md)を取得し、名前付きプロパティの範囲内で識別子とプロパティを変更するためのメソッドです。 名前付きプロパティの識別子の範囲は 0x8000 から 0 xfffe までの間です。 
+名前付きプロパティをサポートするために、サービスプロバイダーは、 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)と[imapiprop:: GetNamesFromIDs](imapiprop-getnamesfromids.md)の2つのメソッドを実装して、名前と識別子の間を変換し、その[imapiprop:: GetProps](imapiprop-getprops.md) [を許可します。imapiprop:: setprops](imapiprop-setprops.md)メソッドを使用して、名前付きプロパティの範囲内の識別子を持つプロパティを取得および変更します。 名前付きプロパティの識別子の範囲は、0x8000 ~ 0xFFFE です。 
   
-**IMAPIProp**インターフェイスを実装する任意のオブジェクトは、名前付きプロパティをサポートできます。 コンテナーとメッセージにコピーするには、他のプロバイダーからのエントリは、任意のメッセージの種類を作成するのに使用できるプロバイダーを格納できるように、アドレス帳プロバイダーは、このサポートを提供する必要があります。 他のすべてのサービス ・ プロバイダー向けのオプションです。 名前付きプロパティをサポートしないプロバイダーの MAPI_E_NO_SUPPORT メソッドから返す、 **GetIDsFromNames**と**GetNamesFromIDs**と、**で 0x8000 または大きい値、返される MAPI_E_UNEXPECTED の識別子を持つすべてのプロパティを設定するのには拒否します。SPropProblemarray**。
+**imapiprop**インターフェイスを実装するオブジェクトは、名前付きプロパティをサポートできます。 このサポートを提供するために、他のプロバイダーからのエントリをコンテナーにコピーし、任意のメッセージの種類を作成するために使用できるメッセージストアプロバイダーを使用できるようにするアドレス帳プロバイダー。 他のすべてのサービスプロバイダーのオプションです。 名前付きプロパティをサポートしないプロバイダーは、 **getidsfromnames**および**GetNamesFromIDs**メソッドから MAPI_E_NO_SUPPORT を返し、0x8000 以上**の識別子を持つプロパティを設定することを拒否します。spropの配列**。
   
-既存またはカスタムのメッセージ クラスの新しいプロパティを定義するのにはクライアントの 1 つの方法は、プロパティの名前を作成します。 サービス プロバイダーは、それぞれのメッセージング システム固有の機能を公開するのに名前付きプロパティを使用できます。 まだ別の名前付きプロパティの使用は、0x8000 未満の識別子を持つプロパティを参照する別の方法を提供します。 
+プロパティの名前を作成することは、クライアントが既存またはカスタムのメッセージクラスの新しいプロパティを定義する1つの方法です。 サービスプロバイダーは、名前付きプロパティを使用して、メッセージングシステムの固有の機能を公開できます。 さらに、名前付きプロパティを使用する別の方法として、0x8000 未満の識別子を持つプロパティを参照する別の方法を提供しています。 
   
-などのクライアントでは、すべてのオブジェクトの名前付きプロパティの名前を取得するのに次のコードのようなコードを使用する可能性があります。
+たとえば、クライアントは次のようなコードを使用して、オブジェクトのすべての名前付きプロパティの名前を取得することができます。
   
 ```cpp
 LPSPropTagArray FAR *    lppPropTags = NULL;
@@ -44,7 +44,7 @@ lpMAPIProp->GetNamesFromIDs (lppPropTags,
  
 ```
 
-PS_PUBLIC_STRINGS プロパティのセットからのすべての名前を要求するには、クライアントがプロパティ セットの PS_PUBLIC_STRINGS パラメーターに NULL をとおりに置き換えます。 
+PS_PUBLIC_STRINGS プロパティセットからすべての名前を要求する場合、クライアントは次のように、property set パラメーターの NULL を PS_PUBLIC_STRINGS に置き換えます。 
   
 ```cpp
 LPSPropTagArray FAR *    lppPropTags = NULL;

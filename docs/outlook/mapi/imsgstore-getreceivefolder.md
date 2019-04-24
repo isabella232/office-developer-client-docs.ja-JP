@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: ccd9d623-a3cb-4e66-9649-78c3887cb726
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a8cd211cc16b620ac47357271070e0b45b867bea
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ab21dcfb9011b675e3db4e4df29cb6ecafa6e7c6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348777"
 ---
 # <a name="imsgstoregetreceivefolder"></a>IMsgStore::GetReceiveFolder
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-または、指定したメッセージ クラスの既定値として受信したメッセージの送信先には、メッセージ ストアのフォルダーが表示されるように設定されているフォルダーを取得します。
+指定したメッセージクラスの受信メッセージの宛先として、またはメッセージストアの既定の受信フォルダーとして確立されたフォルダーを取得します。
   
 ```cpp
 HRESULT GetReceiveFolder(
@@ -39,59 +39,59 @@ HRESULT GetReceiveFolder(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpszMessageClass_
+ _lpszmessageclass_
   
-> [in]受信フォルダーに関連付けられているメッセージ クラスへのポインター。 返します_lpszMessageClass_パラメーターが NULL または空の文字列を**GetReceiveFolder**に設定、既定ではメッセージ ストアのフォルダーが表示されます。 
+> 順番受信フォルダーに関連付けられているメッセージクラスへのポインター。 _lpszmessageclass_パラメーターが NULL または空の文字列に設定されている場合、 **getreceivefolder**はメッセージストアの既定の受信フォルダーを返します。 
     
  _ulFlags_
   
-> [in]渡されると、返される文字列の種類を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番渡された文字列と返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> メッセージ クラスの文字列は、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式のメッセージ クラスの文字列です。
+> メッセージクラスの文字列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、メッセージクラスの文字列は ANSI 形式になります。
     
  _lpcbEntryID_
   
-> [out]_LppEntryID_パラメーターで指定されたエントリの識別子のバイト数へのポインター。 
+> 読み上げ_lppentryid_パラメーターによって指定されたエントリ識別子のバイト数へのポインター。 
     
- _lppEntryID_
+ _lppentryid_
   
-> [out]要求されたエントリの識別子へのポインターへのポインターでは、フォルダーが表示されます。
+> 読み上げ要求された受信フォルダーのエントリ識別子へのポインターへのポインター。
     
  _lppszExplicitClass_
   
-> [out]として明示的に設定するメッセージ クラスへのポインターへのポインターの_lppEntryID_で指定されたフォルダーのフォルダーが表示されます。 このメッセージ クラスでは、 _lpszMessageClass_パラメーターにクラスまたはそのクラスの基本クラスと同じする必要がありますか。 NULL を渡すことは、 _lppEntryID_が指すフォルダーは、既定値には、メッセージ ストアのフォルダーが表示されることを示します。 
+> 読み上げ_lppentryid_によって参照されるフォルダーを受信フォルダーとして明示的に設定する、メッセージクラスへのポインターへのポインター。 このメッセージクラスは、 _lpszmessageclass_パラメーターのクラス、またはそのクラスの基本クラスのいずれかである必要があります。 NULL を渡すと、 _lppentryid_が指すフォルダーが、メッセージストアの既定の受信フォルダーであることを示します。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > 受信フォルダーが正常に返されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMsgStore::GetReceiveFolder**メソッドは、特定のメッセージ クラスのメッセージを受信する指定されたフォルダー、受信フォルダーのエントリ id を取得します。 呼び出し元が_lpszMessageClass_パラメーターでは、メッセージ クラスまたは NULL を指定できます。 _LpszMessageClass_が NULL の場合は、 **GetReceiveFolder**は、次の値を返します。 
+**IMsgStore:: getreceivefolder**メソッドは、受信フォルダーのエントリ id を取得します。これは、特定のメッセージクラスの受信メッセージを受信するように指定されたフォルダーです。 呼び出し元は、 _lpszmessageclass_パラメーターでメッセージクラスまたは NULL を指定できます。 _lpszmessageclass_が NULL の場合、 **getreceivefolder**は次の値を返します。 
   
-- _LppszExplicitClass_、メッセージ クラスの 1 つ目の基本クラスの名前で示される_lpszMessageClass_は、受信フォルダーを明示的に設定します。 
+- _lppszExplicitClass_では、明示的に受信フォルダーを設定する、 _lpszmessageclass_が指すメッセージクラスの最初の基本クラスの名前。 
     
-- _LppEntryID_、基本クラスの受信フォルダーのエントリ id は、 _lppszExplicitClass_パラメーターを参照できます。 
+- _lppentryid_の場合、 _lppszExplicitClass_パラメーターによって参照される基本クラスの受信フォルダーのエントリ識別子。 
     
-たとえば、メッセージ クラス IPM の**の受信フォルダーがあるとします。注**が設定されているエントリに、受信トレイと**GetReceiveFolder**の識別子と呼ばれる_lpszMessageClass_ **IPM に設定の内容とします。Note.Phone**。 場合**IPM。Note.Phone**はありませんが、明示的な受信フォルダー セット、 **GetReceiveFolder**は、 _lppEntryID_と**IPM で、[受信トレイ] のエントリ id を返します。注** _lppszExplicitClass_にします。
+たとえば、メッセージクラス IPM の受信フォルダーがあるとし**ます。メモ**は、受信トレイのエントリ識別子に設定され、 _lpszmessageclass_の内容を IPM に設定して、 **getreceivefolder**が呼び出され**ます。注電話番号** **IPM.メモ電話**には、明示的な受信フォルダーが設定されていません。 **getreceivefolder**は、 _lppentryid_および IPM で受信トレイのエントリ識別子を返し**ます。** _lppszExplicitClass_でメモします。
   
-_LppszExplicitClass_は長さ 0 の文字列、Unicode 形式で文字列またはかどうかによって、ANSI 形式の文字列のいずれかのクライアントは、メッセージ クラスの**GetReceiveFolder**を呼び出すし、そのメッセージ クラス用の受信フォルダーを設定していない、する場合、クライアントは、 _ulFlags_パラメーターに MAPI_UNICODE フラグを設定します。 
+クライアントがメッセージクラスの**getreceivefolder**を呼び出し、そのメッセージクラスの受信フォルダーが設定されていない場合、 _lppszExplicitClass_は、長さ0の文字列、Unicode 形式の文字列、または ANSI 形式の文字列のいずれかになります。クライアントは_ulflags_パラメーターに MAPI_UNICODE フラグを設定します。 
   
-既定では、 _lpszMessageClass_パラメーターに NULL を渡すことによって取得したフォルダーが表示される、メッセージ ・ ストアごとに常に存在します。 
+_lpszmessageclass_パラメーターで NULL を渡すことによって取得される既定の受信フォルダーは、すべてのメッセージストアに常に存在します。 
   
-クライアントは、そのエントリの識別子を保持するメモリを解放するのには_lppEntryID_で返されるエントリの識別子を使用して登録が完了したら、 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出す必要があります。 **MAPIFreeBuffer**は、その文字列を保持しているメモリを解放するのには_lppszExplicitClass_で返されるメッセージ クラスの文字列の処理が終わったらそれも呼び出す必要があります。 
+クライアントは、そのエントリ識別子を保持するメモリを解放するために、 _lppentryid_で返されたエントリ識別子を使用して実行されたときに[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出す必要があります。 また、 _lppszExplicitClass_で返されたメッセージクラス文字列を使用して、その文字列を保持するメモリを解放する場合も、 **MAPIFreeBuffer**を呼び出す必要があります。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIFunctions.cpp  <br/> |GetInbox  <br/> |MFCMAPI では、 **IMsgStore::GetReceiveFolder**メソッドを使用して、受信トレイ フォルダーに移動します。  <br/> |
+|MAPIFunctions  <br/> |getinbox  <br/> |mfcmapi は、 **IMsgStore:: getreceivefolder**メソッドを使用して、受信トレイフォルダーを見つけます。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -8,34 +8,34 @@ f1_keywords:
 - Vis_DSS.chm1033809
 localization_priority: Normal
 ms.assetid: 86b0f071-5e0b-56de-ff5b-63c114ad823a
-description: マクロを Microsoft Visual Basic for Applications (VBA) プロジェクトします。
-ms.openlocfilehash: e3dd989956ce9c5f795ae3ef0d8535ab2776d6d7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Microsoft Visual Basic for Applications (VBA) プロジェクトのマクロを呼び出します。
+ms.openlocfilehash: 77045bd67fe9be9aab14e73199b33b93c6d70c2c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355714"
 ---
 # <a name="runmacro-function"></a>RUNMACRO 関数
 
-マクロを Microsoft Visual Basic for Applications (VBA) プロジェクトします。 
+Microsoft Visual Basic for Applications (VBA) プロジェクトのマクロを呼び出します。 
   
 ## <a name="syntax"></a>構文
 
-RUNMACRO (* **マクロ名** * [、* * *projname_opt* * *]) 
+RUNMACRO (* * *macroname* * * [, * * *projname_opt* * *]) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _マクロ名_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |呼び出すマクロの名前を指定します。  <br/> |
+| _macroname_ <br/> |必須  <br/> |**String** <br/> |呼び出すマクロの名前を指定します。  <br/> |
 | _projname_opt_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> | マクロが含まれるプロジェクトを指定します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-プロジェクトが指定されている場合、Microsoft Visio は、1 つ含まれている_projname_opt_と呼び出し_マクロ名_をプロジェクト内のすべての開いているドキュメントをスキャンします。 _Projname_opt_が省略されるか null の場合 ("")、_マクロ名_を評価する RUNMACRO 数式を含む文書の VBA プロジェクト内にあると見なされます。 
+プロジェクトが指定されている場合、 _projname_opt_を含むすべての開いているドキュメントをスキャンし、そのプロジェクトで_macroname_を呼び出します。 _projname_opt_が省略されている場合、または null ("") の場合、 _macroname_は、評価される RUNMACRO の引数が含まれる VBA プロジェクト内にあると見なされます。 
   
-RUNMACRO 関数は、_マクロ名_に評価される式を所有している図形への参照に合格しないことで、CALLTHIS 関数とは異なります。 CALLTHIS のような RUNMACRO 関数は_projname_opt_をそれへの呼び出しをへの参照を必要としません。 
+RUNMACRO 関数は、CALLTHIS 関数とは異なり、 _macroname_に評価される数式を所有する図形への参照を渡しません。 CALLTHIS と同様に、RUNMACRO 関数は、 _projname_opt_を呼び出すために参照する必要はありません。 
   
  Visio インスタンスが数式の RUNMACRO 関数を評価するときに呼び出す VBA コードでは、この数式を使用しているセルを含んだ図面を閉じないでください。アプリケーション エラーが発生して Visio が終了します。 
   

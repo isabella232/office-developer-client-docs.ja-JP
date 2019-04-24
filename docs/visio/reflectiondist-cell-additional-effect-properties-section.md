@@ -6,27 +6,27 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 858a3191-420a-4065-9180-ebd8503d1eef
-description: 距離の決定に 100.0 0.0 からポイントに、図形から反射をオフセットします。
-ms.openlocfilehash: 35cbafdf3bde350fb20035228646a3f65b49e141
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 反射を図形からオフセットする距離を 0.0 ~ 100.0 の範囲で指定します。
+ms.openlocfilehash: cc0aca484a77602b78523819cd4f01d78a9ff86f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348385"
 ---
 # <a name="reflectiondist-cell-additional-effect-properties-section"></a>[ReflectionDist] セル ([追加効果のプロパティ] セクション)
 
-距離の決定に 100.0 0.0 からポイントに、図形から反射をオフセットします。 
+反射を図形からオフセットする距離を 0.0 ~ 100.0 の範囲で指定します。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**セル**要素の**N**属性の値によって、別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ **ReflectionDist** ] セルへの参照を取得、次のように使用します。 
+別の数式から、 **cell**要素の**N**属性の値によって、または**CellsU**プロパティを使用したプログラムから、名前によって [ **[reflectiondist]** ] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | ReflectionDist  <br/> |
+| セル名:  <br/> | [reflectiondist]  <br/> |
    
-プログラムから、インデックスによって [ **ReflectionDist** ] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ **[reflectiondist]** ] セルへの参照を取得するには、 **CellsSRC**プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

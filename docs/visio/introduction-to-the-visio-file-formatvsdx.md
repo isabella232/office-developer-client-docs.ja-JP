@@ -8,11 +8,11 @@ ms.assetid: 69736f40-8f67-46c2-abf6-82dffecb2274
 description: Visio 2013 の新しいファイル形式について説明し、プログラムを使用して Visio 2013 ファイル形式で作業するための上位レベルの概念を確認し、Visio 2013 ファイルを検証する簡単なコンソール アプリケーションを作成します。
 localization_priority: Priority
 ms.openlocfilehash: 74c0f05a1db280386f3dc9dfd23da73a9b2daaf5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357275"
 ---
 # <a name="introduction-to-the-visio-file-format-vsdx"></a>Visio ファイル形式 (.vsdx) の概要
 

@@ -1,42 +1,42 @@
 ---
-title: 既定のメール クライアントの MAPI の特定のバージョンのパスを取得します。
+title: 既定のメール クライアント用の MAPI の特定のバージョンのパスを取得する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5ee7fb05-cfb3-6b68-5a9a-1d6375f2e879
-description: '�ŏI�X�V��: 2011�N7��23��'
+description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 1992e34a684a6b5894963eae0c299b21c064578c
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25390276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346460"
 ---
-# <a name="get-the-path-of-a-specific-version-of-mapi-for-the-default-mail-client"></a>既定のメール クライアントの MAPI の特定のバージョンのパスを取得します。
+# <a name="get-the-path-of-a-specific-version-of-mapi-for-the-default-mail-client"></a>既定のメール クライアント用の MAPI の特定のバージョンのパスを取得する
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックには、コンピューター上の既定のメール クライアントで使用されている MAPI の特定のバージョンのパスを取得する方法について説明する C++ のコード サンプルが含まれています。 MAPI メール クライアントには、レジストリに MAPI スタブ ライブラリが読み込まれ、MAPI をディスパッチするカスタム DLL の呼び出しで指定するオプションがあります。 既定のメール クライアントでこのカスタム DLL を設定するレジストリ キーでは、 **MSIComponentID**既定のメール クライアントの**HKLM\Software\Clients\Mail**キーの下。 MAPI スタブ ライブラリによってエクスポートされた[FGetComponentPath](fgetcomponentpath.md)関数は、mapistub.dll、 **MSIComponentID**レジストリ キーに指定されている MAPI のカスタム バージョンのパスを返すことができます。 
+このトピックには、コンピューター上の既定のメールクライアントで使用されている特定のバージョンの MAPI のパスを取得する方法を示す、C++ のコードサンプルが含まれています。 mapi メールクライアントには、mapi スタブライブラリが mapi 呼び出しを読み込んでディスパッチするカスタム DLL をレジストリで指定するオプションがあります。 既定のメールクライアントに対してこのカスタム DLL に設定するレジストリキーは、既定のメールクライアントの**HKLM\Software\Clients\Mail**キーの下にある**MSIComponentID**です。 mapi スタブライブラリ mapistub によってエクスポートされた[FGetComponentPath](fgetcomponentpath.md)関数は、 **MSIComponentID**レジストリキーで指定された mapi のカスタムバージョンへのパスを返すことができます。 
   
-このコード サンプルには、2 つの関数が含まれています:`HrGetRegMultiSZValueA`と`GetMAPISVCPath`。 `GetMAPISVCPath`関数では、 [FGetComponentPath](fgetcomponentpath.md)を使用して、カスタム MAPI のバージョンへのパスを取得します。 既定のメール クライアントは、Microsoft Office Outlook 2007 と**FGetComponentPath**に値を渡すことが前提としています`{FF1D0740-D227-11D1-A4B0-006008AF820E}`、 **MSIComponentID**レジストリ キーのコンポーネント ID の MAPI Outlook 2007 を設定します。 
+このコードサンプルには`HrGetRegMultiSZValueA` 、との`GetMAPISVCPath`2 つの関数が含まれています。 この`GetMAPISVCPath`関数は、 [FGetComponentPath](fgetcomponentpath.md)を使用して、MAPI のカスタムバージョンへのパスを取得します。 この例では、既定のメールクライアントが Microsoft Office Outlook 2007 である**** ことを想定し`{FF1D0740-D227-11D1-A4B0-006008AF820E}`、FGetComponentPath に渡します。この場合、Outlook 2007 は**MSIComponentID**レジストリキーの MAPI のコンポーネント ID として設定されます。 
   
 > [!NOTE]
-> 実習でないと考えてください、値は、 `{FF1D0740-D227-11D1-A4B0-006008AF820E}`、常にコンポーネント ID の MAPI および**FGetComponentPath**に直接渡すことです。 MAPI Outlook のバージョンがコンピューターで使用することを確実に検索するには**MSIComponentID**の値をレジストリから読み取るし、 **FGetComponentPath**に渡すことです。 
+> 実際には、値`{FF1D0740-D227-11D1-A4B0-006008AF820E}`を想定しないでください。は常に MAPI のコンポーネント ID であり、 **FGetComponentPath**に直接渡されます。 コンピューターでどのバージョンの MAPI Outlook が使用されているかを確実に確認するには、レジストリから**MSIComponentID**の値を読み取り、それを**FGetComponentPath**に渡します。 
   
-次の手順を説明する方法`GetMAPISVCPath`は、このです。 
+次の手順では`GetMAPISVCPath` 、これを行う方法について説明します。 
   
-1. システム ディレクトリから mapistub.dll、MAPI スタブ ライブラリを読み込みます。
+1. システムディレクトリから MAPI スタブライブラリ mapistub を読み込みます。
     
-2. Mapistub.dll **FGetComponentPath**関数をエクスポートすることは、mapistub.dll からこの関数のアドレスを取得しようとすることを想定しています。 
+2. mapistub が**FGetComponentPath**関数をエクスポートし、mapistub からこの関数のアドレスを取得しようとしていることを前提としています。 
     
-3. Mapistub.dll が失敗した場合のアドレスの取得、mapi32.dll からアドレスを取得しようとします。
+3. mapistub からアドレスを取得しようとすると、mapi32 からアドレスを取得しようと試みます。
     
-4. レジストリを開き、使用して、 **FGetComponentPath**のアドレスの取得が成功した場合、 `HrGetRegMultiSZValueA` **HKLM\Software\Clients\Mail\Microsoft Outlook**の下のレジストリ値を読み取る関数。 
+4. **FGetComponentPath**のアドレスの取得に成功すると、レジストリが開き、 `HrGetRegMultiSZValueA`関数を使用して**HKLM\Software\Clients\Mail\Microsoft Outlook**の下にあるレジストリ値を読み取ります。 
     
-5. **FGetComponentPath**の値を指定するには`{FF1D0740-D227-11D1-A4B0-006008AF820E}`、Outlook 2007 を使用する MAPI のバージョンへのパスを取得します。
+5. 値**** `{FF1D0740-D227-11D1-A4B0-006008AF820E}`を指定して FGetComponentPath を呼び出し、Outlook 2007 で使用される MAPI のバージョンへのパスを取得します。
     
-英語と英語以外のロケールのローカライズされたコピー MAPI をサポートするためにサンプル コード**MSIApplicationLCID**と**MSIOfficeLCID**のサブキーの値を読み取り、 **FGetComponentPath**、最初に指定する**を呼び出して注意してください。MSIApplicationLCID** *szQualifier* 、 *szQualifier*と**MSIOfficeLCID**もう一度指定するとします。 英語以外の言語をサポートするメール クライアントのレジストリ キーの詳細については、[設定の [MSI のキーの MAPI DLL](https://msdn.microsoft.com/library/ee909494%28VS.85%29.aspx)を参照してください。
+英語および英語以外のロケールで MAPI のローカライズされたコピーをサポートするために、コードサンプルでは**msiapplicationlcid**および**msiofficeelcid**サブキーの値を読み取り、 **FGetComponentPath**を呼び出しています。最初の指定**msiapplicationlcid**を*szqualifier*として再度指定して、 **msiofficeelcid**を*szqualifier*として指定します。 英語以外の言語をサポートするメールクライアントのレジストリキーの詳細については、「 [Setting Up the MSI keys for the MAPI DLL](https://msdn.microsoft.com/library/ee909494%28VS.85%29.aspx)」を参照してください。
   
 ```cpp
 // HrGetRegMultiSZValueA 

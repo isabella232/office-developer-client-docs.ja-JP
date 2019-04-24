@@ -1,57 +1,57 @@
 ---
-title: アドレス一覧の解決の順序をプログラムで設定します。
+title: アドレス一覧の解決順序をプログラムにより設定する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: f9559afb-8db1-ce72-3e11-9b3d47bb80b6
-description: '最終更新日: 2012 年 7 月 6 日'
+description: '最終更新日: 2012 年7月6日'
 ms.openlocfilehash: 4ca3e9d11a3133236d38ef31b01ecded932e8013
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25392920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345963"
 ---
-# <a name="programmatically-set-the-resolution-order-for-address-lists"></a>アドレス一覧の解決の順序をプログラムで設定します。
+# <a name="programmatically-set-the-resolution-order-for-address-lists"></a>アドレス一覧の解決順序をプログラムにより設定する
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックには、c++ プログラムを使用してアドレス一覧の受信者に電子メールでメッセージおよび会議出席依頼に出席者は、解決の順序を設定するコード サンプルが含まれています。
+このトピックには、C++ のコードサンプルが含まれており、プログラムによって、会議出席依頼の電子メールメッセージと出席者の受信者が解決されるアドレス一覧の順序を設定することができます。
   
-MAPI の各プロファイルは、複数のアドレス一覧をサポートできるし、自身のコンテナーで、それぞれのアドレス一覧が存在します。 MAPI には、名前解決に使用されるプロファイルに新しい検索パスを設定できるようにするインターフェイスで、 **[SetSearchPath](https://support.microsoft.com/kb/292590)** メソッドがサポートされています。 **IAddrBook::SetSearchPath**メソッドを使用するには、目的の順序に関連するアドレス帳のコンテナーを保持している**[SRowSet](srowset.md)** 配列で、目的の解像度の順序を定義する必要は、 *lpSearchPath*として、配列を指定 パラメーターです。 **SRowSet**配列の各エントリの最初のプロパティは、対応するアドレス帳の**[PR_ENTRYID](pidtagentryid-canonical-property.md)** プロパティである必要があります。 
+MAPI では、各プロファイルは複数のアドレス一覧をサポートでき、それぞれのアドレス一覧は独自のコンテナーに格納されます。 MAPI は、名前解決に使用されるプロファイルに新しい検索パスを設定できるようにするインターフェイスの**[SetSearchPath](https://support.microsoft.com/kb/292590)** メソッドをサポートしています。 **IAddrBook:: SetSearchPath**メソッドを使用するには、適切なアドレス帳のコンテナーを保持する**[srowset](srowset.md)** 配列で、必要な順序で解決順序を定義し、その配列を*lpSearchPath*として指定する必要があります。 parameter. **srowset**配列の各エントリの最初のプロパティは、対応するアドレス帳の**[PR_ENTRYID](pidtagentryid-canonical-property.md)** プロパティである必要があります。 
   
-コード サンプルは、次の手順で、解決の順序を設定します。
+このコードサンプルでは、次の手順で解決順序を設定します。
   
-1. 初期化`numANR`が一致するコンテナーの数に解決の順序で、目的のアドレス一覧の名前を指定し、`ANROrder`の配列。 
+1. 一致`numANR`するコンテナーの数に初期化し、 `ANROrder`配列内の目的のアドレス一覧の名前と解決順序を指定します。 
     
-2. **生じます**関数を使用して MAPI を初期化します。 
+2. **MAPIInitialize**関数を使用して MAPI を初期化します。 
     
-3.  MAPI にログオンし、プロファイルを選択することができます。 
+3.  MAPI にログオンし、ユーザーがプロファイルを選択できるようにします。 
     
 4.  現在のセッションからアドレス帳へのポインターを取得します。 
     
 5. アドレス帳を開きます。
     
-6. アドレス帳のルート コンテナーを開きます。
+6. ルートアドレス帳のコンテナーを開きます。
     
-7. ルートのアドレス帳コンテナーの階層テーブルを開きます。
+7. ルートアドレス帳コンテナーの階層テーブルを開きます。
     
-8. 階層の一連のアドレス帳コンテナーを取得します。
+8. 階層内のアドレス帳コンテナーのリストを取得します。
     
-9. 目的のアドレス一覧の名前を比較することで、目的のアドレス一覧のエントリ Id を探します`ANROrder`アドレス帳の階層内の既存の名前にします。 
+9. 目的のアドレス一覧の名前`ANROrder`をアドレス帳階層内の既存の名前と比較することによって、目的のアドレス一覧のエントリ id を検索します。 
     
-10. **SRowSet**配列に適切なエントリ Id を設定`pNewRows`。
+10. 適切なエントリ id を**srowset**配列に設定`pNewRows`します。
     
-11. 呼び出し、渡します`pNewRows`検索パスを設定するのには**IAddrBook::SetSearchPath**に*lpSearchPath*のパラメーターとしてします。 
+11. *lpSearchPath*パラメーターを`pNewRows` **IAddrBook:: SetSearchPath**に呼び出して渡し、検索パスを設定します。 
     
 12. 内部バッファーとポインターをクリーンアップします。
     
 13. MAPI からログオフします。
     
-14. Uninitalizes MAPI です。
+14. Uninitalizes MAPI。
     
-このコード サンプルを使用して、Microsoft Office Outlook の既定のインストールで使用可能なアドレス一覧:**すべての連絡先**、**すべてのグループ**、および**連絡先**です。 Outlook が起動し、初期化済みのプロファイルで実行している後は、サンプルを実行する必要があります。 サンプルの 1 つの言語に含まれる名前と動作 (たとえば、すべての名前は英語で)。 多言語展開では、英語以外の Outlook を実行してユーザーにローカライズされた**連絡先**フォルダーなどの作業には向いていません。 
+このコードサンプルでは、Microsoft Office Outlook の既定のインストールで使用可能なアドレス一覧を使用します。**すべての連絡先**、**すべてのグループ**、**連絡先**。 Outlook を起動した後、初期化されたプロファイルで実行している場合は、このサンプルを実行する必要があります。 このサンプルは、1つの言語 (たとえば、すべての名前が英語) の名前で適切に動作します。 これは、英語以外の Outlook ビルドを実行しているユーザー用にローカライズされた**連絡先**フォルダーなど、多言語展開で機能するようには設計されていません。 
   
 ```cpp
 #include "stdafx.h" 

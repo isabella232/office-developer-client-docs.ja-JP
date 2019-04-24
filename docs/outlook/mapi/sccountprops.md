@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 76e4cc52-e1a0-4e0b-a2a6-a17644f6b2e7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ee004bdfb8d13537fd8823225f155223ebc76ca7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 49634bda487143ddd8d8806b94f6c451ccf57b75
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351318"
 ---
 # <a name="sccountprops"></a>ScCountProps
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロパティ値の配列のバイト単位のサイズを決定し、配列に関連付けられているメモリを確認します。 
+プロパティ値の配列のサイズをバイト単位で指定し、配列に関連付けられているメモリを検証します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 SCODE ScCountProps(
@@ -45,17 +45,17 @@ SCODE ScCountProps(
 
  _cprop_
   
-> [in]_Rgprop_パラメーターで指定された配列内のプロパティの数です。 
+> 順番_rgprop_パラメーターによって示される、配列内のプロパティの数。 
     
  _rgprop_
   
-> [in][SPropValue](spropvalue.md)構造体のサイズを確認するプロパティを定義する配列内の範囲へのポインター。 この範囲は、配列の先頭に必ずしも起動しません。 
+> 順番サイズを決定するプロパティを定義する[spropvalue](spropvalue.md)構造体の配列内の範囲へのポインター。 この範囲は、必ずしも配列の先頭から開始することはできません。 
     
- _pcb_
+ _設計_
   
-> [out]ポインターをプロパティの配列のバイト単位のサイズを指します。
+> 読み上げ(オプション) プロパティ配列のサイズ (バイト単位) のポインターです。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -63,13 +63,13 @@ S_OK
     
 MAPI_E_INVALID_PARAMETER 
   
-> PROP_ID_NULL または PROP_ID_INVALID の識別子のプロパティ値の配列内の少なくとも 1 つのプロパティまたはプロパティ配列には、複数値を持つプロパティ値のないプロパティが含まれています。
+> プロパティ値配列の少なくとも1つのプロパティに PROP_ID_NULL または PROP_ID_INVALID の識別子があるか、プロパティ配列にプロパティ値を持たない複数値プロパティが含まれています。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-_Pcb_のパラメーターに NULL が渡されると、通知の配列を検証する**ScCountProps**関数が、カウントは行われません。 **ScCountNotifications**関数が配列のサイズを決定し、原因を格納する_pcb_の null 以外の値が渡された場合_pcb_です。 _Pcb_のパラメーターは、配列全体を格納できる大きさである必要があります。 
+_pcb_パラメーターで NULL が渡された場合、 **sccountprops**関数は通知の配列を検証しますが、カウントは行われません。 非 null 値が_pcb_で渡された場合、 **sccountnotifications**関数は配列のサイズを決定し、原因となった_pcb_を格納します。 _pcb_パラメーターは、配列全体を格納するのに十分な大きさである必要があります。 
   
-それがカウントと**ScCountProps**は、配列に関連付けられているメモリを検証します。 **ScCountProps**は、MAPI に関する情報を持つプロパティでのみ有効です。 
+カウントすると、 **sccountprops**は配列に関連付けられているメモリを検証します。 **sccountprops**は、どの MAPI が情報を持っているかに関するプロパティでのみ動作します。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -12,57 +12,57 @@ api_type:
 - COM
 ms.assetid: a10d86fc-3a73-49dc-b974-ed852ec715e9
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d04144a4f5ef714b59b608bfe19367bcb3c1ced8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 426d26cae147faf3f843ac547de9d205d766ac44
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348210"
 ---
 # <a name="pidtagspoolerstatus-canonical-property"></a>PidTagSpoolerStatus 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI スプーラーを無効に提供される情報に基づいて、メッセージのステータスが含まれています。
+MAPI スプーラーで使用可能な情報に基づいてメッセージの状態を格納します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_SPOOLER_STATUS  <br/> |
-|識別子:  <br/> |0x0E10  <br/> |
+|識別子:  <br/> |0x0e10  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |MAPI 以外から送信できます。  <br/> |
+|エリア:  <br/> |MAPI ノンノンアウトテーブル  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティは、メッセージ オブジェクトを MAPI によって計算されます。
+このプロパティは、メッセージオブジェクトの MAPI によって計算されます。
   
-このプロパティは、受信したメッセージのみが表示され、他のすべてのケースで予約されています。 最終的な場所に、メッセージが配信されたかどうか、またはかどうかメッセージ フック プロバイダー可能性があるメッセージを削除して再ルーティング中にそのことを示します。
+このプロパティは、受信メッセージのみに表示され、他のすべてのケースで予約されています。 メッセージが最終的な場所に配信されたかどうか、またはメッセージングフックプロバイダーがメッセージの再ルーティング中にメッセージを削除した可能性があるかどうかを示します。
   
-クライアント アプリケーションでは、このプロパティを設定する必要があることはありません。 受信メッセージでは、クライアントまたはサービス プロバイダーは、メッセージの状態を確認するには、このプロパティに[IMAPIProp::GetProps](imapiprop-getprops.md)を呼び出すことができます。 値 S_OK は、メッセージがメッセージ ・ ストアに正常に配信されたことを示します。 MAPI_E_OBJECT_DELETED の値は、メッセージは削除され、ストアにコミットされていないことを示します。 
+クライアントアプリケーションでこのプロパティを設定することはできません。 受信メッセージの場合、クライアントまたはサービスプロバイダーは、このプロパティに[imapiprop:: GetProps](imapiprop-getprops.md)を呼び出して、メッセージの状態を確認できます。 値 S_OK は、メッセージがメッセージストアに正常に配信されたことを示します。 値 MAPI_E_OBJECT_DELETED は、メッセージが削除され、ストアにコミットされていないことを示します。 
   
-メッセージ ストア プロバイダーは、メッセージ、受信者テーブル、および発信キューのテーブルでこのプロパティをサポートする必要があります。 クライアントとプロバイダーが発信キュー テーブルに列を設定し、制限する必要がありますこのプロパティに基づいています。
+メッセージストアプロバイダーは、メッセージ、受信者テーブル、および送信キューテーブルでこのプロパティをサポートしている必要があります。 クライアントとプロバイダーは、送信キューテーブルの列を設定し、このプロパティに基づいて制限できる必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -1,5 +1,5 @@
 ---
-title: ITableDataHrQueryRow
+title: itabledatahrqueryrow
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 66ce8f36-2b2b-4a8e-b9b2-43782d8357a1
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: ef0dc212a6a6f761cd8dd0cae5312c548c02ae50
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: da41fadc9a71a410dd115e28ce2cf9c81442b104
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348644"
 ---
 # <a name="itabledatahrqueryrow"></a>ITableData::HrQueryRow
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルの行を取得します。
+表の行を取得します。
   
 ```cpp
 HRESULT HrQueryRow(
@@ -37,33 +37,33 @@ HRESULT HrQueryRow(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpSPropValue_
+ _lpspropvalue_
   
-> [in]取得する行のインデックス列を説明するプロパティ値の構造体へのポインター。 プロパティ値の構造体の**ulPropTag**メンバーは、 [ITableData](itabledataiunknown.md)の実装にアクセスする、 [CreateTable](createtable.md)関数への呼び出しの_ulPropTagIndexColumn_パラメーターと同じプロパティ タグを含める必要があります。 
+> 順番取得する行のインデックス列を記述するプロパティ値構造へのポインター。 プロパティ値構造の**ulPropTag**メンバーには、 _ulPropTagIndexColumn_パラメーターと同じプロパティタグが含まれている必要があります。この関数は、 [itabledata](itabledataiunknown.md)実装にアクセスする[CreateTable](createtable.md)関数を呼び出します。 
     
- _lppSRow_
+ _lppsrow_
   
-> [out]取得した行へのポインターへのポインター。 
+> 読み上げ取得した行へのポインターへのポインター。 
     
- _lpuliRow_
+ _lpulirow_
   
-> [で [チェック アウト]入力、有効なポインターまたは NULL の場合は、返される情報が必要がないことをことを示します。 出力では、有効なポインターを指す行の行番号、テーブル内の行の位置を示す序数。
+> [入力]入力時に、有効なポインターまたは NULL を返します。これは、返される情報がないことを示します。 出力では、行の行番号をポイントする有効なポインターは、テーブル内の行の位置を識別する連続した番号です。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 行が正常に取得しました。
+> 行が正常に取得されました。
     
 MAPI_E_INVALID_PARAMETER 
   
-> [SPropValue](spropvalue.md)構造をその_lpSPropValue_が指すインデックス列のプロパティが含まれていません。 
+> _lpspropvalue_がポイントする[spropvalue](spropvalue.md)構造に、インデックス列プロパティが含まれていません。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**ITableData::HrQueryRow**メソッドは、すべての_lpSPropValue_が指すプロパティの構造体に含まれているインデックス列の値に一致するインデックス列を持つ行のプロパティを取得します。 **HrQueryRow**は、呼び出し元が要求した場合、テーブル内の行の位置を識別するにも、行番号を返します。 
+**itabledata:: hrqueryrow**メソッドは、 _lpspropvalue_が指すプロパティ構造に含まれるインデックス列の値に一致するインデックス列を持つ行のすべてのプロパティを取得します。 **** また、呼び出し元が要求した場合、テーブル内の行の位置を示す行番号も返します。 
   
-**HrQueryRow**は、 _lpSPropValue_が指す**SPropValue**構造体を変更しません、ため呼び出し元は、 **HrQueryRow**が返されるときに構造体を解放する必要があります。 呼び出し元では、取得した行を格納する**SRow**構造体を解放する必要がありますも。 
+**hrqueryrow**は、 _lpspropvalue_によって示される**spropvalue**構造体を変更しないので、 **hrqueryrow**が戻るときには、呼び出し元は構造を解放する必要があります。 呼び出し元は、取得した行を含む**srow**構造も解放する必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

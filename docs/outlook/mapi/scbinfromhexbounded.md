@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: edac715c-6edb-4b05-82e5-c08c3c7cb6d4
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 135db8d690d4d4bd610bd15893c358fedddb4605
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 813fab28e3e865c9f04f85c854b292ce7229dad5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357499"
 ---
 # <a name="scbinfromhexbounded"></a>ScBinFromHexBounded
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-16 進数の文字列形式の指定部分を 2 進数に変換します。 
+16進数の文字列表現の指定した部分をバイナリ値に変換します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 SCODE ScBinFromHexBounded(
@@ -45,17 +45,17 @@ SCODE ScBinFromHexBounded(
 
  _sz_
   
-> [in]変換される null で終わる文字列へのポインター。 有効な文字には、9 との両方の大文字と小文字の文字を 16 進数の文字 0 ~ f が含まれます。
+> 順番変換する null で終わる文字列へのポインター。 有効な文字には、0 ~ 9 の16進文字、大文字、小文字の a ~ f があります。
     
  _pb_
   
-> [out]返される 2 進数へのポインター。
+> 読み上げ返されたバイナリ番号へのポインター。
     
  _cb_
   
-> [in]_Pb_パラメーターのバイト単位のサイズです。 
+> 順番_pb_パラメーターのサイズ (バイト単位)。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK
   
@@ -63,7 +63,7 @@ S_OK
     
 MAPI_E_CALL_FAILED
   
-> 無効な文字が発生しました。
+> 無効な文字が検出されました。
     
 ## <a name="see-also"></a>関連項目
 

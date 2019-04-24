@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 9ce93469-c55d-48d1-9abb-a637716ed4f2
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 67c86f39898b4bd0c019b9b3095c9449e6e60b1b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 28786f483c4d2031c334d7b9697db7c5e627fe93
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349232"
 ---
 # <a name="imessagesubmitmessage"></a>IMessage::SubmitMessage
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-すべてのメッセージのプロパティを保存し、メッセージを送信する準備が完了としてマークを付けます。
+すべてのメッセージのプロパティを保存し、メッセージを送信する準備が整ったことをマークします。
   
 ```cpp
 HRESULT SubmitMessage(
@@ -33,17 +33,17 @@ HRESULT SubmitMessage(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]メッセージの送信方法を制御するためのフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番メッセージの送信方法を制御するために使用されるフラグのビットマスク。 次のフラグを設定できます。
     
 FORCE_SUBMIT 
   
-> MAPI では、すぐにメッセージを送信する必要があります。 このフラグは現在使用中です。
+> MAPI はメッセージを直ちに送信する必要があります。 このフラグは現在使用されていません。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -51,29 +51,29 @@ S_OK
     
 MAPI_E_NO_RECIPIENTS 
   
-> メッセージの受信者テーブルは空です。
+> メッセージの recipient テーブルが空です。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMessage::SubmitMessage**メソッドは、メッセージを送信する準備が完了としてをマークします。 MAPI は、メッセージを送信するためマークされている順序で基になるメッセージング システムに渡します。 この機能では、しばらくの間は、基になるメッセージング システムにそれを担当するためにメッセージのメッセージ ストアに常に可能性があります。 先に領収書の順序は、基になるメッセージング システムのコントロールし、メッセージの送信に使用された順序と必ずしも一致しません。 
+**IMessage:: submitmessage**メソッドは、メッセージを送信する準備が整ったことを示します。 MAPI は、メッセージが送信をマークされている順序で、基になるメッセージングシステムにメッセージを渡します。 この機能により、メッセージは、基礎となるメッセージングシステムが責任を持つ前に、しばらくの間メッセージストアに保持される可能性があります。 宛先での受信の順序は、基になるメッセージングシステムのコントロール内にあり、メッセージが送信された順序とは必ずしも一致しません。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-保存し、メッセージの**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) のプロパティをチェックし、メッセージの[IMAPIProp::SaveChanges](imapiprop-savechanges.md)のメソッドを呼び出します。 MSGFLAG_RESEND フラグが設定されている場合は、 [IMAPISupport::PrepareSubmit](imapisupport-preparesubmit.md)を呼び出します。 **PrepareSubmit**は、再送信メッセージ内の受信者のすべての受信者の種類および**れない**([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) のプロパティを更新します。
+メッセージの[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出して保存し、メッセージの**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティを確認します。 MSGFLAG_RESEND フラグが設定されている場合は、次のように呼び出し imapisupport を呼び出します。 [:P reparesubmit](imapisupport-preparesubmit.md)。 **PrepareSubmit**は、再送信メッセージ内のすべての受信者の受信者の種類と**PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) プロパティを更新します。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**SubmitMessage**が返されると、メッセージとその関連付けられているサブオブジェクトのメッセージをフォルダー、添付ファイル、ストリーム、テーブル、およびように無効になっています。 MAPI では、各自**が**メソッドを呼び出すことを除いて、これらのポインターをその他の操作は許可されていません。 MAPI では、メッセージと関連付けられているすべてのサブオブジェクトを解放する必要があります**SubmitMessage**が呼び出された後になるよう設計されています。 ただし、 **SubmitMessage**には、存在しないか無効な情報を示すエラー値が返された場合メッセージが開いたままになり、ポインターが有効なまま維持します。 
+**submitmessage**が戻ると、そのメッセージへのすべてのポインターと、それに関連付けられているサブオブジェクトメッセージ、フォルダー、添付ファイル、ストリーム、テーブルなどが無効になります。 MAPI では、これらのポインターに対して他の操作を行うことはできません。ただし、 **IUnknown:: Release**メソッドを呼び出すことはありません。 MAPI は、 **submitmessage**を呼び出した後、メッセージとすべての関連するサブオブジェクトを解放する必要があるように設計されています。 ただし、 **submitmessage**から不足または無効な情報を示すエラー値が返された場合、メッセージは開いたままになり、ポインターは有効なままとなります。 
   
-送信操作を取り消す場合に、取得し、メッセージの送信前にメッセージの**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) のプロパティへのポインターを格納します。 メッセージが送信された後、メッセージのエントリ id が無効になるためには、 **SubmitMessage**を呼び出す前に保存する必要があります。 送信をキャンセルするには、このエントリの識別子を_lpEntryId_パラメーターをポイントし、 [IMsgStore::AbortSubmit](imsgstore-abortsubmit.md)をコールします。
+送信操作を取り消すには、メッセージが送信される前に、メッセージの**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティへのポインターを取得して保存します。 メッセージのエントリ id は、メッセージの送信後に無効になるため、 **submitmessage**を呼び出す前に保存する必要があります。 送信を取り消すには、 _lな tryid_パラメーターをこのエントリ識別子にポイントし、 [IMsgStore:: abortsubmit](imsgstore-abortsubmit.md)を呼び出します。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|FolderDlg.cpp  <br/> |**CFolderDlg::OnSubmitMessage** <br/> |MFCMAPI では、 **IMessage::SubmitMessage**メソッドを使用して、選択したメッセージを送信します。  <br/> |
+|folderdlg  <br/> |**cfolderdlg:: onsubmitmessage** <br/> |mfcmapi は、 **IMessage:: submitmessage**メソッドを使用して、選択されたメッセージを送信します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

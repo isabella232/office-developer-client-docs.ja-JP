@@ -1,5 +1,5 @@
 ---
-title: Uninitialized 状態
+title: 未初期化状態
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,34 +8,34 @@ api_type:
 - COM
 ms.assetid: e071b50f-2e75-4537-ac7b-4a2f5ebea83d
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 95ed80a6d0ea6a6a7c8cc768b32981ac899b69e4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: be35c9d3f8fc7badf83086e63e4c94e0efa4d5bf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360502"
 ---
-# <a name="uninitialized-state"></a>Uninitialized 状態
+# <a name="uninitialized-state"></a>未初期化状態
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-初期化されていない状態は、オブジェクトが最初に作成されたときにする必要があります初期状態のフォームです。 フォーム オブジェクトは、クライアント アプリケーションは、フォーム オブジェクトの[IPersistMessage::InitNew](ipersistmessage-initnew.md)または[IPersistMessage::Load](ipersistmessage-load.md)メソッドを呼び出すと、メッセージ データで初期化になります。 次の表では、Unitialized の状態から有効な遷移について説明します。 
+初期化されていない状態は、最初に作成されたときの初期状態のフォームオブジェクトである必要があります。 form オブジェクトは、クライアントアプリケーションが form オブジェクトで[IPersistMessage:: InitNew](ipersistmessage-initnew.md)メソッドまたは[IPersistMessage:: Load](ipersistmessage-load.md)メソッドを呼び出すと、メッセージデータを使用して初期化されます。 次の表は、Unitialized 状態から許可される遷移を示しています。 
   
-|**IPersistMessage メソッド**|**操作**|**新しい状態**|
+|**IPersistMessage メソッド**|**Action**|**新しい状態**|
 |:-----|:-----|:-----|
-|[IPersistMessage::InitNew](ipersistmessage-initnew.md) <br/> |フォーム オブジェクトに既定のデータをロードします。  <br/> |[Normal](normal-state.md) <br/> |
-|[IPersistMessage::Load](ipersistmessage-load.md) <br/> |移行先のメッセージには、フォーム オブジェクトにデータを読み込みます。  <br/> |Normal  <br/> |
-|[IPersistMessage::GetClassID](ipersistmessage-getclassid.md) <br/> |成功した場合、または最後のエラーに設定を返し、E_UNEXPECTED を返します。  <br/> |初期化されていません  <br/> |
-|[IPersistMessage::GetLastError](ipersistmessage-getlasterror.md) <br/> |最後のエラーを返します。  <br/> |初期化されていません  <br/> |
-|他の[IPersistMessage: IUnknown](ipersistmessageiunknown.md)メソッドまたはその他のインターフェイスのメソッド  <br/> |最後のエラーを設定、E_UNEXPECTED を返します。  <br/> |初期化されていません  <br/> |
+|[IPersistMessage::InitNew](ipersistmessage-initnew.md) <br/> |既定のデータを使用して form オブジェクトを読み込みます。  <br/> |[Normal](normal-state.md) <br/> |
+|[IPersistMessage::Load](ipersistmessage-load.md) <br/> |form オブジェクトに対象のメッセージのデータを読み込みます。  <br/> |標準  <br/> |
+|[IPersistMessage::GetClassID](ipersistmessage-getclassid.md) <br/> |成功を返すか、または最後のエラーを設定して E_UNEXPECTED を返します。  <br/> |初期化されていません  <br/> |
+|[IPersistMessage::GetLastError](ipersistmessage-getlasterror.md) <br/> |直前のエラーを返します。  <br/> |初期化されていません  <br/> |
+|その他の[IPersistMessage: IUnknown](ipersistmessageiunknown.md)メソッドまたは他のインターフェイスからのメソッド  <br/> |最後のエラーをに設定し、E_UNEXPECTED を返します。  <br/> |初期化されていません  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[Normal 状態](normal-state.md)
+[通常の状態](normal-state.md)
   
 [フォームの状態](form-states.md)
 

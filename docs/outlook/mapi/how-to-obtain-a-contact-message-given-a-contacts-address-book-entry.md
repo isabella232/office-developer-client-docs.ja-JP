@@ -1,37 +1,37 @@
 ---
-title: 連絡先の連絡先アドレス帳のエントリを指定したメッセージを取得します。
+title: 連絡先アドレス帳エントリが指定された連絡先メッセージを取得する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: a263894b-b3da-f1e4-a7da-ca3695bddc94
-description: '最終更新日: 2013 年 8 月 13 日'
-ms.openlocfilehash: 472b5847053c0a18026c76b8055a26551331d8dd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2013 年8月13日'
+ms.openlocfilehash: be988a3036c2d882f65e2e588cc9a40bfda146a5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345957"
 ---
-# <a name="obtain-a-contact-message-given-a-contacts-address-book-entry"></a>連絡先の連絡先アドレス帳のエントリを指定したメッセージを取得します。
+# <a name="obtain-a-contact-message-given-a-contacts-address-book-entry"></a>連絡先アドレス帳エントリが指定された連絡先メッセージを取得する
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックには、C++ では、例が含まれている`HrOpenContact`、関連付けられている連絡先の MAPI メッセージを取得するのには、連絡先のアドレス帳のエントリを識別する[CONTAB_ENTRYID](contab_entryid.md)構造体を使用する方法を示します。 
+このトピックには、C++ `HrOpenContact`の例が含まれています。これは、連絡先アドレス帳のエントリを識別する[CONTAB_ENTRYID](contab_entryid.md)構造を使用して、関連付けられている MAPI 連絡先メッセージを取得する方法を示しています。 
   
-`HrOpenContact`次のパラメーターがあります。 
+`HrOpenContact`には、次のパラメーターがあります。 
   
--  *lpSession*は、現在のセッションを表す入力パラメーターです。 ポインターとして MAPI のヘッダー ファイル mapix.h に**LPMAPISESSION**が定義されている[IMAPISession: IUnknown](imapisessioniunknown.md)。
+-  *lpsession*は、現在のセッションを表す入力パラメーターです。 **LPMAPISESSION**は、MAPI ヘッダーファイルマップ ix で、 [imapisession: IUnknown](imapisessioniunknown.md)へのポインターとして定義されています。
     
--  *cbEntryID*は、 *lpEntryID*に関連付けられたエントリ id のサイズを表す入力パラメーターです。 
+-  *cbEntryID*は、 *l tryid*に関連付けられたエントリ識別子のサイズを表す入力パラメーターです。 
     
--  *lpEntryID*は、連絡先のアドレス帳のエントリのエントリの識別子へのポインターを表す入力パラメーターです。 
+-  *lな tryid*は、連絡先アドレス帳のエントリのエントリ id へのポインターを表す入力パラメーターです。 
     
--  *ulFlags*は、MAPI の連絡先のメッセージにオブジェクトのアクセス フラグを含むビットマスクを表す入力パラメーターです。 
+-  *ulflags*は、MAPI 連絡先メッセージへのオブジェクトアクセスフラグを含むビットマスクを表す入力パラメーターです。 
     
--  *lpContactMessage*は、連絡先の MAPI メッセージへのポインターを表す出力パラメーターです。 
+-  *lpcontactmessage*は、MAPI 連絡先メッセージへのポインターを表す出力パラメーターです。 
     
-開くには、基になる MAPI 連絡先メッセージ`HrOpenContact` **CONTAB_ENTRYID**へのポインターへの*lpEntryID*を最初にキャストします。 *Cbeid*と*abeid*フィールドの連絡先アドレス帳のエントリのそれぞれのエントリ id のサイズを確認することをパラメーターとして渡す、連絡先の MAPI メッセージを取得する[IMAPISession::OpenEntry](imapisession-openentry.md)を呼び出して、連絡先の MAPI メッセージのエントリ id です。 
+基になる MAPI 連絡先メッセージを開く`HrOpenContact`には、最初に*lCONTAB_ENTRYID tryid*を**** へのポインターにキャストします。 次に、 [imapisession:: openentry](imapisession-openentry.md)を呼び出して、MAPI の連絡先メッセージを取得します。パラメーターとして、連絡先アドレス帳のエントリの*cbeid*と*abeid*フィールドを渡します。それぞれの値は、エントリ id のサイズとMAPI 連絡先メッセージのエントリ識別子。 
   
 ```cpp
 TZDEFINITION* BinToTZDEFINITION(ULONG cbDef, LPBYTE lpbDef) 

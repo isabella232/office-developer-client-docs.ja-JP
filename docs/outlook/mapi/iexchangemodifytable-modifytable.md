@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: b9a745cc-260d-4a1c-896e-6a038ab3cfb9
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b801bdc06317738448a2205b60b94e1c9707d4f2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 46bb9b2cc1a4d54807d6929b4e1439b58fb3a531
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350842"
 ---
 # <a name="iexchangemodifytablemodifytable"></a>IExchangeModifyTable::ModifyTable
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI テーブルのオブジェクトを更新します。
+MAPI テーブルオブジェクトを更新します。
   
 ```cpp
 HRESULT ModifyTable( 
@@ -35,15 +35,15 @@ HRESULT ModifyTable(
 
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]次の値のいずれかを使用します。 
+> 順番次のいずれかの値を使用します。 
     
 0 (ゼロ)
   
-> **UlRowFlags** 、 [ROWENTRY](rowentry.md)構造体のメンバーの値を使用します。 
+> [rowentry](rowentry.md)構造の**ulrowflags**メンバーの値を使用します。 
     
 ACLTABLE_FREEBUSY
   
@@ -51,27 +51,27 @@ ACLTABLE_FREEBUSY
     
 frightsFreeBusyDetailed
   
-> ACLTABLE_FREEBUSY が渡された場合は、新しい空き時間情報の権限の詳細を表示を提供します。
+> ACLTABLE_FREEBUSY が渡されると、新しい空き時間情報の詳細が表示されます。
     
 frightsFreeBusySimple
   
-> ACLTABLE_FREEBUSY が渡された場合は、新しい空き時間情報の権限の表示を提供します。
+> ACLTABLE_FREEBUSY が渡されると、新しい空き時間情報が簡単に表示されます。
     
 ROWLIST_REPLACE
   
-> テーブル内のすべての行を交換してください。
+> 表のすべての行を置き換えます。
     
  _lpMods_
   
-> [in][Rowlist で](rowlist.md)を含む構造体のテーブルのオブジェクトのプロパティへのポインター。 
+> 順番table オブジェクトのプロパティを含む[rowlist](rowlist.md)構造体を指します。 
     
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|RulesDlg.cpp  <br/> |CRulesDlg::OnModifySelectedItem  <br/> |MFCMAPI では、 **IExchangeModifyTable::ModifyTable**メソッドを使用して、変更したルールをルールのテーブルに書き込みます。  <br/> |
+|ルール  <br/> |crulesdlg:: OnModifySelectedItem  <br/> |mfcmapi は、 **IExchangeModifyTable:: modifytable**メソッドを使用して、変更されたルールをルールのテーブルに書き戻します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

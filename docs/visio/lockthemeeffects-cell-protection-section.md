@@ -8,30 +8,26 @@ f1_keywords:
 - vis_sdr.chm70002
 localization_priority: Normal
 ms.assetid: 84179718-d7a6-d503-08f2-213571bf108f
-ms.openlocfilehash: 41c9e9c021c5ad954c16599f9e376063655ffa07
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8d707d4a87371dc457deae168a84d968f165f4fc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348308"
 ---
-# <a name="lockthemeeffects-cell-protection-section"></a>[LockThemeEffects] セル ([保護] セクション)
+# <a name="lockthemeeffects-cell-protection-section"></a>[LockThemeEffects] セル ([Protection] セクション)
 
-図形にテーマの効果の適用を防止します。 
+テーマの効果が図形に適用されないようにします。 
   
-**テーマの効果を**チェック ボックスの設定で、[**保護**] ダイアログ ボックスに対応します。 
+[**保護**] ダイアログボックスの [**テーマの効果**] チェックボックスの設定に対応しています。 
   
-別の数式または  **CellsU** プロパティを使用したプログラムから、名前によって [LockThemeColors] セルを参照するには、次の値を使用します。
-
- 
+別の数式または  **CellsU** プロパティを使用したプログラムから、名前によって [LockThemeColors] セルを参照するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |LockThemeEffects  <br/> |
+|セル名:  <br/> |[lockthemeeffects]  <br/> |
    
-プログラムから、インデックスによって [LockThemeEffects] セルを参照するには、 **CellsSRC** プロパティを使用し、次の引数を指定します。
-
- 
+プログラムから、インデックスによって [LockThemeEffects] セルを参照するには、 **CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|

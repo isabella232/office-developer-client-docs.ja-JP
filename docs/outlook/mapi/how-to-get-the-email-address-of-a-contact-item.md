@@ -1,27 +1,27 @@
 ---
-title: 連絡先アイテムの電子メール アドレスを取得します。
+title: 連絡先アイテムのメール アドレスを取得する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 032f7242-5500-1e21-06d3-b2d947eb1043
 description: '�ŏI�X�V��: 2012�N6��25��'
-ms.openlocfilehash: f9c6766c934632a83fa0388ac2bc4c2c397eead6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fab09d0c594bac1374973f523abe6ff0b9c09dd0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344689"
 ---
-# <a name="get-the-email-address-of-a-contact-item"></a>連絡先アイテムの電子メール アドレスを取得します。
+# <a name="get-the-email-address-of-a-contact-item"></a>連絡先アイテムのメール アドレスを取得する
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックでは、Microsoft Outlook 2010 または Microsoft Outlook 2013 の連絡先アイテムの電子メール アドレスを表す名前付きプロパティの値を取得する方法を示します。
+このトピックでは、microsoft outlook 2010 または microsoft outlook 2013 の連絡先アイテムの電子メールアドレスを表す名前付きプロパティの値を取得する方法について説明します。
   
-最大 3 つの電子メール アドレスを Outlook 2010、Outlook 2013 で連絡先アイテムと関連付けることができます。 各電子メール アドレスは、Outlook 2010、Outlook 2013 オブジェクト モデルで Outlook 2010 または Outlook 2013 **ContactItem**オブジェクトのプロパティに対応します。 Outlook 2010、Outlook 2013 の内部、電子メール アドレスにも対応して、MAPI 名前付きプロパティ。 連絡先の最初の電子メール アドレスが、Outlook 2010、Outlook 2013 オブジェクト モデル、および Outlook 2010、Outlook 2013 の内部名前付き[で**ContactItem**の**Email1Address**プロパティに対応するなど、標準的なプロパティを PidLidEmail1EmailAddress](pidlidemail1emailaddress-canonical-property.md)。
+outlook 2010 および outlook 2013 の連絡先アイテムには、最大3つの電子メールアドレスを関連付けることができます。 各電子メールアドレスは、outlook 2010 および outlook 2013 オブジェクトモデルの outlook 2010 または outlook 2013 **ContactItem**オブジェクトのプロパティに対応します。 outlook 2010 および outlook 2013 の内部では、電子メールアドレスは MAPI の名前付きプロパティにも対応しています。 たとえば、連絡先の最初の電子メールアドレスは、outlook 2010 および outlook 2013 オブジェクトモデルの**ContactItem**の**Email1Address**プロパティに対応し、outlook 2010 および outlook 2013 の内部名[PidLidEmail1EmailAddress 標準プロパティ](pidlidemail1emailaddress-canonical-property.md)。
   
-連絡先アイテムの電子メール アドレスの値を取得するには、Outlook 2010 または Outlook 2013 オブジェクト モデルの**PropertyAccessor**オブジェクトを使用して、または最初に、名前付きプロパティのプロパティ タグを取得する[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)を使用し、値を取得する[IMAPIProp::GetProps](imapiprop-getprops.md)では、このプロパティのタグを指定します。 **IMAPIProp::GetIDsFromNames**を呼び出すときは、 _lppPropNames_の入力パラメーターで示される[MAPINAMEID](mapinameid.md)構造体の適切な値を指定します。 次のコード サンプルは、指定した連絡先の最初の電子メール アドレスを取得する方法を示します`lpContact`、 **GetIDsFromNames**と**GetProps**を使用します。 
+連絡先アイテムの電子メールアドレスの値を取得するには、outlook 2010 または outlook 2013 オブジェクトモデルの**PropertyAccessor**オブジェクトを使用するか、または、最初に[imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)を使用して、名前付きプロパティのプロパティタグを取得してから、このプロパティタグを[imapiprop:: GetProps](imapiprop-getprops.md)で指定して、値を取得します。 **imapiprop:: getidsfromnames**を呼び出す場合は、入力パラメーター _lpppropnames_でポイントされている[mapinameid](mapinameid.md)構造に適切な値を指定します。 次のコードサンプルは、 **getidsfromnames**と**GetProps**を使用して`lpContact`、指定された連絡先の最初の電子メールアドレスを取得する方法を示しています。 
   
 ```cpp
 HRESULT HrGetEmail1(LPMESSAGE lpContact) 

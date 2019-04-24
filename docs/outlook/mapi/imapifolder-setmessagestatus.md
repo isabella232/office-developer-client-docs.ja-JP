@@ -1,5 +1,5 @@
 ---
-title: IMAPIFolderSetMessageStatus
+title: imapifoldersetmessagestatus
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 42ffbbe0-d678-474a-a016-91c71255613e
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: d06523625a20760faec7a6c73a6beaef757818b3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: fbb05efff67fa90c68db86249d4657e489e7bd63
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342778"
 ---
 # <a name="imapifoldersetmessagestatus"></a>IMAPIFolder::SetMessageStatus
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-(たとえば、あるかどうかそのメッセージは削除対象としてマーク) は、メッセージに関連付けられたステータスを設定します。
+メッセージに関連付けられている状態を設定します (メッセージに削除のマークが付いているかどうかなど)。
   
 ```cpp
 HRESULT SetMessageStatus(
@@ -41,67 +41,67 @@ HRESULT SetMessageStatus(
 
  _cbEntryID_
   
-> [in]_LpEntryID_パラメーターで指定されたエントリの識別子のバイト数です。 
+> 順番_lな tryid_パラメーターで指定されたエントリ識別子のバイト数。 
     
- _lpEntryID_
+ _lて tryid_
   
-> [in]ステータスが設定されて、メッセージのエントリの識別子へのポインター。
+> 順番状態が設定されているメッセージのエントリ id へのポインター。
     
- _ulNewStatus_
+ _ulnewstatus_
   
-> [in]割り当てられる新しい状態です。 
+> 順番割り当てられる新しい状態。 
     
- _ulNewStatusMask_
+ _ulnewstatusmask_
   
-> [in]新しい状態に適用され、フラグを設定することを示しますフラグのビットマスク。 次のフラグを設定することができます。
+> 順番新しい状態に適用されるフラグのビットマスク。設定するフラグを示します。 次のフラグを設定できます。
     
 MSGSTATUS_DELMARKED 
   
-> メッセージは、削除対象としてマークされています。
+> メッセージは削除対象としてマークされています。
     
 MSGSTATUS_HIDDEN 
   
-> メッセージは表示しません。
+> メッセージは表示されません。
     
 MSGSTATUS_HIGHLIGHTED 
   
-> メッセージが表示されるが強調表示されています。
+> メッセージは強調表示されます。
     
 MSGSTATUS_REMOTE_DELETE 
   
-> メッセージは、ローカル クライアントにダウンロードすることがなくリモート メッセージ ストアを削除対象としてマークされています。
+> メッセージがリモートメッセージストアで削除対象としてマークされ、ローカルクライアントにダウンロードされていません。
     
 MSGSTATUS_REMOTE_DOWNLOAD 
   
-> メッセージは、リモート メッセージ ストアからローカル クライアントにダウンロード用にマークされています。
+> メッセージは、リモートメッセージストアからローカルクライアントにダウンロードするようにマークされています。
     
 MSGSTATUS_TAGGED 
   
-> クライアント定義の目的は、メッセージをタグ付けされました。
+> メッセージには、クライアント定義の目的のタグが付けられています。
     
- _lpulOldStatus_
+ _lpuloldstatus_
   
-> [out]メッセージの前の状態へのポインター。
+> 読み上げメッセージの以前の状態へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > メッセージの状態が正常に設定されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPIFolder::SetMessageStatus**メソッドは、メッセージの状態を**PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) のプロパティに格納されている値に設定します。 
+**imapifolder:: setmessagestatus**メソッドは、メッセージの状態を**PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) プロパティに格納されている値に設定します。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-メッセージのステータス ビットを設定、オフになっていると使用する方法によって異なります完全に、実装がビット 0 ~ 15 は予約されており、0 にする必要があります。 
+メッセージ状態のビットがどのように設定、クリア、使用されるかは、実装に完全に依存します。ただし、ビット 0 ~ 15 は予約されており、0である必要があります。 
   
-このメソッドをリモート トランスポート プロバイダーの実装は、ここで説明するセマンティクスに従う必要があります。 特別な考慮事項はありません。 クライアントは、特定のメッセージがダウンロードするか、リモート メッセージ ストアから削除するのにことを示す MSGSTATUS_REMOTE_DOWNLOAD と MSGSTATUS_REMOTE_DELETE のビットを設定するのには、このメソッドを使用します。 リモート トランスポート プロバイダーは、関連する[IMAPIFolder::GetMessageStatus](imapifolder-getmessagestatus.md)メソッドを実装するためにはありません。 クライアントは、メッセージのステータスを確認するのにはフォルダーの内容のテーブルで検索する必要があります。 
+リモートトランスポートプロバイダーのこのメソッドの実装は、ここで説明するセマンティクスに従う必要があります。 特別な考慮事項はありません。 クライアントはこのメソッドを使用して、MSGSTATUS_REMOTE_DOWNLOAD および MSGSTATUS_REMOTE_DELETE ビットを設定し、リモートメッセージストアから特定のメッセージをダウンロードまたは削除することを示します。 リモートトランスポートプロバイダーは、関連する[imapifolder:: getmessagestatus](imapifolder-getmessagestatus.md)メソッドを実装する必要はありません。 クライアントは、フォルダーの contents テーブルを調べて、メッセージの状態を確認する必要があります。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-メッセージの**PR_MSG_STATUS**プロパティを使用するには他のクライアントとメッセージのロックアウト操作をネゴシエートします。 ロックアウト ビットとビットを指定します。 ロックアウト ビットが設定されているかどうかを確認するのには、 _lpulOldStatus_パラメーターでメッセージの状態の以前の値を確認します。 _UlNewStatus_パラメーターで他のビットを使用して、ロックアウト ビットに干渉することがなくメッセージのステータスを追跡します。 
+メッセージの**PR_MSG_STATUS**プロパティを使用して、他のクライアントとのメッセージロックアウト操作をネゴシエートできます。 ロックアウトビットとしてビットを指定します。 ロックアウトビットが設定されているかどうかを確認するには、 _lpuloldstatus_パラメーターのメッセージの状態について前の値を調べます。 _ulnewstatus_パラメーターの他のビットを使用して、ロックアウトビットを妨げることなくメッセージの状態を追跡します。 
   
 ## <a name="see-also"></a>関連項目
 

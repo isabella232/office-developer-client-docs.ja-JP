@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 42ec4266-67b9-416e-8b9b-163c95011626
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: f4af3f2fd094942c48e02849c60f3e46acb1a5f7
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348098"
 ---
 # <a name="hrdispatchnotifications"></a>HrDispatchNotifications
 
@@ -25,13 +25,13 @@ ms.locfileid: "25385565"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォースは、キューに登録されたすべての通知のディスパッチします。 
+キューに入っているすべての通知を強制的にディスパッチします。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 HRESULT HrDispatchNotifications(
@@ -39,7 +39,7 @@ HRESULT HrDispatchNotifications(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
@@ -49,22 +49,22 @@ HRESULT HrDispatchNotifications(
 
 S_OK
   
-> すべてのキューに登録された通知がディスパッチされました。
+> キューに入っているすべての通知がディスパッチされました。
     
 MAPI_E_USER_CANCEL
   
-> WM_QUIT、られる、または WM_ENDSESSION を受信しました。
+> WM_QUIT、WM_QUERYENDSESSION、または WM_ENDSESSION を受信しました。
     
 MAPI_E_NOT_INITIALIZED
   
-> MAPI は初期化されませんでした。
+> MAPI が初期化されていません。
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-**HrDispatchNotifications**関数は、MAPI メッセージのディスパッチを待たずに、MAPI 通知エンジンにキューイングされているすべての通知をディスパッチするときに発生します。 これにより、メモリの使用率に効果をもたらさないことができます。 詳細については、[強制的に通知](forcing-a-notification.md)を参照してください。 
+**HrDispatchNotifications**関数を使用すると、mapi は、メッセージのディスパッチを待つことなく、現在 mapi 通知エンジンでキューに入れられているすべての通知をディスパッチします。 これにより、メモリ使用率に対する効果が向上します。 詳細については、「[強制的な通知](forcing-a-notification.md)」を参照してください。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-Windows [PeekMessage](https://msdn.microsoft.com/library/ms644943.aspx)と[もないとき](https://msdn.microsoft.com/library/ms644934.aspx)の関数を使用してタイムアウト ループ内での通知メッセージの一部のアプリケーションを待ちます。 最速のプラットフォームはすべて、このようなアプリケーションがありますパフォーマンスが低下または通知の偶数進行を妨げています。 **HrDispatchNotifications**を使用して、コードを削減するだけでなく、パフォーマンスが向上します。 
+一部のアプリケーションは、Windows の[PeekMessage](https://msdn.microsoft.com/library/ms644943.aspx)関数と[DispatchMessage](https://msdn.microsoft.com/library/ms644934.aspx)関数を使用して、タイムアウトループで通知メッセージを待機します。 最速のプラットフォームを除くすべてのプラットフォームで、このようなアプリケーションでは、パフォーマンスが低下したり、通知がブロックされることもあります。 **HrDispatchNotifications**を使用すると、コードが減少するだけでなく、パフォーマンスが向上します。 
   
 

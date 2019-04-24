@@ -10,43 +10,43 @@ api_type:
 - COM
 ms.assetid: fc520720-8190-4dff-8f6c-1bebf7080b57
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4b4b60084b8cb53a0a245b502b8fe70241fb4eb7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e1c670cd566e838104ae3d5480c2297f8632d899
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348560"
 ---
 # <a name="pidtagrulestable-canonical-property"></a>PidTagRulesTable 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォルダーに適用されるすべてのルールを持つテーブルが含まれています。
+フォルダーに適用されているすべてのルールを含むテーブルを含みます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_RULES_TABLE  <br/> |
-|識別子:  <br/> |0x3FE1  <br/> |
+|識別子:  <br/> |0x3fe1  <br/> |
 |データの種類 :   <br/> |PT_OBJECT  <br/> |
-|領域:  <br/> |サーバー側のルール  <br/> |
+|エリア:  <br/> |サーバー側のルール  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティは、ルールがある、Exchange Server 上のすべてのフォルダー オブジェクト上に存在します。 このプロパティに含まれる値は、読み取りとルールを変更するのに使用されます。 **IID_IExchangeModifyTable**インターフェイス識別子を使用して[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを使用するにを取得するのには、 [IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md)フォルダーのルール テーブルへのインターフェイスです。 読み取りおよびそれらの規則を変更するには、このインターフェイスを使用します。 
+このプロパティは、ルールが設定されている Exchange サーバー上のすべての folder オブジェクトに存在します。 このプロパティに含まれる値は、ルールの読み取りと変更に使用されます。 **IID_IExchangeModifyTable**インターフェイス識別子を使用して[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを使用すると、フォルダーの rules テーブルに対して[IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md)インターフェイスを取得できます。 このインターフェイスを使用して、これらのルールを読み取りおよび変更できます。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。 
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -57,9 +57,9 @@ Mapitags.h
 [IMAPIProp::OpenProperty](imapiprop-openproperty.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 0ba7f6da-681b-b749-fe72-afbca23d7e16
 description: パスに塗りつぶしを適用するかどうかを指定します。
-ms.openlocfilehash: 3f5bab76fc38b6e82aeaeee45b75bd733afdbd26
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 301f30b644e338ff9e597a7a7d8226b9c8a4462f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357254"
 ---
-# <a name="nofill-cell-geometry-section"></a>[NoFill] セル ([図形座標] セクション)
+# <a name="nofill-cell-geometry-section"></a>[NoFill] セル ([Geometry] セクション)
 
 パスに塗りつぶしを適用するかどうかを指定します。
   
@@ -25,7 +25,7 @@ ms.locfileid: "19805923"
 | TRUE  <br/> | 図形の他のパスが塗りつぶされていても、このパスは塗りつぶされません。  <br/> |
 | FALSE  <br/> | パスが閉じていない場合でも、図形の塗りつぶしがこのパスに適用されます。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 図形の塗りつぶしパターンをゼロ (0) に設定すると、すべてのパスに対して塗りつぶしが適用されません。図形内にある特定のパスに対して塗りつぶしを適用しない場合に、このセルを使用します。
   
@@ -33,14 +33,14 @@ ms.locfileid: "19805923"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | ジオメトリの*i*です。[Nofill]、 *i* = < 1 > では、2、3.  <br/> |
+| セル名 :  <br/> | ジオメトリ*i*[nofill] where *i* = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [NoFill] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   
 |||
 |:-----|:-----|
-| セクション インデックス:  <br/> |**visSectionFirstComponent** +  *i* 、 *i* = 0, 1, 2.  <br/> |
-| 行インデックス:  <br/> |**visRowComponent** <br/> |
+| セクション インデックス:  <br/> |**visSectionFirstComponent** +  *i* = ** 0、1、2...  <br/> |
+| 行インデックス :  <br/> |**visRowComponent** <br/> |
 | セル インデックス:  <br/> |**visCompNoFill** <br/> |
    
 

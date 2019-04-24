@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 6ad2aedc-405b-475e-ac76-7ecbbef28f73
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: b2047f04f3f4a8d2b3e58e07a71e7e2463eff9cf
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344976"
 ---
 # <a name="pidlidcategories-canonical-property"></a>PidLidCategories 標準プロパティ
 
@@ -25,37 +25,37 @@ ms.locfileid: "25386244"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-アイテムのカテゴリの一覧を指定します。
+アイテムのカテゴリのリストを指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidCategories  <br/> |
-|プロパティを設定します。  <br/> |PS_PUBLIC_STRINGS  <br/> |
-|長い ID (LID):  <br/> |0x00002328  <br/> |
+|関連するプロパティ:  <br/> |dispidcategories  <br/> |
+|プロパティセット:  <br/> |PS_PUBLIC_STRINGS  <br/> |
+|ロング ID (LID):  <br/> |0x00002328  <br/> |
 |データの種類 :   <br/> |PT_MV_UNICODE  <br/> |
-|エリア:  <br/> |Common  <br/> |
+|エリア:  <br/> |共通  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-キーワード ヘッダー フィールドを生成するには、クライアントは、目的の値にこのプロパティの値を設定する必要があります。 このプロパティは、複数の文字列です。各カテゴリは、1 つのキーワードにマップする必要があります。
+キーワードヘッダーフィールドを生成するには、クライアントはこのプロパティの値を目的の値に設定する必要があります。 このプロパティには複数の文字列が含まれています。各カテゴリは1つのキーワードにマップする必要があります。
   
-多目的インターネット メール拡張 (MIME) の作成者は、[キーワード] ヘッダー フィールドの (U + 002 C) コンマとスペース (U + 0020) に分離することで別のキーワードをこのプロパティの各部分の値をコピーする必要がありますそれぞれのキーワードです。 MIME ライターは、さまざまな組織内のカテゴリの別のセットの間に競合を避けるために、[キーワード] ヘッダー フィールドにコピーすることではなく、このプロパティを削除可能性があります。
+マルチパーパスインターネットメール内線 (MIME) ライターは、このプロパティの各サブ値をキーワードヘッダーフィールド内の個別のキーワードにコピーします。コンマ (u + 002c) とスペース (u + 0020) で各キーワードを区切ります。 MIME ライターは、異なる組織で異なるカテゴリのセット間の競合を回避するために、このプロパティをキーワードヘッダーフィールドにコピーするのではなく削除することがあります。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
-> メッセージ オブジェクト インターネット標準の電子メールの表記規則からに変換します。
+> インターネット標準の電子メールの規則からメッセージオブジェクトに変換します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -63,9 +63,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

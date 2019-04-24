@@ -9,19 +9,19 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 1e6f6448-b52a-c1f3-613f-10ea34d5286e
 description: プレビューの品質、範囲、および出力形式を制御するための、図面のセルを格納します。
-ms.openlocfilehash: b2bfa306f66318e0744e1d82f10370d73829171d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: dd82d8ffbe0f6e5e70a2c3dd745673dfa76f3909
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359123"
 ---
-# <a name="document-properties-section"></a>[ドキュメントのプロパティ] セクション
+# <a name="document-properties-section"></a>[Document Properties] セクション
 
 プレビューの品質、範囲、および出力形式を制御するための、図面のセルを格納します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
- [**プロパティ**] ダイアログ ボックスを使用してこれらの値を設定することもできます (、[**ファイル**] タブをクリックして、[**情報**] をクリックして、**プロパティ**] をクリックし、**プロパティの詳細設定**] をクリック) します。
+ これらの値は、[**プロパティ**] ダイアログボックス ([**ファイル**] タブをクリックし、[**情報**] をクリックし、[**プロパティ**] をクリックし、[**詳細プロパティ**] をクリック) を使用して設定することもできます。
   
 

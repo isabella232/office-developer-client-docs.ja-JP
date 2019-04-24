@@ -1,5 +1,5 @@
 ---
-title: Contacts フォルダーに対応するアドレス帳を [名前の選択] ダイアログ ボックスに表示する
+title: 連絡先フォルダーに対応するアドレス帳を [名前の選択] ダイアログ ボックスに表示する
 TOCTitle: Display in the Select Names dialog box the address book corresponding to a Contacts folder
 ms:assetid: 6cbfc843-51b5-4841-bbb1-14b93a35ba78
 ms:mtpsurl: https://msdn.microsoft.com/library/Bb610437(v=office.15)
@@ -8,11 +8,11 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 3be678b13738fead1509f3854c7b23bd0cfc8528
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356400"
 ---
 # <a name="display-in-the-select-names-dialog-box-the-address-book-corresponding-to-a-contacts-folder"></a>Contacts フォルダーに対応するアドレス帳を [名前の選択] ダイアログ ボックスに表示する
 

@@ -12,22 +12,22 @@ api_type:
 - COM
 ms.assetid: 48e478c4-6e9a-40ab-a7bb-e6219b743b08
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 7f32145e0947411c48e1e6c3a941c9913a08709c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6c35220529fb88b470c563a0b004bfcf7e63ef76
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345648"
 ---
 # <a name="tablenotification"></a>TABLE_NOTIFICATION
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-何らかの変更やエラーなどのイベントによって影響のあるテーブル内の行について説明します。 テーブル通知が生成されますが発生します。 
+変更やエラーなど、何らかの種類のイベントの影響を受けたテーブル内の行について説明します。 これにより、テーブル通知が生成されます。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _TABLE_NOTIFICATION
@@ -43,17 +43,17 @@ typedef struct _TABLE_NOTIFICATION
 
 ## <a name="members"></a>Members
 
-**ulTableEvent**
+**ultableevent**
   
-> テーブルのイベント タイプを表すために使用するフラグのビットマスクです。 次のフラグを設定することができます。
+> テーブルイベントの種類を表すために使用されるフラグのビットマスク。 次のフラグを設定できます。
     
 TABLE_CHANGED 
   
-> 高いレベルの表について何かが変更されていることを示します。 テーブルの状態は、イベントの前にします。 これは、すべて**PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) のプロパティ、ブックマーク、現在の位置、およびユーザー インターフェイスの選択は、まだ有効であることを意味します。 このイベントを処理するには、テーブルを再読み取り. 豊富なテーブルの通知を実装する必要のないサービス ・ プロバイダーは、特定の種類の変更を示すために詳細なイベントの代わりに TABLE_CHANGED イベントを送信します。 
+> テーブルに関する何らかの変更が、高レベルであることを示します。 テーブルの状態はイベントの前と同じです。 これは、すべての**PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) プロパティ、ブックマーク、現在の配置、およびユーザーインターフェイスの選択が有効なままであることを意味します。 このイベントを処理するには、テーブルを再度読み込みます。 リッチテーブル通知を実装しないサービスプロバイダーは、より詳細なイベントの代わりに TABLE_CHANGED イベントを送信して、特定の種類の変更を示します。 
     
 TABLE_ERROR 
   
-> 通常、非同期操作の処理中に、エラーが発生しました。 次のメソッドの処理中にエラーは、このイベントを生成できます。 
+> エラーが発生しました。通常は、非同期操作の処理中です。 次のメソッドの処理中にエラーが発生すると、このイベントが発生する可能性があります。 
     
    - [IMAPITable::SortTable](imapitable-sorttable.md)
     
@@ -61,69 +61,69 @@ TABLE_ERROR
     
    - [IMAPITable::Restrict](imapitable-restrict.md)
     
-   TABLE_ERROR イベントを受け取ると、クライアントは、テーブルの内容の正確さに依存できません。 また、保留中の他の変更についての通知は失われます。 最後のメソッド呼び出しからは、以前の時点で作成されたために、 [IMAPITable::GetLastError](imapitable-getlasterror.md)メソッドは、エラーに関する追加情報を提供しない場合があります。 
+   TABLE_ERROR イベントを受け取った後、クライアントはテーブルの内容の正確性を信頼できません。 また、他の変更に関する保留中の通知が失われる可能性があります。 [IMAPITable:: GetLastError](imapitable-getlasterror.md)メソッドは、前の時点で生成されたものではなく、最後のメソッドの呼び出しからは、エラーに関する追加情報を提供していない場合があります。 
     
 TABLE_RELOAD 
   
-> テーブル内のデータを再読み込みする必要があります。 サービス ・ プロバイダーは TABLE_RELOAD を送信すると、たとえば、データベースの基になるデータが格納されているデータベースを交換してください。 何も表がまだ有効であることと仮定すると、テーブルを再読み取りがこのイベントを処理します。 すべてのブックマーク、インスタンスのキー、状態、および位置情報が有効ではありません。
+> テーブル内のデータを再度読み込む必要があります。 サービスプロバイダーは、たとえば、基になるデータがデータベースに格納され、データベースが置換されるときに、TABLE_RELOAD を送信します。 このイベントを処理するのは、テーブルに関する情報がまだ有効でないことを前提にして、テーブルを再度読み込みます。 すべてのブックマーク、インスタンスキー、状態、および配置情報が無効です。
     
 TABLE_RESTRICT_DONE 
   
-> 制限操作が、 **IMAPITable::Restrict**メソッドの呼び出しで開始したが完了しました。 
+> **IMAPITable:: Restrict**メソッド呼び出しで開始された制限の操作が完了しました。 
     
 TABLE_ROW_ADDED 
   
-> テーブルと、対応するオブジェクトを保存する新しい行が追加されました。 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを呼び出した後は、TABLE_ROW_ADDED イベントが生成されます。 
+> テーブルに新しい行が追加され、対応するオブジェクトが保存されます。 TABLE_ROW_ADDED イベントは、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出した後に生成されます。 
     
 TABLE_ROW_DELETED 
   
-> テーブルから行が削除されました。 **PropPrior**メンバーは、NULL に設定されています。 
+> 行がテーブルから削除されました。 **propprior**メンバーは NULL に設定されています。 
     
 TABLE_ROW_MODIFIED 
   
-> 行が変更されました。 **行**メンバーには、行の影響を受けるプロパティが含まれています。 複数の TABLE_ROW_MODIFIED イベントは、テーブル ビューに表示される順序で送信されます。 
+> 行が変更されました。 行**** メンバーには、行の影響を受けるプロパティが含まれています。 複数の TABLE_ROW_MODIFIED イベントは、テーブルビューに表示される順序で送信されます。 
     
-  TABLE_ROW_MODIFIED イベントは、対応するオブジェクトへの変更が、 **IMAPIProp::SaveChanges**メソッドを呼び出して、コミットされた後に送信されます。 ここで変更した行がテーブルの最初の行の場合は、 **PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) は、 **propPrior**メンバーのプロパティ タグの値です。
+  TABLE_ROW_MODIFIED イベントは、対応するオブジェクトへの変更が、 **imapiprop:: SaveChanges**メソッドへの呼び出しを使用してコミットされた後に送信されます。 変更された行がテーブルの最初の行になった場合、その**前**のメンバーのプロパティタグの値は**PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) になります。
     
 TABLE_SETCOL_DONE 
   
-> **IMAPITable::SetColumns**のメソッドの呼び出しを使用して開始列の設定操作が完了しました。 
+> **IMAPITable:: SetColumns**メソッド呼び出しで開始された列設定操作が完了しました。 
     
 TABLE_SORT_DONE 
   
-> テーブルの並べ替えの操作は、 **IMAPITable::SortTable**メソッドの呼び出しで開始したが完了しました。 
+> **IMAPITable:: sorttable**メソッド呼び出しで開始されたテーブルの並べ替え操作が完了しました。 
     
 **hResult**
   
-> **UlTableEvent**メンバーは、TABLE_ERROR に設定されている場合、発生したエラーの HRESULT 値です。 
+> **ultableevent**メンバーが TABLE_ERROR に設定されている場合に、発生したエラーの HRESULT 値。 
     
-**propIndex**
+**propindex**
   
-> 影響を受ける行の**PR_INSTANCE_KEY**プロパティの値の[SPropValue](spropvalue.md)構造体です。 
+> 影響を受ける行の**PR_INSTANCE_KEY**プロパティの[spropvalue](spropvalue.md)構造。 
     
-**propPrior**
+**propprior**
   
-> 影響を受ける 1 つ前に、の行の**PR_INSTANCE_KEY**プロパティの**SPropValue**構造体です。 影響を受ける行がテーブルの最初の行の場合は、 **PR_NULL**を 0 ではありません**propPrior**を設定しなければなりません。 0 は有効なプロパティのタグではありません。 
+> 影響を受ける前の行の**PR_INSTANCE_KEY**プロパティの**spropvalue**構造。 影響を受ける行がテーブルの最初の行である**** 場合は、 **PR_NULL**を0以外の値に設定する必要があります。 0は、有効なプロパティタグではありません。 
     
 **row**
   
-> [SRow](srow.md)の構造が影響を受ける行を記述します。 この構造体は、テーブルのすべての通知イベントに入力されます。 テーブル通知、イベントの行データを渡さない、**あう**、 **SRow**構造体のメンバーを 0 に設定し、 **lpProps**メンバーは NULL に設定します。 この**SRow**の構造が読み取り専用であるためクライアントは、変更を加える必要がある場合のコピーを行う必要があります。 コピーを作成するのには、 [ScDupPropset](scduppropset.md)関数を使用できます。 
+> 影響を受ける行を説明する[srow](srow.md)構造。 この構造体は、すべてのテーブル通知イベントに対して入力されます。 行データを渡さないテーブル通知イベントの場合、 **srow**構造の**cvalues**メンバーは0に設定され、 **lpprops**メンバーは NULL に設定されます。 この**srow**構造は読み取り専用であるためです。クライアントは、変更を行う場合は、そのコピーを作成する必要があります。 [ScDupPropset](scduppropset.md)関数を使用してコピーを作成できます。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**テーブル\_通知**構造体は、[通知](notification.md)の構造体のメンバー**情報**に含まれる構造体の共用体のメンバーの 1 つです。 **情報**メンバーが含まれています、**テーブル\_通知**、 **ulEventType**構造体のメンバーが_fnevTableModified_に設定されている場合を構造化します。
+**表\_通知**構造は、[通知](notification.md)構造の**info**メンバに含まれている構造体の和集合のメンバーのいずれかです。 構造体の**uleventtype**メンバーが_fnevTableModified_に設定されている場合、 **info**メンバーには**テーブル\_通知**構造が含まれています。
   
-行メンバーの列の型と順序は、順序と、通知が生成された時点で有効であったタイプを反映します。 順序と種類の通知が生成された時点では必ずしもと同じ通知が配布されたときです。 
+行メンバーの列の順序と種類は、通知が生成されたときに有効だった順序と種類を反映しています。 通知が生成されたときの順序と種類は、通知が配信されたときと必ずしも同じではありません。 
   
-通知の詳細については、次の表に記載されているトピックを参照してください。
+通知の詳細については、次の表で説明するトピックを参照してください。
   
 |**トピック**|**説明**|
 |:-----|:-----|
-|[MAPI のイベント通知](event-notification-in-mapi.md) <br/> |通知と通知のイベントの概要です。  <br/> |
-|[通知の処理](handling-notifications.md) <br/> |クライアントが通知を処理する方法について説明します。  <br/> |
-|[イベント通知のサポート](supporting-event-notification.md) <br/> |サービス プロバイダーが、 **IMAPISupport**メソッドを使用して、通知を生成する方法について説明します。  <br/> |
+|[MAPI のイベント通知](event-notification-in-mapi.md) <br/> |通知イベントと通知イベントの一般的な概要。  <br/> |
+|[通知の処理](handling-notifications.md) <br/> |クライアントが通知を処理する方法についての説明。  <br/> |
+|[イベント通知のサポート](supporting-event-notification.md) <br/> |サービスプロバイダーが**imapisupport**メソッドを使用して通知を生成する方法についての説明。  <br/> |
    
-テーブルの通知は非同期であるために、クライアントは別の方法で追加について学習した後、追加された行の通知を受信できます。 **IMAPITable::Sort**、 **IMAPITable::Restrict**、または**IMAPITable::SetColumns**メソッドでエラーが表示されるか、プロセスで、テーブルを更新しようとした、基になるときは、TABLE_ERROR イベントを受信することはまたは行を変更します。 
+テーブル通知は非同期であるため、クライアントは別の方法で追加について学習した後に、追加された行の通知を受け取ることができます。 TABLE_ERROR イベントは、 **IMAPITable:: Sort**、 **IMAPITable:: Restrict**、または**IMAPITable:: SetColumns**メソッドでエラーが発生した場合、または基になるプロセスがテーブルを更新しようとした場合 (たとえば、new または変更された行 
   
 ## <a name="see-also"></a>関連項目
 

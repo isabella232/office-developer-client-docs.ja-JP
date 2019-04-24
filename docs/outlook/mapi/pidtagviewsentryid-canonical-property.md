@@ -12,51 +12,51 @@ api_type:
 - COM
 ms.assetid: 8350a37c-6f42-4bef-82e0-35aa12b09fcf
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 73ed7213ea2bd5079458ccc237b65590f06e8d53
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7d261ac0e9aaf36f2333b04b45edfaf8e24fa30d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350695"
 ---
 # <a name="pidtagviewsentryid-canonical-property"></a>PidTagViewsEntryId 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ユーザー定義ビュー] フォルダーのエントリ id が含まれています。
+ユーザー定義ビューフォルダーのエントリ識別子を含みます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_VIEWS_ENTRYID  <br/> |
-|識別子:  <br/> |0x35E5  <br/> |
+|識別子:  <br/> |0x35e5  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |MAPI メッセージ ストア  <br/> |
+|エリア:  <br/> |MAPI メッセージストア  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-共通のフォルダー ビューにはには、フォルダーのビューには、メッセージングのユーザーによって定義された指定子が含まれているときに標準のビューの指定子の定義済みセットが含まれています。 表示指定子が多く、各メッセージとして格納されているこれらのフォルダーは、個人間メッセージ (IPM) の階層構造で表示されていないを保持できます。 指定子のセットの 2 つをマージして両方使用できるようにするクライアント アプリケーションを選択できます。
+common view フォルダーには、あらかじめ定義されている標準ビュー指定セットが含まれています。ビューフォルダーには、メッセージングユーザーによって定義された指定子が含まれています。 これらのフォルダーは、個人間メッセージ (IPM) 階層では表示されず、メッセージとして格納されている複数のビュー指定子を保持できます。 クライアントアプリケーションは、2つの指定子のセットをマージすることを選択し、両方を使用できるようにします。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

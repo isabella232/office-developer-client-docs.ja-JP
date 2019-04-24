@@ -7,21 +7,21 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: bf6892d0-a923-e926-5361-59efa49ebdc0
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 261a59e628320f384deeb760ba71c9c0386cfde6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 2131197ca24804eec74270100fa70c05c47a27cc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342785"
 ---
 # <a name="hdrsync"></a>HDRSYNC
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[メッセージ ヘッダーの状態をダウンロード](download-message-header-state.md)する時にメッセージ ヘッダーを同期するための情報です。
+メッセージヘッダー[状態のダウンロード](download-message-header-state.md)中にメッセージヘッダーを同期するための情報。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -36,39 +36,39 @@ struct HDRSYNC
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  _pupmsg_
   
-- [out]ローカル ストア内の現在のメッセージ ヘッダーの情報です。
+- 読み上げローカルストア内の現在のメッセージヘッダーに関する情報。
     
- _feidPar_
+ _feidpar_
   
-- [out]メッセージ アイテムの親フォルダーのエントリ ID です。
+- 読み上げメッセージアイテムの親フォルダーのエントリ ID。
     
  _pstmReserved_
   
-- [out]このメンバーは、Outlook の内部使用に予約されている、サポートされていません。 
+- [out] このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
     
  _ulFlags_
   
-- [in]動作を変更するフラグです。
+- 順番動作を変更するフラグ:
     
 - HSF_LOCAL
     
-  - [in]完全なアイテムは、ヘッダー項目と同じローカル ストアに存在します。
+  - 順番すべてのアイテムは、ヘッダー項目と同じローカルストアに存在します。
     
 - HSF_COPYDESTRUCTIVE
     
-  -  [in]内部のコピー処理を最適化します。 データが失われる可能性があります。 **HSF_LOCAL**を設定する必要があります。 
+  -  順番内部コピー操作を最適化します。 これにより、データが失われる可能性があります。 **HSF_LOCAL**を設定する必要があります。 
     
 - HSF_OK
     
-  - [in]ヘッダーの同期が正常に完了しました。 クライアントは、サーバーから情報をダウンロードした後、これを設定します。
+  - 順番ヘッダーの同期に成功しました。 クライアントは、サーバーから情報をダウンロードした後、これを設定します。
     
-     _pmsgFull_
+     _pmsgfull_
     
-  - [in]メッセージ ヘッダーを含む完全なメッセージ項目は、サーバーからダウンロードします。 **LPMESSAGE**の型定義の mapidefs.h を参照してください。 
+  - 順番サーバーからダウンロードされたメッセージヘッダーを含む、完全なメッセージアイテム。 **lpmessage**の種類の定義については、「mapidefs.h」を参照してください。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -76,9 +76,9 @@ struct HDRSYNC
 
 [レプリケーション API について](about-the-replication-api.md)
   
-[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
+[レプリケーション状態のマシンについて](about-the-replication-state-machine.md)
   
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
   
 [FEID](feid.md)
 

@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: c1b24e45-6f08-686b-b53d-e85fb9087a50
 description: レイヤーに割り当てられた図形に他の図形をスナップできるかどうかを指定します。レイヤーに割り当てられた図形に他の図形をスナップすることはできますが、他の図形にレイヤーに割り当てられた図形をスナップすることはできません。
-ms.openlocfilehash: 7fc684afb67d0454ea5907c08f4f7644d97c7f74
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 87e7e7500469fb7f8c7fdd4771a0225d0e4fc993
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359809"
 ---
-# <a name="snap-cell-layers-section"></a>[Snap] セル ([レイヤー] セクション)
+# <a name="snap-cell-layers-section"></a>[Snap] セル ([Layers] セクション)
 
 レイヤーに割り当てられた図形に他の図形をスナップできるかどうかを指定します。レイヤーに割り当てられた図形に他の図形をスナップすることはできますが、他の図形にレイヤーに割り当てられた図形をスナップすることはできません。
   
@@ -25,7 +25,7 @@ ms.locfileid: "19806514"
 |TRUE  <br/> |レイヤー上の図形に他の図形をスナップできます。  <br/> |
 |FALSE  <br/> |レイヤー上の図形に他の図形をスナップできません。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 このセルの値は、[**レイヤー プロパティ**] ダイアログ ボックスの [**スナップ**] オプションを使用して設定することもできます (このダイアログ ボックスを開くには、[**ホーム**] タブの [**編集**] グループで、[**レイヤー**] をクリックして、[**レイヤー プロパティ**] をクリックします)。
   
@@ -33,14 +33,14 @@ ms.locfileid: "19806514"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |Layers.Snap [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+|セル名:  <br/> |階層. スナップ [ *i* ] = ** <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [Snap] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionLayer** <br/> |
-|行インデックス:  <br/> |**visRowLayer** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+|行インデックス:  <br/> |**visRowLayer** +  *i* = ** 0、1、2...  <br/> |
 |セル インデックス:  <br/> |**visLayerSnap** <br/> |
    
 

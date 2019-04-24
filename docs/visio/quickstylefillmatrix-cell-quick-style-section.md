@@ -7,24 +7,24 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 8513cf3f-42bd-4e76-bfa8-8bf12f0d1296
 description: 使用中のテーマから図形を継承したスタイルをクイックスタイルで塗りつぶすかどうかを、0 から 6 の整数で決定します。
-ms.openlocfilehash: b3e5d8dc4346b6f5d8f73b220f77978a21a680c4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fca0d9f8fe58fdc7c227e9c093b418ffef1ccb52
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358717"
 ---
 # <a name="quickstylefillmatrix-cell-quick-style-section"></a>[QuickStyleFillMatrix] セル ([クイック スタイル] セクション)
 
 使用中のテーマから図形を継承したスタイルをクイックスタイルで塗りつぶすかどうかを、0 から 6 の整数で決定します。 
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 別の数式から、**Cell** エレメントの **N** 属性の値によって、または **CellsU** プロパティを使用したプログラムから、名前によって [**QuickStyleFillMatrix**] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | QuickStyleFillMatrix  <br/> |
+| セル名:  <br/> | [quickstylefillmatrix]  <br/> |
    
 プログラムから、インデックスによって [**QuickStyleFillMatrix**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

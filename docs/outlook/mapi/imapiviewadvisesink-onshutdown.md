@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: c9c3aecf-5e4b-407a-8ea1-6211b4c6e0a5
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f49ea23ed7fef91bcb360483611af2ee60429934
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: b43c1b96130052a05ac390f10f545a66fe72b7fe
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351164"
 ---
 # <a name="imapiviewadvisesinkonshutdown"></a>IMAPIViewAdviseSink::OnShutdown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォーム ビューアーに、フォームが閉じられることを通知します。
+フォームが閉じられていることをフォームビューアーに通知します。
   
 ```cpp
 HRESULT OnShutdown( void );
@@ -35,15 +35,15 @@ HRESULT OnShutdown( void );
 
 なし
   
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 通知が成功しました。
+> 通知に成功しました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-フォームの通知の詳細については、[送信およびフォームの通知の受信](sending-and-receiving-form-notifications.md)を参照してください。
+フォーム通知の詳細については、「[フォーム通知の送信と受信](sending-and-receiving-form-notifications.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: dceb21b1-be5e-418d-b0c9-db39195fc82e
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: cb5cb5a0169e716f7fcc7f596660bc0222c51c84
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 6e616a76d9665b602184e88566384506fcce5697
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342176"
 ---
 # <a name="imapiformfactorycreateclassfactory"></a>IMAPIFormFactory::CreateClassFactory
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームのクラス ファクトリ オブジェクトを返します。
+フォームのクラスファクトリオブジェクトを返します。
   
 ```cpp
 HRESULT CreateClassFactory(
@@ -37,35 +37,35 @@ HRESULT CreateClassFactory(
 
 ## <a name="parameters"></a>パラメーター
 
- _clsidForm_
+ _clsidform_
   
-> [in]クラス ファクトリによって作成されるフォームのクラス識別子です。
+> 順番クラスファクトリによって作成されるフォームのクラス識別子。
     
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lppClassFactory_
+ _lppclassfactory_
   
-> [out]クラス ファクトリ オブジェクトへのポインター。
+> 読み上げクラスファクトリオブジェクトへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> クラス ファクトリ オブジェクトが返されました。
+> クラスファクトリオブジェクトが返されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-フォーム ビューアーは、特定のフォームのクラス ファクトリを取得する**IMAPIFormFactory::CreateClassFactory**メソッドを呼び出します。 クラス ファクトリは、特定のクラスのメッセージを処理するフォームのインスタンスを作成して、これらのインスタンスへのアクセスを制御するために使用されます。 
+フォーム閲覧者は、 **imapiformfactory:: CreateClassFactory**メソッドを呼び出して、特定のフォームのクラスファクトリを取得します。 クラスファクトリは、特定のクラスのメッセージを処理するフォームのインスタンスを作成し、それらのインスタンスへのアクセスを制御するために使用されます。 
   
-**CreateClassFactory**メソッドは、複数のメッセージ クラスを実装しているフォームのサーバーのクラス ファクトリ オブジェクトを取得するフォーム ビューアーによって呼び出されます。 このメソッドは、クラス識別子 (CLSID) をパラメーターとして受け取ります。 そのパラメーターに基づいて、このメソッドは、返されるクラス ファクトリ オブジェクトの特定の種類を決定できます。 
+**CreateClassFactory**メソッドは、フォームビューアーによって呼び出され、複数のメッセージクラスを実装するフォームサーバーのクラスファクトリオブジェクトを取得します。 このメソッドは、クラス識別子 (CLSID) をパラメーターとして受け取ります。 このパラメーターに基づいて、このメソッドは、返される特定の種類のクラスファクトリオブジェクトを決定できます。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-オブジェクトを取得できます、 **CreateClassFactory**の実装から、同じクラス工場出荷時に同じ識別子がクラスの複数の呼び出し。 クラス ファクトリの新しいインスタンスを作成する必要はありません。 
+同じクラス識別子に対する複数の呼び出しで、 **CreateClassFactory**実装から同じクラスファクトリオブジェクトを返すことができます。 新しいクラスファクトリインスタンスを作成する必要はありません。 
   
-1 つのクラス ファクトリの実装を必要に応じて、適切なクラス ファクトリのインスタンスを作成するか、複数のクラス ファクトリ実装は、各メッセージ クラスの 1 つを持つことができます。
+必要に応じて適切なクラスファクトリインスタンスを作成するか、メッセージクラスごとに1つずつ、複数のクラスファクトリの実装を作成する、単一のクラスファクトリ実装を使用できます。
   
 ## <a name="see-also"></a>関連項目
 

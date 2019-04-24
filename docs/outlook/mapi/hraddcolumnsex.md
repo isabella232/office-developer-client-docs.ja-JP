@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: c0a65d2b-a9b8-4477-a1c7-18c8478126f6
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 566a9d23c46ec717eb5eed711fff801b15d49fc1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9ca34fb2cce6e86c42e8e9525cd213f1008997d6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348371"
 ---
 # <a name="hraddcolumnsex"></a>HrAddColumnsEx
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-追加または既存のテーブルの先頭に列を移動します。 
+既存の表の先頭に列を追加または移動します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 HRESULT HrAddColumnsEx(
@@ -48,47 +48,47 @@ HRESULT HrAddColumnsEx(
 
  _lptbl_
   
-> [in]影響を MAPI テーブルへのポインター。 
+> 順番影響を受ける MAPI テーブルへのポインター。 
     
  _lpproptagColumnsNew_
   
-> [in]追加されたり、テーブルの先頭に移動するにはプロパティのプロパティ タグの配列を含む[SPropTagArray](sproptagarray.md)構造体へのポインター。 
+> 順番表の先頭に追加または移動するプロパティのプロパティタグの配列を含む[SPropTagArray](sproptagarray.md)構造体へのポインター。 
     
  _lpAllocateBuffer_
   
-> [in]メモリの割り当てに使用する[MAPIAllocateBuffer](mapiallocatebuffer.md)関数へのポインター。 
+> 順番メモリの割り当てに使用される[MAPIAllocateBuffer](mapiallocatebuffer.md)関数へのポインター。 
     
- _lpFreeBuffer_
+ _lpfreebuffer_
   
-> [in]メモリを解放するために使用する、 [MAPIFreeBuffer](mapifreebuffer.md)関数へのポインター。 
+> 順番メモリを解放するために使用される[MAPIFreeBuffer](mapifreebuffer.md)関数へのポインター。 
     
  _lpfnFilterColumns_
   
-> [in]呼び出し元によって提供されるコールバック関数へのポインター。 _LpfnFilterColumns_パラメーターは、NULL に設定されている場合、コールバックは行われません。 
+> 順番呼び出し元によって送信されたコールバック関数へのポインター。 _lpfnFilterColumns_パラメーターが NULL に設定されている場合は、コールバックは行われません。 
     
  _ptaga_
   
-> [in]プロパティ タグのプロパティを追加または先頭に移動する前にテーブルの既存の配列を格納する[SPropTagArray](sproptagarray.md)構造体へのポインター。 コールバック関数へのパラメーターとしては、このポインターが指す_lpfnFilterColumns_ **HrAddColumnsEx**のパス。
+> 順番プロパティを追加または先頭に移動する前に、テーブルに既に存在しているプロパティタグの配列を含む[SPropTagArray](sproptagarray.md)構造体へのポインター。 **hraddcolumnsex**は、 _lpfnFilterColumns_によって参照されるコールバック関数へのパラメーターとしてこのポインターを渡します。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 呼び出しが成功し、指定された列の移動先または追加されました。
+> 呼び出しが成功し、指定された列が移動または追加されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-_LpproptagColumnsNew_パラメーターを使用して**HrAddColumnsEx**に渡されるプロパティは、 [IMAPITable::QueryRows](imapitable-queryrows.md)メソッドへの後続の呼び出しで公開されている最初のプロパティになります。 追加、移動、すべてのプロパティの後は、 _lpproptagColumnsNew_パラメーターで指定されていないテーブルの以前の任意のプロパティが公開されています。 
+_lpproptagColumnsNew_パラメーターを使用して**hraddcolumnsex**に渡されたプロパティは、次に[IMAPITable:: QueryRows](imapitable-queryrows.md)メソッドを呼び出したときに公開される最初のプロパティになります。 _lpproptagColumnsNew_パラメーターで指定されていないテーブル内のプロパティはすべて、追加されて移動されたプロパティの後に公開されます。 
   
-**QueryRows**が呼び出されたときに、テーブルのプロパティは定義されていません、PT_NULL プロパティの型およびプロパティの識別子 PROP_ID_NULL に返されます。 
+**QueryRows**が呼び出されたときにテーブルのプロパティが未定義の場合は、プロパティの種類 PT_NULL およびプロパティ識別子 PROP_ID_NULL を使用して返されます。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**HrAddColumnsEx**関数は、既に PT_STRING8 プロパティの PT_UNICODE データ型から文字列に変換する例については、表にしていた列をフィルター処理するコールバック関数を提供する呼び出し元を使用できます。 **HrAddColumnsEx**は、コールバック関数へのパラメーターとして設定済みの既存の列へのポインターを渡します。 コールバック関数は、プロパティ タグ配列内のデータを変更できますが、新しいタグを追加することはできません。 
+**hraddcolumnsex**関数を使用すると、呼び出し元は、テーブル内に既に存在している列をフィルター処理するためのコールバック関数を与えることができます。たとえば、文字列をプロパティ型 PT_UNICODE から PT_STRING8 に変換します。 **hraddcolumnsex**は、コールバック関数へのパラメーターとして既に存在する列セットへのポインターを渡します。 コールバック関数は、property タグ配列内のデータを変更できますが、新しいタグを追加することはできません。 
   
- **HrAddColumnsEx**は、1 つが提供され、追加または指定の列に移動し、最後に[IMAPITable::SetColumns](imapitable-setcolumns.md)を呼び出す場合に最初にコールバック関数を呼び出します。 
+ **hraddcolumnsex**は、最初にコールバック関数を呼び出し、次に、指定された列を追加または移動して、最後に[IMAPITable:: SetColumns](imapitable-setcolumns.md)を呼び出します。 
   
-_LpAllocateBuffer_と_lpFreeBuffer_の入力パラメーターは、それぞれ、 [MAPIAllocateBuffer](mapiallocatebuffer.md)と[MAPIFreeBuffer](mapifreebuffer.md)関数をポイントします。 **HrAddColumnsEx**に渡されたポインターの正確な値は、呼び出し元が、クライアント アプリケーションまたはサービス プロバイダーによって異なります。 クライアントは、MAPI の関数を指定した名前にポインターを渡します。 ポインターの初期化の呼び出しで受信または[IMAPISupport::GetMemAllocRoutines](imapisupport-getmemallocroutines.md)メソッドを呼び出すことによって取得されたことをサービス プロバイダーに渡します。 
+_lpAllocateBuffer_および_lpfreebuffer_入力パラメーターは、それぞれ[MAPIAllocateBuffer](mapiallocatebuffer.md)関数と[MAPIFreeBuffer](mapifreebuffer.md)関数をポイントします。 **hraddcolumnsex**に渡されるポインターの正確な値は、呼び出し元がクライアントアプリケーションであるかサービスプロバイダーであるかによって異なります。 クライアントは、指定された名前を持つ MAPI 関数へのポインターを渡します。 サービスプロバイダーは、初期化呼び出しで受け取ったポインターまたは[imapisupport:: getmemallocroutines](imapisupport-getmemallocroutines.md)メソッドを呼び出して取得したポインターを渡します。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: e479e863-a8de-4f7e-9eae-3f721cd16e9a
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: dacd759d978394a5f4ed028915ed1c717bf6efe5
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25382807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355721"
 ---
 # <a name="pidtagmessagestatus-canonical-property"></a>PidTagMessageStatus 標準プロパティ
 
@@ -25,82 +25,82 @@ ms.locfileid: "25382807"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-コンテンツ テーブル内のメッセージの状態を定義するフラグの 32 ビットのビットマップが含まれています。 
+コンテンツテーブル内のメッセージの状態を定義するフラグの32ビットビットマスクを含みます。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_MSG_STATUS  <br/> |
-|識別子:  <br/> |0x0E17  <br/> |
+|識別子:  <br/> |0x0e17  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |一般的なメッセージング  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-コンテンツ テーブルと 1 つまたは複数の検索結果のテーブルにメッセージが存在し、メッセージの各インスタンスが別の状態を持つことができます。 このプロパティと見なすことが、メッセージ、内容のテーブル内の列のプロパティです。 
+メッセージは、コンテンツテーブルと1つ以上の検索結果テーブルに存在し、メッセージの各インスタンスの状態が異なる場合があります。 このプロパティは、メッセージのプロパティではなく、contents テーブルの列であるとみなされません。 
   
-クライアント アプリケーションでは、このプロパティで次のフラグのいずれかを設定できます。 
+クライアントアプリケーションでは、このプロパティに次の1つ以上のフラグを設定できます。 
   
 MSGSTATUS_ANSWERED 
   
-> メッセージは既に返信されています。 
+> メッセージに返信しました。 
     
 MSGSTATUS_DELMARKED 
   
-> メッセージは、それ以降の削除のマークされています。 
+> このメッセージは、その後の削除のためにマークされています。 
     
 MSGSTATUS_DRAFT 
   
-> メッセージは、ドラフトのリビジョンの状態です。 
+> メッセージは下書きの改訂状態です。 
     
 MSGSTATUS_HIDDEN 
   
-> メッセージは、宛先のフォルダーを表示から非表示にするのには。 
+> メッセージは、受信者のフォルダー表示から抑制されます。 
     
 MSGSTATUS_HIGHLIGHTED 
   
-> メッセージでは、宛先のフォルダーの表示で強調表示されます。 
+> メッセージは、受信者のフォルダー表示で強調表示されます。 
     
 MSGSTATUS_REMOTE_DELETE 
   
-> メッセージは、ローカル クライアントにダウンロードすることがなくリモート メッセージ ストアを削除対象としてマークされています。 
+> メッセージがリモートメッセージストアで削除対象としてマークされ、ローカルクライアントにダウンロードされていません。 
     
 MSGSTATUS_REMOTE_DOWNLOAD 
   
-> メッセージは、リモート メッセージ ストアからローカル クライアントにダウンロード用にマークされています。 
+> メッセージは、リモートメッセージストアからローカルクライアントにダウンロードするようにマークされています。 
     
 MSGSTATUS_TAGGED 
   
-> クライアント定義の目的は、メッセージをタグ付けされました。
+> メッセージには、クライアント定義の目的のタグが付けられています。
     
-**MSGSTATUS_DELMARKED**、 **MSGSTATUS_HIDDEN**、 **MSGSTATUS_HIGHLIGHTED**、および**MSGSTATUS_TAGGED**のフラグは、クライアントによって定義されます。 トランスポートとストアのプロバイダーは、操作をしなくても、これらのビットを渡します。 
+**MSGSTATUS_DELMARKED**、 **MSGSTATUS_HIDDEN**、 **MSGSTATUS_HIGHLIGHTED**、および**MSGSTATUS_TAGGED**の各フラグはクライアントによって定義されます。 トランスポートプロバイダーとストアプロバイダーは、操作を行わずにこれらのビットを渡します。 
   
-クライアントは、アプリケーションに適した任意の方法でこれらの値を解釈できます。 多数のクライアントがこのプロパティを使用する方法の 1 つでは、代表的なアイコンが削除対象としてマークされたメッセージを表示します。 
+クライアントは、これらの値をアプリケーションに適した方法で解釈できます。 多くのクライアントがこのプロパティを使用する方法の1つは、削除対象としてマークされたメッセージを代表アイコンで表示することです。 
   
-ビューアーがリモート クライアントを設定できます**MSGSTATUS_REMOTE_DELETE**または**MSGSTATUS_REMOTE_DOWNLOAD**メッセージをリモート トランスポート プロバイダーによって提供されたヘッダーのフォルダーにします。 クライアント アプリケーションでは、各メッセージをダウンロードするか、リモート メッセージ ストアを削除するかどうかを判断するには、このフォルダー内のメッセージのヘッダーを調べることができます。 [IMAPIFolder::SetMessageStatus](imapifolder-setmessagestatus.md)メソッドを使用して、適切なフラグを設定します。 **SetMessageStatus**は、このプロパティのフラグのいずれかを設定する唯一の方法[IMAPIProp::SetProps](imapiprop-setprops.md)メソッドを使用することはできません。 このプロパティを取得するためには、クライアントは、 [IMAPIProp::GetProps](imapiprop-getprops.md)ではなく、 [IMAPIFolder::GetMessageStatus](imapifolder-getmessagestatus.md)を呼び出します。
+リモートビューアークライアントは、リモートトランスポートプロバイダーによって提供されるヘッダーフォルダー内のメッセージに**MSGSTATUS_REMOTE_DELETE**または**MSGSTATUS_REMOTE_DOWNLOAD**を設定できます。 クライアントアプリケーションは、このフォルダー内の各メッセージヘッダーを調べて、リモートメッセージストアでメッセージをダウンロードまたは削除する必要があるかどうかを判断できます。 次に、 [imapifolder:: setmessagestatus](imapifolder-setmessagestatus.md)メソッドを使用して、適切なフラグを設定します。 **setmessagestatus**は、このプロパティの任意のフラグを設定する唯一の方法です。[imapiprop:: setprops](imapiprop-setprops.md)メソッドを使用することはできません。 このプロパティを取得するために、クライアントは imapifolder [:: GetProps](imapiprop-getprops.md)ではなく、 [imapifolder:: getmessagestatus](imapifolder-getmessagestatus.md)を呼び出します。
   
-31 (0x80000000 から 0x10000) をこのプロパティの 16 ビットは個人間メッセージ (IPM) のクライアント アプリケーションで使用できます。 他のすべてのビットは、使用するため、MAPI ので予約されています上記の表で定義されていないものは、最初に 0 に設定する必要があり、その後変更されていません。 
+このプロパティのビット16から 31 (の場合は 0x80000000 ~ 0x80000000) は、個人間メッセージ (IPM) クライアントアプリケーションで使用できます。 他のすべてのビットは MAPI での使用のために予約されています。前の表で定義されていないものは、最初は0に設定され、その後は変更されません。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
-> サーバーとクライアントの間のメッセージングのオブジェクト データの同期を処理します。
+> サーバーとクライアントの間でメッセージオブジェクトデータの同期を処理します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
@@ -109,9 +109,9 @@ Mapitags.h
 [IMAPITable::QueryRows](imapitable-queryrows.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 481812d6-8e94-4510-b288-55501dd5757c
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: c5b2d7db745cc270c0be7ee2184e86c6a4f97aad
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 4196ed8b949ecb9e23c4bd34380db9cc5a369e23
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348728"
 ---
 # <a name="imslogoncompareentryids"></a>IMSLogon::CompareEntryIDs
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-同じオブジェクトを参照しているかどうかを決定する 2 つのエントリ id を比較します。 MAPI は、両方のエントリの識別子を比較するには、一意の識別子 (Uid) がそのプロバイダーによって処理される場合にのみ、サービス ・ プロバイダーへの呼び出しを意味します。
+2つのエントリ識別子を比較して、同じオブジェクトを参照しているかどうかを判断します。 MAPI では、両方のエントリ識別子の一意識別子 (uid) がそのプロバイダによって処理される場合にのみ、サービスプロバイダへの呼び出しを参照します。
   
 ```cpp
 HRESULT CompareEntryIDs(
@@ -42,39 +42,39 @@ HRESULT CompareEntryIDs(
 
  _cbEntryID1_
   
-> [in]_._ _LpEntryID1_パラメーターで指定されたエントリの識別子のバイト単位のサイズ
+> 順番_lpEntryID1_パラメーターによって示されるエントリ識別子のバイト単位のサイズ _。_
     
  _lpEntryID1_
   
-> [in]比較する最初のエントリの識別子へのポインター。
+> 順番比較する最初のエントリ識別子へのポインター。
     
  _cbEntryID2_
   
-> [in]_._ _LpEntryID2_パラメーターで指定されたエントリの識別子のバイト単位のサイズ
+> 順番_lpEntryID2_パラメーターによって示されるエントリ識別子のバイト単位のサイズ _。_
     
  _lpEntryID2_
   
-> [in]比較する 2 番目のエントリの識別子へのポインター。
+> 順番比較する2番目のエントリ id へのポインター。
     
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lpulResult_
+ _lルー result_
   
-> [out]比較の結果が返されましたへのポインター。 2 つのエントリの識別子が同じオブジェクトを参照する場合は TRUE。それ以外の場合、FALSE です。
+> 読み上げ返された比較結果へのポインター。 2つのエントリ識別子が同じオブジェクトを参照している場合は TRUE。それ以外の場合は FALSE。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>����
+## <a name="remarks"></a>解説
 
-メッセージ ストア プロバイダーは、同じオブジェクトを参照しているかどうかを確認するメッセージ ・ ストア内の指定されたエントリの 2 つのエントリ id を比較する**IMSLogon::CompareEntryIDs**メソッドを実装します。 **CompareEntryIDs**が TRUE に_lpulResult_パラメーターを設定する場合は 2 つのエントリの識別子は、同じオブジェクトを参照してください、別のオブジェクトを参照している場合、 **CompareEntryIDs**は false を指定する_lpulResult_を設定します。 
+メッセージストアプロバイダーは、 **IMSLogon:: compareentryids**メソッドを実装して、メッセージストア内の指定されたエントリの2つのエントリ識別子を比較し、それらが同じオブジェクトを参照しているかどうかを判断します。 2つのエントリ識別子が同じオブジェクトを参照している場合、 **compareentryids**は_lpulresult_パラメーターを TRUE に設定します。別のオブジェクトを参照している場合、 **compareentryids**は_lpulresult_を FALSE に設定します。 
   
- **CompareEntryIDs**は、オブジェクトが 1 つ以上の有効なエントリ id を持つことができますので便利です。 これは、たとえば、メッセージ ストア プロバイダーの新しいバージョンをインストールした後に発生します。 
+ **compareentryids**は、1つのオブジェクトが複数の有効なエントリ識別子を持つことができるので便利です。 これは、たとえば、新しいバージョンのメッセージストアプロバイダーがインストールされた後に発生する可能性があります。 
   
 ## <a name="see-also"></a>関連項目
 

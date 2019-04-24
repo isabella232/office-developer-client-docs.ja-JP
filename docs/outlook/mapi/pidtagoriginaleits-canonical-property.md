@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 9908039e-6b88-428f-b241-b04144cbcf5c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ed0f4f624314b2531f77751ae60def8982757ce2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: cdfbf0e8c5118f87ac058d56ebc8f85369bd5494
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342645"
 ---
 # <a name="pidtagoriginaleits-canonical-property"></a>PidTagOriginalEits 標準プロパティ
 
@@ -25,34 +25,34 @@ ms.locfileid: "22594790"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージのテキストの元のエンコードされた情報タイプ (含む) のコピーが含まれています。
+メッセージテキスト用の元のエンコードされた情報の種類 (eits) のコピーが保存されています。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_ORIGINAL_EITS  <br/> |
 |識別子:  <br/> |0x0021  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |Server  <br/> |
+|エリア:  <br/> |サーバー  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

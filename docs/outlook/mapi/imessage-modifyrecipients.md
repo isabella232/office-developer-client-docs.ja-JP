@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2625f29d-325f-417d-bcec-49d580f9cd7e
 description: '�ŏI�X�V��: 2015�N3��9��'
-ms.openlocfilehash: 0735008575db5e1cab62dbde4b699b15e04cedb0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 07e1c2104068a6eb242e8ba81f91655edaa92cd8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349260"
 ---
 # <a name="imessagemodifyrecipients"></a>IMessage::ModifyRecipients
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 �ǉ��A�폜�A�܂��̓��b�Z�[�W�̎�M�҂�ύX���܂��B
   
@@ -34,7 +34,7 @@ HRESULT ModifyRecipients(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
@@ -50,25 +50,25 @@ MODRECIP_MODIFY
     
 MODRECIP_REMOVE 
   
-> インデックスとして、 _lpMods_パラメーターの各受信者のエントリのプロパティの値の配列に含まれる**PR_ROWID** ([PidTagRowid](pidtagrowid-canonical-property.md)) プロパティを使用して受信者の一覧から既存の受信者を削除する必要があります。 
+> 既存の受信者は、 _lpMods_パラメーターの各受信者エントリのプロパティ値の配列に含まれている**PR_ROWID** ([PidTagRowid](pidtagrowid-canonical-property.md)) プロパティのインデックスとしてを使用して、受信者リストから削除する必要があります。 
     
  _lpMods_
   
 > [����]�|�C���^�[��ǉ��A�폜�A�܂��̓��b�Z�[�W��ɕύX���ꂽ����̃��X�g��܂�[ADRLIST](adrlist.md)�\���ɂ��܂��B 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > ���惊�X�g������ɕύX����܂����B
     
-## <a name="remarks"></a>����
+## <a name="remarks"></a>解説
 
 **IMessage::ModifyRecipients**���\�b�h�́A���b�Z�[�W�̎�M�҃��X�g��ύX���܂��B���̃��X�g����A��M�҂̃e�[�u�����g�ݍ��܂�Ă���A [ADRLIST](adrlist.md)�\����ɕێ��͂ł��܂��B 
   
 **ADRLIST**�\���̊e��M�҂� 1 ��[ADRENTRY](adrentry.md)�\�����܂܂�Ă��邵�A�e **ADRENTRY**�\���ɂ́A��M�҂̃v���p�e�B��L�q����v���p�e�B�̒l�̔z�񂪊܂܂�Ă��܂��B 
   
-**ADRLIST**構造内の受信者を解決または未解決のことができます。 数と含まれているプロパティの種類が異なります。 未解決の受信者が含まれ**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) と**PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) プロパティのみ、解決済みの受信者には、これら 2 つのプロパティに加え、 **PR_ADDRTYPE が含まれています。**([PidTagAddressType](pidtagaddresstype-canonical-property.md)) と**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))。 **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) が利用可能な場合は、ことができます含まれてもします。
+**adrlist**構造内の受信者を解決または未解決にすることができます。 違いは、含まれているプロパティの数と種類にあります。 解決されない受信者には、 **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) および**PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) プロパティのみが含まれています。解決された受信者には、これら2つのプロパティと PR_ADDRTYPE が含まれています。 ****([PidTagAddressType](pidtagaddresstype-canonical-property.md)) および**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))。 **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) を使用できる場合は、これも含めることができます。
   
 ���b�Z�[�W�����M�����܂łɂ́A���̎�M�҈ꗗ�ŉ����M�҂݂̂ɕK�v������܂��B��M�҂ɂ́A�z�M�s�\���|�[�g��쐬���A���̃��b�Z�[�W�̑��M�҂ɑ��M���ꂽ���������܂��B�N���C�A���g�̊ϓ[���疼�O����v���Z�X�̏ڍׂɂ��ẮA[���O��������](resolving-a-recipient-name.md)��Q�Ƃ��Ă��������B�A�h���X���̃v���o�C�](resolving-a-recipient-name.md)�[�̊ϓ_����̏ڍׂɂ��ẮA[���O������������](implementing-name-resolution.md)��Q�Ƃ��Ă��������B
   
@@ -76,7 +76,7 @@ S_OK
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-コモン ダイアログ ボックスを表示し、エントリを選択するように求めるには、 [IAddrBook::Address](imapisupport-address.md)を呼び出すことによって、受信者のリストを作成できます。 **アドレス**に_lppAdrList_パラメーターで指定されたアドレス一覧は、 **ModifyRecipients**に_lpMods_のパラメーターとして渡すことができます。 
+You can create a recipient list by calling [IAddrBook::Address](imapisupport-address.md) to display the common dialog box and prompt the user to select entries. The address list pointed to by the  _lppAdrList_ parameter to **Address** can be passed to **ModifyRecipients** as the  _lpMods_ parameter. 
   
 [ADRLIST](adrlist.md)�\����Ŏ�M�҂̃v���p�e�B��w�肷��ꍇ�́A���ׂĂ̒ǉ��܂��͕ύX���ꂽ��̂����łȂ��A��M�҂̃v���p�e�B��w�肵�܂��B��M�҂��ύX���ꂽ�Ƃ� **ADRLIST**�\���Ɋ܂܂�Ă��Ȃ��C�ӂ̃v���p�e�B���폜����܂��B���݂̈�A�̃v���p�e�B�̂��ׂẴ��b�Z�[�W�̎�M�҂�擾����ɂ͂���ɂ́A [GetRecipientTable](imessage-getrecipienttable.md)����ׂĂ̍s��擾���܂��B **SRowSet**�ɂ́A **ADRLIST**�\����Ɠ����ł��邽�ߓ����Ӗ��Ŏg�p�ł��܂��B
   
@@ -106,15 +106,15 @@ MODRECIP_MODIFY �t���O��ݒ肷��Ƃ��� **ModifyRecipients** 
     
 ���惊�X�g�̃��������蓖��[ADRLIST �� SRowSet �\���̃�������Ǘ�����](managing-memory-for-adrlist-and-srowset-structures.md)�Ő�����Ă��銄�蓖�ă��[����g�p���܂��B **ADRLIST**�\����̃T�u�\���̂����ꂩ�� **ModifyRecipients**�������܂���B **ADRLIST**�\���Ɗe[SPropValue](spropvalue.md)�\���̂́A���ꂼ��ʂɉ�����邱�Ƃ��ł��܂����A [MAPIAllocateBuffer](mapiallocatebuffer.md)�֐���g�p���ČʂɊ��蓖�Ă���K�v������܂��B���@�ł́A�C�ӂ� **SPropValue**�\���̒ǉ��̗̈��K�v�Ƃ���ꍇ�A���Ƃ��ł��܂� **SPropValue**�\����Œu��������V����[MAPIFreeBuffer](mapifreebuffer.md)��g�p���Č�ŉ���ł��܂��B **MAPIFreeBuffer**��g�p���Ă�A���� **SPropValue**�\����������K�v������܂��B
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**�R�����g**|
 |:-----|:-----|:-----|
-|MAPIABFunctions.cpp  <br/> |AddRecipient  <br/> |MFCMAPI �ł́A **IMessage::ModifyRecipients**���\�b�h��g�p���āA���b�Z�[�W�ɁA�V������M�҂�ǉ����܂��B  <br/> |
+|MAPIABFunctions  <br/> |AddRecipient  <br/> |MFCMAPI �ł́A **IMessage::ModifyRecipients**���\�b�h��g�p���āA���b�Z�[�W�ɁA�V������M�҂�ǉ����܂��B  <br/> |
    
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 

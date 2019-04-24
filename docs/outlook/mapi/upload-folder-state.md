@@ -1,48 +1,48 @@
 ---
-title: フォルダー アップロード状態
+title: フォルダーの状態をアップロードする
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 270b1df0-c5cd-0d0f-7b57-2726dee978ab
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: ae8c3c4012874e1ca35761b103066cceebb1b165
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c20f2998a2fef1ddb53b13708dcf56f9d7b50dbe
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348427"
 ---
-# <a name="upload-folder-state"></a>フォルダー アップロード状態
+# <a name="upload-folder-state"></a>フォルダーの状態をアップロードする
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
- アップロード フォルダー マシンの状態、レプリケーション状態中の動作について説明します。 
+ このトピックでは、レプリケーション状態マシンのアップロードフォルダーの状態中に行われる処理について説明します。 
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|状態識別子。  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |
-|関連するデータ構造体。  <br/> |**[UPFLD](upfld.md)** <br/> |
-|この状態。  <br/> |[階層の状態をアップロードします。](upload-hierarchy-state.md) <br/> |
-|この状態。  <br/> |階層の状態をアップロードします。  <br/> |
+|状態識別子:  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |
+|関連データ構造:  <br/> |**[UPFLD](upfld.md)** <br/> |
+|この状態から:  <br/> |[階層のアップロード状態](upload-hierarchy-state.md) <br/> |
+|この状態:  <br/> |階層のアップロード状態  <br/> |
    
 > [!NOTE]
-> レプリケーションの状態マシンは、確定的なステート マシンです。 クライアントを別の 1 つの状態から出発するは、後者から前者に最終的に返す必要があります。 
+> レプリケーション状態マシンは、確定状態のマシンです。 ある状態から別の状態に出発するクライアントは、最終的に後者から元の状態に戻る必要があります。 
   
 ## <a name="description"></a>説明
 
-この状態は、上記のアップロードの階層状態で指定された階層内のフォルダーをアップロードを開始します。 この状態は、中には、Outlook は、(削除されていない) 場合は、フォルダー オブジェクトおよび対応する**UPFLD**のデータ構造の一部としてフォルダー (新規作成、移動、変更、または削除) の状態を示すフラグを提供します。 クライアントは、この情報をサーバーにアップロードします。 
+この状態では、上記のアップロード階層の状態で指定された階層内のフォルダーのアップロードが開始されます。 この状態では、Outlook はフォルダーオブジェクト (削除されていない場合) とフォルダーの状態 (新規、移動、変更、または削除) が対応する**UPFLD**データ構造の一部として指定されていることを示しています。 クライアントは、この情報をサーバーにアップロードします。 
   
-アップロードが成功した場合、クライアントは、 **UPF_OK**に**UPFLD**で*ulFlags*を設定します。 Outlook は、フォルダーをアップロードする要求に関する内部情報を消去します。 
+アップロードが成功すると、クライアントは**UPFLD**の*ulflags*を**UPF_OK**に設定します。 その後、Outlook は、フォルダーをアップロードする要求に関する内部情報をクリアします。 
   
-フォルダーのアップロードが終了すると、ローカル ストアは、アップロード階層状態に戻ります。 Outlook は上記のアップロードの階層の状態に対応する**[UPHIER](uphier.md)** 構造に基づく、および次のアップロード フォルダーの状態を準備するのには次のフォルダーのアップロードを続行するかどうかを決定します。 
+フォルダーのアップロードが終了すると、ローカルストアはアップロード階層の状態に戻ります。 前述のアップロード階層の状態に対応する**[uphier](uphier.md)** 構造に基づいて、Outlook は次のフォルダーのアップロードを続行するかどうかを決定し、次のアップロードフォルダーの状態を準備します。 
   
 > [!NOTE]
-> クライアントは、1 つのフォルダーをアップロードする必要がある、クライアントは、アップロードの階層の状態を入力することがなく[状態の同期](synchronize-state.md)を使用する、レプリケーションを開始できます。 クライアントが特定のメンバーとの**[同期](sync.md)** を設定- **UPS_UPLOAD_ONLY** 、 **UPS_ONE_FOLDER**およびフォルダーの ID を*feid*に*ulFlags* -アップロードは 1 つだけフォルダーを Outlook に通知します。 
+> クライアントが1つのフォルダーのみをアップロードする必要がある場合、クライアントは、階層のアップロード状態を入力せずに[同期状態](synchronize-state.md)でレプリケーションを開始できます。 クライアントは、 **[SYNC](sync.md)** *フラグ*を**UPS_UPLOAD_ONLY**および**UPS_ONE_FOLDER**および*feid*にフォルダーの id に設定することによって、1つのフォルダーのみがアップロードされるように Outlook に指示します。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -52,7 +52,7 @@ ms.locfileid: "22576751"
   
 [MAPI �萔](mapi-constants.md)
   
-[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
+[レプリケーション状態のマシンについて](about-the-replication-state-machine.md)
   
-[同期状態](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

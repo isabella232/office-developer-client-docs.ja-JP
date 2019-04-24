@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: e04c2228-aa0a-4958-b5b2-6467e93ab613
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: bbf8e2eb2961a3d149010b876d2b4cb3d0c8abc1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 682e75c4e0a2f60dbd46a13b0b737ca4a8e18f3d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345779"
 ---
 # <a name="mapierror"></a>MAPIERROR
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-オペレーティング システム、MAPI、またはサービス プロバイダーによって生成される通常のエラーに関する詳細な情報を提供します。 
+通常、オペレーティングシステム、MAPI、またはサービスプロバイダーによって生成されるエラーに関する詳細情報を提供します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _MAPIERROR
@@ -45,35 +45,35 @@ typedef struct _MAPIERROR
 
 ## <a name="members"></a>Members
 
- **ulVersion**
+ **ulversion**
   
-> 構造体のバージョン番号です。 **UlVersion**メンバーは、将来の拡張に使用し、0 として現在定義されている、MAPI_ERROR_VERSION に設定する必要があります。 
+> 構造のバージョン番号。 **ulversion**メンバーは将来の拡張に使用され、現在はゼロとして定義されている MAPI_ERROR_VERSION に設定する必要があります。 
     
- **lpszError**
+ **lpszerror**
   
-> エラーを説明する文字列へのポインター。 _UlFlags_この構造体を使用するメソッド パラメーターが MAPI_UNICODE に設定されている場合、この文字列は Unicode 形式になります。 
+> エラーを説明する文字列へのポインター。 この構造体が使用されているメソッドの_ulflags_パラメーターが MAPI_UNICODE に設定されている場合、この文字列は Unicode 形式になります。 
     
- **lpszComponent**
+ **lpszcomponent**
   
-> エラーを生成したコンポーネントを説明する文字列へのポインター。 _UlFlags_この構造体を使用するメソッド パラメーターが MAPI_UNICODE に設定されている場合、この文字列は Unicode 形式になります。 
+> エラーを生成したコンポーネントを説明する文字列へのポインター。 この構造体が使用されているメソッドの_ulflags_パラメーターが MAPI_UNICODE に設定されている場合、この文字列は Unicode 形式になります。 
     
- **ulLowLevelError**
+ **ullowlevelerror**
   
-> 返されるエラーは、低レベル時のみに使用される低レベルのエラー値です。
+> 返されるエラーが低レベルである場合にのみ使用される低レベルのエラー値。
     
- **ulContext**
+ **ulcontext**
   
-> エラーの発生場所を識別する**lpszComponent**のメンバーが指すコンポーネントの位置を表す値です。 
+> エラーが発生した場所を識別する、 **lpszcomponent**メンバによって参照されているコンポーネント内の場所を表す値です。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**MAPIERROR**構造体を使用して、エラー情報を記述します。 クライアントとサービス ・ プロバイダー、 [IMAPIProp::GetLastError](imapiprop-getlasterror.md)メソッドの_lppMAPIError_パラメーター内の**MAPIERROR**構造体へのポインターを渡します。 **GetLastError**は、前のオブジェクトに対して発生したエラーに関する情報を返します。 **GetLastError**の呼び出し元は、 [MAPIFreeBuffer](mapifreebuffer.md)を呼び出すことによって、 **MAPIERROR**構造体のメモリを解放します。
+**MAPIERROR**構造体は、エラー情報を記述するために使用されます。 クライアントおよびサービスプロバイダーは、 [imapiprop:: GetLastError](imapiprop-getlasterror.md)メソッドの_lppMAPIError_パラメーターで、 **MAPIERROR**構造体へのポインターを渡します。 **GetLastError**は、オブジェクトに対して発生した前のエラーに関する情報を返します。 **GetLastError**の発信者は、 [MAPIFreeBuffer](mapifreebuffer.md)を呼び出すことにより、 **MAPIERROR**構造体のメモリを解放します。
   
-**LpszComponent**メンバーは、いずれかが存在する場合、コンポーネントのヘルプ ファイルにマップする使用できます。 サービス プロバイダーは、ダイアログ ボックスで簡単に表示できるように、30 文字にコンポーネントの文字列のサイズを制限します。 **UlContext**メンバーは、一般的なエラーのオンライン ヘルプ トピックを参照してくださいにも使用できます。 
+コンポーネントのヘルプファイルがある場合は、そのヘルプファイルをマップするために、 **lpszcomponent**メンバーを使用できます。 サービスプロバイダーは、コンポーネントの文字列のサイズを30文字に制限して、ダイアログボックスに簡単に表示できるようにする必要があります。 **ulcontext**メンバーを使用して、一般的なエラーのオンラインヘルプトピックを参照することもできます。 
   
-サービス プロバイダーの詳細なエラー情報を提供するために必要でないため、クライアントとは限りません有効なデータを格納する返された**MAPIERROR**構造体のメンバーのいずれかです。 ただし、最低限の MAPI で強くお勧めプロバイダーが**lpszComponent**と**ulContext**のメンバーの情報を指定することです。 
+サービスプロバイダーは詳細なエラー情報を提供する必要がないため、クライアントは、返される**MAPIERROR**構造のメンバーに、有効なデータが含まれていることを想定してはなりません。 ただし、少なくとも MAPI では、プロバイダーが**lpszcomponent**および**ulcontext**メンバーで情報を指定することを強くお勧めします。 
   
-MAPI でのエラー処理の詳細については、[エラー処理](error-handling-in-mapi.md)を参照してください。
+MAPI でのエラー処理の詳細については、「[エラー処理](error-handling-in-mapi.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

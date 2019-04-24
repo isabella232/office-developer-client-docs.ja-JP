@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 3e526b93-1f64-41ea-b43c-5b03fe1c56ed
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: dcbf8a323f5178a5a2e39d0963dd19415ab835bd
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25397339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342695"
 ---
 # <a name="pidtagmemberrights-canonical-property"></a>PidTagMemberRights 標準プロパティ
 
@@ -25,7 +25,7 @@ ms.locfileid: "25397339"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォルダーまたはメールボックスには、このメンバーの権限を指定するビットのセットが含まれています。
+フォルダーまたはメールボックスでこのメンバーの権限を示す一連のビットを含みます。
   
 |||
 |:-----|:-----|
@@ -34,17 +34,17 @@ ms.locfileid: "25397339"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |アクセス制御  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティは、フォルダーのメンバーの権限を定義するのには、 [IExchangeModifyTable](iexchangemodifytableiunknown.md)インターフェイスが使用します。 これらの権限を表示および変更できます。 次の値は、このプロパティに対して定義される権限です。 
+このプロパティは、 [IExchangeModifyTable](iexchangemodifytableiunknown.md)インターフェイスで、フォルダーのメンバーの権限を定義するために使用されます。 これらの権限は、表示および変更できます。 次の値は、このプロパティに対して定義されている権限です。 
   
 frightsReadAny
   
-> メンバーは、すべてのメッセージを読み取ることができます。
+> メンバーは任意のメッセージを読み取ることができます。
     
 frightsCreate
   
-> メンバーは、メッセージを作成できます。
+> メンバーはメッセージを作成できます。
     
 frightsEditOwned
   
@@ -56,11 +56,11 @@ frightsDeleteOwned
     
 frightsEditAny
   
-> メンバーは、任意のメッセージを編集できます。
+> メンバーは任意のメッセージを編集できます。
     
 frightsDeleteAny
   
-> メンバーは、任意のメッセージを削除できます。
+> メンバーは任意のメッセージを削除できます。
     
 frightsCreateSubfolder
   
@@ -68,61 +68,61 @@ frightsCreateSubfolder
     
 frightsOwner
   
-> メンバーは、フォルダーの以前のすべての権限を持ちます。
+> メンバーは、フォルダーに対する以前のすべての権限を持っています。
     
 frightsContact
   
-> メンバーは、フォルダーの連絡先として表示される自分の名前を持つことができます。
+> メンバーは、フォルダーの連絡先として自分の名前を表示することができます。
     
 frightsVisible
   
-> メンバーは、フォルダーが存在することを確認できます。
+> メンバーはフォルダーが存在することを確認できます。
     
 rightsNone
   
-> メンバーには、フォルダーの権限がありません。
+> メンバーにフォルダーに対する権限がありません。
     
 rightsReadOnly
   
-> メンバーは、フォルダー内のメッセージを読み取ることができます。
+> メンバーは、フォルダー内の任意のメッセージを読み取ることができます。
     
 rightsReadWrite
   
-> メンバーから読み書きできるフォルダー内のメッセージにします。
+> メンバーは、フォルダー内のメッセージの読み取りおよび書き込みを行うことができます。
     
 rightsAll
   
-> メンバーは、フォルダーの以前のすべての権限を持ちます。
+> メンバーは、フォルダーに対する以前のすべての権限を持っています。
     
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
+[[OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
   
-> フォルダーの操作を処理します。
+> フォルダー操作を処理します。
     
-[[MS OXCPERM]](https://msdn.microsoft.com/library/944ddb65-6249-4c34-a46e-363fcd37195e%28Office.15%29.aspx)
+[[OXCPERM]](https://msdn.microsoft.com/library/944ddb65-6249-4c34-a46e-363fcd37195e%28Office.15%29.aspx)
   
-> サーバーに格納されているフォルダーのアクセス許可の一覧の取得を処理します。
+> サーバーに格納されているフォルダーのアクセス許可リストの取得を処理します。
     
-[[MS OXODLGT]](https://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)
+[[OXODLGT]](https://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)
   
-> 接続し、別のユーザーに代わって動作する場合は、デリゲート、およびメッセージと予定表のアイテムとの対話としてメールボックスを構成するためのメソッドを指定します。
+> 代理人としてメールボックスに接続して構成するためのメソッド、および別のユーザーの代理として動作するときのメッセージと予定表のアイテムの相互作用を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
@@ -131,9 +131,9 @@ Mapitags.h
 [IExchangeModifyTable : IUnknown](iexchangemodifytableiunknown.md)
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -7,13 +7,13 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f8d0b7b9-2798-4d29-99e4-17da99039361
-description: '最終更新日: 2012 年 2 月 20 日'
+description: '最終更新日: 2012 年2月20日'
 ms.openlocfilehash: dbb18ce712d7900106f2c8dd18404e47d8bdbdb7
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25396212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356848"
 ---
 # <a name="mnlscomparestringw"></a>MNLS_CompareStringW
 
@@ -21,7 +21,7 @@ ms.locfileid: "25396212"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-2 つの Unicode 文字列を比較します。
+2つの Unicode 文字列を比較します。
   
 ```cpp
 int MNLS_CompareStringW (
@@ -37,41 +37,41 @@ int MNLS_CompareStringW (
 
  _lcid_
   
-> [in]ロケール識別子です。 詳細な定義は、[通常](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx)の_ロケール_パラメーターを参照してください。
+> 順番ロケール識別子。 詳細な定義については、 [comparestring](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx)の_Locale_パラメーターを参照してください。
     
  _dwFlags_
   
-> [in]大文字と小文字およびアクセント記号を無視するようにフラグを設定します。 詳細な定義は、 [CompareStringEx](https://msdn.microsoft.com/library/dd317761%28VS.85%29.aspx)の_dwCmpFlags_パラメーターを参照してください。
+> 順番大文字/小文字の区別を無視するフラグ。 詳細な定義については、 _dwCmpFlags_パラメータ of [comparestringex](https://msdn.microsoft.com/library/dd317761%28VS.85%29.aspx)を参照してください。
     
  _pstr1_
   
-> [in]比較する最初の Unicode 文字列へのポインター。
+> 順番比較する最初の Unicode 文字列へのポインター。
     
  _cch1_
   
-> [in]Unicode 文字列の先頭、末尾の null 文字を除いた文字数。 アプリケーションは、文字列が null で終わる場合、負の値を指定できます。 この例では、 **MNLS_CompareStringW**関数は、長さを自動的に決定します。 
+> 順番最初の Unicode 文字列の文字数 (終端の null 文字は除く)。 文字列が null で終端されている場合、アプリケーションは負の値を指定できます。 この場合、 **MNLS_CompareStringW**関数は長さを自動的に決定します。 
     
  _pstr2_
   
-> [in]比較する 2 番目の Unicode 文字列へのポインター。
+> 順番比較する2番目の Unicode 文字列へのポインター。
     
  _cch2_
   
-> [in]2 番目の Unicode 文字列は、終端の null 文字を除いた文字数。 アプリケーションは、文字列が null で終わる場合、負の値を指定できます。 この場合、関数は長さを自動的に決定します。
+> 順番2番目の Unicode 文字列の文字数 (終端の null 文字は除く)。 文字列が null で終端されている場合、アプリケーションは負の値を指定できます。 この場合、関数は長さを自動的に決定します。
     
 ## <a name="return-value"></a>戻り値
 
-[CompareStringEx](https://msdn.microsoft.com/library/dd317761%28VS.85%29.aspx)に記載されている値を返します。
+[comparestringex](https://msdn.microsoft.com/library/dd317761%28VS.85%29.aspx)で記述されている値を返します。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-この関数は、 [CompareStringW](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx)をラップします。 **MNLS_CompareStringW**では、同じパラメーターを取得し、 [CompareStringW](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx)と同じ動作をしました。
+この関数は、 [comparestringw](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx)をラップします。 **MNLS_CompareStringW**は同じパラメーターを受け取り、 [comparestringw](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx)と同じ動作をします。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[CompareStringW](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx)
+[comparestringw](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx)
   
-[CompareStringEx](https://msdn.microsoft.com/library/dd317761%28VS.85%29.aspx)
+[comparestringex](https://msdn.microsoft.com/library/dd317761%28VS.85%29.aspx)
 

@@ -5,71 +5,71 @@ ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: eac6be6a-9a20-4bc0-8da2-b2fd93aab04f
-description: プロジェクト Server インターフェイス (PSI) は、Project Server 2013 のオンプレミスのインストール環境で多くのサーバー側プロセスを自動化するのに役立ちます。 ですが、いくつかの関数は、Microsoft Project Professional 2013 の使用を要求します。
+description: project server Interface (PSI) は、project server 2013 のオンプレミスのインストールで多くのサーバー側プロセスを自動化するのに役立ちます。 ただし、いくつかの関数では Microsoft Project Professional 2013 を使用する必要があります。
 ms.openlocfilehash: b93c3535ca6693a84d11370de17bc18375f168ab
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25386342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346530"
 ---
 # <a name="what-the-psi-does-and-does-not-do"></a>PSI のすること、しないこと
 
-プロジェクト Server インターフェイス (PSI) は、Project Server 2013 のオンプレミスのインストール環境で多くのサーバー側プロセスを自動化するのに役立ちます。 ですが、いくつかの関数は、Microsoft Project Professional 2013 の使用を要求します。
+project server Interface (PSI) は、project server 2013 のオンプレミスのインストールで多くのサーバー側プロセスを自動化するのに役立ちます。 ただし、いくつかの関数では Microsoft Project Professional 2013 を使用する必要があります。
   
 |||
 |:-----|:-----|
 |||
    
-PSI は、Project Professional のすべての機能は、サーバ ・ ベースの代替を提供するのではなく、プロジェクトの評価のための機能を補完するよう設計されています。 サード パーティの開発者は、PSI を使用して、設置の Project Web App の [プロジェクト ワークスペースの Web パーツを作成、カスタムの Windows アプリケーションとオンプレミスの Project Server のデータと対話する、ワークフローを開発する web アプリケーションの作成を支援するにはプロジェクト ポートフォリオ管理のためのロジックでは、ローカルの完全信頼のイベント ハンドラーを開発し、Project Server を他のアプリケーションに統合します。 Office ストア、モバイル デバイス、またはタブレットのためのアプリケーションを開発するため、PSI を使用することはできません。そのため、クライアント側オブジェクト モデル (CSOM) を使用できます。
+PSI は、project professional 2013 の機能を補完するように設計されており、project professional のすべての機能に、サーバーベースの代替手段を提供するものではありません。 サードパーティの開発者は、PSI を使用して、project web App とプロジェクトワークスペースのオンプレミスインストール用の Web パーツを作成したり、オンプレミスの project Server データを操作するカスタム Windows アプリケーションと web アプリケーションを作成したり、ワークフローを開発したりすることができます。プロジェクトポートフォリオ管理のロジック、ローカルの完全信頼イベントハンドラーの開発、および project Server と他のアプリケーションとの統合。 PSI は、Office ストア、モバイルデバイス、またはタブレット用アプリの開発には使用できません。そのためには、クライアント側オブジェクトモデル (csom) を使用できます。
   
 > [!NOTE]
-> PSI より包括的なプログラム インターフェイスを提供 Project Server 2013 は、CSOM で提供されます。 新しいアプリケーションを開発するのには、CSOM を使用することをお勧め、CSOM から、必要な機能が提供されない限り、します。 詳細については、[どのような CSOM しサポートしない](what-the-csom-does-and-does-not-do.md)を参照してください。 
+> PSI は、csom が提供するよりも、Project Server 2013 用のより包括的なプログラムインターフェイスを提供します。 ただし、CSOM に必要な機能がない場合を除き、新規アプリケーションの開発には CSOM を使用することをお勧めします。 詳細については、「[What the CSOM does and does not do](what-the-csom-does-and-does-not-do.md)」を参照してください。 
   
 ## <a name="usage-scenarios-for-the-psi"></a>PSI の使用シナリオ
 <a name="pj14_WhatPSIDoes_UsageScenarios"> </a>
 
 以下に、PSI がサーバー側のプロジェクトおよび計算のためにサポートするアプリケーションの例をいくつか示します。
   
-- **自動化、作成、または Project Server 内のエンティティの管理**カスタム アプリケーションが一括で時間を保存する場所の場合、多くの場合は、評価のためのプロジェクトと Project Web App には、管理し、プロジェクト、エンタープライズ リソース ユーザー設定フィールドなどのエンティティの作成を処理するために、または反復的なジョブです。 PSI には、CSOM が実行できないジョブのたとえば、OLAP キューブ、プロジェクト ポートフォリオ分析、ビジネス ドライバー、通知、オブジェクト リンク プロバイダー、セキュリティ、および SharePoint の相互運用性を持ついくつかの種類を自動化できます。 
+- **Project Server でのエンティティの作成または管理を自動化する**project Professional 2013 と project Web App は、プロジェクト、エンタープライズリソース、ユーザー設定フィールドなどのエンティティの管理および作成を処理するように設計されていますが、カスタムアプリケーションがバルクまたは一括して時間を節約できる場合がよくあります。繰り返しジョブ。 PSI は、OLAP キューブ、プロジェクト ポートフォリオ分析、ビジネス ドライバー、通知、オブジェクト リンク プロバイダー、セキュリティ、SharePoint との相互運用性など、CSOM では不可能な、いくつかの種類のジョブの自動化を行うことができます。 
     
-- **プロジェクト データベースのアーカイブ テーブルまたは、パブリッシュされたデータを取得します。** テーブルはサポートされていないため、データベースに直接、公開、下書きにアクセスし、アーカイブがレポートのテーブルまたはビューで使用できないデータを読み取る PSI を使用することができます。 たとえば、プロジェクトのバージョン、日付、およびアーカイブ テーブルに格納されている変更に関する情報を取得し、情報を持つ web パーツ内の JS グリッド コントロールを作成し、します。 
+- **Project データベースの発行済みまたはアーカイブテーブル内のデータを取得する**下書き、発行済み、およびアーカイブテーブルへの直接データベースアクセスはサポートされていないため、PSI を使用して、レポートテーブルまたはビューで利用できないデータを読み取ることができます。 たとえば、アーカイブテーブルに格納されているプロジェクトのバージョン、日付、変更に関する情報を取得し、その情報を含む web パーツに JS Grid コントロールを設定します。 
     
-- **状態管理とタイムシートのデータを検証します。** ローカルの前のイベント ハンドラーで PSI を使用すると、Project Web App でデータが保存される前に、ユーザーが入力した割り当ての状態] または [タイムシート データを検証します。 
+- **statusing およびタイムシートデータを検証**するローカルのイベント前ハンドラーで PSI を使用して、データが Project Web App に保存される前に、ユーザーが入力した割り当て状態またはタイムシートデータを検証します。 
     
-- **メンテナンス プロジェクト**プロジェクトのリソース計画で使用するプレース ホルダーを作成します。 予約または本時間リソースに対する保守作業または基本業務です。 通常、保守プロジェクトにはタスクはありません。 
+- **保守プロジェクト** リソース計画と共に使用するプレースホルダー プロジェクトを作成します。リソースに対する保守作業または基本業務用の時間を確保または予約します。通常、保守プロジェクトはタスクを持っていません。 
     
-- **財務プロジェクトの作成**財務システムとの統合のためにタイムシートをタイム キャプチャ用のプロジェクトを作成します。 財務システムのコストの内訳構造を反映した、財務コードの階層を作成します。 財務プロジェクトでは、スケジュール設定やステータスの更新は必要ありません。 
+- **財務プロジェクトの作成** 財務システムとの統合用にタイムシートを使用して、時間取得のためのプロジェクトを作成します。 財務システムのコスト ブレークダウン ストラクチャを反映した、財務コードの階層を作成します。 財務プロジェクトには、スケジュールや実績の更新は必要ありません。 
     
-- **会計システムとの統合**リソースのコストおよび関連する財務および請求システムをフィードするプロジェクトと予算の比較のための経費をキャプチャします。 タスク、リソース、およびシステム間での割り当てを同期します。 他のフィードを 1 つのシステムでタイムシート データをキャプチャ (組織または個々 のプロジェクトのニーズに依存するタイムシートが表示されます)。 
+- **会計システムとの統合** 財務システムと課金システムに入力し、予算を比較する目的のために、プロジェクトに関連するリソース コストと経費を取得します。 システム間のタスク、リソース、および割り当てを同期します。 あるシステムのタイムシート データを取得して、他のタイムシート データに入力します (使用するタイムシートは、組織または個別のプロジェクトのニーズによって決まります)。 
     
-- **チーム メンバーから更新を自動化**積極的に管理されていないプロジェクトでは、進行状況とプロジェクト チームのメンバーからの他の変更をサーバー上のプロジェクトを自動的に更新します。 プロジェクトを更新し、プロジェクト管理者は、結果を確認するか、計画を調整することがなく再公開できます。 
+- **チーム メンバーの更新の自動化** アクティブに管理されていないプロジェクトについて、プロジェクト チーム メンバーからの進捗およびその他の変更に関してサーバー上で自動的にプロジェクトが更新されるようにします。 プロジェクト管理者が結果を見直したり、計画を調整したりしなくても、プロジェクトを更新したり、再発行したりできます。 
     
-- **ローカルの完全信頼のイベント ハンドラーでデータを Project Server の評価**プレ イベントの**ProjectCreating**のローカル イベント ハンドラーは、イベントをキャンセルするのにかどうかを判断するために PSI から Project Server データを使用できます。 たとえば、プロジェクトを作成する前に既存のプロジェクトとプロジェクトの提案を比較します。 
+- **ローカルの完全信頼イベントハンドラーで Project Server データを評価**するイベントを**作成**するプロジェクトのローカルイベントハンドラーは、PSI の Project Server データを使用して、イベントをキャンセルするかどうかを判断することができます。 たとえば、プロジェクトを作成する前に、既存のプロジェクトとプロジェクトの提案を比較することができます。 
     
-- **需要管理のユーザー定義ワークフロー活動を作成します。** 変更およびエンタープライズ プロジェクト テンプレートに基づいてプロジェクト提案書を更新する、ローカルの完全信頼ワークフロー アクティビティで、PSI を使用します。 開始および承認プロセスに必要な情報をプロジェクトにタグ付けするのにには、プロジェクトのユーザー設定フィールドを使用します。 主なマイルス トーンまたは成果物のプロジェクト フェーズを識別するタスクを追加します。 プロジェクトの提案が承認されると、ワークフローは、Project Professional で管理されている本格的なプロジェクトの提案を変更できます。 
+- **需要管理のためのカスタムワークフローアクティビティを作成する**エンタープライズプロジェクトテンプレートに基づいてプロジェクト提案を変更および更新するには、ローカルの完全信頼ワークフローアクティビティで PSI を使用します。 プロジェクト ユーザー設定フィールドを使用して開始および承認プロセスに必要な情報でプロジェクトにタグを付けます。 主要なマイルストーンまたは成果物のプロジェクト フェーズを識別するタスクを追加します。 承認された提案は、ワークフローによって Project Professional で管理される完全なプロジェクトに変更することができます。 
     
-- **作成の PSI 拡張機能**(**は使用されなくなりました**。 拡張機能で Project Server 2013 では、推奨されていませんし、将来のリリースではサポートされません。)Windows Communication Foundation (WCF) インターフェイスを使用してカスタム サービスを使用して、PSI を拡張できます。 PSI 拡張機能は、Project Server コンピューター上で実行し、組み込みの PSI サービスを使用するのと同じセキュリティ インフラストラクチャを使用することができます。 拡張機能はレポート テーブルのクエリを実行、別のデータベース テーブルを使用して、帯域幅を保存し、サードパーティ製のアプリケーションおよびその他のサーバー側コンポーネントとの統合の PSI 呼び出しを統合します。 詳細については、 [PSI 拡張機能の開発](https://msdn.microsoft.com/library/1b484623-94fb-47c9-84c1-3e68a9133042%28Office.15%29.aspx)を参照してください。
+- **PSI 拡張機能を作成する**(**非推奨)。** 拡張機能は Project Server 2013 で廃止され、今後のリリースではサポートされなくなります。)PSI は、Windows Communication Foundation (WCF) インターフェイスを使用してカスタムサービスで拡張することができます。 PSI 拡張機能は Project Server コンピューターで実行でき、組み込みの PSI サービスで使用するのと同じセキュリティ インフラストラクチャを使用できます。 拡張機能では、レポート テーブルのクエリ、別のデータベース テーブルの使用、帯域幅を節約するための PSI 呼び出しの統合、サードパーティ アプリケーションやその他のサーバー側コンポーネントとの統合を行うことができます。 詳細については、「[PSI 拡張機能の開発](https://msdn.microsoft.com/library/1b484623-94fb-47c9-84c1-3e68a9133042%28Office.15%29.aspx)」を参照してください。
     
-- **ローカルの完全信頼アプリケーションで偽装を使用**PSI の WCF インターフェイスを呼び出すことができますふりをする、できるように、アプリケーションには、偽装ユーザーのセキュリティ アクセス許可が前提としています。 注意して慎重に、偽装を使用する必要があります。 読み取りと他のユーザーの状態に関する情報を更新するには、偽装は不要です。 偽装を必要とする新しいアプリケーションでは、PSI ではなく、CSOM および OAuth プロトコルを使用する必要があります。 PSI の偽装の詳細については、 [WCF を使用して偽装](https://msdn.microsoft.com/library/e3597901-2f02-44a2-8076-d32aae540b38%28Office.15%29.aspx)を参照してください。
+- **ローカルの完全信頼アプリケーションで偽装を使用する**PSI の WCF インターフェイスの呼び出しは偽装されることができるので、アプリケーションは偽装されたユーザーのセキュリティアクセス許可を引き受けることができます。 偽装は限定的かつ慎重に使用する必要があります。 他のユーザーの状態情報の読み取りと更新には、偽装は必要ありません。 偽装を必要とする新しいアプリケーションでは、PSI ではなく CSOM および OAuth プロトコルを使用する必要があります。 PSI を使用した偽装の詳細については、「 [WCF で偽装を使用する](https://msdn.microsoft.com/library/e3597901-2f02-44a2-8076-d32aae540b38%28Office.15%29.aspx)」を参照してください。
     
 > [!NOTE]
-> いくつかの場合では、CSOM とオンライン プロジェクトでのクライアント アプリケーションで PSI を使用できます。 アプリケーションが、CSOM で[Microsoft.ProjectServer.Client.ProjectContext](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.aspx)オブジェクトを認証する方法と、**を認証するためのメソッドを含める必要があります PSI の ASMX ベース web サービスを使用する場合System.Web.Services.Protocols.SoapHttpClientProtocol**クライアント オブジェクト。 SharePoint CSOM で web サービスを使用する例では、 [SharePoint Online Using Claims-Based 認証でリモートの認証](https://msdn.microsoft.com/library/49067f7a-3020-478f-ba97-4b7ce3ea9b87%28Office.15%29.aspx)を参照してください。 > 制約のあるアプリケーション ・ レベルのアクセス権があるためは Office のパブリック ストアでの配布の PSI に設計されたアプリケーションで使用できません。 その場合は、CSOM のみを使用できます。 
+> 場合によっては、csom と Project Online を使用して、クライアントアプリケーションで PSI を使用することができます。 ASMX ベースの PSI web サービスを使用する場合、アプリケーションには、csom で[microsoft.projectserver.client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.aspx)オブジェクトを認証するためのメソッドと、**を認証するメソッドが含まれている必要があります。SoapHttpClientProtocol**のクライアントオブジェクトを示します。 SharePoint CSOM で Web サービスを使用する例については、「[クレーム ベース認証を使用した SharePoint Online でのリモート認証](https://msdn.microsoft.com/library/49067f7a-3020-478f-ba97-4b7ce3ea9b87%28Office.15%29.aspx)」を参照してください。 > アプリレベルのアクセス許可が制限されているため、公開 Office ストアで配布するように設計されたアプリで PSI を使用することはできません。 その場合は、CSOM のみ使用できます。 
   
 ## <a name="what-the-psi-does-not-do"></a>PSI が行わないこと
 <a name="pj14_WhatPSIDoes_DoesNotDo"> </a>
 
 PSI が行えることはたくさんありますが、PSI が行えないこともあります。以下に、PSI では行えず、CSOM では行えることを 2 つ示します。
   
-### <a name="project-online-and-remote-event-receivers"></a>オンラインおよびリモート イベント レシーバーをプロジェクトします。
+### <a name="project-online-and-remote-event-receivers"></a>Project Online とリモートイベントレシーバー
 
-プロジェクトをオンラインでは、PSI の主な制限です。 PSI を使用するアプリケーションでは、プロジェクトのサーバーの設置型インストールに完全信頼のアクセスが必要です。 たとえば、PSI では使用できませんリモート イベント レシーバーでは、イベント レシーバーが Microsoft Azure にサービスとしてインストールされています。
+PSI の主な制限は Project Online を使用しています。 PSI を使用するアプリケーションには、Project Server の社内インストールに対する完全信頼アクセス権が必要です。 たとえば、Microsoft Azure でイベントレシーバーがサービスとしてインストールされているリモートイベントレシーバーでは、PSI を使用することはできません。
   
 ### <a name="workflows-and-claims-authentication"></a>ワークフローおよびクレーム認証
 
-4 (WF4) する必要がありますクレーム認証では、PSI を直接サポートしていない Windows Workflow Foundation のバージョンを使用するためのワークフロー定義。 つまり、WF4 のワークフロー定義を使用してエンタープライズ プロジェクトの種類 (EPT) を持つ Project Server 2013 でプロジェクトを作成するのには、PSI を使用することはできません。
+Windows workflow Foundation version 4 (WF4) を使用するワークフロー定義にはクレーム認証が必要です。これは、PSI が直接サポートしていません。 つまり、PSI を使用して project Server 2013 に、WF4 ワークフロー定義でエンタープライズプロジェクトの種類 (EPT) を含むプロジェクトを作成することはできません。
   
-EPTs ワークフローがないとしているか、従来の WF3.5 定義 (Project Server 2010 のワークフローのバージョン) を使用するとプロジェクトを作成するのには、PSI を使用できます。 WF4 定義を持つ、EPT でプロジェクトを作成するには、CSOM を使用します。
+PSI を使用して、ワークフローを持たない ept でプロジェクトを作成するか、従来の wf 3.5 の定義 (Project Server 2010 のワークフローバージョン) を使用することができます。 WF4 定義を持つ EPT でプロジェクトを作成するには、CSOM を使用します。
   
  **Project Professional を必要とするアクション:**
   
@@ -85,9 +85,9 @@ EPTs ワークフローがないとしているか、従来の WF3.5 定義 (Pro
     
 #### <a name="enterprise-data"></a>エンタープライズ データ
 
-- チェック アウトするか、エンタープライズ グローバル テンプレートを編集します。 エンタープライズのグローバル データを Project Server 2013 では、Office Project Server 2007 と以前のバージョンのようにプロジェクト テンプレートではなく、プロジェクト データベース内のバイナリ データのテーブルのセットです。
+- エンタープライズ グローバル テンプレートのチェック アウトまたは編集。 project server 2013 のエンタープライズグローバルデータは、project データベース内のバイナリデータテーブルのセットです。これは、Office project Server 2007 以前のバージョンの project テンプレートではありません。
     
-- 定義またはエンタープライズ カレンダーを編集します。 [Calendar](https://msdn.microsoft.com/library/WebSvcCalendar.Calendar.aspx)のメソッドは、カレンダーの例外のみを管理します。 
+- エンタープライズ カレンダーの定義または編集。 [カレンダー](https://msdn.microsoft.com/library/WebSvcCalendar.Calendar.aspx)メソッドは、予定表の例外のみを管理します。 
     
 #### <a name="master-projects-and-cross-project-links"></a>マスター プロジェクトおよびプロジェクト間のリンク
 
@@ -111,16 +111,16 @@ EPTs ワークフローがないとしているか、従来の WF3.5 定義 (Pro
     
 - タスクにリソースを追加する場合、PSI は Project Professional のように作業を自動的に再配布しません。割り当てで作業の配布を選択して明示的に設定するのは、開発者の役割です。
     
-#### <a name="cost-resources"></a>コスト型リソース
+#### <a name="cost-resources"></a>Cost resources
 
-- 編集、作成、またはコスト単価型リソースと[プロジェクト](https://msdn.microsoft.com/library/WebSvcProject.Project.aspx)のメソッドを使用して、割り当てを削除します。 [リソース](https://msdn.microsoft.com/library/WebSvcResource.Resource.aspx)の方法は、コスト単価型リソースを作成できますが、編集はできません。 
+- [プロジェクト](https://msdn.microsoft.com/library/WebSvcProject.Project.aspx)の方法を使用して、コスト単価型リソースおよび割り当てを編集、作成、または削除できます。 [Resource](https://msdn.microsoft.com/library/WebSvcResource.Resource.aspx)メソッドは、コスト型リソースを作成することはできますが、編集することはできません。 
     
 #### <a name="work-contours"></a>作業配分
 
 - タイムスケール データの編集。
     
     > [!NOTE]
-    > [UpdateStatus](https://msdn.microsoft.com/library/WebSvcStatusing.Statusing.UpdateStatus.aspx) **状態管理**Web サービスのメソッドは、プロジェクト マネージャーが更新され、割り当てのデータを公開した後、割り当てのタイム スケール領域の実績作業時間を編集できます。 
+    > **Statusing** Web サービスの[updatestatus](https://msdn.microsoft.com/library/WebSvcStatusing.Statusing.UpdateStatus.aspx)メソッドは、プロジェクトマネージャーが割り当てデータを更新して発行した後に、割り当ての時間単位の実績を編集できます。 
   
 - 割り当ての配分型 (均等型、増加型、減少型など) の設定または変更。
     
@@ -137,7 +137,7 @@ EPTs ワークフローがないとしているか、従来の WF3.5 定義 (Pro
 - 対話型スケジューリングのサポート (Project Server は対話を非同期に処理するため、対話型スケジューリングは Project Professional を使用して行う必要があります)。
     
     > [!NOTE]
-    > プログラムの動作を変更することを避けるためには、Project Server 2010 から前方に置かれる PSI メソッドの動作は Project Server 2013 でも同じ方法です。 やなどの[QueueUpdateProject](https://msdn.microsoft.com/library/WebSvcProject.Project.QueueUpdateProject.aspx)も同じ制限があります古いサーバー側のスケジュール エンジンを使用します。 新しい[QueueUpdateProject2](https://msdn.microsoft.com/library/WebSvcProject.Project.QueueUpdateProject2.aspx)メソッドでは、これらの制限の多くを削除し、エンジンを使用して新しい Project Server 2013 のサーバー側スケジューリング、評価のためのプロジェクトに含まれるものと同じスケジュール エンジンであります。 
+    > プログラムによる動作を変更しないようにするため、project server 2010 から転送される PSI メソッドは、project server 2013 でも同じように動作します。 たとえば、 [queueupdateproject](https://msdn.microsoft.com/library/WebSvcProject.Project.QueueUpdateProject.aspx)は依然として同じ制限を持っており、以前のサーバー側のスケジューリングエンジンを使用します。 新しい[QueueUpdateProject2](https://msdn.microsoft.com/library/WebSvcProject.Project.QueueUpdateProject2.aspx)メソッドは、これらの制限の多くを削除し、新しい project Server 2013 サーバー側のスケジューリングエンジンを使用します。これは、project Professional 2013 と同じスケジューリングエンジンです。 
   
 #### <a name="wbs"></a>WBS
 
@@ -151,7 +151,7 @@ EPTs ワークフローがないとしているか、従来の WF3.5 定義 (Pro
     
 - タスクの固定コスト計上の時期の変更。
     
-- [TASK_NOTES](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.TaskRow.TASK_NOTES.aspx)フィールドの内容を変更します。 PSI には、.rtf バイナリ データであるタスク メモのテキストの部分のみを読み取ることができます。 しかし、割り当てメモ ( [ASSN_NOTES](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.AssignmentRow.ASSN_NOTES.aspx) ) は、テキスト データを編集することができます。 レポート データベースは、タスクまたは割り当てのメモには含まれません。 
+- [TASK_NOTES](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.TaskRow.TASK_NOTES.aspx)フィールドの内容を変更する。 PSI は、.rtf バイナリ データであるタスク メモのテキスト部分のみを読み取ることができます。 しかし、テキストデータである割り当てメモ ( [ASSN_NOTES](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.AssignmentRow.ASSN_NOTES.aspx) ) を編集できます。 レポート データベースは、タスク メモまたは割り当てメモを含みません。 
     
 - 定期タスクの作成または編集。
     
@@ -159,16 +159,16 @@ EPTs ワークフローがないとしているか、従来の WF3.5 定義 (Pro
     
 - タスク カレンダーを使用した新しいタスクの作成。
     
-- [TASK_IGNORES_RES_CAL](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.TaskRow.TASK_IGNORES_RES_CAL.aspx)フィールドの値を変更する (タスクは、リソース カレンダーを無視します)。 
+- [TASK_IGNORES_RES_CAL](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.TaskRow.TASK_IGNORES_RES_CAL.aspx)フィールドの値を変更する (リソースカレンダーを無視するタスク)。 
     
-- 同じ呼び出しで追加の変更を加える場合は、 [QueueUpdateProject](https://msdn.microsoft.com/library/WebSvcProject.Project.QueueUpdateProject.aspx)を使用して、タスクの現在のステータスを変更します。 詳細については、 [Project Server プログラミング](project-server-programmability.md)する*サーバー上でプロジェクトのスケジュール設定*」を参照してください。
+- 同じ呼び出しで追加の変更が加えられた場合、 [queueupdateproject](https://msdn.microsoft.com/library/WebSvcProject.Project.QueueUpdateProject.aspx)を使用して、タスクのアクティブな状態を変更します。 詳細については、「 [project server のプログラミング](project-server-programmability.md)」の「サーバー」セクション*で、プロジェクトのスケジュール*を参照してください。
     
 #### <a name="summary-tasks"></a>サマリー タスク
 
 - サマリー タスクでの割り当ての作成または変更。
     
     > [!NOTE]
-    > Project Professional またはその他の方法を使用して、サマリー タスクの割り当てを行わないことをお勧めします。 詳細については、 [Project Server プログラミング](project-server-programmability.md)する*サーバー上でプロジェクトのスケジュール設定*」を参照してください。 
+    > Project Professional またはその他の方法を使用してサマリー タスク上で割り当てを作成しないことをお勧めします。 詳細については、「 [project server のプログラミング](project-server-programmability.md)」の「サーバー」セクション*で、プロジェクトのスケジュール*を参照してください。 
   
 - 通常サブタスクから重ね合わされるサマリー タスク フィールドの編集。サーバー側プロジェクトは、サマリー タスクに情報を設定してサブタスクにプッシュする代わりに、常にサマリー情報を重ね合わせます。サマリー タスクでは、以下のフィールドのみを編集できます。
     
@@ -192,7 +192,7 @@ EPTs ワークフローがないとしているか、従来の WF3.5 定義 (Pro
     
   - [TASK_FIXED_COST](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.TaskRow.TASK_FIXED_COST.aspx)
     
-  - [TASK_FIXED_COST_ACCRUAL](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.TaskRow.TASK_FIXED_COST_ACCRUAL.aspx)(タスクを作成する場合にのみ値を設定) 
+  - [TASK_FIXED_COST_ACCRUAL](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.TaskRow.TASK_FIXED_COST_ACCRUAL.aspx)(タスクの作成時にのみ値を設定する) 
     
   - [TASK_WBS](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.TaskRow.TASK_WBS.aspx)
     
@@ -202,7 +202,7 @@ EPTs ワークフローがないとしているか、従来の WF3.5 定義 (Pro
 
 - Schedule From Start (SFS) と Schedule From Finish (SFF) の間でのプロジェクトの種類の変更 (PSI はプロジェクトを SFS または SFF として作成できますが、いったん作成したプロジェクトは、Project Professional でのみ変更できます)。
     
-- プロジェクトの作成後、プロジェクトの基本カレンダー ([CAL_UID](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.ProjectRow.CAL_UID.aspx) ) を変更します。 
+- プロジェクトの作成後にプロジェクトの基本カレンダー ([CAL_UID](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.ProjectRow.CAL_UID.aspx) ) を変更する。 
     
 - 計算のオプションの変更。プロジェクトの作成時に、PSI を使用して以下の計算オプションを設定できますが、これらのオプションを変更するには Project Professional が必要です (Backstage ビューで、[**オプション**] を選択し、[**Project のオプション**] ダイアログ ボックスの [**スケジュール**] タブを選択します)。 
     
@@ -235,6 +235,6 @@ EPTs ワークフローがないとしているか、従来の WF3.5 定義 (Pro
 - [CSOM のすること、しないこと](what-the-csom-does-and-does-not-do.md)  
 - [Project Server プログラミング](project-server-programmability.md)   
 - [クレーム ベース認証を使用した SharePoint Online でのリモート認証](https://msdn.microsoft.com/library/49067f7a-3020-478f-ba97-4b7ce3ea9b87%28Office.15%29.aspx)  
-- [Office 用アプリの作成](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins) 
+- [Office アドイン](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins) 
     
 

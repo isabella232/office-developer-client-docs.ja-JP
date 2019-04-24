@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 394b8e6f-9132-4c98-8fd6-46ad3c871440
 description: Office ドキュメント キャッシュ (ODC) を制御するための CSISyncClient の使用法について取り上げます。
 ms.openlocfilehash: ce33063f88492bcd6f9682a4a6431fb36f138d55
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: HT
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25399453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346257"
 ---
 # <a name="using-csisyncclient-to-control-the-office-document-cache-odc"></a>Office ドキュメント キャッシュ (ODC) を制御するための CSISyncClient の使用
 
@@ -244,7 +244,7 @@ LocalFileChange は、指定のファイルのアップロードを試みるよ�
   
  _bstrResourceID_
   
-ファイルの ResourceID を示す文字列。この値を空にすることはできません。最大長は 128 文字です。 
+ファイルの ResourceID を識別する文字列。 この値は、空ではなく、最大128文字である必要があります。 
   
  _bstrWebPath_
   
@@ -262,7 +262,7 @@ LocalFileChange は、指定のファイルのアップロードを試みるよ�
 |E_LSC_FILEUPTODATE  <br/> |キャッシュ内のファイルにはディスクの最新の変更内容が含まれていたため、COM オブジェクトでアップロードはスケジュールされませんでした。  <br/> |
 |E_LSC_LOCALFILEUNAVAILABLE  <br/> |_bstrFileSystemPath_ で指定されたファイルがないか、ロックされています。  <br/> |
 |E_LSC_LOCALPATHNOTMAPPED  <br/> |指定の FileSystemPath が、Initialize の呼び出し時に FileSystemDirectoryHint で指定されたディレクトリ ルートにありません。  <br/> |
-|E_LSC_NOTINITIALIZED  <br/> |[ILSCLocalSyncClient::Initialize](using-csisyncclient-to-control-the-office-document-cache-odc.md#ILSCLocalSyncClient_Initialize)がこれまでに正常に呼び出されなかったことがあります。  <br/> |
+|E_LSC_NOTINITIALIZED  <br/> |[ILSCLocalSyncClient::Initialize ](using-csisyncclient-to-control-the-office-document-cache-odc.md#ILSCLocalSyncClient_Initialize)がこれまでに正常に呼び出されなかったことがあります。  <br/> |
 |E_LSC_PATHMISMATCH  <br/> |_bstrResourceID_ で指定されたファイルの FileSystemPath が、指定されたものと異なります。  <br/> |
 |E_LSC_PENDINGCHANGESINCACHE  <br/> |指定されたファイルには別のキャッシュで保留されている変更内容が含まれているため、コンシューマーのキャッシュに関連付けることはできません。  <br/> |
 |E_LSC_SERVERPATHINDIFFERENTCACHE  <br/> |指定された WebPath は別のキャッシュに含まれます。  <br/> |
@@ -279,7 +279,7 @@ RenameFile は、指定の ResourceID に関して新しい URL とローカル 
 
  _bstrResourceID_
   
-ファイルの ResourceID を示す文字列。この値を空にすることはできません。最大長は 128 文字です。 
+ファイルの ResourceID を識別する文字列。 この値は、空ではなく、最大128文字である必要があります。 
   
  _bstrNewFileSystemPath_
   
@@ -313,7 +313,7 @@ ResetCache は、Initialize で指定された SuppliedID と関連付けられ�
   
 `HRESULT ILSCLocalSyncClient::ResetCache()`
 
-##### <a name="parameters"></a>パラメーター
+##### <a name="parameters"></a>パラメータ
 
 なし
   

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 03691187-7c65-620b-576f-6ebe62a80830
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 77f28654ffe0f6f459fde229bb7428f2c39e96c0
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32347804"
 ---
 # <a name="hrgetautodiscoverxml"></a>HrGetAutoDiscoverXML
 
@@ -25,13 +25,13 @@ ms.locfileid: "25400720"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Microsoft Exchange 2007 サーバーの自動検出サービスから取得した情報を表す拡張マークアップ言語 (XML) のストリームを返します。
+Microsoft Exchange 2007 サーバーの自動検出サービスから取得された情報を表す、拡張マークアップ言語 (XML) ストリームを返します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|によってエクスポートされます。  <br/> |olmapi32.dll  <br/> |
+|エクスポート対象:  <br/> |olmapi32  <br/> |
 |呼び出し元:  <br/> |クライアント  <br/> |
 |実装元:  <br/> |Outlook  <br/> |
    
@@ -49,44 +49,44 @@ HRESULT HrGetAutoDiscoverXML(
 
  _pwzAddress_
   
-> [in]Null で終わる簡易メール転送プロトコル (SMTP) メール アドレスの自動検出情報を取得するアカウントです。
+> 順番自動検出情報を取得するアカウントの、null で終了する簡易メール転送プロトコル (SMTP) 電子メールアドレス。
     
  _pwzPassword_
   
-> [in]オプションの_pwzAddress_で指定されたアカウントのパスワードです。 任意のパスワードを渡す意味を持ちません_pwzAddress_によって指定されたアカウントにパスワードが必要ない場合に注意してください。 
+> 順番_pwzAddress_によって指定されたアカウントのパスワード (省略可能)。 _pwzAddress_で指定されたアカウントがパスワードを必要としない場合、任意のパスワードを渡しても効果はありません。 
     
- _hCancelEvent_
+ _hcancelevent_
   
-> [in]設定されていない Win32 イベント ハンドルをオプションで、操作をキャンセルするために使用します。 操作をキャンセルするには、イベントを設定し、イベント ハンドルを渡すと_hCancelEvent_。操作をキャンセルしたくない場合は**null**を渡します。 メモがある値を渡すことはありません、イベント ハンドルは、影響を与えません、関数では無視されます。 
+> 順番省略可能で、操作を取り消すために使用できる、未設定の Win32 イベントハンドル。 操作を取り消すには、イベントを設定し、イベントハンドルを_hcancelevent_として渡します。操作をキャンセルしない場合は、 **null**を渡します。 イベントハンドルを表さない値を渡すと、無効になり、関数は無視されます。 
     
  _ulFlags_
   
-> [in]このパラメーターは使用されません。 0 である必要があります。
+> 順番このパラメーターは使用されません。 0である必要があります。
     
- _ppXmlStream_
+ _ppxmlstream_
   
-> [out]自動検出の XML を含む[IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)オブジェクトへのポインター。 自動検出が失敗した場合は**null**を返します。 操作を終了したら、 [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)オブジェクトを解放する必要があります。 
+> 読み上げautodiscovery XML を含む[IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)オブジェクトへのポインター。 autodiscovery 操作が失敗した場合は**null**を返します。 [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)オブジェクトの使用が終了したら解放する必要があります。 
     
 ## <a name="return-values"></a>戻り値
 
 S_OK 
   
-- 関数の呼び出しが成功します。
+- 関数呼び出しが成功しました。
     
 E_INVALIDARG 
   
--  _pwzAddress_が**null**か、有効な SMTP アドレスではありませんか_ppXmlStream_ [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)オブジェクトへの**null**ポインター。 
+-  _pwzAddress_が**null**であるか、有効な SMTP アドレスではありません。または、 _ppxmlstream_は[IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)オブジェクトへの**null**ポインターです。 
     
 MAPI_E_NOT_FOUND 
   
-- クライアント コンピューターがネットワークに接続されていない、Microsoft Exchange 2007 サーバーにクライアント コンピューターが接続されていない、 _pwzAddress_は、Exchange 2007 サーバー上のアカウントではありません、または_pwzAddress_は、Exchange でサポートされていないアカウント自動検出サービスです。 
+- クライアントコンピューターがネットワークに接続されていない、クライアントコンピューターが Microsoft exchange 2007 サーバーに接続されていない、 _pwzAddress_が exchange 2007 サーバーのアカウントではない、または exchange をサポートしていないアカウントである_pwzAddress_自動検出サービス。 
     
 MAPI_E_USER_CANCEL 
   
-- イベント ハンドルは、操作をキャンセルするのには_hCancelEvent_に渡されました。 
+- 操作をキャンセルするため、 _hcancelevent_にイベントハンドルが渡されました。 
     
 STRSAFE_E_INSUFFICIENT_BUFFER
   
-- _PwzAddress_または_pwzPassword_に渡される値が長すぎます、256 バイトのサイズの内部バッファーがオーバーフローしたことなどです。 
+- _pwzAddress_または_pwzPassword_に渡された値が長すぎるため、サイズ256バイトの内部バッファーがオーバーフローしています。 
     
 

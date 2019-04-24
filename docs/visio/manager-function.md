@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: b2453014-7d45-f4c9-0384-def705c5c4d4
 description: ドキュメントのプロパティの [管理者] フィールドからテキストを返します。
-ms.openlocfilehash: fb012e4bcb3ed2a95782873e8f24241eba7886c4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f69666fa762a96ecedd9ab4c41a4db34ce78f2cc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344787"
 ---
 # <a name="manager-function"></a>MANAGER 関数
 
@@ -26,6 +26,6 @@ MANAGER ()
   
 ### <a name="return-value"></a>戻り値
 
-String
+文字列
   
 

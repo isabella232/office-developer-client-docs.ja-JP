@@ -6,30 +6,30 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: ae7ddd55-7bcc-4bb6-bab7-97806122f166
-description: '[テーマのプロパティ] 行の [ConnectorsSchemeIndex] セルが、新しいテーマの適用または新しいコネクタ スキーマの選択によって変更されないようにします。ユーザーがシェイプシートのこの値を手動で変更することは防げません。'
-ms.openlocfilehash: c74bcf554f0f14de47480397a96680469826d2c2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '[テーマのプロパティ] 行の [ConnectorsSchemeIndex] セルが、新しいテーマの適用または新しいコネクタ スキーマの選択によって変更されないようにします。 ユーザーがシェイプシートのこの値を手動で変更することは防げません。'
+ms.openlocfilehash: 8097e50646fd59f4ac0212cbe9ca2ecfaadab7a2
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348238"
 ---
 # <a name="lockthemeconnectors-cell-protection-section"></a>[LockThemeConnectors] セル ([保護] セクション)
 
-[**テーマのプロパティ**] 行の [**ConnectorsSchemeIndex**] セルが、新しいテーマの適用または新しいコネクタ スキーマの選択によって変更されないようにします。ユーザーがシェイプシートのこの値を手動で変更することは防げません。 
+[**テーマのプロパティ**] 行の [**ConnectorsSchemeIndex**] セルが、新しいテーマの適用または新しいコネクタ スキーマの選択によって変更されないようにします。 ユーザーがシェイプシートのこの値を手動で変更することは防げません。 
   
 |**値**|**説明**|
 |:-----|:-----|
 |TRUE  <br/> |シェイプシートを直接変更しない限り、[**ConnectorsSchemeIndex**] セルの現在の値は変更できません。  <br/> |
 |FALSE  <br/> |[**ConnectorsSchemeIndex**] セルの現在の値は、UI を使用して変更できます。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 別の数式から、**Cell** エレメントの **N** 属性の値によって、または **CellsU** プロパティを使用したプログラムから、名前によって [**LockThemeConnectors**] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | LockThemeConnectors  <br/> |
+| セル名:  <br/> | [lockthemeconnectors]  <br/> |
    
 プログラムから、インデックスによって [**LockThemeConnectors**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

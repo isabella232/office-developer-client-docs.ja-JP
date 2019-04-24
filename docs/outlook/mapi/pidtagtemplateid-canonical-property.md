@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 1a418c76-ebc7-47f2-ac91-797162e6e099
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 96bcd15606771bd112568ad94133507ab14b2bcd
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25396394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358822"
 ---
 # <a name="pidtagtemplateid-canonical-property"></a>PidTagTemplateid 標準プロパティ
 
@@ -25,7 +25,7 @@ ms.locfileid: "25396394"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))、永続的なエントリ ID の形式で表されますが含まれています。
+永続的なエントリ ID 形式として表される、 **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) を含みます。
   
 |||
 |:-----|:-----|
@@ -34,41 +34,41 @@ ms.locfileid: "25396394"
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |MAPI �A�h���X��  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-この値は、ネーム サービス プロバイダー インターフェイス (NSPI) サーバー上のすべてのアドレス帳オブジェクトのために存在する必要があります。、 **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) の値に一致する必要があります。、識別名 (DN) およびその識別名が DN の形式に従う必要があります。仕様のオブジェクトの種類を特定します。 
+この値は、ネームサービスプロバイダインターフェイス (NSPI) サーバー上のすべてのアドレス帳オブジェクトに存在する必要があり、その識別名 (dn) は**PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) の値と一致する必要があります。 dn は、dn 形式に従う必要があります。オブジェクトの種類に固有の仕様。 
   
-このプロパティは、オフライン アドレス帳内のオブジェクトに存在しません。
+このプロパティは、オフラインアドレス帳のオブジェクトには存在しません。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
-> プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。
+> ユーザー、連絡先、グループ、およびリソースのリストのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

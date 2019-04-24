@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: e568917e-6085-4094-8728-89ba90a78c40
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: bf100ed916080a91366062f45b9e3349516bdb98
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 9a77d335f3c8980de29dab6e14079c83bd711b43
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349274"
 ---
 # <a name="imessagegetattachmenttable"></a>IMessage::GetAttachmentTable
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージの添付ファイル テーブルを返します。
+メッセージの添付ファイルテーブルを返します。
   
 ```cpp
 HRESULT GetAttachmentTable(
@@ -34,51 +34,51 @@ HRESULT GetAttachmentTable(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]テーブルの作成に関連するフラグのビットマスクです。 次のフラグを設定することができます。 
+> 順番テーブルの作成に関連するフラグのビットマスク。 次のフラグを設定できます。 
     
 MAPI_UNICODE 
   
-> Unicode 形式では、文字列型の列です。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列型の列です。
+> 文字列列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列列は ANSI 形式になります。
     
 MAPI_DEFERRED_ERRORS 
   
-> 正常に戻す、可能性のあるテーブルが呼び出し側のクライアントに完全に使用する前に**GetAttachmentTable**を使用できます。 テーブルが使用できない場合は、それ以降の呼び出しを行うとエラーが発生することができます。 
+> 呼び出し元クライアントがテーブルを完全に使用できるようになる前に、 **getattachmenttable**を正常に返すことができるようにします。 テーブルを使用できない場合は、その後の呼び出しを行うとエラーが発生する可能性があります。 
     
- _lppTable_
+ _lpptable_
   
-> [out]添付ファイル テーブルへのポインターへのポインター。
+> 読み上げ添付ファイルテーブルへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 添付ファイル テーブルが正常に取得しました。
+> 添付ファイルテーブルが正常に取得されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMessage::GetAttachmentTable**メソッドは、メッセージ内のすべての添付ファイルに関する情報が含まれています、メッセージの添付ファイル テーブルにポインターを返します。 クライアントは、添付ファイル テーブルを介してのみ添付ファイルへのアクセスを取得できます。 添付ファイルの数を取得することによって**PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) プロパティは、クライアントが使用できる**IMessage**の方法のいくつかの添付ファイルを操作します。 
+**IMessage:: getattachmenttable**メソッドは、メッセージの添付ファイルテーブルへのポインターを返します。このオブジェクトには、メッセージ内のすべての添付ファイルに関する情報が含まれています。 クライアントは、添付ファイルテーブルを介してのみ添付ファイルにアクセスできます。 添付ファイルの番号を取得することにより、クライアントはいくつかの**IMessage**メソッドを使用して添付ファイルを操作することができます**PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) プロパティ。 
   
-添付ファイルごとに 1 つの行があります。 添付ファイル テーブル内の列の一覧は、[添付ファイル テーブル](attachment-tables.md)を参照してください。
+添付ファイルごとに1つの行があります。 添付ファイルテーブルの列の完全な一覧については、「 [attachment Tables](attachment-tables.md)」を参照してください。
   
-添付ファイル通常はテーブルに表示されない、添付ファイル[IMAPIProp::SaveChanges](imapiprop-savechanges.md)への呼び出しで、添付ファイルとメッセージの両方が保存されるまでです。 添付ファイル テーブルでは、動的です。 クライアントは新しい添付ファイルを作成、既存の添付ファイルを削除、または 1 つまたは複数のプロパティを変更したら、 **SaveChanges**の呼び出し、メッセージの添付ファイルを場合添付ファイル テーブルが新しい情報を反映するように更新されます。 
+添付ファイルは、通常、添付ファイルとメッセージが[imapiprop:: SaveChanges](imapiprop-savechanges.md)の呼び出しと共に保存されている限り、添付ファイルテーブルに表示されません。 添付ファイルテーブルは動的です。 クライアントが新しい添付ファイルを作成した場合、既存の添付ファイルを削除した場合、または1つまたは複数のプロパティを変更した場合は、メッセージの添付ファイルに対して**SaveChanges**呼び出しを行った後に、添付ファイルテーブルが更新され、新しい情報が反映されます。 
   
-いくつかの添付ファイル テーブルのサポートまで、さまざまな制限です。そうでないです。 制限のサポートは、メッセージ ストア プロバイダーの実装に依存します。 
+一部の添付ファイルテーブルでは、さまざまな制限がサポートしています。それ以外の場合は含まれません。 制限のサポートは、メッセージストアプロバイダーの実装によって異なります。 
   
-最初に開くと、添付ファイル テーブルは必ずしも並べ替えられていない特定の順序で。 
+最初に開かれたときには、添付ファイルテーブルが特定の順序で並べ替えられるとは限りません。 
   
-_UlFlags_パラメーターに MAPI_UNICODE フラグを設定すると、添付ファイル テーブルに次の呼び出しが影響します。 
+_ulflags_パラメーターの MAPI_UNICODE フラグを設定すると、添付ファイルテーブルへの次の呼び出しに影響します。 
   
-- 列を取得する[IMAPITable::QueryColumns](imapitable-querycolumns.md)を設定します。 
+- [IMAPITable:: querycolumns](imapitable-querycolumns.md)は、列セットを取得します。 
     
-- [IMAPITable::QueryRows](imapitable-queryrows.md)の行を取得します。 
+- [IMAPITable:: QueryRows](imapitable-queryrows.md)が行を取得します。 
     
-- 並べ替え順序を取得するために[IMAPITable::QuerySortOrder](imapitable-querysortorder.md)をします。 
+- [IMAPITable:: querysortorder](imapitable-querysortorder.md)は、並べ替えの順序を取得します。 
     
-これらの呼び出しから返される文字列の列の情報は、Unicode 形式である Unicode フラグの要求を設定します。 ただし、Unicode をサポートしていないすべてのメッセージ ストア プロバイダーであるためこのフラグを設定、のみ要求です。
+unicode フラグを設定すると、これらの呼び出しから返される文字列列の情報は unicode 形式になります。 ただし、すべてのメッセージストアプロバイダーが Unicode をサポートしているわけではないため、このフラグの設定は要求だけになります。
   
 ## <a name="see-also"></a>関連項目
 

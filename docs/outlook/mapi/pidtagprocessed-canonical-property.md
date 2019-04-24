@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 44884f60-7e36-45b2-9712-4f9821a0dc1f
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5d84e9cb693cbe732295ee1891b4219450eb09ae
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351437"
 ---
 # <a name="pidtagprocessed-canonical-property"></a>PidTagProcessed 標準プロパティ
 
@@ -30,47 +30,47 @@ ms.locfileid: "25385026"
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_PROCESSED  <br/> |
-|識別子:  <br/> |0x7D01  <br/> |
+|識別子:  <br/> |0x7d01  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|エリア:  <br/> |予定表  <br/> |
+|エリア:  <br/> |カレンダー  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティは、会議出席依頼が 1 回処理を得ることを保証します。 要求の作成者はこのプロパティを FALSE に設定する必要があり、受信機が TRUE に設定、予定表では、要求とします。
+このプロパティにより、会議出席依頼は1回だけ処理されます。 要求の作成者は、このプロパティを FALSE に設定し、要求が予定表にあるときに、受信者がそれを TRUE に設定する必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
+> 予定、会議出席依頼、および応答メッセージのプロパティと操作を指定します。
     
-[[MS OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
-> プロパティは、連絡先と個人用配布リスト オブジェクトの許可の操作を指定します。
+> 連絡先および個人用配布リストオブジェクトに対して許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

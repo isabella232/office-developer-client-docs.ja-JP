@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 85762771-b823-4227-9a7b-75b6ac280b2d
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 975f52e6ea0ca7a469a027565f845f9dc0f9c2cf
-ms.sourcegitcommit: 43cff5789e0a0a8cda11277c1a636c8b32d28cdb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30413974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342568"
 ---
 # <a name="pidtagmessageattachments-canonical-property"></a>PidTagMessageAttachments 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "30413974"
 |データの種類 :   <br/> |PT_OBJECT  <br/> |
 |エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 このプロパティは、 [imapiprop:: CopyTo](imapiprop-copyto.md)操作で除外することも、 [imapiprop:: copyprops](imapiprop-copyprops.md)操作に含めることもできます。 PT_OBJECT 型のプロパティとして、 [imapiprop:: GetProps](imapiprop-getprops.md)メソッドによって正常に取得することはできません。 このコンテンツは、 [imapiprop:: openproperty](imapiprop-openproperty.md)メソッドによってアクセスされ、 **IID_IMAPITable**インターフェイスの識別子が要求されます。 サービスプロバイダーは、設定されている場合は[imapiprop:: getproplist](imapiprop-getproplist.md)メソッドに報告する必要がありますが、設定されていない場合はレポートすることができます。 
   

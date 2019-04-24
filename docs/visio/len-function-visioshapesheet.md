@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: e7a62a86-36bf-31d3-a33b-2444f72d60fe
 description: 文字列の文字数を返します。
-ms.openlocfilehash: 7cc3ffe46c3e47961a687557fc5b4c9aa3c94828
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5d0dd56014e1e9965359814fa4de35efd5f385ac
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359373"
 ---
 # <a name="len-function-visioshapesheet"></a>LEN 関数 (VisioShapeSheet)
 
@@ -22,13 +22,13 @@ ms.locfileid: "19805689"
   
 ## <a name="syntax"></a>構文
 
-LEN (* **テキスト** *) 
+LEN (* * *text* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _text_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |長さを計測する文字列を指定します。  <br/> |
+| _text_ <br/> |必須  <br/> |**String** <br/> |長さを計測する文字列を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

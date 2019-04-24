@@ -8,24 +8,24 @@ f1_keywords:
 - Vis_DSS.chm51105
 localization_priority: Normal
 ms.assetid: 0ab4044e-2d77-1fbe-ef20-5d029bc064ba
-description: 線の最初の頂点に対して、矢印を付けるか、または別の書式の端点を適用するかを指定します。0 ～ 45 の数値を入力するか、またはユーザーが設定した線の端点名を使用して USE 関数を入力します。[線] ダイアログ ボックスを使用することもできます。
-ms.openlocfilehash: c6d5a66d76cfea61b1c9923c5b904dadec5495f0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 線の最初の頂点に、矢印またはその他の線の端点の書式があるかどうかを示します。 0 ~ 45 の数値、またはユーザー設定の線の端点の名前を使用する関数を入力するか、[線] ダイアログボックスを使用します。
+ms.openlocfilehash: cf5a512dabd0e6296b83fa7bfd2a2a6134143d50
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346236"
 ---
-# <a name="beginarrow-cell-line-format-section"></a>[BeginArrow] セル ([線の書式設定] セクション)
+# <a name="beginarrow-cell-line-format-section"></a>[BeginArrow] セル ([Line Format] セクション)
 
 線の最初の頂点に対して、矢印を付けるか、または別の書式の端点を適用するかを指定します。0 ～ 45 の数値を入力するか、またはユーザーが設定した線の端点名を使用して USE 関数を入力します。**[線]** ダイアログ ボックスを使用することもできます。 
   
 |**値**|**説明**|
 |:-----|:-----|
-| 0  <br/> | 矢印を付けません。  <br/> |
-| 1-45  <br/> | さまざまな矢印のスタイル。入力した値は、[**線**] ダイアログ ボックスでインデックスが付けられたエントリに対応します。  <br/> |
+| .0  <br/> | 矢印を付けません。  <br/> |
+| 1 ～ 45  <br/> | さまざまな矢印のスタイル。入力した値は、[**線**] ダイアログ ボックスでインデックスが付けられたエントリに対応します。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 矢印のサイズは [BeginArrowSize] セルで設定します。
   
@@ -33,7 +33,7 @@ ms.locfileid: "19804795"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | BeginArrow  <br/> |
+| セル名:  <br/> | beginarrow]  <br/> |
    
 プログラムから、インデックスによって [BeginArrow] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

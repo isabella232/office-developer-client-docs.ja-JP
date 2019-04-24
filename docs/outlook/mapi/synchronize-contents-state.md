@@ -1,47 +1,47 @@
 ---
-title: コンテンツ同期状態
+title: コンテンツの状態の同期
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 52216bc3-8cbd-3856-ea46-78f7d0dd66ff
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: a2bdbeb39cce1e62569f364875c3828cdd530c63
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3ebe1f5f48f9becdf01ea184c2b76fa2c8fa21e8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349568"
 ---
-# <a name="synchronize-contents-state"></a>コンテンツ同期状態
+# <a name="synchronize-contents-state"></a>コンテンツの状態の同期
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
- このトピックでは、同期内容マシンの状態、レプリケーション状態中の動作について説明します。 
+ このトピックでは、レプリケーション状態マシンのコンテンツ同期状態中の処理について説明します。 
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|状態識別子。  <br/> |**LR_SYNC_CONTENTS** <br/> |
-|関連するデータ構造体。  <br/> |**[SYNCCONT](synccont.md)** <br/> |
-|この状態。  <br/> |[状態を同期します。](synchronize-state.md) <br/> |
-|この状態。  <br/> |[テーブルの状態をダウンロード](download-table-state.md)[テーブルの状態をアップロード](upload-table-state.md)、または状態の同期  <br/> |
+|状態識別子:  <br/> |**LR_SYNC_CONTENTS** <br/> |
+|関連データ構造:  <br/> |**[SYNCCONT](synccont.md)** <br/> |
+|この状態から:  <br/> |[同期状態](synchronize-state.md) <br/> |
+|この状態:  <br/> |[テーブルの状態のダウンロード](download-table-state.md)、[テーブルの状態のアップロード](upload-table-state.md)、または同期の状態  <br/> |
    
 > [!NOTE]
-> レプリケーションの状態マシンは、確定的なステート マシンです。 クライアントを別の 1 つの状態から出発するは、後者から前者に最終的に返す必要があります。 
+> レプリケーション状態マシンは、確定状態のマシンです。 ある状態から別の状態に出発するクライアントは、最終的に後者から元の状態に戻る必要があります。 
   
 ## <a name="description"></a>説明
 
-この状態が 2 つのレプリケーション ・ プロセスのいずれかを開始する: ローカル ストアでは、または完全に同期フォルダーを指定の内容をアップロードします。 指定のフォルダーの完全な同期で、内容が先にアップロードし、ダウンロードされます。 状態の同期によっては、上記の「対応する**[同期](sync.md)** 構造体に設定された*ulFlags* Outlook が [出力] コンテンツに関する情報を提供する**SYNCCONT**構造体のメンバー初期化します。 
+この状態は、次の2つのレプリケーションプロセスのうちの1つを開始します。ローカルストアの指定したフォルダーの内容をアップロードするか、完全な同期を行います。 完全同期では、指定された各フォルダーについて、コンテンツが最初にアップロードされてからダウンロードされます。 前の同期状態で対応する**[同期](sync.md)** 構造で設定されている*ulflags*に応じて、Outlook はコンテンツに関する情報を提供するために**synccont**構造で [out] メンバーを初期化します。 
   
-同じの**SYNCCONT**構造体を使って、クライアントをアップロードまたはダウンロードするコンテンツを持つフォルダーの数を取得します。 クライアントは、フォルダーをアップロードするアップロードの表の状態にローカル ストアを移動またはフォルダーをダウンロードするダウンロードのテーブルの状態をローカル ストアに移動して、これらのフォルダーをループします。 
+同じ synccont **** 構造を使用して、クライアントはコンテンツをアップロードまたはダウンロードするフォルダーの数を取得します。 クライアントは、ローカルストアをアップロードテーブルの状態に移動してフォルダーをアップロードするか、ローカルストアをダウンロードテーブルの状態に移動してフォルダーをダウンロードすることで、これらの各フォルダーをループ処理します。 
   
-さらに、クライアントでは、レプリケーションを必要とするフォルダーのエントリ Id を取得します。
+さらに、クライアントはレプリケーションを必要とするフォルダーのエントリ id を取得します。
   
-この状態が終了すると、Outlook は、その内部の情報をクリーンアップします。 ローカル ストアは、同期の状態に戻ります。
+この状態が終了すると、Outlook は内部情報をクリーンアップします。 ローカルストアが同期状態に戻ります。
   
 ## <a name="see-also"></a>関連項目
 
@@ -51,7 +51,7 @@ ms.locfileid: "22577248"
   
 [MAPI �萔](mapi-constants.md)
   
-[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
+[レプリケーション状態のマシンについて](about-the-replication-state-machine.md)
   
-[同期状態](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

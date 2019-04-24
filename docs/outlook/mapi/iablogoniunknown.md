@@ -12,52 +12,52 @@ api_type:
 - COM
 ms.assetid: fe340182-f41e-42e7-b8e8-cc005b1e9a5f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4421fcde6ccd2f2ac6245927d9d5d63ddc5200af
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fc8615fcd984623ae9c17c45fb7b51a4498a723b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348833"
 ---
 # <a name="iablogon--iunknown"></a>IABLogon : IUnknown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-アドレス帳プロバイダー内のリソースをアクセスします。
+アドレス帳プロバイダーのリソースにアクセスします。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapispi.h  <br/> |
-|によって公開されます。  <br/> |アドレス帳ログオン オブジェクト  <br/> |
-|によって実装されます。  <br/> |アドレス帳プロバイダー  <br/> |
-|によって呼び出されます。  <br/> |MAPI  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IABLogon  <br/> |
-|ポインターの型。  <br/> |LPABLOGON  <br/> |
+|ヘッダー ファイル:  <br/> |Mapispi  <br/> |
+|公開者:  <br/> |アドレス帳のログオンオブジェクト  <br/> |
+|実装元:  <br/> |アドレス帳プロバイダー  <br/> |
+|呼び出し元:  <br/> |MAPI  <br/> |
+|インターフェイス識別子:  <br/> |IID_IABLogon  <br/> |
+|ポインターの種類:  <br/> |lpablogon  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[発生しました](iablogon-getlasterror.md) <br/> |以前のアドレス帳プロバイダーのエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
-|[Logoff](iablogon-logoff.md) <br/> |ログオフ処理を開始します。  <br/> |
-|[OpenEntry](iablogon-openentry.md) <br/> |コンテナー、ユーザー、または配布リストにメッセージを開き、さらにアクセスを提供するインターフェイスの実装にポインターを返します。  <br/> |
-|[CompareEntryIDs](iablogon-compareentryids.md) <br/> |同じオブジェクトを参照しているかどうかを決定する 2 つのエントリ id を比較します。  <br/> |
-|[アドバイス](iablogon-advise.md) <br/> |コンテナー、ユーザー、または配布リストをメッセージに影響を与える特定のイベントの通知を受け取る呼び出し元を登録します。  <br/> |
-|[アドバイズ中止します。](iablogon-unadvise.md) <br/> |**アドバイズ**メソッドへの呼び出しで以前設定された通知をキャンセルします。  <br/> |
-|[OpenStatusEntry](iablogon-openstatusentry.md) <br/> |プロバイダーの状態のオブジェクトを開きます。  <br/> |
-|[OpenTemplateID](iablogon-opentemplateid.md) <br/> |ホストのアドレス帳プロバイダーに存在するデータが含まれている受信者のエントリが表示されます。  <br/> |
-|[GetOneOffTable](iablogon-getoneofftable.md) <br/> |送信メッセージの受信者の一覧に追加する受信者を作成するための 1 回限りのテンプレートのテーブルを返します。  <br/> |
-|[PrepareRecips](iablogon-preparerecips.md) <br/> |メッセージング システムによって後で使用できる受信者のリストを準備します。  <br/> |
+|[GetLastError](iablogon-getlasterror.md) <br/> |以前のアドレス帳プロバイダーエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
+|[Logoff](iablogon-logoff.md) <br/> |ログオフプロセスを開始します。  <br/> |
+|[OpenEntry](iablogon-openentry.md) <br/> |コンテナー、メッセージングユーザー、または配布リストを開き、インターフェイス実装へのポインターを返して、さらにアクセスできるようにします。  <br/> |
+|[CompareEntryIDs](iablogon-compareentryids.md) <br/> |2つのエントリ識別子を比較して、同じオブジェクトを参照しているかどうかを判断します。  <br/> |
+|[助言](iablogon-advise.md) <br/> |発信者が、コンテナー、メッセージングユーザー、または配布リストに影響を与える指定されたイベントの通知を受信するように登録します。  <br/> |
+|[アドバイズ](iablogon-unadvise.md) <br/> |**アドバイズ**メソッドへの呼び出しで以前に設定された通知をキャンセルします。  <br/> |
+|[openstatusentry](iablogon-openstatusentry.md) <br/> |プロバイダーの状態オブジェクトを開きます。  <br/> |
+|[OpenTemplateID](iablogon-opentemplateid.md) <br/> |ホストアドレス帳プロバイダーに存在するデータを持つ受信者エントリを開きます。  <br/> |
+|[getoneofftable](iablogon-getoneofftable.md) <br/> |送信メッセージの受信者リストに追加する受信者を作成するための、1回限りのテンプレートのテーブルを返します。  <br/> |
+|[PrepareRecips](iablogon-preparerecips.md) <br/> |メッセージングシステムで後で使用するために、受信者リストを準備します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IABLogon**インターフェイスのメソッドの詳細については、[実装するサービス プロバイダーへのログオン](implementing-service-provider-logon.md)を参照してください。
+**IABLogon**インターフェイスのメソッドに関する一般的な情報については、「[サービスプロバイダーログオンの実装](implementing-service-provider-logon.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
 

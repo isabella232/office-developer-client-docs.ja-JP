@@ -8,11 +8,11 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: a9230a63af66e8143a7da488ce41dadafe359429
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356428"
 ---
 # <a name="display-a-shared-calendar-of-a-recipient"></a>受信者の共有の予定表を表示する
 
@@ -30,7 +30,7 @@ ms.locfileid: "28709216"
 
 > [!NOTE]
 > **Namespace** オブジェクトの **CreateRecipient** メソッド、または **Recipients** コレクションの [Add(String)](https://msdn.microsoft.com/library/bb612668(v=office.15)) メソッドを使用して **Recipient** オブジェクトを作成する場合は、受信者の名前を提供する必要があります。 **Recipient** は、この名前に対して解決されます。 受信者の名前は、次のいずれかの形式をにすることができます。
-> - 表示名
+> - 名前
 > - エイリアス
 > - 簡易メール転送プロトコル (SMTP) アドレス
 

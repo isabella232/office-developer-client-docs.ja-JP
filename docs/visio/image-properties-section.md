@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 2a032f5f-1094-f536-cbd8-7e791b7fa55d
 description: ビットマップ (ピクセルで構成されたイメージ) のガンマ、明るさ、コントラスト、ぼかし、鮮明さ、およびノイズ除去の値が含まれます。ビットマップのオブジェクトの [シェイプシート] ウィンドウにのみ表示されます。
-ms.openlocfilehash: e35b9bacb3154d051249aa38113b78a6bb4e2a90
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 32d16e7d7fb308c211c9493720d8a972202d1a71
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344745"
 ---
-# <a name="image-properties-section"></a>[画像のプロパティ] セクション
+# <a name="image-properties-section"></a>[Image Properties] セクション
 
 ビットマップ (ピクセルで構成されたイメージ) のガンマ、明るさ、コントラスト、ぼかし、鮮明さ、およびノイズ除去の値が含まれます。ビットマップのオブジェクトの [シェイプシート] ウィンドウにのみ表示されます。
   

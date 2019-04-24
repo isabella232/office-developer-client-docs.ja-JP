@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: c32493fa-aa42-485b-9ea4-f93b835906df
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 8b15f12c9a7ac2041c895b935098f9681e4b3a3c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9e7d7ba91791258eca93a2b8bedf95cf121062c5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348763"
 ---
 # <a name="imsgstorefinishedmsg"></a>IMsgStore::FinishedMsg
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ ストア プロバイダーは、送信されたメッセージの処理を実行できるようにします。 このメソッドは、MAPI スプーラーによってのみ呼び出されます。
+メッセージストアプロバイダーが、送信されたメッセージに対して処理を実行できるようにします。 このメソッドは、MAPI スプーラーによってのみ呼び出されます。
   
 ```cpp
 HRESULT FinishedMsg(
@@ -35,7 +35,7 @@ HRESULT FinishedMsg(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
@@ -43,40 +43,40 @@ HRESULT FinishedMsg(
     
  _cbEntryID_
   
-> [in]_LpEntryID_パラメーターで指定されたエントリの識別子のバイト数です。 
+> 順番_lな tryid_パラメーターで指定されたエントリ識別子のバイト数。 
     
- _lpEntryID_
+ _lて tryid_
   
-> [in]処理されるメッセージのエントリの識別子へのポインター。
+> 順番処理するメッセージのエントリ id へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 送信済みメッセージの処理が正常に完了しました。
+> 送信済みメッセージの処理に成功しました。
     
 MAPI_E_NO_SUPPORT 
   
-> メッセージ ストア プロバイダーは、送信済みメッセージの処理をサポートしていません。 呼び出し元は、MAPI スプーラーではない場合、エラー値が返されます。
+> メッセージストアプロバイダーは送信メッセージ処理をサポートしていません。 このエラー値は、発信者が MAPI スプーラーではない場合に返されます。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMsgStore::FinishedMsg**メソッドでは、送信されたメッセージの処理を実行します。 この処理には、別のフォルダー、または両方のアクションに移動すること、メッセージの削除が含まれます。 処理の種類は、 **PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) と**PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) のプロパティを設定するかどうかによって異なります。 
+**IMsgStore:: FinishedMsg**メソッドは、送信されたメッセージに対して処理を実行します。 この処理には、メッセージの削除、別のフォルダーへの移動、またはその両方の操作が含まれます。 処理の種類は、 **PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) および**PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) の各プロパティが設定されているかどうかによって異なります。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-実装では、 **FinishedMsg**の_lpEntryID_で識別されるメッセージのロックを解除し、適切な処理を実行します。 移行先のメッセージは常にロックされます。MAPI スプーラーは、決して**FinishedMsg**にロックされていないメッセージのエントリ id を渡します。
+**FinishedMsg**の実装で、 _l tryid_で識別されたメッセージをロック解除し、適切な処理を実行します。 ターゲットメッセージは常にロックされます。MAPI スプーラーは、ロックされていないメッセージのエントリ識別子を**FinishedMsg**に渡しません。
   
-**PR_DELETE_AFTER_SUBMIT**または**PR_SENTMAIL_ENTRYID**が設定されて、両方を設定するでもどちらか一方を設定します。 次の表には、設定に基づいて取るべきアクションについて説明します。 
+**PR_DELETE_AFTER_SUBMIT**または**PR_SENTMAIL_ENTRYID**のどちらも設定されていないか、どちらかが設定されているか、どちらか一方が設定されている可能性があります。 次の表では、設定に基づいて実行する必要がある処理について説明します。 
   
 |||
 |:-----|:-----|
-|場合は 2 つのプロパティを設定します。  <br/> |(通常、[送信トレイ]) の送信、元のフォルダーにメッセージを残します。  <br/> |
-|両方のプロパティが設定されます。 場合、  <br/> |必要な場合にメッセージを指定されたフォルダーに移動し、そのパーティションを削除します。  <br/> |
-|場合は PR_SENTMAIL_ENTRYID が設定されます。  <br/> |指定されたフォルダーにメッセージを移動します。  <br/> |
-|場合は PR_DELETE_AFTER_SUBMIT が設定されます。  <br/> |メッセージを削除します。  <br/> |
+|どちらのプロパティも設定されていない場合:  <br/> |メッセージを送信元のフォルダー (通常は送信トレイ) に残します。  <br/> |
+|両方のプロパティが設定されている場合:  <br/> |指定したフォルダーにメッセージを移動し、必要に応じて削除します。  <br/> |
+|PR_SENTMAIL_ENTRYID が設定されている場合:  <br/> |メッセージを指示されたフォルダーに移動します。  <br/> |
+|PR_DELETE_AFTER_SUBMIT が設定されている場合:  <br/> |メッセージを削除します。  <br/> |
    
-適切な処理を実行した後は、 [IMAPISupport::DoSentMail](imapisupport-dosentmail.md)メソッドを呼び出します。 
+適切なアクションを実行した後、 [imapisupport::D o送信メール](imapisupport-dosentmail.md)メソッドを呼び出します。 
   
 ## <a name="see-also"></a>関連項目
 

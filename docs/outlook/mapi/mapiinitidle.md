@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: b6de7c6a-f2e7-4248-adea-d354924a8bbf
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fd9a91b089bb06e6dfe34a1a144245d404adb270
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b07c40882c0b9974c71eeb03123e7025b948a75e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346656"
 ---
 # <a name="mapiinitidle"></a>MAPIInitIdle
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-呼び出し元のアプリケーションの MAPI アイドル エンジンを初期化します。 
+呼び出し元アプリケーションの MAPI アイドルエンジンを初期化します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 LONG MAPIInitIdle(
@@ -41,31 +41,31 @@ LONG MAPIInitIdle(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpvReserved_
+ _lpvreserved_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
 ## <a name="return-value"></a>戻り値
 
-**MAPIInitIdle**関数は、初期化、および 1 それ以外の場合に 0 を返します。 **MAPIInitIdle**は、複数回呼び出されると、その他のすべての呼び出しは成功しますが、参照カウントをインクリメントする以外は無視されます。 
+**MAPIInitIdle**関数は、初期化が成功した場合は0を返し、それ以外の場合は1を返します。 **MAPIInitIdle**が複数回呼び出された場合、追加の呼び出しはすべて成功しますが、参照カウントを増分する場合を除いて無視されます。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-クライアント アプリケーションまたはサービス プロバイダーは、他のアイドル状態のエンジンの関数を呼び出す前に**MAPIInitIdle**を呼び出す必要があります。 
+クライアントアプリケーションまたはサービスプロバイダーは、他の idle engine 関数を呼び出す前に、 **MAPIInitIdle**を呼び出す必要があります。 
   
-**MAPIInitIdle**へのすべての呼び出しを[MAPIDeInitIdle](mapideinitidle.md)、それ以降の呼び出しに一致する必要があるまたは呼び出し元のアプリケーションを実行しているアイドル状態のエンジンのままです。 
+**MAPIInitIdle**のすべての呼び出しは、以降の[MAPIDeInitIdle](mapideinitidle.md)の呼び出しで一致する必要があります。または、呼び出し元アプリケーションに対してアイドル状態のエンジンが実行されたままになります。 
   
-次の関数では、MAPI アイドル エンジンと[FNIDLE](fnidle.md)関数のプロトタイプに基づくのアイドル処理ルーチンを処理します。 
+次の関数は、MAPI アイドルエンジンと、 [FNIDLE](fnidle.md)関数プロトタイプに基づいてアイドルルーチンを処理します。 
   
-|**アイドル状態の日常的な関数**|**使用状況**|
+|**Idle ルーチン関数**|**使用法**|
 |:-----|:-----|
-|[ChangeIdleRoutine](changeidleroutine.md) <br/> |登録されているアイドル状態のルーチンの特性を変更します。  <br/> |
-|[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |MAPI システムから登録されているアイドル状態のルーチンを削除します。  <br/> |
-|[EnableIdleRoutine](enableidleroutine.md) <br/> |無効または MAPI システムから削除することがなく、登録されているアイドル状態のルーチンを再度有効にします。  <br/> |
-|[FtgRegisterIdleRoutine](ftgregisteridleroutine.md) <br/> |MAPI システム、またはそれを有効にせずに、アイドル状態のルーチンを追加します。  <br/> |
-|[MAPIDeInitIdle](mapideinitidle.md) <br/> |呼び出し元のアプリケーションの MAPI アイドル エンジンをシャット ダウンします。  <br/> |
-|**MAPIInitIdle** <br/> |呼び出し元のアプリケーションの MAPI アイドル エンジンを初期化します。  <br/> |
+|[ChangeIdleRoutine](changeidleroutine.md) <br/> |登録されているアイドルルーチンの特性を変更します。  <br/> |
+|[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |登録されているアイドルルーチンを MAPI システムから削除します。  <br/> |
+|[EnableIdleRoutine](enableidleroutine.md) <br/> |登録済みのアイドル状態を、MAPI システムから削除せずに無効または再度有効にします。  <br/> |
+|[FtgRegisterIdleRoutine](ftgregisteridleroutine.md) <br/> |アイドルルーチンを MAPI システムに追加するか、有効にします。  <br/> |
+|[MAPIDeInitIdle](mapideinitidle.md) <br/> |呼び出し元アプリケーションの MAPI アイドルエンジンをシャットダウンします。  <br/> |
+|**MAPIInitIdle** <br/> |呼び出し元アプリケーションの MAPI アイドルエンジンを初期化します。  <br/> |
    
-プラットフォーム用のすべてのフォア グラウンド タスクがアイドル状態になると、MAPI アイドル エンジンは実行する準備が最高の優先順位のアイドル ルーチンを呼び出します。 同じ優先順位のアイドル処理ルーチンの間で順序を呼び出すことの保証はありません。 
+プラットフォームのすべてのフォアグラウンドタスクがアイドル状態になると、MAPI アイドルエンジンは、実行の準備ができている最も優先度の高いアイドルルーチンを呼び出します。 同じ優先度のアイドルルーチン間での通話順序は保証されません。 
   
 

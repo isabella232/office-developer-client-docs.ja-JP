@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: ece6c889-9291-40ea-b55a-072acdcb8a52
 description: 図形に影を表示するかどうかを、0 から 2 の整数で決定します。
-ms.openlocfilehash: 72077e60089acd3cd3f8a9349691e1468f6b1f9c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1da52c20acaa19eab79970a751fad2c225e212ae
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349148"
 ---
 # <a name="shapeshdwshow-cell-fill-format-section"></a>[ShapeShdwShow] セル ([塗りつぶしの書式設定] セクション)
 
@@ -20,17 +20,17 @@ ms.locfileid: "19806421"
   
 |**値**|**説明**|
 |:-----|:-----|
-|0  <br/> |影が指定されている場合は、常に影を表示します。サブ図形の影は表示されません。  <br/> |
-|1  <br/> |図形の親が存在しない場合を除き、影を表示しません。共にグループ化されている場合は、サブ図形の影を使用します。  <br/> |
-|2  <br/> |影が指定されている場合は、常に影を表示します。サブ図形の影も表示されます。  <br/> |
+|.0  <br/> |影が指定されている場合は、常に影を表示します。サブ図形の影は表示されません。  <br/> |
+|1-d  <br/> |図形の親が存在しない場合を除き、影を表示しません。共にグループ化されている場合は、サブ図形の影を使用します。  <br/> |
+|pbm-2  <br/> |影が指定されている場合は、常に影を表示します。サブ図形の影も表示されます。  <br/> |
    
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 別の数式から、**Cell** エレメントの **N** 属性の値によって、または **CellsU** プロパティを使用したプログラムから、名前によって [**ShapeShdwShow**] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | ShapeShdwShow  <br/> |
+| セル名:  <br/> | [shapeshdwshow]  <br/> |
    
 プログラムから、インデックスによって [**ShapeShdwShow**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

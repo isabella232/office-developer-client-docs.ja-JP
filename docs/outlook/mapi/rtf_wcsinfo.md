@@ -8,20 +8,20 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0c94501e-0ec7-e836-33a7-adcf5a61b375
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 2dd9f002401f8de52a9ad187b7e5850d47caf8a7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6bec29aa0e88e0224f9cd6049553f2df6379e23d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344647"
 ---
 # <a name="rtfwcsinfo"></a>RTF_WCSINFO
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-この構造体を使用すると、圧縮されたリッチ テキスト形式 (RTF) でメッセージの本文を圧縮解除し、必要に応じて、ネイティブ形式で本文のストリームを返すのための情報を指定できます。
+この構造では、メッセージの本文を圧縮リッチテキスト形式 (RTF) で圧縮解除する情報を指定し、必要に応じて本文ストリームをネイティブ形式で返すことができます。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -35,29 +35,29 @@ typedef struct {
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  _size_
   
-> バイト数**について**の構造体のサイズです。 
+> **RTF_WCSINFO**構造体のサイズ (バイト数)。 
     
  _ulFlags_
   
-> [WrapCompressedRTFStreamEx](wrapcompressedrtfstreamex.md)関数のオプション フラグのビットマスクです。 サポートされているオプションのフラグは次のとおりです。 
+> これは、 [WrapCompressedRTFStreamEx](wrapcompressedrtfstreamex.md)関数のオプションフラグのビットマスクです。 サポートされているオプションフラグは次のとおりです。 
     
 |||
 |:-----|:-----|
-|MAPI_MODIFY  <br/> |これは、クライアントが返されたラップされたストリーム インターフェイスを作成しようとしたかどうかを示します。  <br/> |
-|STORE_UNCOMPRESSED_RTF  <br/> |これは、圧縮解除された RTF を[WrapCompressedRTFStreamEx](wrapcompressedrtfstreamex.md)関数の_lpCompressedRTFStream_ポインターによりポイントされているストリームに書き込まれることになっているかどうかを示します。  <br/> |
-|MAPI_NATIVE_BODY  <br/> |これは、ストリームを返す前に、ネイティブ形式の本文を圧縮解除されたストリームも変換かどうかを示します。 **MAPI_MODIFY**フラグでこのフラグを組み合わせることはできません。  <br/> |
+|MAPI_MODIFY  <br/> |これは、クライアントが、返されるラップされたストリームインターフェイスを書き込むことを意図しているかどうかを示します。  <br/> |
+|STORE_UNCOMPRESSED_RTF  <br/> |これにより、圧縮されていない RTF が、 [WrapCompressedRTFStreamEx](wrapcompressedrtfstreamex.md)関数の_lp sedrtfstream_ポインターによって示されるストリームに書き込まれるかどうかを示します。  <br/> |
+|MAPI_NATIVE_BODY  <br/> |これは、ストリームを返す前に、圧縮解除されたストリームがネイティブな本文にも変換されるかどうかを示します。 このフラグは、 **MAPI_MODIFY**フラグと組み合わせて使用することはできません。  <br/> |
    
- _ulInCodePage_
+ _ulincodepage_
   
-> これは、メッセージのコード ページ値です。 通常、この値は、メッセージの[PidTagInternetCodepage の標準的なプロパティ](pidtaginternetcodepage-canonical-property.md)から取得されます。 _UlFlags_に**MAPI_NATIVE_BODY**フラグが渡された場合、この値はのみ使用されます。 それ以外の場合、この値は無視されます。
+> これは、メッセージのコードページの値です。 通常、この値は、メッセージの[PidTagInternetCodepage 標準プロパティ](pidtaginternetcodepage-canonical-property.md)から取得されます。 この値は、 **MAPI_NATIVE_BODY**フラグが_ulflags_で渡された場合にのみ使用されます。 それ以外の場合、この値は無視されます。
     
- _ulOutCodePage_
+ _uloutcodepage_
   
-> これは、使用する返された圧縮解除ストリームのコード ページの値です。 これは、0 以外の値に設定されている場合、 [WrapCompressedRTFStreamEx](wrapcompressedrtfstreamex.md)関数は、ストリームを指定したコード ページに変換します。 値がゼロに設定すると、MAPI は、使用するコード ページを決定します。 _UlFlags_、 **MAPI_NATIVE_BODY**フラグが渡され、本文が RTF でない場合にのみ、この値が使用されます。 それ以外の場合、この値は無視されます。
+> これは、返される圧縮解除ストリームのコードページの値です。 これが0以外の値に設定されている場合、 [WrapCompressedRTFStreamEx](wrapcompressedrtfstreamex.md)関数はストリームを指定されたコードページに変換します。 この値が0に設定されている場合、MAPI はどのコードページを使用するかを決定します。 この値は、 **MAPI_NATIVE_BODY**フラグが_ulflags_で渡され、本文の形式が RTF ではない場合にのみ使用されます。 それ以外の場合、この値は無視されます。
     
 ## <a name="see-also"></a>関連項目
 

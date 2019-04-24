@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 0a5cb49f-c4f3-4893-8616-80d6332efcfc
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: de5c98272c08c469acf23b0ecae7eac0a2d1bfe6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c14ccac0addbc1288e3507cf549344f75e69cc28
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351080"
 ---
 # <a name="imessagedeleteattach"></a>IMessage::DeleteAttach
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 添付ファイルを削除します。
   
@@ -38,51 +38,51 @@ ULONG ulFlags
 
 ## <a name="parameters"></a>パラメーター
 
- _ulAttachmentNum_
+ _ulattachmentnum_
   
-> [in]削除する添付ファイルのインデックス番号です。 これは、添付ファイルの**PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) のプロパティの値です。
+> 順番削除する添付ファイルのインデックス番号を指定します。 これは、添付ファイルの**PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) プロパティの値です。
     
- _ulUIParam_
+ _uluiparam_
   
-> [in]すべてのダイアログ ボックスの親ウィンドウまたは windows のこのメソッドは、表示を処理します。 _UlFlags_パラメーターに ATTACH_DIALOG フラグが設定されていない限り、 _ulUIParam_パラメーターは無視されます。 
+> 順番このメソッドが表示する任意のダイアログボックスまたはウィンドウの親ウィンドウへのハンドル。 _uluiparam_パラメーターは、 _ulflags_パラメーターで ATTACH_DIALOG フラグが設定されていない場合は無視されます。 
     
- _lpProgress_
+ _lpprogress_
   
-> [in]進行状況インジケーターを表示する進行中のオブジェクトへのポインター。 _LpProgress_に NULL を渡した場合、メッセージ ストア プロバイダーには、MAPI 処理中のオブジェクトの実装を使用して進行状況のインジケーターが表示されます。 _UlFlags_に ATTACH_DIALOG フラグが設定されていない限り、 _lpProgress_パラメーターは無視されます。
+> 順番進行状況インジケーターを表示する progress オブジェクトへのポインター。 _lpprogress_で NULL が渡された場合、メッセージストアプロバイダーは MAPI progress オブジェクトの実装を使用して進行状況インジケーターを表示します。 ATTACH_DIALOG フラグが_ulflags_で設定されていない場合、 _lpprogress_パラメーターは無視されます。
     
  _ulFlags_
   
-> [in]ユーザー インターフェイスの表示を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番ユーザーインターフェイスの表示を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 ATTACH_DIALOG 
   
-> 操作の進行中は、進行状況インジケーターの表示を要求します。
+> 操作が続行されると、進行状況インジケーターの表示を要求します。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > 添付ファイルが正常に削除されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMessage::DeleteAttach**メソッドは、メッセージ内から添付ファイルを削除します。 
+**IMessage::D eleteattach**メソッドは、メッセージ内から添付ファイルを削除します。 
   
-メッセージの[IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドが呼び出されるまで、削除された添付ファイルは完全に削除されません。 
+削除された添付ファイルは、メッセージの[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドが呼び出されるまで完全に削除されません。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**DeleteAttach**を呼び出す前に、添付ファイルとそのストリームのそれぞれ**が**メソッドを呼び出します。 
+**deleteattach**を呼び出す前に、添付ファイルとその各ストリームの**IUnknown:: Release**メソッドを呼び出します。 
   
-添付ファイルを削除できますが、手間がかかりますので、 **DeleteAttach**は進行状況インジケーターを表示するメカニズムを提供します。 ポインターを渡すことによって、進行状況インジケーターの表示を要求することができます、 [IMAPIProgress: IUnknown](imapiprogressiunknown.md)実装、または NULL の場合は、実装する必要はありません。 _UlUIParam_パラメーターと、ATTACH_DIALOG のフラグ、 _ulFlags_パラメーターにウィンドウ ハンドルを指定することもする必要があります。 
+添付ファイルの削除は時間がかかることがあるため、 **deleteattach**には進行状況インジケーターを表示するメカニズムが用意されています。 進行状況インジケーターの表示を要求するには、 [imapiprogress](imapiprogressiunknown.md)へのポインターを渡します: IUnknown 実装または NULL (実装されていない場合)。 _uluiparam_パラメーターでウィンドウハンドルを指定し、 _ulflags_パラメーターに ATTACH_DIALOG フラグも指定する必要があります。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|AttachmentsDlg.cpp  <br/> |CAttachmentsDlg::OnDeleteSelectedItem  <br/> |MFCMAPI では、 **IMessage::DeleteAttach**メソッドを使用して、選択した添付ファイルを削除します。  <br/> |
+|AttachmentsDlg  <br/> |CAttachmentsDlg:: OnDeleteSelectedItem  <br/> |mfcmapi は、 **IMessage::D eleteattach**メソッドを使用して、選択されている添付ファイルを削除します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 6749e7b1-7a66-4aca-92b0-9a23a87fc121
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: ae1ac42e9f293383a10b52d9f9a5bd655cd38ef4
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346404"
 ---
 # <a name="pidlidappointmentproposedendwhole-canonical-property"></a>PidLidAppointmentProposedEndWhole 標準プロパティ
 
@@ -25,35 +25,35 @@ ms.locfileid: "25388365"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**DispidApptEndWhole** ([PidLidAppointmentEndWhole](pidlidappointmentendwhole-canonical-property.md)) は新しい日時の提案値を指定します。
+カウンター提案の**dispidApptEndWhole** ([PidLidAppointmentEndWhole](pidlidappointmentendwhole-canonical-property.md)) プロパティに対して提案された値を指定します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |dispidApptProposedEndWhole  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
-|長い ID (LID):  <br/> |0x00008251  <br/> |
+|プロパティセット:  <br/> |PSETID_Appointment  <br/> |
+|ロング ID (LID):  <br/> |0x00008251  <br/> |
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
-|エリア:  <br/> |会議  <br/> |
+|エリア:  <br/> |Meetings  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-この値は、世界協定時刻 (UTC) で指定する必要があります。
+この値は協定世界時 (UTC) で指定する必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
+> 予定、会議出席依頼、および応答メッセージのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -61,9 +61,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

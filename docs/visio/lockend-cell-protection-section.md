@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: e9742142-4d34-1ba9-480e-d1ecff4fc7cd
 description: 1-D 図形の終点 ([EndX]、[EndY]) を特定の位置にロックします。
-ms.openlocfilehash: d29f07e5b4b77ed2fb8b104769a2fdca55abcc8e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d9fe0372c44fe3b029a4d06056c8d3871c3f91e8
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359599"
 ---
-# <a name="lockend-cell-protection-section"></a>[LockEnd] セル ([保護] セクション)
+# <a name="lockend-cell-protection-section"></a>[LockEnd] セル ([Protection] セクション)
 
 1-D 図形の終点 ([EndX]、[EndY]) を特定の位置にロックします。
   
@@ -25,13 +25,13 @@ ms.locfileid: "19805754"
 | TRUE  <br/> | 終点をロックします。  <br/> |
 | FALSE  <br/> | 終点をロックしません。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LockEnd] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [Lockend]  <br/> |
+| セル名:  <br/> | [lockend]  <br/> |
    
 プログラムから、インデックスによって [LockEnd] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

@@ -8,40 +8,40 @@ api_type:
 - COM
 ms.assetid: 56ab37f9-5aa6-4e9d-9dc8-b3d95aa19f35
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f43e3a7e3376cb437620204a29aed9fb732d3427
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f0b041cecca92c0ced32631c67c72fcafdab2a16
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351234"
 ---
 # <a name="setting-a-table-position-with-a-bookmark"></a>ブックマークによるテーブルの位置設定
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ブックマークは、テーブル内の特定の場所を示すリソースです。 ブックマークの設定は、後で、テーブルの操作のパフォーマンスを大幅に向上する機能の状態に戻します。 MAPI には、標準的な 3 つのブックマークが定義されています。 
+ブックマークは、テーブル内の特定の位置を示すリソースです。 ブックマークを設定すると、後で位置に戻ることができるようになります。この機能を使用すると、テーブル操作のパフォーマンスを大幅に向上させることができます。 MAPI は、3つの標準のブックマークを定義します。 
   
 |||
 |:-----|:-----|
-|BOOKMARK_CURRENT  <br/> |テーブルの現在の行へのポインター。  <br/> |
-|BOOKMARK_BEGINNING  <br/> |テーブルの最初の行へのポインター。  <br/> |
-|BOOKMARK_END  <br/> |テーブルの最後の行をポイントします。  <br/> |
+|BOOKMARK_CURRENT  <br/> |表の現在の行を指します。  <br/> |
+|BOOKMARK_BEGINNING  <br/> |表の最初の行を指します。  <br/> |
+|BOOKMARK_END  <br/> |表の最後の行を指します。  <br/> |
    
-テーブルの実装は、これらの標準的なブックマークをサポートする必要し、も他のユーザーをサポートできます。 ただし、ブックマークは、リソースをリソースが限られたため、ブックマークのユーザーがそれらを解放、できるだけ早く。 
+表の実装者は、これらの標準のブックマークをサポートする必要があります。また、他のユーザーをサポートすることもできます。 ただし、ブックマークはリソースで、リソースは限られているので、ブックマークユーザーはできるだけ早く解放する必要があります。 
   
- **テーブルの現在の位置にブックマークを設定するのには**
+ **現在の表の位置にブックマークを設定するには**
   
-- [IMAPITable::CreateBookmark](imapitable-createbookmark.md)を呼び出します。 場合によってはメモリ不足の原因で MAPI_E_UNABLE_TO_COMPLETE のエラー値を返す**CreateBookmark** 、新しいブックマークを割り当てることがあります。 
+- Call [IMAPITable:: createbookmark](imapitable-createbookmark.md) 場合によっては、新しいブックマークの割り当てに使用できるメモリが不足することがあり、 **createbookmark**が MAPI_E_UNABLE_TO_COMPLETE エラー値を返します。 
     
  **ブックマークを解放するには**
   
-- [IMAPITable::FreeBookmark](imapitable-freebookmark.md)を呼び出します。
+- 関数 Call [IMAPITable:: freebookmark](imapitable-freebookmark.md)。
     
- **ブックマークが設定された位置にカーソルを移動するのには**
+ **ブックマーク位置にカーソルを移動するには**
   
-- [IMAPITable::SeekRow](imapitable-seekrow.md)を呼び出します。 **SeekRow**は、BOOKMARK_CURRENT の位置の新しい値を設定します。 **SeekRow**使用できます、たとえば、現在の位置から 10 個のテーブルの行を配置する、または先頭に最初からやり直す。 クライアントまたはサービス プロバイダー以降では、現在、検索したり、最後のテーブル、または定義済みのブックマークに関連付けられている他の任意の位置。 順方向または逆方向と操作の制限のいずれかで指定された行数に移動できます。 原則として呼び出し元の**SeekRow**; で 50 文字以下の行をシークする必要があります。[IMAPITable::SeekRowApprox](imapitable-seekrowapprox.md)は、多数の行を使用してください。 
+- Call [IMAPITable:: seekrow](imapitable-seekrow.md)。 **seekrow**は BOOKMARK_CURRENT position の新しい値を確立します。 **seekrow**を使用すると、たとえばテーブルを現在の位置から10行分移動したり、先頭からやり直すことができます。 クライアントまたはサービスプロバイダーは、テーブルのカレント、先頭、または末尾、あるいは定義済みのブックマークに関連付けられているその他の位置までシークできます。 前方または後方のどちらかの方向に移動し、操作を指定した行数に制限できます。 原則として、発信者は**seekrow**で50行以内をシークする必要があります。[IMAPITable:: seekrowapprox](imapitable-seekrowapprox.md)は、より多くの行で使用する必要があります。 
     
 ## <a name="see-also"></a>関連項目
 

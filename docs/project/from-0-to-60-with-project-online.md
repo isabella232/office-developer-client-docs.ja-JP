@@ -5,149 +5,149 @@ ms.date: 11/08/2016
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5b48958e-6dab-4121-871f-fb15f58f1b24
-description: アプリケーション開発者は、スタンドアロン アプリケーションやプロジェクトのアドインを使用する (SharePoint がホストされている) プロジェクトのオンライン サイトをカスタマイズできます。アプリケーションの豊富なは、範囲の PMO サポート関数では、次のいずれかのようにプロジェクトの関係者のニーズに対応可能です。
+description: アプリケーション開発者は、スタンドアロンアプリケーションまたはプロジェクトアドインを使用して、project Online サイト (SharePoint ホスト型) をカスタマイズできます。プロジェクトに関与する必要のあるニーズに対処することから、次のような PMO サポート機能まで、さまざまなアプリケーションが存在する可能性があります。
 ms.openlocfilehash: 00f79b05b886bfd2c54c118245e22f10bb5451bf
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25392586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344409"
 ---
 # <a name="from-0-to-60-with-project-online"></a>Project Online の基本
 
-アプリケーション開発者は、スタンドアロン アプリケーションやプロジェクトのアドインを使用する (SharePoint がホストされている) プロジェクトのオンライン サイトをカスタマイズできます。アプリケーションの豊富なは、範囲の PMO サポート関数では、次のいずれかのようにプロジェクトの関係者のニーズに対応可能です。
+アプリケーション開発者は、スタンドアロンアプリケーションまたはプロジェクトアドインを使用して、project Online サイト (SharePoint ホスト型) をカスタマイズできます。プロジェクトに関与する必要のあるニーズに対処することから、次のような PMO サポート機能まで、さまざまなアプリケーションが存在する可能性があります。
   
-- 作業者の効率化されたタイムカード データの入力
-- 監督者の効率的なタイムカードの承認
-- プロジェクトに必要な許可 (調達などの状態の監視
-- アクティブなプロジェクトのステータスと稼働状態のチェック
-- 問題に関するレポート
-- 管理ステータス レポートを変更します。
+- 作業者の合理化されたタイムカードデータ入力
+- 監修者への効率的なタイムカードの承認
+- プロジェクトに必要な許可 (調達および状態) を監視する
+- アクティブなプロジェクトの状態/正常性チェック
+- 問題レポート
+- 変更管理の状態レポート
     
-オンライン プロジェクトにはには、次のシナリオに対応するための API のサポートが含まれています。
+Project Online には、次のシナリオに対応するための API サポートが含まれています。
   
-- プロジェクト (SharePoint) ホストを追加で。
+- プロジェクト (SharePoint) ホスト型アドインの場合:
     
-  - SharePoint Online でホストされているコード (JavaScript、HTML、CSS など)
-  - ブラウザーにダウンロードして、SharePoint Online に対して実行される資産です。  
-  - JavaScript では、ビジネス ロジック   
-  - /保存と SharePoint のプロジェクトをオンラインでは次のように、(ただしに制限されていません) をデータにアクセスします。  
-  - ユーザー設定フィールド  
+  - SharePoint Online でホストされているコード (JavaScript、HTML、CSS)
+  - ブラウザーにダウンロードされ、SharePoint Online に対して実行されるアセット。  
+  - JavaScript のビジネスロジック   
+  - Project Online または SharePoint に格納されているデータにアクセスする (ただし、に制限されることはありません)。  
+  - Custom fields  
   - リスト
     
-- プロジェクト (SharePoint) プロバイダーがホストを追加で。
+- プロジェクト (SharePoint) プロバイダー向けのホスト型アドインの場合:
     
-  - プロジェクトのオンライン サイトに外部のサイト上に存在するコード 
-  - 外部のサイトをすることができます (ただしに制限されていません)。  
+  - Project Online サイト外のサイトに存在するコード 
+  - 外部サイト。以下のことができます (ただし、制限はありません)。  
   - 別の SharePoint サイト  
-  - 任意のプラットフォーム上に構築された web アプリケーションとサービス  
-  - 外部のサイトには、ビジネス ロジックが含まれています。  
-  - プロジェクト オンラインへのアクセス トークンを持つ外部のサイトにブラウザーがリダイレクトからプロジェクト オンライン  
-  - 外部のサイトは、SharePoint とオンライン プロジェクトへの呼び出しを行うことが
+  - 任意のプラットフォーム上に構築された Web App/サービス  
+  - 外部サイトにビジネスロジックが含まれている  
+  - ブラウザーが project online から外部サイトにリダイレクトされ、access トークンが project online にリダイレクトされます。  
+  - 外部サイトは、SharePoint および Project Online を呼び出すことができます。
     
-- 外部またはスタンドアロンのアドインの場合。
+- 外部/スタンドアロンアドインの場合:
     
-  - ユーザーがそのデバイスでアプリケーションを実行します。
-  - アプリケーションを認証し、プロジェクトのオンライン Api を直接呼び出す
+  - ユーザーがデバイス上でアプリケーションを実行する
+  - アプリケーションは、Project Online api を直接認証して呼び出します。
     
 
-|アプリケーションの種類|API の実装|ターゲット環境|アプリケーションの例|
+|アプリケーションの種類|API 実装|ターゲット環境|アプリケーションの例|
 |:-----|:-----|:-----|:-----|
-|ホストされているプロジェクト  <br/> |JSOM (Java スクリプト オブジェクト モデル)  <br/> REST  <br/> |ブラウザー  <br/> |タイムカードの入力  <br/> タイムカードの承認  <br/> プロジェクトの進捗状況  <br/> 問題に関するレポート  <br/> |
-|ホストされるプロバイダーのプロジェクト  <br/> |CSOM クライアント ライブラリ  <br/> |Azure の web サイト/アプリケーション  <br/> Windows 以外の環境 (照明器具など)  <br/> |外部タイムシートの検証  <br/> プロジェクト インポート機能  <br/> |
-|外部/スタンドアロン  <br/> |REST  <br/> CSOM  <br/> |残りのすべてのプラットフォーム  <br/> CSOM の任意の .NET がサポートされているプラットフォーム  <br/> |タイムカードの入力  <br/> 新しいサイトへのプロジェクトの移行  <br/> 管理のステータスを変更します。  <br/> |
+|ホストされるプロジェクト  <br/> |jsom (Java Script オブジェクトモデル)  <br/> REST  <br/> |ブラウザー  <br/> |タイムカードエントリ  <br/> タイムカードの承認  <br/> プロジェクトの進捗状況  <br/> 問題レポート  <br/> |
+|ホストされているプロジェクトプロバイダー  <br/> |csom クライアントライブラリ  <br/> |Azure web サイト/アプリ  <br/> Windows 以外の環境 (ランプ等)  <br/> |外部タイムシートの検証  <br/> プロジェクトインポーター  <br/> |
+|外部/スタンドアロン  <br/> |REST  <br/> CSOM  <br/> |REST-任意のプラットフォーム  <br/> csom-任意の .net サポートされるプラットフォーム  <br/> |タイムカードエントリ  <br/> 新しいサイトへのプロジェクトの移行  <br/> 管理の状態を変更します。  <br/> |
    
-## <a name="what-does-it-take-to-start-developing-applications-for-project-online"></a>オンライン プロジェクトのアプリケーションの開発を開始するのには何が必要でしょうか。
+## <a name="what-does-it-take-to-start-developing-applications-for-project-online"></a>Project Online 用のアプリケーションの開発を開始するには、何が必要ですか?
 
-プロジェクトのオンライン アプリケーションを開発するために必要な一般的な項目では、プロジェクトのオンライン アカウントには、プロジェクトおよびプロジェクトに関連する情報の割り当て、タスク、リソース、およびユーザー設定フィールドを含むデータをテストします。 同様に、開発環境が必要ですが、開発環境の詳細については、アプリケーションとアプリケーションに必要な API インターフェイスの種類によって異なります。 次のセクションでは、次の 3 つの API インタ フェースの開発のニーズについて説明します。
+project online アプリケーションの開発に必要な一般的なアイテムは、project online アカウントおよびテストデータ--プロジェクトとプロジェクト関連の情報で、割り当て、タスク、リソース、およびユーザー設定フィールドを含みます。 開発環境も必要ですが、開発環境の仕様はアプリケーションの種類とアプリケーションに必要な API インターフェイスによって異なります。 次のいくつかのセクションでは、3つの API インターフェイスの開発ニーズについて説明します。
   
-リファレンス ドキュメントでは、すべての 3 つのインターフェイスとオブジェクト モデルのコンポーネント間の関係を示すエンティティ マップの一般的なオブジェクト モデルについて説明します。
+参照ドキュメントでは、3つすべてのインターフェイスに共通のオブジェクトモデルと、オブジェクトモデルコンポーネント間の関係を示すエンティティマップについて説明しています。
   
-## <a name="project-hosted-add-in-development-environment"></a>プロジェクトのアドインの開発環境をホストします。
+## <a name="project-hosted-add-in-development-environment"></a>プロジェクトでホストされるアドインの開発環境
 
-ホストされているアドインには、サーバー上に存在すると、ランタイムの実行のためのブラウザーにダウンロードするアドインが。 ホストのアドインでは、JSOM またはそれ以外のインターフェイスを使用することができ、JavaScript で書かれています。 プロジェクトのオンラインでは、ランタイムの実行の JSOM ライブラリへの参照を提供します。 前提とすると開発は、Windows プラットフォームで必要なリソースには。
+ホストされるアドインは、サーバー上に存在し、ランタイムの実行のためにブラウザーにダウンロードされるアドインです。 ホストされたアドインは、jsom または REST インターフェイスを使用して、JavaScript で記述できます。 Project Online では、ランタイムの実行のための jsom ライブラリへの参照が提供されています。 開発が Windows プラットフォームで実行されている場合、必要なリソースは次のとおりです。
   
-- Visual Studio の 2015 (推奨) または Visual Studio の 2013
+- visual studio 2015 (推奨) または visual studio 2013
     
-- Visual Studio の Office 開発ツール
+- Office 開発ツール (Visual Studio)
     
 - JavaScript 言語
     
-参照してくださいhttps://github.com/OfficeDev/Project-JSOM-Copy-Work-Packagesサンプル アプリケーションです。 
+サンプルhttps://github.com/OfficeDev/Project-JSOM-Copy-Work-Packagesアプリケーションを参照してください。 
   
-ダウンロードして、いくつかの簡単な手順でサンプルを実行します。
+簡単な手順でサンプルをダウンロードして実行することができます。
   
-1. ダウンロードしてサンプル アプリケーションを開く
+1. サンプルアプリケーションをダウンロードして開く
     
-2. [SiteURL プロパティ] ウィンドウを更新します。
+2. [プロパティ] ウィンドウで SiteURL を更新する
     
-   プロジェクトのオンラインでは、アドインとホストでプロジェクトのオンライン情報へのアクセスを管理するユーザーのアクセス許可の両方のアプリケーションのスコープについて説明します。 設定のいずれかまたは両方のアクセスを明示的に拒否すると、オンライン プロジェクトを拒否、情報へのアクセスします。 それ以外の場合、アクセスが与えられます。
+   project online は、アドインのアプリケーションスコープとユーザー権限の両方を調べて、project online ホスト上の情報へのアクセスを管理します。 どちらか一方または両方の設定で明示的にアクセスが拒否されている場合、Project Online は情報へのアクセスを拒否します。 それ以外の場合は、アクセスが許可されます。
     
-3. サイトで[sideloading](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)を有効にします。  
+3. サイトで[サイドローディング](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)を有効にします。  
     
 4. プロジェクトをビルドします。
     
 5. プロジェクトを実行します。
     
-## <a name="project-provider-hosted-add-in-development-environment"></a>プロジェクトのプロバイダーでホストされているアドインの開発環境
+## <a name="project-provider-hosted-add-in-development-environment"></a>プロジェクトプロバイダー向けのホスト型アドインの開発環境
 
-プロバイダーがホストされているアドインは、作成されたアプリケーションおよび web プラットフォーム上に存在します。 接続でき、残りの部分 (またはマイクロソフトのプラットフォームの CSOM) を使用してデータ操作を実行する API です。 任意の言語と REST インターフェイスをサポートする環境は、開発に使用できます。 
+プロバイダーホスト型アドインは、どの web プラットフォームにも記述され、常駐するアプリケーションです。 これらのユーザーは、REST (または csom for Microsoft プラットフォーム) API を使用して接続し、データ操作を実行できます。 REST インターフェイスをサポートするすべての言語と環境を開発に使用できます。 
   
-この種のアプリケーションに対して Windows 開発環境の例には、次の項目が含まれています。
+この種類のアプリケーションの Windows 開発環境の例には、次の項目が含まれています。
   
--  Visual Studio の 2015 (推奨) または Visual Studio の 2013 
+-  visual studio 2015 (推奨) または visual studio 2013 
     
-- (Visual Studio の 2015 プロフェッショナルおよびエンタープライズ エディションに付属している)、Visual Studio 用の Microsoft Office の開発ツール
+- Microsoft Office 開発ツール (visual studio 2015 Professional および Enterprise edition で提供されています)
     
-- 4.0 またはそれ以降の.NET Framework
+- .net Framework 4.0 またはそれ以降
     
-- [SharePointOnline CSOM パッケージ](https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM)(CSOM 呼び出し) の 
+- [sharepointonline csom パッケージ](https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM)(csom 呼び出しの場合) 
     
-- C# などのプログラミング言語 
+- プログラミング言語 (C# など) 
     
-参照してくださいhttps://github.com/OfficeDev/Project-Add-in-REST-BasicDataOperationsのサンプル スクリプトを使用します。 
+作業https://github.com/OfficeDev/Project-Add-in-REST-BasicDataOperations用サンプルスクリプトにアクセスします。 
   
-いくつかの手順でサンプルを実行することができます。
+サンプルは、いくつかの手順で実行できます。
   
-1. ダウンロードしてサンプル アプリケーションを開く
+1. サンプルアプリケーションをダウンロードして開く
     
-2. [SiteURL プロパティ] ウィンドウを更新します。
+2. [プロパティ] ウィンドウで SiteURL を更新する
     
-   プロジェクトのオンラインでは、アドインとホストでプロジェクトのオンライン情報へのアクセスを管理するユーザーのアクセス許可の両方のアプリケーションのスコープについて説明します。 設定のいずれかまたは両方のアクセスを明示的に拒否すると、オンライン プロジェクトを拒否、情報へのアクセスします。 それ以外の場合、アクセスが与えられます。
+   project online は、アドインのアプリケーションスコープとユーザー権限の両方を調べて、project online ホスト上の情報へのアクセスを管理します。 どちらか一方または両方の設定で明示的にアクセスが拒否されている場合、Project Online は情報へのアクセスを拒否します。 それ以外の場合は、アクセスが許可されます。
     
-3. サイトで[sideloading](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)を有効にします。 
+3. サイトで[サイドローディング](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)を有効にします。 
     
 4. プロジェクトをビルドします。
     
 5. プロジェクトを実行します。
     
-## <a name="externalstandalone-application-development-environment"></a>外部とスタンドアロン アプリケーションの開発環境
+## <a name="externalstandalone-application-development-environment"></a>外部/スタンドアロンアプリケーション開発環境
 
-スタンドアロン アプリケーションでは、呼び出しを作成、取得、更新、オンライン プロジェクトと通信するクライアント側オブジェクト モデル (CSOM) または他の部分を使用してプロジェクト オンラインでき、サーバー上に存在する情報を削除することができます。 これは、スタンドアロンのクライアント アプリケーションを実行するユーザーのアクセス レベルに依存しています。 
+スタンドアロンアプリケーションは、クライアント側オブジェクトモデル (csom) を使用して project online を呼び出し、project online と通信して、サーバー上に存在する情報を作成、取得、更新、および削除することができます。 これは、ユーザーアクセスレベルによって実行されるスタンドアロンクライアントアプリケーションです。 
   
-この種のアプリケーションに対して Windows 開発環境の例には、次の項目が含まれています。
+この種類のアプリケーションの Windows 開発環境の例には、次の項目が含まれています。
   
-- Visual Studio の 2015 (推奨) または Visual Studio の 2013 
+- visual studio 2015 (推奨) または visual studio 2013 
     
-- (Visual Studio の 2015 プロフェッショナルおよびエンタープライズ エディションに付属している)、Visual Studio 用の Microsoft Office の開発ツール
+- Microsoft Office 開発ツール (visual studio 2015 Professional および Enterprise edition で提供されています)
     
-- 4.0 またはそれ以降の.NET Framework
+- .net Framework 4.0 またはそれ以降
     
-- [SharePointOnline CSOM パッケージ](https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM)(CSOM 呼び出し) の 
+- [sharepointonline csom パッケージ](https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM)(csom 呼び出しの場合) 
     
-- C# などのプログラミング言語 
+- プログラミング言語 (C# など) 
     
-参照してくださいhttps://github.com/OfficeDev/Project-CSOM-Read-Enterprise-CustomFieldsサンプル アプリケーションです。 
+サンプルhttps://github.com/OfficeDev/Project-CSOM-Read-Enterprise-CustomFieldsアプリケーションを参照してください。 
   
-いくつかの手順でサンプルを実行することができます。
+サンプルは、いくつかの手順で実行できます。
   
-1. サンプル アプリケーションをダウンロードします。
+1. サンプルアプリケーションをダウンロードする
     
-2. いくつかのプロジェクトのオンライン サイトにアクセスして変更を加えるなど、サイト名、ユーザー アカウント、およびパスワード。
+2. プロジェクトオンラインサイト (サイト名、ユーザーアカウント、パスワード) にアクセスするための、いくつかの変更を行います。
     
-   ユーザーがすべてのプロジェクトへのアクセス権を持っていることを確認します。 プロジェクトのオンラインでは、データ ストア内の情報へのアクセスを管理するのにユーザーのアクセス許可を使用します。
+   ユーザーがすべてのプロジェクトにアクセスできることを確認します。 Project Online では、ユーザー権限を使用して、データストア内の情報へのアクセスを管理します。
     
-3. Nuget パッケージ マネージャー コンソールでは、Nuget のコンソールで、次を入力して [ツール] メニューから利用可能なを使用して参照するには、SharePoint アセンブリを追加します。 
+3. nuget コンソールで次のように入力して、[ツール] メニューから利用できる nuget パッケージマネージャーコンソールを使用して、SharePoint アセンブリを参照に追加します。 
     
    `Install-Package Microsoft.SharePointOnline.CSOM`
 
@@ -155,18 +155,18 @@ ms.locfileid: "25392586"
     
 5. プロジェクトを実行します。
     
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-各サンプル アプリケーションでは、プロジェクトの個々 の API の使用の主な特徴を説明する記事があります。 記事は、次の一覧とは、エンティティの関連付けを記述するいくつかの記事については、クエリ システム、およびユーザー設定フィールドへのアクセスに表示されます。 
+各サンプルアプリケーションには、個々のプロジェクト API を使用した作業の概要を説明する記事があります。 この記事は、エンティティの関係、クエリシステムの情報、およびユーザー設定フィールドへのアクセスについて説明するいくつかの記事と共に、次のリストに表示されます。 
   
-- [クライアント側オブジェクト モデルを使用してプロジェクトのオンライン アプリケーションの開発](developing-a-project-online-application-using-the-client-side-object-model.md)
+- [クライアント側オブジェクトモデルを使用した Project Online アプリケーションの開発](developing-a-project-online-application-using-the-client-side-object-model.md)
     
-- [プロジェクトのオンライン追加の JavaScript オブジェクト モデル (JSOM) を使用して開発](developing-a-project-online-add-in-using-the-javascript-object-model-jsom.md)
+- [JavaScript オブジェクトモデル (jsom) を使用して Project Online アドインを開発する](developing-a-project-online-add-in-using-the-javascript-object-model-jsom.md)
     
 - [Project Online エンタープライズ ユーザー設定フィールドへのアクセス](accessing-project-online-enterprise-custom-fields.md)
     
 ## <a name="see-also"></a>関連項目
 
-ドキュメントとオンライン プロジェクトと CSOM を使用したアプリケーション開発に関連するサンプルでは、[プロジェクト開発のポータル](https://developer.microsoft.com/en-us/project)を参照してください。
+Project Online および CSOM を使用したアプリケーション開発に関するドキュメントとサンプルについては、[Project 開発ポータル](https://developer.microsoft.com/en-us/project)をご覧ください。
     
 

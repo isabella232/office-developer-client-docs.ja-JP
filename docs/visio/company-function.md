@@ -8,20 +8,20 @@ f1_keywords:
 - Vis_DSS.chm82253221
 localization_priority: Normal
 ms.assetid: 8bca3efa-1f0d-6f60-537c-c9f976737dcf
-description: ドキュメントのプロパティの [会社名] フィールドからテキストを返します。
-ms.openlocfilehash: 5c857b400192bb97586ac9cea08cee7ee251793e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 図面のプロパティの [会社名] フィールドのテキストを返します。
+ms.openlocfilehash: c8a33c5cc82353b887d2fc7da358270e124c21ab
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32359350"
 ---
 # <a name="company-function"></a>COMPANY 関数
 
-ドキュメントのプロパティの [**会社名**] フィールドからテキストを返します。 
+図面のプロパティの [**会社名**] フィールドのテキストを返します。 
   
 ## <a name="syntax"></a>構文
 
-会社)
+COMPANY ()
   
 

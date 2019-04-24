@@ -6,32 +6,32 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 98f7ebdc-fdd5-4534-97dc-9d4c00490d62
-description: コールアウト、コンテナー、タイムライン、および組織図の図形の外観と動作 (装飾) を変更します。
-ms.openlocfilehash: 93c12a3eed1c7298b37f143fc836ad90ec3b09ab
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 吹き出し、コンテナー、タイムライン、および組織図の図形の外観 (装飾記号) を変更します。
+ms.openlocfilehash: 089623bbb310f78488a5c8c7261eed1c16a5c6e6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "19805299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345627"
 ---
 # <a name="embellishmentindex-cell-theme-properties-section"></a>[EmbellishmentIndex] セル ([テーマのプロパティ] セクション)
 
-コールアウト、コンテナー、タイムライン、および組織図の図形の外観と動作 (装飾) を変更します。
+吹き出し、コンテナー、タイムライン、および組織図の図形の外観 (装飾記号) を変更します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**セル**要素の**N**属性の値によって、別の数式または**CellsU**プロパティを使用したプログラムから、名前によって、[ **EmbellishmentIndex** ] セルへの参照を取得、次のように使用します。 
+別の数式から、 **cell**要素の**N**属性の値によって、または**CellsU**プロパティを使用したプログラムから、名前によって [ **[embellishmentindex]** ] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | EmbellishmentIndex  <br/> |
+| セル名:  <br/> | [embellishmentindex]  <br/> |
    
-プログラムから、インデックスによって [ **EmbellishmentIndex** ] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [ **[embellishmentindex]** ] セルへの参照を取得するには、 **CellsSRC**プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowThemeProperties** <br/> |
-| セル インデックス:  <br/> |**visEmbellishmentIndex** <br/> |
+| セル インデックス:  <br/> |**visemベル lish"index** <br/> |
    
 

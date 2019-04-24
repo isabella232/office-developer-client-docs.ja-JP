@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 02c66b46-1f01-43fb-832c-bac27aaae19f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b71d1f477435b4a9327b4156560d1aa2e6079536
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e0cdcb92238dd4dffbcd6514e698e5511b05bf45
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360495"
 ---
 # <a name="ulvalidateparms"></a>UlValidateParms
 
@@ -25,13 +25,13 @@ ms.locfileid: "22578704"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-パラメーターのクライアント アプリケーションが、サービス ・ プロバイダーおよび MAPI 経過をチェックする内部関数が呼び出されます。 
+内部関数を呼び出して、クライアントアプリケーションがサービスプロバイダーと MAPI に渡されたことを確認します。 
   
 |||
 |:-----|:-----|
 |ヘッダー ファイル:  <br/> |Mapival.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |サービス プロバイダー  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |サービス プロバイダー  <br/> |
    
 ```cpp
 HRESULT UlValidateParms(
@@ -42,15 +42,15 @@ HRESULT UlValidateParms(
 
 ## <a name="parameters"></a>パラメーター
 
- _」方法_
+ _eMethod_
   
-> [in]確認する方法を列挙型を指定します。 
+> 順番検証するメソッドを列挙で指定します。 
     
- _First/先頭のレコード_
+ _First_
   
-> [in]スタック上の最初の引数へのポインター。
+> 順番スタック上の最初の引数へのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -58,12 +58,12 @@ S_OK
     
 MAPI_E_CALL_FAILED 
   
-> エラーの操作を完了できませんでした。
+> エラーが発生したため、操作を完了できませんでした。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-MAPI とサービスの間で渡されるパラメーターを正しくし、 [CheckParms](checkparms.md)マクロのデバッグ検証のみを行うプロバイダーと見なされます。 プロバイダーは、クライアント アプリケーションによって渡されるすべてのパラメーターを確認する必要がありますが、クライアントが MAPI およびプロバイダーのパラメーターが正しいことを想定する必要があります。 戻り値をテストするのにには、 **HR_FAILED**マクロを使用します。 
+MAPI プロバイダーとサービスプロバイダー間で渡されるパラメーターは正しいと見なされ、 [checkparms](checkparms.md)マクロを使用してのみ、デバッグ検証を行います。 プロバイダーは、クライアントアプリケーションによって渡されたすべてのパラメーターをチェックする必要がありますが、クライアントは MAPI および provider パラメーターが正しいと想定する必要があります。 **HR_FAILED**マクロを使用して、戻り値をテストします。 
   
-**UlValidateParms**マクロは、呼び出し元のコードが C または C++ のどちらであるかに応じて異なる方法で呼び出されます。 HRESULT 値の代わりに ULONG を返すいくつかの**IUnknown**と MAPI メソッドのパラメーターを検証するためにこのマクロを使用します。[ValidateParms](validateparms.md)マクロは、他のすべてのユーザーに対して機能します。 
+**ulvalidateparms**マクロは、呼び出し元のコードが C または C++ のどちらであるかによって、異なる方法で呼び出されます。 このマクロは、HRESULT 値ではなく ULONG を返すいくつかの**IUnknown**および MAPI メソッドのパラメーターを検証するために使用されます。[validateparms](validateparms.md)マクロは、他のすべてのユーザーに対して動作します。 
   
 

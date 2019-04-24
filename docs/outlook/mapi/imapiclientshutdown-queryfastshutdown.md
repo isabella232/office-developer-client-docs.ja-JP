@@ -11,39 +11,39 @@ api_name:
 api_type:
 - COM
 ms.assetid: b743b5b6-4a7c-46b8-99eb-afd13ee947db
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 784a2f497811ba7c4ba0abf260ff32fde75de76a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 6a76488f56f9d1eb1b344c01de2615627dd5d3ec
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350870"
 ---
 # <a name="imapiclientshutdownqueryfastshutdown"></a>IMAPIClientShutdown::QueryFastShutdown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-クエリ、MAPI サブシステムの高速シャット ダウンをサポートして読み込まれている MAPI プロバイダーによって提供されます。
+読み込み済みの mapi プロバイダーによって提供される高速シャットダウンのサポートを mapi サブシステムに対して照会します。
   
 ```cpp
 HRESULT QueryFastShutdown ();
 ```
 
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK
   
-> MAPI サブシステムには、高速シャット ダウンを実行するのには MAPI クライアントがサポートされています。
+> mapi サブシステムは、高速シャットダウンを実行するための mapi クライアントをサポートします。
     
 MAPI_E_NO_SUPPORT
   
-> MAPI プロバイダーは、高速シャット ダウンを実行するのには MAPI クライアントをサポートしていません。
+> mapi プロバイダーは、高速シャットダウンを実行するための mapi クライアントをサポートしていません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-MAPI サブシステムが高速シャット ダウンを実行するのには MAPI クライアントをサポートしているかどうかは、ユーザーの Windows レジストリ設定または高速シャット ダウンのために MAPI クライアントの既定の動作によって異なります。 高速シャット ダウンをサポートするために読み込まれている MAPI プロバイダーの機能によっても異なります。 詳細については、[高速シャット ダウンのユーザー オプション](fast-shutdown-user-options.md)を参照してください。
+mapi サブシステムで高速シャットダウンを実行するための mapi クライアントがサポートされているかどうかは、ユーザーの Windows レジストリ設定または mapi クライアントの高速シャットダウンの既定の動作によって異なります。 また、読み込み済みの MAPI プロバイダーが高速シャットダウンをサポートする機能によっても異なります。 詳細については、「 [Fast Shutdown User Options](fast-shutdown-user-options.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
@@ -52,5 +52,5 @@ MAPI サブシステムが高速シャット ダウンを実行するのには M
 [IMAPIClientShutdown : IUnknown](imapiclientshutdowniunknown.md)
 
 
-[Mapi クライアントのシャット ダウン](client-shutdown-in-mapi.md)
+[MAPI でのクライアント シャットダウン](client-shutdown-in-mapi.md)
 

@@ -1,5 +1,5 @@
 ---
-title: テーブルの位置指定
+title: 表の配置
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,26 +7,26 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: a0cbbc93-8074-4e86-b660-ee7bab910587
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: f7b2baa8cd78fbb8ace72fd0edb7c77f4c02a4c8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 656f696c58e9b62e7e601d7f531870b8c385e862
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345655"
 ---
-# <a name="table-positioning"></a>テーブルの位置指定
+# <a name="table-positioning"></a>表の配置
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブル内の現在位置は常に、カーソルで示されます。 テーブルのビューごとに 1 つのカーソルがあります。値は、テーブルの作成者によって設定されます。 テーブルを使用して、クライアントまたはサービス プロバイダーは、テーブルの位置を変更する呼び出しを行うと、は、カーソルの値がリセットされます。 テーブルの位置を変更できます。
+テーブル内の現在の位置は、常にカーソルで示されます。 テーブルのビューごとに1つのカーソルがあります。この値は、テーブルの実装によって設定されます。 テーブルを使用するクライアントまたはサービスプロバイダーがテーブルの位置を変更する呼び出しを行う場合、カーソルの値はリセットされます。 テーブルの位置は、次のように変更できます。
   
 - ブックマーク
     
-- 小数部の値です。
+- 小数値。
     
-- フィルターします。
+- フィルター。
     
 

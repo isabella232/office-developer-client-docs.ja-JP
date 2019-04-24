@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 2acf0036-2f3e-4f90-8614-7aa667860f74
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: b9c2a1bbf519379c1735c489c2dcd3fcfb395a60
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25401616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346376"
 ---
 # <a name="pidlidtimezonestruct-canonical-property"></a>PidLidTimeZoneStruct 標準プロパティ
 
@@ -25,21 +25,21 @@ ms.locfileid: "25401616"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-定期的な予定または会議出席依頼の開始と終了時に使用するタイム ゾーンを記述する[TZREG](https://msdn.microsoft.com/library/bb820983%28v=office.12%29.aspx)構造体の保存形式に対応するストリームが含まれています。 
+[TZREG](https://msdn.microsoft.com/library/bb820983%28v=office.12%29.aspx)構造の永続形式にマップするストリームを格納します。これは、定期的な予定または会議出席依頼の開始時刻と終了時刻に使用されるタイムゾーンを表します。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |dispidTimeZoneStruct  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
-|長い ID (LID):  <br/> |0x00008233  <br/> |
+|プロパティセット:  <br/> |PSETID_Appointment  <br/> |
+|ロング ID (LID):  <br/> |0x00008233  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |予定表  <br/> |
+|エリア:  <br/> |カレンダー  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-Microsoft Office Outlook 2003 では、以前のバージョンの Outlook、およびユーザーが Outlook または Exchange Server によって提供される予定表更新ツールを実行していないのでは、コラボレーション データ オブジェクト (CDO) 1.21 をベースとするアプリケーションは、開始時刻と終了時刻を格納します。予定かの相対的な時間として会議出席依頼を定期的な予定と**dispidTimeZoneStruct**で、予定または会議出席依頼を作成する場所のタイム ゾーンを格納します。 ただし、このスキームは、時間の経過と共にタイム ゾーン規則を変更できるように、ユーザーは、ルールが変更され、不適切なタイミングで発生する前にスケジュールするにいくつかの予定および会議の結果を無視します。 ユーザーと管理者が Windows Vista を実行していない、またはされていて、自動更新を有効にしないのは、このような予定と会議出席依頼の時刻を調整するには、Outlook または Exchange Server によって提供されるツールを再配置する予定表を使用してください。 これらの再配置ツールの予定表と予定表を再配置するための Api の詳細については、[夏時間から標準時のプログラムを使用して予定表を再配置の詳細](https://msdn.microsoft.com/library/38b342d9-ab10-04b6-5490-9a45f847a60f%28Office.15%29.aspx)を参照してください。
+Microsoft Office outlook 2003、以前のバージョンの outlook、およびユーザーが outlook または Exchange Server ストアが提供する予定表更新ツールを実行していないグループ作業データオブジェクト (CDO) 1.21 に基づくアプリケーション相対時間としての定期的な予定または会議出席依頼。 **dispidTimeZoneStruct**で予定または会議出席依頼が作成されたタイムゾーンを保存します。 ただし、このスキームでは時間が経過すると、タイムゾーンの規則が変化し、ルールが変更される前にユーザーがスケジュールを設定して、誤った時間に発生する予定と会議を作成することができます。 Windows Vista を実行していない、または自動更新が有効になっていないユーザーと管理者は、Outlook または Exchange Server によって提供される予定表の再配置ツールを使用して、そのような予定や会議出席依頼の時刻を調整する必要があります。 カレンダーを再配置するための、これらの予定表の再配置ツールと api の詳細については、「[夏時間のプログラムを使用して予定表](https://msdn.microsoft.com/library/38b342d9-ab10-04b6-5490-9a45f847a60f%28Office.15%29.aspx)を再配置する」をご覧ください。
   
-ストリームに**TZREG**構造体を保持する場合、 **dispidTimeZoneStruct**、またはを取得するストリームを解析するとき**dispidTimeZoneStruct**のバイナリ プロパティをコミットするのには次のリトル エンディアンの形式を使用します。 
+**dispidTimeZoneStruct**から取得したストリームを解析するとき、または**TZREG**構造体を**dispidTimeZoneStruct** binary プロパティにコミットするストリームに永続化するときは、次のリトルエンディアン形式を使用します。 
   
 ```cpp
 long        lBias;           // offset from GMT
@@ -51,23 +51,23 @@ WORD        wDaylightYear;      // matches the stDaylightDate's wYear field
 SYSTEMTIME  stDaylightDate;  // time to switch to daylight time
 ```
 
-このプロパティでは、タイム ゾーン情報を指定するのには定期的に設定され、現地時刻と世界協定時刻 (UTC) との間の時間フィールドに変換する方法を指定します。
+このプロパティは、タイムゾーン情報を指定するために定期的なアイテムに対して設定され、時刻フィールドを現地時刻と協定世界時 (UTC) の間で変換する方法を指定します。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
+> 予定、会議出席依頼、および応答メッセージのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -75,9 +75,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

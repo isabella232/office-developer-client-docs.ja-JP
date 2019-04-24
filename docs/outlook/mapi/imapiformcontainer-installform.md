@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: b39ca52c-4dbe-41c0-9e1b-3998a9dc9742
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fd7bc8f051e9584fc63f22bdbaf9696c2e4d15a3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a0650033e4fea79046eac5757e3d0deb963c38e6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351647"
 ---
 # <a name="imapiformcontainerinstallform"></a>IMAPIFormContainer::InstallForm
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォーム ライブラリにフォームをインストールします。
+フォームライブラリにフォームをインストールします。
   
 ```cpp
 HRESULT InstallForm(
@@ -37,31 +37,31 @@ HRESULT InstallForm(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulUIParam_
+ _uluiparam_
   
-> [in]すべてのダイアログ ボックスの親ウィンドウまたはこのメソッドを表示するウィンドウへのハンドル。 _UlUIParam_パラメーターは、クライアント アプリケーションは、 _ulFlags_パラメーターで MAPI_DIALOG フラグを設定しない限り、無視されます。 MAPI_DIALOG が渡されてもいない場合は、 _ulUIParam_パラメーターを NULL にできます。 
+> 順番このメソッドが表示するダイアログボックスまたはウィンドウの親ウィンドウへのハンドル。 _uluiparam_パラメーターは、クライアントアプリケーションが_ulflags_パラメーターに MAPI_DIALOG フラグを設定していない場合は無視されます。 _uluiparam_パラメーターは、MAPI_DIALOG も渡されない場合は NULL になります。 
     
  _ulFlags_
   
-> [in]フォームのインストールを制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番フォームのインストールを制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_DIALOG 
   
-> 進行状況情報を提供したり、詳細情報をユーザーに確認するダイアログ ボックスが表示されます。 このフラグが設定されていない場合、ダイアログ ボックスは表示されません。
+> 進捗状況の情報を提供するダイアログボックスを表示します。詳細については、ユーザーに確認します。 このフラグが設定されていない場合は、ダイアログボックスは表示されません。
     
 MAPI_UNICODE 
   
-> 渡された文字列は、Unicode 形式では。 MAPI_UNICODE フラグが設定されていない場合は、ANSI 形式の文字列です。
+> 渡された文字列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
     
 MAPIFORM_INSTALL_OVERWRITEONCONFLICT 
   
-> 別のフォームによって、メッセージ クラスは、このフォームで処理するハンドルが既に存在する場合は、既存のフォームをこれと置き換えます。 MAPI_DIALOG フラグが存在しても場合、このフラグは無視されます。 
+> このフォームによって処理されるメッセージクラスを処理する別のフォームが既に存在する場合は、既存のフォームをこのフォームに置き換えます。 MAPI_DIALOG フラグも指定されている場合、このフラグは無視されます。 
     
- _szCfgPathName_
+ _szcfgpathname_
   
-> [in]フォームの構成ファイルへのパス。
+> 順番フォームの構成ファイルへのパス。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -69,45 +69,45 @@ S_OK
     
 MAPI_E_EXTENDED_ERROR 
   
-> 実装エラーが発生しました。 エラーに関連付けられている[MAPIERROR](mapierror.md)構造体を取得するには、 [IMAPIFormContainer::GetLastError](imapiformcontainer-getlasterror.md)メソッドを呼び出します。 
+> 実装エラーが発生しました。 エラーに関連付けられている[MAPIERROR](mapierror.md)構造体を取得するには、 [imapiformcontainer:: GetLastError](imapiformcontainer-getlasterror.md)メソッドを呼び出します。 
     
 MAPI_E_USER_CANCEL 
   
-> ユーザー] ダイアログ ボックスで [**キャンセル**] ボタンをクリックすると、通常、フォームのインストールをキャンセルしました。 
+> ユーザーがフォームのインストールをキャンセルしました。通常は、ダイアログボックスの **[キャンセル**] ボタンをクリックします。 
     
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-フォーム ライブラリのプロバイダーは、 **MAPIERROR**構造体を入力し、次の条件のいずれかが発生した場合は、MAPI_E_EXTENDED_ERROR を返す必要があります。 
+フォームライブラリプロバイダーは、次のいずれかの状況が発生した場合に、 **MAPIERROR**構造に記入し、MAPI_E_EXTENDED_ERROR を返す必要があります。 
   
 - 構成ファイルが見つかりません。
     
-- 構成ファイルを読み取ることができません。
+- 構成ファイルは読み取ることができません。
     
-- 構成ファイルが有効ではありません。
+- 構成ファイルが無効です。
     
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-クライアント アプリケーションは、フォームをフォームの特定のコンテナーにインストールするのには**IMAPIFormContainer::InstallForm**メソッドを呼び出します。 _SzCfgPathName_パラメーターには、フォーム構成ファイル (つまり、フォームとその実装を記述する .cfg ファイルの拡張子を持つファイルの場合) のパスが含まれている必要があります。 _UlFlags_パラメーター内のフラグは、以下のいずれかを指定します。 
+クライアントアプリケーションは、 **imapiformcontainer:: installform**メソッドを呼び出して、特定のフォームコンテナーにフォームをインストールします。 _szcfgpathname_パラメーターには、フォーム構成ファイル (つまり、フォームとその実装を記述する拡張子が付いたファイル) のパスを含める必要があります。 _ulflags_パラメーターのフラグには、次のものを指定します。 
   
-- MAPI_DIALOG フラグが設定されている場合は、ユーザー インターフェイスが表示されます、インストールの詳細を指定するフォームをインストールしているユーザーを有効にします。
+- MAPI_DIALOG フラグが設定されている場合は、ユーザーインターフェイスが表示され、フォームをインストールしているユーザーがインストールの詳細を指定できます。
     
-- MAPIFORM_INSTALL_OVERWRITEONCONFLICT フラグが設定されている場合は、同じメッセージ クラスのすべての前のフォームがインストールされているフォームに置き換えられます。 それ以外の場合、フォームのインストールは、存在する場合、現在のフォームの説明に統合されます。
+- MAPIFORM_INSTALL_OVERWRITEONCONFLICT フラグが設定されている場合、同じメッセージクラスの以前のフォームは、インストールされているフォームに置き換えられます。 それ以外の場合は、フォームのインストールは現在のフォームの説明に結合されます (存在する場合)。
     
-- MAPI_DIALOG が設定されている場合は、MAPIFORM_INSTALL_OVERWRITEONCONFLICT は無視されます。
+- MAPI_DIALOG が設定されている場合、MAPIFORM_INSTALL_OVERWRITEONCONFLICT は無視されます。
     
-- MAPIFORM_INSTALL_OVERWRITEONCONFLICT のフラグでない場合は、差し込み印刷が行われることを意味を設定します。 .Cfg ファイルの現在のフォームの説明ではない新しいプラットフォームをインストールして、その他の変更は行われません。
+- フラグセットに MAPIFORM_INSTALL_OVERWRITEONCONFLICT がない場合は、マージが行われることを意味します。 現在フォームの説明に表示されていない、cfg ファイルの新しいプラットフォームがインストールされ、その他の変更は行われません。
     
-- フォーム構成ファイルのパスは、MAPI_UNICODE フラグが設定されている場合は、Unicode 文字列になります。 
+- MAPI_UNICODE フラグが設定されている場合、フォーム構成ファイルのパスは UNICODE 文字列になります。 
     
-**InstallForm**は、MAPI_E_EXTENDED_ERROR を返し、エラーが発生した状態を判断するのには返された[MAPIERROR](mapierror.md)構造体をチェックする必要がある場合、クライアントは[IMAPIFormContainer::GetLastError](imapiformcontainer-getlasterror.md)を呼び出す必要があります。 
+クライアントは[imapiformcontainer:: GetLastError](imapiformcontainer-getlasterror.md)を呼び出し**** て MAPI_E_EXTENDED_ERROR を返す必要があり、返された[MAPIERROR](mapierror.md)構造を調べて、エラーが発生した条件を特定する必要があります。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|FormContainerDlg.cpp  <br/> |CFormContainerDlg::OnInstallForm  <br/> |MFCMAPI では、 **IMAPIFormContainer::InstallForm**メソッドを使用して、フォームのコンテナー内のフォームをインストールします。  <br/> |
+|FormContainerDlg  <br/> |CFormContainerDlg:: oninstallform  <br/> |mfcmapi は、 **imapiformcontainer:: installform**メソッドを使用してフォームコンテナーにフォームをインストールします。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -7,21 +7,21 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f60c65e3-b55f-cb68-746e-d0a8cd862d4d
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a74a6639023ae6ffddeabd03970b609e7b7babe1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 042216df309e98f35ed0ad71742e46300ebb06da
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342582"
 ---
 # <a name="gender"></a>Gender
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージング ユーザーの性別の値を指定します。
+メッセージングユーザーの性別に対して使用可能な値を指定します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -37,31 +37,31 @@ enum Gender {
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
- _genderMin_
+ _gendermin_
   
-> 性別のサポートされている別の値の最小数です。
+> 性別に対してサポートされている、さまざまな値の最小数。
     
- _genderUnspecified_
+ _genderunspecified_
   
-> メッセージング ユーザーの性別は指定されていません。
+> メッセージユーザーに性別が指定されていません。
     
- _genderFemale_
+ _genderfemale_
   
-> メッセージングのユーザーは、(メス) です。
+> メッセージングユーザーが女性である。
     
- _genderMale_
+ _gendermale_
   
-> メッセージングのユーザーは、(オス) です。
+> メッセージングユーザーが男性である。
     
- _genderCount_
+ _gendercount_
   
-> 性別のサポートされている別の値の数。
+> 性別に対してサポートされているさまざまな値の数。
     
- _genderMax_
+ _gendermax_
   
-> 性別のサポートされている別の値の最大数です。
+> 性別に対してサポートされているさまざまな値の最大数。
     
 ## <a name="see-also"></a>関連項目
 

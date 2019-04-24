@@ -1,31 +1,31 @@
 ---
-title: Outlook が Exchange キャッシュ モードではときに、リモート サーバー上のストアを開く
+title: Outlook が Exchange キャッシュモードの場合にリモートサーバーでストアを開く
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: cf01eab7-164d-c3b3-8bb0-9281e2119bc5
 description: '�ŏI�X�V��: 2012�N6��25��'
-ms.openlocfilehash: 7c1b3d3d5eed6bc991f8e4fd702fa197d610c104
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 419c9ae734e8b58d0958970e7127b94d220b8382
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345949"
 ---
-# <a name="open-a-store-on-the-remote-server-when-outlook-is-in-cached-exchange-mode"></a>Outlook が Exchange キャッシュ モードではときに、リモート サーバー上のストアを開く
+# <a name="open-a-store-on-the-remote-server-when-outlook-is-in-cached-exchange-mode"></a>Outlook が Exchange キャッシュモードの場合にリモートサーバーでストアを開く
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックには、 **MDB_ONLINE**フラグを使用して Exchange キャッシュ モードでは、Microsoft Outlook 2010 または Microsoft Outlook 2013 には、リモート サーバー上のメッセージ ストアを開く方法を示している C++ でのコード サンプルが含まれています。 
+このトピックでは、microsoft outlook 2010 または microsoft outlook 2013 が Exchange キャッシュモードの場合に、 **MDB_ONLINE**フラグを使用してリモートサーバーでメッセージストアを開く方法を示す C++ のコードサンプルを示します。 
   
-Exchange キャッシュ モードでは、Outlook 2010 または Outlook 2013 は、リモートの Exchange サーバー上のユーザーのメールボックスのリモート ・ コピーへのオンライン接続を保持している間、ユーザーのメールボックスのローカル コピーを使用するには、Outlook 2010、Outlook 2013 を許可します。 既定で、Outlook 2010 または Outlook 2013 Exchange キャッシュ モードで動作している、同じセッションにログオンしている MAPI ソリューションでは、キャッシュされたメッセージ ストアに接続されています。 アクセスされているすべてのデータと加えられた変更は、メールボックスのローカル コピーに対して行われます。
+Exchange キャッシュモードでは、outlook 2010 と outlook 2013 は、ユーザーのメールボックスのローカルコピーを使用することができます。 outlook 2010 または outlook 2013 は、リモート Exchange サーバー上のユーザーのメールボックスのリモートコピーへのオンライン接続を保持しています。 outlook 2010 または outlook 2013 が Exchange キャッシュモードで実行されている場合、既定では、同じセッションにログオンする MAPI ソリューションは、キャッシュされたメッセージストアにも接続されます。 アクセスされるデータと、変更が行われた場合は、メールボックスのローカルコピーに対して行われます。
   
-クライアントまたはサービス プロバイダーでは、ローカル メッセージ ストアへの接続をオーバーライドでき、リモート サーバー上のストアを開くには、 [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md)を呼び出すときは、 *ulFlags*パラメーターで**MDB_ONLINE**のビットを設定することができます。 ストア正常に開いた後、リモート サーバー上でセッションに使用する、アイテムまたは [リモート ストアのフォルダーを開くに[IMAPISession::OpenEntry](imapisession-openentry.md)を使用できます。 
+クライアントまたはサービスプロバイダーは、ローカルメッセージストアへの接続を上書きし、 [imapisession:: openmsgstore](imapisession-openmsgstore.md)を呼び出すときに*ulflags*パラメーターで**MDB_ONLINE**のビットを設定することによって、リモートサーバー上でストアを開くことができます。 そのセッションのリモートサーバーでストアが正常に開かれた後、 [imapisession:: openentry](imapisession-openentry.md)を使用して、リモートストアのアイテムまたはフォルダーを開くことができます。 
   
-同じ MAPI セッションで同時にキャッシュ モードと非キャッシュ モードで、Exchange ストアを開くことができません。 キャッシュされたメッセージ ストアを既に開いている場合、このフラグで開き、またはこのフラグを使用してリモート サーバー上の Exchange ストアを開く新しい MAPI セッションを開始する前にストアを閉じる必要がありますか。
+同じ MAPI セッションで、キャッシュモードおよび非キャッシュモードでは、Exchange ストアを同時に開くことはできません。 キャッシュ済みのメッセージ ストアを既に開いている場合は、このフラグを使用してストアを開く前にストアを閉じるか、このフラグを使用してリモート サーバー上の Exchange ストアを開くことができる新しい MAPI セッションを開く必要があります。
   
-次のコードは、リモート サーバー上の既定のストアを開く、 *ulFlags*パラメーターの設定**MDB_ONLINE**フラグを使用して**IMAPISession::OpenMsgStore**を呼び出す方法を示しています。 
+次のコードサンプルは、 *ulflags*パラメーターで**MDB_ONLINE**フラグを設定して**imapisession:: openmsgstore**を呼び出して、リモートサーバー上の既定のストアを開く方法を示しています。 
   
 ```cpp
 HRESULT HrRemoteMessageStore( 

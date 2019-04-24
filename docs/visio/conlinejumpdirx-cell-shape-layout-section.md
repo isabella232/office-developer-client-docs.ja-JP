@@ -9,32 +9,32 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: f0671835-8d48-907a-eca6-43953658f800
 description: 図形に接続する水平方向の動的コネクタに表示される飛び越し点の向きを指定します。
-ms.openlocfilehash: 396830d0da22c15f036f95808b3a94c33e9dc5bb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 22b9366b750a85a76498b83880aac2b9b974e1ac
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342750"
 ---
-# <a name="conlinejumpdirx-cell-shape-layout-section"></a>[ConLineJumpDirX] セル ([図形レイアウト] セクション)
+# <a name="conlinejumpdirx-cell-shape-layout-section"></a>[ConLineJumpDirX] セル ([Shape Layout] セクション)
 
 図形に接続する水平方向の動的コネクタに表示される飛び越し点の向きを指定します。
   
 |**値**|**飛び越し点の方向**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| 0  <br/> | ページの既定値  <br/> |**visLOJumpDirXDefault** <br/> |
-| 1  <br/> | 上  <br/> |**visLOJumpDirXUp** <br/> |
-| 2  <br/> | 下  <br/> |**visLOJumpDirXDown** <br/> |
+| .0  <br/> | ページの既定値  <br/> |**visLOJumpDirXDefault** <br/> |
+| 1-d  <br/> | 上  <br/> |**visLOJumpDirXUp** <br/> |
+| pbm-2  <br/> | 下へ  <br/> |**visLOJumpDirXDown** <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-ページにジャンプする*すべて*のコネクタの水平方向のデフォルトを設定するのには、PageLineJumpDirX セルを使用して、「ページ レイアウト」セクションでします。 
+ページ上の*すべて*のコネクタジャンプの既定の水平方向を設定するには、[ページレイアウト] セクションの [[pagelinejumpdirx]] セルを使用します。 
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ConLineJumpDirX] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | ConLineJumpDirX  <br/> |
+| セル名:  <br/> | [conlinejumpdirx]  <br/> |
    
 プログラムから、インデックスによって [ConLineJumpDirX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

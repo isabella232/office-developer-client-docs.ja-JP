@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 28b18e8d-fecf-a798-813e-c1a310002244
 description: 数式を入力またはテストするために使用できる、スクラッチ セルです。
-ms.openlocfilehash: 21c81c7a0a64c3016d8cff3b33d83ce785dc24eb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e7bd61b8bc7a1a3b765af738681d958e2c83ba05
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345088"
 ---
-# <a name="d-cell-connection-points-section"></a>[D] セル ([接続ポイント] セクション)
+# <a name="d-cell-connection-points-section"></a>[D] セル ([Connection Points] セクション)
 
 数式を入力またはテストするために使用できる、スクラッチ セルです。
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 [D] セルにアクセスするには、行を右クリックしてから、ショートカット メニューの [**図形要素の変更**] をクリックします。 
   
@@ -28,14 +28,14 @@ ms.locfileid: "19805150"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | Connections.D [ *i* ]、 *i* = < 1 > では、2、3.  <br/> |
+| セル名:  <br/> | 接続 D [ *i* ] *i* = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [D] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
-| セクション インデックス:  <br/> |**visSectionConnectionPts** <br/> |
-| 行インデックス:  <br/> |**visRowConnectionPts** +  *i* 、 *i* = 0, 1, 2.  <br/> |
+| セクション インデックス:  <br/> |**持つ vissectionconnectionpts** <br/> |
+| 行インデックス:  <br/> |**visRowConnectionPts** +  *i* = ** 0、1、2...  <br/> |
 | セル インデックス:  <br/> |**visCnnctD** <br/> |
    
 

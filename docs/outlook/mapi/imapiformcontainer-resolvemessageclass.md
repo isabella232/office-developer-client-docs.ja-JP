@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 9ce13f11-5787-4ea5-a84f-b1e3824529ee
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: db4b8d99c960deb3de3d228b2bf9549738501bcc
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c0954d6f8b14b4088ece2ac276b045b6c163ed98
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342162"
 ---
 # <a name="imapiformcontainerresolvemessageclass"></a>IMAPIFormContainer::ResolveMessageClass
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームのコンテナー内のフォームにメッセージ クラスを解決し、そのフォームのフォームについてはオブジェクトを取得します。
+メッセージクラスをフォームコンテナー内のフォームに解決し、そのフォームのフォーム情報オブジェクトを返します。
   
 ```cpp
 HRESULT ResolveMessageClass(
@@ -37,23 +37,23 @@ HRESULT ResolveMessageClass(
 
 ## <a name="parameters"></a>パラメーター
 
- _szMessageClass_
+ _szmessageclass_
   
-> [in]解決するメッセージ クラスの名前を示す文字列です。 メッセージ クラス名は、常に ANSI 文字列を Unicode ではないです。
+> 順番解決されるメッセージクラスの名前を示す文字列。 メッセージクラス名は常に ANSI 文字列で、Unicode はありません。
     
  _ulFlags_
   
-> [in]メッセージ クラスが解決される方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番メッセージクラスの解決方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPIFORM_EXACTMATCH 
   
-> 完全に一致するメッセージ クラス文字列のみを解決する必要があります。
+> 完全一致のメッセージクラス文字列のみを解決する必要があります。
     
  _ppforminfo_
   
-> [out]返されたフォームの情報オブジェクトへのポインターへのポインター。
+> 読み上げ返されるフォーム情報オブジェクトへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -61,25 +61,25 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> _SzMessageClass_パラメーターで渡されたメッセージ クラスでは、フォームのコンテナー内の任意のフォームのメッセージ クラスが一致しません。 
+> _szmessageclass_パラメーターで渡されたメッセージクラスが、フォームコンテナー内のフォームのメッセージクラスと一致しません。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-クライアント アプリケーションは、フォームのコンテナー内のフォームにメッセージ クラスを解決するのには**IMAPIFormContainer::ResolveMessageClass**メソッドを呼び出します。 _Ppforminfo_パラメーターに返されるフォームの情報オブジェクトを特定のメッセージ クラスのフォームのプロパティへのアクセスをさらに提供します。 
+クライアントアプリケーションは、 **imapiformcontainer:: ResolveMessageClass**メソッドを呼び出して、form コンテナー内のフォームにメッセージクラスを解決します。 _ppforminfo_パラメーターで返されたフォーム情報オブジェクトは、指定されたメッセージクラスを使用して、フォームのプロパティにさらにアクセスできるようにします。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-解決するメッセージ クラスの名前を渡すフォームにメッセージ クラスを解決するのには (たとえば、 `IPM.HelpDesk.Software`)。 正確な解像度を強制的に (つまり、メッセージ クラスの基本クラスへの解像度を防ぐために)、 _ulFlags_パラメーターでは、MAPIFORM_EXACTMATCH フラグを渡すことができます。 
+メッセージクラスをフォームに解決するには、解決するメッセージクラスの名前を渡します (例: `IPM.HelpDesk.Software`)。 解決策を正確にする (つまり、メッセージクラスの基本クラスに解決されないようにする) には、 _ulflags_パラメーターに MAPIFORM_EXACTMATCH フラグを渡すことができます。 
   
-フォームの情報オブジェクトの一部として解決済みのメッセージ クラスのクラス識別子が返されます。 [IMAPIFormMgr::PrepareForm](imapiformmgr-prepareform.md)または[IMAPIFormMgr::CreateForm](imapiformmgr-createform.md)のいずれかのメソッドを呼び出すまで、OLE ライブラリのクラス識別子が存在するとは限りません。 
+解決されたメッセージクラスのクラス識別子は、フォーム情報オブジェクトの一部として返されます。 [imapiformmgr::P repareform](imapiformmgr-prepareform.md)または[imapiformmgr:: CreateForm](imapiformmgr-createform.md)メソッドのいずれかを呼び出すまで、クラス識別子が OLE ライブラリに存在することを前提としていません。 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|FormContainerDlg.cpp  <br/> |CFormContainerDlg::OnResolveMessageClass  <br/> |MFCMAPI では、 **IMAPIFormContainer::ResolveMessageClass**メソッドを使用して、メッセージ クラスに関連付けられているフォームを見つけます。  <br/> |
+|FormContainerDlg  <br/> |CFormContainerDlg:: OnResolveMessageClass  <br/> |mfcmapi は、 **imapiformcontainer:: ResolveMessageClass**メソッドを使用して、メッセージクラスに関連付けられているフォームを特定します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

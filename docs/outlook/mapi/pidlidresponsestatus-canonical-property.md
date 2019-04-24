@@ -13,11 +13,11 @@ api_type:
 ms.assetid: e56142fd-204b-497e-83b9-59f9acda6cb4
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8c8e284752c6fd47eb7a8f227e2dbfeceebea596
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25385012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345760"
 ---
 # <a name="pidlidresponsestatus-canonical-property"></a>PidLidResponseStatus 標準プロパティ
 
@@ -25,44 +25,44 @@ ms.locfileid: "25385012"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-出席者の返信状況を指定します。
+出席者の応答状態を指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidResponseStatus  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
-|長い ID (LID):  <br/> |0x00008218  <br/> |
+|関連するプロパティ:  <br/> |dispidresponsestatus  <br/> |
+|プロパティセット:  <br/> |PSETID_Appointment  <br/> |
+|ロング ID (LID):  <br/> |0x00008218  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |会議  <br/> |
+|エリア:  <br/> |Meetings  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-レスポンスのステータスは、次の表の値のいずれかである必要があります。
+応答の状態は、次の表に示す値のいずれかである必要があります。
   
-|**応答ステータス**|**値**|**説明**|
+|**応答状態**|**値**|**説明**|
 |:-----|:-----|:-----|
-|respNone  <br/> |0x00000000  <br/> |対応するこのオブジェクトの必要はありません。 これは、オブジェクトの予定および会議の応答オブジェクトの大文字と小文字です。  <br/> |
-|respOrganized  <br/> |0x00000001  <br/> |この会議は、開催者に属しています。  <br/> |
-|respTentative  <br/> |0x00000002  <br/> |出席者の会議では、この値は、出席者が会議出席依頼を仮承諾することを示します。  <br/> |
-|respAccepted  <br/> |0x00000003  <br/> |出席者の会議 t には、この値は、出席者が会議出席依頼を受け入れることを示します。  <br/> |
-|respDeclined  <br/> |0x00000004  <br/> |出席者の会議では、この値は、出席者が会議出席依頼を辞退したことを示します。  <br/> |
-|respNotResponded  <br/> |0x00000005  <br/> |出席者の会議では、この値は、出席者がまだ応答していないことを示します。 この値は、会議出席依頼、会議の更新、および会議の取り消しにします。  <br/> |
+|[火炎なし]  <br/> |0x00000000  <br/> |このオブジェクトに対する応答は必要ありません。 これは、予定オブジェクトおよび会議の応答オブジェクトに当てはまります。  <br/> |
+|開催  <br/> |0x00000001  <br/> |この会議は開催者に帰属します。  <br/> |
+|仮承諾  <br/> |0x00000002  <br/> |出席者の会議でこの値を指定すると、出席者が会議出席依頼を仮承諾したことが示されます。  <br/> |
+|受付  <br/> |0x00000003  <br/> |出席者が会議出席依頼を承諾したことを出席者の会議 t に表示する値です。  <br/> |
+|辞退  <br/> |0x00000004  <br/> |出席者の会議でこの値を指定すると、出席者が会議出席依頼を辞退したことが示されます。  <br/> |
+|火炎 not応答  <br/> |0x00000005  <br/> |出席者が会議に応答していないことを示します。 この値は、会議出席依頼、会議の更新、および会議の取り消しに対応しています。  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
+> 予定、会議出席依頼、および応答メッセージのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -70,9 +70,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -1,31 +1,31 @@
 ---
-title: DataColumn の要素 (DataColumns_Type complexType)'Visio XML (')
+title: DataColumn 要素 (DataColumns_Type complexType) (' Visio XML ')
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 92469c2f-f809-dff2-d0ee-b3b8f75083d2
-description: データ列が Visio ユーザー インターフェイスの [外部データ] ウィンドウで表示する方法を定義し、そのデータ型を定義して、書式設定、列のデータが適用されます。
+description: Visio ユーザーインターフェイスの [外部データ] ウィンドウにデータ列を表示する方法を定義し、データの種類と書式を定義することによって、列のデータを修飾します。
 ms.openlocfilehash: 453ff44131575bd3d6927fdddb81db5f3f431a3b
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344822"
 ---
-# <a name="datacolumn-element-datacolumnstype-complextype-visio-xml"></a>DataColumn の要素 (DataColumns_Type complexType)'Visio XML (')
+# <a name="datacolumn-element-datacolumnstype-complextype-visio-xml"></a>DataColumn 要素 (DataColumns_Type complexType) (' Visio XML ')
 
-データ列が Visio ユーザー インターフェイスの [**外部データ**] ウィンドウで表示する方法を定義し、そのデータ型を定義して、書式設定、列のデータが適用されます。 
+Visio ユーザーインターフェイスの [**外部データ**] ウィンドウにデータ列を表示する方法を定義し、データの種類と書式を定義することによって、列のデータを修飾します。 
   
 ## <a name="element-information"></a>要素情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[DataColumn_Type](datacolumn_type-complextypevisio-xml.md) <br/> |
-|**名前空間** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
-|**文書パーツ** <br/> |recordsets.xml  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
+|**文書パーツ** <br/> |recordsets  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -36,13 +36,13 @@ ms.locfileid: "25395848"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマは、**シーケンス**、 **minOccurs**、 **maxOccurs**では、**選択**などの特定の要件を定義する場合は、定義のセクションを参照してください。 
+スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[Datacolumn](datacolumns-element-datarecordset_type-complextypevisio-xml.md) <br/> |[DataColumns_Type](datacolumns_type-complextypevisio-xml.md) <br/> |データ レコード セット内のすべての**列**要素が含まれています。  <br/> |
+|[DataColumns](datacolumns-element-datarecordset_type-complextypevisio-xml.md) <br/> |[DataColumns_Type](datacolumns_type-complextypevisio-xml.md) <br/> |データレコードセット内のすべての**DataColumn**要素を含みます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -50,21 +50,21 @@ ms.locfileid: "25395848"
   
 ### <a name="attributes"></a>属性
 
-|**属性**|**型**|**必須**|**説明**|**使用可能な値**|
+|**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|予定表  <br/> |xsd:unsignedShort  <br/> |省略可能  <br/> |データ列の予定表の ID です。  <br/> |Xsd:unsignedShort の値を入力します。  <br/> |
-|ColumnNameID  <br/> |xsd:string  <br/> |必須  <br/> |データ列の外部名。 [**外部データ**] ウィンドウおよび [データ グラフィックのラベルでは、見出しに表示されます。  <br/> |Xsd:string の値を入力します。  <br/> |
-|通貨型 (Currency)  <br/> |xsd:unsignedShort  <br/> |省略可能  <br/> |データ列の通貨の ID です。  <br/> |Xsd:unsignedShort の値を入力します。  <br/> |
-|DataType  <br/> |xsd:unsignedShort  <br/> |省略可能  <br/> |データ列内のデータの種類です。  <br/> |Xsd:unsignedShort の値を入力します。  <br/> |
-|Degree  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |単位、たとえば、乗、2 乗の程度 (電源) を指定します。 既定値 (省略可能な属性) とは、1 です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|DisplayOrder  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |(最大値) の右端の列の一番左の列 (0) から、**外部データ**ウィンドウでデータ列の表示位置を定義します。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|DisplayWidth  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |[**外部データ**] ウィンドウで [データ] 列の幅です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|Hyperlink  <br/> |xsd:boolean  <br/> |省略可能  <br/> |かどうか、データ列は、図形がデータにリンクされている場合、図形にハイパーリンクを作成します。  <br/> |Xsd:boolean の値を入力します。  <br/> |
-|ラベル  <br/> |xsd:string  <br/> |必須  <br/> |データ列のラベルです。  <br/> |Xsd:string の値を入力します。  <br/> |
-|LangID  <br/> |xsd:unsignedInt  <br/> |省略可能  <br/> |データ列の言語 ID です。  <br/> |Xsd:unsignedInt の値を入力します。  <br/> |
-|マップ  <br/> |xsd:boolean  <br/> |省略可能  <br/> |[**外部データ**] ウィンドウの列が表示されているかどうかを指定します。 表示されている列の true (1)列を表示するのには false (0)。 (省略可能な属性) の既定値は、列を表示するは。  <br/> |Xsd:boolean の値を入力します。  <br/> |
-|名前  <br/> |xsd:string  <br/> |必須  <br/> |データ列の内部名です。 図形がデータ行にリンクされている場合、図形に追加された図形データ項目 (カスタム プロパティ) の行の名前として使用されます。  <br/> |Xsd:string の値を入力します。  <br/> |
-|OrigLabel  <br/> |xsd:string  <br/> |省略可能  <br/> |列ラベルの基になる ADO インターフェイスによって、Visio に返されます。  <br/> |Xsd:string の値を入力します。  <br/> |
-|UnitType  <br/> |xsd:string  <br/> |省略可能  <br/> |データ列内のデータの単位のタイプ。  <br/> |Xsd:string の値を入力します。  <br/> |
+|カレンダー  <br/> |xsd: アン signedshort  <br/> |省略可能  <br/> |データ列のカレンダー ID。  <br/> |xsd: _ signedshort 型の値。  <br/> |
+|columnnameid  <br/> |xsd: string  <br/> |必須  <br/> |データ列の外部名。 [**外部データ**] ウィンドウの見出し、および [データグラフィック] のラベルに表示されます。  <br/> |xsd: string 型の値。  <br/> |
+|通貨  <br/> |xsd: アン signedshort  <br/> |省略可能  <br/> |データ列の通貨 ID。  <br/> |xsd: _ signedshort 型の値。  <br/> |
+|DataType  <br/> |xsd: アン signedshort  <br/> |省略可能  <br/> |データ列のデータの種類。  <br/> |xsd: _ signedshort 型の値。  <br/> |
+|Degree  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |単位の角度 (累乗) を指定します。たとえば、平方または cubed を指定します。 既定値 (省略した属性) は1です。  <br/> |xsd:/signedint 型の値。  <br/> |
+|displayorder  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |[**外部データ**] ウィンドウで、左端の列 (0) から右端の列 (最大値) までのデータ列の表示位置を定義します。  <br/> |xsd:/signedint 型の値。  <br/> |
+|displaywidth  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |[**外部データ**] ウィンドウのデータ列の幅。  <br/> |xsd:/signedint 型の値。  <br/> |
+|Hyperlink  <br/> |xsd: boolean  <br/> |省略可能  <br/> |図形がデータにリンクされているときに、データ列が図形にハイパーリンクを作成するかどうかを指定します。  <br/> |xsd: boolean 型の値。  <br/> |
+|Label  <br/> |xsd: string  <br/> |必須  <br/> |データ列のラベル。  <br/> |xsd: string 型の値。  <br/> |
+|LangID  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |データ列の言語 ID。  <br/> |xsd:/signedint 型の値。  <br/> |
+|変換  <br/> |xsd: boolean  <br/> |省略可能  <br/> |[**外部データ**] ウィンドウに列を表示するかどうかを指定します。 表示する列の場合は True (1)。列が表示されないようにするには、False (0) を指定します。 既定値 (省略可能) は、列を表示するためのものです。  <br/> |xsd: boolean 型の値。  <br/> |
+|名前  <br/> |xsd: string  <br/> |必須  <br/> |データ列の内部名。 図形がデータ行にリンクされている場合に、図形に追加された図形データ項目 (カスタムプロパティ) の行名として使用されます。  <br/> |xsd: string 型の値。  <br/> |
+|OrigLabel  <br/> |xsd: string  <br/> |省略可能  <br/> |基になる ADO インターフェイスで Visio に返される列ラベル。  <br/> |xsd: string 型の値。  <br/> |
+|UnitType  <br/> |xsd: string  <br/> |省略可能  <br/> |データ列のデータの単位の種類。  <br/> |xsd: string 型の値。  <br/> |
    
 

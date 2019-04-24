@@ -12,53 +12,53 @@ api_type:
 - COM
 ms.assetid: 6a85b695-731a-4401-9c9c-fda6bc308558
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: f4adbdfc041ebe5213c384db98343baa82af5b05
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4a0e7325618a38addefe562c8207066dfea620f9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342543"
 ---
 # <a name="pidtagoriginallyintendedrecipemailaddress-canonical-property"></a>PidTagOriginallyIntendedRecipEmailAddress 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-自動転送されたメッセージの最初の目的の受信者の電子メール アドレスが含まれています。
+autoforwarded メッセージの最初に意図した受信者の電子メールアドレスが含まれます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_ORIGINALLY_INTENDED_RECIP_EMAIL_ADDRESS、PR_ORIGINALLY_INTENDED_RECIP_EMAIL_ADDRESS_A、PR_ORIGINALLY_INTENDED_RECIP_EMAIL_ADDRESS_W  <br/> |
-|識別子:  <br/> |0x007C  <br/> |
+|識別子:  <br/> |0x007c  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |Server  <br/> |
+|エリア:  <br/> |サーバー  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-これらのプロパティでは、本来意図されているメッセージの受信者のアドレスのプロパティの例を示します。 メッセージを転送するには自動エージェントが設定されなければなりません。
+これらのプロパティは、最初に意図したメッセージ受信者のアドレスプロパティの例です。 これらは、メッセージを転送した自動エージェントによって設定される必要があります。
   
-これらのプロパティは、レポートの X.400 受信者ごとの属性に対応します。
+これらのプロパティは、受信者ごとの-400 レポート属性に対応しています。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

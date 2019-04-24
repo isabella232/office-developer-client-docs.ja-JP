@@ -7,11 +7,11 @@ ms.assetid: ef88e30e-7537-488e-bc72-8da29810f7aa
 description: Office 2013 テレメトリ ログ を使用して、Office 2013 と以前のバージョンの Office 用に構築されたソリューションの互換性に関する問題を特定します。
 localization_priority: Priority
 ms.openlocfilehash: 3954662a9476dca0cbb9bf4b8197979783b7e11e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346290"
 ---
 # <a name="troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log"></a>テレメトリ ログを使用した Office ファイルおよびカスタム ソリューションのトラブルシューティング
 
@@ -126,11 +126,11 @@ Office 2013 をインストールすると、テレメトリ ログ がインス
 |**イベント ID**|**タイトル**|**重大度**|**説明**|
 |:-----|:-----|:-----|:-----|
 |1  <br/> |ドキュメントは正常に読み込まれました  <br/> ||[ **ファイル**] 列に列挙されているファイルが Office アプリケーションで問題なく開かれました。  <br/> |
-|2  <br/> |ドキュメントを読み込めませんでした  <br/> |警告  <br/> | アプリケーションがファイルを読み込めませんでした。互換性の問題が存在する可能性があります。  <br/><br/>破損したブックを Excel 2013 で修復する方法の詳細については、「[破損したブックを修復する](https://office.microsoft.com/en-us/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx)」を参照してください。<br/><br/>破損した文書を Word 2013 で修復する方法の詳細については、「[文書のバックアップ ファイルを保存および復元する](https://office.microsoft.com/en-us/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx)」を参照してください。 <br/> |
+|2  <br/> |ドキュメントを読み込めませんでした  <br/> |警告  <br/> | アプリケーションがファイルを読み込めませんでした。互換性の問題が存在する可能性があります。  <br/><br/>破損したブックを Excel 2013 で修復する方法の詳細については、「[破損したブックを修復する](https://office.microsoft.com/ja-JP/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx)」を参照してください。<br/><br/>破損した文書を Word 2013 で修復する方法の詳細については、「[文書のバックアップ ファイルを保存および復元する](https://office.microsoft.com/ja-JP/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx)」を参照してください。 <br/> |
 |3  <br/> |テンプレートは正常に読み込まれました  <br/> ||[ **ファイル**] 列に列挙されているテンプレート ファイルが Office アプリケーションで問題なく開かれました。  <br/> |
-|4  <br/> |テンプレートを読み込めませんでした  <br/> |警告  <br/> | アプリケーションがテンプレート ファイルを読み込めませんでした。互換性の問題が存在するか、テンプレートの利用状況が変更されている可能性があります。  <br/><br/>破損したブックを Excel 2013 で修復する方法の詳細については、「[破損したブックを修復する](https://office.microsoft.com/en-us/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx)」を参照してください。<br/><br/>破損した文書を Word 2013 で修復する方法の詳細については、「[文書のバックアップ ファイルを保存および復元する](https://office.microsoft.com/en-us/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx)」を参照してください。 <br/> |
+|4  <br/> |テンプレートを読み込めませんでした  <br/> |警告  <br/> | アプリケーションがテンプレート ファイルを読み込めませんでした。互換性の問題が存在するか、テンプレートの利用状況が変更されている可能性があります。  <br/><br/>破損したブックを Excel 2013 で修復する方法の詳細については、「[破損したブックを修復する](https://office.microsoft.com/ja-JP/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx)」を参照してください。<br/><br/>破損した文書を Word 2013 で修復する方法の詳細については、「[文書のバックアップ ファイルを保存および復元する](https://office.microsoft.com/ja-JP/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx)」を参照してください。 <br/> |
 |5  <br/> |アドインは正常に読み込まれました  <br/> ||[ **ファイル**] 列に列挙されているアドインが Office アプリケーションで正常に読み込まれました。互換性の問題は検出されませんでした。  <br/> |
-|6  <br/> |アドインを読み込めませんでした  <br/> |重大  <br/> | アプリケーションが [ **ファイル**] 列に列挙されているアドインを読み込めませんでした。  <br/><br/>破損したブックを Excel 2013 で修復する方法の詳細については、「[破損したブックを修復する](https://office.microsoft.com/en-us/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx)」を参照してください。 <br/><br/>  破損した文書を Word 2013 で修復する方法の詳細については、「[文書のバックアップ ファイルを保存および復元する](https://office.microsoft.com/en-us/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx)」を参照してください。 <br/> |
+|6  <br/> |アドインを読み込めませんでした  <br/> |重大  <br/> | アプリケーションが [ **ファイル**] 列に列挙されているアドインを読み込めませんでした。  <br/><br/>破損したブックを Excel 2013 で修復する方法の詳細については、「[破損したブックを修復する](https://office.microsoft.com/ja-JP/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx)」を参照してください。 <br/><br/>  破損した文書を Word 2013 で修復する方法の詳細については、「[文書のバックアップ ファイルを保存および復元する](https://office.microsoft.com/ja-JP/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx)」を参照してください。 <br/> |
 |7  <br/> |アドインのマニフェストが正常にダウンロードされました  <br/> ||ホスト アプリケーションは Office アドイン 用のマニフェストを正常に読み込みました。  <br/> |
 |8  <br/> |アドインのマニフェストがダウンロードされませんでした  <br/> |重大  <br/> |ホスト アプリケーションは Office アドインのマニフェスト ファイルを、SharePoint カタログ、コーポレート カタログ、Office ストアのいずれからも読み込めませんでした。  <br/> |
 |9  <br/> |アドイン マニフェストを解析できませんでした。  <br/> |重大  <br/> |ホスト アプリケーションは Office アドイン のマニフェストを読み込みましたが、XML を読み取れませんでした。  <br/> |

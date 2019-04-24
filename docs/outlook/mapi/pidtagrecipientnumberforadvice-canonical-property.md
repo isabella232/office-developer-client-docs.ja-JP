@@ -12,51 +12,51 @@ api_type:
 - COM
 ms.assetid: 636c1e75-3024-43ca-a7dd-1bb480dfbb5b
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3f23a332ee6778f71ce0809dfae8c0b6a92246a8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 79ef85955f15e0ca829ac6f206dddc17031b0562
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356694"
 ---
 # <a name="pidtagrecipientnumberforadvice-canonical-property"></a>PidTagRecipientNumberForAdvice 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-このプロパティには、メッセージの受信者の連絡先電話番号メッセージの物理的な配信を通知するにはが含まれています。
+このプロパティには、メッセージの物理的な配信をアドバイスするために呼び出すメッセージ受信者の電話番号が含まれます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_RECIPIENT_NUMBER_FOR_ADVICE、PR_RECIPIENT_NUMBER_FOR_ADVICE_A、PR_RECIPIENT_NUMBER_FOR_ADVICE_W  <br/> |
-|識別子:  <br/> |0x0C14  <br/> |
+|識別子:  <br/> |0x0c14  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
-|領域:  <br/> |MAPI 受信者  <br/> |
+|エリア:  <br/> |MAPI 受信者  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-これらのプロパティは、人間の受信者が配信時に予期しない電子メール ボックスではなく、物理的な宛先への配信と組み合わせて使用するものです。 例は、fax 送付状の電話番号です。
+これらのプロパティは、電子メールボックスではなく、物理的な送信先への配信と組み合わせて使用することを目的としていますが、配信時に人間の受信者が存在しないことが想定されているとは限りません。 この例は、fax 送付状の電話番号です。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

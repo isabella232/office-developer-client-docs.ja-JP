@@ -12,51 +12,51 @@ api_type:
 - HeaderDef
 ms.assetid: aefc34c5-1beb-44cf-a455-90f466e157ce
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 34f61f3ef64e5751f9be3df534c4379583447799
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6fabb03d552f195c200b0ecbd8fd69f470c0e1fd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344892"
 ---
 # <a name="pidtagcontactaddressbookmultipleaddressflag-canonical-property"></a>PidTagContactAddressBookMultipleAddressFlag 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-連絡先アイテムごとに複数の電子メール アドレスをプロバイダーがサポートする場合は TRUE にするフラグが含まれています。
+プロバイダーが連絡先アイテムごとに複数の電子メールアドレスをサポートしている場合に TRUE となるフラグが含まれています。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_CONTAB_MULTI_ADDR_FLAG  <br/> |
 |識別子:  <br/> |0x6614  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|領域:  <br/> |連絡先のアドレス帳  <br/> |
+|エリア:  <br/> |連絡先のアドレス帳  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティが TRUE の場合、プロバイダーは電子メール アドレスがない連絡先を許可しません。 FALSE の場合、プロバイダーは、通常の電子メール アドレスがあるかどうかすべての連絡先を示します。 プライマリ電子メール アドレスのみが受け入れられます。 これは、連絡先のアドレス帳コンテナー、および連絡先のアドレス帳コンテナーのテーブル内の列のプロパティです。
+このプロパティが TRUE の場合、プロバイダーはメールアドレスのない連絡先を許可しません。 FALSE の場合、プロバイダーは、プライマリ電子メールアドレスがあるかどうかにかかわらず、すべての連絡先を表示します。 優先されるのは、プライマリ電子メールアドレスのみです。 これは連絡先アドレス帳コンテナーのプロパティで、連絡先アドレス帳コンテナーの列になります。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

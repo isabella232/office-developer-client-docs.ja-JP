@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 56c64e23-4a99-4f80-ba06-dfae2a5fe961
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 4414ae866dece0654131d1575fe699676892709f
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25396835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345431"
 ---
 # <a name="pidlidappointmentauxiliaryflags-canonical-property"></a>PidLidAppointmentAuxiliaryFlags 標準プロパティ
 
@@ -25,47 +25,47 @@ ms.locfileid: "25396835"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-補助オブジェクトの状態を示すビット フィールドを指定します。
+オブジェクトの補助状態を記述するビットフィールドを指定します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |dispidApptAuxFlags  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
-|長い ID (LID):  <br/> |0x00008207  <br/> |
+|プロパティセット:  <br/> |PSETID_Appointment  <br/> |
+|ロング ID (LID):  <br/> |0x00008207  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |会議  <br/> |
+|エリア:  <br/> |Meetings  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティが必要ではありません。 以下は、個々 のフラグを設定することができます。
+このプロパティは必須ではありません。 設定できる個別のフラグを次に示します。
   
 C (auxApptFlagCopied、0x00000001)
   
-> このフラグは、カレンダー オブジェクトを別の予定表フォルダーからコピーすることを示します。
+> このフラグは、予定表オブジェクトが別の予定表フォルダーからコピーされたことを示します。
     
 R (auxApptFlagForceMtgResponse、0x00000002)
   
-> 会議出席依頼には、このフラグは、そのクライアントまたはサーバーを送信会議の開催者に返信応答を選択した場合を示します。
+> 会議出席依頼のこのフラグは、応答が選択されたときに、クライアントまたはサーバーが会議出席依頼を開催者に返信する必要があることを示します。
     
 F (auxApptFlagForwarded、0x00000004)
   
-> 会議出席依頼には、このフラグは、(開催者による転送を含む) が転送されたことを示します、開催者からの招待状をしているのではなく。
+> 会議出席依頼のこのフラグは、開催者からの招待ではなく、転送された (開催者によって転送されることを含む) ことを示します。
     
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
+> 予定、会議出席依頼、および応答メッセージのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -73,9 +73,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -1,5 +1,5 @@
 ---
-title: 予定アイテムのリマインダーを作成する
+title: 予定アイテムの事前通知を作成する
 TOCTitle: Create a reminder for an appointment item
 ms:assetid: 85e772f0-65ac-4abc-8286-9099882a2400
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff184623(v=office.15)
@@ -8,11 +8,11 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 1f5f31c480f31b01e53fec9651c8154765b581a3
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349498"
 ---
 # <a name="create-a-reminder-for-an-appointment-item"></a>予定アイテムのリマインダーを作成する
 

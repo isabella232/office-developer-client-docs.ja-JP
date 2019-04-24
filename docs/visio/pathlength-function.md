@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6f47ea08-fb5e-7d48-e84a-2a6570564924
 description: 指定した [Geometry] セクションで定義されているパスの長さを返します。
-ms.openlocfilehash: 37cabbde9fc0782bc1fde46f3065d0c945c9dada
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e4f90c2bb886f54164bedab5f8d78fc528758414
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344416"
 ---
 # <a name="pathlength-function"></a>PATHLENGTH 関数
 
@@ -25,23 +25,23 @@ ms.locfileid: "19805981"
   
 ## <a name="syntax"></a>構文
 
-PATHLENGTH (* **で** * * * *[] セグメント** *) 
+pathlength (* * *section* * * * * *[, segment]* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _section_ <br/> |必須  <br/> |**文字列型 (String)** <br/> |パスを表す [Geometry] セクション。[Path] セルへの参照によって指定されます (Geometry1.Path など)。  <br/> |
-| _セグメント_ <br/> |省略可能  <br/> |**整数型 (Integer)** <br/> |測定するパスの 1 から始まるセグメント。  <br/> |
+| _セクション_ <br/> |必須  <br/> |**String** <br/> |パスを表す [Geometry] セクション。[Path] セルへの参照によって指定されます (Geometry1.Path など)。  <br/> |
+| _化_ <br/> |省略可能  <br/> |**整数型 (Integer)** <br/> |測定するパスの 1 から始まるセグメント。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
- **Double**
+ **倍精度浮動小数点型 (Double)**
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-_セクション_または_セグメント_が存在しない場合 Microsoft Visio は #ref! を返します。 
+_セクション_または_セグメント_が存在しない場合は、#REF! が返されます。 
   
-_セグメント_の値を含めると、PATHLENGTH はその部分だけの長さを返します。 
+_セグメント_値を指定すると、pathlength はそのセグメントの長さのみを返します。 
   
 

@@ -1,5 +1,5 @@
 ---
-title: IFolderSupportGetSupportMask
+title: ifoldersupportgetsupportmask
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8d8aaeb7-57d7-ba4c-95d1-a5368cfc4afe
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: c51f4a7266e67be08f31daa5afbf23ce0b256252
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 1c27bdc52ebe725c40cbf318fab0678f41cdc287
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350835"
 ---
 # <a name="ifoldersupportgetsupportmask"></a>IFolderSupport::GetSupportMask
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-共有フォルダーのサポートに関する情報を取得します。
+フォルダーの共有のサポートに関する情報を取得します。
   
 ```cpp
 HRESULT GetSupportMask( 
@@ -37,17 +37,17 @@ HRESULT GetSupportMask(
 
  _pdwSupportMask_
   
-> [out]フォルダーが共有をサポートしているかを示すビットマスクです。
+> 読み上げフォルダーが共有をサポートしているかどうかを示すビットマスク。
     
  **FS_NONE**
   
-> フォルダーを共有するサポートしていないことを示します。
+> フォルダーが共有をサポートしていないことを示します。
     
  **FS_SUPPORTS_SHARING**
   
-> 共有フォルダーをサポートしていることを示します。
+> フォルダーが共有をサポートしていることを示します。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   

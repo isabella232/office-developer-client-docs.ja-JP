@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: 148695dd-d886-4a06-9cfe-749059ae91ed
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: cb0630ba30f8d3d7ae38c165c5da60bbc12077c1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 635f22c97ed27889245becbebb990ab3995b70b0
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345778"
 ---
 # <a name="mapigetdefaultmalloc"></a>MAPIGetDefaultMalloc
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-既定の MAPI のメモリ割り当て関数のアドレスを取得します。
+既定の MAPI メモリ割り当て関数のアドレスを取得します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 LPMALLOC MAPIGetDefaultMalloc( );
@@ -43,6 +43,6 @@ LPMALLOC MAPIGetDefaultMalloc( );
   
 ## <a name="return-value"></a>Return value
 
-**MAPIGetDefaultMalloc**関数は、既定の MAPI のメモリ割り当て関数にポインターを返します。 
+**mapigetdefaultmalloc**関数は、既定の MAPI メモリ割り当て関数へのポインターを返します。 
   
 

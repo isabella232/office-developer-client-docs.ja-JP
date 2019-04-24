@@ -8,26 +8,26 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 17cba69b-2b25-4b99-99d9-ec68fb8a35b5
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 879ba4afe85e1f6db31bd829411689b2dad58ed9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f60c4d3761694439d10b073fda5bc36443c13e43
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32347825"
 ---
 # <a name="hropenabentryusingdefaultcontext"></a>HrOpenABEntryUsingDefaultContext
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-_PEmsmdbUID_パラメーターとして従来の**emsmdbUID**を使用する[HrOpenABEntryWithExchangeContext](hropenabentrywithexchangecontext.md)と同じ機能を実行します。 [HrOpenABEntryWithExchangeContext](hropenabentrywithexchangecontext.md)への呼び出しの正しい**emsmdbUID**を取得することはできない場合に、この関数を使用しません。
+[HrOpenABEntryWithExchangeContext](hropenabentrywithexchangecontext.md)と同じ機能を実行します。ただし、 _pEmsmdbUID_パラメーターとして従来の**emsmdbUID**を使用する点が異なります。 [HrOpenABEntryWithExchangeContext](hropenabentrywithexchangecontext.md)の呼び出しに対して正しい**emsmdbUID**を取得できない場合は、この関数を使用しないでください。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |abhelp.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |abhelp .h  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 HRESULT HrOpenABEntryUsingDefaultContext(
@@ -46,58 +46,58 @@ HRESULT HrOpenABEntryUsingDefaultContext(
 
  _pmsess_
   
-> [in]**IMAPISession**にログオンします。 NULL にすることはできません。
+> 順番ログオンしている**imapisession**。 NULL にすることはできません。
     
  _pAddrBook_
   
-> [in]アドレス帳のエントリ id を開くために使用します。 NULL にすることはできません。
+> 順番エントリ識別子を開くために使用されるアドレス帳。 NULL にすることはできません。
     
  _cbEntryID_
   
-> [in]_LpEntryID_パラメーターで指定されたエントリの識別子のバイト数です。 
+> 順番_lな tryid_パラメーターで指定されたエントリ id のバイト数。 
     
- _lpEntryID_
+ _lて tryid_
   
->  [in]開くにはアドレス帳のエントリを表すエントリの識別子へのポインター。 
+>  順番開くアドレス帳のエントリを表すエントリ識別子へのポインター。 
     
- _lpInterface_
+ _lpinterface_
   
-> [in][Open] エントリにアクセスするために使用されるインターフェイスのインターフェイス id (IID) へのポインター。 NULL を渡すことは、標準的なオブジェクトのインターフェイスを返します。 メッセージング ユーザーは、標準のインタ フェースは[IMailUser: IMAPIProp](imailuserimapiprop.md)。 配布リストには、 [IDistList: IMAPIContainer](idistlistimapicontainer.md)とは、コンテナーの[これにより: IMAPIContainer](iabcontainerimapicontainer.md)。 呼び出し元は、適切な標準インターフェイスまたはインターフェイスの継承階層内に_lpInterface_を設定できます。 
+> 順番開いているエントリへのアクセスに使用されるインターフェイスのインターフェイス識別子 (IID) へのポインター。 NULL を渡すと、オブジェクトの標準インターフェイスが返されます。 メッセージングユーザーの場合、標準インターフェイスは[imailuser: imapiprop](imailuserimapiprop.md)です。 配布リストの場合、これは[idistlist: IMAPIContainer](idistlistimapicontainer.md)で、コンテナーの場合は[IABContainer: IMAPIContainer](iabcontainerimapicontainer.md)です。 呼び出し元は、 _lpinterface_を適切な標準インターフェイスまたは継承階層内のインターフェイスに設定できます。 
     
  _ulFlags_
   
-> [in]エントリを開く方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番エントリが開かれる方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_BEST_ACCESS
   
-> 最大許可されたネットワークとクライアントのアクセス許可を持つエントリを開くことを要求します。 などの場合、クライアントでは、読み取りし、書き込みのアクセス許可、アドレス帳プロバイダーしようと読み取りでエントリを開き、書き込みのアクセス許可。 クライアントは、[open] エントリの[IMAPIProp::GetProps](imapiprop-getprops.md)メソッドを呼び出すと、PR_ACCESS_LEVEL (PidTagAccessLevel) プロパティを取得するが許可されているアクセス レベルを取得できます。 
+> 許可された最大ネットワークおよびクライアントアクセス許可でエントリが開かれることを要求します。 たとえば、クライアントが読み取りおよび書き込みアクセス許可を持っている場合、アドレス帳プロバイダーは、読み取りおよび書き込みアクセス許可を持つエントリを開こうとします。 クライアントは、開いているエントリの[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出して、PR_ACCESS_LEVEL (PidTagAccessLevel) プロパティを取得することによって付与されたアクセスレベルを取得できます。 
     
 MAPI_CACHE_ONLY
   
-> オフライン アドレス帳のみを使用すると、名前解決を実行します。 たとえば、このフラグを使用すると、exchange キャッシュ モードでグローバル アドレス一覧 (GAL) を開き、クライアントとサーバー間のトラフィックを作成することがなく、キャッシュからそのアドレス帳のエントリにアクセスするのにクライアント アプリケーションを許可します。 このフラグは、Exchange のアドレス帳プロバイダーでのみサポートします。
+> 名前解決を実行するのにオフラインアドレス帳のみを使用します。 たとえば、このフラグを使用して、クライアントアプリケーションが exchange キャッシュモードでグローバルアドレス一覧 (GAL) を開き、クライアントとサーバーの間のトラフィックを作成せずに、キャッシュからそのアドレス帳のエントリにアクセスできるようにすることができます。 このフラグは、Exchange アドレス帳プロバイダーによってのみサポートされています。
     
 MAPI_DEFERRED_ERRORS
   
-> 成功する可能性のあるエントリは、完全にオープンになり、エントリへの以降の呼び出しがエラーを返す可能性があることを示す前に呼び出しを使用できます。
+> 呼び出しが正常に完了します。エントリが完全に開かれて使用可能になる前に、エントリへの以降の呼び出しでエラーが返される可能性があることを意味します。
     
 MAPI_GAL_ONLY
   
-> GAL のみを使用すると、名前解決を実行します。 このフラグは、Exchange のアドレス帳プロバイダーでのみサポートします。
+> 名前解決を実行するには、GAL のみを使用します。 このフラグは、Exchange アドレス帳プロバイダーによってのみサポートされています。
     
 MAPI_MODIFY
   
-> エントリで開くことの要求は、アクセス許可を読み書きします。 エントリは読み取り専用アクセスで開くとき、既定であるために読み書き権限が与えられている MAPI_MODIFY が設定されているかどうかに関係なくクライアントを想定しません。
+> 読み取りと書き込みのアクセス許可を使用して、エントリを開くように要求します。 既定では、エントリは読み取り専用アクセスで開かれるため、クライアントは、MAPI_MODIFY が設定されているかどうかに関係なく、読み取りおよび書き込みアクセス許可が付与されたことを想定する必要はありません。
     
 MAPI_NO_CACHE
   
-> 名前解決を実行するのには、オフライン アドレス帳を使用しません。 このフラグは、Exchange のアドレス帳プロバイダーでのみサポートします。
+> では、オフラインアドレス帳を使用して名前解決を実行しません。 このフラグは、Exchange アドレス帳プロバイダーによってのみサポートされています。
     
- _lpulObjType_
+ _lpulobjtype_
   
-> [out]開かれているエントリの種類へのポインター。
+> 読み上げ開かれた項目の種類へのポインター。
     
- _lppUnk_
+ _lppunk_
   
-> [out]開かれているエントリのポインターへのポインター。
+> 読み上げ開かれたエントリのポインターへのポインター。
     
 

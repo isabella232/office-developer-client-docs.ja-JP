@@ -8,33 +8,33 @@ f1_keywords:
 - Vis_DSS.chm82251463
 localization_priority: Normal
 ms.assetid: b945b7c2-153f-2fc3-b768-1e975254ddf5
-description: リストから最小値を返します。 負の無限大に最も近い最小の手段です。
-ms.openlocfilehash: a0de95875ea43259d1bd1da19c3e7a4af2ae0f9d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: リストから最小値を返します。 最小値は負の無限大に最も近いことを意味します。
+ms.openlocfilehash: 7c9eb1a8d4ce30e7ab9253c2864ecd38474e8ff6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360649"
 ---
 # <a name="min-function"></a>MIN 関数
 
-リストから最小値を返します。 負の無限大に最も近い最小の手段です。
+リストから最小値を返します。 最小値は負の無限大に最も近いことを意味します。
   
 ## <a name="syntax"></a>構文
 
-最小 (* * *[数値 1]* * *、* **数値 2* * *,...、* * *numberN* * *) 
+MIN (* * *number1* * *, * * *number2* * *,..., * **数字 n* * *) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _number1_ <br/> |必須  <br/> |**可変型 (Varies)** <br/> |リスト内の最初の数値を指定します。  <br/> |
-| _number2_ <br/> |省略可能  <br/> |**可変型 (Varies)** <br/> | リスト内の 2 番目の数値を指定します。  <br/> |
-| _numberN_ <br/> |省略可能  <br/> |**可変型 (Varies)** <br/> |リスト内の n 番目の数値を指定します。  <br/> |
+| _number1_ <br/> |必須  <br/> |**さまざま** <br/> |リスト内の最初の数値を指定します。  <br/> |
+| _number2_ <br/> |省略可能  <br/> |**さまざま** <br/> | リスト内の 2 番目の数値を指定します。  <br/> |
+| _番号 n_ <br/> |省略可能  <br/> |**さまざま** <br/> |リスト内の n 番目の数値を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
-可変値
+さまざま
   
 ## <a name="example"></a>例
 

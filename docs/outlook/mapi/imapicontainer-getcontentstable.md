@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 88c7a666-875d-473a-b126-dbbb7009f7d9
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9fb8919287420038b5c9165bb14b7d33d1ad2fe1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 28315c5a09eba32816a0b63513cb98d1c30a96bb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349288"
 ---
 # <a name="imapicontainergetcontentstable"></a>IMAPIContainer::GetContentsTable
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-コンテナーの内容のテーブルへのポインターを返します。
+コンテナーの contents テーブルへのポインターを返します。
   
 ```cpp
 HRESULT GetContentsTable(
@@ -34,69 +34,69 @@ HRESULT GetContentsTable(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]コンテンツ テーブルを返す方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番コンテンツテーブルがどのように返されるかを制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_ASSOCIATED 
   
-> コンテナーの内容が関連付けられているテーブルは、標準的な内容のテーブルの代わりに返されます。 このフラグは、フォルダーでのみ使用されます。 コンテンツが関連付けられているテーブルに含まれるメッセージは、MAPI_ASSOCIATED フラグが設定されている[IMAPIFolder::CreateMessage](imapifolder-createmessage.md)メソッドの呼び出しで作成されました。 クライアントは、フォーム、ビュー、およびその他の非表示のメッセージを取得するために通常関連付けられている内容のテーブルを使用します。 
+> コンテナーの関連する contents テーブルは、標準の contents テーブルの代わりに返される必要があります。 このフラグは、フォルダーでのみ使用されます。 MAPI_ASSOCIATED フラグが[imapifolder:: CreateMessage](imapifolder-createmessage.md)メソッドの呼び出しで設定された状態で、関連付けられたコンテンツテーブルに含まれているメッセージが作成されました。 通常、クライアントは関連付けられた contents テーブルを使用して、フォーム、ビュー、およびその他の非表示のメッセージを取得します。 
     
 ACLTABLE_FREEBUSY
   
-> **PR_MEMBER_RIGHTS**で frightsFreeBusySimple と frightsFreeBusyDetailed の権限にアクセスを有効にします。
+> **PR_MEMBER_RIGHTS**の frightsFreeBusySimple および frightsFreeBusyDetailed 権限へのアクセスを有効にします。
     
 MAPI_DEFERRED_ERRORS 
   
-> **GetContentsTable**が正常に完了可能性があります前にテーブルが使用可能な呼び出し元にします。 テーブルが使用できない場合は、テーブルのそれ以降の呼び出しを行うとエラーが発生します。 
+> **getcontentstable**は、呼び出し元がテーブルを使用できるようになる前に、正常に返すことができます。 テーブルが使用できない場合は、次のテーブル呼び出しを行うとエラーが発生する可能性があります。 
     
 MAPI_UNICODE 
   
-> Unicode 形式で文字列データを含む列が返されるように要求します。 MAPI_UNICODE フラグが設定されていない場合、ANSI 形式の文字列が返されます。 
+> 文字列データを含む列が Unicode 形式で返されるように要求します。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式で返されます。 
     
 SHOW_SOFT_DELETES
   
-> ソフトとしてマークされているアイテムの削除を示しています-は削除済みアイテムの保存に時間の段階です。
+> 現在、削除済みアイテムの保存期間の段階にあるとマークされているアイテムを表示します。
     
- _lppTable_
+ _lpptable_
   
-> [out]コンテンツ テーブルへのポインターへのポインター。
+> 読み上げcontents テーブルへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 内容のテーブルが正常に取得しました。
+> コンテンツテーブルが正常に取得されました。
     
 MAPI_E_BAD_CHARWIDTH 
   
-> か、MAPI_UNICODE フラグが設定された実装は Unicode をサポートしていないまたは MAPI_UNICODE が設定されていませんでしたし、実装は、Unicode だけをサポートしています。
+> MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
     
 MAPI_E_NO_SUPPORT 
   
-> コンテナーでは、内容がないので、内容のテーブルを提供することはできません。
+> コンテナーには内容が含まれていないため、目次表を提供することはできません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPIContainer::GetContentsTable**メソッドは、コンテナーの内容のテーブルへのポインターを返します。 コンテンツ テーブルには、コンテナー内のオブジェクトについての概要情報が含まれています。 
+**IMAPIContainer:: getcontentstable**メソッドは、コンテナーの contents テーブルへのポインターを返します。 contents テーブルには、コンテナー内のオブジェクトに関する概要情報が含まれています。 
   
-テーブルの内容は、長い列のセットを持っています。 必須および省略可能なテーブルの列の内容の一覧は、[テーブルの内容](contents-tables.md)を参照してください。 
+目次テーブルに長い列セットがあります。 目次表の必須およびオプションの列の完全な一覧については、「 [contents tables](contents-tables.md)」を参照してください。 
   
-内容がないといくつかのコンテナーのことができます。 これらのコンテナーでは、 **GetContentsTable**の実装から MAPI_E_NO_SUPPORT を返します。
+一部のコンテナーには内容が含まれていない可能性があります。 これらのコンテナーは、 **getcontentstable**の実装から MAPI_E_NO_SUPPORT を返します。
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-コンテナーのコンテンツ テーブルをサポートする場合も、次の行う必要があります。
+コンテナーの contents テーブルをサポートしている場合は、次の操作も実行する必要があります。
   
-- **PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)) のプロパティを開くには、コンテナーの[IMAPIProp::OpenProperty](imapiprop-openproperty.md)のメソッドの呼び出しをサポートします。
+- コンテナーの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドへの呼び出しをサポートして、 **PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)) プロパティを開きます。
     
-- コンテナーの呼び出しへの応答として**PR_CONTAINER_CONTENTS**を返す 
+- コンテナーの呼び出しに対する応答として**PR_CONTAINER_CONTENTS**を返します。 
     
-    [IMAPIProp::GetProps](imapiprop-getprops.md)および[IMAPIProp::GetPropList](imapiprop-getproplist.md)の方法です。 
+    [imapiprop:: GetProps](imapiprop-getprops.md)および[imapiprop:: getproplist](imapiprop-getproplist.md)メソッド。 
     
-このメソッドをリモート トランスポート プロバイダーの実装へのポインターを返す必要があります、 [IMAPITable: IUnknown](imapitableiunknown.md) 、 **GetContentsTable**メソッドに渡される_ppTable_パラメーター内のインタ フェースです。 場合は、トランスポート プロバイダーは、既存のコンテンツ テーブルへのポインターを返すには十分です。 場合は、このメソッドが新規に作成する必要があります[IMAPITable: IUnknown](imapitableiunknown.md)オブジェクト、テーブルには、メッセージ ヘッダー (使用可能な場合)、および新しいテーブルへのポインターを返します。 [ITableData::HrGetView](itabledata-hrgetview.md)メソッドは、戻り値を生成して、 _ppTable_パラメーターでテーブルのポインターを格納するに便利です。 内容のテーブルは、少なくとも次のプロパティの列をサポートする必要があります。 
+リモートトランスポートプロバイダーのこのメソッドの実装では、 **getcontentstable**メソッドに渡された_pptable_パラメーターの[IMAPITable: IUnknown](imapitableiunknown.md)インターフェイスへのポインターを返す必要があります。 トランスポートプロバイダーに既存のコンテンツテーブルがある場合は、そのテーブルへのポインターを返すだけで十分です。 含まれていない場合、このメソッドは新しい[IMAPITable: IUnknown](imapitableiunknown.md)オブジェクトを作成し、メッセージヘッダーを (使用可能な場合は) テーブルに設定して、新しいテーブルへのポインターを返します。 [itabledata:: hrgetview](itabledata-hrgetview.md)メソッドは、戻り値を生成し、テーブルポインターを_pptable_パラメーターに格納するのに便利です。 contents テーブルは、少なくとも次のプロパティ列をサポートしている必要があります。 
   
 - **PR_ENTRYID**([PidTagEntryID](pidtagentryid-canonical-property.md))
     
@@ -106,7 +106,7 @@ MAPI_E_NO_SUPPORT
     
 - **PR_DISPLAY_TO**([PidTagDisplayTo](pidtagdisplayto-canonical-property.md))
     
-- **あるの PR_SUBJECT**([PidTagSubject](pidtagsubject-canonical-property.md))
+- **PR_SUBJECT**([PidTagSubject](pidtagsubject-canonical-property.md))
     
 - **PR_MESSAGE_CLASS**([PidTagMessageClass](pidtagmessageclass-canonical-property.md))
     
@@ -136,17 +136,17 @@ MAPI_E_NO_SUPPORT
     
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-文字列とバイナリの内容のテーブルの列を切り捨てることができます。 通常、プロバイダーは、255 文字を返します。 テーブルには、切り捨てられた列が含まれて かどうか、あらかじめ知ることはできません、ため、列の長さが 255 であるか、510 バイトである場合、列が切り捨てられることを想定しています。 常にから取得できます、切り捨てられた列の最大の価値に応じて、直接オブジェクトを開くには、そのエントリの識別子を使用して、 **IMAPIProp::GetProps**メソッドを呼び出すことによって。 
+文字列およびバイナリコンテンツの表の列を切り捨てられます。 通常、プロバイダーは255文字を返します。 テーブルに切り捨てられた列が含まれているかどうかを事前に知ることはできないため、列の長さが255または510バイトの場合は、列が切り捨てられていると仮定します。 必要に応じて、エントリ id を使用して、切り捨てられた列の完全な値をオブジェクトから直接取得して、 **imapiprop:: GetProps**メソッドを呼び出すことができます。 
   
-プロバイダーの実装の制限や並べ替え操作によっては、文字列のすべてまたはその文字列の切り捨てられたバージョンを適用できます。
+プロバイダーの実装に応じて、制限および並べ替え操作は、すべての文字列またはその文字列の切り捨てられたバージョンに適用できます。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ContentsTableDialog.cpp  <br/> |CContentsTableDlg::CContentsTableDlg  <br/> |**CContentsTableDlg**クラスでは、 **GetContentsTable**を使用して、コンテンツ テーブル内のエントリを取得します。  <br/> |
+|ContentsTableDialog  <br/> |CContentsTableDlg:: CContentsTableDlg  <br/> |**CContentsTableDlg**クラスは、 **getcontentstable**を使用して、contents テーブル内のエントリを取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

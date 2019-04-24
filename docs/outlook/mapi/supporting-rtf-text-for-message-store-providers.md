@@ -1,5 +1,5 @@
 ---
-title: メッセージ ストア プロバイダーでの RTF 形式テキストのサポート
+title: メッセージストアプロバイダーに RTF テキストをサポートする
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,25 +7,25 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 0022fe70-cf11-49a5-9c97-a6bc5b5b13aa
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 3e65ebd3ea485ca54978d622e8aaf093dc5eff74
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: dc1d8a5e237b7b34f3a57e9789e03e2f16237764
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349617"
 ---
-# <a name="supporting-rtf-text-for-message-store-providers"></a>メッセージ ストア プロバイダーでの RTF 形式テキストのサポート
+# <a name="supporting-rtf-text-for-message-store-providers"></a>メッセージストアプロバイダーに RTF テキストをサポートする
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-一部のクライアント アプリケーションは、メッセージでリッチ テキスト形式 (RTF) のテキストを使用するようにします。 メッセージは、メッセージ内の rtf 形式のテキストをサポートするためにプロバイダーのニーズを保存する場合 ([PidTagBody](pidtagbody-canonical-property.md)) である**PR_BODY**プロパティだけでなく、 **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) のプロパティを処理する必要があります。 主に、つまり、両方のプロパティを格納する**PR_BODY には** **PR_RTF_COMPRESSED**内のテキストのプレーン テキスト版が含まれていることを確認します。 [](rtfsync.md)関数は、この目的のために役立ちます。 
+一部のクライアントアプリケーションでは、ユーザーがメッセージでリッチテキスト形式 (RTF) のテキストを使用できます。 メッセージストアプロバイダーがメッセージ内の RTF テキストをサポートする必要がある場合は、 **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) プロパティに加えて、 **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) プロパティを処理する必要があります。 主に、これは、両方のプロパティを格納し、 **PR_BODY**が**PR_RTF_COMPRESSED**のテキストのプレーンテキストバージョンを含んでいることを確認することを意味します。 [rtfsync](rtfsync.md)関数は、このために役立ちます。 
   
-2 つのフラグ メッセージ ストア オブジェクトの**PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) のプロパティで設定可能なメッセージ ストア プロバイダー **PR_BODY**と**PR_ の点から何を期待できることをクライアントに通知します。RTF_COMPRESSED**メッセージ ・ ストア内のメッセージのプロパティです。 STORE_RTF_OK フラグは、ことストアから生成できます**PR_BODY**プロパティの値、 **PR_RTF_COMPRESSED**プロパティ、動的にクライアントが明示的に同期する際の負担を軽減するを示します。 STORE_UNCOMPRESSED_RTF フラグは、メッセージ ストア プロバイダーが**PR_RTF_COMPRESSED**の非圧縮データをサポートできることを示します。
+メッセージストアオブジェクトの**PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) プロパティに設定して、 **PR_BODY**および PR_ に関して、メッセージストアプロバイダーから期待されることをクライアントに通知する2つのフラグがあります。 **** メッセージストア内のメッセージの RTF_COMPRESSED プロパティ。 STORE_RTF_OK フラグは、ストアが**PR_RTF_COMPRESSED**プロパティから**PR_BODY**プロパティの値を動的に生成できることを示します。これにより、クライアントを明示的に同期する負荷が軽減されます。 STORE_UNCOMPRESSED_RTF フラグは、メッセージストアプロバイダーが**PR_RTF_COMPRESSED**内の圧縮されていないデータをサポートできることを示します。
   
-Rtf 形式のテキストをサポートしていないメッセージ ストア プロバイダーは rtf 形式のテキストをサポートしているクライアント アプリケーションと適切に相互運用するために**PR_BODY**プロパティが変更されたときに**PR_RTF_IN_SYNC** ([PidTagRtfInSync](pidtagrtfinsync-canonical-property.md)) のプロパティを削除する必要があります。. 
+rtf テキストをサポートしていないメッセージストアプロバイダーは、rtf テキストをサポートするクライアントアプリケーションと適切に相互運用するために**PR_BODY**プロパティが変更されたときに、 **PR_RTF_IN_SYNC** ([PidTagRtfInSync](pidtagrtfinsync-canonical-property.md)) プロパティを削除する必要があります。. 
   
 ## <a name="see-also"></a>関連項目
 

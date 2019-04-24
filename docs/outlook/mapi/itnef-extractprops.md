@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9169a5be-21dd-4938-8db3-522bea165c92
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 0765e46a6f0545682b16e484d08d296ea13e2136
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 5a01c65bbec061248537558257c66d1a90128b5e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348651"
 ---
 # <a name="itnefextractprops"></a>ITnef::ExtractProps
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-TNEF のカプセル化のプロパティを抽出します。 
+TNEF のカプセル化からプロパティを抽出します。 
   
 ```cpp
 HRESULT ExtractProps(
@@ -35,56 +35,56 @@ HRESULT ExtractProps(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]プロパティをデコードする方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番プロパティのデコード方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 TNEF_PROP_EXCLUDE 
   
-> _LpPropList_パラメーターで指定されていないすべてのプロパティをデコードします。 
+> _lpproplist_パラメーターで指定されていないすべてのプロパティをデコードします。 
     
 TNEF_PROP_INCLUDE 
   
-> _LpPropList_で指定されたすべてのプロパティをデコードします。
+> _lpproplist_で指定されたすべてのプロパティをデコードします。
     
- _lpPropList_
+ _lpproplist_
   
-> [in]含めるか、デコード処理から除外するプロパティの一覧へのポインター。
+> 順番デコード操作に含めるまたは除外するプロパティのリストへのポインター。
     
- _lpProblems_
+ _lpproblems 問題_
   
-> [out]返された[STnefProblemArray](stnefproblemarray.md)構造体へのポインターへのポインター。 **STnefProblemArray**構造体は、どのプロパティでは、存在する場合、されたエンコードされません正しくを示します。 _LpProblems_パラメーターに NULL を渡した場合、プロパティの問題の配列は返されません。 
+> 読み上げ返された[STnefProblemArray](stnefproblemarray.md)構造体へのポインターへのポインター。 **STnefProblemArray**構造体は、どのプロパティが適切にエンコードされなかったかを示します。 lpproblems パラメーターで NULL が__ 渡された場合、プロパティ問題の配列は返されません。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 呼び出しが成功し、予期される値または値が返されます。
+> 呼び出しが成功し、予想される値または値が返されました。
     
 MAPI_E_CORRUPT_DATA 
   
-> ストリームにデコードされたデータが壊れています。
+> ストリームにデコードされるデータが破損しています。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-トランスポート プロバイダー、メッセージ ストア プロバイダー、およびゲートウェイ メソッドを呼び出す**ITnef::ExtractProps**を抽出する (これをデコード) は、プロパティをメッセージまたは[OpenTnefStream](opentnefstream.md)関数に渡された添付ファイルをカプセル化します。 呼び出し元のプロバイダーまたはゲートウェイには、デコードするためのプロパティの一覧を指定できます。 プロバイダーとゲートウェイも使用できます**ExtractProps**の添付ファイルに対して特別な処理情報を提供します。 
+トランスポートプロバイダー、メッセージストアプロバイダー、ゲートウェイは、 **ITnef:: ExtractProps**メソッドを呼び出して、メッセージまたは[OpenTnefStream](opentnefstream.md)関数に渡された添付ファイルのカプセル化から、プロパティを抽出 (デコード) します。 呼び出し元プロバイダーまたはゲートウェイは、デコードするプロパティのリストを指定できます。 プロバイダーとゲートウェイでは、 **ExtractProps**を使用して、添付ファイルの特別な処理に関する情報を提供することもできます。 
   
- **ExtractProps**には、デコードされたプロパティを使用して、 **OpenTnefStream**に渡された元のメッセージが表示されます。 **ExtractProps**の後続の呼び出しはメッセージに戻るし、プロパティの新しいリストを抽出します。 
+ **ExtractProps**は、デコードされたプロパティを使用して、 **OpenTnefStream**に渡される元のメッセージを設定します。 後続の**ExtractProps**呼び出しは、メッセージに戻り、プロパティの新しいリストを抽出します。 
   
-キューにアクションが要求されるは、 **ITnef::Finish**メソッドが呼び出されるまで、 [ITnef::AddProps](itnef-addprops.md)メソッドとは異なり、 **ExtractProps**メソッドは、呼び出されたときにすぐにカプセル化されたプロパティをデコードします。 そのため、移行先のメッセージのカプセル化をデコードすることが比較的空でなければなりません。 カプセル化されたプロパティでは、移行先のメッセージ内の既存のプロパティが上書きされます。 
+[ITnef:: addprops](itnef-addprops.md)メソッドとは異なり、 **ITnef::: Finish**メソッドが呼び出されるまで、要求されたアクションをキューに入れます。 **ExtractProps**メソッドは、カプセル化されたプロパティを呼び出した直後にデコードします。 そのため、カプセル化デコードのターゲットメッセージは、比較的空である必要があります。 ターゲットメッセージ内の既存のプロパティは、カプセル化されたプロパティによって上書きされます。 
   
- **ExtractProps**は、 **OpenTnefStream**または[OpenTnefStreamEx](opentnefstreamex.md)関数の場合、TNEF_DECODE フラグを使用して開かれているオブジェクトでのみサポートされます。 
+ **ExtractProps**は、 **OpenTnefStream**または[OpenTnefStreamEx](opentnefstreamex.md)関数の TNEF_DECODE フラグを使用して開かれたオブジェクトに対してのみサポートされています。 
   
-TNEF の実装では、 **ExtractProps**プロセスを停止することがなく TNEF ストリームのエンコーディングの問題を報告します。 _LpProblems_で返された[STnefProblemArray](stnefproblemarray.md)構造体は、どの TNEF 属性または MAPI プロパティでは、存在する場合、処理できませんでしたを示します。 **STnefProblemArray**に含まれている**STnefProblem**の構造体のいずれかの**scode**メンバーの戻り値は、特定の問題を示します。 プロバイダーまたはゲートウェイは、すべてのプロパティまたは属性の**ExtractProps**が、問題レポートを返さないが正常に処理されたことを前提として処理できます。 
+tnef 実装は、 **ExtractProps**プロセスを停止することなく、tnef ストリームエンコードの問題を報告します。 _lpproblems_で返される[STnefProblemArray](stnefproblemarray.md)構造は、どの TNEF 属性または MAPI プロパティ (もしあれば) を処理できなかったかを示します。 **STnefProblemArray**に含まれている**STnefProblem**構造体の**scode**メンバーで返される値は、特定の問題を示します。 プロバイダーまたはゲートウェイは、 **ExtractProps**が問題レポートを返さないすべてのプロパティまたは属性が正常に処理されたことを前提として機能します。 
   
 > [!NOTE]
-> MAPI のカプセル化のブロック内のプロパティを処理できません、TNEF ストリームのデコード時に、ストリームの信頼性が低いままのカプセル化のブロックをデコードすることを停止して、問題が報告されました。 この種の問題の問題の配列には、 **ulPropTag**メンバーの 0 L が含まれています`attMAPIProps`または`attAttachment` **ulAttribute**のメンバー、および**scode**メンバーの MAPI_E_UNABLE_TO_COMPLETE のです。 MAPI のカプセル化のブロックのデコードだけ、ストリームのデコードではないメモが停止しました。 ストリームのデコードは、次の属性ブロックを続行します。 
+> MAPI カプセル化ブロックのプロパティを処理できず、TNEF ストリームのデコード中にストリームが信頼されていない場合、カプセル化ブロックのデコードが停止され、問題が報告されます。 この種の問題に対する問題の配列には、 **ulPropTag** `attMAPIProps` `attAttachment`メンバーの0L、 **ulattribute**メンバー、および**scode**メンバーの MAPI_E_UNABLE_TO_COMPLETE が含まれています。 なお、ストリームのデコードは停止されず、MAPI カプセル化ブロックのデコードだけになります。 ストリームのデコードは、次の属性ブロックで続行されます。 
   
-_LppProblems_; で NULL を渡すことができます問題の配列を持つプロバイダーまたはゲートウェイが機能しない場合この例では、問題の配列は返されません。 
+プロバイダーまたはゲートウェイが問題のある配列で機能しない場合は、 _lppproblems_で NULL を渡すことができます。この場合、問題の配列は返されません。 
   
-_LpProblems_で返される値は、呼び出しが S_OK を返す場合にのみ有効です。 S_OK が返されると、プロバイダーまたはゲートウェイは**STnefProblemArray**構造体で返される値を確認する必要があります。 呼び出しでエラーが発生した場合**STnefProblemArray**構造体が記入されていませんし、プロバイダーまたはゲートウェイが呼び出し元する必要があります使用または構造体を解放します。 呼び出しでエラーが発生しなかった場合、呼び出し元のプロバイダーまたはゲートウェイ必要があります[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出すことによって**STnefProblemArray**構造体のメモリを解放します。 
+_lpproblems 問題_で返される値は、呼び出しが S_OK を返す場合にのみ有効です。 S_OK が返された場合、プロバイダーまたはゲートウェイは、 **STnefProblemArray**構造体で返される値をチェックする必要があります。 呼び出しでエラーが発生した場合、 **STnefProblemArray**構造体は入力されず、呼び出しプロバイダーまたはゲートウェイは構造を使用したり、解放したりすることはできません。 呼び出しでエラーが発生しない場合は、 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して、 **STnefProblemArray**構造体のメモリを呼び出しプロバイダーまたはゲートウェイが解放する必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

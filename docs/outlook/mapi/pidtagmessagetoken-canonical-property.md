@@ -12,51 +12,51 @@ api_type:
 - HeaderDef
 ms.assetid: fcb93346-db92-44b5-a447-59fd95f98f45
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 6b5def94096f7664169935a062d3b28171fb2919
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2d832b3a53f8056c034b5e87f1f309fa3058173d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355805"
 ---
 # <a name="pidtagmessagetoken-canonical-property"></a>PidTagMessageToken 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージを ASN.1 にセキュリティ トークンが含まれています。
+メッセージの ASN. 1 セキュリティトークンが格納されています。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_MESSAGE_TOKEN  <br/> |
-|識別子:  <br/> |0x0C03  <br/> |
+|識別子:  <br/> |0x0c03  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |メッセージング プロパティをセキュリティで保護します。  <br/> |
+|エリア:  <br/> |セキュリティで保護されたメッセージングのプロパティ  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティは、保護されているセキュリティに関連する情報の発信者から受信者を伝達します。 **PR_MESSAGE_SECURITY_LABEL** ([PidTagMessageSecurityLabel](pidtagmessagesecuritylabel-canonical-property.md)) のプロパティと組み合わせて、メッセージの内容とラベルの関連付けを保証します。 **PR_CONTENT_INTEGRITY_CHECK** ([PidTagContentIntegrityCheck](pidtagcontentintegritycheck-canonical-property.md)) のプロパティと組み合わせて、メッセージの内容が変更されていないことを確認します。
+このプロパティは、保護されたセキュリティ関連の情報を発信者から受信者に伝達します。 **PR_MESSAGE_SECURITY_LABEL** ([PidTagMessageSecurityLabel](pidtagmessagesecuritylabel-canonical-property.md)) プロパティと共に、ラベルがメッセージの内容と関連付けられていることを保証します。 **PR_CONTENT_INTEGRITY_CHECK** ([PidTagContentIntegrityCheck](pidtagcontentintegritycheck-canonical-property.md)) プロパティと共に、メッセージの内容が変更されていないかどうかを確認します。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

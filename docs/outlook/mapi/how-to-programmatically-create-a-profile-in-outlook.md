@@ -1,5 +1,5 @@
 ---
-title: プログラムで Outlook のプロファイルを作成します。
+title: Outlook でプログラムによりプロファイルを作成する
 manager: soliver
 ms.date: 06/02/2016
 ms.audience: Developer
@@ -7,15 +7,15 @@ localization_priority: Normal
 ms.assetid: 2a8561a9-df09-453a-b415-c45910625870
 description: "���̃g�s�b�N�ł́A�v���O������g�p���āA�v���t�@�C�� �I�u�W�F�N�g��emsuid ] �Z�N�V������ MAPI �v���p�e�B��ǉ����� Outlook 2016 �Ńv���t�@�C����X�V������@�ɂ\x82��Đ�����܂��B"
 ms.openlocfilehash: 85d084705c1e36f5fe3b0ed268094f86b38d6383
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25391053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345942"
 ---
-# <a name="programmatically-create-a-profile-in-outlook"></a>プログラムで Outlook のプロファイルを作成します。
+# <a name="programmatically-create-a-profile-in-outlook"></a>Outlook でプログラムによりプロファイルを作成する
 
-**適用されます**: Office 365 |Outlook |Outlook 2016 
+**適用**対象: Office 365 |Outlook |Outlook 2016 
 
 ���̃g�s�b�N�ł́A�v���O������g�p���āA�v���t�@�C�� �I�u�W�F�N�g�� **emsuid** ] �Z�N�V������ MAPI �v���p�e�B��ǉ����� Outlook 2016 �Ńv���t�@�C����X�V������@�ɂ��Đ�����܂��B 
 
@@ -35,7 +35,7 @@ MAPI�A�ȉ��̎菇�Ɏ�����Ă��� **PR_PROFILE_USER_SMTP_E
     
 5. **PR_DISPLAY_NAME** �v���p�e�B��ݒ肵�܂��B 
     
-## <a name="code-example"></a>�R�[�h��
+## <a name="code-example"></a>コード例
 
 ```cpp
 // CreateProfile.cpp : Defines the entry point for the console application.
@@ -318,7 +318,7 @@ Cleanup:
 
 [MFCMAPI](https://mfcmapi.codeplex.com) MAPI �X�g�A Exchange �� Outlook �̖��̒�����e�Ղɂ��āA�J���҂� MAPI �J���̃T�|�[�g��񋟂���ւ̃A�N�Z�X��񋟂��܂��B 
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 - [MFCMAPI を使用して Outlook プロファイルを作成する](https://msdn.microsoft.com/library/office/mt723322.aspx)
   

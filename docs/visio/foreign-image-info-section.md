@@ -9,19 +9,19 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: c870d60b-f01d-ced6-08f7-bc3ae6832c42
 description: Microsoft Visio の図面で使用される別のプログラムのオブジェクトの幅と高さを格納します。このセクションは、該当するオブジェクトの [シェイプシート] ウィンドウにのみ表示されます。オブジェクトのイメージが枠の中でオフセットされる距離も示します。
-ms.openlocfilehash: 8791dc3e05b50839bd0a27c1e0345aba5ee67728
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: dbc9831daeb3b7b70b3764e31f2dbc78752780d6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346054"
 ---
-# <a name="foreign-image-info-section"></a>[外部画像情報] セクション
+# <a name="foreign-image-info-section"></a>[Foreign Image Info] セクション
 
 Microsoft Visio の図面で使用される別のプログラムのオブジェクトの幅と高さを格納します。このセクションは、該当するオブジェクトの [シェイプシート] ウィンドウにのみ表示されます。オブジェクトのイメージが枠の中でオフセットされる距離も示します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-Visio 製品 2000 より前のバージョンは、このセクションでは**イメージ情報**を付きです。
+バージョン2000より前のバージョンの Visio 製品では、このセクションは**Image Info**という名前でした。
   
 

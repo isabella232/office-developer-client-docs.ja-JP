@@ -13,11 +13,11 @@ api_type:
 ms.assetid: c67fb54b-8cc7-4fbc-8204-36fcddfa6192
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3a49c6d70cc47ff726a7a99860b5e81a400be0bf
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25387308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355651"
 ---
 # <a name="pidtagmessagesize-canonical-property"></a>PidTagMessageSize 標準プロパティ
 
@@ -25,58 +25,58 @@ ms.locfileid: "25387308"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ オブジェクトのすべてのプロパティのサイズの合計 (バイト単位) にはが含まれています。 
+メッセージオブジェクトのすべてのプロパティのサイズの合計 (バイト数) を格納します。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_MESSAGE_SIZE  <br/> |
-|識別子:  <br/> |0x0E08  <br/> |
+|識別子:  <br/> |0x0e08  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |メッセージ全般  <br/> |
+|エリア:  <br/> |一般的なメッセージング  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-メッセージ オブジェクトがこのプロパティを公開することをお勧めします。 メッセージのサイズは、メッセージが別の 1 つのメッセージ ・ ストアに移動した場合に転送されるバイトのおおよその数を示します。 メッセージ オブジェクトのすべてのプロパティのサイズの合計である、多くのメッセージのテキストだけよりもかなり大きいです。 
+このプロパティは、メッセージオブジェクトに公開することをお勧めします。 メッセージサイズは、メッセージがあるメッセージストアから別のメッセージストアに移動されたときに転送されるおおよそのバイト数を示します。 message オブジェクトのすべてのプロパティのサイズの合計は、通常、メッセージテキストだけではなく、非常に大きくなります。 
   
-ほとんどのメッセージは、プロバイダーの計算、処理されるメッセージに対してこのプロパティを格納します。 ただし、いくつかのメッセージ ストア プロバイダーはこのプロパティをサポートしていません。 どのような場合は、 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)または[IMessage::SubmitMessage](imessage-submitmessage.md)メソッドが呼び出されるまでこのプロパティは使用できません。 
+ほとんどのメッセージストアプロバイダーは、処理するメッセージに対してこのプロパティを計算します。 ただし、一部のメッセージストアプロバイダーでは、このプロパティをサポートしていません。 いずれの場合も、このプロパティは、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)または[IMessage:: submitmessage](imessage-submitmessage.md)メソッドが呼び出されるまで使用できません。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルのオブジェクトを処理します。
+> メッセージと添付ファイルオブジェクトを処理します。
     
-[[MS OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
+[[OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
   
-> フォルダーの操作を処理します。
+> フォルダー操作を処理します。
     
-[[MS OXCSTOR]](https://msdn.microsoft.com/library/d42ed1e0-3e77-4264-bd59-7afc583510e2%28Office.15%29.aspx)
+[[OXCSTOR]](https://msdn.microsoft.com/library/d42ed1e0-3e77-4264-bd59-7afc583510e2%28Office.15%29.aspx)
   
-> コア メッセージのストア オブジェクトの許可された操作を指定します。
+> コアメッセージストアオブジェクトに対する許容される操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 201ceb76-41bc-4d7b-835d-5196bf3dc234
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b684309211bbc008856311158c67864d958c96a0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8ea7d51b15a6e6acd44a3c0b6158378661f311bc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344500"
 ---
 # <a name="sshortarray"></a>SShortArray
 
@@ -25,11 +25,11 @@ ms.locfileid: "22573034"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-PT_MV_SHORT の種類のプロパティを説明するために使用する符号なし整数値の配列が含まれています。
+PT_MV_SHORT 型のプロパティを記述するために使用される、符号なし整数値の配列を格納します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SShortArray
@@ -42,17 +42,17 @@ typedef struct _SShortArray
 
 ## <a name="members"></a>Members
 
- **あう**
+ **cvalues**
   
-> **Lpi**のメンバーが指す配列内の値の数です。 
+> **lpi**メンバーが指す配列内の値の数。 
     
  **lpi**
   
 > 符号なし整数値の配列へのポインター。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-PT_MV_SHORT およびその他のプロパティの種類の詳細については、[プロパティの型](property-types.md)を参照してください。 
+PT_MV_SHORT およびその他のプロパティの種類の詳細については、「[プロパティの種類](property-types.md)」を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

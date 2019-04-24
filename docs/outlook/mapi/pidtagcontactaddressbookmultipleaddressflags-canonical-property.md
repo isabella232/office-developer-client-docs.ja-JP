@@ -12,51 +12,51 @@ api_type:
 - HeaderDef
 ms.assetid: ed3bc585-13f6-46a5-9e71-9c8513ddfc0a
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: b783a624ef5358a69d65dd52785b285db1a70df7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ecd795490d953f1aa237dfbd77585ba79c8b3234
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357933"
 ---
 # <a name="pidtagcontactaddressbookmultipleaddressflags-canonical-property"></a>PidTagContactAddressBookMultipleAddressFlags 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-連絡先アイテムごとでは、プロバイダーが複数の電子メールをサポートするかどうかを示すフラグが含まれています。
+プロバイダーが連絡先アイテムごとに複数の電子メールアドレスをサポートするかどうかを示すフラグを含みます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_CONTAB_MULTI_ADDR_FLAGS  <br/> |
 |識別子:  <br/> |0x6625  <br/> |
 |データの種類 :   <br/> |PT_MV_LONG  <br/> |
-|領域:  <br/> |連絡先のアドレス帳  <br/> |
+|エリア:  <br/> |連絡先のアドレス帳  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティのフラグが TRUE の場合は、プロバイダーでは、この電子メール アドレスがない連絡先は含まれません。 プライマリ電子メール アドレスのみが受け入れられます。 これは、アドレス帳の連絡先のプロファイル セクションのプロパティです。
+このプロパティのフラグが TRUE の場合、プロバイダーには電子メールアドレスのない連絡先は含まれません。 優先されるのは、プライマリ電子メールアドレスのみです。 これは、連絡先のアドレス帳の [プロファイル] セクションのプロパティです。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

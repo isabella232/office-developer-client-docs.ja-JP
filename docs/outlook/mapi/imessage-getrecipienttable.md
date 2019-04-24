@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: a335dfca-44da-452e-b16f-25d314b1758f
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 5908069f5fa887fd9d2e3f8c0df75f2e3d69515c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: ca42e91528cdb7e61ae3620989c4a89966db1061
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349281"
 ---
 # <a name="imessagegetrecipienttable"></a>IMessage::GetRecipientTable
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージの受信者テーブルを取得します。
+メッセージの recipient テーブルを返します。
   
 ```cpp
 HRESULT GetRecipientTable(
@@ -34,51 +34,51 @@ HRESULT GetRecipientTable(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
-> [in]テーブルの戻り値を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番テーブルの戻り値を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_DEFERRED_ERRORS 
   
-> 正常に戻す、可能性のあるテーブルが呼び出し側のクライアントに完全に使用する前に**GetRecipientTable**を使用できます。 テーブルが使用できない場合は、それ以降の呼び出しを行うとエラーが発生することができます。 
+> 呼び出し元のクライアントがテーブルを完全に使用できるようになる前に、 **getrecipienttable**を正常に返すことができるようにします。 テーブルを使用できない場合は、その後の呼び出しを行うとエラーが発生する可能性があります。 
     
 MAPI_UNICODE 
   
-> 文字列型の列は、Unicode 形式である必要があります。 MAPI_UNICODE フラグが設定されていない場合、ANSI 形式の文字列の列を引き起こすことがあります。
+> 文字列列は、Unicode 形式である必要があります。 MAPI_UNICODE フラグが設定されていない場合、文字列列は ANSI 形式である必要があります。
     
- _lppTable_
+ _lpptable_
   
-> [out]受信者テーブルへのポインターへのポインター。
+> 読み上げ受信者テーブルへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > 受信者テーブルが正常に返されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMessage::GetRecipientTable**メソッドは、すべてのメッセージの受信者に関する情報を含むメッセージの受信者テーブルへのポインターを返します。 すべての受信者の 1 つの行があります。 
+**IMessage:: get table**メソッドは、メッセージの受信者テーブルへのポインターを返します。これには、メッセージのすべての受信者に関する情報が含まれています。 すべての受信者に1つの行があります。 
   
-受信者テーブルには、メッセージが送信されたかどうかに応じて、設定の異なる列があります。 受信者テーブルの各列の一覧は、[受信者テーブル](recipient-tables.md)を参照してください。
+受信者テーブルは、メッセージが送信されたかどうかに応じて異なる列セットを持ちます。 受信者テーブルの列の完全な一覧については、「 [recipient Tables](recipient-tables.md)」を参照してください。
   
-いくつかの受信者テーブルのサポートまで、さまざまな制限です。そうでないです。 制限のサポートは、メッセージ ストア プロバイダーの実装に依存します。 
+一部の受信者テーブルでは、さまざまな制限がサポートしています。それ以外の場合は含まれません。 制限のサポートは、メッセージストアプロバイダーの実装によって異なります。 
   
-_UlFlags_パラメーターに MAPI_UNICODE フラグを設定する受信者テーブルには、次の呼び出しに影響します。 
+_ulflags_パラメーターの MAPI_UNICODE フラグを設定すると、受信者テーブルへの次の呼び出しに影響します。 
   
-- 列を取得する[IMAPITable::QueryColumns](imapitable-querycolumns.md)を設定します。 
+- [IMAPITable:: querycolumns](imapitable-querycolumns.md)は、列セットを取得します。 
     
-- [IMAPITable::QueryRows](imapitable-queryrows.md)の行を取得します。 
+- [IMAPITable:: QueryRows](imapitable-queryrows.md)が行を取得します。 
     
-- 並べ替え順序を取得するために[IMAPITable::QuerySortOrder](imapitable-querysortorder.md)をします。 
+- [IMAPITable:: querysortorder](imapitable-querysortorder.md)は、並べ替えの順序を取得します。 
     
-これらの呼び出しから返される文字列の列の情報は、Unicode 形式である Unicode フラグの要求を設定します。 ただし、Unicode をサポートしていないすべてのメッセージ ストア プロバイダーであるためこのフラグを設定、のみ要求です。
+unicode フラグを設定すると、これらの呼び出しから返される文字列列の情報は unicode 形式になります。 ただし、すべてのメッセージストアプロバイダーが Unicode をサポートしているわけではないため、このフラグの設定は要求だけになります。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-受信者テーブルが開いている間、 [IMessage::ModifyRecipients](imessage-modifyrecipients.md)メソッドを呼び出すことによって変更できます。 **ModifyRecipients**の受信者を追加するには、受信者を削除または受信者のプロパティを変更します。 
+[IMessage:: modifyrecipients](imessage-modifyrecipients.md)メソッドを呼び出すことによって、受信者テーブルを開いたまま変更することができます。 **modifyrecipients**受信者の追加、受信者の削除、または受信者のプロパティの変更を行います。 
   
 ## <a name="see-also"></a>関連項目
 

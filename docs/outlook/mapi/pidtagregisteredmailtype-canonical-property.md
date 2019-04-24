@@ -12,47 +12,47 @@ api_type:
 - COM
 ms.assetid: f75f2a21-a17c-4d8b-9055-c51d4c1888d0
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5ceb02fcf94a04b045a8ef387fc87b161a5515a7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1d3eceae1e358f5716f46f33edcd0b2aae4e4a93
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355098"
 ---
 # <a name="pidtagregisteredmailtype-canonical-property"></a>PidTagRegisteredMailType 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-このプロパティには、メッセージの物理的な配信のために使用する登録の種類が含まれています。
+このプロパティには、メッセージの物理的な配信に使用される登録の種類が含まれます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_REGISTERED_MAIL_TYPE  <br/> |
-|識別子:  <br/> |0x0C16  <br/> |
+|識別子:  <br/> |0x0c16  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|領域:  <br/> |MAPI 受信者  <br/> |
+|エリア:  <br/> |MAPI 受信者  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

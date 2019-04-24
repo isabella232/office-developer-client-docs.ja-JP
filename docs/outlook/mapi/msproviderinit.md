@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: 230c66c4-ab04-4fa6-946f-9f4b704f2842
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 33adef7a8248e137869912afc2026583828b087e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9a5f8b44f9d795282ccfd61fd32a306c5478ed21
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342792"
 ---
 # <a name="msproviderinit"></a>MSProviderInit
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-操作のメッセージ ストア プロバイダーを初期化します。
+操作用のメッセージストアプロバイダーを初期化します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapispi.h  <br/> |
-|によって実装されます。  <br/> |メッセージ ストア プロバイダー  <br/> |
-|によって呼び出されます。  <br/> |MAPI  <br/> |
+|ヘッダー ファイル:  <br/> |Mapispi  <br/> |
+|実装元:  <br/> |メッセージストアプロバイダー  <br/> |
+|呼び出し元:  <br/> |MAPI  <br/> |
    
 ```cpp
 HRESULT MSProviderInit(
@@ -51,45 +51,45 @@ HRESULT MSProviderInit(
 
  _hInstance_
   
-> [in]メッセージのインスタンスは、それにリンクされている場合、MAPI が使用されるプロバイダーのダイナミック リンク ライブラリ (DLL) を格納します。 
+> 順番MAPI がリンクしたときに使用したメッセージストアプロバイダーのダイナミックリンクライブラリ (DLL) のインスタンス。 
     
- _lpMalloc_
+ _lpmalloc_
   
-> [in]OLE **IMalloc**インターフェイスを公開すること、メモリ アロケーター オブジェクトへのポインター。 メッセージ ストア プロバイダーは、 **IStream**などの特定のインターフェイスを使用する場合、この割り当て方法を使用する必要があります。 
+> 順番OLE **imalloc**インターフェイスを公開するメモリアロケーターオブジェクトへのポインター。 メッセージストアプロバイダーは、 **IStream**など特定のインターフェイスを使用するときに、この割り当て方法を使用する必要がある場合があります。 
     
  _lpAllocateBuffer_
   
-> [in]メモリの割り当てに使用する[MAPIAllocateBuffer](mapiallocatebuffer.md)関数へのポインター。 
+> 順番メモリの割り当てに使用される[MAPIAllocateBuffer](mapiallocatebuffer.md)関数へのポインター。 
     
  _lpAllocateMore_
   
-> [in]追加メモリの割り当てに使用する[MAPIAllocateMore](mapiallocatemore.md)関数へのポインター。 
+> 順番追加のメモリを割り当てるために使用される[MAPIAllocateMore](mapiallocatemore.md)関数へのポインター。 
     
- _lpFreeBuffer_
+ _lpfreebuffer_
   
-> [in]メモリを解放するために使用する、 [MAPIFreeBuffer](mapifreebuffer.md)関数へのポインター。 
+> 順番メモリを解放するために使用される[MAPIFreeBuffer](mapifreebuffer.md)関数へのポインター。 
     
  _ulFlags_
   
-> [in]フラグのビットマスクです。 次のフラグを設定することができます。
+> 順番フラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_NT_SERVICE 
   
-> プロバイダーは、Windows サービス、特別な種類のすべてのユーザー インターフェイスにアクセスすることがなくプロセスのコンテキストで行われます。 
+> プロバイダーは、ユーザーインターフェイスにアクセスできない特別な種類のプロセスである Windows サービスのコンテキストに読み込まれています。 
     
  _ulMAPIVer_
   
-> [in]MAPI を使用するサービス プロバイダー インターフェイス (SPI) のバージョン番号です。 現在のバージョン番号は、Mapispi.h ヘッダー ファイルを参照してください。 
+> 順番MAPI が使用するサービスプロバイダインターフェイス (SPI) のバージョン番号。 現在のバージョン番号については、Mapispi ヘッダーファイルを参照してください。 
     
- _lpulProviderVer_
+ _lアウト providerver_
   
-> [out]このメッセージ ストア プロバイダーを使用する SPI のバージョン番号へのポインター。 
+> 読み上げこのメッセージストアプロバイダーが使用する SPI のバージョン番号へのポインター。 
     
- _lppMSProvider_
+ _lppmsprovider_
   
-> [out]初期化メッセージ ストア プロバイダー オブジェクトへのポインターへのポインター。
+> 読み上げ初期化されたメッセージストアプロバイダオブジェクトへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -97,23 +97,23 @@ S_OK
     
 MAPI_E_VERSION 
   
-> MAPI によって使用されている SPI のバージョンは、このプロバイダーで使用されている SPI との互換性ではありません。
+> MAPI で使用されている spi バージョンは、このプロバイダーで使用されている spi と互換性がありません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-MAPI は、クライアント ログオンの後、メッセージ ストア プロバイダーを初期化するために**MSProviderInit**エントリ ポイント関数が呼び出されます。 
+MAPI はエントリポイント関数**msproviderinit**を呼び出して、クライアントログオンの後にメッセージストアプロバイダーを初期化します。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-メッセージ ストア プロバイダーは、プロバイダーの DLL にエントリ ポイント関数として**MSProviderInit**を実装する必要があります。 実装は、 **MSPROVIDERINIT**関数のプロトタイプで指定されている MAPISPI もに基づいている必要があります。H. MAPI では、型を使用する標準的な MAPI の初期化の呼び出し、CDECL 呼び出し規約に従う**MSProviderInit**を STDMAPIINITCALLTYPE、 **MSPROVIDERINIT**を定義します。 CDECL の利点は、呼び出しのパラメーターの数が定義されているパラメーターの数と一致しない場合でも呼び出しを試行することができます。 
+メッセージストアプロバイダーは、プロバイダーの DLL で**msproviderinit**をエントリポイント関数として実装する必要があります。 この実装は、MAPISPI でも指定されている**msproviderinit**関数プロトタイプに基づいている必要があります。H. mapi は、 **msproviderinit**を定義して、標準の mapi 初期化呼び出しの種類 STDMAPIINITCALLTYPE を使用します。これにより、 **msproviderinit**は CDECL の呼び出し規則に従います。 CDECL の利点は、呼び出し元のパラメーターの数が定義されたパラメーターの数と一致しない場合でも、呼び出しを試行できることです。 
   
-プロバイダーは、同時使用中、または同じプロファイルで複数回表示されるは、いくつかのプロファイルに表示されるため、複数回初期化できます。 プロバイダー オブジェクトには、コンテキストが含まれている、ため**MSProviderInit**ごとの初期化を同じプロセスで複数回初期化の場合でも_lppMSProvider_で、別のプロバイダー オブジェクトを返す必要があります。 
+プロバイダーは、複数のプロファイルに同時に使用された結果、または同じプロファイルに複数回出現した結果として、複数回初期化することができます。 プロバイダーオブジェクトにはコンテキストが含まれているため、 **msproviderinit**は、同じプロセス内で複数の初期化があっても、各初期化に対して_lppmsprovider_の異なるプロバイダーオブジェクトを返す必要があります。 
   
-Mapix.dll で、プロバイダーの DLL をリンクしないようにします。 代わりに、メモリの割り当てまたは割り当て解除用には、これらのポインターを使用してください。 
+プロバイダー DLL は、mapix にリンクしてはなりません。 代わりに、これらのポインターを使用してメモリの割り当てまたは割り当てを解除する必要があります。 
   
-メッセージ ストア プロバイダーは、 _lpAllocateBuffer_、 _lpAllocateMore_、および多くのメモリの割り当てと割り当て解除の_lpFreeBuffer_が指す関数を使用する必要があります。 具体的には、プロバイダーでは、 [IMAPIProp::GetProps](imapiprop-getprops.md)や[IMAPITable::QueryRows](imapitable-queryrows.md)などのオブジェクトのインターフェイスを呼び出すときにクライアント アプリケーションで使用するメモリの割り当てにこれらの関数を使用する必要があります。 プロバイダーは、OLE のメモリ アロケーターを使用しても期待しています、する場合は、 _lpMalloc_パラメーターで指定されたアロケーター オブジェクトの**IUnknown::AddRef**メソッドを呼び出します。 
+メッセージストアプロバイダーは、 _lpAllocateBuffer_、 _lpAllocateMore_、および_lpfreebuffer_が指す関数を使用して、ほとんどのメモリの割り当てと割り当てを解除する必要があります。 特に、プロバイダーはこれらの関数を使用して、 [imapiprop:: GetProps](imapiprop-getprops.md) 、 [IMAPITable:: QueryRows](imapitable-queryrows.md)などのオブジェクトインターフェイスを呼び出すときに、クライアントアプリケーションが使用するメモリを割り当てる必要があります。 プロバイダーが OLE メモリアロケーターを使用することを前提としている場合は、 _lpmalloc_パラメーターで指定されたアロケーターオブジェクトの**IUnknown:: AddRef**メソッドを呼び出す必要があります。 
   
-**MSProviderInit**の作成方法の詳細については、[メッセージ ストア プロバイダーの読み込み](loading-message-store-providers.md)を参照してください。 エントリ ポイント関数の詳細については、[サービス プロバイダーのエントリ ポイント関数を実装する](implementing-a-service-provider-entry-point-function.md)を参照してください。 
+**msproviderinit**の記述の詳細については、「[メッセージストアプロバイダーの読み込み](loading-message-store-providers.md)」を参照してください。 エントリポイント関数の詳細については、「[サービスプロバイダーエントリポイント関数の実装](implementing-a-service-provider-entry-point-function.md)」を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

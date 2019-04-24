@@ -9,29 +9,29 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 734d4415-05dd-4c4d-763e-e035fa56dcec
 description: 図形を図面間でコピーするときにローカライズするかどうかを指定します。
-ms.openlocfilehash: 47593802e412c1871685f7218dd2a810bc2bc469
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ddd6041ec6531652deb38a0c16be2c741bac91a6
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344578"
 ---
-# <a name="localizemerge-cell-miscellaneous-section"></a>[LocalizeMerge] セル ([その他] セクション)
+# <a name="localizemerge-cell-miscellaneous-section"></a>[LocalizeMerge] セル ([Miscellaneous] セクション)
 
 図形を図面間でコピーするときにローカライズするかどうかを指定します。
   
 |**値**|**説明**|
 |:-----|:-----|
 | TRUE  <br/> | コピー先図面の言語に図形をローカライズします。  <br/> |
-| FALSE  <br/> | (既定値) のコピー先の文書の言語に基づく図形のローカライズの操作を行います。  <br/> |
+| FALSE  <br/> | コピー先の文書の言語に基づいて図形をローカライズしないようにします (既定値)。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LocalizeMerge] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | LocalizeMerge  <br/> |
+| セル名:  <br/> | [localizemerge]  <br/> |
    
 プログラムから、インデックスによって [LocalizeMerge] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -39,6 +39,6 @@ ms.locfileid: "19805730"
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowMisc** <br/> |
-| セル インデックス:  <br/> |**visObjLocalizeMerge** <br/> |
+| セル インデックス:  <br/> |**visobjlocalizemerge** <br/> |
    
 

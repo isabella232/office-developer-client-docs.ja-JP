@@ -12,47 +12,47 @@ api_type:
 - COM
 ms.assetid: 274899cc-2894-4d99-84ec-f18121e856a0
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 28dd45f29610b7ad56b4d3302715311569d497c4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: cbdfba68490b1e756f277c6e552235368a86f310
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348854"
 ---
 # <a name="iprofadmin--iunknown"></a>IProfAdmin : IUnknown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-プロファイルの管理をサポートしています。 
+プロファイルの管理をサポートします。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapix.h  <br/> |
-|によって公開されます。  <br/> |プロファイル管理オブジェクト  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーション  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IProfAdmin  <br/> |
-|ポインターの型。  <br/> |LPPROFADMIN  <br/> |
+|ヘッダー ファイル:  <br/> |mapix  <br/> |
+|公開者:  <br/> |プロファイル管理オブジェクト  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
+|インターフェイス識別子:  <br/> |IID_IProfAdmin  <br/> |
+|ポインターの種類:  <br/> |LPPROFADMIN  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[発生しました](iprofadmin-getlasterror.md) <br/> |前のプロファイルの管理オブジェクトに発生したエラーに関する情報を格納する[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
-|[GetProfileTable](iprofadmin-getprofiletable.md) <br/> |プロファイル テーブルのすべての利用可能なプロファイルに関する情報を格納するテーブルへのアクセスを提供します。  <br/> |
-|[CreateProfile](iprofadmin-createprofile.md) <br/> |新しいプロファイルを作成します。  <br/> |
-|[DeleteProfile](iprofadmin-deleteprofile.md) <br/> |プロファイルを削除します。  <br/> |
-|[ChangeProfilePassword](iprofadmin-changeprofilepassword.md) <br/> |現在は廃止されています。 プロファイルのパスワードを変更します。  <br/> |
-|[CopyProfile](iprofadmin-copyprofile.md) <br/> |プロファイルをコピーします。  <br/> |
-|[RenameProfile](iprofadmin-renameprofile.md) <br/> |プロファイルに新しい名前が割り当てられます。  <br/> |
-|[SetDefaultProfile](iprofadmin-setdefaultprofile.md) <br/> |設定またはクライアントの既定のプロファイルを削除します。  <br/> |
-|[AdminServices](iprofadmin-adminservices.md) <br/> |プロファイル内のメッセージ サービスを変更する場合、メッセージ サービスの管理オブジェクトへのアクセスを提供します。  <br/> |
+|[GetLastError](iprofadmin-getlasterror.md) <br/> |プロファイル管理オブジェクトに発生した前のエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
+|[getprofiletable](iprofadmin-getprofiletable.md) <br/> |利用可能なすべてのプロファイルについての情報を含むテーブルである、プロファイルテーブルへのアクセスを提供します。  <br/> |
+|[createprofile](iprofadmin-createprofile.md) <br/> |新しいプロファイルを作成します。  <br/> |
+|[deleteprofile](iprofadmin-deleteprofile.md) <br/> |プロファイルを削除します。  <br/> |
+|[changeprofilepassword](iprofadmin-changeprofilepassword.md) <br/> |現在は廃止されています。 プロファイルのパスワードを変更します。  <br/> |
+|[copyprofile](iprofadmin-copyprofile.md) <br/> |プロファイルをコピーします。  <br/> |
+|[renameprofile](iprofadmin-renameprofile.md) <br/> |プロファイルに新しい名前を割り当てます。  <br/> |
+|[SetDefaultProfile](iprofadmin-setdefaultprofile.md) <br/> |クライアントの既定のプロファイルを設定またはクリアします。  <br/> |
+|[adminservices](iprofadmin-adminservices.md) <br/> |プロファイル内のメッセージサービスに変更を加えるためのメッセージサービス管理オブジェクトへのアクセスを提供します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
 

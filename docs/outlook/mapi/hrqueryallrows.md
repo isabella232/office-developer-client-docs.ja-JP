@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: b08fadcf-cdf3-48b7-9489-d7f745266482
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: c165bcaedfc3dbab0c950d0674228b15dfeee958
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0f09304f21180d9ebc2a1e1dcc54ebadd3622804
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348245"
 ---
 # <a name="hrqueryallrows"></a>HrQueryAllRows
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
 テーブルのすべての行を取得します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 HRESULT HrQueryAllRows(
@@ -46,46 +46,46 @@ HRESULT HrQueryAllRows(
 
 ## <a name="parameters"></a>パラメーター
 
- _参照を必要_
+ _ptable_
   
-> [in]行の取得元の MAPI テーブルへのポインター。 
+> 順番行を取得する MAPI テーブルへのポインター。 
     
  _ptaga_
   
-> [in]プロパティの配列を含む[SPropTagArray](sproptagarray.md)構造体へのポインターでは、テーブルの列を示すタグ付けします。 これらのタグを使用して、取得する特定の列を選択します。 _Ptaga_パラメーターが NULL の場合は、 **HrQueryAllRows**は、全体の列のセット_の参照を必要_パラメーターで渡された現在のテーブル ビューを取得します。 
+> 順番表の列を示すプロパティタグの配列を含む[SPropTagArray](sproptagarray.md)構造体へのポインター。 これらのタグは、取得する特定の列を選択するために使用されます。 _ptaga_パラメーターが NULL の場合、 **hrqueryallrows**は、 _ptable_パラメーターで渡された現在のテーブルビューの列セット全体を取得します。 
     
- _プレス_
+ _感情_
   
-> [in]取得の制限を含む[SRestriction](srestriction.md)構造体へのポインター。 _プレス_パラメーターが NULL の場合は、 **HrQueryAllRows**には制限がありません。 
+> 順番取得制限を含む[srestriction](srestriction.md)構造体へのポインター。 _プレゼン_パラメーターが NULL の場合、 **hrqueryallrows**は制限を行いません。 
     
  _pso_
   
-> [in]取得する列の並べ替え順序を識別する[SSortOrderSet](ssortorderset.md)構造体へのポインター。 _Pso_のパラメーターが NULL の場合は、テーブルの既定の並べ替え順序が使用されます。 
+> 順番取得する列の並べ替え順序を識別する[ssortorderset](ssortorderset.md)構造体へのポインター。 _pso_パラメーターが NULL の場合は、テーブルの既定の並べ替え順序が使用されます。 
     
  _crowsMax_
   
-> [in]取得する行の最大数。 _CrowsMax_パラメーターの値が 0 の場合は、取得される行の数に制限は設定されていません。 
+> 順番取得する行の最大数。 _crowsMax_パラメーターの値が0の場合、取得される行の数に制限は設定されません。 
     
  _pprows_
   
-> [out]取得したテーブルの行へのポインターの配列を格納する返される[SRowSet](srowset.md)構造体へのポインターへのポインター。 
+> 読み上げ取得したテーブルの行へのポインターの配列を含む、返された[rowset](srowset.md)構造体へのポインターへのポインター。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 呼び出しには、予想されるテーブルの行が取得されます。 
+> 呼び出しは、テーブルの予測された行を取得しています。 
     
 MAPI_E_TABLE_TOO_BIG 
   
-> テーブル内の行の数は、 _crowsMax_パラメーターに渡された値よりも大きくなります。 
+> テーブル内の行数が、 _crowsMax_パラメーターに渡された数値よりも大きくなっています。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-クライアント アプリケーションまたはサービス プロバイダーには、 **HrQueryAllRows**を取得しよう、制限を課すことによって指す_プレス_パラメーター以外の行の数を制御がありません。 _CrowsMax_パラメーターは、テーブルのロー数を取得を制限することはできませんではなく取得したすべての行を保持するために使用できるメモリの最大量を定義します。 大容量のメモリのオーバーフローに対する唯一の防策は、 _crowsMax_を設定することによって提供される暫定的な機能です。 エラーの戻り値が MAPI_E_TABLE_TOO_BIG では、テーブルには、すべてを一度にメモリに保持するが多すぎる行が含まれています。 
+クライアントアプリケーションまたはサービスプロバイダーは、"終了" パラメーターで指定された制限を課すのではなく、 **hrqueryallrows**が取得し__ ようとしている行の数を制御できません。 _crowsMax_パラメーターでは、取得を特定の数のテーブル行に制限せずに、取得したすべての行の保持に使用できるメモリの最大量を定義します。 大規模メモリオーバーフローに対する保護は、 _crowsMax_を設定することによって提供される stopgap 機能です。 error return MAPI_E_TABLE_TOO_BIG は、テーブルに含まれる行が多すぎて、一度にすべてのメモリに保持されていないことを意味します。 
   
-メッセージ ストアのテーブルや、プロバイダーのテーブルなど、通常は小さいテーブル通常安全に取得できる**HrQueryAllRows**とします。 [IMAPITable::QueryRows](imapitable-queryrows.md)メソッドを使用してのサブセクションでは、テーブルの内容のテーブルなど、宛先テーブルも非常に大きな危険にさらさを走査する必要があります。 
+通常、メッセージストアテーブルやプロバイダーテーブルなどの小さなテーブルは、通常**hrqueryallrows**を使用して安全に取得できます。 contents [:: QueryRows](imapitable-queryrows.md)メソッドを使用して、コンテンツテーブルや受信者テーブルなど、非常に大きなテーブルがサブセクションでトラバースされる可能性があります。 
   
-プロパティ タイプ PT_NULL および PROP_ID_NULL プロパティの識別子を持つ場合は、テーブルのプロパティに定義された**HrQueryAllRows**が呼び出されたときに、返されます 
+**hrqueryallrows**が呼び出されたときにテーブルのプロパティが未定義になっている場合は、プロパティの種類が PT_NULL およびプロパティ識別子の PROP_ID_NULL で返されます。 
   
 

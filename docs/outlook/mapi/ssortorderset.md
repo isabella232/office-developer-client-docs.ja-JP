@@ -12,25 +12,25 @@ api_type:
 - COM
 ms.assetid: e7f9be6a-92e7-44a8-93ee-b087713a31df
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: e8d85ba55c5aa2f3780ad8e04cf1326cd7c35865
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: db19c3908c419b98b8deb71e2a86d0aa6eebe240
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344423"
 ---
 # <a name="ssortorderset"></a>SSortOrderSet
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-標準またはカテゴリ別に並べ替えに使用されるテーブルの並べ替えキーのコレクションを定義します。
+標準または分類された並べ替えに使用されるテーブルの並べ替えキーのコレクションを定義します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|関連するマクロ:  <br/> |[CbNewSSortOrderSet](cbnewssortorderset.md)、 [CbSSortOrderSet](cbssortorderset.md)、 [SizedSSortOrderSet](sizedssortorderset.md) <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|関連するマクロ:  <br/> |[CbNewSSortOrderSet](cbnewssortorderset.md)、 [cbssortorderset](cbssortorderset.md)、 [sizedssortorderset](sizedssortorderset.md) <br/> |
    
 ```cpp
 typedef struct _SSortOrderSet
@@ -45,33 +45,33 @@ typedef struct _SSortOrderSet
 
 ## <a name="members"></a>Members
 
- **cSorts**
+ **csorts**
   
-> **ASort**メンバーに含まれる[SSortOrder](ssortorder.md)構造体の数です。 
+> **asort**メンバに含まれている、 [ssortorder](ssortorder.md)構造の数。 
     
- **cCategories**
+ **ccategories**
   
-> カテゴリの列として指定されている列の数。 使用可能な値の範囲は、分類なし] または [標準の並べ替えを示す、ゼロから**cSorts**のメンバーによって指定された番号です。 
+> カテゴリ列として指定されている列の数。 指定できる値は、分類されていない、または標準の並べ替えを示す0から、 **csorts**メンバーによって示される番号までです。 
     
- **cExpanded**
+ **cexpanded**
   
-> すべてのカテゴリに該当する行がテーブル ビューに表示される、展開した状態で始まる分類の数です。 使用可能な値の範囲は、0 から**cCategories**で指定された番号です。
+> 展開状態で開始されるカテゴリの数。これにより、カテゴリに適用されるすべての行がテーブルビューに表示されます。 指定可能な値の範囲は、0から**ccategories**で示されている数までです。
     
- **aSort**
+ **asort**
   
-> 並べ替え順序を定義する各**SSortOrder**の構造体の配列です。 
+> ソート順序を定義する、 **ssortorder**構造の配列。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**SSortOrderSet**構造体は、標準的なカテゴリ別に並べ替えのさまざまな並べ替え順序を定義するために使用されます。 
+**ssortorderset**構造は、標準および分類された並べ替えに対して複数の並べ替え順序を定義するために使用されます。 
   
-**SSortOrderSet**の各構造体には、並べ替えと並べ替えキーとして使用される列の方向を定義するには、少なくとも 1 つの**SSortOrder**構造が含まれています。 カテゴリ別の並べ替えでは、この列がカテゴリとして使用されます。 **CSorts**メンバーの値は、 **cCategories**メンバーの値を超えているとカテゴリより多くの並べ替えキーがあるカテゴリは、 **SSortOrder**配列の最初に表示される列から作成されます。 
+各**ssortorderset**構造には、並べ替え**** の方向と、並べ替えキーとして使用される列を定義する、少なくとも1つの sorderstructure が含まれています。 分類された並べ替えの場合、この列はカテゴリとして使用されます。 csorts メンバーの値**** が**csorts**メンバーの値を超えると、カテゴリよりも多くの並べ替えキーが存在し、その列から、 **ssortorder**配列の先頭に表示されている列に分類項目が作成されます。 
   
-などの**cSorts**を 3 に設定し、 **cCategories**が 2 に設定されて、する場合は、 **SSortOrder**配列内の最初の 2 つのエントリの**ulPropTag**のメンバーが記載されている列がカテゴリの列として使用されます。 最初のエントリは、グループ化は最上位のカテゴリとして機能します。セカンダリ ・ グループと 2 番目のエントリです。 3 番目のエントリで定義されている並べ替えキーを使用してすべての列の 2 つのカテゴリと一致する行が並べ替えられます。 
+たとえば、csorts **** が3に設定されていて、 **csorts**が2に設定されている場合、 **ssortorder**配列の最初の2つのエントリの**ulPropTag**メンバによって記述されている列は、カテゴリ列として使用されます。 最初のエントリは、トップレベルのカテゴリグループとして機能します。2番目のエントリを第2のグループにします。 2つのカテゴリ列に一致するすべての行は、3番目のエントリで定義されている並べ替えキーを使用して並べ替えられます。 
   
-**CExpanded**メンバーは、最初に展開される項目の数を指定します。 複数のカテゴリが存在する場合、テーブルの実装から始まり、カテゴリとして指定するのには、最初の列、まで、それ以降のカテゴリ列に順番に**cCategories**の数を超えています。 拡張された列の数よりも多くのカテゴリの列がある場合は、カテゴリの列が折りたたまれます。 **CExpanded**がゼロに等しい場合は、最上位レベルの見出しの行だけが表示のテーブルのユーザーが利用できます。 **CExpanded**の項目の数より 1 小さい値に等しい場合、し、すべての見出し行とリーフ行の [なし] を利用できます。 **CExpanded**は、カテゴリの数に等しく、し、テーブルは完全に展開します。 
+**cexpanded**メンバーは、最初に展開されたカテゴリの数を指定します。 カテゴリが複数ある場合、テーブルの実装は、カテゴリとして指定された最初の列から始まり、 **ccategories**の数を超えない限り、後続のカテゴリの列と連続した順序で続きます。 拡張された列の数よりも多くのカテゴリ列がある場合は、カテゴリ列は折りたたまれています。 **cexpanded**が0の場合は、表のユーザーが表示に使用できるのは最上位レベルの見出し行だけです。 **cexpanded**がカテゴリの数よりも小さい値に等しい場合は、すべての見出し行とリーフ行のいずれも使用できません。 **cexpanded**がカテゴリの数と等しい場合、テーブルは完全に展開されます。 
   
-詳細については、標準的なカテゴリ別に並べ替え、[並べ替えや分類](sorting-and-categorization.md)を参照してください。
+標準および分類された並べ替えの詳細については、「[並べ替えと分類](sorting-and-categorization.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5ae3fdf0-6193-4c1f-bd2e-d69c56d69773
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 1f79265c4356747e64aa8102dd4486db229baf5a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: c142424bb050ae287f54a87ea8a5e0ea45acb12c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351206"
 ---
 # <a name="imapifoldersavecontentssort"></a>IMAPIFolder::SaveContentsSort
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォルダーの内容のテーブルの既定の並べ替え順序を設定します。
+フォルダーの contents テーブルの既定の並べ替え順序を設定します。
   
 ```cpp
 HRESULT SaveContentsSort(
@@ -36,33 +36,33 @@ HRESULT SaveContentsSort(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpSortCriteria_
+ _lpsortcriteria_
   
-> [in]既定の並べ替え順序を含む[SSortOrderSet](ssortorderset.md)構造体へのポインター。 
+> 順番既定の並べ替え順序を含む[ssortorderset](ssortorderset.md)構造体へのポインター。 
     
  _ulFlags_
   
-> [in]既定の並べ替え順序を設定する方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番既定の並べ替え順序を設定する方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 RECURSIVE_SORT 
   
-> 既定の並べ替え順序を設定は、指定されたフォルダーとそのすべてのサブフォルダーに適用されます。
+> 既定の並べ替え順序セットは、指定したフォルダーとそのすべてのサブフォルダーに適用されます。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 並べ替え順序が正しく保存されました。
+> 並べ替え順序が正常に保存されました。
     
 MAPI_E_NO_SUPPORT 
   
-> メッセージ ストア プロバイダーでは、そのフォルダーの内容のテーブルの並べ替え順序を保存することはできません。
+> メッセージストアプロバイダーは、フォルダーコンテンツテーブルの並べ替え順序の保存をサポートしていません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**IMAPIFolder::SaveContentsSort**メソッドは、フォルダーの内容のテーブルの既定の並べ替え順序を確立します。 **SaveContentsSort**コードの呼び出しの後、クライアントがフォルダーの[IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md)メソッドを呼び出すと、返されるコンテンツ テーブル内の行は**SaveContentsSort**によって確立された順序で表示されます。
+**imapifolder:: SaveContentsSort**メソッドは、フォルダーの contents テーブルに既定の並べ替え順序を設定します。 つまり、クライアントが**SaveContentsSort**を呼び出した後に、フォルダーの[IMAPIContainer:: getcontentstable](imapicontainer-getcontentstable.md)メソッドを呼び出すと、返されたコンテンツテーブルの行が**SaveContentsSort**で設定された順序で表示されます。
   
-すべてのメッセージ ストア プロバイダーをサポートして**SaveContentsSort**。メッセージ ストア プロバイダーは、 **SaveContentsSort**メソッドから MAPI_E_NO_SUPPORT を返すことができます。 
+すべてのメッセージストアプロバイダーが**SaveContentsSort**をサポートしているわけではありません。メッセージストアプロバイダーは、 **SaveContentsSort**メソッドから MAPI_E_NO_SUPPORT を返すことができます。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -8,27 +8,27 @@ f1_keywords:
 - Vis_DSS.chm445
 localization_priority: Normal
 ms.assetid: decb86a4-b711-35e1-b9dc-744a84ee177c
-description: 枠内におけるオブジェクトのイメージの高さを指定します。既定の数式は次のとおりです。
-ms.openlocfilehash: 983bb919dbfada65b6d9af464ecfa17c04e970c6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 枠内におけるオブジェクトのイメージの高さを指定します。 既定の数式は次のとおりです。
+ms.openlocfilehash: 956bc478604fd19d8dfdbb7079e092e9e8a16e7b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344934"
 ---
-# <a name="imgheight-cell-foreign-image-info-section"></a>[ImgHeight] セル ([外部画像情報] セクション)
+# <a name="imgheight-cell-foreign-image-info-section"></a>[ImgHeight] セル ([Foreign Image Info] セクション)
 
-枠内におけるオブジェクトのイメージの高さを指定します。既定の数式は次のとおりです。
+枠内におけるオブジェクトのイメージの高さを指定します。 既定の数式は次のとおりです。
   
-= 高さ\*1
+= 高さ\* 1
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ImgHeight] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [Imgheight]  <br/> |
+| セル名:  <br/> | [imgheight]  <br/> |
    
 プログラムから、インデックスによって [ImgHeight] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

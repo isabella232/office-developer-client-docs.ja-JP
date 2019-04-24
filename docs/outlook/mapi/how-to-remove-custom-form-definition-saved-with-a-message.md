@@ -1,29 +1,29 @@
 ---
-title: ユーザー設定のフォーム定義を保存し、メッセージを削除します。
+title: メッセージと共に保存されているユーザー設定フォーム定義を削除する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 6a270f0c-104a-84a1-9adf-aea166f89071
 description: '�ŏI�X�V��: 2012�N6��25��'
-ms.openlocfilehash: 4b12824542a1408a364452eb6587122ec66412d3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ac162cb73cfdee83bf034de32064c5ed9df3bc02
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345935"
 ---
-# <a name="remove-custom-form-definition-saved-with-a-message"></a>ユーザー設定のフォーム定義を保存し、メッセージを削除します。
+# <a name="remove-custom-form-definition-saved-with-a-message"></a>メッセージと共に保存されているユーザー設定フォーム定義を削除する
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックでは、フォーム定義を含まない通常のメッセージにユーザー設定のフォーム定義に保存されているメッセージに変換する C++ のコード例を示します。
+このトピックでは、ユーザー設定フォーム定義と共に保存されたメッセージを、フォーム定義なしで通常のメッセージに変換する C++ のコードサンプルを示します。
   
-Microsoft Outlook 2010 または Microsoft Outlook 2013 では、フォーム ライブラリに発行すること、または、メッセージに対応するフォーム定義を保存してユーザー設定フォームのページを含むフォームを共有できます。 メッセージと共に保存されるカスタム フォームが一般的と呼ばれる「one-off フォーム、」1 回限りのインスタンスとその特定のメッセージを表示するだけのフォームを共有するため。 通常これを行うフォームをフォーム ライブラリに発行されませんが、受信者がアイテムを開くときにユーザー設定フォームを使用するとします。 フォームは、フォームの [**プロパティ**] ページで [**アイテムのフォーム レイアウトも送信**] チェック ボックスを選択して one-off フォーム デザイナーで指定できます。 
+microsoft outlook 2010 または microsoft outlook 2013 では、ユーザー設定フォームページを含むフォームは、フォームライブラリに発行するか、または対応するフォーム定義をメッセージと共に保存することによって共有できます。 メッセージと共に保存されるユーザー設定フォームは、"one-off フォーム" と呼ばれることがあります。このフォームは、1回限りのインスタンスとして特定のメッセージを表示するためにのみ共有されるためです。 通常、フォームがフォームライブラリに発行されていないが、受信者がアイテムを開くときにユーザー設定フォームを使用する必要がある場合です。 フォームデザイナーでフォームを one-off として指定するには、フォームの [**プロパティ**] ページで、[**アイテムと共にフォーム定義を送信**する] チェックボックスをオンにします。 
   
-フォーム ページを含むフォームをカスタマイズするには、Visual Basic Scripting Edition (VBScript) 内のコードとします。 フォーム定義が保存されているメッセージは、一般的にサイズが大きくします。 セキュリティおよびストレージ上の理由から、Outlook 2010、Outlook 2013 は、フォーム定義がアイテムと共に保存を無視します。
+フォームページを含むフォームは、Visual Basic Scripting Edition (VBScript) のコードを使用してカスタマイズできます。 フォーム定義と共に保存されるメッセージは、通常、サイズが大きくなります。 セキュリティとストレージの理由により、outlook 2010 および outlook 2013 では、アイテムと共に保存されるフォーム定義は無視されます。
   
-ないユーザー設定のフォーム定義に保存されているメッセージを変換するには、4 つの名前付きプロパティを削除する必要があります。
+ユーザー設定フォーム定義に保存されているメッセージをに変換せずに変換するには、次の4つの名前付きプロパティを削除する必要があります。
   
 - [PidLidFormStorage ���K���̃v���p�e�B](pidlidformstorage-canonical-property.md)
     
@@ -33,11 +33,11 @@ Microsoft Outlook 2010 または Microsoft Outlook 2013 では、フォーム �
     
 - [PidLidScriptStream ���K���̃v���p�e�B](pidlidscriptstream-canonical-property.md)
     
-さらに、そのメッセージを保存するカスタム プロパティの定義が含まれています[PidLidPropertyDefinitionStream の標準的なプロパティ](pidlidpropertydefinitionstream-canonical-property.md)を削除することもする必要があります。 このプロパティを削除することの副次的な影響を Outlook 2010 または Outlook 2013 オブジェクト モデルは、Outlook 2010 または Outlook 2013 のユーザー インターフェイスは、メッセージに設定されているユーザー プロパティにアクセスすることができなきます。 まだ MAPI を介してこれらのプロパティとその値にアクセスできます。 このプロパティを削除しないし、別のフォーム定義を使用してメッセージを保存、 [PidLidPropertyDefinitionStream の標準的なプロパティ](pidlidpropertydefinitionstream-canonical-property.md)は、部分的に新しいデータで上書きに注意してくださいし、データの整合性は保証されません。 
+さらに、そのメッセージと共に保存されたカスタムプロパティの定義を含む[PidLidPropertyDefinitionStream 標準プロパティ](pidlidpropertydefinitionstream-canonical-property.md)も削除する必要があります。 このプロパティを削除すると、outlook 2010 または outlook 2013 オブジェクトモデルと outlook 2010 または outlook 2013 ユーザーインターフェイスは、メッセージに設定されたユーザープロパティにアクセスできなくなります。 MAPI を使用してこれらのプロパティとそれらの値にアクセスすることはできます。 このプロパティを削除しないで、メッセージを別のフォーム定義で保存した場合、 [PidLidPropertyDefinitionStream 標準プロパティ](pidlidpropertydefinitionstream-canonical-property.md)は新しいデータで上書きされ、データの整合性は保証されないことに注意してください。 
   
-[PidLidPropertyDefinitionStream の標準的なプロパティ](pidlidpropertydefinitionstream-canonical-property.md)を削除する場合、 [PidLidCustomFlag の標準的なプロパティ](pidlidcustomflag-canonical-property.md)から**INSP_PROPDEFINITION**フラグも削除必要があります。
+[PidLidPropertyDefinitionStream 標準プロパティ](pidlidpropertydefinitionstream-canonical-property.md)を削除した場合は、 [PidLidCustomFlag 標準プロパティ](pidlidcustomflag-canonical-property.md)から**INSP_PROPDEFINITION**フラグも削除する必要があります。
   
-次の関数では、 `RemoveOneOff`、受け入れる入力パラメーターとしてメッセージとインジケーターへのポインター、 [PidLidPropertyDefinitionStream の標準的なプロパティ](pidlidpropertydefinitionstream-canonical-property.md)を削除するかどうか。 メッセージ ポインターを使用して、適切なプロパティの識別子を取得する[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)を呼び出す、名前付きプロパティを削除するのには[IMAPIProp::DeleteProps](imapiprop-deleteprops.md)を呼び出します。 また[PidLidCustomFlag の標準的なプロパティ](pidlidcustomflag-canonical-property.md)を取得する[IMAPIProp::GetProps](imapiprop-getprops.md)を呼び出すし、クリア、 **INSP\_ONEOFFFLAGS**フラグは、 **INSP_PROPDEFINITION**としてフラグを設定、そのプロパティの適切なので、Outlook 2010 と削除されたこれらの名前付きプロパティの outlook 2013 を検索しません。 
+次の関数`RemoveOneOff`は、メッセージへのポインターと、 [PidLidPropertyDefinitionStream 標準プロパティ](pidlidpropertydefinitionstream-canonical-property.md)を削除するかどうかを示す、入力パラメーターとして受け入れます。 メッセージポインターを使用して、 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)を呼び出して適切なプロパティ識別子を取得し、次に[imapiprop::D eleteprops](imapiprop-deleteprops.md)を呼び出して名前付きプロパティを削除します。 また、 [imapiprop:: GetProps](imapiprop-getprops.md)を呼び出して[PidLidCustomFlag 標準プロパティ](pidlidcustomflag-canonical-property.md)を取得し、そのプロパティから必要に応じて**insp\_oneoffflags**フラグと**INSP_PROPDEFINITION**フラグをクリアします。そのため、Outlook 2010 およびOutlook 2013 は、削除された名前付きプロパティを検索しません。 
   
 ```cpp
 ULONG aulOneOffIDs[] = {dispidFormStorage,  
@@ -134,5 +134,5 @@ HRESULT RemoveOneOff(LPMESSAGE lpMessage, BOOL bRemovePropDef)
 
 ## <a name="see-also"></a>関連項目
 
-- [MAPI �萔](mapi-constants.md)
+- [MAPI 定数](mapi-constants.md)
 

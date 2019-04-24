@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: ce0be0d5-4962-4d53-828f-c93d1c5aae32
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 4cbaf08c58a98be45ad33aebb8f230fb53c234f3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c13b741b1e0ddfd964b9325d736a26dac4bff2af
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346299"
 ---
 # <a name="rowlist"></a>ROWLIST
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-行と[IExchangeModifyTable](iexchangemodifytableiunknown.md)インターフェイスを使用して、テーブルの行に対して実行される操作を表す[ROWENTRY](rowentry.md)構造体の配列が含まれています。 
+[IExchangeModifyTable](iexchangemodifytableiunknown.md)インターフェイスを使用して、テーブル内のこれらの行に対して実行される行と操作を表す[rowentry](rowentry.md)構造の配列が含まれています。 
   
 ```cpp
 typedef struct
@@ -38,21 +38,21 @@ typedef struct
 
 ## <a name="members"></a>Members
 
- **cEntries**
+ **centries**
   
-> **AEntries**メンバーによって指定された配列内のエントリの数です。 
+> **aentries**メンバーによって指定された配列内のエントリの数。 
     
- **aEntries [MAPI_DIM]**
+ **aentries [MAPI_DIM]**
   
-> 行とテーブル内のこれらの行に対して実行される操作を含む**ROWENTRY**構造体の配列。 
+> 行と、テーブル内のそれらの行に対して実行される操作を含む**rowentry**構造の配列。 
     
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|RulesDlg.cpp  <br/> |CRulesDlg::GetSelectedItems  <br/> |**ModifyTable**の後続のアクションを選択したルールの一覧を作成するために使用します。  <br/> |
+|ルール  <br/> |crulesdlg:: GetSelectedItems  <br/> |以降の**modifytable**アクションに対して選択されたルールの一覧を作成するために使用されます。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

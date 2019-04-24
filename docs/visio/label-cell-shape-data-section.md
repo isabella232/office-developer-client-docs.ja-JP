@@ -8,19 +8,19 @@ f1_keywords:
 - Vis_DSS.chm510
 localization_priority: Normal
 ms.assetid: 6d328b1c-8d92-eb1a-7317-7dd85c674ff9
-description: '[図形データ] ウィンドウに表示されるラベルを指定します。ラベルには、英数字とアンダースコア (_) 文字を使用できます。'
-ms.openlocfilehash: 087bcb87a9e47131e6dbcd2d8df5c5da8a06894b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: '[図形データ] ウィンドウに表示されるラベルを指定します。 ラベルには、英数字とアンダースコア (_) 文字を使用できます。'
+ms.openlocfilehash: d341acfbd47446a5b6dbee51ed821d1e1f34e15d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358752"
 ---
-# <a name="label-cell-shape-data-section"></a>[Label] セル ([図形データ] セクション)
+# <a name="label-cell-shape-data-section"></a>[Label] セル ([Shape Data] セクション)
 
-[**図形データ**] ウィンドウに表示されるラベルを指定します。ラベルには、英数字とアンダースコア (_) 文字を使用できます。 
+[**図形データ**] ウィンドウに表示されるラベルを指定します。 ラベルには、英数字とアンダースコア (_) 文字を使用できます。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 このセルではラベルの文字列が自動的に引用符で囲まれますが、[**図形データ**] ウィンドウでは引用符は表示されません。 
   
@@ -30,14 +30,14 @@ ms.locfileid: "19805634"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |プロペラです。*名*です。ラベル位置プロパティです。 *名前*は、行の名前  <br/> |
+|セル名:  <br/> |提案.*名前*です。ラベルの位置を指定します。 *name*には、行の名前を指定します。  <br/> |
    
 プログラムから、インデックスによって [Label] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionProp** <br/> |
-|行インデックス:  <br/> |**visRowProp** +  *i* 、 *i* = 0, 1, 2.  <br/> |
-|セル インデックス:  <br/> |**visCustPropsLabel** <br/> |
+|行インデックス:  <br/> |**visRowProp** +  *i* = ** 0、1、2...  <br/> |
+|セル インデックス:  <br/> |**viscustpropslabel** <br/> |
    
 

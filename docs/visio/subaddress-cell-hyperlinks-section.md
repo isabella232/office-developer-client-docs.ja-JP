@@ -10,19 +10,19 @@ localization_priority: Normal
 ms.assetid: 949448fd-0f85-b56a-945e-1da0e48609e8
 description: リンク先のターゲット図面内での位置を指定します。
 ms.openlocfilehash: 092a53bd7c9d5adb77ed35f3e2ef53888bd6ebea
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349323"
 ---
-# <a name="subaddress-cell-hyperlinks-section"></a>[SubAddress] セル ([ハイパーリンク] セクション)
+# <a name="subaddress-cell-hyperlinks-section"></a>[SubAddress] セル ([Hyperlinks] セクション)
 
 リンク先のターゲット図面内での位置を指定します。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-たとえば、アドレスのセルが"Drawing1.vsdx"の場合は、サブアドレスのセルは「ページ 3」などのページ名を指定できます。 します ワークシートまたは範囲を「ワークシート関数」や「Sheet1 など、ワークシート内セルの値は、アドレスのセルが Excel のファイル"Samples.xlsx"の場合は、!範囲 A1: D10"です。 場合は、[Address] セルは、"https://www.microsoft.com/office/"、このセルの値は「ソリューション」など、ドキュメント内で名前付きアンカーをすることができます。
+たとえば、アドレスセルが "Drawing1" の場合、サブアドレスセルは "ページ-3" などのページ名を指定できます。 [Address] セルが Microsoft Excel ファイル "Samples" の場合、このセルの値は、ワークシート内のワークシートまたはセル範囲 ("worksheet 関数"、"Sheet1!" など) にすることができます。A1: D10 [Address] セルが "https://www.microsoft.com/office/" の場合、このセルの値は、"solutions" など、ドキュメント内の名前付きアンカーにすることができます。
   
 このセルの値は、[**ハイパーリンク**] ダイアログ ボックスで設定することもできます (このダイアログ ボックスを開くには、[**挿入**] タブの [**リンク**] グループで、[**ハイパーリンク**] をクリックします)。
   
@@ -30,14 +30,14 @@ ms.locfileid: "25395267"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | ハイパーリンク  *名*です。サブアドレスのハイパーリンクの *.name*と行の名前があります。  <br/> |
+| セル名:  <br/> | ハイパーリンク  *名前*です。サブアドレスハイパーリンクの名前は、行名です *。*  <br/> |
    
-プログラムから、インデックスによって [ **SubAddress** ] セルへの参照を取得するのには、次の引数を持つ**CellsSRC**プロパティを使用します。 
+プログラムから、インデックスによって [サブ**アドレス**] セルへの参照を取得するには、 **CellsSRC**プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionHyperlink** <br/> |
-| 行インデックス:  <br/> |**visRow1stHyperlink** +  *i* 、 *i* = 0, 1, 2.  <br/> |
-| セル インデックス:  <br/> |**visHLinkSubAddress** <br/> |
+| 行インデックス:  <br/> |**visRow1stHyperlink** +  *i* = ** 0、1、2...  <br/> |
+| セル インデックス:  <br/> |**vishlinksubaddress アドレス** <br/> |
    
 

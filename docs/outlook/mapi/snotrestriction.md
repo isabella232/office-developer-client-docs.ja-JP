@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: e86ca032-d973-4b79-976e-5240ab38a0da
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 174da93e7682246565b12c4fc4ffa6d1a9de065c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 07a1a0a1953d136da534fbdc6339d326c877bebf
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32344542"
 ---
 # <a name="snotrestriction"></a>SNotRestriction
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-**しない**制限、制約を論理**NOT**演算を適用するために使用について説明します。 
+制限に制限を適用するのでは**なく**、制限に対して論理**not**演算を適用する場合に使用します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SNotRestriction
@@ -42,17 +42,17 @@ typedef struct _SNotRestriction
 
 ## <a name="members"></a>Members
 
- **ulReserved**
+ **ulreserved**
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- **lpRes**
+ **lpres**
   
-> 論理**NOT**演算子に参加している制限を記述する[SRestriction](srestriction.md)構造体へのポインター。 
+> 論理**not**演算子に結合する制限を説明する[srestriction](srestriction.md)構造体へのポインター。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**SNotRestriction**構造体の詳細については、[制限の詳細](about-restrictions.md)を参照してください。 
+**snotrestriction**構造の詳細については、「[制限につい](about-restrictions.md)て」を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 3ccfc15d-f3c6-4c7b-b1cc-855af66036de
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 5ae0c9f123ade599ca9bc1d3bdea3e9c89cfbc16
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 385660889c40e5f59dfc015ad92ce6a1398ab0cd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351325"
 ---
 # <a name="sccreateconversationindex"></a>ScCreateConversationIndex
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージのスレッドでメッセージが属していることを示します。 
+メッセージスレッドのメッセージが属する場所を示します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 SCODE ScCreateConversationIndex(
@@ -44,23 +44,23 @@ SCODE ScCreateConversationIndex(
 
 ## <a name="parameters"></a>パラメーター
 
- _cbParent_
+ _cbparent_
   
-> [in]親スレッドのインデックス内のバイト数をカウントします。
+> 順番親の会話インデックスのバイト数。
     
- _lpbParent_
+ _lpbparent_
   
-> [in]親スレッドのインデックス内のバイトへのポインター。 _CbParent_が 0 の場合、NULL があります。 
+> 順番親スレッドのインデックス内のバイトへのポインター。 _cbparent_が0の場合、これは NULL になることがあります。 
     
  _lpcbIndex_
   
-> [out]呼び出しによって返される新しい会話のインデックス内のバイト数へのポインター。 
+> 読み上げ呼び出しによって返される新しい会話インデックス内のバイト数へのポインター。 
     
- _lppbIndex_
+ _lppbindex_
   
-> [out]呼び出しによって返される新しい会話のインデックスへのポインターへのポインター。
+> 読み上げ呼び出しによって返される新しい会話インデックスへのポインターへのポインター。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   

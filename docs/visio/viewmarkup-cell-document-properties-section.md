@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 6c956266-8266-3312-5a68-cc9d8bdb8cd9
 description: 図面ウィンドウに校正履歴を表示するかどうかを指定します。
-ms.openlocfilehash: dda908595b243878ec755cf73351ec1fd672dc55
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: eeccdd0d14bf28630937b0e480822abb6fb19da5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355826"
 ---
-# <a name="viewmarkup-cell-document-properties-section"></a>[ViewMarkup] セル ([ドキュメントのプロパティ] セクション)
+# <a name="viewmarkup-cell-document-properties-section"></a>[ViewMarkup] セル ([Document Properties] セクション
 
 図面ウィンドウに校正履歴を表示するかどうかを指定します。 
   
@@ -25,9 +25,9 @@ ms.locfileid: "19806780"
 |TRUE  <br/> |図面ウィンドウに校正履歴を表示します。  <br/> |
 |FALSE  <br/> |校正履歴を表示しません (既定値)。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
- 校正履歴の記録を有効にすると ([addmarkup] セルが TRUE)、ViewMarkup セルが自動的に TRUE に設定し、校正履歴の記録がオフになっている後でも TRUE のまま ([addmarkup] セルでは FALSE です)。 AddMarkup セルが TRUE の場合に、[ViewMarkup] セルの値は無視されます。 
+ マークアップ追跡が有効になっている ([addmarkup] セルが true の場合)、[viewmarkup] セルは自動的に true に設定され、マークアップの追跡がオフになっても true のままとなります ([addmarkup] セルは FALSE です)。 [AddMarkup] セルが TRUE の場合、[ViewMarkup] セル内の値は無視されます。 
   
 図面にコメントを挿入した場合、校正履歴の記録機能がオンかどうかに関わらず、[ViewMarkup] セルは TRUE に設定されます。[ViewMarkup] セルが TRUE でなければ、図面内にコメントが表示されません。
   
@@ -37,7 +37,7 @@ ms.locfileid: "19806780"
   
 |||
 |:-----|:-----|
-|セル名 :  <br/> |ViewMarkup  <br/> |
+|セル名 :  <br/> |[viewmarkup]  <br/> |
    
 プログラムから、インデックスによって [ViewMarkup] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

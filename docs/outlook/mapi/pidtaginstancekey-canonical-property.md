@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 14fc5571-acc0-4d75-8598-964aee5ba01c
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: c237149c305a80012d1f06ea4373b892d25daec1
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25396990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358512"
 ---
 # <a name="pidtaginstancekey-canonical-property"></a>PidTagInstanceKey 標準プロパティ
 
@@ -25,60 +25,60 @@ ms.locfileid: "25396990"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブル内の行を一意に識別する値が含まれています。 
+テーブル内の行を一意に識別する値を格納します。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_INSTANCE_KEY  <br/> |
-|識別子:  <br/> |0x0FF6  <br/> |
+|識別子:  <br/> |0x0ff6  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |テーブル  <br/> |
+|エリア:  <br/> |Table  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティは、表形式ビュー内の行を一意に識別するバイナリ値です。 ほとんどのテーブルの必要な列があります。 行が 2 つのビューに含まれている場合は、2 つの別のインスタンスのキーがあります。 行のインスタンスのキーは、テーブルを開くたびに異なる場合がありますが、テーブルの中に一定に開いています。 テーブルの使用中に追加された行は、使用していたインスタンスのキーを再利用しません。 
+このプロパティは、テーブルビューの行を一意に識別するバイナリ値です。 ほとんどのテーブルでは必須の列です。 行が2つのビューに含まれている場合は、2つの異なるインスタンスキーがあります。 行のインスタンスキーは、テーブルが開かれるたびに異なる場合がありますが、テーブルを開いている間は一定のままです。 テーブルが使用されている間に追加された行は、以前に使用されていたインスタンスキーを再利用しません。 
   
-**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) または**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) のプロパティを使用して、拡張のすべての行を関連付けるには。 **PR_INSTANCE_KEY**を使用して、展開内の特定のインスタンスを探します。 
+拡張のすべての行を関連付けるには、 **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) または**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) プロパティを使用します。 **PR_INSTANCE_KEY**を使用して、拡張内で特定のインスタンスを検索します。 
   
-表内の複数値を持つプロパティが拡張されると、行が作成、展開の各インスタンスは、そのプロパティの値ごとに。 各行は、展開全体の元の値を保持する他のすべての列に、 **PR_INSTANCE_KEY**プロパティに一意の値を持ちます。 
+複数値プロパティがテーブルで展開されている場合は、そのプロパティの各値に対して、拡張の各インスタンスに対して1つの行が作成されます。 各行には、 **PR_INSTANCE_KEY**プロパティの一意の値がありますが、他のすべての列は、拡張全体を通じて元の値を保持します。 
   
-分類された種類のテーブル、行の実際のデータには対応しない、並べ替えの結果に追加できます。 すべてのテーブル内のすべての行と同様に、このような行には、独自の一意のインスタンスのキーがあります。 
+表の分類された並べ替えでは、実際のデータに対応していない行は、並べ替えの結果に追加できます。 このような各行には、すべてのテーブルのすべての行と同様に、固有のインスタンスキーがあります。 
   
- **PR_INSTANCE_KEY**は、表のイベント通知にも使用されます。 **PropIndex** 、 **propPrior** 、 [TABLE_NOTIFICATION](table_notification.md)構造体のメンバーは、 **PR_INSTANCE_KEY**の値を保持している[SPropValue](spropvalue.md)構造体です。 **PropIndex**メンバーは、追加または変更された行を示します。 **PropPrior**メンバーは、(**PR_NULL**は、最初の行への変更を示します) の追加または変更された行の前に行を示します。 
+ **PR_INSTANCE_KEY**は、テーブルイベント通知でも使用されます。 **propindex**と[TABLE_NOTIFICATION](table_notification.md)構造体の**前**のメンバーは、 **PR_INSTANCE_KEY**の値を保持する[spropvalue](spropvalue.md)構造です。 **propindex**メンバーは、追加または変更された行を示します。 **propprior**メンバーは、追加または変更された行の前の行を示します (**PR_NULL**は、最初の行に対する変更を示します)。 
   
-表示された表の一部としては、この値はコピーされません。 
+この値は、表示テーブルの一部としてコピーされません。 
   
- **PR_INSTANCE_KEY**は、 [MAPIUID](mapiuid.md)構造です。 バイナリ値として、すべてのインスタンスのキーを直接比較できます。 
+ **PR_INSTANCE_KEY**は、 [MAPIUID](mapiuid.md)構造体です。 すべてのインスタンスキーは、バイナリ値として直接比較できます。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
-> プロパティとユーザー、連絡先、グループ、およびリソースのリストの操作を指定します。
+> ユーザー、連絡先、グループ、およびリソースのリストのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

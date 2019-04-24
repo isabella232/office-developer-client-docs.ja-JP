@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: fbff82de-77d3-411e-a30c-a37cefdd92fc
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 1d486344ab20ef49488dbb911f3dd7000d64942e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 8611249207811446ae47f056486ec498bf1e7eab
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349309"
 ---
 # <a name="iaddrbooksetsearchpath"></a>IAddrBook::SetSearchPath
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-名前解決の処理に使用されるプロファイルに新しい検索パスを設定します。 
+名前解決プロセスで使用されるプロファイルに新しい検索パスを設定します。 
   
 ```cpp
 HRESULT SetSearchPath(
@@ -34,7 +34,7 @@ HRESULT SetSearchPath(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
@@ -42,23 +42,23 @@ HRESULT SetSearchPath(
     
  _lpSearchPath_
   
-> [in]検索パスを保持するために使用する[SRowSet](srowset.md)構造体へのポインター。 **SRowSet**で**aRow**メンバーごとに、最初のプロパティは、 **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) である必要があります。
+> 順番検索パスを保持するために使用する[srowset](srowset.md)構造体へのポインター。 **srowset**の各**arow**メンバーの最初のプロパティは、 **** ([PidTagEntryId](pidtagentryid-canonical-property.md)) である必要があります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 検索パスが正しく設定されました。
+> 検索パスが正常に設定されました。
     
 MAPI_E_MISSING_REQUIRED_COLUMN 
   
-> **PR_ENTRYID**プロパティは、 **SRowSet**構造で説明されているコンテナーの 1 つ含まれていません。 
+> **srowset**構造で記述されているコンテナーの1つに、 **PR_ENTRYID**プロパティが含まれていませんでした。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-クライアントとサービス ・ プロバイダーは、 [IAddrBook::ResolveName](iaddrbook-resolvename.md)メソッドを使用して名前を解決するために使用されるコンテナーの検索順序に加えられた変更を保存する**SetSearchPath**メソッドを呼び出します。 検索パスは、セッションのインスタンス間で保存されます。 
+クライアントおよびサービスプロバイダーは、 **SetSearchPath**メソッドを呼び出して、 [IAddrBook:: ResolveName](iaddrbook-resolvename.md)メソッドを使用して名前を解決するために使用されるコンテナー検索順序に加えられた変更を保存します。 検索パスは、セッションのインスタンス間で保存されます。 
   
-クライアントとプロバイダーがありません、検索パスの変更を適用する[IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを呼び出します。 
+クライアントとプロバイダーは、検索パスを永続的に変更するために、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出す必要はありません。 
   
 ## <a name="see-also"></a>関連項目
 

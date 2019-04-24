@@ -12,53 +12,53 @@ api_type:
 - COM
 ms.assetid: b6a5096f-ad27-48b3-b569-f33efc20fa72
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 9fb372e504eaeb55861b09c4151956fb102c08f6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 279d6109e8c29de204c4fb58da51de84b4fbe183
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350877"
 ---
 # <a name="imapiclientshutdown--iunknown"></a>IMAPIClientShutdown : IUnknown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアント プロセスの高速シャット ダウンを実行するために MAPI クライアントを有効にします。 
+MAPI クライアントがクライアントプロセスの高速シャットダウンを実行できるようにします。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|によって公開されます。  <br/> |[IMAPISession](imapisessioniunknown.md)オブジェクト  <br/> |
-|によって実装されます。  <br/> |MAPI サブシステム  <br/> |
-|によって呼び出されます。  <br/> |MAPI クライアント  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IMAPIClientShutdown  <br/> |
-|ポインターの型。  <br/> |LPMAPICLIENTSHUTDOWN  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|公開者:  <br/> |[imapisession](imapisessioniunknown.md)オブジェクト  <br/> |
+|実装元:  <br/> |MAPI サブシステム  <br/> |
+|呼び出し元:  <br/> |MAPI クライアント  <br/> |
+|インターフェイス識別子:  <br/> |IID_IMAPIClientShutdown  <br/> |
+|ポインターの種類:  <br/> |lpmapiclientshutdown  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md) <br/> |クエリ、MAPI サブシステムの高速シャット ダウンをサポートして読み込まれている MAPI プロバイダーによって提供されます。  <br/> |
-|[NotifyProcessShutdown](imapiclientshutdown-notifyprocessshutdown.md) <br/> |続行するのには MAPI クライアントの意図をシャット ダウンを示します。  <br/> |
-|[DoFastShutdown](imapiclientshutdown-dofastshutdown.md) <br/> |MAPI クライアントのクライアントのプロセスを即座に終了するという意図を示しています。  <br/> |
+|[QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md) <br/> |読み込み済みの mapi プロバイダーによって提供される高速シャットダウンのサポートを mapi サブシステムに対して照会します。  <br/> |
+|[notifyprocessshutdown](imapiclientshutdown-notifyprocessshutdown.md) <br/> |シャットダウンを続行する MAPI クライアントの意図を示します。  <br/> |
+|[dofastshutdown](imapiclientshutdown-dofastshutdown.md) <br/> |クライアントプロセスをすぐに終了する MAPI クライアントの意図を示します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-高速シャット ダウンでは、MAPI クライアントと、読み込まれている MAPI プロバイダーにすると、MAPI クライアントは、MAPI の設定とデータを保存するのにはアクティブな MAPI セッションを許可します。 これにより、MAPI クライアントをすべての外部参照を切断して、データの損失を発生させることがなく終了します。 高速シャット ダウンを行うに必要な MAPI クライアントでは、 **IMAPIClientShutdown**インターフェイスを使用する必要があります。 MAPI クライアントは、 [IMAPISession](imapisessioniunknown.md)オブジェクトの IUnknown::QueryInterface メソッドを呼び出して、このインターフェイスへのポインターを取得できます。 
+高速シャットダウンの目的は、mapi クライアントと、mapi の設定とデータを保存するために mapi クライアントがアクティブな mapi セッションを持つ、すべての読み込み済みの mapi プロバイダーを許可することです。 これにより、MAPI クライアントは、データ損失を発生させることなく、すべての外部参照を切断し、終了することができます。 高速シャットダウンを実行する必要がある MAPI クライアントは、 **IMAPIClientShutdown**インターフェイスを使用する必要があります。 MAPI クライアントは、任意の[imapisession](imapisessioniunknown.md)オブジェクトで IUnknown:: QueryInterface メソッドを呼び出すことによって、このインターフェイスへのポインターを取得できます。 
   
-MAPI クライアントは、常に**IMAPIClientShutdown::QueryFastShutdown**メソッドを呼び出すことによって、高速シャット ダウンを開始します。 MAPI サブシステムは、読み込まれている MAPI プロバイダーがクライアントの高速シャット ダウンをサポートするかどうかを確認することによって、MAPI クライアントのクエリに応答します。 管理者は、高速シャット ダウンを続行するのには MAPI クライアントに必要なプロバイダーのサポートのレベルを判断するための Windows レジストリ設定を使用できます。 詳細については、[高速シャット ダウンのユーザー オプション](fast-shutdown-user-options.md)を参照してください。
+MAPI クライアントは、 **IMAPIClientShutdown:: queryfastshutdown**メソッドを呼び出して、常に高速シャットダウンを開始します。 mapi サブシステムは、読み込み済みの mapi プロバイダーがクライアントの高速シャットダウンをサポートしているかどうかを確認することによって、mapi クライアントのクエリに応答します。 管理者は、Windows レジストリ設定を使用して、MAPI クライアントが高速シャットダウンを続行するために必要なプロバイダーサポートのレベルを判断するのに役立てることができます。 詳細については、「 [Fast Shutdown User Options](fast-shutdown-user-options.md)」を参照してください。
   
-高速シャット ダウンを続行するには、クライアントは、MAPI サブシステムにシャット ダウンするという意図を示すために**IMAPIClientShutdown::NotifyProcessShutdown**メソッドを呼び出します。 クライアントは、クライアント プロセスがすぐに終了することを示すために**IMAPIClientShutdown::DoFastShutdown**メソッドを呼び出します。 
+高速シャットダウンを続行するには、クライアントは**IMAPIClientShutdown:: notifyprocessshutdown**メソッドを呼び出して、MAPI サブシステムにシャットダウンの意図を示します。 クライアントは**IMAPIClientShutdown::D ofastshutdown**メソッドを呼び出して、クライアントプロセスが直ちに終了したことを示します。 
   
-高速シャット ダウンの詳細については、[高速シャット ダウンの概要](fast-shutdown-overview.md)を参照してください。 高速シャット ダウンが正常に実行する方法の詳細については、[高速シャット ダウンのベスト ・ プラクティス](best-practices-for-fast-shutdown.md)を参照してください。
+高速シャットダウンの詳細については、「[高速シャットダウンの概要](fast-shutdown-overview.md)」を参照してください。 高速シャットダウンを正常に実行する方法については、「[ファストシャットダウンのベストプラクティス](best-practices-for-fast-shutdown.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
   
-[Mapi クライアントのシャット ダウン](client-shutdown-in-mapi.md)
+[MAPI でのクライアント シャットダウン](client-shutdown-in-mapi.md)
 

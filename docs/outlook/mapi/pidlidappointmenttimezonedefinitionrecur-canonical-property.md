@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 52fd57a0-9e34-4452-9ecd-2acb454446c9
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: e5e9b06178a1517fc1c8652b0d667faf1afc77cc
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345354"
 ---
 # <a name="pidlidappointmenttimezonedefinitionrecur-canonical-property"></a>PidLidAppointmentTimeZoneDefinitionRecur 標準プロパティ
 
@@ -25,41 +25,41 @@ ms.locfileid: "25389303"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-定期的な予定または会議出席依頼の作成時に使用されるタイム ゾーンの説明を格納する[TZDEFINITION](https://msdn.microsoft.com/library/0ae21571-2299-6407-807c-428668bb6798%28Office.15%29.aspx)構造体の保存形式に対応するストリームが含まれています。 
+[TZDEFINITION](https://msdn.microsoft.com/library/0ae21571-2299-6407-807c-428668bb6798%28Office.15%29.aspx)構造の永続形式にマップするストリームを格納します。このストリームには、定期的な予定または会議出席依頼の作成時に使用されるタイムゾーンの説明を格納します。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |dispidApptTZDefRecur  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
-|長い ID (LID):  <br/> |0x00008260  <br/> |
+|プロパティセット:  <br/> |PSETID_Appointment  <br/> |
+|ロング ID (LID):  <br/> |0x00008260  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |予定表  <br/> |
+|エリア:  <br/> |カレンダー  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-Outlook または Exchange Server の予定表を実行している Microsoft Outlook を Microsoft Office Outlook 2007 では、ソリューションでは、コラボレーション データ オブジェクト (CDO) 1.2.1 以降のバージョンは、ツールの使用方法**dispidApptTZDefRecur**と**を更新します。dispidTimeZoneStruct** ([PidLidTimeZoneStruct](pidlidtimezonestruct-canonical-property.md)) のプロパティをタイム ゾーンの規則を変更する場合に、定期的な会議を調整する必要があるかどうかを確認します。 古いクライアントが、 **dispidTimeZoneStruct**プロパティを操作するため、これらのプロパティを同期する必要があります。 2 つのプロパティーを同期するかどうかを検出するには、 **dispidTimeZoneStruct**に一致するルールの**wFlags**メンバーに、TZRULE_FLAG_RECUR_CURRENT_TZREG フラグを設定する必要があります。 このフラグは設定されていない、または設定されている、 **dispidTimeZoneStruct**プロパティの規則は、マークされたルールと一致しない場合、 **dispidApptTZDefRecur**プロパティを破棄する必要があり、 **dispidTimeZoneStruct**を代わりに使用する必要があります。 
+microsoft Office outlook 2007 以降のバージョンの microsoft outlook と、outlook または Exchange Server 予定表更新ツールを実行したコラボレーションデータオブジェクト (CDO) 1.2.1 に基づくソリューションは、 **dispidApptTZDefRecur**と**を使用します。dispidTimeZoneStruct** ([PidLidTimeZoneStruct](pidlidtimezonestruct-canonical-property.md)) プロパティを使用して、タイムゾーンのルールが変更された場合に、定期的な会議を調整する必要があるかどうかを判断します。 以前のクライアントでは、 **dispidTimeZoneStruct**プロパティを引き続き操作できるため、これらのプロパティを同期する必要があります。 2つのプロパティが同期されているかどうかを検出するには、 **dispidTimeZoneStruct**に一致するルールの**wflags**メンバに TZRULE_FLAG_RECUR_CURRENT_TZREG フラグを設定する必要があります。 このフラグが設定されていない場合、または設定されていて、 **dispidTimeZoneStruct**プロパティのルールがマークされたルールと一致しない場合は、 **dispidApptTZDefRecur**プロパティを破棄して、代わりに**dispidTimeZoneStruct**を使用する必要があります。 
   
-新しい定期的な会議、または、 **dispidTimeZoneStruct**プロパティ、タイム ゾーン (の現在の定義を使用して任意の選択を行うと、 **dispidApptTZDefRecur**と**dispidTimeZoneStruct**の両方のプロパティを記述する場合Windows レジストリ) に従って使用する必要があります。 
+**dispidApptTZDefRecur**プロパティと**dispidTimeZoneStruct**プロパティの両方を新しい定期的な会議に書き込む場合、または**dispidTimeZoneStruct**プロパティを使用する任意の選択肢を作成する場合は、タイムゾーンの現在の定義 (Windows レジストリに従う) を使用する必要があります。 
   
-パーサーは、 **dispidApptTZDefRecur**から取得するストリームを読み取るとき、または**dispidApptTZDefRecur**などのバイナリのプロパティへの取り組みのためのストリームに**TZDEFINITION**が引き続き発生する場合注意が必要である必要があります。 詳細については、[バイナリのプロパティをコミットするためのストリームに永続化する TZDEFINITION](https://msdn.microsoft.com/library/0dec535d-d48f-39a5-97d5-0bd109134b3b%28Office.15%29.aspx)を参照してください。
+パーサーは、 **dispidApptTZDefRecur**から取得されたストリームを読み取るとき、または**dispidApptTZDefRecur**などのバイナリプロパティへのコミットメントを得るために**TZDEFINITION**に保持されている場合は、注意を払う必要があります。 詳細については、「データを[バイナリプロパティにコミットするためのストリームへの永続化 TZDEFINITION](https://msdn.microsoft.com/library/0dec535d-d48f-39a5-97d5-0bd109134b3b%28Office.15%29.aspx)」を参照してください。
   
- **dispidApptTZDefRecur**を世界協定時刻 (UTC) から、会議の日付と時刻、定期的に変換する方法を説明するタイム ゾーン情報を指定します。 このプロパティが**dispidTimeZoneStruct**で表されるデータと一致しないデータがある場合は、クライアントは、 **dispidApptTZDefRecur**の代わりに**dispidTimeZoneStruct**を使用する必要があります。 **DispidApptTZDefRecur**が設定されていない場合、 **PidLidTimeZoneStruct**プロパティが使用されます。 この BLOB 内のフィールドは、リトル エンディアン バイト順でエンコードされます。 
+ **dispidApptTZDefRecur**は、定期的な会議の日付と時刻を協定世界時 (UTC) との間で変換する方法を示すタイムゾーン情報を指定します。 このプロパティが設定されていて、 **dispidTimeZoneStruct**によって表されるデータと矛盾するデータがある場合、クライアントは**dispidApptTZDefRecur**ではなく**dispidTimeZoneStruct**を使用する必要があります。 **dispidApptTZDefRecur**が設定されていない場合は、 **PidLidTimeZoneStruct**プロパティが代わりに使用されます。 この BLOB のフィールドは、リトルエンディアンバイト順でエンコードされます。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
+> 予定、会議出席依頼、および応答メッセージのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -67,9 +67,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

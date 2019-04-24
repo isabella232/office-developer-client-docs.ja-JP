@@ -9,18 +9,18 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 815e0df8-5ebf-ef1b-d620-bce8abb69f1a
 description: セル数式の作成に使用した言語を示します。
-ms.openlocfilehash: 669bde032daeda90b22cdab5d1758c6cbd4109d5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e1e5b92f01e97bc63003a4b195c159a50f61e77b
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346502"
 ---
-# <a name="langid-cell-miscellaneous-section"></a>[LangID] セル ([その他] セクション)
+# <a name="langid-cell-miscellaneous-section"></a>[LangID] セル ([Miscellaneous] セクション)
 
 セル数式の作成に使用した言語を示します。 
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 Microsoft Office アプリケーションがサポートしている言語の一覧は、[[DocLangID](doclangid-cell-document-properties-section.md)] セル ([Document Properties] セクション) を参照してください。 
   
@@ -36,6 +36,6 @@ Microsoft Office アプリケーションがサポートしている言語の一
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowMisc** <br/> |
-| セル インデックス:  <br/> |**visObjLangID** <br/> |
+| セル インデックス:  <br/> |**visobjlangid** <br/> |
    
 

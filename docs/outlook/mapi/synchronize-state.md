@@ -6,40 +6,40 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 270ff414-514c-b1fc-db48-761bf6de8867
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: d9f2a11a9ec1691863b476fed02eff1831a69207
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7abbf049a848d417f640528e5030e37a954413e5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32349512"
 ---
 # <a name="synchronize-state"></a>同期状態
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
- このトピックでは、レプリケーションの状態マシンの同期状態中の動作について説明します。 
+ このトピックでは、レプリケーション状態マシンの同期状態中に行われる処理について説明します。 
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|状態識別子。  <br/> |**LR_SYNC** <br/> |
-|関連するデータ構造体。  <br/> |**[SYNC](sync.md)** <br/> |
-|この状態。  <br/> |[アイドル状態](idle-state.md) <br/> |
-|この状態。  <br/> |[階層の状態をダウンロード](download-hierarchy-state.md)[内容の状態を同期](synchronize-contents-state.md)[階層の状態をアップロード](upload-hierarchy-state.md)、またはアイドル状態  <br/> |
+|状態識別子:  <br/> |**LR_SYNC** <br/> |
+|関連データ構造:  <br/> |**[頻度](sync.md)** <br/> |
+|この状態から:  <br/> |[アイドル状態](idle-state.md) <br/> |
+|この状態:  <br/> |[階層の状態をダウンロード](download-hierarchy-state.md)する、[コンテンツの状態を同期](synchronize-contents-state.md)する、階層の[アップロード状態](upload-hierarchy-state.md)、またはアイドル状態  <br/> |
    
 > [!NOTE]
-> レプリケーションの状態マシンは、確定的なステート マシンです。 クライアントを別の 1 つの状態から出発するは、後者から前者に最終的に返す必要があります。 
+> レプリケーション状態マシンは、確定状態のマシンです。 ある状態から別の状態に出発するクライアントは、最終的に後者から元の状態に戻る必要があります。 
   
 ## <a name="description"></a>説明
 
-この状態では、同期を開始します。 ローカル ストアは、ここからアップロードまたはダウンロードの状態に移行できます。 ローカル ストアは、フォルダー階層をサーバーにアップロードするアップロード階層状態に移行できるなど、階層を最初にアップロードしてからダウンロードして階層、サーバーから完全な同期を実行できます。
+この状態は、同期を開始します。 ローカルストアは、ここからアップロードまたはダウンロード状態に移行できます。 たとえば、ローカルストアは、アップロード階層状態に移動してフォルダー階層をサーバーにアップロードすることも、最初に階層をアップロードしてから階層をサーバーからダウンロードして、完全同期を実行することもできます。
   
-この状態の時に Outlook は、Outlook がその他の状態の時に変更を表示するようにローカル ストアへのパスに関連付けられている**同期**データ構造体を初期化します。 
+この状態の間、outlook は関連する**同期**データ構造をローカルストアへのパスで初期化するため、outlook は他の状態で変更を認識できるようになります。 
   
-クライアントが、[in] 設定の**同期**Outlook の他の状態を処理する方法を指示するメンバーです。 たとえば、クライアントは**UPS_UPLOAD_ONLY**と**UPS_THESE_FOLDERS**に*ulFlags*を設定することができ、アップロードされるとこれらのフォルダーのみを Outlook に指示するのにはフォルダーのエントリ id の一覧には、 *pel* 。 この状態が終了すると、ローカル ストアは、アイドル状態に戻ります。 
+クライアントは、**同期**の [in] メンバーを設定します。これは、Outlook に他の状態を処理する方法を指示します。 たとえば、クライアントは*ulflags*を**UPS_UPLOAD_ONLY**および**UPS_THESE_FOLDERS**および*pel*に設定して、フォルダーのエントリ識別子のリストを、これらのフォルダーのみがアップロードされることを Outlook に通知することができます。 この状態が終了すると、ローカルストアはアイドル状態に戻ります。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -49,7 +49,7 @@ ms.locfileid: "22569723"
   
 [MAPI �萔](mapi-constants.md)
   
-[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
+[レプリケーション状態のマシンについて](about-the-replication-state-machine.md)
   
-[同期状態](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

@@ -7,25 +7,25 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 9573f10c-66e1-4e87-93f0-89687e906b8b
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b4ccfb8cf8201a17993932acc4c0104ace80b94d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: bb6bc8b8d0199ab07d5dad353dbc25da240593e3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32350674"
 ---
 # <a name="preparing-a-recipient"></a>受信者の準備
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアント アプリケーションでは、長期のエントリ id を短期的なエントリの識別子を変換して可能性のある追加、変更、またはプロパティの順序を変更して受信者を準備します。 メッセージの受信者のリストの一部である受信者またはメッセージに関連ではない受信者を準備できます。 通常、クライアントは、共通のアドレス] ダイアログ ボックスに含まれる受信者のエントリ id を長期的な短期的なエントリの識別子に変換するには、直接[IAddrBook::PrepareRecips](iaddrbook-preparerecips.md)を呼び出します。 送信メッセージに関連付けられている受信者、受信者の準備が名前解決処理によって処理されます。 
+クライアントアプリケーションは、短い用語のエントリ識別子を長期のエントリ識別子に変換して、プロパティの追加、変更、または並べ替えを行うことにより、受信者を事前に準備します。 メッセージに関連付けられていない受信者リストの一部である受信者を準備することができます。 通常、クライアントは[IAddrBook::P reparerecips](iaddrbook-preparerecips.md)を呼び出して、短い用語の入力識別子を、[共通アドレス] ダイアログボックスに含まれている受信者の長期エントリ識別子に変換します。 送信メッセージに関連付けられている受信者の場合、受信者の準備は名前解決プロセスによって処理されます。 
   
-受信者の一覧を作成するには、 **IAddrBook::PrepareRecips**を呼び出します。 **PrepareRecips**は、 [ADRLIST](adrlist.md)構造体とプロパティ タグのリストを受け取ります。 **ADRLIST**構造体には、タグのプロパティ] ボックスの一覧は、各受信者をサポートする必要がありますプロパティを表すときに準備を整えるための受信者が含まれています。 **PrepareRecips**は、 **ADRLIST**構造体の先頭のプロパティ タグのリストに含まれているプロパティを配置しようとします。 **ADRLIST**構造体から、リスト内のプロパティのいずれかが表示されない、MAPI は、それらを提供するアドレス帳プロバイダーを呼び出します。 長期のエントリ id を確認する必要がある場合は、 _lpSPropTagArray_パラメーターに NULL を渡します。 
+受信者の一覧を準備するには、 **IAddrBook::P reparerecips**を呼び出します。 **PrepareRecips**は、 [adrlist](adrlist.md)構造とプロパティタグのリストを受け入れます。 **adrlist**構造体には、各受信者がサポートするプロパティをプロパティタグリストが表す間に準備する受信者が含まれています。 **PrepareRecips**は、 **adrlist**構造の先頭に、プロパティタグリストに含まれるプロパティを配置しようとします。 リスト内のプロパティのいずれかが**adrlist**構造に欠落している場合、MAPI はアドレス帳プロバイダーを呼び出して指定します。 長期のエントリ識別子のみをチェックする必要がある場合は、 _lpSPropTagArray_パラメーターに NULL を渡します。 
   
-たとえば、5 人の受信者を使用するいるとします。 5 つのすべての受信者が、 **ADRLIST**構造体に次の順序で次のプロパティに表示されます。 
+たとえば、5人の受信者で作業しているとします。 すべての5人の受信者は、次の順序で、以下のプロパティを持つ**adrlist**構造に表示されます。 
   
 1. **PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))
     
@@ -37,7 +37,7 @@ ms.locfileid: "22588721"
     
 5. **PR_ADDRTYPE**([PidTagAddressType](pidtagaddresstype-canonical-property.md))
     
-他の 3 つのプロパティは、最初の 2 つの受信者の**ADRLIST**構造体に含まれます。 
+最初の2つの受信者の**adrlist**構造には、他に3つのプロパティが含まれています。 
   
 1. **PR_ACCOUNT**([PidTagAccount](pidtagaccount-canonical-property.md))
     
@@ -45,9 +45,9 @@ ms.locfileid: "22588721"
     
 3. **PR_SURNAME**([PidTagSurname](pidtagsurname-canonical-property.md))
     
-**PR_ADDRTYPE**、 **PR_ENTRYID**、および**PR_HOME_TELEPHONE_NUMBER** ([PidTagHomeTelephoneNumber](pidtaghometelephonenumber-canonical-property.md)) の最初の 3 つのプロパティとして持つすべての受信者のため、これらのプロパティを持つプロパティ タグ配列を作成し、渡す**PrepareRecips**、 **ADRLIST**構造体です。 **PrepareRecips**は現在、 **ADRLIST**構造体の一部ではないので、 **PR_HOME_TELEPHONE_NUMBER**を取得するために、各受信者の**IMAPIProp::GetProps**メソッドが呼び出されます。 **PrepareRecips**が返されると、受信者の一覧は、受信者ごとに最初に表示する**ADRLIST**構造体に含まれているプロパティを使用して差し込み印刷の受信者の一覧を表します。 
+すべての受信者が最初の3つのプロパティ**PR_ADDRTYPE**、 **PR_ENTRYID**、および**PR_HOME_TELEPHONE_NUMBER** ([PidTagHomeTelephoneNumber](pidtaghometelephonenumber-canonical-property.md)) を必要とするため、これらのプロパティを使用してプロパティタグ配列を作成し、渡します。**PrepareRecips**には、これと**adrlist**構造があります。 **PrepareRecips**は、現在**adrlist**構造体の一部ではないため、各受信者の**imapiprop:: GetProps**メソッドを呼び出して、 **PR_HOME_TELEPHONE_NUMBER**を取得します。 **PrepareRecips**が戻ると、受信者リストは、各受信者に対して最初に表示される**adrlist**構造に含まれるプロパティを持つ受信者の結合されたリストを表します。 
   
-1 と 2 の宛先の受信者の一覧には、次の順序でプロパティが含まれています。
+受信者1および2の受信者の一覧には、次の順序でプロパティが含まれています。
   
 1. **PR_ADDRTYPE**
     
@@ -69,7 +69,7 @@ ms.locfileid: "22588721"
     
 10. **PR_SURNAME**
     
-3、4、および 5 の宛先の受信者の一覧には、次の順序でプロパティが含まれています。
+受信者3、4、および5の受信者の一覧には、次の順序でプロパティが含まれています。
   
 1. **PR_ADDRTYPE**
     
@@ -85,6 +85,6 @@ ms.locfileid: "22588721"
     
 7. **PR_ADDRTYPE**
     
-プロパティを操作する**IAddrBook::PrepareRecips**を呼び出す代わりに、各受信者の[IMAPIProp::GetProps](imapiprop-getprops.md)メソッドを呼び出すと、必要であれば、その[IMAPIProp::SetProps](imapiprop-setprops.md)メソッドです。 のみ 1 人の受信者が関係する場合は、いずれかの技法は、満足のいく。 ただし、複数の受信者が含まれる場合は、時間の節約**IMAPIProp**メソッドではなく、 **PrepareRecips**を呼び出すと、している場合、リモートで多くのリモート プロシージャ コールします。 **GetProps**と**SetProps**は、受信者ごとに 1 つの呼び出しを行う一方、 **PrepareRecips**は 1 回の呼び出しのすべての受信者を処理します。 
+**IAddrBook::P reparerecips**を呼び出してプロパティを処理する代わりに、各受信者の[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出し、必要に応じて[imapiprop:: setprops](imapiprop-setprops.md)メソッドを呼び出します。 参加する受信者が1人だけの場合は、どちらの方法でも十分です。 ただし、複数の受信者が関係している場合は、 **imapiprop**メソッドではなく**PrepareRecips**を呼び出すと時間が節約され、リモートで操作している場合はリモートプロシージャコールの数が多くなります。 **PrepareRecips**は、すべての受信者を1回の呼び出しで処理し、 **GetProps**と**setprops**は各受信者に対して1つの呼び出しを行います。 
   
 

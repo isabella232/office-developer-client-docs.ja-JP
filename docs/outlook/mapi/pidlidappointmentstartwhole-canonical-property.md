@@ -13,11 +13,11 @@ api_type:
 ms.assetid: e5e8ed98-57af-40d0-85c4-9d9832626e6b
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6f9fb9c3f02e66fd01e89742edcfba7391c36e3e
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345375"
 ---
 # <a name="pidlidappointmentstartwhole-canonical-property"></a>PidLidAppointmentStartWhole 標準プロパティ
 
@@ -25,35 +25,35 @@ ms.locfileid: "25389135"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-予定を開始する時刻と日付を表します。
+予定が開始される日付と時刻を表します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidApptStartWhole  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
-|長い ID (LID):  <br/> |0x0000820D  <br/> |
+|関連するプロパティ:  <br/> |dispidapptstartwhole  <br/> |
+|プロパティセット:  <br/> |PSETID_Appointment  <br/> |
+|ロング ID (LID):  <br/> |0x0000820d  <br/> |
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
-|エリア:  <br/> |予定表  <br/> |
+|エリア:  <br/> |カレンダー  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティは、イベントの開始日時を指定します。 このプロパティは、世界協定時刻 (UTC) である必要があります、 **dispidApptEndWhole** ([PidLidAppointmentEndWhole](pidlidappointmentendwhole-canonical-property.md)) プロパティの値より小さくなければなりません。 定期的な一連のこのプロパティは、定期的なアイテムのパターンに従って、最初のインスタンスの開始日時です。
+このプロパティは、イベントの開始日時を指定します。 このプロパティは協定世界時 (UTC) で、 **dispidApptEndWhole** ([PidLidAppointmentEndWhole](pidlidappointmentendwhole-canonical-property.md)) プロパティの値よりも小さくなければなりません。 定期的なアイテムの場合、このプロパティは定期的なパターンに従って最初のインスタンスの開始日時になります。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
+> 予定、会議出席依頼、および応答メッセージのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -61,9 +61,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

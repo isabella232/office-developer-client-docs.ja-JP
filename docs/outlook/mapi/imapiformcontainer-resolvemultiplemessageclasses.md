@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: f18c2dd1-366f-48b4-b335-ebbc0651f467
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 002dbf3e898fc0388d535e3087d17ba37d63201e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0730da9c3877985853e2cd0a55420e64fbd98e0c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342183"
 ---
 # <a name="imapiformcontainerresolvemultiplemessageclasses"></a>IMAPIFormContainer::ResolveMultipleMessageClasses
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームのコンテナー内のフォームにメッセージ クラスのグループを解決し、それらのフォームのオブジェクトの情報、フォームの配列を返します。
+フォームコンテナー内のフォームに対するメッセージクラスのグループを解決し、それらのフォームのフォーム情報オブジェクトの配列を返します。
   
 ```cpp
 HRESULT ResolveMultipleMessageClasses(
@@ -37,45 +37,45 @@ HRESULT ResolveMultipleMessageClasses(
 
 ## <a name="parameters"></a>パラメーター
 
- _pMsgClassArray_
+ _pmsgclassarray_
   
-> [in]解決するのにはメッセージ クラスの名前を格納している配列へのポインター。 メッセージ クラス名は、常に ANSI 文字列を Unicode ではないです。
+> 順番解決するメッセージクラスの名前を含む配列へのポインター。 メッセージクラス名は常に ANSI 文字列で、Unicode はありません。
     
  _ulFlags_
   
-> [in]メッセージ クラスを解決する方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番メッセージクラスの解決方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPIFORM_EXACTMATCH 
   
-> 完全に一致するメッセージ クラス文字列のみを解決する必要があります。
+> 完全一致のメッセージクラス文字列のみを解決する必要があります。
     
  _ppfrminfoarray_
   
-> [out]フォーム情報オブジェクトの配列へのポインターへのポインター。 場合は、クライアント アプリケーションは、 _pMsgClassArray_パラメーターに NULL を渡す、 _ppfrminfoarray_パラメーターには、フォームのコンテナー内のすべてのフォーム オブジェクト情報にはが含まれています。 
+> 読み上げフォーム情報オブジェクトの配列へのポインターへのポインター。 クライアントアプリケーションが_pmsgclassarray_パラメーターに NULL を渡す場合、 _ppfrminfoarray_パラメーターには、コンテナー内のすべてのフォームのフォーム情報オブジェクトが格納されます。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>����
+## <a name="remarks"></a>解説
 
-クライアント アプリケーションは、フォームのコンテナー内のフォームにメッセージ クラスのグループを解決するのには**IMAPIFormContainer::ResolveMultipleMessageClasses**メソッドを呼び出します。 フォーム、 _ppfrminfoarray_パラメーターで返されるオブジェクトの情報の配列の各フォームのプロパティへのアクセスをさらに提供します。 
+クライアントアプリケーションは、 **imapiformcontainer:: ResolveMultipleMessageClasses**メソッドを呼び出して、フォームコンテナー内のフォームに対するメッセージクラスのグループを解決します。 _ppfrminfoarray_パラメーターによって返されるフォーム情報オブジェクトの配列は、各フォームのプロパティへのアクセスをさらに提供します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-メッセージ クラスのグループを解決するにはフォームに、解決するのにはメッセージ クラス名の配列を渡します。 正確な解像度を強制的に (つまり、メッセージ クラスの基本クラスへの解像度を防ぐために)、 _ulFlags_パラメーターでは、MAPIFORM_EXACTMATCH フラグを渡すことができます。 
+メッセージクラスのグループをフォームに解決するには、解決するメッセージクラス名の配列を渡します。 解決策を正確にする (つまり、メッセージクラスの基本クラスに解決されないようにする) には、 _ulflags_パラメーターに MAPIFORM_EXACTMATCH フラグを渡すことができます。 
   
-フォームにメッセージ クラスを解決できない場合は、フォーム情報の配列では、そのメッセージ クラスの NULL が返されます。 したがって、場合でも、このメソッドは S_OK を返しますと仮定しないですべてのメッセージ クラスが正常に解決されていること。 代わりに、返される配列内の値をチェックします。
+メッセージクラスをフォームに解決できない場合は、フォーム情報配列でそのメッセージクラスに対して NULL が返されます。 したがって、メソッドが S_OK を返す場合でも、すべてのメッセージクラスが正常に解決されたとは限りません。 代わりに、返される配列内の値を確認します。
   
-## <a name="mfcmapi-reference"></a>MFCMAPI 参照
+## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
-MFCMAPI �T���v�� �R�[�h�ł́A���̕\��Q�Ƃ��Ă��������B
+MFCMAPI のサンプル コードについては、次の表を参照してください。
   
-|**�t�@�C��**|**�֐�**|**�R�����g**|
+|**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|FormContainerDlg.cpp  <br/> |CFormContainerDlg::OnResolveMultipleMessageClasses  <br/> |MFCMAPI では、 **IMAPIFormContainer::ResolveMultipleMessageClasses**メソッドを使用して、一連のメッセージ クラスに関連付けられているフォームを見つけます。  <br/> |
+|FormContainerDlg  <br/> |CFormContainerDlg:: OnResolveMultipleMessageClasses  <br/> |mfcmapi は、 **imapiformcontainer:: ResolveMultipleMessageClasses**メソッドを使用して、一連のメッセージクラスに関連付けられているフォームを特定します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

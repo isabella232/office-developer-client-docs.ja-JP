@@ -7,11 +7,11 @@ ms.assetid: 716325eb-b092-4934-921f-84129d0a1f5f
 description: Project Server 2013 のクライアント側オブジェクト モデル (CSOM) は、一般的なサーバー機能を実装しています。 Project Server CSOM には、Microsoft .NET CSOM、Microsoft Silverlight CSOM、Windows Phone 8 CSOM、および JavaScript オブジェクト モデル (JSOM) が含まれます。 さらに、この CSOM には REST インターフェイスを有効にする OData サービスも含まれています。 この REST インターフェイスは、主に iOS や Android などの Windows 以外のプラットフォームでアプリを開発するためのものです。
 localization_priority: Priority
 ms.openlocfilehash: b722e316f5cb2054eb6522297c5c5ef3e75f9fa4
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355203"
 ---
 # <a name="client-side-object-model-csom-for-project-2013"></a>Project 2013 のクライアント側オブジェクト モデル (CSOM)
 

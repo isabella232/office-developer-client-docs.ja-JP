@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: c19efa2e-8249-d589-3f93-26c22dc4f4e7
 description: ドキュメントのプロパティの [件名] フィールドからテキストを返します。
-ms.openlocfilehash: b0a32b8e032792704bdd067ab07a86b5c84ef5b8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 39413620e94a33726088e2a0e90989b1ccbbdabc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346831"
 ---
 # <a name="subject-function"></a>SUBJECT 関数
 
@@ -22,10 +22,10 @@ ms.locfileid: "19806587"
   
 ## <a name="syntax"></a>構文
 
-件名)
+SUBJECT ()
   
 ### <a name="return-value"></a>戻り値
 
-String
+文字列
   
 

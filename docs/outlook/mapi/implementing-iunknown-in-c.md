@@ -7,27 +7,27 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 807b6dc4-cdb7-40a4-87d7-ebc1ad5fab76
-description: '�ŏI�X�V��: 2011�N7��23��'
+description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 3c634defcad76755fc6604a23d2091bb21e15111
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25391445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346775"
 ---
 # <a name="implementing-iunknown-in-c"></a>C での IUnknown の実装
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-C の[IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)メソッドの実装は、C++ の実装に非常に似ています。 実装に 2 つの基本的な手順があります。 
+c での[IUnknown:: QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)メソッドの実装は、C++ 実装によく似ています。 実装には、次の2つの基本的な手順があります。 
   
-1. パラメーターを検証しています。
+1. パラメーターを検証します。
     
-2. オブジェクトによってサポートされているインターフェイスの一覧に対して要求されたインターフェイスの id を確認し、E_NO_INTERFACE の値または有効なインターフェイス ポインターのいずれかを返します。 インターフェイス ポインターが返される場合、実装を使用、参照カウントをインクリメントする[IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)メソッドを呼び出す必要があります。 
+2. オブジェクトでサポートされているインターフェイスのリストに対して要求されたインターフェイスの識別子をチェックし、E_NO_INTERFACE 値または有効なインターフェイスポインターを返します。 インターフェイスポインターが返された場合は、参照カウントをインクリメントするために、実装で[IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)メソッドを呼び出す必要もあります。 
     
-**QueryInterface**を c 言語での実装と C++ の間の主な違いは、C のバージョンで追加の最初のパラメーターです。 パラメーター リストには、オブジェクトへのポインターを追加するため、 **QueryInterface**の C の実装には C++ 実装より多くのパラメーターの検証が必要です。 インターフェイス識別子を確認、参照カウントをインクリメントして、オブジェクトのポインターを返すのためのロジックは、両方の言語で同等でなければなりません。 
+c および C++ での**QueryInterface**の実装の主な違いは、c バージョンの最初のパラメーターの追加です。 オブジェクトポインターがパラメータリストに追加されているため、 **QueryInterface**の C 実装は C++ 実装よりも多くのパラメータ検証を行う必要があります。 インターフェイス識別子を確認し、参照カウントを増やして、オブジェクトポインターを返すロジックは、両方の言語で同一である必要があります。 
   
-次のコード例では、状態オブジェクトの**QueryInterface**を C で実装する方法を示します。 
+次のコード例は、ステータスオブジェクトの C で**QueryInterface**を実装する方法を示しています。 
   
 ```cpp
 STDMETHODIMP STATUS_QueryInterface(LPMYSTATUSOBJ lpMyObj, REFIID riid,
@@ -64,9 +64,9 @@ STDMETHODIMP STATUS_QueryInterface(LPMYSTATUSOBJ lpMyObj, REFIID riid,
 
 ```
 
-C で**AddRef**メソッドの実装は、C++ の実装に似ていますが、C のバージョンよりもより複雑な C の実装[が](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)このメソッドを取得します。 オブジェクトを解放することに関連する機能の多くに組み込むこと、C++ のコンス トラクターとデストラクター、および C には、このようなメカニズムがないためにです。 **Release**メソッドでこの機能をすべて含める必要があります。 また、追加のパラメーターとその明示的な v テーブル、複数の検証が必要です。 
+c での**AddRef**メソッドの実装は c++ 実装に似ていますが、 [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドの C 実装は、c++ のバージョンよりも凝ったものにすることができます。 これは、オブジェクトを解放するための機能の多くが C++ のコンストラクタおよびデストラクターに組み込まれる可能性があるため、C にはそのような機構がありません。 この機能はすべて、 **Release**メソッドに含める必要があります。 また、追加のパラメーターとその明示的な vtable があるため、より多くの検証が必要になります。 
   
-次の**AddRef**メソッドの呼び出しは、状態オブジェクトの C の標準的な実装を示しています。 
+次の**AddRef**メソッドの呼び出しは、status オブジェクトの一般的な C 実装を示しています。 
   
 ```cpp
 STDMETHODIMP_(ULONG) STATUS_AddRef(LPMYSTATUSOBJ lpMyObj)
@@ -90,13 +90,13 @@ STDMETHODIMP_(ULONG) STATUS_AddRef(LPMYSTATUSOBJ lpMyObj)
 
 ```
 
-次のコード例では、**リリース**の C 状態のオブジェクトの一般的な実装を示します。 デクリメントされた後、参照カウントが 0 の場合、C 状態のオブジェクトの実装は、次のタスクを実行する必要があります。 
+次のコード例は、C status オブジェクトの**リリース**の一般的な実装を示しています。 参照カウントがデクリメントされた後に0の場合、C status オブジェクトの実装では、次のタスクを実行する必要があります。 
   
-- オブジェクトに保持されているポインターを解放します。 
+- オブジェクトへのすべての保持ポインターを解放します。 
     
-- Vtable をデバッグの場合は、まだ**リリース**と呼ばれるオブジェクトのユーザーがオブジェクトを使用しようとする継続を促進する、NULL に設定します。 
+- vtable を NULL に設定して、オブジェクトのユーザーが**Release**という名前のオブジェクトを引き続き使用していた場合のデバッグを容易にします。 
     
-- オブジェクトを解放するために**MAPIFreeBuffer**を呼び出します。 
+- **MAPIFreeBuffer**を呼び出して、オブジェクトを解放します。 
     
 ```cpp
 STDMETHODIMP_(ULONG) STATUS_Release(LPMYSTATUSOBJ lpMyObj)

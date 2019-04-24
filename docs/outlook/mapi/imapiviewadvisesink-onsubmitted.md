@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: a2401662-1ddc-40d8-a5a7-ceca24442bd4
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 2aa1aca2816b8f0e148d35d1fcec761f621a2239
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: ebde06d0d22320ecb5edb633cf8d04aaeec2a841
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351171"
 ---
 # <a name="imapiviewadvisesinkonsubmitted"></a>IMAPIViewAdviseSink::OnSubmitted
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-フォーム ビューアーの現在のメッセージが MAPI スプーラーに送信されたことを通知します。
+現在のメッセージが MAPI スプーラーに送信されたことをフォームビューアーに通知します。
   
 ```cpp
 HRESULT OnSubmitted( void );
@@ -35,21 +35,21 @@ HRESULT OnSubmitted( void );
 
 なし
   
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 通知が成功しました。
+> 通知に成功しました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-フォーム オブジェクトは、 [IMAPIMessageSite::SubmitMessage](imapimessagesite-submitmessage.md)への呼び出しが正常に返された後に、 **IMAPIViewAdviseSink::OnSubmitted**メソッドを呼び出します。 
+form オブジェクトは、 [IMAPIMessageSite:: submitmessage](imapimessagesite-submitmessage.md)の呼び出しが正常に返された後に**IMAPIViewAdviseSink:: onsubmitted**メソッドを呼び出します。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**OnSubmitted**が呼び出されると、メッセージが更新されたことを前提として続行できます。 発生した変更を反映するように、windows を更新します。 
+**onsubmitted**を呼び出した後は、メッセージが更新されたことを想定して続行できます。 発生した変更を反映するように windows を更新します。 
   
-フォームの通知の詳細については、[送信およびフォームの通知の受信](sending-and-receiving-form-notifications.md)を参照してください。
+フォーム通知の詳細については、「[フォーム通知の送信と受信](sending-and-receiving-form-notifications.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

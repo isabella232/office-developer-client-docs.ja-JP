@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: f4584569-1246-4ac9-a404-48284e4920d7
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 0075db0a515166c5185657daf3fc6b1e121d6672
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9fc21a27cb6c9041bdd8976ce5f030f0ab9eb57f
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345746"
 ---
 # <a name="szfindsz"></a>SzFindSz
 
@@ -25,13 +25,13 @@ ms.locfileid: "22585123"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Null で終わる文字列で、null で終わる文字列の最初に見つかった位置を検索します。 
+null で終わる部分文字列が、null で終了する文字列内で最初に見つかった部分を検索します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 LPSTR SzFindCh(
@@ -44,18 +44,18 @@ LPSTR SzFindCh(
 
  _lpsz_
   
-> [in]検索する null で終わる文字列へのポインター。 _Lpsz_パラメーターは、65536 文字を超えない必要があります。 
+> 順番検索する null で終わる文字列へのポインター。 _lpsz_パラメーターは、65536文字以下にする必要があります。 
     
- _lpszKey_
+ _lpszkey_
   
-> [in]検索する null で終わる文字列へのポインター。 _LpszKey_パラメーターは、65536 文字を超えない必要があります。 
+> 順番検索する null で終わるサブ文字列へのポインター。 _lpszkey_パラメーターは、65536文字を超えることはできません。 
     
 ## <a name="return-value"></a>戻り値
 
- **SzFindSz**は、最初に見つかった文字列の部分文字列の最初の文字へのポインターを返します。 部分文字列が発生しない場合任意の場所で、文字列_lpsz_より大きい場合は_lpszKey_またはどちらかのパラメーターが NULL の場合、NULL 値が返されます。 
+ **szfindsz**は、文字列内で最初に見つかった部分文字列の最初の文字へのポインターを返します。 substring_キー_が_lpsz_より大きい場合、またはいずれかのパラメーターが null の場合、文字列内の任意の場所にサブ文字列が含まれていない場合は、null 値が返されます。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**SzFindSz**関数は、完全一致のみを検索します。このコマンドは、大文字と小文字やアクセントの違いに左右されます。 Unicode と DBCS の形式での検索がサポートされています。 両方のパラメーターの長さの制限は、文字数、バイト数ではありませんが。 
+**szfindsz**関数は、完全一致のみを検索します。大文字と小文字は区別されます。 Unicode および DBCS 形式での検索はサポートされています。 両方のパラメーターの長さ制限は、文字である必要があり、必ずしもバイトではありません。 
   
 

@@ -12,40 +12,40 @@ api_type:
 - COM
 ms.assetid: 3f98d982-156d-43d7-8b0b-94d8c24debef
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 742f934e980a2b8627c4e50088a9c23166d1cf6d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 301be39b71c0f04799037fa069cfe18953e216de
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348826"
 ---
 # <a name="iabprovider--iunknown"></a>IABProvider : IUnknown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-アドレス帳プロバイダー オブジェクトへのログオン方法およびアドレス帳プロバイダー オブジェクトを無効にするメソッドを提供します。
+アドレス帳プロバイダオブジェクトにログオンするメソッドと、アドレス帳プロバイダオブジェクトを無効にするメソッドを提供します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapispi.h  <br/> |
-|によって公開されます。  <br/> |アドレス帳プロバイダー オブジェクト  <br/> |
-|によって実装されます。  <br/> |アドレス帳プロバイダー  <br/> |
-|によって呼び出されます。  <br/> |MAPI  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IABProvider  <br/> |
-|ポインターの型。  <br/> |LPABPROVIDER  <br/> |
+|ヘッダー ファイル:  <br/> |Mapispi  <br/> |
+|公開者:  <br/> |アドレス帳プロバイダーのオブジェクト  <br/> |
+|実装元:  <br/> |アドレス帳プロバイダー  <br/> |
+|呼び出し元:  <br/> |MAPI  <br/> |
+|インターフェイス識別子:  <br/> |IID_IABProvider  <br/> |
+|ポインターの種類:  <br/> |lpabprovider  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
 |[Logon](iabprovider-logon.md) <br/> |アクティブなセッションへの接続を確立します。  <br/> |
-|[シャットダウン](iabprovider-shutdown.md) <br/> |アクティブなセッションへの接続をキャンセルします。  <br/> |
+|[シャットダウン](iabprovider-shutdown.md) <br/> |アクティブなセッションへの接続を取り消します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
 

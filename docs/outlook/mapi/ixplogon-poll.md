@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1524eb06-7492-42de-b455-e0982bda7ece
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 3426854e727ebce7a2ac2243491994ce0e066ac6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 3e68c564357880b623e02081a228e881c084fa94
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351612"
 ---
 # <a name="ixplogonpoll"></a>IXPLogon::Poll
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-トランスポート プロバイダーが 1 つまたは複数の受信メッセージを受信したかどうかを示します。
+トランスポートプロバイダーが1つ以上の受信メッセージを受信したかどうかを示します。
   
 ```cpp
 HRESULT Poll(
@@ -35,19 +35,19 @@ HRESULT Poll(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpulIncoming_
+ _lアウト受信_
   
-> [out]受信メッセージの存在を示す値。 0 以外の値は、受信メッセージがあることを示します。
+> 読み上げ受信メッセージの存在を示す値。 0以外の値は、受信メッセージがあることを示します。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>����
+## <a name="remarks"></a>解説
 
-MAPI スプーラーは、トランスポート プロバイダーは、新しいメッセージは、プロバイダーの LOGON_SP_POLL を渡すことによってフラグが[IXPProvider::TransportLogon](ixpprovider-transportlogon.md)の呼び出しにポーリングする必要がありますを示す場合は、定期的に**IXPLogon::Poll**メソッドを呼び出しますセッションの開始時の方法です。 トランスポート プロバイダーは、1 つを使用する必要がある**ポーリング**呼び出しへの応答としてまたはより受信メッセージの処理では、MAPI スプーラーを入手することは、プロバイダーの最初のプロセスからを許可する[IXPLogon::StartMessage](ixplogon-startmessage.md)メソッドを呼び出す場合は、受信します。メッセージ。 トランスポート プロバイダーは、0 以外の値を_lpulIncoming_パラメーターに値を設定することにより受信メッセージを示します。 
+次に示すように、MAPI スプーラーは**IXPLogon::P oll**メソッドを定期的に呼び出します。これは、トランスポートプロバイダーが新しいメッセージをポーリングする必要があることを示している場合、プロバイダーは、LOGON_SP_POLL フラグを[ixpprovider:: transportlogon](ixpprovider-transportlogon.md)への呼び出しに渡すことによって行われます。メソッドは、セッションの開始時に行います。 トランスポートプロバイダーが**ポーリング**呼び出しに応答して、1つまたは複数の受信メッセージを処理できることを示している場合、MAPI スプーラーは[IXPLogon:: startmessage](ixplogon-startmessage.md)メソッドを呼び出して、プロバイダーが最初の受信を処理できるようにします。メッセージ。 トランスポートプロバイダーは、 _lな着信_パラメーターの値を0以外の値に設定することにより、受信メッセージを示します。 
   
 ## <a name="see-also"></a>関連項目
 

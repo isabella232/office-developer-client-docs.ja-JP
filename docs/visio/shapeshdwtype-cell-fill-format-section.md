@@ -9,28 +9,28 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 1461148d-90a9-6f7c-1b28-9310ffaf0e3b
 description: 図形の影の種類を指定します。
-ms.openlocfilehash: b96ad4a877d72bf4457ec3cf038a29a2b414e0f0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 607881e4a520f1376562394c6e40ab5d2508906d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342862"
 ---
-# <a name="shapeshdwtype-cell-fill-format-section"></a>[ShapeShdwType] セル ([塗りつぶしの書式設定] セクション)
+# <a name="shapeshdwtype-cell-fill-format-section"></a>[ShapeShdwType] セル ([Fill Format] セクション)
 
 図形の影の種類を指定します。 
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|0  <br/> |ページの既定値を使用します (既定値)。  <br/> |**visFSTPageDefault** <br/> |
-|1  <br/> |シンプルな影です。  <br/> |**visFSTSimple** <br/> |
-|2  <br/> |斜体の影です。  <br/> |**visFSTOblique** <br/> |
+|.0  <br/> |ページの既定値を使用します (既定値)。  <br/> |**visFSTPageDefault** <br/> |
+|1-d  <br/> |単純  <br/> |**visFSTSimple** <br/> |
+|pbm-2  <br/> |斜体  <br/> |**visFSTOblique** <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-(デフォルト ページの影の種類は [ページ プロパティ] セクションの [shdwtype] セルで定義されている) ページの既定値とは異なる図形の影を適用するのにには、このセルを使用します。
+このセルを使用して、既定のページとは異なる図形の影を適用します (ページの既定の影の種類は、[ページのプロパティ] セクションの [[shdwtype]] セルで定義されています)。
   
-シンプルな影は、ユーザー インターフェイス (UI) 内のオフセットの影として説明します。 シンプルな影は図形の背後にある平行な平面上にシャドウされている図形の効果を示します。 斜体の影は、UI 内の斜体の影として説明され、図形に垂直な平面に影の効果を与えます。 
+シンプルな影は、ユーザー インターフェイス (UI) では "オフセット" と表示されます。 シンプルな影は、その図形の下の平面に影を落としているように見えます。 斜体の影は UI では "斜体" と表示され、その図形が直立している平面に影を落としているように見えます。 
   
 事前定義されたシンプルな影と斜体の影の種類のリストは、[**影**] ダイアログ ボックスの [**スタイル**] ボックスを参照してください (このダイアログ ボックスを開くには、[**ホーム**] タブの [**図形**] グループで、[**影**] をクリックして、[**影のオプション**] をクリックします)。
   
@@ -38,7 +38,7 @@ ms.locfileid: "19806418"
   
 |||
 |:-----|:-----|
-|セル名 :  <br/> |ShapeShdwType  <br/> |
+|セル名 :  <br/> |[shapeshdwtype]  <br/> |
    
 プログラムから、インデックスによって [ShapeShdwType] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

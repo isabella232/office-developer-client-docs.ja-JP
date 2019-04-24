@@ -1,5 +1,5 @@
 ---
-title: ITableDataHrModifyRows
+title: itabledatahrmodifyrows
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: d295c896-9882-4d6f-9689-5cf40db208c0
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 06356d60b43d7e5be61d944c07001570bdd5c678
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: d0074dd006fda6d44252011d0b979169e0c3d4cb
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348672"
 ---
 # <a name="itabledatahrmodifyrows"></a>ITableData::HrModifyRows
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-既存の行が上書きされる、複数のテーブル行を挿入します。
+複数のテーブル行を挿入します。既存の行を置換する場合もあります。
   
 ```cpp
 HRESULT HrModifyRows(
@@ -34,35 +34,35 @@ HRESULT HrModifyRows(
 );
 ```
 
-## <a name="parameters"></a>�p�����[�^�[
+## <a name="parameters"></a>パラメーター
 
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lpSRowSet_
+ _lpsrowset_
   
-> [in][SRowSet](srowset.md)構造体へのポインターを含む一連の行を追加するには、必要に応じて既存の行を置き換えることです。 値構造体のプロパティでは、 **lpProps**各[SRow](srow.md)構造体のメンバーの行に設定するポイントの 1 つのインデックス列で、[への呼び出し内の_ulPropTagIndexColumn_パラメーターで指定された値と同じ値を含める必要があります。CreateTable](createtable.md)関数です。 
+> 順番追加する行のセットを含む[srowset](srowset.md)構造体へのポインター。必要に応じて既存の行を置き換えます。 行セットの各[srow](srow.md)構造の**lpprops**メンバーによって参照されているプロパティ値構造の1つに、インデックス列が含まれている必要があります。これには、 __ [ulPropTagIndexColumn パラメーターで指定したものと同じ値があります。CreateTable](createtable.md)関数。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 行が挿入または変更されました。
+> 行が正常に挿入または変更されました。
     
 MAPI_E_INVALID_PARAMETER 
   
-> 渡された行の 1 つ以上には、インデックス列がありません。 このエラーが返された場合、行は変更されません。
+> 渡された1つ以上の行にインデックス列がありません。 このエラーが返された場合、行は変更されません。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**ITableData::HrModifyRows**メソッドは、 _lpSRowSet_パラメーターが指す[SRowSet](srowset.md)構造体によって記述された行を挿入します。 行セット内の行のインデックス列の値には、テーブル内の既存の行の値が一致すると、既存の行が置き換えられます。 行が存在しない場合**SRowSet**構造体に含まれる 1 つに一致する、 **HrModifyRows**は、テーブルの末尾に行を追加します。 
+**itabledata:: hrmodifyrows**メソッドは、 _lpsrowset_パラメーターで指定された[srowset](srowset.md)構造によって示される行を挿入します。 行セットの行のインデックス列の値が、テーブル内の既存の行の値と一致する場合は、既存の行が置き換えられます。 **srowset**構造に含まれるものに一致する行が存在しない場合、 **hrmodifyrows**はテーブルの末尾に行を追加します。 
   
-_LpSRowSet_で指定された行を含むテーブルのすべてのビューを変更します。 ただし場合は、ビューでは、行が除外されるように制限がある、ある可能性がありますいないユーザーに表示します。 
+テーブルのすべてのビューは、 _lpsrowset_で示される行を含むように変更されます。 ただし、ビューに行を除外する制限がある場合は、ユーザーに表示されないことがあります。 
   
-_LpSRowSet_で指定された行の列をテーブル内の列と同じ順序にする必要はありません。 呼び出し元は、現在のテーブルに存在しない列のプロパティとしても指定できます。 既存のビューの**HrModifyRows**これらの新しい列を使用できるようですが、現在の列セットには含まれません。 将来のビューでは、 **HrModifyRows**には、列セットの新しい列が含まれます。 
+_lpsrowset_で示される行の列は、テーブル内の列と同じ順序である必要はありません。 また、呼び出し元には、現在テーブルにない列のプロパティを含めることもできます。 既存のビューの場合、 **hrmodifyrows**によって、これらの新しい列が使用可能になりますが、現在の列のセットには含まれません。 今後のビューの場合、 **hrmodifyrows**には列セットの新しい列が含まれます。 
   
-**HrModifyRows**が行を追加すると、すべてのクライアントやテーブルのビューがあるし、の通知を登録するテーブルの[IMAPITable::Advise](imapitable-advise.md)メソッドを呼び出すことが、サービス プロバイダーに通知が送信されます。 MAPI では、8 行まで、行ごとに、TABLE_ROW_ADDED または TABLE_ROW_MODIFIED の通知を送信します。 8 つ以上の行が影響を受ける場合、 **HrModifyRows**呼び出しによって MAPI 通知を送信する 1 つ TABLE_CHANGED 代わりにします。 
+**hrmodifyrows**が行を追加すると、テーブルのビューを持つすべてのクライアントまたはサービスプロバイダーに通知が送信され、通知のために登録するためにテーブルの[IMAPITable:: アドバイズ](imapitable-advise.md)メソッドを呼び出します。 MAPI は、各行に対して TABLE_ROW_ADDED または TABLE_ROW_MODIFIED の通知を送信します。最大8行。 **hrmodifyrows**呼び出しの処理に8行を超える行が含まれている場合、MAPI は代わりに1つの TABLE_CHANGED 通知を送信します。 
   
 ## <a name="see-also"></a>関連項目
 

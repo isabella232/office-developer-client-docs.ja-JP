@@ -1,5 +1,5 @@
 ---
-title: トランスポート プロバイダーのオプション機能
+title: オプションのトランスポートプロバイダー機能
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,32 +7,32 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 0bec2c17-b41c-4e46-8961-a55bde1f7326
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b55e6518ee1f3f59ef0459b3aeb68461f00a7ab3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: df38350b049264e7e20ac0bb821c71d93b992d2a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348518"
 ---
-# <a name="optional-transport-provider-features"></a>トランスポート プロバイダーのオプション機能
+# <a name="optional-transport-provider-features"></a>オプションのトランスポートプロバイダー機能
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-トランスポート プロバイダーを実装するオプションの機能は次のとおりです。
+トランスポートプロバイダーが実装できるオプション機能には、次のものがあります。
   
-- メッセージおよびトランスポート プロバイダーを特定の受信者のオプションを登録しています。
+- トランスポートプロバイダーに固有のメッセージと受信者のオプションを登録します。
     
-- 必要に応じて、構成情報およびメッセージング システムに資格情報を格納するプロファイルを維持します。
+- 必要に応じて、プロファイルを保守して、構成情報と資格情報をメッセージングシステムに格納します。
     
-- メッセージング システムに必要な資格情報の確認を実行しています。
+- メッセージングシステムに必要な資格情報の確認を行います。
     
-- [IMAPISupport::Notify](imapisupport-notify.md)メソッドを使用して関心のあるクライアント アプリケーションのイベント通知をサポートします。 
+- [imapisupport:: Notify](imapisupport-notify.md)メソッドを使用して、関心のあるクライアントアプリケーションのイベント通知をサポートします。 
     
-- 構成のプロパティ シートと、トランスポート プロバイダーの設定を構成するユーザーを有効にするウィザードのダイアログ ボックスを表示します。
+- 構成プロパティシートおよびウィザードダイアログボックスを表示して、ユーザーがトランスポートプロバイダーの設定を構成できるようにします。
     
-- クライアント アプリケーションにメッセージの配信レポートを提供します。
+- クライアントアプリケーションへのメッセージ配信レポートの提供。
     
 

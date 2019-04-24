@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: c9ed37ba-019c-b11e-c803-4669e6a248d1
 description: 数値の絶対値を返します。
-ms.openlocfilehash: 8b1a87872de2869abc36ba4466668ddedd403b5b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3d3d79aab65e34ad36890e56568b043bab327919
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345291"
 ---
 # <a name="abs-function-visioshapesheet"></a>ABS 関数 (VisioShapeSheet)
 
@@ -32,7 +32,7 @@ ABS (*数値*)
    
 ## <a name="example"></a>例
 
-ABS(-1.24) 
+ABS (-1.24) 
   
 1.24 を返します。
   

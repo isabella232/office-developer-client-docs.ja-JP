@@ -9,14 +9,14 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 8e1c8c8f-4ed0-0f53-f93f-3a264edc02bd
 description: 選択した図形の選択ハンドルの表示/非表示を切り替えます。
-ms.openlocfilehash: 8f812c2087870529cb65aa2e7d705171a5d4ca32
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e46f19d77d1743fb7223b5f7d98f80a05d8f6b07
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357240"
 ---
-# <a name="noobjhandles-cell-miscellaneous-section"></a>[NoObjHandles] セル ([その他] セクション)
+# <a name="noobjhandles-cell-miscellaneous-section"></a>[NoObjHandles] セル ([Miscellaneous] セクション)
 
 選択した図形の選択ハンドルの表示/非表示を切り替えます。
   
@@ -25,13 +25,13 @@ ms.locfileid: "19805947"
 | TRUE  <br/> | 図形を選択するときに選択ハンドルが表示されません。  <br/> |
 | FALSE  <br/> | 図形を選択するときに選択ハンドルが表示されます。  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [NoObjHandles] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | NoObjHandles  <br/> |
+| セル名:  <br/> | [noobjhandles]  <br/> |
    
 プログラムから、インデックスによって [NoObjHandles] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   

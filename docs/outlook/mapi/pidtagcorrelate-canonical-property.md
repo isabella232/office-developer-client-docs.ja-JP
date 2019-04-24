@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.assetid: be34993e-ffcc-47f5-b2d4-95ffa707bc5c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 063e41bf9fe306b3862e302abb4495ca56e3087b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ea217808a163c7f16bbaa3c5a959fd32c8cbe10c
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357919"
 ---
 # <a name="pidtagcorrelate-canonical-property"></a>PidTagCorrelate 標準プロパティ
 
@@ -25,40 +25,40 @@ ms.locfileid: "22575456"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージの送信者のメッセージング システムの相互関係の機能を要求する場合、TRUE が格納されます。
+メッセージの送信者がメッセージングシステムの相互関係機能を要求している場合は、TRUE が含まれます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_CORRELATE  <br/> |
-|識別子:  <br/> |0x0E0C  <br/> |
+|識別子:  <br/> |0x0e0c  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |エリア:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-元の送信メッセージと受信したレポートの相関関係を要求するこのプロパティを使用します。 トランスポート プロバイダーでは、true を指定する**PR_CORRELATE**のセットを使用して発信されたメッセージが検出されると、そのメッセージのメッセージ転送システム (MTS) 識別子を**PR_CORRELATE_MTSID** ([PidTagCorrelateMtsid](pidtagcorrelatemtsid-canonical-property.md)) のプロパティを設定します。
+このプロパティは、受信レポートと元の送信されたメッセージの関連付けを要求するために使用されます。 トランスポートプロバイダーは、 **PR_CORRELATE**が TRUE に設定された送信済みのメッセージを検出すると、 **PR_CORRELATE_MTSID** ([PidTagCorrelateMtsid](pidtagcorrelatemtsid-canonical-property.md)) プロパティをそのメッセージのメッセージ転送システム (MTS) 識別子に設定します。
   
- X.400 など、MTS の id では、メッセージの相関関係をサポートしているシステムで**PR_CORRELATE**を使用してください。 
+ **PR_CORRELATE**は、などの MTS 識別子による関連付けをサポートするメッセージングシステムで使用する必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

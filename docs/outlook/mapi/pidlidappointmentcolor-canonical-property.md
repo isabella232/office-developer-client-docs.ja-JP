@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 91147e85-f440-4463-850b-efc9bdbd36d1
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1ea0830a06f303da8243f927e4a07cc744951ca9
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25399873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345438"
 ---
 # <a name="pidlidappointmentcolor-canonical-property"></a>PidLidAppointmentColor 標準プロパティ
 
@@ -29,15 +29,15 @@ ms.locfileid: "25399873"
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidApptColor  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Appointment  <br/> |
-|長い ID (LID):  <br/> |0x00008214  <br/> |
+|関連するプロパティ:  <br/> |dispidapptcolor  <br/> |
+|プロパティセット:  <br/> |PSETID_Appointment  <br/> |
+|ロング ID (LID):  <br/> |0x00008214  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |予定表  <br/> |
+|エリア:  <br/> |カレンダー  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティは、予定表を表示するときに使用する色を指定します。 クライアントまたはサーバーは、古いクライアントとの下位互換性のためには、この値を設定する必要があります。 カレンダーで指定した[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)として**のキーワード**([PidNameKeywords](pidnamekeywords-canonical-property.md)) プロパティの値に基づくことが代わりに表示されます。 設定すると、値があります、次のいずれかです。
+このプロパティは、予定表を表示するときに使用する色を指定します。 クライアントまたはサーバーは、以前のクライアントとの下位互換性のためにこの値を設定する必要があります。 代わりに、 [[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)で指定した**Keywords** ([PidNameKeywords](pidnamekeywords-canonical-property.md)) プロパティの値に基づいて予定表が表示される場合があります。 設定する場合、値は次のいずれかである必要があります。
   
 |**値**|**色**|
 |:-----|:-----|
@@ -46,28 +46,28 @@ ms.locfileid: "25399873"
 |0x00000002  <br/> |青  <br/> |
 |0x00000003  <br/> |緑  <br/> |
 |0x00000004  <br/> |灰色  <br/> |
-|0x00000005  <br/> |オレンジ  <br/> |
+|0x00000005  <br/> |Orange  <br/> |
 |0x00000006  <br/> |シアン  <br/> |
 |0x00000007  <br/> |オリーブ  <br/> |
 |0x00000008  <br/> |紫  <br/> |
-|0x00000009  <br/> |青緑  <br/> |
+|0x00000009  <br/> |Teal  <br/> |
 |0x0000000A  <br/> |黄  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
+> 予定、会議出席依頼、および応答メッセージのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -75,9 +75,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

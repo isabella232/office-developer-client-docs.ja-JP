@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 7c3e5a71-7b78-4328-b8ee-265cc4da4be5
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: eeeff110e5de592d491865079adfa187e5dfa194
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f22d30c1bc7c797834f58bcd1306b14ac2542c6d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345137"
 ---
 # <a name="szfindlastch"></a>SzFindLastCh
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-最後に出現する、null で終わる文字列内の文字を検索します。 
+null で終了する文字列内の文字が最後に出現する箇所を検索します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 LPSTR SzFindLastCh(
@@ -44,18 +44,18 @@ LPSTR SzFindLastCh(
 
  _lpsz_
   
-> [in]検索する null で終わる文字列へのポインター。 
+> 順番検索する null で終わる文字列へのポインター。 
     
- _ch_
+ _焦げ_
   
-> [in]検索する文字。
+> 順番検索する文字を指定します。
     
 ## <a name="return-value"></a>戻り値
 
- **SzFindLastCh**は、最後に見つかった文字列の文字へのポインターを返します。 文字が、文字列のどこにでも発生しない場合、または_lpsz_パラメーターが NULL の場合は、NULL 値が返されます。 
+ **szfindlastch**は、文字列内の文字が最後に出現する位置へのポインターを返します。 文字が文字列の任意の場所に出現しない場合、または_lpsz_パラメーターが null の場合は、null 値が返されます。 
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**SzFindLastCh**関数は、完全一致のみを検索します。このコマンドは、大文字と小文字やアクセントの違いに左右されます。 Unicode と DBCS の形式での検索がサポートされています。 
+**szfindlastch**関数は、完全一致のみを検索します。大文字と小文字は区別されます。 Unicode および DBCS 形式での検索がサポートされています。 
   
 

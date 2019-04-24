@@ -1,5 +1,5 @@
 ---
-title: Office 共有
+title: Office Shared
 manager: soliver
 ms.date: 04/20/2016
 ms.audience: Developer
@@ -7,11 +7,11 @@ ms.assetid: 1c4937c4-0998-4f81-a994-50d3dd54727c
 description: ソリューションの開発と Office のカスタマイズに関する HowTo コンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、および技術記事を検索できます。
 localization_priority: Priority
 ms.openlocfilehash: 758d0b25457089de0d611d41fa962e7323985abe
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351696"
 ---
 # <a name="office-shared"></a>Office 共有
 

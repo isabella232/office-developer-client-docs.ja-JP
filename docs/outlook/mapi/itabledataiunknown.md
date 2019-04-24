@@ -1,5 +1,5 @@
 ---
-title: ITableData IUnknown
+title: itabledata IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,55 +12,55 @@ api_type:
 - COM
 ms.assetid: ac7ae09f-ce19-45cf-8963-fad5bba75452
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: bec68568b30bdc3112493a656de591f222801e46
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3992bea899239ee5975505dec366490d6bbe1698
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348770"
 ---
 # <a name="itabledata--iunknown"></a>ITableData : IUnknown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルを操作するためのユーティリティ メソッドを提供します。 MAPI には、データ オブジェクトのテーブルまたはテーブルのメンテナンスを実行するサービス プロバイダーのために**ITableData**を実装するオブジェクトが用意されています。 テーブルのデータ オブジェクトを取得するには、サービス プロバイダーは、 [CreateTable](createtable.md)関数を呼び出します。 
+テーブルを処理するためのユーティリティメソッドを提供します。 MAPI は、サービスプロバイダーがテーブルのメンテナンスを実行するのに役立つ、 **itabledata**を実装するテーブルデータオブジェクトまたはオブジェクトを提供します。 テーブルデータオブジェクトを取得するために、サービスプロバイダーは[CreateTable](createtable.md)関数を呼び出します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって公開されます。  <br/> |テーブルのデータ オブジェクト  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |サービス プロバイダー  <br/> |
-|インターフェイスの識別子。  <br/> |IID_IMAPITableData  <br/> |
-|ポインターの型。  <br/> |LPTABLEDATA  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|公開者:  <br/> |テーブルデータオブジェクト  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |サービス プロバイダー  <br/> |
+|インターフェイス識別子:  <br/> |IID_IMAPITableData  <br/> |
+|ポインターの種類:  <br/> |LPTABLEDATA  <br/> |
    
-## <a name="vtable-order"></a>Vtable の順序
+## <a name="vtable-order"></a>v の順序
 
 |||
 |:-----|:-----|
-|[HrGetView](itabledata-hrgetview.md) <br/> |[IMAPITable](imapitableiunknown.md)実装へのポインターを返す表形式ビューを作成します。  <br/> |
-|[HrModifyRow](itabledata-hrmodifyrow.md) <br/> |既存の行が上書きされる、テーブルの新しい行を挿入します。  <br/> |
-|[HrDeleteRow](itabledata-hrdeleterow.md) <br/> |テーブルの行を削除します。  <br/> |
-|[HrQueryRow](itabledata-hrqueryrow.md) <br/> |テーブルの行を取得します。  <br/> |
+|[hrgetview](itabledata-hrgetview.md) <br/> |[IMAPITable](imapitableiunknown.md)実装へのポインターを返すテーブルビューを作成します。  <br/> |
+|[hrmodifyrow](itabledata-hrmodifyrow.md) <br/> |既存の行を置き換える可能性がある新しいテーブル行を挿入します。  <br/> |
+|[HrDeleteRow](itabledata-hrdeleterow.md) <br/> |表の行を削除します。  <br/> |
+|[hrqueryrow](itabledata-hrqueryrow.md) <br/> |表の行を取得します。  <br/> |
 |[HrEnumRow](itabledata-hrenumrow.md) <br/> |テーブル内の位置に基づいて行を取得します。  <br/> |
-|[HrNotify](itabledata-hrnotify.md) <br/> |テーブルの行の通知を送信します。  <br/> |
-|[HrInsertRow](itabledata-hrinsertrow.md) <br/> |テーブルの行を挿入します。  <br/> |
-|[HrModifyRows](itabledata-hrmodifyrows.md) <br/> |既存の行が上書きされる、複数のテーブル行を挿入します。  <br/> |
-|[HrDeleteRows](itabledata-hrdeleterows.md) <br/> |複数のテーブル行を削除します。  <br/> |
+|[hrnotify](itabledata-hrnotify.md) <br/> |表の行の通知を送信します。  <br/> |
+|[HrInsertRow](itabledata-hrinsertrow.md) <br/> |表の行を挿入します。  <br/> |
+|[hrmodifyrows](itabledata-hrmodifyrows.md) <br/> |複数のテーブル行を挿入します。既存の行を置換する場合もあります。  <br/> |
+|[HrDeleteRows](itabledata-hrdeleterows.md) <br/> |複数の表の行を削除します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**ITableData**の MAPI 実装では、非常に大きなテーブルでの使用に適していませんので、メモリ内のすべてのデータと関連付けられている制限を押しながら、テーブルと連携します。 大規模な制限や分類などの複雑な操作はサポートされていません。 
+**itabledata**の MAPI 実装は、すべてのデータと、関連するすべての制限をメモリに保持することによってテーブルで機能し、非常に大きなテーブルで使用するのに適していません。 大規模な制限や分類などの複雑な操作はサポートされていません。 
   
-テーブルのデータ オブジェクトは、インデックス列、行ごとに一意の値を持つことが保証されているプロパティを使用して行を識別します。 ほとんどのサービス プロバイダーは、インデックス列として**PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) プロパティを使用します。 複数値を持つプロパティは、インデックス列として使用できません。
+テーブルデータオブジェクトは、インデックス列を使用して行を識別します。プロパティは、各行に一意の値があることが保証されます。 ほとんどのサービスプロバイダーは、インデックス列として**PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) プロパティを使用します。 複数の値を持つプロパティをインデックス列として使用することはできません。
   
-テーブルのデータ オブジェクトは、変更や削除によって影響を受ける行の数に関係なく 1 つの通知を生成します。 操作の対象の行が存在しない場合は、行が追加されます。
+テーブルデータオブジェクトは、変更または削除によって影響を受ける行の数に関係なく、1つの通知を生成します。 操作の対象となる行が存在しない場合は、行が追加されます。
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI インターフェイス](mapi-interfaces.md)
+[MAPI のインターフェイス](mapi-interfaces.md)
 

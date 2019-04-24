@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: 08bc256c-9706-4f3e-9a12-3e9cca5e4caa
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: eb3b3b3c9c2e9cffb77febf9c96baed40ce3f9e8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1afd922459be2ec4bbbd27a61fdf6fcb425548c9
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32351332"
 ---
 # <a name="sccopyprops"></a>ScCopyProps
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-コピーのプロパティは、新しいターゲットに[SPropValue](spropvalue.md)構造体の配列によって定義されます。 
+[spropvalue](spropvalue.md)構造体の配列によって定義されたプロパティを新しい宛先にコピーします。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーションとサービス ・ プロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
    
 ```cpp
 SCODE ScCopyProps(
@@ -46,21 +46,21 @@ SCODE ScCopyProps(
 
  _cprop_
   
-> [in]コピーするプロパティの数です。 
+> 順番コピーするプロパティの数を指定します。 
     
  _rgprop_
   
-> [in]コピーするプロパティを定義する[SPropValue](spropvalue.md)構造体の配列へのポインター。 _Rgprop_パラメーターを配列の先頭をポイントする必要はありませんが、 **SPropValue**構造体、配列内のいずれかの先頭を指している必要があります。 
+> 順番コピーするプロパティを定義する[spropvalue](spropvalue.md)構造体の配列へのポインター。 _rgprop_パラメーターは、配列の先頭をポイントする必要はありませんが、配列内のいずれかの**spropvalue**構造体の先頭を指す必要があります。 
     
- _pvDst_
+ _pvdst_
   
-> [in]この関数のプロパティをコピーする先のメモリ内の最初の位置へのポインター。 
+> 順番この関数がプロパティをコピーするメモリ内の初期位置へのポインター。 
     
- _pcb_
+ _設計_
   
-> [out]ポインターを_pvDst_パラメーターが指すメモリ ブロックのバイト単位のサイズを指します。 
+> 読み上げ(オプション) _pvdst_パラメーターによって示されるメモリブロックのサイズ (バイト単位) を指すポインターです。 
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK
   
@@ -68,15 +68,15 @@ S_OK
     
 MAPI_E_INVALID_PARAMETER
   
-> 不明なプロパティの種類が発生しました。
+> 不明なプロパティの種類が検出されました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-新しい配列とそのデータは、1 つの割り当てで作成されたバッファー内に存在し、個別の[SPropValue](spropvalue.md)構造体のポインターを調整する[ScRelocProps](screlocprops.md)関数を使用することができます。 この調整をする前に、ポインターは有効です。 
+新しい配列とそのデータは、1つの割り当てで作成されたバッファーに存在し、 [ScRelocProps](screlocprops.md)関数を使用して、個々の[spropvalue](spropvalue.md)構造内のポインターを調整できます。 この調整の前に、ポインターが有効になります。 
   
- **ScCopyProps**は、コピーされたプロパティの配列を元のプロパティの順序を維持します。 
+ **sccopyprops**は、コピーされたプロパティ配列の元のプロパティの順序を保持します。 
   
-_Pcb_のパラメーターは省略可能です。それが NULL でない場合は、 _pvDst_パラメーターに格納されているバイト数に設定されています。 
+_pcb_パラメーターはオプションです。NULL でない場合は、 _pvdst_パラメーターに格納されているバイト数に設定されます。 
   
 ## <a name="see-also"></a>関連項目
 

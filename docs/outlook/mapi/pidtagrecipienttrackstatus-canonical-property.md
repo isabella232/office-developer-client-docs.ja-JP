@@ -13,11 +13,11 @@ api_type:
 ms.assetid: d619b5e7-2867-44fc-9b42-123bb1bf7bde
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 074bcf7c051b78bc32caf66502747e7fb1ab6b79
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25389891"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32355287"
 ---
 # <a name="pidtagrecipienttrackstatus-canonical-property"></a>PidTagRecipientTrackStatus 標準プロパティ
 
@@ -25,59 +25,59 @@ ms.locfileid: "25389891"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-出席者によって返される応答のステータスを示します。
+出席者から返される応答状態を示します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_RECIPIENT_TRACKSTATUS  <br/> |
-|識別子:  <br/> |0x5FFF  <br/> |
+|識別子:  <br/> |0x5fff  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |トランスポートにおける受取人  <br/> |
+|エリア:  <br/> |トランスポート受信者  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-この値が設定されていない場合 respNone を使用することを前提する必要があります。 それ以外の場合、次のいずれかである必要があります。
+この値が設定されていない場合は、[なし] を指定する必要があります。 それ以外の場合は、次のいずれかである必要があります。
   
-|**応答ステータス**|**値**|**説明**|
+|**応答状態**|**値**|**説明**|
 |:-----|:-----|:-----|
-|respNone  <br/> |0x00000000  <br/> |対応するこのオブジェクトの必要はありません。 これは、オブジェクトの予定および会議の応答オブジェクトの大文字と小文字です。  <br/> |
-|respTentative  <br/> |0x00000002  <br/> |出席者の会議のオブジェクトには、この値は、出席者が会議を承諾することを示します要求オブジェクトです。  <br/> |
-|respAccepted  <br/> |0x00000003  <br/> |出席者の会議のオブジェクトには、この値は、出席者が会議を承諾することを示します要求オブジェクトです。  <br/> |
-|respDeclined  <br/> |0x00000004  <br/> |出席者の会議のオブジェクトには、この値は、出席者が会議を辞退したことを示します要求オブジェクトです。  <br/> |
+|[火炎なし]  <br/> |0x00000000  <br/> |このオブジェクトに対する応答は必要ありません。 これは、予定オブジェクトおよび会議の応答オブジェクトに当てはまります。  <br/> |
+|仮承諾  <br/> |0x00000002  <br/> |出席者の会議オブジェクトのこの値は、出席者が会議出席依頼オブジェクトを仮承諾したことを示します。  <br/> |
+|受付  <br/> |0x00000003  <br/> |出席者の会議オブジェクトのこの値は、出席者が会議出席依頼オブジェクトを承諾したことを示します。  <br/> |
+|辞退  <br/> |0x00000004  <br/> |出席者が会議出席依頼オブジェクトを辞退したことを、出席者の会議オブジェクトのこの値で指定します。  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連する Exchange Server プロトコル仕様への参照を提供します。
     
-[[MS OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> プロパティや予定、会議出席依頼および応答メッセージの動作を指定します。
+> 予定、会議出席依頼、および応答メッセージのプロパティと操作を指定します。
     
-[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルのオブジェクトを処理します。
+> メッセージと添付ファイルオブジェクトを処理します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 代替名として記載されているプロパティの定義が含まれています。
+> 代替名としてリストされているプロパティの定義が含まれています。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

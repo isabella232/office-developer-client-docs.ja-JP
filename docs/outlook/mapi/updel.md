@@ -7,21 +7,21 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3b23291d-3355-d772-4647-d4bbd64b0b53
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 057a1ff38ed3809ce03bce8f820f1d16eea7fb46
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: c9d2ec7f1970e3d1cadb65ab9af360b5c01c6844
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32360488"
 ---
 # <a name="updel"></a>UPDEL
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-ローカル ストアで削除済みアイテムの情報です。 [アップロード ステータスの状態を削除](upload-delete-status-state.md)する時にこの情報が使用されます。
+ローカルストアで削除されたアイテムに関する情報。 この情報は、削除の状態の[アップロード](upload-delete-status-state.md)中に使用されます。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -33,15 +33,15 @@ struct UPDEL
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  _pupde_
   
->  [out][UPDELE](updele.md)エントリのベクターです。 
+>  読み上げ[updele](updele.md)エントリのベクトル。 
     
- _セント_
+ _fea-cent-logging-service_
   
-> [out]*Pupde*内のエントリの数です。 
+> 読み上げ*pupde*のエントリ数。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -49,7 +49,7 @@ struct UPDEL
 
 [レプリケーション API について](about-the-replication-api.md)
   
-[レプリケーション ステート マシンについて](about-the-replication-state-machine.md)
+[レプリケーション状態のマシンについて](about-the-replication-state-machine.md)
   
-[MAPI �萔](mapi-constants.md)
+[MAPI 定数](mapi-constants.md)
 

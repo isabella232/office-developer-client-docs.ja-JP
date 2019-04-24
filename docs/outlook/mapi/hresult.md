@@ -11,46 +11,46 @@ api_name:
 api_type:
 - COM
 ms.assetid: b248ed11-3d8a-4d4c-9b84-fa5bee7979c7
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: a3e46732f9b74b9cdf2dc4c961e7b6b66e3d91d4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 64fcbebbd71bc3f478f36c711e49db9a3518ef9a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32347797"
 ---
 # <a name="hresult"></a>HRESULT
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-エラーまたは警告を記述するために使用される 32 ビット値です。
+エラーまたは警告を記述するために使用される32ビット値。
   
 ```cpp
 typedef LONG HRESULT;
 ```
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-**HRESULT**のデータ型は、 [SCODE](scode.md)のデータ型と同じです。 
+**HRESULT**データ型は、 [SCODE](scode.md)データ型と同じです。 
   
 **HRESULT**値は、次のフィールドで構成されます。 
   
-- 重大度を示す 1 ビットのコードでは 0 が成功し、1 を表す失敗を表します。
+- 重要度を示す1ビットのコード。0は成功を、1はエラーを表します。
     
-- 4 ビットの予約された値です。
+- 4ビット予約値。
     
-- 11 ビットは、エラーまたは警告、機能コードとも呼ばれる責任を示すコードです。
+- エラーまたは警告 (ファシリティコードとも呼ばれる) の責任を示す11ビットのコード。
     
-- エラーを説明するまたは警告の 16 ビット コードです。
+- エラーまたは警告を説明する16ビットコード。
     
-ほとんどの MAPI インターフェイスのメソッドおよび関数は、詳細な原因の形成を提供する**HRESULT**値を返します。 **HRESULT**値 OLE インターフェイスのメソッドで広く使用されます。 OLE は、別の一般的なデータ型のエラー処理の**HRESULT**値と、 **SCODE**値の間を変換するためいくつかのマクロを提供します。 
+ほとんどの MAPI インターフェイスのメソッドと関数は、 **HRESULT**値を返して詳細な原因のフォーメーションを提供します。 **HRESULT**値は、OLE インターフェイスメソッドでも広く使用されています。 OLE には、 **HRESULT**値と**SCODE**値の間で変換するためのマクロがいくつか用意されています。エラー処理には別の一般的なデータ型があります。 
   
 > [!NOTE]
-> 64 ビットの MAPI で**HRESULT**はまだ 32 ビット値です。 
+> 64ビット MAPI では、 **HRESULT**は32ビット値のままです。 
   
-**HRESULT**値の OLE の使用については、 *OLE プログラマ リファレンス*を参照してください。 MAPI でこれらの値の使用に関する詳細については、[エラーを処理](error-handling-in-mapi.md)し、次のインターフェイスのメソッドのいずれかを参照してください。 
+**HRESULT**値の ole 使用法については、「 *ole プログラマーズリファレンス*」を参照してください。 これらの値の MAPI での使用の詳細については、「[エラー処理](error-handling-in-mapi.md)」および次のいずれかのインターフェイスメソッドを参照してください。 
   
 [IABLogon::GetLastError](iablogon-getlasterror.md)
   
@@ -71,5 +71,5 @@ typedef LONG HRESULT;
 [SCODE](scode.md)
 
 
-[MAPI データ型](mapi-data-types.md)
+[MAPI のデータ型](mapi-data-types.md)
 

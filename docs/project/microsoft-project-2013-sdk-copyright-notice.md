@@ -5,13 +5,13 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 6f041970-780b-48b4-a277-20e8289134cd
-description: このドキュメントは現状のまま提供されます。 情報および見解は、URL やその他のインターネット web サイトを含み、このドキュメントには、予告なしに変更可能性があります。 このドキュメントの使用に伴うリスクはお客様が負うものとします。
+description: このドキュメントは現状のまま提供されます。 このドキュメントで説明されている情報とビュー (URL やその他のインターネット web サイト参照を含む) は、将来予告なしに変更されることがあります。 You bear the risk of using it.
 ms.openlocfilehash: 24a9fd4cdc25f206e8241a9b989724474f290318
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25384683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357009"
 ---
 # <a name="microsoft-project-2013-sdk-copyright-notice"></a>Microsoft Project 2013 SDK 著作権情報
 
@@ -19,7 +19,7 @@ ms.locfileid: "25384683"
   
 このドキュメントで使用しているサンプルは例示のみを目的として提供されており、名称などは架空のものです。実在する商品名、団体名、個人名などとは一切関係ありません。
   
-このドキュメントは、Microsoft 製品における知的所有権に対する法的権利をお客様に与えるものではありません。お客様は内部的な参照目的に限り、このドキュメントを複製して使用することができます。 
+このドキュメントは、読者にマイクロソフト製品の知的財産に対する法的権利を付与するものではありません。お客様による内部的な参照目的での、このドキュメントのコピーおよび使用は許可されます。 
   
 c 2012 Microsoft Corporation. All rights reserved.
   

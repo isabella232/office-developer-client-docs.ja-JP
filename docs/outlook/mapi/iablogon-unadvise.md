@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3e506b29-c7e3-40d6-a08b-22fa87088c2d
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 3fbf8b423cfd4206a0143b5639c85dbcacce2fae
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: fe87de4466413e317edea5d358c9e4769d0c5593
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348882"
 ---
 # <a name="iablogonunadvise"></a>IABLogon::Unadvise
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-[IABLogon::Advise](iablogon-advise.md)メソッドの呼び出しで以前設定された通知をキャンセルします。 
+[IABLogon:: Advise](iablogon-advise.md)メソッドの呼び出しで以前に設定された通知をキャンセルします。 
   
 ```cpp
 HRESULT Unadvise(
@@ -35,25 +35,25 @@ HRESULT Unadvise(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulConnection_
+ _ulconnection_
   
-> [in]作業中の通知の登録に関連付けられている接続の数です。 **アドバイズ**する前回の呼び出しには、 _ulConnection_の値を返す必要があります。
+> 順番アクティブな通知登録に関連付けられている接続番号。 **アドバイズ**の前の呼び出しでは、 _ulconnection_の値が返されている必要があります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 通知の登録は取り消されました。
+> 通知登録が正常にキャンセルされました。
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-MAPI では、メッセージングのユーザーまたは配布リスト オブジェクトのコンテナーであり、通知の登録をキャンセルするのには**Unadvise**メソッドを呼び出します。 
+MAPI は、**アドバイズ**中止メソッドを呼び出して、コンテナー、メッセージングユーザー、または配布リストオブジェクトの通知の登録を取り消します。 
   
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**Unadvise**の実装は、MAPI のヘルプまたは手動での通知をサポートするかどうかに依存します。 MAPI のサポートを提供する場合は、登録をキャンセルする[IMAPISupport::Unsubscribe](imapisupport-unsubscribe.md)メソッドを呼び出します。 別のスレッドがアドバイズ シンクの[IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドを呼び出すことであるにある場合は、 **OnNotify**が返されるまで遅延できます。 
+**アドバイズ**の実装は、MAPI のヘルプまたは手動で通知をサポートしているかどうかによって異なります。 MAPI がサポートを提供する場合は、 [imapisupport:: 講読解除](imapisupport-unsubscribe.md)メソッドを呼び出して、登録を取り消します。 別のスレッドがアドバイズシンクの[IMAPIAdviseSink:: onnotify](imapiadvisesink-onnotify.md)メソッドを呼び出しているプロセス内にある場合は、 **onnotify**が返されるまで遅延させることができます。 
   
-通知プロセスの詳細については、 [MAPI でのイベントの通知](event-notification-in-mapi.md)を参照してください。 使用する方法の詳細については、 [IMAPISupport: IUnknown](imapisupportiunknown.md)通知をサポートするメソッドは、[イベント通知をサポートしている](supporting-event-notification.md)を参照してください。
+通知プロセスの詳細については、「 [MAPI でのイベント通知](event-notification-in-mapi.md)」を参照してください。 [imapisupport:](imapisupportiunknown.md)通知をサポートするための IUnknown メソッドの使用方法については、「[サポートイベントの通知](supporting-event-notification.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

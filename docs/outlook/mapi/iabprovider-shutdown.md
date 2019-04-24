@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1fbe6dc1-254b-4557-92c8-9fa42a8efd64
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 0a93dd44960a01996672a55501a7626d0ff56986
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 8b2190f77c7575d3d4f5e25fa0863bec844158bc
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348903"
 ---
 # <a name="iabprovidershutdown"></a>IABProvider::Shutdown
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-アクティブなセッションへの接続をキャンセルします。
+アクティブなセッションへの接続を取り消します。
   
 ```cpp
 HRESULT Shutdown(
@@ -35,19 +35,19 @@ HRESULT Shutdown(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpulFlags_
+ _lアウトフラグ_
   
-> [In]予約されています。0 へのポインターである必要があります。
+> 順番予約語0へのポインターである必要があります。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 接続は取り消されました。
+> 接続が正常にキャンセルされました。
     
-## <a name="notes-to-implementers"></a>実装者へのメモ
+## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**Shutdown**メソッドの実装では、どのようなタスクを検討する必要を実行します。 MAPI は、すべてのログオン オブジェクトをリリースした後にのみ、 **Shutdown**メソッドを呼び出します。 
+**シャットダウン**方法の実装で、必要と考えられるすべてのタスクを実行します。 MAPI は、すべてのログオンオブジェクトを解放した後にのみ、 **Shutdown**メソッドを呼び出します。 
   
 ## <a name="see-also"></a>関連項目
 

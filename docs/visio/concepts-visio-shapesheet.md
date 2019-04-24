@@ -1,24 +1,24 @@
 ---
-title: (Visio シェイプ シート) の概念
+title: 概念 (Visio シェイプシート)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 245166ce-1cb6-634b-c763-bb717a940eec
-description: このナビゲーション ・ ページには、Visio でのプログラミングの概要に関するトピックへのリンクが含まれています。 以下のリンクをクリックするか、目次を使用して、次のトピックを移動するのには。
-ms.openlocfilehash: b385eb3228b015a1dca3df9defa5579e3d7da533
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: このナビゲーション ページには、Visio でのプログラミングの概要に関するトピックへのリンクが表示されています。 次のリンクをクリックするか、または、目次を使用して次のトピックを表示してください。
+ms.openlocfilehash: fef26adf718b883ef2dbc75fc1f3b9cf1b143386
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19805066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32358619"
 ---
-# <a name="concepts-visio-shapesheet"></a>(Visio シェイプ シート) の概念
+# <a name="concepts-visio-shapesheet"></a>概念 (Visio シェイプシート)
 
-このナビゲーション ・ ページには、Visio でのプログラミングの概要に関するトピックへのリンクが含まれています。 以下のリンクをクリックするか、目次を使用して、次のトピックを移動するのには。
+このナビゲーション ページには、Visio でのプログラミングの概要に関するトピックへのリンクが表示されています。 次のリンクをクリックするか、または、目次を使用して次のトピックを表示してください。
   
-- [セル参照について](about-cell-references.md)
+- [セルの参照について](about-cell-references.md)
     
 - [通貨定数について](about-currency-constants.md)
     
@@ -26,7 +26,7 @@ ms.locfileid: "19805066"
     
 - [エラー値について](about-error-values.md)
     
-- [書式設定ピクチャについて](about-format-pictures.md)
+- [書式形式について](about-format-pictures.md)
     
 - [数式について](about-formulas.md)
     
@@ -40,10 +40,10 @@ ms.locfileid: "19805066"
     
 - [[数式トレース] ウィンドウについて](about-the-formula-tracing-window.md)
     
-- [シェイプシート スプレッドシートについて](about-the-shapesheet-spreadsheet.md)
+- [シェイプシートのスプレッドシートについて](about-the-shapesheet-spreadsheet.md)
     
 - [[スタイル エクスプローラー] ウィンドウについて](about-the-style-explorer-window.md)
     
-- [測定単位について](about-units-of-measure-visio-shapesheet-reference.md)
+- [単位について](about-units-of-measure-visio-shapesheet-reference.md)
     
 

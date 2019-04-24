@@ -1,5 +1,5 @@
 ---
-title: IMAPISupportCopyMessages
+title: imapisupportcopymessages
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 70f67614-af0d-43f6-99f6-391a2f5673cb
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 0d3f540a14c833e0ee0ed212f6f3b3b709d72ec0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 9cc4e3ba77395e09a6b95e8381fa402fc3cdff61
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356533"
 ---
 # <a name="imapisupportcopymessages"></a>IMAPISupport::CopyMessages
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-別のフォルダーに 1 つのフォルダーからのコピーや移動メッセージです。
+メッセージを1つのフォルダーから別のフォルダーにコピーまたは移動します。
   
 ```cpp
 HRESULT CopyMessages(
@@ -42,37 +42,37 @@ HRESULT CopyMessages(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpSrcInterface_
+ _lpsrcinterface_
   
-> [in]コピーまたは移動するメッセージを含むフォルダーへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。
+> 順番コピーまたは移動するメッセージを含むフォルダーへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。
     
- _lpSrcFolder_
+ _lpsrcfolder_
   
-> [in]コピーまたは移動するメッセージを含むフォルダーへのポインター。
+> 順番コピーまたは移動するメッセージを含むフォルダーへのポインター。
     
- _lpMsgList_
+ _lpmsglist_
   
-> [in]コピーまたは移動するメッセージを識別するエントリの識別子の配列へのポインター。 
+> 順番コピーまたは移動するメッセージを識別するエントリ識別子の配列へのポインター。 
     
- _lpDestInterface_
+ _lpdestinterface_
   
-> [in]コピーまたは移動されたメッセージのコピー先フォルダーへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。
+> 順番コピーまたは移動されたメッセージの宛先フォルダーへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。
     
- _lpDestFolder_
+ _lpdestfolder_
   
-> [in]先のフォルダーにコピーまたは移動されたメッセージへのポインター。 このフォルダーを開く必要があります。
+> 順番コピーまたは移動されたメッセージの宛先フォルダーへのポインター。 このフォルダーは開いている必要があります。
     
- _ulUIParam_
+ _uluiparam_
   
-> [in]進行状況インジケーターを表示する進行中のオブジェクトへのポインター。 _LpProgress_に NULL を渡した場合、メッセージ ストア プロバイダーは、MAPI 処理中のオブジェクトの実装を使用して進行状況のインジケーターを表示します。 _UlFlags_に MESSAGE_DIALOG フラグが設定されていない限り、 _lpProgress_パラメーターは無視されます。
+> 順番進行状況インジケーターを表示する progress オブジェクトへのポインター。 _lpprogress_で NULL が渡された場合、メッセージストアプロバイダーは MAPI 進行状況オブジェクトの実装を使用して進行状況インジケーターを表示します。 MESSAGE_DIALOG フラグが_ulflags_で設定されていない場合、 _lpprogress_パラメーターは無視されます。
     
- _lpProgress_
+ _lpprogress_
   
-> [in]進行状況インジケーターを表示する進行中のオブジェクトへのポインター。 _LpProgress_に NULL を渡した場合、メッセージ ストア プロバイダーは、MAPI 処理中のオブジェクトの実装を使用して進行状況のインジケーターを表示します。 _UlFlags_に MESSAGE_DIALOG フラグが設定されていない限り、 _lpProgress_パラメーターは無視されます。
+> 順番進行状況インジケーターを表示する progress オブジェクトへのポインター。 _lpprogress_で NULL が渡された場合、メッセージストアプロバイダーは MAPI 進行状況オブジェクトの実装を使用して進行状況インジケーターを表示します。 MESSAGE_DIALOG フラグが_ulflags_で設定されていない場合、 _lpprogress_パラメーターは無視されます。
     
  _ulFlags_
   
-> [in]コピーまたは移動操作を実現する方法を制御するフラグのビットマスクです。 次のフラグを設定することができます。
+> 順番コピー操作または移動操作の実行方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MESSAGE_DIALOG 
   
@@ -80,9 +80,9 @@ MESSAGE_DIALOG
     
 MESSAGE_MOVE 
   
-> メッセージを移動する必要があるのではなくコピーします。 MESSAGE_MOVE が設定されていない場合、メッセージがコピーされます。
+> メッセージはコピーではなく移動する必要があります。 MESSAGE_MOVE が設定されていない場合は、メッセージがコピーされます。
     
-## <a name="return-value"></a>�߂�l
+## <a name="return-value"></a>戻り値
 
 S_OK 
   
@@ -90,11 +90,11 @@ S_OK
     
 MAPI_E_USER_CANCEL 
   
-> ユーザー操作がキャンセルされました、通常ダイアログ ボックスで [**キャンセル**] ボタンをクリックするとします。 
+> ユーザーが操作をキャンセルしました。通常は、ダイアログボックスの **[キャンセル**] ボタンをクリックします。 
     
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-メッセージ ストア プロバイダーのサポート オブジェクトの**IMAPISupport::CopyMessages**メソッドを実装します。 メッセージ ストア プロバイダーは、コピーまたは別の 1 つのフォルダーから 1 つまたは複数のメッセージを移動するのには、 [IMAPIFolder::CopyMessages](imapifolder-copymessages.md)の実装では、 **IMAPISupport::CopyMessages**を呼び出すことができます。 **IMAPISupport::CopyMessages**の呼び出しの一部として、メッセージ ストア プロバイダーが、MAPI は、進行状況インジケーターを表示することを指定できます。 
+**imapisupport:: copymessages**メソッドは、メッセージストアプロバイダーサポートオブジェクトに実装されています。 メッセージストアプロバイダーは、imapisupport [:: copymessages](imapifolder-copymessages.md)を使用して、1つまたは複数のメッセージを別のフォルダーにコピーまたは移動する**imapisupport:: copymessages**を呼び出すことができます。 **imapisupport:: copymessages**呼び出しの一部として、メッセージストアプロバイダーは MAPI が進行状況インジケーターを表示するように指定できます。 
   
 ## <a name="see-also"></a>関連項目
 

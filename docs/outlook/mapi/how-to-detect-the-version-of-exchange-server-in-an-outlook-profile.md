@@ -1,27 +1,27 @@
 ---
-title: Outlook プロファイルに Exchange Server のバージョンを検出します。
+title: Outlook プロファイルで Exchange Server のバージョンを検出する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: e2d8d8a9-7e8f-9cf0-56a8-d8a6281ad589
-description: '最終更新日: 2012 年 7 月 3 日'
-ms.openlocfilehash: b6c1482554cfb1e756266eb31f992b81bc34bb51
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2012 年7月3日'
+ms.openlocfilehash: c6aaac128e1a3e1a8d77d3fa8b6c50a335348b71
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575897"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32345543"
 ---
-# <a name="detect-the-version-of-exchange-server-in-an-outlook-profile"></a>Outlook プロファイルに Exchange Server のバージョンを検出します。
+# <a name="detect-the-version-of-exchange-server-in-an-outlook-profile"></a>Outlook プロファイルで Exchange Server のバージョンを検出する
 
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックには、アクティブなアカウントが Microsoft Exchange Server のバージョン情報を取得するのには、 **[PR_PROFILE_SERVER_VERSION](pidtagprofileserverversion-canonical-property.md)** プロパティと**[PR_PROFILE_SERVER_FULL_VERSION](pidtagprofileserverfullversion-canonical-property.md)** プロパティを使用する方法について説明する C++ のコード サンプルが含まれています接続されています。 
+このトピックには、 **[PR_PROFILE_SERVER_VERSION](pidtagprofileserverversion-canonical-property.md)** プロパティと**[PR_PROFILE_SERVER_FULL_VERSION](pidtagprofileserverfullversion-canonical-property.md)** プロパティを使用して、アクティブなアカウントが Microsoft Exchange SERVER のバージョン情報を取得する方法を示す、C++ のコードサンプルが含まれています。に接続されています。 
   
-`GetProfileServiceVersion`のコード サンプルでは関数は、入力パラメーターとしてプロファイルを受け取ります。 によってかどうか、 **PR_PROFILE_SERVER_VERSION**プロパティと**PR_PROFILE_SERVER_FULL_VERSION**プロパティは、特定のプロファイルに存在、関数が各プロパティを取得し、出力として適切なバージョン情報を返します。パラメーターです。 
+コード`GetProfileServiceVersion`サンプルの関数は、入力パラメーターとしてプロファイルを受け入れます。 **PR_PROFILE_SERVER_VERSION**プロパティと**PR_PROFILE_SERVER_FULL_VERSION**プロパティが指定されたプロファイルに存在するかどうかに応じて、関数は各プロパティを取得し、適切なバージョン情報を出力として返します。parameters. 
   
-`GetProfileServiceVersion`最初のプロファイルの管理オブジェクトを作成する**[MAPIAdminProfiles](mapiadminprofiles.md)** 関数を呼び出します。 プロファイルの管理オブジェクトを使用して、メッセージ サービスの管理オブジェクトを取得するのには**[IProfAdmin::AdminServices](iprofadmin-adminservices.md)** を呼び出します。 メッセージ サービスの管理オブジェクトを使用すると、現在のプロファイルのセクションを取得する**[IMsgServiceAdmin::OpenProfileSection](imsgserviceadmin-openprofilesection.md)** を呼び出すの特定のセクションに存在するかどうかの 2 つのプロパティを確認するのには、 **[HrGetOneProp](hrgetoneprop.md)** を呼び出して、プロファイル、および場合は、適切な出力パラメーターのバージョン情報を設定します。 
+`GetProfileServiceVersion`最初に**[MAPIAdminProfiles](mapiadminprofiles.md)** 関数を呼び出して、プロファイル管理オブジェクトを作成します。 その後、プロファイル管理オブジェクトを使用して**[IProfAdmin:: adminservices](iprofadmin-adminservices.md)** を呼び出して、メッセージサービス管理オブジェクトを取得します。 メッセージサービス管理オブジェクトを使用して、 **[IMsgServiceAdmin::](imsgserviceadmin-openprofilesection.md)** openprofilebyを呼び出して現在のプロファイルのセクションを取得した後、 **[hrgetoneprop](hrgetoneprop.md)** を呼び出して、次の2つのプロパティがそれぞれのセクションに存在するかどうかを確認します。プロファイルの場合は、該当する出力パラメーターにバージョン情報を設定します。 
   
 ```cpp
 TZDEFINITION* BinToTZDEFINITION(ULONG cbDef, LPBYTE lpbDef) 

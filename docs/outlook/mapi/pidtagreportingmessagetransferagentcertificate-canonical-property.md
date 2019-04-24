@@ -12,51 +12,51 @@ api_type:
 - COM
 ms.assetid: 02e18d97-25d2-49a3-a63d-26a70895e21c
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: fbadc9407a181ba58b4bcd726df05465b11dc789
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 04d97dfeeef28aac1d0bbf963074b4262d4fed3d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346306"
 ---
 # <a name="pidtagreportingmessagetransferagentcertificate-canonical-property"></a>PidTagReportingMessageTransferAgentCertificate 標準プロパティ
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-レポートを生成するメッセージ転送エージェントの識別子が含まれています。
+レポートを生成したメッセージ転送エージェントの識別子を含みます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_REPORTING_MTA_CERTIFICATE  <br/> |
 |識別子:  <br/> |0x1004  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|領域:  <br/> |MAPI メッセージ  <br/> |
+|エリア:  <br/> |MAPI メッセージ  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-このプロパティは、X.400 レポート メッセージごとの属性に対応します。
+このプロパティは、メッセージあたりの400レポート属性に対応します。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
-Mapitags.h
+Mapitags
   
-> 関連付けられているプロパティとして記載されているプロパティの定義が含まれています。
+> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: e63792b1-9580-4702-a6d7-dd3ae5007a4a
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 870b4e0edb360ac36525f94b0605af930eee8fa3
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25382597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32357975"
 ---
 # <a name="pidlidpercentcomplete-canonical-property"></a>PidLidPercentComplete 標準プロパティ
 
@@ -25,53 +25,53 @@ ms.locfileid: "25382597"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-タスクの進行状況のユーザーが行ったことを示します。 
+ユーザーがタスクに対して行った進捗状況を示します。 
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidPercentComplete  <br/> |
-|プロパティを設定します。  <br/> |PSETID_Task  <br/> |
-|長い ID (LID):  <br/> |0x00008102  <br/> |
+|関連するプロパティ:  <br/> |dispidpercentcomplete 率  <br/> |
+|プロパティセット:  <br/> |PSETID_Task  <br/> |
+|ロング ID (LID):  <br/> |0x00008102  <br/> |
 |データの種類 :   <br/> |PT_R8  <br/> |
 |エリア:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>解説
 
-このプロパティの値は、0.0 以上の番号をする必要があり、作業が開始されていないことを示すよりも 1.0、1.0 が作業が完了したことを示す位置に、かつ、0.0 未満です。
+このプロパティの値には、0.0 以上で1.0 以下の数値を指定する必要があります。1.0 は作業が完了したことを示し、0.0 は作業が開始されていないことを示します。
   
-時間フラグ付きメッセージをオブジェクトでは、このプロパティの値をする必要があるに設定 1.0 オブジェクトのフラグが設定されている場合完了すると、それ以外の場合に 0.0 に設定する必要があります。
+タイムフラグが設定されたメッセージオブジェクトの場合、このプロパティの値は、オブジェクトのフラグが設定されている場合は1.0 に設定し、それ以外の場合は0.0 に設定する必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティ セットの定義と関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
     
-[[MS OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
-> タスク、タスクの割り当て、およびタスクの更新に相当する電子をモデル化したいくつかのオブジェクトを定義します。
+> タスク、タスクの割り当て、およびタスクの更新に相当する電子メールをモデル化する複数のオブジェクトを定義します。
     
-[[MS OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
+[[OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
   
-> プロパティ フラグに関連する操作を指定します。
+> フラグに関連するプロパティと操作を指定します。
     
-[[MS OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
-> メッセージ オブジェクト インターネット標準の電子メールの表記規則からに変換します。
+> インターネット標準の電子メールの規則からメッセージオブジェクトに変換します。
     
-[[MS OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
+[[OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
   
-> IETF RFC2445、RFC2446、RFC2447、および予定と会議のオブジェクトに変換します。
+> IETF RFC2445、RFC2446、RFC2447、予定および会議の各オブジェクトを変換します。
     
-[[MS OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
-> 順序と、クライアントとサーバー間のデータ転送のフローを処理します。
+> クライアントとサーバー間のデータ転送の順序と流れを処理します。
     
-### <a name="header-files"></a>ヘッダー ファイル
+### <a name="header-files"></a>ヘッダーファイル
 
-Mapidefs.h
+mapidefs.h
   
 > データ型定義を提供します。
     
@@ -79,9 +79,9 @@ Mapidefs.h
 
 
 
-[MAPI プロパティ](mapi-properties.md)
+[MAPI のプロパティ](mapi-properties.md)
   
-[標準の MAPI プロパティ](mapi-canonical-properties.md)
+[MAPI 標準プロパティ](mapi-canonical-properties.md)
   
 [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
   

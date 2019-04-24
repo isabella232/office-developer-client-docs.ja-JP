@@ -9,28 +9,28 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 551166d0-3aaa-0fd7-e742-cf3450ba90ed
 description: ページの既定の影の種類を指定します。
-ms.openlocfilehash: 1fc5c31a723d5d409110d94ff543a45dadabf264
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f1fc72484d94788ca2798760ca935c89c3e841ad
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32342890"
 ---
-# <a name="shdwtype-cell-page-properties-section"></a>[ShdwType ] セル ([ページのプロパティ] セクション)
+# <a name="shdwtype-cell-page-properties-section"></a>[ShdwType] セル ([Page Properties] セクション)
 
 ページの既定の影の種類を指定します。
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| 1  <br/> | シンプルな影です。  <br/> |**visFSTSimple** <br/> |
-| 2  <br/> | 斜体の影です。  <br/> |**visFSTOblique** <br/> |
-|3  <br/> |内部  <br/> |**visFSTInner** <br/> |
+| 1-d  <br/> | 単純  <br/> |**visFSTSimple** <br/> |
+| pbm-2  <br/> | 斜体  <br/> |**visFSTOblique** <br/> |
+|1/3  <br/> |内側  <br/> |**visFSTInner** <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
- ShapeShdwType セル (ページ上の個々 の図形の影の種類) がページの既定値 (**visFSTPageDefault** ) に設定するたびに、このセルに記載されている影の種類が使用されます。 
+ このセルに記述されている影の種類は、[shapeshdwtype] セル (ページ上の個々の図形の影の種類) が [ページの既定値 (**visFSTPageDefault** )] に設定されている場合に使用します。 
   
-シンプルな影は、ユーザー インターフェイス (UI) 内のオフセットの影として説明します。 シンプルな影は、その背後にある程度の距離の平面上にシャドウされている図形の効果を示します。 斜体の影は、UI 内の斜体の影として説明され、図形に垂直な平面に影の効果を与えます。 
+シンプルな影は、ユーザー インターフェイス (UI) 内では "オフセット" と表示されます。 シンプルな影は、その図形の下の平面に影を落としているように見えます。 斜体の影は UI で "斜体" と表示され、図形が直立している平面に影を落としているように見えます。 
   
 定義済みのシンプルな影と斜体の影の一覧は、[**ページ設定**] ダイアログ ボックスの [**影**] タブにある [**スタイル**] ボックスの一覧を参照してください (このダイアログ ボックスを開くには、[**デザイン**] タブで、[**ページ設定**] 矢印をクリックします)。 
   
@@ -38,7 +38,7 @@ ms.locfileid: "19806467"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [Shdwtype]  <br/> |
+| セル名 :  <br/> | [shdwtype]  <br/> |
    
 プログラムから、インデックスによって [ShapeShdwOffsetX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

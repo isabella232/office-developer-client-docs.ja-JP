@@ -8,24 +8,24 @@ api_type:
 - COM
 ms.assetid: 8b3b9c80-f7f4-4f37-bd6b-323469d020f1
 description: 'COM ms.assetid: 8b3b9c80-f7f4-4f37-bd6b-323469d020f1 description: "�ŏI�X�V��: 2011�N7��23��"'
-ms.openlocfilehash: 70aeda8789665a3f35bf75f83f32a92dbeedc8de
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9f9daa2169a087cf962d09a7c135e2829c7cd1ee
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32346747"
 ---
-# <a name="mapi-hidden-folders"></a>��\���ɂ��� MAPI �t�H���_�[
+# <a name="mapi-hidden-folders"></a>title: "��\���ɂ��� MAPI �t�H���_�[" ms.author: v-tirob author: v-tirob manager: soliver ms.date: 11/16/2014 ms.audience: Developer ms.topic: overview ms.prod: office-online-server localization_priority: Normal api_type:
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-隠しフォルダーは、クライアントは、メッセージ ・ ストアのルート フォルダーではなく、個人間メッセージ (IPM) サブツリーのルート フォルダーを作成する一般的なフォルダーです。 これらのフォルダーが、IPM サブツリーに配置されていないため一般にによって隠されているユーザーのビューから、メッセージ ストア プロバイダーです。 隠しフォルダーには、通常は、メッセージ ・ ストアに関連するが、ユーザーに関係のない情報が含まれます。 クライアントは、たとえば、フォルダー階層の残りの部分を保存する追加情報を格納するフォルダーを非表示を作成します。
+Hidden folders are generic folders that clients create in the root folder of the message store, rather than in the root folder of an interpersonal message (IPM) subtree. Because these folders are not placed in an IPM subtree, they are generally hidden from the user's view by the message store provider. Hidden folders typically contain information that is relevant to the message store but irrelevant to the user. Clients create hidden folders to store, for example, additional information to be saved with the rest of the folder hierarchy.
   
-MAPI には、表示、作成、変更、および、IPM サブツリー内のフォルダーを削除することができるすべてのクライアントが期待しています。 他のツリー内のフォルダーを操作するためのサポートは、省略可能と見なされます。 ただし、既定のストアとして使用できるものと、メッセージを送受信するすべてのメッセージ ストアは、非表示のフォルダーを完全にサポートする必要があります。
+MAPI expects all clients to be able to display, create, modify, and delete folders in an IPM subtree. Support for working with folders in other trees is considered optional. However, all message stores that can be used as the default store and that can send and receive messages should fully support hidden folders.
   
-## <a name="see-also"></a>�֘A����
+## <a name="see-also"></a>関連項目
 
 
 

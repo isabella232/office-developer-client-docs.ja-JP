@@ -1,5 +1,5 @@
 ---
-title: メッセージ サービス テーブル
+title: メッセージサービステーブル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,26 +8,26 @@ api_type:
 - COM
 ms.assetid: b93ab837-3918-4427-b013-bedc6f5276e4
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 569c1bd7ee2f4ac6c321f234be2954a57715549b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c644e89511033234aa45c5f82738e4c471ef646d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32356911"
 ---
-# <a name="message-service-tables"></a>メッセージ サービス テーブル
+# <a name="message-service-tables"></a>メッセージサービステーブル
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ サービス テーブルには、現在のプロファイル内のメッセージ サービスに関する情報が含まれています。 MAPI セッションごとに MAPI によって実装され、構成のサポートを提供する特別な目的のクライアント アプリケーションによって使用されるメッセージ サービスの 1 つのテーブルがあります。 
+メッセージサービステーブルには、現在のプロファイルのメッセージサービスに関する情報が含まれています。 mapi によって実装され、構成のサポートを提供する特殊な目的のクライアントアプリケーションによって使用される、すべての mapi セッションに対して1つのメッセージサービステーブルがあります。 
   
-メッセージ サービス テーブルは、静的なテーブルです。
+メッセージサービステーブルは静的テーブルです。
   
-クライアントは、 [IMsgServiceAdmin::GetMsgServiceTable](imsgserviceadmin-getmsgservicetable.md)メソッドを呼び出して、メッセージ サービス テーブルをアクセスします。 
+クライアントは、 [IMsgServiceAdmin:: getmsgservicetable](imsgserviceadmin-getmsgservicetable.md)メソッドを呼び出して、メッセージサービステーブルにアクセスします。 
   
-次のプロパティは、メッセージ サービス テーブルを設定する必要な列を構成します。
+次のプロパティは、メッセージサービステーブルで必要な列セットを作成します。
   
 |||
 |:-----|:-----|
@@ -36,21 +36,21 @@ ms.locfileid: "22576671"
 |**PR_SERVICE_ENTRY_NAME**([PidTagServiceEntryName](pidtagserviceentryname-canonical-property.md))  <br/> |**PR_SERVICE_NAME**([PidTagServiceName](pidtagservicename-canonical-property.md))  <br/> |
 |**PR_SERVICE_SUPPORT_FILES**([PidTagServiceSupportFiles](pidtagservicesupportfiles-canonical-property.md))  <br/> |**PR_SERVICE_UID**([PidTagServiceUid](pidtagserviceuid-canonical-property.md))  <br/> |
    
- **PR_DISPLAY_NAME**は、メッセージ サービス、および既定の並べ替えのキー列の表示可能な名前です。 
+ **PR_DISPLAY_NAME**は、メッセージサービスの表示名と既定の並べ替えキー列です。 
   
- **PR_INSTANCE_KEY**は、行を一意に識別するテーブルのインデックス列として機能します。 
+ **PR_INSTANCE_KEY**は、行を一意に識別する、テーブルのインデックス列として機能します。 
   
- **PR_RESOURCE_FLAGS**では、メッセージ サービスの機能について説明します。 
+ **PR_RESOURCE_FLAGS**メッセージサービスの機能について説明します。 
   
- **PR_SERVICE_DLL_NAME**は、メッセージ サービスの実装を含む DLL の名前です。 
+ **PR_SERVICE_DLL_NAME**は、メッセージサービスの実装を含む DLL の名前です。 
   
- **PR_SERVICE_ENTRY_NAME**は、 [MSGSERVICEENTRY](msgserviceentry.md)のプロトタイプに準拠しているメッセージ サービスのエントリ ポイント関数の名前です。 
+ **PR_SERVICE_ENTRY_NAME**は、 [msgserviceentry](msgserviceentry.md)プロトタイプに準拠したメッセージサービスのエントリポイント関数の名前です。 
   
- **PR_SERVICE_NAME**は、MAPISVC.INF の **[サービス]** セクションで必要なエントリです。 このプロパティの値の変更またはローカライズされたことはありませんが。 メッセージ サービスをプログラムで識別する**PR_SERVICE_NAME**を使用することができます。 
+ **PR_SERVICE_NAME**は、mapisvc.inf の **[Services]** セクションで必須のエントリです。 このプロパティの値は、変更またはローカライズされません。 **PR_SERVICE_NAME**を使用して、メッセージサービスをプログラムで識別できます。 
   
- **PR_SERVICE_SUPPORT_FILES**は、メッセージ サービスをインストールする必要があるファイルの一覧です。 
+ **PR_SERVICE_SUPPORT_FILES**は、メッセージサービスと共にインストールする必要があるファイルの一覧です。 
   
- **PR_SERVICE_UID**は、メッセージ サービスの一意の識別子です。 
+ **PR_SERVICE_UID**は、メッセージサービスの一意の識別子です。 
   
 ## <a name="see-also"></a>関連項目
 

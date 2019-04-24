@@ -12,26 +12,26 @@ api_type:
 - COM
 ms.assetid: bb76b147-6552-4cc4-920f-699170aea17f
 description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 3bcad4c236f71390f7a048eb66860720e9180e06
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c035780d3d790d94551860a418401e63da1c2151
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32348049"
 ---
 # <a name="hrcomposemsgid"></a>HrComposeMsgID
 
   
   
-**適用されます**: Outlook 2013 |Outlook 2016 
+**適用対象**: Outlook 2013 | Outlook 2016 
   
-通常メッセージ ストア内のメッセージ オブジェクトは、複合のエントリの識別子を表す ASCII 文字列を作成します。 
+オブジェクトの複合エントリ識別子 (通常はメッセージストア内のメッセージ) を表す ASCII 文字列を作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
-|によって実装されます。  <br/> |MAPI  <br/> |
-|によって呼び出されます。  <br/> |クライアント アプリケーション  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|実装元:  <br/> |MAPI  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
    
 ```cpp
 HrComposeMsgID(
@@ -48,38 +48,38 @@ HrComposeMsgID(
 
  _psession_
   
-> [in]クライアント アプリケーションによって使用中のセッションへのポインター。 
+> 順番クライアントアプリケーションによって使用されているセッションへのポインター。 
     
  _cbStoreRecordKey_
   
-> [in]メッセージまたはその他のオブジェクトを含むメッセージ ストアのレコードのキーのバイト単位のサイズです。 _CbStoreRecordKey_パラメーターに 0 を渡すと、エントリ id のコピーを_pszMsgID_のパラメーターのポイント テキストに変換します。 
+> 順番メッセージまたはその他のオブジェクトを含むメッセージストアのレコードキーのサイズ (バイト単位)。 _cbStoreRecordKey_パラメーターに0が渡された場合、 _pszMsgID_パラメーターは、テキストに変換されたエントリ id のコピーを指します。 
     
  _pStoreRecordKey_
   
-> [in]メッセージまたはその他のオブジェクトを含むメッセージ ストアのレコードのキーへのポインター。 
+> 順番メッセージまたはその他のオブジェクトを含むメッセージストアの record キーへのポインター。 
     
- _cbMsgEID_
+ _cbmsgeid_
   
-> [in]メッセージまたはその他のオブジェクトのエントリ id のバイト単位のサイズです。 
+> 順番メッセージまたはその他のオブジェクトのエントリ識別子のサイズ (バイト単位)。 
     
- _pMsgEID_
+ _pmsgeid_
   
-> [in]オブジェクトのエントリの識別子へのポインター。 
+> 順番オブジェクトのエントリ識別子へのポインター。 
     
  _pszMsgID_
   
-> [out]返される ASCII 文字列へのポインター。 _CbStoreRecordKey_パラメーターが 0 より大きい場合は、複合のエントリの識別子に_pszMsgID_パラメーターのポイントは、テキストに変換します。 _CbStoreRecordKey_が 0 の場合は、普通のエントリの識別子に_pszMsgID_ポイントは、テキストに変換します。 
+> 読み上げ返された ASCII 文字列へのポインター。 _cbStoreRecordKey_パラメーターが0より大きい場合、 _pszMsgID_パラメーターは、テキストに変換された複合エントリ識別子を指します。 _cbStoreRecordKey_が0の場合、 _pszMsgID_は、テキストに変換された非複合エントリ識別子を指します。 
     
 ## <a name="return-value"></a>Return value
 
 なし。
   
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-メッセージ ストアでメッセージまたは複合のエントリの識別子を作成するための他のオブジェクトが存在する場合、識別子の文字列は、オブジェクトのエントリ id とストアのレコードのキーから作成されます。 オブジェクトがストア内にない場合は、 _cbStoreRecordKey_パラメーターで渡されたストアのレコードのキーのバイト数が 0 の場合オブジェクトのエントリ id は、単にコピーされ、文字列に変換します。 
+複合エントリ識別子が作成されているメッセージまたはその他のオブジェクトがメッセージストアに存在する場合、識別子文字列は、オブジェクトのエントリ識別子とストアの record キーから作成されます。 オブジェクトがストアに存在しない場合、つまり、 _cbStoreRecordKey_パラメーターで渡されたストアレコードキーのバイト数が0の場合、オブジェクトのエントリ識別子は単にコピーされ、文字列に変換されます。 
   
-**HrComposeMsgID**関数の呼び出しは、 [HrComposeEID](hrcomposeeid.md)関数とし、 [HrSzFromEntryID](hrszfromentryid.md)関数を呼び出すことと同じです。 
+**HrComposeMsgID**関数の呼び出しは、hr の[id](hrcomposeeid.md)関数を呼び出し、次に[hrszfromentryid](hrszfromentryid.md)関数を呼び出すことと同じです。 
   
- **HrComposeMsgID**は、複合のエントリ id を使用して複数のストア内のオブジェクトを使用するクライアント アプリケーションを有効にします。 アプリケーションでは、複合のエントリの識別子を元の住民に分割する[HrDecomposeMsgID](hrdecomposemsgid.md)関数を呼び出すことができます。 
+ **HrComposeMsgID**では、クライアントアプリケーションが複合エントリ識別子を使用して、複数のストア内のオブジェクトを操作することができます。 アプリケーションは[HrDecomposeMsgID](hrdecomposemsgid.md)関数を呼び出して、複合エントリ識別子を元の constituents に分割できます。 
   
 
