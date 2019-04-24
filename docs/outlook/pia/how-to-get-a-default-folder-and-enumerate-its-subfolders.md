@@ -8,24 +8,24 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 6151b564957f9574f3a65502584716f5bab0c17e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32320238"
 ---
-# <a name="get-a-default-folder-and-enumerate-its-subfolders"></a><span data-ttu-id="7f9ab-102">既定のフォルダーを取得して、そのサブフォルダーを列挙する</span><span class="sxs-lookup"><span data-stu-id="7f9ab-102">Get a default folder and enumerate its subfolders</span></span>
+# <a name="get-a-default-folder-and-enumerate-its-subfolders"></a><span data-ttu-id="afc2b-102">既定のフォルダーを取得して、そのサブフォルダーを列挙する</span><span class="sxs-lookup"><span data-stu-id="afc2b-102">Get a default folder and enumerate its subfolders</span></span>
 
-<span data-ttu-id="7f9ab-103">この例では、ユーザーの既定のストア内の既定のフォルダーを取得して、そのサブフォルダーを列挙する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="7f9ab-103">This example shows how to obtain a default folder in the user’s default store and enumerate its subfolders.</span></span>
+<span data-ttu-id="afc2b-103">この例では、ユーザーの既定のストア内の既定のフォルダーを取得して、そのサブフォルダーを列挙する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="afc2b-103">This example shows how to obtain a default folder in the user’s default store and enumerate its subfolders.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7f9ab-104">例</span><span class="sxs-lookup"><span data-stu-id="7f9ab-104">Example</span></span>
+## <a name="example"></a><span data-ttu-id="afc2b-104">例</span><span class="sxs-lookup"><span data-stu-id="afc2b-104">Example</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="7f9ab-105">次のコード例は、『[Programming Applications for Microsoft Office Outlook 2007](https://www.amazon.com/gp/product/0735622493?ie=UTF8&tag=msmsdn-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0735622493)』からの抜粋です。</span><span class="sxs-lookup"><span data-stu-id="7f9ab-105">The following code example is an excerpt from [Programming Applications for Microsoft Office Outlook 2007](https://www.amazon.com/gp/product/0735622493?ie=UTF8&tag=msmsdn-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0735622493).</span></span>
+> <span data-ttu-id="afc2b-105">次のコード例は、『[Programming Applications for Microsoft Office Outlook 2007](https://www.amazon.com/gp/product/0735622493?ie=UTF8&tag=msmsdn-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0735622493)』からの抜粋です。</span><span class="sxs-lookup"><span data-stu-id="afc2b-105">The following code example is an excerpt from [Programming Applications for Microsoft Office Outlook 2007](https://www.amazon.com/gp/product/0735622493?ie=UTF8&tag=msmsdn-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0735622493).</span></span>
 
-<span data-ttu-id="7f9ab-106">次のコード例では、GetRSSFeeds が [NameSpace](https://msdn.microsoft.com/library/bb645857\(v=office.15\)) オブジェクトの [GetDefaultFolder(OlDefaultFolders)](https://msdn.microsoft.com/library/bb646473\(v=office.15\)) メソッドを使用して、ユーザーの RSS Feeds ルート フォルダーを取得します。</span><span class="sxs-lookup"><span data-stu-id="7f9ab-106">In the following code example, GetRSSFeeds uses the [GetDefaultFolder(OlDefaultFolders)](https://msdn.microsoft.com/library/bb646473\(v=office.15\)) method of the [NameSpace](https://msdn.microsoft.com/library/bb645857\(v=office.15\)) object to obtain the user’s RSS Feeds root folder.</span></span> <span data-ttu-id="7f9ab-107">次に、GetRSSFeeds は RSS Feeds フォルダー内のすべての RSS フィードに対するフォルダーの名前を含むメッセージ ボックスを表示します。</span><span class="sxs-lookup"><span data-stu-id="7f9ab-107">GetRSSFeeds then displays a message box that contains the folder names for all RSS feeds in the RSS Feeds folder.</span></span>
+<span data-ttu-id="afc2b-106">次のコード例では、GetRSSFeeds が [NameSpace](https://msdn.microsoft.com/library/bb645857\(v=office.15\)) オブジェクトの [GetDefaultFolder(OlDefaultFolders)](https://msdn.microsoft.com/library/bb646473\(v=office.15\)) メソッドを使用して、ユーザーの RSS Feeds ルート フォルダーを取得します。</span><span class="sxs-lookup"><span data-stu-id="afc2b-106">In the following code example, GetRSSFeeds uses the [GetDefaultFolder(OlDefaultFolders)](https://msdn.microsoft.com/library/bb646473\(v=office.15\)) method of the [NameSpace](https://msdn.microsoft.com/library/bb645857\(v=office.15\)) object to obtain the user’s RSS Feeds root folder.</span></span> <span data-ttu-id="afc2b-107">次に、GetRSSFeeds は RSS Feeds フォルダー内のすべての RSS フィードに対するフォルダーの名前を含むメッセージ ボックスを表示します。</span><span class="sxs-lookup"><span data-stu-id="afc2b-107">GetRSSFeeds then displays a message box that contains the folder names for all RSS feeds in the RSS Feeds folder.</span></span>
 
-<span data-ttu-id="7f9ab-108">Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。</span><span class="sxs-lookup"><span data-stu-id="7f9ab-108">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the Outlook variable when you import the **Microsoft.Office.Interop.Outlook** namespace.</span></span> <span data-ttu-id="7f9ab-109">**using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7f9ab-109">The **using** statement must not occur directly before the functions in the code example but must be added before the public Class declaration.</span></span> <span data-ttu-id="7f9ab-110">次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="7f9ab-110">The following line of code shows how to do the import and assignment in C\#.</span></span>
+<span data-ttu-id="afc2b-108">Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。</span><span class="sxs-lookup"><span data-stu-id="afc2b-108">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the Outlook variable when you import the **Microsoft.Office.Interop.Outlook** namespace.</span></span> <span data-ttu-id="afc2b-109">**using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="afc2b-109">The **using** statement must not occur directly before the functions in the code example but must be added before the public Class declaration.</span></span> <span data-ttu-id="afc2b-110">次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="afc2b-110">The following line of code shows how to do the import and assignment in C\#.</span></span>
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;
@@ -58,7 +58,7 @@ private void GetRSSFeeds()
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="7f9ab-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="7f9ab-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="afc2b-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="afc2b-111">See also</span></span>
 
-- [<span data-ttu-id="7f9ab-112">フォルダー</span><span class="sxs-lookup"><span data-stu-id="7f9ab-112">Folders</span></span>](folders.md)
+- [<span data-ttu-id="afc2b-112">フォルダー</span><span class="sxs-lookup"><span data-stu-id="afc2b-112">Folders</span></span>](folders.md)
 

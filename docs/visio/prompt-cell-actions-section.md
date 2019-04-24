@@ -9,19 +9,19 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: ce43b4fd-816a-6f2f-2019-42eecf747cdd
 description: Visio 2002 以降、このセルは使用されなくなりました。
-ms.openlocfilehash: f75778491f587783563af2473e6d8325e9b96e44
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bd0eeaa62a1c2a3f667301db48ff301f88d6f8d3
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19806099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315163"
 ---
-# <a name="prompt-cell-actions-section"></a><span data-ttu-id="df2d6-103">[Prompt] セル ([操作] セクション)</span><span class="sxs-lookup"><span data-stu-id="df2d6-103">Prompt Cell (Actions Section)</span></span>
+# <a name="prompt-cell-actions-section"></a><span data-ttu-id="c0a82-103">[Prompt] セル ([Actions] セクション)</span><span class="sxs-lookup"><span data-stu-id="c0a82-103">Prompt Cell (Actions Section)</span></span>
 
-<span data-ttu-id="df2d6-104">Visio 2002 以降、このセルは使用されなくなりました。</span><span class="sxs-lookup"><span data-stu-id="df2d6-104">Beginning with Visio 2002, this cell is no longer used.</span></span>
+<span data-ttu-id="c0a82-104">Visio 2002 以降、このセルは使用されなくなりました。</span><span class="sxs-lookup"><span data-stu-id="c0a82-104">Beginning with Visio 2002, this cell is no longer used.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="df2d6-105">備考</span><span class="sxs-lookup"><span data-stu-id="df2d6-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c0a82-105">解説</span><span class="sxs-lookup"><span data-stu-id="c0a82-105">Remarks</span></span>
 
-<span data-ttu-id="df2d6-106">旧バージョンの Visio では、このセルには、ショートカット コマンドを選択したときにステータス バーに表示される説明文を指定していました。</span><span class="sxs-lookup"><span data-stu-id="df2d6-106">In earlier versions of Visio, this cell specified a descriptive prompt that appeared in the status bar when you selected the corresponding shortcut command.</span></span>
+<span data-ttu-id="c0a82-106">旧バージョンの Visio では、このセルには、ショートカット コマンドを選択したときにステータス バーに表示される説明文を指定していました。</span><span class="sxs-lookup"><span data-stu-id="c0a82-106">In earlier versions of Visio, this cell specified a descriptive prompt that appeared in the status bar when you selected the corresponding shortcut command.</span></span>
   
 

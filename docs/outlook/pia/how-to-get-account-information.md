@@ -7,24 +7,24 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: b80a6c47373842437b9944ea25c212810a9de107
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32320189"
 ---
-# <a name="get-account-information"></a><span data-ttu-id="41b4b-102">アカウント情報を取得する</span><span class="sxs-lookup"><span data-stu-id="41b4b-102">Get account information</span></span>
+# <a name="get-account-information"></a><span data-ttu-id="98a02-102">アカウント情報を取得する</span><span class="sxs-lookup"><span data-stu-id="98a02-102">Get account information</span></span>
 
-<span data-ttu-id="41b4b-103">このトピックでは、信頼される Outlook [Application](https://msdn.microsoft.com/library/bb646615\(v=office.15\)) オブジェクトを入力引数として受け取り、 **Account** オブジェクトを使用して、現在の Outlook プロファイル用に使用できる各アカウントの詳細を表示します。</span><span class="sxs-lookup"><span data-stu-id="41b4b-103">This topic takes as an input argument a trusted Outlook [Application](https://msdn.microsoft.com/library/bb646615\(v=office.15\)) object, and uses the **Account** object to display the details of each account that is available for the current Outlook profile.</span></span>
+<span data-ttu-id="98a02-103">このトピックでは、信頼される Outlook [Application](https://msdn.microsoft.com/library/bb646615\(v=office.15\)) オブジェクトを入力引数として受け取り、 **Account** オブジェクトを使用して、現在の Outlook プロファイル用に使用できる各アカウントの詳細を表示します。</span><span class="sxs-lookup"><span data-stu-id="98a02-103">This topic takes as an input argument a trusted Outlook [Application](https://msdn.microsoft.com/library/bb646615\(v=office.15\)) object, and uses the **Account** object to display the details of each account that is available for the current Outlook profile.</span></span>
 
-## <a name="example"></a><span data-ttu-id="41b4b-104">例</span><span class="sxs-lookup"><span data-stu-id="41b4b-104">Example</span></span>
+## <a name="example"></a><span data-ttu-id="98a02-104">例</span><span class="sxs-lookup"><span data-stu-id="98a02-104">Example</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="41b4b-105">次のコード例は、Helmut Obertanner 氏が提供したものです。</span><span class="sxs-lookup"><span data-stu-id="41b4b-105">Helmut Obertanner provided the following code examples.</span></span> <span data-ttu-id="41b4b-106">Helmut 氏の得意分野は、Office Developer Tools for Visual Studio と Outlook です。</span><span class="sxs-lookup"><span data-stu-id="41b4b-106">Helmut's expertise is in Office Developer Tools for Visual Studio and Outlook.</span></span> 
+> <span data-ttu-id="98a02-105">次のコード例は、Helmut Obertanner 氏が提供したものです。</span><span class="sxs-lookup"><span data-stu-id="98a02-105">Helmut Obertanner provided the following code examples.</span></span> <span data-ttu-id="98a02-106">Helmut 氏の得意分野は、Office Developer Tools for Visual Studio と Outlook です。</span><span class="sxs-lookup"><span data-stu-id="98a02-106">Helmut's expertise is in Office Developer Tools for Visual Studio and Outlook.</span></span> 
 
-<span data-ttu-id="41b4b-107">次のコード例には、Sample クラスの DisplayAccountInformation メソッドが含まれています。このメソッドは、Outlook アドイン プロジェクトの一部として実装されています。</span><span class="sxs-lookup"><span data-stu-id="41b4b-107">The following code examples contain the DisplayAccountInformation method of the Sample class, implemented as part of an Outlook add-in project.</span></span> <span data-ttu-id="41b4b-108">それぞれのプロジェクトでは、[Microsoft.Office.Interop.Outlook](https://msdn.microsoft.com/library/bb610835\(v=office.15\)) 名前空間に基づいた、Outlook プライマリ互換運用機能アセンブリへの参照を追加しています。</span><span class="sxs-lookup"><span data-stu-id="41b4b-108">Each project adds a reference to the Outlook Primary Interop Assembly, which is based on the [Microsoft.Office.Interop.Outlook](https://msdn.microsoft.com/library/bb610835\(v=office.15\)) namespace.</span></span>
+<span data-ttu-id="98a02-107">次のコード例には、Sample クラスの DisplayAccountInformation メソッドが含まれています。このメソッドは、Outlook アドイン プロジェクトの一部として実装されています。</span><span class="sxs-lookup"><span data-stu-id="98a02-107">The following code examples contain the DisplayAccountInformation method of the Sample class, implemented as part of an Outlook add-in project.</span></span> <span data-ttu-id="98a02-108">それぞれのプロジェクトでは、[Microsoft.Office.Interop.Outlook](https://msdn.microsoft.com/library/bb610835\(v=office.15\)) 名前空間に基づいた、Outlook プライマリ互換運用機能アセンブリへの参照を追加しています。</span><span class="sxs-lookup"><span data-stu-id="98a02-108">Each project adds a reference to the Outlook Primary Interop Assembly, which is based on the [Microsoft.Office.Interop.Outlook](https://msdn.microsoft.com/library/bb610835\(v=office.15\)) namespace.</span></span>
 
-<span data-ttu-id="41b4b-109">Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。</span><span class="sxs-lookup"><span data-stu-id="41b4b-109">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the Outlook variable when you import the **Microsoft.Office.Interop.Outlook** namespace.</span></span> <span data-ttu-id="41b4b-110">**Imports** または **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="41b4b-110">The **Imports** or **using** statement must not occur directly before the functions in the code example but must be added before the public Class declaration.</span></span> <span data-ttu-id="41b4b-111">次のコード行は、Visual Basic および C\# でインポートおよび割り当てを行う方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="41b4b-111">The following lines of code show how to do the import and assignment in Visual Basic and C\#.</span></span>
+<span data-ttu-id="98a02-109">Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。</span><span class="sxs-lookup"><span data-stu-id="98a02-109">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the Outlook variable when you import the **Microsoft.Office.Interop.Outlook** namespace.</span></span> <span data-ttu-id="98a02-110">**Imports** または **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="98a02-110">The **Imports** or **using** statement must not occur directly before the functions in the code example but must be added before the public Class declaration.</span></span> <span data-ttu-id="98a02-111">次のコード行は、Visual Basic および C\# でインポートおよび割り当てを行う方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="98a02-111">The following lines of code show how to do the import and assignment in Visual Basic and C\#.</span></span>
 
 
 ```vb
@@ -36,7 +36,7 @@ Imports Outlook = Microsoft.Office.Interop.Outlook
 using Outlook = Microsoft.Office.Interop.Outlook;
 ```
 
-<span data-ttu-id="41b4b-112">次に、Visual Basic のコード例を示します。その後に、C\# のコード例を示します。</span><span class="sxs-lookup"><span data-stu-id="41b4b-112">The following is the Visual Basic code example, followed by the C\# code example.</span></span>
+<span data-ttu-id="98a02-112">次に、Visual Basic のコード例を示します。その後に、C\# のコード例を示します。</span><span class="sxs-lookup"><span data-stu-id="98a02-112">The following is the Visual Basic code example, followed by the C\# code example.</span></span>
 
 
 ```vb
@@ -175,7 +175,7 @@ namespace OutlookAddIn1
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="41b4b-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="41b4b-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="98a02-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="98a02-113">See also</span></span>
 
-- [<span data-ttu-id="41b4b-114">アカウント</span><span class="sxs-lookup"><span data-stu-id="41b4b-114">Accounts</span></span>](accounts.md)
+- [<span data-ttu-id="98a02-114">アカウント</span><span class="sxs-lookup"><span data-stu-id="98a02-114">Accounts</span></span>](accounts.md)
 

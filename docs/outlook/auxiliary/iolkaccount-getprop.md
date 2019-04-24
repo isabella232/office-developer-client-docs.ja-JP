@@ -6,21 +6,21 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5725eb52-3a78-897d-f9e3-c5a494fb78c0
-description: 指定したアカウントのプロパティの値を取得します。
-ms.openlocfilehash: 2c0756f416a209d37eff2209a82c298837f85f3d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 指定されたアカウントのプロパティの値を取得します。
+ms.openlocfilehash: d24df8cfa9d54bee4614c1f31e12268748b8c986
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321236"
 ---
-# <a name="iolkaccountgetprop"></a><span data-ttu-id="e0621-103">IOlkAccount::GetProp</span><span class="sxs-lookup"><span data-stu-id="e0621-103">IOlkAccount::GetProp</span></span>
+# <a name="iolkaccountgetprop"></a><span data-ttu-id="2f728-103">IOlkAccount::GetProp</span><span class="sxs-lookup"><span data-stu-id="2f728-103">IOlkAccount::GetProp</span></span>
 
-<span data-ttu-id="e0621-104">指定したアカウントのプロパティの値を取得します。</span><span class="sxs-lookup"><span data-stu-id="e0621-104">Gets the value of the specified account property.</span></span>
+<span data-ttu-id="2f728-104">指定されたアカウントのプロパティの値を取得します。</span><span class="sxs-lookup"><span data-stu-id="2f728-104">Gets the value of the specified account property.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="e0621-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="e0621-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="2f728-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="2f728-105">Quick info</span></span>
 
-<span data-ttu-id="e0621-106">[IOlkAccount](iolkaccount.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e0621-106">See [IOlkAccount](iolkaccount.md).</span></span>
+<span data-ttu-id="2f728-106">[IOlkAccount](iolkaccount.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2f728-106">See [IOlkAccount](iolkaccount.md).</span></span>
   
 ```cpp
 HRESULT IOlkAccount::GetProp(  
@@ -29,31 +29,31 @@ ACCT_VARIANT *pVar
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="e0621-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="e0621-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="2f728-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="2f728-107">Parameters</span></span>
 
-<span data-ttu-id="e0621-108">_dwProp_</span><span class="sxs-lookup"><span data-stu-id="e0621-108">_dwProp_</span></span>
+<span data-ttu-id="2f728-108">_dwprop_</span><span class="sxs-lookup"><span data-stu-id="2f728-108">_dwProp_</span></span>
   
-> <span data-ttu-id="e0621-109">[in]取得するアカウントのプロパティのプロパティ タグです。</span><span class="sxs-lookup"><span data-stu-id="e0621-109">[in] The property tag of the account property to get.</span></span>
+> <span data-ttu-id="2f728-109">順番取得する account プロパティのプロパティタグ。</span><span class="sxs-lookup"><span data-stu-id="2f728-109">[in] The property tag of the account property to get.</span></span>
     
-<span data-ttu-id="e0621-110">_pVar_</span><span class="sxs-lookup"><span data-stu-id="e0621-110">_pVar_</span></span>
+<span data-ttu-id="2f728-110">_pvar_</span><span class="sxs-lookup"><span data-stu-id="2f728-110">_pVar_</span></span>
   
-> <span data-ttu-id="e0621-111">[out]指定したプロパティの値です。</span><span class="sxs-lookup"><span data-stu-id="e0621-111">[out] The value of the specified property.</span></span>
+> <span data-ttu-id="2f728-111">読み上げ指定したプロパティの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="2f728-111">[out] The value of the specified property.</span></span>
     
-## <a name="return-values"></a><span data-ttu-id="e0621-112">戻り値</span><span class="sxs-lookup"><span data-stu-id="e0621-112">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="2f728-112">戻り値</span><span class="sxs-lookup"><span data-stu-id="2f728-112">Return values</span></span>
 
-|<span data-ttu-id="e0621-113">**HRESULT 型**</span><span class="sxs-lookup"><span data-stu-id="e0621-113">**HRESULT**</span></span>|<span data-ttu-id="e0621-114">**Description**</span><span class="sxs-lookup"><span data-stu-id="e0621-114">**Description**</span></span>|
+|<span data-ttu-id="2f728-113">**HRESULT 型**</span><span class="sxs-lookup"><span data-stu-id="2f728-113">**HRESULT**</span></span>|<span data-ttu-id="2f728-114">**Description**</span><span class="sxs-lookup"><span data-stu-id="2f728-114">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="e0621-115">S_OK</span><span class="sxs-lookup"><span data-stu-id="e0621-115">S_OK</span></span>  <br/> |<span data-ttu-id="e0621-116">呼び出しが成功しました。</span><span class="sxs-lookup"><span data-stu-id="e0621-116">The call succeeded.</span></span>  <br/> |
-|<span data-ttu-id="e0621-117">E_ACCT_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="e0621-117">E_ACCT_NOT_FOUND</span></span>  <br/> |<span data-ttu-id="e0621-118">指定したアカウントのプロパティが見つかりませんでした。</span><span class="sxs-lookup"><span data-stu-id="e0621-118">The property is not found for the given account.</span></span>  <br/> |
-|<span data-ttu-id="e0621-119">E_INVALIDARG</span><span class="sxs-lookup"><span data-stu-id="e0621-119">E_INVALIDARG</span></span>  <br/> |<span data-ttu-id="e0621-120">プロパティの無効なタグが指定されています。</span><span class="sxs-lookup"><span data-stu-id="e0621-120">An invalid property tag has been specified.</span></span>  <br/> |
+|<span data-ttu-id="2f728-115">S_OK</span><span class="sxs-lookup"><span data-stu-id="2f728-115">S_OK</span></span>  <br/> |<span data-ttu-id="2f728-116">呼び出しが成功しました。</span><span class="sxs-lookup"><span data-stu-id="2f728-116">The call succeeded.</span></span>  <br/> |
+|<span data-ttu-id="2f728-117">E_ACCT_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="2f728-117">E_ACCT_NOT_FOUND</span></span>  <br/> |<span data-ttu-id="2f728-118">指定されたアカウントのプロパティが見つかりません。</span><span class="sxs-lookup"><span data-stu-id="2f728-118">The property is not found for the given account.</span></span>  <br/> |
+|<span data-ttu-id="2f728-119">E_INVALIDARG</span><span class="sxs-lookup"><span data-stu-id="2f728-119">E_INVALIDARG</span></span>  <br/> |<span data-ttu-id="2f728-120">無効なプロパティタグが指定されています。</span><span class="sxs-lookup"><span data-stu-id="2f728-120">An invalid property tag has been specified.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="e0621-121">注釈</span><span class="sxs-lookup"><span data-stu-id="e0621-121">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2f728-121">解説</span><span class="sxs-lookup"><span data-stu-id="2f728-121">Remarks</span></span>
 
-<span data-ttu-id="e0621-122">アカウントのプロパティの値がバイナリまたは文字列型の場合、このメソッドが返されると、 [IOlkAccount::FreeMemory](iolkaccount-freememory.md)を使用して、 *pVar*を解放する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e0621-122">After this method returns, if the value of the account property is a binary or string type, you must free  *pVar*  by using [IOlkAccount::FreeMemory](iolkaccount-freememory.md).</span></span>
+<span data-ttu-id="2f728-122">このメソッドが返された後、account プロパティの値がバイナリ型または文字列型の場合は、 [IOlkAccount:: FreeMemory](iolkaccount-freememory.md)を使用して*pvar*を解放する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2f728-122">After this method returns, if the value of the account property is a binary or string type, you must free  *pVar*  by using [IOlkAccount::FreeMemory](iolkaccount-freememory.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="e0621-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="e0621-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2f728-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="2f728-123">See also</span></span>
 
-- [<span data-ttu-id="e0621-124">定数 (アカウント管理 API)</span><span class="sxs-lookup"><span data-stu-id="e0621-124">Constants (Account management API)</span></span>](constants-account-management-api.md) 
-- [<span data-ttu-id="e0621-125">IOlkAccount::FreeMemory</span><span class="sxs-lookup"><span data-stu-id="e0621-125">IOlkAccount::FreeMemory</span></span>](iolkaccount-freememory.md)  
-- [<span data-ttu-id="e0621-126">IOlkAccount::SetProp</span><span class="sxs-lookup"><span data-stu-id="e0621-126">IOlkAccount::SetProp</span></span>](iolkaccount-setprop.md)
+- [<span data-ttu-id="2f728-124">定数 (アカウント管理 API)</span><span class="sxs-lookup"><span data-stu-id="2f728-124">Constants (Account management API)</span></span>](constants-account-management-api.md) 
+- [<span data-ttu-id="2f728-125">IOlkAccount::FreeMemory</span><span class="sxs-lookup"><span data-stu-id="2f728-125">IOlkAccount::FreeMemory</span></span>](iolkaccount-freememory.md)  
+- [<span data-ttu-id="2f728-126">IOlkAccount::SetProp</span><span class="sxs-lookup"><span data-stu-id="2f728-126">IOlkAccount::SetProp</span></span>](iolkaccount-setprop.md)
 

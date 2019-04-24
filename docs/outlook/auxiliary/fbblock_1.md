@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: da67171d-d25f-3424-1409-33189ac63a12
-description: 空き時間情報データ ブロックを定義します。 これは、予定または会議出席依頼で表される、予定表のアイテムです。
-ms.openlocfilehash: 93418e3777e9d9f0a016822ea5897b8fccc37ac3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: データの空き時間情報のブロックを定義します。 これは、予定または会議出席依頼で表される予定表のアイテムです。
+ms.openlocfilehash: 60d2ff50081a8950a397df6f2f6bbfd37d3bdb61
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317669"
 ---
-# <a name="fbblock1"></a><span data-ttu-id="5647b-104">FBBlock_1</span><span class="sxs-lookup"><span data-stu-id="5647b-104">FBBlock_1</span></span>
+# <a name="fbblock1"></a><span data-ttu-id="3558d-104">FBBlock_1</span><span class="sxs-lookup"><span data-stu-id="3558d-104">FBBlock_1</span></span>
 
-<span data-ttu-id="5647b-105">空き時間情報データ ブロックを定義します。</span><span class="sxs-lookup"><span data-stu-id="5647b-105">Defines a free/busy block of data.</span></span> <span data-ttu-id="5647b-106">これは、予定または会議出席依頼で表される、予定表のアイテムです。</span><span class="sxs-lookup"><span data-stu-id="5647b-106">This is an item on a calendar represented by an appointment or meeting request.</span></span>
+<span data-ttu-id="3558d-105">データの空き時間情報のブロックを定義します。</span><span class="sxs-lookup"><span data-stu-id="3558d-105">Defines a free/busy block of data.</span></span> <span data-ttu-id="3558d-106">これは、予定または会議出席依頼で表される予定表のアイテムです。</span><span class="sxs-lookup"><span data-stu-id="3558d-106">This is an item on a calendar represented by an appointment or meeting request.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="5647b-107">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="5647b-107">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="3558d-107">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="3558d-107">Quick info</span></span>
 
 ```cpp
 typedef struct  tagFBBlock_1 
@@ -30,23 +30,23 @@ typedef struct  tagFBBlock_1
 
 ```
 
-## <a name="members"></a><span data-ttu-id="5647b-108">Members</span><span class="sxs-lookup"><span data-stu-id="5647b-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="3558d-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="3558d-108">Members</span></span>
 
-<span data-ttu-id="5647b-109">_m_tmStart_</span><span class="sxs-lookup"><span data-stu-id="5647b-109">_m_tmStart_</span></span>
+<span data-ttu-id="3558d-109">_m_tmStart_</span><span class="sxs-lookup"><span data-stu-id="3558d-109">_m_tmStart_</span></span>
   
-> <span data-ttu-id="5647b-110">ブロックの開始時刻は、相対時間で表されます。</span><span class="sxs-lookup"><span data-stu-id="5647b-110">The start time for the block, expressed in relative time.</span></span> <span data-ttu-id="5647b-111">詳細については、[空き時間情報データにアクセスするのには相対的な時間の使用](how-to-use-relative-time-to-access-free-busy-data.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5647b-111">For more information, see [Use relative time to access free/busy data](how-to-use-relative-time-to-access-free-busy-data.md).</span></span>
+> <span data-ttu-id="3558d-110">相対時間で表された、ブロックの開始時刻。</span><span class="sxs-lookup"><span data-stu-id="3558d-110">The start time for the block, expressed in relative time.</span></span> <span data-ttu-id="3558d-111">詳細については、「[相対時間を使用して空き時間情報データにアクセスする](how-to-use-relative-time-to-access-free-busy-data.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3558d-111">For more information, see [Use relative time to access free/busy data](how-to-use-relative-time-to-access-free-busy-data.md).</span></span>
     
-<span data-ttu-id="5647b-112">_m_tmEnd_</span><span class="sxs-lookup"><span data-stu-id="5647b-112">_m_tmEnd_</span></span>
+<span data-ttu-id="3558d-112">_m_tmEnd_</span><span class="sxs-lookup"><span data-stu-id="3558d-112">_m_tmEnd_</span></span>
   
-> <span data-ttu-id="5647b-113">相対時間で表現される、ブロックの終了時間です。</span><span class="sxs-lookup"><span data-stu-id="5647b-113">The end time for the block, expressed in relative time.</span></span>
+> <span data-ttu-id="3558d-113">相対時間で表された、ブロックの終了時刻。</span><span class="sxs-lookup"><span data-stu-id="3558d-113">The end time for the block, expressed in relative time.</span></span>
     
-<span data-ttu-id="5647b-114">_m_fbStatus_</span><span class="sxs-lookup"><span data-stu-id="5647b-114">_m_fbStatus_</span></span>
+<span data-ttu-id="3558d-114">_m_fbStatus_</span><span class="sxs-lookup"><span data-stu-id="3558d-114">_m_fbStatus_</span></span>
   
-> <span data-ttu-id="5647b-115">ユーザーを示すかどうか、不在時の使用中、仮承諾、または無料で_m_tmStart_と_m_tmEnd_の間の期間中に、このブロックの空き/予約済みの状態です。</span><span class="sxs-lookup"><span data-stu-id="5647b-115">The free/busy status for this block, indicating whether the user is out-of-office, busy, tentative, or free, during the time period between  _m_tmStart_ and  _m_tmEnd_.</span></span>
+> <span data-ttu-id="3558d-115">_m_tmStart_と_m_tmEnd_の間の期間中に、ユーザーが不在、取り込み中、仮承諾、または無料のいずれであるかを示す、このブロックの空き時間状態。</span><span class="sxs-lookup"><span data-stu-id="3558d-115">The free/busy status for this block, indicating whether the user is out-of-office, busy, tentative, or free, during the time period between  _m_tmStart_ and  _m_tmEnd_.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="5647b-116">関連項目</span><span class="sxs-lookup"><span data-stu-id="5647b-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3558d-116">関連項目</span><span class="sxs-lookup"><span data-stu-id="3558d-116">See also</span></span>
 
-- [<span data-ttu-id="5647b-117">FBStatus</span><span class="sxs-lookup"><span data-stu-id="5647b-117">FBStatus</span></span>](fbstatus.md)
-- [<span data-ttu-id="5647b-118">IEnumFBBlock::Next</span><span class="sxs-lookup"><span data-stu-id="5647b-118">IEnumFBBlock::Next</span></span>](ienumfbblock-next.md)
-- [<span data-ttu-id="5647b-119">空き時間情報データにアクセスするのに相対時間を使用する</span><span class="sxs-lookup"><span data-stu-id="5647b-119">Use relative time to access free/busy data</span></span>](how-to-use-relative-time-to-access-free-busy-data.md)
+- [<span data-ttu-id="3558d-117">FBStatus</span><span class="sxs-lookup"><span data-stu-id="3558d-117">FBStatus</span></span>](fbstatus.md)
+- [<span data-ttu-id="3558d-118">IEnumFBBlock::Next</span><span class="sxs-lookup"><span data-stu-id="3558d-118">IEnumFBBlock::Next</span></span>](ienumfbblock-next.md)
+- [<span data-ttu-id="3558d-119">空き時間情報データにアクセスするのに相対時間を使用する</span><span class="sxs-lookup"><span data-stu-id="3558d-119">Use relative time to access free/busy data</span></span>](how-to-use-relative-time-to-access-free-busy-data.md)
 

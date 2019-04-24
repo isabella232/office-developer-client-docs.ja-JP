@@ -13,66 +13,66 @@ api_type:
 ms.assetid: a21906f9-5408-41ba-a89b-273ab60eeef3
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: 26a9d432d98c546aefa8f511ba2c4c9bb26cfd80
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25400335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32320427"
 ---
-# <a name="pidtagurlcomponentname-canonical-property"></a><span data-ttu-id="be47f-103">PidTagUrlComponentName 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="be47f-103">PidTagUrlComponentName Canonical Property</span></span>
+# <a name="pidtagurlcomponentname-canonical-property"></a><span data-ttu-id="c29d4-103">PidTagUrlComponentName 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="c29d4-103">PidTagUrlComponentName Canonical Property</span></span>
 
   
   
-<span data-ttu-id="be47f-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="be47f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="c29d4-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="c29d4-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="be47f-105">メッセージの URL コンポーネントの名前です。</span><span class="sxs-lookup"><span data-stu-id="be47f-105">The URL component name for a message.</span></span> 
+<span data-ttu-id="c29d4-105">メッセージの URL コンポーネント名。</span><span class="sxs-lookup"><span data-stu-id="c29d4-105">The URL component name for a message.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="be47f-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="be47f-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="be47f-107">PR_URL_COMP_NAME、PR_URL_COMP_NAME_A、PR_URL_COMP_NAME_W</span><span class="sxs-lookup"><span data-stu-id="be47f-107">PR_URL_COMP_NAME, PR_URL_COMP_NAME_A, PR_URL_COMP_NAME_W</span></span>  <br/> |
-|<span data-ttu-id="be47f-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="be47f-108">Identifier:</span></span>  <br/> |<span data-ttu-id="be47f-109">0x10F3</span><span class="sxs-lookup"><span data-stu-id="be47f-109">0x10F3</span></span>  <br/> |
-|<span data-ttu-id="be47f-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="be47f-110">Data type:</span></span>  <br/> |<span data-ttu-id="be47f-111">PT_STRING8、PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="be47f-111">PT_STRING8, PT_UNICODE</span></span>  <br/> |
-|<span data-ttu-id="be47f-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="be47f-112">Area:</span></span>  <br/> |<span data-ttu-id="be47f-113">メッセージ全般</span><span class="sxs-lookup"><span data-stu-id="be47f-113">General messaging</span></span>  <br/> |
+|<span data-ttu-id="c29d4-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="c29d4-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="c29d4-107">PR_URL_COMP_NAME、PR_URL_COMP_NAME_A、PR_URL_COMP_NAME_W</span><span class="sxs-lookup"><span data-stu-id="c29d4-107">PR_URL_COMP_NAME, PR_URL_COMP_NAME_A, PR_URL_COMP_NAME_W</span></span>  <br/> |
+|<span data-ttu-id="c29d4-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="c29d4-108">Identifier:</span></span>  <br/> |<span data-ttu-id="c29d4-109">0x10F3</span><span class="sxs-lookup"><span data-stu-id="c29d4-109">0x10F3</span></span>  <br/> |
+|<span data-ttu-id="c29d4-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="c29d4-110">Data type:</span></span>  <br/> |<span data-ttu-id="c29d4-111">PT_STRING8、PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="c29d4-111">PT_STRING8, PT_UNICODE</span></span>  <br/> |
+|<span data-ttu-id="c29d4-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="c29d4-112">Area:</span></span>  <br/> |<span data-ttu-id="c29d4-113">一般的なメッセージング</span><span class="sxs-lookup"><span data-stu-id="c29d4-113">General messaging</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="be47f-114">備考</span><span class="sxs-lookup"><span data-stu-id="be47f-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c29d4-114">解説</span><span class="sxs-lookup"><span data-stu-id="c29d4-114">Remarks</span></span>
 
-<span data-ttu-id="be47f-115">これらのプロパティは、フォルダー内で一意でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="be47f-115">These properties should be unique within a folder.</span></span> <span data-ttu-id="be47f-116">表示しない場合は、一連のメッセージが作成されると、メッセージ ・ ストアはメッセージ クラスによって、メッセージのさまざまなプロパティに基づいて、これらのプロパティを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="be47f-116">If not set when the message is created, the message store should set these properties based on various message properties, depending on the message class.</span></span> <span data-ttu-id="be47f-117">たとえば、IPM の**です。注**と**IPM。予定**メッセージにこのプロパティの設定が**あるの PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) のプロパティは、**の IPM に基づく必要があります。連絡先**メッセージは、このプロパティを**dispidFileUnder** ([PidLidFileUnder](pidlidfileunder-canonical-property.md)) のプロパティに基づいて設定を持つ必要があります。</span><span class="sxs-lookup"><span data-stu-id="be47f-117">For example, the **IPM.Note** and **IPM.Appointment** messages should have this property set based on the **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) property and the **IPM.Contact** messages should have this property set based on the **dispidFileUnder** ([PidLidFileUnder](pidlidfileunder-canonical-property.md)) property.</span></span> <span data-ttu-id="be47f-118">他のほとんどのメッセージ クラスでは、このプロパティに基づいて必要がある**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) のプロパティです。</span><span class="sxs-lookup"><span data-stu-id="be47f-118">For most other message classes, this property should be based on the **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) property.</span></span>
+<span data-ttu-id="c29d4-115">これらのプロパティは、フォルダー内で一意にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="c29d4-115">These properties should be unique within a folder.</span></span> <span data-ttu-id="c29d4-116">メッセージが作成されたときに設定されていない場合、メッセージストアは、メッセージクラスに応じて、さまざまなメッセージプロパティに基づいてこれらのプロパティを設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c29d4-116">If not set when the message is created, the message store should set these properties based on various message properties, depending on the message class.</span></span> <span data-ttu-id="c29d4-117">たとえば、 **IPM.注**と**IPM.予定**メッセージでは、 **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) プロパティと IPM に基づいて、このプロパティを設定する必要があり**ます。連絡先**メッセージのこのプロパティは、([PidLidFileUnder](pidlidfileunder-canonical-property.md)) プロパティの**dispidfileunder**基づいて設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c29d4-117">For example, the **IPM.Note** and **IPM.Appointment** messages should have this property set based on the **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) property and the **IPM.Contact** messages should have this property set based on the **dispidFileUnder** ([PidLidFileUnder](pidlidfileunder-canonical-property.md)) property.</span></span> <span data-ttu-id="c29d4-118">その他のほとんどのメッセージクラスでは、このプロパティは**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) プロパティに基づいている必要があります。</span><span class="sxs-lookup"><span data-stu-id="c29d4-118">For most other message classes, this property should be based on the **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) property.</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="be47f-119">関連リソース</span><span class="sxs-lookup"><span data-stu-id="be47f-119">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="c29d4-119">関連リソース</span><span class="sxs-lookup"><span data-stu-id="c29d4-119">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="be47f-120">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="be47f-120">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="c29d4-120">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="c29d4-120">Protocol specifications</span></span>
 
-<span data-ttu-id="be47f-121">[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="be47f-121">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="c29d4-121">[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="c29d4-121">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="be47f-122">関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="be47f-122">Provides references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="c29d4-122">関連する Exchange Server プロトコル仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="c29d4-122">Provides references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="be47f-123">[[MS OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="be47f-123">[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="c29d4-123">[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="c29d4-123">[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="be47f-124">メッセージと添付ファイルのオブジェクトを処理します。</span><span class="sxs-lookup"><span data-stu-id="be47f-124">Handles message and attachment objects.</span></span>
+> <span data-ttu-id="c29d4-124">メッセージと添付ファイルオブジェクトを処理します。</span><span class="sxs-lookup"><span data-stu-id="c29d4-124">Handles message and attachment objects.</span></span>
     
-<span data-ttu-id="be47f-125">[[MS OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="be47f-125">[[MS-OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="c29d4-125">[[OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="c29d4-125">[[MS-OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="be47f-126">エンコードし、メッセージと添付ファイルのオブジェクトを効率的なストリーム形式をデコードします。</span><span class="sxs-lookup"><span data-stu-id="be47f-126">Encodes and decodes message and attachment objects to an efficient stream representation.</span></span>
+> <span data-ttu-id="c29d4-126">メッセージと添付ファイルオブジェクトをエンコードし、効率的なストリーム表現にデコードします。</span><span class="sxs-lookup"><span data-stu-id="c29d4-126">Encodes and decodes message and attachment objects to an efficient stream representation.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="be47f-127">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="be47f-127">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="c29d4-127">ヘッダーファイル</span><span class="sxs-lookup"><span data-stu-id="c29d4-127">Header files</span></span>
 
-<span data-ttu-id="be47f-128">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="be47f-128">Mapidefs.h</span></span>
+<span data-ttu-id="c29d4-128">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="c29d4-128">Mapidefs.h</span></span>
   
-> <span data-ttu-id="be47f-129">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="be47f-129">Provides data type definitions.</span></span>
+> <span data-ttu-id="c29d4-129">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="c29d4-129">Provides data type definitions.</span></span>
     
-<span data-ttu-id="be47f-130">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="be47f-130">Mapitags.h</span></span>
+<span data-ttu-id="c29d4-130">Mapitags</span><span class="sxs-lookup"><span data-stu-id="c29d4-130">Mapitags.h</span></span>
   
-> <span data-ttu-id="be47f-131">代替名として記載されているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="be47f-131">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="c29d4-131">代替名としてリストされているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="c29d4-131">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="be47f-132">関連項目</span><span class="sxs-lookup"><span data-stu-id="be47f-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c29d4-132">関連項目</span><span class="sxs-lookup"><span data-stu-id="c29d4-132">See also</span></span>
 
 
 
-[<span data-ttu-id="be47f-133">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="be47f-133">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="c29d4-133">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="c29d4-133">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="be47f-134">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="be47f-134">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="c29d4-134">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="c29d4-134">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="be47f-135">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="be47f-135">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="c29d4-135">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="c29d4-135">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="be47f-136">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="be47f-136">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="c29d4-136">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="c29d4-136">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

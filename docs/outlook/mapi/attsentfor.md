@@ -7,30 +7,30 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: aa8c8d64-d2a0-4cdf-a8aa-21c8d0a0a3fc
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: b292e65ddabcbe052832687a3dcf01658de5e379
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: f961348e7be474202273aa97a2922566ef40c3a5
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32318117"
 ---
-# <a name="attsentfor"></a><span data-ttu-id="e9cd7-103">attSentFor</span><span class="sxs-lookup"><span data-stu-id="e9cd7-103">attSentFor</span></span>
+# <a name="attsentfor"></a><span data-ttu-id="d3524-103">attSentFor</span><span class="sxs-lookup"><span data-stu-id="d3524-103">attSentFor</span></span>
 
   
   
-<span data-ttu-id="e9cd7-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="e9cd7-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="d3524-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="d3524-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="e9cd7-105">**AttSentFor**属性は、文字列の配置のエンド ・ ツー ・ エンドのようにエンコードされます。</span><span class="sxs-lookup"><span data-stu-id="e9cd7-105">The **attSentFor** attribute is encoded as counted strings laid end-to-end.</span></span> <span data-ttu-id="e9cd7-106">**AttSentFor**の形式は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="e9cd7-106">The format for **attSentFor** is as follows:</span></span> 
+<span data-ttu-id="d3524-105">属性**の添付文**は、エンドツーエンドで配置された文字列のカウントとしてエンコードされます。</span><span class="sxs-lookup"><span data-stu-id="d3524-105">The **attSentFor** attribute is encoded as counted strings laid end-to-end.</span></span> <span data-ttu-id="d3524-106">**添付**ファイルの形式は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="d3524-106">The format for **attSentFor** is as follows:</span></span> 
   
- <span data-ttu-id="e9cd7-107">**attSentFor**。</span><span class="sxs-lookup"><span data-stu-id="e9cd7-107">**attSentFor**:</span></span> 
+ <span data-ttu-id="d3524-107">**添付の対象**:</span><span class="sxs-lookup"><span data-stu-id="d3524-107">**attSentFor**:</span></span> 
   
-> <span data-ttu-id="e9cd7-108">_電子メール アドレス_の表示名のアドレスと長さの表示名の長さ</span><span class="sxs-lookup"><span data-stu-id="e9cd7-108">display-name-length display-name address-length  _email-address_</span></span>
+> <span data-ttu-id="d3524-108">表示名-長さの表示-名前アドレスの長さの_電子メールアドレス_</span><span class="sxs-lookup"><span data-stu-id="d3524-108">display-name-length display-name address-length  _email-address_</span></span>
     
- <span data-ttu-id="e9cd7-109">_電子メール アドレス_</span><span class="sxs-lookup"><span data-stu-id="e9cd7-109">_email-address_</span></span>
+ <span data-ttu-id="d3524-109">_電子メールアドレス_</span><span class="sxs-lookup"><span data-stu-id="d3524-109">_email-address_</span></span>
   
-> <span data-ttu-id="e9cd7-110">**::** の種類のアドレス</span><span class="sxs-lookup"><span data-stu-id="e9cd7-110">type **:** address</span></span> 
+> <span data-ttu-id="d3524-110">型 **:** address</span><span class="sxs-lookup"><span data-stu-id="d3524-110">type **:** address</span></span> 
     
-<span data-ttu-id="e9cd7-111">その他の長さとは異なり値、表示名の長さ、およびアドレスの長さは、符号なし長整数ではなく符号なしの 16 ビット値です。</span><span class="sxs-lookup"><span data-stu-id="e9cd7-111">Unlike other length values, the display-name-length and address-length are unsigned 16-bit values instead of unsigned long integers.</span></span> <span data-ttu-id="e9cd7-112">ただし終端の null 文字の場合は、それらも含まれます。</span><span class="sxs-lookup"><span data-stu-id="e9cd7-112">They still include terminating null characters, however.</span></span> <span data-ttu-id="e9cd7-113">_電子メール アドレス_のエントリの種類とアドレスの文字列は、"smtp:joe@nowhere.com"などのリテラル コロン (:) 文字で区切られます。</span><span class="sxs-lookup"><span data-stu-id="e9cd7-113">The type and address strings in the  _email-address_ entry are separated by a literal colon (:) character, such as "smtp:joe@nowhere.com".</span></span> <span data-ttu-id="e9cd7-114">のみ、組み合わされた型 **::** アドレス文字列には null で終わるです。</span><span class="sxs-lookup"><span data-stu-id="e9cd7-114">Only the combined type **:** address string is null-terminated.</span></span>
+<span data-ttu-id="d3524-111">他の長さの値とは異なり、表示名の長さとアドレスの長さは、符号なしの長い整数ではなく、符号なしの16ビットの値になります。</span><span class="sxs-lookup"><span data-stu-id="d3524-111">Unlike other length values, the display-name-length and address-length are unsigned 16-bit values instead of unsigned long integers.</span></span> <span data-ttu-id="d3524-112">ただし、終端の null 文字はそのまま残ります。</span><span class="sxs-lookup"><span data-stu-id="d3524-112">They still include terminating null characters, however.</span></span> <span data-ttu-id="d3524-113">_電子メールアドレス_エントリの type および address 文字列は、リテラルのコロン (:) で区切られています。文字 ("smtp:joe@nowhere.com" など)。</span><span class="sxs-lookup"><span data-stu-id="d3524-113">The type and address strings in the  _email-address_ entry are separated by a literal colon (:) character, such as "smtp:joe@nowhere.com".</span></span> <span data-ttu-id="d3524-114">結合された型 **:** address 文字列は null で終了します。</span><span class="sxs-lookup"><span data-stu-id="d3524-114">Only the combined type **:** address string is null-terminated.</span></span>
   
 

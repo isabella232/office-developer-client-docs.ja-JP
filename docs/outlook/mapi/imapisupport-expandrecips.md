@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 78edd549-d557-489a-85f5-adfb5c44a7d4
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 379fdc47f35fb183dd0bf551e421422abb106c0e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 105219fe430cd8746c3aa6cf5cd90629d5f72080
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316528"
 ---
-# <a name="imapisupportexpandrecips"></a><span data-ttu-id="19c01-103">IMAPISupport::ExpandRecips</span><span class="sxs-lookup"><span data-stu-id="19c01-103">IMAPISupport::ExpandRecips</span></span>
+# <a name="imapisupportexpandrecips"></a><span data-ttu-id="59d38-103">IMAPISupport::ExpandRecips</span><span class="sxs-lookup"><span data-stu-id="59d38-103">IMAPISupport::ExpandRecips</span></span>
 
   
   
-<span data-ttu-id="19c01-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="19c01-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="59d38-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="59d38-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="19c01-105">メッセージの受信者リスト、特定の配布リストの展開を完了します。</span><span class="sxs-lookup"><span data-stu-id="19c01-105">Completes a message's recipient list, expanding particular distribution lists.</span></span>
+<span data-ttu-id="59d38-105">特定の配布リストを展開し、メッセージの受信者の一覧を完成させる。</span><span class="sxs-lookup"><span data-stu-id="59d38-105">Completes a message's recipient list, expanding particular distribution lists.</span></span>
   
 ```cpp
 HRESULT ExpandRecips(
@@ -34,55 +34,55 @@ HRESULT ExpandRecips(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="19c01-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="19c01-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="59d38-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="59d38-106">Parameters</span></span>
 
- <span data-ttu-id="19c01-107">_lpMessage_</span><span class="sxs-lookup"><span data-stu-id="19c01-107">_lpMessage_</span></span>
+ <span data-ttu-id="59d38-107">_lpmessage_</span><span class="sxs-lookup"><span data-stu-id="59d38-107">_lpMessage_</span></span>
   
-> <span data-ttu-id="19c01-108">[in]処理する受信者のリストがあるメッセージへのポインター。</span><span class="sxs-lookup"><span data-stu-id="19c01-108">[in] A pointer to the message that has the recipient list to be processed.</span></span>
+> <span data-ttu-id="59d38-108">順番処理する受信者リストがあるメッセージへのポインター。</span><span class="sxs-lookup"><span data-stu-id="59d38-108">[in] A pointer to the message that has the recipient list to be processed.</span></span>
     
- <span data-ttu-id="19c01-109">_lpulFlags_</span><span class="sxs-lookup"><span data-stu-id="19c01-109">_lpulFlags_</span></span>
+ <span data-ttu-id="59d38-109">_lアウトフラグ_</span><span class="sxs-lookup"><span data-stu-id="59d38-109">_lpulFlags_</span></span>
   
-> <span data-ttu-id="19c01-110">[out]発生する処理の種類を制御するフラグのビットマスクへのポインター。</span><span class="sxs-lookup"><span data-stu-id="19c01-110">[out] A pointer to a bitmask of flags that controls the type of processing that occurs.</span></span> <span data-ttu-id="19c01-111">次のフラグを設定することができます。</span><span class="sxs-lookup"><span data-stu-id="19c01-111">The following flags can be set:</span></span>
+> <span data-ttu-id="59d38-110">読み上げ発生する処理の種類を制御するフラグのビットマスクへのポインター。</span><span class="sxs-lookup"><span data-stu-id="59d38-110">[out] A pointer to a bitmask of flags that controls the type of processing that occurs.</span></span> <span data-ttu-id="59d38-111">次のフラグを設定できます。</span><span class="sxs-lookup"><span data-stu-id="59d38-111">The following flags can be set:</span></span>
     
-<span data-ttu-id="19c01-112">NEEDS_PREPROCESSING</span><span class="sxs-lookup"><span data-stu-id="19c01-112">NEEDS_PREPROCESSING</span></span> 
+<span data-ttu-id="59d38-112">NEEDS_PREPROCESSING</span><span class="sxs-lookup"><span data-stu-id="59d38-112">NEEDS_PREPROCESSING</span></span> 
   
-> <span data-ttu-id="19c01-113">メッセージが送信される前に前処理が必要に必要です。</span><span class="sxs-lookup"><span data-stu-id="19c01-113">The message needs to be preprocessed before it is sent.</span></span>
+> <span data-ttu-id="59d38-113">メッセージを送信する前に前処理する必要があります。</span><span class="sxs-lookup"><span data-stu-id="59d38-113">The message needs to be preprocessed before it is sent.</span></span>
     
-<span data-ttu-id="19c01-114">NEEDS_SPOOLER</span><span class="sxs-lookup"><span data-stu-id="19c01-114">NEEDS_SPOOLER</span></span> 
+<span data-ttu-id="59d38-114">NEEDS_SPOOLER</span><span class="sxs-lookup"><span data-stu-id="59d38-114">NEEDS_SPOOLER</span></span> 
   
-> <span data-ttu-id="19c01-115">MAPI スプーラーではなく、トランスポート プロバイダーは、呼び出し元が密に結合されている) は、メッセージを送信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="19c01-115">The MAPI spooler (rather than the transport provider to which the caller is tightly coupled) must send the message.</span></span>
+> <span data-ttu-id="59d38-115">MAPI スプーラー (発信者が密接に結合されているトランスポートプロバイダーではない) は、メッセージを送信する必要があります。</span><span class="sxs-lookup"><span data-stu-id="59d38-115">The MAPI spooler (rather than the transport provider to which the caller is tightly coupled) must send the message.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="19c01-116">�߂�l</span><span class="sxs-lookup"><span data-stu-id="19c01-116">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="59d38-116">戻り値</span><span class="sxs-lookup"><span data-stu-id="59d38-116">Return value</span></span>
 
-<span data-ttu-id="19c01-117">S_OK</span><span class="sxs-lookup"><span data-stu-id="19c01-117">S_OK</span></span> 
+<span data-ttu-id="59d38-117">S_OK</span><span class="sxs-lookup"><span data-stu-id="59d38-117">S_OK</span></span> 
   
-> <span data-ttu-id="19c01-118">メッセージの受信者の一覧が正常に処理されました。</span><span class="sxs-lookup"><span data-stu-id="19c01-118">The message's recipient list was successfully processed.</span></span>
+> <span data-ttu-id="59d38-118">メッセージの宛先リストが正常に処理されました。</span><span class="sxs-lookup"><span data-stu-id="59d38-118">The message's recipient list was successfully processed.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="19c01-119">注釈</span><span class="sxs-lookup"><span data-stu-id="19c01-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="59d38-119">解説</span><span class="sxs-lookup"><span data-stu-id="59d38-119">Remarks</span></span>
 
-<span data-ttu-id="19c01-120">メッセージ ストア プロバイダーのサポート オブジェクトの**IMAPISupport::ExpandRecips**メソッドを実装します。</span><span class="sxs-lookup"><span data-stu-id="19c01-120">The **IMAPISupport::ExpandRecips** method is implemented for message store provider support objects.</span></span> <span data-ttu-id="19c01-121">メッセージ ストア プロバイダーは、次のタスクを実行するための MAPI メッセージを表示するのには**ExpandRecips**を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="19c01-121">Message store providers call **ExpandRecips** to prompt MAPI to perform the following tasks:</span></span> 
+<span data-ttu-id="59d38-120">**imapisupport:: ExpandRecips**メソッドは、メッセージストアプロバイダーサポートオブジェクトに実装されています。</span><span class="sxs-lookup"><span data-stu-id="59d38-120">The **IMAPISupport::ExpandRecips** method is implemented for message store provider support objects.</span></span> <span data-ttu-id="59d38-121">メッセージストアプロバイダーは**ExpandRecips**を呼び出して、次のタスクを実行するように MAPI に通知します。</span><span class="sxs-lookup"><span data-stu-id="59d38-121">Message store providers call **ExpandRecips** to prompt MAPI to perform the following tasks:</span></span> 
   
-- <span data-ttu-id="19c01-122">そのコンポーネントの受信者に、特定の個人用配布リストを展開します。</span><span class="sxs-lookup"><span data-stu-id="19c01-122">Expand certain personal distribution lists to their component recipients.</span></span>
+- <span data-ttu-id="59d38-122">特定の個人用配布リストをコンポーネントの受信者に展開します。</span><span class="sxs-lookup"><span data-stu-id="59d38-122">Expand certain personal distribution lists to their component recipients.</span></span>
     
-- <span data-ttu-id="19c01-123">変更されたすべての表示名を元の名前に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="19c01-123">Replace all display names that have been changed with the original names.</span></span>
+- <span data-ttu-id="59d38-123">変更されたすべての表示名を元の名前に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="59d38-123">Replace all display names that have been changed with the original names.</span></span>
     
-- <span data-ttu-id="19c01-124">重複するエントリをマークします。</span><span class="sxs-lookup"><span data-stu-id="19c01-124">Mark any duplicate entries.</span></span>
+- <span data-ttu-id="59d38-124">重複しているエントリをマークします。</span><span class="sxs-lookup"><span data-stu-id="59d38-124">Mark any duplicate entries.</span></span>
     
-- <span data-ttu-id="19c01-125">1 回限りのすべてのアドレスを解決します。</span><span class="sxs-lookup"><span data-stu-id="19c01-125">Resolve all one-off addresses.</span></span> 
+- <span data-ttu-id="59d38-125">1回限りのすべての住所を解決します。</span><span class="sxs-lookup"><span data-stu-id="59d38-125">Resolve all one-off addresses.</span></span> 
     
-- <span data-ttu-id="19c01-126">かどうか、メッセージの前処理を必要し場合は、NEEDS_PREPROCESSING に_lpulFlags_で指定されたフラグを設定を確認してください。</span><span class="sxs-lookup"><span data-stu-id="19c01-126">Check whether the message needs preprocessing and, if it does, set the flag pointed to by  _lpulFlags_ to NEEDS_PREPROCESSING.</span></span> 
+- <span data-ttu-id="59d38-126">メッセージにプリプロセスが必要かどうかを確認し、実行されている場合は、 _lNEEDS_PREPROCESSING フラグ_が指すフラグをに設定します。</span><span class="sxs-lookup"><span data-stu-id="59d38-126">Check whether the message needs preprocessing and, if it does, set the flag pointed to by  _lpulFlags_ to NEEDS_PREPROCESSING.</span></span> 
     
- <span data-ttu-id="19c01-127">**ExpandRecips**は、MAPIPDL のメッセージのアドレスの種類を持つすべての配布リストを展開します。</span><span class="sxs-lookup"><span data-stu-id="19c01-127">**ExpandRecips** expands any distribution lists that have the messaging address type of MAPIPDL.</span></span> 
+ <span data-ttu-id="59d38-127">**ExpandRecips**は、メッセージアドレスの種類が mapipdl であるすべての配布リストを展開します。</span><span class="sxs-lookup"><span data-stu-id="59d38-127">**ExpandRecips** expands any distribution lists that have the messaging address type of MAPIPDL.</span></span> 
   
-## <a name="notes-to-callers"></a><span data-ttu-id="19c01-128">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="19c01-128">Notes to callers</span></span>
+## <a name="notes-to-callers"></a><span data-ttu-id="59d38-128">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="59d38-128">Notes to callers</span></span>
 
-<span data-ttu-id="19c01-129">常に、メッセージの処理の一部として**ExpandRecips**を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="19c01-129">Always call **ExpandRecips** as part of your message processing.</span></span> <span data-ttu-id="19c01-130">[IMessage::SubmitMessage](imessage-submitmessage.md)メソッドの実装では、 **ExpandRecips** 1 つの最初の呼び出しへの呼び出しを確認します。</span><span class="sxs-lookup"><span data-stu-id="19c01-130">Make a call to **ExpandRecips** one of the first calls in your [IMessage::SubmitMessage](imessage-submitmessage.md) method implementation.</span></span> 
+<span data-ttu-id="59d38-129">メッセージ処理の一部として**ExpandRecips**を常に呼び出します。</span><span class="sxs-lookup"><span data-stu-id="59d38-129">Always call **ExpandRecips** as part of your message processing.</span></span> <span data-ttu-id="59d38-130">[IMessage:: submitmessage](imessage-submitmessage.md)メソッド実装の最初の呼び出しの1つを**ExpandRecips**に呼び出します。</span><span class="sxs-lookup"><span data-stu-id="59d38-130">Make a call to **ExpandRecips** one of the first calls in your [IMessage::SubmitMessage](imessage-submitmessage.md) method implementation.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="19c01-131">関連項目</span><span class="sxs-lookup"><span data-stu-id="19c01-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="59d38-131">関連項目</span><span class="sxs-lookup"><span data-stu-id="59d38-131">See also</span></span>
 
 
 
-[<span data-ttu-id="19c01-132">IMessage::SubmitMessage</span><span class="sxs-lookup"><span data-stu-id="19c01-132">IMessage::SubmitMessage</span></span>](imessage-submitmessage.md)
+[<span data-ttu-id="59d38-132">IMessage::SubmitMessage</span><span class="sxs-lookup"><span data-stu-id="59d38-132">IMessage::SubmitMessage</span></span>](imessage-submitmessage.md)
   
-[<span data-ttu-id="19c01-133">IMAPISupport: IUnknown</span><span class="sxs-lookup"><span data-stu-id="19c01-133">IMAPISupport : IUnknown</span></span>](imapisupportiunknown.md)
+[<span data-ttu-id="59d38-133">IMAPISupport: IUnknown</span><span class="sxs-lookup"><span data-stu-id="59d38-133">IMAPISupport : IUnknown</span></span>](imapisupportiunknown.md)
 

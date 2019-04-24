@@ -6,21 +6,21 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: ef457ad5-f5a0-7bb1-ba0a-2dd8ea733df2
-description: このメンバーは、プレース ホルダーではサポートされていません。
-ms.openlocfilehash: d20c073ff677a6409cc266c4b5a84e24a1d08695
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: このメンバーはプレースホルダーで、サポートされていません。
+ms.openlocfilehash: fedc15f8f84e1b7a0b8b74c0b66ae31db10f5fe4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19799361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32319097"
 ---
-# <a name="ifreebusysupportplaceholder7"></a><span data-ttu-id="d28b3-103">IFreeBusySupport::Placeholder7</span><span class="sxs-lookup"><span data-stu-id="d28b3-103">IFreeBusySupport::Placeholder7</span></span>
+# <a name="ifreebusysupportplaceholder7"></a><span data-ttu-id="52784-103">IFreeBusySupport::Placeholder7</span><span class="sxs-lookup"><span data-stu-id="52784-103">IFreeBusySupport::Placeholder7</span></span>
 
-<span data-ttu-id="d28b3-104">このメンバーは、プレース ホルダーではサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="d28b3-104">This member is a placeholder and is not supported.</span></span>
+<span data-ttu-id="52784-104">このメンバーはプレースホルダーで、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="52784-104">This member is a placeholder and is not supported.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="d28b3-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="d28b3-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="52784-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="52784-105">Quick info</span></span>
 
-<span data-ttu-id="d28b3-106">[IFreeBusySupport](ifreebusysupport.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d28b3-106">See [IFreeBusySupport](ifreebusysupport.md).</span></span>
+<span data-ttu-id="52784-106">[IFreeBusySupport](ifreebusysupport.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="52784-106">See [IFreeBusySupport](ifreebusysupport.md).</span></span>
   
 ```cpp
 HRESULT Placeholder7( 
@@ -28,16 +28,16 @@ HRESULT Placeholder7(
 );
 ```
 
-## <a name="return-values"></a><span data-ttu-id="d28b3-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="d28b3-107">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="52784-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="52784-107">Return values</span></span>
 
-<span data-ttu-id="d28b3-108">常に E_NOTIMP をこのメンバーのプレース ホルダーは、サポート。</span><span class="sxs-lookup"><span data-stu-id="d28b3-108">Always E_NOTIMPL, because this member is a placeholder and is not supported.</span></span>
+<span data-ttu-id="52784-108">このメンバーはプレースホルダーで、サポートされていないため、常に E_NOTIMPL。</span><span class="sxs-lookup"><span data-stu-id="52784-108">Always E_NOTIMPL, because this member is a placeholder and is not supported.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="d28b3-109">注釈</span><span class="sxs-lookup"><span data-stu-id="d28b3-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="52784-109">解説</span><span class="sxs-lookup"><span data-stu-id="52784-109">Remarks</span></span>
 
-<span data-ttu-id="d28b3-110">このメンバーは、E_NOTIMPL を返す必要があります。</span><span class="sxs-lookup"><span data-stu-id="d28b3-110">This member must return E_NOTIMPL.</span></span>
+<span data-ttu-id="52784-110">このメンバーは、E_NOTIMPL を返す必要があります。</span><span class="sxs-lookup"><span data-stu-id="52784-110">This member must return E_NOTIMPL.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="d28b3-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="d28b3-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="52784-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="52784-111">See also</span></span>
 
-- [<span data-ttu-id="d28b3-112">定数 (空き時間情報の API)</span><span class="sxs-lookup"><span data-stu-id="d28b3-112">Constants (Free/busy API)</span></span>](constants-free-busy-api.md) 
-- [<span data-ttu-id="d28b3-113">IFreeBusySupport::LoadFreeBusyData</span><span class="sxs-lookup"><span data-stu-id="d28b3-113">IFreeBusySupport::LoadFreeBusyData</span></span>](ifreebusysupport-loadfreebusydata.md)
+- [<span data-ttu-id="52784-112">定数 (空き時間情報 API)</span><span class="sxs-lookup"><span data-stu-id="52784-112">Constants (Free/busy API)</span></span>](constants-free-busy-api.md) 
+- [<span data-ttu-id="52784-113">IFreeBusySupport::LoadFreeBusyData</span><span class="sxs-lookup"><span data-stu-id="52784-113">IFreeBusySupport::LoadFreeBusyData</span></span>](ifreebusysupport-loadfreebusydata.md)
 

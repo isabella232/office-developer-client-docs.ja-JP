@@ -1,5 +1,5 @@
 ---
-title: IMAPIOfflineSetCurrentState
+title: imapiofflinesetlevel
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: c0aa0df2-79f9-2558-7eb6-accae9bef4b2
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 13a4cf401cf51241a52401668eef008d65aa5459
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 0b6837b51b09ecd9a60630c613e1806cb10c1d87
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321211"
 ---
-# <a name="imapiofflinesetcurrentstate"></a><span data-ttu-id="46fb9-103">IMAPIOffline::SetCurrentState</span><span class="sxs-lookup"><span data-stu-id="46fb9-103">IMAPIOffline::SetCurrentState</span></span>
+# <a name="imapiofflinesetcurrentstate"></a><span data-ttu-id="caf43-103">IMAPIOffline::SetCurrentState</span><span class="sxs-lookup"><span data-stu-id="caf43-103">IMAPIOffline::SetCurrentState</span></span>
 
   
   
-<span data-ttu-id="46fb9-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="46fb9-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="caf43-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="caf43-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="46fb9-105">オフライン オブジェクトをオンラインまたはオフラインの現在の状態を設定します。</span><span class="sxs-lookup"><span data-stu-id="46fb9-105">Sets the current state of an offline object to online or offline.</span></span>
+<span data-ttu-id="caf43-105">オフラインオブジェクトの現在の状態をオンラインまたはオフラインに設定します。</span><span class="sxs-lookup"><span data-stu-id="caf43-105">Sets the current state of an offline object to online or offline.</span></span>
   
 ```cpp
 HRESULT SetCurrentState( 
@@ -36,58 +36,58 @@ HRESULT SetCurrentState(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="46fb9-106">�p�����[�^�[</span><span class="sxs-lookup"><span data-stu-id="46fb9-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="caf43-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="caf43-106">Parameters</span></span>
 
- <span data-ttu-id="46fb9-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="46fb9-107">_ulFlags_</span></span>
+ <span data-ttu-id="caf43-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="caf43-107">_ulFlags_</span></span>
   
-> <span data-ttu-id="46fb9-108">[in]この呼び出しの動作を変更します。</span><span class="sxs-lookup"><span data-stu-id="46fb9-108">[in] Modifies the behavior of this call.</span></span> <span data-ttu-id="46fb9-109">サポートされている値は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="46fb9-109">The supported values are:</span></span>
+> <span data-ttu-id="caf43-108">順番この呼び出しの動作を変更します。</span><span class="sxs-lookup"><span data-stu-id="caf43-108">[in] Modifies the behavior of this call.</span></span> <span data-ttu-id="caf43-109">サポートされている値を次に示します。</span><span class="sxs-lookup"><span data-stu-id="caf43-109">The supported values are:</span></span>
     
-<span data-ttu-id="46fb9-110">MAPIOFFLINE_FLAG_BLOCK</span><span class="sxs-lookup"><span data-stu-id="46fb9-110">MAPIOFFLINE_FLAG_BLOCK</span></span>
+<span data-ttu-id="caf43-110">MAPIOFFLINE_FLAG_BLOCK</span><span class="sxs-lookup"><span data-stu-id="caf43-110">MAPIOFFLINE_FLAG_BLOCK</span></span>
   
-> <span data-ttu-id="46fb9-111">_UlFlags_をこの値に設定する場合は、状態の変更が完了するまで、 **SetCurrentState**の呼び出しがブロックされます。</span><span class="sxs-lookup"><span data-stu-id="46fb9-111">Setting  _ulFlags_ to this value will block the **SetCurrentState** call until the state change is complete.</span></span> <span data-ttu-id="46fb9-112">トランジションは、既定で非同期的に配置します。</span><span class="sxs-lookup"><span data-stu-id="46fb9-112">By default the transition takes place asynchronously.</span></span> <span data-ttu-id="46fb9-113">移行は、非同期的に発生している、 **SetCurrentState**のすべての呼び出しは、変更が完了するまでには**E_PENDING**を返します。</span><span class="sxs-lookup"><span data-stu-id="46fb9-113">When the transition is occuring asynchronously, all **SetCurrentState** calls will return **E_PENDING** until the change is complete.</span></span> 
+> <span data-ttu-id="caf43-111">_ulflags_をこの値に設定すると\*\*\*\* 、状態の変更が完了するまで setlevelcall がブロックされます。</span><span class="sxs-lookup"><span data-stu-id="caf43-111">Setting  _ulFlags_ to this value will block the **SetCurrentState** call until the state change is complete.</span></span> <span data-ttu-id="caf43-112">既定では、移行は非同期的に行われます。</span><span class="sxs-lookup"><span data-stu-id="caf43-112">By default the transition takes place asynchronously.</span></span> <span data-ttu-id="caf43-113">遷移が非同期で発生している\*\*\*\* 場合、すべての setcurrentstate 呼び出しは、変更が完了するまで\*\*\*\* を返します。</span><span class="sxs-lookup"><span data-stu-id="caf43-113">When the transition is occuring asynchronously, all **SetCurrentState** calls will return **E_PENDING** until the change is complete.</span></span> 
     
-<span data-ttu-id="46fb9-114">MAPIOFFLINE_FLAG_DEFAULT</span><span class="sxs-lookup"><span data-stu-id="46fb9-114">MAPIOFFLINE_FLAG_DEFAULT</span></span>
+<span data-ttu-id="caf43-114">MAPIOFFLINE_FLAG_DEFAULT</span><span class="sxs-lookup"><span data-stu-id="caf43-114">MAPIOFFLINE_FLAG_DEFAULT</span></span>
   
-> <span data-ttu-id="46fb9-115">ブロックすることがなく現在の状態を設定します。</span><span class="sxs-lookup"><span data-stu-id="46fb9-115">Sets the current state without blocking.</span></span>
+> <span data-ttu-id="caf43-115">ブロックせずに現在の状態を設定します。</span><span class="sxs-lookup"><span data-stu-id="caf43-115">Sets the current state without blocking.</span></span>
     
- <span data-ttu-id="46fb9-116">_ulMask_</span><span class="sxs-lookup"><span data-stu-id="46fb9-116">_ulMask_</span></span>
+ <span data-ttu-id="caf43-116">_ulmask_</span><span class="sxs-lookup"><span data-stu-id="caf43-116">_ulMask_</span></span>
   
-> <span data-ttu-id="46fb9-117">[in]変更の状態の一部です。</span><span class="sxs-lookup"><span data-stu-id="46fb9-117">[in] The part of the state to change.</span></span> <span data-ttu-id="46fb9-118">唯一のサポートされている値は、MAPIOFFLINE_STATE_OFFLINE_MASK です。</span><span class="sxs-lookup"><span data-stu-id="46fb9-118">The only supported value is MAPIOFFLINE_STATE_OFFLINE_MASK.</span></span>
+> <span data-ttu-id="caf43-117">順番変更する状態の部分。</span><span class="sxs-lookup"><span data-stu-id="caf43-117">[in] The part of the state to change.</span></span> <span data-ttu-id="caf43-118">サポートされている値は MAPIOFFLINE_STATE_OFFLINE_MASK のみです。</span><span class="sxs-lookup"><span data-stu-id="caf43-118">The only supported value is MAPIOFFLINE_STATE_OFFLINE_MASK.</span></span>
     
- <span data-ttu-id="46fb9-119">_ulState_</span><span class="sxs-lookup"><span data-stu-id="46fb9-119">_ulState_</span></span>
+ <span data-ttu-id="caf43-119">_ulstate_</span><span class="sxs-lookup"><span data-stu-id="caf43-119">_ulState_</span></span>
   
-> <span data-ttu-id="46fb9-120">[in]状態に変更します。</span><span class="sxs-lookup"><span data-stu-id="46fb9-120">[in] The state to change to.</span></span> <span data-ttu-id="46fb9-121">これら 2 つの値のいずれかを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="46fb9-121">It must be one of these two values:</span></span>
+> <span data-ttu-id="caf43-120">順番変更後の状態。</span><span class="sxs-lookup"><span data-stu-id="caf43-120">[in] The state to change to.</span></span> <span data-ttu-id="caf43-121">次の2つの値のいずれかである必要があります。</span><span class="sxs-lookup"><span data-stu-id="caf43-121">It must be one of these two values:</span></span>
     
-<span data-ttu-id="46fb9-122">MAPIOFFLINE_STATE_ONLINE</span><span class="sxs-lookup"><span data-stu-id="46fb9-122">MAPIOFFLINE_STATE_ONLINE</span></span>
+<span data-ttu-id="caf43-122">MAPIOFFLINE_STATE_ONLINE</span><span class="sxs-lookup"><span data-stu-id="caf43-122">MAPIOFFLINE_STATE_ONLINE</span></span>
   
 > 
     
-<span data-ttu-id="46fb9-123">MAPIOFFLINE_STATE_OFFLINE</span><span class="sxs-lookup"><span data-stu-id="46fb9-123">MAPIOFFLINE_STATE_OFFLINE</span></span>
+<span data-ttu-id="caf43-123">MAPIOFFLINE_STATE_OFFLINE</span><span class="sxs-lookup"><span data-stu-id="caf43-123">MAPIOFFLINE_STATE_OFFLINE</span></span>
   
 > 
     
- <span data-ttu-id="46fb9-124">_保持_</span><span class="sxs-lookup"><span data-stu-id="46fb9-124">_pReserved_</span></span>
+ <span data-ttu-id="caf43-124">_保持され_</span><span class="sxs-lookup"><span data-stu-id="caf43-124">_pReserved_</span></span>
   
-> <span data-ttu-id="46fb9-125">このパラメーターは、Outlook の内部使用に予約されている、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="46fb9-125">This parameter is reserved for Outlook internal use and is not supported.</span></span> 
+> <span data-ttu-id="caf43-125">このパラメーターは、Outlook の内部使用のために予約されており、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="caf43-125">This parameter is reserved for Outlook internal use and is not supported.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="46fb9-126">�߂�l</span><span class="sxs-lookup"><span data-stu-id="46fb9-126">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="caf43-126">戻り値</span><span class="sxs-lookup"><span data-stu-id="caf43-126">Return value</span></span>
 
-<span data-ttu-id="46fb9-127">S_OK</span><span class="sxs-lookup"><span data-stu-id="46fb9-127">S_OK</span></span>
+<span data-ttu-id="caf43-127">S_OK</span><span class="sxs-lookup"><span data-stu-id="caf43-127">S_OK</span></span>
   
-> <span data-ttu-id="46fb9-128">オフラインのオブジェクトの状態が正常に変更されました。</span><span class="sxs-lookup"><span data-stu-id="46fb9-128">The state of the offline object has been changed successfully.</span></span>
+> <span data-ttu-id="caf43-128">オフラインオブジェクトの状態が正常に変更されました。</span><span class="sxs-lookup"><span data-stu-id="caf43-128">The state of the offline object has been changed successfully.</span></span>
     
-<span data-ttu-id="46fb9-129">E_PENDING</span><span class="sxs-lookup"><span data-stu-id="46fb9-129">E_PENDING</span></span>
+<span data-ttu-id="caf43-129">E_PENDING</span><span class="sxs-lookup"><span data-stu-id="caf43-129">E_PENDING</span></span>
   
-> <span data-ttu-id="46fb9-130">これは、オフラインのオブジェクトの状態が非同期的に変化していることを示します。</span><span class="sxs-lookup"><span data-stu-id="46fb9-130">This indicates that the state of the offline object is changing asynchronously.</span></span> <span data-ttu-id="46fb9-131">_UlFlags_は、呼び出しでは、以前**SetCurrentState** MAPIOFFLINE_FLAG_BLOCK に設定されており、非同期状態の変更が完了するまで、後続の**SetCurrentState**呼び出しでこの値を返すが場合です。</span><span class="sxs-lookup"><span data-stu-id="46fb9-131">This occurs when  _ulFlags_ is set to MAPIOFFLINE_FLAG_BLOCK in an earlier **SetCurrentState** call, and any subsequent **SetCurrentState** call will return this value until the asynchronous state change is complete.</span></span> 
+> <span data-ttu-id="caf43-130">これは、オフラインオブジェクトの状態が非同期に変化していることを示します。</span><span class="sxs-lookup"><span data-stu-id="caf43-130">This indicates that the state of the offline object is changing asynchronously.</span></span> <span data-ttu-id="caf43-131">これは、 _ulflags_が以前の setcurrentstate に設定\*\*\*\* されている場合に発生し、以降の**setcurrentstate**変更が完了するまでこの値が返されます。</span><span class="sxs-lookup"><span data-stu-id="caf43-131">This occurs when  _ulFlags_ is set to MAPIOFFLINE_FLAG_BLOCK in an earlier **SetCurrentState** call, and any subsequent **SetCurrentState** call will return this value until the asynchronous state change is complete.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="46fb9-132">関連項目</span><span class="sxs-lookup"><span data-stu-id="46fb9-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="caf43-132">関連項目</span><span class="sxs-lookup"><span data-stu-id="caf43-132">See also</span></span>
 
 
 
-[<span data-ttu-id="46fb9-133">IMAPIOffline::GetCapabilities</span><span class="sxs-lookup"><span data-stu-id="46fb9-133">IMAPIOffline::GetCapabilities</span></span>](imapioffline-getcapabilities.md)
+[<span data-ttu-id="caf43-133">IMAPIOffline::GetCapabilities</span><span class="sxs-lookup"><span data-stu-id="caf43-133">IMAPIOffline::GetCapabilities</span></span>](imapioffline-getcapabilities.md)
   
-[<span data-ttu-id="46fb9-134">IMAPIOffline::GetCurrentState</span><span class="sxs-lookup"><span data-stu-id="46fb9-134">IMAPIOffline::GetCurrentState</span></span>](imapioffline-getcurrentstate.md)
+[<span data-ttu-id="caf43-134">IMAPIOffline::GetCurrentState</span><span class="sxs-lookup"><span data-stu-id="caf43-134">IMAPIOffline::GetCurrentState</span></span>](imapioffline-getcurrentstate.md)
 
 
-[<span data-ttu-id="46fb9-135">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="46fb9-135">MAPI Constants</span></span>](mapi-constants.md)
+[<span data-ttu-id="caf43-135">MAPI 定数</span><span class="sxs-lookup"><span data-stu-id="caf43-135">MAPI Constants</span></span>](mapi-constants.md)
 

@@ -13,87 +13,87 @@ api_type:
 ms.assetid: e0c04f98-3d66-4ab5-ba05-69f9df539fcf
 description: '最終更新日時: 2015 年 3 月 9 日'
 ms.openlocfilehash: fe14f6ca101e6a546f99989ecc87b0c516ee5df4
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25382660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316353"
 ---
-# <a name="pidtagextendedfolderflags-canonical-property"></a><span data-ttu-id="83dba-103">PidTagExtendedFolderFlags 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="83dba-103">PidTagExtendedFolderFlags Canonical Property</span></span>
+# <a name="pidtagextendedfolderflags-canonical-property"></a><span data-ttu-id="760a4-103">PidTagExtendedFolderFlags 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="760a4-103">PidTagExtendedFolderFlags Canonical Property</span></span>
  
-<span data-ttu-id="83dba-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="83dba-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="760a4-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="760a4-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="83dba-105">フォルダーの拡張のフラグが含まれています。</span><span class="sxs-lookup"><span data-stu-id="83dba-105">Contains extended flags about a folder.</span></span>
+<span data-ttu-id="760a4-105">フォルダーに関する拡張フラグが含まれています。</span><span class="sxs-lookup"><span data-stu-id="760a4-105">Contains extended flags about a folder.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="83dba-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="83dba-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="83dba-107">PR_EXTENDED_FOLDER_FLAGS</span><span class="sxs-lookup"><span data-stu-id="83dba-107">PR_EXTENDED_FOLDER_FLAGS</span></span>  <br/> |
-|<span data-ttu-id="83dba-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="83dba-108">Identifier:</span></span>  <br/> |<span data-ttu-id="83dba-109">0x36DA</span><span class="sxs-lookup"><span data-stu-id="83dba-109">0x36DA</span></span>  <br/> |
-|<span data-ttu-id="83dba-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="83dba-110">Data type:</span></span>  <br/> |<span data-ttu-id="83dba-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="83dba-111">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="83dba-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="83dba-112">Area:</span></span>  <br/> |<span data-ttu-id="83dba-113">MAPI のコンテナー</span><span class="sxs-lookup"><span data-stu-id="83dba-113">MAPI container</span></span>  <br/> |
+|<span data-ttu-id="760a4-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="760a4-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="760a4-107">PR_EXTENDED_FOLDER_FLAGS</span><span class="sxs-lookup"><span data-stu-id="760a4-107">PR_EXTENDED_FOLDER_FLAGS</span></span>  <br/> |
+|<span data-ttu-id="760a4-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="760a4-108">Identifier:</span></span>  <br/> |<span data-ttu-id="760a4-109">0x36DA</span><span class="sxs-lookup"><span data-stu-id="760a4-109">0x36DA</span></span>  <br/> |
+|<span data-ttu-id="760a4-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="760a4-110">Data type:</span></span>  <br/> |<span data-ttu-id="760a4-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="760a4-111">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="760a4-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="760a4-112">Area:</span></span>  <br/> |<span data-ttu-id="760a4-113">MAPI コンテナー</span><span class="sxs-lookup"><span data-stu-id="760a4-113">MAPI container</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="83dba-114">備考</span><span class="sxs-lookup"><span data-stu-id="83dba-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="760a4-114">解説</span><span class="sxs-lookup"><span data-stu-id="760a4-114">Remarks</span></span>
 
-<span data-ttu-id="83dba-115">このプロパティは、エンコードされたサブ フォルダーのプロパティを含むバイナリ ストリームです。</span><span class="sxs-lookup"><span data-stu-id="83dba-115">This property is a binary stream that contains encoded sub-properties for the folder.</span></span> <span data-ttu-id="83dba-116">それは一連の可変長サブ項目として書式設定されます。</span><span class="sxs-lookup"><span data-stu-id="83dba-116">It is formatted as a series of variable length sub items.</span></span> <span data-ttu-id="83dba-117">サブ項目の最初の 8 ビットでは、[ID] フィールドは、サブ項目を表すフラグの種類を示します。</span><span class="sxs-lookup"><span data-stu-id="83dba-117">The first 8 bits of the sub item is an ID field, which indicates what kind of flag the sub item represents.</span></span> <span data-ttu-id="83dba-118">2 つ目の 8 ビットは、次のデータのバイト数です。</span><span class="sxs-lookup"><span data-stu-id="83dba-118">The second 8 bits is the number of bytes of data that follow.</span></span>
+<span data-ttu-id="760a4-115">このプロパティは、フォルダーのエンコードされたサブプロパティを含むバイナリストリームです。</span><span class="sxs-lookup"><span data-stu-id="760a4-115">This property is a binary stream that contains encoded sub-properties for the folder.</span></span> <span data-ttu-id="760a4-116">この値は、一連の可変長サブアイテムとして書式設定されます。</span><span class="sxs-lookup"><span data-stu-id="760a4-116">It is formatted as a series of variable length sub items.</span></span> <span data-ttu-id="760a4-117">サブアイテムの最初の8ビットは ID フィールドで、そのサブアイテムが表すフラグの種類を示します。</span><span class="sxs-lookup"><span data-stu-id="760a4-117">The first 8 bits of the sub item is an ID field, which indicates what kind of flag the sub item represents.</span></span> <span data-ttu-id="760a4-118">2番目の8ビットは、フォローされるデータのバイト数です。</span><span class="sxs-lookup"><span data-stu-id="760a4-118">The second 8 bits is the number of bytes of data that follow.</span></span>
   
-<span data-ttu-id="83dba-119">使用可能な ID の値は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="83dba-119">Possible ID values include:</span></span>
+<span data-ttu-id="760a4-119">可能な ID 値は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="760a4-119">Possible ID values include:</span></span>
   
-- <span data-ttu-id="83dba-120">無効</span><span class="sxs-lookup"><span data-stu-id="83dba-120">Invalid</span></span>
+- <span data-ttu-id="760a4-120">Invalid</span><span class="sxs-lookup"><span data-stu-id="760a4-120">Invalid</span></span>
     
-   <span data-ttu-id="83dba-121">この値は使用しないで</span><span class="sxs-lookup"><span data-stu-id="83dba-121">Do not use this value</span></span>
+   <span data-ttu-id="760a4-121">この値は使用しないでください。</span><span class="sxs-lookup"><span data-stu-id="760a4-121">Do not use this value</span></span>
     
-- <span data-ttu-id="83dba-122">ExtendedFlags</span><span class="sxs-lookup"><span data-stu-id="83dba-122">ExtendedFlags</span></span>
+- <span data-ttu-id="760a4-122">extendedflags</span><span class="sxs-lookup"><span data-stu-id="760a4-122">ExtendedFlags</span></span>
     
-   <span data-ttu-id="83dba-123">データは、4 バイトの値が設定されています。</span><span class="sxs-lookup"><span data-stu-id="83dba-123">The data is a four byte value formatted as:</span></span>
+   <span data-ttu-id="760a4-123">このデータは、次のように書式設定された4つのバイト値です。</span><span class="sxs-lookup"><span data-stu-id="760a4-123">The data is a four byte value formatted as:</span></span>
     
-   |<span data-ttu-id="83dba-124">**ビット**</span><span class="sxs-lookup"><span data-stu-id="83dba-124">**Bits**</span></span>|<span data-ttu-id="83dba-125">**説明**</span><span class="sxs-lookup"><span data-stu-id="83dba-125">**Description**</span></span>|
+   |<span data-ttu-id="760a4-124">**ビット**</span><span class="sxs-lookup"><span data-stu-id="760a4-124">**Bits**</span></span>|<span data-ttu-id="760a4-125">**説明**</span><span class="sxs-lookup"><span data-stu-id="760a4-125">**Description**</span></span>|
    |:-----|:-----|
-   |<span data-ttu-id="83dba-126">0 ～ 1</span><span class="sxs-lookup"><span data-stu-id="83dba-126">0-1</span></span>  <br/> |<span data-ttu-id="83dba-127">予約済み。</span><span class="sxs-lookup"><span data-stu-id="83dba-127">Reserved.</span></span>  <br/> |
-   |<span data-ttu-id="83dba-128">2</span><span class="sxs-lookup"><span data-stu-id="83dba-128">2</span></span>  <br/> |<span data-ttu-id="83dba-129">アプリケーション ポリシーの説明を表示する必要がある場合は 0 に設定します。</span><span class="sxs-lookup"><span data-stu-id="83dba-129">Set to 0 if the application should show a policy description.</span></span>  <br/> |
-   |<span data-ttu-id="83dba-130">3-5</span><span class="sxs-lookup"><span data-stu-id="83dba-130">3-5</span></span>  <br/> |<span data-ttu-id="83dba-131">予約済み。</span><span class="sxs-lookup"><span data-stu-id="83dba-131">Reserved.</span></span>  <br/> |
-   |<span data-ttu-id="83dba-132">6-7</span><span class="sxs-lookup"><span data-stu-id="83dba-132">6-7</span></span>  <br/> |<span data-ttu-id="83dba-133">フォルダー内のメッセージ数の表示を制御します。</span><span class="sxs-lookup"><span data-stu-id="83dba-133">Controls the display of the number of messages in the folder.</span></span>  <br/> <span data-ttu-id="83dba-134">0 - 既定の設定を使用します。</span><span class="sxs-lookup"><span data-stu-id="83dba-134">0 - Use the default setting</span></span>  <br/> <span data-ttu-id="83dba-135">1-未読メ ッ セージの数を使用します。</span><span class="sxs-lookup"><span data-stu-id="83dba-135">1 - Use the number of unread messages</span></span>  <br/> <span data-ttu-id="83dba-136">3 - メッセージの合計数を使用します。</span><span class="sxs-lookup"><span data-stu-id="83dba-136">3 - Use the total number of messages</span></span>  <br/> |
-   |<span data-ttu-id="83dba-137">8-31</span><span class="sxs-lookup"><span data-stu-id="83dba-137">8-31</span></span>  <br/> |<span data-ttu-id="83dba-138">予約済み。</span><span class="sxs-lookup"><span data-stu-id="83dba-138">Reserved.</span></span>  <br/> |
+   |<span data-ttu-id="760a4-126">0 ～ 1</span><span class="sxs-lookup"><span data-stu-id="760a4-126">0-1</span></span>  <br/> |<span data-ttu-id="760a4-127">予約済み。</span><span class="sxs-lookup"><span data-stu-id="760a4-127">Reserved.</span></span>  <br/> |
+   |<span data-ttu-id="760a4-128">pbm-2</span><span class="sxs-lookup"><span data-stu-id="760a4-128">2</span></span>  <br/> |<span data-ttu-id="760a4-129">アプリケーションにポリシーの説明を表示する場合は0に設定します。</span><span class="sxs-lookup"><span data-stu-id="760a4-129">Set to 0 if the application should show a policy description.</span></span>  <br/> |
+   |<span data-ttu-id="760a4-130">3-5</span><span class="sxs-lookup"><span data-stu-id="760a4-130">3-5</span></span>  <br/> |<span data-ttu-id="760a4-131">予約済み。</span><span class="sxs-lookup"><span data-stu-id="760a4-131">Reserved.</span></span>  <br/> |
+   |<span data-ttu-id="760a4-132">6-7</span><span class="sxs-lookup"><span data-stu-id="760a4-132">6-7</span></span>  <br/> |<span data-ttu-id="760a4-133">フォルダー内のメッセージ数の表示を制御します。</span><span class="sxs-lookup"><span data-stu-id="760a4-133">Controls the display of the number of messages in the folder.</span></span>  <br/> <span data-ttu-id="760a4-134">0-既定の設定を使用します。</span><span class="sxs-lookup"><span data-stu-id="760a4-134">0 - Use the default setting</span></span>  <br/> <span data-ttu-id="760a4-135">1-未読メッセージ数を使用します。</span><span class="sxs-lookup"><span data-stu-id="760a4-135">1 - Use the number of unread messages</span></span>  <br/> <span data-ttu-id="760a4-136">3-メッセージの合計数を使用します。</span><span class="sxs-lookup"><span data-stu-id="760a4-136">3 - Use the total number of messages</span></span>  <br/> |
+   |<span data-ttu-id="760a4-137">8-31</span><span class="sxs-lookup"><span data-stu-id="760a4-137">8-31</span></span>  <br/> |<span data-ttu-id="760a4-138">予約済み。</span><span class="sxs-lookup"><span data-stu-id="760a4-138">Reserved.</span></span>  <br/> |
    
-<span data-ttu-id="83dba-139">予約済みの項目は無視できますが、既存の値を保持する必要があります。</span><span class="sxs-lookup"><span data-stu-id="83dba-139">Reserved items can be ignored, but existing values must be preserved.</span></span>
+<span data-ttu-id="760a4-139">予約されたアイテムは無視できますが、既存の値は保持する必要があります。</span><span class="sxs-lookup"><span data-stu-id="760a4-139">Reserved items can be ignored, but existing values must be preserved.</span></span>
     
-- <span data-ttu-id="83dba-140">SearchFolderID</span><span class="sxs-lookup"><span data-stu-id="83dba-140">SearchFolderID</span></span>
+- <span data-ttu-id="760a4-140">SearchFolderID</span><span class="sxs-lookup"><span data-stu-id="760a4-140">SearchFolderID</span></span>
     
-   <span data-ttu-id="83dba-141">データ フィールドは、16 バイトのフィールドです。</span><span class="sxs-lookup"><span data-stu-id="83dba-141">The data field is a 16-byte field.</span></span> <span data-ttu-id="83dba-142">値は**PR_WB_SF_TAG**と同じフォルダーにこのフィールドを設定する必要がありますアプリケーションは、永続的な検索フォルダーを作成する場合 ([PidTagSearchFolderId)](pidtagsearchfolderid-canonical-property.md)) 検索フォルダーのメッセージにバイナリのプロパティです。</span><span class="sxs-lookup"><span data-stu-id="83dba-142">When the application creates a persistent search folder, it must set this field on the folder to the same value as the **PR_WB_SF_TAG** ([PidTagSearchFolderId)](pidtagsearchfolderid-canonical-property.md)) binary property on the Search Folder Message.</span></span>
+   <span data-ttu-id="760a4-141">データフィールドは16バイトのフィールドです。</span><span class="sxs-lookup"><span data-stu-id="760a4-141">The data field is a 16-byte field.</span></span> <span data-ttu-id="760a4-142">アプリケーションは、永続的な検索フォルダーを作成するときに、フォルダーのこのフィールドに、検索フォルダーのメッセージの**PR_WB_SF_TAG** ([PidTagSearchFolderId)](pidtagsearchfolderid-canonical-property.md)) バイナリプロパティと同じ値を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="760a4-142">When the application creates a persistent search folder, it must set this field on the folder to the same value as the **PR_WB_SF_TAG** ([PidTagSearchFolderId)](pidtagsearchfolderid-canonical-property.md)) binary property on the Search Folder Message.</span></span>
     
-- <span data-ttu-id="83dba-143">ToDoFolderVersion</span><span class="sxs-lookup"><span data-stu-id="83dba-143">ToDoFolderVersion</span></span>
+- <span data-ttu-id="760a4-143">ToDoFolderVersion</span><span class="sxs-lookup"><span data-stu-id="760a4-143">ToDoFolderVersion</span></span>
     
-   <span data-ttu-id="83dba-144">データ フィールドは、4 バイト フィールドです。</span><span class="sxs-lookup"><span data-stu-id="83dba-144">The data field is a 4-byte field.</span></span> <span data-ttu-id="83dba-145">アプリケーションは、[to do] 検索フォルダーを作成するには、リトル エンディアンの整数値に"0x000c0000"のフォルダーにこのフィールドの値を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="83dba-145">When the application creates the to-do search folder, it must set the value of this field on the folder to the little-endian integer value of" 0x000c0000":</span></span>
+   <span data-ttu-id="760a4-144">データフィールドは4バイトのフィールドです。</span><span class="sxs-lookup"><span data-stu-id="760a4-144">The data field is a 4-byte field.</span></span> <span data-ttu-id="760a4-145">アプリケーションは、to do 検索フォルダーを作成するときに、フォルダーでこのフィールドの値を "0x000c0000" のリトルエンディアン整数値に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="760a4-145">When the application creates the to-do search folder, it must set the value of this field on the folder to the little-endian integer value of" 0x000c0000":</span></span>
     
-## <a name="related-resources"></a><span data-ttu-id="83dba-146">関連リソース</span><span class="sxs-lookup"><span data-stu-id="83dba-146">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="760a4-146">関連リソース</span><span class="sxs-lookup"><span data-stu-id="760a4-146">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="83dba-147">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="83dba-147">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="760a4-147">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="760a4-147">Protocol specifications</span></span>
 
-<span data-ttu-id="83dba-148">[[MS OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="83dba-148">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="760a4-148">[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="760a4-148">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="83dba-149">関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="83dba-149">Provides references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="760a4-149">関連する Exchange Server プロトコル仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="760a4-149">Provides references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="83dba-150">[[MS OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="83dba-150">[[MS-OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="760a4-150">[[OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="760a4-150">[[MS-OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="83dba-151">場所と共有カテゴリのリストおよび作業時間など、クライアントとサーバーの構成データのプロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="83dba-151">Specifies the location and properties of client and server configuration data, such as shared category lists and working hours.</span></span>
+> <span data-ttu-id="760a4-151">カテゴリの共有リストや稼働時間など、クライアントおよびサーバーの構成データの場所とプロパティを指定します。</span><span class="sxs-lookup"><span data-stu-id="760a4-151">Specifies the location and properties of client and server configuration data, such as shared category lists and working hours.</span></span>
     
-<span data-ttu-id="83dba-152">[[MS OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="83dba-152">[[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="760a4-152">[[OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="760a4-152">[[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="83dba-153">プロパティや検索フォルダーの一覧の構成を操作するための動作を指定します。</span><span class="sxs-lookup"><span data-stu-id="83dba-153">Specifies the properties and operations for manipulating a search folder list configuration.</span></span>
+> <span data-ttu-id="760a4-153">検索フォルダーリストの構成を操作するためのプロパティと操作を指定します。</span><span class="sxs-lookup"><span data-stu-id="760a4-153">Specifies the properties and operations for manipulating a search folder list configuration.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="83dba-154">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="83dba-154">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="760a4-154">ヘッダーファイル</span><span class="sxs-lookup"><span data-stu-id="760a4-154">Header files</span></span>
 
-<span data-ttu-id="83dba-155">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="83dba-155">Mapidefs.h</span></span>
+<span data-ttu-id="760a4-155">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="760a4-155">Mapidefs.h</span></span>
   
-> <span data-ttu-id="83dba-156">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="83dba-156">Provides data type definitions.</span></span>
+> <span data-ttu-id="760a4-156">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="760a4-156">Provides data type definitions.</span></span>
     
-<span data-ttu-id="83dba-157">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="83dba-157">Mapitags.h</span></span>
+<span data-ttu-id="760a4-157">Mapitags</span><span class="sxs-lookup"><span data-stu-id="760a4-157">Mapitags.h</span></span>
   
-> <span data-ttu-id="83dba-158">代替名として記載されているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="83dba-158">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="760a4-158">代替名としてリストされているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="760a4-158">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="83dba-159">関連項目</span><span class="sxs-lookup"><span data-stu-id="83dba-159">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="760a4-159">関連項目</span><span class="sxs-lookup"><span data-stu-id="760a4-159">See also</span></span>
 
-- [<span data-ttu-id="83dba-160">MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="83dba-160">MAPI Properties</span></span>](mapi-properties.md)
-- [<span data-ttu-id="83dba-161">標準の MAPI プロパティ</span><span class="sxs-lookup"><span data-stu-id="83dba-161">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
-- [<span data-ttu-id="83dba-162">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="83dba-162">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
-- [<span data-ttu-id="83dba-163">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="83dba-163">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+- [<span data-ttu-id="760a4-160">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="760a4-160">MAPI Properties</span></span>](mapi-properties.md)
+- [<span data-ttu-id="760a4-161">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="760a4-161">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+- [<span data-ttu-id="760a4-162">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="760a4-162">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+- [<span data-ttu-id="760a4-163">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="760a4-163">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

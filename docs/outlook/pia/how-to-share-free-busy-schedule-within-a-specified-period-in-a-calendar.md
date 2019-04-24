@@ -8,21 +8,21 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: 00cc252dd16212e812280db70d6b7c77c2c02693
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28708061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32315247"
 ---
-# <a name="share-freebusy-schedule-within-a-specified-period-in-a-calendar"></a><span data-ttu-id="cc0e5-102">予定表で指定した期間内の空き時間スケジュールを共有する</span><span class="sxs-lookup"><span data-stu-id="cc0e5-102">Share Free/Busy schedule within a specified period in a calendar</span></span>
+# <a name="share-freebusy-schedule-within-a-specified-period-in-a-calendar"></a><span data-ttu-id="0fbd3-102">予定表で指定した期間内の空き時間スケジュールを共有する</span><span class="sxs-lookup"><span data-stu-id="0fbd3-102">Share Free/Busy schedule within a specified period in a calendar</span></span>
 
-<span data-ttu-id="cc0e5-103">この例では、予定表の指定した週の空き時間スケジュールを取得し、ユーザーに対して予定の有無と件名を表示します。</span><span class="sxs-lookup"><span data-stu-id="cc0e5-103">This example obtains the Free/Busy schedule within a specified week from a calendar and displays the free, busy, and subject details to the user.</span></span>
+<span data-ttu-id="0fbd3-103">この例では、予定表の指定した週の空き時間スケジュールを取得し、ユーザーに対して予定の有無と件名を表示します。</span><span class="sxs-lookup"><span data-stu-id="0fbd3-103">This example obtains the Free/Busy schedule within a specified week from a calendar and displays the free, busy, and subject details to the user.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cc0e5-104">例</span><span class="sxs-lookup"><span data-stu-id="cc0e5-104">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0fbd3-104">例</span><span class="sxs-lookup"><span data-stu-id="0fbd3-104">Example</span></span>
 
-<span data-ttu-id="cc0e5-p101">このコード例では、[Folder](https://msdn.microsoft.com/library/bb610021\(v=office.15\)) オブジェクトの [GetCalendarExporter](https://msdn.microsoft.com/library/bb645774\(v=office.15\)) メソッドを使用して既定の予定表フォルダーの [CalendarSharing](https://msdn.microsoft.com/library/bb624344\(v=office.15\)) オブジェクトを、指定された特定の週にわたって取得します。その後、 [CalendarSharing](https://msdn.microsoft.com/library/bb652866\(v=office.15\)) オブジェクトの **ForwardAsICal** メソッドを呼び出し、iCalendar ペイロードを含むメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="cc0e5-p101">This code sample uses the [GetCalendarExporter](https://msdn.microsoft.com/library/bb610021\(v=office.15\)) method of the [Folder](https://msdn.microsoft.com/library/bb645774\(v=office.15\)) object to obtain a [CalendarSharing](https://msdn.microsoft.com/library/bb624344\(v=office.15\)) object for the default Calendar folder for a specific one-week period. It then calls the [ForwardAsICal](https://msdn.microsoft.com/library/bb652866\(v=office.15\)) method on the **CalendarSharing** object and displays the message with an iCalendar payload.</span></span>
+<span data-ttu-id="0fbd3-p101">このコード例では、[Folder](https://msdn.microsoft.com/library/bb610021\(v=office.15\)) オブジェクトの [GetCalendarExporter](https://msdn.microsoft.com/library/bb645774\(v=office.15\)) メソッドを使用して既定の予定表フォルダーの [CalendarSharing](https://msdn.microsoft.com/library/bb624344\(v=office.15\)) オブジェクトを、指定された特定の週にわたって取得します。その後、 [CalendarSharing](https://msdn.microsoft.com/library/bb652866\(v=office.15\)) オブジェクトの **ForwardAsICal** メソッドを呼び出し、iCalendar ペイロードを含むメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="0fbd3-p101">This code sample uses the [GetCalendarExporter](https://msdn.microsoft.com/library/bb610021\(v=office.15\)) method of the [Folder](https://msdn.microsoft.com/library/bb645774\(v=office.15\)) object to obtain a [CalendarSharing](https://msdn.microsoft.com/library/bb624344\(v=office.15\)) object for the default Calendar folder for a specific one-week period. It then calls the [ForwardAsICal](https://msdn.microsoft.com/library/bb652866\(v=office.15\)) method on the **CalendarSharing** object and displays the message with an iCalendar payload.</span></span>
 
-<span data-ttu-id="cc0e5-107">Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。</span><span class="sxs-lookup"><span data-stu-id="cc0e5-107">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the Outlook variable when you import the **Microsoft.Office.Interop.Outlook** namespace.</span></span> <span data-ttu-id="cc0e5-108">**Imports** または **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cc0e5-108">The **Imports** or **using** statement must not occur directly before the functions in the code example but must be added before the public Class declaration.</span></span> <span data-ttu-id="cc0e5-109">次のコード行は、Visual Basic および C\# でインポートおよび割り当てを行う方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="cc0e5-109">The following lines of code show how to do the import and assignment in Visual Basic and C\#.</span></span>
+<span data-ttu-id="0fbd3-107">Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。</span><span class="sxs-lookup"><span data-stu-id="0fbd3-107">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the Outlook variable when you import the **Microsoft.Office.Interop.Outlook** namespace.</span></span> <span data-ttu-id="0fbd3-108">**Imports** または **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0fbd3-108">The **Imports** or **using** statement must not occur directly before the functions in the code example but must be added before the public Class declaration.</span></span> <span data-ttu-id="0fbd3-109">次のコード行は、Visual Basic および C\# でインポートおよび割り当てを行う方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="0fbd3-109">The following lines of code show how to do the import and assignment in Visual Basic and C\#.</span></span>
 
 ```vb
 Imports Outlook = Microsoft.Office.Interop.Outlook
@@ -97,7 +97,7 @@ private void DemoCalendarSharing()
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="cc0e5-110">関連項目</span><span class="sxs-lookup"><span data-stu-id="cc0e5-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0fbd3-110">関連項目</span><span class="sxs-lookup"><span data-stu-id="0fbd3-110">See also</span></span>
 
-- [<span data-ttu-id="cc0e5-111">予定表</span><span class="sxs-lookup"><span data-stu-id="cc0e5-111">Calendar</span></span>](calendar.md)
+- [<span data-ttu-id="0fbd3-111">予定表</span><span class="sxs-lookup"><span data-stu-id="0fbd3-111">Calendar</span></span>](calendar.md)
 

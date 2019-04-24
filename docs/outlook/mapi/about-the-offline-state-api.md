@@ -6,60 +6,60 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 18b0d284-c224-a022-47d9-b2d82a32f996
 description: '�ŏI�X�V��: 2012�N6��25��'
-ms.openlocfilehash: aa30a173251193d74d6560c8dce2663463a18e36
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 56793ae0d2c2ce76c89c7cda4985618e3a40ccfd
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321792"
 ---
-# <a name="about-the-offline-state-api"></a><span data-ttu-id="bc042-103">オフライン状態 API について</span><span class="sxs-lookup"><span data-stu-id="bc042-103">About the Offline State API</span></span>
+# <a name="about-the-offline-state-api"></a><span data-ttu-id="7cc6f-103">オフライン状態 API について</span><span class="sxs-lookup"><span data-stu-id="7cc6f-103">About the Offline State API</span></span>
 
   
   
-<span data-ttu-id="bc042-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="bc042-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="7cc6f-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="7cc6f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="bc042-105">オフラインの状態の API は、Microsoft Outlook 2013 および Microsoft Outlook 2010 でのユーザーの接続状態の変化を示すコールバックをサポートしています: からのオフライン中に Outlook 2013 または Outlook 2010 でオンラインにします。</span><span class="sxs-lookup"><span data-stu-id="bc042-105">The Offline State API supports callbacks indicating changes in a user's connection state in Microsoft Outlook 2013 and Microsoft Outlook 2010—for example, from being online in Outlook 2013 or Outlook 2010 to being offline.</span></span> <span data-ttu-id="bc042-106">API は、特定のユーザー ・ アカウント ・ プロファイルには、このような変更を追跡するために Outlook 2013 または Outlook 2010 でのオフラインのグローバル オブジェクトを使用します。</span><span class="sxs-lookup"><span data-stu-id="bc042-106">The API uses a global offline object in Outlook 2013 or Outlook 2010 to track such changes for a given user account profile.</span></span> <span data-ttu-id="bc042-107">通知は、コールバックの形式でのみサポートされています。</span><span class="sxs-lookup"><span data-stu-id="bc042-107">Notification is the only supported form of callback.</span></span> <span data-ttu-id="bc042-108">この API のクライアントとしてこのような接続状態の変更の通知を受ける必要があるメールのプロバイダー、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="bc042-108">As clients of this API, mail providers who want to be notified of such connection state changes do the following:</span></span>
+<span data-ttu-id="7cc6f-105">オフライン状態 API は、microsoft outlook 2013 および microsoft outlook 2010 でユーザーの接続状態が変更されたことを示すコールバックをサポートします (たとえば、outlook 2013 または outlook 2010 でオフラインになっている場合)。</span><span class="sxs-lookup"><span data-stu-id="7cc6f-105">The Offline State API supports callbacks indicating changes in a user's connection state in Microsoft Outlook 2013 and Microsoft Outlook 2010—for example, from being online in Outlook 2013 or Outlook 2010 to being offline.</span></span> <span data-ttu-id="7cc6f-106">この API は、outlook 2013 または outlook 2010 のグローバルオフラインオブジェクトを使用して、特定のユーザーアカウントプロファイルに対する変更を追跡します。</span><span class="sxs-lookup"><span data-stu-id="7cc6f-106">The API uses a global offline object in Outlook 2013 or Outlook 2010 to track such changes for a given user account profile.</span></span> <span data-ttu-id="7cc6f-107">通知は、サポートされているコールバックの唯一の形式です。</span><span class="sxs-lookup"><span data-stu-id="7cc6f-107">Notification is the only supported form of callback.</span></span> <span data-ttu-id="7cc6f-108">この API のクライアントとして、このような接続状態の変更を通知するメールプロバイダーは、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="7cc6f-108">As clients of this API, mail providers who want to be notified of such connection state changes do the following:</span></span>
   
-1. <span data-ttu-id="bc042-109">**[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** を実装します。</span><span class="sxs-lookup"><span data-stu-id="bc042-109">Implement **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)**.</span></span> 
+1. <span data-ttu-id="7cc6f-109">**[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** を実装します。</span><span class="sxs-lookup"><span data-stu-id="7cc6f-109">Implement **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)**.</span></span> 
     
-2. <span data-ttu-id="bc042-110">**[HrOpenOfflineObj](hropenofflineobj.md)** を使用して特定のプロファイルに既存のオフライン オブジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="bc042-110">Open an existing offline object for a specific profile using **[HrOpenOfflineObj](hropenofflineobj.md)**.</span></span> 
+2. <span data-ttu-id="7cc6f-110">**[hro・ offlineofflineobj](hropenofflineobj.md)** を使用して、特定のプロファイルの既存のオフラインオブジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="7cc6f-110">Open an existing offline object for a specific profile using **[HrOpenOfflineObj](hropenofflineobj.md)**.</span></span> 
     
-3. <span data-ttu-id="bc042-111">オブジェクトに**[IMAPIOffline::GetCapabilities](imapioffline-getcapabilities.md)** を使用して、オンラインまたはオフラインの通知を提供する機能があるかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="bc042-111">Determine if the object has the capability of providing online or offline notifications using **[IMAPIOffline::GetCapabilities](imapioffline-getcapabilities.md)**.</span></span> 
+3. <span data-ttu-id="7cc6f-111">オブジェクトに、 **[imapioffline:: getcapabilities](imapioffline-getcapabilities.md)** を使用してオンラインまたはオフライン通知を提供する機能があるかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="7cc6f-111">Determine if the object has the capability of providing online or offline notifications using **[IMAPIOffline::GetCapabilities](imapioffline-getcapabilities.md)**.</span></span> 
     
-4. <span data-ttu-id="bc042-112">**[IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)** を使用して通知をオンラインまたはオフラインのオブジェクトを登録します。</span><span class="sxs-lookup"><span data-stu-id="bc042-112">Register the object for online or offline notifications using **[IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)**.</span></span> <span data-ttu-id="bc042-113">メール プロバイダーでは、2013 の Outlook または Outlook 2010 送信する**IMAPIOfflineNotify**を使用して通知を受信できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="bc042-113">Mail providers can now receive notifications that Outlook 2013 or Outlook 2010 send using **IMAPIOfflineNotify**.</span></span> 
+4. <span data-ttu-id="7cc6f-112">**[IMAPIOfflineMgr:: Advise](imapiofflinemgr-advise.md)** を使用して、オブジェクトをオンライン通知またはオフライン通知用に登録します。</span><span class="sxs-lookup"><span data-stu-id="7cc6f-112">Register the object for online or offline notifications using **[IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)**.</span></span> <span data-ttu-id="7cc6f-113">メールプロバイダーは、outlook 2013 または outlook 2010 で**IMAPIOfflineNotify**を使用して送信された通知を受信できるようになります。</span><span class="sxs-lookup"><span data-stu-id="7cc6f-113">Mail providers can now receive notifications that Outlook 2013 or Outlook 2010 send using **IMAPIOfflineNotify**.</span></span> 
     
-5. <span data-ttu-id="bc042-114">シャット ダウン時に**[IMAPIOfflineMgr::Unadvise](imapiofflinemgr-unadvise.md)** を使用して、オンラインとオフラインの通知の登録を削除します。</span><span class="sxs-lookup"><span data-stu-id="bc042-114">On shutdown, remove registration for online and offline notifications using **[IMAPIOfflineMgr::Unadvise](imapiofflinemgr-unadvise.md)**.</span></span> 
+5. <span data-ttu-id="7cc6f-114">シャットダウン時に、 **[IMAPIOfflineMgr:: アドバイズ](imapiofflinemgr-unadvise.md)** 中止を使用してオンラインおよびオフライン通知の登録を削除します。</span><span class="sxs-lookup"><span data-stu-id="7cc6f-114">On shutdown, remove registration for online and offline notifications using **[IMAPIOfflineMgr::Unadvise](imapiofflinemgr-unadvise.md)**.</span></span> 
     
 > [!NOTE]
-> <span data-ttu-id="bc042-115">一般に、Outlook 2013 と Outlook 2010 のオンライン/オフラインでの変更とその他の変更は、クライアントに通知できますが、オフライン状態の API は、オンラインとオフラインの変更の通知のみをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="bc042-115">In general, Outlook 2013 and Outlook 2010 can notify a client of online/offline changes as well as other changes, but the Offline State API supports only notifications for online/offline changes.</span></span> <span data-ttu-id="bc042-116">クライアントは、他のすべての通知を無視してください。</span><span class="sxs-lookup"><span data-stu-id="bc042-116">The client should ignore all other notifications.</span></span> <span data-ttu-id="bc042-117">詳細については、 **[IMAPIOfflineNotify::Notify](imapiofflinenotify-notify.md)** および**[MAPIOFFLINE_NOTIFY](mapioffline_notify.md)** を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bc042-117">For more information, see **[IMAPIOfflineNotify::Notify](imapiofflinenotify-notify.md)** and **[MAPIOFFLINE_NOTIFY](mapioffline_notify.md)**.</span></span> 
+> <span data-ttu-id="7cc6f-115">一般に、outlook 2013 および outlook 2010 は、オンライン/オフライン変更のクライアントに加えて、他の変更を通知することができますが、オフライン状態 API はオンライン/オフラインの変更に関する通知のみをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="7cc6f-115">In general, Outlook 2013 and Outlook 2010 can notify a client of online/offline changes as well as other changes, but the Offline State API supports only notifications for online/offline changes.</span></span> <span data-ttu-id="7cc6f-116">クライアントは、他のすべての通知を無視する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7cc6f-116">The client should ignore all other notifications.</span></span> <span data-ttu-id="7cc6f-117">詳細については、「 **[IMAPIOfflineNotify:: Notify](imapiofflinenotify-notify.md)** and **[MAPIOFFLINE_NOTIFY](mapioffline_notify.md)**」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7cc6f-117">For more information, see **[IMAPIOfflineNotify::Notify](imapiofflinenotify-notify.md)** and **[MAPIOFFLINE_NOTIFY](mapioffline_notify.md)**.</span></span> 
   
- <span data-ttu-id="bc042-118">オフライン状態 API を使用するクライアントの例は、[のサンプル オフライン状態がアドインを](about-the-sample-offline-state-add-in.md)参照してください。</span><span class="sxs-lookup"><span data-stu-id="bc042-118">For an example of a client that uses the Offline State API, see [About the Sample Offline State Add-in](about-the-sample-offline-state-add-in.md).</span></span> <span data-ttu-id="bc042-119">オフライン状態のサンプル アドインは、COM アドインの API を使用して、オフラインの状態を監視し、接続状態を変更します。</span><span class="sxs-lookup"><span data-stu-id="bc042-119">The Sample Offline State Add-in is a COM add-in that uses the Offline State API to monitor and change the connection state.</span></span>
+ <span data-ttu-id="7cc6f-118">オフライン状態 API を使用するクライアントの例については、「[サンプルのオフライン状態アドインについ](about-the-sample-offline-state-add-in.md)て」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7cc6f-118">For an example of a client that uses the Offline State API, see [About the Sample Offline State Add-in](about-the-sample-offline-state-add-in.md).</span></span> <span data-ttu-id="7cc6f-119">サンプルのオフライン状態アドインは、オフライン状態 API を使用して接続状態を監視および変更する COM アドインです。</span><span class="sxs-lookup"><span data-stu-id="7cc6f-119">The Sample Offline State Add-in is a COM add-in that uses the Offline State API to monitor and change the connection state.</span></span>
   
-<span data-ttu-id="bc042-120">この API には、次のものが用意されています。</span><span class="sxs-lookup"><span data-stu-id="bc042-120">This API provides the following:</span></span>
+<span data-ttu-id="7cc6f-120">この API は、次の機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="7cc6f-120">This API provides the following:</span></span>
   
-<span data-ttu-id="bc042-121">定義</span><span class="sxs-lookup"><span data-stu-id="bc042-121">Definitions:</span></span>
+<span data-ttu-id="7cc6f-121">定義</span><span class="sxs-lookup"><span data-stu-id="7cc6f-121">Definitions:</span></span>
   
-- [<span data-ttu-id="bc042-122">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="bc042-122">MAPI Constants</span></span>](mapi-constants.md)
+- [<span data-ttu-id="7cc6f-122">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="7cc6f-122">MAPI Constants</span></span>](mapi-constants.md)
     
-<span data-ttu-id="bc042-123">データ型:</span><span class="sxs-lookup"><span data-stu-id="bc042-123">Data types:</span></span>
+<span data-ttu-id="7cc6f-123">データ型:</span><span class="sxs-lookup"><span data-stu-id="7cc6f-123">Data types:</span></span>
   
-- <span data-ttu-id="bc042-124">**[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)**</span><span class="sxs-lookup"><span data-stu-id="bc042-124">**[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)**</span></span>
+- <span data-ttu-id="7cc6f-124">**[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)**</span><span class="sxs-lookup"><span data-stu-id="7cc6f-124">**[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)**</span></span>
     
-- <span data-ttu-id="bc042-125">**[MAPIOFFLINE_CALLBACK_TYPE](mapioffline_callback_type.md)**</span><span class="sxs-lookup"><span data-stu-id="bc042-125">**[MAPIOFFLINE_CALLBACK_TYPE](mapioffline_callback_type.md)**</span></span>
+- <span data-ttu-id="7cc6f-125">**[MAPIOFFLINE_CALLBACK_TYPE](mapioffline_callback_type.md)**</span><span class="sxs-lookup"><span data-stu-id="7cc6f-125">**[MAPIOFFLINE_CALLBACK_TYPE](mapioffline_callback_type.md)**</span></span>
     
-- <span data-ttu-id="bc042-126">**[MAPIOFFLINE_NOTIFY](mapioffline_notify.md)**</span><span class="sxs-lookup"><span data-stu-id="bc042-126">**[MAPIOFFLINE_NOTIFY](mapioffline_notify.md)**</span></span>
+- <span data-ttu-id="7cc6f-126">**[MAPIOFFLINE_NOTIFY](mapioffline_notify.md)**</span><span class="sxs-lookup"><span data-stu-id="7cc6f-126">**[MAPIOFFLINE_NOTIFY](mapioffline_notify.md)**</span></span>
     
-<span data-ttu-id="bc042-127">関数</span><span class="sxs-lookup"><span data-stu-id="bc042-127">Functions:</span></span>
+<span data-ttu-id="7cc6f-127">関数</span><span class="sxs-lookup"><span data-stu-id="7cc6f-127">Functions:</span></span>
   
-- <span data-ttu-id="bc042-128">**[HrOpenOfflineObj](hropenofflineobj.md)**</span><span class="sxs-lookup"><span data-stu-id="bc042-128">**[HrOpenOfflineObj](hropenofflineobj.md)**</span></span>
+- <span data-ttu-id="7cc6f-128">**[HrOpenOfflineObj](hropenofflineobj.md)**</span><span class="sxs-lookup"><span data-stu-id="7cc6f-128">**[HrOpenOfflineObj](hropenofflineobj.md)**</span></span>
     
-<span data-ttu-id="bc042-129">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="bc042-129">Interfaces:</span></span>
+<span data-ttu-id="7cc6f-129">インターフェイス</span><span class="sxs-lookup"><span data-stu-id="7cc6f-129">Interfaces:</span></span>
   
-- <span data-ttu-id="bc042-130">**[IMAPIOffline](imapiofflineiunknown.md)**</span><span class="sxs-lookup"><span data-stu-id="bc042-130">**[IMAPIOffline](imapiofflineiunknown.md)**</span></span>
+- <span data-ttu-id="7cc6f-130">**[imapioffline](imapiofflineiunknown.md)**</span><span class="sxs-lookup"><span data-stu-id="7cc6f-130">**[IMAPIOffline](imapiofflineiunknown.md)**</span></span>
     
-- <span data-ttu-id="bc042-131">**[IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)**</span><span class="sxs-lookup"><span data-stu-id="bc042-131">**[IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)**</span></span>
+- <span data-ttu-id="7cc6f-131">**[IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)**</span><span class="sxs-lookup"><span data-stu-id="7cc6f-131">**[IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)**</span></span>
     
-- <span data-ttu-id="bc042-132">**[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)**</span><span class="sxs-lookup"><span data-stu-id="bc042-132">**[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)**</span></span>
+- <span data-ttu-id="7cc6f-132">**[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)**</span><span class="sxs-lookup"><span data-stu-id="7cc6f-132">**[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)**</span></span>
     
 

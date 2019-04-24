@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8316ff89-104d-43fd-902b-476fe567e23b
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: fe722e8723fdc3868cbbc3188f03e13ef3f466f3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: 8ccb732dd587b2e5107290b2db7c48e85d0145d4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317333"
 ---
-# <a name="imsgstoregetoutgoingqueue"></a><span data-ttu-id="5828d-103">IMsgStore::GetOutgoingQueue</span><span class="sxs-lookup"><span data-stu-id="5828d-103">IMsgStore::GetOutgoingQueue</span></span>
+# <a name="imsgstoregetoutgoingqueue"></a><span data-ttu-id="fbe2e-103">IMsgStore::GetOutgoingQueue</span><span class="sxs-lookup"><span data-stu-id="fbe2e-103">IMsgStore::GetOutgoingQueue</span></span>
 
   
   
-<span data-ttu-id="5828d-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="5828d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="fbe2e-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="fbe2e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="5828d-105">発信キュー テーブル、メッセージ ストアの送信キュー内のすべてのメッセージに関する情報が含まれているテーブルへのアクセスを提供します。</span><span class="sxs-lookup"><span data-stu-id="5828d-105">Provides access to the outgoing queue table, a table that has information about all of the messages in the message store's outgoing queue.</span></span> <span data-ttu-id="5828d-106">このメソッドは、MAPI スプーラーによってのみ呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="5828d-106">This method is called only by the MAPI spooler.</span></span>
+<span data-ttu-id="fbe2e-105">送信キューテーブル (メッセージストアの送信キューにあるすべてのメッセージに関する情報を含むテーブル) へのアクセスを提供します。</span><span class="sxs-lookup"><span data-stu-id="fbe2e-105">Provides access to the outgoing queue table, a table that has information about all of the messages in the message store's outgoing queue.</span></span> <span data-ttu-id="fbe2e-106">このメソッドは、MAPI スプーラーによってのみ呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="fbe2e-106">This method is called only by the MAPI spooler.</span></span>
   
 ```cpp
 HRESULT GetOutgoingQueue(
@@ -34,39 +34,39 @@ HRESULT GetOutgoingQueue(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="5828d-107">�p�����[�^�[</span><span class="sxs-lookup"><span data-stu-id="5828d-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="fbe2e-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="fbe2e-107">Parameters</span></span>
 
- <span data-ttu-id="5828d-108">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="5828d-108">_ulFlags_</span></span>
+ <span data-ttu-id="fbe2e-108">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="fbe2e-108">_ulFlags_</span></span>
   
-> <span data-ttu-id="5828d-109">[����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B</span><span class="sxs-lookup"><span data-stu-id="5828d-109">[in] Reserved; must be zero.</span></span>
+> <span data-ttu-id="fbe2e-109">[����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B</span><span class="sxs-lookup"><span data-stu-id="fbe2e-109">[in] Reserved; must be zero.</span></span>
     
- <span data-ttu-id="5828d-110">_lppTable_</span><span class="sxs-lookup"><span data-stu-id="5828d-110">_lppTable_</span></span>
+ <span data-ttu-id="fbe2e-110">_lpptable_</span><span class="sxs-lookup"><span data-stu-id="fbe2e-110">_lppTable_</span></span>
   
-> <span data-ttu-id="5828d-111">[out]発信キュー テーブルへのポインターへのポインター。</span><span class="sxs-lookup"><span data-stu-id="5828d-111">[out] A pointer to a pointer to the outgoing queue table.</span></span>
+> <span data-ttu-id="fbe2e-111">読み上げ送信キューテーブルへのポインターへのポインター。</span><span class="sxs-lookup"><span data-stu-id="fbe2e-111">[out] A pointer to a pointer to the outgoing queue table.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="5828d-112">�߂�l</span><span class="sxs-lookup"><span data-stu-id="5828d-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="fbe2e-112">戻り値</span><span class="sxs-lookup"><span data-stu-id="fbe2e-112">Return value</span></span>
 
-<span data-ttu-id="5828d-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="5828d-113">S_OK</span></span> 
+<span data-ttu-id="fbe2e-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="fbe2e-113">S_OK</span></span> 
   
-> <span data-ttu-id="5828d-114">発信キューのテーブルが正常に返されました。</span><span class="sxs-lookup"><span data-stu-id="5828d-114">The outgoing queue table was successfully returned.</span></span>
+> <span data-ttu-id="fbe2e-114">送信キューテーブルが正常に返されました。</span><span class="sxs-lookup"><span data-stu-id="fbe2e-114">The outgoing queue table was successfully returned.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="5828d-115">注釈</span><span class="sxs-lookup"><span data-stu-id="5828d-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="fbe2e-115">解説</span><span class="sxs-lookup"><span data-stu-id="fbe2e-115">Remarks</span></span>
 
-<span data-ttu-id="5828d-116">**IMsgStore::GetOutgoingQueue**メソッドでは、MAPI スプーラーに送信メッセージのメッセージ ストアのキューを表示するテーブルへのアクセスを提供します。</span><span class="sxs-lookup"><span data-stu-id="5828d-116">The **IMsgStore::GetOutgoingQueue** method provides the MAPI spooler with access to the table that shows the message store's queue of outgoing messages.</span></span> <span data-ttu-id="5828d-117">通常、メッセージは、 [IMessage::SubmitMessage](imessage-submitmessage.md)メソッドが呼び出された後、発信キュー テーブルに配置されます。</span><span class="sxs-lookup"><span data-stu-id="5828d-117">Typically, messages are placed in the outgoing queue table after their [IMessage::SubmitMessage](imessage-submitmessage.md) method is called.</span></span> <span data-ttu-id="5828d-118">ただし、提出書類の順序は、前処理およびトランスポート プロバイダーへの送信の順序に影響するためいくつかのメッセージを送信するためにマークされている可能性がありますテーブルに表示されない、送信キューすぐにします。</span><span class="sxs-lookup"><span data-stu-id="5828d-118">However, because the order of submission affects the order of preprocessing and submission to the transport provider, some messages that have been marked for sending might not appear in the outgoing queue table immediately.</span></span> 
+<span data-ttu-id="fbe2e-116">**IMsgStore:: getoutgoingqueue**メソッドは、メッセージストアの送信メッセージのキューを示すテーブルへのアクセス権を MAPI スプーラーに提供します。</span><span class="sxs-lookup"><span data-stu-id="fbe2e-116">The **IMsgStore::GetOutgoingQueue** method provides the MAPI spooler with access to the table that shows the message store's queue of outgoing messages.</span></span> <span data-ttu-id="fbe2e-117">通常、メッセージは[IMessage:: submitmessage](imessage-submitmessage.md)メソッドが呼び出された後に、送信キューテーブルに配置されます。</span><span class="sxs-lookup"><span data-stu-id="fbe2e-117">Typically, messages are placed in the outgoing queue table after their [IMessage::SubmitMessage](imessage-submitmessage.md) method is called.</span></span> <span data-ttu-id="fbe2e-118">ただし、送信の順序は、トランスポートプロバイダーへの前処理と送信の順序に影響するため、送信用にマークされているメッセージの一部は、すぐに送信キューテーブルに表示されない場合があります。</span><span class="sxs-lookup"><span data-stu-id="fbe2e-118">However, because the order of submission affects the order of preprocessing and submission to the transport provider, some messages that have been marked for sending might not appear in the outgoing queue table immediately.</span></span> 
   
-## <a name="notes-to-implementers"></a><span data-ttu-id="5828d-119">実装者へのメモ</span><span class="sxs-lookup"><span data-stu-id="5828d-119">Notes to implementers</span></span>
+## <a name="notes-to-implementers"></a><span data-ttu-id="fbe2e-119">実装に関するメモ</span><span class="sxs-lookup"><span data-stu-id="fbe2e-119">Notes to implementers</span></span>
 
-<span data-ttu-id="5828d-120">発信キュー テーブル内の列として含める必要があるプロパティの一覧では、[送信キューのテーブル](outgoing-queue-tables.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5828d-120">For a list of the properties that must be included as columns in your outgoing queue table, see [Outgoing Queue Tables](outgoing-queue-tables.md).</span></span> 
+<span data-ttu-id="fbe2e-120">送信キューテーブルに列として含める必要があるプロパティの一覧については、「[送信キューテーブル](outgoing-queue-tables.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fbe2e-120">For a list of the properties that must be included as columns in your outgoing queue table, see [Outgoing Queue Tables](outgoing-queue-tables.md).</span></span> 
   
-<span data-ttu-id="5828d-121">MAPI スプーラーが送信時の順序を昇順でのメッセージ ストアからメッセージを受け付けるように設計されているためか、この順序と一致または既定の並べ替え順序として設定する発信キュー テーブルを並べ替えるには、MAPI スプーラーを許可します。</span><span class="sxs-lookup"><span data-stu-id="5828d-121">Because the MAPI spooler is designed to accept messages from a message store in ascending order of submission time, either allow the MAPI spooler to sort the outgoing queue table to match this order or establish it as the default sort order.</span></span>
+<span data-ttu-id="fbe2e-121">mapi スプーラーは、送信時間の昇順でメッセージストアからのメッセージを受信するように設計されているため、mapi スプーラーで送信キューテーブルを並べ替えて、この順序に一致するようにするか、または既定の並べ替え順序として設定することができます。</span><span class="sxs-lookup"><span data-stu-id="fbe2e-121">Because the MAPI spooler is designed to accept messages from a message store in ascending order of submission time, either allow the MAPI spooler to sort the outgoing queue table to match this order or establish it as the default sort order.</span></span>
   
-<span data-ttu-id="5828d-122">通知を送信メッセージ キュー テーブルのサポート キューの内容を変更すると、MAPI スプーラーに通知することを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5828d-122">You must support notifications for the outgoing message queue table, ensuring that the MAPI spooler is notified when the contents of the queue change.</span></span> 
+<span data-ttu-id="fbe2e-122">キューの内容が変更されたときに MAPI スプーラーに通知されるように、送信メッセージキューテーブルの通知をサポートする必要があります。</span><span class="sxs-lookup"><span data-stu-id="fbe2e-122">You must support notifications for the outgoing message queue table, ensuring that the MAPI spooler is notified when the contents of the queue change.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="5828d-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="5828d-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fbe2e-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="fbe2e-123">See also</span></span>
 
 
 
-[<span data-ttu-id="5828d-124">IMessage::SubmitMessage</span><span class="sxs-lookup"><span data-stu-id="5828d-124">IMessage::SubmitMessage</span></span>](imessage-submitmessage.md)
+[<span data-ttu-id="fbe2e-124">IMessage::SubmitMessage</span><span class="sxs-lookup"><span data-stu-id="fbe2e-124">IMessage::SubmitMessage</span></span>](imessage-submitmessage.md)
   
-[<span data-ttu-id="5828d-125">IMsgStore: IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="5828d-125">IMsgStore : IMAPIProp</span></span>](imsgstoreimapiprop.md)
+[<span data-ttu-id="fbe2e-125">IMsgStore: IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="fbe2e-125">IMsgStore : IMAPIProp</span></span>](imsgstoreimapiprop.md)
 

@@ -11,21 +11,21 @@ api_name:
 api_type:
 - COM
 ms.assetid: c77a8ef1-0730-d458-b35f-451d3f450fac
-description: '�ŏI�X�V��: 2011�N7��23��'
-ms.openlocfilehash: 0211a326e94c5847c040040e0e0e4e9ddd1d760d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+description: '最終更新日: 2011 年 7 月 23 日'
+ms.openlocfilehash: b76c55fd9ddc3aa7698f75aa6ce965544b2c9aae
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32317438"
 ---
-# <a name="imscapabilitiesgetcapabilities"></a><span data-ttu-id="85ef3-103">IMSCapabilities::GetCapabilities</span><span class="sxs-lookup"><span data-stu-id="85ef3-103">IMSCapabilities::GetCapabilities</span></span>
+# <a name="imscapabilitiesgetcapabilities"></a><span data-ttu-id="968c5-103">IMSCapabilities::GetCapabilities</span><span class="sxs-lookup"><span data-stu-id="968c5-103">IMSCapabilities::GetCapabilities</span></span>
 
   
   
-<span data-ttu-id="85ef3-104">**適用されます**: Outlook 2013 |Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="85ef3-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="968c5-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="968c5-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="85ef3-105">ストアのサポートに関する情報を取得は、指定されたセレクターに基づいています。</span><span class="sxs-lookup"><span data-stu-id="85ef3-105">Gets information about what a store can support based on the specified selector.</span></span>
+<span data-ttu-id="968c5-105">指定したセレクターに基づいてストアがサポートできる内容に関する情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="968c5-105">Gets information about what a store can support based on the specified selector.</span></span>
   
 ```cpp
 ULONG GetCapabilities( 
@@ -33,24 +33,24 @@ MSCAP_SELECTOR mscapSelector
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="85ef3-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="85ef3-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="968c5-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="968c5-106">Parameters</span></span>
 
- <span data-ttu-id="85ef3-107">*mscapSelector*</span><span class="sxs-lookup"><span data-stu-id="85ef3-107">*mscapSelector*</span></span> 
+ <span data-ttu-id="968c5-107">*getcapabilities*</span><span class="sxs-lookup"><span data-stu-id="968c5-107">*mscapSelector*</span></span> 
   
-> <span data-ttu-id="85ef3-108">[in]セレクターを取得する機能を示します。</span><span class="sxs-lookup"><span data-stu-id="85ef3-108">[in] Selector indicating which capabilities to return.</span></span>
+> <span data-ttu-id="968c5-108">順番返す機能を示すセレクター。</span><span class="sxs-lookup"><span data-stu-id="968c5-108">[in] Selector indicating which capabilities to return.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="85ef3-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="85ef3-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="968c5-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="968c5-109">Return value</span></span>
 
-<span data-ttu-id="85ef3-110">MSCAP_SECURE_FOLDER_HOMEPAGES</span><span class="sxs-lookup"><span data-stu-id="85ef3-110">MSCAP_SECURE_FOLDER_HOMEPAGES</span></span>
+<span data-ttu-id="968c5-110">MSCAP_SECURE_FOLDER_HOMEPAGES</span><span class="sxs-lookup"><span data-stu-id="968c5-110">MSCAP_SECURE_FOLDER_HOMEPAGES</span></span>
   
-> <span data-ttu-id="85ef3-111">既定以外のストア内のフォルダーのホーム ページをサポートします。</span><span class="sxs-lookup"><span data-stu-id="85ef3-111">Support for folder homepages in a non-default store.</span></span> <span data-ttu-id="85ef3-112">これは*mscapSelector*で**MSCAP_SEL_FOLDER**が指定されている場合に返されます。</span><span class="sxs-lookup"><span data-stu-id="85ef3-112">This can be returned if **MSCAP_SEL_FOLDER** is specified in  *mscapSelector*  .</span></span> 
+> <span data-ttu-id="968c5-111">既定以外のストアでのフォルダー homepages のサポート。</span><span class="sxs-lookup"><span data-stu-id="968c5-111">Support for folder homepages in a non-default store.</span></span> <span data-ttu-id="968c5-112">これは、 **MSCAP_SEL_FOLDER**が*getcapabilities*で指定されている場合に返されることがあります。</span><span class="sxs-lookup"><span data-stu-id="968c5-112">This can be returned if **MSCAP_SEL_FOLDER** is specified in  *mscapSelector*  .</span></span> 
     
-<span data-ttu-id="85ef3-113">MSCAP_RES_ANNOTATION</span><span class="sxs-lookup"><span data-stu-id="85ef3-113">MSCAP_RES_ANNOTATION</span></span>
+<span data-ttu-id="968c5-113">MSCAP_RES_ANNOTATION</span><span class="sxs-lookup"><span data-stu-id="968c5-113">MSCAP_RES_ANNOTATION</span></span>
   
-> <span data-ttu-id="85ef3-114">制限に無効なプロパティなどのすべての無効な引数が含まれている場合、ストアは無効な引数を無視し、有効な引数だけを処理します。</span><span class="sxs-lookup"><span data-stu-id="85ef3-114">If a restriction contains any invalid arguments such as invalid properties, the store ignores the invalid arguments and processes only the valid arguments.</span></span> <span data-ttu-id="85ef3-115">これは*mscapSelector*で**MSCAP_SEL_RESTRICTION**が指定されている場合に返されます。</span><span class="sxs-lookup"><span data-stu-id="85ef3-115">This can be returned if **MSCAP_SEL_RESTRICTION** is specified in  *mscapSelector*  .</span></span> 
+> <span data-ttu-id="968c5-114">無効なプロパティなどの無効な引数が制限に含まれている場合、ストアは無効な引数を無視し、有効な引数のみを処理します。</span><span class="sxs-lookup"><span data-stu-id="968c5-114">If a restriction contains any invalid arguments such as invalid properties, the store ignores the invalid arguments and processes only the valid arguments.</span></span> <span data-ttu-id="968c5-115">これは、 **MSCAP_SEL_RESTRICTION**が*getcapabilities*で指定されている場合に返されることがあります。</span><span class="sxs-lookup"><span data-stu-id="968c5-115">This can be returned if **MSCAP_SEL_RESTRICTION** is specified in  *mscapSelector*  .</span></span> 
     
-<span data-ttu-id="85ef3-116">NULL</span><span class="sxs-lookup"><span data-stu-id="85ef3-116">NULL</span></span>
+<span data-ttu-id="968c5-116">NULL</span><span class="sxs-lookup"><span data-stu-id="968c5-116">NULL</span></span>
   
-> <span data-ttu-id="85ef3-117">ストアは、指定されたセレクターに基づくすべての機能をサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="85ef3-117">The store does not support any capability based on the given selector.</span></span>
+> <span data-ttu-id="968c5-117">ストアは、指定されたセレクターに基づく機能をサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="968c5-117">The store does not support any capability based on the given selector.</span></span>
     
 

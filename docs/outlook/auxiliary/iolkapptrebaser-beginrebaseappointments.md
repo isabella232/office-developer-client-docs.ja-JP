@@ -8,19 +8,19 @@ localization_priority: Normal
 ms.assetid: ed50422e-9edf-4b73-1789-340b70532621
 description: 予定を再配置する通常IOlkApptRebaser::EndEnumerateAppointmentsから取得予定の一覧を指定するためのタスクを開始します。
 ms.openlocfilehash: f0f2377f30de7688aaa4196e3a046c664c2128aa
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25396093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32321911"
 ---
-# <a name="iolkapptrebaserbeginrebaseappointments"></a><span data-ttu-id="1e8d6-103">IOlkApptRebaser::BeginRebaseAppointments</span><span class="sxs-lookup"><span data-stu-id="1e8d6-103">IOlkApptRebaser::BeginRebaseAppointments</span></span>
+# <a name="iolkapptrebaserbeginrebaseappointments"></a><span data-ttu-id="c1220-103">IOlkApptRebaser::BeginRebaseAppointments</span><span class="sxs-lookup"><span data-stu-id="c1220-103">IOlkApptRebaser::BeginRebaseAppointments</span></span>
 
-<span data-ttu-id="1e8d6-104">予定を再配置する通常[IOlkApptRebaser::EndEnumerateAppointments](iolkapptrebaser-endenumerateappointments.md)から取得予定の一覧を指定するためのタスクを開始します。</span><span class="sxs-lookup"><span data-stu-id="1e8d6-104">Begins a task for appointment rebasing given a list of appointments, usually obtained from [IOlkApptRebaser::EndEnumerateAppointments](iolkapptrebaser-endenumerateappointments.md).</span></span>
+<span data-ttu-id="c1220-104">予定を再配置する通常[IOlkApptRebaser::EndEnumerateAppointments](iolkapptrebaser-endenumerateappointments.md)から取得予定の一覧を指定するためのタスクを開始します。</span><span class="sxs-lookup"><span data-stu-id="c1220-104">Begins a task for appointment rebasing given a list of appointments, usually obtained from [IOlkApptRebaser::EndEnumerateAppointments](iolkapptrebaser-endenumerateappointments.md).</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="1e8d6-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="1e8d6-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="c1220-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="c1220-105">Quick info</span></span>
 
-<span data-ttu-id="1e8d6-106">[IOlkApptRebaser](iolkapptrebaser.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1e8d6-106">See [IOlkApptRebaser](iolkapptrebaser.md).</span></span>
+<span data-ttu-id="c1220-106">[IOlkApptRebaser](iolkapptrebaser.md) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c1220-106">See [IOlkApptRebaser](iolkapptrebaser.md).</span></span>
   
 ```cpp
 HRESULT BeginRebaseAppointments( 
@@ -30,33 +30,33 @@ HRESULT BeginRebaseAppointments(
     void **ppContext);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="1e8d6-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="1e8d6-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="c1220-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="c1220-107">Parameters</span></span>
 
-<span data-ttu-id="1e8d6-108">_pRows_</span><span class="sxs-lookup"><span data-stu-id="1e8d6-108">_pRows_</span></span>
+<span data-ttu-id="c1220-108">_prows_</span><span class="sxs-lookup"><span data-stu-id="c1220-108">_pRows_</span></span>
   
-> <span data-ttu-id="1e8d6-p101">[in]必要があります。再配置する必要がある予定を記述する[SRowSet](https://msdn.microsoft.com/library/7e3761be-afd6-46cb-9a08-25e9016c1241%28Office.15%29.aspx)構造体へのポインター。通常、この構造体は[IOlkApptRebaser::EndEnumerateAppointments](iolkapptrebaser-endenumerateappointments.md)の前回の呼び出しから取得されます。</span><span class="sxs-lookup"><span data-stu-id="1e8d6-p101">[in] Required. A pointer to an [SRowSet](https://msdn.microsoft.com/library/7e3761be-afd6-46cb-9a08-25e9016c1241%28Office.15%29.aspx) structure that describes the appointments that need rebasing. This structure is usually obtained from a prior call to [IOlkApptRebaser::EndEnumerateAppointments](iolkapptrebaser-endenumerateappointments.md).</span></span>
+> <span data-ttu-id="c1220-p101">[in]必要があります。再配置する必要がある予定を記述する[SRowSet](https://msdn.microsoft.com/library/7e3761be-afd6-46cb-9a08-25e9016c1241%28Office.15%29.aspx)構造体へのポインター。通常、この構造体は[IOlkApptRebaser::EndEnumerateAppointments](iolkapptrebaser-endenumerateappointments.md)の前回の呼び出しから取得されます。</span><span class="sxs-lookup"><span data-stu-id="c1220-p101">[in] Required. A pointer to an [SRowSet](https://msdn.microsoft.com/library/7e3761be-afd6-46cb-9a08-25e9016c1241%28Office.15%29.aspx) structure that describes the appointments that need rebasing. This structure is usually obtained from a prior call to [IOlkApptRebaser::EndEnumerateAppointments](iolkapptrebaser-endenumerateappointments.md).</span></span>
     
-<span data-ttu-id="1e8d6-112">_pfnProgress_</span><span class="sxs-lookup"><span data-stu-id="1e8d6-112">_pfnProgress_</span></span>
+<span data-ttu-id="c1220-112">_pfnprogress_</span><span class="sxs-lookup"><span data-stu-id="c1220-112">_pfnProgress_</span></span>
   
-> <span data-ttu-id="1e8d6-p102">[in]省略可能です。進行状況が表示されることを再作業の進行状況関数へのポインター。 **PFNREBASETASKPROGRESS** は、tzmovelib.h で定義されます。</span><span class="sxs-lookup"><span data-stu-id="1e8d6-p102">[in] Optional. A pointer to a rebase task progress function to receive progress. **PFNREBASETASKPROGRESS** is defined in tzmovelib.h.</span></span> 
+> <span data-ttu-id="c1220-p102">[in]省略可能です。進行状況が表示されることを再作業の進行状況関数へのポインター。 **PFNREBASETASKPROGRESS** は、tzmovelib.h で定義されます。</span><span class="sxs-lookup"><span data-stu-id="c1220-p102">[in] Optional. A pointer to a rebase task progress function to receive progress. **PFNREBASETASKPROGRESS** is defined in tzmovelib.h.</span></span> 
     
-<span data-ttu-id="1e8d6-116">_pfnComplete_</span><span class="sxs-lookup"><span data-stu-id="1e8d6-116">_pfnComplete_</span></span>
+<span data-ttu-id="c1220-116">_pfncomplete_</span><span class="sxs-lookup"><span data-stu-id="c1220-116">_pfnComplete_</span></span>
   
-> <span data-ttu-id="1e8d6-p103">[out]省略可能です。再配置の完了の通知を受信するには、再作業完了関数へのポインター。 **PFNREBASETASKCOMPLETE** は、tzmovelib.h で定義されます。</span><span class="sxs-lookup"><span data-stu-id="1e8d6-p103">[out] Optional. A pointer to a rebase task completion function to receive notification of rebase completion. **PFNREBASETASKCOMPLETE** is defined in tzmovelib.h.</span></span> 
+> <span data-ttu-id="c1220-p103">[out]省略可能です。再配置の完了の通知を受信するには、再作業完了関数へのポインター。 **PFNREBASETASKCOMPLETE** は、tzmovelib.h で定義されます。</span><span class="sxs-lookup"><span data-stu-id="c1220-p103">[out] Optional. A pointer to a rebase task completion function to receive notification of rebase completion. **PFNREBASETASKCOMPLETE** is defined in tzmovelib.h.</span></span> 
     
-<span data-ttu-id="1e8d6-120">_ppContext_</span><span class="sxs-lookup"><span data-stu-id="1e8d6-120">_ppContext_</span></span>
+<span data-ttu-id="c1220-120">_ppcontext_</span><span class="sxs-lookup"><span data-stu-id="c1220-120">_ppContext_</span></span>
   
-> <span data-ttu-id="1e8d6-p104">[out]必要があります。返されるコンテキストへのポインターへのポインター。このコンテキストは、通常[IOlkApptRebaser::EndRebaseAppointments](iolkapptrebaser-endrebaseappointments.md)に渡されます。</span><span class="sxs-lookup"><span data-stu-id="1e8d6-p104">[out] Required. A pointer to a pointer to the returned context. This context will usually be passed to [IOlkApptRebaser::EndRebaseAppointments](iolkapptrebaser-endrebaseappointments.md).</span></span>
+> <span data-ttu-id="c1220-p104">[out]必要があります。返されるコンテキストへのポインターへのポインター。このコンテキストは、通常[IOlkApptRebaser::EndRebaseAppointments](iolkapptrebaser-endrebaseappointments.md)に渡されます。</span><span class="sxs-lookup"><span data-stu-id="c1220-p104">[out] Required. A pointer to a pointer to the returned context. This context will usually be passed to [IOlkApptRebaser::EndRebaseAppointments](iolkapptrebaser-endrebaseappointments.md).</span></span>
     
-## <a name="return-values"></a><span data-ttu-id="1e8d6-124">戻り値</span><span class="sxs-lookup"><span data-stu-id="1e8d6-124">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="c1220-124">戻り値</span><span class="sxs-lookup"><span data-stu-id="c1220-124">Return values</span></span>
 
-<span data-ttu-id="1e8d6-125">呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。</span><span class="sxs-lookup"><span data-stu-id="1e8d6-125">S_OK if the call succeeded; otherwise, an error code.</span></span>
+<span data-ttu-id="c1220-125">呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。</span><span class="sxs-lookup"><span data-stu-id="c1220-125">S_OK if the call succeeded; otherwise, an error code.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="1e8d6-126">解釈</span><span class="sxs-lookup"><span data-stu-id="1e8d6-126">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c1220-126">解説</span><span class="sxs-lookup"><span data-stu-id="c1220-126">Remarks</span></span>
 
-<span data-ttu-id="1e8d6-127">このタスクは、新しいスレッドで実行されます。</span><span class="sxs-lookup"><span data-stu-id="1e8d6-127">This task runs on a new thread.</span></span>
+<span data-ttu-id="c1220-127">このタスクは、新しいスレッドで実行されます。</span><span class="sxs-lookup"><span data-stu-id="c1220-127">This task runs on a new thread.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="1e8d6-128">関連項目</span><span class="sxs-lookup"><span data-stu-id="1e8d6-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c1220-128">関連項目</span><span class="sxs-lookup"><span data-stu-id="c1220-128">See also</span></span>
 
-- [<span data-ttu-id="1e8d6-129">夏時間のプログラムを使用して予定表を再配置する方法</span><span class="sxs-lookup"><span data-stu-id="1e8d6-129">About rebasing calendars programmatically for Daylight Saving Time</span></span>](about-rebasing-calendars-programmatically-for-daylight-saving-time.md)
+- [<span data-ttu-id="c1220-129">夏時間のプログラムを使用して予定表を再配置する方法</span><span class="sxs-lookup"><span data-stu-id="c1220-129">About rebasing calendars programmatically for Daylight Saving Time</span></span>](about-rebasing-calendars-programmatically-for-daylight-saving-time.md)
 

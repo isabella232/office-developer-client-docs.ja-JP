@@ -8,27 +8,27 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: d5c615eb811d5dc4a0f4170bfe432179acaa4666
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32320196"
 ---
-# <a name="get-members-of-an-exchange-distribution-list"></a><span data-ttu-id="5019a-102">Exchange 配布リストのメンバーを取得する</span><span class="sxs-lookup"><span data-stu-id="5019a-102">Get members of an Exchange distribution list</span></span>
+# <a name="get-members-of-an-exchange-distribution-list"></a><span data-ttu-id="2ec9c-102">Exchange 配布リストのメンバーを取得する</span><span class="sxs-lookup"><span data-stu-id="2ec9c-102">Get members of an Exchange distribution list</span></span>
 
-<span data-ttu-id="5019a-103">この例では、ユーザーが [ **名前の選択**] ダイアログ ボックスで Exchange の配布リストを選択できるようにし、配布リストを展開してメンバーを表示します。</span><span class="sxs-lookup"><span data-stu-id="5019a-103">This example prompts the user to select an Exchange distribution list from the **Select Names** dialog box and expands the distribution list to display its members.</span></span>
+<span data-ttu-id="2ec9c-103">この例では、ユーザーが [ **名前の選択**] ダイアログ ボックスで Exchange の配布リストを選択できるようにし、配布リストを展開してメンバーを表示します。</span><span class="sxs-lookup"><span data-stu-id="2ec9c-103">This example prompts the user to select an Exchange distribution list from the **Select Names** dialog box and expands the distribution list to display its members.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5019a-104">例</span><span class="sxs-lookup"><span data-stu-id="5019a-104">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2ec9c-104">例</span><span class="sxs-lookup"><span data-stu-id="2ec9c-104">Example</span></span>
 
-<span data-ttu-id="5019a-p101">このコード サンプルでは、[ExchangeDistributionList](https://msdn.microsoft.com/library/bb647622\(v=office.15\)) オブジェクトの [GetExchangeDistributionListMembers](https://msdn.microsoft.com/library/bb624320\(v=office.15\)) メソッドを呼び出して、リストのすべてのメンバーが格納されている [AddressEntries](https://msdn.microsoft.com/library/bb647650\(v=office.15\)) コレクションを取得します。配布リストは別の配布リストの中に入れ子にできるので、返される **AddressEntries** コレクションは任意の型の Exchange [AddressEntry](https://msdn.microsoft.com/library/bb609728\(v=office.15\)) オブジェクトを表すことができます。</span><span class="sxs-lookup"><span data-stu-id="5019a-p101">This code sample calls the [GetExchangeDistributionListMembers](https://msdn.microsoft.com/library/bb647622\(v=office.15\)) method of the [ExchangeDistributionList](https://msdn.microsoft.com/library/bb624320\(v=office.15\)) object to get an [AddressEntries](https://msdn.microsoft.com/library/bb647650\(v=office.15\)) collection that contains all the members of the list. Because distribution lists can be nested inside another distribution list, the returned **AddressEntries** collection can represent any type of Exchange [AddressEntry](https://msdn.microsoft.com/library/bb609728\(v=office.15\)) object.</span></span>
+<span data-ttu-id="2ec9c-p101">このコード サンプルでは、[ExchangeDistributionList](https://msdn.microsoft.com/library/bb647622\(v=office.15\)) オブジェクトの [GetExchangeDistributionListMembers](https://msdn.microsoft.com/library/bb624320\(v=office.15\)) メソッドを呼び出して、リストのすべてのメンバーが格納されている [AddressEntries](https://msdn.microsoft.com/library/bb647650\(v=office.15\)) コレクションを取得します。配布リストは別の配布リストの中に入れ子にできるので、返される **AddressEntries** コレクションは任意の型の Exchange [AddressEntry](https://msdn.microsoft.com/library/bb609728\(v=office.15\)) オブジェクトを表すことができます。</span><span class="sxs-lookup"><span data-stu-id="2ec9c-p101">This code sample calls the [GetExchangeDistributionListMembers](https://msdn.microsoft.com/library/bb647622\(v=office.15\)) method of the [ExchangeDistributionList](https://msdn.microsoft.com/library/bb624320\(v=office.15\)) object to get an [AddressEntries](https://msdn.microsoft.com/library/bb647650\(v=office.15\)) collection that contains all the members of the list. Because distribution lists can be nested inside another distribution list, the returned **AddressEntries** collection can represent any type of Exchange [AddressEntry](https://msdn.microsoft.com/library/bb609728\(v=office.15\)) object.</span></span>
 
 
 > [!NOTE]
-> <span data-ttu-id="5019a-p102">[!メモ] 配布リストを展開すると Exchange サーバーのパフォーマンスに負荷がかかる場合があるので、 **GetExchangeDistributionListMembers** メソッドの使用には注意が必要です。大きい配布リストを展開するときは、コードの動作が遅くなるものと考えてください。</span><span class="sxs-lookup"><span data-stu-id="5019a-p102">Expanding distribution lists can create a performance burden on an Exchange server, so use the **GetExchangeDistributionListMembers** method cautiously. Expect that your code will be slow when it expands large distribution lists.</span></span>
+> <span data-ttu-id="2ec9c-p102">[!メモ] 配布リストを展開すると Exchange サーバーのパフォーマンスに負荷がかかる場合があるので、 **GetExchangeDistributionListMembers** メソッドの使用には注意が必要です。大きい配布リストを展開するときは、コードの動作が遅くなるものと考えてください。</span><span class="sxs-lookup"><span data-stu-id="2ec9c-p102">Expanding distribution lists can create a performance burden on an Exchange server, so use the **GetExchangeDistributionListMembers** method cautiously. Expect that your code will be slow when it expands large distribution lists.</span></span>
 
-<span data-ttu-id="5019a-109">配布リストのメンバーを取得するには、ユーザーが Exchange サーバーに接続し、オンライン状態になっている必要があります。</span><span class="sxs-lookup"><span data-stu-id="5019a-109">To obtain the members of a distribution list, the user must be connected to an Exchange server and online.</span></span>
+<span data-ttu-id="2ec9c-109">配布リストのメンバーを取得するには、ユーザーが Exchange サーバーに接続し、オンライン状態になっている必要があります。</span><span class="sxs-lookup"><span data-stu-id="2ec9c-109">To obtain the members of a distribution list, the user must be connected to an Exchange server and online.</span></span>
 
-<span data-ttu-id="5019a-110">Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。</span><span class="sxs-lookup"><span data-stu-id="5019a-110">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the Outlook variable when you import the **Microsoft.Office.Interop.Outlook** namespace.</span></span> <span data-ttu-id="5019a-111">**Imports** または **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="5019a-111">The **Imports** or **using** statement must not occur directly before the functions in the code example but must be added before the public Class declaration.</span></span> <span data-ttu-id="5019a-112">次のコード行は、Visual Basic および C\# でインポートおよび割り当てを行う方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="5019a-112">The following lines of code show how to do the import and assignment in Visual Basic and C\#.</span></span>
+<span data-ttu-id="2ec9c-110">Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。</span><span class="sxs-lookup"><span data-stu-id="2ec9c-110">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the Outlook variable when you import the **Microsoft.Office.Interop.Outlook** namespace.</span></span> <span data-ttu-id="2ec9c-111">**Imports** または **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="2ec9c-111">The **Imports** or **using** statement must not occur directly before the functions in the code example but must be added before the public Class declaration.</span></span> <span data-ttu-id="2ec9c-112">次のコード行は、Visual Basic および C\# でインポートおよび割り当てを行う方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="2ec9c-112">The following lines of code show how to do the import and assignment in Visual Basic and C\#.</span></span>
 
 ```vb
 Imports Outlook = Microsoft.Office.Interop.Outlook
@@ -124,7 +124,7 @@ private void GetDistributionListMembers()
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="5019a-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="5019a-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2ec9c-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="2ec9c-113">See also</span></span>
 
-- [<span data-ttu-id="5019a-114">Exchange ユーザー</span><span class="sxs-lookup"><span data-stu-id="5019a-114">Exchange users</span></span>](exchange-users.md)
+- [<span data-ttu-id="2ec9c-114">Exchange ユーザー</span><span class="sxs-lookup"><span data-stu-id="2ec9c-114">Exchange users</span></span>](exchange-users.md)
 

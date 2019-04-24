@@ -8,21 +8,21 @@ ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
 ms.openlocfilehash: f92891188e7c317465ce70fede1dedca7f6344fe
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32316066"
 ---
-# <a name="display-the-select-names-dialog-box-to-resolve-recipients"></a><span data-ttu-id="c643e-102">[名前の選択] ダイアログ ボックスを表示して受信者を解決する</span><span class="sxs-lookup"><span data-stu-id="c643e-102">Display the Select Names dialog box to resolve recipients</span></span>
+# <a name="display-the-select-names-dialog-box-to-resolve-recipients"></a><span data-ttu-id="ad205-102">[名前の選択] ダイアログ ボックスを表示して受信者を解決する</span><span class="sxs-lookup"><span data-stu-id="ad205-102">Display the Select Names dialog box to resolve recipients</span></span>
 
-<span data-ttu-id="c643e-103">この例では、*recips* パラメーターで提供された受信者の解決を試行し、あいまいで解決できない各受信者については Outlook の **[名前の選択]** ダイアログ ボックスを表示します。</span><span class="sxs-lookup"><span data-stu-id="c643e-103">This example attempts to resolve the recipients provided by the *recips* parameter, and displays the Outlook **Select Names** dialog box for each recipient that is ambiguous and cannot be resolved.</span></span>
+<span data-ttu-id="ad205-103">この例では、*recips* パラメーターで提供された受信者の解決を試行し、あいまいで解決できない各受信者については Outlook の **[名前の選択]** ダイアログ ボックスを表示します。</span><span class="sxs-lookup"><span data-stu-id="ad205-103">This example attempts to resolve the recipients provided by the *recips* parameter, and displays the Outlook **Select Names** dialog box for each recipient that is ambiguous and cannot be resolved.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c643e-104">例</span><span class="sxs-lookup"><span data-stu-id="c643e-104">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ad205-104">例</span><span class="sxs-lookup"><span data-stu-id="ad205-104">Example</span></span>
 
-<span data-ttu-id="c643e-105">次のコード サンプルでは、[SelectNamesDialog](https://msdn.microsoft.com/library/bb609866\(v=office.15\)) オブジェクトを呼び出し、[ **名前の選択**] ダイアログ ボックスに Outlook のアドレス帳を表示します。</span><span class="sxs-lookup"><span data-stu-id="c643e-105">This code sample calls the [SelectNamesDialog](https://msdn.microsoft.com/library/bb609866\(v=office.15\)) object to display the **Select Names** dialog box which shows the Outlook address book.</span></span> <span data-ttu-id="c643e-106">このダイアログ ボックスを使用して、ユーザーはアドレス帳から名前を選択できます。</span><span class="sxs-lookup"><span data-stu-id="c643e-106">Through this dialog box, the user can select a name from the address book.</span></span> <span data-ttu-id="c643e-107">名前が解決されない場合は、その受信者が recips から削除されます。</span><span class="sxs-lookup"><span data-stu-id="c643e-107">If the name is not resolved, the recipient will be removed from recips.</span></span> <span data-ttu-id="c643e-108">名前が解決された場合、コード サンプルでは受信者の [AddressEntry](https://msdn.microsoft.com/library/bb609728\(v=office.15\)) オブジェクトを recips に返します。</span><span class="sxs-lookup"><span data-stu-id="c643e-108">If the name is resolved, then the code sample will return the [AddressEntry](https://msdn.microsoft.com/library/bb609728\(v=office.15\)) object of the recipient to recips.</span></span>
+<span data-ttu-id="ad205-105">次のコード サンプルでは、[SelectNamesDialog](https://msdn.microsoft.com/library/bb609866\(v=office.15\)) オブジェクトを呼び出し、[ **名前の選択**] ダイアログ ボックスに Outlook のアドレス帳を表示します。</span><span class="sxs-lookup"><span data-stu-id="ad205-105">This code sample calls the [SelectNamesDialog](https://msdn.microsoft.com/library/bb609866\(v=office.15\)) object to display the **Select Names** dialog box which shows the Outlook address book.</span></span> <span data-ttu-id="ad205-106">このダイアログ ボックスを使用して、ユーザーはアドレス帳から名前を選択できます。</span><span class="sxs-lookup"><span data-stu-id="ad205-106">Through this dialog box, the user can select a name from the address book.</span></span> <span data-ttu-id="ad205-107">名前が解決されない場合は、その受信者が recips から削除されます。</span><span class="sxs-lookup"><span data-stu-id="ad205-107">If the name is not resolved, the recipient will be removed from recips.</span></span> <span data-ttu-id="ad205-108">名前が解決された場合、コード サンプルでは受信者の [AddressEntry](https://msdn.microsoft.com/library/bb609728\(v=office.15\)) オブジェクトを recips に返します。</span><span class="sxs-lookup"><span data-stu-id="ad205-108">If the name is resolved, then the code sample will return the [AddressEntry](https://msdn.microsoft.com/library/bb609728\(v=office.15\)) object of the recipient to recips.</span></span>
 
-<span data-ttu-id="c643e-109">Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。</span><span class="sxs-lookup"><span data-stu-id="c643e-109">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the Outlook variable when you import the **Microsoft.Office.Interop.Outlook** namespace.</span></span> <span data-ttu-id="c643e-110">**Imports** または **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c643e-110">The **Imports** or **using** statement must not occur directly before the functions in the code example but must be added before the public Class declaration.</span></span> <span data-ttu-id="c643e-111">次のコード行は、Visual Basic および C\# でインポートおよび割り当てを行う方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="c643e-111">The following lines of code show how to do the import and assignment in Visual Basic and C\#.</span></span>
+<span data-ttu-id="ad205-109">Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。</span><span class="sxs-lookup"><span data-stu-id="ad205-109">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the Outlook variable when you import the **Microsoft.Office.Interop.Outlook** namespace.</span></span> <span data-ttu-id="ad205-110">**Imports** または **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ad205-110">The **Imports** or **using** statement must not occur directly before the functions in the code example but must be added before the public Class declaration.</span></span> <span data-ttu-id="ad205-111">次のコード行は、Visual Basic および C\# でインポートおよび割り当てを行う方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="ad205-111">The following lines of code show how to do the import and assignment in Visual Basic and C\#.</span></span>
 
 ```vb
 Imports Outlook = Microsoft.Office.Interop.Outlook
@@ -106,7 +106,7 @@ private void ResolveRecipients(Outlook.Recipients recips)
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="c643e-112">関連項目</span><span class="sxs-lookup"><span data-stu-id="c643e-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ad205-112">関連項目</span><span class="sxs-lookup"><span data-stu-id="ad205-112">See also</span></span>
 
-- [<span data-ttu-id="c643e-113">受信者</span><span class="sxs-lookup"><span data-stu-id="c643e-113">Recipients</span></span>](recipients.md)
+- [<span data-ttu-id="ad205-113">受信者</span><span class="sxs-lookup"><span data-stu-id="ad205-113">Recipients</span></span>](recipients.md)
 
