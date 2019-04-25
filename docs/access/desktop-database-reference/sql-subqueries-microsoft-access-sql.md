@@ -14,16 +14,16 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 7beda04d1f18014101f00078de1d125c1fd67a69
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314568"
 ---
 # <a name="sql-subqueries-microsoft-access-sql"></a>SQL サブクエリ (Microsoft Access SQL)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 サブクエリとは、[SELECT](select-statement-microsoft-access-sql.md)、[SELECT...INTO](select-into-statement-microsoft-access-sql.md)、[INSERT...INTO](insert-into-statement-microsoft-access-sql.md)、[DELETE](delete-statement-microsoft-access-sql.md)、[UPDATE](update-statement-microsoft-access-sql.md) などのステートメントおよび他のサブクエリの中にネストされた SELECT ステートメントのことです。
 
@@ -31,11 +31,11 @@ ms.locfileid: "28722873"
 
 サブクエリの作成には、次の 3 つの構文のいずれかを使用します。
 
-*比較*\[ANY |すべて |いくつか\](*連結*)
+*comparison* \[ANY | ALL | SOME\] (*sqlstatement*)
 
-*式*\[いない\](*連結*) で
+*expression* \[NOT\] IN (*sqlstatement*)
 
-\[ない\]EXISTS (*連結*)
+\[NOT\] EXISTS (*sqlstatement*)
 
 サブクエリには、次の指定項目があります。
 
@@ -46,7 +46,7 @@ ms.locfileid: "28722873"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>指定項目</p></th>
+<th><p>パーツ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
@@ -67,7 +67,7 @@ ms.locfileid: "28722873"
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 サブクエリは、SELECT ステートメントのフィールド リストの中で、または [WHERE](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql) 句や [HAVING](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/having-clause-microsoft-access-sql) 句の中で、式の代わりとして使用できます。サブクエリでは、SELECT ステートメントを使用して、WHERE 句および HAVING 句の式で評価に使用する 1 つまたは複数の値を取得します。
 
@@ -110,9 +110,9 @@ WHERE T1.Title = Employees.Title) Order by Title;
 
 一部のサブクエリは、クロス集計クエリの中で述語 (特に WHERE 句の中の述語) として使用できます。クロス集計クエリでは、SELECT のリストの中で出力としてサブクエリを使用することはできません。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
-次の使用例では、1995 年の第 2 四半期に注文を出した各得意先の名前および連絡先がリストされます。 SELECT ステートメントの例で表示できる、EnumFields プロシージャを呼び出します。
+次の使用例では、1995 年の第 2 四半期に注文を出した各得意先の名前および連絡先がリストされます。 SELECT ステートメントの使用例で見つけることができる EnumFields プロシージャを呼び出します。
 
 ```vb
     Sub SubQueryX() 

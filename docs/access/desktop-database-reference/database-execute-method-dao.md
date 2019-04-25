@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 5a2ebbb549e309349695d93618f4522a2dbf7a7a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294961"
 ---
 # <a name="databaseexecute-method-dao"></a>Database.Execute メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
-指定したオブジェクトのアクション クエリまたは SQL ステートメントを実行します。
+指定されたオブジェクトに対してアクション クエリを実行するか、SQL ステートメントを実行します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。(***クエリ******のオプション***) を実行します。
+*式* .Execute (***クエリ***、***オプション***)
 
-*式***データベース**オブジェクトを表す変数です。
+*式* **Database** オブジェクトを表す変数です。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -38,7 +38,7 @@ ms.locfileid: "28714508"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/オプション</p></th>
+<th><p>必須/省略可能</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
@@ -51,7 +51,7 @@ ms.locfileid: "28714508"
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p><em>Options</em></p></td>
+<td><p><em>オプション</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p></p></td>
@@ -62,7 +62,7 @@ ms.locfileid: "28714508"
 
 ## <a name="remarks"></a>注釈
 
-**[RecordsetOptionEnum](recordsetoptionenum-enumeration-dao.md)** 定数は、次は、オプションを使用できます。
+Options には、次の **[RecordsetOptionEnum](recordsetoptionenum-enumeration-dao.md)** 定数を使用できます。
 
 <table>
 <colgroup>
@@ -81,16 +81,16 @@ ms.locfileid: "28714508"
 <td><p>他のユーザーに対して書き込み権限を許可しません (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>組み合わせて</strong></p></td>
+<td><p><strong>dbInconsistent</strong></p></td>
 <td><p>(既定値) 矛盾した更新を実行します (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>指定できます。</strong></p></td>
+<td><p><strong>dbConsistent</strong></p></td>
 <td><p>一貫性のある更新を実行します (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbSQLPassThrough</strong></p></td>
-<td><p>SQL パススルー クエリを実行します。このオプションを設定すると、SQL ステートメントが ODBC データベースに渡されて処理されます (Microsoft Access ワークスペースのみ)。</p></td>
+<td><p>SQL パススルー クエリを実行します。 このオプションを設定すると、SQL ステートメントが ODBC データベースに渡されて処理されます (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbFailOnError</strong></p></td>
@@ -106,7 +106,7 @@ ms.locfileid: "28714508"
 </tr>
 <tr class="even">
 <td><p><strong>dbExecDirect</strong></p></td>
-<td><p>SQLPrepare ODBC API 関数を呼び出さずにステートメントを実行します (ODBCDirect の Connection オブジェクトと QueryDef オブジェクトのみ)。</p></td>
+<td><p>最初に SQLPrepare ODBC API 関数を呼び出さずにステートメントを実行します (ODBCDirect Connection および QueryDef オブジェクトのみ)。</p></td>
 </tr>
 </tbody>
 </table>

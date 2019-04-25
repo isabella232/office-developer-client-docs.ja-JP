@@ -1,5 +1,5 @@
 ---
-title: ステートメント (Microsoft Access SQL) を削除します。
+title: DELETE ステートメント (Microsoft Access SQL)
 TOCTitle: DELETE statement (Microsoft Access SQL)
 ms:assetid: 64c235bc-5b1a-0a33-714a-9933ba7a81e5
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195097(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: a4ef478e74f9851012d6f749e64b4ddb34f3a959
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294044"
 ---
-# <a name="delete-statement-microsoft-access-sql"></a>ステートメント (Microsoft Access SQL) を削除します。
+# <a name="delete-statement-microsoft-access-sql"></a>DELETE ステートメント (Microsoft Access SQL)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 [FROM](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/from-clause-microsoft-access-sql) 句で指定したテーブルから [WHERE](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql) 句の条件を満たすレコードを削除する削除クエリを作成します。
 
 ## <a name="syntax"></a>構文
 
-削除\[*テーブル*です。\* \] *テーブル*から、*抽出条件*
+DELETE \[*table*.\*\] FROM *table* WHERE *criteria*
 
-DELETE ステートメントには、次の指定項目があります。
+DELETE ステートメントでは次の引数を使用します。
 
 <table>
 <colgroup>
@@ -37,18 +37,18 @@ DELETE ステートメントには、次の指定項目があります。
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>指定項目</p></th>
+<th><p>パーツ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><em>table</em></p></td>
-<td><p>削除するレコードのあるテーブルの名前。この項目は省略可能です。</p></td>
+<td><p>レコードを削除するテーブルのオプションの名前。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>table</em></p></td>
-<td><p>削除するレコードのあるテーブルの名前。</p></td>
+<td><p>レコードを削除するテーブルの名前。</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>criteria</em></p></td>
@@ -58,9 +58,9 @@ DELETE ステートメントには、次の指定項目があります。
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-DELETE ステートメントは、多数のレコードを削除する場合に特に便利です。
+DELETE は、多くのレコードを削除する場合に特に便利です。
 
 データベースからあるテーブル全体を削除するには、**DROP** ステートメントで [Execute](drop-statement-microsoft-access-sql.md) メソッドを使用します。ただし、テーブルを削除するとテーブルの構造も失われます。これに対して、DELETE ステートメントを使用した場合はデータのみが削除され、テーブルの構造や、フィールド属性、インデックスなどのテーブル プロパティはすべてそのまま残されます。
 
@@ -70,9 +70,9 @@ DELETE ステートメントを使用すると、あるテーブルとの間に�
 
 > [!IMPORTANT]
 > - 特定のフィールド値を削除する場合は、値を Null 値に変更する更新クエリを作成します。
-> - 削除クエリでいったん削除したレコードは、元に戻せません。
+> - データのバックアップ コピーは常に保持しておきます。間違ったレコードを削除した場合、バックアップ コピーからレコードを元に戻すことができます。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 次の使用例では、役職が Trainee である社員のすべてのレコードを削除します。FROM 句に 1 つのテーブルのみが含まれている場合は、テーブル名を DELETE ステートメントにリストする必要はありません。
 

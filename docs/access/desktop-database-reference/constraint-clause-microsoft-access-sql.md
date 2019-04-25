@@ -1,5 +1,5 @@
 ---
-title: 制約句 (Microsoft Access SQL)
+title: CONSTRAINT 句 (Microsoft Access SQL)
 TOCTitle: CONSTRAINT clause (Microsoft Access SQL)
 ms:assetid: f8e89a91-a69e-1811-42a7-921692110bcb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836971(v=office.15)
@@ -14,32 +14,32 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 356620376658bb927c690056f4de9a01554aa47e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295647"
 ---
-# <a name="constraint-clause-microsoft-access-sql"></a>制約句 (Microsoft Access SQL)
+# <a name="constraint-clause-microsoft-access-sql"></a>CONSTRAINT 句 (Microsoft Access SQL)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 CONSTRAINT (制約) はインデックスに似ています。インデックスと違う点は、他のテーブルとのリレーションシップも設定できることです。
 
 CONSTRAINT 句は、[ALTER TABLE](alter-table-statement-microsoft-access-sql.md) ステートメントおよび [CREATE TABLE](create-table-statement-microsoft-access-sql.md) ステートメントの中で制約を作成または削除する場合に使用します。CONSTRAINT 句には、単一フィールドの制約を作成するものと、複数フィールドの制約を作成するものの 2 種類があります。
 
 > [!NOTE]
-> [!メモ] Microsoft Access データベース エンジンは、Microsoft Access データベース エンジン以外のデータベースでは CONSTRAINT 句や DDL (データ定義言語) ステートメントを使用できません。 代わりに DAO の**Create**メソッドを使用します。
+> [!メモ] Microsoft Access データベース エンジンは、Microsoft Access データベース エンジン以外のデータベースでは CONSTRAINT 句や DDL (データ定義言語) ステートメントを使用できません。 代わりに、DAO の **Create** メソッドを使用してください。
 
 ## <a name="syntax"></a>構文
 
 ### <a name="single-field-constraint"></a>単一フィールド制約の場合
 
-制約*名*{主キー。固有 |NOT NULL。参照*外部テーブル* \[(*foreignfield1、foreignfield2*)\] \[ON UPDATE CASCADE |設定 NULL\] \[ON DELETE CASCADE |NULL 設定\]}
+CONSTRAINT *name* {PRIMARY KEY | UNIQUE | NOT NULL | REFERENCES *foreigntable* \[(*foreignfield1, foreignfield2*)\] \[ON UPDATE CASCADE | SET NULL\] \[ON DELETE CASCADE | SET NULL\]}
 
-### <a name="multiple-field-constraint"></a>複数フィールドの制約
+### <a name="multiple-field-constraint"></a>複数フィールド制約の場合
 
-制約*名*{0} プライマリ ・ キー (*primary1*\[、 *primary2* \[、.\]\]) |一意 (*unique 1*\[、 *unique2* \[、.\]\]) |NOT NULL (*notnull1*\[、 *notnull2* \[、.\]\]) |外部キー\[インデックスのない\](*範囲 1*\[、 *ref2* \[、.\] \]) の参照*外部テーブル* \[(*foreignfield1* \[、 *foreignfield2* \[、.\] \])\] \[ON UPDATE CASCADE |設定 NULL\] \[ON DELETE CASCADE |NULL 設定\]}
+CONSTRAINT *name* {PRIMARY KEY (*primary1*\[, *primary2* \[, …\]\]) | UNIQUE (*unique1*\[, *unique2* \[, …\]\]) | NOT NULL (*notnull1*\[, *notnull2* \[, …\]\]) | FOREIGN KEY \[NO INDEX\] (*ref1*\[, *ref2* \[, …\]\]) REFERENCES *foreigntable* \[(*foreignfield1* \[, *foreignfield2* \[, …\]\])\] \[ON UPDATE CASCADE | SET NULL\] \[ON DELETE CASCADE | SET NULL\]}
 
 CONSTRAINT 句には、次の指定項目があります。
 
@@ -50,7 +50,7 @@ CONSTRAINT 句には、次の指定項目があります。
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>指定項目</p></th>
+<th><p>パーツ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
@@ -60,19 +60,19 @@ CONSTRAINT 句には、次の指定項目があります。
 <td><p>作成する制約の名前。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>primary1</em>, <em>primary2</em></p></td>
+<td><p><em>primary1</em>、<em>primary2</em></p></td>
 <td><p>主キーに指定するフィールドの名前。複数指定もできます。</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>unique1</em>, <em>unique2</em></p></td>
-<td><p>一意なキーに指定するフィールドの名前。複数指定もできます。</p></td>
+<td><p><em>unique1</em>、<em>unique2</em></p></td>
+<td><p>一意なキーに指定するフィールドの名前。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>notnull1, notnull2</em></p></td>
-<td><p>非 Null 値に制限されるフィールドの名前。複数指定もできます。</p></td>
+<td><p>非 Null 値に制限されるフィールドの名前。</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>ref1</em>, <em>ref2</em></p></td>
+<td><p><em>ref1</em>、<em>ref2</em></p></td>
 <td><p>別のテーブルにあるフィールドを参照する外部キー フィールドの名前。複数指定もできます。</p></td>
 </tr>
 <tr class="even">
@@ -80,27 +80,28 @@ CONSTRAINT 句には、次の指定項目があります。
 <td><p>引数 <em>foreignfield</em> で指定した 1 つ以上のフィールドのある外部キー側のテーブルの名前。</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>foreignfield1</em>, <em>foreignfield2</em></p></td>
-<td><p>引数 <em>ref1</em>、<em>ref2</em> で指定した引数 <em>foreigntable</em> の 1 つ以上のフィールドの名前。参照されるフィールドが引数 <em>foreigntable</em> の主キーである場合は、この句を省略できます。</p></td>
+<td><p><em>foreignfield1</em>、<em>foreignfield2</em></p></td>
+<td><p>
+            <em>ref1</em>、<em>ref2</em> で指定した <em>foreigntable</em> の 1 つ以上のフィールドの名前。参照されるフィールドが <em>foreigntable</em> の主キーである場合は、この句を省略できます。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-単一フィールドの CONSTRAINT 構文は、ALTER TABLE ステートメントや CREATE TABLE ステートメントなどのフィールド定義句の中で、フィールド データ型の指定の直後に記述します。
+単一フィールドの制約の構文は、ALTER TABLE ステートメントや CREATE TABLE ステートメントなどのフィールド定義句の中で、フィールド データ型の指定の直後に記述します。
 
 ALTER TABLE ステートメントや CREATE TABLE ステートメントのフィールド定義句以外の箇所で予約語 CONSTRAINT を使用する場合は、必ず複数フィールドの CONSTRAINT 構文を使用します。
 
 CONSTRAINT 句を使用すると、次のいずれかの制約をフィールドに適用できます。
 
-- 予約語 UNIQUE を使用すると、フィールドを一意なキーとして指定できます。この結果、テーブルでこのフィールドの値を 2 つのレコードに同時に設定することはできなくなります。どのフィールドでも一意なキーに指定することができます。数にも制限はありません。複数フィールドの制約を一意なキーとして指定した場合は、インデックス内のすべてのフィールドの値の組み合わせが重複しないようにする必要があります。1 つのフィールドのみで複数のレコードが同じ値を持っている場合も同様です。
+- 予約語 UNIQUE を使用すると、フィールドを一意なキーとして指定できます。この結果、テーブルでこのフィールドの値を 2 つのレコードに同時に設定することはできなくなります。どのフィールドもフィールド一覧も一意なキーに指定することができます。複数フィールドの制約を一意なキーとして指定した場合は、インデックス内のすべてのフィールドの値の組み合わせが重複しないようにする必要があります。1 つのフィールドのみで複数のレコードが同じ値を持っている場合も同様です。
 
 - 予約語 PRIMARY KEY を使用すると、テーブル内の 1 つ以上のフィールド セットを主キーとして指定できます。主キーの値はすべて **Null** 値以外の一意な値である必要があります。1 つのテーブルに指定できる主キーは 1 つのみです。
     
   > [!NOTE]
-  > [!メモ] 既に主キーが設定されているテーブルには PRIMARY KEY 制約を設定しないでください。設定した場合はエラーになります。
+  > 既に主キーが設定されているテーブルには PRIMARY KEY 制約を設定しないでください。設定した場合はエラーになります。
 
 - 予約語 FOREIGN KEY を使用すると、指定したフィールドを外部キーにすることができます。外部キー側のテーブルの主キーが複数のフィールドから成る場合は、必ず複数フィールドの制約の定義を使用し、すべての参照元フィールド、外部キー側のテーブル名、および外部キー側のテーブルのすべての参照先フィールドの名前を、それぞれ指定してください。この場合は、参照先フィールドは参照元フィールドと同じ順序で指定してください。既定では、データベース エンジンは外部キー側のテーブルの主キーを参照先フィールドと見なします。このため、参照先フィールドが外部キー側のテーブルの主キーである場合は、参照先フィールドを指定する必要ありません。 外部キーの制約は、対応する主キーの値が変更されるときに行われる特定の動作を定義します。
 
@@ -110,7 +111,7 @@ CONSTRAINT 句を使用すると、次のいずれかの制約をフィールド
     CREATE TABLE Customers (CustId INTEGER PRIMARY KEY, CLstNm NCHAR VARYING (50))
   ```
     
-  Orders テーブルの次のような定義を考えます。この Orders テーブルは、Customers テーブルの主キーを参照する外部キーのリレーションシップを定義しています。
+  この Orders テーブルは、Customers テーブルの主キーを参照する外部キーのリレーションシップを定義しています。
     
   ``` sql
     CREATE TABLE Orders (OrderId INTEGER PRIMARY KEY, CustId INTEGER, OrderNotes NCHAR VARYING (255), CONSTRAINT FKOrdersCustId FOREIGN KEY (CustId) REFERENCES Customers ON UPDATE CASCADE ON DELETE CASCADE
@@ -126,7 +127,7 @@ CONSTRAINT 句を使用すると、次のいずれかの制約をフィールド
 
 外部キーに自動的にインデックスが作成されることを防ぐために、修飾子 NO INDEX を使用できます。この外部キーを定義する形式は、結果としてインデックスの値が頻繁に繰り返される場合に限り使用してください。外部キーのインデックスの値が頻繁に繰り返される中でインデックスを使用することは、単にテーブルのスキャンを行うよりも能率が下がります。テーブルから挿入や削除された行と一緒にこの種のインデックスを保守することは、パフォーマンスを下げるばかりで何の利益も生み出しません。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 次の使用例では、2 つのテキスト フィールドを含む "ThisTable" という名前の新しいテーブルを作成します。
 

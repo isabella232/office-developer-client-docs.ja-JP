@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: df70d2728732f33161622ce71fc9273bd9f016f9
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293239"
 ---
 # <a name="execute-statement-microsoft-access-sql"></a>EXECUTE ステートメント (Microsoft Access SQL)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 プロシージャを実行します。
 
 ## <a name="syntax"></a>構文
 
-*プロシージャ*の実行\[ *param1*\[、*パラメーター 2*\[をしています.\]\]
+EXECUTE *procedure* \[*param1*\[, *param2*\[, …\]\]
 
-EXECUTE ステートメントには、次の指定項目があります。
+EXECUTE ステートメントでは次の引数を使用します。
 
 <table>
 <colgroup>
@@ -37,7 +37,7 @@ EXECUTE ステートメントには、次の指定項目があります。
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>指定項目</p></th>
+<th><p>パーツ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
@@ -47,8 +47,8 @@ EXECUTE ステートメントには、次の指定項目があります。
 <td><p>実行するプロシージャの名前。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>param1, param2, ...</em></p></td>
-<td><p>パラメーターの値はプロシージャで定義されます。</p></td>
+<td><p><em>param1, param2, …</em></p></td>
+<td><p>プロシージャによって定義されたパラメーターの値です。</p></td>
 </tr>
 </tbody>
 </table>
@@ -56,7 +56,7 @@ EXECUTE ステートメントには、次の指定項目があります。
 
 ## <a name="example"></a>例
 
-この例では、クエリ CategoryList、名前を指定し、SELECT ステートメントの例である EnumFields プロシージャを呼び出します。
+この例では、クエリを CategoryList と名付け、EnumFields プロシージャを呼び出します。EnumFields プロシージャについては、SELECT ステートメントの使用例を参照してください。
 
 ```vb
     Sub ProcedureX() 

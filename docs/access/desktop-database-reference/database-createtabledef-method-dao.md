@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: c986f0a96c14dac8a9ee4f3c7fded5a049fa451e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294947"
 ---
 # <a name="databasecreatetabledef-method-dao"></a>Database.CreateTableDef メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
-新しい **[TableDef](tabledef-object-dao.md)** オブジェクトを作成します (Microsoft Access ワークスペースのみ)。
+新しい **[TableDef](tabledef-object-dao.md)** オブジェクトを作成します (Microsoft Access ワークスペースのみ)。 。
 
 ## <a name="syntax"></a>構文
 
-*式*です。CreateTableDef (***名前***、***属性***、 ***SourceTableName***、***接続***)
+*式* .CreateTableDef(***Name***、***Attributes***、***SourceTableName***、***Connect***)
 
-*式***データベース**オブジェクトを表す変数です。
+*式* **Database** オブジェクトを表す変数です。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -42,35 +42,35 @@ ms.locfileid: "28718491"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/オプション</p></th>
+<th><p>必須/省略可能</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Name</em></p></td>
+<td><p><em>名前</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>Variant (バリアント型)</strong></p></td>
-<td><p>新しい <strong>TableDef</strong> オブジェクトの一意の名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。有効な <strong>TableDef</strong> 名の詳細については、<strong><a href="tabledef-name-property-dao.md">Name</a></strong> プロパティを参照してください。</p></td>
+<td><p><strong>Variant</strong></p></td>
+<td><p>新しい <strong>TableDef</strong> の一意の名前を表す、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。 有効な <strong>TableDef</strong> 名の詳細については、<strong><a href="tabledef-name-property-dao.md">Name</a></strong> プロパティを参照してください。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Attributes</em></p></td>
+<td><p><em>属性</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
-<td><p>新しい <strong>TableDef</strong> オブジェクトの 1 つ以上の特性を示す定数 (または定数の組み合わせ)。詳細については、 <strong><a href="tabledef-attributes-property-dao.md">Attributes</a></strong> プロパティを参照してください。  </p></td>
+<td><p><strong>Variant</strong></p></td>
+<td><p>新しい <strong>TableDef</strong> オブジェクトの 1 つ以上の特性を示す定数 (または定数の組み合わせ)。詳細については、<strong><a href="tabledef-attributes-property-dao.md">Attributes</a></strong> プロパティを参照してください。</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>SourceTableName</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>Variant (バリアント型)</strong></p></td>
-<td><p>データの元のソースである外部データベースのテーブルの名前を格納している、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。source 文字列は、新しい <strong>TableDef</strong> オブジェクトの <strong><a href="tabledef-sourcetablename-property-dao.md">SourceTableName</a></strong> プロパティの設定値になります。</p></td>
+<td><p><strong>Variant</strong></p></td>
+<td><p>データの元のソースである外部データベース内のテーブルの名前を含む <strong>Variant</strong> (<strong>String</strong> サブタイプ)。 ソース文字列は、新しい <strong>TableDef</strong> オブジェクトの <strong><a href="tabledef-sourcetablename-property-dao.md">SourceTableName</a></strong> プロパティ設定になります。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Connect</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>Variant (バリアント型)</strong></p></td>
-<td><p>開いているデータベース、パススルー クエリで使用されるデータベース、またはリンク テーブルのソースに関する情報を格納している、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。有効な接続文字列の詳細については、<strong><a href="tabledef-connect-property-dao.md">Connect</a></strong> プロパティを参照してください。</p></td>
+<td><p><strong>Variant</strong></p></td>
+<td><p>開いているデータベース、パススルー クエリで使用されるデータベース、またはリンク テーブルのソースに関する情報を格納している、サブタイプが文字列型 (<strong>String</strong>) であるバリアント型 (<strong>Variant</strong>) の値。 有効な接続文字列の詳細については、<strong><a href="tabledef-connect-property-dao.md">Connect</a></strong> プロパティを参照してください。</p></td>
 </tr>
 </tbody>
 </table>
@@ -82,11 +82,14 @@ TableDef
 
 ## <a name="remarks"></a>解説
 
-**CreateTableDef** メソッドの使用時に省略可能な引数を省略した場合は、新しいオブジェクトをコレクションに追加する前に、適切な代入ステートメントを使用して対応するプロパティを設定またはリセットできます。オブジェクトの追加後は、一部のプロパティは変更できません。詳細については、各プロパティのトピックを参照してください。
 
-名が既にコレクションのメンバーであるオブジェクトを参照を追加する**tabledef オブジェクト**または**[Field](field-object-dao.md)** オブジェクトに無効なプロパティを指定する場合、 **[Append](tabledefs-append-method-dao.md)** メソッドを使用すると、実行時エラーが発生します。 また、 **TableDef** オブジェクトの **Field** を少なくとも 1 つ定義しないと、 **TableDef** オブジェクトを **TableDefs** コレクションに追加できません。
+            **CreateTableDef** メソッドの使用時に省略可能な引数を省略した場合は、新しいオブジェクトをコレクションに追加する前に、適切な代入ステートメントを使用して対応するプロパティを設定またはリセットできます。オブジェクトの追加後は、一部のプロパティは変更できません。詳細については、各プロパティのトピックを参照してください。
 
-[**TableDefs**](tabledefs-collection-dao.md) コレクションから **TableDef** オブジェクトを削除するには、コレクションの **[Delete](tabledefs-delete-method-dao.md)** メソッドを使用します。
+name が示すオブジェクトが既にコレクションのメンバーである場合や、追加する **TableDef** オブジェクトまたは **[Field](field-object-dao.md)** オブジェクトに無効なプロパティを指定した場合は、**[Append](tabledefs-append-method-dao.md)** メソッドを使用すると実行時エラーが発生します。 また、 **TableDef** オブジェクトの **Field** を少なくとも 1 つ定義しないと、 **TableDef** オブジェクトを **TableDefs** コレクションに追加できません。
+
+
+            **
+            [TableDefs](tabledefs-collection-dao.md)** コレクションから **TableDef** オブジェクトを削除するには、コレクションの **[Delete](tabledefs-delete-method-dao.md)** メソッドを使用します。
 
 ## <a name="example"></a>例
 
@@ -155,7 +158,7 @@ TableDef
 
 <br/>
 
-この例では、 **CreateTableDef** メソッドと **FillCache** メソッド、および **CacheSize** 、 **CacheStart** 、 **SourceTableName** の各プロパティを使用して、リンクされたテーブルのレコードを 2 回列挙します。その後、50 レコードのキャッシュを使用してレコードを 2 回列挙します。さらに、リンクされたテーブルの処理にキャッシュを使用しなかった場合と使用した場合のパフォーマンスの統計を表示します。
+この例では、**CreateTableDef** メソッドと **FillCache** メソッド、および **CacheSize**、**CacheStart**、**SourceTableName** の各プロパティを使用して、リンクされたテーブルのレコードを 2 回列挙します。その後、50 レコードのキャッシュを使用してレコードを 2 回列挙します。さらに、リンクされたテーブルの処理にキャッシュを使用しなかった場合と使用した場合のパフォーマンスの統計を表示します。
 
 ```vb
     Sub ClientServerX3() 

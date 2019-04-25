@@ -1,7 +1,7 @@
 ---
 title: Access の起動時にリボンを非表示にする
 TOCTitle: Hide the ribbon when Access starts
-description: すべての Access 2013 の組み込みタブを非表示にするカスタマイズされたリボンを読み込む方法です。
+description: Access 2013 のすべての組み込みタブが非表示になっているカスタマイズされたリボンを読み込む方法について説明します。
 ms:assetid: f98bab58-8094-1c56-f70b-ced2e7849574
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837012(v=office.15)
 ms:contentKeyID: 48548817
@@ -9,23 +9,23 @@ ms.date: 10/16/2018
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 4ce9327790f620ba9163f5cdbe7b5c8900de4341
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291942"
 ---
 # <a name="hide-the-ribbon-when-access-starts"></a>Access の起動時にリボンを非表示にする
 
-**に適用されます:** Access 2013 |Office 2013
+**適用先**: Access 2013 | Office 2013
 
 既定では、Microsoft Access にはリボンを非表示にする方法は用意されていません。このトピックでは、すべての組み込みタブが非表示になっているカスタマイズされたリボンを読み込む方法について説明します。
 
 Access の起動時にカスタマイズされたリボンを読み込むには、その設定を **USysRibbons** という名前のテーブルに保存する必要があります。
 
-実装するリボンのカスタマイズの特定の列名を使用して**USysRibbons**テーブルを作成する必要があります。 
+リボンのカスタマイズを実装するには、特定の列名を使用して **USysRibbons** テーブルを作成する必要があります。 
 
-次の表に、 **USysRibbons** テーブルを作成するときに使用する設定を示します。
+次のテーブルは、**USysRibbons** テーブルを作成するときに使用する設定を示しています。
 
 <table>
 <colgroup>
@@ -43,28 +43,28 @@ Access の起動時にカスタマイズされたリボンを読み込むには�
 <tbody>
 <tr class="odd">
 <td><p><strong>RibbonName</strong></p></td>
-<td><p>テキスト型 (Text)</p></td>
+<td><p>テキスト</p></td>
 <td><p>このカスタマイズに関連付けられるカスタム リボンの名前が含まれます。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>RibbonXML</strong></p></td>
-<td><p>メモ型 (Memo)</p></td>
-<td><p>リボン機能拡張 (RibbonX)、リボンのカスタマイズを定義する XML が含まれています。</p></td>
+<td><p>メモ</p></td>
+<td><p>リボンのカスタマイズを定義するリボン機能拡張 XML (RibbonX) が含まれます。</p></td>
 </tr>
 </tbody>
 </table>
 
 <br/>
 
-次の表に、 **USysRibbons** テーブルに保存するリボンのカスタマイズ設定を示します。
+次のテーブルは、**USysRibbons** テーブルに格納するリボンのカスタマイズ設定の一覧です。
 
 |列名|値|
 |:----------|:----|
-|**RibbonName**|して HideTheRibbon|
+|**RibbonName**|HideTheRibbon|
 |**RibbonXML**|`<CustomUI xmlns="https://schemas.microsoft.com/office/2006/01/CustomUI"> <ribbon startFromScratch="true"/></CustomUI>`|
 
 
-## <a name="apply-a-custom-ribbon-when-access-starts"></a>Access の起動時にカスタム リボンを適用します。
+## <a name="apply-a-custom-ribbon-when-access-starts"></a>Access の起動時にカスタム リボンを適用する
 
 アプリケーションの起動時にカスタム リボン UI を使用できるように適用するには、次の手順を実行します。
 
@@ -72,9 +72,9 @@ Access の起動時にカスタマイズされたリボンを読み込むには�
 
 2.  アプリケーションを閉じて、再起動します。
 
-3.  **Microsoft Office ボタン**をクリックして![O12FileMenuButton\_ZA10077102](media/access-file-menu-button.gif "O12FileMenuButton_ZA10077102")、し、 **[Access のオプション**を選択します。
+3.  [**Microsoft Office ボタン**![O12FileMenuButton\_ZA10077102](media/access-file-menu-button.gif "O12FileMenuButton_ZA10077102")] を選択し、[**Access のオプション**] を選択します。
 
-4.  **カレント データベース**] オプションを選択し、**リボンとツールバーのオプション**] セクションで、[**リボン名**] ボックスの一覧を選択**して HideTheRibbon**を選択します。
+4.  [**カレント データベース**] オプションを選択し、[**リボンとツール バーのオプション**] セクションで [**リボン名**] 一覧を選択して [**HideTheRibbon** ] を選択します。
 
 5.  アプリケーションを閉じて、再起動します。
 

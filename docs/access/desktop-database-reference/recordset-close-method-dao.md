@@ -8,24 +8,24 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: f7cbd94bfacc91bfe080d33807ca7989c1dca661
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300554"
 ---
 # <a name="recordsetclose-method-dao"></a>Recordset.Close メソッド (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 開いている **Recordset** を閉じます。
 
 ## <a name="syntax"></a>構文
 
-*式*です。閉じる
+*式* .Close
 
-*式***レコード セット**オブジェクトを表す変数です。
+*式* **Recordset** オブジェクトを表す変数です。
 
 ## <a name="remarks"></a>注釈
 
@@ -33,5 +33,5 @@ ms.locfileid: "28717455"
 
 開いている **Recordset** オブジェクトがある場合に **Connection** オブジェクトを閉じようとすると、その **Recordset** オブジェクトが閉じられ、保留中の更新または編集がキャンセルされます。同様に、開いている **Connection** オブジェクトがある場合に **Workspace** オブジェクトを閉じようとすると、その **Connection** オブジェクトが閉じられ、それに含まれる **Recordset** オブジェクトも閉じられます。
 
-代わりに、 **Close**メソッドは**Nothing**をオブジェクト変数の値を設定するのには、(dbsTemp の設定 = なし)。
+**Close** メソッドに代わる方法は、オブジェクト変数の値を **Nothing** に設定することです (Set dbsTemp = Nothing)。
 

@@ -1,5 +1,5 @@
 ---
-title: Access マクロのアクション (Access の開発者用リファレンス)
+title: Access マクロ アクション (Access 開発者用リファレンス)
 TOCTitle: Access macro actions
 ms:assetid: bea73e66-2fd7-41a0-af62-c246c088a2ea
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn161227(v=office.15)
@@ -8,17 +8,17 @@ ms.date: 10/17/2018
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: ccf94d51160aebcae8644def4433ace4f369b205
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32280623"
 ---
-# <a name="access-macro-actions-access-developer-reference"></a>Access マクロのアクション (Access の開発者用リファレンス)
+# <a name="access-macro-actions-access-developer-reference"></a>Access マクロ アクション (Access 開発者用リファレンス)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
-- [ADP のオブジェクト](adp-objects.md)
+- [ADP オブジェクト](adp-objects.md)
 - [データ アクション](data-actions.md)
 - [データ ブロック](data-blocks.md)
 - [データ入力操作](data-entry-operations.md)
@@ -30,6 +30,6 @@ ms.locfileid: "28705251"
 - [プログラム フロー](program-flow.md)
 - [System コマンド](system-commands.md)
 - [ユーザー インターフェイス コマンド](user-interface-commands.md)
-- [ウィンドウの管理](window-management.md)
+- [ウィンドウ管理](window-management.md)
 
 

@@ -14,23 +14,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 6ff2ad40d318801ecec2332b53b41f327c20fbc5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291401"
 ---
 # <a name="inner-join-operation-microsoft-access-sql"></a>INNER JOIN 操作 (Microsoft Access SQL)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 
-2 つのテーブルの共通するフィールドに同じ値があった場合に、両方のテーブルのレコードを結合します。
+共通のフィールドで一致する値があるたびに、2 つのテーブルからレコードを結合します。
 
 ## <a name="syntax"></a>構文
 
-*Table1 という名前*の内部結合*table2*から*table1 という名前*にします。*フィールド 1**table2 を compopr*。*フィールド 2*
+FROM *table1* INNER JOIN *table2* ON *table1*.*field1* *compopr table2*.*field2*
 
 INNER JOIN 操作には、次の指定項目があります。
 
@@ -41,7 +41,7 @@ INNER JOIN 操作には、次の指定項目があります。
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>指定項目</p></th>
+<th><p>パーツ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
@@ -56,23 +56,23 @@ INNER JOIN 操作には、次の指定項目があります。
 </tr>
 <tr class="odd">
 <td><p><em>compopr</em></p></td>
-<td><p>任意の関係比較演算子: &quot;=&quot; &quot; &lt;、&quot; &quot; &gt;、&quot; &quot; &lt;=&quot; &quot; &gt;=、&quot;または&quot; &lt; &gt;。&quot;</p></td>
+<td><p>任意のリレーショナル比較演算子: &quot;=&quot; &quot; &lt;、&quot; &quot; &gt;、&quot; &quot; &lt;=&quot; &quot; &gt;=&quot;または&quot; &lt;&gt;。&quot;</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 INNER JOIN 操作は、[FROM](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/from-clause-microsoft-access-sql) 句の中で使用します。INNER JOIN 操作は最も一般的な結合方法です。2 つのテーブルの共通するフィールドに同じ種類の値があった場合に、両方のテーブルのレコードを結合します。
 
 たとえば、[部署] テーブルと [社員] テーブルで INNER JOIN 操作を行うと、各部署に所属する社員全員を選択できます。これに対して、所属する社員が 1 人もいない部署も含めすべての部署を選択したり、どの部署にも所属していない社員も含め社員全員を選択したりするには、[LEFT JOIN または RIGHT JOIN](left-join-right-join-operations-microsoft-access-sql.md) 操作を使用して外部結合を作成します。
 
-メモ型 (Memo) または OLE オブジェクト型 (OLE Object) のデータが格納されたフィールドを結合しようとすると、エラーが発生します。
+メモまたは OLE オブジェクトのデータを含むフィールドを結合しようとすると、エラーが発生します。
 
-2 つの数値型 (Numeric) フィールドのデータ型が同じであれば、それらのフィールドを結合することができます。たとえば、オートナンバ型 (AutoNumber) フィールドと長整数型 (Long) フィールドは、データ型が同じであるため結合することができます。一方、単精度浮動小数点型 (Single) フィールドと倍精度浮動小数点型 (Double) フィールドは結合できません。
+同様の型の 2 つの数値フィールドを結合することができます。たとえば、AutoNumber フィールドと Long フィールドは同様の型なので結合できます。しかし、Single 型と Double 型のフィールドを結合することはできません。
 
-次の例では、Categories テーブルと Products テーブルを CategoryID フィールドで結合しています。
+次の例では、Categories テーブルと Products テーブルを CategoryID フィールドで結合する方法を示しています。
 
 ```sql
 SELECT CategoryName, ProductName 
@@ -80,19 +80,19 @@ FROM Categories INNER JOIN Products
 ON Categories.CategoryID = Products.CategoryID;
 ```
 
-上記の例では、[区分コード] は、結合されたフィールドですが、 [SELECT](select-statement-microsoft-access-sql.md)ステートメントに含まれていないために、クエリ出力には含まれません。 結合フィールドを含めるには、そのフィールド名を SELECT ステートメントで、この例で指定してください。
+上記の例では、CategoryID は結合フィールドですが、[SELECT](select-statement-microsoft-access-sql.md) ステートメントには含まれていないため、クエリ出力には含まれていません。 結合フィールドを含めるには、SELECT ステートメントにフィールド名 (この場合は Categories.CategoryID) を含めます。
 
-次の構文を使用して、JOIN ステートメントの中で複数の ON 句を連結できます。
+次の構文を使用して、複数の ON 句を JOIN ステートメントでリンクすることもできます。
 
-*フィールド*FROM *table1* INNER JOIN *table2*に*table1 という名前*を選択します。*フィールド 1**compopr**table2*。*フィールド 1**Table1 という名前*にします。*フィールド 2**compopr**table2*。*field2*)*Table1 という名前*にします。*field3**compopr**table2*。*field3*)\];
+SELECT *fields* FROM *table1* INNER JOIN *table2* ON *table1*.*field1* *compopr* *table2*.*field1* AND ON *table1*.*field2* *compopr* *table2*.*field2*) OR ON *table1*.*field3* *compopr* *table2*.*field3*)\];
 
-次の構文を使用して、JOIN ステートメントをネストすることができます。
+次の構文を使用して、JOIN ステートメントを入れ子にすることもできます。
 
-INNER JOIN*フィールド*FROM *table1 という名前*を選択 (*table2*の INNER JOIN \[( \]*テーブル 3* \[INNER JOIN \[( \] *tablex* \[内部に参加しています)\] *テーブル 3*にします。*field3**compopr**tablex*。*fieldx*)\] *テーブル 2*にします。*フィールド 2**compopr**テーブル 3*です。*field3*)*Table1 という名前*にします。*フィールド 1**compopr**table2*。*フィールド 2*です。
+SELECT *fields* FROM *table1* INNER JOIN (*table2* INNER JOIN \[( \]*table3* \[INNER JOIN \[( \]*tablex* \[INNER JOIN …)\] ON *table3*.*field3* *compopr* *tablex*.*fieldx*)\] ON *table2*.*field2* *compopr* *table3*.*field3*) ON *table1*.*field1* *compopr* *table2*.*field2*;
 
-LEFT JOIN または RIGHT JOIN は、INNER JOIN にネストできますが、INNER JOIN を LEFT JOIN または RIGHT JOIN にネストすることはできません。
+LEFT JOIN または RIGHT JOIN は、INNER JOIN の入れ子にすることができますが、INNER JOIN は LEFT JOIN または RIGHT JOIN の入れ子にすることはできません。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 次の使用例では、Order Details テーブルと Orders テーブルの等結合、および Orders テーブルと Employees テーブルの等結合を作成します。この結合が必要になるのは、Employees テーブルに売上データが含まれず、Order Details テーブルに社員データが含まれないためです。クエリによって、社員名と、その社員の総売上高の一覧が生成されます。
 

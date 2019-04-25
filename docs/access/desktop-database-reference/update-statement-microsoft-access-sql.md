@@ -14,23 +14,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 6a0404c21b308f6e389ee5577cc212763e660774
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306245"
 ---
 # <a name="update-statement-microsoft-access-sql"></a>UPDATE ステートメント (Microsoft Access SQL)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 指定したテーブルのフィールドの値を指定の抽出条件に従って変更する更新クエリを作成します。
 
 ## <a name="syntax"></a>構文
 
-更新*テーブル*セットの*新しい値**条件*です。
+UPDATE *table* SET *newvalue* WHERE *criteria*;
 
-UPDATE ステートメントには、次の指定項目があります。
+UPDATE ステートメントでは次の引数を使用します。
 
 <table>
 <colgroup>
@@ -39,32 +39,32 @@ UPDATE ステートメントには、次の指定項目があります。
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>指定項目</p></th>
+<th><p>パーツ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><em>table</em></p></td>
-<td><p>変更するデータのあるテーブルの名前。</p></td>
+<td><p>変更するデータを含むテーブルの名前。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>newvalue</em></p></td>
-<td><p>更新後のレコードの特定のフィールドに挿入する値を決めるための式。</p></td>
+<td><p>更新後のレコードの特定のフィールドに挿入する値を決めるための式です。</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>criteria</em></p></td>
-<td><p>更新するレコードを抽出するための式。この式の条件を満たすレコードのみが更新されます。</p></td>
+<td><p>レコードを更新するか決めるための式です。式の条件を満たすレコードのみが更新されます。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-UPDATE ステートメントは、多数のレコードを変更する場合や、変更するレコードが複数のテーブルに含まれている場合に特に便利です。
+UPDATE は、多数のレコードを変更する場合や、変更するレコードが複数のテーブルに含まれている場合に特に便利です。
 
-UPDATE ステートメントでは、複数のフィールドを同時に変更できます。次の例では、輸送先が英国であるレコードの Order Amount フィールドの値を 10%、Freight フィールドの値を 3%、それぞれ増やしています。
+複数のフィールドを同時に変更することができます。次に示すのは、"受注金額" の値が 10% ずつ、"運送料" の値が 3% ずつ増えている英国の運送会社の例です。
 
 ```sql
 UPDATE Orders 
@@ -76,11 +76,11 @@ WHERE ShipCountry = 'UK';
 
 > [!IMPORTANT]
 - UPDATE ステートメントは、結果セットを作成しません。また、更新クエリを使用してレコードを更新すると、元に戻せません。どのレコードが変更されるかをあらかじめ確認する場合は、更新クエリを実行する前に、同じ抽出条件を使用する選択クエリを実行してその結果を調べてください。
-- 誤ってレコードを更新した場合にも復旧できるように、常にデータのバックアップ コピーを作成しておくことをお勧めします。
+- データのバックアップ コピーを常に維持してください。 間違ったレコードを更新した場合、バックアップ コピーからレコードを元に戻すことができます。
 
 
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 この使用例では、現在 ReportsTo の値が 2 であるすべての従業員レコードについて、ReportsTo フィールドの値を 5 に変更します。
 

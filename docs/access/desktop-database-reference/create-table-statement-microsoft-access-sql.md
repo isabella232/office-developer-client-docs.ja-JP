@@ -12,26 +12,26 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 296e1405245d6204d136888e78b6a3846b468a1f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295360"
 ---
 # <a name="create-table-statement-microsoft-access-sql"></a>CREATE TABLE ステートメント (Microsoft Access SQL)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 新しいテーブルを作成します。
 
 > [!NOTE]
-> [!メモ] Microsoft Access データベース エンジンは、Microsoft Access データベース エンジン以外のデータベースでは CREATE TABLE 句や DDL (データ定義言語) ステートメントを使用できません。 代わりに DAO の**Create**メソッドを使用します。
+> Microsoft Access データベース エンジンでは、Microsoft Access データベース エンジン以外のデータベースで CREATE TABLE やその他の DDL ステートメントを使用することはできません。 代わりに、DAO の **Create** メソッドを使用してください。
 
 ## <a name="syntax"></a>構文
 
-作成\[一時\]テーブルの*テーブル*(*フィールド 1 種類* \[(*サイズ*)\] \[NOT NULL\] \[で圧縮。COMP と\] \[ *index1* \] \[、 *field2* *型* \[(*サイズ*)\] \[NOT NULL\] \[ *index2* \] \[、.\] \] \[、制約*multifieldindex* \[、.\]\])
+CREATE \[TEMPORARY\] TABLE *table* (*field1 type* \[(*size*)\] \[NOT NULL\] \[WITH COMPRESSION | WITH COMP\] \[*index1*\] \[, *field2* *type* \[(*size*)\] \[NOT NULL\] \[*index2*\] \[, …\]\] \[, CONSTRAINT *multifieldindex* \[, …\]\])
 
-CREATE TABLE ステートメントには、次の指定項目があります。
+CREATE TABLE ステートメントでは、次の引数を使用します。
 
 <table>
 <colgroup>
@@ -40,56 +40,56 @@ CREATE TABLE ステートメントには、次の指定項目があります。
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>指定項目</p></th>
+<th><p>パーツ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><em>table</em></p></td>
-<td><p>作成するテーブルの名前。</p></td>
+<td><p>作成されるテーブルの名前です。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>field1</em>, <em>field2</em></p></td>
-<td><p>新しいテーブルに作成するフィールドの名前。少なくとも 1 つのフィールドを作成する必要があります。</p></td>
+<td><p><em>field1</em>、<em>field2</em></p></td>
+<td><p>新しいテーブルを作成するフィールドの名前です。1 つ以上のフィールドを作成する必要があります。</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>type</em></p></td>
-<td><p>新規テーブルの<em>フィールド</em>のデータ型です。</p></td>
+<td><p>新しいテーブルの<em>フィールド</em>のデータ型。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>size</em></p></td>
-<td><p>バイト数で表したフィールド サイズ。テキスト型 (Text) およびバイナリ型 (Binary) フィールドのみ指定します。</p></td>
+<td><p>文字数単位のフィールド サイズです (テキスト型とバイナリ型のフィールドのみ)。</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>index1</em>, <em>index2</em></p></td>
-<td><p>単一フィールドを定義する CONSTRAINT 句。 このインデックスを作成する方法の詳細については、<a href="constraint-clause-microsoft-access-sql.md">制約句</a>を参照してください。</p></td>
+<td><p><em>index1</em>、<em>index2</em></p></td>
+<td><p>単一フィールド インデックスを定義する CONSTRAINT 句です。 このインデックスの作成方法については、「<a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT 句</a>」を参照してください。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>multifieldindex</em></p></td>
-<td><p>複数フィールドを定義する CONSTRAINT 句。 このインデックスを作成する方法の詳細については、<a href="constraint-clause-microsoft-access-sql.md">制約句</a>を参照してください。</p></td>
+<td><p>複数フィールド インデックスを定義する CONSTRAINT 句です。 このインデックスの作成方法については、「<a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT 句</a>」を参照してください。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-CREATE TABLE ステートメントを使用すると、新しいテーブルとそのフィールド、およびフィールドの制約を定義できます。 しない場合は、フィールドに NULL が指定されて、新しいレコードがそのフィールドに有効なデータが存在する必要です。
+CREATE TABLE ステートメントを使用して、新しいテーブル、フィールド、およびフィールドの制約を定義します。 フィールドに対して NOT NULL を指定した場合、フィールドには新しいレコードが有効なデータとして必要になります。
 
 CONSTRAINT 句はフィールドに対してさまざまな制約を設定するもので、これを使用して主キーを設定することができます。また、[CREATE INDEX](create-index-statement-microsoft-access-sql.md) ステートメントを使用して、既存のテーブルに主キーまたは追加のインデックスを作成することもできます。
 
-NOT NULL は、単一フィールド、または名前付き CONSTRAINT 句の内部で使用できます。名前付き CONSTRAINT 句は、単一フィールドまたは複数フィールドのどちらかの名前付き CONSTRAINT 句に適用されます。ただし、NOT NULL の制約を適用できるのはフィールドに対して一度のみです。再度適用しようとした場合は実行時エラーになります。
+NOT NULL を 1 つのフィールドまたは名前付きの CONSTRAINT 句内で使用し、CONSTRAINT という名前の 1 つのフィールドまたは複数のフィールドに適用することができます。ただし、フィールドに NOT NULL 制限を 1 回だけ適用することができます。この制限を複数回実行しようすると、実行時エラーになります。
 
-一時テーブルを作成するときは表示が作成されたセッション内でのみです。 セッションが終了すると、自動的に削除されます。 一時テーブルは、複数のユーザーからアクセスすることができます。
+TEMPORARY テーブルが作成される場合、作成されたセッションの中でのみ見ることができます。 セッションの終了時に自動的に削除されます。 一時テーブルは、複数のユーザーによってアクセスできます。
 
-WITH COMPRESSION 属性には、テキスト型 (Text) であるメモ型 (Memo) や文字型 (Character) および類似のデータ型のみ使用できます。
+WITH COMPRESSION 属性は、CHARACTER および MEMO (TEXT とも呼ばれます) データ型およびそれらの類義語でのみ使用できます。
 
-Unicode 文字の表示形式に変更するために、WITH COMPRESSION 属性が CHARACTER 列に追加されました。 Unicode 文字には、各文字一律に 2 バイトを必要とします。 主文字データを含む既存の Microsoft Jet データベースを Microsoft Access データベース エンジンの形式に変換するときのサイズで、データベース ・ ファイルがほぼ 2 倍はこの可能性があります。 ただし、sbcs 以前 1 バイト文字を設定 ()、多くの文字セットの Unicode 表現は簡単に 1 バイトに圧縮できます。 CHARACTER 列をこの属性で定義すると、データが格納時には自動的に圧縮され、取得時には圧縮解除されるようになります。
+Unicode 文字表現形式の変更のために、WITH COMPRESSION 属性が、CHARACTER 列に追加されました。 Unicode 文字では、各文字を格納するのにそれぞれ 2 バイトが必要です。 これは、主に文字データを含む既存の Microsoft Jet データベースを Microsoft Access データベース エンジンの形式に変換すると、ファイル サイズが約 2 倍になることを意味します。 しかし、Unicode 表示形式の文字セットの多くは、以前 1 バイトの文字セット (SBCS) であり、簡単に 1 バイトに圧縮することが可能です。 この属性を使用して CHARACTER 型の列を定義すると、列への格納時のデータ圧縮と列からの取得時のデータ圧縮解除が自動的に実行されます。
 
-MEMO 列もデータの格納を圧縮形式で定義することができます。ただし、これには制限があります。圧縮時 4096 バイト以下になる MEMO 列のインスタンスのみ圧縮されます。それ以外の MEMO 列のインスタンスは圧縮されずに残ります。これは、所定のテーブルの所定の MEMO 列で、圧縮されたデータと圧縮されていないデータが混在している可能性があることを意味します。
+MEMO 型の列を定義すると、圧縮形式でデータを格納することもできます。ただし、これには制限があります。MEMO 型の列のインスタンスが、圧縮されるときには、4096 バイト以内のみが圧縮されます。MEMO 型の列の他のすべてのインスタンスは圧縮されません。これは、特定のテーブル内の MEMO 型の列で、データの一部が圧縮され、一部のデータが圧縮されていないことを意味します。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 次の使用例では、2 つのテキスト フィールドを含む "ThisTable" という名前の新しいテーブルを作成します。
 

@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: f475635424cfb9ed8ddab4025d6a944bdedd39fd
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300526"
 ---
 # <a name="recordsetindex-property-dao"></a>Recordset.Index プロパティ (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
-テーブル タイプの **[Recordset](index-object-dao.md)** オブジェクト内にある現在の **[Index](recordset-object-dao.md)** オブジェクトの名前を示す値を設定または取得します (Microsoft Access ワークスペースのみ)。
+テーブル型の **[Recordset](recordset-object-dao.md)** オブジェクト内の現在の **[Index](index-object-dao.md)** オブジェクトの名前を示す値を設定または返します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。インデックス
+*式* .Index
 
-*式***レコード セット**オブジェクトを表す変数です。
+*式* **Recordset** オブジェクトを表す変数です。
 
 ## <a name="remarks"></a>注釈
 
@@ -36,24 +36,24 @@ ms.locfileid: "28702727"
 
 指定する **Index** オブジェクトは前もって定義しておく必要があります。存在していない **Index** オブジェクトに **Index** プロパティを設定するか、または [**Seek**](recordset-seek-method-dao.md) メソッドを使用するときに **Index** プロパティが設定されていない場合、トラップ可能なエラーが発生します。
 
-**TableDef** オブジェクトの **Indexes** コレクションを調べ、 **TableDef** オブジェクトから作成されたテーブル タイプの **Recordset** オブジェクトに使用できる **Index** オブジェクトを特定します。
+**TableDef** オブジェクトの **Indexes** コレクションを調べて、その **TableDef** オブジェクトから作成された、テーブル タイプの **Recordset** オブジェクトに使用できる **Index** オブジェクトを識別します。
 
 テーブルの新しいインデックスを作成する場合は、新しい **Index** オブジェクトを作成し、そのプロパティを設定して、基になる **TableDef** オブジェクトの **Indexes** コレクションにそのオブジェクトを追加した後、再び **Recordset** オブジェクトを開きます。
 
-テーブル タイプの **Recordset** オブジェクトは、基になる **TableDef** オブジェクトにインデックスを定義した場合にのみ、レコードを必要な順序で取得できます。 別の順序でレコードを並べ替えるには、ORDER BY 句を持つ SQL ステートメントを使用して、ダイナセット タイプ、スナップショット タイプまたは前方のみタイプの**Recordset**オブジェクトを開くことができます。
+テーブル タイプの **Recordset** オブジェクトは、基になる **TableDef** オブジェクトにインデックスを定義した場合にのみ、レコードを必要な順序で取得できます。別の順序でレコードを並べ替えるには、SQL ステートメントで ORDER BY 句を使用して、ダイナセット タイプ、スナップショット タイプ、または前方スクロール タイプの **Recordset** オブジェクトを開きます。
 
 
 > [!NOTE]
 > - テーブルにインデックスを作成するのは必須ではありません。大きなテーブルではインデックスを持たないと、特定のレコードへのアクセスまたは **Recordset** オブジェクトの作成に長い時間がかかる場合があります。一方、インデックスを多く作成しすぎると、すべてのインデックスが自動的に更新されるため、更新、追加、および削除を実行する速度が低下します。
 > - インデックスを持たないテーブルから返されるレコードの順序は特定できません。
-> - [Index](field-attributes-property-dao.md) オブジェクト内にある各 [**Field**](field-object-dao.md) オブジェクトの ****Attributes**** プロパティによってレコードの順序が決まり、その結果、そのインデックスに対して使用するアクセス方法が決まります。
+> - **Index** オブジェクト内にある各 **[Field](field-object-dao.md)** オブジェクトの **[Attributes](field-attributes-property-dao.md)** プロパティによってレコードの順序が決まり、その結果、そのインデックスに対して使用するアクセス方法が決まります。
 > - 一意のインデックスを使用すると、最適な方法でレコードを検索できます。
 > - インデックスを作成してもベース テーブルの物理的な順序は変更されません。インデックスによって変わるのは、特定のインデックスを選択するか、または **Recordset** オブジェクトを開いた場合に、テーブル タイプの **Recordset** オブジェクトでレコードにアクセスする方法のみです。
 
 
 ## <a name="example"></a>例
 
-この例では、 **Index** プロパティを使用して、テーブル タイプの **Recordset** オブジェクトにさまざまなレコード順序を設定します。
+この例では、**Index** プロパティを使用して、テーブル タイプの **Recordset** オブジェクトにさまざまなレコード順序を設定します。
 
 ```vb
     Sub IndexPropertyX() 
@@ -159,9 +159,9 @@ ms.locfileid: "28702727"
 
 <br/>
 
-次の例は、 Seek メソッドを使用して、リンクしたテーブル内のレコードを見つける方法を示します。
+次の例は、Seek メソッドを使用してリンク テーブル内のレコードを検索する方法を示しています。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     Sub TestSeek()

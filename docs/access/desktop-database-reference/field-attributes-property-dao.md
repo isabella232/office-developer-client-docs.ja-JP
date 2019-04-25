@@ -8,29 +8,29 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 010c7a2aea777a93d1ced2d33d8743320dd05ada
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293155"
 ---
 # <a name="fieldattributes-property-dao"></a>Field.Attributes プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 
-**[Field](field-object-dao.md)** オブジェクトの 1 つまたは複数の特性を示す値を設定または取得します。値の取得および設定が可能です。長整数型 ( **Long** ) の値を使用します。
+**[Field](field-object-dao.md)** オブジェクトの 1 つまたは複数の特性を示す値を設定または取得します。 読み取り/書き込みが可能な **Long** です。
 
 ## <a name="syntax"></a>構文
 
-*式*です。属性
+*式* .Attributes
 
-*式***Field**オブジェクトを表す変数です。
+*式* **Field** オブジェクトを表す変数です。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-この値は、 **Field** オブジェクトで表されるフィールドの特性を指定するもので、以下の定数の組み合わせを指定できます。
+この値は、**Field** オブジェクトで表されるフィールドの特性を指定するもので、以下の定数の組み合わせを指定できます。
 
 <table>
 <colgroup>
@@ -104,7 +104,7 @@ ms.locfileid: "28715313"
 </tr>
 <tr class="even">
 <td><p><strong>Relation</strong> オブジェクト</p></td>
-<td><p>サポートしません。</p></td>
+<td><p>非サポート</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>TableDef</strong> オブジェクト</p></td>
@@ -118,7 +118,7 @@ ms.locfileid: "28715313"
 
 ## <a name="example"></a>例
 
-次の例では、Northwind データベースの **Field**、 **Relation**、および **TableDef** の各オブジェクトの **Attributes** プロパティを表示します。
+この例では、ノースウィンド データベースの **Field**、**Relation**、および **TableDef** の各オブジェクトの **Attributes** プロパティを表示します。
 
 ```vb 
 Sub AttributesX() 

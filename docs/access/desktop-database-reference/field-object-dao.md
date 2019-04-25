@@ -1,5 +1,5 @@
 ---
-title: Field オブジェクトのデータ アクセス オブジェクトの (DAO)
+title: Field オブジェクト - データ アクセス オブジェクト (DAO)
 TOCTitle: Field Object
 ms:assetid: 47282ce2-9b49-ccf9-ad37-c4bb25cfd037
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff193203(v=office.15)
@@ -8,19 +8,19 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: c58896fb0d0a5c5a28844fdd3a6df922dd587f32
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293043"
 ---
-# <a name="field-object-dao"></a>フィールド オブジェクト (DAO)
+# <a name="field-object-dao"></a>Field オブジェクト (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 **Field** オブジェクトは、共通のデータ型およびプロパティの共通セットを持つ、データの列を表します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **Index** 、 **QueryDef** 、 **Relation** 、および **TableDef** の各オブジェクトの **Fields** コレクションには、そのオブジェクトが表すフィールドの定義が含まれます。 **Recordset** オブジェクトの **Fields** コレクションは、データの行、またはレコードの **Field** オブジェクトを表します。 **Recordset** オブジェクトのカレント レコードのフィールドの値を取得および設定するには、 **Recordset** オブジェクトの **Field** オブジェクトを使用します。
 
@@ -50,15 +50,15 @@ Microsoft Access ワークスペースで、 **Field** オブジェクトとそ�
 
 - **Fields**(0)
 
-- **フィールド**("name")
+- **Fields**(「名前」)
 
-- **フィールド**\!\[名\]
+- **Fields**\!\[名前\]
 
-同じ構文を使用して、作成して **Fields** コレクションに追加する **Field** オブジェクトの **Value** プロパティを参照することもできます。フィールド参照のコンテキストにより、 **Field** オブジェクトと **Field** オブジェクトの **Value** プロパティのいずれを参照するかが決まります。
+同じ構文を使用して、作成して **Fields** コレクションに追加する **Field** オブジェクトの **Value** プロパティを参照することもできます。フィールド参照のコンテキストにより、**Field** オブジェクトと **Field** オブジェクトの **Value** プロパティのいずれを参照するかが決まります。
 
 ## <a name="example"></a>例
 
-この例では、 **Field** オブジェクトの場所 ( **TableDef** の **Fields** コレクション、 **QueryDef** の **Fields** コレクションなど) に応じた、 **Field** オブジェクトに対して有効なプロパティを示します。このプロシージャを実行するには、FieldOutput プロシージャが必要です。
+この例では、**Field** オブジェクトの場所 (**TableDef** の **Fields** コレクション、**QueryDef** の **Fields** コレクションなど) に応じた、**Field** オブジェクトに対して有効なプロパティを示します。このプロシージャを実行するには、FieldOutput プロシージャが必要です。
 
 ```vb
     Sub FieldX() 
@@ -124,7 +124,7 @@ Microsoft Access ワークスペースで、 **Field** オブジェクトとそ�
 
 <br/>
 
-この例では、 **CreateField** メソッドを使用して、新しい **TableDef** に 3 つの **Fields** オブジェクトを作成します。次に、 **CreateField** メソッドによって自動的に設定される、これらの **Field** オブジェクトのプロパティを表示します ( **Field** オブジェクトの作成時に値が空のプロパティは表示されません)。
+この例では、**CreateField** メソッドを使用して、新しい **TableDef** に 3 つの **Fields** オブジェクトを作成します。次に、**CreateField** メソッドによって自動的に設定される、これらの **Field** オブジェクトのプロパティを表示します (**Field** オブジェクトの作成時に値が空のプロパティは表示されません)。
 
 ```vb
     Sub CreateFieldX() 

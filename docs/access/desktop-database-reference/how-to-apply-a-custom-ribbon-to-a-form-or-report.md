@@ -1,7 +1,7 @@
 ---
 title: フォームまたはレポートにカスタム リボンを適用する
 TOCTitle: Apply a custom ribbon to a form or report
-description: フォームまたは Access 2013 のレポートを読み込むときに、カスタマイズされたリボンを適用する方法です。
+description: Access 2013 でフォームまたはレポートを読み込むときにカスタマイズされたリボンを適用する方法。
 ms:assetid: 7dcdfa42-3eaa-43f9-b99d-56b2cac97f84
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196428(v=office.15)
 ms:contentKeyID: 48545865
@@ -9,29 +9,29 @@ ms.date: 10/16/2018
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 329f184a1bcd3c856ccfd0b15c3fa92bc6230c98
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28704001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32291916"
 ---
 # <a name="apply-a-custom-ribbon-to-a-form-or-report"></a>フォームまたはレポートにカスタム リボンを適用する
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 リボンでは、リボン XML の作成およびカスタマイズを簡素化するテキストベースの宣言型 XML マークアップが使用されています。 XML を数行記述するだけで、ユーザーに最適なインターフェイスを作成できます。 Access では、柔軟にリボン ユーザー インターフェイスをカスタマイズできます。 
 
 たとえば、カスタマイズしたマークアップをテーブルまたは別の Access データベースに格納する、VBA プロシージャに埋め込む、Excel のワークシートと関連付けるなどの操作ができます。 このトピックでは、フォームまたはレポートを読み込むときにカスタマイズしたリボンを適用する方法について説明します。
 
-## <a name="make-the-ribbon-customization-xml-available"></a>リボンのカスタマイズ XML を使用できるように
+## <a name="make-the-ribbon-customization-xml-available"></a>リボン カスタマイズ XML を利用可能にする
 
-### <a name="store-ribbon-extensibility-xml-in-a-table"></a>リボン機能拡張 XML をテーブルに格納します。
+### <a name="store-ribbon-extensibility-xml-in-a-table"></a>リボン機能拡張 XML をテーブルに格納する
 
 リボンのカスタマイズを使用できるようにするための 1 つの方法は、リボンのカスタマイズをテーブルに保管することです。カスタマイズを " **USysRibbons** " という名前のテーブルに保管した場合、マクロまたは VBA コードを使用せずにカスタマイズを実装できます。
 
-**USysRibbons** は、ユーザーが作成するシステム テーブルです。 実装するリボンのカスタマイズの特定の列名を使用して、テーブルを作成する必要があります。 
+**USysRibbons** はユーザーが作成したシステム テーブルです。 リボンのカスタマイズを実装するには、特定の列名を使用してテーブルを作成する必要があります。 
 
-次の表に、 **USysRibbons** テーブルを作成するときに使用する設定を示します。
+次のテーブルは、**USysRibbons** テーブルを作成するときに使用する設定を示しています。
 
 <table>
 <colgroup>
@@ -49,19 +49,19 @@ ms.locfileid: "28704001"
 <tbody>
 <tr class="odd">
 <td><p><strong>RibbonName</strong></p></td>
-<td><p>テキスト型 (Text)</p></td>
+<td><p>テキスト</p></td>
 <td><p>このカスタマイズに関連付けられるカスタム リボンの名前が含まれます。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>RibbonXML</strong></p></td>
-<td><p>メモ型 (Memo)</p></td>
-<td><p>リボン機能拡張 (RibbonX)、リボンのカスタマイズを定義する XML が含まれています。</p></td>
+<td><p>メモ</p></td>
+<td><p>リボンのカスタマイズを定義するリボン機能拡張 XML (RibbonX) が含まれます。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="load-ribbon-extensibility-xml-programmatically"></a>リボン機能拡張 XML をプログラムによって読み込む
+### <a name="load-ribbon-extensibility-xml-programmatically"></a>プログラムでリボン機能拡張 XML を読み込む
 
 **[LoadCustomUI](https://docs.microsoft.com/office/vba/api/Access.Application.LoadCustomUI)** メソッドを使用してリボンのカスタマイズをプログラムで読み込むことができます。通常、リボンを作成し、そのリボンをアプリケーションで使用できるようにするには、まず、リボンの名前と XML カスタマイズ マークアップを渡して **LoadCustomUI** メソッドを呼び出すプロシージャを使用して、データベースにモジュールを作成します。
 
@@ -69,21 +69,21 @@ XML マークアップには、テーブルから作成される **Recordset** �
 
 プロシージャが完了したら、"RunCode/プロシージャの実行" アクションを使用してプロシージャを呼び出す AutoExec マクロを作成します。これにより、アプリケーションが開始されたときに **LoadCustomUI** メソッドが自動的に実行され、すべてのカスタム リボンをアプリケーションで使用できるようになります。
 
-## <a name="assign-custom-ribbons-to-forms-or-reports"></a>フォームまたはレポートにカスタム リボンを割り当てる
+## <a name="assign-custom-ribbons-to-forms-or-reports"></a>フォームやレポートにカスタム リボンを割り当てる
 
 1.  前述のプロセスに従って、カスタマイズされたリボンをアプリケーションで使用できるようにします。
 
 2.  デザイン ビューでフォームまたはレポートを開きます。
 
-3.  [デザイン] タブで、**プロパティ シート**を選択します。
+3.  [デザイン] タブの [**プロパティ シート**] を選択します。
 
-4.  [プロパティ] ウィンドウの [**すべて**] タブで、[**リボン名**] ボックスの一覧を選択し、リボンを選択します。
+4.  [プロパティ] ウィンドウの [**すべて**] タブで、[**リボン名**] リストを選択し、リボンを選択します。
 
-5.  フォームまたはレポートを保存して閉じ、再度開きます。選択した リボン UI が表示されます。
+5.  フォームまたはレポートを保存して閉じ、再度開きます。 選択した リボン UI が表示されます。
 
 
 > [!NOTE]
-> [!メモ] リボン UI に表示されるタブは付加的なものです。 具体的には、タブを非表示にするか、*最初から*属性を**True**に設定、しない限り、フォームのタブが表示されますか、レポートのリボンのユーザー インターフェイスは、既存のタブに追加します。
+> リボン UI に表示されるタブは付加的なものです。つまり、特にタブを非表示にしない限り、また *Start from Scratch* 属性を **True** に設定しない限り、フォームまたはレポートのリボン ユーザー インターフェイスは既存のタブに付加されて表示されます。
 
 > [!NOTE]
 > [!メモ] 他の Office アプリケーションのリボン UI の詳細については、「[Office Fluent リボンの概要](https://docs.microsoft.com/office/vba/Library-Reference/Concepts/overview-of-the-office-fluent-ribbon)」を参照してください。

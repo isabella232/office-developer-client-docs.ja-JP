@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 7ef7f61ef632617b8d64a3fd9c34e5887e50065c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302962"
 ---
 # <a name="querydefexecute-method-dao"></a>QueryDef.Execute メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
-指定したオブジェクトの SQL ステートメントを実行します。
+指定されたオブジェクトに対して SQL ステートメントを実行します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。(***オプション***) を実行します。
+*式* .Execute (***Options***)
 
-*式***クエリ定義**オブジェクトを表す変数です。
+*式***QueryDef** オブジェクトを表す変数。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -42,14 +42,14 @@ ms.locfileid: "28709538"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/オプション</p></th>
+<th><p>必須/省略可能</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Options</em></p></td>
+<td><p><em>オプション</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p></p></td>
@@ -60,7 +60,7 @@ ms.locfileid: "28709538"
 
 ## <a name="remarks"></a>注釈
 
-**[RecordsetOptionEnum](recordsetoptionenum-enumeration-dao.md)** 定数は、次は、オプションを使用できます。
+Options には、次の **[RecordsetOptionEnum](recordsetoptionenum-enumeration-dao.md)** 定数を使用できます。
 
 <table>
 <colgroup>
@@ -79,16 +79,16 @@ ms.locfileid: "28709538"
 <td><p>他のユーザーに対して書き込み権限を許可しません (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>組み合わせて</strong></p></td>
+<td><p><strong>dbInconsistent</strong></p></td>
 <td><p>(既定値) 矛盾した更新を実行します (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>指定できます。</strong></p></td>
+<td><p><strong>dbConsistent</strong></p></td>
 <td><p>一貫性のある更新を実行します (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbSQLPassThrough</strong></p></td>
-<td><p>SQL パススルー クエリを実行します。このオプションを設定すると、SQL ステートメントが ODBC データベースに渡されて処理されます (Microsoft Access ワークスペースのみ)。</p></td>
+<td><p>SQL パススルー クエリを実行します。 このオプションを設定すると、SQL ステートメントが ODBC データベースに渡されて処理されます (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbFailOnError</strong></p></td>
@@ -104,7 +104,7 @@ ms.locfileid: "28709538"
 </tr>
 <tr class="even">
 <td><p><strong>dbExecDirect</strong></p></td>
-<td><p>SQLPrepare ODBC API 関数を呼び出さずにステートメントを実行します (ODBCDirect の Connection オブジェクトと QueryDef オブジェクトのみ)。</p></td>
+<td><p>最初に SQLPrepare ODBC API 関数を呼び出さずにステートメントを実行します (ODBCDirect Connection および QueryDef オブジェクトのみ)。</p></td>
 </tr>
 </tbody>
 </table>
@@ -122,11 +122,11 @@ Microsoft Access ワークスペースでは、指定した SQL ステートメ�
 
 以前のバージョンの Microsoft Jet データベース エンジンでは、暗黙のトランザクション内に自動的に SQL ステートメントが埋め込まれていました。 **dbFailOnError** を指定して実行したステートメントの一部が失敗した場合は、ステートメント全体がロールバックされました。パフォーマンスを向上するために、バージョン 3.5 以降では、この暗黙のトランザクションが取り除かれました。古いバージョンの DAO コードを更新する場合は、 **Execute** ステートメントの前後で明示的なトランザクションを使用することを検討してください。
 
-Microsoft Access ワークスペースでのパフォーマンスを最適にする (特にマルチユーザー環境の場合) には、トランザクション内部に **Execute** メソッドをネストします。現在の **[Workspace](workspace-begintrans-method-dao.md)** オブジェクトの **[BeginTrans](workspace-object-dao.md)** メソッドを使用し、次に **Execute** メソッドを使用し、最後に [Workspace](workspace-committrans-method-dao.md) の ****CommitTrans**** メソッドを使用してトランザクションを完了します。これにより、変更がディスクに保存され、クエリ実行中に適用されていたロックがすべて解除されます。
+Microsoft Access ワークスペース、特にマルチユーザー環境で最高のパフォーマンスを得るには、トランザクション内に **Execute** メソッドをネストします。 現在の**[Workspace](workspace-object-dao.md)** オブジェクトの **[BeginTrans](workspace-begintrans-method-dao.md)** メソッドを使用し、次に **Execute** メソッドを使用し、最後に **Workspace** の **[CommitTrans](workspace-committrans-method-dao.md)** メソッドを使用してトランザクションを完了します。 これにより、変更がディスクに保存され、クエリ実行中に適用されていたロックがすべて解除されます。
 
 ## <a name="example"></a>例
 
-この例では、 **Execute** メソッドを **QueryDef** オブジェクトから実行する場合と **Database** オブジェクトから実行する場合の両方を示します。このプロシージャを実行するには、ExecuteQueryDef プロシージャおよび PrintOutput プロシージャが必要です。
+この例では、**Execute** メソッドを **QueryDef** オブジェクトから実行する場合と **Database** オブジェクトから実行する場合の両方を示します。このプロシージャを実行するには、ExecuteQueryDef プロシージャおよび PrintOutput プロシージャが必要です。
 
 ```vb
     Sub ExecuteX() 
@@ -243,9 +243,9 @@ Microsoft Access ワークスペースでのパフォーマンスを最適にす
 
 <br/>
 
-次の例は、パラメーター クエリを実行する方法を示します。クエリを実行する前に Parameters コレクションを使用して myActionQuery クエリの Organization パラメーターを設定します。
+次の例は、パラメータ クエリを実行する方法を示しています。 Parameters コレクションは、クエリが実行される前に myActionQuery クエリの Organization パラメータを設定するために使用されます。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     Public Sub ExecParameterQuery()

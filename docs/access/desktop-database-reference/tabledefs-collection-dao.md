@@ -1,5 +1,5 @@
 ---
-title: テーブル定義コレクション (DAO)
+title: TableDefs コレクション (DAO)
 TOCTitle: TableDefs Collection
 ms:assetid: a2986b02-0437-d6ac-7bbb-c43f5225c3fc
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff820997(v=office.15)
@@ -8,33 +8,33 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: f16f44b57a690aa58efdff9b00341df5023c293f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314176"
 ---
-# <a name="tabledefs-collection-dao"></a>テーブル定義コレクション (DAO)
+# <a name="tabledefs-collection-dao"></a>TableDefs コレクション (DAO)
 
-**に適用されます:** Access 2013 |Office 2013
+**適用先**: Access 2013 | Office 2013
 
 **TableDefs** コレクションには、データベースに格納されているすべての **TableDef** オブジェクトが含まれます (Microsoft Access ワークスペースのみ)。
 
 ## <a name="remarks"></a>注釈
 
-テーブルの定義は、 **TableDef** オブジェクトおよびそのメソッドとプロパティを使用して操作します。
+テーブルの定義は、**TableDef** オブジェクトおよびそのメソッドとプロパティを使用して操作します。
 
 **Database** オブジェクトの既定のコレクションは、 **TableDefs** コレクションです。
 
 コレクション内の **TableDef** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。
 
-**テーブル定義**(0)
+**TableDefs**(0)
 
-**テーブル定義**("name")
+**TableDefs**("name")
 
-**テーブル**\!\[名\]
+**TableDefs**\!\[name\]
 
-**でリンクが用意されている** [UtterAccess](https://www.utteraccess.com)のコミュニティです。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
+[UtterAccess](https://www.utteraccess.com) コミュニティで**リンクが提供**されます。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
 
   - [Re-Linker Multi-Backends](https://www.utteraccess.com/wiki/index.php/re-linker_multi-backends)
 

@@ -8,18 +8,18 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 7d2700d9b9a514dc4ad02bcb18a1bc3003cd3521
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32309078"
 ---
 # <a name="recordsettypeenum-enumeration-dao"></a>RecordsetTypeEnum 列挙 (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
-" **Type/種類** " プロパティで、 **Recordset** オブジェクトの種類を指定するときに使用します。
+"**Type/種類**" プロパティで、**Recordset** オブジェクトの種類を指定するときに使用します。
 
 <table>
 <colgroup>
@@ -38,7 +38,7 @@ ms.locfileid: "28718526"
 <tr class="odd">
 <td><p>dbOpenDynamic</p></td>
 <td><p>16</p></td>
-<td><p>ダイナセット タイプの Recordset を開きます。</p></td>
+<td><p>ダイナセット タイプの Recordset を開きます</p></td>
 </tr>
 <tr class="even">
 <td><p>dbOpenDynaset</p></td>

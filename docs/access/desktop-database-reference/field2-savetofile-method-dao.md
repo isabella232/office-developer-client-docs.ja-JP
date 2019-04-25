@@ -12,17 +12,17 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 78b08575b1fde304dc47b8219c1143cda265baf8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32292707"
 ---
 # <a name="field2savetofile-method-dao"></a>Field2.SaveToFile メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
-ディスクに添付ファイルを保存します。
+添付ファイルをディスクに保存します。
 
 ## <a name="version-information"></a>バージョン情報
 
@@ -30,9 +30,9 @@ ms.locfileid: "28706983"
 
 ## <a name="syntax"></a>構文
 
-*式*です。SaveToFile (***ファイル名***)
+*式* .SaveToFile (***ファイル名***)
 
-*式***Field2**オブジェクトを表す変数です。
+*式***Field2** オブジェクトを表す変数。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -46,7 +46,7 @@ ms.locfileid: "28706983"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/オプション</p></th>
+<th><p>必須/省略可能</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
@@ -64,7 +64,7 @@ ms.locfileid: "28706983"
 
 ## <a name="example"></a>例
 
-次のコードは、 **SaveToFile** メソッドを使用して、特定の社員に関するすべての添付ファイルをディスクに保存する方法の例を示しています。
+次のコード スニペットでは、 **SaveToFile** メソッドを使用して、特定の従業員に関するすべての添付ファイルをディスクに保存する方法を示します。
 
 ```vb
     '  Instantiate the parent recordset.  
@@ -89,7 +89,7 @@ ms.locfileid: "28706983"
 
 次の例は、添付ファイル型フィールドに保管されているファイルを、指定されたフォルダー パスに保存する方法を示します。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     Public Function SaveAttachments(strPath As String, Optional strPattern As String = "*.*") As Long

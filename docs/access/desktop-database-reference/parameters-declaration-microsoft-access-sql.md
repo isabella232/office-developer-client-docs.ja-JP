@@ -1,5 +1,5 @@
 ---
-title: パラメーター宣言 (Microsoft Access SQL)
+title: PARAMETERS 宣言 (Microsoft Access SQL)
 TOCTitle: PARAMETERS declaration (Microsoft Access SQL)
 ms:assetid: 0dcaad68-6a5f-93dc-e62a-b82b36e1e69c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845220(v=office.15)
@@ -14,22 +14,22 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: d78a6c043e99af1ca50ca798b94088400fd09f0d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287868"
 ---
-# <a name="parameters-declaration-microsoft-access-sql"></a>パラメーター宣言 (Microsoft Access SQL)
+# <a name="parameters-declaration-microsoft-access-sql"></a>PARAMETERS 宣言 (Microsoft Access SQL)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 パラメーター クエリの中で使用する各パラメーターの名前とデータ型を宣言します。
 
 ## <a name="syntax"></a>構文
 
-パラメーター*名のデータ型* \[、*名前のデータ型* \[、.\]\]
+PARAMETERS *name datatype*\[、*name datatype*\[、...\]\]
 
 PARAMETERS 宣言には、次の指定項目があります。
 
@@ -47,11 +47,12 @@ PARAMETERS 宣言には、次の指定項目があります。
 <tbody>
 <tr class="odd">
 <td><p><em>name</em></p></td>
-<td><p>パラメーターの名前です。 <strong>パラメーター</strong>オブジェクトの<strong>Name</strong>プロパティに割り当てられており、<strong>パラメーター</strong>コレクション内のこのパラメーターを識別するために使用します。 <em>名</em>は、アプリケーションがクエリを実行中にダイアログ ボックスで表示される文字列として使用できます。 スペースや句読点を含む文字列を囲む角かっこ () を使用します。 たとえば、[バーゲン プライス] [どの month? を含むレポートを開始する] とは、有効な<em>名前</em>の引数です。</p></td>
+<td><p>パラメーターの名前です。 <strong>Parameter</strong> オブジェクトの <strong>Name</strong> プロパティに割り当てられ、<strong>Parameters</strong> コレクションでこのパラメーターを識別するために使用されます。 アプリケーションでクエリを実行するときに、ダイアログ ボックスに表示される文字列として <em>name</em> を使用できます。 角かっこ ([ ]) を使用して、スペースや句読点を含むテキストを囲みます。 たとえば、[低価格] や [レポートの開始月は?] は、有効な <em>name</em> 引数です。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>datatype</em></p></td>
-<td><p><a href="sql-data-types.md">Microsoft Access SQL データ型</a>の 1 つ、またはその別名のうちの 1 つを指定します。</p></td>
+<td><p>
+            <a href="sql-data-types.md">Microsoft Access SQL データ型</a>の 1 つ、またはその別名のうちの 1 つを指定します。</p></td>
 </tr>
 </tbody>
 </table>
@@ -69,7 +70,8 @@ PARAMETERS 宣言は省略可能ですが、指定する場合は [SELECT](selec
 PARAMETERS [Low price] Currency, [Beginning date] DateTime;
 ```
 
-[場所](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql)または[HAVING](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/having-clause-microsoft-access-sql)句の中では、*データ型*ではないですが、*名前*を使用できます。 次の例では、ユーザーに 2 つのパラメーターの入力を求め、取得した抽出条件を Orders テーブルのレコードに適用します。
+
+            [WHERE](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql) 句および [HAVING](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/having-clause-microsoft-access-sql) 句では、引数 *name* を使用できますが引数 *datatype* は使用できません。次の例では、ユーザーに 2 つのパラメーターの入力を求め、取得した抽出条件を Orders テーブルのレコードに適用します。
 
 ```sql
 PARAMETERS [Low price] Currency, 
@@ -80,11 +82,11 @@ WHERE OrderAmount > [Low price]
 AND OrderDate >= [Beginning date];
 ```
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 次の例では、ユーザーに役職の入力を求め、その役職をクエリの抽出条件として使用します。
 
-[SELECT ステートメント](select-statement-microsoft-access-sql.md)の例である EnumFields プロシージャを呼び出します。
+[SELECT ステートメント](select-statement-microsoft-access-sql.md)の使用例で見つけることができる EnumFields プロシージャを呼び出します。
 
 ```vb
     Sub ParametersX() 

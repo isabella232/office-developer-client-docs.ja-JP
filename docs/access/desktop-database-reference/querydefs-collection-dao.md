@@ -8,35 +8,35 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 3543d882e0584c35c88a5475032d9fe5505f516c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32303235"
 ---
 # <a name="querydefs-collection-dao"></a>QueryDefs コレクション (DAO)
 
-**適用されます**Access 2013、Office 2013。 
+**適用先**: Access 2013、Office 2013 
 
 **QueryDefs** コレクションには、Microsoft Access データベース エンジン データベースの **Database** オブジェクトのすべての **QueryDef** オブジェクトが含まれます。
 
 ## <a name="remarks"></a>注釈
 
-新しい **QueryDef** オブジェクトを作成するには、 **CreateQueryDef** メソッドを使用します。 Microsoft Access ワークスペースでは、name 引数の文字列を指定する場合、または、新しい**QueryDef**オブジェクトの**Name**プロパティを非--長さ 0 の文字列を明示的に設定する場合は、作成が自動的に永続的な**QueryDef****QueryDefs**コレクションに追加し、そのディスクに保存します。 引数 name として長さ 0 の文字列を指定するか、 **Name**プロパティを長さ 0 の文字列に明示的に設定すると、一時的な**QueryDef**オブジェクトが作成されます。
+新しい **QueryDef** オブジェクトを作成するには、 **CreateQueryDef** メソッドを使用します。 Microsoft Access ワークスペースで、引数  name に文字列を指定するか、新しい **QueryDef** オブジェクトの **Name** プロパティを明示的に長さ 0 の文字列以外に設定すると、 **QueryDefs** コレクションに自動的に追加されてディスクに保存される、永続的な **QueryDef** オブジェクトが作成されます。 引数  name として長さ 0 の文字列を指定するか、 **Name** プロパティを長さ 0 の文字列に明示的に設定すると、一時的な **QueryDef** オブジェクトが作成されます。
 
 コレクション内の **QueryDef** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。
 
-**クエリ定義**(0)
+**QueryDefs** (0)
 
-**クエリ定義**("name")
+**QueryDefs** (「名前」)
 
-**クエリ定義の**\!\[名\]
+**QueryDefs**\!\[名前\]
 
 一時的な **QueryDef** オブジェクトは、オブジェクトに割り当てたオブジェクト変数でのみ参照できます。
 
 ## <a name="example"></a>例
 
-この例では、新しい **QueryDef** オブジェクトを作成し、Northwind **Database** オブジェクトの **QueryDefs** コレクションに追加します。次に、 **QueryDefs** コレクションおよび新しい **QueryDef** オブジェクトの **Properties** コレクションを列挙します。
+この例では、新しい **QueryDef** オブジェクトを作成し、Northwind **Database** オブジェクトの **QueryDefs** コレクションに追加します。次に、**QueryDefs** コレクションおよび新しい **QueryDef** オブジェクトの **Properties** コレクションを列挙します。
 
 ```vb
     Sub QueryDefX() 
@@ -87,7 +87,7 @@ ms.locfileid: "28705982"
 
 <br/>
 
-この例では、 **CreateQueryDef** メソッドを使用して、一時的および永続的な **QueryDef** オブジェクトを両方作成して実行します。このプロシージャを実行するには、 GetrstTemp 関数が必要です。
+この例では、**CreateQueryDef** メソッドを使用して、一時的と永続的な **QueryDef** の両方を作成して実行します。 この手順を実行するには、GetrstTemp 関数が必要です。
 
 ```vb
     Sub CreateQueryDefX() 
@@ -142,9 +142,9 @@ ms.locfileid: "28705982"
 
 <br/>
 
-次の例は、パラメーター クエリを実行する方法を示します。クエリを実行する前に Parameters コレクションを使用して myActionQuery クエリの Organization パラメーターを設定します。
+次の例は、パラメータ クエリを実行する方法を示しています。 Parameters コレクションは、クエリが実行される前に myActionQuery クエリの Organization パラメータを設定するために使用されます。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 プログラマー用リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     Public Sub ExecParameterQuery()
@@ -171,7 +171,7 @@ ms.locfileid: "28705982"
 
 <br/>
 
-次の例は、パラメーター クエリに基づく Recordset を開く方法を示します。
+次の例は、パラメーター クエリに基づく Recordset を開く方法を示しています。
 
 ```vb
     Dim dbs As DAO.Database

@@ -1,5 +1,5 @@
 ---
-title: 列挙型の格納 (DAO)
+title: DataTypeEnum 列挙 (DAO)
 TOCTitle: DataTypeEnum Enumeration
 ms:assetid: 59ead483-52fc-53cd-02e6-084814f961ac
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194420(v=office.15)
@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 499513d706b254e72433d37d4eb5452ccbbaa257
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294450"
 ---
-# <a name="datatypeenum-enumeration-dao"></a>列挙型の格納 (DAO)
+# <a name="datatypeenum-enumeration-dao"></a>DataTypeEnum 列挙 (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 オブジェクトの操作上のデータ型を指定します。
 
@@ -46,7 +46,7 @@ ms.locfileid: "28700865"
 <td><p>多倍長整数型データ</p></td>
 </tr>
 <tr class="odd">
-<td><p>示す dbBinary</p></td>
+<td><p>dbBinary</p></td>
 <td><p>9</p></td>
 <td><p>バイナリ型データ</p></td>
 </tr>
@@ -118,7 +118,7 @@ ms.locfileid: "28700865"
 <tr class="odd">
 <td><p>dbDecimal</p></td>
 <td><p>20</p></td>
-<td><p>10 進型データ (ODBCDirect のみ)</p><p><strong>注</strong>: Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。 Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</p>
+<td><p>10 進型データ (ODBCDirect のみ)</p><p><strong>メモ</strong>: Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。 Microsoft Access データベース エンジンを使用せずに外部データソースにアクセスする場合は、ADO を使用してください。</p>
 </td>
 </tr>
 <tr class="even">
@@ -137,7 +137,7 @@ ms.locfileid: "28700865"
 </td>
 </tr>
 <tr class="even">
-<td><p>データと</p></td>
+<td><p>dbGUID</p></td>
 <td><p>15</p></td>
 <td><p>GUID 型データ</p></td>
 </tr>

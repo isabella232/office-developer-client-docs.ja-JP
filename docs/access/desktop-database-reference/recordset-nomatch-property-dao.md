@@ -12,35 +12,39 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: e54f8c51787e51785bdaacaecd28a8d24e2cb5b1
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300428"
 ---
 # <a name="recordsetnomatch-property-dao"></a>Recordset.NoMatch プロパティ (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 **[Seek](recordset-seek-method-dao.md)** メソッドを使用するかまたは **[Find](recordset-findfirst-method-dao.md)** メソッドの 1 つを使用して、特定のレコードが見つかったかどうかを示します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。NoMatch
+*式* . NoMatch
 
-*式***レコード セット**オブジェクトを表す変数です。
+*式* **Recordset** オブジェクトを表す変数です。
 
 ## <a name="remarks"></a>注釈
 
-**[Recordset](recordset-object-dao.md)** オブジェクトを開くかまたは作成すると、そのオブジェクトの **NoMatch** プロパティは **False** に設定されます。
 
-レコードを見つける場合、テーブル タイプの **Recordset** オブジェクトに対しては **Seek** メソッドを使用し、ダイナセット タイプまたはスナップショット タイプの **Recordset** オブジェクトに対しては **Find** メソッドのいずれか 1 つを使用します。 **NoMatch** プロパティの設定値を調べ、レコードが見つかったかどうかを確認します。
+            **
+            [Recordset](recordset-object-dao.md)** オブジェクトを開くかまたは作成すると、そのオブジェクトの **NoMatch** プロパティは **False** に設定されます。
 
-**Seek** メソッドまたは **Find** メソッドで検出されず、 **NoMatch** プロパティが **True** に設定されると、カレント レコードは無効になります。そのレコードに戻る必要がある場合は、 **Seek** メソッドまたは **Find** メソッドを使用する前に、カレント レコードのブックマークを取得してください。
+レコードを見つける場合、テーブル タイプの **Recordset** オブジェクトに対しては **Seek** メソッドを使用し、ダイナセット タイプまたはスナップショット タイプの **Recordset** オブジェクトに対しては **Find** メソッドのいずれか 1 つを使用します。**NoMatch** プロパティの設定値を調べ、レコードが見つかったかどうかを確認します。
+
+
+            **Seek** メソッドまたは **Find** メソッドで検出されず、**NoMatch** プロパティが **True** に設定されると、カレント レコードは無効になります。そのレコードに戻る必要がある場合は、**Seek** メソッドまたは **Find** メソッドを使用する前に、カレント レコードのブックマークを取得してください。
 
 
 > [!NOTE]
-> [!メモ] [Recordset](recordset-movefirst-method-dao.md) オブジェクトでいずれの ****Move**** メソッドを使用しても、そのオブジェクトの **NoMatch** プロパティの設定値には反映されません。
+> 
+            **Recordset** オブジェクトでいずれの **[Move](recordset-movefirst-method-dao.md)** メソッドを使用しても、そのオブジェクトの **NoMatch** プロパティの設定値には反映されません。
 
 
 ## <a name="example"></a>例
@@ -168,9 +172,9 @@ ms.locfileid: "28702629"
 
 <br/>
 
-次の例は、 Seek メソッドを使用して、リンクしたテーブル内のレコードを見つける方法を示します。
+次の例は、Seek メソッドを使用して、リンクしたテーブル内のレコードを見つける方法を示します。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     Sub TestSeek()

@@ -12,26 +12,26 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 46bc0a50e31555189c069e0ee09c4c84349c04c7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295430"
 ---
 # <a name="create-index-statement-microsoft-access-sql"></a>CREATE INDEX ステートメント (Microsoft Access SQL)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 既存のテーブルに新しいインデックスを作成します。
 
 > [!NOTE]
-> Microsoft Access 以外のデータベース エンジンのデータベースを Microsoft Access データベース エンジンに以外には、ODBC のリンク テーブルに擬似インデックスを作成) のインデックスの作成またはデータ定義言語 (DDL) ステートメントのいずれかの使用はできません。 代わりに DAO の**Create**メソッドを使用します。 詳細については、「解説」セクションを参照してください。
+> Microsoft Access データベース エンジン以外のデータベース の場合、Microsoft Access データベース エンジンでは、CREATE INDEX (ODBC リンク テーブルで擬似インデックスを作成する場合を除く) やデータ定義言語ステートメントを使用できません。 代わりに、DAO の **Create** メソッドを使用してください。 詳しくは、「解説」セクションを参照してください。
 
 ## <a name="syntax"></a>構文
 
-作成\[独自の\]*インデックス*の*テーブル*のインデックス (*フィールド* \[ASC |DESC\]\[、*フィールド* \[ASC |DESC\]をしています.\]) \[WITH {主 |NULL を許可しません。NULL を無視します。\]
+CREATE \[ UNIQUE \] INDEX *index* ON *table* (*field* \[ASC|DESC\]\[, *field* \[ASC|DESC\], …\]) \[WITH { PRIMARY | DISALLOW NULL | IGNORE NULL }\]
 
-CREATE INDEX ステートメントには次の指定項目があります。
+CREATE INDEX ステートメントには、次の指定項目があります。
 
 <table>
 <colgroup>
@@ -40,18 +40,18 @@ CREATE INDEX ステートメントには次の指定項目があります。
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>指定項目</p></th>
+<th><p>パーツ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><em>index</em></p></td>
-<td><p>作成するインデックスの名前。</p></td>
+<td><p>作成されるインデックスの名前です。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>table</em></p></td>
-<td><p>インデックスを作成する既存のテーブルの名前。</p></td>
+<td><p>インデックスを含む既存のテーブルの名前です。</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>field</em></p></td>
@@ -61,26 +61,26 @@ CREATE INDEX ステートメントには次の指定項目があります。
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-インデックス フィールドの値がレコード間で重複しないようにするには、予約語 UNIQUE を使用します。
+異なるレコードのインデックス付きフィールドで値の重複を禁止するには、UNIQUE 予約語を使用します。
 
-省略可能な句を使用して、データの入力規則を適用できます。 次の操作を実行できます。
+オプションの WITH 句では、データ入力規則を強制できます。 次の操作を実行できます。
 
-- DISALLOW NULL オプションを使用すると、新しいレコードのインデックス フィールドに Null 値を入力できなくなります。
+- DISALLOW NULL オプションを使用して、新しいレコードのインデックス付きフィールドの Null エントリを禁止します。
 
-- IGNORE NULL オプションを使用すると、インデックス フィールドに **Null** 値が格納されているレコードを、インデックスに入れることができなくなります。
+- IGNORE NULL オプションを使用して、インデックス付きフィールドに **Null** 値を持つレコードがインデックスに含まれないようにします。
 
 - 予約語 PRIMARY を使用すると、インデックス フィールドを主キーとして指定します。これによりキーが一意な値になるため、予約語 UNIQUE は省略できます。
 
-インデックスの作成を使用すると、インデックスがない、Microsoft SQL Server などの ODBC データ ソースにリンクされているテーブルに擬似インデックスを作成します。 、擬似インデックスを作成するには、アクセス許可またはリモート サーバーにアクセスする必要はありませんし、リモート ・ データベースを認識しないと、擬似インデックスによって影響を受けていないのです。 リンクとネイティブの両方のテーブルには、同じ構文を使用します。 擬似インデックスを作成するには通常は読み取り専用テーブルには、特に便利です。
+CREATE INDEX を使用して、まだインデックスのない Microsoft SQL Server など、ODBC データソースのリンク テーブルで擬似インデックスを作成できます。 擬似インデックスを作成するために、リモート サーバーへのアクセス許可は必要ありません。また、リモート データベースは認識されず、擬似インデックスの影響を受けません。 リンク テーブルとネイティブ テーブルの両方に同じ構文を使用します。 通常、読み取り専用になるテーブルに擬似インデックスを作成すると、特に便利な場合があります。
 
 [ALTER TABLE](alter-table-statement-microsoft-access-sql.md) ステートメントを使用して、テーブルに単一フィールド インデックスまたは複数フィールド インデックスを追加することもできます。ALTER TABLE ステートメントや CREATE INDEX ステートメントで作成したインデックスは、ALTER TABLE ステートメントまたは [DROP](drop-statement-microsoft-access-sql.md) ステートメントを使用して削除できます。
 
 > [!NOTE]
-> [!メモ] 既に主キーが設定されているテーブルに新しいインデックスを作成する場合は、予約語 PRIMARY は使用しないでください。使用した場合はエラーになります。
+> 主キーが既にあるテーブルに新しいインデックスを作成する場合、PRIMARY 予約語を使用しないでください。使用すると、エラーが発生します。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 次の使用例では、Employees テーブルの "Home Phone" および "Extension" というフィールドで構成されたインデックスを作成します。
 

@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: c2d355e2a16df632d6952802914c1f921b5e9719
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28719527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289858"
 ---
 # <a name="locktypeenum-enumeration-dao"></a>LockTypeEnum 列挙 (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 レコードセットを開くときに使用されるレコード ロックの種類を指定します。
 

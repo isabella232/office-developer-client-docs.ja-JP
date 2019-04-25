@@ -12,20 +12,20 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 77d56efd63d6a0841b595f12456baa808751706e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28720339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295521"
 ---
 # <a name="convert-dao-code-to-ado"></a>DAO コードを ADO に変換する
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 > [!NOTE]
-> [!メモ] Access では、DAO 3.6 以前のオブジェクト ライブラリを提供およびサポートしていません。
+> 3.6より前のバージョンの DAO ライブラリは、Access では提供もサポートもされていません。
 
-## <a name="dao-to-ado-object-map"></a>ADO オブジェクトのマップに DAO
+## <a name="dao-to-ado-object-map"></a>DAO から ADO へのオブジェクト マップ
 
 <table>
 <colgroup>
@@ -64,22 +64,22 @@ ms.locfileid: "28720339"
 <tr class="odd">
 <td><p>Dynaset-Type</p></td>
 <td><p>Keyset</p></td>
-<td><p>レコード セット内のレコードへのポインターのセットを取得します。</p></td>
+<td><p>レコードセットのレコードへのポインターを取得します。</p></td>
 </tr>
 <tr class="even">
 <td><p>Snapshot-Type</p></td>
 <td><p>Static</p></td>
-<td><p>全レコードを取得しますが、静的レコード セットを更新することができます。</p></td>
+<td><p>共にフル レコードを取得しますが、Static レコードセットは更新可能です。</p></td>
 </tr>
 <tr class="odd">
 <td><p>Table-Type</p></td>
-<td><p>AdCmdTableDirect オプションを使用してキーセットです。</p></td>
+<td><p>adCmdTableDirect オプションを持つ Keyset。</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>フィールド</p></td>
 <td><p>フィールド</p></td>
-<td><p>参照されたとき、レコード セットにします。</p></td>
+<td><p>レコードセットを参照するとき。</p></td>
 </tr>
 </tbody>
 </table>
@@ -89,7 +89,7 @@ ms.locfileid: "28720339"
 
 ### <a name="dao"></a>DAO
 
-#### <a name="open-a-recordset"></a>Recordset を開く場合
+#### <a name="open-a-recordset"></a>Recordset を開く
 
 ```vb
  Dim db as Database
@@ -98,7 +98,7 @@ ms.locfileid: "28720339"
  Set rs = db.OpenRecordset("Employees")
 ```
 
-#### <a name="edit-a-recordset"></a>Recordset を編集する場合
+#### <a name="edit-a-recordset"></a>Recordset を編集する
 
 ```vb
  rs.Edit 
@@ -108,7 +108,7 @@ ms.locfileid: "28720339"
 
 ### <a name="ado"></a>ADO
 
-#### <a name="open-a-recordset"></a>Recordset を開く場合
+#### <a name="open-a-recordset"></a>Recordset を開く
 
 ```vb
  Dim rs as New ADODB.Recordset
@@ -116,7 +116,7 @@ ms.locfileid: "28720339"
          adOpenKeySet, adLockOptimistic
 ```
 
-#### <a name="edit-a-recordset"></a>Recordset を編集する場合
+#### <a name="edit-a-recordset"></a>Recordset を編集する
 
 ```vb
  rs("TextFieldName") = "NewValue" 
@@ -125,13 +125,13 @@ ms.locfileid: "28720339"
 
 
 > [!NOTE]
-> 最初に**CancelUpdate**メソッドを暗黙的に使用せず、 **MovePrevious、MoveNext、MoveLast、MoveFirst**を使用してカレント レコードからフォーカスを移動すると、 **Update**メソッドが実行されます。
+> 最初に **CancelUpdate** メソッドを使用せずに、 **MoveNext、MoveLast、MoveFirst、MovePrevious** メソッドを使ってカレント レコードからフォーカスを移動すると、暗黙的に **Update** メソッドが実行されます。
 
 ### <a name="about-the-contributors"></a>投稿者について
 
-**でリンクが用意されている** [UtterAccess](https://www.utteraccess.com)のコミュニティです。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
+**リンクの提供元: **[UtterAccess](https://www.utteraccess.com) コミュニティ。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
 
-- [DAO と ADO の間で選択する](https://www.utteraccess.com/wiki/index.php/choosing_between_dao_and_ado)
+- [DAO と ADO 間の選択](https://www.utteraccess.com/wiki/index.php/choosing_between_dao_and_ado)
 
 <br/>
 

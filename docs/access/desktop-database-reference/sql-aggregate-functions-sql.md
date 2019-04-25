@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: fdfcc9be363e2338a8889dbde4f56d56fce5eb67
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32306434"
 ---
 # <a name="sql-aggregate-functions-sql"></a>SQL 集計関数 (SQL)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 SQL 集計関数を使用すると、値の集合からさまざまな統計情報を求めることができます。SQL 集計関数は、 **QueryDef** オブジェクトの **SQL** プロパティのクエリおよび集計式で使用できます。また、SQL クエリに基づく **Recordset** オブジェクトを作成する場合にも使用できます。
 

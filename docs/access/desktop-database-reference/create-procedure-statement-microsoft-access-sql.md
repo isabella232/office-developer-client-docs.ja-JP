@@ -10,45 +10,45 @@ dev_langs:
 - sql
 localization_priority: Priority
 ms.openlocfilehash: f223e164bd36a6a1a76140a28dd57cd2005e4a20
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28700767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295405"
 ---
 # <a name="create-procedure-statement-microsoft-access-sql"></a>CREATE PROCEDURE ステートメント (Microsoft Access SQL)
 
-**適用されます**Access 2013、Office 2013。 
+**適用先**: Access 2013、Office 2013 
 
 ストアド プロシージャを作成します。
 
 > [!NOTE]
-> [!メモ] Microsoft Access データベース エンジンは、Microsoft Jet データベース以外のデータベースでは CREATE PROCEDURE 句や DDL (データ定義言語) ステートメントを使用できません。
+> Microsoft Access データベース エンジンは、Microsoft Jet データベース以外のデータベースでは CREATE PROCEDURE 句や DDL (データ定義言語) ステートメントを使用できません。
 
 ## <a name="syntax"></a>構文
 
-プロシージャの作成*手順* \[ *param1 のデータ型*\[、*パラメーター 2 のデータ型*\[をしています.\] \]として連結
+CREATE PROCEDURE *procedure* \[*param1 datatype*\[, *param2 datatype*\[, …\]\] AS sqlstatement
 
-CREATE PROCEDURE ステートメントには次の指定項目があります。
+CREATE PROCEDURE ステートメントでは、次の引数を使用します。
 
-|指定項目|説明|
+|パーツ|説明|
 |:---|:----------|
-|*procedure*|プロシージャ名。名前付け規則に従った名前を指定します。|
-|*param1*、*param2*|1 以上 255 個までのフィールド名またはパラメーター。たとえば、次のように指定します。
-<br/><br/>`CREATE PROCEDURE Sales_By_Country [Beginning Date] DateTime, [Ending Date] DateTime;`<br/><br/>パラメーターの詳細については、[パラメーター](parameters-declaration-microsoft-access-sql.md)を参照してください。|
-|*datatype*|[Microsoft Access SQL データ型](sql-data-types.md)の 1 つ、またはその別名のうちの 1 つを指定します。|
-|*sqlstatement*|SELECT、UPDATE、DELETE、INSERT、CREATE TABLE、DROP TABLE などの SQL ステートメントを指定します。|
+|*procedure*|プロシージャの名前。 名前付け規則に従った名前を指定します。|
+|*param1*、*param2*|0 ～ 255 のフィールド名またはパラメーター。 例:<br/><br/>`CREATE PROCEDURE Sales_By_Country [Beginning Date] DateTime, [Ending Date] DateTime;`<br/><br/>パラメーターの詳細については、「[PARAMETERS](parameters-declaration-microsoft-access-sql.md)」を参照してください。|
+|*datatype*|
+            [Microsoft Access SQL データ型](sql-data-types.md)の 1 つ、またはその別名のうちの 1 つを指定します。|
+|*sqlstatement*|SELECT、UPDATE、DELETE、INSERT、CREATE TABLE、DROP TABLE などの SQL ステートメント。|
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-SQL のプロシージャは、プロシージャ名を指定する PROCEDURE 句、パラメーター定義のリスト (省略可能)、および 1 つの SQL ステートメントで構成されます。
+SQL プロシージャは、プロシージャの名前を指定する PROCEDURE 句、オプションのパラメーター定義リスト、1 つの SQL ステートメントで構成されます。
 
-プロシージャ名は、既存のテーブル名と同じ名前を使用することはできません。
+プロシージャ名は、既存のテーブルの名前と同じにすることができません。
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
-この例では、クエリ CategoryList、名前を指定し、SELECT ステートメントの例である EnumFields プロシージャを呼び出します。
+この例では、クエリを CategoryList と名付け、EnumFields プロシージャを呼び出します。EnumFields プロシージャについては、SELECT ステートメントの使用例を参照してください。
 
 ```vb
     Sub ProcedureX() 

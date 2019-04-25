@@ -1,5 +1,5 @@
 ---
-title: (DAO) レコード セットのプロパティ
+title: Recordset プロパティ (DAO)
 TOCTitle: Properties
 ms:assetid: 37114a17-3737-4995-b35d-dd64c75b5ed2
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn124336(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: dc5329b9c320a98076c4dad88c4681cdd10fba7e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28707368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300407"
 ---
-# <a name="recordset-properties-dao"></a>(DAO) レコード セットのプロパティ
+# <a name="recordset-properties-dao"></a>Recordset プロパティ (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 - [Recordset.AbsolutePosition プロパティ (DAO)](recordset-absoluteposition-property-dao.md)
 - [Recordset.BatchCollisionCount プロパティ (DAO)](recordset-batchcollisioncount-property-dao.md)

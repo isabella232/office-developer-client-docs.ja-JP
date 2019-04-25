@@ -12,18 +12,18 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 3ea0641c7325bfcb4339572bc8b50724115af8d6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32293512"
 ---
 # <a name="equivalent-ansi-sql-data-types"></a>同等の ANSI SQL のデータ型
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
-次の表は、ANSI SQL でサポートされているデータ型、およびそれらと一致する Microsoft Access データベース エンジン SQL でサポートされているデータ型とその別名を示したものです。 同等の Microsoft SQL Server™ データ型を一覧表示します。
+次の表は、ANSI SQL データ型、同等の Microsoft Access データベース エンジンの SQL データ型、有効な類義語を一覧表示しています。 また、この表には同等の Microsoft SQL Server™ のデータ型も示されています。
 
 <table>
 <colgroup>
@@ -35,39 +35,38 @@ ms.locfileid: "28699381"
 <thead>
 <tr class="header">
 <th><p>ANSI SQL のデータ型</p></th>
-<th><p>Microsoft Access SQL データ型</p></th>
-<th><p>
-別名</p></th>
-<th><p>Microsoft SQL Server データ型</p></th>
+<th><p>Microsoft Access SQL のデータ型</p></th>
+<th><p>類義語</p></th>
+<th><p>Microsoft SQL Server のデータ型</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>BIT、BIT VARYING</p></td>
 <td><p>BINARY (次の「メモ」を参照)</p></td>
-<td><p>VARBINARY 型、バイナリのビットが異なるさまざまな</p></td>
+<td><p>VARBINARY、BINARY VARYING BIT VARYING</p></td>
 <td><p>BINARY、VARBINARY</p></td>
 </tr>
 <tr class="even">
-<td><p>使用不可</p></td>
+<td><p>サポート対象外</p></td>
 <td><p>BIT (次の「メモ」を参照)</p></td>
 <td><p>BOOLEAN、LOGICAL、LOGICAL1、YESNO</p></td>
 <td><p>BIT</p></td>
 </tr>
 <tr class="odd">
-<td><p>使用不可</p></td>
+<td><p>サポート対象外</p></td>
 <td><p>TINYINT</p></td>
 <td><p>INTEGER1、BYTE</p></td>
 <td><p>TINYINT</p></td>
 </tr>
 <tr class="even">
-<td><p>使用不可</p></td>
+<td><p>サポート対象外</p></td>
 <td><p>COUNTER (次の「メモ」を参照)</p></td>
 <td><p>AUTOINCREMENT</p></td>
-<td><p>(次の「メモ」を参照)</p></td>
+<td><p>(メモを参照)</p></td>
 </tr>
 <tr class="odd">
-<td><p>使用不可</p></td>
+<td><p>サポート対象外</p></td>
 <td><p>MONEY</p></td>
 <td><p>CURRENCY</p></td>
 <td><p>MONEY</p></td>
@@ -75,11 +74,11 @@ ms.locfileid: "28699381"
 <tr class="even">
 <td><p>DATE、TIME、TIMESTAMP</p></td>
 <td><p>DATETIME</p></td>
-<td><p>日付、時刻 (メモを参照してください)</p></td>
+<td><p>DATE、TIME (メモを参照)</p></td>
 <td><p>DATETIME</p></td>
 </tr>
 <tr class="odd">
-<td><p>使用不可</p></td>
+<td><p>非サポート</p></td>
 <td><p>UNIQUEIDENTIFIER</p></td>
 <td><p>GUID</p></td>
 <td><p>UNIQUEIDENTIFIER</p></td>
@@ -116,26 +115,26 @@ ms.locfileid: "28699381"
 </tr>
 <tr class="odd">
 <td><p>INTERVAL</p></td>
-<td><p>使用不可</p></td>
+<td><p>非サポート</p></td>
 <td><p></p></td>
-<td><p>使用不可</p></td>
+<td><p>サポートされていません。</p></td>
 </tr>
 <tr class="even">
-<td><p>使用不可</p></td>
+<td><p>非サポート</p></td>
 <td><p>IMAGE</p></td>
-<td><p>文字列では、一般に、OLE オブジェクト</p></td>
+<td><p>LONGBINARY、GENERAL、OLEOBJECT</p></td>
 <td><p>IMAGE</p></td>
 </tr>
 <tr class="odd">
-<td><p>使用不可</p></td>
-<td><p>テキスト (メモを参照してください)</p></td>
+<td><p>非サポート</p></td>
+<td><p>TEXT (メモを参照)</p></td>
 <td><p>LONGTEXT、LONGCHAR、MEMO、NOTE、NTEXT (次の「メモ」を参照)</p></td>
 <td><p>TEXT</p></td>
 </tr>
 <tr class="even">
 <td><p>CHARACTER、CHARACTER VARYING、NATIONAL CHARACTER、NATIONAL CHARACTER VARYING</p></td>
 <td><p>CHAR (次の「メモ」を参照)</p></td>
-<td><p>TEXT(n)、英数字、文字、文字列、varchar 型、文字 VARYING、NCHAR、国別文字、国際文字、国別文字 VARYING、国立の CHAR VARYING (メモを参照してください)</p></td>
+<td><p>TEXT(n)、ALPHANUMERIC、CHARACTER, STRING、VARCHAR、CHARACTER VARYING、NCHAR、NATIONAL CHARACTER、NATIONAL CHAR、NATIONAL CHARACTER VARYING、NATIONAL CHAR VARYING (メモを参照)</p></td>
 <td><p>CHAR、VARCHAR、NCHAR、NVARCHAR</p></td>
 </tr>
 </tbody>

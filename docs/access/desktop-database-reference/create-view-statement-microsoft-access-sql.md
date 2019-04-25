@@ -8,26 +8,26 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 73fac5ff9dd1f5cf277b8cb241044af23609b764
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295367"
 ---
 # <a name="create-view-statement-microsoft-access-sql"></a>CREATE VIEW ステートメント (Microsoft Access SQL)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 新しいビューを作成します。
 
 > [!NOTE]
-> [!メモ] Microsoft Access データベース エンジンは、Microsoft Access データベース エンジン以外のデータベースでは CREATE VIEW 句や DDL (データ定義言語) ステートメントを使用できません。
+> Microsoft Access データベース エンジンでは、Microsoft Access データベース エンジン以外のデータベースで CREATE VIEW やその他の DDL ステートメントを使用することはできません。
 
 ## <a name="syntax"></a>構文
 
-*ビュー*のビューの作成\[(*フィールド 1*\[、*フィールド 2*\[、.\] \])\]として*使いましょう*
+CREATE VIEW *view* \[(*field1*\[, *field2*\[, …\]\])\] AS *selectstatement*
 
-CREATE VIEW ステートメントには次の指定項目があります。
+CREATE VIEW ステートメントでは、次の引数を使用します。
 
 <table>
 <colgroup>
@@ -36,36 +36,37 @@ CREATE VIEW ステートメントには次の指定項目があります。
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>指定項目</p></th>
+<th><p>パーツ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><em>view</em></p></td>
-<td><p>作成するビューの名前。</p></td>
+<td><p>作成するビューの名前です。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>field1</em>, <em>field2</em></p></td>
-<td><p><em>selectstatement</em> で指定された関連フィールドのフィールド名。</p></td>
+<td><p><em>field1</em>、<em>field2</em></p></td>
+<td><p>
+            <em>selectstatement</em> に指定されている該当フィールドのフィールド名です。</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>selectstatement</em></p></td>
-<td><p>SQL SELECT ステートメント。 詳細については、 <a href="select-statement-microsoft-access-sql.md">SELECT ステートメントを</a>参照してください。</p></td>
+<td><p>SQL SELECT ステートメントです。 詳細については、「<a href="select-statement-microsoft-access-sql.md">SELECT ステートメント</a>」を参照してください。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 ビューを定義するのは SELECT ステートメントであり、[SELECT...INTO](select-into-statement-microsoft-access-sql.md) ステートメントではありません。
 
-ビューを定義する SELECT ステートメントは、パラメーターを含むことができません。
+ビューを定義する SELECT ステートメントには、パラメーターを含めることができません。
 
-ビュー名は、既存のテーブルと同じ名前にしないでください。
+ビューの名前は、既存のテーブルの名前と同じにすることができません。
 
-SELECT ステートメントによって定義されたクエリが更新可能な場合は、ビューも更新できます。 それ以外の場合、ビューは読み取り専用です。
+SELECT ステートメントによって定義されたクエリが更新できる場合、ビューも更新できます。 更新できない場合、ビューは読み取り専用となります。
 
-SELECT ステートメントで定義されるクエリで 2 つのフィールドが同じ名前の場合、クエリでフィールドごとに一意の名前が指定されるフィールド リストを、ビューの定義に含む必要があります。
+SELECT ステートメントで定義されるクエリに名前が同じフィールドが 2 つある場合、ビューの定義にフィールド リストを追加し、クエリの各フィールドに一意の名前を指定する必要があります。
 

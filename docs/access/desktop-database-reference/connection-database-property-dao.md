@@ -12,32 +12,32 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 7033c612642aa3ae6ce6c6175560438c893cde6d
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32295920"
 ---
 # <a name="connectiondatabase-property-dao"></a>Connection.Database プロパティ (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 
 
 ## <a name="syntax"></a>構文
 
-*式*です。データベース
+*式* . Database
 
-*式***接続**オブジェクトを表す変数です。
+*式***Connection** オブジェクトを表す変数です。
 
 ## <a name="remarks"></a>注釈
 
-**[Connection](connection-object-dao.md)** オブジェクトで、 **Database** プロパティを使用して、 **Connection** オブジェクトに対応する **Database** オブジェクトへの参照を取得します。DAO では、 **Connection** オブジェクトとそれに対応する **Database** オブジェクトは、同じオブジェクトへの 2 つの異なるオブジェクト変数参照です。 **Connection** オブジェクトの **Database** プロパティと [Database](database-connection-property-dao.md) オブジェクトの ****Connection**** プロパティを利用すると、Microsoft Access データベース エンジンを介した ODBC データ ソースへの接続を変更して ODBCDirect を使用することが容易になります。
+**[Connection](connection-object-dao.md)** オブジェクトで、**Database** プロパティを使用して、**Connection** オブジェクトに対応する **Database** オブジェクトへの参照を取得します。 DAO では、**Connection** オブジェクトとそれに対応する **Database** オブジェクトは、単に同じオブジェクトへの 2 つの異なるオブジェクト変数の参照です。 **Connection** オブジェクトの **Database** プロパティと **Database** オブジェクトの **[Connection](database-connection-property-dao.md)** プロパティを利用すると、Microsoft Access データベース エンジンを介した ODBC データ ソースへの接続を変更して ODBCDirect を使用することが容易になります。
 
 ## <a name="example"></a>例
 
-この例では、 **Database** プロパティを使用して、Microsoft Access データベース エンジンを介して ODBC データにアクセスするときに使用されるコードを変換して、ODBCDirect Connection オブジェクトを使用する方法を示します。
+この例では、**Database** プロパティを使用して、Microsoft Access データベース エンジンを介して ODBC データにアクセスするときに使用されるコードを変換して、ODBCDirect Connection オブジェクトを使用する方法を示します。
 
 OldDatabaseCode プロシージャは、Microsoft Access データベース エンジンに接続されたデータ ソースを使用して ODBC データベースにアクセスします。
 

@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 1f10b5b779141189f114e420b3f7d4827e701161
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28709664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284800"
 ---
 # <a name="recordsetmove-method-dao"></a>Recordset.Move メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
-**[Recordset](recordset-object-dao.md)** オブジェクトでカレント レコードの位置を移動します。
+現在のレコードの位置を **[[Recordset]](recordset-object-dao.md)** オブジェクトに移動します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。移動 (***行***、 ***StartBookmark***)
+*式* .Move(***Rows***, ***StartBookmark***)
 
-*式***レコード セット**オブジェクトを表す変数です。
+*式* **Recordset** オブジェクトを表す変数です。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -42,7 +42,7 @@ ms.locfileid: "28709664"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/オプション</p></th>
+<th><p>必須/省略可能</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
@@ -51,13 +51,13 @@ ms.locfileid: "28709664"
 <tr class="odd">
 <td><p><em>Rows</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>長整数型 (Long)</strong></p></td>
+<td><p><strong>Long</strong></p></td>
 <td><p>位置を移動する行数。rows が 0 より大きい場合は、前方 (ファイルの末尾) に向かって位置が移動します。rows が 0 より小さい場合は、後方 (ファイルの先頭) に向かって位置が移動します。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>StartBookmark</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
+<td><p><strong>Variant</strong></p></td>
 <td><p>ブックマークを示す値。startbookmark を指定した場合、このブックマークが移動の開始位置となります。それ以外の場合は、カレント レコードが移動の開始位置となります。</p></td>
 </tr>
 </tbody>
@@ -66,9 +66,9 @@ ms.locfileid: "28709664"
 
 ## <a name="remarks"></a>注釈
 
-**Move** を使用して、カレント レコード ポインターの位置を最初のレコードより前に移動しようとすると、カレント レコード ポインターはファイルの先頭に移動します。 **Recordset** 内にレコードがなく、かつ **[BOF](recordset-bof-property-dao.md)** プロパティが **True** の場合、このメソッドを使用して後方に向かって移動すると、エラーが発生します。
+**Move** を使用して、カレント レコードを参照するポインターを最初のレコードよりも前に設定すると、カレント レコードを参照するポインターはファイルの先頭に移動します。 **Recordset** にレコードが含まれておらず、 **[BOF](recordset-bof-property-dao.md)** プロパティが **True** の場合は、このメソッドを使用して後方に移動しようとするとエラーが発生します。
 
-**Move** を使用して、カレント レコード ポインターの位置を最後のレコードよりも後に移動しようとすると、カレント レコード ポインターはファイルの末尾に移動します。 **Recordset** 内にレコードがなく、かつ **[EOF](recordset-eof-property-dao.md)** プロパティが **True** の場合、このメソッドを使用して前方に向かって移動しようとすると、エラーが発生します。
+**Move** を使用して、カレント レコードを参照するポインターを最後のレコードよりも後ろに設定すると、カレント レコードを参照するポインターはファイルの末尾に移動します。 **Recordset** にレコードが含まれておらず、 **[EOF](recordset-eof-property-dao.md)** プロパティが **True** の場合は、このメソッドを使用して前方に移動しようとするとエラーが発生します。
 
 **BOF** プロパティまたは **EOF** プロパティが **True** の場合に、有効なブックマークを指定せずに **Move** メソッドを使用しようとすると、実行時エラーが発生します。
 
@@ -80,7 +80,7 @@ ms.locfileid: "28709664"
 
 ## <a name="example"></a>例
 
-この例では、 **Move** メソッドを使用して、ユーザーの入力に基づいてレコード ポインターを配置します。
+この例では、**Move** メソッドを使用して、ユーザーの入力に基づいてレコード ポインターを配置します。
 
 ```vb
     Sub MoveX() 
