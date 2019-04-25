@@ -1,5 +1,5 @@
 ---
-title: レコード セット オブジェクト (DAO)
+title: Recordset オブジェクト (DAO)
 TOCTitle: Recordset Object
 ms:assetid: 9774232c-e6da-175b-fc7f-ed2ab7908fa0
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197799(v=office.15)
@@ -8,78 +8,78 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 19999159f7987be87031f88d1eec87980585f369
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32284519"
 ---
-# <a name="recordset-object-dao"></a><span data-ttu-id="f58e3-102">レコード セット オブジェクト (DAO)</span><span class="sxs-lookup"><span data-stu-id="f58e3-102">Recordset object (DAO)</span></span>
+# <a name="recordset-object-dao"></a><span data-ttu-id="8d776-102">Recordset オブジェクト (DAO)</span><span class="sxs-lookup"><span data-stu-id="8d776-102">Recordset Object (DAO)</span></span>
 
-<span data-ttu-id="f58e3-103">**適用されます**Access 2013、Office 2013。</span><span class="sxs-lookup"><span data-stu-id="f58e3-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="8d776-103">**適用先**: Access 2013、Office 2013</span><span class="sxs-lookup"><span data-stu-id="8d776-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="f58e3-104">**Recordset** オブジェクトは、ベース テーブルのレコード、またはクエリの実行結果のレコードを表します。</span><span class="sxs-lookup"><span data-stu-id="f58e3-104">A **Recordset** object represents the records in a base table or the records that result from running a query.</span></span>
+<span data-ttu-id="8d776-104">**Recordset** オブジェクトは、ベース テーブルのレコード、またはクエリの実行結果のレコードを表します。</span><span class="sxs-lookup"><span data-stu-id="8d776-104">A **Recordset** object represents the records in a base table or the records that result from running a query.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="f58e3-105">注釈</span><span class="sxs-lookup"><span data-stu-id="f58e3-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="8d776-105">注釈</span><span class="sxs-lookup"><span data-stu-id="8d776-105">Remarks</span></span>
 
-<span data-ttu-id="f58e3-p101">データベースのデータをレコード レベルで操作するには、 **Recordset** オブジェクトを使用します。DAO オブジェクトを使用する場合は、 **Recordset** オブジェクトを使用してほぼすべてのデータを操作します。すべての **Recordset** オブジェクトは、レコード (行) およびフィールド (列) を使用して構成されます。次の 5 種類の **Recordset** オブジェクトがあります。</span><span class="sxs-lookup"><span data-stu-id="f58e3-p101">You use **Recordset** objects to manipulate data in a database at the record level. When you use DAO objects, you manipulate data almost entirely using **Recordset** objects. All **Recordset** objects are constructed using records (rows) and fields (columns). There are five types of **Recordset** objects:</span></span>
+<span data-ttu-id="8d776-p101">データベースのデータをレコード レベルで操作するには、 **Recordset** オブジェクトを使用します。DAO オブジェクトを使用する場合は、 **Recordset** オブジェクトを使用してほぼすべてのデータを操作します。すべての **Recordset** オブジェクトは、レコード (行) およびフィールド (列) を使用して構成されます。次の 5 種類の **Recordset** オブジェクトがあります。</span><span class="sxs-lookup"><span data-stu-id="8d776-p101">You use **Recordset** objects to manipulate data in a database at the record level. When you use DAO objects, you manipulate data almost entirely using **Recordset** objects. All **Recordset** objects are constructed using records (rows) and fields (columns). There are five types of **Recordset** objects:</span></span>
 
-- <span data-ttu-id="f58e3-110">テーブル タイプの Recordset: 1 つのデータベース テーブルのレコードを追加、変更、または削除できるベース テーブルのコード表示形式です (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="f58e3-110">Table-type Recordset— representation in code of a base table that you can use to add, change, or delete records from a single database table (Microsoft Access workspaces only).</span></span>
+- <span data-ttu-id="8d776-110">テーブル タイプの Recordset: 1 つのデータベース テーブルのレコードを追加、変更、または削除できるベース テーブルのコード表示形式です (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="8d776-110">Table-type Recordset— representation in code of a base table that you can use to add, change, or delete records from a single database table (Microsoft Access workspaces only).</span></span>
 
-- <span data-ttu-id="f58e3-p102">ダイナセット タイプの Recordset: 更新可能なレコードを持つクエリの結果です。ダイナセット タイプの **Recordset** オブジェクトは、基となっているデータベース テーブルのレコードを追加、変更、または削除できる動的なレコードセットです。ダイナセット タイプの **Recordset** オブジェクトには、データベース内の複数のテーブルのフィールドを含めることができます。このタイプは、ODBC キーセット カーソルに対応します。</span><span class="sxs-lookup"><span data-stu-id="f58e3-p102">Dynaset-type Recordset— the result of a query that can have updatable records. A dynaset-type **Recordset** object is a dynamic set of records that you can use to add, change, or delete records from an underlying database table or tables. A dynaset-type **Recordset** object can contain fields from one or more tables in a database. This type corresponds to an ODBC keyset cursor.</span></span>
+- <span data-ttu-id="8d776-p102">ダイナセット タイプの Recordset: 更新可能なレコードを持つクエリの結果です。ダイナセット タイプの **Recordset** オブジェクトは、基となっているデータベース テーブルのレコードを追加、変更、または削除できる動的なレコードセットです。ダイナセット タイプの **Recordset** オブジェクトには、データベース内の複数のテーブルのフィールドを含めることができます。このタイプは、ODBC キーセット カーソルに対応します。</span><span class="sxs-lookup"><span data-stu-id="8d776-p102">Dynaset-type Recordset— the result of a query that can have updatable records. A dynaset-type **Recordset** object is a dynamic set of records that you can use to add, change, or delete records from an underlying database table or tables. A dynaset-type **Recordset** object can contain fields from one or more tables in a database. This type corresponds to an ODBC keyset cursor.</span></span>
 
-- <span data-ttu-id="f58e3-p103">スナップショット タイプの Recordset: データの検索やレポートの生成に使用できるレコードセットの静的コピーです。スナップショット タイプの **Recordset** オブジェクトには、データベース内の複数のテーブルのフィールドを含めることができますが、更新はできません。このタイプは、ODBC 静的カーソルに対応します。</span><span class="sxs-lookup"><span data-stu-id="f58e3-p103">Snapshot-type Recordset— a static copy of a set of records that you can use to find data or generate reports. A snapshot-type **Recordset** object can contain fields from one or more tables in a database but can't be updated. This type corresponds to an ODBC static cursor.</span></span>
+- <span data-ttu-id="8d776-p103">スナップショット タイプの Recordset: データの検索やレポートの生成に使用できるレコードセットの静的コピーです。スナップショット タイプの **Recordset** オブジェクトには、データベース内の複数のテーブルのフィールドを含めることができますが、更新はできません。このタイプは、ODBC 静的カーソルに対応します。</span><span class="sxs-lookup"><span data-stu-id="8d776-p103">Snapshot-type Recordset— a static copy of a set of records that you can use to find data or generate reports. A snapshot-type **Recordset** object can contain fields from one or more tables in a database but can't be updated. This type corresponds to an ODBC static cursor.</span></span>
 
-- <span data-ttu-id="f58e3-p104">前方スクロール タイプの Recordset: カーソルが提供されない点を除き、スナップショットと同じ働きをします。レコードのスクロール方向が前方向に限定されます。結果セットのスクロールが 1 回だけで十分な場合は、これによってパフォーマンスを向上できます。このタイプは、ODBC 前方スクロール カーソルに対応します。</span><span class="sxs-lookup"><span data-stu-id="f58e3-p104">Forward-only-type Recordset— identical to a snapshot except that no cursor is provided. You can only scroll forward through records. This improves performance in situations where you only need to make a single pass through a result set. This type corresponds to an ODBC forward-only cursor.</span></span>
+- <span data-ttu-id="8d776-p104">前方スクロール タイプの Recordset: カーソルが提供されない点を除き、スナップショットと同じ働きをします。レコードのスクロール方向が前方向に限定されます。結果セットのスクロールが 1 回だけで十分な場合は、これによってパフォーマンスを向上できます。このタイプは、ODBC 前方スクロール カーソルに対応します。</span><span class="sxs-lookup"><span data-stu-id="8d776-p104">Forward-only-type Recordset— identical to a snapshot except that no cursor is provided. You can only scroll forward through records. This improves performance in situations where you only need to make a single pass through a result set. This type corresponds to an ODBC forward-only cursor.</span></span>
 
-- <span data-ttu-id="f58e3-p105">動的タイプの Recordset: 行を返すクエリからレコードを追加、変更、または削除できる 1 つまたは複数のベース テーブルからのクエリの結果セットです。さらに、他のユーザーがベース テーブルで追加、削除、または編集したレコードも **Recordset** オブジェクトに表示されます。このタイプは、ODBC 動的カーソルに対応します (ODBCDirect ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="f58e3-p105">Dynamic-type Recordset— a query result set from one or more base tables in which you can add, change, or delete records from a row-returning query. Further, records other users add, delete, or edit in the base tables also appear in your **Recordset**. This type corresponds to an ODBC dynamic cursor (ODBCDirect workspaces only).</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="f58e3-p106">[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</span><span class="sxs-lookup"><span data-stu-id="f58e3-p106">ODBCDirect workspaces are not supported in Microsoft Access 2013. Use ADO if you want to access external data sources without using the Microsoft Access database engine.</span></span>
-
-<span data-ttu-id="f58e3-127">**何らか**のメソッドの型引数を使用して作成する**レコード セット**オブジェクトの種類を選択できます。</span><span class="sxs-lookup"><span data-stu-id="f58e3-127">You can choose the type of **Recordset** object you want to create using the type argument of the **OpenRecordset** method.</span></span>
-
-<span data-ttu-id="f58e3-128">Microsoft Access ワークスペースでは、利用可能なほとんどの機能を持つ**レコード セット**の種類を作成しようと DAO の種類を指定しない場合は、テーブルで開始します。</span><span class="sxs-lookup"><span data-stu-id="f58e3-128">In a Microsoft Access workspace, if you don't specify a type, DAO attempts to create the type of **Recordset** with the most functionality available, starting with table.</span></span> <span data-ttu-id="f58e3-129">テーブル タイプが使用できない場合は、ダイナセット タイプ、スナップショット タイプ、最後に前方スクロール タイプの順で **Recordset** オブジェクトが作成されます。</span><span class="sxs-lookup"><span data-stu-id="f58e3-129">If this type isn't available, DAO attempts a dynaset, then a snapshot, and finally a forward-only type **Recordset** object.</span></span>
-
-<span data-ttu-id="f58e3-130">ODBCDirect ワークスペースでは、型を指定しない場合は、DAO しようと、最も高速なクエリ応答の**レコード セット**の型を作成するのには前方から始まります。</span><span class="sxs-lookup"><span data-stu-id="f58e3-130">In an ODBCDirect workspace, if you don't specify a type, DAO attempts to create the type of **Recordset** with the fastest query response, starting with forward-only.</span></span> <span data-ttu-id="f58e3-131">前方スクロール タイプが使用できない場合は、スナップショット タイプ、ダイナセット タイプ、最後に動的タイプの順で **Recordset** オブジェクトが作成されます。</span><span class="sxs-lookup"><span data-stu-id="f58e3-131">If this type isn't available, DAO attempts a snapshot, then a dynaset, and finally a dynamic- type **Recordset** object.</span></span>
-
-<span data-ttu-id="f58e3-p109">Microsoft Access ワークスペースで、リンクされていない [**TableDef**](tabledef-object-dao.md) オブジェクトを使用して **Recordset** オブジェクトを作成すると、テーブル タイプの **Recordset** オブジェクトが作成されます。リンク テーブルまたは Microsoft データベース エンジンに接続された ODBC データベースのテーブルでは、ダイナセット タイプまたはスナップショット タイプの **Recordset** オブジェクトのみを作成できます。</span><span class="sxs-lookup"><span data-stu-id="f58e3-p109">When creating a **Recordset** object using a non-linked **[TableDef](tabledef-object-dao.md)** object in a Microsoft Access workspace, table-type **Recordset** objects are created. Only dynaset-type or snapshot-type **Recordset** objects can be created with linked tables or tables in Microsoft Access database engine-connected ODBC databases.</span></span>
-
-<span data-ttu-id="f58e3-134">新しい **Recordset** オブジェクトは、オブジェクトを開いたときに **Recordsets** コレクションに自動的に追加され、オブジェクトを閉じたときに自動的に削除されます。</span><span class="sxs-lookup"><span data-stu-id="f58e3-134">A new **Recordset** object is automatically added to the **Recordsets** collection when you open the object, and is automatically removed when you close it.</span></span>
+- <span data-ttu-id="8d776-p105">動的タイプの Recordset: 行を返すクエリからレコードを追加、変更、または削除できる 1 つまたは複数のベース テーブルからのクエリの結果セットです。さらに、他のユーザーがベース テーブルで追加、削除、または編集したレコードも **Recordset** オブジェクトに表示されます。このタイプは、ODBC 動的カーソルに対応します (ODBCDirect ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="8d776-p105">Dynamic-type Recordset— a query result set from one or more base tables in which you can add, change, or delete records from a row-returning query. Further, records other users add, delete, or edit in the base tables also appear in your **Recordset**. This type corresponds to an ODBC dynamic cursor (ODBCDirect workspaces only).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="f58e3-p110">[!メモ] **Recordset** オブジェクトを表す変数、および **Recordset** オブジェクトを含む **Database** オブジェクトを使用する場合は、変数の適用範囲または有効期間が同じであることを確認してください。たとえば、 **Recordset** オブジェクトを表すパブリック変数を宣言する場合は、 **Recordset** オブジェクトを含む **Database** オブジェクトもパブリックであるか、または **Static** キーワードを使用して **Sub** または **Function** プロシージャで宣言されていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="f58e3-p110">If you use variables to represent a **Recordset** object and the **Database** object that contains the **Recordset**, make sure the variables have the same scope, or lifetime. For example, if you declare a public variable that represents a **Recordset** object, make sure the variable that represents the **Database** containing the **Recordset** is also public, or is declared in a **Sub** or **Function** procedure using the **Static** keyword.</span></span>
+> <span data-ttu-id="8d776-p106">[!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。</span><span class="sxs-lookup"><span data-stu-id="8d776-p106">ODBCDirect workspaces are not supported in Microsoft Access 2013. Use ADO if you want to access external data sources without using the Microsoft Access database engine.</span></span>
 
-<span data-ttu-id="f58e3-p111">**Recordset** オブジェクト変数は必要な数だけ作成できます。異なる **Recordset** オブジェクトでも、競合せずに同じテーブル、クエリ、およびフィールドにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="f58e3-p111">You can create as many **Recordset** object variables as needed. Different **Recordset** objects can access the same tables, queries, and fields without conflicting.</span></span>
+<span data-ttu-id="8d776-127">**OpenRecordset** メソッドの type 引数を使用して、作成できる **Recordset** オブジェクトの種類を選択できます。</span><span class="sxs-lookup"><span data-stu-id="8d776-127">You can choose the type of **Recordset** object you want to create using the  type argument of the **OpenRecordset** method.</span></span>
 
-<span data-ttu-id="f58e3-139">ダイナセット、スナップショット タイプ、および前方スクロール タイプの**Recordset**オブジェクトは、ローカル メモリに格納されます。</span><span class="sxs-lookup"><span data-stu-id="f58e3-139">Dynaset–, snapshot–, and forward–only–type **Recordset** objects are stored in local memory.</span></span> <span data-ttu-id="f58e3-140">ローカル メモリにデータを格納するための十分な空き領域がない場合、Microsoft データベース エンジンでは、追加データが TEMP ディスク領域に格納されます。</span><span class="sxs-lookup"><span data-stu-id="f58e3-140">If there isn't enough space in local memory to store the data, the Microsoft Access database engine saves the additional data to TEMP disk space.</span></span> <span data-ttu-id="f58e3-141">この領域が不足している場合は、トラップ可能なエラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="f58e3-141">If this space is exhausted, a trappable error occurs.</span></span>
+<span data-ttu-id="8d776-128">Microsoft Access ワークスペースでは、 type を指定しない場合、DAO によって、まず最大限の機能を備えたテーブル タイプの **Recordset** オブジェクトが作成されます。</span><span class="sxs-lookup"><span data-stu-id="8d776-128">In a Microsoft Access workspace, if you don't specify a  type, DAO attempts to create the type of Recordset with the most functionality available, starting with table.</span></span> <span data-ttu-id="8d776-129">DAO 試行ダイナセット タイプ、スナップショット、し、最後に、前方の種類でこの種類を使用できない場合 **Recordset** オブジェクトです。</span><span class="sxs-lookup"><span data-stu-id="8d776-129">If this type isn't available, DAO attempts a dynaset, then a snapshot, and finally a forward-only type **Recordset** object.</span></span>
 
-<span data-ttu-id="f58e3-p113">**Recordset** オブジェクトの既定のコレクションは **Fields** コレクションであり、 **[Field](field-object-dao.md)** オブジェクトの既定のプロパティは **[Value](field-value-property-dao.md)** プロパティです。コードを簡略化するには、これらの既定値を使用します。</span><span class="sxs-lookup"><span data-stu-id="f58e3-p113">The default collection of a **Recordset** object is the **Fields** collection, and the default property of a **[Field](field-object-dao.md)** object is the **[Value](field-value-property-dao.md)** property. Use these defaults to simplify your code.</span></span>
+<span data-ttu-id="8d776-130">ODBCDirect ワークスペースでは、 type を指定しない場合、DAO によって、まずクエリ応答が最も速い前方スクロール タイプの **Recordset** オブジェクトが作成されます。</span><span class="sxs-lookup"><span data-stu-id="8d776-130">In an ODBCDirect workspace, if you don't specify a  type, DAO attempts to create the type of Recordset with the fastest query response, starting with forward-only.</span></span> <span data-ttu-id="8d776-131">前方スクロール タイプが使用できない場合は、スナップショット タイプ、ダイナセット タイプ、最後に動的タイプの順で **Recordset** オブジェクトが作成されます。</span><span class="sxs-lookup"><span data-stu-id="8d776-131">If this type isn't available, DAO attempts a snapshot, then a dynaset, and finally a dynamic- type **Recordset** object.</span></span>
 
-<span data-ttu-id="f58e3-p114">**Recordset** オブジェクトを作成すると、レコードがある場合はカレント レコードが最初のレコードに配置されます。レコードがない場合は、 **RecordCount** プロパティ設定が 0 になり、 **BOF** プロパティおよび **EOF** プロパティ設定が **True** になります。</span><span class="sxs-lookup"><span data-stu-id="f58e3-p114">When you create a **Recordset** object, the current record is positioned to the first record if there are any records. If there are no records, the **RecordCount** property setting is 0, and the **BOF** and **EOF** property settings are **True**.</span></span>
+<span data-ttu-id="8d776-p109">Microsoft Access ワークスペースで、リンクされていない [**TableDef**](tabledef-object-dao.md) オブジェクトを使用して **Recordset** オブジェクトを作成すると、テーブル タイプの **Recordset** オブジェクトが作成されます。リンク テーブルまたは Microsoft データベース エンジンに接続された ODBC データベースのテーブルでは、ダイナセット タイプまたはスナップショット タイプの **Recordset** オブジェクトのみを作成できます。</span><span class="sxs-lookup"><span data-stu-id="8d776-p109">When creating a **Recordset** object using a non-linked **[TableDef](tabledef-object-dao.md)** object in a Microsoft Access workspace, table-type **Recordset** objects are created. Only dynaset-type or snapshot-type **Recordset** objects can be created with linked tables or tables in Microsoft Access database engine-connected ODBC databases.</span></span>
 
-<span data-ttu-id="f58e3-p115">**MoveNext**、**MovePrevious**、**MoveFirst**、**MoveLast** の各メソッドを使用すると、カレント レコードを再配置できます。前方スクロール タイプの **Recordset** オブジェクトは、**MoveNext** メソッドのみをサポートします。Move メソッドを使用して各レコードを参照する場合 (または **Recordset** を実行する場合) は、**BOF** および **EOF** プロパティを使用して、**Recordset** オブジェクトの開始または終了を確認できます。</span><span class="sxs-lookup"><span data-stu-id="f58e3-p115">You can use the **MoveNext**, **MovePrevious**, **MoveFirst**, and **MoveLast** methods to reposition the current record. Forward–only–type **Recordset** objects support only the **MoveNext** method. When using the Move methods to visit each record (or "walk" through the **Recordset**), you can use the **BOF** and **EOF** properties to check for the beginning or end of the **Recordset** object.</span></span>
-
-<span data-ttu-id="f58e3-p116">Microsoft Access ワークスペースで、ダイナセット タイプおよびスナップショット タイプの **Recordset** オブジェクトを使用する場合は、 FindFirst などの **Find** メソッドを使用して、基準に基づいて特定のレコードを検索することもできます。レコードが見つからない場合は、 **NoMatch** プロパティが **True** に設定されます。テーブル タイプの **Recordset** オブジェクトの場合は、 **Seek** メソッドを使用してレコードをスキャンできます。</span><span class="sxs-lookup"><span data-stu-id="f58e3-p116">With dynaset- and snapshot-type **Recordset** objects in a Microsoft Access workspace, you can also use the Find methods, such as **FindFirst**, to locate a specific record based on criteria. If the record isn't found, the **NoMatch** property is set to **True**. For table-type **Recordset** objects, you can scan records using the **Seek** method.</span></span>
-
-<span data-ttu-id="f58e3-152">**Type** プロパティは、作成される **Recordset** オブジェクトの種類を示し、 **Updatable** プロパティはオブジェクトのレコードを変更できるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="f58e3-152">The **Type** property indicates the type of **Recordset** object created, and the **Updatable** property indicates whether you can change the object's records.</span></span>
-
-<span data-ttu-id="f58e3-153">各 **Field** オブジェクトおよび **Index** オブジェクトの名前およびデータ型など、ベース テーブルの構造に関する情報は、 **TableDef** オブジェクトに格納されます。</span><span class="sxs-lookup"><span data-stu-id="f58e3-153">Information about the structure of a base table, such as the names and data types of each **Field** object and any **Index** objects, is stored in a **TableDef** object.</span></span>
-
-<span data-ttu-id="f58e3-154">コレクション内の **Recordset** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="f58e3-154">To refer to a **Recordset** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
-
-- <span data-ttu-id="f58e3-155">**Recordsets**(0)</span><span class="sxs-lookup"><span data-stu-id="f58e3-155">**Recordsets**(0)</span></span>
-
-- <span data-ttu-id="f58e3-156">**レコード セット**("name")</span><span class="sxs-lookup"><span data-stu-id="f58e3-156">**Recordsets**("name")</span></span>
-
-- <span data-ttu-id="f58e3-157">**レコード セット**\!\[名\]</span><span class="sxs-lookup"><span data-stu-id="f58e3-157">**Recordsets**\!\[name\]</span></span>
+<span data-ttu-id="8d776-134">新しい **Recordset** オブジェクトは、オブジェクトを開いたときに **Recordsets** コレクションに自動的に追加され、オブジェクトを閉じたときに自動的に削除されます。</span><span class="sxs-lookup"><span data-stu-id="8d776-134">A new **Recordset** object is automatically added to the **Recordsets** collection when you open the object, and is automatically removed when you close it.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="f58e3-p117">[!メモ] 同じデータ ソースまたはデータベースから **Recordset** オブジェクトを複数回開いて、 **Recordsets** コレクションに重複する名前を作成できます。 **Recordset** オブジェクトをオブジェクト変数に割り当て、変数名で参照する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f58e3-p117">You can open a **Recordset** object from the same data source or database more than once, creating duplicate names in the **Recordsets** collection. You should assign **Recordset** objects to object variables and refer to them by variable name.</span></span>
+> <span data-ttu-id="8d776-p110">[!メモ] **Recordset** オブジェクトを表す変数、および **Recordset** オブジェクトを含む **Database** オブジェクトを使用する場合は、変数の適用範囲または有効期間が同じであることを確認してください。たとえば、 **Recordset** オブジェクトを表すパブリック変数を宣言する場合は、 **Recordset** オブジェクトを含む **Database** オブジェクトもパブリックであるか、または **Static** キーワードを使用して **Sub** または **Function** プロシージャで宣言されていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="8d776-p110">If you use variables to represent a **Recordset** object and the **Database** object that contains the **Recordset**, make sure the variables have the same scope, or lifetime. For example, if you declare a public variable that represents a **Recordset** object, make sure the variable that represents the **Database** containing the **Recordset** is also public, or is declared in a **Sub** or **Function** procedure using the **Static** keyword.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f58e3-160">例</span><span class="sxs-lookup"><span data-stu-id="f58e3-160">Example</span></span>
+<span data-ttu-id="8d776-p111">**Recordset** オブジェクト変数は必要な数だけ作成できます。異なる **Recordset** オブジェクトでも、競合せずに同じテーブル、クエリ、およびフィールドにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="8d776-p111">You can create as many **Recordset** object variables as needed. Different **Recordset** objects can access the same tables, queries, and fields without conflicting.</span></span>
 
-<span data-ttu-id="f58e3-161">次の使用例は、4 種類の **Recordset** オブジェクトを開き、現在の **Recordsets** オブジェクトの Recordsets コレクションを列挙して、各 **Recordsets** オブジェクトの **Database** コレクションを列挙することで、 **Properties** オブジェクトおよび **Recordset** コレクションを示します。</span><span class="sxs-lookup"><span data-stu-id="f58e3-161">This example demonstrates **Recordset** objects and the **Recordsets** collection by opening four different types of **Recordsets**, enumerating the Recordsets collection of the current **Database**, and enumerating the **Properties** collection of each **Recordset**.</span></span>
+<span data-ttu-id="8d776-p112">ダイナセット タイプ、スナップショット タイプ、および前方スクロール タイプの **Recordset** オブジェクトは、ローカル メモリに格納されます。ローカル メモリにデータを格納するための十分な空き領域がない場合、Microsoft データベース エンジンでは、追加データが TEMP ディスク領域に格納されます。この領域が不足している場合は、トラップ可能なエラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="8d776-p112">Dynaset–, snapshot–, and forward–only–type **Recordset** objects are stored in local memory. If there isn't enough space in local memory to store the data, the Microsoft Access database engine saves the additional data to TEMP disk space. If this space is exhausted, a trappable error occurs.</span></span>
+
+<span data-ttu-id="8d776-p113">**Recordset** オブジェクトの既定のコレクションは **Fields** コレクションであり、 **[Field](field-object-dao.md)** オブジェクトの既定のプロパティは **[Value](field-value-property-dao.md)** プロパティです。コードを簡略化するには、これらの既定値を使用します。</span><span class="sxs-lookup"><span data-stu-id="8d776-p113">The default collection of a **Recordset** object is the **Fields** collection, and the default property of a **[Field](field-object-dao.md)** object is the **[Value](field-value-property-dao.md)** property. Use these defaults to simplify your code.</span></span>
+
+<span data-ttu-id="8d776-p114">**Recordset** オブジェクトを作成すると、レコードがある場合はカレント レコードが最初のレコードに配置されます。レコードがない場合は、 **RecordCount** プロパティ設定が 0 になり、 **BOF** プロパティおよび **EOF** プロパティ設定が **True** になります。</span><span class="sxs-lookup"><span data-stu-id="8d776-p114">When you create a **Recordset** object, the current record is positioned to the first record if there are any records. If there are no records, the **RecordCount** property setting is 0, and the **BOF** and **EOF** property settings are **True**.</span></span>
+
+<span data-ttu-id="8d776-146">**MoveNext**、**MovePrevious**、**MoveFirst**、**MoveLast** の各メソッドを使用すると、カレント レコードを再配置できます。</span><span class="sxs-lookup"><span data-stu-id="8d776-146">You can use the **MoveNext**, **MovePrevious**, **MoveFirst**, and **MoveLast** methods to reposition the current record.</span></span> <span data-ttu-id="8d776-147">前方スクロール タイプの **Recordset** オブジェクトは、**MoveNext** メソッドのみをサポートします。</span><span class="sxs-lookup"><span data-stu-id="8d776-147">Forward–only–type **Recordset** objects support only the **MoveNext** method.</span></span> <span data-ttu-id="8d776-148">Move メソッドを使用して各レコードを参照する場合 (または **Recordset** を実行する場合) は、**BOF** および **EOF** プロパティを使用して、**Recordset** オブジェクトの開始または終了を確認できます。</span><span class="sxs-lookup"><span data-stu-id="8d776-148">When using the Move methods to visit each record (or "walk" through the **Recordset**), you can use the **BOF** and **EOF** properties to check for the beginning or end of the **Recordset** object.</span></span>
+
+<span data-ttu-id="8d776-149">Microsoft Access ワークスペースで、ダイナセット タイプおよびスナップショット タイプの **Recordset** オブジェクトを使用する場合は、 FindFirst などの **Find** メソッドを使用して、基準に基づいて特定のレコードを検索することもできます。</span><span class="sxs-lookup"><span data-stu-id="8d776-149">With dynaset- and snapshot-type **Recordset** objects in a Microsoft Access workspace, you can also use the Find methods, such as **FindFirst**, to locate a specific record based on criteria.</span></span> <span data-ttu-id="8d776-150">レコードが見つからない場合は、 **NoMatch** プロパティが **True** に設定されます。</span><span class="sxs-lookup"><span data-stu-id="8d776-150">If the record isn't found, the **NoMatch** property is set to **True**.</span></span> <span data-ttu-id="8d776-151">テーブル タイプの **Recordset** オブジェクトの場合は、 **Seek** メソッドを使用してレコードをスキャンできます。</span><span class="sxs-lookup"><span data-stu-id="8d776-151">For table-type **Recordset** objects, you can scan records using the **Seek** method.</span></span>
+
+<span data-ttu-id="8d776-152">**Type** プロパティは、作成される **Recordset** オブジェクトの種類を示し、 **Updatable** プロパティはオブジェクトのレコードを変更できるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="8d776-152">The **Type** property indicates the type of **Recordset** object created, and the **Updatable** property indicates whether you can change the object's records.</span></span>
+
+<span data-ttu-id="8d776-153">各 **Field** オブジェクトおよび **Index** オブジェクトの名前およびデータ型など、ベース テーブルの構造に関する情報は、 **TableDef** オブジェクトに格納されます。</span><span class="sxs-lookup"><span data-stu-id="8d776-153">Information about the structure of a base table, such as the names and data types of each **Field** object and any **Index** objects, is stored in a **TableDef** object.</span></span>
+
+<span data-ttu-id="8d776-154">コレクション内の **Recordset** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="8d776-154">To refer to a **Recordset** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
+
+- <span data-ttu-id="8d776-155">**Recordsets**(0)</span><span class="sxs-lookup"><span data-stu-id="8d776-155">**Recordsets**(0)</span></span>
+
+- <span data-ttu-id="8d776-156">**Recordsets** (「名前」)</span><span class="sxs-lookup"><span data-stu-id="8d776-156">**Recordsets**("name")</span></span>
+
+- <span data-ttu-id="8d776-157">**Recordsets**\!\[名前\]</span><span class="sxs-lookup"><span data-stu-id="8d776-157">**Recordsets**\!\[name\]</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="8d776-p117">[!メモ] 同じデータ ソースまたはデータベースから **Recordset** オブジェクトを複数回開いて、 **Recordsets** コレクションに重複する名前を作成できます。 **Recordset** オブジェクトをオブジェクト変数に割り当て、変数名で参照する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8d776-p117">You can open a **Recordset** object from the same data source or database more than once, creating duplicate names in the **Recordsets** collection. You should assign **Recordset** objects to object variables and refer to them by variable name.</span></span>
+
+## <a name="example"></a><span data-ttu-id="8d776-160">例</span><span class="sxs-lookup"><span data-stu-id="8d776-160">Example</span></span>
+
+<span data-ttu-id="8d776-161">次の使用例は、4 種類の **Recordset** オブジェクトを開き、現在の **Recordsets** オブジェクトの Recordsets コレクションを列挙して、各 **Recordsets** オブジェクトの **Database** コレクションを列挙することで、 **Properties** オブジェクトおよび **Recordset** コレクションを示します。</span><span class="sxs-lookup"><span data-stu-id="8d776-161">This example demonstrates **Recordset** objects and the **Recordsets** collection by opening four different types of **Recordsets**, enumerating the Recordsets collection of the current **Database**, and enumerating the **Properties** collection of each **Recordset**.</span></span>
 
 ```vb
     Sub RecordsetX() 
@@ -144,7 +144,7 @@ ms.locfileid: "28699745"
 
 <br/>
 
-<span data-ttu-id="f58e3-p118">この例では、 **OpenRecordset** メソッドを使用して、5 種類の **Recordset** オブジェクトを開き、その内容を表示します。このプロシージャを実行するには、 OpenRecordsetOutput プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="f58e3-p118">This example uses the **OpenRecordset** method to open five different **Recordset** objects and display their contents. The OpenRecordsetOutput procedure is required for this procedure to run.</span></span>
+この例では、**OpenRecordset** メソッドを使用して 5 つの異なる **Recordset** オブジェクトを開き、それらの内容を表示します。 <span data-ttu-id="8d776-163">このプロシージャを実行するには、OpenRecordsetOutput プロシージャが必要です。</span><span class="sxs-lookup"><span data-stu-id="8d776-163">The OpenRecordsetOutput procedure is required for this procedure to run.</span></span>
 
 ```vb
     Sub OpenRecordsetX() 
@@ -231,7 +231,7 @@ ms.locfileid: "28699745"
 
 <br/>
 
-<span data-ttu-id="f58e3-164">この例では、動的タイプの **Recordset** オブジェクトを開き、そのレコードを列挙します。</span><span class="sxs-lookup"><span data-stu-id="f58e3-164">This example opens a dynamic-type **Recordset** object and enumerates its records.</span></span>
+<span data-ttu-id="8d776-164">この例では、動的タイプの **Recordset** オブジェクトを開き、そのレコードを列挙します。</span><span class="sxs-lookup"><span data-stu-id="8d776-164">This example opens a dynamic-type **Recordset** object and enumerates its records.</span></span>
 
 ```vb
     Sub dbOpenDynamicX() 
@@ -281,7 +281,7 @@ ms.locfileid: "28699745"
 
 <br/>
 
-<span data-ttu-id="f58e3-165">この例では、ダイナセット タイプの **Recordset** を開き、フィールドをどの程度更新できるかを示します。</span><span class="sxs-lookup"><span data-stu-id="f58e3-165">This example opens a dynaset-type **Recordset** and shows the extent to which its fields are updatable.</span></span>
+<span data-ttu-id="8d776-165">この例では、ダイナセット タイプの **Recordset** を開き、フィールドをどの程度更新できるかを示します。</span><span class="sxs-lookup"><span data-stu-id="8d776-165">This example opens a dynaset-type **Recordset** and shows the extent to which its fields are updatable.</span></span>
 
 ```vb
     Sub dbOpenDynasetX() 
@@ -321,7 +321,7 @@ ms.locfileid: "28699745"
 
 <br/>
 
-<span data-ttu-id="f58e3-166">この例では、前方スクロール タイプの **Recordset** を開き、読み取り専用の特性を示し、 **MoveNext** メソッドを使用して **Recordset** を実行します。</span><span class="sxs-lookup"><span data-stu-id="f58e3-166">This example opens a forward-only-type **Recordset**, demonstrates its read-only characteristics, and steps through the **Recordset** with the **MoveNext** method.</span></span>
+<span data-ttu-id="8d776-166">この例では、前方スクロール タイプの **Recordset** を開き、読み取り専用の特性を示し、 **MoveNext** メソッドを使用して **Recordset** を実行します。</span><span class="sxs-lookup"><span data-stu-id="8d776-166">This example opens a forward-only-type **Recordset**, demonstrates its read-only characteristics, and steps through the **Recordset** with the **MoveNext** method.</span></span>
 
 ```vb 
 Sub dbOpenForwardOnlyX() 
@@ -368,7 +368,7 @@ End Sub
 
 <br/>
 
-<span data-ttu-id="f58e3-167">この例では、スナップショット タイプの **Recordset** を開き、読み取り専用の特性を示します。</span><span class="sxs-lookup"><span data-stu-id="f58e3-167">This example opens a snapshot-type **Recordset** and demonstrates its read-only characteristics.</span></span>
+<span data-ttu-id="8d776-167">この例では、スナップショット タイプの **Recordset** を開き、読み取り専用の特性を示します。</span><span class="sxs-lookup"><span data-stu-id="8d776-167">This example opens a snapshot-type **Recordset** and demonstrates its read-only characteristics.</span></span>
 
 ```vb
     Sub dbOpenSnapshotX() 
@@ -407,7 +407,7 @@ End Sub
 
 <br/>
 
-<span data-ttu-id="f58e3-168">この例では、テーブル タイプの **Recordset** を開き、 **Index** プロパティを設定し、そのレコードを列挙します。</span><span class="sxs-lookup"><span data-stu-id="f58e3-168">This example opens a table-type **Recordset**, sets its **Index** property, and enumerates its records.</span></span>
+<span data-ttu-id="8d776-168">この例では、テーブル タイプの **Recordset** を開き、 **Index** プロパティを設定し、そのレコードを列挙します。</span><span class="sxs-lookup"><span data-stu-id="8d776-168">This example opens a table-type **Recordset**, sets its **Index** property, and enumerates its records.</span></span>
 
 ```vb
     Sub dbOpenTableX() 
@@ -444,9 +444,9 @@ End Sub
 
 <br/>
 
-<span data-ttu-id="f58e3-169">次の例は、 Seek メソッドを使用して、リンクしたテーブル内のレコードを見つける方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f58e3-169">The following example shows how to use the Seek method to find a record in a linked table.</span></span>
+<span data-ttu-id="8d776-169">次の例は、Seek メソッドを使用して、リンクしたテーブル内のレコードを見つける方法を示します。</span><span class="sxs-lookup"><span data-stu-id="8d776-169">The following example shows how to use the Seek method to find a record in a linked table.</span></span>
 
-<span data-ttu-id="f58e3-170">**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。</span><span class="sxs-lookup"><span data-stu-id="f58e3-170">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
+<span data-ttu-id="8d776-170">**サンプル コードの提供元:** [Microsoft Access 2010 プログラマー用リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。</span><span class="sxs-lookup"><span data-stu-id="8d776-170">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
 
 
 ```vb
@@ -495,7 +495,7 @@ End Sub
 
 <br/>
 
-<span data-ttu-id="f58e3-171">次の例は、パラメーター クエリに基づく Recordset を開く方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f58e3-171">The following example shows how to open a Recordset that is based on a parameter query.</span></span>
+<span data-ttu-id="8d776-171">次の例は、パラメーター クエリに基づく Recordset を開く方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="8d776-171">The following example shows how to open a Recordset that is based on a parameter query.</span></span>
 
 ```vb
     Dim dbs As DAO.Database
@@ -517,7 +517,7 @@ End Sub
 
 <br/>
 
-<span data-ttu-id="f58e3-172">次の例は、テーブルまたはクエリに基づいて Recordset を開く方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f58e3-172">The following example shows how to open a Recordset based on a table or a query.</span></span>
+<span data-ttu-id="8d776-172">次の例は、テーブルまたはクエリに基づいて Recordset を開く方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="8d776-172">The following example shows how to open a Recordset based on a table or a query.</span></span>
 
 ```vb
     Dim dbs As DAO.Database
@@ -535,7 +535,7 @@ End Sub
 
 <br/>
 
-<span data-ttu-id="f58e3-173">次の例は、構造化照会言語 (SQL) ステートメントに基づいて Recordset を開く方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f58e3-173">The following example shows how to open a Recordset based on a Structured Query Language (SQL) statement.</span></span>
+<span data-ttu-id="8d776-173">次の例は、構造化照会言語 (SQL) ステートメントに基づいて Recordset を開く方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="8d776-173">The following example shows how to open a Recordset based on a Structured Query Language (SQL) statement.</span></span>
 
 ```vb
     Dim dbs As DAO.Database
@@ -551,7 +551,7 @@ End Sub
 
 <br/>
 
-<span data-ttu-id="f58e3-174">次の例は、 FindFirst および FindNext メソッドを使用して、 Recordset 内のレコードを見つける方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f58e3-174">The following example shows how to use the FindFirst and FindNext methods to find a record in a Recordset.</span></span>
+<span data-ttu-id="8d776-174">次の例は、FindFirst メソッドと FindNext メソッドを使用して Recordset 内のレコードを検索する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="8d776-174">The following example shows how to use the FindFirst and FindNext methods to find a record in a Recordset.</span></span>
 
 ```vb
     Sub FindOrgName()
@@ -590,7 +590,7 @@ End Sub
 
 <br/>
 
-<span data-ttu-id="f58e3-175">次の例は、クエリの結果を新しい Microsoft Excel ブックのワークシートにコピーする方法を示します。</span><span class="sxs-lookup"><span data-stu-id="f58e3-175">The following example shows how to copy the results of a query to a worksheet in a new Microsoft Excel workbook.</span></span>
+<span data-ttu-id="8d776-175">次の例は、新しい Microsoft Excel ブックのワークシートにクエリの結果をコピーする方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="8d776-175">The following example shows how to copy the results of a query to a worksheet in a new Microsoft Excel workbook.</span></span>
 
 ```vb
     Public Sub CopyDataFromQuery( _

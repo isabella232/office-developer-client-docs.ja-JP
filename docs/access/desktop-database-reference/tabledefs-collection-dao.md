@@ -1,5 +1,5 @@
 ---
-title: テーブル定義コレクション (DAO)
+title: TableDefs コレクション (DAO)
 TOCTitle: TableDefs Collection
 ms:assetid: a2986b02-0437-d6ac-7bbb-c43f5225c3fc
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff820997(v=office.15)
@@ -8,41 +8,41 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: f16f44b57a690aa58efdff9b00341df5023c293f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314176"
 ---
-# <a name="tabledefs-collection-dao"></a><span data-ttu-id="c1503-102">テーブル定義コレクション (DAO)</span><span class="sxs-lookup"><span data-stu-id="c1503-102">TableDefs collection (DAO)</span></span>
+# <a name="tabledefs-collection-dao"></a><span data-ttu-id="4bffc-102">TableDefs コレクション (DAO)</span><span class="sxs-lookup"><span data-stu-id="4bffc-102">TableDefs Collection (DAO)</span></span>
 
-<span data-ttu-id="c1503-103">**に適用されます:** Access 2013 |Office 2013</span><span class="sxs-lookup"><span data-stu-id="c1503-103">**Applies to:** Access 2013 | Office 2013</span></span>
+<span data-ttu-id="4bffc-103">**適用先**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="4bffc-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="c1503-104">**TableDefs** コレクションには、データベースに格納されているすべての **TableDef** オブジェクトが含まれます (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="c1503-104">A **TableDefs** collection contains all stored **TableDef** objects in a database (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="4bffc-104">**TableDefs** コレクションには、データベースに格納されているすべての **TableDef** オブジェクトが含まれます (Microsoft Access ワークスペースのみ)。</span><span class="sxs-lookup"><span data-stu-id="4bffc-104">A **TableDefs** collection contains all stored **TableDef** objects in a database (Microsoft Access workspaces only).</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="c1503-105">注釈</span><span class="sxs-lookup"><span data-stu-id="c1503-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="4bffc-105">注釈</span><span class="sxs-lookup"><span data-stu-id="4bffc-105">Remarks</span></span>
 
-<span data-ttu-id="c1503-106">テーブルの定義は、 **TableDef** オブジェクトおよびそのメソッドとプロパティを使用して操作します。</span><span class="sxs-lookup"><span data-stu-id="c1503-106">You manipulate a table definition using a **TableDef** object and its methods and properties.</span></span>
+<span data-ttu-id="4bffc-106">テーブルの定義は、**TableDef** オブジェクトおよびそのメソッドとプロパティを使用して操作します。</span><span class="sxs-lookup"><span data-stu-id="4bffc-106">You manipulate a table definition using a **TableDef** object and its methods and properties.</span></span>
 
-<span data-ttu-id="c1503-107">**Database** オブジェクトの既定のコレクションは、 **TableDefs** コレクションです。</span><span class="sxs-lookup"><span data-stu-id="c1503-107">The default collection of a **Database** object is the **TableDefs** collection.</span></span>
+<span data-ttu-id="4bffc-107">**Database** オブジェクトの既定のコレクションは、 **TableDefs** コレクションです。</span><span class="sxs-lookup"><span data-stu-id="4bffc-107">The default collection of a **Database** object is the **TableDefs** collection.</span></span>
 
-<span data-ttu-id="c1503-108">コレクション内の **TableDef** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="c1503-108">To refer to a **TableDef** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
+<span data-ttu-id="4bffc-108">コレクション内の **TableDef** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。</span><span class="sxs-lookup"><span data-stu-id="4bffc-108">To refer to a **TableDef** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
 
-<span data-ttu-id="c1503-109">**テーブル定義**(0)</span><span class="sxs-lookup"><span data-stu-id="c1503-109">**TableDefs**(0)</span></span>
+<span data-ttu-id="4bffc-109">**TableDefs**(0)</span><span class="sxs-lookup"><span data-stu-id="4bffc-109">**TableDefs**(0)</span></span>
 
-<span data-ttu-id="c1503-110">**テーブル定義**("name")</span><span class="sxs-lookup"><span data-stu-id="c1503-110">**TableDefs**("name")</span></span>
+<span data-ttu-id="4bffc-110">**TableDefs**("name")</span><span class="sxs-lookup"><span data-stu-id="4bffc-110">**TableDefs**("name")</span></span>
 
-<span data-ttu-id="c1503-111">**テーブル**\!\[名\]</span><span class="sxs-lookup"><span data-stu-id="c1503-111">**TableDefs**\!\[name\]</span></span>
+<span data-ttu-id="4bffc-111">**TableDefs**\!\[name\]</span><span class="sxs-lookup"><span data-stu-id="4bffc-111">**TableDefs**\!\[name\]</span></span>
 
-<span data-ttu-id="c1503-112">**でリンクが用意されている** [UtterAccess](https://www.utteraccess.com)のコミュニティです。</span><span class="sxs-lookup"><span data-stu-id="c1503-112">**Links provided by** the [UtterAccess](https://www.utteraccess.com) community.</span></span> <span data-ttu-id="c1503-113">UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。</span><span class="sxs-lookup"><span data-stu-id="c1503-113">UtterAccess is the premier Microsoft Access wiki and help forum.</span></span>
+<span data-ttu-id="4bffc-112">[UtterAccess](https://www.utteraccess.com) コミュニティで**リンクが提供**されます。</span><span class="sxs-lookup"><span data-stu-id="4bffc-112">**Links provided by:** Community Member Icon The [UtterAccess](https://www.utteraccess.com) community</span></span> <span data-ttu-id="4bffc-113">UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。</span><span class="sxs-lookup"><span data-stu-id="4bffc-113">UtterAccess is the premier Microsoft Access wiki and help forum.</span></span>
 
-  - [<span data-ttu-id="c1503-114">Re-Linker Multi-Backends</span><span class="sxs-lookup"><span data-stu-id="c1503-114">Re-Linker Multi-Backends</span></span>](https://www.utteraccess.com/wiki/index.php/re-linker_multi-backends)
+  - [<span data-ttu-id="4bffc-114">Re-Linker Multi-Backends</span><span class="sxs-lookup"><span data-stu-id="4bffc-114">Re-Linker Multi-Backends</span></span>](https://www.utteraccess.com/wiki/index.php/re-linker_multi-backends)
 
-  - [<span data-ttu-id="c1503-115">Swap/Relink Between LIVE, TEST and LOCAL Data</span><span class="sxs-lookup"><span data-stu-id="c1503-115">Swap/Relink Between LIVE, TEST and LOCAL Data</span></span>](https://www.utteraccess.com/forum/swap-relink-live-test-t1328573.html)
+  - [<span data-ttu-id="4bffc-115">Swap/Relink Between LIVE, TEST and LOCAL Data</span><span class="sxs-lookup"><span data-stu-id="4bffc-115">Swap/Relink Between LIVE, TEST and LOCAL Data</span></span>](https://www.utteraccess.com/forum/swap-relink-live-test-t1328573.html)
 
-## <a name="example"></a><span data-ttu-id="c1503-116">例</span><span class="sxs-lookup"><span data-stu-id="c1503-116">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4bffc-116">例</span><span class="sxs-lookup"><span data-stu-id="4bffc-116">Example</span></span>
 
-<span data-ttu-id="c1503-p102">この例では、新しい **TableDef** オブジェクトを作成し、Northwind Database オブジェクトの **TableDefs** コレクションに追加します。次に、 **TableDefs** コレクションおよび新しい **TableDef** オブジェクトの **Properties** コレクションを列挙します。</span><span class="sxs-lookup"><span data-stu-id="c1503-p102">This example creates a new **TableDef** object and appends it to the **TableDefs** collection of the Northwind Database object. It then enumerates the **TableDefs** collection and the **Properties** collection of the new **TableDef**.</span></span>
+<span data-ttu-id="4bffc-p102">この例では、新しい **TableDef** オブジェクトを作成し、Northwind Database オブジェクトの **TableDefs** コレクションに追加します。次に、 **TableDefs** コレクションおよび新しい **TableDef** オブジェクトの **Properties** コレクションを列挙します。</span><span class="sxs-lookup"><span data-stu-id="4bffc-p102">This example creates a new **TableDef** object and appends it to the **TableDefs** collection of the Northwind Database object. It then enumerates the **TableDefs** collection and the **Properties** collection of the new **TableDef**.</span></span>
 
 ```vb
     Sub TableDefX() 
@@ -95,7 +95,7 @@ ms.locfileid: "28702881"
 
 <br/>
 
-<span data-ttu-id="c1503-119">この例では、Northwind データベースで新しい **TableDef** オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="c1503-119">This example creates a new **TableDef** object in the Northwind database.</span></span>
+<span data-ttu-id="4bffc-119">この例では、Northwind データベースで新しい **TableDef** オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="4bffc-119">This example creates a new **TableDef** object in the Northwind database.</span></span>
 
 ```vb 
 Sub CreateTableDefX() 
