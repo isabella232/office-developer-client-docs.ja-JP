@@ -12,40 +12,40 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 630efdc4da5a9064f9dd9055e3ceabc0283d6d5f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307582"
 ---
 # <a name="recordsetsort-property-dao"></a>Recordset.Sort プロパティ (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
-**[Recordset](recordset-object-dao.md)** オブジェクト内のレコードの並べ替え順序を設定または取得します (Microsoft Access ワークスペースのみ)。
+**[Recordset](recordset-object-dao.md)** オブジェクトのレコードの並べ替え順序を設定または取得します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。並べ替え
+*式* .Sort
 
-*式***レコード セット**オブジェクトを表す変数です。
+*式* **Recordset** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 
-**Sort**プロパティを持つダイナセット: およびスナップショット タイプの**レコード セット**オブジェクトを使用できます。
+**Sort** プロパティは、ダイナセット タイプおよびスナップショット タイプの **Recordset** オブジェクトで使用できます。
 
-オブジェクトに対してこのプロパティを設定すると、それ以降にそのオブジェクトから **Recordset** オブジェクトを作成するときに、レコードが並べ替えられます。 **Sort** プロパティの設定値は、 **[QueryDef](querydef-object-dao.md)** オブジェクトに指定されているいずれの並べ替え順序よりも優先されます。
+オブジェクトにこのプロパティを設定すると、そのオブジェクトから後続の **Recordset** オブジェクトが作成されたときに並べ替えが行われます。**Sort** プロパティを設定すると、**[QueryDef](querydef-object-dao.md)** オブジェクトに指定された並べ替え順序が無効になります。
 
-既定の並べ替え順序は、昇順 (A ～ Z、0 ～ 100、あ～ん) です。
+並べ替え順序を指定しない場合は、昇順 (A ～ Z、0 ～ 100、あ～ん) になります。
 
-**Sort**プロパティをテーブル – または前方のみタイプの**Recordset**オブジェクトに適用されません。 テーブル タイプの**Recordset**オブジェクトを並べ替えるには、 **[Index](recordset-index-property-dao.md)** プロパティを使用します。
+**Sort** プロパティは、テーブル タイプまたは前方スクロール タイプの **Recordset** オブジェクトには適用されません。 テーブル タイプの **Recordset** オブジェクトを並べ替えるには、**[Index](recordset-index-property-dao.md)** プロパティを使用します。
 
 > [!NOTE]
-> [!メモ] 多くの場合、並べ替え条件が含まれた SQL ステートメントを使用した方が、短時間で新しい **Recordset** オブジェクトを開くことができます。
+> 多くの場合、並べ替え条件を含む SQL ステートメントを使用すると、新規の **Recordset** オブジェクトをより短時間で開くことができます。
 
 ## <a name="example"></a>例
 
-次の例では、 **Sort** プロパティの値を変更して新規の **Recordset** を作成することで、このプロパティの機能を示します。このプロシージャを実行するには、SortOutput 関数が必要です。
+次の例では、**Sort** プロパティの値を変更して新規の **Recordset** を作成することで、このプロパティの機能を示します。このプロシージャを実行するには、SortOutput 関数が必要です。
 
 ```vb
     Sub SortX() 

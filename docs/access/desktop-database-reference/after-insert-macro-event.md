@@ -12,26 +12,26 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: c84a737d08b791bfe560bfe6af6bcc59a14d2678
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297222"
 ---
 # <a name="after-insert-macro-event"></a>After Insert マクロ イベント
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
-**挿入の後**のイベントは、レコードを追加した後に発生します。
+The **After Insert** event occurs after a record is added.
 
 > [!NOTE]
-> **挿入した後**のイベントは、データ マクロでのみ使用可能。
+> After Insert イベントは、データ マクロでのみ使用できます。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-テーブルにレコードを追加するときに発生するアクションを実行するのにには、イベントの**後に、挿入**を使用します。 **後に挿入**するための一般的な使用法には、ビジネス ルール、ワークフローを強制すること、回数の集計の更新通知を送信するなどがあります。
+After Insert イベントでは、テーブルにレコードを追加したときに特定のアクションを実行します。通常は、ビジネス ルールやワークフローの実行、総計の更新、通知の送信などを行います。
 
-**更新 (以下「*フィールド名*」)** 関数を使用すると、フィールドが変更されたかどうかを判断します。 コード例を次に示しますが、**場合**に使用する方法を示していますを決定するためのステートメントでは、PaidInFull フィールドが変更されたかどうかを確認します。
+**Updated("*フィールド名*")** 関数を使用すると、フィールドが変更されているかどうかを判断できます。 次のコード例では、PaidInFull フィールドが変更されているかどうかを If ステートメントで判断する方法を示します。
 
 ```vb 
  
@@ -43,7 +43,7 @@ End If
  
 ```
 
-**挿入した後**のイベントで使用できるマクロのコマンドを次の表に一覧します。
+After Insert イベントで使用できるマクロ コマンドは次のとおりです。
 
 <table>
 <colgroup>
@@ -83,7 +83,7 @@ End If
 </tr>
 <tr class="odd">
 <td><p>データ ブロック</p></td>
-<td><p><a href="lookuprecord-data-block.md">不一致データのブロック</a></p></td>
+<td><p><a href="lookuprecord-data-block.md">LookupRecord データ ブロック</a></p></td>
 </tr>
 <tr class="even">
 <td><p>データ アクション</p></td>
@@ -141,9 +141,9 @@ End If
 </table>
 
 
-**挿入した後**のイベントをキャプチャするデータ マクロを作成するには、次の手順を使用します。
+To create a Data macro that captures the **After Insert** event, use the following steps.
 
-1.  **後挿入**イベントをキャプチャするテーブルを開きます。
+1.  Open the table for which you want to capture the **After Insert** event.
 
 2.  [ **テーブル**] タブの [ **イベント後**] で、[ **挿入後処理**] をクリックします。
 
@@ -151,19 +151,19 @@ End If
 
 ## <a name="example"></a>例
 
-次のコード例では、寄付のテーブルにレコードを追加するときに、いくつか処理を実行するのにイベントの**後に、挿入**を使用します。 レコードが追加されると、DonationsReceived テーブル内のフィールド、キャンペーン、寄付金提供者の表に TotalDonatedField に、寄付の金額が追加されます。
+The following code example uses the **After Insert** event to perform some processing when a record is added to the Donations table. When a record is added, the amount of the donation is added to the DonationsReceived field in the Campaigns table and the TotalDonatedField in the Donors table.
 
-**マクロ デザイナーに貼り付けることができるマクロのコピーを表示するのにはここをクリックします。**
+**マクロ デザイナーに貼り付けることができるマクロのコピーを表示するには、ここをクリックします。**
 
 この例をマクロ デザイナーで表示するには、次の手順に従います。
 
-1.  **後挿入**イベントをキャプチャするテーブルを開きます。
+1.  Open the table for which you want to capture the **After Insert** event.
 
 2.  [ **テーブル**] タブの [ **イベント後**] で、[ **挿入後処理**] をクリックします。
 
-3.  次のコード例を選択して、Ctrl キーを押しながら C キーを押して、クリップボードにコピーします。
+3.  Select the code in the following code example and then press CTRL+C to copy it to the Clipboard.
 
-4.  マクロ デザイナーを起動して、Ctrl キーを押しながら V キーを押します。
+4.  Activate the macro designer window and then press CTRL+V.
 
 <!-- end list -->
 

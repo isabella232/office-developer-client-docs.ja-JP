@@ -1,5 +1,5 @@
 ---
-title: 選択します。INTO ステートメント (Microsoft Access SQL)
+title: SELECT.INTO ステートメント (Microsoft Access SQL)
 TOCTitle: SELECT.INTO statement (Microsoft Access SQL)
 ms:assetid: 29f3bd55-52f5-a36e-4e33-4b3499c6ce8d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192059(v=office.15)
@@ -8,21 +8,21 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: fd7152eaa7dd29f6d0bf5621d1b8b8b6f648673c
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28705499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308723"
 ---
-# <a name="selectinto-statement-microsoft-access-sql"></a>選択します。INTO ステートメント (Microsoft Access SQL)
+# <a name="selectinto-statement-microsoft-access-sql"></a>SELECT.INTO ステートメント (Microsoft Access SQL)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 テーブル作成クエリを作成します。
 
 ## <a name="syntax"></a>構文
 
-[ *Field1]*\[、*フィールド 2*\[をしています.\] \]に*新しい* \[ *externaldatabase*で\]*のソース*から
+SELECT *field1*\[, *field2*\[, …\]\] INTO *newtable* \[IN *externaldatabase*\] FROM *source*
 
 SELECT...INTO ステートメントには、次の指定項目があります。
 
@@ -33,14 +33,14 @@ SELECT...INTO ステートメントには、次の指定項目があります。
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>指定項目</p></th>
+<th><p>パーツ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><em>field1</em>、<em>field2</em></p></td>
-<td><p>新しいテーブルにコピーするフィールドの名前。</p></td>
+<td><p>新しいテーブルにコピーするフィールドの名前です。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>newtable</em></p></td>
@@ -52,15 +52,15 @@ SELECT...INTO ステートメントには、次の指定項目があります。
 </tr>
 <tr class="even">
 <td><p><em>source</em></p></td>
-<td><p>選択するレコードのある既存のテーブルの名前。単一のテーブル名、複数のテーブル名、またはクエリ名を指定できます。</p></td>
+<td><p>レコードの選択元になる既存テーブルの名前です。 このテーブルまたはクエリは 1 つでも複数でも構いません。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-テーブル作成クエリは、レコードのアーカイブやテーブルのバックアップ コピーの作成に使用できます。また、別のデータベースへエクスポートするコピーを作成する場合や、一定期間のデータを表示するレポートを作成する場合などにも使用できます。たとえば、地域別月間売上レポートを作成する場合は、毎月同じテーブル作成クエリを実行します。
+テーブル作成クエリを使用し、レコードをアーカイブしたり、テーブルのバックアップ コピーを作成したり、別のデータベースにエクスポートするか、データを一定期間表示するレポートの基礎として利用するためのコピーを作成したりできます。たとえば、同じテーブル作成クエリを毎月実行し、地域別の月間売上レポートを作成できます。
 
 > [!NOTE]
 > - 新規テーブルに主キーを設定する場合があります。テーブル作成クエリで作成したテーブルのフィールドは、クエリの元になるテーブルのフィールドのデータ型とフィールド サイズを継承しますが、それ以外のフィールド プロパティやテーブル プロパティは継承しません。
@@ -69,9 +69,9 @@ SELECT...INTO ステートメントには、次の指定項目があります。
 
 
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
-次の使用例では、Employees テーブルのすべてのレコードを選択し、それを "Emp Backup" という新規テーブルにコピーします。
+この例では、Employees テーブル内のすべてのレコードを選択し、それらを Emp Backup という名前の新しいテーブルにコピーします。
 
 ```vb
     Sub SelectIntoX() 

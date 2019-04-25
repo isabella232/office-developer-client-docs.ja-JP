@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 713f2530369a824a6d7204655ded4333f7fe2765
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308443"
 ---
 # <a name="tabledefcreatefield-method-dao"></a>TableDef.CreateField メソッド (DAO)
 
-**に適用されます:** Access 2013 |Office 2013
+**適用先**: Access 2013 | Office 2013
 
 新しい **[Field](field-object-dao.md)** オブジェクトを作成します (Microsoft Access ワークスペースのみ)。
 
 ## <a name="syntax"></a>構文
 
-*式*です。CreateField (_**名前**_、_**種類**_、_**サイズ**_)
+*式* .CreateField(_**Name**_, _**Type**_, _**Size**_)
 
-*式***テーブル定義**オブジェクトを表す変数です。
+*式* **TableDef** オブジェクトを表す変数。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -42,29 +42,29 @@ ms.locfileid: "28710434"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/オプション</p></th>
+<th><p>必須/省略可能</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Name</em></p></td>
+<td><p><em>名前</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>Variant (バリアント型)</strong></p></td>
-<td><p>新しい <strong>Field</strong> オブジェクトの一意の名前を表す文字列型 (String) の値。有効な <strong>Field</strong> 名の詳細については、<strong><a href="connection-name-property-dao.md">Name</a></strong> プロパティを参照してください。</p></td>
+<td><p><strong>Variant</strong></p></td>
+<td><p>新しい <strong>Field</strong> オブジェクトの名前を一意に指定する文字列。 有効な <strong>Field</strong> 名の詳細については、<strong><a href="connection-name-property-dao.md">Name</a></strong> プロパティを参照してください。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>型</em></p></td>
+<td><p><em>Type</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>Variant (バリアント型)</strong></p></td>
-<td><p>新しい <strong>Field</strong> オブジェクトのデータ型を指定する定数。有効なデータ型については、<strong><a href="field-type-property-dao.md">Type</a></strong> プロパティを参照してください。</p></td>
+<td><p><strong>Variant</strong></p></td>
+<td><p>新しい <strong>Field</strong> オブジェクトのデータ型を決定する定数。 有効なデータ型については、<strong><a href="field-type-property-dao.md">Type</a></strong> プロパティを参照してください。</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>Size</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>Variant (バリアント型)</strong></p></td>
-<td><p>テキストを格納する <strong>Field</strong> オブジェクトの最大サイズをバイト単位で示す整数型 (Integer) の値。size の有効な値については、<strong><a href="field-size-property-dao.md">Size</a></strong> property プロパティを参照してください。この引数は、数値フィールドおよび固定幅フィールドでは無視されます。</p></td>
+<td><p><strong>Variant</strong></p></td>
+<td><p>テキストを含む <strong>Field</strong> オブジェクトの最大サイズをバイト単位で示す整数。 サイズの有効な値については、<strong><a href="field-size-property-dao.md">Size</a></strong> プロパティを参照してください。 この引数は数値フィールドおよび固定幅フィールドでは無視されます。</p></td>
 </tr>
 </tbody>
 </table>
@@ -76,23 +76,23 @@ Field
 
 ## <a name="remarks"></a>注釈
 
-**CreateField** メソッドを使用すると、新しいフィールドを作成して、そのフィールドの名前、データ型、およびサイズを指定できます。 **CreateField** を使用するときに 1 つ以上のオプションの引数を省略した場合は、新しいオブジェクトをコレクションに追加する前に、適切な代入ステートメントを使用して、対応するプロパティを設定またはリセットできます。新しいオブジェクトをコレクションに追加した後は、一部のプロパティ設定を変更できなくなります。詳細については、各プロパティのトピックを参照してください。
+**CreateField** メソッドを使用して、新しいフィールドを作成し、そのフィールドの名前、データ型、およびサイズを指定できます。**CreateField** の使用時に省略可能な引数を省略した場合は、新しいオブジェクトをコレクションに追加する前に、適切な代入ステートメントを使用して、対応するプロパティを設定またはリセットできます。新しいオブジェクトの追加後は、一部のプロパティの設定は変更できません。詳細については、各プロパティのトピックを参照してください。
 
-タイプとサイズの引数は、**テーブル定義**オブジェクト内の**Field**オブジェクトにのみ適用されます。 これらの引数は、 **Field** オブジェクトが **Index** オブジェクトまたは **Relation** オブジェクトに関連付けられている場合は無視されます。
+引数 type および引数 Size は、**TableDef** オブジェクトの **Field** オブジェクトにのみ適用されます。 **Field** オブジェクトが **Index** または **Relation** オブジェクトに関連付けられている場合、これらの引数は無視されます。
 
-名は、既にコレクションのメンバーであるオブジェクトを参照している場合、 **[Append](fields-append-method-dao.md)** メソッドを使用すると、実行時エラーが発生します。
+Name が示すオブジェクトが既にコレクションのメンバーである場合に **[Append](fields-append-method-dao.md)** メソッドを使用すると、実行時エラーが発生します。
 
-**Field** オブジェクトを **Fields** コレクションから削除するには、そのコレクションで **[Delete](fields-delete-method-dao.md)** メソッドを使用します。フィールドを参照するインデックスの作成後は、その **Field** オブジェクトを **TableDef** オブジェクトの **Fields** コレクションから削除できません。
+**Fields** コレクションから **Field** オブジェクトを削除するには、コレクションの **[Delete](fields-delete-method-dao.md)** メソッドを使用します。フィールドを参照するインデックスを作成した後は、 **TableDef** オブジェクトの **Fields** コレクションから **Field** オブジェクトを削除できません。
 
-**でリンクが用意されている** [UtterAccess](https://www.utteraccess.com)のコミュニティです。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
+**リンクの提供元: **[UtterAccess](https://www.utteraccess.com) コミュニティ。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
 
-- [Adding a hyperlink field to an existing table with DAO (英語)](https://www.utteraccess.com/wiki/index.php/adding_a_hyperlink_field_to_an_existing_table_with_dao)
+- [DAO を使用して既存のテーブルにハイパーリンク フィールドを追加する](https://www.utteraccess.com/wiki/index.php/adding_a_hyperlink_field_to_an_existing_table_with_dao)
 
 ## <a name="example"></a>例
 
 次の例は、集計フィールドを作成する方法を示します。 CreateField メソッドで、" **FullName**" という名前のフィールドを作成します。次に、 Expression プロパティを、フィールドの値を計算する式に設定します。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     Sub CreateCalculatedField()

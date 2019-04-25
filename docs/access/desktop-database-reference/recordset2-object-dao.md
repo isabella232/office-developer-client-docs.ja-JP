@@ -8,27 +8,29 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: a25e980660e1ab098d15b66b17678ef4111ee215
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307232"
 ---
 # <a name="recordset2-object-dao"></a>Recordset2 オブジェクト (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
-**Recordset2** オブジェクトは、ベース テーブルのレコード、またはクエリの実行結果のレコードを表します。
+
+            **Recordset2** オブジェクトは、ベース テーブルのレコード、またはクエリの実行結果のレコードを表します。
 
 ## <a name="remarks"></a>解説
 
-**Recordset2** オブジェクトには、 **[Recordset](recordset-object-dao.md)** オブジェクトと同じすべてのプロパティおよびメソッドが含まれます。 **Recordset2** オブジェクトには、複数値を持つフィールド型をサポートする新しいプロパティである **[ParentRecordset](recordset2-parentrecordset-property-dao.md)** が含まれます。
+
+            **Recordset2** オブジェクトには、**[Recordset](recordset-object-dao.md)** オブジェクトと同じすべてのプロパティおよびメソッドが含まれます。**Recordset2** オブジェクトには、複数値を持つフィールド型をサポートする新しいプロパティである **[ParentRecordset](recordset2-parentrecordset-property-dao.md)** が含まれます。
 
 ## <a name="example"></a>例
 
 次の例は、複数値フィールドが含まれる Recordset 内を移動する方法を示します。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 プログラマー用リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     Sub PrintStudentsAndClasses()

@@ -8,16 +8,16 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: b9e2a69f6952feb892de736e7ff3c3ca94e9da64
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28717280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307183"
 ---
 # <a name="recordsetoptionenum-enumeration-dao"></a>RecordsetOptionEnum 列挙 (DAO)
 
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 **OpenRecordset** メソッドで、新しい **Recordset** オブジェクトの特性を指定するために使用します。
 
@@ -41,7 +41,7 @@ ms.locfileid: "28717280"
 <td><p>ユーザーが新しいレコードをダイナセットに追加するのを許可しますが、既存のレコードを読み取ることは許可しません。</p></td>
 </tr>
 <tr class="even">
-<td><p>指定できます。</p></td>
+<td><p>dbConsistent</p></td>
 <td><p>32</p></td>
 <td><p>ダイナセット内の他のレコードに影響を与えないフィールドにのみ更新を適用します (ダイナセット タイプとスナップショット タイプのみ)。</p></td>
 </tr>
@@ -62,9 +62,7 @@ ms.locfileid: "28717280"
 </tr>
 <tr class="even">
 <td><p>dbFailOnError</p></td>
-<td><p> 
-128 
-</p></td>
+<td><p>128</p></td>
 <td><p>エラーが発生した場合、更新をロールバックします。</p></td>
 </tr>
 <tr class="odd">
@@ -73,7 +71,7 @@ ms.locfileid: "28717280"
 <td><p>前方スクロールのみのスナップショット タイプ Recordset を作成します (スナップショット タイプのみ)。</p></td>
 </tr>
 <tr class="even">
-<td><p>組み合わせて</p></td>
+<td><p>dbInconsistent</p></td>
 <td><p>16</p></td>
 <td><p>他のレコードに影響が及ぶ場合でも、すべてのダイナセット フィールドに更新を適用します (ダイナセット タイプとスナップショット タイプのみ)。</p></td>
 </tr>

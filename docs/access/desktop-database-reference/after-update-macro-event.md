@@ -12,26 +12,26 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: a96b46fcc78c4f93887e487f52091a77da6c0d2f
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28699458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297187"
 ---
 # <a name="after-update-macro-event"></a>After Update マクロ イベント
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
-**後の更新**イベントは、レコードが変更された後に発生します。
+The **After Update** event occurs after a record is changed.
 
 > [!NOTE]
-> **更新後処理**イベントは、データ マクロでのみ使用します。
+> After Update イベントは、データ マクロでのみ使用できます。
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**更新後処理**イベントを使用すると、レコードが変更されたときに発生するすべてのアクションを実行できます。 **後に挿入**する一般的な用途には、ビジネス ルールを適用すること、回数の集計の更新通知を送信するなどがあります。
+After Update イベントでは、レコードを変更したときに特定のアクションを実行します。通常は、ビジネス ルールの実行、総計の更新、通知の送信などを行います。
 
-**更新 (以下「*フィールド名*」)** 関数を使用すると、フィールドが変更されたかどうかを判断します。 コード例を次に示しますが、**場合**に使用する方法を示していますを決定するためのステートメントでは、PaidInFull フィールドが変更されたかどうかを確認します。
+**Updated("*フィールド名*")** 関数を使用すると、フィールドが変更されているかどうかを判断できます。 次のコード例では、PaidInFull フィールドが変更されているかどうかを If ステートメントで判断する方法を示します。
 
 ```vb 
  
@@ -53,7 +53,7 @@ End If
 
 **After Update** イベントが終了すると、以前の値は完全に削除されます。
 
-コマンドは、**更新後処理**イベントで使用できるマクロを次の表に一覧します。
+After Update イベントで使用できるマクロ コマンドは次のとおりです。
 
 <table>
 <colgroup>
@@ -93,7 +93,7 @@ End If
 </tr>
 <tr class="odd">
 <td><p>データ ブロック</p></td>
-<td><p><a href="lookuprecord-data-block.md">不一致データのブロック</a></p></td>
+<td><p><a href="lookuprecord-data-block.md">LookupRecord データ ブロック</a></p></td>
 </tr>
 <tr class="even">
 <td><p>データ アクション</p></td>
@@ -151,9 +151,9 @@ End If
 </table>
 
 
-**更新後処理**イベントをキャプチャするデータ マクロを作成するには、folloiwng の手順を使用します。
+To create a Data macro that captures the **After Update** event, use the folloiwng steps:
 
-1.  **更新後処理**イベントをキャプチャするテーブルを開きます。
+1.  Open the table for which you want to capture the **After Update** event.
 
 2.  [ **テーブル**] タブの [ **イベント後**] で、[ **更新後処理**] をクリックします。
 
@@ -161,19 +161,19 @@ End If
 
 ## <a name="example"></a>例
 
-次のコード例は、懸案事項のステータスが更新されるたびに、コメントのテーブルにレコードを追加する名前付きデータ マクロを実行するのには**更新後**のイベントを使用します。
+次のコード例では、After Update イベントを使用して、問題のステータスを更新するたびに Comment テーブルにレコードを追加する名前付きデータ マクロを実行します。
 
-**マクロ デザイナーに貼り付けることができるマクロのコピーを表示するのにはここをクリックします。**
+**マクロ デザイナーに貼り付けることができるマクロのコピーを表示するには、ここをクリックします。**
 
 この例をマクロ デザイナーで表示するには、次の手順に従います。
 
-1.  **更新後処理**イベントをキャプチャするテーブルを開きます。
+1.  Open the table for which you want to capture the **After Update** event.
 
 2.  [ **テーブル**] タブの [ **イベント後**] で、[ **更新後処理**] をクリックします。
 
-3.  次のコード例を選択して、Ctrl キーを押しながら C キーを押して、クリップボードにコピーします。
+3.  Select the code in the following code example and then press CTRL+C to copy it to the Clipboard.
 
-4.  マクロ デザイナーを起動して、Ctrl キーを押しながら V キーを押します。
+4.  Activate the macro designer window and then press CTRL+V.
 
 <!-- end list -->
 

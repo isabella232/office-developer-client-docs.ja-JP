@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 9f73dfc49a6ec99b726a052c588c032783010081
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32307526"
 ---
 # <a name="recordsetupdate-method-dao"></a>Recordset.Update メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 ## <a name="syntax"></a>構文
 
-*式*です。更新 (***UpdateType***、***力***)
+*式* .Update(***UpdateType***, ***Force***)
 
-*式***レコード セット**オブジェクトを表す変数です。
+*式* **Recordset** オブジェクトを表す変数。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -36,7 +36,7 @@ ms.locfileid: "28721669"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/オプション</p></th>
+<th><p>必須/省略可能</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
@@ -45,13 +45,13 @@ ms.locfileid: "28721669"
 <tr class="odd">
 <td><p><em>UpdateType</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>長整数型 (Long)</strong></p></td>
+<td><p><strong>Long</strong></p></td>
 <td><p>[設定] で指定されている更新の種類を示す <strong><a href="updatetypeenum-enumeration-dao.md">UpdateTypeEnum</a></strong> クラスの定数です (ODBCDirect ワークスペースのみ)。</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Force</em></p></td>
+<td><p><em>物理的な力</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>ブール型 (Boolean)</strong></p></td>
+<td><p><strong>Boolean</strong></p></td>
 <td><p><a href="recordset-addnew-method-dao.md"><strong>AddNew</strong></a> 、 <a href="fields-delete-method-dao.md"><strong>Delete</strong></a> 、または <a href="recordset-edit-method-dao.md"><strong>Edit</strong></a> の呼び出し後に、基になるデータが他のユーザーによって変更されたかどうかにかかわらず、変更を強制的にデータベースに反映するかどうかを示すブール型 ( <strong>Boolean</strong> ) の値です。 <strong>True</strong> に設定すると、変更が強制的に反映され、他のユーザーによる変更は単純に上書きされます。 <strong>False</strong> (既定値) に設定すると、更新が保留されている間に他のユーザーが変更を加えた場合、競合する変更の更新が失敗します。エラーは発生しませんが、 <strong><a href="recordset-batchcollisioncount-property-dao.md">BatchCollisionCount</a></strong> プロパティと <strong><a href="recordset-batchcollisions-property-dao.md">BatchCollisions</a></strong> プロパティに、競合の数と競合によって影響を受ける行が、それぞれ格納されます (ODBCDirect ワークスペースのみ)。  </p></td>
 </tr>
 </tbody>
@@ -60,7 +60,7 @@ ms.locfileid: "28721669"
 
 ## <a name="remarks"></a>注釈
 
-**Update** は、カレント レコードと、それに加えた変更を保存するために使用します。
+**Update** は、カレント レコードと、それに加えた変更を保存するときに使用します。
 
 > [!IMPORTANT]
 > [!重要] 次の場合は、カレント レコードに対する変更が失われます。
@@ -76,14 +76,14 @@ ODBCDirect ワークスペースでは、カーソル ライブラリが一括�
 
 Microsoft Access ワークスペースでは、マルチユーザー環境で **Recordset** オブジェクトの **LockEdits** プロパティが **True** に設定されている場合 (排他的ロック)、 **Edit** が使用された時点から、 **Update** メソッドが実行されるか、編集が取り消されるまで、レコードがロックされます。 **LockEdits** プロパティが **False** に設定されている場合 (共有的ロック)、レコードはロックされ、データベースに反映される直前に、編集前のレコードと比較されます。 
 
-**Edit** メソッドを使用した時点からレコードが変更されている場合は、 **Update** 操作が失敗します。 Microsoft Office Access データベース エンジンに接続されている ODBC データベース、およびインストール可能な ISAM データベースでは、常に共有的ロックが使用されます。 変更による **Update** 操作を引き続き実行するには、 **Update** メソッドを再度使用します。 変更を他のユーザーのレコードを元に戻す、Move 0 を使用して現在のレコードを更新します。
+**Edit** メソッドを使用した時点からレコードが変更されている場合は、 **Update** 操作が失敗します。 Microsoft Office Access データベース エンジンに接続されている ODBC データベース、およびインストール可能な ISAM データベースでは、常に共有的ロックが使用されます。 変更による **Update** 操作を引き続き実行するには、 **Update** メソッドを再度使用します。 他のユーザーがレコードを変更した後にレコードを戻すには、Move 0 を使用して現在のレコードを更新します。
 
 > [!NOTE]
-> [!メモ] レコードを追加、編集、または削除するには、基になるデータ ソースでレコードに一意なインデックスが付けられている必要があります。このようなインデックスがない場合、Microsoft Access ワークスペースで **AddNew** 、 **Delete** 、または **Edit** の各メソッドを呼び出すと、"アクセスが拒否されました。" というエラーが発生し、ODBCDirect ワークスペースで **Update** を呼び出すと、"引数が無効です。" というエラーが発生します。
+> レコードを追加、編集、または削除するには、基になるデータ ソースでレコードに一意なインデックスが付けられている必要があります。このようなインデックスがない場合、Microsoft Access ワークスペースで **AddNew**、**Delete**、または **Edit** の各メソッドを呼び出すと、"アクセスが拒否されました。" というエラーが発生し、ODBCDirect ワークスペースで **Update** を呼び出すと、"引数が無効です。" というエラーが発生します。
 
 ## <a name="example"></a>例
 
-この例では、 **Update** メソッドと **Edit** メソッドを組み合わせて使用する方法を示します。
+この例では、**Update** メソッドと **Edit** メソッドを組み合わせて使用する方法を示します。
 
 ```vb
     Sub UpdateX() 

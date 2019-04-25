@@ -1,5 +1,5 @@
 ---
-title: SQL データ型 (Access データベースをデスクトップ リファレンス)
+title: SQL データ型 (Access デスクトップ データベース リファレンス)
 TOCTitle: SQL data types
 ms:assetid: 4fc2dc8c-7825-8fbb-ff91-a0f39ef90115
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff193793(v=office.15)
@@ -12,19 +12,19 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: fb72a0090550692e7cf5028a6a58a078fc5d9d32
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28722201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308583"
 ---
 # <a name="sql-data-types"></a>SQL データ型
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
-Microsoft Access データベース エンジンの SQL データ型は、Microsoft Jet データベース エンジンで定義されている 13 の基本データ型とこれらのデータ型を認識するいくつかの有効な類義語で構成されます。
+Microsoft Access データベース エンジン SQL のデータ型は、Microsoft Jet データベース エンジンで定義される 13 種類の基本データ型と、それらのデータ型として認識されるいくつかの別名で構成されます。
 
-これらの基本データ型を次の表に示します。同義語については、「[SQL 予約語](sql-reserved-words.md)」を参照してください。
+次の表に主要な SQL Server データ型を一覧表示します。 同義語については、「[SQL 予約語](sql-reserved-words.md)」を参照してください。
 
 <table>
 <colgroup>
@@ -42,13 +42,13 @@ Microsoft Access データベース エンジンの SQL データ型は、Micros
 <tbody>
 <tr class="odd">
 <td><p>BINARY</p></td>
-<td><p>1 文字につき 1 バイト</p></td>
-<td><p>このデータ型のフィールドには、どの型のデータでも格納できます。テキスト型 (Text) など、他のデータ型への変換は行われません。フィールドに入力された形式のまま、データが出力されます。</p></td>
+<td><p>1 文字あたり 1 バイト</p></td>
+<td><p>このデータ型のフィールドには、どの型のデータでも格納できます。他のデータ型への変換 (たとえば、TEXT 型へ) は行われません。バイナリ フィールドにデータを入力する方法は、データをどのように出力するかを決めるものです。</p></td>
 </tr>
 <tr class="even">
 <td><p>BIT</p></td>
 <td><p>1 バイト</p></td>
-<td><p>Yes または No の値。または、2 つの値のうちのどちらかしか格納できないフィールド。</p></td>
+<td><p>"はい" と "いいえ" の値と、このいずれかの値のみを含むフィールド。</p></td>
 </tr>
 <tr class="odd">
 <td><p>TINYINT</p></td>
@@ -61,24 +61,24 @@ Microsoft Access データベース エンジンの SQL データ型は、Micros
 <td><p>-922,337,203,685,477.5808 ～ 922,337,203,685,477.5807 の範囲の整数。</p></td>
 </tr>
 <tr class="odd">
-<td><p>DATETIME (ダブルを参照してください)</p></td>
+<td><p>DATETIME (「DOUBLE」を参照)</p></td>
 <td><p>8 バイト</p></td>
 <td><p>100 ～ 9999 年の日付または時刻の値。</p></td>
 </tr>
 <tr class="even">
 <td><p>UNIQUEIDENTIFIER</p></td>
 <td><p>128 ビット</p></td>
-<td><p>リモート プロシージャ コールで使用される一意な識別番号。</p></td>
+<td><p>リモート プロシージャ コールで使用される一意の識別番号。</p></td>
 </tr>
 <tr class="odd">
 <td><p>REAL</p></td>
 <td><p>4 バイト</p></td>
-<td><p>-3.402823E38 ～ -1.401298E-45 の負の値、1.401298E-45 ～ 3.402823E38 の正の値、および 0 の単精度浮動小数点値</p></td>
+<td><p>- 3.402823E38 ～ - 1.401298E-45 の負の値、1.401298E-45 ～ 3.402823E38 の正の値、および 0 の単精度浮動小数点値。</p></td>
 </tr>
 <tr class="even">
 <td><p>FLOAT</p></td>
 <td><p>8 バイト</p></td>
-<td><p>-1.79769313486232E308 ～ -4.94065645841247E-324 の負の値、4.94065645841247E-324 ～ 1.79769313486232E308 の正の値、および 0 の倍精度浮動小数点値。</p></td>
+<td><p>– 1.79769313486232E308 ～ – 4.94065645841247E-324 の負の値、4.94065645841247E-324 ～ 1.79769313486232E308 の正の値、および 0 の倍精度浮動小数点値。</p></td>
 </tr>
 <tr class="odd">
 <td><p>SMALLINT</p></td>
@@ -93,22 +93,22 @@ Microsoft Access データベース エンジンの SQL データ型は、Micros
 <tr class="odd">
 <td><p>DECIMAL</p></td>
 <td><p>17 バイト</p></td>
-<td><p>-1028-1 ～ 1028-1 の値を格納する数値データ型。精度 (1 ～ 28) と桁数 (0 ～精度の数値) の両方を定義できます。既定の精度は 18、桁数は 0 です。</p></td>
+<td><p>1028 - 1 ～ - 1028 - 1 の値を格納する真数データ型。有効桁数 (1 ～ 28) と小数点以下桁数 (0 ～ 定義された精度) の両方を定義できます。既定の有効桁数は 18、小数点以下桁数は 0 です。</p></td>
 </tr>
 <tr class="even">
 <td><p>TEXT</p></td>
-<td><p>1 文字につき 2 バイト (次の「メモ」を参照)</p></td>
-<td><p>0 ～ 2.14 GB のデータ。</p></td>
+<td><p>1 文字あたり 2 バイト (「メモ」を参照)</p></td>
+<td><p>0 ～ 2.14 GB。</p></td>
 </tr>
 <tr class="odd">
 <td><p>IMAGE</p></td>
-<td><p>可変</p></td>
-<td><p>0 ～ 2.14 GB のデータ。OLE オブジェクトに使用します。</p></td>
+<td><p>必須</p></td>
+<td><p>0 ～ 2.14 GB。OLE オブジェクトで使用。</p></td>
 </tr>
 <tr class="even">
 <td><p>CHARACTER</p></td>
 <td><p>1 文字につき 2 バイト (次の「メモ」を参照)</p></td>
-<td><p>0 ～ 255 バイトの文字列。</p></td>
+<td><p>0 ～ 255 文字</p></td>
 </tr>
 </tbody>
 </table>

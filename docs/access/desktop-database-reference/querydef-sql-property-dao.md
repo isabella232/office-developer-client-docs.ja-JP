@@ -12,40 +12,41 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: c51f0da8541cf0ba2790827c58a0b017bd6ed875
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28712632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300981"
 ---
 # <a name="querydefsql-property-dao"></a>QueryDef.SQL プロパティ (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 **[QueryDef](querydef-object-dao.md)** オブジェクトが実行するクエリを定義する SQL ステートメントを設定または取得します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。SQL
+*式* .SQL
 
-*式***クエリ定義**オブジェクトを表す変数です。
+*式* **QueryDef** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 
-**SQL** プロパティには、クエリの実行時にレコードの選択、グループ化、順序付けの方法を決定する SQL ステートメントが含まれています。クエリを使用すると、 **[Recordset](recordset-object-dao.md)** オブジェクトに含めるレコードを選択できます。アクション クエリを定義して、レコードを返さずにデータを変更することもできます。
+
+            **SQL** プロパティには、クエリの実行時にレコードの選択、グループ化、順序付けの方法を決定する SQL ステートメントが含まれています。クエリを使用すると、**[Recordset](recordset-object-dao.md)** オブジェクトに含めるレコードを選択できます。アクション クエリを定義して、レコードを返さずにデータを変更することもできます。
 
 クエリに使用する SQL 構文は、ワークスペースの種類によって決まるクエリ エンジンの SQL 文法に従っている必要があります。Microsoft Access ワークスペースでは、Microsoft Access の SQL 文法を使用しますが、SQL パススルー クエリを作成する場合は、サーバーの文法を使用する必要があります。
 
 SQL ステートメントにクエリのパラメーターが含まれている場合、実行の前にこれらのパラメーターを設定する必要があります。パラメーターをリセットしない限り、クエリを実行するたびに同じパラメーター値が適用されます。
 
-Microsoft Access ワークスペースの場合、Microsoft Access データベース エンジンに接続されている ODBC データ ソース上で SQL パススルー操作を実行するには、 **QueryDef** オブジェクトを使用することをお勧めします。 ODBC データ ソースに**クエリ定義**オブジェクトの**[接続](querydef-connect-property-dao.md)** プロパティの設定によっては、外部サーバーに渡される – マイクロソフト – アクセス – データベース以外の SQL クエリでを使用できます。 たとえば、それ以外の場合 Microsoft Access データベース エンジンでは処理できない、TRANSACT SQL ステートメントを (Microsoft SQL Server または Sybase SQL Server データベースで) 使用できます。
+Microsoft Access ワークスペースの場合、Microsoft Access データベース エンジンに接続されている ODBC データ ソース上で SQL パススルー操作を実行するには、 **QueryDef** オブジェクトを使用することをお勧めします。 **QueryDef** オブジェクトの **[Connect](querydef-connect-property-dao.md)** プロパティを ODBC データ ソースに設定すると、クエリで外部サーバーに渡す必要がある Microsoft Access データベース以外の SQL を使用できます。 たとえば、それ以外の場合 Microsoft Access データベース エンジンでは処理できない、TRANSACT SQL ステートメントを (Microsoft SQL Server または Sybase SQL Server データベースで) 使用できます。
 
 > [!NOTE]
-> 文字列、整数以外の値に連結するプロパティを設定して、システム ・ パラメーターは、米国以外の小数点の記号、カンマなどを指定する場合 (たとえば、 `strSQL = "PRICE > " & lngPrice, and lngPrice = 125,50`)、microsoft**クエリ定義**オブジェクトを実行しようとするときにエラーが発生Access データベース エンジンのデータベースです。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、Microsoft Access の SQL で小数点の記号として使用できるのはピリオドのみであるためです。
+> このプロパティを非整数値と連結された文字列に設定し、かつシステム パラメーターでコンマなどのピリオド以外の小数点の記号が指定されている場合に (例: `strSQL = "PRICE > " & lngPrice, and lngPrice = 125,50`)、Microsoft Access データベース エンジンのデータベースで **QueryDef** オブジェクトを実行しようとすると、エラーが発生します。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、Microsoft Access の SQL で小数点の記号として使用できるのはピリオドのみであるためです。
 
 ## <a name="example"></a>例
 
-次の例では、一時的な **QueryDef** オブジェクトの **SQL** プロパティを設定して変更し、結果を比較することで、 **SQL** プロパティの機能を示します。このプロシージャを実行するには、 SQLOutput 関数が必要です。
+次の例では、一時的な **QueryDef** オブジェクトの **SQL** プロパティを設定して変更し、結果を比較することで、**SQL** プロパティの機能を示します。 このプロシージャを実行するには、SQLOutput 関数が必要です。
 
 ```vb
     Sub SQLX() 
@@ -99,7 +100,7 @@ Microsoft Access ワークスペースの場合、Microsoft Access データベ�
 
 <br/>
 
-次の例では、 **CopyQueryDef** メソッドを使用して、既存の **Recordset** オブジェクトから **QueryDef** オブジェクトのコピーを作成し、 **SQL** プロパティに句を追加して、コピーを変更します。永続的な **QueryDef** オブジェクトを作成する場合、 **SQL** プロパティに、スペース、セミコロン、またはラインフィードを追加できます。これらの余分な文字は、SQL ステートメントに新しい句を追加する前に取り除く必要があります。
+次の例では、**CopyQueryDef** メソッドを使用して、既存の **Recordset** オブジェクトから **QueryDef** オブジェクトのコピーを作成し、**SQL** プロパティに句を追加して、コピーを変更します。永続的な **QueryDef** オブジェクトを作成する場合、**SQL** プロパティに、スペース、セミコロン、またはラインフィードを追加できます。これらの余分な文字は、SQL ステートメントに新しい句を追加する前に取り除く必要があります。
 
 ```vb
     Function CopyQueryNew(rstTemp As Recordset, _ 
@@ -126,7 +127,7 @@ Microsoft Access ワークスペースの場合、Microsoft Access データベ�
 
 <br/>
 
-次に、CopyQueryNew() の使用例を示します。 
+次の例は、CopyQueryNew() の使用例を示しています。 
      
 ```vb
     Sub CopyQueryDefX() 
@@ -186,7 +187,7 @@ Microsoft Access ワークスペースの場合、Microsoft Access データベ�
 
 <br/>
 
-次の例では、 **CreateQueryDef** メソッドと **OpenRecordset** メソッド、および **SQL** プロパティを使用して、Microsoft SQL Server サンプル データベース Pubs の題名のテーブルをクエリし、最もよく売れている本の題名と題名識別子を返します。次に、著者のテーブルをクエリし、印税の割合に基づいてそれぞれの著者にボーナス小切手を送信するようユーザーに指示します (ボーナスの合計は 1,000 ドルで、それぞれの著者はこの金額から印税の割合に応じた額を受け取ります)。
+次の例では、**CreateQueryDef** メソッドと **OpenRecordset** メソッド、および **SQL** プロパティを使用して、Microsoft SQL Server サンプル データベース Pubs の題名のテーブルをクエリし、最もよく売れている本の題名と題名識別子を返します。次に、著者のテーブルをクエリし、印税の割合に基づいてそれぞれの著者にボーナス小切手を送信するようユーザーに指示します (ボーナスの合計は 1,000 ドルで、それぞれの著者はこの金額から印税の割合に応じた額を受け取ります)。
 
 ```vb
     Sub ClientServerX2() 
@@ -254,9 +255,9 @@ Microsoft Access ワークスペースの場合、Microsoft Access データベ�
 
 <br/>
 
-次の例は、パラメーター クエリを作成する方法を示します。 Param1 とパラメーター 2 という名前の 2 つのパラメーターには、 **myQuery**をという名前のクエリが作成されます。 これを行うには、クエリの SQL プロパティを、パラメーターを定義する構造化照会言語 (SQL) ステートメントに設定します。
+次の例は、パラメーター クエリを作成する方法を示しています。 Param1 および Param2 という名前の 2 つのパラメーターを使用して**myQuery**という名前のクエリを作成します。 これを行うには、パラメーターを定義する構造化照会言語 (SQL) ステートメントに、クエリの SQL プロパティを設定します。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 プログラマー用リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     Sub CreateQueryWithParameters()

@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 79c8691fcea7cf04bac7d6cd05711730b510e215
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28703945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300645"
 ---
 # <a name="recordsetaddnew-method-dao"></a>Recordset.AddNew メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 更新可能な **[Recordset](recordset-object-dao.md)** オブジェクトの新しいレコードを作成します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。AddNew
+*式* .AddNew
 
-*式***レコード セット**オブジェクトを表す変数です。
+*式* **Recordset** オブジェクトを表す変数。
 
 ## <a name="remarks"></a>注釈
 
@@ -53,7 +53,7 @@ ms.locfileid: "28703945"
 **AddNew** を使用する前のカレント レコードは、カレントのままになります。新しいレコードをカレントにするには、 **[Bookmark](recordset-bookmark-property-dao.md)** プロパティを **[LastModified](recordset-lastmodified-property-dao.md)** プロパティの設定によって識別されるブックマークに設定します。
 
 > [!NOTE]
-> [!メモ] レコードを追加、編集、削除するには、基になるデータ ソースのレコードに一意のインデックスが存在している必要があります。一意のインデックスが存在しない場合、Microsoft Access ワークスペースでは **AddNew** 、 **Delete** 、または **Edit** メソッドを呼び出したときに "アクセスが拒否されました。" のエラーが発生します。
+> [!メモ] レコードを追加、編集、削除するには、基になるデータ ソースのレコードに一意なインデックスが存在している必要があります。一意なインデックスが存在しない場合、Microsoft Access ワークスペースでは **AddNew**、 **Delete**、または **Edit** メソッドを呼び出したときに "アクセスが拒否されました。" のエラーが発生します。
 
 ## <a name="example"></a>例
 

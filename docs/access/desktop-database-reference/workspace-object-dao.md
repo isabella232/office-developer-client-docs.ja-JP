@@ -1,5 +1,5 @@
 ---
-title: ワークスペース オブジェクト (DAO)
+title: Workspace オブジェクト (DAO)
 TOCTitle: Workspace Object
 ms:assetid: bf3ab863-5e9a-4842-1f82-2ccf958d9779
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822782(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 2c734d5e0f022faec4ebb9efe2dfc2f7dd7b7979
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308359"
 ---
-# <a name="workspace-object-dao"></a>ワークスペース オブジェクト (DAO)
+# <a name="workspace-object-dao"></a>Workspace オブジェクト (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先**: Access 2013、Office 2013
 
 **Workspace** オブジェクトは、ユーザー用に名前付きセッションを定義します。これには開いているデータベースが含まれ、同時実行トランザクションのメカニズムを提供し、Microsoft Access ワークスペースの場合は、セキュリティが設定されたワークグループをサポートします。
 
@@ -32,7 +32,7 @@ ms.locfileid: "28711582"
 
 - **BeginTrans** 、 **CommitTrans** 、および **Rollback** の各メソッドを使用して、 **Workspace** 内のネストされたトランザクションの処理を管理し、複数の **Workspace** オブジェクトを使用して、複数のトランザクション、同時実行トランザクション、および重なり合うトランザクションを実行します。
 
-最初を参照してくださいか、**ワークスペース**オブジェクトを使用して、DBEngine.Workspaces(0)、既定のワークスペースを自動的に作成します。 既定のワークスペースの**名前**と**ユーザー名**のプロパティの設定は、"\#既定のワークスぺース\#」と「Admin」に、それぞれ。 セキュリティが有効になっている場合、 **UserName** プロパティの設定はログオンしたユーザーの名前になります。
+**Workspace** オブジェクトを初めて参照または使用すると、自動的に既定のワークスペース DBEngine.Workspaces(0) が作成されます。 この既定のワークスペースの **Name** プロパティと **UserName** プロパティの設定は、"\#Default Workspace\#" と "Admin" です。 セキュリティが有効になっている場合、 **UserName** プロパティの設定はログオンしたユーザーの名前になります。
 
 トランザクションを使用する場合、 **Workspace** オブジェクトで複数の **Database** オブジェクトが開かれていると、指定した **Workspace** オブジェクトのすべてのデータベースが影響を受けます。たとえば、 **BeginTrans** メソッドを使用し、あるデータベースの複数のレコードを更新した後、別のデータベースのレコードを削除します。次に、 **Rollback** メソッドを使用すると、更新と削除の両方の操作がキャンセルされ、ロールバックされます。複数の **Database** オブジェクトにまたがってトランザクションを個別に管理するには、追加の **Workspace** オブジェクトを作成します。
 
@@ -42,11 +42,11 @@ ms.locfileid: "28711582"
 
 コレクション内の **Workspace** オブジェクトを、コレクションで付けられたインデックスまたは **Name** プロパティの設定値で参照するには、次のいずれかの構文を使います。
 
-**DBEngine**。**ワークスペース**(0)
+**DBEngine**.**Workspaces**(0)
 
-**DBEngine**。**ワークスペース**("name")
+**DBEngine**.**Workspaces**("name")
 
-**DBEngine**。**ワークスペース**\!\[名\]
+**DBEngine**.**Workspaces**\!\[name\]
 
 > [!NOTE]
 > [!メモ] Microsoft Access 2013 では、ODBCDirect ワークスペースはサポートされていません。Microsoft Access データベース エンジンを使用しないで外部データ ソースにアクセスする場合は、ADO を使用してください。
@@ -132,7 +132,7 @@ End Sub
 
 次の例は、DAO (Data Access Objects) ワークスペース内でトランザクションを使用する方法を示します。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 
 ```vb
