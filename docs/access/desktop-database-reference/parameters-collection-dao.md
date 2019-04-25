@@ -1,5 +1,5 @@
 ---
-title: Parameters コレクション (DAO)
+title: パラメーター コレクション (DAO)
 TOCTitle: Parameters Collection
 ms:assetid: 52fc1ce4-7b3e-152d-7b6a-9c32a6470147
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff193967(v=office.15)
@@ -8,21 +8,21 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: 09f60cb8dde407aacbb19e6b2124151dbbf9b3c5
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28721746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32287896"
 ---
-# <a name="parameters-collection-dao"></a>Parameters コレクション (DAO)
+# <a name="parameters-collection-dao"></a>パラメーター コレクション (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-**Parameters** コレクションには、 **QueryDef** オブジェクトのすべての **Parameter** オブジェクトが含まれます。
+**Parameters** コレクションには、**QueryDef** オブジェクトのすべての **Parameter** オブジェクトが含まれます。
 
 ## <a name="remarks"></a>説明
 
-**Parameters** コレクションには、既存のパラメーターに関する情報のみが含まれます。 **Parameters** コレクションでは、オブジェクトの追加や削除はできません。
+**Parameters** コレクションには、既存のパラメーターに関する情報のみが含まれます。**Parameters** コレクションでは、オブジェクトの追加や削除はできません。
 
 ## <a name="example"></a>例
 
@@ -94,9 +94,9 @@ ms.locfileid: "28721746"
 
 <br/>
 
-次の例は、パラメーター クエリを作成する方法を示します。 Param1 とパラメーター 2 という名前の 2 つのパラメーターには、 **myQuery**をという名前のクエリが作成されます。 これを行うには、クエリの SQL プロパティを、パラメーターを定義する構造化照会言語 (SQL) ステートメントに設定します。
+次の例は、パラメーター クエリを作成する方法を示しています。 Param1 および Param2 という名前の 2 つのパラメーターを使用して**myQuery**という名前のクエリを作成します。 これを行うには、クエリの SQL プロパティは、パラメーターを定義する、構造化照会言語 (SQL) ステートメントに設定されます。
 
-**によって提供されるサンプル コード**を[Microsoft Access 2010 プログラマーズ リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)です。
+**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     Sub CreateQueryWithParameters()
@@ -123,7 +123,7 @@ ms.locfileid: "28721746"
 
 <br/>
 
-次の例は、パラメーター クエリを実行する方法を示します。クエリを実行する前に Parameters コレクションを使用して myActionQuery クエリの Organization パラメーターを設定します。
+次の例は、パラメーター クエリを実行する方法を示しています。 パラメーターのコレクションを使用して、クエリを実行する前に、 myActionQuery クエリの組織のパラメーターを設定します。
 
 ```vb
     Public Sub ExecParameterQuery()
@@ -150,7 +150,7 @@ ms.locfileid: "28721746"
 
 <br/>
 
-次の例は、パラメーター クエリに基づく Recordset を開く方法を示します。
+次の例は、パラメーター クエリに基づいた Recordset を開く方法を示しています。
 
 ```vb
     Dim dbs As DAO.Database

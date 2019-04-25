@@ -1,5 +1,5 @@
 ---
-title: Microsoft Active X データ オブジェクト (ADO) リファレンス
+title: Microsoft ActiveX データ オブジェクト リファレンス
 TOCTitle: Microsoft ActiveX Data Objects Reference
 ms:assetid: 235fc575-8a2e-913c-fa3d-bb86256733f9
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249010(v=office.15)
@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: c1fee657c0d6ecd319157f704df2b1c5a900be3b
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28698884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289120"
 ---
-# <a name="microsoft-activex-data-objects-reference"></a>Microsoft Active X データ オブジェクト (ADO) リファレンス
+# <a name="microsoft-activex-data-objects-reference"></a>Microsoft ActiveX データ オブジェクト リファレンス
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-## <a name="purpose"></a>目的
+## <a name="purpose"></a>用途
 
-Microsoft ActiveX Data Objects (ADO) により、クライアント アプリケーションが、OLE DB プロバイダーを通じてデータベース サーバーのデータにアクセスし、これを操作できるようになります。 ADO の主な利点は、使用が簡単で、高速に動作し、メモリのオーバーヘッドが小さく、ディスクの使用量が少ないことです。 ADO には、クライアント/サーバーおよび web ベースのアプリケーションを構築するための主要な機能がサポートされています。
+Microsoft ActiveX Data Objects (ADO) により、クライアント アプリケーションが、OLE DB プロバイダーを通じてデータベース サーバーのデータにアクセスし、これを操作できるようになります。 ADO の主な利点は、使用が簡単で、高速に動作し、メモリのオーバーヘッドが小さく、ディスクの使用量が少ないことです。 ADO では、クライアント/サーバー アプリケーションおよび Web ベース アプリケーションを構築するための重要な機能がサポートされています。
 
 ## <a name="rds"></a>RDS
 
-ADO では、リモート データ サービス (RDS) をサーバーからクライアント アプリケーションまたは web ページへのデータは、クライアント上のデータを操作し、ラウンド トリップで 1 つのサーバーに更新プログラムを返すを移動することができますが機能もあります。
+ADO は、リモート データ サービス (RDS) の機能も備えています。これにより、データをサーバーからクライアント アプリケーションまたは Web ページへ移動し、クライアント側でデータを操作し、更新をサーバーに送り返すという操作を、1 回の往復処理で実行できます。
 
 ## <a name="ado-md"></a>ADO MD
 
@@ -38,11 +38,11 @@ Microsoft ActiveX Data Objects Extensions for Data Definition Language and Secur
 
 ADOX は、ADO のコア オブジェクトに添付されるライブラリで、テーブルやプロシージャなどのスキーマ オブジェクトを作成、修正、および削除するための追加のオブジェクトを公開します。また、ユーザーとグループを管理したり、オブジェクトに対する権限を付与および削除したりするためのセキュリティ オブジェクトも備えています。
 
-## <a name="ado-25-main-components"></a>ADO 2.5 の主要なコンポーネント
+## <a name="ado-25-main-components"></a>ADO 2.5 メイン コンポーネント
 
-- [プログラマ ガイド」](ado-programmer-s-guide.md): ADO、RDS、ADO MD、および ADOX を使用しています。
+- [プログラマー ガイド](ado-programmer-s-guide.md): ADO、RDS、ADO MD、および ADOX の使用方法の概要について説明します。
 
-- [プログラマーズ リファレンス](ado-programmer-s-reference-topics.md): ADO のドキュメントのこのセクションには、各 ADO、RDS、ADO MD、および ADOX オブジェクト、コレクション、プロパティ、動的プロパティ、メソッド、イベント、および列挙に関するトピックが含まれています。
+- [Programmer's reference](ado-programmer-s-reference-topics.md): この ADO のドキュメントのセクションには、ADO、RDS、ADO MD、および ADOX の各オブジェクト、コレクション、プロパティ、動的プロパティ、メソッド、イベント、および列挙型に関するトピックが含まれています。
 
 ## <a name="feedback"></a>フィードバック
 
