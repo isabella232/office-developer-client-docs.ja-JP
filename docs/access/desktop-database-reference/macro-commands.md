@@ -1,5 +1,5 @@
 ---
-title: マクロ コマンド (デスクトップ データベース参照のアクセス)
+title: マクロ コマンド (Access デスクトップ データベース リファレンス)
 TOCTitle: Macro commands
 ms:assetid: 24e7f34d-7902-4644-bb67-33689d9895c0
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn124057(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: e0454b876b8d81d929252b1561ecb881afe230c6
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28715061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32289799"
 ---
 # <a name="macro-commands"></a>マクロ コマンド
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 - [CancelEvent マクロ アクション](cancelevent-macro-action.md)
 - [Echo マクロ アクション](echo-macro-action.md)
