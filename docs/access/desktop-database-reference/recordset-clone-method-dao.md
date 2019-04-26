@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: ecc5592893c1caee16f0a00687ce50f68b05e9c7
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300659"
 ---
 # <a name="recordsetclone-method-dao"></a>Recordset.Clone メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-元の [Recordset](recordset-object-dao.md) オブジェクトを参照する、複数の ****Recordset**** オブジェクトを作成します。
+元の **Recordset** オブジェクトを参照する、複数の **[Recordset](recordset-object-dao.md)** オブジェクトを作成します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。クローン
+*expression* .Clone
 
-*式***レコード セット**オブジェクトを表す変数です。
+*expression*: **Recordset** オブジェクトを表す変数。
 
 ## <a name="return-value"></a>戻り値
 
@@ -36,19 +36,20 @@ Recordset
 
 ## <a name="remarks"></a>解説
 
-**Clone** メソッドを使用して、複数の重複した **Recordset** オブジェクトを作成します。各 **Recordset** には、それぞれのカレント レコードを指定できます。 **Clone** メソッドを使用するだけでは、オブジェクトおよびその基になる構造のデータは変更されません。 **Clone** メソッドを使用すると、交換可能なブックマークを使用できるので、複数の **Recordset** オブジェクトでブックマークを共有できます。
 
-複数のカレント レコードを必要とする **Recordset** に操作を実行する場合は、 **Clone** メソッドを使用します。この方法は、2 つ目の **Recordset** を開くより高速で効率的です。 **Clone** メソッドを使用して **Recordset** を作成すると、最初はカレント レコードがありません。 **Recordset** のクローンを使用する前にカレント レコードを指定するには、 **[Bookmark](recordset-bookmark-property-dao.md)** プロパティを設定するか、または **[Move](recordset-movefirst-method-dao.md)** メソッドの 1 つ、 **[Find](recordset-findfirst-method-dao.md)** メソッドの 1 つ、または **[Seek](recordset-seek-method-dao.md)** メソッドを使用する必要があります。
+            **Clone** メソッドを使用して、複数の重複した **Recordset** オブジェクトを作成します。各 **Recordset** には、それぞれのカレント レコードを指定できます。**Clone** メソッドを使用するだけでは、オブジェクトおよびその基になる構造のデータは変更されません。**Clone** メソッドを使用すると、交換可能なブックマークを使用できるので、複数の **Recordset** オブジェクトでブックマークを共有できます。
+
+複数のカレント レコードを必要とする **Recordset** に操作を実行する場合は、**Clone** メソッドを使用します。この方法は、2 つ目の **Recordset** を開くより高速で効率的です。**Clone** メソッドを使用して **Recordset** を作成すると、最初はカレント レコードがありません。**Recordset** のクローンを使用する前にカレント レコードを指定するには、**[Bookmark](recordset-bookmark-property-dao.md)** プロパティを設定するか、または **[Move](recordset-movefirst-method-dao.md)** メソッドの 1 つ、**[Find](recordset-findfirst-method-dao.md)** メソッドの 1 つ、または **[Seek](recordset-seek-method-dao.md)** メソッドを使用する必要があります。
 
 元のオブジェクトまたは複製されたオブジェクトのいずれかに **[Close](connection-close-method-dao.md)** メソッドを使用しても、他方のオブジェクトに影響はありません。たとえば、元の **Recordset** オブジェクトに **Close** メソッドを使用しても、クローンは閉じません。
 
 > [!NOTE]
-> - 保留中のトランザクションで複製レコードセットを閉じると、 **Rollback** 操作が暗黙的に実行されます。
-> - Microsoft Access ワークスペースでテーブル タイプの **Recordset** オブジェクトを複製した場合、 **[Index](recordset2-index-property-dao.md)** プロパティの設定はレコードセットの新しいコピーに反映されません。このため、 **Index** プロパティの設定を手動でコピーする必要があります。
+> - 保留中のトランザクション内でクローンのレコードセットを閉じると、暗黙の **Rollback** 操作が実行されます。
+> - Microsoft Access ワークスペースでテーブル タイプの **Recordset** オブジェクトのクローンを作成する場合、レコードセットの新しいコピーに **[Index](recordset2-index-property-dao.md)** プロパティの設定は複製されません。**Index** プロパティの設定は手動でコピーする必要があります。
 
 ## <a name="example"></a>例
 
-この例では、 **Clone** メソッドを使用して **Recordset** のコピーを作成し、ユーザーが各コピーのレコード ポインターを個別に配置できるようにします。
+この例では、**Clone** メソッドを使用して **Recordset** のコピーを作成し、ユーザーが各コピーのレコード ポインターを個別に配置できるようにします。
 
 ```vb
     Sub CloneX() 

@@ -1,5 +1,5 @@
 ---
-title: Recordset のメソッド (DAO)
+title: Recordset メソッド (DAO)
 TOCTitle: Methods
 ms:assetid: 8b713eda-b076-4190-b2f5-ff1ce522e2bf
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn125237(v=office.15)
@@ -8,15 +8,15 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: bf064212e71019f303b6fa7e9bb9360306dfa3c8
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28706323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32300484"
 ---
-# <a name="recordset-methods-dao"></a>Recordset のメソッド (DAO)
+# <a name="recordset-methods-dao"></a>Recordset メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 - [Recordset.AddNew メソッド (DAO)](recordset-addnew-method-dao.md)
 - [Recordset.Cancel メソッド (DAO)](recordset-cancel-method-dao.md)
@@ -35,7 +35,7 @@ ms.locfileid: "28706323"
 - [Recordset.Move メソッド (DAO)](recordset-move-method-dao.md)
 - [Recordset.MoveFirst メソッド (DAO)](recordset-movefirst-method-dao.md)
 - [Recordset.MoveLast メソッド (DAO)](recordset-movelast-method-dao.md)
-- [Recordset.MoveNext メソッド (DAO)](recordset-movenext-method-dao.md)
+- [ Recordset.MoveNext メソッド (DAO)](recordset-movenext-method-dao.md)
 - [Recordset.MovePrevious メソッド (DAO)](recordset-moveprevious-method-dao.md)
 - [Recordset.NextRecordset メソッド (DAO)](recordset-nextrecordset-method-dao.md)
 - [Recordset.OpenRecordset メソッド (DAO)](recordset-openrecordset-method-dao.md)
