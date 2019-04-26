@@ -7,11 +7,11 @@ ms.assetid: 2cfa5a6e-2f5c-440c-b35a-bc7a34648f9c
 description: Project Server 2013 は、SharePoint ファーム全体のプロジェクト管理機能を統合し、クライアント側オブジェクト モデル (CSOM) とレポート データ用の OData インターフェイスを持つ Project Online の使用を可能にします。
 localization_priority: Priority
 ms.openlocfilehash: db4dd0eed9c043021f586041fa0e28708fdbd243
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301603"
 ---
 # <a name="project-server-architecture"></a>Project Server のアーキテクチャ
 
@@ -97,9 +97,9 @@ Project Server がサイト コレクションと関連付けられていて、�
 
 図 3 には、次の一般的な説明が該当します。
   
-- **Project Online:** CSOM、REST、および OData インターフェイスを使用するアプリケーションを作成できます。 アプリケーション パッケージで、ローカル サーバー、Azure サーバー、または Microsoft Azure のカスタム Web サービスにリモート イベント レシーバーもインストールできます。 Project Online は、サードパーティのオンプレミス ソリューション、WCF インターフェイス、ASMX インターフェイス、またはローカル イベント ハンドラーのいずれもサポートしていません。 
+- **Project Online:** CSOM、REST、および OData インターフェイスを使用するアプリケーションを作成できます。アプリケーション パッケージで、ローカル サーバー、Azure サーバー、または Microsoft Azure のカスタム Web サービスにリモート イベント レシーバーもインストールできます。 Project Online は、サードパーティのオンプレミス ソリューション、WCF インターフェイス、ASMX インターフェイス、またはローカル イベント ハンドラーのいずれもサポートしていません。 
     
-- **イベント レシーバー:** イベント レシーバーはイベント ハンドラーとも呼ばれます。 Project Online は、クラウド内の Project Web App インスタンスやオンプレミスの Project Server インストールが使用できるリモートの Project Server イベント レシーバーの登録をサポートしています。 オンプレミスの Project Server インストールは、リモートのイベント レシーバーとローカルの完全信頼イベント ハンドラーをサポートしています。 
+- **イベント レシーバー:** イベント レシーバーはイベント ハンドラーとも呼ばれます。Project Online は、クラウド内の Project Web App インスタンスやオンプレミスの Project Server インストールが使用できるリモートの Project Server イベント レシーバーの登録をサポートしています。オンプレミスの Project Server インストールは、リモートのイベント レシーバーとローカルの完全信頼イベント ハンドラーをサポートしています。 
     
 - **ブラウザー:** Project Server 2010 とは違い、Project Web App ページの表示に関してブラウザー間の制限はありません。 Project Web App では、以下のブラウザーのすべての機能の使用がサポートされています。 
     
@@ -128,7 +128,7 @@ Project Server がサイト コレクションと関連付けられていて、�
     
 - **SharePoint Web サービス:** 図 3 では、SharePoint Server 2013 に含まれるバックエンド SharePoint Web サービス アプリケーションなどの SharePoint インフラストラクチャは示されていません。 Project Server のインストール時に Project サービス アプリケーションが SharePoint Web サービスに追加されます。 
     
-フロントエンド層には、サードパーティ アプリケーション、Project Professional、および Project Web App が含まれます。 ブラウザーには Project Web App の ASP.NET 4.0 のページ (.aspx ページ) が表示されます。 Project Web App のページでは、PSI と通信する Project Server Web パーツを使用し、標準の SharePoint Web パーツも使用します。 
+フロントエンド層には、サードパーティ アプリケーション、Project Professional、および Project Web App が含まれます。ブラウザーには Project Web App の ASP.NET 4.0 のページ (.aspx ページ) が表示されます。Project Web App のページでは、PSI と通信する Project Server Web パーツを使用し、標準の SharePoint Web パーツも使用します。 
   
 中間層に含まれるのは、PSI と、Project Server のビジネス エンティティを表す論理オブジェクトから成るビジネス オブジェクト レイヤーです。 ビジネス エンティティには、プロジェクト、タスク、リソース、割り当てなどが含まれます。 PSI とビジネス オブジェクト層は密接に結び付いていて、同じサーバー上にあります。 使用可能ないずれかのインターフェイスからクライアント アプリケーションが PSI を呼び出すと、PSI はビジネス オブジェクトを呼び出します。 パフォーマンスを向上させるため、Project Server 2013 の WFE は、Project Server のキュー システムを使用しない要求、または Project Calculation Service を必要としない要求でビジネス オブジェクトを含めています。 WFE のビジネス オブジェクトは、Project データベースと直接通信します。
   
@@ -141,7 +141,7 @@ Project Server の Project Web App コンポーネントは、プロジェクト
   
 - リモート クライアントからの PSI への呼び出しを最適化します。
     
-- Project Server Queue Service を必要とする PSI の呼び出しと、必要としない呼び出しを区別します。非同期 PSI メソッドの名前は Queue で始まります (**QueueCreateProject** など)。
+- Project Server Queue Service を必要とする PSI 呼び出しと必要としない PSI 呼び出しを区別します。 非同期 PSI メソッドの名前は、**QueueCreateProject** のように Queue で始まります。
     
 - 登録されているローカルのイベント ハンドラーを呼び出す PSI 呼び出しを識別します。
     

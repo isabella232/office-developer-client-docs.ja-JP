@@ -14,21 +14,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: f842e662f2576d8aab5f3857877f45e380d3d3b0
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28716251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314701"
 ---
 # <a name="union-operation-microsoft-access-sql"></a>UNION 操作 (Microsoft Access SQL)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 ユニオン クエリを作成します。ユニオン クエリとは、独立した複数のクエリまたはテーブルの結果を結合するクエリのことです。
 
 ## <a name="syntax"></a>構文
 
-\[テーブル\] *"クエリ 1"* UNION\[すべて\]\[テーブル\] *query2* \[和\[すべて\]\[テーブル\] *queryn* \[ . \]\]
+\[TABLE\] *query1* UNION \[ALL\] \[TABLE\] *query2* \[UNION \[ALL\] \[TABLE\] *queryn* \[ … \]\]
 
 UNION 操作には、次の指定項目があります。
 
@@ -39,7 +39,7 @@ UNION 操作には、次の指定項目があります。
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>指定項目</p></th>
+<th><p>パーツ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
@@ -52,9 +52,9 @@ UNION 操作には、次の指定項目があります。
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-1 回の UNION 操作で、複数のクエリ、テーブル、および SELECT ステートメントの結果を、任意の組み合わせで結合することができます。次の例では、"New Accounts" という既存のテーブルと SELECT ステートメントを結合します。
+2 つ以上のクエリ、テーブル、SELECT ステートメントの結果を結合し、1 つの UNION 操作を作成できます。次の例は、「New Accounts」という名前の既存テーブルと SELECT ステートメントを結合したものです。
 
 ```sql
 TABLE [New Accounts] UNION ALL 
@@ -67,15 +67,15 @@ UNION 操作を使用する場合、特に指定しなければ重複したレ�
 
 UNION 操作でクエリが要求するフィールドの数は、すべてのクエリで同じである必要があります。ただし、フィールドのサイズやデータ型は同じである必要はありません。
 
-別名は、先頭の SELECT ステートメントでのみ使用してください。これ以外の場所では無視されます。ORDER BY 句の中では、先頭の SELECT 句で使用しているフィールド名を使用してください。
+エイリアスは最初の SELECT ステートメントでのみ使用します。他のステートメントでは無視されます。ORDER BY 句では、最初の SELECT ステートメントで呼ばれている名前でフィールドが参照されます。
 
 > [!NOTE]
-> - 各*クエリ*の引数で、 [GROUP BY](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql)句または[HAVING](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/having-clause-microsoft-access-sql)句を使用すると、返されたデータをグループ化します。
-> - *クエリ*の最後の引数の最後に指定された順序で返されるデータを表示するのには[ORDER BY](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/order-by-clause-microsoft-access-sql)句を使用できます。
+> - 引数 *query* のそれぞれのクエリ中で [GROUP BY](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql) 句や [HAVING](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/having-clause-microsoft-access-sql) 句を使用すると、返されるデータをグループ化できます。
+> - 引数 *query* の末尾に指定するクエリで [ORDER BY](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/order-by-clause-microsoft-access-sql) 句を使用すると、返されるデータを指定の順序で表示できます。
 
 ## <a name="example"></a>例
 
-次の使用例では、ブラジル国内のすべての仕入先および得意先の名前と都市名を取得します。 SELECT ステートメントの例で表示できる、EnumFields プロシージャを呼び出します。
+次の使用例では、ブラジル国内のすべての仕入先および得意先の名前と都市名を取得します。 EnumFields プロシージャを呼び出しますが、このプロシージャについては、SELECT ステートメントの使用例を参照してください。
 
 ```vb
     Sub UnionX() 

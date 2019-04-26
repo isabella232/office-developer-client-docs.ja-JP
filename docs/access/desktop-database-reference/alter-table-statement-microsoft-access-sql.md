@@ -14,26 +14,26 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: b8bd9abac3aee8be8fe52e555fcd5247e804f258
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28701600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32297159"
 ---
 # <a name="alter-table-statement-microsoft-access-sql"></a>ALTER TABLE ステートメント (Microsoft Access SQL)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 [CREATE TABLE](create-table-statement-microsoft-access-sql.md) ステートメントで作成されたテーブルのデザインを変更します。
 
 > [!NOTE]
-> [!メモ] Microsoft Access データベース エンジンは、Microsoft Access データベース以外のデータベースの ALTER TABLE または DDL (データ定義言語) ステートメントをサポートしません。 代わりに DAO の**Create**メソッドを使用します。
+> [!メモ] Microsoft Access データベース エンジンは、Microsoft Access データベース以外のデータベースの ALTER TABLE または DDL (データ定義言語) ステートメントをサポートしません。 代わりに、DAO の **Create** メソッドをご使用ください。
 
 ## <a name="syntax"></a>構文
 
-*テーブル*の ALTER TABLE {追加 {*フィールド型*の列の\[(*サイズ*)\] \[NOT NULL\] \[制約*インデックス*\] |ALTER COLUMN*フィールド型*\[(*サイズ*)\] |制約*multifieldindex*} |ドロップ {列の*フィールド*に制約*indexname*}}
+ALTER TABLE *table* {ADD {COLUMN *field type*\[(*size*)\] \[NOT NULL\] \[CONSTRAINT *index*\] | ALTER COLUMN *field type*\[(*size*)\] | CONSTRAINT *multifieldindex*} | DROP {COLUMN *field* I CONSTRAINT *indexname*} }
 
-ALTER TABLE ステートメントには、次の指定項目があります。
+ALTER TABLE ステートメントでは、次の引数を使用します。
 
 <table>
 <colgroup>
@@ -42,77 +42,77 @@ ALTER TABLE ステートメントには、次の指定項目があります。
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>指定項目</p></th>
+<th><p>パーツ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><em>table</em></p></td>
-<td><p>変更するテーブルの名前。</p></td>
+<td><p>変更されるテーブルの名前です。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>field</em></p></td>
-<td><p>引数 table に追加、または引数 table から削除するフィールドの名前。または、table で変更するフィールドの名前。</p></td>
+<td><p><em>table</em> に対して追加または削除されるフィールドの名前です。 または、<em>table</em> で変更されるフィールドの名前です。</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>type</em></p></td>
-<td><p>引数 <em>field</em> のデータ型。</p></td>
+<td><p>
+            <em>field</em> のデータ型です。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>size</em></p></td>
-<td><p>バイト数で表したフィールド サイズ。テキスト型 (Text) およびバイナリ型 (Binary) フィールドのみ指定します。</p></td>
+<td><p>文字数単位のフィールド サイズです (テキスト型とバイナリ型のフィールドのみ)。</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>index</em></p></td>
-<td><p><em>フィールド</em>のインデックス。 このインデックスを構築する方法の詳細については、<a href="constraint-clause-microsoft-access-sql.md">制約句</a>を参照してください。</p></td>
+<td><p><em>field</em> のインデックスです。 このインデックスの作成方法については、「<a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT 句</a>」を参照してください。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>multifieldindex</em></p></td>
-<td><p><em>テーブル</em>に追加する複数フィールド インデックスの定義です。 このインデックスを構築する方法の詳細については、<a href="constraint-clause-microsoft-access-sql.md">制約句</a>を参照してください。</p></td>
+<td><p><em>table</em> に追加される複数フィールド インデックス定義です。 このインデックスの作成方法については、「<a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT 句</a>」を参照してください。</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>indexname</em></p></td>
-<td><p>削除する複数フィールド インデックスの名前。</p></td>
+<td><p>削除される複数フィールド インデックスの名前です。</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-ALTER TABLE ステートメントを使用すると、いくつかの方法で既存のテーブルを変更できます。 次の操作を実行できます。
+ALTER TABLE ステートメントを使用すると、いくつかの方法で既存のテーブルを変更できます。 以下のことが実行できます。
 
-- テーブルに新しいフィールドを追加するには、ADD COLUMN 句を使用します。フィールド名およびデータ型を指定し、テキスト型フィールドとバイナリ型フィールドの場合はサイズ (省略可) も指定します。たとえば、次のステートメントにより、"Notes" という名前の 25 バイトのテキスト型フィールドが Employees テーブルに追加されます。
+- ADD COLUMN を使用して新しいフィールドをテーブルに追加します。フィールド名、データ型、および (テキスト型とバイナリ型のフィールドの場合) 省略可能なサイズを指定します。たとえば、次のステートメントでは、Notes という 25 文字のテキスト型フィールドを Employees テーブルに追加します。
     
   ```sql
     ALTER TABLE Employees ADD COLUMN Notes TEXT(25)
   ```
     
-  また、追加したフィールドにインデックスを定義することもできます。 単一フィールド インデックスの詳細については、[制約句](constraint-clause-microsoft-access-sql.md)を参照してください。
+  そのフィールドにインデックスを定義することもできます。 単一フィールド インデックスの詳細については、「[CONSTRAINT 句](constraint-clause-microsoft-access-sql.md)」を参照してください。
     
-  フィールドに対して NOT NULL を指定すると、新しいレコードは、そのフィールドに有効なデータが存在する必要があります。
+  フィールドに対して NOT NULL を指定した場合、フィールドには新しいレコードが有効なデータとして必要になります。
 
-- 既存のフィールドのデータ型を変更するには、ALTER COLUMN 句を使用します。フィールド名および新しいデータ型を指定し、テキスト型フィールドとバイナリ型フィールドの場合はサイズ (省略可) も指定します。たとえば、次のステートメントでは、Employees テーブルにある "ZipCode" という名前のフィールドのデータ型を整数型から 10 バイトのテキスト型に変更します。
+- 既存のフィールドのデータ型を変更するには、ALTER COLUMN を使用します。フィールド名、新しいデータ型、および (テキスト型とバイナリ型のフィールドの場合) 省略可能なサイズを指定します。たとえば、次のステートメントでは、Employees テーブルの ZipCode というフィールドの (元は整数として定義されていた) データ型を 10 文字のテキスト型フィールドに変更しています。
     
   ```sql
     ALTER TABLE Employees ALTER COLUMN ZipCode TEXT(10)
   ```
 
-- 複数フィールド インデックスを追加するには、ADD CONSTRAINT 句を使用します。 複数フィールド インデックスの詳細については、[制約句](constraint-clause-microsoft-access-sql.md)を参照してください。
+- 複数フィールド インデックスを追加するには、ADD CONSTRAINT を使用します。 複数フィールド インデックスの詳細については、「[CONSTRAINT 句](constraint-clause-microsoft-access-sql.md)」を参照してください。
 
-- フィールドを削除するには、DROP COLUMN 句を使用します。フィールド名のみを指定します。
+- フィールドを削除するには、DROP COLUMN を使用します。フィールドの名前のみを指定します。
 
-- 複数フィールド インデックスを削除するには、DROP CONSTRAINT 句を使用します。予約語 CONSTRAINT の後にインデックス名のみを指定します。
+- 複数フィールド インデックスを削除するには、DROP CONSTRAINT を使用します。予約語の CONSTRAINT に続けて、インデックス名のみを指定します。
 
 
 > [!NOTE] 
-> - 一度に複数のフィールドおよびインデックスを追加または削除することはできません。
+> - 同時に複数のフィールドまたはインデックスを追加または削除することはできません。
 > - [CREATE INDEX](create-index-statement-microsoft-access-sql.md) ステートメントを使用すると、単一フィールド インデックスまたは複数フィールド インデックスをテーブルに追加できます。また、ALTER TABLE ステートメントや CREATE INDEX ステートメントで作成したインデックスは、ALTER TABLE ステートメントまたは [DROP](drop-statement-microsoft-access-sql.md) ステートメントを使用して削除できます。
-> - NOT NULL は、単一フィールド、または名前付き CONSTRAINT 句の内部で使用できます。名前付き CONSTRAINT 句は、単一フィールドまたは複数フィールドのどちらかの名前付き CONSTRAINT 句に適用されます。ただし、NOT NULL の制約を適用できるのはフィールドに対して一度のみです。再度適用しようとした場合は実行時エラーになります。 
+> - NOT NULL を 1 つのフィールドまたは名前付きの CONSTRAINT 句内で使用し、CONSTRAINT という名前の 1 つのフィールドまたは複数のフィールドに適用することができます。 ただし、フィールドに NOT NULL 制限を 1 回だけ適用することができます。 この制限を複数回実行しようすると、実行時エラーになります。
 
-
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 次の使用例では、データ型が通貨型 ( **Money** ) である Salary フィールドを Employees テーブルに追加します。
 

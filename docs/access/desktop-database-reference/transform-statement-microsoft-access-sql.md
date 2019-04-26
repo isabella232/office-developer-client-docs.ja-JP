@@ -1,5 +1,5 @@
 ---
-title: ステートメント (Microsoft Access SQL) を変換します。
+title: TRANSFORM ステートメント (Microsoft Access SQL)
 TOCTitle: TRANSFORM statement (Microsoft Access SQL)
 ms:assetid: 419770b1-c833-959d-a84d-56c68764799f
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192901(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 9abe91d4ce6996a725e246da6922015d15a8bd39
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28711960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314043"
 ---
-# <a name="transform-statement-microsoft-access-sql"></a>ステートメント (Microsoft Access SQL) を変換します。
+# <a name="transform-statement-microsoft-access-sql"></a>TRANSFORM ステートメント (Microsoft Access SQL)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
 クロス集計クエリを作成します。
 
 ## <a name="syntax"></a>構文
 
-*Aggfunctionselectstatement*ピボット*ピボット フィールド*の変換\[IN (*値 1*\[、 *value2*\[、.\]\])\]
+TRANSFORM *aggfunctionselectstatement* PIVOT *pivotfield* \[IN (*value1*\[, *value2*\[, …\]\])\]
 
-TRANSFORM ステートメントには、次の指定項目があります。
+TRANSFORM ステートメントでは、次の引数を使用します。
 
 <table>
 <colgroup>
@@ -37,7 +37,7 @@ TRANSFORM ステートメントには、次の指定項目があります。
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>指定項目</p></th>
+<th><p>パーツ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
@@ -56,18 +56,18 @@ TRANSFORM ステートメントには、次の指定項目があります。
 </tr>
 <tr class="even">
 <td><p><em>value1</em>, <em>value2</em></p></td>
-<td><p>列見出しを作成するために使用する固定値。</p></td>
+<td><p>列見出しの作成に使用する固定値。</p></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 クロス集計クエリを使用してデータをまとめる場合は、指定したフィールドや式の値を列見出しとして使用できます。このため、選択クエリよりも簡潔な書式でデータを表示できます。
 
 TRANSFORM ステートメントは省略可能ですが、指定する場合は SQL 文字列の先頭に記述します。行見出しとして使用するフィールドを指定する SELECT ステートメントや、行のグループ化を指定する [GROUP BY](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql) 句よりも前に記述します。抽出条件や並べ替えを指定する [WHERE](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql) 句などの句を併用することもできます。さらに、クロス集計クエリの中でサブクエリを述語 (特に WHERE 句の中の述語) として使用することもできます。
 
-引数 *pivotfield* に返された値は、クエリ結果の列見出しに使用されます。たとえば、クロス集計クエリで月間の売上総額を列に指定する場合は、12 個の列を作成します。また、IN 句 (省略可能) に固定値 (引数 *value1*、*value2*) を指定して、列見出しとなる引数 *pivotfield* の値を制限することもできます。さらに、対応するデータのない固定値を指定して、列を追加することもできます。
+*pivotfield* に返される値は、クエリの結果セットの列見出しとして使用されます。 たとえば、クロス集計クエリで販売月別の売上高をピボットすることで 12 の列が作成されます。 *pivotfield* を制限して、オプションの IN 句でリストされた固定値 (*value1*、*value2*) から見出しを作成できます。 追加の列を作成するため、データが存在しない固定値を含めることもできます。
 
 ## <a name="example"></a>例
 

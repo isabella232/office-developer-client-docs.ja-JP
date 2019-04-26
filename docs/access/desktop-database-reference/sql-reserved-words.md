@@ -1,5 +1,5 @@
 ---
-title: SQL の予約語 (デスクトップ データベース参照のアクセス)
+title: SQL 予約語 (Access デスクトップ データベース リファレンス)
 TOCTitle: SQL reserved words
 ms:assetid: 1a074927-64df-d645-99ce-95d9826c5a46
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845663(v=office.15)
@@ -12,23 +12,23 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 43fa81fa2f175c7b67c5de4cfda5158cc067bbac
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32308562"
 ---
 # <a name="sql-reserved-words"></a>SQL 予約語
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-次の一覧は、Microsoft Access データベース エンジンが SQL ステートメント用に予約しているすべての予約語を示したものです。 
+次のリストには、SQL ステートメントで使用するために Microsoft Access データベース エンジンによって予約されているすべての単語が含まれています。 
 
-- 一覧の中で小文字が含まれている予約語は、他のアプリケーションの予約語でもあります。 このため、これらの予約語の個々のヘルプ トピックには、SQL での使用とは関係のない一般的な説明も含まれています。
+- すべて大文字でないリスト内の単語は、他のアプリケーションでも予約されています。 その結果、これらの単語の個々のヘルプ トピックでは SQL での使用に重点を置かず、一般的な説明を提供しています。
 
-- 単語の後にアスタリスク (*) は予約されておりが、(たとえば、**レベル**、 **TableID**) は、Microsoft Access SQL ステートメントのコンテキストで意味を持つ現在ありません。 
+- アスタリスク (*) の付いている語 (**Level** や **TableID** など) は予約語ですが、現在、Microsoft Access SQL ステートメントの中では特に意味を持ちません。 
 
-- 下線付きで表示されない単語には、リンクの説明はありません。
+- 下線が引かれていない単語には、説明のリンクがありません。
 
 ## <a name="a"></a>A
 
@@ -43,7 +43,7 @@ ms.locfileid: "28718253"
 <td><p><a href="sql-subqueries-microsoft-access-sql.md">ANY</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="alter-table-statement-microsoft-access-sql.md">追加</a></p></td>
+<td><p><a href="alter-table-statement-microsoft-access-sql.md">ADD</a></p></td>
 <td><p>ARE</p></td>
 </tr>
 <tr class="odd">
@@ -67,7 +67,7 @@ ms.locfileid: "28718253"
 <td><p><a href="equivalent-ansi-sql-data-types.md">AUTOINCREMENT</a>: 「COUNTER」を参照</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="https://msdn.microsoft.com/library/ff192436(v=office.15)">そして</a></strong></p></td>
+<td><p><strong><a href="https://msdn.microsoft.com/library/ff192436(v=office.15)">And</a></strong></p></td>
 <td><p><strong><a href="https://msdn.microsoft.com/library/ff822755(v=office.15)">Avg</a></strong></p></td>
 </tr>
 <tr class="odd">
@@ -87,20 +87,20 @@ ms.locfileid: "28718253"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="transaction-statement-microsoft-access-sql.md">開始</a></p></td>
+<td><p><a href="transaction-statement-microsoft-access-sql.md">BEGIN</a></p></td>
 <td><p>COLLATION</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="https://msdn.microsoft.com/library/ff192436(v=office.15)">間</a></strong></p></td>
-<td><p><a href="alter-table-statement-microsoft-access-sql.md">列</a></p></td>
+<td><p><strong><a href="https://msdn.microsoft.com/library/ff192436(v=office.15)">Between</a></strong></p></td>
+<td><p><a href="alter-table-statement-microsoft-access-sql.md">COLUMN</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="sql-data-types.md">バイナリ</a></p></td>
+<td><p><a href="sql-data-types.md">BINARY</a></p></td>
 <td><p><a href="transaction-statement-microsoft-access-sql.md">COMMIT</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="sql-data-types.md">ビット</a></p></td>
-<td><p><a href="create-table-statement-microsoft-access-sql.md">COMP、圧縮</a></p></td>
+<td><p><a href="sql-data-types.md">BIT</a></p></td>
+<td><p><a href="create-table-statement-microsoft-access-sql.md">COMP、COMPRESSION</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>BIT_LENGTH</p></td>
@@ -112,27 +112,27 @@ ms.locfileid: "28718253"
 </tr>
 <tr class="odd">
 <td><p>BOTH</p></td>
-<td><p><a href="constraint-clause-microsoft-access-sql.md">制約制約</a></p></td>
+<td><p><a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT、CONSTRAINTS</a></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/ff822010(v=office.15)">BY</a></p></td>
 <td><p><a href="https://msdn.microsoft.com/library/ff836657(v=office.15)">CONTAINER</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="sql-data-types.md">バイト</a></p></td>
+<td><p><a href="sql-data-types.md">BYTE</a></p></td>
 <td><p>CONTAINS</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="constraint-clause-microsoft-access-sql.md">連鎖</a></p></td>
+<td><p><a href="constraint-clause-microsoft-access-sql.md">CASCADE</a></p></td>
 <td><p>CONVERT</p></td>
 </tr>
 <tr class="odd">
 <td><p>CATALOG</p></td>
-<td><p><strong><a href="https://msdn.microsoft.com/library/ff844748(v=office.15)">カウント</a></strong></p></td>
+<td><p><strong><a href="https://msdn.microsoft.com/library/ff844748(v=office.15)">Count</a></strong></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="equivalent-ansi-sql-data-types.md">CHAR、CHARACTER</a>: 「TEXT」を参照</p></td>
-<td><p><a href="sql-data-types.md">カウンター</a></p></td>
+<td><p><a href="sql-data-types.md">COUNTER</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="equivalent-ansi-sql-data-types.md">CHAR_LENGTH</a></p></td>
@@ -140,7 +140,7 @@ ms.locfileid: "28718253"
 </tr>
 <tr class="even">
 <td><p><a href="equivalent-ansi-sql-data-types.md">CHARACTER_LENGTH</a></p></td>
-<td><p><a href="sql-data-types.md">通貨</a></p></td>
+<td><p><a href="sql-data-types.md">CURRENCY</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>CHECK</p></td>
@@ -152,11 +152,11 @@ ms.locfileid: "28718253"
 </tr>
 <tr class="odd">
 <td><p>CLUSTERED</p></td>
-<td><p>実行</p></td>
+<td><p>CURRENT_TIMESTAMP</p></td>
 </tr>
 <tr class="even">
 <td><p>COALESCE</p></td>
-<td><p>現在のユーザー</p></td>
+<td><p>CURRENT_USER</p></td>
 </tr>
 <tr class="odd">
 <td><p>COLLATE</p></td>
@@ -175,8 +175,8 @@ ms.locfileid: "28718253"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/ff194542(v=office.15)">データベース</a></p></td>
-<td><p><a href="create-index-statement-microsoft-access-sql.md">禁止</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff194542(v=office.15)">DATABASE</a></p></td>
+<td><p><a href="create-index-statement-microsoft-access-sql.md">DISALLOW</a></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="equivalent-ansi-sql-data-types.md">DATE</a>: 「DATETIME」を参照</p></td>
@@ -191,7 +191,7 @@ ms.locfileid: "28718253"
 <td><p><a href="https://msdn.microsoft.com/library/ff195711(v=office.15)">DISTINCTROW</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="sql-data-types.md">年 12 月、10 進数</a></p></td>
+<td><p><a href="sql-data-types.md">DEC、DECIMAL</a></p></td>
 <td><p>DOMAIN</p></td>
 </tr>
 <tr class="even">
@@ -220,7 +220,7 @@ ms.locfileid: "28718253"
 <tbody>
 <tr class="odd">
 <td><p><strong>Eqv</strong></p></td>
-<td><p><a href="constraint-clause-microsoft-access-sql.md">外部</a></p></td>
+<td><p><a href="constraint-clause-microsoft-access-sql.md">FOREIGN</a></p></td>
 </tr>
 <tr class="even">
 <td><p>EXCLUSIVECONNECT</p></td>
@@ -231,7 +231,7 @@ ms.locfileid: "28718253"
 <td><p><a href="https://msdn.microsoft.com/library/ff836674(v=office.15)">FROM 句</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="sql-subqueries-microsoft-access-sql.md">存在します。</a></p></td>
+<td><p><a href="sql-subqueries-microsoft-access-sql.md">EXISTS</a></p></td>
 <td><p><a href="equivalent-ansi-sql-data-types.md">GENERAL</a>: 「LONGBINARY」を参照</p></td>
 </tr>
 <tr class="odd">
@@ -240,7 +240,7 @@ ms.locfileid: "28718253"
 </tr>
 <tr class="even">
 <td><p>FALSE</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff837271(v=office.15)">グループ</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff837271(v=office.15)">GROUP</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>FETCH</p></td>
@@ -271,7 +271,7 @@ ms.locfileid: "28718253"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="sql-data-types.md">識別情報</a></p></td>
+<td><p><a href="sql-data-types.md">IDENTITY</a></p></td>
 <td><p>INPUT</p></td>
 </tr>
 <tr class="even">
@@ -283,11 +283,11 @@ ms.locfileid: "28718253"
 <td><p><a href="https://msdn.microsoft.com/library/ff837307(v=office.15)">INSERT</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="create-index-statement-microsoft-access-sql.md">無視します。</a></p></td>
+<td><p><a href="create-index-statement-microsoft-access-sql.md">IGNORE</a></p></td>
 <td><p><a href="insert-into-statement-microsoft-access-sql.md">INSERT INTO</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="sql-data-types.md">イメージ</a></p></td>
+<td><p><a href="sql-data-types.md">IMAGE</a></p></td>
 <td><p><a href="equivalent-ansi-sql-data-types.md">INT、INTEGER、INTEGER4</a>: 「LONG」を参照</p></td>
 </tr>
 <tr class="even">
@@ -300,7 +300,7 @@ ms.locfileid: "28718253"
 </tr>
 <tr class="even">
 <td><p><a href="https://msdn.microsoft.com/library/ff197682(v=office.15)">IN</a></p></td>
-<td><p><a href="equivalent-ansi-sql-data-types.md">間隔</a></p></td>
+<td><p><a href="equivalent-ansi-sql-data-types.md">INTERVAL</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/ff836851(v=office.15)">INDEX</a></p></td>
@@ -328,10 +328,10 @@ ms.locfileid: "28718253"
 <tbody>
 <tr class="odd">
 <td><p><a href="https://msdn.microsoft.com/library/ff196141(v=office.15)">JOIN</a></p></td>
-<td><p><a href="sql-data-types.md">長いテキスト</a></p></td>
+<td><p><a href="sql-data-types.md">LONGTEXT</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="constraint-clause-microsoft-access-sql.md">キー</a></p></td>
+<td><p><a href="constraint-clause-microsoft-access-sql.md">KEY</a></p></td>
 <td><p>LOWER</p></td>
 </tr>
 <tr class="odd">
@@ -343,27 +343,27 @@ ms.locfileid: "28718253"
 <td><p><strong><a href="https://msdn.microsoft.com/library/ff194490(v=office.15)">Max</a></strong></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="left-join-right-join-operations-microsoft-access-sql.md">左</a></p></td>
+<td><p><a href="left-join-right-join-operations-microsoft-access-sql.md">LEFT</a></p></td>
 <td><p><a href="equivalent-ansi-sql-data-types.md">MEMO</a>: 「LONGTEXT」を参照</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>レベル</strong>*</p></td>
+<td><p><strong>Level</strong>*</p></td>
 <td><p><strong><a href="https://msdn.microsoft.com/library/ff194490(v=office.15)">Min</a></strong></p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="https://msdn.microsoft.com/library/ff195752(v=office.15)">という感じで</a></strong></p></td>
+<td><p><strong><a href="https://msdn.microsoft.com/library/ff195752(v=office.15)">Like</a></strong></p></td>
 <td><p>MINUTE</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="equivalent-ansi-sql-data-types.md">LOGICAL、LOGICAL1</a>: 「BIT」を参照</p></td>
-<td><p><strong>余り</strong></p></td>
+<td><p><strong>Mod</strong></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="sql-data-types.md">長</a></p></td>
+<td><p><a href="sql-data-types.md">LONG</a></p></td>
 <td><p><a href="equivalent-ansi-sql-data-types.md">MONEY</a>: 「CURRENCY」を参照</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="sql-data-types.md">文字列</a></p></td>
+<td><p><a href="sql-data-types.md">LONGBINARY</a></p></td>
 <td><p>MONTH</p></td>
 </tr>
 <tr class="odd">
@@ -383,8 +383,8 @@ ms.locfileid: "28718253"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="equivalent-ansi-sql-data-types.md">国内</a></p></td>
-<td><p><strong>外側</strong>*</p></td>
+<td><p><a href="equivalent-ansi-sql-data-types.md">NATIONAL</a></p></td>
+<td><p><strong>Outer</strong>*</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="constraint-clause-microsoft-access-sql.md">NCHAR</a></p></td>
@@ -399,8 +399,8 @@ ms.locfileid: "28718253"
 <td><p>PAD</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="equivalent-ansi-sql-data-types.md">NTEXT 型</a></p></td>
-<td><p><a href="parameters-declaration-microsoft-access-sql.md">パラメーター</a></p></td>
+<td><p><a href="equivalent-ansi-sql-data-types.md">NTEXT</a></p></td>
+<td><p><a href="parameters-declaration-microsoft-access-sql.md">PARAMETERS</a></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="create-index-statement-microsoft-access-sql.md">NULL</a></p></td>
@@ -412,11 +412,11 @@ ms.locfileid: "28718253"
 </tr>
 <tr class="even">
 <td><p><a href="equivalent-ansi-sql-data-types.md">NUMERIC</a>: 「DECIMAL」を参照</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/ff195711(v=office.15)">%</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff195711(v=office.15)">PERCENT</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="equivalent-ansi-sql-data-types.md">NVARCHAR</a></p></td>
-<td><p><a href="transform-statement-microsoft-access-sql.md">ピボット</a></p></td>
+<td><p><a href="transform-statement-microsoft-access-sql.md">PIVOT</a></p></td>
 </tr>
 <tr class="even">
 <td><p>OCTET_LENGTH</p></td>
@@ -432,18 +432,18 @@ ms.locfileid: "28718253"
 </tr>
 <tr class="odd">
 <td><p>OPEN</p></td>
-<td><p><a href="constraint-clause-microsoft-access-sql.md">プライマリ</a></p></td>
+<td><p><a href="constraint-clause-microsoft-access-sql.md">PRIMARY</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="with-owneraccess-option-declaration-microsoft-access-sql.md">オプション</a></p></td>
+<td><p><a href="with-owneraccess-option-declaration-microsoft-access-sql.md">OPTION</a></p></td>
 <td><p>PRIVILEGES</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Or</strong></p></td>
-<td><p><a href="procedure-clause-microsoft-access-sql.md">プロセスの手順</a></p></td>
+<td><p><a href="procedure-clause-microsoft-access-sql.md">PROC、PROCEDURE</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/ff198293(v=office.15)">注文</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff198293(v=office.15)">ORDER</a></p></td>
 <td><p>PUBLIC</p></td>
 </tr>
 </tbody>
@@ -463,7 +463,7 @@ ms.locfileid: "28718253"
 <td><p>SMALLDATETIME</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="constraint-clause-microsoft-access-sql.md">参照</a></p></td>
+<td><p><a href="constraint-clause-microsoft-access-sql.md">REFERENCES</a></p></td>
 <td><p><a href="equivalent-ansi-sql-data-types.md">SMALLINT</a>: 「SHORT」を参照</p></td>
 </tr>
 <tr class="odd">
@@ -475,11 +475,11 @@ ms.locfileid: "28718253"
 <td><p><a href="sql-subqueries-microsoft-access-sql.md">SOME</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="left-join-right-join-operations-microsoft-access-sql.md">そうです</a></p></td>
+<td><p><a href="left-join-right-join-operations-microsoft-access-sql.md">RIGHT</a></p></td>
 <td><p>SPACE</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="transaction-statement-microsoft-access-sql.md">ロールバック</a></p></td>
+<td><p><a href="transaction-statement-microsoft-access-sql.md">ROLLBACK</a></p></td>
 <td><p>SQL</p></td>
 </tr>
 <tr class="odd">
@@ -503,15 +503,15 @@ ms.locfileid: "28718253"
 <td><p>SUBSTRING</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="update-statement-microsoft-access-sql.md">セット</a></p></td>
+<td><p><a href="update-statement-microsoft-access-sql.md">SET</a></p></td>
 <td><p><strong><a href="https://msdn.microsoft.com/library/ff844764(v=office.15)">Sum</a></strong></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="sql-data-types.md">短い</a></p></td>
+<td><p><a href="sql-data-types.md">SHORT</a></p></td>
 <td><p>SYSNAME</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="sql-data-types.md">1 つ</a></p></td>
+<td><p><a href="sql-data-types.md">SINGLE</a></p></td>
 <td><p>SYSTEM_USER</p></td>
 </tr>
 <tr class="odd">
@@ -522,7 +522,7 @@ ms.locfileid: "28718253"
 </table>
 
 
-## <a name="t-z"></a>T ～ Z
+## <a name="t-z"></a>T-Z
 
 <table>
 <colgroup>
@@ -539,11 +539,11 @@ ms.locfileid: "28718253"
 <td><p><a href="https://msdn.microsoft.com/library/ff198241(v=office.15)">UPDATESECURITY</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="create-table-statement-microsoft-access-sql.md">一時的です</a></p></td>
+<td><p><a href="create-table-statement-microsoft-access-sql.md">TEMPORARY</a></p></td>
 <td><p>UPPER</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="sql-data-types.md">テキスト</a></p></td>
+<td><p><a href="sql-data-types.md">TEXT</a></p></td>
 <td><p>USAGE</p></td>
 </tr>
 <tr class="odd">
@@ -551,16 +551,16 @@ ms.locfileid: "28718253"
 <td><p><a href="https://msdn.microsoft.com/library/ff197645(v=office.15)">USER</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="equivalent-ansi-sql-data-types.md">タイムスタンプ</a></p></td>
+<td><p><a href="equivalent-ansi-sql-data-types.md">TIMESTAMP</a></p></td>
 <td><p>USING</p></td>
 </tr>
 <tr class="odd">
 <td><p>TIMEZONE_HOUR</p></td>
-<td><p><a href="sql-data-types.md">値</a></p></td>
+<td><p><a href="sql-data-types.md">VALUE</a></p></td>
 </tr>
 <tr class="even">
 <td><p>TIMEZONE_MINUTE</p></td>
-<td><p><a href="insert-into-statement-microsoft-access-sql.md">値</a></p></td>
+<td><p><a href="insert-into-statement-microsoft-access-sql.md">VALUES</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="sql-data-types.md">TINYINT</a></p></td>
@@ -571,7 +571,7 @@ ms.locfileid: "28718253"
 <td><p><a href="equivalent-ansi-sql-data-types.md">VARBINARY</a>: 「BINARY」を参照</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/ff195711(v=office.15)">ページのトップへ</a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/ff195711(v=office.15)">TOP</a></p></td>
 <td><p><a href="equivalent-ansi-sql-data-types.md">VARCHAR</a>: 「TEXT」を参照</p></td>
 </tr>
 <tr class="even">
@@ -579,11 +579,11 @@ ms.locfileid: "28718253"
 <td><p><strong><a href="https://msdn.microsoft.com/library/ff192105(v=office.15)">VarP</a></strong></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="transaction-statement-microsoft-access-sql.md">トランザクション</a></p></td>
+<td><p><a href="transaction-statement-microsoft-access-sql.md">TRANSACTION</a></p></td>
 <td><p><a href="constraint-clause-microsoft-access-sql.md">VARYING</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="transform-statement-microsoft-access-sql.md">トランス フォーム</a></p></td>
+<td><p><a href="transform-statement-microsoft-access-sql.md">TRANSFORM</a></p></td>
 <td><p><a href="https://msdn.microsoft.com/library/ff836065(v=office.15)">VIEW</a></p></td>
 </tr>
 <tr class="odd">
@@ -603,11 +603,11 @@ ms.locfileid: "28718253"
 <td><p><a href="https://msdn.microsoft.com/library/ff192721(v=office.15)">WITH</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="union-operation-microsoft-access-sql.md">共用体</a></p></td>
-<td><p><a href="transaction-statement-microsoft-access-sql.md">作業</a></p></td>
+<td><p><a href="union-operation-microsoft-access-sql.md">UNION</a></p></td>
+<td><p><a href="transaction-statement-microsoft-access-sql.md">WORK</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="constraint-clause-microsoft-access-sql.md">一意</a></p></td>
+<td><p><a href="constraint-clause-microsoft-access-sql.md">UNIQUE</a></p></td>
 <td><p><strong>Xor</strong></p></td>
 </tr>
 <tr class="odd">
