@@ -8,23 +8,23 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Priority
 ms.openlocfilehash: a046359f39611e38b9e517495f54041f876addfc
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28710245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32302850"
 ---
 # <a name="querydefopenrecordset-method-dao"></a>QueryDef.OpenRecordset メソッド (DAO)
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-新しい **[Recordset](recordset-object-dao.md)** オブジェクトを作成して **Recordsets** コレクションに追加します。
+新しい **[Recordset](recordset-object-dao.md)** オブジェクトを作成し、**Recordsets** コレクションに追加します。
 
 ## <a name="syntax"></a>構文
 
-*式*です。何らか (***型***、***オプション***、 ***LockEdit***)
+*expression* .OpenRecordset(***Type***, ***Options***, ***LockEdit***)
 
-*式***クエリ定義**オブジェクトを表す変数です。
+*expression*: **QueryDef** オブジェクトを表す変数。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -38,31 +38,31 @@ ms.locfileid: "28710245"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/オプション</p></th>
+<th><p>必須/省略可能</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>型</em></p></td>
+<td><p><em>Type</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>開く <a href="recordsettypeenum-enumeration-dao.md">Recordset</a> の型を示す <strong><strong>RecordsetTypeEnum</strong></strong> 定数。</p><p><strong>注</strong>:<STRONG><STRONG>レコード セット</STRONG>を開くには、Microsoft Access ワークスペースで、種類を指定しない場合は、作成、テーブル タイプの<STRONG>レコード セット</STRONG>可能な場合</STRONG>です。 <STRONG>リンク テーブルまたはクエリを指定する場合、ダイナセット タイプの<STRONG>レコード セット</STRONG>が作成します。</STRONG></p>
+<td><p>開く <strong>Recordset</strong> の型を示す <strong><a href="recordsettypeenum-enumeration-dao.md">RecordsetTypeEnum</a></strong> 定数。</p><p><strong>注</strong>: Microsoft Access ワークスペースで <STRONG>Recordset</STRONG> を開き、型を指定しない場合、可能であれば<STRONG>OpenRecordset</STRONG>はテーブル タイプの <STRONG>Recordset</STRONG> を作成します。 If you specify a linked table or query, <STRONG>OpenRecordset</STRONG> creates a dynaset-type <STRONG>Recordset</STRONG>.</p>
 </td>
 </tr>
 <tr class="even">
-<td><p><em>Options</em></p></td>
+<td><p><em>オプション</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>新しい <a href="recordsetoptionenum-enumeration-dao.md">Recordset</a> の特性を指定する <strong><strong>RecordsetOptionEnum</strong></strong> 定数の組み合わせ。</p></p><p><strong>注</strong>: 定数を<STRONG>指定できます</STRONG>し、<STRONG>組み合わせて</STRONG>が、相互に排他的で両方を使用して、エラーが発生します。 Lockedits 引数を指定するオプションは、定数<STRONG>dbReadOnly</STRONG>を使用する場合と、エラーが発生します。</p>
+<td><p>新しい <strong>Recordset</strong> の特性を指定する <strong><a href="recordsetoptionenum-enumeration-dao.md">RecordsetOptionEnum</a></strong> 定数の組み合わせ。</p></p><p><strong>注</strong>: 定数 <STRONG>dbConsistent</STRONG> と <STRONG>dbInconsistent</STRONG> は互いに排他的なので、この 2 つを同時に使用するとエラーになります。 Supplying a lockedits argument when options uses the <STRONG>dbReadOnly</STRONG> constant also causes an error.</p>
 </td>
 </tr>
 <tr class="odd">
 <td><p><em>LockEdit</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p><a href="locktypeenum-enumeration-dao.md">Recordset</a> のロックを決定する <strong><strong>LockTypeEnum</strong></strong> 定数。</p></p><p><strong>注</strong>: オプションの引数と、引数 lockedits の片方だけに<STRONG>dbReadOnly</STRONG>を使用することができます。 で両方の引数を使用する場合は、実行時エラーが発生します。</p>
+<td><p><strong>Recordset</strong> のロックを決定する <strong><a href="locktypeenum-enumeration-dao.md">LockTypeEnum</a></strong> 定数。</p></p><p><strong>注</strong>: <STRONG>dbReadOnly</STRONG> を Options 引数または Lockedits 引数のどちらか一方で使用することはできますが、両方で使用することはできません。 両方の引数で使用すると、実行時エラーが発生します。</p>
 </td>
 </tr>
 </tbody>
@@ -73,15 +73,15 @@ ms.locfileid: "28710245"
 
 Recordset
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-IDENTITY 列を持つ Microsoft SQL Server 6.0 以降のテーブルに対して Microsoft Access データベース エンジンが接続された ODBC ワークスペースの [Recordset](recordsetoptionenum-enumeration-dao.md) を開く場合は、 ****dbSeeChanges**** 定数も使用する必要があり、使用しないとエラーが生じます。
+IDENTITY 列を持つ Microsoft SQL Server 6.0 以降のテーブルに対して Microsoft Access データベース エンジンが接続された ODBC ワークスペースの **Recordset** を開く場合は、**[dbSeeChanges](recordsetoptionenum-enumeration-dao.md)** 定数も使用する必要があり、使用しないとエラーが生じます。
 
 ODBC データ ソースで複数の **Recordset** を開こうとすると、 **OpenRecordset** に対する前の呼び出しで接続がビジー状態となるため、失敗する場合があります。これを回避する方法の 1 つは、 **Recordset** を開いた直後に、 **[MoveLast](recordset-movelast-method-dao.md)** メソッドを使用して **Recordset** の末尾までデータを読み込むことです。
 
 **Close** メソッドを使用して **Recordset** を閉じると、そのレコードセットは自動的に **Recordsets** コレクションから削除されます。
 
 > [!NOTE]
-> *ソース*を指す場合、整数以外の値に連結された文字列、SQL ステートメントで構成され、システム ・ パラメーターは、米国以外の小数点の記号、カンマなどを指定 (たとえば、strSQL ="価格&gt;" &amp; lngPrice でと lngPrice =125,50)、**レコード セット**を開こうとするとエラーが発生します。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、SQL で小数点の記号として使用できるのはピリオドのみになるからです。
+> *source* が文字列と非整数値を連結したもので構成される SQL ステートメントを示し、かつシステム パラメーターでコンマなどのピリオド以外の小数点の記号が使用されている場合 (たとえば、strSQL = "PRICE &gt; " &amp; lngPrice と lngPrice = 125,50)、**Recordset** を開こうとするとエラーが発生します。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、SQL で小数点の記号として使用できるのはピリオドのみになるからです。
 
 

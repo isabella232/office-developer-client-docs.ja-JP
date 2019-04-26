@@ -10,23 +10,23 @@ dev_langs:
 - sql
 localization_priority: Priority
 ms.openlocfilehash: 962e425c2c69511b6d7770fb03e954588249cf2a
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28718785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314638"
 ---
 # <a name="select-statement-microsoft-access-sql"></a>SELECT ステートメント (Microsoft Access SQL)
 
-**に適用されます:** Access 2013 |Office 2013
+**適用先**: Access 2013 | Office 2013
 
-データベースの情報をレコードのセットとして返すよう Microsoft Access データベース エンジンに指示します。
+Microsoft Access データベース エンジンにデータベースの情報をレコード セットとして返すように指示します。
 
 ## <a name="syntax"></a>構文
 
-選択\[*述語*\] { \*  | *テーブル*です\*。 |  \[*テーブル*です。\]*フィールド 1* \[ *alias1*と\] \[、 \[*テーブル*です。\]*フィールド 2* \[ *alias2*と\] \[、.\] \]} *Tableexpression*から\[をしています.\] \[ *Externaldatabase*内\]\[位置しています. \]\[別にグループ化しています. \]\[HAVING. \]\[を注文しています. \]\[OWNERACCESS オプションを使用して\]
+SELECT \[*predicate*\] { \* | *table*.\* | \[*table*.\]*field1* \[AS *alias1*\] \[, \[*table*.\]*field2* \[AS *alias2*\] \[, …\]\]} FROM *tableexpression* \[, …\] \[IN *externaldatabase*\] \[WHERE… \] \[GROUP BY… \] \[HAVING… \] \[ORDER BY… \] \[WITH OWNERACCESS OPTION\]
 
-SELECT 句には、次の指定項目があります。
+SELECT ステートメントでは次の引数を使用します。
 
 <table>
 <colgroup>
@@ -35,7 +35,7 @@ SELECT 句には、次の指定項目があります。
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>指定項目</p></th>
+<th><p>パーツ</p></th>
 <th><p>説明</p></th>
 </tr>
 </thead>
@@ -46,27 +46,29 @@ SELECT 句には、次の指定項目があります。
 </tr>
 <tr class="even">
 <td><p><em>*</em></p></td>
-<td><p>この記号を付けると、指定したテーブルのすべてのフィールドが選択されます。</p></td>
+<td><p>指定したテーブル (複数可) のすべてのフィールドを選択するよう指定します。</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>table</em></p></td>
-<td><p>レコードを選択するフィールドのあるテーブルの名前。</p></td>
+<td><p>レコードを選択するフィールドを含んだテーブルの名前。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>field1</em>、<em>field2</em></p></td>
-<td><p>取得するデータのある 1 つ以上のフィールドの名前。複数のフィールドを指定した場合は、指定順に取得されます。</p></td>
+<td><p>取得するデータを含んだフィールドの名前。 複数のフィールドを含めた場合は、リストした順序で取得されます。</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>alias1</em>、<em>alias2</em></p></td>
-<td><p>引数 <em>table</em> の元の列名の代わりに列見出しとして使用する名前。</p></td>
+<td><p>
+            <em>table</em> 内の元の列名の代わりに列見出しとして使用する名前。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>tableexpression</em></p></td>
-<td><p>取得するデータのある 1 つ以上のテーブルの名前。</p></td>
+<td><p>取得するデータを含んだテーブル (複数可) の名前。</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>externaldatabase</em></p></td>
-<td><p>現在のデータベースには存在しない場合は、 <em>tableexpression</em>内のテーブルを含むデータベースの名前です。</p></td>
+<td><p>
+            <em>tableexpression</em> のテーブルが現在のデータベースにない場合に、それを含むデータベースの名前。</p></td>
 </tr>
 </tbody>
 </table>
@@ -74,15 +76,15 @@ SELECT 句には、次の指定項目があります。
 
 ## <a name="remarks"></a>注釈
 
-この操作を実行するには、Microsoft Jet データベース エンジン、指定したテーブルの検索、選択された列を抽出し、基準、および並べ替え、または結果の行のグループを指定された順序に一致する行を選択します。
+この操作を実行するため、Microsoft Jet データベース エンジンは指定されたテーブル (複数可) を検索して、選択した列を抽出し、条件に一致する行を選択して、結果行を指定の順序に並べ替えたり、グループ化したりします。
 
-SELECT ステートメントは、データベース内のデータの内容を変更しません。
+SELECT ステートメントはデータベース内のデータを変更することはありません。
 
 通常、SELECT は SQL ステートメントの先頭に記述します。ほとんどの SQL ステートメントは SELECT ステートメントまたは [SELECT...INTO](select-into-statement-microsoft-access-sql.md) ステートメントのいずれかになります。
 
-SELECT ステートメントの最も簡単な構文を次に示します。
+SELECT ステートメントの最小限の構文は次のとおりです。
 
-*フィールド*から*テーブル*を選択します。
+SELECT *fields* FROM *table*
 
 アスタリスク (\*) を使用すると、テーブル内のすべてのフィールドが選択できます。次の例では、Employees テーブルにあるすべてのフィールドが選択されます。
 
@@ -90,7 +92,7 @@ SELECT ステートメントの最も簡単な構文を次に示します。
 SELECT * FROM Employees;
 ```
 
-FROM 句で複数のテーブルのフィールド名が含まれている場合、は、先頭にテーブル名と、 **.** (ドット) 演算子です。 部門フィールドは次の例では、[社員] テーブルと、スーパーバイザーによるテーブルの両方で、です。 SQL ステートメントでは、スーパーバイザーのテーブルから従業員のテーブルと監修者の名前から部門を選択します。
+FROM 句で複数のテーブルに含まれるフィールドの場合は、その前にテーブル名と **.** (ドット) 演算子を付けます。 次の例では、Department フィールドが Employees テーブルと Supervisors テーブルの両方に含まれます。 この SQL ステートメントは、Employees テーブルから部署を選択し、Supervisors テーブルから監督者名を選択します。
 
 ```sql
 SELECT Employees.Department, Supervisors.SupvName 
@@ -98,33 +100,33 @@ FROM Employees INNER JOIN Supervisors
 WHERE Employees.Department = Supervisors.Department;
 ```
 
-**レコード セット**オブジェクトが作成されると、Microsoft Jet データベース エンジンは、 **Recordset**オブジェクト内の**フィールド**オブジェクト名としてテーブルのフィールド名を使用します。 AS を使用して、別のフィールド名を使用するフィールドを生成するために使用する式は、名前を明示しない場合、予約語です。 次の例では、結果の**Recordset**オブジェクトに返される**Field**オブジェクトの名前をタイトルの生年月日を使用します。
+When a **Recordset** object is created, the Microsoft Jet database engine uses the table's field name as the **Field** object name in the **Recordset** object. If you want a different field name or a name is not implied by the expression used to generate the field, use the AS reserved word. The following example uses the title Birth to name the returned **Field** object in the resulting **Recordset** object:
 
 ```sql
 SELECT BirthDate 
 AS Birth FROM Employees;
 ```
 
-集計関数を使用する場合、またはあいまいな Field オブジェクト名や重複する Field オブジェクト名を返すクエリを使用する場合は、必ず AS 句を使用して Field オブジェクトに別の名前を付ける必要があります。次の例では、Recordset オブジェクトに返される Field オブジェクトのフィールド名は "HeadCount" になります。
+使用する集約関数やクエリで返される **Field** オブジェクト名があいまいな場合や重複する場合は、AS 句を使用して **Field** オブジェクトの代替名を指定する必要があります。 次の例では、タイトルに HeadCount を使用して、結果の **Recordset** オブジェクトで返された **Field** オブジェクトに名前を付けています。
 
 ```sql
 SELECT COUNT(EmployeeID)
 AS HeadCount FROM Employees;
 ```
 
-SELECT ステートメントでは、これ以外にもさまざまな句を使用して、返されるデータを制限したり整理したりできます。詳細については、使用する句のヘルプ トピックを参照してください。
+SELECT ステートメントではこの他にも、返されるデータを制限して整理する句を使用できます。 詳しくは、使用する句のヘルプ トピックをご覧ください。
 
-**でリンクが用意されている** [UtterAccess](https://www.utteraccess.com)のコミュニティです。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
+[UtterAccess](https://www.utteraccess.com) コミュニティで**提供されるリンク**。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
 
 - [SQL to VBA Formatter](https://www.utteraccess.com/forum/sql-vba-formatter-t1165308.html)
 
 - [Viewing Records Within A Defined Range](https://www.utteraccess.com/wiki/index.php/records_within_a_defined_range)
 
-## <a name="example"></a>使用例
+## <a name="example"></a>例
 
 次に示す一部の使用例では、Employees テーブルに Salary フィールドが含まれていると仮定しています。実際には、ノースウィンド データベースの Employees テーブルにこのフィールドは含まれていないので注意してください。
 
-この例では、[社員] テーブルのすべてのレコードの [氏名] と [部署名] フィールドを選択する SQL ステートメントに基づくダイナセット タイプの**レコード セット**を作成します。 **デバッグ**ウィンドウに、**レコード セット**オブジェクトの内容を印刷する、EnumFields プロシージャを呼び出します。
+This example creates a dynaset-type **Recordset** based on an SQL statement that selects the LastName and FirstName fields of all records in the Employees table. It calls the EnumFields procedure, which prints the contents of a **Recordset** object to the **Debug** window.
 
 ```sql
     Sub SelectX1() 

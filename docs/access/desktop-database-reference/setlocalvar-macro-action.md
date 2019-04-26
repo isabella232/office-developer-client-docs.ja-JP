@@ -12,21 +12,21 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: 091b9717b9a2e35cfc8d0c8555e28570628065ef
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28702461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32314589"
 ---
 # <a name="setlocalvar-macro-action"></a>SetLocalVar マクロ アクション
 
-**適用されます**Access 2013、Office 2013。
+**適用先:** Access 2013、Office 2013
 
-" **SetLocalVar/ローカル変数の設定** " アクションは、一時変数を作成し、それを特定の値に設定します。
+"SetLocalVar/ローカル変数の設定" アクションは、一時変数を作成し、それを特定の値に設定します。
 
 ## <a name="setting"></a>設定
 
-" **SetLocalVar/ローカル変数の設定** " アクションの引数は次のとおりです。
+"SetLocalVar/ローカル変数の設定" アクションの引数は次のとおりです。
 
 <table>
 <colgroup>
@@ -43,26 +43,26 @@ ms.locfileid: "28702461"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Name</strong></p></td>
+<td><p><strong>名前</strong></p></td>
 <td><p>はい</p></td>
 <td><p>変数の名前を指定する文字列。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Expression</strong></p></td>
 <td><p>はい</p></td>
-<td><p>この一時変数の値を設定に使用する式を指定します。 式の前に等号 (=) を付けないでください。 この引数を設定するのには、<strong>式ビルダー</strong>を使用するのには [<strong>ビルド</strong>] ボタンをクリックすることができます。</p></td>
+<td><p>An expression that will be used to set the value for this temporary variable. Do not precede the expression with the equal sign (=). You can click the <strong>Build</strong> button to use the <strong>Expression Builder</strong> to set this argument.  </p></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-**予約**によって作成された変数は、定義されているマクロでのみ使用できます。 **[SetTempVar](settempvar-macro-action.md)** アクションを使用して、別のマクロ、イベント プロシージャ、またはフォームまたはレポートで使用できる変数を定義します。
+Variables created by the **SetLocalVar** action can be used only in the macro in which they are defined. Use the **[SetTempVar](settempvar-macro-action.md)** action to define a variable that can be used in another macro, in an event procedure, or on a form or report.
 
 一時変数を作成すると、それを式で参照できます。たとえば、TotalAmount という一時変数を作成した場合、次の構文でこの変数をテキスト ボックスのコントロール ソースとして使用できます。
 
 `=[LocalVars]![TotalAmount]`
 
 > [!NOTE]
-> [!メモ] データ マクロでは、変数を参照するために LocalVals コレクションを使用する必要はありません。 などの TotalAmount を名前付きデータ マクロで一時変数を作成する場合可能性があります変数を使用するコントロールのソースとしてテキスト ボックスの次の構文を使用して: `=[TotalAmount]`。
+> データ マクロでは、変数を参照するために LocalVars コレクションを使用する必要はありません。 たとえば、データ マクロで TotalAmount という一時変数を作成した場合、次の構文でこの変数をテキスト ボックスのコントロール ソースとして使用できます: `=[TotalAmount]`。
 
