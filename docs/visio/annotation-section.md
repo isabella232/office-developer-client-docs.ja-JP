@@ -10,25 +10,25 @@ localization_priority: Normal
 ms.assetid: 616c822e-1bb2-4980-7e45-0c2be77dd801
 description: 図面ページに挿入されたコメントについての情報を格納します。
 ms.openlocfilehash: f874a574940a5f56b1d1680b9b4b32730e1e79f7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341399"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427424"
 ---
-# <a name="annotation-section"></a><span data-ttu-id="56b6a-103">[Annotation] セクション</span><span class="sxs-lookup"><span data-stu-id="56b6a-103">Annotation Section</span></span>
+# <a name="annotation-section"></a><span data-ttu-id="d98bf-103">[Annotation] セクション</span><span class="sxs-lookup"><span data-stu-id="d98bf-103">Annotation Section</span></span>
 
-<span data-ttu-id="56b6a-104">図面ページに挿入されたコメントについての情報を格納します。</span><span class="sxs-lookup"><span data-stu-id="56b6a-104">Contains information about comments inserted into a document page.</span></span> 
+<span data-ttu-id="d98bf-104">図面ページに挿入されたコメントについての情報を格納します。</span><span class="sxs-lookup"><span data-stu-id="d98bf-104">Contains information about comments inserted into a document page.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="56b6a-105">このセクションは、Microsoft Visio 2013 で .vsd ファイルを開くとき、または .vsd ファイル形式で .vsdx ファイルを保存するときにのみコメントを追跡するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="56b6a-105">This section is used for tracking comments only when opening a .vsd file in Microsoft Visio 2013 or when saving a .vsdx file in the .vsd file format.</span></span> <span data-ttu-id="56b6a-106">Visio 2013 の新しい .vsdx ドキュメントでコメントを追跡するためには使用されません。</span><span class="sxs-lookup"><span data-stu-id="56b6a-106">It is not used for tracking comments in new .vsdx documents in Visio 2013.</span></span> 
+> <span data-ttu-id="d98bf-105">このセクションは、Microsoft Visio 2013 で .vsd ファイルを開くとき、または .vsd ファイル形式で .vsdx ファイルを保存するときにのみコメントを追跡するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="d98bf-105">This section is used for tracking comments only when opening a .vsd file in Microsoft Visio 2013 or when saving a .vsdx file in the .vsd file format.</span></span> <span data-ttu-id="d98bf-106">Visio 2013 の新しい .vsdx ドキュメントでコメントを追跡するためには使用されません。</span><span class="sxs-lookup"><span data-stu-id="d98bf-106">It is not used for tracking comments in new .vsdx documents in Visio 2013.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="56b6a-107">解説</span><span class="sxs-lookup"><span data-stu-id="56b6a-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d98bf-107">注釈</span><span class="sxs-lookup"><span data-stu-id="d98bf-107">Remarks</span></span>
 
-<span data-ttu-id="56b6a-108">ページのシェイプシートの [ **Annotation** ] セクションには、図面内のページに追加されたコメントごとに1つの行が含まれています。これは、元の図面ページであっても、またはマークアップオーバーレイページ (レビュー担当者が図面に追加されたマークアップを含むページ) です。</span><span class="sxs-lookup"><span data-stu-id="56b6a-108">The **Annotation** section of a page's ShapeSheet contains one row for each comment added to a page in the drawing, whether it is an original drawing page or a markup overlay page (a page containing markup that has been added to the drawing by a reviewer).</span></span> <span data-ttu-id="56b6a-109">コメントではなく、インクまたはその他の図形を使用して追加された校正履歴についての情報は、[**注釈**] セクションには含まれません。</span><span class="sxs-lookup"><span data-stu-id="56b6a-109">Information about markup that has been added using ink or other shapes, rather than comments, is not included in the **Annotation** section.</span></span> 
+<span data-ttu-id="d98bf-108">ページのシェイプシートの [ **Annotation** ] セクションには、図面内のページに追加されたコメントごとに1つの行が含まれています。これは、元の図面ページであっても、またはマークアップオーバーレイページ (レビュー担当者が図面に追加されたマークアップを含むページ) です。</span><span class="sxs-lookup"><span data-stu-id="d98bf-108">The **Annotation** section of a page's ShapeSheet contains one row for each comment added to a page in the drawing, whether it is an original drawing page or a markup overlay page (a page containing markup that has been added to the drawing by a reviewer).</span></span> <span data-ttu-id="d98bf-109">コメントではなく、インクまたはその他の図形を使用して追加された校正履歴についての情報は、[**注釈**] セクションには含まれません。</span><span class="sxs-lookup"><span data-stu-id="d98bf-109">Information about markup that has been added using ink or other shapes, rather than comments, is not included in the **Annotation** section.</span></span> 
   
-<span data-ttu-id="56b6a-110">ページのシェイプシートを表示するには、そのページに何も選択されていないことを確認し、そのページを右クリックして、[**シェイプシートの表示**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="56b6a-110">To view the ShapeSheet for a page, make sure nothing is selected on the page, right-click the page, and click **Show ShapeSheet**.</span></span>
+<span data-ttu-id="d98bf-110">ページのシェイプシートを表示するには、そのページに何も選択されていないことを確認し、そのページを右クリックして、[**シェイプシートの表示**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d98bf-110">To view the ShapeSheet for a page, make sure nothing is selected on the page, right-click the page, and click **Show ShapeSheet**.</span></span>
   
-<span data-ttu-id="56b6a-111">特定の校閲者については、図面のシェイプシートの [**校閲者**] セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="56b6a-111">For information about particular reviewers, see the **Reviewer** section in the document's ShapeSheet.</span></span> 
+<span data-ttu-id="d98bf-111">特定の校閲者については、図面のシェイプシートの [**校閲者**] セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="d98bf-111">For information about particular reviewers, see the **Reviewer** section in the document's ShapeSheet.</span></span> 
   
 
