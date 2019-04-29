@@ -9,23 +9,23 @@ localization_priority: Normal
 ms.assetid: a111d7b7-6e87-4958-8f9b-0f2adbeb8b63
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 65ed848907e196c315e8ddb61c4afd2fe03faa18
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32270288"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33413431"
 ---
-# <a name="mapiofflinenotifytype"></a><span data-ttu-id="c9a84-103">MAPIOFFLINE_NOTIFY_TYPE</span><span class="sxs-lookup"><span data-stu-id="c9a84-103">MAPIOFFLINE_NOTIFY_TYPE</span></span>
+# <a name="mapiofflinenotifytype"></a><span data-ttu-id="f59de-103">MAPIOFFLINE_NOTIFY_TYPE</span><span class="sxs-lookup"><span data-stu-id="f59de-103">MAPIOFFLINE_NOTIFY_TYPE</span></span>
 
   
   
-<span data-ttu-id="c9a84-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="c9a84-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="f59de-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f59de-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="c9a84-105">通知の MAPIOFFLINE_NOTIFY_TYPE によって、接続状態の変更が行われるか、実行されるか、または完了したかが特定されます。</span><span class="sxs-lookup"><span data-stu-id="c9a84-105">The MAPIOFFLINE_NOTIFY_TYPE of a notification identifies if a change in the connection state is going to take place, is taking place, or has completed.</span></span> 
+<span data-ttu-id="f59de-105">通知の MAPIOFFLINE_NOTIFY_TYPE によって、接続状態の変更が行われるか、実行されるか、または完了したかが特定されます。</span><span class="sxs-lookup"><span data-stu-id="f59de-105">The MAPIOFFLINE_NOTIFY_TYPE of a notification identifies if a change in the connection state is going to take place, is taking place, or has completed.</span></span> 
   
-## <a name="quick-info"></a><span data-ttu-id="c9a84-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="c9a84-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="f59de-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="f59de-106">Quick info</span></span>
 
-<span data-ttu-id="c9a84-107">**[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c9a84-107">See **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)**.</span></span> 
+<span data-ttu-id="f59de-107">**[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f59de-107">See **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)**.</span></span> 
   
 ```cpp
 typedef enum { 
@@ -35,13 +35,13 @@ typedef enum {
 } MAPIOFFLINE_NOTIFY_TYPE;
 ```
 
-## <a name="see-also"></a><span data-ttu-id="c9a84-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="c9a84-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f59de-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="f59de-108">See also</span></span>
 
 
 
-[<span data-ttu-id="c9a84-109">オフライン状態 API について</span><span class="sxs-lookup"><span data-stu-id="c9a84-109">About the Offline State API</span></span>](about-the-offline-state-api.md)
+[<span data-ttu-id="f59de-109">オフライン状態 API について</span><span class="sxs-lookup"><span data-stu-id="f59de-109">About the Offline State API</span></span>](about-the-offline-state-api.md)
   
-[<span data-ttu-id="c9a84-110">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="c9a84-110">MAPI Constants</span></span>](mapi-constants.md)
+[<span data-ttu-id="f59de-110">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="f59de-110">MAPI Constants</span></span>](mapi-constants.md)
   
-[<span data-ttu-id="c9a84-111">MAPIOFFLINE_NOTIFY</span><span class="sxs-lookup"><span data-stu-id="c9a84-111">MAPIOFFLINE_NOTIFY</span></span>](mapioffline_notify.md)
+[<span data-ttu-id="f59de-111">MAPIOFFLINE_NOTIFY</span><span class="sxs-lookup"><span data-stu-id="f59de-111">MAPIOFFLINE_NOTIFY</span></span>](mapioffline_notify.md)
 

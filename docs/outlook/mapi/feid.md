@@ -9,21 +9,21 @@ localization_priority: Normal
 ms.assetid: 2dde7eec-df3d-723c-db08-7ff0b6107a0b
 description: '最終更新日: 2012 年7月2日'
 ms.openlocfilehash: 88716719857cfd623d30a3684fc997ea8019455e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334840"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409812"
 ---
-# <a name="feid"></a><span data-ttu-id="44d04-103">FEID</span><span class="sxs-lookup"><span data-stu-id="44d04-103">FEID</span></span>
+# <a name="feid"></a><span data-ttu-id="b8564-103">FEID</span><span class="sxs-lookup"><span data-stu-id="b8564-103">FEID</span></span>
 
  
   
-<span data-ttu-id="44d04-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="44d04-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="b8564-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b8564-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="44d04-105">フォルダーの識別子。</span><span class="sxs-lookup"><span data-stu-id="44d04-105">Identifier for a folder.</span></span> <span data-ttu-id="44d04-106">エントリ id とその他の関連情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="44d04-106">It contains an entry identifier and other relevant information.</span></span>
+<span data-ttu-id="b8564-105">フォルダーの識別子。</span><span class="sxs-lookup"><span data-stu-id="b8564-105">Identifier for a folder.</span></span> <span data-ttu-id="b8564-106">エントリ id とその他の関連情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="b8564-106">It contains an entry identifier and other relevant information.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="44d04-107">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="44d04-107">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="b8564-107">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="b8564-107">Quick info</span></span>
 
 ```cpp
 struct FEID 
@@ -35,35 +35,35 @@ struct FEID
 };
 ```
 
-## <a name="members"></a><span data-ttu-id="44d04-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="44d04-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="b8564-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="b8564-108">Members</span></span>
 
- <span data-ttu-id="44d04-109">_abflags_</span><span class="sxs-lookup"><span data-stu-id="44d04-109">_abFlags_</span></span>
+ <span data-ttu-id="b8564-109">_abflags_</span><span class="sxs-lookup"><span data-stu-id="b8564-109">_abFlags_</span></span>
   
-> <span data-ttu-id="44d04-110">フォルダーの4バイトのエントリ id。</span><span class="sxs-lookup"><span data-stu-id="44d04-110">4-byte entry identifier for the folder.</span></span> <span data-ttu-id="44d04-111">MAPI エントリ識別子の詳細については、「 **[ENTRYID](entryid.md)**」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="44d04-111">For more information about MAPI entry identifiers, see **[ENTRYID](entryid.md)**.</span></span> 
+> <span data-ttu-id="b8564-110">フォルダーの4バイトのエントリ id。</span><span class="sxs-lookup"><span data-stu-id="b8564-110">4-byte entry identifier for the folder.</span></span> <span data-ttu-id="b8564-111">MAPI エントリ識別子の詳細については、「 **[ENTRYID](entryid.md)**」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b8564-111">For more information about MAPI entry identifiers, see **[ENTRYID](entryid.md)**.</span></span> 
     
- <span data-ttu-id="44d04-112">_muid_</span><span class="sxs-lookup"><span data-stu-id="44d04-112">_muid_</span></span>
+ <span data-ttu-id="b8564-112">_muid_</span><span class="sxs-lookup"><span data-stu-id="b8564-112">_muid_</span></span>
   
-> <span data-ttu-id="44d04-113">ストアプロバイダーを識別する GUID。</span><span class="sxs-lookup"><span data-stu-id="44d04-113">GUID that identifies the store provider.</span></span> <span data-ttu-id="44d04-114">**MAPIUID**の型定義については、「mapidefs.h」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="44d04-114">See mapidefs.h for the type definition of **MAPIUID**.</span></span> 
+> <span data-ttu-id="b8564-113">ストアプロバイダーを識別する GUID。</span><span class="sxs-lookup"><span data-stu-id="b8564-113">GUID that identifies the store provider.</span></span> <span data-ttu-id="b8564-114">**MAPIUID**の型定義については、「mapidefs.h」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b8564-114">See mapidefs.h for the type definition of **MAPIUID**.</span></span> 
     
- <span data-ttu-id="44d04-115">_プレースホルダー_</span><span class="sxs-lookup"><span data-stu-id="44d04-115">_placeholder_</span></span>
+ <span data-ttu-id="b8564-115">_プレースホルダー_</span><span class="sxs-lookup"><span data-stu-id="b8564-115">_placeholder_</span></span>
   
-> <span data-ttu-id="44d04-116">このメンバーは、Outlook の内部使用のために予約されており、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="44d04-116">This member is reserved for the internal use of Outlook and is not supported.</span></span>
+> <span data-ttu-id="b8564-116">このメンバーは、Outlook の内部使用のために予約されており、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="b8564-116">This member is reserved for the internal use of Outlook and is not supported.</span></span>
     
- <span data-ttu-id="44d04-117">_ltid_</span><span class="sxs-lookup"><span data-stu-id="44d04-117">_ltid_</span></span>
+ <span data-ttu-id="b8564-117">_ltid_</span><span class="sxs-lookup"><span data-stu-id="b8564-117">_ltid_</span></span>
   
-> <span data-ttu-id="44d04-118">フォルダーの長期 ID。</span><span class="sxs-lookup"><span data-stu-id="44d04-118">Long-term ID of the folder.</span></span>
+> <span data-ttu-id="b8564-118">フォルダーの長期 ID。</span><span class="sxs-lookup"><span data-stu-id="b8564-118">Long-term ID of the folder.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="44d04-119">関連項目</span><span class="sxs-lookup"><span data-stu-id="44d04-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b8564-119">関連項目</span><span class="sxs-lookup"><span data-stu-id="b8564-119">See also</span></span>
 
 
 
-[<span data-ttu-id="44d04-120">レプリケーション状態のマシンについて</span><span class="sxs-lookup"><span data-stu-id="44d04-120">About the Replication State Machine</span></span>](about-the-replication-state-machine.md)
+[<span data-ttu-id="b8564-120">レプリケーション状態のマシンについて</span><span class="sxs-lookup"><span data-stu-id="b8564-120">About the Replication State Machine</span></span>](about-the-replication-state-machine.md)
   
-[<span data-ttu-id="44d04-121">MAPI 定数</span><span class="sxs-lookup"><span data-stu-id="44d04-121">MAPI Constants</span></span>](mapi-constants.md)
+[<span data-ttu-id="b8564-121">MAPI 定数</span><span class="sxs-lookup"><span data-stu-id="b8564-121">MAPI Constants</span></span>](mapi-constants.md)
   
-[<span data-ttu-id="44d04-122">LTID</span><span class="sxs-lookup"><span data-stu-id="44d04-122">LTID</span></span>](ltid.md)
+[<span data-ttu-id="b8564-122">LTID</span><span class="sxs-lookup"><span data-stu-id="b8564-122">LTID</span></span>](ltid.md)
   
-[<span data-ttu-id="44d04-123">UPFLD</span><span class="sxs-lookup"><span data-stu-id="44d04-123">UPFLD</span></span>](upfld.md)
+[<span data-ttu-id="b8564-123">UPFLD</span><span class="sxs-lookup"><span data-stu-id="b8564-123">UPFLD</span></span>](upfld.md)
   
-[<span data-ttu-id="44d04-124">頻度</span><span class="sxs-lookup"><span data-stu-id="44d04-124">SYNC</span></span>](sync.md)
+[<span data-ttu-id="b8564-124">SYNC</span><span class="sxs-lookup"><span data-stu-id="b8564-124">SYNC</span></span>](sync.md)
 

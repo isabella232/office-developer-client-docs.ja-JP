@@ -10,20 +10,20 @@ localization_priority: Normal
 ms.assetid: ed47c690-f874-498c-1fbc-61fc49309ea5
 description: ページ上にあるすべての図形間の間隔やコネクタ間の間隔、およびすべてのコネクタに対する迂回方法など、図形とコネクタに関するページ設定を制御するセルを格納します。
 ms.openlocfilehash: b9b3640bd91068a150267a069ef1889a05dc2263
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359277"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428348"
 ---
-# <a name="page-layout-section"></a><span data-ttu-id="64018-103">[Page Layout] セクション</span><span class="sxs-lookup"><span data-stu-id="64018-103">Page Layout Section</span></span>
+# <a name="page-layout-section"></a><span data-ttu-id="eddcc-103">[Page Layout] セクション</span><span class="sxs-lookup"><span data-stu-id="eddcc-103">Page Layout Section</span></span>
 
-<span data-ttu-id="64018-104">ページ上にあるすべての図形間の間隔やコネクタ間の間隔、およびすべてのコネクタに対する迂回方法など、図形とコネクタに関するページ設定を制御するセルを格納します。</span><span class="sxs-lookup"><span data-stu-id="64018-104">Contains cells that control the page settings for shapes and connectors, such as the spacing between all shapes on the page, spacing between all connectors on the page, and routing style for all connectors on the page.</span></span>
+<span data-ttu-id="eddcc-104">ページ上にあるすべての図形間の間隔やコネクタ間の間隔、およびすべてのコネクタに対する迂回方法など、図形とコネクタに関するページ設定を制御するセルを格納します。</span><span class="sxs-lookup"><span data-stu-id="eddcc-104">Contains cells that control the page settings for shapes and connectors, such as the spacing between all shapes on the page, spacing between all connectors on the page, and routing style for all connectors on the page.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="64018-105">解説</span><span class="sxs-lookup"><span data-stu-id="64018-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="eddcc-105">注釈</span><span class="sxs-lookup"><span data-stu-id="eddcc-105">Remarks</span></span>
 
-<span data-ttu-id="64018-106">特定の図形のページの既定値を上書きするには、[**図形レイアウト**] セクションのセルを使用します。</span><span class="sxs-lookup"><span data-stu-id="64018-106">To override the page defaults for a specific shape, use the cells in the **Shape Layout** section.</span></span> 
+<span data-ttu-id="eddcc-106">特定の図形のページの既定値を上書きするには、[**図形レイアウト**] セクションのセルを使用します。</span><span class="sxs-lookup"><span data-stu-id="eddcc-106">To override the page defaults for a specific shape, use the cells in the **Shape Layout** section.</span></span> 
   
-<span data-ttu-id="64018-107">このセクションのセルの値は、[**ページ設定**] ダイアログボックスの [**レイアウトと経路**] タブで設定することもできます ([**デザイン**] タブで、[**ページ設定**] グループのダイアログボックス起動ツールをクリックします)。</span><span class="sxs-lookup"><span data-stu-id="64018-107">You can also set the values of the cells in this section on the **Layout and Routing** tab in the **Page Setup** dialog box (on the **Design** tab, click the dialog box launcher in the **Page Setup** group).</span></span> 
+<span data-ttu-id="eddcc-107">このセクションのセルの値は、[**ページ設定**] ダイアログボックスの [**レイアウトと経路**] タブで設定することもできます ([**デザイン**] タブで、[**ページ設定**] グループのダイアログボックス起動ツールをクリックします)。</span><span class="sxs-lookup"><span data-stu-id="eddcc-107">You can also set the values of the cells in this section on the **Layout and Routing** tab in the **Page Setup** dialog box (on the **Design** tab, click the dialog box launcher in the **Page Setup** group).</span></span> 
   
 
