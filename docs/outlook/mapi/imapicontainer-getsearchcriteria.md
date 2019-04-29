@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 41b6c162-9984-43a3-b38e-44f0afae67de
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7845238722ce81b84210b6f4fc33f9df0abacc07
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349295"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412024"
 ---
 # <a name="imapicontainergetsearchcriteria"></a>IMAPIContainer::GetSearchCriteria
 
@@ -88,7 +88,7 @@ MAPI_E_NOT_INITIALIZED
   
 > コンテナーに対して検索条件が設定されていません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMAPIContainer:: getsearchcriteria**メソッドは、通常、検索結果フォルダーである検索をサポートするコンテナーの検索条件を取得します。 検索条件を作成するには、コンテナーの**IMAPIContainer:: setsearchcriteria**メソッドを呼び出します。 
   

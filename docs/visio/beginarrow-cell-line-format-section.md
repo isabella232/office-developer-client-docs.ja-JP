@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 0ab4044e-2d77-1fbe-ef20-5d029bc064ba
 description: 線の最初の頂点に、矢印またはその他の線の端点の書式があるかどうかを示します。 0 ~ 45 の数値、またはユーザー設定の線の端点の名前を使用する関数を入力するか、[線] ダイアログボックスを使用します。
 ms.openlocfilehash: cf5a512dabd0e6296b83fa7bfd2a2a6134143d50
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346236"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410295"
 ---
 # <a name="beginarrow-cell-line-format-section"></a>[BeginArrow] セル ([Line Format] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32346236"
 | .0  <br/> | 矢印を付けません。  <br/> |
 | 1 ～ 45  <br/> | さまざまな矢印のスタイル。入力した値は、[**線**] ダイアログ ボックスでインデックスが付けられたエントリに対応します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 矢印のサイズは [BeginArrowSize] セルで設定します。
   

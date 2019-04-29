@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 144dd06f-7225-57db-fd19-a58d6bccf0e1
 description: 他のセルが参照する数式の入力およびテストを実行するための作業領域です。
 ms.openlocfilehash: a7d2c6762e96fc19986521c2ba164666b925c928
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344528"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411604"
 ---
 # <a name="scratch-section"></a>[Scratch] セクション
 
 他のセルが参照する数式の入力およびテストを実行するための作業領域です。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセクションは、[**セクションの挿入**] ダイアログ ボックスを使用して追加できます。この操作を行うには、[シェイプシート] ウィンドウで右クリックして、[**セクションの挿入**] をクリックします。
   

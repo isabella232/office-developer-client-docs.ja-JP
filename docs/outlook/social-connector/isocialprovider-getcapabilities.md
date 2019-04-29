@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: f40d5405-12e3-475b-b731-d2223ab70c1d
 description: プロバイダー機能について説明する文字列を取得します。
 ms.openlocfilehash: cf3d1418ac0ecbfc3f67bb550a24ec71781f2637
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285765"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408104"
 ---
 # <a name="isocialprovidergetcapabilities"></a>ISocialProvider::GetCapabilities
 
@@ -29,7 +29,7 @@ _result_
   
 > 読み上げOutlook Social Connector (.osc) プロバイダーの機能を表す XML 文字列。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 返された_結果_xml 文字列は、**機能**要素のスキーマ定義に準拠している必要があります。そのためには、プロバイダ拡張用の XML スキーマで定義されています。 
   

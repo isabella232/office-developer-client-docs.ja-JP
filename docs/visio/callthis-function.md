@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 461abfc1-d2cc-2354-1c2f-395c9e351a78
 description: Microsoft Visual Basic for Applications (VBA) プロジェクトのプロシージャを呼び出します。
 ms.openlocfilehash: 7e0f0bafa39d6c1eb1fd39535506981c937ce8a1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337241"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33413816"
 ---
 # <a name="callthis-function"></a>CALLTHIS 関数
 
@@ -28,11 +28,11 @@ CALLTHIS ("* **プロシージャ** *", ["* * *project* * *"], [* * *arg1* * *, 
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _プロシージャ_ <br/> |必須  <br/> |**String** <br/> | 呼び出すプロシージャの名前を指定します。  <br/> |
+| _procedure_ <br/> |必須  <br/> |**String** <br/> | 呼び出すプロシージャの名前を指定します。  <br/> |
 | _プロジェクト_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |プロシージャが含まれるプロジェクトを指定します。  <br/> |
 | _引き_ <br/> |省略可能  <br/> |**数値型 (Number)、文字列型 (String)、日付型 (Date)、または通貨型 (Currency)** <br/> |パラメーターとしてプロシージャに渡されます。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 VBA プロジェクトでは、*プロシージャ*は次のように定義されます。 
   

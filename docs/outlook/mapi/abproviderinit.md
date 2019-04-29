@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: c3dcd0d4-018a-47b0-b040-227034ed59d8
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: acec07df0b72685cf9ec6b21499c730b72f58c59
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328113"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428285"
 ---
 # <a name="abproviderinit"></a>ABProviderInit
  
@@ -97,7 +97,7 @@ MAPI_E_VERSION
   
 > MAPI で使用されている spi バージョンは、このプロバイダーで使用されている spi と互換性がありません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 MAPI はエントリポイント関数**abproviderinit**を呼び出して、クライアントログオンの後にアドレス帳プロバイダーを初期化します。 
   

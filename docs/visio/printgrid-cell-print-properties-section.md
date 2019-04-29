@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 0504ff7f-2274-7ae3-1f4b-a3d890dbd79a
 description: 図面ページの印刷時にグリッドを印刷するかどうかを指定します。
 ms.openlocfilehash: 9b98999cd02fa6a47ec8564bbd7337ecf8637306
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315191"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433207"
 ---
 # <a name="printgrid-cell-print-properties-section"></a>[PrintGrid] セル ([Print Properties] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32315191"
 |TRUE  <br/> |このページの印刷時にグリッドを表示します。  <br/> |
 |FALSE  <br/> |このページの印刷時にグリッドを表示しません (既定値)。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この値は、[**ページ設定**] ダイアログ ボックスの [**プリンターの設定**] タブにある [**目盛線**] チェック ボックスに対応しています (このダイアログ ボックスを開くには、[**デザイン**] タブで [**ページ設定**] 矢印をクリックします)。印刷されたグリッドは、色 (印刷ではグレー) 以外の点では、Microsoft Visio 図面ウィンドウに表示されるグリッドと同じです。 
   

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: fcb93346-db92-44b5-a447-59fd95f98f45
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2d832b3a53f8056c034b5e87f1f309fa3058173d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355805"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408188"
 ---
 # <a name="pidtagmessagetoken-canonical-property"></a>PidTagMessageToken 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32355805"
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |セキュリティで保護されたメッセージングのプロパティ  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティは、保護されたセキュリティ関連の情報を発信者から受信者に伝達します。 **PR_MESSAGE_SECURITY_LABEL** ([PidTagMessageSecurityLabel](pidtagmessagesecuritylabel-canonical-property.md)) プロパティと共に、ラベルがメッセージの内容と関連付けられていることを保証します。 **PR_CONTENT_INTEGRITY_CHECK** ([PidTagContentIntegrityCheck](pidtagcontentintegritycheck-canonical-property.md)) プロパティと共に、メッセージの内容が変更されていないかどうかを確認します。
   

@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 5e31f5ef-6692-40ea-b737-bfd1c3775b02
 description: ここでは、InfoPath 2003 互換オブジェクト モデルを使用するマネージ コード フォーム テンプレートを作成する際に、発生する可能性のある一般的な問題の解決に役立つヒントを記載します。
 ms.openlocfilehash: 52f7adbe9283ac299759c2837b487e57b9640834
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303480"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33413662"
 ---
 # <a name="troubleshoot-form-templates-that-use-the-infopath-object-model"></a>InfoPath オブジェクトモデルを使用するフォームテンプレートのトラブルシューティング
 

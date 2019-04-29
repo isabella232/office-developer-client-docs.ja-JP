@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 4c8e366f-9e9b-30ea-a89f-57c8d7a1168e
 description: レイヤーがアクティブであるかどうかを指定します。事前にレイヤーを割り当てられていない図形は、図面ページにドラッグしたときにアクティブになっているレイヤーに割り当てられます。
 ms.openlocfilehash: f97f7dc09d1f882452ae2234882de45f06bd0da1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338781"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417435"
 ---
 # <a name="active-cell-layers-section"></a>[Active] セル ([Layers] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32338781"
 |TRUE  <br/> |レイヤーはアクティブです。  <br/> |
 |FALSE  <br/> |レイヤーはアクティブではありません。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルの値は、[**レイヤー プロパティ**] ダイアログ ボックスの [**アクティブ**] の設定に対応しています (このダイアログ ボックスを開くには、[**ホーム**] タブの [**編集**] グループで、[**レイヤー**] をクリックして、[**レイヤー プロパティ**] をクリックします)。
   

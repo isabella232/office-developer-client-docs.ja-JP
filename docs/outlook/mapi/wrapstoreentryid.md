@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b20107e3-5e23-4cde-9cd6-670c914ea70a
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: e797a80cf8659baa7ca935f94b3ab65c200530a3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32325670"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409210"
 ---
 # <a name="wrapstoreentryid"></a>WrapStoreEntryID
 
@@ -78,7 +78,7 @@ MAPI_UNICODE
 
 なし。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 メッセージストアオブジェクトは、そのメッセージストアとのサービスプロバイダ coresident にのみ意味がある内部エントリ識別子を保持します。 その他のメッセージングコンポーネントの場合、MAPI は、メッセージストアに属しているものとして認識できるようにするために、ラップされたバージョンの内部エントリ識別子を提供します。 coresident サービスプロバイダーには、必ず、元のラップされていないメッセージストアエントリ識別子を指定する必要があります。クライアントアプリケーションには常にラップされたバージョンが指定されている必要があります。これは、メッセージングドメインとその他のドメイン内の任意の場所で使用できます。 
   

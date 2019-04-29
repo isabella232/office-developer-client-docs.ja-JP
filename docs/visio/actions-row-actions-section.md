@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 29a7464a-b9d4-a8ea-161b-3044de32ed23
 description: ショートカットメニューまたはアクションタグメニューで、ユーザー設定のコマンドに関連付けられているアクションを指定するセルが含まれています。 [Actions] セクションには、各アクションごとに 1 つの [Actions] 行があります。
 ms.openlocfilehash: 37464e98b3e4f7d07b2ae4bd391b31ec009b6726
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283045"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408006"
 ---
 # <a name="actions-row-actions-section"></a>[Actions] 行 ([Actions] セクション)
 
@@ -38,7 +38,7 @@ ms.locfileid: "32283045"
 |[可視](invisible-cell-actions-section.md) <br/> |アクション タグ メニューまたはショートカット メニューにメニュー項目が表示されるかどうかを示します。  <br/> |
 |[BeginGroup](begingroup-cell-actions-section.md) <br/> |メニュー項目の上に区切り記号を挿入するかどうかを指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
  必要に応じて [Actions.  必要に応じて行に*名前*を付け、わかりやすい名前を行に割り当て、セルの値を設定します。 既存の [Actions] セクションにカスタム コマンドを追加するには、行を右クリックして、ショートカット メニューの **[行の挿入]** をクリックします。 
   

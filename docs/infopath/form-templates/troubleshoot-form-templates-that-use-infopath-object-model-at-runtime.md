@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 65e7882e-6397-4375-9bb4-d993d700d749
 description: 次のセクションでは、SemiTrust によって提供される infopath 2003 互換オブジェクトモデルを使用する infopath マネージコードフォームテンプレートの作業中に発生する可能性のある一般的なトラブルシューティングのシナリオについて説明します。実行時の名前空間。
 ms.openlocfilehash: c7b4b65cc722e72ef155529a0b2aa66c4f6cfcff
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299798"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414446"
 ---
 # <a name="troubleshoot-form-templates-that-use-the-infopath-object-model-at-run-time"></a>InfoPath オブジェクトモデルを使用するフォームテンプレートを実行時にトラブルシューティングする
 

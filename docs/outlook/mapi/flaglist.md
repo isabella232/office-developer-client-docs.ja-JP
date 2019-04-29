@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: b4c0655c-1a3a-4f89-a977-0431db596512
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: a5e508f5f7e6554a115517da87a8eac39f39aecf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336940"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412976"
 ---
 # <a name="flaglist"></a>FLAGLIST
 
@@ -40,7 +40,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **cFlags**
   
@@ -62,7 +62,7 @@ MAPI_UNRESOLVED
   
 > エントリは解決されていません。 他のアドレス帳コンテナーは、この受信者の解決を試みます。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **flaglist**構造体は、 [IABContainer:: ResolveNames](iabcontainer-resolvenames.md)のパラメーターとして使用されます。 解決される各受信者は、 [adrlist](adrlist.md)構造に含まれています。 アドレス帳コンテナーは各受信者の解決を試みたときに、 **flaglist**構造の対応するエントリに適切なフラグを設定します。 **flaglist**構造体のすべてのエントリは、 **adrlist**構造内のエントリと同じ順序になっています。 これにより、フラグ設定を受信者に簡単に関連付けることができます。 
   

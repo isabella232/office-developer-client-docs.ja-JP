@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 763cab41-f6f6-4cb0-8cb8-170fdf2a92e6
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: b237a57dfea020c7bfcb66d49d43428c1f6506c2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317361"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430365"
 ---
 # <a name="imsgserviceadminsetprimaryidentity"></a>IMsgServiceAdmin::SetPrimaryIdentity
 
@@ -54,7 +54,7 @@ MAPI_E_NO_ACCESS
   
 > **setprimaryidentity**は、 **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) プロパティに SERVICE_NO_PRIMARY_IDENTITY フラグが設定されたメッセージサービスを指定しようとしました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMsgServiceAdmin:: setprimaryidentity**メソッドは、プロファイルのプライマリ id のサプライヤーとしてメッセージサービスを確立します。 プライマリ id は、通常、メッセージサービスにログオンしているユーザーです。 次の3つのプロパティで表されます。 
   

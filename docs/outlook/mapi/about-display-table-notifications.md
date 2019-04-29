@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 085151e9-4809-4d2b-ae4d-e318355e1f5a
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 41e6a2c8b6856bf072972325e7e08aabe3e17446
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326412"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430015"
 ---
 # <a name="about-display-table-notifications"></a>テーブル通知の表示について
 
@@ -41,7 +41,7 @@ MAPI は、必要に応じて、プロパティインターフェイスの実装
 |チェック ボックス  <br/> |**ulprpropertyname**メンバーの値を再度読み込みます。  <br/> |
 |コンボ ボックス  <br/> |[dtblcombobox](dtblcombobox.md)構造体の**ulprtablename**メンバーに関連付けられているテーブルを再度開きます。 **ulprpropertyname**メンバーの値を含むすべての行を再度読み込みます。  <br/> |
 |ドロップダウンリストボックス  <br/> |[dtblddlbx](dtblddlbx.md)構造の**ulprtablename**メンバーに関連付けられているテーブルを再度開き、すべての行を再度読み込みます。 [imapiprop:: GetProps](imapiprop-getprops.md)を呼び出して、 **ulprdisplayproperty**および**ulprsetproperty**メンバーに格納されているプロパティの値を取得します。  <br/> |
-|編集  <br/> |プロパティを再度読み込み、再読み込みします。  <br/> |
+|Edit  <br/> |プロパティを再度読み込み、再読み込みします。  <br/> |
 |グループ ボックス  <br/> |通知を無視します。  <br/> |
 |Label  <br/> |通知を無視します。  <br/> |
 |複数選択リストボックス  <br/> |いずれかの列がエントリ識別子の場合は、リストボックスを更新します。 対応するオブジェクトが閉じられていないか、再読み込みになっていません。  <br/> |

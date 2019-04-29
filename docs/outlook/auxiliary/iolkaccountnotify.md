@@ -7,11 +7,11 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 360854bb-e9be-a784-e80b-3f18418ded1b
 ms.openlocfilehash: ab24feca84e7049a9800b860c332db52d19cf929
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322072"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412500"
 ---
 # <a name="iolkaccountnotify"></a>IOlkAccountNotify
 
@@ -31,7 +31,7 @@ ms.locfileid: "32322072"
 |:-----|:-----|
 |[Notify](iolkaccountnotify-notify.md) <br/> |指定したアカウントへの変更をクライアントに通知します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このインターフェイスは、通知を設定するときに[IOlkAccountManager:: アドバイズ](iolkaccountmanager-advise.md)に渡されます。 
   

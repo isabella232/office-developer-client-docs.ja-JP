@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: b465d015-9b62-4986-b0df-118121f60602
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: bc511ea4b3ec4eea9e38f744bcb8f277108085cc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336898"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33413858"
 ---
 # <a name="flatentrylist"></a>FLATENTRYLIST
 
@@ -40,7 +40,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 **centries**
   
@@ -54,7 +54,7 @@ typedef struct
   
 > 1つまたは複数の**FLATENTRY**構造を含むバイト配列。エンドツーエンドで配置されています。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **abentries**配列では、各**FLATENTRY**構造は、自然に配置された境界に沿って配置されます。 2つの**FLATENTRY**構造体間で自然な配置が行われるように、パディングとして追加のバイトが含まれています。 **abentries**メンバーのオフセットは8であるため、配列内の最初の**FLATENTRY**構造体は常に正確に調整されます。 次の構造体のオフセットを計算するには、最初のエントリのサイズを、次の4つの倍数まで切り上げて使用します。 [CbFLATENTRY](cbflatentry.md)マクロを使用して、 **FLATENTRY**構造体のサイズを計算します。 
   

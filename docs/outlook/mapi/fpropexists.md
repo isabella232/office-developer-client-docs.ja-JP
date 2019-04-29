@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 33c00752-cdc1-4cbe-8fca-6b06c78bd362
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7190065c687524302bae362a2e25d3848e17d1bc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327273"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429489"
 ---
 # <a name="fpropexists"></a>FPropExists
 
@@ -60,7 +60,7 @@ FALSE
   
 > 指定されたプロパティタグに一致するものが見つかりませんでした。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _ulPropTag_パラメーターの property タグに type PT_UNSPECIFIED が指定されている場合、 **fpropexists**関数は、プロパティ識別子のみに基づいて一致を検索します。 それ以外の場合は、型を含むプロパティタグ全体の一致が照合されます。 
   

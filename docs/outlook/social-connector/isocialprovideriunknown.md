@@ -9,21 +9,21 @@ localization_priority: Normal
 ms.assetid: 1c9f4dd4-65f6-446f-8b86-a375ce402658
 description: Outlook Social Connector (.osc) プロバイダーのインスタンスを表します。
 ms.openlocfilehash: f28b8343d92b09455b6049f421b839efbda21c1a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285485"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409959"
 ---
 # <a name="isocialprovider--iunknown"></a>ISocialProvider : IUnknown
 
 Outlook Social Connector (.osc) プロバイダーのインスタンスを表します。
   
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 次の表に、 **iare alprovider**インターフェイスで使用できるメンバーを示します。 
   
-|**Name**|**メンバーの種類**|**説明**|
+|**名前**|**メンバーの種類**|**説明**|
 |:-----|:-----|:-----|
 |[defaultsiteurls](isocialprovider-defaultsiteurls.md) <br/> |プロパティ  <br/> |.osc プロバイダーのサイト url を指定する文字列の配列を返します。  <br/> |
 |[GetAutoConfiguredSession](isocialprovider-getautoconfiguredsession.md) <br/> |メソッド  <br/> |自動構成された [ISocialSession](isocialsessioniunknown.md) インターフェイスを取得します。  <br/> |
@@ -36,7 +36,7 @@ Outlook Social Connector (.osc) プロバイダーのインスタンスを表し
 |[指定した仮のネットワーク名](isocialprovider-socialnetworkname.md) <br/> |プロパティ  <br/> |ソーシャルネットワーク名を表す文字列を返します。  <br/> |
 |[バージョン](isocialprovider-version.md) <br/> |プロパティ  <br/> |このソーシャルネットワークのプロバイダーのバージョン番号を表す文字列を返します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 .osc プロバイダーは、このインターフェイスを実装して、.osc と通信する必要があります。
   

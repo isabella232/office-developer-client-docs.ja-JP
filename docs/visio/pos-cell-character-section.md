@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: c02186ce-6a20-fbe7-588d-d64c3ea4dec4
 description: 基線に対する、図形のテキストの位置を指定します。
 ms.openlocfilehash: d5f6823d6f55493095d29054745f62b579a47893
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359816"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414019"
 ---
 # <a name="pos-cell-character-section"></a>[Pos] セル ([Character] セクション)
 
@@ -23,10 +23,10 @@ ms.locfileid: "32359816"
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
 | .0  <br/> | 標準の位置  <br/> |**visPosNormal** <br/> |
-| 1-d  <br/> | Superscript  <br/> |**visPosSuper** <br/> |
-| pbm-2  <br/> | Subscript  <br/> |**visPosSub** <br/> |
+| 1   <br/> | 付  <br/> |**visPosSuper** <br/> |
+| 2   <br/> | 13  <br/> |**visPosSub** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Pos] セルへの参照を取得するには、次の値を使用します。 
   

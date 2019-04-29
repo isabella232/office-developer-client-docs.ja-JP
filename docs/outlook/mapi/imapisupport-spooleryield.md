@@ -13,11 +13,11 @@ api_type:
 ms.assetid: f5c6ba8f-4ef5-4d60-b4e6-5b9160ec4e99
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: f6cdebf82d8b84ada3d029865867c5192af90b0d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329039"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409910"
 ---
 # <a name="imapisupportspooleryield"></a>IMAPISupport::SpoolerYield
 
@@ -49,7 +49,7 @@ MAPI_W_CANCEL_MESSAGE
   
 > トランスポートプロバイダーに対して、まだ受信していない受信者に対するメッセージの配信を停止するように指示します。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport:: SpoolerYield**メソッドは、トランスポートプロバイダーのサポートオブジェクトに実装されています。 トランスポートプロバイダーは、 **SpoolerYield**を呼び出して、MAPI スプーラーで必要な処理を実行できるようにします。 
   

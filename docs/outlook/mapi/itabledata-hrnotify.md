@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 98548b50-342e-434a-9ad3-c37ba418c5ce
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: aa2170bf4bedfb441ad4808f774f6f71d5caf85e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348637"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33413270"
 ---
 # <a name="itabledatahrnotify"></a>ITableData::HrNotify
 
@@ -55,7 +55,7 @@ S_OK
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **itabledata:: hrnotify**メソッドは、 _lpspropvalue_パラメーターで指定されたプロパティによって示される行に一致する行に対して TABLE_ROW_MODIFIED 通知を送信します。 **hrnotify**は、変更が行に対して発生したかどうかにかかわらず通知を送信します。 表のビューを持つすべてのクライアントおよびサービスプロバイダーは、 [「IMAPITable:: アドバイス](imapitable-advise.md)」を参照して、この通知を受信します。 
   

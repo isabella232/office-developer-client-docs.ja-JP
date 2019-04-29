@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 28b18e8d-fecf-a798-813e-c1a310002244
 description: 数式を入力またはテストするために使用できる、スクラッチ セルです。
 ms.openlocfilehash: e7bd61b8bc7a1a3b765af738681d958e2c83ba05
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345088"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408174"
 ---
 # <a name="d-cell-connection-points-section"></a>[D] セル ([Connection Points] セクション)
 
 数式を入力またはテストするために使用できる、スクラッチ セルです。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [D] セルにアクセスするには、行を右クリックしてから、ショートカット メニューの [**図形要素の変更**] をクリックします。 
   

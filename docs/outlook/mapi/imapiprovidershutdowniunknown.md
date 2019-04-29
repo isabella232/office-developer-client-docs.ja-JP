@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: fd86c8a5-f251-46c3-ace9-515e94e504ac
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 92067b5badfb2aab40f3b3735a164bc09321702c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322408"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409658"
 ---
 # <a name="imapiprovidershutdown--iunknown"></a>IMAPIProviderShutdown : IUnknown
 
@@ -44,7 +44,7 @@ mapi サブシステムが mapi クライアントの高速シャットダウン
 |[notifyprocessshutdown](imapiprovidershutdown-notifyprocessshutdown.md) <br/> |mapi クライアントが高速シャットダウンを実行することを mapi プロバイダーに示します。これにより、プロバイダーはデータ損失を防止するアクションを実行できるようになります。  <br/> |
 |[dofastshutdown](imapiprovidershutdown-dofastshutdown.md) <br/> |mapi プロバイダーに対して、mapi クライアントが直ちに終了していることを示します。したがって、データ損失を防止するために mapi プロバイダーは変更を保持します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 高速シャットダウンを使用すると、クライアントとロードされた mapi プロバイダーが mapi の設定とデータを保存した後に、mapi クライアントが短時間でプロセスを終了することができます。 mapi クライアントは、常に高速シャットダウンを開始し、読み込み済みの mapi プロバイダーからの高速シャットダウンのサポートのために mapi サブシステムに対してクエリを実行する必要があります。 管理者は、ユーザーレベルで Windows レジストリを設定して、すべての MAPI クライアントの高速シャットダウンを可能にするために必要なプロバイダーサポートのレベルを指定することができます。 レジストリ設定の詳細については、「 [Fast Shutdown User Options](fast-shutdown-user-options.md)」を参照してください。 しかし、データ損失が発生することなく、高速なシャットダウンが正常に実行されるようにするには、MAPI プロバイダーが**imapiprovidershutdown**インターフェイスを実装する必要があります。 
   

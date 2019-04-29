@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: fffbefd6-8b0b-0023-6b03-026d1c6e885e
 description: 1-D 図形を別の図形に接着するときに静的接着 (点から点) と動的接着 (図形から図形) のどちらを使用するかを指定します。
 ms.openlocfilehash: ae4eddf17c6e7b5e56cb3397f03d0721d965c9b7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339516"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410673"
 ---
 # <a name="gluetype-cell-glue-info-section"></a>[GlueType] セル ([Glue Info] セクション)
 
@@ -28,7 +28,7 @@ ms.locfileid: "32339516"
 | &amp;H4  <br/> | 動的接着を使用しません。  <br/> |**visGlueTypeNoWalking** <br/> |
 | &amp;H8  <br/> | この 2-D 図形に対しては、動的接着による接続はできません。  <br/> |**visGlueTypeNoWalkingTo** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルの値が 1、2、または 3 の場合、次の操作のいずれかが行われたときに動的接着が使用されます。
   

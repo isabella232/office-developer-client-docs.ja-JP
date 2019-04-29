@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 2dd5d24d-0fbb-43bd-bc41-93c29536e342
 description: 最終更新日:05 年10月2012日
 ms.openlocfilehash: 262955c0c2753dd69e874ab60246b3ed50500dbc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335085"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409994"
 ---
 # <a name="content-retired-notice-mapi"></a>コンテンツ廃止通知 (MAPI)
 
@@ -29,8 +29,8 @@ ms.locfileid: "32335085"
     
 - [MAPI のサンプル](mapi-samples.md)
     
-- [MAPI �̊T�O](mapi-concepts.md)
+- [MAPI の概念](mapi-concepts.md)
     
-- [MAPI ���t�@�����X](mapi-reference.md)
+- [MAPI リファレンス](mapi-reference.md)
     
 

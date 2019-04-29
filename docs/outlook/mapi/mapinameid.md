@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9a92e9cd-8282-4cf0-93af-4089b3763594
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: baec750a460b3ba9becd2e1dddf967705424ac4e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357191"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411681"
 ---
 # <a name="mapinameid"></a>MAPINAMEID
 
@@ -45,7 +45,7 @@ typedef struct _MAPINAMEID
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **lpguid**
   
@@ -79,7 +79,7 @@ MNID_STRING
   
 > 名前付きプロパティの名前を説明する共用体。 この名前は、 **lID**に格納された整数値、または**lpwstrname**に格納されている Unicode 文字列のいずれかになります。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **mapinameid**構造は、0x8000 を超える識別子を持つ名前付きプロパティのプロパティを記述するために使用されます。 プロパティセットは、名前付きプロパティという重要な部分です。 たとえば、PS_PUBLIC_STRINGS や PS_ROUTING_ADDRTYPE は、MAPI によって定義されたプロパティセットです。 
   

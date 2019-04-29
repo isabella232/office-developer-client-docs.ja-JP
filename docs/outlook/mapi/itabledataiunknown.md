@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: ac7ae09f-ce19-45cf-8963-fad5bba75452
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3992bea899239ee5975505dec366490d6bbe1698
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348770"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430596"
 ---
 # <a name="itabledata--iunknown"></a>ITableData : IUnknown
 
@@ -50,7 +50,7 @@ ms.locfileid: "32348770"
 |[hrmodifyrows](itabledata-hrmodifyrows.md) <br/> |複数のテーブル行を挿入します。既存の行を置換する場合もあります。  <br/> |
 |[HrDeleteRows](itabledata-hrdeleterows.md) <br/> |複数の表の行を削除します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **itabledata**の MAPI 実装は、すべてのデータと、関連するすべての制限をメモリに保持することによってテーブルで機能し、非常に大きなテーブルで使用するのに適していません。 大規模な制限や分類などの複雑な操作はサポートされていません。 
   

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 10c7cb9d-2e9d-72eb-6b07-31eed892e646
 description: '�ŏI�X�V��: 2012�N6��25��'
 ms.openlocfilehash: 4440df4b8e4a46e13748cf47d599e16599aaf858
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32270085"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410694"
 ---
 # <a name="imapiofflinenotifynotify"></a>IMAPIOfflineNotify::Notify
 
@@ -39,7 +39,7 @@ void STDMETHODCALLTYPE Notify(
   
 > 順番Outlook からクライアントに送信される通知。 通知は、変更された接続状態の一部、古い接続状態、および新しい接続状態を示します。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 Outlook では、このメソッドを使用して通知コールバックをクライアントに送信します。 このインターフェイスを microsoft outlook 2010 または microsoft outlook 2013 が使用できるようにするには、クライアントはこのインターフェイスを実装し、 **[](mapioffline_adviseinfo.md)** **[IMAPIOfflineMgr:: Advise を使用してコールバックを設定するときに、MAPIOFFLINE_ADVISEINFO のメンバーとしてのポインターを渡す必要があります。](imapiofflinemgr-advise.md)**. 
   

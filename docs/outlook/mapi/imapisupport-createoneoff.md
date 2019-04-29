@@ -13,11 +13,11 @@ api_type:
 ms.assetid: ee57d6e0-9de0-4427-97ce-371c1c01f3de
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 9571d51e01c2d58d9b8a9a913ba2c210ae0bd44d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322403"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411996"
 ---
 # <a name="imapisupportcreateoneoff"></a>IMAPISupport::CreateOneOff
 
@@ -78,7 +78,7 @@ S_OK
   
 > 1回限りのエントリ識別子が正常に作成されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport:: createoneoff**メソッドは、すべてのサービスプロバイダーサポートオブジェクトに実装されています。 サービスプロバイダーは、 **createoneoff**を呼び出して、1回限りの受信者 (現在読み込まれているアドレス帳プロバイダーのいずれかのコンテナーに属さない受信者) のエントリ識別子を作成します。 
   

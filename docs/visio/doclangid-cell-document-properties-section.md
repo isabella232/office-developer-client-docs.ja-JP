@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 38391818-21c9-9450-2ed1-11cc1d862310
 description: 図面の既定の言語を示します。
 ms.openlocfilehash: 1a4f9f353821c0b336d0a9a53b8f42b4f4abb0e1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332705"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430071"
 ---
 # <a name="doclangid-cell-document-properties-section"></a>[DocLangID] セル ([Document Properties] セクション)
 
 図面の既定の言語を示します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 ドキュメントの言語は、[ **Microsoft Office 言語設定**] ダイアログボックスで定義されている言語に基づいています。 ([**スタート**]、 **[すべてのプログラム**]、[ **microsoft office**]、[microsoft office**ツール**]、[ **microsoft office の言語設定**] の順にクリックします)。
   
@@ -28,7 +28,7 @@ ms.locfileid: "32332705"
   
 以下に言語と対応する LCID の表を示します。
   
-|**Language**|**LCID**|
+|**言語**|**LCID**|
 |:-----|:-----|
 |アフリカーンス語  <br/> |1078  <br/> |
 |アルバニア語  <br/> |1052  <br/> |

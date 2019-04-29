@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 46feb136-01ac-1303-66ab-d772c0ec41a0
 description: 複数の文字間の間隔を制御します。 間隔は、1/20 ポイント単位で増減できます。
 ms.openlocfilehash: 927b6203b81af453411cdd13b6f8c8342507a61b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334903"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430064"
 ---
 # <a name="spacing-cell-character-section"></a>[Spacing] セル ([Character] セクション)
 
 複数の文字間の間隔を制御します。 間隔は、1/20 ポイント単位で増減できます。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルの値は、[**テキスト**] ダイアログ ボックスを使用して設定することもできます (このダイアログ ボックスを開くには、[**ホーム**] タブで [**フォント**] 矢印をクリックします)。 
   

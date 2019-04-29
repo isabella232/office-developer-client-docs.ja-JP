@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 49d12c49-84f8-44ac-bc4a-2ee44a46f8c1
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 03dd0553d0203585850ac5c4f8c91c86ef60236a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321281"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409028"
 ---
 # <a name="imapimessagesitegetmessage"></a>IMAPIMessageSite::GetMessage
 
@@ -49,7 +49,7 @@ S_FALSE
   
 > 呼び出し元フォームのメッセージは現在存在しません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 フォームは、 **IMAPIMessageSite:: GetMessage**メソッドを呼び出して、現在のメッセージのメッセージインターフェイスを取得します。 現在のメッセージは、 [IPersistMessage:: InitNew](ipersistmessage-initnew.md)、 [IPersistMessage:: Load](ipersistmessage-load.md)、または[IPersistMessage:: SaveCompleted](ipersistmessage-savecompleted.md)メソッドで以前に渡されたのと同じメッセージです。 
   

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 80c1449a-6cd9-4b93-a300-395979894b71
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 72dddca5a8079374600e05b96a24cbbc25e7f7f9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279557"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430806"
 ---
 # <a name="iprovideradmincreateprovider"></a>IProviderAdmin::CreateProvider
 
@@ -76,7 +76,7 @@ MAPI_E_USER_CANCEL
   
 > ユーザーが操作をキャンセルしました。通常は、ダイアログボックスの **[キャンセル**] ボタンをクリックします。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IProviderAdmin:: createprovider**メソッドによって、サービスプロバイダーがメッセージサービスに追加されます。 _lpszprovider_パラメーターは、メッセージサービスに属するプロバイダーの名前を指している必要があります。 **createprovider**は、名前がサービスのプロバイダーの名前と一致しているかどうかを確認しません。渡された名前がサービス名と一致しない場合、呼び出しは成功しますが、結果は予測できません。 ほとんどのメッセージサービスでは、プロファイルが使用されている間、プロバイダーを追加または削除することはできません。 
   

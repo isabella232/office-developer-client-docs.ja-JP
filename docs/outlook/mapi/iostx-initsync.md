@@ -13,11 +13,11 @@ api_type:
 ms.assetid: e22244a2-ac5f-910a-501f-4483ea0667c2
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: b9086383b45d40d5839284ac785d72438be60e00
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317193"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33413354"
 ---
 # <a name="iostxinitsync"></a>IOSTX::InitSync
 

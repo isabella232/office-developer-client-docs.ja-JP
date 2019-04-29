@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 70c1ac24-a28f-4401-91d3-61129578bebd
 description: 値のリストから、指定されたインデックスの位置にあるアイテムを返します。
 ms.openlocfilehash: e44655b9c2f4055f1f3dc57befa8adc6884c43b6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282286"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414117"
 ---
 # <a name="choose-function-access-custom-web-app"></a>Choose function (Access カスタム web アプリ)
 
@@ -31,7 +31,7 @@ ms.locfileid: "32282286"
 | *indexnumber*  <br/> |この引数に続くアイテム リストのインデックス (1 から始まるインデックス) を表す整数式。  <br/> |
 | *値*  <br/> |任意のデータ型の値のリスト。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 If the provided  *IndexNumber*  is not an integer, then the value is implicitly converted to an integer. 
   

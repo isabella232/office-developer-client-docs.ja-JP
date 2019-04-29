@@ -13,11 +13,11 @@ api_type:
 ms.assetid: fa5498ab-2f8a-42f8-ba9d-1d555768594f
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 5605de7dbcc18197748713bcf909839690d7259f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336352"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411597"
 ---
 # <a name="iid"></a>IID
 
@@ -38,11 +38,11 @@ typedef struct _GUID
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 **GUID**構造を参照してください。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IID**構造は、MAPI インターフェイスを一意に識別し、特定のインターフェイスをオブジェクトに関連付けるために使用されます。 たとえば、クライアントが[imapisession:: openentry](imapisession-openentry.md)を呼び出してフォルダーを開くと、クライアントは[imapisession](imapifolderimapicontainer.md)インターフェイスを表す**IID**を指すように_lpinterface_パラメーターを設定します。 MAPI は、IID_IMAPIFolder する**IMAPIFolderIID**を定義します。 **IID**の構造体は、OLE インターフェイスを一意に識別するためにも使用されます。 
   

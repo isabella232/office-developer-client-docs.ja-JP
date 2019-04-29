@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 8a2490f2-48c4-5df3-a3b3-40e8e0c80479
 description: 図形の境界ボックスの、指定した部分の測定値を返します。
 ms.openlocfilehash: a62d5b82c310e7b99e16b70982b75a68172b7fd8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348966"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428278"
 ---
 # <a name="boundingboxdist-function"></a>BOUNDINGBOXDIST 関数
 
@@ -37,19 +37,19 @@ BOUNDINGBOXDIST (* * *Index* * *)
 
  **数値**
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
  *Index*には、次のいずれかの値を指定できます。 
   
 |**Item**|**値**|
 |:-----|:-----|
 |Width  <br/> |.0  <br/> |
-|Height  <br/> |1-d  <br/> |
-|左端から図形のピンまでの距離  <br/> |pbm-2  <br/> |
-|図形のピンから右端までの距離  <br/> |1/3  <br/> |
-|図形のピンから上端までの距離  <br/> |2/4  <br/> |
-|下端から図形のピンまでの距離  <br/> |5  <br/> |
-|境界ボックスの中心から PinX までの距離  <br/> |シックス  <br/> |
-|境界ボックスの中心から PinY までの距離  <br/> |7  <br/> |
+|Height  <br/> |1   <br/> |
+|左端から図形のピンまでの距離  <br/> |2   <br/> |
+|図形のピンから右端までの距離  <br/> |3   <br/> |
+|図形のピンから上端までの距離  <br/> |4   <br/> |
+|下端から図形のピンまでの距離  <br/> |5   <br/> |
+|境界ボックスの中心から PinX までの距離  <br/> |6   <br/> |
+|境界ボックスの中心から PinY までの距離  <br/> |7   <br/> |
    
 

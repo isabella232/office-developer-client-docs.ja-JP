@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: a8995020-3eaa-2b2c-eca0-dd475de4d06f
 description: '[x] セルと [Y] セルによって定義された点に対する、アクションタグボタンの x 座標のオフセット値です。'
 ms.openlocfilehash: f8542d2f3a22b12794d999323d202d7a5bece20b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32284973"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414124"
 ---
 # <a name="x-justify-cell-action-tags-section"></a>[X Justify] セル ([Action Tags] セクション)
 
@@ -26,10 +26,10 @@ ms.locfileid: "32284973"
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
 | .0  <br/> | 左揃えします (既定値)。  <br/> |**visSmartTagXJustifyLeft** <br/> |
-| 1-d  <br/> | 中央揃え  <br/> |**visSmartTagXJustifyCenter** <br/> |
-| pbm-2  <br/> | 右揃えします。  <br/> |**visSmartTagXJustifyRight** <br/> |
+| 1   <br/> | 中央揃え  <br/> |**visSmartTagXJustifyCenter** <br/> |
+| 2   <br/> | 右揃えします。  <br/> |**visSmartTagXJustifyRight** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [x justify] セルと [y justify] セルは、[x] セルと [y] セルで定義されている点に対して、アクションタグボタンが配置される場所を決定します。 
   

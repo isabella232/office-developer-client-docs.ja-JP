@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 797833f7-8295-41bc-8980-977e5f5e05e8
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: a1ad209ff127a34d7da5ca8dbe1f4a6656d32876
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328931"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409455"
 ---
 # <a name="imapitablefreebookmark"></a>IMAPITable::FreeBookmark
 
@@ -49,7 +49,7 @@ MAPI_E_INVALID_BOOKMARK
   
 > 指定したブックマークが存在しません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMAPITable:: freebookmark**メソッドは、不要になったブックマークを解放します。 この呼び出しの後、ブックマークは無効になりました。 テーブルがメモリから解放されると、それに関連付けられているすべてのブックマークも解放されます。 
   

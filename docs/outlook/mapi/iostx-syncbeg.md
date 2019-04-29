@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 4a935df3-98c4-2742-206e-4e16eda7b9bc
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: ae4497295328155780fc5208d1699169698e02d8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317172"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411940"
 ---
 # <a name="iostxsyncbeg"></a>IOSTX::SyncBeg
 
@@ -100,7 +100,7 @@ LR_SYNC_DOWNLOAD_TABLE
   
 > 
     
-[頻度](sync.md)
+[SYNC](sync.md)
   
 > 
     
@@ -148,7 +148,7 @@ LR_SYNC_DOWNLOAD_TABLE
   
 > 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 クライアントは**[iostx:: SetSyncResult](iostx-setsyncresult.md)** を呼び出して、同期の結果を設定した後、 **[iostx:: syncend](iostx-syncend.md)** を呼び出してその状態を終了します。 クライアントは、状態が正常にレプリケートされたかどうかを判断するために、 **iostx** :: SyncBeg への各呼び出しに**[iostx:: syncend](iostx-syncend.md)** を呼び出す必要があります。 これが決定されると、Outlook は内部状態のクリーンアップを開始できるようになります。 
   

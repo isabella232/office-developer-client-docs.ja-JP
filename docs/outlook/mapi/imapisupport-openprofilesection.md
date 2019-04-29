@@ -13,11 +13,11 @@ api_type:
 ms.assetid: cd1fa994-9531-46c4-94e5-505e7f90b884
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: e7f13acc34a77b79057d32fd4049db7222dadf49
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326447"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411387"
 ---
 # <a name="imapisupportopenprofilesection"></a>IMAPISupport::OpenProfileSection
 
@@ -75,7 +75,7 @@ MAPI_E_UNKNOWN_FLAGS
   
 > 予約済みまたは未サポートのフラグが使用されたため、操作が完了しませんでした。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport:: openプロファイル**のメソッドは、すべてのサポートオブジェクトに実装されています。 サービスプロバイダおよびメッセージサービスは**** 、openprofile を呼び出して、プロファイルセクションを開き、その**IProfSect**インターフェイス実装へのポインターを取得します。 
   

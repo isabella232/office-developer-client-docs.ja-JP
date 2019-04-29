@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: b03b4415-0b1a-eb03-2b5e-373b39a0f07a
 description: テキストを取り消し線として書式設定するかどうかを指定します。
 ms.openlocfilehash: 4a58123814a4782c279a36d202e1293ec222ef93
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349337"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412430"
 ---
 # <a name="strikethru-cell-character-section"></a>[Strikethru] セル ([Character] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32349337"
 |TRUE  <br/> |テキストを取り消し線として書式設定します。  <br/> |
 |FALSE  <br/> |テキストを取り消し線として書式設定しません。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルの値は、[**テキスト**] ダイアログ ボックスを使用して設定することもできます (このダイアログ ボックスを開くには、[**ホーム**] タブで [**フォント**] 矢印をクリックします)。 
   

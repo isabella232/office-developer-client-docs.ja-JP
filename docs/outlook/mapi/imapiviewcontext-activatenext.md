@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 25ce90ac-526e-48a0-9edb-bd266375d4f4
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5b10f744e3033aab63820e4cd5e414f4c01c27cf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351157"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410617"
 ---
 # <a name="imapiviewcontextactivatenext"></a>IMAPIViewContext::ActivateNext
 
@@ -70,7 +70,7 @@ S_FALSE
   
 > メッセージは正常にアクティブ化されましたが、プロセスで別の種類のフォームが開かれました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 Form オブジェクトは、 **imapiviewcontext:: ActivateNext**メソッドを呼び出して、ユーザーに表示されるメッセージを変更します。 _uldir_パラメーターで渡される値は、アクティブ化する必要があるメッセージと、場合によっては理由を示します。 VCDIR_NEXT および VCDIR_PREVIOUS の各フラグは、ビュー内で**次**または**前**のコマンドを選択したユーザーにそれぞれ対応します。 通常、これらの操作は、フォームビューアーのメッセージの一覧で1つ上または下のメッセージを移動することに対応します。 
   

@@ -9,13 +9,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 3d314d4e-553b-4767-a64a-b9cf1839de52
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: e09e77020d3f2c45ec4033c6945c21850aa1a5bc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307792"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408797"
 ---
 # <a name="mapi-data-types"></a>MAPI のデータ型
 
@@ -27,7 +27,7 @@ ms.locfileid: "32307792"
   
 ||
 |:-----|
-|[ブックマーク](bookmark.md) <br/> |
+|[BOOKMARK](bookmark.md) <br/> |
 |[DNHIER](dnhier.md) <br/> |
 |[DNTBL](dntbl.md) <br/> |
 |[DNTBLE](dntble.md) <br/> |
@@ -48,7 +48,7 @@ ms.locfileid: "32307792"
 |[OlFlagIcon](olflagicon.md) <br/> |
 |[SCODE](scode.md) <br/> |
 |[SKEY](skey.md) <br/> |
-|[頻度](sync.md) <br/> |
+|[SYNC](sync.md) <br/> |
 |[SYNCCONT](synccont.md) <br/> |
 |[SYNCSTATE](syncstate.md) <br/> |
 |[TCHAR](tchar.md) <br/> |

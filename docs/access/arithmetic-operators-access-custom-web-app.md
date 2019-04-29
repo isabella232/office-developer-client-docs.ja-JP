@@ -7,16 +7,16 @@ localization_priority: Normal
 ms.assetid: bb790002-a56e-4a0f-8091-d861d6b2b5fb
 description: ''
 ms.openlocfilehash: 6fe9cf8c1bea34b8ddfe092ff637c0ecd01f5358
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280796"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411842"
 ---
 # <a name="arithmetic-operators-access-custom-web-app"></a>算術演算子 (Access カスタム web アプリ)
 
 > [!IMPORTANT]
-> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 ## <a name="in-this-section"></a>このセクションの内容
 

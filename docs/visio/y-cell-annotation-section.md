@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 527a4615-2013-a4b4-81cd-7f5d71c1803c
 description: ページ座標内のコメントマーカーの y 座標です。
 ms.openlocfilehash: 48a37c261078cd1000331920b33549cee2c1da03
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360124"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429202"
 ---
 # <a name="y-cell-annotation-section"></a>[Y] セル ([Annotation] セクション)
 
@@ -23,7 +23,7 @@ ms.locfileid: "32360124"
 > [!NOTE]
 > このセルは、Microsoft Visio 2013 で .vsd ファイルを開くとき、または .vsd ファイル形式で .vsdx ファイルを保存するときにのみ、コメントの追跡に使用されます。 これは、Visio 2013 の .vsdx ドキュメントでコメントを追跡するためには使用されません。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Y] セルへの参照を取得するには、次の値を使用します。 
   

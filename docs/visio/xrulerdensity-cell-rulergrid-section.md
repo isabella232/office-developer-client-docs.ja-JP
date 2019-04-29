@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: c11717c5-eb0e-e4fa-5a91-c62ecc048635
 description: ページのルーラーに対して、水平方向の小区分を指定します。
 ms.openlocfilehash: f459e5d1d19580201f1404ac2d1ae53c824293f8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331851"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411471"
 ---
 # <a name="xrulerdensity-cell-ruler-amp-grid-section"></a>[xrulerdensity] セル&amp; ([ルーラーグリッド] セクション)
 
@@ -27,7 +27,7 @@ ms.locfileid: "32331851"
 |16 (&amp;H10)  <br/> |標準 (既定値)  <br/> |**visrulernormal** <br/> |
 |32 (&amp;H20)  <br/> |いい  <br/> |**visrulerfine** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルは、[**ルーラー &amp;グリッド**] ダイアログボックス ([**表示**] タブの [**表示**] 矢印をクリック) の [水平方向の**目盛り**] オプションに対応しています。 
   

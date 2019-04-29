@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: af8eca2e-ba9a-4c37-94af-662815fff518
 description: InfoPath 2003 Toolkit for Visual Studio に含まれるツールキットを使用して InfoPath 2003 マネージ コード フォーム テンプレートを作成した場合に、InfoPath 2003 との互換性を維持するには、Microsoft InfoPath および Visual Studio 2012 でフォーム テンプレート プロジェクト開きます。これにより、引き続きそのフォーム テンプレート プロジェクトを使用して開発を進めることができます。
 ms.openlocfilehash: 0acbfab4a83a71d94a1c70a667a963056f5b9a38
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300113"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428586"
 ---
 # <a name="open-or-convert-a-form-template-created-with-the-infopath-toolkit"></a>InfoPath Toolkit で作成したフォーム テンプレートを開くか変換する
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 75f2ea45-52ac-ddfa-14ea-402933ae2449
 description: レイヤーに属している図形が接着可能かどうかを指定します。
 ms.openlocfilehash: 55886a7e96bd2c08966cb85f5edad6a7174e30cd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332810"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408517"
 ---
 # <a name="glue-cell-layers-section"></a>[Glue] セル ([Layers] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32332810"
 |TRUE  <br/> |接着できます。  <br/> |
 |FALSE  <br/> |接着できません。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルは、[**レイヤープロパティ**] ダイアログボックス ([**ホーム**] タブの [**編集**] グループで、[**レイヤー**] をクリックし、[**レイヤープロパティ**] をクリック) の [**接着**] オプションに対応しています。 
   

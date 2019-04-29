@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7a872296-0378-456f-b4d6-cb4d96b09d6e
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3a3d54ac9485cc3915d3606bb84b4f3191d1ca5b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32270078"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419647"
 ---
 # <a name="imapiprogress--iunknown"></a>IMAPIProgress : IUnknown
 
@@ -46,7 +46,7 @@ ms.locfileid: "32270078"
 |[GetMin](imapiprogress-getmin.md) <br/> |プログレス情報が表示される[setlimits](imapiprogress-setlimits.md)メソッドの最小値を返します。  <br/> |
 |[SetLimits](imapiprogress-setlimits.md) <br/> |操作内の項目数の下限と上限を設定します。また、操作の進行状況に関する情報の計算方法を制御するフラグを設定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 MAPI には、潜在的に長い時間がかかる操作を実行する多くのメソッドの_lpprogress_パラメーターが含まれています。  _lpprogress_は、progress オブジェクトのクライアント実装を指します。 **imapiprogress**インターフェイスを実装するクライアントは、その実装をポイントするようにこのパラメーターを設定します。**imapiprogress**を実装していないクライアントは、パラメーターを NULL に設定します。 操作の処理中に進行状況インジケーターを表示するために、サービスプロバイダーは、クライアントによって提供される進行状況オブジェクト (使用可能な場合) または MAPI 実装 ( _lpprogress_が NULL に設定されている場合) を使用します。 
   
@@ -56,7 +56,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**Files**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MapiProgress および MapiProgress  <br/> |該当なし  <br/> |imapiprogress 設定が有効になっている場合、mfcmapi は、すべての関数に**imapiprogress**実装を渡します。この実装は、mfcmapi が呼び出す実装を受け入れます。  <br/> |
+|MapiProgress および MapiProgress  <br/> |該当しない  <br/> |imapiprogress 設定が有効になっている場合、mfcmapi は、すべての関数に**imapiprogress**実装を渡します。この実装は、mfcmapi が呼び出す実装を受け入れます。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

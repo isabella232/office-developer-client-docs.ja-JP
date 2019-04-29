@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: a0b586cd-65f6-4792-851c-4d36eaeec56d
 description: 指定したユーザーがフレンドであるかどうかを判断します。
 ms.openlocfilehash: 183e47bea70ed378947afb6a1d0e5561fb9307f9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331669"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412563"
 ---
 # <a name="isocialprofilearefriendsorcolleagues"></a>ISocialProfile::AreFriendsOrColleagues
 
@@ -33,7 +33,7 @@ _出力_
   
 > 読み上げブール値の配列を指定する構造体へのポインター。これは、 _userIds_配列内の対応する人物がフレンドであるかどうかを示します。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _userIds_パラメーターの入力配列に表示される各ユーザーについて、このメソッドは、 _results_パラメーターの出力配列の対応する要素を設定します。 **true**は、ユーザーがフレンドであることを示し、 **false**は、その人物がフレンドではないことを示します。 
   

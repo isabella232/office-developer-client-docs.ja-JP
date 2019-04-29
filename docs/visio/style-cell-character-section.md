@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 4372f1e1-f0a9-2f63-ff79-58f2afdceed5
 description: 図形のテキスト ブロック内にあるテキストの範囲に適用される文字の書式を表示します。
 ms.openlocfilehash: 349bdc42485aa511011aeb85a43f1ab3e4ea853d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329812"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411429"
 ---
 # <a name="style-cell-character-section"></a>[Style] セル ([Character] セクション)
 
@@ -24,10 +24,10 @@ ms.locfileid: "32329812"
 |:-----|:-----|:-----|
 | 太字  <br/> | &amp;H1  <br/> |**visBold** <br/> |
 | 斜体  <br/> | &amp;H2  <br/> |**visItalic** <br/> |
-| Underline  <br/> | &amp;H4  <br/> |**visUnderLine** <br/> |
+| 下線  <br/> | &amp;H4  <br/> |**visUnderLine** <br/> |
 | 小型英文字  <br/> | &amp;H8  <br/> |**visSmallCaps** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [Character] セクションに複数の行が含まれる場合は、[Style] セルには、図形のテキストのサブ範囲に適用される書式設定情報が表示されます。複数の行が含まれない場合は、このセルには、すべての図形のテキストに対する書式設定情報が表示されます。
   

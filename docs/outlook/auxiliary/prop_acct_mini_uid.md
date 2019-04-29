@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 30d8268e-0c64-401d-8799-e8e1ba78b88f
 description: Outlook プロファイル全体で一意のアカウント識別子を返します。
 ms.openlocfilehash: 209f7dd89b8d947b999f2a068373aaf61a3e9784
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327630"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409434"
 ---
 # <a name="propacctminiuid"></a>PROP_ACCT_MINI_UID
 
@@ -29,7 +29,7 @@ Outlook プロファイル全体で一意のアカウント識別子を返しま
 |プロパティタグ:  <br/> |0x0003000 3  <br/> |
 |接続  <br/> |読み取り専用  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [IOlkAccount:: getprop](iolkaccount-getprop.md)を使用して、このプロパティを取得します。 クライアントがこのプロパティを設定しようとすると、このプロパティは**E_OLK_PROP_READ_ONLY**を返します。 
   

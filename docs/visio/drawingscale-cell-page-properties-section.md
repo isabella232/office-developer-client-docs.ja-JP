@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: bc447f22-a188-2c61-e33c-df0d401a4725
 description: 現在の図面縮尺で、図面単位の値を表します。ページの図面縮尺は、[DrawingScale] セルに表示される図面単位に対して [PageScale] セルに表示されるページ単位の比率です。
 ms.openlocfilehash: 8a3a5f93ff096e42ba3c13b671b46bf1cf97df82
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316507"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33413319"
 ---
 # <a name="drawingscale-cell-page-properties-section"></a>[DrawingScale] セル ([Page Properties] セクション)
 
@@ -39,7 +39,7 @@ debug.print ActivePage.PageSheet.Cells("DrawingScale").Units = _
  visCentimeters 
 ```
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルは、[**ページ設定**] ダイアログ ボックスの設定に対応しています (このダイアログ ボックスを開くには、[**ホーム**] タブの [**ページ設定**] 矢印をクリックします)。 
   

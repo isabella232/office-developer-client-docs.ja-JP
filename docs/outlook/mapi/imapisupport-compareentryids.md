@@ -13,11 +13,11 @@ api_type:
 ms.assetid: be6991d9-6353-4838-bc6b-39de51a94d8d
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 6c79943792c8c17ee007c39b5c5c215a6fbc0699
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331571"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431044"
 ---
 # <a name="imapisupportcompareentryids"></a>IMAPISupport::CompareEntryIDs
 
@@ -74,7 +74,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > パラメーターとして指定されたいずれかまたは両方のエントリ識別子が有効なオブジェクトを参照していません。現在、使用できない状態である可能性があります。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport:: compareentryids**メソッドは、アドレス帳およびメッセージストアプロバイダーのサポートオブジェクトに実装されています。 **compareentryids**は、1つのサービスプロバイダーに属する2つのエントリ識別子を比較して、同じオブジェクトを参照しているかどうかを判断します。 MAPI は、エントリ識別子から[MAPIUID](mapiuid.md)部分を抽出して、オブジェクトを処理するサービスプロバイダーを決定します。 MAPI は、そのログオンオブジェクトの**compareentryids**メソッドを呼び出して、比較を実行します。 
   

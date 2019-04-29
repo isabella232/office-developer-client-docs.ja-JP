@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6ddaced5-49bb-41fe-95da-4e3300883bf7
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 228ea91969b35a1608dd6b3378b751312aa9c665
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328575"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409133"
 ---
 # <a name="propid"></a>PROP_ID
 
@@ -42,7 +42,7 @@ PROP_ID (ulPropTag)
   
 > 返される識別子を含む Property タグ。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 すべてのプロパティタグには、下位ワード (ビット 0 ~ 15) のプロパティの種類と、上位ワード (ビット 16 ~ 31) のプロパティの識別子が含まれています。 **PROP_ID**マクロは、プロパティ識別子を抽出し、それをビット 0 ~ 15 の整数に格納して返します。 戻り値の残りのビットは0に設定されます。 
   

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: c7cb8cf9-7abd-4ee3-b88c-d61695f4ed31
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1ae675d1d4adf841e18bbfc8990913136afe8b4b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282706"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408615"
 ---
 # <a name="sizeddtbllabel"></a>SizedDtblLabel
 
@@ -44,7 +44,7 @@ _u_
   
 > 新しい構造の名前を指定します。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **sizeddtbllabel**マクロを使用すると、ラベル内の文字数が既知の場合に、表示テーブルのラベルを定義できます。 次のメンバーで新しい構造が作成されます。 
   

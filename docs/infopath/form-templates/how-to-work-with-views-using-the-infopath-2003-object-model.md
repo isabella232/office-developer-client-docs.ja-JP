@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: feb1bfcb-1cb1-4d5c-bc84-df86a33a5934
 description: InfoPath フォーム テンプレートの作業を行うときは、フォームのビューにアクセスし、ビューに格納されているデータに対してさまざまな操作を実行するためのコードを書くことができます。InfoPath 2003 互換のオブジェクト モデルでは、ViewObject インターフェイスのメンバーを使用してフォームのビューにアクセスできます。
 ms.openlocfilehash: 6a2dd408ba51e5c8394120944e0c28897e768738
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299880"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411884"
 ---
 # <a name="work-with-views-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してビューを操作する
 
@@ -26,7 +26,7 @@ InfoPath フォーム テンプレートの作業を行うときは、フォー�
 > [!NOTE]
 > [ViewObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ViewObject.aspx) インターフェイスのメソッドとプロパティは、 [OnLoad](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnLoad.aspx) イベント中には利用できません。 
   
-|**[名前]**|**[説明]**|
+|**名前**|**説明**|
 |:-----|:-----|
 |[DisableAutoUpdate](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.View.DisableAutoUpdate.aspx) メソッド  <br/> |XML Document Object Model (DOM) とビューの同期を無効にします。  <br/> |
 |[EnableAutoUpdate](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.View.EnableAutoUpdate.aspx) メソッド  <br/> |XML DOM とビューの同期を有効にします。  <br/> |

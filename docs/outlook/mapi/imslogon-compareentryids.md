@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 481812d6-8e94-4510-b288-55501dd5757c
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 4196ed8b949ecb9e23c4bd34380db9cc5a369e23
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348728"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410134"
 ---
 # <a name="imslogoncompareentryids"></a>IMSLogon::CompareEntryIDs
 
@@ -70,7 +70,7 @@ S_OK
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 メッセージストアプロバイダーは、 **IMSLogon:: compareentryids**メソッドを実装して、メッセージストア内の指定されたエントリの2つのエントリ識別子を比較し、それらが同じオブジェクトを参照しているかどうかを判断します。 2つのエントリ識別子が同じオブジェクトを参照している場合、 **compareentryids**は_lpulresult_パラメーターを TRUE に設定します。別のオブジェクトを参照している場合、 **compareentryids**は_lpulresult_を FALSE に設定します。 
   

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 83c349f7-dcac-4268-befe-fb2bc0cd9c50
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 00273d5572fa0c12a9501a1620db11ea087fd5d1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351598"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427606"
 ---
 # <a name="ixplogonstartmessage"></a>IXPLogon::StartMessage
 
@@ -55,7 +55,7 @@ S_OK
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 mapi スプーラーは**IXPLogon:: startmessage**メソッドを呼び出して、トランスポートプロバイダーから mapi スプーラーへの受信メッセージの転送を開始します。 _lpmessage_によって示されたメッセージの使用をトランスポートプロバイダーが開始する前に、 [IXPLogon:: transportnotify](ixplogon-transportnotify.md)メソッドの呼び出しによって使用される可能性のある_lアウト msグリーン f_パラメーターにメッセージ参照を格納する必要があります。 
   

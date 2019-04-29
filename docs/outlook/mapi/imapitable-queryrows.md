@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: f26384f1-467e-4343-92b3-0425da9d2123
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 26d6ffe66a5e7749c9d8c4e5210e9f72de808932
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328870"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416294"
 ---
 # <a name="imapitablequeryrows"></a>IMAPITable::QueryRows
 
@@ -67,7 +67,7 @@ MAPI_E_INVALID_PARAMETER
   
 > _irowcount_パラメーターは0に設定されています。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMAPITable:: QueryRows**メソッドは、テーブルから1つまたは複数のデータ行を取得します。 _irowcount_パラメーターの値は、取得の開始点に影響します。 _irowcount_が正の場合は、現在の位置から順に行が読み取られます。 _irowcount_が負の場合、 **QueryRows**は指定された行数だけ後方に移動して開始点をリセットします。 カーソルがリセットされると、行は前方に読み上げられます。 
   

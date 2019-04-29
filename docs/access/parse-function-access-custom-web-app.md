@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 09dee0ae-89b2-449c-a3c8-d6b270710b64
 description: アプリケーションのカルチャを使用して、テキスト値を解析し、その値を特定の型で戻します。
 ms.openlocfilehash: d664985ab1d7a7d33b99c52d5bab4aa714767e40
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308058"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411135"
 ---
 # <a name="parse-function-access-custom-web-app"></a>Parse 関数 (Access カスタム web アプリ)
 
@@ -32,7 +32,7 @@ ms.locfileid: "32308058"
 | *TextExpression*  <br/> |指定したデータ型になっているか解析される対象の、書式設定された値を表すテキスト式。  <br/> |
 | *DataType*  <br/> |結果として要求されるデータ型を表すリテラル値。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **Parse** は、文字列から日付/時刻または数値に型を変換する場合にのみ使用します。一般的な型変換では、 **Convert** 関数を使用します。文字列値の解析には、一定のパフォーマンス オーバーヘッドが発生することに注意してください。 
   

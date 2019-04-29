@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 56c3bdae-a3a8-4334-b6d2-a89c6820d72e
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 6de0fed4df9d23e67c3520ffb019a961b890f988
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316559"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411310"
 ---
 # <a name="imapisupportgetsvcconfigsupportobj"></a>IMAPISupport::GetSvcConfigSupportObj
 
@@ -50,7 +50,7 @@ S_OK
   
 > 構成サポートオブジェクトが正常に作成されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport:: GetSvcConfigSupportObj**メソッドは、すべてのサポートオブジェクトに実装されています。 サービスプロバイダーは**GetSvcConfigSupportObj**を呼び出して、メッセージサービスエントリポイント関数に渡す構成サポートオブジェクトを作成します。 
   

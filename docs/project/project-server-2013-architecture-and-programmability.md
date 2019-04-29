@@ -17,11 +17,11 @@ localization_priority: Normal
 ms.assetid: 9ea3b3c1-fb90-454a-b8e6-abc44fca663d
 description: このセクションの記事では、project Professional 2013、project Server 2013、project Web App、および SharePoint Server 2013 を組み合わせた epm (Enterprise project Management) ソリューションの全体的なアーキテクチャについて説明します。
 ms.openlocfilehash: 44cd5a32b8d3de421ffe3b2d9bf0137146bc4c4e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301471"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33413788"
 ---
 # <a name="project-server-2013-architecture-and-programmability"></a>Project Server 2013 のアーキテクチャおよびプログラミング
 

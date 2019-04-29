@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 65927ef9-29f7-499a-a1c1-6f672c09bb6b
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 41a5cf1ecb7c8f38f4aa5b62a493b3f45c2fe090
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32311068"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408587"
 ---
 # <a name="excel-cluster-connector-functions"></a>Excel クラスター コネクタ関数
 

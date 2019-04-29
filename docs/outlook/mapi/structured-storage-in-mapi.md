@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 642a678b-4bf2-4246-85cb-c798de23e36f
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: f58fa70e98841db5507323a63737f1df6c1b7a6d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327434"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411751"
 ---
 # <a name="structured-storage-in-mapi"></a>MAPI での構造化ストレージ
 
@@ -45,7 +45,7 @@ MAPI と COM には、ストレージおよび stream オブジェクトを定�
   
 **ストレージおよび Stream オブジェクトにアクセスするための関数**
 
-|**Function**|**説明**|
+|**関数**|**説明**|
 |:-----|:-----|
 |[HrIStorageFromStream](hristoragefromstream.md) <br/> |stream または lock バイトオブジェクトにアクセスするためのストレージオブジェクトを作成します。  <br/> |
 |[OpenIMsgOnIStg](openimsgonistg.md) <br/> |ストレージオブジェクトにアクセスするための message オブジェクトを作成します。  <br/> |

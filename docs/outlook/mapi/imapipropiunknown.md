@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3c9e4e05-cd3a-4b56-9dff-879e33ff6fd5
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6b0a8923ee5efe22584170ce9853698885527ee8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282472"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407663"
 ---
 # <a name="imapiprop--iunknown"></a>IMAPIProp : IUnknown
 
@@ -53,7 +53,7 @@ ms.locfileid: "32282472"
 |[GetNamesFromIDs](imapiprop-getnamesfromids.md) <br/> |1つまたは複数のプロパティ識別子に対応するプロパティ名を提供します。  <br/> |
 |[getidsfromnames](imapiprop-getidsfromnames.md) <br/> |1つまたは複数のプロパティ名に対応するプロパティ識別子を提供します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
  **imapiprop**は、次のインターフェイスの基本インターフェイスです。 
   

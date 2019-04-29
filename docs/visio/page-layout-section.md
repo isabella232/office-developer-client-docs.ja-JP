@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: ed47c690-f874-498c-1fbc-61fc49309ea5
 description: ページ上にあるすべての図形間の間隔やコネクタ間の間隔、およびすべてのコネクタに対する迂回方法など、図形とコネクタに関するページ設定を制御するセルを格納します。
 ms.openlocfilehash: b9b3640bd91068a150267a069ef1889a05dc2263
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359277"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428348"
 ---
 # <a name="page-layout-section"></a>[Page Layout] セクション
 
 ページ上にあるすべての図形間の間隔やコネクタ間の間隔、およびすべてのコネクタに対する迂回方法など、図形とコネクタに関するページ設定を制御するセルを格納します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 特定の図形のページの既定値を上書きするには、[**図形レイアウト**] セクションのセルを使用します。 
   

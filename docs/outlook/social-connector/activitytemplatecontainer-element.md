@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 74662f25-5e18-4d0b-999c-a144427ad9e3
 description: activitytemplatecontainer 要素は、アクティビティフィードアイテムを書式設定し、レイアウトを指定する XML を再利用できるテンプレートです。
 ms.openlocfilehash: c2540b1d871e440e8f8f343a1788194c32d7dcc2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281121"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33413718"
 ---
 # <a name="activitytemplatecontainer-element"></a>activitytemplatecontainer 要素
 

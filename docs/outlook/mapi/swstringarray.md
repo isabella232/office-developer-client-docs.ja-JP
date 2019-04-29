@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: c1ae24ad-1bbb-4dee-b414-b5226593b6fa
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: ff69981e83d42e439936a3e4be47eabfd811b310
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349554"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33413606"
 ---
 # <a name="swstringarray"></a>SWStringArray
 
@@ -40,7 +40,7 @@ typedef struct _SWStringArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **cvalues**
   
@@ -50,7 +50,7 @@ typedef struct _SWStringArray
   
 > null で終了する Unicode 文字列の配列へのポインター。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 PT_MV_UNICODE の詳細については、「[プロパティの種類](property-types.md)」を参照してください。
   

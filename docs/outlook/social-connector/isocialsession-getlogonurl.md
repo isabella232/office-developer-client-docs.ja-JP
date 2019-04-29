@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: d61bab07-acb3-433b-8783-c3fe110a5582
 description: web 認証中にブラウザーベースのフォームをユーザーに提示するために使用される URL を表す文字列を取得します。
 ms.openlocfilehash: 83867282922ea136b9673609cc2ba2f1a206f6ab
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285379"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427914"
 ---
 # <a name="isocialsessiongetlogonurl"></a>ISocialSession::GetLogonUrl
 
@@ -29,7 +29,7 @@ _url_
   
 > 読み上げweb 認証で使用するフォームの URL を含む文字列。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 フォームがユーザーに表示された後、i渡された[alsession:: logonweb](isocialsession-logonweb.md)メソッドが、ユーザーに空の__ 文字列を指定して呼び出されます。 
   
