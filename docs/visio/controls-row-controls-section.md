@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: a57bdcd9-566b-5054-7458-7d84cbb78d23
 description: 図形に定義されている各コントロールハンドルの x 座標と y 座標、および動作を定義するセルを格納します。 図形には、各コントロールハンドルに対して1つの Controls 行が含まれます。
 ms.openlocfilehash: dd5a96fe297cb62996ac2ab4d2974b8d1ae61a14
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282958"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438191"
 ---
 # <a name="controls-row-controls-section"></a>[Controls] 行 ([Controls] セクション)
 
@@ -33,7 +33,7 @@ ms.locfileid: "32282958"
 |[Can Glue](can-glue-cell-controls-section.md) <br/> |コントロール ハンドルを他の図形に接着できるかを指定します。  <br/> |
 |[部](tip-cell-controls-section.md) <br/> |ツール ヒントとして表示される説明文の文字列を指定します。ツール ヒントは、図形のコントロール ハンドルの上にポインターを重ねたときに表示されます。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
  必要に応じて [Controls.  必要に応じて行に*名前*を付け、わかりやすい名前を行に割り当て、セルの値を設定します。 既存の [Controls] セクションにコントロール ハンドルを追加するには、行を右クリックして、ショートカット メニューの **[行の挿入]** をクリックします。 
   

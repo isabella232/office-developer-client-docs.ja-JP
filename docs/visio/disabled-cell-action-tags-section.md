@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: bf0a80c9-0fdb-e2cf-3ab0-74cb6338fdce
 description: 図面ウィンドウに、アクション タグを表示するかどうかを示します。
 ms.openlocfilehash: 867d36e27cb890509b0687500caf719362a711fb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332565"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439668"
 ---
 # <a name="disabled-cell-action-tags-section"></a>[Disabled] セル ([Action Tags] セクション)
 
@@ -28,7 +28,7 @@ ms.locfileid: "32332565"
 | TRUE  <br/> | アクション タグは無効です。  <br/> |
 | FALSE  <br/> | アクション タグは有効です (既定値)。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 アクション タグを無効にすると、有効にするまで表示されません。 
   

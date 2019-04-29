@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 098d216f-e699-0e74-f702-ccfa7809c19b
 description: サウンドファイルまたはシステムサウンドを再生します。
 ms.openlocfilehash: 752412aab6584d2b01235fe88644e3ec3fa5daee
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346845"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435840"
 ---
 # <a name="playsound-function"></a>PLAYSOUND 関数
 
@@ -34,7 +34,7 @@ PLAYSOUND ("* * *filename* * *" | "* **エイリアス** *", * * *isalias* * *, 
 | _鳴り_ <br/> |必須  <br/> |**Boolean** <br/> |サウンドを再生できない場合にビープ音を鳴らすかどうかを指定します。ビープ音を鳴らすには、ゼロ以外の数値を使用します。  <br/> |
 | _とれ_ <br/> |必須  <br/> |**Boolean** <br/> |非同期 (0) または同期 (1) のどちらでサウンドを再生するかを指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 通常、サウンドを再生している間に Visio が処理を続行できるように、サウンドを非同期で再生する必要があります。 複数のサウンドを文字列でつなぎ合わせるには、それらを同時に再生するか、再生に失敗することがあります。 
   

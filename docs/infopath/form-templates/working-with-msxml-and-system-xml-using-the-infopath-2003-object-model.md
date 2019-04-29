@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: f7a0cac5-26f9-49ed-b52c-0240ef0c9d38
 description: InfoPath 2003 オブジェクト モデルを使用するフォーム テンプレート プロジェクトは、内部で Microsoft XML Core Services (MSXML) を使用して XML を操作します。マネージ コードでは、多くの場合, .NET Framework クラス ライブラリの System.Xml 名前空間によって提供される XML サポートを使用した方が簡単です。MSXML と System.Xml では、オブジェクトをネイティブで交換することはできません。したがって、InfoPath と他のマネージ コードとの間で XML データの受け渡しを行う際には、常に XML データの変換が必要になります。ここで説明する方法を使用すると、System.Xml オブジェクトの XML データを InfoPath フォーム コードと交換できます。
 ms.openlocfilehash: c56939a0cf03b5de6466de37013e154529afd1ee
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299721"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437400"
 ---
 # <a name="working-with-msxml-and-systemxml-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用して MSXML および System.Xml を操作する
 

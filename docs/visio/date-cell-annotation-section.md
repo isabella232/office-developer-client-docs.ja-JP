@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: f1f11803-614b-a40d-0a2d-131093e7609e
 description: コメントを最後に編集した日付と時刻が含まれます。
 ms.openlocfilehash: 60fd726db1056075f96519050cffa67c76977126
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360341"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423882"
 ---
 # <a name="date-cell-annotation-section"></a>[Date] セル ([Annotation] セクション)
 
@@ -23,7 +23,7 @@ ms.locfileid: "32360341"
 > [!NOTE]
 > このセルは、Microsoft Visio 2013 で .vsd ファイルを開くとき、または .vsd ファイル形式で .vsdx ファイルを保存するときにのみ、コメントの追跡に使用されます。 これは、Visio 2013 の .vsdx ドキュメントでコメントを追跡するためには使用されません。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 ユーザー インターフェイスのコメント ボックスには、日付のみ表示されます。
   

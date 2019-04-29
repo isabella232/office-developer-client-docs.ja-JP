@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 80db9c0c-13c6-47de-967f-ade6e5899f14
 description: この図形で塗りつぶしのグラデーションを有効にするかどうかを決定します。
 ms.openlocfilehash: 17f617c13b632318be22b86a3354a194f0f835f5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322492"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431212"
 ---
 # <a name="fillgradientenabled-cell-gradient-properties-section"></a>[FillGradientEnabled] セル ([グラデーションのプロパティ] セクション)
 
@@ -23,7 +23,7 @@ ms.locfileid: "32322492"
 |TRUE  <br/> |グラデーションの塗りつぶしは図形に表示されます。  <br/> |
 |FALSE  <br/> |グラデーションの塗りつぶしは図形には表示されません。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式から、**Cell** エレメントの **N** 属性の値によって、または **CellsU** プロパティを使用したプログラムから、名前によって [**FillGradientEnabled**] セルへの参照を取得するには、次の値を使用します。 
   

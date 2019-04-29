@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: a2cdda90-5457-49a7-b98c-7273ffe5cbbc
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 396320c6b39553da09aa1f45d0c755f40a939382
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335694"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428222"
 ---
 # <a name="imapisessionqueryidentity"></a>IMAPISession::QueryIdentity
 
@@ -54,7 +54,7 @@ MAPI_W_NO_SERVICE
   
 > 呼び出しは成功しましたが、セッションのプライマリ id がありません。 この警告が返された場合、呼び出しは正常に処理されます。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisession:: queryidentity**メソッドは、現在のセッションのプライマリ id を取得し、 _lppentryid_パラメーターを使用して値を返します。 プライマリ id は、通常、セッションのユーザーを表す、オブジェクト (通常はメッセージングユーザー) です。  _lppentryid_は、 [PidTagEntryID](pidtagentryid-canonical-property.md)プロパティとしても格納されている[imailuser](imailuserimapiprop.md)オブジェクトのプライマリ id を返します。 _lppentryid_で返された値を使用して、 [imapisession:: openentry](imapisession-openentry.md)を使用して**imailuser**オブジェクトを開くことができます。
   

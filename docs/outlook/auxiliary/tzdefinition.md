@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 0ae21571-2299-6407-807c-428668bb6798
 description: 夏時間のすべての過去、現在、および今後のタイムゾーンシフトルールを含むタイムゾーン全体を表します。
 ms.openlocfilehash: 5f7000ecc1fa602b330670c2ee1c39f673a11a65
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328295"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429342"
 ---
 # <a name="tzdefinition"></a>TZDEFINITION
 
@@ -47,7 +47,7 @@ _rgrules_
   
 > シフトが発生するタイミングを記述するルールの配列です。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 *rgrules* 、少なくとも1つのルールが必要です。 [ *rgrules*の最初のルールは、最初のルールの*ststart*に関係なく、2番目のルールが開始されるまで使用するルールと見なされます。 
   

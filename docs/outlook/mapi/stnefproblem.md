@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3fe651b7-0ddf-42fd-8277-9224505be1a8
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 19d20a3fb06f6a0a0671ba4bfd938da314001778
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336380"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435181"
 ---
 # <a name="stnefproblem"></a>STnefProblem
 
@@ -42,7 +42,7 @@ typedef struct _STnefProblem
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **ulcomponent**
   
@@ -68,7 +68,7 @@ typedef struct _STnefProblem
   
 > 処理中に発生した問題を示すエラー値。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 属性またはプロパティの処理中に**STnefProblem**構造体が生成されない場合、アプリケーションは、その属性またはプロパティの処理が正常に終了したことを前提として続行できます。 唯一の例外は、カプセル化ブロックのデコード中に問題が発生した場合です。 この場合、ブロックに対応するコンポーネントのデコードが停止され、別のコンポーネントでデコードが続行されます。 
   

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 02718898-7857-4e43-8f46-622269f812e6
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: ab4a06a20c71943f9b649d8f22377f59223e9717
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355812"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430127"
 ---
 # <a name="imapimessagesitegetsitestatus"></a>IMAPIMessageSite::GetSiteStatus
 
@@ -73,7 +73,7 @@ S_OK
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 Form オブジェクトは**IMAPIMessageSite:: getsitestatus**メソッドを呼び出して、現在のメッセージのメッセージサイトオブジェクトの機能を取得します。 _lアウト status_パラメーターで返されるフラグは、メッセージサイトに関する情報を提供します。 通常、フォームは、フラグがメッセージサイト実装の機能について提供する情報に応じて、メニューコマンドを有効または無効にします。 [IPersistMessage:: SaveCompleted](ipersistmessage-savecompleted.md)メソッドまたは[IPersistMessage:: Load](ipersistmessage-load.md)メソッドによってフォームに新しいメッセージが読み込まれた場合は、状態フラグをチェックする必要があります。 一部のメッセージサイトオブジェクト (特に読み取り専用オブジェクト) では、メッセージを保存または削除することはできません。 
   

@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 2e0b9754-3e3b-3a26-4e1a-e09102055c20
 description: 既定のページの影の種類を適用したときの、斜めの方向を示す数字を指定します。
 ms.openlocfilehash: 2eca29bbc735c7101ca82a2f26db30b2e344b8e6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349064"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430428"
 ---
 # <a name="shdwobliqueangle-cell-page-properties-section"></a>[ShdwObliqueAngle] セル ([Page Properties] セクション)
 
 既定のページの影の種類を適用したときの、斜めの方向を示す数字を指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルの値がゼロ (0) の場合は影の傾きの角度が真上で、時計回りに角度を指定します。
   

@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 5a250d68-7583-406e-84e3-0b03bba97234
 description: 2 つの式を比較します。null 以外の式を比較したときに、左のオペランドに右のオペランドよりも大きい値が含まれる場合、結果は TRUE になり、それ以外の場合、結果は FALSE になります。
 ms.openlocfilehash: aac3ee7ef575e5a982d55d2003c77cb667cc903d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302437"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407740"
 ---
 # <a name="greater-than-access-custom-web-app"></a>より大きい (Access カスタム web アプリ)
 

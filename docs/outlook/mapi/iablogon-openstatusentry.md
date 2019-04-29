@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 66f1e246-a67a-4f8a-ae3a-6a8ec8c2b367
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 22f98e52444b17c383737bffd1685df0fb7ba8bb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349022"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410785"
 ---
 # <a name="iablogonopenstatusentry"></a>IABLogon::OpenStatusEntry
 
@@ -64,7 +64,7 @@ S_OK
   
 > 呼び出しが成功し、状態オブジェクトが開かれています。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 アドレス帳プロバイダーは、状態オブジェクトへのアクセスを許可するために**openstatusentry**メソッドを実装します。 少なくとも[imapistatus:: validatestate](imapistatus-validatestate.md)メソッドをサポートする状態オブジェクトを実装するには、すべてのアドレス帳プロバイダーが必要です。 詳細については、「 [Status オブジェクトの実装](status-object-implementation.md)」を参照してください。
   

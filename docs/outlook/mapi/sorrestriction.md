@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6fee29ce-9a34-4e0c-bb71-03120c3f1117
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9b4ca4628f356142eb5303c064e3916474810fda
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345102"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437932"
 ---
 # <a name="sorrestriction"></a>SOrRestriction
 
@@ -40,7 +40,7 @@ typedef struct _SOrRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **cres**
   
@@ -50,7 +50,7 @@ typedef struct _SOrRestriction
   
 > 論理**OR**演算を使用して結合する制限について説明する[srestriction](srestriction.md)構造体へのポインター。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **sorrestriction**構造の詳細については、「[制限につい](about-restrictions.md)て」を参照してください。 
   

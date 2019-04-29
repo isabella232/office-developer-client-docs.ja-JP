@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: f114f1fa-bc05-4587-875b-71548c5912ea
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: ec305fc872d1bf1718592dabdd230617d50d3f54
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328897"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434334"
 ---
 # <a name="imapitablegetstatus"></a>IMAPITable::GetStatus
 
@@ -94,7 +94,7 @@ S_OK
   
 > テーブルの状態が正常に返されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMAPTable:: GetStatus**メソッドは、テーブルの種類と現在の状態に関する情報を取得します。 
   

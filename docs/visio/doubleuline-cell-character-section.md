@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: c18955c8-d653-c29d-d3da-9d3cd0241e17
 description: テキストの範囲に二重下線を付けるかどうかを指定します。
 ms.openlocfilehash: 2708e7f55e1fd04d5fb902b3d382035790cbbcc2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357464"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438842"
 ---
 # <a name="doubleuline-cell-character-section"></a>[DoubleULine] セル ([Character] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32357464"
 |TRUE  <br/> |テキストに二重下線を付けます。  <br/> |
 |FALSE  <br/> |テキストに二重下線を付けません。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [Character] セクションに行が複数存在する場合、[DoubleULine] セルには図形のテキストのサブ範囲に適用される書式設定情報が表示されます。複数の行が含まれない場合は、このセルには、すべての図形のテキストに対する書式設定情報が表示されます。
   

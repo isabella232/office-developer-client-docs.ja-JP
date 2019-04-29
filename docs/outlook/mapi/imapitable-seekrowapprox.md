@@ -13,11 +13,11 @@ api_type:
 ms.assetid: ce5e8c43-06af-4afc-9138-5cc51d8fc401
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: bbb79097d03a8ea09cb4aff374231ee780e15395
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328841"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412150"
 ---
 # <a name="imapitableseekrowapprox"></a>IMAPITable::SeekRowApprox
 
@@ -54,7 +54,7 @@ MAPI_E_BUSY
   
 > 別の操作が進行中であるため、行のシーク操作を開始できません。 進行中の操作が完了することを許可するか、停止する必要があります。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMAPITable:: seekrowapprox**メソッドを呼び出した後のテーブル内のカーソルの位置は、分母がヒューリスティックで、正確ではない可能性があります。 たとえば、特定のプロバイダーでは、パフォーマンス上の理由からツリーの最上位として表の中間点を処理して、バイナリツリーの上にテーブルを実装する場合があります。 ツリーが分散されていない場合、使用される中間点は、テーブルを正確に半分になることはありません。 
   

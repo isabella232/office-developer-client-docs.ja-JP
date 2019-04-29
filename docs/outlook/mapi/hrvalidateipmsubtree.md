@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6454c1fa-5216-4934-a908-48c634ac4a07
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6cf51985e534434c584eff4d63dfbf239121ee85
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346768"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436574"
 ---
 # <a name="hrvalidateipmsubtree"></a>HrValidateIPMSubtree
 
@@ -95,7 +95,7 @@ MAPI_FULL_IPM_TREE
 
 なし。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 MAPI は、ストアが最初に開かれたとき、またはストアが既定のストアになったときに、メッセージストアの標準の IPM サブツリーを構築するために、 **hrvalidateipmsubtree**関数を内部で使用します。 この関数は、クライアントアプリケーションが標準的なメッセージフォルダーを検証または修復するために使用することもできます。 
   

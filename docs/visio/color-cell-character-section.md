@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 1c9aab2e-6c2f-0684-4e66-c35ac71883d6
 description: 図形のテキストに使用する色を指定します。
 ms.openlocfilehash: a27d957781ca9a784e7ab9d5c1ce4f533b9a55ba
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341840"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439990"
 ---
 # <a name="color-cell-character-section"></a>[Color] セル ([Character] セクション)
 
 図形のテキストに使用する色を指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 色を設定するには、0 ～ 23 の数値を入力します。
   

@@ -9,11 +9,11 @@ api_type:
 ms.assetid: da5f080d-4397-4ce6-8561-73dd13445e77
 description: '�ŏI�X�V��: 2011�N7��23��'
 ms.openlocfilehash: 0b7ffe07278cfcbba95351f2720e427dd8500221
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32350618"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432430"
 ---
 # <a name="supporting-forms-and-views-in-read-only-message-stores"></a>�ǂݎ���p�̃��b�Z�[�W �X�g�A�ł̃t�H�[���ƃr���[�̃T�|�[�g
 

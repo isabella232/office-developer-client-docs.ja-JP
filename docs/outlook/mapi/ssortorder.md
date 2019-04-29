@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: fe181b9a-5903-4cc0-bcd5-2061b440b5b1
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: f9d38c90fa5795d34f78c61ce0faa5f76d8f740d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344549"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439724"
 ---
 # <a name="ssortorder"></a>SSortOrder
  
@@ -38,7 +38,7 @@ typedef struct _SSortOrder
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 **ulPropTag**
   
@@ -60,7 +60,7 @@ typedef struct _SSortOrder
       
   - TABLE_SORT_CATEG_MIN: テーブルは、 **ssortorderset**構造で、前の並べ替え順序で指定されているカテゴリのデータ行の**ulPropTag**メンバーの最小値で並べ替えられている必要があります。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **ssortorder**構造は、標準の並べ替え操作または分類された並べ替え操作のどちらを実行するかを示すために使用されます。 **** sorderstructure は、通常、複数の並べ替えキーと方向を記述するために、 **ssortorderset**構造に組み込まれています。 **ssortorderset**構造体は、次の関数およびインターフェイスメソッドで使用されます。 
   

@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: dfc92878-ab8b-4721-aee8-997c56a8e45b
 description: このソーシャルネットワークのプロバイダーのバージョン番号を表す文字列を返します。
 ms.openlocfilehash: 0749b8fb83a11328233442b79e1f9de50076effe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285386"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438275"
 ---
 # <a name="isocialproviderversion"></a>ISocialProvider::Version
 
@@ -27,7 +27,7 @@ ms.locfileid: "32285386"
 
 プロバイダーのバージョン番号を含む文字列。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 バージョン文字列は_MajorVersion_を使用する必要があります。 _MinorVersion_形式 (たとえば、1.4730)。 
   

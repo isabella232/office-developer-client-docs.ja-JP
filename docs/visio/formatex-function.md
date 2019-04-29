@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: d375c971-fee2-baa3-dc4f-a26018e70e8a
 description: dstUnit で記述された形式に従って書式設定された文字列として、srcUnit で評価された式の結果を返します。
 ms.openlocfilehash: e341cbcb16cc273f0413f98c195f77ad08946ab1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328631"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430967"
 ---
 # <a name="formatex-function"></a>FORMATEX 関数
 

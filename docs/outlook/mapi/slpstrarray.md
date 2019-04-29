@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5f570d9b-eb3d-4fc7-bcbe-348a0b8fe9e9
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 987020bd6fd49fcba9453075cd502bd5cea4c3a3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32361153"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435909"
 ---
 # <a name="slpstrarray"></a>SLPSTRArray
 
@@ -40,7 +40,7 @@ typedef struct _SLPSTRArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **cvalues**
   
@@ -50,7 +50,7 @@ typedef struct _SLPSTRArray
   
 > null で終了した8ビット文字の文字列の配列へのポインター。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 PT_MV_STRING8 の詳細については、「[プロパティの種類の一覧](property-types.md)」を参照してください。
   

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: df7f79df-770a-4868-e7e2-05c3828e23eb
 description: ユーザー インターフェイス (UI) 内にページを表示するかどうかを指定します。
 ms.openlocfilehash: 51ccd34cb40c286fe6b61818aea5a6b9c0b6d1a4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357219"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437330"
 ---
 # <a name="uivisibility-cell-page-properties-section"></a>[UIVisibility] セル ([Page Properties] セクション)
 
@@ -23,9 +23,9 @@ ms.locfileid: "32357219"
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
 |.0  <br/> |UI 内にページ名を表示します (既定値)。  <br/> |**visUIVNormal** <br/> |
-|1-d  <br/> |UI 内にページ名を表示しません。  <br/> |**visUIVHidden** <br/> |
+|1   <br/> |UI 内にページ名を表示しません。  <br/> |**visUIVHidden** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [UIVisibility] セルを **visUIVHidden** に設定すると、ページ名を含む文字列を表示する UI のどの部分にも、ページが表示されなくなります。 たとえば、[**ドローイング エクスプローラー**] 内、または [ページ] タブ上で、ページがオプションとして表示されなくなります。 ただし、ページ名を含まないオートメーションまたは UI パス (たとえば、[**印刷**] コマンド) を使用する場合は、ページにアクセスできます。 
   

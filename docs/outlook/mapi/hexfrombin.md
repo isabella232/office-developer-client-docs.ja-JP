@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 12b95657-1926-4a24-be63-40305ea6f990
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: a1bf02de914865e27c8c018aba8695c858888ae2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299462"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412577"
 ---
 # <a name="hexfrombin"></a>HexFromBin
 
@@ -59,7 +59,7 @@ void HexFromBin(
 
 なし。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **HexFromBin**関数は、 _cb_パラメーターで指定されたサイズを持つバイナリデータの単位へのポインターを受け取ります。 これは、(2 * _cb_) + 1 バイトのメモリ内で、このバイナリ情報を16進数で表した_sz_文字列で返されます。 たとえば、バイト値が10進数の10の場合、16進文字列は0a になり、1バイトが文字列の2バイトに変換されます。 
   

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 6788bc96-cc86-5f21-781f-67274e7f605a
 description: 数値を 0 (ゼロ) の方向、次の整数、または複数の次のインスタンスに切り上げます。
 ms.openlocfilehash: 7a16a77a990180f34dd7a5706c24ec3232438467
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346180"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439899"
 ---
 # <a name="floor-function"></a>FLOOR 関数
 
@@ -33,9 +33,9 @@ ms.locfileid: "32346180"
    
 ### <a name="return-value"></a>戻り値
 
-番号
+数値
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _multiple_が指定されていない場合、数値は0に近づくと次の整数に丸められます。 
   

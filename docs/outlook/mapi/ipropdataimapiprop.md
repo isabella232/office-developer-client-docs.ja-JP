@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 30b8ae9e-0c0c-4468-b286-29e083696fed
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: aed9120ac264a6c47c9d02502093e56d3268d08a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279543"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435146"
 ---
 # <a name="ipropdata--imapiprop"></a>IPropData : IMAPIProp
 
@@ -46,7 +46,7 @@ ms.locfileid: "32279543"
 |[hrgetpropaccess](ipropdata-hrgetpropaccess.md) <br/> |�A�N�Z�X ���x���� 1 �܂��͕����̃I�u�W�F�N�g�̃v���p�e�B�̏�Ԃ�擾���܂��B  <br/> |
 |[hraddobjprops](ipropdata-hraddobjprops.md) <br/> |オブジェクトに PT_OBJECT 型の1つ以上のプロパティを追加します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **ipropdata:: imapiprop**インターフェイスは MAPI で実装されており、主に、 [createiprop](createiprop.md)関数を呼び出してこの実装にアクセスするサービスプロバイダーによって使用されます。 
   

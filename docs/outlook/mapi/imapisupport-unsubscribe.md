@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 3f2870f7-1c08-4d0f-b9d8-7644f5e55b78
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: f27da216b9c474aa31503917a6d3c7a74eab9c4b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341266"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421215"
 ---
 # <a name="imapisupportunsubscribe"></a>IMAPISupport::Unsubscribe
 
@@ -49,7 +49,7 @@ MAPI_E_NOT_FOUND
   
 > _ulconnection_パラメーターで渡された接続番号が存在しません。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport:: 講読解除**メソッドは、すべてのサービスプロバイダサポートオブジェクトに実装されています。 サービスプロバイダーは**** 、**サブスクライブ**を呼び出して、以前に設定した通知登録を取り消します。 登録**解除****サブスクライブ**呼び出しで渡されたアドバイズシンクポインターを解放することによって、登録を取り消します。 
   

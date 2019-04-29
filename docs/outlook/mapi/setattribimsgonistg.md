@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 683d0d00-1b93-445d-86ff-180a3e6d2323
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 852ce31ba5ab02ff8f05dee25c9b32acb73130ec
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337969"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428831"
 ---
 # <a name="setattribimsgonistg"></a>SetAttribIMsgOnIStg
 
@@ -70,7 +70,7 @@ MAPI_W_ERRORS_RETURNED
   
 > 呼び出しは全体的に成功しましたが、1つ以上のプロパティがアクセスできず、PT_ERROR のプロパティの種類で返されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 property 属性は、プロパティオブジェクト (つまり、 [imapiprop: IUnknown](imapipropiunknown.md)インターフェイスを実装するオブジェクト) にのみアクセスできます。 ole 構造化ストレージオブジェクトで MAPI プロパティを使用できるようにするために、 [OpenIMsgOnIStg](openimsgonistg.md)は、ole **IStorage**オブジェクトの先頭に[IMessage: imapiprop](imessageimapiprop.md)オブジェクトをビルドします。 このようなオブジェクトのプロパティ属性は、 **SetAttribIMsgOnIStg**を使用して設定または変更したり、 [GetAttribIMsgOnIStg](getattribimsgonistg.md)で取得したりできます。 
   

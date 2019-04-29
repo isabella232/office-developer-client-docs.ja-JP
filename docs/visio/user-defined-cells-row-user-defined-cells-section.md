@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 6c48b9b3-5c62-7d5a-1c8f-fe96606f4dea
 description: ソリューションでのユーザー定義のセルに関する、値と説明プロンプトを格納します。図形には、ユーザー定義の [Value]/[Prompt] セルの各組み合わせに対して 1 つの [User-defined Cells] 行があります。
 ms.openlocfilehash: 01e2da8ef1e97e8a911df605ab6cf1e9f8a853eb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337185"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420690"
 ---
 # <a name="user-defined-cells-row-user-defined-cells-section"></a>[User-defined Cells] 行 ([User-defined Cells] セクション)
 
@@ -27,7 +27,7 @@ ms.locfileid: "32337185"
 |[値](value-cell-user-defined-cells-section.md) <br/> |対応するユーザー定義のセルの値を指定します。  <br/> |
 |[Prompt](prompt-cell-user-defined-cells-section.md) <br/> |ユーザー定義のセルに関する説明プロンプトまたはコメントを指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 ユーザー定義のセルは、他のセルやアドオンによって参照される、数式または定数の入力に使用できます。ユーザー定義のセルの値には可搬性があります。たとえば、ある図形が持つユーザー定義のセルを別の図形が参照していて、その図形を、同じユーザー定義のセルを持たない図形にコピーした場合、ユーザー定義のセルがコピー先の図形に追加されます。
   

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: c1f630c6-9e95-49c0-9757-4685c98184dc
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: fb26c7f366ce6a262362001773e825c60d0e4ec3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282832"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421971"
 ---
 # <a name="ixplogonflushqueues"></a>IXPLogon::FlushQueues
 
@@ -76,7 +76,7 @@ S_OK
   
 > 呼び出しが成功し、予想される値または値が返されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 mapi スプーラーは**IXPLogon:: flushqueues**メソッドを呼び出して、mapi スプーラーがメッセージの処理を開始しようとしていることをトランスポートプロバイダーに通知します。 トランスポートプロバイダーは、 [imapisupport:: modifystatusrow](imapisupport-modifystatusrow.md)メソッドを呼び出して、ステータス行の**PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md)) プロパティでその状態に適したビットを設定する必要があります。 状態行を更新した後、トランスポートプロバイダーは**flushqueues**呼び出しに対して S_OK を返す必要があります。 その後、mapi スプーラーは、mapi スプーラーと同期された操作で、メッセージの送信を開始します。 
   

@@ -5,13 +5,13 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: b68f8bff-1a20-4dfd-92fe-57869328879d
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: dd638a6cd6e5d32e83db827f00dd20de4a5c8a3d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335162"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439199"
 ---
 # <a name="commonly-used-property-sets"></a>よく使用されるプロパティセット
 
@@ -29,8 +29,8 @@ ms.locfileid: "32335162"
 |:-----|:-----|
 |共通  <br/> |PS_PUBLIC_STRINGS {00020329-0000-0000-C000-000000000046}  <br/> |
 |共通  <br/> |PSETID_Common {00062008-0000-0000-C000-000000000046}  <br/> |
-|連絡先  <br/> |PSETID_Address {00062004-0000-0000-C000-000000000046}  <br/> |
-|電子メール  <br/> |PS_INTERNET_HEADERS {00020386-0000-0000-C000-000000000046}  <br/> |
+|Contact  <br/> |PSETID_Address {00062004-0000-0000-C000-000000000046}  <br/> |
+|Email  <br/> |PS_INTERNET_HEADERS {00020386-0000-0000-C000-000000000046}  <br/> |
 |カレンダー  <br/> |PSETID_Appointment {00062002-0000-0000-C000-000000000046}  <br/> |
 |カレンダー  <br/> |PSETID_Meeting {6ED8DA90-450B-101B-98DA-00AA003F1305}  <br/> |
 |仕訳帳  <br/> |PSETID_Log {0006200A-0000-0000-C000-000000000046}  <br/> |

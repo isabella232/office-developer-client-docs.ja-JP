@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3d9bc643-332f-4c8e-83e6-ce9b15711945
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 96da91acec741322e6c07c64555171d35f0f7e00
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342771"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435174"
 ---
 # <a name="mtsid"></a>MTSID
 
@@ -41,7 +41,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **cb**
   
@@ -51,7 +51,7 @@ typedef struct
   
 > MTS エントリ識別子データを含むバイト配列。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **MTSID**構造体は、MAPI エントリ識別子の X 400 マッピングに対してのみ使用されます。 MAPI の[FLATENTRY](flatentry.md)構造に対応しています。 
   

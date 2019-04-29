@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6511368c-9777-497e-9eea-cf390c04b92e
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: a5364af229721d101f38d2f054f528169b48c09e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329081"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429573"
 ---
 # <a name="imapitablefindrow"></a>IMAPITable::FindRow
 
@@ -83,7 +83,7 @@ MAPI_W_POSITION_CHANGED
   
 > 呼び出しは成功しましたが、操作に使用されたブックマークは、最後に使用されたときと同じ行に設定されていません。ブックマークが使用されていない場合は、作成時と同じ位置になりません。 この警告が返された場合、呼び出しは正常に処理されます。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMAPITable:: FindRow**メソッドは、表の最初の行を検索し、 _lpRestriction_パラメーターで指定された**srestriction**構造で記述された一連の検索条件に一致するようにします。 
   

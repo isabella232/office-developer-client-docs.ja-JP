@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 86b0f071-5e0b-56de-ff5b-63c114ad823a
 description: Microsoft Visual Basic for Applications (VBA) プロジェクトのマクロを呼び出します。
 ms.openlocfilehash: 77045bd67fe9be9aab14e73199b33b93c6d70c2c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355714"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428089"
 ---
 # <a name="runmacro-function"></a>RUNMACRO 関数
 
@@ -31,7 +31,7 @@ RUNMACRO (* * *macroname* * * [, * * *projname_opt* * *])
 | _macroname_ <br/> |必須  <br/> |**String** <br/> |呼び出すマクロの名前を指定します。  <br/> |
 | _projname_opt_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> | マクロが含まれるプロジェクトを指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 プロジェクトが指定されている場合、 _projname_opt_を含むすべての開いているドキュメントをスキャンし、そのプロジェクトで_macroname_を呼び出します。 _projname_opt_が省略されている場合、または null ("") の場合、 _macroname_は、評価される RUNMACRO の引数が含まれる VBA プロジェクト内にあると見なされます。 
   

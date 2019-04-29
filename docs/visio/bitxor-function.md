@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 672eacaf-a374-c7e2-b39b-8d42d2371aee
 description: 各ビットが1に設定された16ビットのバイナリ数値を返します。 binary number1 と binary number2 の両方ではなく対応するビットが1に設定されています。 それ以外の場合、ビットは0に設定されます。
 ms.openlocfilehash: ab8ff46fe98512d963ef4ecd5c37127353827725
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302990"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439234"
 ---
 # <a name="bitxor-function"></a>BITXOR 関数
 
@@ -28,8 +28,8 @@ bitxor (* * *binary number1* * *, * * *binary number2* * *)
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _二項数値1_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |最初の 16 ビットのバイナリ数値を指定します。  <br/> |
-| _binary number2_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |2 番目の 16 ビットのバイナリ数値を指定します。  <br/> |
+| _二項数値1_ <br/> |必須  <br/> |**数値** <br/> |最初の 16 ビットのバイナリ数値を指定します。  <br/> |
+| _binary number2_ <br/> |必須  <br/> |**数値** <br/> |2 番目の 16 ビットのバイナリ数値を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

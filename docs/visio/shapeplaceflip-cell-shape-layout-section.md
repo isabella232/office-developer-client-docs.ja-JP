@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 40008507-d9e4-9c0e-603f-d5e6da73a94b
 description: '[レイアウトの構成] ダイアログ ボックスを使用して図形をレイアウトするときに、配置可能な図形をページ上で反転および回転する方法、またはそのいずれかの方法を指定します (このダイアログ ボックスを開くには、[デザイン] タブの [レイアウト] グループで、[ページの再レイアウト] をクリックして、[その他のレイアウト オプション] をクリックします)。'
 ms.openlocfilehash: 72ef1b67dd87d842e6a4372d1eb08d614f0eb2d3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332670"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429279"
 ---
 # <a name="shapeplaceflip-cell-shape-layout-section"></a>[ShapePlaceFlip] セル ([Shape Layout] セクション)
 
@@ -23,12 +23,12 @@ ms.locfileid: "32332670"
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
 |.0  <br/> |ページの既定値を使用します。  <br/> |**visLOFlipDefault** <br/> |
-|1-d  <br/> |水平方向に反転します。  <br/> |**visLOFlipX** <br/> |
-|pbm-2  <br/> |垂直方向に反転します。  <br/> |**visLOFlipY** <br/> |
-|2/4  <br/> |0 ～ 270°の範囲で 90°ずつ回転します。  <br/> |**visLOFlipRotate** <br/> |
-|~  <br/> |反転しません。  <br/> |**visLOFlipNone** <br/> |
+|1   <br/> |水平方向に反転します。  <br/> |**visLOFlipX** <br/> |
+|2   <br/> |垂直方向に反転します。  <br/> |**visLOFlipY** <br/> |
+|4   <br/> |0 ～ 270°の範囲で 90°ずつ回転します。  <br/> |**visLOFlipRotate** <br/> |
+|8   <br/> |反転しません。  <br/> |**visLOFlipNone** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [ShapePlaceFlip] セルの値を使用すると、配置可能な図形の向きを、接続先となっている別の配置可能な図形に合わせることができます。
   

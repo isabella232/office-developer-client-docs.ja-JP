@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 0c43546a-4788-4852-bc89-d6baa4f33c94
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 005742eaaba81600be249d52e5d8098e9f286f17
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299813"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437680"
 ---
 # <a name="generating-and-using-entry-identifiers-in-message-store-providers"></a>メッセージ ストア プロバイダーでのエントリ識別子の生成と使用
 

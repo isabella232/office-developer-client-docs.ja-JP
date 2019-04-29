@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 93ac63ae-f254-45e1-a9b1-347d69d2ed9f
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: fbc990a8c962883aa07987b200d1d2fd55434f93
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328827"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33413046"
 ---
 # <a name="imapitableseekrow"></a>IMAPITable::SeekRow
 
@@ -79,7 +79,7 @@ MAPI_W_POSITION_CHANGED
   
 > 呼び出しは成功しましたが、 _bkOrigin_パラメーターで指定されたブックマークは、最後に使用されたときと同じ行に設定されていません。 ブックマークが使用されていない場合は、作成時と同じ位置になりません。 この警告が返された場合、呼び出しは正常に処理されます。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMAPITable:: seekrow**メソッドは、カーソルの新しい BOOKMARK_CURRENT 位置を確立します。 _lrowcount_パラメーターは、カーソルが移動する行の数と移動の方向を示します。 
   

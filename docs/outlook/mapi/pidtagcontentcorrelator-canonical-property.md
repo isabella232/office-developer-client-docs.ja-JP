@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 0bf78879-2f9f-4c29-b1f4-2f4882d8464d
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 96e0e3152a70eb2913c4559afd99e25adff48ca9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331977"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438527"
 ---
 # <a name="pidtagcontentcorrelator-canonical-property"></a>PidTagContentCorrelator 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32331977"
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 バイナリ文字列の内容は、メッセージの発信者によって定義されます。 送信メッセージに設定されている場合、このプロパティはメッセージへの応答で生成されたすべてのレポートにコピーされる必要があります。
   

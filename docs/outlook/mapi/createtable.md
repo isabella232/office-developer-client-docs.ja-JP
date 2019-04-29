@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 106ce3d8-d0bf-4a0e-9a15-dc8988d0eb58
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: e8c399569e68b8cb55d803733ed93105ea0be799
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332985"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435013"
 ---
 # <a name="createtable"></a>CreateTable
 
@@ -103,7 +103,7 @@ S_OK
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _lpAllocateBuffer_、 _lpAllocateMore_、および_lpfreebuffer_の入力パラメーターは、それぞれ、 [MAPIAllocateBuffer](mapiallocatebuffer.md)、 [MAPIAllocateMore](mapiallocatemore.md)、および[MAPIFreeBuffer](mapifreebuffer.md)関数を指しています。 **CreateTable**を呼び出すクライアントアプリケーションは、という名前の MAPI 関数へのポインターを渡します。サービスプロバイダーは、初期化呼び出しで受け取った、または[imapiallocルーチン](imapisupport-getmemallocroutines.md)メソッドへの呼び出しによって取得したこれらの関数にポインターを渡します。 
   

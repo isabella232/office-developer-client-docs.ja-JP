@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: db80f147-71a0-0b23-bc7e-fe1915dfdd21
 description: 指定した図形の回転のテキストブロックの正確な角度を計算し、テキストが逆さまになるのを防ぎます。
 ms.openlocfilehash: 77c944d954292e231f8bacbe3c8a4433aad5d689
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360187"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429286"
 ---
 # <a name="gravity-function"></a>GRAVITY 関数
 

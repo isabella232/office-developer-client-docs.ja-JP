@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.assetid: cf8c26b2-ca2b-4dda-a02d-0ccbeac19106
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 68a0addc36ecf1b4491ab1e4f5b10f359bbc59c3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310347"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410610"
 ---
 # <a name="temperrtemperr12"></a>TempErr/TempErr12
 
@@ -39,8 +39,8 @@ LPXLOPER12 TempErr12(BOOL err);
 |**エラー**|**XLCALL.H で定義されたエラー コード**|**同等の 10 進数**|
 |:-----|:-----|:-----|
 |#NULL  <br/> |**xlerrNull** <br/> |.0  <br/> |
-|#DIV/0!  <br/> |**xlerrDiv0** <br/> |7  <br/> |
-|#VALUE!  <br/> |**xlerrValue** <br/> |約  <br/> |
+|#DIV/0!  <br/> |**xlerrDiv0** <br/> |7   <br/> |
+|#VALUE!  <br/> |**xlerrValue** <br/> |15   <br/> |
 |#REF!  <br/> |**xlerrRef** <br/> |最高  <br/> |
 |#NAME?  <br/> |**xlerrName** <br/> |29  <br/> |
 |#NUM!  <br/> |**xlerrNum** <br/> |36  <br/> |

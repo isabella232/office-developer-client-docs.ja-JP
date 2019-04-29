@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: da9fb933-4e2c-3e2a-1879-6e70db0cd830
 description: 色の青要素を返します。 戻り値は、0 ~ 255 の範囲の整数です。 入力した引数が無効な場合は、0 を返します。
 ms.openlocfilehash: adefbe0f8c2df0ead0f3e50cd5d4945501972865
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297355"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439038"
 ---
 # <a name="blue-function"></a>BLUE 関数
 

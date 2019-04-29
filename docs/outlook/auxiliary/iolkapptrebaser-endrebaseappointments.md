@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: e47d5a8d-6a13-f430-fbfd-00df04b4a006
 description: 完了する再配置を予定するまで待機し、結果を取得します。
 ms.openlocfilehash: a6e62cff9efea1fc7079d04bc9b032b5637f8847
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321890"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431002"
 ---
 # <a name="iolkapptrebaserendrebaseappointments"></a>IOlkApptRebaser::EndRebaseAppointments
 

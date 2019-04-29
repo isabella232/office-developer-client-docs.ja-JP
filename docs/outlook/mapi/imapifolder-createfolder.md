@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 39d07fc8-09aa-4122-af32-b02f2c893d29
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 606d780aa59e363c30ddc7a5b562db64d845ccb0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280079"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436763"
 ---
 # <a name="imapifoldercreatefolder"></a>IMAPIFolder::CreateFolder
 
@@ -98,7 +98,7 @@ MAPI_E_COLLISION
   
 > _lpszfoldername_パラメーターに指定した名前のフォルダーが既に存在します。 フォルダー名は一意である必要があります。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapifolder:: CreateFolder**メソッドを実行すると、現在のフォルダーにサブフォルダーが作成され、新しいフォルダーにエントリ識別子が割り当てられます。 
   

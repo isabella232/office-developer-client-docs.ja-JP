@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: db621dfd-c6ad-42d2-8089-db40a63cab36
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: d647b41018afbade91dffb2818b48b0738148855
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329436"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411765"
 ---
 # <a name="imapiformadvisesinkonactivatenext"></a>IMAPIFormAdviseSink::OnActivateNext
 
@@ -64,7 +64,7 @@ S_FALSE
   
 > フォームでは、次のメッセージのメッセージクラスは処理されません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 フォームビューアーは、 **IMAPIFormAdviseSink:: OnActivateNext**メソッドを呼び出して、フォームが次のメッセージをフォルダー内に表示できるかどうかを判断できるようにします。 次のメッセージは任意のクラスのメッセージである可能性がありますが、通常は同じクラスまたは関連クラスのものです。 これにより、クライアントアプリケーションが可能な限りフォームオブジェクトを再利用できるようにすることで、同じクラスの複数のメッセージをより効率的に読み取ることができます。 
   

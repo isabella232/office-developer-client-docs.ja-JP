@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: cce99321-9b6a-4b1a-b19f-a82ca9ba6a30
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0eb92008e7eff00388e85c5badbdc97a4c6dda12
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331725"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429678"
 ---
 # <a name="pidtagcontactaddressbookdisplaynames-canonical-property"></a>PidTagContactAddressBookDisplayNames 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32331725"
 |データの種類 :   <br/> |PT_MV_UNICODE、PT_MV_STRING8  <br/> |
 |エリア:  <br/> |連絡先のアドレス帳  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 これらのプロパティは、ユーザーとユーザーの組織によって定義されます。
   

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: b2d51f4b-d64e-fd14-4ff1-ed67c69213bc
 description: 選択した図形の選択範囲の表示/非表示を切り替えます。
 ms.openlocfilehash: 2ff9f051df54f4d424589332b9fbaea973552edc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32319860"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435881"
 ---
 # <a name="noalignbox-cell-miscellaneous-section"></a>[NoAlignBox] セル ([Miscellaneous] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32319860"
 | TRUE  <br/> | 図形を選択するときに選択範囲が表示されません。  <br/> |
 | FALSE  <br/> | 図形を選択するときに選択範囲が表示されます。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式または **CellsU** を使用したプログラムから、名前によって [NoAlignBox] セルへの参照を取得するには、次の値を使用します。 
   

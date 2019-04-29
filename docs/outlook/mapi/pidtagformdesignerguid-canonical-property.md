@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8d7f5789-610c-47f6-a109-5513d677ef60
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: b0e0847a3a9e21f080a852738ec8afbc98a2263f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316234"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412241"
 ---
 # <a name="pidtagformdesignerguid-canonical-property"></a>PidTagFormDesignerGuid 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32316234"
 |データの種類 :   <br/> |PT_GUID  <br/> |
 |エリア:  <br/> |MAPI 共通  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 通常、このプロパティには、フォームの作成に使用されるデザインプログラムのグローバル一意識別子 (GUID) が含まれます。 このプロパティは空にすることができます。 
   

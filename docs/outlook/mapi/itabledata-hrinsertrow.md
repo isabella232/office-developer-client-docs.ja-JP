@@ -13,11 +13,11 @@ api_type:
 ms.assetid: e5ae37ea-81a5-49c7-9ad0-0bfac518426c
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 2709ac612fc9e2edaa57b280d52c0a5229ee9978
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278807"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435440"
 ---
 # <a name="itabledatahrinsertrow"></a>ITableData::HrInsertRow
 
@@ -54,7 +54,7 @@ MAPI_E_INVALID_PARAMETER
   
 > 挿入された行がテーブルに既に存在する場合、そのインデックス列の値が同じ行。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **itabledata:: HrInsertRow**メソッドは、特定の位置にあるテーブルに行を挿入します。 _uliRow_パラメーターで指定された位置にある行の後に新しい行が挿入されます。 
   

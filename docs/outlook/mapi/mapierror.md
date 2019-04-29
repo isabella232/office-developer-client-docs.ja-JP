@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: e04c2228-aa0a-4958-b5b2-6467e93ab613
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 682e75c4e0a2f60dbd46a13b0b737ca4a8e18f3d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345779"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409147"
 ---
 # <a name="mapierror"></a>MAPIERROR
 
@@ -43,7 +43,7 @@ typedef struct _MAPIERROR
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **ulversion**
   
@@ -65,7 +65,7 @@ typedef struct _MAPIERROR
   
 > エラーが発生した場所を識別する、 **lpszcomponent**メンバによって参照されているコンポーネント内の場所を表す値です。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **MAPIERROR**構造体は、エラー情報を記述するために使用されます。 クライアントおよびサービスプロバイダーは、 [imapiprop:: GetLastError](imapiprop-getlasterror.md)メソッドの_lppMAPIError_パラメーターで、 **MAPIERROR**構造体へのポインターを渡します。 **GetLastError**は、オブジェクトに対して発生した前のエラーに関する情報を返します。 **GetLastError**の発信者は、 [MAPIFreeBuffer](mapifreebuffer.md)を呼び出すことにより、 **MAPIERROR**構造体のメモリを解放します。
   

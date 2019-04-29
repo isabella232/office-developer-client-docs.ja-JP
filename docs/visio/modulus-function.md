@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: cb6326a5-1bf8-b6a3-5c0d-d38c071353a5
 description: 数値を除数で割ったときの剰余 (モジュラス) を返します。
 ms.openlocfilehash: f6b713b1b3a9d2afa85f49de9d451642a00d8dad
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356995"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429272"
 ---
 # <a name="modulus-function"></a>MODULUS 関数
 
@@ -33,9 +33,9 @@ ms.locfileid: "32356995"
    
 ### <a name="return-value"></a>戻り値
 
-番号
+数値
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 結果には除数と同じ符号が付きます。除数が 0 の場合、#DIV/0! エラーを返します。 
   

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: e931246e-7fff-4116-a9fc-f685988e21e8
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 1e9d390a895490f2f7445c5f1ed6e0bde3a87639
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331543"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439731"
 ---
 # <a name="imapistatussettingsdialog"></a>IMAPIStatus::SettingsDialog
 
@@ -58,7 +58,7 @@ MAPI_E_NO_SUPPORT
   
 > status オブジェクトは、 **PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) プロパティの STATUS_SETTINGS_DIALOG フラグが指定されていないため、このメソッドをサポートしていません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapistatus:: settingsdialog**メソッドは、構成プロパティシートを表示します。 すべてのサービスプロバイダーは**settingsdialog**メソッドをサポートする必要がありますが、必須ではありません。 サービスプロバイダーは、独自のプロパティシートを実装するか、support オブジェクトの[imapisupport::D oconfigpropsheet](imapisupport-doconfigpropsheet.md)メソッドで提供される実装を使用できます。 **doconfigpropsheet**は、読み取り/書き込み可能なプロパティシートを作成します。 
   

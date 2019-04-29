@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: d87093dc-f705-465f-ab3c-944ca0cd3e54
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 991e48aa458a58ad2d7d688e81dbb357ef9bda5b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348714"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428880"
 ---
 # <a name="imslogon--iunknown"></a>IMSLogon : IUnknown
 
@@ -48,7 +48,7 @@ ms.locfileid: "32348714"
 |[アドバイズ](imslogon-unadvise.md) <br/> |**IMSLogon:: Advise**メソッドの呼び出しを使用して、以前に作成されたメッセージストア変更の通知用のオブジェクトの登録を削除します。  <br/> |
 |[openstatusentry](imslogon-openstatusentry.md) <br/> |status オブジェクトを開きます。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 メッセージストアのログオンオブジェクトは、MAPI が直接呼び出す、開いているメッセージストアプロバイダーの一部です。 MAPI が呼び出すメッセージストアのログオンオブジェクトと、クライアントアプリケーションが呼び出すメッセージストアオブジェクトとの間には、1対1の対応があります。ログオンおよびストアオブジェクトは、2つのインターフェイスを公開する1つのオブジェクトと考えることができます。 2つのオブジェクトが一緒に作成され、一緒に解放されます。
   

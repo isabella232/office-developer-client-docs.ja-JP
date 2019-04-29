@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 898bf89d-d00f-9769-a89d-787ef708eca5
 description: テキストの方向が左から右か、右から左かを示します。
 ms.openlocfilehash: af1e79b13d3d8bab2e7271eb79e68cf931871806
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346222"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33413116"
 ---
 # <a name="flags-cell-paragraph-section"></a>[Flags] セル ([Paragraph] セクション)
 
@@ -23,9 +23,9 @@ ms.locfileid: "32346222"
 |**値**|**説明**|
 |:-----|:-----|
 |.0  <br/> |テキストの方向は、左から右です (既定値)。  <br/> |
-|1-d  <br/> |テキストの方向は、右から左です。  <br/> |
+|1   <br/> |テキストの方向は、右から左です。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルの値は、[**テキスト**] ダイアログボックスの [段落] タブ ([**ホーム**] タブの [**フォント**] 矢印をクリックすると表示されます) の [**段落**] タブでの**方向**の設定に対応しています。これは、コンプレックススクリプトのテキストを使用する言語が次の場合にのみ表示されます。[ **Microsoft Office 言語設定**] ダイアログボックスに追加されました。 ([**スタート**]、 **[すべてのプログラム**]、[ **microsoft office**]、[microsoft office**ツール**]、[ **microsoft office の言語設定**] の順にクリックします)。 
   

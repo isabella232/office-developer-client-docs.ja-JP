@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: e0222afa-c148-4735-a603-cac7be6c91f9
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 4d38648f5e3084c8342fca8d18f0bd3efc915155
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280086"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412633"
 ---
 # <a name="imapifoldercreatemessage"></a>IMAPIFolder::CreateMessage
 
@@ -67,7 +67,7 @@ S_OK
   
 > メッセージが正常に作成されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapifolder:: CreateMessage**メソッドは、標準または関連付けられたコンテンツを含む新しいメッセージを作成し、エントリ識別子を割り当てます。 エントリ識別子は、メッセージストアプロバイダーと個別のメッセージを表すパーツから構成されます。 
   

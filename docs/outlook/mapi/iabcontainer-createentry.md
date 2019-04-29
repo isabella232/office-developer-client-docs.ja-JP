@@ -13,11 +13,11 @@ api_type:
 ms.assetid: ea1daf74-d9e3-4304-bf5d-889afeea6ae9
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 9f80130279e3437dd9be947de97d3f0d4181165e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287029"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411275"
 ---
 # <a name="iabcontainercreateentry"></a>IABContainer::CreateEntry
 
@@ -72,7 +72,7 @@ S_OK
   
 > 新しいエントリが正常に作成されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IABContainer:: createentry**メソッドは、指定されたコンテナーに特定の型の新しいエントリを作成し、そのエントリにさらにアクセスするためのインターフェイス実装へのポインターを返します。 新しいエントリは、1回限りのテーブルで公開されている使用可能なテンプレートの一覧から選択されたテンプレートを使用して作成されます。 発信者は、 [imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出して、 **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) プロパティを要求することによって、コンテナーの1回限りのテーブルにアクセスします。 
   

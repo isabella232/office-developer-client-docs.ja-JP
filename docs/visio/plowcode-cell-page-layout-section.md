@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: e43f3d29-7def-d36e-ac64-62f0a389d415
 description: 図面ページで、配置可能な図形を別の配置可能な図形の近くにドロップしたときに、これらの図形を移動して遠ざけるかどうかを指定します。
 ms.openlocfilehash: 4ea85ddbaf7662305a2a82fc7f0b814019624841
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344374"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420354"
 ---
 # <a name="plowcode-cell-page-layout-section"></a>[PlowCode] セル ([Page Layout] セクション)
 
@@ -23,9 +23,9 @@ ms.locfileid: "32344374"
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
 |.0  <br/> |図形を移動しません。  <br/> |**visPLOPlowNone** <br/> |
-|1-d  <br/> |図形を移動します。  <br/> |**visPLOPlowAll** <br/> |
+|1   <br/> |図形を移動します。  <br/> |**visPLOPlowAll** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルの値は、[**ページ設定**] ダイアログボックス ([**デザイン**] タブの [**ページ設定**] 矢印をクリック) の [**レイアウトと経路**] タブで設定することもできます。この場合、[**ドロップ時に他の図形を移動**しない] チェックボックスをオンにします。 
   

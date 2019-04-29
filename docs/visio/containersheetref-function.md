@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: bbdb2dea-4f75-b73e-a98a-0031f34dff2c
 description: 図形を含む、指定されたコンテナーのシート参照を返します。
 ms.openlocfilehash: 473d8c0b81ecc568c1d4f3a3b3a885e1ceb4e00d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32318985"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437267"
 ---
 # <a name="containersheetref-function"></a>CONTAINERSHEETREF 関数
 
@@ -38,7 +38,7 @@ CONTAINERSHEETREF (* * *index* * * * * *[, category]* * *)
 
 シェイプシート参照
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 コンテナーの Z オーダー (前面から背面) を基に計算されるコンテナーのインデックス。
   

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 9c76bf02-7269-65bb-2fd2-920243d962ef
 description: レイヤーに属している図形が印刷可能かどうかを指定します。
 ms.openlocfilehash: f9a1dca6d45b53c02ff0ed29f921c352fc947630
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356183"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435216"
 ---
 # <a name="print-cell-layers-section"></a>[Print] セル ([Layers] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32356183"
 |TRUE  <br/> |図形を印刷できます。  <br/> |
 |FALSE  <br/> |図形を印刷できません。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この値は、[**レイヤー プロパティ**] ダイアログ ボックスの [**印刷**] オプションを使用して設定することもできます (このダイアログ ボックスを開くには、[**ホーム**] タブの [**編集**] グループで、[**レイヤー**] をクリックして、[**レイヤー プロパティ**] をクリックします)。
   

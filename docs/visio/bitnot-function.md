@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 7b6486bb-3618-3747-4b00-93bd55767c1c
 description: バイナリ数の対応するビットが0の場合にのみ、各ビットが1に設定される16ビットのバイナリ数値を返します。 それ以外の場合、ビットは0に設定されます。
 ms.openlocfilehash: 34ea6fd614feae8e3c8e97e34b7ff6c531f4c123
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32330010"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438835"
 ---
 # <a name="bitnot-function"></a>BITNOT 関数
 
@@ -28,7 +28,7 @@ bitnot (* **バイナリ番号** *)
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _バイナリ番号_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |16 ビットのバイナリ数値を指定します。  <br/> |
+| _バイナリ番号_ <br/> |必須  <br/> |**数値** <br/> |16 ビットのバイナリ数値を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

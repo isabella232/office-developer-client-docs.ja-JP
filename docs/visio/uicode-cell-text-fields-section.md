@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 1d9717c1-4310-0d62-874f-4df77cd81627
 description: Visio 2000 よりも前のバージョンの Visio に挿入するフィールドのコードを指定します。
 ms.openlocfilehash: 293451b61def59ccfdf849dc597def9521fd22e5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327345"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422216"
 ---
 # <a name="uicode-cell-text-fields-section"></a>[UICode] セル ([Text Fields] セクション)
 
 Visio 2000 よりも前のバージョンの Visio に挿入するフィールドのコードを指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルは [シェイプシート] ウィンドウには表示されません。Visio バージョン 2000 の図面を Visio Version 5.0 ファイル形式で保存するなど、下位互換性の問題に対処する必要がある場合に、このセルを使用します。
   

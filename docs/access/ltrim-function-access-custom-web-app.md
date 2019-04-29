@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 5a34539a-0245-4268-bcd3-90a17ee095f4
 description: 先頭の空白を削除した後の文字式を返します。
 ms.openlocfilehash: 83dba56e4ed8b140bb9f278f9e836ab4006e0955
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301793"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430974"
 ---
 # <a name="ltrim-function-access-custom-web-app"></a>LTrim 関数 (Access カスタム web アプリ)
 

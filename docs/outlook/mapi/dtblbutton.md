@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6058c78b-05d4-45a3-988c-1fbf8322125e
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: a8fa683fecd59ec813fee0c15d5b4f08084c645d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338312"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412787"
 ---
 # <a name="dtblbutton"></a>DTBLBUTTON
 
@@ -42,7 +42,7 @@ typedef struct _DTBLBUTTON
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **ulblpszlabel**
   
@@ -60,7 +60,7 @@ MAPI_UNICODE
   
 > [IMAPIControl](imapicontroliunknown.md)インターフェイスを実装する PT_OBJECT 型のプロパティのプロパティタグ。 ボタンがクリックされると、MAPI は、表示テーブルの[imapiprop](imapipropiunknown.md)実装に対して[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出し、このプロパティを取得します。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **dtblbutton**構造体は、ボタンをクリックすると、ユーザーが操作を開始できるようにするコントロールを記述します。 通常、ボタンをクリックすると、モーダルダイアログボックスが表示されるか、プログラムによってタスクが呼び出されます。 サービスプロバイダーは、ボタンコントロールを使用して任意のものを実装できます。 他のコントロールの値に基づいてタスクを実行するようにボタンが設定されている場合、これらのコントロールでは DT_SET_IMMEDIATE フラグが設定されている必要があります。 
   

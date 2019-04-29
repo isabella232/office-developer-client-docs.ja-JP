@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: c9314c39-1d2e-a18f-c01b-8817286099dc
 description: ドキュメントのカラーパレット内のインデックスを表す値を返します。 色合い、鮮やかさ、明度の各コンポーネントによって色を指定します。
 ms.openlocfilehash: 55703239395c54beedf4b7383435253f9c37006f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329926"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420963"
 ---
 # <a name="hsl-function"></a>HSL 関数
 
@@ -34,9 +34,9 @@ HSL (* **色合い** *、* **鮮やかさ** *、* **輝度** *)
    
 ### <a name="return-value"></a>戻り値
 
-番号
+数値
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 関数によって返される色が現在の図面のカラー パレットにない場合、その色が図面で使用できる色の一覧に追加されます。 
   

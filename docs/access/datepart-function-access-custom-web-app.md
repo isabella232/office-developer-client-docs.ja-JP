@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 8936f0b6-f9b2-44ef-bf90-e482b64611cd
 description: 指定した日付のうち、指定した日付部分を表す数値を返します。
 ms.openlocfilehash: 31ac6423614afd61ed943bb7ba375f14696df1ea
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280770"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411436"
 ---
 # <a name="datepart-function-access-custom-web-app"></a>DatePart 関数 (Access カスタム web アプリ)
 
@@ -31,7 +31,7 @@ ms.locfileid: "32280770"
 | *DatePart*  <br/> |整数が返される*日付*の部分 (日付または時刻の値)。 有効な省略形のリストについては、「注釈」を参照してください。  <br/> |
 | *Date*  <br/> |日付/時刻の値に解決可能な式。 *Date*引数 expression、column 式、ユーザー定義の変数または文字列リテラル。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 The following table lists all valid  *DatePart*  arguments. 
   

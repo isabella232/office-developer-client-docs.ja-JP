@@ -13,11 +13,11 @@ api_type:
 ms.assetid: aec72e51-1f75-b2c5-76ca-626cd21fbc7d
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 024583926b5d0be638b33b1b60c5d4c5dc74d05b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315093"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438954"
 ---
 # <a name="ipstxemulatespooler"></a>IPSTX::EmulateSpooler
 
@@ -37,7 +37,7 @@ HRESULT EmulateSpooler(
   
 >  順番ローカルストアがスプーラーをエミュレートする必要がある場合は、このパラメーターを True に設定します。そうでない場合は False に設定します。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 ローカルストアは**ipstx:: EmulateSpooler**を呼び出して、Outlook プロトコルマネージャーとして機能し、送信キュー内のメッセージをバックエンドサーバー (たとえば、MSN server または AOL サーバー) にスプールして処理します。 同期時にスプーラーをエミュレートすると、ストアは次の2つのメソッドを呼び出します。 
   

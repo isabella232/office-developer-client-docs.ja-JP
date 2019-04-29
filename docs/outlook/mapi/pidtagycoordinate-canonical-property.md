@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: f176308d-efb9-460c-8379-8a12d4f8e017
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: ab90b05f8bd92f4cfd90f84078691a293ae159b7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32350667"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436854"
 ---
 # <a name="pidtagycoordinate-canonical-property"></a>PidTagYCoordinate 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32350667"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |MAPI 表示テーブル  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **PR_XPOS** ([PidTagXCoordinate](pidtagxcoordinate-canonical-property.md))、このプロパティ、 **PR_DELTAX** ([PidTagDeltaX](pidtagdeltax-canonical-property.md))、および**PR_DELTAY** ([PidTagDeltaY](pidtagdeltay-canonical-property.md)) の各プロパティは、コントロールの位置とサイズを指定します。
   

@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 8bb17e80-3be5-228e-ddb4-fcda03b60ba6
 description: このセクションには、outlook の天気予報の XML スキーマに関する outlook 2013 スキーマリファレンスを記載しています。 このスキーマを使用すると、天気予報サービスプロバイダーは、場所コードの Outlook web サービス要求に応答できます。 場所コードは、ユーザーが天気予報バーで天気予報情報を要求している場所に対応している必要があります。
 ms.openlocfilehash: 153244bc1ddcf84299d1e72821a5ebe65ad4ca4d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355126"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429230"
 ---
 # <a name="outlook-weather-location-xml-schema"></a>Outlook Weather Location XML スキーマ
 

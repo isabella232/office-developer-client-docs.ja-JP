@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 1cfb82f7-5215-4faa-af25-5b1da7e31209
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 70f61ef553350f08eed96c1ee4e9ab790359d1fc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348938"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409231"
 ---
 # <a name="iablogonopenentry"></a>IABLogon::OpenEntry
 
@@ -76,7 +76,7 @@ MAPI_MODIFY
   
 > 読み上げ開かれているオブジェクトへのポインターへのポインター。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 S_OK 
   
@@ -94,7 +94,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > _lな tryid_パラメーターのエントリ id は、アドレス帳プロバイダーで認識される形式ではありません。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 MAPI は**openentry**メソッドを呼び出して、コンテナー、メッセージングユーザー、または配布リストを開きます。 
   

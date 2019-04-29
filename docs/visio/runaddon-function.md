@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 122c1d30-3cb9-7e7d-b4cc-e93ab8e4da4f
 description: Microsoft Visual Basic for Applications (VBA) プロジェクトでアドオンまたはマクロを実行します。
 ms.openlocfilehash: 280f6eaf1e5db045d8c1d22965df00960d188112
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32319062"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432010"
 ---
 # <a name="runaddon-function"></a>RUNADDON 関数
 
@@ -30,7 +30,7 @@ RUNADDON (" *string* ")
 |:-----|:-----|:-----|:-----|
 | _string_ <br/> |必須  <br/> |**String** <br/> | VBA プロジェクト内の **Addons** コレクションまたはマクロ内のアドオンの名前を指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 RUNADDON 関数呼び出しを含むドキュメントのプロジェクト (または、参照されている場合は別のプロジェクト) に、 _string_という名前のマクロ (引数を持たないプロシージャ) が含まれていないと、Microsoft Visio は、_文字列_という名前のアドオンを実行します。 指定した名前のアドイン__ が見つからない場合、Visio は何もエラーを報告しません。 **TraceFlags** プロパティを使用すると、Visio が実行しようとするプロシージャとアドオンを監視することができます。 
   

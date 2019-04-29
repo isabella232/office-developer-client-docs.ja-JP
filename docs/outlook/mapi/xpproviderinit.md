@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: df6eacf4-1cf9-4c25-806f-f87c38dad597
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: ee0ff8d32436f71020be2cdc91d6677bd4ec8e43
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32325656"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428537"
 ---
 # <a name="xpproviderinit"></a>XPProviderInit
 
@@ -99,7 +99,7 @@ MAPI_E_VERSION
   
 > MAPI で使用されている spi バージョンは、このプロバイダーで使用されている spi と互換性がありません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 MAPI は、クライアントログオンの後にトランスポートプロバイダーを初期化するために、エントリポイント関数の**xps providerinit**を呼び出します。 クライアントのプロファイルに指定されている各トランスポートプロバイダーに対して、 **xps providerinit**が1回呼び出されます。 
   
