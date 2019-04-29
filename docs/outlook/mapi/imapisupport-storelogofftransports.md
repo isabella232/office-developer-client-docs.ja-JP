@@ -13,11 +13,11 @@ api_type:
 ms.assetid: f21fba96-c5ca-4d41-9b93-c7955ab7327f
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 30c91ec7a5a28b0c270da5223a2a245fb504d8c5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326496"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421383"
 ---
 # <a name="imapisupportstorelogofftransports"></a>IMAPISupport::StoreLogoffTransports
 
@@ -83,7 +83,7 @@ S_OK
   
 > ログオフ手順は正常に実行されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport:: storelogofftransports**メソッドは、メッセージストアプロバイダーサポートオブジェクトに対して実装されています。 メッセージストアプロバイダーは、 **storelogofftransports**を呼び出して、クライアントアプリケーションに、メッセージストアを閉じるときのトランスポートプロバイダーアクティビティの処理方法を制御できるようにします。 
   

@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 9ca3172a-82a3-4483-b0aa-4e848930f6ed
 description: 名、姓、プロファイル画像への URL など、個人の詳細を表す文字列を取得します。
 ms.openlocfilehash: 05cc2565ccd0688c7b8f4eccd6d8f42353d8743e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286144"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427333"
 ---
 # <a name="isocialpersongetdetails"></a>ISocialPerson::GetDetails
 
@@ -29,7 +29,7 @@ _details_
   
 > 読み上げ個人の詳細を表す XML 文字列型 (string) の値。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 返される_詳細_XML 文字列は、Outlook Social Connector (.osc) プロバイダー拡張機能のスキーマで定義されているように、 **person**のスキーマ定義に準拠している必要があります。
   

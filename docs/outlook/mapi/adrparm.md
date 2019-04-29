@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 35cd57b4-9901-456c-bf06-1f84e274eb4e
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9663a25a50d914f47cff48124898d16318bbbc43
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32330220"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425898"
 ---
 # <a name="adrparm"></a>ADRPARM
 
@@ -54,7 +54,7 @@ typedef struct _ADRPARM
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 **cbABContEntryID**
   
@@ -160,7 +160,7 @@ DIALOG_SDI
   
 > ダイアログボックスに表示されるアドレスエントリを提供できるアドレス帳のコンテナーを制限する**srestriction**構造体へのポインター。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **ADRPARM**構造体は、クライアントとサービスプロバイダーによって、MAPI の共通アドレスダイアログボックスの外観と動作を制御するために使用されます。 [アドレス] ダイアログボックスには、モードレスとモーダルの2種類があります。 **ADRPARM**構造体のメンバーの中には、ダイアログボックスの両方のバージョンに適用されるものもありますが、一部は2つのバージョンのどちらかにのみ適用されます。 次の表では、 **ADRPARM**構造体のメンバーを、共通のアドレスダイアログボックスで使用する方法に関連しています。 
   

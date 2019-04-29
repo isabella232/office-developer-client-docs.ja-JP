@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 55b3e692-753d-45e9-a40d-22adc81b75da
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 880731bf204778cde21da6cd9024a3ca86c6f6a5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351066"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434677"
 ---
 # <a name="processing-a-sent-message"></a>送信されたメッセージの処理
 

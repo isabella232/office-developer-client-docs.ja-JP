@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 7d35a1d0-2267-86d9-2bf4-b3f95b3693e1
 description: このメンバーはプレースホルダーで、サポートされていません。
 ms.openlocfilehash: f4a3fc0950bc92f62ca724baf6f88cea68f753e6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32319384"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427025"
 ---
 # <a name="ifreebusysupportplaceholder23"></a>IFreeBusySupport::Placeholder23
 
@@ -36,7 +36,7 @@ HRESULT Placeholder23(
 
 このメンバーはプレースホルダーで、サポートされていないため、常に E_NOTIMPL。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このメンバーは、E_NOTIMPL を返す必要があります。
   

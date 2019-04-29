@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 6eb51e5a-03d8-3daa-b4e1-6107d540aed9
 description: 図形の選択範囲をロックして、頂点を編集した場合や、行の種類を [Geometry] セクションで変更した場合に再計算できないようにします。
 ms.openlocfilehash: 2b1d907f480a22a56f5847035da8d1cbde5fdcc5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359634"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423042"
 ---
 # <a name="lockcalcwh-cell-protection-section"></a>[LockCalcWH] セル ([Protection] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32359634"
 | TRUE  <br/> | 幅と高さを再計算できません。  <br/> |
 | FALSE  <br/> | 幅と高さを再計算できます。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LockCalcWH] セルへの参照を取得するには、次の値を使用します。 
   

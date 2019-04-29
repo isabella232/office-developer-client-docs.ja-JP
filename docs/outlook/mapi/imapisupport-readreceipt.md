@@ -13,11 +13,11 @@ api_type:
 ms.assetid: ef31b61a-93b6-4ae8-bc71-f5ef5caf43f4
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 1915004847fdfd27c97656223866aaab9d3e59c9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326307"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425324"
 ---
 # <a name="imapisupportreadreceipt"></a>IMAPISupport::ReadReceipt
 
@@ -59,7 +59,7 @@ S_OK
   
 > レポートが正常に生成されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport:: readreceipt**メソッドは、メッセージストアプロバイダーサポートオブジェクトに対してのみ実装されます。 メッセージストアプロバイダーは、 **readreceipt**を呼び出して、MAPI に、 _lpReadMessage_パラメーターによって示されるメッセージの読み取りレポートまたは非開封レポートを生成するように指示します。 
   

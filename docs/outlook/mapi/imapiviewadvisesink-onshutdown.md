@@ -13,11 +13,11 @@ api_type:
 ms.assetid: c9c3aecf-5e4b-407a-8ea1-6211b4c6e0a5
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: b43c1b96130052a05ac390f10f545a66fe72b7fe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351164"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428523"
 ---
 # <a name="imapiviewadvisesinkonshutdown"></a>IMAPIViewAdviseSink::OnShutdown
 
@@ -41,7 +41,7 @@ S_OK
   
 > 通知に成功しました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 フォーム通知の詳細については、「[フォーム通知の送信と受信](sending-and-receiving-form-notifications.md)」を参照してください。
   

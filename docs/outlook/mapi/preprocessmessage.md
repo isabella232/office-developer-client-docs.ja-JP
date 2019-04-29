@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: dda50325-74b3-445e-986e-115f6536561f
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: a3982520cb1c745874a938962ece075a294b6257
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351381"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437246"
 ---
 # <a name="preprocessmessage"></a>PreprocessMessage
 
@@ -96,7 +96,7 @@ S_OK
   
 > メッセージの内容が正常に前処理されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 トランスポートプロバイダメッセージプリプロセッサは、メッセージの前処理中に進行状況インジケーターを表示できます。 ただし、メッセージ前処理中のユーザー操作を必要とするダイアログボックスを表示する必要はありません。 
   

@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 89c2d4f0-0de9-41d4-bc34-a21f5636e8c4
 description: 数値の底が 10 の対数を返します。
 ms.openlocfilehash: 3aa17051de4ce22d211ab909e6eaffebbabb4d6d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32311131"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424869"
 ---
 # <a name="log10-function-access-custom-web-app"></a>Log10 関数 (Access カスタム web アプリ)
 
@@ -31,7 +31,7 @@ ms.locfileid: "32311131"
 |:-----|:-----|
 | *NumericExpression*  <br/> |10 を底とする対数 (常用対数) を求める正の数。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 底 10 を使用する代わりに、**Log** 関数を使用して対数の底を変更できます。 
   

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 7acfeef6-29e4-d5e0-116a-75b5c61c3b41
 description: 'REF 関数は、エラー値 #REF! を返します。'
 ms.openlocfilehash: 21683edb3da717f7b1968f409b68e3bf242e665b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359977"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429973"
 ---
 # <a name="ref-function"></a>REF 関数
 

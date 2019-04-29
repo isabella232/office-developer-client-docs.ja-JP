@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: a426f471-d35f-ef87-4c59-2c007ec2653f
 description: 図形の影を図形から水平方向にオフセットする距離を、ページの単位で指定します。
 ms.openlocfilehash: 5c3f994f0ceba84c86585a76c7a67667a0c20a53
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349127"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426486"
 ---
 # <a name="shapeshdwoffsetx-cell-fill-format-section"></a>[ShapeShdwOffsetX] セル ([Fill Format] セクション)
 
 図形の影を図形から水平方向にオフセットする距離を、ページの単位で指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この値は、[**影**] ダイアログ ボックスの [**X オフセット**] 設定の値に対応しています (このダイアログ ボックスを開くには、[**ホーム**] タブの [**図形**] グループで、[**影**] をクリックして、[**影のオプション**] をクリックします)。
   

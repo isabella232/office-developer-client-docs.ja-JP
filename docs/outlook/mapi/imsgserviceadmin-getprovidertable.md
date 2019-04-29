@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 7180bff2-91ad-4e11-923e-2a9acefa3215
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 1185a35df471fc3f85cbf50fd8ad3baa3927e72b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317382"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428768"
 ---
 # <a name="imsgserviceadmingetprovidertable"></a>IMsgServiceAdmin::GetProviderTable
 
@@ -50,7 +50,7 @@ S_OK
   
 > プロバイダーテーブルが正常に返されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMsgServiceAdmin:: getprovidertable**メソッドは、プロファイルに現在インストールされているすべてのアドレス帳、メッセージストア、およびトランスポートプロバイダーを一覧表示した MAPI プロバイダーテーブルへのアクセスを提供します。 
   

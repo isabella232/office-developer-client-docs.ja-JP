@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: f0f0a65f-5248-4d7c-a4a4-a0cc863b15ec
 description: ブール型 (Boolean) の入力値を反転します。
 ms.openlocfilehash: b910613a7bf08c79c2f66a417b5faec4886cb8d7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308135"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430722"
 ---
 # <a name="not-access-custom-web-app"></a>NOT (Access カスタム web アプリ)
 
@@ -31,13 +31,13 @@ ms.locfileid: "32308135"
 |:-----|:-----|
 | *BooleanExpression*  <br/> |有効なブール型 (Boolean) の式を指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **Not** 演算子を使用して TRUE 値と FALSE 値を比較した場合の結果を次の表に示します。 
   
 ||**Not**|
 |:-----|:-----|
-|**false** <br/> |誤り  <br/> |
+|**TRUE** <br/> |False  <br/> |
 |**FALSE** <br/> |はい  <br/> |
    
 

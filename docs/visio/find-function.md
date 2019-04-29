@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: c827ecd4-5593-6d4f-2746-d13b02b098fe
 description: 別のテキスト文字列に含まれる1つのテキスト文字列を検索し、その文字列を含む文字列の位置を基準にして、検索する文字列の開始位置を返します。
 ms.openlocfilehash: 40d65af25d89774c1bdf7b235cf653dbb61dd1c7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322499"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426577"
 ---
 # <a name="find-function"></a>FIND 関数
 
@@ -35,9 +35,9 @@ find (* * ** 検索語 * *, * ** * 対象 * *, [* **開始位置** *], [* * *ign
    
 ### <a name="return-value"></a>戻り値
 
-番号
+数値
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 一致する文字列が複数ある場合、FIND 関数は文字列内で最初に一致した文字列の開始位置を返します。 "検索_文字列_" 引数では、ワイルドカードとして使用する文字は考慮されません。 
   

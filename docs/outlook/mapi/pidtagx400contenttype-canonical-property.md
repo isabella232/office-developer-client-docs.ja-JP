@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: c8959592-53f3-48cf-b623-91d199df0629
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: af87dee0b5e598395fb59bc92f762582289aa828
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32350716"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427830"
 ---
 # <a name="pidtagx400contenttype-canonical-property"></a>PidTagX400ContentType 標準プロパティ
 

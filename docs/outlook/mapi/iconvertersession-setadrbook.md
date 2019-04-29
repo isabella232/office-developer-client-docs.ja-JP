@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: d276ab19-17f4-01c7-4b44-b578e631b5fe
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7645208e6a0256957deb3a71ba3e04ad125a6b61
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326895"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429195"
 ---
 # <a name="iconvertersessionsetadrbook"></a>IConverterSession::SetAdrBook
 
@@ -44,7 +44,7 @@ S_OK
   
 > 関数呼び出しが成功しました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 mapi メッセージを MIME ストリームに変換する必要はありません。通常、mapi プロファイルにログオンする必要はありません。 ただし、変換に MAPI アドレス帳を指定するには、アドレス帳を取得するためにプロファイルにログオンする必要があります。
   

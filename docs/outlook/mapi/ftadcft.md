@@ -7,13 +7,13 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2635a829-0f3a-49ed-a672-2f350a2cf979
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: f308c1f6f3cd2c9904dd94cd6761517bd5b410b6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328022"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429706"
 ---
 # <a name="ftadcft"></a>FtAdcFt
 
@@ -54,7 +54,7 @@ FILETIME FtAdcFt(
 
 **ftadcft**関数は、2つの整数の合計を含む**FILETIME**構造を返します。 2つの入力パラメーターは変更されません。 **pwCarry**が NULL 以外の場合は、sum のキャリー結果 (0 または 1) を含みます。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **ftadcft**関数は、 _pwCarry_が NULL の場合、 **ftaddft**と同じです。 _pwCarry_が NULL ではなく0をポイントしている場合、 **ftadcft**は**ftaddft**が返すのと同じ**FILETIME**値を返します。 
   

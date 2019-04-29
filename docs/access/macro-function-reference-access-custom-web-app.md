@@ -7,18 +7,18 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: fb1ef018-6ea4-46b4-b81a-c51f86d80180
 ms.openlocfilehash: fe8640c1ff9773a5ee7254434f39735cd95daff6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301772"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426381"
 ---
 # <a name="macro-function-reference-access-custom-web-app"></a>マクロ関数リファレンス (Access カスタム Web アプリ)
 
 ## <a name="in-this-section"></a>このセクションの内容
 
 > [!IMPORTANT]
-> 現在 Microsoft では、SharePoint での Access Web アプリの作成や使用は推奨していません。代替策として、[Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) を使用して、Web およびモバイル デバイス用の、コーディングが不要なビジネス ソリューションを構築することを検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 - [データブロック (Access カスタム web アプリ)](data-blocksaccess-custom-web-app.md)
     

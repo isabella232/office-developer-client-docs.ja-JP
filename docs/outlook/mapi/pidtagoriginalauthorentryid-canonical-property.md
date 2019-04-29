@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 34654660-b003-42f5-9fcd-24ebaccd735d
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 866c28bc08f669d18487c99c9a13bc7347b605fc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356204"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425590"
 ---
 # <a name="pidtagoriginalauthorentryid-canonical-property"></a>PidTagOriginalAuthorEntryId 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32356204"
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |一般的なメッセージング  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティは、メッセージの作成者のアドレスプロパティの1つです。 クライアントアプリケーションでは、最初にメッセージを送信するときに、このプロパティを**PR_SENDER_ENTRYID** ([PidTagSenderEntryId](pidtagsenderentryid-canonical-property.md)) の値に設定する必要があります。 メッセージが転送または返信されるときには変更されません。 
   

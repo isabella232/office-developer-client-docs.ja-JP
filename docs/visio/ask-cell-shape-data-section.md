@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: b499a5eb-db8f-ebd0-d505-c9a002205e7d
 description: ユーザーが図形のインスタンスを作成したときや、図形を複製またはコピーしたときに、図形データの入力をユーザーに対して問い合わせるかどうかを指定します。
 ms.openlocfilehash: 0aa270ff918866d8f683a6408ccd71b6a22d555d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341441"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426865"
 ---
 # <a name="ask-cell-shape-data-section"></a>[Ask] セル ([Shape Data] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32341441"
 |TRUE  <br/> |[**図形データの定義**] ダイアログ ボックスで図形データを入力するようユーザーに求めます。  <br/> |
 |FALSE  <br/> |ユーザーにデータの入力を求めません。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルの値は、[**図形データの定義**] ダイアログ ボックスの [**ドロップ時に確認**] チェック ボックスに対応しています (このダイアログ ボックスを開くには、図形を右クリックし、[**データ**] をポイントして、[**図形データの定義**] をクリックします)。
   

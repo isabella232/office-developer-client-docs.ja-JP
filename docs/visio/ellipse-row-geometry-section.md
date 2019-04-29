@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 183fb303-4acb-a486-7b97-f11f7ae3978f
 description: 楕円の中心点と楕円上の2つの点に対する x 座標と y 座標を格納します。
 ms.openlocfilehash: 5121ba0c7bf97eaeaaf8a438dd40eccddada4362
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345683"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421831"
 ---
 # <a name="ellipse-row-geometry-section"></a>[Ellipse] 行 ([Geometry] セクション)
 
@@ -31,7 +31,7 @@ ms.locfileid: "32345683"
 |[C](c-cell-geometry-section.md) <br/> |楕円上の別の点の*x*座標です。対応する*y*座標は [D セルで表されます。  <br/> |
 |[D](d-cell-geometry-section.md) <br/> |楕円上の別の点の*y*座標です。対応する*y*座標は [C セルで表されます。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [Ellipse] 行または [InfiniteLine] 行を含む [Geometry] セクションには、他の行を入れることができません。
   

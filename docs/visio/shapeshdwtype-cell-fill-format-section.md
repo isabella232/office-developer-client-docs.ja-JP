@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 1461148d-90a9-6f7c-1b28-9310ffaf0e3b
 description: 図形の影の種類を指定します。
 ms.openlocfilehash: 607881e4a520f1376562394c6e40ab5d2508906d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342862"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430260"
 ---
 # <a name="shapeshdwtype-cell-fill-format-section"></a>[ShapeShdwType] セル ([Fill Format] セクション)
 
@@ -23,10 +23,10 @@ ms.locfileid: "32342862"
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
 |.0  <br/> |ページの既定値を使用します (既定値)。  <br/> |**visFSTPageDefault** <br/> |
-|1-d  <br/> |単純  <br/> |**visFSTSimple** <br/> |
-|pbm-2  <br/> |斜体  <br/> |**visFSTOblique** <br/> |
+|1   <br/> |単純  <br/> |**visFSTSimple** <br/> |
+|2   <br/> |斜体  <br/> |**visFSTOblique** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルを使用して、既定のページとは異なる図形の影を適用します (ページの既定の影の種類は、[ページのプロパティ] セクションの [[shdwtype]] セルで定義されています)。
   

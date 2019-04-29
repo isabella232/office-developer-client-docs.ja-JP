@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: bdacdafc-728b-4952-b28a-b5c1fe4b4f63
 description: MessageBox アクションを使用して、警告や情報メッセージを含むメッセージ ボックスを表示できます。 たとえば、検証マクロで MessageBox アクションを使用できます。コントロールまたはレコードがマクロ内の条件を満たさない場合、メッセージ ボックスにエラー メッセージおよび入力する必要があるデータの種類に関する指示を表示できます。
 ms.openlocfilehash: 9f45101fd269ef863e60fd8e69741e5cd7c56ef1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301716"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433452"
 ---
 # <a name="messagebox-macro-action-access-custom-web-app"></a>MessageBox マクロアクション (Access カスタム web アプリ)
 
@@ -27,6 +27,6 @@ ms.locfileid: "32301716"
   
 |**アクションの引数**|**説明**|
 |:-----|:-----|
-|メッセージ  <br/> |メッセージ ボックスに表示するテキスト。最大 255 文字または式 (頭に等号記号を付けます) を入力します。  <br/> |
+|Message  <br/> |メッセージ ボックスに表示するテキスト。最大 255 文字または式 (頭に等号記号を付けます) を入力します。  <br/> |
    
 

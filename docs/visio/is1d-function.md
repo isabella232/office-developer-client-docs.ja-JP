@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 72c7c99e-4d29-4b53-dc7b-a3220317d20a
 description: 図形が 1-D (1 次元) の場合、TRUE を返します。図形が 2-D (2 次元) の場合、FALSE を返します。
 ms.openlocfilehash: 6a62b481672b0e1040a34fd0a635ee7382b24f78
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297236"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427599"
 ---
 # <a name="is1d-function"></a>IS1D 関数
 

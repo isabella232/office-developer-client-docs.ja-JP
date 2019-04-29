@@ -13,11 +13,11 @@ api_type:
 ms.assetid: eaf3bafb-975d-42c8-99ea-7f9ef9c934ba
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: a58e723113f70c10b5c8468f5bdd0d8d9014bd2c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351126"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425128"
 ---
 # <a name="imapiviewcontextgetprintsetup"></a>IMAPIViewContext::GetPrintSetup
 
@@ -54,7 +54,7 @@ S_OK
   
 > 印刷情報が正常に取得されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 Form オブジェクトは、現在のメッセージを印刷する前に、プリンターの設定に関する情報を取得するために**imapiviewcontext:: getprintsetup**メソッドを呼び出します。 
   

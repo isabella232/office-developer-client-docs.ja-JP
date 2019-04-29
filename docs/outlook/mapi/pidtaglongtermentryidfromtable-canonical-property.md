@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d9457fea-4b1e-4cf6-9c4b-14c98fbec2a1
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 574c7d305f105709aebcd41e30b034fbac1892a9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278779"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425667"
 ---
 # <a name="pidtaglongtermentryidfromtable-canonical-property"></a>PidTagLongTermEntryIdFromTable 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32278779"
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |表のプロパティ  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティは、アイテムのエントリ識別子を短い用語のエントリ id ではなく、長期間のエントリ id として取得するために、contents テーブルで使用できます。 長期および短期の識別子については、「 **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))」を参照してください。
   

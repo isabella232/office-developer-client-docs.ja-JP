@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 5ae57707-5a50-43f0-8c78-516790b5034e
 description: 図形の幅と高さに相対する2次ベジエ曲線の x 座標と y 座標、および図形の幅と高さに相対する曲線のコントロールポイントの x 座標と y 座標を格納します。
 ms.openlocfilehash: f517fa006c6630a26e9162adfbb1be2139487e63
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32319930"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423357"
 ---
 # <a name="relquadbezto-row-geometry-section"></a>[RelQuadBezTo] 行 ([図形座標] セクション)
 

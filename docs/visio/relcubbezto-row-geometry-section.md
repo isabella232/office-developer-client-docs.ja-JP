@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 77777dd4-5a2c-4048-9ea4-9bd876862963
 description: 図形の幅と高さを基準にした三次ベジェ曲線の x 座標と y 座標、図形の幅と高さに相対する曲線の始点のコントロールポイントの x 座標および y 座標、および表示される図形の x 座標と y 座標を格納します。図形の幅と高さを基準にして、曲線の終点の l 点を指定します。
 ms.openlocfilehash: cb886706c4c5cbb3488a95b57dcc84e0e45ee326
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32320035"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430330"
 ---
 # <a name="relcubbezto-row-geometry-section"></a>[RelCubBezTo] 行 ([図形座標] セクション)
 

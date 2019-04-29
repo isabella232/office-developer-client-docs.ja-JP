@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: fd5ef226-39e6-4604-a751-2f6cc49c4895
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8ffff7958ab405e488ac2ce45bae43b78da7b0f4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331599"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428103"
 ---
 # <a name="cbnewmtsid"></a>CbNewMTSID
 

@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: f4217030-5fd1-4ec4-a83f-752717fbb787
 description: フォームベース認証を使用してソーシャルネットワークサイトにログオンします。
 ms.openlocfilehash: 7ef7af8c1c2cdb783bdecd71b29635468e19dc6a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335365"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430337"
 ---
 # <a name="isocialsessionlogonweb"></a>ISocialSession::LogonWeb
 
@@ -33,7 +33,7 @@ _connectout_
   
 > 読み上げログオン資格情報を含む文字列。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 Outlook Social Connector (.osc) は、プロバイダーがフォームベース認証をサポートしていることを示す場合にのみ、 **logonweb**メソッドを呼び出します。 プロバイダーは、XML の**機能**に対して**uselogonwebauth**を**true**に設定することにより、フォームベース認証が必要であることを示します。 プロバイダーが**uselogonwebauth**を**false**として設定している場合、.osc は基本認証を使用して、 [iime alsession:: Logon](isocialsession-logon.md)メソッドを呼び出します。 
   

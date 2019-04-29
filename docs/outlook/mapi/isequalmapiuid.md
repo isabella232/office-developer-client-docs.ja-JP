@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 85d71b73-0630-4c5d-b0e3-b48d27a300d0
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 44e3613338c8932bc80dd1150392033dfa3cd050
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278737"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426934"
 ---
 # <a name="isequalmapiuid"></a>IsEqualMAPIUID
 
@@ -46,7 +46,7 @@ IsEqualMAPIUID(lpuid1, lpuid2)
   
 > テストする2番目の**MAPIUID**構造体へのポインター。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IsEqualMAPIUID**マクロは、2つの**MAPIUID**構造体に同じ識別子が含まれている場合は TRUE を返し、そうでない場合は FALSE を返します。 
   

@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 1a2325ea-ddfa-480f-b65f-f5b20471fb40
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 666ee413319765e39e25d586208f764afc93ae6b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336681"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425016"
 ---
 # <a name="defining-new-mapi-properties"></a>新しい MAPI プロパティの定義
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: c5b20257-676c-279d-f730-1b6fbbe98305
 description: 図形の最初の頂点に対する x 座標と y 座標を格納します。または、パスを切断した後の最初の頂点に対する x 座標と y 座標を表します。
 ms.openlocfilehash: fc414093348b8da04fa3503053584395976982dd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283859"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429699"
 ---
 # <a name="moveto-row-geometry-section"></a>[MoveTo] 行 ([Geometry] セクション)
 
@@ -27,7 +27,7 @@ ms.locfileid: "32283859"
 |[X](x-cell-geometry-section.md) <br/> |[ **MoveTo** ] 行がセクションの最初の行の場合、[x] セルは、図形の最初の頂点に対する*x*座標を表します。 [ **MoveTo** ] 行が2つの行の間に表示される場合、[x] セルは、パスを切断した後の最初の頂点に対する*x*座標を表します。  <br/> |
 |[Y](y-cell-geometry-section.md) <br/> |[ **MoveTo** ] 行がセクションの最初の行の場合、[y] セルは、図形の最初の頂点に対する*y*座標を表します。 [ **MoveTo** ] 行が2つの行の間に表示される場合、[y] セルは、パスを切断した後の最初の頂点に対する*y*座標を表します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [ **moveto** ] 行には、[ **moveto** ] 行がセクションの最初の行である場合に、図形の最初の頂点に対する*x*座標と*y*座標が含まれます。 通常、これは図形が描画されたときに最初に配置される頂点で、1-d 図形の始点には必ずしも対応していません。 
   

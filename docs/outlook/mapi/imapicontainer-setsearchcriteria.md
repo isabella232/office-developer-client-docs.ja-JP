@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: b5eb1841-e450-4024-aeaa-3b5a492ddb99
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: a6168e8fced2fff3a7f9d273e47ed2410ac4c010
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32350968"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427200"
 ---
 # <a name="imapicontainersetsearchcriteria"></a>IMAPIContainer::SetSearchCriteria
 
@@ -87,7 +87,7 @@ MAPI_E_TOO_COMPLEX
   
 > サービスプロバイダーは、指定された検索条件をサポートしていません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMAPIContainer:: setsearchcriteria**メソッドは、検索をサポートするコンテナー (通常は検索結果フォルダー) の検索条件を設定します。 検索結果フォルダーには、検索条件に一致するメッセージへのリンクが含まれています。実際のメッセージは、元の場所に保存されたままになります。 検索結果フォルダーに格納されている一意のデータは、[コンテンツ] テーブルだけです。 検索結果フォルダーの contents テーブルには、検索制限が適用された後に、メッセージストアの内容がマージされています。 
   

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: fbff82de-77d3-411e-a30c-a37cefdd92fc
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 8611249207811446ae47f056486ec498bf1e7eab
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349309"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426206"
 ---
 # <a name="iaddrbooksetsearchpath"></a>IAddrBook::SetSearchPath
 
@@ -54,7 +54,7 @@ MAPI_E_MISSING_REQUIRED_COLUMN
   
 > **srowset**構造で記述されているコンテナーの1つに、 **PR_ENTRYID**プロパティが含まれていませんでした。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 クライアントおよびサービスプロバイダーは、 **SetSearchPath**メソッドを呼び出して、 [IAddrBook:: ResolveName](iaddrbook-resolvename.md)メソッドを使用して名前を解決するために使用されるコンテナー検索順序に加えられた変更を保存します。 検索パスは、セッションのインスタンス間で保存されます。 
   

@@ -7,13 +7,13 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 62561d8d-33cb-e482-7fa0-132afe2b464a
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: cfa18c215fc98610b836db31e2a07581291910be
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315786"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426171"
 ---
 # <a name="rtfwcsretinfo"></a>RTF_WCSRETINFO
 

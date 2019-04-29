@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: e9742142-4d34-1ba9-480e-d1ecff4fc7cd
 description: 1-D 図形の終点 ([EndX]、[EndY]) を特定の位置にロックします。
 ms.openlocfilehash: d9fe0372c44fe3b029a4d06056c8d3871c3f91e8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359599"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425583"
 ---
 # <a name="lockend-cell-protection-section"></a>[LockEnd] セル ([Protection] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32359599"
 | TRUE  <br/> | 終点をロックします。  <br/> |
 | FALSE  <br/> | 終点をロックしません。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LockEnd] セルへの参照を取得するには、次の値を使用します。 
   

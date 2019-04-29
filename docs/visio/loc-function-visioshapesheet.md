@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 7db7a8ed-50a9-8495-b978-42a2fddb466a
 description: 1つの図形のローカル座標で定義された点を取得し、式に関連付けられている図形のローカル座標で表される等価の点を返します。
 ms.openlocfilehash: 4728e5f8301c6ef10ddb0c14b6c0868a7a48b2a7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344430"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422426"
 ---
 # <a name="loc-function-visioshapesheet"></a>LOC 関数 (VisioShapeSheet)
 

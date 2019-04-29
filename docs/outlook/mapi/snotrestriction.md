@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: e86ca032-d973-4b79-976e-5240ab38a0da
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 07a1a0a1953d136da534fbdc6339d326c877bebf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344542"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426654"
 ---
 # <a name="snotrestriction"></a>SNotRestriction
 
@@ -40,7 +40,7 @@ typedef struct _SNotRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **ulreserved**
   
@@ -50,7 +50,7 @@ typedef struct _SNotRestriction
   
 > 論理**not**演算子に結合する制限を説明する[srestriction](srestriction.md)構造体へのポインター。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **snotrestriction**構造の詳細については、「[制限につい](about-restrictions.md)て」を参照してください。 
   

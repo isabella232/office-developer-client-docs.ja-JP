@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 3e296f6d-4833-4c68-9b84-df0b09878474
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 472502d0f033370b06a69596944350152ab794f9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317298"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425877"
 ---
 # <a name="imslogongetlasterror"></a>IMSLogon::GetLastError
 
@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMSLogon:: GetLastError**メソッドを使用すると、メッセージにメッセージとして表示される情報を取得するために、メッセージストアオブジェクトに対するメソッド呼び出しから返された最後のエラーに関する情報を取得します。 
   

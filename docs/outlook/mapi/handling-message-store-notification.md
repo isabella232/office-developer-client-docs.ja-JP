@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 3e0cc2f9-a88d-4cec-bef5-b60f2ec80f1c
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: d370603dc7cfc015fe7b2757d1cf0525b3092c5e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299428"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428026"
 ---
 # <a name="handling-message-store-notification"></a>メッセージ ストア通知の処理
   
@@ -35,7 +35,7 @@ MAPI では、プロバイダーが通知をサポートする方法に柔軟性
     
 メッセージストアプロバイダーのイベント通知を実装する方法を説明する厳密なガイドラインはないため、クライアントは一貫した動作を期待できません。 MAPI では、メッセージストアプロバイダーがイベント通知を実装する方法について、次の表で推奨事項の概要を説明します。 表を次のように読み取ります。最初の列で操作を実行すると、3番目の列にリストされているオブジェクトでその型に対して登録されている場合は、2番目の列にリストされている型の通知を受信することを期待します。 たとえば、フォルダーを作成した後、メッセージストアで_fnevObjectCreated_通知を登録している場合にのみ、 _fnevObjectCreated_通知が表示されます。 
   
-|**操作名**|**イベントの種類**|**アドバイズソース**|
+|**操作**|**イベントの種類**|**アドバイズソース**|
 |:-----|:-----|:-----|
 |フォルダーを作成する  <br/> | _fnevObjectCreated_ <br/> |メッセージストア  <br/> |
 |フォルダーを削除する  <br/> | _fnevObjectDeleted_ <br/> |メッセージストアの削除されたフォルダー  <br/> |

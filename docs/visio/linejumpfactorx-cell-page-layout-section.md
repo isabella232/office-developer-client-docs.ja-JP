@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 0649672f-f496-ce80-6dc3-3affc9b6f913
 description: '[LineToLineX] セルの値を基準にして、ページ上にある水平方向の動的コネクタの飛び越し点のサイズを決定します。このセルの値には、0 ～ 10 の値を使用できますが、0 ～ 1 の数値の使用をお勧めします。'
 ms.openlocfilehash: 8698d99021ca64415417de8e946cbd80b586e759
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316465"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424995"
 ---
 # <a name="linejumpfactorx-cell-page-layout-section"></a>[LineJumpFactorX] セル ([Page Layout] セクション)
 
 [LineToLineX] セルの値を基準にして、ページ上にある水平方向の動的コネクタの飛び越し点のサイズを決定します。このセルの値には、0 ～ 10 の値を使用できますが、0 ～ 1 の数値の使用をお勧めします。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルの値は、[**ページ設定**] ダイアログ ボックスの [**レイアウトと経路**] タブで設定することもできます (このダイアログ ボックスを開くには、[**デザイン**] タブで [**ページ設定**] 矢印をクリックして、[**レイアウトと経路**] をクリックします)。
   

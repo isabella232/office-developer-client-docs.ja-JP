@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: ef200f41-7b69-1291-f9df-a7035239a033
 description: 図形の影を図形から垂直方向にオフセットする距離を、ページの単位で指定します。
 ms.openlocfilehash: 4ae4347ba9009e88bbd181d4dd6e242e1fad53be
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349141"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426822"
 ---
 # <a name="shapeshdwoffsety-cell-fill-format-section"></a>[ShapeShdwOffsetY] セル ([Fill Format] セクション)
 
 図形の影を図形から垂直方向にオフセットする距離を、ページの単位で指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この値は、[**影**] ダイアログ ボックスの [**Y オフセット**] 設定の値に対応しています (このダイアログ ボックスを開くには、[**ホーム**] タブの [**図形**] グループで、[**影**] をクリックして、[**影のオプション**] をクリックします)。
   

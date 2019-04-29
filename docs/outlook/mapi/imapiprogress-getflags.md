@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7af74fcc-c0df-4f58-a2d4-0a79c96b2e81
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 810192bfc85c9934a282f02a0839aaed539f744d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32270268"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423644"
 ---
 # <a name="imapiprogressgetflags"></a>IMAPIProgress::GetFlags
 
@@ -49,7 +49,7 @@ S_OK
   
 > フラグの値が正常に返されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 MAPI を使用すると、MAPI_TOP_LEVEL フラグを使用して、処理に関与するすべてのオブジェクトが同じ[imapiprogress](imapiprogressiunknown.md)実装を使用して進行状況を示すことができるように、サービスプロバイダーがトップレベルのオブジェクトとサブオブジェクトを区別できるようになります。 これにより、インジケーター表示が単一の正方向にスムーズに進みます。 MAPI_TOP_LEVEL フラグが設定されているかどうかによって、サービスプロバイダーが以降の呼び出しで progress オブジェクトに対して他のパラメーターを設定する方法が決まります。 
   

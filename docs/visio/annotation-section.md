@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 616c822e-1bb2-4980-7e45-0c2be77dd801
 description: 図面ページに挿入されたコメントについての情報を格納します。
 ms.openlocfilehash: f874a574940a5f56b1d1680b9b4b32730e1e79f7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341399"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427424"
 ---
 # <a name="annotation-section"></a>[Annotation] セクション
 
@@ -23,7 +23,7 @@ ms.locfileid: "32341399"
 > [!NOTE]
 > このセクションは、Microsoft Visio 2013 で .vsd ファイルを開くとき、または .vsd ファイル形式で .vsdx ファイルを保存するときにのみコメントを追跡するために使用されます。 Visio 2013 の新しい .vsdx ドキュメントでコメントを追跡するためには使用されません。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 ページのシェイプシートの [ **Annotation** ] セクションには、図面内のページに追加されたコメントごとに1つの行が含まれています。これは、元の図面ページであっても、またはマークアップオーバーレイページ (レビュー担当者が図面に追加されたマークアップを含むページ) です。 コメントではなく、インクまたはその他の図形を使用して追加された校正履歴についての情報は、[**注釈**] セクションには含まれません。 
   

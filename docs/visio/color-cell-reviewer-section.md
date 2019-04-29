@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: c1e3d7bf-e6b6-65f1-ae40-80c8ba4821cd
 description: 図面校閲者のマークアップに割り当てられている色を表す RGB 値。
 ms.openlocfilehash: d9df6605ca6c8a22353978b9483989ecfc08130d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341819"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430540"
 ---
 # <a name="color-cell-reviewer-section"></a>[Color] セル ([Reviewer] セクション)
 
 図面校閲者のマークアップに割り当てられている色を表す RGB 値。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 色は、赤、青、緑、紫、オレンジ、青緑、グレーの順番で校閲者に割り当てられます。校閲者がそれ以上いる場合には、再度先頭から順番に割り当てられます。 
   

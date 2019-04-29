@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 3899c49c-a0ec-4dca-92e8-e801cd4908cf
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: cd8727104af694d456074614b5ea7c222c9b91b9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322373"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429017"
 ---
 # <a name="imapisupportdoconfigpropsheet"></a>IMAPISupport::DoConfigPropsheet
 
@@ -70,7 +70,7 @@ S_OK
   
 > 構成プロパティシートが表示されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport::D oconfigpropsheet**メソッドは、すべてのサポートオブジェクトに実装されています。 **doconfigpropsheet**は、サービスプロバイダーとメッセージサービスのプロパティを表示するための標準的なユーザーインターフェイスを提供します。 ユーザーが一貫した Windows インターフェイスを利用できるようにするには、すべての構成プロパティでこの標準ダイアログボックスを使用する必要があります。 
   

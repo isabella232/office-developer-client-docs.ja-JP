@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d0fc4e91-ed90-4d27-bd23-f01e99728e2d
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 96bfc184752b6a3e15434ad67ac8c2b4b26cac4b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359935"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426836"
 ---
 # <a name="pidtagcorrelatemtsid-canonical-property"></a>PidTagCorrelateMtsid 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32359935"
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティが TRUE に設定されている送信済みメッセージがトランスポートプロバイダーによって検出されると、そのメッセージの MTS 識別子にこのプロパティが設定されます。 送信後、このプロパティはメッセージと共に、IPM (個人間メッセージ) の送信済みアイテムフォルダーに格納されます。
   
