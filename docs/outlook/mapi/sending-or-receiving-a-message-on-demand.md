@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 479404c5-4926-402a-aa12-75dd23276d75
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 15b9c8c5a56b6f37464d2469bd1d7b3e24596502
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356477"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436371"
 ---
 # <a name="sending-or-receiving-a-message-on-demand"></a>必要に応じてメッセージを送信または受信
   

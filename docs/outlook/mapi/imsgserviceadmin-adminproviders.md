@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0d605e2c-10db-46e1-95d5-12fabd524baa
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6b7360995a781824b50ff02b5d2dec8e481e7ba7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317424"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422762"
 ---
 # <a name="imsgserviceadminadminproviders"></a>IMsgServiceAdmin::AdminProviders
 
@@ -59,7 +59,7 @@ MAPI_E_NOT_FOUND
   
 > _lpuid_が指す**MAPIUID**が存在しません。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMsgServiceAdmin:: adminproviders**メソッドは、プロバイダ管理オブジェクトへのアクセスを提供します。 プロバイダー管理は、 [IProviderAdmin](iprovideradminiunknown.md)インターフェイスをサポートし、クライアントが次の操作を実行できるようにするオブジェクトです。 
   

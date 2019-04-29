@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5b624954-d975-4d5e-84d7-74e096ac30af
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: de0c1181450c536dffd5a84242c17bd1dd612566
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32270099"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418051"
 ---
 # <a name="mapiopenformmgr"></a>MAPIOpenFormMgr
 
@@ -54,7 +54,7 @@ MAPIOpenFormMgr(
 
 なし。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 クライアントアプリケーションが**MAPIOpenFormMgr**関数を呼び出すと、その後のフォーム関連のやり取りは、フォームライブラリプロバイダまたはフォームライブラリプロバイダによって返されるインターフェイスを通じて行われます。 **imapiformmgr**インターフェイスを使用すると、クライアントはメッセージハンドラーを操作し、メッセージクラスとフォームライブラリの間で解決を行うことができます。 
   

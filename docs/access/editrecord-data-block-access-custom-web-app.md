@@ -7,18 +7,18 @@ localization_priority: Normal
 ms.assetid: 54975434-78b2-4010-b2f9-f277831fa92e
 description: EditRecord データ ブロックを使用して、既存のレコード内の値を変更できます。
 ms.openlocfilehash: 0d9ef6c7689b44a0304309a7537e744eff97c809
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302521"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418345"
 ---
 # <a name="editrecord-data-block-access-custom-web-app"></a>[データの制限] ブロック (Access カスタム web アプリ)
 
 You can use the **EditRecord** data block to change the values contained in an existing record. 
   
 > [!IMPORTANT]
-> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 > [!NOTE]
 > EditRecord データ ブロックは、データ マクロでのみ使用できます。 
@@ -31,7 +31,7 @@ You can use the **EditRecord** data block to change the values contained in an e
 |:-----|:-----|
 |**Alias** <br/> |編集するレコードを識別する文字列。 *Alias*引数が指定されていない場合は、カレントレコードが編集されます。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **EditRecord** ステートメントの後に、レコードの変更を確定する前に実行するコマンドのブロックを挿入できます。**EditRecord** データ ブロックで使用できるアクションは次のとおりです。 
   

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: a298eead-044b-6f40-54c7-e0e6088baa19
 description: 2本の線が交わる点の y 座標 (ローカル座標系) を返します。
 ms.openlocfilehash: 6fcd06e7086d52b9c45f1deb9d4c191f1a7b1fd2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335260"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426101"
 ---
 # <a name="intersecty-function"></a>INTERSECTY 関数
 
@@ -37,9 +37,9 @@ INTERSECTX (* * *x1* * *、* * *y1* * *、* * *angle1* * *、* * *x2* * *、* * 
    
 ### <a name="return-value"></a>戻り値
 
-番号
+数値
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 各線は点 (*x,y*) と角度によって定義されます。 
   

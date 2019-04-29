@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: ffdfdff8-985d-35de-73b1-c34e1932cb9f
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 7123b2deaa9ae0f26002b486df229ad589009f53
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321820"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420438"
 ---
 # <a name="about-the-mapi-mime-conversion-api"></a>MAPI-MIME 会話 API について
 

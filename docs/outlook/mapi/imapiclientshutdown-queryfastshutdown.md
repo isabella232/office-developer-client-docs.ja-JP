@@ -13,11 +13,11 @@ api_type:
 ms.assetid: b743b5b6-4a7c-46b8-99eb-afd13ee947db
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 6a76488f56f9d1eb1b344c01de2615627dd5d3ec
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32350870"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418149"
 ---
 # <a name="imapiclientshutdownqueryfastshutdown"></a>IMAPIClientShutdown::QueryFastShutdown
 
@@ -41,7 +41,7 @@ MAPI_E_NO_SUPPORT
   
 > mapi プロバイダーは、高速シャットダウンを実行するための mapi クライアントをサポートしていません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 mapi サブシステムで高速シャットダウンを実行するための mapi クライアントがサポートされているかどうかは、ユーザーの Windows レジストリ設定または mapi クライアントの高速シャットダウンの既定の動作によって異なります。 また、読み込み済みの MAPI プロバイダーが高速シャットダウンをサポートする機能によっても異なります。 詳細については、「 [Fast Shutdown User Options](fast-shutdown-user-options.md)」を参照してください。
   

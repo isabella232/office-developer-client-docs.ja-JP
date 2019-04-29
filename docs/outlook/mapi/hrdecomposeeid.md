@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4847838a-2ad8-4927-8f78-7fa5c8eb54eb
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: d3ef8b61b6042d9c3e715168d9131a74facef000
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348070"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436112"
 ---
 # <a name="hrdecomposeeid"></a>HrDecomposeEID
 
@@ -79,7 +79,7 @@ HrDecomposeEID(
 
 なし。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _peid_パラメーターで指定された識別子が複合である場合、その id はメッセージストア内のオブジェクトのエントリ id とストアのエントリ識別子に分割されます。 非複合エントリ識別子の文字列は単にコピーされます。 分離する複合識別子は通常、hrの " [id](hrcomposeeid.md) " 関数で作成されたものです。 
   

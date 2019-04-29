@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 45a73c7b-5855-4b70-866b-facb41cb3c32
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 333e1d5cacc069ee1faef01426a1c0a60ef07f8e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32350884"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418107"
 ---
 # <a name="iexchangemodifytable--iunknown"></a>IExchangeModifyTable : IUnknown
 
@@ -64,7 +64,7 @@ microsoft exchange server table オブジェクトへのアクセスをサポー
 |**PR_MEMBER_NAME**([PidTagMemberName](pidtagmembername-canonical-property.md))  <br/> |読み取り専用  <br/> |
 |**PR_MEMBER_RIGHTS**([PidTagMemberRights](pidtagmemberrights-canonical-property.md))  <br/> |読み取り専用  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IExchangeModifyTable**インターフェイスを取得するには、folder オブジェクトの PT_OBJECT 型のプロパティに対して MAPI [imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出します。 **openproperty**メソッドを呼び出すときに、 _lpiid_パラメーターの値**IID_IExchangeModifyTable**を渡します。 
   

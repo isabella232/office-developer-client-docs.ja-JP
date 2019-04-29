@@ -13,11 +13,11 @@ api_type:
 ms.assetid: e0db9e86-9528-43de-b8ba-a5af8b7bda4b
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 2988f1fc149bbfc2d724b62b12bd12ae4f4664a6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286984"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436154"
 ---
 # <a name="iaddrbookunadvise"></a>IAddrBook::Unadvise
 
@@ -45,7 +45,7 @@ S_OK
   
 > 登録が正常にキャンセルされました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 クライアントは、**アドバイズ**中止メソッドを呼び出して、特定のアドレス帳エントリへの変更に関する通知を受信しないようにします。 通知登録が取り消されると、アドレス帳プロバイダーは、呼び出し元のアドバイズシンクへのポインターを解放します。 ただし、リリースは、**アドバイズ**中止通話中、またはそれ以降の時点で、別のスレッドが[IMAPIAdviseSink:: onnotify](imapiadvisesink-onnotify.md)メソッドを呼び出している場合に発生する可能性があります。 通知が進行中の場合、 **onnotify**メソッドが戻るまでリリースは遅延します。 
   

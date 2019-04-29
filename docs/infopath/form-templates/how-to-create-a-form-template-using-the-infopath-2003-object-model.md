@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: c746aeb1-902c-440e-830b-5b9efad0ca04
 description: このトピックの手順では、InfoPath 2003 互換オブジェクト モデルを操作するフォーム テンプレートの作成方法を説明します。
 ms.openlocfilehash: 35a9fcfbb0d93a19e013bde6980bc94af3bb5dd9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303641"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418184"
 ---
 # <a name="create-a-form-template-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してフォーム テンプレートを作成する
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 36374d78-1028-bd7f-6282-66555ee31306
 description: 1 つの範囲または複数の範囲にセルの値を制約します。
 ms.openlocfilehash: 85fbe66d4e458ac4e42c9eb3c65b9a3a1d8211df
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348952"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425961"
 ---
 # <a name="bound-function"></a>BOUND 関数
 
@@ -28,13 +28,13 @@ BOUND (* **値** *、* * *type* * *、* * *ignore* * *、* * *value1* * *、* * 
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _value_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |制約される現在の値を指定します。  <br/> |
-| _type_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |制約が包括的 (0) であるか、排他的 (1) であるか、または無効 (2) であるかを指定します。  <br/> |
+| _value_ <br/> |必須  <br/> |**数値** <br/> |制約される現在の値を指定します。  <br/> |
+| _type_ <br/> |必須  <br/> |**数値** <br/> |制約が包括的 (0) であるか、排他的 (1) であるか、または無効 (2) であるかを指定します。  <br/> |
 | _フォント_ <br/> |必須  <br/> |**Boolean** <br/> | TRUE を指定すると、範囲は無視されます。FALSE を指定すると、セルの値が範囲に制限されます。  <br/> |
-| _value1_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |範囲内の最初の値を指定します。  <br/> |
-| _value2_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |範囲内の 2 番目の値を指定します。  <br/> |
+| _value1_ <br/> |必須  <br/> |**数値** <br/> |範囲内の最初の値を指定します。  <br/> |
+| _value2_ <br/> |必須  <br/> |**数値** <br/> |範囲内の 2 番目の値を指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 bound 関数を使用して、セルの値を上限と下限に制限します。たとえば、最小または最大の高さより上または下に拡大してはならないオブジェクトを制御します。 範囲または範囲を基準として、制約を包含または排他的にすることができます。 現在の値を制約しないようにするには、 _type_パラメーターを 2 (無効) に設定します。 
   

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: be65d1c2-e48a-a85a-79ad-1a3409e60c16
 description: ドキュメントが最後に保存された日付と時刻をシリアル値として返します。
 ms.openlocfilehash: 35d3a3f3051d5e5024eb48c56f131325e86314cf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359054"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425989"
 ---
 # <a name="doclastsave-function"></a>DOCLASTSAVE 関数
 
@@ -24,7 +24,7 @@ ms.locfileid: "32359054"
 
 DOCLASTSAVE ()
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 戻り値を書式設定するには、FORMAT 関数を使用します。 
   

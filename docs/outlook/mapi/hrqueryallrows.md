@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b08fadcf-cdf3-48b7-9489-d7f745266482
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0f09304f21180d9ebc2a1e1dcc54ebadd3622804
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348245"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422895"
 ---
 # <a name="hrqueryallrows"></a>HrQueryAllRows
 
@@ -80,7 +80,7 @@ MAPI_E_TABLE_TOO_BIG
   
 > テーブル内の行数が、 _crowsMax_パラメーターに渡された数値よりも大きくなっています。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 クライアントアプリケーションまたはサービスプロバイダーは、"終了" パラメーターで指定された制限を課すのではなく、 **hrqueryallrows**が取得し__ ようとしている行の数を制御できません。 _crowsMax_パラメーターでは、取得を特定の数のテーブル行に制限せずに、取得したすべての行の保持に使用できるメモリの最大量を定義します。 大規模メモリオーバーフローに対する保護は、 _crowsMax_を設定することによって提供される stopgap 機能です。 error return MAPI_E_TABLE_TOO_BIG は、テーブルに含まれる行が多すぎて、一度にすべてのメモリに保持されていないことを意味します。 
   

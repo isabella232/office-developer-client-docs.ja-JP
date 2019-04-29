@@ -13,11 +13,11 @@ api_type:
 ms.assetid: c16c668e-2c8b-4759-bbca-d0c5662b62e9
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 6160b8e75bdc9059965c2358b9fe7d296e1f66d2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326370"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435937"
 ---
 # <a name="imapisupportnotify"></a>IMAPISupport::Notify
 
@@ -68,7 +68,7 @@ S_OK
   
 > 通知が正常に生成されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport:: Notify**メソッドは、すべてのサービスプロバイダーサポートオブジェクトに実装されています。 サービスプロバイダーは、MAPI に対して、 **imapisupport:: Subscribe**メソッドによって既に通知が登録されているアドバイズシンクに対して通知を生成することを要求する呼び出し**通知**を呼び出します。 
   

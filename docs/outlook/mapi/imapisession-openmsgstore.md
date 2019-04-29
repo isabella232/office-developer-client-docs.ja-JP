@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7f73b5cf-7093-42e9-8acc-63d73df77cf5
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 19d3df004676a71e2bf6243d9288efd824d99c33
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32325768"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418023"
 ---
 # <a name="imapisessionopenmsgstore"></a>IMAPISession::OpenMsgStore
 
@@ -102,7 +102,7 @@ MAPI_W_ERRORS_RETURNED
   
 > 呼び出しは成功しましたが、メッセージストアプロバイダーにエラー情報があります。 この警告が返された場合、呼び出しは正常に処理されます。 プロバイダーからエラー情報を取得するには、 [imapisession:: GetLastError](imapisession-getlasterror.md)メソッドを呼び出します。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisession:: openmsgstore**メソッドは、特定のメッセージストアを開きます。 
   

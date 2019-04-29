@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 410c4187-21f3-d959-750e-9dc6095fba9a
 description: '[linepattern]、[fillpattern]、[beginarrow]、または [endarrow] セルに配置されたときに、name という名前の線パターン、塗りつぶしパターン、または線の端点を図形に適用します。'
 ms.openlocfilehash: ddd15c1c127fafa1a230545d544c74956f5c0262
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337150"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422825"
 ---
 # <a name="use-function"></a>USE 関数
 
@@ -32,9 +32,9 @@ USE ("* * *name* * *")
    
 ### <a name="return-value"></a>戻り値
 
-番号
+数値
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _名前_が付けられたマスターシェイプが文書のステンシルにある場合、パターンは、線のパターン、塗りつぶしのパターン、矢印の始点、または終点の矢印として適用されます。 
   

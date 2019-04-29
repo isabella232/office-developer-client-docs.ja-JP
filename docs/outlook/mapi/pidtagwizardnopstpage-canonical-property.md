@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1ac09578-892b-4c72-92f6-c2419ac2efe8
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: e816af2ce60b4c06ae14f720cf7c36d58468d09d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32350723"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422888"
 ---
 # <a name="pidtagwizardnopstpage-canonical-property"></a>PidTagWizardNoPstPage 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32350723"
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |エリア:  <br/> |Exchange 管理  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 サービスプロバイダーは、 [launchwizardentry](launchwizardentry.md)関数プロトタイプに基づいて関数を呼び出すときに、このプロパティを設定できます。 このプロパティは、ユーザーダイアログの間、プロバイダーが PST ページを表示しないようにすることを、プロファイルウィザードに通知します。 
   

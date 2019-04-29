@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: fcf415c1-171f-b75f-6e40-2bbdbe8b1cfb
 description: セルの数式を設定します。
 ms.openlocfilehash: 63050de92394ebbdce6cfe053e15347ca3ce5c7f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32325838"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425975"
 ---
 # <a name="setf-function"></a>SETF 関数
 
@@ -31,7 +31,7 @@ setf (getref (* * *cell* * *), * * *formula* * *)
 | _セル_ <br/> |必須  <br/> |**String** <br/> |数式を設定するセルを指定します。  <br/> |
 | _formula_ <br/> |必須  <br/> |**String** <br/> |使用する数式を指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 評価された場合、_数式_の式の結果は、_セル_の新しい数式になります。 _数式_が引用符で囲まれている場合は、引用符で囲まれた式が_セル_に書き込まれます。 _セル_を文字列に設定するには、_数式_を3組の引用符で囲みます。 
   

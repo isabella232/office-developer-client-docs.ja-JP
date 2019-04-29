@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 94ec06c5-8d2f-dd27-1eed-1abaf93daba8
 description: 図形の影を拡大または縮小できる割合を、パーセントで指定します。
 ms.openlocfilehash: 5862b61ca1f5df25ca97bf8742b9e20bf45091a9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349162"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436266"
 ---
 # <a name="shapeshdwscalefactor-cell-fill-format-section"></a>[ShapeShdwScaleFactor] セル ([Fill Format] セクション)
 
 図形の影を拡大または縮小できる割合を、パーセントで指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 各影には影付きのピン位置があります。これは、図形の pin に対応する影上の点です。 たとえば、図形のピンが図形の中央にある場合、影付きのピン位置は影の中心点になります。 単純な影に倍率を適用すると、倍率は、影付きのピン位置に揃えられます。斜体の影に倍率を適用すると、斜体の方向に倍率が適用されます。 
   

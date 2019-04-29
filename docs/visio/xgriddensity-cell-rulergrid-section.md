@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: db7b353f-4379-8865-1c35-36b89cf93257
 description: 使用する水平方向のグリッドの種類を指定します。
 ms.openlocfilehash: 5ebd172e56a66bfb39bd9bfa20967bb6b52c5aa2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328988"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436042"
 ---
 # <a name="xgriddensity-cell-ruler-amp-grid-section"></a>[xgriddensity] セル&amp; ([ルーラーグリッド] セクション)
 
@@ -23,11 +23,11 @@ ms.locfileid: "32328988"
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
 |.0  <br/> |Fixed  <br/> |**visGridFixed** <br/> |
-|pbm-2  <br/> |粗い  <br/> |**visGridCoarse** <br/> |
-|2/4  <br/> |標準 (既定値)  <br/> |**visGridNormal** <br/> |
-|~  <br/> |いい  <br/> |**visGridFine** <br/> |
+|2   <br/> |粗い  <br/> |**visGridCoarse** <br/> |
+|4   <br/> |標準 (既定値)  <br/> |**visGridNormal** <br/> |
+|8   <br/> |いい  <br/> |**visGridFine** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルは、[**ルーラー &amp;グリッド**] ダイアログボックスの [上下の**間隔**] オプションに対応しています ([**表示**] タブで [**表示**] 矢印をクリックします)。 
   

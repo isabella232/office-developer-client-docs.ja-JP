@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 9408da71-4abf-60cf-5412-58c5ceeb2205
 description: '�ŏI�X�V��: 2012�N6��25��'
 ms.openlocfilehash: e1c9de77c6e9a48326ad6b8f40d7f7a20ca762b0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345914"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426115"
 ---
 # <a name="retrieve-body-of-message-in-compressed-rtf-and-convert-to-its-native-format"></a>圧縮 RTF でメッセージの本文を取得し、そのネイティブ形式に変換する
 

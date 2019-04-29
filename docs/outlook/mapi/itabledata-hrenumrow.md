@@ -13,11 +13,11 @@ api_type:
 ms.assetid: b25d9f2b-9454-4983-98f7-6a051a3b8a04
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 50fd96acd0989459c9887770ec5a3a236f182da5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348896"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418373"
 ---
 # <a name="itabledatahrenumrow"></a>ITableData::HrEnumRow
 
@@ -50,7 +50,7 @@ S_OK
   
 > 行が正常に取得されたか、 _ulrownumber_パラメーターで指定された行番号の行が存在しません。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **itabledata:: HrEnumRow**メソッドは、連続した番号に基づいて行を取得します。 この数は、挿入の順序 (0 は最初の行を示し、行数から1を引いた数は最後の行を示します) を表します。 MAPI では、この順序で行が挿入され、テーブルデータオブジェクトの有効期間が維持されます。 
   

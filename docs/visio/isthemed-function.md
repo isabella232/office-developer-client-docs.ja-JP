@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 91cde601-dca9-4737-afe1-bdf76638dfe3
 description: 図形に適用するテーマがあるかどうかを示すブール演算型の値を返します。
 ms.openlocfilehash: 49f53eaaacbdc86a633703d6ef847e38097f5122
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357513"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418121"
 ---
 # <a name="isthemed-function"></a>ISTHEMED 関数
 
@@ -31,7 +31,7 @@ ms.locfileid: "32357513"
 
 Boolean
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 > [!NOTE]
 > visio 2013 の**isthemed**関数は、以前のバージョンの visio の**CELLISTHEMED**関数を置き換えます。 
@@ -44,7 +44,7 @@ Boolean
 
 ||||
 |:-----|:-----|:-----|
-|Cell  <br/> |Formula  <br/> |結果  <br/> |
+|Cell  <br/> |式  <br/> |結果  <br/> |
 |文字フォント  <br/> |IF (isthemed ()、書式付き eval ()、FONT ("Calibri"))  <br/> |図形に適用されたテーマがある場合、図形のテキストはテーマのフォント書式設定を受け入れます。 図形にテーマが設定されていない場合、図形のテキストには "Calibri" というフォントが適用されます。  <br/> |
 |linecolor]  <br/> |IF(ISTHEMED, RGB(255, 0, 0), RGB(0, 255, 0))  <br/> |図形にテーマが適用されている場合、図形の線の色は赤になります。 図形にテーマが設定されていない場合、図形の線の色は緑になります。  <br/> |
    

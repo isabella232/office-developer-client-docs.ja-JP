@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5a16e62b-9d33-41cd-af2b-9abd403b6f2e
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0f0523c01e163b57d9ed37d9b324ec858adbd685
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280121"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426073"
 ---
 # <a name="imapifolderdeletemessages"></a>IMAPIFolder::DeleteMessages
 
@@ -72,7 +72,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > 呼び出しは成功しましたが、すべてのメッセージが正常に削除されませんでした。 この警告が返された場合、呼び出しは正常に処理されます。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapifolder::D eletemessages**メソッドは、フォルダーからメッセージを削除します。 存在しないメッセージ、他の場所に移動したメッセージ、読み取り/書き込みアクセス許可で開いているメッセージ、または現在送信されているメッセージは削除できません。 
   

@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: e219adf6-e591-72e6-b9bd-2fc62eb5142d
 description: 指定したアカウントのカテゴリの順序を変更します。
 ms.openlocfilehash: 29dfe4fd1bda9e323481297167361650c3b3a173
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322044"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422860"
 ---
 # <a name="iolkaccountmanagersetorder"></a>IOlkAccountManager::SetOrder
 
@@ -58,7 +58,7 @@ _rgAccts_
 |E_INVALIDARG  <br/> |いくつかの引数は無効です。  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |アカウント マネージャーが使用するために初期化されていません。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 呼び出し元は、配列ポインター _prgAccts_および_prgAccts_がポイントする配列のメモリを割り当てます。 
   

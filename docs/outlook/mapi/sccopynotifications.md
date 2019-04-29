@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: ac31cf65-a2bc-4c8e-91a4-d2903aa98776
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 08b9b954f856d64214947d81cf700adee42bcce4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357485"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435923"
 ---
 # <a name="sccopynotifications"></a>ScCopyNotifications
 
@@ -70,7 +70,7 @@ E_INVALIDARG
   
 > 無効な通知が発生しました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _pcb_パラメーターで NULL が渡された場合、コピーは実行されません。_pcb_で null 以外の値が渡された場合、 **sccopynotifications**関数は、配列のサイズと配列自体をメモリの単一のブロックにコピーします。 _pcb_が NULL でない場合は、 _pvdst_パラメーターに格納されているバイト数に設定されます。 _pvdst_パラメーターは、配列全体を格納するのに十分な大きさでなければなりません。 
   

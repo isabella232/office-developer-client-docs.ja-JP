@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 636c1e75-3024-43ca-a7dd-1bb480dfbb5b
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 79ef85955f15e0ca829ac6f206dddc17031b0562
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356694"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420641"
 ---
 # <a name="pidtagrecipientnumberforadvice-canonical-property"></a>PidTagRecipientNumberForAdvice 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32356694"
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |MAPI 受信者  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 これらのプロパティは、電子メールボックスではなく、物理的な送信先への配信と組み合わせて使用することを目的としていますが、配信時に人間の受信者が存在しないことが想定されているとは限りません。 この例は、fax 送付状の電話番号です。
   
