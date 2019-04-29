@@ -11,45 +11,45 @@ api_name:
 api_type:
 - COM
 ms.assetid: c1b746e6-c9df-4e92-a8b8-7a00b2de53e7
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: e0087cdffe04bdb5de7ffcfa295a5ac84bf03bd1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331623"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418695"
 ---
-# <a name="cbmapiverbarray"></a><span data-ttu-id="1849b-103">CbMAPIVerbArray</span><span class="sxs-lookup"><span data-stu-id="1849b-103">CbMAPIVerbArray</span></span>
+# <a name="cbmapiverbarray"></a><span data-ttu-id="943ed-103">CbMAPIVerbArray</span><span class="sxs-lookup"><span data-stu-id="943ed-103">CbMAPIVerbArray</span></span>
 
   
   
-<span data-ttu-id="1849b-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="1849b-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="943ed-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="943ed-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="1849b-105">指定した数の[smapiverb](smapiverb.md)構造を含む既存の[SMAPIVerbArray](smapiverbarray.md)構造体のバイト数を計算します。</span><span class="sxs-lookup"><span data-stu-id="1849b-105">Computes the number of bytes in an existing [SMAPIVerbArray](smapiverbarray.md) structure that contains a specified number of [SMAPIVerb](smapiverb.md) structures.</span></span> 
+<span data-ttu-id="943ed-105">指定した数の[smapiverb](smapiverb.md)構造を含む既存の[SMAPIVerbArray](smapiverbarray.md)構造体のバイト数を計算します。</span><span class="sxs-lookup"><span data-stu-id="943ed-105">Computes the number of bytes in an existing [SMAPIVerbArray](smapiverbarray.md) structure that contains a specified number of [SMAPIVerb](smapiverb.md) structures.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="1849b-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="1849b-106">Header file:</span></span>  <br/> |<span data-ttu-id="1849b-107">Mapiform</span><span class="sxs-lookup"><span data-stu-id="1849b-107">Mapiform.h</span></span>  <br/> |
-|<span data-ttu-id="1849b-108">関連する構造:</span><span class="sxs-lookup"><span data-stu-id="1849b-108">Related structure:</span></span>  <br/> |<span data-ttu-id="1849b-109">**SMAPIVerbArray**</span><span class="sxs-lookup"><span data-stu-id="1849b-109">**SMAPIVerbArray**</span></span> <br/> |
+|<span data-ttu-id="943ed-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="943ed-106">Header file:</span></span>  <br/> |<span data-ttu-id="943ed-107">Mapiform</span><span class="sxs-lookup"><span data-stu-id="943ed-107">Mapiform.h</span></span>  <br/> |
+|<span data-ttu-id="943ed-108">関連する構造:</span><span class="sxs-lookup"><span data-stu-id="943ed-108">Related structure:</span></span>  <br/> |<span data-ttu-id="943ed-109">**SMAPIVerbArray**</span><span class="sxs-lookup"><span data-stu-id="943ed-109">**SMAPIVerbArray**</span></span> <br/> |
    
 ```cpp
 int CbMAPIVerbArray (_c)
 ```
 
-## <a name="parameters"></a><span data-ttu-id="1849b-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="1849b-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="943ed-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="943ed-110">Parameters</span></span>
 
- <span data-ttu-id="1849b-111">__c_</span><span class="sxs-lookup"><span data-stu-id="1849b-111">__c_</span></span>
+ <span data-ttu-id="943ed-111">__c_</span><span class="sxs-lookup"><span data-stu-id="943ed-111">__c_</span></span>
   
-> <span data-ttu-id="1849b-112">既存の**SMAPIVerbArray**構造体の**smapiverb**構造のカウント。</span><span class="sxs-lookup"><span data-stu-id="1849b-112">Count of **SMAPIVerb** structures in the existing **SMAPIVerbArray** structure.</span></span> 
+> <span data-ttu-id="943ed-112">既存の**SMAPIVerbArray**構造体の**smapiverb**構造のカウント。</span><span class="sxs-lookup"><span data-stu-id="943ed-112">Count of **SMAPIVerb** structures in the existing **SMAPIVerbArray** structure.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="1849b-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="1849b-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="943ed-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="943ed-113">See also</span></span>
 
 
 
-[<span data-ttu-id="1849b-114">SMAPIVerbArray</span><span class="sxs-lookup"><span data-stu-id="1849b-114">SMAPIVerbArray</span></span>](smapiverbarray.md)
+[<span data-ttu-id="943ed-114">SMAPIVerbArray</span><span class="sxs-lookup"><span data-stu-id="943ed-114">SMAPIVerbArray</span></span>](smapiverbarray.md)
   
-[<span data-ttu-id="1849b-115">SMAPIVerb</span><span class="sxs-lookup"><span data-stu-id="1849b-115">SMAPIVerb</span></span>](smapiverb.md)
+[<span data-ttu-id="943ed-115">SMAPIVerb</span><span class="sxs-lookup"><span data-stu-id="943ed-115">SMAPIVerb</span></span>](smapiverb.md)
 
 
-[<span data-ttu-id="1849b-116">構造に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="1849b-116">Macros Related to Structures</span></span>](macros-related-to-structures.md)
+[<span data-ttu-id="943ed-116">構造に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="943ed-116">Macros Related to Structures</span></span>](macros-related-to-structures.md)
 

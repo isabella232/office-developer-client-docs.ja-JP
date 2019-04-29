@@ -9,18 +9,18 @@ api_type:
 ms.assetid: febb6a5e-7c40-4f21-806e-7f827d1c37cf
 description: '�ŏI�X�V��: 2011�N7��23��'
 ms.openlocfilehash: fb716ce014ec3c4b21ce2b021c1a9f6f291d511c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279768"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417148"
 ---
-# <a name="ole-attachments"></a><span data-ttu-id="d943d-103">OLE �Y�t�t�@�C��</span><span class="sxs-lookup"><span data-stu-id="d943d-103">OLE Attachments</span></span>
+# <a name="ole-attachments"></a><span data-ttu-id="7c5cb-103">OLE �Y�t�t�@�C��</span><span class="sxs-lookup"><span data-stu-id="7c5cb-103">OLE Attachments</span></span>
 
   
   
-<span data-ttu-id="d943d-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="d943d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="7c5cb-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="7c5cb-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="d943d-p101">OLE �I�u�W�F�N�g�́AOLE 1 �Ƃ��ăG���R�[�h�́A�Y�t�t�@�C���́A�I�u�W�F�N�g�̉��ʌ݊�����X�g���[�~���O���܂��B�{���Ɍ��̃I�u�W�F�N�g�� OLE 2 **IStorage**�I�u�W�F�N�g�̏ꍇ�́A�I�u�W�F�N�g�� OLE 1 �X�g���[���ɕϊ�����K�v������܂��BWin32 OLE ���C�u�����̈ꕔ�ł��� **OleConvertIStorageToOLESTREAM** �֐���g�p���Ă��̕ϊ������s����܂��B</span><span class="sxs-lookup"><span data-stu-id="d943d-p101">Attachments that are OLE objects are encoded as OLE 1 stream objects for backward compatibility. If the original object is really an OLE 2 **IStorage** object, then the object must be converted to an OLE 1 stream. This conversion is performed using the **OleConvertIStorageToOLESTREAM** function, which is part of the Win32 OLE libraries.</span></span> 
+<span data-ttu-id="7c5cb-p101">OLE �I�u�W�F�N�g�́AOLE 1 �Ƃ��ăG���R�[�h�́A�Y�t�t�@�C���́A�I�u�W�F�N�g�̉��ʌ݊�����X�g���[�~���O���܂��B�{���Ɍ��̃I�u�W�F�N�g�� OLE 2 **IStorage**�I�u�W�F�N�g�̏ꍇ�́A�I�u�W�F�N�g�� OLE 1 �X�g���[���ɕϊ�����K�v������܂��BWin32 OLE ���C�u�����̈ꕔ�ł��� **OleConvertIStorageToOLESTREAM** �֐���g�p���Ă��̕ϊ������s����܂��B</span><span class="sxs-lookup"><span data-stu-id="7c5cb-p101">Attachments that are OLE objects are encoded as OLE 1 stream objects for backward compatibility. If the original object is really an OLE 2 **IStorage** object, then the object must be converted to an OLE 1 stream. This conversion is performed using the **OleConvertIStorageToOLESTREAM** function, which is part of the Win32 OLE libraries.</span></span> 
   
 

@@ -11,27 +11,27 @@ api_name:
 api_type:
 - COM
 ms.assetid: 880eb35d-7045-4fdd-bb33-0f14557a7316
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: ca436bc83d5170d55475c1dd9702a9d54e4b9d5a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341056"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436441"
 ---
-# <a name="fbadrglpszw"></a><span data-ttu-id="28128-103">FBadRglpszW</span><span class="sxs-lookup"><span data-stu-id="28128-103">FBadRglpszW</span></span>
+# <a name="fbadrglpszw"></a><span data-ttu-id="22192-103">FBadRglpszW</span><span class="sxs-lookup"><span data-stu-id="22192-103">FBadRglpszW</span></span>
 
   
   
-<span data-ttu-id="28128-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="28128-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="22192-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="22192-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="28128-105">Unicode 文字列の配列内のすべての文字列を検証します。</span><span class="sxs-lookup"><span data-stu-id="28128-105">Validates all strings in an array of Unicode strings.</span></span> 
+<span data-ttu-id="22192-105">Unicode 文字列の配列内のすべての文字列を検証します。</span><span class="sxs-lookup"><span data-stu-id="22192-105">Validates all strings in an array of Unicode strings.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="28128-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="28128-106">Header file:</span></span>  <br/> |<span data-ttu-id="28128-107">Mapival.h</span><span class="sxs-lookup"><span data-stu-id="28128-107">Mapival.h</span></span>  <br/> |
-|<span data-ttu-id="28128-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="28128-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="28128-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="28128-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="28128-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="28128-110">Called by:</span></span>  <br/> |<span data-ttu-id="28128-111">サービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="28128-111">Service providers</span></span>  <br/> |
+|<span data-ttu-id="22192-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="22192-106">Header file:</span></span>  <br/> |<span data-ttu-id="22192-107">Mapival.h</span><span class="sxs-lookup"><span data-stu-id="22192-107">Mapival.h</span></span>  <br/> |
+|<span data-ttu-id="22192-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="22192-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="22192-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="22192-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="22192-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="22192-110">Called by:</span></span>  <br/> |<span data-ttu-id="22192-111">サービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="22192-111">Service providers</span></span>  <br/> |
    
 ```cpp
 BOOL FBadRglpszW(
@@ -40,24 +40,24 @@ BOOL FBadRglpszW(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="28128-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="28128-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="22192-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="22192-112">Parameters</span></span>
 
- <span data-ttu-id="28128-113">_lppszw_</span><span class="sxs-lookup"><span data-stu-id="28128-113">_lppszW_</span></span>
+ <span data-ttu-id="22192-113">_lppszw_</span><span class="sxs-lookup"><span data-stu-id="22192-113">_lppszW_</span></span>
   
-> <span data-ttu-id="28128-114">順番null で終わる Unicode 文字列の配列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="28128-114">[in] Pointer to an array of null-terminated Unicode strings.</span></span> 
+> <span data-ttu-id="22192-114">順番null で終わる Unicode 文字列の配列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="22192-114">[in] Pointer to an array of null-terminated Unicode strings.</span></span> 
     
- <span data-ttu-id="28128-115">_cstrings_</span><span class="sxs-lookup"><span data-stu-id="28128-115">_cStrings_</span></span>
+ <span data-ttu-id="22192-115">_cstrings_</span><span class="sxs-lookup"><span data-stu-id="22192-115">_cStrings_</span></span>
   
-> <span data-ttu-id="28128-116">順番_lppszw_パラメーターによって示される配列内の文字列の数。</span><span class="sxs-lookup"><span data-stu-id="28128-116">[in] Count of strings in the array pointed to by the  _lppszW_ parameter.</span></span> 
+> <span data-ttu-id="22192-116">順番_lppszw_パラメーターによって示される配列内の文字列の数。</span><span class="sxs-lookup"><span data-stu-id="22192-116">[in] Count of strings in the array pointed to by the  _lppszW_ parameter.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="28128-117">戻り値</span><span class="sxs-lookup"><span data-stu-id="28128-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="22192-117">戻り値</span><span class="sxs-lookup"><span data-stu-id="22192-117">Return value</span></span>
 
-<span data-ttu-id="28128-118">TRUE</span><span class="sxs-lookup"><span data-stu-id="28128-118">TRUE</span></span> 
+<span data-ttu-id="22192-118">TRUE</span><span class="sxs-lookup"><span data-stu-id="22192-118">TRUE</span></span> 
   
-> <span data-ttu-id="28128-119">指定された配列の1つ以上の文字列が無効です。</span><span class="sxs-lookup"><span data-stu-id="28128-119">One or more of the strings in the specified array are invalid.</span></span> 
+> <span data-ttu-id="22192-119">指定された配列の1つ以上の文字列が無効です。</span><span class="sxs-lookup"><span data-stu-id="22192-119">One or more of the strings in the specified array are invalid.</span></span> 
     
-<span data-ttu-id="28128-120">FALSE</span><span class="sxs-lookup"><span data-stu-id="28128-120">FALSE</span></span> 
+<span data-ttu-id="22192-120">FALSE</span><span class="sxs-lookup"><span data-stu-id="22192-120">FALSE</span></span> 
   
-> <span data-ttu-id="28128-121">指定した配列の文字列は有効です。</span><span class="sxs-lookup"><span data-stu-id="28128-121">The strings in the specified array are valid.</span></span>
+> <span data-ttu-id="22192-121">指定した配列の文字列は有効です。</span><span class="sxs-lookup"><span data-stu-id="22192-121">The strings in the specified array are valid.</span></span>
     
 

@@ -10,38 +10,38 @@ localization_priority: Normal
 ms.assetid: 5ba68e05-f394-d7b7-390d-f0a9fdad011e
 description: グループ図形とそのメンバーを選択する方法を指定します。
 ms.openlocfilehash: 82f9e2806d1131a0acfd064f585c681fef0f209f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326013"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435363"
 ---
-# <a name="selectmode-cell-group-properties-section"></a><span data-ttu-id="65239-103">[SelectMode] セル ([Group Properties] セクション)</span><span class="sxs-lookup"><span data-stu-id="65239-103">SelectMode Cell (Group Properties Section)</span></span>
+# <a name="selectmode-cell-group-properties-section"></a><span data-ttu-id="403ed-103">[SelectMode] セル ([Group Properties] セクション)</span><span class="sxs-lookup"><span data-stu-id="403ed-103">SelectMode Cell (Group Properties Section)</span></span>
 
-<span data-ttu-id="65239-104">グループ図形とそのメンバーを選択する方法を指定します。</span><span class="sxs-lookup"><span data-stu-id="65239-104">Determines how you select a group shape and its members.</span></span>
+<span data-ttu-id="403ed-104">グループ図形とそのメンバーを選択する方法を指定します。</span><span class="sxs-lookup"><span data-stu-id="403ed-104">Determines how you select a group shape and its members.</span></span>
   
-|<span data-ttu-id="65239-105">**値**</span><span class="sxs-lookup"><span data-stu-id="65239-105">**Value**</span></span>|<span data-ttu-id="65239-106">**選択モード**</span><span class="sxs-lookup"><span data-stu-id="65239-106">**Selection mode**</span></span>|<span data-ttu-id="65239-107">**オートメーション定数**</span><span class="sxs-lookup"><span data-stu-id="65239-107">**Automation constant**</span></span>|
+|<span data-ttu-id="403ed-105">**値**</span><span class="sxs-lookup"><span data-stu-id="403ed-105">**Value**</span></span>|<span data-ttu-id="403ed-106">**選択モード**</span><span class="sxs-lookup"><span data-stu-id="403ed-106">**Selection mode**</span></span>|<span data-ttu-id="403ed-107">**オートメーション定数**</span><span class="sxs-lookup"><span data-stu-id="403ed-107">**Automation constant**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="65239-108">.0</span><span class="sxs-lookup"><span data-stu-id="65239-108">0</span></span>  <br/> |<span data-ttu-id="65239-109">グループ図形だけを選択します。</span><span class="sxs-lookup"><span data-stu-id="65239-109">Select the group shape only.</span></span>  <br/> |<span data-ttu-id="65239-110">**visGrpSelModeGroupOnly**</span><span class="sxs-lookup"><span data-stu-id="65239-110">**visGrpSelModeGroupOnly**</span></span> <br/> |
-|<span data-ttu-id="65239-111">1-d</span><span class="sxs-lookup"><span data-stu-id="65239-111">1</span></span>  <br/> |<span data-ttu-id="65239-112">グループ図形を最初に選択します。</span><span class="sxs-lookup"><span data-stu-id="65239-112">Select the group shape first.</span></span>  <br/> |<span data-ttu-id="65239-113">**visGrpSelModeGroup1st**</span><span class="sxs-lookup"><span data-stu-id="65239-113">**visGrpSelModeGroup1st**</span></span> <br/> |
-|<span data-ttu-id="65239-114">pbm-2</span><span class="sxs-lookup"><span data-stu-id="65239-114">2</span></span>  <br/> |<span data-ttu-id="65239-115">グループのメンバーを最初に選択します。</span><span class="sxs-lookup"><span data-stu-id="65239-115">Select the members of the group first.</span></span>  <br/> |<span data-ttu-id="65239-116">**visGrpSelModeMembers1st**</span><span class="sxs-lookup"><span data-stu-id="65239-116">**visGrpSelModeMembers1st**</span></span> <br/> |
+|<span data-ttu-id="403ed-108">.0</span><span class="sxs-lookup"><span data-stu-id="403ed-108">0</span></span>  <br/> |<span data-ttu-id="403ed-109">グループ図形だけを選択します。</span><span class="sxs-lookup"><span data-stu-id="403ed-109">Select the group shape only.</span></span>  <br/> |<span data-ttu-id="403ed-110">**visGrpSelModeGroupOnly**</span><span class="sxs-lookup"><span data-stu-id="403ed-110">**visGrpSelModeGroupOnly**</span></span> <br/> |
+|<span data-ttu-id="403ed-111">1 </span><span class="sxs-lookup"><span data-stu-id="403ed-111">1</span></span>  <br/> |<span data-ttu-id="403ed-112">グループ図形を最初に選択します。</span><span class="sxs-lookup"><span data-stu-id="403ed-112">Select the group shape first.</span></span>  <br/> |<span data-ttu-id="403ed-113">**visGrpSelModeGroup1st**</span><span class="sxs-lookup"><span data-stu-id="403ed-113">**visGrpSelModeGroup1st**</span></span> <br/> |
+|<span data-ttu-id="403ed-114">2 </span><span class="sxs-lookup"><span data-stu-id="403ed-114">2</span></span>  <br/> |<span data-ttu-id="403ed-115">グループのメンバーを最初に選択します。</span><span class="sxs-lookup"><span data-stu-id="403ed-115">Select the members of the group first.</span></span>  <br/> |<span data-ttu-id="403ed-116">**visGrpSelModeMembers1st**</span><span class="sxs-lookup"><span data-stu-id="403ed-116">**visGrpSelModeMembers1st**</span></span> <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="65239-117">解説</span><span class="sxs-lookup"><span data-stu-id="65239-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="403ed-117">注釈</span><span class="sxs-lookup"><span data-stu-id="403ed-117">Remarks</span></span>
 
-<span data-ttu-id="65239-118">この値は、[**基本動作**] ダイアログボックスで設定することもできます (グループ図形が選択されている状態)。 [[開発](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] グループで、[**基本動作**] をクリックし、[グループ] の下にある**選択**リストでモードをクリックします。 **動作**)。</span><span class="sxs-lookup"><span data-stu-id="65239-118">You can also set this value in the **Behavior** dialog box (with the group shape selected, on the [Developer](run-in-developer-mode-display-the-developer-tab.md) tab, in the **Shape Design** group, click **Behavior**, and then click a mode in the **Selection** list under **Group Behavior** ).</span></span> 
+<span data-ttu-id="403ed-118">この値は、[**基本動作**] ダイアログボックスで設定することもできます (グループ図形が選択されている状態)。 [[開発](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] グループで、[**基本動作**] をクリックし、[グループ] の下にある**選択**リストでモードをクリックします。 **動作**)。</span><span class="sxs-lookup"><span data-stu-id="403ed-118">You can also set this value in the **Behavior** dialog box (with the group shape selected, on the [Developer](run-in-developer-mode-display-the-developer-tab.md) tab, in the **Shape Design** group, click **Behavior**, and then click a mode in the **Selection** list under **Group Behavior** ).</span></span> 
   
-<span data-ttu-id="65239-119">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [SelectMode] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="65239-119">To get a reference to the SelectMode cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="403ed-119">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [SelectMode] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="403ed-119">To get a reference to the SelectMode cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="65239-120">セル名 :</span><span class="sxs-lookup"><span data-stu-id="65239-120">Cell name:</span></span>  <br/> |<span data-ttu-id="65239-121">[selectmode]</span><span class="sxs-lookup"><span data-stu-id="65239-121">SelectMode</span></span>  <br/> |
+|<span data-ttu-id="403ed-120">セル名 :</span><span class="sxs-lookup"><span data-stu-id="403ed-120">Cell name:</span></span>  <br/> |<span data-ttu-id="403ed-121">[selectmode]</span><span class="sxs-lookup"><span data-stu-id="403ed-121">SelectMode</span></span>  <br/> |
    
-<span data-ttu-id="65239-122">プログラムから、インデックスによって [SelectMode] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="65239-122">To get a reference to the SelectMode cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="403ed-122">プログラムから、インデックスによって [SelectMode] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="403ed-122">To get a reference to the SelectMode cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="65239-123">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="65239-123">Section index:</span></span>  <br/> |<span data-ttu-id="65239-124">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="65239-124">**visSectionObject**</span></span> <br/> |
-|<span data-ttu-id="65239-125">行インデックス :</span><span class="sxs-lookup"><span data-stu-id="65239-125">Row index:</span></span>  <br/> |<span data-ttu-id="65239-126">**visRowGroup**</span><span class="sxs-lookup"><span data-stu-id="65239-126">**visRowGroup**</span></span> <br/> |
-|<span data-ttu-id="65239-127">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="65239-127">Cell index:</span></span>  <br/> |<span data-ttu-id="65239-128">**visGroupSelectMode**</span><span class="sxs-lookup"><span data-stu-id="65239-128">**visGroupSelectMode**</span></span> <br/> |
+|<span data-ttu-id="403ed-123">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="403ed-123">Section index:</span></span>  <br/> |<span data-ttu-id="403ed-124">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="403ed-124">**visSectionObject**</span></span> <br/> |
+|<span data-ttu-id="403ed-125">行インデックス :</span><span class="sxs-lookup"><span data-stu-id="403ed-125">Row index:</span></span>  <br/> |<span data-ttu-id="403ed-126">**visRowGroup**</span><span class="sxs-lookup"><span data-stu-id="403ed-126">**visRowGroup**</span></span> <br/> |
+|<span data-ttu-id="403ed-127">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="403ed-127">Cell index:</span></span>  <br/> |<span data-ttu-id="403ed-128">**visGroupSelectMode**</span><span class="sxs-lookup"><span data-stu-id="403ed-128">**visGroupSelectMode**</span></span> <br/> |
    
 
