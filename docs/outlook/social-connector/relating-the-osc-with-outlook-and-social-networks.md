@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: f33705cc-8add-42be-9d9f-f4e9245d83f5
 description: outlook Social Connector (.osc) は、同僚、友人、または関連付けられている個人の Office 連絡先カードと outlook のユーザーウィンドウの活動、状態、または写真の更新を表示することができます。
 ms.openlocfilehash: 0ee9451e64f12e8ba371c1ba91a1379cff257313
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329259"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428012"
 ---
 # <a name="relating-the-osc-with-outlook-and-social-networks"></a>OSC と Outlook およびソーシャル ネットワークとの関連付け
 
