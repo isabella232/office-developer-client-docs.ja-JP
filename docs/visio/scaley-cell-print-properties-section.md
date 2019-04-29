@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 02835aff-455b-ffeb-d53b-28387b6ce361
 description: 印刷ページの図面ページの倍率をパーセントで指定します。
 ms.openlocfilehash: 0f8e86675a039002b60438eac7df92f4a2b13b98
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342729"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406991"
 ---
 # <a name="scaley-cell-print-properties-section"></a>[ScaleY] セル ([Print Properties] セクション)
 
 印刷ページの図面ページの倍率をパーセントで指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この値は、OnPage セルの値が FALSE の場合にのみ使用されます。 ScaleX および ScaleY セルの値は常に同じで、[**ページ設定**] ダイアログボックス**** ([**デザイン**] タブの [**ページ設定**] 矢印をクリック) の [**印刷設定**] タブの [設定] に設定されている値に対応しています。 
   

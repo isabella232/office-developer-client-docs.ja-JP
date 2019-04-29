@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 27474af2-29a2-4cfb-b94f-72eb91562dac
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: fac4978bef94650f85ac3179acd3858602f933ec
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279571"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405815"
 ---
 # <a name="iabcontainerresolvenames"></a>IABContainer::ResolveNames
 
@@ -92,7 +92,7 @@ MAPI_E_NO_SUPPORT
   
 > アドレス帳プロバイダーは、このメソッドを使用したバルク名解決をサポートしていません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **ResolveNames**メソッドは、解決されない受信者を、 _lpadrlist_パラメーター内のエントリの配列から、このアドレス帳コンテナー内の受信者に一致させようとします。 未解決の受信者には、通常、 **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) プロパティだけがあり、他にもいくつかのプロパティがあります。 未解決の受信者には、 **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティがありません。 _lpflaglist_パラメーター内の対応するフラグは MAPI_UNRESOLVED に設定されています。 反対に、解決された受信者には、少なくとも**PR_ENTRYID**プロパティと、 **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))、 **PR_DISPLAY_NAME**、 **PR_ADDRTYPE**などのその他のプロパティがあります ([PidTagAddressType](pidtagaddresstype-canonical-property.md))
   

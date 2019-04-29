@@ -13,11 +13,11 @@ api_type:
 ms.assetid: b93dae79-4305-9a3a-7b93-42319f7e26ba
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 31ef1f5c6af498f042ab766ae90fcfbce805700a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315086"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407110"
 ---
 # <a name="ipstxgetsyncobject"></a>IPSTX::GetSyncObject
 
@@ -39,7 +39,7 @@ HRESULT GetSyncObject(
   
 >  読み上げ取得する**iostx**インターフェイスへのポインター。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 呼び出し元は、同じフォルダーが複数のスレッドで同時に同期されないようにする必要があります。
   

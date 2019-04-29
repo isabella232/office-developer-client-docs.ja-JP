@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 8e7c9080-7ef1-0696-a3d2-d8f57ea5ab9b
 description: コネクタの経路の変更方法を指定します。
 ms.openlocfilehash: b2b9cde309c720493f0e46962b2fe6c2e79545d2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32284463"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404184"
 ---
 # <a name="confixedcode-cell-shape-layout-section"></a>[ConFixedCode] セル ([Shape Layout] セクション)
 
@@ -23,14 +23,14 @@ ms.locfileid: "32284463"
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
 |.0  <br/> |自由に経路を変更します。  <br/> |**visSLOConFixedRerouteFreely** <br/> |
-|1-d  <br/> |必要に応じて経路を再設定します (手動による変更)。  <br/> |**visSLOConFixedRerouteAsNeeded** <br/> |
-|pbm-2  <br/> |経路変更しません。  <br/> |**visSLOConFixedRerouteNever** <br/> |
-|1/3  <br/> |交差時に経路を変更します。  <br/> |**visSLOConFixedRerouteOnCrossover** <br/> |
-|2/4  <br/> |システム内部でのみ使用します。  <br/> |**visSLOConFixedByAlgFrom** <br/> |
-|5  <br/> |システム内部でのみ使用します。  <br/> |**visSLOConFixedByAlgTo** <br/> |
-|シックス  <br/> |システム内部でのみ使用します。  <br/> |**visSLOConFixedByAlgFromTo** <br/> |
+|1   <br/> |必要に応じて経路を再設定します (手動による変更)。  <br/> |**visSLOConFixedRerouteAsNeeded** <br/> |
+|2   <br/> |経路変更しません。  <br/> |**visSLOConFixedRerouteNever** <br/> |
+|3   <br/> |交差時に経路を変更します。  <br/> |**visSLOConFixedRerouteOnCrossover** <br/> |
+|4   <br/> |システム内部でのみ使用します。  <br/> |**visSLOConFixedByAlgFrom** <br/> |
+|5   <br/> |システム内部でのみ使用します。  <br/> |**visSLOConFixedByAlgTo** <br/> |
+|6   <br/> |システム内部でのみ使用します。  <br/> |**visSLOConFixedByAlgFromTo** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルの値は、動的コネクタを選択し、[[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] で [**基本動作**] をクリックし、[**コネクタ**] タブをクリックして設定することもできます。 
   

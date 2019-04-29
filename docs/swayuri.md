@@ -8,11 +8,11 @@ ms.assetid: 11daa75b-87fc-4e63-8e02-09ab9307c8f8
 ms.date: 01/28/2016
 description: sway の URI スキームを使用して、sway アプリケーションを開き、sway を表示または編集します。
 ms.openlocfilehash: 04848ef1de2777d916d8dd8dd381e6d5f66310d6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346250"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415314"
 ---
 # <a name="sway-uri-scheme"></a>Sway URI スキーム
 

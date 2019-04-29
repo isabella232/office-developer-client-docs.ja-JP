@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: e67dcd83-4a88-a0f8-5c6a-dae51424edbd
 description: 図形またはページのショートカット メニューにハイパーリンクがあるかどうかを示します。
 ms.openlocfilehash: b52da8244bf31e75bacbb6f24f73eba6ee8c6e5f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348336"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404632"
 ---
 # <a name="invisible-cell-hyperlinks-section"></a>[Invisible] セル ([Hyperlinks] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32348336"
 |TRUE  <br/> |ハイパーリンクは、ショートカット メニューのメニュー項目として表示されません。  <br/> |
 |FALSE  <br/> |ハイパーリンクは、ショートカット メニューのメニュー項目として表示されます (既定値)。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Invisible] セルへの参照を取得するには、次の値を使用します。 
   

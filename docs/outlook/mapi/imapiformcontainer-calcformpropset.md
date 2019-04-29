@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 594e3aac-a00f-422e-8e7a-949e4c9a3f8d
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: ec1933f80f211c7c381f9de6b15d414932b9a78e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286588"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414915"
 ---
 # <a name="imapiformcontainercalcformpropset"></a>IMAPIFormContainer::CalcFormPropSet
 
@@ -66,7 +66,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 クライアントアプリケーションは、 **imapiformcontainer:: CalcFormPropSet**メソッドを呼び出して、フォームコンテナーにインストールされているすべてのフォームで使用されるプロパティの配列を取得します。 **imapiformcontainer:: CalcFormPropSet**は、 [imapiformcontainer:: CalcFormPropSet](imapiformmgr-calcformpropset.md)メソッドに似ていますが、特定のコンテナーに登録されているすべてのフォーム上で動作する点が異なります。 
   

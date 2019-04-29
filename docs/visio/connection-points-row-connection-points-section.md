@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: eaac62a5-f516-9b81-587a-8e0e02de59ee
 description: 図形上の1つの接続ポイントに対する x 座標と y 座標、水平方向と垂直方向、および種類を格納します。 接続ポイントの座標は、図形の原点を基準に測定されます。 図形上の各接続ポイントに対して 1 つの [Connection Points] 行があります。
 ms.openlocfilehash: 301ea4fb446d9acafd4b59af388c3e7b2d419e20
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32361027"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415510"
 ---
 # <a name="connection-points-row-connection-points-section"></a>[Connection Points] 行 ([Connection Points] セクション)
 
@@ -31,7 +31,7 @@ ms.locfileid: "32361027"
 |[Type/C](typec-cell-connection-points-section.md) <br/> |接続ポイントの種類 (0 = 内向き; 1 = 外向き; 2 = 内向き + 外向き) です。  <br/> |
 |[D](d-cell-connection-points-section.md) <br/> |数式を入力またはテストするために使用できる、スクラッチ セルです。このセルにアクセスするには、行を右クリックしてから、ショートカット メニューの **[図形要素の変更]** をクリックします。<br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 接続のセル。 [*名前*] 行には、[dirx/A、[diry/B、および Type/C のラベルが付いています。これらの行は拡張または拡張されていない行でもかまいません。 
   

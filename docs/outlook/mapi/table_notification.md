@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 48e478c4-6e9a-40ab-a7bb-e6219b743b08
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6c35220529fb88b470c563a0b004bfcf7e63ef76
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345648"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415958"
 ---
 # <a name="tablenotification"></a>TABLE_NOTIFICATION
 
@@ -41,7 +41,7 @@ typedef struct _TABLE_NOTIFICATION
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 **ultableevent**
   
@@ -109,7 +109,7 @@ TABLE_SORT_DONE
   
 > 影響を受ける行を説明する[srow](srow.md)構造。 この構造体は、すべてのテーブル通知イベントに対して入力されます。 行データを渡さないテーブル通知イベントの場合、 **srow**構造の**cvalues**メンバーは0に設定され、 **lpprops**メンバーは NULL に設定されます。 この**srow**構造は読み取り専用であるためです。クライアントは、変更を行う場合は、そのコピーを作成する必要があります。 [ScDupPropset](scduppropset.md)関数を使用してコピーを作成できます。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **表\_通知**構造は、[通知](notification.md)構造の**info**メンバに含まれている構造体の和集合のメンバーのいずれかです。 構造体の**uleventtype**メンバーが_fnevTableModified_に設定されている場合、 **info**メンバーには**テーブル\_通知**構造が含まれています。
   

@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: bc1e1f55-1959-a4a9-a24d-f006af531c9a
 description: '�ŏI�X�V��: 2012�N6��25��'
 ms.openlocfilehash: 1acca6d806c1734007ac7c5e41059d3a870dc5bb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321806"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420263"
 ---
 # <a name="about-the-mapi-crash-recovery-api"></a>MAPI クラッシュ回復 API について
 

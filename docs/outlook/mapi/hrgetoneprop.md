@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8d0a381a-e714-4663-9a57-b0e1cdbd6ba7
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: e5adc7d0c317d8b803645d78227777998d7d241f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32347839"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416056"
 ---
 # <a name="hrgetoneprop"></a>HrGetOneProp
 
@@ -61,7 +61,7 @@ MAPI_E_NOT_FOUND
   
 > 要求されたプロパティは、指定したインターフェイスからは使用できません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [imapiprop:: GetProps](imapiprop-getprops.md)メソッドとは異なり、 **hrgetoneprop**関数は警告を返しません。 プロパティを1つだけ取得するので、成功または失敗のどちらかです。 複数のプロパティを取得する場合、 **GetProps**の方が高速です。 
   

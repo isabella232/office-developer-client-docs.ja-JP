@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9be6b88e-2510-4b82-8b35-5f20a0f99fc0
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1486730dfa2d76bf8e97439213851b195504962f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348819"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414383"
 ---
 # <a name="imsgstoreabortsubmit"></a>IMsgStore::AbortSubmit
 
@@ -63,7 +63,7 @@ MAPI_E_UNABLE_TO_ABORT
   
 > _lな tryid_で識別されたメッセージは MAPI スプーラーによってロックされているため、操作を中止できません。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMsgStore:: abortsubmit**メソッドは、送信されたメッセージをメッセージストアの送信キューから削除しようとします。 
   

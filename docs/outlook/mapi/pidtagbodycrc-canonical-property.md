@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 6efe9dc3-e988-4042-ab02-2863b5e0f294
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 416486c3b06c485a1fa6525b54c37a6e0d23f56c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32350926"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415181"
 ---
 # <a name="pidtagbodycrc-canonical-property"></a>PidTagBodyCrc 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32350926"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 メッセージストアは、PT_LONG 値を生成する任意の CRC アルゴリズムを使用できます。 このプロパティは、 **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) プロパティが初めて設定されたときとその後に変更されたときの[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドの一部として計算する必要があります。
   

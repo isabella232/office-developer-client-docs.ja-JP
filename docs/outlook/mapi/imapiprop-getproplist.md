@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0069c223-32bb-4286-b763-39fd45dc263b
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: f089fa2c608fb9fcb7deba2e061c5cf5886aa02f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316570"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414789"
 ---
 # <a name="imapipropgetproplist"></a>IMAPIProp::GetPropList
 
@@ -58,7 +58,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapiprop:: getproplist**メソッドは、オブジェクトで現在サポートされている各プロパティの property タグを取得します。 オブジェクトが現在プロパティをサポートしていない場合、 **getproplist**は**cvalues**メンバーが0に設定されたプロパティタグ配列を返します。 
   

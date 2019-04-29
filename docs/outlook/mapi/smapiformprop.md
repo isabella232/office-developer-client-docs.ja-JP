@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 80f1c2e0-3567-4b16-86cb-d5e6ac95c2ee
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 968f9e1dad3a233b31f0ce29d3ce935b1257948c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309500"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416700"
 ---
 # <a name="smapiformprop"></a>SMAPIFormProp
 
@@ -102,7 +102,7 @@ FPST_ENUM_PROP
   
 > **smapiformpropenumval**構造体の配列へのポインター。それぞれには、名前付きプロパティの値が格納されています。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **smapiformprop**構造体には、 [imapiforminfo](imapiforminfoimapiprop.md)インターフェイスの定義の一部として使用されるフォームプロパティに関する情報が含まれています。**nの種類**には、 **smapiformprop**の一部である**u**共用体に適用されるタグが含まれています。
   

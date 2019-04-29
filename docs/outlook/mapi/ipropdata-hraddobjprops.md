@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 683cf476-3c02-4b3b-939f-6fff6611f9aa
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: df63f08d3d453575816c4f7ab043f802023e21d0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315534"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416385"
 ---
 # <a name="ipropdatahraddobjprops"></a>IPropData::HrAddObjProps
 
@@ -62,7 +62,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > プロパティのいくつかは追加されていますが、全部ではありません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **ipropdata:: hraddobjprops**メソッドは、オブジェクトに PT_OBJECT 型の1つ以上のプロパティを追加します。 **hraddobjprops**は、オブジェクトプロパティの[imapiprop:: setprops](imapiprop-setprops.md)メソッドに代わる方法を提供します。これは、 **setprops**を呼び出すことでオブジェクトのプロパティを作成できないためです。 [imapiprop:: getproplist](imapiprop-getproplist.md)メソッドによって返される property タグのリストに含まれる property タグに、オブジェクトプロパティの結果が追加されました。 
   

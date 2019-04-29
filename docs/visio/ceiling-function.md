@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 1a8d6d48-7ae3-5483-28d2-5b1706088a53
 description: 数値を 0 (ゼロ) から複数の次のインスタンスに切り上げます。 multiple が指定されていない場合、数値は0から次の整数に丸められます。
 ms.openlocfilehash: 449f17d1b68c116cccb2635723a3f6277d0ac2a9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337227"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404128"
 ---
 # <a name="ceiling-function"></a>CEILING 関数
 
@@ -31,7 +31,7 @@ ms.locfileid: "32337227"
 | _number_ <br/> |必須  <br/> |**数値** <br/> |切り上げの対象となる数値を指定します。  <br/> |
 | _マルチ_ <br/> |必須  <br/> |**数値** <br/> |複数のに丸める。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
  _数値_と_複数_の値は、同じ記号または #NUM である必要があります。 エラーを返します。 _数値_、または_複数_の値を値に変換できない場合は、#VALUE します。 エラーを返します。 _数値_または_倍数_が0の場合、結果は0になります。 
   

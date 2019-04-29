@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: f3a83496-fccc-9d6a-02b9-60ebaf4911ea
 description: 図形に関連付けられた1つの図形データ項目に関する情報を格納します。 図形には、図形データ項目ごとに1つの図形データ行が含まれています。図形データ行には Prop.name という名前が付けられ、次のセルが含まれています。 詳細については、各セルに関連する項目を参照してください。
 ms.openlocfilehash: 058f8f180a2eca4736d06dfcc533d81f45150c86
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326216"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415398"
 ---
 # <a name="shape-data-row-shape-data-section"></a>[Shape Data] 行 ([Shape Data] セクション)
 
@@ -33,7 +33,7 @@ ms.locfileid: "32326216"
 |[LangID](langid-cell-shape-data-section.md) <br/> |図形データ項目の値を表示するための言語を指定します。  <br/> |
 |[Calendar](calendar-cell-miscellaneous-section.md) <br/> |図形データ項目の [Type] の値が "日付" のときに、使用するカレンダーの種類を指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
  任意の数の Prop を追加できます。 必要に応じて行に*名前*を付け、わかりやすい名前を行に割り当て、セルの値を設定します。 既存の [Shape Data] セクションに図形データ項目を追加するには、行を右クリックして、ショートカット メニューの [**行の挿入**] をクリックします。 
   

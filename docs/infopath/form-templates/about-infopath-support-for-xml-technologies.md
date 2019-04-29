@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 074181a2-3a75-824c-049d-549aabff0f9f
 description: Microsoft InfoPath は、ワープロや電子メールのアプリケーションなどの従来のドキュメント編集環境の最高のものと、フォーム パッケージの厳密なデータ取り込み機能とを組み合わせたハイブリッドなツールです。 この記事では、InfoPath を使用して取り組むべき問題について説明し、問題の解決に使用される設計方針および XML の業界標準について説明します。
 ms.openlocfilehash: 20831635fba8d76b9d6b45f42a5308ab7236db20
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300337"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407229"
 ---
 # <a name="about-infopath-support-for-xml-technologies"></a>XML テクノロジのための InfoPath サポートについて
 

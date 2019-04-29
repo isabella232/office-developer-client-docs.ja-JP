@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: a7d28349-3121-49ae-ad28-043789e2d205
 description: このセクションでは、Outlook Social Connector (.osc) プロバイダーを解放する前に実行できるテストを示します。
 ms.openlocfilehash: 8a36b13f8adc42a1834481d3a5942f0350c43cc3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327154"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414663"
 ---
 # <a name="getting-ready-to-release-an-osc-provider"></a>.osc プロバイダーをリリースする準備をする
 
@@ -33,7 +33,7 @@ ms.locfileid: "32327154"
     
 - [アクティビティのテスト](testing-activities.md): プロバイダーがサポートする同期モードに応じて、.osc プロバイダーがフレンドおよび非友人のアクティビティを適切に返すことを確認するためのテストとシナリオについて説明します。
     
-## <a name="reference"></a>リファレンス
+## <a name="reference"></a>参照
 
 - [Outlook Social Connector プロバイダーリファレンス](outlook-social-connector-provider-reference-0.md)
   

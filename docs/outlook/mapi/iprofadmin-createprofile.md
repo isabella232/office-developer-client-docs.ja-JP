@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 10cda14a-8f93-41e0-b1fb-500098bdc392
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: b104c62eb617e6c68f85dea4ef6379c831733844
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317116"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404401"
 ---
 # <a name="iprofadmincreateprofile"></a>IProfAdmin::CreateProfile
 
@@ -72,7 +72,7 @@ MAPI_E_NO_ACCESS
   
 > 指定した新しいプロファイルが既に存在します。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IProfAdmin:: createprofile**メソッドは、新しいプロファイルを作成します。 
   

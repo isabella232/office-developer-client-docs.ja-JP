@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5ca500c3-c737-45a5-b0fc-473b75c1d68d
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7e445646477ad1fc56b41141b541358d9b9f9616
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321696"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418786"
 ---
 # <a name="imapiformmgrloadform"></a>IMAPIFormMgr::LoadForm
 
@@ -111,7 +111,7 @@ MAPI_E_NOT_FOUND
   
 > _lpszmessageclass_で渡されるメッセージクラスが、フォームライブラリ内のフォームのメッセージクラスと一致しません。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 フォーム閲覧者は、 **imapiformmgr:: loadform**メソッドを呼び出して、既存のメッセージのフォームを開きます。 **loadform**は form オブジェクトを開き、form オブジェクトにメッセージを読み込み、必要に応じて適切なビューコンテキストを設定し、form オブジェクトの要求されたインターフェイスを返します。 
   

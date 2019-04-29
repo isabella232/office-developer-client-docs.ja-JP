@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: f14ad568-fe45-4875-957d-415d39dc6f28
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7417ddeb814cafb954d5ab80a6dae771fd0f7a79
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357436"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414614"
 ---
 # <a name="lpropcompareprop"></a>LPropCompareProp
 
@@ -62,7 +62,7 @@ LONG LPropCompareProp(
     
 ブール型 (Boolean) やエラーの種類など、組み込みの順序付けを持たないプロパティの種類の場合、 **lpropcompareprop**関数は、2つのプロパティの値が等しくない場合に未定義の値を返します。 この未定義の値は、0以外の呼び出しで一貫しています。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 2つのプロパティの比較対象の型が同じ場合にのみ、 **lpropcompareprop**関数を使用してください。 
   

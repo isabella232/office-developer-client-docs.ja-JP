@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 76e4cc52-e1a0-4e0b-a2a6-a17644f6b2e7
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 49634bda487143ddd8d8806b94f6c451ccf57b75
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351318"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404975"
 ---
 # <a name="sccountprops"></a>ScCountProps
 
@@ -65,7 +65,7 @@ MAPI_E_INVALID_PARAMETER
   
 > プロパティ値配列の少なくとも1つのプロパティに PROP_ID_NULL または PROP_ID_INVALID の識別子があるか、プロパティ配列にプロパティ値を持たない複数値プロパティが含まれています。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _pcb_パラメーターで NULL が渡された場合、 **sccountprops**関数は通知の配列を検証しますが、カウントは行われません。 非 null 値が_pcb_で渡された場合、 **sccountnotifications**関数は配列のサイズを決定し、原因となった_pcb_を格納します。 _pcb_パラメーターは、配列全体を格納するのに十分な大きさである必要があります。 
   

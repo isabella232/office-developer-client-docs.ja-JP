@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 0ba7f6da-681b-b749-fe72-afbca23d7e16
 description: パスに塗りつぶしを適用するかどうかを指定します。
 ms.openlocfilehash: 301f30b644e338ff9e597a7a7d8226b9c8a4462f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357254"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415020"
 ---
 # <a name="nofill-cell-geometry-section"></a>[NoFill] セル ([Geometry] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32357254"
 | TRUE  <br/> | 図形の他のパスが塗りつぶされていても、このパスは塗りつぶされません。  <br/> |
 | FALSE  <br/> | パスが閉じていない場合でも、図形の塗りつぶしがこのパスに適用されます。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 図形の塗りつぶしパターンをゼロ (0) に設定すると、すべてのパスに対して塗りつぶしが適用されません。図形内にある特定のパスに対して塗りつぶしを適用しない場合に、このセルを使用します。
   

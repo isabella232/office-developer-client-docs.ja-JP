@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: ec3566a0-75ad-466d-a61e-f7d61ccb946d
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: b07ea265b5dcc6b9a9abb15c6be7ac9e0f94e8ed
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251599"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404681"
 ---
 # <a name="dtbledit"></a>DTBLEDIT
 
@@ -43,7 +43,7 @@ typedef struct _DTBLEDIT
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **ulblpszcharsallowed**
   
@@ -73,7 +73,7 @@ MAPI_UNICODE
   
 > PT_TSTRING 型のプロパティのプロパティタグ。 **ulPropTag**メンバーは、編集コントロールでデータを表示および編集するための文字列プロパティを識別します。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **DTBLEDIT**構造体には、英数字情報を含むダイアログボックスの領域の編集コントロールが記述されています。 ほとんどすべてのダイアログボックスには、少なくとも1つの編集コントロールがあります。 編集コントロールは、ユーザーまたは読み取り専用で変更できます。 
   

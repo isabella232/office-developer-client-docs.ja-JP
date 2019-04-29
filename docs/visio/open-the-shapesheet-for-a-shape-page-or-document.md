@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 9b456a87-d990-7ab2-d8a1-e91dca78650f
 description: '[シェイプシート] ウィンドウは、Microsoft Visio では既定では非表示になっています。 シェイプシートにアクセスするには、Visio を開発モードで実行する必要があります ([開発] タブを表示)。'
 ms.openlocfilehash: b18bca69f7acea29d3c43ff57b22b132baa9c6fe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360950"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419423"
 ---
 # <a name="open-the-shapesheet-for-a-shape-page-or-document"></a>図形、ページ、またはドキュメントのシェイプシートを開く
 

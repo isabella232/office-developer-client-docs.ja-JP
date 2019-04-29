@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 5630b446-5668-f7c1-1e34-6d4f84600f7f
 description: ユーザー固有のセルに数式を入力するための作業領域です。他のセルやアドオン ツールから参照できます。
 ms.openlocfilehash: d10336578ae5738b5ffe06cad01ae5075d3ee3dc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337136"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405577"
 ---
 # <a name="user-defined-cells-section"></a>[User-defined Cells] セクション
 
 ユーザー固有のセルに数式を入力するための作業領域です。他のセルやアドオン ツールから参照できます。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [スクラッチ](scratch-section.md)セクションと同様に、**ユーザー定義のセル**セクションは、さまざまな方法でソリューションで使用できます。 [**ユーザー定義セル**] セクションの利点は、セルに名前を付けることができるということです。**スクラッチ**セクションのセルに名前を付けることはできません。 
   

@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: f46e8aa3-d2c2-45a2-93fe-1c40107fbf16
 description: SMTP アカウントに Secure Socket Layer (SSL) プロトコルを使用するかどうかを指定します。
 ms.openlocfilehash: 64856322ec0afce80777417f781c22b927ed5e2d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328309"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407075"
 ---
 # <a name="propsmtpssl"></a>PROP_SMTP_SSL
 
@@ -27,7 +27,7 @@ SMTP アカウントに Secure Socket Layer (SSL) プロトコルを使用する
 |プロパティタグ:  <br/> |0x02020003  <br/> |
 |接続  <br/> |読み取り専用  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 ゼロ値は、ssl 暗号化を使用しないことを意味します。それ以外の場合は ssl 暗号化を使用します。
   

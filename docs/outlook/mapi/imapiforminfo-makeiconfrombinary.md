@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 4daeddd7-3f0c-4178-ae8d-f74814090d40
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 418056f7222d5ab05f43a3661c1811bf2ae15be8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342113"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405115"
 ---
 # <a name="imapiforminfomakeiconfrombinary"></a>IMAPIFormInfo::MakeIconFromBinary
 
@@ -50,7 +50,7 @@ S_OK
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 クライアントアプリケーションは、 **imapiforminfo:: makeiconfrombinary**メソッドを呼び出して、フォームのアイコンプロパティの1つからアイコンを作成します。 _npropid_パラメーターでは、 **makeiconfrombinary**は、フォームのアイコンプロパティの1つのプロパティ識別子を受け取ります。 このプロパティ識別子を使用すると、アイコンのプロパティ列を含む表ビューに表示できるアイコンが作成されます。 
   

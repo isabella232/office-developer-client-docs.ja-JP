@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 947b33c3-2acc-45d2-a89d-a712b6bc53df
 description: InfoPath フォーム テンプレートで作業する場合、フォームのビューにアクセスし、ビューに含まれるデータにさまざまな操作を行うコードを書くことができます。Microsoft.Office.InfoPath 名前空間によって提供される InfoPath オブジェクト モデルでは、View クラスのメンバーを使用して、フォームのビューにアクセスできます。
 ms.openlocfilehash: 829375a87513634ef0b38b6d92de9f33a605e89f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303543"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406298"
 ---
 # <a name="work-with-views"></a>ビューを操作する
 
@@ -26,7 +26,7 @@ InfoPath フォーム テンプレートで作業する場合、フォームの�
 > [!NOTE]
 > [View](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.aspx) クラスのメソッドとプロパティは [Loading](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Loading.aspx) イベント中には利用できません。 
   
-|**[名前]**|**[説明]**|
+|**名前**|**説明**|
 |:-----|:-----|
 |[DisableAutoUpdate](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.DisableAutoUpdate.aspx) メソッド  <br/> |フォームの基になる XML ドキュメントと、それに関連付けられているビューが自動的に同期しないようにします。  <br/> |
 |[EnableAutoUpdate](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.EnableAutoUpdate.aspx) メソッド  <br/> |フォームの基になる XML ドキュメントと、それに関連付けられているビューが自動的に同期するようにします。  <br/> |

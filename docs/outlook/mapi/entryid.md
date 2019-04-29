@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8ebb21ca-5ad1-4dcc-97b6-2390664b5d8d
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: c77acb5226361ce31a7f6b1694de7fe23f8dd71b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315989"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415272"
 ---
 # <a name="entryid"></a>ENTRYID
 
@@ -41,7 +41,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **abflags**
   
@@ -71,7 +71,7 @@ MAPI_THISSESSION
   
 > サービスプロバイダーで使用されるバイナリデータの配列を示します。 クライアントアプリケーションは、この配列を使用できません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **ENTRYID**構造体は、オブジェクトに一意の識別子を作成するために、メッセージストアとアドレス帳プロバイダーによって使用されます。 エントリ識別子は、次の種類のオブジェクトを識別するために使用されます。 
   

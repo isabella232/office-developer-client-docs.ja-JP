@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 734d4415-05dd-4c4d-763e-e035fa56dcec
 description: 図形を図面間でコピーするときにローカライズするかどうかを指定します。
 ms.openlocfilehash: ddd6041ec6531652deb38a0c16be2c741bac91a6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344578"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405675"
 ---
 # <a name="localizemerge-cell-miscellaneous-section"></a>[LocalizeMerge] セル ([Miscellaneous] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32344578"
 | TRUE  <br/> | コピー先図面の言語に図形をローカライズします。  <br/> |
 | FALSE  <br/> | コピー先の文書の言語に基づいて図形をローカライズしないようにします (既定値)。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LocalizeMerge] セルへの参照を取得するには、次の値を使用します。 
   

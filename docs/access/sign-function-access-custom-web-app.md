@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 5e818c7b-b816-43ca-a051-d5846d4694db
 description: 指定された式の正 (+1)、ゼロ (0)、または負 (-1) の記号を返します。
 ms.openlocfilehash: d02c3301728a16d533094244d0811aed70a1e9c3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307915"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404380"
 ---
 # <a name="sign-function-access-custom-web-app"></a>Sign 関数 (Access カスタム web アプリ)
 

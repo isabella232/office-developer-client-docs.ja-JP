@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 59d92820-3ff6-a73d-ffb7-d33096e904f7
 description: 親図形の原点を基準としたときの、1-d 図形の始点の x 座標を表します。
 ms.openlocfilehash: 34c1ef1b2500c78791fb4822851eb6d485d77f81
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360390"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407600"
 ---
 # <a name="beginx-cell-1-d-endpoints-section"></a>[BeginX] セル ([1-D Endpoints] セクション)
 
 親図形の原点を基準としたときの、1-d 図形の始点の*x*座標を表します。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [BeginX] セルへの参照を取得するには、次の値を使用します。 
   

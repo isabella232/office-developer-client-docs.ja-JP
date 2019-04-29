@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 96f32db2-d654-4e72-88d1-ef955e3ff42b
 description: ソーシャルネットワーク名を表す文字列を返します。
 ms.openlocfilehash: 5a6240fa6e609eec8498456fe56c83a761fadab0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285492"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406879"
 ---
 # <a name="isocialprovidersocialnetworkname"></a>ISocialProvider::SocialNetworkName
 
@@ -27,7 +27,7 @@ ms.locfileid: "32285492"
 
 ソーシャルネットワーク名を含む文字列。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 Outlook social Connector (.osc) プロバイダーは、ソーシャルネットワーク名をローカライズする必要があります。
   

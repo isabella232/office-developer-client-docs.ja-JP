@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 8946703a-aaa8-6b3f-aa68-931365db620d
 description: タスクを再配置する必要がある予定を検索するには、予定表フォルダーの予定の列挙を開始します。
 ms.openlocfilehash: cc89b3510f09bb98fd6720cb6d5ab3edeb13eac8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321946"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407271"
 ---
 # <a name="iolkapptrebaserbeginenumerateappointments"></a>IOlkApptRebaser::BeginEnumerateAppointments
 
@@ -42,7 +42,7 @@ _ppcontext_
 
 呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このタスクは、新しいスレッドで実行されます。
   

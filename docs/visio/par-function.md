@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 9caf424d-cb70-8f1a-b984-64cf776bdfb4
 description: 図形の親の座標系にある点の x, y 座標を返します。
 ms.openlocfilehash: 4e7517c4210db31f1c3f5dc8bf98185b6f4104aa
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32269945"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414509"
 ---
 # <a name="par-function"></a>PAR 関数
 
@@ -30,7 +30,7 @@ ms.locfileid: "32269945"
 |:-----|:-----|:-----|:-----|
 | _ポイント_ <br/> |必須  <br/> |**数値型 (Number),数値型 (Number)** <br/> |現在の図形の座標系にある点の座標を指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 Microsoft Visio では、1つのポイントは*x*座標と*y*座標のペアを具体化した単一の値です。 図形がグループに含まれる場合、その親はグループになります。 図形がグループに含まれない場合、その親はページになります。 
   

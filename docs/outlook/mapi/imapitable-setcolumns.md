@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9a39cf8d-df0f-493c-b272-f15c65b3f15e
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 897330feb216dbc3ab143378977c77141cf488f0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328820"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416350"
 ---
 # <a name="imapitablesetcolumns"></a>IMAPITable::SetColumns
 
@@ -62,7 +62,7 @@ MAPI_E_BUSY
   
 > 別の操作が進行中であるため、列の設定操作を開始できません。 進行中の操作が完了することを許可するか、停止する必要があります。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 table の列セットは、テーブル内の行の列を構成するプロパティのグループです。 テーブルの種類ごとに既定の列セットがあります。 既定の列セットは、テーブルの作成者が自動的に含めるプロパティで構成されます。 Table ユーザーは、 **IMAPITable:: SetColumns**メソッドを呼び出すことによって、この既定のセットを変更できます。 これらのユーザーは、テーブルの実装で列が削除されるか、列の順序が変更される場合に、他の列が既定のセットに追加されるように要求できます。 **SetColumns**各行で返される列と、行内でこれらの列の順序を指定します。 
   

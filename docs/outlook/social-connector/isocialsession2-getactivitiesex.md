@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: bfe30c22-017b-42e0-93be-c85d674c07e3
 description: hashedAddresses パラメーターによって指定された各ユーザーのアクティビティのコレクションを表す文字列を取得します。
 ms.openlocfilehash: be29d0226eb137b1ad8ed025acfe3f4958efa85f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336450"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404338"
 ---
 # <a name="isocialsession2getactivitiesex"></a>ISocialSession2::GetActivitiesEx
 
@@ -37,7 +37,7 @@ _アクティビティ_
   
 > 読み上げ_startTime_以降にソーシャルネットワーク上の_hashedAddresses_によって指定されたユーザーのアクティビティのセットを表す XML 文字列。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 .osc プロバイダーがアクティビティのオンデマンド同期をサポートしている場合、.osc 呼び出しは**GetActivitiesEx**です。 .osc は、_アクティビティ_で返された情報をメモリに格納します。 .osc がメモリでこの情報を使用して更新する方法の詳細については、「[友人とアクティビティを同期](synchronizing-friends-and-activities.md)する」を参照してください。
   

@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: e1cf9e97-101b-384f-65fe-0169c89dfccc
 description: 合成テキストの書式設定に使用するフォントの番号が含まれます。フォント番号は、ユーザーのシステムにインストールされているフォントによって異なります。
 ms.openlocfilehash: 5ec8deb59b875a01592b6d7b652204089ecf11e0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359382"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404835"
 ---
 # <a name="complexscriptfont-cell-character-section"></a>[ComplexScriptFont] セル ([Character] セクション)
 
 合成テキストの書式設定に使用するフォントの番号が含まれます。フォント番号は、ユーザーのシステムにインストールされているフォントによって異なります。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 コンプレックススクリプトのフォントサイズは、[**テキスト**] ダイアログボックスの [**フォント**] タブに表示されます ([**ホーム**] タブの [**フォント**] で矢印をクリック)。 この一覧は、[ **Microsoft Office 言語設定**] ダイアログボックスで、アジアまたはコンプレックススクリプト文字を含む言語を追加した場合にのみ表示されます。 ([**スタート**]、 **[すべてのプログラム**]、[ **microsoft office**]、[ **microsoft office ツール**]、[ **microsoft office の言語設定**] の順にクリックします。
   

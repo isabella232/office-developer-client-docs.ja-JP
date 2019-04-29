@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 7b4ca523-0703-417c-8586-c4324c200020
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 61991972fdf8674a9ffd2b790e26c7fa669df357
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328862"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407551"
 ---
 # <a name="imapitablequerysortorder"></a>IMAPITable::QuerySortOrder
 
@@ -49,7 +49,7 @@ MAPI_E_BUSY
   
 > 別の操作が進行中であるため、並べ替え順序の取得操作を開始できません。 進行中の操作が完了することを許可するか、停止する必要があります。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMAPITable:: querysortorder**メソッドは、テーブルの現在の並べ替え順序を取得します。 並べ替え順序は、 [ssortorderset](ssortorderset.md)構造で記述されます。 
   

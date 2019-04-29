@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2def89ed-e4ce-446a-8b80-132d11ae8f8b
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7abafafd3d4bd9618d85a7dac34e4556545167bb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334756"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406277"
 ---
 # <a name="iaddrbookadvise"></a>IAddrBook::Advise
 
@@ -87,7 +87,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > _lな tryid_で渡されるエントリ識別子は、プロファイル内のどのアドレス帳プロバイダーでも処理できません。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 クライアントおよびサービスプロバイダーは、**アドバイズ**メソッドを呼び出して、アドレス帳エントリの特定の種類または通知の種類を登録します。 通知の種類は、 _uleventmask_パラメーターで渡されるイベントマスクによって示されます。 
   

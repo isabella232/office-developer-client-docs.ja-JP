@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 9b5659ab-2b49-41ab-92ce-ca343e35d670
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 58215de6cc4e9e68386f8f017839752acc6e1753
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326566"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404898"
 ---
 # <a name="imapisupportregisterpreprocessor"></a>IMAPISupport::RegisterPreprocessor
 
@@ -70,7 +70,7 @@ S_OK
   
 > プリプロセッサ関数が正常に登録されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport:: registerpreprocessor プロセッサ**メソッドは、トランスポートプロバイダーサポートオブジェクトのみに実装されています。 トランスポートプロバイダーは、 **registerpreprocessor**プロセッサを呼び出してプリプロセッサ関数 ( [PreprocessMessage](preprocessmessage.md)プロトタイプに準拠する関数) を登録します。 MAPI スプーラーが呼び出す前に、プリプロセッサ関数を登録する必要があります。 
   

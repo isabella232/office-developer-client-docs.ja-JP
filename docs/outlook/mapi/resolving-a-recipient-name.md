@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 2baed391-85bd-4e88-8800-c19bc2d2d54a
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: a3faed3dda2461cab749c824fc97c2074e62375f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328673"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405867"
 ---
 # <a name="resolving-a-recipient-name"></a>受信者名の解決
 

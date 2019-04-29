@@ -7,13 +7,13 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 40161358-4d41-43cf-83c7-fdd843bec87b
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: c8bccbfeb7f04745a66831618deff490bc651b02
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278772"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415153"
 ---
 # <a name="pidtagstoreentryidemsmdbv1-canonical-property"></a>PidTagStoreEntryIdEmsmdbV1 標準プロパティ
 
@@ -30,7 +30,7 @@ microsoft exchange server 2010 または exchange server 2013 のメッセージ
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |ID プロパティ  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 Microsoft Outlook 2003 以降では、サーバー fqdn がエントリ id に統合されているため、参照用の rpc が追加されることはありません。 ただし、これによりエントリ id が長くなり、2つのエントリ id が等しいかどうかを判断するために**compareentryids**メソッドを使用する必要があるシナリオが増えます。 PR_STORE_ENTRYID_EMSMDB_V1 (PidTagStoreIdEmsbdbV1) プロパティは、microsoft Outlook 2002 (microsoft Office XP) および以前のバージョンで使用されていた Exchange Server エントリ ID の古い形式にアクセスします。 これにより、スペースを節約したり、エントリ id が等しいかどうかを判断するために必要な**compareentryids**呼び出しの数を減らしたりすることもできます。 古いエントリ id を使用してメールボックスを開くと、参照が必要な場合に追加の rpc が発生する可能性があることに注意してください。 
   

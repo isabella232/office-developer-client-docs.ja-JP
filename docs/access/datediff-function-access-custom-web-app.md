@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 1c58ee87-0f57-4643-be4d-62da815df705
 description: 指定した開始日と終了日間で超えられた、指定した日付部分境界のカウントを戻します。
 ms.openlocfilehash: 1cce8a501c5a57384372e681f903baa4f4c20bef
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280725"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415615"
 ---
 # <a name="datediff-function-access-custom-web-app"></a>DateDiff 関数 (Access カスタム web アプリ)
 
@@ -32,7 +32,7 @@ ms.locfileid: "32280725"
 | *StartDate*  <br/> |Date/Time 値に解決できる式。 *Date*引数 expression、column 式、ユーザー定義の変数または文字列リテラル。  <br/> |
 | *EndDate*  <br/> |Date/Time 値に解決できる式。 *Date*引数 expression、column 式、ユーザー定義の変数または文字列リテラル。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 The following table lists all valid  *DatePart*  arguments. 
   

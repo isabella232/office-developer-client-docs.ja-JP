@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 6f8f6af2-c7fa-4135-9532-7af5fc643b0d
 description: テンプレート変数のインスタンス (templateVariable 要素で表されます) は、アクティビティテンプレート内のアクティビティフィードアイテムのデータを指定します。
 ms.openlocfilehash: 9b37665488f0f1e2bd205fb7d4a5d2201697d7c8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329177"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404373"
 ---
 # <a name="template-variables"></a>テンプレート変数
 
@@ -56,8 +56,8 @@ Outlook Social Connector (.osc) は、Windows システムロケールに従っ�
 
 |**要素**|**説明**|
 |:-----|:-----|
-|**name** <br/> |変数の名前。 必須です。  <br/> |
-|**id** <br/> |ユーザーの一意の ID。 必須です。  <br/> |
+|**name** <br/> |変数の名前。 必須。  <br/> |
+|**id** <br/> |ユーザーの一意の ID。 必須。  <br/> |
 |**namehint** <br/> |フィードアイテムに表示する名前を指定します。 省略可能です。  <br/> |
 |**profileurl** <br/> |ユーザーの名前が存在する場合に、フィードアイテムでのユーザー名のハイパーリンクとして使用される個人のプロファイルの URL。 省略可能です。  <br/> |
 |**emailAddress** <br/> |このユーザーの連絡先情報を Outlook で更新するために使用される電子メールアドレス。 省略可能です。  <br/> |
@@ -66,23 +66,23 @@ Outlook Social Connector (.osc) は、Windows システムロケールに従っ�
 
 |**要素**|**説明**|
 |:-----|:-----|
-|**name** <br/> |変数の名前。 必須です。  <br/> |
-|**value** <br/> |このリンクの URL。 必須です。  <br/> |
+|**name** <br/> |変数の名前。 必須。  <br/> |
+|**value** <br/> |このリンクの URL。 必須。  <br/> |
 |**text** <br/> |URL 自体の代わりに表示するリンクテキスト。 省略可能です。  <br/> |
    
 ### <a name="listvariable"></a>listvariable
 
 |**要素**|**説明**|
 |:-----|:-----|
-|**name** <br/> |変数の名前。 必須です。  <br/> |
-|**listItems** <br/> |リスト内のアイテムのコンテナー。 必須です。  <br/> |
+|**name** <br/> |変数の名前。 必須。  <br/> |
+|**listItems** <br/> |リスト内のアイテムのコンテナー。 必須。  <br/> |
    
 ### <a name="picturevariable"></a>ピクチャ変数
 
 |**要素**|**説明**|
 |:-----|:-----|
-|**name** <br/> |変数の名前。 必須です。  <br/> |
-|**value** <br/> |図の URL を示します。 必須です。  <br/> |
+|**name** <br/> |変数の名前。 必須。  <br/> |
+|**value** <br/> |図の URL を示します。 必須。  <br/> |
 |**alttext** <br/> |ユーザー補助のために表示する代替テキスト、およびユーザーがマウスポインターを画像の上に移動したとき。 省略可能です。  <br/> |
 |**href** <br/> |目的のターゲットが**value**要素で指定された画像の URL ではない場合に、ユーザーがピクチャをクリックしたときに使用するハイパーリンク。 省略可能です。  <br/> |
    
@@ -90,8 +90,8 @@ Outlook Social Connector (.osc) は、Windows システムロケールに従っ�
 
 |**要素**|**説明**|
 |:-----|:-----|
-|**name** <br/> |変数の名前。 必須です。  <br/> |
-|**id** <br/> |ユーザーの一意の ID。 必須です。  <br/> |
+|**name** <br/> |変数の名前。 必須。  <br/> |
+|**id** <br/> |ユーザーの一意の ID。 必須。  <br/> |
 |**namehint** <br/> |フィードアイテムに表示する名前を指定します。 省略可能です。  <br/> |
 |**profileurl** <br/> |ユーザーの名前が存在する場合に、フィードアイテムでのユーザー名のハイパーリンクとして使用される個人のプロファイルの URL。 省略可能です。  <br/> |
 |**emailAddress** <br/> |このユーザーの連絡先情報を Outlook で更新するために使用される電子メールアドレス。 省略可能です。  <br/> |
@@ -100,7 +100,7 @@ Outlook Social Connector (.osc) は、Windows システムロケールに従っ�
 
 |**要素**|**説明**|
 |:-----|:-----|
-|**name** <br/> |変数の名前。 必須です。  <br/> |
+|**name** <br/> |変数の名前。 必須。  <br/> |
 |**value** <br/> |表示するテキストを入力します。 省略可能です。  <br/> |
    
 ## <a name="see-also"></a>関連項目

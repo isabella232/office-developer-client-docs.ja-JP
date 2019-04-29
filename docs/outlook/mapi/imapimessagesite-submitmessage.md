@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6b14c383-8bc6-4e86-bd92-0500272af40d
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 496732e334d2d39672048dd1a02346aaee4b70e1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321407"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417029"
 ---
 # <a name="imapimessagesitesubmitmessage"></a>IMAPIMessageSite::SubmitMessage
 
@@ -49,7 +49,7 @@ S_OK
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 Form オブジェクトは**IMAPIMessageSite:: submitmessage**メソッドを呼び出して、メッセージが配信のためにキューに入れられるよう要求します。 メッセージサイトは、メッセージを送信する前に、 [IPersistMessage::](ipersistmessage-handsoffmessage.md)配布用のメッセージメソッドを呼び出す必要があります。 メッセージが変更された場合、 **submitmessage**によってメッセージが保存されるため、メッセージを以前に保存しておく必要はありません。 **submitmessage**を戻すと、フォームは現在のメッセージを確認し、存在しない場合は自分自身を破棄する必要があります。 
   

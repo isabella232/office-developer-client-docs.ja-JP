@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 45bfaaaa-52cc-f8b4-68e7-8b99e5788ce1
 description: アジア系文字を含むテキストの書式設定に使用するフォントの番号が含まれます。フォント番号は、ユーザーのシステムにインストールされているフォントによって異なります。
 ms.openlocfilehash: 4af7e590a7bd0733ad622f3df259aa6c01837c4b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341330"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406592"
 ---
 # <a name="asianfont-cell-character-section"></a>[AsianFont] セル ([Character] セクション)
 
 アジア系文字を含むテキストの書式設定に使用するフォントの番号が含まれます。フォント番号は、ユーザーのシステムにインストールされているフォントによって異なります。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 アジア系フォントの一覧は、[**テキスト**] ダイアログ ボックスの [**フォント**] タブにあります (このタブを開くには、[**ホーム**] タブの [**フォント**] グループの矢印をクリックします)。この一覧が表示されるのは、[**Microsoft Office 言語設定**] ダイアログ ボックスにアジア系の文字または合成テキストが含まれている言語を追加した場合だけです (このダイアログ ボックスを開くには、[**スタート**] ボタンをクリックし、[**すべてのプログラム**]、[**Microsoft Office**]、[**Microsoft Office ツール**]、[**Microsoft Office 言語設定**] の順にクリックします)。
   

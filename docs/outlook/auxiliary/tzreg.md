@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: a353e1a3-0187-20af-b9ba-43438f6024d5
 description: 夏時間開始時、標準時への復帰時、およびサマータイムシフトの時間数を定義します。
 ms.openlocfilehash: 136ff6ad0c1a9bc2ad61ef7ba698d66d645165d8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307841"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419367"
 ---
 # <a name="tzreg"></a>TZREG
 
@@ -53,7 +53,7 @@ _stdaylightdate_
   
 > 夏時間への切り替え時間。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この構造体は**TIME_ZONE_INFORMATION**に似ています。 これは、従来のクライアントが定期的な会議のタイムゾーン情報を格納するために使用する構造です。
   

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: a8ada6fe-9963-4c25-b4b4-db77f9517368
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 62231a900dbe01ebe1e848355226c0589072cd42
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316801"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404562"
 ---
 # <a name="deregisteridleroutine"></a>DeregisterIdleRoutine
 
@@ -49,7 +49,7 @@ VOID DeregisterIdleRoutine(
 
 なし。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 クライアントアプリケーションまたはサービスプロバイダーのすべてのタスクは、有効な_ftg_パラメーターを持つ idle ルーチンを登録解除できます。 特に、アイドル状態のルーチンで自分自身を登録解除することができます。 
   

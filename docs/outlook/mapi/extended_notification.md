@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: f01fce7b-a038-4002-8bad-0e6a51ae9d05
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: a8b49d0b80102f6295f3f717fb123a6581854d5a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341119"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415720"
 ---
 # <a name="extendednotification"></a>EXTENDED_NOTIFICATION
 
@@ -41,7 +41,7 @@ typedef struct _EXTENDED_NOTIFICATION
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **ulevent**
   
@@ -55,7 +55,7 @@ typedef struct _EXTENDED_NOTIFICATION
   
 > イベント固有のパラメーターへのポインター。 使用されるパラメーターの型は**ulevent**メンバーの値に依存します。これらのパラメーターは、イベントを発行したプロバイダーによってドキュメント化されます。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **EXTENDED_NOTIFICATION**構造体は、[通知](notification.md)構造の**info**メンバに含まれている構造体の和集合のメンバーのいずれかです。 **通知**構造の**info**メンバーに**EXTENDED_NOTIFICATION**構造体が含まれている場合、**通知**構造の**uleventtype**メンバーは_fnevExtended_に設定されます。
   

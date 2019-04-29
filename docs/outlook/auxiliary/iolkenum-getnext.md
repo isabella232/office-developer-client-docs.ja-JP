@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: b387f896-c213-fc07-a12a-33917e620837
 description: 列挙子の次のアカウントを取得します。
 ms.openlocfilehash: e2ad98f7d7e71bd91d48b3824423e305baab429a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321897"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405990"
 ---
 # <a name="iolkenumgetnext"></a>IOlkEnum::GetNext
 
@@ -42,7 +42,7 @@ _ppunk_
 |S_OK  <br/> |呼び出しが成功しました。  <br/> |
 |S_FALSE  <br/> |列挙子が最後に到達しました。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 *ppunk*で指定されたインターフェイスは、 **IUnknown**から継承します。 クライアントは、( **IUnknown:: QueryInterface**を使用して) このインターフェイスを照会して、 **IOlkAccount**インターフェイスへのポインターを取得し、このアカウントの情報を取得または設定できます。 
   

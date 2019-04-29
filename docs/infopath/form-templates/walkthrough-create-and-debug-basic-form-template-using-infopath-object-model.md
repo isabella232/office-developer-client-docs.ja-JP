@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 7658705f-c062-49a1-bea6-837737df2425
 description: このトピックでは、SemiTrust 名前空間によって提供される infopath 2003 互換オブジェクトモデルで動作する、基本的な infopath マネージコードフォームテンプレートを作成する方法について説明します。
 ms.openlocfilehash: c559aedad5c62134c796196c63c1a84f70c4dc3e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303200"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414341"
 ---
 # <a name="walkthrough-create-and-debug-a-basic-form-template-using-the-infopath-object-model"></a>チュートリアル: InfoPath オブジェクトモデルを使用して基本的なフォームテンプレートを作成およびデバッグする
 

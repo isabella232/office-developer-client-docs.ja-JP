@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 9eac3b8c-532c-4312-935d-fe8b63bcaf75
 description: 使用中のテーマから値を取得します。
 ms.openlocfilehash: ba95b8a920174ee44c0349d7227258d3ee8a843c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326685"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415755"
 ---
 # <a name="themeval-function"></a>THEMEVAL 関数
 
@@ -34,7 +34,7 @@ ms.locfileid: "32326685"
 | _"theme_value"_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |値を取得するテーマの定義内のセルの名前。  <br/> |
 | _default_ <br/> |省略可能  <br/> |各種  <br/> |ドキュメントにテーマがない (テーマの定義がない) 場合の既定値。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 関数**eval**関数が引数を受け取っていない場合は、host セルのテーマ付きの値が返されます。 これは、現在のテーマの定義に格納されている値です。 ホストセルは、値を返すようにテーマ指定できる必要があります。セルにテーマが設定されていない場合、 **eval**はエラーを返します。 
   

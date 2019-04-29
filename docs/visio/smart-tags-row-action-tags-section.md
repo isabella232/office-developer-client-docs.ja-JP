@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 065c6977-c737-a4f4-effa-0fd2c98e8bbf
 description: 図形またはページに関連付けられた、単一のアクション タグの情報を格納します。 図形またはページには、各アクション タグに対して 1 つの [Smart Tags] 行があります。
 ms.openlocfilehash: 1c1591fd2d2cacfbfb350a542e6601cb2f6fbfd6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339831"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404709"
 ---
 # <a name="smart-tags-row-action-tags-section"></a>[Smart Tags] 行 ([Action Tags] セクション)
 
@@ -37,7 +37,7 @@ ms.locfileid: "32339831"
 |[説明](description-cell-action-tags-section.md) <br/> |アクション タグを説明する文字列です。  <br/> |
 |[Disabled](disabled-cell-action-tags-section.md) <br/> |アクション タグが無効かどうかを示します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
  必要に応じて [SmartTags.  必要に応じて行に*名前*を付け、わかりやすい名前を行に割り当て、セルの値を設定します。 既存の [Smart Tags] セクションにアクション タグを追加するには、行を右クリックして、ショートカット メニューの [**行の挿入**] をクリックします。 
   

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: a8d6b622-60b3-e43f-b6a1-55db561204ed
 description: 図形のテキスト ブロックにあるテキストの水平方向の配置を指定します。
 ms.openlocfilehash: a48619e2531c0a69ad63af3b88ae9f019019b1fe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360180"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414740"
 ---
 # <a name="halign-cell-paragraph-section"></a>[HAlign] セル ([Paragraph] セクション)
 
@@ -23,12 +23,12 @@ ms.locfileid: "32360180"
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
 | .0  <br/> | 左揃え  <br/> |**visHorzLeft** <br/> |
-| 1-d  <br/> | 中央  <br/> |**visHorzCenter** <br/> |
-| pbm-2  <br/> | 右揃え  <br/> |**visHorzRight** <br/> |
-| 1/3  <br/> | Justify  <br/> |**visHorzJustify** <br/> |
-| 2/4  <br/> | 均等割付  <br/> |**visHorzForce** <br/> |
+| 1   <br/> | 中央  <br/> |**visHorzCenter** <br/> |
+| 2   <br/> | 右揃え  <br/> |**visHorzRight** <br/> |
+| 3   <br/> | Justify  <br/> |**visHorzJustify** <br/> |
+| 4   <br/> | 均等割付  <br/> |**visHorzForce** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 両端揃えの場合、段落の最終行以外の各行の単語間に空白が挿入されて、テキストの左右の両端が余白に合わせて揃えられます
   

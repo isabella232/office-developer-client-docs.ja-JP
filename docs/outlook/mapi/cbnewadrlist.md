@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9ec1bbaa-7707-4239-9994-21ad1116430b
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 885cf53de45cfde4079cc2a0e7bfdca09f72b962
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329527"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404317"
 ---
 # <a name="cbnewadrlist"></a>CbNewADRLIST
 

@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 8e0a77e4-0653-4a85-b507-13440aef195b
 description: グレゴリオ暦で指定した日付のうち、日 (日にち) に相当する部分の整数を返します。
 ms.openlocfilehash: 720adaffbd97a735f6b1395e64965f972c6099cd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280692"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417470"
 ---
 # <a name="day-function-access-custom-web-app"></a>Day 関数 (Access カスタム web アプリ)
 
@@ -30,7 +30,7 @@ ms.locfileid: "32280692"
 |:-----|:-----|
 | *Date*  <br/> |日付/時刻の値に解決可能な式。 *Date*引数 expression、column 式、ユーザー定義の変数または文字列リテラル。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **Day** は、 **Datepart** (day, date) と同じ値を返します。 
   

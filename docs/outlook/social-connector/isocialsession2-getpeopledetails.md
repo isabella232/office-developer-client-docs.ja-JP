@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 8733aab9-3a8e-4924-b62f-4e871d991c72
 description: ユーザーの個人情報および画像の詳細のコレクションが含まれている文字列を返します。
 ms.openlocfilehash: 08b6eca193da59bbdc3c9d21d4dc9b6d0e0c884f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344871"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404534"
 ---
 # <a name="isocialsession2getpeopledetails"></a>ISocialSession2::GetPeopleDetails
 
@@ -33,7 +33,7 @@ _個人コレクション_
   
 > 読み上げ個人および画像の詳細のコレクションを含む XML 文字列。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 .osc プロバイダーが友人および友人以外の**GetPeopleDetails**またはハイブリッド同期をサポートしている場合、Outlook Social Connector (.osc) はを呼び出します。 
   

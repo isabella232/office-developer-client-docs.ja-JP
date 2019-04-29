@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: f23dd6f4-915b-4fe8-ab3f-6d625c7d6061
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 97021128f92af0486af1ba3125c7843eaa357648
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32350732"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406340"
 ---
 # <a name="ppropfindprop"></a>PpropFindProp
 
@@ -59,7 +59,7 @@ LPSPropValue PpropFindProp(
 
  **ppropfindprop**は、入力プロパティタグに一致するプロパティを定義する[spropvalue](spropvalue.md)構造体を返します。一致しない場合は NULL になります。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 指定したプロパティタグが PT_UNSPECIFIED 型のプロパティを示している場合、 **ppropfindprop**関数は、タグ内のプロパティ識別子に対してのみ一致を検出します。 それ以外の場合は、プロパティの型を含む property タグ全体の一致を検索し、識別されたプロパティを返します。 
   

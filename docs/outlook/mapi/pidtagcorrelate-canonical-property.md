@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: be34993e-ffcc-47f5-b2d4-95ffa707bc5c
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: ea217808a163c7f16bbaa3c5a959fd32c8cbe10c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357919"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405220"
 ---
 # <a name="pidtagcorrelate-canonical-property"></a>PidTagCorrelate 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32357919"
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |エリア:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティは、受信レポートと元の送信されたメッセージの関連付けを要求するために使用されます。 トランスポートプロバイダーは、 **PR_CORRELATE**が TRUE に設定された送信済みのメッセージを検出すると、 **PR_CORRELATE_MTSID** ([PidTagCorrelateMtsid](pidtagcorrelatemtsid-canonical-property.md)) プロパティをそのメッセージのメッセージ転送システム (MTS) 識別子に設定します。
   

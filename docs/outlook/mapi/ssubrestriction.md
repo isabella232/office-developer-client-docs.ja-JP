@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5f7012f7-060d-4f2d-bcff-2aa9f6980e71
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: e176f280cbe15b9c15697b03eb9738887c2924c9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336415"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406326"
 ---
 # <a name="ssubrestriction"></a>SSubRestriction
 
@@ -40,7 +40,7 @@ typedef struct _SSubRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **ulsubobject の**
   
@@ -58,7 +58,7 @@ PR_MESSAGE_ATTACHMENTS
   
 > [srestriction](srestriction.md)構造体へのポインター。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 サブオブジェクトの制限は、すべてのテーブルでサポートされているわけではありません。 通常、フォルダーの内容のテーブルと検索結果のフォルダーのみがサポートしています。 たとえば、サブオブジェクトの制限を使用して、特定の種類の添付ファイルまたは受信者を持つメッセージを検索します。 
   

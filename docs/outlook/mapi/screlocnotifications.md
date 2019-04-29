@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 22de5d38-7be6-48b3-90a7-bc553dcdb042
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 81da4b77f0d2162a1119b7945b1e0ceb87ba9fb8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360712"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415202"
 ---
 # <a name="screlocnotifications"></a>ScRelocNotifications
 
@@ -75,7 +75,7 @@ MAPI_E_INVALID_PARAMETER
   
 > 無効な通知が発生しました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **ScRelocNotifications**関数の_pcb_パラメーターは省略可能です。 
   

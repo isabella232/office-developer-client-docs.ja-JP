@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 519d79d4-9178-2231-c26d-aa7f31a43412
 description: シートのマスターシェイプ名を文字列として返します。または、シートにマスターシェイプがない場合は、文字列 ' master ' を返します。
 ms.openlocfilehash: 7732cf9e8b23e2fd0fc2e3f2cc8d9ef4f39fd67f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341798"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414754"
 ---
 # <a name="mastername-function"></a>MASTERNAME 関数
 

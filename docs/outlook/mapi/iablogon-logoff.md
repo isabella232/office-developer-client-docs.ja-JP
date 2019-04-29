@@ -13,11 +13,11 @@ api_type:
 ms.assetid: a36465e2-7be9-4bd6-8091-685f0a045aa9
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: af3c1f5135e90274c0251c5a0addf339c14f36c0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339299"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416399"
 ---
 # <a name="iablogonlogoff"></a>IABLogon::Logoff
 
@@ -45,7 +45,7 @@ S_OK
   
 > ログオフプロセスが正常に開始されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 ログオフプロセスは、通常、クライアントが[imapisession:: logoff](imapisession-logoff.md)メソッドを呼び出してセッションを終了するときに開始されます。 次に、MAPI は各アドレス帳プロバイダーの**IABLogon:: logoff**メソッドを呼び出して、ログオフプロセスを開始します。 
   

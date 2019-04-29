@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: d857b48b-9a3d-a1e1-5ad2-6816a492c8ab
 description: 図形の線の色を指定します。
 ms.openlocfilehash: d0b4ebee6d96bc67c9ca45e8a6194cb91ed6c7f5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359305"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416938"
 ---
 # <a name="linecolor-cell-line-format-section"></a>[LineColor] セル ([Line Format] セクション)
 
 図形の線の色を指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 線の色を設定するには、線の色のコレクション内でインデックスとなっている 0 ～ 23 の数値を入力します。線の色のコレクションは、[**線**] ダイアログ ボックスで参照できます (このダイアログ ボックスを開くには、[**ホーム**] タブの [**図形**] グループで、[**線**] をクリックし、[**太さ**] をポイントして、[**その他の線**] をクリックします)。[LineColor] の値は、[**線**] ダイアログ ボックスで設定することもできます。 
   

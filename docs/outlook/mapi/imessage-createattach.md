@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 01711aca-c598-438c-88d7-0719b6691e34
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: f534912377aadb3c342030fc02fce26693857476
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351115"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417673"
 ---
 # <a name="imessagecreateattach"></a>IMessage::CreateAttach
 
@@ -64,7 +64,7 @@ S_OK
   
 > 添付ファイルが正常に作成されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMessage:: createattach**メソッドは、メッセージに新しい添付ファイルを作成します。 新しい添付ファイルと、そのオブジェクトに設定されているすべてのプロパティは、クライアントが添付ファイルの[imapiprop:: savechanges](imapiprop-savechanges.md)メソッドと、メッセージの**imapiprop:: savechanges**メソッドの両方を呼び出すまでは使用できません。 
   

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 510b2e21-ba27-47dd-87cb-2a549e31fa28
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 2e44d824bbb5cc96c51d7ca91eb639001bc52a71
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328875"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415664"
 ---
 # <a name="imapitablequeryposition"></a>IMAPITable::QueryPosition
 
@@ -55,7 +55,7 @@ S_OK
   
 > メソッドは、 _lな行_の有効な値、l出た_分子_、および_lアウト分母_を返しました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMAPITable:: queryposition**メソッドは、現在の行の位置を決定し、現在の行の数と、テーブルの最後までの相対位置を示す小数値を返します。 MAPI は、現在の行を読み取る次の行として定義します。 
   

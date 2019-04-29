@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 70f67614-af0d-43f6-99f6-391a2f5673cb
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 9cc4e3ba77395e09a6b95e8381fa402fc3cdff61
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356533"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405157"
 ---
 # <a name="imapisupportcopymessages"></a>IMAPISupport::CopyMessages
 
@@ -92,7 +92,7 @@ MAPI_E_USER_CANCEL
   
 > ユーザーが操作をキャンセルしました。通常は、ダイアログボックスの **[キャンセル**] ボタンをクリックします。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport:: copymessages**メソッドは、メッセージストアプロバイダーサポートオブジェクトに実装されています。 メッセージストアプロバイダーは、imapisupport [:: copymessages](imapifolder-copymessages.md)を使用して、1つまたは複数のメッセージを別のフォルダーにコピーまたは移動する**imapisupport:: copymessages**を呼び出すことができます。 **imapisupport:: copymessages**呼び出しの一部として、メッセージストアプロバイダーは MAPI が進行状況インジケーターを表示するように指定できます。 
   

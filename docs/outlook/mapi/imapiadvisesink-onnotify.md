@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9eec90d3-2369-4340-86ed-0efa58918ed5
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5983ed3229f6b0053f15a614116cf5680e942587
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351444"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407362"
 ---
 # <a name="imapiadvisesinkonnotify"></a>IMAPIAdviseSink::OnNotify
 
@@ -50,7 +50,7 @@ S_OK
   
 > 通知が正常に処理されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 通知プロセスは、クライアントまたは MAPI が、特定のオブジェクトの特定の種類の通知を受信するために登録するために、サービスプロバイダーの**アドバイズ**メソッドを呼び出すと開始されます。 **advise**メソッドへのパラメーターの1つは、 [IMAPIAdviseSink](imapiadvisesinkiunknown.md)インターフェイスを実装するアドバイズシンクオブジェクトへのポインターです。 登録されている通知に対応するターゲットオブジェクトに対してイベントが発生すると、サービスプロバイダーは MAPI を使用して直接または間接的に、アドバイズシンクの**onnotify**メソッドを呼び出します。 
   

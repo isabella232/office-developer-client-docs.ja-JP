@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 75807d66-6483-2785-567c-d238067e1e52
 description: 数値のアークコサインを返します。たとえば、コサインが数値である角度です。
 ms.openlocfilehash: fbfb5f6d9879e2e398fb2ae66d8b5c8a76f9251c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283101"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405829"
 ---
 # <a name="acos-function"></a>ACOS 関数
 
@@ -24,7 +24,7 @@ ms.locfileid: "32283101"
 
 ACOS (*数値*) 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 入力値は、-1 \<= number \<= 1、または #NUM の範囲内である必要があります。 エラーを返します。 結果の\<角度は、0 = angle \<= πラジアン (0 \<= 角度\<= 180 度) の範囲です。
   

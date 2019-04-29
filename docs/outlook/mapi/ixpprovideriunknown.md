@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: d5507785-c924-4981-ae80-19709ceb054d
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0aa77ced9d0c242dcafb84ca1e1a60d02db9504a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357450"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404695"
 ---
 # <a name="ixpprovider--iunknown"></a>IXPProvider : IUnknown
 

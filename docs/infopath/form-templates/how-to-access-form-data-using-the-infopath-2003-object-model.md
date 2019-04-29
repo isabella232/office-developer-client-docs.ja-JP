@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: e0731014-f454-4417-9f90-19f3387f5776
 description: InfoPath フォームの機能を拡張しようと思うと、多くの場合、フォームの基になる XML ドキュメントに関する情報へのアクセス、XML ドキュメントに記述されているデータへのアクセス、XML ドキュメントに対する何らかの操作の実行などの処理をプログラムで行う必要が出てきます。InfoPath オブジェクト モデルでは、XDocument インターフェイスと XDocumentsCollection インターフェイスを関連させて使用することにより、フォームの基になる XML ドキュメントにアクセスしたり、その XML ドキュメントを操作したりすることができます。
 ms.openlocfilehash: 803122c6c377686a85f11cf48b76876c056f2ec1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303676"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416476"
 ---
 # <a name="access-form-data-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してフォーム データにアクセスする
 
@@ -25,7 +25,7 @@ InfoPath フォームの機能を拡張しようと思うと、多くの場合�
 
 **XDocumentsCollection** インターフェイスには、次のメソッドおよびプロパティがあります。フォームの開発者は、これらを使用することにより、コレクションに含まれている **XDocument** オブジェクトを管理できます。 
   
-|**[名前]**|**[説明]**|
+|**名前**|**説明**|
 |:-----|:-----|
 |[Close](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocuments2.Close.aspx) メソッド  <br/> |指定したフォームを閉じます。  <br/> |
 |[New](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocuments2.New.aspx) メソッド  <br/> |既存のフォームに基づいて新しいフォームを作成します。  <br/> |
@@ -39,7 +39,7 @@ InfoPath フォームの機能を拡張しようと思うと、多くの場合�
 
 **XDocument** インターフェイスには、次のメソッドとプロパティがあります。フォームの開発者は、これらを使用することにより、フォームの基になる XML ドキュメントと相互作用したり、その XML ドキュメントに対して操作を実行したりできます。 
   
-|**[名前]**|**[説明]**|
+|**名前**|**説明**|
 |:-----|:-----|
 |[GetDataVariable](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.GetDataVariable.aspx) メソッド  <br/> |指定したデータ変数の文字列値を返します。  <br/> |
 |[GetDOM](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.GetDOM.aspx) メソッド  <br/> |指定した **DataObject** オブジェクトに関連付けられている XML ドキュメント オブジェクト モデル (DOM) への参照を返します。  <br/> |

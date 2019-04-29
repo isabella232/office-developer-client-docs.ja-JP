@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 2264d026-2041-3855-2b23-553ce67ae69d
 description: 接続ポイントの種類を指定します。
 ms.openlocfilehash: a73554d9f3a3bce6a039689d2c0b192a1c5b69aa
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359585"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415237"
 ---
 # <a name="type--c-cell-connection-points-section"></a>[Type / C] セル ([Connection Points] セクション)
 
@@ -23,10 +23,10 @@ ms.locfileid: "32359585"
 |**値**|**型**|**オートメーション定数**|
 |:-----|:-----|:-----|
 |.0  <br/> |向き  <br/> |**viscnncttypeinward** <br/> |
-|1-d  <br/> |ふき  <br/> |**viscnncttypeoutward** <br/> |
-|pbm-2  <br/> |内側&amp;外側  <br/> |**visCnnctTypeInwardOutward** <br/> |
+|1   <br/> |ふき  <br/> |**viscnncttypeoutward** <br/> |
+|2   <br/> |内側&amp;外側  <br/> |**visCnnctTypeInwardOutward** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 接続ポイントの種類は、[**コネクタ**] ツールを選択し、図形を選択してから、接続ポイントを右クリックして設定することもできます。この操作は、[開発](run-in-developer-mode-display-the-developer-tab.md)モードで実行する必要があります。 
   

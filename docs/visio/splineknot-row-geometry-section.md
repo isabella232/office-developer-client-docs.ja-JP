@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 9fbae27d-4f1b-c5f7-aacb-16f359331e83
 description: スプラインのコントロールポイントに対する x 座標と y 座標、およびスプラインのノットを格納します。
 ms.openlocfilehash: 432b714772d96e0ab0861bbfb62075258404e607
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328127"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407418"
 ---
 # <a name="splineknot-row-geometry-section"></a>[SplineKnot] 行 ([Geometry] セクション)
 
@@ -28,7 +28,7 @@ ms.locfileid: "32328127"
 |[Y](y-cell-geometry-section.md) <br/> |コントロールポイントの*y*座標です。  <br/> |
 |[A](a-cell-geometry-section.md) <br/> |スプラインのノットのいずれか 1 つです (最後のノットと最初の 2 つのノットは除く)。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 Visio では、[SplineKnot] 行が後に続く [SplineStart] 行を格納する [Geometry] セクション内のスプラインの定義を表示します。[SplineStart] 行の前には、スプラインの最初のコントロール ポイントを示す別の行 (たとえば [MoveTo] 行など) が必要です。[LineTo]、[ArcTo]、[NURBSTo]、[PolylineTo]、[EllipticalArcTo] などの行は、その行のセグメントにスプラインが従う場合、[SplineStart] 行の前に置くことができます。
   

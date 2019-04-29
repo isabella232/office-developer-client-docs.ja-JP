@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 1cdc95b8-a156-4600-9e20-caaa02680e87
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1362b1131d937ef240aa1962db8c1b5116786c67
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32347783"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416833"
 ---
 # <a name="hristoragefromstream"></a>HrIStorageFromStream
 
@@ -82,7 +82,7 @@ S_OK
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 メッセージストアプロバイダーは、添付ファイル用の**IStorage**インターフェイスを使用して、 **hristoragefromstream**関数をサポートします。 ストアプロバイダーは、 **IStream**インターフェイスを実装する必要があります。 **hristoragefromstream**は、 **IStream**オブジェクトの**IStorage**インターフェイスを提供します。 _lpUnkIn_では、 **ILockBytes**または**IStream**インターフェイスのいずれかを渡すことができます。 
   

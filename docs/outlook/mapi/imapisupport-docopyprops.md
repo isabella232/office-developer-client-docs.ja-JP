@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 2446ef52-578a-4004-9719-de9b0207ccad
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 24107ae1926c8590da6a823a354eeae72d72f248
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322366"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405584"
 ---
 # <a name="imapisupportdocopyprops"></a>IMAPISupport::DoCopyProps
 
@@ -131,7 +131,7 @@ MAPI_E_UNEXPECTED_TYPE
   
 > プロパティの型が、呼び出し元が想定している型ではありません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport::D ocopyprops**メソッドは、メッセージストアプロバイダーサポートオブジェクトに実装されています。 メッセージストアプロバイダーは、 **docopyprops**を呼び出して、フォルダーとメッセージに[imapiprop:: copyprops](imapiprop-copyprops.md)メソッドを実装できます。 **docopyprops**は、 _lpincludeprops_が指すプロパティタグ配列で指定されているプロパティをコピーまたは移動します。これは、 _lpsrcobj_が指すオブジェクトに存在します。 
   

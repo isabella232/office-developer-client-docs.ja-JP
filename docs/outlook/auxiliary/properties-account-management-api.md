@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: a5204ddd-5af4-4dd8-bc83-af96ac390786
 description: このセクションでは、アカウント管理 API のプロパティについて説明します。
 ms.openlocfilehash: d0b8c06716bd2f3a3bb2941e098bd9f11ab87183
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326440"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416336"
 ---
 # <a name="properties-account-management-api"></a>プロパティ (アカウント管理 API)
 

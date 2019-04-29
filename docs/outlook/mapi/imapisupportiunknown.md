@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 92bfe604-18dd-46a1-9ae8-0b04167606bd
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6da488408d3be9464d6ae1e016d5095707d451e4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32325649"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415440"
 ---
 # <a name="imapisupport--iunknown"></a>IMAPISupport : IUnknown
 
@@ -58,7 +58,7 @@ ms.locfileid: "32325649"
 |[OpenTemplateID](imapisupport-opentemplateid.md) <br/> |外部アドレス帳プロバイダーの受信者エントリを開きます。  <br/> |
 |[OpenEntry](imapisupport-openentry.md) <br/> |オブジェクトを開き、さらにアクセスするためのインターフェイスポインターを返します。  <br/> |
 |[getoneofftable](imapisupport-getoneofftable.md) <br/> |MAPI の1回限りのテーブルへのポインター (すべてのアドレス帳プロバイダーが新しい受信者を作成するためにサポートするテンプレートのリスト) を返します。  <br/> |
-|[Address](imapisupport-address.md) <br/> |[共通のアドレス] ダイアログボックスを表示します。  <br/> |
+|[住所](imapisupport-address.md) <br/> |[共通のアドレス] ダイアログボックスを表示します。  <br/> |
 |[詳細](imapisupport-details.md) <br/> |特定のアドレス帳エントリの詳細を表示するダイアログボックスを表示します。  <br/> |
 |[newentry](imapisupport-newentry.md) <br/> |アドレス帳コンテナーまたは送信メッセージの受信者リストに、新しい受信者を直接追加します。  <br/> |
 |[doconfigpropsheet](imapisupport-doconfigpropsheet.md) <br/> |構成プロパティシートを表示します。  <br/> |
@@ -80,13 +80,13 @@ ms.locfileid: "32325649"
 |[istoragefromstream](imapisupport-istoragefromstream.md) <br/> |stream にアクセスするためのストレージオブジェクトを実装します。  <br/> |
 |[GetSvcConfigSupportObj](imapisupport-getsvcconfigsupportobj.md) <br/> |メッセージサービスサポートオブジェクトを作成します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 各アドレス帳、メッセージストア、トランスポートプロバイダー、およびメッセージサービスには、それぞれ独自のサポートオブジェクトがあります。 サービスプロバイダーとメッセージサービスは、他のインターフェイスメソッドの実装の一部として、サポートオブジェクト内のメソッドを呼び出します。 それぞれの異なるサポートオブジェクトには、呼び出し元に適用されるメソッドの実装が完全に実装されています。該当しないメソッドは MAPI_E_NO_SUPPORT を返します。 アドレス帳プロバイダーのサポートオブジェクトには、次のメソッドの実装があります。
   
 ||||
 |:-----|:-----|:-----|
-|**Address** <br/> |**CompareEntryIDs** <br/> |**createoneoff** <br/> |
+|**住所** <br/> |**CompareEntryIDs** <br/> |**createoneoff** <br/> |
 |**詳細** <br/> |**doconfigpropsheet** <br/> |**do進捗ダイアログ** <br/> |
 |**GetLastError** <br/> |**getmemallocroutines** <br/> |**getoneofftable** <br/> |
 |**istoragefromstream** <br/> |**GetSvcConfigSupportObj** <br/> |**makeinvalid** <br/> |

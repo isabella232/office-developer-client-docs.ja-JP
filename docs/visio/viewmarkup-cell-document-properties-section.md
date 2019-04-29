@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 6c956266-8266-3312-5a68-cc9d8bdb8cd9
 description: 図面ウィンドウに校正履歴を表示するかどうかを指定します。
 ms.openlocfilehash: eeccdd0d14bf28630937b0e480822abb6fb19da5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355826"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416406"
 ---
 # <a name="viewmarkup-cell-document-properties-section"></a>[ViewMarkup] セル ([Document Properties] セクション
 
@@ -25,7 +25,7 @@ ms.locfileid: "32355826"
 |TRUE  <br/> |図面ウィンドウに校正履歴を表示します。  <br/> |
 |FALSE  <br/> |校正履歴を表示しません (既定値)。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
  マークアップ追跡が有効になっている ([addmarkup] セルが true の場合)、[viewmarkup] セルは自動的に true に設定され、マークアップの追跡がオフになっても true のままとなります ([addmarkup] セルは FALSE です)。 [AddMarkup] セルが TRUE の場合、[ViewMarkup] セル内の値は無視されます。 
   

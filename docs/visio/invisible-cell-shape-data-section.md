@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 5f368c2e-2a40-38ee-3568-ed5c57633345
 description: '[図形データ] ウィンドウに、図形データ項目を表示するかどうかを指定します。'
 ms.openlocfilehash: 8671fcc249b7ca81c011f697721093e7842c1558
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357268"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405318"
 ---
 # <a name="invisible-cell-shape-data-section"></a>[Invisible] セル ([Shape Data] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32357268"
 | TRUE  <br/> | 図形データ項目を表示しません。  <br/> |
 | FALSE  <br/> | 図形データ項目を表示します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルの値は、[**図形データの定義**] ダイアログ ボックスの [**表示しない**] チェック ボックスに対応しています (このダイアログ ボックスを開くには、図形を右クリックし、[**データ**] をポイントして、[**図形データの定義**] をクリックします)。
   

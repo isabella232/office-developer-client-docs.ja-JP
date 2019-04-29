@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: b96dd8f6-e648-4014-8a1d-ae1da771c439
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5e2ce756baaefef7bd0028e746b1dbe10756365e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329043"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415167"
 ---
 # <a name="imapitableexpandrow"></a>IMAPITable::ExpandRow
 
@@ -74,7 +74,7 @@ MAPI_E_NOT_FOUND
   
 > _pbInstanceKey_パラメーターで指定された行が存在しません。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMAPITable:: expandrow**メソッドは、折りたたまれたテーブルカテゴリを展開し、そのカテゴリに属するリーフまたは下位レベルの見出し行をテーブルビューに追加します。 _lpprows_パラメーターで返される行数の制限は、 _ulrowcount_パラメーターで指定できます。 _ulrowcount_が0より大きい値に設定されている場合に、 _lpprows_が指す行セットで1つ以上の行が返されると、bookmark BOOKMARK_CURRENT の位置は、行セットの最後の行の直後の行に移動します。
   

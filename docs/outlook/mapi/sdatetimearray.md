@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6a0dff65-1055-487c-9d15-4cfe336f2ad7
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9d9fd04776742383f40c6989bcf588b24b33d84b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339796"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406781"
 ---
 # <a name="sdatetimearray"></a>SDateTimeArray
 
@@ -40,7 +40,7 @@ typedef struct _SDateTimeArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **cvalues**
   
@@ -50,7 +50,7 @@ typedef struct _SDateTimeArray
   
 > 時刻の値を含む[FILETIME](filetime.md)構造体の配列へのポインター。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 PT_MV_SYSTIME の詳細については、「[プロパティの種類の一覧](property-types.md)」を参照してください。
   

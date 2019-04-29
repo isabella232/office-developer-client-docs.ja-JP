@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 73b68614-6aca-4669-b879-5631c5d6483c
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5256efbff734d4555ac263dd330e3349c789cd74
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287469"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406977"
 ---
 # <a name="dtblcombobox"></a>DTBLCOMBOBOX
 
@@ -44,7 +44,7 @@ typedef struct _DTBLCOMBOBOX
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **ulblpszcharsallowed**
   
@@ -78,7 +78,7 @@ MAPI_UNICODE
   
 > **openproperty**呼び出しを使用して**IMAPITable**インターフェイスを開くことができる、PT_OBJECT 型のプロパティのプロパティタグ。 このテーブルには、 **ulprpropertyname**メンバーによって識別されるプロパティと同じ型のプロパティを持つ1つの列が必要です。 表の行は、リストを作成するために使用されます。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **dtblcombobox**構造体は、リストと選択フィールドで構成されるコントロールをコンボボックスに記述します。 一覧には、ユーザーが選択できる情報が表示され、選択フィールドに現在の選択範囲が表示されます。 選択フィールドは、リストにまだ含まれていないテキストの入力にも使用できる編集コントロールです。 
   

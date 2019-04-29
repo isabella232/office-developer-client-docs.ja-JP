@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 12cfe096-6882-c0be-b248-87567cb71e83
 description: 必要な同期タスクを決定するために Outlook で使用するトランスポート設定を表し、アカウントがサポートしていないユーザーインターフェイス (UI) 要素を無効にします。
 ms.openlocfilehash: 707306c3bfbeebdd18f82bacfc121274be08aa50
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326482"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404527"
 ---
 # <a name="propmapitransportflags"></a>PROP_MAPI_TRANSPORT_FLAGS
 
@@ -29,7 +29,7 @@ ms.locfileid: "32326482"
 |プロパティタグ:  <br/> |0x20100102  <br/> |
 |接続  <br/> |読み取り/書き込み  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [IOlkAccount:: getprop](iolkaccount-getprop.md)または[IOlkAccount:: setprop](iolkaccount-setprop.md)を使用して、このプロパティを取得または設定します。
   

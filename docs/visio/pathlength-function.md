@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 6f47ea08-fb5e-7d48-e84a-2a6570564924
 description: 指定した [Geometry] セクションで定義されているパスの長さを返します。
 ms.openlocfilehash: e4f90c2bb886f54164bedab5f8d78fc528758414
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344416"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405850"
 ---
 # <a name="pathlength-function"></a>PATHLENGTH 関数
 
@@ -38,7 +38,7 @@ pathlength (* * *section* * * * * *[, segment]* * *)
 
  **倍精度浮動小数点型 (Double)**
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _セクション_または_セグメント_が存在しない場合は、#REF! が返されます。 
   

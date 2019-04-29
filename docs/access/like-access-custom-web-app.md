@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: decdd8fc-2184-4d97-b918-3ef6ab1ab40b
 description: 指定した文字列が指定したパターンと一致するかどうかを判定します。 パターンには、標準文字とワイルドカード文字を含めることができます。パターン検索時、標準文字は文字列に指定された文字と正確に一致する必要があります。ワイルドカード文字は文字列の任意の部分と一致することができます。 = や != などの文字列比較演算子を使用する場合と比べて、ワイルドカード文字を使用する方がより柔軟に LIKE 演算子を使用できます。
 ms.openlocfilehash: 02d1e4f8fc61335e828a1f77579c14b1c7577485
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32311082"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406116"
 ---
 # <a name="like-access-custom-web-app"></a>LIKE (Access カスタム web アプリ)
 
@@ -33,7 +33,7 @@ ms.locfileid: "32311082"
 | *Pattern*  <br/> |はい  <br/> |*式*で検索する特定の文字の文字列。 ワイルドカード文字を含めることができます。 有効なワイルドカード文字については、「解説」を参照してください。  <br/> |
 | *EscapeChar*  <br/> |いいえ  <br/> |ワイルドカード文字をワイルドカードではなく標準文字として解釈するために、ワイルドカードの前に配置する文字です。  *EscapeChar*は、既定値を持たず、1つの文字にのみ評価する必要がある文字式です。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 次の表に、 *Pattern*  引数の中で使用できるワイルドカード文字を示します。 
   

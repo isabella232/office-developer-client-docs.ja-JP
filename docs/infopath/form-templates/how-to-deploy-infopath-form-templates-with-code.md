@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: ab66e26d-74ee-4211-b387-1385183a6803
 description: InfoPath のマネージ コード フォーム テンプレートのフォーム コードは、共通言語ランタイム (CLR) の下で実行されるアセンブリとしてコンパイルされます。これは、フォーム コードを変更するときには、常に、Visual Studio 2012 でプロジェクトを開き、コード エディターで編集し、フォーム テンプレートを再コンパイルして、フォーム テンプレートを再展開する必要があることを意味します。さらに、マネージ コード フォーム テンプレートのプライベート アセンブリは、ホストされる CLR アプリケーション ドメインで実行されるので、完全な信頼を必要とするフォームのセキュリティ設定は、完全な信頼を必要としないフォーム テンプレートとは若干異なります。
 ms.openlocfilehash: ba3629e786a224ea950e78bbec9a9fe94d4499de
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303627"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406900"
 ---
 # <a name="deploy-infopath-form-templates-with-code"></a>コードを含む InfoPath フォーム テンプレートを展開する
 

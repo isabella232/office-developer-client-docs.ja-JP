@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: e03c5a87-4513-2133-ae0a-11d242f80e4b
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 6c5480a8f5e008c01c7ab8141317f5f19547ab10
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32270295"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414768"
 ---
 # <a name="mapiofflinenotify"></a>MAPIOFFLINE_NOTIFY
 
@@ -42,7 +42,7 @@ typedef struct
 } MAPIOFFLINE_NOTIFY;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  _ulsize_
   
@@ -82,7 +82,7 @@ typedef struct
     
    - MAPIOFFLINE_STATE_ONLINE
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 オフライン状態 API は、オンライン/オフラインの変更についてのみ通知をサポートしています。 クライアントは、実際の変更を検査する前に、Outlook が次の値を返すことを確認する必要があります。
   

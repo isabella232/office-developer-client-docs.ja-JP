@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 22005976-37c0-d2be-8e34-8aee8458e4be
 description: datetime または expression の秒の部分を表す 0 ~ 59 の整数を返します。
 ms.openlocfilehash: c23bbded12a3886fe3bd4dd2a3c3ba1bd6d11619
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332789"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404877"
 ---
 # <a name="second-function-visioshapesheet"></a>SECOND 関数 (VisioShapeSheet)
 
@@ -30,13 +30,13 @@ _datetime_または_expression_の秒の部分を表す 0 ~ 59 の整数を返�
 |:-----|:-----|:-----|:-----|
 | _datetime_ <br/> |必須  <br/> |**String** <br/> |日付および時刻として一般的に認識される任意の文字列、または日付および時刻を含んだセルに対する参照を指定します。  <br/> |
 | _expression_ <br/> |必須  <br/> |**String** <br/> | 日付および時刻を算出する式を指定します。  <br/> |
-| _lcid_ <br/> |省略可能  <br/> |**数値型 (Numeric)** <br/> |非現地_日付_を評価するときに使用するロケール識別子を指定します。 ロケール識別子は、システムのヘッダー ファイルに記述されている数字です。  <br/> |
+| _lcid_ <br/> |省略可能  <br/> |**数値** <br/> |非現地_日付_を評価するときに使用するロケール識別子を指定します。 ロケール識別子は、システムのヘッダー ファイルに記述されている数字です。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
 整数
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _datetime_または_expression_の日付コンポーネントは破棄されます。 
   

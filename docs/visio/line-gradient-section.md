@@ -8,17 +8,17 @@ localization_priority: Normal
 ms.assetid: 3ef39ca1-ffc0-4ec0-8697-7b4ea7406fa4
 description: 図形に適用される線のグラデーションの色の値を表示します。
 ms.openlocfilehash: 3ebee7eb7cfcb14beb12e26508375e4488e379d5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359333"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415454"
 ---
 # <a name="line-gradient-section"></a>[線のグラデーション] セクション
 
 図形に適用される線のグラデーションの色の値を表示します。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 セクションの [[グラデーションの分岐点] 行 ([線のグラデーション] セクション)](gradient-stop-row-line-gradient-section.md)行は、線のグラデーションの分岐点を表します。 このセクションは空にできます。 
   

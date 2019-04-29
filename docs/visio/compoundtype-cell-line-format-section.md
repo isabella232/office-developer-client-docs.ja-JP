@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 3e2a88ad-d92c-4550-8da3-fa7fdd032e73
 description: 図形の線の複合型を指定します。
 ms.openlocfilehash: 120975e419656234266cb8151b2fa37ef19602e5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359371"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407173"
 ---
 # <a name="compoundtype-cell-line-format-section"></a>[CompoundType] セル ([線の形式] セクション)
 
@@ -21,12 +21,12 @@ ms.locfileid: "32359371"
 |**値**|**説明**|
 |:-----|:-----|
 |.0  <br/> |Simple/標準  <br/> |
-|1-d  <br/> |倍精度浮動小数点数  <br/> |
-|pbm-2  <br/> |太線 (細)  <br/> |
-|1/3  <br/> |細い太線  <br/> |
-|2/4  <br/> |Triple  <br/> |
+|1   <br/> |2 行分  <br/> |
+|2   <br/> |太線 (細)  <br/> |
+|3   <br/> |細い太線  <br/> |
+|4   <br/> |Triple  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式から、 **cell**要素の**N**属性の値によって、または**CellsU**プロパティを使用したプログラムから、名前によって [ **[compoundtype]** ] セルへの参照を取得するには、次の値を使用します。 
   

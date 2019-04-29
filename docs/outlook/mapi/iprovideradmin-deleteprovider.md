@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 0065b50f-95f6-4af1-81c2-a73e5111eecf
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 28dbbb98c9810bb688b9ecdd730ef6c4ada5f60b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279550"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404863"
 ---
 # <a name="iprovideradmindeleteprovider"></a>IProviderAdmin::DeleteProvider
 
@@ -49,7 +49,7 @@ MAPI_E_NOT_FOUND
   
 > _lpuid_パラメーターが指す**MAPIUID**が認識されませんでした。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IProviderAdmin::D eleteprovider**メソッドは、メッセージサービスからサービスプロバイダーを削除します。 **deleteprovider**は、アクティブなサービスプロバイダによって登録された一連の識別子を使用して、 _lpuid_が指す**MAPIUID**構造を照合することによって、削除するサービスプロバイダーを決定します。 
   

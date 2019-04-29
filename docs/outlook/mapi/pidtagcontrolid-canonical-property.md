@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 281bc3e0-7c69-461b-bf09-4281abbb5e1b
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: b27f59e0bfdcac8eca1751af2f07139f12e2b3a7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334742"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416021"
 ---
 # <a name="pidtagcontrolid-canonical-property"></a>PidTagControlId 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32334742"
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |MAPI 表示テーブル  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティには、コントロールの一意の識別子が含まれています。 この識別子には、 [GUID](guid.md)構造と、 **LONG**型のバイナリ値を含める必要があります。 ダイアログボックス内のすべてのコントロールは、同じ**GUID**を使用してサービスプロバイダーを識別する必要があり、各コントロールは固有の**LONG**値を使用して、コントロールが競合しないようにする必要があります。 
   

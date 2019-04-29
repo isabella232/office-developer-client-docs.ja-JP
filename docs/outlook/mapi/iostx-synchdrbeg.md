@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 7f8ca7cf-ac0b-9b77-c1dd-9f1d0871d603
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 49ef9862d5156a1bed242652df32baab9a0123fc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317158"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405094"
 ---
 # <a name="iostxsynchdrbeg"></a>IOSTX::SyncHdrBeg
 
@@ -49,7 +49,7 @@ HRESULT SyncHdrBeg(
   
 >  [in]/[out] メッセージヘッダーの**[HDRSYNC](hdrsync.md)** 構造体へのポインター。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **iostx:: SyncHdrBeg**では、ローカルストアは、[メッセージヘッダーのダウンロード状態](download-message-header-state.md)に移行します。 Outlook は、ストア内の現在のメッセージヘッダーと親フォルダーを使用して、クライアントの**HDRSYNC**構造を初期化します。 クライアントは、完全なメッセージアイテム ( **HDRSYNC**では*pmsgfull*として) をダウンロードする必要があります。 これが成功した場合、クライアントは**HSF_OK**として**HDRSYNC**の*ulflags*も設定します。 **[iostx:: SyncHdrEnd](iostx-synchdrend.md)** では、Outlook が**HDRSYNC**で結果をチェックし、 **HDRSYNC**の情報を使用してローカルメッセージヘッダーを更新します。 
   

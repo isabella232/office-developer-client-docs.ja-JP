@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 612cbab7-60cb-48bb-906e-18d9135e7a86
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 544aaaace18a9d26972e6484803b63a1ee7060fc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317284"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416301"
 ---
 # <a name="imslogonopenentry"></a>IMSLogon::OpenEntry
 
@@ -82,7 +82,7 @@ S_OK
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 MAPI は**IMSLogon:: openentry**メソッドを呼び出して、メッセージストア内のフォルダーまたはメッセージを開きます。 MAPI は、開くオブジェクトのエントリ識別子に渡されます。 メッセージストアプロバイダーは、 _lppunk_パラメーターで指定されたオブジェクトへのアクセスを可能にするポインターを返す必要があります。 
   

@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: eab68d7a-e281-fc2e-5531-91e7a4e1485f
 description: sheetref で指定されるシート (図形) の参照、または現在のシートの参照 (sheetref 修飾子がない場合) を返します。
 ms.openlocfilehash: 2c6441b5e984557035271de7d84d42078ac87804
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342834"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405185"
 ---
 # <a name="sheetref-function"></a>SHEETREF 関数
 
@@ -31,7 +31,7 @@ sheet _ref_で指定されたシート (shape) への参照、または現在の
 
 シェイプシート参照
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 シート参照トークンを使用する他の関数でもこの関数を使用できます。
   

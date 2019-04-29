@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: a95fd86d-ebc1-66b6-e7d9-9c8ea84d23ab
 description: 色の赤の要素を返します。
 ms.openlocfilehash: e8c6115ac0441b25ce8333485828e8ef0f615459
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359984"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415524"
 ---
 # <a name="red-function"></a>RED 関数
 
@@ -32,9 +32,9 @@ ms.locfileid: "32359984"
    
 ### <a name="return-value"></a>戻り値
 
-番号
+数値
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 戻り値は、0 ～ 255 の数値、またはインデックスを判別するセル参照になります。 _式_が無効な場合、この関数は 0 (黒) を返します。 
   

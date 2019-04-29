@@ -9,11 +9,11 @@ api_type:
 ms.assetid: df0db1e4-69c8-44ec-bb2a-d31fc8a564b9
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 78a13bacf13b019bbf9436830ad66db7fdfaf425
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356963"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415468"
 ---
 # <a name="message-services-and-profiles"></a>メッセージ サービスとプロファイル
   
@@ -60,5 +60,5 @@ mapisvc.inf ファイルには、コンピューターにインストールさ�
 ## <a name="see-also"></a>関連項目
 
 - [MAPIUID](mapiuid.md)
-- [MAPI �v���O���~���O�̊T�v](mapi-programming-overview.md)
+- [MAPI プログラミングの概要](mapi-programming-overview.md)
 
