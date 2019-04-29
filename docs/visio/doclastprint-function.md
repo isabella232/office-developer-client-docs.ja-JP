@@ -10,22 +10,22 @@ localization_priority: Normal
 ms.assetid: 9587283b-4f4d-0ad6-34aa-58e2001f085e
 description: ドキュメントが最後に印刷された日付と時刻をシリアル値として返します。
 ms.openlocfilehash: 3198b98b58e2b68e58ae16643e396e1a91635940
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334406"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433641"
 ---
-# <a name="doclastprint-function"></a><span data-ttu-id="ddc93-103">DOCLASTPRINT 関数</span><span class="sxs-lookup"><span data-stu-id="ddc93-103">DOCLASTPRINT Function</span></span>
+# <a name="doclastprint-function"></a><span data-ttu-id="49fab-103">DOCLASTPRINT 関数</span><span class="sxs-lookup"><span data-stu-id="49fab-103">DOCLASTPRINT Function</span></span>
 
-<span data-ttu-id="ddc93-104">ドキュメントが最後に印刷された日付と時刻をシリアル値として返します。</span><span class="sxs-lookup"><span data-stu-id="ddc93-104">Returns the date and time a document was last printed, as a serial value.</span></span>
+<span data-ttu-id="49fab-104">ドキュメントが最後に印刷された日付と時刻をシリアル値として返します。</span><span class="sxs-lookup"><span data-stu-id="49fab-104">Returns the date and time a document was last printed, as a serial value.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="ddc93-105">構文</span><span class="sxs-lookup"><span data-stu-id="ddc93-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="49fab-105">構文</span><span class="sxs-lookup"><span data-stu-id="49fab-105">Syntax</span></span>
 
-<span data-ttu-id="ddc93-106">DOCLASTPRINT ()</span><span class="sxs-lookup"><span data-stu-id="ddc93-106">DOCLASTPRINT ()</span></span>
+<span data-ttu-id="49fab-106">DOCLASTPRINT ()</span><span class="sxs-lookup"><span data-stu-id="49fab-106">DOCLASTPRINT ()</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="ddc93-107">解説</span><span class="sxs-lookup"><span data-stu-id="ddc93-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="49fab-107">注釈</span><span class="sxs-lookup"><span data-stu-id="49fab-107">Remarks</span></span>
 
-<span data-ttu-id="ddc93-108">戻り値を書式設定するには、FORMAT 関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="ddc93-108">Use the FORMAT function to format the value.</span></span> 
+<span data-ttu-id="49fab-108">戻り値を書式設定するには、FORMAT 関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="49fab-108">Use the FORMAT function to format the value.</span></span> 
   
 

@@ -10,18 +10,18 @@ localization_priority: Normal
 ms.assetid: 8bca3efa-1f0d-6f60-537c-c9f976737dcf
 description: 図面のプロパティの [会社名] フィールドのテキストを返します。
 ms.openlocfilehash: c8a33c5cc82353b887d2fc7da358270e124c21ab
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359350"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412703"
 ---
-# <a name="company-function"></a><span data-ttu-id="bee05-103">COMPANY 関数</span><span class="sxs-lookup"><span data-stu-id="bee05-103">COMPANY Function</span></span>
+# <a name="company-function"></a><span data-ttu-id="64a47-103">COMPANY 関数</span><span class="sxs-lookup"><span data-stu-id="64a47-103">COMPANY Function</span></span>
 
-<span data-ttu-id="bee05-104">図面のプロパティの [**会社名**] フィールドのテキストを返します。</span><span class="sxs-lookup"><span data-stu-id="bee05-104">Returns the text from the **Company** field of a document's properties.</span></span> 
+<span data-ttu-id="64a47-104">図面のプロパティの [**会社名**] フィールドのテキストを返します。</span><span class="sxs-lookup"><span data-stu-id="64a47-104">Returns the text from the **Company** field of a document's properties.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="bee05-105">構文</span><span class="sxs-lookup"><span data-stu-id="bee05-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="64a47-105">構文</span><span class="sxs-lookup"><span data-stu-id="64a47-105">Syntax</span></span>
 
-<span data-ttu-id="bee05-106">COMPANY ()</span><span class="sxs-lookup"><span data-stu-id="bee05-106">COMPANY ()</span></span>
+<span data-ttu-id="64a47-106">COMPANY ()</span><span class="sxs-lookup"><span data-stu-id="64a47-106">COMPANY ()</span></span>
   
 

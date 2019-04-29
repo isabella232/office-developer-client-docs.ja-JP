@@ -10,37 +10,37 @@ localization_priority: Normal
 ms.assetid: 47bb268f-acdd-7369-716c-bd51a32b8a49
 description: レイヤーに属する図形に対する選択操作や編集操作をロックするかどうかを指定します。
 ms.openlocfilehash: d548a6f0fe0cac10d80d73c904739b2979ecf27f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359683"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438828"
 ---
-# <a name="lock-cell-layers-section"></a><span data-ttu-id="95dac-103">[Lock] セル ([Layers] セクション)</span><span class="sxs-lookup"><span data-stu-id="95dac-103">Lock Cell (Layers Section)</span></span>
+# <a name="lock-cell-layers-section"></a><span data-ttu-id="345b1-103">[Lock] セル ([Layers] セクション)</span><span class="sxs-lookup"><span data-stu-id="345b1-103">Lock Cell (Layers Section)</span></span>
 
-<span data-ttu-id="95dac-104">レイヤーに属する図形に対する選択操作や編集操作をロックするかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="95dac-104">Specifies whether shapes belonging to the layer are locked against being selected or edited.</span></span>
+<span data-ttu-id="345b1-104">レイヤーに属する図形に対する選択操作や編集操作をロックするかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="345b1-104">Specifies whether shapes belonging to the layer are locked against being selected or edited.</span></span>
   
-|<span data-ttu-id="95dac-105">**値**</span><span class="sxs-lookup"><span data-stu-id="95dac-105">**Value**</span></span>|<span data-ttu-id="95dac-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="95dac-106">**Description**</span></span>|
+|<span data-ttu-id="345b1-105">**値**</span><span class="sxs-lookup"><span data-stu-id="345b1-105">**Value**</span></span>|<span data-ttu-id="345b1-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="345b1-106">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="95dac-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="95dac-107">TRUE</span></span>  <br/> |<span data-ttu-id="95dac-108">図形をロックします。</span><span class="sxs-lookup"><span data-stu-id="95dac-108">Shapes are locked.</span></span>  <br/> |
-|<span data-ttu-id="95dac-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="95dac-109">FALSE</span></span>  <br/> |<span data-ttu-id="95dac-110">図形をロックしません。</span><span class="sxs-lookup"><span data-stu-id="95dac-110">Shapes are not locked.</span></span>  <br/> |
+|<span data-ttu-id="345b1-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="345b1-107">TRUE</span></span>  <br/> |<span data-ttu-id="345b1-108">図形をロックします。</span><span class="sxs-lookup"><span data-stu-id="345b1-108">Shapes are locked.</span></span>  <br/> |
+|<span data-ttu-id="345b1-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="345b1-109">FALSE</span></span>  <br/> |<span data-ttu-id="345b1-110">図形をロックしません。</span><span class="sxs-lookup"><span data-stu-id="345b1-110">Shapes are not locked.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="95dac-111">解説</span><span class="sxs-lookup"><span data-stu-id="95dac-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="345b1-111">注釈</span><span class="sxs-lookup"><span data-stu-id="345b1-111">Remarks</span></span>
 
-<span data-ttu-id="95dac-112">この値は、[**レイヤー プロパティ**] ダイアログ ボックスの [**ロック**] を選択して設定することもできます (このダイアログ ボックスを開くには、[**ホーム**] タブの [**編集**] グループで、[**レイヤー**] をクリックして、[**レイヤー プロパティ**] をクリックします)。</span><span class="sxs-lookup"><span data-stu-id="95dac-112">You can also set this value by selecting **Lock** in the **Layer Properties** dialog box (on the **Home** tab, in the **Editing** group, click **Layers**, and then click **Layer Properties**).</span></span>
+<span data-ttu-id="345b1-112">この値は、[**レイヤー プロパティ**] ダイアログ ボックスの [**ロック**] を選択して設定することもできます (このダイアログ ボックスを開くには、[**ホーム**] タブの [**編集**] グループで、[**レイヤー**] をクリックして、[**レイヤー プロパティ**] をクリックします)。</span><span class="sxs-lookup"><span data-stu-id="345b1-112">You can also set this value by selecting **Lock** in the **Layer Properties** dialog box (on the **Home** tab, in the **Editing** group, click **Layers**, and then click **Layer Properties**).</span></span>
   
-<span data-ttu-id="95dac-113">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Lock] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="95dac-113">To get a reference to the Lock cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="345b1-113">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Lock] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="345b1-113">To get a reference to the Lock cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="95dac-114">セル名:</span><span class="sxs-lookup"><span data-stu-id="95dac-114">Cell name:</span></span>  <br/> |<span data-ttu-id="95dac-115">ロック [ *i* ] *i* = <1>、2、3...</span><span class="sxs-lookup"><span data-stu-id="95dac-115">Layers.Locked[ *i*  ] where  *i*  = <1>, 2, 3...</span></span>  <br/> |
+|<span data-ttu-id="345b1-114">セル名:</span><span class="sxs-lookup"><span data-stu-id="345b1-114">Cell name:</span></span>  <br/> |<span data-ttu-id="345b1-115">ロック [ *i* ] *i* = <1>、2、3...</span><span class="sxs-lookup"><span data-stu-id="345b1-115">Layers.Locked[ *i*  ] where  *i*  = <1>, 2, 3...</span></span>  <br/> |
    
-<span data-ttu-id="95dac-116">プログラムから、インデックスによって [Lock] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="95dac-116">To get a reference to the Lock cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="345b1-116">プログラムから、インデックスによって [Lock] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="345b1-116">To get a reference to the Lock cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="95dac-117">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="95dac-117">Section index:</span></span>  <br/> |<span data-ttu-id="95dac-118">**visSectionLayer**</span><span class="sxs-lookup"><span data-stu-id="95dac-118">**visSectionLayer**</span></span> <br/> |
-|<span data-ttu-id="95dac-119">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="95dac-119">Row index:</span></span>  <br/> |<span data-ttu-id="95dac-120">**visRowLayer** +  *i* = \*\* 0、1、2...</span><span class="sxs-lookup"><span data-stu-id="95dac-120">**visRowLayer** +  *i*  where  *i*  = 0, 1, 2...</span></span>  <br/> |
-|<span data-ttu-id="95dac-121">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="95dac-121">Cell index:</span></span>  <br/> |<span data-ttu-id="95dac-122">**visLayerLock**</span><span class="sxs-lookup"><span data-stu-id="95dac-122">**visLayerLock**</span></span> <br/> |
+|<span data-ttu-id="345b1-117">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="345b1-117">Section index:</span></span>  <br/> |<span data-ttu-id="345b1-118">**visSectionLayer**</span><span class="sxs-lookup"><span data-stu-id="345b1-118">**visSectionLayer**</span></span> <br/> |
+|<span data-ttu-id="345b1-119">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="345b1-119">Row index:</span></span>  <br/> |<span data-ttu-id="345b1-120">**visRowLayer** +  *i* = \*\* 0、1、2...</span><span class="sxs-lookup"><span data-stu-id="345b1-120">**visRowLayer** +  *i*  where  *i*  = 0, 1, 2...</span></span>  <br/> |
+|<span data-ttu-id="345b1-121">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="345b1-121">Cell index:</span></span>  <br/> |<span data-ttu-id="345b1-122">**visLayerLock**</span><span class="sxs-lookup"><span data-stu-id="345b1-122">**visLayerLock**</span></span> <br/> |
    
 

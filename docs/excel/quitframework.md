@@ -12,33 +12,33 @@ localization_priority: Normal
 ms.assetid: d17a3efe-c278-4ef1-b8f9-b958ae012361
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 9408a7938927214802935e54ec8e53b1469e5016
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301625"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408573"
 ---
-# <a name="quitframework"></a><span data-ttu-id="ed33a-104">QuitFramework</span><span class="sxs-lookup"><span data-stu-id="ed33a-104">QuitFramework</span></span>
+# <a name="quitframework"></a><span data-ttu-id="5c4a3-104">QuitFramework</span><span class="sxs-lookup"><span data-stu-id="5c4a3-104">QuitFramework</span></span>
 
- <span data-ttu-id="ed33a-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="ed33a-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
+ <span data-ttu-id="5c4a3-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="5c4a3-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
   
-<span data-ttu-id="ed33a-106">フレームワーク ライブラリを初期化しないフレームワーク ライブラリ関数。これは単に、既に割り当てられているメモリを解放して、一時 **XLOPER**/ **XLOPER12** のメモリ データ構造を再初期化します。</span><span class="sxs-lookup"><span data-stu-id="ed33a-106">Framework library function that uninitializes the Framework library, which simply re-initializes the temporary **XLOPER**/ **XLOPER12** memory data structures, freeing any memory that has already been allocated.</span></span> 
+<span data-ttu-id="5c4a3-106">フレームワーク ライブラリを初期化しないフレームワーク ライブラリ関数。これは単に、既に割り当てられているメモリを解放して、一時 **XLOPER**/ **XLOPER12** のメモリ データ構造を再初期化します。</span><span class="sxs-lookup"><span data-stu-id="5c4a3-106">Framework library function that uninitializes the Framework library, which simply re-initializes the temporary **XLOPER**/ **XLOPER12** memory data structures, freeing any memory that has already been allocated.</span></span> 
   
 ```cs
 short WINAPI QuitFramework(void);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="ed33a-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed33a-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="5c4a3-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5c4a3-107">Parameters</span></span>
 
-<span data-ttu-id="ed33a-108">この関数に引数はありません。</span><span class="sxs-lookup"><span data-stu-id="ed33a-108">This function takes no arguments.</span></span>
+<span data-ttu-id="5c4a3-108">この関数に引数はありません。</span><span class="sxs-lookup"><span data-stu-id="5c4a3-108">This function takes no arguments.</span></span>
   
-## <a name="property-valuereturn-value"></a><span data-ttu-id="ed33a-109">プロパティ値/戻り値</span><span class="sxs-lookup"><span data-stu-id="ed33a-109">Property value/Return value</span></span>
+## <a name="property-valuereturn-value"></a><span data-ttu-id="5c4a3-109">プロパティ値/戻り値</span><span class="sxs-lookup"><span data-stu-id="5c4a3-109">Property value/Return value</span></span>
 
-<span data-ttu-id="ed33a-110">この関数は値を返しません。</span><span class="sxs-lookup"><span data-stu-id="ed33a-110">This function does not return a value.</span></span>
+<span data-ttu-id="5c4a3-110">この関数は値を返しません。</span><span class="sxs-lookup"><span data-stu-id="5c4a3-110">This function does not return a value.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="ed33a-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="ed33a-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5c4a3-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="5c4a3-111">See also</span></span>
 
 
 
-[<span data-ttu-id="ed33a-112">フレームワーク ライブラリの関数</span><span class="sxs-lookup"><span data-stu-id="ed33a-112">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
+[<span data-ttu-id="5c4a3-112">フレームワーク ライブラリの関数</span><span class="sxs-lookup"><span data-stu-id="5c4a3-112">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
 
