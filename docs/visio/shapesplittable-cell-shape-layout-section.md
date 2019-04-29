@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 6330304a-71f3-62b4-1b27-14495e3f12c3
 description: この 1 次元図形が分割可能かどうかを示します。
 ms.openlocfilehash: 9f92cf7d147be8e59d860bcc8a958bf0cdc008c6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349155"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427074"
 ---
 # <a name="shapesplittable-cell-shape-layout-section"></a>[ShapeSplittable] セル ([Shape Layout] セクション)
 
@@ -23,9 +23,9 @@ ms.locfileid: "32349155"
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
 | .0  <br/> | この図形は分割できません。  <br/> |**visslosplittablenone** <br/> |
-| 1-d  <br/> | この図形は分割できます。  <br/> |**visslosplittableallow** <br/> |
+| 1   <br/> | この図形は分割できます。  <br/> |**visslosplittableallow** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 コネクタと他の 1 次元図形に対する既定の動作は、図面の種類によって異なります。 
   

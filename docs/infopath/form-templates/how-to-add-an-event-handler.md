@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: d69393fb-fb5a-4edb-abc0-38f5d7e80bcc
 description: このトピックでは、Visual Studio 2012 を使用して Microsoft InfoPath マネージ コード フォーム テンプレートにイベント ハンドラーを追加する手順を説明します。イベント ハンドラーをフォーム テンプレートに追加するには、まず、InfoPath Designer でフォーム テンプレートを開き、コードを記述するイベントに対して適切なユーザー インターフェイス コマンドを選択します。 InfoPath Designer でイベントのコマンドを選択したら、Visual Studio 2012 コード エディターのそのイベントのスケルトン イベント ハンドラーに自動的にフォーカスが切り替わります。
 ms.openlocfilehash: c6406ec1604355c59f4ee4818fdaea5d70f696bb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300120"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427186"
 ---
 # <a name="add-an-event-handler"></a>イベント ハンドラーを追加する
 
