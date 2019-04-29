@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 63c9e316-ee53-4065-8154-449639643ff7
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0810ed7ce20bba95c4286e6e042065c0c2d1a802
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339866"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421467"
 ---
 # <a name="imapiprogresssetlimits"></a>IMAPIProgress::SetLimits
 
@@ -59,7 +59,7 @@ S_OK
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 サービスプロバイダーは、 **imapiprogress:: setlimits**メソッドを呼び出して、MAPI_TOP_LEVEL フラグを設定またはクリアし、ローカルおよびグローバルの最小値と最大値を設定します。 flag 設定の値は、progress オブジェクトが最小値と最大値をローカルまたはグローバルに認識するかどうかに影響します。 MAPI_TOP_LEVEL フラグが設定されている場合、これらの値はグローバルと見なされ、操作全体の進行状況を計算するために使用されます。 Progress オブジェクトは、グローバルの最小値を1に、グローバルの最大値を1000に初期化します。 
   

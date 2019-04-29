@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4aafb254-6074-4a7c-b915-d3d33304ac38
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: c73fb96c9620a90ab0505b394fcb9853d02dcde5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360691"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421089"
 ---
 # <a name="screlocprops"></a>ScRelocProps
 
@@ -75,7 +75,7 @@ MAPI_E_INVALID_PARAMETER
   
 > 1つまたは両方のパラメーターが無効であったか、不明なプロパティの種類が検出されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **ScRelocProps**関数は、ポインターが調整されているプロパティ値の配列が、 **sccopyprops**関数の呼び出しと同じように、1つの呼び出しで最初に割り当てられたことを前提としています。 クライアントアプリケーションまたはサービスプロバイダーが、メモリのないブロックから構築されたプロパティ値を処理している場合は、 [sccopyprops](sccopyprops.md)を使用してプロパティをコピーする必要があります。 
   

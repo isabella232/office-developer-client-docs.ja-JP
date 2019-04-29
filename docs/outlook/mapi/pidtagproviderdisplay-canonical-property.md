@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 62e96db8-4c3e-4f73-b695-99eb4b2396fd
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 58db944720817491420f2bcb1774e51e3842b4a6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286468"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421593"
 ---
 # <a name="pidtagproviderdisplay-canonical-property"></a>PidTagProviderDisplay 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32286468"
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |MAPI 共通  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 これらのプロパティと**PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md)) は、サービスプロバイダーに属するプロファイルセクションでのみ定義されます。 これらは、mapisvc.inf に存在する必要があります。
   

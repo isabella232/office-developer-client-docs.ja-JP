@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 8436cbe6-e0f6-ddbb-9489-21027e31bd51
 description: ポイントの y 座標を返します。
 ms.openlocfilehash: 39f71dccd95602fe9578d09e941f360c82c48a3e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348294"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423315"
 ---
 # <a name="pnty-function"></a>PNTY 関数
 
@@ -32,7 +32,7 @@ PNTX (* * *point* * *)
    
 ### <a name="return-value"></a>戻り値
 
-番号
+数値
   
 ## <a name="example"></a>例
 

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: e568917e-6085-4094-8728-89ba90a78c40
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 9a77d335f3c8980de29dab6e14079c83bd711b43
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349274"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421173"
 ---
 # <a name="imessagegetattachmenttable"></a>IMessage::GetAttachmentTable
 
@@ -58,7 +58,7 @@ S_OK
   
 > 添付ファイルテーブルが正常に取得されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMessage:: getattachmenttable**メソッドは、メッセージの添付ファイルテーブルへのポインターを返します。このオブジェクトには、メッセージ内のすべての添付ファイルに関する情報が含まれています。 クライアントは、添付ファイルテーブルを介してのみ添付ファイルにアクセスできます。 添付ファイルの番号を取得することにより、クライアントはいくつかの**IMessage**メソッドを使用して添付ファイルを操作することができます**PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) プロパティ。 
   

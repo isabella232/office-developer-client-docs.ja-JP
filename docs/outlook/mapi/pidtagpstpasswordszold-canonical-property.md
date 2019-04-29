@@ -9,13 +9,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: eca2ba85-27bf-445b-8f87-b56ae879a72f
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 20f2c25a75f6d3e4db0bc1550b2d44cc6f914407
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32350709"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439934"
 ---
 # <a name="pidtagpstpasswordszold-canonical-property"></a>PidTagPstPasswordSzOld 標準プロパティ
 

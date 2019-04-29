@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b97a9e72-fbb7-49ab-a19d-5e9bd1b8a80d
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 099f08876eadc83ebb66b9e4226eeeee6277bf01
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331865"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430883"
 ---
 # <a name="pidtagcontrolflags-canonical-property"></a>PidTagControlFlags 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32331865"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |MAPI 表示テーブル  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティには、次の1つ以上のフラグを設定できます。
   
@@ -80,7 +80,7 @@ DT_SET_SELECTION
 |チェック ボックス  <br/> |DT_EDITABLE、DT_SET_IMMEDIATE  <br/> |
 |コンボ ボックス  <br/> |DT_EDITABLE、DT_REQUIRED、DT_SET_IMMEDIATE  <br/> |
 |ドロップダウンリストボックス  <br/> |DT_EDITABLE、DT_SET_IMMEDIATE  <br/> |
-|編集  <br/> |DT_ACCEPT_DBCS、DT_MULTILINE、DT_EDITABLE、DT_PASSWORD_EDIT、DT_REQUIRED、DT_SET_IMMEDIATE  <br/> |
+|Edit  <br/> |DT_ACCEPT_DBCS、DT_MULTILINE、DT_EDITABLE、DT_PASSWORD_EDIT、DT_REQUIRED、DT_SET_IMMEDIATE  <br/> |
 |グループ ボックス  <br/> |0である必要があります。  <br/> |
 |Label  <br/> |0である必要があります。  <br/> |
 |リスト ボックス  <br/> |0である必要があります。  <br/> |

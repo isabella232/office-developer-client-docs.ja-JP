@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: de7f56e2-c131-4955-b945-0a72043e0f5a
 description: ソーシャルネットワークにログオンしているユーザーのフレンドとして、emailAddress パラメーターによって識別された人物を追加します。
 ms.openlocfilehash: 849085bd40788039a96ac159fd76a5e252395916
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285365"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423259"
 ---
 # <a name="isocialsessionfollowperson"></a>ISocialSession::FollowPerson
 
@@ -29,7 +29,7 @@ _emailAddress_
   
 > 順番個人の電子メールアドレスを含む文字列。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _emailAddress_パラメーターは、有効な SMTP アドレスであることが必要です。 Outlook Social Connector (.osc) プロバイダーが、**機能**では**** 、 _emailAddress_の引数が**true**として設定されており、その引数がネットワーク上のユーザーと一致しない場合、プロバイダーは OSC_E_NOT_FOUND を返す必要があります。エラー. プロバイダーが**権限**で OSC_E_FAIL **** を**false**として設定している場合、プロバイダーはエラーを返す必要があります。
   

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: e3608c47-06be-4476-a6ef-060fac252387
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 12c50ab5936d7fffd364c276ba07ca69d3459ae7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299518"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421586"
 ---
 # <a name="guid"></a>GUID
 
@@ -42,7 +42,7 @@ typedef struct _GUID
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **Data1**
   
@@ -60,7 +60,7 @@ typedef struct _GUID
   
 > 符号なしの文字の配列。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
  **GUID**構造は、次のように MAPI で使用されます。 
   

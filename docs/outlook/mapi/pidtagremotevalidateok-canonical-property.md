@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: e336d2ec-57cb-4d08-bd6e-330ef7d9939e
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8b5c9e5bb2aa915d4b76d9998baaf504e7929b78
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355616"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424225"
 ---
 # <a name="pidtagremotevalidateok-canonical-property"></a>PidTagRemoteValidateOk 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32355616"
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |エリア:  <br/> |MAPI の状態  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティは、状態テーブルに表示され、トランスポートパフォーマンスを制御できます。 リモート閲覧者をアイドル状態にする別の方法として考慮することができます。 TRUE に設定されている場合、リモートビューアーは**imapistatus:: validatestate**を必要な回数だけ呼び出すことができます。 値が FALSE の場合は、リモート閲覧者がこれ以上呼び出しを行うことができないことを示します。 
   

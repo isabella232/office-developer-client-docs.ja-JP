@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 70b00dd9-78d6-eb0f-b5c1-686eb397cf4b
 description: 各ドキュメント校閲者に関する識別情報が含まれています。
 ms.openlocfilehash: a4bed2efa738dba1ccb4a7649f1762d7dedbd6e6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326839"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423476"
 ---
 # <a name="reviewer-section"></a>[Reviewer] セクション
 
 各ドキュメント校閲者に関する識別情報が含まれています。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [Reviewer] セクションには、特定の校閲者の校正履歴をすべて削除した場合でも、校正履歴を図面に追加した各校閲者に対して 1 つの行が格納されます。 
   

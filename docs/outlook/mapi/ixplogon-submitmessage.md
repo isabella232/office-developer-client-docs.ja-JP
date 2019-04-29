@@ -13,11 +13,11 @@ api_type:
 ms.assetid: a261ba0d-cb56-4935-b745-1d4bbd0b8b9d
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: ae124cb94cff5be0a655386d31f1bf2c82f66a85
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351591"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423322"
 ---
 # <a name="ixplogonsubmitmessage"></a>IXPLogon::SubmitMessage
 
@@ -84,7 +84,7 @@ MAPI_E_WAIT
   
 > 一時的な問題により、トランスポートプロバイダーがメッセージを処理できなくなります。 _lpulReturnParm_パラメーターは、MAPI スプーラーでメッセージが再送信されるまでの経過時間 (秒数) に設定する必要があります。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 MAPI スプーラーは、トランスポートプロバイダーが配信するメッセージを持っているときに、 **IXPLogon:: submitmessage**メソッドを呼び出します。 メッセージは、 _lpmessage_パラメーターを使用してトランスポートプロバイダーに渡されます。 
   

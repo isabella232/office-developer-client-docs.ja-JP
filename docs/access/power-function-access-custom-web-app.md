@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 2cfe965f-e462-452f-a99d-804cb1a2f1c7
 description: 指定した式を指定した値でべき乗した値を戻します。
 ms.openlocfilehash: 15d69ba97b1195f0dc39baaa52575154ef6d46ec
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308051"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423994"
 ---
 # <a name="power-function-access-custom-web-app"></a>Power 関数 (Access カスタム web アプリ)
 

@@ -9,11 +9,11 @@ api_type:
 ms.assetid: f31a08ce-3a56-4c90-9502-5bcb09d8d80f
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 86d2257b821622094ff8d5ad3a5d7b1bfc74942b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328106"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421292"
 ---
 # <a name="form-configuration-file-properties-section"></a>フォーム構成ファイル [Properties] セクション
 

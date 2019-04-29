@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 98091e5b-1abd-4814-9c7a-583b420ee11d
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9f2ec8f0ec00f7314982e9b112415f69901c358c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346649"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424120"
 ---
 # <a name="mapilogonex"></a>MAPILogonEx
 
@@ -135,7 +135,7 @@ MAPI_E_USER_CANCEL
   
 > ユーザーが操作をキャンセルしました。通常は、ダイアログボックスの **[キャンセル**] ボタンをクリックします。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 MAPI クライアントアプリケーションは、MAPILogonEx 関数を呼び出して、メッセージングシステムとのセッションにログオンします。 MAPI 呼び出しとの間で送受信されるすべての文字列は、null で終了し、呼び出し元クライアントまたはプロバイダーのオペレーティングシステムの現在の文字セットまたはコードページで指定する必要があります。
   

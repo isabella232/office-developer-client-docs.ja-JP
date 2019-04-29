@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 48667fda-ddc4-42ac-9231-761db0a4c1a9
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9c71a2b806b810906c13ea4750e5491b1544f640
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332005"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424505"
 ---
 # <a name="pidtagaccesscontrollisttable-canonical-property"></a>PidTagAccessControlListTable 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32332005"
 |データの種類 :   <br/> |PT_OBJECT  <br/> |
 |エリア:  <br/> |アクセス制御  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティは、Exchange サーバー上のすべての folder オブジェクトに存在します。 このプロパティに含まれる値は、フォルダーのアクセス制御リスト (acl) を読み取って変更するために使用されます。 **IID_IExchangeModifyTable**インターフェイス識別子を使用して[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを使用すると、フォルダーの ACL テーブルに対して[IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md)インターフェイスを取得できます。 このインターフェイスを使用して、これらの acl を読み取りおよび変更できます。 
   

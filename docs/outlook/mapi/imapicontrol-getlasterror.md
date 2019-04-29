@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 83290b8e-fffc-41c8-a01e-578d130b65c5
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 10ac4e33b3f734ec2ce3205aa1897e0418cb563d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286622"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421152"
 ---
 # <a name="imapicontrolgetlasterror"></a>IMAPIControl::GetLastError
 
@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 サービスプロバイダーは、失敗した前のメソッド呼び出しに関する情報を提供する**IMAPIControl:: GetLastError**メソッドを実装します。 MAPI では、メッセージまたはダイアログボックスに**MAPIERROR**構造のデータを表示することにより、エラーに関する詳細情報をユーザーに提供できます。 
   

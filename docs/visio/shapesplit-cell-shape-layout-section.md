@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 96b8c503-67b3-8623-d99b-0dad7b15c224
 description: この図形が、分割可能な図形を分割できるかどうかを示します。
 ms.openlocfilehash: 46b42e9be070b54095d3e9a5c247d63be6348f77
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349120"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423560"
 ---
 # <a name="shapesplit-cell-shape-layout-section"></a>[ShapeSplit] セル ([Shape Layout] セクション)
 
@@ -23,9 +23,9 @@ ms.locfileid: "32349120"
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
 | .0  <br/> | この図形は他の図形を分割できません。  <br/> |**visslosplitnone** <br/> |
-| 1-d  <br/> | この図形は他の図形を分割できます。  <br/> |**visslosplitallow** <br/> |
+| 1   <br/> | この図形は他の図形を分割できます。  <br/> |**visslosplitallow** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 他の図形を分割できる図形は、2 次元図形か 1 次元の配置可能な図形のどちらかである必要があります。 
   

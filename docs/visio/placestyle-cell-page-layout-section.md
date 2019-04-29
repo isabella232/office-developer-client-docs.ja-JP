@@ -8,17 +8,17 @@ localization_priority: Normal
 ms.assetid: 7dcd5a35-bd3d-447f-e4aa-986091d129de
 description: '[レイアウトの構成] ダイアログ ボックスを使用して図形をレイアウトするときに、図形をページ上にどのように配置するかを指定します (このダイアログ ボックスを開くには、[デザイン] タブの [レイアウト] で [ページの再レイアウト] をクリックして、[その他のレイアウト オプション] をクリックします)。'
 ms.openlocfilehash: b3159b765922d6656d12dd42a377322e4a91fc04
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346866"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420802"
 ---
 # <a name="placestyle-cell-page-layout-section"></a>[PlaceStyle] セル ([Page Layout] セクション)
 
 [**レイアウトの構成**] ダイアログ ボックスを使用して図形をレイアウトするときに、図形をページ上にどのように配置するかを指定します (このダイアログ ボックスを開くには、[**デザイン**] タブの [**レイアウト**] で [**ページの再レイアウト**] をクリックして、[**その他のレイアウト オプション**] をクリックします)。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルの値は、**[レイアウトの構成]** ダイアログ ボックスで設定することもできます。 
   

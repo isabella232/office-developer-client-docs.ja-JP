@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: fb9050c9-5797-44f0-8bf5-6264f4e6d7c3
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 465069f08e2026dcbf98e24f0f5f59e12ed17eca
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315289"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431275"
 ---
 # <a name="ulvalidateparameters"></a>UlValidateParameters
 
@@ -60,7 +60,7 @@ MAPI_E_CALL_FAILED
   
 > 予期しないまたは不明な配信元のエラーにより、操作が完了しませんでした。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 ulvalidateparameters マクロは[ulvalidateparameters](ulvalidateparms.md)マクロによって置き換えられました。 **** **ulvalidateparameters**は RISC プラットフォームでは正しく動作せず、これでコンパイルができなくなりました。 これは依然としてコンパイルされており、Intel プラットフォームで正常に動作しますが、 **ulvalidateparms**をすべてのプラットフォームで使用することをお勧めします。 
   

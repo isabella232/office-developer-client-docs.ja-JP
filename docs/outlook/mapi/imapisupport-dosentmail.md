@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 4bb65c2a-9926-42da-9161-47836e8de40a
 description: '�ŏI�X�V��: 2011�N7��23��'
 ms.openlocfilehash: 8289b8dd2e0ab3c760e77a37b821d2fe74e4abe9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315970"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423952"
 ---
 # <a name="imapisupportdosentmail"></a>IMAPISupport::DoSentMail
 
@@ -50,7 +50,7 @@ S_OK
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport::D o送信メール**メソッドは、メッセージストアプロバイダーサポートオブジェクトに実装されています。 メッセージストアプロバイダーは、メッセージの処理が完了したときに MAPI スプーラーによって呼び出される[IMsgStore:: FinishedMsg](imsgstore-finishedmsg.md)メソッドの実装から、**メール**を呼び出します。 **FinishedMsg**は、メッセージのロックを解除し、メッセージの参照カウントが1であることを確認し、 **dosentmail**を呼び出します。
   

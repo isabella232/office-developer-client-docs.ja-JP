@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: acf07fd7-6aa6-1a92-9b7a-bd6fea8a7cb2
 description: 図面ページで、別の配置可能な図形をこの図形の近くにドロップしたときに、この図形を移動して遠ざけるかどうかを指定します。
 ms.openlocfilehash: 6e155103f7bfc70a78826297f441fc9ce78942ad
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32325607"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423896"
 ---
 # <a name="shapeplowcode-cell-shape-layout-section"></a>[ShapePlowCode] セル ([Shape Layout] セクション)
 
@@ -23,10 +23,10 @@ ms.locfileid: "32325607"
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
 |.0  <br/> |ページの指定に従って移動します。  <br/> |**vissloん wdefault** <br/> |
-|1-d  <br/> |どの図形も移動しません。  <br/> |**vissloの wnever** <br/> |
-|pbm-2  <br/> |すべての図形が移動します。  <br/> |**visslo/always** <br/> |
+|1   <br/> |どの図形も移動しません。  <br/> |**vissloの wnever** <br/> |
+|2   <br/> |すべての図形が移動します。  <br/> |**visslo/always** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルの値は、[**基本動作**] ダイアログボックスの [**配置**] タブで、特定の図形に対して設定することもできます (図形が選択されている状態で、[[開発](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] グループで、[**基本動作**] をクリックし、次にクリックします)。[**配置**] タブ)。 
   

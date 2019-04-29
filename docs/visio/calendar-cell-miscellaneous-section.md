@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 7406b46d-b42d-187c-70e8-123c4da7e781
 description: セル数式が Date 情報を含むときに使用するカレンダーを指定します。
 ms.openlocfilehash: f756b0d445bd3f90b67e0b1412bd7ac51a8cdb7e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337514"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421817"
 ---
 # <a name="calendar-cell-miscellaneous-section"></a>[Calendar] セル ([Miscellaneous] セクション)
 
 セル数式が Date 情報を含むときに使用するカレンダーを指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 使用できる値は、0 (西暦)、1 (イスラム暦)、2 (ヘブライ太陰暦)、3 (台湾暦)、4 (和暦)、5 (タイ仏暦)、6 (韓国檀紀)、7 (サカ暦)、8 (英語 (音訳))、および 9 (フランス語 (音訳)) です。 
   

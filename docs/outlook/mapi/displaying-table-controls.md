@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 0882be14-573c-440c-954f-76ef70eea33e
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 37f6cd0320894d500416672c3dd0d90ee3324b40
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337031"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422692"
 ---
 # <a name="displaying-table-controls"></a>テーブルコントロールの表示
 

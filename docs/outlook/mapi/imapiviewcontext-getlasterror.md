@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 3306e37a-2500-4281-96c3-ca0d5c81909d
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: bcd8e977d924bae170dcad27c672b963189cfa94
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351398"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424428"
 ---
 # <a name="imapiviewcontextgetlasterror"></a>IMAPIViewContext::GetLastError
 
@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > MAPI_UNICODE フラグが設定されていて、 **getlasterror**が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、 **getlasterror**のみが unicode をサポートしています。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapiviewcontext:: GetLastError**メソッドは、失敗した前のメソッド呼び出しに関する情報を提供します。 呼び出し元は、 **MAPIERROR**構造のデータをダイアログボックスに含めることによって、エラーに関する詳細情報をユーザーに提供できます。 
   

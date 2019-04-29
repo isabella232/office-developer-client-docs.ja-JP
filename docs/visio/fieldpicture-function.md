@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: df88c55f-c098-dd4c-bf53-c7d7b60cf719
 description: Microsoft Visio の内部テキストフィールドの書式設定コードと一致する形式の画像文字列を返します。
 ms.openlocfilehash: 1ab24c602c7975cf6be22a564a8b9ee9aa0d6f46
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322548"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431457"
 ---
 # <a name="fieldpicture-function"></a>FIELDPICTURE 関数
 

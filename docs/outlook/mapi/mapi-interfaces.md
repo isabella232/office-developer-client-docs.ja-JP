@@ -9,13 +9,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 34a66cf0-b4e0-4fd5-b937-cd157888961d
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 4f5d6a5d2dbb48a86363896bf14b61ed28118330
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346684"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422664"
 ---
 # <a name="mapi-interfaces"></a>MAPI のインターフェイス
 
@@ -39,11 +39,11 @@ ms.locfileid: "32346684"
   
 各インターフェイストピックの後に、インターフェイスのメソッドがアルファベット順にドキュメント化されます。 各メソッドについて、簡単な目的のステートメント、構文ブロック、および次の情報が記載されています。
   
-|**見出し**|**Content**|
+|**見出し**|**コンテンツ**|
 |:-----|:-----|
 |パラメーター  <br/> |メソッド内の各パラメーターの説明。  <br/> |
 |戻り値  <br/> |メソッドが返すことのできる一意の値の説明。 これらの値は、発信者がコード内で確認する必要があります。  <br/> |
-|解説  <br/> |メソッドを使用する理由と方法についての説明。  <br/> |
+|注釈  <br/> |メソッドを使用する理由と方法についての説明。  <br/> |
 |関連項目  <br/> |このリファレンスの他のトピックへの相互参照。  <br/> |
    
 ## <a name="see-also"></a>関連項目

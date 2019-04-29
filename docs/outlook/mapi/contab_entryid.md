@@ -7,13 +7,13 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 84251222-dac4-4f4d-97b9-aa0e2cd26c44
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: a2a204f76b62c8c6bc6d8a4e793c936a0184dc65
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335078"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424085"
 ---
 # <a name="contabentryid"></a>CONTAB_ENTRYID
 
@@ -42,7 +42,7 @@ typedef struct _contab_entryid
 #pragma pack() 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **abflags**
   
@@ -60,7 +60,7 @@ typedef struct _contab_entryid
   
 > 連絡先エントリ ID の種類を表す整数。 次のいずれかの値であることが必要です。
     
-|**[名前]**|**[説明]**|
+|**名前**|**説明**|
 |:-----|:-----|
 |CONTAB_USER  <br/> |メッセージングを処理するユーザー オブジェクトです。  <br/> |
 |CONTAB_DISTLIST  <br/> |�z�z���X�g �I�u�W�F�N�g�ł��B  <br/> |
@@ -77,7 +77,7 @@ typedef struct _contab_entryid
   
 > 連絡先アドレス帳のこのエントリに関連付けられている連絡先メッセージのエントリ識別子。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 連絡先アドレス帳は、電子メールアドレスまたは fax 番号のいずれかの連絡先フォルダー内のすべての連絡先アイテムを含むアドレス帳です。 連絡先のアドレス帳の各エントリは、電子メールアドレスまたは fax 番号と関連付けられています。 連絡先アイテムは最大3つの電子メールアドレスと3つの fax 番号を持つことができるので、連絡先アイテムは対応する連絡先アドレス帳の最大6つのエントリで表すことができます。
   

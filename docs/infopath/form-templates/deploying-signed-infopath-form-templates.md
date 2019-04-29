@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 8345a4bc-ad7b-d0b0-7615-f77ade35006d
 description: このトピックを読む前に、「InfoPath フォームの追加のセキュリティ概念」の「署名済みフォーム テンプレート」セクションを読んで、署名済みフォーム テンプレートのセキュリティについて理解しておく必要があります。「セキュリティ レベル、電子メール配信、リモート フォーム テンプレート」の説明も関連性があります。
 ms.openlocfilehash: 76cc6dfdbd2c01827182c348281a98ad7cd17b69
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303718"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426801"
 ---
 # <a name="deploying-signed-infopath-form-templates"></a>署名済み InfoPath フォーム テンプレートを展開する
 

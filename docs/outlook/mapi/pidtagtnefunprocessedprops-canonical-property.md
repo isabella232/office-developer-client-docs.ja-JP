@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: df9cd614-1198-44a2-9bf5-36c57179a9a9
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9ea9938ca9f8dd0b25cf2de5199178a76e17b6d0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32361181"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431324"
 ---
 # <a name="pidtagtnefunprocessedprops-canonical-property"></a>PidTagTnefUnprocessedProps 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32361181"
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |MAPI ノンノンアウトテーブル  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 Microsoft outlook および outlook Web Access (OWA) によって、元の tnef を保存するために使用されます。この場合、ストア内に作成できない名前付きプロパティが tnef に含まれています。
   

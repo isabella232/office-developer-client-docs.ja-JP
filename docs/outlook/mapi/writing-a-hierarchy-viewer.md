@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 4c939a8c-8148-4add-b181-5a12e6d32309
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 5f6ebd20afc3b8d029fa7c632c55982862664055
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32325642"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421131"
 ---
 # <a name="writing-a-hierarchy-viewer"></a>階層ビューアーの作成
 

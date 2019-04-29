@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: a6a6b6b1-31e2-4899-a5fe-74d5d1c2ccfc
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: d5d87d7be9cb3524445107e975a298d4afd5bf98
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338620"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419836"
 ---
 # <a name="imapisessionadvise"></a>IMAPISession::Advise
 
@@ -113,7 +113,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > _lな tryid_で示されるエントリ識別子は、プロファイル内のどのサービスプロバイダーでも処理できません。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisession:: アドバイズ**メソッドは、呼び出し元のアドバイズシンクオブジェクト、セッション、およびサービスプロバイダーの間の接続を確立します。 この接続は、 _uleventmask_パラメーターで指定された1つ以上のイベントが、 _lな tryid_によって参照されるオブジェクトに対して発生したときに、アドバイズシンクに通知を送信するために使用されます。 _lare tryid_が NULL の場合、ターゲットオブジェクトはセッションで、重大なエラーと拡張イベントに対してのみ通知が送信されます。 
   

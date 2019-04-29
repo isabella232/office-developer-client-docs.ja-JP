@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: a6082162-2a74-4850-a0df-4bdbc67b41d8
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: e15c259003ed2cb425eb181f4383f3054967b993
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339320"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437939"
 ---
 # <a name="pidtagstoreunicodemask-canonical-property"></a>PidTagStoreUnicodeMask 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32339320"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |MAPI メッセージストア  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティによって、メッセージストアの機能が、メッセージを送信することを計画しているクライアントアプリケーションに discloses ます。 このフラグを使用すると、 **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) または**PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) のいずれかを送信するかどうかなど、クライアントまたは別のストアによる判断が容易になります。 クライアントはこのプロパティを設定することはできません。 **MAPI_E_COMPUTED**が返されます。 
   

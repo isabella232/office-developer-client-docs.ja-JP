@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 7d4416b2-429b-713e-61dc-8b2ead0e6053
 description: 親図形の原点を基準として、図形の水平方向の中心を揃えるための垂直ガイドまたはガイド点の水平方向の位置を指定します。
 ms.openlocfilehash: 6249c994299582d52a7f54a0c75370851dfad498
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341546"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421460"
 ---
 # <a name="aligncenter-cell-alignment-section"></a>[AlignCenter] セル ([Alignment] セクション)
 
 親図形の原点を基準として、図形の水平方向の中心を揃えるための垂直ガイドまたはガイド点の水平方向の位置を指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [AlignCenter] セルへの参照を取得するには、次の値を使用します。 
   

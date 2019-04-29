@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3efa4731-cf32-4a6c-9ba8-d059e58b0d98
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: f6688afde9b36a7722eaaf768f091481c15b7308
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329060"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423574"
 ---
 # <a name="imapipropgetnamesfromids"></a>IMAPIProp::GetNamesFromIDs
 
@@ -85,7 +85,7 @@ MAPI_E_INVALID_PARAMETER
   
 > _lppproptags_によって示されるプロパティタグ配列内の1つ以上のエントリの**cvalues**メンバーが0に設定されています。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 ほとんどのプロパティはプロパティ識別子によってアクセスできますが、名前によってアクセスできるプロパティもあります。 **imapiprop:: GetNamesFromIDs**メソッドを呼び出すと、次の操作を実行できます。 
   

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 87508007-8ad2-3bcf-55dc-f0207c7c6fe3
 description: 'cellreference の値が #N/a 以外のエラーの種類の場合は TRUE を返します。それ以外の場合は、FALSE を返します。 iserr 関数は、別のセルを参照する数式で使用されます。'
 ms.openlocfilehash: e2117c38d3cad2408295ed6894aefc78e107596e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297250"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432108"
 ---
 # <a name="iserr-function"></a>ISERR 関数
 

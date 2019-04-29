@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: aa97cbaa-8b14-42e3-a098-938ebe0769eb
 description: 指定した年、月、日、および時刻に基づく日付時刻を返します。
 ms.openlocfilehash: ee995d346ca27e683f342cf3f611c1147997d24e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282143"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422090"
 ---
 # <a name="datewithtimefromparts-function-access-custom-web-app"></a>datewithtimefromparts 関数 (Access カスタム web アプリ)
 
@@ -35,7 +35,7 @@ ms.locfileid: "32282143"
 | *Minute*  <br/> |分を指定する整数式  <br/> |
 | *Second*  <br/> |秒を指定する整数式。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **DateWithTimeFromParts** 関数は、完全に初期化された Date/Time 値を返します。引数が有効でない場合はエラーが発生します。必要な引数が Null の場合は Null が返されます。 
   

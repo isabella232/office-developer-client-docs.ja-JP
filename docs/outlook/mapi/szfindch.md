@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3406d060-bfea-4cea-8253-2a9aeb9e8147
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 522c67b19656c00ea169def98a42ca2b3c1db840
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345242"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421943"
 ---
 # <a name="szfindch"></a>SzFindCh
  
@@ -52,7 +52,7 @@ _焦げ_
 
 **szfindch**は、文字列内で最初に見つかった文字へのポインターを返します。 文字が文字列の任意の場所に出現しない場合、または_lpsz_パラメーターが null の場合は、null 値が返されます。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **szfindch**関数は、完全一致のみを検索します。大文字と小文字は区別されます。 Unicode および DBCS 形式での検索がサポートされています。 
   

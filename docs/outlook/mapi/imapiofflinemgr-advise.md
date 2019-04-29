@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 784b6218-548d-817a-caaa-cf9be6bc3d2f
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 3ca7fdc39da8d3ee8ecf6f0f253284df10a392e5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321428"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426920"
 ---
 # <a name="imapiofflinemgradvise"></a>IMAPIOfflineMgr::Advise
 
@@ -63,7 +63,7 @@ E_NOINTERFACE
   
 > *pAdviseInfo*で指定されているコールバックインターフェイスが無効です。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **[hroIMAPIOfflineMgr offlineobj](hropenofflineobj.md)** を使用してオフラインオブジェクトを開くときに、クライアントは、 **** をサポートするオフラインオブジェクトを取得します。 クライアントは、 **[imapioffline:: getcapabilities](imapioffline-getcapabilities.md)** を使用して、オブジェクトでサポートされているコールバックの種類を確認できます。 クライアントは、必要なコールバックに関する種類とその他の詳細を判断し、 **IMAPIOfflineMgr:: アドバイズ**に登録して、オブジェクトに関するそのようなコールバックを受信することができます。 
   

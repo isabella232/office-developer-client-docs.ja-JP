@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: c1cfe71b-01f3-429a-8b4c-73191a2ffea0
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: c25f352e7fa607a46741164574a4ba91d4026edf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321673"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423581"
 ---
 # <a name="imapiformmgrselectform"></a>IMAPIFormMgr::SelectForm
 
@@ -77,7 +77,7 @@ MAPI_E_USER_CANCEL
   
 > ユーザーが操作をキャンセルしました。通常は、ダイアログボックスの **[キャンセル**] ボタンをクリックします。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 フォームビューアーは、 **imapiformmgr:: selectform**メソッドを呼び出して、ユーザーがフォームを選択できるようにするダイアログボックスを最初に表示し、次に、選択したフォームを記述するフォーム情報オブジェクトを取得します。 ダイアログボックスは、ユーザーが1つのフォームを選択することを制限します。 
   

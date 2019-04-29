@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: ff756bf1-9395-5e50-4f55-1eb0365a84ed
 description: このトピックでは、空き時間情報 API の定数の定義、クラス識別子、およびインターフェイス識別子について説明します。
 ms.openlocfilehash: 13578617eaab45e7194d7a0d4d6995ef925e7f20
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317718"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431534"
 ---
 # <a name="constants-freebusy-api"></a>定数 (空き時間情報 API)
 

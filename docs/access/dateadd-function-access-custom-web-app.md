@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 7174c585-86e1-42a3-bb7f-d6641001b0f2
 description: 日付の指定した日付部分に、指定した間隔 (正または負の整数) を加算した結果の日付を返します。
 ms.openlocfilehash: 7cfd68c4983eee22a5e542facd72ea083deb3184
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282181"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423203"
 ---
 # <a name="dateadd-function-access-custom-web-app"></a>DateAdd 関数 (Access カスタム web アプリ)
 
@@ -32,7 +32,7 @@ ms.locfileid: "32282181"
 | *数値*  <br/> |は、*日付*の*DatePart*に追加される整数に解決できる式です。 小数を含む値を指定した場合、その少数は切り捨てられます。  <br/> |
 | *Date*  <br/> |日付/時刻の値に解決可能な式。 *Date*引数 expression、column 式、ユーザー定義の変数または文字列リテラル。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 The following table lists all valid  *DatePart*  arguments. 
   

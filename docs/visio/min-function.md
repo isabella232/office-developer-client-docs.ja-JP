@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: b945b7c2-153f-2fc3-b768-1e975254ddf5
 description: リストから最小値を返します。 最小値は負の無限大に最も近いことを意味します。
 ms.openlocfilehash: 7c9eb1a8d4ce30e7ab9253c2864ecd38474e8ff6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360649"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420837"
 ---
 # <a name="min-function"></a>MIN 関数
 

@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: f6b68a9a-e04a-476e-a407-b1779fea1953
 description: DeleteRecord/レコードの削除アクションを使用して、レコードを削除できます。
 ms.openlocfilehash: 0e8a658b944e894e4d4014fb3d3d9a583efbee8d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282116"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423154"
 ---
 # <a name="deleterecord-data-macro-action-access-custom-web-app"></a>DeleteRecord Data マクロアクション (Access カスタム web アプリ)
 
@@ -28,7 +28,7 @@ You can use the **DeleteRecord** action to delete a record.
 |:-----|:-----|
 |**Record Alias/レコードの別名** <br/> |削除するレコードを識別する文字列。 *Alias*引数が指定されていない場合は、カレントレコードが削除されます。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **LastCreateRecordIdentity** ローカル変数を使用して、 **CreateRecord** データ ブロックで一番新しく作成したレコードを操作できます。たとえば、次の構文では一番新しく作成したレコードを参照します。 
   

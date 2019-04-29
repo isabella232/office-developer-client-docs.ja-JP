@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 7b396d9f-9a47-3170-367f-5d1f0144f927
 description: デジタル署名は、マクロまたはドキュメント上にあり、電子的で暗号化ベースの、セキュリティで保護された認証のスタンプです。有効なデジタル署名では、そのデータが署名者からのものであり、署名されてから変更されていないことを確認できます。ドキュメントまたはドキュメント内の特定のデータに署名すると、署名が計算されてドキュメントに追加されます。このようにして、署名は常に署名済みデータと共に移動します。
 ms.openlocfilehash: 6c1f5a1c14c15bc88839dc44d9a5a595d8b52893
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300246"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425100"
 ---
 # <a name="digitally-signing-data-in-infopath-forms"></a>InfoPath フォームのデータにデジタル署名する
 

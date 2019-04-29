@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 340ed9a8-6f82-4aa8-a951-2c453b3d1ac4
 description: あるテキスト式を他のテキスト式内で検索して、それが見つかった場合はその開始位置を戻します。
 ms.openlocfilehash: dc6906f70bc5bb17e12855d69946281909962988
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282608"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423133"
 ---
 # <a name="charindex-function-access-custom-web-app"></a>CharIndex 関数 (Access カスタム web アプリ)
 
@@ -30,7 +30,7 @@ ms.locfileid: "32282608"
 | *戻し*  <br/> |はい  <br/> |検索するテキスト式。  <br/> |
 | *Start*  <br/> |いいえ  <br/> |検索を開始する、*テキスト*内の位置を指定する整数。 *Start*が指定されていない場合、負の数である場合、または0の場合は、検索はその*テキスト*の先頭から開始されます。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 If either  *TextExpression*  or  *WithinText*  is NULL,  *CharIndex*  returns NULL. 
   

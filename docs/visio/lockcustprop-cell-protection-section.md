@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: d1c23f1d-485d-a897-594d-15d6e8d0fb3c
 description: '[図形データの定義] ダイアログ ボックス、または [図形データ] ウィンドウのショートカット メニューを使用して、ユーザー インターフェイス (UI) の図形データを追加、削除、または修正できるかどうかを判別します。'
 ms.openlocfilehash: 001123f3bd08d35f6f8e4874e20f2ee073835494
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359607"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422524"
 ---
 # <a name="lockcustprop-cell-protection-section"></a>[LockCustProp] セル ([Protection] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32359607"
 |TRUE  <br/> |[**図形データ**] ウィンドウのショートカット メニューの [**図形データの定義**] コマンドが無効になります。  <br/> |
 |FALSE  <br/> |[**図形データ**] ウィンドウのショートカット メニューの [**図形データの定義**] コマンドが有効になります (既定値)。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この値が TRUE の場合でも、図形データ項目の値は変更できます。また、[シェイプシート] ウィンドウの [図形データ] セクションも変更できます。 
   

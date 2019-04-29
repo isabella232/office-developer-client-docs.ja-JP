@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 97f08cde-d6e4-8935-1758-4018a3baf682
 description: 指定されたアカウントの種類とカテゴリ情報を取得します。
 ms.openlocfilehash: 88021537cc7ff4c55759081e6f3619c2a9f10ea3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32318187"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437904"
 ---
 # <a name="iolkaccountgetaccountinfo"></a>IOlkAccount::GetAccountInfo
 
@@ -65,7 +65,7 @@ _prgclsidCategory_
 
 呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このメソッドが返された後、 [IOlkAccount:: FreeMemory](iolkaccount-freememory.md)を使用して*prgclsidCategory*を解放する必要があります。
   

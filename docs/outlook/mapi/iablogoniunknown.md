@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: fe340182-f41e-42e7-b8e8-cc005b1e9a5f
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: fc8615fcd984623ae9c17c45fb7b51a4498a723b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348833"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431079"
 ---
 # <a name="iablogon--iunknown"></a>IABLogon : IUnknown
 
@@ -51,7 +51,7 @@ ms.locfileid: "32348833"
 |[getoneofftable](iablogon-getoneofftable.md) <br/> |送信メッセージの受信者リストに追加する受信者を作成するための、1回限りのテンプレートのテーブルを返します。  <br/> |
 |[PrepareRecips](iablogon-preparerecips.md) <br/> |メッセージングシステムで後で使用するために、受信者リストを準備します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IABLogon**インターフェイスのメソッドに関する一般的な情報については、「[サービスプロバイダーログオンの実装](implementing-service-provider-logon.md)」を参照してください。
   

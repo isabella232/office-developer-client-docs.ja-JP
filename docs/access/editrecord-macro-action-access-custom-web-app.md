@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 2096da45-4269-4a6d-a2bd-a3e1e510b071
 description: 現在のレコードを編集モードに配置します。
 ms.openlocfilehash: 8cd2dbb388d7fe0111d6112ace8be53ad8fef9f8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308240"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421747"
 ---
 # <a name="editrecord-macro-action-access-custom-web-app"></a>"Macro/レコードの設定" マクロアクション (Access カスタム web アプリ)
 
@@ -24,7 +24,7 @@ ms.locfileid: "32308240"
 
  **EditRecord**
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 レコードした変更を保存するには **SaveRecord** アクションを、変更を破棄するには **UndoRecord** アクションを使用します。 
   

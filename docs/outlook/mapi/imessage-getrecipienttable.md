@@ -13,11 +13,11 @@ api_type:
 ms.assetid: a335dfca-44da-452e-b16f-25d314b1758f
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: ca42e91528cdb7e61ae3620989c4a89966db1061
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349281"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424610"
 ---
 # <a name="imessagegetrecipienttable"></a>IMessage::GetRecipientTable
 
@@ -58,7 +58,7 @@ S_OK
   
 > 受信者テーブルが正常に返されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMessage:: get table**メソッドは、メッセージの受信者テーブルへのポインターを返します。これには、メッセージのすべての受信者に関する情報が含まれています。 すべての受信者に1つの行があります。 
   

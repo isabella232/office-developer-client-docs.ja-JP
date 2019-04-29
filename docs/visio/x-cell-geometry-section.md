@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 2416b323-e084-18e1-c9be-a797078dfab9
 description: ローカル座標での図形の x 座標を表します。 次の表に、各行で [X] セルが示す内容を説明します。
 ms.openlocfilehash: 6554000a86a6bf27d343a5647161bbe416725e64
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285113"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423945"
 ---
 # <a name="x-cell-geometry-section"></a>[X] セル ([Geometry] セクション)
 
 ローカル座標での図形の*x*座標を表します。 次の表に、各行で [X] セルが示す内容を説明します。 
   
-|**行**|**説明**|
+|**Row**|**説明**|
 |:-----|:-----|
 |[MoveTo](moveto-row-geometry-section.md) <br/> | [MoveTo] 行がセクションの最初の行の場合、[x] セルは、パスの最初の頂点に対する*x*座標を表します。 [MoveTo] 行が2つの行の間に表示される場合、[x] セルは、パスを切断した後の最初の頂点に対する*x*座標を表します。  <br/> |
 |[LineTo](lineto-row-geometry-section.md) <br/> | 直線セグメントの最後の頂点に対する*x*座標です。  <br/> |
@@ -33,7 +33,7 @@ ms.locfileid: "32285113"
 |[[infiniteline]](infiniteline-row-geometry-section.md) <br/> | 無限線上の点の*x*座標です。  <br/> |
 |[もう](ellipse-row-geometry-section.md) <br/> | 楕円の中心点の*x*座標です。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [X] セルへの参照を取得するには、次の値を使用します。 
   

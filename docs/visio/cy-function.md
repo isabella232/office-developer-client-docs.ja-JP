@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: abb27f90-21b4-08cd-6995-9520fbcebd78
 description: 通貨値を返します。
 ms.openlocfilehash: 65c88d69669e2fa7f708402d9d50dfe035456edb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344990"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433557"
 ---
 # <a name="cy-function"></a>CY 関数
 
@@ -31,7 +31,7 @@ CY (* **値** *、* * *cyid* * *)
 | _value_ <br/> |省略可能  <br/> |**Number または String** <br/> |通貨固有の書式設定を含む数値または文字列。 指定しない場合、通貨の値は、システムの地域と言語の設定の通貨スタイルに従って書式設定されます。  <br/> |
 | _cyid_ <br/> |省略可能  <br/> |**数値** <br/> |通貨 ID、または ISO 4217 の省略形を表す3文字の引用符で区切られた文字列。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の通貨を指定するには、有効な_cyid_を含める必要があります。 通貨の一覧については、「[通貨定数について](about-currency-constants.md)」を参照してください。
   

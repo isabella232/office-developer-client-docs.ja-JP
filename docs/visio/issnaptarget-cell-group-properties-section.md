@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: b58131f6-a566-d9ca-bad4-4f4b66e03aaf
 description: グループにスナップするかグループ内の図形にスナップするかを指定します。
 ms.openlocfilehash: cae3eab64be3a91c48ae9f7fb49aa2a321087f43
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317900"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421446"
 ---
 # <a name="issnaptarget-cell-group-properties-section"></a>[IsSnapTarget] セル ([Group Properties] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32317900"
 |TRUE  <br/> |グループ内の図形へのスナップを有効にします。  <br/> |
 |FALSE  <br/> |グループにのみスナップします。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルの値は、グループを選択して、[[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**基本動作**] をクリックし、[**メンバー図形にスナップ**] チェック ボックスをオンにして設定することもできます。 
   

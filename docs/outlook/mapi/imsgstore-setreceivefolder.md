@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 469f0412-1343-47ce-b6e8-e0d5e56c29bb
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: efa5d60098fd5f16328669249a8445a124d9878b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317340"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434089"
 ---
 # <a name="imsgstoresetreceivefolder"></a>IMsgStore::SetReceiveFolder
 
@@ -64,7 +64,7 @@ S_OK
   
 > 受信フォルダーが正常に確立されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMsgStore:: setreceivefolder**メソッドは、特定のメッセージクラスの受信フォルダーを設定または変更します。 **setreceivefolder**では、クライアントは、連続した呼び出しを使用して、定義された各メッセージクラスに対して異なる受信フォルダーを指定したり、複数のメッセージクラスの受信メッセージをすべて同じフォルダーに移動するように指定したりできます。 たとえば、クライアントは独自のフォルダーにメッセージの独自のクラスを受け取ることができます。 fax アプリケーションは、受信 fax を格納する1つのフォルダーと、プロバイダーが発信 fax を配置する別のフォルダーを指定できます。
   

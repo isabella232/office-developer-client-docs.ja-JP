@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 4fa49d5f-12ea-4d14-9a03-28418f01746c
 description: 指定された年、月、および日を表す日付値を返します。
 ms.openlocfilehash: 7d47fe93d1990365f1db5885a3ea8fc056aabb9f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282123"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423224"
 ---
 # <a name="datefromparts-function-access-custom-web-app"></a>datefromparts 関数 (Access カスタム web アプリ)
 
@@ -32,7 +32,7 @@ ms.locfileid: "32282123"
 | *Month*  <br/> |月を指定する整数式 (1 ～ 12)。  <br/> |
 | *Day*  <br/> |日を指定する整数式  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **DateFromParts** は日付値を返します。この値の日付部は指定された年、月、および日に設定され、時刻部は既定に設定されます。引数が有効でない場合、エラーが発生します。必須の引数が null の場合、NULL が返されます。 
   

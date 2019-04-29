@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 670c2291-d5b6-4dcf-9046-9125272dd8f8
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: b187cccc4505256b7ab4d580c30eeb2e15ebf574
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278861"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421677"
 ---
 # <a name="itabledatahrdeleterow"></a>ITableData::HrDeleteRow
 
@@ -49,7 +49,7 @@ MAPI_E_NOT_FOUND
   
 > _lpspropvalue_パラメーターによって示されるプロパティは、テーブル内の行を識別しません。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **itabledata:: HrDeleteRow**メソッドは、 _lpspropvalue_パラメーターによって示されるプロパティに一致する列を含むテーブル行を削除します。 行のデータが削除され、開いているすべてのビューからその行が削除されます。 
   

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: a05d668f-70c9-b6fa-cac1-462af37b4f8f
 description: 図形またはページに定義された各アクション タグに対応する行が格納されます。
 ms.openlocfilehash: e8d8307abe14058be27e805a191243db8002b4c4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283038"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430953"
 ---
 # <a name="action-tag-section"></a>[操作タグ] セクション
 
@@ -23,7 +23,7 @@ ms.locfileid: "32283038"
 > [!NOTE]
 > Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [**アクションタグ**] セクションでは、図面内のアクションタグの外観と位置を制御します。 [ **TagName** ] セルを使用して、アクションタグメニューに表示されるメニュー項目が定義されている [Actions] セクションで、各アクションタグを1つまたは複数の行に関連付けることができます。 
   
