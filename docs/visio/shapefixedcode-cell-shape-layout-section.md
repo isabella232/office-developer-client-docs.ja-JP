@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: a1736a5c-421c-2bdb-b164-76a8cd06cc3d
 description: 配置可能な図形について、配置時の動作を指定します。
 ms.openlocfilehash: eae44a0579129fbe8da1c0cc8c37318beb024563
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32325733"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431744"
 ---
 # <a name="shapefixedcode-cell-shape-layout-section"></a>[ShapeFixedCode] セル ([Shape Layout] セクション)
 
@@ -29,7 +29,7 @@ ms.locfileid: "32325733"
 |&amp;H40 (64)  <br/> |接続ポイントがある側だけに迂回します。  <br/> |**visslofixedconnptsonly** <br/> |
 |&amp;H80 (128)  <br/> |この図形の外周には接着しません。 代わりに、図形の図形枠に接着します。  <br/> |**visSLOFixedNoFoldToShape** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルの値は、[**基本動作**] ダイアログボックスの [**配置**] タブで設定することもできます (図形が選択されている場合)、[[開発](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] グループで、[**基本動作**] をクリックし、[**配置**] タブをクリックします。). 
   

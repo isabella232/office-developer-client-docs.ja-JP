@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 75601a1e-6b1a-27ee-a2bd-69e569315982
 description: 図形を構成する直線と円弧の頂点の座標を一覧表示する行を格納します。
 ms.openlocfilehash: 32a815015c7d1764399215767b674668b7235832
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345116"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423910"
 ---
 # <a name="geometry-section"></a>[Geometry] セクション
 
@@ -22,11 +22,11 @@ ms.locfileid: "32345116"
   
 図形のジオメトリは、複数の [ **geometry** ] セクションで表すことができます。 複数のパスが異なるプロパティ ([画像のクリッピング](clippingpath-cell-foreign-image-info-section.md)パスなど) を持つ場合は、複数のパスが役に立つことがあります。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [ **Geometry** ] セクションには、次の行の種類が含まれます。 詳細については、各行のトピックを参照してください。 
   
-|**行**|**説明**|
+|**Row**|**説明**|
 |:-----|:-----|
 |[MoveTo](moveto-row-geometry-section.md) <br/> |目的の座標に移動します。  <br/> |
 |[LineTo](lineto-row-geometry-section.md) <br/> |座標までの線を描画します。  <br/> |

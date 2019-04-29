@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 38cb3692-a5f8-403a-9615-9bd5868af23c
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 7477213ee854be1ae71b47a0c1b339c4c13b6f04
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338683"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435580"
 ---
 # <a name="imapisessiongetlasterror"></a>IMAPISession::GetLastError
 
@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > MAPI_UNICODE フラグが設定されていて、セッションは UNICODE をサポートしていません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisession:: GetLastError**メソッドは、 **imapisession**メソッド呼び出しによって返された最後のエラーに関する情報を取得します。 クライアントは、この情報をダイアログボックスに含めることによって、エラーに関する詳細情報をユーザーに提供できます。 
   

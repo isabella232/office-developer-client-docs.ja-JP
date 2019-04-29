@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: d6318238-fd45-4854-a3c9-c27c5685bd6b
 description: InfoPath 2003 互換オブジェクト モデルは、デジタル署名をプログラムで操作する機能を提供します。
 ms.openlocfilehash: 86e2c85c7515c896612df09b6186462480ceff61
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299910"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433445"
 ---
 # <a name="work-with-digital-signatures-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用してデジタル署名を操作する
 
@@ -41,13 +41,13 @@ InfoPath で使用できるデジタル署名機能では、以下の操作を�
 
 デジタル署名のオブジェクト モデルには、次のイベントがあります。
   
-|**[名前]**|**[説明]**|
+|**名前**|**説明**|
 |:-----|:-----|
 |[OnSign](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSign.aspx) <br/> |署名するための一連の署名データが選択されたときに発生します。  <br/> このイベントを使用すると、デジタル署名に格納されているデータを操作することができます。たとえば、信頼されるタイムスタンプ サーバーからデータを追加したり、トランザクションのサーバー側副署名を追加したりできます。また、このイベントを使用すると、現在のユーザーが特定のグループのメンバーでない場合に署名を拒否することもできます。  <br/> |
    
 **OnSign** イベントは、 [SignEventObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignEventObject.aspx) オブジェクトへの参照を返します。このオブジェクトには、次のプロパティが含まれています。 
   
-|**[名前]**|**[説明]**|
+|**名前**|**説明**|
 |:-----|:-----|
 |[ReturnStatus](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SignEvent.ReturnStatus.aspx) <br/> |**OnSign** イベントから返された状態を示す **Boolean** 値を取得または設定します。  <br/> |
 |[SignedDataBlock](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SignEvent.SignedDataBlock.aspx) <br/> |**OnSign** イベントを発生させた署名済みデータ ブロックを取得します。  <br/> |
@@ -57,14 +57,14 @@ InfoPath で使用できるデジタル署名機能では、以下の操作を�
 
 デジタル署名のオブジェクト モデルには、次のコレクションがあります。
   
-|**[名前]**|**[説明]**|
+|**名前**|**説明**|
 |:-----|:-----|
 |[SignedDataBlocksCollection](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignedDataBlocksCollection.aspx) <br/> |フォーム定義ファイル (.xsf) で定義されているフォーム テンプレート内の [SignedDataBlockObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignedDataBlockObject.aspx) オブジェクトのコレクション。  <br/> **SignedDataBlocksCollection** コレクションには、フォームに関連付けられている **SignedDataBlockObjects** オブジェクトにアクセスするためのプロパティがあります。 **SignedDataBlocks** コレクションへのアクセスには、 [XDocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.SignedDataBlocks.aspx) オブジェクトの [SignedDataBlocks](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx) プロパティを使用します。  <br/> |
 |[SignaturesCollection](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignaturesCollection.aspx) <br/> |フォーム内の各 [SignedDataBlockObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignatureObject.aspx) に対する **SignatureObject** のコレクションが格納されています。  <br/> **SignaturesCollection** コレクションには、フォームに関連付けられている **SignatureObject** オブジェクトへのアクセスや、署名の作成に使用できるプロパティとメソッドが実装されています。このコレクションには、 **SignedDataBlockObject** オブジェクトを通じてアクセスできます。  <br/> [SignaturesCollection](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Signatures.Create.aspx) コレクションの **Create** メソッドを使用する際には、 [SignatureObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Signature.Sign.aspx) オブジェクトに対して **Sign** メソッドを呼び出すまでは署名が書き込まれないことを覚えておいてください。これらのメソッドは、完全に信頼されたフォーム テンプレートの **OnSign** イベント ハンドラーからしか呼び出せません。  <br/> |
    
 デジタル署名のオブジェクト モデルには、次のオブジェクトがあります。
   
-|**[名前]**|**[説明]**|
+|**名前**|**説明**|
 |:-----|:-----|
 |[SignedDataBlockObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignedDataBlockObject.aspx) <br/> |フォーム内の署名可能な一連のデータを表します。 **SignedDataBlock** オブジェクトには、署名可能なデータ セットをプログラムで操作するために使用できる多数のプロパティと 1 つのメソッドがあります。  <br/> |
 |[SignatureObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignatureObject.aspx) <br/> |フォームまたはフォーム内の署名可能な一連のデータに追加されたデジタル署名を表します。 **SignatureObject** コレクションには、デジタル署名に関する情報の取得に使用できる各プロパティ、および XML デジタル署名ブロックの書き込みとその暗号化ハッシュ値の計算のための [Sign](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Signature.Sign.aspx) メソッドが実装されています。  <br/> |

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: eba0e7f2-03c1-4713-aa36-3d0b398cd197
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 2f0f1fb94ea36512bbc40df8a4877e89d2613a25
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309983"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422104"
 ---
 # <a name="imsgserviceadminrenamemsgservice"></a>IMsgServiceAdmin::RenameMsgService
 
@@ -55,7 +55,7 @@ MAPI_E_NO_SUPPORT
   
 > MAPI では、このメッセージサービスの名前変更はサポートされていません。 **RenameMsgService**は、常にこの値を返します。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 メッセージサービスに新しい名前を割り当てるには、クライアントでメッセージサービスの**PR_SERVICE_NAME** ([PidTagServiceName](pidtagservicename-canonical-property.md)) プロパティを使用する必要があります。 メッセージサービスのサービスプロバイダーの名前は、 **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) プロパティに格納されます。 
   

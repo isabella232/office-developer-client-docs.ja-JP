@@ -13,11 +13,11 @@ api_type:
 ms.assetid: f4846dc3-0236-44ed-a1b1-8c13d48fb58a
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: c3c4ac10003aad8949de94e0f144410af10078b1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309570"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437239"
 ---
 # <a name="iprofadmincopyprofile"></a>IProfAdmin::CopyProfile
 
@@ -85,7 +85,7 @@ MAPI_E_USER_CANCEL
   
 > ユーザーが操作をキャンセルしました。通常は、ダイアログボックスの **[キャンセル**] ボタンをクリックします。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IProfAdmin:: copyprofile**メソッドは、 _lpszoldprofilename_によって参照されているプロファイルのコピーを作成し、 _lpszoldprofilename_で指定された名前を付与します。 プロファイルをコピーすると、元のパスワードと同じパスワードでコピーが残ります。
   

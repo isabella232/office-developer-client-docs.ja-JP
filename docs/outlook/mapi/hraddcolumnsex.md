@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: c0a65d2b-a9b8-4477-a1c7-18c8478126f6
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9ca34fb2cce6e86c42e8e9525cd213f1008997d6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348371"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427480"
 ---
 # <a name="hraddcolumnsex"></a>HrAddColumnsEx
 
@@ -76,7 +76,7 @@ S_OK
   
 > 呼び出しが成功し、指定された列が移動または追加されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _lpproptagColumnsNew_パラメーターを使用して**hraddcolumnsex**に渡されたプロパティは、次に[IMAPITable:: QueryRows](imapitable-queryrows.md)メソッドを呼び出したときに公開される最初のプロパティになります。 _lpproptagColumnsNew_パラメーターで指定されていないテーブル内のプロパティはすべて、追加されて移動されたプロパティの後に公開されます。 
   

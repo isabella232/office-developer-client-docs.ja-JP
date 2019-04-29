@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 92f59a0d-3834-424d-ad81-167fdeba9bd0
 description: このトピックでは、Outlook Social Connector 2013 (.osc) の主な変更点を示します。 outlook social connector 2013 と outlook social connector 1.1 の間で利用できる機能の比較を示します。
 ms.openlocfilehash: 6b735555d312c149d7dc8b827990b96bfc229678
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329114"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435454"
 ---
 # <a name="whats-new-for-providers"></a>プロバイダーの新機能
 
@@ -53,13 +53,13 @@ Outlook Social Connector 2013 には、次のようないくつかの大きな�
 
 次の表に、対応するインターフェイスで追加または廃止されたメンバーを示します。
   
-|**インターフェイスとメンバー**|**Comment**|
+|**インターフェイスとメンバー**|**コメント**|
 |:-----|:-----|
 |**ISocialProfile::GetActivitiesOfFriendsAndColleagues** <br/> |Outlook Social Connector 2013 では廃止されました。 isocial **alsession:: getactivities**は、Outlook Social Connector 1.1 以降も使用されていないことに注意してください。  <br/> アクティビティフィードを同期するには、 [ISocialSession2:: GetActivitiesEx](isocialsession2-getactivitiesex.md)メソッドを実装する必要があります。 **dynamicActivitiesLookupEx**を**true**に設定して、 **ISocialSession2:: GetActivitiesEx**を呼び出すよう、.osc に指示します。  <br/> |
    
 次の表に、変更されたスキーマ要素を示します。
   
-|**Schema 要素**|**Comment**|
+|**Schema 要素**|**コメント**|
 |:-----|:-----|
 |**能力** <br/> |Outlook Social Connector 2013: **allowChangesToAutoConfigure**要素に追加されました。  <br/> Outlook Social Connector 2013: **cacheactivities**要素で廃止されました。  <br/> |
 |**人物** <br/> |Outlook Social Connector 2013 に追加されました。 **: askmeabout**、 **businessaddress**、 **businessaddress**、 **businessCountryOrRegion**、 **businessaddress**、 **businessaddress**、**産業**、**興味**、 **location**、 **otheraddress**、 **otheraddress**、 **otherCountryOrRegion**、 **otheraddress**、 **otheraddress**、**スキル**、**学校**、 **web サイト**の各要素。  <br/> |

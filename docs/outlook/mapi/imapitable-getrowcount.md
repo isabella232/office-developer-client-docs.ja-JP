@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 44a12c92-7462-4acf-9520-5d4c2d7f1d47
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: b13bf3bdd8392efc42ad189e48dffad8636f0708
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328890"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425604"
 ---
 # <a name="imapitablegetrowcount"></a>IMAPITable::GetRowCount
 
@@ -62,7 +62,7 @@ MAPI_W_APPROX_COUNT
   
 > 呼び出しは成功しましたが、メモリの制約によって正確な行の数を特定できなかったため、おおよその行数が返されました。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMAPITable:: getrowcount**メソッドは、テーブル内の行の合計数を取得します。 
   

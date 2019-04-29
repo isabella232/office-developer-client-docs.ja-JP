@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 513302d3-3be8-882f-5258-95529098f95d
 description: 数値の平方根を返します。
 ms.openlocfilehash: f9f31b9360248f002cac74dfb87ac3b292d34620
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349358"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425023"
 ---
 # <a name="sqrt-function"></a>SQRT 関数
 
@@ -28,13 +28,13 @@ SQRT (* **数値** *)
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _number_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |平方根を調べる数値を指定します。  <br/> |
+| _number_ <br/> |必須  <br/> |**数値** <br/> |平方根を調べる数値を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
-数値型 (Numeric)
+数値
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 数値が負の_数_である場合、SQRT 関数はエラー値 #NUM を返します。 
   

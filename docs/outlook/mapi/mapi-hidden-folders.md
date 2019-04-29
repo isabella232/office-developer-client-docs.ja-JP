@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 8b3b9c80-f7f4-4f37-bd6b-323469d020f1
 description: 'COM ms.assetid: 8b3b9c80-f7f4-4f37-bd6b-323469d020f1 description: "�ŏI�X�V��: 2011�N7��23��"'
 ms.openlocfilehash: 9f9daa2169a087cf962d09a7c135e2829c7cd1ee
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346747"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424246"
 ---
 # <a name="mapi-hidden-folders"></a>title: "��\���ɂ��� MAPI �t�H���_�[" ms.author: v-tirob author: v-tirob manager: soliver ms.date: 11/16/2014 ms.audience: Developer ms.topic: overview ms.prod: office-online-server localization_priority: Normal api_type:
 

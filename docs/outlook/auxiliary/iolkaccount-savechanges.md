@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 8f1ab61e-7d1c-50d5-ae21-8cb4b08d729c
 description: レジストリストアに書き込むことによって、アカウントオブジェクトへの変更をコミットします。
 ms.openlocfilehash: c23cefbbda62de9b7e159e500d95b8db5ff34ef4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322261"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425835"
 ---
 # <a name="iolkaccountsavechanges"></a>IOlkAccount::SaveChanges
 
@@ -42,7 +42,7 @@ _dwFlags_
 |E_ACCT_NOT_FOUND  <br/> |指定されたアカウントが見つかりません。  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |アカウント マネージャーが使用するために初期化されていません。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [IOlkAccount:: setprop](iolkaccount-setprop.md)を使用して、account プロパティの値を変更した後、 **IOlkAccount:: SaveChanges**を使用してそのような変更を保存します。 
   

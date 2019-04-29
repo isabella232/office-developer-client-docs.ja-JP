@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: c44457ca-997a-5315-44dd-4218e4203550
 description: 1 つのパス上で接する 2 つの連続したセグメントに適用される、円弧の半径を示します。たとえば、このセルを使用すると、四角形の角を丸くできます。丸みを設定するには、値と単位を入力します (数値と単位を組み合わせる)。
 ms.openlocfilehash: d64d3266e3dd2b0a3998955efe271aab04905fbf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32358584"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427011"
 ---
 # <a name="rounding-cell-line-format-section"></a>[Rounding] セル ([Line Format] セクション)
 
 1 つのパス上で接する 2 つの連続したセグメントに適用される、円弧の半径を示します。たとえば、このセルを使用すると、四角形の角を丸くできます。丸みを設定するには、値と単位を入力します (数値と単位を組み合わせる)。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この値は、[**線**] ダイアログボックスで設定することもできます ([**ホーム**] タブの [**図形**] グループで、[**線**] をクリックし、[**太さ**] をポイントして、[**その他の線**] をクリックします)。
   

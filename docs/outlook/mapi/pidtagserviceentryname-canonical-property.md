@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 783f08aa-fb5a-432d-b8bd-48d69f0e5c38
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2c771f1d97305271b70102c148e62f30512974fb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351073"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432472"
 ---
 # <a name="pidtagserviceentryname-canonical-property"></a>PidTagServiceEntryName 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32351073"
 |データの種類 :   <br/> |PT_STRING8  <br/> |
 |エリア:  <br/> |MAPI プロファイル  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 メッセージサービスの実装者は、メッセージサービスのエントリポイントを指定することをお勧めしますが、エントリポイントは必須ではありません。 ただし、関連する構成プロパティが存在する場合にのみ、エントリポイントを指定する必要があります。 これらのプロパティが存在しない場合、MAPI はエントリポイントが提供されていないことを前提としています。
   

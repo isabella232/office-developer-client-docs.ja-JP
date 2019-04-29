@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: f374d8d9-be8e-2489-d5fe-8a92e0ecfc6f
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6d7de4d6c14179ddaba4e2ad907f1acc1c53b125
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317179"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431996"
 ---
 # <a name="iostx--iunknown"></a>IOSTX : IUnknown
 
@@ -45,7 +45,7 @@ ms.locfileid: "32317179"
 |[SetSyncResult](iostx-setsyncresult.md) <br/> |同期の結果を設定します。  <br/> |
 | *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません。*  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 クライアントがローカルストアのフォルダーとフォルダーの内容をアップロードまたは同期すると、[レプリケーションステートマシンについて](about-the-replication-state-machine.md)の状態遷移図に示されているように、ローカルストアをある状態から別の状態に移動します。 クライアントがローカルストアをある状態から別の状態に移動する際のイベントの順序を次に示します。
   

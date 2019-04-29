@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 44bb4d34-ca96-4d5a-93fe-85e09bd7971d
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: ed5ea8bdfcbdaaa6b6abd81a39f0e8df50d3b314
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329562"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433424"
 ---
 # <a name="adding-or-deleting-providers-in-a-message-service"></a>メッセージサービスでのプロバイダーの追加または削除
 

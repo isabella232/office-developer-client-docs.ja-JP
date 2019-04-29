@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: f5dcc6d9-474a-9ecb-21f5-56415d934890
 description: データ型が Date のときに図形データに使用するカレンダーを指定します。
 ms.openlocfilehash: 2ddbd578053e2ae37514194450bd95dc9cdf441d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337507"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432759"
 ---
 # <a name="calendar-cell-shape-data-section"></a>[Calendar] セル ([Shape Data] セクション)
 
 データ型が Date のときに図形データに使用するカレンダーを指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 使用できる値は、0 (西暦)、1 (イスラム暦)、2 (ヘブライ太陰暦)、3 (台湾暦)、4 (和暦)、5 (タイ仏暦)、6 (韓国檀紀)、7 (サカ暦)、8 (英語 (音訳))、および 9 (フランス語 (音訳)) です。 
   

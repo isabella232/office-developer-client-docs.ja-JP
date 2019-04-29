@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: bc8f5469-e79f-4a68-73cb-d11c938353a4
 description: テキスト ブロックの右の枠線と、そのブロックに含まれるテキストとの間隔を指定します。 既定値は 0.1 インチです。
 ms.openlocfilehash: 7a9d2406792e9e57c6acd0e4291b624633e70dcb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326776"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433522"
 ---
 # <a name="rightmargin-cell-text-block-format-section"></a>[RightMargin] セル ([Text Block Format] セクション)
 
 テキスト ブロックの右の枠線と、そのブロックに含まれるテキストとの間隔を指定します。 既定値は 0.1 インチです。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この値は、図面の縮尺による影響を受けません。図面の縮尺を変更しても、右余白は変わりません。
   

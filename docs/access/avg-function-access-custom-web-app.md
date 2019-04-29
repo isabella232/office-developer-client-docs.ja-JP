@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: d432e823-a255-4860-9c8b-201b2e0476fd
 description: 指定したフィールドにある値の集合の平均値を計算します。
 ms.openlocfilehash: e67cde12e66f943d3b25fe9cb2fee4fe4aea760f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282335"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426724"
 ---
 # <a name="avg-function-access-custom-web-app"></a>Avg 関数 (Access カスタム web アプリ)
 
@@ -30,7 +30,7 @@ ms.locfileid: "32282335"
 |:-----|:-----|
 |NumericExpression  <br/> |そのフィールドのデータを使用して計算を実行する数値データを含むフィールドを示す文字列式を指定します。 *NumericExpression*のオペランドには、テーブルのフィールドの名前、変数、または関数を含めることができます (これは、組み込みまたはユーザー定義であっても、他の SQL 集計関数のいずれでもない場合があります)。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **Avg** 関数で計算される平均は、値の合計を値の個数で割った算術平均です。たとえば、平均運送料などを計算する場合に、 **Avg** 関数を使用します。 
   

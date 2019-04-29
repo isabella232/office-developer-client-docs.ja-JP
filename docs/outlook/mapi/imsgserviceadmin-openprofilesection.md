@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7f24910a-e14e-44a1-8477-d8968130ba74
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 32ebdea3a594b5adf5d46dc081098d3628ae145b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317399"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437113"
 ---
 # <a name="imsgserviceadminopenprofilesection"></a>IMsgServiceAdmin::OpenProfileSection
 
@@ -80,7 +80,7 @@ MAPI_E_NOT_FOUND
   
 > [要求されたプロファイル] セクションが存在しません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMsgServiceAdmin:: openprofile**のメソッドは、プロファイルセクション、 [IProfSect](iprofsectimapiprop.md)インターフェイスをサポートするオブジェクトを開きます。 プロファイルセクションは、セッションプロファイルに関する情報の読み取りおよび書き込みに使用されます。 
   

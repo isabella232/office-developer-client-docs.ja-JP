@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 482497ee-fe19-c2fa-53ce-bdb27b5d28bc
 description: 0.0 から1.0 へのランダムな浮動小数点値を返します。 関数が評価されるたびに、システムクロックに従って1分ごとに異なる数の値が返されます。
 ms.openlocfilehash: bab2fd74aff85be85f886e3ac8fe7df113664ae5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360005"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424526"
 ---
 # <a name="rand-function"></a>RAND 関数
 
@@ -28,7 +28,7 @@ RAND( )
 
 浮動小数点数
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この関数を使用すると、図形のプロパティを乱数値に設定することで、アニメーションの効果を出すことができます。
   

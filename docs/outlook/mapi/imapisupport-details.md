@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 1a62efa2-dd6b-4acb-a760-defa601c20c9
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: bdc57a6e951e54640fe3c638977c6a5f16986e68
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322359"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426780"
 ---
 # <a name="imapisupportdetails"></a>IMAPISupport::Details
 
@@ -97,7 +97,7 @@ S_OK
   
 > アドレス帳エントリに対して [詳細] ダイアログボックスが正常に表示されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport::D etails**メソッドは、アドレス帳プロバイダーサポートオブジェクトに対して実装されています。 アドレス帳プロバイダーは、アドレス帳の特定のエントリに関する詳細情報を表示するダイアログボックスを表示するために呼び出す**詳細情報**を提供します。 _lpfbuttoncallback_、 _lpfbuttoncallback_、および_lpszbuttontext_パラメーターを使用して、クライアント定義ボタンをダイアログボックスに追加できます。 ボタンがクリックされると、MAPI は_lpfbuttoncallback_が指すコールバック関数を呼び出し、ボタンのエントリ識別子と_lpfbuttoncallback_のデータの両方を渡します。 拡張ボタンが必要ない場合は、 _lpszbuttontext_を NULL にする必要があります。 
   

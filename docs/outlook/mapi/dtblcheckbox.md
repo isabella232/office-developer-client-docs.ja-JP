@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0dd12990-5431-4768-9d64-27d4ef6b7b20
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: ed0bbe986f374648e2ee85f3a0d2dfe7bc392e0f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287270"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436833"
 ---
 # <a name="dtblcheckbox"></a>DTBLCHECKBOX
 
@@ -42,7 +42,7 @@ typedef struct _DTBLCHECKBOX
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **ulblpszlabel**
   
@@ -60,7 +60,7 @@ MAPI_UNICODE
   
 > PT_BOOLEAN 型のプロパティのプロパティタグ。 このプロパティの値は、チェックボックスの状態によって影響を受けます。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **dtblcheckbox**構造体は、2つの状態 (オンボックス) または無効 (空のボックス) のいずれかを反映するコントロールのチェックボックスを記述します。 
   

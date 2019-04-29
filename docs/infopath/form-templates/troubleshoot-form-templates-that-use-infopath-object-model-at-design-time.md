@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 4179b235-e21d-4c37-ae2b-ad01388296ec
 description: ここでは、Microsoft.Office.Interop.InfoPath.SemiTrust 名前空間によって提供される InfoPath 2003 互換オブジェクト モデルを使用する、マネージ コード フォーム テンプレートのデザイン時およびデバッグ時に発生する可能性のある一般的なトラブルシューティングのシナリオについて説明します。
 ms.openlocfilehash: 106f12602bae86d85c2a7d2f920f59d50326c908
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303473"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436525"
 ---
 # <a name="troubleshoot-form-templates-that-use-the-infopath-object-model-at-design-time"></a>InfoPath オブジェクトモデルを使用するフォームテンプレートをデザイン時にトラブルシューティングする
 

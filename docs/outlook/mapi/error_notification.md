@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6c5bb383-f8e2-4d79-bcf2-aa86c130e8b1
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: f8d4fb6b8cd7ad0ebf1e7660a0f3c0602274fa10
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335736"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425443"
 ---
 # <a name="errornotification"></a>ERROR_NOTIFICATION
 
@@ -42,7 +42,7 @@ typedef struct _ERROR_NOTIFICATION
 } ERROR_NOTIFICATION;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **cbEntryID**
   
@@ -68,7 +68,7 @@ MAPI_UNICODE
   
 > エラーを説明する[MAPIERROR](mapierror.md)構造体へのポインター。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **ERROR_NOTIFICATION**構造体は、[通知](notification.md)構造の**info**メンバに含まれている構造体の和集合のメンバーのいずれかです。 **通知**構造の**info**メンバーに**ERROR_NOTIFICATION**構造体が含まれている場合、**通知**構造の**uleventtype**メンバーは_fnevCriticalError_に設定されます。
   

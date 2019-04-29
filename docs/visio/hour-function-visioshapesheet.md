@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 2a21d6f9-bad6-92ab-6d36-477bcb9d7f17
 description: datetime または expression の日の時間を表す 0 ~ 23 の整数を返します。
 ms.openlocfilehash: 1d0c6ec2bd80605401f44d2a5ef6e3d41bc72556
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329968"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429636"
 ---
 # <a name="hour-function-visioshapesheet"></a>HOUR 関数 (VisioShapeSheet)
 
@@ -32,7 +32,7 @@ _datetime_または_expression_の日の時間を表す 0 ~ 23 の整数を返�
 | _expression_ <br/> |必須  <br/> |**さまざま** <br/> |日付および時刻を算出する式を指定します。  <br/> |
 | _lcid_ <br/> |省略可能  <br/> |**数値** <br/> | 現地以外の日時を計算するときに使用するロケール識別子を指定します。 ロケール識別子は、システムのヘッダー ファイルに記述されている数字です。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 *datetime*および*expression*の日付コンポーネントは破棄されます。 
   

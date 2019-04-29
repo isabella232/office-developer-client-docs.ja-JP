@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: c6938986-a9f9-4ef4-9655-ded55b7357db
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: f0b217372f6b4848f83c993846cd08a81c7098e8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329461"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430904"
 ---
 # <a name="imapiformgetviewcontext"></a>IMAPIForm::GetViewContext
 
@@ -49,7 +49,7 @@ S_FALSE
   
 > フォームにビューコンテキストはありません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 フォーム閲覧者は**getviewcontext**を呼び出して、以前の[imapiform:: setviewcontext](imapiform-setviewcontext.md)への呼び出しで設定されたビューコンテキストへのポインターを取得します。 **setviewcontext**に対して前回の呼び出しが行われていない場合、 **getviewcontext**は_ppviewcontext_を NULL に設定します。 
   

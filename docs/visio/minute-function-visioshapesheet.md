@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 5a90cb16-7eef-8876-8e25-408787b16f58
 description: datetime または expression の分の部分を表す 0 ~ 59 の整数を返します。
 ms.openlocfilehash: 35fe1dc8d4026dd6c829a38504d9ba82d64edda2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283973"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436567"
 ---
 # <a name="minute-function-visioshapesheet"></a>MINUTE 関数 (VisioShapeSheet)
 
@@ -36,7 +36,7 @@ ms.locfileid: "32283973"
 
 整数
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _datetime_および_expression_の日付コンポーネントは破棄されます。 
   

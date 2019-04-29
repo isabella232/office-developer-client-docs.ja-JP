@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 7d917be4-65b1-002f-48cc-6d81916a1157
 description: 数値のアークサイン (正弦が数値である角度など) を返します。
 ms.openlocfilehash: a7585dc07053466203f11cc04ce249ceb62fbda0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341525"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432822"
 ---
 # <a name="asin-function"></a>ASIN 関数
 
@@ -28,9 +28,9 @@ ms.locfileid: "32341525"
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _number_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |角度のサインを指定します。  <br/> |
+| _number_ <br/> |必須  <br/> |**数値** <br/> |角度のサインを指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 入力値は、-1 < = *number* < = 1、または #NUM の範囲内である必要があります。 エラーを返します。 結果の角度は、-pi/2 < = *angle* < = π/2 ラジアン (-90 < = *angle* < = 90 °) の範囲になります。 
   

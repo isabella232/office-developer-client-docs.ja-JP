@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 3e506b29-c7e3-40d6-a08b-22fa87088c2d
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: fe87de4466413e317edea5d358c9e4769d0c5593
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348882"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424078"
 ---
 # <a name="iablogonunadvise"></a>IABLogon::Unadvise
 
@@ -45,7 +45,7 @@ S_OK
   
 > 通知登録が正常にキャンセルされました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 MAPI は、**アドバイズ**中止メソッドを呼び出して、コンテナー、メッセージングユーザー、または配布リストオブジェクトの通知の登録を取り消します。 
   

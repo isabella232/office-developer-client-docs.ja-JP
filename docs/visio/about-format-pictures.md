@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: df4c1c70-8b41-c046-7415-643188af0e06
 description: 値の表示方法を指定するには、書式形式を使用します。たとえば、小数点の右側または左側に表示される数値の桁数や、文字列を大文字と小文字のどちらで表示するかを制御できます。
 ms.openlocfilehash: 7043c9819f41ec2c08345c84010328be75677918
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344556"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436819"
 ---
 # <a name="about-format-pictures"></a>書式形式について
 

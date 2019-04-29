@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 59c84b1f-13b5-484b-b703-2fb9fcc6c7eb
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 55e6c8fb013e544ae04740aeaeb23ac23949cffb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286461"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425639"
 ---
 # <a name="pidtagprovidericon-canonical-property"></a>PidTagProviderIcon 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32286461"
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
 |エリア:  <br/> |MAPI メッセージストア  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 これらのプロパティは、オンライン状態の MAPI プロバイダーを表すカスタムアイコンを含むリソースファイルを指定します。また、オプションでオフライン状態の別のカスタムアイコンを指定することもできます。 Outlook では、これらのプロパティは常に Unicode 表記で要求されます。 
   

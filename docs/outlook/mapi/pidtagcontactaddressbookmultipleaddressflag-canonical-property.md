@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: aefc34c5-1beb-44cf-a455-90f466e157ce
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6fabb03d552f195c200b0ecbd8fd69f470c0e1fd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344892"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431569"
 ---
 # <a name="pidtagcontactaddressbookmultipleaddressflag-canonical-property"></a>PidTagContactAddressBookMultipleAddressFlag 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32344892"
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |エリア:  <br/> |連絡先のアドレス帳  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティが TRUE の場合、プロバイダーはメールアドレスのない連絡先を許可しません。 FALSE の場合、プロバイダーは、プライマリ電子メールアドレスがあるかどうかにかかわらず、すべての連絡先を表示します。 優先されるのは、プライマリ電子メールアドレスのみです。 これは連絡先アドレス帳コンテナーのプロパティで、連絡先アドレス帳コンテナーの列になります。
   

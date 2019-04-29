@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 5d908771-ec16-444d-a9b6-44cc75a4d715
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 7aff4ad57fd57b6f49ae0f7b7fd7933e5b814866
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321757"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425149"
 ---
 # <a name="imapiformmgrgetlasterror"></a>IMAPIFormMgr::GetLastError
 
@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > MAPI_UNICODE フラグが設定されていて、 **getlasterror**が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、 **getlasterror**が unicode のみをサポートしています。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapiformmgr:: GetLastError**メソッドは、失敗した前のメソッド呼び出しに関する情報を提供します。 呼び出し元は、 **MAPIERROR**構造のデータをダイアログボックスに含めることによって、エラーに関する詳細情報をユーザーに提供できます。 
   

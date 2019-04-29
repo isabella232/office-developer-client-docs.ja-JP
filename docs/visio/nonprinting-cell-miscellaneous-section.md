@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 59fe0887-2092-4fad-ea38-2aba354f3b92
 description: 選択した図形の印刷のオン/オフを切り替えます。
 ms.openlocfilehash: c3e1fc1b2d91fa4808f8ea89c904218c2236f5b0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357233"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437260"
 ---
 # <a name="nonprinting-cell-miscellaneous-section"></a>[NonPrinting] セル ([Miscellaneous] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32357233"
 | TRUE  <br/> | 印刷は無効になりますが、図形は図面ウィンドウに表示されます。  <br/> |
 | FALSE  <br/> | 印刷は有効になります。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 ガイドを選択し、その [NonPrinting] セルの値を FALSE に設定すると、ガイドを印刷できます。
   

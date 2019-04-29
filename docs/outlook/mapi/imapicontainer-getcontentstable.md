@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 88c7a666-875d-473a-b126-dbbb7009f7d9
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 28315c5a09eba32816a0b63513cb98d1c30a96bb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349288"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431107"
 ---
 # <a name="imapicontainergetcontentstable"></a>IMAPIContainer::GetContentsTable
 
@@ -78,7 +78,7 @@ MAPI_E_NO_SUPPORT
   
 > コンテナーには内容が含まれていないため、目次表を提供することはできません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMAPIContainer:: getcontentstable**メソッドは、コンテナーの contents テーブルへのポインターを返します。 contents テーブルには、コンテナー内のオブジェクトに関する概要情報が含まれています。 
   

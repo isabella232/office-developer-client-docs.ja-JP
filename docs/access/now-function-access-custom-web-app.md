@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 8842a555-d4c8-4528-b5f9-0ddf5691273d
 description: アプリケーションで定義されたタイムゾーンに従って、現在の日付/時刻型の値を返します。
 ms.openlocfilehash: 74b0a124e5715036146fedc9a6079d84a39ce84a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308100"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425716"
 ---
 # <a name="now-function-access-custom-web-app"></a>Now 関数 (Access カスタム web アプリ)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32308100"
 
  **Now** () 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **Now** 関数の結果は、式が含まれる列が更新された場合にのみ変更されます。結果は連続的に更新されません。 
   

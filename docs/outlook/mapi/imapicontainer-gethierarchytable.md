@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: d0c54092-86a3-47e0-8133-72e119e74b65
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: efc7f7a2fa703004afe361d766e0209ba40ffe46
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286940"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426199"
 ---
 # <a name="imapicontainergethierarchytable"></a>IMAPIContainer::GetHierarchyTable
 
@@ -74,7 +74,7 @@ MAPI_E_NO_SUPPORT
   
 > コンテナーは子コンテナーを持たず、階層テーブルを提供できません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMAPIContainer:: GetHierarchyTable**メソッドは、コンテナーの階層テーブルへのポインターを返します。 階層テーブルは、コンテナー内の子コンテナーに関する概要情報を保持します。 フォルダー階層テーブルは、サブフォルダーに関する情報を保持します。アドレス帳階層テーブルは、子アドレス帳コンテナーおよび配布リストに関する情報を保持します。 
   
