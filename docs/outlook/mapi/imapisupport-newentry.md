@@ -13,19 +13,19 @@ api_type:
 ms.assetid: 588d002b-8412-4ab9-9757-04ad89e0a6f8
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 3468e4a92787e440f230d60ab31f37526fe7d5e8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316645"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405458"
 ---
-# <a name="imapisupportnewentry"></a><span data-ttu-id="ca6ee-103">IMAPISupport::NewEntry</span><span class="sxs-lookup"><span data-stu-id="ca6ee-103">IMAPISupport::NewEntry</span></span>
+# <a name="imapisupportnewentry"></a><span data-ttu-id="16633-103">IMAPISupport::NewEntry</span><span class="sxs-lookup"><span data-stu-id="16633-103">IMAPISupport::NewEntry</span></span>
 
   
   
-<span data-ttu-id="ca6ee-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ca6ee-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="16633-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="16633-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="ca6ee-105">アドレス帳コンテナーまたは送信メッセージの受信者リストに、新しい受信者を直接追加します。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-105">Adds a new recipient directly to an address book container or to the recipient list of an outgoing message.</span></span>
+<span data-ttu-id="16633-105">アドレス帳コンテナーまたは送信メッセージの受信者リストに、新しい受信者を直接追加します。</span><span class="sxs-lookup"><span data-stu-id="16633-105">Adds a new recipient directly to an address book container or to the recipient list of an outgoing message.</span></span>
   
 ```cpp
 HRESULT NewEntry(
@@ -40,79 +40,79 @@ HRESULT NewEntry(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="ca6ee-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ca6ee-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="16633-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="16633-106">Parameters</span></span>
 
- <span data-ttu-id="ca6ee-107">_uluiparam_</span><span class="sxs-lookup"><span data-stu-id="ca6ee-107">_ulUIParam_</span></span>
+ <span data-ttu-id="16633-107">_uluiparam_</span><span class="sxs-lookup"><span data-stu-id="16633-107">_ulUIParam_</span></span>
   
-> <span data-ttu-id="ca6ee-108">順番ダイアログボックスの親ウィンドウへのハンドル。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-108">[in] A handle to the parent window of the dialog box.</span></span>
+> <span data-ttu-id="16633-108">順番ダイアログボックスの親ウィンドウへのハンドル。</span><span class="sxs-lookup"><span data-stu-id="16633-108">[in] A handle to the parent window of the dialog box.</span></span>
     
- <span data-ttu-id="ca6ee-109">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="ca6ee-109">_ulFlags_</span></span>
+ <span data-ttu-id="16633-109">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="16633-109">_ulFlags_</span></span>
   
-> <span data-ttu-id="ca6ee-110">[����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B</span><span class="sxs-lookup"><span data-stu-id="ca6ee-110">[in] Reserved; must be zero.</span></span>
+> <span data-ttu-id="16633-110">[����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B</span><span class="sxs-lookup"><span data-stu-id="16633-110">[in] Reserved; must be zero.</span></span>
     
- <span data-ttu-id="ca6ee-111">_cbeidcontainer_</span><span class="sxs-lookup"><span data-stu-id="ca6ee-111">_cbEIDContainer_</span></span>
+ <span data-ttu-id="16633-111">_cbeidcontainer_</span><span class="sxs-lookup"><span data-stu-id="16633-111">_cbEIDContainer_</span></span>
   
-> <span data-ttu-id="ca6ee-112">順番_lpeidcontainer_パラメーターで指定されたエントリ識別子のバイト数。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-112">[in] The byte count in the entry identifier pointed to by the  _lpEIDContainer_ parameter.</span></span> 
+> <span data-ttu-id="16633-112">順番_lpeidcontainer_パラメーターで指定されたエントリ識別子のバイト数。</span><span class="sxs-lookup"><span data-stu-id="16633-112">[in] The byte count in the entry identifier pointed to by the  _lpEIDContainer_ parameter.</span></span> 
     
- <span data-ttu-id="ca6ee-113">_lpeidcontainer_</span><span class="sxs-lookup"><span data-stu-id="ca6ee-113">_lpEIDContainer_</span></span>
+ <span data-ttu-id="16633-113">_lpeidcontainer_</span><span class="sxs-lookup"><span data-stu-id="16633-113">_lpEIDContainer_</span></span>
   
-> <span data-ttu-id="ca6ee-114">順番新しいエントリを受け取るコンテナーのエントリ識別子へのポインター。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-114">[in] A pointer to the entry identifier of the container to receive the new entry.</span></span> <span data-ttu-id="ca6ee-115">_cbeidcontainer_が0で_lpeidcontainer_が NULL の場合、 **newentry**は、 [imapisupport:: createoneoff](imapisupport-createoneoff.md)メソッドへの呼び出しによって生成されたものと同じ種類の1回限りのエントリ id を作成します。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-115">If  _cbEIDContainer_ is 0 and  _lpEIDContainer_ is NULL, **NewEntry** creates a one-off entry identifier that is the same type as is generated by a call to the [IMAPISupport::CreateOneOff](imapisupport-createoneoff.md) method.</span></span> 
+> <span data-ttu-id="16633-114">順番新しいエントリを受け取るコンテナーのエントリ識別子へのポインター。</span><span class="sxs-lookup"><span data-stu-id="16633-114">[in] A pointer to the entry identifier of the container to receive the new entry.</span></span> <span data-ttu-id="16633-115">_cbeidcontainer_が0で_lpeidcontainer_が NULL の場合、 **newentry**は、 [imapisupport:: createoneoff](imapisupport-createoneoff.md)メソッドへの呼び出しによって生成されたものと同じ種類の1回限りのエントリ id を作成します。</span><span class="sxs-lookup"><span data-stu-id="16633-115">If  _cbEIDContainer_ is 0 and  _lpEIDContainer_ is NULL, **NewEntry** creates a one-off entry identifier that is the same type as is generated by a call to the [IMAPISupport::CreateOneOff](imapisupport-createoneoff.md) method.</span></span> 
     
- <span data-ttu-id="ca6ee-116">_cbeidnewentrytpl_</span><span class="sxs-lookup"><span data-stu-id="ca6ee-116">_cbEIDNewEntryTpl_</span></span>
+ <span data-ttu-id="16633-116">_cbeidnewentrytpl_</span><span class="sxs-lookup"><span data-stu-id="16633-116">_cbEIDNewEntryTpl_</span></span>
   
-> <span data-ttu-id="ca6ee-117">順番_lpeidnewentrytpl_パラメーターによって指摘されたエントリ識別子のバイト数。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-117">[in] The byte count in the entry identifier pointed to by the  _lpEIDNewEntryTpl_ parameter.</span></span> 
+> <span data-ttu-id="16633-117">順番_lpeidnewentrytpl_パラメーターによって指摘されたエントリ識別子のバイト数。</span><span class="sxs-lookup"><span data-stu-id="16633-117">[in] The byte count in the entry identifier pointed to by the  _lpEIDNewEntryTpl_ parameter.</span></span> 
     
- <span data-ttu-id="ca6ee-118">_lpeidnewentrytpl_</span><span class="sxs-lookup"><span data-stu-id="ca6ee-118">_lpEIDNewEntryTpl_</span></span>
+ <span data-ttu-id="16633-118">_lpeidnewentrytpl_</span><span class="sxs-lookup"><span data-stu-id="16633-118">_lpEIDNewEntryTpl_</span></span>
   
-> <span data-ttu-id="ca6ee-119">順番新しいエントリを作成するために使用するテンプレートのエントリ識別子へのポインター。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-119">[in] A pointer to the entry identifier of the template to be used to create the new entry.</span></span> <span data-ttu-id="ca6ee-120">_cbeidnewentrytpl_が0で、 _lpeidnewentrytpl_が NULL の場合、 **newentry**はダイアログボックスを表示して、ユーザーが新しいエントリを追加するためにテンプレートのリストから選択できるようにします。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-120">If  _cbEIDNewEntryTpl_ is 0 and  _lpEIDNewEntryTpl_ is NULL, **NewEntry** displays a dialog box that enables the user to select from a list of templates for adding new entries.</span></span> 
+> <span data-ttu-id="16633-119">順番新しいエントリを作成するために使用するテンプレートのエントリ識別子へのポインター。</span><span class="sxs-lookup"><span data-stu-id="16633-119">[in] A pointer to the entry identifier of the template to be used to create the new entry.</span></span> <span data-ttu-id="16633-120">_cbeidnewentrytpl_が0で、 _lpeidnewentrytpl_が NULL の場合、 **newentry**はダイアログボックスを表示して、ユーザーが新しいエントリを追加するためにテンプレートのリストから選択できるようにします。</span><span class="sxs-lookup"><span data-stu-id="16633-120">If  _cbEIDNewEntryTpl_ is 0 and  _lpEIDNewEntryTpl_ is NULL, **NewEntry** displays a dialog box that enables the user to select from a list of templates for adding new entries.</span></span> 
     
- <span data-ttu-id="ca6ee-121">_lpcbEIDNewEntry_</span><span class="sxs-lookup"><span data-stu-id="ca6ee-121">_lpcbEIDNewEntry_</span></span>
+ <span data-ttu-id="16633-121">_lpcbEIDNewEntry_</span><span class="sxs-lookup"><span data-stu-id="16633-121">_lpcbEIDNewEntry_</span></span>
   
-> <span data-ttu-id="ca6ee-122">読み上げ_lppeidnewentry_パラメーターによって示されるエントリ識別子のバイト数へのポインター。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-122">[out] A pointer to the byte count in the entry identifier pointed to by the  _lppEIDNewEntry_ parameter.</span></span> 
+> <span data-ttu-id="16633-122">読み上げ_lppeidnewentry_パラメーターによって示されるエントリ識別子のバイト数へのポインター。</span><span class="sxs-lookup"><span data-stu-id="16633-122">[out] A pointer to the byte count in the entry identifier pointed to by the  _lppEIDNewEntry_ parameter.</span></span> 
     
- <span data-ttu-id="ca6ee-123">_lppeidnewentry_</span><span class="sxs-lookup"><span data-stu-id="ca6ee-123">_lppEIDNewEntry_</span></span>
+ <span data-ttu-id="16633-123">_lppeidnewentry_</span><span class="sxs-lookup"><span data-stu-id="16633-123">_lppEIDNewEntry_</span></span>
   
-> <span data-ttu-id="ca6ee-124">読み上げ新しく作成されたエントリのエントリ識別子へのポインターへのポインター。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-124">[out] A pointer to a pointer to the entry identifier of the newly created entry.</span></span>
+> <span data-ttu-id="16633-124">読み上げ新しく作成されたエントリのエントリ識別子へのポインターへのポインター。</span><span class="sxs-lookup"><span data-stu-id="16633-124">[out] A pointer to a pointer to the entry identifier of the newly created entry.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="ca6ee-125">戻り値</span><span class="sxs-lookup"><span data-stu-id="ca6ee-125">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="16633-125">戻り値</span><span class="sxs-lookup"><span data-stu-id="16633-125">Return value</span></span>
 
-<span data-ttu-id="ca6ee-126">S_OK</span><span class="sxs-lookup"><span data-stu-id="ca6ee-126">S_OK</span></span> 
+<span data-ttu-id="16633-126">S_OK</span><span class="sxs-lookup"><span data-stu-id="16633-126">S_OK</span></span> 
   
-> <span data-ttu-id="ca6ee-127">新しいエントリが正常に作成されました。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-127">The new entry was successfully created.</span></span>
+> <span data-ttu-id="16633-127">新しいエントリが正常に作成されました。</span><span class="sxs-lookup"><span data-stu-id="16633-127">The new entry was successfully created.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="ca6ee-128">解説</span><span class="sxs-lookup"><span data-stu-id="ca6ee-128">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="16633-128">注釈</span><span class="sxs-lookup"><span data-stu-id="16633-128">Remarks</span></span>
 
-<span data-ttu-id="ca6ee-129">アドレス帳プロバイダーサポートオブジェクトには、 **imapisupport:: newentry**メソッドが実装されています。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-129">The **IMAPISupport::NewEntry** method is implemented for address book provider support objects.</span></span> <span data-ttu-id="ca6ee-130">アドレス帳プロバイダーは\*\*\*\* 、新しいアドレス帳エントリを作成してコンテナーに直接追加したり、送信メッセージのアドレス指定に使用したりします。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-130">Address book providers call **NewEntry** to create a new address book entry to be added directly into a container or to be used to address an outgoing message.</span></span> 
+<span data-ttu-id="16633-129">アドレス帳プロバイダーサポートオブジェクトには、 **imapisupport:: newentry**メソッドが実装されています。</span><span class="sxs-lookup"><span data-stu-id="16633-129">The **IMAPISupport::NewEntry** method is implemented for address book provider support objects.</span></span> <span data-ttu-id="16633-130">アドレス帳プロバイダーは\*\*\*\* 、新しいアドレス帳エントリを作成してコンテナーに直接追加したり、送信メッセージのアドレス指定に使用したりします。</span><span class="sxs-lookup"><span data-stu-id="16633-130">Address book providers call **NewEntry** to create a new address book entry to be added directly into a container or to be used to address an outgoing message.</span></span> 
   
-## <a name="notes-to-callers"></a><span data-ttu-id="ca6ee-131">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="ca6ee-131">Notes to callers</span></span>
+## <a name="notes-to-callers"></a><span data-ttu-id="16633-131">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="16633-131">Notes to callers</span></span>
 
-<span data-ttu-id="ca6ee-132">新しいエントリを特定のコンテナーに追加する場合は、 _lpeidcontainer_をコンテナーのエントリ id と_cbeidcontainer_に、エントリ識別子のバイト数に設定します。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-132">If you want the new entry to be added to a specific container, set  _lpEIDContainer_ to the container's entry identifier and  _cbEIDContainer_ to the byte count in the entry identifier.</span></span> 
+<span data-ttu-id="16633-132">新しいエントリを特定のコンテナーに追加する場合は、 _lpeidcontainer_をコンテナーのエントリ id と_cbeidcontainer_に、エントリ識別子のバイト数に設定します。</span><span class="sxs-lookup"><span data-stu-id="16633-132">If you want the new entry to be added to a specific container, set  _lpEIDContainer_ to the container's entry identifier and  _cbEIDContainer_ to the byte count in the entry identifier.</span></span> 
   
-<span data-ttu-id="ca6ee-133">送信メッセージの受信者一覧に新しいエントリを追加する場合は、 _lpeidcontainer_を NULL に、 _cbeidcontainer_を0に設定します。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-133">If you want the new entry to be added to the recipient list of an outgoing message, set  _lpEIDContainer_ to NULL and  _cbEIDContainer_ to 0.</span></span> 
+<span data-ttu-id="16633-133">送信メッセージの受信者一覧に新しいエントリを追加する場合は、 _lpeidcontainer_を NULL に、 _cbeidcontainer_を0に設定します。</span><span class="sxs-lookup"><span data-stu-id="16633-133">If you want the new entry to be added to the recipient list of an outgoing message, set  _lpEIDContainer_ to NULL and  _cbEIDContainer_ to 0.</span></span> 
   
-<span data-ttu-id="ca6ee-134">クライアントアプリケーションのユーザーが作成するエントリの種類を選択できるようにする場合は、 _cbeidnewentrytpl_では0を、 _lpeidnewentrytpl_では NULL を渡します。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-134">If you want to allow the user of a client application to select the type of entry to be created, pass 0 in  _cbEIDNewEntryTpl_ and NULL in  _lpEIDNewEntryTpl_.</span></span> <span data-ttu-id="ca6ee-135">**newentry**は、mapi の1回限りのテーブル (mapi と、セッションでサポートされている各アドレス帳プロバイダー) の一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-135">**NewEntry** displays the MAPI one-off table, a list of templates that MAPI and each of the address book providers in the session support.</span></span> <span data-ttu-id="ca6ee-136">各テンプレートは、1つまたは複数のアドレスの種類の受信者エントリを作成できます。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-136">Each template can create a recipient entry for one or more address types.</span></span> 
+<span data-ttu-id="16633-134">クライアントアプリケーションのユーザーが作成するエントリの種類を選択できるようにする場合は、 _cbeidnewentrytpl_では0を、 _lpeidnewentrytpl_では NULL を渡します。</span><span class="sxs-lookup"><span data-stu-id="16633-134">If you want to allow the user of a client application to select the type of entry to be created, pass 0 in  _cbEIDNewEntryTpl_ and NULL in  _lpEIDNewEntryTpl_.</span></span> <span data-ttu-id="16633-135">**newentry**は、mapi の1回限りのテーブル (mapi と、セッションでサポートされている各アドレス帳プロバイダー) の一覧を表示します。</span><span class="sxs-lookup"><span data-stu-id="16633-135">**NewEntry** displays the MAPI one-off table, a list of templates that MAPI and each of the address book providers in the session support.</span></span> <span data-ttu-id="16633-136">各テンプレートは、1つまたは複数のアドレスの種類の受信者エントリを作成できます。</span><span class="sxs-lookup"><span data-stu-id="16633-136">Each template can create a recipient entry for one or more address types.</span></span> 
   
-<span data-ttu-id="ca6ee-137">新しいエントリのエントリ識別子を保持する場合は、 _lpcbEIDNewEntry_および_lppeidnewentry_パラメーターに有効なポインターを渡します。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-137">If you want to retain the entry identifier of the new entry, pass valid pointers in the  _lpcbEIDNewEntry_ and  _lppEIDNewEntry_ parameters.</span></span> <span data-ttu-id="ca6ee-138">[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出すことで、このエントリ識別子を解放する責任があります。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-138">You are responsible for freeing this entry identifier when you are finished with it by calling the [MAPIFreeBuffer](mapifreebuffer.md) function.</span></span> 
+<span data-ttu-id="16633-137">新しいエントリのエントリ識別子を保持する場合は、 _lpcbEIDNewEntry_および_lppeidnewentry_パラメーターに有効なポインターを渡します。</span><span class="sxs-lookup"><span data-stu-id="16633-137">If you want to retain the entry identifier of the new entry, pass valid pointers in the  _lpcbEIDNewEntry_ and  _lppEIDNewEntry_ parameters.</span></span> <span data-ttu-id="16633-138">[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出すことで、このエントリ識別子を解放する責任があります。</span><span class="sxs-lookup"><span data-stu-id="16633-138">You are responsible for freeing this entry identifier when you are finished with it by calling the [MAPIFreeBuffer](mapifreebuffer.md) function.</span></span> 
   
-<span data-ttu-id="ca6ee-139">特定のテンプレートを使用して、変更可能なコンテナーに新しいエントリを追加するには、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-139">To use a particular template to add a new entry to a modifiable container, use the following procedure:</span></span>
+<span data-ttu-id="16633-139">特定のテンプレートを使用して、変更可能なコンテナーに新しいエントリを追加するには、次の手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="16633-139">To use a particular template to add a new entry to a modifiable container, use the following procedure:</span></span>
   
-1. <span data-ttu-id="ca6ee-140">[imapisupport:: openentry](imapisupport-openentry.md)メソッドを呼び出して、宛先コンテナーを開き、lな_tryid_パラメーターをコンテナーのエントリ識別子に設定します。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-140">Call the [IMAPISupport::OpenEntry](imapisupport-openentry.md) method to open the destination container, and set the  _lpEntryID_ parameter to the entry identifier of the container.</span></span> 
+1. <span data-ttu-id="16633-140">[imapisupport:: openentry](imapisupport-openentry.md)メソッドを呼び出して、宛先コンテナーを開き、lな_tryid_パラメーターをコンテナーのエントリ識別子に設定します。</span><span class="sxs-lookup"><span data-stu-id="16633-140">Call the [IMAPISupport::OpenEntry](imapisupport-openentry.md) method to open the destination container, and set the  _lpEntryID_ parameter to the entry identifier of the container.</span></span> 
     
-2. <span data-ttu-id="ca6ee-141">転送先コンテナーの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出し、 _ulPropTag_パラメーターを**PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) に、 _lpiid_パラメーターを IID_IMAPITable に設定します。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-141">Call the destination container's [IMAPIProp::OpenProperty](imapiprop-openproperty.md) method, and set the  _ulPropTag_ parameter to **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) and the  _lpiid_ parameter to IID_IMAPITable.</span></span> <span data-ttu-id="ca6ee-142">コンテナーは、新しいエントリを作成するためにサポートされているすべてのテンプレートを一覧表示する1回限りのテーブルを返します。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-142">The container will return a one-off table that lists all of the templates that it supports for creating new entries.</span></span> 
+2. <span data-ttu-id="16633-141">転送先コンテナーの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出し、 _ulPropTag_パラメーターを**PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) に、 _lpiid_パラメーターを IID_IMAPITable に設定します。</span><span class="sxs-lookup"><span data-stu-id="16633-141">Call the destination container's [IMAPIProp::OpenProperty](imapiprop-openproperty.md) method, and set the  _ulPropTag_ parameter to **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) and the  _lpiid_ parameter to IID_IMAPITable.</span></span> <span data-ttu-id="16633-142">コンテナーは、新しいエントリを作成するためにサポートされているすべてのテンプレートを一覧表示する1回限りのテーブルを返します。</span><span class="sxs-lookup"><span data-stu-id="16633-142">The container will return a one-off table that lists all of the templates that it supports for creating new entries.</span></span> 
     
-3. <span data-ttu-id="ca6ee-143">作成する特定の種類のエントリのテンプレートを表す行を取得します。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-143">Retrieve the row that represents the template for the particular type of entry you want to create.</span></span> <span data-ttu-id="ca6ee-144">**PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) 列は、テンプレートでサポートされているアドレスの種類を示します。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-144">The **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) column indicates the address type that is supported by the template.</span></span> 
+3. <span data-ttu-id="16633-143">作成する特定の種類のエントリのテンプレートを表す行を取得します。</span><span class="sxs-lookup"><span data-stu-id="16633-143">Retrieve the row that represents the template for the particular type of entry you want to create.</span></span> <span data-ttu-id="16633-144">**PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) 列は、テンプレートでサポートされているアドレスの種類を示します。</span><span class="sxs-lookup"><span data-stu-id="16633-144">The **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) column indicates the address type that is supported by the template.</span></span> 
     
-4. <span data-ttu-id="ca6ee-145">**imapisupport:: newentry**を呼び出し、 _lpeidnewentrytpl_パラメーターを、選択したテンプレートのエントリ識別子に設定します。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-145">Call **IMAPISupport::NewEntry** and set the  _lpEIDNewEntryTpl_ parameter to the entry identifier of the selected template.</span></span> <span data-ttu-id="ca6ee-146">エントリ識別子は、1回限りのテーブルのテンプレートの行の**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) 列です。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-146">The entry identifier is the **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) column from the template's row in the one-off table.</span></span> <span data-ttu-id="ca6ee-147">_lpeidcontainer_で、 _cbeidcontainer_に0を渡し、NULL を渡します。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-147">Pass 0 in  _cbEIDContainer_ and NULL in  _lpEIDContainer_.</span></span> <span data-ttu-id="ca6ee-148">新しいエントリのエントリ識別子を保持する場合は、 _lppeidnewentry_パラメーターに有効なポインターを渡します。</span><span class="sxs-lookup"><span data-stu-id="ca6ee-148">Pass a valid pointer in the  _lppEIDNewEntry_ parameter if you want to retain the new entry's entry identifier.</span></span> 
+4. <span data-ttu-id="16633-145">**imapisupport:: newentry**を呼び出し、 _lpeidnewentrytpl_パラメーターを、選択したテンプレートのエントリ識別子に設定します。</span><span class="sxs-lookup"><span data-stu-id="16633-145">Call **IMAPISupport::NewEntry** and set the  _lpEIDNewEntryTpl_ parameter to the entry identifier of the selected template.</span></span> <span data-ttu-id="16633-146">エントリ識別子は、1回限りのテーブルのテンプレートの行の**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) 列です。</span><span class="sxs-lookup"><span data-stu-id="16633-146">The entry identifier is the **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) column from the template's row in the one-off table.</span></span> <span data-ttu-id="16633-147">_lpeidcontainer_で、 _cbeidcontainer_に0を渡し、NULL を渡します。</span><span class="sxs-lookup"><span data-stu-id="16633-147">Pass 0 in  _cbEIDContainer_ and NULL in  _lpEIDContainer_.</span></span> <span data-ttu-id="16633-148">新しいエントリのエントリ識別子を保持する場合は、 _lppeidnewentry_パラメーターに有効なポインターを渡します。</span><span class="sxs-lookup"><span data-stu-id="16633-148">Pass a valid pointer in the  _lppEIDNewEntry_ parameter if you want to retain the new entry's entry identifier.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="ca6ee-149">関連項目</span><span class="sxs-lookup"><span data-stu-id="ca6ee-149">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="16633-149">関連項目</span><span class="sxs-lookup"><span data-stu-id="16633-149">See also</span></span>
 
 
 
-[<span data-ttu-id="ca6ee-150">IMAPIProp::OpenProperty</span><span class="sxs-lookup"><span data-stu-id="ca6ee-150">IMAPIProp::OpenProperty</span></span>](imapiprop-openproperty.md)
+[<span data-ttu-id="16633-150">IMAPIProp::OpenProperty</span><span class="sxs-lookup"><span data-stu-id="16633-150">IMAPIProp::OpenProperty</span></span>](imapiprop-openproperty.md)
   
-[<span data-ttu-id="ca6ee-151">IMAPISupport::OpenEntry</span><span class="sxs-lookup"><span data-stu-id="ca6ee-151">IMAPISupport::OpenEntry</span></span>](imapisupport-openentry.md)
+[<span data-ttu-id="16633-151">IMAPISupport::OpenEntry</span><span class="sxs-lookup"><span data-stu-id="16633-151">IMAPISupport::OpenEntry</span></span>](imapisupport-openentry.md)
   
-[<span data-ttu-id="ca6ee-152">PidTagCreateTemplates 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="ca6ee-152">PidTagCreateTemplates Canonical Property</span></span>](pidtagcreatetemplates-canonical-property.md)
+[<span data-ttu-id="16633-152">PidTagCreateTemplates 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="16633-152">PidTagCreateTemplates Canonical Property</span></span>](pidtagcreatetemplates-canonical-property.md)
   
-[<span data-ttu-id="ca6ee-153">IMAPISupport: IUnknown</span><span class="sxs-lookup"><span data-stu-id="ca6ee-153">IMAPISupport : IUnknown</span></span>](imapisupportiunknown.md)
+[<span data-ttu-id="16633-153">IMAPISupport: IUnknown</span><span class="sxs-lookup"><span data-stu-id="16633-153">IMAPISupport : IUnknown</span></span>](imapisupportiunknown.md)
 

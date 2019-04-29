@@ -10,14 +10,14 @@ localization_priority: Normal
 ms.assetid: 2a032f5f-1094-f536-cbd8-7e791b7fa55d
 description: ビットマップ (ピクセルで構成されたイメージ) のガンマ、明るさ、コントラスト、ぼかし、鮮明さ、およびノイズ除去の値が含まれます。ビットマップのオブジェクトの [シェイプシート] ウィンドウにのみ表示されます。
 ms.openlocfilehash: 32d16e7d7fb308c211c9493720d8a972202d1a71
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344745"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417323"
 ---
-# <a name="image-properties-section"></a><span data-ttu-id="11d85-103">[Image Properties] セクション</span><span class="sxs-lookup"><span data-stu-id="11d85-103">Image Properties Section</span></span>
+# <a name="image-properties-section"></a><span data-ttu-id="7534a-103">[Image Properties] セクション</span><span class="sxs-lookup"><span data-stu-id="7534a-103">Image Properties Section</span></span>
 
-<span data-ttu-id="11d85-104">ビットマップ (ピクセルで構成されたイメージ) のガンマ、明るさ、コントラスト、ぼかし、鮮明さ、およびノイズ除去の値が含まれます。ビットマップのオブジェクトの [シェイプシート] ウィンドウにのみ表示されます。</span><span class="sxs-lookup"><span data-stu-id="11d85-104">Contains the gamma, brightness, contrast, blur, sharpen, and denoise values for bitmaps (an image that consists of pixels) and appears in the ShapeSheet window only for such objects.</span></span>
+<span data-ttu-id="7534a-104">ビットマップ (ピクセルで構成されたイメージ) のガンマ、明るさ、コントラスト、ぼかし、鮮明さ、およびノイズ除去の値が含まれます。ビットマップのオブジェクトの [シェイプシート] ウィンドウにのみ表示されます。</span><span class="sxs-lookup"><span data-stu-id="7534a-104">Contains the gamma, brightness, contrast, blur, sharpen, and denoise values for bitmaps (an image that consists of pixels) and appears in the ShapeSheet window only for such objects.</span></span>
   
 

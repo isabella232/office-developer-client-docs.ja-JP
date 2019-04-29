@@ -8,35 +8,35 @@ localization_priority: Normal
 ms.assetid: b3880511-dd27-4dc2-9e50-a49084ef8195
 description: 図形を置換操作に使用できるかどうか (ターゲット図形または置換後の図形のいずれかとして) を示します。
 ms.openlocfilehash: 8b0e3175cacd9b906d91a4185dcd98fad604d8bf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348224"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404142"
 ---
-# <a name="lockreplace-cell-protection-section"></a><span data-ttu-id="e56e4-103">[LockReplace] セル ([保護] セクション)</span><span class="sxs-lookup"><span data-stu-id="e56e4-103">LockReplace Cell (Protection Section)</span></span>
+# <a name="lockreplace-cell-protection-section"></a><span data-ttu-id="e28f5-103">[LockReplace] セル ([保護] セクション)</span><span class="sxs-lookup"><span data-stu-id="e28f5-103">LockReplace Cell (Protection Section)</span></span>
 
-<span data-ttu-id="e56e4-104">図形を置換操作に使用できるかどうか (ターゲット図形または置換後の図形のいずれかとして) を示します。</span><span class="sxs-lookup"><span data-stu-id="e56e4-104">Indicates whether a shape can participate in a replacement operation (as either a target or a replacement shape).</span></span> 
+<span data-ttu-id="e28f5-104">図形を置換操作に使用できるかどうか (ターゲット図形または置換後の図形のいずれかとして) を示します。</span><span class="sxs-lookup"><span data-stu-id="e28f5-104">Indicates whether a shape can participate in a replacement operation (as either a target or a replacement shape).</span></span> 
   
-|<span data-ttu-id="e56e4-105">**値**</span><span class="sxs-lookup"><span data-stu-id="e56e4-105">**Value**</span></span>|<span data-ttu-id="e56e4-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="e56e4-106">**Description**</span></span>|
+|<span data-ttu-id="e28f5-105">**値**</span><span class="sxs-lookup"><span data-stu-id="e28f5-105">**Value**</span></span>|<span data-ttu-id="e28f5-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="e28f5-106">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="e56e4-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="e56e4-107">TRUE</span></span>  <br/> |<span data-ttu-id="e56e4-108">図形は置換できません。または、置換後の図形として使用できません。</span><span class="sxs-lookup"><span data-stu-id="e56e4-108">The shape cannot be replaced or be used as a replacement shape.</span></span>  <br/> <span data-ttu-id="e56e4-109">キャンバス上の図形では、図形を選択すると [**図形の変更**] ボタンが無効化されています。</span><span class="sxs-lookup"><span data-stu-id="e56e4-109">For a shape on the canvas, the **Change Shape** button is disabled when the shape is selected.</span></span>  <br/> <span data-ttu-id="e56e4-110">ステンシル上の図形の場合、[**図形の変更**] ボタンをクリックすると、その図形は置換後の図形として表示されません。</span><span class="sxs-lookup"><span data-stu-id="e56e4-110">For a shape on a stencil, the shape does not appear as a replacement shape when the **Change Shape** button is clicked.</span></span>  <br/> |
-|<span data-ttu-id="e56e4-111">FALSE</span><span class="sxs-lookup"><span data-stu-id="e56e4-111">FALSE</span></span>  <br/> |<span data-ttu-id="e56e4-112">図形は置換できます。または置換後の図形として使用できます。</span><span class="sxs-lookup"><span data-stu-id="e56e4-112">The shape can be replaced or used as a replacement shape.</span></span>  <br/> |
+|<span data-ttu-id="e28f5-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="e28f5-107">TRUE</span></span>  <br/> |<span data-ttu-id="e28f5-108">図形は置換できません。または、置換後の図形として使用できません。</span><span class="sxs-lookup"><span data-stu-id="e28f5-108">The shape cannot be replaced or be used as a replacement shape.</span></span>  <br/> <span data-ttu-id="e28f5-109">キャンバス上の図形では、図形を選択すると [**図形の変更**] ボタンが無効化されています。</span><span class="sxs-lookup"><span data-stu-id="e28f5-109">For a shape on the canvas, the **Change Shape** button is disabled when the shape is selected.</span></span>  <br/> <span data-ttu-id="e28f5-110">ステンシル上の図形の場合、[**図形の変更**] ボタンをクリックすると、その図形は置換後の図形として表示されません。</span><span class="sxs-lookup"><span data-stu-id="e28f5-110">For a shape on a stencil, the shape does not appear as a replacement shape when the **Change Shape** button is clicked.</span></span>  <br/> |
+|<span data-ttu-id="e28f5-111">FALSE</span><span class="sxs-lookup"><span data-stu-id="e28f5-111">FALSE</span></span>  <br/> |<span data-ttu-id="e28f5-112">図形は置換できます。または置換後の図形として使用できます。</span><span class="sxs-lookup"><span data-stu-id="e28f5-112">The shape can be replaced or used as a replacement shape.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="e56e4-113">解説</span><span class="sxs-lookup"><span data-stu-id="e56e4-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e28f5-113">注釈</span><span class="sxs-lookup"><span data-stu-id="e28f5-113">Remarks</span></span>
 
-<span data-ttu-id="e56e4-114">別の数式から、**Cell** エレメントの **N** 属性の値によって、または **CellsU** プロパティを使用したプログラムから、名前によって [**LockReplace**] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="e56e4-114">To get a reference to the **LockReplace** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="e28f5-114">別の数式から、**Cell** エレメントの **N** 属性の値によって、または **CellsU** プロパティを使用したプログラムから、名前によって [**LockReplace**] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="e28f5-114">To get a reference to the **LockReplace** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="e56e4-115">セル名:</span><span class="sxs-lookup"><span data-stu-id="e56e4-115">Cell name:</span></span>  <br/> | <span data-ttu-id="e56e4-116">[lockreplace]</span><span class="sxs-lookup"><span data-stu-id="e56e4-116">LockReplace</span></span>  <br/> |
+| <span data-ttu-id="e28f5-115">セル名:</span><span class="sxs-lookup"><span data-stu-id="e28f5-115">Cell name:</span></span>  <br/> | <span data-ttu-id="e28f5-116">[lockreplace]</span><span class="sxs-lookup"><span data-stu-id="e28f5-116">LockReplace</span></span>  <br/> |
    
-<span data-ttu-id="e56e4-117">プログラムから、インデックスによって [**LockReplace**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="e56e4-117">To get a reference to the **LockReplace** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="e28f5-117">プログラムから、インデックスによって [**LockReplace**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="e28f5-117">To get a reference to the **LockReplace** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="e56e4-118">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="e56e4-118">Section index:</span></span>  <br/> |<span data-ttu-id="e56e4-119">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="e56e4-119">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="e56e4-120">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="e56e4-120">Row index:</span></span>  <br/> |<span data-ttu-id="e56e4-121">**visRowLock**</span><span class="sxs-lookup"><span data-stu-id="e56e4-121">**visRowLock**</span></span> <br/> |
-| <span data-ttu-id="e56e4-122">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="e56e4-122">Cell index:</span></span>  <br/> |<span data-ttu-id="e56e4-123">**visLockReplace**</span><span class="sxs-lookup"><span data-stu-id="e56e4-123">**visLockReplace**</span></span> <br/> |
+| <span data-ttu-id="e28f5-118">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="e28f5-118">Section index:</span></span>  <br/> |<span data-ttu-id="e28f5-119">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="e28f5-119">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="e28f5-120">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="e28f5-120">Row index:</span></span>  <br/> |<span data-ttu-id="e28f5-121">**visRowLock**</span><span class="sxs-lookup"><span data-stu-id="e28f5-121">**visRowLock**</span></span> <br/> |
+| <span data-ttu-id="e28f5-122">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="e28f5-122">Cell index:</span></span>  <br/> |<span data-ttu-id="e28f5-123">**visLockReplace**</span><span class="sxs-lookup"><span data-stu-id="e28f5-123">**visLockReplace**</span></span> <br/> |
    
 
