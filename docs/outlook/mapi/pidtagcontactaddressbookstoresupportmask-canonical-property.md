@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 34f649c8-29bf-470f-9b05-31b69d069259
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: fb40e2c191056fe164c6a06bfdcf4b8e3d6eb92c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283199"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434439"
 ---
 # <a name="pidtagcontactaddressbookstoresupportmask-canonical-property"></a>PidTagContactAddressBookStoreSupportMask 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32283199"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |連絡先のアドレス帳  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 連絡先アドレス帳プロバイダーは、このプロパティを使用して、ストアのサポートされている機能の adequacy を評価します。 これは連絡先アドレス帳コンテナーのプロパティで、連絡先アドレス帳コンテナーの列になります。
   

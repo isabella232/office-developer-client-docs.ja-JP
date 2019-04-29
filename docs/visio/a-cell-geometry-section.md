@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 6853df0f-d22e-89ca-7d34-342b9c0bea23
 description: 各行に対応する情報を表示します。 次の表に、各行で [A] セルが示す内容を説明します。
 ms.openlocfilehash: 42f346b06cad827cfe56fc113a8387d1a31a6867
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341588"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432920"
 ---
 # <a name="a-cell-geometry-section"></a>[A] セル ([Geometry] セクション)
 
 各行に対応する情報を表示します。 次の表に、各行で [A] セルが示す内容を説明します。
   
-|**行**|**説明**|
+|**Row**|**説明**|
 |:-----|:-----|
 |[[arcto]](arcto-row-geometry-section.md) <br/> | 円弧の中点から弦の中点までの距離です。  <br/> |
 |[[ellipticalarcto]](ellipticalarcto-row-geometry-section.md) <br/> | 円弧のコントロールポイントの*x*座標 (円弧上の点)。コントロールポイントは、円弧の始点と終点の間の中間点を中心に配置されます。それ以外の場合、円弧はコントロールポイントを通過するために極端なサイズまで拡大することがあり、予期しない結果が発生することがあります。  <br/> |
@@ -31,7 +31,7 @@ ms.locfileid: "32341588"
 |[[infiniteline]](infiniteline-row-geometry-section.md) <br/> | 無限線上の点の*x*座標です。対応する*y*座標は [ [B](b-cell-geometry-section.md)セルで表されます。  <br/> |
 |[もう](ellipse-row-geometry-section.md) <br/> | 楕円上の点の*x*座標です。対応する*y*座標は [ [B](b-cell-geometry-section.md)セルで表されます。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [A] セルへの参照を取得するには、次の値を使用します。 
   

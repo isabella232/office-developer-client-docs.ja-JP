@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 4015506a-e24a-0276-c854-7791a7019067
 description: 特定のプリンター ページ番号に図面を印刷するかどうかを示します。
 ms.openlocfilehash: 61d45a5bffdbb1afd5db9c608f80bc4f797f5191
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360985"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439605"
 ---
 # <a name="onpage-cell-print-properties-section"></a>[OnPage] セル ([Print Properties] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32360985"
 |TRUE  <br/> |図面ページをプリンターページの定義済みの数に調整します。  <br/> |
 |FALSE  <br/> |プリンター ページを定義済みの図面ページ番号に合わせません。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [OnPage] セルが TRUE に設定されている場合は、[PagesX] セルおよび [PagesY] セルを使用して、図面に合うプリンター ページ番号が特定されます。[ScaleX] セルおよび [ScaleY] セル内の値は無視されます。これは "自動サイズ" 設定と見なすことができます。
   

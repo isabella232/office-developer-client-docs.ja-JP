@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 58f50535-b0ed-4097-bda8-fd3ccc2d4b49
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 44be43864d943257520f27297e5754a4978c568d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32270169"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439626"
 ---
 # <a name="iprofadminsetdefaultprofile"></a>IProfAdmin::SetDefaultProfile
 
@@ -58,7 +58,7 @@ MAPI_E_NOT_FOUND
   
 > 指定されたプロファイルが存在しません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IProfAdmin:: setdefaultprofile**メソッドは、特定のプロファイルをクライアントの既定のプロファイルとして確立するか、現在の既定のプロファイルをクリアします。 既定のプロファイルは、クライアントが MAPI セッションを開始するときに自動的に使用されるプロファイルです。 **setdefaultprofile**は、新しい既定のプロファイルの**PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md)) プロパティも TRUE に設定します。
   

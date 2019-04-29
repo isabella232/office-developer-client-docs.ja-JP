@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5fa091a4-3a84-4881-91b3-e34fd9ca6f38
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 36e0218c9e4e312a138bef7517242f74079212c4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32330227"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421439"
 ---
 # <a name="adrentry"></a>ADRENTRY
 
@@ -41,7 +41,7 @@ typedef struct _ADRENTRY
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **ulReserved1**
   
@@ -55,7 +55,7 @@ typedef struct _ADRENTRY
   
 > 受信者のプロパティを説明するプロパティ値配列へのポインター。 **rgPropVals**メンバーは NULL にすることができます。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **adrentry**構造は、1人の受信者に属するプロパティを示します。 通常、受信者を表すために使用されるプロパティには、次のようなものがあります。 
   

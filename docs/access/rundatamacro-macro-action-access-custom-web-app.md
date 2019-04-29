@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: f6010ac5-6c08-4c1b-a811-ff81b30ed5f0
 description: RunDataMacro/データマクロの実行アクションを使用して、スタンドアロンデータ マクロを実行できます。
 ms.openlocfilehash: 68c0e5a3837039bdab1165e686adb3bdf2a5b6f8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304243"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439346"
 ---
 # <a name="rundatamacro-macro-action-access-custom-web-app"></a>RunDataMacro マクロアクション (Access カスタム web アプリ)
 
@@ -29,7 +29,7 @@ ms.locfileid: "32304243"
 |:-----|:-----|
 | _Macro Name/マクロ名_ <br/> |実行するデータ マクロの名前  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 マクロ デザイナーで実行するデータ マクロを選択すると、そのデータ マクロにパラメーターが必要であるかどうかが自動的に判断されます。パラメーターが必要な場合は、引数を入力するテキストボックスが表示されます。
   

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 9a3702a4-8a6b-4c0c-a90f-02be3a2bfa05
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 3b2e41c4b1bfc4879717df0c73bbcd45a724ca60
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338438"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439290"
 ---
 # <a name="imapisessionenumadrtypes"></a>IMAPISession::EnumAdrTypes
 
@@ -59,7 +59,7 @@ S_OK
   
 > アドレスの種類が正常に取得されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisession:: enumadrtypes**メソッドは、セッション内のすべてのアクティブなトランスポートプロバイダーによって処理できるアドレスの種類の一覧を返します。 現在読み込まれていないトランスポートプロバイダーのアドレスの種類は、一覧に含まれていません。 トランスポートプロバイダーは、MAPI が[IXPLogon:: AddressTypes](ixplogon-addresstypes.md)メソッドを呼び出すときに、1つまたは複数のアドレスの種類を処理するように登録します。 
   

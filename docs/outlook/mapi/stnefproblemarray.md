@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 115d845b-4168-4d49-b880-219ee28baa9a
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 721b14f101e87299f654507f94d4a957f905cac1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336499"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434264"
 ---
 # <a name="stnefproblemarray"></a>STnefProblemArray
 
@@ -40,7 +40,7 @@ typedef struct _STnefProblemArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **cproblem**
   
@@ -50,7 +50,7 @@ typedef struct _STnefProblemArray
   
 > [STnefProblem](stnefproblem.md)構造体の配列。 各構造体には、プロパティまたは属性処理の問題に関する情報が含まれています。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 属性またはプロパティの処理中に問題が発生した場合、 [ITnef:: ExtractProps](itnef-extractprops.md)メソッドと[ITnef:: Finish](itnef-finish.md)メソッドの出力パラメーターは、それぞれ**STnefProblemArray**構造体へのポインターを受け取り、 **ExtractProps****完了**するたびに、MAPI_W_ERRORS_RETURNED 値を返します。 このエラー値は、処理中に問題が発生し、 **STnefProblemArray**構造が生成されたことを示します。 
   

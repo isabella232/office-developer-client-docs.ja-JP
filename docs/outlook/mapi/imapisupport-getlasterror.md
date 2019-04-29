@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 5b4290d9-230f-416a-9644-188578565c7b
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: c34c175c43ada03e982f08a27f675448ea24a567
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316598"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438548"
 ---
 # <a name="imapisupportgetlasterror"></a>IMAPISupport::GetLastError
 
@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > MAPI_UNICODE フラグが設定されていて、mapi が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、mapi が unicode のみをサポートしています。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport:: GetLastError**メソッドは、すべてのサポートオブジェクトに実装されています。 呼び出し元は、 **MAPIERROR**構造のデータをダイアログボックスに含めることによって、エラーに関する詳細情報をユーザーに提供できます。 
   

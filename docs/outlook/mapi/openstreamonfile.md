@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 01fa459f-597d-4b16-b340-a79fb270cd71
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: b05f5b30eceb7df1bed76c64f4bdda87ede0e463
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348630"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439094"
 ---
 # <a name="openstreamonfile"></a>OpenStreamOnFile
 
@@ -104,7 +104,7 @@ MAPI_E_NOT_FOUND
   
 > 指定したファイルが存在しません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **openstreamonfile**関数には、SOF_UNIQUEFILENAME フラグの設定によって区別される、2つの重要な用途があります。 このフラグが設定されていない場合、 **openstreamonfile**は、istream オブジェクトを既存のファイルに開きます。たとえば、 **** istream を使用して添付ファイルの**PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) プロパティにコンテンツをコピーします。 **:: CopyTo**メソッド。 この場合、 _lpszfilename_パラメーターには、ファイルのパスとファイル名を指定します。 
   

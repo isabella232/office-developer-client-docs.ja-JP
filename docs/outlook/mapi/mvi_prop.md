@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: d7f07524-6935-4a60-aaf3-3f753ea8d86a
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 087d38face72e1e067350b1959b37313ebbd7c44
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326293"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410680"
 ---
 # <a name="mviprop"></a>MVI_PROP
 
@@ -42,7 +42,7 @@ MVI_PROP (tag)
   
 > 変更するプロパティタグを指定します。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 MVI_FLAG は、MV_FLAG の設定を結合し、プロパティを複数値として識別し、MV_INSTANCE を複数の行のテーブルに複数値のプロパティを表示することを要求します。 影響を受けるプロパティのプロパティの種類は変更されますが、識別子は変更されません。 
   

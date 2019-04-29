@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 4d2248d9-ab20-bcaa-d75b-62876c5e95eb
 description: Microsoft InfoPath では、application オブジェクトと XDocuments コレクションのメソッドを使用して、COM およびスクリプトを使用して記述されたコードからアプリケーションを自動化できます。
 ms.openlocfilehash: 7eccbca34b93aff7909de92eebc04d012d4dd97c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303809"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412668"
 ---
 # <a name="automating-infopath-from-an-external-application"></a>外部アプリケーションからの InfoPath の自動化
 
@@ -21,7 +21,7 @@ Microsoft InfoPath では、 **application**オブジェクトと**XDocuments**�
 
 **Application** オブジェクトには、オートメーションに使用される次のメソッドが含まれています。 
   
-|**方法**|**説明**|
+|**メソッド**|**説明**|
 |:-----|:-----|
 |**CacheSolution** <br/> |キャッシュ内のを調べ、必要に応じて、発行されたフォームテンプレートの場所からキャッシュを更新します。  <br/> |
 |**Quit** <br/> |Microsoft Office InfoPath アプリケーションを終了します。  <br/> |
@@ -30,7 +30,7 @@ Microsoft InfoPath では、 **application**オブジェクトと**XDocuments**�
    
 **XDocuments** コレクションには、外部の自動化に使用できる以下のメソッドが含まれています。 
   
-|**方法**|**説明**|
+|**メソッド**|**説明**|
 |:-----|:-----|
 |**Close** メソッド  <br/> |指定された Microsoft Office InfoPath フォームを閉じます。  <br/> |
 |**New** メソッド  <br/> |新しい Microsoft Office InfoPath フォームを作成します。  <br/> |

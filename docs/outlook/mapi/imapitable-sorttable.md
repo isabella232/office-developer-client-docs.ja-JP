@@ -13,11 +13,11 @@ api_type:
 ms.assetid: ff5f78ac-06cf-46fb-93da-5f4a3a5d1b22
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: f16ba9164d55fdb7bd688d4068f99dc4407e5413
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328855"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432367"
 ---
 # <a name="imapitablesorttable"></a>IMAPITable::SortTable
 
@@ -84,7 +84,7 @@ MAPI_E_TOO_COMPLEX
     
    - **PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md)) プロパティの前にあるテーブルを処理する以外の並べ替え操作は、この種類の並べ替えをサポートする添付ファイルテーブルに対してのみ指定されます。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMAPITable:: sorttable**メソッドは、テーブルビュー内の行の順序を示します。 一部の表では、さまざまな並べ替えキー列に対して標準の並べ替えと分類された並べ替えの両方をサポートしています。 アドレス帳プロバイダーは、通常、テーブルの並べ替えをサポートしていません。 通常、メッセージストアプロバイダーは、完全なテーブル (制限なしのテーブル) が並べ替えられている場合に、結果となるフォルダーの並べ替え順序を維持することによって、エクステントへの並べ替えをサポートしています。 
   

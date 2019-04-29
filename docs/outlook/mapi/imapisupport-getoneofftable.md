@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 6800fd3a-aa43-45fe-9cc2-102d0ef43edf
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: c0beec8a0b234794d3f623c4ceac773db698dd79
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316577"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412759"
 ---
 # <a name="imapisupportgetoneofftable"></a>IMAPISupport::GetOneOffTable
 
@@ -54,7 +54,7 @@ S_OK
   
 > 1回限りのテーブルが正常に取得されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport:: getoneofftable**メソッドは、アドレス帳プロバイダーサポートオブジェクトに対して実装されています。 アドレス帳プロバイダーは、 **getoneofftable**を呼び出して、新しい受信者を作成するためのテンプレートの完全なリストを取得します。 この表には、セッションのサポートでアクティブになっているブックプロバイダーと MAPI がサポートするテンプレートのテンプレートが含まれています。 
   

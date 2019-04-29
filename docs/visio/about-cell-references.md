@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: e6a9aceb-90d7-fb53-eaf4-416a1ae2a98b
 description: シェイプシートのセルの参照を使用すると、数式間の相互依存を作成できます。セルの参照によって、別のセルの値を基にセルの値を計算できます。たとえば、図形の [Width] セルに、図形の [Height] セルの値を参照して図形の幅を計算する数式が含まれている場合、図形の高さを変更すると、高さに比例して図形の幅も変更されます。
 ms.openlocfilehash: a92bcc560c535dc012ec5cb79db72250e78364c7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332621"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409805"
 ---
 # <a name="about-cell-references"></a>セルの参照について
 

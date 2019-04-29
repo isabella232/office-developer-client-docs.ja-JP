@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 53362a32-ac27-42a3-ace1-c6184ab20b52
 description: 文字列を指定された回数だけ繰り返して表示します。
 ms.openlocfilehash: 84e7167fcee426c607e6967aff0530362685dd35
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326804"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412080"
 ---
 # <a name="rept-function"></a>REPT 関数
 
@@ -31,7 +31,7 @@ REPT (* * *text* * *、* **繰り返し回数** *)
 | _text_ <br/> |必須  <br/> |**String** <br/> | 繰り返す文字列を指定します。  <br/> |
 | _繰り返し回数_ <br/> |必須  <br/> |**数値** <br/> |文字列の繰り返す回数を、正の数値で指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 *繰り返し回数*: 
   

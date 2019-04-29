@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: a70751eb-bfde-4f7d-ad90-a1e4cca25dbc
 description: グレゴリオ暦で指定した日付の年を表す数値が返されます。
 ms.openlocfilehash: 1400c352bcc070035d15b46f8e547e4637364299
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301667"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433123"
 ---
 # <a name="year-function-access-custom-web-app"></a>Year 関数 (Access カスタム web アプリ)
 
@@ -31,7 +31,7 @@ ms.locfileid: "32301667"
 |:-----|:-----|
 | *Date*  <br/> |日付/時刻の値に解決可能な式。 *Date*引数 expression、column 式、ユーザー定義の変数または文字列リテラル。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **Year** 関数、 **Month** 関数、および **Day** 関数によって返される値は、指定したデータ値の表示形式に関係なく、グレゴリオ暦の値になります。たとえば、指定したデータ値の表示形式でイスラム暦を使用する場合でも、 **Year** 関数、 **Month** 関数、および **Day** 関数で返される値は、イスラム暦に対応するグレゴリオ暦の値になります。 
   

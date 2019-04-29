@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 13ca726d-ae7a-4da9-9c8e-3db3c479f839
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 992b3a6a30e15d267ffeda11ec98c7b4aeacb2c4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341651"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435650"
 ---
 # <a name="pidtagprofilename-canonical-property"></a>PidTagProfileName 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32341651"
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |MAPI プロファイルの構成  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 これらのプロパティは、サービスプロバイダーによって計算されます。 プロバイダーの**serviceentry**関数の実装では、これらのプロパティを使用してプロファイル名を検出できます。 
   

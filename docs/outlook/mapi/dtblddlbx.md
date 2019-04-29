@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: cf60584c-4357-44c7-9d51-f30f7e510c0c
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 244aaea4902d6be8eda4cdca176436af9b002ba7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32340104"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438849"
 ---
 # <a name="dtblddlbx"></a>DTBLDDLBX
 
@@ -60,7 +60,7 @@ typedef struct _DTBLDDLBX
   
 > **openproperty**呼び出しを使用して開くことができる PT_OBJECT 型のテーブルプロパティのプロパティタグ。 このテーブルには2つの列を指定する必要があります。 **ulprdisplayproperty**および**ulprsetproperty**。 表の行は、リスト内の項目に対応している必要があります。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **dtblddlbx**構造体は、ユーザーがそれを展開することになるまで、1つのアイテムとして表示されるドロップダウンリストコントロールについて説明します。 
   

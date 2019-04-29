@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 9ca1861d-9bc9-485a-9807-a598b869e5a2
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 77688f8a09c1d990201a247a3c4e3a11ba0963b3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317263"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438625"
 ---
 # <a name="imsprovidershutdown"></a>IMSProvider::Shutdown
 
@@ -45,7 +45,7 @@ S_OK
   
 > 呼び出しが成功し、予想される値または値が返されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 MAPI は、メッセージストアプロバイダオブジェクトを解放する直前に、 **IMSProvider:: Shutdown**メソッドを呼び出します。 MAPI は、そのプロバイダーの**シャットダウン**を呼び出す前に、プロバイダーのすべてのログオンオブジェクトを解放します。 
   

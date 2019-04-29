@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3e2d5190-e67a-470d-8177-0f0ba20c7b82
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: e43a1d7c57668ba930b4c4af7194bd298971e6ba
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356414"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432381"
 ---
 # <a name="servicewizarddlgproc"></a>SERVICEWIZARDDLGPROC
  
@@ -99,7 +99,7 @@ FALSE
   
 > サービスプロバイダーが受信したウィンドウメッセージを処理していません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 ユーザーがあるプロパティページから別のページに移動すると、プロバイダーは古いページのコントロールを非表示にし、次または前のページのコントロールを表示します。 ユーザーが **[次へ**] ボタンをクリックすると、WIZ_NEXT パラメーターで、WM_COMMAND メッセージとを使用して__ **servicewizarddlgproc**ベースの関数が呼び出されます。 次の手順では、ユーザーが **[次へ**] をクリックしてから最初のプロバイダーの構成ページが表示されるまでの時間について説明します。 
   

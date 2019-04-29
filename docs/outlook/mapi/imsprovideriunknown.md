@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0f17aa44-abcb-4732-b013-d91652847cf6
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: c5305ddd20b690f5c2e5807fb7ce2410549f7124
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317250"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412864"
 ---
 # <a name="imsprovider--iunknown"></a>IMSProvider : IUnknown
 
@@ -45,7 +45,7 @@ ms.locfileid: "32317250"
 |[SpoolerLogon](imsprovider-spoolerlogon.md) <br/> |MAPI スプーラーをメッセージストアに記録します。  <br/> |
 |[comparestoreids](imsprovider-comparestoreids.md) <br/> |2つのメッセージストアエントリ識別子を比較して、同じ store オブジェクトを参照しているかどうかを判断します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 MAPI では、ストアプロバイダーによって開かれるメッセージストアの数に関係なく、セッションごとに1つのメッセージストアプロバイダオブジェクトが使用されます。 2番目の mapi セッションが開いているストアにログオンすると、mapi は**msproviderinit**をもう一度呼び出して、そのセッションで使用する新しいメッセージストアプロバイダオブジェクトを作成します。 
   

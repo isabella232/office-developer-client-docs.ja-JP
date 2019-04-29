@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 14c171ec-0aec-43ab-8be8-e6bc0ce28a58
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: ac59aeb3d650c0fbeb5bcdb580e0401cbab58ee6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32347811"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437729"
 ---
 # <a name="hrentryidfromsz"></a>HrEntryIDFromSz
 
@@ -65,7 +65,7 @@ MAPI_E_INVALID_ENTRYID
   
 > エントリ ID が無効です。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **HrEntryIDFromSz**および[hrszfromentryid](hrszfromentryid.md)関数は、エントリ識別子の文字列形式とバイナリ形式の間の変換を提供します。 
   

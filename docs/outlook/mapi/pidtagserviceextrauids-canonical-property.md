@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4838a9af-7818-49aa-ace8-cb94dda8471f
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0fb688e2a845186224c1802f9df2ac537d5bb4d9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328729"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422307"
 ---
 # <a name="pidtagserviceextrauids-canonical-property"></a>PidTagServiceExtraUids 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32328729"
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |MAPI プロファイル  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 メッセージフィルターごとに新しいプロファイルセクションを作成できます。 メッセージサービスに関する情報を別のプロファイルにコピーする場合は、フィルターの追加のプロファイルセクションもコピーすることが重要です。 追加のプロファイルセクションを使用するサービスプロバイダーは、これらのプロファイルセクションの**MAPIUID**構造を**PR_SERVICE_EXTRA_UIDS**に格納することができます。これにより、MAPI が追加のメッセージサービス情報をコピーできるようになります。
   

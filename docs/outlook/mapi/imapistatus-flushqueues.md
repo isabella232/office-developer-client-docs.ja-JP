@@ -13,11 +13,11 @@ api_type:
 ms.assetid: d6b01a91-b452-4b2c-9802-698e7b0f4169
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 5f8396ca84192e485d33fb5a96f641361b717584
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328195"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432605"
 ---
 # <a name="imapistatusflushqueues"></a>IMAPIStatus::FlushQueues
 
@@ -88,7 +88,7 @@ MAPI_E_NO_SUPPORT
   
 > status オブジェクトの**PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) プロパティに STATUS_FLUSH_QUEUES フラグが設定されていない場合、status オブジェクトはこの操作をサポートしていません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapistatus:: flushqueues**メソッドは、MAPI スプーラーまたはトランスポートプロバイダーが、送信キュー内のすべてのメッセージを直ちに送信するか、または受信キューからすべてのメッセージを受信することを要求します。 **flushqueues**は、トランスポートプロバイダーが提供する MAPI スプーラー状態オブジェクトと状態オブジェクトによってのみ実装されます。 
   

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: c7092375-c945-4f2a-94e0-6d969c6edd27
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0f2b1e9c38b995e84a1957a32e6266c4e0696a5d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326867"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438576"
 ---
 # <a name="pidtagabdefaultdir-canonical-property"></a>PidTagAbDefaultDir 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32326867"
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |アドレス帳  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティを使用しません。 MAPI で使用するために予約されています。
   

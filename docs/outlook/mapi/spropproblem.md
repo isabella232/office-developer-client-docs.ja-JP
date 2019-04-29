@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 55943197-fd11-442d-bb4b-0bff565b846e
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: b3a0872c94459fc7c24d13e35adf335ef8012182
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357849"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407775"
 ---
 # <a name="spropproblem"></a>SPropProblem
 
@@ -41,7 +41,7 @@ typedef struct _SPropProblem
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **ulindex**
   
@@ -55,7 +55,7 @@ typedef struct _SPropProblem
   
 > プロパティに関する問題を説明するエラー値。 この値には、任意の MAPI の[SCODE](scode.md)値を指定できます。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **spropproblem**構造体の配列は、次のメソッドから返されます。 
   

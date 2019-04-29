@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: eccec432-32d3-15c2-06b3-dd02b6313d4c
 description: 色の緑コンポーネントを返します。
 ms.openlocfilehash: 0412e4519c2964b05d7663805d7773e8dc5deaab
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360208"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438107"
 ---
 # <a name="green-function"></a>GREEN 関数
 
@@ -34,7 +34,7 @@ ms.locfileid: "32360208"
 
 整数
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 戻り値は、0 ～ 255 の数値、またはインデックスを判別するセル参照になります。 *式*が無効な場合は、0 (黒) を返します。 
   

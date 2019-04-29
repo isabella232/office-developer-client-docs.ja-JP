@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1c7a9cd2-d765-4218-9aee-52df1a2aae6c
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9b03775d495f7d1f51142eb0ed06fc9ecdf6d1a3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316612"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412458"
 ---
 # <a name="imapipropgetprops"></a>IMAPIProp::GetProps
 
@@ -72,7 +72,7 @@ MAPI_E_INVALID_PARAMETER
   
 > _lpPropTagArray_で参照されている**SPropTagArray**構造の**cvalues**メンバーに0が渡されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapiprop:: GetProps**メソッドは、オブジェクトの1つ以上のプロパティのプロパティ値を取得します。 
   

@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 9cb35f0a-267e-2d85-1701-02d52578a0b8
 description: '最終更新日: 2011 年11月8日'
 ms.openlocfilehash: 5a3e45809f36b71968560a4b239e268addf00474
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322233"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422482"
 ---
 # <a name="about-mapi-urls-for-notification-based-indexing"></a>通知ベースのインデックス作成の MAPI url について
 
@@ -82,7 +82,7 @@ WCHAR  wszProviderItemID
 |パーツ | 説明|
 |:----|:-----------|  
 |*dwversion* |これは、送信されるデータのバージョンです。 現在、この値は1です。|
-|*dwFlags* |今後使用するために予約されています。 現在、この値は0である必要があります。|
+|*dwFlags* |将来使用するために予約されています。 現在、この値は0である必要があります。|
 |*cbprofilename* |プロファイル名のサイズ (バイト単位)。 この情報は、MAPI プロトコルハンドラーがアイテムのインデックス作成時に使用するプロファイルを知るのに役立ちます。|
 |*wszProfileName* |プロファイル名を含む Null で終わる Unicode 文字列。|
 |*cbprovideritemid* |プロバイダーアイテム ID のサイズ (バイト単位)。 ストアプロバイダーは、フォルダーのプロバイダアイテム ID のみを送信して、この情報を取得するために追加のフォルダーを開かないようにする必要があります。|

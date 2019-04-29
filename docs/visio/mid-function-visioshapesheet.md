@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 5041d957-1bd9-4d76-cf43-7b4fcd1e7dec
 description: 指定した文字数に基づいて、指定した位置から開始して、テキスト文字列から特定の数の文字を返します。
 ms.openlocfilehash: 58d5e784e49c8e9fba0bf668626049298783c158
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360663"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410267"
 ---
 # <a name="mid-function-visioshapesheet"></a>MID 関数 (VisioShapeSheet)
 

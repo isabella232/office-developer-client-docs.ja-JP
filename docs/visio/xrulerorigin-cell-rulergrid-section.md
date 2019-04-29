@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 328f8ab5-217f-0336-0d56-611eff509fe8
 description: ページの x 軸のルーラーに対して、ゼロ点を指定します。
 ms.openlocfilehash: d66fd324718ec46b1209c4726eeb2d27c21db8b0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346453"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435328"
 ---
 # <a name="xrulerorigin-cell-ruler-amp-grid-section"></a>[xrulerorigin] セル&amp; ([ルーラ Grid] セクション)
 
 ページの x 軸のルーラーに対して、ゼロ点を指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルは、[**ルーラー &amp;グリッド**] ダイアログボックス ([**表示**] タブの [**表示**] 矢印をクリック) の [水平**ルーラーゼロ**] オプションに対応しています。 
   

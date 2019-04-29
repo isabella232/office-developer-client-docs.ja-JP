@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: ce6b6e6c-7f22-43c2-8182-90cf6db93844
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: f51dd1fe533d0577996e6e1be185302f2dc972fe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321456"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438772"
 ---
 # <a name="imapimessagesitenewmessage"></a>IMAPIMessageSite::NewMessage
 
@@ -70,7 +70,7 @@ S_OK
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 Form オブジェクトは、 **IMAPIMessageSite:: newmessage**メソッドを呼び出して、新しいメッセージを作成します。 このフォームは、新しいメッセージと関連するメッセージサイトをビューから取得するために、 **newmessage**を使用します。 その後、新しいメッセージを変更することができます。 
   

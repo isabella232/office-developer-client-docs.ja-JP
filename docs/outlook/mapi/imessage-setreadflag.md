@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2d02ebf6-bb8b-42bb-9bd0-870dbae9aeb4
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 874dba4aa18190792a52e29064155f5afa0ef44d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349267"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439871"
 ---
 # <a name="imessagesetreadflag"></a>IMessage::SetReadFlag
 
@@ -69,7 +69,7 @@ MAPI_E_INVALID_PARAMETER
     
    - CLEAR_READ_FLAG |GENERATE_RECEIPT_ONLY
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMessage:: setreadflag**メソッドは、 **PR_MESSAGE_FLAGS**プロパティのメッセージの MSGFLAG_READ フラグを設定またはクリアし、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)を呼び出してメッセージを保存します。 MSGFLAG_READ フラグを設定すると、メッセージは開封済みとしてマークされます。これは、意図した受信者が実際にメッセージを読んでいることを示すわけではありません。 
   

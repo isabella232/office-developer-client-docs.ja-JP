@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 5a14be0d-9e3c-23c4-7782-bda5470d1243
 description: '[LineToLineY] セルの値を基準にして、ページ上にある垂直方向の動的コネクタの飛び越し点のサイズを決定します。このセルの値には、0 ～ 10 の値を使用できますが、0 ～ 1 の数値の使用をお勧めします。'
 ms.openlocfilehash: 36712c1558ff2f50309dc31e8f918061180c8fa4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316458"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411961"
 ---
 # <a name="linejumpfactory-cell-page-layout-section"></a>[LineJumpFactorY] セル ([Page Layout] セクション)
 
 [LineToLineY] セルの値を基準にして、ページ上にある垂直方向の動的コネクタの飛び越し点のサイズを決定します。このセルの値には、0 ～ 10 の値を使用できますが、0 ～ 1 の数値の使用をお勧めします。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルの値は、[**ページ設定**] ダイアログ ボックスの [**レイアウトと経路**] タブで設定することもできます (このダイアログ ボックスを開くには、[**デザイン**] タブで [**ページ設定**] 矢印をクリックして、[**レイアウトと経路**] をクリックします)。
   

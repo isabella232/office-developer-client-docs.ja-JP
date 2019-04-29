@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 853ddee5-24d6-423d-b483-6a07a12de51f
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 4fc4867d5ca20f8e770afa239b0dffbd8ab1c480
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279644"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439850"
 ---
 # <a name="iprovideradmingetlasterror"></a>IProviderAdmin::GetLastError
 
@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > MAPI_UNICODE フラグが設定されていて、 **getlasterror**が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、 **getlasterror**が unicode のみをサポートしています。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IProviderAdmin:: GetLastError**メソッドは、失敗した前のメソッド呼び出しに関する情報を提供します。 呼び出し元は、 **MAPIERROR**構造のデータをダイアログボックスに含めることによって、エラーに関する詳細情報をユーザーに提供できます。 
   

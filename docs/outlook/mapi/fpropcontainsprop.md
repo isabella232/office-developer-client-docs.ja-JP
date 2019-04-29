@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 43da5b59-7691-49aa-b83c-753d43bfd8fd
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: ea56996ad56bb4ce93d103a75eba2c29e6059a87
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328043"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432633"
 ---
 # <a name="fpropcontainsprop"></a>FPropContainsProp
 
@@ -79,7 +79,7 @@ FALSE
   
 > 比較対象のプロパティ値が PT_STRING8 または PT_BINARY の型ではないか、プロパティ値が異なる型で__ あるか、lpspropvaluesrc 検索文字列が_lpspropvaluedst_プロパティ値で指定されたとおりに含まれていません。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 比較方法は、 [spropvalue](spropvalue.md)プロパティの定義に指定されているプロパティの種類と、 _ulFuzzyLevel_パラメーターで指定されているファジーレベルヒューリスティックによって異なります。 [fpropcompareprop](fpropcompareprop.md)および**fpropの prop**関数を使用して、テーブルの生成に関する制限を準備できます。 
   

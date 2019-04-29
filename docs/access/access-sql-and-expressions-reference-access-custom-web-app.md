@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: c68cbbe9-d97f-4d1c-b639-fc067b6cd316
 ms.openlocfilehash: 09f527c1fd77da47287ff41a9d23d6d0b9682c17
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280473"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408181"
 ---
 # <a name="access-sql-and-expressions-reference-access-custom-web-app"></a>Access SQL と式のリファレンス (Access カスタム Web アプリ)
 
 ## <a name="in-this-section"></a>このセクションの内容
 
 > [!IMPORTANT]
-> 現在 Microsoft では、SharePoint での Access Web アプリの作成や使用は推奨していません。代替策として、[Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) を使用して、Web およびモバイル デバイス用の、コーディングが不要なビジネス ソリューションを構築することを検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 - [変換関数 (Access カスタム Web アプリ)](conversion-functions-access-custom-web-app.md)
     

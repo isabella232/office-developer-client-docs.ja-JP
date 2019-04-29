@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 5df43594-a434-4fb7-8109-e5cf0401ae09
 description: 指定された日付の月を表す整数を返します。
 ms.openlocfilehash: 0ca7059a2fd6dad1f9790ad6f4eafe7affa014dd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308142"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411492"
 ---
 # <a name="month-function-access-custom-web-app"></a>Month 関数 (Access カスタム web アプリ)
 
@@ -31,7 +31,7 @@ ms.locfileid: "32308142"
 |:-----|:-----|
 | *Date*  <br/> |日付/時刻の値に解決可能な式。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
  **Month** は、 **DatePart** (month, date) と同じ値を返します。 
   

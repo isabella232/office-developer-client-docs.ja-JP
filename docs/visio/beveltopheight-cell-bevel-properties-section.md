@@ -8,17 +8,17 @@ localization_priority: Normal
 ms.assetid: b09b48d0-9008-4e43-9506-93a830ad9452
 description: 図形の上面取りの高さをポイント単位で指定します。
 ms.openlocfilehash: 4da2fd1d61b530450f9020b12d5016015fd59dba
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315737"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421866"
 ---
 # <a name="beveltopheight-cell-bevel-properties-section"></a>[BevelTopHeight] セル ([ベベルのプロパティ] セクション)
 
 図形の上面取りの高さをポイント単位で指定します。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式から、 **cell**要素の**N**属性の値によって、または**CellsU**プロパティを使用したプログラムから、名前によって [傾斜] [**高さ**] セルへの参照を取得するには、次の値を使用します。 
   

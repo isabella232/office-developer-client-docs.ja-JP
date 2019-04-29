@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 143bd3c6-5a55-4122-8522-9c48473aa781
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9764be2788db8d2649be8708cad4ec67a85af845
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341000"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433648"
 ---
 # <a name="fbadproptag"></a>FBadPropTag
 
@@ -55,7 +55,7 @@ FALSE
   
 > 指定されたプロパティタグは、有効な MAPI プロパティタグです。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **FBadPropTag**関数は、MAPI 定義に基づいて指定されたプロパティタグを検証します。 プロパティの型が MAPI で定義されている型の1つであり、プロパティ識別子がその型に定義されていることを sures にします。 
   

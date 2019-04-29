@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: c67b46bb-0eb2-f094-2870-c320bd488705
 description: float パラメーターで指定された比率で2つの色を合成します。
 ms.openlocfilehash: 0a231954370416be201183026424c79942204e12
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303298"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432787"
 ---
 # <a name="blend-function"></a>BLEND 関数
 
@@ -26,15 +26,15 @@ BLEND (* * *color1* * *、* * *color2* * *、* * *float [0, 1]* * *)
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _color1_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |最初の色の Visio カラー インデックスまたは RGB 値を指定します。  <br/> |
-| _color2_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |2 番目の色の Visio カラー インデックスまたは RGB 値を指定します。  <br/> |
+| _color1_ <br/> |必須  <br/> |**数値** <br/> |最初の色の Visio カラー インデックスまたは RGB 値を指定します。  <br/> |
+| _color2_ <br/> |必須  <br/> |**数値** <br/> |2 番目の色の Visio カラー インデックスまたは RGB 値を指定します。  <br/> |
 | _float [0, 1]_ <br/> |必須  <br/> |**Float** <br/> |_color2_と_color1_をそれぞれブレンドする比率を指定します。 0 ～ 1 の実数を使用します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
  **RGB**
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 返される色は、 _float_パラメーターで指定されたように、 _color2_と_color1_をそれぞれブレンディングする相対的な比率によって決まります。 たとえば、 _float_が0.25 の場合、返される色は_color1_の 75%、 _color2_の 25% で構成されます。 
   

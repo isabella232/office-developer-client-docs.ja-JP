@@ -7,18 +7,18 @@ localization_priority: Normal
 ms.assetid: 9dd73bae-a8d5-4d8b-b356-01ac72f7e5d9
 description: CreateRecord データ ブロックを使用して、指定したテーブルに新しいレコードを作成できます。
 ms.openlocfilehash: d89b62180dbe50a0c7dab862b70062a47558c25a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282251"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421376"
 ---
 # <a name="createrecord-data-block-access-custom-web-app"></a>CreateRecord データブロック (Access カスタム web アプリ)
 
 You can use the **CreateRecord** data block to create a new record in the specified table. 
   
 > [!IMPORTANT]
-> [!重要] マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
+> マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 > [!NOTE]
 > **CreateRecord** データ ブロックはデータ マクロでのみ使用できます。 
@@ -34,7 +34,7 @@ You can use the **CreateRecord** data block to create a new record in the specif
 |**Create a Record In**/レコードの作成先 <br/> |はい  <br/> |新しいレコードを作成するテーブルの名前。  <br/> |
 |**Alias** <br/> |いいえ  <br/> |レコードを識別する文字列。レコードの別名を使用できます。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **CreateRecord** で作成したレコードは自動的にカレント レコードになります。 
   

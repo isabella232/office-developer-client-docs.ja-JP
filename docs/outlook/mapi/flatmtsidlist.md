@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: b66c2815-72bc-4535-b34c-899bb830f29e
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: bd9bfe4d1411b84a7811235aa68728afaefe64ab
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327308"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439220"
 ---
 # <a name="flatmtsidlist"></a>FLATMTSIDLIST
 
@@ -42,7 +42,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **cmtsids**
   
@@ -56,7 +56,7 @@ typedef struct
   
 > 1つまたは複数の**MTSID**構造体を含むバイト配列。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **FLATMTSIDLIST**におけるこの構造体の使用は、MAPI メッセージングでの[FLATENTRYLIST](flatentrylist.md)構造の使用に対応しています。 MAPI では、 **FLATMTSIDLIST**構造を使用して、メッセージ処理時に x. プロパティを維持します。 サービスプロバイダーは、受信および送信の X. 400 メッセージを処理するときに、 **FLATMTSIDLIST**構造体を使用します。 
   

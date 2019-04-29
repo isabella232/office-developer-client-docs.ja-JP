@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 53579e0e-fcec-e745-0207-3861b5efa333
 description: システムの地域と言語の設定に基づいて、datetime または expression で表される時刻値を返します。
 ms.openlocfilehash: 61eeafac64ce199eba0f9032c42474d2b44febce
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32361111"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432325"
 ---
 # <a name="timevalue-function-visioshapesheet"></a>TIMEVALUE 関数 (VisioShapeSheet)
 
@@ -32,7 +32,7 @@ timevalue ("* * *datetime* * *" |* **式** * [, * * *lcid* * *])
 | _expression_ <br/> |必須  <br/> |**さまざま** <br/> | 日付および時刻を算出する式を指定します。  <br/> |
 | _lcid_ <br/> |省略可能  <br/> |**数値** <br/> |現地以外の日時を計算するときに使用するロケール識別子を指定します。 ロケール識別子は、システムのヘッダー ファイルに記述されている数字です。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _datetime_または_expression_の日付コンポーネントはすべて無視されます。 
   

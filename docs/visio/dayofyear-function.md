@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 154d76a2-81f5-d8b1-b665-26dbae5da615
 description: datetime または expression の年の何日目かを表す、1 ~ 366 の整数を返します。 DAYOFYEAR 関数では、グレゴリオ暦が使用されます。
 ms.openlocfilehash: 30c0331a57282baee97e81689b6a8f362581b8f1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360294"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439452"
 ---
 # <a name="dayofyear-function"></a>DAYOFYEAR 関数
 
@@ -36,7 +36,7 @@ DAYOFYEAR ("* * *datetime* * *" |* **式** * [, * * *lcid* * *])
 
 整数
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _datetime_または_expression_の時刻コンポーネントは破棄されます。 
   

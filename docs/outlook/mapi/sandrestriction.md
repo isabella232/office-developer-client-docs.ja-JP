@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1b7dfe87-f87f-43e3-8332-a0d9c3f70d16
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: da35c9c72f4cf3f076715a7a35a3e3514c672ceb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344661"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438884"
 ---
 # <a name="sandrestriction"></a>SAndRestriction
 
@@ -40,7 +40,7 @@ typedef struct _SAndRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **cres**
   
@@ -50,7 +50,7 @@ typedef struct _SAndRestriction
   
 > 論理**AND**演算と組み合わせて使用される[srestriction](srestriction.md)構造体の配列へのポインター。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **SAndRestriction**の結果は、そのすべての子制限が true に評価された場合に true となります。 false と評価される子の制限がある場合は false です。 
   

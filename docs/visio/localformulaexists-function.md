@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 2b757c8d-7732-0f9b-c836-ef755dd1c673
 description: 参照先セルにローカルの数式が含まれているかどうかを示します。
 ms.openlocfilehash: bd0a5dafecf1bd8dca1567392d880ecaaa3e0374
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344465"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433291"
 ---
 # <a name="localformulaexists-function"></a>LOCALFORMULAEXISTS 関数
 
@@ -34,7 +34,7 @@ LOCALFORMULAEXISTS (* * *cellref* * *)
 
 Boolean
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 LOCALFORMULAEXISTS 関数は、セルがローカルの数式を含む場合は 1 を返し、数式がないか、数式が継承されている場合は 0 (ゼロ) を返します。 
   

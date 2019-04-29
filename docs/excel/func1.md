@@ -12,11 +12,11 @@ localization_priority: Normal
 ms.assetid: 801b14ef-0be8-4b97-919d-a9d413705d1c
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: a3d3c6bbd529f43bd75b31b9348498928390a8f5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304082"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408916"
 ---
 # <a name="func1"></a>Func1
 

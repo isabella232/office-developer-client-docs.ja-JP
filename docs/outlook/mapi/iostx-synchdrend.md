@@ -13,11 +13,11 @@ api_type:
 ms.assetid: a0beb6eb-7978-c64e-dba1-89f0caf2090e
 description: '最終更新日: 2012 年7月3日'
 ms.openlocfilehash: 864c2d2dfd17c285b0d8a401d59ce5b7d0463864
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332187"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432773"
 ---
 # <a name="iostxsynchdrend"></a>IOSTX::SyncHdrEnd
 
@@ -39,7 +39,7 @@ HRESULT SyncHdrEnd(
   
 > 順番移動またはコピーされたメッセージを同期するための**[imapiprogress](imapiprogressiunknown.md)** インターフェイス。 **LPMAPIPROGRESS**の型定義については、「mapidefs.h」を参照してください。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **[iostx:: SyncBeg](iostx-syncbeg.md)** の場合、ローカルストアは[ダウンロードメッセージヘッダーの状態](download-message-header-state.md)を入力します。 クライアントは、完全なメッセージアイテム ( **[HDRSYNC](hdrsync.md)** では*pmsgfull* ) をダウンロードします。 この処理が成功した場合、クライアントは**HSF_OK**として**HDRSYNC**の*ulflags*も設定します。 **iostx:: SyncHdrEnd**の場合、Outlook は**HDRSYNC**の結果をチェックし、 *pprog*と**HDRSYNC**内の情報を使用して、ローカルメッセージヘッダーを更新します。 
   

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: b248ed11-3d8a-4d4c-9b84-fa5bee7979c7
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 64fcbebbd71bc3f478f36c711e49db9a3518ef9a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32347797"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435020"
 ---
 # <a name="hresult"></a>HRESULT
 
@@ -31,7 +31,7 @@ ms.locfileid: "32347797"
 typedef LONG HRESULT;
 ```
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **HRESULT**データ型は、 [SCODE](scode.md)データ型と同じです。 
   

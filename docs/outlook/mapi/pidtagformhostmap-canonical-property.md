@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 92742747-cce0-4c54-9ece-1fcf652ac498
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 346776635fc36ffd8efd10cb232846831add20f7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316227"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433767"
 ---
 # <a name="pidtagformhostmap-canonical-property"></a>PidTagFormHostMap 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32316227"
 |データの種類 :   <br/> |PT_MV_LONG  <br/> |
 |エリア:  <br/> |MAPI 共通  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 クライアントアプリケーションは、 **imapiformprop**インターフェイスの基になる構造を変更するときに、このプロパティを**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) プロパティと共に更新する必要があります。 
   

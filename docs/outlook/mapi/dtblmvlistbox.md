@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1c22f842-d0e7-44f0-a7d5-c9c2aa6b8820
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: ae8f3ab28837bf0579549ead46c28477f815f35c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338277"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439703"
 ---
 # <a name="dtblmvlistbox"></a>DTBLMVLISTBOX
 
@@ -50,7 +50,7 @@ typedef struct _DTBLMVLISTBOX
   
 > PT_MV_TSTRING 型の複数値プロパティのプロパティタグ。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **DTBLMVLISTBOX**構造体には、アイテムの読み取り専用リストを持つ標準的な複数値リストが記述されています。 標準の複数値を持つリストを使用すると、値がすぐに表示されます。 
   

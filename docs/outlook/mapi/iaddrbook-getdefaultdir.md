@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7a9fdf3f-fd76-40fb-8217-967c6efba5f6
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: d9ad74d8ae02a49ee3c222394caedfd571f84b1c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336695"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436875"
 ---
 # <a name="iaddrbookgetdefaultdir"></a>IAddrBook::GetDefaultDir
 
@@ -50,7 +50,7 @@ S_OK
   
 > 既定のコンテナーのエントリ識別子が正常に返されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 クライアントアプリケーションおよびサービスプロバイダーは、 **GetDefaultDir**メソッドを呼び出して、既定のアドレス帳コンテナーのエントリ識別子を取得します。 既定のコンテナーは、アドレス帳が最初に開かれたときに、ユーザーにアドレス帳で表示されることを示します。 [IAddrBook:: SetDefaultDir](iaddrbook-setdefaultdir.md)メソッドの呼び出しによって既定のコンテナーが設定されていない場合、MAPI は、個人用アドレス帳 (PAB) ではない名前の最初のコンテナーを既定のコンテナーとして割り当てます。 このようなコンテナーが見つからない場合、PAB は既定のコンテナーになります。 
   

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d2a84f24-b4a5-4e16-9219-7a579a31a8f8
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: ae9b79abea9a1b2b31867b9ed575e16e8f1c4474
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327280"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412472"
 ---
 # <a name="pidtagattachmimesequence-canonical-property"></a>PidTagAttachMimeSequence 標準プロパティ
 
@@ -34,7 +34,7 @@ mime メッセージ添付ファイルの mime シーケンス番号が含まれ
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |メッセージ添付ファイルのプロパティ  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティは、MHTML サポートに使用されます。 mime メッセージの親 mime マルチパート本体内の添付ファイルのシーケンス番号を表します。
   

@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 2dd56ae5-300e-ba09-a73a-83c2b6c2a0ef
 description: 図形のテキスト ブロック内にある各段落の後に挿入する間隔を指定します。この値に、[SpLine] セルや [BottomMargin] セル (テキスト ブロックの最後の段落に対して適用される) に指定した値が加えられて、テキスト ブロックが表示されます。
 ms.openlocfilehash: 2b8fe7e2b0df09561d0db4367f917c8f4b71335d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335225"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439836"
 ---
 # <a name="spafter-cell-paragraph-section"></a>[SpAfter] セル ([Paragraph] セクション)
 
 図形のテキスト ブロック内にある各段落の後に挿入する間隔を指定します。この値に、[SpLine] セルや [BottomMargin] セル (テキスト ブロックの最後の段落に対して適用される) に指定した値が加えられて、テキスト ブロックが表示されます。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この値は、図面の縮尺による影響を受けません。図面の縮尺を変更しても、[SpAfter] の設定は変わりません。
   

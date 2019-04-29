@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 9c34538e-5ba4-47c8-8002-85afa9d6c067
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 39d8786bf558ade4599d69e0a764f87fe60d99f3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341770"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408769"
 ---
 # <a name="imapisupportstatusrecips"></a>IMAPISupport::StatusRecips
 
@@ -54,7 +54,7 @@ MAPI_W_ERRORS_RETURNED
   
 > 呼び出しは全体的に成功しましたが、この種類の受信者のオプションはありません。 この警告が返された場合、呼び出しは正常に処理されます。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport:: StatusRecips**メソッドは、トランスポートプロバイダーのサポートオブジェクトに実装されています。 トランスポートプロバイダーは、 **StatusRecips**を呼び出して、MAPI がメッセージの1つ以上の受信者に対して配信レポートまたは配信不能レポートを送信するよう要求します。 
   

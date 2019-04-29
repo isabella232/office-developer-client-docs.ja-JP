@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5e444b62-d6b6-4cfc-8601-d34aa004c1e6
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 324cfe9d7c412b3bb0e3150b8eec51aaeb6a0e93
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338662"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438394"
 ---
 # <a name="dtblgroupbox"></a>DTBLGROUPBOX
 
@@ -41,7 +41,7 @@ typedef struct _DTBLGROUPBOX
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **ulblpszlabel**
   
@@ -55,7 +55,7 @@ MAPI_UNICODE
   
 > ラベルは Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、ラベルは ANSI 形式になります。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **dtblgroupbox**構造体は、ダイアログボックス内の他のコントロールを視覚的に関連付けるために使用されるグループボックスコントロールを表します。 強調表示の方法では、他のコントロールをボックスで囲む必要があります。 
   

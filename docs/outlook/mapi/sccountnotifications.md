@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 13e80bdc-cb59-47a5-8de0-404e22f87f82
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: f5298620239d1e42e4ba613c22a98f0cf6f7d457
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351373"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437995"
 ---
 # <a name="sccountnotifications"></a>ScCountNotifications
 
@@ -65,7 +65,7 @@ MAPI_E_INVALID_PARAMETER
   
 > 無効な通知が発生しました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _pcb_パラメーターで NULL が渡された場合、 **sccountnotifications**関数は通知の配列のみを検証しますが、カウントは行われません。非 null 値が_pcb_で渡された場合、 **sccountnotifications**は配列のサイズを決定し、原因となった_pcb_を格納します。 _pcb_パラメーターは、配列全体を格納するのに十分な大きさである必要があります。 
   

@@ -8,15 +8,15 @@ localization_priority: Normal
 ms.assetid: 18d28dc1-c41f-47c6-b5c7-258d5f877d01
 description: 式の値に応じた条件に基づいてアクションのグループを実行するには、If マクロ ブロックを使用します。
 ms.openlocfilehash: 6fe82e2c42f8e5d93cdc26798e7572e32d6cdc7e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304264"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434495"
 ---
 # <a name="ifthenelse-macro-block-access-custom-web-app"></a>もし。。。そうしたら。。。Else マクロブロック (Access カスタム web アプリ)
 
-式の値に応じた条件に基づいてアクションのグループを実行するには、 **If** マクロ ブロックを使用します。 
+式の値に応じた条件に基づいてアクションのグループを実行するには、If マクロ ブロックを使用します。 
   
 > [!IMPORTANT]
 > マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
@@ -39,15 +39,16 @@ For both **If** and ** Else If **, the following arguments are required.
   
 |**アクションの引数**|**説明**|
 |:-----|:-----|
-|**Expression** <br/> |テストする条件です。 True または False に評価される式を指定します。  <br/> |
+|**Expression** <br/> |テストする条件です。 真または偽のいずれかに評価できる式でなければなりません。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**If** マクロ ブロックを選択するとテキスト ボックスが表示されるので、そこにテストする条件を表す式を入力します。さらに、マクロ アクションを挿入できるコンボ ボックスも表示されます。マクロ アクションの下に、"End If" というテキストが自動的に表示されます。If と End If は、アクションのグループ (ブロック) を入力できる領域を囲みます。ブロックは、入力した式が True の場合にのみ実行されます。 
+
+            **If** マクロブロックを選択すると、テキストボックスが表示され、テストする条件を示す式を入力することができます。さらにコンボ ボックスが表示され、マクロ アクションを入力できます。その下に、"End If" というテキストが自動的に表示されます。If と End If が囲む領域の中で、一連のアクション (ブロック) を指定します。入力した式が真である場合にのみ、そのブロックが実行されます。 
   
 1 つ目の式が False だった場合に別の式を評価するには、 **Add Else If** をクリックし、オプションの **Else If** ブロックを挿入します。True または False として評価される式を入力する必要があります。1 つ目の式が False で、この式が True の場合のみ、ブロックが実行されます。 
   
-If ブロックには、任意の数の **Else If** ブロックを追加できます。 
+If ブロックには **Else If** ブロックをいくつでも追加できます。 
   
 オプションの **Else** ブロックを挿入するには、 **Add Else** をクリックします。この場合、 **Else** の下に挿入したアクションが **Else** ブロックを形成します。このブロックは、これより上にあるアクションが実行されない場合にのみ実行されます。 **If** ブロックには 1 つの **Else** ブロックのみを追加できます。 
   

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 0f5c6097-eef5-5f58-e2ef-2c348e42dc9a
 description: 色の色合いコンポーネントの値を返します。
 ms.openlocfilehash: 39fdd160f5cd792e95930a3e7c7cea3c37ed16c1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329912"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439493"
 ---
 # <a name="hue-function"></a>HUE 関数
 
@@ -32,9 +32,9 @@ ms.locfileid: "32329912"
    
 ### <a name="return-value"></a>戻り値
 
-番号
+数値
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 戻り値は 0 ～ 239 の数値です。引数として、図面のカラー テーブルにある色のインデックス、ユーザー設定の色を返す式 (RGB や HSL など)、またはカラー インデックスや色の結果を含むセルへの参照を指定します。入力した引数が無効な場合は、0 を返します。 
   

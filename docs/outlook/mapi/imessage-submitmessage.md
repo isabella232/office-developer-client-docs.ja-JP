@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9ce93469-c55d-48d1-9abb-a637716ed4f2
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 28786f483c4d2031c334d7b9697db7c5e627fe93
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349232"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437365"
 ---
 # <a name="imessagesubmitmessage"></a>IMessage::SubmitMessage
 
@@ -53,7 +53,7 @@ MAPI_E_NO_RECIPIENTS
   
 > メッセージの recipient テーブルが空です。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMessage:: submitmessage**メソッドは、メッセージを送信する準備が整ったことを示します。 MAPI は、メッセージが送信をマークされている順序で、基になるメッセージングシステムにメッセージを渡します。 この機能により、メッセージは、基礎となるメッセージングシステムが責任を持つ前に、しばらくの間メッセージストアに保持される可能性があります。 宛先での受信の順序は、基になるメッセージングシステムのコントロール内にあり、メッセージが送信された順序とは必ずしも一致しません。 
   

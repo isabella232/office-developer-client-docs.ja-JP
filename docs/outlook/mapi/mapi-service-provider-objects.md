@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: f8ade454-2450-49e6-a76f-93801055a7e5
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0976e986a33d8b96366a84527f227bd05ef7845e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251606"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432269"
 ---
 # <a name="mapi-service-provider-objects"></a>MAPI サービスプロバイダオブジェクト
 
@@ -32,7 +32,7 @@ ms.locfileid: "32251606"
 |フォルダー  <br/> |メッセージおよびその他のメッセージコンテナーが保存されています。  <br/> |
 |Logon  <br/> |サービスプロバイダーのイベント通知とクライアント要求を処理します。  <br/> |
 |メッセージングユーザー  <br/> |メッセージの個々の受信者を表します。  <br/> |
-|メッセージ  <br/> |1人または複数の受信者に送信できる情報が含まれています。  <br/> |
+|Message  <br/> |1人または複数の受信者に送信できる情報が含まれています。  <br/> |
 |メッセージストア  <br/> |階層構造のメッセージのデータベースとして機能します。  <br/> |
 |プロバイダー  <br/> |サービスプロバイダーの起動およびシャットダウンを処理します。  <br/> |
 |スプーラーフック  <br/> |受信メッセージと送信メッセージに対して特別な処理を実行します。  <br/> |

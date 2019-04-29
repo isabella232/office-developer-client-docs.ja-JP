@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: a75ff1f3-2f4d-89e3-108b-e16a34f5184f
 description: ユーザー設定の箇条書き文字列を指定し、[Bullet] セルの値がゼロ以外のとき、テキストの書式設定に使用するフォントの番号を表します。
 ms.openlocfilehash: 1cf04917bb7dfa68ee9395abb66ffe9e150f0273
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337556"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438464"
 ---
 # <a name="bulletfont-cell-paragraph-section"></a>[BulletFont] セル ([Paragraph] セクション)
 
 ユーザー設定の箇条書き文字列を指定し、[Bullet] セルの値がゼロ以外のとき、テキストの書式設定に使用するフォントの番号を表します。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 フォント番号は、ユーザーのシステムにインストールされているフォントによって異なります。値が 0 でユーザー設定の箇条書き文字列がある場合、使用されるフォントは、段落の最初の文字のフォントと同じです。
   

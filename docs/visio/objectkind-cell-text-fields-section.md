@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: cc4c373c-f073-e3c9-3aaa-a4abf050cd20
 description: テキスト フィールドの種類を示します。
 ms.openlocfilehash: c2f891620f704a3c48861124b886e49d356960ba
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360992"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438513"
 ---
 # <a name="objectkind-cell-text-fields-section"></a>[ObjectKind] セル ([Text Fields] セクション)
 
@@ -23,9 +23,9 @@ ms.locfileid: "32360992"
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
 | .0  <br/> | 標準  <br/> |**visTFOKStandard** <br/> |
-| 1-d  <br/> |縦中横  <br/> |**visTFOKHorizontaInVertical** <br/> |
+| 1   <br/> |縦中横  <br/> |**visTFOKHorizontaInVertical** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 テキスト フィールドは、次のいずれかの種類に該当します。
   

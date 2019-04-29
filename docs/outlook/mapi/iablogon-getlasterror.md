@@ -13,11 +13,11 @@ api_type:
 ms.assetid: d157e29e-7731-4e47-b4a7-e8622b223001
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 311299b00143667b3f2fb22bd7be6c3a52c7141d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349029"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434250"
 ---
 # <a name="iablogongetlasterror"></a>IABLogon::GetLastError
 
@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > MAPI_UNICODE フラグが設定されていて、アドレス帳プロバイダーが unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、アドレス帳プロバイダーが unicode のみをサポートしています。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 アドレス帳プロバイダーは、失敗した前のメソッド呼び出しに関する情報を指定する**GetLastError**メソッドを実装します。 呼び出し元は、 **MAPIERROR**構造のデータをダイアログボックスに含めることによって、エラーに関する詳細情報をユーザーに提供できます。 
   

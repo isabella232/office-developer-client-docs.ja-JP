@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 3864aadd-3f86-c20e-1a74-b0aaff5106f7
 description: 移動先の URL アドレス、ファイル名、または UNC パスを指定します。
 ms.openlocfilehash: 0fbb89e18a2d7a849e2369c0d41aac4a647f067b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338550"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438037"
 ---
 # <a name="address-cell-hyperlinks-section"></a>[Address] セル ([Hyperlinks] セクション)
 
@@ -22,7 +22,7 @@ ms.locfileid: "32338550"
   
 Address を相対パスとして指定するには、[**プロパティ**] ダイアログボックスの [ **** **概要**] タブで、[**ファイル**] タブをクリックし、[**情報**] をクリックし、[* * Properties * *] をクリックします。をクリックし、[**プロパティの詳細**] をクリックします。 図面にベース パスが定義されていない場合は、図面のパスに基づいて移動先が決まります。 図面が保存されないと、ハイパーリンクは未定義になります。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [Address] セルの値は [**ハイパーリンク**] ダイアログ ボックスでも設定できます (このダイアログ ボックスを表示するには、[**挿入**] タブで [**ハイパーリンク**] をクリックします)。 
   

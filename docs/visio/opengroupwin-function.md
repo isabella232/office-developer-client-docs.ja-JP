@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 856ece39-18a4-766a-0dd9-7e888b8b78a5
 description: グループウィンドウでグループを開きます。 オブジェクトがグループではない場合、この関数は何も実行しません。
 ms.openlocfilehash: 67d5f055408d5dd887a6bbf052b34726986a1220
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360971"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412115"
 ---
 # <a name="opengroupwin-function"></a>OPENGROUPWIN 関数
 
@@ -24,7 +24,7 @@ ms.locfileid: "32360971"
 
 OPENGROUPWIN( )
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 以前のバージョンの Visio では、この関数は _OPENGROUPWIN に相当します。Visio 4.0 以降のバージョンでは、どちらのスタイルも使用できます。 
   

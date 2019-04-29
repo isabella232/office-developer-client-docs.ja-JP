@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 42cd946c-c55a-4371-99ee-05e2248fdd5f
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9b4510a32fe14e4316a6bcddafcc163ee899436e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278894"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421565"
 ---
 # <a name="pidtagstatusstring-canonical-property"></a>PidTagStatusString 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32278894"
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |MAPI の状態  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 これらのプロパティによって、サービスプロバイダーと MAPI は、統合されたアドレス帳や特定のサービスプロバイダーなど、セッションリソースの状態に関する特定の情報を提供する機会を提供します。 このプロパティは、状態コードまたは**PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md)) プロパティについて説明し、追加情報を提供します。 **PR_STATUS_CODE**はすべての状態オブジェクトに必要ですが、 **PR_STATUS_STRING**と関連付けられたプロパティは省略可能です。 トランスポートプロバイダーで値が指定されていない場合、MAPI スプーラーは既定値を提供します。 
   

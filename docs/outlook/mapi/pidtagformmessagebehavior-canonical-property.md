@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8fd82432-9fd9-49ed-aa52-72109db04dc9
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8bfb7e5af2e2e5e1a51225dc1cf20baf897752c1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316213"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432885"
 ---
 # <a name="pidtagformmessagebehavior-canonical-property"></a>PidTagFormMessageBehavior 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32316213"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |MAPI 共通  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 値が FALSE の場合、メッセージは、送信トレイフォルダーにある他の個人外のメッセージとして構成する必要があることを示します。 
   

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 971b4837-6823-4f28-9803-3c22b2ec091f
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2bff20af2b3e9ea4e203e38ae38a8bc19074a727
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321237"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438569"
 ---
 # <a name="dtbllbx"></a>DTBLLBX
 
@@ -63,7 +63,7 @@ MAPI_NO_VBAR
   
 > **openproperty**呼び出しを使用して開くことができる PT_OBJECT 型のテーブルプロパティのプロパティタグ。 表に含める必要のある列の数は、リストが単一または複数の選択リストであるかによって決まります。 **ulprsetproperty**メンバーが**PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) に設定されている場合、リストは複数の項目を選択できます。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **dtbllbx**構造体は、複数のアイテムを表示するために使用されるコントロールのリストを記述し、ユーザーが1つ以上のアイテムを選択できるようにします。 
   

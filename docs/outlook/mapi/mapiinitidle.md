@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: b6de7c6a-f2e7-4248-adea-d354924a8bbf
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: b07c40882c0b9974c71eeb03123e7025b948a75e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346656"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432444"
 ---
 # <a name="mapiinitidle"></a>MAPIInitIdle
 
@@ -49,7 +49,7 @@ LONG MAPIInitIdle(
 
 **MAPIInitIdle**関数は、初期化が成功した場合は0を返し、それ以外の場合は1を返します。 **MAPIInitIdle**が複数回呼び出された場合、追加の呼び出しはすべて成功しますが、参照カウントを増分する場合を除いて無視されます。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 クライアントアプリケーションまたはサービスプロバイダーは、他の idle engine 関数を呼び出す前に、 **MAPIInitIdle**を呼び出す必要があります。 
   

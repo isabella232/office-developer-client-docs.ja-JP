@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: bdb4cdca-8dfd-4f90-9467-ec31cea3f518
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: bedec72e8371d0e8aa69415d2f0dc77b4c62ff76
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315527"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437533"
 ---
 # <a name="iprovideradmin--iunknown"></a>IProviderAdmin : IUnknown
 
@@ -46,7 +46,7 @@ ms.locfileid: "32315527"
 |[deleteprovider](iprovideradmin-deleteprovider.md) <br/> |メッセージサービスからサービスプロバイダーを削除します。  <br/> |
 |[openプロファイル '](iprovideradmin-openprofilesection.md) <br/> |現在のプロファイルからプロファイルセクションを開き、さらにアクセスできるように[IProfSect](iprofsectimapiprop.md)ポインターを返します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 クライアントは、 [IMsgServiceAdmin:: adminproviders](imsgserviceadmin-adminproviders.md)メソッドを呼び出して、 **IProviderAdmin**インターフェイスへのポインターを取得できます。サービスプロバイダーのメッセージサービスのエントリポイント関数が呼び出されると、 **IProviderAdmin**ポインターが渡されます。 
   

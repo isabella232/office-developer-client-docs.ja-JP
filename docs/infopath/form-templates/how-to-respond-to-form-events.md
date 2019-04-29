@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 754db64b-179f-4385-8dd9-c20c9407b186
 description: ユーザーがフォームに入力する際に発生する各種イベントに応答するコードを書くことができます。InfoPath 内でイベントの作業を実行するには、デザイン モードのフォーム テンプレートの作業中にイベント ハンドラーを追加します。
 ms.openlocfilehash: 0db3209dfe005f2a87ad65f3fc89b1714ec7d95c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300106"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407684"
 ---
 # <a name="respond-to-form-events"></a>フォーム イベントに応答する
 

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: e3f501a4-a8ee-43d7-bd83-c94e7980c398
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 28880b818bc80e31cae0c695d4aac92eb9555cac
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314841"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433585"
 ---
 # <a name="imapipropgetidsfromnames"></a>IMAPIProp::GetIDsFromNames
 
@@ -80,7 +80,7 @@ MAPI_W_ERRORS_RETURNED
   
 > 呼び出しは全体的に成功しましたが、1つ以上のプロパティ識別子を返すことができませんでした。 使用できない各プロパティの対応するプロパティの種類が**PT_ERROR**に設定され、その識別子が0に設定されます。 この警告が返された場合は、呼び出しを成功として処理します。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapiprop:: getidsfromnames**メソッドは、1つ以上の名前付きプロパティのプロパティ識別子を保持するプロパティタグの配列を取得します。 **imapiprop:: getidsfromnames**を呼び出して、次の操作を行うことができます。 
   

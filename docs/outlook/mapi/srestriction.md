@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: c12b4409-da6f-480b-87af-1e5baea2e8bd
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: a2a6d273495df52adb83393dc5549b0872c8f6f3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341742"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439360"
 ---
 # <a name="srestriction"></a>SRestriction
 
@@ -53,7 +53,7 @@ typedef struct _SRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **rt**
   
@@ -122,7 +122,7 @@ RES_SUBRESTRICTION
 |RES_SIZE  <br/> |[SSizeRestriction](ssizerestriction.md) <br/> |
 |RES_SUBRESTRICTION  <br/> |[SSubRestriction](ssubrestriction.md) <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 クライアントは、 **srestriction**構造を使用して、テーブルのビュー内の行の数と種類を制限したり、フォルダー内の特定のメッセージを検索したりします。 テーブルに制限を課すために、クライアントは[IMAPITable:: Restrict](imapitable-restrict.md)または[imapitable:: FindRow](imapitable-findrow.md)を呼び出します。 フォルダーに制限を課すために、クライアントはフォルダーの[IMAPIContainer:: setsearchcriteria](imapicontainer-setsearchcriteria.md)メソッドを呼び出します。 
   

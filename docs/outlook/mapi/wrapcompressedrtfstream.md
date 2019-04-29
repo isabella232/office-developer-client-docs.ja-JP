@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0949e066-aa28-4ede-ac88-b2dccd5098e8
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 710e0e2fc334194e33c6d8ba1296e4c7b1938bc0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32325628"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439801"
 ---
 # <a name="wrapcompressedrtfstream"></a>WrapCompressedRTFStream
 
@@ -69,7 +69,7 @@ S_OK
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 MAPI_MODIFY フラグが_ulflags_パラメーターに渡されている場合、 _lp sedrtfstream_パラメーターは、読み取りおよび書き込みのために既に開いている必要があります。 新しい、非圧縮 RTF テキストは、lp、暗号化されていない_sedrtfストリーム_で返される stream インターフェイスに書き込まれる必要があります。 既存のストリームを追加することはできないため、メッセージテキスト全体を記述する必要があります。 
   

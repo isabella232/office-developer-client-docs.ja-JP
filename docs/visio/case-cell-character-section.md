@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: cf063c05-5789-e037-700b-1e70df00e254
 description: 図形のテキストでの大文字小文字による区別を指定します。すべて大文字 (1) および先頭文字のみ大文字 (2) を選択した場合、すべてのテキストを大文字で入力すると、テキストの表示状態は変わりません。この 2 つのオプションを有効にするには、テキストを小文字で入力する必要があります。
 ms.openlocfilehash: 50ceaa1188caded40d36b8837c346fbbba2e14d2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337234"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434348"
 ---
 # <a name="case-cell-character-section"></a>[Case] セル ([Character] セクション)
 
@@ -23,10 +23,10 @@ ms.locfileid: "32337234"
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
 | .0  <br/> | 通常  <br/> |**visCaseNormal** <br/> |
-| 1-d  <br/> | すべて大文字  <br/> |**viscaseallcaps** <br/> |
-| pbm-2  <br/> | 先頭文字のみ大文字  <br/> |**viscaseinitialcaps** <br/> |
+| 1   <br/> | すべて大文字  <br/> |**viscaseallcaps** <br/> |
+| 2   <br/> | 先頭文字のみ大文字  <br/> |**viscaseinitialcaps** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Case] セルへの参照を取得するには、次の値を使用します。 
   

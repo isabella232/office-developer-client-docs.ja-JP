@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 8316ff89-104d-43fd-902b-476fe567e23b
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 8ccb732dd587b2e5107290b2db7c48e85d0145d4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317333"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434152"
 ---
 # <a name="imsgstoregetoutgoingqueue"></a>IMsgStore::GetOutgoingQueue
 
@@ -50,7 +50,7 @@ S_OK
   
 > 送信キューテーブルが正常に返されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMsgStore:: getoutgoingqueue**メソッドは、メッセージストアの送信メッセージのキューを示すテーブルへのアクセス権を MAPI スプーラーに提供します。 通常、メッセージは[IMessage:: submitmessage](imessage-submitmessage.md)メソッドが呼び出された後に、送信キューテーブルに配置されます。 ただし、送信の順序は、トランスポートプロバイダーへの前処理と送信の順序に影響するため、送信用にマークされているメッセージの一部は、すぐに送信キューテーブルに表示されない場合があります。 
   

@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 109c34b6-911b-4dfc-9799-aadf47172e84
 description: このトピックでは、プロバイダーがサポートする同期モードに応じて、Outlook Social Connector (.osc) プロバイダーが友人および友人以外のデータを適切に返すことを確認するテストとシナリオについて説明します。
 ms.openlocfilehash: 1c97342fd5b219b15b1f58dbc065fc268f8e81d7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338788"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433669"
 ---
 # <a name="testing-friends"></a>友だちのテスト
 

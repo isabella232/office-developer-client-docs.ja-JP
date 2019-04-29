@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: f8354d0d-0ce2-fb33-ddf7-611a2c24a8be
 description: ページの印刷方向を、縦向きにするか横向きにするかを指定します。
 ms.openlocfilehash: f7e73bea5120d878a1b2dbf553a66b349d247fce
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315184"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434866"
 ---
 # <a name="printpageorientation-cell-print-properties-section"></a>[PrintPageOrientation] セル ([Print Properties] セクション)
 
@@ -23,10 +23,10 @@ ms.locfileid: "32315184"
 |**値**|**Orientation**|**オートメーション定数**|
 |:-----|:-----|:-----|
 | .0  <br/> | プリンターの用紙サイズに合わせます。  <br/> |**vispposameasprinter** <br/> |
-| 1-d  <br/> | Portrait  <br/> |**visppoportrait** <br/> |
-|pbm-2  <br/> |写真  <br/> |**visPPOLandscape** <br/> |
+| 1   <br/> | Portrait  <br/> |**visppoportrait** <br/> |
+|2   <br/> |写真  <br/> |**visPPOLandscape** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 文書に新しいページを挿入すると、この設定は作業中のページの設定に既定値として設定されます。
   

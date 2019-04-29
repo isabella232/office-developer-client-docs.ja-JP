@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 47bb268f-acdd-7369-716c-bd51a32b8a49
 description: レイヤーに属する図形に対する選択操作や編集操作をロックするかどうかを指定します。
 ms.openlocfilehash: d548a6f0fe0cac10d80d73c904739b2979ecf27f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359683"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438828"
 ---
 # <a name="lock-cell-layers-section"></a>[Lock] セル ([Layers] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32359683"
 |TRUE  <br/> |図形をロックします。  <br/> |
 |FALSE  <br/> |図形をロックしません。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この値は、[**レイヤー プロパティ**] ダイアログ ボックスの [**ロック**] を選択して設定することもできます (このダイアログ ボックスを開くには、[**ホーム**] タブの [**編集**] グループで、[**レイヤー**] をクリックして、[**レイヤー プロパティ**] をクリックします)。
   

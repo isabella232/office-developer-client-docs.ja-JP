@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 74c52b96-e903-444b-8bda-73a08f278c22
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 3de29e9af5caa82d2e57c8fcbbdab7d5ddb19dd9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285207"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432584"
 ---
 # <a name="imapisupportdoprogressdialog"></a>IMAPISupport::DoProgressDialog
 
@@ -59,7 +59,7 @@ S_OK
   
 > progress オブジェクトが正常に取得されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport::D o進捗ダイアログ**メソッドは、アドレス帳とメッセージストアプロバイダーのサポートオブジェクトに実装されています。 これらのプロバイダーは**doprogress ダイアログ**を呼び出して、進行状況の情報を計算し、標準ダイアログボックスを表示する[imapiprogress](imapiprogressiunknown.md)インターフェイスの MAPI 実装にアクセスします。 
   
