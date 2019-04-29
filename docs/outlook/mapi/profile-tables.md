@@ -9,35 +9,35 @@ api_type:
 ms.assetid: cd8d60df-98fb-4e08-b547-0836bb31be79
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 15c07c05af82389bce697c300cd9b1d504e98736
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328561"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424351"
 ---
-# <a name="profile-tables"></a><span data-ttu-id="db6fc-103">プロファイルテーブル</span><span class="sxs-lookup"><span data-stu-id="db6fc-103">Profile Tables</span></span>
+# <a name="profile-tables"></a><span data-ttu-id="079ba-103">プロファイルテーブル</span><span class="sxs-lookup"><span data-stu-id="079ba-103">Profile Tables</span></span>
 
   
   
-<span data-ttu-id="db6fc-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="db6fc-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="079ba-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="079ba-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="db6fc-105">プロファイルテーブルには、特定のクライアントアプリケーションに関連付けられているすべてのプロファイルに関する情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="db6fc-105">The profile table lists information about all profiles associated with a particular client application.</span></span> <span data-ttu-id="db6fc-106">クライアントが使用するために MAPI によって実装された、すべてのセッションに対して1つのプロファイルテーブルがあります。</span><span class="sxs-lookup"><span data-stu-id="db6fc-106">There is one profile table for every session, implemented by MAPI for use by clients.</span></span> 
+<span data-ttu-id="079ba-105">プロファイルテーブルには、特定のクライアントアプリケーションに関連付けられているすべてのプロファイルに関する情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="079ba-105">The profile table lists information about all profiles associated with a particular client application.</span></span> <span data-ttu-id="079ba-106">クライアントが使用するために MAPI によって実装された、すべてのセッションに対して1つのプロファイルテーブルがあります。</span><span class="sxs-lookup"><span data-stu-id="079ba-106">There is one profile table for every session, implemented by MAPI for use by clients.</span></span> 
   
-<span data-ttu-id="db6fc-107">クライアントは、 [IProfAdmin:: getprofiletable](iprofadmin-getprofiletable.md)メソッドを呼び出して、プロファイルテーブルにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="db6fc-107">Clients access the profile table by calling the [IProfAdmin::GetProfileTable](iprofadmin-getprofiletable.md) method.</span></span> 
+<span data-ttu-id="079ba-107">クライアントは、 [IProfAdmin:: getprofiletable](iprofadmin-getprofiletable.md)メソッドを呼び出して、プロファイルテーブルにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="079ba-107">Clients access the profile table by calling the [IProfAdmin::GetProfileTable](iprofadmin-getprofiletable.md) method.</span></span> 
   
-<span data-ttu-id="db6fc-108">プロファイルテーブルは、静的なテーブルです。</span><span class="sxs-lookup"><span data-stu-id="db6fc-108">The profile table is a static table.</span></span> <span data-ttu-id="db6fc-109">削除対象としてマークされているプロファイルは、プロファイルテーブルに含まれていません。</span><span class="sxs-lookup"><span data-stu-id="db6fc-109">Profiles that have been marked for deletion are not included in the profile table.</span></span>
+<span data-ttu-id="079ba-108">プロファイルテーブルは、静的なテーブルです。</span><span class="sxs-lookup"><span data-stu-id="079ba-108">The profile table is a static table.</span></span> <span data-ttu-id="079ba-109">削除対象としてマークされているプロファイルは、プロファイルテーブルに含まれていません。</span><span class="sxs-lookup"><span data-stu-id="079ba-109">Profiles that have been marked for deletion are not included in the profile table.</span></span>
   
-<span data-ttu-id="db6fc-110">ほとんどのテーブル実装と同様に、 **getprofiletable**が呼び出され、クライアントが使用できるプロファイルがない場合、テーブルは0行で作成されます。</span><span class="sxs-lookup"><span data-stu-id="db6fc-110">As with most table implementations, if **GetProfileTable** is called and there are no profiles available to the client, the table is created with zero rows.</span></span> 
+<span data-ttu-id="079ba-110">ほとんどのテーブル実装と同様に、 **getprofiletable**が呼び出され、クライアントが使用できるプロファイルがない場合、テーブルは0行で作成されます。</span><span class="sxs-lookup"><span data-stu-id="079ba-110">As with most table implementations, if **GetProfileTable** is called and there are no profiles available to the client, the table is created with zero rows.</span></span> 
   
-<span data-ttu-id="db6fc-111">次のプロパティを使用して、プロファイルテーブルで必要な列セットを作成します。</span><span class="sxs-lookup"><span data-stu-id="db6fc-111">The following properties make up the required column set in profile tables:</span></span>
+<span data-ttu-id="079ba-111">次のプロパティを使用して、プロファイルテーブルで必要な列セットを作成します。</span><span class="sxs-lookup"><span data-stu-id="079ba-111">The following properties make up the required column set in profile tables:</span></span>
   
- <span data-ttu-id="db6fc-112">**PR_DEFAULT_PROFILE**([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="db6fc-112">**PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md))</span></span> 
+ <span data-ttu-id="079ba-112">**PR_DEFAULT_PROFILE**([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="079ba-112">**PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md))</span></span> 
   
- <span data-ttu-id="db6fc-113">**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="db6fc-113">**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))</span></span> 
+ <span data-ttu-id="079ba-113">**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="079ba-113">**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="db6fc-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="db6fc-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="079ba-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="079ba-114">See also</span></span>
 
 
 
-[<span data-ttu-id="db6fc-115">MAPI テーブル</span><span class="sxs-lookup"><span data-stu-id="db6fc-115">MAPI Tables</span></span>](mapi-tables.md)
+[<span data-ttu-id="079ba-115">MAPI テーブル</span><span class="sxs-lookup"><span data-stu-id="079ba-115">MAPI Tables</span></span>](mapi-tables.md)
 
