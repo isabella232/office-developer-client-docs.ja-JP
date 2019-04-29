@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 787badaf-8782-454d-a016-7eae83bbd8a9
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: d32925fcd5c3be7fe3e615ee2290f25c7595911c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310977"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409301"
 ---
 # <a name="cluster-safe-functions"></a>クラスター セーフ関数
 

@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 802224ef-6eea-4929-824c-507da1c073a5
 description: ドキュメント プロバイダー拡張機能を使用して Office for iOS を iOS ドキュメント ピッカーと統合することにより、別のドキュメント プロバイダーによって保存されたファイルを Office で開けるようになります。
 ms.openlocfilehash: e3a3374c7fd33bb00ed076075eb6199c24eec923
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299805"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410666"
 ---
 # <a name="office-for-ios-support-for-the-ios-document-picker"></a>iOS ドキュメント ピッカーのための Office for iOS のサポート
 

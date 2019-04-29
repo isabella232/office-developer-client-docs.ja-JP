@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 5f4b62db-a759-41a2-9bea-29fc04b2962b
 description: '最終更新日: 2011 年11月8日'
 ms.openlocfilehash: 6583765d4df7c7bfae9e7a62606beaa857874954
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315478"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408349"
 ---
 # <a name="ipstoverride1setpersistedregistrations"></a>IPSTOVERRIDE1::SetPersistedRegistrations
 
@@ -50,7 +50,7 @@ S_OK
   
 > 関数呼び出しが成功しました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 永続的な登録を行うと、pst を開く Outlook や Windows デスクトップサーチなど、アプリケーションのパフォーマンスに悪影響を及ぼす可能性があります。 永続登録の使用を使用または拡張する場合のパフォーマンスの影響を考慮してください。
   

@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 8491f459-9de2-8e75-5532-7d3bd0986734
 description: ユーザーが [Geometry] セクションで定義された塗りつぶされた領域をクリックしたときに、図形を選択またはドラッグできるかどうかを指定します。
 ms.openlocfilehash: d60268685d93ae88abb2840f62b093db1e688c2f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341063"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417722"
 ---
 # <a name="noquickdrag-cell-geometry-section"></a>[NoQuickDrag] セル ([Geometry] セクション)
 
 ユーザーが [Geometry] セクションで定義された塗りつぶされた領域をクリックしたときに、図形を選択またはドラッグできるかどうかを指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [NoQuickDrag] セルへの参照を取得するには、次の値を使用します。 
   

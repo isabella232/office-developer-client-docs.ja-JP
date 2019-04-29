@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 28d1cd60-4fb6-9feb-1a13-0962798ac1ad
 description: アクション タグとそのアクションを関連付けるキーとして使用されるアクション タグの名前です。
 ms.openlocfilehash: 777d6c1098888c9835c1ad367bb70926b835180b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332397"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417911"
 ---
 # <a name="tagname-cell-action-tags-section"></a>[TagName] セル ([Action Tags] セクション)
 
@@ -23,7 +23,7 @@ ms.locfileid: "32332397"
 > [!NOTE]
 > Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
  [Action Tags] セクションの [TagName] セルは、[Actions] セクションの [TagName] セルと一緒に、アクション タグとそのアクションを関連付ける働きをします。 [Actions] セクションの行には、[tagname] セルがあり、このセルと同じ tagname セル値が指定されている行には、このアクションタグに対して実行するアクションが定義されています。 
   

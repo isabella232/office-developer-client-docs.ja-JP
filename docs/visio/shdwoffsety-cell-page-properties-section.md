@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: f3f53a7d-7450-b2b0-b508-6044a87450d9
 description: 図形の影を図形から垂直方向にオフセットする場合の距離を、ページの単位で指定します。
 ms.openlocfilehash: be7ec4cccd53cc9d74811e2e45122c8bc29497d3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349057"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438142"
 ---
 # <a name="shdwoffsety-cell-page-properties-section"></a>[ShdwOffsetY] セル ([Page Properties] セクション)
 
 図形の影を図形から垂直方向にオフセットする場合の距離を、ページの単位で指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この値は、[**ページ設定**] ダイアログ ボックスで設定します (このダイアログ ボックスを開くには、[**デザイン**] タブの [**ページ設定**] 矢印をクリックします)。この値は、図面の縮尺による影響を受けません。図面の縮尺を変更しても、影のオフセットは変わりません。 
   

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: acc136ef-9946-7c12-a467-9ded732a3549
 description: datetime または expression のグレゴリオ暦の年を表す整数を返します。これは、システムの現在の地域と言語の設定によって設定された短い日付形式に従って書式設定されます。
 ms.openlocfilehash: c9bacd34557d365841171bee5c9f4683e6a3d296
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351654"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420711"
 ---
 # <a name="year-function-visioshapesheet"></a>YEAR 関数 (VisioShapeSheet)
 
@@ -30,13 +30,13 @@ YEAR ("* * *datetime* * *" |* **式** * [, * * *lcid* * *])
 |:-----|:-----|:-----|:-----|
 | _datetime_ <br/> |必須  <br/> |**String** <br/> | 日付および時刻として一般的に認識される任意の文字列、または日付および時刻を含んだセルに対する参照を指定します。  <br/> |
 | _expression_ <br/> |必須  <br/> |**さまざま** <br/> |日付および時刻を算出する式を指定します。  <br/> |
-| _lcid_ <br/> |省略可能  <br/> |**数値型 (Numeric)** <br/> |現地以外の日時を計算するときに使用するロケール識別子を指定します。 ロケール識別子は、システムのヘッダー ファイルに記述されている数字です。  <br/> |
+| _lcid_ <br/> |省略可能  <br/> |**数値** <br/> |現地以外の日時を計算するときに使用するロケール識別子を指定します。 ロケール識別子は、システムのヘッダー ファイルに記述されている数字です。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
 整数
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _datetime_または_expression_の時刻コンポーネントは破棄されます。 
   

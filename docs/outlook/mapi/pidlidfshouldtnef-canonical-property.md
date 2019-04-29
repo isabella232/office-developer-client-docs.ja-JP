@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3cab23b6-f0e3-4703-a83b-12a617537651
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: a8f88e4b41ab455c55bfd1cb36b73ce7ef0383b3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348994"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438968"
 ---
 # <a name="pidlidfshouldtnef-canonical-property"></a>PidLidFShouldTNEF 標準プロパティ
 
@@ -35,7 +35,7 @@ ms.locfileid: "32348994"
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |エリア:  <br/> |実行時の構成  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティは、Microsoft Word が電子メールエディターとして設定されているときに設定され、リッチテキスト形式 (RTF) のストリームに埋め込まれている OLE オブジェクトを送信します。
   

@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: b08a6558-519f-44e0-aeff-9919544d515e
 description: ドキュメントのページを複製できるかどうかを、ブール演算型で決定します。
 ms.openlocfilehash: 3f3274c6cfadb81ef514a179279bdaed3543b654
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338543"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439661"
 ---
 # <a name="doclockduplicatepage-cell-document-properties-section"></a>[DocLockDuplicatePage] セル ([ドキュメントのプロパティ] セクション)
 
@@ -23,7 +23,7 @@ ms.locfileid: "32338543"
 |TRUE  <br/> |ページのショートカット メニューの  [**複製**] と、**Page.Duplicate** オートメーション メソッドはどちらも無効化されています。  <br/> |
 |FALSE  <br/> |このページは複製できます。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式から、**Cell** エレメントの **N** 属性の値によって、または **CellsU** プロパティを使用したプログラムから、名前によって [**DocLockDuplicatePage**] セルへの参照を取得するには、次の値を使用します。 
   

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 50cf1cac-c376-4bcd-9ede-8219b74ba200
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 0114da6030fbe5b1fe451e0e9831746bf58cc4b4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316255"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435643"
 ---
 # <a name="pidtagformcontactname-canonical-property"></a>PidTagFormContactName 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32316255"
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |MAPI 共通  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 通常、連絡先には、フォームの管理を担当する個人またはエイリアスの名前が含まれています。 
   

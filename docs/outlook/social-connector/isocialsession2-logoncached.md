@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 8cac444b-0e81-44ff-a7a0-87793b533e26
 description: キャッシュされた資格情報を使用してソーシャルネットワークサイトにログオンします。
 ms.openlocfilehash: b79c692c01022dd10ecb8d4085f0aedb28a810c5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336506"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436623"
 ---
 # <a name="isocialsession2logoncached"></a>ISocialSession2::LogonCached
 
@@ -41,7 +41,7 @@ _connectout_
   
 > 読み上げ資格情報を含む符号化文字列。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このメソッドは、 [iime alprovider:: getcapabilities](isocialprovider-getcapabilities.md)によって返される**機能**XML で**uselogoncached**が**true**に設定されている場合にのみ、認証のために呼び出されます。
   

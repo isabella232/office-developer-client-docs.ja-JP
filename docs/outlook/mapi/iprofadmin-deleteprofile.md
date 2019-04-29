@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 730af2da-4c4a-42a7-9d52-56d914107d64
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8aafb849a98028efb37646752a7b49fa5e6ef2ff
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309563"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419591"
 ---
 # <a name="iprofadmindeleteprofile"></a>IProfAdmin::DeleteProfile
 
@@ -54,7 +54,7 @@ MAPI_E_NOT_FOUND
   
 > 指定されたプロファイルが存在しません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IProfAdmin::D eleteprofile**メソッドは、プロファイルを削除します。 **deleteprofile**を呼び出したときに削除するプロファイルが使用されている場合、 **deleteprofile**は S_OK を返しますが、プロファイルはすぐには削除されません。 代わりに、 **deleteprofile**はプロファイルを削除対象としてマークし、使用されなくなった後に、すべてのアクティブなセッションが終了した時点で削除します。 
   

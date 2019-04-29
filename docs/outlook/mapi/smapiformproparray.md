@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: bb243bc4-4974-4ad6-aa76-2426c1ebe84b
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 50b6581dec8211968a49b204c6d9b1ba1c65bb62
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309514"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420067"
 ---
 # <a name="smapiformproparray"></a>SMAPIFormPropArray
 
@@ -42,7 +42,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **cprops**
   
@@ -56,7 +56,7 @@ typedef struct
   
 > フォームプロパティの配列。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **smapiformproparray**の構造体は、次のメソッドにパラメーターとして渡されます。 
   

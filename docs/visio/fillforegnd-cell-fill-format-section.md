@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 7548a480-4dce-45e0-281b-f6f8bdf05c0b
 description: 図形の塗りつぶしのパターンで前景 (ストローク部分) に使用する色を指定します。
 ms.openlocfilehash: 352fecf8d99069cfb5ebd72d295284dc03446364
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322506"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415566"
 ---
 # <a name="fillforegnd-cell-fill-format-section"></a>[FillForegnd] セル ([Fill Format] セクション)
 
 図形の塗りつぶしのパターンで前景 (ストローク部分) に使用する色を指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 色を設定するには、0 ～ 23 の数値を入力します。
   

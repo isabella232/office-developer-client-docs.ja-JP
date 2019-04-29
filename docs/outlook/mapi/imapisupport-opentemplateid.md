@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 532f7af0-b2cc-49dd-b1de-e3ec1dc9a3e7
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 07aa508b473f4a87d5b4909f83771549c301a600
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326363"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418506"
 ---
 # <a name="imapisupportopentemplateid"></a>IMAPISupport::OpenTemplateID
 
@@ -83,7 +83,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > 外部アドレス帳プロバイダーが存在しません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport:: OpenTemplateID**メソッドは、アドレス帳プロバイダーサポートオブジェクトに対してのみ実装されています。 **OpenTemplateID**は、他のアドレス帳プロバイダー (外部プロバイダーとも呼ばれる) に属するエントリに対してホストとして動作するアドレス帳プロバイダーによってのみ呼び出されます。 ホストプロバイダーは、 **OpenTemplateID**を呼び出して外部エントリを開きます。これは、ホストプロバイダーのデータが外部プロバイダーのコードにバインドされるときに発生します。 
   

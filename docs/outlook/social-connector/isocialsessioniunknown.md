@@ -9,21 +9,21 @@ localization_priority: Normal
 ms.assetid: 0fe423d7-b044-479b-89ad-c39620eedd65
 description: ソーシャルネットワークサイトへの接続を表します。
 ms.openlocfilehash: c60fab1c27d2f761db28ed06bb45080857630e8d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357366"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437827"
 ---
 # <a name="isocialsession--iunknown"></a>ISocialSession : IUnknown
 
 ソーシャルネットワークサイトへの接続を表します。
   
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 次の表に、 **iare alsession**インターフェイスで使用できるメンバーを示します。 
   
-|**Name**|**メンバーの種類**|**説明**|
+|**名前**|**メンバーの種類**|**説明**|
 |:-----|:-----|:-----|
 |[findperson](isocialsession-findperson.md) <br/> |メソッド  <br/> |_userID_パラメーターに一致する1人以上の人物を表す文字列を取得します。  <br/> |
 |[ユーザー](isocialsession-followperson.md) <br/> |メソッド  <br/> |ソーシャルネットワークにログオンしているユーザーのフレンドとして、 _emailAddress_パラメーターによって識別された人物を追加します。  <br/> |
@@ -39,7 +39,7 @@ ms.locfileid: "32357366"
 |[SiteUrl](isocialsession-siteurl.md) <br/> |プロパティ  <br/> |ソーシャルネットワークサイトの URL を設定します。  <br/> |
 |[個人](isocialsession-unfollowperson.md) <br/> |メソッド  <br/> |_userID_パラメーターで指定された人物をソーシャルネットワーク上のフレンドとして削除します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 .osc プロバイダーは、このインターフェイスを実装して、.osc と通信する必要があります。
   

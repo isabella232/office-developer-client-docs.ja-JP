@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: cb432d52-6c96-45d2-bbde-45b0de3f915c
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 936a20c4236ab76e5acdb178737c3044d3f53bfe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299546"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418723"
 ---
 # <a name="getinstance"></a>GetInstance
 
@@ -59,7 +59,7 @@ VOID GetInstance(
 
 なし。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 コピーされた値が割り当てられたメモリに対して大きすぎる場合、 **GetInstance**関数は新しいメモリを割り当てる代わりにポインターのみをコピーします。 
   

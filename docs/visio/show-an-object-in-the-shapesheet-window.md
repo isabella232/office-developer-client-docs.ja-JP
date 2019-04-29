@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: ff74bf11-e693-11e4-23fa-67e93aa203ff
 description: Microsoft Visio のオブジェクトは、式のセットとして内部的に格納されます。 [シェイプシート] ウィンドウに Visio オブジェクトを表示して、オブジェクトの外観と振る舞いを決定するための基礎となる数式を参照したり、編集することができます。
 ms.openlocfilehash: a0fd5e0305a5520638eebb34f7ec0cdcbeea17fc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342820"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416672"
 ---
 # <a name="show-an-object-in-the-shapesheet-window"></a>[シェイプシート] ウィンドウにオブジェクトを表示する
 

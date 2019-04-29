@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: ef94ee0f-dbb8-a2e1-1805-8a6609830d2a
 description: 大文字に変換された文字列を返します。
 ms.openlocfilehash: b88958526bfb5e08839077217759f7ffb50151b0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327329"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415146"
 ---
 # <a name="upper-function"></a>UPPER 関数
 
@@ -30,7 +30,7 @@ UPPER (* * *expression* * *)
 |:-----|:-----|:-----|:-----|
 | _expression_ <br/> |必須  <br/> |**さまざま** <br/> | 文字列、セル参照、または式を指定します。指定した引数は文字列に変換されてから、大文字に変換されます。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 大文字/小文字の変換はロケールによって異なる機能であり、現在の設定に基づいて処理されます。 
   

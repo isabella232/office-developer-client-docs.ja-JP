@@ -13,11 +13,11 @@ api_type:
 ms.assetid: e6baaff1-446e-431a-a09b-9b529153382b
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 5a8c288e877078ece6ab2da8c6494d96e1714ad7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328964"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419927"
 ---
 # <a name="imapisupportsubscribe"></a>IMAPISupport::Subscribe
 
@@ -105,7 +105,7 @@ S_OK
   
 > 通知の登録に成功しました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport:: Subscribe**メソッドは、すべてのサービスプロバイダーサポートオブジェクトに実装されています。 サービスプロバイダーは、通知を管理するために、いずれかの**アドバイズ**メソッドから**サブスクライブ**を呼び出します。 
   

@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 771a2ab4-578d-51c3-fabd-138f7952bb11
 description: 用紙の給紙方法を指定します。
 ms.openlocfilehash: eb6e7daccb1743c43a30b34598e47187496e4aac
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301464"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406760"
 ---
 # <a name="papersource-cell-printproperties-section"></a>[PaperSource] セル ([PrintProperties] セクション)
 
 用紙の給紙方法を指定します。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この設定は、[**プリンターの設定**] ダイアログ ボックスの [**給紙**] の設定に対応しています (このダイアログ ボックスを開くには、[**デザイン**] タブで [**ページ設定**] 矢印をクリックし、[**プリンターの設定**] タブで [**設定**] をクリックします)。
   

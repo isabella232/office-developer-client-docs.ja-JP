@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 7ac2a8d4-6890-4346-a6b6-34deca9dab50
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 326a78ed512ec82a9f16b1540aad60954ab2d864
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338410"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411877"
 ---
 # <a name="iablogongetoneofftable"></a>IABLogon::GetOneOffTable
 
@@ -62,7 +62,7 @@ MAPI_E_NO_SUPPORT
   
 > アドレス帳プロバイダーでは、1回限りのテンプレートは提供されません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 MAPI は、 **getoneofftable**メソッドを呼び出して、受信者を作成するために1回限りのテンプレートを使用できるようにします。 新しい受信者が送信メッセージの受信者一覧に追加されます。 アドレス帳プロバイダーは、テンプレートの変更を MAPI に通知するために、1回限りのテーブルに対する通知をサポートする必要があります。 MAPI は、動的更新を有効にするために、1回限りのテーブルを開いたままにします。 
   

@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: e305585f-f0d8-0494-91d4-0c76929dc170
 description: ビットマップイメージからノイズ (ランダムに分散した色レベルのピクセル) を削除します。 既定値は 0% です。
 ms.openlocfilehash: f970fde22e864239ea3f3f9bcb704e7f4692e9cc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360250"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415805"
 ---
 # <a name="denoise-cell-image-properties-section"></a>[Denoise] セル ([Image Properties] セクション)
 
 ビットマップ画像からノイズを除去します。ノイズとは、カラー レベルが不規則に分散したピクセルのことです。既定値は 0% です。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Denoise] セルへの参照を取得するには、次の値を使用します。 
   

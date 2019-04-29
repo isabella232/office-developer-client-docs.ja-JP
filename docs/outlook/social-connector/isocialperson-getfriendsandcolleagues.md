@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 62d5b815-f199-499e-85eb-2dff21a8216e
 description: ユーザーのコレクションを表す文字列を取得します。
 ms.openlocfilehash: f755476f66ab2f91471b88c74baff899f31b83e3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331662"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407656"
 ---
 # <a name="isocialpersongetfriendsandcolleagues"></a>ISocialPerson::GetFriendsAndColleagues
 
@@ -29,7 +29,7 @@ _個人コレクション_
   
 > 読み上げ個人のフレンドのセットを表す xml 文字列。 Outlook Social Connector (.osc) プロバイダー拡張機能の XML スキーマで定義されているように、**フレンド**の定義に準拠しています。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 .osc プロバイダーがソーシャルネットワーク上で友人のキャッシュまたはハイブリッド同期をサポートしている場合、.osc 呼び出しは**GetFriendsAndColleagues**になります。 ソーシャルネットワークにログオンしている Outlook ユーザーの**GetFriendsAndColleagues**メソッドを最初に呼び出すときに、 **GetFriendsAndColleagues**は、ソーシャルネットワーク上でログオンしているユーザーのフレンドを表す XML 文字列を返します。 xml 文字列は、フレンド xml **** スキーマ定義に準拠しており、各フレンドの**person**要素 (.osc プロバイダースキーマ定義にも準拠) を指定します。 
   

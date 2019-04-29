@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 2698d059-9955-4eec-85a6-79defb64e07e
 description: InfoPath マネージ コード オブジェクト モデルには、InfoPath アプリケーションに関する情報 (フォームの基になる XML ドキュメント、フォーム定義ファイル (.xsf) などに関する情報) へのアクセスに使用できるオブジェクトとコレクションがあります。これらのデータには、InfoPath オブジェクト モデルの階層構造の最上位にあるオブジェクトを通じてアクセスします。このオブジェクトは、Application クラスを使用してインスタンス化されます。
 ms.openlocfilehash: 8da72313807584ee599d65701d009786dd631979
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300176"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417232"
 ---
 # <a name="access-application-data"></a>アプリケーション データにアクセスする方法
 

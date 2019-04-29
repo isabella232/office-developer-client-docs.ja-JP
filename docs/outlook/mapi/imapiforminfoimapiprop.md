@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: a9fda518-11ba-42aa-85ef-dd2279e0319d
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3913cb04f1f2f61ba6835b704f430d872756b227
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321736"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417365"
 ---
 # <a name="imapiforminfo--imapiprop"></a>IMAPIFormInfo : IMAPIProp
 
@@ -47,7 +47,7 @@ ms.locfileid: "32321736"
 |[saveform](imapiforminfo-saveform.md) <br/> |構成ファイルに特定のフォームの説明を保存します。  <br/> |
 |[openformcontainer](imapiforminfo-openformcontainer.md) <br/> |特定のフォームがインストールされているフォームコンテナーへのポインターを返します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 MapiForm ヘッダーファイルで定義されているほとんどのインターフェイスとは異なり、 **imapiforminfo**は imapiprop [:: GetProps](imapiprop-getprops.md)メソッドへの呼び出しを使用してほとんどのフォーム情報をエクスポートするため、imapiprop インターフェイスから継承します。 [](imapipropiunknown.md) 
   

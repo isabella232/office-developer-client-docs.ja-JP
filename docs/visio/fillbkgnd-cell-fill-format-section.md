@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 603d698f-a025-538c-8767-18e7716a9a5f
 description: 図形の塗りつぶしのパターンで背景に使用する色 (塗りつぶし部分) を指定します。
 ms.openlocfilehash: f4df5d2b44a50380c996b9b2e0f7cda7d212093b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322513"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436644"
 ---
 # <a name="fillbkgnd-cell-fill-format-section"></a>[FillBkgnd] セル ([Fill Format] セクション)
 
 図形の塗りつぶしのパターンで背景に使用する色 (塗りつぶし部分) を指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 色を設定するには、0 ～ 23 の数値を入力します。
   

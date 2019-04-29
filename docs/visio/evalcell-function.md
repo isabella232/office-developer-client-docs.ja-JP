@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 4aa3a1c9-dec9-5eb0-5743-0534c0b3bb5f
 description: カスタム関数を含むセルへの参照を取得します。また、引数としてカスタム関数に渡す1つ以上の名前と値のペアを指定することもできます (省略可能)。 指定した引数と値を指定して、カスタム関数の計算結果を返します。
 ms.openlocfilehash: 4ad6645862d620a36b90e4f46d09588d7e83fcc1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329072"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418905"
 ---
 # <a name="evalcell-function"></a>EVALCELL 関数
 
@@ -34,9 +34,9 @@ evalcell (* * *cellref* * *、[* * *arg1Name、arg1* * *]、[* * *arg2Name, arg2
    
 ### <a name="return-value"></a>戻り値
 
-番号
+数値
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 呼び出し元のセルは、ユーザー設定関数が使用する引数をすべて指定する必要はありません。 
   

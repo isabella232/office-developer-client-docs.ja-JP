@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 8ba40adb-420a-4e5f-8858-d706da6cb497
 description: 2 つの数を加算します。 この加算演算子では、日付に数 (日数) を加算することもできます。
 ms.openlocfilehash: 93135f99832f517c3a0cdbd1e9c380fcce45a28e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308079"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416567"
 ---
 # <a name="-add-access-custom-web-app"></a>+ (追加) (Access カスタム web アプリ)
 

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 02c66b46-1f01-43fb-832c-bac27aaae19f
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: e0cdcb92238dd4dffbcd6514e698e5511b05bf45
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360495"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419612"
 ---
 # <a name="ulvalidateparms"></a>UlValidateParms
 
@@ -60,7 +60,7 @@ MAPI_E_CALL_FAILED
   
 > エラーが発生したため、操作を完了できませんでした。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 MAPI プロバイダーとサービスプロバイダー間で渡されるパラメーターは正しいと見なされ、 [checkparms](checkparms.md)マクロを使用してのみ、デバッグ検証を行います。 プロバイダーは、クライアントアプリケーションによって渡されたすべてのパラメーターをチェックする必要がありますが、クライアントは MAPI および provider パラメーターが正しいと想定する必要があります。 **HR_FAILED**マクロを使用して、戻り値をテストします。 
   

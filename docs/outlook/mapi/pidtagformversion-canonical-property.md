@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: f2220060-65ea-4969-88d7-8348bd5aa242
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: ec806ed3ab871d6a36778b0898b2977628ccdcec
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316206"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409868"
 ---
 # <a name="pidtagformversion-canonical-property"></a>PidTagFormVersion 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32316206"
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |MAPI 共通  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 これらのプロパティは、フォームに対して現在有効なデザインバージョンを示します。 バージョンはフォームのデザイナーによって定義され、管理されており、すべての MAPI コンポーネントのバージョンに関連しているとは限りません。 
   

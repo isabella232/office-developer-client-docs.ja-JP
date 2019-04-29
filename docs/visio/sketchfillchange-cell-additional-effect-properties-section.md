@@ -8,17 +8,17 @@ localization_priority: Normal
 ms.assetid: 939f8f90-dee5-4175-b32a-e2964eb40681
 description: スケッチ効果を使用するときに、図形の座標からの図形の塗りつぶしのランダム度を指定します。この値は、セクションの長さに対する割合として設定されます。 [sketchfillchange] セルの値が 0% に設定されている場合、図形の塗りつぶしの境界図形は図形の座標に一致します。 値が 100% の場合、図形の塗りつぶしの境界ジオメトリは図形のジオメトリに沿っていません。
 ms.openlocfilehash: 8726e9dd6ca6257fb8dbbbef3dce1d4ec344e28b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339814"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408076"
 ---
 # <a name="sketchfillchange-cell-additional-effect-properties-section"></a>[SketchFillChange] セル ([追加効果のプロパティ] セクション)
 
 スケッチ効果を使用するときに、図形の座標からの図形の塗りつぶしのランダム度を指定します。この値は、セクションの長さに対する割合として設定されます。 **[sketchfillchange]** セルの値が 0% に設定されている場合、図形の塗りつぶしの境界図形は図形の座標に一致します。 値が 100% の場合、図形の塗りつぶしの境界ジオメトリは図形のジオメトリに沿っていません。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 最適な結果を得るための [**SketchFillChange**] セルの値の理想的な範囲は、15% から 50% の間です。 15% を下回る値ではほとんどわからず、50% を上回る値ではランダム化がいっそう強くなります。 
   

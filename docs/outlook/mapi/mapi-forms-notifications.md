@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 97ff2733-a2b1-4da0-b628-00850fc7925b
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: e9c10f78af6dff2e0d0c59d0bfe59be07dccd4b2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351479"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418611"
 ---
 # <a name="mapi-forms-notifications"></a>MAPI フォーム通知
 

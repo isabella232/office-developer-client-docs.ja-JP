@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 29bfe8ec-ca12-8fbf-b62b-ece3710dfe2e
 description: '[レイアウトの構成] ダイアログボックスで図形をレイアウトするときに、図形をページに配置する方法を指定します ([デザイン] タブの [レイアウト] で [ページの再レイアウト] をクリックし、[その他のレイアウトオプション] をクリックします)。 レイアウトスタイルと配置値を VisCellIndices から格納します。'
 ms.openlocfilehash: 381f74912b64395f33a2dc55c0bad24d36a16286
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326510"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418576"
 ---
 # <a name="shapeplacestyle-cell-shape-layout-section"></a>[ShapePlaceStyle] セル ([Shape Layout] セクション)
 
@@ -22,16 +22,16 @@ ms.locfileid: "32326510"
   
 |**定数**|**値**|
 |:-----|:-----|
-|**visLOPlaceBottomToTop** <br/> |2/4  <br/> |
-|**visLOPlaceCircular** <br/> |シックス  <br/> |
-|**visLOPlaceCompactDownLeft** <br/> |第  <br/> |
-|**visLOPlaceCompactDownRight** <br/> |7  <br/> |
-|**visLOPlaceCompactLeftDown** <br/> |スリー  <br/> |
-|**visLOPlaceCompactLeftUp** <br/> |個  <br/> |
-|**visLOPlaceCompactRightDown** <br/> |~  <br/> |
-|**visLOPlaceCompactRightUp** <br/> |i-9  <br/> |
-|**visLOPlaceCompactUpLeft** <br/> |#  <br/> |
-|**visLOPlaceCompactUpRight** <br/> |個  <br/> |
+|**visLOPlaceBottomToTop** <br/> |4   <br/> |
+|**visLOPlaceCircular** <br/> |6   <br/> |
+|**visLOPlaceCompactDownLeft** <br/> |14   <br/> |
+|**visLOPlaceCompactDownRight** <br/> |7   <br/> |
+|**visLOPlaceCompactLeftDown** <br/> |13   <br/> |
+|**visLOPlaceCompactLeftUp** <br/> |12   <br/> |
+|**visLOPlaceCompactRightDown** <br/> |8   <br/> |
+|**visLOPlaceCompactRightUp** <br/> |9   <br/> |
+|**visLOPlaceCompactUpLeft** <br/> |11   <br/> |
+|**visLOPlaceCompactUpRight** <br/> |10   <br/> |
 |**visLOPlaceDefault** <br/> |.0  <br/> |
 |**visLOPlaceHierarchyBottomToTopCenter** <br/> |1280  <br/> |
 |**visLOPlaceHierarchyBottomToTopLeft** <br/> |年  <br/> |
@@ -42,14 +42,14 @@ ms.locfileid: "32326510"
 |**visLOPlaceHierarchyRightToLeftBottom** <br/> |27  <br/> |
 |**visLOPlaceHierarchyRightToLeftMiddle** <br/> |日  <br/> |
 |**visLOPlaceHierarchyRightToLeftTop** <br/> |まで  <br/> |
-|**visLOPlaceHierarchyTopToBottomCenter** <br/> |インチ  <br/> |
-|**visLOPlaceHierarchyTopToBottomLeft** <br/> |16  <br/> |
-|**visLOPlaceHierarchyTopToBottomRight** <br/> |個  <br/> |
-|**visLOPlaceLeftToRight** <br/> |pbm-2  <br/> |
-|**visLOPlaceParentDefault** <br/> |約  <br/> |
-|**visLOPlaceRadial** <br/> |1/3  <br/> |
-|**visLOPlaceRightToLeft** <br/> |5  <br/> |
-|**visLOPlaceTopToBottom** <br/> |1-d  <br/> |
+|**visLOPlaceHierarchyTopToBottomCenter** <br/> |17   <br/> |
+|**visLOPlaceHierarchyTopToBottomLeft** <br/> |16   <br/> |
+|**visLOPlaceHierarchyTopToBottomRight** <br/> |18   <br/> |
+|**visLOPlaceLeftToRight** <br/> |2   <br/> |
+|**visLOPlaceParentDefault** <br/> |15   <br/> |
+|**visLOPlaceRadial** <br/> |3   <br/> |
+|**visLOPlaceRightToLeft** <br/> |5   <br/> |
+|**visLOPlaceTopToBottom** <br/> |1   <br/> |
    
 別の数式または  **CellsU** プロパティを使用したプログラムから、名前によって [ShapePlaceStyle] セルを参照するには、次の値を使用します。 
   

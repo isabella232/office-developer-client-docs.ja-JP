@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 8c22547e-ddf5-47f7-aed3-76e3854688df
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 7300c11d5835640fe308430c9bb08d40b397e47b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331606"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407320"
 ---
 # <a name="imapisupportaddress"></a>IMAPISupport::Address
 
@@ -55,7 +55,7 @@ S_OK
   
 > [アドレス] ダイアログボックスが正常に表示されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport:: address**メソッドは、アドレス帳プロバイダーサポートオブジェクトに実装されています。 アドレス帳プロバイダーの呼び出し**アドレス**。メッセージの受信者の一覧を作成または更新します。 
   

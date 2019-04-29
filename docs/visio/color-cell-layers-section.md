@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 61c19342-46fb-48d4-6375-c9ea8306286d
 description: レイヤーの表示に使用する色を指定します。
 ms.openlocfilehash: a2eef24187165cabfdfc8dee49747a2381562d3e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341826"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435132"
 ---
 # <a name="color-cell-layers-section"></a>[Color] セル ([Layers] セクション)
 
 レイヤーの表示に使用する色を指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 色を設定するには、0 ～ 23 の数値を入力します。
   

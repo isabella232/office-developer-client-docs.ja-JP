@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 95a40c8a-0a8b-46c7-a07a-cbc6a7de8a3c
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 15504ecc88188ed7bc4eed0e64b1871dbc6a5e8d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32350989"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406914"
 ---
 # <a name="imapifoldersetreadflags"></a>IMAPIFolder::SetReadFlags
 
@@ -90,7 +90,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > 呼び出しは成功しましたが、すべてのメッセージが正常に処理されませんでした。 この警告が返された場合、呼び出しは正常に処理されます。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapifolder:: setreadflags**メソッドは、1つ以上のフォルダーのメッセージの**PR_MESSAGE_FLAGS**プロパティの MSGFLAG_READ フラグを設定またはクリアします。 MSGFLAG_READ フラグを設定すると、メッセージは開封済みとしてマークされます。これは、意図した受信者が実際にメッセージを読んでいることを示しているわけではありません。 
   

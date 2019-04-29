@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 541dfe13-0f85-bac6-b302-fc044a75631e
 description: このトピックでは、データ低下レイヤー API の定数定義について説明します。
 ms.openlocfilehash: c2ad2fa7eba374fb7878609943ab63e684d1702c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32319013"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408391"
 ---
 # <a name="constants-data-degradation-layer-api"></a>定数 (データ低下層 API)
 

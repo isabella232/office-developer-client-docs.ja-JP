@@ -13,11 +13,11 @@ api_type:
 ms.assetid: fb321b48-3e5f-4b99-9af0-a57b66f26a2e
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: f477c617533d66fc129c7192c9f86bb8a46afbb1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280281"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419010"
 ---
 # <a name="imapicontrolgetstate"></a>IMAPIControl::GetState
 
@@ -58,7 +58,7 @@ S_OK
   
 > ボタンコントロールの状態が正常に取得されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 サービスプロバイダーは、 **IMAPIControl:: GetState**メソッドを実装して、ボタンコントロールの状態を MAPI に提供します。 ボタンが有効になっている場合は、マウスのクリックまたはキーの押すに応答することができます。 無効にすると、ボタンは淡色表示になり、マウスクリックまたはキーを押しても反応しません。 
   

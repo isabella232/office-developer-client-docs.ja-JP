@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: ffe48267-d6c7-c1d0-9298-272b31fd8102
 description: ユーザーの表示名を設定または返します。
 ms.openlocfilehash: 2fb42a6f6ae9a72bc31c103af6314fcfd098439c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328246"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419472"
 ---
 # <a name="propacctuserdisplayname"></a>PROP_ACCT_USER_DISPLAY_NAME
 
@@ -29,7 +29,7 @@ ms.locfileid: "32328246"
 |プロパティタグ:  <br/> |0x000b001f  <br/> |
 |接続  <br/> |読み取り/書き込み  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [IOlkAccount:: getprop](iolkaccount-getprop.md)または[IOlkAccount:: setprop](iolkaccount-setprop.md)を使用して、このプロパティを取得または設定します。
   

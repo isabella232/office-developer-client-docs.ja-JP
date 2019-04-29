@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2bbf13e9-05b3-4498-8e08-d9e07505190d
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 29d392eba530126e06a672c10044c5b4df0618c9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357856"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406088"
 ---
 # <a name="spropertyrestriction"></a>SPropertyRestriction
 
@@ -39,7 +39,7 @@ typedef struct _SPropertyRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 **relop**
   
@@ -67,7 +67,7 @@ typedef struct _SPropertyRestriction
   
 > 比較で使用される定数値を含む[spropvalue](spropvalue.md)構造体へのポインター。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **spropertyrestriction**構造には、2つのプロパティタグがあります。 一方は**ulPropTag**メンバーで、もう1つは**lpprop**でポイントされた**spropvalue**構造の**ulPropTag**メンバーにあります。 MAPI には、[プロパティ識別子] フィールドと [プロパティの種類] フィールドの両方が必要です。 **spropertyrestriction**の**ulPropTag**は一致するプロパティを示し、 **spropertyrestriction**の**ulPropTag**の種類に対する**spropertyrestriction**の**lpprop**ポインターは、のメンバーの値がどのように表示されるかを示しています。**lpprop**ユニオンが解釈されます。 2つのプロパティの型は一致している必要があります。または、制限が[imapitable:: Restrict](imapitable-restrict.md)または[imapitable:: FindRow](imapitable-findrow.md)の呼び出しで使用されている場合、エラー値 MAPI_E_TOO_COMPLEX が返されます。 
   

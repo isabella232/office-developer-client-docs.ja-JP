@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 85f0d8a5-6dd3-4f33-b31a-246d286d6286
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 319c932862615e063a02ffac07e5541b1b20ac7e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32330246"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415916"
 ---
 # <a name="adrlist"></a>ADRLIST
 
@@ -39,7 +39,7 @@ typedef struct _ADRLIST
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
 **centries**
   
@@ -49,7 +49,7 @@ typedef struct _ADRLIST
   
 > [adrentry](adrentry.md)構造体の配列。各受信者の1つの構造体です。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **adrlist**構造体には、1つまたは複数の**adrlist**構造体が含まれており、それぞれが受信者のプロパティを記述します。 受信者は未解決の場合があります。 これは、プロパティ値の配列にエントリ識別子がないことを意味します。 解決された受信者は **、\_PR ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティが含まれていることを意味します。 通常、解決された受信者には、 **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) プロパティの電子メールアドレスもあります。 ただし、電子メールアドレスは必須ではありません。 **adrlist**構造体は、たとえば、送信メッセージの受信者の一覧を記述したり、MAPI でアドレス帳のエントリを表示したりするために使用されます。 
   

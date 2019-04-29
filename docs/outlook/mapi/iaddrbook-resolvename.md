@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: a7823c16-efda-45c2-b931-3e1fbc823b0b
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8a6a73153b857078cb37d94a634a6b0215a0a8c5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287008"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408132"
 ---
 # <a name="iaddrbookresolvename"></a>IAddrBook::ResolveName
 
@@ -84,7 +84,7 @@ MAPI_E_NOT_FOUND
   
 > _lpadrlist_パラメーターの少なくとも1人の受信者を解決できません。 通常、この値は、MAPI_DIALOG フラグが設定されているときに返され、ダイアログボックスの表示を禁止します。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 クライアントおよびサービスプロバイダーは、 **ResolveName**メソッドを呼び出して名前解決プロセスを開始します。 未解決のエントリとは、エントリ id または**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティをまだ持っていないエントリのことです。
   

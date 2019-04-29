@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 380ea11c-b1ac-4f54-9034-c52edec4f700
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: ae4993f46e10b29ad29a88b7b8b1c54151f5efa7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355252"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436882"
 ---
 # <a name="pidtagredirectionhistory-canonical-property"></a>PidTagRedirectionHistory 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32355252"
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |MAPI エンベロープ  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティは、メッセージが自動エージェントによって autoforwarded されるときに使用されます。
   

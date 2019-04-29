@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 1ecfdb05-2533-470a-006b-e554026944d8
 description: ユーザーインターフェイス (UI) またはオートメーションのアクションによって更新された値を別のセルにリダイレクトします。
 ms.openlocfilehash: c4f5fe94aba90ce0a69983d6637a5399b6e42707
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326020"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416805"
 ---
 # <a name="setatref-function"></a>SETATREF 関数
 
@@ -32,7 +32,7 @@ SETATREF (* * *reference* * * [, * * *set_expression* * * [, * * *ignore_eval* *
 | _set_expression_ <br/> |省略可能  <br/> |**文字列型 (String)** <br/> |_参照_に割り当てられている式。  <br/> |
 | _ignore_eval_ <br/> |省略可能  <br/> |**Boolean** <br/> |TRUE の場合、SETATREF 関数は (0) ゼロに評価されます。FALSE (既定値) の場合、SETATREF 関数は_reference_の値に評価されます。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 図面ウィンドウでユーザー操作が行われたとき、またはオートメーションメソッドによって、SETATREF 数式を含むセルが更新されると、その値は SETATREF formula (_参照_) で参照されるセルにリダイレクトされます。 SETATREF 関数を含むセルの数式はそのままです。
   

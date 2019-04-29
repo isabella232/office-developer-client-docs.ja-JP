@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 45867711-3231-43ce-bae9-caf588120550
 description: ここでは、Microsoft.Office.Interop.InfoPath.SemiTrust 名前空間のメンバーから提供される InfoPath 2003 互換オブジェクト モデルを使用するマネージ コード フォーム テンプレートを作成する作業の始め方に関する情報を記載しています。
 ms.openlocfilehash: 54d60e6d73ee224845c87c08f4de1e554e6182da
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300400"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408055"
 ---
 # <a name="get-started-developing-form-templates-using-the-infopath-object-model"></a>InfoPath オブジェクトモデルを使用してフォームテンプレートの開発を開始する
 

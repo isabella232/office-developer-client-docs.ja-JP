@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 6390b325-025e-4546-bb19-1cd1c45ceb5a
 description: 0 ～ 1 の擬似ランダム数を返します。
 ms.openlocfilehash: 02d914de9d74083a6ebf76f6d0e556fe51954a24
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307995"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416609"
 ---
 # <a name="rand-function-access-custom-web-app"></a>Rand 関数 (Access カスタム web アプリ)
 
@@ -31,7 +31,7 @@ ms.locfileid: "32307995"
 |:-----|:-----|
 | *Seed*  <br/> |シード値を提供する整数式。 *seed*が指定されていない場合は、シード値がランダムに割り当てられます。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 同じシードを使用して **Rand** 関数を繰り返して呼び出した場合、同じ結果が返されます。 
   

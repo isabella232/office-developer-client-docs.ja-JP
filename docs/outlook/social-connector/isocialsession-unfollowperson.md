@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 66c83041-ee83-41d5-b9dc-a4dc4c670f82
 description: userID パラメーターで指定された人物をソーシャルネットワーク上のフレンドとして削除します。
 ms.openlocfilehash: c276a9e5af18f7e4a3afbaa66d366d55de460a58
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336779"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418436"
 ---
 # <a name="isocialsessionunfollowperson"></a>ISocialSession::UnFollowPerson
 
@@ -29,7 +29,7 @@ _userID_
   
 > 順番ユーザーのソーシャルネットワークユーザー ID を含む文字列。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _userID_パラメーターには、ソーシャルネットワーク上のユーザーの有効なユーザー ID を指定する必要があります。 
   

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: a0a17309-fc59-4822-be9b-b6f623b68bb1
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 877bebf0a156c99907505d815ca8d36a4b398678
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334938"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33412038"
 ---
 # <a name="closeimsgsession"></a>CloseIMsgSession
 
@@ -49,7 +49,7 @@ VOID CloseIMsgSession(
 
 なし。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 メッセージセッションは、基になる OLE **IStorage**オブジェクトの上に構築された複数の関連する MAPI **IMessage**オブジェクトを処理するクライアントアプリケーションおよびサービスプロバイダーによって使用されます。 クライアントまたはプロバイダーは、 [OpenIMsgSession](openimsgsession.md)関数と**CloseIMsgSession**関数を使用して、メッセージセッション内のメッセージの作成をラップします。 メッセージセッションが開かれると、クライアントまたはプロバイダーは、 [OpenIMsgOnIStg](openimsgonistg.md)への呼び出しによって、新しい**IMessage**オブジェクトを作成するために**** ポインターを渡します。 
   

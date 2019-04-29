@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 9b7da082-5e55-411d-b109-7fb6fa8f6e8e
 description: 図形の幅と高さを基準にした楕円弧の端点の x 座標および y 座標、図形の幅と高さに相対する円弧のコントロールポイントの x 座標と y 座標、x 軸から楕円の長軸までの角度、および t 間の比率を格納します。楕円の長軸と短軸。
 ms.openlocfilehash: e38f5f2baf6bb9ade31c2778799a3ece968147f4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359963"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409098"
 ---
 # <a name="relellipticalarcto-row-geometry-section"></a>[RelEllipticalArcTo] 行 ([図形座標] セクション)
 
@@ -32,7 +32,7 @@ ms.locfileid: "32359963"
 |[C](c-cell-geometry-section.md) <br/> |親の*x*軸を基準にした円弧の主軸の角度。  <br/> |
 |[D](d-cell-geometry-section.md) <br/> |円弧の長軸と短軸の比率です。これらの言葉の通常の意味とは関係なく、"長" 軸が "短" 軸よりも長い必要はありません。したがって、比率は 1 より大きい必要はありません。このセルを 0 以下、または 1000 より大きく設定すると、予測できない結果になる可能性があります。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [**RelEllipticalArcTo**] 行の値は、図形の幅と高さを乗算した [[EllipticalArcTo](ellipticalarcto-row-geometry-section.md)] 行の値に等しくなります。 例: **X**、 **Y**、 **a**、 **B**、 **C**、および**D**の各セルが値1、1、1.5、0.5、15 deg、1.5 (それぞれ) を持つ **[relellipticalarcto]** 行は、 **[ellipticalarcto]** の行で置き換えることができます。セル数式`Width*1`、 `Height*1'`、 `Width*1.5` `Height*0.5`、、15 deg、および 1.5 (それぞれ)。
   

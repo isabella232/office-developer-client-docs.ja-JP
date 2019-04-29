@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 58855843-9a2b-4e5d-9332-b1bfad8b45e4
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: a60ac0d7ab139f77aea87080e1ce37fee870e97b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326314"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437540"
 ---
 # <a name="imapisupportsetprovideruid"></a>IMAPISupport::SetProviderUID
 
@@ -50,7 +50,7 @@ S_OK
   
 > **MAPIUID**構造が正常に登録されました。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport:: setprovideruid**メソッドは、アドレス帳とメッセージストアプロバイダーのサポートオブジェクトに実装されています。 これらのプロバイダーは、 **setprovideruid**を呼び出して、 _lpproviderid_によって参照されている**MAPIUID**構造体で記述された一意の識別子を登録します。 プロバイダーには、作成するすべてのエントリ識別子にこの識別子が含まれています。 
   

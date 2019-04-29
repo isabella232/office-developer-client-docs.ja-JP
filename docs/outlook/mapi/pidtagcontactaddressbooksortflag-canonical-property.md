@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: dcbd12b4-4b50-4be6-a201-45e5d4611ce0
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: bfdb98d5a5b768fad162d60a79cb1f541dc32866
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334371"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437232"
 ---
 # <a name="pidtagcontactaddressbooksortflag-canonical-property"></a>PidTagContactAddressBookSortFlag 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32334371"
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |エリア:  <br/> |連絡先のアドレス帳  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 これは、連絡先のアドレス帳の [プロファイル] セクションのプロパティです。
   

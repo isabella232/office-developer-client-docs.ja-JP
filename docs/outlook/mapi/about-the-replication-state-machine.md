@@ -5,13 +5,13 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: cf36c6cb-57b4-7b2b-e23d-e0bc8696de96
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: a0644e4bf5c6847d61cc59e203d50f61ad142e84
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329751"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416483"
 ---
 # <a name="about-the-replication-state-machine"></a>レプリケーション状態のマシンについて
 
@@ -48,12 +48,12 @@ ms.locfileid: "32329751"
 |:-----|:-----|:-----|:-----|
 |**State** <br/> |**レプリケートされるデータ** <br/> |**状態識別子** <br/> |**データ構造** <br/> |
 |[アイドル状態](idle-state.md) <br/> | *None*  <br/> |**LR_SYNC_IDLE** <br/> | *None*  <br/> |
-|[同期状態](synchronize-state.md) <br/> |フォルダーまたはアイテム  <br/> |**LR_SYNC** <br/> |**[頻度](sync.md)** <br/> |
+|[同期状態](synchronize-state.md) <br/> |フォルダーまたはアイテム  <br/> |**LR_SYNC** <br/> |**[SYNC](sync.md)** <br/> |
 |[階層のアップロード状態](upload-hierarchy-state.md) <br/> |Folders  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**[UPHIER](uphier.md)** <br/> |
 |[フォルダーの状態をアップロードする](upload-folder-state.md) <br/> |フォルダー  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**[UPFLD](upfld.md)** <br/> |
 |[コンテンツの状態の同期](synchronize-contents-state.md) <br/> |アイテム  <br/> |**LR_SYNC_CONTENTS** <br/> |**[SYNCCONT](synccont.md)** <br/> |
 |[テーブルの状態をアップロードする](upload-table-state.md) <br/> |アイテム  <br/> |**LR_SYNC_UPLOAD_TABLE** <br/> |**[UPTBL](uptbl.md)** <br/> |
-|[メッセージアップロードの状態](upload-message-state.md) <br/> |Item  <br/> |**LR_SYNC_UPLOAD_MESSAGE** <br/> |**[UPMSG](upmsg.md)** <br/> |
+|[メッセージアップロードの状態](upload-message-state.md) <br/> |アイテム  <br/> |**LR_SYNC_UPLOAD_MESSAGE** <br/> |**[UPMSG](upmsg.md)** <br/> |
 |[読み取り状態のアップロードの状態](upload-read-status-state.md) <br/> |アイテム  <br/> |**LR_SYNC_UPLOAD_MESSAGE_READ** <br/> |**[UPREAD](upread.md)** <br/> |
 |[削除の状態の状態をアップロードする](upload-delete-status-state.md) <br/> |アイテム  <br/> |**LR_SYNC_UPLOAD_MESSAGE_DEL** <br/> |**[UPDEL](updel.md)** <br/> |
 |[階層のダウンロード状態](download-hierarchy-state.md) <br/> |Folders  <br/> |**LR_SYNC_DOWNLOAD_HIERARCHY** <br/> |**[DNHIER](dnhier.md)** <br/> |
@@ -72,7 +72,7 @@ ms.locfileid: "32329751"
   
 |||||
 |:-----|:-----|:-----|:-----|
-|**手順** <br/> |**アクション** <br/> |**State** <br/> |**関連データ構造** <br/> |
+|**手順** <br/> |**操作** <br/> |**State** <br/> |**関連データ構造** <br/> |
 |1.  <br/> |クライアントは**iostx:: SyncBeg**で階層のアップロードを開始します。  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
 |2.  <br/> |outlook 2013 または outlook 2010 は、 **uphier**にクライアントの情報を設定します。 これには、[out] パラメーターの初期化が含まれます。 *ient*は0に設定され、アップロードする必要がある階層内のフォルダー数になります。 **  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**UPHIER** <br/> |
 |3.  <br/> |クライアントは、実際の階層をアップロードします。 たとえば、*セント*が10の場合、クライアントは**iostx:: SyncBeg**を呼び出して、フォルダーをアップロードするための適切な状態識別子とデータ構造を指定します。  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**UPFLD** <br/> |

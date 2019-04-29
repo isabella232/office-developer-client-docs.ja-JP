@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 7b351eec-9624-4b38-9978-5d0b67b64687
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: fdd6f40b4d7aa7f65bf1a46d3d9a4f18472b19f7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278948"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416455"
 ---
 # <a name="itabledatahrdeleterows"></a>ITableData::HrDeleteRows
 
@@ -59,7 +59,7 @@ S_OK
   
 > テーブルの行が正常に削除されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **itabledata:: HrDeleteRows**メソッドは、行セット内の各**arow**エントリの**lpprops**メンバーによって示されるプロパティに一致する列を含むテーブル行を検索して削除します。 インデックス列は、各行を識別するために使用されます。この列は、 [CreateTable](createtable.md)関数の呼び出しで_ulPropTagIndexColumn_パラメーターで渡されたプロパティタグと同じプロパティタグを持っている必要があります。 
   

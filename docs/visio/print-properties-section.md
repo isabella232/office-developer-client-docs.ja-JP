@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 7c414f9c-a7f2-3404-326e-acd4026c7684
 description: 図面ページをプリンター ページ上で書式設定 (表示) する方法を制御するセルを格納します。
 ms.openlocfilehash: 0ec5eabf3f9d03f704e2a9ea03099eba1e09afd0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315212"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437183"
 ---
 # <a name="print-properties-section"></a>[Print Properties] セクション
 
 図面ページをプリンター ページ上で書式設定 (表示) する方法を制御するセルを格納します。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [**印刷のプロパティ**] セクションを使用して、ページ レベルで印刷を制御します。これらの設定はページごとに行われ、図面ページ設定による影響は受けません。たとえば、横長方向を使用する図面ページを縦長方向を使用して印刷できます。また、図面は方向を組み合わせて印刷できます。 
   

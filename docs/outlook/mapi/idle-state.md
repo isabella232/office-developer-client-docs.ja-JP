@@ -5,13 +5,13 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 46976bea-c6bb-2e37-2e67-4cbccaa03aec
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3db4ead7e2485bbbae82f2a07659c934b394d6d5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351185"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419479"
 ---
 # <a name="idle-state"></a>アイドル状態
 
@@ -27,7 +27,7 @@ ms.locfileid: "32351185"
 |:-----|:-----|
 |状態識別子:  <br/> |**LR_SYNC_IDLE** <br/> |
 |関連データ構造:  <br/> | *None*  <br/> |
-|この状態から:  <br/> | *該当なし*  <br/> |
+|この状態から:  <br/> | *該当しない*  <br/> |
 |この状態:  <br/> |[同期状態](synchronize-state.md) <br/> |
    
 > [!NOTE]

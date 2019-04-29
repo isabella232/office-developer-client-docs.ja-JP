@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 52d45876-367b-42da-b99a-29cdb71fa5a9
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 680fd16771b62d705808a04d768115a076e54750
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316563"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415538"
 ---
 # <a name="imapisupportgetmemallocroutines"></a>IMAPISupport::GetMemAllocRoutines
 
@@ -55,7 +55,7 @@ S_OK
   
 > 関数のアドレスが正常に返されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport:: getmemallocroutines**メソッドは、すべてのサポートオブジェクトに実装されています。 サービスプロバイダーは、 **getmemallocroutines**を呼び出して、初期化関数 ( [abproviderinit](abproviderinit.md)、 [msproviderinit](msproviderinit.md)、または[xps プロバイダー init](xpproviderinit.md)) に渡される3つのメモリ割り当て関数のアドレスを取得します。 
   

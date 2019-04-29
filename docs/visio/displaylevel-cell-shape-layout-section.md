@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 08b730c4-5dd8-106e-ddf3-da2c942e2ef6
 description: 図形の表示レベル バンド (Z オーダー グループ化の相対範囲) を指定します。
 ms.openlocfilehash: 4f7e3fcb2d28f8c4c0706502c66444c121ae6ee6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332537"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408146"
 ---
 # <a name="displaylevel-cell-shape-layout-section"></a>[DisplayLevel] セル ([Shape Layout] セクション)
 
 図形の表示レベル バンド (Z オーダー グループ化の相対範囲) を指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 Z オーダーは、図面ページの図形の表示順序です。図形の 1 つが他の図形の上に重なっている場合、Z オーダーが大きい図形が Z オーダーの小さい図形の前面に表示されます。 
   

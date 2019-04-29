@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: dcfb6bd5-bff5-4a50-aec7-4bdfdabf7631
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: a826f1bdf150b42b61a61b2f53870e9f170e0777
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342596"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416091"
 ---
 # <a name="pidtagoriginallyintendedrecipaddrtype-canonical-property"></a>PidTagOriginallyIntendedRecipAddrtype 標準プロパティ
 
@@ -34,7 +34,7 @@ autoforwarded メッセージの最初に意図した受信者のアドレスの
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |サーバー  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 これらのプロパティは、最初に意図したメッセージ受信者のアドレスプロパティの1つです。 メッセージを転送した自動エージェントによって設定されている必要があります。
   

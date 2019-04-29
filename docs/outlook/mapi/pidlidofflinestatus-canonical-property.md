@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: ee69f0c4-b552-4cfd-8a39-a822d414549e
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 537b45420390903d67722c074a1edcc04a0aede8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326300"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418835"
 ---
 # <a name="pidlidofflinestatus-canonical-property"></a>PidLidOfflineStatus 標準プロパティ
 
@@ -35,15 +35,15 @@ ms.locfileid: "32326300"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |一般的なメッセージング  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 次の表に、このプロパティに指定できる値を示します。
   
 |**値**|**説明**|
 |:-----|:-----|
 |.0  <br/> |ドキュメントはチェックアウトされていません。  <br/> |
-|1-d  <br/> |ドキュメントは現在のユーザーにチェックアウトされています。  <br/> |
-|pbm-2  <br/> |ドキュメントはチェックアウトされていませんが、現在のユーザーは現在のコンピューターで編集のために保存されたファイルのコピーを持っています。  <br/> |
+|1   <br/> |ドキュメントは現在のユーザーにチェックアウトされています。  <br/> |
+|2   <br/> |ドキュメントはチェックアウトされていませんが、現在のユーザーは現在のコンピューターで編集のために保存されたファイルのコピーを持っています。  <br/> |
    
 このプロパティはローカルで計算され、ユーザーが別のアカウントにアイテムをドラッグしない限り、常にサーバーに送信されません。 その場合は、ユーザー定義のカスタムプロパティとして扱われます。
   

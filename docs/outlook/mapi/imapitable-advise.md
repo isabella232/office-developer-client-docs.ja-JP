@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: e8b5d21e-dc14-4b61-96b3-a51bcfa0d232
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: c9401c163c74ab303ec39c147e0432d1979426b8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329020"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418814"
 ---
 # <a name="imapitableadvise"></a>IMAPITable::Advise
 
@@ -61,7 +61,7 @@ MAPI_E_NO_SUPPORT
   
 > テーブルの実装では、行と列の変更がサポートされていないか、通知をサポートしていません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMAPITable:: アドバイズ**メソッドを使用して、通知コールバック用にプロバイダーに実装されている table オブジェクトを登録します。 テーブルオブジェクトが変更されるたびに、プロバイダーは、 _uleventmask_パラメーターにどのイベントマスクビットが設定されているかを確認します。したがって、どのような種類の変更が発生したかを確認します。 ビットが設定されている場合、プロバイダーはイベントを報告するために、 _lpAdviseSink_パラメーターによって示されるアドバイズシンクオブジェクトの[IMAPIAdviseSink:: onnotify](imapiadvisesink-onnotify.md)メソッドを呼び出します。 通知構造で**onnotify**ルーチンに渡されるデータは、イベントについての説明です。 
   

@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: da678213-fae0-4854-8194-762866600100
 description: 以下のリンクを使用すると、InfoPath マネージ コード フォーム テンプレートの操作に関する一般的なプログラミングの疑問をすばやく解決できます。
 ms.openlocfilehash: 6fb2c565413b2dff67287bf659d8137306bd2860
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300204"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419500"
 ---
 # <a name="how-do-iin-infopath-form-templates-with-code"></a>[方法] コードを含む InfoPath フォーム テンプレートを操作する方法
 

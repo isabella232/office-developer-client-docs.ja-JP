@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 57f688db-3a1c-49ff-a15a-8508bda5de68
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 91985d3dc8a7816c3da3215e505097c57c63e035
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309612"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407572"
 ---
 # <a name="ipersistmessageisdirty"></a>IPersistMessage::IsDirty
 
@@ -45,7 +45,7 @@ S_FALSE
   
 > フォームには、最後に保存されてから加えられた変更はありません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 フォームビューアーは**IPersistMessage:: IsDirty**メソッドを呼び出して、メッセージに保存されていないデータがあるかどうかを確認します。 
   

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4af8e79a-697e-44a1-8576-fdc57726e9ef
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 00355546717ca61492750cb1dd113d20114b0695
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334812"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409504"
 ---
 # <a name="filetime"></a>FILETIME
 
@@ -40,7 +40,7 @@ typedef struct _FILETIME
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **dwlowdatetime**
   
@@ -50,7 +50,7 @@ typedef struct _FILETIME
   
 > file time 値の上位32ビット。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 PT_SYSTIME 型のプロパティには、その値の**FILETIME**構造があります。 このようなプロパティは、 [spropvalue](spropvalue.md)構造の定義において、**値**メンバーの**FILETIME**データ型を持っています。 
   

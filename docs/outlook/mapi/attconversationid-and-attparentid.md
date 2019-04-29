@@ -9,11 +9,11 @@ api_type:
 ms.assetid: bed36900-e44d-434b-a4f2-d10f2d6f70da
 description: '最終更新日: 2013 年 3 月 12 日'
 ms.openlocfilehash: c5880aefe7c2dba2e5e4c5405aae2020bb86c711
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32318418"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410050"
 ---
 # <a name="attconversationid-and-attparentid"></a>attConversationID and attParentID
 
@@ -24,7 +24,7 @@ ms.locfileid: "32318418"
 > [!NOTE]
 > これらの TNEF 属性がマップされている MAPI の対応するプロパティ、PR_CONVERSATION_KEY および PR_PARENT_KEY は、Microsoft Exchange Server で廃止されました。 **PR_CONVERSATION_KEY**の使用、 [PidTagConversationKey 標準プロパティ](pidtagconversationkey-canonical-property.md)は、IPM を検索する場合にのみ、Outlook で保持さ**れます。MessageManager**メッセージ。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **PR_CONVERSATION_KEY**プロパティは、 **PR_CONVERSATION_INDEX**、 [PidTagConversationIndex 標準プロパティ](pidtagconversationindex-canonical-property.md)、 **PR_CONVERSATION_TOPIC**、PidTagConversationTopic 標準の precursor のうち、使用されていないものです。 [プロパティ](pidtagconversationtopic-canonical-property.md)。代わりに使用する必要があります。
   

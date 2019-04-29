@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 14ae3242-fddf-4199-a9a7-4ab153b31064
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 37e6560d859ce4731b7a06e571eb38eb160c3686
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32347769"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417659"
 ---
 # <a name="hrsetoneprop"></a>HrSetOneProp
 
@@ -54,7 +54,7 @@ HrSetOneProp(
 
 なし。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [imapiprop:: setprops](imapiprop-setprops.md)メソッドとは異なり、 **hrsetoneprop**関数は警告を返しません。 1つのプロパティしか設定しないため、成功または失敗のどちらかです。 複数のプロパティを設定または変更する場合は、 **setprops**の方が高速です。 
   

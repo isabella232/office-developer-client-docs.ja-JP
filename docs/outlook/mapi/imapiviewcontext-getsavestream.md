@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 8316bfa1-3077-401f-aa1e-e9492aca12a8
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 68eb74f53d6cee4661c98604ec2ea37609e20ab5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351129"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408426"
 ---
 # <a name="imapiviewcontextgetsavestream"></a>IMAPIViewContext::GetSaveStream
 
@@ -67,7 +67,7 @@ S_OK
   
 > ストリームが正常に取得されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 form オブジェクトは、 **imapiviewcontext:: GetSaveStream**メソッドを呼び出して、フォームビューアーでの [名前を付けて保存の操作をサポートする**IStream**インターフェイスを実装するオブジェクトをストリームを取得します。 [imapiform::D overb](imapiform-doverb.md)メソッドは、フォームサーバーに実装され、動詞を呼び出すためにフォームビューアーによって呼び出されます。メッセージが完全に適切なテキスト形式に変換され、適切なストリームに配置されるまで、戻りません。 
   

@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 312bcad2-b364-4b4c-a8f9-40e11330bde0
 description: Group ステートメントでは、マクロ内で展開または折りたたみできるアクションのブロックを指定できます。
 ms.openlocfilehash: b90f8e305baf23e9df7b070c879f3bc2f7d59311
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32311152"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33418779"
 ---
 # <a name="group-macro-block-access-custom-web-app"></a>Group マクロブロック (Access カスタム web アプリ)
 
@@ -29,7 +29,7 @@ ms.locfileid: "32311152"
 |:-----|:-----|:-----|
 |**説明** <br/> |いいえ  <br/> |折りたたんだときに、グループのタイトルとして表示する文字列。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **Group** ステートメントは、個別に実行できるマクロ領域を定義しません。 
   

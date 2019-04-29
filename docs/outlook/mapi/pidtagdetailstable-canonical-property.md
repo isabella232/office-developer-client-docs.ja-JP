@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 7a0ccad3-f497-4871-b733-771e6cb8ef6a
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 74eae4a4ed742c3bb90496f5975ad7dac6ff798f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360838"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419255"
 ---
 # <a name="pidtagdetailstable-canonical-property"></a>PidTagDetailsTable 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32360838"
 |データの種類 :   <br/> |PT_OBJECT  <br/> |
 |エリア:  <br/> |MAPI コンテナー  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティを、オブジェクトの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドに渡すと、表示テーブルを作成できる[IMAPITable](imapitableiunknown.md)インターフェイスが返されます。 MAPI では、このテーブルを使用して、 [IAddrBook::D etails](iaddrbook-details.md)呼び出しへの応答として、アドレス帳オブジェクトのプロパティシートを表示します。 
   

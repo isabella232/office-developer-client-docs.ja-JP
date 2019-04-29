@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 7663c640-396e-4720-9345-370d0856bd49
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 778ff8f36478740e5ee23ba439db1e328eca2e06
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328813"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407061"
 ---
 # <a name="imapitablewaitforcompletion"></a>IMAPITable::WaitForCompletion
 
@@ -63,7 +63,7 @@ MAPI_E_TIMEOUT
   
 > 非同期の操作または操作は、指定された時間内に完了しませんでした。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMAPITable:: waitforcompletion**メソッドは、テーブルに対して現在実行されているすべての非同期操作が完了するまで処理を中断します。 **waitforcompletion**を使用すると、非同期操作を完全に完了するか、または_ultimeout_で指定された回数だけ実行してから中断することができます。 進行中の非同期操作を検出するには、 [IMAPITable:: GetStatus](imapitable-getstatus.md)メソッドを呼び出します。 
   

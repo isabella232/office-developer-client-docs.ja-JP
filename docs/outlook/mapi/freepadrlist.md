@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: ca8fbac6-b6f1-46ab-90a1-fc16f0d5824c
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 95c2e52760bd7d65351b4dd2091b68a43cd2f97c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328036"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408643"
 ---
 # <a name="freepadrlist"></a>FreePadrlist
 

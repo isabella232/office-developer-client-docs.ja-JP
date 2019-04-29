@@ -13,11 +13,11 @@ api_type:
 ms.assetid: e2d8a025-c2a3-4edb-b6e4-022e07e854dd
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: a57a72b413ba412154a27a08244e86b117cbea7d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357198"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409693"
 ---
 # <a name="ixpprovidershutdown"></a>IXPProvider::Shutdown
 
@@ -45,7 +45,7 @@ S_OK
   
 > 呼び出しがトランスポートプロバイダーのシャットダウンに成功しました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 MAPI スプーラーは、トランスポートプロバイダーオブジェクトを解放する直前に、 **ixpprovider:: Shutdown**メソッドを呼び出します。 **シャットダウン**を呼び出す前に、MAPI はプロバイダーのすべてのログオンオブジェクトを解放します。
   

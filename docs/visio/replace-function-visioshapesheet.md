@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 70c9fc1d-6e7b-479f-effd-0d4bc8ae0f72
 description: 指定した文字の数に従って、テキスト文字列の一部を別のテキスト文字列に置き換えます。
 ms.openlocfilehash: 75a156d720ca276e75fccf932124ae905e4350b0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32320161"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414355"
 ---
 # <a name="replace-function-visioshapesheet"></a>REPLACE 関数 (VisioShapeSheet)
 

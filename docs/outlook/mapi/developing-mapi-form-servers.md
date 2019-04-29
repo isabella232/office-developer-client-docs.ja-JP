@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 30672a2d-2d39-4292-b21a-97a38485d1de
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 63aa9db19c901f47004a7fe52d906846f44b8883
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338529"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420767"
 ---
 # <a name="developing-mapi-form-servers"></a>MAPI フォームサーバーの開発
 

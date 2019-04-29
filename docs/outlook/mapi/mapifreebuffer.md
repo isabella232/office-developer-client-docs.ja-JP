@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 9412594f-8acc-4c7e-a668-4ec1da0ad9cf
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8794bb233eb69d0f246fb1019954ab718db6f464
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346663"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410554"
 ---
 # <a name="mapifreebuffer"></a>MAPIFreeBuffer
 
@@ -51,7 +51,7 @@ S_OK
   
 > 呼び出しが成功し、要求されたメモリが解放されました。 **MAPIFreeBuffer**は、既に解放されている場所にある S_OK を返すことも、 **MAPIAllocateBuffer**および**MAPIAllocateMore**を使用してメモリブロックが割り当てられていない場合もあります。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 通常、クライアントアプリケーションまたはサービスプロバイダーが[MAPIAllocateBuffer](mapiallocatebuffer.md)または[MAPIAllocateMore](mapiallocatemore.md)を呼び出す場合、オペレーティングシステムは、複数のポインターレベルを持つ1つまたは複数の複雑な構造体に1つ以上の連続したメモリバッファーを構築します。 mapi 関数またはメソッドがこのような内容のバッファーを作成すると、クライアントは後でバッファーに格納されているすべての構造を解放して、バッファーを作成した mapi 関数によって返されるバッファーへのポインターを**MAPIFreeBuffer**に渡します。 **MAPIFreeBuffer**を使用してメモリバッファーを解放するサービスプロバイダーの場合は、プロバイダーのサポートオブジェクトで返されるバッファーにポインターを渡す必要があります。 
   

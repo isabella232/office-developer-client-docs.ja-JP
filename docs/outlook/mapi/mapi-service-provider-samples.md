@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 953c97ef-bc38-4e30-9906-b16373cd33c2
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: a816a45344ef1a95ff3e59822c5845dd6d0693f3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346670"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420298"
 ---
 # <a name="mapi-service-provider-samples"></a>MAPI サービスプロバイダーのサンプル
 

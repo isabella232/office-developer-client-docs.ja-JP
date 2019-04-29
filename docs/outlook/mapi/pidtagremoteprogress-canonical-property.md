@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 01cae79e-5b56-4cd4-83a6-f0956ff539fb
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: a5a9d0796bc92514ae6d990b7328364b85bc55cd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335435"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439843"
 ---
 # <a name="pidtagremoteprogress-canonical-property"></a>PidTagRemoteProgress 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32335435"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |MAPI の状態  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 転送が進行中でない場合、このプロパティは1に設定する必要があります。 転送が進行中の場合は、転送の完了率を示す 0 ~ 100 の値を設定する必要があります。
   

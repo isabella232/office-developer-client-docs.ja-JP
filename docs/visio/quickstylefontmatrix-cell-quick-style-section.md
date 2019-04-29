@@ -8,17 +8,17 @@ localization_priority: Normal
 ms.assetid: 304ee083-e9c8-45df-b411-ba5e7db4c086
 description: 各クイックスタイルのフォントのスタイルを、1 ~ 6 の整数で指定します。
 ms.openlocfilehash: 0708a243b001c7b4e03158b5a332a3166727cabc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360075"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407250"
 ---
 # <a name="quickstylefontmatrix-cell-quick-style-section"></a>[QuickStyleFontMatrix] セル ([クイック スタイル] セクション)
 
 各クイックスタイルのフォントのスタイルを、1 ~ 6 の整数で指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式から、 **cell**要素の**N**属性の値によって、または**CellsU**プロパティを使用したプログラムから、名前によって [**クイックスタイルのフォントマトリックス**] セルへの参照を取得するには、次の値を使用します。 
   

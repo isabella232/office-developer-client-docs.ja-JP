@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: c6cb5a86-0105-4743-9f8e-b832e898da52
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: a0e18ef529b65317abd9446408ed73638c792809
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346607"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420669"
 ---
 # <a name="pidtagimplicitconversionprohibited-canonical-property"></a>PidTagImplicitConversionProhibited 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32346607"
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |エリア:  <br/> |サーバー  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティが TRUE の場合、メッセージングシステムは、 **PR_EXPLICIT_CONVERSION** ([PidTagExplicitConversion](pidtagexplicitconversion-canonical-property.md)) プロパティを使用して受信者ごとに明示的に要求されていない限り、メッセージに対してコンテンツ変換を実行しないでください。
   

@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 8f8ee2cb-1c2a-4958-b01e-2f4aab689f89
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: d0d5d8fe13a3c192dc0b0a8ddc0f5f945fa16f15
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321813"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416651"
 ---
 # <a name="imapiformmgrprepareform"></a>IMAPIFormMgr::PrepareForm
 
@@ -59,7 +59,7 @@ S_OK
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 フォームビューアーは、 **imapiformmgr::P repareform**メソッドを呼び出して、フォームを開いてフォームコンテナーからダウンロードします。 ほとんどのフォーム閲覧者は**PrepareForm**を呼び出す必要はありません。このため、必要に応じて、 [imapiformmgr:: CreateForm](imapiformmgr-createform.md)メソッドと[imapiformmgr:: loadform](imapiformmgr-loadform.md)メソッドが**PrepareForm**を呼び出します。 
   

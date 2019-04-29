@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: b63b26de-faf9-453c-ab8b-fb703ed09ae8
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 91440d619c8ad8a64b2bac7463a26d9c196a3c0f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339733"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439269"
 ---
 # <a name="sdoublearray"></a>SDoubleArray
 
@@ -40,7 +40,7 @@ typedef struct _SDoubleArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **cvalues**
   
@@ -50,7 +50,7 @@ typedef struct _SDoubleArray
   
 > 倍精度浮動小数点型の値の配列へのポインターを指定します。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 PT_MV_DOUBLE の詳細については、「[プロパティの種類の一覧](property-types.md)」を参照してください。
   

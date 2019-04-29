@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: a63c42cf-36af-466b-b41e-d6b53ce1c9fb
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 07667558a21a9110d684164d2e6c143d6a519368
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309696"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409336"
 ---
 # <a name="imsgstoreopenentry"></a>IMsgStore::OpenEntry
 
@@ -90,7 +90,7 @@ MAPI_NO_CACHE
   
 > ストアをキャッシュモードで開くと、クライアントまたはサービスプロバイダーは**IMsgStore:: openentry**を呼び出し、MAPI_NO_CACHE フラグを設定して、リモートストアのアイテムまたはフォルダーを開くことができます。 リモートサーバーの MDB_ONLINE フラグを使用してメッセージストアを開いた場合、MAPI_NO_CACHE フラグを使用する必要はありません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMsgStore:: openentry**メソッドは、フォルダーまたはメッセージを開き、さらにアクセスするために使用できるインターフェイスへのポインターを返します。 
   

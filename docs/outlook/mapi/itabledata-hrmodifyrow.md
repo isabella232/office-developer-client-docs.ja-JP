@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 9e255b3e-dd17-4528-ba4e-c3a1aef32b04
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 44ecf095ad24dd266dc5f603ace9c7b9f21c1b41
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348665"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409000"
 ---
 # <a name="itabledatahrmodifyrow"></a>ITableData::HrModifyRow
 
@@ -49,7 +49,7 @@ MAPI_E_INVALID_PARAMETER
   
 > 渡された行にインデックス列がありません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **itabledata:: hrmodifyrow**メソッドは、 _lpsrow_パラメーターで指定された**srow**構造によって示される行を挿入します。 テーブル内に既に存在する_lpsrow_と同じ値のインデックス列の行がある場合、既存の行は置き換えられます。 **srow**構造に含まれるものと一致する行が存在しない場合、 **hrmodifyrow**はテーブルの末尾に行を追加します。 
   

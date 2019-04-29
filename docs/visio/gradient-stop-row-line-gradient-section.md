@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 1236a59e-2a25-449f-8e20-8553518d79ec
 description: 線のグラデーションについて、グラデーションの分岐点の色、透過性、および位置を格納します。
 ms.openlocfilehash: 1a6d9c60bc83160067123007cf873c5681e9bc85
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360257"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411408"
 ---
 # <a name="gradient-stop-row-line-gradient-section"></a>[Gradient Stop] 行 ([線のグラデーション] セクション)
 

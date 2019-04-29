@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: c7b21c90-7fdc-48e4-8197-7675978c5d3b
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: a0617029fd13cf6968936c97faacedeb333ede9e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286516"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420291"
 ---
 # <a name="pidtagproofofsubmissionrequested-canonical-property"></a>PidTagProofOfSubmissionRequested 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32286516"
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |エリア:  <br/> |MAPI エンベロープ  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティは、メッセージごとの400送信エンベロープ属性に対応します。
   

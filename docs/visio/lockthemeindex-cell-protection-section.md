@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 7b781727-267b-4589-ab40-cfc79bb96c2d
 description: '[テーマのプロパティ] 行の [ThemeIndex] セルが、新しいテーマの適用または新しいコネクタ スキーマの選択によって変更されないようにします。 ユーザーがシェイプシートのこの値を手動で変更することは防げません。'
 ms.openlocfilehash: 519c17f6e00c9aad2b5522bc66b41c0ceb75911b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32358080"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411240"
 ---
 # <a name="lockthemeindex-cell-protection-section"></a>[LockThemeIndex] セル ([保護] セクション)
 
@@ -23,7 +23,7 @@ ms.locfileid: "32358080"
 |TRUE  <br/> |シェイプシートを直接変更しない限り、[**ThemeIndex**] セルの現在の値は変更できません。  <br/> |
 |FALSE  <br/> |テーマが変更された場合、 [**ThemeIndex**] セルの現在の値を変更できます。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式から、**Cell** エレメントの **N** 属性の値によって、または **CellsU** プロパティを使用したプログラムから、名前によって [**LockThemeIndex**] セルへの参照を取得するには、次の値を使用します。 
   

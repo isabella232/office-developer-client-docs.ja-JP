@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 245166ce-1cb6-634b-c763-bb717a940eec
 description: このナビゲーション ページには、Visio でのプログラミングの概要に関するトピックへのリンクが表示されています。 次のリンクをクリックするか、または、目次を使用して次のトピックを表示してください。
 ms.openlocfilehash: fef26adf718b883ef2dbc75fc1f3b9cf1b143386
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32358619"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438898"
 ---
 # <a name="concepts-visio-shapesheet"></a>概念 (Visio シェイプシート)
 

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0135f049-0311-45e5-9685-78597d599a4e
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: e7d30c1aba8ddc1419045c1caa8524f7d2063dc5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317400"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434978"
 ---
 # <a name="imsgserviceadmincreatemsgservice"></a>IMsgServiceAdmin::CreateMsgService
 
@@ -80,7 +80,7 @@ MAPI_E_NOT_FOUND
   
 > メッセージサービス名が mapisvc.inf の **[Services]** セクションにありません。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMsgServiceAdmin:: CreateMsgService**メソッドは、現在のプロファイルにメッセージサービスを追加します。 **CreateMsgService**は、メッセージサービスのエントリポイント関数を呼び出して、サービス固有の構成タスクを実行します。 SERVICE_UI_ALLOWED フラグが_ulflags_パラメーターで設定されている場合は、インストールされているメッセージサービスにプロパティシートを表示して、ユーザーがその設定を構成できるようにすることができます。 
   

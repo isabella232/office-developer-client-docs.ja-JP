@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3a6b34eb-9d46-488f-8d02-91b27c35de67
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6cef03e33abab81a407698b73a007f247ef88194
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309990"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407383"
 ---
 # <a name="imsgserviceadmindeletemsgservice"></a>IMsgServiceAdmin::DeleteMsgService
 
@@ -49,7 +49,7 @@ MAPI_E_NOT_FOUND
   
 > _lpuid_が指す**MAPIUID**が、既存のメッセージサービスと一致しません。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMsgServiceAdmin::D eletemsgservice**メソッドは、プロファイルからメッセージサービスを削除します。 **DeleteMsgService**は、メッセージサービスに関連するすべてのプロファイルセクションを削除します。 
   

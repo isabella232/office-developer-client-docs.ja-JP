@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: b68054b5-7efd-1156-9dc1-5ec94e18d227
 description: 図形の線の色の透過性レベルを指定します。
 ms.openlocfilehash: 555ea15de0279a37bcf67de7374d922b8692ce02
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359298"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414439"
 ---
 # <a name="linecolortrans-cell-line-format-section"></a>[LineColorTrans] セル ([Line Format] セクション)
 
@@ -24,7 +24,7 @@ ms.locfileid: "32359298"
 |:-----|:-----|
 |0 ～ 100  <br/> |透過性をパーセントで表します。既定値は 0% (完全に不透明) です。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 値は、最も近い 0.5% 単位の値に丸められます。値 "100%" は完全な透明を表します。完全に透明な色の線をもつ図形は、図面ページでは線がない図形と同じように表示されますが、ページ上の他のオブジェクトに対しては、透過性が 0% の場合と同様な状態で相互に影響し合います。 
   

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 14654259-e884-46bf-84ff-9e3c1a8cd60d
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2b1e00938800fb6517e634c3ba365276e0e76bd9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348840"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406872"
 ---
 # <a name="imsgserviceadmin2--imsgserviceadmin"></a>IMsgServiceAdmin2 : IMsgServiceAdmin
 
@@ -42,7 +42,7 @@ ms.locfileid: "32348840"
 |:-----|:-----|
 |[CreateMsgServiceEx](imsgserviceadmin2-createmsgserviceex.md) <br/> |現在のプロファイルにメッセージサービスを追加し、新しく追加されたサービス UID を返します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMsgServiceAdmin2**インターフェイスは、 [IMsgServiceAdmin](imsgserviceadminiunknown.md)インターフェイスを公開するのと同じオブジェクトによって公開されており、Microsoft outlook 2003 以降の outlook の MAPI サブシステムの実装を使用して利用できるようになっています。 
   

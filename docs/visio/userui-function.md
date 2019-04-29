@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: c01dd938-677c-b2ba-8f56-4638e7e988fd
 description: state の値に応じて、2つの式のいずれかを評価します。
 ms.openlocfilehash: 544bb2b19dc610591afc78c407301098fac9c7c3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331326"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420347"
 ---
 # <a name="userui-function"></a>USERUI 関数
 
@@ -32,7 +32,7 @@ userui (* * *state* * *, * * *defaultexpression* * *, * * *userui* * *)
 | _defaultexpression_ <br/> |必須  <br/> |**String** <br/> |既定の式を指定します。  <br/> |
 | _userexpression_ <br/> |必須  <br/> |**String** <br/> |ユーザーによって指定された式。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 _state_が0の場合、userui 関数は_defaultexpression_を評価します。 _state_が1の場合は、 _userexpression_を評価します。
   

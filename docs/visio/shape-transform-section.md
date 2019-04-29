@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: aa6a95bc-4669-47fd-5055-a147ec55e78f
 description: 図形に関する全般的な配置情報を格納します。たとえば、図形の幅、高さ、角度、回転の中心 (Pin)、図形が反転しているかどうか、グループ内で図形のサイズ変更が行われた場合の動作などの情報を含んでいます。
 ms.openlocfilehash: c9d8bf44e5d897d17477cf0c4e75b5dbf063339f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32325831"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419703"
 ---
 # <a name="shape-transform-section"></a>[Shape Transform] セクション
 

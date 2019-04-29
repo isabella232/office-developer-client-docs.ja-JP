@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 08bc256c-9706-4f3e-9a12-3e9cca5e4caa
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1afd922459be2ec4bbbd27a61fdf6fcb425548c9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351332"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411009"
 ---
 # <a name="sccopyprops"></a>ScCopyProps
 
@@ -70,7 +70,7 @@ MAPI_E_INVALID_PARAMETER
   
 > 不明なプロパティの種類が検出されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 新しい配列とそのデータは、1つの割り当てで作成されたバッファーに存在し、 [ScRelocProps](screlocprops.md)関数を使用して、個々の[spropvalue](spropvalue.md)構造内のポインターを調整できます。 この調整の前に、ポインターが有効になります。 
   

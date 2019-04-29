@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: e8293dc9-f2f1-4065-89f4-e734a8db63df
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: cd09c85e4f44bbea29807d72a273ccf6980ca6df
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32269987"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407481"
 ---
 # <a name="pidtagdefcreatemailuser-canonical-property"></a>PidTagDefCreateMailuser 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32269987"
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |アドレス帳  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 クライアントアプリケーションは、このプロパティを使用して、コンテナー内にメッセージングユーザーオブジェクトを作成します。 エントリ作成のサポートは、アドレス帳コンテナーでは省略可能です。これをサポートしていないものは、このプロパティを公開する必要はありません。 
   

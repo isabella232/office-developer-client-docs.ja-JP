@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: dc7e840e-6d1d-427b-97f9-7912e60ec954
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 11189beed13e2ceb99ef04b7a2f966cb4171915c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304019"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410750"
 ---
 # <a name="call-xll-functions-from-the-function-wizard-or-replace-dialog-boxes"></a>関数ウィザードまたは [置換] ダイアログ ボックスから XLL 関数を呼び出す
 

@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 0d3bd58b-7100-4117-91ac-27139715c85b
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 28159dfb947b4fb0ea54680627588b7c10bee3b3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356568"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416287"
 ---
 # <a name="types-of-restrictions"></a>制限の種類
 
