@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: c42d4d2e-f8f0-bc5b-6018-4bb4ffa81b64
 description: 図形の影に対して、塗りつぶしパターンの前景 (ストローク部分) に適用される色の透過性レベルを指定します。
 ms.openlocfilehash: 0ef3ce525edcce4ccd61f36649ead512545eef58
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349099"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435041"
 ---
 # <a name="shdwforegndtrans-cell-fill-format-section"></a>[ShdwForegndTrans] セル ([Fill Format] セクション)
 
@@ -24,7 +24,7 @@ ms.locfileid: "32349099"
 |:-----|:-----|
 |0 ～ 100  <br/> |透過性をパーセントで表します。既定値は 0% (完全に不透明) です。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 値は、最も近い 0.5% 単位の値に丸められます。 値 "100%" は完全な透明を表します。 完全に透明な塗りつぶしが設定された影は、塗りつぶしがないシャドウとして図面ページに表示されますが、ページ上の他のオブジェクトとは、透明度が 0% の場合と同じように操作します。
   

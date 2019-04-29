@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 6c85414c-9fb6-cdc5-f5b6-8eb13c9608af
 description: 図形の移動、サイズ変更、グループ化、グループ解除など、図面ウィンドウで実行された操作によって、式が削除されたり、変更されたりすることを防ぎます。
 ms.openlocfilehash: 0bdfa023d53e739a970cab65b1dbd67bc1a44461
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360194"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408153"
 ---
 # <a name="guard-function"></a>GUARD 関数
 
@@ -30,7 +30,7 @@ GUARD (* * *expression* * *)
 |:-----|:-----|:-----|:-----|
 | _expression_ <br/> |必須  <br/> |**String** <br/> |定数、演算子、関数、およびシェイプシートのセルに対する参照を組み合わせたもので、結果が値となる式です。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 GUARD 関数による影響を受ける主なセルは、[Width]、[Height]、[PinX]、[PinY] です。 
   

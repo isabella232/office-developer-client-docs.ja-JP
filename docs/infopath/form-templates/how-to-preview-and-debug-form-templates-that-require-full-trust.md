@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 5c491666-06f0-42ec-967e-1c70cd5e03a0
 description: 既定では、完全な信頼が必要なオブジェクト モデルのメンバーを起動するコードを含むマネージ コード プロジェクト (ユーザーのログイン ドメインに関する情報へのアクセスを必要とする LoginName プロパティなど) をデバッグまたはプレビューしようとすると、Microsoft InfoPath では次のようになります。
 ms.openlocfilehash: 0780db286e2ca9cef381c2d24cb621c7c243dcb7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303599"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411261"
 ---
 # <a name="preview-and-debug-form-templates-that-require-full-trust"></a>完全な信頼が必要なフォーム テンプレートをプレビューおよびデバッグする
 

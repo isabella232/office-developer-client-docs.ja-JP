@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: bad4c512-e91f-d459-d65c-a4ab725c3c14
 description: 図形の斜体の影に角度を指定します。
 ms.openlocfilehash: 005415e497a4d985d3fb8ec70d62ba40d9e80c91
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349195"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414033"
 ---
 # <a name="shapeshdwobliqueangle-cell-fill-format-section"></a>[ShapeShdwObliqueAngle] セル ([Fill Format] セクション)
 
 図形の斜体の影に角度を指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルの値がゼロ (0) の場合は影の傾きの角度が真上で、時計回りに角度を指定します。
   

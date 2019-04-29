@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: d4f0cf7a-ac4b-c914-7887-e1d65e9d59fa
 description: Visio 2013 には、カスタムの図面ソリューションのための強力な単一プラットフォームが用意されています。 新しいシェイプシートのセルと関数、およびオートメーションのオブジェクト、プロパティ、メソッド、イベントを使用すると、ソリューションで要素の動作を定義および制御するときに、より多くのオプションが利用できるようになります。
 ms.openlocfilehash: 9ab1c447e7cfdf41b8c88a85438ac2904b1395cf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297208"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33413326"
 ---
 # <a name="whats-new-for-visio-shapesheet-developers"></a>Visio ShapeSheet 開発者向け新機能
 
@@ -58,10 +58,10 @@ Visio 2013 には、カスタムの図面ソリューションのための強力
 |[[linegradientangle]](linegradientangle-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
 |[[linegradientdir]](linegradientdir-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
 |[[linegradientenabled]](linegradientenabled-cell-gradient-properties-section.md) <br/> |グラデーションのプロパティ  <br/> |
-|[[lockreplace]](lockreplace-cell-protection-section.md) <br/> |Protection  <br/> |
-|[[lockthemeconnectors]](lockthemeconnectors-cell-protection-section.md) <br/> |Protection  <br/> |
-|[[lockthemefonts]](lockthemefonts-cell-protection-section.md) <br/> |Protection  <br/> |
-|[[lockthemeindex]](lockthemeindex-cell-protection-section.md) <br/> |Protection  <br/> |
+|[[lockreplace]](lockreplace-cell-protection-section.md) <br/> |保護  <br/> |
+|[[lockthemeconnectors]](lockthemeconnectors-cell-protection-section.md) <br/> |保護  <br/> |
+|[[lockthemefonts]](lockthemefonts-cell-protection-section.md) <br/> |保護  <br/> |
+|[[lockthemeindex]](lockthemeindex-cell-protection-section.md) <br/> |保護  <br/> |
 |[[nocoauth]](nocoauth-cell-document-properties-section.md) <br/> |ドキュメントのプロパティ  <br/> |
 |[[pagelockreplace]](pagelockreplace-cell-page-properties-section.md) <br/> |Page Properties  <br/> |
 |[Perspective](perspective-cell-3-d-rotation-properties-section.md) <br/> |3-D 回転のプロパティ  <br/> |
@@ -128,7 +128,7 @@ Visio 2013 には、カスタムの図面ソリューションのための強力
 |:-----|
 |[フォント](font-function.md) <br/> |
 |[ISTHEMED](isthemed-function.md) <br/> |
-|[言語](language-function.md) <br/> |
+|[LANGUAGE](language-function.md) <br/> |
 |[THEMECBV](themecbv-function.md) <br/> |
 ||
 |[THEMEVAL](themeval-function.md) <br/> |

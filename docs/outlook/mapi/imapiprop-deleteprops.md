@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5cc642de-21f0-4826-bf21-aac4bcfc1328
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5bfef87baa2dffa4605f9a7afa3833024f514430
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328955"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409238"
 ---
 # <a name="imapipropdeleteprops"></a>IMAPIProp::DeleteProps
 
@@ -54,7 +54,7 @@ MAPI_E_NO_ACCESS
   
 > 呼び出し元に、プロパティを削除するための十分な権限がありません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapiprop::D eleteprops**メソッドは、現在のオブジェクトから1つ以上のプロパティを削除します。 
   

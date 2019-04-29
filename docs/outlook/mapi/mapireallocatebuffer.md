@@ -7,13 +7,13 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 182ab0c6-c9d3-4cc8-892f-f6b09312ceb9
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 59d0ce192605257dc0aebed46d8093a352fce05f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32270239"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435286"
 ---
 # <a name="mapireallocatebuffer"></a>MAPIReallocateBuffer
 
@@ -51,7 +51,7 @@ LPVOID * lppv
   
 > 返された割り当て済みバッファーへのポインター。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
  **MAPIReallocateBuffer**は、要求されたサイズの新しいメモリブロックを割り当て、この新しいメモリブロックに渡されるバッファーの内容をコピーします。 渡されるメモリブロックに内部ポインターが含まれている場合、新しい位置に合わせてポインターが変更されることはありません。 
   

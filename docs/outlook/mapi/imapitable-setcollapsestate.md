@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 31325e8f-1cf9-49b2-8118-953996b0037f
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 7351457dc5b72cfc4a7ef9f91e9d33a80ca98c39
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328834"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414068"
 ---
 # <a name="imapitablesetcollapsestate"></a>IMAPITable::SetCollapseState
 
@@ -68,7 +68,7 @@ MAPI_E_UNABLE_TO_COMPLETE
   
 > テーブルで、折りたたまれたビューまたは展開されたビューの再構築を完了できませんでした。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **IMAPITable:: SetCollapseState**メソッドは、テーブルビューの展開または折りたたみ状態を再度確立します。 **SetCollapseState**と**GetCollapseState**は、次のように連携して動作します。 
   

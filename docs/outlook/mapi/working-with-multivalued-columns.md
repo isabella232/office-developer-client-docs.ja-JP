@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 911a41c3-c10f-4473-8853-fafb56b721ba
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 34f19e279c86e0c0856d242cf2aa13d744d46f13
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32325806"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420186"
 ---
 # <a name="working-with-multivalued-columns"></a>複数値列の処理
 

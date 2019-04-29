@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 500f60ed-fdec-4d70-8cf5-664c46643956
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: ad8aec8d015849965bea6ac011c8a45e75c69ca1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287108"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408223"
 ---
 # <a name="dtpage"></a>DTPAGE
 
@@ -46,7 +46,7 @@ typedef struct DTPAGE
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **cctl**
   
@@ -68,7 +68,7 @@ typedef struct DTPAGE
   
 > [DTCTL](dtctl.md)構造体の配列へのポインター。ページ上の各コントロールに対して1つ。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 タブページのヘルプファイルを識別するには、 **lpszcomponent**メンバーをハードコーディングされた文字列または**ulitemid**メンバーのいずれかを整数リソース識別子に設定します。 
   

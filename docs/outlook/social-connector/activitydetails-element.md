@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: c103d48d-53ca-4b19-b16f-2862379587ef
 description: activitydetails 要素は、1つのアクティビティフィードアイテムの生データを格納します。 各アクティビティフィードアイテムは、独自の activitydetails 要素を持つ必要があります。 activitydetails 要素のデータは、アクティビティテンプレートで name 要素を使用して参照されます。
 ms.openlocfilehash: fd9c2136e8e2b687fa281ecda71039809848f63c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281350"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434873"
 ---
 # <a name="activitydetails-element"></a>activitydetails 要素
 

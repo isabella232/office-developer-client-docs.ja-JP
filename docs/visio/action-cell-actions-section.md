@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 435e49ee-0b51-8ce3-0589-3f0717026f4a
 description: ショートカット メニューまたはアクション タグ メニューのコマンドを選択したときに実行される数式が格納されています。
 ms.openlocfilehash: e6bc576982cad871804cbcbc5f3d9c6bceb558c5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283066"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407614"
 ---
 # <a name="action-cell-actions-section"></a>[Action] セル ([Actions] セクション)
 
@@ -23,7 +23,7 @@ ms.locfileid: "32283066"
 > [!NOTE]
 > Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [Action] セルは、アクションが発生したときにのみ評価されます。数式の入力時には評価されません。
   
