@@ -8,19 +8,19 @@ localization_priority: Normal
 ms.assetid: 63f58b9f-c814-4b6c-b896-098bfc02fc54
 description: このメンバーはプレースホルダーで、サポートされていません。
 ms.openlocfilehash: f3fdc83f3cbae0a95382a23b787de24167e98609
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317474"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423483"
 ---
-# <a name="ifreebusydataplaceholder6"></a><span data-ttu-id="37554-103">IFreeBusyData::Placeholder6</span><span class="sxs-lookup"><span data-stu-id="37554-103">IFreeBusyData::Placeholder6</span></span>
+# <a name="ifreebusydataplaceholder6"></a><span data-ttu-id="4cfbd-103">IFreeBusyData::Placeholder6</span><span class="sxs-lookup"><span data-stu-id="4cfbd-103">IFreeBusyData::Placeholder6</span></span>
 
-<span data-ttu-id="37554-104">このメンバーはプレースホルダーで、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="37554-104">This member is a placeholder and is not supported.</span></span>
+<span data-ttu-id="4cfbd-104">このメンバーはプレースホルダーで、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4cfbd-104">This member is a placeholder and is not supported.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="37554-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="37554-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="4cfbd-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="4cfbd-105">Quick info</span></span>
 
-<span data-ttu-id="37554-106">[IFreeBusyData](ifreebusydata.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="37554-106">See [IFreeBusyData](ifreebusydata.md).</span></span>
+<span data-ttu-id="4cfbd-106">[IFreeBusyData](ifreebusydata.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4cfbd-106">See [IFreeBusyData](ifreebusydata.md).</span></span>
   
 ```cpp
 HRESULT Placeholder6( 
@@ -33,18 +33,18 @@ HRESULT Placeholder6(
 );
 ```
 
-## <a name="return-values"></a><span data-ttu-id="37554-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="37554-107">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="4cfbd-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="4cfbd-107">Return values</span></span>
 
-<span data-ttu-id="37554-108">このメンバーは**IFreeBusyData**のプレースホルダーであり、サポートされていないため、常に E_NOTIMPL。</span><span class="sxs-lookup"><span data-stu-id="37554-108">Always E_NOTIMPL, because this member is a placeholder in **IFreeBusyData** and is not supported.</span></span> 
+<span data-ttu-id="4cfbd-108">このメンバーは**IFreeBusyData**のプレースホルダーであり、サポートされていないため、常に E_NOTIMPL。</span><span class="sxs-lookup"><span data-stu-id="4cfbd-108">Always E_NOTIMPL, because this member is a placeholder in **IFreeBusyData** and is not supported.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="37554-109">解説</span><span class="sxs-lookup"><span data-stu-id="37554-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="4cfbd-109">注釈</span><span class="sxs-lookup"><span data-stu-id="4cfbd-109">Remarks</span></span>
 
-<span data-ttu-id="37554-110">このメンバーは、E_NOTIMPL を返す必要があります。</span><span class="sxs-lookup"><span data-stu-id="37554-110">This member must return E_NOTIMPL.</span></span>
+<span data-ttu-id="4cfbd-110">このメンバーは、E_NOTIMPL を返す必要があります。</span><span class="sxs-lookup"><span data-stu-id="4cfbd-110">This member must return E_NOTIMPL.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="37554-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="37554-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4cfbd-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="4cfbd-111">See also</span></span>
 
-- [<span data-ttu-id="37554-112">定数 (空き時間情報 API)</span><span class="sxs-lookup"><span data-stu-id="37554-112">Constants (Free/busy API)</span></span>](constants-free-busy-api.md)
-- [<span data-ttu-id="37554-113">IFreeBusyData::EnumBlocks</span><span class="sxs-lookup"><span data-stu-id="37554-113">IFreeBusyData::EnumBlocks</span></span>](ifreebusydata-enumblocks.md)
-- [<span data-ttu-id="37554-114">IFreeBusyData::GetFBPublishRange</span><span class="sxs-lookup"><span data-stu-id="37554-114">IFreeBusyData::GetFBPublishRange</span></span>](ifreebusydata-getfbpublishrange.md)
-- [<span data-ttu-id="37554-115">IFreeBusyData::SetFBRange</span><span class="sxs-lookup"><span data-stu-id="37554-115">IFreeBusyData::SetFBRange</span></span>](ifreebusydata-setfbrange.md)
+- [<span data-ttu-id="4cfbd-112">定数 (空き時間情報 API)</span><span class="sxs-lookup"><span data-stu-id="4cfbd-112">Constants (Free/busy API)</span></span>](constants-free-busy-api.md)
+- [<span data-ttu-id="4cfbd-113">IFreeBusyData::EnumBlocks</span><span class="sxs-lookup"><span data-stu-id="4cfbd-113">IFreeBusyData::EnumBlocks</span></span>](ifreebusydata-enumblocks.md)
+- [<span data-ttu-id="4cfbd-114">IFreeBusyData::GetFBPublishRange</span><span class="sxs-lookup"><span data-stu-id="4cfbd-114">IFreeBusyData::GetFBPublishRange</span></span>](ifreebusydata-getfbpublishrange.md)
+- [<span data-ttu-id="4cfbd-115">IFreeBusyData::SetFBRange</span><span class="sxs-lookup"><span data-stu-id="4cfbd-115">IFreeBusyData::SetFBRange</span></span>](ifreebusydata-setfbrange.md)
 

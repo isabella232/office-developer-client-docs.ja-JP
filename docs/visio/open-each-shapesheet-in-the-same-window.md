@@ -10,18 +10,18 @@ localization_priority: Normal
 ms.assetid: 6e178e26-e696-f38b-4720-10ce0e6ad110
 description: ''
 ms.openlocfilehash: 45616be6a1d59bd1464222897050de324cebe80e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360964"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436637"
 ---
-# <a name="open-each-shapesheet-in-the-same-window"></a><span data-ttu-id="7fd1d-102">各シェイプシートを同じウィンドウ内で開く</span><span class="sxs-lookup"><span data-stu-id="7fd1d-102">Open Each ShapeSheet in the Same Window</span></span>
+# <a name="open-each-shapesheet-in-the-same-window"></a><span data-ttu-id="0213f-102">各シェイプシートを同じウィンドウ内で開く</span><span class="sxs-lookup"><span data-stu-id="0213f-102">Open Each ShapeSheet in the Same Window</span></span>
 
-1. <span data-ttu-id="7fd1d-103">[**ファイル**] タブをクリックし、[**オプション**] をクリックして、[**詳細設定**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7fd1d-103">Click the **File** tab, click **Options**, and then click **Advanced**.</span></span>
+1. <span data-ttu-id="0213f-103">[**ファイル**] タブをクリックし、[**オプション**] をクリックして、[**詳細設定**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0213f-103">Click the **File** tab, click **Options**, and then click **Advanced**.</span></span>
     
-2. <span data-ttu-id="7fd1d-104">[**全般**] の [**各シェイプシートを同じウィンドウ内で開く**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="7fd1d-104">Under **General**, select **Open each ShapeSheet in the same window**.</span></span>
+2. <span data-ttu-id="0213f-104">[**全般**] の [**各シェイプシートを同じウィンドウ内で開く**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="0213f-104">Under **General**, select **Open each ShapeSheet in the same window**.</span></span>
     
-3. <span data-ttu-id="7fd1d-105">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7fd1d-105">Click **OK**.</span></span> 
+3. <span data-ttu-id="0213f-105">**[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0213f-105">Click **OK**.</span></span> 
     
 
