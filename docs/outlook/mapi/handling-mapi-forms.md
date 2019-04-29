@@ -9,64 +9,64 @@ api_type:
 ms.assetid: c1589d49-2ebe-48ce-85c7-b70fb7c1bb67
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 91347f0c34b8d7b76e4e456397a1faa061f3b2c6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299453"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423056"
 ---
-# <a name="handling-mapi-forms"></a><span data-ttu-id="29ee0-103">MAPI フォームの処理</span><span class="sxs-lookup"><span data-stu-id="29ee0-103">Handling MAPI forms</span></span>
+# <a name="handling-mapi-forms"></a><span data-ttu-id="b1823-103">MAPI フォームの処理</span><span class="sxs-lookup"><span data-stu-id="b1823-103">Handling MAPI forms</span></span>
 
-<span data-ttu-id="29ee0-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="29ee0-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="b1823-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b1823-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="29ee0-105">MAPI フォームは、特定のクラスのメッセージのビューアーです。</span><span class="sxs-lookup"><span data-stu-id="29ee0-105">A MAPI form is a viewer for a message of a particular class.</span></span> <span data-ttu-id="29ee0-106">さまざまなメッセージクラスに属するメッセージをユーザーが操作できるようにするクライアントは、さまざまな MAPI フォームを処理するように記述する必要があります。</span><span class="sxs-lookup"><span data-stu-id="29ee0-106">Clients that allow their users to work with messages belonging to a variety of message classes must be written to handle a variety of MAPI forms.</span></span> <span data-ttu-id="29ee0-107">複数のフォームを処理するために、クライアントは、次の3つのオブジェクトを含むフォームビューアーというコンポーネントを実装します。</span><span class="sxs-lookup"><span data-stu-id="29ee0-107">To handle multiple forms, clients implement a component known as a form viewer which contains the following three objects:</span></span>
+<span data-ttu-id="b1823-105">MAPI フォームは、特定のクラスのメッセージのビューアーです。</span><span class="sxs-lookup"><span data-stu-id="b1823-105">A MAPI form is a viewer for a message of a particular class.</span></span> <span data-ttu-id="b1823-106">さまざまなメッセージクラスに属するメッセージをユーザーが操作できるようにするクライアントは、さまざまな MAPI フォームを処理するように記述する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b1823-106">Clients that allow their users to work with messages belonging to a variety of message classes must be written to handle a variety of MAPI forms.</span></span> <span data-ttu-id="b1823-107">複数のフォームを処理するために、クライアントは、次の3つのオブジェクトを含むフォームビューアーというコンポーネントを実装します。</span><span class="sxs-lookup"><span data-stu-id="b1823-107">To handle multiple forms, clients implement a component known as a form viewer which contains the following three objects:</span></span>
   
-- <span data-ttu-id="29ee0-108">[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)インターフェイスをサポートするメッセージサイトオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="29ee0-108">A message site object, which supports the [IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md) interface.</span></span> 
+- <span data-ttu-id="b1823-108">[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)インターフェイスをサポートするメッセージサイトオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="b1823-108">A message site object, which supports the [IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md) interface.</span></span> 
     
-- <span data-ttu-id="29ee0-109">[IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md)インターフェイスをサポートするビューアドバイズシンク。</span><span class="sxs-lookup"><span data-stu-id="29ee0-109">A view advise sink, which supports the [IMAPIViewAdviseSink : IUnknown](imapiviewadvisesinkiunknown.md) interface.</span></span> 
+- <span data-ttu-id="b1823-109">[IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md)インターフェイスをサポートするビューアドバイズシンク。</span><span class="sxs-lookup"><span data-stu-id="b1823-109">A view advise sink, which supports the [IMAPIViewAdviseSink : IUnknown](imapiviewadvisesinkiunknown.md) interface.</span></span> 
     
-- <span data-ttu-id="29ee0-110">[imapiviewcontext: IUnknown](imapiviewcontextiunknown.md)インターフェイスをサポートするビューコンテキストオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="29ee0-110">A view context object, which supports the [IMAPIViewContext : IUnknown](imapiviewcontextiunknown.md) interface.</span></span> 
+- <span data-ttu-id="b1823-110">[imapiviewcontext: IUnknown](imapiviewcontextiunknown.md)インターフェイスをサポートするビューコンテキストオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="b1823-110">A view context object, which supports the [IMAPIViewContext : IUnknown](imapiviewcontextiunknown.md) interface.</span></span> 
     
-<span data-ttu-id="29ee0-111">これらの各オブジェクトは、フォームサーバーと呼ばれるコンポーネントによって使用され、各フォームを実装し、そのストレージと、ビューを処理するクライアントによって生成される通知を処理します。</span><span class="sxs-lookup"><span data-stu-id="29ee0-111">Each of these objects is used by a component called the form server which implements each form, handling its storage and the notifications generated by clients handling the view.</span></span> <span data-ttu-id="29ee0-112">もう1つのコンポーネントであるフォームライブラリプロバイダーは、フォームマネージャーを実装します。</span><span class="sxs-lookup"><span data-stu-id="29ee0-112">One other component, the form library provider, implements a form manager.</span></span> <span data-ttu-id="29ee0-113">フォームマネージャーは、フォームサーバーの実行可能ファイルを格納するフォームライブラリを管理します。</span><span class="sxs-lookup"><span data-stu-id="29ee0-113">The form manager administers the form libraries, which store form server executable files.</span></span> <span data-ttu-id="29ee0-114">この管理には、適切なフォームサーバーの読み込みと、サーバーとクライアントの間の初期通信の処理が含まれます。</span><span class="sxs-lookup"><span data-stu-id="29ee0-114">This administration includes loading the appropriate form server and handling the initial communication between the server and the client.</span></span>
+<span data-ttu-id="b1823-111">これらの各オブジェクトは、フォームサーバーと呼ばれるコンポーネントによって使用され、各フォームを実装し、そのストレージと、ビューを処理するクライアントによって生成される通知を処理します。</span><span class="sxs-lookup"><span data-stu-id="b1823-111">Each of these objects is used by a component called the form server which implements each form, handling its storage and the notifications generated by clients handling the view.</span></span> <span data-ttu-id="b1823-112">もう1つのコンポーネントであるフォームライブラリプロバイダーは、フォームマネージャーを実装します。</span><span class="sxs-lookup"><span data-stu-id="b1823-112">One other component, the form library provider, implements a form manager.</span></span> <span data-ttu-id="b1823-113">フォームマネージャーは、フォームサーバーの実行可能ファイルを格納するフォームライブラリを管理します。</span><span class="sxs-lookup"><span data-stu-id="b1823-113">The form manager administers the form libraries, which store form server executable files.</span></span> <span data-ttu-id="b1823-114">この管理には、適切なフォームサーバーの読み込みと、サーバーとクライアントの間の初期通信の処理が含まれます。</span><span class="sxs-lookup"><span data-stu-id="b1823-114">This administration includes loading the appropriate form server and handling the initial communication between the server and the client.</span></span>
   
-<span data-ttu-id="29ee0-115">次の図は、クライアントと MAPI フォームアーキテクチャの他の部分との関係を示しています。</span><span class="sxs-lookup"><span data-stu-id="29ee0-115">The following diagram shows the relationship between a client and the other parts of the MAPI form architecture.</span></span>
+<span data-ttu-id="b1823-115">次の図は、クライアントと MAPI フォームアーキテクチャの他の部分との関係を示しています。</span><span class="sxs-lookup"><span data-stu-id="b1823-115">The following diagram shows the relationship between a client and the other parts of the MAPI form architecture.</span></span>
   
-## <a name="mapi-form-architecture"></a><span data-ttu-id="29ee0-116">MAPI フォームのアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="29ee0-116">MAPI form architecture</span></span>
+## <a name="mapi-form-architecture"></a><span data-ttu-id="b1823-116">MAPI フォームのアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="b1823-116">MAPI form architecture</span></span>
   
-<span data-ttu-id="29ee0-117">![MAPI フォームのアーキテクチャ](media/forms01.gif "MAPI フォームのアーキテクチャ")</span><span class="sxs-lookup"><span data-stu-id="29ee0-117">![MAPI form architecture](media/forms01.gif "MAPI form architecture")</span></span>
+<span data-ttu-id="b1823-117">![MAPI フォームのアーキテクチャ](media/forms01.gif "MAPI フォームのアーキテクチャ")</span><span class="sxs-lookup"><span data-stu-id="b1823-117">![MAPI form architecture](media/forms01.gif "MAPI form architecture")</span></span>
   
-<span data-ttu-id="29ee0-118">クライアントが MAPI フォームの処理を計画している場合は、次の5つの基本的なタスクを実行するために、フォームマネージャーの[imapiformmgr: IUnknown](imapiformmgriunknown.md)インターフェイスを使用します。</span><span class="sxs-lookup"><span data-stu-id="29ee0-118">If your client plans to handle MAPI forms, you will use the form manager's [IMAPIFormMgr : IUnknown](imapiformmgriunknown.md) interface to perform five basic tasks:</span></span> 
+<span data-ttu-id="b1823-118">クライアントが MAPI フォームの処理を計画している場合は、次の5つの基本的なタスクを実行するために、フォームマネージャーの[imapiformmgr: IUnknown](imapiformmgriunknown.md)インターフェイスを使用します。</span><span class="sxs-lookup"><span data-stu-id="b1823-118">If your client plans to handle MAPI forms, you will use the form manager's [IMAPIFormMgr : IUnknown](imapiformmgriunknown.md) interface to perform five basic tasks:</span></span> 
   
-- <span data-ttu-id="29ee0-119">メッセージが開かれたとき、または構成されたときに、適切な MAPI フォームサーバーを起動します。</span><span class="sxs-lookup"><span data-stu-id="29ee0-119">Launch the appropriate MAPI form server when a message is opened or composed.</span></span>
+- <span data-ttu-id="b1823-119">メッセージが開かれたとき、または構成されたときに、適切な MAPI フォームサーバーを起動します。</span><span class="sxs-lookup"><span data-stu-id="b1823-119">Launch the appropriate MAPI form server when a message is opened or composed.</span></span>
     
-- <span data-ttu-id="29ee0-120">フォルダーのコンテンツテーブルにフォームサーバーのアイコンを表示します。</span><span class="sxs-lookup"><span data-stu-id="29ee0-120">Display form servers' icons in the contents tables of folders.</span></span>
+- <span data-ttu-id="b1823-120">フォルダーのコンテンツテーブルにフォームサーバーのアイコンを表示します。</span><span class="sxs-lookup"><span data-stu-id="b1823-120">Display form servers' icons in the contents tables of folders.</span></span>
     
-- <span data-ttu-id="29ee0-121">フォーム通知を送受信します。</span><span class="sxs-lookup"><span data-stu-id="29ee0-121">Send and receive form notifications.</span></span> <span data-ttu-id="29ee0-122">詳細については、「[フォーム通知の送信と受信](sending-and-receiving-form-notifications.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="29ee0-122">For more information, see [Sending and Receiving Form Notifications](sending-and-receiving-form-notifications.md).</span></span>
+- <span data-ttu-id="b1823-121">フォーム通知を送受信します。</span><span class="sxs-lookup"><span data-stu-id="b1823-121">Send and receive form notifications.</span></span> <span data-ttu-id="b1823-122">詳細については、「[フォーム通知の送信と受信](sending-and-receiving-form-notifications.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b1823-122">For more information, see [Sending and Receiving Form Notifications](sending-and-receiving-form-notifications.md).</span></span>
     
-- <span data-ttu-id="29ee0-123">ユーザーがフォームライブラリからフォームサーバーをインストールまたは削除できるようにします。</span><span class="sxs-lookup"><span data-stu-id="29ee0-123">Allow users to install or remove form servers from form libraries.</span></span> <span data-ttu-id="29ee0-124">詳細については、「[フォームライブラリを管理する](maintaining-a-form-library.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="29ee0-124">For more information, see [Maintaining a Form Library](maintaining-a-form-library.md).</span></span>
+- <span data-ttu-id="b1823-123">ユーザーがフォームライブラリからフォームサーバーをインストールまたは削除できるようにします。</span><span class="sxs-lookup"><span data-stu-id="b1823-123">Allow users to install or remove form servers from form libraries.</span></span> <span data-ttu-id="b1823-124">詳細については、「[フォームライブラリを管理する](maintaining-a-form-library.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b1823-124">For more information, see [Maintaining a Form Library](maintaining-a-form-library.md).</span></span>
     
-- <span data-ttu-id="29ee0-125">ユーザーがフォームサーバーを特定のフォルダーに関連付けることができるようにします。</span><span class="sxs-lookup"><span data-stu-id="29ee0-125">Allow users to associate form servers with particular folders.</span></span>
+- <span data-ttu-id="b1823-125">ユーザーがフォームサーバーを特定のフォルダーに関連付けることができるようにします。</span><span class="sxs-lookup"><span data-stu-id="b1823-125">Allow users to associate form servers with particular folders.</span></span>
     
-<span data-ttu-id="29ee0-126">フォームマネージャーにアクセスするには、 [MAPIOpenFormMgr](mapiopenformmgr.md)関数を初期化時に1回呼び出します。</span><span class="sxs-lookup"><span data-stu-id="29ee0-126">To access the form manager, call the [MAPIOpenFormMgr](mapiopenformmgr.md) function once during initialization.</span></span> 
+<span data-ttu-id="b1823-126">フォームマネージャーにアクセスするには、 [MAPIOpenFormMgr](mapiopenformmgr.md)関数を初期化時に1回呼び出します。</span><span class="sxs-lookup"><span data-stu-id="b1823-126">To access the form manager, call the [MAPIOpenFormMgr](mapiopenformmgr.md) function once during initialization.</span></span> 
   
-## <a name="in-this-section"></a><span data-ttu-id="29ee0-127">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="29ee0-127">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="b1823-127">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="b1823-127">In this section</span></span>
 
-- <span data-ttu-id="29ee0-128">[フォームビューアーの実装](implementing-a-form-viewer.md): view アドバイズシンク、メッセージサイト、ビューコンテキストを使用してフォームビューアーを実装する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="29ee0-128">[Implementing a Form Viewer](implementing-a-form-viewer.md): Describes how to implement a form viewer by using a view advise sink, a message site, and a view context.</span></span>
+- <span data-ttu-id="b1823-128">[フォームビューアーの実装](implementing-a-form-viewer.md): view アドバイズシンク、メッセージサイト、ビューコンテキストを使用してフォームビューアーを実装する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="b1823-128">[Implementing a Form Viewer](implementing-a-form-viewer.md): Describes how to implement a form viewer by using a view advise sink, a message site, and a view context.</span></span>
     
-- <span data-ttu-id="29ee0-129">[標準フォーム動詞の実装](implementing-standard-form-verbs.md): MAPI フォームのユーザーメニューまたはボタンクリックの動詞を実装する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="29ee0-129">[Implementing Standard Form Verbs](implementing-standard-form-verbs.md): Describes how to implement the verbs for user menu or button clicks on MAPI forms.</span></span>
+- <span data-ttu-id="b1823-129">[標準フォーム動詞の実装](implementing-standard-form-verbs.md): MAPI フォームのユーザーメニューまたはボタンクリックの動詞を実装する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="b1823-129">[Implementing Standard Form Verbs](implementing-standard-form-verbs.md): Describes how to implement the verbs for user menu or button clicks on MAPI forms.</span></span>
     
-- <span data-ttu-id="29ee0-130">[フォーム通知](sending-and-receiving-form-notifications.md)の送受信: フォーム通知を送受信する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="29ee0-130">[Sending and Receiving Form Notifications](sending-and-receiving-form-notifications.md): Describes how to send and receive form notifications.</span></span>
+- <span data-ttu-id="b1823-130">[フォーム通知](sending-and-receiving-form-notifications.md)の送受信: フォーム通知を送受信する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="b1823-130">[Sending and Receiving Form Notifications](sending-and-receiving-form-notifications.md): Describes how to send and receive form notifications.</span></span>
     
-- <span data-ttu-id="29ee0-131">[フォームライブラリの管理](maintaining-a-form-library.md): フォームに関するすべての重要な情報を保持するライブラリを管理する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="29ee0-131">[Maintaining a Form Library](maintaining-a-form-library.md): Describes how to maintain a library that holds all the important information about a form.</span></span>
+- <span data-ttu-id="b1823-131">[フォームライブラリの管理](maintaining-a-form-library.md): フォームに関するすべての重要な情報を保持するライブラリを管理する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="b1823-131">[Maintaining a Form Library](maintaining-a-form-library.md): Describes how to maintain a library that holds all the important information about a form.</span></span>
     
-- <span data-ttu-id="29ee0-132">[フォーム](loading-a-message-into-a-form.md)へのメッセージの読み込み: フォームにメッセージを読み込む方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="29ee0-132">[Loading a Message Into a Form](loading-a-message-into-a-form.md): Describes how to load a message into a form.</span></span>
+- <span data-ttu-id="b1823-132">[フォーム](loading-a-message-into-a-form.md)へのメッセージの読み込み: フォームにメッセージを読み込む方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="b1823-132">[Loading a Message Into a Form](loading-a-message-into-a-form.md): Describes how to load a message into a form.</span></span>
     
-- <span data-ttu-id="29ee0-133">[フォームを使用した新しいメッセージの](composing-a-new-message-by-using-a-form.md)作成: フォームを使用してメッセージを作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="29ee0-133">[Composing a New Message by Using a Form](composing-a-new-message-by-using-a-form.md): Describes how to compose a message using a form.</span></span>
+- <span data-ttu-id="b1823-133">[フォームを使用した新しいメッセージの](composing-a-new-message-by-using-a-form.md)作成: フォームを使用してメッセージを作成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="b1823-133">[Composing a New Message by Using a Form](composing-a-new-message-by-using-a-form.md): Describes how to compose a message using a form.</span></span>
     
-- <span data-ttu-id="29ee0-134">[フォームアイコンの表示](displaying-form-icons.md): フォーム付きのアイコンを表示する手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="29ee0-134">[Displaying Form Icons](displaying-form-icons.md): Describes the steps for displaying an icon with a form.</span></span>
+- <span data-ttu-id="b1823-134">[フォームアイコンの表示](displaying-form-icons.md): フォーム付きのアイコンを表示する手順について説明します。</span><span class="sxs-lookup"><span data-stu-id="b1823-134">[Displaying Form Icons](displaying-form-icons.md): Describes the steps for displaying an icon with a form.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="29ee0-135">関連項目</span><span class="sxs-lookup"><span data-stu-id="29ee0-135">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b1823-135">関連項目</span><span class="sxs-lookup"><span data-stu-id="b1823-135">See also</span></span>
 
-- [<span data-ttu-id="29ee0-136">MAPI フォーム</span><span class="sxs-lookup"><span data-stu-id="29ee0-136">MAPI Forms</span></span>](mapi-forms.md)
-- [<span data-ttu-id="29ee0-137">MAPI フォームサーバーの開発</span><span class="sxs-lookup"><span data-stu-id="29ee0-137">Developing MAPI Form Servers</span></span>](developing-mapi-form-servers.md)
+- [<span data-ttu-id="b1823-136">MAPI フォーム</span><span class="sxs-lookup"><span data-stu-id="b1823-136">MAPI Forms</span></span>](mapi-forms.md)
+- [<span data-ttu-id="b1823-137">MAPI フォームサーバーの開発</span><span class="sxs-lookup"><span data-stu-id="b1823-137">Developing MAPI Form Servers</span></span>](developing-mapi-form-servers.md)
 

@@ -13,19 +13,19 @@ api_type:
 ms.assetid: 83290b8e-fffc-41c8-a01e-578d130b65c5
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 10ac4e33b3f734ec2ce3205aa1897e0418cb563d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286622"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421152"
 ---
-# <a name="imapicontrolgetlasterror"></a><span data-ttu-id="7736e-103">IMAPIControl::GetLastError</span><span class="sxs-lookup"><span data-stu-id="7736e-103">IMAPIControl::GetLastError</span></span>
+# <a name="imapicontrolgetlasterror"></a><span data-ttu-id="0e840-103">IMAPIControl::GetLastError</span><span class="sxs-lookup"><span data-stu-id="0e840-103">IMAPIControl::GetLastError</span></span>
 
   
   
-<span data-ttu-id="7736e-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="7736e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="0e840-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="0e840-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="7736e-105">前のボタンコントロールのエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。</span><span class="sxs-lookup"><span data-stu-id="7736e-105">Returns a [MAPIERROR](mapierror.md) structure that contains information about the previous button control error.</span></span> 
+<span data-ttu-id="0e840-105">前のボタンコントロールのエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。</span><span class="sxs-lookup"><span data-stu-id="0e840-105">Returns a [MAPIERROR](mapierror.md) structure that contains information about the previous button control error.</span></span> 
   
 ```cpp
 HRESULT GetLastError(
@@ -35,51 +35,51 @@ HRESULT GetLastError(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="7736e-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7736e-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="0e840-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0e840-106">Parameters</span></span>
 
- <span data-ttu-id="7736e-107">_hResult_</span><span class="sxs-lookup"><span data-stu-id="7736e-107">_hResult_</span></span>
+ <span data-ttu-id="0e840-107">_hResult_</span><span class="sxs-lookup"><span data-stu-id="0e840-107">_hResult_</span></span>
   
-> <span data-ttu-id="7736e-108">順番前のメソッド呼び出しで生成されたエラー値へのハンドル。</span><span class="sxs-lookup"><span data-stu-id="7736e-108">[in] A handle to the error value generated in the previous method call.</span></span>
+> <span data-ttu-id="0e840-108">順番前のメソッド呼び出しで生成されたエラー値へのハンドル。</span><span class="sxs-lookup"><span data-stu-id="0e840-108">[in] A handle to the error value generated in the previous method call.</span></span>
     
- <span data-ttu-id="7736e-109">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="7736e-109">_ulFlags_</span></span>
+ <span data-ttu-id="0e840-109">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="0e840-109">_ulFlags_</span></span>
   
-> <span data-ttu-id="7736e-110">順番返される文字列の種類を制御するフラグのビットマスク。</span><span class="sxs-lookup"><span data-stu-id="7736e-110">[in] A bitmask of flags that controls the type of the strings returned.</span></span> <span data-ttu-id="7736e-111">次のフラグを設定できます。</span><span class="sxs-lookup"><span data-stu-id="7736e-111">The following flag can be set:</span></span>
+> <span data-ttu-id="0e840-110">順番返される文字列の種類を制御するフラグのビットマスク。</span><span class="sxs-lookup"><span data-stu-id="0e840-110">[in] A bitmask of flags that controls the type of the strings returned.</span></span> <span data-ttu-id="0e840-111">次のフラグを設定できます。</span><span class="sxs-lookup"><span data-stu-id="0e840-111">The following flag can be set:</span></span>
     
-<span data-ttu-id="7736e-112">MAPI_UNICODE</span><span class="sxs-lookup"><span data-stu-id="7736e-112">MAPI_UNICODE</span></span> 
+<span data-ttu-id="0e840-112">MAPI_UNICODE</span><span class="sxs-lookup"><span data-stu-id="0e840-112">MAPI_UNICODE</span></span> 
   
-> <span data-ttu-id="7736e-113">_lppMAPIError_パラメーターで返される**MAPIERROR**構造体の文字列は、Unicode 形式です。</span><span class="sxs-lookup"><span data-stu-id="7736e-113">The strings in the **MAPIERROR** structure returned in the  _lppMAPIError_ parameter are in Unicode format.</span></span> <span data-ttu-id="7736e-114">MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。</span><span class="sxs-lookup"><span data-stu-id="7736e-114">If the MAPI_UNICODE flag is not set, the strings are in ANSI format.</span></span> 
+> <span data-ttu-id="0e840-113">_lppMAPIError_パラメーターで返される**MAPIERROR**構造体の文字列は、Unicode 形式です。</span><span class="sxs-lookup"><span data-stu-id="0e840-113">The strings in the **MAPIERROR** structure returned in the  _lppMAPIError_ parameter are in Unicode format.</span></span> <span data-ttu-id="0e840-114">MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。</span><span class="sxs-lookup"><span data-stu-id="0e840-114">If the MAPI_UNICODE flag is not set, the strings are in ANSI format.</span></span> 
     
- <span data-ttu-id="7736e-115">_lppMAPIError_</span><span class="sxs-lookup"><span data-stu-id="7736e-115">_lppMAPIError_</span></span>
+ <span data-ttu-id="0e840-115">_lppMAPIError_</span><span class="sxs-lookup"><span data-stu-id="0e840-115">_lppMAPIError_</span></span>
   
-> <span data-ttu-id="7736e-116">読み上げエラーのバージョン、コンポーネント、およびコンテキスト情報を含む**MAPIERROR**構造体へのポインターへのポインター。</span><span class="sxs-lookup"><span data-stu-id="7736e-116">[out] A pointer to a pointer to a **MAPIERROR** structure that contains version, component, and context information for the error.</span></span> <span data-ttu-id="7736e-117">プロバイダーが適切な情報を使用して**MAPIERROR**構造を提供できない場合は、 _lppMAPIError_パラメーターを NULL に設定できます。</span><span class="sxs-lookup"><span data-stu-id="7736e-117">The  _lppMAPIError_ parameter can be set to NULL if the provider cannot supply a **MAPIERROR** structure with appropriate information.</span></span> 
+> <span data-ttu-id="0e840-116">読み上げエラーのバージョン、コンポーネント、およびコンテキスト情報を含む**MAPIERROR**構造体へのポインターへのポインター。</span><span class="sxs-lookup"><span data-stu-id="0e840-116">[out] A pointer to a pointer to a **MAPIERROR** structure that contains version, component, and context information for the error.</span></span> <span data-ttu-id="0e840-117">プロバイダーが適切な情報を使用して**MAPIERROR**構造を提供できない場合は、 _lppMAPIError_パラメーターを NULL に設定できます。</span><span class="sxs-lookup"><span data-stu-id="0e840-117">The  _lppMAPIError_ parameter can be set to NULL if the provider cannot supply a **MAPIERROR** structure with appropriate information.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="7736e-118">戻り値</span><span class="sxs-lookup"><span data-stu-id="7736e-118">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="0e840-118">戻り値</span><span class="sxs-lookup"><span data-stu-id="0e840-118">Return value</span></span>
 
-<span data-ttu-id="7736e-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="7736e-119">S_OK</span></span> 
+<span data-ttu-id="0e840-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="0e840-119">S_OK</span></span> 
   
-> <span data-ttu-id="7736e-120">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="7736e-120">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="0e840-120">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="0e840-120">The call succeeded and has returned the expected value or values.</span></span>
     
-<span data-ttu-id="7736e-121">MAPI_E_BAD_CHARWIDTH</span><span class="sxs-lookup"><span data-stu-id="7736e-121">MAPI_E_BAD_CHARWIDTH</span></span> 
+<span data-ttu-id="0e840-121">MAPI_E_BAD_CHARWIDTH</span><span class="sxs-lookup"><span data-stu-id="0e840-121">MAPI_E_BAD_CHARWIDTH</span></span> 
   
-> <span data-ttu-id="7736e-122">MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。</span><span class="sxs-lookup"><span data-stu-id="7736e-122">Either the MAPI_UNICODE flag was set and the implementation does not support Unicode, or MAPI_UNICODE was not set and the implementation supports only Unicode.</span></span>
+> <span data-ttu-id="0e840-122">MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。</span><span class="sxs-lookup"><span data-stu-id="0e840-122">Either the MAPI_UNICODE flag was set and the implementation does not support Unicode, or MAPI_UNICODE was not set and the implementation supports only Unicode.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="7736e-123">解説</span><span class="sxs-lookup"><span data-stu-id="7736e-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0e840-123">注釈</span><span class="sxs-lookup"><span data-stu-id="0e840-123">Remarks</span></span>
 
-<span data-ttu-id="7736e-124">サービスプロバイダーは、失敗した前のメソッド呼び出しに関する情報を提供する**IMAPIControl:: GetLastError**メソッドを実装します。</span><span class="sxs-lookup"><span data-stu-id="7736e-124">Service providers implement the **IMAPIControl::GetLastError** method to supply information about a prior method call that failed.</span></span> <span data-ttu-id="7736e-125">MAPI では、メッセージまたはダイアログボックスに**MAPIERROR**構造のデータを表示することにより、エラーに関する詳細情報をユーザーに提供できます。</span><span class="sxs-lookup"><span data-stu-id="7736e-125">MAPI can give users detailed information about the error by displaying the data from the **MAPIERROR** structure in a message or dialog box.</span></span> 
+<span data-ttu-id="0e840-124">サービスプロバイダーは、失敗した前のメソッド呼び出しに関する情報を提供する**IMAPIControl:: GetLastError**メソッドを実装します。</span><span class="sxs-lookup"><span data-stu-id="0e840-124">Service providers implement the **IMAPIControl::GetLastError** method to supply information about a prior method call that failed.</span></span> <span data-ttu-id="0e840-125">MAPI では、メッセージまたはダイアログボックスに**MAPIERROR**構造のデータを表示することにより、エラーに関する詳細情報をユーザーに提供できます。</span><span class="sxs-lookup"><span data-stu-id="0e840-125">MAPI can give users detailed information about the error by displaying the data from the **MAPIERROR** structure in a message or dialog box.</span></span> 
   
-## <a name="notes-to-implementers"></a><span data-ttu-id="7736e-126">実装に関するメモ</span><span class="sxs-lookup"><span data-stu-id="7736e-126">Notes to implementers</span></span>
+## <a name="notes-to-implementers"></a><span data-ttu-id="0e840-126">実装に関するメモ</span><span class="sxs-lookup"><span data-stu-id="0e840-126">Notes to implementers</span></span>
 
-<span data-ttu-id="7736e-127">すべてのエラーについて、 **MAPIERROR**構造体に情報を含める必要はありません。</span><span class="sxs-lookup"><span data-stu-id="7736e-127">You do not need to have information to include in the **MAPIERROR** structure for every error.</span></span> <span data-ttu-id="7736e-128">以前のエラーの原因を特定できない場合があります。</span><span class="sxs-lookup"><span data-stu-id="7736e-128">It may not be possible to determine what the previous error was.</span></span> <span data-ttu-id="7736e-129">情報がある場合は、 **MAPIERROR**構造体の S_OK および適切なデータを返します。</span><span class="sxs-lookup"><span data-stu-id="7736e-129">If you have information, return S_OK and the appropriate data in the **MAPIERROR** structure.</span></span> <span data-ttu-id="7736e-130">情報を使用できない場合は、 _lppMAPIError_パラメーターの S_OK および NULL へのポインターを返します。</span><span class="sxs-lookup"><span data-stu-id="7736e-130">If no information is available, return S_OK and a pointer to NULL for the  _lppMAPIError_ parameter.</span></span> 
+<span data-ttu-id="0e840-127">すべてのエラーについて、 **MAPIERROR**構造体に情報を含める必要はありません。</span><span class="sxs-lookup"><span data-stu-id="0e840-127">You do not need to have information to include in the **MAPIERROR** structure for every error.</span></span> <span data-ttu-id="0e840-128">以前のエラーの原因を特定できない場合があります。</span><span class="sxs-lookup"><span data-stu-id="0e840-128">It may not be possible to determine what the previous error was.</span></span> <span data-ttu-id="0e840-129">情報がある場合は、 **MAPIERROR**構造体の S_OK および適切なデータを返します。</span><span class="sxs-lookup"><span data-stu-id="0e840-129">If you have information, return S_OK and the appropriate data in the **MAPIERROR** structure.</span></span> <span data-ttu-id="0e840-130">情報を使用できない場合は、 _lppMAPIError_パラメーターの S_OK および NULL へのポインターを返します。</span><span class="sxs-lookup"><span data-stu-id="0e840-130">If no information is available, return S_OK and a pointer to NULL for the  _lppMAPIError_ parameter.</span></span> 
   
-<span data-ttu-id="7736e-131">**GetLastError**メソッドの詳細については、「 [MAPI 拡張エラー](mapi-extended-errors.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7736e-131">For more information about the **GetLastError** method, see [MAPI Extended Errors](mapi-extended-errors.md).</span></span>
+<span data-ttu-id="0e840-131">**GetLastError**メソッドの詳細については、「 [MAPI 拡張エラー](mapi-extended-errors.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0e840-131">For more information about the **GetLastError** method, see [MAPI Extended Errors](mapi-extended-errors.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="7736e-132">関連項目</span><span class="sxs-lookup"><span data-stu-id="7736e-132">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0e840-132">関連項目</span><span class="sxs-lookup"><span data-stu-id="0e840-132">See also</span></span>
 
 
 
-[<span data-ttu-id="7736e-133">MAPIERROR</span><span class="sxs-lookup"><span data-stu-id="7736e-133">MAPIERROR</span></span>](mapierror.md)
+[<span data-ttu-id="0e840-133">MAPIERROR</span><span class="sxs-lookup"><span data-stu-id="0e840-133">MAPIERROR</span></span>](mapierror.md)
   
-[<span data-ttu-id="7736e-134">MAPIFreeBuffer</span><span class="sxs-lookup"><span data-stu-id="7736e-134">MAPIFreeBuffer</span></span>](mapifreebuffer.md)
+[<span data-ttu-id="0e840-134">MAPIFreeBuffer</span><span class="sxs-lookup"><span data-stu-id="0e840-134">MAPIFreeBuffer</span></span>](mapifreebuffer.md)
   
-[<span data-ttu-id="7736e-135">IMAPIControl : IUnknown</span><span class="sxs-lookup"><span data-stu-id="7736e-135">IMAPIControl : IUnknown</span></span>](imapicontroliunknown.md)
+[<span data-ttu-id="0e840-135">IMAPIControl : IUnknown</span><span class="sxs-lookup"><span data-stu-id="0e840-135">IMAPIControl : IUnknown</span></span>](imapicontroliunknown.md)
 

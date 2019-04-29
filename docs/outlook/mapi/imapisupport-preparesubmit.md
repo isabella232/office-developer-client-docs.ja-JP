@@ -13,19 +13,19 @@ api_type:
 ms.assetid: 467242e3-96c9-4280-9cbc-9ecfe3f279cf
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 738eb346ec5388cbd94b32598236ef2ca05740f3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326321"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425737"
 ---
-# <a name="imapisupportpreparesubmit"></a><span data-ttu-id="47873-103">IMAPISupport::PrepareSubmit</span><span class="sxs-lookup"><span data-stu-id="47873-103">IMAPISupport::PrepareSubmit</span></span>
+# <a name="imapisupportpreparesubmit"></a><span data-ttu-id="a66ed-103">IMAPISupport::PrepareSubmit</span><span class="sxs-lookup"><span data-stu-id="a66ed-103">IMAPISupport::PrepareSubmit</span></span>
 
   
   
-<span data-ttu-id="47873-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="47873-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="a66ed-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="a66ed-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="47873-105">MAPI スプーラーに送信するためのメッセージを準備します。</span><span class="sxs-lookup"><span data-stu-id="47873-105">Prepares a message for submission to the MAPI spooler.</span></span>
+<span data-ttu-id="a66ed-105">MAPI スプーラーに送信するためのメッセージを準備します。</span><span class="sxs-lookup"><span data-stu-id="a66ed-105">Prepares a message for submission to the MAPI spooler.</span></span>
   
 ```cpp
 HRESULT PrepareSubmit(
@@ -34,45 +34,45 @@ ULONG FAR * lpulFlags
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="47873-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="47873-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="a66ed-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="a66ed-106">Parameters</span></span>
 
- <span data-ttu-id="47873-107">_lpmessage_</span><span class="sxs-lookup"><span data-stu-id="47873-107">_lpMessage_</span></span>
+ <span data-ttu-id="a66ed-107">_lpmessage_</span><span class="sxs-lookup"><span data-stu-id="a66ed-107">_lpMessage_</span></span>
   
-> <span data-ttu-id="47873-108">順番準備するメッセージへのポインター。</span><span class="sxs-lookup"><span data-stu-id="47873-108">[in] A pointer to the message to prepare.</span></span>
+> <span data-ttu-id="a66ed-108">順番準備するメッセージへのポインター。</span><span class="sxs-lookup"><span data-stu-id="a66ed-108">[in] A pointer to the message to prepare.</span></span>
     
- <span data-ttu-id="47873-109">_lアウトフラグ_</span><span class="sxs-lookup"><span data-stu-id="47873-109">_lpulFlags_</span></span>
+ <span data-ttu-id="a66ed-109">_lアウトフラグ_</span><span class="sxs-lookup"><span data-stu-id="a66ed-109">_lpulFlags_</span></span>
   
-> <span data-ttu-id="47873-110">[入力]入力では、 _lな flags_パラメーターは予約されており、0である必要があります。</span><span class="sxs-lookup"><span data-stu-id="47873-110">[in, out] On input, the  _lpulFlags_ parameter is reserved and must be zero.</span></span> <span data-ttu-id="47873-111">出力時には、 _lアウトフラグ_は NULL である必要があります。</span><span class="sxs-lookup"><span data-stu-id="47873-111">On output,  _lpulFlags_ must be NULL.</span></span> 
+> <span data-ttu-id="a66ed-110">[入力]入力では、 _lな flags_パラメーターは予約されており、0である必要があります。</span><span class="sxs-lookup"><span data-stu-id="a66ed-110">[in, out] On input, the  _lpulFlags_ parameter is reserved and must be zero.</span></span> <span data-ttu-id="a66ed-111">出力時には、 _lアウトフラグ_は NULL である必要があります。</span><span class="sxs-lookup"><span data-stu-id="a66ed-111">On output,  _lpulFlags_ must be NULL.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="47873-112">戻り値</span><span class="sxs-lookup"><span data-stu-id="47873-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="a66ed-112">戻り値</span><span class="sxs-lookup"><span data-stu-id="a66ed-112">Return value</span></span>
 
-<span data-ttu-id="47873-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="47873-113">S_OK</span></span> 
+<span data-ttu-id="a66ed-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="a66ed-113">S_OK</span></span> 
   
-> <span data-ttu-id="47873-114">メッセージが正常に準備されました。</span><span class="sxs-lookup"><span data-stu-id="47873-114">The message was successfully prepared.</span></span>
+> <span data-ttu-id="a66ed-114">メッセージが正常に準備されました。</span><span class="sxs-lookup"><span data-stu-id="a66ed-114">The message was successfully prepared.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="47873-115">解説</span><span class="sxs-lookup"><span data-stu-id="47873-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a66ed-115">注釈</span><span class="sxs-lookup"><span data-stu-id="a66ed-115">Remarks</span></span>
 
-<span data-ttu-id="47873-116">**imapisupport::P reparemethod**は、メッセージストアプロバイダーサポートオブジェクトに実装されています。</span><span class="sxs-lookup"><span data-stu-id="47873-116">The **IMAPISupport::PrepareSubmit** method is implemented for message store provider support objects.</span></span> <span data-ttu-id="47873-117">メッセージストアプロバイダーは、MAPI スプーラーに送信するためのメッセージを準備するために、 [IMessage:: submitmessage](imessage-submitmessage.md)メソッドの実装で**PrepareSubmit**を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="47873-117">Message store providers call **PrepareSubmit** in their implementation of the [IMessage::SubmitMessage](imessage-submitmessage.md) method to prepare a message for submission to the MAPI spooler.</span></span> 
+<span data-ttu-id="a66ed-116">**imapisupport::P reparemethod**は、メッセージストアプロバイダーサポートオブジェクトに実装されています。</span><span class="sxs-lookup"><span data-stu-id="a66ed-116">The **IMAPISupport::PrepareSubmit** method is implemented for message store provider support objects.</span></span> <span data-ttu-id="a66ed-117">メッセージストアプロバイダーは、MAPI スプーラーに送信するためのメッセージを準備するために、 [IMessage:: submitmessage](imessage-submitmessage.md)メソッドの実装で**PrepareSubmit**を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="a66ed-117">Message store providers call **PrepareSubmit** in their implementation of the [IMessage::SubmitMessage](imessage-submitmessage.md) method to prepare a message for submission to the MAPI spooler.</span></span> 
   
- <span data-ttu-id="47873-118">**PrepareSubmit**は、MSGFLAG_RESEND フラグが**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティに設定されているメッセージを処理するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="47873-118">**PrepareSubmit** is used to handle messages that have the MSGFLAG_RESEND flag set in their **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) property.</span></span> <span data-ttu-id="47873-119">MSGFLAG_RESEND は、最初の送信に失敗したときに再送信する要求を含むメッセージに対して設定されます。</span><span class="sxs-lookup"><span data-stu-id="47873-119">MSGFLAG_RESEND is set for messages that include a request to be resent when an initial transmission fails.</span></span> <span data-ttu-id="47873-120">**PrepareSubmit**は、受信者一覧の受信者がメッセージを正常に受信したかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="47873-120">**PrepareSubmit** determines which of the recipients in the recipient list successfully received the message and which did not.</span></span> 
+ <span data-ttu-id="a66ed-118">**PrepareSubmit**は、MSGFLAG_RESEND フラグが**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティに設定されているメッセージを処理するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="a66ed-118">**PrepareSubmit** is used to handle messages that have the MSGFLAG_RESEND flag set in their **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) property.</span></span> <span data-ttu-id="a66ed-119">MSGFLAG_RESEND は、最初の送信に失敗したときに再送信する要求を含むメッセージに対して設定されます。</span><span class="sxs-lookup"><span data-stu-id="a66ed-119">MSGFLAG_RESEND is set for messages that include a request to be resent when an initial transmission fails.</span></span> <span data-ttu-id="a66ed-120">**PrepareSubmit**は、受信者一覧の受信者がメッセージを正常に受信したかどうかを判断します。</span><span class="sxs-lookup"><span data-stu-id="a66ed-120">**PrepareSubmit** determines which of the recipients in the recipient list successfully received the message and which did not.</span></span> 
   
-<span data-ttu-id="47873-121">受信者リストにアクセスするため、 **PrepareSubmit**はメッセージの[IMessage:: getrecipient table](imessage-getrecipienttable.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="47873-121">To access the recipient list, **PrepareSubmit** calls the message's [IMessage::GetRecipientTable](imessage-getrecipienttable.md) method.</span></span> <span data-ttu-id="47873-122">受信者のデータを取得するために、 **PrepareSubmit**は受信者テーブルの[IMAPITable:: QueryRows](imapitable-queryrows.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="47873-122">To retrieve the recipient data, **PrepareSubmit** calls the recipient table's [IMAPITable::QueryRows](imapitable-queryrows.md) method.</span></span> <span data-ttu-id="47873-123">**PrepareSubmit**は、表の各行に対して**PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) プロパティをチェックし、次のいずれかの操作を行います。</span><span class="sxs-lookup"><span data-stu-id="47873-123">For each row in the table, **PrepareSubmit** checks the **PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) property and takes one of the following actions:</span></span>
+<span data-ttu-id="a66ed-121">受信者リストにアクセスするため、 **PrepareSubmit**はメッセージの[IMessage:: getrecipient table](imessage-getrecipienttable.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="a66ed-121">To access the recipient list, **PrepareSubmit** calls the message's [IMessage::GetRecipientTable](imessage-getrecipienttable.md) method.</span></span> <span data-ttu-id="a66ed-122">受信者のデータを取得するために、 **PrepareSubmit**は受信者テーブルの[IMAPITable:: QueryRows](imapitable-queryrows.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="a66ed-122">To retrieve the recipient data, **PrepareSubmit** calls the recipient table's [IMAPITable::QueryRows](imapitable-queryrows.md) method.</span></span> <span data-ttu-id="a66ed-123">**PrepareSubmit**は、表の各行に対して**PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) プロパティをチェックし、次のいずれかの操作を行います。</span><span class="sxs-lookup"><span data-stu-id="a66ed-123">For each row in the table, **PrepareSubmit** checks the **PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) property and takes one of the following actions:</span></span>
   
-- <span data-ttu-id="47873-124">MAPI_SUBMITTED フラグが設定されている場合、 **PrepareSubmit**はフラグをクリアし、 **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) プロパティを FALSE に設定します。</span><span class="sxs-lookup"><span data-stu-id="47873-124">If the MAPI_SUBMITTED flag is set, **PrepareSubmit** clears the flag and sets the **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) property to FALSE.</span></span>
+- <span data-ttu-id="a66ed-124">MAPI_SUBMITTED フラグが設定されている場合、 **PrepareSubmit**はフラグをクリアし、 **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) プロパティを FALSE に設定します。</span><span class="sxs-lookup"><span data-stu-id="a66ed-124">If the MAPI_SUBMITTED flag is set, **PrepareSubmit** clears the flag and sets the **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) property to FALSE.</span></span>
     
-- <span data-ttu-id="47873-125">MAPI_SUBMITTED フラグが設定されていない場合、 **PrepareSubmit**は**PR_RECIPIENT_TYPE**を MAPI_P1 に変更し、 **PR_RESPONSIBILITY**を TRUE に設定します。</span><span class="sxs-lookup"><span data-stu-id="47873-125">If the MAPI_SUBMITTED flag is not set, **PrepareSubmit** changes **PR_RECIPIENT_TYPE** to MAPI_P1 and sets **PR_RESPONSIBILITY** to TRUE.</span></span> 
+- <span data-ttu-id="a66ed-125">MAPI_SUBMITTED フラグが設定されていない場合、 **PrepareSubmit**は**PR_RECIPIENT_TYPE**を MAPI_P1 に変更し、 **PR_RESPONSIBILITY**を TRUE に設定します。</span><span class="sxs-lookup"><span data-stu-id="a66ed-125">If the MAPI_SUBMITTED flag is not set, **PrepareSubmit** changes **PR_RECIPIENT_TYPE** to MAPI_P1 and sets **PR_RESPONSIBILITY** to TRUE.</span></span> 
     
-## <a name="notes-to-callers"></a><span data-ttu-id="47873-126">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="47873-126">Notes to callers</span></span>
+## <a name="notes-to-callers"></a><span data-ttu-id="a66ed-126">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="a66ed-126">Notes to callers</span></span>
 
-<span data-ttu-id="47873-127">**PrepareSubmit**を呼び出す前に、 [imapisupport:: SpoolerNotify](imapisupport-spoolernotify.md)メソッドを呼び出し、 _ulflags_パラメーターに NOTIFY_READYTOSEND フラグを設定していることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="47873-127">Before you call **PrepareSubmit**, be sure you have called the [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md) method and set the NOTIFY_READYTOSEND flag in the  _ulFlags_ parameter.</span></span> <span data-ttu-id="47873-128">**SpoolerNotify**呼び出しは、 **PrepareSubmit**を呼び出す前に、セッションごとに1回実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="47873-128">The **SpoolerNotify** call must be made once per session before the call to **PrepareSubmit**.</span></span> <span data-ttu-id="47873-129">**SpoolerNotify**は、MAPI スプーラーを同期させ、必要なすべてのトランスポートプロバイダーがログオンしており、そのアドレスの種類が登録されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="47873-129">**SpoolerNotify** synchronizes the MAPI spooler and ensures that all needed transport providers are logged on and their address types are registered.</span></span> 
+<span data-ttu-id="a66ed-127">**PrepareSubmit**を呼び出す前に、 [imapisupport:: SpoolerNotify](imapisupport-spoolernotify.md)メソッドを呼び出し、 _ulflags_パラメーターに NOTIFY_READYTOSEND フラグを設定していることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="a66ed-127">Before you call **PrepareSubmit**, be sure you have called the [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md) method and set the NOTIFY_READYTOSEND flag in the  _ulFlags_ parameter.</span></span> <span data-ttu-id="a66ed-128">**SpoolerNotify**呼び出しは、 **PrepareSubmit**を呼び出す前に、セッションごとに1回実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a66ed-128">The **SpoolerNotify** call must be made once per session before the call to **PrepareSubmit**.</span></span> <span data-ttu-id="a66ed-129">**SpoolerNotify**は、MAPI スプーラーを同期させ、必要なすべてのトランスポートプロバイダーがログオンしており、そのアドレスの種類が登録されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="a66ed-129">**SpoolerNotify** synchronizes the MAPI spooler and ensures that all needed transport providers are logged on and their address types are registered.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="47873-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="47873-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a66ed-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="a66ed-130">See also</span></span>
 
 
 
-[<span data-ttu-id="47873-131">IMAPIFolder::GetMessageStatus</span><span class="sxs-lookup"><span data-stu-id="47873-131">IMAPIFolder::GetMessageStatus</span></span>](imapifolder-getmessagestatus.md)
+[<span data-ttu-id="a66ed-131">IMAPIFolder::GetMessageStatus</span><span class="sxs-lookup"><span data-stu-id="a66ed-131">IMAPIFolder::GetMessageStatus</span></span>](imapifolder-getmessagestatus.md)
   
-[<span data-ttu-id="47873-132">IMessage::SubmitMessage</span><span class="sxs-lookup"><span data-stu-id="47873-132">IMessage::SubmitMessage</span></span>](imessage-submitmessage.md)
+[<span data-ttu-id="a66ed-132">IMessage::SubmitMessage</span><span class="sxs-lookup"><span data-stu-id="a66ed-132">IMessage::SubmitMessage</span></span>](imessage-submitmessage.md)
   
-[<span data-ttu-id="47873-133">IMAPISupport: IUnknown</span><span class="sxs-lookup"><span data-stu-id="47873-133">IMAPISupport : IUnknown</span></span>](imapisupportiunknown.md)
+[<span data-ttu-id="a66ed-133">IMAPISupport: IUnknown</span><span class="sxs-lookup"><span data-stu-id="a66ed-133">IMAPISupport : IUnknown</span></span>](imapisupportiunknown.md)
 
