@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 8e1c8c8f-4ed0-0f53-f93f-3a264edc02bd
 description: 選択した図形の選択ハンドルの表示/非表示を切り替えます。
 ms.openlocfilehash: e46f19d77d1743fb7223b5f7d98f80a05d8f6b07
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357240"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428656"
 ---
 # <a name="noobjhandles-cell-miscellaneous-section"></a>[NoObjHandles] セル ([Miscellaneous] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32357240"
 | TRUE  <br/> | 図形を選択するときに選択ハンドルが表示されません。  <br/> |
 | FALSE  <br/> | 図形を選択するときに選択ハンドルが表示されます。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [NoObjHandles] セルへの参照を取得するには、次の値を使用します。 
   

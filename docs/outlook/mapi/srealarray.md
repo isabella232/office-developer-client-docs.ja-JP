@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 95be07bf-5732-4775-9e0f-fec47e99d9b7
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8439d6609ebece75699a1150a9d0c1a41277fd52
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344381"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429874"
 ---
 # <a name="srealarray"></a>SRealArray
 
@@ -40,7 +40,7 @@ typedef struct _SRealArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **cvalues**
   
@@ -50,7 +50,7 @@ typedef struct _SRealArray
   
 > 浮動小数点型の値の配列へのポインターを指定します。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 PT_MV_R4 プロパティの種類の詳細については、「[プロパティの種類](property-types.md)」を参照してください。
   

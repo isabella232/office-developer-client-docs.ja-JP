@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: ef62f63f-b2ce-4d12-a294-93dbdc9a869d
 description: 作業中のテーマのグラデーション設定に格納されている指定された濃淡または網掛けの値で引数として渡された色 (数値) が変更されている場合、ドキュメントのカラーパレット内のインデックスを表す RGB 値または整数を返します。
 ms.openlocfilehash: 014dc04c5114e296cd2226f3cf04dfb729817578
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332264"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429139"
 ---
 # <a name="themecbv-function"></a>THEMECBV 関数
 
@@ -38,7 +38,7 @@ ms.locfileid: "32332264"
 
  **数値**
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 > [!NOTE]
 > 図形に割り当てられているクイックスタイルにグラデーションが設定されていない場合、THEMECBV 関数は引数として渡された色には何も実行しません。 

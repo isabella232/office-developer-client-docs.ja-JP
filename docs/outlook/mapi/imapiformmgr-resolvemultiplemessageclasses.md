@@ -13,11 +13,11 @@ api_type:
 ms.assetid: d3cc6658-e46d-42dd-b1ac-65c88cfef8ca
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 515061c6c208008c4752e5ff2f23933a4c259c00
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321869"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33428019"
 ---
 # <a name="imapiformmgrresolvemultiplemessageclasses"></a>IMAPIFormMgr::ResolveMultipleMessageClasses
 
@@ -68,7 +68,7 @@ S_OK
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 フォームビューアーは、 **imapiformmgr:: ResolveMultipleMessageClasses**メソッドを呼び出して、フォームコンテナー内のフォームに対するメッセージクラスのグループを解決します。 _ppfrminfoarray_で返されるフォーム情報オブジェクトの配列は、各フォームのプロパティへのアクセスをさらに提供します。 
   

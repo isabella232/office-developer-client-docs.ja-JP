@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 0c2f6e06-b772-2006-ec7b-8695d097f146
 description: 指定した文字数に基づいて、文字列内の左端の文字または文字を返します。
 ms.openlocfilehash: aa4141cfc53bd41a6d58e8bc666b18a06fc80245
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309465"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427522"
 ---
 # <a name="left-function-visioshapesheet"></a>LEFT 関数 (VisioShapeSheet)
 
@@ -29,7 +29,7 @@ LEFT (* * *text* * *, [, * * *num_chars_opt* * *])
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _text_ <br/> |必須  <br/> |**String** <br/> |抽出する文字を含む文字列を指定します。  <br/> |
-| _num_chars_opt_ <br/> |省略可能  <br/> |**数値型 (Numeric)** <br/> |抽出する文字数を指定します。  <br/> |
+| _num_chars_opt_ <br/> |省略可能  <br/> |**数値** <br/> |抽出する文字数を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
