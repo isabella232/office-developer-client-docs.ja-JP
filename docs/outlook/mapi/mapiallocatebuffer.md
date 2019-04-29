@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: f1fc7fc5-c71f-44f7-930a-571773eb6809
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 589ad42199e6f2ec1039499dfd9beda044ccc3dd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357310"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425695"
 ---
 # <a name="mapiallocatebuffer"></a>MAPIAllocateBuffer
 
@@ -56,7 +56,7 @@ S_OK
   
 > 呼び出しが成功し、要求されたメモリバッファーが返されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **MAPIAllocateBuffer**呼び出し処理の間、呼び出し側の実装はオペレーティングシステムからメモリブロックを取得します。 メモリバッファーは、偶数番号のバイトアドレスに割り当てられます。 長い整数アクセスがより効率的になるプラットフォームでは、オペレーティングシステムは、バイト数が4の倍数であるアドレスにバッファーを割り当てます。 
   

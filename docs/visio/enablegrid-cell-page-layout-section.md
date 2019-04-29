@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: bfea4ef4-1b30-eb22-215d-3b9b73098da9
 description: '[レイアウトの構成] ダイアログボックスでレイアウトを構成するときに、表示されていない内部のページグリッドに基づいて、アプリケーションで図形をレイアウトするかどうかを指定します。 ([デザイン] タブの [レイアウト] で [ページの再レイアウト] をクリックし、[その他のレイアウトオプション] をクリックします)。'
 ms.openlocfilehash: 11299ca7c9b0ea050542baf97e2cab3a27fa52ba
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345557"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424442"
 ---
 # <a name="enablegrid-cell-page-layout-section"></a>[EnableGrid] セル ([Page Layout] セクション)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32345557"
 |TRUE  <br/> |内部ページ グリッドを使用します。  <br/> |
 |FALSE  <br/> |内部ページ グリッドを使用しません。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このページ グリッドは、[**間隔と図形サイズの設定**] ダイアログ ボックスの [**図形の間隔**] と [**図形の平均サイズ**] の値を使用して作成します (このダイアログ ボックスを開くには、[**デザイン**] タブで [**ページ設定**] 矢印をクリックし、[**レイアウトと経路**]、[**間隔**] の順にクリックします)。 
   

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: dfb7ce1b-8e2f-4360-a7d3-876ff5163c34
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 5e74c3fe337ef60ab2e6ff9811270c7b605dd676
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316493"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427067"
 ---
 # <a name="pidtagabsearchpath-canonical-property"></a>PidTagAbSearchPath 標準プロパティ
 
@@ -34,7 +34,7 @@ ms.locfileid: "32316493"
 |データの種類 :   <br/> |PT_MV_BINARY  <br/> |
 |エリア:  <br/> |アドレス帳  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティを使用しません。 MAPI で使用するために予約されています。
   

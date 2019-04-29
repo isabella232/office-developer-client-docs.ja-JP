@@ -7,13 +7,13 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 01ac66b3-1868-6b1e-7026-ab61380c8cc5
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 331a56ae26cfe50a1889334dd30f1f83e90a5ae0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359487"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426493"
 ---
 # <a name="pidtagsearchownerid-canonical-property"></a>PidTagSearchOwnerId 標準プロパティ
 

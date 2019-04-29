@@ -13,11 +13,11 @@ api_type:
 ms.assetid: c630ecaf-b19c-4991-9779-e13cc492c755
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 84e87f8a8d3c419afc4b86e200aeaba57e6a85f1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316661"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427494"
 ---
 # <a name="imapisupportmakeinvalid"></a>IMAPISupport::MakeInvalid
 
@@ -60,7 +60,7 @@ S_OK
   
 > オブジェクトが正常に使用できないとマークされました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **imapisupport:: makeinvalid**メソッドは、すべてのサポートオブジェクトに実装されています。 無効化するオブジェクトは、 **iunknown**インターフェイスまたは**iunknown**から派生したインターフェイスから派生している必要があります。
   

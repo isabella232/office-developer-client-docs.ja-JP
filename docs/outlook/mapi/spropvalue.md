@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: faf795a2-84db-432d-a05f-082f25a5cab5
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: c7f4e8835831af6277cef134bf3961e9928cba33
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326587"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433529"
 ---
 # <a name="spropvalue"></a>SPropValue
 
@@ -42,7 +42,7 @@ typedef struct _SPropValue
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>メンバー
 
  **ulPropTag**
   
@@ -59,12 +59,12 @@ typedef struct _SPropValue
 |**プロパティの種類**|**値**|**値のデータ型**|
 |:-----|:-----|:-----|
 |PT_I2 または PT_SHORT  <br/> |**i** <br/> |short int  <br/> |
-|PT_I4 または PT_LONG (署名済み)  <br/> |**l** <br/> |l  <br/> |
+|PT_I4 または PT_LONG (署名済み)  <br/> |**l** <br/> |LONG  <br/> |
 |PT_I4 または PT_LONG (署名なし)  <br/> |**ul** <br/> |ULONG  <br/> |
 |PT_R4 または PT_FLOAT  <br/> |**flt** <br/> |浮動小数点数  <br/> |
 |PT_R8 または PT_DOUBLE  <br/> |**click** <br/> |double  <br/> |
 |PT_BOOLEAN  <br/> |**b** <br/> |符号なし short int  <br/> |
-|PT_CURRENCY  <br/> |**.cur** <br/> |[単位](currency.md) <br/> |
+|PT_CURRENCY  <br/> |**.cur** <br/> |[CURRENCY](currency.md) <br/> |
 |PT_APPTIME  <br/> |**下部** <br/> |double  <br/> |
 |PT_SYSTIME  <br/> |**cm** <br/> |[FILETIME](filetime.md) <br/> |
 |PT_STRING8  <br/> |**lpszA** <br/> |LPSTR  <br/> |
@@ -85,10 +85,10 @@ typedef struct _SPropValue
 |PT_MV_CLSID  <br/> |**MVguid** <br/> |[SGuidArray](sguidarray.md) <br/> |
 |PT_MV_I8  <br/> |**MVli** <br/> |[SLargeIntegerArray](slargeintegerarray.md) <br/> |
 |PT_ERROR  <br/> |**err** <br/> |[SCODE](scode.md) <br/> |
-|PT_NULL または PT_OBJECT  <br/> |**x** <br/> |l  <br/> |
+|PT_NULL または PT_OBJECT  <br/> |**x** <br/> |LONG  <br/> |
 |PT_PTR  <br/> |**lpv** <br/> |VOID\*  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 **ulPropTag**メンバーは、次の2つの部分で構成されます。 
   

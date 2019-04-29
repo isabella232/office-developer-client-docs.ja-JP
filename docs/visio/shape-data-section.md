@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: 2e113791-891f-6c2a-7981-a6a9a115622a
 description: 各図形データ項目に対して 1 つの行と、図形とデータを関連付けるセルを格納します。
 ms.openlocfilehash: b3d3924d3087789500bf084da4c795c01fc8e36f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32325845"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426829"
 ---
 # <a name="shape-data-section"></a>[Shape Data] セクション
 
 各図形データ項目に対して 1 つの行と、図形とデータを関連付けるセルを格納します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 図形データは、[**図形データ**] ウィンドウまたは [Shape Data] セクションのセルを使用して定義できます。 
   

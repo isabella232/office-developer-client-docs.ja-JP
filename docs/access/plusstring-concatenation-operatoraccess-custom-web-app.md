@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 24fc83e6-5860-4890-a222-f322fc30a5f9
 description: プラス記号 (+) は、文字列連結を行う文字列連結演算子です。その他のすべての文字列操作は、Substring のような文字列関数を使用して処理されます。
 ms.openlocfilehash: cb684e1484136f84934feed003f205e37512ffd7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308044"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424652"
 ---
 # <a name="-string-concatenation-operator-access-custom-web-app"></a>+ (文字列連結演算子) (Access カスタム web アプリ)
 

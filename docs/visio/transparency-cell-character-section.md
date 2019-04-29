@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: ab835a1a-9e90-126e-279f-463882c48e93
 description: 図形のテキストの色に適用される透過性レベルを指定します。
 ms.openlocfilehash: 8619ec25372ae163fff1759aca36ff6693820e39
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280984"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427837"
 ---
 # <a name="transparency-cell-character-section"></a>[Transparency] セル ([Character] セクション)
 
@@ -24,7 +24,7 @@ ms.locfileid: "32280984"
 |:-----|:-----|
 |0 ～ 100  <br/> |透過性をパーセントで表します。既定値は 0% (完全に不透明) です。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 値は、最も近い 0.5% 単位の値に丸められます。値 "100%" は完全な透明を表します。テキストが完全に透明な図形は、図面ページではテキストがない図形と同じように表示されますが、ページ上の他のオブジェクトに対しては、透過性が 0% の場合と同様な状態で相互に影響し合います。
   

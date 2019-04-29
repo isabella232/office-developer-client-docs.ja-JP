@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 17c5e44e-ae56-8de7-3579-90171d996411
 description: 空き時間情報 API を使用すると、指定したユーザーアカウントに対して、指定した時間範囲内に、メールプロバイダーが空き時間情報の状態情報を提供できます。
 ms.openlocfilehash: 1bcd191b57238771ede6f035216fe3997e82e03a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317011"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433760"
 ---
 # <a name="about-the-freebusy-api"></a>空き時間情報 API について
 
@@ -43,7 +43,7 @@ ms.locfileid: "32317011"
     
    `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\14.0\Outlook\SchedulingInformation\FreeBusySupport`
     
-   |名前 |型 |値 |
+   |名前 |種類 |値 |
    |:-----|:-----|:-----|
    |SMTP  |REG_SZ  |{IFreeBusySupport の各実装の CLSID  |
    

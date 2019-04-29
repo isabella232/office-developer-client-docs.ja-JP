@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 9fd9ca47-abf1-48dd-8668-dfee27161793
 description: InfoPath 2003 互換オブジェクト モデルを使用する InfoPath フォーム テンプレートの作業を行う際に、フォームのセカンダリ データ ソースにアクセスし、格納されているデータを操作するためのコードを書くことができます。
 ms.openlocfilehash: 569f029b412328f4d49e3079eaf207dc1556fc4b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303697"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431681"
 ---
 # <a name="access-external-data-sources-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用して外部データ ソースにアクセスする
 
@@ -33,7 +33,7 @@ InfoPath オブジェクト モデルは、フォームによって使用され�
 
 [DataObjectsCollection](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataObjectsCollection.aspx) インターフェイスは以下のプロパティとメソッドを提供します。フォームの開発者は、これらを使用して、フォームが格納する [DataSourceObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataSourceObject.aspx) インスタンスを管理することができます。 
   
-|**[名前]**|**[説明]**|
+|**名前**|**説明**|
 |:-----|:-----|
 |[Count](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataObjects.Count.aspx) プロパティ  <br/> |コレクションに含まれる **DataSourceObject** インスタンスの数を返します。  <br/> |
 |[GetEnumerator](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataObjects.GetEnumerator.aspx) メソッド  <br/> |コレクションの反復処理に使用できる **IEnumerator** を返します。  <br/> |
@@ -43,7 +43,7 @@ InfoPath オブジェクト モデルは、フォームによって使用され�
 
 [DataSourceObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataSourceObject.aspx) インターフェイスは、以下のメソッドとプロパティを提供します。フォームの開発者は、これらを使用して、InfoPath セカンダリ データ ソースを操作することができます。 
   
-|**[名前]**|**[説明]**|
+|**名前**|**説明**|
 |:-----|:-----|
 |[Query](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataObject.Query.aspx) メソッド  <br/> |データ アダプター上でクエリを実行し、返されたデータを、 **DataSourceObject** に関連付けられた XML Document Object Model (DOM) に XML として挿入します。  <br/> |
 |[DOM](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataObject.DOM.aspx) プロパティ  <br/> |**DataSourceObject** を使用してデータの格納と操作に使用される XML DOM への参照を返します。  <br/> |
@@ -54,7 +54,7 @@ InfoPath オブジェクト モデルは、フォームによって使用され�
 
 データ アダプターにアクセスするためのインターフェイスは、さまざまなプロパティとメソッドを提供し、これらは外部データ ソースへの接続を通じてデータを取得および送信します。[DataSourceObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataSourceObject.aspx) オブジェクトに関連付けられるデータ アダプターは、外部データ接続の種類に依存します。InfoPath は、データ アダプターにアクセスするために以下のインターフェイスを実装します。 
   
-|**[名前]**|**[説明]**|
+|**名前**|**説明**|
 |:-----|:-----|
 |[ADOAdapterObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ADOAdapterObject.aspx) インターフェイス  <br/> |ADO/OLEDB データ ソースに接続します。Microsoft Access および Microsoft SQL Server に限定されます。  <br/> |
 |[SharepointListAdapterObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SharepointListAdapterObject.aspx) インターフェイス  <br/> |SharePoint リストまたはドキュメント ライブラリに接続します。  <br/> |

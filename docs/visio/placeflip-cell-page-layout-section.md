@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: df014b98-cfd5-b6d3-4b8a-b0acb3b94412
 description: '[レイアウトの構成] ダイアログ ボックスを使用するときに、配置可能な図形をページ上で反転または回転する方法を指定します (このダイアログ ボックスを開くには、[デザイン] タブの [レイアウト] グループで、[ページの再レイアウト] をクリックして、[その他のレイアウト オプション] をクリックします)。'
 ms.openlocfilehash: d1c31654782012b3536d35f3a12a923c2cc7a8f3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346873"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434299"
 ---
 # <a name="placeflip-cell-page-layout-section"></a>[PlaceFlip] セル ([Page Layout] セクション)
 
@@ -28,7 +28,7 @@ ms.locfileid: "32346873"
 |&amp;H4  <br/> |90°単位で回転します。  <br/> |**visLOFlipRotate** <br/> |
 |&amp;H8  <br/> |反転しません。  <br/> |**visLOFlipNone** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [PlaceFlip] セルの値を使用すると、配置可能な図形の向きを、接続先となっている隣接する配置可能な図形に合わせることができます。通常は、静的な接着を使用する図面をレイアウトする場合に使用されます。
   

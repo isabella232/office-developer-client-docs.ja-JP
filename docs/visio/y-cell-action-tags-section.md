@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: b213fc46-7f80-99fd-60ba-8ddf3d0f6ee3
 description: 図形のローカル座標で、アクションタグボタンが配置される位置の y 座標です。
 ms.openlocfilehash: 02797a849a262cb506f4617aadaccedabccdab77
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341323"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33430225"
 ---
 # <a name="y-cell-action-tags-section"></a>[Y] セル ([Action Tags] セクション)
 
@@ -23,7 +23,7 @@ ms.locfileid: "32341323"
 > [!NOTE]
 > Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [X] セルと [Y] セルは、図形のローカル座標内の 1 つの点を定義し、[X Justify] セルと [Y Justify] セルは、その点からのアクション タグ ボタンの相対位置を定義します。 
   

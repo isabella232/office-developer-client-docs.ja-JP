@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6cef620b-e3b7-47b9-9727-8e609465c268
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: f66d0f06112d95cb5adb2a9e7419c1d20f71bfc2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338669"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429538"
 ---
 # <a name="pidtagphysicalrenditionattributes-canonical-property"></a>PidTagPhysicalRenditionAttributes 標準プロパティ
 

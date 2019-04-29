@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: a409c49b-b390-021e-2ec1-7a5932a0c8de
 description: アカウントの既定の配信フォルダーのエントリ ID を表します。
 ms.openlocfilehash: 1bac4890791edfe661599d383e2cb048bf4c42fb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327700"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427151"
 ---
 # <a name="propacctdeliveryfolder"></a>PROP_ACCT_DELIVERY_FOLDER
 
@@ -29,7 +29,7 @@ ms.locfileid: "32327700"
 |プロパティタグ:  <br/> |0x00190102  <br/> |
 |接続  <br/> |読み取り/書き込み  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 [IOlkAccount:: getprop](iolkaccount-getprop.md)または[IOlkAccount:: setprop](iolkaccount-setprop.md)を使用して、このプロパティを取得または設定します。
   

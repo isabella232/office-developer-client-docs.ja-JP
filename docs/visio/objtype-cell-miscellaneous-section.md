@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 3afee07b-e91a-a91c-fba2-0e3251dd6385
 description: '[レイアウトの構成] ダイアログ ボックスを使用して図形をレイアウトするときに、図面上のオブジェクトが配置可能かどうか、または迂回可能かどうかを指定します。'
 ms.openlocfilehash: 7a607fdb53ad569e84976b6f9911fbd89f7f2628
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32361013"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425730"
 ---
 # <a name="objtype-cell-miscellaneous-section"></a>[ObjType] セル ([Miscellaneous] セクション)
 
@@ -28,7 +28,7 @@ ms.locfileid: "32361013"
 |&amp;H4  <br/> |図形は、配置も迂回もできません。  <br/> |**visLOFlagsDont** <br/> |
 |&amp;H8  <br/> |グループには、配置可能/迂回可能な図形が含まれます。  <br/> |**visLOFlagsPNRGroup** <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 既定では、図形の [ObjType] セルは "No Formula" に設定されます。これは 0 と評価され、図形が配置可能かどうかはコンテキストに応じて決定されます。たとえば、単純な四角形を描画すると、[ObjType] セルの値は 0 になります。[**コネクタ**] ツールを使用して、この四角形を別の図形に接続すると、四角形の [ObjType] セルの値は 1 (配置可能) になります。 
   

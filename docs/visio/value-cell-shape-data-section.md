@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: fd42a6ce-f621-4e9e-aba3-23a1b87a5651
 description: '[図形データの定義] ダイアログ ボックスに入力した図形データ項目の値が格納されています。'
 ms.openlocfilehash: 40d9e7fdd92ac8fa800a146ea45bbcd002ace87b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355973"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431905"
 ---
 # <a name="value-cell-shape-data-section"></a>[Value] セル ([Shape Data] セクション)
 
 [**図形データの定義**] ダイアログ ボックスに入力した図形データ項目の値が格納されています。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このセルに数式を入力しても、[**図形データの定義**] ダイアログ ボックスに入力した値によって上書きされます。式を保護するために GUARD 関数を使用している場合も同様に扱われます。 
   

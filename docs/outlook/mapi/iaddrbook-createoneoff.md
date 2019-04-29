@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: bcacfbdf-edff-4810-a985-e6d2c9271901
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 980ac82c6f7fcb5771a6013b3fb033b0bdfd05e0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349316"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427382"
 ---
 # <a name="iaddrbookcreateoneoff"></a>IAddrBook::CreateOneOff
 
@@ -78,7 +78,7 @@ S_OK
   
 > 1回限りのエントリ識別子が正常に作成されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 クライアントは**createoneoff**メソッドを呼び出して、1回限りの受信者 (現在読み込まれているアドレス帳プロバイダーのいずれかのコンテナーに属さない受信者) のエントリ id を作成します。 1回限りの受信者は、セッションの active アドレス帳プロバイダーの1つでサポートされている任意の種類のアドレスを持つことができます。 
   

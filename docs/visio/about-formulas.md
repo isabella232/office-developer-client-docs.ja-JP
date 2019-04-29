@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: ec0de3e1-21dc-c5d6-2c2a-d5fef80d89bd
 description: 図形のアクションを制御するには、必要な動作を定義する数式を記述します。セルの数式を編集すると、そのセルの値を変更し、結果的に特定の図形の動作を変更できます。たとえば、[Shape Transform] セクションの [Height] セルに含まれる数式を変更すると、その図形の高さを変更できます。
 ms.openlocfilehash: e8e1a2b77cc355e930af6f31f0b375dfba321e74
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344458"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426262"
 ---
 # <a name="about-formulas"></a>数式について
 

@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 0d66124b-a018-4db4-b55b-a0e5ed467e14
 description: '最終更新日: 2011 年 7 月 23 日'
 ms.openlocfilehash: 6b21d6746baf438af438787d966d9af886d4a74f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316045"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425471"
 ---
 # <a name="setting-a-table-position-with-a-filter"></a>フィルターによるテーブルの位置設定
 
