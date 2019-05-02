@@ -1,5 +1,5 @@
 ---
-title: DBEngine.CompactDatabase メソッド (DAO)
+title: DBEngine.CompactDatabaseメソッド（DAO）
 TOCTitle: CompactDatabase Method
 ms:assetid: 03f3a156-005a-4b71-81b0-598f326f7d42
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844821(v=office.15)
@@ -12,26 +12,26 @@ f1_categories:
 - Office.Version=v15
 localization_priority: Priority
 ms.openlocfilehash: b50cb0453df1fa357fbd0b089af2e74fdd4b4c1e
-ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
-ms.translationtype: Auto
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28714060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32294338"
 ---
-# <a name="dbenginecompactdatabase-method-dao"></a>DBEngine.CompactDatabase メソッド (DAO)
+# <a name="dbenginecompactdatabase-method-dao"></a>DBEngine.CompactDatabaseメソッド（DAO）
 
-**適用されます**Access 2013 |。アクセス 2016
+**適応対象**: Access 2013 | Access 2016
 
-コピーし、閉じたデータベースを最適化およびそのバージョン、照合の順序、および暗号化を変更するオプションを使用します。 します (Microsoft Access ワークスペースのみ)。
+閉じたデータベースをコピーして圧縮し、そのバージョン、照合順、および暗号化方式を変更することができます。 （Microsoft Access作業領域のみ）
 
 > [!NOTE]
-> 操作、更新、および SQL クエリを [SQL 更新ステートメント (CurrentDb.Execute [更新])] などの暗号化されたリンク テーブルを使用している場合は、暗号化キーを指定する必要があります。 また、リンク テーブルでは、暗号化キーの 19 文字制限があります。 このトピックの最後に**暗号化されたリンク テーブル**のセクションを参照してください。
+> リンクされている暗号化されたテーブルを、アクション、更新、SQL クエリ [SQL UPDATE文 (CurrentDb.Execute "UPDATE...") など] に使用する場合、暗号化キーを指定する必要があります。 リンクされているテーブルに対する暗号化キーは 19 文字に制限されています。 このトピックの終わりにある「**暗号化されたリンク テーブル**」のセクションをご覧ください。
 
 ## <a name="syntax"></a>構文
 
-*式*です。CompactDatabase (***SrcName***、 ***DstName***、 ***DstLocale***、***オプション***、***パスワード***)
+*式* .CompactDatabase（*** SrcName ***、*** DstName ***、***DstLocale***、***オプション***、***パスワード***）
 
-*式***DBEngine**オブジェクトを返すオブジェクト式を指定します。
+*式* **DBEngine**オブジェクトを返す式。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -45,7 +45,7 @@ ms.locfileid: "28714060"
 <thead>
 <tr class="header">
 <th><p>名前</p></th>
-<th><p>必須/オプション</p></th>
+<th><p>必須かどうか</p></th>
 <th><p>データ型</p></th>
 <th><p>説明</p></th>
 </tr>
@@ -54,44 +54,44 @@ ms.locfileid: "28714060"
 <tr class="odd">
 <td><p><em>SrcName</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>文字列型 (String)</strong></p></td>
-<td><p>既存の閉じているデータベースを識別します。 できます、完全なパスとファイル名の場合は、次のように&quot;C:\db1.mdb&quot;。 ファイル名に拡張子が含まれる場合、それも指定する必要があります。 ネットワークでサポートされている場合は、指定することもネットワーク パスでは、次のように&quot; \\server1\share1\dir1\db1.mdb&quot;</p></td>
+<td><p><strong>String</strong></p></td>
+<td><p>既存の閉じているデータベースを識別します。 フルパスとファイル名（&quot;C:\db1.mdb&quot;など）でもかまいません。 ファイル名に拡張子が付いている場合は、それを指定する必要があります。 ネットワークでサポートされている場合は、&quot; \\server1\share1\dir1\ db1.mdb&quot;のようにネットワークパスも指定できます。</p></td>
 </tr>
 <tr class="even">
 <td><p><em>DstName</em></p></td>
 <td><p>必須</p></td>
-<td><p><strong>文字列型 (String)</strong></p></td>
+<td><p><strong>String</strong></p></td>
 <td><p>作成中の最適化されたデータベースのファイル名およびそのパス。ネットワーク パスを指定することもできます。この引数を使用して、SrcName と同じデータベース ファイルを指定することはできません。</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>DstLocale</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
+<td><p><strong>Variant</strong></p></td>
 <td><p>「解説」に指定されているように、DstName の作成のための照合順序を指定する文字列式。</p>
 <ul>
 <li><p>この引数を省略すると、DstName のロケールは SrcName と同じになります。</p></li>
-<li><p>パスワード文字列を連結することによって、DstName のパスワードを作成することもできます (で始まる&quot;; pwd =&quot;) を次のように、DstLocale の引数の定数: dbLangSpanish &amp; &quot;; pwd = NewPassword&quot;。</p></li>
-<li><p>SrcName (既定値) と同じ DstLocale を使用していますが、新しいパスワードを指定する場合は、DstLocale のパスワード文字列を入力するだけで: &quot;; pwd = NewPassword&quot;</p></li>
+<li><p>次のように、パスワード文字列（&quot;;pwd=&quot;で始まる）をDstLocale引数の定数と連結して、DstNameのパスワードを作成することもできます。 たとえばこのような形です：dbLangSpanish &amp; &quot;;pwd=NewPassword&quot;.</p></li>
+<li><p>SrcNameと同じDstLocale（デフォルト値）を使用したいものの、新しいパスワードを指定したい場合は、DstLocaleのパスワード文字列を入力するだけです：&quot;;pwd=NewPassword&quot;</p></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p><em>Options</em></p></td>
+<td><p><em>オプション</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>バリアント型 (Variant)</strong></p></td>
+<td><p><strong>Variant</strong></p></td>
 <td><p>省略可能。解説に指定されているように、1 つ以上のオプションを示す定数または定数の組み合わせ。対応する定数を加算すると、オプションを組み合わせることができます。</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>password</em></p></td>
 <td><p>省略可能</p></td>
-<td><p><strong>Variant (バリアント型)</strong></p></td>
-<td><p>データベースが暗号化されている場合に、暗号化キーを含む文字列式です。 文字列&quot;; pwd =&quot;実際のパスワードを付ける必要があります。 パスワード設定を DstLocale に含めると、この設定は無視されます。</p><p><strong>注</strong>: これは非推奨のパラメーターでありでサポートされていません。ACCDB 形式です。 暗号化します。ACCDB ファイルを使用して、"pwd ="オプション文字列。 [!メモ] パスワードには、大文字、小文字、数字、記号を組み合わせた複雑なものを使用してください。 これらの文字を混在させたものになっていないパスワードは強固とはいえません。 たとえば、Y6dh!et5 は安全性の高いパスワードです。 House27 は推測されやすいパスワードです。 また、高い安全性を保ちながらも、書き留めておかなくても覚えておくことができるパスワードを使用してください。</p>
+<td><p><strong>Variant</strong></p></td>
+<td><p>暗号化キーを含む文字列式（データベースが暗号化されている場合） 文字列&quot;;pwd=&quot;は実際のパスワードの前に置かなければなりません。 DstLocaleにパスワード設定を含めると、この設定は無視されます。</p><p><strong>注</strong>：これは推奨されないパラメーターであり、.ACCDB形式ではサポートされていません。 .ACCDBファイルを暗号化するには、 "pwd ="オプション文字列を使用します。 [!メモ] パスワードには、大文字、小文字、数字、記号を組み合わせた複雑なものを使用してください。 これらの文字を混在させたものになっていないパスワードは強固とはいえません。 たとえば、Y6dh!et5 は安全性の高いパスワードです。 House27 は推測されやすいパスワードです。 強力なパスワードでありながら、書き留めておかなくても覚えておくことができるパスワードを使用してください。</p>
 </td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 次の定数のいずれかを DstLocale 引数に使用して、テキストの文字列比較を行う **CollatingOrder** プロパティを指定できます。
 
@@ -113,7 +113,7 @@ ms.locfileid: "28714060"
 </tr>
 <tr class="even">
 <td><p><strong>dbLangArabic</strong></p></td>
-<td><p>アラビア語</p></td>
+<td><p>Arabic</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbLangChineseSimplified</strong></p></td>
@@ -199,7 +199,7 @@ ms.locfileid: "28714060"
 引数 options に以下のいずれかの定数を使用すると、最適化する際に暗号化するか、または解読するかを指定できます。
 
 > [!NOTE]
-> 定数 dbEncrypt と dbDecrypt は非推奨しでサポートされていません。ACCDB ファイル形式です。
+> 定数dbEncryptおよびdbDecryptは非推奨であり、.ACCDBファイル形式ではサポートされていません。
 
 <table>
 <colgroup>
@@ -273,16 +273,16 @@ ms.locfileid: "28714060"
 
 指定できるバージョン定数は 1 つだけです。バージョン定数を省略すると、DstName には SrcName と同じバージョンが指定されます。DstName は、SrcName と同じかまたはそれ以降のバージョンのみに最適化できます。
 
-データベースのデータを変更するに従って、データベースのファイルは断片化され、必要以上のディスク容量を使用する可能性があります。 **CompactDatabase** メソッドを定期的に実行すると、データベースを最適化してファイルの断片化を解消できます。一般的に、最適化されたデータベースは小さく、実行速度も向上します。データベースをコピーして最適化する間に、照合順序、暗号化、およびデータ形式のバージョンを変更することもできます。
+データベースのデータを変更するに従って、データベースのファイルは断片化され、必要以上のディスク容量を使用する可能性があります。**CompactDatabase** メソッドを定期的に実行すると、データベースを最適化してファイルの断片化を解消できます。一般的に、最適化されたデータベースは小さく、実行速度も向上します。データベースをコピーして最適化する間に、照合順序、暗号化、およびデータ形式のバージョンを変更することもできます。
 
 データベースを最適化する前に SrcName を閉じる必要があります。マルチユーザー環境では、最適化中に他のユーザーは SrcName を開くことはできません。SrcName が閉じていないか、または排他的に使用できない場合は、エラーが発生します。
 
-**CompactDatabase** メソッドはデータベースのコピーを作成するので、元のデータベースとデータベースのコピーに対して十分なディスク容量が必要です。十分なディスク空き容量がない場合、最適化の操作は失敗します。複製する DstName のデータベースは、SrcName と同じディスクに保存する必要はありません。データベースの最適化が正常に終了した後に、元の SrcName ファイルを削除し、最適化された DstName ファイルを元のファイル名に変更できます。
+             **CompactDatabase** メソッドはデータベースのコピーを作成するので、元のデータベースとデータベースのコピーに対して十分なディスク容量が必要です。十分なディスク空き容量がない場合、最適化の操作は失敗します。複製する DstName のデータベースは、SrcName と同じディスクに保存する必要はありません。データベースの最適化が正常に終了した後に、元の SrcName ファイルを削除し、最適化された DstName ファイルを元のファイル名に変更できます。
 
-**CompactDatabase** メソッドは、SrcName に指定されているデータベースから DstName に指定されているデータベースにすべてのデータおよびセキュリティ アクセス許可の設定をコピーします。
+             **CompactDatabase** メソッドは、SrcName に指定されているデータベースから DstName に指定されているデータベースにすべてのデータおよびセキュリティ アクセス許可の設定をコピーします。
 
 > [!NOTE]
-> [!メモ] **CompactDatabase** メソッドは Microsoft Access オブジェクトを変換できないので、 **CompactDatabase** メソッドを使用してこのようなオブジェクトを含むデータベースを変換しないでください。
+> **CompactDatabase** メソッドは Microsoft Access オブジェクトを変換できないので、**CompactDatabase** メソッドを使用してこのようなオブジェクトを含むデータベースを変換しないでください。
 
 ## <a name="encrypted-linked-tables"></a>暗号化されたリンク テーブル
 
@@ -318,7 +318,7 @@ ms.locfileid: "28714060"
 
 <br/>
 
-次のコード例は、CompactDatabase を使用して、パスワード (暗号化キー) を使用し、最適化されたデータベース内のテーブルにリンクする方法を示しています。 パスワードを入力する必要があることに注意してください。
+次のコードサンプルは、パスワード（暗号化キー）を指定してCompactDatabaseを使用し、その圧縮データベース内のテーブルにリンクする方法を示しています。 パスワードを付与する必要があります。
 
 ```vb
     Private Sub CompactAndLink_Click() 
