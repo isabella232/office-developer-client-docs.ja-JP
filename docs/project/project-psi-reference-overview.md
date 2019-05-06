@@ -1,5 +1,5 @@
 ---
-title: プロジェクト PSI リファレンスの概要
+title: プロジェクトPSIリファレンスの概要
 manager: soliver
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -38,120 +38,120 @@ f1_keywords:
 - WinProj
 - WssInterop
 keywords:
-- web サービスを予定表では、認証、Web サービス、ResourcePlan、Web サービス、StatusReports、Web サービス、PSI、名前空間、イベント ハンドラーでは、Project Server では、Web サービス、通知、QueueSystem、Web サービスでは、Project 2013 では、プラットフォーム、LoginWindows、Webサービス、Web サービスでは、状態管理、Web サービス、リソース、WinProj、Web サービス、WssInterop、Web サービス、Web サービス、Winproj、イベント ハンドラー、LookupTable、Web サービス、PWA では、Web サービス、Web サービス、セキュリティ、通知、Web サービス、Web サービスの場合は、タイムシート、Web サービス、QueueSystem、PSI では、Web サービス、Web サービス、イベント、LookupTable、バージョン、Web サービスのプログラミングの PSI Web サービス、名、Web サービス、Web サービス、PWA、PSI、リソース、Web サービス、Web サービス、ResourcePlan、タイムシート、Webサービス、Web サービス、ルール、PSI では、マネージ コードの参照、セキュリティ、Web サービス、PSI のサービス名、URL を Web、Web サービス、WssInterop、Web サービス、管理、Web 参照、PSI では、Web サービス、CubeAdmin、表示、Web サービス、予定表、Web サービス、Web表示、管理、サービス、Web サービス、LoginForms、Web サービス、Web サービス、ObjectLinkProvider、LoginForms、PSI、Url、Web サービス、アーカイブ、Web サービス、CubeAdmin、Web サービス、ルール、Web サービス、Web サービス、認証、Web サービス、PSI では、プロジェクトのサーバー、イベント、イベント、Web サービス、Web サービス、プロジェクト、状態管理、Web サービス、Web サービス、ObjectLinkProvider、Project Server のインターフェイス、メソッド、PSI では、Web サービス、StatusReports、Web サービスを Web アーカイブ、プロジェクト、Web サービス、Web サービス、LoginWindows
-localization_priority: Normal
+- Webサービス、カレンダー、認証、Webサービス、ResourcePlan、Webサービス、StatusReports、Webサービス、PSI、ネームスペース、イベントハンドラ、Project Server、Webサービス、通知、QueueSystem、Webサービス、Project 2013、プラットフォーム、LoginWindows、Webサービス、 Webサービス、Statusing、Webサービス、リソース、WinProj、Webサービス、WssInterop、Webサービス、Webサービス、Winproj、イベントハンドラ、LookupTable、Webサービス、PWA、Webサービス、Webサービス、セキュリティ、通知、Webサービス、Webサービスタイムシート、Webサービス、QueueSystem、PSI、Webサービス、Webサービス、イベント、PSI、プログラミング、Webサービス、LookupTable、バージョン、Webサービス、CustomFields、Webサービス、Webサービス、PWA、PSI、リソース、Webサービス、Web service、ResourcePlan、タイムシート、Webサービス、Webサービス、ルール、PSI、マネージコードリファレンス、セキュリティ、Webサービス、Webサービス、CustomFields、URL、PSI向け、Webサービス、WssInterop、Webサービス、Admin、Web参照、PSI 、Webサービス、CubeAdmin、ビュー、Webサービス、カレンダー、Webサービス、Webサービス、ビュー、管理者、Webサービス、LoginForms、Webサービス、Webサービス、LoginForms、PSI、URL、ObjectLinkProvider、Webサービス、アーカイブ、Webサービス、CubeAdmin、Webサービス、ルール、Webサービス、Webサービス、認証、Webサービス、PSI、Project Server、イベントイベント、Webサービス、Webサービス、プロジェクト、ステータス管理、Webサービス、Webサービス、ObjectLinkProvider、Project Serverインタフェース、Webメソッド、PSI、Webサービス、StatusReports、Webサービス、アーカイブ、プロジェクト、Webサービス、Webサービス、LoginWindows
 ms.assetid: d3c33089-0cbe-48c3-bfc0-0be819ca4d73
-description: プロジェクト Server インターフェイス (PSI) は、Project Server 2013 の設置と統合するアプリケーションを開発するために使用する API です。
-ms.openlocfilehash: 58235e16afd208d0d4415e28ad200cc7ff62ac8b
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: MT
+description: Project Serverインターフェイス（PSI）は、社内のProject Server 2013と統合するアプリケーションを開発するために使用するAPIです。
+localization_priority: Priority
+ms.openlocfilehash: 178f050022916ac1d26bd3d71f0ac5210c92295d
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25390122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32301560"
 ---
-# <a name="project-psi-reference-overview"></a>プロジェクト PSI リファレンスの概要
+# <a name="project-psi-reference-overview"></a>プロジェクトPSIリファレンスの概要
 
-プロジェクト Server インターフェイス (PSI) は、Project Server 2013 の設置と統合するアプリケーションを開発するために使用する API です。
+Project Serverインターフェイス（PSI）は、社内のProject Server 2013と統合するアプリケーションを開発するために使用するAPIです。
   
-この資料は、文書化されているアセンブリ、名前空間、および PSI のサービスの概要です。 [Project Server 2013 のクラス ライブラリと web サービスの参照](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)で、SDK には、PSI と Project Server 2013 で[Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx)名前空間のマネージ コードのドキュメントをすべて含まれています。 オンライン プロジェクト用のアプリケーションを開発するには、PSI ではなく**Microsoft.ProjectServer.Client**名前空間を使用してください。 
+この記事は、PSIで文書化されているアセンブリ、名前空間、およびサービスの概要です。 SDKの[Project Server 2013クラスライブラリとWebサービス参照](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)には、PSIのマネージコードドキュメントとProject Server 2013の[Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx)名前空間がすべて含まれています。 Project Online用のアプリケーションを開発するには、PSIの代わりに** Microsoft.ProjectServer.Client**名前空間を使用する必要があります。 
 
-Project Server 2013 の PSI には、デュアル インターフェイスがあります。 検出 web サービスの ASMX インターフェイスが定義されているし、ファイルを Web サービス記述言語 (disco と WSDL)、 `https://ServerName/ProjectServerName/_vti_bin/psi/` (Projectdisco.aspx や Projectwsdl.aspx など) の仮想ディレクトリです。 ASMX インターフェイスは、Project Web App の設置型インストールの URL を通じてのみアクセスできます (たとえば、 `https://ServerName/ProjectServerName/_vti_bin/psi/project.asmx?wsdl)`。 ブラウザーで web サービスを表示する必要があります、 `?wsdl` [URL] です。 ASMX インターフェイスが構築されるため Windows Communication Foundation (WCF) インフラストラクチャを使用して、Project Server の web サービスの .asmx ファイルは実際にありません PSI の仮想ディレクトリ。 
+Project Server 2013のPSIにはデュアルインターフェイスがあります。 Webサービス用のASMXインターフェースは、仮想ディレクトリー`https://ServerName/ProjectServerName/_vti_bin/psi/`内のディスカバリーおよびWebサービス記述言語（discoおよびWSDL）ファイル（例えば、Projectdisco.aspxおよびProjectwsdl.aspx）によって定義されます。 ASMXインターフェイスにアクセスできるのは、手動設置式のProject Web App（たとえば、`https://ServerName/ProjectServerName/_vti_bin/psi/project.asmx?wsdl)`のURLを通じてのみです。 Webサービスをブラウザに表示するには、`?wsdl` URLオプションを含める必要があります。 ASMXインターフェイスはWindows Communication Foundation（WCF）インフラストラクチャを使用して構築されているため、Project Server Webサービス用の.asmxファイルは、実際には仮想PSIディレクトリに存在しません。 
   
-WCF サービスのインタ フェースがバックエンド内の .svc ファイルで定義されている`https://ServerName:32843/GUID/PSI/`、SharePoint Web サービス アプリケーションの仮想ディレクトリです。 プロジェクト サービス アプリケーションの仮想ディレクトリの URL の PSI サービス (たとえば、 `https://ServerName:32843/GUID/PSI/project.svc`)、.svc ファイルが含まれています。 ただし、WCF サービス参照を設定するのには、バックエンドの URL を直接使用できません。 アプリケーションや PSI の WCF サービスを使用するコンポーネントを開発するには、プロキシ アセンブリまたはプロキシ ファイルを使用できます。 Project 2013 SDK ダウンロードには、Project Server 2013 では、[WCF サービスのプロキシ ファイルが含まれていて、WCF プロキシの更新されたファイルを取得して、ファイルがプロジェクトのより新しいサーバーのプロキシ アセンブリにコンパイルするのにはスクリプトを作成します。
+WCFサービスインターフェースは、SharePoint Webサービスアプリケーションのバックエンド`https://ServerName:32843/GUID/PSI/`仮想ディレクトリー内の.svcファイルによって定義されています。 Project Service Application仮想ディレクトリ（たとえば`https://ServerName:32843/GUID/PSI/project.svc`）内のPSIサービスのURLには、.svcファイルが含まれています。 ただし、バックエンドURLを直接使用してWCFサービス参照を設定することはできません。 PSIのWCFサービスを使用するアプリケーションまたはコンポーネントを開発するには、プロキシアセンブリまたはプロキシファイルを使用できます。 Project 2013 SDKのダウンロードには、Project Server 2013のWCFサービス用のプロキシファイル、および更新されたWCFプロキシファイルを取得して直近のProject Serverビルド用のファイルをプロキシアセンブリにコンパイルするためのスクリプトが含まれています。
   
-プロジェクト サービス アプリケーションのディレクトリ名は、オンプレミスの Project Web App インスタンスの GUID と同じでは、GUID の値です。 **インターネット インフォメーション サービス (IIS) マネージャー** ] ウィンドウで、 **SharePoint Web サービス**] ノードを展開し、GUID のディレクトリ名を選択し、**仮想パス**の値をコピーするのには **[詳細設定**します。 
+Project Serviceアプリケーションのディレクトリ名はGUID値で、これは設置型Project Web AppインスタンスのGUIDと同じです。 [**インターネット インフォメーション サービス (IIS) マネージャー**] ウィンドウで、[**SharePoint Web サービス**] 接続ポイントを展開し、GUID ディレクトリ名を選択し、[**詳細設定**] を選択して、[**仮想パス**] の値をコピーします。 
   
 > [!IMPORTANT]
-> PSI の ASMX web サービスのインタ フェースは、Project Server 2013 のでは使用されなくなりましたはまだサポートされています。 新しいアプリケーションは、PSI または、CSOM の WCF インターフェイスを使用する必要があります。 非推奨の機能の詳細については、 [Project 2013 の開発者用の更新プログラム](updates-for-developers-in-project-2013.md)を参照してください。
+> PSIのASMX WebサービスインターフェイスはProject Server 2013では非推奨ですが、引き続きサポートされています。 新しいアプリケーションは、PSIまたはCSOMのWCFインターフェイスを使用する必要があります。 廃止予定の機能について詳しくは、[Project 2013における開発者向けの更新プログラム](updates-for-developers-in-project-2013.md)を参照してください。
 > 
-> 新しいアプリケーション、およびプロジェクトのサーバーの設置型インストールでのみ実行されるミドルウェア コンポーネントは、ネットワーク通信のことをお勧めするテクノロジは、WCF インターフェイスの使用してください。 ASMX インターフェイスを使用するレガシ アプリケーションは、Project Web App は、Project Server のアクセス許可のチェックを使用して URL を使用する必要があります。 
+> 新しいアプリケーション、および手動設置式Project Serverでのみ実行されるミドルウェアコンポーネントは、WCFインターフェイスを使用する必要があります。これはネットワーク通信に推奨されるテクノロジです。 ASMXインターフェイスを使用するレガシアプリケーションは、Project Web Appを通じてURLを使用する必要があります。これにより、Project Serverのアクセス許可が確認されます。 
 > 
-> ASMX インターフェイスおよび WCF インターフェイスを使用する方法の詳細については、[プロジェクト内の ASMX ベースのコード サンプルの前提条件](prerequisites-for-asmx-based-code-samples-in-project.md)と[プロジェクト内の WCF ベースのコード サンプルの前提条件](prerequisites-for-wcf-based-code-samples-in-project.md)を参照してください。 
+> ASMXインターフェースおよびWCFインターフェースの使用方法について詳しくは、[プロジェクトにおけるASMXベースのコードサンプルの前提条件およびプロジェクトにおけるWCFベースのコードサンプルの前提条件を参照してください。 
   
-WCF インターフェイスを使用するアプリケーションを開発するためには、Visual Studio 2010 または Visual Studio 2012 を使用できます。 Project Server の宣言型ワークフローを作成するには、SharePoint Designer 2013 を使用できます。 Visual Studio 2012 では、PSI または、CSOM へのアクセスを必要とするプロジェクトのサーバーのワークフローを開発できます。
+WCFインターフェイスを使用するアプリケーションを開発する際は、Visual Studio 2010またはVisual Studio 2012を使用できます。 宣言型Project Serverワークフローを作成するために、SharePoint Designer 2013を使用できます。 PSIまたはCSOMへのアクセスを必要とするProject Serverワークフローは、Visual Studio 2012を使用して開発できます。
   
-### <a name="using-the-psi-reference"></a>PSI リファレンスの使用
+### <a name="using-the-psi-reference"></a>PSIリファレンスを使用する
 <a name="pj15_PSIRefOverview_Using"> </a>
 
-PSI オブジェクト モデルは、大規模なと多くのクラスおよびメンバーは内部使用のみ。 その結果、 [Project Server 2013 のクラス ライブラリと web サービスの参照](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)するトピックを検索するのには混乱を招く場合ができます。 開発のために使用するリファレンス トピックのほとんどは、次のグループには。
+PSIオブジェクトモデルは大きく、多くのクラスとメンバは内部使用専用です。 その結果、[Project Server 2013クラスライブラリとWebサービスリファレンス](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)の中で必要なトピックをうまく見つけられない場合があります。 開発に使用する参照用のトピックのほとんどは、以下のグループにあります。
   
-- **プライマリ クラスのメソッド:** PSI の各サービスには、サービスの名前の名前は主クラスが含まれています。 たとえば、**リソース**サービスには、[リソース](https://msdn.microsoft.com/library/WebSvcResource.Resource.aspx)クラスには、 [WebSvcResource](https://msdn.microsoft.com/library/WebSvcResource.aspx)名前空間にが含まれています。 **リソース**クラスで使用可能なメソッドの一覧を表示するには、コンテンツ ペインで [クラス] ノードを展開して**リソース メソッド**のトピックを選択します。 
+- **基本クラス・メソッド：** PSI内の各サービスには、そのサービスの名前で命名された基本クラスが含まれています。 例えば、**Resource**サービスには、[WebSvcResource](https://msdn.microsoft.com/library/WebSvcResource.aspx)名前空間にある[Resource](https://msdn.microsoft.com/library/WebSvcResource.Resource.aspx)クラスが含まれています。 **Resource** クラスで使用できるメソッドの一覧を表示するには、コンテンツ ペインのクラス ノードを展開し、[**リソース メソッド**] トピックをクリックします。 
     
-- **DataRow プロパティ:** プライマリ クラスのメソッドの多くを使用して、または、**データセット**を返します。 **データセット**内のそれぞれの**DataTable**オブジェクトには、1 つまたは複数の**DataRow**オブジェクト内のデータが含まれています。 ほとんどの場合は、 **DataSet**や**DataTable**、 **DataRow**クラスの他のメンバーのすべての行プロパティのみを参照してくださいする必要があります。 たとえば、 **ResourceAssignmentDataSet**クラスには、 **ResourceAssignmentDataTable**と[ResourceAssignmentDataSet.ResourceAssignmentRow](https://msdn.microsoft.com/library/WebSvcResource.ResourceAssignmentDataSet.ResourceAssignmentRow.aspx)クラスのサブクラスが含まれています。 **ResourceAssignmentRow**クラスに含まれるプロパティの一覧を表示するには、コンテンツ ペインで [クラス] ノードを展開し、 **ResourceAssignmentDataSet.ResourceAssignmentRow プロパティ**のトピックを選択し、します。 
+- **DataRowプロパティー：** 多くの基本クラスメソッドは、**DataSet**を使用、または返します。 ** DataSet**の各**DataTable **オブジェクトには、1つ以上の**DataRow**オブジェクトのデータが含まれています。 ほとんどの場合、見る必要があるのは行のプロパティだけであり、**DataSet**、**DataTable**、または **DataRow** クラスの他のすべてのメンバーを見る必要はありません。 例えば、**ResourceAssignmentDataSet**クラスには、**ResourceAssignmentDataTable**および[ResourceAssignmentDataSet.ResourceAssignmentRow](https://msdn.microsoft.com/library/WebSvcResource.ResourceAssignmentDataSet.ResourceAssignmentRow.aspx)クラスのサブクラスが含まれています。 **ResourceAssignmentRow** クラスのプロパティの一覧を表示するには、コンテンツ ペインでクラス ノードを展開し、[**ResourceAssignmentDataSet.ResourceAssignmentRow のプロパティ**] トピックをクリックします。 
     
-サービスの名前空間だけでなく、 [Project Server 2013 のクラス ライブラリと web サービスの参照](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)トピックへのリンクのサード ・ パーティ製ソリューションの開発で使用されている 3 つの Project Server アセンブリ設置型インストールします。 これらのアセンブリに、最小限のドキュメントのみを提供しています。 PSI リファレンスでは、主要なクラスおよび 23 の公開サービスのメンバーを説明します。 6 つの PSI サービスは、内部使用のみと、文書化されていません。 
+サービスの名前空間に加えて、[Project Server 2013クラスライブラリとWebサービスリファレンス](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)のトピックは、手動設置用のサードパーティソリューションの開発に使用される3つのProject Serverアセンブリにリンクしています。 これらのアセンブリについては、最小限のドキュメントだけが提供されています。 さらに、PSI リファレンスでは、23 のパブリック サービスの主なクラスとメンバーが説明されています。 6 つの PSI サービスは内部使用専用であり、文書化されていません。 
   
 > [!NOTE]
-> クライアント側オブジェクト モデル (CSOM) 内のクラスは、他の Project Server アセンブリおよびサービスから独立して使用できます。 **Microsoft.ProjectServer.Client**名前空間を Project Server コンピューターからリモートの開発環境で使用し、プロジェクトをオンラインで、または Project Server のオンプレミスのインストールと統合するアプリケーションを開発できます。 ですが、完全な PSI の機能のサブセットが、CSOM に含まれています。 CSOM は、Project Server の統合のための最も一般的なシナリオの開発を有効にします。 詳細については、[どのような CSOM は行われない](what-the-csom-does-and-does-not-do.md)し、 [Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx)を参照してください。 
+> クライアントサイドオブジェクトモデル（CSOM）のクラスは、他のProject Serverアセンブリおよびサービスとは独立して使用できます。 Project Serverコンピューターから、リモート開発環境で**Microsoft.ProjectServer.Client**名前空間を使用して、Project Onlineまたは手動設置式のProject Serverと統合するアプリケーションを開発できます。 ただし、CSOM に含まれるのは完全な PSI の機能のサブセットです。 CSOM を使用すると、Project Server 統合の最も一般的なシナリオを開発できます。 詳しくは、[CSOMの挙動について](what-the-csom-does-and-does-not-do.md)および[Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx)を参照してください。 
   
-PSI を使用するほとんどのアプリケーションの開発は、Project Server コンピューター上で開発または Project Server アセンブリへの参照をグローバル アセンブリ キャッシュに設定する必要はありません。 必要な Project Server アセンブリを開発用コンピューターにコピーできます。 Project Server 2013 の _[プログラム ファイル]_ で、次のアセンブリをインストールする`\Microsoft Office Servers\15.0\Bin`。 
+PSI を使用するほとんどのアプリケーションの開発は、Project Server コンピューターで行わなくてもよく、グローバル アセンブリ キャッシュで Project Server アセンブリへの参照を設定する必要はありません。 必要な Project Server アセンブリを開発コンピューターにコピーできます。 Project Server 2013は、_[Program Files] _ `\Microsoft Office Servers\15.0\Bin`に次のアセンブリをインストールします。 
   
 - Microsoft.Office.Project.Server.Events.Receivers.dll 
 - Microsoft.Office.Project.Server.Library.dll
 - Microsoft.Office.Project.Server.Workflow.dll
     
-PSI サービスの名前空間には、マニュアルの目的で生成される、ProjectServerServices.dll、PSI プロキシ アセンブリ用に作成された任意の名前があります。 PSI リファレンスでは、各サービスの名前空間があり、プレース ホルダー名 ( _[プロジェクトの web サービス]_) などの web 参照 (次のように`https://ServerName/ProjectServerName/_vti_bin/psi/Project.asmx?wsdl`)。 
+PSIサービスの名前空間には、PSIプロキシアセンブリProjectServerServices.dll用に作成された任意の名前があります。これは、文書化の目的で生成されたものです。 PSIの参照では、各サービス名前空間はプレースホルダー名（_ [Project Webサービス] _など）とWeb参照（`https://ServerName/ProjectServerName/_vti_bin/psi/Project.asmx?wsdl`など）を持ちます。 
   
-## <a name="project-server-assemblies-and-namespaces"></a>Project Server のアセンブリと名前空間
+## <a name="project-server-assemblies-and-namespaces"></a>Project Serverのアセンブリと名前空間
 <a name="pj15_PSIRefOverview_Assemblies"> </a>
 
-プロジェクト サーバーをインストールするときに、多くのアセンブリがインストールされています。Project Server アセンブリの 4 つのだけが記載されています。 サード パーティの開発者では、それらのアセンブリに、いくつかのクラスとメンバーのみを通常使用します。 文書化されていない Project Server アセンブリには、名前空間、および Project Server は Project Web App で、ビジネス エンティティのクラスなどは内部で使用するクラスが含まれて、データ アクセス層 (DAL) とします。 Visual Studio で文書化された Project Server アセンブリのいずれかに参照を設定するときは、名前空間、クラス、および Visual Studio のオブジェクト ブラウザーのメンバーのすべてを表示できます。
+Project Serverをインストールすると、多くのアセンブリがインストールされます。文書化されているのは4つのProject Serverアセンブリのみです。 サードパーティの開発者は通常、これらのアセンブリでは少数のクラスとメンバのみを使用します。 文書化されていないProject Serverアセンブリには、Project Web Appのクラス、事業名、データアクセス層（DAL）など、Project Serverが内部で使用する名前空間とクラスが含まれています。 文書化されているいずれかのProject ServerアセンブリにVisual Studioで参照を設定すると、Visual Studioのオブジェクトブラウザですべての名前空間、クラス、およびメンバを表示できます。
   
 > [!NOTE]
-> 文書化されている Project Server の名前空間の多くのメンバーも内部使用専用で、ドキュメントは最小限です。 
+> 文書化されたProject Server名前空間の多くのメンバは内部でのみ使用され、文書化は最小限です。 
   
-オンライン プロジェクトを開発する場合は、Project Server の機能にアクセスするのには CSOM のみを使用できます。 PSI サービスまたはその他の Project Server アセンブリへのアクセス権がありません。
+Project Online用に開発する場合は、CSOMのみを使用してProject Serverの機能にアクセスできます。 PSIサービスまたは他のProject Serverアセンブリにアクセスすることはできません。
   
-[Project Server 2013 のクラス ライブラリと web サービス参照](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)の PSI には、次のアセンブリから名前空間が含まれます。 
+PSIの[ Project Server 2013クラスライブラリとWebサービス参照](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)には、次のアセンブリの名前空間が含まれています。 
   
-- **Microsoft.Office.Project.Server.Library.dll**このアセンブリに含まれる 1 つの文書化された名前空間と 3 つの文書化されていない名前空間は、次のようになります。 
+- **Microsoft.Office.Project.Server.Library.dll**このアセンブリには、次のように、1つの文書化された名前空間と3つの文書化されていない名前空間が含まれています。 
     
-  - [Microsoft.Office.Project.Server.Library](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Library.aspx)名前空間には、Project Server のオンプレミス アプリケーションに多くの列挙体、およびクラスのフィールドおよび頻繁に使用されるプロパティが含まれます。 たとえば、開発者は通常**CustomField.Type**、 **PSClientError**、 **PSErrorInfo**、および**フィルター**のクラスなどの列挙体を使用します。 
+  - [Microsoft.Office.Project.Server.Library](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Library.aspx)名前空間には、多数の列挙型、Project Serverの設置型アプリケーションで頻繁に使用されるクラスフィールドおよびプロパティが含まれています。 例えば、開発者はよく**CustomField.Type**、**PSClientError**、**PSErrorInfo**、**Filter**クラスなどの列挙型を使用します。 
     
-    **Microsoft.Office.Project.Server.Library** 名前空間には、次の 7 つのプロパティ クラスと、3,200 以上のサブクラスも含まれます。 
+    **Microsoft.Office.Project.Server.Library**名前空間には、3,200を超えるサブクラスを含む次の7つのプロパティクラスも含まれています。 
     
       - **AssignmentProperties**  
       - **CalendarProperties**
       - **ConstraintProperties**
       - **LookupTableProperties**
-      - **「プロジェクトプロパ ティー」**
+      - **ProjectProperties**
       - **ResourceProperties**
       - **TaskProperties**
     
-    プロパティ クラスは、内部的に使用され、文書化されていません。 プロパティ クラスは、評価のためのプロジェクトとプロジェクトのサーバー間のシリアル化に使用されます。 Visual Studio で**Microsoft.Office.Project.Server.Library**名前空間を使用するすべてのサードパーティの開発のために便利なクラスを見つけることが難しくなりますプロパティ クラス オブジェクト ブラウザーが表示されます。 プロパティ クラスを使用するサード パーティの開発者がいないため SDK はしない文書化します。 
+    プロパティクラスは内部的に使用され、文書化されていません。 プロパティクラスは、Project Professional 2013とProject Serverの間の直列化に使用されます。 Visual Studioで**Microsoft.Office.Project.Server.Library**名前空間を操作すると、オブジェクトブラウザにすべてのプロパティクラスが表示されるため、他社環境での開発で有用なクラスを見つけるのがより難しくなってしまいます。 サードパーティーの開発者はプロパティクラスを使用する必要がないため、SDKではそれらを文書化していません。 
     
-  - **Microsoft.Office.Project.Server.DataServices**クラスと、この名前空間のメンバー内部的に使用されますプロジェクトをオンラインでの**OData**サービスがプロジェクト データベース内のレポートのテーブルにアクセスするためです。 **DataServices**クラスは記載されていません。 
+  - **Microsoft.Office.Project.Server.DataServices**この名前空間のクラスとメンバは、Project Onlineの**OData**サービスによって内部的に使用され、Projectデータベースのレポートテーブルにアクセスします。 **DataServices**クラスは文書化されていません。 
     
-  - **Microsoft.Office.Project.Server.Administration**クラスと、この名前空間のメンバーは、の診断ログは、内部的に使用され、文書化されていません。 
+  - **Microsoft.Office.Project.Server.Administration**この名前空間のクラスとメンバーは診断ログのために内部で使用されているため、文書化されていません。 
     
-  - **Microsoft.Office.Project.Server.Base**クラスと、この名前空間のメンバーの基本クラスとして内部的に使用され、文書化されていません。 
+  - **Microsoft.Office.Project.Server.Base**この名前空間のクラスとメンバは、基本クラスとして内部的に使用されており、文書化されていません。 
     
-  - **Microsoft.Office.Project.Server.Library.FilterSchema**この名前空間はフィルターのスキーマを生成する内部で使用され、文書化されていません。 
+  - **Microsoft.Office.Project.Server.Library.FilterSchema**この名前空間は、フィルター図式を生成するために内部的に使用されているため、文書化されていません。 
     
-- **Microsoft.Office.Project.Server.Workflow.dll**このアセンブリは、Project Server 2013 で作業を続けることを従来の Project Server 2010 のワークフローに使用されます。 新しいワークフローを作成するには、SharePoint Designer 2013 を使用する必要があります。 または[Microsoft.ProjectServer.Client.WorkflowActivities](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.WorkflowActivities.aspx)クラスを Visual Studio 2012 を使用することもできます。 Microsoft.Office.Project.Server.Workflow.dll アセンブリには、次の 3 つの名前空間が含まれています。 
+- **Microsoft.Office.Project.Server.Workflow.dll**このアセンブリは、Project Server 2013で引き続き機能する旧Project Server 2010ワークフローに使用されます。 新しいワークフローを作成するには、SharePoint Designer 2013を使用するか、[Microsoft.ProjectServer.Client.WorkflowActivities](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.WorkflowActivities.aspx)クラスと共にVisual Studio 2012を使用することもできます。 Microsoft.Office.Project.Server.Workflow.dllアセンブリには、次の3つの名前空間が含まれています。 
     
-  - [Microsoft.Office.Project.Server.Workflow には](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Workflow.aspx)この名前空間には、Project Server のワークフロー活動で使用されるクラスが含まれています。 アクティビティには、データの読み取りと比較すると、プロジェクトのプロパティの更新が含まれます。 他のクラスは、ワークフローを管理し、プロジェクトが変更されるとバックアップ ・ ワークフローの呼び出しが含まれます。 
+  - [Microsoft.Office.Project.Server.Workflow](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Workflow.aspx)この名前空間には、Project Serverのワークフローアクティビティに使用されるクラスが含まれています。 アクティビティには、プロジェクトプロパティの読み取り、比較、および更新が含まれます。 他のクラスは作業手順を管理し、プロジェクトが変更されたときのワークフローコールバックも行います。 
     
-  - **Microsoft.Office.Project.PWA には**この名前空間には、Project Web App とカスタム ワークフロー アクティビティを使用するため、PSI の内部のプロキシが含まれていますそれが文書化されていません。 
+  - **Microsoft.Office.Project.PWA**この名前空間には、Project Web Appおよびカスタムワークフローアクティビティで使用するためのPSIの内部プロキシが含まれています。これは文書化されていません。 
     
-    ユーザー定義ワークフロー活動には、すべての PSI サービスのクラスにアクセスするための**Microsoft.Office.Project.PWA**への参照が必要です。 たとえば、 **Microsoft.Office.Project.PWA.PSI**クラスには、 [WebSvcProject](https://msdn.microsoft.com/library/WebSvcProject.aspx)名前空間のプロキシを取得する、 **ProjectWebService**プロパティが含まれています。 
+    カスタムワークフローアクティビティでは、PSIサービス内のすべてのクラスにアクセスするために**Microsoft.Office.Project.PWA**への参照が必要です。 例えば、**Microsoft.Office.Project.PWA.PSI**クラスには**ProjectWebService**プロパティーが含まれ、これは[WebSvcProject](https://msdn.microsoft.com/library/WebSvcProject.aspx)名前空間のプロキシーを取得します。 
     
-  - **Microsoft.Office.Project.Server.WebServiceProxy には**この名前空間には、各 PSI サービスのプライマリ クラスの内部のプロキシ クラスが含まれます。 ワークフロー ユーザーの昇格されたアクセス許可を使用すると、ワークフローは、プロキシ クラスを通じて PSI メソッドを呼び出すことができます。 プロキシ クラスは記載されていません。 
+  - **Microsoft.Office.Project.Server.WebServiceProxy**この名前空間には、各PSIサービスの基準クラスの内部プロキシクラスが含まれています。 ワークフローユーザーの昇格権限を使用することで、ワークフローはプロキシクラスを通じてPSIメソッドを呼び出すことができます。 プロキシクラスは文書化されていません。 
     
-- **Microsoft.Office.Project.Server.Events.Receivers.dll**[Microsoft.Office.Project.Server.Events](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Events.aspx)は、このアセンブリ内で唯一の名前空間です。 イベント レシーバーと PSI サービス用のイベント引数クラスおよびその他の内部クラスが含まれています。 
+- **Microsoft.Office.Project.Server.Events.Receivers.dll** [Microsoft.Office.Project.Server.Events](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Events.aspx)は、このアセンブリの唯一の名前空間です。 ここにはPSIサービスと他の内部クラスのためのイベント受信子とイベント引数クラスが含まれています。 
     
-  開発者は、イベント レシーバーのクラスを継承するイベント ハンドラーを作成します。PSI サービスのプライマリ クラスの多くには、対応するイベント レシーバー クラスがあります。たとえば、**ProjectEventReceiver** クラスには、PSI の **Project** クラスのメソッドに対応するプレイベント レシーバー メソッドとポストイベント レシーバー メソッドが含まれます。**OnCreating** メソッドと **OnCreated** メソッドは、**QueueCreateProject** メソッドのプレイベント レシーバー メソッドおよびポストイベント レシーバー メソッドです。 
+  開発者は、イベント レシーバーのクラスを継承するイベント ハンドラーを作成します。 PSI サービスのプライマリ クラスの多くには、対応するイベント レシーバー クラスがあります。 たとえば、**ProjectEventReceiver**クラスには、PSIの**Project**クラスのメソッドに対応する前置イベントおよび後置イベントのレシーバメソッドが含まれています。 **OnCreating**メソッドおよび**OnCreated**メソッドは、**QueueCreateProject**メソッドの前置イベントおよび後置イベントの受信メソッドです。 
     
-  開発者は、通常、次のイベント レシーバー クラスを使用します。
+  開発者はよく、次のイベントレシーバークラスを使用します。
   <br/>  
   - [AdminEventReceiver](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Events.AdminEventReceiver.aspx)
   - [CalendarEventReceiver](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Events.CalendarEventReceiver.aspx)
   - [CubeAdminEventReceiver](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Events.CubeAdminEventReceiver.aspx)
   - [CustomFieldsEventReceiver](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Events.CustomFieldsEventReceiver.aspx)
   - [LookupTableEventReceiver](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Events.LookupTableEventReceiver.aspx)
-  - [ProjectEventReceiver](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Events.ProjectEventReceiver.aspx)
-  - [OptimizerEventReceiver](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Events.OptimizerEventReceiver.aspx)
-  - [ReportingEventReceiver](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Events.ReportingEventReceiver.aspx)
+  - [AdminEventReceiver](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Events.ProjectEventReceiver.aspx)
+  - [CalendarEventReceiver](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Events.OptimizerEventReceiver.aspx)
+  - [AdminEventReceiver](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Events.ReportingEventReceiver.aspx)
   - [ResourceEventReceiver](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Events.ResourceEventReceiver.aspx)
   - [SecurityEventReceiver](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Events.SecurityEventReceiver.aspx)
   - [StatusingEventReceiver](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Events.StatusingEventReceiver.aspx)
@@ -160,14 +160,14 @@ PSI サービスの名前空間には、マニュアルの目的で生成され�
   - [WorkflowEventReceiver](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Events.WorkflowEventReceiver.aspx)
   - [WssInteropEventReceiver](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Events.WssInteropEventReceiver.aspx)
     
-  **RulesEventReceiver**クラスと**StatusReportsEventReceiver**クラスは、Project Web App で内部的に使用されます。 
+  **RulesEventReceiver**クラスと** StatusReportsEventReceiver **クラスは、Project Web Appの内部で使用されます。 
     
-- **Microsoft.ProjectServer.Client.dll には**このアセンブリには、.NET Framework 4 での開発の CSOM が含まれています。 アセンブリである`%ProgramFiles%\Common Files\Microsoft Shared\Web Server Extensions\15\ISAPI\Microsoft.ProjectServer.Client.dll`。 **Microsoft.ProjectServer.Client**名前空間を持つアプリケーションの開発では、アプリケーションが使用するいずれかの設置、設置型のプロジェクトのサーバー Api、およびサービスの独立した、または Project Server のオンライン インストールします。 関連する CSOM web アプリを使用して Windows Phone 8、マイクロソフトの Silverlight、または JavaScript を使用することができるアセンブリは、 [Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx)を参照してください。 
+- **Microsoft.ProjectServer.Client.dll**このアセンブリには、.NET Framework 4で開発するためのCSOMが含まれています。 アセンブリは`%ProgramFiles%\Common Files\Microsoft Shared\Web Server Extensions\15\ISAPI\Microsoft.ProjectServer.Client.dll`に位置しています。 **Microsoft.ProjectServer.Client** 名前空間でのアプリの開発は社内設置型の Project Server API およびサービスとは独立していますが、アプリは Project Server の社内設置型インストールまたはオンライン インストールのどちらでも動作できます。 Windows Phone 8、Microsoft Silverlight、またはWebアプリケーションを備えたJavaScriptに使用できる関連CSOMアセンブリについては、[Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx)を参照してください。 
     
-- **Microsoft.Office.Project.Server.Schema.dll** 「Project 2013 SDK は、 **Microsoft.Office.Project.Server.Schema**名前空間内にある文書化されません、`[Windows]\Microsoft.NET\assembly\GAC_MSIL\Microsoft.Office.Project.Schema\v4.0_15.0.0.0__71e9bce111e9429c\Microsoft.Office.Project.Schema.dll`のアセンブリです。 名前空間には、PSI で使用されているすべての**データセット****データ テーブル**の**DataRow**クラスと Project Server が内部的に使用する多くの他の類似したクラスの定義が含まれています。 各 PSI サービスのパブリック クラスは、特定のサービスの参照に記載されています。 たとえば、 **DriverDataSet.DriverRow**クラスは、 [WebSvcDriver](https://msdn.microsoft.com/library/WebSvcDriver.aspx)名前空間に記載されています。 
+- **Microsoft.Office.Project.Server.Schema.dll** Project 2013 SDKでは、`[Windows]\Microsoft.NET\assembly\GAC_MSIL\Microsoft.Office.Project.Schema\v4.0_15.0.0.0__71e9bce111e9429c\Microsoft.Office.Project.Schema.dll`アセンブリ内にある**Microsoft.Office.Project.Server.Schema**名前空間は文書化されていません。 この名前空間には、PSI で使用されるすべての **DataSet**、**DataTable**、**DataRow** クラスの定義に加えて、Project Server 内部で使用されるその他の多くの類似クラスの定義が含まれます。 各PSIサービスのパブリッククラスは、特定のサービスリファレンスに記載されています。 例えば、**DriverDataSet.DriverRow**クラスは、[WebSvcDriver](https://msdn.microsoft.com/library/WebSvcDriver.aspx)名前空間に記載されています。 
     
   > [!NOTE]
-  > CSOM を使用して、リモート イベントのハンドラーを使用して、またはオンラインのプロジェクトにアクセスするアプリケーションでは、 **Microsoft.Office.Project.Server.Schema**名前空間は使用しません。 
+  > CSOMを使用するアプリケーション、リモートイベントハンドラを使用するアプリケーション、またはProject Onlineにアクセスするアプリケーションは、**Microsoft.Office.Project.Server.Schema**名前空間を使用しません。 
   
   イベント ハンドラーが Project Server コンピューターにインストールされる完全信頼イベント ハンドラーを使用する一部のアプリケーションでは、Microsoft.Office.Project.Schema.dll アセンブリへの参照を設定する必要があります。次に、2 つの例を示します。
     
@@ -193,111 +193,111 @@ PSI サービスの名前空間には、マニュアルの目的で生成され�
         }
      ```
 
-  - カスタム ワークフロー アクティビティでは、**DataSet** の定義に対する **Microsoft.Office.Project.Server.Schema** への参照が必要な場合があります。 
+  - カスタムワークフローアクティビティでは、**DataSet**定義に対して**Microsoft.Office.Project.Server.Schema**への参照が必要になる場合があります。 
     
 ## <a name="psi-services"></a>PSI サービス
 <a name="pj15_PSIRefOverview_PSI"> </a>
 
-PSI は、WCF サービスおよび Project Server 2013 の同一の ASMX web サービスのセットです。 URL への参照を設定する、Visual Studio プロジェクトで、サービスを使用する、`.svc`ファイルまたは`.asmx?wsdl`、ネームの任意の名前を使用してサービス。 Wsdl.exe ユーティリティまたは svcutil.exe ユーティリティ、その名前空間のプロキシ ソース コードを生成し、コンパイラは、アプリケーションに含めるプロキシ サービス アセンブリを作成します。 
+PSIは、WCFサービスの集まりで、Project Server 2013用のASMX Webサービスと同一のものです。 Visual Studioプロジェクトでサービスを使用するには、ネームサービスに任意の名前を使用して、`.svc`ファイルまたは`.asmx?wsdl`サービスのURLへの参照を設定します。 wsdl.exe ユーティリティまたは svcutil.exe ユーティリティによってその名前空間のプロキシ ソース コードが生成され、コンパイラによりアプリケーションに含めるプロキシ サービス アセンブリが作成されます。 
   
 > [!NOTE]
-> PSI リファレンスには、 _[web サービスの管理]_、 _[ドライバーの web サービス]_、 _[プロジェクトの web サービス]_ などの PSI サービスのネーム名プレース ホルダーにはが含まれています。 各 PSI ネームには、そのサービスの web メソッドが含まれる主なクラスが含まれています。 などの**管理**サービスへの参照を設定して、 **WebSvcAdmin**という名前を付けますし、 **WebSvcAdmin**アプリケーションでネームが含まれています**GetServerCurrency**の web メソッドを持つプライマリ**管理**クラスには**ListInstalledLanguages**、 **ReadServerVersion**というように。 非推奨の PSI サービスの一覧については、 [Project 2013 の開発者用の更新プログラム](updates-for-developers-in-project-2013.md)を参照してください。 
+> PSIリファレンスには、_ [管理Webサービス] _、_ [ドライバーWebサービス] _、_ [プロジェクトWebサービス] _などのPSIサービスのプレースホルダーサービス名が含まれています。 各PSIネームサービスには、そのサービスのWebメソッドを含む基準クラスが含まれています。 たとえば、**Admin** サービスへの参照を設定し、それに **WebSvcAdmin** という名前を付けた場合、アプリケーションの **WebSvcAdmin** nameservice には、プライマリ クラス **Admin** とその **GetServerCurrency**、**ListInstalledLanguages**、**ReadServerVersion** などの Web メソッドが含まれます。 非推奨のPSIサービスのリストについては、[ Project 2013における開発者向け更新](updates-for-developers-in-project-2013.md)を参照してください。 
   
-30 の合計の PSI サービスの**認証**、 **ExchangeSync**、 **OData**、 **P12Upgrade**、 **psiserviceapp**、 **PWA**、**ビュー**、および**WinProj**は、Project Web App およびプロジェクトによって内部で使用プロフェッショナルとは記載されていません。 プロキシ ファイルまたは PSI の内部サービスが含まれているプロキシ アセンブリを作成できますが、内部サービス用ではないサードパーティ製の使用中です。PSI リファレンスは、これらのサービスを文書化されません。 次の図は、インターネット インフォメーション サービス マネージャーで、バックエンドの PSI サービスの場所を示しています。 
+合計30のPSIサービスのうち、**認証**、**ExchangeSync**、**OData**、**P12アップグレード**、**psiserviceapp**、**PWA**、**表示**、および**WinProj**は、Project Web AppおよびProject Professionalによって内部的に使用されるものであり、文書化されていません。 PSI内部サービスを含むプロキシファイルまたはプロキシアセンブリを作成することはできますが、その内部サービスは他社環境による使用には適していません。 PSIリファレンスはそれらのサービスを文書化していません。 次の図は、インターネットインフォメーションサービスマネージャのバックエンドPSIサービスの場所を示しています。 
   
-**IIS の PSI サービスを検索します。**
+**IISのPSIサービスを設置する**
 
-![IIS マネージャーでの PSI サービス](media/pj15_PSIReference_IIS.gif "IIS マネージャーでの PSI サービス")
+![IIS マネジャー内のPSIサービス](media/pj15_PSIReference_IIS.gif "IIS マネジャー内のPSIサービス")
   
-PSI サービスの Web メソッドを含むすべてのクラスは次のとおりです。
+以下は、PSIサービス内のWebメソッドを含むすべてのクラスです。
   
-1. [管理](https://msdn.microsoft.com/library/WebSvcAdmin.Admin.aspx)Project Web App で**プロジェクトのサーバーの管理**] ページで使用されるメソッドが含まれています。 レポートの期間では、監査ログ、および Active Directory の設定、状態管理と通貨の設定を管理、会計年度を定義します。 
+1. [Admin](https://msdn.microsoft.com/library/WebSvcAdmin.Admin.aspx)には、Project Web Appの**Project Server Administration**ページで使用されるメソッドが含まれています。 会計年度を定義し、ステータスと通貨設定、記録期間、監査ログ、およびActive Directoryの設定を管理します。 
     
-2. [アーカイブ](https://msdn.microsoft.com/library/WebSvcArchive.Archive.aspx)プロジェクト、セキュリティのカテゴリ、ユーザー設定フィールド、リソース、システム設定、ビュー、およびエンタープライズ グローバル プロジェクトのバックアップと復元を管理するメソッドが含まれています。 読み取り、アーカイブ スケジュールを更新します。 すべてのプロジェクトをアーカイブまたは指定されたアーカイブ済みのプロジェクトを削除します。 アーカイブ データベースのテーブルおよび発行済みデータベースのテーブルへのオブジェクトのバックアップをリストアするには、バックアップ ・ オブジェクトを保存します。 
+2. [アーカイブ](https://msdn.microsoft.com/library/WebSvcArchive.Archive.aspx)には、プロジェクトのバックアップと復元、セキュリティの分類、カスタムフィールド、リソース、システム設定、ビュー、および事業の総括プロジェクトの管理方法が含まれます。 保管スケジュールを読み込んで更新します。 すべてのプロジェクトをアーカイブするか、指定されたアーカイブ済みプロジェクトを削除します。 バックアップオブジェクトを保管データベーステーブルに保存し、バックアップしたオブジェクトを発行済データベーステーブルに復元します。 
     
-3. **認証**Project Professional および Project Web App だけで内部的に使用するメソッドが含まれています。 
+3. **認証**には、Project ProfessionalおよびProject Web Appのみによる内部使用のためのメソッドが含まれています。 
     
-4. [予定表](https://msdn.microsoft.com/library/WebSvcCalendar.Calendar.aspx)エンタープライズ カレンダーの例外を管理します。 チェック アウトし、リソース カレンダーでチェックします。 作成、削除、すべてを一覧表示、更新、またはカレンダーの例外を返します。 
+4. [カレンダー](https://msdn.microsoft.com/library/WebSvcCalendar.Calendar.aspx)事業カレンダーの例外を管理します。 リソースカレンダーをチェックアウトおよびチェックインします。 カレンダーの例外を作成、削除、一覧表示、更新、または戻します。 
     
-5. [CubeAdmin](https://msdn.microsoft.com/library/WebSvcCubeAdmin.CubeAdmin.aspx)OLAP キューブの設定を管理します。 分析サーバー、データベースの状態、およびキューブの一覧を取得します。 キューブ作成サービスの要求をキューに置きます。 読み取り、計算されるメンバー定義、およびキューブのディメンションとメジャーのフィールドの設定を更新します。 
+5. [CubeAdmin](https://msdn.microsoft.com/library/WebSvcCubeAdmin.CubeAdmin.aspx) OLAPキューブ設定を管理します。 分析サーバー、データベースの状態、およびキューブのリストを取得します。 Cube Build Service 要求をキューに配置します。 キューブのディメンションおよびメジャーに関する計算済みのメンバー定義とフィールド設定を読み取り、更新します。 
     
-6. [名](https://msdn.microsoft.com/library/WebSvcCustomFields.CustomFields.aspx)エンタープライズ ユーザー設定フィールドを管理します。 チェック アウトが含まれていて、メソッド、および作成、読み取り、更新、およびエンタープライズ ユーザー設定フィールドの削除 (CRUD) メソッドをチェックインします。 
+6. [CustomFields](https://msdn.microsoft.com/library/WebSvcCustomFields.CustomFields.aspx)事業用カスタムフィールドを管理します。 チェックアウトおよびチェックイン方法、および事業用カスタムフィールドの作成、読み取り、更新、および削除（CRUD）メソッドが含まれます。 
     
-7. [ドライバー](https://msdn.microsoft.com/library/WebSvcDriver.Driver.aspx)ポートフォリオ分析のドライバーとプロジェクトの作成と要求の管理のためのドライバーの優先順位付けを管理します。 プロジェクトのドライバーの CRUD メソッドが含まれています。 
+7. [ドライバー](https://msdn.microsoft.com/library/WebSvcDriver.Driver.aspx)プロジェクト作成および需要管理のためのポートフォリオ分析ドライバーおよびドライバーの優先順位付けを管理します。 プロジェクトドライバー用のCRUDメソッドが含まれます。 
     
-8. [イベント](https://msdn.microsoft.com/library/WebSvcEvents.Events.aspx)Project Server イベント ハンドラーの関連付けを管理します。 Project Server イベント ハンドラーの関連付けの特定のイベントまたはイベント ハンドラーの関連付けをすべての CRUD メソッドが含まれています。 
+8. [イベント](https://msdn.microsoft.com/library/WebSvcEvents.Events.aspx) Project Serverイベントハンドラの関連付けを管理します。 特定のイベント、またはすべてのイベントハンドラの関連付けに対するProject Serverのイベントハンドラの関連付けに対するCRUDメソッドが含まれます。 
     
-9. **ExchangeSync**これは、Exchange Server のイベントを処理する内部のプロジェクトのサーバー サービスです。 Project Web App では、 **ExchangeSync**を使用して、Office Project Server 2007 と Outlook クライアントと直接同期する代わりに、Project Server と Exchange Server の間の割り当てを同期します。 
+9. **ExchangeSync**これは、Exchange Serverイベントを処理する内部Project Serverサービスです。 Project Web Appは、Office Project Server 2007のようにOutlookクライアントと直接同期するのではなく、**ExchangeSync**を使用してProject ServerとExchange Serverの間の割り当てを同期します。 
     
-    **ExchangeSync** サービスへのアクセスは、**ProjectServiceApplication** URL を使用してだけ行えます。**ExchangeSync** のクラスとメンバーは、サードパーティの開発用としてはサポートされていません。 
+    **ExchangeSync**サービスへのアクセスは、**ProjectServiceApplication** URLを通じてのみ可能です。 **ExchangeSync**のクラスとメンバは、他社環境での開発ではサポートされていません。 
     
-10. [LoginForms](https://msdn.microsoft.com/library/WebSvcLoginForms.LoginForms.aspx)フォーム ベース認証での**ログイン**と**ログオフ**の方法を提供します。 **LoginForms**サービスへのアクセスは、Project Web App サイトをフロント エンド サーバー上でのみ使用できます。 
+10. [LoginForms](https://msdn.microsoft.com/library/WebSvcLoginForms.LoginForms.aspx)フォームベース認証で**Login**および**Logoff**メソッドを提供します。 **LoginForms**サービスへのアクセスは、フロントエンドのProject Web Appサイトでのみ利用可能です。 
     
-11. [LoginWindows](https://msdn.microsoft.com/library/WebSvcLoginWindows.LoginWindows.aspx)ASMX ベースのアプリケーションの複数の認証と Windows 認証に使用される**ログイン**と**ログオフ**の方法が用意されています (要求およびフォーム ベース) Project Server 2013 のインストールします。 **LoginWindows**サービスへのアクセスは、Project Web App サイトをフロント エンド サーバー上でのみ使用できます。 
+11. [LoginWindows](https://msdn.microsoft.com/library/WebSvcLoginWindows.LoginWindows.aspx)複数認証（要求およびフォームベース）Project Server 2013の環境において、ASMXベースのアプリケーションを使ったWindows認証に使用される**Login**および**Logoff**メソッドを提供します。 **LoginWindows**サービスへのアクセスは、フロントエンドのProject Web Appサイトでのみ可能です。 
     
     > [!CAUTION]
-    > **LoginWindows** サービスは、WCF ベースのアプリケーションや、クレーム認証または **OAuth** のみを使用する Project Server インストールで実行するアプリケーションでは使用されません。これらの場合は、**Login** メソッドは常に **false** を返します。クレーム認証は統合 Windows 認証を処理します。 
+    > **LoginWindows**サービスは、WCFベースのアプリケーション、または要求認証のみを使用するProject Server環境で実行されるアプリケーション、または**OAuth**では使用されません。そのような場合、**Login**メソッドは常に**false**を返します。 要求認証は、統合Windows認証を扱います。 
   
-12. [LookupTable](https://msdn.microsoft.com/library/WebSvcLookupTable.LookupTable.aspx)参照テーブル、多言語参照テーブル、およびその対応するコード マスクを管理します。 チェック アウト、チェックイン、読み取り、作成、削除、更新します。 
+12. [LookupTable](https://msdn.microsoft.com/library/WebSvcLookupTable.LookupTable.aspx)参照テーブル、多言語参照テーブル、およびそれらに対応するコード定義を管理します。 チェックアウト、チェックイン、読み取り、作成、削除、および更新。 
     
-13. [通知](https://msdn.microsoft.com/library/WebSvcNotifications.Notifications.aspx)通知と事前通知を管理します。 取得、設定、登録、および通知結果の登録を解除するメソッドが含まれています。 
+13. [通知](https://msdn.microsoft.com/library/WebSvcNotifications.Notifications.aspx)アラートとリマインダーを管理します。 アラート結果を取得、設定、登録、および登録解除するメソッドが含まれています。 
     
-14. [ObjectLinkProvider](https://msdn.microsoft.com/library/WebSvcObjectLinkProvider.ObjectLinkProvider.aspx)Web オブジェクトとドキュメントと SharePoint サイト上のリスト アイテムへのリンクを管理します。 作成、削除、または、プロジェクト、プロジェクト リンク、タスク、またはタスクにリンクされた web オブジェクトを読み込みます。 
+14. [ObjectLinkProvider](https://msdn.microsoft.com/library/WebSvcObjectLinkProvider.ObjectLinkProvider.aspx) SharePointサイト上のドキュメントおよび一覧アイテムのWebオブジェクトおよびリンクを管理します。 プロジェクト、プロジェクトリンク、タスク、またはタスク関連Webオブジェクトを作成、削除、または読み取り。 
     
     > [!NOTE]
-    > **ObjectLinkProvider**サービスは、Project Server 2013 で使用されていません。 詳細については、[ [Project 2013 の開発者用の更新プログラム](updates-for-developers-in-project-2013.md)の*非推奨機能*のセクションを参照してください。 
+    > **ObjectLinkProvider**サービスは、Project Server 2013では推奨されていません。 詳しくは、[Project 2013における開発者向け更新](updates-for-developers-in-project-2013.md)の*非推奨機能*の部分を参照してください。 
   
-15. **OData**レポート テーブルおよびビューの内部の**OData**インターフェイスを提供します。 **OData**サービスへのアクセスは、バックエンド**ProjectServiceApplication** URL を通じてのみ使用できます。 PSI でプライベートの**OData**サービスは、 **ODataClient.ProcessOdataMessage**、レポートのデータに対する要求を処理するのには Project Server を内部的に使用する 1 つのメソッドを提供します。 **ProjectData**サービスをフロント エンド サーバーにより HTTP 要求を行います。 
+15. **OData**記録テーブルおよびビューの内部**OData**インターフェースを提供します。 **OData**サービスへのアクセスは、バックエンドの**ProjectServiceApplication** URLを通じてのみ可能です。 PSIの個別**OData**サービスは、**ODataClient.ProcessOdataMessage**という1つのメソッドを提供します。これは、Project Serverがデータ記録を処理するために内部で使用するメソッドです。 HTTP要求はフロントエンド**ProjectData**サービスを通過します。 
     
-    **ProjectData**サービスおよびレポートのデータを読み取るための OData プロトコルについては、 [ProjectData - プロジェクトの OData サービスの参照](https://msdn.microsoft.com/library/office/jj163015.aspx)を参照してください。
+    記録データを読み取るための**ProjectData**サービスおよびODataプロトコルについては、[ProjectData  -  Project ODataサービスの参照](https://msdn.microsoft.com/library/office/jj163015.aspx)をご覧ください。
     
-16. **P12Upgrade**Office Project Server 2007 インストールをアップグレードするのには Project Server 2013 のインストーラーの内部メソッドを提供します。 **P12Upgrade**サービスへのアクセスは、 **ProjectServiceApplication**の URL からのみ使用できます。 **P12Upgrade**メソッドは、サードパーティの開発はサポートされていません。 
+16. **P12Upgrade** Project Server 2013インストーラーがOffice Project Server 2007の環境をアップグレードするための内部メソッドを提供します。 **P12Upgrade**サービスへのアクセスは、**ProjectServiceApplication** URLを通じてのみ可能です。 **P12Upgrade**メソッドは、他社環境での開発ではサポートされていません。 
     
-17. [PortfolioAnalyses](https://msdn.microsoft.com/library/WebSvcPortfolioAnalyses.PortfolioAnalyses.aspx)オプティマイザー、プランナー、および分析ソリューションのプロジェクトの依存関係の CRUD メソッドが含まれています。 
+17. [PortfolioAnalyses](https://msdn.microsoft.com/library/WebSvcPortfolioAnalyses.PortfolioAnalyses.aspx)プロジェクトの依存関係、およびオプティマイザー、プランナー、および分析方法のためのCRUDメソッドが含まれています。 
     
-18. [プロジェクト](https://msdn.microsoft.com/library/WebSvcProject.Project.aspx)プロジェクトを管理します。 チェック アウト、チェックイン、作成、削除を読み取ると、またはプロジェクトの下書きデータベース テーブルまたはパブリッシュされたテーブル内のプロジェクトを更新します。 発行のためにキューにメッセージを配置します。 
+18. [Project](https://msdn.microsoft.com/library/WebSvcProject.Project.aspx)プロジェクトを管理します。 プロジェクトデータベースの仮テーブルまたは発行済テーブル内のプロジェクトをチェックアウト、チェックイン、作成、削除、読み取り、または更新します。 発行待ち状態にメッセージを入れます。 
     
-    作成または (タスク、リソース、割り当て、およびなど)、プロジェクト内のエンティティを削除します。 情報を取得または、プロジェクト チームまたはプロジェクトのサイト アドレスを更新します。 リソースが割り当てを持つプロジェクトのステータス、ドラフトのテーブル、すべてのサマリー タスク、指定されたリソースへの割り当てに利用可能なタスクまたはすべてのプロジェクト内のプロジェクトの一覧を取得します。
+    プロジェクト内の命名（タスク、リソース、割り当てなど）を作成または削除します。 プロジェクトチームまたはプロジェクトサイトのアドレスに関する情報を取得または更新します。 プロジェクトの状態、下書きテーブル内のプロジェクトのリスト、すべてのサマリー タスク、指定されたリソースに割り当てることができるタスク、またはリソースに割り当てがあるすべてのプロジェクトを取得します。
     
     コミットメントを作成および管理したり、SharePoint タスク リストからプロジェクトの提案とプロジェクトを作成したり、プロジェクト/マスター プロジェクトの関係を検索したりします。
     
-19. **psiserviceapp**プロジェクトをオンラインで内部的に使用します。 **Psiserviceapp**クラスおよびメンバーは、サードパーティの開発はサポートされていません。 
+19. **psiserviceapp** Project Onlineによって内部的に使用されます。 **psiserviceapp**のクラスとメンバは、他社環境での開発ではサポートされていません。 
     
-20. **PWA**タスク更新承認ルールと進捗レポートを管理するためのメソッドを含む、Project Web App に対して最適化された多くのメソッドが含まれています。 **PWA**メソッドが特別なことがよくありますし、少し冗長に他の PSI サービスと同じメソッドと比較します。 **PWA**メソッドを使用して、または、他の PSI メソッドと同じデータセットの多くを取得します。 
+20. **PWA** Project Web App用に最適化された多くのメソッドが含まれています。これには、タスク更新の承認規則やステータスレポートの管理方法などが含まれます。 **PWA**メソッドは多くの場合特殊化されており、他のPSIサービスの同等のメソッドと比べてやや冗長です。 **PWA**メソッドは、他のPSIメソッドと同じデータセットを多数使用するか返します。 
     
-    **PWA** サービスへのアクセスは、**ProjectServiceApplication** URL を使用してだけ行えます。**PWA** のクラスとメンバーは、サードパーティの開発用としてはサポートされていません。 
+    **PWA**サービスへのアクセスは、**ProjectServiceApplication** URLを通じてのみ可能です。 **PWA**のクラスとメンバーは、他社環境での開発ではサポートされていません。 
     
-21. [QueueSystem](https://msdn.microsoft.com/library/WebSvcQueueSystem.QueueSystem.aspx)Project Server キューを管理します。 指定されたプロジェクトのジョブ数、ジョブやジョブ グループの待ち時間、すべてのジョブ、指定されたジョブ、呼び出し元が所有するジョブまたはジョブのステータスを取得します。 ジョブの相互関係を管理し、キューを構成します。 
+21. [QueueSystem](https://msdn.microsoft.com/library/WebSvcQueueSystem.QueueSystem.aspx) Project Serverのキューを管理します。 ジョブ数、ジョブやジョブ グループの待ち時間、すべてのジョブの進捗状況、指定されたジョブ、呼び出し元が所有するジョブ、または指定されたプロジェクトのジョブを取得します。 ジョブの相互関係を管理し、キューを構成します。 
     
-22. [リソース](https://msdn.microsoft.com/library/WebSvcResource.Resource.aspx)エンタープライズ リソースを管理します。 チェック アウト、チェックイン、更新、またはリソース、または Project Server のユーザーと、承認の設定を作成します。名前または GUID でリソースを検索します。リソースまたはユーザー データとリソース分割構造 (RBS) と関連するセキュリティ情報を読み取りますリソースに対するすべての割り当てを取得します。およびユーザーのパスワードをリセットします。 **リソース**クラスには、ユーザーの委任の CRUD メソッドが含まれています。 
+22. [Resource](https://msdn.microsoft.com/library/WebSvcResource.Resource.aspx)業務用リソースを管理します。 リソースまたはProject Serverユーザーとその認証設定をチェックアウト、チェックイン、更新、または作成。これは名前またはGUIDでリソースを見つけます。リソースまたはユーザーデータ、およびリソース細分化構造（RBS）と関連するセキュリティ情報の読み取り。これはリソースに対するすべての割り当てを取得し、またユーザーパスワードをリセットします。 **Resource**クラスには、ユーザー委任用のCRUDメソッドが含まれています。 
     
-23. [ResourcePlan](https://msdn.microsoft.com/library/WebSvcResourcePlan.ResourcePlan.aspx)リソース計画を管理します。 チェック アウト、チェックイン、発行、およびリソース計画の CRUD メソッドが含まれています。 
+23. [ResourcePlan](https://msdn.microsoft.com/library/WebSvcResourcePlan.ResourcePlan.aspx)リソースプランを管理します。 リソースプランのチェックアウト、チェックイン、発行、およびCRUDメソッドの追加をします。 
     
-24. [セキュリティ](https://msdn.microsoft.com/library/WebSvcSecurity.Security.aspx)セキュリティ テンプレート、セキュリティ カテゴリ、組織、およびグローバル アクセス許可、およびグループのアクセス許可の CRUD メソッドが含まれています。 **セキュリティ**クラスには、プロジェクトのカテゴリのメソッドが含まれています。 
+24. [Security](https://msdn.microsoft.com/library/WebSvcSecurity.Security.aspx)セキュリティテンプレート、セキュリティカテゴリ、組織および総括権限、およびグループの権限に対するCRUDメソッドを含みます。 **Security**クラスにはプロジェクトカテゴリのメソッドが含まれています。 
     
-25. [状態管理](https://msdn.microsoft.com/library/WebSvcStatusing.Statusing.aspx)ステータスの更新と割り当てを管理します。 進捗の更新または承認を適用、送信のステータスを更新、送信された更新のサマリー情報を設定、承認済みの更新プログラムまたは特定のユーザーの承認履歴を削除または一連のプロジェクトのすべての状態情報を削除します。 作成、取得、またはデリゲートの割り当てです。割り当ての作業期間を設定します。 現在のユーザーの新しい割り当てを取得します。割り当てまたはタスクのトランザクション履歴、時間単位の実績、またはサマリー タスク階層を取得します。 
+25. [Statusing](https://msdn.microsoft.com/library/WebSvcStatusing.Statusing.aspx)状況の更新および割り当てを管理します。 割り当てを作成、取得、または代理します。 割り当ての動作期間を設定します。 現在のユーザーの新しい割り当てを取得したり、割り当てやタスクのトランザクション履歴、時間配分された実績作業時間、サマリー タスク階層を取得したりします。 
     
     タイムシート データをプレビューまたはインポートしたり、ユーザーの稼働日および非稼働日のスケジュールを読み取ったりします。承認待ちの進捗状況の更新、提出された更新の情報、または提出された更新に含まれる変更のトランザクション レコードを検索します。チームの状態を読み取ります。
     
-26. [タイムシート](https://msdn.microsoft.com/library/WebSvcTimeSheet.TimeSheet.aspx)タイムシートを管理します。 タイムシートの CRUD メソッドが含まれていて、またはタイムシートを取り消します。 や承認の保留中の遅延はタイムシートを検索します。日付または期間でタイムシートを検索します。 タイムシート承認者のリストを取得します。 タイムシートの実績作業時間をプリロードし、タイムシート行を検証します。 **タイムシート**のクラスには、 **ReadProjectTimesheetLines**メソッドと**SubmitTimesheetLines**メソッドの読み取りと、偽装を必要とせず、別のリソースのタイムシートを送信するが含まれています。 
+26. [TimeSheet](https://msdn.microsoft.com/library/WebSvcTimeSheet.TimeSheet.aspx)タイムシートを管理します。 遅れている、または承認待ちのタイムシートを検索します。 日付または期間でタイムシートを検索します。 タイムシート承認者のリストを取得します。 実績をプリロードし、タイムシート行を検証します。 **TimeSheet** クラスには、偽装を必要としないで別のリソースのタイムシートを読み取ったり送信したりするための **ReadProjectTimesheetLines** メソッドおよび **SubmitTimesheetLines** メソッドが含まれます。 
     
-27. **ビュー**サービスの**表示**は、Project Web App 内でのみ使用するよう設計されています。 **ビュー**クラスのメソッドは、ビューの管理しレポートを表示し、ビュー内のフィールドを参照します。 
+27. **View** **View**サービスは、Project Web App内でのみ使用するように設計されています。 **View **クラスのメソッドは、ビューを管理し、レポートを表示し、ビュー内のフィールドを読み取ります。 
     
-    **View** サービスへのアクセスは、**ProjectServiceApplication** URL を使用してだけ行えます。**View** メソッドは、サードパーティの開発用にはサポートされていません。 
+    **View**サービスへのアクセスは、**ProjectServiceApplication** URLを通じてのみ可能です。 **View**メソッドは、他社製環境での開発ではサポートされていません。 
     
-28. **WinProj****WinProj**サービスは、Project Professional でのみ使用するために設計されています。 サード パーティの開発者は、Project Server を使用するプログラミングの**WinProj**メソッドを使用しないでください。 
+28. **WinProj** **WinProj**サービスは、Project Professional専用のサービスです。 他社環境での開発者は、Project Serverでのプログラミングに**WinProj**メソッドを使用しないでください。 
     
     一部の **WinProj** メソッドは、**Project** および **Resource** サービスでも使用される、**ProjectRelationsDataSet** や **ResourceDataSet** のようなデータセットを使用しますが、Project Professional の特定のプロパティと機能を必要とします。 
     
-    **WinProj** サービスへのアクセスは、**ProjectServiceApplication** URL を使用してだけ行えます。**WinProj** メソッドは、サードパーティの開発用にはサポートされていません。 
+                 **WinProj** サービスへのアクセスは、**ProjectServiceApplication** URL を使用してだけ行えます。              **WinProj** メソッドは、サードパーティの開発用にはサポートされていません。 
     
-29. [ワークフロー](https://msdn.microsoft.com/library/WebSvcWorkflow.Workflow.aspx)エンタープライズ プロジェクトの種類およびワークフローのフェーズおよびステージを管理する CRUD メソッドが含まれています。 ワークフローの実行、ステータス情報を設定し、需要管理ワークフローでのプロジェクト詳細ページ (PDP) の段階を管理します。 Project Server ワークフローを開発するには、開発者は宣言型ワークフローは SharePoint Designer 2013 を使用して、または、[Office 開発者ツールを使用して.NET Framework 4 と、[を使用して開発の Visual Studio 2012 のMicrosoft.ProjectServer.Client.WorkflowActivities](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.WorkflowActivities.aspx) 、CSOM のクラスです。 
+29. [Workflow](https://msdn.microsoft.com/library/WebSvcWorkflow.Workflow.aspx)業務プロジェクトタイプ、および作業のフェーズとステージを管理するためのCRUDメソッドが含まれています。 ワークフローを実行し、ステータス情報を設定し、需要管理ワークフローのプロジェクト詳細ページ（PDP）ステージを管理します。 Project Serverワークフローを構築するには、開発者は宣言型ワークフローにSharePoint Designer 2013を使用するか、.NET Framework 4での開発用にOffice Developer Tools for Visual Studio 2012を用い、CSOM内の[Microsoft.ProjectServer.Client.WorkflowActivities](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.WorkflowActivities.aspx) classクラスを使用できます。 
     
-30. [WssInterop](https://msdn.microsoft.com/library/WebSvcWssInterop.WssInterop.aspx)プロジェクト サイトを管理します。 作成し、プロジェクト サイトを削除します。 情報を取得し、SharePoint の設定および管理サイトを更新します。 同期し、[プロジェクト サイトのメンバーシップ、およびグループを更新します。 
+30. [WssInterop](https://msdn.microsoft.com/library/WebSvcWssInterop.WssInterop.aspx)プロジェクトサイトを管理します。 プロジェクトサイトを作成および削除します。 SharePoint設定と管理サイトに関する情報を取得して更新します。 プロジェクトサイトのメンバーシップとグループを同期して更新します。 
     
-各サービスの名前空間には、**データセット**スキーマおよびイベント ハンドラー クラスのサービスを使用するすべてが含まれます。 たとえば、 `Calendar.svc` (または`Calendar.asmx?wsdl`は、ASMX web サービス)**カレンダー**サービスについて説明します。 **WebSvcCalendar**の参照の名前を指定する場合、プライマリ**予定表** **CheckInCalendars**のメソッドを持つクラス、 **CheckOutCalendars**、およびようにプロキシの名前空間が含まれます。 **WebSvcCalendar**プロキシの名前空間には、 **CalendarDataSet**クラスとそのすべてのサブクラスも含まれています。 
+各サービスの名前空間には、サービスが使用するすべての**DataSet**スキーマとイベントハンドラクラスが含まれています。 例えば、`Calendar.svc`（またはASMX Webサービスの場合は`Calendar.asmx?wsdl`）は、**カレンダー**サービスを表します。 リファレンスに**WebSvcCalendar**という名前を付けると、プロキシ名前空間には、メソッド**CheckInCalendars**、**CheckOutCalendars**などを持つプライマリ**Calendar**クラスが含まれます。 **WebSvcCalendar**プロキシ名前空間には、**CalendarDataSet**クラスとそのすべてのサブクラスも含まれています。 
   
-一部の PSI サービスには、重複する **DataSet** クラスが含まれます。たとえば、**Project** サービスと **Statusing** サービスのどちらにも、**ProjectDataSet** クラスが含まれます。これは、**Project** サービスと **Statusing** サービスの両方のメソッドに **ProjectDataSet** への参照が含まれ、参照を設定してアプリケーションをコンパイルすると作成されるプロキシ アセンブリに関連するデータセットが含まれるためです。**Project** サービスと **Statusing** サービスでは、**ProjectDataSet.ProjectRow** クラスの異なるフィールドの値が必要になる場合があります。 
+一部のPSIサービスには、重複した**DataSet**クラスが含まれています。 例えば、**Project**サービスと**Statusing**サービスはどちらも**ProjectDataSet**クラスを含みます。 これは、**Project** サービスと **Statusing** サービスの両方のメソッドに **ProjectDataSet** への参照が含まれ、参照を設定してアプリケーションをコンパイルすると作成されるプロキシ アセンブリに関連するデータセットが含まれるためです。 **Project**サービスおよび**Statusing**サービスでは、**ProjectDataSet.ProjectRow**クラスのさまざまなフィールドに値を指定できます。 
   
 PSI リファレンスの名前空間とクラスをナビゲートするときは (たとえば、**Project** サービスの Web メソッドを参照するとき)、[**コンテンツ**] リストで [**Project Web サービス**] 名前空間を展開した後、**Project** クラスを展開します。 
   
@@ -305,9 +305,9 @@ PSI リファレンスの名前空間とクラスをナビゲートするとき�
 
 - [Project Server 2013 のアーキテクチャ](project-server-2013-architecture.md)
 - [Project Server プログラミング](project-server-programmability.md)   
-- [PSI のすること、しないこと](what-the-psi-does-and-does-not-do.md)   
-- [プロジェクト内の ASMX ベースのコード サンプルの前提条件](prerequisites-for-asmx-based-code-samples-in-project.md)   
-- [プロジェクト内の WCF ベースのコード サンプルの前提条件](prerequisites-for-wcf-based-code-samples-in-project.md)   
+- [PSI ができること、できないこと](what-the-psi-does-and-does-not-do.md)   
+- [プロジェクト内のASMXベースコードサンプルの前提条件](prerequisites-for-asmx-based-code-samples-in-project.md)   
+- [プロジェクト内のWCFベースコードサンプルの前提条件](prerequisites-for-wcf-based-code-samples-in-project.md)   
 - [.NET Framework デベロッパー センター](https://msdn.microsoft.com/netframework/aa496123.aspx)
     
 
