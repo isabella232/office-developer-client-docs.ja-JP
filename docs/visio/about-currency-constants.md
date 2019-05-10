@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: d94c740f-29e1-1e7f-39f6-8aa215f3111d
 description: 数値を通貨として書式設定するには、CY 関数を使用して、どの国/地域の通貨を使用するかを指定するオプションの定数を渡します。通貨定数は、国/地域に対応する ID 番号、または ISO 4217 の 3 文字の省略形を示す文字列 (引用符で囲む) として指定できます。
-ms.openlocfilehash: 4492f4901779d94a32b881c973eab9e32a9c0514
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ce27cbcb03b4c41cce3cf08fbcd234678fcdc773
+ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421796"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19804751"
 ---
 # <a name="about-currency-constants"></a>通貨定数について
 
@@ -26,8 +26,8 @@ ms.locfileid: "33421796"
 
 |**ID**|**略語**|**通貨**|
 |:-----|:-----|:-----|
-| 0  <br/> | SYS  <br/> | システム設定を使う  <br/> |
-| 1  <br/> | xxx  <br/> | 数値の形式  <br/> |
+| 0  <br/> | SYS  <br/> | システム設定を使用  <br/> |
+| 1  <br/> | xxx  <br/> | 数値として書式設定  <br/> |
 | 2 - 9  <br/> | 予備  <br/> |
 | 10  <br/> | EUR  <br/> | ユーロ  <br/> |
 | 11  <br/> | USD  <br/> | 米ドル  <br/> |

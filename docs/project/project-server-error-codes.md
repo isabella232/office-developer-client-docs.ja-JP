@@ -12,7 +12,7 @@ f1_keywords:
 keywords:
 - psi、エラー コード、エラー コード、Project Server、PSErrorID、Project Server Interface、エラー コード、Project Server、エラー コード
 ms.assetid: db78a09c-ebef-47cc-8623-40abe117aa08
-description: このトピックでは、Project Server 2013 の Project Server Interface (PSI) のエラー コード表を示します。 テーブルは、機能領域、エラー コードの範囲に配置されます。
+description: このトピックでは、Project Server 2013 の Project Server Interface (PSI) のエラー コード表を示します。 表は、最初に機能領域順、次にエラー コードの範囲順に整理されています。
 localization_priority: Priority
 ms.openlocfilehash: c61821bcb85fa3bd83601659850577eaa93eda61
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
@@ -23,20 +23,20 @@ ms.locfileid: "32301478"
 ---
 # <a name="project-server-error-codes"></a>Project Server のエラー コード
 
-このトピックでは、Project Server 2013 の Project Server Interface (PSI) のエラー コード表を示します。 テーブルは、機能領域、エラー コードの範囲に配置されます。
+このトピックでは、Project Server 2013 の Project Server Interface (PSI) のエラー コード表を示します。 表は、最初に機能領域順、次にエラー コードの範囲順に整理されています。
    
-Project Server 2013 のプロセスと PSI メソッドには、通常は機能領域によって整理されているエラー コード番号があります。 [Microsoft.Office.Project.Server.Library.PSErrorID](https://msdn.microsoft.com/library/microsoft.office.project.server.library.pserrorid_di_pj14mref(v=office.14).aspx) 列挙は [WebSvcProject.PSErrorID](https://msdn.microsoft.com/library/office/websvcproject.pserrorid_di_pj14mref.aspx) で重複しており、エラー コードをアルファベット順に名前で示しています。 ここでは、PSI クラスまたは機能領域、およびエラー ID 番号により整理されている表でエラー コードを示します。 
+Project Server 2013 のプロセスと PSI メソッドでは、通常は機能領域によって整理されているエラー コード番号が使用されます。 [Microsoft.Office.Project.Server.Library.PSErrorID](https://msdn.microsoft.com/library/microsoft.office.project.server.library.pserrorid_di_pj14mref(v=office.14).aspx) 列挙は [WebSvcProject.PSErrorID](https://msdn.microsoft.com/library/office/websvcproject.pserrorid_di_pj14mref.aspx) で重複しており、エラー コードを名前のアルファベット順で示しています。 ここでは、PSI クラスまたは機能領域、およびエラー ID 番号により整理されている表でエラー コードを示します。 
   
 > [!NOTE]
 >  エラー コードの多くは汎用的なもので、複数の原因が考えられることもあります。 エラーの詳細を調べるには、次の方法があります。 
-> - ASMX ベースのアプリケーションでは、**PSClientError** オブジェクトで **System.Web.Services.Protocols.SoapException**を使用して、PSI メソッドを呼び出して、エラーのリストまたは階層を表示します。 [ASMX のエラー コード例](#pj15_ErrorCodes_ASMXExample)を参照してください。 
-> - WCF ベースのアプリケーションでは、**System.ServiceModel.FaultException** を使用して、**PSClientError** オブジェクトを取得し、その他のエラー情報も取得します。 「[WCF のエラー コード例](#pj15_ErrorCodes_WCFExample)」を参照してください。 
+> - ASMX ベースのアプリケーションでは、**PSClientError** オブジェクトで **System.Web.Services.Protocols.SoapException**を使用して、PSI メソッドの呼び出しでのエラーの一覧または階層を表示します。 「[ASMX のエラー コード例](#pj15_ErrorCodes_ASMXExample)」を参照してください。 
+> - WCF ベースのアプリケーションでは、**System.ServiceModel.FaultException** を使用して、**PSClientError** オブジェクトおよび他のエラー情報を取得できます。 「[WCF のエラー コード例](#pj15_ErrorCodes_WCFExample)」を参照してください。 
 > - Project Server コンピューター上のアプリケーション イベント ログを使用する。
 > - 統合ログ サービス (ULS) のトレース ログを使用します。 詳細については、「[Project 2010 の開発を開始する](https://msdn.microsoft.com/library/gg607685.aspx)」の「*エラーの確認*」のセクションを参照してください。 
 > - ULS ログの使用に関する詳細については、Project サポートのブログ記事「[Project Server 2010: What to Expect when you get the Unexpected (Project Server 2010: 予期しないエラーが発生した場合の心得)](https://blogs.msdn.com/b/brismith/archive/2010/03/24/project-server-2010-what-to-expect-when-you-get-the-unexpected.aspx)」を参照するか、ブログで "reading ULS logs (ULS のログを読む)" を検索してください。 
-> - ULS データ内の特定の問題を検出または監視するためには、[ULS ビューアー](https://www.codeproject.com/Articles/458052/ULS-Log-Viewer)を使用します。 
-> - Microsoft SQL Server Profiler を使用して、catch またはデータベースのエラーを監視します。 詳細については、「[SQL Server Profiler](https://msdn.microsoft.com/library/3ad5f33d-559e-41a4-bde6-bb98792f7f1a.aspx)」を参照してください。 
-> - エラー コードの多くは、内部でのみ使用されます。 たとえば、**ExchangeSync** と **PWA** の Web サービスはサードパーティの開発に対応していないので、これらの領域のメソッド (**Rules** メソッドや **StatusReports** メソッドなど) のエラー コードを目にする可能性はほとんどありません。 ただし、この記事の表には、万全を期すためにすべての Project Server のエラー コードが含まれています。 
+> - ULS データ内の特定の問題を検出または監視するには、[ULS ビューアー](https://www.codeproject.com/Articles/458052/ULS-Log-Viewer)を使用します。 
+> - Microsoft SQL Server Profiler を使用して、データベースのエラーの検出または監視を行います。 詳細については、「[SQL Server Profiler](https://msdn.microsoft.com/library/3ad5f33d-559e-41a4-bde6-bb98792f7f1a.aspx)」を参照してください。 
+> - エラー コードの多くは、内部でのみ使用されます。 たとえば、**ExchangeSync** と **PWA** の Web サービスはサードパーティの開発に対応していないので、これらの領域のメソッド (**Rules** メソッドや **StatusReports** メソッドなど) のエラー コードを目にする可能性はほとんどありません。 ただし、この記事の表には、完全な情報を提供するためにすべての Project Server のエラー コードが含まれています。 
   
 ## <a name="table-1-error-code-functional-areas-and-related-number-ranges"></a>表 1. エラー コードの機能領域と関連する数値の範囲
 
@@ -50,7 +50,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |[表 8: 割り当て](#pj15_ErrorCodes_Assignments) <br/> |120～199  <br/> |
 |[表 9: カレンダー](#pj15_ErrorCodes_Calendar) <br/> |77、13000 ～ 13999  <br/> |
 |[表 10: キューブ作成サービス (CBS)](#pj15_ErrorCodes_CBS) <br/> |17000～17999  <br/> |
-|[表 11: チェックイン - チェックアウト](#pj15_ErrorCodes_CICO) <br/> |10100 ～ 10199  <br/> |
+|[表 11: チェックインとチェックアウト](#pj15_ErrorCodes_CICO) <br/> |10100 ～ 10199  <br/> |
 |[表 12: ユーザー設定フィールド](#pj15_ErrorCodes_CustomFields) <br/> |11500 ～ 11999  <br/> |
 |[表 13: 参照テーブル](#pj15_ErrorCodes_LookupTables) <br/> |11000～11499  <br/> |
 |[表 14: その他](#pj15_ErrorCodes_Miscellaneous) <br/> |11000 ～ 11499  <br/> |
@@ -87,7 +87,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |7000 ～ 7099  <br/> |[表 27: タスク](#pj15_ErrorCodes_Tasks) <br/> |
 |9100 ～ 9199  <br/> |[表 18: プロジェクト](#pj15_ErrorCodes_Projects) (ただし 9131 は「[表 3: 一般的なエラー コード](#pj15_ErrorCodes_General)」に掲載) <br/> |
 |10000 ～ 10099  <br/> |[表 3: 一般的なエラー コード](#pj15_ErrorCodes_General) <br/> |
-|10100～10199  <br/> |[表 11: チェックイン - チェックアウト](#pj15_ErrorCodes_CICO) <br/> |
+|10100～10199  <br/> |[表 11: チェックインとチェックアウト](#pj15_ErrorCodes_CICO) <br/> |
 |11000 ～ 11499  <br/> |[表 13: 参照テーブル](#pj15_ErrorCodes_LookupTables) <br/> |
 |11500 ～ 11999  <br/> |[表 12: ユーザー設定フィールド](#pj15_ErrorCodes_CustomFields) <br/> |
 |12000 ～ 12099  <br/> |[表 4: アクティブ キャッシュ](#pj15_ErrorCodes_ActiveCache) <br/> |
@@ -156,7 +156,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |GeneralInvalidObject = 20009  <br/> |オブジェクトが無効です。  <br/> |
 |GeneralSecurityAccessDenied = 20010  <br/> |セキュリティ権限によりアクセスが拒否されました。  <br/> |
 |GeneralInvalidOperation = 20011  <br/> |操作が無効です。  <br/> |
-|GeneralInvalidCharacters = 20012  <br/> |一部の文字は使用できません。 TAB 文字以外にも、文字 `\ / " : ; < > | , . ' ? * #` はプロジェクト名では無効です。 <br/> |
+|GeneralInvalidCharacters = 20012  <br/> |無効な文字があります。 TAB 文字以外にも、`\ / " : ; < > | , . ' ? * #` はプロジェクト名では無効な文字です。 <br/> |
 |GeneralNameTooLong = 20013  <br/> |名前が長すぎます。  <br/> |
 |GeneralNameCannotBeBlank = 20014  <br/> |名前を空白にすることはできません。null または空白文字列を使用しないでください。  <br/> |
 |GeneralInvalidOperationOnReadOnlyValue = 20016  <br/> |読み取り専用の値に対して試行された操作は無効です。  <br/> |
@@ -190,7 +190,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |GeneralDalErrorGettingConnectionStrings = 26018  <br/> |データ アクセス層 (DAL) の接続文字列取得エラー。  <br/> |
 |GeneralDalErrorConnectingToDatabase = 26019  <br/> |データベースに接続する DAL のエラー。  <br/> |
 |GeneralDalInvalidArgumentCountCreatingFilter = 26020  <br/> |フィルターを作成するための引数の数が無効です。  <br/> |
-|GeneralDataTableCannotBeNull = 26024  <br/> |**DataTable** は **null** できません。  <br/> |
+|GeneralDataTableCannotBeNull = 26024  <br/> |**DataTable** は **null** にはできません。  <br/> |
 |GeneralDatasetConstraints = 26025  <br/> |**DataSet** の制約にエラーがあります。  <br/> |
 |GeneralInvalidDataSetStructure = 26027  <br/> |**DataSet** の構造が無効です。  <br/> |
 |GeneralDalNoRowsUpdated = 26028  <br/> |データ アクセス レイヤー (DAL) で行が更新されていません。  <br/> |
@@ -259,8 +259,8 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |AdminUserAccountNameNull = 28021  <br/> |ユーザー アカウント名が null です。  <br/> |
 |AdminIsWindowsUserNull = 28022  <br/> |Windows (NTLM) ユーザー アカウントが null と表示されています。  <br/> |
 |AdminInvalidTimePeriodState = 28023  <br/> |期間の状態が無効です。  <br/> |
-|AdminGlobalUpdateFailed = 28024  <br/> |**SetServerCurrency** への呼び出し時、エンタープライズ グローバル更新に失敗しました。  <br/> |
-|AdminGlobalCheckedOut = 28025  <br/> |**SetServerCurrency** への呼び出し時に、エンタープライズ テンプレートはすでにチェックアウトされています。  <br/> |
+|AdminGlobalUpdateFailed = 28024  <br/> |**SetServerCurrency** への呼び出し中に、エンタープライズ グローバル更新に失敗しました。  <br/> |
+|AdminGlobalCheckedOut = 28025  <br/> |**SetServerCurrency** への呼び出し中に、エンタープライズ グローバル テンプレートがすでにチェックアウトされています。  <br/> |
 |AdminInvalidDatabaseTimeout = 28026  <br/> |データベースが無効なためタイムアウトしました。  <br/> |
 |AdminInvalidDatabaseTimeoutType = 28027  <br/> |データベースの種類が無効なためタイムアウトしました。  <br/> |
 |AdminInvalidEntityType = 28028  <br/> |エンティティの種類が無効です。 [EntityCollection](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Library.EntityCollection.aspx) を参照してください。  <br/> |
@@ -275,9 +275,9 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 
 <a name="pj15_ErrorCodes_Archive"></a>
 
-## <a name="table-7-archive-web-service"></a>表 7. アーカイブの Web サービス
+## <a name="table-7-archive-web-service"></a>表 7. アーカイブ Web サービス
 
-|アーカイブの Web サービス (バックアップと復元) のエラー コード|説明|
+|アーカイブ Web サービス (バックアップと復元) のエラー コード|説明|
 |:-----|:-----|
 |ArchiveProjectFailure = 25000  <br/> |プロジェクトのアーカイブ操作が失敗しました。  <br/> |
 |ArchiveProjectsFailed = 25001  <br/> |アーカイブ データベースのプロジェクトを保存できません。  <br/> |
@@ -418,7 +418,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 
 ## <a name="table-11-check-in-and-check-out"></a>表 11. チェックインおよびチェックアウト
 
-|チェックイン - チェックアウトのエラー コード|説明|
+|チェックインおよびチェックアウトのエラー コード|説明|
 |:-----|:-----|
 |CICOCheckedOutToOtherUser = 10100  <br/> |別のユーザーにチェックアウトしました。  <br/> |
 |CICOAlreadyCheckedOutToYou = 10101  <br/> |既に現在のユーザーにチェックアウトしています。  <br/> |
@@ -466,7 +466,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |CustomFieldInvalidID = 11701  <br/> |ユーザー設定フィールドの識別番号が無効です。  <br/> |
 |CustomFieldInvalidUID = 11702  <br/> |ユーザー設定フィールドの GUID が無効です。  <br/> |
 |CustomFieldInvalidType = 11703  <br/> |ユーザー設定フィールドの種類が無効です。  <br/> |
-|CustomFieldInvalidTypeColumnFilledIn = 11704  <br/> |ユーザー設定フィールドの [種類] 列の値が無効です。 「[WCF のエラー コード例](#pj15_ErrorCodes_WCFExample)」の例を参照してください。  <br/> |
+|CustomFieldInvalidTypeColumnFilledIn = 11704  <br/> |ユーザー設定フィールドの種類の列の値が無効です。 「[WCF のエラー コード例](#pj15_ErrorCodes_WCFExample)」の例を参照してください。  <br/> |
 |CustomFieldCodeValueDoesNotMatchLookupTable = 11706  <br/> |コードの値が参照テーブルと一致しません。  <br/> |
 |CustomFieldCodeValueIsNotLeafNode = 11707  <br/> |コードの値が参照テーブルの末端ノードではありません。  <br/> |
 |CustomFieldRowAlreadyExists = 11708  <br/> |ユーザー設定フィールド行が既に存在しています。  <br/> |
@@ -480,7 +480,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |CustomFieldFormulaFieldCannotBeRequired = 11718  <br/> |式のフィールドを必須にすることはできません。  <br/> |
 |CustomFieldFormulaFieldCannotBeWorkflowControlled = 11719  <br/> |式のフィールドをワークフローで制御することはできません。  <br/> |
 |CustomFieldCannotSetValueOnFormulaFields = 11720  <br/> |式のフィールドで値を設定できません。  <br/> |
-|CustomFieldNewPerRequestLimitExcedeed = 11721  <br/> |新しいユーザー設定フィールドの要求制限を超えました。 制限は 1 つの要求の [NEW_CF_PER_REQUEST_LIMIT](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Library.CustomField.NEW_CF_PER_REQUEST_LIMIT.aspx) です。  <br/> |
+|CustomFieldNewPerRequestLimitExcedeed = 11721  <br/> |新しいユーザー設定フィールドの要求制限を超えました。 1 つの要求あたり、[NEW_CF_PER_REQUEST_LIMIT](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Library.CustomField.NEW_CF_PER_REQUEST_LIMIT.aspx) までに制限されています。  <br/> |
 |CustomFieldNameIsReservedName = 11722  <br/> |ユーザー設定フィールド名を予約名にすることはできません。  <br/> |
 |CustomFieldNameInvalidForOlapMeasure = 11723  <br/> |OLAP キューブ メジャーに対してユーザー設定フィールド名が無効です。  <br/> |
 |CustomFieldNameInvalidForOlapDimension = 11724  <br/> |OLAP キューブ ディメンションに対してユーザー設定フィールド名が無効です。  <br/> |
@@ -492,7 +492,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |CustomFieldCannotModifyDepartmentUidOnBuiltinFields = 11732  <br/> |組み込みユーザー設定フィールドの部署 GUID は変更できません。  <br/> |
 |CustomFieldCannotHaveBothLookupTableAndMultilineText = 11733  <br/> |ユーザー設定フィールドに参照テーブルと複数行テキストの両方を含めることはできません。  <br/> |
 |CustomFieldCannotHaveBothFormulaAndMultilineText = 11734  <br/> |ユーザー設定フィールドに式と複数行テキストの両方を含めることはできません。  <br/> |
-|CustomFieldDescriptionExceedsLimit = 11735  <br/> |ユーザー設定フィールドの説明が長すぎます。 **MD_PROP_DESCRIPTION** プロパティの最長は、1000 文字です。  <br/> |
+|CustomFieldDescriptionExceedsLimit = 11735  <br/> |ユーザー設定フィールドの説明が長すぎます。 **MD_PROP_DESCRIPTION** プロパティの最長文字数は 1000 文字です。  <br/> |
 |CustomFieldOnlyTextFieldsCanHaveMultilineText = 11736  <br/> |複数行テキストを格納できるのはテキストのユーザー設定フィールドのみです。  <br/> |
 |CustomFieldOnlyProjectFieldsCanHaveMultilineText = 11737  <br/> |複数行テキストを格納できるのはプロジェクトのユーザー設定フィールドのみです。  <br/> |
 |CustomFieldCannotChangeWorkflowControlledBehaviorForNonProjectCustomFields = 11738  <br/> |ユーザー設定フィールドは、ワークフローによって制御されている非プロジェクトのユーザー設定フィールドの動作を変更できません。  <br/> |
@@ -555,7 +555,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |LookupTableInvalidParentStructUid = 11081  <br/> |参照テーブルの親構造に対して GUID が無効です。  <br/> |
 |LookupTableItemContainsListSeparator = 11082  <br/> |参照テーブルのアイテムに区切り文字が含まれています。  <br/> |
    
-表 14 に示すエラー コードには、プロジェクト詳細ページ (PDP)、Exchange の同期、Project Web App タイムライン、およびデータベースのエラーが含まれます。 表 14 の他のエラー コードの多くは、内部で使用されます。
+表 14 に示すエラー コードには、プロジェクト詳細ページ (PDP)、Exchange の同期、Project Web App タイムライン、およびデータベースのエラーが含まれます。 表 14 の "その他" のエラー コードの多くは、内部で使用されます。
   
 > [!NOTE]
 > 監査のエラー コードは Project Server 2013 では使用されません。 
@@ -648,7 +648,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |OptimizerEngineBinarySubOptimal = 29107  <br/> |オプティマイザーの計算結果が最適ではありません。  <br/> |
 |OptimizerEngineBinaryInternalError = 29108  <br/> |オプティマイザーの計算に内部エラーがあります。  <br/> |
 |OptimizerInvalidRange = 29200  <br/> |オプティマイザーの日付範囲が無効です。  <br/> |
-|OptimizerNonNormalizedWeights = 29201  <br/> |[AnalysisDataSet.AnalysisPriorityDataDataTable](https://msdn.microsoft.com/library/WebSvcPortfolioAnalyses.AnalysisDataSet.AnalysisPriorityDataDataTable.aspx) 内の **WEIGHT** 値が正規にされていません。  <br/> |
+|OptimizerNonNormalizedWeights = 29201  <br/> |[AnalysisDataSet.AnalysisPriorityDataDataTable](https://msdn.microsoft.com/library/WebSvcPortfolioAnalyses.AnalysisDataSet.AnalysisPriorityDataDataTable.aspx) 内の **WEIGHT** 値が正規化されていません。  <br/> |
 |OptimizerCannotEditPrioritization = 29300  <br/> |ドライバーの優先度設定を編集できません。  <br/> |
 |OptimizerCannotDeletePrioritization = 29301  <br/> |ドライバーの優先度設定を削除できません。  <br/> |
 |OptimizerCannotCreatePrioritization = 29302  <br/> |ドライバーの優先度設定を作成できません。  <br/> |
@@ -702,7 +702,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |OptimizerInvalidPlannerData = 29615  <br/> |オプティマイザーのプランナーのデータが無効です。  <br/> |
 |OptimizerCannotChangeImpactData = 29616  <br/> |プロジェクトの影響度のデータは変更できません。  <br/> |
 |OptimizerInvalidProjectsNumber = 29617  <br/> |プロジェクトの数が無効です。  <br/> |
-|OptimizerCannotAddImpactCFUIDToCFAnalysis = 29618  <br/> |プロジェクト影響度のユーザー設定フィールドの GUID ([PROJECT_IMPACT_CF_UID](https://msdn.microsoft.com/library/WebSvcPortfolioAnalyses.AnalysisDataSet.AnalysisRow.PROJECT_IMPACT_CF_UID.aspx)) をポートフォリオ分析には追加できません。  <br/> |
+|OptimizerCannotAddImpactCFUIDToCFAnalysis = 29618  <br/> |プロジェクト影響度のユーザー設定フィールドの GUID ([PROJECT_IMPACT_CF_UID](https://msdn.microsoft.com/library/WebSvcPortfolioAnalyses.AnalysisDataSet.AnalysisRow.PROJECT_IMPACT_CF_UID.aspx)) をポートフォリオ分析で追加できません。  <br/> |
 |OptimizerInvalidDepartmentUid = 29619  <br/> |[DEPARTMENT_UID](https://msdn.microsoft.com/library/WebSvcPortfolioAnalyses.AnalysisDataSet.AnalysisRow.DEPARTMENT_UID.aspx) が無効です。  <br/> |
 |OptimizerTooManyProjectsInAnalysis = 29620  <br/> |分析に含まれるプロジェクトが多すぎます。  <br/> |
 |QueueAnalysisCannotDeleteAnalysis = 29680  <br/> |[QueueDeleteAnalyses](https://msdn.microsoft.com/library/WebSvcPortfolioAnalyses.PortfolioAnalyses.QueueDeleteAnalyses.aspx) メソッドが分析を削除できません。  <br/> |
@@ -759,7 +759,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |PlannerInvalidProjectSNET = 28008  <br/> |プロジェクトの "指定日以後に開始" の日付が無効です。  <br/> |
 |PlannerInvalidProjectFNLT = 28009  <br/> |プロジェクトの "指定日までに終了" の日付が無効です。  <br/> |
 |PlannerInvalidAnalysisStartDate = 28010  <br/> |プロジェクトの [START_DATE](https://msdn.microsoft.com/library/WebSvcPortfolioAnalyses.PlannerSolutionDataSet.SolutionProjectRequirementsByRoleRow.START_DATE.aspx) が無効です。  <br/> |
-|PlannerInvalidAnalysisDuration = 28011  <br/> |[DURATION](https://msdn.microsoft.com/library/WebSvcPortfolioAnalyses.PlannerSolutionDataSet.SolutionProjectsRow.DURATION.aspx) がポートフォリオ分析に対して無効です。  <br/> |
+|PlannerInvalidAnalysisDuration = 28011  <br/> |[DURATION](https://msdn.microsoft.com/library/WebSvcPortfolioAnalyses.PlannerSolutionDataSet.SolutionProjectsRow.DURATION.aspx) はポートフォリオ分析では無効です。  <br/> |
 |PlannerInvalidHorizonStartDate = 28012  <br/> |計画対象期間の開始日が無効です。  <br/> |
 |PlannerInvalidHorizonEndDate = 28013  <br/> |計画対象期間の終了日が無効です。  <br/> |
 |PlannerInvalidHorizonTimeScale = 28014  <br/> |計画対象期間のタイム スケールが無効です。  <br/> |
@@ -843,7 +843,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |ProjectOptCurrencyDigitsInvalid = 1037  <br/> |オプションの通貨桁数が無効です。  <br/> |
 |ProjectOptCurrencySymbolTooLong = 1038  <br/> |オプションの通貨記号が長すぎます。  <br/> |
 |ProjectCannotDelete = 1039  <br/> |プロジェクトを削除できません。通常のプロジェクトまたはテンプレート サーバー側のプロジェクトのみを削除できます。  <br/> |
-|ProjectCannotAdd = 1040  <br/> |サーバー側のプロジェクトの **AddToProject** メソッドは使用できません。  <br/> |
+|ProjectCannotAdd = 1040  <br/> |サーバー側のプロジェクトで **AddToProject** メソッドを使用できません。  <br/> |
 |ProjectOptCurrencySymbolInvalid = 1041  <br/> |オプションの通貨記号が無効です。  <br/> |
 |ProjectHasNoWriteLock = 1042  <br/> |プロジェクトには書き込みロックがありません。  <br/> |
 |ProjectFilterInvalid = 1043  <br/> |プロジェクト フィルターが無効です。  <br/> |
@@ -857,7 +857,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |ProjectIsNotPublished = 1051  <br/> |プロジェクトが発行されていません。  <br/> |
 |ProjectExceededLWPTaskLimit = 1052  <br/> |プロジェクトの提案 (ライトウェイト プロジェクト) のタスクの制限を超過しました。  <br/> |
 |ProjectOptFinishDateInvalid = 1053  <br/> |プロジェクト オプションの終了日付が無効です。  <br/> |
-|ProjectExceededItemsLimit = 1054  <br/> |処理するアイテムの制限を超えました。 Project Server のサービス アプリケーションは **ProjectDataSet** を使用して、すべてのテーブルの合計が 1000 を超えるアイテムを追加または更新します。 1000 以上のアイテムを処理するには、複数の呼び出し (例: **QueueUpdateProject**) を使用します。  <br/> |
+|ProjectExceededItemsLimit = 1054  <br/> |処理するアイテムの制限を超えました。 Project Server のサービス アプリケーションは **ProjectDataSet** を使用して、すべてのテーブルでの合計が 1000 を超えるアイテムを追加または更新できません。 1000 以上のアイテムを処理するには、複数の呼び出し (例: **QueueUpdateProject**) を使用します。  <br/> |
 |ProjectColumnNotReadOnly = 1055  <br/> |列は読み取り専用ではありません。  <br/> |
 |ProjectInvalidOwner = 1056  <br/> |プロジェクトの所有者が無効です。  <br/> |
 |ProjectCantEditPctWrkCompForNonWrkRscs = 1057  <br/> |実際の作業が割り当てられていないタスクの **PctWorkComplete** は編集できません。  <br/> |
@@ -910,7 +910,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 
 <a name="pj15_ErrorCodes_RDS"></a>
 
-## <a name="table-19-reporting-data-service-rds"></a>表 19. データ サービス (RDS) のレポート
+## <a name="table-19-reporting-data-service-rds"></a>表 19. レポート データ サービス (RDS)
 
 |RDS エラー コード|説明|
 |:-----|:-----|
@@ -950,7 +950,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 
 <a name="pj15_ErrorCodes_Resources"></a>
 
-## <a name="table-20-resource"></a>表20. リソース
+## <a name="table-20-resource"></a>表 20. リソース
 
 |リソースのエラー コード|説明|
 |:-----|:-----|
@@ -1059,7 +1059,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |RulesInvalidRuleType = 21003  <br/> |規則の種類が無効です。 Project Web App では内部使用のみです。  <br/> |
 |RulesInvalidConditionType = 21004  <br/> |規則の条件の種類が無効です。 Project Web App では内部使用のみです。  <br/> |
 |RulesInvalidOperatorType = 21005  <br/> |規則の演算子の種類が無効です。 Project Web App では内部使用のみです。  <br/> |
-|RulesInvalidListItemType = 21007  <br/> |規則のリストアイテムの種類が無効です。 Project Web App では内部使用のみです。  <br/> |
+|RulesInvalidListItemType = 21007  <br/> |規則のリスト アイテムの種類が無効です。 Project Web App では内部使用のみです。  <br/> |
 |RulesNameInvalidCharacters = 21008  <br/> |規則名に使用されている 1 つまたは複数の文字が無効です。 Project Web App では内部使用のみです。  <br/> |
 |RulesDescriptionInvalidCharacters = 21009  <br/> |規則の説明に使用されている 1 つまたは複数の文字が無効です。 Project Web App では内部使用のみです。  <br/> |
 |RulesInvalidValueType = 21010  <br/> |規則で使用されている値の種類が無効です。 Project Web App では内部使用のみです。  <br/> |
@@ -1166,8 +1166,8 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |StatusingInvalidTransaction = 3120  <br/> |**Statusing** のトランザクションが無効です。  <br/> |
 |StatusingTooManyResults = 3121  <br/> |結果が多すぎます。時間配分状態データを読み込む際に 5000 を超える行が返されます。  <br/> |
 |StatusingInvalidInterval = 3122  <br/> |**Statusing** メソッドの間隔が無効です。 間隔は分単位で、ゼロよりも大きい必要があります。  <br/> |
-|StatusingApplyUpdatesFailed = 3123  <br/> |要求をエンキューする際に、**Statusing** の更新プログラムを適用できませんでした。  <br/> |
-|StatusingApplyUpdatesFailure = 3124  <br/> |キューの処理中に、**Statusing** の更新プログラムを適用できませんでした。  <br/> |
+|StatusingApplyUpdatesFailed = 3123  <br/> |要求をエンキューする際に、**Statusing** の更新を適用できませんでした。  <br/> |
+|StatusingApplyUpdatesFailure = 3124  <br/> |キューの処理中に、**Statusing** の更新を適用できませんでした。  <br/> |
 |StatusingInvalidWorkData = 3125  <br/> |**Statusing** の作業データが無効です。  <br/> |
 |StatusingMissingNameAttribute = 3126  <br/> |**Statusing** の名前属性がありません。  <br/> |
 |StatusingInvalidNameAttribute = 3127  <br/> |**Statusing** の名前属性が無効です。  <br/> |
@@ -1177,7 +1177,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |StatusingInvalidChangeNumber = 3132  <br/> |**Statusing** 変更番号が無効です。  <br/> |
 |StatusingPidNotEditable = 3133  <br/> |**Statusing** プロパティの ID 番号は編集できません。  <br/> |
 |StatusingCannotSetTimephasedDataInManualTasks = 3134  <br/> |**Statusing** の手動タスクでは、時系列データを設定できません。  <br/> |
-|StatusingCannotChangeTaskMode = 3135  <br/> |**Statusing** の手動モードは変更できません。  <br/> |
+|StatusingCannotChangeTaskMode = 3135  <br/> |**Statusing** のタスク モードは変更できません。  <br/> |
    
 表 26 のエラー コードは、**PWA** Web サービス内の **StatusReports** メソッドに関するものです。 このエラーは Project Web App の内部で使用されます。 
 
@@ -1281,9 +1281,9 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 
 <a name="pj15_ErrorCodes_Workflow"></a>
 
-## <a name="table-30-workflow"></a>表 30. Workflow 
+## <a name="table-30-workflow"></a>表 30. ワークフロー 
 
-|Workflow のエラー コード|説明|
+|ワークフローのエラー コード|説明|
 |:-----|:-----|
 |WorkflowPhasesCannotCreatePhase = 35000  <br/> |ワークフロー フェーズを作成できません。  <br/> |
 |WorkflowPhasesCannotUpdatePhase = 35001  <br/> |ワークフロー フェーズを更新できません。  <br/> |
@@ -1316,7 +1316,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |WorkflowCannotChangeWorkflow = 35109  <br/> |ワークフローを変更できません。  <br/> |
 |WorkflowWorkflowStatusPDPNotAllowed = 35110  <br/> |ワークフローの状態に関するプロジェクト詳細ページは許可されていません。  <br/> |
 |WorkflowInvalidWorkflowStatusPDPUid = 35111  <br/> |ワークフローの状態に関するプロジェクト詳細ページの GUID が無効です。  <br/> |
-|WorkflowInvalidStageStatusValue = 35112  <br/> |Workflow ステージの状態の値が無効です。 ワークフロー内でステージの状態を設定するときに、[Workflow.StageStatus](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Library.Workflow.StageStatus.aspx) で使用できる値は **InProgressRequestSent**、**InProgressRunning**、**InProgressWaiting** のみです。  <br/> |
+|WorkflowInvalidStageStatusValue = 35112  <br/> |Workflow ステージの状態の値が無効です。 ワークフロー内でステージの状態を設定するときに [Workflow.StageStatus](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Library.Workflow.StageStatus.aspx) で使用できる値は **InProgressRequestSent**、**InProgressRunning**、**InProgressWaiting** のみです。  <br/> |
 |WorkflowCannotCheckinNotify = 35113  <br/> |プロジェクトがチェックインされたことをワークフローに通知できません。  <br/> |
 |WorkflowCannotCommitNotify = 35114  <br/> |プロジェクトがプランナーまたはオプティマイザーにコミットされたことをワークフローに通知できません。  <br/> |
 |WorkflowExceptionStartingWorkflow = 35115  <br/> |ワークフローの開始時にエラーが発生しました。  <br/> |
@@ -1332,7 +1332,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |EnterpriseProjectTypeCannotDeleteEnterpriseProjectType = 35203  <br/> |エンタープライズ プロジェクトの種類を削除できません。  <br/> |
 |EnterpriseProjectTypeCannotCreateMultipleEnterpriseProjectTypes = 35204  <br/> |複数のエンタープライズ プロジェクトの種類を作成することはできません。  <br/> |
 |EnterpriseProjectTypeCannotUpdateMultipleEnterpriseProjectTypes = 35205  <br/> |複数のエンタープライズ プロジェクトの種類を更新することはできません。  <br/> |
-|EnterpriseProjectTypeInvalidCreatePDPUid = 35206  <br/> |エンタープライズ プロジェクト テンプレート (EPT) には、その EPT を使用してプロジェクトを作成するための、関連付けられたプロジェクト詳細ページ (PDP) が必要です。 ワークフローに関する EPT の場合は、プロジェクトの詳細ページ (PDP) の種類が *Create* でないと、EPT 検証の際にこのエラーが発生します。 その他の PDP の種類としては、プロジェクトの編集に使用する *Normal* と、ワークフローに関連するプロジェクトの詳細を表示する *Workflow Status* があります。  <br/> |
+|EnterpriseProjectTypeInvalidCreatePDPUid = 35206  <br/> |エンタープライズ プロジェクト テンプレート (EPT) の要求事項として、関連付けられたプロジェクト詳細ページ (PDP) はこの EPT を使用してプロジェクトを作成する必要があります。 ワークフローに関する EPT の場合は、プロジェクトの詳細ページ (PDP) の種類が *Create* でない場合に、EPT 検証の際にこのエラーが発生します。 その他の PDP の種類としては、プロジェクトの編集に使用する *Normal* と、ワークフローに関連するプロジェクトの詳細を表示する *Workflow Status* があります。  <br/> |
 |EnterpriseProjectTypeInvalidProjectPlanTemplateUid = 35207  <br/> |[ENTERPRISE_PROJECT_PLAN_TEMPLATE_UID](https://msdn.microsoft.com/library/WebSvcWorkflow.WorkflowDataSet.EnterpriseProjectTypeRow.ENTERPRISE_PROJECT_PLAN_TEMPLATE_UID.aspx) が無効です。  <br/> |
 |EnterpriseProjectTypeInvalidWorkspaceTemplateName = 35208  <br/> |[ENTERPRISE_PROJECT_WORKSPACE_TEMPLATE_NAME](https://msdn.microsoft.com/library/WebSvcWorkflow.WorkflowDataSet.EnterpriseProjectTypeRow.ENTERPRISE_PROJECT_WORKSPACE_TEMPLATE_NAME.aspx) が無効です。  <br/> |
 |EnterpriseProjectTypeInvalidWorkflowAssociationUid = 35209  <br/> |[WORKFLOW_ASSOCIATION_UID](https://msdn.microsoft.com/library/WebSvcWorkflow.WorkflowDataSet.EnterpriseProjectTypeRow.WORKFLOW_ASSOCIATION_UID.aspx) が無効です。  <br/> |
@@ -1344,10 +1344,10 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |EnterpriseProjectTypeCannotDeleteDefault = 35215  <br/> |既定のエンタープライズ プロジェクトの種類は削除できません。  <br/> |
 |EnterpriseProjectTypeCannotChangeDefault = 35216  <br/> |既定のエンタープライズ プロジェクトの種類は変更できません。  <br/> |
 |EnterpriseProjectTypeHasProjectsCannotDelete = 35217  <br/> |プロジェクトを含んでいるエンタープライズ プロジェクトの種類は削除できません。  <br/> |
-|EnterpriseProjectTypeCreatePDPIsRequired = 35218  <br/> |ワークフロー用のエンタープライズ プロジェクト テンプレート (EPT) には、その EPT を使用してプロジェクトを作成するための、*Create* タイプの関連付けられたプロジェクト詳細ページ (PDP) が必要です。 このエラーは、EPT の定義に PDP が含まれていない場合に発生します。 その他の PDP の種類としては、プロジェクトの編集に使用する *Normal* と、ワークフローに関連するプロジェクトの詳細を表示する *Workflow Status* があります。  <br/> |
-|EnterpriseProjectTypeOnlyOneCreatePDPAllowed = 35219  <br/> |EPT 定義により *Create* の種類のプロジェクト詳細ページは 1 つのみです。  <br/> |
-|EnterpriseProjectTypeHasWorkflowOnlyCreatePDPAllowed = 35220  <br/> |ワークフロー用のエンタープライズ プロジェクト テンプレート (EPT) には、その EPT を使用してプロジェクトを作成するための、*Create* タイプの関連付けられたプロジェクト詳細ページ (PDP) が必要です。 このエラーは、ワークフロー EPT 定義内の PDP が別の種類である場合に発生します。 その他の PDP の種類としては、プロジェクトの編集に使用する *Normal* と、ワークフローに関連するプロジェクトの詳細を表示する *Workflow Status* があります。  <br/> |
-|EnterpriseProjectTypeInvalidData = 35221  <br/> |無効なデータがあるエンタープライズ プロジェクトの種類の **WorkflowDataSet** です。  <br/> |
+|EnterpriseProjectTypeCreatePDPIsRequired = 35218  <br/> |ワークフロー用のエンタープライズ プロジェクト テンプレート (EPT) の要求事項として、関連付けられた *Create* タイプのプロジェクト詳細ページ (PDP) はこの EPT を使用してプロジェクトを作成する必要があります。 このエラーは、EPT の定義に PDP が含まれていない場合に発生します。 その他の PDP の種類としては、プロジェクトの編集に使用する *Normal* と、ワークフローに関連するプロジェクトの詳細を表示する *Workflow Status* があります。  <br/> |
+|EnterpriseProjectTypeOnlyOneCreatePDPAllowed = 35219  <br/> |EPT 定義に含めることができる *Create* の種類のプロジェクト詳細ページは、1 つのみです。  <br/> |
+|EnterpriseProjectTypeHasWorkflowOnlyCreatePDPAllowed = 35220  <br/> |ワークフロー用のエンタープライズ プロジェクト テンプレート (EPT) の要求事項として、関連付けられた *Create* タイプのプロジェクト詳細ページ (PDP) はこの EPT を使用してプロジェクトを作成する必要があります。 このエラーは、ワークフロー EPT 定義内の PDP が別の種類である場合に発生します。 その他の PDP の種類としては、プロジェクトの編集に使用する *Normal* と、ワークフローに関連するプロジェクトの詳細を表示する *Workflow Status* があります。  <br/> |
+|EnterpriseProjectTypeInvalidData = 35221  <br/> |エンタープライズ プロジェクトの種類の **WorkflowDataSet** に無効なデータがあります。  <br/> |
 |EnterpriseProjectNoDefaultEnterpriseProjectTypeDefined = 35222  <br/> |エンタープライズ プロジェクトの種類が定義されていません。  <br/> |
 |EnterpriseProjectTypeAtLeastOnePDPIsRequired = 35223  <br/> |エンタープライズ プロジェクトの種類には、少なくとも 1 つのプロジェクト詳細ページが必要です。  <br/> |
 |EnterpriseProjectTypeWorkflowStatusPDPNotAllowed = 35224  <br/> |エンタープライズ プロジェクトの種類では、ワークフローの状態に関するプロジェクト詳細ページは許可されていません。  <br/> |
@@ -1371,7 +1371,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |WSSURIInvalidFormat = 16409  <br/> |SharePoint Web URI の形式が無効です。  <br/> |
 |WSSSyncReportingDataFailed = 16410  <br/> |SharePoint に関するデータ報告の同期に失敗しました。  <br/> |
 |WSSWorkspaceUrlPathTooLong = 16411  <br/> |SharePoint プロジェクト ワークスペースの URL パスが長すぎます。  <br/> |
-|WSSWorkspaceNameContainsIllegalChars = 16412  <br/> |SharePoint プロジェクトのサイト名にある 1 つまたは複数の文字は使用できません。 プロジェクト名で / " : \< \> の文字は使用できません。 | , . ' ? \* #  <br/> |
+|WSSWorkspaceNameContainsIllegalChars = 16412  <br/> |SharePoint プロジェクトのサイト名に使用されている 1 つまたは複数の文字が無効です。 プロジェクト名で / " : \< \> の文字は使用できません。 | , . ' ? \* #  <br/> |
 |WSSInvalidWssServerUid = 16413  <br/> |SharePoint サーバー GUID が無効です。  <br/> |
 |WSSSyncUsersFailed = 16414  <br/> |Project Server ユーザーを SharePoint に同期させることに失敗しました。  <br/> |
 |WSSWrongWebTemplateLCID = 16415  <br/> |SharePoint Web テンプレート ロケール識別子 (言語 ID) が無効です。  <br/> |
@@ -1383,7 +1383,7 @@ Project Server 2013 のプロセスと PSI メソッドには、通常は機能�
 |WSSSyncDataSetListUidMismatch = 16421  <br/> |SharePoint リストの GUID が、**DataSet** の同期中にリストの GUID と一致しません。  <br/> |
 |WSSSyncDataSetMissingProjectSettingsRow = 16422  <br/> |SharePoint と同期する **DataSet** にプロジェクト設定の行がありません。  <br/> |
 |WSSSyncDataSetTaskMappingsNotAllowed = 16423  <br/> |**DataSet** で SharePoint との同期を実行するのに タスク マッピングはできません。  <br/> |
-|WSSSyncDataSetWssListUidEmpty = 16424  <br/> |**DataSet** で SharePoint との同期を実行するのに SharePoint リスト GUID が空です。  <br/> |
+|WSSSyncDataSetWssListUidEmpty = 16424  <br/> |SharePoint と同期する **DataSet** で、SharePoint リスト GUID が空です。  <br/> |
 |WSSSyncDataNotFound = 16425  <br/> |SharePoint との同期処理でデータが不足しています。  <br/> |
 |WSSSyncCriticalDataValidationError = 16426  <br/> |SharePoint との同期処理で重大なデータ検証エラーが発生しました。  <br/> |
 |WSSSyncSharePointListNotAccessibleError = 16427  <br/> |SharePoint リストにアクセスできません。  <br/> |
@@ -1452,7 +1452,7 @@ catch (SoapException ex)
 
 ## <a name="error-code-example-for-wcf"></a>WCF のエラー コード例
 
-WCF ベースのアプリケーションで PSI メソッドを呼び出したときに **System.ServiceModel.FaultException** が発生する場合、エラーのリストを取得するには、**FaultException** オブジェクトから **PSClientError** オブジェクトを抽出します。 続いて、前の ASMX の例のように、[GetAllErrors](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Library.PSClientError.GetAllErrors.aspx) を使用すると **PSErrorInfo** 配列にエラー情報を格納し、エラーを列挙できます。 
+WCF ベースのアプリケーションで PSI メソッドを呼び出したときに **System.ServiceModel.FaultException** が発生する場合、エラーのリストを取得するには、**FaultException** オブジェクトから **PSClientError** オブジェクトを抽出します。 続いて、上の ASMX の例のように、[GetAllErrors](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Library.PSClientError.GetAllErrors.aspx) を使用すると **PSErrorInfo** 配列にエラー情報を格納し、エラーを列挙できます。 
   
 ```cs
 using System;
@@ -1576,7 +1576,7 @@ public static PSLibrary.PSClientError GetPSClientError(FaultException e,
 
 <br/>
 
-**FaultException** オブジェクトには、**PSClientError** オブジェクトのデータ以外に、Project Server への接続の失敗など、他の種類のエラーが含まれることがあります。 前の例の **GetPSClientError** メソッドの _errOut_のパラメーターは、追加の情報を表示します。 たとえば、[QueueCreateProject](https://msdn.microsoft.com/library/WebSvcProject.Project.QueueCreateProject.aspx) メソッドの **CreateProject4Department** のコード サンプルには、**ProjectCustomFields** テーブルのプロパティを設定する場合に、エラーの作成方法を説明するコメントが含まれています。 アプリケーションが実行されると、_errOut_ パラメーターに **errinfo** の要素とその他のデータ (ここではコンソール出力からフォーマットされたもの) が含まれます。 
+**FaultException** オブジェクトには、**PSClientError** オブジェクトのデータ以外に、Project Server への接続の失敗など、他の種類のエラーが含まれることがあります。 上の例の **GetPSClientError** メソッドの _errOut_ パラメーターは、追加の情報を示します。 たとえば、[QueueCreateProject](https://msdn.microsoft.com/library/WebSvcProject.Project.QueueCreateProject.aspx) メソッドの **CreateProject4Department** のコード サンプルには、**ProjectCustomFields** テーブルでプロパティを設定する場合に、エラーの作成方法を説明するコメントが含まれています。 アプリケーションが実行されると、_errOut_ パラメーターに **errinfo** 要素とその他のデータが含まれます (コンソール出力のフォーマットをここに示します)。 
   
 ```XML
 ==============================

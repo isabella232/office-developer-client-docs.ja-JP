@@ -66,7 +66,7 @@ Recordset オブジェクトは、ベース テーブルのレコード、また
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset-edit-method-dao.md">Edit</a></strong></p></td>
-<td><p>現在のレコードを更新可能な <strong><a href="recordset-object-dao.md">Recordset</a></strong> オブジェクトから コピー バッファーにコピーして、後で編集できるようにします。</p></td>
+<td><p>現在のレコードを更新可能な <strong><a href="recordset-object-dao.md">Recordset</a></strong> オブジェクトからコピー バッファーにコピーして、後で編集できるようにします。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset-fillcache-method-dao.md">FillCache</a></strong></p></td>
@@ -94,23 +94,23 @@ Recordset オブジェクトは、ベース テーブルのレコード、また
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset-move-method-dao.md">Move</a></strong></p></td>
-<td><p><strong><a href="recordset-object-dao.md">Recordset</a></strong> オブジェクト内で、カレントレコードの位置を移動します。</p></td>
+<td><p><strong><a href="recordset-object-dao.md">Recordset</a></strong> オブジェクト内で、カレント レコードの位置を移動します。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset-movefirst-method-dao.md">MoveFirst</a></strong></p></td>
-<td><p>指定した <strong>Recordset</strong> オブジェクト内で最初のレコードに移動して、そのレコードをカレントレコードにします。</p></td>
+<td><p>指定した <strong>Recordset</strong> オブジェクト内で最初のレコードに移動して、そのレコードをカレントレ コードにします。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset-movelast-method-dao.md">MoveLast</a></strong></p></td>
-<td><p>指定した <strong>Recordset</strong> オブジェクト内で最後のレコードに移動して、そのレコードをカレントレコードにします。</p></td>
+<td><p>指定した <strong>Recordset</strong> オブジェクト内で最後のレコードに移動して、そのレコードをカレント レコードにします。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset-movenext-method-dao.md">MoveNext</a></strong></p></td>
-<td><p>指定した <strong>Recordset</strong> オブジェクト内で次のレコードに移動して、そのレコードをカレントレコードにします。</p></td>
+<td><p>指定した <strong>Recordset</strong> オブジェクト内で次のレコードに移動して、そのレコードをカレント レコードにします。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset-moveprevious-method-dao.md">MovePrevious</a></strong></p></td>
-<td><p>指定した <strong>Recordset</strong> オブジェクト内で前のレコードに移動して、そのレコードをカレントレコードにします。</p></td>
+<td><p>指定した <strong>Recordset</strong> オブジェクト内で前のレコードに移動して、そのレコードをカレント レコードにします。</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset-nextrecordset-method-dao.md">NextRecordset</a></strong></p></td>
@@ -218,7 +218,7 @@ Recordset オブジェクトは、ベース テーブルのレコード、また
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset-index-property-dao.md">Index</a></strong></p></td>
-<td><p>テーブル タイプの <strong><a href="recordset-object-dao.md">Recordset</a></strong> オブジェクトの現在の <strong><a href="index-object-dao.md">Inded</a></strong> オブジェクトの名前を示す値を設定または取得します。 (Microsoft。Access ワークスペースのみ)。</p></td>
+<td><p>テーブル タイプの <strong><a href="recordset-object-dao.md">Recordset</a></strong> オブジェクトの現在の <strong><a href="index-object-dao.md">Inded</a></strong> オブジェクトの名前を示す値を設定または取得します (Microsoft Access ワークスペースのみ)。</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset-lastmodified-property-dao.md">LastModified</a></strong></p></td>
