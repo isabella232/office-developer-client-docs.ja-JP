@@ -58,14 +58,14 @@ ms.locfileid: "32294839"
 <td><p><em>Type</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>開く <strong>Recordset</strong> の型を示す <strong><a href="recordsettypeenum-enumeration-dao.md">RecordsetTypeEnum</a></strong> 定数。</p><p><strong>注</strong>: Microsoft Access ワークスペースで <strong>Recordset</strong> を開き、タイプを指定しない場合、<strong>OpenRecordset</strong>は可能であればテーブルタイプの <strong>Recordset</strong> を作成します。 If you specify a linked table or query, <strong>OpenRecordset</strong> creates a dynaset-type <strong>Recordset</strong>.</p>
+<td><p>開く <strong>Recordset</strong> の型を示す <strong><a href="recordsettypeenum-enumeration-dao.md">RecordsetTypeEnum</a></strong> 定数。</p><p><strong>注</strong>: タイプを指定せずに <strong>Recordset</strong> を Microsoft Access ワークスペースで開くと、可能な場合は <strong>OpenRecordset</strong> はテーブルタイプの <strong>Recordset</strong> を作成します。 If you specify a linked table or query, <strong>OpenRecordset</strong> creates a dynaset-type <strong>Recordset</strong>.</p>
 </td>
 </tr>
 <tr class="odd">
 <td><p><em>オプション</em></p></td>
 <td><p>省略可能</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>新しい <strong>Recordset</strong> の特性を指定する <strong><a href="recordsetoptionenum-enumeration-dao.md">RecordsetOptionEnum</a></strong> 定数の組み合わせ。</p><p><strong>注</strong>: 定数 <strong>dbConsistent</strong> と <strong>dbInconsistent</strong> は互いに排他的なので、この 2 つを同時に使用するとエラーになります。 Optionsが <strong>dbReadOnly</strong> 定数を使用する場合に LockEdit 引数を指定すると、エラーも発生します。</p>
+<td><p>新しい <strong>Recordset</strong> の特性を指定する <strong><a href="recordsetoptionenum-enumeration-dao.md">RecordsetOptionEnum</a></strong> 定数の組み合わせ。</p><p><strong>注</strong>: 定数 <strong>dbConsistent</strong> と <strong>dbInconsistent</strong> は互いに排他的なので、この 2 つを同時に使用するとエラーになります。 Options が <strong>dbReadOnly</strong> 定数を使用している場合に LockEdit 引数を指定した場合にも、エラーが発生します。</p>
 </td>
 </tr>
 <tr class="even">
@@ -95,7 +95,7 @@ ODBC データ ソースで複数の **Recordset** を開こうとすると、**
 
 
 > [!NOTE]
-> *source* が文字列と非整数値を連結したもので構成される SQL ステートメントを示し、かつシステム パラメーターでコンマなどのピリオド以外の小数点の記号が使用されている場合 (たとえば、strSQL = "PRICE &gt; " &amp; lngPrice で lngPrice = 125,50)、**Recordset** を開こうとするとエラーが発生します。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、SQL で小数点の記号として使用できるのはピリオドのみになるからです。
+> *source* が文字列と非整数値を連結したもので構成される SQL ステートメントを参照し、かつシステム パラメーターでコンマなどのピリオド以外の小数点の記号が使用されている場合 (たとえば、strSQL = "PRICE &gt; " &amp; lngPrice で lngPrice = 125,50)、**Recordset** を開こうとするとエラーが発生します。 連結時に数値がシステムの既定の小数点の記号を使って文字列に変換されますが、SQL で小数点の記号として使用できるのはピリオドのみになるからです。
 
 **リンクの提供元: **[UtterAccess](https://www.utteraccess.com) コミュニティ。 UtterAccess は非常に優れた Microsoft Access wiki およびヘルプ フォーラムです。
 
