@@ -1,17 +1,17 @@
 ---
 title: Project Server のアーキテクチャ
 manager: soliver
-ms.date: 09/17/2015
+ms.date: 05/17/2019
 ms.audience: Developer
 ms.assetid: 2cfa5a6e-2f5c-440c-b35a-bc7a34648f9c
 description: Project Server 2013 は、SharePoint ファーム全体のプロジェクト管理機能を統合し、クライアント側オブジェクト モデル (CSOM) とレポート データ用の OData インターフェイスを持つ Project Online の使用を可能にします。
 localization_priority: Priority
-ms.openlocfilehash: db4dd0eed9c043021f586041fa0e28708fdbd243
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: fd940c9ae74e04587cdfa83354b6ee71da21073c
+ms.sourcegitcommit: e2cff03cb13d6c500942897b234db00476a72f18
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301603"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34100896"
 ---
 # <a name="project-server-architecture"></a>Project Server のアーキテクチャ
 
@@ -226,7 +226,7 @@ Project Server データは、Project データベースで次のようにパー
   
 Project Web App の各インスタンスの Project Server データは、それぞれ別の名前で個別の Project データベースに保存されます。 Project Server に直接アクセスできるクライアント アプリケーションは、レポート テーブルおよびビューを直接読み取ることができます。 リモート アクセスの場合、クライアント アプリケーションは OData インターフェイスおよび REST インターフェイスを使用してレポート用のデータを取得できます。 クライアントは、下書き、発行済み、アーカイブのテーブルおよびビューにアクセスするのに、CSOM または PSI のみを使用する必要があります。 レポート データ サービス (RDS、図 3 に示されていません) は、発行済みデータからのレポート データを、ほぼリアルタイムで更新します。 Project データベースは、別のサーバーに配置することができます。
   
-スキーマは、レポート テーブルおよびビューに関してのみ記述されます。 オンプレミスの Project Server インストールの場合は、Project データベース スキーマで定義されていないエンティティのレポート テーブルおよびビューを追加できます。 カスタム オンプレミス アプリケーションごとに個別のデータベースを作成することもできます。 下書き、発行済み、アーカイブのテーブルおよびビューの変更はサポートされていません。 Project Online では Project データベースへ直接アクセスできないため、レポート テーブルおよびビューは変更できません。 ただし、SQL Azure アカウントがある場合は、Project Online でカスタム使用するために個別のデータベースを作成することができます。
+スキーマは、レポート テーブルおよびビューに関してのみ記述されます。 オンプレミスの Project Server インストールの場合は、Project データベース スキーマで定義されていないエンティティのレポート テーブルおよびビューを追加できます。 カスタム オンプレミス アプリケーションごとに個別のデータベースを作成することもできます。 下書き、発行済み、アーカイブのテーブルおよびビューの変更はサポートされていません。 カスタム アプリケーションまたはレポートでカスタム SQL オブジェクト (例えばテーブルやビューなど)を必要とする場合は、カスタム データベースでこれらを作成することをお勧めします。 Project Online では Project データベースへ直接アクセスできないため、レポート テーブルおよびビューは変更できません。 ただし、SQL Azure アカウントがある場合は、Project Online でカスタム使用するために個別のデータベースを作成することができます。
   
 ### <a name="event-receivers"></a>イベント レシーバー
 <a name="pj15_Architecture_EventHandlers"> </a>
