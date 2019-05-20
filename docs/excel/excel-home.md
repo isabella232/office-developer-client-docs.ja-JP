@@ -1,17 +1,17 @@
 ---
 title: ソリューションを開発し、Excel をカスタマイズする
-ms.date: 10/03/2018
+ms.date: 05/17/2019
 ms.audience: Developer
 ms.topic: overview
 ms.assetid: 597f7b81-3baf-4bf2-9ef0-f7fedad8c36e
 description: ソリューションの開発と Excel のカスタマイズに関する HowTo コンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、および技術記事を検索できます。
 localization_priority: Priority
-ms.openlocfilehash: 8e83acd1420a36dbcbc1fdf2c730b3b6b3022f67
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: af840c94620f445689a5b7dcdd20341485a4a6d7
+ms.sourcegitcommit: e2cff03cb13d6c500942897b234db00476a72f18
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304131"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34100873"
 ---
 # <a name="develop-solutions-and-customize-excel"></a>ソリューションを開発し、Excel をカスタマイズする
 
@@ -31,6 +31,8 @@ ms.locfileid: "32304131"
 - [Excel アドインを使う](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-get-started-overview)
   
 - [プラットフォームの概要](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)
+
+- [JavaScript のカスタム関数](https://docs.microsoft.com/office/dev/add-ins/excel/custom-functions-overview)
   
 ### <a name="code-samples"></a>コード サンプル
   
