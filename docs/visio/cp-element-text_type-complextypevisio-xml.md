@@ -14,44 +14,44 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32282951"
 ---
-# <a name="cp-element-texttype-complextype-visio-xml"></a><span data-ttu-id="22b7f-104">cp 要素 (Text_Type complexType) (' Visio XML ')</span><span class="sxs-lookup"><span data-stu-id="22b7f-104">cp element (Text_Type complexType) ('Visio XML')</span></span>
+# <a name="cp-element-texttype-complextype-visio-xml"></a><span data-ttu-id="4205f-104">cp 要素 (Text_Type complexType) (' Visio XML ')</span><span class="sxs-lookup"><span data-stu-id="4205f-104">cp element (Text_Type complexType) ('Visio XML')</span></span>
 
-<span data-ttu-id="22b7f-105">対応する Char 要素に従って書式設定された、文字プロパティの実行の開始をマークします。</span><span class="sxs-lookup"><span data-stu-id="22b7f-105">Marks the beginning of a character properties run that is formatted according to the corresponding Char element.</span></span> <span data-ttu-id="22b7f-106">実行は、テキストの末尾または次のタグまで定義されます。</span><span class="sxs-lookup"><span data-stu-id="22b7f-106">The run is defined to the end of the text or until the next tag.</span></span>
+<span data-ttu-id="4205f-105">対応する Char 要素に従って書式設定された、文字プロパティの実行の開始をマークします。</span><span class="sxs-lookup"><span data-stu-id="4205f-105">Marks the beginning of a character properties run that is formatted according to the corresponding Char element.</span></span> <span data-ttu-id="4205f-106">実行は、テキストの末尾または次のタグまで定義されます。</span><span class="sxs-lookup"><span data-stu-id="4205f-106">The run is defined to the end of the text or until the next tag.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="22b7f-107">要素情報</span><span class="sxs-lookup"><span data-stu-id="22b7f-107">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="4205f-107">要素情報</span><span class="sxs-lookup"><span data-stu-id="4205f-107">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="22b7f-108">**要素の種類**</span><span class="sxs-lookup"><span data-stu-id="22b7f-108">**Element type**</span></span> <br/> |[<span data-ttu-id="22b7f-109">cp_Type</span><span class="sxs-lookup"><span data-stu-id="22b7f-109">cp_Type</span></span>](cp_type-complextypevisio-xml.md) <br/> |
-|<span data-ttu-id="22b7f-110">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="22b7f-110">**Namespace**</span></span> <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|<span data-ttu-id="22b7f-111">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="22b7f-111">**Schema file**</span></span> <br/> |<span data-ttu-id="22b7f-112">VisioSchema15</span><span class="sxs-lookup"><span data-stu-id="22b7f-112">VisioSchema15.xsd</span></span>  <br/> |
-|<span data-ttu-id="22b7f-113">**文書パーツ**</span><span class="sxs-lookup"><span data-stu-id="22b7f-113">**Document parts**</span></span> <br/> |<span data-ttu-id="22b7f-114">ページ # .xml、マスター # .xml</span><span class="sxs-lookup"><span data-stu-id="22b7f-114">page#.xml, master#.xml</span></span>  <br/> |
+|<span data-ttu-id="4205f-108">**要素の種類**</span><span class="sxs-lookup"><span data-stu-id="4205f-108">**Element type**</span></span> <br/> |[<span data-ttu-id="4205f-109">cp_Type</span><span class="sxs-lookup"><span data-stu-id="4205f-109">cp_Type</span></span>](cp_type-complextypevisio-xml.md) <br/> |
+|<span data-ttu-id="4205f-110">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="4205f-110">**Namespace**</span></span> <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|<span data-ttu-id="4205f-111">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="4205f-111">**Schema file**</span></span> <br/> |<span data-ttu-id="4205f-112">VisioSchema15</span><span class="sxs-lookup"><span data-stu-id="4205f-112">VisioSchema15.xsd</span></span>  <br/> |
+|<span data-ttu-id="4205f-113">**文書パーツ**</span><span class="sxs-lookup"><span data-stu-id="4205f-113">**Document parts**</span></span> <br/> |<span data-ttu-id="4205f-114">ページ # .xml、マスター # .xml</span><span class="sxs-lookup"><span data-stu-id="4205f-114">page#.xml, master#.xml</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="22b7f-115">定義</span><span class="sxs-lookup"><span data-stu-id="22b7f-115">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="4205f-115">定義</span><span class="sxs-lookup"><span data-stu-id="4205f-115">Definition</span></span>
 
 ```XML
 < xs:element name="cp" type="cp_Type" minOccurs="0" maxOccurs="unbounded" >
 </xs:element >
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="22b7f-116">要素と属性</span><span class="sxs-lookup"><span data-stu-id="22b7f-116">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="4205f-116">要素と属性</span><span class="sxs-lookup"><span data-stu-id="4205f-116">Elements and attributes</span></span>
 
-<span data-ttu-id="22b7f-117">スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="22b7f-117">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="4205f-117">スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="4205f-117">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="parent-elements"></a><span data-ttu-id="22b7f-118">親要素</span><span class="sxs-lookup"><span data-stu-id="22b7f-118">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="4205f-118">親要素</span><span class="sxs-lookup"><span data-stu-id="4205f-118">Parent elements</span></span>
 
-|<span data-ttu-id="22b7f-119">**要素**</span><span class="sxs-lookup"><span data-stu-id="22b7f-119">**Element**</span></span>|<span data-ttu-id="22b7f-120">**型**</span><span class="sxs-lookup"><span data-stu-id="22b7f-120">**Type**</span></span>|<span data-ttu-id="22b7f-121">**説明**</span><span class="sxs-lookup"><span data-stu-id="22b7f-121">**Description**</span></span>|
+|<span data-ttu-id="4205f-119">**要素**</span><span class="sxs-lookup"><span data-stu-id="4205f-119">**Element**</span></span>|<span data-ttu-id="4205f-120">**型**</span><span class="sxs-lookup"><span data-stu-id="4205f-120">**Type**</span></span>|<span data-ttu-id="4205f-121">**説明**</span><span class="sxs-lookup"><span data-stu-id="4205f-121">**Description**</span></span>|
 |:-----|:-----|:-----|
-|[<span data-ttu-id="22b7f-122">Text</span><span class="sxs-lookup"><span data-stu-id="22b7f-122">Text</span></span>](text-element-shapesheet_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="22b7f-123">Text_Type</span><span class="sxs-lookup"><span data-stu-id="22b7f-123">Text_Type</span></span>](text_type-complextypevisio-xml.md) <br/> |<span data-ttu-id="22b7f-124">図形のテキストを格納します。</span><span class="sxs-lookup"><span data-stu-id="22b7f-124">Contains the text of a shape.</span></span>  <br/> |
+|[<span data-ttu-id="4205f-122">Text</span><span class="sxs-lookup"><span data-stu-id="4205f-122">Text</span></span>](text-element-shapesheet_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="4205f-123">Text_Type</span><span class="sxs-lookup"><span data-stu-id="4205f-123">Text_Type</span></span>](text_type-complextypevisio-xml.md) <br/> |<span data-ttu-id="4205f-124">図形のテキストを格納します。</span><span class="sxs-lookup"><span data-stu-id="4205f-124">Contains the text of a shape.</span></span>  <br/> |
    
-### <a name="child-elements"></a><span data-ttu-id="22b7f-125">子要素</span><span class="sxs-lookup"><span data-stu-id="22b7f-125">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="4205f-125">子要素</span><span class="sxs-lookup"><span data-stu-id="4205f-125">Child elements</span></span>
 
-<span data-ttu-id="22b7f-126">なし。</span><span class="sxs-lookup"><span data-stu-id="22b7f-126">None.</span></span>
+<span data-ttu-id="4205f-126">なし。</span><span class="sxs-lookup"><span data-stu-id="4205f-126">None.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="22b7f-127">属性</span><span class="sxs-lookup"><span data-stu-id="22b7f-127">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="4205f-127">属性</span><span class="sxs-lookup"><span data-stu-id="4205f-127">Attributes</span></span>
 
-|<span data-ttu-id="22b7f-128">**属性**</span><span class="sxs-lookup"><span data-stu-id="22b7f-128">**Attribute**</span></span>|<span data-ttu-id="22b7f-129">**型**</span><span class="sxs-lookup"><span data-stu-id="22b7f-129">**Type**</span></span>|<span data-ttu-id="22b7f-130">**必須**</span><span class="sxs-lookup"><span data-stu-id="22b7f-130">**Required**</span></span>|<span data-ttu-id="22b7f-131">**説明**</span><span class="sxs-lookup"><span data-stu-id="22b7f-131">**Description**</span></span>|<span data-ttu-id="22b7f-132">**可能な値**</span><span class="sxs-lookup"><span data-stu-id="22b7f-132">**Possible values**</span></span>|
+|<span data-ttu-id="4205f-128">**属性**</span><span class="sxs-lookup"><span data-stu-id="4205f-128">**Attribute**</span></span>|<span data-ttu-id="4205f-129">**型**</span><span class="sxs-lookup"><span data-stu-id="4205f-129">**Type**</span></span>|<span data-ttu-id="4205f-130">**必須**</span><span class="sxs-lookup"><span data-stu-id="4205f-130">**Required**</span></span>|<span data-ttu-id="4205f-131">**説明**</span><span class="sxs-lookup"><span data-stu-id="4205f-131">**Description**</span></span>|<span data-ttu-id="4205f-132">**可能な値**</span><span class="sxs-lookup"><span data-stu-id="4205f-132">**Possible values**</span></span>|
 |:-----|:-----|:-----|:-----|:-----|
-|<span data-ttu-id="22b7f-133">IX</span><span class="sxs-lookup"><span data-stu-id="22b7f-133">IX</span></span>  <br/> |<span data-ttu-id="22b7f-134">xsd: アン signedint</span><span class="sxs-lookup"><span data-stu-id="22b7f-134">xsd:unsignedInt</span></span>  <br/> |<span data-ttu-id="22b7f-135">必須</span><span class="sxs-lookup"><span data-stu-id="22b7f-135">required</span></span>  <br/> |<span data-ttu-id="22b7f-136">このプロパティが実行する Char 要素インデックス。</span><span class="sxs-lookup"><span data-stu-id="22b7f-136">The Char element index that this property run represents.</span></span>  <br/> |<span data-ttu-id="22b7f-137">xsd:/signedint 型の値。</span><span class="sxs-lookup"><span data-stu-id="22b7f-137">Values of the xsd:unsignedInt type.</span></span>  <br/> |
+|<span data-ttu-id="4205f-133">IX</span><span class="sxs-lookup"><span data-stu-id="4205f-133">IX</span></span>  <br/> |<span data-ttu-id="4205f-134">xsd: アン Signedint</span><span class="sxs-lookup"><span data-stu-id="4205f-134">xsd:unsignedInt</span></span>  <br/> |<span data-ttu-id="4205f-135">必須</span><span class="sxs-lookup"><span data-stu-id="4205f-135">required</span></span>  <br/> |<span data-ttu-id="4205f-136">このプロパティが実行する Char 要素インデックス。</span><span class="sxs-lookup"><span data-stu-id="4205f-136">The Char element index that this property run represents.</span></span>  <br/> |<span data-ttu-id="4205f-137">Xsd:/Signedint 型の値。</span><span class="sxs-lookup"><span data-stu-id="4205f-137">Values of the xsd:unsignedInt type.</span></span>  <br/> |
    
 
