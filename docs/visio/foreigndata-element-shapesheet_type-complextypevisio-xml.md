@@ -54,15 +54,15 @@ Windows メタファイル、ビットマップ、OLE データなど、画像�
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|CompressionLevel  <br/> |xsd: double  <br/> |省略可能  <br/> |ファイルに適用される圧縮レベルを指定します。 この属性は、外部データが、DIB、JPG、PNG、TIFF、GIF ファイルなどのラスターベースの外部オブジェクトである場合にのみ意味があります。  <br/> |xsd: double 型の値。  <br/> |
-|CompressionType  <br/> |xsd: token  <br/> |省略可能  <br/> |ファイルに適用される圧縮の種類を指定します。 この属性は、外部データが、DIB、JPG、PNG、TIFF、GIF ファイルなどのラスターベースの外部オブジェクトである場合にのみ意味があります。  <br/> |xsd: token 型の値。  <br/> |
-|ExtentX  <br/> |xsd: double  <br/> |省略可能  <br/> |メタファイルの水平方向のエクステントを指定します。 この属性は、外部データがメタファイルの場合にのみ意味があります。  <br/> |xsd: double 型の値。  <br/> |
-|ExtentY  <br/> |xsd: double  <br/> |省略可能  <br/> |メタファイルの垂直方向のエクステントを指定します。 この属性は、外部データがメタファイルの場合にのみ意味があります。  <br/> |xsd: double 型の値。  <br/> |
-|ForeignType  <br/> |xsd: token  <br/> |必須  <br/> |メタファイル、EnhMetaFile、Bitmap、Object、または Ink の種類を示します。  <br/> |xsd: token 型の値。  <br/> |
-|mappingmode  <br/> |xsd: アン signedshort  <br/> |省略可能  <br/> |メタファイルマッピングモードを指定します。 この属性は、外部データがメタファイルの場合にのみ意味があります。  <br/> |xsd: _ signedshort 型の値。  <br/> |
-|ObjectHeight  <br/> |xsd: double  <br/> |省略可能  <br/> |オブジェクトの高さをページ単位で指定します。 この属性は、外部データが OLE2 埋め込みオブジェクトである場合にのみ意味を持ちます。  <br/> |xsd: double 型の値。  <br/> |
-|ObjectType  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |オブジェクトの種類の整数インジケーター。 外部型が object の場合に使用します。  <br/> |xsd:/signedint 型の値。  <br/> |
-|objectwidth  <br/> |xsd: double  <br/> |省略可能  <br/> |オブジェクトの幅をページ単位で指定します。 この属性は、外部データが OLE2 埋め込みオブジェクトである場合にのみ意味を持ちます。  <br/> |xsd: double 型の値。  <br/> |
-|showasicon  <br/> |xsd: boolean  <br/> |省略可能  <br/> |埋め込みデータをアイコンとして表示するかどうかを示します。  <br/> |xsd: boolean 型の値。  <br/> |
+|CompressionLevel  <br/> |xsd: double  <br/> |省略可能  <br/> |ファイルに適用される圧縮レベルを指定します。 この属性は、外部データが、DIB、JPG、PNG、TIFF、GIF ファイルなどのラスターベースの外部オブジェクトである場合にのみ意味があります。  <br/> |Xsd: double 型の値。  <br/> |
+|CompressionType  <br/> |xsd: token  <br/> |省略可能  <br/> |ファイルに適用される圧縮の種類を指定します。 この属性は、外部データが、DIB、JPG、PNG、TIFF、GIF ファイルなどのラスターベースの外部オブジェクトである場合にのみ意味があります。  <br/> |Xsd: token 型の値。  <br/> |
+|ExtentX  <br/> |xsd: double  <br/> |省略可能  <br/> |メタファイルの水平方向のエクステントを指定します。 この属性は、外部データがメタファイルの場合にのみ意味があります。  <br/> |Xsd: double 型の値。  <br/> |
+|ExtentY  <br/> |xsd: double  <br/> |省略可能  <br/> |メタファイルの垂直方向のエクステントを指定します。 この属性は、外部データがメタファイルの場合にのみ意味があります。  <br/> |Xsd: double 型の値。  <br/> |
+|ForeignType  <br/> |xsd: token  <br/> |必須  <br/> |メタファイル、EnhMetaFile、Bitmap、Object、または Ink の種類を示します。  <br/> |Xsd: token 型の値。  <br/> |
+|MappingMode  <br/> |xsd: アン Signedshort  <br/> |省略可能  <br/> |メタファイルマッピングモードを指定します。 この属性は、外部データがメタファイルの場合にのみ意味があります。  <br/> |Xsd: _ Signedshort 型の値。  <br/> |
+|ObjectHeight  <br/> |xsd: double  <br/> |省略可能  <br/> |オブジェクトの高さをページ単位で指定します。 この属性は、外部データが OLE2 埋め込みオブジェクトである場合にのみ意味を持ちます。  <br/> |Xsd: double 型の値。  <br/> |
+|ObjectType  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> |オブジェクトの種類の整数インジケーター。 外部型が object の場合に使用します。  <br/> |Xsd:/Signedint 型の値。  <br/> |
+|ObjectWidth  <br/> |xsd: double  <br/> |省略可能  <br/> |オブジェクトの幅をページ単位で指定します。 この属性は、外部データが OLE2 埋め込みオブジェクトである場合にのみ意味を持ちます。  <br/> |Xsd: double 型の値。  <br/> |
+|ShowAsIcon  <br/> |xsd: boolean  <br/> |省略可能  <br/> |埋め込みデータをアイコンとして表示するかどうかを示します。  <br/> |Xsd: boolean 型の値。  <br/> |
    
 

@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: b13b9328-c6a0-e282-257c-2de55901df6a
-description: tabs プロパティの実行開始を指定します。 実行は、テキストの末尾または次のタグまで定義されます。
+description: Tabs プロパティの実行開始を指定します。 実行は、テキストの末尾または次のタグまで定義されます。
 ms.openlocfilehash: 3f27ea0babefa0ea69cbbc361031c57602649107
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "32307701"
 ---
 # <a name="tp-element-texttype-complextype-visio-xml"></a>tp 要素 (Text_Type complexType) (' Visio XML ')
 
-tabs プロパティの実行開始を指定します。 実行は、テキストの末尾または次のタグまで定義されます。
+Tabs プロパティの実行開始を指定します。 実行は、テキストの末尾または次のタグまで定義されます。
   
 ## <a name="element-information"></a>要素情報
 
@@ -51,6 +51,6 @@ tabs プロパティの実行開始を指定します。 実行は、テキス�
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|IX  <br/> |xsd: アン signedint  <br/> |必須  <br/> |親要素内の要素の0から始まるインデックス。  <br/> |xsd:/signedint 型の値。  <br/> |
+|IX  <br/> |xsd: アン Signedint  <br/> |必須  <br/> |親要素内の要素の0から始まるインデックス。  <br/> |Xsd:/Signedint 型の値。  <br/> |
    
 

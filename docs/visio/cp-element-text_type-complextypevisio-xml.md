@@ -52,6 +52,6 @@ ms.locfileid: "32282951"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|IX  <br/> |xsd: アン signedint  <br/> |必須  <br/> |このプロパティが実行する Char 要素インデックス。  <br/> |xsd:/signedint 型の値。  <br/> |
+|IX  <br/> |xsd: アン Signedint  <br/> |必須  <br/> |このプロパティが実行する Char 要素インデックス。  <br/> |Xsd:/Signedint 型の値。  <br/> |
    
 

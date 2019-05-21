@@ -54,13 +54,13 @@ ms.locfileid: "32329800"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|FillStyle  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |このスタイルが塗りつぶしの書式設定を継承する StyleSheet 要素の ID です。  <br/> |xsd:/signedint 型の値。  <br/> |
-|ID  <br/> |xsd: アン signedint  <br/> |必須  <br/> |親要素内の要素の一意の ID。  <br/> |xsd:/signedint 型の値。  <br/> |
-|iscustomname  <br/> |xsd: boolean  <br/> |省略可能  <br/> |ユーザーによって名前がカスタマイズされているかどうかを示します。  <br/> |xsd: boolean 型の値。  <br/> |
-|IsCustomNameU  <br/> |xsd: boolean  <br/> |省略可能  <br/> |ユーザーが汎用名をカスタマイズしたかどうかを示します。  <br/> |xsd: boolean 型の値。  <br/> |
-|LineStyle  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |このスタイルが行の書式設定を継承する StyleSheet 要素の ID です。  <br/> |xsd:/signedint 型の値。  <br/> |
-|名前  <br/> |xsd: string  <br/> |省略可能  <br/> |要素の名前。  <br/> |xsd: string 型の値。  <br/> |
-|NameU  <br/> |xsd: string  <br/> |省略可能  <br/> |要素の汎用名。  <br/> |xsd: string 型の値。  <br/> |
-|TextStyle  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |このスタイルがテキストの書式設定を継承する StyleSheet 要素の ID です。  <br/> |xsd:/signedint 型の値。  <br/> |
+|FillStyle  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> |このスタイルが塗りつぶしの書式設定を継承する StyleSheet 要素の ID です。  <br/> |Xsd:/Signedint 型の値。  <br/> |
+|ID  <br/> |xsd: アン Signedint  <br/> |必須  <br/> |親要素内の要素の一意の ID。  <br/> |Xsd:/Signedint 型の値。  <br/> |
+|IsCustomName  <br/> |xsd: boolean  <br/> |省略可能  <br/> |ユーザーによって名前がカスタマイズされているかどうかを示します。  <br/> |Xsd: boolean 型の値。  <br/> |
+|IsCustomNameU  <br/> |xsd: boolean  <br/> |省略可能  <br/> |ユーザーが汎用名をカスタマイズしたかどうかを示します。  <br/> |Xsd: boolean 型の値。  <br/> |
+|LineStyle  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> |このスタイルが行の書式設定を継承する StyleSheet 要素の ID です。  <br/> |Xsd:/Signedint 型の値。  <br/> |
+|名前  <br/> |xsd: string  <br/> |省略可能  <br/> |要素の名前。  <br/> |Xsd: string 型の値。  <br/> |
+|NameU  <br/> |xsd: string  <br/> |省略可能  <br/> |要素の汎用名。  <br/> |Xsd: string 型の値。  <br/> |
+|TextStyle  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> |このスタイルがテキストの書式設定を継承する StyleSheet 要素の ID です。  <br/> |Xsd:/Signedint 型の値。  <br/> |
    
 

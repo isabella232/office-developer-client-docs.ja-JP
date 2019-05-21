@@ -21,7 +21,7 @@ ms.locfileid: "32338599"
 |:-----|:-----|
 |**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15-06-05  <br/> |
-|**拡張ベース** <br/> |なし  <br/> |
+|**拡張ベース** <br/> |None  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -54,8 +54,8 @@ ms.locfileid: "32338599"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|ColumnName  <br/> |xsd: string  <br/> |必須  <br/> ||xsd: string 型の値。  <br/> |
-|contexttype  <br/> |xsd: アン signedint  <br/> |必須  <br/> ||xsd:/signedint 型の値。  <br/> |
-|ContextTypeLabel  <br/> |xsd: string  <br/> |省略可能  <br/> ||xsd: string 型の値。  <br/> |
+|ColumnName  <br/> |xsd: string  <br/> |必須  <br/> ||Xsd: string 型の値。  <br/> |
+|ContextType  <br/> |xsd: アン Signedint  <br/> |必須  <br/> ||Xsd:/Signedint 型の値。  <br/> |
+|ContextTypeLabel  <br/> |xsd: string  <br/> |省略可能  <br/> ||Xsd: string 型の値。  <br/> |
    
 

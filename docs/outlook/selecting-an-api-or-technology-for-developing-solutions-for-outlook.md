@@ -1,17 +1,17 @@
 ---
 title: Outlook 用のソリューションを開発するための API またはテクノロジの選択
 manager: soliver
-ms.date: 10/21/2016
+ms.date: 05/21/2019
 ms.audience: Developer
 ms.assetid: 01a46083-03d0-4333-920c-01a9f17f68cb
 description: この記事では Outlook 2013 および Outlook 2016 を拡張するために使用できる API とテクノロジについて説明しており、各自のシナリオに適した API またはテクノロジを判断する際に役立てることができます。
 localization_priority: Priority
-ms.openlocfilehash: c744fcd834c01bd2835f88843d4be67e6122ac15
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 54931ea9235e549a8fb4338c425123b99c2b11e4
+ms.sourcegitcommit: 9716521f7bcd531f93be9855ae7835be20cdd0e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279349"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34250427"
 ---
 # <a name="selecting-an-api-or-technology-for-developing-solutions-for-outlook"></a>Outlook 用のソリューションを開発するための API またはテクノロジの選択
 
@@ -44,9 +44,10 @@ Microsoft は、Outlook を拡張するさまざまな API とテクノロジを
 - オブジェクト モデルと MAPI を使用することにより、Outlook をどのように拡張できるか。
     
 - タスクの実行にオブジェクト モデルと MAPI のいずれかを使用できる場合、使用する API をどのように決定するか?
-    
-## <a name="objective-evaluation-criteria"></a>目標評価基準
+
 <a name="OLSelectAPI_ObjectiveChar"> </a>
+
+## <a name="objective-evaluation-criteria"></a>目標評価基準
 
 このセクションでは、Office アドイン プラットフォーム、オブジェクト モデル、PIA、MAPI を比較してどれがより良く要件を満たすのか判断する際に使用する基準について説明します。プロジェクトや使用可能なリソースによって、各種基準の重要度は異なります。
   
@@ -59,9 +60,10 @@ Microsoft は、Outlook を拡張するさまざまな API とテクノロジを
 - セキュリティ上の基準テクノロジに関係するセキュリティおよびアクセス許可の問題について説明します。
     
 - 展開上の基準テクノロジに対して推奨される展開および配布メソッドについて説明します。
-    
-### <a name="objective-evaluation-criteria-for-the-apps-for-office-platform"></a>Office プラットフォーム用アプリの客観的な評価基準
+
 <a name="OLSelectAPI_ObjectiveEvalCritApps"> </a>
+
+### <a name="objective-evaluation-criteria-for-the-apps-for-office-platform"></a>Office プラットフォーム用アプリの目標評価基準
 
 Office 2013 以降、開発者は Office アドイン プラットフォームを使用して Web サービスとコンテンツを Office のリッチ クライアントと Web クライアントのコンテキストに拡張することができます。Office アドイン は、一般的な Web テクノロジを使用して開発され、(Outlook などの) Office クライアント アプリケーション内部でホストされる Web ページで、 社内またはクラウドで実行できます。Office アドイン の中でも、Outlook がサポートするタイプはメール アプリといいます。Outlook をアプリケーション レベルで自動化するためにオブジェクト モデル、PIA、MAPI をよく使用しますが、JavaScript API for Office を使用してアイテム レベルで電子メール メッセージ、会議出席依頼、予定の内容やプロパティを連動させることもできます。メール アプリは Office ストア や社内の Exchange カタログに公開できます。 
   
@@ -118,9 +120,10 @@ Office 2013 以降、開発者は Office アドイン プラットフォーム�
 |クライアント プラットフォームの要件  <br/> |Outlook リッチ クライアント上で実行するメール アプリの場合、Outlook 2013 と Internet Explorer 9 (両方のアプリケーションについてそれ以上のバージョン) をローカル コンピューターにインストールする必要があります。  <br/> |
 |展開方法  <br/> |メール アプリは、Office ストア や Exchange Server 上でアプリをユーザーに提供する Exchange カタログに公開することができます。その後、管理者またはユーザーは、 Exchange 管理センター (EAC) を使用するかまたはリモート Windows PowerShell コマンドレットを実行して、Office ストア または Exchange カタログからメール アプリをインストールできます。EAC へは、Outlook Backstage ビューまたは Outlook Web App から、あるいはメールボックスから直接 EAC にサインインしてアクセスできます。  <br/> 詳細については、「[Outlook 2013 プレビューでのテスト用メール アプリの展開とインストール](https://msdn.microsoft.com/library/d6eea4c4-bb21-4f24-bcba-1eccbb4e12dd%28Office.15%29.aspx)」を参照してください。  <br/> |
 |展開に関する注意事項  <br/> |メール アプリを Outlook または Outlook Web App にインストールすると、そのメール アプリは両方の Outlook クライアントの同じメールボックスで利用可能になります。  <br/> |
-   
-### <a name="objective-evaluation-criteria-for-the-object-model-and-pia"></a>オブジェクト モデルと PIA の客観的な評価基準
+
 <a name="OLSelectAPI_ObjectiveEvalCritApps"> </a>
+
+### <a name="objective-evaluation-criteria-for-the-object-model-and-pia"></a>オブジェクト モデルと PIA の客観的な評価基準
 
 クライアント コンピューター上で実行するソリューションは、Outlook オブジェクト モデルまたは PIA を使用して、連絡先、メッセージ、予定表アイテム、会議出席依頼、タスクなどの Outlook アイテムにプログラム経由でアクセスします。MAPI とは異なり、Outlook オブジェクト モデルと PIA は、現在のフォルダの変更や Outlook 検査の表示といった Outlook ユーザー インターフェイスの変更のイベント通知を提供できます。
   
@@ -172,9 +175,10 @@ Outlook オブジェクト モデルと PIA の評価基準を次の表に示し
 |クライアント プラットフォームの要件  <br/> |Outlook オブジェクト モデルまたは PIA を使用して Exchange データにアクセスするアプリケーションを使用するには、ローカル コンピューターに Outlook がインストールされていることが必要です。  <br/> |
 |展開方法  <br/> |Outlook オブジェクト モデルまたは PIA を使用するアプリケーションは、標準のアプリケーション インストール ソフトウェアを使用して配布されます。  <br/> |
 |展開に関する注意事項  <br/> |Outlook を Exchange Server にインストールすることができないため、Outlook オブジェクト モデルや PIA を使用するアプリケーションは Exchange Server 上で実行できません。  <br/> |
-   
-### <a name="objective-evaluation-criteria-for-mapi"></a>MAPI の客観的な評価基準
+
 <a name="OLSelectAPI_ObjectiveEvalCritApps"> </a>
+
+### <a name="objective-evaluation-criteria-for-mapi"></a>MAPI の客観的な評価基準
 
 MAPI を使用して、公開用ストアおよび非公開ストアにあるアイテムやフォルダーにアクセスしたり、各アイテムとともに保管されているプロパティにもアクセスできます。すべてのバージョンの Outlook で MAPI を使用できます。MAPI を使用するクライアントを作成したり、MAPI サーバーや MAPI フォーム ハンドラーを作成することも可能です。このセクションの情報は MAPI クライアント アプリケーションにのみ適用されます。
   
@@ -225,9 +229,10 @@ MAPI の評価基準を次の表に示します。
 |クライアント プラットフォームの要件  <br/> |クライアント アプリケーション インストーラーは、適切なバージョンの MAPI がコンピューター上で使用可能であること、および MAPI が Mapisvc.inf ファイルを使用して正しく設定されていることを確認します。  <br/> |
 |展開方法  <br/> |MAPI を使用するアプリケーションは、標準のソフトウェア配布テクノロジを使用してクライアント コンピューターに展開できます。  <br/> |
 |展開に関する注意事項  <br/> |インストーラーは、正しいバージョンの MAPI が使用可能になっていることを確認します。  <br/> |
-   
-## <a name="decision-factors-for-the-apps-for-office-platform"></a>Office プラットフォーム用アプリの決定要因
+
 <a name="OLSelectAPI_FactorsApps"> </a>
+
+## <a name="decision-factors-for-the-apps-for-office-platform"></a>Office プラットフォーム用アプリの決定要因
 
 Office アドイン には Web テクノロジが使用されているので、クラウドや社内管理で提供されるサービスへの接続、またそのサービスのリッチ クライアントや Web クライアントのコンテキストへの統合に最も適しています。適切な権限を要求することにより、メール アプリもメールボックス内のアイテムの読み取り、書き込み、または送信を行えます。
   
@@ -266,109 +271,103 @@ Office アドイン には Web テクノロジが使用されているので、�
 - 以前のバージョンの Outlook や Exchange だけでなく、Outlook 2013 と Exchange Server 2013 でのアドインを使用できます。一方、メール アプリは Outlook 2013 と Exchange Server 2013 以降の Outlook と Exchange で動作しますが、以前のバージョンでは動作しません。
     
 オブジェクト モデルと PIA がサポートするシナリオの詳細については、次のセクション「[オブジェクト モデルまたは PIA の決定要因](#OLSelectAPI_FactorsOM)」を参照してください。Office アドイン プラットフォームと他の Office 用の拡張機能テクノロジとの比較については、「[Office および SharePoint 用アプリの背景](https://blogs.msdn.com/b/officeapps/archive/2012/07/23/introducing-apps-for-the-new-office-and-sharepoint.aspx)」を参照してください。
-  
-## <a name="decision-factors-for-the-object-model-or-pia"></a>オブジェクト モデルまたは PIA の決定要因
+
 <a name="OLSelectAPI_FactorsOM"> </a>
 
-一般に、ソリューションで Outlook ユーザー インターフェイスをカスタマイズするか、またはソリューションが Outlook のビジネス ロジックに依存している場合、オブジェクト モデルまたは PIA を使用します。図 2 は、Outlook ソリューションがオブジェクト モデルまたは PIA を使用する主な基準となるシナリオを示します。 
+## <a name="decision-factors-for-the-object-model-or-pia"></a>オブジェクト モデルまたは PIA の決定要因
+
+### <a name="major-baseline-scenarios-supported-by-the-outlook-object-model-or-pia"></a>Outlook オブジェクトモデルまたは PIA でサポートされている主要な ベースライン シナリオ
+
+一般に、ソリューションが Outlook ユーザーインターフェイスをカスタマイズしたり、Outlook のビジネスロジックに依存している場合、オブジェクトモデルまたは PIA を使用します。 以下は、Outlook ソリューションがオブジェクト モデルまたは PIA を使用する主なベースライン シナリオです。 
   
-> [!NOTE]
-> シナリオの詳細については、次の図のボックスをクリックしてください。 
-  
-図 2. Outlook オブジェクト モデルまたは PIA でサポートされている主な基準となるシナリオ
-  
-[![Outlook UI のカスタマイズ](media/odc_ol15_ta_SelectingTech_Fig2-1.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_CustomizeTheOutlookInterface)[![Outlook アイテムの使用](media/odc_ol15_ta_SelectingTech_Fig2-2.gif)
-  
-](https://msdn.microsoft.com/library/6ea4babf-facf-4018-ef5a-4a484e55153a%28Office.15%29.aspx)[![アイテムのプロパティ、フィールド、フォームのカスタマイズ](media/odc_ol15_ta_SelectingTech_Fig2-3.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_ItemPropFieldsForms)
-  
-[![Outlook イベントの処理](media/odc_ol15_ta_SelectingTech_Fig2-4.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Events)[![Outlook の自動化](media/odc_ol15_ta_SelectingTech_Fig2-5.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_AutomateOutlook)
-  
-基準となるシナリオに加えて、Outlook ソリューションが図 3 に示されているいずれかのシナリオをサポートし、ソリューションを Outlook 2007 より前ではなくそれ以降のバージョンで実行する予定である場合、オブジェクト モデルまたは PIA も使用できます。図 3 では、各シナリオを拡張するために Outlook オブジェクト モデルで使用可能な主なオブジェクトやメンバーが指定されています (Visual Studio 自動化オブジェクト モデルの [IDTExtensibility2](https://msdn.microsoft.com/library/Extensibility.IDTExtensibility2.aspx) インターフェイス、および Office オブジェクト モデルの [IRibbonExtensibility](https://msdn.microsoft.com/library/b27a7576-b6f5-031e-e307-78ef5f8507e0%28Office.15%29.aspx) インターフェイスは除外します。後者は Outlook オブジェクト モデルと統合可能です)。 
-  
-図 3. Outlook 2007 以降のオブジェクト モデルまたは PIA でサポートされている追加のシナリオ
-  
-[![Outlook UI のカスタマイズ](media/odc_ol15_ta_SelectingAPI_Fig3-1.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_CustomizeTheOutlookInterface)[![フォーム領域のカスタマイズ](media/odc_ol15_ta_SelectingTech_Fig3-2.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_CustomFormRegions)[![PropertyAccessor を使用したプロパティへのアクセス](media/odc_ol15_ta_SelectingAPI_Fig3-3.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_CustomizingProperties)
-  
-[![フォルダー内のアイテムの列挙と表示](media/odc_ol15_ta_SelectingAPI_Fig3-4.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Enumerating)[![アイテムにタスクのフラグを付ける](media/odc_ol15_ta_SelectingAPI_Fig3-5.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_ItemsFlag)[![カレンダー、RSS フィード、およびフォルダーの共有](media/odc_ol15_ta_SelectingAPI_Fig3-6.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Sharing)
-  
-[![添付ファイルの管理](media/odc_ol15_ta_SelectingAPI_Fig3-7.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Attachments)[![ルール、タイム ゾーン、ビューの管理](media/odc_ol15_ta_SelectingAPI_Fig3-8.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Misc)[![カテゴリの追加または削除](media/odc_ol15_ta_SelectingAPI_Fig3-9.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Categories)
-  
-[![アカウントの詳細情報の取得](media/odc_ol15_ta_SelectingAPI_Fig3-10.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_PrimaryAccount)[![Exchange の配布リストとユーザーの管理](media/odc_ol15_ta_SelectingAPI_Fig3-11.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_AddressBook)[![ソリューションのプライベート データの保存](media/odc_ol15_ta_SelectingAPI_Fig3-12.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_StoringData)
-  
-Outlook ソリューションを Outlook 2010 より前ではなく、Outlook 2010 で実行する予定である場合には、オブジェクト モデルまたは PIA を使用して図 4 に示されているシナリオをサポートできます。図 4 では、各シナリオを拡張するために Outlook オブジェクト モデルで使用可能な主なオブジェクトやメンバーが指定されています ([IRibbonControl](https://msdn.microsoft.com/library/63aef709-e1d3-b1a6-76af-b568ad0e69ae%28Office.15%29.aspx)、[IRibbonExtensibility](https://msdn.microsoft.com/library/b27a7576-b6f5-031e-e307-78ef5f8507e0%28Office.15%29.aspx)、[IRibbonUI](https://msdn.microsoft.com/library/d323aa21-de74-e821-c914-db71ef3b9c5e%28Office.15%29.aspx) インターフェイスは除外します。これらは Office オブジェクト モデル内にあり、Outlook オブジェクト モデルと統合可能です)。 
-  
-図 4. Outlook 2010 以降のオブジェクト モデルまたは PIA でサポートされているその他のシナリオ
-  
-[![Outlook 2010 UI のカスタマイズ](media/odc_ol15_ta_SelectingAPI_Fig4-1.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_CustomizingUIOutlook2010)[![会話内のアイテムの管理](media/odc_ol15_ta_SelectingAPI_Fig4-2.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Conversations)[![エクスプローラー内でのアイテムの選択の管理](media/odc_ol15_ta_SelectingAPI_Fig4-3.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_ItemSelection)
-  
-[![インスペクター内での添付ファイルの選択の管理](media/odc_ol15_ta_SelectingAPI_Fig4-4.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_AttachmentSelection)[![1 つのプロファイルでの複数の Exchange アカウントのサポート](media/odc_ol15_ta_SelectingAPI_Fig4-5.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_MultipleAccounts)[![住所を入力する連絡先カードの作成](media/odc_ol15_ta_SelectingAPI_Fig4-6.gif)
-  
-](https://msdn.microsoft.com/library/d050e0e3-3c0d-bd01-f008-2628056625d1%28Office.15%29.aspx)
-  
-[![ソリューション固有のフォルダーの体系化](media/odc_ol15_ta_SelectingAPI_Fig4-7.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Folders)
-  
-ソリューションを Outlook 2013 より前ではなく、Outlook 2013 で実行する予定である場合には、オブジェクト モデルまたは PIA を使用して図 5 に示されているシナリオをサポートできます。
-  
-図 5. Outlook 2013 以降のオブジェクト モデルまたは PIA でサポートされている追加のシナリオ
-  
-[![現在のフォルダー内のすべての連絡先のビューを表示](media/odc_ol15_ta_SelectingAPI_Fig5-1.gif)
-  
-](https://msdn.microsoft.com/library/7b569709-5da8-a950-a0fb-9d64b520a21b%28Office.15%29.aspx)[![閲覧ウィンドウのインライン応答](media/odc_ol15_ta_SelectingAPI_Fig5-2.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_InlineResponse)[![連絡先の住所またはフルネームをチェックするダイアログを表示](media/odc_ol15_ta_SelectingAPI_Fig5-3.gif)
-  
-](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_ContactCheckDialogs)
-  
-[![アイテムのプロパティの読み取り完了を検知](media/odc_ol15_ta_SelectingAPI_Fig5-4.gif)
-  
-](https://msdn.microsoft.com/library/6ea4babf-facf-4018-ef5a-4a484e55153a%28Office.15%29.aspx)
-  
-## <a name="decision-factors-for-mapi"></a>MAPI の決定要因
+- [Outlook ユーザー インターフェイスをカスタマイズする](#OLSelectAPI_CustomizeTheOutlookInterface)
+- [Outlook アイテムの追加、削除、読み取り、書き込み、フィルター処理、検索、並べ替えを行う](https://docs.microsoft.com/office/vba/outlook/How-to/Items-Folders-and-Stores/outlook-item-objects)
+- [アイテムのプロパティ、フィールド、フォームのカスタマイズ](#OLSelectAPI_ItemPropFieldsForms)
+- [フォルダーの切り替えやアイテムを開くなど、Outlook のイベントを処理する](#OLSelectAPI_Events)
+- [ Outlook を自動化し、他の Office アプリケーションと統合する](#OLSelectAPI_AutomateOutlook)
+
+<!--Images removed because we can't add a link to the images. If someone figures out a way to do this, you can add them back in but they're not really needed; I replaced them with a bulleted list here and after the next paragraph: 
+![Customize the Outlook UI](media/odc_ol15_ta_SelectingTech_Fig2-1.gif)
+![Use Outlook items](media/odc_ol15_ta_SelectingTech_Fig2-2.gif)
+![Customize item properties, fields, and forms](media/odc_ol15_ta_SelectingTech_Fig2-3.gif)
+![Process Outlook events](media/odc_ol15_ta_SelectingTech_Fig2-4.gif)
+![Automate Outlook](media/odc_ol15_ta_SelectingTech_Fig2-5.gif)-->
+
+### <a name="additional-scenarios-supported-by-the-object-model-or-pia-since-outlook-2007"></a>Outlook 2007 以降のオブジェクト モデルまたは PIA でサポートされている追加のシナリオ
+
+ベースライン シナリオに加えて、Outlook ソリューションが次のリストにあるシナリオのいずれかをサポートしている場合、使用しているソリューションが Outlook 2007 以降のバージョンでのみ実行されるものであれば、オブジェクトモデルや PIA も使用できます。 このセクションでは、Outlook オブジェクトモデルで各シナリオを拡張するために使用することができる主なオブジェクトまたはメンバーを指定します（Visual Studio オートメーションオブジェクトモデルの[IDTExtensibility2](https://docs.microsoft.com/dotnet/api/extensibility.idtextensibility2?view=visualstudiosdk-2017) インターフェイスと、Outlook オブジェクトモデルに統合できる Office オブジェクトモデルでの[IRibbonExtensibility](https://docs.microsoft.com/office/vba/api/Office.IRibbonExtensibility)インターフェイスを除く）。 
+
+- [Outlook UI をカスタマイズする: Office Fluent リボン、ナビゲーションウィンドウ、作業ウィンドウ](#OLSelectAPI_CustomizeTheOutlookInterface)
+- [フォームをフォーム領域としてカスタマイズして、アドイン別に展開する](#OLSelectAPI_CustomFormRegions)
+- [オブジェクト モデルでは公開されていないアイテム レベルの組み込みプロパティの設定および取得](#OLSelectAPI_CustomizingProperties)
+- [フォルダー内の多数のアイテムの列挙と表示](#OLSelectAPI_Enumerating)
+- [アイテムにタスクのフラグを付ける](#OLSelectAPI_ItemsFlag)
+- [カレンダー、RSS フィード、およびフォルダーの共有](#OLSelectAPI_Sharing)
+- [添付ファイルの追加、削除、保存、およびブロックレベル、パス、サイズ、種類の取得](#OLSelectAPI_Attachments)
+- [ルール、タイム ゾーン、ビューの管理](#OLSelectAPI_Misc)
+- [現在のプロファイルのマスターカテゴリリストでの分類項目の追加または削除](#OLSelectAPI_Categories)
+- [現在のプロファイルでアカウントの詳細情報を取得する](#OLSelectAPI_PrimaryAccount)
+- [Exchange の配布リストまたはアドレスエントリとしてのユーザーの詳細情報を取得する](#OLSelectAPI_AddressBook)
+- [ソリューション用のプライベート データの保管](#OLSelectAPI_StoringData)
+
+<!--More removed images
+![Customize the Outlook UI](media/odc_ol15_ta_SelectingAPI_Fig3-1.gif)
+![Customize form regions](media/odc_ol15_ta_SelectingTech_Fig3-2.gif)
+![Use PropertyAccessor to access properties](media/odc_ol15_ta_SelectingAPI_Fig3-3.gif)
+![Enumerate and view items in a folder](media/odc_ol15_ta_SelectingAPI_Fig3-4.gif)
+![Flag items as tasks](media/odc_ol15_ta_SelectingAPI_Fig3-5.gif)
+![Share calendars, RSS feeds, and folders](media/odc_ol15_ta_SelectingAPI_Fig3-6.gif)
+![Manage attachments](media/odc_ol15_ta_SelectingAPI_Fig3-7.gif)
+![Manage rules, time zones, and views](media/odc_ol15_ta_SelectingAPI_Fig3-8.gif)
+![Add or remove a category](media/odc_ol15_ta_SelectingAPI_Fig3-9.gif)
+![Get detailed information for an account](media/odc_ol15_ta_SelectingAPI_Fig3-10.gif)
+![Manage Exchange distribution lists and users](media/odc_ol15_ta_SelectingAPI_Fig3-11.gif)
+![Store private data for solutions](media/odc_ol15_ta_SelectingAPI_Fig3-12.gif)
+-->
+
+### <a name="more-scenarios-supported-by-the-object-model-or-pia-since-outlook-2010"></a>Outlook 2010 以降のオブジェクト モデルまたは PIA でサポートされているその他のシナリオ
+
+Outlook ソリューションを Outlook 2010 以降のバージョンでのみ実行する場合には、次のセクションで示されるシナリオをサポートするオブジェクト モデルまたは PIA を選択して使用できます。 このセクションでは、Outlook オブジェクトモデルで各シナリオを拡張するために使用できる主なオブジェクトまたはメンバーを指定します（Outlook オブジェクトモデルと統合できる Office オブジェクトモデル内の[IRibbonControl](https://docs.microsoft.com/office/vba/api/Office.IRibbonControl)、[IRibbonExtensibility](https://docs.microsoft.com/office/vba/api/Office.IRibbonExtensibility)、[IRibbonUI](https://docs.microsoft.com/office/vba/api/Office.IRibbonUI)インターフェースを除く）。 
+   
+- [Office Backstage ビューやコンテキストメニューなどの Outlook 2010 UI をカスタマイズする](#OLSelectAPI_CustomizingUIOutlook2010)
+- [スレッドの異種アイテムを管理し、アクセスする](#OLSelectAPI_Conversations)
+- [エクスプローラー内でのアイテムの選択の管理、または選択したアイテムの特定](#OLSelectAPI_ItemSelection)
+- [インスペクター内での添付ファイルの選択の管理](#OLSelectAPI_AttachmentSelection)
+- [1 つのプロファイルでの複数の Exchange アカウントのサポート](#OLSelectAPI_MultipleAccounts)
+- [住所を入力する連絡先カードの作成](https://docs.microsoft.com/office/vba/api/Outlook.NameSpace.CreateContactCard)
+- [ソリューション モジュールでソリューション固有のフォルダーを整理する](#OLSelectAPI_Folders)
+
+<!--more removed images:
+![Customize the Outlook 2010 UI](media/odc_ol15_ta_SelectingAPI_Fig4-1.gif)
+![Manage items in a conversation](media/odc_ol15_ta_SelectingAPI_Fig4-2.gif)
+![Manage selection of items in an explorer](media/odc_ol15_ta_SelectingAPI_Fig4-3.gif)
+![Manage selection of attachments in an inspector](media/odc_ol15_ta_SelectingAPI_Fig4-4.gif)
+![Support multiple Exchange accounts in one profile](media/odc_ol15_ta_SelectingAPI_Fig4-5.gif)
+![Create a contact card for an address entry](media/odc_ol15_ta_SelectingAPI_Fig4-6.gif)
+![Organize solution-specific folders](media/odc_ol15_ta_SelectingAPI_Fig4-7.gif)
+-->
+
+### <a name="additional-scenarios-supported-by-the-object-model-or-pia-since-outlook-2013"></a>Outlook 2013 以降のオブジェクト モデルまたは PIA でサポートされている追加のシナリオ
+
+Outlook ソリューションを Outlook 2013 以降のバージョンでのみ実行する場合には、次のリソースで示されるシナリオをサポートするオブジェクト モデルまたは PIA を使用できます。
+
+- [現在のフォルダー内のすべての連絡先のビューを表示](https://docs.microsoft.com/office/vba/api/Outlook.peopleview)
+- [閲覧ウィンドウのインライン応答を選択](#OLSelectAPI_InlineResponse)
+- [連絡先の住所またはフルネームをチェックするダイアログを表示](#OLSelectAPI_ContactCheckDialogs)
+- [アイテムのプロパティの読み取り完了を検知](https://docs.microsoft.com/office/vba/outlook/How-to/Items-Folders-and-Stores/outlook-item-objects)
+
+<!--more removed images:
+![Display view for all contacts in current folder](media/odc_ol15_ta_SelectingAPI_Fig5-1.gif)
+![Inline response in reading pane](media/odc_ol15_ta_SelectingAPI_Fig5-2.gif)
+![Show check address or full name dialog for contact](media/odc_ol15_ta_SelectingAPI_Fig5-3.gif)
+![Detecting reading item properties is complete](media/odc_ol15_ta_SelectingAPI_Fig5-4.gif)
+-->
+
+
+
 <a name="OLSelectAPI_FactorsMAPI"> </a>
+
+## <a name="decision-factors-for-mapi"></a>MAPI の決定要因
 
 一般に、Microsoft Exchange サーバーなどの MAPI ベースのサーバーにあるデータにアクセスしたり、次のような作業を行ったりするには、MAPI を使用します。
   
@@ -395,9 +394,10 @@ Outlook ソリューションを Outlook 2010 より前ではなく、Outlook 20
 - アカウントのメッセージ ストアの管理。
     
 Outlook 2007 より前であれば開発者が MAPI または Microsoft Collaboration Data Objects (CDO) 1.2.1 や Microsoft Exchange Client Extensions といった他の API の力を借りて実現していた広範囲の機能を、Outlook 2007 以降はオブジェクト モデルがサポートしています。したがって、前述のリストのいずれかのシナリオが自分のソリューションに当てはまるものの、ソリューションを Outlook 2007 または Outlook 2010 上で実行する場合は、Outlook オブジェクト モデルまたは PIA を使用してこれらのシナリオをサポートすることができますし、そのようにすることをお薦めします。Outlook 開発テクノロジを統合する Outlook 2007 拡張機能に関する詳細については、「[What's New for Developers in Outlook 2007 (Part 1 of 2)](https://msdn.microsoft.com/library/76e3f0b7-ef2b-4e9f-8515-3002d75d7721%28Office.15%29.aspx)」を参照してください。
-  
-## <a name="decision-factors-for-the-auxiliary-apis"></a>補助 API の決定要因
+
 <a name="OLSelectAPI_FactorsAux"> </a>
+
+## <a name="decision-factors-for-the-auxiliary-apis"></a>補助 API の決定要因
 
 Outlook 補助 API は、オブジェクト モデルや MAPI ではソリューションが提供されない一部のシナリオの Outlook ビジネス ロジックや MAPI と統合できます。次のシナリオでは Outlook 補助 API を使用します。
   
@@ -416,9 +416,10 @@ Outlook 補助 API は、オブジェクト モデルや MAPI ではソリュー
 - アイテムの分類: Outlook アイテムを送信後に、そのアイテムを分類します。
     
 補助 API の詳細については、「[その他の技術資料補助 API](#OLSelectAPI_AdditionalResourcesAuxAPIs)」セクションをご覧ください。 
-  
-## <a name="automating-outlook-by-in-process-vs-out-of-process-solutions"></a>インプロセス ソリューションとプロセス外ソリューションによる Outlook 自動化の違い
+
 <a name="OLSelectAPI_InOrOut"> </a>
+
+## <a name="automating-outlook-by-in-process-vs-out-of-process-solutions"></a>インプロセス ソリューションとプロセス外ソリューションによる Outlook 自動化の違い
 
 > [!NOTE]
 > このセクションと次のセクションの Outlook 自動化に関する論考は、Office アドイン の対象ではありません。Office アドイン は、Office クライアントや Web アプリケーションの機能性を拡張することを目的としており、自動化することを目的とはしていません。 
@@ -426,18 +427,20 @@ Outlook 補助 API は、オブジェクト モデルや MAPI ではソリュー
 Outlook は、Outlook プロセスと同じフォアグラウンド プロセスで実行するアドインを使用することや、Outlook プロセス外部の別個の独自プロセスで実行するスタンドアロン ソリューションによって、自動化をサポートします。一般に、Outlook を自動化するには、アドインを使用してオブジェクト モデル、PIA、MAPI 経由で、あるいはまれに補助 API ([HrProcessConvActionForSentItem](auxiliary/hrprocessconvactionforsentitem.md) など) 経由で Outlook と対話します。プロセス外ソリューションは、それが必要な場合にのみ使用します (たとえば、Tzmovelib.dll ファイルを使って顧客の Outlook 予定表を再編成する MAPI クライアント アプリケーションを作成している場合や、フォルダー内の多数のアイテムを列挙し、パフォーマンスを最適化するためにそのアイテムのプロパティをバックグラウンド スレッドで変更する場合など)。 
   
 アドインは Outlook 自動化の推奨ソリューションです。それは、Outlook がアドインの [OnConnection(Object, ext_ConnectMode, Object, Array)](https://msdn.microsoft.com/library/797003e7-ecd1-eccb-eaaf-32d6ddde8348%28Office.15%29.aspx) イベント中、アドインに渡される [Application](https://msdn.microsoft.com/library/Extensibility.IDTExtensibility2.OnConnection.aspx) オブジェクトのみを信頼するからです。この **Application** オブジェクトからすべてのオブジェクト、プロパティ、メソッドを派生させることにより、オブジェクト モデル ガードのセキュリティ警告が表示されないようにすることができます。アドインが **Application** オブジェクトの新規インスタンスを作成する場合は、そのアドインが信頼されたアドインのリストに含まれているとしても、Outlook はそのオブジェクトを信頼しません。そのような **Application** オブジェクトから派生したオブジェクト、プロパティ、メソッドはいずれも信頼されず、ブロックされたプロパティやメソッドによってセキュリティ警告が呼び出されます。Outlook オブジェクト モデル ガードの詳細については、「 [Outlook オブジェクト モデルのセキュリティ動作 (英語)(機械翻訳)](https://msdn.microsoft.com/library/4aa3b7c7-5f3f-41ce-bbf3-75d8ecbd6d4f%28Office.15%29.aspx)」を参照してください。
-  
-## <a name="automating-outlook-by-managed-vs-unmanaged-solutions"></a>マネージ ソリューションとアンマネージ ソリューションによる Outlook 自動化の違い
+
 <a name="OLSelectAPI_ManOrUnman"> </a>
+
+## <a name="automating-outlook-by-managed-vs-unmanaged-solutions"></a>マネージ ソリューションとアンマネージ ソリューションによる Outlook 自動化の違い
 
 Outlook は、マネージ言語またはアンマネージ言語で作成されたアドインとスタンドアロン アプリケーションによる自動化をサポートします。よく使用されるマネージ言語は C# と Visual Basic です。C++ と Delphi のツールはよくアンマネージ環境で使用されます。マネージ開発とアンマネージ開発のどちらを選択するかは、熟練したプログラマを調達できるかどうかを考慮して決定することになります。 
   
 使用するソリューションがオブジェクト モデルのみを使用する場合は、PIA または Visual Studio の Office 開発ツールを使用したマネージ ソリューションの開発を検討できます。Visual Studio の Office 開発ツールにはプロジェクト テンプレートとビジュアル デザイナーが用意されていて、カスタム ユーザー インターフェイスの作成と Office ソリューションの開発を容易に行えます。
   
 他方、MAPI は .NET Framework より何年も前に開発されており、Microsoft は MAPI 用のマネージ ラッパーを提供していないため、Microsoft ではマネージ コード内での MAPI の使用をサポートしていません。MAPI を使用している場合は、アンマネージ ソリューションを開発する必要があります。詳細については、「[クライアント側メッセージング開発のサポート ガイドライン](https://support.microsoft.com/kb/266353/en-us)」を参照してください。
-  
-## <a name="niche-apis-and-technologies"></a>最適な API とテクノロジ
+
 <a name="OLSelectAPI_NicheAPI"> </a>
+
+## <a name="niche-apis-and-technologies"></a>最適な API とテクノロジ
 
 Outlook Social Connector (OSC) と天気予報バーは、Outlook の非常に特殊なシナリオの拡張をサポートします。 
   
@@ -462,9 +465,10 @@ Outlook 2013 以降、天気予報バー用のサード パーティの天気 We
 既定では、Outlook は MSN 天気が提供する天気データを使用します。天気バーは、Outlook との通信用に定義されたプロトコルに準拠するサード パーティの天気データ Web サービスをサポートします。サード パーティの天気データ サービスがこのプロトコルをサポートする限り、ユーザーはその天気データ サービスを選択して天気バーに天気データを提供できます。
   
 OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細については、「[その他の技術資料主な参照資料、リソース、コード サンプル](#OLSelectAPI_AdditionalResourcesRefCode)」セクションをご覧ください。 
-  
-## <a name="conclusion"></a>終わりに
+
 <a name="OLSelectAPI_Conclusion"> </a>
+
+## <a name="conclusion"></a>まとめ
 
 ソリューションに最適な API またはテクノロジを判断するには、まずソリューションの目標を明確にする必要があります。 
   
@@ -485,28 +489,32 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 サード パーティの天気データ サービスを天気バーにプラグインすることを検討している場合は、天気バー拡張機能で定義されているプロトコルに準拠すれば、目的にかなった Web サービスを提供することができます。そのような Web サービスはマネージ言語で作成できます。
   
 ソリューションで使用する API またはテクノロジが決まったなら、詳細について「[その他の技術資料主な参照資料、リソース、コード サンプル](#OLSelectAPI_AdditionalResourcesRefCode)」セクションのその他の資料やコード サンプルを参照できます。 
-  
-## <a name="see-also-office-add-ins"></a>関連項目: Office アドイン
+
 <a name="OLSelectAPI_AdditionalResourcesApps"> </a>
+
+## <a name="see-also-office-add-ins"></a>関連項目: Office アドイン
 
 [Office 用アプリの構築を開始する](https://msdn.microsoft.com/library/e64de870-ce22-4331-92e7-76d35279bf91%28Office.15%29.aspx) には、アーキテクチャや開発ライフ サイクルを含む Office アドイン の概要がわかりやすく提供されています。 
   
 メール アプリの開発に関するリソースの詳細なロードマップについては、「[Outlook アドイン](https://msdn.microsoft.com/library/71e64bc9-e347-4f5d-8948-0a47b5dd93e6%28Office.15%29.aspx)」を参照してください。 
-  
-## <a name="see-also-object-model-and-pia"></a>関連項目: オブジェクト モデルと PIA
+
 <a name="OLSelectAPI_AdditionalResourcesObjModelPIA"> </a>
 
-次の技術資料には、オブジェクト モデルおよび PIA の使用に関する詳細情報が提供されています。
-  
-### <a name="accountsprimary-exchange-account-in-profile"></a>アカウントプロファイルのプライマリ Exchange アカウント
+## <a name="see-also-object-model-and-pia"></a>関連項目: オブジェクト モデルと PIA
+
+オブジェクトモデルと PIA の使用方法の詳細については、次のリソースを参照してください。
+
 <a name="OLSelectAPI_PrimaryAccount"> </a>
+
+### <a name="accountsprimary-exchange-account-in-profile"></a>アカウントプロファイルのプライマリ Exchange アカウント
 
 - [Account](https://msdn.microsoft.com/library/f624438c-4e45-2822-18b6-bfe8074a33c0%28Office.15%29.aspx) オブジェクト 
     
 - [NameSpace.Accounts](https://msdn.microsoft.com/library/80e969ea-d2cc-966d-5fe4-68d59951b5c9%28Office.15%29.aspx) プロパティ 
-    
-### <a name="accountsmultiple-accounts-in-profile"></a>アカウントプロファイルの複数アカウント
+
 <a name="OLSelectAPI_MultipleAccounts"> </a>
+
+### <a name="accountsmultiple-accounts-in-profile"></a>アカウントプロファイルの複数アカウント
 
 - [Account](https://msdn.microsoft.com/library/f624438c-4e45-2822-18b6-bfe8074a33c0%28Office.15%29.aspx) オブジェクト 
     
@@ -515,9 +523,10 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 - [複数のアカウントの情報を取得する](https://msdn.microsoft.com/library/af587ee2-429a-252f-ecb6-2f058b9a37a8%28Office.15%29.aspx)
     
 - [Outlook 2010 で複数の Exchange アカウントを操作する](https://msdn.microsoft.com/library/b5a80da9-102d-4617-8a06-49ded01a237a%28Office.15%29.aspx)
-    
-### <a name="address-book-and-exchange-users"></a>アドレス帳と Exchange ユーザー
+
 <a name="OLSelectAPI_AddressBook"> </a>
+
+### <a name="address-book-and-exchange-users"></a>アドレス帳と Exchange ユーザー
 
 - [アドレス帳から名前を表示する(機械翻訳)](https://msdn.microsoft.com/library/32e7179c-8133-ee20-ecf6-52c9275f205f%28Office.15%29.aspx)
     
@@ -536,13 +545,15 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 - [ExchangeUser](https://msdn.microsoft.com/library/6ec117d1-7fdb-aa36-b567-1242f8238df0%28Office.15%29.aspx) オブジェクト 
     
 - [SelectNamesDialog](https://msdn.microsoft.com/library/1522736a-3cad-9f1c-4da9-b52a3a01731c%28Office.15%29.aspx) オブジェクト 
-    
-### <a name="attachments"></a>添付ファイル
+
 <a name="OLSelectAPI_Attachments"> </a>
+
+### <a name="attachments"></a>添付ファイル
 
 - [メール アイテムにファイルを添付する](https://msdn.microsoft.com/library/1d94629b-e713-92cb-32de-c8910612e861%28Office.15%29.aspx)
     
-- [Outlook 2010 で制限される添付ファイルの種類](https://technet.microsoft.com/ja-JP/library/cc179163.aspx)
+- 
+  [Outlook 2010 で制限される添付ファイルの種類](https://technet.microsoft.com/ja-JP/library/cc179163.aspx)
     
 - [Attachment](https://msdn.microsoft.com/library/3e11582b-ac90-0948-bc37-506570bb287b%28Office.15%29.aspx) オブジェクト 
     
@@ -563,18 +574,20 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 - アイテム オブジェクトごとの **BeforeAttachmentSave** イベント 
     
 - アイテム オブジェクトごとの **BeforeAttachmentWrite** イベント 
-    
-### <a name="attachments-selection-in-inspector"></a>添付ファイル: 検査での選択
+
 <a name="OLSelectAPI_AttachmentSelection"> </a>
+
+### <a name="attachments-selection-in-inspector"></a>添付ファイル: 検査での選択
 
 - [Inspector.AttachmentSelection](https://msdn.microsoft.com/library/19466ce7-def8-4cce-1776-dcea1df9f15d%28Office.15%29.aspx) プロパティ 
     
 - [Inspector.AttachmentSelectionChange](https://msdn.microsoft.com/library/1250045d-bcb3-b823-31d5-ec31c64ad59e%28Office.15%29.aspx) イベント 
-    
-### <a name="automating-outlook"></a>Outlook の自動化
+
 <a name="OLSelectAPI_AutomateOutlook"> </a>
 
-- [COM アドインを使用した Outlook のカスタマイズ(機械翻訳)](https://msdn.microsoft.com/library/84a4f616-3ace-0139-57d5-f0c070064ab2%28Office.15%29.aspx)
+### <a name="automating-outlook"></a>Outlook の自動化
+
+- [COM アドインを使用した Outlook のカスタマイズ](https://msdn.microsoft.com/library/84a4f616-3ace-0139-57d5-f0c070064ab2%28Office.15%29.aspx)
     
 - [Outlook 2010 の C++ アドインをビルドする](https://msdn.microsoft.com/library/70b308e7-d713-4a26-9892-5021f7320674%28Office.15%29.aspx)
     
@@ -589,25 +602,28 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 - [Visual Basic Application から Outlook を自動化する](https://msdn.microsoft.com/library/623f91af-cd50-1ff0-9519-5a39cbcf5d18%28Office.15%29.aspx)
     
 - [他の Office アプリケーションを使用した Outlook の自動化(機械翻訳)](https://msdn.microsoft.com/library/d3e44f80-df67-2d28-94dc-14d7a8c8c26c%28Office.15%29.aspx)
-    
-### <a name="categories"></a>カテゴリ
+
 <a name="OLSelectAPI_Categories"> </a>
+
+### <a name="categories"></a>カテゴリ
 
 - [Outlook アイテムを分類する(機械翻訳)](https://msdn.microsoft.com/library/e8cfb450-b8b0-bee6-fdf0-d0a92bf9af56%28Office.15%29.aspx)
     
 - [Category](https://msdn.microsoft.com/library/143ef095-54b0-cbe2-e356-632029061ac2%28Office.15%29.aspx) オブジェクト 
     
 - [NameSpace.Categories](https://msdn.microsoft.com/library/3963afca-3a7e-38d7-1347-7e1467be3a10%28Office.15%29.aspx) プロパティ 
-    
-### <a name="contacts-check-address-and-full-name"></a>連絡先: 住所とフル ネームの確認
+
 <a name="OLSelectAPI_ContactCheckDialogs"> </a>
+
+### <a name="contacts-check-address-and-full-name"></a>連絡先: 住所とフル ネームの確認
 
 - [ContactItem.ShowCheckAddressDialog](https://msdn.microsoft.com/library/773a1a3c-1247-fd48-399a-728766e56570%28Office.15%29.aspx) メソッド 
     
 - [ContactItem.ShowCheckFullNameDialog](https://msdn.microsoft.com/library/d42632e3-6f50-cce7-80c6-cf846be1f925%28Office.15%29.aspx) メソッド 
-    
-### <a name="conversations"></a>会話
+
 <a name="OLSelectAPI_Conversations"> </a>
+
+### <a name="conversations"></a>会話
 
 - [Outlook アイテムをスレッドとして管理する](https://msdn.microsoft.com/library/d91959d7-07b2-7952-8e6d-a39422d355e0%28Office.15%29.aspx)
     
@@ -620,25 +636,28 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 - [SimpleItems](https://msdn.microsoft.com/library/b929ae28-fe5f-607e-37b5-ed6a304d4896%28Office.15%29.aspx) オブジェクト 
     
 - アイテム オブジェクトごとの **ConversationID** プロパティ 
-    
-### <a name="events"></a>イベント
+
 <a name="OLSelectAPI_Events"> </a>
+
+### <a name="events"></a>イベント
 
 - [Outlook イベントを使用する](https://msdn.microsoft.com/library/514f8f31-8047-2a9f-cbac-d0a23218f49c%28Office.15%29.aspx)
     
 - [インスペクターのラッパーを実装し、インスペクターごとにアイテム レベルのイベントを追跡する](https://msdn.microsoft.com/library/8021dd2b-c36c-492b-b281-783e85140ad8%28Office.15%29.aspx)
-    
-### <a name="explorer-inline-response"></a>エクスプローラー: インライン応答
+
 <a name="OLSelectAPI_InlineResponse"> </a>
+
+### <a name="explorer-inline-response"></a>エクスプローラー: インライン応答
 
 - [Explorer.ActiveInlineResponse](https://msdn.microsoft.com/library/fc38314d-7cff-44f4-9151-6129f918a721%28Office.15%29.aspx) プロパティ 
     
 - [Explorer.ActiveInlineResponseWordEditor](https://msdn.microsoft.com/library/b9058694-ab8f-4962-ab7d-afac1704dd29%28Office.15%29.aspx) プロパティ 
     
 - [Explorer.InlineResponse](https://msdn.microsoft.com/library/5dbaddbd-e6cd-4776-b417-c67f51b12812%28Office.15%29.aspx) イベント 
-    
-### <a name="items-basic-properties-fields-and-forms"></a>アイテム: 基本のプロパティ、フィールド、フォーム
+
 <a name="OLSelectAPI_ItemPropFieldsForms"> </a>
+
+### <a name="items-basic-properties-fields-and-forms"></a>アイテム: 基本のプロパティ、フィールド、フォーム
 
 - [Outlook アイテム オブジェクト(機械翻訳)](https://msdn.microsoft.com/library/6ea4babf-facf-4018-ef5a-4a484e55153a%28Office.15%29.aspx)
     
@@ -653,18 +672,20 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 - [カスタム フィールドとデータ型の概要(機械翻訳)](https://msdn.microsoft.com/library/a85a7bc2-2b85-1782-04a3-0104e0df32aa%28Office.15%29.aspx)
     
 - [フォーム ページとフォーム領域をカスタマイズする(機械翻訳)](https://msdn.microsoft.com/library/c8c2d080-66a8-b761-bdc0-527b209e0bd1%28Office.15%29.aspx)
-    
-### <a name="items-customizing-properties"></a>アイテム: プロパティのカスタマイズ
+
 <a name="OLSelectAPI_CustomizingProperties"> </a>
+
+### <a name="items-customizing-properties"></a>アイテム: プロパティのカスタマイズ
 
 - [プロパティの概要(機械翻訳)](https://msdn.microsoft.com/library/242c9e89-a0c5-ff89-0d2a-410bd42a3461%28Office.15%29.aspx)
     
 - [Efficiently Getting and Setting Custom Properties in a Contact Folder in Outlook 2010](https://msdn.microsoft.com/library/bb49f7a6-ec0a-483a-a27e-e843c6af781b%28Office.15%29.aspx)
     
 - [PropertyAccessor](https://msdn.microsoft.com/library/2fc91e13-703c-3ec9-9066-ffee7144306c%28Office.15%29.aspx) オブジェクト 
-    
-### <a name="items-enumerating-filtering-and-sorting"></a>アイテム: 列挙、フィルター処理、並べ替え
+
 <a name="OLSelectAPI_Enumerating"> </a>
+
+### <a name="items-enumerating-filtering-and-sorting"></a>アイテム: 列挙、フィルター処理、並べ替え
 
 - [Outlook のアイテムを保存する(機械翻訳)](https://msdn.microsoft.com/library/e4a639a4-10b2-7665-9261-19d6e7707e48%28Office.15%29.aspx)
     
@@ -677,9 +698,10 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 - [フォルダー内のアイテムを並べ替える(機械翻訳)](https://msdn.microsoft.com/library/bc3651da-cfdb-4301-4034-bb848f371e55%28Office.15%29.aspx)
     
 - [Table](https://msdn.microsoft.com/library/0affaafd-93fe-227a-acee-e09a86cadc20%28Office.15%29.aspx) オブジェクト 
-    
-### <a name="items-flag-as-tasks"></a>アイテム: タスクとしてのフラグ
+
 <a name="OLSelectAPI_ItemsFlag"> </a>
+
+### <a name="items-flag-as-tasks"></a>アイテム: タスクとしてのフラグ
 
 [MailItem](https://msdn.microsoft.com/library/14197346-05d2-0250-fa4c-4a6b07daf25f%28Office.15%29.aspx) オブジェクトなどの一部のアイテム オブジェクトで次のタスク関連のプロパティを参照してください。 
   
@@ -692,16 +714,18 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 - [TaskSubject](https://msdn.microsoft.com/library/f7e4629f-ad47-b455-9fee-b5e537602a34%28Office.15%29.aspx) プロパティ 
     
 - [ToDoTaskOrdinal](https://msdn.microsoft.com/library/d1ccb01a-0792-3779-3f94-eb5195a39bb0%28Office.15%29.aspx) プロパティ 
-    
-### <a name="items-selection-in-explorer"></a>アイテム: Explorer での選択
+
 <a name="OLSelectAPI_ItemSelection"> </a>
+
+### <a name="items-selection-in-explorer"></a>アイテム: Explorer での選択
 
 - [Selection.GetSelection](https://msdn.microsoft.com/library/c6af6665-d97d-3833-1014-5b43282bafc2%28Office.15%29.aspx) メソッド 
     
 - [Selection.Location](https://msdn.microsoft.com/library/8a2db72a-8db0-840e-349e-5d9d22f3affb%28Office.15%29.aspx) プロパティ 
-    
-### <a name="miscellaneous-business-cards-rules-and-views"></a>その他: ビジネス カード、ルール、ビュー
+
 <a name="OLSelectAPI_Misc"> </a>
+
+### <a name="miscellaneous-business-cards-rules-and-views"></a>その他: ビジネス カード、ルール、ビュー
 
 - [名刺をカスタマイズおよび共有する(機械翻訳)](https://msdn.microsoft.com/library/d29fd962-ea5f-040d-e9af-e8ab70595832%28Office.15%29.aspx)
     
@@ -720,45 +744,51 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 - [Outlook のビュー(機械翻訳)](https://msdn.microsoft.com/library/cbaa3192-6c27-26c0-ebd6-f6489c2e812e%28Office.15%29.aspx)
     
 - [Views](https://msdn.microsoft.com/library/5dd7edc2-12a2-f4c2-d158-8053d80e8dc9%28Office.15%29.aspx) オブジェクト 
-    
-### <a name="security"></a>セキュリティ
+
 <a name="OLSelectAPI_Misc"> </a>
+
+### <a name="security"></a>セキュリティ
 
 - [Outlook オブジェクト モデルのセキュリティ動作 (英語)(機械翻訳)](https://msdn.microsoft.com/library/4aa3b7c7-5f3f-41ce-bbf3-75d8ecbd6d4f%28Office.15%29.aspx)
     
 - [Outlook 2010 でのシャットダウンの変更](https://msdn.microsoft.com/library/1b154d46-8d13-4c65-91e3-180b22603d03%28Office.15%29.aspx)
     
-- [Outlook 2010 で制限される添付ファイルの種類](https://technet.microsoft.com/ja-JP/library/cc179163.aspx)
+- 
+  [Outlook 2010 で制限される添付ファイルの種類](https://technet.microsoft.com/ja-JP/library/cc179163.aspx)
     
 - [アプリケーションの終了に関する Outlook 2007 SP2 での変更点](https://msdn.microsoft.com/library/795a8237-7804-4da4-9d04-2bb663d300d9%28Office.15%29.aspx)
     
 - [Code Security Changes in Outlook 2007](https://msdn.microsoft.com/library/26a9fd8f-6277-48ac-a92f-3ff46e1d883a%28Office.15%29.aspx)
-    
-### <a name="sharing"></a>共有
+
 <a name="OLSelectAPI_Sharing"> </a>
 
-- [予定表を共有する(機械翻訳)](https://msdn.microsoft.com/library/03e0b693-5446-ca62-f868-69a583087966%28Office.15%29.aspx)
+### <a name="sharing"></a>共有
+
+- [予定表を共有する](https://msdn.microsoft.com/library/03e0b693-5446-ca62-f868-69a583087966%28Office.15%29.aspx)
     
 - [オンライン予定表、RSS フィード、Microsoft SharePoint Foundation フォルダー、Exchange フォルダーを共有する(機械翻訳)](https://msdn.microsoft.com/library/e579e026-bd10-37bb-eb3e-5c9f042fa0fa%28Office.15%29.aspx)
     
 - [SharingItem](https://msdn.microsoft.com/library/63dd3451-44f3-7cc4-c6e2-7dad5835a7d2%28Office.15%29.aspx) オブジェクト 
-    
-### <a name="solutions-solution-specific-folders"></a>ソリューション: ソリューション固有のフォルダー
+
 <a name="OLSelectAPI_Folders"> </a>
+
+### <a name="solutions-solution-specific-folders"></a>ソリューション: ソリューション固有のフォルダー
 
 - [Outlook 2010 ソリューション モジュールのプログラミング](https://msdn.microsoft.com/library/5989a3da-2f2a-4abd-87b0-cc0e1560dd59%28Office.15%29.aspx)
     
 - [SolutionsModule](https://msdn.microsoft.com/library/4597765e-a95d-bf07-2ac4-103218ebc696%28Office.15%29.aspx) オブジェクト 
-    
-### <a name="solutions-storing-data"></a>ソリューション: データの保管
+
 <a name="OLSelectAPI_StoringData"> </a>
+
+### <a name="solutions-storing-data"></a>ソリューション: データの保管
 
 - [ソリューションのデータを保存する(機械翻訳)](https://msdn.microsoft.com/library/58e69983-5718-4dde-64fc-858abd80c9e5%28Office.15%29.aspx)
     
 - [StorageItem](https://msdn.microsoft.com/library/41776bc3-b838-2755-fd6b-3b5012fb9ae5%28Office.15%29.aspx) オブジェクト 
-    
-### <a name="user-interface-customizing-form-regions"></a>ユーザー インターフェイス: フォーム領域のカスタマイズ
+
 <a name="OLSelectAPI_CustomFormRegions"> </a>
+
+### <a name="user-interface-customizing-form-regions"></a>ユーザー インターフェイス: フォーム領域のカスタマイズ
 
 - [フォーム ページとフォーム領域をカスタマイズする(機械翻訳)](https://msdn.microsoft.com/library/c8c2d080-66a8-b761-bdc0-527b209e0bd1%28Office.15%29.aspx)
     
@@ -775,9 +805,10 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 - [FormRegion](https://msdn.microsoft.com/library/3a0b83eb-4076-9cb3-86a9-68f9e44df89f%28Office.15%29.aspx) オブジェクト 
     
 - [FormRegionStartup](https://msdn.microsoft.com/library/948ea6b7-2962-57e7-618d-fa0977b65651%28Office.15%29.aspx) オブジェクト 
-    
-### <a name="user-interface-customizing-since-outlook-2007"></a>ユーザー インターフェイス: Outlook 2007 以降のカスタマイズ
+
 <a name="OLSelectAPI_CustomizeTheOutlookInterface"> </a>
+
+### <a name="user-interface-customizing-since-outlook-2007"></a>ユーザー インターフェイス: Outlook 2007 以降のカスタマイズ
 
 - [リボンのユーザー設定の概要(機械翻訳)](https://msdn.microsoft.com/library/ee49751d-9eae-357c-5fa9-0b2dd4ff0890%28Office.15%29.aspx)
     
@@ -798,9 +829,10 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 - [IRibbonExtensibility](https://msdn.microsoft.com/library/b27a7576-b6f5-031e-e307-78ef5f8507e0%28Office.15%29.aspx) オブジェクト 
     
 - [NavigationPane](https://msdn.microsoft.com/library/b6538c72-6115-99fc-c926-e0532a747823%28Office.15%29.aspx) オブジェクト 
-    
-### <a name="user-interface-customizing-since-outlook-2010"></a>ユーザー インターフェイス: Outlook 2010 以降のカスタマイズ
+
 <a name="OLSelectAPI_CustomizingUIOutlook2010"> </a>
+
+### <a name="user-interface-customizing-since-outlook-2010"></a>ユーザー インターフェイス: Outlook 2010 以降のカスタマイズ
 
 - [Outlook 2010 のユーザー インターフェイスの拡張](https://msdn.microsoft.com/library/00b504b0-e897-43b9-8615-44276166823f%28Office.15%29.aspx)
     
@@ -815,18 +847,20 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 - [IRibbonExtensibility](https://msdn.microsoft.com/library/b27a7576-b6f5-031e-e307-78ef5f8507e0%28Office.15%29.aspx) オブジェクト 
     
 - [IRibbonUI](https://msdn.microsoft.com/library/d323aa21-de74-e821-c914-db71ef3b9c5e%28Office.15%29.aspx) オブジェクト 
-    
-### <a name="user-interface-solutions-specific-folders"></a>ユーザー インターフェイス: ソリューション固有のフォルダー
+
 <a name="OLSelectAPI_CustomizingUIOutlook2010"> </a>
+
+### <a name="user-interface-solutions-specific-folders"></a>ユーザー インターフェイス: ソリューション固有のフォルダー
 
 - [Outlook 2010 ソリューション モジュールのプログラミング](https://msdn.microsoft.com/library/5989a3da-2f2a-4abd-87b0-cc0e1560dd59%28Office.15%29.aspx)
     
 - [Adding Solution-Specific Folders to the Solutions Module in Outlook 2010](https://msdn.microsoft.com/library/9709af57-1577-4497-8c9c-3d239353e2ed%28Office.15%29.aspx)
     
 - [SolutionsModule](https://msdn.microsoft.com/library/4597765e-a95d-bf07-2ac4-103218ebc696%28Office.15%29.aspx) オブジェクト 
-    
-## <a name="see-also-auxiliary-apis"></a>関連項目: 補助 API
+
 <a name="OLSelectAPI_AdditionalResourcesAuxAPIs"> </a>
+
+## <a name="see-also-auxiliary-apis"></a>関連項目: 補助 API
 
 次の技術資料には、Outlook 補助 API に関する詳細情報が提供されています。
   
@@ -875,9 +909,10 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 - [バイナリ プロパティからのストリームを解析し、TZREG 構造体を読み取る](auxiliary/how-to-parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure.md)
     
 - [予定からタイム ゾーンのプロパティを読み取る](auxiliary/how-to-read-time-zone-properties-from-an-appointment.md)
-    
-## <a name="see-also-primary-references-resources-and-code-samples"></a>関連項目: 主な参照情報、リソース、およびサンプル コード
+
 <a name="OLSelectAPI_AdditionalResourcesRefCode"> </a>
+
+## <a name="see-also-primary-references-resources-and-code-samples"></a>関連項目: 主な参照情報、リソース、およびサンプル コード
 
 次の技術資料には、Outlook の主な参照資料、リソース、コード サンプルに関する詳細情報が提供されています。
   
