@@ -1,5 +1,5 @@
 ---
-title: 種類 ('Visio XML')
+title: 型 ('Visio XML')
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33422433"
 ---
-# <a name="types-visio-xml"></a>種類 ('Visio XML')
+# <a name="types-visio-xml"></a>型 ('Visio XML')
 
 このトピックでは、Visio 2013 ファイル形式の XML スキーマの種類を表示します。
   
