@@ -1,5 +1,5 @@
 ---
-title: GlueSettings 要素 (Window_Type complexType) (' Visio XML ')
+title: GlueSettings 要素 (Window_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: b5292f82-f299-ea96-6101-ebb799bbec9a
 description: 図面で接着が有効になっている場合に、図形を接着するオブジェクトを指定します。
-ms.openlocfilehash: 46d1ec09729cd26cfa3fc2f78a39edb6e7b7b02f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c2966cfb8805120aca164fc2f6f28b0210923f6f
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351213"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34542206"
 ---
-# <a name="gluesettings-element-windowtype-complextype-visio-xml"></a>GlueSettings 要素 (Window_Type complexType) (' Visio XML ')
+# <a name="gluesettings-element-windowtype-complextype-visio-xml"></a>GlueSettings 要素 (Window_Type complexType) (Visio XML)
 
 図面で接着が有効になっている場合に、図形を接着するオブジェクトを指定します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32351213"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[GlueSettings_Type](gluesettings_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |windows .xml、document .xml  <br/> |
    

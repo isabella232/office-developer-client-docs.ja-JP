@@ -1,5 +1,5 @@
 ---
-title: Cell 要素 ([レイヤー] セクション) (' Visio XML ')
+title: Cell 要素 (Layer セクション) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: f9896839-ca36-b82b-7412-e57195d4b8e2
 description: ページのレイヤーまたはそのプロパティに1つのプロパティを指定します。
-ms.openlocfilehash: e96fdc1dcd5c9a7a2cb8753beaff766c2b477af2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 119c82f84c76f735a5d9b73b4bea8beda0a7e476
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32318173"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539758"
 ---
-# <a name="cell-element-layer-section-visio-xml"></a>Cell 要素 ([レイヤー] セクション) (' Visio XML ')
+# <a name="cell-element-layer-section-visio-xml"></a>Cell 要素 (Layer セクション) (Visio XML)
 
 ページのレイヤーまたはそのプロパティに1つのプロパティを指定します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32318173"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |masters、system.xml ページ  <br/> |
    
@@ -60,19 +60,19 @@ ms.locfileid: "32318173"
 |U  <br/> |xsd: string  <br/> |省略可能  <br/> |既定値は DL である計量単位を表します。  <br/> |セルの単位を示します。  <br/> |
 |V  <br/> |xsd: string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプシートセルの値を指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この**Cell**要素の**N**属性は、シェイプシートのセルに対応する、制限された値のセットのいずれかである必要があります。 この**Cell**要素に対して許可されている**N**属性の値を確認するには、次の表を参照してください。 
   
 |**値**|**説明**|**詳細情報**|
 |:-----|:-----|:-----|
-|アクティブ  <br/> |レイヤーがアクティブであるかどうかを指定します。  <br/> |なし。  <br/> |
+|Active  <br/> |レイヤーがアクティブであるかどうかを指定します。  <br/> |なし。  <br/> |
 |色  <br/> |次のいずれかを指定します。レイヤーを表示するために使用されるカラーテーブルの色のインデックス、またはカラーテーブルにないカスタムの色を指定する RGB 値を指定します。  <br/> |なし。  <br/> |
-|colortrans  <br/> |レイヤーまたは図形のテキストの色の透明度を、0 (完全に不透明) から 1 (完全に透明) の範囲で指定します。  <br/> |なし。  <br/> |
+|ColorTrans  <br/> |レイヤーまたは図形のテキストの色の透明度を、0 (完全に不透明) から 1 (完全に透明) の範囲で指定します。  <br/> |なし。  <br/> |
 |揃える  <br/> |レイヤーに属している図形を接着できるかどうかを指定します。  <br/> |なし。  <br/> |
 |Lock  <br/> |レイヤーに属する図形に対する選択操作や編集操作をロックするかどうかを指定します。  <br/> |なし。  <br/> |
 |名前  <br/> |レイヤーの名前を指定します。  <br/> |なし。  <br/> |
-|nameuniv  <br/> |レイヤーの汎用名を指定します。  <br/> |なし。  <br/> |
+|NameUniv  <br/> |レイヤーの汎用名を指定します。  <br/> |なし。  <br/> |
 |Print  <br/> |図面を印刷するときに、レイヤーに属している図形を印刷するかどうかを指定します。  <br/> |なし。  <br/> |
 |Snap  <br/> |他の図形をレイヤーに割り当てられた図形にスナップできるかどうかを指定します。  <br/> |なし。  <br/> |
 |状態  <br/> |レイヤーが図面の有効なレイヤーであるかどうかを指定します。  <br/> |なし。  <br/> |

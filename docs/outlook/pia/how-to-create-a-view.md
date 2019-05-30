@@ -7,12 +7,12 @@ ms:contentKeyID: 55119902
 ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
-ms.openlocfilehash: c91f43001d6c56ad3b4c316aede9845a5e0a0064
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 75f414d95818b618cfcae236822bb2f5dacdf5f2
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349491"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540806"
 ---
 # <a name="create-a-view"></a>ビューを作成する
 
@@ -74,7 +74,7 @@ Outlook エクスプローラー ウィンドウのビュー ウィンドウ内�
 
 次のコード例では、**View** オブジェクトを **TableView** オブジェクトにキャストすると、CreateMeetingRequestsView が “Meeting Requests” という名前の新しいビューをユーザーの受信トレイに追加します。 次に、CreateMeetingRequestsView は、 *Name* パラメーターは “Meeting Requests”、また *ViewType* パラメーターは **olTableView** という設定で **View** オブジェクトの **Add** メソッドを呼び出します。 **TableView** オブジェクトの [Filter](https://msdn.microsoft.com/library/bb610296\(v=office.15\)) プロパティは、アイテムのメッセージ クラスに “IPM.Schedule” が含まれているアイテムが存在する場合に限りビューを表示させる DAV Searching and Locating (DASL) 文字列に設定されます。 新しいビューが保存され、適用されます。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;
@@ -85,7 +85,7 @@ using Outlook = Microsoft.Office.Interop.Outlook;
 private void CreateMeetingRequestsView()
 {
     const string PR_MESSAGE_CLASS =
-        "https://schemas.microsoft.com/mapi/proptag/0x001A001E";
+        "http://schemas.microsoft.com/mapi/proptag/0x001A001E";
     Outlook.Views views =
         Application.Session.GetDefaultFolder(
         Outlook.OlDefaultFolders.olFolderInbox).Views;

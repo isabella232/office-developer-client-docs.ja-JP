@@ -1,5 +1,5 @@
 ---
-title: Cell 要素 (arcto 行) (' Visio XML ')
+title: Cell 要素 (ArcTo 行) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 69f1a0cc-90fe-4b49-653c-bba4a1a2b1b2
 description: 円弧の x 座標、y 座標、または弧を格納します。
-ms.openlocfilehash: 709251c40299425d59df97fc0c48901bb0204167
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 6d744366cda7db0f3950ed0962c7ba5bd01b8e36
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356135"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538824"
 ---
-# <a name="cell-element-arcto-row-visio-xml"></a>Cell 要素 (arcto 行) (' Visio XML ')
+# <a name="cell-element-arcto-row-visio-xml"></a>Cell 要素 (ArcTo 行) (Visio XML)
 
 円弧の x 座標、y 座標、または弧を格納します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32356135"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |マスター # .xml、ページ # .xml  <br/> |
    
@@ -60,7 +60,7 @@ ms.locfileid: "32356135"
 |U  <br/> |xsd: string  <br/> |省略可能  <br/> |既定値は DL である計量単位を表します。  <br/> |セルの単位を示します。  <br/> |
 |V  <br/> |xsd: string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプシートセルの値を指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この**Cell**要素の**N**属性は、シェイプシートのセルに対応する、制限された値のセットのいずれかである必要があります。 この**Cell**要素に対して許可されている**N**属性の値を確認するには、次の表を参照してください。 
   

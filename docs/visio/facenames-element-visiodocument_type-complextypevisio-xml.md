@@ -1,29 +1,29 @@
 ---
-title: facenames 要素 (complexType) (' Visio XML ')
+title: FaceNames 要素 (complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 61e30f57-abd6-9378-45ed-51236ab3d3ee
-description: facename 要素のコレクションを格納します。
-ms.openlocfilehash: 5d6f2ffbf54dd04e744e85909fbc8a6bd4a387a3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: FaceName 要素のコレクションを格納します。
+ms.openlocfilehash: ce18847fdd46a0c703a0df5e8d8c7a877f864d35
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322583"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539714"
 ---
-# <a name="facenames-element-visiodocumenttype-complextype-visio-xml"></a>facenames 要素 (complexType) (' Visio XML ')
+# <a name="facenames-element-visiodocumenttype-complextype-visio-xml"></a>FaceNames 要素 (complexType) (Visio XML)
 
-**facename**要素のコレクションを格納します。 
+**Facename**要素のコレクションを格納します。 
   
 ## <a name="element-information"></a>要素情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[FaceNames_Type](facenames_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |文書の xml  <br/> |
    
@@ -48,7 +48,7 @@ ms.locfileid: "32322583"
 
 |**Element**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[facename](facename-element-facenames_type-complextypevisio-xml.md) <br/> |[FaceName_Type](facename_type-complextypevisio-xml.md) <br/> |フォントに関する情報を格納します。  <br/> |
+|[FaceName](facename-element-facenames_type-complextypevisio-xml.md) <br/> |[FaceName_Type](facename_type-complextypevisio-xml.md) <br/> |フォントに関する情報を格納します。  <br/> |
    
 ### <a name="attributes"></a>属性
 

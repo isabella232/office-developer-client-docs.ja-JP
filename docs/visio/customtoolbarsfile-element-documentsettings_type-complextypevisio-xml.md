@@ -1,5 +1,5 @@
 ---
-title: CustomToolbarsFile 要素 (DocumentSettings_Type complexType) (' Visio XML ')
+title: CustomToolbarsFile 要素 (DocumentSettings_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: c9789239-a919-97f6-8109-126bb1038be6
 description: 文書のカスタムツールバーおよびステータスバーを定義する Microsoft Visio ユーザーインターフェイス (vsu) ファイルの名前が含まれています。
-ms.openlocfilehash: 3744caeb09e1fe865c9e669b9cacfada4cbef1c7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c374bc571163936ccdd4812bcf58a8db19a81f1e
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282860"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539235"
 ---
-# <a name="customtoolbarsfile-element-documentsettingstype-complextype-visio-xml"></a>CustomToolbarsFile 要素 (DocumentSettings_Type complexType) (' Visio XML ')
+# <a name="customtoolbarsfile-element-documentsettingstype-complextype-visio-xml"></a>CustomToolbarsFile 要素 (DocumentSettings_Type complexType) (Visio XML)
 
 文書のカスタムツールバーおよびステータスバーを定義する Microsoft Visio ユーザーインターフェイス (vsu) ファイルの名前が含まれています。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32282860"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[CustomToolbarsFile_Type](customtoolbarsfile_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |文書の xml  <br/> |
    
@@ -42,7 +42,7 @@ ms.locfileid: "32282860"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[documentsettings](documentsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[DocumentSettings_Type](documentsettings_type-complextypevisio-xml.md) <br/> |ドキュメントの設定を指定する要素を格納します。  <br/> |
+|[DocumentSettings](documentsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[DocumentSettings_Type](documentsettings_type-complextypevisio-xml.md) <br/> |ドキュメントの設定を指定する要素を格納します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 

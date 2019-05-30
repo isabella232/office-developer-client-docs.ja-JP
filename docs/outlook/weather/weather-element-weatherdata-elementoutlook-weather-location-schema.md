@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1127956a-37aa-c39e-60b4-343dcc4ead82
 description: 気象を報告する場所を指定します。
-ms.openlocfilehash: f6642b3f477b9fe45ed0e6a43efcd40e21559b7e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a907fb9df02d88d317a73e409ea8738273eb2cb1
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355210"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539013"
 ---
 # <a name="weather-element-weatherdata-element-outlook-weather-location-schema"></a>weather 要素 (weatherdata 要素) (Outlook Weather Location スキーマ)
 
@@ -24,7 +24,7 @@ ms.locfileid: "32355210"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[weatherType](weathertype-complextype-outlook-weather-location-schema.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/outlook/15/getweatherlocation.xsd  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/outlook/15/getweatherlocation.xsd  <br/> |
 |**スキーマ ファイル** <br/> |getweatherlocation  <br/> |
    
 ## <a name="definition"></a>定義
@@ -53,7 +53,7 @@ ms.locfileid: "32355210"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|weatherlocationcode  <br/> |xs: 文字列  <br/> |必須  <br/> |同じ名前の複数の場所を区別するために、場所に関連付けられているコードを指定します。  <br/> |xs: 文字列型の値  <br/> |
-|weatherlocationname  <br/> |xs: 文字列  <br/> |必須  <br/> |場所の名前を指定します。  <br/> |xs: 文字列型の値  <br/> |
+|weatherlocationcode  <br/> |xs: 文字列  <br/> |必須  <br/> |同じ名前の複数の場所を区別するために、場所に関連付けられているコードを指定します。  <br/> |Xs: 文字列型の値  <br/> |
+|weatherlocationname  <br/> |xs: 文字列  <br/> |必須  <br/> |場所の名前を指定します。  <br/> |Xs: 文字列型の値  <br/> |
    
 

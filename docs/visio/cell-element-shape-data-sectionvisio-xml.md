@@ -1,5 +1,5 @@
 ---
-title: Cell 要素 ([Shape Data] セクション) (' Visio XML ')
+title: Cell 要素 (Shape Data セクション) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 98643832-7861-385d-3a52-0060ea413e2e
 description: 図形データの1つのプロパティを指定します。
-ms.openlocfilehash: 5e0c79d9439fb3800a277e039143060eec708b11
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 3a6238f19f27d001d3c9eebcbcec720822a0ed40
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339544"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539377"
 ---
-# <a name="cell-element-shape-data-section-visio-xml"></a>Cell 要素 ([Shape Data] セクション) (' Visio XML ')
+# <a name="cell-element-shape-data-section-visio-xml"></a>Cell 要素 (Shape Data セクション) (Visio XML)
 
 図形データの1つのプロパティを指定します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32339544"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |マスター # .xml、ページ # .xml  <br/> |
    
@@ -60,7 +60,7 @@ ms.locfileid: "32339544"
 |U  <br/> |xsd: string  <br/> |省略可能  <br/> |既定値は DL である計量単位を表します。  <br/> |セルの単位を示します。  <br/> |
 |V  <br/> |xsd: string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプシートセルの値を指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この**Cell**要素の**N**属性は、シェイプシートのセルに対応する、制限された値のセットのいずれかである必要があります。 この**Cell**要素に対して許可されている**N**属性の値を確認するには、次の表を参照してください。 
   
@@ -73,7 +73,7 @@ ms.locfileid: "32339544"
 |Label  <br/> |[図形データ] ウィンドウに表示されるラベルを指定します。 ラベルには、英数字とアンダースコア (_) 文字を使用できます。  <br/> |[[Label] セル ([Shape Data] セクション)](label-cell-shape-data-section.md) <br/> |
 |LangID  <br/> |図形データ値の記入に使用した言語を示します。  <br/> |[[LangID] セル ([Shape Data] セクション)](langid-cell-shape-data-section.md) <br/> |
 |プロンプト  <br/> |[図形データ] ウィンドウで値の上にマウスを置いたときにヒントとして表示される説明または手順を示すテキストを指定します。  <br/> |[[Prompt] セル ([Shape Data] セクション)](prompt-cell-shape-data-section.md) <br/> |
-|[sortkey]  <br/> |このセルの値は文字列として扱われ、評価されます。この値に基づいて、[図形データ] ウィンドウ内にある項目を一覧表示するための順序が決まります。  <br/> |[[SortKey] セル ([Shape Data] セクション)](sortkey-cell-shape-data-section.md) <br/> |
+|[Sortkey]  <br/> |このセルの値は文字列として扱われ、評価されます。この値に基づいて、[図形データ] ウィンドウ内にある項目を一覧表示するための順序が決まります。  <br/> |[[SortKey] セル ([Shape Data] セクション)](sortkey-cell-shape-data-section.md) <br/> |
 |型  <br/> |図形データ値のデータの種類を指定します。  <br/> |[[Type] セル ([Shape Data] セクション)](type-cell-shape-data-section.md) <br/> |
 |値  <br/> |[図形データの定義] ダイアログ ボックスに入力した図形データ項目の値が格納されています。  <br/> |[[Value] セル ([Shape Data] セクション)](value-cell-shape-data-section.md) <br/> |
 |ことを確認  <br/> |インスタンスを作成したときや、図形を複製またはコピーしたときに、ユーザーに対してカスタムプロパティ情報の入力を問い合わせるかどうかを指定します。  <br/> |なし。  <br/> |

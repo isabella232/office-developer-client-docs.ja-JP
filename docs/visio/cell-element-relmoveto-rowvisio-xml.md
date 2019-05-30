@@ -1,5 +1,5 @@
 ---
-title: Cell 要素 ([relmoveto] 行) (' Visio XML ')
+title: Cell 要素 (RelMoveTo Row) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 8e91497c-0aa1-2021-9317-cf989e5b84a3
 description: 図形の最初の頂点に対する x 座標または y 座標、またはパスを切断した後の最初の頂点の x 座標または y 座標を格納します。この値は、図形の高さと幅を基準にしています。
-ms.openlocfilehash: cc81ea1b36541fe471807e83057e7aaaacb70d70
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 6ec7990887ed59ae229e88b6ad02a7759c770700
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339572"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539405"
 ---
-# <a name="cell-element-relmoveto-row-visio-xml"></a>Cell 要素 ([relmoveto] 行) (' Visio XML ')
+# <a name="cell-element-relmoveto-row-visio-xml"></a>Cell 要素 (RelMoveTo Row) (Visio XML)
 
 図形の最初の頂点に対する x 座標または y 座標、またはパスを切断した後の最初の頂点の x 座標または y 座標を格納します。この値は、図形の高さと幅を基準にしています。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32339572"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |マスター # .xml、ページ # .xml  <br/> |
    
@@ -60,13 +60,13 @@ ms.locfileid: "32339572"
 |U  <br/> |xsd: string  <br/> |省略可能  <br/> |既定値は DL である計量単位を表します。  <br/> |セルの単位を示します。  <br/> |
 |V  <br/> |xsd: string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプシートセルの値を指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この**Cell**要素の**N**属性は、シェイプシートのセルに対応する、制限された値のセットのいずれかである必要があります。 この**Cell**要素に対して許可されている**N**属性の値を確認するには、次の表を参照してください。 
   
 |**値**|**説明**|**詳細情報**|
 |:-----|:-----|:-----|
-|X  <br/> |[ **relmoveto** ] 行がセクションの最初の行の場合、[ **x** ] セルは図形の幅を基準にして、図形の最初の頂点に対する x 座標を表します。 2つの行の間に [ **relmoveto** ] 行が表示されている場合、[ **x** ] セルは、パスを切断した後の最初の頂点に対する x 座標を表します。  <br/> |[「relmoveto」行 (「Geometry」セクション)](relmoveto-row-geometry-section.md) <br/> |
-|Y  <br/> |[ **relmoveto** ] 行がセクションの最初の行の場合、[ **y** ] セルは、図形の高さを基準にして、図形の最初の頂点に対する y 座標を表します。 2つの行の間に [ **relmoveto** ] 行が表示されている場合、[ **y** ] セルは、パスを切断した後の最初の頂点に対する y 座標を表します。  <br/> |[「relmoveto」行 (「Geometry」セクション)](relmoveto-row-geometry-section.md) <br/> |
+|X  <br/> |[ **Relmoveto** ] 行がセクションの最初の行の場合、[ **x** ] セルは図形の幅を基準にして、図形の最初の頂点に対する x 座標を表します。 2つの行の間に [ **Relmoveto** ] 行が表示されている場合、[ **x** ] セルは、パスを切断した後の最初の頂点に対する x 座標を表します。  <br/> |[「RelMoveTo」行 (「Geometry」セクション)](relmoveto-row-geometry-section.md) <br/> |
+|Y  <br/> |[ **Relmoveto** ] 行がセクションの最初の行の場合、[ **y** ] セルは、図形の高さを基準にして、図形の最初の頂点に対する y 座標を表します。 2つの行の間に [ **Relmoveto** ] 行が表示されている場合、[ **y** ] セルは、パスを切断した後の最初の頂点に対する y 座標を表します。  <br/> |[「RelMoveTo」行 (「Geometry」セクション)](relmoveto-row-geometry-section.md) <br/> |
    
 

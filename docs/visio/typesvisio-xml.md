@@ -1,22 +1,22 @@
 ---
-title: 型 ('Visio XML')
+title: 種類 (Visio XML)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2b9db404-a56a-efeb-90bc-669b61483f81
-description: このトピックでは、Visio 2013 ファイル形式の XML スキーマの種類を表示します。
-ms.openlocfilehash: 1aef5ba241b74c434e54e296d93b3d5c98d5c163
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
-ms.translationtype: HT
+description: このトピックでは、Visio 2013 ファイル形式の XML スキーマの種類の一覧を示します。
+ms.openlocfilehash: 465204a71b991fa0402665086ca146c3e094f641
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422433"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538593"
 ---
-# <a name="types-visio-xml"></a>型 ('Visio XML')
+# <a name="types-visio-xml"></a>種類 (Visio XML)
 
-このトピックでは、Visio 2013 ファイル形式の XML スキーマの種類を表示します。
+このトピックでは、Visio 2013 ファイル形式の XML スキーマの種類の一覧を示します。
   
 - [Actions_Type complexType](actions_type-complextypevisio-xml.md)
     

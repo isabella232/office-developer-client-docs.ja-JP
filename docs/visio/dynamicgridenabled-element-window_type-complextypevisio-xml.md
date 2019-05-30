@@ -1,5 +1,5 @@
 ---
-title: dynamicgridenabled 要素 (Window_Type complexType) (' Visio XML ')
+title: DynamicGridEnabled 要素 (Window_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: ac14d132-bc91-194b-4a0b-8a4b72acdbfd
 description: 動的グリッド機能をウィンドウに対して有効にするかどうかを指定します。
-ms.openlocfilehash: b0fe38f85a69a9d4274b7e4535005d1a1f214029
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: d239b5604d384e14711d26b12cc8bd381a3778a8
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334861"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539964"
 ---
-# <a name="dynamicgridenabled-element-windowtype-complextype-visio-xml"></a>dynamicgridenabled 要素 (Window_Type complexType) (' Visio XML ')
+# <a name="dynamicgridenabled-element-windowtype-complextype-visio-xml"></a>DynamicGridEnabled 要素 (Window_Type complexType) (Visio XML)
 
 動的グリッド機能をウィンドウに対して有効にするかどうかを指定します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32334861"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[DynamicGridEnabled_Type](dynamicgridenabled_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |windows .xml、document .xml  <br/> |
    

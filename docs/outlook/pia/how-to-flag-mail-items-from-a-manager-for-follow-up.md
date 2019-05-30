@@ -7,12 +7,12 @@ ms:contentKeyID: 55119898
 ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
-ms.openlocfilehash: fa3cf00a116b51f88f47ef48eab566155626dbbe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 06e6bdd91198cabeff689681f2999d6fd2cb725a
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32320245"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34542591"
 ---
 # <a name="flag-mail-items-from-a-manager-for-follow-up"></a>上司からのメール アイテムにフラグを設定する
 
@@ -32,7 +32,7 @@ Microsoft Outlook には、フラグを設定するシステムがあり、メ�
 > **Importance** プロパティと **MarkAsTask** メソッドは、**Item** オブジェクトのメンバーです。
 
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;
@@ -43,9 +43,9 @@ using Outlook = Microsoft.Office.Interop.Outlook;
 private void DemoTaskFlagging()
 {
     const string PR_SENT_REPRESENTING_NAME =
-        "https://schemas.microsoft.com/mapi/proptag/0x0042001E";
+        "http://schemas.microsoft.com/mapi/proptag/0x0042001E";
     const string PR_MESSAGE_CLASS =
-        "https://schemas.microsoft.com/mapi/proptag/0x001A001E";
+        "http://schemas.microsoft.com/mapi/proptag/0x001A001E";
     Outlook.AddressEntry currentUser =
         Application.Session.CurrentUser.AddressEntry;
     if (currentUser.Type == "EX")

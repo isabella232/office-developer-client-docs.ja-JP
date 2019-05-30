@@ -4,29 +4,29 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- infopath 2007、フォーム [infopath 2007] の自動化、プログラムによるデータの追加、オートメーション [infopath 2007]、外部シナリオ
+- infopath 2007、フォーム [InfoPath 2007] の自動化、プログラムによるデータの追加、オートメーション [InfoPath 2007]、外部シナリオ
 localization_priority: Normal
 ms.assetid: dfa880e6-de23-41c4-b80b-6935e0c8563d
 description: Microsoft Office InfoPath プライマリ相互運用機能アセンブリ (Microsoft.Office.Interop.InfoPath.dll) と InfoPath XML 相互運用機能アセンブリ (Microsoft.Office.Interop.InfoPath.Xml.dll) が提供するメンバーは、InfoPath を自動化するためのマネージ コードの記述をサポートします。
-ms.openlocfilehash: af8bfbb0322b9d70fb85ba21a757a581ba423a44
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 79fbc56033ffce639b5007874dabf56e8e286edb
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310200"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537816"
 ---
 # <a name="external-automation-scenarios-and-examples"></a>外部自動化のシナリオと例
 
 Microsoft Office InfoPath プライマリ相互運用機能アセンブリ (Microsoft.Office.Interop.InfoPath.dll) と InfoPath XML 相互運用機能アセンブリ (Microsoft.Office.Interop.InfoPath.Xml.dll) が提供するメンバーは、InfoPath を自動化するためのマネージ コードの記述をサポートします。 
   
-## <a name="establishing-references-to-the-microsoft-office-infopath-primary-interop-and-infopath-xml-interop-assemblies"></a>Microsoft Office InfoPath プライマリ相互運用機能アセンブリと infopath XML 相互運用機能アセンブリへの参照を確立する
+## <a name="establishing-references-to-the-microsoft-office-infopath-primary-interop-and-infopath-xml-interop-assemblies"></a>Microsoft Office InfoPath プライマリ相互運用機能アセンブリと InfoPath XML 相互運用機能アセンブリへの参照を確立する
 
-InfoPath を自動化するためのマネージ コードを記述するには、Microsoft InfoPath プライマリ相互運用機能アセンブリと、InfoPath XML 相互運用機能アセンブリの参照を確立する必要があります。 Microsoft InfoPath プライマリ相互運用機能アセンブリは、ipeditor が公開する COM オブジェクトモデルとの相互運用性のサポートを提供します。DLL の場合は、この名前[](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.aspx)空間のメンバーを使用します。 infopath xml 相互運用機能アセンブリは、microsoft xml Core Services (MSXML) によって公開されている COM オブジェクトモデルとの相互[](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.xml)運用性をサポートします。 
+InfoPath を自動化するためのマネージ コードを記述するには、Microsoft InfoPath プライマリ相互運用機能アセンブリと、InfoPath XML 相互運用機能アセンブリの参照を確立する必要があります。 Microsoft InfoPath プライマリ相互運用機能アセンブリは、IPEDITOR が公開する COM オブジェクトモデルとの相互運用性のサポートを提供します。DLL の場合は、この名前[](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.aspx)空間のメンバーを使用します。 InfoPath XML 相互運用機能アセンブリは、microsoft XML Core Services (MSXML) によって公開されている COM オブジェクトモデルとの相互[](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.xml)運用性をサポートします。 
   
 > [!IMPORTANT]
-> InfoPath を自動化するマネージ コード アプリケーションのユーザーは、InfoPath と、Microsoft Office InfoPath プライマリ相互運用機能アセンブリと、ユーザーのコンピューターにインストールされている InfoPath XML 相互運用機能アセンブリが必要です。 infopath セットアッププログラムの **.net プログラミングサポート**オプションは、infopath の標準的なインストールのために**マイコンピューターから実行**するように設定されています。
+> InfoPath を自動化するマネージ コード アプリケーションのユーザーは、InfoPath と、Microsoft Office InfoPath プライマリ相互運用機能アセンブリと、ユーザーのコンピューターにインストールされている InfoPath XML 相互運用機能アセンブリが必要です。 InfoPath セットアッププログラムの **.Net プログラミングサポート**オプションは、infopath の標準的なインストールのために**マイコンピューターから実行**するように設定されています。
 >  
-> その結果、.NET Framework 1.1 再配布可能バージョン、あるいは.NET Framework 1.1 以降のソフトウェア開発キット (SDK) がインストールされていれば、相互運用機能アセンブリも既定でインストールされます。 これらの相互運用機能アセンブリがユーザーのコンピューターで使用できない場合は、.net Framework 1.1 以降がインストールされていることを確認してから、[**コントロールパネル]** から [**プログラムと機能**] を実行して、セットアップを変更し、 **.net プログラミングを設定します。** InfoPath のサポートオプションが**マイコンピューターから実行**されます。 
+> その結果、.NET Framework 1.1 再配布可能バージョン、あるいは.NET Framework 1.1 以降のソフトウェア開発キット (SDK) がインストールされていれば、相互運用機能アセンブリも既定でインストールされます。 これらの相互運用機能アセンブリがユーザーのコンピューターで使用できない場合は、.NET Framework 1.1 以降がインストールされていることを確認してから、[**コントロールパネル]** から [**プログラムと機能**] を実行して、セットアップを変更し、 **.net プログラミングを設定します。** InfoPath のサポートオプションが**マイコンピューターから実行**されます。 
   
 次の手順では、Visual Studio プロジェクトに Microsoft Office InfoPath プライマリ相互運用機能アセンブリと InfoPath XML 相互運用機能アセンブリの参照を設定する方法について説明します。
   
@@ -40,7 +40,7 @@ Microsoft.Office.Interop.InfoPath プライマリ相互運用機能アセンブ�
     
 3. **[COM]** タブの **[Microsoft InfoPath 3.0 タイプ ライブラリ]** をダブルクリックし、**[OK]** をクリックします。
     
-< の相互運用機能アセンブリへの参照を設定するには、既定でインストールされているファイルを参照します。このファイルは、既定では、>:/会社__ の Office\OFFICE14 フォルダーにあります。. ローカル ファイル システムのアセンブリのコピーを指定しても、この手順では InfoPath セットアップ プログラムがグローバル アセンブリ キャッシュ (GAC) にインストールした Microsoft.Office.Interop.InfoPath.Xml.dll アセンブリへの参照が確立されます。
+_LT_ の相互運用機能アセンブリへの参照を設定するには、既定でインストールされているファイルを参照します。このファイルは、既定では、>:/会社__ の Office\OFFICE14 フォルダーにあります。. ローカル ファイル システムのアセンブリのコピーを指定しても、この手順では InfoPath セットアップ プログラムがグローバル アセンブリ キャッシュ (GAC) にインストールした Microsoft.Office.Interop.InfoPath.Xml.dll アセンブリへの参照が確立されます。
   
 ### <a name="set-a-reference-to-the-microsoftofficeinteropinfopathxml-interop-assembly"></a>Microsoft.Office.Interop.InfoPath Xml 相互運用機能アセンブリへの参照を設定する
 
@@ -48,7 +48,7 @@ Microsoft.Office.Interop.InfoPath プライマリ相互運用機能アセンブ�
     
 2. **ソリューション エクスプローラー**で [**参照**] を右クリックし、[**参照の追加**] をクリックします。
     
-3. [ **.net** ] タブで、[**参照**] をクリックして、< _drive_>: Office\OFFICE14 フォルダーに移動し、次に [Microsoft] をクリックします。
+3. [ **.Net** ] タブで、[**参照**] をクリックして、< _drive_>: Office\OFFICE14 フォルダーに移動し、次に [Microsoft] をクリックします。
     
 4. **[OK]** をクリックします。
     
@@ -109,7 +109,7 @@ InfoPath の売上報告書フォーム テンプレートのユーザーの顧�
             // namespace of the form. IMPORTANT:Replace the namespace 
             // value below with that of your sample form.
             myXMLDoc.setProperty("SelectionNamespaces",
-    "xmlns:my='https://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'");
+    "xmlns:my='http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'");
             // Select all instances of customerName that contain 
             //'Company A'.
             IXMLDOMNodeList myNames = 
@@ -161,7 +161,7 @@ InfoPath の売上報告書フォーム テンプレートのユーザーの顧�
           ' namespace of the form. IMPORTANT:Replace the namespace 
           ' value below with that of your sample form.
           myXMLDoc.setProperty("SelectionNamespaces", _
-    "xmlns:my='https://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'")
+    "xmlns:my='http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'")
           ' Select all instances of customerName that contain 
           ''Company A'.
           Dim myNames As IXMLDOMNodeList = _
@@ -247,7 +247,7 @@ InfoPath の売上報告書フォーム テンプレートのユーザーの顧�
             // Set the MSXML SelectionNamespaces property to the my
             // namespace of the form. IMPORTANT:Replace the namespace
             // value below with that of your sample form.
-            doc.setProperty("SelectionNamespaces","xmlns:my='https://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'");
+            doc.setProperty("SelectionNamespaces","xmlns:my='http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'");
             // Pre-populate the fields with specified values.
             doc.selectSingleNode("//my:FirstName").text="My Name";
             doc.selectSingleNode("//my:LastName").text="My LastName";
@@ -280,7 +280,7 @@ InfoPath の売上報告書フォーム テンプレートのユーザーの顧�
           ' Set the MSXML SelectionNamespaces property to the my
           ' namespace of the form. IMPORTANT:Replace the namespace
           ' value below with that of your sample form.
-          doc.setProperty("SelectionNamespaces", "xmlns:my='https://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'")
+          doc.setProperty("SelectionNamespaces", "xmlns:my='http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'")
           ' Pre-populate the fields with specified values.
           doc.selectSingleNode("//my:FirstName").text = "My Name"
           doc.selectSingleNode("//my:LastName").text = "My LastName"

@@ -1,5 +1,5 @@
 ---
-title: showrulers 要素 (Window_Type complexType) (' Visio XML ')
+title: ShowRulers 要素 (Window_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: bb5667b9-22d6-5913-a170-626f8c93e2f9
 description: ルーラーを図面ウィンドウに表示するかどうかを指定します。
-ms.openlocfilehash: 96d50e1ad6f14ff192906c38f845dfa3881eca1d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 477bdfda5c3502a1f27db176956d744387f5cd92
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328603"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34541450"
 ---
-# <a name="showrulers-element-windowtype-complextype-visio-xml"></a>showrulers 要素 (Window_Type complexType) (' Visio XML ')
+# <a name="showrulers-element-windowtype-complextype-visio-xml"></a>ShowRulers 要素 (Window_Type complexType) (Visio XML)
 
 ルーラーを図面ウィンドウに表示するかどうかを指定します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32328603"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[ShowRulers_Type](showrulers_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |windows .xml  <br/> |
    

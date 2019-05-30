@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 14e0c469-31dc-fbe2-0d45-da602df04f13
 description: 天気予報の要素を定義します。
-ms.openlocfilehash: ade57264fab592d3314aa9a3376e129a5f3719c0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 65dd0ee5686fb773479c8b63a43f51bff67fd2f7
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355035"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540932"
 ---
 # <a name="weatherdata-element-outlook-weather-location-schema"></a>weatherdata 要素 (Outlook Weather Location スキーマ)
 
@@ -24,7 +24,7 @@ ms.locfileid: "32355035"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> ||
-|**Namespace** <br/> |https://schemas.microsoft.com/office/outlook/15/getweatherlocation.xsd  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/outlook/15/getweatherlocation.xsd  <br/> |
 |**スキーマ ファイル** <br/> |getweatherlocation  <br/> |
    
 ## <a name="definition"></a>定義

@@ -7,12 +7,12 @@ ms:contentKeyID: 55119853
 ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
-ms.openlocfilehash: 1b6c88d40236ffb6cc3201b659a39e4d869de188
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: ab8da62d75b5714967c3fbdc0d0f985370e617aa
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335393"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540638"
 ---
 # <a name="synchronize-outlook-with-a-sharepoint-folder"></a>Outlook と SharePoint のフォルダーを同期させる
 
@@ -29,7 +29,7 @@ Outlook では、予定表、連絡先リスト、タスク リスト、ディ�
 
 共有のリレーションシップを作成する適切な URL が手に入りました。 Outlook の新しい SharePoint フォルダーを同期させるには、URL をコピーして、2 番目のプロシージャである AddSpsFolder 内の文字列変数 CalendarUrl の代入部分に貼り付けます。 AddSpsFolder は、Outlook の新しい SharePoint フォルダーの同期を自動化するために、**NameSpace.OpenSharedFolder** メソッドを `stssync://`URL (今回は、DisplaySharePointUrl プロシージャによって作られた URL) で使用します。 AddSpsFolderalso は、"例 SPS カレンダー" というカスタム フォルダーを提供し、このフォルダーで既定の Time to Live (TTL) を使うよう Outlook に指示します。 SharePoint フォルダーは、アイテムの添付ファイルを常にダウンロードするため、ここで指定する必要はありません。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;
@@ -40,7 +40,7 @@ using Outlook = Microsoft.Office.Interop.Outlook;
 private void DisplaySharePointUrl()
 {
     const string PROP_SYNC_URL = 
-        "https://schemas.microsoft.com/mapi/id/{00062040-0000-0000-C000-000000000046}/8A24001E";
+        "http://schemas.microsoft.com/mapi/id/{00062040-0000-0000-C000-000000000046}/8A24001E";
 
     Outlook.Folder folder = Application.ActiveExplorer().CurrentFolder as Outlook.Folder;
     Outlook.Table table = folder.GetTable(Type.Missing, Outlook.OlTableContents.olHiddenItems);

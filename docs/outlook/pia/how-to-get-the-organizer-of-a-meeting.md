@@ -7,12 +7,12 @@ ms:contentKeyID: 55119872
 ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
-ms.openlocfilehash: b34b79ac05530ec30e611c50bce8e81ce0470f02
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: e19b293b581984e9dbb1fe27c9564cb78a73caa1
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32320112"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34542536"
 ---
 # <a name="get-the-organizer-of-a-meeting"></a>会議の開催者を取得する
 
@@ -25,7 +25,7 @@ ms.locfileid: "32320112"
 
 次のコード サンプルの GetMeetingOrganizer では、会議を表す [AppointmentItem](https://msdn.microsoft.com/library/bb645611\(v=office.15\)) 型のパラメーターを受け取り、[PropertyAccessor](https://msdn.microsoft.com/library/bb646034\(v=office.15\)) オブジェクトと [GetProperty(String)](https://msdn.microsoft.com/library/bb645726\(v=office.15\)) メソッドを使用して、**AppointmentItem** オブジェクトの [EntryID](https://msdn.microsoft.com/library/bb645980\(v=office.15\)) を取得します。 **EntryID** を取得した後、[GetAddressEntryFromID(String)](https://msdn.microsoft.com/library/ff185034\(v=office.15\)) メソッドを使用して、会議の開催者を表す [AddressEntry](https://msdn.microsoft.com/library/bb609728\(v=office.15\)) オブジェクトを返します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;
@@ -40,7 +40,7 @@ private Outlook.AddressEntry GetMeetingOrganizer(Outlook.AppointmentItem appt)
         throw new ArgumentNullException();
     }
     string PR_SENT_REPRESENTING_ENTRYID =
-        @"https://schemas.microsoft.com/mapi/proptag/0x00410102";
+        @"http://schemas.microsoft.com/mapi/proptag/0x00410102";
     string organizerEntryID =
         appt.PropertyAccessor.BinaryToString(
             appt.PropertyAccessor.GetProperty(

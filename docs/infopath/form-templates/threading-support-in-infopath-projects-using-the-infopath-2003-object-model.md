@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: f269d64d-4102-426d-be8e-d2742a993524
 description: Microsoft InfoPath によってインストールされる Microsoft.Office.Interop.InfoPath.dll、Microsoft.Office.Interop.InfoPath.SemiTrust.dll、および Microsoft.Office.Interop.InfoPath.Xml.dll 相互運用アセンブリを介してアクセスする COM オブジェクトは、複数のスレッドでの呼び出しをサポートしていません。これには、Microsoft.Office.Interop.InfoPath.SemiTrust 名前空間にラップされた Microsoft XML Core Services (MSXML) オブジェクト用インターフェイス (ほとんどの名前に IXMLDOM というプレフィックスが付いています)、および Microsoft.Office.Interop.InfoPath.Xml 名前空間によって公開されるすべてのインターフェイスが含まれており、これらのインターフェイスはどちらもスレッド セーフでありません。
-ms.openlocfilehash: 1be2bd0181c47097440af54f1aa804a4f17b30bf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: ca00593eebe17586c4f77b4b91adc158c4f649fd
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299840"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537844"
 ---
 # <a name="threading-support-in-infopath-projects-using-the-infopath-2003-object-model"></a>InfoPath 2003 オブジェクト モデルを使用する InfoPath プロジェクトにおけるスレッドのサポート
 
@@ -82,7 +82,7 @@ namespace AsyncUpdate
     }
     // The namespace prefixes defined in this attribute must remain 
     // synchronized with those in the form definition file (.xsf).
-    [InfoPathNamespace("xmlns:my='https://schemas.microsoft.com/office/infopath/2003/myXSD/2004-02-11T23-29-59'")]
+    [InfoPathNamespace("xmlns:my='http://schemas.microsoft.com/office/infopath/2003/myXSD/2004-02-11T23-29-59'")]
     public class AsyncUpdate
     {
         private XDocument thisXDocument;

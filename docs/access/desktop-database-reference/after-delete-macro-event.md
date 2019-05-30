@@ -11,12 +11,12 @@ f1_keywords:
 f1_categories:
 - Office.Version=v15
 localization_priority: Normal
-ms.openlocfilehash: f524a544736f68bcfa6bd15e3bcc720ffa2bc4d6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 5b3b2da44d817885eb6190a8cbbfc73bf99e9e0a
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297215"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538236"
 ---
 # <a name="after-delete-macro-event"></a>After Delete マクロ イベント
 
@@ -33,7 +33,7 @@ After Delete イベントでは、レコードを削除したときに特定の�
 
 When the **After Delete** event occurs, the values contained in the deleted record are still available. 削除された値を使用して合計を増減したり、監査トレールを作成したり、 *WhereCondition*引数の既存の値と比較したりすることができます。
 
-**Updated ("*Field Name*")** 関数を使用して、フィールドが変更されたかどうかを調べることができます。 The following code example shows how to use an If staement to determine determine whether the PaidInFull field has been changed.
+**Updated("*フィールド名*")** 関数を使用すると、フィールドが変更されているかどうかを判断できます。 The following code example shows how to use an If staement to determine determine whether the PaidInFull field has been changed.
 
 ```vb 
  
@@ -65,7 +65,7 @@ The values contained in the deleted record are deleted permanently when the **Af
 <thead>
 <tr class="header">
 <th><p>コマンドの種類</p></th>
-<th><p>Command</p></th>
+<th><p>コマンド</p></th>
 </tr>
 </thead>
 <tbody>
@@ -83,19 +83,19 @@ The values contained in the deleted record are deleted permanently when the **Af
 </tr>
 <tr class="even">
 <td><p>データ ブロック</p></td>
-<td><p><a href="createrecord-data-block.md">CreateRecord マクロアクション</a></p></td>
+<td><p><a href="createrecord-data-block.md">CreateRecord マクロ アクション</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>データ ブロック</p></td>
-<td><p><a href="editrecord-data-block.md">"レコードの操作" マクロアクション</a></p></td>
+<td><p><a href="editrecord-data-block.md">EditRecord マクロ アクション</a></p></td>
 </tr>
 <tr class="even">
 <td><p>データ ブロック</p></td>
-<td><p><a href="foreachrecord-data-block.md">ForEachRecord マクロアクション</a></p></td>
+<td><p><a href="foreachrecord-data-block.md">ForEachRecord マクロ アクション</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>データ ブロック</p></td>
-<td><p><a href="lookuprecord-data-block.md">LookupRecord データブロック</a></p></td>
+<td><p><a href="lookuprecord-data-block.md">LookupRecord データ ブロック</a></p></td>
 </tr>
 <tr class="even">
 <td><p>データ アクション</p></td>
@@ -165,7 +165,7 @@ After Delete イベントをキャプチャするデータ マクロを作成す
 
 次のコード例では、After Delete イベントを使用して、Donations テーブルからレコードを削除したときに特定の処理を実行します。 レコードが削除されると、寄付の金額は、DonationsReceived テーブルの DonationsReceived フィールドと、[寄付] テーブル内の TotalDonatedField の値になります。
 
-**Click here to view a copy of the macro that you can paste into Macro Designer.**
+**マクロ デザイナーに貼り付けることができるマクロのコピーを表示するには、ここをクリックします。**
 
 この例をマクロ デザイナーで表示するには、次の手順に従います。
 
@@ -175,13 +175,13 @@ After Delete イベントをキャプチャするデータ マクロを作成す
 
 3.  以下のコードを選択して、Ctrl キーを押しながら C キーを押して、クリップボードにコピーします。
 
-4.  マクロ デザイナーを起動して、Ctrl キーを押しながら V キーを押します。
+4.  Activate the macro designer window and then press CTRL+V.
 
 <!-- end list -->
 
 ```xml
     <?xml version="1.0" encoding="UTF-16" standalone="no"?> 
-    <DataMacros xmlns="https://schemas.microsoft.com/office/accessservices/2009/04/application"> 
+    <DataMacros xmlns="http://schemas.microsoft.com/office/accessservices/2009/04/application"> 
       <DataMacro Event="AfterDelete"> 
         <Statements> 
           <Comment>Initialize a variable and assign the old</Comment> 

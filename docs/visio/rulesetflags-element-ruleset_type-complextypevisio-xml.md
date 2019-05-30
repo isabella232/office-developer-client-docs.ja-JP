@@ -1,5 +1,5 @@
 ---
-title: rulesetflags 要素 (RuleSet_Type complexType) (' Visio XML ')
+title: RuleSetFlags 要素 (RuleSet_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: c18d3a84-2088-13f7-7b14-1f4c129537b4
 description: ルールセットのプロパティを指定します。
-ms.openlocfilehash: 4a8ba44e2c77281f3d68fb3f5a7a2c58884ce66b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 03b94abb2d9bbe1f611671a4ac37053747a486fb
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32319916"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34541597"
 ---
-# <a name="rulesetflags-element-rulesettype-complextype-visio-xml"></a>rulesetflags 要素 (RuleSet_Type complexType) (' Visio XML ')
+# <a name="rulesetflags-element-rulesettype-complextype-visio-xml"></a>RuleSetFlags 要素 (RuleSet_Type complexType) (Visio XML)
 
 ルールセットのプロパティを指定します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32319916"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[RuleSetFlags_Type](rulesetflags_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |検証 xml  <br/> |
    
@@ -52,6 +52,6 @@ ms.locfileid: "32319916"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|Hidden  <br/> |xsd: boolean  <br/> |省略可能  <br/> |ルールセットが [チェックするルール] ボックスの一覧に表示されるかどうかを指定します。  <br/> |xsd: boolean 型の値。  <br/> |
+|Hidden  <br/> |xsd: boolean  <br/> |省略可能  <br/> |ルールセットが [チェックするルール] ボックスの一覧に表示されるかどうかを指定します。  <br/> |Xsd: boolean 型の値。  <br/> |
    
 

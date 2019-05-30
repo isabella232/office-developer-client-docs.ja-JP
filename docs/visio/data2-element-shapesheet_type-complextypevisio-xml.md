@@ -1,5 +1,5 @@
 ---
-title: Data2 要素 (ShapeSheet_Type complexType) (' Visio XML ')
+title: Data2 要素 (ShapeSheet_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: e823797e-dde9-6ee7-b5e4-9e57cef90b08
 description: 図形に関する追加情報を提供するために使用される任意の文字列値を格納します。
-ms.openlocfilehash: ebd70fc0f83bd7cbf0bd6465c5e06276675a8022
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: f76300d67cd973850abc529ed5790b581e8c0ef4
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344619"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34542465"
 ---
-# <a name="data2-element-shapesheettype-complextype-visio-xml"></a>Data2 要素 (ShapeSheet_Type complexType) (' Visio XML ')
+# <a name="data2-element-shapesheettype-complextype-visio-xml"></a>Data2 要素 (ShapeSheet_Type complexType) (Visio XML)
 
 図形に関する追加情報を提供するために使用される任意の文字列値を格納します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32344619"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Data_Type](data_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |ページ # .xml、マスター # .xml  <br/> |
    

@@ -1,5 +1,5 @@
 ---
-title: Cell 要素 ([Visio XML]) ("Visio XML")
+title: Cell 要素 (Ineineノット行) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 61faf0d6-c0a2-9350-8712-7a450591afad
 description: スプラインのコントロールポイントまたはスプラインのノットの x 座標または y 座標を格納します。
-ms.openlocfilehash: 1f2ddbcf7b750f2c2de983e16861070c7305fc3a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 4eb6e2ce47adae20738c0d210ad2dc30f362200d
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339789"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539370"
 ---
-# <a name="cell-element-splineknot-row-visio-xml"></a>Cell 要素 ([Visio XML]) ("Visio XML")
+# <a name="cell-element-splineknot-row-visio-xml"></a>Cell 要素 (Ineineノット行) (Visio XML)
 
 スプラインのコントロールポイントまたはスプラインのノットの x 座標または y 座標を格納します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32339789"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |マスター # .xml、ページ # .xml  <br/> |
    
@@ -60,7 +60,7 @@ ms.locfileid: "32339789"
 |U  <br/> |xsd: string  <br/> |省略可能  <br/> |既定値は DL である計量単位を表します。  <br/> |セルの単位を示します。  <br/> |
 |V  <br/> |xsd: string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプシートセルの値を指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この**Cell**要素の**N**属性は、シェイプシートのセルに対応する、制限された値のセットのいずれかである必要があります。 この**Cell**要素に対して許可されている**N**属性の値を確認するには、次の表を参照してください。 
   

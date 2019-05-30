@@ -1,5 +1,5 @@
 ---
-title: mastershortcut 要素 (Masters_Type complexType) (' Visio XML ')
+title: MasterShortcut 要素 (Masters_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 62f0e093-5385-e552-f91a-02a65eb0e6e1
 description: 図面で定義されているマスターシェイプのショートカットを指定します。
-ms.openlocfilehash: 03196c6fc1f3424c61bcce406dc050f2d5a73365
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 94ac64ff0080bf7d50df67674022ce53f32339a4
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341735"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538208"
 ---
-# <a name="mastershortcut-element-masterstype-complextype-visio-xml"></a>mastershortcut 要素 (Masters_Type complexType) (' Visio XML ')
+# <a name="mastershortcut-element-masterstype-complextype-visio-xml"></a>MasterShortcut 要素 (Masters_Type complexType) (Visio XML)
 
 図面で定義されているマスターシェイプのショートカットを指定します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32341735"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[MasterShortcut_Type](mastershortcut_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |マスター # .xml  <br/> |
    
@@ -54,14 +54,14 @@ ms.locfileid: "32341735"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|AlignName  <br/> |xsd: アン signedshort  <br/> |省略可能  <br/> |ステンシルウィンドウ内の要素のテキストを左、右、または中央に配置するかどうかを指定します。  <br/> |xsd: _ signedshort 型の値。  <br/> |
-|IconSize  <br/> |xsd: アン signedshort  <br/> |省略可能  <br/> |要素のアイコンのサイズ。  <br/> |xsd: _ signedshort 型の値。  <br/> |
-|ID  <br/> |xsd: アン signedint  <br/> |必須  <br/> |親要素内の要素の一意の ID。  <br/> |xsd:/signedint 型の値。  <br/> |
-|名前  <br/> |xsd: string  <br/> |省略可能  <br/> |要素の名前。  <br/> |xsd: string 型の値。  <br/> |
-|NameU  <br/> |xsd: string  <br/> |省略可能  <br/> |要素の汎用名。  <br/> |xsd: string 型の値。  <br/> |
-|PatternFlags  <br/> |xsd: アン signedshort  <br/> |省略可能  <br/> |マスター シェイプをユーザー設定のパターンとして使用するかどうかを指定します。  <br/> |xsd: _ signedshort 型の値。  <br/> |
-|プロンプト  <br/> |xsd: string  <br/> |省略可能  <br/> |要素のステータスバーとツールヒントのプロンプト。  <br/> |xsd: string 型の値。  <br/> |
-|ShortcutHelp  <br/> |xsd: string  <br/> |省略可能  <br/> |要素のヘルプ文字列。  <br/> |xsd: string 型の値。  <br/> |
-|ShortcutURL  <br/> |xsd: string  <br/> |省略可能  <br/> |**mastershortcut**要素の URL。  <br/> |xsd: string 型の値。  <br/> |
+|AlignName  <br/> |xsd: アン Signedshort  <br/> |省略可能  <br/> |ステンシルウィンドウ内の要素のテキストを左、右、または中央に配置するかどうかを指定します。  <br/> |Xsd: _ Signedshort 型の値。  <br/> |
+|IconSize  <br/> |xsd: アン Signedshort  <br/> |省略可能  <br/> |要素のアイコンのサイズ。  <br/> |Xsd: _ Signedshort 型の値。  <br/> |
+|ID  <br/> |xsd: アン Signedint  <br/> |必須  <br/> |親要素内の要素の一意の ID。  <br/> |Xsd:/Signedint 型の値。  <br/> |
+|名前  <br/> |xsd: string  <br/> |省略可能  <br/> |要素の名前。  <br/> |Xsd: string 型の値。  <br/> |
+|NameU  <br/> |xsd: string  <br/> |省略可能  <br/> |要素の汎用名。  <br/> |Xsd: string 型の値。  <br/> |
+|PatternFlags  <br/> |xsd: アン Signedshort  <br/> |省略可能  <br/> |マスター シェイプをユーザー設定のパターンとして使用するかどうかを指定します。  <br/> |Xsd: _ Signedshort 型の値。  <br/> |
+|プロンプト  <br/> |xsd: string  <br/> |省略可能  <br/> |要素のステータスバーとツールヒントのプロンプト。  <br/> |Xsd: string 型の値。  <br/> |
+|ShortcutHelp  <br/> |xsd: string  <br/> |省略可能  <br/> |要素のヘルプ文字列。  <br/> |Xsd: string 型の値。  <br/> |
+|ShortcutURL  <br/> |xsd: string  <br/> |省略可能  <br/> |**Mastershortcut**要素の URL。  <br/> |Xsd: string 型の値。  <br/> |
    
 

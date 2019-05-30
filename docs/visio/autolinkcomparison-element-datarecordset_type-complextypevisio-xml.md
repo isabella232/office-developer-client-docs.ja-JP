@@ -1,5 +1,5 @@
 ---
-title: AutoLinkComparison 要素 (DataRecordSet_Type complexType) (' Visio XML ')
+title: AutoLinkComparison 要素 (DataRecordSet_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: af5eb7fd-89c6-49bf-4e45-431b63d6cd6a
 description: ユーザーインターフェイスで実行された前回正常に完了した自動リンクアクションの図形データ項目と親 DataRecordset 要素の列を比較するルールを定義します。
-ms.openlocfilehash: 474acc4c1d259621881ea498decfeaf18b69809e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 7d25d12844fe33ec1f1abb66984c5be40c4995c3
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338319"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537872"
 ---
-# <a name="autolinkcomparison-element-datarecordsettype-complextype-visio-xml"></a>AutoLinkComparison 要素 (DataRecordSet_Type complexType) (' Visio XML ')
+# <a name="autolinkcomparison-element-datarecordsettype-complextype-visio-xml"></a>AutoLinkComparison 要素 (DataRecordSet_Type complexType) (Visio XML)
 
 ユーザーインターフェイスで実行された前回正常に完了した自動リンクアクションの図形データ項目と親**DataRecordset**要素の列を比較するルールを定義します。 
   
@@ -23,7 +23,7 @@ ms.locfileid: "32338319"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[AutoLinkComparison_Type](autolinkcomparison_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |recordsets  <br/> |
    
@@ -52,8 +52,8 @@ ms.locfileid: "32338319"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|ColumnName  <br/> |xsd: string  <br/> |必須  <br/> |ADO recordset の列名に対応します。  <br/> |xsd: string 型の値。  <br/> |
-|contexttype  <br/> |xsd: アン signedint  <br/> |必須  <br/> |比較に使用するグループまたは図形のプロパティを指定します。 使用可能な値を次の表に示します。  <br/> |xsd:/signedint 型の値。  <br/> |
-|ContextTypeLabel  <br/> |xsd: string  <br/> |省略可能  <br/> |contexttype の値が2または3の場合、比較を定義するためにこの属性が必要になります。 contexttype = 2 の場合、ContextTypeLabel は図形データ項目のラベルである必要があります。 **contexttype** = 3 の場合は、ContextTypeLabel がローカルの行名である必要があります。  <br/> |xsd: string 型の値。  <br/> |
+|ColumnName  <br/> |xsd: string  <br/> |必須  <br/> |ADO recordset の列名に対応します。  <br/> |Xsd: string 型の値。  <br/> |
+|ContextType  <br/> |xsd: アン Signedint  <br/> |必須  <br/> |比較に使用するグループまたは図形のプロパティを指定します。 使用可能な値を次の表に示します。  <br/> |Xsd:/Signedint 型の値。  <br/> |
+|ContextTypeLabel  <br/> |xsd: string  <br/> |省略可能  <br/> |ContextType の値が2または3の場合、比較を定義するためにこの属性が必要になります。 ContextType = 2 の場合、ContextTypeLabel は図形データ項目のラベルである必要があります。 **contexttype** = 3 の場合は、ContextTypeLabel がローカルの行名である必要があります。  <br/> |Xsd: string 型の値。  <br/> |
    
 

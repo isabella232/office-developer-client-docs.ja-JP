@@ -1,5 +1,5 @@
 ---
-title: Masters 要素 (' Visio XML ')
+title: Masters 要素 (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: eb90df82-58b6-5d0b-6b7d-826c5c27c755
 description: 文書のマスター要素を含みます。
-ms.openlocfilehash: ea2cee2f9845f8a72220081617a11cf4f72dafd1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: b2506466a5208223e3e7b9668ad6442030ec95c9
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341427"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538054"
 ---
-# <a name="masters-element-visio-xml"></a>Masters 要素 (' Visio XML ')
+# <a name="masters-element-visio-xml"></a>Masters 要素 (Visio XML)
 
 文書のマスター要素を含みます。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32341427"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Masters_Type](masters_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |masters  <br/> |
    

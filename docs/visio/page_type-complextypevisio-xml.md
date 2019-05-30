@@ -1,27 +1,27 @@
 ---
-title: Page_Type complexType (' Visio XML ')
+title: Page_Type complexType (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 4bc5c0c4-3ee3-7f63-541a-1f1854d4201c
-ms.openlocfilehash: d0c364164d2453c9dc64290db24890224a3c70e1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 3a0153b724539136fe142c2489badcf9895af765
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334399"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537984"
 ---
-# <a name="pagetype-complextype-visio-xml"></a>Page_Type complexType (' Visio XML ')
+# <a name="pagetype-complextype-visio-xml"></a>Page_Type complexType (Visio XML)
 
 ## <a name="type-information"></a>型情報
 
 |||
 |:-----|:-----|
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15-06-05  <br/> |
-|**拡張ベース** <br/> |なし  <br/> |
+|**拡張ベース** <br/> |None  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -98,17 +98,17 @@ ms.locfileid: "32334399"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|AssociatedPage  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> ||xsd:/signedint 型の値。  <br/> |
-|背景  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||xsd: boolean 型の値。  <br/> |
-|BackPage  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> ||xsd:/signedint 型の値。  <br/> |
-|ID  <br/> |xsd: アン signedint  <br/> |必須  <br/> ||xsd:/signedint 型の値。  <br/> |
-|iscustomname  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||xsd: boolean 型の値。  <br/> |
-|IsCustomNameU  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||xsd: boolean 型の値。  <br/> |
-|名前  <br/> |xsd: string  <br/> |省略可能  <br/> ||xsd: string 型の値。  <br/> |
-|NameU  <br/> |xsd: string  <br/> |省略可能  <br/> ||xsd: string 型の値。  <br/> |
-|ReviewerID  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> ||xsd:/signedint 型の値。  <br/> |
-|ViewCenterX  <br/> |xsd: double  <br/> |省略可能  <br/> ||xsd: double 型の値。  <br/> |
-|view中央 y  <br/> |xsd: double  <br/> |省略可能  <br/> ||xsd: double 型の値。  <br/> |
-|viewscale  <br/> |xsd: double  <br/> |省略可能  <br/> ||xsd: double 型の値。  <br/> |
+|AssociatedPage  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> ||Xsd:/Signedint 型の値。  <br/> |
+|背景  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||Xsd: boolean 型の値。  <br/> |
+|BackPage  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> ||Xsd:/Signedint 型の値。  <br/> |
+|ID  <br/> |xsd: アン Signedint  <br/> |必須  <br/> ||Xsd:/Signedint 型の値。  <br/> |
+|IsCustomName  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||Xsd: boolean 型の値。  <br/> |
+|IsCustomNameU  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||Xsd: boolean 型の値。  <br/> |
+|名前  <br/> |xsd: string  <br/> |省略可能  <br/> ||Xsd: string 型の値。  <br/> |
+|NameU  <br/> |xsd: string  <br/> |省略可能  <br/> ||Xsd: string 型の値。  <br/> |
+|ReviewerID  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> ||Xsd:/Signedint 型の値。  <br/> |
+|ViewCenterX  <br/> |xsd: double  <br/> |省略可能  <br/> ||Xsd: double 型の値。  <br/> |
+|View中央 y  <br/> |xsd: double  <br/> |省略可能  <br/> ||Xsd: double 型の値。  <br/> |
+|ViewScale  <br/> |xsd: double  <br/> |省略可能  <br/> ||Xsd: double 型の値。  <br/> |
    
 

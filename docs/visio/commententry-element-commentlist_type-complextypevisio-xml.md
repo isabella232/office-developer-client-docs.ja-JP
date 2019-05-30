@@ -1,5 +1,5 @@
 ---
-title: コメント entry 要素 (CommentList_Type complexType) (' Visio XML ')
+title: コメント Entry 要素 (CommentList_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: b0653622-fa94-4889-68c2-94f3e7a83119
 description: 図面内のコメントを識別するために使用するプロパティを指定します。
-ms.openlocfilehash: 79d15b95f986826a4848c2dfbb003255d3482134
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 6b4f20d632b54e7c96ef8181310e8ffab1abbd0f
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329541"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540113"
 ---
-# <a name="commententry-element-commentlisttype-complextype-visio-xml"></a>コメント entry 要素 (CommentList_Type complexType) (' Visio XML ')
+# <a name="commententry-element-commentlisttype-complextype-visio-xml"></a>コメント Entry 要素 (CommentList_Type complexType) (Visio XML)
 
 図面内のコメントを識別するために使用するプロパティを指定します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32329541"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[CommentEntry_Type](commententry_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |comments  <br/> |
    
@@ -52,12 +52,12 @@ ms.locfileid: "32329541"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|AuthorID  <br/> |xsd: アン signedint  <br/> |必須  <br/> |作成者を識別する1から始まる値。  <br/> |xsd:/signedint 型の値。  <br/> |
-|CommentID  <br/> |xsd: アン signedint  <br/> |必須  <br/> |図面ページのコメントを識別する一意の値。  <br/> |xsd:/signedint 型の値。  <br/> |
-|日付  <br/> |xsd: dateTime  <br/> |必須  <br/> |コメントが作成された日時を指定します。  <br/> |xsd: dateTime 型の値。  <br/> |
-|完了  <br/> |xsd: boolean  <br/> |省略可能  <br/> |コメントの現在の状態を指定します。  <br/> |xsd: boolean 型の値。  <br/> |
-|EditDate  <br/> |xsd: dateTime  <br/> |省略可能  <br/> |コメントが最後に変更された日時を指定します。  <br/> |xsd: dateTime 型の値。  <br/> |
-|PageID  <br/> |xsd: アン signedint  <br/> |必須  <br/> |コメントがある図面ページを識別する値。  <br/> |xsd:/signedint 型の値。  <br/> |
-|ShapeID  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |コメントがある図形を識別する値。 ShapeID が指定されていない場合、コメントは図面ページを参照します。  <br/> |xsd:/signedint 型の値。  <br/> |
+|AuthorID  <br/> |xsd: アン Signedint  <br/> |必須  <br/> |作成者を識別する1から始まる値。  <br/> |Xsd:/Signedint 型の値。  <br/> |
+|CommentID  <br/> |xsd: アン Signedint  <br/> |必須  <br/> |図面ページのコメントを識別する一意の値。  <br/> |Xsd:/Signedint 型の値。  <br/> |
+|日付  <br/> |xsd: dateTime  <br/> |必須  <br/> |コメントが作成された日時を指定します。  <br/> |Xsd: dateTime 型の値。  <br/> |
+|完了  <br/> |xsd: boolean  <br/> |省略可能  <br/> |コメントの現在の状態を指定します。  <br/> |Xsd: boolean 型の値。  <br/> |
+|EditDate  <br/> |xsd: dateTime  <br/> |省略可能  <br/> |コメントが最後に変更された日時を指定します。  <br/> |Xsd: dateTime 型の値。  <br/> |
+|PageID  <br/> |xsd: アン Signedint  <br/> |必須  <br/> |コメントがある図面ページを識別する値。  <br/> |Xsd:/Signedint 型の値。  <br/> |
+|ShapeID  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> |コメントがある図形を識別する値。 ShapeID が指定されていない場合、コメントは図面ページを参照します。  <br/> |Xsd:/Signedint 型の値。  <br/> |
    
 

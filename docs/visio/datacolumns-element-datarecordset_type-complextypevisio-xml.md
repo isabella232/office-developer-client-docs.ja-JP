@@ -1,5 +1,5 @@
 ---
-title: DataColumns 要素 (DataRecordSet_Type complexType) (' Visio XML ')
+title: DataColumns 要素 (DataRecordSet_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 34e25349-d0fa-b3a0-425b-778184e9f58f
 description: データレコードセット内のすべての DataColumn 要素を含みます。
-ms.openlocfilehash: a7a0a8faefdb965384e435ee3a9b059a3acbc3f0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: e42354076c5e3e34c118145e7ec7fcdbd4977372
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345249"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34541198"
 ---
-# <a name="datacolumns-element-datarecordsettype-complextype-visio-xml"></a>DataColumns 要素 (DataRecordSet_Type complexType) (' Visio XML ')
+# <a name="datacolumns-element-datarecordsettype-complextype-visio-xml"></a>DataColumns 要素 (DataRecordSet_Type complexType) (Visio XML)
 
 データレコードセット内のすべての**DataColumn**要素を含みます。 
   
@@ -23,7 +23,7 @@ ms.locfileid: "32345249"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[DataColumns_Type](datacolumns_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |recordsets  <br/> |
    
@@ -54,7 +54,7 @@ ms.locfileid: "32345249"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|SortAsc  <br/> |xsd: boolean  <br/> |省略可能  <br/> |データの並べ替えの基準となる列を指定します。  <br/> |xsd: boolean 型の値。  <br/> |
-|SortColumn  <br/> |xsd: string  <br/> |省略可能  <br/> |**sortcolumn**列を昇順 (1) または降順 (0) のどちらで並べ替えるかを指定します。  <br/> |xsd: string 型の値。  <br/> |
+|SortAsc  <br/> |xsd: boolean  <br/> |省略可能  <br/> |データの並べ替えの基準となる列を指定します。  <br/> |Xsd: boolean 型の値。  <br/> |
+|SortColumn  <br/> |xsd: string  <br/> |省略可能  <br/> |**Sortcolumn**列を昇順 (1) または降順 (0) のどちらで並べ替えるかを指定します。  <br/> |Xsd: string 型の値。  <br/> |
    
 

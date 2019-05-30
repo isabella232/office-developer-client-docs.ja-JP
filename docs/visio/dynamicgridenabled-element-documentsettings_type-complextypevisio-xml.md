@@ -1,5 +1,5 @@
 ---
-title: dynamicgridenabled 要素 (DocumentSettings_Type complexType) (' Visio XML ')
+title: DynamicGridEnabled 要素 (DocumentSettings_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: f18d797e-9885-f2fb-a521-5172aac7894c
 description: 文書の動的グリッド機能を有効にするかどうかを指定します。
-ms.openlocfilehash: d92f717ee07118abab8b2acf81b54197afb22b45
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 9f09591ddb918fa883432be0ea89e663bdfbecb7
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315720"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540001"
 ---
-# <a name="dynamicgridenabled-element-documentsettingstype-complextype-visio-xml"></a>dynamicgridenabled 要素 (DocumentSettings_Type complexType) (' Visio XML ')
+# <a name="dynamicgridenabled-element-documentsettingstype-complextype-visio-xml"></a>DynamicGridEnabled 要素 (DocumentSettings_Type complexType) (Visio XML)
 
 文書の動的グリッド機能を有効にするかどうかを指定します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32315720"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[DynamicGridEnabled_Type](dynamicgridenabled_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |windows .xml、document .xml  <br/> |
    
@@ -42,7 +42,7 @@ ms.locfileid: "32315720"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[documentsettings](documentsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[DocumentSettings_Type](documentsettings_type-complextypevisio-xml.md) <br/> |ドキュメントの設定を指定する要素を格納します。  <br/> |
+|[DocumentSettings](documentsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[DocumentSettings_Type](documentsettings_type-complextypevisio-xml.md) <br/> |ドキュメントの設定を指定する要素を格納します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 

@@ -1,27 +1,27 @@
 ---
-title: MasterShortcut_Type complexType (' Visio XML ')
+title: MasterShortcut_Type complexType (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0192c733-09b8-d9ce-1d88-b4d97e2e1a36
-ms.openlocfilehash: 23d5de92be151b9ab6819296456746087573e7c0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: ed8dd8ef985c814e41017526144bd7ec8cb63424
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341693"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538061"
 ---
-# <a name="mastershortcuttype-complextype-visio-xml"></a>MasterShortcut_Type complexType (' Visio XML ')
+# <a name="mastershortcuttype-complextype-visio-xml"></a>MasterShortcut_Type complexType (Visio XML)
 
 ## <a name="type-information"></a>型情報
 
 |||
 |:-----|:-----|
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15-06-05  <br/> |
-|**拡張ベース** <br/> |なし  <br/> |
+|**拡張ベース** <br/> |None  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -91,17 +91,17 @@ ms.locfileid: "32341693"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|AlignName  <br/> |xsd: アン signedshort  <br/> |省略可能  <br/> ||xsd: _ signedshort 型の値。  <br/> |
-|IconSize  <br/> |xsd: アン signedshort  <br/> |省略可能  <br/> ||xsd: _ signedshort 型の値。  <br/> |
-|ID  <br/> |xsd: アン signedint  <br/> |必須  <br/> ||xsd:/signedint 型の値。  <br/> |
-|iscustomname  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||xsd: boolean 型の値。  <br/> |
-|IsCustomNameU  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||xsd: boolean 型の値。  <br/> |
-|MasterType  <br/> |xsd: アン signedshort  <br/> |省略可能  <br/> ||xsd: _ signedshort 型の値。  <br/> |
-|名前  <br/> |xsd: string  <br/> |省略可能  <br/> ||xsd: string 型の値。  <br/> |
-|NameU  <br/> |xsd: string  <br/> |省略可能  <br/> ||xsd: string 型の値。  <br/> |
-|PatternFlags  <br/> |xsd: アン signedshort  <br/> |省略可能  <br/> ||xsd: _ signedshort 型の値。  <br/> |
-|プロンプト  <br/> |xsd: string  <br/> |省略可能  <br/> ||xsd: string 型の値。  <br/> |
-|ShortcutHelp  <br/> |xsd: string  <br/> |省略可能  <br/> ||xsd: string 型の値。  <br/> |
-|ShortcutURL  <br/> |xsd: string  <br/> |省略可能  <br/> ||xsd: string 型の値。  <br/> |
+|AlignName  <br/> |xsd: アン Signedshort  <br/> |省略可能  <br/> ||Xsd: _ Signedshort 型の値。  <br/> |
+|IconSize  <br/> |xsd: アン Signedshort  <br/> |省略可能  <br/> ||Xsd: _ Signedshort 型の値。  <br/> |
+|ID  <br/> |xsd: アン Signedint  <br/> |必須  <br/> ||Xsd:/Signedint 型の値。  <br/> |
+|IsCustomName  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||Xsd: boolean 型の値。  <br/> |
+|IsCustomNameU  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||Xsd: boolean 型の値。  <br/> |
+|MasterType  <br/> |xsd: アン Signedshort  <br/> |省略可能  <br/> ||Xsd: _ Signedshort 型の値。  <br/> |
+|名前  <br/> |xsd: string  <br/> |省略可能  <br/> ||Xsd: string 型の値。  <br/> |
+|NameU  <br/> |xsd: string  <br/> |省略可能  <br/> ||Xsd: string 型の値。  <br/> |
+|PatternFlags  <br/> |xsd: アン Signedshort  <br/> |省略可能  <br/> ||Xsd: _ Signedshort 型の値。  <br/> |
+|プロンプト  <br/> |xsd: string  <br/> |省略可能  <br/> ||Xsd: string 型の値。  <br/> |
+|ShortcutHelp  <br/> |xsd: string  <br/> |省略可能  <br/> ||Xsd: string 型の値。  <br/> |
+|ShortcutURL  <br/> |xsd: string  <br/> |省略可能  <br/> ||Xsd: string 型の値。  <br/> |
    
 

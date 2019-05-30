@@ -1,27 +1,27 @@
 ---
-title: SnapAngles_Type complexType (' Visio XML ')
+title: SnapAngles_Type complexType (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1110a656-d8cd-19d0-1af0-31a6675bf89b
-ms.openlocfilehash: 4f48934d436fd0830019898cb6d24e940937f539
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 1ea5c6d907bf3b3af5664ce3c6f97dfbaa3fd442
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334623"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540358"
 ---
-# <a name="snapanglestype-complextype-visio-xml"></a>SnapAngles_Type complexType (' Visio XML ')
+# <a name="snapanglestype-complextype-visio-xml"></a>SnapAngles_Type complexType (Visio XML)
 
 ## <a name="type-information"></a>型情報
 
 |||
 |:-----|:-----|
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15-06-05  <br/> |
-|**拡張ベース** <br/> |なし  <br/> |
+|**拡張ベース** <br/> |None  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -48,7 +48,7 @@ ms.locfileid: "32334623"
 
 |**Element**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[snapangle](snapangle-element-snapangles_type-complextypevisio-xml.md) <br/> |[SnapAngle_Type](snapangle_type-complextypevisio-xml.md) <br/> ||
+|[SnapAngle](snapangle-element-snapangles_type-complextypevisio-xml.md) <br/> |[SnapAngle_Type](snapangle_type-complextypevisio-xml.md) <br/> ||
    
 ### <a name="attributes"></a>属性
 

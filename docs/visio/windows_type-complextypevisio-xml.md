@@ -1,27 +1,27 @@
 ---
-title: Windows_Type complexType (' Visio XML ')
+title: Windows_Type complexType (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2e8257df-4af0-aab1-a979-df9fa8a56f20
-ms.openlocfilehash: 5aeffa7b78c4c402d03b6a2774a2df8b339e03e7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: b8d8ed39637bdd692b2ba113525f40a3f91ffc9c
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346446"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538439"
 ---
-# <a name="windowstype-complextype-visio-xml"></a>Windows_Type complexType (' Visio XML ')
+# <a name="windowstype-complextype-visio-xml"></a>Windows_Type complexType (Visio XML)
 
 ## <a name="type-information"></a>型情報
 
 |||
 |:-----|:-----|
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15-06-05  <br/> |
-|**拡張ベース** <br/> |なし  <br/> |
+|**拡張ベース** <br/> |None  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -60,7 +60,7 @@ ms.locfileid: "32346446"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|ClientHeight  <br/> |xsd: アン signedshort  <br/> |省略可能  <br/> ||xsd: _ signedshort 型の値。  <br/> |
-|ClientWidth  <br/> |xsd: アン signedshort  <br/> |省略可能  <br/> ||xsd: _ signedshort 型の値。  <br/> |
+|ClientHeight  <br/> |xsd: アン Signedshort  <br/> |省略可能  <br/> ||Xsd: _ Signedshort 型の値。  <br/> |
+|ClientWidth  <br/> |xsd: アン Signedshort  <br/> |省略可能  <br/> ||Xsd: _ Signedshort 型の値。  <br/> |
    
 

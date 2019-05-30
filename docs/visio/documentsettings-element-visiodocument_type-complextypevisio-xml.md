@@ -1,5 +1,5 @@
 ---
-title: documentsettings 要素 (VisioDocument_Type complexType) (' Visio XML ')
+title: DocumentSettings 要素 (VisioDocument_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 46712e1f-4e02-974f-c224-85db47666ae1
 description: ドキュメントの設定を指定する要素を格納します。
-ms.openlocfilehash: e86dc5a0875006cb8bd1bbaffd36037a07fd5c0f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 0d8e0809afae7b3de059166343577bb58f0eb01b
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315219"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540071"
 ---
-# <a name="documentsettings-element-visiodocumenttype-complextype-visio-xml"></a>documentsettings 要素 (VisioDocument_Type complexType) (' Visio XML ')
+# <a name="documentsettings-element-visiodocumenttype-complextype-visio-xml"></a>DocumentSettings 要素 (VisioDocument_Type complexType) (Visio XML)
 
 ドキュメントの設定を指定する要素を格納します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32315219"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[DocumentSettings_Type](documentsettings_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |文書の xml  <br/> |
    
@@ -55,9 +55,9 @@ ms.locfileid: "32315219"
 |[GlueSettings](gluesettings-element-documentsettings_type-complextypevisio-xml.md) <br/> |[GlueSettings_Type](gluesettings_type-complextypevisio-xml.md) <br/> |図面で接着が有効になっている場合に、図形を接着するオブジェクトを指定します。  <br/> |
 |[ProtectBkgnds](protectbkgnds-element-documentsettings_type-complextypevisio-xml.md) <br/> |[ProtectBkgnds_Type](protectbkgnds_type-complextypevisio-xml.md) <br/> |ユーザーが背景ページを削除または編集できないようにするかどうかを指定します。  <br/> |
 |[ProtectMasters](protectmasters-element-documentsettings_type-complextypevisio-xml.md) <br/> |[ProtectMasters_Type](protectmasters_type-complextypevisio-xml.md) <br/> |ユーザーがマスターシェイプの作成、編集、または削除をできないようにするかどうかを指定します。 この設定にかかわらず、ユーザーは引き続きマスターシェイプのインスタンスを作成できます。  <br/> |
-|[ProtectShapes](protectshapes-element-documentsettings_type-complextypevisio-xml.md) <br/> |[ProtectShapes_Type](protectshapes_type-complextypevisio-xml.md) <br/> |ユーザーが**lockselect**要素が1に設定されている図形を選択できないようにするかどうかを指定します。  <br/> |
+|[ProtectShapes](protectshapes-element-documentsettings_type-complextypevisio-xml.md) <br/> |[ProtectShapes_Type](protectshapes_type-complextypevisio-xml.md) <br/> |ユーザーが**Lockselect**要素が1に設定されている図形を選択できないようにするかどうかを指定します。  <br/> |
 |[ProtectStyles](protectstyles-element-documentsettings_type-complextypevisio-xml.md) <br/> |[ProtectStyles_Type](protectstyles_type-complextypevisio-xml.md) <br/> |ユーザーがスタイルを作成または編集できないようにするかどうかを指定します。  <br/> |
-|[SnapAngles](snapangles-element-documentsettings_type-complextypevisio-xml.md) <br/> |[SnapAngles_Type](snapangles_type-complextypevisio-xml.md) <br/> |**snapangle**要素のコレクションを格納します。  <br/> |
+|[SnapAngles](snapangles-element-documentsettings_type-complextypevisio-xml.md) <br/> |[SnapAngles_Type](snapangles_type-complextypevisio-xml.md) <br/> |**Snapangle**要素のコレクションを格納します。  <br/> |
 |[SnapExtensions](snapextensions-element-documentsettings_type-complextypevisio-xml.md) <br/> |[SnapExtensions_Type](snapextensions_type-complextypevisio-xml.md) <br/> |アクティブウィンドウに対して特定のスナップ延長の設定を有効にするか無効にするかを指定します。  <br/> |
 |[SnapSettings](snapsettings-element-documentsettings_type-complextypevisio-xml.md) <br/> |[SnapSettings_Type](snapsettings_type-complextypevisio-xml.md) <br/> |ウィンドウのスナップがアクティブなときに、図形をスナップするオブジェクトを指定します。  <br/> |
    
@@ -65,10 +65,10 @@ ms.locfileid: "32315219"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|DefaultFillStyle  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |**StyleSheet**要素の ID を指定します。  <br/> |xsd:/signedint 型の値。  <br/> |
-|DefaultGuideStyle  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |**StyleSheet**要素の ID を指定します。  <br/> |xsd:/signedint 型の値。  <br/> |
-|DefaultLineStyle  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |**StyleSheet**要素の ID を指定します。  <br/> |xsd:/signedint 型の値。  <br/> |
-|DefaultTextStyle  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |**StyleSheet**要素の ID を指定します。  <br/> |xsd:/signedint 型の値。  <br/> |
-|toppage  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |Microsoft Visio で文書を開くときに表示されるページの ID を指定します。  <br/> |xsd:/signedint 型の値。  <br/> |
+|DefaultFillStyle  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> |**StyleSheet**要素の ID を指定します。  <br/> |Xsd:/Signedint 型の値。  <br/> |
+|DefaultGuideStyle  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> |**StyleSheet**要素の ID を指定します。  <br/> |Xsd:/Signedint 型の値。  <br/> |
+|DefaultLineStyle  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> |**StyleSheet**要素の ID を指定します。  <br/> |Xsd:/Signedint 型の値。  <br/> |
+|DefaultTextStyle  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> |**StyleSheet**要素の ID を指定します。  <br/> |Xsd:/Signedint 型の値。  <br/> |
+|TopPage  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> |Microsoft Visio で文書を開くときに表示されるページの ID を指定します。  <br/> |Xsd:/Signedint 型の値。  <br/> |
    
 

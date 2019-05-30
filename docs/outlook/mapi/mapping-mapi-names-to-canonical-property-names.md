@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 38376abb-60de-40f1-9bc9-d8c4f9e3368b
-description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 693ea848d6870c443ad69fbb795f7520ecb5ee24
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: '最終更新日: 2015 年 3 月 9 日'
+ms.openlocfilehash: ddc753891ad9ee0fa60c9ac4d3b2014eea4a0301
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357667"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34542703"
 ---
 # <a name="mapping-mapi-names-to-canonical-property-names"></a>MAPI 名から標準プロパティ名へのマッピング
 
@@ -23,79 +23,79 @@ ms.locfileid: "32357667"
   
 このトピックでは、各 MAPI プロパティを対応する標準プロパティ名にマッピングします。 このトピックには3つのテーブルが含まれています。数値識別子を持つ名前付きプロパティのテーブル、文字列識別子を持つ名前付きプロパティの2番目のテーブル、およびタグ付きプロパティの3番目の表です。
   
-標準プロパティと mapi プロパティの関係の詳細については、「 [mapi 標準プロパティ](mapi-canonical-properties.md)」を参照してください。
+標準プロパティと MAPI プロパティの関係の詳細については、「 [Mapi 標準プロパティ](mapi-canonical-properties.md)」を参照してください。
   
 ## <a name="named-properties-with-numerical-identifiers"></a>数値識別子を含む名前付きプロパティ
 
 |**実際の名前付きプロパティ**|**標準プロパティ名**|
 |:-----|:-----|
 |dispidABPArrayType  <br/> |[PidLidAddressBookProviderArrayType](pidlidaddressbookproviderarraytype-canonical-property.md) <br/> |
-|dispidabpemaillist  <br/> |[PidLidAddressBookProviderEmailList](pidlidaddressbookprovideremaillist-canonical-property.md) <br/> |
+|dispidABPEmailList  <br/> |[PidLidAddressBookProviderEmailList](pidlidaddressbookprovideremaillist-canonical-property.md) <br/> |
 |dispidAddressCountryCode  <br/> |[PidLidAddressCountryCode](pidlidaddresscountrycode-canonical-property.md) <br/> |
 |dispidAgingDontAgeMe  <br/> |[PidLidAgingDontAgeMe](pidlidagingdontageme-canonical-property.md) <br/> |
 |dispidAllAttendeesString  <br/> |[PidLidAllAttendeesString](pidlidallattendeesstring-canonical-property.md) <br/> |
 |dispidAnniversaryEventEID  <br/> |[PidLidAnniversaryEventEntryId](pidlidanniversaryevententryid-canonical-property.md) <br/> |
 |dispidApptAuxFlags  <br/> |[PidLidAppointmentAuxiliaryFlags](pidlidappointmentauxiliaryflags-canonical-property.md) <br/> |
-|dispidapptcolor  <br/> |[PidLidAppointmentColor](pidlidappointmentcolor-canonical-property.md) <br/> |
-|dispidapptcounterproposal  <br/> |[PidLidAppointmentCounterProposal](pidlidappointmentcounterproposal-canonical-property.md) <br/> |
-|dispidapptduration  <br/> |[PidLidAppointmentDuration](pidlidappointmentduration-canonical-property.md) <br/> |
+|dispidApptColor  <br/> |[PidLidAppointmentColor](pidlidappointmentcolor-canonical-property.md) <br/> |
+|dispidApptCounterProposal  <br/> |[PidLidAppointmentCounterProposal](pidlidappointmentcounterproposal-canonical-property.md) <br/> |
+|dispidApptDuration  <br/> |[PidLidAppointmentDuration](pidlidappointmentduration-canonical-property.md) <br/> |
 |dispidApptEndWhole  <br/> |[PidLidAppointmentEndWhole](pidlidappointmentendwhole-canonical-property.md) <br/> |
-|dispidapptlastsequence  <br/> |[PidLidAppointmentLastSequence](pidlidappointmentlastsequence-canonical-property.md) <br/> |
-|dispidapptmessageclass  <br/> |[PidLidAppointmentMessageClass](pidlidappointmentmessageclass-canonical-property.md) <br/> |
-|dispidapptnotallowpropose  <br/> |[PidLidAppointmentNotAllowPropose](pidlidappointmentnotallowpropose-canonical-property.md) <br/> |
+|dispidApptLastSequence  <br/> |[PidLidAppointmentLastSequence](pidlidappointmentlastsequence-canonical-property.md) <br/> |
+|dispidApptMessageClass  <br/> |[PidLidAppointmentMessageClass](pidlidappointmentmessageclass-canonical-property.md) <br/> |
+|dispidApptNotAllowPropose  <br/> |[PidLidAppointmentNotAllowPropose](pidlidappointmentnotallowpropose-canonical-property.md) <br/> |
 |dispidApptProposalNum  <br/> |[PidLidAppointmentProposalNumber](pidlidappointmentproposalnumber-canonical-property.md) <br/> |
 |dispidApptProposedDuration  <br/> |[PidLidAppointmentProposedDuration](pidlidappointmentproposedduration-canonical-property.md) <br/> |
 |dispidApptProposedEndWhole  <br/> |[PidLidAppointmentProposedEndWhole](pidlidappointmentproposedendwhole-canonical-property.md) <br/> |
 |dispidApptProposedStartWhole  <br/> |[PidLidAppointmentProposedStartWhole](pidlidappointmentproposedstartwhole-canonical-property.md) <br/> |
-|dispidapptrecur  <br/> |[PidLidAppointmentRecur](pidlidappointmentrecur-canonical-property.md) <br/> |
+|dispidApptRecur  <br/> |[PidLidAppointmentRecur](pidlidappointmentrecur-canonical-property.md) <br/> |
 |dispidApptReplyName  <br/> |[PidLidAppointmentReplyName](pidlidappointmentreplyname-canonical-property.md) <br/> |
 |dispidApptReplyTime  <br/> |[PidLidAppointmentReplyTime](pidlidappointmentreplytime-canonical-property.md) <br/> |
 |dispidApptSeqTime  <br/> |[PidLidAppointmentSequenceTime](pidlidappointmentsequencetime-canonical-property.md) <br/> |
-|dispidapptsequence  <br/> |[PidLidAppointmentSequence](pidlidappointmentsequence-canonical-property.md) <br/> |
-|dispidapptstartwhole  <br/> |[PidLidAppointmentStartWhole](pidlidappointmentstartwhole-canonical-property.md) <br/> |
-|dispidapptstateflags  <br/> |[PidLidAppointmentStateFlags](pidlidappointmentstateflags-canonical-property.md) <br/> |
-|dispidapptsubtype  <br/> |[PidLidAppointmentSubType](pidlidappointmentsubtype-canonical-property.md) <br/> |
+|dispidApptSequence  <br/> |[PidLidAppointmentSequence](pidlidappointmentsequence-canonical-property.md) <br/> |
+|dispidApptStartWhole  <br/> |[PidLidAppointmentStartWhole](pidlidappointmentstartwhole-canonical-property.md) <br/> |
+|dispidApptStateFlags  <br/> |[PidLidAppointmentStateFlags](pidlidappointmentstateflags-canonical-property.md) <br/> |
+|dispidApptSubType  <br/> |[PidLidAppointmentSubType](pidlidappointmentsubtype-canonical-property.md) <br/> |
 |dispidApptTZDefEndDisplay  <br/> |[PidLidAppointmentTimeZoneDefinitionEndDisplay](pidlidappointmenttimezonedefinitionenddisplay-canonical-property.md) <br/> |
 |dispidApptTZDefRecur  <br/> |[PidLidAppointmentTimeZoneDefinitionRecur](pidlidappointmenttimezonedefinitionrecur-canonical-property.md) <br/> |
 |dispidApptTZDefStartDisplay  <br/> |[PidLidAppointmentTimeZoneDefinitionStartDisplay](pidlidappointmenttimezonedefinitionstartdisplay-canonical-property.md) <br/> |
-|dispidapptunsendablerecips  <br/> |[PidLidAppointmentUnsendableRecipients](pidlidappointmentunsendablerecipients-canonical-property.md) <br/> |
-|dispidautofilllocation  <br/> |[PidLidAutoFillLocation](pidlidautofilllocation-canonical-property.md) <br/> |
+|dispidApptUnsendableRecips  <br/> |[PidLidAppointmentUnsendableRecipients](pidlidappointmentunsendablerecipients-canonical-property.md) <br/> |
+|dispidAutoFillLocation  <br/> |[PidLidAutoFillLocation](pidlidautofilllocation-canonical-property.md) <br/> |
 |dispidAutoLog  <br/> |[PidLidAutoLog](pidlidautolog-canonical-property.md) <br/> |
-|dispidbccardpicture  <br/> |[PidLidBusinessCardCardPicture](pidlidbusinesscardcardpicture-canonical-property.md) <br/> |
-|dispidbcdisplaydefinition  <br/> |[PidLidBusinessCardDisplayDefinition](pidlidbusinesscarddisplaydefinition-canonical-property.md) <br/> |
-|dispidbilling  <br/> |[PidLidBilling](pidlidbilling-canonical-property.md) <br/> |
+|dispidBCCardPicture  <br/> |[PidLidBusinessCardCardPicture](pidlidbusinesscardcardpicture-canonical-property.md) <br/> |
+|dispidBCDisplayDefinition  <br/> |[PidLidBusinessCardDisplayDefinition](pidlidbusinesscarddisplaydefinition-canonical-property.md) <br/> |
+|dispidBilling  <br/> |[PidLidBilling](pidlidbilling-canonical-property.md) <br/> |
 |dispidBirthdayEventEID  <br/> |[PidLidBirthdayEventEntryId](pidlidbirthdayevententryid-canonical-property.md) <br/> |
 |dispidBusyStatus  <br/> |[PidLidBusyStatus](pidlidbusystatus-canonical-property.md) <br/> |
-|dispidcategories  <br/> |[PidLidCategories](pidlidcategories-canonical-property.md) <br/> |
+|dispidCategories  <br/> |[PidLidCategories](pidlidcategories-canonical-property.md) <br/> |
 |dispidCCAttendeesString  <br/> |[PidLidCcAttendeesString](pidlidccattendeesstring-canonical-property.md) <br/> |
-|dispidchangehighlight 表示  <br/> |[PidLidChangeHighlight](pidlidchangehighlight-canonical-property.md) <br/> |
-|dispidclassdesc  <br/> |[PidLidClassificationDescription](pidlidclassificationdescription-canonical-property.md) <br/> |
-|dispidclassguid  <br/> |[PidLidClassificationGuid](pidlidclassificationguid-canonical-property.md) <br/> |
-|dispidclassification  <br/> |[PidLidClassification](pidlidclassification-canonical-property.md) <br/> |
-|dispidclassified  <br/> |[PidLidClassified](pidlidclassified-canonical-property.md) <br/> |
-|dispidclasskeep  <br/> |[PidLidClassificationKeep](pidlidclassificationkeep-canonical-property.md) <br/> |
+|dispidChangeHighlight 表示  <br/> |[PidLidChangeHighlight](pidlidchangehighlight-canonical-property.md) <br/> |
+|dispidClassDesc  <br/> |[PidLidClassificationDescription](pidlidclassificationdescription-canonical-property.md) <br/> |
+|dispidClassGuid  <br/> |[PidLidClassificationGuid](pidlidclassificationguid-canonical-property.md) <br/> |
+|dispidClassification  <br/> |[PidLidClassification](pidlidclassification-canonical-property.md) <br/> |
+|dispidClassified  <br/> |[PidLidClassified](pidlidclassified-canonical-property.md) <br/> |
+|dispidClassKeep  <br/> |[PidLidClassificationKeep](pidlidclassificationkeep-canonical-property.md) <br/> |
 |dispidCleanGlobalObjId  <br/> |[PidLidCleanGlobalObjectId](pidlidcleanglobalobjectid-canonical-property.md) <br/> |
-|dispidclipend  <br/> |[PidLidClipEnd](pidlidclipend-canonical-property.md) <br/> |
-|dispidclipstart  <br/> |[PidLidClipStart](pidlidclipstart-canonical-property.md) <br/> |
-|dispidcommonend  <br/> |[PidLidCommonEnd](pidlidcommonend-canonical-property.md) <br/> |
-|dispidcommonstart  <br/> |[PidLidCommonStart](pidlidcommonstart-canonical-property.md) <br/> |
-|dispidcompanies  <br/> |[PidLidCompanies](pidlidcompanies-canonical-property.md) <br/> |
-|dispidcontactcharset  <br/> |[PidLidContactCharacterSet](pidlidcontactcharacterset-canonical-property.md) <br/> |
+|dispidClipEnd  <br/> |[PidLidClipEnd](pidlidclipend-canonical-property.md) <br/> |
+|dispidClipStart  <br/> |[PidLidClipStart](pidlidclipstart-canonical-property.md) <br/> |
+|dispidCommonEnd  <br/> |[PidLidCommonEnd](pidlidcommonend-canonical-property.md) <br/> |
+|dispidCommonStart  <br/> |[PidLidCommonStart](pidlidcommonstart-canonical-property.md) <br/> |
+|dispidCompanies  <br/> |[PidLidCompanies](pidlidcompanies-canonical-property.md) <br/> |
+|dispidContactCharSet  <br/> |[PidLidContactCharacterSet](pidlidcontactcharacterset-canonical-property.md) <br/> |
 |dispidContactItemData  <br/> |[PidLidContactItemData](pidlidcontactitemdata-canonical-property.md) <br/> |
-|dispidcontactlinkentry  <br/> |[PidLidContactLinkEntry](pidlidcontactlinkentry-canonical-property.md) <br/> |
-|dispidcontactlinkname  <br/> |[PidLidContactLinkName](pidlidcontactlinkname-canonical-property.md) <br/> |
-|dispidcontactlinksearchkey  <br/> |[PidLidContactLinkSearchKey](pidlidcontactlinksearchkey-canonical-property.md) <br/> |
-|dispidcontacts  <br/> |[PidLidContacts](pidlidcontacts-canonical-property.md) <br/> |
+|dispidContactLinkEntry  <br/> |[PidLidContactLinkEntry](pidlidcontactlinkentry-canonical-property.md) <br/> |
+|dispidContactLinkName  <br/> |[PidLidContactLinkName](pidlidcontactlinkname-canonical-property.md) <br/> |
+|dispidContactLinkSearchKey  <br/> |[PidLidContactLinkSearchKey](pidlidcontactlinksearchkey-canonical-property.md) <br/> |
+|dispidContacts  <br/> |[PidLidContacts](pidlidcontacts-canonical-property.md) <br/> |
 |dispidContactUserField1  <br/> |[PidLidContactUserField1](pidlidcontactuserfield1-canonical-property.md) <br/> |
 |dispidContactUserField2  <br/> |[PidLidContactUserField2](pidlidcontactuserfield2-canonical-property.md) <br/> |
 |dispidContactUserField3  <br/> |[PidLidContactUserField3](pidlidcontactuserfield3-canonical-property.md) <br/> |
 |dispidContactUserField4  <br/> |[PidLidContactUserField4](pidlidcontactuserfield4-canonical-property.md) <br/> |
 |dispidCurrentVersion  <br/> |[PidLidCurrentVersion](pidlidcurrentversion-canonical-property.md) <br/> |
-|dispidcurrentversionname  <br/> |[PidLidCurrentVersionName](pidlidcurrentversionname-canonical-property.md) <br/> |
-|dispidcustomflag  <br/> |[PidLidCustomFlag](pidlidcustomflag-canonical-property.md) <br/> |
-|dispiddlchecksum  <br/> |[PidLidDistributionListChecksum](pidliddistributionlistchecksum-canonical-property.md) <br/> |
-|dispiddlmembers  <br/> |[PidLidDistributionListMembers](pidliddistributionlistmembers-canonical-property.md) <br/> |
-|dispiddlname  <br/> |[PidLidDistributionListName](pidliddistributionlistname-canonical-property.md) <br/> |
+|dispidCurrentVersionName  <br/> |[PidLidCurrentVersionName](pidlidcurrentversionname-canonical-property.md) <br/> |
+|dispidCustomFlag  <br/> |[PidLidCustomFlag](pidlidcustomflag-canonical-property.md) <br/> |
+|dispidDLChecksum  <br/> |[PidLidDistributionListChecksum](pidliddistributionlistchecksum-canonical-property.md) <br/> |
+|dispidDLMembers  <br/> |[PidLidDistributionListMembers](pidliddistributionlistmembers-canonical-property.md) <br/> |
+|dispidDLName  <br/> |[PidLidDistributionListName](pidliddistributionlistname-canonical-property.md) <br/> |
 |dispidDLOneOffMembers  <br/> |[PidLidDistributionListOneOffMembers](pidliddistributionlistoneoffmembers-canonical-property.md) <br/> |
 |dispidEmail1AddrType  <br/> |[PidLidEmail1AddressType](pidlidemail1addresstype-canonical-property.md) <br/> |
 |dispidEmail1DisplayName  <br/> |[PidLidEmail1DisplayName](pidlidemail1displayname-canonical-property.md) <br/> |
@@ -113,7 +113,7 @@ ms.locfileid: "32357667"
 |dispidEmail3OriginalDisplayName  <br/> |[PidLidEmail3OriginalDisplayName](pidlidemail3originaldisplayname-canonical-property.md) <br/> |
 |dispidEmail3OriginalEntryID  <br/> |[PidLidEmail3OriginalEntryId](pidlidemail3originalentryid-canonical-property.md) <br/> |
 |dispidEMSAbX509Cert  <br/> |[PidLidUserX509Certificate](pidliduserx509certificate-canonical-property.md) <br/> |
-|dispide xceptionreplacetime  <br/> |[PidLidExceptionReplaceTime](pidlidexceptionreplacetime-canonical-property.md) <br/> |
+|Dispide Xceptionreplacetime  <br/> |[PidLidExceptionReplaceTime](pidlidexceptionreplacetime-canonical-property.md) <br/> |
 |dispidFax1AddrType  <br/> |[PidLidFax1AddressType](pidlidfax1addresstype-canonical-property.md) <br/> |
 |dispidFax1DisplayName  <br/> |[PidLidFax1DisplayName](pidlidfax1displayname-canonical-property.md) <br/> |
 |dispidFax1EmailAddress  <br/> |[PidLidFax1EmailAddress](pidlidfax1emailaddress-canonical-property.md) <br/> |
@@ -138,70 +138,70 @@ ms.locfileid: "32357667"
 |dispidFax3OriginalDisplayName  <br/> |[PidLidFax3OriginalDisplayName](pidlidfax3originaldisplayname-canonical-property.md) <br/> |
 |dispidFax3OriginalEntryID  <br/> |[PidLidFax3OriginalEntryId](pidlidfax3originalentryid-canonical-property.md) <br/> |
 |dispidFax3RTF  <br/> |[PidLidFax3RichTextFormat](pidlidfax3richtextformat-canonical-property.md) <br/> |
-|dispidfexceptionalattendees 者  <br/> |[PidLidFExceptionalAttendees](pidlidfexceptionalattendees-canonical-property.md) <br/> |
-|dispidfexceptionalbody  <br/> |[PidLidFExceptionalBody](pidlidfexceptionalbody-canonical-property.md) <br/> |
-|dispidfileunder  <br/> |[PidLidFileUnder](pidlidfileunder-canonical-property.md) <br/> |
-|dispidfile過小 id  <br/> |[PidLidFileUnderId](pidlidfileunderid-canonical-property.md) <br/> |
-|dispidfile過小一覧  <br/> |[PidLidFileUnderList](pidlidfileunderlist-canonical-property.md) <br/> |
-|dispidfinvited  <br/> |[PidLidFInvited](pidlidfinvited-canonical-property.md) <br/> |
-|dispidflagstringenum  <br/> |[PidLidFlagString](pidlidflagstring-canonical-property.md) <br/> |
+|dispidFExceptionalAttendees 者  <br/> |[PidLidFExceptionalAttendees](pidlidfexceptionalattendees-canonical-property.md) <br/> |
+|dispidFExceptionalBody  <br/> |[PidLidFExceptionalBody](pidlidfexceptionalbody-canonical-property.md) <br/> |
+|dispidFileUnder  <br/> |[PidLidFileUnder](pidlidfileunder-canonical-property.md) <br/> |
+|Dispidfile過小 Id  <br/> |[PidLidFileUnderId](pidlidfileunderid-canonical-property.md) <br/> |
+|Dispidfile過小一覧  <br/> |[PidLidFileUnderList](pidlidfileunderlist-canonical-property.md) <br/> |
+|dispidFInvited  <br/> |[PidLidFInvited](pidlidfinvited-canonical-property.md) <br/> |
+|dispidFlagStringEnum  <br/> |[PidLidFlagString](pidlidflagstring-canonical-property.md) <br/> |
 |dispidFreeBusyLocation  <br/> |[PidLidFreeBusyLocation](pidlidfreebusylocation-canonical-property.md) <br/> |
-|dispidfid tnef  <br/> |[PidLidFShouldTNEF](pidlidfshouldtnef-canonical-property.md) <br/> |
-|dispidfwrdinstance  <br/> |[PidLidForwardInstance](pidlidforwardinstance-canonical-property.md) <br/> |
-|dispidhaspicture  <br/> |[PidLidHasPicture](pidlidhaspicture-canonical-property.md) <br/> |
-|dispidheaderitem  <br/> |[PidLidHeaderItem](pidlidheaderitem-canonical-property.md) <br/> |
-|dispidホームアドレス  <br/> |[PidLidHomeAddress](pidlidhomeaddress-canonical-property.md) <br/> |
+|Dispidfid Tnef  <br/> |[PidLidFShouldTNEF](pidlidfshouldtnef-canonical-property.md) <br/> |
+|dispidFwrdInstance  <br/> |[PidLidForwardInstance](pidlidforwardinstance-canonical-property.md) <br/> |
+|dispidHasPicture  <br/> |[PidLidHasPicture](pidlidhaspicture-canonical-property.md) <br/> |
+|dispidHeaderItem  <br/> |[PidLidHeaderItem](pidlidheaderitem-canonical-property.md) <br/> |
+|Dispidホームアドレス  <br/> |[PidLidHomeAddress](pidlidhomeaddress-canonical-property.md) <br/> |
 |dispidHomeAddressCountryCode  <br/> |[PidLidHomeAddressCountryCode](pidlidhomeaddresscountrycode-canonical-property.md) <br/> |
-|dispidhtml  <br/> |[PidLidHtml](pidlidhtml-canonical-property.md) <br/> |
+|dispidHTML  <br/> |[PidLidHtml](pidlidhtml-canonical-property.md) <br/> |
 |dispidImapDeleted  <br/> |[PidLidImapDeleted](pidlidimapdeleted-canonical-property.md) <br/> |
 |dispidImgAttchmtsCompressLevel  <br/> |[PidLidImageAttachmentsCompressionLevel](pidlidimageattachmentscompressionlevel-canonical-property.md) <br/> |
-|dispidinetacctname  <br/> |[PidLidInternetAccountName](pidlidinternetaccountname-canonical-property.md) <br/> |
-|dispidinetacctstamp  <br/> |[PidLidInternetAccountStamp](pidlidinternetaccountstamp-canonical-property.md) <br/> |
+|dispidInetAcctName  <br/> |[PidLidInternetAccountName](pidlidinternetaccountname-canonical-property.md) <br/> |
+|dispidInetAcctStamp  <br/> |[PidLidInternetAccountStamp](pidlidinternetaccountstamp-canonical-property.md) <br/> |
 |dispidInstMsg  <br/> |[PidLidInstantMessagingAddress](pidlidinstantmessagingaddress-canonical-property.md) <br/> |
 |dispidIntendedBusyStatus  <br/> |[PidLidIntendedBusyStatus](pidlidintendedbusystatus-canonical-property.md) <br/> |
 |dispidIsIPFax  <br/> |[PidLidIsInterpersonalFax](pidlidisinterpersonalfax-canonical-property.md) <br/> |
-|dispidlinkedtaskitems  <br/> |[PidLidLinkedTaskItems](pidlidlinkedtaskitems-canonical-property.md) <br/> |
-|dispidlocation  <br/> |[PidLidLocation](pidlidlocation-canonical-property.md) <br/> |
-|dispidlogdocposted  <br/> |[PidLidLogDocumentPosted](pidlidlogdocumentposted-canonical-property.md) <br/> |
-|dispidlogdocprinted 印刷  <br/> |[PidLidLogDocumentPrinted](pidlidlogdocumentprinted-canonical-property.md) <br/> |
-|dispidlogdocrouted  <br/> |[PidLidLogDocumentRouted](pidlidlogdocumentrouted-canonical-property.md) <br/> |
-|dispidlogdocsaved  <br/> |[PidLidLogDocumentSaved](pidlidlogdocumentsaved-canonical-property.md) <br/> |
-|dispidlogduration  <br/> |[PidLidLogDuration](pidlidlogduration-canonical-property.md) <br/> |
-|dispidlogend  <br/> |[PidLidLogEnd](pidlidlogend-canonical-property.md) <br/> |
-|dispidlogflags  <br/> |[PidLidLogFlags](pidlidlogflags-canonical-property.md) <br/> |
-|dispidlogstart  <br/> |[PidLidLogStart](pidlidlogstart-canonical-property.md) <br/> |
-|dispidlogtype  <br/> |[PidLidLogType](pidlidlogtype-canonical-property.md) <br/> |
-|dispidlogtypedesc  <br/> |[PidLidLogTypeDesc](pidlidlogtypedesc-canonical-property.md) <br/> |
-|dispid会議の種類  <br/> |[PidLidMeetingType](pidlidmeetingtype-canonical-property.md) <br/> |
-|dispidmileage  <br/> |[PidLidMileage](pidlidmileage-canonical-property.md) <br/> |
-|dispidmwsurl  <br/> |[PidLidMeetingWorkspaceUrl](pidlidmeetingworkspaceurl-canonical-property.md) <br/> |
-|dispidnonsendablebcc  <br/> |[PidLidNonSendableBcc](pidlidnonsendablebcc-canonical-property.md) <br/> |
-|dispidnonsendablecc  <br/> |[PidLidNonSendableCc](pidlidnonsendablecc-canonical-property.md) <br/> |
+|dispidLinkedTaskItems  <br/> |[PidLidLinkedTaskItems](pidlidlinkedtaskitems-canonical-property.md) <br/> |
+|dispidLocation  <br/> |[PidLidLocation](pidlidlocation-canonical-property.md) <br/> |
+|dispidLogDocPosted  <br/> |[PidLidLogDocumentPosted](pidlidlogdocumentposted-canonical-property.md) <br/> |
+|dispidLogDocPrinted 印刷  <br/> |[PidLidLogDocumentPrinted](pidlidlogdocumentprinted-canonical-property.md) <br/> |
+|dispidLogDocRouted  <br/> |[PidLidLogDocumentRouted](pidlidlogdocumentrouted-canonical-property.md) <br/> |
+|dispidLogDocSaved  <br/> |[PidLidLogDocumentSaved](pidlidlogdocumentsaved-canonical-property.md) <br/> |
+|dispidLogDuration  <br/> |[PidLidLogDuration](pidlidlogduration-canonical-property.md) <br/> |
+|dispidLogEnd  <br/> |[PidLidLogEnd](pidlidlogend-canonical-property.md) <br/> |
+|dispidLogFlags  <br/> |[PidLidLogFlags](pidlidlogflags-canonical-property.md) <br/> |
+|dispidLogStart  <br/> |[PidLidLogStart](pidlidlogstart-canonical-property.md) <br/> |
+|dispidLogType  <br/> |[PidLidLogType](pidlidlogtype-canonical-property.md) <br/> |
+|dispidLogTypeDesc  <br/> |[PidLidLogTypeDesc](pidlidlogtypedesc-canonical-property.md) <br/> |
+|Dispid会議の種類  <br/> |[PidLidMeetingType](pidlidmeetingtype-canonical-property.md) <br/> |
+|dispidMileage  <br/> |[PidLidMileage](pidlidmileage-canonical-property.md) <br/> |
+|dispidMWSURL  <br/> |[PidLidMeetingWorkspaceUrl](pidlidmeetingworkspaceurl-canonical-property.md) <br/> |
+|dispidNonSendableBCC  <br/> |[PidLidNonSendableBcc](pidlidnonsendablebcc-canonical-property.md) <br/> |
+|dispidNonSendableCC  <br/> |[PidLidNonSendableCc](pidlidnonsendablecc-canonical-property.md) <br/> |
 |dispidNonSendableTo  <br/> |[PidLidNonSendableTo](pidlidnonsendableto-canonical-property.md) <br/> |
 |dispidNonSendBccTrackStatus  <br/> |[PidLidNonSendBccTrackStatus](pidlidnonsendablebcctrackstatus-canonical-property.md) <br/> |
-|dispidnonsendcctrackstatus  <br/> |[PidLidNonSendCcTrackStatus](pidlidnonsendcctrackstatus-canonical-property.md) <br/> |
-|dispidnonsendtotrackstatus  <br/> |[PidLidNonSendToTrackStatus](pidlidnonsendtotrackstatus-canonical-property.md) <br/> |
+|dispidNonSendCcTrackStatus  <br/> |[PidLidNonSendCcTrackStatus](pidlidnonsendcctrackstatus-canonical-property.md) <br/> |
+|dispidNonSendToTrackStatus  <br/> |[PidLidNonSendToTrackStatus](pidlidnonsendtotrackstatus-canonical-property.md) <br/> |
 |dispidNoteColor  <br/> |[PidLidNoteColor](pidlidnotecolor-canonical-property.md) <br/> |
-|dispid脚注の高さ  <br/> |[PidLidNoteHeight](pidlidnoteheight-canonical-property.md) <br/> |
-|dispid脚注の幅  <br/> |[PidLidNoteWidth](pidlidnotewidth-canonical-property.md) <br/> |
-|dispidnotex  <br/> |[PidLidNoteX](pidlidnotex-canonical-property.md) <br/> |
-|dispid注 y  <br/> |[PidLidNoteY](pidlidnotey-canonical-property.md) <br/> |
+|Dispid脚注の高さ  <br/> |[PidLidNoteHeight](pidlidnoteheight-canonical-property.md) <br/> |
+|Dispid脚注の幅  <br/> |[PidLidNoteWidth](pidlidnotewidth-canonical-property.md) <br/> |
+|dispidNoteX  <br/> |[PidLidNoteX](pidlidnotex-canonical-property.md) <br/> |
+|Dispid注 y  <br/> |[PidLidNoteY](pidlidnotey-canonical-property.md) <br/> |
 |dispidOfflineStatus  <br/> |[PidLidOfflineStatus](pidlidofflinestatus-canonical-property.md) <br/> |
-|dispidoldlocation  <br/> |[PidLidOldLocation](pidlidoldlocation-canonical-property.md) <br/> |
-|dispidoldwhenendwhole  <br/> |[PidLidOldWhenEndWhole](pidlidoldwhenendwhole-canonical-property.md) <br/> |
-|dispidoldwhenstartwhole  <br/> |[PidLidOldWhenStartWhole](pidlidoldwhenstartwhole-canonical-property.md) <br/> |
+|dispidOldLocation  <br/> |[PidLidOldLocation](pidlidoldlocation-canonical-property.md) <br/> |
+|dispidOldWhenEndWhole  <br/> |[PidLidOldWhenEndWhole](pidlidoldwhenendwhole-canonical-property.md) <br/> |
+|dispidOldWhenStartWhole  <br/> |[PidLidOldWhenStartWhole](pidlidoldwhenstartwhole-canonical-property.md) <br/> |
 |dispidOrigStoreEid  <br/> |[PidLidOriginalStoreEntryId](pidlidoriginalstoreentryid-canonical-property.md) <br/> |
 |dispidOtherAddress  <br/> |[PidLidOtherAddress](pidlidotheraddress-canonical-property.md) <br/> |
 |dispidOtherAddressCountryCode  <br/> |[PidLidOtherAddressCountryCode](pidlidotheraddresscountrycode-canonical-property.md) <br/> |
-|dispidpercentcomplete 率  <br/> |[PidLidPercentComplete](pidlidpercentcomplete-canonical-property.md) <br/> |
+|dispidPercentComplete 率  <br/> |[PidLidPercentComplete](pidlidpercentcomplete-canonical-property.md) <br/> |
 |dispidPostalAddressId  <br/> |[PidLidPostalAddressId](pidlidpostaladdressid-canonical-property.md) <br/> |
-|dispidpostrsschannel  <br/> |[PidLidPostRssChannel](pidlidpostrsschannel-canonical-property.md) <br/> |
+|dispidPostRssChannel  <br/> |[PidLidPostRssChannel](pidlidpostrsschannel-canonical-property.md) <br/> |
 |dispidPostRssChannelLink  <br/> |[PidLidPostRssChannelLink](pidlidpostrsschannellink-canonical-property.md) <br/> |
-|dispidprivate  <br/> |[PidLidPrivate](pidlidprivate-canonical-property.md) <br/> |
-|dispidpropdefstream  <br/> |[PidLidPropertyDefinitionStream](pidlidpropertydefinitionstream-canonical-property.md) <br/> |
-|dispidrecalltime  <br/> |[PidLidRecallTime](pidlidrecalltime-canonical-property.md) <br/> |
+|dispidPrivate  <br/> |[PidLidPrivate](pidlidprivate-canonical-property.md) <br/> |
+|dispidPropDefStream  <br/> |[PidLidPropertyDefinitionStream](pidlidpropertydefinitionstream-canonical-property.md) <br/> |
+|dispidRecallTime  <br/> |[PidLidRecallTime](pidlidrecalltime-canonical-property.md) <br/> |
 |dispidRecurPattern  <br/> |[PidLidRecurrencePattern](pidlidrecurrencepattern-canonical-property.md) <br/> |
-|dispidrecurring  <br/> |[PidLidRecurring](pidlidrecurring-canonical-property.md) <br/> |
+|dispidRecurring  <br/> |[PidLidRecurring](pidlidrecurring-canonical-property.md) <br/> |
 |dispidRecurType  <br/> |[PidLidRecurrenceType](pidlidrecurrencetype-canonical-property.md) <br/> |
 |dispidReferenceEID  <br/> |[PidLidReferenceEntryId](pidlidreferenceentryid-canonical-property.md) <br/> |
 |dispidReminderDelta  <br/> |[PidLidReminderDelta](pidlidreminderdelta-canonical-property.md) <br/> |
@@ -211,68 +211,68 @@ ms.locfileid: "32357667"
 |dispidReminderPlaySound  <br/> |[PidLidReminderPlaySound](pidlidreminderplaysound-canonical-property.md) <br/> |
 |dispidReminderSet  <br/> |[PidLidReminderSet](pidlidreminderset-canonical-property.md) <br/> |
 |dispidReminderTime  <br/> |[PidLidReminderTime](pidlidremindertime-canonical-property.md) <br/> |
-|dispidremoteattachment  <br/> |[PidLidRemoteAttachment](pidlidremoteattachment-canonical-property.md) <br/> |
-|dispidremoteeid  <br/> |[PidLidRemoteEntryId](pidlidremoteentryid-canonical-property.md) <br/> |
+|dispidRemoteAttachment  <br/> |[PidLidRemoteAttachment](pidlidremoteattachment-canonical-property.md) <br/> |
+|dispidRemoteEID  <br/> |[PidLidRemoteEntryId](pidlidremoteentryid-canonical-property.md) <br/> |
 |dispidRemoteMsgClass  <br/> |[PidLidRemoteMessageClass](pidlidremotemessageclass-canonical-property.md) <br/> |
-|dispidremotesearchkey  <br/> |[PidLidRemoteSearchKey](pidlidremotesearchkey-canonical-property.md) <br/> |
-|dispidremotexフェリーサイズ  <br/> |[PidLidRemoteTransferSize](pidlidremotetransfersize-canonical-property.md) <br/> |
-|dispidremotexの時間  <br/> |[PidLidRemoteTransferTime](pidlidremotetransfertime-canonical-property.md) <br/> |
-|dispidremotexp  <br/> |[PidLidRemoteTransport](pidlidremotetransport-canonical-property.md) <br/> |
-|dispidrequest  <br/> |[PidLidFlagRequest](pidlidflagrequest-canonical-property.md) <br/> |
-|dispidresendtime  <br/> |[PidLidResendTime](pidlidresendtime-canonical-property.md) <br/> |
-|dispidresponsestatus  <br/> |[PidLidResponseStatus](pidlidresponsestatus-canonical-property.md) <br/> |
+|dispidRemoteSearchKey  <br/> |[PidLidRemoteSearchKey](pidlidremotesearchkey-canonical-property.md) <br/> |
+|Dispidremotexフェリーサイズ  <br/> |[PidLidRemoteTransferSize](pidlidremotetransfersize-canonical-property.md) <br/> |
+|Dispidremotexの時間  <br/> |[PidLidRemoteTransferTime](pidlidremotetransfertime-canonical-property.md) <br/> |
+|dispidRemoteXP  <br/> |[PidLidRemoteTransport](pidlidremotetransport-canonical-property.md) <br/> |
+|dispidRequest  <br/> |[PidLidFlagRequest](pidlidflagrequest-canonical-property.md) <br/> |
+|dispidResendTime  <br/> |[PidLidResendTime](pidlidresendtime-canonical-property.md) <br/> |
+|dispidResponseStatus  <br/> |[PidLidResponseStatus](pidlidresponsestatus-canonical-property.md) <br/> |
 |dispidSendMtgAsICAL  <br/> |[PidLidSendMeetingAsIcal](pidlidsendmeetingasical-canonical-property.md) <br/> |
-|dispidsharingcaps  <br/> |[PidLidSharingCapabilities](pidlidsharingcapabilities-canonical-property.md) <br/> |
-|dispidsharingの種類 l  <br/> |[PidLidSharingConfigurationUrl](pidlidsharingconfigurationurl-canonical-property.md) <br/> |
-|dispidsharingflavor  <br/> |[PidLidSharingFlavor](pidlidsharingflavor-canonical-property.md) <br/> |
+|dispidSharingCaps  <br/> |[PidLidSharingCapabilities](pidlidsharingcapabilities-canonical-property.md) <br/> |
+|Dispidsharingの種類 l  <br/> |[PidLidSharingConfigurationUrl](pidlidsharingconfigurationurl-canonical-property.md) <br/> |
+|dispidSharingFlavor  <br/> |[PidLidSharingFlavor](pidlidsharingflavor-canonical-property.md) <br/> |
 |dispidSharingInitiatorEid  <br/> |[PidLidSharingInitiatorEntryId](pidlidsharinginitiatorentryid-canonical-property.md) <br/> |
 |dispidSharingInitiatorName  <br/> |[PidLidSharingInitiatorName](pidlidsharinginitiatorname-canonical-property.md) <br/> |
 |dispidSharingInitiatorSmtp  <br/> |[PidLidSharingInitiatorSmtp](pidlidsharinginitiatorsmtp-canonical-property.md) <br/> |
-|dispidsharinglocaltype  <br/> |[PidLidSharingLocalType](pidlidsharinglocaltype-canonical-property.md) <br/> |
-|dispidsharingproviderguid  <br/> |[PidLidSharingProviderGuid](pidlidsharingproviderguid-canonical-property.md) <br/> |
-|dispidsharingprovidername  <br/> |[PidLidSharingProviderName](pidlidsharingprovidername-canonical-property.md) <br/> |
+|dispidSharingLocalType  <br/> |[PidLidSharingLocalType](pidlidsharinglocaltype-canonical-property.md) <br/> |
+|dispidSharingProviderGuid  <br/> |[PidLidSharingProviderGuid](pidlidsharingproviderguid-canonical-property.md) <br/> |
+|dispidSharingProviderName  <br/> |[PidLidSharingProviderName](pidlidsharingprovidername-canonical-property.md) <br/> |
 |dispidSharingProviderUrl  <br/> |[PidLidSharingProviderUrl](pidlidsharingproviderurl-canonical-property.md) <br/> |
 |dispidSharingRemoteName  <br/> |[PidLidSharingRemoteName](pidlidsharingremotename-canonical-property.md) <br/> |
 |dispidSharingRemoteStoreUid  <br/> |[PidLidSharingRemoteStoreUid](pidlidsharingremotestoreuid-canonical-property.md) <br/> |
-|dispidsharingremotetype  <br/> |[PidLidSharingRemoteType](pidlidsharingremotetype-canonical-property.md) <br/> |
-|dispidsharingremoteuid  <br/> |[PidLidSharingRemoteUid](pidlidsharingremoteuid-canonical-property.md) <br/> |
+|dispidSharingRemoteType  <br/> |[PidLidSharingRemoteType](pidlidsharingremotetype-canonical-property.md) <br/> |
+|dispidSharingRemoteUid  <br/> |[PidLidSharingRemoteUid](pidlidsharingremoteuid-canonical-property.md) <br/> |
 |dispidSharingResponseTime  <br/> |[PidLidSharingResponseTime](pidlidsharingresponsetime-canonical-property.md) <br/> |
-|dispidsharingresponsetype  <br/> |[PidLidSharingResponseType](pidlidsharingresponsetype-canonical-property.md) <br/> |
-|dispidsideeffects  <br/> |[PidLidSideEffects](pidlidsideeffects-canonical-property.md) <br/> |
-|dispidsmartnoattach  <br/> |[PidLidSmartNoAttach](pidlidsmartnoattach-canonical-property.md) <br/> |
+|dispidSharingResponseType  <br/> |[PidLidSharingResponseType](pidlidsharingresponsetype-canonical-property.md) <br/> |
+|dispidSideEffects  <br/> |[PidLidSideEffects](pidlidsideeffects-canonical-property.md) <br/> |
+|dispidSmartNoAttach  <br/> |[PidLidSmartNoAttach](pidlidsmartnoattach-canonical-property.md) <br/> |
 |dispidSniffState  <br/> |[PidLidAutoProcessState](pidlidautoprocessstate-canonical-property.md) <br/> |
 |dispidSpamOriginalFolder  <br/> |[PidLidSpamOriginalFolder](pidlidspamoriginalfolder-canonical-property.md) <br/> |
-|dispidtaskaccepted  <br/> |[PidLidTaskAccepted](pidlidtaskaccepted-canonical-property.md) <br/> |
-|dispidtaskactualeffort  <br/> |[PidLidTaskActualEffort](pidlidtaskactualeffort-canonical-property.md) <br/> |
-|dispidtaskcomplete  <br/> |[PidLidTaskComplete](pidlidtaskcomplete-canonical-property.md) <br/> |
+|dispidTaskAccepted  <br/> |[PidLidTaskAccepted](pidlidtaskaccepted-canonical-property.md) <br/> |
+|dispidTaskActualEffort  <br/> |[PidLidTaskActualEffort](pidlidtaskactualeffort-canonical-property.md) <br/> |
+|dispidTaskComplete  <br/> |[PidLidTaskComplete](pidlidtaskcomplete-canonical-property.md) <br/> |
 |dispidTaskDateCompleted  <br/> |[PidLidTaskDateCompleted](pidlidtaskdatecompleted-canonical-property.md) <br/> |
 |dispidTaskDeadOccur  <br/> |[PidLidTaskDeadOccurrence](pidlidtaskdeadoccurrence-canonical-property.md) <br/> |
 |dispidTaskDelegator  <br/> |[PidLidTaskAssigner](pidlidtaskassigner-canonical-property.md) <br/> |
 |dispidTaskDelegValue  <br/> |[PidLidTaskAcceptanceState](pidlidtaskacceptancestate-canonical-property.md) <br/> |
 |dispidTaskDueDate  <br/> |[PidLidTaskDueDate](pidlidtaskduedate-canonical-property.md) <br/> |
 |dispidTaskEstimatedEffort  <br/> |[PidLidTaskEstimatedEffort](pidlidtaskestimatedeffort-canonical-property.md) <br/> |
-|dispidtaskfcreator  <br/> |[PidLidTaskFCreator](pidlidtaskfcreator-canonical-property.md) <br/> |
-|dispidtaskffixoffline  <br/> |[PidLidTaskFFixOffline](pidlidtaskffixoffline-canonical-property.md) <br/> |
-|dispidtaskfrecur  <br/> |[PidLidTaskFRecurring](pidlidtaskfrecurring-canonical-property.md) <br/> |
-|dispidtaskglobalobjid  <br/> |[PidLidTaskGlobalId](pidlidtaskglobalid-canonical-property.md) <br/> |
+|dispidTaskFCreator  <br/> |[PidLidTaskFCreator](pidlidtaskfcreator-canonical-property.md) <br/> |
+|dispidTaskFFixOffline  <br/> |[PidLidTaskFFixOffline](pidlidtaskffixoffline-canonical-property.md) <br/> |
+|dispidTaskFRecur  <br/> |[PidLidTaskFRecurring](pidlidtaskfrecurring-canonical-property.md) <br/> |
+|dispidTaskGlobalObjId  <br/> |[PidLidTaskGlobalId](pidlidtaskglobalid-canonical-property.md) <br/> |
 |dispidTaskHistory  <br/> |[PidLidTaskHistory](pidlidtaskhistory-canonical-property.md) <br/> |
-|dispidtasklastdelegate  <br/> |[PidLidTaskLastDelegate](pidlidtasklastdelegate-canonical-property.md) <br/> |
-|dispidtasklastupdate  <br/> |[PidLidTaskLastUpdate](pidlidtasklastupdate-canonical-property.md) <br/> |
-|dispidtasklastuser  <br/> |[PidLidTaskLastUser](pidlidtasklastuser-canonical-property.md) <br/> |
-|dispidtaskmode  <br/> |[PidLidTaskMode](pidlidtaskmode-canonical-property.md) <br/> |
+|dispidTaskLastDelegate  <br/> |[PidLidTaskLastDelegate](pidlidtasklastdelegate-canonical-property.md) <br/> |
+|dispidTaskLastUpdate  <br/> |[PidLidTaskLastUpdate](pidlidtasklastupdate-canonical-property.md) <br/> |
+|dispidTaskLastUser  <br/> |[PidLidTaskLastUser](pidlidtasklastuser-canonical-property.md) <br/> |
+|dispidTaskMode  <br/> |[PidLidTaskMode](pidlidtaskmode-canonical-property.md) <br/> |
 |dispidTaskMultRecips  <br/> |[PidLidTaskMultipleRecipients](pidlidtaskmultiplerecipients-canonical-property.md) <br/> |
 |dispidTaskMyDelegators  <br/> |[PidLidTaskAssigners](pidlidtaskassigners-canonical-property.md) <br/> |
-|dispidtaskordinal  <br/> |[PidLidTaskOrdinal](pidlidtaskordinal-canonical-property.md) <br/> |
-|dispidtaskowner  <br/> |[PidLidTaskOwner](pidlidtaskowner-canonical-property.md) <br/> |
-|dispidtaskownership 所有権  <br/> |[PidLidTaskOwnership](pidlidtaskownership-canonical-property.md) <br/> |
-|dispidtaskrecur  <br/> |[PidLidTaskRecurrence](pidlidtaskrecurrence-canonical-property.md) <br/> |
-|dispidtaskresetreminder  <br/> |[PidLidTaskResetReminder](pidlidtaskresetreminder-canonical-property.md) <br/> |
-|dispidtasksoc  <br/> |[PidLidTaskStatusOnComplete](pidlidtaskstatusoncomplete-canonical-property.md) <br/> |
-|dispidtaskstartdate  <br/> |[PidLidTaskStartDate](pidlidtaskstartdate-canonical-property.md) <br/> |
-|dispidtaskstate  <br/> |[PidLidTaskState](pidlidtaskstate-canonical-property.md) <br/> |
-|dispidtaskstatus  <br/> |[PidLidTaskStatus](pidlidtaskstatus-canonical-property.md) <br/> |
-|dispidtaskupdates  <br/> |[PidLidTaskUpdates](pidlidtaskupdates-canonical-property.md) <br/> |
-|dispidtaskversion  <br/> |[PidLidTaskVersion](pidlidtaskversion-canonical-property.md) <br/> |
+|dispidTaskOrdinal  <br/> |[PidLidTaskOrdinal](pidlidtaskordinal-canonical-property.md) <br/> |
+|dispidTaskOwner  <br/> |[PidLidTaskOwner](pidlidtaskowner-canonical-property.md) <br/> |
+|dispidTaskOwnership 所有権  <br/> |[PidLidTaskOwnership](pidlidtaskownership-canonical-property.md) <br/> |
+|dispidTaskRecur  <br/> |[PidLidTaskRecurrence](pidlidtaskrecurrence-canonical-property.md) <br/> |
+|dispidTaskResetReminder  <br/> |[PidLidTaskResetReminder](pidlidtaskresetreminder-canonical-property.md) <br/> |
+|dispidTaskSOC  <br/> |[PidLidTaskStatusOnComplete](pidlidtaskstatusoncomplete-canonical-property.md) <br/> |
+|dispidTaskStartDate  <br/> |[PidLidTaskStartDate](pidlidtaskstartdate-canonical-property.md) <br/> |
+|dispidTaskState  <br/> |[PidLidTaskState](pidlidtaskstate-canonical-property.md) <br/> |
+|dispidTaskStatus  <br/> |[PidLidTaskStatus](pidlidtaskstatus-canonical-property.md) <br/> |
+|dispidTaskUpdates  <br/> |[PidLidTaskUpdates](pidlidtaskupdates-canonical-property.md) <br/> |
+|dispidTaskVersion  <br/> |[PidLidTaskVersion](pidlidtaskversion-canonical-property.md) <br/> |
 |dispidTimeZoneDesc  <br/> |[PidLidTimeZoneDescription](pidlidtimezonedescription-canonical-property.md) <br/> |
 |dispidTimeZoneStruct  <br/> |[PidLidTimeZoneStruct](pidlidtimezonestruct-canonical-property.md) <br/> |
 |dispidToAttendeesString  <br/> |[PidLidToAttendeesString](pidlidtoattendeesstring-canonical-property.md) <br/> |
@@ -280,19 +280,19 @@ ms.locfileid: "32357667"
 |dispidToDoSubOrdinal  <br/> |[PidLidToDoSubOrdinal](pidlidtodosubordinal-canonical-property.md) <br/> |
 |dispidToDoTitle  <br/> |[PidLidToDoTitle](pidlidtodotitle-canonical-property.md) <br/> |
 |dispidUseTNEF  <br/> |[PidLidUseTnef](pidlidusetnef-canonical-property.md) <br/> |
-|dispidvalidflagstringproof  <br/> |[PidLidValidFlagStringProof](pidlidvalidflagstringproof-canonical-property.md) <br/> |
+|dispidValidFlagStringProof  <br/> |[PidLidValidFlagStringProof](pidlidvalidflagstringproof-canonical-property.md) <br/> |
 |dispidVerbResponse  <br/> |[PidLidVerbResponse](pidlidverbresponse-canonical-property.md) <br/> |
 |dispidVerbStream  <br/> |[PidLidVerbStream](pidlidverbstream-canonical-property.md) <br/> |
-|dispidwork アドレス  <br/> |[PidLidWorkAddress](pidlidworkaddress-canonical-property.md) <br/> |
+|Dispidwork アドレス  <br/> |[PidLidWorkAddress](pidlidworkaddress-canonical-property.md) <br/> |
 |dispidwork addresscdisp  <br/> |[PidLidWorkAddressCity](pidlidworkaddresscity-canonical-property.md) <br/> |
-|dispidwork addresscountry  <br/> |[PidLidWorkAddressCountry](pidlidworkaddresscountry-canonical-property.md) <br/> |
+|Dispidwork Addresscountry  <br/> |[PidLidWorkAddressCountry](pidlidworkaddresscountry-canonical-property.md) <br/> |
 |dispidWorkAddressCountryCode  <br/> |[PidLidWorkAddressCountryCode](pidlidworkaddresscountrycode-canonical-property.md) <br/> |
 |dispidWorkAddressPostalCode  <br/> |[PidLidWorkAddressPostalCode](pidlidworkaddresspostalcode-canonical-property.md) <br/> |
 |dispidWorkAddressPostOfficeBox  <br/> |[PidLidWorkAddressPostOfficeBox](pidlidworkaddresspostofficebox-canonical-property.md) <br/> |
-|dispidwork addressstate  <br/> |[PidLidWorkAddressState](pidlidworkaddressstate-canonical-property.md) <br/> |
-|dispidwork addressストリート  <br/> |[PidLidWorkAddressStreet](pidlidworkaddressstreet-canonical-property.md) <br/> |
+|Dispidwork Addressstate  <br/> |[PidLidWorkAddressState](pidlidworkaddressstate-canonical-property.md) <br/> |
+|Dispidwork Addressストリート  <br/> |[PidLidWorkAddressStreet](pidlidworkaddressstreet-canonical-property.md) <br/> |
 |dispidYomiCompanyName  <br/> |[PidLidYomiCompanyName](pidlidyomicompanyname-canonical-property.md) <br/> |
-|dispidヨーク mifirstname  <br/> |[PidLidYomiFirstName](pidlidyomifirstname-canonical-property.md) <br/> |
+|Dispidヨーク Mifirstname  <br/> |[PidLidYomiFirstName](pidlidyomifirstname-canonical-property.md) <br/> |
 |dispidYomiLastName  <br/> |[PidLidYomiLastName](pidlidyomilastname-canonical-property.md) <br/> |
 |LID_ATTENDEE_CRITICAL_CHANGE  <br/> |[PidLidAttendeeCriticalChange](pidlidattendeecriticalchange-canonical-property.md) <br/> |
 |LID_CALENDAR_TYPE  <br/> |[PidLidCalendarType](pidlidcalendartype-canonical-property.md) <br/> |
@@ -310,36 +310,36 @@ ms.locfileid: "32357667"
 |:-----|:-----|
 |Accept-Language  <br/> |[PidNameAcceptLanguage](pidnameacceptlanguage-canonical-property.md) <br/> |
 |AppName  <br/> |[PidNameApplicationName](pidnameapplicationname-canonical-property.md) <br/> |
-|attachmentmaccontenttype  <br/> |[PidNameAttachmentMacContentType](pidnameattachmentmaccontenttype-canonical-property.md) <br/> |
-|attachmentmacinfo  <br/> |[PidNameAttachmentMacInfo](pidnameattachmentmacinfo-canonical-property.md) <br/> |
+|AttachmentMacContentType  <br/> |[PidNameAttachmentMacContentType](pidnameattachmentmaccontenttype-canonical-property.md) <br/> |
+|AttachmentMacInfo  <br/> |[PidNameAttachmentMacInfo](pidnameattachmentmacinfo-canonical-property.md) <br/> |
 |設定元  <br/> |[PidNameAuthor](pidnameauthor-canonical-property.md) <br/> |
 |ByteCount  <br/> |[PidNameByteCount](pidnamebytecount-canonical-property.md) <br/> |
 |カテゴリ  <br/> |[PidNameCategory](pidnamecategory-canonical-property.md) <br/> |
 |CharCount  <br/> |[PidNameCharacterCount](pidnamecharactercount-canonical-property.md) <br/> |
-|注釈  <br/> |[PidNameComments](pidnamecomments-canonical-property.md) <br/> |
-|会社名  <br/> |[PidNameCompany](pidnamecompany-canonical-property.md) <br/> |
+|Comments  <br/> |[PidNameComments](pidnamecomments-canonical-property.md) <br/> |
+|Company  <br/> |[PidNameCompany](pidnamecompany-canonical-property.md) <br/> |
 |コンテンツベース  <br/> |[PidNameContentBase](pidnamecontentbase-canonical-property.md) <br/> |
 |コンテンツクラス  <br/> |[PidNameContentClass](pidnamecontentclass-canonical-property.md) <br/> |
 |Content-Transfer-Encoding  <br/> |[PidNameContentTransferEncoding](pidnamecontenttransferencoding-canonical-property.md) <br/> |
 |Content-Type  <br/> |[PidNameContentType](pidnamecontenttype-canonical-property.md) <br/> |
-|createdtmro  <br/> |[PidNameCreateDateTimeReadOnly](pidnamecreatedatetimereadonly-canonical-property.md) <br/> |
-|drmlicense  <br/> |[PidNameRightsManagementLicense](pidnamerightsmanagementlicense-canonical-property.md) <br/> |
+|CreateDtmRo  <br/> |[PidNameCreateDateTimeReadOnly](pidnamecreatedatetimereadonly-canonical-property.md) <br/> |
+|DRMLicense  <br/> |[PidNameRightsManagementLicense](pidnamerightsmanagementlicense-canonical-property.md) <br/> |
 |EditTime  <br/> |[PidNameEditTime](pidnameedittime-canonical-property.md) <br/> |
 |HiddenCount  <br/> |[PidNameHiddenCount](pidnamehiddencount-canonical-property.md) <br/> |
-|https://schemas.microsoft.com/exchange/junkemailmovestamp  <br/> |[PidNameExchangeJunkEmailMoveStamp](pidnameexchangejunkemailmovestamp-canonical-property.md) <br/> |
-|https://schemas.microsoft.com/outlook/phishingstamp  <br/> |[PidNameOutlookPhishingstamp](pidnamephishingstamp-canonical-property.md) <br/> |
+|http://schemas.microsoft.com/exchange/junkemailmovestamp  <br/> |[PidNameExchangeJunkEmailMoveStamp](pidnameexchangejunkemailmovestamp-canonical-property.md) <br/> |
+|http://schemas.microsoft.com/outlook/phishingstamp  <br/> |[PidNameOutlookPhishingstamp](pidnamephishingstamp-canonical-property.md) <br/> |
 |キーワード  <br/> |[PidNameKeywords](pidnamekeywords-canonical-property.md) <br/> |
 |LastAuthor  <br/> |[PidNameLastAuthor](pidnamelastauthor-canonical-property.md) <br/> |
-|lastprinted  <br/> |[PidNameLastPrinted](pidnamelastprinted-canonical-property.md) <br/> |
-|lastsavedtm  <br/> |[PidNameLastSaveDateTime](pidnamelastsavedatetime-canonical-property.md) <br/> |
+|LastPrinted  <br/> |[PidNameLastPrinted](pidnamelastprinted-canonical-property.md) <br/> |
+|LastSaveDtm  <br/> |[PidNameLastSaveDateTime](pidnamelastsavedatetime-canonical-property.md) <br/> |
 |LineCount  <br/> |[PidNameLineCount](pidnamelinecount-canonical-property.md) <br/> |
 |Manager  <br/> |[PidNameManager](pidnamemanager-canonical-property.md) <br/> |
-|mmclipcount  <br/> |[PidNameMultimediaClipCount](pidnamemultimediaclipcount-canonical-property.md) <br/> |
-|notecount  <br/> |[PidNameNoteCount](pidnamenotecount-canonical-property.md) <br/> |
+|MMClipCount  <br/> |[PidNameMultimediaClipCount](pidnamemultimediaclipcount-canonical-property.md) <br/> |
+|NoteCount  <br/> |[PidNameNoteCount](pidnamenotecount-canonical-property.md) <br/> |
 |PageCount  <br/> |[PidNamePageCount](pidnamepagecount-canonical-property.md) <br/> |
-|parcount  <br/> |[PidNameParagraphCount](pidnameparagraphcount-canonical-property.md) <br/> |
-|presformat  <br/> |[PidNamePresentationFormat](pidnamepresentationformat-canonical-property.md) <br/> |
-|revnumber  <br/> |[PidNameRevisionNumber](pidnamerevisionnumber-canonical-property.md) <br/> |
+|ParCount  <br/> |[PidNameParagraphCount](pidnameparagraphcount-canonical-property.md) <br/> |
+|PresFormat  <br/> |[PidNamePresentationFormat](pidnamepresentationformat-canonical-property.md) <br/> |
+|RevNumber  <br/> |[PidNameRevisionNumber](pidnamerevisionnumber-canonical-property.md) <br/> |
 |セキュリティ  <br/> |[PidNameSecurity](pidnamesecurity-canonical-property.md) <br/> |
 |SlideCount  <br/> |[PidNameSlideCount](pidnameslidecount-canonical-property.md) <br/> |
 |件名  <br/> |[PidNameSubject](pidnamesubject-canonical-property.md) <br/> |

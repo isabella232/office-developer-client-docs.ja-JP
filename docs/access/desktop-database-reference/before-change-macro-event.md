@@ -13,12 +13,12 @@ dev_langs:
 f1_categories:
 - Office.Version=v15
 localization_priority: Normal
-ms.openlocfilehash: b37fb96ddfeaabc97c6f445f8951876e8026fbfe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a180068e805ae11883822ebf26f924e10d34bac5
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296858"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538117"
 ---
 # <a name="before-change-macro-event"></a>Before Change マクロ イベント
 
@@ -33,7 +33,7 @@ The **Before Change** event occurs when a record changes, but before the change 
 
 Before Change イベントでは、レコードの変更を確定する前に特定のアクションを実行します。通常は、検証の実行やカスタム エラー メッセージの生成を行います。
 
-**Updated ("*Field Name*")** 関数を使用して、フィールドが変更されたかどうかを調べることができます。 次のコード例は、 **if**ステートメントを使用して、paidinfull フィールドが変更されているかどうかを判断する方法を示しています。
+**Updated("*フィールド名*")** 関数を使用すると、フィールドが変更されているかどうかを判断できます。 次のコード例は、 **if**ステートメントを使用して、PaidInFull フィールドが変更されているかどうかを判断する方法を示しています。
 
 ```vb
     If  Updated("PaidInFull")   Then 
@@ -85,7 +85,7 @@ Before Change イベントで使用できるマクロ コマンドは次のと�
 <thead>
 <tr class="header">
 <th><p>コマンドの種類</p></th>
-<th><p>Command</p></th>
+<th><p>コマンド</p></th>
 </tr>
 </thead>
 <tbody>
@@ -185,7 +185,7 @@ End If
 
 
 ```xml
-<DataMacros xmlns="https://schemas.microsoft.com/office/accessservices/2009/04/application"> 
+<DataMacros xmlns="http://schemas.microsoft.com/office/accessservices/2009/04/application"> 
   <DataMacro Event="BeforeChange"> 
     <Statements> 
       <Comment>Check to ensure that if the bug is resloved that the user has selected a resolution </Comment> 

@@ -1,5 +1,5 @@
 ---
-title: フッターの margin 要素 (HeaderFooter_Type complexType) (' Visio XML ')
+title: フッターの Margin 要素 (HeaderFooter_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 047f42cf-4202-50bd-40b4-a71052e2dfb3
 description: 文書のフッターの余白を指定します。
-ms.openlocfilehash: f0c2b8ab1cc7bd1465af3281dfb51766ecba5d8c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 5a147dbb8b94d9077836cb2269dd2ff72dae3b3a
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346061"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538663"
 ---
-# <a name="footermargin-element-headerfootertype-complextype-visio-xml"></a>フッターの margin 要素 (HeaderFooter_Type complexType) (' Visio XML ')
+# <a name="footermargin-element-headerfootertype-complextype-visio-xml"></a>フッターの Margin 要素 (HeaderFooter_Type complexType) (Visio XML)
 
 文書のフッターの余白を指定します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32346061"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[FooterMargin_Type](footermargin_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |文書の xml  <br/> |
    
@@ -52,6 +52,6 @@ ms.locfileid: "32346061"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|単位  <br/> |xsd: string  <br/> |省略可能  <br/> |測定単位を表します。 既定では、に設定されています。  <br/> |xsd: string 型の値。  <br/> |
+|単位  <br/> |xsd: string  <br/> |省略可能  <br/> |測定単位を表します。 既定では、に設定されています。  <br/> |Xsd: string 型の値。  <br/> |
    
 

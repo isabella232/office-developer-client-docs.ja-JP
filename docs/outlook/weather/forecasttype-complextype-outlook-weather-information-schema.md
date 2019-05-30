@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6301d6b6-34fa-af8d-e682-605d35cfdf47
 description: 場所の天気予報の条件に関するパラメーターを定義します。
-ms.openlocfilehash: 75f20d7857fac85e1e95d23cf5ac826336648132
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: e799ebbea72daa1788aedbdcadbc523b5e4dff0d
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32361146"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540953"
 ---
 # <a name="forecasttype-complextype-outlook-weather-information-schema"></a>forecastType complexType (Outlook 天気情報スキーマ)
 
@@ -23,9 +23,9 @@ ms.locfileid: "32361146"
 
 |||
 |:-----|:-----|
-|**Namespace** <br/> |https://schemas.microsoft.com/office/outlook/15/getweatherinfo.xsd  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/outlook/15/getweatherinfo.xsd  <br/> |
 |**スキーマ ファイル** <br/> |getweatherinfo  <br/> |
-|**拡張ベース** <br/> |なし  <br/> |
+|**拡張ベース** <br/> |None  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -55,13 +55,13 @@ ms.locfileid: "32361146"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|日付  <br/> |xs: date  <br/> |必須  <br/> |予測の日付を指定します。  <br/> |xs: date 型の値  <br/> |
-|日勤  <br/> |xs: 文字列  <br/> |必須  <br/> |予測の日付を指定します。  <br/> |xs: 文字列型の値  <br/> |
-|高額  <br/> |xs: 整数  <br/> |必須  <br/> |予測最高温度を指定します。  <br/> |xs: integer 型の値  <br/> |
-|低さ  <br/> |xs: 整数  <br/> |必須  <br/> |予測される最低温度を指定します。  <br/> |xs: integer 型の値  <br/> |
-|precip  <br/> |xs: 整数  <br/> |必須  <br/> |降水のパーセンテージを指定します。  <br/> |xs: integer 型の値  <br/> |
-|短い日  <br/> |xs: 文字列  <br/> |必須  <br/> |日付を省略された形式で指定します。  <br/> |xs: 文字列型の値  <br/> |
-|skycodeday  <br/> |xs: 整数  <br/> |必須  <br/> |予測される条件のコードを指定します。  <br/> |xs: integer 型の値  <br/> |
-|skytextday  <br/> |xs: 文字列  <br/> |必須  <br/> |予測条件を説明する 1 ~ 2 単語を指定します。  <br/> |xs: 文字列型の値  <br/> |
+|date  <br/> |xs: date  <br/> |必須  <br/> |予測の日付を指定します。  <br/> |Xs: date 型の値  <br/> |
+|日勤  <br/> |xs: 文字列  <br/> |必須  <br/> |予測の日付を指定します。  <br/> |Xs: 文字列型の値  <br/> |
+|高額  <br/> |xs: 整数  <br/> |必須  <br/> |予測最高温度を指定します。  <br/> |Xs: integer 型の値  <br/> |
+|低さ  <br/> |xs: 整数  <br/> |必須  <br/> |予測される最低温度を指定します。  <br/> |Xs: integer 型の値  <br/> |
+|precip  <br/> |xs: 整数  <br/> |必須  <br/> |降水のパーセンテージを指定します。  <br/> |Xs: integer 型の値  <br/> |
+|短い日  <br/> |xs: 文字列  <br/> |必須  <br/> |日付を省略された形式で指定します。  <br/> |Xs: 文字列型の値  <br/> |
+|skycodeday  <br/> |xs: 整数  <br/> |必須  <br/> |予測される条件のコードを指定します。  <br/> |Xs: integer 型の値  <br/> |
+|skytextday  <br/> |xs: 文字列  <br/> |必須  <br/> |予測条件を説明する 1 ~ 2 単語を指定します。  <br/> |Xs: 文字列型の値  <br/> |
    
 

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7a52f46c-371c-46d0-8d66-e154482e8269
-description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 07acfd8715dccad8833ee14ac8e573fb995539ba
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: '最終更新日: 2015 年 3 月 9 日'
+ms.openlocfilehash: 098261cd71631e4816d22272e1b1bef1d5932a94
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337948"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540946"
 ---
 # <a name="pidnameexchangejunkemailmovestamp-canonical-property"></a>PidNameExchangeJunkEmailMoveStamp 標準プロパティ
 
@@ -29,13 +29,13 @@ ms.locfileid: "32337948"
   
 |||
 |:-----|:-----|
-|フレンドリ名:  <br/> |なし  <br/> |
+|フレンドリ名:  <br/> |None  <br/> |
 |プロパティセット:  <br/> |PS_PUBLIC_STRINGS  <br/> |
-|プロパティ名:  <br/> |https://schemas.microsoft.com/exchange/junkemailmovestamp  <br/> |
+|プロパティ名:  <br/> |http://schemas.microsoft.com/exchange/junkemailmovestamp  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |セキュリティで保護されたメッセージング  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティは、迷惑メールルールによって移動されるすべてのメッセージ、または信頼できるコンテンツとしてスタンプされます。
   
@@ -57,7 +57,7 @@ ms.locfileid: "32337948"
     
 ### <a name="header-files"></a>ヘッダーファイル
 
-mapidefs.h
+Mapidefs.h
   
 > データ型定義を提供します。
     

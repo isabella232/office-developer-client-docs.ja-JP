@@ -1,27 +1,27 @@
 ---
-title: DataColumns_Type complexType (' Visio XML ')
+title: DataColumns_Type complexType (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: ad003c9e-5e72-2df0-f9c5-dea20a220ab5
-ms.openlocfilehash: 6d802bf646ee87f4c96b9ce041352af3cab48a16
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: ffe0fbfeaf0b0b67386a6cadd1beb78058819d39
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344598"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34541149"
 ---
-# <a name="datacolumnstype-complextype-visio-xml"></a>DataColumns_Type complexType (' Visio XML ')
+# <a name="datacolumnstype-complextype-visio-xml"></a>DataColumns_Type complexType (Visio XML)
 
 ## <a name="type-information"></a>型情報
 
 |||
 |:-----|:-----|
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15-06-05  <br/> |
-|**拡張ベース** <br/> |なし  <br/> |
+|**拡張ベース** <br/> |None  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -60,7 +60,7 @@ ms.locfileid: "32344598"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|SortAsc  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||xsd: boolean 型の値。  <br/> |
-|SortColumn  <br/> |xsd: string  <br/> |省略可能  <br/> ||xsd: string 型の値。  <br/> |
+|SortAsc  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||Xsd: boolean 型の値。  <br/> |
+|SortColumn  <br/> |xsd: string  <br/> |省略可能  <br/> ||Xsd: string 型の値。  <br/> |
    
 

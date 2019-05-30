@@ -7,12 +7,12 @@ ms:contentKeyID: 55119887
 ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
-ms.openlocfilehash: acb6f6807f956ee6d468d3fcefc2cdd27732ab9b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: d6242506bac081ee16d125ea92fbed69939c6abc
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32320322"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34542626"
 ---
 # <a name="filter-and-display-multivalued-properties-when-enumerating-items-in-a-folder"></a>フォルダー内のアイテムの列挙時に複数値プロパティをフィルター処理して表示する
 
@@ -60,7 +60,7 @@ ms.locfileid: "32320322"
 
 次のコード例は、MAPI 文字列名前空間のプロパティを **Table** オブジェクトに追加する方法、および [Column](https://msdn.microsoft.com/library/bb609646\(v=office.15\)) オブジェクトに返される値が複数値プロパティでどのように変化するかを示します。 TableMultiValuedProperties プロシージャでは、[Categories](https://msdn.microsoft.com/library/bb646607\(v=office.15\)) プロパティが null 参照ではない行について **Table** オブジェクトをフィルター処理します。 **Categories** プロパティは MAPI 文字列名前空間を使用するプロパティで表されます。 分類項目が含まれるアイテムを処理する DAV Searching and Locating (DASL) フィルターを作成します (実際のフィルターは、null 参照ではない分類項目を返します)。 次に、型指定子 0000001f と categoriesProperty 定数を連結して、**Table** オブジェクトに **Categories** 列を追加します。 最後に、**Categories** プロパティを表す **Column** オブジェクトに 1 次元文字列配列が含まれます。この配列の各要素は、アイテムに割り当てられた分類項目を表します。 アイテムの **Categories** プロパティと **Subject** プロパティの両方を、[Listeners](https://msdn.microsoft.com/library/system.diagnostics.debug.listeners.aspx) コレクションのトレース リスナーに書き込みます。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;
@@ -71,7 +71,7 @@ using Outlook = Microsoft.Office.Interop.Outlook;
 private void TableMultiValuedProperties()
 {
     const string categoriesProperty =
-        "https://schemas.microsoft.com/mapi/string/"
+        "http://schemas.microsoft.com/mapi/string/"
         + "{00020329-0000-0000-C000-000000000046}/Keywords";
     // Inbox
     Outlook.Folder folder =

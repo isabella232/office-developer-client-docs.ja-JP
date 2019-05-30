@@ -1,27 +1,27 @@
 ---
-title: DataRecordSets_Type complexType (' Visio XML ')
+title: DataRecordSets_Type complexType (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 04448cfa-7eb4-62ca-97d2-409b59a8db90
-ms.openlocfilehash: 1705d0ea92e278008c33321f135409373b7317fd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 77a6588a1b5fba05d14e91a39ba570d21142f953
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360348"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539159"
 ---
-# <a name="datarecordsetstype-complextype-visio-xml"></a>DataRecordSets_Type complexType (' Visio XML ')
+# <a name="datarecordsetstype-complextype-visio-xml"></a>DataRecordSets_Type complexType (Visio XML)
 
 ## <a name="type-information"></a>型情報
 
 |||
 |:-----|:-----|
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15-06-05  <br/> |
-|**拡張ベース** <br/> |なし  <br/> |
+|**拡張ベース** <br/> |None  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -64,8 +64,8 @@ ms.locfileid: "32360348"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|ActiveRecordsetID  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> ||xsd:/signedint 型の値。  <br/> |
-|DataWindowOrder  <br/> |xsd: string  <br/> |省略可能  <br/> ||xsd: string 型の値。  <br/> |
-|NextID  <br/> |xsd: アン signedint  <br/> |必須  <br/> ||xsd:/signedint 型の値。  <br/> |
+|ActiveRecordsetID  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> ||Xsd:/Signedint 型の値。  <br/> |
+|DataWindowOrder  <br/> |xsd: string  <br/> |省略可能  <br/> ||Xsd: string 型の値。  <br/> |
+|NextID  <br/> |xsd: アン Signedint  <br/> |必須  <br/> ||Xsd:/Signedint 型の値。  <br/> |
    
 

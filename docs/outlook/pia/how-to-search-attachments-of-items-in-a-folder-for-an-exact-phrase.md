@@ -7,12 +7,12 @@ ms:contentKeyID: 55119889
 ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
-ms.openlocfilehash: f237a2268fd287e96959dfc0522103b47e55d37b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 615b90a8423493a9e202e51993eea1c8127a9939
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316059"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540897"
 ---
 # <a name="search-attachments-of-items-in-a-folder-for-an-exact-phrase"></a>フォルダー内のアイテムの添付ファイルで完全に一致する語句を検索する
 
@@ -22,7 +22,7 @@ ms.locfileid: "32316059"
 
 このコード例では、DAV Searching and Locating (DASL) 構文を使用してクエリを指定します。 フィルターを作成するために、まずクイック検索が既定のストアで有効になっているかどうかをチェックし、添付ファイル内で "office" を完全一致で検索する **ci\_phrasematch** キーワードを使用するかどうかを決定します。 その後で、この例では、受信トレイの [GetTable](https://msdn.microsoft.com/library/bb612592\(v=office.15\)) メソッドにフィルターを適用して、[Table](https://msdn.microsoft.com/library/bb652856\(v=office.15\)) オブジェクトで結果を取得します。 さらに、このコード例では、**Table** で返された各アイテムの件名を表示します。
 
-このコード例では、アイテムの **Attachments** プロパティを指定するために、名前空間の表現として https://schemas.microsoft.com/mapi/proptag/0x0EA5001E を使用しています。 **ci\_phrasematch** キーワードの構文は次のとおりです。
+このコード例では、アイテムの **Attachments** プロパティを指定するために、名前空間の表現として http://schemas.microsoft.com/mapi/proptag/0x0EA5001E を使用しています。 **ci\_phrasematch** キーワードの構文は次のとおりです。
 
 `<PropertySchemaName> ci_phrasematch <ComparisonString>`
 
@@ -42,7 +42,7 @@ using Outlook = Microsoft.Office.Interop.Outlook;
 Private Sub DemoSearchAttachments()
     Dim filter As String
     Const PR_SEARCH_ATTACHMENTS As String = _
-        "https://schemas.microsoft.com/mapi/proptag/0x0EA5001E"
+        "http://schemas.microsoft.com/mapi/proptag/0x0EA5001E"
     If (Application.Session.DefaultStore.IsInstantSearchEnabled) Then
         filter = "@SQL=" & Chr(34) _
             & PR_SEARCH_ATTACHMENTS & Chr(34) _
@@ -65,7 +65,7 @@ private void DemoSearchAttachments()
 {
     string filter;
     const string PR_SEARCH_ATTACHMENTS =
-        "https://schemas.microsoft.com/mapi/proptag/0x0EA5001E";
+        "http://schemas.microsoft.com/mapi/proptag/0x0EA5001E";
     if (Application.Session.DefaultStore.IsInstantSearchEnabled)
     {
         filter = "@SQL=" + "\""

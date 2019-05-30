@@ -1,27 +1,27 @@
 ---
-title: DataRecordSet_Type complexType (' Visio XML ')
+title: DataRecordSet_Type complexType (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 59544910-6bd5-2c89-71b3-5c8ee91a1dea
-ms.openlocfilehash: 36d6cf3b34ad0aa81f7b097d6452c46679342a02
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 132261ae823d1749676b7bdc28cdd1cb94f6ef5b
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360362"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539145"
 ---
-# <a name="datarecordsettype-complextype-visio-xml"></a>DataRecordSet_Type complexType (' Visio XML ')
+# <a name="datarecordsettype-complextype-visio-xml"></a>DataRecordSet_Type complexType (Visio XML)
 
 ## <a name="type-information"></a>型情報
 
 |||
 |:-----|:-----|
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15-06-05  <br/> |
-|**拡張ベース** <br/> |なし  <br/> |
+|**拡張ベース** <br/> |None  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -121,26 +121,26 @@ ms.locfileid: "32360362"
 |[AutoLinkComparison](autolinkcomparison-element-datarecordset_type-complextypevisio-xml.md) <br/> |[AutoLinkComparison_Type](autolinkcomparison_type-complextypevisio-xml.md) <br/> ||
 |[DataColumns](datacolumns-element-datarecordset_type-complextypevisio-xml.md) <br/> |[DataColumns_Type](datacolumns_type-complextypevisio-xml.md) <br/> ||
 |[PrimaryKey](primarykey-element-datarecordset_type-complextypevisio-xml.md) <br/> |[PrimaryKey_Type](primarykey_type-complextypevisio-xml.md) <br/> ||
-|[refreshconflict](refreshconflict-element-datarecordset_type-complextypevisio-xml.md) <br/> |[RefreshConflict_Type](refreshconflict_type-complextypevisio-xml.md) <br/> ||
+|[RefreshConflict](refreshconflict-element-datarecordset_type-complextypevisio-xml.md) <br/> |[RefreshConflict_Type](refreshconflict_type-complextypevisio-xml.md) <br/> ||
 |[Rel](rel-element-datarecordset_type-complextypevisio-xml.md) <br/> |[Rel_Type](rel_type-complextypevisio-xml.md) <br/> ||
-|[rowmap](rowmap-element-datarecordset_type-complextypevisio-xml.md) <br/> |[RowMap_Type](rowmap_type-complextypevisio-xml.md) <br/> ||
+|[RowMap](rowmap-element-datarecordset_type-complextypevisio-xml.md) <br/> |[RowMap_Type](rowmap_type-complextypevisio-xml.md) <br/> ||
    
 ### <a name="attributes"></a>属性
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|チェックサム  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> ||xsd:/signedint 型の値。  <br/> |
-|Command  <br/> |xsd: string  <br/> |省略可能  <br/> ||xsd: string 型の値。  <br/> |
-|ConnectionID  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> ||xsd:/signedint 型の値。  <br/> |
-|ID  <br/> |xsd: アン signedint  <br/> |必須  <br/> ||xsd:/signedint 型の値。  <br/> |
-|名前  <br/> |xsd: string  <br/> |省略可能  <br/> ||xsd: string 型の値。  <br/> |
-|nextrowid  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> ||xsd:/signedint 型の値。  <br/> |
-|Options  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> ||xsd:/signedint 型の値。  <br/> |
-|RefreshInterval  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> ||xsd:/signedint 型の値。  <br/> |
-|RefreshNoReconciliationUI  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||xsd: boolean 型の値。  <br/> |
-|RefreshOverwriteAll  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||xsd: boolean 型の値。  <br/> |
-|ReplaceLinks  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> ||xsd:/signedint 型の値。  <br/> |
-|RowOrder  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||xsd: boolean 型の値。  <br/> |
-|TimeRefreshed  <br/> |xsd: dateTime  <br/> |省略可能  <br/> ||xsd: dateTime 型の値。  <br/> |
+|チェックサム  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> ||Xsd:/Signedint 型の値。  <br/> |
+|Command  <br/> |xsd: string  <br/> |省略可能  <br/> ||Xsd: string 型の値。  <br/> |
+|ConnectionID  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> ||Xsd:/Signedint 型の値。  <br/> |
+|ID  <br/> |xsd: アン Signedint  <br/> |必須  <br/> ||Xsd:/Signedint 型の値。  <br/> |
+|名前  <br/> |xsd: string  <br/> |省略可能  <br/> ||Xsd: string 型の値。  <br/> |
+|NextRowID  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> ||Xsd:/Signedint 型の値。  <br/> |
+|選択肢  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> ||Xsd:/Signedint 型の値。  <br/> |
+|RefreshInterval  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> ||Xsd:/Signedint 型の値。  <br/> |
+|RefreshNoReconciliationUI  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||Xsd: boolean 型の値。  <br/> |
+|RefreshOverwriteAll  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||Xsd: boolean 型の値。  <br/> |
+|ReplaceLinks  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> ||Xsd:/Signedint 型の値。  <br/> |
+|RowOrder  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||Xsd: boolean 型の値。  <br/> |
+|TimeRefreshed  <br/> |xsd: dateTime  <br/> |省略可能  <br/> ||Xsd: dateTime 型の値。  <br/> |
    
 

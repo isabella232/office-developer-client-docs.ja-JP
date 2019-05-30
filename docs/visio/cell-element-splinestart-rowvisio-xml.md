@@ -1,5 +1,5 @@
 ---
-title: Cell 要素 ([splinestart] 行) (' Visio XML ')
+title: Cell 要素 (Ineinestart 行) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 021536b9-6724-4b8a-35c2-966e456e5232
 description: スプラインの2番目のコントロールポイントに対する x 座標または y 座標、2番目のノット、最初のノット、最後のノット、またはスプラインの角度を格納します。
-ms.openlocfilehash: d2e12eba831dafb9a79b9f76638a0bdb23671ce9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: e3a99818d897af21e3064e0fc92d9d56ffcf5a15
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339537"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539356"
 ---
-# <a name="cell-element-splinestart-row-visio-xml"></a>Cell 要素 ([splinestart] 行) (' Visio XML ')
+# <a name="cell-element-splinestart-row-visio-xml"></a>Cell 要素 (Ineinestart 行) (Visio XML)
 
 スプラインの2番目のコントロールポイントに対する x 座標または y 座標、2番目のノット、最初のノット、最後のノット、またはスプラインの角度を格納します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32339537"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |マスター # .xml、ページ # .xml  <br/> |
    
@@ -60,7 +60,7 @@ ms.locfileid: "32339537"
 |U  <br/> |xsd: string  <br/> |省略可能  <br/> |既定値は DL である計量単位を表します。  <br/> |セルの単位を示します。  <br/> |
 |V  <br/> |xsd: string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプシートセルの値を指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この**Cell**要素の**N**属性は、シェイプシートのセルに対応する、制限された値のセットのいずれかである必要があります。 この**Cell**要素に対して許可されている**N**属性の値を確認するには、次の表を参照してください。 
   
@@ -70,7 +70,7 @@ ms.locfileid: "32339537"
 |Y  <br/> |スプラインの 2 番目のコントロール ポイントに対する y 座標です。  <br/> |[[SplineStart] 行 ([Geometry] セクション)](splinestart-row-geometry-section.md) <br/> |
 |A  <br/> |スプラインの 2 番目のノットです。  <br/> |[[SplineStart] 行 ([Geometry] セクション)](splinestart-row-geometry-section.md) <br/> |
 |B  <br/> |スプラインの最初のノットです。  <br/> |[[SplineStart] 行 ([Geometry] セクション)](splinestart-row-geometry-section.md) <br/> |
-|C  <br/> |スプラインの最後のノットです。  <br/> |[[relellipticalarcto] 行 (Geometry セクション)](splinestart-row-geometry-section.md) <br/> |
+|C  <br/> |スプラインの最後のノットです。  <br/> |[[Relellipticalarcto] 行 (Geometry セクション)](splinestart-row-geometry-section.md) <br/> |
 |D  <br/> |スプラインの角度 (1 ～ 25 の整数) です。  <br/> |[[SplineStart] 行 ([Geometry] セクション)](splinestart-row-geometry-section.md) <br/> |
    
 

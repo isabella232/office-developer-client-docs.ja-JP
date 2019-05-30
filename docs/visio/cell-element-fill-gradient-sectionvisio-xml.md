@@ -1,5 +1,5 @@
 ---
-title: Cell 要素 ([塗りつぶしグラデーション] セクション) (' Visio XML ')
+title: Cell 要素 (「塗りつぶしのグラデーション」セクション) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: d085f83a-f77b-9bf9-07dc-4561b83e288c
 description: 塗りつぶしのグラデーションに対する、グラデーションの分岐点の色、透過性、および位置を格納します。
-ms.openlocfilehash: 3c4cdf1f60f68748fd2500b2dec0b5a5ad553ff5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 998c63d5273c39601e5b7293ae03eebbc3b467b2
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356099"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539552"
 ---
-# <a name="cell-element-fill-gradient-section-visio-xml"></a>Cell 要素 ([塗りつぶしグラデーション] セクション) (' Visio XML ')
+# <a name="cell-element-fill-gradient-section-visio-xml"></a>Cell 要素 (「塗りつぶしのグラデーション」セクション) (Visio XML)
 
 塗りつぶしのグラデーションに対する、グラデーションの分岐点の色、透過性、および位置を格納します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32356099"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |文書 .xml、master # .xml、ページ # .xml  <br/> |
    
@@ -42,7 +42,7 @@ ms.locfileid: "32356099"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[Row 要素 (fillgradient セクション)](row-element-fill-gradient-sectionvisio-xml.md) <br/> |[FillGradientRow_Type](fillgradientrow_type-complextypevisio-xml.md) <br/> |塗りつぶしのグラデーションに対する、グラデーションの分岐点の色、透過性、および位置を格納します。  <br/> |
+|[Row 要素 (FillGradient セクション)](row-element-fill-gradient-sectionvisio-xml.md) <br/> |[FillGradientRow_Type](fillgradientrow_type-complextypevisio-xml.md) <br/> |塗りつぶしのグラデーションに対する、グラデーションの分岐点の色、透過性、および位置を格納します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -60,7 +60,7 @@ ms.locfileid: "32356099"
 |U  <br/> |xsd: string  <br/> |省略可能  <br/> |既定値は DL である計量単位を表します。  <br/> |セルの単位を示します。  <br/> |
 |V  <br/> |xsd: string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプシートセルの値を指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この**Cell**要素の**N**属性は、シェイプシートのセルに対応する、制限された値のセットのいずれかである必要があります。 この**Cell**要素に対して許可されている**N**属性の値を確認するには、次の表を参照してください。 
   

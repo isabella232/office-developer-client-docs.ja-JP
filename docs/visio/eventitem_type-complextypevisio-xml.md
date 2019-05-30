@@ -1,27 +1,27 @@
 ---
-title: EventItem_Type complexType (' Visio XML ')
+title: EventItem_Type complexType (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: f157db03-e7d0-d39f-cbde-2a22f45b40ed
-ms.openlocfilehash: 77c51ab76a1d7c5c4450c429b1d3ccb8e3442f34
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: f0fd618cc2a86d3695d0d6f6c446f118475ffc1f
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337206"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34541793"
 ---
-# <a name="eventitemtype-complextype-visio-xml"></a>EventItem_Type complexType (' Visio XML ')
+# <a name="eventitemtype-complextype-visio-xml"></a>EventItem_Type complexType (Visio XML)
 
 ## <a name="type-information"></a>型情報
 
 |||
 |:-----|:-----|
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15-06-05  <br/> |
-|**拡張ベース** <br/> |なし  <br/> |
+|**拡張ベース** <br/> |None  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -66,11 +66,11 @@ ms.locfileid: "32337206"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|アクション  <br/> |xsd: アン signedshort  <br/> |必須  <br/> ||xsd: _ signedshort 型の値。  <br/> |
-|有効  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||xsd: boolean 型の値。  <br/> |
-|EventCode  <br/> |xsd: アン signedshort  <br/> |必須  <br/> ||xsd: _ signedshort 型の値。  <br/> |
-|ID  <br/> |xsd: アン signedint  <br/> |必須  <br/> ||xsd:/signedint 型の値。  <br/> |
-|Target  <br/> |xsd: string  <br/> |必須  <br/> ||xsd: string 型の値。  <br/> |
-|TargetArgs  <br/> |xsd: string  <br/> |必須  <br/> ||xsd: string 型の値。  <br/> |
+|Action  <br/> |xsd: アン Signedshort  <br/> |必須  <br/> ||Xsd: _ Signedshort 型の値。  <br/> |
+|有効  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||Xsd: boolean 型の値。  <br/> |
+|EventCode  <br/> |xsd: アン Signedshort  <br/> |必須  <br/> ||Xsd: _ Signedshort 型の値。  <br/> |
+|ID  <br/> |xsd: アン Signedint  <br/> |必須  <br/> ||Xsd:/Signedint 型の値。  <br/> |
+|Target  <br/> |xsd: string  <br/> |必須  <br/> ||Xsd: string 型の値。  <br/> |
+|TargetArgs  <br/> |xsd: string  <br/> |必須  <br/> ||Xsd: string 型の値。  <br/> |
    
 

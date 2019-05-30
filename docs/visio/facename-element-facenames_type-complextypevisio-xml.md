@@ -1,5 +1,5 @@
 ---
-title: facename 要素 (FaceNames_Type complexType) (' Visio XML ')
+title: FaceName 要素 (FaceNames_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: b1783f05-ced1-917f-8298-eca4ecfa3912
 description: フォントに関する情報を格納します。
-ms.openlocfilehash: 4c8f047d655be167dc058b3e29ac62161887ce99
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 773b5f10607cc6d515671d93d7d4abd9e39e72ff
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322604"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34541016"
 ---
-# <a name="facename-element-facenamestype-complextype-visio-xml"></a>facename 要素 (FaceNames_Type complexType) (' Visio XML ')
+# <a name="facename-element-facenamestype-complextype-visio-xml"></a>FaceName 要素 (FaceNames_Type complexType) (Visio XML)
 
 フォントに関する情報を格納します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32322604"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[FaceName_Type](facename_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |文書の xml  <br/> |
    
@@ -42,7 +42,7 @@ ms.locfileid: "32322604"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[facenames 方法](facenames-element-visiodocument_type-complextypevisio-xml.md) <br/> |[FaceNames_Type](facenames_type-complextypevisio-xml.md) <br/> |**facename**要素のコレクションを格納します。  <br/> |
+|[FaceNames 方法](facenames-element-visiodocument_type-complextypevisio-xml.md) <br/> |[FaceNames_Type](facenames_type-complextypevisio-xml.md) <br/> |**Facename**要素のコレクションを格納します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -52,10 +52,10 @@ ms.locfileid: "32322604"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|CharSets  <br/> |xsd: string  <br/> |省略可能  <br/> |フォントのサポートされている文字セット。  <br/> |xsd: string 型の値。  <br/> |
-|フラグ  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> |無効なフォント、既定のフォント、アジア言語のフォント、コンプレックスフォント、縦書きフォント、およびフォントの種類を示すフラグ。  <br/> |xsd:/signedint 型の値。  <br/> |
+|CharSets  <br/> |xsd: string  <br/> |省略可能  <br/> |フォントのサポートされている文字セット。  <br/> |Xsd: string 型の値。  <br/> |
+|フラグ  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> |無効なフォント、既定のフォント、アジア言語のフォント、コンプレックスフォント、縦書きフォント、およびフォントの種類を示すフラグ。  <br/> |Xsd:/Signedint 型の値。  <br/> |
 |NameU  <br/> |xsd: string  <br/> |必須  <br/> |UTF-16 Unicode 文字列としてのフォントの名前。  <br/> ||
-|panos  <br/> |xsd: string  <br/> |省略可能  <br/> |フォントの panose シグネチャ。 Panose は、視覚特性に基づいて分類される書体システムです。  <br/> |xsd: string 型の値。  <br/> |
-|UnicodeRanges  <br/> |xsd: string  <br/> |省略可能  <br/> |サポートされているフォントの範囲。  <br/> |xsd: string 型の値。  <br/> |
+|Panos  <br/> |xsd: string  <br/> |省略可能  <br/> |フォントの panose シグネチャ。 Panose は、視覚特性に基づいて分類される書体システムです。  <br/> |Xsd: string 型の値。  <br/> |
+|UnicodeRanges  <br/> |xsd: string  <br/> |省略可能  <br/> |サポートされているフォントの範囲。  <br/> |Xsd: string 型の値。  <br/> |
    
 

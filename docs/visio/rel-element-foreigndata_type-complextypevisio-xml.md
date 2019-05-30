@@ -1,5 +1,5 @@
 ---
-title: Rel 要素 (ForeignData_Type complexType) (' Visio XML ')
+title: Rel 要素 (ForeignData_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7ed604ef-e001-f379-92c3-391a18f22bb3
 description: 図形と、図形に関連付けられているイメージデータを含むドキュメントパーツとの間の関係を指定します。
-ms.openlocfilehash: 2667d5b0b940384f10df62dfc0fbf6acfa7d4ba6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 5836fd306670600f65eda1f3a998ef4c5479114b
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336793"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34542808"
 ---
-# <a name="rel-element-foreigndatatype-complextype-visio-xml"></a>Rel 要素 (ForeignData_Type complexType) (' Visio XML ')
+# <a name="rel-element-foreigndatatype-complextype-visio-xml"></a>Rel 要素 (ForeignData_Type complexType) (Visio XML)
 
 図形と、図形に関連付けられているイメージデータを含むドキュメントパーツとの間の関係を指定します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32336793"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Rel_Type](rel_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |system.xml、masters、config.xml、pages、page # .xml、.master (.xml)  <br/> |
    
@@ -54,9 +54,9 @@ ms.locfileid: "32336793"
 |:-----|:-----|:-----|:-----|:-----|
 |r: id  <br/> |xsd: string  <br/> 注釈を参照してください。  <br/> |必須  <br/> |パーツへのリレーションシップを指定します。  <br/> |"rId #"  <br/> 注釈を参照してください。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**r: id**属性の値は、 **ST_RelationshipID**型でなければなりません。 **ST_RelationshipID** type は、' rId # ' という形式で指定する必要があります。最後の文字は数字である必要があります。 この数値は、 **Rel**要素のすべての兄弟要素の間で一意である必要があります。 
+**R: id**属性の値は、 **ST_RelationshipID**型でなければなりません。 **ST_RelationshipID** type は、' rId # ' という形式で指定する必要があります。最後の文字は数字である必要があります。 この数値は、 **Rel**要素のすべての兄弟要素の間で一意である必要があります。 
   
 ST_RelationshipID 型の詳細については、 [ISO/IEC 29500 Part 1 の仕様](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.md?csnumber=61750)を参照してください。
   

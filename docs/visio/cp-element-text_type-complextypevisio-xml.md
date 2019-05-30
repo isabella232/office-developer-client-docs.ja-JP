@@ -1,31 +1,31 @@
 ---
-title: cp 要素 (Text_Type complexType) (' Visio XML ')
+title: cp 要素 (Text_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 4edd0a3f-e433-bf54-34cd-3b05fd10a5a5
-description: 対応する Char 要素に従って書式設定された、文字プロパティの実行の開始をマークします。 実行は、テキストの末尾または次のタグまで定義されます。
-ms.openlocfilehash: eb7fd30c2314e159dc3649e87cd63bd4090ba283
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: MT
+description: 対応する Char 要素に従って書式設定された文字プロパティ実行の開始位置を示します。 実行は、テキストの末尾、または次のタグまで定義されます。
+ms.openlocfilehash: 70f7d3f8333ff0f2c109862455fbd8cc3b340bf4
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282951"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540561"
 ---
-# <a name="cp-element-texttype-complextype-visio-xml"></a>cp 要素 (Text_Type complexType) (' Visio XML ')
+# <a name="cp-element-texttype-complextype-visio-xml"></a>cp 要素 (Text_Type complexType) (Visio XML)
 
-対応する Char 要素に従って書式設定された、文字プロパティの実行の開始をマークします。 実行は、テキストの末尾または次のタグまで定義されます。
+対応する Char 要素に従って書式設定された文字プロパティ実行の開始位置を示します。 実行は、テキストの末尾、または次のタグまで定義されます。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[cp_Type](cp_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
-|**文書パーツ** <br/> |ページ # .xml、マスター # .xml  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
+|**ドキュメント パーツ** <br/> |page#.xml, master#.xml  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -36,13 +36,13 @@ ms.locfileid: "32282951"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
+スキーマで **sequence**、**minOccurs**、**maxOccurs**、**choice** などの具体的な要件が定義されている場合は、定義のセクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[Text](text-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Text_Type](text_type-complextypevisio-xml.md) <br/> |図形のテキストを格納します。  <br/> |
+|[Text](text-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Text_Type](text_type-complextypevisio-xml.md) <br/> |図形のテキストが含まれます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -52,6 +52,6 @@ ms.locfileid: "32282951"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|IX  <br/> |xsd: アン Signedint  <br/> |必須  <br/> |このプロパティが実行する Char 要素インデックス。  <br/> |Xsd:/Signedint 型の値。  <br/> |
+|IX  <br/> |xsd:unsignedInt  <br/> |必須  <br/> |このプロパティが実行する Char 要素インデックス。  <br/> |xsd:unsignedInt 型の値。  <br/> |
    
 

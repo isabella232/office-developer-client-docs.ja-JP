@@ -1,25 +1,25 @@
 ---
-title: PageSheet_Type complexType (' Visio XML ')
+title: PageSheet_Type complexType (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: f7bce473-9a3d-65f2-8323-1e00db110c71
-ms.openlocfilehash: 45e3dec8dc97fd3467195102a42227b844f07a98
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 01112db1465eece9ecf5faf200a1d866ce6e332d
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334651"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540589"
 ---
-# <a name="pagesheettype-complextype-visio-xml"></a>PageSheet_Type complexType (' Visio XML ')
+# <a name="pagesheettype-complextype-visio-xml"></a>PageSheet_Type complexType (Visio XML)
 
 ## <a name="type-information"></a>型情報
 
 |||
 |:-----|:-----|
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15-06-05  <br/> |
 |**拡張ベース** <br/> |Sheet_Type  <br/> |
    
@@ -51,6 +51,6 @@ ms.locfileid: "32334651"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|UniqueID  <br/> |xsd: string  <br/> |省略可能  <br/> ||xsd: string 型の値。  <br/> |
+|UniqueID  <br/> |xsd: string  <br/> |省略可能  <br/> ||Xsd: string 型の値。  <br/> |
    
 

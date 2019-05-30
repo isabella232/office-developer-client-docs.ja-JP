@@ -1,5 +1,5 @@
 ---
-title: Cell 要素 ([線のグラデーション] セクション) (' Visio XML ')
+title: Cell 要素 (線のグラデーションセクション) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 8001249c-ea67-c5c0-3168-485400c43d8c
 description: 線のグラデーションのグラデーションの分岐点の色、透過性、または位置を含みます。
-ms.openlocfilehash: 915341b41849aae2af2285b49f0421798a16cf99
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: d8ac664285d24e47a142c22b1483e2ff435aef48
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32318229"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539503"
 ---
-# <a name="cell-element-line-gradient-section-visio-xml"></a>Cell 要素 ([線のグラデーション] セクション) (' Visio XML ')
+# <a name="cell-element-line-gradient-section-visio-xml"></a>Cell 要素 (線のグラデーションセクション) (Visio XML)
 
 線のグラデーションのグラデーションの分岐点の色、透過性、または位置を含みます。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32318229"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |文書 .xml、master # .xml、ページ # .xml  <br/> |
    
@@ -60,7 +60,7 @@ ms.locfileid: "32318229"
 |U  <br/> |xsd: string  <br/> |省略可能  <br/> |既定値は DL である計量単位を表します。  <br/> |セルの単位を示します。  <br/> |
 |V  <br/> |xsd: string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプシートセルの値を指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この**Cell**要素の**N**属性は、シェイプシートのセルに対応する、制限された値のセットのいずれかである必要があります。 この**Cell**要素に対して許可されている**N**属性の値を確認するには、次の表を参照してください。 
   

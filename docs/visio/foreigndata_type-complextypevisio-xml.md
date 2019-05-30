@@ -1,27 +1,27 @@
 ---
-title: ForeignData_Type complexType (' Visio XML ')
+title: ForeignData_Type complexType (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 21b394a6-6f95-fc17-482c-4cb648a0d9bb
-ms.openlocfilehash: 6630c8b33dc1c4c7cbb12bb9727d4f0b1e1b19d2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 39396ef0db5b78d6f32d8828103eecd105f8b91d
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346012"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539864"
 ---
-# <a name="foreigndatatype-complextype-visio-xml"></a>ForeignData_Type complexType (' Visio XML ')
+# <a name="foreigndatatype-complextype-visio-xml"></a>ForeignData_Type complexType (Visio XML)
 
 ## <a name="type-information"></a>型情報
 
 |||
 |:-----|:-----|
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15-06-05  <br/> |
-|**拡張ベース** <br/> |なし  <br/> |
+|**拡張ベース** <br/> |None  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -85,15 +85,15 @@ ms.locfileid: "32346012"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|CompressionLevel  <br/> |xsd: double  <br/> |省略可能  <br/> ||xsd: double 型の値。  <br/> |
-|CompressionType  <br/> |xsd: token  <br/> |省略可能  <br/> ||xsd: token 型の値。  <br/> |
-|ExtentX  <br/> |xsd: double  <br/> |省略可能  <br/> ||xsd: double 型の値。  <br/> |
-|ExtentY  <br/> |xsd: double  <br/> |省略可能  <br/> ||xsd: double 型の値。  <br/> |
-|ForeignType  <br/> |xsd: token  <br/> |必須  <br/> ||xsd: token 型の値。  <br/> |
-|mappingmode  <br/> |xsd: アン signedshort  <br/> |省略可能  <br/> ||xsd: _ signedshort 型の値。  <br/> |
-|ObjectHeight  <br/> |xsd: double  <br/> |省略可能  <br/> ||xsd: double 型の値。  <br/> |
-|ObjectType  <br/> |xsd: アン signedint  <br/> |省略可能  <br/> ||xsd:/signedint 型の値。  <br/> |
-|objectwidth  <br/> |xsd: double  <br/> |省略可能  <br/> ||xsd: double 型の値。  <br/> |
-|showasicon  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||xsd: boolean 型の値。  <br/> |
+|CompressionLevel  <br/> |xsd: double  <br/> |省略可能  <br/> ||Xsd: double 型の値。  <br/> |
+|CompressionType  <br/> |xsd: token  <br/> |省略可能  <br/> ||Xsd: token 型の値。  <br/> |
+|ExtentX  <br/> |xsd: double  <br/> |省略可能  <br/> ||Xsd: double 型の値。  <br/> |
+|ExtentY  <br/> |xsd: double  <br/> |省略可能  <br/> ||Xsd: double 型の値。  <br/> |
+|ForeignType  <br/> |xsd: token  <br/> |必須  <br/> ||Xsd: token 型の値。  <br/> |
+|MappingMode  <br/> |xsd: アン Signedshort  <br/> |省略可能  <br/> ||Xsd: _ Signedshort 型の値。  <br/> |
+|ObjectHeight  <br/> |xsd: double  <br/> |省略可能  <br/> ||Xsd: double 型の値。  <br/> |
+|ObjectType  <br/> |xsd: アン Signedint  <br/> |省略可能  <br/> ||Xsd:/Signedint 型の値。  <br/> |
+|ObjectWidth  <br/> |xsd: double  <br/> |省略可能  <br/> ||Xsd: double 型の値。  <br/> |
+|ShowAsIcon  <br/> |xsd: boolean  <br/> |省略可能  <br/> ||Xsd: boolean 型の値。  <br/> |
    
 

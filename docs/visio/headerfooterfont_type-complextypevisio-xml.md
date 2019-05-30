@@ -1,27 +1,27 @@
 ---
-title: HeaderFooterFont_Type complexType (' Visio XML ')
+title: HeaderFooterFont_Type complexType (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1e4134be-fb18-768e-b477-f9f40f72548d
-ms.openlocfilehash: cc51924aa68e3248583be5f717b5813d4a32af2b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: dd99d87e0d80aad3bcde31e4834337ee59088da2
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335624"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34541072"
 ---
-# <a name="headerfooterfonttype-complextype-visio-xml"></a>HeaderFooterFont_Type complexType (' Visio XML ')
+# <a name="headerfooterfonttype-complextype-visio-xml"></a>HeaderFooterFont_Type complexType (Visio XML)
 
 ## <a name="type-information"></a>型情報
 
 |||
 |:-----|:-----|
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15-06-05  <br/> |
-|**拡張ベース** <br/> |なし  <br/> |
+|**拡張ベース** <br/> |None  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -85,19 +85,19 @@ ms.locfileid: "32335624"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|CharSet  <br/> |xsd: アン signedbyte  <br/> |省略可能  <br/> ||xsd:/signedbyte 型の値。  <br/> |
-|ClipPrecision  <br/> |xsd: アン signedbyte  <br/> |省略可能  <br/> ||xsd:/signedbyte 型の値。  <br/> |
-|実際  <br/> |xsd: int  <br/> |省略可能  <br/> ||xsd: int 型の値。  <br/> |
-|facename  <br/> |xsd: string  <br/> |省略可能  <br/> ||xsd: string 型の値。  <br/> |
-|Height  <br/> |xsd: int  <br/> |省略可能  <br/> ||xsd: int 型の値。  <br/> |
-|斜体  <br/> |xsd: アン signedbyte  <br/> |省略可能  <br/> ||xsd:/signedbyte 型の値。  <br/> |
-|Orientation  <br/> |xsd: int  <br/> |省略可能  <br/> ||xsd: int 型の値。  <br/> |
-|アウト精度  <br/> |xsd: アン signedbyte  <br/> |省略可能  <br/> ||xsd:/signedbyte 型の値。  <br/> |
-|PitchAndFamily  <br/> |xsd: アン signedbyte  <br/> |省略可能  <br/> ||xsd:/signedbyte 型の値。  <br/> |
-|Quality  <br/> |xsd: アン signedbyte  <br/> |省略可能  <br/> ||xsd:/signedbyte 型の値。  <br/> |
-|線  <br/> |xsd: アン signedbyte  <br/> |省略可能  <br/> ||xsd:/signedbyte 型の値。  <br/> |
-|Underline  <br/> |xsd: アン signedbyte  <br/> |省略可能  <br/> ||xsd:/signedbyte 型の値。  <br/> |
-|太さ  <br/> |xsd: int  <br/> |省略可能  <br/> ||xsd: int 型の値。  <br/> |
-|Width  <br/> |xsd: int  <br/> |省略可能  <br/> ||xsd: int 型の値。  <br/> |
+|CharSet  <br/> |xsd: アン Signedbyte  <br/> |省略可能  <br/> ||Xsd:/Signedbyte 型の値。  <br/> |
+|ClipPrecision  <br/> |xsd: アン Signedbyte  <br/> |省略可能  <br/> ||Xsd:/Signedbyte 型の値。  <br/> |
+|実際  <br/> |xsd: int  <br/> |省略可能  <br/> ||Xsd: int 型の値。  <br/> |
+|FaceName  <br/> |xsd: string  <br/> |省略可能  <br/> ||Xsd: string 型の値。  <br/> |
+|Height  <br/> |xsd: int  <br/> |省略可能  <br/> ||Xsd: int 型の値。  <br/> |
+|斜体  <br/> |xsd: アン Signedbyte  <br/> |省略可能  <br/> ||Xsd:/Signedbyte 型の値。  <br/> |
+|Orientation  <br/> |xsd: int  <br/> |省略可能  <br/> ||Xsd: int 型の値。  <br/> |
+|アウト精度  <br/> |xsd: アン Signedbyte  <br/> |省略可能  <br/> ||Xsd:/Signedbyte 型の値。  <br/> |
+|PitchAndFamily  <br/> |xsd: アン Signedbyte  <br/> |省略可能  <br/> ||Xsd:/Signedbyte 型の値。  <br/> |
+|Quality  <br/> |xsd: アン Signedbyte  <br/> |省略可能  <br/> ||Xsd:/Signedbyte 型の値。  <br/> |
+|線  <br/> |xsd: アン Signedbyte  <br/> |省略可能  <br/> ||Xsd:/Signedbyte 型の値。  <br/> |
+|下線  <br/> |xsd: アン Signedbyte  <br/> |省略可能  <br/> ||Xsd:/Signedbyte 型の値。  <br/> |
+|太さ  <br/> |xsd: int  <br/> |省略可能  <br/> ||Xsd: int 型の値。  <br/> |
+|Width  <br/> |xsd: int  <br/> |省略可能  <br/> ||Xsd: int 型の値。  <br/> |
    
 

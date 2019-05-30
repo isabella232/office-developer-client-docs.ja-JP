@@ -1,5 +1,5 @@
 ---
-title: フッターセンター要素 (HeaderFooter_Type complexType) (' Visio XML ')
+title: フッターセンター要素 (HeaderFooter_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: c2a720cc-544b-f923-5bec-67da31507444
 description: 図面のフッターの中央部分に表示されるテキスト文字列を格納します。
-ms.openlocfilehash: 931dcd60604adb033fb5334e6fc7fdffe3a8193c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: b731f6986a20f84704822c15d70b15b769256bf2
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346124"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539580"
 ---
-# <a name="footercenter-element-headerfootertype-complextype-visio-xml"></a>フッターセンター要素 (HeaderFooter_Type complexType) (' Visio XML ')
+# <a name="footercenter-element-headerfootertype-complextype-visio-xml"></a>フッターセンター要素 (HeaderFooter_Type complexType) (Visio XML)
 
 図面のフッターの中央部分に表示されるテキスト文字列を格納します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32346124"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[FooterCenter_Type](footercenter_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |文書の xml  <br/> |
    

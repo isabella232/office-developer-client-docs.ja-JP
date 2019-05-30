@@ -1,5 +1,5 @@
 ---
-title: snapsettings 要素 (DocumentSettings_Type complexType) (' Visio XML ')
+title: SnapSettings 要素 (DocumentSettings_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6e86e943-bd29-0a7b-3d6a-d91281f98777
 description: ウィンドウのスナップがアクティブなときに、図形をスナップするオブジェクトを指定します。
-ms.openlocfilehash: 68c2bd198a20047ce4f56fe06630177a17319191
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 8d4be35a4cd66a1d3914dbda8162f4acb3d05bfa
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334490"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540295"
 ---
-# <a name="snapsettings-element-documentsettingstype-complextype-visio-xml"></a>snapsettings 要素 (DocumentSettings_Type complexType) (' Visio XML ')
+# <a name="snapsettings-element-documentsettingstype-complextype-visio-xml"></a>SnapSettings 要素 (DocumentSettings_Type complexType) (Visio XML)
 
 ウィンドウのスナップがアクティブなときに、図形をスナップするオブジェクトを指定します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32334490"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[SnapSettings_Type](snapsettings_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |文書の xml  <br/> |
    
@@ -42,7 +42,7 @@ ms.locfileid: "32334490"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[documentsettings](documentsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[DocumentSettings_Type](documentsettings_type-complextypevisio-xml.md) <br/> |ドキュメントの設定を指定する要素を格納します。  <br/> |
+|[DocumentSettings](documentsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[DocumentSettings_Type](documentsettings_type-complextypevisio-xml.md) <br/> |ドキュメントの設定を指定する要素を格納します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -52,7 +52,7 @@ ms.locfileid: "32334490"
 
 なし。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 値には、次の表の値の合計を指定できます。
   
@@ -62,7 +62,7 @@ ms.locfileid: "32334490"
 |1-d  <br/> |ルーラーの目盛りにスナップします。  <br/> |
 |pbm-2  <br/> |グリッドにスナップします。  <br/> |
 |2/4  <br/> |ガイドにスナップします。  <br/> |
-|~  <br/> |選択ハンドルにスナップします。  <br/> |
+|8   <br/> |選択ハンドルにスナップします。  <br/> |
 |16  <br/> |頂点にスナップします。  <br/> |
 |32  <br/> |接続ポイントにスナップします。  <br/> |
 |256  <br/> |表示されている図形の端にスナップします。  <br/> |

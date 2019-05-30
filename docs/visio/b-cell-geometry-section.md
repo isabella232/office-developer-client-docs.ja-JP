@@ -9,23 +9,23 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: b0fb6a47-47d8-ab9c-854d-0b0bbfdfcc27
 description: 各行に対応する情報を表示します。 次の表に、各行で [B] セルが示す内容を説明します。
-ms.openlocfilehash: ff032b5af2918ec9865360ede5c3d76e8e872e9a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 46c8aa418f495905630fed2833d84afc93945346
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423308"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537795"
 ---
 # <a name="b-cell-geometry-section"></a>[B] セル ([Geometry] セクション)
 
 各行に対応する情報を表示します。 次の表に、各行で [B] セルが示す内容を説明します。
   
-|**Row**|**説明**|
+|Row|説明|
 |:-----|:-----|
-|[[ellipticalarcto]](ellipticalarcto-row-geometry-section.md) <br/> | 円弧のコントロールポイントの*y*座標です。  <br/> |
-|[[nurbsto]](nurbsto-row-geometry-section.md) <br/> | NURBS (nonuniform rational B-spline) の最後の太さです。  <br/> |
-|[[splinestart]](splinestart-row-geometry-section.md) <br/> | スプラインの最初のノットです。  <br/> |
-|[[infiniteline]](infiniteline-row-geometry-section.md) <br/> | 無限線上の点の*y*座標です。対応する*x*座標[は、A](a-cell-geometry-section.md)セルで表されます。  <br/> |
+|[[Ellipticalarcto]](ellipticalarcto-row-geometry-section.md) <br/> | 円弧のコントロールポイントの*y*座標です。  <br/> |
+|[[Nurbsto]](nurbsto-row-geometry-section.md) <br/> | NURBS (nonuniform rational B-spline) の最後の太さです。  <br/> |
+|[[Splinestart]](splinestart-row-geometry-section.md) <br/> | スプラインの最初のノットです。  <br/> |
+|[[Infiniteline]](infiniteline-row-geometry-section.md) <br/> | 無限線上の点の*y*座標です。対応する*x*座標[は、A](a-cell-geometry-section.md)セルで表されます。  <br/> |
 |[もう](ellipse-row-geometry-section.md) <br/> | 楕円上の点の*y*座標です。対応する*x*座標[は、A](a-cell-geometry-section.md)セルで表されます。  <br/> |
    
 ## <a name="remarks"></a>注釈
@@ -35,7 +35,7 @@ ms.locfileid: "33423308"
 |||
 |:-----|:-----|
 | セル名:  <br/> | ジオメトリ*i*B *j* where *i*および*j* = <1>、2、3...  <br/> |
-|| ジオメトリ*i*B1 ([infiniteline] および楕円の行)  <br/> |
+|| ジオメトリ*i*B1 ([Infiniteline] および楕円の行)  <br/> |
    
 プログラムから、インデックスによって [B] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

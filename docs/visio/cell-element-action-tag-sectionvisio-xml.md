@@ -1,5 +1,5 @@
 ---
-title: Cell 要素 ([操作タグ] セクション) (' Visio XML ')
+title: Cell 要素 (操作タグセクション) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6210ff71-fbcd-2c97-6dde-1e334891e08d
 description: 図形またはページ上のアクションタグに1つのプロパティを定義します。
-ms.openlocfilehash: 61fad8575532adde0106ef6db2888fe38f3ae4b7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 3b43206838dae432df677a3ff8792c85328db53b
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337178"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538803"
 ---
-# <a name="cell-element-action-tag-section-visio-xml"></a>Cell 要素 ([操作タグ] セクション) (' Visio XML ')
+# <a name="cell-element-action-tag-section-visio-xml"></a>Cell 要素 (操作タグセクション) (Visio XML)
 
 図形またはページ上のアクションタグに1つのプロパティを定義します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32337178"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |masters、master # .xml、pages .xml、page # .xml  <br/> |
    
@@ -42,7 +42,7 @@ ms.locfileid: "32337178"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[Row 要素 (actiontag セクション)](row-element-action-tag-sectionvisio-xml.md) <br/> |[ActionTagRow_Type](actiontag_type-complextypevisio-xml.md) <br/> |図形またはページ上のアクションタグを定義します。  <br/> |
+|[Row 要素 (ActionTag セクション)](row-element-action-tag-sectionvisio-xml.md) <br/> |[ActionTagRow_Type](actiontag_type-complextypevisio-xml.md) <br/> |図形またはページ上のアクションタグを定義します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -60,20 +60,20 @@ ms.locfileid: "32337178"
 |U  <br/> |xsd: string  <br/> |省略可能  <br/> |既定値は DL である計量単位を表します。  <br/> |セルの単位を示します。  <br/> |
 |V  <br/> |xsd: string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプシートセルの値を指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この**Cell**要素の**N**属性は、シェイプシートのセルに対応する、制限された値のセットのいずれかである必要があります。 この**Cell**要素に対して許可されている**N**属性の値を確認するには、次の表を参照してください。 
   
 |**値**|**説明**|**詳細情報**|
 |:-----|:-----|:-----|
-|buttonface]  <br/> |アクション タグ ボタンに表示されるボタン イメージの ID を示します。  <br/> |[[ButtonFace] セル ([Action Tags] セクション)](buttonface-cell-action-tags-section.md) <br/> |
+|Buttonface]  <br/> |アクション タグ ボタンに表示されるボタン イメージの ID を示します。  <br/> |[[ButtonFace] セル ([Action Tags] セクション)](buttonface-cell-action-tags-section.md) <br/> |
 |説明  <br/> |アクション タグの説明文の文字列を格納します。この説明は、ユーザーがタグの上にポインターを置いたときに、ツール ヒントとして表示されます。  <br/> |[[Description] セル ([Action Tags] セクション)](description-cell-action-tags-section.md) <br/> |
 |無効  <br/> |図面ウィンドウに、アクション タグを表示するかどうかを示します。  <br/> |[[Disabled] セル ([Action Tags] セクション)](disabled-cell-action-tags-section.md) <br/> |
 |DisplayMode  <br/> |ユーザーがタグの上にポインターを移動したとき、図形を選択したとき、または常に [アクション] タグを表示するかどうかを指定します。  <br/> |[[DisplayMode] セル ([Smart Tags] セクション)](displaymode-cell-action-tags-section.md) <br/> |
-|[tagname]  <br/> |アクション タグとそのアクションを関連付けるキーとして使用されるアクション タグの名前です。  <br/> |[[TagName] セル ([Action Tags] セクション)](tagname-cell-action-tags-section.md) <br/> |
+|[Tagname]  <br/> |アクション タグとそのアクションを関連付けるキーとして使用されるアクション タグの名前です。  <br/> |[[TagName] セル ([Action Tags] セクション)](tagname-cell-action-tags-section.md) <br/> |
 |X  <br/> |図形内で、アクション タグ ボタンが配置されるローカルの x 座標の位置です。  <br/> |[[X] セル ([Action Tags] セクション)](x-cell-action-tags-section.md) <br/> |
-|xjustify  <br/> |[X] セルと [Y] セルによって定義された点に対する、アクション タグ ボタンの x 座標のオフセット値です。  <br/> |[[X Justify] セル ([Action Tags] セクション)](x-justify-cell-action-tags-section.md) <br/> |
+|XJustify  <br/> |[X] セルと [Y] セルによって定義された点に対する、アクション タグ ボタンの x 座標のオフセット値です。  <br/> |[[X Justify] セル ([Action Tags] セクション)](x-justify-cell-action-tags-section.md) <br/> |
 |Y  <br/> |図形内で、アクション タグ ボタンが配置されるローカルの y 座標の位置です。  <br/> |[[Y] セル ([Action Tags] セクション)](y-cell-action-tags-section.md) <br/> |
-|yjustify  <br/> |[X] セルと [Y] セルによって定義された点に対する、アクション タグ ボタンの y 座標のオフセット値です。  <br/> |[[Y Justify] セル ([Action Tags] セクション)](y-justify-cell-action-tags-section.md) <br/> |
+|YJustify  <br/> |[X] セルと [Y] セルによって定義された点に対する、アクション タグ ボタンの y 座標のオフセット値です。  <br/> |[[Y Justify] セル ([Action Tags] セクション)](y-justify-cell-action-tags-section.md) <br/> |
    
 

@@ -1,5 +1,5 @@
 ---
-title: Cell 要素 ([ellipticalarcto] Row) (' Visio XML ')
+title: Cell 要素 ([Ellipticalarcto] Row) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3c0aa7a3-cc54-ffac-2c62-917b3d0a357e
 description: 楕円の弧の端点の x 座標または y 座標、円弧のコントロールポイントの x 座標または y 座標、x 軸から楕円の長軸までの角度、または楕円の長軸と短軸との比率を格納します。
-ms.openlocfilehash: 22dc813108d8f7b5b517c298c40c73ead8d4eec4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 396575c069925fe472fa3df0543e29303881dad3
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356071"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539829"
 ---
-# <a name="cell-element-ellipticalarcto-row-visio-xml"></a>Cell 要素 ([ellipticalarcto] Row) (' Visio XML ')
+# <a name="cell-element-ellipticalarcto-row-visio-xml"></a>Cell 要素 ([Ellipticalarcto] Row) (Visio XML)
 
 楕円の弧の端点の x 座標または y 座標、円弧のコントロールポイントの x 座標または y 座標、x 軸から楕円の長軸までの角度、または楕円の長軸と短軸との比率を格納します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32356071"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |マスター # .xml、ページ # .xml  <br/> |
    
@@ -60,7 +60,7 @@ ms.locfileid: "32356071"
 |U  <br/> |xsd: string  <br/> |省略可能  <br/> |既定値は DL である計量単位を表します。  <br/> |セルの単位を示します。  <br/> |
 |V  <br/> |xsd: string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプシートセルの値を指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この**Cell**要素の**N**属性は、シェイプシートのセルに対応する、制限された値のセットのいずれかである必要があります。 この**Cell**要素に対して許可されている**N**属性の値を確認するには、次の表を参照してください。 
   

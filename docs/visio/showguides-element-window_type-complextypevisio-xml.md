@@ -1,5 +1,5 @@
 ---
-title: showguides 要素 (Window_Type complexType) (' Visio XML ')
+title: ShowGuides 要素 (Window_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: b81bc46b-6eff-c11f-f583-85959a47c313
 description: 図面ウィンドウにガイドを表示するかどうかを指定します。
-ms.openlocfilehash: 25e630d1d6e48aef922d225924b872097e1a7aee
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 9f747568c664f86dd88a68b9a6e6e2f6df723f67
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32325745"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34542983"
 ---
-# <a name="showguides-element-windowtype-complextype-visio-xml"></a>showguides 要素 (Window_Type complexType) (' Visio XML ')
+# <a name="showguides-element-windowtype-complextype-visio-xml"></a>ShowGuides 要素 (Window_Type complexType) (Visio XML)
 
 図面ウィンドウにガイドを表示するかどうかを指定します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32325745"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[ShowGuides_Type](showguides_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |windows .xml  <br/> |
    

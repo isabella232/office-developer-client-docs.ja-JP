@@ -1,5 +1,5 @@
 ---
-title: refby 要素 (Trigger_Type complexType) (' Visio XML ')
+title: RefBy 要素 (Trigger_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 09f2430a-184d-eaa2-2cb9-51bb24345c51
 description: 図面内のページへの参照を指定します。
-ms.openlocfilehash: d987825345b64bd6e202970fc786aedaf49c6a94
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 6d081ad1bf9e089a16820db33cec92694db7ac98
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348406"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538292"
 ---
-# <a name="refby-element-triggertype-complextype-visio-xml"></a>refby 要素 (Trigger_Type complexType) (' Visio XML ')
+# <a name="refby-element-triggertype-complextype-visio-xml"></a>RefBy 要素 (Trigger_Type complexType) (Visio XML)
 
 図面内のページへの参照を指定します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32348406"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[RefBy_Type](refby_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> ||
    
@@ -42,7 +42,7 @@ ms.locfileid: "32348406"
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[Trigger](trigger-elementvisio-xml.md) <br/> |[Trigger_Type](trigger_type-complextypevisio-xml.md) <br/> |visio ファイル内の文書パーツ間のリレーションシップを再計算するための手順を Microsoft visio に提供します。  <br/> |
+|[Trigger](trigger-elementvisio-xml.md) <br/> |[Trigger_Type](trigger_type-complextypevisio-xml.md) <br/> |Visio ファイル内の文書パーツ間のリレーションシップを再計算するための手順を Microsoft Visio に提供します。  <br/> |
 
    
 ### <a name="child-elements"></a>子要素
@@ -53,7 +53,7 @@ ms.locfileid: "32348406"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|ID  <br/> |xsd: アン signedint  <br/> |必須  <br/> |図面内のページの ID 属性を指定します。  <br/> |xsd:/signedint 型の値。  <br/> |
-|T  <br/> |xsd: string  <br/> |必須  <br/> |参照の種類を指定します。  <br/> |xsd: string 型の値。  <br/> |
+|ID  <br/> |xsd: アン Signedint  <br/> |必須  <br/> |図面内のページの ID 属性を指定します。  <br/> |Xsd:/Signedint 型の値。  <br/> |
+|T  <br/> |xsd: string  <br/> |必須  <br/> |参照の種類を指定します。  <br/> |Xsd: string 型の値。  <br/> |
    
 

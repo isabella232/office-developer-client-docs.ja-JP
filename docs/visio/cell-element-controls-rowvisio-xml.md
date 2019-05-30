@@ -1,5 +1,5 @@
 ---
-title: Cell 要素 (Controls 行) (' Visio XML ')
+title: Cell 要素 (Controls 行) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3c04d243-002c-bb00-a4be-0bcb8e156402
 description: 図形に定義されている特定のコントロールハンドルのプロパティが含まれています。
-ms.openlocfilehash: ea54865a645486dfba53688278cb380142899d77
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 662dfe730c92ae25b3d243364bf1fa22a5eb8605
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356092"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34541836"
 ---
-# <a name="cell-element-controls-row-visio-xml"></a>Cell 要素 (Controls 行) (' Visio XML ')
+# <a name="cell-element-controls-row-visio-xml"></a>Cell 要素 (Controls 行) (Visio XML)
 
 図形に定義されている特定のコントロールハンドルのプロパティが含まれています。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32356092"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
 |**文書パーツ** <br/> |マスター # .xml、ページ # .xml  <br/> |
    
@@ -60,7 +60,7 @@ ms.locfileid: "32356092"
 |U  <br/> |xsd: string  <br/> |省略可能  <br/> |既定値は DL である計量単位を表します。  <br/> |セルの単位を示します。  <br/> |
 |V  <br/> |xsd: string  <br/> |省略可能  <br/> |セルの値を表します。  <br/> |シェイプシートセルの値を指定します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この**Cell**要素の**N**属性は、シェイプシートのセルに対応する、制限された値のセットのいずれかである必要があります。 この**Cell**要素に対して許可されている**N**属性の値を確認するには、次の表を参照してください。 
   
@@ -72,7 +72,7 @@ ms.locfileid: "32356092"
 |xCon  <br/> |ハンドルを移動した後に、コントロールハンドルの x 座標が示す動作の種類を指定します。  <br/> |なし。  <br/> |
 |xDyn  <br/> |コントロール ハンドルのアンカー ポイントの x 座標を、ローカル座標で表します。  <br/> |[[X Dynamics] セル ([Controls] セクション)](x-dynamics-cell-controls-section.md) <br/> |
 |Y  <br/> |図形のコントロール ハンドルの位置を示す y 座標を、ローカル座標で表します。  <br/> |[[Y] セル ([Controls] セクション)](y-cell-controls-section.md) <br/> |
-|ycon  <br/> |ハンドルを移動したときにコントロールハンドルの y 座標が表示される動作の種類を指定します。  <br/> |なし。  <br/> |
+|YCon  <br/> |ハンドルを移動したときにコントロールハンドルの y 座標が表示される動作の種類を指定します。  <br/> |なし。  <br/> |
 |YDyn  <br/> |コントロール ハンドルのアンカー ポイントの y 座標を、ローカル座標で表します。  <br/> |[[Y Dynamics] セル ([Controls] セクション)](y-dynamics-cell-controls-section.md) <br/> |
    
 
