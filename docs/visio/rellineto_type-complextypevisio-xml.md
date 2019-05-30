@@ -1,29 +1,29 @@
 ---
-title: RelLineTo_Type complexType (' Visio XML ')
+title: RelLineTo_Type complexType (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: e5504166-653d-15d2-75eb-9b36f376b788
-ms.openlocfilehash: ca4a270b77fee05957ff04798de1dff1512e837d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 8681bf819a36a8c41171d558fb48b73fc1aeb87b
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32319986"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34542710"
 ---
-# <a name="rellinetotype-complextype-visio-xml"></a><span data-ttu-id="1c312-102">RelLineTo_Type complexType (' Visio XML ')</span><span class="sxs-lookup"><span data-stu-id="1c312-102">RelLineTo_Type complexType ('Visio XML')</span></span>
+# <a name="rellinetotype-complextype-visio-xml"></a><span data-ttu-id="f46ef-102">RelLineTo_Type complexType (Visio XML)</span><span class="sxs-lookup"><span data-stu-id="f46ef-102">RelLineTo_Type complexType (Visio XML)</span></span>
 
-## <a name="type-information"></a><span data-ttu-id="1c312-103">型情報</span><span class="sxs-lookup"><span data-stu-id="1c312-103">Type information</span></span>
+## <a name="type-information"></a><span data-ttu-id="f46ef-103">型情報</span><span class="sxs-lookup"><span data-stu-id="f46ef-103">Type information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="1c312-104">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="1c312-104">**Namespace**</span></span> <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|<span data-ttu-id="1c312-105">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="1c312-105">**Schema file**</span></span> <br/> |<span data-ttu-id="1c312-106">VisioSchema15-06-05</span><span class="sxs-lookup"><span data-stu-id="1c312-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
-|<span data-ttu-id="1c312-107">**拡張ベース**</span><span class="sxs-lookup"><span data-stu-id="1c312-107">**Extension base**</span></span> <br/> |<span data-ttu-id="1c312-108">GeometryRow_Type</span><span class="sxs-lookup"><span data-stu-id="1c312-108">GeometryRow_Type</span></span>  <br/> |
+|<span data-ttu-id="f46ef-104">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="f46ef-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|<span data-ttu-id="f46ef-105">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="f46ef-105">**Schema file**</span></span> <br/> |<span data-ttu-id="f46ef-106">VisioSchema15-06-05</span><span class="sxs-lookup"><span data-stu-id="f46ef-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
+|<span data-ttu-id="f46ef-107">**拡張ベース**</span><span class="sxs-lookup"><span data-stu-id="f46ef-107">**Extension base**</span></span> <br/> |<span data-ttu-id="f46ef-108">GeometryRow_Type</span><span class="sxs-lookup"><span data-stu-id="f46ef-108">GeometryRow_Type</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="1c312-109">定義</span><span class="sxs-lookup"><span data-stu-id="1c312-109">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="f46ef-109">定義</span><span class="sxs-lookup"><span data-stu-id="f46ef-109">Definition</span></span>
 
 ```XML
           <xs:complexType name="RelLineTo_Type">
@@ -44,18 +44,18 @@ ms.locfileid: "32319986"
       
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="1c312-110">要素と属性</span><span class="sxs-lookup"><span data-stu-id="1c312-110">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="f46ef-110">要素と属性</span><span class="sxs-lookup"><span data-stu-id="f46ef-110">Elements and attributes</span></span>
 
-<span data-ttu-id="1c312-111">スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="1c312-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="f46ef-111">スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="f46ef-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="child-elements"></a><span data-ttu-id="1c312-112">子要素</span><span class="sxs-lookup"><span data-stu-id="1c312-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="f46ef-112">子要素</span><span class="sxs-lookup"><span data-stu-id="f46ef-112">Child elements</span></span>
 
-|<span data-ttu-id="1c312-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="1c312-113">**Element**</span></span>|<span data-ttu-id="1c312-114">**型**</span><span class="sxs-lookup"><span data-stu-id="1c312-114">**Type**</span></span>|<span data-ttu-id="1c312-115">**説明**</span><span class="sxs-lookup"><span data-stu-id="1c312-115">**Description**</span></span>|
+|<span data-ttu-id="f46ef-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="f46ef-113">**Element**</span></span>|<span data-ttu-id="f46ef-114">**型**</span><span class="sxs-lookup"><span data-stu-id="f46ef-114">**Type**</span></span>|<span data-ttu-id="f46ef-115">**説明**</span><span class="sxs-lookup"><span data-stu-id="f46ef-115">**Description**</span></span>|
 |:-----|:-----|:-----|
-|[<span data-ttu-id="1c312-116">Cell</span><span class="sxs-lookup"><span data-stu-id="1c312-116">Cell</span></span>](cell-element-rellineto-rowvisio-xml.md) <br/> |[<span data-ttu-id="1c312-117">Cell_Type</span><span class="sxs-lookup"><span data-stu-id="1c312-117">Cell_Type</span></span>](cell_type-complextypevisio-xml.md) <br/> ||
+|[<span data-ttu-id="f46ef-116">Cell</span><span class="sxs-lookup"><span data-stu-id="f46ef-116">Cell</span></span>](cell-element-rellineto-rowvisio-xml.md) <br/> |[<span data-ttu-id="f46ef-117">Cell_Type</span><span class="sxs-lookup"><span data-stu-id="f46ef-117">Cell_Type</span></span>](cell_type-complextypevisio-xml.md) <br/> ||
    
-### <a name="attributes"></a><span data-ttu-id="1c312-118">属性</span><span class="sxs-lookup"><span data-stu-id="1c312-118">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="f46ef-118">属性</span><span class="sxs-lookup"><span data-stu-id="f46ef-118">Attributes</span></span>
 
-<span data-ttu-id="1c312-119">なし。</span><span class="sxs-lookup"><span data-stu-id="1c312-119">None.</span></span>
+<span data-ttu-id="f46ef-119">なし。</span><span class="sxs-lookup"><span data-stu-id="f46ef-119">None.</span></span>
   
 
