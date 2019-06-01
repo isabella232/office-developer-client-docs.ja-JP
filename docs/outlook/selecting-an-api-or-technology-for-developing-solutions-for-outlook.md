@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: 01a46083-03d0-4333-920c-01a9f17f68cb
 description: この記事では Outlook 2013 および Outlook 2016 を拡張するために使用できる API とテクノロジについて説明しており、各自のシナリオに適した API またはテクノロジを判断する際に役立てることができます。
 localization_priority: Priority
-ms.openlocfilehash: 54931ea9235e549a8fb4338c425123b99c2b11e4
-ms.sourcegitcommit: 9716521f7bcd531f93be9855ae7835be20cdd0e2
+ms.openlocfilehash: ac7ad2f183ed71ae893745429c6d27793a983be3
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34250427"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538397"
 ---
 # <a name="selecting-an-api-or-technology-for-developing-solutions-for-outlook"></a>Outlook 用のソリューションを開発するための API またはテクノロジの選択
 
@@ -293,7 +293,7 @@ Office アドイン には Web テクノロジが使用されているので、�
 ![Process Outlook events](media/odc_ol15_ta_SelectingTech_Fig2-4.gif)
 ![Automate Outlook](media/odc_ol15_ta_SelectingTech_Fig2-5.gif)-->
 
-### <a name="additional-scenarios-supported-by-the-object-model-or-pia-since-outlook-2007"></a>Outlook 2007 以降のオブジェクト モデルまたは PIA でサポートされている追加のシナリオ
+### <a name="scenarios-supported-by-the-object-model-or-pia-since-outlook-2007"></a>Outlook 2007 以降のオブジェクト モデルまたは PIA でサポートされているシナリオ
 
 ベースライン シナリオに加えて、Outlook ソリューションが次のリストにあるシナリオのいずれかをサポートしている場合、使用しているソリューションが Outlook 2007 以降のバージョンでのみ実行されるものであれば、オブジェクトモデルや PIA も使用できます。 このセクションでは、Outlook オブジェクトモデルで各シナリオを拡張するために使用することができる主なオブジェクトまたはメンバーを指定します（Visual Studio オートメーションオブジェクトモデルの[IDTExtensibility2](https://docs.microsoft.com/dotnet/api/extensibility.idtextensibility2?view=visualstudiosdk-2017) インターフェイスと、Outlook オブジェクトモデルに統合できる Office オブジェクトモデルでの[IRibbonExtensibility](https://docs.microsoft.com/office/vba/api/Office.IRibbonExtensibility)インターフェイスを除く）。 
 
@@ -325,7 +325,7 @@ Office アドイン には Web テクノロジが使用されているので、�
 ![Store private data for solutions](media/odc_ol15_ta_SelectingAPI_Fig3-12.gif)
 -->
 
-### <a name="more-scenarios-supported-by-the-object-model-or-pia-since-outlook-2010"></a>Outlook 2010 以降のオブジェクト モデルまたは PIA でサポートされているその他のシナリオ
+### <a name="scenarios-supported-by-the-object-model-or-pia-since-outlook-2010"></a>Outlook 2010 以降のオブジェクト モデルまたは PIA でサポートされているシナリオ
 
 Outlook ソリューションを Outlook 2010 以降のバージョンでのみ実行する場合には、次のセクションで示されるシナリオをサポートするオブジェクト モデルまたは PIA を選択して使用できます。 このセクションでは、Outlook オブジェクトモデルで各シナリオを拡張するために使用できる主なオブジェクトまたはメンバーを指定します（Outlook オブジェクトモデルと統合できる Office オブジェクトモデル内の[IRibbonControl](https://docs.microsoft.com/office/vba/api/Office.IRibbonControl)、[IRibbonExtensibility](https://docs.microsoft.com/office/vba/api/Office.IRibbonExtensibility)、[IRibbonUI](https://docs.microsoft.com/office/vba/api/Office.IRibbonUI)インターフェースを除く）。 
    
@@ -347,7 +347,7 @@ Outlook ソリューションを Outlook 2010 以降のバージョンでのみ�
 ![Organize solution-specific folders](media/odc_ol15_ta_SelectingAPI_Fig4-7.gif)
 -->
 
-### <a name="additional-scenarios-supported-by-the-object-model-or-pia-since-outlook-2013"></a>Outlook 2013 以降のオブジェクト モデルまたは PIA でサポートされている追加のシナリオ
+### <a name="scenarios-supported-by-the-object-model-or-pia-since-outlook-2013"></a>Outlook 2013 以降のオブジェクト モデルまたは PIA でサポートされているシナリオ
 
 Outlook ソリューションを Outlook 2013 以降のバージョンでのみ実行する場合には、次のリソースで示されるシナリオをサポートするオブジェクト モデルまたは PIA を使用できます。
 
@@ -749,7 +749,7 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 
 ### <a name="security"></a>セキュリティ
 
-- [Outlook オブジェクト モデルのセキュリティ動作 (英語)(機械翻訳)](https://msdn.microsoft.com/library/4aa3b7c7-5f3f-41ce-bbf3-75d8ecbd6d4f%28Office.15%29.aspx)
+- [Outlook オブジェクト モデルのセキュリティ動作](https://msdn.microsoft.com/library/4aa3b7c7-5f3f-41ce-bbf3-75d8ecbd6d4f%28Office.15%29.aspx)
     
 - [Outlook 2010 でのシャットダウンの変更](https://msdn.microsoft.com/library/1b154d46-8d13-4c65-91e3-180b22603d03%28Office.15%29.aspx)
     
