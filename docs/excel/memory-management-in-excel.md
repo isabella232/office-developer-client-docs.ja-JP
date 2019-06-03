@@ -1,17 +1,17 @@
 ---
-title: Excel �̃������Ǘ�
+title: Excel のメモリ管理
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
 keywords:
-- xloper12 memory [excel 2007],managing memory in Excel,Excel stack,strings [Excel 2007], managing memory,memory management in Excel,XLOPER memory [Excel 2007],memory [Excel 2007], management guidelines
+- xloper12 メモリ[Excel 2007]、Excel によるメモリ管理、Excel スタック、文字列[Excel 2007]、メモリ管理、Excel によるメモリ管理、XLOPER メモリ[Excel 2007]、メモリ[Excel 2007]、管理ガイドライン
 localization_priority: Normal
 ms.assetid: 3bf5195b-6235-43cf-8795-0c7b0a63a095
-description: '�K�p�Ώ�: Excel 2013?| Office 2013?| Visual Studio'
+description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: f129dac2971f01c8ada15f0028958132b1945746
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33419542"
@@ -22,29 +22,29 @@ ms.locfileid: "33419542"
   
 効率的で安定した XLL を作成する場合には、メモリ管理が最も重要な課題となります。メモリを管理できないと Microsoft Excel で様々な問題が生じる可能性があります。たとえば、メモリ割り当てや初期化の効率が悪くなったり、小規模なメモリ リークが生じたりするといった比較的小さな問題から、Excel が不安定になるといった大きな問題などが起こる原因となります。
   
-�A�h�C���֘A�̐[���Ȗ��̍ł��ʓI�Ȍ������A�������Ǘ��̎��s�ɂ���܂��B���������āA�v���W�F�N�g��r���h����ہA��ѐ�������A�\���ɍl�������������Ǘ��̐헪��g�p����K�v������܂��B 
+メモリの管理ミスは、アドイン関連の深刻な問題の最も一般的な原因です。したがって、メモリ管理に関して一貫性のあるよく考え抜かれた戦略でプロジェクトを構築する必要があります。 
   
-Microsoft Office Excel 2007 �ł̓}���`�X���b�h�̃u�b�N�Čv�Z�̓����ɔ����A�������Ǘ�������܂ňȏ�ɕ��G�ɂȂ�܂����B�X���b�h �Z�[�t�ȃ��[�N�V�[�g�֐���쐬���ăG�N�X�|�[�g����ꍇ�́A�����̃X���b�h���A�N�Z�X�Ɋւ��ċ�������Ƃ��ɐ�����\�������鋣����Ԃ�Ǘ����Ȃ���΂Ȃ�܂���B
+Microsoft Office Excel 2007 では、マルチスレッドでのワークブック再計算が導入され、メモリ管理がより複雑になりました。スレッドセーフワークシート関数を作成、エクスポートする場合は、複数のスレッドのアクセスが集中したときに発生する可能性がある競合を管理する必要があります。
   
-���� 3 �̃f�[�^�\���̌^�Ɋւ��郁�����̍l������������܂��B
+次の 3 つのデータ構造型に関してメモリの留意事項があります。
   
-- **XLOPER** �� **XLOPER12**
+- **XLOPER**および**XLOPER12**
     
-- **XLOPER** �ł� **XLOPER12** �ł�Ȃ�������
+- **XLOPER**または**XLOPER12**にない文字列
     
-- **FP** �z��� **FP12** �z�� 
+- **FP**および**FP12**配列 
     
 ## <a name="xloperxloper12-memory"></a>XLOPER/XLOPER12 メモリ
 
-**XLOPER**/ **XLOPER12**データ構造体には、メモリブロック (strings (**xltypeStr**)、arrays (**xltypeMulti**)、および外部参照 (**xltyperef**) へのポインターを含むいくつかのサブタイプがあります。 また、 **xltypeMulti**配列には、他のメモリブロックをポイントすることによって、string **XLOPER**/ **xloper12**を含めることもできます。 
+**XLOPER**/ **XLOPER12**データ構造には、メモリブロックへのポインタを含むサブタイプ、つまり文字列（**xltypeStr**）、配列（**xltypeMulti**）、 および外部参照（**xltypeRef**）があります。 **xltypeMulti**配列には、文字列**XLOPER **/ **XLOPER12s**を含めることができ、これがさらに他のメモリブロックを指すこともできます。 
   
-**XLOPER**/ **XLOPER12** �́A���̂悤�ɂ������̕��@�ō쐬����܂��B 
+**XLOPER**/ **XLOPER12**は、いくつかの方法によって作成できます。 
   
-- Excel �ɂ���āBXLL �֐��ɓn�����������������Ƃ�
+- Excel によって。XLL 関数に渡される引数を準備するとき
     
-- Excel �ɂ���āBC API �Ăяo���� **XLOPER** �܂��� **XLOPER12** ���Ԃ����Ƃ� 
+- Excel によって。C API 呼び出しで**XLOPER**または**XLOPER12**を返すとき 
     
-- DLL �ɂ���āBC API �Ăяo���ɓn����������쐬����Ƃ�
+- DLL によって。C API 呼び出しに渡される引数を作成するとき
     
 - DLL によって。XLL 関数の戻り値を作成するとき
     
@@ -52,43 +52,43 @@ Microsoft Office Excel 2007 �ł̓}���`�X���b�h�̃u�b�N�
   
 - 関数コード外の DLL で静的ブロックとすることができます。この場合、メモリを割り当てたり解放したりする必要はありません。
     
-- �֐��R�[�h��� DLL �ŐÓI�u���b�N�Ƃ��邱�Ƃ��ł��܂��B���̏ꍇ�A����������蓖�Ă����������肷��K�v�͂���܂���B
+- 関数コード内の DLL で静的ブロックとすることができます。この場合、メモリを割り当てたり解放したりする必要はありません。
     
-- DLL �œ��I�Ɋ��蓖�Ă�����������ł��܂��B���̂��߂ɂ́A **malloc** �� **free**�A **new** �� **delete** �Ȃǂ̕��@������܂��B
+- DLLによって動的に割り当てられ、解放される方法はいくつかあります。**malloc**と** free**、**new**と**delete**などです。
     
-- Excel �œ��I�Ɋ��蓖�Ă邱�Ƃ��ł��܂��B
+- Excel で動的に割り当てることができます。
     
-���X���݂���\�������� **XLOPER**/ **XLOPER12** �������̐��� **XLOPER**/ **XLOPER12** �Ƀ����������蓖�Ă�ꂽ�󋵂̑��l���ɂ��čl������ƁA�ƂĂ������Ɏv���Ă����������܂���B�������A���ɋL���������̋K���ƃK�C�h���C���ɏ]���ƁA���G����啝�ɍ팸�ł��܂��B 
+考えうる**XLOPER**/ **XLOPER12**メモリーの起点数、および**XLOPER**/ ** XLOPER12**がそのメモリーが割り当てている状況の数を踏まえれば、この問題が非常に難しいであろうことに驚きはありません。しかしながら、いくつかの規則やガイドラインに従えば、複雑さは大幅に軽減されます。 
   
 ### <a name="rules-for-working-with-xloperxloper12"></a>XLOPER/XLOPER12 を扱うときの規則
 
-- ����������������AXLL �֐��Ɉ����Ƃ��ēn����� **XLOPERs**/ **XLOPER12** ��㏑�����Ȃ��ł��������B�������������͓ǂݎ���p�ɂ���K�v������܂��B�ڂ����́A�u **Excel �A�h�C�� (XLL) �J���ɂ�������m�̖��**�v�́u�C�� �v���[�X�̈�����ύX���� **XLOPER** �܂��� [XLOPER12](known-issues-in-excel-xll-development.md) ��Ԃ��v��������������B
+- XLL 関数に引数として渡される**XLOPER**/ **XLOPER12**のメモリを解放したり、上書きしたりしないでください。そのような引数は読み取り専用として扱います。詳しくは、「[Excel XLL 開発における既知の問題](known-issues-in-excel-xll-development.md)」の「引数をそのまま変更して**XLOPER**または**XLOPER12**を返す」を参照してください。
     
-- C API �ւ̌Ăяo���ŁADLL �ɕԂ���� **XLOPER**/ **XLOPER12** �� Excel ������������蓖�Ă��ꍇ: 
+- C API の呼び出しでDLL に返された**XLOPER**/ **XLOPER12**にExcelがメモリを割り当てた場合： 
     
-  - **XLOPER**/ **XLOPER12** ���s�v�ɂȂ�ꍇ�A [xlFree](xlfree.md) ��Ăяo���ă������������Ȃ���΂Ȃ�܂���B���̑��̕��@ (free�Adelete �Ȃ�) ��g�p���ă������������Ȃ��ł��������B
+  - [xlFree](xlfree.md)への呼び出しを使用して、**XLOPER**/ **XLOPER12**が不要になったら、メモリーを解放する必要があります。メモリを解放するのに、freeやdeleteなど他の方法を使用しないでください。
     
-  - �Ԃ����^�� **xltypeMulti** �̂Ƃ��A�z���� **XLOPER**/ **XLOPER12** ��㏑�����Ȃ��ł��������B���ɁA�����񂪊܂܂�Ă���ꍇ�A����ѕ�����ŏ㏑�����悤�Ƃ��Ă���̂ł͂Ȃ��ꍇ�ɒ��ӂ��Ă��������B
+  - 返された型が**xltypeMulti**の場合、文字列が含まれていたり、また文字列で上書きしようとしている際は特に、配列内の**XLOPER**/ **XLOPER12**を上書きしないでください。
     
-  - DLL �֐��̖߂�l�Ƃ��� **XLOPER**/ **XLOPER12** �� Excel �ɕԂ��ꍇ�AExcel �ɑ΂��āA�s�v�ɂȂ�����������K�v�����郁���������݂��邱�Ƃ�ʒm���Ȃ���΂Ȃ�܂���B 
+  - DLL 関数の戻り値として**XLOPER**/ **XLOPER12**をExcel に返す場合は、完了時に解放する必要があるメモリがあることをExcel に通知する必要があります。 
     
-- **** XLOPER/ **XLOPER12**では、C API 呼び出しへの戻り値として作成された**xlfree**のみを呼び出す必要があります。 
+- C API 呼び出しへの戻り値として作成された**XLOPER**/ **XLOPER12**に対してのみ、**xlFree**を呼び出す必要があります。 
     
-- DLL �֐��̖߂�l�Ƃ��� Excel �ɕԂ� **XLOPER**/ **XLOPER12** �� DLL ������������蓖�Ă��ꍇ�ɂ́ADLL ���������K�v�����郁���������݂��邱�Ƃ� Excel �ɒʒm���Ȃ���΂Ȃ�܂���B 
+- DLL が、DLL 関数の戻り値としてExcel に返したい**XLOPER**/ **XLOPER12**にメモリを割り当てている場合は、そのDLL が解放すべきメモリーがあることをExcel に通知する必要があります。 
     
 ### <a name="guidelines-for-memory-management"></a>メモリ管理のガイドライン
 
 - メモリを割り当てて解放するために使用するメソッドを DLL 内で一貫させます。異なるメソッドが混在しないようにします。メモリ クラスまたは構造体で使用するメソッドをラップし、対象メソッドが使用されている多くの場所でコードを変えなくても変更できるようにすることをお勧めします。
     
-- DLL �� **xltypeMulti** �z���쐬����ꍇ�A������Ƀ���������蓖�Ă���@���т����Ă��������B�K���������𓮓I�Ɋ��蓖�Ă邩�A�K���ÓI��������g�p���邩�̂ǂ��炩�ɂ��Ă��������B�������Ă����΁A��������������Ƃ��ɁA�������K��������邩�A������Ă͂Ȃ�Ȃ�����������܂��B 
+- DLL 内に**xltypeMulti**配列を作成するときは、文字列へのメモリ割り当て方法の一貫性を保ってください。常に動的にメモリに割り当てるか、常に静的メモリを使用してください。これによって、メモリを解放するときに、文字列を常に解放する必要があるか、あるいは解放しないべきかがわかります。 
     
-- Excel ���쐬���� **XLOPER**/ **XLOPER12** ��R�s�[����Ƃ��́AExcel �����蓖�Ă���������ڍ׃R�s�[���܂��B
+- Excel が作成した**XLOPER**/ **XLOPER12**をコピーするときは、Excel に割り当てられたメモリのディープコピーを作成してください。
     
-- Excel �����蓖�Ă������� **XLOPER**/ **XLOPER12** �� **xltypeMulti** �z���ɔz�u���Ȃ��ł��������B������̏ڍ׃R�s�[��쐬���A���̃R�s�[�ւ̃|�C���^�[��z���Ɋi�[���܂��B 
+- Excel が割り当てた文字列**XLOPER**/ **XLOPER12**を**xltypeMulti **配列内に配置しないでください。該当の文字列のディープコピーを作成し、そのコピーへのポインタを配列に格納してください。 
     
 ## <a name="freeing-excel-allocated-xloperxloper12-memory"></a>Excel が割り当てた XLOPER/XLOPER12 メモリを解放する
 
-���� XLL �R�}���h�ɂ��čl�����܂��B���̃R�}���h�́A **xlGetName** ��g�p���āADLL �̃p�X�ƃt�@�C������܂ޕ������擾���A **xlcAlert** ��g�p���Čx���_�C�A���O �{�b�N�X�ɕ\�����܂��B
+次のXLL コマンドを考えてみましょう。これは**xlGetName**を使用してDLL のパスとファイル名を含む文字列を取得し、**xlcAlert**を使用して警告ダイアログボックスに表示します。
   
 ```cs
 int WINAPI show_DLL_name(void)
@@ -106,19 +106,19 @@ int WINAPI show_DLL_name(void)
 
 ```
 
-���̊֐��� **xDllName** �ɂ���ă|�C���g����Ă��郁������K�v�Ƃ��Ȃ��Ȃ����Ȃ�ADLL ��p C API �֐��� 1 �ł��� [xlFree �֐�](xlfree.md)�ւ̌Ăяo����g�p���ĉ���ł��܂��B 
+関数が**xDllName**が指すメモリーを必要としなくなった場合、DLL専用のC API 関数の1つである[xlFree関数](xlfree.md)への呼び出しを使用して解放できます。 
   
-**xlFree** �֐��ɂ��Ă͊֐����t�@�����X �Z�N�V���� (�u [DLL �܂��� XLL ����̂݌Ăяo���\�� C API �֐�](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)�v�������������) �ɏڍׂ��L����Ă��܂����A�ȉ��̓_�ɒ��ӂ��Ă��������B
+**xlFree**関数は関数参照セクションに全て記述されています（[DLL、またはXLL からのみ呼び出すことができる C API 関数](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)を参照）が、以下の点に注意してください。
   
-- 1回の呼び出しで複数の**XLOPER**/ **XLOPER12**s にポインターを渡すことが**** できます。これは、excel の実行中のバージョンでサポートされている関数の引数の数によってのみ制限されます (excel 2003 では、excel 2007 以降では 30)。
+- **xlFree**への1回の呼び出しで、複数の**XLOPER**/ **XLOPER12**へのポインタを渡すことができます。ただし、実行中のExcelバージョン（Excel 2003では30、Excel 2007以降は255）でサポートされる関数引数の数によってのみ制限されます。
     
-- **xlFree** �͊܂܂�Ă���|�C���^�[�� **NULL** �ɐݒ肵�A���ɉ�����ꂽ **XLOPER**/ **XLOPER12** �������悤�Ƃ��Ă���S�ȏ�Ԃ�m�ۂ��܂��B **xlFree** �́A������ύX����B��� C API �֐��ł��B 
+- **xlFree**は、既に解放されている**XLOPER**/ **XLOPER12**の解放試行が安全か確かめるため、含まれているポインターを**NULL**に設定します。**xlFree**は、その引数を変更する唯一のC API 関数です。 
     
-- C API への呼び出しの戻り値には、メモリへのポインターが含まれているかどうかに関係なく、 **XLOPER**/ **XLOPER12**で**xlfree**を安全に呼び出すことができます。 
+- C API への呼び出しの戻り値に使用される**XLOPER**/ **XLOPER12**の上には、メモリーへのポインターが含まれているかどうかに関係なく、**xlFree**を安全に呼び出すことができます。 
     
 ## <a name="returning-xloperxloper12s-to-be-freed-by-excel"></a>Excel で解放される XLOPER/XLOPER12 を返す
 
-�O�̃Z�N�V�����ɋL����Ă���R�}���h���A **Boolean** **true** �������n�����Ƃ��ɂ� DLL �p�X�ƃt�@�C������Ԃ��A����ȊO�̏ꍇ�ɂ� **#N/A** ��Ԃ����[�N�V�[�g�֐��ɕύX����ꍇ�ɂ��čl���܂��BExcel �ɕԂ����O�� **xlFree** ��Ăяo���ĕ����񃁃��������ł��Ȃ����Ƃ͖����ł��B�������A�����ꂩ�̎��_�ŉ������Ȃ��ƁA�A�h�C���͊֐����Ăяo����邽�тɃ����� ���[�N��N�����܂��B���̖�������邽�߁Axlcall.h �� **xlbitXLFree** �Ƃ��Ē�`����Ă���A **XLOPER**/ **XLOPER12** �� **xltype** �t�B�[���h�Ƀr�b�g��ݒ�ł��܂��B�����ݒ肷�邱�Ƃɂ���āA�l�̃R�s�[���I�������Ƃ��ɁA�Ԃ��ꂽ��������������K�v�����邱�Ƃ� Excel �ɒʒm���܂��B 
+事前のセクションのコマンド例を変更し、**Boolean****true**引数、および **#N/A**その他を渡すとDLLパスとファイル名を返すワークシート関数に変更したいとします。 文字列メモリを解放するため、Excel関数に**xlFree**を呼び出すことは明らかにできません。ただし、それがある時点で解放されていない場合、アドインは関数が呼び出されるたびにメモリをリークします。この問題を回避するには、 **XLOPER**/ **XLOPER12**の**xltype**フィールドにxcall.h の**xlbitXLFree**と定義してビットを設定します。 これを設定すると、値のコピーが終了したら、返されたメモリを解放する必要があることがExcelに伝えられます。 
   
 ### <a name="example"></a>例
 
@@ -140,19 +140,19 @@ LPXLOPER12 WINAPI get_DLL_name(int calculation_trigger)
 }
 ```
 
-**XLOPER**/ **XLOPER12** ��g�p���� XLL �֐��́A **XLOPER**/ **XLOPER12** �ւ̃|�C���^�[��擾���߂���̂Ƃ��Ē�`����K�v������܂��B���̊֐���Ŏg�p����Ă���T���v���̐ÓI **XLOPER12** �̓X���b�h �Z�[�t�ł͂���܂���B�s�K�؂ɂ���̊֐���X���b�h �Z�[�t�Ƃ��ēo�^���邱�Ƃ͂ł��܂����A����X���b�h�� **xRtnValue** �̏�����I������O�ɕʂ̃X���b�h���㏑�����Ă��܂��Ƃ����댯�������܂��B 
+**XLOPER**/ **XLOPER12**を使用するXLL 関数は、**XLOPER**/ ** XLOPER12**へのポインタを取得して返すものとして宣言する必要があります。この例の関数内での静的**XLOPER12**の使用は、スレッドセーフではありません。この関数をスレッドセーフとして誤って登録することはできますが、**xRtnValue**が別のスレッドで終了する前に1つのスレッドによって上書きされる危険があります。 
   
-**xlbitXLFree** �̐ݒ�́A���蓖�Ă�s�� Excel �R�[���o�b�N�ւ̌Ăяo����ɍs���K�v������܂��B�ݒ���ɍs���ƁA�㏑������āA�K�v�ȓ��삪�����܂���B�ʂ� C API �֐��ւ̌Ăяo���Œl������Ƃ��Ďg�p���Ă��烏�[�N�V�[�g�ɖ߂��ꍇ�ɂ́A���̂悤�ȌĂяo����ɂ��̃r�b�g��ݒ肵�Ă��������B���̂悤�ɂ��Ȃ��ƁA **XLOPER**/ **XLLOPER12** �^�̃`�F�b�N����܂ŁA���̃r�b�g��}�X�N���Ȃ��֐����������Ă��܂��܂��B 
+それを割り当てるExcel コールバックへの呼び出しの後に**xlbitXLFree**を設定する必要があります。これより前に設定した場合は、上書きされ、必要な効果を発揮しません。ワークシートに返す前に別のC API 関数の呼び出しで引数として値を使用する予定の場合は、そのような呼び出しの後にこのビットを設定する必要があります。そうしないと、**XLOPER**/ **XLLOPER12**型をチェックする前に、このビットをマスクしない関数を混同してしまうでしょう。 
   
 ## <a name="returning-xloperxloper12s-to-be-freed-by-the-dll"></a>DLL で解放される XLOPER/XLOPER12 を返す
 
-���l�̖�肪�A **XLOPER**/ **XLOPER12** �̃������� XLL �����蓖�ĂāAExcel �ɖ߂��ꍇ�ɐ����܂��BExcel �́Axlcall.h �� **xlbitDLLFree** �Ƃ��Ē�`����Ă���A **XLOPER**/ **XLOPER12** �� **xltype** �t�B�[���h�ɐݒ�\�ȕʂ̃r�b�g��F�����܂��B 
+これと同様の問題は、XLL が**XLOPER**/ **XLOPER12**にメモリを割り当て、それをExcel に返したい場合に発生します。 Excel は、xlcall.hの**xlbitDLLFree**として定義される**XLOPER**/ **XLOPER12**の**xltype**フィールドに設定できる別のビットを認識します。 
   
-When Excel receives **an XLOPER**/ **XLOPER12** with this bit set, it tries to call a function that should be exported by the XLL called [xlAutoFree](xlautofree-xlautofree12.md) (for **XLOPER**s) or **xlAutoFree12** (for **XLOPER12**s). This function is described more fully in the function reference (see [Add-in Manager and XLL Interface Functions](add-in-manager-and-xll-interface-functions.md)), but an example minimal implementation is given here. Its purpose is to free the **XLOPER**/ **XLOPER12** memory in a way that is consistent with how it was originally allocated. 
+このビットが設定された**1 XLOPER**/ **XLOPER12**を受け取ると、Excelは[xlAutoFree](xlautofree-xlautofree12.md)という名前の、XLL によってエクスポートされるであろう関数を呼び出そうとします。  （ **XLOPER**） や **xlAutoFree12**の場合、 （**XLOPER12** の場合）。この機能については、関数リファレンス（[アドインマネージャおよびXLL インタフェース関数](add-in-manager-and-xll-interface-functions.md)を参照）で詳細に記載されていますが、ここでは最小限の実装例を示します。その目的は、 **XLOPER**/ **XLOPER12**メモリを、元々割り当てられていた方法と一致する方法で解放することです。 
   
 ### <a name="examples"></a>例
 
-���̊֐���́A�O�q�̊֐��Ɠ����ł��B��O�́ADLL ���̑O�ɁuThe full pathname for this DLL is�v�Ƃ����e�L�X�g���܂܂�Ă���_�ł��B
+次の関数例は、DLL名の前に「このDLLのフルパス名は」というテキストが含まれている点を除けば、この前の関数と同じです。
   
 ```cs
 #include <string.h>
@@ -184,7 +184,7 @@ LPXLOPER12 WINAPI get_DLL_name_2(int calculation_trigger)
 }
 ```
 
-�O�q�̊֐���G�N�X�|�[�g�����AXLL �ɂ����� **xlAutoFree12** �̍ŏ����̎�������Ɏ����܂��B 
+前の関数をエクスポートしたXLLでの**xlAutoFree12**の最低限の実装は次のとおりです。 
   
 ```cs
 void WINAPI xlAutoFree12(LPXLOPER12 p_oper)
@@ -194,15 +194,15 @@ void WINAPI xlAutoFree12(LPXLOPER12 p_oper)
 }
 ```
 
-���̎����́AXLL �� **XLOPER12** �����񂾂���߂��A�����̕������ **malloc** �݂̂�g�p���Ċ��蓖�Ă�ꍇ�Ɍ���g�p�ł��܂��B���̃e�X�g 
+この実装は、XLL が**XLOPER12**文字列のみを返し、それらの文字列が**malloc**を使用してのみ割り当てられる場合にのみ満たされます。テストは 
   
  ` if(p_oper->xltype == xltypeStr) `
   
-�͎��s���邱�Ƃɒ��ӂ��Ă��������B **xlbitDLLFree** ���ݒ肳��Ă��邽�߂ł� 
+**xlbitDLLFree**が設定されている場合、失敗することに注意してください。 
   
-��ʂɁA **xlAutoFree** �� **xlAutoFree12** ��������AXLL �쐬�� **xltypeMulti** �z��� **xltypeRef** �O���Q�ƂɊ֘A���������������ł���悤�ɂ��Ȃ���΂Ȃ�܂���B 
+一般に、**xlAutoFree**および**xlAutoFree12**は、XLL で作成された** xltypeMulti**配列および**xltypeRef**外部参照に関連付けられているメモリを解放するように実装する必要があります。 
   
-すべての場合に動的に割り当てられた **XLOPER** と **XLOPER12** を返すように XLL 関数を実装することもできます。 その場合、**xlbitDLLFree** を、サブタイプに関係なく、そうしたすべての **XLOPER** と **XLOPER12** で設定する必要があります。 また、 **xlAutoFree**と**xlAutoFree12**を実装して、このメモリが解放され、 **XLOPER**/ **XLOPER12**内でポイントするメモリがあるようにする必要もあります。 これは、戻り値をスレッド セーフにする 1 つの方法です。 たとえば、前述の関数を次のように書き換えることができます。
+動的に割り当てられた**XLOPER**および**XLOPER12**を返すように、XLL 関数を実装するということもできます。 この場合、サブタイプに関係なく、**xlbitDLLFree**をそのような**XLOPER**および**XLOPER12**すべてに設定する必要があります。 また、**xlAutoFree**および**xlAutoFree12**を実装して、このメモリーが解放され、**XLOPER**/ **XLOPER12**内で指定されているすべてのメモリーを解放する必要もあります。 これは、戻り値をスレッド セーフにする 1 つの方法です。 たとえば、前述の関数を次のように書き換えることができます。
   
 ```cs
 #include <string.h>
@@ -245,50 +245,50 @@ void WINAPI xlAutoFree12(LPXLOPER12 p_oper)
 }
 ```
 
-**xlAutoFree** �� **xlAutoFree12** �ɂ��ďڂ����́A�u [xlAutoFree/xlAutoFree12](xlautofree-xlautofree12.md)�v��������������B
+**xlAutoFree**および**xlAutoFree12**について詳しくは、[xlAutoFree/xlAutoFree12](xlautofree-xlautofree12.md)を参照してください。
   
 ## <a name="returning-modify-in-place-arguments"></a>変更インプレース引数を返す
 
-Excel では、XLL 関数はインプレースで引数を変更して値を返すことができます。この操作は、ポインターとして渡された引数でのみ行うことができます。このような処理を行うには、関数を登録するときに、変更対象の引数を Excel に通知しなければなりません。  
+Excel では、XLL 関数はインプレースで引数を変更して値を返すことができます。この操作は、ポインターとして渡された引数でのみ行うことができます。このような処理を行うには、関数を登録するときに、変更対象の引数を Excel に通知しなければなりません。 
   
-���̕��@�Œl��Ԃ����Ƃ́A�|�C���^�[�œn�����Ƃ��ł��邷�ׂẴf�[�^�^�ŃT�|�[�g����Ă��܂����A���Ɉȉ��̌^�ŕ֗��ł��B
+この方法で値を返すことは、ポインターで渡すことができるすべてのデータ型でサポートされていますが、特に以下の型で便利です。
   
-- �������J�E���g����Anull �ŏI������ ASCII �o�C�g������
+- 長さが計測され、null で終了する ASCII バイト文字列
     
-- �������J�E���g����Anull �ŏI������ Unicode ���C�h���������� (Excel 2007 �ȍ~)
+- 長さが計測され、null で終了する Unicode ワイド文字列（Excel 2007以降）
     
-- **FP** ���������_�z�� 
+- **FP** 浮動小数点配列 
     
-- **FP12** ���������_�z�� (Excel 2007 �ȍ~) 
+- **FP12** 浮動小数点配列（Excel 2007以降） 
     
 > [!NOTE]
-> [!����] ���̕��@�ŁA **XLOPER** �� **XLOPER12** ��Ԃ��Ȃ��ł��������B�ڂ����́A�u [Excel �A�h�C�� (XLL) �J���ɂ�������m�̖��](known-issues-in-excel-xll-development.md)�v��������������B 
+> この方法で**XLOPER**または**XLOPER12**を返さないでください。詳しくは、[Excel XLL開発における既知の問題](known-issues-in-excel-xll-development.md)を参照してください。 
   
-The advantage of using this technique, instead of just using the return statement, is that Excel allocates the memory for the return values. Once Excel has finished reading the returned data, it releases the memory. This takes the memory management tasks away from the XLL function. This technique is thread safe: If called concurrently by Excel on different threads, each function call on each thread has its own buffer.
+単にreturn 文を使用するのではなく、この手法を使用する利点は、Excel が戻り値にメモリを割り当てることです。 Excel が返されたデータの読み取りを終了すると、メモリを解放します。これはXLL の機能からメモリ管理作業を取り除きます。この手法はスレッドセーフです。Excel によって異なるスレッドで同時に呼び出された場合、各スレッドの各関数呼び出しにはそれぞれでバッファーがあります。
   
-����́A���ɑO�ɂ������f�[�^�^�Ŗ𗧂����܂��B **XLOPER**/ **XLOPER12** �ɑ΂��đ��݂���Ԃ��ꂽ���ƂɃ������������邽�߂� DLL �ւ̃R�[���o�b�N ���J�j�Y���́A�P���ȕ������ **FP**/ **FP12** �z��ɂ͂Ȃ����߂ł��B���̂��߁ADLL �쐬�̕�����܂��͕��������_�z���Ԃ��ꍇ�A���̑I���������܂��B 
+**XLOPER**/ **XLOPER12**に対して存在するメモリの追返還を解放するためDLL に呼び戻すメカニズムは、単純な文字列および**FP**/ **FP12**配列には存在しないため、特に上記のデータ型の場合に役立ちます。したがって、DLL で作成された文字列または浮動小数点配列を返すときは、次の選択肢があります。 
   
-- ���I�Ɋ��蓖�Ă�ꂽ�o�b�t�@�[�ɌŒ�|�C���^�[��ݒ肵�A���̃|�C���^�[��Ԃ��܂��B�֐�����ɌĂяo���Ƃ��ɁA(1) �|�C���^�[�� null �ł͂Ȃ����Ƃ�`�F�b�N���A(2) �ȑO�̌Ăяo���Ŋ��蓖�Ă�ꂽ���\�[�X�������A�|�C���^�[�� null �Ƀ��Z�b�g���܂��B(3) �V���Ɋ��蓖�Ă�ꂽ������ �u���b�N�ɂ��̃|�C���^�[��ė��p���܂��B
+- 永続的ポインタを動的に割り当てられたバッファに設定し、ポインタを返します。次の関数呼び出しでは、（1）ポインタがnull でないことを確認し、（2）事前の呼び出しで割り当てられたリソースを解放し、ポインタをnull にリセットし、（3）新しく割り当てられたメモリブロックへのポインタを再利用します。
     
 - 文字列と配列を、解放する必要がない静的バッファーに作成し、そのバッファーへのポインターを返します。
     
-- ������C���v���[�X�ŕύX���܂��B���̍ہA������܂��͔z��� Excel �O�̗̈�ɒ��ڏ������݂܂��B
+- 引数をインプレースで変更します。その際、文字列または配列を Excel 外の領域に直接書き込みます。
     
-����ȊO�̕��@�Ń��\�[�X������[�X����ɂ́A **XLOPER**/ **XLOPER12** ��쐬���A **xlbitDLLFree** �� **xlAutoFree**/ **xlAutoFree12** ��g�p����K�v������܂��B 
+それ以外の場合は、**XLOPER**/ **XLOPER12**を作成し、リソースを解放するため**xlbitDLLFree**および**xlAutoFree** / **xlAutoFree12 **を使用する必要があります。 
   
-The last option might be the simplest in those cases in which you are being passed an argument of the same type as the return value. The key point to remember is that the buffer sizes are limited and you must be very careful not to overrun them. Getting this wrong could crash Excel. Buffer sizes for strings and **FP**/ **FP12** arrays are discussed next. 
+最後の選択肢は、戻り値と同じ型の引数が渡される場合には最も簡単な方法です。覚えておきたい重要な点はバッファサイズが限られていることで、オーバーランさせないよう非常に注意しなければなりません。これを誤ると、Excelがクラッシュする可能性があります。文字列と**FP**/ **FP12**配列のバッファサイズについては次に説明します。 
   
 ## <a name="strings"></a>文字列
 
 文字列のメモリ管理に関する問題が、アプリケーションとアドインが不安定になる最も一般的な原因です。文字列を処理する方法 (null 終了または長さカウント (あるいはその両方)、静的バッファーまたは動的バッファー、固定長またはほぼ無制限の長さ、オペレーティング システム管理メモリ (たとえば、OLE Bstr など)、アンマネージ文字列など) が多様なことを考慮すると、これは理解できないことではありません。
   
-C/C++ �v���O���}�́Anull �I���̕�����ɂ悭���ʂ��Ă��܂��B�W�� C ���C�u�����́A���̂悤�ȕ������������邽�߂ɐ݌v����Ă��܂��B�R�[�h��̐ÓI�����񃊃e�����́Anull �I��������ɃR���p�C������܂��B�܂��AExcel �ł́A�ʏ�� null �I���ł͂Ȃ������J�E���g�̕������������܂��B��������������g�ݍ��킳��Ă���󋵂ł́A������ƕ����񃁃��������������@�Ɋւ��āADLL/XLL ��Ŗ��m����ѐ��̂�����@���K�v�ƂȂ�܂��B
+C/C++ プログラマは、null で終わる文字列には馴染みが深いです。標準Cライブラリは、そのような文字列を扱うように設計されています。コード内の静的文字列リテラルは、null で終わる文字列にコンパイルされます。別の方法として、Excelは一般的にnull で終了しない長さを数えた文字列を扱います。これらの諸事実から、文字列と文字列メモリの処理方法に関して、DLL / XLL内では明確で一貫したアプローチが必要です。
   
-�ł��ʓI�Ȗ���ȉ��Ɏ����܂��B
+最も一般的な問題を以下に示します。
   
-- �L���ȃ|�C���^�[��K�v�Ƃ����̂̃|�C���^�[�̗L�������̂�`�F�b�N���Ȃ��܂��͂ł��Ȃ��֐��ɁAnull �܂��͖����ȃ|�C���^�[���n�����B
+- 有効なポインターを予期し、ポインター自体の妥当性自体を検査しない、または検査できない関数に、null または無効なポインターを渡すこと。
     
-- �������܂�镶����̒����ɑ΂��ăo�b�t�@�[�̒�����`�F�b�N���Ȃ��܂��͂ł��Ȃ��֐����A������o�b�t�@�[�̋��E��I�[�o�[��������B
+- 書き込まれる文字列の長さに対してバッファーの長さをチェックしないまたはできない関数が、文字列バッファーの境界をオーバーランする。
     
 - 静的文字列バッファー メモリ、または既に解放された文字列バッファー メモリ、解放する方法と一貫しない方法で割り当てられた文字列バッファー メモリを解放しようとしている。
     
@@ -296,47 +296,47 @@ C/C++ �v���O���}�́Anull �I���̕�����ɂ悭��
     
 ### <a name="rules-for-strings"></a>文字列の規則
 
-**XLOPER**/ **XLOPER** ��g�p����ꍇ�A�]���ׂ��������̋K���ƃK�C�h���C��������܂��B�K�C�h���C���́A�O�̃Z�N�V�����Ɠ����ł��B������p�ɓ��ʂɊg�����ꂽ�K��������ɋL���܂��B
+**XLOPER**/ **XLOPER**と同様に、従う規則とガイドラインがあります。ガイドラインは前のセクションで示したものと同じです。ここでの規則は、特に文字列に関する規則の拡張です。
   
- **�K��:**
+ **規則:**
   
-- XLL �֐��Ɉ����Ƃ��ēn����郁�����������Ȃ��ł��������B�܂��AXLL �֐��Ɉ����Ƃ��ēn����镶���� **XLOPER**/ **XLOPER12** �܂��͒P���Ȓ����J�E���g�����񂠂邢�� null �I���������㏑�����Ȃ��ł��������B�������������͓ǂݎ���p�ɂ���K�v������܂��B
+- XLL関数に引数として渡された文字列**XLOPER**/ **XLOPER12**、単純な長さ計測済み文字列またはnull で終わる文字列を、メモリーを解放したり上書きしたりしないでください。そのような引数は読み取り専用として扱います。
     
-- C API �R�[���o�b�N�֐��̖߂�l�̕����� **XLOPER**/ **XLOPER12** �� Excel ������������蓖�Ă�ꍇ�A **xlFree** ��g�p���ĉ�����邩�AXLL �֐����� Excel �ɕԂ��ꍇ�ɂ� **xlbitXLFree** ��ݒ肵�Ă��������B 
+- ExcelがC API コールバック関数の戻り値に文字列**XLOPER**/ ** XLOPER12**にメモリを割り当てる場合は、**xlFree**を使用して解放するか、XLL関数からExcelに返す場合は**xlbitXLFree**を設定します。 
     
-- DLL �� **XLOPER**/ **XLOPER12** �̕�����o�b�t�@�[�𓮓I�Ɋ��蓖�Ă�ꍇ�A���蓖�Ď��ƈ�т������@�ŉ�����邩�AXLL �֐����� Excel �ɕԂ����ꍇ�ɂ� **xlbitDLLFree** ��ݒ肵�Ă��� **xlAutoFree**/ **xlAutoFree12** �ŉ�����܂��B
+- DLL が**XLOPER**/ **XLOPER12**に文字列バッファを動的に割り当てる場合は、終了時に割り当てた方法と一致する方法で解放するか、XLL関数からExcelに返すならば**xlbitDLLFree**を設定し**xlAutoFree**/ **xlAutoFree12**を開放します。
     
-- C API �ւ̌Ăяo���� DLL �ɕԂ���� **xltypeMulti** �z��� Excel ������������蓖�Ă��ꍇ�A�z���̂ǂ̕����� **XLOPER**/ **XLOPER12** ��㏑�����Ȃ��ł��������B���������z��� **xlFree** �ɂ���Ă̂݉�����Ă��������B�܂��� XLL �֐��ɂ���ĕԂ����ꍇ�ɂ́A **xlbitXLFree** ��ݒ肵�ĉ�����܂��B
+- Excel がC API の呼び出しでDLL に返された**xltypeMulti**配列にメモリを割り当てている場合は、配列内で文字列**XLOPER**/ **XLOPER12**を上書きしないでください。そのような配列は、**xlFree**を使用して解放、またはXLL関数によって返されるならは**xlbitXLFree**を設定することによってのみ解放しなくてはいけません。
     
 ### <a name="string-types-supported"></a>サポートされる文字列型
 
-**C API xltypeStr XLOPER/XLOPER12**
+**C API xltypeStr XLOPER/XLOPER12s**
 
-|**�o�C�g������: **XLOPER****|**���C�h����������: **XLOPER12****|
+|**バイト文字列：** XLOPER ****|**ワイド文字列：** XLOPER12 ****|
 |:-----|:-----|
-|���ׂẴo�[�W������ Excel  <br/> |Excel 2007 �ȍ~  <br/> |
-|�ő咷:255 �g�� ASCII �o�C�g  <br/> |最大長: 32,767 Unicode 文字  <br/> |
-|最初の (符号なし) バイト = 長さ  <br/> |�ŏ��� Unicode ���� = ����  <br/> |
+|すべてのバージョンの Excel  <br/> |Excel 2007 以降  <br/> |
+|最大長：255拡張ASCIIバイト  <br/> |最大長: 32,767 Unicode 文字  <br/> |
+|最初の (符号なし) バイト = 長さ  <br/> |最初の Unicode 文字 = 長さ  <br/> |
    
 > [!IMPORTANT]
-> [!�D�V] **XLOPER** ������܂��� **XLOPER12** ������ null �ŏI������Ƃ͑z�肵�Ȃ��ł��������B 
+> **XLOPER**または**XLOPER12**文字列のnull 終了を想定しないでください。 
   
-**C/C++ ������**
+**C / C ++文字列**
 
-|**�o�C�g������**|**���C�h����������**|
+|**バイト文字列**|**ワイド文字列**|
 |:-----|:-----|
-|Null 終了 (**char** *)"C" の最大長:255 拡張 ASCII バイト  <br/> |Null 終了 (**wchar_t** *) "C%" 最大長: 32,767 Unicode 文字  <br/> |
-|長さカウント (**unsigned char** *) "D"  <br/> |長さカウント (**wchar_t** *) "D%"  <br/> |
+|null 終了（**char** *） "C"最大長：255拡張ASCIIバイト  <br/> |null 終了（**wchar_t** *） "C％"最大長32,767のUnicode文字  <br/> |
+|長さ計測済（**unsigned char** *） "D"  <br/> |長さ計測済（**wchar_t ** *） "D％"  <br/> |
    
 ### <a name="strings-in-xltypemulti-xloperxloper12-arrays"></a>xltypeMulti XLOPER/XLOPER12 配列内の文字列
 
-�ꍇ�ɂ���ẮAExcel ���ADLL/XLL �Ŏg�p���� **xltypeMulti** �z���쐬���܂��BXLM ���@�\�̒��ɂ́A���������z���Ԃ���̂����܂��B���Ƃ��΁AC API �֐� **xlfGetWorkspace** �́A����  *44*  ���n�����ƁA���ݓo�^����Ă��邷�ׂĂ� DLL �v���V�[�W����L�q���镶�����܂ޔz���Ԃ��܂��BC API �֐� **xlfDialogBox** �́A�z��̈����̕ύX�ς݃R�s�[ (������̏ڍ׃R�s�[��܂݂܂�) ��Ԃ��܂��BXLL �� **xltypeMulti** �z��ɑ�������ł��ʓI�ȏ�ʂ́AXLL �֐��Ɉ����Ƃ��ēn���ꍇ��A�͈͎Q�Ƃ��炱�̌^�ɋ����I�ɂ͂ߍ��ޏꍇ�ł��B��҂̏ꍇ�AExcel �̓\�[�X �Z���̕�����̏ڍ׃R�s�[��쐬���A�z���ł�����|�C���g���܂��B 
+場合によっては、Excel はDLL / XLL で使用するための**xltypeMulti**配列を作成します。いくつかのXLM 情報関数はそのような配列を返します。たとえば、C API 関数**xlfGetWorkspace**は、引数*44*を渡されると、現在登録されているすべてのDLLプロシージャを記述する文字列を含む配列を返します。C API 関数**xlfDialogBox**は、文字列のディープコピーを含む配列引数の修正コピーを返します。おそらく、XLL で**xltypeMulti**配列に遭遇する最も一般的な状況は、配列がXLL 関数への引数として渡されたか、または範囲参照から強制された場所がこの型となっているかです。後者の場合、Excelはソースセル内の文字列のディープコピーを作成し、配列内でこれらを指します。 
   
-DLL �ł��������������ύX����ꍇ�ɂ́A�Ǝ��̏ڍ׃R�s�[��ݒ肷��K�v�����肊�܂��B�Ǝ��� **xltypeMulti** �z���쐬����ꍇ�ɂ́A�z���� Excel �ɂ���Ċ��蓖�Ă�ꂽ������ **XLOPER**/ **XLOPER12** ��z�u���Ȃ��ł��������B�z�u����ƁA��قǐ���������ł��Ȃ�������A�܂���������ł��Ȃ��Ȃ����肷�鋰�ꂪ����܂��B�����x�A������̏ڍ׃R�s�[��쐬���A�z���ɂ��̃R�s�[�ւ̃|�C���^�[��i�[���Ȃ���΂Ȃ�܂���B
+DLL 内の文字列を変更したい場合は、そのディープコピーを作成してください。独自の**xltypeMulti**配列を作成しているときは、その中にExcel 割り当て文字列**XLOPER**/ **XLOPER12**を配置しないでください。後でそれらが正しく解放されない、またはまったく解放されないという危険性があります。やはり、文字列のディープコピーを作成し、そのコピーへのポインタを配列に格納してください。
   
- **Examples**
+ **例**
   
-���̊֐���́A�����J�E���g�� Unicode ������̓��I�Ɋ��蓖�Ă�ꂽ�R�s�[��쐬���܂��B���̗�ł́A�Ăяo�����́A **delete**[] ��g�p���Ċ��蓖�Ă�ꂽ��������ŏI�I�ɉ������K�v�����邱�ƁA����у\�[�X������� null �I���Ƃ͑z�肳��Ă��Ȃ����Ƃɒ��ӂ��Ă��������B�R�s�[������́A���S�̂��߂ɕK�v�ł���ΐ؂�l�߂��Anull �ŏI�����܂���B
+次の関数例は、長さ計測済のUnicode 文字列の動的に割り当てられたコピーを作成します。呼び出し側は、この例で割り当てられたメモリを**delete**[]を使用して最終的に解放する必要があります。また、ソース文字列はnull で終了するとは見なされません。安全のために必要であればコピー文字列は切り捨てられ、それはnull で終了しません。
   
 ```cs
 #include <string.h>
@@ -361,7 +361,7 @@ wchar_t * deep_copy_wcs(const wchar_t *p_source)
 }
 ```
 
-This function can then be safely used to copy an **XLOPER12**, as shown in the following exportable XLL function that returns a copy of its argument if it is a string. All other types are returned as a zero-length string. Note that ranges are not handled—the function returns **#VALUE!**. The function must be registered as taking a type U argument so that references are passed in as values. This is equivalent to the built-in worksheet function **T()** except that **AsText** also converts errors to zero-length strings. This code example assumes that **xlAutoFree12** frees the passed-in pointer, and also its contents, using **delete**.
+引数が文字列の場合、引数のコピーを返す次のエクスポート可能なXLL 関数に示すように、この関数は**XLOPER12**のコピーに安全に使用できます。他のすべての型は長さゼロの文字列として返されます。領域は処理されないことに注意してください 。**#VALUE!** の関数が返されます。この関数は、参照が値として渡されるように、U型の引数を取るものとして登録する必要があります。これは組み込みワークシート関数 **T()** と同じですが、**AsText**もエラーを長さゼロの文字列に変換します。このコード例では、**delete**を使用して、**xlAutoFree12**が渡されたポインターとその内容を解放すると想定しています。
   
 ```cs
 LPXLOPER12 WINAPI AsText(LPXLOPER12 pArg)
@@ -398,18 +398,18 @@ LPXLOPER12 WINAPI AsText(LPXLOPER12 pArg)
 
 ### <a name="returning-modify-in-place-string-arguments"></a>変更インプレース文字列引数を返す
 
-**F**�A **G**�A **F%** �A **G%** �^�Ƃ��ēo�^���ꂽ�����́A�C���v���[�X�ŕύX�ł��܂��BExcel �͂����̌^�̕�����������������Ƃ��ɁA�ő咷�̃o�b�t�@�[��쐬���܂��B���ɁA�Ώە����񂪂��Ȃ�Z���ꍇ�ł����Ă�A�����������o�b�t�@�[�ɃR�s�[���܂��B���̂��߁AXLL �֐��͓�����������ɖ߂�l�𒼐ڏ������ނ��Ƃ��ł��܂��B 
+型**F**、**G**、**F％**、および**G％** として登録された引数は、その場で変更ができます。Excelがこれらの型の文字列引数を準備しているとき、最大長バッファを作成します。その後、たとえこの文字列が非常に短くても、引数文字列をその中にコピーします。これにより、XLL関数はその戻り値を同じメモリに直接書き込むことができます。 
   
-���������^�̂��߂Ɏ�蕪������o�b�t�@�[ �T�C�Y�͎��̂Ƃ���ł��B
+こうした型のために取り分けられるバッファー サイズは次のとおりです。
   
 - **バイト文字列:** 256 バイト (長さカウンター (G 型) または null 終端 (F 型) を含みます)。 
     
 - **Unicode 文字列:** 32,768 ワイド文字 (65,536 バイト)(長さカウンター (G% 型) または null 終端 (F% 型) を含みます)。 
     
 > [!NOTE]
-> [!����] Visual Basic for Applications (VBA) ���炱�������֐��𒼐ڌĂяo�����Ƃ͂ł��܂���B�\���ȑ傫���̃o�b�t�@�[�����蓖�Ă��Ă��邱�Ƃ�m�F�ł��Ȃ����߂ł��B���������֐��́A�\���ȑ傫���̃o�b�t�@�[�𖾎��I�ɓn���ʂ� DLL ����݈̂��S�ɌĂяo�����Ƃ��ł��܂��B 
+> バッファが十分な大きさで割り当てられていることは確認できないため、そのような関数をVisual Basic for Applications（VBA）から直接呼び出すことはできません。十分に大きいバッファを明示的に渡した場合にのみ、他のDLLから安全にそのような関数を呼び出すことができます。 
   
-�W�����C�u�����֐� **wcsrev** ��g�p���āA�n���ꂽ null �I���̃��C�h�����𔽓]������ XLL �֐��̗����Ɏ����܂��B���̏ꍇ�̈����́A�^ **F%** �Ƃ��ēo�^����܂��B
+これは、標準ライブラリー関数**wcsrev**を使用して、渡されたnull で終わるワイド文字列を元に戻すXLL 関数の例です。この場合の引数は、タイプ{3 F％** として登録されます。
   
 ```cs
 void WINAPI reverse_text_xl12(wchar_t *text)
@@ -420,25 +420,25 @@ void WINAPI reverse_text_xl12(wchar_t *text)
 
 ## <a name="persistent-storage-binary-names"></a>永続記憶 (バイナリ名)
 
-Binary names are defined and associated with blocks of binary, that is, unstructured, data that is stored together with the workbook. They are created using the function [xlDefineBinaryName](xldefinebinaryname.md), and the data is retrieved using the function [xlGetBinaryName](xlgetbinaryname.md). Both functions are described in more detail in the function reference (see [C API Functions That Can Be Called Only from a DLL or XLL](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)), and both use the **xltypeBigData** **XLOPER**/ **XLOPER12**. 
+バイナリ名は定義され、バイナリのブロック、つまりワークブックと一緒に格納されている非構造化データに関連付けられます。これらは関数[xlDefineBinaryName](xldefinebinaryname.md)を使用して作成され、データは関数[xlGetBinaryName](xlgetbinaryname.md)を使用して取得されます。両方の関数は関数リファレンスにより詳細な説明がありますが（[ DLL またはXLL からしか呼び出せないC API 関数](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)を参照）、また両方とも**xltypeBigData** **XLOPER**/ **XLOPER12**を使用します。 
   
-�o�C�i�����̎��ۂ̓K�p�𐧌�������m�̖��ɂ��ẮA�u[Excel �A�h�C�� (XLL) �J���ɂ�������m�̖��](known-issues-in-excel-xll-development.md)�v��������������B
+バイナリ名の実用的な適用を制限する既知の問題については、[ Excel XLL開発における既知の問題](known-issues-in-excel-xll-development.md)を参照してください。
   
 ## <a name="excel-stack"></a>Excel のスタック
 
-Excel は、読み込んだすべての DLL とスタック領域を共有します。通常、スタック領域は普段の使用量よりも多く、次に取り上げるいくつかのガイドラインに従う限りは問題となることはありません。  
+Excel は、読み込んだすべての DLL とスタック領域を共有します。通常、スタック領域は普段の使用量よりも多く、次に取り上げるいくつかのガイドラインに従う限りは問題となることはありません。 
   
-- �X�^�b�N��ŁA�֐��ɑ΂�������Ƃ��ĂƂĂ�傫�ȍ\���̂�l�Ƃ��ēn���Ȃ��ł��������B����ɁA�|�C���^�[��Q�Ƃ�n���܂��B
+- 非常に大きな構造体をスタックの値によって関数の引数として渡さないでください。代わりにポインタまたはリファレンスを渡してください。
     
-- �X�^�b�N�ɑ傫�ȍ\���̂�Ԃ��Ȃ��ł��������B�ÓI�܂��͓��I�Ɋ��蓖�Ă�ꂽ�������ւ̃|�C���^�[��Ԃ����A�Q�Ƃɂ���ēn����������g�p���܂��B
+- 大きな構造体をスタックに返さないでください。静的または動的に割り当てられたメモリへのポインタを返すか、またはリファレンスによって渡された引数を使用してください。
     
-- �֐��R�[�h�ŁA���ɑ�K�͂Ȏ����ϐ��\���̂�錾���Ȃ��ł��������B�K�v�ȏꍇ�́A�X�^�e�B�b�N (Static) �Ƃ��Đ錾���܂��B
+- 関数コード内で非常に大きな自動変数構造を宣言しないでください。必要な場合は、それらを静的として宣言してください。
     
-- �ċA�̐[�����󂢂ƕ������Ă���ȊO�́A�֐���ċA�I�ɌĂяo���Ȃ��ł��������B����ɁA���[�v��g�p���܂��B
+- 再帰深度が常に浅いことが確実でない限り、関数を再帰的に呼び出さないでください。代わりにループを使ってみてください。
     
-C API ��g�p���� DLL �� Excel �ɃR�[���o�b�N����Ƃ��́AExcel �͍ŏ��ɁA�ň��̎g�p�P�[�X�ɔ����ăX�^�b�N��ɏ\���ȗ̈悪�m�ۂ���Ă��邩�ǂ�����`�F�b�N���܂��B�\���ȗ̈悪�Ȃ��Ɣ��f����ƁA���S�ȌĂяo���Ɏ��s���܂��B����̌Ăяo���ŁA���ۂɂ͏\���ȗ̈悪����ꍇ�ł���s���܂��B���̏ꍇ�ɂ́A�R�[���o�b�N�̓R�[�h **xlretFailed** ��Ԃ��܂��BC API �ƃX�^�b�N�̒ʏ�̎g�p�ł́A���ꂪ C API �Ăяo���̎��s�̌����ƂȂ邱�Ƃ͂قƂ�ǂ���܂���B
+DLL がC API を使用してExcel に呼び戻されるとき、Excel は最初に、可能性上最悪の呼び出し方法に対して十分なスペースがスタック上にあるかどうかを確認します。十分なスペースがない可能性があると思われる場合は、たとえ実際にその特定の呼び出しに対する十分なスペースがあったとしても、呼び出しが安全であるとは言えません。この場合、呼び戻しにはコード**xlretFailed**が返されます。 C API とスタックの通常の使用では、これがC API呼び出しの失敗の原因となる可能性は低いです。
   
-���̃G���[����������ꍇ�A�܂��͌��O����ꍇ�A���邢�͌����s���̃G���[���������Ƃ��ẴX�^�b�N�̈�̕s����������ꍇ�A[xlStack](xlstack.md) �֐��ւ̌Ăяo���ŃX�^�b�N�̈悪�ǂ�قǂ��邩�𒲂ׂ邱�Ƃ��ł��܂��B 
+このエラーが発生する場合、または懸念する場合、あるいは原因不明のエラー発生原因としてのスタック領域の不足を解消する場合、[xlStack](xlstack.md) 関数への呼び出しでスタック領域がどれほどあるかを調べることができます。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -446,7 +446,7 @@ C API ��g�p���� DLL �� Excel �ɃR�[���o�b�N��
 
 [Excel でのマルチスレッド再計算](multithreaded-recalculation-in-excel.md)
   
-[Excel 2007 �ɂ�����}���`�X���b�h�����ƃ���������](multithreading-and-memory-contention-in-excel.md)
+[Excel におけるマルチスレッド処理とメモリ競合](multithreading-and-memory-contention-in-excel.md)
   
 [Excel XLL の開発](developing-excel-xlls.md)
 
