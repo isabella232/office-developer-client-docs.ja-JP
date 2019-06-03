@@ -32,7 +32,7 @@ ms.locfileid: "32335603"
     
 - [要素](elementsvisio-xml.md): Visio ファイル形式で表示できる XML 要素に関する情報を提供します。
     
-- [種類](typesvisio-xml.md): Visio ファイル形式で表示できる XML の種類に関する情報を提供します。
+- [型](typesvisio-xml.md): Visio ファイル形式で表示できる XML の種類に関する情報を提供します。
     
 ## <a name="see-also"></a>関連項目
 
