@@ -34,8 +34,7 @@ ms.locfileid: "32360523"
   
 ### <a name="code-samples"></a>コード サンプル
   
-- 
-  [Office デベロッパー センターの Word コード サンプル](https://developer.microsoft.com/word/gallery/?filterBy=Word,Samples)
+- [Office デベロッパー センターの Word コード サンプル](https://developer.microsoft.com/word/gallery/?filterBy=Word,Samples)
   
 ### <a name="other-resources"></a>その他のリソース
   
