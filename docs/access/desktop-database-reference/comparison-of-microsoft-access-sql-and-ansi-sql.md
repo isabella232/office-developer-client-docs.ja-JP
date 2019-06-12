@@ -4,29 +4,29 @@ TOCTitle: Comparison of Microsoft Access SQL and ANSI SQL
 ms:assetid: 0686f98f-10fe-0e02-e9d1-84ff3e755b57
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844937(v=office.15)
 ms:contentKeyID: 48543052
-ms.date: 09/18/2015
+ms.date: 06/13/2019
 mtps_version: v=office.15
 localization_priority: Normal
-ms.openlocfilehash: 195d9f5d882fd252b1b10e937fe851c4830c52d3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 4e9f30401891452970fdbe80123fc373e26f26c6
+ms.sourcegitcommit: d0e1ce095a478d90411abb8c147eb9efe19ffa5f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296053"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34870858"
 ---
 # <a name="comparison-of-microsoft-access-sql-and-ansi-sql"></a>Microsoft Access SQL と ANSI SQL の比較
 
 **適用先:** Access 2013、Office 2013
 
-Microsoft Access データベース エンジン SQL は、ANSI 文字セット 89 レベル 1 の仕様にほぼ準拠しています。 ただし、Microsoft access SQL では、ANSI SQL の一部の機能は実装されていません。 その一方で、ANSI SQL ではサポートされていない予約語や機能が実装されています。
+Microsoft Access データベース エンジン SQL は、ANSI 文字セット 89 レベル 1 の仕様にほぼ準拠しています。 ただし、Microsoft Access SQL では、ANSI SQL の一部の機能は実装されていません。 その一方で、ANSI SQL ではサポートされていない予約語や機能が実装されています。
 
 ## <a name="major-differences"></a>主な違い
 
 - Microsoft Office Access SQL と ANSI SQL とでは、異なる予約語およびデータ型があります。詳細については、「[SQL 予約語](sql-reserved-words.md)」および「[Microsoft Jet データベース エンジン SQL と ANSI SQL のデータ型](equivalent-ansi-sql-data-types.md)」を参照してください。Microsoft Office Access Database Engine OLE DB Provider と組み合わせて使うと、追加の予約語を使用できます。
 
-- **[Between...And](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/and-operator)**
+- **[Between...And](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/between-and-operator)**
     
-  *expr1*\[ *value1* **と** *value2* \] **の間で**はない
+  *expr1*\[ *Value1* **と** *value2* \] **の間で**はない
     
   Microsoft Access SQL では、引数 *value1* に引数 *value2* より大きい値を指定できますが、ANSI SQL では引数 *value1* は必ず引数 *value2* 以下の値である必要があります。
 
@@ -64,7 +64,7 @@ Microsoft Access データベース エンジン SQL は、ANSI 文字セット 
 
 - Microsoft Access SQL では、ANSI SQL よりも強力な式がサポートされています。
 
-## <a name="enhanced-features-of-microsoft-access-sql"></a>Microsoft access SQL の拡張機能
+## <a name="enhanced-features-of-microsoft-access-sql"></a>Microsoft Access SQL の拡張機能
 
 Microsoft Access SQL には、次の拡張機能があります。
 
@@ -74,7 +74,7 @@ Microsoft Access SQL には、次の拡張機能があります。
 
 - パラメーター クエリの定義に使用する [PARAMETERS](parameters-declaration-microsoft-access-sql.md) 宣言。
 
-## <a name="ansi-sql-features-not-supported-in-microsoft-access-sql"></a>Microsoft access SQL でサポートされていない ANSI SQL 機能
+## <a name="ansi-sql-features-not-supported-in-microsoft-access-sql"></a>Microsoft Access SQL でサポートされていない ANSI SQL 機能
 
 Microsoft Access SQL では、ANSI SQL の次の機能がサポートされていません。
 
