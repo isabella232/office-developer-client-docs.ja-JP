@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34542955"
 ---
-# <a name="issuetarget-element-issuetype-complextype-visio-xml"></a><span data-ttu-id="6c47f-104">IssueTarget 要素 (Issue_Type complexType) (Visio XML)</span><span class="sxs-lookup"><span data-stu-id="6c47f-104">IssueTarget element (Issue_Type complexType) (Visio XML)</span></span>
+# <a name="issuetarget-element-issue_type-complextype-visio-xml"></a><span data-ttu-id="6c47f-104">IssueTarget 要素 (Issue_Type complexType) (Visio XML)</span><span class="sxs-lookup"><span data-stu-id="6c47f-104">IssueTarget element (Issue_Type complexType) (Visio XML)</span></span>
 
 <span data-ttu-id="6c47f-105">親の検証の問題の対象に応じて、親の検証の問題に関連付けられているページ、またはページと図形の両方を指定します。</span><span class="sxs-lookup"><span data-stu-id="6c47f-105">Depending on the target of the parent validation issue, specifies either the page, or both the page and the shape, associated with the parent validation issue.</span></span> <span data-ttu-id="6c47f-106">親の検証の問題の対象がドキュメントの場合は、**IssueTarget** はページと図形のどちらも指定しません。</span><span class="sxs-lookup"><span data-stu-id="6c47f-106">If the target of the parent validation issue is a document, **IssueTarget** specifes neither a page nor a shape.</span></span> 
   
