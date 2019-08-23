@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34542955"
 ---
-# <a name="issuetarget-element-issuetype-complextype-visio-xml"></a>IssueTarget 要素 (Issue_Type complexType) (Visio XML)
+# <a name="issuetarget-element-issue_type-complextype-visio-xml"></a>IssueTarget 要素 (Issue_Type complexType) (Visio XML)
 
 親の検証の問題の対象に応じて、親の検証の問題に関連付けられているページ、またはページと図形の両方を指定します。 親の検証の問題の対象がドキュメントの場合は、**IssueTarget** はページと図形のどちらも指定しません。 
   
