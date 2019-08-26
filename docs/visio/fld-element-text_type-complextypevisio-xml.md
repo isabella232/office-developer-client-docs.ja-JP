@@ -1,29 +1,29 @@
 ---
-title: fld 要素 (Text_Type complexType) ('Visio XML')
+title: fld 要素 (Text_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 92d90240-012b-9598-c893-6e7085813aa5
-description: 対応するフィールド要素のテキストフィールドの挿入ポイントを示します。
-ms.openlocfilehash: a7303697a9471dab68f5b1cf851f60d51650a84e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: 対応するフィールド要素のテキスト フィールドの挿入ポイントを示します。
+ms.openlocfilehash: efacb7ed11968dec5d5c2f62b0ca3e3bcd8580c0
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346215"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539615"
 ---
-# <a name="fld-element-texttype-complextype-visio-xml"></a>fld 要素 (Text_Type complexType) ('Visio XML')
+# <a name="fld-element-text_type-complextype-visio-xml"></a>fld 要素 (Text_Type complexType) (Visio XML)
 
-対応する**Field** 要素のテキストフィールドの挿入ポイントを示します。 
+対応する**フィールド** 要素のテキスト フィールドの挿入ポイントを示します。 
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[fld_Type](fld_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**ドキュメント パーツ** <br/> |page#.xml, master#.xml  <br/> |
    

@@ -8,12 +8,12 @@ api_type:
 - COM
 ms.assetid: efa178eb-feb2-443f-8f6b-2ea53a456bf2
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 3f7bf720f9105f6a81b832233cc648bc1d9ac91d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1ad325c68241c8a3924909b4dbf42c9657e68352
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32338046"
 ---
 # <a name="default-message-stores"></a>既定のメッセージ ストア
 
@@ -21,7 +21,7 @@ ms.locfileid: "22576912"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-既定のメッセージ ストアは、クライアント アプリケーションが汎用メッセージング タスクに使用できるものです。 既定のメッセージ ストアとしてメッセージ ストア プロバイダーを使用する場合に、メッセージ ストア プロバイダーにとって必要となるいくつかのオプション機能があります。 それらは次のとおりです。
+既定のメッセージ ストアは、クライアント アプリケーションが汎用メッセージング タスクに使用できるものです。既定のメッセージ ストアとしてメッセージ ストア プロバイダーを使用する場合に、メッセージ ストア プロバイダーにとって必要となるいくつかのオプション機能があります。これらは次のようになります。
   
 - 受信トレイ、送信トレイ、および検索結果フォルダーなどの特別なフォルダーを実装します。
     

@@ -8,12 +8,12 @@ api_type:
 - COM
 ms.assetid: cc74b31c-d7ed-4fcf-9535-a2f9222901b7
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: be718ea3ef4da91d2f85a0229f5a506198a2527f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7c923a330c542dff8b1bbc476461ccd21680a5b7
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32332901"
 ---
 # <a name="creating-and-storing-messages-in-message-stores"></a>メッセージ ストアのメッセージの作成と保存
 
@@ -27,7 +27,7 @@ ms.locfileid: "22589176"
   
 メッセージ ストア プロバイダーが基盤となるストレージ メカニズムにメッセージを保存するときは、メッセージのプロパティを繰り返し処理して、基盤となるストレージ メカニズムに保存する必要があります。そうすることで、後で開いたときにメッセージが完全な形で復元されます。
   
-MAPI は [IMessage](imessageimapiprop.md) インターフェイス上のプロパティのトランザクションを要求します。つまり、プロパティに加えられた変更は、[IMAPIProp::SaveChanges](imapiprop-savechanges.md) メソッドがメッセージ オブジェクトに対して呼び出されるまでは永続的になりません。 メッセージ ストア プロバイダーには、この動作を実装する責任があります。 通常これは難しいことではなく、単に、プロパティが変更される間メモリ内でプロパティを保持し、**SaveChanges** が呼び出されたときに基盤となるストレージ メカニズムにプロパティをコミットすることを意味します。 
+MAPI は [IMessage](imessageimapiprop.md) インターフェイス上のプロパティのトランザクションを要求します。つまり、プロパティに加えられた変更は、[IMAPIProp::SaveChanges](imapiprop-savechanges.md) メソッドがメッセージ オブジェクトに対して呼び出されるまでは永続的になりません。メッセージ ストア プロバイダーには、この動作を実装する責任があります。通常、これは難しくありません。つまり、プロパティが変更されている間、プロパティをメモリに保持し、**SaveChanges** が呼び出されたときに、基盤となるストレージ メカニズムにコミットすることを意味します。 
   
 メッセージ オブジェクトのプロパティの中には、次に示すとおり、**SaveChanges** メソッドに関して、クライアント アプリケーションに対する特別なセマンティクスを持つものがあります。 
   

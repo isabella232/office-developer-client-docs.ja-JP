@@ -1,5 +1,5 @@
 ---
-title: Window 要素 (Windows_Type complexType) ('Visio XML')
+title: Window 要素 (Windows_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: da776276-e8c2-085b-9b23-e5b1f5ba64cd
 description: Microsoft Visio インスタンスで開いているウィンドウを表します。 この要素には、Visio でファイルを最初に開いたときにアプリケーション ワークスペースでユーザー インターフェイス ウィンドウを正確に再作成するために必要な情報が含まれています。
-ms.openlocfilehash: 676818ddea7747a17b0fe296da515e80c4ffd98f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 2700ee7a9a17460f6ac707f5b1a8f35d622e33e3
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339901"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538460"
 ---
-# <a name="window-element-windowstype-complextype-visio-xml"></a>Window 要素 (Windows_Type complexType) ('Visio XML')
+# <a name="window-element-windows_type-complextype-visio-xml"></a>Window 要素 (Windows_Type complexType) (Visio XML)
 
 Microsoft Visio インスタンスで開いているウィンドウを表します。 この要素には、Visio でファイルを最初に開いたときにアプリケーション ワークスペースでユーザー インターフェイス ウィンドウを正確に再作成するために必要な情報が含まれています。
   
@@ -23,7 +23,7 @@ Microsoft Visio インスタンスで開いているウィンドウを表しま�
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Window_Type](window_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**ドキュメント パーツ** <br/> |windows.xml  <br/> |
    

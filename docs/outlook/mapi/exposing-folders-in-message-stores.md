@@ -8,12 +8,12 @@ api_type:
 - COM
 ms.assetid: d9309e47-2a92-4576-9921-c89cc48472c2
 description: '最終更新日: 2011 年 7 月 23 日'
-ms.openlocfilehash: 62f50ed7925305eca7432da17130d2be0365ef03
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 457620dd0f805e78d12fc8feba09f8fc8aedc554
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32341350"
 ---
 # <a name="exposing-folders-in-message-stores"></a>メッセージ ストアのフォルダーの公開
 
@@ -21,7 +21,7 @@ ms.locfileid: "22582596"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-すべてのメッセージ ストア プロバイダーは、クライアント アプリケーションに最上位の [IMAPIFolder](imapifolderimapicontainer.md) インターフェイスを提示する必要があります。 最上位フォルダーは、メッセージ ストア全体に対応し、メッセージ ストアの内容としてユーザーに表示されるフォルダーへのアクセスを提供します。 さらに、最上位フォルダーは、IPC メッセージの既定の受信フォルダーや、既読レポートが送信されるフォルダーとしてもよく使用されます。 メッセージ ストア プロバイダーはまた、クライアント アプリケーションに IPM メッセージの格納に使用する一連のフォルダーである、IPM サブツリーも提示する必要があります。 
+すべてのメッセージ ストア プロバイダーは、クライアント アプリケーションに最上位の [IMAPIFolder](imapifolderimapicontainer.md) インターフェイスを提示する必要があります。最上位フォルダーは、メッセージ ストア全体に対応し、メッセージ ストアの内容としてユーザーに表示されるフォルダーへのアクセスを提供します。さらに、最上位フォルダーは、IPC メッセージの既定の受信フォルダーや、既読レポートが送信されるフォルダーとしてもよく使用されます。メッセージ ストア プロバイダーはまた、クライアント アプリケーションに IPM メッセージの格納に使用する一連のフォルダーである、IPM サブツリーも提示する必要があります。 
   
 クライアント アプリケーションは、_cbEntryId_、_lpEntryId_ パラメーターにそれぞれ 0、Null 値を指定して [IMsgStore::OpenEntry](imsgstore-openentry.md) メソッドを呼び出し、最上位フォルダーを開くことができます。ただし、ほとんどの場合、クライアント アプリケーションは IPM メッセージが格納された一連のフォルダーを開きます。 
   
@@ -37,7 +37,7 @@ ms.locfileid: "22582596"
     
 5. [IMAPITable::QueryRows](imapitable-queryrows.md) メソッドを呼び出して、最上位フォルダー内のフォルダーを一覧表示します。 
     
-MAPI クライアントは、これらのフォルダーを使って、メッセージ ストア内の他のフォルダー オブジェクトやメッセージ オブジェクトにアクセスします。 **IMAPIFolder** とその親インターフェイスである [IMAPIContainer](imapicontainerimapiprop.md) には、メッセージ ストア プロバイダーがフォルダーにメッセージ オブジェクトを追加し、クライアントの要求に応えてメッセージを処理するうえで、実装する必要のあるメソッドが含まれています。
+MAPI クライアントは、これらのフォルダーを使用して、メッセージ ストア内の他のフォルダー オブジェクトやメッセージ オブジェクトにアクセスします。**IMAPIFolder** とその親インターフェイスである [IMAPIContainer](imapicontainerimapiprop.md) には、メッセージ ストア プロバイダーがフォルダーにメッセージ オブジェクトを追加し、クライアントの要求に応えてメッセージを処理するうえで、実装する必要のあるメソッドが含まれています。
   
 ## <a name="see-also"></a>関連項目
 

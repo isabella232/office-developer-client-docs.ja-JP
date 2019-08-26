@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 8c245ec2-bb18-ecf0-b4ad-8c164c5924cf
 description: '最終更新日: 2012 年 6 月 25 日'
-ms.openlocfilehash: aa4d52d25f120e8b3e2a4c0dcaa4845ad576127a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 328ff423025689795669d661f529270886123a7e
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32322240"
 ---
 # <a name="about-named-properties-used-by-outlook"></a>Outlook で使用される名前付きプロパティについて
 
@@ -25,7 +25,7 @@ MAPI は、特定のプロパティに名前を割り当て、これらの名前
   
 [IMAPIProp : IUnknown](imapipropiunknown.md) インターフェイスを実装するオブジェクトはすべて、名前付きプロパティをサポートすることができます。具体的には、MAPI サービス プロバイダーまたは MAPI クライアントは [IMAPIProp::GetProps](imapiprop-getprops.md) を実装して、名前付きプロパティの値を取得する必要があります。Outlook 2013 または Outlook 2010 で使用される名前付きプロパティの設定はサポートされていません。これは、他の MAPI プロバイダーまたはクライアントと共有されるデータが破損する危険があるためです。 
   
-Outlook 2013 と Outlook 2010 では、MAPI の名前付きプロパティを使用して、添付ファイルのセキュリティや会議の代替日時の提案などのさまざまな機能を実装しています。 Outlook 2013 と Outlook 2010 は、この基盤となるデータ上で、Outlook 2013 と Outlook 2010 のオブジェクト モデルのアイテム プロパティとして、これらのプロパティの一部を公開しています。 たとえば、オブジェクト モデル内の **ContactItem** オブジェクトである **Email1Address** プロパティは、**PSETID_Address** 名前空間にある名前付きの [PidLidEmail1EmailAddress 標準プロパティ](pidlidemail1emailaddress-canonical-property.md)に対応します。 しかし、一般に、互換性とデータの整合性に対する懸念から、Outlook 2013 と Outlook 2010 で使用される MAPI プロパティの多くはオブジェクト モデルに公開されていません。 
+Outlook 2013 と Outlook 2010 では、MAPI の名前付きプロパティを使用して、添付ファイルのセキュリティや会議の代替日時の提案などのさまざまな機能を実装しています。Outlook 2013 と Outlook 2010 は、この基盤となるデータ上で、Outlook 2013 と Outlook 2010 のオブジェクト モデルのアイテム プロパティとして、これらのプロパティの一部を公開しています。たとえば、オブジェクト モデル内の **ContactItem** オブジェクトである **Email1Address** プロパティは、**PSETID_Address** 名前空間にある名前付きの [PidLidEmail1EmailAddress 標準プロパティ](pidlidemail1emailaddress-canonical-property.md)に対応します。しかし、一般に、互換性とデータの整合性に対する懸念から、Outlook 2013 と Outlook 2010 で使用される MAPI プロパティの多くはオブジェクト モデルに公開されていません。 
   
 このリファレンスでは、以下に列挙する多数の名前付きプロパティについて説明します。
   

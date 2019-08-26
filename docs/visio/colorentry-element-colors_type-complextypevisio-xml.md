@@ -1,5 +1,5 @@
 ---
-title: ColorEntry 要素 (Colors_Type complexType) ('Visio XML')
+title: ColorEntry 要素 (Colors_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3f325ad8-bbc7-28bf-9e48-1fde4fbdbdc0
 description: カラー テーブル エントリが含まれます。
-ms.openlocfilehash: 14ef92069ce8d963ce4a0770324843321804c5cd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: f2221d8d32823e5eec4a100eaf4e8f62b914df28
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32358087"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540183"
 ---
-# <a name="colorentry-element-colorstype-complextype-visio-xml"></a>ColorEntry 要素 (Colors_Type complexType) ('Visio XML')
+# <a name="colorentry-element-colors_type-complextype-visio-xml"></a>ColorEntry 要素 (Colors_Type complexType) (Visio XML)
 
 カラー テーブル エントリが含まれます。
   
@@ -23,7 +23,7 @@ ms.locfileid: "32358087"
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[ColorEntry_Type](colorentry_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**ドキュメント パーツ** <br/> |document.xml  <br/> |
    

@@ -1,29 +1,29 @@
 ---
-title: RuleSet 要素 (RuleSets_Type complexType) ('Visio XML')
+title: RuleSet 要素 (RuleSets_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5ca63b8a-782e-211f-be7a-8e177b61d8fc
-description: 図の検証ルール セットを表します。
-ms.openlocfilehash: 1231e8cdb3c8781dc47f470c0477b4585b1331c6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: 図の検証ルール セットの 1 つを表します。
+ms.openlocfilehash: c6fc8df6d9c84f44496d69207dfb9cfb878659e3
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32318915"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34541639"
 ---
-# <a name="ruleset-element-rulesetstype-complextype-visio-xml"></a>RuleSet 要素 (RuleSets_Type complexType) ('Visio XML')
+# <a name="ruleset-element-rulesets_type-complextype-visio-xml"></a>RuleSet 要素 (RuleSets_Type complexType) (Visio XML)
 
-図の検証ルール セットを表します。
+図の検証ルール セットの 1 つを表します。
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[RuleSet_Type](ruleset_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**ドキュメント パーツ** <br/> |validation.xml  <br/> |
    

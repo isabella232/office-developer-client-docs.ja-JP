@@ -1,29 +1,29 @@
 ---
-title: Windows の要素 ('Visio XML')
+title: Windows 要素 (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1880734a-f086-ce6c-5a93-47851bcdd99d
-description: ドキュメントに Windows の要素を含む。
-ms.openlocfilehash: df4d4bc48db157bd05fd39177975c9dbeaa5de52
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: ドキュメントの Window 要素が含まれます。
+ms.openlocfilehash: fcffcd5257b14c0ae0203a41f369536e583c1798
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339824"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538446"
 ---
-# <a name="windows-element-visio-xml"></a>Windows の要素 ('Visio XML')
+# <a name="windows-element-visio-xml"></a>Windows 要素 (Visio XML)
 
-ドキュメントに **Window** の要素を含む。 
+ドキュメントの **Window** 要素が含まれます。 
   
 ## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Windows_Type](windows_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
 |**ドキュメント パーツ** <br/> |windows.xml  <br/> |
    

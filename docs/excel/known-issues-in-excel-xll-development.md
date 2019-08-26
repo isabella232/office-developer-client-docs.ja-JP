@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 3dfecc0b-a91c-448e-8721-5d3486b625fa
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 34784f6895386efe7e6c3ca7ec213c7d71931058
-ms.sourcegitcommit: f139451a43598b59da22775333779df691df460a
+ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26685180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32304005"
 ---
 # <a name="known-issues-in-excel-xll-development"></a>Excel アドイン (XLL) 開発における既知の問題
 
@@ -24,7 +24,7 @@ ms.locfileid: "26685180"
   
 ## <a name="unregistering-xll-commands-and-functions"></a>XLL のコマンドおよび関数を登録解除する
 
-XLL で関数やコマンドを登録すると、Excel 上で新しいリソース名が作成され、そのリソース名を持つ DLL 関数の参照と関連付けられます。 このリソース名は、[xlfRegister](xlfregister-form-1.md) 関数の 4 番目の引数である *pxFunctionText* から取得されます。 また、このリソース名は、ワークシート名を管理する標準のダイアログ ボックスからは非表示になっています。 関数やコマンドを登録解除するには、[xlfSetName](xlfsetname.md) 関数を使用してリソース名を削除する必要があります。この際、リソース名を渡しますが、定義は渡しません。 ただし、バグがあると、この関数ウィザードの一覧からリソース名を削除することができません。 
+XLL で関数やコマンドを登録すると、Excel 上で新しいリソース名が作成され、そのリソース名を持つ DLL 関数の参照と関連付けられます。このリソース名は、[xlfRegister](xlfregister-form-1.md) 関数の 4 番目の引数である *pxFunctionText* から取得されます。このリソース名は、ワークシート名を管理するための通常のダイアログ ボックスには表示されません。関数やコマンドを登録解除するには、[xlfSetName](xlfsetname.md) 関数を使用してリソース名を削除する必要があります。この際、リソース名を渡しますが、定義は渡しません。ただし、バグがあると、この関数ウィザードの一覧からリソース名を削除することができません。 
   
 ## <a name="argument-description-string-truncation-in-the-function-wizard"></a>関数ウィザードにおける引数の説明文字列の切り捨て
 
@@ -36,7 +36,7 @@ XLL で関数やコマンドを登録すると、Excel 上で新しいリソー�
   
 ## <a name="xlset-and-workbooks-with-array-formulas"></a>xlSet と配列数式を含むワークブック
 
-Excel 2003 以前のバージョンにおいて、作業中ではないワークシートの範囲に値を割り当てようとすると、[xlSet 関数](xlset.md) はエラーになり、作業中のシート上の同等範囲に配列数式が入ります。 この場合、「配列の一部を変更できません」というメッセージが表示されます。 この問題は、Excel 2007 で修正されました。 
+Excel 2003 以前のバージョンにおいて、作業中ではないワークシートの範囲に値を割り当てようとすると、[xlSet 関数](xlset.md) はエラーになり、作業中のシート上の同等範囲に配列数式が入ります。この場合、「配列の一部を変更できません」というメッセージが表示されます。この問題は、Excel 2007 で修正されました。 
   
 ## <a name="circular-references-are-tolerated-in-data-tables"></a>データ テーブルで循環参照が可能
 
