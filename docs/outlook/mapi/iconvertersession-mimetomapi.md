@@ -1,7 +1,7 @@
 ---
 title: IConverterSessionMIMEToMAPI
 manager: soliver
-ms.date: 03/09/2015
+ms.date: 09/06/2019
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: ee190ba7-9e71-97e4-7bf1-7b97adc73eed
-description: '最終更新日時: 2015 年 3 月 9 日'
-ms.openlocfilehash: 356f4470be26ae3803a53af1cec34b3ac6eb0cc9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: '最終更新日: 2019 年9月6日'
+ms.openlocfilehash: f6f671cbfd5e14d602aaa31d31e54e859f068593
+ms.sourcegitcommit: 27a9f3568318470e7ee09ad93a90c3f80d3ef0cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326930"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36790772"
 ---
 # <a name="iconvertersessionmimetomapi"></a>IConverterSession::MIMEToMAPI
 
@@ -44,9 +44,9 @@ HRESULT IConverterSession:: MIMEToMAPI (
     
  _pmsg_
   
-> 読み上げ読み込むメッセージへのポインター。 **lpmessage**の種類の定義については、「mapidefs.h」を参照してください。
+> 順番読み込むメッセージへのポインター。 呼び出し元は、API に入力するメッセージを指定する必要があるので、オブジェクトを [in] に設定する必要があります。 **Lpmessage**の種類の定義については、「mapidefs.h」を参照してください。
     
- _pszsrcsrv_
+ _pszSrcSrv_
   
 > 順番この値は**null**である必要があります。
     
@@ -77,11 +77,11 @@ CCSF_GLOBAL_MESSAGE
 
 E_INVALIDARG
   
-> _pstm_が**null**、 _pmsg_が**null**、 _ulflags_が無効であることを示します。 
+> _Pstm_が**null**、 _Pmsg_が**null**、 _ulflags_が無効であることを示します。 
     
 ## <a name="remarks"></a>解説
 
-**CCSF_USE_RTF**を_ulflags_の一部として指定して、宛先メッセージストアが html と rtf の両方をサポートしている場合、MAPI メッセージは html または rtf に変換されます。 メッセージが rtf に変換される場合、変換された形式は rtf 形式に変換され、すべての HTML が圧縮 rtf 文字列に埋め込まれ、文字列が[PidTagRtfCompressed 標準プロパティ](pidtagrtfcompressed-canonical-property.md)に格納されます。
+**CCSF_USE_RTF**を_ulflags_の一部として指定して、宛先メッセージストアが html と rtf の両方をサポートしている場合、MAPI メッセージは html または rtf に変換されます。 メッセージが RTF に変換される場合、変換された形式は RTF 形式に変換され、すべての HTML が圧縮 RTF 文字列に埋め込まれ、文字列が[PidTagRtfCompressed 標準プロパティ](pidtagrtfcompressed-canonical-property.md)に格納されます。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -89,8 +89,8 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|mapimime .cpp  <br/> |ImportEMLToIMessage  <br/> |mfcmapi は MimeToMAPI を使用して、EML ファイルを MAPI メッセージに変換します。  <br/> |
-|mapimime .cpp  <br/> |ExportIMessageToEML  <br/> |mfcmapi は、MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。  <br/> |
+|MapiMime .cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI は MimeToMAPI を使用して、EML ファイルを MAPI メッセージに変換します。  <br/> |
+|MapiMime .cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI は、MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
