@@ -5,19 +5,19 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 74a80e0a-fe60-4356-b238-13de4c2822d9
 description: ソリューションの開発と Office のカスタマイズに関する 方法 コンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、および記事を検索できます。
-ms.openlocfilehash: 92e4da3d6e04082ea3bceb901989ddf134b54c07
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 4ecf232e0381fec9acc55582db6c7aaacedde891
+ms.sourcegitcommit: 63e14e1e6124222a0a347aa1ad02ce1bd7e94949
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303123"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36849863"
 ---
 # <a name="office-client-development"></a>Office クライアントの開発
 
 ソリューションの開発と Office のカスタマイズに関する 方法 コンテンツ、サンプル コード、SDK と API のマニュアル、VBA リファレンス、トレーニング、および記事を検索できます。
   
 > [!NOTE]
-> [複数のプラットフォーム](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-in-availability)間で Office エクスペリエンスを拡張するソリューションを開発することに関心がありますか? 新しい [Office アドイン モデル](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)をご覧ください。 
+> [複数のプラットフォーム](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-in-availability)間で Office エクスペリエンスを拡張するソリューションを開発することに関心がありますか? 新しい [Office アドイン モデル](https://docs.microsoft.com/office/dev/add-ins/)をご覧ください。 
 
   
 ### <a name="office-add-ins"></a>Office アドイン
