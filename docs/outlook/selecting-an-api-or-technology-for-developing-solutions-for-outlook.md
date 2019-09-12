@@ -552,8 +552,7 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 
 - [メール アイテムにファイルを添付する](https://msdn.microsoft.com/library/1d94629b-e713-92cb-32de-c8910612e861%28Office.15%29.aspx)
     
-- 
-  [Outlook 2010 で制限される添付ファイルの種類](https://technet.microsoft.com/ja-JP/library/cc179163.aspx)
+- [Outlook 2010 で制限される添付ファイルの種類](https://technet.microsoft.com/ja-JP/library/cc179163.aspx)
     
 - [Attachment](https://msdn.microsoft.com/library/3e11582b-ac90-0948-bc37-506570bb287b%28Office.15%29.aspx) オブジェクト 
     
@@ -753,8 +752,7 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
     
 - [Outlook 2010 でのシャットダウンの変更](https://msdn.microsoft.com/library/1b154d46-8d13-4c65-91e3-180b22603d03%28Office.15%29.aspx)
     
-- 
-  [Outlook 2010 で制限される添付ファイルの種類](https://technet.microsoft.com/ja-JP/library/cc179163.aspx)
+- [Outlook 2010 で制限される添付ファイルの種類](https://technet.microsoft.com/ja-JP/library/cc179163.aspx)
     
 - [アプリケーションの終了に関する Outlook 2007 SP2 での変更点](https://msdn.microsoft.com/library/795a8237-7804-4da4-9d04-2bb663d300d9%28Office.15%29.aspx)
     

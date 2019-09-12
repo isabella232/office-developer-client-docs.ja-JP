@@ -206,8 +206,7 @@ ListPWACustomFields メソッドでは、プロジェクトに関連付けられ
 ## <a name="see-also"></a>関連項目
 
 - [Project 開発ポータル](https://developer.microsoft.com/ja-JP/project)
-- 
-  [概要: エンタープライズ ユーザー設定フィールドと参照テーブル](https://support.office.com/en-us/article/overview-enterprise-custom-fields-and-lookup-tables-f99db553-0b33-4648-93c0-f6a74637d790?ui=en-us&rs=en-us&ad=us)
+- [概要: エンタープライズ ユーザー設定フィールドと参照テーブル](https://support.office.com/en-us/article/overview-enterprise-custom-fields-and-lookup-tables-f99db553-0b33-4648-93c0-f6a74637d790?ui=en-us&rs=en-us&ad=us)
 - [ローカル ユーザー設定フィールドとエンタープライズ ユーザー設定フィールド](https://msdn.microsoft.com/library/office/ms447495(v=office.14).aspx)
 - [Project Server 2013 でエンタープライズ ユーザー設定フィールドを追加または編集する](https://docs.microsoft.com/project/add-or-edit-enterprise-custom-fields-in-project-server)
     
