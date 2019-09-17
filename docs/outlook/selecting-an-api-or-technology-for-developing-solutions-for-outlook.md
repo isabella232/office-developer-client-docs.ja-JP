@@ -426,7 +426,7 @@ Outlook 補助 API は、オブジェクト モデルや MAPI ではソリュー
   
 Outlook は、Outlook プロセスと同じフォアグラウンド プロセスで実行するアドインを使用することや、Outlook プロセス外部の別個の独自プロセスで実行するスタンドアロン ソリューションによって、自動化をサポートします。一般に、Outlook を自動化するには、アドインを使用してオブジェクト モデル、PIA、MAPI 経由で、あるいはまれに補助 API ([HrProcessConvActionForSentItem](auxiliary/hrprocessconvactionforsentitem.md) など) 経由で Outlook と対話します。プロセス外ソリューションは、それが必要な場合にのみ使用します (たとえば、Tzmovelib.dll ファイルを使って顧客の Outlook 予定表を再編成する MAPI クライアント アプリケーションを作成している場合や、フォルダー内の多数のアイテムを列挙し、パフォーマンスを最適化するためにそのアイテムのプロパティをバックグラウンド スレッドで変更する場合など)。 
   
-アドインは Outlook 自動化の推奨ソリューションです。それは、Outlook がアドインの [OnConnection(Object, ext_ConnectMode, Object, Array)](https://msdn.microsoft.com/library/797003e7-ecd1-eccb-eaaf-32d6ddde8348%28Office.15%29.aspx) イベント中、アドインに渡される [Application](https://msdn.microsoft.com/library/Extensibility.IDTExtensibility2.OnConnection.aspx) オブジェクトのみを信頼するからです。この **Application** オブジェクトからすべてのオブジェクト、プロパティ、メソッドを派生させることにより、オブジェクト モデル ガードのセキュリティ警告が表示されないようにすることができます。アドインが **Application** オブジェクトの新規インスタンスを作成する場合は、そのアドインが信頼されたアドインのリストに含まれているとしても、Outlook はそのオブジェクトを信頼しません。そのような **Application** オブジェクトから派生したオブジェクト、プロパティ、メソッドはいずれも信頼されず、ブロックされたプロパティやメソッドによってセキュリティ警告が呼び出されます。Outlook オブジェクト モデル ガードの詳細については、「 [Outlook オブジェクト モデルのセキュリティ動作 (英語)(機械翻訳)](https://msdn.microsoft.com/library/4aa3b7c7-5f3f-41ce-bbf3-75d8ecbd6d4f%28Office.15%29.aspx)」を参照してください。
+アドインは Outlook 自動化の推奨ソリューションです。それは、Outlook がアドインの [OnConnection(Object, ext_ConnectMode, Object, Array)](https://msdn.microsoft.com/library/797003e7-ecd1-eccb-eaaf-32d6ddde8348%28Office.15%29.aspx) イベント中、アドインに渡される [Application](https://msdn.microsoft.com/library/Extensibility.IDTExtensibility2.OnConnection.aspx) オブジェクトのみを信頼するからです。この **Application** オブジェクトからすべてのオブジェクト、プロパティ、メソッドを派生させることにより、オブジェクト モデル ガードのセキュリティ警告が表示されないようにすることができます。アドインが **Application** オブジェクトの新規インスタンスを作成する場合は、そのアドインが信頼されたアドインのリストに含まれているとしても、Outlook はそのオブジェクトを信頼しません。そのような **Application** オブジェクトから派生したオブジェクト、プロパティ、メソッドはいずれも信頼されず、ブロックされたプロパティやメソッドによってセキュリティ警告が呼び出されます。Outlook オブジェクト モデル ガードの詳細については、「 [Outlook オブジェクト モデルのセキュリティ動作](https://msdn.microsoft.com/library/4aa3b7c7-5f3f-41ce-bbf3-75d8ecbd6d4f%28Office.15%29.aspx)」を参照してください。
 
 <a name="OLSelectAPI_ManOrUnman"> </a>
 
@@ -528,7 +528,7 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 
 ### <a name="address-book-and-exchange-users"></a>アドレス帳と Exchange ユーザー
 
-- [アドレス帳から名前を表示する(機械翻訳)](https://msdn.microsoft.com/library/32e7179c-8133-ee20-ecf6-52c9275f205f%28Office.15%29.aspx)
+- [アドレス帳から名前を表示する](https://msdn.microsoft.com/library/32e7179c-8133-ee20-ecf6-52c9275f205f%28Office.15%29.aspx)
     
 - [アドレス帳から Exchange ユーザーまたは配布リストの情報にアクセスする](https://msdn.microsoft.com/library/077a8666-09c5-e641-0b9b-7d83133d931f%28Office.15%29.aspx)
     
@@ -600,13 +600,13 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
     
 - [Visual Basic Application から Outlook を自動化する](https://msdn.microsoft.com/library/623f91af-cd50-1ff0-9519-5a39cbcf5d18%28Office.15%29.aspx)
     
-- [他の Office アプリケーションを使用した Outlook の自動化(機械翻訳)](https://msdn.microsoft.com/library/d3e44f80-df67-2d28-94dc-14d7a8c8c26c%28Office.15%29.aspx)
+- [他の Office アプリケーションを使用した Outlook の自動化](https://msdn.microsoft.com/library/d3e44f80-df67-2d28-94dc-14d7a8c8c26c%28Office.15%29.aspx)
 
 <a name="OLSelectAPI_Categories"> </a>
 
 ### <a name="categories"></a>カテゴリ
 
-- [Outlook アイテムを分類する(機械翻訳)](https://msdn.microsoft.com/library/e8cfb450-b8b0-bee6-fdf0-d0a92bf9af56%28Office.15%29.aspx)
+- [Outlook アイテムを分類する](https://msdn.microsoft.com/library/e8cfb450-b8b0-bee6-fdf0-d0a92bf9af56%28Office.15%29.aspx)
     
 - [Category](https://msdn.microsoft.com/library/143ef095-54b0-cbe2-e356-632029061ac2%28Office.15%29.aspx) オブジェクト 
     
@@ -658,25 +658,25 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 
 ### <a name="items-basic-properties-fields-and-forms"></a>アイテム: 基本のプロパティ、フィールド、フォーム
 
-- [Outlook アイテム オブジェクト(機械翻訳)](https://msdn.microsoft.com/library/6ea4babf-facf-4018-ef5a-4a484e55153a%28Office.15%29.aspx)
+- [Outlook アイテム オブジェクト](https://msdn.microsoft.com/library/6ea4babf-facf-4018-ef5a-4a484e55153a%28Office.15%29.aspx)
     
 - [ItemProperties](https://msdn.microsoft.com/library/34a110ed-6617-72da-1e98-a9773c705b40%28Office.15%29.aspx) オブジェクト 
     
 - [UserProperties](https://msdn.microsoft.com/library/20b49c86-d74f-9bda-382c-559af278c148%28Office.15%29.aspx) オブジェクト 
     
-- [標準フィールドの概要(機械翻訳)](https://msdn.microsoft.com/library/f0d903a3-f404-8511-af3d-d4f3e30f0779%28Office.15%29.aspx)
+- [標準フィールドの概要](https://msdn.microsoft.com/library/f0d903a3-f404-8511-af3d-d4f3e30f0779%28Office.15%29.aspx)
     
-- [Outlook のフィールドに対応するプロパティ(機械翻訳)](https://msdn.microsoft.com/library/acc5d2c5-f579-0a60-5676-3faa63f26c0e%28Office.15%29.aspx)
+- [Outlook のフィールドに対応するプロパティ](https://msdn.microsoft.com/library/acc5d2c5-f579-0a60-5676-3faa63f26c0e%28Office.15%29.aspx)
     
-- [カスタム フィールドとデータ型の概要(機械翻訳)](https://msdn.microsoft.com/library/a85a7bc2-2b85-1782-04a3-0104e0df32aa%28Office.15%29.aspx)
+- [カスタム フィールドとデータ型の概要](https://msdn.microsoft.com/library/a85a7bc2-2b85-1782-04a3-0104e0df32aa%28Office.15%29.aspx)
     
-- [フォーム ページとフォーム領域をカスタマイズする(機械翻訳)](https://msdn.microsoft.com/library/c8c2d080-66a8-b761-bdc0-527b209e0bd1%28Office.15%29.aspx)
+- [フォーム ページとフォーム領域をカスタマイズする](https://msdn.microsoft.com/library/c8c2d080-66a8-b761-bdc0-527b209e0bd1%28Office.15%29.aspx)
 
 <a name="OLSelectAPI_CustomizingProperties"> </a>
 
 ### <a name="items-customizing-properties"></a>アイテム: プロパティのカスタマイズ
 
-- [プロパティの概要(機械翻訳)](https://msdn.microsoft.com/library/242c9e89-a0c5-ff89-0d2a-410bd42a3461%28Office.15%29.aspx)
+- [プロパティの概要](https://msdn.microsoft.com/library/242c9e89-a0c5-ff89-0d2a-410bd42a3461%28Office.15%29.aspx)
     
 - [Efficiently Getting and Setting Custom Properties in a Contact Folder in Outlook 2010](https://msdn.microsoft.com/library/bb49f7a6-ec0a-483a-a27e-e843c6af781b%28Office.15%29.aspx)
     
@@ -686,15 +686,15 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 
 ### <a name="items-enumerating-filtering-and-sorting"></a>アイテム: 列挙、フィルター処理、並べ替え
 
-- [Outlook のアイテムを保存する(機械翻訳)](https://msdn.microsoft.com/library/e4a639a4-10b2-7665-9261-19d6e7707e48%28Office.15%29.aspx)
+- [Outlook のアイテムを保存する](https://msdn.microsoft.com/library/e4a639a4-10b2-7665-9261-19d6e7707e48%28Office.15%29.aspx)
     
-- [Table オブジェクトに表示される既定のプロパティ(機械翻訳)](https://msdn.microsoft.com/library/649c64f3-2d1e-23f1-bf13-3368da79e62b%28Office.15%29.aspx)
+- [Table オブジェクトに表示される既定のプロパティ](https://msdn.microsoft.com/library/649c64f3-2d1e-23f1-bf13-3368da79e62b%28Office.15%29.aspx)
     
 - [Efficiently Filtering Contact Items in a Contact Folder in Outlook 2010](https://msdn.microsoft.com/library/b8dd39e7-d716-4acd-873b-d2b0faaff30d%28Office.15%29.aspx)
     
-- [フォルダー内のアイテムの列挙、検索、フィルター(機械翻訳)](https://msdn.microsoft.com/library/d786d292-7a0e-0e1a-e132-affbfde37744%28Office.15%29.aspx)
+- [フォルダー内のアイテムの列挙、検索、フィルター](https://msdn.microsoft.com/library/d786d292-7a0e-0e1a-e132-affbfde37744%28Office.15%29.aspx)
     
-- [フォルダー内のアイテムを並べ替える(機械翻訳)](https://msdn.microsoft.com/library/bc3651da-cfdb-4301-4034-bb848f371e55%28Office.15%29.aspx)
+- [フォルダー内のアイテムを並べ替える](https://msdn.microsoft.com/library/bc3651da-cfdb-4301-4034-bb848f371e55%28Office.15%29.aspx)
     
 - [Table](https://msdn.microsoft.com/library/0affaafd-93fe-227a-acee-e09a86cadc20%28Office.15%29.aspx) オブジェクト 
 
@@ -726,7 +726,7 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 
 ### <a name="miscellaneous-business-cards-rules-and-views"></a>その他: ビジネス カード、ルール、ビュー
 
-- [名刺をカスタマイズおよび共有する(機械翻訳)](https://msdn.microsoft.com/library/d29fd962-ea5f-040d-e9af-e8ab70595832%28Office.15%29.aspx)
+- [名刺をカスタマイズおよび共有する](https://msdn.microsoft.com/library/d29fd962-ea5f-040d-e9af-e8ab70595832%28Office.15%29.aspx)
     
 - [Outlook オブジェクト モデルのルールを管理する](https://msdn.microsoft.com/library/05ddd643-e9bd-a37d-b680-b8519960a5f6%28Office.15%29.aspx)
     
@@ -740,7 +740,7 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
     
 - [TimeZones](https://msdn.microsoft.com/library/c68f8589-44e9-3c12-45c1-96943fa9bcb7%28Office.15%29.aspx) オブジェクト 
     
-- [Outlook のビュー(機械翻訳)](https://msdn.microsoft.com/library/cbaa3192-6c27-26c0-ebd6-f6489c2e812e%28Office.15%29.aspx)
+- [Outlook のビュー](https://msdn.microsoft.com/library/cbaa3192-6c27-26c0-ebd6-f6489c2e812e%28Office.15%29.aspx)
     
 - [Views](https://msdn.microsoft.com/library/5dd7edc2-12a2-f4c2-d158-8053d80e8dc9%28Office.15%29.aspx) オブジェクト 
 
@@ -764,7 +764,7 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 
 - [予定表を共有する](https://msdn.microsoft.com/library/03e0b693-5446-ca62-f868-69a583087966%28Office.15%29.aspx)
     
-- [オンライン予定表、RSS フィード、Microsoft SharePoint Foundation フォルダー、Exchange フォルダーを共有する(機械翻訳)](https://msdn.microsoft.com/library/e579e026-bd10-37bb-eb3e-5c9f042fa0fa%28Office.15%29.aspx)
+- [オンライン予定表、RSS フィード、Microsoft SharePoint Foundation フォルダー、Exchange フォルダーを共有する](https://msdn.microsoft.com/library/e579e026-bd10-37bb-eb3e-5c9f042fa0fa%28Office.15%29.aspx)
     
 - [SharingItem](https://msdn.microsoft.com/library/63dd3451-44f3-7cc4-c6e2-7dad5835a7d2%28Office.15%29.aspx) オブジェクト 
 
@@ -780,7 +780,7 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 
 ### <a name="solutions-storing-data"></a>ソリューション: データの保管
 
-- [ソリューションのデータを保存する(機械翻訳)](https://msdn.microsoft.com/library/58e69983-5718-4dde-64fc-858abd80c9e5%28Office.15%29.aspx)
+- [ソリューションのデータを保存する](https://msdn.microsoft.com/library/58e69983-5718-4dde-64fc-858abd80c9e5%28Office.15%29.aspx)
     
 - [StorageItem](https://msdn.microsoft.com/library/41776bc3-b838-2755-fd6b-3b5012fb9ae5%28Office.15%29.aspx) オブジェクト 
 
@@ -788,7 +788,7 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 
 ### <a name="user-interface-customizing-form-regions"></a>ユーザー インターフェイス: フォーム領域のカスタマイズ
 
-- [フォーム ページとフォーム領域をカスタマイズする(機械翻訳)](https://msdn.microsoft.com/library/c8c2d080-66a8-b761-bdc0-527b209e0bd1%28Office.15%29.aspx)
+- [フォーム ページとフォーム領域をカスタマイズする](https://msdn.microsoft.com/library/c8c2d080-66a8-b761-bdc0-527b209e0bd1%28Office.15%29.aspx)
     
 - [フォーム領域](https://msdn.microsoft.com/library/66e80f83-60db-e3b1-47e9-097f855f6512%28Office.15%29.aspx)
     
@@ -808,7 +808,7 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 
 ### <a name="user-interface-customizing-since-outlook-2007"></a>ユーザー インターフェイス: Outlook 2007 以降のカスタマイズ
 
-- [リボンのユーザー設定の概要(機械翻訳)](https://msdn.microsoft.com/library/ee49751d-9eae-357c-5fa9-0b2dd4ff0890%28Office.15%29.aspx)
+- [リボンのユーザー設定の概要](https://msdn.microsoft.com/library/ee49751d-9eae-357c-5fa9-0b2dd4ff0890%28Office.15%29.aspx)
     
 - [Customizing the Ribbon in Outlook 2007](https://msdn.microsoft.com/library/946e97ea-f556-4e84-8fac-01cd9214e170%28Office.15%29.aspx)
     
@@ -818,9 +818,9 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
     
 - [Microsoft Office 2007 および 2010 のユーザー インターフェイス ソリューションの方法](https://msdn.microsoft.com/library/98726fb2-5d5c-44be-80c3-cfef926471f9%28Office.15%29.aspx)
     
-- [ナビゲーション ウィンドウをカスタマイズする(機械翻訳)](https://msdn.microsoft.com/library/426c3d1c-13b5-cac5-702d-87dfe71f2478%28Office.15%29.aspx)
+- [ナビゲーション ウィンドウをカスタマイズする](https://msdn.microsoft.com/library/426c3d1c-13b5-cac5-702d-87dfe71f2478%28Office.15%29.aspx)
     
-- [Outlook ビュー コントロール オブジェクト モデル リファレンス(機械翻訳)](https://msdn.microsoft.com/library/36fa9303-2135-6fcc-b93c-05eef37af3ec%28Office.15%29.aspx)
+- [Outlook ビュー コントロール オブジェクト モデル リファレンス](https://msdn.microsoft.com/library/36fa9303-2135-6fcc-b93c-05eef37af3ec%28Office.15%29.aspx)
     
 - [IDTExtensibility2](https://msdn.microsoft.com/library/Extensibility.IDTExtensibility2.aspx) インターフェイス 
     
@@ -834,7 +834,7 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 
 - [Outlook 2010 のユーザー インターフェイスの拡張](https://msdn.microsoft.com/library/00b504b0-e897-43b9-8615-44276166823f%28Office.15%29.aspx)
     
-- [Outlook の Office Fluent ユーザー インターフェイス拡張機能(機械翻訳)](https://msdn.microsoft.com/library/8496c52e-1f9d-16ef-2fd8-c1bca1a96816%28Office.15%29.aspx)
+- [Outlook の Office Fluent ユーザー インターフェイス拡張機能](https://msdn.microsoft.com/library/8496c52e-1f9d-16ef-2fd8-c1bca1a96816%28Office.15%29.aspx)
     
 - [Outlook 2010 ソリューション モジュールのプログラミング](https://msdn.microsoft.com/library/5989a3da-2f2a-4abd-87b0-cc0e1560dd59%28Office.15%29.aspx)
     
@@ -935,6 +935,6 @@ OSC プロバイダー拡張機能と天気バー拡張機能の使用の詳細�
 - オブジェクト モデルのコード サンプル: [操作方法.(Outlook 2013 開発者用リファレンス)](https://msdn.microsoft.com/library/3c33646d-e5c2-3103-b219-487ffe23357f%28Office.15%29.aspx)  
 - PIA のコード サンプル: [操作方法 (Outlook リファレンス)](https://msdn.microsoft.com/library/ff647d52-bd32-4945-afa4-5b97d9a0d7dd%28Office.15%29.aspx)  
 - [MAPI Samples](https://msdn.microsoft.com/library/641659f2-3c0a-43af-96f1-2521b4b06680%28Office.15%29.aspx)
-- 補助 API のコード サンプル: [サンプル タスク (英語)](auxiliary/sample-tasks.md)
+- 補助 API のコード サンプル: [サンプル タスク](auxiliary/sample-tasks.md)
     
 
