@@ -117,7 +117,8 @@ CONSTRAINT 句を使用すると、次のいずれかの制約をフィールド
     CREATE TABLE Orders (OrderId INTEGER PRIMARY KEY, CustId INTEGER, OrderNotes NCHAR VARYING (255), CONSTRAINT FKOrdersCustId FOREIGN KEY (CustId) REFERENCES Customers ON UPDATE CASCADE ON DELETE CASCADE
   ```
     
-  ON UPDATE CASCADE 句と ON DELETE CASCADE 句は、どちらも外部キー上に定義されます。ON UPDATE CASCADE 句は、Customers テーブルで顧客の情報 (CustId) が更新された場合、この更新が Orders テーブルをとおしてカスケードされることを意味します。各注文に含まれる、対応した顧客情報の値は、自動的に新しい値に更新されます。ON DELETE CASCADE 句は、Customers テーブルで顧客が削除された場合、Orders テーブルにある同じ顧客の顧客情報の値を含む行もすべて同様に削除されることを意味します。 CASCADE アクションの代わりに SET NULL アクションを使う、次のような Orders テーブルの異なる定義について検討します。
+  ON UPDATE CASCADE 句と ON DELETE CASCADE 句は、どちらも外部キー上に定義されます。ON UPDATE CASCADE 句は、Customers テーブルで顧客の情報 (CustId) が更新された場合、この更新が Orders テーブルを通してカスケードされることを意味します。各注文に含まれる、対応した顧客情報の値は、自動的に新しい値に更新されます。ON DELETE CASCADE 句は、Customers テーブルで顧客が削除された場合、Orders テーブルにある同じ顧客の顧客情報の値を含む行もすべて同様に削除されることを意味します。 CASCADE アクションの代わりに SET NULL アクションを使う、次のような Orders テーブルの異なる定義について検討します。
+
   
   ``` sql
     CREATE TABLE Orders (OrderId INTEGER PRIMARY KEY, CustId INTEGER, OrderNotes NCHAR VARYING (255), CONSTRAINT FKOrdersCustId FOREIGN KEY (CustId) REFERENCES Customers ON UPDATE SET NULL ON DELETE SET NULL
