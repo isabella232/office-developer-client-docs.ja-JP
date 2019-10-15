@@ -8,38 +8,38 @@ api_type:
 - COM
 ms.assetid: acbfd3ae-bfdc-4103-bed2-6bcf7b9c448c
 description: '最終更新日: 2015 年 3 月 9 日'
-ms.openlocfilehash: b65113e59b236b1f13596627a8669ae458f76369
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: de29707c7a257ea0e7ad658622d2a3054487f8b5
+ms.sourcegitcommit: adcf409d56b6cb25be6117f09794defa41ad6c0f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406501"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "37495307"
 ---
 # <a name="sending-messages-message-store-provider-tasks"></a>メッセージの送信: メッセージストアプロバイダーのタスク
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージストアプロバイダーは、クライアントがメッセージの[IMessage:: submitmessage](imessage-submitmessage.md)メソッドを呼び出したときに、メッセージ送信プロセスに関与します。 複数のメッセージが送信される場合、メッセージストアは、その送信メッセージ呼び出しに使用されたのと**** 同じ順序でメッセージを送信する必要があります。 
+メッセージストアプロバイダーは、クライアントがメッセージの[IMessage:: submitmessage](imessage-submitmessage.md)メソッドを呼び出したときに、メッセージ送信プロセスに関与します。 複数のメッセージが送信される場合、メッセージストアは、その送信メッセージ呼び出しに使用されたのと同じ順序**でメッセージを**送信する必要があります。 
   
 メッセージストアプロバイダーは、MAPI スプーラーを含めるかどうかを決定します。 メッセージストアプロバイダーが密結合されていない場合、メッセージには前処理が必要です。または、密結合ストアとトランスポートはすべての受信者を処理できません。 MAPI スプーラーが関与する必要があります。 
   
 次の手順では、メッセージを送信するためにメッセージストアプロバイダーに必要なタスクについて説明します。 
   
-**IMessage:: submitmessage で、メッセージストアプロバイダーは**次のようになります。
+**IMessage:: SubmitMessage で、メッセージストアプロバイダーは**次のようになります。
   
-1. MSGFLAG_RESEND フラグが**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティに設定されている場合にメッセージを再送信し、クライアントにエラーを返す場合は、 [imapisupport を呼び出します。](imapisupport-preparesubmit.md) **PrepareSubmit**は、メッセージの受信者の一覧に含まれる各受信者の**PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) プロパティをチェックします。
+1. MSGFLAG_RESEND フラグが**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティに設定されている場合にメッセージを再送信し、クライアントにエラーを返す場合は、 [imapisupport を呼び出します:P。](imapisupport-preparesubmit.md) **PrepareSubmit**は、メッセージの受信者の一覧に含まれる各受信者の**PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) プロパティをチェックします。
     
    - 受信者が元のメッセージを受信しなかったことを示す MAPI_SUBMITTED フラグが設定されている場合、 **PrepareSubmit**はフラグをクリアし、 **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) プロパティを TRUE に設定します。 
     
-   - MAPI_SUBMITTED フラグが設定されておらず、受信者が元のメッセージを受信したことを示している場合、 **PrepareSubmit**は**PR_RECIPIENT_TYPE**プロパティを MAPI_P1 に変更し、 **PR_RESPONSIBILITY**プロパティを TRUE に設定して、クライアントに対して**PrepareSubmit**によって生成されたエラー。 
+   - MAPI_SUBMITTED フラグが設定されておらず、受信者が元のメッセージを受信したことを示している場合、 **PrepareSubmit**は**PR_RECIPIENT_TYPE**プロパティを MAPI_P1 に変更し、 **PR_RESPONSIBILITY**プロパティを TRUE に設定し、任意の値を返します。クライアントに**PrepareSubmit**によって生成されたエラー。 
     
 2. メッセージの**PR_MESSAGE_FLAGS**プロパティに MSGFLAG_SUBMIT フラグを設定します。 
     
-3. recipient テーブルに**PR_RESPONSIBILITY**の列が存在することを確認し、メッセージの送信に関してまだ責任を負っていないトランスポートがないことを示すために FALSE に設定します。 
+3. Recipient テーブルに**PR_RESPONSIBILITY**の列が存在することを確認し、メッセージの送信に関してまだ責任を負っていないトランスポートがないことを示すために FALSE に設定します。 
     
 4. **PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md)) プロパティで、発信元の日付と時刻を設定します。
     
-5. [imapisupport:: ExpandRecips](imapisupport-expandrecips.md)を呼び出します。 
+5. [Imapisupport:: ExpandRecips](imapisupport-expandrecips.md)を呼び出します。 
     
    - すべての個人用配布リストとカスタム受信者を展開し、変更されたすべての表示名を元の名前に置き換えます。
    - 重複する名前を削除します。
@@ -53,8 +53,8 @@ ms.locfileid: "33406501"
    - クライアントに制御を戻し、メッセージフローを MAPI スプーラーで続行します。 
    - MAPI スプーラーは、次のタスクを実行します。
      - IMsgStore:: SetLockState を呼び出して、メッセージをロックします。 
-     - 登録の順序ですべての前処理関数を呼び出すことによって、必要な前処理を実行します。 トランスポートプロバイダーは、imapisupport:: registerpreprocessor プロセッサを呼び出して前処理関数を登録します。 
-     - 処理が完了したことをメッセージストアに示すように、開いているメッセージの IMessage:: submitmessage を呼び出します。
+     - 登録の順序ですべての前処理関数を呼び出すことによって、必要な前処理を実行します。 トランスポートプロバイダーは、IMAPISupport:: RegisterPreprocessor プロセッサを呼び出して前処理関数を登録します。 
+     - 処理が完了したことをメッセージストアに示すように、開いているメッセージの IMessage:: SubmitMessage を呼び出します。
 
 <br/>
 
@@ -62,7 +62,7 @@ ms.locfileid: "33406501"
 
 **メッセージストアプロバイダー**:
 
-1. メッセージストアがトランスポートに密接に結合されており、NEEDS_SPOOLER フラグが[imapisupport:: ExpandRecips](imapisupport-expandrecips.md)から返された場合は、次のタスクを実行します。
+1. メッセージストアがトランスポートに密接に結合されており、NEEDS_SPOOLER フラグが[Imapisupport:: ExpandRecips](imapisupport-expandrecips.md)から返された場合は、次のタスクを実行します。
     
    - 処理できる受信者を処理します。
    - 処理するすべての受信者に対して、 **PR_RESPONSIBILITY**プロパティを TRUE に設定します。 

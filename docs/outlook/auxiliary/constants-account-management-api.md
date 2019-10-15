@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 2a15e5df-b8e3-9c37-b1ee-2881d010e30b
 description: このトピックでは、アカウント管理 API の定数の定義、クラス識別子、およびインターフェイス識別子について説明します。
-ms.openlocfilehash: 52d6e1801ac35621179aa0cac8acc2893aeb06b3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d36116e30eb7879dcd0db0523be8f28bb8fe82a7
+ms.sourcegitcommit: adcf409d56b6cb25be6117f09794defa41ad6c0f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429076"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "37495314"
 ---
 # <a name="constants-account-management-api"></a>定数 (アカウント管理 API)
 
@@ -24,28 +24,29 @@ ms.locfileid: "33429076"
 |:-----|:-----|
 |ACCT_INIT_NOSYNCH_MAPI_ACCTS  <br/> |0x00000001  <br/> |
 |ACCT_INIT_NO_STORES_CHECK  <br/> |0x00000002  <br/> |
+|ACCT_INIT_NO_NOTIFICATIONS <br/> |0x00000004 <br/> |
 |ACCTUI_NO_WARNING  <br/> |0x0100  <br/> |
 |ACCTUI_SHOW_ACCTWIZARD  <br/> |0x0400  <br/> |
 |ACCTUI_SHOW_DATA_TAB  <br/> |0x0200  <br/> |
-|E_ACCT_NOT_FOUND  <br/> |0x800c8101  <br/> |
-|E_ACCT_UI_BUSY  <br/> |0x800c8102  <br/> |
-|E_ACCT_WRONG_SORT_ORDER  <br/> |0x800c8105  <br/> |
+|E_ACCT_NOT_FOUND  <br/> |0x800C8101  <br/> |
+|E_ACCT_UI_BUSY  <br/> |0x800C8102  <br/> |
+|E_ACCT_WRONG_SORT_ORDER  <br/> |0x800C8105  <br/> |
 |E_INVALIDARG  <br/> | *Windows Software Development Kit (SDK) ヘッダーファイル winerror.h で定義されているとおりです。*  <br/> |
 |E_NOTIMPL  <br/> | *Windows SDK ヘッダーファイル winerror.h で定義されています。*  <br/> |
-|E_OLK_ALREADY_INITIALIZED  <br/> |0x800c8002  <br/> |
-|E_OLK_NOT_INITIALIZED  <br/> |0x800c8005  <br/> |
-|E_OLK_PARAM_NOT_SUPPORTED  <br/> |0x800c8003  <br/> |
-|E_OLK_PROP_READ_ONLY  <br/> |0x800c800d  <br/> |
-|E_OLK_REGISTRY  <br/> |0x800c8001  <br/> |
+|E_OLK_ALREADY_INITIALIZED  <br/> |0x800C8002  <br/> |
+|E_OLK_NOT_INITIALIZED  <br/> |0x800C8005  <br/> |
+|E_OLK_PARAM_NOT_SUPPORTED  <br/> |0x800C8003  <br/> |
+|E_OLK_PROP_READ_ONLY  <br/> |0x800C800D  <br/> |
+|E_OLK_REGISTRY  <br/> |0x800C8001  <br/> |
 |ENCRYPT_ で始まる次の定数は、暗号化された接続の種類を指定するために[PROP_SMTP_SECURE_CONNECTION](prop_smtp_secure_connection.md)プロパティで使用されます。  <br/> ||
-|ENCRYPT_CONN_AUTO  <br/> |3   <br/> |
+|ENCRYPT_CONN_AUTO  <br/> |1/3  <br/> |
 |ENCRYPT_CONN_NO_SECURITY  <br/> |.0  <br/> |
-|ENCRYPT_CONN_SSL  <br/> |1   <br/> |
-|ENCRYPT_CONN_TLS  <br/> |2   <br/> |
+|ENCRYPT_CONN_SSL  <br/> |1-d  <br/> |
+|ENCRYPT_CONN_TLS  <br/> |pbm-2  <br/> |
 |MAPIACCT_SEND_ONLY  <br/> |0x00000001  <br/> |
-|NOTIFY_ACCT_CHANGED  <br/> |1   <br/> |
-|NOTIFY_ACCT_CREATED  <br/> |2   <br/> |
-|NOTIFY_ACCT_DELETED  <br/> |3   <br/> |
+|NOTIFY_ACCT_CHANGED  <br/> |1-d  <br/> |
+|NOTIFY_ACCT_CREATED  <br/> |pbm-2  <br/> |
+|NOTIFY_ACCT_DELETED  <br/> |1/3  <br/> |
 |NOTIFY_ACCT_ORDER_CHANGED  <br/> |4   <br/> |
 |NOTIFY_ACCT_PREDELETED  <br/> |5   <br/> |
 |OLK_ACCOUNT_NO_FLAGS  <br/> |.0  <br/> |
@@ -54,8 +55,8 @@ ms.locfileid: "33429076"
 |SECURE_FLAG  <br/> |0x8000  <br/> |
 |SMTP_ で始まる次の定数は、 [PROP_SMTP_AUTH_METHOD](prop_smtp_auth_method.md)プロパティで使用され、認証方法を指定します。  <br/> ||
 |SMTP_AUTH_SAME_AS_POP  <br/> |.0  <br/> |
-|SMTP_AUTH_RECEIVE_BEFORE_SEND  <br/> |2   <br/> |
-|SMTP_AUTH_USER_PASS  <br/> |1   <br/> |
+|SMTP_AUTH_RECEIVE_BEFORE_SEND  <br/> |pbm-2  <br/> |
+|SMTP_AUTH_USER_PASS  <br/> |1-d  <br/> |
 |次の5つの定数とマクロは、 [PROP_POP_LEAVE_ON_SERVER](prop_pop_leave_on_server.md)プロパティで使用され、サーバー上にメッセージのコピーを残す POP アカウントのオプションを指定します。  <br/> ||
 |LEAVE_ON_SERVER  <br/> |0x1  <br/> |
 |REMOVE_AFTER  <br/> |0x2  <br/> |
