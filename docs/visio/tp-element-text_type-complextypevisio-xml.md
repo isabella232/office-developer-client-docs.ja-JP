@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34542976"
 ---
-# <a name="tp-element-texttype-complextype-visio-xml"></a>tp 要素 (Text_Type complexType) (Visio XML)
+# <a name="tp-element-text_type-complextype-visio-xml"></a>tp 要素 (Text_Type complexType) (Visio XML)
 
 実行するタブ プロパティの先頭を指定します。 実行は、テキストの末尾、または次のタグまで定義されます。
   

@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34538313"
 ---
-# <a name="refby-element-celltype-complextype-visio-xml"></a>RefBy 要素 (Cell_Type complexType) (Visio XML)
+# <a name="refby-element-cell_type-complextype-visio-xml"></a>RefBy 要素 (Cell_Type complexType) (Visio XML)
 
 図面内のページへの参照を指定します。
   

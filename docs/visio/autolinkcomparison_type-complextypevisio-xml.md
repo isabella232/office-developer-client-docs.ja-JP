@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34537886"
 ---
-# <a name="autolinkcomparisontype-complextype-visio-xml"></a>AutoLinkComparison_Type complexType (Visio XML)
+# <a name="autolinkcomparison_type-complextype-visio-xml"></a>AutoLinkComparison_Type complexType (Visio XML)
 
 ## <a name="type-information"></a>型情報
 

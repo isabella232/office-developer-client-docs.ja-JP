@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34540561"
 ---
-# <a name="cp-element-texttype-complextype-visio-xml"></a>cp 要素 (Text_Type complexType) (Visio XML)
+# <a name="cp-element-text_type-complextype-visio-xml"></a>cp 要素 (Text_Type complexType) (Visio XML)
 
 対応する Char 要素に従って書式設定された文字プロパティ実行の開始位置を示します。 実行は、テキストの末尾、または次のタグまで定義されます。
   

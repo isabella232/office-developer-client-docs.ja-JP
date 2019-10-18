@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34539678"
 ---
-# <a name="datarecordset-element-datarecordsetstype-complextype-visio-xml"></a>DataRecordSet 要素 (DataRecordSets_Type complexType) (Visio XML)
+# <a name="datarecordset-element-datarecordsets_type-complextype-visio-xml"></a>DataRecordSet 要素 (DataRecordSets_Type complexType) (Visio XML)
 
 Microsoft Visio のデータベースからクエリしたデータを保存、書式設定、更新、および公開します。
   
