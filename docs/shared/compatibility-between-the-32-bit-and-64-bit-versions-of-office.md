@@ -1,16 +1,16 @@
 ---
 title: Office の 32 ビット バージョンと 64 ビット バージョン間の互換性
-ms.date: 04/27/2016
+ms.date: 12/03/2019
 ms.audience: ITPro
 ms.assetid: ff49dc9e-daf8-43cf-8802-51c2537ed561
 description: 32 ビット バージョンの Office と 64 ビット バージョンの Office の互換性についてご確認ください。
 localization_priority: Priority
-ms.openlocfilehash: b03323b37b242c9992c47cd737ae54f3f9bbf2ca
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a0accc9c4b0198ab18b999353762a016d52f6b39
+ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359823"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39819254"
 ---
 # <a name="compatibility-between-the-32-bit-and-64-bit-versions-of-office"></a>Office の 32 ビット バージョンと 64 ビット バージョン間の互換性
 
@@ -67,7 +67,7 @@ Office のネイティブの 64 ビット プロセスでは 32 ビットのバ�
 VBA ライブラリとタイプ ライブラリを組み合わせれば、Office アプリケーションの作成にさまざまな機能を使えるようになります。ただし、コンピューターのオペレーティング システムや他のコンポーネントとの直接のやりとりが必要になることもあります。たとえば、メモリやプロセスの管理、ウィンドウやコントロールなどの UI 要素の操作、Windows レジストリの変更を行うときです。このような状況では、DLL ファイルに組み込まれた外部関数を使うのが最善策です。VBA でこれを行うには、 **Declare** を使って API 呼び出しを行います。 
   
 > [!NOTE]
-> Microsoft は、1,500 個の Declare ステートメントが含まれている Win32API.txt ファイルと、コードに含める **Declare** ステートメントをコピーするツールを提供しています。 ただし、これらのステートメントは 32 ビット システム用であるため、この記事で後ほど説明する情報に従って 64 ビットに変換する必要があります。 既存の **Declare** ステートメントは、**PtrSafe** 属性を使って 64 ビットに対して安全なステートメントとしてマークするまでは、64 ビットの VBA にコンパイルされません。 この種類の変換の例については、Excel MVP Jan Karel Pieterse の Web サイト ([https://www.jkp-ads.com/articles/apideclarations.asp](https://www.jkp-ads.com/articles/apideclarations.asp)) をご覧ください。 [Office Code Compatibility Inspector ユーザーズ ガイド](https://technet.microsoft.com/ja-JP/library/ee833946%28office.14%29.aspx)は、**PtrSafe** 属性と適切な戻り値の型 (必要に応じて) の API **Declare** ステートメントの構文を検査するのに役立ちます。 
+> Microsoft は、1,500 個の Declare ステートメントが含まれている Win32API.txt ファイルと、コードに含める **Declare** ステートメントをコピーするツールを提供しています。 ただし、これらのステートメントは 32 ビット システム用であるため、この記事で後ほど説明する情報に従って 64 ビットに変換する必要があります。 既存の **Declare** ステートメントは、**PtrSafe** 属性を使って 64 ビットに対して安全なステートメントとしてマークするまでは、64 ビットの VBA にコンパイルされません。 この種類の変換の例については、Excel MVP Jan Karel Pieterse の Web サイト ([https://www.jkp-ads.com/articles/apideclarations.asp](https://www.jkp-ads.com/articles/apideclarations.asp)) をご覧ください。 [Office Code Compatibility Inspector ユーザーズ ガイド](https://docs.microsoft.com/previous-versions/office/office-2010/ee833946(v=office.14))は、**PtrSafe** 属性と適切な戻り値の型 (必要に応じて) の API **Declare** ステートメントの構文を検査するのに役立ちます。 
   
 **Declare** ステートメントの形式は、サブルーチン (戻り値がない) と関数 (戻り値がある) のどちらを呼び出すのかに応じて、次のどちらかになります。 
   
@@ -219,7 +219,7 @@ End Sub
   
 #### <a name="when-should-i-convert-long-parameters-to-longptr"></a>どのような場合に Long パラメーターを LongPtr に変換する必要がありますか。
   
-呼び出す関数については、Microsoft Developers Network の Windows API ドキュメントを確認する必要があります。ハンドルとポインターは **LongPtr** に変換する必要があります。たとえば、 [RegOpenKeyA](https://msdn.microsoft.com/library/c8a590f2-3249-437f-a320-c7443d42b792.aspx) のドキュメントは、次のシグネチャを提供します。 
+呼び出す関数については、Microsoft Developers Network の Windows API ドキュメントを確認する必要があります。ハンドルとポインターは **LongPtr** に変換する必要があります。たとえば、 [RegOpenKeyA](https://docs.microsoft.com/windows/win32/api/winreg/nf-winreg-regopenkeyexa) のドキュメントは、次のシグネチャを提供します。 
   
 ```cs
 LONG WINAPI RegOpenKeyEx(
@@ -241,7 +241,7 @@ LONG WINAPI RegOpenKeyEx(
 |samDesired [in]  <br/> |キーに対する必要なアクセス権を指定するマスク。  <br/> |
 |phkResult [out]  <br/> |キーを開くハンドルを受け取る変数への *ポインター*  。  <br/> |
    
-[Win32API_PtrSafe.txt](https://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=035b72a5-eef9-4baf-8dbc-63fbd2dd982b) では、**Declare** ステートメントが次のように定義されています。 
+[Win32API_PtrSafe.txt](https://docs.microsoft.com/office/troubleshoot/office/win32api_ptrsafe-with-64-bit-support) では、**Declare** ステートメントが次のように定義されています。 
   
 ```vb
 Declare PtrSafe Function RegOpenKeyEx Lib "advapi32.dll" Alias "RegOpenKeyExA" (ByVal hKey As LongPtr , ByVal lpSubKey As String, ByVal ulOptions As Long, ByVal samDesired As Long, phkResult As LongPtr ) As Long
@@ -269,6 +269,4 @@ End TypeF
 ## <a name="see-also"></a>関連項目
 <a name="odc_office_Compatibility32bit64bit_AdditionalResources"> </a>
 
-- [Anatomy of a Declare Statement](https://msdn.microsoft.com/library/office/aa671659.aspx)
-    
-
+- [Anatomy of a Declare Statement](https://docs.microsoft.com/previous-versions/aa671659(v=vs.71))

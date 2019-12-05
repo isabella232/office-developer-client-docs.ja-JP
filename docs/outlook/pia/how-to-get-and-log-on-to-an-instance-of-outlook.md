@@ -2,32 +2,32 @@
 title: Outlook のインスタンスを取得し、サインインする
 TOCTitle: Get and sign in to an instance of Outlook
 ms:assetid: 7f5057dc-4232-4dc7-b597-16ff5f7bcd7d
-ms:mtpsurl: https://msdn.microsoft.com/library/Ff462097(v=office.15)
+ms:mtpsurl: https://docs.microsoft.com/office/client-developer/outlook/pia/how-to-get-and-log-on-to-an-instance-of-outlook?redirectedfrom=MSDN
 ms:contentKeyID: 55119926
-ms.date: 07/24/2014
+ms.date: 12/03/2019
 mtps_version: v=office.15
 localization_priority: Priority
-ms.openlocfilehash: 4445d0665ea5a3d36a5ff7c92b5a46cfe4fffaa8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: edcf2053a2f678b2280e1735ee728196cc431d31
+ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32320273"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39819344"
 ---
 # <a name="get-and-sign-in-to-an-instance-of-outlook"></a>Outlook のインスタンスを取得し、サインインする
 
-このトピックでは、ローカル コンピューターで Microsoft Outlook が実行されている場合には Outlook のアクティブ インスタンスを表す [Application](https://msdn.microsoft.com/library/bb646615\(v=office.15\)) オブジェクトを取得し、そうでない場合には Outlook の新しいインスタンスを作成し、既定のプロファイルにサインインし、Outlook のそのインスタンスを返す方法を示します。
+このトピックでは、ローカル コンピューターで Microsoft Outlook が実行されている場合には Outlook のアクティブ インスタンスを表す [Application](https://docs.microsoft.com/en-us/dotnet/api/microsoft.office.interop.outlook.application?redirectedfrom=MSDN&view=outlook-pia) オブジェクトを取得し、そうでない場合には Outlook の新しいインスタンスを作成し、既定のプロファイルにサインインし、Outlook のそのインスタンスを返す方法を示します。
 
 ## <a name="example"></a>例
 
 > [!NOTE] 
 > 次のコード例は、Helmut Obertanner 氏が提供したものです。 Helmut 氏の得意分野は、Office Developer Tools for Visual Studio と Outlook です。 
 
-次のコード例には、Sample クラスの GetApplicationObject メソッドが含まれています。このメソッドは、Outlook アドイン プロジェクトの一部として実装されています。 それぞれのプロジェクトでは、[Microsoft.Office.Interop.Outlook](https://msdn.microsoft.com/library/bb610835\(v=office.15\)) 名前空間に基づいた、Outlook プライマリ互換運用機能アセンブリへの参照を追加しています。
+次のコード例には、Sample クラスの GetApplicationObject メソッドが含まれています。このメソッドは、Outlook アドイン プロジェクトの一部として実装されています。 それぞれのプロジェクトでは、[Microsoft.Office.Interop.Outlook](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook?redirectedfrom=MSDN&view=outlook-pia) 名前空間に基づいた、Outlook プライマリ互換運用機能アセンブリへの参照を追加しています。
 
-GetApplicationObject メソッドは、.NET Framework クラス ライブラリのクラスを使用して、ローカル コンピューターで実行中の Outlook プロセスを確認および取得します。 まず、 [System.Diagnostics](https://msdn.microsoft.com/ja-JP/library/wbt7d3cy) 名前空間内の [Process](https://msdn.microsoft.com/ja-JP/library/ccf1tfx0) クラスの [GetProcessesByName](https://msdn.microsoft.com/ja-JP/library/15t15zda) メソッドを使用して、ローカル コンピューター上のプロセス名 "OUTLOOK" のプロセス コンポーネントの配列を取得します。 配列に少なくとも 1 つの Outlook プロセスが含まれているかどうかを確認するために、GetApplicationObject では Microsoft 統合言語クエリ (LINQ) を使用しています。 [System.Linq](https://msdn.microsoft.com/ja-JP/library/bb345746) 名前空間内の [Enumerable](https://msdn.microsoft.com/ja-JP/library/bb336768) クラスには、 \> ジェネリック インターフェイスを実装している各種メソッドがあり、 [Count](https://msdn.microsoft.com/ja-JP/library/9eekhta0) メソッドもその 1 つです。 [Array](https://msdn.microsoft.com/ja-JP/library/czz5hkty) クラスは **IEnumerable(T)** インターフェイスを実装しているため、**GetProcessesByName** から返された配列に **Count** メソッドを利用することで、実行中の Outlook プロセスが存在するかどうかを確認できます。 存在している場合、GetApplicationObject は [System.Runtime.InteropServices](https://msdn.microsoft.com/library/9esea608\(v=office.15\)) 名前空間の [Marshal](https://msdn.microsoft.com/ja-JP/library/asx0thw2) クラスに含まれる [GetActiveObject](https://msdn.microsoft.com/ja-JP/library/xt620x09) メソッドを使用して、その Outlook のインスタンスを取得し、そのオブジェクトを Outlook [Application](https://msdn.microsoft.com/library/bb646615\(v=office.15\)) オブジェクトにキャストします。
+GetApplicationObject メソッドは、.NET Framework クラス ライブラリのクラスを使用して、ローカル コンピューターで実行中の Outlook プロセスを確認および取得します。 まず、 [System.Diagnostics](https://docs.microsoft.com/dotnet/api/system.diagnostics.process.getprocessesbyname?redirectedfrom=MSDN&view=netframework-4.8#overloads) 名前空間内の [Process](https://docs.microsoft.com/dotnet/api/system.diagnostics.process?redirectedfrom=MSDN&view=netframework-4.8) クラスの [GetProcessesByName](https://docs.microsoft.com/dotnet/api/system.diagnostics?redirectedfrom=MSDN&view=netframework-4.8) メソッドを使用して、ローカル コンピューター上のプロセス名 "OUTLOOK" のプロセス コンポーネントの配列を取得します。 配列に少なくとも 1 つの Outlook プロセスが含まれているかどうかを確認するために、GetApplicationObject では Microsoft 統合言語クエリ (LINQ) を使用しています。 [System.Linq](https://msdn.microsoft.com/library/bb345746) 名前空間内の [Enumerable](https://msdn.microsoft.com/library/bb336768) クラスには、 \> ジェネリック インターフェイスを実装している各種メソッドがあり、 [Count](https://msdn.microsoft.com/library/9eekhta0) メソッドもその 1 つです。 [Array](https://msdn.microsoft.com/library/czz5hkty) クラスは **IEnumerable(T)** インターフェイスを実装しているため、**GetProcessesByName** から返された配列に **Count** メソッドを利用することで、実行中の Outlook プロセスが存在するかどうかを確認できます。 存在している場合、GetApplicationObject は [System.Runtime.InteropServices](https://msdn.microsoft.com/library/9esea608\(v=office.15\)) 名前空間の [Marshal](https://msdn.microsoft.com/library/asx0thw2) クラスに含まれる [GetActiveObject](https://msdn.microsoft.com/library/xt620x09) メソッドを使用して、その Outlook のインスタンスを取得し、そのオブジェクトを Outlook [Application](https://msdn.microsoft.com/library/bb646615\(v=office.15\)) オブジェクトにキャストします。
 
-Outlook がローカル コンピューターで実行中ではない場合、GetApplicationObject では、Outlook の新しいインスタンスを作成し、[NameSpace](https://msdn.microsoft.com/library/bb645857\(v=office.15\)) オブジェクトの [Logon(Object, Object, Object, Object)](https://msdn.microsoft.com/library/bb646718\(v=office.15\)) メソッドを使用して既定のプロファイルにサインインし、Outlook のその新しいインスタンスを返します。
+Outlook がローカル コンピューターで実行中ではない場合、GetApplicationObject では、Outlook の新しいインスタンスを作成し、[NameSpace](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.namespace?redirectedfrom=MSDN&view=outlook-pia) オブジェクトの [Logon(Object, Object, Object, Object)](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook._namespace.logon?redirectedfrom=MSDN&view=outlook-pia#Microsoft_Office_Interop_Outlook__NameSpace_Logon_System_Object_System_Object_System_Object_System_Object_) メソッドを使用して既定のプロファイルにサインインし、Outlook のその新しいインスタンスを返します。
 
 次に、Visual Basic のコード例を示します。その後に、C\# のコード例を示します。
 
