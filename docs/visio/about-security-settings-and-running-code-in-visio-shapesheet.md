@@ -1,7 +1,7 @@
 ---
 title: Visio のセキュリティ設定とコードの実行について (シェイプシート)
-manager: soliver
-ms.date: 11/16/2014
+manager: lindalu
+ms.date: 12/03/2019
 ms.audience: Developer
 ms.topic: overview
 f1_keywords:
@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 506b3d81-9c93-aeff-f5b2-3354ffd3e075
 description: セキュリティで保護されたアプリケーションの作成は、ソリューション開発者が直面する基本的な課題の 1 つです。 ユーザー、管理者、および開発者は、コンピューターに悪影響を及ぼす可能性のあるコードを知らずに実行している可能性を徐々に認識しています。 アプリケーションの整合性を確保することはいっそう重要になっています。
-ms.openlocfilehash: 72b4a45faa46778b7a369cfe458ee4e0e9ea71bb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 3ad2aef9096ad2ad344b2d6fb22ed610756916bb
+ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345025"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39819267"
 ---
 # <a name="about-security-settings-and-running-code-in-visio-shapesheet"></a>Visio のセキュリティ設定とコードの実行について (シェイプシート)
 
@@ -32,9 +32,9 @@ ms.locfileid: "32345025"
     
 - VBA マクロの読み込み
     
-以前のバージョンの Visio では、設定は [**セキュリティ**] ダイアログ ボックスと、[**オプション**] ダイアログ ボックス ([**ツール**] メニュー) の [**セキュリティ**] タブで行っていました。 Office visio 2007 では、これらのダイアログボックスは廃止され、Microsoft visio 2010 の場合、visio のツールバーとメニューはリボンに置き換えられました。 
+以前のバージョンの Visio では、設定は [**セキュリティ**] ダイアログ ボックスと、[**オプション**] ダイアログ ボックス ([**ツール**] メニュー) の [**セキュリティ**] タブで行っていました。 Office Visio 2007 では、これらのダイアログボックスは廃止され、Microsoft Visio 2010 の場合、Visio のツールバーとメニューはリボンに置き換えられました。 
   
-Office**セキュリティセンター**の設定の詳細については、「 [Microsoft office ソリューション開発者向けのセキュリティに関する注意事項](https://msdn.microsoft.com/en-us/library/aa433259.aspx)」を参照してください。
+Office**セキュリティセンター**の設定の詳細については、「 [Microsoft Office ソリューション開発者向けのセキュリティに関する注意事項](https://docs.microsoft.com/previous-versions/office/developer/office-2007/aa433259(v=office.12))」を参照してください。
   
  デジタル署名コード、信頼のおける発行元、発行元に関する情報については、MSDN (Microsoft Developer Network web サイト) の「コード署名」を検索してください。 
   
@@ -42,8 +42,8 @@ Office**セキュリティセンター**の設定の詳細については、「 
   
 ## <a name="additional-visio-resources"></a>Visio の追加リソース
 
-- visio アドオンと com アドインの詳細については、MSDN の記事「 [visio 2007 でのアドオンと com アドインの概要](https://msdn.microsoft.com/library/bb851468.aspx)」を参照してください。
+- Visio アドオンと COM アドインの詳細については、MSDN の記事「 [visio 2007 でのアドオンと Com アドインの概要](https://docs.microsoft.com/previous-versions/office/developer/office-2007/bb851468(v=office.12))」を参照してください。
     
-- RUNADDON 関数と**AddonName**プロパティの詳細については、MSDN の記事「 [RUNADDON 関数での変更点」および「AddonName プロパティ (Visio 2002](https://msdn.microsoft.com/library/aa140368%28office.10%29.aspx))」を参照してください。
+- RUNADDON 関数と**AddonName**プロパティの詳細については、MSDN の記事「 [RUNADDON 関数での変更点」および「AddonName プロパティ (Visio 2002](https://docs.microsoft.com/previous-versions/office/developer/office-xp/aa140368(v=office.10)))」を参照してください。
     
 

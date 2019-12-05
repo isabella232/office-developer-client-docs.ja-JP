@@ -1,21 +1,21 @@
 ---
-title: Office online Server の Excel Online で udf を構成する
-manager: soliver
-ms.date: 03/18/2016
+title: Office Online Server の Excel Online で Udf を構成する
+manager: lindalu
+ms.date: 12/03/2019
 ms.audience: ITPro
 localization_priority: Normal
 ms.assetid: 3e0ca274-e9cd-48a1-8cfc-9d5053738972
-description: Office online Server の Excel online でユーザー定義関数 (udf) を使用して、カスタム関数を呼び出します。
-ms.openlocfilehash: dbba60a62a1a4783b47c3f1fe40a118dd8ed0d6d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Office Online Server の Excel Online でユーザー定義関数 (Udf) を使用して、カスタム関数を呼び出します。
+ms.openlocfilehash: 6e16ea753090b2fefca4ae15330f1a27d53da777
+ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32311061"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39819358"
 ---
-# <a name="configure-udfs-in-excel-online-in-office-online-server"></a>Office online Server の Excel Online で udf を構成する
+# <a name="configure-udfs-in-excel-online-in-office-online-server"></a>Office Online Server の Excel Online で Udf を構成する
 
-Office online Server の Excel online でユーザー定義関数 (udf) を使用して、カスタム関数を呼び出します。 
+Office Online Server の Excel Online でユーザー定義関数 (Udf) を使用して、カスタム関数を呼び出します。 
   
 Excel Online でユーザー定義関数 (UDF) を使用すると、セル内の数式を使用して、マネージ コードで記述されたカスタム関数を呼び出すことができます。UDF は、次の目的で使用できます。
   
@@ -38,13 +38,13 @@ UDF バイナリは、以下の 2 つの場所のいずれかにインストー�
 Office Online Server で**OfficeWebAppsExcelUserDefinedFunction**定義を作成するときに場所を参照します。 
   
 > [!NOTE]
-> Office Online Server は、ネットワーク共有にある udf をサポートしていません。 
+> Office Online Server は、ネットワーク共有にある Udf をサポートしていません。 
   
-## <a name="enable-udfs-on-office-online-server"></a>Office Online Server で udf を有効にする 
+## <a name="enable-udfs-on-office-online-server"></a>Office Online Server で Udf を有効にする 
 
-管理者が、 [new-officewebappsfarm](https://technet.microsoft.com/en-us/library/jj219436.aspx) Windows PowerShell コマンドレットを使用して新しい Office Web Apps サーバーファームを作成する場合、UDF アセンブリは既定で無効になっています。 **ExcelUdfsAllowed** フラグの既定値は false です。 
+管理者が、 [New-officewebappsfarm](https://technet.microsoft.com/en-us/library/jj219436.aspx) Windows PowerShell コマンドレットを使用して新しい Office Web Apps サーバーファームを作成する場合、UDF アセンブリは既定で無効になっています。 **ExcelUdfsAllowed** フラグの既定値は false です。 
   
-udf を有効にするには、office Web Apps サーバーファームが作成された後、office Online server で次の Windows PowerShell コマンドを実行します。
+Udf を有効にするには、office Web Apps サーバーファームが作成された後、Office Online Server で次の Windows PowerShell コマンドを実行します。
   
 `Set-OfficeWebAppsFarm - ExcelUdfsAllowed:$true`
   
@@ -54,7 +54,7 @@ UDF を有効にした後に、UDF を含むバイナリの定義を作成する
   
 - **アセンブリ**
     
-- **assemblylocation**
+- **AssemblyLocation**
     
 - **Enable** (既定で False に設定されます) 
     
@@ -70,9 +70,9 @@ UDF を有効にした後に、UDF を含むバイナリの定義を作成する
   
 ## <a name="additional-office-online-server-udf-windows-powershell-commands"></a>その他の Office Online Server UDF の Windows PowerShell コマンド
 
-udf を操作するには、次の Windows PowerShell コマンドレットを使用します。
+Udf を操作するには、次の Windows PowerShell コマンドレットを使用します。
   
-- **OfficeWebAppsExcelUserDefinedFunction**(必須のパラメーターはありません)-Office Online Server で構成されている UDF 定義の一覧を返します。 
+- **OfficeWebAppsExcelUserDefinedFunction** (必須のパラメーターはありません)-Office Online Server で構成されている UDF 定義の一覧を返します。 
     
 - **Set- OfficeWebAppsExcelUserDefinedFunction** (ID パラメーターが必要) - 既存の UDF 定義にプロパティを設定します。 
     
@@ -80,14 +80,13 @@ udf を操作するには、次の Windows PowerShell コマンドレットを�
     
 ## <a name="udf-sample"></a>UDF のサンプル
 
-次のファイルは、UDF と UDF バイナリを使用するサンプルのブックを提供します。
+次のサンプルファイルは、UDF と UDF バイナリを使用するサンプルブックを提供しています。
   
 - [BooleanDataType](https://download.microsoft.com/download/6/7/F/67F724FD-1186-4209-BFF1-FBFD99E959D9/User%20Defined%20Function%20Assemblies/BooleanDataType.xlsx): UDF を使用するサンプルブック  
-- [EcsUdfsCommonSet](https://www.microsoft.com/en-us/search/result.aspx?q=EcsUdfsCommonSet.dll): UDF バイナリ 
     
 ## <a name="see-also"></a>関連項目
 
 - [Excel Online の管理設定を行う](https://docs.microsoft.com/officeonlineserver/configure-excel-online-administrative-settings)  
-- [Office Online Server](https://docs.microsoft.com/officeonlineserver/office-online-server)
+- [Office Online Server](https://docs.microsoft.com/officeonlineserver/office-online-serverr)
     
 

@@ -2,17 +2,17 @@
 title: ストアのグローバル アドレス一覧またはアドレス一覧のセットを取得する
 TOCTitle: Get the Global Address List or a set of address lists for a store
 ms:assetid: a361ac58-25c6-4ce1-97b0-403ad67ee7a4
-ms:mtpsurl: https://msdn.microsoft.com/library/Ff184631(v=office.15)
+ms:mtpsurl: https://docs.microsoft.com/office/client-developer/outlook/pia/how-to-get-the-global-address-list-or-a-set-of-address-lists-for-a-store
 ms:contentKeyID: 55119800
-ms.date: 07/24/2014
+ms.date: 12/03/2019
 mtps_version: v=office.15
 localization_priority: Normal
-ms.openlocfilehash: 677325df863e5b5a52856abb01f55bdb8884bbe8
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 7f0f7ba9b8854603646dc41e1017c2465c4af2d8
+ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542528"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39819330"
 ---
 # <a name="get-the-global-address-list-or-a-set-of-address-lists-for-a-store"></a>ストアのグローバル アドレス一覧またはアドレス一覧のセットを取得する
 
@@ -20,11 +20,11 @@ ms.locfileid: "34542528"
 
 ## <a name="example"></a>例
 
-複数の Exchange アカウントがプロファイルで定義されている Outlook セッションでは、複数のアドレス一覧がストアと関連付けられている場合があります。以下で示すどちらのコード例でも、対象になっている特定のストアは、アクティブなエクスプローラーに表示されている現在のフォルダーに対するストアですが、ストアに対するグローバル アドレス一覧または一連の [AddressList](https://msdn.microsoft.com/library/bb623538\(v=office.15\)) オブジェクトを取得するためのアルゴリズムは、どのような Exchange ストアにも適用できます。
+複数の Exchange アカウントがプロファイルで定義されている Outlook セッションでは、複数のアドレス一覧がストアと関連付けられている場合があります。以下で示すどちらのコード例でも、対象になっている特定のストアは、アクティブなエクスプローラーに表示されている現在のフォルダーに対するストアですが、ストアに対するグローバル アドレス一覧または一連の [AddressList](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.addresslist?redirectedfrom=MSDN&view=outlook-pia) オブジェクトを取得するためのアルゴリズムは、どのような Exchange ストアにも適用できます。
 
 1 番目のコード例には、DisplayGlobalAddressListForStore メソッドと GetGlobalAddressList 関数が含まれています。 DisplayGlobalAddressListForStore メソッドでは、現在のストアに関連付けられているグローバル アドレス一覧が [**名前の選択**] ダイアログ ボックスに表示されます。 最初に、DisplayGlobalAddressListForStore は現在のストアを取得します。 現在のストアが Exchange ストアの場合は、GetGlobalAddressList が呼び出され現在のストアに関連付けられているグローバル アドレス一覧を取得します。 
 
-GetGlobalAddressList は [PropertyAccessor](https://msdn.microsoft.com/library/bb646034\(v=office.15\)) オブジェクトと MAPI プロパティ http://schemas.microsoft.com/mapi/proptag/0x3D150102 を使用してアドレス一覧と現在のストの PR\_EMSMDB\_SECTION\_UID プロパティを取得します。 GetGlobalAddressList は、アドレス一覧とストアの PR\_EMSMDB\_SECTION \_UID プロパティが一致した場合にそのアドレス一覧がストアに関連付けられたものと識別します。[AddressListType](https://msdn.microsoft.com/library/bb610942\(v=office.15\)) プロパティが [ olExchangeGlobalAddressList](https://msdn.microsoft.com/library/bb644009\(v=office.15\)) の場合、そのアドレス一覧はグローバル アドレス一覧となります。 GetGlobalAddressList への呼び出しが成功した場合、DisplayGlobalAddressListForStore は [SelectNamesDialog](https://msdn.microsoft.com/library/bb609866\(v=office.15\)) オブジェクトを使用して、返されたグローバル アドレス一覧を [**名前の選択**] ダイアログ ボックスに表示します。
+GetGlobalAddressList は [PropertyAccessor](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.propertyaccessor?redirectedfrom=MSDN&view=outlook-pia) オブジェクトと MAPI プロパティ https://schemas.microsoft.com/mapi/proptag/0x3D150102 を使用してアドレス一覧と現在のストの PR\_EMSMDB\_SECTION\_UID プロパティを取得します。 GetGlobalAddressList は、アドレス一覧とストアの PR\_EMSMDB\_SECTION \_UID プロパティが一致した場合にそのアドレス一覧がストアに関連付けられたものと識別します。[AddressListType](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.addresslist.addresslisttype?redirectedfrom=MSDN&view=outlook-pia#Microsoft_Office_Interop_Outlook_AddressList_AddressListType) プロパティが [ olExchangeGlobalAddressList](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.oladdresslisttype?redirectedfrom=MSDN&view=outlook-pia) の場合、そのアドレス一覧はグローバル アドレス一覧となります。 GetGlobalAddressList の呼び出しが成功すると、DisplayGlobalAddressListForStore は [SelectNamesDialog] (https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.selectnamesdialog?redirectedfrom=MSDN&view=outlook-pia\)オブジェクト) を使用して、返されたグローバルアドレス一覧を [**名前の選択**] ダイアログボックスに表示します。
 
 Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
@@ -84,9 +84,10 @@ public Outlook.AddressList GetGlobalAddressList(Outlook.Store store)
 }
 ```
 
-2 番目のコード例には、EnumerateAddressListsForStore メソッドと GetAddressLists 関数が含まれています。 EnumerateAddressListsForStore メソッドでは、現在のストアで定義された各アドレス一覧の種類と解決順序が表示されます。 EnumerateAddressListsForStore はまず現在のストアを取得し、その後 GetAddressLists を呼び出して現在のストアの AddressList オブジェクトが格納されている .NET Framework の汎用 [List\<T\>](https://msdn.microsoft.com/en-us/library/6sh2ey19)を取得します。 
+2 番目のコード例には、EnumerateAddressListsForStore メソッドと GetAddressLists 関数が含まれています。 EnumerateAddressListsForStore メソッドでは、現在のストアで定義された各アドレス一覧の種類と解決順序が表示されます。 EnumerateAddressListsForStore はまず現在のストアを取得し、その後 GetAddressLists を呼び出して現在のストアの AddressList オブジェクトが格納されている .NET Framework の汎用 [List\<T\>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1?redirectedfrom=MSDN&view=netframework-4.8)を取得します。 
 
-GetAddressLists は本セッションで定義された各アドレス一覧を列挙し、PropertyAccessor オブジェクトと MAPI 名前付きプロパティ http://schemas.microsoft.com/mapi/proptag/0x3D150102 を使用してアドレス一覧の PR\_EMSMDB\_SECTION\_UID プロパティと現在のストアの PR\_EMSMDB\_SECTION\_UID プロパティを取得します。 GetGlobalAddressList は、アドレス一覧とストアの PR\_EMSMDB\_SECTION\_UID プロパティが一致した場合にそのアドレス一覧がストアに関連付けられたものと識別し、現在のストアのアドレス一覧のセットを返します。 その後、EnumerateAddressListsForStore は **AddressList** オブジェクトの [AddressListType](https://msdn.microsoft.com/library/bb610942\(v=office.15\)) と [ResolutionOrder](https://msdn.microsoft.com/library/bb646853\(v=office.15\)) プロパティを使用して、返された各アドレス一覧の種類と解決順序を表示します。
+GetAddressLists は本セッションで定義された各アドレス一覧を列挙し、PropertyAccessor オブジェクトと MAPI 名前付きプロパティ https://schemas.microsoft.com/mapi/proptag/0x3D150102 を使用してアドレス一覧の PR\_EMSMDB\_SECTION\_UID プロパティと現在のストアの PR\_EMSMDB\_SECTION\_UID プロパティを取得します。 GetGlobalAddressList は、アドレス一覧とストアの PR\_EMSMDB\_SECTION\_UID プロパティが一致した場合にそのアドレス一覧がストアに関連付けられたものと識別し、現在のストアのアドレス一覧のセットを返します。 その後、EnumerateAddressListsForStore は **AddressList** オブジェクトの [AddressListType](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.addresslist.addresslisttype?redirectedfrom=MSDN&view=outlook-pia#Microsoft_Office_Interop_Outlook_AddressList_AddressListType) と [ResolutionOrder](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.addresslist.resolutionorder?redirectedfrom=MSDN&view=outlook-pia#Microsoft_Office_Interop_Outlook_AddressList_ResolutionOrder) プロパティを使用して、返された各アドレス一覧の種類と解決順序を表示します。
+
 
 ```csharp
 private void EnumerateAddressListsForStore()

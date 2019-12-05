@@ -2,17 +2,17 @@
 title: 受信者のメール アドレスを取得する
 TOCTitle: Get the email address of a recipient
 ms:assetid: e585811b-a298-496f-ba79-df7d46526169
-ms:mtpsurl: https://msdn.microsoft.com/library/Ff184647(v=office.15)
+ms:mtpsurl: https://docs.microsoft.com/office/client-developer/outlook/pia/how-to-get-the-e-mail-address-of-a-recipient?redirectedfrom=MSDN
 ms:contentKeyID: 55119879
-ms.date: 07/24/2014
+ms.date: 12/03/2019
 mtps_version: v=office.15
 localization_priority: Normal
-ms.openlocfilehash: 5d145dadd974b6608da29cdf85a4624d6c452eb8
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 8957cbc92414b0cdac442167a5c9ea025ce318cb
+ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542577"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39819337"
 ---
 # <a name="get-the-email-address-of-a-recipient"></a>受信者のメール アドレスを取得する
 
@@ -20,7 +20,7 @@ ms.locfileid: "34542577"
 
 ## <a name="example"></a>例
 
-次のコード例の GetSMTPAddressForRecipients メソッドは、入力引数として [MailItem](https://msdn.microsoft.com/library/bb643865\(v=office.15\)) オブジェクトを受け取り、そのメール アイテムの各受信者の SMTP アドレスを表示します。 このメソッドでは、最初にメール アイテムに対して指定されている一連の受信者を表す [Recipients](https://msdn.microsoft.com/library/bb646361\(v=office.15\)) コレクションを取得します。 その **Recipients** コレクションの [Recipient](https://msdn.microsoft.com/library/bb624370\(v=office.15\)) ごとに、その **Recipient** オブジェクトに対応する [PropertyAccessor](https://msdn.microsoft.com/library/bb646034\(v=office.15\)) オブジェクトを取得します。 最後に、 [PropertyAccessor](https://msdn.microsoft.com/library/bb623797\(v=office.15\))プロパティを使用して、MAPI プロパティhttp://schemas.microsoft.com/mapi/proptag/0x39FE001Eの値を取得します。このプロパティは、受信者の**PR\_SMTP\_ADDRESS** ([PidTagSmtpAddress](https://msdn.microsoft.com/library/cc842421\(v=office.15\))) プロパティにマップされます。
+次のコード例の GetSMTPAddressForRecipients メソッドは、入力引数として [MailItem](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.mailitem?redirectedfrom=MSDN&view=outlook-pia) オブジェクトを受け取り、そのメール アイテムの各受信者の SMTP アドレスを表示します。 このメソッドでは、最初にメール アイテムに対して指定されている一連の受信者を表す [Recipients](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.recipients?redirectedfrom=MSDN&view=outlook-pia) コレクションを取得します。 その**Recipients**コレクション内の各[受信者](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.recipient?redirectedfrom=MSDN&view=outlook-pia)について、メソッドは、その**Recipient**オブジェクトに対応する[PropertyAccessor](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.propertyaccessor?redirectedfrom=MSDN&view=outlook-pia)) オブジェクトを取得します。 最後に、 [PropertyAccessor](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.recipient.propertyaccessor?redirectedfrom=MSDN&view=outlook-pia#Microsoft_Office_Interop_Outlook_Recipient_PropertyAccessor)プロパティを使用して、MAPI プロパティhttps://schemas.microsoft.com/mapi/proptag/0x39FE001Eの値を取得します。このプロパティは、受信者の**PR\_SMTP\_ADDRESS** ([PidTagSmtpAddress](https://docs.microsoft.com/office/client-developer/outlook/mapi/pidtagsmtpaddress-canonical-property?redirectedfrom=MSDN)) プロパティにマップされます。
 
 Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
