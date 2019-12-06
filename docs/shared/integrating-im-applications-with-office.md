@@ -1,31 +1,29 @@
 ---
 title: IM アプリケーションと Office の統合
-manager: soliver
-ms.date: 07/25/2016
+manager: lindalu
+ms.date: 12/03/2019
 ms.audience: Developer
 ms.assetid: beba316b-1dfe-4e1b-adae-42418906c177
-description: この記事では、プレゼンスの表示や連絡先カードからのインスタント メッセージの送信など、Office 2013 のソーシャル機能と統合するように、インスタント メッセージ (IM) クライアント アプリケーションを構成する方法について説明します。
+description: この記事では、プレゼンスの表示や連絡先カードからのインスタント メッセージの送信など、Office 2013 以降のソーシャル機能と統合するように、インスタント メッセージ (IM) クライアント アプリケーションを構成する方法について説明します。
 localization_priority: Priority
-ms.openlocfilehash: b3add86f011e016b1b6ea1a74f425f3f1deab002
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c0094b880bae5cac2cef4236d3ff3edcefd21678
+ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32270118"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39819295"
 ---
 # <a name="integrating-im-applications-with-office"></a>IM アプリケーションと Office の統合
 
-この記事では、プレゼンスの表示や連絡先カードからのインスタント メッセージの送信など、Office 2013 のソーシャル機能と統合するように、インスタント メッセージ (IM) クライアント アプリケーションを構成する方法について説明します。
-  
-この技術文書やここで説明されるプロセスについて質問やコメントがある場合、[docthis@microsoft.com](mailto:docthis@microsoft.com) にメールを送信するによって直接 Microsoft に連絡することができます。
+この記事では、プレゼンスの表示や連絡先カードからのインスタント メッセージの送信など、Office 2013、Office 2016、Office 2019、Office 365 のソーシャル機能と統合するように、インスタント メッセージ (IM) クライアント アプリケーションを構成する方法について説明します。
   
 ## <a name="introduction"></a>概要
 <a name="off15_IMIntegration_Intro"> </a>
 
-Office 2013 は、Lync 2013 などの IM クライアント アプリケーションとの多機能な統合を提供します。この統合は、ユーザーに、Word 2013、Excel 2013、PowerPoint 2013、Outlook 2013、Visio 2013、Project 2013、および OneNote 2013 内からの IM 機能を提供し、さらに SharePoint 2013 ページでのプレゼンス統合を提供します。連絡先リストに含まれる個人について、写真、名前、プレゼンス ステータス、連絡先データを表示できます。IM セッション、ビデオ通話、電話通話を連絡先カード (連絡先情報や通信オプションを示す Office 2013 内の UI 要素) から直接開始することができます。Office 2013 により、メールやドキュメントの外に出ることなく連絡先と接続された状態を保つことが容易になります。 
+Office 2013 (およびそれ以降のバージョン) には、Lync 2013 や Teams を含む IM クライアント アプリケーションとの統合機能が備わっています。 この統合により、Word、Excel、PowerPoint、Outlook、Visio、Project、および OneNote の中から IM 機能を使用できるようになり、SharePoint ページでのプレゼンス統合も可能です。 ユーザーは、連絡先リスト内でユーザーの写真、名前、プレゼンス状態、連絡先データを表示できます。 IM セッション、ビデオ通話、または電話による通話を連絡先カード (連絡情報と通信オプションが表示される Office の UI 要素) から直接開始することができます。 Office を使用すると、メールやドキュメントを使用しなくても、簡単に連絡先に接続できます。 
   
 > [!NOTE]
-> この記事では、コンピューターにインストールされた IM サービスと通信するアプリケーションを特に表すために、 IM クライアント アプリケーションという用語を使用します。たとえば、Lync 2013 は IM クライアント アプリケーションとみなされます。この記事では、IM クライアント アプリケーションが IM サービスと通信する方法や、IM サービス自体については詳しく説明しません。 
+> [!メモ] この記事では、コンピューターにインストールされた IM サービスと通信するアプリケーションを特に表すために、 IM クライアント アプリケーションという用語を使用します。 たとえば、Lync 2013 および Teams は、IM クライアント アプリケーションと見なされます。 この記事では、IM クライアント アプリケーションが IM サービスと通信する方法や、IM サービス自体については詳しく説明しません。 
   
 Office と通信できるように、IM のクライアント アプリケーションをカスタマイズすることができます。具体的には、Office UI 内に次の情報が表示されるように、IM のアプリケーションを変更できます。
   
@@ -57,10 +55,10 @@ Office と通信できるように、IM のクライアント アプリケーシ
 
 ![Office 2013 の連絡先カード](media/ocom15_peoplecard.png "Office 2013 の連絡先カード")
   
-Office とのこの統合を有効にするために、IM のクライアント アプリケーションは、Office に接続するために提供されている一連のインターフェイスを実装する必要があります。この統合の API は、Lync / Skype for Business を含むバージョンの Office 2013 と共にインストールされる Microsoft.Office.UC.dll ファイル内にある [UCCollborationLib](https://msdn.microsoft.com/en-au/library/uccollaborationlib.aspx) 名前空間に含まれています。 **UCCollaborationLib** 名前空間には、Office と統合するために実装する必要のあるインターフェイスが含まれています。 
+Office とのこの統合を有効にするために、IM のクライアント アプリケーションは、Office に接続するために提供されている一連のインターフェイスを実装する必要があります。この統合の API は、Lync / Skype for Business を含むバージョンの Office 2013 と共にインストールされる Microsoft.Office.UC.dll ファイル内にある [UCCollborationLib](https://docs.microsoft.com/previous-versions/office/communications/ff398475(v=ocs.14)) 名前空間に含まれています。 **UCCollaborationLib** 名前空間には、Office と統合するために実装する必要のあるインターフェイスが含まれています。 
   
 > [!IMPORTANT] 
-> Lync 2013/Skype for Business には、必要なインターフェイスのタイプ ライブラリが埋め込まれています。 サード パーティ インテグレーターの場合、これは Lync 2013 と Skype for Business の両方が対象コンピューターにインストールされている場合にのみ動作します。 Office 標準を使用して統合している場合は、タイプ ライブラリを抽出して、対象コンピューターにインストールする必要があります。 [Lync 2013 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=36824) には、Microsoft.Office.UC.dll ファイルが含まれています。 
+> Lync 2013/Skype for Business には、必要なインターフェイスのタイプ ライブラリが埋め込まれています。 サード パーティ インテグレーターの場合、これは Lync 2013 と Skype for Business の両方が対象コンピューターにインストールされている場合にのみ動作します。 Office 標準を使用して統合している場合は、タイプ ライブラリを抽出して、対象コンピューターにインストールする必要があります。 [Lync 2013 SDK](https://www.microsoft.com/download/details.aspx?id=36824) には、Microsoft.Office.UC.dll ファイルが含まれています。 
   
 > [!NOTE]
 >  少数の Office 2010 アプリケーションは、同様に、次のサード パーティ IM プロバイダーのアプリケーションと統合できます: Outlook 2010、Word 2010、Excel 2010、PowerPoint 2010、および SharePoint Server 2010 (ActiveX コントロールを使用)。 Office 2013 との統合に必要な手順の多くは、Office 2010 にも同様に適用されます。 Office 2010 が IM プロバイダー アプリケーションと統合する方法には、いくつかの重要な相違があります。 
@@ -72,7 +70,7 @@ Office とのこの統合を有効にするために、IM のクライアント 
 ## <a name="how-office-integrates-with-an-im-client-application"></a>IM クライアント アプリケーションとの Office の統合方法
 <a name="off15_IMIntegration_How"> </a>
 
-Office 2013 アプリケーションは、起動するときに、以下のプロセスによって既定の IM クライアント アプリケーションと統合します。
+Office 2013 (またはそれ以降) アプリケーションは、起動するときに、以下のプロセスによって既定の IM クライアント アプリケーションと統合します。
   
 1. レジストリをチェックして既定の IM クライアント アプリケーションを検出し、それに接続します。
     
@@ -84,7 +82,7 @@ Office 2013 アプリケーションは、起動するときに、以下のプ�
     
 5. ローカル ユーザーの連絡先のプレゼンス情報を取得します。
     
-6. IM クライアント アプリケーションが終了するとき、Office 2013 アプリケーションは警告なしに切断します。
+6. IM クライアント アプリケーションが終了するとき、Office アプリケーションは警告なしに切断します。
     
 ### <a name="discovering-the-im-application"></a>IM アプリケーションの検出
 
@@ -175,12 +173,12 @@ Office アプリケーションは、以下を行うことにより、ローカ�
 ### <a name="disconnecting-from-the-im-application"></a>IM アプリケーションから切断する
 <a name="off15_IMIntegration_HowConnect"> </a>
 
-Office 2013 アプリケーションは、IM アプリケーションからの **OnShuttingDown** イベントを検出すると、警告なしで切断します。ただし、IM アプリケーションよりも前に Office アプリケーションがシャット ダウンする場合、Office アプリケーションは接続がクリーンアップされることを保証しません。IM アプリケーションは、クライアント接続リークを処理する必要があります。 
+Office アプリケーションが IM アプリケーションの **OnShuttingDown** イベントを検出すると、警告なしに切断します。 ただし、IM アプリケーションよりも前に Office アプリケーションがシャット ダウンする場合、Office アプリケーションは接続がクリーンアップされることを保証しません。 IM アプリケーションは、クライアント接続リークを処理する必要があります。 
   
 ## <a name="setting-registry-keys-and-entries"></a>レジストリ キーとエントリを設定する
 <a name="off15_IMIntegration_SetRegistry"> </a>
 
-前述のとおり、IM 対応の Office 2013 アプリケーションは、レジストリ内で特定のキー、エントリ、および値を検索して、接続する IM クライアント アプリケーションを検出します。これらのレジストリ値は、Office アプリケーションに、IM クライアント アプリケーションのオブジェクト モデルへのエントリ ポイントとして機能するクラスのプロセス名と CLSID を提供します (つまり、 **IUCOfficeIntegration** インターフェイスを実装するクラス)。Office アプリケーションは、そのクラスを共同作成して、IM クライアント アプリケーションのプロセス外 COM サーバーに対するクライアントとして接続します。 
+前述のように、IM 対応の Office アプリケーションは、レジストリ内で特定のキー、エントリ、および値を検索して、接続する IM クライアント アプリケーションを検出します。 これらのレジストリ値は、Office アプリケーションに、IM クライアント アプリケーションのオブジェクト モデルへのエントリ ポイントとして機能するクラスのプロセス名と CLSID を提供します (つまり、 **IUCOfficeIntegration** インターフェイスを実装するクラス)。 Office アプリケーションは、そのクラスを共同作成して、IM クライアント アプリケーションのプロセス外 COM サーバーに対するクライアントとして接続します。 
   
 表 1 を使用して、IM クライアント アプリケーションを Office と統合するためにレジストリに書き込む必要のあるキー、エントリ、および値を識別します。
   
@@ -304,10 +302,10 @@ public object GetInterface(string _version, OIInterface _interface)
 
 ```
 
-**GetSupportedFeatures**メソッドは、IM クライアント アプリケーションによってサポートされる IM 機能に関する情報を返します。その唯一のパラメーター  _version_ は、文字列を取ります。Office アプリケーションが **GetSupportFeatures**メソッドを呼び出すと、メソッドは [UCCollaborationLib.OIFeature ](https://msdn.microsoft.com/library/UCCollaborationLib.OIFeature)列挙からの値を返します。返される値は IM のクライアントの機能を示し、値にフラグを追加することによって、IM クライアント アプリケーションの各機能が Office アプリケーションに対して指定されます。 
+**GetSupportedFeatures**メソッドは、IM クライアント アプリケーションによってサポートされる IM 機能に関する情報を返します。 その唯一のパラメーター  _version_ は、文字列を取ります。 Office アプリケーションが **GetSupportedFeatures** メソッドを呼び出すと、メソッドは [UCCollaborationLib.OIFeature](https://msdn.microsoft.com/library/UCCollaborationLib.OIFeature) 列挙からの値を返します。 返される値は IM のクライアントの機能を示し、値にフラグを追加することによって、IM クライアント アプリケーションの各機能が Office アプリケーションに対して指定されます。 
   
 > [!NOTE]
->  Office 2013 アプリケーションは、**OIFeature** 列挙の以下の定数を無視します。 
+>  Office 2013 (およびそれ以降) アプリケーションは、**OIFeature** 列挙の以下の定数を無視します。 
 > - **oiFeaturePictures** (2) 
 > - **oiFeatureFreeBusyIntegration**
 > - **oiFeaturePhoneNormalization**
@@ -862,7 +860,7 @@ public class IMClientSelf : ISelf
 }
 ```
 
-### <a name="icontactmanager-and-icontactmanagerevents-interfaces"></a>IContactManager と _IContactManagerEvents インターフェイス
+### <a name="icontactmanager-and-_icontactmanagerevents-interfaces"></a>IContactManager と _IContactManagerEvents インターフェイス
 <a name="off15_IMIntegration_ImplementRequired_IContactManager"> </a>
 
 **IContactManager** オブジェクトは、ローカル ユーザー自身の連絡先情報を含む、ローカル ユーザーの連絡先を管理します。Office アプリケーションは、 **IContactManager** オブジェクトを使用して、ローカル ユーザーの連絡先に対応する **IContact** オブジェクトにアクセスします。 
