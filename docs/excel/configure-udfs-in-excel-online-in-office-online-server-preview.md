@@ -6,12 +6,12 @@ ms.audience: ITPro
 localization_priority: Normal
 ms.assetid: 3e0ca274-e9cd-48a1-8cfc-9d5053738972
 description: Office Online Server の Excel Online でユーザー定義関数 (Udf) を使用して、カスタム関数を呼び出します。
-ms.openlocfilehash: 6e16ea753090b2fefca4ae15330f1a27d53da777
-ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
+ms.openlocfilehash: c9ace9a678a57a0d97e2fee65ee62bf9497f4451
+ms.sourcegitcommit: 55205b4ec1376713d31e75d195e031798fb2c6ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39819358"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40825766"
 ---
 # <a name="configure-udfs-in-excel-online-in-office-online-server"></a>Office Online Server の Excel Online で Udf を構成する
 
@@ -87,6 +87,6 @@ Udf を操作するには、次の Windows PowerShell コマンドレットを�
 ## <a name="see-also"></a>関連項目
 
 - [Excel Online の管理設定を行う](https://docs.microsoft.com/officeonlineserver/configure-excel-online-administrative-settings)  
-- [Office Online Server](https://docs.microsoft.com/officeonlineserver/office-online-serverr)
+- [Office Online Server](https://docs.microsoft.com/officeonlineserver/office-online-server)
     
 
