@@ -1,7 +1,7 @@
 ---
 title: Project 2013 開発者向けドキュメント
-manager: soliver
-ms.date: 04/04/2016
+manager: lindalu
+ms.date: 12/19/2019
 ms.audience: Developer
 f1_keywords:
 - Project
@@ -14,28 +14,26 @@ f1_keywords:
 keywords:
 - sdk, project 2013,Project 2013, SDK の概要
 ms.assetid: f66adbf1-5cb5-4dd0-be08-45e1c88c010c
-description: ここには、Office ストア用またはプライベート アプリ カタログ用のアプリを構築するとき、また Project Server および Project クライアントをカスタマイズし、エンタープライズ プロジェクト マネジメント用の他のさまざまなデスクトップ アプリケーションやビジネス アプリケーションと統合するときに役立つドキュメント、コード サンプル、操作方法に関する記事、およびプログラミング リファレンスが含まれています。
+description: ドキュメント、コード サンプル、ハウツー記事、およびプログラミング リファレンスを検索して、Office またはプライベート アプリ カタログ用のアプリの構築を支援し、Project Server および Project クライアントをカスタマイズし、エンタープライズ プロジェクト管理用のさまざまなデスクトップおよびビジネス アプリケーションと統合します。
 localization_priority: Priority
-ms.openlocfilehash: cb4dd31a76b897bb5dba39e6b20d0a238bd95293
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 1b6227bb25810be04bc87abb418f9966b593bf1c
+ms.sourcegitcommit: 55205b4ec1376713d31e75d195e031798fb2c6ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357044"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40825759"
 ---
 # <a name="project-2013-developer-documentation"></a>Project 2013 開発者向けドキュメント
 
-ここには、Office ストア用またはプライベート アプリ カタログ用のアプリを構築するとき、また Project Server および Project クライアントをカスタマイズし、エンタープライズ プロジェクト マネジメント用の他のさまざまなデスクトップ アプリケーションやビジネス アプリケーションと統合するときに役立つドキュメント、コード サンプル、操作方法に関する記事、およびプログラミング リファレンスが含まれています。
-  
-Microsoft Project 2013 ソフトウェア開発キット (SDK) へようこそ。 この SDK には、パブリック ストア用またはプライベート アプリ カタログ用のアプリを構築するとき、また Project Server および Project クライアントをカスタマイズし、エンタープライズ プロジェクト マネジメント用の他のさまざまなデスクトップ アプリケーションやビジネス アプリケーションと統合するときに役立つドキュメント、コード サンプル、操作方法に関する記事、およびプログラミング リファレンスが含まれています。
-  
+AppSource 向けアプリの構築に役立つドキュメント、コード サンプル、ハウツー記事、プログラミング リファレンスを検索します。 Project Server および Project クライアントをカスタマイズし、エンタープライズ プロジェクト管理 (EPM) 用のさまざまなデスクトップおよびビジネス アプリケーションと統合する方法について説明します。
+   
 > [!NOTE]
 > Project Server 2013 は SharePoint Server 2013 プラットフォームに基づいて構築され、Project 2013 には他の Office 2013 アプリケーションと同じインストラクチャが数多く含まれています。 SharePoint アドイン、SharePoint ベースのワークフロー、Web パーツ、および他の SharePoint 機能を使用した開発モデルに関するドキュメントについては、「[SharePoint アドイン](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins)」および「[Office アドイン](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)」をご覧ください。 
   
-## <a name="introduction-to-the-project-sdk"></a>Project SDK の概要
+## <a name="introduction-to-the-project-software-development-kit-sdk"></a>Project ソフトウェア開発キット (SDK) の概要
 <a name="pj15_Welcome_IntroToSDK"> </a>
 
-Project Server 2013 は、オンプレミスまたはクラウド ベースのエンタープライズ プロジェクト管理ソリューションを構築したり、エンドユーザーがパブリック ストアまたはパブリック アプリ カタログを介して検索して取得できるアプリを構築したりするためのプラットフォームです。 Project Server 2013 アーキテクチャは、Microsoft Office Project Server 2007 で導入された、多くの追加機能や強化点が含まれるプラットフォームに基づいています。 新機能には、Project Online へのアクセスを可能にするクライアント側オブジェクト モデル (CSOM)、Project Server レポート データにオンラインでアクセスするための OData サービス、リモート イベント レシーバー、Windows Workflow Foundation バージョン 4 (WF4) に基づくワークフロー アーキテクチャ、Microsoft Office 2013 クライアント アプリケーションの作業ウィンドウ拡張機能で共通のアーキテクチャである Office アドインなどが含まれます。
+Project Server 2013 は、オンプレミスまたはクラウドベースのエンタープライズ プロジェクト管理ソリューションを構築し、エンド ユーザーが AppSource (以前の Office ストア) を介して発見し取得できるアプリを構築するためのプラットフォームです。 Project Server 2013 アーキテクチャは、Microsoft Office Project Server 2007 で導入された、多くの追加機能や強化点が含まれるプラットフォームに基づいています。 新機能には、Project Online へのアクセスを可能にするクライアント側オブジェクト モデル (CSOM)、Project Server レポート データにオンラインでアクセスするための OData サービス、リモート イベント レシーバー、Windows Workflow Foundation バージョン 4 (WF4) に基づくワークフロー アーキテクチャ、Microsoft Office 2013 クライアント アプリケーションの作業ウィンドウ拡張機能で共通のアーキテクチャである Office アドインなどが含まれます。
   
 Project Server 2013 における主要な変更点の 1 つは、Project Server 2010 での下書きデータベース、発行済みデータベース、アーカイブ データベース、レポート データベースに代わり単一のデータベースを使用するという点です。 新機能と廃止された機能について詳しくは、「[Project 2013 における開発者向けの更新内容](updates-for-developers-in-project-2013.md)」をご覧ください。 Project Server プラットフォームの変更点については、「[Project Server 2013 のアーキテクチャ](project-server-2013-architecture.md)」を参照してください。 Project Server 2010 に存在し、Project Server 2013 の基盤となっているプラットフォームの概要については、MSDN の 「[Project 2010 の開発を開始する](https://msdn.microsoft.com/library/gg607685.aspx)」をご覧ください。 
   
@@ -114,7 +112,7 @@ Project 2013 SDK には最上位のセクションが 2 つあります。
 - 「[Project 2013 プログラミング リファレンス](project-2013-programming-references.md)」には、Project Server 2013 用の PSI リファレンス、Project Server のエラー コードについての情報、および **ProjectData** サービス用の OData スキーマ リファレンスの概要が含まれます。 
     
 > [!NOTE]
->  Project Server 2013 と統合するパブリック Office ストアからの EPM ソリューションとアプリを開発して展開するための要件を以下に示します。>  開発コンピューターと展開コンピューター上に .NET Framework 4 と .NET Framework 4.5 のどちらかをインストールする必要があります。 正しいリリースがインストールされているか判別するには、Windows のコントール パネルで **[プログラムと機能]** を開きます。 >  Visual Studio 2012 では NET Framework 4.5 をインストールして使用する必要があります。 Visual Studio プロジェクトを作成するときに、**[新しいプロジェクト]** ダイアログ ボックスのドロップダウン リストで **[.NET Framework 4.0]** または **[NET Framework 4.5]** を選択できます。 また、プロジェクトの **[プロパティ]** ウィンドウの **[アプリケーション]** タブで **[ターゲット フレームワーク]** を選択することもできます。 >  CSOM または PSI を使用するアプリケーション、および Project 作業ウィンドウ アプリに Visual Studio 2010 を使用できます。 ただし、Visual Studio 2010 には Office アドイン テンプレート、Office 開発ツール、Office 2013 用の SharePoint 開発ツールは含まれていません。 Visual Studio 2012 と、Office と SharePoint の開発ツールが含まれる Web Platform Installer (WebPI) をダウンロードする方法については、「[Office および SharePoint 用アプリのダウンロード](https://msdn.microsoft.com/office/apps/fp123627)」をご覧ください。 >  テスト環境でカスタム ソリューションを開発することをお勧めします。 Project Server 2013 と Project 2013 の現在のビルド用ソリューションを開発する場合、更新されたリファレンスで再コンパイルする必要があります。新しいリリースで動作させるには追加の変更が必要になることがあります。 プレリリース バージョン用に開発されたソリューションはリリース バージョンでは動作しない可能性があります。 
+>  Project Server 2013 と統合する AppSource からのアプリおよび EPM ソリューションを開発および展開するための要件は以下のとおりです。> 開発コンピューターおよび展開コンピューターに .NET Framework 4 または .NET Framework 4.5 のいずれかをインストールする必要があります。 正しいリリースがインストールされているか判別するには、Windows のコントール パネルで **[プログラムと機能]** を開きます。 >  Visual Studio 2012 では NET Framework 4.5 をインストールして使用する必要があります。 Visual Studio プロジェクトを作成するときに、**[新しいプロジェクト]** ダイアログ ボックスのドロップダウン リストで **[.NET Framework 4.0]** または **[NET Framework 4.5]** を選択できます。 また、プロジェクトの **[プロパティ]** ウィンドウの **[アプリケーション]** タブで **[ターゲット フレームワーク]** を選択することもできます。 >  CSOM または PSI を使用するアプリケーション、および Project 作業ウィンドウ アプリに Visual Studio 2010 を使用できます。 ただし、Visual Studio 2010 には Office アドイン テンプレート、Office 開発ツール、Office 2013 用の SharePoint 開発ツールは含まれていません。 Visual Studio 2012 と、Office と SharePoint の開発ツールが含まれる Web Platform Installer (WebPI) をダウンロードする方法については、「[Office および SharePoint 用アプリのダウンロード](https://msdn.microsoft.com/office/apps/fp123627)」をご覧ください。 >  テスト環境でカスタム ソリューションを開発することをお勧めします。 Project Server 2013 と Project 2013 の現在のビルド用ソリューションを開発する場合、更新されたリファレンスで再コンパイルする必要があります。新しいリリースで動作させるには追加の変更が必要になることがあります。 プレリリース バージョン用に開発されたソリューションはリリース バージョンでは動作しない可能性があります。 
   
 ## <a name="see-also"></a>関連項目
 <a name="pj15_Welcome_AR"> </a>

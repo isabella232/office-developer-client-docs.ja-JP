@@ -1,21 +1,22 @@
 ---
 title: クライアント側オブジェクト モデルを使用して Project Online アプリケーションを開発する
-manager: soliver
-ms.date: 11/08/2016
+manager: lindalu
+ms.date: 12/18/2019
 ms.audience: Developer
 ms.assetid: 5740d0b2-5d36-40e4-9e83-577cb186359f
-description: この記事では、.NET Framework 4.0 を使用して行うデスクトップ アプリケーション用の Microsoft Project Online アプリケーションの開発について説明します。 この記事で説明されているアプリケーションは、ホスト サーバーから情報を取得します。
+description: 'この記事では、.NET Framework 4.0 および CSOM を使用した Microsoft Project Online アプリケーションの開発について説明します。 '
 localization_priority: Priority
-ms.openlocfilehash: 3d3c2dd5b896c10dab9a0494288f38610cbc99e1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 33ddafe2e3a75039bf55381524accf1a25692885
+ms.sourcegitcommit: 55205b4ec1376713d31e75d195e031798fb2c6ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322623"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40825773"
 ---
-# <a name="developing-a-project-online-application-using-the-client-side-object-model"></a>クライアント側オブジェクト モデルを使用して Project Online アプリケーションを開発する
+# <a name="developing-a-project-online-application-using-the-client-side-object-model-csom"></a>クライアント側オブジェクト モデル (CSOM) を使用した Project Online アプリケーションの開発
 
-この記事では、.NET Framework 4.0 を使用して行うデスクトップ アプリケーション用の Microsoft Project Online アプリケーションの開発について説明します。 この記事で説明されているアプリケーションは、ホスト サーバーから情報を取得します。 
+>[!NOTE] 
+>この記事では、CSOM を使用した Microsoft Project Online アプリケーションの開発について説明します。 [新しい Web 用 Project](https://developer.microsoft.com/ja-JP/office/blogs/developing-applications-and-reports-using-the-new-project/) を使用してアプリケーションを開発する方法の検討をお勧めします。
   
 ## <a name="background"></a>背景
 
@@ -60,7 +61,7 @@ Windows 10 を実行するベース システムから始めて、次の項目�
 
 SharePoint 向けデスクトップ アプリケーションの開発で推奨されるインターフェイスは、Project クライアント側オブジェクト モデル (CSOM) です。 
   
-完全なサンプルは、https://github.com/OfficeDev/Project-CSOM-List-Projects-Tasks でダウンロードできます。
+[Project CSOM サンプル](https://developer.microsoft.com/project/gallery/?filterBy=Samples,Project)は、Office デベロッパー センターの Project 開発者向けリソース ギャラリーからダウンロードできます。
   
 最初の 2 つのトピックでは、基本的な事項、つまり適切な名前空間とアセンブリを使用した Visual Studio プロジェクトの作成と、ホスティング サーバーへのアクセスについて説明します。 残りのトピックでは、1 つのオブジェクトおよび多数のオブジェクトからの、CSOM 経由での情報の取得について説明します。 
   
@@ -194,7 +195,7 @@ Project Online は SharePoint アプリケーションなので、SharePoint 認
 
    プロジェクトのコンテキストをインスタンス化する場合、アプリケーションでは Projects サイト コレクションのルートを提供する必要があります。 アプリケーションでは、Projects のルートの URL の部分文字列を使用します。 次の図では、この場所のスナップショットが赤い四角形で強調表示されています。 認証には、文字列の先頭から部分文字列 "pwa" までの部分が必要です。 コードのリストでは、"https://XXXXXXXX.sharepoint.com/sites/pwa" という文字列が使用されています。
         
-   ![赤い枠線で囲まれた Projects サイト コレクションの URL のスクリーン ショット。](media/d48c4894-5dba-46b6-886a-3c59bfb83c4d.png "赤い枠線で囲まれた Projects サイト コレクションの URL のスクリーン ショット。")
+   ![プロジェクト サイト コレクションの URL を赤い枠で示したスクリーンショット。](media/d48c4894-5dba-46b6-886a-3c59bfb83c4d.png "プロジェクト サイト コレクションの URL を赤い枠で示したスクリーンショット。")
   
 3. セキュリティ保護された文字列にパスワードを配置する -- これは、上で示したコード フラグメントの次のコードで行われます。
     
@@ -639,6 +640,6 @@ Value: Red
 
 ## <a name="see-also"></a>関連項目
 
-Project Online および CSOM を使用したアプリケーション開発に関するドキュメントとサンプルについては、[Project 開発ポータル](https://developer.microsoft.com/ja-JP/project)をご覧ください。
+Project Online および CSOM を使用したアプリケーション開発に関するドキュメントとサンプルについては、Office デベロッパー センターの [Project 開発ポータル](https://developer.microsoft.com/project)をご覧ください。
     
 
