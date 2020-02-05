@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: ef88e30e-7537-488e-bc72-8da29810f7aa
 description: Office 2013 テレメトリ ログ を使用して、Office 2013 と以前のバージョンの Office 用に構築されたソリューションの互換性に関する問題を特定します。
 localization_priority: Priority
-ms.openlocfilehash: 3954662a9476dca0cbb9bf4b8197979783b7e11e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 0ace7a39c62194816662e49580cf6868edcae295
+ms.sourcegitcommit: 31b0a7373ff74fe1d6383c30bc67d7675b73d283
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346290"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41773723"
 ---
 # <a name="troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log"></a>テレメトリ ログを使用した Office ファイルおよびカスタム ソリューションのトラブルシューティング
 
@@ -96,7 +96,7 @@ Office 2013 をインストールすると、テレメトリ ログ がインス
   
 **図 1. Office テレメトリ ログ**
   
-![レコードが表示されている Office イベント ビューア。](media/off15_OfficeEventViewer_SD.png "レコードが表示されている Office イベント ビューア")
+![レコードが表示されている Office イベント ビューアー。](media/off15_OfficeEventViewer_SD.png "レコードが表示されている Office イベント ビューアー")
   
 > [!NOTE]
 >  テレメトリ ログの**システム情報**ワークシートには、Office 2013 がインストールされているコンピューターに関する情報が含まれています。 このワークシートには次の情報が示されます。 
@@ -145,6 +145,8 @@ Office 2013 をインストールすると、テレメトリ ログ がインス
 |18  <br/> |アプリは正常に終了しました  <br/> ||ホスト アプリケーションによって Office アドインが正常に閉じられました。  <br/> |
 |19  <br/> |アドインで実行時エラーが発生しました  <br/> |重大  <br/> |Office アドイン に、エラーの原因となる問題がありました。詳細については、エラーが発生したコンピューター上で Windows イベント ビューアーを使用して Microsoft Office Alerts ログを確認してください。  <br/> |
 |20  <br/> |アドインでライセンスを確認できませんでした  <br/> |重大  <br/> |Office アドイン のライセンス情報を確認できないか、有効期限が切れている可能性があります。詳細については、エラーが発生したコンピューター上で Windows イベント ビューアーを使用して Microsoft Office Alerts ログを確認してください。  <br/> |
+|21 <br/>|マクロでコンパイル エラーが発生しました <br/>|警告 <br/>| ファイルには、コンパイルに失敗して実行できなかったマクロが含まれています。 詳細については、マクロ エディターからマクロをコンパイルしようとしたときに表示されるエラー メッセージを確認してください。<br/>| 
+|22 <br/>|マクロでランタイム エラーが発生しました<br/>| 警告 <br/>| ファイルには、ランタイム エラーが発生したマクロが含まれています。 詳細については、マクロ エディターからマクロを実行しようとしたときに表示されるエラー メッセージを確認し、[Visual Basic for Applications Reference](https://docs.microsoft.com/previous-versions/visualstudio/visual-basic-6/aa264975%28v=vs.60%29) を参照してください。<br/>|
 |各種  <br/> |「オブジェクト モデル動作変更: ...」  <br/> |情報  <br/> |アドインまたはマクロが有効なドキュメントのコードで、前のバージョンの Office と動作が異なるオブジェクト、メンバー、コレクション、列挙体、または定数が使用されています。<br/><br/> 詳細については、「[Office の互換性に関する問題](compatibility-issues-in-office.md)」を参照してください。  <br/> |
 |各種  <br/> |「オブジェクト モデル削除済み: ...」  <br/> |重大  <br/> |アドインまたはマクロが有効なドキュメントのコードで、オブジェクト モデルから削除されているオブジェクト、メンバー、コレクション、列挙体、または定数が使用されています。<br/><br/>詳細については、「[Office の互換性に関する問題](compatibility-issues-in-office.md)」を参照してください。  <br/> |
 |各種  <br/> |「非推奨オブジェクト モデル: ...」  <br/> |情報  <br/> |アドインまたはマクロが有効なドキュメントのコードで、オブジェクト モデルで非表示になっているオブジェクト、メンバー、コレクション、列挙体、または定数が使用されています。<br/><br/>詳細については、「[Office の互換性に関する問題](compatibility-issues-in-office.md)」を参照してください。  <br/> |
