@@ -1,17 +1,17 @@
 ---
 title: 管理容易性アプリケーションと Office 365 クイック実行インストーラーの統合
 manager: lindalu
-ms.date: 12/03/2019
+ms.date: 10/22/2017
 ms.audience: ITPro
 localization_priority: Normal
 ms.assetid: c0fa8fed-1585-4566-a9be-ef6d6d1b4ce8
 description: ソフトウェア管理ソリューションと Office 365 クイック実行インストーラーを統合する方法について説明します。
-ms.openlocfilehash: 62bfef0063c414fcecd0948e49dfa098b5c82bbb
-ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
+ms.openlocfilehash: 0c695d538a0a906bce19719c2735cb39740ff6a2
+ms.sourcegitcommit: 31b0a7373ff74fe1d6383c30bc67d7675b73d283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39819274"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41773737"
 ---
 # <a name="integrating-manageability-applications-with-office-365-click-to-run-installer"></a>管理容易性アプリケーションと Office 365 クイック実行インストーラーの統合
 
@@ -185,7 +185,7 @@ HRESULT Cancel() // Cancel the download action.
 
 - このメソッドは、COM 状態 ID **eDOWNLOAD_WIP** の場合のみトリガーできます。このメソッドは現在のダウンロード アクションを取り消そうとします。COM 状態は **eDOWNLOAD_CANCELLING** に変わり、最終的に **eDOWNLOAD_CANCELED** に変わります。これ以外の場合にトリガーすると、COM 状態は **E_ILLEGAL_METHOD_CALL** を返します。 
     
-### <a name="download"></a>Download
+### <a name="download"></a>ダウンロード
 
 ```cpp
 HRESULT Download([in] LPWSTR pcwszParameters) // Download update content.

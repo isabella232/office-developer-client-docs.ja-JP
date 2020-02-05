@@ -7,12 +7,12 @@ ms:contentKeyID: 55119889
 ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
-ms.openlocfilehash: a937a273e0735b2d14369ae8cb8127e827501160
-ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
+ms.openlocfilehash: 3d14da44731810308d57ba0e70f9651f3105aad0
+ms.sourcegitcommit: 31b0a7373ff74fe1d6383c30bc67d7675b73d283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39819288"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41773716"
 ---
 # <a name="search-attachments-of-items-in-a-folder-for-an-exact-phrase"></a>フォルダー内のアイテムの添付ファイルで完全に一致する語句を検索する
 
@@ -22,7 +22,7 @@ ms.locfileid: "39819288"
 
 このコード例では、DAV Searching and Locating (DASL) 構文を使用してクエリを指定します。 フィルターを作成するために、まずクイック検索が既定のストアで有効になっているかどうかをチェックし、添付ファイル内で "office" を完全一致で検索する **ci\_phrasematch** キーワードを使用するかどうかを決定します。 その後で、この例では、受信トレイの [GetTable](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.mapifolder.gettable?redirectedfrom=MSDN&view=outlook-pia#Microsoft_Office_Interop_Outlook_MAPIFolder_GetTable_System_Object_System_Object_) メソッドにフィルターを適用して、[Table](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.table?redirectedfrom=MSDN&view=outlook-pia) オブジェクトで結果を取得します。 さらに、このコード例では、**Table** で返された各アイテムの件名を表示します。
 
-このコード例では、アイテムの **Attachments** プロパティを指定するために、名前空間の表現として http://schemas.microsoft.com/mapi/proptag/0x0EA5001E を使用しています。 **ci\_phrasematch** キーワードの構文は次のとおりです。
+このコード例では、アイテムの **Attachments** プロパティを指定するために、名前空間の表現として https://schemas.microsoft.com/mapi/proptag/0x0EA5001E を使用しています。 **ci\_phrasematch** キーワードの構文は次のとおりです。
 
 `<PropertySchemaName> ci_phrasematch <ComparisonString>`
 
