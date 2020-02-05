@@ -1,18 +1,18 @@
 ---
 title: プログラムを使用して Visio ファイル形式を操作する
 manager: lindalu
-ms.date: 12/03/2019
+ms.date: 04/17/2019
 ms.audience: Developer
 ms.topic: overview
 ms.assetid: 5f5e2288-7539-41b8-916d-410be028ed9b
 description: Visio 2013 での新しいファイル形式パッケージを読み取り、パッケージ内のパーツを選択しその中のデータを変更して、パッケージに新しいパーツを追加するソリューションをVisual Studio 2012で作成します。
 localization_priority: Priority
-ms.openlocfilehash: f54a0afec4bc45d322e3a18194eafc3bd768e0d0
-ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
+ms.openlocfilehash: 36a621856e5d53e7b3355a39edd7b7a03636b15d
+ms.sourcegitcommit: 31b0a7373ff74fe1d6383c30bc67d7675b73d283
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39819302"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41773744"
 ---
 # <a name="manipulate-the-visio-file-format-programmatically"></a>プログラムを使用して Visio ファイル形式を操作する
 
@@ -49,11 +49,9 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
 
 1. Visio 2013 を開きます。
     
-2. 
-            **[カテゴリ]**、**[フローチャート]**、**[基本フローチャート]**、**[作成]** を選択して、基本フローチャート テンプレートに基づいて新しいドキュメントを作成します。
+2. **[カテゴリ]**、**[フローチャート]**、**[基本フローチャート]**、**[作成]** を選択して、基本フローチャート テンプレートに基づいて新しいドキュメントを作成します。
     
-3. 
-            **[図形]**  ウィンドウから、**[開始/終了]** 図形をキャンバス上にドラッグします。 
+3. **[図形]**  ウィンドウから、**[開始/終了]** 図形をキャンバス上にドラッグします。 
     
 4. 図面キャンバス上で新しい開始/終了図形を選択し、「処理の開始」と入力します。
     
@@ -80,18 +78,15 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
   
 ### <a name="to-create-a-new-solution-in-visual-studio-2012"></a>Visual Studio 2012 で新しいソリューションを作成します。
 
-1. 
-            **[ファイル]** メニューで、**[新規作成]**、**[プロジェクト]** を選択します。
+1. **[ファイル]** メニューで、**[新規作成]**、**[プロジェクト]** を選択します。
     
-2. 
-            **[新しいプロジェクト]** ダイアログ ボックスで、**[Visual C#]** または **[Visual Basic]** を展開してから、**[Windows]**、**[コンソール アプリケーション]** を選択します。
+2. **[新しいプロジェクト]** ダイアログ ボックスで、**[Visual C#]** または **[Visual Basic]** を展開してから、**[Windows]**、**[コンソール アプリケーション]** を選択します。
     
     **[名前]** ボックスで、「VisioFileAccessor」と入力し、プロジェクトの場所を選択してから、**[OK]** ボタンを選択します。 
     
 3. [ **プロジェクト**] メニューの [ **参照の追加**] を選択します。 
     
-    
-            **[参照マネージャー]** ダイアログ ボックスで、**[アセンブリ]** の下の **[フレームワーク]** を選択してから、参照を **[System.Xml]** コンポーネントと **[WindowsBase]** コンポーネントに追加します。 
+    **[参照マネージャー]** ダイアログ ボックスで、**[アセンブリ]** の下の **[フレームワーク]** を選択してから、参照を **[System.Xml]** コンポーネントと **[WindowsBase]** コンポーネントに追加します。 
     
 4. プロジェクトの Program.cs または Module1.vb ファイル内に、次の**使用している** ディレクティブ (Visual Basic の **Imports** ステートメント) を追加します。 
     
@@ -307,8 +302,8 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
  `Press any key to continue …`
   
 ほとんどの場合、**PackagePart**のいずれかを選択するだけでよく、それらすべてを反復処理する必要はありません。 **Package** または他の **PackagePart** とのリレーションシップを使用して、**Package**から**PackagePart** オブジェクトを取得することができます。 Visio 2013 ファイル形式のリレーションシップは、ドキュメント パーツとファイル パッケージの関係や 2 つのドキュメント パーツの相互の関係を記述した個別のエンティティです。 たとえば、Visio 2013 ファイル パッケージ自体には Visio ドキュメント パーツとのリレーションシップがあり、Visio ドキュメント パーツには Windows のパーツとのリレーションシップがあります。 これらのリレーションシップは、[PackageRelationship](https://docs.microsoft.com/dotnet/api/system.io.packaging.packagerelationship?view=netframework-4.8) または [PackageRelationshipCollection](https://docs.microsoft.com/dotnet/api/system.io.packaging.packagerelationshipcollection?view=netframework-4.8) クラスのインスタンスとして表されます。 
-  
-**Package**クラスは、**PackageRelationship**または**PackageRelationshipCollection**オブジェクトとして含まれているリレーションシップを取得するいくつかの方法を公開します。 [GetRelationshipsByType(String)](https://docs.microsoft.com/dotnet/api/system.io.packaging.package.getrelationshipsbytype?redirectedfrom=MSDN&view=netframework-4.8#System_IO_Packaging_Package_GetRelationshipsByType_System_String_) メソッドを使用して、1 つの特定の種類の **PackageRelationship** オブジェクトを含む **PackageRelationshipCollection** オブジェクトをインスタンス化できます。 もちろん、 **Package.GetRelationshipsByType**メソッドを使用するには、必要なリレーションシップの種類が既にわかっている必要があります。 リレーションシップの種類は、XML 名前空間の形式の文字列です。 たとえば、Visio の文書パーツのリレーションシップの種類はhttps://schemas.microsoft.com/visio/2010/relationships/documentです。 
+
+**Package**クラスは、**PackageRelationship**または**PackageRelationshipCollection**オブジェクトとして含まれているリレーションシップを取得するいくつかの方法を公開します。 [GetRelationshipsByType(String)](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetRelationshipsByType.aspx) メソッドを使用して、1 つの特定の種類の **PackageRelationship** オブジェクトを含む **PackageRelationshipCollection** オブジェクトをインスタンス化できます。 もちろん、 **Package.GetRelationshipsByType**メソッドを使用するには、必要なリレーションシップの種類が既にわかっている必要があります。 リレーションシップの種類は、XML 名前空間の形式の文字列です。 たとえば、Visio の文書パーツのリレーションシップの種類はhttps://schemas.microsoft.com/visio/2010/relationships/documentです。 
   
 **PackagePart** と **Package** または別の **PackagePart** とのリレーションシップが分かったら (つまり、目的の **PackagePart** を参照する **PackageRelationship** オブジェクトがある場合)、このリレーションシップを使用して、その **PackagePart** の URI を取得できます。 **PackagePart**を返すための**Package.GetPart** メソッドにURIを渡します。
   

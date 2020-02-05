@@ -25,12 +25,12 @@ keywords:
 ms.assetid: a93d2153-5132-4289-af51-69350471e248
 description: Project Server 2013 の主要なプログラミング機能について説明します。 この記事には、以前のバージョンの Project Server 用に構築されたアプリケーションの移植についての情報が含まれています。
 localization_priority: Priority
-ms.openlocfilehash: db5e09ebe7a820255ba3d61c719b838289005e12
-ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
+ms.openlocfilehash: e6991712b87291e90c6b4f277db84686aab384e7
+ms.sourcegitcommit: 31b0a7373ff74fe1d6383c30bc67d7675b73d283
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39819309"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41773730"
 ---
 # <a name="project-server-programmability"></a>Project Server のプログラミング
 
@@ -104,7 +104,7 @@ Project Server エンティティを含む SharePoint パッケージを作成�
 > [!NOTE]
 > CSOM に必要な機能が含まれている場合は、CSOM を使用するようにアプリケーションをアップグレードすることをお勧めします。 CSOM を使用すると、アプリケーションをオンプレミスとオンラインの両方の Project Server 2013 インストールで使用できるようになります。 
   
-アプリケーションが主に Project Server からデータを読み取る場合は、社内のシナリオに Project Server データベースのレポート テーブルおよびビューを使用できます。 アプリケーションを Project Online と共に使用する場合は、レポート データへのオンプレミスとオンラインの両方のアクセスを提供する **ProjectData** サービス用の OData プロトコルを使用できます。 詳細については、「[ProjectData - Project OData サービス参照](https://docs.microsoft.com/en-us/previous-versions/office/project-odata/jj163015(v=office.15))」を参照してください。
+アプリケーションが主に Project Server からデータを読み取る場合は、社内のシナリオに Project Server データベースのレポート テーブルおよびビューを使用できます。 アプリケーションを Project Online と共に使用する場合は、レポート データへのオンプレミスとオンラインの両方のアクセスを提供する **ProjectData** サービス用の OData プロトコルを使用できます。 詳細については、「[ProjectData - Project OData サービス参照](https://docs.microsoft.com/previous-versions/office/project-odata/jj163015(v=office.15))」を参照してください。
   
 ### <a name="using-the-psi"></a>PSI を使用する
 <a name="pj15_Programmability_PSI"> </a>
@@ -233,7 +233,7 @@ Project Server 2013 には 2 つのスケジューリング エンジンがあ�
   
 古い Project Server スケジューリング エンジンでの PSI プログラミングの問題と制限事項は以下のとおりです。
   
-- **タスクのアクティブ ステータスを変更する** [QueueUpdateProject](https://docs.microsoft.com/en-us/previous-versions/office/ms471014(v=office.14)) メソッドを使用してタスクのアクティブ ステータスを変更する場合、_dataset_ パラメーターに関して **ProjectDataSet** オブジェクトに複数の変更があると、古い Project Server スケジューリング エンジンは矛盾した開始時間または終了時間を表示することがあります。 **QueueUpdateProject** の _dataset_ パラメーターでの唯一の変更が **TASK_IS_ACTIVE** プロパティの場合は、プロジェクトを変更できます。
+- **タスクのアクティブ ステータスを変更する** [QueueUpdateProject](https://docs.microsoft.com/previous-versions/office/ms471014(v=office.14)) メソッドを使用してタスクのアクティブ ステータスを変更する場合、_dataset_ パラメーターに関して **ProjectDataSet** オブジェクトに複数の変更があると、古い Project Server スケジューリング エンジンは矛盾した開始時間または終了時間を表示することがあります。 **QueueUpdateProject** の _dataset_ パラメーターでの唯一の変更が **TASK_IS_ACTIVE** プロパティの場合は、プロジェクトを変更できます。
     
     非アクティブなタスクおよび古いスケジューリング エンジンの詳細については、ブログ記事の「[Project 2010 の非アクティブ タスクについて](https://blogs.msdn.com/b/project/archive/2010/06/10/introducing-inactive-tasks-in-project-2010.aspx)」および「[Project Server 2010: Web、Web、PSI および Project Professional でのスケジュール設定](https://blogs.msdn.com/b/brismith/archive/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional.aspx?wa=wsignin1.0)」を参照してください。 Project Professional 2010 と Project Web App の Project Server 2010 でのスケジューリングの比較については、「[Web ベースのスケジュール管理の比較](https://blogs.msdn.microsoft.com/brismith/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional/)」を参照してください。
     
