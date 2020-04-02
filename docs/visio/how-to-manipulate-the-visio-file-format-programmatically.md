@@ -7,12 +7,12 @@ ms.topic: overview
 ms.assetid: 5f5e2288-7539-41b8-916d-410be028ed9b
 description: Visio 2013 での新しいファイル形式パッケージを読み取り、パッケージ内のパーツを選択しその中のデータを変更して、パッケージに新しいパーツを追加するソリューションをVisual Studio 2012で作成します。
 localization_priority: Priority
-ms.openlocfilehash: 36a621856e5d53e7b3355a39edd7b7a03636b15d
-ms.sourcegitcommit: 31b0a7373ff74fe1d6383c30bc67d7675b73d283
+ms.openlocfilehash: 3998c0d4b97439571bd93293f5f49659580f09de
+ms.sourcegitcommit: 007aa2ceb4f569201c3f4372de5c83b6c61f8875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41773744"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43102906"
 ---
 # <a name="manipulate-the-visio-file-format-programmatically"></a>プログラムを使用して Visio ファイル形式を操作する
 
@@ -36,7 +36,7 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
 |:-----|:-----|
 |[Visio ファイル形式 (.vsdx) の概要](introduction-to-the-visio-file-formatvsdx.md) <br/> |この概説では、Visio 2013 ファイル形式の主な機能の一部を説明しています。 Visio 2013 ファイル形式に適用されている Open Packaging Conventions (OPC) について解説しています。 また、Visio 2013 ファイル形式と以前の Visio XML 図面ファイル形式 (.vdx) との違いを抜粋して一覧表示しています。  <br/> |
 |[OPC: データのパッケージ化のための新しい標準](https://docs.microsoft.com/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data) <br/> |この MSDN マガジンの記事では、Open Packaging Conventions の概念について説明します。  <br/> |
-|[Open Packaging Conventions の基本](https://docs.microsoft.com/en-us/previous-versions/office/office-12/ee361919(v=office.12)) <br/> [Office (2007) Open XML ファイル形式の概要](https://docs.microsoft.com/previous-versions/office/developer/office-2007/aa338205(v=office.12)) <br/> |これら 2 つの記事では、Open Packaging Conventions を Microsoft Office ファイルに適用する方法について解説します。 パッケージ内でのリレーションシップの働きについて説明し、コード例もいくつか記述されています。  <br/> |
+|[Open Packaging Conventions の基本](https://docs.microsoft.com/previous-versions/office/office-12/ee361919(v=office.12)) <br/> [Office (2007) Open XML ファイル形式の概要](https://docs.microsoft.com/previous-versions/office/developer/office-2007/aa338205(v=office.12)) <br/> |これら 2 つの記事では、Open Packaging Conventions を Microsoft Office ファイルに適用する方法について解説します。 パッケージ内でのリレーションシップの働きについて説明し、コード例もいくつか記述されています。  <br/> |
    
 ## <a name="create-a-vsdx-file-and-a-new-visual-studio-solution"></a>.vsdx ファイルと新しい Visual Studio ソリューションを作成する
 <a name="vis15_ManipulateFF_CreateFile"> </a>

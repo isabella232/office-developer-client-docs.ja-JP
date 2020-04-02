@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: 5740d0b2-5d36-40e4-9e83-577cb186359f
 description: 'この記事では、.NET Framework 4.0 および CSOM を使用した Microsoft Project Online アプリケーションの開発について説明します。 '
 localization_priority: Priority
-ms.openlocfilehash: 33ddafe2e3a75039bf55381524accf1a25692885
-ms.sourcegitcommit: 55205b4ec1376713d31e75d195e031798fb2c6ad
+ms.openlocfilehash: d48cf50b95ecea664cd9eae1b0e642fc2551d5be
+ms.sourcegitcommit: 007aa2ceb4f569201c3f4372de5c83b6c61f8875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40825773"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43102969"
 ---
 # <a name="developing-a-project-online-application-using-the-client-side-object-model-csom"></a>クライアント側オブジェクト モデル (CSOM) を使用した Project Online アプリケーションの開発
 
@@ -50,7 +50,7 @@ Windows 10 を実行するベース システムから始めて、次の項目�
     
 - SharePoint クライアント コンポーネント SDK -- Project Online と Project Server は、SharePoint および SharePoint アセンブリの上にあります。 SharePoint クライアント コンポーネントは、Visual Studio の Professional エディションと Enterprise エディションに含まれています。 Visual Studio Community エディションを使用する場合は、最新バージョンの Office Developer Tools SDK を https://www.microsoft.com/en-us/download/details.aspx?id=35585 で入手できます。
     
-- Project Online アカウント -- ホスティング サイトにアクセスできるようになります。 Project Online アカウントの入手の詳細については、https://products.office.com/en-us/Project/project-online-portfolio-management をご覧ください。
+- Project Online アカウント -- ホスティング サイトにアクセスできるようになります。 Project Online アカウントの入手の詳細については、https://products.office.com/en-gb/project/project-portfolio-management をご覧ください。
     
 - ホスティング サイト上の情報設定済みプロジェクト
     
