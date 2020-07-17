@@ -9,20 +9,20 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 23e6899d-0a94-a7d8-8de2-091e0531f163
 description: 角度の範囲を正規化します。
-ms.openlocfilehash: 017dd89bd3b814c10422cd32eea1ee7e343eaf50
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6916e50daad735843bf0a2a6361fb5b1b833e2ce
+ms.sourcegitcommit: 41f2ee16badd6009bab642d68a61eaaccb91c3ec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33417197"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45160301"
 ---
 # <a name="ang360-function"></a>ANG360 関数
 
-角度の\<範囲を 0 = result \< 2pi ラジアンに正規化します\<(0 \< = result 360 度)。
+角度の範囲を 0 \< = result \< 2pi ラジアンに正規化 \< します (0 = result \< 360 度)。
   
 ## <a name="syntax"></a>構文
 
-ANG360 (* * *angle* * *) 
+ANG360 (***角度***) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -30,7 +30,7 @@ ANG360 (* * *angle* * *)
 |:-----|:-----|:-----|:-----|
 | _直交_ <br/> |必須  <br/> |**数値** <br/> |正規化する角度を指定します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 角度を指定しない場合、*角度*はラジアンとして解釈されます。 *角度*を値に変換できない場合は、#VALUE します。 を返します。 
   

@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: ee190ba7-9e71-97e4-7bf1-7b97adc73eed
 description: '最終更新日: 2019 年9月6日'
-ms.openlocfilehash: f6f671cbfd5e14d602aaa31d31e54e859f068593
-ms.sourcegitcommit: 27a9f3568318470e7ee09ad93a90c3f80d3ef0cd
+ms.openlocfilehash: c9fcffa8ad4dc982e869f4ccd449e1377fb1ea57
+ms.sourcegitcommit: 41f2ee16badd6009bab642d68a61eaaccb91c3ec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36790772"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45160287"
 ---
 # <a name="iconvertersessionmimetomapi"></a>IConverterSession::MIMEToMAPI
 
@@ -60,7 +60,7 @@ CCSF_EMBEDDED_MESSAGE
     
 CCSF_SMTP
   
-> MIME ストリームは、簡易 MAPI 転送プロトコル (SMTP) メッセージのためのものです。
+> MIME ストリームは、SMTP (Simple Mail Transfer Protocol) メッセージに対して使用されます。
     
 CCSF_INCLUDE_BCC
   
@@ -79,9 +79,9 @@ E_INVALIDARG
   
 > _Pstm_が**null**、 _Pmsg_が**null**、 _ulflags_が無効であることを示します。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>備考
 
-**CCSF_USE_RTF**を_ulflags_の一部として指定して、宛先メッセージストアが html と rtf の両方をサポートしている場合、MAPI メッセージは html または rtf に変換されます。 メッセージが RTF に変換される場合、変換された形式は RTF 形式に変換され、すべての HTML が圧縮 RTF 文字列に埋め込まれ、文字列が[PidTagRtfCompressed 標準プロパティ](pidtagrtfcompressed-canonical-property.md)に格納されます。
+_Ulflags_の一部として**CCSF_USE_RTF**を指定し、宛先のメッセージストアが html と rtf の両方をサポートしている場合、MAPI メッセージは html または rtf に変換されます。 メッセージが RTF に変換される場合、変換された形式は RTF 形式に変換され、すべての HTML が圧縮 RTF 文字列に埋め込まれ、文字列が[PidTagRtfCompressed 標準プロパティ](pidtagrtfcompressed-canonical-property.md)に格納されます。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 

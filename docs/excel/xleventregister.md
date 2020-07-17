@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: b98637d4-02e3-4dbd-8be5-6b46d32980c6
 description: '適用対象: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 869122954ffe3928dfea72b8fc9fb432b9979e42
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 00c222efce6925c3f691eb2b799adf687c22082c
+ms.sourcegitcommit: 41f2ee16badd6009bab642d68a61eaaccb91c3ec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438765"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45160280"
 ---
 # <a name="xleventregister"></a>xlEventRegister
 
@@ -43,7 +43,7 @@ Excel 2010 以降の Excel では、次のイベントをサポートしてい�
    
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-成功した場合、**TRUE** (**xltypeBool**) を返します。 失敗した場合は、**FALSE** を返します。
+成功した場合、pxRes (**Xltypeint**) の値 > 0 になります。 失敗した場合は、pxRes = = 0。
   
 ## <a name="see-also"></a>関連項目
 

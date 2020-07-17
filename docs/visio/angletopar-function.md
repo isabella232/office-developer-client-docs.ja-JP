@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 4d87313a-c09a-582c-04f4-d95800e3e9f2
 description: 変換先図形の親座標系に基づいて変換された角度を返します。 つまり、変換元図形のローカル座標から変換先図形の親座標に、角度が変換されます。
-ms.openlocfilehash: e411cbae21d832039e2fbda93393a8fe0bd1f9f8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0fed51e264bfb21da25d4e91f20f4bc0803e46e8
+ms.sourcegitcommit: 41f2ee16badd6009bab642d68a61eaaccb91c3ec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404324"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45160259"
 ---
 # <a name="angletopar-function"></a>ANGLETOPAR 関数
 
@@ -22,17 +22,17 @@ ms.locfileid: "33404324"
   
 ## <a name="syntax"></a>構文
 
-ANGLETOPAR (* * *srcangle* * *、* * *srcref* * *、* * *dstref* * *) 
+ANGLETOPAR (***Srcangle***、 ***srcref***、 ***dstref*** ) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _srcangle_ <br/> |必須  <br/> |**数値** <br/> |変換元座標系での角度を指定します。  <br/> |
-| _srcref_ <br/> |必須  <br/> |**String** <br/> | 図形、グループ、ページなどの変換元オブジェクトのセルに対する参照を指定します。  <br/> |
-| _dstref_ <br/> |必須  <br/> |**String** <br/> |図形、グループ、ページなどの変換先オブジェクトのセルに対する参照を指定します。  <br/> |
+| _srcAngle_ <br/> |必須  <br/> |**数値** <br/> |変換元座標系での角度を指定します。  <br/> |
+| _srcRef_ <br/> |必須  <br/> |**String** <br/> | 図形、グループ、ページなどの変換元オブジェクトのセルに対する参照を指定します。  <br/> |
+| _dstRef_ <br/> |必須  <br/> |**String** <br/> |図形、グループ、ページなどの変換先オブジェクトのセルに対する参照を指定します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>備考
 
 変換元図形と変換先図形がグループ内にある場合でも、この関数は機能します。変換の過程で、回転と反転についても調整されます。
   
