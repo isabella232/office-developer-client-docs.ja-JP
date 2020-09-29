@@ -5,12 +5,12 @@ ms.date: 01/14/2016
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 1ea99a8f-b005-4b92-b313-923294d20fbf
-ms.openlocfilehash: 71325af974e4778d65bea7d74561bde3c9c8bca2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 246c1da3647b61c6281c1a52a24826b3f22e5d7e
+ms.sourcegitcommit: 939bd9686ba41a8f94b82e004ed84b9054d9c7cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299714"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48293500"
 ---
 # <a name="office-uri-schemes"></a>Office URI スキーマ
 
@@ -140,7 +140,7 @@ URI コマンド引数では、Excel を除くすべてのアプリケーショ�
   
 ### <a name="allowed-characters-in-uri-command-arguments"></a>URI コマンド引数に使用できる文字
 
-許容される URI は、RFC 3987 (Internationalized Resource Identifier (IRI)) で提案されている標準に準拠する必要があります。RFC 3986 で予約されている文字は、パーセントでエンコードするべきでありません。ファイル名に次の文字を含めてはなりません。\ / : ? \< \> | " \*。  
+許容される URI は、RFC 3987 (Internationalized Resource Identifier (IRI)) で提案されている標準に準拠する必要があります。 RFC 3986 で予約されている文字は、パーセントでエンコードするべきでありません。 . \ / : ? \< \> | " \*。  
   
 ## <a name="appendix-a---uri-scheme-registration-template-for-ms-word-scheme"></a>付録 A: ms-word スキームの URI スキーム登録テンプレート
 <a name="bk_addresources"> </a>
@@ -173,7 +173,7 @@ ms-word URI スキームは、Microsoft Word 2013 または Microsoft Word 2010 
 
 この仕様で区切り文字として使用している縦線は、RFC 3986 のセクション 2.2 で区切り文字として使用する可能性のある文字として予約されている文字に含まれないことに注意してください。これは、文字をパーセントでエンコードする必要なしに URI コマンド引数でサポートできる文字のセットを最大化するため、意図的に定めたものです。
   
-Within < *command-argument*  > segments the RFC 3986 reserved characters ":" and "/" are part of the argument data, not delimiters, and are therefore included unescaped. 
+< *command-argument* > セグメントの中では RFC 3986 の予約文字である ":" と "/" は区切り文字ではなく、引数データの一部です。したがって、エスケープせずに含める必要があることに注意してください。 
   
 ### <a name="a-7-security-considerations"></a>A-7. セキュリティに関する考慮事項
 
@@ -216,7 +216,7 @@ ms-powerpoint URI スキームは、Microsoft PowerPoint 2013 または Microsof
 
 この仕様で区切り文字として使用している縦線は、RFC 3986 のセクション 2.2 で区切り文字として使用する可能性のある文字として予約されている文字に含まれないことに注意してください。これは、文字をパーセントでエンコードする必要なしに URI コマンド引数でサポートできる文字のセットを最大化するため、意図的に定めたものです。
   
-Within < *command-argument*  > segments the RFC 3986 reserved characters ":" and "/" are part of the argument data, not delimiters, and are therefore included unescaped. 
+< *command-argument* > セグメントの中では RFC 3986 の予約文字である ":" と "/" は区切り文字ではなく、引数データの一部です。したがって、エスケープせずに含める必要があることに注意してください。 
   
 ### <a name="b-7-security-considerations"></a>B-7. セキュリティに関する考慮事項
 
@@ -259,7 +259,7 @@ ms-excel URI スキームは、Microsoft Excel 2013 または Microsoft Excel 20
 
 この仕様で区切り文字として使用している縦線は、RFC 3986 のセクション 2.2 で区切り文字として使用する可能性のある文字として予約されている文字に含まれないことに注意してください。これは、文字をパーセントでエンコードする必要なしに URI コマンド引数でサポートできる文字のセットを最大化するため、意図的に定めたものです。
   
-Within < *command-argument*  > segments the RFC 3986 reserved characters ":" and "/" are part of the argument data, not delimiters, and are therefore included unescaped. 
+< *command-argument* > セグメントの中では RFC 3986 の予約文字である ":" と "/" は区切り文字ではなく、引数データの一部です。したがって、エスケープせずに含める必要があることに注意してください。 
   
 ### <a name="c-7-security-considerations"></a>C-7. セキュリティに関する考慮事項
 
@@ -343,7 +343,7 @@ ms-access URI スキームは、Microsoft Access 2013 または Microsoft Access
   
 ### <a name="e-6-interoperability-considerations"></a>E-6. 相互運用性の考慮事項
 
-この仕様で区切り文字として使用している縦線は、RFC 3986 のセクション 2.2 で区切り文字として使用する可能性のある文字として予約されている文字に含まれないことに注意してください。これは、文字をパーセントでエンコードする必要なしに URI コマンド引数でサポートできる文字のセットを最大化するため、意図的に定めたものです。\<command-argument\> セグメントの中では RFC 3986 の予約文字である ":" と "/" は区切り文字ではなく引数データの一部であるため、エスケープせずに含める必要があることに注意してください。
+この仕様で区切り文字として使用している縦線は、RFC 3986 のセクション 2.2 で区切り文字として使用する可能性のある文字として予約されている文字に含まれないことに注意してください。 これは、文字をパーセントでエンコードする必要なしに URI コマンド引数でサポートできる文字のセットを最大化するため、意図的に定めたものです。 セグメント内では \<command-argument\> 、RFC 3986 の予約文字 ":" と "/" は区切り文字ではなく引数データの一部であるため、エスケープせずに含めます。
   
 ### <a name="e-7-security-considerations"></a>E-7. セキュリティに関する考慮事項
 
@@ -386,7 +386,7 @@ ms-project URI スキームは、Microsoft Project 2013 を Web ページから�
 
 この仕様で区切り文字として使用している縦線は、RFC 3986 のセクション 2.2 で区切り文字として使用する可能性のある文字として予約されている文字に含まれないことに注意してください。これは、文字をパーセントでエンコードする必要なしに URI コマンド引数でサポートできる文字のセットを最大化するため、意図的に定めたものです。
   
-Within < *command-argument*  > segments the RFC 3986 reserved characters ":" and "/" are part of the argument data, not delimiters, and are therefore included unescaped. 
+< *command-argument* > セグメントの中では RFC 3986 の予約文字である ":" と "/" は区切り文字ではなく、引数データの一部です。したがって、エスケープせずに含める必要があることに注意してください。 
   
 ### <a name="f-7-security-considerations"></a>F-7. セキュリティに関する考慮事項
 
@@ -427,7 +427,7 @@ ms-publisher URI スキームは、Microsoft Publisher 2013 または Microsoft 
   
 ### <a name="g-6-interoperability-considerations"></a>G-6. 相互運用性の考慮事項
 
-この仕様で区切り文字として使用している縦線は、RFC 3986 のセクション 2.2 で区切り文字として使用する可能性のある文字として予約されている文字に含まれないことに注意してください。これは、文字をパーセントでエンコードする必要なしに URI コマンド引数でサポートできる文字のセットを最大化するため、意図的に定めたものです。\<command-argument\> セグメントの中では RFC 3986 の予約文字である ":" と "/" は区切り文字ではなく引数データの一部であるため、エスケープせずに含める必要があることに注意してください。
+この仕様で区切り文字として使用している縦線は、RFC 3986 のセクション 2.2 で区切り文字として使用する可能性のある文字として予約されている文字に含まれないことに注意してください。 これは、文字をパーセントでエンコードする必要なしに URI コマンド引数でサポートできる文字のセットを最大化するため、意図的に定めたものです。 セグメント内では \<command-argument\> 、RFC 3986 の予約文字 ":" と "/" は区切り文字ではなく引数データの一部であるため、エスケープせずに含めます。
   
 ### <a name="g-7-security-considerations"></a>G-7. セキュリティに関する考慮事項
 
@@ -460,7 +460,7 @@ ms-spd URI スキームは、Microsoft SharePoint Designer 2013 を Web ペー�
 
 この仕様で区切り文字として使用している縦線は、RFC 3986 のセクション 2.2 で区切り文字として使用する可能性のある文字として予約されている文字に含まれないことに注意してください。これは、文字をパーセントでエンコードする必要なしに URI コマンド引数でサポートできる文字のセットを最大化するため、意図的に定めたものです。
   
-Within < *command-argument*  > segments the RFC 3986 reserved characters ":" and "/" are part of the argument data, not delimiters, and are therefore included unescaped. 
+< *command-argument* > セグメントの中では RFC 3986 の予約文字である ":" と "/" は区切り文字ではなく、引数データの一部です。したがって、エスケープせずに含める必要があることに注意してください。 
   
 ### <a name="h-7-security-considerations"></a>H-7. セキュリティに関する考慮事項
 
@@ -485,7 +485,7 @@ RFC 3987 - International Resource Identifier (IRI)  
     
 ### <a name="i-4-uri-scheme-semantics"></a>I-4. URI スキームのセマンティクス
 
-ms-infopath スキームは、Microsoft Infopath ドキュメントを開いたり、作成したりするための URI 構文を定義します。このスキームでは、参照したドキュメントに対して実行する処理に関する指示として次の 2 つのコマンドを定義します。1) open-for-edit-cmd (ofe): 指定した URI にあるドキュメントを編集用に開くことを Infopath に指示します。2) open-for-view-cmd (ofv): 指定した URI にあるドキュメントを読み取り専用モードで開くことを Infopath に指示します。
+Ms infopath スキームは、Microsoft Infopath ドキュメントを開く、または作成するための URI 構文を定義します。 このスキームは、参照されたドキュメントで何を行う必要があるかについての指示として機能する2つのコマンドを定義します。 コマンドは 1) open-cmd (ofe) で、編集用に指定された URI でドキュメントを開くよう InfoPath に指示します。および 2) open-cmd (ofv)。これは、指定された URI でドキュメントを読み取り専用モードで開くように InfoPath に指示します。
   
 ### <a name="i-5-applicationsprotocols-that-use-the-ms-infopath-uri-scheme"></a>I-5. ms-infopath URI スキームを使用するアプリケーション/プロトコル
 
@@ -505,4 +505,3 @@ ms-infopath URI を認識して動作するように登録されたハンドラ�
 
 RFC 3987 - International Resource Identifier (IRI)  
   
-

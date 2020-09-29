@@ -6,30 +6,30 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 781369e1-fade-ec10-7c51-0f921b5c3b76
-description: 呼び出し元のセルが引数の値を渡さない場合、ユーザー設定関数に渡すことができる引数と、ユーザー設定関数によって返される既定値を指定します。 呼び出し元のセルと一致する argname パラメーターで指定された値を返します。
-ms.openlocfilehash: f85c3dc4a49878b034674330f272a63e79c17d49
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: 呼び出し元のセルが引数の値を渡さない場合、ユーザー設定関数に渡すことができる引数と、ユーザー設定関数によって返される既定値を指定します。 呼び出し元のセルと一致する argName パラメーターで指定された値を返します。
+ms.openlocfilehash: 3cde7fe55d7bc60d15f32d7ad954443e545af914
+ms.sourcegitcommit: 939bd9686ba41a8f94b82e004ed84b9054d9c7cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422727"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48293486"
 ---
 # <a name="arg-function"></a>ARG 関数
 
-呼び出し元のセルが引数の値を渡さない場合、ユーザー設定関数に渡すことができる引数と、ユーザー設定関数によって返される既定値を指定します。 呼び出し元のセルと一致する argname パラメーターで指定された値を返します。
+呼び出し元のセルが引数の値を渡さない場合、ユーザー設定関数に渡すことができる引数と、ユーザー設定関数によって返される既定値を指定します。 呼び出し元のセルと一致する argName パラメーターで指定された値を返します。
   
 ## <a name="syntax"></a>構文
 
-ARG (* * *argname* * *、[* * *defaultValue* * *]) 
+ARG (***Argname***, [ ***defaultValue*** ]) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _argName_ <br/> |必須  <br/> |**String** <br/> |呼び出し元のセルが関数に渡すことができる引数の名前です。  <br/> |
-| _既定値_ <br/> |省略可能  <br/> |**数値** <br/> |呼び出し元のセルが_argname_パラメーターの値を渡さなかった場合に、ARG によって返される値です。  <br/> |
+| _既定値_ <br/> |オプション  <br/> |**数値** <br/> |呼び出し元のセルが  _Argname_ パラメーターの値を渡さなかった場合に、ARG によって返される値です。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 図形の開発者と同様に、1 つのセルに式を記述し、その式を 1 つまたは複数の別のセルから呼び出すことによって、ユーザー設定関数を作成できます。式には、リテラル文字列、シェイプシートの関数、およびセル参照を入れることができます。また、呼び出し元のセルによって渡される特定の引数を入れることも可能です。 
   

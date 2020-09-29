@@ -8,21 +8,21 @@ f1_keywords:
 - Vis_DSS.chm82251398
 localization_priority: Normal
 ms.assetid: c437de23-d2e0-469d-62e6-8eb8b8cfea5c
-description: binarynumber1 と binarynumber2 の両方の対応するビットが1の場合にのみ、各ビットが1に設定される16ビットのバイナリ数値を返します。 それ以外の場合、ビットは0に設定されます。
-ms.openlocfilehash: 495ad645a422c0333d02a22c3c600dd1e0d567bd
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Binarynumber1 と binarynumber2 の両方の対応するビットが1の場合にのみ、各ビットが1に設定される16ビットのバイナリ数値を返します。 それ以外の場合、ビットは0に設定されます。
+ms.openlocfilehash: a3c76a9122d0f02d5ab61460cf3457bb15da4d7b
+ms.sourcegitcommit: 939bd9686ba41a8f94b82e004ed84b9054d9c7cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409728"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48293493"
 ---
 # <a name="bitand-function"></a>BITAND 関数
 
-binarynumber1 と binarynumber2 の両方の対応するビットが1の場合にのみ、各ビットが1に設定される16ビットのバイナリ数値を返します。 それ以外の場合、ビットは0に設定されます。 
+Binarynumber1 と binarynumber2 の両方の対応するビットが1の場合にのみ、各ビットが1に設定される16ビットのバイナリ数値を返します。 それ以外の場合、ビットは0に設定されます。 
   
 ## <a name="syntax"></a>構文
 
-bitand (* * *binarynumber1* * *, * * *binarynumber2* * *) 
+BITAND (***binarynumber1***, ***binarynumber2*** ) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -31,13 +31,13 @@ bitand (* * *binarynumber1* * *, * * *binarynumber2* * *)
 | _二項数値1_ <br/> |必須  <br/> |**数値** <br/> |最初の 16 ビットのバイナリ数値を指定します。  <br/> |
 | _binary number2_ <br/> |必須  <br/> |**数値** <br/> |2 番目の 16 ビットのバイナリ数値を指定します。  <br/> |
    
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 この関数を使用して、ビットマスクとして保存されている図形のプロパティ (図形の文字書式など) をテストしたり、変更したりできます。
   
 ## <a name="example"></a>例
 
-bitand (12, 6)
+BITAND (12, 6)
   
 4 を返します。12 = 0...01100、6 = 0...00110 であり、したがって BITAND(12,6) = 0...00100 となります。
   
