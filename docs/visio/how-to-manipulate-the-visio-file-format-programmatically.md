@@ -7,12 +7,12 @@ ms.topic: overview
 ms.assetid: 5f5e2288-7539-41b8-916d-410be028ed9b
 description: Visio 2013 での新しいファイル形式パッケージを読み取り、パッケージ内のパーツを選択しその中のデータを変更して、パッケージに新しいパーツを追加するソリューションをVisual Studio 2012で作成します。
 localization_priority: Priority
-ms.openlocfilehash: 3998c0d4b97439571bd93293f5f49659580f09de
-ms.sourcegitcommit: 007aa2ceb4f569201c3f4372de5c83b6c61f8875
+ms.openlocfilehash: 7103e094f58ee26ea2335d6cccd822dced1e1375
+ms.sourcegitcommit: 939bd9686ba41a8f94b82e004ed84b9054d9c7cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43102906"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48293514"
 ---
 # <a name="manipulate-the-visio-file-format-programmatically"></a>プログラムを使用して Visio ファイル形式を操作する
 
@@ -216,7 +216,7 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
 ## <a name="select-and-read-package-parts-from-a-package"></a>パッケージからパッケージ パーツを選択して読み取る
 <a name="vis15_ManipulateFF_SelectPart"> </a>
 
-パッケージとして Visio 2013 のファイルを開いたら、**System.IO.Packaging**名前空間に含まれている[PackagePart](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePart.aspx)クラスを使用して、ファイルの中のドキュメント パーツにアクセスできます。 **PackagePart**オブジェクトは、個別またはコレクションとしてインスタンス化することができます。 **Package** クラスは、 [Package](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetParts.aspx) から [PackagePart](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetPart.aspx) オブジェクトを取得するための **GetParts()** メソッドと **GetPart(Uri)** メソッドを公開します。 **Package.GetParts** メソッドは[PackagePartCollection](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePartCollection.aspx) クラスのインスタンスを返します。それにより [IEnumerator\< T\> ](https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1?redirectedfrom=MSDN&view=netframework-4.7.2)インターフェースを実行するほかのコレクションを操作することができます。 
+パッケージとして Visio 2013 のファイルを開いたら、**System.IO.Packaging**名前空間に含まれている[PackagePart](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePart.aspx)クラスを使用して、ファイルの中のドキュメント パーツにアクセスできます。 **PackagePart**オブジェクトは、個別またはコレクションとしてインスタンス化することができます。 **Package** クラスは、 [Package](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetParts.aspx) から [PackagePart](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetPart.aspx) オブジェクトを取得するための **GetParts()** メソッドと **GetPart(Uri)** メソッドを公開します。 **Package.GetParts** メソッドは[PackagePartCollection](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePartCollection.aspx) クラスのインスタンスを返します。それにより [IEnumerator\<T\>](https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1?redirectedfrom=MSDN&view=netframework-4.7.2)インターフェースを実行するほかのコレクションと同様に操作することができます。 
   
 **PackagePartCollection** オブジェクトを **Package** からコレクションとして取得し、コレクション内で **PackagePart** オブジェクトを反復処理し、各 **PackagePart** の URI とコンテンツ タイプをコンソールに書き込むには、次の手順のコードを使用してください。 
   
@@ -303,7 +303,7 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
   
 ほとんどの場合、**PackagePart**のいずれかを選択するだけでよく、それらすべてを反復処理する必要はありません。 **Package** または他の **PackagePart** とのリレーションシップを使用して、**Package**から**PackagePart** オブジェクトを取得することができます。 Visio 2013 ファイル形式のリレーションシップは、ドキュメント パーツとファイル パッケージの関係や 2 つのドキュメント パーツの相互の関係を記述した個別のエンティティです。 たとえば、Visio 2013 ファイル パッケージ自体には Visio ドキュメント パーツとのリレーションシップがあり、Visio ドキュメント パーツには Windows のパーツとのリレーションシップがあります。 これらのリレーションシップは、[PackageRelationship](https://docs.microsoft.com/dotnet/api/system.io.packaging.packagerelationship?view=netframework-4.8) または [PackageRelationshipCollection](https://docs.microsoft.com/dotnet/api/system.io.packaging.packagerelationshipcollection?view=netframework-4.8) クラスのインスタンスとして表されます。 
 
-**Package**クラスは、**PackageRelationship**または**PackageRelationshipCollection**オブジェクトとして含まれているリレーションシップを取得するいくつかの方法を公開します。 [GetRelationshipsByType(String)](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetRelationshipsByType.aspx) メソッドを使用して、1 つの特定の種類の **PackageRelationship** オブジェクトを含む **PackageRelationshipCollection** オブジェクトをインスタンス化できます。 もちろん、 **Package.GetRelationshipsByType**メソッドを使用するには、必要なリレーションシップの種類が既にわかっている必要があります。 リレーションシップの種類は、XML 名前空間の形式の文字列です。 たとえば、Visio の文書パーツのリレーションシップの種類はhttps://schemas.microsoft.com/visio/2010/relationships/documentです。 
+**Package**クラスは、**PackageRelationship**または**PackageRelationshipCollection**オブジェクトとして含まれているリレーションシップを取得するいくつかの方法を公開します。 [GetRelationshipsByType(String)](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetRelationshipsByType.aspx) メソッドを使用して、1 つの特定の種類の **PackageRelationship** オブジェクトを含む **PackageRelationshipCollection** オブジェクトをインスタンス化できます。 もちろん、 **Package.GetRelationshipsByType**メソッドを使用するには、必要なリレーションシップの種類が既にわかっている必要があります。 リレーションシップの種類は、XML 名前空間の形式の文字列です。 たとえば、Visio の文書パーツのリレーションシップの種類はhttp://schemas.microsoft.com/visio/2010/relationships/documentです。 
   
 **PackagePart** と **Package** または別の **PackagePart** とのリレーションシップが分かったら (つまり、目的の **PackagePart** を参照する **PackageRelationship** オブジェクトがある場合)、このリレーションシップを使用して、その **PackagePart** の URI を取得できます。 **PackagePart**を返すための**Package.GetPart** メソッドにURIを渡します。
   
@@ -366,14 +366,14 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
     ```cs
     // Get a reference to the Visio Document part contained in the file package.
     PackagePart documentPart = GetPackagePart(visioPackage, 
-        "https://schemas.microsoft.com/visio/2010/relationships/document");
+        "http://schemas.microsoft.com/visio/2010/relationships/document");
     
     ```
 
     ```vb
     ' Get a reference to the Visio Document part contained in the file package.
     Dim documentPart As PackagePart = GetPackagePart(visioPackage, _
-        "https://schemas.microsoft.com/visio/2010/relationships/document")
+        "http://schemas.microsoft.com/visio/2010/relationships/document")
     
     ```
 
@@ -438,9 +438,9 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
     // Get a reference to the collection of pages in the document, 
     // and then to the first page in the document.
     PackagePart pagesPart = GetPackagePart(visioPackage, documentPart, 
-        "https://schemas.microsoft.com/visio/2010/relationships/pages");
+        "http://schemas.microsoft.com/visio/2010/relationships/pages");
     PackagePart pagePart = GetPackagePart(visioPackage, pagesPart, 
-        "https://schemas.microsoft.com/visio/2010/relationships/page");
+        "http://schemas.microsoft.com/visio/2010/relationships/page");
     
     ```
 
@@ -448,9 +448,9 @@ Visio の以前のバージョンでは、独自のバイナリ ファイル形�
     ' Get a reference to the collection of pages in the document,
     ' and then to the first page in the document.
     Dim pagesPart As PackagePart = GetPackagePart(visioPackage, documentPart, _
-        "https://schemas.microsoft.com/visio/2010/relationships/pages") 
+        "http://schemas.microsoft.com/visio/2010/relationships/pages") 
     Dim pagePart As PackagePart = GetPackagePart(visioPackage, pagesPart, _
-        "https://schemas.microsoft.com/visio/2010/relationships/page") 
+        "http://schemas.microsoft.com/visio/2010/relationships/page") 
     ```
 
 ドキュメント パーツに含まれている XML に変更を加えるには、その前にまず [XDocument](https://msdn.microsoft.com/library/System.Xml.Linq.XDocument.aspx) クラスか [XmlDocument](https://msdn.microsoft.com/library/System.Xml.XmlDocument.aspx) クラスを使用して、その XML を閲覧できるようにするオブジェクト内に XML ドキュメントを読み込む必要があります。 両方のクラスとも、XML ドキュメント内に含まれる XML 要素の選択、属性の作成と読み書き、新しい XML 要素のドキュメント内への挿入などのタスクに関するメソッドを公開します。 
@@ -771,7 +771,7 @@ Visio でドキュメントを再計算する必要があるファイル内の�
         // Get the Custom File Properties part from the package and
         // and then extract the XML from it.
         PackagePart customPart = GetPackagePart(filePackage, 
-            "https://schemas.openxmlformats.org/officeDocument/2006/relationships/" + 
+            "http://schemas.openxmlformats.org/officeDocument/2006/relationships/" + 
             "custom-properties");
         XDocument customPartXML = GetXMLFromPart(customPart);
         // Check to see whether document recalculation has already been 
@@ -810,7 +810,7 @@ Visio でドキュメントを再計算する必要があるファイル内の�
             ' Get the Custom File Properties part from the package and
             ' then extract the XML from it.
             Dim customPart As PackagePart = GetPackagePart(filePackage, _
-                "https://schemas.openxmlformats.org/officeDocument/2006/" + _
+                "http://schemas.openxmlformats.org/officeDocument/2006/" + _
                 "relationships/custom-properties")
             Dim customPartXML As XDocument = GetXMLFromPart(customPart)
             ' Check to see whether document recalculation has already been
@@ -1006,7 +1006,7 @@ Visio ファイル内に新しいリボン機能拡張パーツを作成する�
         // This code adds a new CUSTOM tab to the ribbon for this
         // document. The tab has one group that contains one button.
         XNamespace customUINS = 
-            "https://schemas.microsoft.com/office/2006/01/customui";
+            "http://schemas.microsoft.com/office/2006/01/customui";
         XDocument customUIXDoc = new XDocument(
             new XDeclaration("1.0", "utf-8", "true"),
             new XElement(customUINS + "customUI",
@@ -1040,7 +1040,7 @@ Visio ファイル内に新しいリボン機能拡張パーツを作成する�
         ' This code adds a new CUSTOM tab to the ribbon for this
         ' document. The tab has one group that contains one button.
         Dim customUINS As XNamespace = _
-            "https://schemas.microsoft.com/office/2006/01/customui"
+            "http://schemas.microsoft.com/office/2006/01/customui"
         Dim customUIXML = New XDocument( _
             New XDeclaration("1.0", "utf-8", "true"), _
             New XElement(customUINS + "customUI", _
@@ -1132,7 +1132,7 @@ Visio ファイル内に新しいリボン機能拡張パーツを作成する�
     CreateNewPackagePart(visioPackage, customUIXML, 
         new Uri("/customUI/customUI1.xml", UriKind.Relative),
         "application/xml",
-        "https://schemas.microsoft.com/office/2006/relationships/ui/extensibility");
+        "http://schemas.microsoft.com/office/2006/relationships/ui/extensibility");
     ```
 
     ```vb
@@ -1141,7 +1141,7 @@ Visio ファイル内に新しいリボン機能拡張パーツを作成する�
     CreateNewPackagePart(visioPackage, customUIXML, _
         New Uri("/customUI/customUI1.xml", UriKind.Relative), _
         "application/xml", _
-        "https://schemas.microsoft.com/office/2006/relationships/ui/extensibility")
+        "http://schemas.microsoft.com/office/2006/relationships/ui/extensibility")
     ```
 
 4. F5 キーを選択してソリューションをデバッグします。 プログラムの実行が完了したら、任意のキーを選択して終了します。
@@ -1158,7 +1158,7 @@ Visio 2013 でファイルを開くと、カスタム リボンは図 2 のよ�
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<customUI xmlns="https://schemas.microsoft.com/office/2006/01/customui">
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
   <ribbon>
     <tabs>
       <tab id="customTab" label="CUSTOM">
