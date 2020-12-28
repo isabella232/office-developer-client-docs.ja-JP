@@ -1,5 +1,5 @@
 ---
-title: LookupRecord データブロック
+title: LookupRecord データ ブロック
 TOCTitle: LookupRecord data block
 ms:assetid: 750dc8ca-3bab-c3d1-c91d-2196f9c0604d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195882(v=office.15)
@@ -7,16 +7,16 @@ ms:contentKeyID: 48545671
 ms.date: 09/18/2015
 mtps_version: v=office.15
 localization_priority: Normal
-ms.openlocfilehash: 920f0830a310452962eb5dd1c21be63215bf0f03
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 7a5cccb77300f36f3e33cd1eccb6c6d278db3120
+ms.sourcegitcommit: 0419850d5c1b3439d9da59070201fb4952ca5d07
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289792"
+ms.lasthandoff: 12/28/2020
+ms.locfileid: "49734211"
 ---
-# <a name="lookuprecord-data-block"></a>LookupRecord データブロック
+# <a name="lookuprecord-data-block"></a>LookupRecord データ ブロック
 
-**適用先:** Access 2013、Office 2013
+**適用先**: Access 2013、Office 2013
 
 A **LookupRecord** data block performs a set of actions on a specific record.
 
@@ -43,8 +43,8 @@ A **LookupRecord** data block performs a set of actions on a specific record.
 <tbody>
 <tr class="odd">
 <td><p>In</p></td>
-<td><p>はい</p></td>
-<td><p>操作するレコードを識別する文字列を指定します。<em></em>In 引数にはテーブルの名前、選択クエリ、または SQL ステートメントが含まれます。</p><p><strong>注</strong>: 指定されたレコードには、リンクテーブルまたは ODBC データソースに格納されているデータを含めることはできません。</p></td>
+<td><p>必要</p></td>
+<td><p>操作するレコードを識別する文字列を指定します。<em></em>In 引数にはテーブルの名前、選択クエリ、または SQL ステートメントが含まれます。</p><p><strong>メモ</strong>: 指定したレコードには、リンク テーブルまたは ODBC データ ソースに格納されているデータを含めできません。</p></td>
 </tr>
 <tr class="even">
 <td><p>Where Condition/Where 条件式</p></td>
@@ -60,15 +60,15 @@ A **LookupRecord** data block performs a set of actions on a specific record.
 </table>
 
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
-*In* 引数および "*Where Condition/Where 条件式*" 引数で指定した条件に複数のレコードが該当する場合、**LookupRecord** データ ブロックは 1 つ目のレコードにのみ適用されます。
+*引数 In* および Where *Condition* で指定した条件が複数のレコードを返す場合 **、LookupRecord** データ ブロックは最初のレコードでのみ動作します。  指定された条件に一致するレコードがない場合 **、LookupRecord** ブロックに含まれる一連のアクションは **[、False](if-then-else-macro-block.md)** として評価される If マクロ ブロック式と同様にスキップされます。
 
 ## <a name="example"></a>例
 
 次の例は、 SetReturnVar アクションを使用して名前付きデータ マクロから値を返す方法を示します。 " CurrentServiceRequest" という名前の **ReturnVar** が、名前付きデータ マクロの呼び出し元であるマクロまたは Visual Basic for Applications (VBA) サブルーチンに返されます。
 
-**サンプル コードの提供元:** [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
+**サンプル コードの提供元:** [Microsoft Access 2010 プログラマー用リファレンス](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125)。
 
 ```vb
     RunDataMacro
