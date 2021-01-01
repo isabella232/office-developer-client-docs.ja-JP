@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: beba316b-1dfe-4e1b-adae-42418906c177
 description: この記事では、プレゼンスの表示や連絡先カードからのインスタント メッセージの送信など、Office 2013 以降のソーシャル機能と統合するように、インスタント メッセージ (IM) クライアント アプリケーションを構成する方法について説明します。
 localization_priority: Priority
-ms.openlocfilehash: c0094b880bae5cac2cef4236d3ff3edcefd21678
-ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
+ms.openlocfilehash: 3494d42af82c174469272928286c3fc5f847eebc
+ms.sourcegitcommit: 0419850d5c1b3439d9da59070201fb4952ca5d07
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39819295"
+ms.lasthandoff: 12/28/2020
+ms.locfileid: "49734232"
 ---
 # <a name="integrating-im-applications-with-office"></a>IM アプリケーションと Office の統合
 
@@ -302,12 +302,16 @@ public object GetInterface(string _version, OIInterface _interface)
 
 ```
 
-**GetSupportedFeatures**メソッドは、IM クライアント アプリケーションによってサポートされる IM 機能に関する情報を返します。 その唯一のパラメーター  _version_ は、文字列を取ります。 Office アプリケーションが **GetSupportedFeatures** メソッドを呼び出すと、メソッドは [UCCollaborationLib.OIFeature](https://msdn.microsoft.com/library/UCCollaborationLib.OIFeature) 列挙からの値を返します。 返される値は IM のクライアントの機能を示し、値にフラグを追加することによって、IM クライアント アプリケーションの各機能が Office アプリケーションに対して指定されます。 
+**GetSupportedFeatures** メソッドは、IM クライアント アプリケーションによってサポートされる IM 機能に関する情報を返します。 その唯一のパラメーター  _version_ は、文字列を取ります。 Office アプリケーションが **GetSupportedFeatures** メソッドを呼び出すと、メソッドは [UCCollaborationLib.OIFeature](https://msdn.microsoft.com/library/UCCollaborationLib.OIFeature) 列挙からの値を返します。 返される値は IM のクライアントの機能を示し、値にフラグを追加することによって、IM クライアント アプリケーションの各機能が Office アプリケーションに対して指定されます。 
   
 > [!NOTE]
 >  Office 2013 (およびそれ以降) アプリケーションは、**OIFeature** 列挙の以下の定数を無視します。 
 > - **oiFeaturePictures** (2) 
 > - **oiFeatureFreeBusyIntegration**
+> - **oiFeaturePhoneNormalization**
+>
+>  Office 365 バージョン 2011 (およびそれ以上) のアプリケーションは、**OIFeature** 列挙の以下の定数を無視します。 
+> - **oiFeaturePictures** (2) 
 > - **oiFeaturePhoneNormalization**
   
 次のコード例を使用して、IM クライアント アプリケーションのコード内で **GetSupportFeatures** メソッドを実装します。 
@@ -325,7 +329,7 @@ public OIFeature GetSupportedFeatures(string _version)
 ### <a name="ilyncclient-interface"></a>ILyncClient インターフェイス
 <a name="off15_IMIntegration_ImplementRequired_ILyncClient"> </a>
 
-**ILyncClient** インターフェイスは、IM クライアント アプリケーション自体の機能に対応しています。これは、アプリケーションにサインインしたユーザー ( [UCCollaborationLib.ISelf ](https://msdn.microsoft.com/library/UCCollaborationLib.ISelf)インターフェイスによって表されるローカル ユーザー)、アプリケーションの状態、ローカル ユーザーの連絡先の一覧、および他のいくつかの設定を参照するプロパティを公開します。IM のクライアント アプリケーションに接続しようとするとき、Office アプリケーションは **ILyncClient** インターフェイスを実装するオブジェクトへの参照を取得します。その参照から、Office は IM クライアント アプリケーションの機能の多くにアクセスできます。 
+**ILyncClient** インターフェイスは、IM クライアント アプリケーション自体の機能に対応しています。これは、アプリケーションにサインインしたユーザー ( [UCCollaborationLib.ISelf](https://msdn.microsoft.com/library/UCCollaborationLib.ISelf)インターフェイスによって表されるローカル ユーザー)、アプリケーションの状態、ローカル ユーザーの連絡先の一覧、および他のいくつかの設定を参照するプロパティを公開します。IM のクライアント アプリケーションに接続しようとするとき、Office アプリケーションは **ILyncClient** インターフェイスを実装するオブジェクトへの参照を取得します。その参照から、Office は IM クライアント アプリケーションの機能の多くにアクセスできます。 
   
 さらに、 **ILyncClient** インターフェイスを実装するクラスは、 **_ILyncClientEvents** インターフェイスも実装する必要があります。 **_ILyncClientEvents** インターフェイスは、IM クライアント アプリケーションの状態を監視するために必要ないくつかのイベントを公開します。 
   
@@ -710,7 +714,7 @@ namespace SampleImplementation
 |**Settings** プロパティ  <br/> |連絡先プロパティのコレクションを取得します。  <br/> |
 |**CustomGroups** プロパティ  <br/> |連絡先がメンバーとなっているグループのコレクションを取得します。  <br/> |
    
-初期化プロセス中に、Office アプリケーションは **IContact.CanStart** メソッドを呼び出して、ローカル ユーザーの IM 機能を判別します。 **CanStart** メソッドは、 [UCCollaborationLib.ModalityTypes](https://msdn.microsoft.com/library/UCCollaborationLib.ModalityTypes) 列挙から  __modalityTypes_ パラメーターの引数としてフラグを取得します。現在のユーザーが要求されたモダリティに関わることができる場合 (つまり、ユーザーにインスタント メッセージング、音声とビデオのメッセージング、またはアプリケーション共有の能力がある場合)、 **CanStart** メソッドは **true** を返します。
+初期化プロセス中に、Office アプリケーションは **IContact.CanStart** メソッドを呼び出して、ローカル ユーザーの IM 機能を判別します。 **CanStart** メソッドは、 [UCCollaborationLib.ModalityTypes](https://msdn.microsoft.com/library/UCCollaborationLib.ModalityTypes) 列挙から  _ _modalityTypes_ パラメーターの引数としてフラグを取得します。現在のユーザーが要求されたモダリティに関わることができる場合 (つまり、ユーザーにインスタント メッセージング、音声とビデオのメッセージング、またはアプリケーション共有の能力がある場合)、 **CanStart** メソッドは **true** を返します。
   
 ```cs
 public bool CanStart(ModalityTypes _modalityTypes)
@@ -734,7 +738,7 @@ public bool CanStart(ModalityTypes _modalityTypes)
 
 ```
 
-**GetContactInformation** メソッドは、連絡先に関する情報を **IContact** オブジェクトから取得します。呼び出し元のコードは [UCCollaborationLib.ContactInformationType](https://msdn.microsoft.com/library/UCCollaborationLib.ContactInformationType) 列挙からの値を、取得するデータを示す  __contactInformationType_ パラメーターに渡す必要があります。 
+**GetContactInformation** メソッドは、連絡先に関する情報を **IContact** オブジェクトから取得します。呼び出し元のコードは [UCCollaborationLib.ContactInformationType](https://msdn.microsoft.com/library/UCCollaborationLib.ContactInformationType) 列挙からの値を、取得するデータを示す  _ _contactInformationType_ パラメーターに渡す必要があります。 
   
 ```cs
 public object GetContactInformation(
@@ -765,7 +769,7 @@ public object GetContactInformation(
 }
 ```
 
-**GetContactInformation** と同様に、 **BatchGetContactInformation** メソッドは、連絡先に関する複数のプレゼンス アイテムを **IContact** オブジェクトから取得します。呼び出し元のコードは、値の配列を **ContactInformationType** 列挙から  __contactInformationTypes_ パラメーターに渡す必要があります。メソッドは、要求されたデータを含む [UCCollaborationLib.IContactInformationDictionary](https://msdn.microsoft.com/library/UCCollaborationLib.IContactInformationDictionary) オブジェクトを返します。 
+**GetContactInformation** と同様に、 **BatchGetContactInformation** メソッドは、連絡先に関する複数のプレゼンス アイテムを **IContact** オブジェクトから取得します。呼び出し元のコードは、値の配列を **ContactInformationType** 列挙から  _ _contactInformationTypes_ パラメーターに渡す必要があります。メソッドは、要求されたデータを含む [UCCollaborationLib.IContactInformationDictionary](https://msdn.microsoft.com/library/UCCollaborationLib.IContactInformationDictionary) オブジェクトを返します。 
   
 ```cs
 public IMClientContactInformationDictionary BatchGetContactInformation(
@@ -883,7 +887,7 @@ public class IMClientSelf : ISelf
 ||**OnGroupRemoved** イベント  <br/> |グループがグループ コレクションから除去されると発生します。更新されたグループ コレクションは、 **IContactManager.Groups** プロパティから取得できます。  <br/> |
 ||**OnSearchProviderStateChanged** イベント  <br/> |検索プロバイダーの状態が変化したときに発生します。  <br/> |
    
-Office は **IContactManager.GetContactByUri** を呼び出して、連絡先の SIP アドレスを使用することにより、連絡先プレゼンス情報を取得します。Active Directory で連絡先が SIP アドレス用に構成されると、Office は連絡先用にこのアドレスを判別して、 **GetContactByUri** を呼び出し、連絡先の SIP アドレスを  __contactUri_ パラメーターに渡します。 
+Office は **IContactManager.GetContactByUri** を呼び出して、連絡先の SIP アドレスを使用することにより、連絡先プレゼンス情報を取得します。Active Directory で連絡先が SIP アドレス用に構成されると、Office は連絡先用にこのアドレスを判別して、 **GetContactByUri** を呼び出し、連絡先の SIP アドレスを  _ _contactUri_ パラメーターに渡します。 
   
 Office は、連絡先の SIP アドレスを判別できないとき、 **IContactManager.Lookup** メソッドを呼び出して、IM サービスを使用することにより SIP を検索します。ここで、Office は検索できた最良のデータを連絡先に渡します (たとえば、連絡先のメール アドレスだけなど)。 **Lookup** メソッドは、非同期で **AsynchronousOperation** オブジェクトを返します。コールバックを呼び出すときに、 **Lookup** メソッドは連絡先の URI に加えて操作の成否も返します。 
   
@@ -929,7 +933,7 @@ public IMClientContactSubscription CreateSubscription()
 ### <a name="igroup-and-igroupcollection-interfaces"></a>IGroup と IGroupCollection インターフェイス
 <a name="off15_IMIntegration_ImplementRequired_IGroup"> </a>
 
-**IGroup**オブジェクトは、集合的なグループ名によって連絡先のコレクションを特定するために、追加のプロパティを持つ連絡先のコレクションを表します。 **IGroupCollection** オブジェクトは、ローカル ユーザーと IM クライアント アプリケーションで定義されている **IGroup** オブジェクトのコレクションを表します。Office アプリケーションは **IGroupCollection** と **IGroup** オブジェクトを使用して、ローカル ユーザーの連絡先にアクセスします。 
+**IGroup** オブジェクトは、集合的なグループ名によって連絡先のコレクションを特定するために、追加のプロパティを持つ連絡先のコレクションを表します。 **IGroupCollection** オブジェクトは、ローカル ユーザーと IM クライアント アプリケーションで定義されている **IGroup** オブジェクトのコレクションを表します。Office アプリケーションは **IGroupCollection** と **IGroup** オブジェクトを使用して、ローカル ユーザーの連絡先にアクセスします。 
   
 表 9 は、以下の表の **IGroup** と **IGroupCollection** から継承するクラスに実装されている必要のあるメンバーを示しています。 
   
