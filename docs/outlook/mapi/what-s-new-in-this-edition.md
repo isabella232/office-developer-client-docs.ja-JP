@@ -1,19 +1,19 @@
 ---
 title: このエディションの新機能
 manager: soliver
-ms.date: 12/07/2015
+ms.date: 2/09/2020
 ms.audience: Developer
 localization_priority: Normal
 api_type:
 - COM
 ms.assetid: a24cad75-1237-469f-b7f3-cbbb88f80d44
-description: '�ŏI�X�V��: 2015�N12��7��'
-ms.openlocfilehash: 23a8b84af50cc8a046206ab37144d84c4c9b6d56
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: '最終更新日: 2020 年 2 月 9 日'
+ms.openlocfilehash: 3a3d38d83311b63686a2379c3321194e538ff840
+ms.sourcegitcommit: 66e74e39f44dca8c41f97f05528b8f9eb1aaed87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329548"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061329"
 ---
 # <a name="whats-new-in-this-edition"></a>このエディションの新機能
 
@@ -21,73 +21,97 @@ ms.locfileid: "32329548"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Microsoft Outlook 2013 MAPI リファレンスは、さまざまな新機能に関するドキュメントを含むように更新されています。 
+Microsoft OUTLOOK MAPI リファレンスが更新され、さまざまな新機能に関するドキュメントが含まれています。 
   
 ## <a name="new-content"></a>新しいコンテンツ
 
-コンテンツは、次の機能に対して追加されました。
+次の機能のコンテンツが追加されました。
   
-- [outlook 2013 mapi リファレンスの作業の開始](getting-started-with-the-outlook-mapi-reference.md)に関するトピックは、outlook および mapi の機能のプログラミングモデルに関する総合的な情報を参照することによって更新され、最も多くの api とテクノロジを識別するのに役立ちます。必要に応じて。 参照されている技術記事へのリンクは、以下のトピックでも修正されています。 
+- トピック[Outlook 2013 MAPI](getting-started-with-the-outlook-mapi-reference.md)リファレンスの概要が更新され、Outlook および MAPI 機能のプログラミング モデルに関する包括的な情報が参照され、ニーズに最も適した API とテクノロジを特定できます。 参照されている技術記事へのリンクも、次のトピックで改訂されています。 
     
   - [Outlook MAPI リファレンス](outlook-mapi-reference.md)
     
   - [Outlook MAPI ���t�@�����X�̊T�v](outlook-mapi-reference-overview.md)
     
-- **メッセージストアプロバイダーの例**: ラップされた[PST ストアプロバイダーのサンプル](message-store-provider-sample.md)コードが、Outlook 2013 を認識して対応するように改訂されました。 詳細については、このトピックの「以前に改訂したコンテンツ」を参照してください。 
+- **メッセージ ストア プロバイダーの例**—2013 年にラップされた [PST](message-store-provider-sample.md)ストア プロバイダーのサンプル コードが認識され、対応Outlookされました。 詳細については、このトピックの「以前に改訂されたコンテンツ」を参照してください。 
     
-- **オートコンプリートストリーム**—以前は**Nk2 ファイル形式**である[ニックネームキャッシュ](nickname-cache.md)トピックが、outlook 2013 と outlook 2010 の変更を反映するように更新されています。 次のトピックが更新され、microsoft Outlook 2003/microsoft Office outlook 2007 およびバイナリファイル解析の nk2 ファイル形式の開発者ガイドラインに関する情報が提供されるようになりました。 詳細については、このトピックの「以前に改訂したコンテンツ」を参照してください。
+- **Autocomplete Stream**—[ニックネーム](nickname-cache.md)キャッシュ トピック (以前は **Nk2** ファイル形式) は、Outlook 2013 および Outlook 2010 の変更を反映するように更新されました。 次のトピックは、Microsoft Outlook 2003/Microsoft Office Outlook 2007 およびバイナリ ファイル解析の .nk2 ファイル形式開発者向けガイドラインに関する情報を提供するために改訂されました。 詳細については、このトピックの「以前に改訂されたコンテンツ」を参照してください。
     
   - [MAPI プロファイル](mapi-profiles.md)
     
   - [ニックネーム キャッシュ](nickname-cache.md)
     
-  - [オートコンプリートストリーム](autocomplete-stream.md)
+  - [オートコンプリート ストリーム](autocomplete-stream.md)
     
-- **インターフェイス**- [IAddrBook:: openentry](iaddrbook-openentry.md)トピックには、アドレス帳エントリを開き、それにアクセスするために使用されるインターフェイスへのポインターを返すメソッドが記載されています。 以前は*ulflags*パラメーター **MAPI_GAL_ONLY**にフラグが含まれていました。これはグローバルアドレス一覧 (GAL) を開くために使用され、その定義を含むように変更されています。
+- **Interfaces** [-IAddrBook::OpenEntry](iaddrbook-openentry.md) トピックでは、アドレス帳エントリを開き、アドレス帳エントリへのアクセスに使用するインターフェイスへのポインターを返す方法について説明します。 以前は  *ulFlags*  パラメーター **MAPI_GAL_ONLY** にフラグが含まれているので、グローバル アドレス一覧 (GAL) のみを開く場合に使用し、その定義を含める変更が行いました。
     
-- **プロパティ**— **PR_CONVERSATION_KEY**名前付きプロパティ ([PidTagConversationKey 標準プロパティ](pidtagconversationkey-canonical-property.md)) のトピックが追加され、IPM に関連してい**ます。MessageManager**メッセージは、Outlook MAPI のみで送信されます。 これに関連する以下のトピックと、トランスポート中立のカプセル化形式 (TNEF) ストリームのドキュメントが改訂されました。 
+- **Properties** **—PR_CONVERSATION_KEYプロパティ**[(PidTagConversationKey](pidtagconversationkey-canonical-property.md)標準プロパティ) トピックが追加され **、IPM に関連付けされています。MAPI 内の MessageManager** Outlookのみ。 関連する以下のトピックと、Transport-Neutralカプセル化形式 (TNEF) ストリームのドキュメントが改訂されました。 
     
-  - [標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+  - [標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
     
-  - [MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+  - [MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
     
-  - [TNEF 属性から MAPI プロパティへのマッピング](mapping-of-tnef-attributes-to-mapi-properties.md)
+  - [TNEF 属性と MAPI プロパティのマッピング](mapping-of-tnef-attributes-to-mapi-properties.md)
     
   - [attConversationID and attParentID](attconversationid-and-attparentid.md)
-    
-## <a name="previously-revised-content"></a>以前に改訂されたコンテンツ
-
-次の機能について、Outlook MAPI リファレンスの以前のリリースで追加されたコンテンツ。
   
-- Microsoft Outlook 2013 では、並行して、またはクイック実行など、従来の展開シナリオでは使用できません。 これらのシナリオでは、適切な MAPI ライブラリの読み込みに使用されるロジックが複雑になることがあります。 mapi 開発者には、mapi 機能に明示的にリンクするオプションが用意されており、mapi ライブラリや Windows mapi スタブを経由することなく、既定の mapi クライアント (Outlook の Msmapi32 など) の mapi スタブに明示的にリンクすることを選択できます。 暗黙的リンクと比較した明示的なリンクの詳細については、「 [MAPI 関数へのリンク](how-to-link-to-mapi-functions.md)」を参照してください。 [CodePlex](https://mapistublibrary.codeplex.com/) web サイトに投稿された**mapi スタブライブラリ**は、32ビットと64ビットの両方の mapi アプリケーションのビルドをサポートする Mapi32 のためのドロップインリプレースを提供しています。 
+## <a name="mapi-initialization-monitor"></a>MAPI 初期化モニター  
+
+- MAPI を使用するアプリケーションが、初期化が完了した時間を知りたい場合があります。 たとえば、MAPI を初期化できる複数のスレッドがある場合や、アプリケーションの初期化中に MAPI が初期化された場合は、何らかの処理を実行する必要がありますが、MAPI スタックを常にスピンアップする必要はありません。  初期化モニターは、関数 (OLMAPI32.DLL からエクスポート) と、以下に示すいくつかの簡単なインターフェイスを使用して、この機能を提供します。 
+
+### <a name="hresult-stdapicalltype-createmapiinitializationmonitorimapiinitmonitor-ppinitmonitor"></a>HRESULT STDAPICALLTYPE CreateMapiInitializationMonitor(IMAPIInitMonitor ppInitMonitor) 
+
+- これは、OLMAPI32.DLL からエクスポートされたエントリ ポイントです。これにより、呼び出し元はインターフェイスを取得して現在の初期化状態を照会したり、初期化完了用のコールバックをセットアップしたり、完了するまで現在のスレッドをブロックすることができます。  この API から返されるオブジェクトは再利用可能でスレッド セーフであり、それを取得したスレッドではなく、任意のスレッドから呼び出すことができます。  また、MAPI から公開される他のオブジェクトとは異なり、このオブジェクトは、DLL が読み込まれている限り有効であり、初期化セッション間で再使用できます。MAPIInitialize が呼び出される前または後に使用できます。 COM 標準 HRESULT を使用して成功または失敗を返し、IMAPIInitMonitor のインスタンスに out パラメーターを割り当てる。 
+
+### <a name="interface-imapiinitmonitor"></a>インターフェイス: IMAPIInitMonitor 
+
+**IFACEMETHODIMP_(BOOL) IsInitialized()**
+- MAPI の初期化の現在の状態を返します。 
+
+**IFACEMETHODIMP Wait(DWORD タイムアウト)**
+- このスレッドで BLOCKING 呼び出しを開始します。指定したミリ秒数が経過するか、MAPI が初期化された場合に返されます。  INFINITE は、無限の待機に使用できます。 
+
+**IFACEMETHODIMP BeginWait(DWORD タイムアウト、IMAPIWaitResult ppResult)**
+- MAPI の初期化または指定した経過時間 (ミリ秒単位) の待機を開始します。   これにより、IMAPIWaitResult インターフェイスが返され、待機を開始するために "End" が呼び出される必要があります。  これにより、呼び出し元は、待機中にブロックされるスレッドを制御できます。 
+
+### <a name="interface-imapiwaitresult"></a>インターフェイス IMAPIWaitResult
+**IFACEMETHODIMP End() オーバーライド**
+- スレッドが呼び出されるスレッドでブロック待機を開始するために呼び出され、"BeginWait" と呼ばれるスレッドである必要があります。 
+
     
-- **64 ビット版 Microsoft Outlook のサポート**-適用可能な API 要素のリファレンストピックが、64ビットの outlook をサポートする新しいヘッダーファイルに対応するよう更新されました。 これらのヘッダーファイルは、 [Outlook 2010: MAPI ヘッダーファイル](https://www.microsoft.com/downloads/details.aspx?FamilyID=f8d01fc8-f7b5-4228-baa3-817488a66db1)でダウンロードできます。 「 [outlook のバージョンを確認](how-to-check-the-version-of-outlook.md)する」で新しいコードサンプルが提供されました。インストールされている outlook のバージョンが64ビットの Microsoft outlook 2010 で、outlook 2013 用に更新されているかどうかを確認する方法について説明します。 既存の32ビット MAPI アプリケーションを、64ビットの Outlook がインストールされている64ビットのオペレーティングシステムで実行する場合は、32ビットアプリケーションを64ビットアプリケーションとして再構築する必要があります。 64ビット Outlook の mapi サポートの詳細については、「 [32 ビットおよび64ビットプラットフォームで mapi アプリケーションを作成](building-mapi-applications-on-32-bit-and-64-bit-platforms.md)する」を参照してください。
+## <a name="previously-revised-content"></a>以前に変更されたコンテンツ
+
+コンテンツは、MAPI リファレンスの以前のリリースOutlook次の機能で追加されました。
+  
+- Microsoft Outlook 2013を使用すると、サイド バイ サイドやアプリケーションなどの従来の展開シナリオクイック実行。 これらのシナリオでは、適切な MAPI ライブラリの読み込みに使用されるロジックが複雑になります。 MAPI 開発者は、MAPI 関数に明示的にリンクするオプションを持ち、MAPI ライブラリと Windows MAPI スタブを経由せずに、既定の MAPI クライアント (Outlook の Msmapi32.dll など) の MAPI スタブに明示的にリンクすることができます。 暗黙的なリンクと比較した明示的なリンクの詳細については、「MAPI 関数へのリンク [」を参照してください](how-to-link-to-mapi-functions.md)。 [CodePlex](https://mapistublibrary.codeplex.com/) Web サイトに投稿された **MAPI** スタブ ライブラリは、32 ビット MAPI アプリケーションと 64 ビット MAPI アプリケーションの両方の構築をサポートする Mapi32.lib のドロップイン置換を提供します。 
     
-- **メッセージストアプロバイダーの例**: ラップされた[PST ストアプロバイダーのサンプル](message-store-provider-sample.md)は、以前は64ビットアーキテクチャをサポートするように更新されていました。 「ラップされた pst[ストアプロバイダー](initializing-a-wrapped-pst-store-provider.md)の説明」の例では、「ラップされた pst および Unicode パス」に関する情報を提供するように展開されています。 
+- **64** ビット Microsoft Outlook のサポート -適用可能な API 要素のリファレンス トピックが更新され、64 ビット バージョンをサポートする新しいヘッダー ファイルに対応Outlook。 これらのヘッダー ファイルは[、2010 年 2010](https://www.microsoft.com/downloads/details.aspx?FamilyID=f8d01fc8-f7b5-4228-baa3-817488a66db1)年Outlook MAPI ヘッダー ファイルでダウンロードできます。 Outlook のバージョンを確認して[](how-to-check-the-version-of-outlook.md)、インストールされているバージョンの Outlook が 64 ビット Microsoft Outlook 2010 であるかどうかを確認する方法を示す新しいコード サンプルが提供され、Outlook 2013 年に改訂されました。 64 ビット Outlook がインストールされている 64 ビット オペレーティング システムで既存の 32 ビット MAPI アプリケーションを実行する場合は、64 ビット アプリケーションとして 32 ビット アプリケーションを再構築する必要があります。 64 ビット の MAPI サポートの詳細[Outlook、32 ビットおよび 64 ビット](building-mapi-applications-on-32-bit-and-64-bit-platforms.md)プラットフォームでの MAPI アプリケーションの構築を参照してください。
     
-- **オートコンプリートストリーム**—以前は**Nk2 ファイル形式**である[ニックネームキャッシュ](nickname-cache.md)トピックが、outlook 2013 と outlook 2010 の変更を反映するように更新されました。 オートコンプリートリストなどの情報は、ユーザーが電子メールを作成している間**に [宛先**]、[ **Cc**]、および [ **Bcc** ] の各編集ボックスに表示される名前の一覧で、ローカルコンピューター上のメッセージの[オートコンプリートストリーム](autocomplete-stream.md)に保存されるようになりました。Outlook 2007 のようにファイルに保存するのではなく、ファイルに保存します。 
+- **メッセージ ストア プロバイダーの例**:ラップ [された PST](message-store-provider-sample.md) ストア プロバイダーのサンプルは、64 ビットアーキテクチャをサポートするために以前に更新されました。 この例の「ラップ [された PST](initializing-a-wrapped-pst-store-provider.md) ストア プロバイダーの初期化」トピックが展開され、「ラップされた PST と Unicode パス」に関する情報が提供されました。 
     
-  - オートコンプリートストリームとの対話
+- **Autocomplete Stream**—[ニックネーム](nickname-cache.md)キャッシュ トピック (以前は **Nk2 ファイル** 形式) が更新され、Outlook 2013 および Outlook 2010 の変更が反映されています。 ユーザーが電子メールを作成している間に [To] **、Cc、****および Bcc** の編集ボックスに表示される名前の一覧であるオートコンプリート リストなどの情報は、Outlook 2007 のようにファイルに保存するのではなく、ローカル コンピューター上のメッセージのオートコンプリート ストリームに保存されます。  [](autocomplete-stream.md) 
     
-  - オートコンプリートストリームを読み込む
+  - オートコンプリート ストリームの操作
     
-  - オートコンプリートストリームの保存
+  - オートコンプリート ストリームの読み込み
     
-- mapi クライアント**の高速シャットダウンのサポート**— mapi クライアントが迅速なシャットダウンを開始し、高速シャットダウンからのデータ損失を最小限にするために mapi サブシステムが読み込み済みプロバイダーに通知することができるようになりました。 高速シャットダウンをサポートするために、クライアントとプロバイダーに対して追加のインターフェイスが追加されました。 高速シャットダウンの詳細については、「 [MAPI でのクライアントのシャットダウン](client-shutdown-in-mapi.md)」を参照してください。
+  - オートコンプリート ストリームの保存
     
-- **Outlook アイテムのフィールド定義のストリーム構造**— [PidLidPropertyDefinitionStream](pidlidpropertydefinitionstream-canonical-property.md)プロパティのバイナリストリームのドキュメントが追加されました。 このプロパティは、Outlook アイテムの組み込みフィールドのすべてのユーザー設定フィールドおよびデータバインド設定の定義を指定します。 
+- **MAPI クライアントの高速シャットダウン** のサポート —MAPI クライアントは、クイック シャットダウンを開始し、MAPI サブシステムに読み込まれたプロバイダーに通知して、高速シャットダウンによるデータ損失を最小限に抑えます。 クライアントとプロバイダーが高速シャットダウンをサポートするために追加のインターフェイスが追加されました。 高速シャットダウンの詳細については [、「MAPI でのクライアント シャットダウン」を参照してください](client-shutdown-in-mapi.md)。
     
-- **個人ストアの上書き**-個人用フォルダーファイル (PST) ストアプロバイダー **PSTDisableGrow**ポリシーの上書きをサポートするために、次のインターフェイスとそれぞれのメソッドが追加されました。 
+- **アイテムのフィールド** 定義Outlookストリーム構造 [-PidLidPropertyDefinitionStream](pidlidpropertydefinitionstream-canonical-property.md)プロパティのバイナリ ストリームのドキュメントが追加されました。 このプロパティは、すべてのユーザー設定フィールドの定義と、ユーザー設定アイテムの組み込みフィールドのデータ バインドOutlookします。 
     
-    [IPSTOVERRIDEREQ:: IUnknown](ipstoverridereqiunknown.md)
+- **個人用ストアの上書** き —個人用フォルダー ファイル (PST) ストア プロバイダー **PSTDisableGrow** ポリシーのオーバーライドをサポートするために、次のインターフェイスとそれぞれのメソッドが追加されました。 
     
-    [IPSTOVERRIDE1:: IUnknown](ipstoverride1iunknown.md)
+    [IPSTOVERRIDEREQ::IUnknown](ipstoverridereqiunknown.md)
     
-- **複数の Exchange アカウントを使用する**- [MAPI アドレス帳 API](using-multiple-exchange-accounts.md)のドキュメントが追加されました。 この API は、microsoft outlook 2010 で複数の Exchange アカウントをサポートするように強化され、microsoft outlook 2013 が含まれるようになりました。 ������ Exchange �A�J�E���g�Ő������A�h���X��������ɂ́A�A�h���X���ɒʘb�������� Exchange �A�J�E���g������ł���悤�ɁA�A�J�E���g�̃R���e�L�X�g���V�����@�\��g�p���܂��B 
+    [IPSTOVERRIDE1::IUnknown](ipstoverride1iunknown.md)
     
-- **mapi ファイル形式**— mapi 構成情報が拡張され、 [mapisvc.inf でのサービスおよびサービスプロバイダーの登録](registering-services-and-service-providers-in-mapisvc-inf.md)にパスを使用する方法を説明しました。
+- **複数のExchangeアカウントを使用** する [—MAPI アドレス](using-multiple-exchange-accounts.md)帳 API のドキュメントが追加されました。 この API は、複数のアカウントをサポートExchange強化され、Microsoft Outlook 2010が含Microsoft Outlook 2013。 ������ Exchange �A�J�E���g�Ő������A�h���X��������ɂ́A�A�h���X���ɒʘb�������� Exchange �A�J�E���g������ł���悤�ɁA�A�J�E���g�̃R���e�L�X�g���V�����@�\��g�p���܂��B 
     
-- **プロパティ**—次のタグ付きプロパティと、それまで追加されていた他のタグ付きプロパティと名前付きプロパティのドキュメントに加えて、次のタグ付きプロパティが追加されました。
+- **MAPI ファイル形式**—MAPI 構成情報が展開され [、MapiSvc.inf](registering-services-and-service-providers-in-mapisvc-inf.md)のサービスとサービス プロバイダーの登録でパスを使用する方法が説明されています。
+    
+- **Properties**—以前に追加された 38 の他のタグ付きプロパティと名前付きプロパティのドキュメントに加えて、次のタグ付きプロパティが追加されました。
     
   - [PidTagAddressBookChooseDirectoryAutomatically](pidtagaddressbookchoosedirectoryautomatically-canonical-property.md)
     
@@ -101,11 +125,11 @@ Microsoft Outlook 2013 MAPI リファレンスは、さまざまな新機能に�
     
   - [PidTagStoreEntryIdEmsmdbV1](pidtagstoreentryidemsmdbv1-canonical-property.md)
     
-- **mapi 定数**—統合[mapi 定数](mapi-constants.md)が展開されています。 以前のリリースでは、いくつかのトピックで配布されていましたが、1つのトピックで収集され、簡単に見つけて使用できるようになりました。 また、以下のセクションを含む、さらに広い範囲を提供するように拡張されました。 
+- **MAPI 定数**—統合 [MAPI 定数が](mapi-constants.md) 拡張されました。 以前のリリースでは、複数のトピックで配布されましたが、1 つのトピックで収集され、検出と使用が容易になりました。 また、次のセクションを含む、より広範な範囲を提供するために拡張されています。 
     
-  - Exchange アドレス帳およびメッセージストアのエラーコードの定義
+  - アドレス帳Exchangeメッセージ ストアのエラー コードの定義
     
-  - Exchange Server メールボックスのキャッシュモードクォータの定義
+  - メールボックス キャッシュ Exchange Serverクォータの定義
     
 ## <a name="see-also"></a>関連項目
 
