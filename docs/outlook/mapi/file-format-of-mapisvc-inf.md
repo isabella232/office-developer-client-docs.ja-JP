@@ -8,12 +8,12 @@ api_type:
 ms.assetid: b48eda17-83a8-4dc4-85c8-4ca827d13d25
 description: '最終更新日: 2011 年 7 月 23 日'
 localization_priority: Priority
-ms.openlocfilehash: 934bb491c0521b1d76d5400aac4728fbd34ba625
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 8b7c02f2ac39875021cd183bbb1657514912fe8d
+ms.sourcegitcommit: 66e74e39f44dca8c41f97f05528b8f9eb1aaed87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334873"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061343"
 ---
 # <a name="file-format-of-mapisvcinf"></a>MapiSvc.inf のファイル形式
 
@@ -49,4 +49,7 @@ MAPI は MAPI サブシステムのエントリを格納する MapiSvc.inf フ�
   
 パブリックの構成データのみを MapiSvc.inf ファイルに保存します。 プライベートな情報や十分な保護が必要な情報 (パスワードなどの資格情報) は、このファイルに含めてはいけません。 この種の情報は完全に保存しないようにするか、セキュリティで保護されたプロパティとしてプロファイルで保持するようにします。 セキュリティで保護されたプロパティには、暗号化のような組み込みの保護機能があります。
   
+## <a name="reference"></a>参照
+
+MAPI がプロバイダー DLL をブロックする場合のエラーをトラブルシューティングする方法の詳細については、「[How to allow MAPI to load unregistered Provider DLLs](https://support.microsoft.com/topic/how-to-allow-mapi-to-load-unregistered-provider-dlls-18d9a1cd-d3d7-fa10-473e-5dfd62d38b0d)」 (未登録のプロバイダー DLL を MAPI で読み込めるようにする方法) を参照してください。
 
