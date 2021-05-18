@@ -27,7 +27,7 @@ ms.locfileid: "32320049"
 
 次のコード例の PromptUserMeetingRequest では、[MeetingItem](https://msdn.microsoft.com/library/bb645703\(v=office.15\)) オブジェクトを列挙して関連付けられた **AppointmentItem** オブジェクトを取得した後、*fNoUI* パラメーターを **false** に設定し、*fAdditionalTextDialog* パラメーターを **true** に設定して、**Respond** メソッドを呼び出します。 これにより、ユーザーは返信を送信するかどうか、送信する前に返信の本文を編集するかどうかを選択できます。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

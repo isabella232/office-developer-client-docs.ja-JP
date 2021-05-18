@@ -25,7 +25,7 @@ ms.locfileid: "33407110"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-同期セッションを開始し、関連付けられた**[iostx](iostxiunknown.md)** インターフェイスを取得します。 
+同期セッションを開始し、関連付けられた **[IOSTX インターフェイスを取得](iostxiunknown.md)** します。 
   
 ```cpp
 HRESULT GetSyncObject( 
@@ -37,11 +37,11 @@ HRESULT GetSyncObject(
 
  _ppostx_
   
->  読み上げ取得する**iostx**インターフェイスへのポインター。 
+>  [out]取得する **IOSTX** インターフェイスへのポインター。 
     
 ## <a name="remarks"></a>注釈
 
-呼び出し元は、同じフォルダーが複数のスレッドで同時に同期されないようにする必要があります。
+呼び出し元は、同じフォルダーが複数のスレッドで同時に同期されない必要があります。
   
 ## <a name="see-also"></a>関連項目
 

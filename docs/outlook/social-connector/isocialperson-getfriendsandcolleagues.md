@@ -25,21 +25,21 @@ HRESULT _stdcall GetFriendsAndColleagues([out, retval] BSTR* personsCollection);
 
 ## <a name="parameters"></a>パラメーター
 
-_個人コレクション_
+_personsCollection_
   
-> 読み上げ個人のフレンドのセットを表す xml 文字列。 Outlook Social Connector (.osc) プロバイダー拡張機能の XML スキーマで定義されているように、**フレンド**の定義に準拠しています。 
+> [out]ユーザーのフレンドのセットを表し、Outlook Social Connector (OSC) プロバイダーの機能拡張の XML スキーマで定義されているフレンドの定義に準拠する XML 文字列。 
     
 ## <a name="remarks"></a>注釈
 
-.osc プロバイダーがソーシャルネットワーク上で友人のキャッシュまたはハイブリッド同期をサポートしている場合、.osc 呼び出しは**GetFriendsAndColleagues**になります。 ソーシャルネットワークにログオンしている Outlook ユーザーの**GetFriendsAndColleagues**メソッドを最初に呼び出すときに、 **GetFriendsAndColleagues**は、ソーシャルネットワーク上でログオンしているユーザーのフレンドを表す XML 文字列を返します。 xml 文字列は、フレンド xml **** スキーマ定義に準拠しており、各フレンドの**person**要素 (.osc プロバイダースキーマ定義にも準拠) を指定します。 
+OSC プロバイダーがソーシャル ネットワーク上の友人のキャッシュまたはハイブリッド同期をサポートしている場合、OSC は **GetFriendsAndColleagues** を呼び出します。 OSC が最初に、ソーシャル ネットワークにログオンしている Outlook ユーザーの **GetFriendsAndColleagues** メソッドを呼び出す場合 **、GetFriendsAndColleagues** は、ソーシャル ネットワーク上でログオンしているユーザーの友人を表す XML 文字列を返します。 XML 文字列はフレンド **XML** スキーマ定義に準拠し、各フレンドの person 要素 (OSC プロバイダー スキーマ定義にも準拠) を指定します。 
   
-**GetFriendsAndColleagues**がログオンユーザーのフレンド情報を返すと、.osc は連絡先フォルダーにその情報を格納します。 このフォルダーは、ソーシャルネットワークに固有のものであり、ログオンしているユーザーの既定の Outlook ストアに存在します。 .osc が連絡先フォルダー内のフレンド情報をキャッシュする方法の詳細については、「[友人とアクティビティを同期](synchronizing-friends-and-activities.md)する」を参照してください。
+**GetFriendsAndColleagues** がログオンしているユーザーのフレンド情報を返す場合、OSC は連絡先フォルダーにその情報を格納します。 このフォルダーはソーシャル ネットワークに固有のフォルダーで、ログオンしているユーザーの既定のユーザー ストアにOutlookされます。 OSC が連絡先フォルダーに友人の情報をキャッシュする方法の詳細については、「友人とアクティビティの同期」 [を参照してください](synchronizing-friends-and-activities.md)。
   
-個人_コレクション_パラメーターに返される各フレンドの情報は、 **person**の XML スキーマ定義に準拠しています。 **person**要素は、各フレンドの多くの情報 ( **emailAddress**、 **emailAddress2**、および**emailAddress3**要素にマップされる) をサポートしており、その中で友人が指定したソーシャルネットワークと、ソーシャルネットワーク上でその友人を識別するユーザー ID ( **userID**要素にマップされます)。 
+_personsCollection_ パラメーターで返される各フレンドの情報は、ユーザーの XML スキーマ定義に準拠 **しています**。 person要素は、フレンドがソーシャル ネットワークで指定した SMTP メール アドレス (emailAddress、emailAddress2、emailAddress3 要素にマップされる) や、ソーシャル ネットワーク上のそのフレンドを識別するユーザー ID **(userID** 要素にマップされる) など、各フレンドの多くの情報をサポートします。    
   
-[ユーザー] ウィンドウで選択された Outlook ユーザーのアクティビティを表示するために、.osc は、 **GetFriendsAndColleagues**から返された各フレンドに対してユーザーを照合しようとします。 .osc は、選択された Outlook ユーザーの SMTP アドレスを、各フレンドがソーシャルネットワーク上で指定した電子メールアドレスと照合することによって、これを行います。 一致する SMTP 電子メールアドレスを、.osc が検出した場合、.osc はフレンドの対応する**userID**を使用して、 [isocialsession:: getperson](isocialsession-getperson.md)メソッドを呼び出します。 これにより、そのフレンドの[isocial alperson](isocialpersoniunknown.md)オブジェクトが取得されます。これにより、.osc がその友人のアクティビティと画像をソーシャルネットワークから取得できるようになります。 
+ユーザー ウィンドウで選択された Outlook ユーザーのアクティビティを表示するには、OSC は **GetFriendsAndColleagues** から返された各フレンドとユーザーの一致を試行します。 OSC は、選択したユーザーの SMTP アドレスOutlook、各フレンドがソーシャル ネットワークで指定した電子メール アドレスと照合します。 OSC が一致する SMTP 電子メール アドレスを見つけた場合、OSC はフレンドの対応する **userID** を使用して [ISocialSession::GetPerson](isocialsession-getperson.md) メソッドを呼び出します。 これは、そのフレンドの [ISocialPerson](isocialpersoniunknown.md) オブジェクトを取得するために行います。これにより、OSC はソーシャル ネットワークからその友人のアクティビティと写真を取得できます。 
   
-ただし、選択した outlook ユーザーがソーシャルネットワーク上のアカウントで同じ SMTP アドレスを指定していない場合、または outlook ユーザーがそのソーシャルネットワークにアカウントを持っていない場合、そのユーザーに対して一致するものを検索することができず、activiti が表示されません。そのユーザーのソーシャルネットワーク上での es。
+ただし、選択した Outlook ユーザーがソーシャル ネットワーク上のアカウントで同じ SMTP アドレスを指定しない場合、または Outlook ユーザーがそのソーシャル ネットワーク上のアカウントを持ってない場合、OSC は、そのユーザーに一致する一致を見つけ、そのユーザーのアクティビティをソーシャル ネットワーク上に表示しません。
   
 ## <a name="see-also"></a>関連項目
 

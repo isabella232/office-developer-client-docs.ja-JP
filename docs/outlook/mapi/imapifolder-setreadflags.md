@@ -1,5 +1,5 @@
 ---
-title: imapifoldersetreadflags
+title: IMAPIFolderSetReadFlags
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -23,7 +23,7 @@ ms.locfileid: "33406914"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-1つ以上のフォルダーのメッセージの**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティの MSGFLAG_READ フラグを設定またはクリアし、閲覧レポートの送信を管理します。 
+**1** つ以上のフォルダーのメッセージの PR_MESSAGE_FLAGS ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティの MSGFLAG_READ フラグを設定またはクリアし、読み取りレポートの送信を管理します。 
   
 ```cpp
 HRESULT SetReadFlags(
@@ -36,49 +36,49 @@ HRESULT SetReadFlags(
 
 ## <a name="parameters"></a>パラメーター
 
-_lpmsglist_
+_lpMsgList_
   
-> 順番設定またはクリアする読み取りフラグがあるメッセージまたはメッセージを識別する[entrylist](entrylist.md)構造体の配列へのポインター。 _lpmsglist_が NULL に設定されている場合は、すべてのフォルダーのメッセージの読み取りフラグが設定またはクリアされます。 
+> [in]設定またはクリアする読み取りフラグを持つメッセージまたはメッセージを識別する [ENTRYLIST](entrylist.md) 構造体の配列へのポインター。 _lpMsgList が_ NULL に設定されている場合、フォルダーのすべてのメッセージの読み取りフラグが設定またはクリアされます。 
     
-_uluiparam_
+_ulUIParam_
   
-> 順番進行状況インジケーターの親ウィンドウへのハンドル。 _uluiparam_パラメーターは、 _ulflags_パラメーターで MESSAGE_DIALOG フラグが設定されていない場合は無視されます。 
+> [in]進行状況インジケーターの親ウィンドウへのハンドル。 _ulUIParam_ パラメーターは _、ulFlags_ パラメーター MESSAGE_DIALOGフラグが設定されていない限り、無視されます。 
     
-_lpprogress_
+_lpProgress_
   
-> 順番進行状況インジケーターを表示する progress オブジェクトへのポインター。 _lpprogress_で NULL が渡された場合、メッセージストアプロバイダーは MAPI の実装を使用して進行状況インジケーターを表示します。 MESSAGE_DIALOG フラグが_ulflags_で設定されていない場合、 _lpprogress_パラメーターは無視されます。
+> [in]進行状況インジケーターを表示する進行状況オブジェクトへのポインター。 _lpProgress_ で NULL が渡された場合、メッセージ ストア プロバイダーは MAPI の実装を使用して進行状況インジケーターを表示します。 _lpProgress パラメーター_ は _、ulFlags_ で MESSAGE_DIALOGフラグが設定されていない限り無視されます。
     
 _ulFlags_
   
-> 順番メッセージの読み取りフラグの設定と、閲覧レポートの処理を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]メッセージの読み取りフラグの設定と読み取りレポートの処理を制御するフラグのビットマスク。 次のフラグを設定できます。
     
-  - CLEAR_READ_FLAG: MSGFLAG_READ フラグを**PR_MESSAGE_FLAGS**でクリアし、閲覧レポートを送信しないようにする必要があります。 
+  - CLEAR_READ_FLAG: MSGFLAG_READフラグは、PR_MESSAGE_FLAGSでクリアする必要があります。また、読み取りレポートを送信する必要があります。 
         
-  - CLEAR_NRN_PENDING: MSGFLAG_NRN_PENDING フラグを**PR_MESSAGE_FLAGS**でクリアし、未開封のレポートを送信しないようにする必要があります。 
+  - CLEAR_NRN_PENDING: MSGFLAG_NRN_PENDINGフラグは、PR_MESSAGE_FLAGSでクリアする必要があります。未読レポートは送信されません。 
         
-  - CLEAR_RN_PENDING: MSGFLAG_RN_PENDING フラグを**PR_MESSAGE_FLAGS**でクリアし、閲覧レポートを送信しないようにする必要があります。 
+  - CLEAR_RN_PENDING: MSGFLAG_RN_PENDINGのチェック ボックスをオフPR_MESSAGE_FLAGS、読み取 **り** レポートを送信する必要があります。 
         
-  - GENERATE_RECEIPT_ONLY: 読み取りレポートは、保留中の場合は送信されますが、MSGFLAG_READ フラグの状態は変更されません。
+  - GENERATE_RECEIPT_ONLY: 保留中の場合は読み取りレポートを送信する必要がありますが、このフラグの状態に変更MSGFLAG_READがあります。
         
-  - MAPI_DEFERRED_ERRORS: 操作が完了する前に、 **setreadflags**が正常に返されることを許可します。 
+  - MAPI_DEFERRED_ERRORS: 操作が完了する前に **、SetReadFlags** を正常に返します。 
         
-  - MESSAGE_DIALOG: 操作が進行している間、進行状況のインジケーターを表示します。
+  - MESSAGE_DIALOG: 操作の実行中に進行状況インジケーターを表示します。
     
-  - SUPPRESS_RECEIPT: 読み取りレポートが要求されている場合は、保留中の読み取りレポートを取り消す必要があります。この呼び出しは、メッセージの状態を未読から読み取りに変更します。 この呼び出しでメッセージの状態が変更されない場合、メッセージストアプロバイダーはこのフラグを無視できます。
+  - SUPPRESS_RECEIPT: 読み取りレポートが要求され、この呼び出しによってメッセージの状態が未読から読み取りに変更された場合は、保留中の読み取りレポートを取り消す必要があります。 この呼び出しでメッセージの状態が変更されない場合、メッセージ ストア プロバイダーは、このフラグを無視できます。
     
 ## <a name="return-values"></a>戻り値
 
 S_OK 
   
-> 指定されたメッセージまたはメッセージの読み取りフラグが正常に設定またはクリアされました。
+> 指定したメッセージまたはメッセージの読み取りフラグが正常に設定またはクリアされました。
     
 MAPI_E_NO_SUPPRESS 
   
-> メッセージストアプロバイダーは、閲覧レポートの抑制をサポートしていません。
+> メッセージ ストア プロバイダーは、読み取りレポートの抑制をサポートしていない。
     
 MAPI_E_INVALID_PARAMETER 
   
-> 次のいずれかの互換性のないフラグの組み合わせが_ulflags_パラメーターで設定されています。 
+> ulFlags パラメーターでは、フラグの互換性のない組み合  _わせの 1 つが設定_ されています。 
     
    - SUPPRESS_RECEIPT |CLEAR_READ_FLAG 
     
@@ -88,59 +88,59 @@ MAPI_E_INVALID_PARAMETER
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> 呼び出しは成功しましたが、すべてのメッセージが正常に処理されませんでした。 この警告が返された場合、呼び出しは正常に処理されます。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
+> 呼び出しは成功しましたが、すべてのメッセージが正常に処理されたというのではありません。 この警告が返されると、呼び出しは正常に処理されます。 この警告をテストするには、次のマクロ **HR_FAILED** します。 詳細については、「Using [Macros for Error Handling 」を参照してください](using-macros-for-error-handling.md)。
     
 ## <a name="remarks"></a>注釈
 
-**imapifolder:: setreadflags**メソッドは、1つ以上のフォルダーのメッセージの**PR_MESSAGE_FLAGS**プロパティの MSGFLAG_READ フラグを設定またはクリアします。 MSGFLAG_READ フラグを設定すると、メッセージは開封済みとしてマークされます。これは、意図した受信者が実際にメッセージを読んでいることを示しているわけではありません。 
+**IMAPIFolder::SetReadFlags** メソッドは、1 つ以上のフォルダーのメッセージの PR_MESSAGE_FLAGS プロパティの **MSGFLAG_READ** フラグを設定またはクリアします。 メッセージフラグMSGFLAG_READ設定すると、メッセージは読み取りとしてマークされます。これは、必ずしも意図した受信者が実際にメッセージを読み取ったとは限りません。 
   
-**setreadflags**は、閲覧レポートの送信も管理します。 
+**SetReadFlags は、** 読み取りレポートの送信も管理します。 
   
-次の場合は、read フラグを変更できません。
+次の場合は、読み取りフラグを変更できません。
   
 - 存在しないメッセージ。
     
 - 他の場所に移動されたメッセージ。
     
-- 読み取り/書き込みアクセス許可で開いているメッセージ。
+- 読み取り/書き込み権限で開いているメッセージ。
     
 - 現在送信されているメッセージ。
     
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-閲覧レポートの送信と、閲覧レポートを抑制する要求をサポートしないことを決定できます。 読み取りレポートを抑制しないようにするには、 **setreadflags**が_ulflags_パラメーターに set SUPPRESS_RECEIPT を指定して呼び出されたときに、MAPI_E_NO_SUPPRESS を返します。 
+読み取りレポートの送信と、読み取りレポートを抑制する要求をサポートしない場合があります。 読み取りレポートを抑制しないようにするには _、ulFlags_ パラメーター MAPI_E_NO_SUPPRESS Set で **SetReadFlags** が呼び出SUPPRESS_RECEIPTを返します。 
   
-_lpmsglist_パラメーターが複数のメッセージをポイントしている場合は、メッセージごとに可能な限り完全に操作を実行します。 メモリが不足している、ディスクの空き領域が不足している、メッセージストアが破損しているなど、操作を途中で停止しないようにしてください。 
+_lpMsgList パラメーターが_ 複数のメッセージをポイントする場合は、メッセージごとに可能な限り完全に操作を実行します。 メモリの使い切れ、ディスク領域の使い切れ、メッセージ ストアの破損など、制御できないエラーが発生しない限り、操作を途中で停止しません。 
   
-_ulflags_パラメーターにどのフラグも設定されていない場合は、次のルールが適用されます。 
+_ulFlags_ パラメーターにフラグが設定されない場合は、次の規則が適用されます。 
   
-- MSGFLAG_READ が既に設定されている場合は、何も実行しません。
+- 既MSGFLAG_READ設定されている場合は、何も行いません。
     
-- MSGFLAG_READ が設定されていない場合は、直ちに設定して、 **PR_READ_RECEIPT_REQUESTED** ([PidTagReadReceiptRequested](pidtagreadreceiptrequested-canonical-property.md)) プロパティが設定されている場合は、保留中の読み取りレポートを送信します。
+- このMSGFLAG_READ設定されていない場合は、すぐに設定し **、PR_READ_RECEIPT_REQUESTED** ([PidTagReadReceiptRequested](pidtagreadreceiptrequested-canonical-property.md)) プロパティが設定されている場合は、保留中の読み取りレポートを送信します。
     
-SUPPRESS_RECEIPT フラグが設定されている場合は、次のルールが適用されます。
+このフラグSUPPRESS_RECEIPT設定すると、次のルールが適用されます。
   
-- MSGFLAG_READ が既に設定されている場合は、何も実行しません。 
+- 既MSGFLAG_READ設定されている場合は、何も行いません。 
     
-- MSGFLAG_READ が設定されていない場合は、設定し、保留中のすべての開封レポートを取り消します。
+- このMSGFLAG_READ設定されていない場合は、設定し、保留中の読み取りレポートを取り消します。
     
-CLEAR_READ_FLAG フラグが設定されている場合は、各メッセージの**PR_MESSAGE_FLAGS**プロパティの MSGFLAG_READ フラグをオフにして、読み取りレポートを送信しないようにします。 
+このフラグCLEAR_READ_FLAG設定されている場合は、各メッセージの MSGFLAG_READ プロパティの PR_MESSAGE_FLAGS フラグをクリアし、読み取りレポートを送信しない。 
   
-GENERATE_RECEIPT_ONLY フラグが設定されている場合は、保留中のすべての読み取りレポートを送信します。 MSGFLAG_READ を設定またはクリアしません。
+このフラグGENERATE_RECEIPT_ONLY設定されている場合は、保留中の読み取りレポートを送信します。 設定または削除を行MSGFLAG_READ。
   
-SUPPRESS_RECEIPT と GENERATE_RECEIPT_ONLY の両方のフラグが設定されている場合は、 **PR_READ_RECEIPT_REQUESTED**が設定されている場合は FALSE に設定し、閲覧レポートを送信しないようにします。 
+SUPPRESS_RECEIPTフラグと GENERATE_RECEIPT_ONLY フラグの両方が設定されている場合は、PR_READ_RECEIPT_REQUESTEDを FALSE に設定し、読み取りレポートを送信しない。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-これらの戻り値は、次の条件に当てはまることが予想されます。
+これらの戻り値は、次の条件下で期待してください。
   
 |**Condition**|**戻り値**|
 |:-----|:-----|
-|**setreadflags**は、すべてのメッセージを正常に処理しました。  <br/> |S_OK  <br/> |
-|**setreadflags**は、すべてのメッセージを正常に処理できませんでした。  <br/> |MAPI_W_PARTIAL_COMPLETION または MAPI_E_NOT_FOUND  <br/> |
-|**setreadflags**を完了できませんでした。  <br/> |MAPI_E_NOT_FOUND を除くすべてのエラー値  <br/> |
+|**SetReadFlags は** 、すべてのメッセージを正常に処理しました。  <br/> |S_OK  <br/> |
+|**SetReadFlags は** 、すべてのメッセージを正常に処理できなかった。  <br/> |MAPI_W_PARTIAL_COMPLETIONまたはMAPI_E_NOT_FOUND  <br/> |
+|**SetReadFlags** を完了できません。  <br/> |エラー以外のエラー MAPI_E_NOT_FOUND  <br/> |
    
-**setreadflags**が完了できない場合でも、作業が行われていないとは限りません。 **setreadflags**は、エラーが発生する前に、1つ以上のメッセージの MSGFLAG_READ フラグを設定またはクリアできた可能性があります。 
+**SetReadFlags を** 完了できない場合は、作業が完了していないと想定しません。 **エラーが発生する前に、SetReadFlags** が 1 つ以上のメッセージMSGFLAG_READフラグを設定またはクリアできた可能性があります。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -148,7 +148,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|folderdlg  <br/> |cfolderdlg:: OnSetReadFlag  <br/> |mfcmapi は、指定されたメッセージに対して、 **imapifolder:: setreadflags**メソッドを使用して、手動で読み取り状態を設定します。  <br/> |
+|FolderDlg.cpp  <br/> |CFolderDlg::OnSetReadFlag  <br/> |MFCMAPI は **IMAPIFolder::SetReadFlags** メソッドを使用して、指定されたメッセージの読み取り状態を手動で設定します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

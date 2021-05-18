@@ -25,14 +25,14 @@ ms.locfileid: "33405850"
   
 ## <a name="syntax"></a>構文
 
-pathlength (* * *section* * * * * *[, segment]* * *) 
+PATHLENGTH(** *section* ** ** *[,segment]* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _セクション_ <br/> |必須  <br/> |**String** <br/> |パスを表す [Geometry] セクション。[Path] セルへの参照によって指定されます (Geometry1.Path など)。  <br/> |
-| _化_ <br/> |省略可能  <br/> |**整数型 (Integer)** <br/> |測定するパスの 1 から始まるセグメント。  <br/> |
+| _segment_ <br/> |省略可能  <br/> |**整数型 (Integer)** <br/> |測定するパスの 1 から始まるセグメント。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
@@ -40,8 +40,8 @@ pathlength (* * *section* * * * * *[, segment]* * *)
   
 ## <a name="remarks"></a>注釈
 
-_セクション_または_セグメント_が存在しない場合は、#REF! が返されます。 
+セクション _または_ セグメント _が存在_ しない場合、Microsoft Visioが#REF! 
   
-_セグメント_値を指定すると、pathlength はそのセグメントの長さのみを返します。 
+セグメント値を含  _める場合_ 、PATHLENGTH はセグメントの長さを返します。 
   
 

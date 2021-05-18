@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm60017
 localization_priority: Normal
 ms.assetid: 29a7464a-b9d4-a8ea-161b-3044de32ed23
-description: ショートカットメニューまたはアクションタグメニューで、ユーザー設定のコマンドに関連付けられているアクションを指定するセルが含まれています。 [Actions] セクションには、各アクションごとに 1 つの [Actions] 行があります。
+description: ショートカットまたはアクション タグ メニューのカスタム コマンドに関連付けられたアクションを指定するセルを含む。 [Actions] セクションには、各アクションごとに 1 つの [Actions] 行があります。
 ms.openlocfilehash: 37464e98b3e4f7d07b2ae4bd391b31ec009b6726
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,31 +18,31 @@ ms.locfileid: "33408006"
 ---
 # <a name="actions-row-actions-section"></a>[Actions] 行 ([Actions] セクション)
 
-ショートカットメニューまたはアクションタグメニューで、ユーザー設定のコマンドに関連付けられているアクションを指定するセルが含まれています。 [Actions] セクションには、各アクションごとに 1 つの [Actions] 行があります。
+ショートカットまたはアクション タグ メニューのカスタム コマンドに関連付けられたアクションを指定するセルを含む。 [Actions] セクションには、各アクションごとに 1 つの [Actions] 行があります。
   
 > [!NOTE]
 > Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。 
   
-[Actions] 行の名前は Actions. 次のセルに*名前*とが含まれます。 詳細については、各セルに関連する項目を参照してください。 
+[Actions] 行の名前は Actions. *名前*  を指定し、次のセルを含む。 詳細については、各セルに関連する項目を参照してください。 
   
 |**Cell**|**説明**|
 |:-----|:-----|
 |[Action](action-cell-actions-section.md) <br/> |ショートカット メニューまたはアクション タグ メニューの項目を選択したときに実行される数式が格納されています。  <br/> |
-|[メニュー](menu-cell-actions-section.md) <br/> |アクションタグまたはショートカットメニューに表示されるメニュー項目の名前を定義します。  <br/> |
-|[[tagname]](tagname-cell-actions-section.md) <br/> |このアクションを表示するアクション タグの論理名を指定します。  <br/> |
-|[buttonface]](buttonface-cell-actions-section.md) <br/> |ショートカット メニューまたはアクション タグ メニューで、項目の横に表示されるアイコンを指定します。  <br/> |
-|[[sortkey]](sortkey-cell-actions-section.md) <br/> |アクション タグ メニューまたはショートカット メニューに表示されるメニュー項目の順序を指定するための数字です。  <br/> |
-|[Checked](checked-cell-actions-section.md) <br/> |アクションタグまたはショートカットメニューでメニュー項目がチェックされているかどうかを示します。  <br/> |
+|[メニュー](menu-cell-actions-section.md) <br/> |アクション タグまたはショートカット メニューに表示されるメニュー項目の名前を定義します。  <br/> |
+|[TagName](tagname-cell-actions-section.md) <br/> |このアクションを表示するアクション タグの論理名を指定します。  <br/> |
+|[ButtonFace](buttonface-cell-actions-section.md) <br/> |ショートカット メニューまたはアクション タグ メニューで、項目の横に表示されるアイコンを指定します。  <br/> |
+|[SortKey](sortkey-cell-actions-section.md) <br/> |アクション タグ メニューまたはショートカット メニューに表示されるメニュー項目の順序を指定するための数字です。  <br/> |
+|[Checked](checked-cell-actions-section.md) <br/> |アクション タグまたはショートカット メニューでメニュー項目をオンにするかどうかを示します。  <br/> |
 |[Disabled](disabled-cell-actions-section.md) <br/> |ショートカット メニューまたはアクション タグ メニューのメニュー項目が無効かどうかを示します。  <br/> |
 |[ReadOnly](readonly-cell-actions-section.md) <br/> |メニュー項目が読み取り専用 (クリックできない) かどうかを示します。  <br/> |
-|[可視](invisible-cell-actions-section.md) <br/> |アクション タグ メニューまたはショートカット メニューにメニュー項目が表示されるかどうかを示します。  <br/> |
-|[BeginGroup](begingroup-cell-actions-section.md) <br/> |メニュー項目の上に区切り記号を挿入するかどうかを指定します。  <br/> |
+|[非表示](invisible-cell-actions-section.md) <br/> |アクション タグ メニューまたはショートカット メニューにメニュー項目が表示されるかどうかを示します。  <br/> |
+|[BeginGroup](begingroup-cell-actions-section.md) <br/> |メニュー項目の上にある区切り記号をメニューに挿入するかどうかを示します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
- 必要に応じて [Actions.  必要に応じて行に*名前*を付け、わかりやすい名前を行に割り当て、セルの値を設定します。 既存の [Actions] セクションにカスタム コマンドを追加するには、行を右クリックして、ショートカット メニューの **[行の挿入]** をクリックします。 
+ 必要に応じて [Actions.  *必要に*  応じて行に名前を付け、行にわかりやすい名前を割り当て、セル値を設定します。 既存の [Actions] セクションにカスタム コマンドを追加するには、行を右クリックして、ショートカット メニューの **[行の挿入]** をクリックします。 
   
-これらのセルを行名で参照できます。これは、シェイプシートウィンドウに赤いテキストで表示されます。 アクションにわかりやすい名前を割り当てる。 [*名前*] 行をクリックし、[ *custom* ] などの名前を入力して、行名のアクションを作成します (例: custom)。 その後、[Actions] を使用して [menu] セルを参照できます。 
+これらのセルは行名で参照できます。これは、赤いテキストの ShapeSheet ウィンドウに表示されます。 アクションにわかりやすい名前を割り当てる。 *name* 行をクリックし、カスタムなどの名前を入力して、Actions.Custom という行名を作成します。  次に、Actions.Custom.Menu を使用して [メニュー] セルを参照できます。 
   
 入力する行名は、セクション内で一意の名前にする必要があります。
   

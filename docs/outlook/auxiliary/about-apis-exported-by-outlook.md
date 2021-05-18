@@ -30,7 +30,7 @@ ms.locfileid: "32316983"
     
 - [TZRULE](tzrule.md)
     
-### <a name="functions"></a>関数
+### <a name="functions"></a>Functions
   
 - [HrCreateApptRebaser](hrcreateapptrebaser.md)
     
@@ -48,7 +48,7 @@ ms.locfileid: "32316983"
   
 - [使用可能なイベントの dispid (Outlook エクスポート Api)](available-events-and-their-dispids-outlook-exported-apis.md)
     
-また、ディスパッチ識別子、 **dispidFDirty**および **dispidShowSenderPhoto**を使用して実現できます、次のタスク。
+また、ディスパッチ識別子、 **dispidFDirty** および **dispidShowSenderPhoto** を使用して実現できます、次のタスク。
   
 - [Outlook アイテムが変更されたが保存されていないかどうかを確認する (Outlook の補助リファレンス)](how-to-determine-if-outlook-item-has-been-modified-but-not-saved.md)
     

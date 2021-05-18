@@ -36,6 +36,6 @@ Microsoft Office アプリケーションがサポートしている言語の一
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowMisc** <br/> |
-| セル インデックス:  <br/> |**visobjlangid** <br/> |
+| セル インデックス:  <br/> |**visObjLangID** <br/> |
    
 

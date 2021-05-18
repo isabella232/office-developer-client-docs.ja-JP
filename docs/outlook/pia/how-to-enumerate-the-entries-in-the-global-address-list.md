@@ -25,7 +25,7 @@ ms.locfileid: "32320364"
 
 次のコード例では、[AddressEntry](https://msdn.microsoft.com/library/bb609728\(v=office.15\)) オブジェクトの SMTP アドレスを、 [GetExchangeUser()](https://msdn.microsoft.com/library/bb609574\(v=office.15\)) メソッドまたは [GetExchangeDistributionList()](https://msdn.microsoft.com/library/bb624320\(v=office.15\)) メソッドの呼び出しで [ExchangeUser](https://msdn.microsoft.com/library/bb645260\(v=office.15\)) オブジェクトまたは [ExchangeDistributionList](https://msdn.microsoft.com/library/bb611805\(v=office.15\)) オブジェクトにキャストすることで取得します。 **AddressEntry** オブジェクトが Exchange ユーザーを表している場合、EnumerateGAL は **AddressEntry** オブジェクトのプロパティを公開する **ExchangeUser** オブジェクトを返します。 これらを公開するには、[JobTitle](https://msdn.microsoft.com/library/bb645451\(v=office.15\))、[Department](https://msdn.microsoft.com/library/bb623789\(v=office.15\))、[Alias](https://msdn.microsoft.com/library/bb610682\(v=office.15\))、[BusinessTelephoneNumber](https://msdn.microsoft.com/library/bb612294\(v=office.15\))、[PrimarySmtpAddress](https://msdn.microsoft.com/library/bb645506\(v=office.15\)) などの ExchangeUser プロパティを使用します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

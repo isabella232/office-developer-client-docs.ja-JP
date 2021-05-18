@@ -31,7 +31,7 @@ ms.locfileid: "33406011"
   
 |||
 |:-----|:-----|
-|セル名 :  <br/> |[enablefillprops]  <br/> |
+|セル名 :  <br/> |EnableFillProps  <br/> |
    
 プログラムから、インデックスによって [EnableFillProps] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

@@ -8,7 +8,7 @@ f1_keywords:
 - vis_sdr.chm455
 localization_priority: Normal
 ms.assetid: 3b2991aa-4722-fe3b-39c5-02d38c4c7efc
-description: オブジェクトの枠の原点からオブジェクトを垂直方向へオフセットする距離を指定します。 既定値は 0 です。 [トリミング ツール] を使用してオブジェクトをパンすると、この値が変化します。
+description: オブジェクトの枠の原点からオブジェクトを垂直方向へオフセットする距離を指定します。既定値は 0 です。[トリミング ツール] を使用してオブジェクトをパンすると、この値が変化します。
 ms.openlocfilehash: 908972216a24370bc48990ddc99a36da9274d648
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -26,7 +26,7 @@ ms.locfileid: "33406739"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [imgoffsety]  <br/> |
+| セル名:  <br/> | ImgOffsetY  <br/> |
    
 プログラムから、インデックスによって [ImgOffsetY] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

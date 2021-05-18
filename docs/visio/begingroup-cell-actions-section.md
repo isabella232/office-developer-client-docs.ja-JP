@@ -31,14 +31,14 @@ ms.locfileid: "33407838"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |アクション. *名前*です。アクションを実行する begingroup。 *name* には [Actions] 行の名前を指定  <br/> |
+|セル名:  <br/> |アクション。 *name*.BeginGroup where Actions. *name* には [Actions] 行の名前を指定  <br/> |
    
 プログラムから、インデックスによって [BeginGroup] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionAction** <br/> |
-|行インデックス:  <br/> |**visRowAction** +  *i* = ** 0、1、2...  <br/> |
+|行インデックス:  <br/> |**visRowAction**  +  *i* *=* 0, 1, 2...  <br/> |
 |セル インデックス:  <br/> |**visActionBeginGroup** <br/> |
    
 

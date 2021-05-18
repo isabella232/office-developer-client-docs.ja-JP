@@ -25,11 +25,11 @@ ms.locfileid: "33407124"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定したサイズの複数の[FLATENTRY](flatentry.md)構造を含む新しい[FLATENTRYLIST](flatentrylist.md)構造に割り当てる必要があるバイト数を計算します。 
+指定したサイズのいくつかの[FLATENTRY](flatentry.md)構造体を含む新しい[FLATENTRYLIST](flatentrylist.md)構造体に割り当てるバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |**FLATENTRYLIST** <br/> |
    
 ```cpp
@@ -38,9 +38,9 @@ CbNewFLATENTRY (_cb)
 
 ## <a name="parameters"></a>パラメーター
 
- __cb_
+ _ _cb_
   
-> 新しい**FLATENTRYLIST**構造に含める、 **FLATENTRY**構造体のバイト数。 
+> 新しい **FLATENTRYLIST** 構造体に含める **FLATENTRY 構造体内のバイト数** 。 
     
 ## <a name="see-also"></a>関連項目
 

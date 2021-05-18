@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e5a94968-7e84-4faf-8104-9ea36d35fa1a
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: dfe3b57c246e247eda365bed46af2e0f35f0e54b
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,39 +25,39 @@ ms.locfileid: "32315387"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**PR_MESSAGE_DELIVERY_TIME** ([PidTagMessageDeliveryTime](pidtagmessagedeliverytime-canonical-property.md)) プロパティの値を知っているエージェントによって、 **dispidrequest** ([PidLidFlagRequest](pidlidflagrequest-canonical-property.md)) プロパティの値が設定されているかどうかを検証します。
+**dispidRequest** ([PidLidFlagRequest](pidlidflagrequest-canonical-property.md)) プロパティの値が **PR_MESSAGE_DELIVERY_TIME** ([PidTagMessageDeliveryTime](pidtagmessagedeliverytime-canonical-property.md)) プロパティの値を知っているエージェントによって設定されたかどうかを検証します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidvalidflagstringproof  <br/> |
-|プロパティセット:  <br/> |PSETID_Common  <br/> |
-|ロング ID (LID):  <br/> |0x000085bf  <br/> |
+|関連するプロパティ:  <br/> |dispidValidFlagStringProof  <br/> |
+|プロパティ セット:  <br/> |PSETID_Common  <br/> |
+|長い ID (LID):  <br/> |0x000085BF  <br/> |
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
 |エリア:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-送信可能以外のオブジェクト (受信メールオブジェクトとメール以外のオブジェクト) では、 **dispidrequest**を変更するときに、クライアントはこの値を**PR_MESSAGE_DELIVERY_TIME**の値に設定する必要があります。
+送信不可オブジェクト (受信メールオブジェクトとメール以外のオブジェクト) では、クライアントは **dispidRequest** を変更するときに、この値を PR_MESSAGE_DELIVERY_TIME に設定する必要があります。 
   
-**PR_MESSAGE_DELIVERY_TIME**の値を送信者が予測することはできないため、このプロパティの値が**PR_MESSAGE_DELIVERY_TIME**の値と等しい場合、 **dispidrequest**の値が次の値でないことが合理的であることを示します。メッセージの送信者から発信されます。 クライアントは、クライアントの特定のセキュリティポリシーに従って、この比較の結果に基づいて、 **dispidrequest**の値をエンドユーザーに提示する方法を決定することができます。 **dispidflagstringenum** ([PidLidFlagString](pidlidflagstring-canonical-property.md)) の値が存在するために**dispidrequest**の値が無視される場合、このプロパティは無視する必要があります。
+**PR_MESSAGE_DELIVERY_TIME** の値は送信者によって予測できないので、このプロパティの値が **PR_MESSAGE_DELIVERY_TIME** の値と等しい場合 **、dispidRequest** の値がメッセージの送信者から発生しなかったのは合理的に確実です。 クライアントは、クライアントの特定のセキュリティ ポリシーに従って、この比較の結果に基づいて **、dispidRequest** の値をエンド ユーザーに提示する方法を決定できます。 **dispidFlagStringEnum** ([PidLidFlagString)](pidlidflagstring-canonical-property.md)の値が存在するために **dispidRequest** の値が無視される場合は、このプロパティを無視する必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
-[[OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
+[[MS-OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
   
 > フラグに関連するプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
 ## <a name="see-also"></a>関連項目
 
@@ -70,7 +70,7 @@ mapidefs.h
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

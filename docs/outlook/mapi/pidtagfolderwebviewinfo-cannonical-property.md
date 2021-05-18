@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 96ea23df-aa4f-4b3e-9663-e7db39f668c1
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 70932e703511235e9f5e32efd95b18d1b66494e2
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32316311"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Microsoft Outlook のフォルダーのホームページの URL が保存されています。 このプロパティには、 **WebViewPersistenceObject**と呼ばれるバイナリストリームが含まれています。
+Microsoft のフォルダーのホーム ページの URL が含Outlook。 このプロパティには **、WebViewPersistenceObject というバイナリ ストリームが含まれます**。
   
 |||
 |:-----|:-----|
@@ -34,28 +34,28 @@ Microsoft Outlook のフォルダーのホームページの URL が保存され
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |MAPI フォルダー  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-ホームページの URL は任意の Outlook フォルダーに指定できます。 この情報には、Outlook でフォルダーの [プロパティ] ダイアログボックスの [**ホームページ**] タブからアクセスできます。 
+ホーム ページの URL は、任意のフォルダーにOutlookできます。 この情報は、フォルダー Outlook [プロパティ] ダイアログ ボックスの **[** ホーム ページ] タブからアクセスできます。 
   
-特定のポリシー設定によっては、ホームページが Outlook で無視されることがあります。このフォルダーを含む MAPI ストアでは、 [imscapabilities:: getcapabilities](pidtagfolderwebviewinfo-cannonical-property.md)実装の MSCAP_SECURE_FOLDER_HOMEPAGES が報告されない場合があります。 
+特定のポリシー設定によっては、このフォルダーを含む MAPI ストアが[IMSCapabilities::GetCapabilities](pidtagfolderwebviewinfo-cannonical-property.md)実装で MSCAP_SECURE_FOLDER_HOMEPAGES を報告しない場合、ホーム ページは Outlook によって無視される場合があります。 
   
-**Outlook Today**フォルダーとパブリックフォルダーの両方に、ホームページの url を設定できます。 ただし、 **Outlook Today**フォルダーでは、ホームページの URL を管理するために別のメカニズムを使用しています。このトピックでは、このメカニズムについては説明しません。 パブリックフォルダーには、ユーザーに固有のホームページの URL が定義されている場合もあります。 ただし、このトピックではこの機能については説明しません。 
+[今日 **Outlook]フォルダー** とパブリック フォルダーの両方に、ホーム ページの URL を設定できます。 ただし **、Outlook Today** フォルダーは、別のメカニズムを使用してホーム ページの URL を管理します。このメカニズムについては、このトピックでは説明しない。 パブリック フォルダーには、ユーザーに固有のホーム ページ URL が定義されている場合があります。 ただし、この機能については、このトピックでは説明していない。 
   
-このプロパティの値は、 **WebViewPersistenceObject**と呼ばれるバイナリストリームです。
+このプロパティの値は **、WebViewPersistenceObject というバイナリ ストリームです**。
   
-### <a name="webviewpersistenceobject-stream-structure"></a>WebViewPersistenceObject Stream 構造
+### <a name="webviewpersistenceobject-stream-structure"></a>WebViewPersistenceObject ストリーム構造
 
-**WebViewPersistenceObject** stream 構造には、フォルダーのホームページの URL に関する情報が含まれています。 
+**WebViewPersistenceObject ストリーム** 構造には、フォルダーのホーム ページ URL に関する情報が含まれます。 
   
-この構造体の Data 要素は、次の指定された順序で、すぐに、リトルエンディアンバイト順に格納されます。 
+この構造体のデータ要素は、次の指定された順序で、お客様の直後に、リトル エンドのバイト順に格納されます。 
   
 > [!NOTE]
-> 次の説明では、Outlook でサポートされているすべてのフィールド値が一覧表示されない場合があります。そのため、コードで既存のストリームを読み取る場合、ここに記載されていないフラグも検索されることがあります。 ただし、この説明を使用して、Outlook が認識する**PidTagFolderWebViewInfo**プロパティの値をプログラムで作成することができます。 
+> 次の説明では、ユーザーがサポートするフィールド値の一覧Outlook。したがって、コードが既存のストリームを読み取る場合、ここにリストされていないフラグも見つかる可能性があります。 ただし、この説明を使用すると、プログラムで理解できる **PidTagFolderWebViewInfo** プロパティOutlook作成できます。 
   
- _dwversion_
+ _dwVersion_
   
-> DWORD (4 バイト)。 構造体の形式のバージョン。 Microsoft Office Outlook 2007 の場合、このフィールドでサポートされている値は次のとおりです。
+> DWORD (4 バイト)。 構造の形式のバージョン。 2007 Microsoft Office Outlook現在、このフィールドでサポートされている唯一の値は次のとおりです。
     
 |**値の名前**|**値**|
 |:-----|:-----|
@@ -63,7 +63,7 @@ Microsoft Outlook のフォルダーのホームページの URL が保存され
    
  _dwType_
   
-> DWORD (4 バイト)。 ホームページ情報の種類を示します。 Microsoft Office Outlook 2007 の場合、このフィールドでサポートされている値は次のとおりです。
+> DWORD (4 バイト)。 ホーム ページ情報の種類。 2007 Microsoft Office Outlook現在、このフィールドでサポートされている唯一の値は次のとおりです。
     
 |**値の名前**|**値**|
 |:-----|:-----|
@@ -71,33 +71,33 @@ Microsoft Outlook のフォルダーのホームページの URL が保存され
    
  _dwFlags_
   
-> DWORD (4 バイト)。 次の表に、値と意味を含む0個以上のフラグの組み合わせを示します。
+> DWORD (4 バイト)。 次の表に、値と意味を持つ 0 個以上のフラグの組み合わせ。
     
-|フラグ名 * * * *|****値****|****説明****|
+|フラグ名****|****値****|****説明****|
 |:-----|:-----|:-----|
-|WEBVIEW_FLAGS_SHOWBYDEFAULT  <br/> |0x00000001  <br/> |フォルダーの [プロパティ] ダイアログボックスの [**ホームページ**] タブで、[**このフォルダーに既定でホームページを表示**する] チェックボックスがオンになっています。  <br/> |
+|WEBVIEW_FLAGS_SHOWBYDEFAULT  <br/> |0x00000001  <br/> |[**このフォルダーのホーム ページ** を既定で表示する] チェックボックスは、フォルダーの [プロパティ] ダイアログ ボックスの [ホーム ページ] タブでオンになっています。  <br/> |
    
- _dwunused [7]_
+ _dwUnused[7]_
   
-> 7個の DWORD 要素の配列 (合計28バイト)。 使用.
+> 7 DWORD 要素の配列 (合計 28 バイト)。 未使用。
     
-cbdata
+cbData
   
-> ULONG (4 バイト)。 _wzURL_ data 要素のサイズ (バイト単位)。 
+> ULONG (4 バイト)。 _wzURL_ データ要素のサイズ (バイト単位)。 
     
  _wzURL_
   
-> WCHAR 要素の配列。 0で終了したホームページの URL 文字列の utf-16 表現。
+> WCHAR 要素の配列。 終了ゼロのホーム ページ URL 文字列の UTF-16 表記。
     
-### <a name="webviewpersistenceobject-stream-sample"></a>WebViewPersistenceObject Stream サンプル
+### <a name="webviewpersistenceobject-stream-sample"></a>WebViewPersistenceObject ストリームのサンプル
 
-このセクションでは、 **WebViewPersistenceObject**ストリームの例について説明します。 ストリームは、ホームページの URL "https://www.microsoft.com" を指定します。 
+このセクションでは **、WebViewPersistenceObject ストリームの例について説明** します。 ストリームは、ホーム ページの URL " を指定 https://www.microsoft.com します。 
   
- **データダンプ**
+ **データ ダンプ**
   
-次に示すのは、バイナリエディターに表示されるストリームのデータダンプです。
+バイナリ エディターに表示されるストリームのデータ ダンプを次に示します。
   
-|**ストリームオフセット**|**データバイト**|**ASCII データ**|
+|**ストリーム のオフセット**|**データ バイト**|**ASCII データ**|
 |:-----|:-----|:-----|
 |0000000000  <br/> | `02 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00` <br/> | `?...?...?.......` <br/> |
 |0000000010  <br/> | `00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00` <br/> | `................` <br/> |
@@ -106,30 +106,30 @@ cbdata
 |0000000040  <br/> | `2E 00 6D 00 69 00 63 00 72 00 6F 00 73 00 6F 00` <br/> | `..m.i.c.r.o.s.o.` <br/> |
 |0000000050  <br/> | `66 00 74 00 2E 00 63 00 6F 00 6D 00 00 00` <br/> | `f.t...c.o.m...` <br/> |
    
-以下に、 **WebViewPersistenceObject**ストリームのサンプルデータの解析を示します。 
+**WebViewPersistenceObject** ストリームのサンプル データの解析を次に示します。 
   
- _dwversion_
+ _dwVersion_
   
-> Offset 0x0、4バイト: 0x00000002 (WEBVIEW_PERSISTENCE_VERSION)。
+> オフセット0x0 4 バイト: 0x00000002 (WEBVIEW_PERSISTENCE_VERSION)。
     
  _dwType_
   
-> オフセット0x4、4バイト: 0x00000001 (webviewurl)。
+> オフセット0x4 4 バイト: 0x00000001 (WEBVIEWURL)。
     
  _dwFlags_
   
-> オフセット0x8、4バイト: 0x00000001 (WEBVIEW_FLAGS_SHOWBYDEFAULT)。
+> オフセット0x8 4 バイト: 0x00000001 (WEBVIEW_FLAGS_SHOWBYDEFAULT)。
     
- _dwunused [7]_
+ _dwUnused[7]_
   
-> Offset 0xC, 28 バイト: すべて0。
+> オフセット0xC 28 バイト: すべてのゼロ。
     
- _cbdata_
+ _cbData_
   
-> オフセット0x28、4バイト: 0x00000032。
+> オフセット0x28、4 バイト: 0x00000032。
     
  _wzURL_
   
-> Offset 0x2C、0x32 バイト:25 wchars の配列。 Unicode の0で終わる文字列値: "https://www.microsoft.com"。
+> オフセット0x2C、0x32バイト: 25 WCHARs の配列。 Unicode のゼロ終端文字列値: " https://www.microsoft.com ".
     
 

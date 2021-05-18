@@ -25,11 +25,11 @@ ms.locfileid: "33408440"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-既存の[FLATENTRYLIST](flatentrylist.md)構造体のバイト数を計算します。 
+既存の [FLATENTRYLIST](flatentrylist.md) 構造体のバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |**FLATENTRYLIST** <br/> |
    
 ```cpp
@@ -38,9 +38,9 @@ CbFLATENTRYLIST(_lplist)
 
 ## <a name="parameters"></a>パラメーター
 
- __lplist_
+ _ _lplist_
   
-> 対象の**FLATENTRYLIST**構造体へのポインター。 
+> 問題の **FLATENTRYLIST** 構造体へのポインター。 
     
 ## <a name="see-also"></a>関連項目
 

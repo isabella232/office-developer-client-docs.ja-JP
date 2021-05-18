@@ -30,14 +30,14 @@ ms.locfileid: "33406592"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[asianfont] [ *i* ] *i* = <1>、2、3...  <br/> |
+|セル名:  <br/> |Char.AsianFont[ i ]*ここで**、i* = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [AsianFont] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionCharacter** <br/> |
-|行インデックス:  <br/> |**visRowCharacter** +  *i* = ** 0、1、2...  <br/> |
+|行インデックス:  <br/> |**visRowCharacter**  +  *i* *=* 0, 1, 2...  <br/> |
 |セル インデックス:  <br/> |**visCharacterAsianFont** <br/> |
    
 

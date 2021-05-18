@@ -25,7 +25,7 @@ ms.locfileid: "33406151"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルに対して現在進行中のすべての非同期操作を停止します。
+テーブルの現在進行中の非同期操作を停止します。
   
 ```cpp
 HRESULT Abort( void );
@@ -39,23 +39,23 @@ HRESULT Abort( void );
 
 S_OK 
   
-> 1つ以上の非同期操作が停止されています。
+> 1 つ以上の非同期操作が停止しました。
     
 MAPI_E_UNABLE_TO_ABORT 
   
-> 非同期操作が進行中で、停止できないか、既に完了しています。
+> 非同期操作は進行中で、停止できないか、既に完了しています。
     
 ## <a name="remarks"></a>注釈
 
-**IMAPITable:: Abort**メソッドは、現在進行中のすべての非同期操作を停止します。 
+**IMAPITable::Abort** メソッドは、現在進行中の非同期操作を停止します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-非同期操作が進行中かどうかを確認するには、 [IMAPITable:: GetStatus](imapitable-getstatus.md)メソッドを呼び出します。 
+非同期操作が進行中の場合は [、IMAPITable::GetStatus メソッドを呼び出](imapitable-getstatus.md) します。 
   
-**中止**すると、 [IMAPITable:: Restrict](imapitable-restrict.md)メソッドへの呼び出しの処理が停止した場合、テーブルの状態は**abort**呼び出しが処理された時点の状態になります。 
+Abort **が** [IMAPITable::Restrict](imapitable-restrict.md)メソッドへの呼び出しの処理を停止すると、テーブルの状態は Abort 呼び出しが処理された時点と同じになります。 
   
-**中止**すると、 [IMAPITable:: sorttable](imapitable-sorttable.md)メソッドへの呼び出しの処理が停止した場合、テーブルの並べ替え順序は影響を受けず、 **sorttable**呼び出しの前と同じ状態になります。 
+Abort **が** [IMAPITable::SortTable](imapitable-sorttable.md) メソッドの呼び出しの処理を停止すると、テーブルの並べ替え順序は影響を受けず **、SortTable** 呼び出しの前と同じままです。 
   
 ## <a name="see-also"></a>関連項目
 

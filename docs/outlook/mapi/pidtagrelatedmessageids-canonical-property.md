@@ -25,30 +25,30 @@ ms.locfileid: "33406053"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージに関連付けられているメッセージの識別子の一覧が含まれています。
+メッセージが関連付けされているメッセージの識別子の一覧が含まれます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_RELATED_IPMS  <br/> |
-|識別子:  <br/> |0x002d  <br/> |
+|識別子:  <br/> |0x002D  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |MAPI エンベロープ  <br/> |
+|エリア:  <br/> |MAPI 封筒  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-識別子は、 **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) プロパティで使用されているものと同じ特定の構築規則を使用します。
+識別子は、プロパティ ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) プロパティで使用されるのと同PR_SEARCH_KEY特定 **の** 構築ルールを使用します。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -58,7 +58,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -1,5 +1,5 @@
 ---
-title: より大きい (Access カスタム web アプリ)
+title: より大きい (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33407740"
 ---
-# <a name="greater-than-access-custom-web-app"></a>より大きい (Access カスタム web アプリ)
+# <a name="greater-than-access-custom-web-app"></a>より大きい (Access カスタム Web アプリ)
 
 2 つの式を比較します。null 以外の式を比較したときに、左のオペランドに右のオペランドよりも大きい値が含まれる場合、結果は TRUE になり、それ以外の場合、結果は FALSE になります。
   

@@ -15,7 +15,7 @@ ms.locfileid: "32317500"
 ---
 # <a name="ifreebusydata"></a>IFreeBusyData
 
-特定のユーザーについて、時間範囲を取得および設定し、この時間範囲内のデータの空き時間ブロックを列挙するためのインターフェイスを返します。
+特定のユーザーの場合は、時間範囲を取得して設定し、この時間範囲内のデータの空き時間情報ブロックを列挙するインターフェイスを返します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -25,23 +25,23 @@ ms.locfileid: "32317500"
 |提供元:  <br/> |空き時間情報プロバイダー  <br/> |
 |インターフェイス識別子:  <br/> |IID_IFreeBusyData  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[Placeholder1](ifreebusydata-placeholder1.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[enumblocks](ifreebusydata-enumblocks.md) <br/> |指定した時間範囲内のユーザーのデータの空き時間ブロックを列挙するインターフェイスを取得します。  <br/> |
-|[Placeholder2](ifreebusydata-placeholder2.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder3](ifreebusydata-placeholder3.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder4](ifreebusydata-placeholder4.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder5](ifreebusydata-placeholder5.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[setfbrange アウト](ifreebusydata-setfbrange.md) <br/> |ユーザーのデータの空き時間ブロックの列挙時間の範囲を設定します。  <br/> |
-|[Placeholder6](ifreebusydata-placeholder6.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[getfbpublishrange](ifreebusydata-getfbpublishrange.md) <br/> |ユーザーのデータの空き時間ブロックの列挙の事前設定の時間範囲を取得します。  <br/> |
+|[プレースホルダー 1](ifreebusydata-placeholder1.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[EnumBlocks](ifreebusydata-enumblocks.md) <br/> |指定した時間範囲内のユーザーのデータの空き時間情報ブロックを列挙するインターフェイスを取得します。  <br/> |
+|[プレースホルダー 2](ifreebusydata-placeholder2.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー 3](ifreebusydata-placeholder3.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー 4](ifreebusydata-placeholder4.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー 5](ifreebusydata-placeholder5.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[SetFBRange](ifreebusydata-setfbrange.md) <br/> |ユーザーのデータの空き時間情報ブロックの列挙の時間範囲を設定します。  <br/> |
+|[プレースホルダー 6](ifreebusydata-placeholder6.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[GetFBPublishRange](ifreebusydata-getfbpublishrange.md) <br/> |ユーザーのデータの空き時間情報ブロックの列挙の事前設定された時間範囲を取得します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このインターフェイスのメンバーのほとんどは、Outlook の内部使用のために予約されたプレースホルダーであり、変更される可能性があります。 空き時間情報プロバイダーは、指定された値のみを実装する必要があり、指定された戻り値のみを返します。
+このインターフェイスのメンバーの大部分は、内部で使用するために予約されたプレースホルダーであり、Outlook変更される場合があります。 空き時間情報プロバイダーは、指定した戻り値のみを返す、指定しただけ実装する必要があります。
   
 ## <a name="see-also"></a>関連項目
 

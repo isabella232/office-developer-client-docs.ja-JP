@@ -25,7 +25,7 @@ ms.locfileid: "33407383"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージサービスをプロファイルから削除します。
+プロファイルからメッセージ サービスを削除します。
   
 ```cpp
 HRESULT DeleteMsgService(
@@ -37,35 +37,35 @@ HRESULT DeleteMsgService(
 
  _lpuid_
   
-> 順番削除するメッセージサービスの一意の識別子を含む[MAPIUID](mapiuid.md)構造体へのポインター。 
+> [in]削除するメッセージ サービスの一意の識別子を含む [MAPIUID](mapiuid.md) 構造体へのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> メッセージサービスが削除されました。
+> メッセージ サービスが削除されました。
     
 MAPI_E_NOT_FOUND 
   
-> _lpuid_が指す**MAPIUID**が、既存のメッセージサービスと一致しません。 
+> **lpuid が** 指す _MAPIUID_ は、既存のメッセージ サービスと一致しません。 
     
 ## <a name="remarks"></a>注釈
 
-**IMsgServiceAdmin::D eletemsgservice**メソッドは、プロファイルからメッセージサービスを削除します。 **DeleteMsgService**は、メッセージサービスに関連するすべてのプロファイルセクションを削除します。 
+**IMsgServiceAdmin::D eleteMsgService** メソッドは、プロファイルからメッセージ サービスを削除します。 **DeleteMsgService** は、メッセージ サービスに関連するすべてのプロファイル セクションを削除します。 
   
- **DeleteMsgService**は、次の手順を実行して、メッセージサービスを削除します。 
+ **DeleteMsgService は** 、次の手順を実行してメッセージ サービスを削除します。 
   
-1. _ulcontext_パラメーターを MSG_SERVICE_DELETE に設定してメッセージサービスのエントリポイント関数を呼び出して、プロファイルセクションが削除されるようにします。 これにより、サービスはサービス固有のタスクを実行できるようになります。 
+1. プロファイル セクションが削除される前に  _、ulContext_ パラメーターが MSG_SERVICE_DELETEメッセージ サービスのエントリ ポイント関数を呼び出します。 これにより、サービスはサービス固有のタスクを実行できます。 
     
-2. メッセージサービスを削除します。
+2. メッセージ サービスを削除します。
     
-3. メッセージサービスのプロファイルセクションを削除します。
+3. メッセージ サービスのプロファイル セクションを削除します。
     
-サービスが削除された後、メッセージサービスのエントリポイント関数が再度呼び出されることはありません。
+メッセージ サービスのエントリ ポイント関数は、サービスが削除された後に再度呼び出されません。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-削除するメッセージサービスの**MAPIUID**構造を取得するには、メッセージサービステーブルのメッセージサービスの行から**PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) プロパティ列を取得します。 詳細については、 [IMsgServiceAdmin:: CreateMsgService](imsgserviceadmin-createmsgservice.md)メソッドに記載されている手順を参照してください。 
+削除するメッセージ サービスの **MAPIUID** 構造を取得するには、メッセージ サービス テーブルのメッセージ サービスの行から **PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) プロパティ列を取得します。 詳細については [、「IMsgServiceAdmin::CreateMsgService メソッド」で説明されている手順を参照](imsgserviceadmin-createmsgservice.md) してください。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -73,7 +73,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MsgServiceTableDlg  <br/> |CMsgServiceTableDlg:: OnDeleteSelectedItem  <br/> |mfcmapi は、 **IMsgServiceAdmin::D eletemsgservice**メソッドを使用して、選択されているサービスを削除します。  <br/> |
+|MsgServiceTableDlg.cpp  <br/> |CMsgServiceTableDlg::OnDeleteSelectedItem  <br/> |MFCMAPI は **、IMsgServiceAdmin::D eleteMsgService** メソッドを使用して、選択したサービスを削除します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

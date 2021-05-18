@@ -28,14 +28,14 @@ ms.locfileid: "33408174"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | 接続 D [ *i* ] *i* = <1>、2、3...  <br/> |
+| セル名:  <br/> | Connections.D[  *i*  ] ここで  *、i*  = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [D] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
-| セクション インデックス:  <br/> |**持つ vissectionconnectionpts** <br/> |
-| 行インデックス:  <br/> |**visRowConnectionPts** +  *i* = ** 0、1、2...  <br/> |
+| セクション インデックス:  <br/> |**visSectionConnectionPts** <br/> |
+| 行インデックス:  <br/> |**visRowConnectionPts**  +  *i* *=* 0, 1, 2...  <br/> |
 | セル インデックス:  <br/> |**visCnnctD** <br/> |
    
 

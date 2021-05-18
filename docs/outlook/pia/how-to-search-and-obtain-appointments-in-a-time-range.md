@@ -57,8 +57,8 @@ string filter = "[Start] >= '"
 C\# では、Jet フィルターを次のように表現できます。
 
 ```csharp
-string filter = "[Start] <= '"
-    + endTime.ToString("g")
+string filter = "[Start] <= '&quot;
+    + endTime.ToString(&quot;g")
     + "' AND [End] >= '"
     + startTime.ToString("g") + "'";
 ```

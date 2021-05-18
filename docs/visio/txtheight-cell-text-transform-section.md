@@ -8,7 +8,7 @@ f1_keywords:
 - vis_sdr.chm1025
 localization_priority: Normal
 ms.assetid: cfa3ecc6-61a8-506c-ba1d-b5e1f757d44f
-description: テキスト ブロックの高さを指定します。 既定の数式は次のとおりです。
+description: テキスト ブロックの高さを指定します。既定の数式は次のとおりです。
 ms.openlocfilehash: 8ad17cdf1deca6c4aa81f3388d7c112b4e179e2f
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,9 +18,9 @@ ms.locfileid: "33409308"
 ---
 # <a name="txtheight-cell-text-transform-section"></a>[TxtHeight] セル ([Text Transform] セクション)
 
-テキスト ブロックの高さを指定します。 既定の数式は次のとおりです。
+テキスト ブロックの高さを指定します。既定の数式は次のとおりです。
   
-= 高さ\* 1
+= 高 \* さ 1
   
 ## <a name="remarks"></a>注釈
 
@@ -28,7 +28,7 @@ ms.locfileid: "33409308"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [txtheight]  <br/> |
+| セル名 :  <br/> | TxtHeight  <br/> |
    
 プログラムから、インデックスによって [TxtHeight] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

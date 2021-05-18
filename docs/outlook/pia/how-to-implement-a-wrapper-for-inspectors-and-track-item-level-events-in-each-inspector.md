@@ -23,9 +23,9 @@ ms.locfileid: "32320126"
 > [!NOTE] 
 > 次のコード サンプルは、『[Programming Applications for Microsoft Office Outlook 2007](https://www.amazon.com/gp/product/0735622493?ie=UTF8&tag=msmsdn-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0735622493)』からの抜粋です。
 
-次の 2 つのコード例では、Connect クラスと OutlookInspector クラスの実装を行います。 1 番目のコード例では **インスペクター** コレクションにラッパーを実装するために、ユーザーが Connect クラスに格納したメソッドとイベント ハンドラーを使用します。 2 番目のコード例では、単純に**OutlookInspector** クラスを実装します。
+次の 2 つのコード例では、Connect クラスと OutlookInspector クラスの実装を行います。 1 番目のコード例では **インスペクター** コレクションにラッパーを実装するために、ユーザーが Connect クラスに格納したメソッドとイベント ハンドラーを使用します。 2 番目のコード例では、単純に **OutlookInspector** クラスを実装します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

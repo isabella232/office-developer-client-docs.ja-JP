@@ -30,11 +30,11 @@ HRESULT BeginEnumerateAppointments(
 
 ## <a name="parameters"></a>パラメーター
 
-_pfnprogress_
+_pfnProgress_
   
 > [in]省略可能です。進行状況が表示されることを再作業の進行状況関数へのポインター。 **PFNREBASETASKPROGRESS** は、tzmovelib.h で定義されます。 
     
-_ppcontext_
+_ppContext_
   
 > [out]必要があります。返されるコンテキストへのポインターへのポインター。このコンテキストは、 [IOlkApptRebaser::EndEnumerateAppointments](iolkapptrebaser-endenumerateappointments.md)に渡されます。
     

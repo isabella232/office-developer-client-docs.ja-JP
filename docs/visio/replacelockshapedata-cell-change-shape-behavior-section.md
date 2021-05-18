@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6a089266-7b19-4310-8cb5-4373ea3b2d64
-description: マスター シェイプ内の指定したセルの値が、図形の置換操作中に置換される値 (ローカル値を含む) に優先するかどうかを示します。 ReplaceLockShapeData は、マスター シェイプの図形データが、置換される図形の図形データすべてに優先するかどうかを決定します。
+description: マスター シェイプ内の指定したセルの値が、図形の置換操作中に置換される値 (ローカル値を含む) に優先するかどうかを示します。ReplaceLockShapeData は、マスター シェイプの図形データが、置換される図形の図形データすべてに優先するかどうかを決定します。
 ms.openlocfilehash: d2349da96bde7d141aada9066d56a4379f425fee
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33408874"
 ---
 # <a name="replacelockshapedata-cell-change-shape-behavior-section"></a>[ReplaceLockShapeData] セル ([図形の動作の変更] セクション)
 
-マスター シェイプ内の指定したセルの値が、図形の置換操作中に置換される値 (ローカル値を含む) に優先するかどうかを示します。 **ReplaceLockShapeData** は、マスター シェイプの図形データが、置換される図形の図形データすべてに優先するかどうかを決定します。 
+マスター シェイプ内の指定したセルの値が、図形の置換操作中に置換される値 (ローカル値を含む) に優先するかどうかを示します。**ReplaceLockShapeData** は、マスター シェイプの図形データが、置換される図形の図形データすべてに優先するかどうかを決定します。 
   
 |**値**|**説明**|
 |:-----|:-----|
@@ -29,7 +29,7 @@ ms.locfileid: "33408874"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [replacelockshapedata]  <br/> |
+| セル名:  <br/> | ReplaceLockShapeData  <br/> |
    
 プログラムから、インデックスによって [**ReplaceLockShapeData**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

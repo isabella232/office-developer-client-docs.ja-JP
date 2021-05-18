@@ -5,7 +5,7 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 364bc5fd-2199-0bb2-142b-9b3b686b2268
-description: '最終更新日: 2012 年7月2日'
+description: '最終更新日: 2012 年 7 月 2 日'
 ms.openlocfilehash: 96f472d67f144a451046ff61a3ed6c6ff2ff9acf
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -17,19 +17,19 @@ ms.locfileid: "33408987"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ラップされた pst ストアプロバイダーに MAPI をログオンするには、その前に、ラップされた個人用フォルダーファイル (PST) ストアプロバイダーを初期化して構成する必要があります。 詳細については、「ラップされ[た PST ストアプロバイダーの初期化](initializing-a-wrapped-pst-store-provider.md)」を参照してください。
+ラップされた PST ストア プロバイダーに MAPI をログオンする前に、ラップされた個人用フォルダー ファイル (PST) ストア プロバイダーを初期化して構成する必要があります。 詳細については、「ラップされた PST ストア [プロバイダーの初期化」を参照してください](initializing-a-wrapped-pst-store-provider.md)。
   
-ラップされた PST ストアプロバイダーを初期化して構成した後、2つのログオンルーチンを実装する必要があります。 **[IMSProvider:: Logon](imsprovider-logon.md)** 関数は、ラップされた PST ストアプロバイダーに MAPI 上でログ記録します。 **[IMSProvider:: SpoolerLogon](imsprovider-spoolerlogon.md)** 関数は、MAPI スプーラーで、ラップされた PST ストアプロバイダーへのログを記録します。 
+ラップされた PST ストア プロバイダーを初期化して構成した後、2 つのログオン ルーチンを実装する必要があります。 **[IMSProvider::Logon 関数は](imsprovider-logon.md)**、MAPI でラップされた PST ストア プロバイダーにログを記録します。 **[IMSProvider::SpoolerLogon](imsprovider-spoolerlogon.md)** 関数は、MAPI スプーラーにラップされた PST ストア プロバイダーにログを記録します。 
   
-このトピックでは、サンプルのラップされた PST ストアプロバイダーのコード例を使用して、 **IMSProvider:: Logon**関数と**IMSProvider:: SpoolerLogon**関数を示します。 このサンプルでは、レプリケーション API と共に使用することを目的とした、ラップされた PST プロバイダーを実装しています。 サンプルのラップされた pst ストアプロバイダーのダウンロードとインストールの詳細については、「[サンプルのラップされた pst ストアプロバイダーのインストール](installing-the-sample-wrapped-pst-store-provider.md)」を参照してください。 レプリケーション api の詳細については、「[レプリケーション api につい](about-the-replication-api.md)て」を参照してください。
+このトピックでは、サンプル ラップ PST ストア プロバイダーのコード例を使用して **、IMSProvider::Logon** 関数と **IMSProvider::SpoolerLogon** 関数を示します。 このサンプルでは、レプリケーション API と組み合わせて使用することを目的としたラップされた PST プロバイダーを実装しています。 サンプル ラップ PST ストア プロバイダーのダウンロードとインストールの詳細については、「サンプル ラップされた PST ストア プロバイダーのインストール [」を参照してください](installing-the-sample-wrapped-pst-store-provider.md)。 レプリケーション API の詳細については、「レプリケーション [API について」を参照してください](about-the-replication-api.md)。
   
-mapi および mapi スプーラーは、ラップされた PST ストアプロバイダーにログオンした後、使用する準備ができています。 詳細については、「ラップされ[た PST ストアプロバイダーの使用](using-a-wrapped-pst-store-provider.md)」を参照してください。
+MAPI と MAPI スプーラーがラップされた PST ストア プロバイダーにログオンした後、使用する準備が整いました。 詳細については、「Wrapped [PST ストア プロバイダーの使用」を参照してください](using-a-wrapped-pst-store-provider.md)。
   
-## <a name="mapi-logon-routine"></a>MAPI ログオンルーチン
+## <a name="mapi-logon-routine"></a>MAPI ログオン ルーチン
 
-ラップされた pst ストアプロバイダーの初期化後、 **[IMSProvider:: Logon](imsprovider-logon.md)** 関数を実装して、ラップされた pst ストアに MAPI でログオンする必要があります。 この関数は、ユーザーの資格情報を検証し、プロバイダーの構成プロパティを取得します。 また、オフラインファイル情報`SetOLFIInOST` (**[olfi](olfi.md)** ) を設定する関数を実装する必要があります。 **olfi**は、新しいメッセージまたはフォルダーのエントリ ID をオフラインモードで割り当てるために、ラップされた PST ストアプロバイダーが使用する、長期間の ID 構造のキューです。 最後に、 **IMSProvider:: Logon**関数は、MAPI スプーラーおよびクライアントアプリケーションが`ppMDB`パラメーターにログオンできるメッセージストアオブジェクトを返します。 
+ラップされた PST ストア プロバイダーが初期化された後、ラップされた PST ストアに MAPI にログオンするには **[、IMSProvider::Logon](imsprovider-logon.md)** 関数を実装する必要があります。 この関数は、ユーザー資格情報を検証し、プロバイダーの構成プロパティを取得します。 オフライン ファイル情報  `SetOLFIInOST` **[(OLFI)](olfi.md)** を設定する関数も実装する必要があります。 **OLFI** は、ラップされた PST ストア プロバイダーがオフライン モードで新しいメッセージまたはフォルダーのエントリ ID を割り当てるのに使用する長期 ID 構造のキューです。 最後に **、IMSProvider::Logon** 関数は、MAPI スプーラーとクライアント アプリケーションがパラメーターにログオンできるメッセージ ストア オブジェクトを返  `ppMDB` します。 
   
-### <a name="cmsproviderlogon-example"></a>cmsprovider:: Logon () の例
+### <a name="cmsproviderlogon-example"></a>CMSProvider::Logon() の例
 
 ```cpp
 STDMETHODIMP CMSProvider::Logon( 
@@ -101,11 +101,11 @@ STDMETHODIMP CMSProvider::Logon(
 }
 ```
 
-## <a name="mapi-spooler-logon-routine"></a>MAPI スプーラーログオンルーチン
+## <a name="mapi-spooler-logon-routine"></a>MAPI スプーラー ログオン ルーチン
 
-**IMSProvider:: Logon**と同様に、MAPI スプーラーをラップされた PST ストアに記録するには、 **[IMSProvider:: SpoolerLogon](imsprovider-spoolerlogon.md)** 関数を実装する必要があります。 MAPI スプーラーおよびクライアントアプリケーションがログオンできるメッセージストアオブジェクトは、 `ppMDB`パラメーターで返されます。 
+**IMSProvider::Logon** と同様に、MAPI スプーラーをラップされた PST ストアに記録するには **[、IMSProvider::SpoolerLogon](imsprovider-spoolerlogon.md)** 関数を実装する必要があります。 MAPI スプーラーとクライアント アプリケーションがログオンできるメッセージ ストア オブジェクトがパラメーターに返  `ppMDB` されます。 
   
-### <a name="cmsproviderspoolerlogon-example"></a>cmsprovider:: SpoolerLogon () の例
+### <a name="cmsproviderspoolerlogon-example"></a>CMSProvider::SpoolerLogon() の例
 
 ```cpp
 STDMETHODIMP CMSProvider::SpoolerLogon ( 
@@ -159,9 +159,9 @@ STDMETHODIMP CMSProvider::SpoolerLogon (
 
 ## <a name="see-also"></a>関連項目
 
-- [ラップされた PST ストアプロバイダーのサンプルについて](about-the-sample-wrapped-pst-store-provider.md) 
-- [ラップされた PST ストアプロバイダーのサンプルのインストール](installing-the-sample-wrapped-pst-store-provider.md) 
-- [ラップされた PST ストアプロバイダーの初期化](initializing-a-wrapped-pst-store-provider.md)
-- [ラップされた PST ストアプロバイダーの使用](using-a-wrapped-pst-store-provider.md)
-- [ラップされた PST ストアプロバイダーのシャットダウン](shutting-down-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーのサンプルについて](about-the-sample-wrapped-pst-store-provider.md) 
+- [ラップされた PST ストア プロバイダーのサンプルのインストール](installing-the-sample-wrapped-pst-store-provider.md) 
+- [ラップされた PST ストア プロバイダーの初期化](initializing-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーの使用](using-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーのシャットダウン](shutting-down-a-wrapped-pst-store-provider.md)
 

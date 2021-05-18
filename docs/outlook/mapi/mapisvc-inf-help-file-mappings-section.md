@@ -1,5 +1,5 @@
 ---
-title: mapisvc.inf [Help File Mappings] セクション
+title: MapiSvc.inf [ヘルプ ファイル マッピング] セクション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,17 +15,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33407558"
 ---
-# <a name="mapisvcinf-help-file-mappings-section"></a>mapisvc.inf [Help File Mappings] セクション
+# <a name="mapisvcinf-help-file-mappings-section"></a>MapiSvc.inf [ヘルプ ファイル マッピング] セクション
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**[Help File Mappings]** セクションには、サービスによって生成されたエラーについてのヘルプを提供する1つのメッセージサービスをファイルにマップするエントリが含まれています。 このセクションのエントリは、次の形式を使用します。 
+[ **ヘルプ ファイル マッピング] セクション** には、各サービスが 1 つのメッセージ サービスをファイルにマップし、サービスによって生成されたエラーのヘルプを提供するエントリが含まれています。 このセクションのエントリでは、次の形式を使用します。 
   
- **[Help File Mappings]**_メッセージサービス名_ =  _ヘルプファイル名_
+ **[ヘルプ ファイル マッピング] メッセージ**_サービス名 ヘルプ_  =   _ファイル名_
   
-メッセージサービス名は、インストールされているメッセージサービスの名前です。ヘルプファイル名は、エラー情報が格納されているファイルの名前です。 次の例は、3つのサービス (MAPI、msgservice サービス、および MS service) のエントリを含む標準的な **[Help File Mappings]** セクションを示しています。 
+メッセージ サービス名は、インストールされているメッセージ サービスの名前です。ヘルプ ファイル名は、エラー情報が存在するファイルの名前です。 次の例は、MAPI、MsgService サービス、MS サービスの 3 つのサービスのエントリを含む一般的な [ヘルプ ファイル マッピング **]** セクションを示しています。 
   
 ```cpp
 [Help File Mappings]

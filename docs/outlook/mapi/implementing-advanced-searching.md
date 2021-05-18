@@ -21,22 +21,22 @@ ms.locfileid: "33407390"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-アドレス帳のコンテナーには、クライアントが**PR_DISPLAY_NAME**以外のプロパティ ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) を検索できる高度な検索機能をサポートしているものがあります。 高度な検索をサポートするには、プロバイダーが他のコンテナーの**PR_SEARCH** ([PidTagSearch](pidtagsearch-canonical-property.md)) プロパティを通じてアクセスできる特別なコンテナーを実装する必要があります。 **PR_SEARCH**には、高度な検索条件を入力および編集するために使用するダイアログボックスについて説明する表示テーブルへのアクセスを提供する container オブジェクトが含まれています。 
+一部のアドレス帳コンテナーは高度な検索機能をサポートしています。これにより、クライアントは、ユーザー以外のプロパティ[(PidTagDisplayName)](pidtagdisplayname-canonical-property.md)をPR_DISPLAY_NAME検索できます。 高度な検索をサポートするには、プロバイダーは、他のコンテナーの **PR_SEARCH** ([PidTagSearch](pidtagsearch-canonical-property.md)) プロパティからアクセスできる特別なコンテナーを実装する必要があります。 **PR_SEARCH** には、高度な検索条件の入力および編集に使用されるダイアログ ボックスを説明する表示テーブルへのアクセスを提供するコンテナー オブジェクトが含まれます。 
   
- **高度な検索をサポートするには**
+ **高度な検索をサポートするために**
   
-1. 各検索基準のプロパティを定義します。
+1. 検索条件ごとにプロパティを定義します。
     
-2. コンテナーの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドの、 **PR_SEARCH**プロパティを処理するコードセクションで、次のように入力します。 
+2. コンテナーの [IMAPIProp::OpenProperty](imapiprop-openproperty.md) メソッドのコードのセクションで、次のプロパティを **PR_SEARCH** します。 
     
-1. クライアントが**IMAPIContainer**インターフェイスを要求していることを確認します。 不適切なインターフェイスが要求されている場合は、エラーが発生し、MAPI_E_INTERFACE_NOT_SUPPORTED が返されます。 
+1. クライアントが **IMAPIContainer インターフェイスを要求しているのを確認** します。 不適切なインターフェイスが要求されている場合は、エラーが発生し、MAPI_E_INTERFACE_NOT_SUPPORTED。 
     
-2. **IMAPIContainer**インターフェイスをサポートする新しい検索オブジェクトを作成します。 
+2. IMAPIContainer インターフェイスをサポートする新 **しい検索オブジェクトを作成** します。 
     
-3. この時点で、検索コンテナーの**imapiprop:: openproperty**メソッドが**PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) プロパティを取得するための呼び出しが行われます。 プロバイダーでは、通常、コンテナーの [高度な検索] ダイアログボックスを記述する[builddisplaytable](builddisplaytable.md)を呼び出すことによって、表示テーブルを指定する必要があります。
+3. この時点で、検索コンテナーの **IMAPIProp::OpenProperty** メソッドを呼び出して、その PR_DETAILS_TABLE **(** [PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) プロパティを取得します。 プロバイダーは、通常、コンテナーの高度な検索ダイアログ ボックスを記述する [BuildDisplayTable](builddisplaytable.md)の呼び出しを通じて表示テーブルを提供する必要があります。
     
-4. MAPI [検索] ダイアログボックスを表示し、ユーザーが適切な条件を入力できるようにします。 ユーザーが完了すると、MAPI はコンテナーの[imapiprop:: setprops](imapiprop-setprops.md)メソッドを呼び出して、検索条件を格納します。 
+4. MAPI は、ユーザーが適切な条件を入力できるように、検索ダイアログ ボックスを表示します。 ユーザーが終了すると、MAPI はコンテナーの [IMAPIProp::SetProps](imapiprop-setprops.md) メソッドを呼び出して検索条件を格納します。 
     
-5. 検索コンテナーの contents テーブルを要求する呼び出しが行われます。 コンテンツテーブルに、条件に一致するコンテナー内のすべてのエントリを設定します。
+5. 検索コンテナーのコンテンツ テーブルを要求する呼び出しが行されます。 コンテンツ テーブルに、条件に一致するコンテナー内のすべてのエントリを設定します。
     
 

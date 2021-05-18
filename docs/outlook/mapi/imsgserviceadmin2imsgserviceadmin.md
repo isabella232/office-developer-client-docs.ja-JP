@@ -25,26 +25,26 @@ ms.locfileid: "33406872"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロファイル内のメッセージサービスの変更を行います。
+プロファイル内のメッセージ サービスに変更を加えます。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiaux  <br/> |
-|公開者:  <br/> |メッセージサービスの管理オブジェクト  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiaux.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |メッセージ サービス管理オブジェクト  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
 |呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMsgServiceAdmin2  <br/> |
 |ポインターの種類:  <br/> |LPSERVICEADMIN2  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[CreateMsgServiceEx](imsgserviceadmin2-createmsgserviceex.md) <br/> |現在のプロファイルにメッセージサービスを追加し、新しく追加されたサービス UID を返します。  <br/> |
+|[CreateMsgServiceEx](imsgserviceadmin2-createmsgserviceex.md) <br/> |メッセージ サービスを現在のプロファイルに追加し、新しく追加されたサービス UID を返します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-**IMsgServiceAdmin2**インターフェイスは、 [IMsgServiceAdmin](imsgserviceadminiunknown.md)インターフェイスを公開するのと同じオブジェクトによって公開されており、Microsoft outlook 2003 以降の outlook の MAPI サブシステムの実装を使用して利用できるようになっています。 
+**IMsgServiceAdmin2** インターフェイスは [、IMsgServiceAdmin](imsgserviceadminiunknown.md)インターフェイスを公開するのと同じオブジェクトによって公開され、Microsoft Outlook 2003 以降、Outlook の MAPI サブシステムの実装を使用して使用できます。 
   
 ## <a name="see-also"></a>関連項目
 

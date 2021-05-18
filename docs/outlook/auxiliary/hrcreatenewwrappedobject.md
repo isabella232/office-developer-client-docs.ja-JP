@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 780ade1c-88d0-04d2-ba7e-251c19c43438
-description: クライアントが適切な文字形式でアクセスできるオブジェクトを作成します。
+description: クライアントが優先文字形式でアクセスできるオブジェクトを作成します。
 ms.openlocfilehash: 3f68e0f275bcc5df065b3113d3322d6957f76df0
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -16,13 +16,13 @@ ms.locfileid: "32317606"
 ---
 # <a name="hrcreatenewwrappedobject"></a>HrCreateNewWrappedObject
 
-クライアントが適切な文字形式でアクセスできるオブジェクトを作成します。
+クライアントが優先文字形式でアクセスできるオブジェクトを作成します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|エクスポート対象:  <br/> |msmapi32  <br/> |
+|次の方法でエクスポートされます。  <br/> |msmapi32.dll  <br/> |
 |呼び出し元:  <br/> |クライアント  <br/> |
 |実装元:  <br/> |Outlook  <br/> |
    
@@ -41,53 +41,53 @@ HRESULT HrCreateNewWrappedObject(
 
 ## <a name="parameters"></a>パラメーター
 
-_pvunwrapped 解除_
+_pvUnwrapped_
   
-> 順番最初にラップが解除された Outlook オブジェクト。 次のいずれかのインターフェイスを実装する必要があります。
+> [in]最初にラップされていないオブジェクトOutlookします。 次のいずれかのインターフェイスを実装する必要があります。
     
-   - [imailuser: imapiprop](https://msdn.microsoft.com/library/74c25870-62d9-484a-9a99-4dc35c52479e%28Office.15%29.aspx)、 [imapiprop: IMAPIContainer](https://msdn.microsoft.com/library/bc2e8d17-7687-43c2-8f01-b677703f7288%28Office.15%29.aspx)、 [IMessage: imapiprop](https://msdn.microsoft.com/library/7e244d40-595e-432c-aa8c-f9f62ca3c138%28Office.15%29.aspx)、 [IMsgStore: imapiprop](https://msdn.microsoft.com/library/20090114-b183-4767-8971-a304a9aa47e6%28Office.15%29.aspx)、 [IMSLogon: IUnknown](https://msdn.microsoft.com/library/d87093dc-f705-465f-ab3c-944ca0cd3e54%28Office.15%29.aspx)、または[iostx](https://msdn.microsoft.com/library/f374d8d9-be8e-2489-d5fe-8a92e0ecfc6f%28Office.15%29.aspx)。
+   - [IMailUser : IMAPIProp](https://msdn.microsoft.com/library/74c25870-62d9-484a-9a99-4dc35c52479e%28Office.15%29.aspx), [IMAPIFolder : IMAPIContainer](https://msdn.microsoft.com/library/bc2e8d17-7687-43c2-8f01-b677703f7288%28Office.15%29.aspx), [IMessage : IMAPIProp](https://msdn.microsoft.com/library/7e244d40-595e-432c-aa8c-f9f62ca3c138%28Office.15%29.aspx), [IMsgStore : IMAPIProp](https://msdn.microsoft.com/library/20090114-b183-4767-8971-a304a9aa47e6%28Office.15%29.aspx), [IMSLogon : IUnknown](https://msdn.microsoft.com/library/d87093dc-f705-465f-ab3c-944ca0cd3e54%28Office.15%29.aspx), or [IOSTX](https://msdn.microsoft.com/library/f374d8d9-be8e-2489-d5fe-8a92e0ecfc6f%28Office.15%29.aspx).
     
 _ulUnwrappedFlags_
   
-> 順番ラップされていない初期オブジェクトを特徴付けるフラグ。 次のいずれかの値であることが必要です。
+> [in]ラップされていない初期オブジェクトを特徴付けるフラグ。 次の値の 1 つ以上を指定する必要があります。
     
-   - DDLWRAP_FLAG_ANSI-ラップされていないオブジェクトは ANSI です。
+   - DDLWRAP_FLAG_ANSI- アンラップされたオブジェクトは ANSI です。
     
-   - DDLWRAP_FLAG_UNICODE-ラップされていないオブジェクトは UNICODE です。
+   - DDLWRAP_FLAG_UNICODE- アンラップされたオブジェクトは UNICODE です。
     
 _ulWrappedFlags_
   
->  順番優先する文字書式のフラグを指定します。 次のいずれかの値であることが必要です。 
+>  [in]優先文字形式のフラグ。 次の値の 1 つ以上を指定する必要があります。 
     
-   - DDLWRAP_FLAG_ANSI-ラップされたオブジェクトは、ANSI として公開されます。
+   - DDLWRAP_FLAG_ANSI- ラップされたオブジェクトは ANSI として公開されます。
     
-   - DDLWRAP_FLAG_UNICODE-ラップされたオブジェクトは、UNICODE として公開されます。
+   - DDLWRAP_FLAG_UNICODE- ラップされたオブジェクトは UNICODE として公開されます。
     
 _pIID_
   
->  順番ラップが解除されたオブジェクトによってサポートされるインターフェイスの識別子。この値が不明な場合は、NULL に設定します。 
+>  [in]ラップされていないオブジェクトでサポートされるインターフェイスの識別子。不明な場合は NULL に設定します。 
     
-_予約済み_
+_pulReserved_
   
->  順番このパラメーターは使用されません。 NULL である必要があります。 
+>  [in]このパラメーターは使用されません。 NULL である必要があります。 
     
-_fcheckwrap_
+_fCheckWrap_
   
->  順番このパラメーターを**true**に設定すると、処理の前に_pvunwrapped ラップ_が解除されます。オブジェクトをチェックせずに折り返す必要がある場合は、 **false**に設定します。 
+>  [in]_pvUnwrapped_**をラップ** する前に形式をチェックする必要がある場合は、このパラメーターを true に設定します。オブジェクトをチェック **せずにラップ** する場合は false に設定します。 
     
 _ppvWrapped_
   
->  読み上げ要求された文字形式で囲まれた、要求されたオブジェクトへのポインター。 
+>  [out]要求された文字形式でラップされた、要求されたオブジェクトへのポインター。 
     
 ## <a name="return-values"></a>戻り値
 
 呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-_fcheckwrap_を**true**に設定してラップされたオブジェクトを渡すと、ラップが解除されたオブジェクトになります。 返されたオブジェクトがラップされているかどうかに関係なく、クライアントは返されたオブジェクトへの参照を解放する必要があります。 
+_fCheckWrap_ が true に設定されたラップされたオブジェクトを渡す **場合、ラップ** されていないオブジェクトになります。 返されるオブジェクトがラップされるかどうかに関係なく、クライアントは返されたオブジェクトの参照を解放します。 
   
-**GetProcAddress**を使用して msmapi32 でこの関数のアドレスを検索する場合は、プロシージャ名として**HrCreateNewWrappedObject @ 28**を指定します。 
+**GetProcAddress** を使用してこの関数のアドレスを検索する場合は **msmapi32.dllプロシージャHrCreateNewWrappedObject@28** として指定します。 
   
 ## <a name="see-also"></a>関連項目
 

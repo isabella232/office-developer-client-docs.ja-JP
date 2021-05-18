@@ -27,20 +27,20 @@ ms.locfileid: "33407376"
 
 [ButtonFace] セルに含まれる文字列は Microsoft Office のボタン イメージの ID を表します。値ゼロ (0) または空白は、アイコンが表示されないことを示します。 
   
-[ButtonFace] セルに使用される ID は、 **CommandBarButton ** オブジェクトの  **FaceID ** プロパティで使用される ID と同じです。 これらの id の詳細については、MSDN の「コマンドバーボタンイメージを使用する」を検索してください。 
+[ButtonFace] セルに使用される ID は、 **CommandBarButton** オブジェクトの  **FaceID** プロパティで使用される ID と同じです。 これらの ID の詳細については、MSDN で "コマンド バー ボタンイメージを操作する" を検索します。 
   
 別の数式から、または **CellsU** プロパティを使用してプログラムから、名前によって [ButtonFace] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |**アクション**。  *名前*です。 **アクション**を実行する**buttonface** 。  *name*は、actions 行の名前です。  <br/> |
+|セル名:  <br/> |**アクション**。  *name*  . **ButtonFace**         where **Actions**.  *name*  はアクション行の名前です。  <br/> |
    
 プログラムから、インデックスによって [ButtonFace] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionAction** <br/> |
-|行インデックス:  <br/> |**visRowAction** +  *i* = **** 0、1、2...  <br/> |
+|行インデックス:  <br/> |**visRowAction**  +  *i* **=** 0, 1, 2...  <br/> |
 |セル インデックス:  <br/> |**visActionButtonFace** <br/> |
    
 

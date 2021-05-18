@@ -1,5 +1,5 @@
 ---
-title: ラップされた PST ストアプロバイダーのサンプルのインストール
+title: ラップされた PST ストア プロバイダーのサンプルのインストール
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,38 +13,38 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32309633"
 ---
-# <a name="installing-the-sample-wrapped-pst-store-provider"></a>ラップされた PST ストアプロバイダーのサンプルのインストール
+# <a name="installing-the-sample-wrapped-pst-store-provider"></a>ラップされた PST ストア プロバイダーのサンプルのインストール
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックでは、サンプルのラップされた PST ストアプロバイダーをダウンロードしてインストールするための手順について説明します。 このサンプルのラップされた pst ストアプロバイダー WrapPST は、レプリケーション API と共に使用することを目的とした、ラップされた pst ストアプロバイダーを実装しています。 レプリケーション api の詳細については、「[レプリケーション api につい](about-the-replication-api.md)て」を参照してください。
+このトピックでは、サンプル ラップされた PST ストア プロバイダーをダウンロードしてインストールする手順について説明します。 サンプル ラップされた PST ストア プロバイダー WrapPST は、レプリケーション API と組み合わせて使用することを目的としたラップされた PST ストア プロバイダーを実装します。 レプリケーション API の詳細については、「レプリケーション [API について」を参照してください](about-the-replication-api.md)。
   
-## <a name="install-the-sample-wrapped-pst-store-provider"></a>サンプルのラップされた PST ストアプロバイダーをインストールする
+## <a name="install-the-sample-wrapped-pst-store-provider"></a>ラップされた PST ストア プロバイダーのサンプルをインストールする
 
-1. サンプルのラップされた PST ストアプロバイダーをダウンロードするには、「 [Outlook 2007 の補助リファレンスコードサンプルと再配布可能なインストーラー](https://www.microsoft.com/en-us/download/details.aspx?id=24102)」を参照してください。
+1. ラップされた PST ストア プロバイダーのサンプルをダウンロードするには[、「Outlook 2007](https://www.microsoft.com/en-us/download/details.aspx?id=24102)補助リファレンス コード サンプルと再頒布可能インストーラー」を参照してください。
     
-2. **SampleWrappedPSTStoreProvider**フォルダーを開き、[**すべてのファイルを抽出**] をクリックします。
+2. **SampleWrappedPSTStoreProvider フォルダー** を開き、[すべてのファイルの抽出 **] をクリックします**。
     
-3. [**参照**] をクリックして、サンプルを保存する場所を選択し、[ **OK]** をクリックします。
+3. [ **参照]** をクリックし、サンプルを保存する場所を選択し **、[OK] をクリックします**。
     
-4. [**展開**] をクリックします。 選択したフォルダーが表示され、抽出したファイルが含まれます。
+4. [**展開**] をクリックします。 選択したフォルダーが表示され、抽出されたファイルが格納されます。
     
-5. 管理者として Visual Studio 2005 を開きます。
+5. 管理者Visual Studio 2005 を開きます。
     
     > [!NOTE]
-    > Windows XP を実行しているコンピューターでは、管理者としてログインする必要があります。 Windows Vista を実行しているコンピューターでは、管理者としてログインしている必要があり、Visual Studio 2005 アイコンを右クリックして [**管理者として実行**] をクリックする必要があります。 
+    > XP でコンピューターがWindowsしている場合は、管理者としてログインする必要があります。 コンピューターが Windows Vista を実行している場合は、管理者としてログインし、Visual Studio 2005 アイコンを右クリックし、[管理者として実行] をクリックする必要 **があります**。 
   
-6. Visual Studio 2005 で、[**ファイル**] をクリックし、[**開く**] を選択して、[**プロジェクト/ソリューション**] をクリックします。
+6. [Visual Studio 2005 で、[ファイル] をクリックし、[開く]**を選択して****、[Project/ソリューション] をクリックします**。
     
-7. サンプルを保存した場所を参照し、[ **WrapPST**] をクリックして、[**開く**] をクリックします。
+7. サンプルを保存した場所を参照し **、[WrapPST]** をクリックし、[開く] を **クリックします**。
     
 8. [ **ビルド**] メニューで、[ **ソリューションのビルド**] をクリックします。
     
-9. [名前を付け**てファイルを保存**] ダイアログボックスで、[**保存**] をクリックします。
+9. [ファイルに **名前を付けて保存]** ダイアログ ボックスで、[保存] を **クリックします**。
     
-10. サンプルを保存したフォルダーで、**インストールする .bat**ファイルを右クリックし、[**管理者として実行**] をクリックします。
+10. サンプルを保存したフォルダーで、ファイルを右クリックし、[管理者として **Install.batを****クリックします**。
     
 11. [**ユーザー アカウント制御**] ダイアログ ボックスで、[**続行**] をクリックします。
     
@@ -52,13 +52,13 @@ ms.locfileid: "32309633"
 
 
 
-[ラップされた PST ストアプロバイダーのサンプルについて](about-the-sample-wrapped-pst-store-provider.md)
+[ラップされた PST ストア プロバイダーのサンプルについて](about-the-sample-wrapped-pst-store-provider.md)
   
-[ラップされた PST ストアプロバイダーの初期化](initializing-a-wrapped-pst-store-provider.md)
+[ラップされた PST ストア プロバイダーの初期化](initializing-a-wrapped-pst-store-provider.md)
   
-[ラップされた PST ストアプロバイダーへのログオン](logging-on-to-a-wrapped-pst-store-provider.md)
+[ラップされた PST ストア プロバイダーへのログオン](logging-on-to-a-wrapped-pst-store-provider.md)
   
-[ラップされた PST ストアプロバイダーの使用](using-a-wrapped-pst-store-provider.md)
+[ラップされた PST ストア プロバイダーの使用](using-a-wrapped-pst-store-provider.md)
   
-[ラップされた PST ストアプロバイダーのシャットダウン](shutting-down-a-wrapped-pst-store-provider.md)
+[ラップされた PST ストア プロバイダーのシャットダウン](shutting-down-a-wrapped-pst-store-provider.md)
 

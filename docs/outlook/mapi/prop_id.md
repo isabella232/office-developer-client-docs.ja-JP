@@ -19,17 +19,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33409133"
 ---
-# <a name="propid"></a>PROP_ID
+# <a name="prop_id"></a>PROP_ID
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定したプロパティタグのプロパティ識別子を返します。
+指定したプロパティ タグのプロパティ識別子を返します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |[SPropValue](spropvalue.md) <br/> |
    
 ```cpp
@@ -40,13 +40,13 @@ PROP_ID (ulPropTag)
 
  _ulPropTag_
   
-> 返される識別子を含む Property タグ。
+> 返される識別子を含むプロパティ タグ。
     
 ## <a name="remarks"></a>注釈
 
-すべてのプロパティタグには、下位ワード (ビット 0 ~ 15) のプロパティの種類と、上位ワード (ビット 16 ~ 31) のプロパティの識別子が含まれています。 **PROP_ID**マクロは、プロパティ識別子を抽出し、それをビット 0 ~ 15 の整数に格納して返します。 戻り値の残りのビットは0に設定されます。 
+すべてのプロパティ タグには、低次ワード (ビット 0 ~ 15) のプロパティ型と、高次ワード (ビット 16 ~ 31) のプロパティ識別子が含まれる。 この **PROP_ID** は、プロパティ識別子を抽出し、返される整数のビット 0 ~ 15 に格納します。 戻り値の残りのビットは 0 に設定されます。 
   
-**PROP_ID**マクロは、たとえば、 [imapiprop:: GetNamesFromIDs](imapiprop-getnamesfromids.md)に渡す識別子を取得するために使用できます。 **GetNamesFromIDs**は、名前付きプロパティの識別子に関連付けられたプロパティ名を取得します。 
+たとえば **PROP_ID** マクロを使用して [、IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md)に渡す識別子を取得できます。 **GetNamesFromIDs は** 、名前付きプロパティの識別子に関連付けられたプロパティ名を取得します。 
   
 ## <a name="see-also"></a>関連項目
 

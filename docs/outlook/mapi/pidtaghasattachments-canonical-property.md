@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: fd236d74-2868-46a8-bb3d-17f8365931b6
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: aca9c9f9c22fc4057f1650d1342492d2ed34653c
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,38 +25,38 @@ ms.locfileid: "32316129"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージに添付ファイルが1つ以上含まれている場合は、TRUE が含まれます。 
+メッセージに少なくとも 1 つの添付ファイルが含まれている場合は TRUE を含む。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_HASATTACH  <br/> |
-|識別子:  <br/> |0x0e1b  <br/> |
+|識別子:  <br/> |0x0E1B  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-メッセージストアは、このプロパティを**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティの**MSGFLAG_HASATTACH**フラグからコピーします。 その後、クライアントアプリケーションは**PR_HASATTACH**を使用して、メッセージビューアーのメッセージの添付ファイルを並べ替えることができます。 
+メッセージ ストアは、このプロパティをMSGFLAG_HASATTACH **(** [PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティPR_MESSAGE_FLAGSフラグからコピーします。 クライアント アプリケーションは、メッセージ **ビューアー** PR_HASATTACH添付ファイルの並べ替えに使用できます。 
   
-このプロパティの値は、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを使用して更新されます。 
+このプロパティの値は [、IMAPIProp::SaveChanges メソッドで更新](imapiprop-savechanges.md) されます。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> 電子メールメッセージオブジェクトに対して許容されるプロパティと操作を指定します。
+> 電子メール メッセージ オブジェクトで許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -66,7 +66,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

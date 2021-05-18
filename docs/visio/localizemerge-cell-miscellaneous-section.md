@@ -23,7 +23,7 @@ ms.locfileid: "33405675"
 |**値**|**説明**|
 |:-----|:-----|
 | TRUE  <br/> | コピー先図面の言語に図形をローカライズします。  <br/> |
-| FALSE  <br/> | コピー先の文書の言語に基づいて図形をローカライズしないようにします (既定値)。  <br/> |
+| FALSE  <br/> | 変換先の文書の言語 (既定) に基づいて図形をローカライズしない。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -31,7 +31,7 @@ ms.locfileid: "33405675"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [localizemerge]  <br/> |
+| セル名:  <br/> | LocalizeMerge  <br/> |
    
 プログラムから、インデックスによって [LocalizeMerge] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -39,6 +39,6 @@ ms.locfileid: "33405675"
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowMisc** <br/> |
-| セル インデックス:  <br/> |**visobjlocalizemerge** <br/> |
+| セル インデックス:  <br/> |**visObjLocalizeMerge** <br/> |
    
 

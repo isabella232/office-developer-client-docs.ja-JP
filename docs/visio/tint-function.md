@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: c4f176d6-4af0-282d-5640-7d98e84dfb55
-description: int パラメーターで指定された正または負の値で明度を増やして色を変更します。
+description: int パラメーターで指定された量 (正または負) で明るさを増やして色を変更します。
 ms.openlocfilehash: 8924bc0662814e14d01b4bd5332f5fadeb0a1082
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,18 +16,18 @@ ms.locfileid: "33406578"
 ---
 # <a name="tint-function"></a>TINT 関数
 
-_int_パラメーターで指定された正または負の値で明度を増やして色を変更します。 
+int パラメーターで指定された量 (正または負) で明るさを増やして色  _を変更_ します。 
   
 ## <a name="syntax"></a>構文
 
-濃淡 (* * *color* * *、* * *int* * *) 
+TINT(** *color* **, ** *int* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _color_ <br/> |必須  <br/> |**数値** <br/> |Microsoft Visio カラー インデックスまたは RGB 値を指定します。  <br/> |
-| _int_ <br/> |必須  <br/> |**整数型 (Integer)** <br/> |色の輝度を増加する量を指定します。 正または負の値を指定できます。  <br/> |
+| _color_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |Microsoft Visio カラー インデックスまたは RGB 値を指定します。  <br/> |
+| _int_ <br/> |必須  <br/> |**整数型 (Integer)** <br/> |色の輝度を増加する量を指定します。正または負の値を指定できます。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
@@ -35,6 +35,6 @@ _int_パラメーターで指定された正または負の値で明度を増や
   
 ## <a name="remarks"></a>注釈
 
-明度の上限と下限は、それぞれ 0 と 240 です。 _int_パラメーターに渡すことができる整数のサイズに制限はありませんが、明度がこれらの制限を超えることはありません。 
+明度の上限と下限は、それぞれ 0 と 240 です。 _int_ パラメーターに渡す整数のサイズに制限はありません。ただし、明度がこれらの制限を超える場合はありません。 
   
 

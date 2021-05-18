@@ -20,7 +20,7 @@ ms.locfileid: "33405990"
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IOlkEnum](iolkenum.md)を参照してください。
+[「IOlkEnum」を参照してください](iolkenum.md)。
   
 ```cpp
 HRESULT IOlkEnum:: GetNext( 
@@ -33,18 +33,18 @@ HRESULT IOlkEnum:: GetNext(
 
 _ppunk_
   
-> 順番[IOlkAccount](iolkaccount.md)インターフェイスを取得するためにクライアントが照会できる**IUnknown**インターフェイスへのポインター。 
+> [in]クライアントが **IOlkAccount** インターフェイスを取得するためにクエリを実行できる [IUnknown](iolkaccount.md) インターフェイスへのポインター。 
     
 ## <a name="return-values"></a>戻り値
 
 |**HRESULT 型**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |呼び出しが成功しました。  <br/> |
-|S_FALSE  <br/> |列挙子が最後に到達しました。  <br/> |
+|S_FALSE  <br/> |列挙子が最後に達しました。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-*ppunk*で指定されたインターフェイスは、 **IUnknown**から継承します。 クライアントは、( **IUnknown:: QueryInterface**を使用して) このインターフェイスを照会して、 **IOlkAccount**インターフェイスへのポインターを取得し、このアカウントの情報を取得または設定できます。 
+*ppunk で指定されたインターフェイスは***、IUnknown から継承します**。 クライアントは、このインターフェイスを **(IUnknown::QueryInterface** を使用して) クエリを実行して **、IOlkAccount** インターフェイスへのポインターを取得し、このアカウントの情報を取得または設定できます。 
   
 ## <a name="see-also"></a>関連項目
 

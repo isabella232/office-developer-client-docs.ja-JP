@@ -1,5 +1,5 @@
 ---
-title: Excel �N���X�^�[ �R�l�N�^�֐�
+title: Excel クラスター コネクタ関数
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer

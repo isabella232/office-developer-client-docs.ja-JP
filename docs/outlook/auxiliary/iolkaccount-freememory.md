@@ -20,7 +20,7 @@ ms.locfileid: "33406200"
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IOlkAccount](iolkaccount.md)を参照してください。
+[「IOlkAccount」を参照してください](iolkaccount.md)。
   
 ```cpp
 HRESULT IOlkAccount::FreeMemory (  
@@ -33,7 +33,7 @@ HRESULT IOlkAccount::FreeMemory (
 
 _pv_
   
-> 順番解放するメモリへのポインター。
+> [in]解放するメモリへのポインター。
     
 ## <a name="return-values"></a>戻り値
 
@@ -41,7 +41,7 @@ _pv_
   
 ## <a name="remarks"></a>注釈
 
-このメソッドを使用して、 [IOlkAccount:: getprop](iolkaccount-getprop.md) (指定した account プロパティの値がバイナリまたは文字列型の場合) および[IOlkAccount:: getaccountinfo](iolkaccount-getaccountinfo.md)で割り当てられているメモリを解放します。
+[IOlkAccount::GetProp](iolkaccount-getprop.md)によって割り当てられたメモリを解放するには、このメソッドを使用します (指定したアカウント プロパティの値がバイナリまたは文字列型の場合) と[IOlkAccount::GetAccountInfo](iolkaccount-getaccountinfo.md)です。
   
 ## <a name="see-also"></a>関連項目
 

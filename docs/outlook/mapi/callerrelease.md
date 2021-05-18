@@ -25,13 +25,13 @@ ms.locfileid: "33408727"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルビューが解放されているときに、テーブルデータオブジェクトを解放できるコールバック関数を定義します。 
+テーブル ビューのリリース時にテーブル データ オブジェクトを解放できるコールバック関数を定義します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
-|定義された関数の実装:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
-|によって呼び出された定義済み関数:  <br/> |MAPI  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
+|定義された関数は、次の方法で実装されます。  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
+|によって呼び出される定義済み関数:  <br/> |MAPI  <br/> |
    
 ```cpp
 void CALLERRELEASE(
@@ -43,17 +43,17 @@ void CALLERRELEASE(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulcallerdata_
+ _ulCallerData_
   
-> 順番MAPI によってテーブルビューで保存され、 **callerrelease**ベースのコールバック関数に渡される発信者データ。 このデータは、リリースされるテーブルビューに関するコンテキストを提供します。 
+> [in]テーブル ビューを使用して MAPI によって保存され **、CALLERRELEASE** ベースのコールバック関数に渡される呼び出し元データ。 データは、リリースされるテーブル ビューに関するコンテキストを提供します。 
     
  _lpTblData_
   
-> 順番[itabledata](itabledataiunknown.md)へのポインター: 解放されるテーブルビューの基になるテーブルデータオブジェクトの IUnknown インターフェイス。 
+> [in] [ITableData へのポインター: 解放](itabledataiunknown.md) されるテーブル ビューの基になるテーブル データ オブジェクトの IUnknown インターフェイス。 
     
- _lpvue_
+ _lpVue_
   
-> 順番リリースされるテーブルビューの[IMAPITable: IUnknown](imapitableiunknown.md)インターフェイスへのポインター。 これは、解放するオブジェクトを作成した[itabledata:: hrgetview](itabledata-hrgetview.md)メソッドの_lppMAPITable_パラメーターで返される table オブジェクトのインターフェイスです。 
+> [in] [IMAPITable へのポインター: 解放されるテーブル ビューの IUnknown](imapitableiunknown.md) インターフェイス。 これは、解放するオブジェクトを作成した [ITableData::HrGetView](itabledata-hrgetview.md)メソッドの _lppMAPITable_ パラメーターで返されるテーブル オブジェクトのインターフェイスです。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -61,8 +61,8 @@ void CALLERRELEASE(
   
 ## <a name="remarks"></a>注釈
 
-テーブルデータオブジェクトを設定したクライアントアプリケーションまたはサービスプロバイダーは、 [itabledata:: hrgetview](itabledata-hrgetview.md)を呼び出して、読み取り専用で並べ替えられたテーブルのビューを作成できます。 **hrgetview**の呼び出しでは、 **callerrelease**ベースのコールバック関数へのポインターが渡されます。また、テーブルビューと共に保存されるコンテキストもあります。 テーブルビューの参照カウントが0に戻り、ビューが解放されるとき、 **IMAPITable**実装はコールバック関数を呼び出し、 _ulcallerdata_パラメーターにコンテキストを渡します。 
+テーブル データ オブジェクトを設定したクライアント アプリケーションまたはサービス プロバイダーは [、ITableData::HrGetView](itabledata-hrgetview.md) を呼び出して、テーブルの読み取り専用で並べ替えたビューを作成できます。 **HrGetView の呼び** 出しは **、CALLERRELEASE** ベースのコールバック関数へのポインターと、テーブル ビューに保存されるコンテキストを渡します。 テーブル ビューの参照カウントが 0 に戻り、ビューが解放されると **、IMAPITable** 実装はコールバック関数を呼び出し  _、ulCallerData_ パラメーターでコンテキストを渡します。 
   
-**callerrelease**ベースのコールバック関数の一般的な使用方法は、基になるテーブルのデータオブジェクトを解放することで、以降の処理中にそのオブジェクトを追跡する必要はありません。 
+**CALLERRELEASE** ベースのコールバック関数の一般的な使用は、基になるテーブル データ オブジェクトを解放し、後続の処理中に追跡する必要はありません。 
   
 

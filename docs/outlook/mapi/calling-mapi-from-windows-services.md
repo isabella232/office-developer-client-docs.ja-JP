@@ -1,5 +1,5 @@
 ---
-title: Windows サービスからの MAPI の呼び出し
+title: MAPI を Windows サービスから呼び出す
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,29 +15,29 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32318107"
 ---
-# <a name="calling-mapi-from-windows-services"></a>Windows サービスからの MAPI の呼び出し
+# <a name="calling-mapi-from-windows-services"></a>MAPI を Windows サービスから呼び出す
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-mapi 準拠のサービスプロバイダーで動作するように Windows サービスとして記述されている mapi クライアントアプリケーションを有効にするために、mapi にはいくつかの制限と要件があります。
+MAPI 準拠のサービス プロバイダーとWindows MAPI クライアント アプリケーションを有効にするには、MAPI にはいくつかの制限と要件が適用されます。
   
 MAPI クライアントには、次の制限があります。
   
-- ユーザーインターフェイスを許可することはできません。
+- ユーザー インターフェイスを許可することはできません。
     
-- メッセージは密結合されたメッセージストアとトランスポートプロバイダーを使用してのみ送信できます。 また、MAPI クライアントは、Microsoft Exchange Server または別のサーバーベースのトランスポートプロバイダーのみを使用して、メッセージの送受信を行うことができます。 クライアントアプリケーションと MAPI スプーラーとの間の id とセキュリティの問題のため、サービスではほとんどのトランスポートプロバイダーがサポートされていません。 
+- メッセージは、緊密に結合されたメッセージ ストアとトランスポート プロバイダーを介してのみ送信できます。 さらに、MAPI クライアントは、サーバーまたは別のサーバー ベースのトランスポート プロバイダー Microsoft Exchange Serverを使用してメッセージを送受信できます。 クライアント アプリケーションと MAPI スプーラー間の ID とセキュリティの問題のため、ほとんどのトランスポート プロバイダーはサービスではサポートされていません。 
     
-Windows サービスとして実装されているかどうかにかかわらず、すべての mapi クライアントアプリケーションは、 [MAPIInitialize](mapiinitialize.md)関数を呼び出して mapi ライブラリを初期化する必要があります。 [oleinitialize](https://msdn.microsoft.com/library/ms690134%28v=VS.85%29.aspx)関数の呼び出しは、OLE ライブラリを使用するためにも必要です。 [MAPIInitialize](mapiinitialize.md)と[oleinitialize](https://msdn.microsoft.com/library/ms690134%28v=VS.85%29.aspx)の両方で、 [CoInitialize](https://msdn.microsoft.com/library/ms678543%28VS.85%29.aspx)関数を呼び出して、コンポーネントオブジェクトモデル (COM) ライブラリを初期化します。 サービスであるクライアントは、 [MAPIInitialize](mapiinitialize.md)に渡される[MAPIINIT_0](mapiinit_0.md)構造の**ulflags**メンバーと、 [MAPILogonEx](mapilogonex.md)に渡される_ulflags_パラメーターに、特殊なフラグ MAPI_NT_SERVICE を設定する必要があります。MAPI に特別な実装を通知する関数。 
+MAPI クライアント アプリケーションは、すべての MAPI クライアント アプリケーションWindows、MAPI ライブラリを初期化するために[MAPIInitialize](mapiinitialize.md)関数を呼び出す必要があります。 OLE ライブラリを [使用するには、OleInitialize](https://msdn.microsoft.com/library/ms690134%28v=VS.85%29.aspx) 関数の呼び出しも必要です。 [MAPIInitialize と](mapiinitialize.md) [OleInitialize](https://msdn.microsoft.com/library/ms690134%28v=VS.85%29.aspx)の両方が[CoInitialize](https://msdn.microsoft.com/library/ms678543%28VS.85%29.aspx)関数を呼び出して、コンポーネント オブジェクト モデル (COM) ライブラリを初期化します。 サービスであるクライアントは [、MAPIInitialize](mapiinitialize.md)に渡される [MAPIINIT_0](mapiinit_0.md)構造体の **ulFlags** メンバーと [、MAPILogonEx](mapilogonex.md)関数に渡される _ulFlags_ パラメーターに特別なフラグ MAPI_NT_SERVICE を設定して、MAPI に特別な実装を通知する必要があります。 
   
-Windows サービスとして記述され、mapi クライアントインターフェイスで記述された mapi クライアントには、追加の要件があります。 MAPI_NO_MAIL フラグは、 [MAPILogonEx](mapilogonex.md)への呼び出しで設定する必要があります。 他の種類のクライアントは、MAPI によって自動的に設定されるので、ログオンのフラグを設定する必要はありません。
+MAPI クライアント は、サービスWindows、MAPI クライアント インターフェイスで書き込まれる場合は、追加の要件を満たします。 MAPILogonEx の呼び出MAPI_NO_MAILフラグを設定 [する必要があります](mapilogonex.md)。 他の種類のクライアントは、MAPI によって自動的に設定されますので、ログオン用のフラグを設定する必要があります。
   
-初期化スレッドでメッセージを処理するために、サービスとして実装されている MAPI クライアントは次のことを行います。
+初期化スレッド内のメッセージを処理するために、サービスとして実装される MAPI クライアントは次の処理を行います。
   
-1. メインスレッドがブロックされたときに[MsgWaitForMultipleObjects](https://msdn.microsoft.com/library/ms684242%28VS.85%29.aspx)関数を呼び出します。 
+1. メイン スレッド [がブロックされている場合は、MsgWaitForMultipleObjects](https://msdn.microsoft.com/library/ms684242%28VS.85%29.aspx) 関数を呼び出します。 
     
-2. [GetMessage](https://msdn.microsoft.com/library/ms644936%28VS.85%29.aspx)、 [TranslateMessage](https://msdn.microsoft.com/library/ms644955%28VS.85%29.aspx)、および[DispatchMessage](https://msdn.microsoft.com/library/ms644934%28VS.85%29.aspx)の一連の Windows 関数を呼び出して、 [MsgWaitForMultipleObjects](https://msdn.microsoft.com/library/ms684242%28VS.85%29.aspx)が_nCount_パラメーターの値の合計を返す場合にメッセージを処理します。**WAIT_OBJECT_0**の値。これは、メッセージがキューにあることを示します。
+2. [MsgWaitForMultipleObjects](https://msdn.microsoft.com/library/ms684242%28VS.85%29.aspx)が nCount パラメーターの値と WAIT_OBJECT_0 の値の合計を返す場合に、メッセージを処理するために、Windows 関数の[GetMessage、TranslateMessage、](https://msdn.microsoft.com/library/ms644936%28VS.85%29.aspx)および[DispatchMessage](https://msdn.microsoft.com/library/ms644934%28VS.85%29.aspx)シーケンスを呼び出します。これは、メッセージがキュー内にあるかどうかを示します。 [](https://msdn.microsoft.com/library/ms644955%28VS.85%29.aspx) 
     
 ## <a name="see-also"></a>関連項目
 
@@ -50,5 +50,5 @@ Windows サービスとして記述され、mapi クライアントインター�
 [MAPILogonEx](mapilogonex.md)
 
 
-[操作環境の問題](operating-environment-issues.md)
+[オペレーティング環境の問題](operating-environment-issues.md)
 

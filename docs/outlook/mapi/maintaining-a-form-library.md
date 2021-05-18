@@ -1,5 +1,5 @@
 ---
-title: フォームライブラリの管理
+title: フォーム ライブラリの保守
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,22 +15,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33408804"
 ---
-# <a name="maintaining-a-form-library"></a>フォームライブラリの管理
+# <a name="maintaining-a-form-library"></a>フォーム ライブラリの保守
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームライブラリには、フォームに関する重要な情報がすべて含まれます。フォームのプロパティ、動詞、およびサーバーの実行可能ファイル。 クライアントによっては、フォームサーバーの保守、インストール、または削除をユーザーに許可することができます。 この機能をユーザーに提供するには、次のものにアクセスできる必要があります。
+フォーム ライブラリには、フォームのプロパティ、動詞、サーバーの実行可能ファイルなど、フォームに関する重要な情報すべてが保持されます。 一部のクライアントでは、ユーザーがフォーム サーバーを保守、インストール、または削除できます。 この機能をユーザーに提供する場合は、次の機能にアクセスできる必要があります。
   
-- フォームサーバーの構成ファイル。このファイルには、が含まれます。CFG 拡張機能。
+- フォーム サーバーの構成ファイル、.CFG 拡張機能。
     
-- フォームライブラリの container オブジェクト[。 imapiformcontainer: IUnknown](imapiformcontaineriunknown.md)インターフェイスを実装するオブジェクト。 
+- フォーム ライブラリのコンテナー オブジェクト [、IMAPIFormContainer : IUnknown](imapiformcontaineriunknown.md) インターフェイスを実装するオブジェクト。 
     
-構成ファイルまたはパス名にアクセスするには、任意の方法を使用します。 通常、クライアントは、ユーザーに対してフォームサーバーをインストールおよび削除するためのダイアログボックスを表示します。このダイアログボックスを使用すると、構成ファイルの場所をユーザーに確認することもできます。
+構成ファイルまたはパス名にアクセスするには、便利な手段を使用します。 通常、クライアントは、構成ファイルの場所をユーザーに確認するフォーム サーバーをインストールおよび削除するためのダイアログ ボックスをユーザーに表示します。
   
-フォームライブラリのコンテナーにアクセスするには、フォームマネージャーの[imapiformmgr:: openformcontainer](imapiformmgr-openformcontainer.md)メソッドを呼び出します。 開くフォームライブラリを指定する列挙値を渡し、必要に応じて、フォームマネージャーがフォームライブラリを開くために使用するオブジェクトへのポインターを指定します。 たとえば、[フォルダーフォームライブラリ](folder-form-libraries.md)を開く場合は、 [imapifolder: IMAPIContainer](imapifolderimapicontainer.md)ポインターを渡します。 
+フォーム ライブラリのコンテナーにアクセスするには、フォーム マネージャーの [IMAPIFormMgr::OpenFormContainer メソッドを呼び出](imapiformmgr-openformcontainer.md) します。 列挙値を渡して、開くフォーム ライブラリを指定し、必要に応じてフォーム マネージャーがフォーム ライブラリを開くのに使用するオブジェクトへのポインターを指定します。 たとえば、フォルダー フォーム ライブラリを[](folder-form-libraries.md)開く場合は[、IMAPIFolder : IMAPIContainer ポインターを渡](imapifolderimapicontainer.md)します。 
   
-**openformcontainer**が**imapiformcontainer**ポインターを返すと、実行するメンテナンスに応じて、 [imapiformcontainer:: installform](imapiformcontainer-installform.md)または[imapiformcontainer:: removeform](imapiformcontainer-removeform.md)のいずれかを呼び出します。 **installform**は、フォームサーバーをライブラリに追加します。**removeform**ライブラリからフォームサーバーを削除します。 
+**OpenFormContainer** が **IMAPIFormContainer** ポインターを返した後、実行するメンテナンスに応じて [、IMAPIFormContainer::InstallForm](imapiformcontainer-installform.md)または [IMAPIFormContainer::RemoveForm](imapiformcontainer-removeform.md)を呼び出します。 **InstallForm** は、フォーム サーバーをライブラリに追加します。 **RemoveForm** は、フォーム サーバーをライブラリから削除します。 
   
 

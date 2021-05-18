@@ -25,11 +25,11 @@ ms.locfileid: "33408223"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[builddisplaytable](builddisplaytable.md)関数によって表示テーブルから構築されたダイアログボックスについて説明します。 
+[BuildDisplayTable](builddisplaytable.md)関数によって表示テーブルから作成されるダイアログ ボックスについて説明します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct DTPAGE
@@ -46,37 +46,37 @@ typedef struct DTPAGE
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cctl**
   
-> **lpctl**メンバーが指すコントロールの数。 
+> lpctl メンバーが指す **コントロールの** 数。 
     
- **lpszresourcename**
+ **lpszResourceName**
   
-> ダイアログボックスリソースの名前または整数識別子へのポインター。 
+> ダイアログ ボックス リソースの名前または整数識別子へのポインター。 
     
- **lpszcomponent**
+ **lpszComponent**
   
-> mapisvc.inf の **[Help File Mappings]** セクションに表示される文字列へのポインター。 **lpszcomponent**は**ulitemid**メンバーとの和集合に含まれているため、これらのメンバーのうち1つだけが有効なデータを持っています。 
+> MAPISVC.INF の [ヘルプ ファイル マッピング **]** セクションに表示される文字列へのポインター。 **lpszComponent** は **ulItemID** メンバーとの共用体にあるため、有効なデータを持つメンバーは 1 つのみです。 
     
- **ulitemid**
+ **ulItemID**
   
-> ヘルプファイル名を読み取ることができる65535以下の値を持つ整数リソース識別子。 **ulitemid**は**lpszcomponent**メンバーと共用されているため、これらのメンバーのうち1つだけが有効なデータを持っています。 
+> ヘルプ ファイル名を読み取る 65535 以下の値を持つ整数リソース識別子。 **ulItemID は** **lpszComponent** メンバーとの共用体にあるため、有効なデータを持つメンバーは 1 つのみです。 
     
  **lpctl**
   
-> [DTCTL](dtctl.md)構造体の配列へのポインター。ページ上の各コントロールに対して1つ。 
+> ページ上のコントロールごとに [1 つ、DTCTL](dtctl.md) 構造体の配列へのポインター。 
     
 ## <a name="remarks"></a>注釈
 
-タブページのヘルプファイルを識別するには、 **lpszcomponent**メンバーをハードコーディングされた文字列または**ulitemid**メンバーのいずれかを整数リソース識別子に設定します。 
+タブ付きページのヘルプ ファイルを識別するには **、lpszComponent** メンバーをハードコードされた文字列に設定するか **、ulItemID** メンバーを整数リソース識別子に設定します。 
   
-mapisvc.inf の **[Help File Mappings]** セクションの各エントリ。INF は、30文字以内のコンポーネント文字列から構成され、左側には右に、ヘルプファイルのパスが表示されます。 **ulitemid**と**lpszresourcename**の両方が**builddisplaytable**の_hInstance_パラメーターにあります。 詳細については、「mapisvc.inf」を参照してください[。INF [Help File Mappings] セクション](mapisvc-inf-help-file-mappings-section.md)
+MAPISVC の **[ヘルプ ファイル マッピング] セクション** の各エントリ。INF は、左側の 30 文字以内のコンポーネント文字列と、右側のヘルプ ファイル パスで構成されます。 **ulItemID と** **lpszResourceName** の両方が **、BuildDisplayTable**_の hInstance_ パラメーターに含されています。 詳細については [、「MAPISVC」を参照してください。INF [ヘルプ ファイル マッピング] セクション](mapisvc-inf-help-file-mappings-section.md).
   
-**builddisplaytable**は、この構造を使用して、コントロールリソースから表示テーブルを作成しますが、 **dtpage**構造は表示テーブル自体には表示されません。 
+**BuildDisplayTable は**、この構造を使用してコントロール リソースから表示テーブルを構築しますが **、DTPAGE** 構造は表示テーブル自体には表示されません。 
   
-表示テーブルの概要については、「[テーブルの表示](display-tables.md)」を参照してください。 表示テーブルを実装する方法については、「[表示テーブルを実装](display-table-implementation.md)する」を参照してください。
+表示テーブルの概要については、「表示テーブル」 [を参照してください](display-tables.md)。 表示テーブルを実装する方法の詳細については、「表示テーブルの [実装」を参照してください](display-table-implementation.md)。
   
 ## <a name="see-also"></a>関連項目
 

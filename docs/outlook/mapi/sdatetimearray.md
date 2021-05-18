@@ -25,11 +25,11 @@ ms.locfileid: "33406781"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-PT_MV_SYSTIME 型のプロパティを記述するために使用される時間の値の配列を格納します。
+型のプロパティを記述するために使用される時刻値の配列をPT_MV_SYSTIME。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SDateTimeArray
@@ -40,19 +40,19 @@ typedef struct _SDateTimeArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cvalues**
+ **cValues**
   
-> **lpft**メンバーが指す配列内の値の数。 
+> lpft メンバーが指す配列内の **値の** 数。 
     
  **lpft**
   
-> 時刻の値を含む[FILETIME](filetime.md)構造体の配列へのポインター。 
+> 時刻値を含む [FILETIME](filetime.md) 構造体の配列へのポインター。 
     
 ## <a name="remarks"></a>注釈
 
-PT_MV_SYSTIME の詳細については、「[プロパティの種類の一覧](property-types.md)」を参照してください。
+プロパティの詳細については、「PT_MV_SYSTIME [のリスト」を参照してください](property-types.md)。
   
 ## <a name="see-also"></a>関連項目
 

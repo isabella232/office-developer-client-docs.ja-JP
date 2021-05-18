@@ -25,38 +25,38 @@ ms.locfileid: "32319328"
 |提供元:  <br/> |空き時間情報プロバイダー  <br/> |
 |インターフェイス識別子:  <br/> |IID_IFreeBusySupport  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[Placeholder1](ifreebusysupport-placeholder1.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder2](ifreebusysupport-placeholder2.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[LoadFreeBusyData](ifreebusysupport-loadfreebusydata.md) <br/> |指定した各ユーザーについて、時間範囲内のデータの空き時間ブロックを列挙するためのインターフェイスを返します。  <br/> |
-|[Placeholder23](ifreebusysupport-placeholder23.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder3](ifreebusysupport-placeholder3.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder4](ifreebusysupport-placeholder4.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder5](ifreebusysupport-placeholder5.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder6](ifreebusysupport-placeholder6.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder7](ifreebusysupport-placeholder7.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder8](ifreebusysupport-placeholder8.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder9](ifreebusysupport-placeholder9.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder10](ifreebusysupport-placeholder10.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder11](ifreebusysupport-placeholder11.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder12](ifreebusysupport-placeholder12.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder13](ifreebusysupport-placeholder13.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder14](ifreebusysupport-placeholder14.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder15](ifreebusysupport-placeholder15.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder16](ifreebusysupport-placeholder16.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder17](ifreebusysupport-placeholder17.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder18](ifreebusysupport-placeholder18.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder19](ifreebusysupport-placeholder19.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder20](ifreebusysupport-placeholder20.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder21](ifreebusysupport-placeholder21.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-|[Placeholder22](ifreebusysupport-placeholder22.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
+|[プレースホルダー 1](ifreebusysupport-placeholder1.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー 2](ifreebusysupport-placeholder2.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[LoadFreeBusyData](ifreebusysupport-loadfreebusydata.md) <br/> |指定したユーザーごとに、時間範囲内のデータの空き時間情報ブロックを列挙するインターフェイスを返します。  <br/> |
+|[プレースホルダー23](ifreebusysupport-placeholder23.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー 3](ifreebusysupport-placeholder3.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー 4](ifreebusysupport-placeholder4.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー 5](ifreebusysupport-placeholder5.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー 6](ifreebusysupport-placeholder6.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー 7](ifreebusysupport-placeholder7.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー 8](ifreebusysupport-placeholder8.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー 9](ifreebusysupport-placeholder9.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー10](ifreebusysupport-placeholder10.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー11](ifreebusysupport-placeholder11.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー12](ifreebusysupport-placeholder12.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー13](ifreebusysupport-placeholder13.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー14](ifreebusysupport-placeholder14.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー15](ifreebusysupport-placeholder15.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー16](ifreebusysupport-placeholder16.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー17](ifreebusysupport-placeholder17.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー18](ifreebusysupport-placeholder18.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー19](ifreebusysupport-placeholder19.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー20](ifreebusysupport-placeholder20.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー21](ifreebusysupport-placeholder21.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+|[プレースホルダー22](ifreebusysupport-placeholder22.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このインターフェイスのメンバーのほとんどは、Outlook の内部使用のために予約されたプレースホルダーであり、変更される可能性があります。 空き時間情報プロバイダーは、指定された値のみを実装する必要があり、指定された戻り値のみを返します。
+このインターフェイスのメンバーの大部分は、内部で使用するために予約されたプレースホルダーであり、Outlook変更される場合があります。 空き時間情報プロバイダーは、指定した戻り値のみを返す、指定しただけ実装する必要があります。
   
 ## <a name="see-also"></a>関連項目
 

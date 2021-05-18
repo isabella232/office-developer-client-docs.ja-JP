@@ -1,5 +1,5 @@
 ---
-title: iattach imapiprop
+title: IAttach IMAPIProp
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,27 +25,27 @@ ms.locfileid: "33409091"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ内の添付ファイルのプロパティへのアクセスを保持および提供します。 **iattach**インターフェイスには、独自の独自のメソッドはありません。 添付ファイルの使用方法の詳細については、「 [MAPI 添付](mapi-attachments.md)ファイルと[添付ファイルの表](attachment-tables.md)」を参照してください。 
+メッセージ内の添付ファイルのプロパティへのアクセスを維持し、提供します。 **IAttach インターフェイス** には独自のメソッドはありません。 添付ファイルの使用方法の詳細については、「MAPI 添付ファイルと[添付ファイルテーブル」](mapi-attachments.md)[を参照してください](attachment-tables.md)。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
-|公開者:  <br/> |Attachment オブジェクト  <br/> |
-|実装元:  <br/> |メッセージストアプロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |添付ファイル オブジェクト  <br/> |
+|実装元:  <br/> |メッセージ ストア プロバイダー  <br/> |
 |呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
 |インターフェイス識別子:  <br/> |IID_IAttachment  <br/> |
-|ポインターの種類:  <br/> |lpattach  <br/> |
-|トランザクションモデル:  <br/> |一括  <br/> |
+|ポインターの種類:  <br/> |LPATTACH  <br/> |
+|トランザクション モデル:  <br/> |Transacted  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
-このインターフェイスには一意のメソッドはありません。
+このインターフェイスには、一意のメソッドが含まれる必要があります。
   
 |**必須のプロパティ**|**Access**|
 |:-----|:-----|
-|**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_ATTACH_METHOD**([PidTagAttachMethod](pidtagattachmethod-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
-|**PR_RENDERING_POSITION**([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
+|**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
+|**PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

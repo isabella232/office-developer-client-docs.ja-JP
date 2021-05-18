@@ -1,5 +1,5 @@
 ---
-title: imapiformcontainer IUnknown
+title: IMAPIFormContainer IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,28 +25,28 @@ ms.locfileid: "33407530"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームライブラリ内のフォームを管理します。 このインターフェイスは、アプリケーション固有のフォームライブラリを作成するために使用されます。 
+フォーム ライブラリ内のフォームを管理します。 このインターフェイスは、アプリケーション固有のフォーム ライブラリを作成するために使用されます。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
-|公開者:  <br/> |Form container オブジェクト  <br/> |
-|実装元:  <br/> |フォームライブラリプロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |フォーム コンテナー オブジェクト  <br/> |
+|実装元:  <br/> |フォーム ライブラリ プロバイダー  <br/> |
 |呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMAPIFormContainer  <br/> |
 |ポインターの種類:  <br/> |LPMAPIFORMCONTAINER  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[installform](imapiformcontainer-installform.md) <br/> |フォームをフォームコンテナーにインストールします。  <br/> |
-|[removeform](imapiformcontainer-removeform.md) <br/> |フォームコンテナーから特定のフォームを削除します。  <br/> |
-|[ResolveMessageClass](imapiformcontainer-resolvemessageclass.md) <br/> |メッセージクラスをフォームコンテナー内のフォームに解決し、そのフォームのフォーム情報オブジェクトを返します。  <br/> |
-|[ResolveMultipleMessageClasses](imapiformcontainer-resolvemultiplemessageclasses.md) <br/> |フォームコンテナー内のフォームに対するメッセージクラスのグループを解決し、それらのフォームのフォーム情報オブジェクトの配列を返します。  <br/> |
-|[CalcFormPropSet](imapiformcontainer-calcformpropset.md) <br/> |フォームコンテナーにインストールされているすべてのフォームで使用されるプロパティの配列を返します。  <br/> |
-|[getdisplay](imapiformcontainer-getdisplay.md) <br/> |フォームコンテナーの表示名を返します。  <br/> |
-|[GetLastError](imapiformcontainer-getlasterror.md) <br/> |form container オブジェクトに発生する前のエラーに関する情報を含む[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
+|[InstallForm](imapiformcontainer-installform.md) <br/> |フォームコンテナーにフォームをインストールします。  <br/> |
+|[RemoveForm](imapiformcontainer-removeform.md) <br/> |フォーム コンテナーから特定のフォームを削除します。  <br/> |
+|[ResolveMessageClass](imapiformcontainer-resolvemessageclass.md) <br/> |メッセージ クラスをフォーム コンテナー内のフォームに解決し、そのフォームのフォーム情報オブジェクトを返します。  <br/> |
+|[ResolveMultipleMessageClasses](imapiformcontainer-resolvemultiplemessageclasses.md) <br/> |メッセージ クラスのグループをフォーム コンテナー内のフォームに解決し、それらのフォームのフォーム情報オブジェクトの配列を返します。  <br/> |
+|[CalcFormPropSet](imapiformcontainer-calcformpropset.md) <br/> |フォーム コンテナーにインストールされているすべてのフォームで使用されるプロパティの配列を返します。  <br/> |
+|[GetDisplay](imapiformcontainer-getdisplay.md) <br/> |フォーム コンテナーの表示名を返します。  <br/> |
+|[GetLastError](imapiformcontainer-getlasterror.md) <br/> |フォーム コンテナー オブジェクトに発生した以前のエラーに関する情報を含む [MAPIERROR](mapierror.md) 構造体を返します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

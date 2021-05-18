@@ -19,17 +19,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33408622"
 ---
-# <a name="changeproptype"></a>CHANGE_PROP_TYPE
+# <a name="change_prop_type"></a>CHANGE_PROP_TYPE
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロパティタグのプロパティの種類を、指定した値に更新します。 プロパティ識別子は変更されません。 
+プロパティ タグのプロパティの種類を指定した値に更新します。 プロパティ識別子は変更されません。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |[SPropValue](spropvalue.md) <br/> |
    
 ```cpp
@@ -40,11 +40,11 @@ CHANGE_PROP_TYPE (ulPropTag, ulPropType)
 
  _ulPropTag_
   
-> 変更するプロパティタグを指定します。
+> 変更するプロパティ タグ。
     
- _ulproptype_
+ _ulPropType_
   
-> プロパティ型の新しい値。
+> プロパティの種類の新しい値。
     
 ## <a name="see-also"></a>関連項目
 

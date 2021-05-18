@@ -25,12 +25,12 @@ ms.locfileid: "33407257"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[srow](srow.md)構造の配列を格納します。 各**srow**構造は、テーブルの行について記述します。 
+SRow 構造体の [配列を格納](srow.md) します。 各 **SRow** 構造体は、テーブルの行を表します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
-|関連するマクロ:  <br/> |[CbNewSRowSet](cbnewsrowset.md)、 [cbsrowset](cbsrowset.md)、 [sizedsrowset](sizedsrowset.md) <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|関連するマクロ:  <br/> |[CbNewSRowSet](cbnewsrowset.md)、 [CbSRowSet](cbsrowset.md)、 [SizedSRowSet](sizedsrowset.md) <br/> |
    
 ```cpp
 typedef struct _SRowSet
@@ -41,19 +41,19 @@ typedef struct _SRowSet
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cRows**
   
-> **arow**メンバーの**srow**構造のカウント。 
+> aRow **メンバー内** の **SRow 構造体の** 数。 
     
- **arow**
+ **aRow**
   
-> **srow**構造の配列。 表の各行には1つの構造があります。 
+> **SRow 構造体の** 配列。 テーブル内の行ごとに 1 つの構造があります。 
     
 ## <a name="remarks"></a>注釈
 
-**srowset**構造体は、テーブルの複数のデータ行を記述するために使用されます。 **srowset**構造体は、次の関数に加えて、 [IAddrBook](iaddrbookimapiprop.md)、 [itabledata](itabledataiunknown.md)、および[IMAPITable](imapitableiunknown.md)インターフェイスメソッドで使用されます。 
+**SRowSet 構造体は**、テーブルから複数行のデータを記述するために使用されます。 **SRowSet** 構造体は、次の機能に加えて [、IAddrBook、ITableData、](iaddrbookimapiprop.md)[および IMAPITable](imapitableiunknown.md)インターフェイス メソッドで使用されます。 [](itabledataiunknown.md) 
   
 - [HrQueryAllRows](hrqueryallrows.md)
     
@@ -61,11 +61,11 @@ typedef struct _SRowSet
     
 - [FreeProws](freeprows.md)
     
- **srowset**構造体は[adrlist](adrlist.md)構造体と同じように定義されており、受信者テーブルの行とアドレス一覧のエントリを同じように扱うことができます。 [IMessage:: modifyrecipients](imessage-modifyrecipients.md)および[IAddrBook:: Address](iaddrbook-address.md)などのメソッドには、 **srowset**構造体と**adrlist**構造体の両方を渡すことができます。 
+ **SRowSet** 構造体は、受信者テーブルの行とアドレス一覧内のエントリを同じ扱いを可能にするために [、ADRLIST](adrlist.md) 構造と同じように定義されます。 **SRowSet 構造体と** **ADRLIST** 構造体の両方を [、IMessage::ModifyRecipients](imessage-modifyrecipients.md)や [IAddrBook::Address などのメソッドに渡す場合があります](iaddrbook-address.md)。 
   
-また、 **srowset**構造体のメモリ割り当ての規則は、 **adrlist**構造体の場合と同じです。 要約すると、 [MAPIAllocateBuffer](mapiallocatebuffer.md)を使用して、行セット内の各行の**lpprops**メンバが指す各[spropvalue](spropvalue.md)構造体を個別に割り当てる必要があります。 各プロパティ値構造体は、 **srowset**構造体を解放する前に[MAPIFreeBuffer](mapifreebuffer.md)を使用して割り当てを解除して、割り当てられた**spropvalue**構造体へのポインターが失われないようにする必要があります。 行の割り当てられたメモリは保持され、 **srowset**構造のコンテキスト外で再利用できます。 
+また **、SRowSet** 構造体のメモリ割り当てのルールは **、ADRLIST 構造体の場合と同** じです。 要約すると、行セット内の各行の **lpProps** メンバーが指す配列内の [各 SPropValue](spropvalue.md)構造体は [、MAPIAllocateBuffer](mapiallocatebuffer.md)を使用して個別に割り当てる必要があります。 各プロパティ値の構造体は、割り当てられた **SPropValue** 構造体へのポインターが失われずに **、SRowSet** 構造体の割り当て解除の前に [MAPIFreeBuffer](mapifreebuffer.md)を使用して割り当て解除する必要があります。 その後、行の割り当てられたメモリを保持し **、SRowSet** 構造体のコンテキスト外で再利用できます。 
   
-**srowset**構造体のメモリを割り当てる方法の詳細については、「 [adrlist および srowset 構造体のメモリの管理](managing-memory-for-adrlist-and-srowset-structures.md)」を参照してください。 
+**SRowSet** 構造体のメモリを割り当てる方法の詳細については [、「ADRLIST および SRowSet 構造体](managing-memory-for-adrlist-and-srowset-structures.md)のメモリの管理」を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

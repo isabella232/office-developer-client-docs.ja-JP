@@ -25,7 +25,7 @@ ms.locfileid: "32320154"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-同期を呼び出してアイテムをダウンロードすることなく、基になる個人用フォルダーファイル (PST) へのアクセスを提供する、ラップされていないインターネットメッセージアクセスプロトコル (IMAP) ストアオブジェクトへのポインターを取得します。
+同期を呼び出してアイテムをダウンロードすることなく、基になる個人用フォルダー ファイル (PST) へのアクセスを提供する、ラップされていないインターネット メッセージ アクセス プロトコル (IMAP) ストア オブジェクトへのポインターを取得します。
   
 ```cpp
 HRESULT IProxyStoreObject::UnwrapNoRef (     LPVOID *ppvObject ); 
@@ -35,19 +35,19 @@ HRESULT IProxyStoreObject::UnwrapNoRef (     LPVOID *ppvObject );
 
  _ppvObject_
   
-> 読み上げラップされていない[IMsgStore: imapiprop](imsgstoreimapiprop.md) store オブジェクトへのポインター。 
+> [out]ラップされていない [IMsgStore : IMAPIProp](imsgstoreimapiprop.md) ストア オブジェクトへのポインター。 
     
 ## <a name="return-values"></a>戻り値
 
 S_OK
   
-- 呼び出しが正常に実行され、 _ppvObject_でラップされていないインターフェイスへのポインターが返されました。
+- 呼び出しが成功し、ラップされていないインターフェイスへのポインターが  _ppvObject で返されました_。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-最初に IMAP ストアをラップ解除せずに、ストア内のメッセージにアクセスすると、メッセージ全体をダウンロードしようとする同期が強制的に実行されます。 ラップされていないストアを使用すると、ダウンロードをトリガーすることなく、現在の状態のメッセージにアクセスできます。
+最初に IMAP ストアをアンラップしない場合、ストア内のメッセージにアクセスすると、メッセージ全体のダウンロードを試みる同期を強制的に実行できます。 ラップされていないストアを使用すると、ダウンロードをトリガーすることなく、現在の状態にあるメッセージにアクセスできます。
   
-**UnwrapNoRef**は、ラップされていない store オブジェクトへのこの新しいポインターの参照カウントをインクリメントしないため、 **UnwrapNoRef**の呼び出しに成功した後で、 [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)を呼び出して参照カウントを維持する必要があります。 
+**UnwrapNoRef** はアンラップされたストア オブジェクトへのこの新しいポインターの参照カウントをインクリメントしないので **、UnwrapNoRef** を正常に呼び出した後、参照カウントを維持するために [IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)を呼び出す必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

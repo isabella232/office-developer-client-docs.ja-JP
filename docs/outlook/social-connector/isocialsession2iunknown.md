@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f516e86e-0158-472b-9711-fe7491b24404
-description: フレンドのフレンド、オンデマンドまたはハイブリッド同期の追加、アクティビティのオンデマンド同期、またはキャッシュされた資格情報を使用したソーシャルネットワークへのログオンをサポートしています。
+description: キャッシュされた資格情報を使用して、フレンドの追加、フレンドのオンデマンドまたはハイブリッド同期、アクティビティのオンデマンド同期、またはソーシャル ネットワークへのログオンをサポートします。
 ms.openlocfilehash: 6dc581bb812408d7e01f94c375671783445616a1
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -17,24 +17,24 @@ ms.locfileid: "33408832"
 ---
 # <a name="isocialsession2--iunknown"></a>ISocialSession2 : IUnknown
 
-フレンドのフレンド、オンデマンドまたはハイブリッド同期の追加、アクティビティのオンデマンド同期、またはキャッシュされた資格情報を使用したソーシャルネットワークへのログオンをサポートしています。
+キャッシュされた資格情報を使用して、フレンドの追加、フレンドのオンデマンドまたはハイブリッド同期、アクティビティのオンデマンド同期、またはソーシャル ネットワークへのログオンをサポートします。
   
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
-次の表に、 **ISocialSession2**インターフェイスで使用できるメンバーを示します。 
+次の表に **、ISocialSession2** インターフェイスで使用できるメンバーを示します。 
   
 |**名前**|**メンバーの種類**|**説明**|
 |:-----|:-----|:-----|
-|[この例](isocialsession2-followpersonex.md) <br/> |メソッド  <br/> |_emailaddresses_および_displayName_パラメーターで指定された人物を、ソーシャルネットワーク上のログオンユーザーのフレンドとして追加します。  <br/> |
-|[GetActivitiesEx](isocialsession2-getactivitiesex.md) <br/> |メソッド  <br/> |_hashedAddresses_パラメーターによって指定されたユーザーのアクティビティのコレクションを表す文字列を取得します。  <br/> |
-|[GetPeopleDetails](isocialsession2-getpeopledetails.md) <br/> |メソッド  <br/> |ユーザーの個人情報および画像の詳細のコレクションが含まれている文字列を返し__ ます。  <br/> |
-|[logoncached](isocialsession2-logoncached.md) <br/> |メソッド  <br/> |キャッシュされた資格情報を使用してソーシャルネットワークサイトにログオンします。  <br/> |
+|[FollowPersonEx](isocialsession2-followpersonex.md) <br/> |メソッド  <br/> |_emailAddresses_ パラメーターと _displayName_ パラメーターで識別されるユーザーを、ソーシャル ネットワーク上のログオンユーザーのフレンドとして追加します。  <br/> |
+|[GetActivitiesEx](isocialsession2-getactivitiesex.md) <br/> |メソッド  <br/> |_hashedAddresses_ パラメーターで指定されたユーザーのアクティビティのコレクションを表す文字列を取得します。  <br/> |
+|[GetPeopleDetails](isocialsession2-getpeopledetails.md) <br/> |メソッド  <br/> |_personsAddresses_ パラメーターで指定されたユーザーの人物と画像の詳細のコレクションを含む文字列を返します。  <br/> |
+|[LogonCached](isocialsession2-logoncached.md) <br/> |メソッド  <br/> |キャッシュされた資格情報を使用してソーシャル ネットワーク サイトにログオンします。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-Outlook Social Connector (.osc) プロバイダーは、このインターフェイスを実装することができます。プロバイダーが、フレンドのオンデマンド同期、またはアクティビティのオンデマンド同期をサポートしている場合、またはキャッシュされた資格情報を使用してソーシャルネットワークにログオンしている場合です。 .osc プロバイダーが**ISocialSession2**を実装し、ソーシャルネットワークでフォローしているユーザーをサポートしている場合、.osc は i [alsession:: olperson](isocialsession-followperson.md)の代わりに[ISocialSession2:: olperson ex](isocialsession2-followpersonex.md)を呼び出し、プロバイダーが実装する必要があります。**ISocialSession2::** ということもあります。
+Outlook ソーシャル コネクタ (OSC) プロバイダーは、プロバイダーが友人のオンデマンドまたはハイブリッド同期、アクティビティのオンデマンド同期、キャッシュされた資格情報を使用してソーシャル ネットワークにログオンする場合に、このインターフェイスを実装できます。 OSC プロバイダーが **ISocialSession2** を実装し、ソーシャル ネットワーク上で次のユーザーをサポートしている場合、OSC は [ISocialSession::FollowPerson](isocialsession-followperson.md)の代わりに [ISocialSession2::FollowPersonEx](isocialsession2-followpersonex.md)を呼び出し、プロバイダーは **ISocialSession2::FollowPersonEx** も実装する必要があります。
   
 ## <a name="see-also"></a>関連項目
 
-- [Outlook Social Connector プロバイダーインターフェイス](outlook-social-connector-provider-interfaces.md)
+- [Outlookソーシャル コネクタ プロバイダー インターフェイス](outlook-social-connector-provider-interfaces.md)
 

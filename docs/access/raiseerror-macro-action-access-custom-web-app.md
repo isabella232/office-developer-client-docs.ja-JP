@@ -1,5 +1,5 @@
 ---
-title: RaiseError マクロアクション (Access カスタム web アプリ)
+title: RaiseError マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33408244"
 ---
-# <a name="raiseerror-macro-action-access-custom-web-app"></a>RaiseError マクロアクション (Access カスタム web アプリ)
+# <a name="raiseerror-macro-action-access-custom-web-app"></a>RaiseError マクロ アクション (Access カスタム Web アプリ)
 
 " **RaiseError** /エラーの生成" アクションは、指定されたエラー メッセージが含まれるポップアップ ウィンドウを表示します。 
   

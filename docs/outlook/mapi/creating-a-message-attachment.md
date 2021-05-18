@@ -19,74 +19,74 @@ ms.locfileid: "33405997"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージの添付ファイルは、メッセージと共に送信または保存できる、ファイル、別のメッセージ、または OLE オブジェクトなどの追加データです。 各添付ファイルには、それを識別し、その種類とその表示方法を説明するプロパティのコレクションがあります。 受信者と同様に、メッセージの添付ファイルには、属しているメッセージを介してのみアクセスできます。 そのため、添付ファイルを使用できるようにするには、メッセージを開いておく必要があります。
+メッセージ添付ファイルは、ファイル、別のメッセージ、OLE オブジェクトなどの追加のデータで、メッセージと共に送信または保存できます。 各添付ファイルには、それを識別し、その種類とそのレンダリング方法を記述するプロパティのコレクションがあります。 受信者と同様に、メッセージの添付ファイルにアクセスできるのは、その添付ファイルが属するメッセージのみです。 したがって、添付ファイルを使用するには、そのメッセージを開く必要があります。
   
-## <a name="create-a-message-attachment"></a>メッセージの添付ファイルを作成する
+## <a name="create-a-message-attachment"></a>メッセージ添付ファイルの作成
   
-1. メッセージの[IMessage:: createattach](imessage-createattach.md)メソッドを呼び出し、インターフェイス識別子として NULL を渡します。 **createattach**は、メッセージ内の新しい添付ファイルを一意に識別する番号を返します。 添付ファイルの番号は、 **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) プロパティに格納され、添付ファイルを含むメッセージが開いている間のみ有効です。
+1. メッセージの [IMessage::CreateAttach メソッドを呼び出](imessage-createattach.md) し、インターフェイス識別子として NULL を渡します。 **CreateAttach** は、メッセージ内の新しい添付ファイルを一意に識別する番号を返します。 添付ファイル番号は PR_ATTACH_NUM **(** [PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) プロパティに格納され、添付ファイルを含むメッセージが開いている限り有効です。
     
-2. **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) を呼び出して、添付ファイルへのアクセス方法を示すように、 [imapiprop:: setprops](imapiprop-setprops.md)を呼び出します。 **PR_ATTACH_METHOD**が必要です。 次のように設定します。 
+2. [IMAPIProp::SetProps](imapiprop-setprops.md)を呼び出して、PR_ATTACH_METHOD[(PidTagAttachMethod)](pidtagattachmethod-canonical-property.md)を設定して、添付ファイルにアクセスする方法を示します。 **PR_ATTACH_METHOD** 必要です。 次の値に設定します。 
     
-   - 添付ファイルがバイナリデータの場合は ATTACH_BY_VALUE。
+   - ATTACH_BY_VALUEがバイナリ データの場合は、この値を使用します。
     
-   - 添付ファイルがファイルの場合は、ATTACH_BY_REFERENCE、ATTACH_BY_REF_RESOLVE、または ATTACH_BY_REF_ONLY。
+   - ATTACH_BY_REFERENCE、ATTACH_BY_REF_RESOLVE、または添付ATTACH_BY_REF_ONLYファイルの場合は、このファイルを使用します。
     
-   - 添付ファイルがメッセージの場合は ATTACH_EMBEDDED_MSG。
+   - ATTACH_EMBEDDED_MSGメッセージの場合は、添付ファイルを削除します。
     
-   - 添付ファイルが OLE オブジェクトの場合は ATTACH_OLE。
+   - ATTACH_OLEが OLE オブジェクトの場合は、このプロパティを使用します。
     
-3. 適切な添付ファイルデータのプロパティを設定します。
+3. 適切な添付ファイル データ プロパティを設定します。
     
-   - **PR_ATTACH_DATA_BIN**([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) バイナリデータおよび OLE 1 オブジェクトを対象としています。
+   - **PR_ATTACH_DATA_BIN** データおよび OLE 1 オブジェクトの場合は、 ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) を使用します。
     
-   - **PR_ATTACH_PATHNAME**([PidTagAttachPathname](pidtagattachpathname-canonical-property.md)) ファイルを使用します。
+   - **PR_ATTACH_PATHNAME** ([PidTagAttachPathname](pidtagattachpathname-canonical-property.md)) を使用します。
     
-   - **PR_ATTACH_DATA_OBJ**([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) メッセージおよび OLE 2 オブジェクトの場合。
+   - **PR_ATTACH_DATA_OBJ** と OLE 2 オブジェクトの場合は、 ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) を使用します。
     
-4. **PR_ATTACH_RENDERING** ([PidTagAttachRendering](pidtagattachrendering-canonical-property.md)) を設定して、ファイルまたはバイナリの添付ファイルのグラフィック表現を保持します。 OLE オブジェクトには、レンダリング情報を内部的に保存するか、添付されたメッセージを格納するように設定しないでください。 
+4. ファイル **PR_ATTACH_RENDERING** バイナリ添付ファイルの添付ファイルのグラフィック表現を保持する場合は、[ファイル][(PidTagAttachRendering)](pidtagattachrendering-canonical-property.md)を設定します。 レンダリング情報を内部的に格納する OLE オブジェクト、または添付メッセージには設定しません。 
     
-5. **PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md)) を設定して、添付ファイルを表示する場所を示します。 **PR_RENDERING_POSITION**は、 **PR_BODY**プロパティを設定するクライアントにのみ適用されます。 **PR_RTF_COMPRESSED**のみをサポートしている場合は、次のプレースホルダー情報を圧縮ストリームに配置します。
+5. 添付 **PR_RENDERING_POSITION** を表示する場所を示すプロパティ [(PidTagRenderingPosition)](pidtagrenderingposition-canonical-property.md)を設定します。 **PR_RENDERING_POSITION** プロパティを設定するクライアントにのみ **PR_BODY** されます。 データの取得のみをサポート **PR_RTF_COMPRESSED、** 次のプレースホルダー情報を圧縮ストリームに配置します。
     
    `\objattph`
 
-   **PR_RENDERING_POSITION**を設定するには、序数オフセットを文字で表す数値を指定します。 **PR_BODY**の最初の文字は0に、添付ファイルがレンダリングされるメッセージ内の場所を知る必要がある場合は、0xffffffff、または0xffffffff**PR_BODY**内で添付ファイルをレンダリングします。
+   PR_RENDERING_POSITIONを設定するには、メッセージ内で添付ファイルがレンダリングされる場所を知る必要がある場合は **、PR_BODY** の最初の文字を 0 に、文字で序数オフセットを表す数値を割り当てるか、PR_BODY 内で添付ファイルをレンダリングしない場合は 0xFFFFFFFF を **割** り当てる必要があります。
     
-6. **PR_ATTACH_FILENAME** ([PidTagAttachFilename](pidtagattachfilename-canonical-property.md)) を設定して、ファイル添付ファイルのファイルの短い形式の名前と**\_PR ATTACH_LONG_FILENAME** ([PidTagAttachLongFilename](pidtagattachlongfilename-canonical-property.md)) を指定し、ファイル名を指定します。ロングファイル形式を処理するプラットフォーム上。 両方のプロパティは省略可能です。 ただし、 **PR_ATTACH_LONG_FILENAME**を設定する場合は、 **PR_ATTACH_FILENAME**も設定します。 
+6. **PR_ATTACH_FILENAME** ([PidTagAttachFilename](pidtagattachfilename-canonical-property.md)) を設定して、ファイル添付ファイルのファイルの短い名前を示し **、PR \_ ATTACH_LONG_FILENAME** ([PidTagAttachLongFilename](pidtagattachlongfilename-canonical-property.md)) は、長いファイル名の形式を処理するプラットフォームでサポートされているファイルの名前を示します。 どちらのプロパティもオプションです。 ただし、このプロパティを **設定PR_ATTACH_LONG_FILENAME、****設定も** PR_ATTACH_FILENAME。 
     
-7. **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) を設定して、ダイアログボックスに表示できる添付ファイルの名前を指定します。 PR_DISPLAY_NAME は省略可能です。 
+7. **[PR_DISPLAY_NAME** ] ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) を設定して、ダイアログ ボックスに表示できる添付ファイルの名前を示します。 PR_DISPLAY_NAMEオプションです。 
     
-## <a name="set-prattachdatabin"></a>PR_ATTACH_DATA_BIN の設定
+## <a name="set-pr_attach_data_bin"></a>設定PR_ATTACH_DATA_BIN
   
-1. **IStream**インターフェイスを使用してプロパティを開くには、 [imapiprop:: openproperty](imapiprop-openproperty.md)を呼び出します。 
+1. [IMAPIProp::OpenProperty を](imapiprop-openproperty.md)呼び出して **、IStream インターフェイスでプロパティを開** きます。 
     
-2. ファイルにデータが含まれていて、開かれている場合、またはバッファーサイズを明示的に制御する必要がある場合は、 **IStream:: Write** in ループを使用してデータをストリームに格納します。 
+2. ファイルにデータが含まれており、開いている場合、またはバッファー サイズを明示的に制御する必要がある場合は、ループ内で **IStream::Write** を呼び出して、データをストリームに配置します。 
     
-3. 別の方法として、 **openstreamonfile**を呼び出してデータファイルにアクセスするストリームを作成し、このストリームの**IStream:: CopyTo**メソッドを呼び出して、 **openproperty**によって返されるストリームにデータをコピーできます。
+3. もう 1 つのオプションは **、OpenStreamOnFile** を呼び出してデータ ファイルにアクセスするストリームを作成し、このストリームの **IStream::CopyTo** メソッドを呼び出して **、OpenProperty** によって返されるストリームにデータをコピーすることです。
     
-4. 新しいストリームの**IStream:: Commit**メソッドを呼び出します。 
+4. 新しいストリームの **IStream::Commit メソッドを呼び出** します。 
     
-## <a name="set-prattachdataobj"></a>PR_ATTACH_DATA_OBJ の設定
+## <a name="set-pr_attach_data_obj"></a>設定PR_ATTACH_DATA_OBJ
   
-1. **IStreamDocfile**インターフェイスを使用してプロパティを開き、構造化ストレージと連携するストリームを作成するには、 **imapiprop:: openproperty**を呼び出します。 **IStreamDocfile**は、構造化ストレージを格納して取得するためのパフォーマンスの高い方法をクライアントに提供するために、メッセージストアプロバイダーによって実装されています。 **IStreamDocfile**インターフェイスは**IStream**と同じですが、ストリームの内容は構造化ストレージとして書式設定されることが保証されています。 この呼び出しが正常に終了した場合は、 **PR_ATTACH_DATA_BIN**の設定についての説明と同じ手順でストリームを作成します。
+1. **IMAPIProp::OpenProperty** を呼び出して **、IStreamDocfile** インターフェイスを使用してプロパティを開き、構造化ストレージで動作するストリームを作成します。 **IStreamDocfile は** メッセージ ストア プロバイダーによって実装され、クライアントに構造化ストレージを格納および取得するためのパフォーマンスの高い方法を提供します。 **IStreamDocfile** インターフェイスは **IStream** と同じですが、ストリームのコンテンツは構造化ストレージとしてフォーマットされる保証があります。 この呼び出しが成功した場合は、ストリームの設定と同じ手順でストリームを作成 **PR_ATTACH_DATA_BIN。**
     
-2. **openproperty**が失敗した場合: 
+2. **OpenProperty が失敗** した場合: 
     
-   1. **IStorage**を再度呼び出すには、 **openproperty**を呼び出します。 
+   1. **OpenProperty を再度呼び** 出して **IStorage を求める**。 
       
-   2. **StgOpenStorage**を呼び出して、OLE オブジェクトを開き、ストレージオブジェクトを返します。 
+   2. **StgOpenStorage を呼び出** して OLE オブジェクトを開き、ストレージ オブジェクトを返します。 
       
-   3. 返されたストレージオブジェクトの**IStorage:: CopyTo**メソッドを呼び出して、 **openproperty**から返されたストレージオブジェクトにコピーします。
+   3. 返されたストレージ オブジェクトの **IStorage::CopyTo** メソッドを呼び出して **、OpenProperty** から返されたストレージ オブジェクトにコピーします。
       
-   4. 新しいストレージオブジェクトの**IStorage:: Commit**メソッドを呼び出します。 
+   4. 新しいストレージ オブジェクトの **IStorage::Commit メソッドを呼び出** します。 
     
-## <a name="set-prattachpathname"></a>PR_ATTACH_PATHNAME の設定
+## <a name="set-pr_attach_pathname"></a>設定PR_ATTACH_PATHNAME
   
-1. [spropvalue](spropvalue.md)構造体を割り当て、 **ulPropTag**メンバーを**PR_ATTACH_PATHNAME**に設定し、 **LPSZ**メンバーをファイル名を表す文字列に設定します。 
+1. [SPropValue](spropvalue.md)構造体を割り当て **、ulPropTag** メンバーを PR_ATTACH_PATHNAME に **、Value.LPSZ** メンバーをファイル名を表す文字列に設定します。 
     
-2. 添付ファイルの[imapiprop:: setprops](imapiprop-setprops.md)メソッドを呼び出します。 
+2. 添付ファイルの [IMAPIProp::SetProps メソッドを呼び出](imapiprop-setprops.md) します。 
     
 > [!NOTE]
-> プラットフォームが長いファイル名をサポートしている場合は、 **PR_ATTACH_PATHNAME**と**PR_ATTACH_LONG_PATHNAME**の両方を設定します。 短いファイル名を取得するには、オペレーティングシステムの呼び出しを行う必要がある場合があります。 
+> プラットフォームで長いファイル名がサポートされている場合は、ファイル名とファイル名 **PR_ATTACH_PATHNAME** 設定 **PR_ATTACH_LONG_PATHNAME。** 短いファイル名を取得するには、オペレーティング システムの呼び出しが必要な場合があります。 
   
 ## <a name="see-also"></a>関連項目
 

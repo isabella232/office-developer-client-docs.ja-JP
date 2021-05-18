@@ -28,14 +28,14 @@ ms.locfileid: "33406382"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |ハイパーリンク *名前*です。SortKey (ハイパーリンク** ) の行名  <br/> |
+|セル名:  <br/> |ハイパーリンク *name*  .Hyperlink  *.name*  が行名である SortKey  <br/> |
    
 プログラムから、インデックスによって [SortKey] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionHyperlink** <br/> |
-|行インデックス:  <br/> |**visRow1stHyperlink** +  *i* = ** 0、1、2...  <br/> |
-|セル インデックス:  <br/> |**vishlinksortkey** <br/> |
+|行インデックス:  <br/> |**visRow1stHyperlink**  +  *i* *=* 0, 1, 2...  <br/> |
+|セル インデックス:  <br/> |**visHLinkSortKey** <br/> |
    
 

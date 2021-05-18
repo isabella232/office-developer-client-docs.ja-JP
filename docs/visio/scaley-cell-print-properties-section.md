@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm1033788
 localization_priority: Normal
 ms.assetid: 02835aff-455b-ffeb-d53b-28387b6ce361
-description: 印刷ページの図面ページの倍率をパーセントで指定します。
+description: プリンター ページの図面ページの倍率の割合を指定します。
 ms.openlocfilehash: 0f8e86675a039002b60438eac7df92f4a2b13b98
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33406991"
 ---
 # <a name="scaley-cell-print-properties-section"></a>[ScaleY] セル ([Print Properties] セクション)
 
-印刷ページの図面ページの倍率をパーセントで指定します。
+プリンター ページの図面ページの倍率の割合を指定します。
   
 ## <a name="remarks"></a>注釈
 
-この値は、OnPage セルの値が FALSE の場合にのみ使用されます。 ScaleX および ScaleY セルの値は常に同じで、[**ページ設定**] ダイアログボックス**** ([**デザイン**] タブの [**ページ設定**] 矢印をクリック) の [**印刷設定**] タブの [設定] に設定されている値に対応しています。 
+この値は、OnPage セルの値が FALSE の場合にのみ使用されます。 ScaleX セルと ScaleY セルの値は常に同じです。これは、[ページセットアップ] ダイアログボックスの [印刷設定] タブの [調整] 設定の値に対応します ([デザイン] タブの [ページ設定] 矢印を **クリック** します)。  
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ScaleY] セルへの参照を取得するには、次の値を使用します。 
   

@@ -1,5 +1,5 @@
 ---
-title: サービスプロバイダーログオンの実装
+title: サービス プロバイダー ログオンの実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,57 +15,57 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32310088"
 ---
-# <a name="implementing-service-provider-logon"></a>サービスプロバイダーログオンの実装
+# <a name="implementing-service-provider-logon"></a>サービス プロバイダー ログオンの実装
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI は、エントリポイント関数から返されるポインターを使用してログオンプロセスを開始するために、プロバイダオブジェクト内のメソッドを呼び出します。 このメソッドは、サービスプロバイダーの種類に応じて、次のように異なります。
+MAPI は、プロバイダー オブジェクト内のメソッドを呼び出して、エントリ ポイント関数から返すポインターを使用してログオン プロセスを開始します。 このメソッドは、サービス プロバイダーの種類に応じて、次のように異なります。
   
-- [IABProvider::](iabprovider-logon.md)アドレス帳プロバイダーのログオン 
+- [IABProvider::アドレス帳](iabprovider-logon.md) プロバイダーのログオン 
     
-- [IMSProvider::](imsprovider-logon.md)メッセージストアプロバイダーへのログオン 
+- [IMSProvider::メッセージ ストア](imsprovider-logon.md) プロバイダーのログオン 
     
-- [ixpprovider::](ixpprovider-transportlogon.md)トランスポートプロバイダーの transportlogon 
+- [IXPProvider::トランスポート](ixpprovider-transportlogon.md) プロバイダーの TransportLogon 
     
-実装する任意のログオン方法で、次のタスクを実行します。
+実装するログオン方法で、次のタスクを実行します。
   
-1. 入力パラメーターとして渡される support オブジェクトの参照カウントをインクリメントするには、 [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)メソッドを呼び出します。 
+1. [IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)メソッドを呼び出して、入力パラメーターとして渡されるサポート オブジェクトの参照カウントを増やします。 
     
-2. サポートオブジェクトの[imapisupport:: openprofilesection](imapisupport-openprofilesection.md)メソッドを呼び出して、プロファイルセクションにアクセスします。 
+2. サポート オブジェクトの [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md) メソッドを呼び出して、プロファイル セクションにアクセスします。 
     
-3. プロファイルセクションの[imapiprop:: setprops](imapiprop-setprops.md)メソッドを呼び出して、次のプロパティを設定します。 
+3. プロファイル セクションの [IMAPIProp::SetProps](imapiprop-setprops.md) メソッドを呼び出して、次のプロパティを設定します。 
     
-  - **PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
+  - **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
     
-  - **PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))
+  - **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))
     
-  - **PR_PROVIDER_DISPLAY**([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md))
+  - **PR_PROVIDER_DISPLAY** ([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md))
     
-  - **PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md))
+  - **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))
     
   > [!NOTE]
-  > プロファイルセクションの**PR_RESOURCE_FLAGS**プロパティまたは**PR_PROVIDER_DLL_NAME**プロパティを設定しようとしないでください。 ログオン時に、これらのプロパティは読み取り専用になります。 
+  > プロファイル セクションのプロパティを設定したり、プロパティ **PR_RESOURCE_FLAGS PR_PROVIDER_DLL_NAME** したりしない。 ログオン時に、これらのプロパティは読み取り専用です。 
   
-4. 構成に必要なプロパティがプロファイルに保存されているか、ユーザーから使用可能であることを確認してください。 構成の確認の詳細については、「[サービスプロバイダーの構成を確認](verifying-service-provider-configuration.md)する」を参照してください。
+4. 構成に必要なプロパティがプロファイルに格納されている、またはユーザーが使用できるプロパティを確認します。 構成の確認の詳細については [、「Verifying Service Provider Configuration」を参照してください](verifying-service-provider-configuration.md)。
     
-5. サポートオブジェクトの[imapisupport:: setprovideruid](imapisupport-setprovideruid.md)メソッドを呼び出して、プロバイダーがアドレス帳またはメッセージストアプロバイダーの場合は、一意の識別子 ( [MAPIUID](mapiuid.md)) を登録します。 トランスポートプロバイダーは、MAPI が[IXPLogon:: AddressTypes](ixplogon-addresstypes.md)メソッドを呼び出すときに、 **MAPIUID**構造体を登録します。 **MAPIUID**の登録の詳細については、「[サービスプロバイダーの一意識別子の登録](registering-service-provider-unique-identifiers.md)」を参照してください。
+5. プロバイダーがアドレス帳またはメッセージ ストア プロバイダーである場合は、サポート オブジェクトの [IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md) メソッドを呼び出して、一意の識別子 [(MAPIUID)](mapiuid.md)を登録します。 MAPI が [IXPLogon::AddressTypes](ixplogon-addresstypes.md)メソッドを呼び出す場合、トランスポート プロバイダーは **MAPIUID** 構造体を登録します。 **MAPIUID** の登録の詳細については、「Registering Service [Provider Unique IDENTIFIERs」を参照してください](registering-service-provider-unique-identifiers.md)。
     
-6. ログオンオブジェクトをインスタンス化し、次のいずれかの値を返します。
+6. ログオン オブジェクトをインスタンス化し、次のいずれかの値を返します。
     
-  - 成功したログオンを示す S_OK。
+  - S_OK正常にログオンされたことを示すメッセージが表示されます。
     
-  - MAPI_E_UNCONFIGURED は、1つ以上の構成プロパティが使用できないことを示します。
+  - MAPI_E_UNCONFIGURED 1 つ以上の構成プロパティが使用できなかったかどうかを示します。
     
-  - MAPI_E_USER_CANCEL は、ユーザーが構成ダイアログボックスをキャンセルし、構成プロパティが使用できなくなったことを示します。
+  - MAPI_E_USER_CANCELが構成ダイアログ ボックスをキャンセルし、構成プロパティが使用できないことを示します。
     
-  - MAPI_E_FAILONEPROVIDER は、プロバイダーを構成できないが、MAPI が使用できるようにする必要があることを示します。 ログオン方法では、プロバイダーがパスワードを必要とする場合や、ユーザーインターフェイスが無効になっているためユーザーにメッセージを表示できない場合など、致命的ではないエラーを報告するために、この値を返します。 
+  - MAPI_E_FAILONEPROVIDERプロバイダーを構成できないが、MAPI で使用を許可する必要があります。 ログオン メソッドは、この値を返して、プロバイダーがパスワードを要求し、ユーザー インターフェイスが無効になっているため、ユーザーにメッセージを表示できない場合など、非fatal エラーを報告する必要があります。 
     
-前述のタスクの一覧では、サービスプロバイダーログオン方法の最小実装について説明します。 必要に応じて、追加機能を含めることができます。 たとえば、一部のプロバイダーは[imapisupport:: modifystatusrow](imapisupport-modifystatusrow.md)を呼び出して、ログオン方法の状態テーブルを更新します。 
+前のタスクの一覧では、サービス プロバイダーのログオン メソッドの最小実装について説明します。 必要に応じて、追加の機能を含めできます。 たとえば、一部のプロバイダーは [IMAPISupport::ModifyStatusRow](imapisupport-modifystatusrow.md) を呼び出して、ログオン メソッドで状態テーブルを更新します。 
   
 > [!NOTE]
-> ログオン時に最高のパフォーマンスを得るには、 [imapisupport::P reparesubmit](imapisupport-preparesubmit.md)または[imapisupport:: SpoolerNotify](imapisupport-spoolernotify.md)のいずれかを呼び出すことを避けてください。 これらの呼び出しを完了して、ログオン方法に制御を戻す前に、MAPI スプーラーを開始する必要があります。 
+> ログオン時に最高のパフォーマンスを実現するには [、IMAPISupport::P repareSubmit](imapisupport-preparesubmit.md) または [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md)を呼び出さしないようにします。 これらの呼び出しを完了し、ログオン メソッドに制御を戻す前に、MAPI スプーラーを開始する必要があります。 
   
 ## <a name="see-also"></a>関連項目
 
-- [サービスプロバイダーの開始](starting-a-service-provider.md)
+- [サービス プロバイダーの開始](starting-a-service-provider.md)
 

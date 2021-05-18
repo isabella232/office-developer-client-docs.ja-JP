@@ -26,14 +26,14 @@ ms.locfileid: "33408867"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [indright] [ *i* ] *i* = <1>、2、3...  <br/> |
+| セル名:  <br/> | Para.IndRight[  *i*  ]  *ここで、i*  = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [IndRight] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionParagraph** <br/> |
-| 行インデックス:  <br/> |**visRowParagraph** +  *i* = ** 0、1、2...  <br/> |
-| セル インデックス:  <br/> |**visindentright** <br/> |
+| 行インデックス:  <br/> |**visRowParagraph**  +  *i* *=* 0, 1, 2...  <br/> |
+| セル インデックス:  <br/> |**visIndentRight** <br/> |
    
 

@@ -23,11 +23,11 @@ ms.locfileid: "33406088"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-定数をプロパティの値と照合するために使用されるプロパティ制限を記述します。
+定数とプロパティの値を一致するために使用されるプロパティ制限について説明します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SPropertyRestriction
@@ -39,45 +39,45 @@ typedef struct _SPropertyRestriction
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 **relop**
   
-> 検索で使用される関係演算子です。 可能な値は次のとおりです。
+> 検索で使用される関係演算子。 指定できる値は次のとおりです。
     
-  - RELOP_GE: 比較は、最初の値よりも大きくなるか等しいかに基づいて行われます。
+  - RELOP_GE: 比較は、大きいまたは等しい最初の値に基づいて行います。
         
-  - RELOP_GT: 比較は、より大きな最初の値に基づいて行われます。
+  - RELOP_GT: 比較は、より大きい最初の値に基づいて行います。
         
-  - RELOP_LE: 比較は、最初の値よりも小さいか等しいかに基づいて行われます。
+  - RELOP_LE: 比較は、より小さいか等しい最初の値に基づいて行います。
         
-  - RELOP_LT: 比較は、小さい方の値に基づいて行われます。
+  - RELOP_LT: 比較は、より小さい最初の値に基づいて行います。
         
-  - RELOP_NE: 比較は、等しくない値に基づいて行われます。
+  - RELOP_NE: 比較は、等しくない値に基づいて行います。
         
-  - RELOP_RE: 比較は、LIKE (正規表現) の値に基づいて行われます。
+  - RELOP_RE: 比較は LIKE (正規表現) の値に基づいて行います。
         
-  - RELOP_EQ: 比較は同じ値に基づいて行われます。
+  - RELOP_EQ: 比較は、等しい値に基づいて行います。
     
 **ulPropTag**
   
-> 比較するプロパティを識別するプロパティタグ。 
+> 比較するプロパティを識別するプロパティ タグ。 
     
-**lpprop**
+**lpProp**
   
-> 比較で使用される定数値を含む[spropvalue](spropvalue.md)構造体へのポインター。 
+> 比較で使用される定数値を含む [SPropValue](spropvalue.md) 構造体へのポインター。 
     
 ## <a name="remarks"></a>注釈
 
-**spropertyrestriction**構造には、2つのプロパティタグがあります。 一方は**ulPropTag**メンバーで、もう1つは**lpprop**でポイントされた**spropvalue**構造の**ulPropTag**メンバーにあります。 MAPI には、[プロパティ識別子] フィールドと [プロパティの種類] フィールドの両方が必要です。 **spropertyrestriction**の**ulPropTag**は一致するプロパティを示し、 **spropertyrestriction**の**ulPropTag**の種類に対する**spropertyrestriction**の**lpprop**ポインターは、のメンバーの値がどのように表示されるかを示しています。**lpprop**ユニオンが解釈されます。 2つのプロパティの型は一致している必要があります。または、制限が[imapitable:: Restrict](imapitable-restrict.md)または[imapitable:: FindRow](imapitable-findrow.md)の呼び出しで使用されている場合、エラー値 MAPI_E_TOO_COMPLEX が返されます。 
+**SPropertyRestriction** 構造体には 2 つのプロパティ タグがあります。 1 つは **ulPropTag** メンバーに、もう 1 つは lpProp によって指される **SPropValue 構造体の ulPropTag** メンバー **に含されます**。  MAPI には、プロパティ識別子フィールドとプロパティの種類フィールドの両方が必要です。 **SPropertyRestriction の ulPropTag** は一致するプロパティであり **、SPropertyRestriction** の **lpProp** ポインターは **、lpProp** union のメンバー値の解釈方法を示します。    2 つのプロパティの種類が一致する必要があります。それ以外の場合は [、IMAPITable::Restrict](imapitable-restrict.md) または [IMAPITable::FindRow](imapitable-findrow.md)の呼び出しで制限が使用される場合、エラー値 MAPI_E_TOO_COMPLEX が返されます。 
   
-比較順序は、 _(プロパティ値) (リレーショナル演算子) (定数値_) です。
+比較順序は  _(プロパティ値) (関係演算子) (定数値) です_。
   
-プロパティ制限が**IMAPITable:: Restrict**または**imapitable:: FindRow**に渡され、target プロパティが存在しない場合、制限の結果は未定義となります。 プロパティ制限に参加する**と**制限が存在し、制限が**存在**することにより、発信者が正確な結果を保証できます。 [sexistrestriction](sexistrestriction.md)構造を使用して、**と**制限を定義するための、**存在**制限と[SAndRestriction](sandrestriction.md)構造を定義します。 
+プロパティ制限が **IMAPITable::Restrict** または **IMAPITable::FindRow** に渡され、ターゲット プロパティが存在しない場合、制限の結果は未定義になります。 プロパティ制限と EXIST 制限を結合する **AND** 制限を作成することで、呼び出し元は正確な結果を保証できます。 [SExistRestriction](sexistrestriction.md)構造体を使用して **、EXIST** 制限と [SAndRestriction](sandrestriction.md)構造体を定義して AND 制限 **を定義** します。 
   
-テーブルを実装しているサービスプロバイダーがそれらをサポートしている場合は、プロパティ制限で複数値プロパティタグを使用できます。 サポートされている場合は、複数値プロパティタグを使用して、単一値のプロパティタグを任意の場所で使用できます。 
+複数値のプロパティ タグは、テーブルを実装するサービス プロバイダーがそれらをサポートしている場合、プロパティ制限で使用できます。 サポートされている場合、複数値プロパティ タグは、単一値プロパティ タグを使用できる任意の場所で使用できます。 
   
-複数値プロパティタグは、次の方法で使用できます。
+複数値のプロパティ タグは、次のメソッドで使用できます。
   
 - [IMAPIProp::SetProps](imapiprop-setprops.md)
     
@@ -90,9 +90,9 @@ typedef struct _SPropertyRestriction
 - [IMAPITable::Restrict](imapitable-restrict.md)
     
 > [!IMPORTANT]
-> 複数値のプロパティを制限する場合は、2つのプロパティタグが一致しないようなケースがあります。 この場合は、次の条件を満たす必要があります。 > **spropertyrestriction**の**ulPropTag**のプロパティの種類に、複数値のプロパティの種類のビットフラグ MV_FLAG (0x1000) が含まれている場合、 **spropertyrestriction**の**ulPropTag**のプロパティの型は、以前の MV_ を除いた値と一致する必要があります。フラグビットフラグ (逆)。 > たとえば、プロパティ0x8012101f のプロパティタグを持つカテゴリなど、複数値のカスタム文字列プロパティを使用するように制限するには、PROP_TAG (MV_FLAG | PT_UNICODE, 0x8012) のように、対応する**spropertyrestriction**が表示されます。示し. >  `SPropertyRestriction.ulPropTag = 0x8012101f; // attempt to restrict a MultiValue property`>  `SPropertyRestriction.lpProp->ulPropTag = 0x8012001f; // the lpszW member of the Value property is valid`>  `SPropertyRestriction.lpProp.Value->lpszW = L"My Category";`> **spropvalue**の**ulPropTag**のプロパティの種類に MV_FLAG ビットフラグが含まれている場合は、戻り値は MAPI_E_TOO_COMPLEX になる可能性があることに注意してください。 
+> 2 つのプロパティ タグが一致しない場合の大きなケースは、複数値のプロパティを制限する場合です。 この場合、次の値を true に設定する必要があります。 > **SPropertyRestriction** の **ulPropTag** のプロパティ型に複数値プロパティ型ビット フラグ MV_FLAG (0x1000) が含まれている場合 **、SPropValue** の **ulPropTag** のプロパティ型は、前者から MV_FLAG ビット フラグを差し引いたもの、つまり逆になります。 > たとえば、プロパティ 0x8012101f のプロパティ タグを持つカテゴリ 、つまり PROP_TAG(MV_FLAG|PT_UNICODE, 0x8012) などの複数値のカスタム文字列プロパティの使用を制限するには、対応する **SPropertyRestriction** が次のように表示されます。 >  `SPropertyRestriction.ulPropTag = 0x8012101f; // attempt to restrict a MultiValue property`>  `SPropertyRestriction.lpProp->ulPropTag = 0x8012001f; // the lpszW member of the Value property is valid`>  `SPropertyRestriction.lpProp.Value->lpszW = L"My Category";`> **SPropValue** の **ulPropTag** のプロパティの種類に MV_FLAG ビット フラグが含まれている場合、返される可能性が高MAPI_E_TOO_COMPLEX。 
   
-**spropertyrestriction**構造の詳細については、「[制限につい](about-restrictions.md)て」を参照してください。 
+**SPropertyRestriction** 構造の詳細については、「制限について [」を参照してください](about-restrictions.md)。 
   
 ## <a name="see-also"></a>関連項目
 

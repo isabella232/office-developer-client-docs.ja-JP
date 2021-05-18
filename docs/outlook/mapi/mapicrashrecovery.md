@@ -23,13 +23,13 @@ ms.locfileid: "33407215"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**mapicrashrecovery**関数は、個人用フォルダーファイル (PST) またはオフラインフォルダーファイル (OST) の共有メモリの状態をチェックします。 メモリが一貫した状態にある場合、 **mapicrashrecovery**関数はデータをディスクに移動し、プロセスが終了するまで追加の読み取りまたは書き込みアクセスを禁止します。 
+**MAPICrashRecovery 関数は**、個人用フォルダー ファイル (PST) またはオフライン フォルダー ファイル (OST) 共有メモリの状態をチェックします。 メモリが一貫性のある状態にある場合 **、MAPICrashRecovery** 関数はデータをディスクに移動し、プロセスが終了するまで読み取りまたは書き込みアクセスを防止します。 
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|エクスポート対象:  <br/> |olmapi32  <br/> |
+|次の方法でエクスポートされます。  <br/> |olmapi32.dll  <br/> |
 |呼び出し元:  <br/> |クライアント  <br/> |
 |実装元:  <br/> |Outlook  <br/> |
    
@@ -41,19 +41,19 @@ void MAPICrashRecovery(ULONG ulFlags);
 
 _ulFlags_
   
-> 順番MAPI のクラッシュ回復を実行する方法を制御するために使用されるフラグです。 次のフラグを設定できます。
+> [in]MAPI クラッシュ回復の実行方法を制御するために使用されるフラグ。 次のフラグを設定できます。
     
-   - **mapicrash\_の回復**: pst または ost が一貫した状態にある場合は、データをディスクに移動し、pst または ost をロックして読み取りまたは書き込みのアクセスを禁止します。
+   - **MAPICRASH \_RECOVER**: PST または OST が一貫性のある状態にある場合は、データをディスクに移動し、読み取りまたは書き込みアクセスを防ぐために PST または OST をロックします。
     
-   - **mapicrash\_CONTINUE**: デバッグのために pst または ost のロックを解除します。 **MAPICRASH_RECOVER**フラグを使用して**mapicrashrecovery**を正常に呼び出した後、mapicrash **\_** の**回復**を使用して、デバッグを続行できるようにします。 
+   - **MAPICRASH \_続行**: デバッグ用に PST または OST のロックを解除します。 **MAPICRASH_RECOVER** フラグを使用して **MAPICrashRecovery** を正常に呼び出した後 **、MAPICRASH \_ CONTINUE** フラグを使用して **MAPICrashRecovery** を呼び出して、デバッグを続行できます。 
     
-   - **mapicrash\_SYSTEM_SHUTDOWN**: pst または ost が一貫した状態にある場合は、データをディスクに移動し、pst または ost をロックして読み取りまたは書き込みアクセスを禁止します。 pst または ost を、 **mapicrash\_の CONTINUE**を使用してロック解除することはできません。 **mapicrash\_の回復**と組み合わせて使用する必要があります。 
+   - **MAPICRASH \_SYSTEM_SHUTDOWN**: PST または OST が一貫性のある状態にある場合は、データをディスクに移動し、読み取りまたは書き込みアクセスを防ぐために PST または OST をロックします。 MAPICRASH CONTINUE を使用して PST または **OST のロックを解除 \_ することはできません**。 MAPICRASH RECOVER と組み **合わせて使用する \_ 必要があります**。 
     
 ## <a name="remarks"></a>注釈
 
 上位バイト (0xFF000000) は、プロバイダー固有のクラッシュ回復フラグ用に予約されています。
   
-**WM_ENDSESSION**メッセージへの応答として、 **mapicrash\_の RECOVER**および**MAPICRASH_SYSTEM_SHUTDOWN**フラグを使用して、 **mapicrashrecovery**を呼び出します。 
+**MAPICRASH RECOVER を使用して MAPICrashRecovery** を呼び出し、MAPICRASH_SYSTEM_SHUTDOWNメッセージに応答して **フラグをWM_ENDSESSION** します。 **\_**  
   
 ## <a name="see-also"></a>関連項目
 

@@ -25,13 +25,13 @@ ms.locfileid: "33408643"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[adrlist](adrlist.md)構造体を破棄し、すべてのメンバー配列および構造体に割り当てられたメモリを含む、関連するメモリを解放します。 
+[ADRLIST 構造体を破棄し](adrlist.md)、関連付けられたメモリ (すべてのメンバー配列と構造体に割り当てられたメモリを含む) を解放します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 void FreePadrlist(
@@ -43,7 +43,7 @@ void FreePadrlist(
 
  _padrlist_
   
-> 順番破棄する**adrlist**構造体へのポインター。 
+> [in]破棄する **ADRLIST** 構造体へのポインター。 
     
 ## <a name="return-value"></a>Return value
 
@@ -51,9 +51,9 @@ void FreePadrlist(
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-[MAPIFreeBuffer](mapifreebuffer.md)関数は、 **freepadrlist**の実装の一環として、完全な構造を解放する前に**adrlist**構造体のすべてのエントリを解放するために呼び出します。 そのため、このようなエントリはすべて、各メンバーの配列および構造に対して個別の[MAPIAllocateBuffer](mapiallocatebuffer.md)呼び出しを使用して、 [adrlist](adrlist.md)構造の割り当てルールに従っている必要があります。 
+**FreePadrlist** の実装の一環として、MAPI は [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して **、ADRLIST** 構造内のすべてのエントリを解放してから、完全な構造を解放します。 したがって、このようなエントリはすべて、メンバー配列と構造体ごとに個別の[MAPIAllocateBuffer](mapiallocatebuffer.md)呼び出しを使用して[、ADRLIST](adrlist.md)構造体の割り当てルールに従っている必要があります。 
   
-**adrlist**および**srowset**構造体のメモリ割り当ての詳細については、「 [adrlist および srowset 構造体のメモリの管理](managing-memory-for-adrlist-and-srowset-structures.md)」を参照してください。 
+ADRLIST 構造体および **SRowSet** 構造体のメモリ割り当ての詳細については **、「ADRLIST** および SRowSet 構造体のメモリの管理」[を参照してください](managing-memory-for-adrlist-and-srowset-structures.md)。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -61,7 +61,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**�R�����g**|
 |:-----|:-----|:-----|
-|MAPIABFunctions  <br/> |addoneoffaddress  <br/> |mfcmapi は、 **freepadrlist**メソッドを使用して、メッセージに1回限りのアドレスを追加するために構築された adrlist 構造を解放します。  <br/> |
+|MAPIABFunctions.cpp  <br/> |AddOneOffAddress  <br/> |MFCMAPI は **FreePadrlist** メソッドを使用して、メッセージに 1 回きりアドレスを追加するために構築された ADRLIST 構造体を解放します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

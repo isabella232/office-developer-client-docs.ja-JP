@@ -20,11 +20,11 @@ ms.locfileid: "32319251"
   
 |**インターフェイス**|**説明**|
 |:-----|:-----|
-|[IOlkAccount](iolkaccount.md) <br/> |アカウントに関するプロパティやその他の情報の取得と設定をサポートします。  <br/> |
-|[IOlkAccountHelper](iolkaccounthelper.md) <br/> |現在の MAPI セッションでアカウントを管理するためのヘルパー機能を提供します。  <br/> |
+|[IOlkAccount](iolkaccount.md) <br/> |プロパティの取得と設定、およびアカウントに関するその他の情報をサポートします。  <br/> |
+|[IOlkAccountHelper](iolkaccounthelper.md) <br/> |現在の MAPI セッションで、アカウントを管理するためのヘルパー機能を提供します。  <br/> |
 |[IOlkAccountManager](iolkaccountmanager.md) <br/> |アカウントへのアクセスを管理し、アカウントの変更に関する通知を設定します。  <br/> |
-|[IOlkAccountNotify](iolkaccountnotify.md) <br/> |アカウントの変更についてクライアントへのコールバックを提供します。  <br/> |
-|[IOlkEnum](iolkenum.md) <br/> |[IUnknown](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown)オブジェクトとしてのアカウントの列挙をサポートします。  <br/> |
-|[IOlkErrorUnknown](iolkerrorunknown.md) <br/> |最新のエラーについての詳細情報を提供します。  <br/> |
+|[IOlkAccountNotify](iolkaccountnotify.md) <br/> |アカウントに対する変更のコールバックをクライアントに提供します。  <br/> |
+|[IOlkEnum](iolkenum.md) <br/> |[IUnknown オブジェクトとしてアカウントの列挙をサポート](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown)します。  <br/> |
+|[IOlkErrorUnknown](iolkerrorunknown.md) <br/> |最後のエラーに関する詳細な情報を提供します。  <br/> |
    
 

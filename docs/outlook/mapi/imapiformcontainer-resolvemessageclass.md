@@ -25,7 +25,7 @@ ms.locfileid: "33408552"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージクラスをフォームコンテナー内のフォームに解決し、そのフォームのフォーム情報オブジェクトを返します。
+メッセージ クラスをフォーム コンテナー内のフォームに解決し、そのフォームのフォーム情報オブジェクトを返します。
   
 ```cpp
 HRESULT ResolveMessageClass(
@@ -37,21 +37,21 @@ HRESULT ResolveMessageClass(
 
 ## <a name="parameters"></a>パラメーター
 
- _szmessageclass_
+ _szMessageClass_
   
-> 順番解決されるメッセージクラスの名前を示す文字列。 メッセージクラス名は常に ANSI 文字列で、Unicode はありません。
+> [in]解決されるメッセージ クラスの名前を示す文字列。 メッセージ クラス名は常に ANSI 文字列で、Unicode は使用しません。
     
  _ulFlags_
   
-> 順番メッセージクラスの解決方法を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]メッセージ クラスの解決方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPIFORM_EXACTMATCH 
   
-> 完全一致のメッセージクラス文字列のみを解決する必要があります。
+> 完全に一致するメッセージ クラスの文字列のみを解決する必要があります。
     
  _ppforminfo_
   
-> 読み上げ返されるフォーム情報オブジェクトへのポインターへのポインター。
+> [out]返されるフォーム情報オブジェクトへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -61,17 +61,17 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> _szmessageclass_パラメーターで渡されたメッセージクラスが、フォームコンテナー内のフォームのメッセージクラスと一致しません。 
+> _szMessageClass_ パラメーターで渡されたメッセージ クラスは、フォーム コンテナー内のフォームのメッセージ クラスと一致しません。 
     
 ## <a name="remarks"></a>注釈
 
-クライアントアプリケーションは、 **imapiformcontainer:: ResolveMessageClass**メソッドを呼び出して、form コンテナー内のフォームにメッセージクラスを解決します。 _ppforminfo_パラメーターで返されたフォーム情報オブジェクトは、指定されたメッセージクラスを使用して、フォームのプロパティにさらにアクセスできるようにします。 
+クライアント アプリケーションは **IMAPIFormContainer::ResolveMessageClass** メソッドを呼び出して、フォーム コンテナー内のフォームにメッセージ クラスを解決します。 _ppforminfo_ パラメーターで返されるフォーム情報オブジェクトは、指定されたメッセージ クラスを使用してフォームのプロパティにさらにアクセスできます。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-メッセージクラスをフォームに解決するには、解決するメッセージクラスの名前を渡します (例: `IPM.HelpDesk.Software`)。 解決策を正確にする (つまり、メッセージクラスの基本クラスに解決されないようにする) には、 _ulflags_パラメーターに MAPIFORM_EXACTMATCH フラグを渡すことができます。 
+メッセージ クラスをフォームに解決するには、解決するメッセージ クラスの名前を渡します (たとえば  `IPM.HelpDesk.Software` )。 解決を厳密に (つまり、メッセージ クラスの基本クラスへの解決を防ぐため) には  _、ulFlags_ パラメーターに MAPIFORM_EXACTMATCH フラグを渡します。 
   
-解決されたメッセージクラスのクラス識別子は、フォーム情報オブジェクトの一部として返されます。 [imapiformmgr::P repareform](imapiformmgr-prepareform.md)または[imapiformmgr:: CreateForm](imapiformmgr-createform.md)メソッドのいずれかを呼び出すまで、クラス識別子が OLE ライブラリに存在することを前提としていません。 
+解決されたメッセージ クラスのクラス識別子は、フォーム情報オブジェクトの一部として返されます。 [IMAPIFormMgr::P repareForm](imapiformmgr-prepareform.md)メソッドまたは[IMAPIFormMgr::CreateForm](imapiformmgr-createform.md)メソッドのいずれかを呼び出すまで、OLE ライブラリにクラス識別子が存在することを想定しません。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -79,7 +79,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|FormContainerDlg  <br/> |CFormContainerDlg:: OnResolveMessageClass  <br/> |mfcmapi は、 **imapiformcontainer:: ResolveMessageClass**メソッドを使用して、メッセージクラスに関連付けられているフォームを特定します。  <br/> |
+|FormContainerDlg.cpp  <br/> |CFormContainerDlg::OnResolveMessageClass  <br/> |MFCMAPI は **IMAPIFormContainer::ResolveMessageClass** メソッドを使用して、メッセージ クラスに関連付けられているフォームを検索します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

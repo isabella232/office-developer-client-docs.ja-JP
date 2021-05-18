@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 83161011-90b4-49cb-9bcd-153a21a10977
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 021be209a2b2c891b668fa401500d6220619f9bd
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "32317137"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-保存操作が完了したことをフォームに通知します。 
+保存操作が完了したフォームに通知します。 
   
 ```cpp
 HRESULT SaveCompleted(
@@ -33,23 +33,23 @@ HRESULT SaveCompleted(
 
 ## <a name="parameters"></a>パラメーター
 
-_pmessage_
+_pMessage_
   
-> 順番新しく保存されたメッセージへのポインター。
+> [in]新しく保存されたメッセージへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 通知は正常に実行されました。
+> 通知が成功しました。
     
 E_INVALIDARG 
   
-> _pmessage_パラメーターが NULL で、フォームは、[標準] または [[標準](handsofffromnormal-state.md)] [[保存](handsoffaftersave-state.md)の状態] のどちらかです。 
+> _pMessage パラメーター_ は NULL で、フォームは [HandsOffFromNormal](handsofffromnormal-state.md)または [HandsOffAfterSave](handsoffaftersave-state.md)状態のいずれかです。 
     
 E_UNEXPECTED 
   
-> フォームが次のいずれかの状態になっていません。
+> フォームは、次のいずれかの状態ではありません。
     
    - HandsOffFromNormal
     
@@ -57,9 +57,9 @@ E_UNEXPECTED
     
    - [NoScribble](noscribble-state.md)
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**IPersistMessage:: SaveCompleted**メソッドは、すべての保留中の変更が保存されたことをフォームに通知するためにフォームビューアーによって呼び出されます。 **SaveCompleted**は、フォームが次のいずれかの状態にある場合にのみ呼び出す必要があります。 
+**IPersistMessage::SaveCompleted** メソッドは、フォーム ビューアーによって呼び出され、保留中のすべての変更が保存されたというフォームを通知します。 **SaveCompleted は** 、フォームが次のいずれかの状態にある場合にのみ呼び出す必要があります。 
   
 - HandsOffFromNormal
     
@@ -69,21 +69,21 @@ E_UNEXPECTED
     
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**SaveCompleted**メソッドが実行できるアクションには、メッセージポインターパラメーターに含まれる内容と、メッセージの状態によっていくつかあります。 ただし、正常に処理された場合は、 _pmessage_パラメーターが参照しているメッセージの現在の状態を常に保存し、フォームを[通常](normal-state.md)の状態に切り替えます。 
+**SaveCompleted** メソッドが実行できるアクションは、メッセージ ポインター パラメーターに含まれるもの、およびメッセージの状態に応じていくつか考えられる操作です。 ただし、アクションが成功した場合は  _、pMessage_ パラメーターがポイントするメッセージの現在の状態を常に保存し、フォームを標準状態 [に移行](normal-state.md) します。 
   
-次の表では、 **SaveCompleted**の実装で実行する必要がある処理に影響する条件について説明します。
+次の表に **、SaveCompleted** の実装で実行する必要があるアクションに影響を与える条件を示します。
   
 |**条件**|**処理**|
 |:-----|:-----|
-|_pmessage_パラメーターが NULL で、 [IPersistMessage:: Save](ipersistmessage-save.md)メソッドの_fsameasload_パラメーターが TRUE に設定されています。  <br/> |登録されているすべてのビューアーの[IMAPIViewAdviseSink:: onsaved](imapiviewadvisesink-onsaved.md)メソッドを呼び出し、フォームをクリーンとしてマークし、S_OK を返します。  <br/> |
-|_pmessage_パラメーターが NULL で、 **IPersistMessage:: Save**メソッドの_fsameasload_パラメーターが FALSE に設定されています。  <br/> |S_OK ��Ԃ��܂��B  <br/> |
-|フォームは、[標準時の標準状態にあります。  <br/> |現在のメッセージを解放し、 _pmessage_パラメーターで示されるメッセージに置き換えます。 置換メッセージの[IUnknown:: AddRef](https://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx)メソッドを呼び出し、S_OK を返します。  <br/> |
-|フォームは、[保存の状態にあります。  <br/> |登録されているすべてのビューアーの**IMAPIViewAdviseSink:: onsaved**メソッドを呼び出し、フォームをクリーンとしてマークし、S_OK を返します。  <br/> |
-|フォームは、 [noscribble](noscribble-state.md)状態にあります。  <br/> |現在のメッセージを解放し、それを_pmessage_で示されるメッセージに置き換えます。 置換メッセージの**IUnknown:: AddRef**メソッドを呼び出します。 登録されているすべてのビューアーの**IMAPIViewAdviseSink:: onsaved**メソッドを呼び出し、フォームをクリーンとしてマークし、S_OK を返します。  <br/> |
-|フォームは HandsOff 状態のいずれかで、 _pmessage_パラメーターが NULL に設定されています。  <br/> |E_INVALIDARG を返します。  <br/> |
-|フォームは、HandsOff 状態または noscribble 状態のいずれでもない状態にあります。  <br/> |E_UNEXPECTED を返します。  <br/> |
+|_pMessage パラメーター_ は NULL で [、IPersistMessage::Save](ipersistmessage-save.md)メソッドの _fSameAsLoad_ パラメーターは TRUE に設定されます。  <br/> |すべての登録済 [みビューアーの IMAPIViewAdviseSink::OnSaved](imapiviewadvisesink-onsaved.md) メソッドを呼び出し、フォームをクリーンとしてマークし、フォームを戻S_OK。  <br/> |
+|_pMessage パラメーター_ は NULL で **、IPersistMessage::Save** メソッドの _fSameAsLoad_ パラメーターは FALSE に設定されます。  <br/> |S_OK ��Ԃ��܂��B  <br/> |
+|フォームは HandsOffFromNormal 状態です。  <br/> |現在のメッセージを解放し、pMessage パラメーターが指すメッセージ  _に置き換_ える。 置換メッセージの [IUnknown::AddRef](https://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx) メソッドを呼び出し、次のS_OK。  <br/> |
+|フォームは HandsOffAfterSave 状態です。  <br/> |すべての登録済 **みビューアーの IMAPIViewAdviseSink::OnSaved** メソッドを呼び出し、フォームをクリーンとしてマークし、フォームを戻S_OK。  <br/> |
+|フォームは [NoScribble 状態](noscribble-state.md) です。  <br/> |現在のメッセージを解放し、pMessage が指すメッセージに  _置き換える_。 置換メッセージの **IUnknown::AddRef メソッドを呼び出** します。 すべての登録済 **みビューアーの IMAPIViewAdviseSink::OnSaved** メソッドを呼び出し、フォームをクリーンとしてマークし、フォームを戻S_OK。  <br/> |
+|フォームは HandsOff 状態の 1 つで  _、pMessage_ パラメーターは NULL に設定されます。  <br/> |値をE_INVALIDARG。  <br/> |
+|フォームは、HandsOff 状態または NoScribble 状態以外の状態です。  <br/> |値をE_UNEXPECTED。  <br/> |
    
-ストレージオブジェクトの保存の詳細については、 [IPersistStorage:: SaveCompleted](https://docs.microsoft.com/windows/desktop/api/objidl/nf-objidl-ipersiststorage-savecompleted)メソッドまたは[IPersistFile:: SaveCompleted](https://docs.microsoft.com/windows/desktop/api/objidl/nf-objidl-ipersistfile-savecompleted)メソッドのマニュアルを参照してください。 
+ストレージ オブジェクトの保存の詳細については [、IPersistStorage::SaveCompleted](https://docs.microsoft.com/windows/desktop/api/objidl/nf-objidl-ipersiststorage-savecompleted) メソッドまたは [IPersistFile::SaveCompleted](https://docs.microsoft.com/windows/desktop/api/objidl/nf-objidl-ipersistfile-savecompleted) メソッドのドキュメントを参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

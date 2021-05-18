@@ -21,30 +21,30 @@ ms.locfileid: "33406746"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Status オブジェクトは、MAPI リソースに関する情報を報告します。 たとえば、サービスプロバイダー、MAPI の送受信プロセス、またはアドレス帳などです。
+Status オブジェクトは、MAPI リソースに関する情報を報告します。 たとえば、サービス プロバイダー、MAPI 送受信プロセス、アドレス帳などです。
   
-status オブジェクトは、現在のプロファイル内の各サービスプロバイダーに関する情報を提供します。 mapi は、サブシステム、mapi の送受信プロセス、およびアドレス帳の状態オブジェクトの実装を担当します。 サブシステム状態オブジェクトは、グローバル情報を提供します。 統合されたアドレス帳の status オブジェクトは、現在動作しているすべてのアドレス帳プロバイダーの状態を提供します。
+現在のプロファイルには、個々のサービス プロバイダーに関する情報を提供する状態オブジェクトがあります。 MAPI は、サブシステム、MAPI 送受信プロセス、およびアドレス帳の状態オブジェクトを実装する責任があります。 サブシステムの状態オブジェクトは、グローバル情報を提供します。 統合アドレス帳の status オブジェクトは、現在動作しているすべてのアドレス帳プロバイダーの状態を提供します。
   
-すべての status オブジェクトは状態テーブルに含まれています。このテーブルは、セッションのすべてのステータス情報をクライアントに提供する MAPI で保持されます。 詳細については、「 [Status Tables](status-tables.md)」を参照してください。 クライアントは、テーブルまたはサービスプロバイダーの場合は、そのログオンオブジェクトを通じて、特定の状態オブジェクトにアクセスできます。 たとえば、アドレス帳プロバイダーの状態オブジェクトにアクセスするために、クライアントは**IABLogon:: openstatusentry**を呼び出すことができます。 詳細については、「 [IABLogon:: openstatusentry](iablogon-openstatusentry.md)」を参照してください。
+すべての status オブジェクトは、セッションのすべての状態情報をクライアントに提供する MAPI によって管理されるテーブルである状態テーブルに含まれます。 詳細については、「Status [Tables」を参照してください](status-tables.md)。 クライアントは、テーブルまたはサービス プロバイダーのログオン オブジェクトを介して、特定の状態オブジェクトにアクセスできます。 たとえば、アドレス帳プロバイダーの状態オブジェクトにアクセスするために、クライアントは **IABLogon::OpenStatusEntry を呼び出します**。 詳細については [、「IABLogon::OpenStatusEntry」を参照してください](iablogon-openstatusentry.md)。
   
-クライアントは、status オブジェクトを使用して次のことを行えます。
+クライアントは、状態オブジェクトを使用して、次の操作を実行できます。
   
-- セッションの状態について説明します。
+- セッションの状態について学習します。
     
-- サービスプロバイダーを監視します。
+- サービス プロバイダーを監視します。
     
-- メッセージ送信を制御します。
+- メッセージの送信を制御します。
     
 - リソースの構成と状態を表示または変更します。
     
-すべての status オブジェクトは、 **imapistatus**インターフェイスを実装します。 詳細については、「 [imapistatus: imapistatus](imapistatusimapiprop.md)」を参照してください。 ただし、すべてのステータスオブジェクトがすべての**imapistatus**メソッドを完全にサポートするわけではありません。 status オブジェクトでサポートされているメソッドにはバリエーションがあるため、クライアントは、使用する前に、特定の状態オブジェクトについて知る必要があります。 状態オブジェクトは、それぞれの機能に関する情報を次の3つのプロパティに公開するために必要です。 
+すべての status オブジェクトは **、IMAPIStatus インターフェイスを実装** します。 詳細については [、「IMAPIStatus : IMAPIProp 」を参照してください](imapistatusimapiprop.md)。 ただし、すべての状態オブジェクトがすべての **IMAPIStatus メソッドを完全にサポートしているわけではありません** 。 status オブジェクトでサポートされるメソッドにはバリエーションが存在しますので、クライアントは、それを使用する前に、特定の状態オブジェクトについて学習する必要があります。 Status オブジェクトは、次の 3 つのプロパティで機能に関する情報を公開するために必要です。 
   
- **PR_RESOURCE_METHODS**([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) 
+ **PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) 
   
- **PR_RESOURCE_TYPE**([PidTagResourceType](pidtagresourcetype-canonical-property.md)) 
+ **PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md)) 
   
- **PR_RESOURCE_FLAGS**([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) 
+ **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) 
   
-状態オブジェクトの実装の詳細については、「 [status オブジェクトの実装](status-object-implementation.md)」を参照してください。 status オブジェクトの使用の詳細については、「 [status Table and status Objects](status-table-and-status-objects.md)」を参照してください。
+status オブジェクトの実装の詳細については、「Status [Object Implementation」を参照してください](status-object-implementation.md)。 status オブジェクトの使用の詳細については、「Status [Table and Status Objects」を参照してください](status-table-and-status-objects.md)。
   
 

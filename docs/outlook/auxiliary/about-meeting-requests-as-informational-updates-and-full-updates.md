@@ -1,12 +1,12 @@
 ---
-title: 情報更新および完全な更新としての会議出席依頼について
+title: 情報更新または完全更新としての会議出席依頼について
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 084928ca-efc0-36da-fe4f-5cc45f226178
-description: 会議出席依頼は、メッセージ クラスとして IPM.Schedule.Meeting.Request が設定された電子メールです。 既定では、会議出席依頼を受信する出席者が、依頼に直接応答します。
+description: 会議出席依頼は、メッセージ クラスとして IPM.Schedule.Meeting.Request が設定された電子メールです。 既定では、会議出席依頼を受信した参加者は、その依頼に直接応答します。
 ms.openlocfilehash: 8e7ab7a85d3f9f7c0a67245b8d8ad27442f5c5e4
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT

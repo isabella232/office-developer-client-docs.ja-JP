@@ -25,13 +25,13 @@ ms.locfileid: "33406018"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[sccopyprops](sccopyprops.md)関数と[sccopyprops](sccountprops.md)関数の操作を組み合わせて、1つの MAPI メモリブロックでプロパティ値配列を複製します。 
+[ScCopyProps](sccopyprops.md)関数と[ScCountProps](sccountprops.md)関数の操作を組み合わせた MAPI メモリの 1 つのブロック内のプロパティ値配列を複製します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 SCODE ScDupPropset(
@@ -46,19 +46,19 @@ SCODE ScDupPropset(
 
  _cprop_
   
-> 順番_rgprop_パラメーターで指定された、配列内のプロパティ値の数。 
+> [in]rgprop パラメーターで示される配列内の  _プロパティ値の_ 数。 
     
  _rgprop_
   
-> 順番複製するプロパティ値を定義する[spropvalue](spropvalue.md)構造体の配列へのポインター。 
+> [in]重複するプロパティ値を [定義する SPropValue](spropvalue.md) 構造体の配列へのポインター。 
     
  _lpAllocateBuffer_
   
-> 順番複製された配列のメモリの割り当てに使用される[MAPIAllocateBuffer](mapiallocatebuffer.md)関数へのポインター。 
+> [in]重複した配列のメモリを割り当てるのに使用する [MAPIAllocateBuffer](mapiallocatebuffer.md) 関数へのポインター。 
     
  _prgprop_
   
-> 読み上げ返された**spropvalue**構造体の配列が格納されている、メモリ内の初期位置へのポインター。 
+> [out] **SPropValue** 構造体の返された重複配列が格納されているメモリ内の最初の位置へのポインター。 
     
 ## <a name="return-value"></a>戻り値
 

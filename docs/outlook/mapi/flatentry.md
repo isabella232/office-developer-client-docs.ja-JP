@@ -25,11 +25,11 @@ ms.locfileid: "33407243"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-entryid [](entryid.md)構造に加えて、 **entryid**構造体のサイズを指定するバイト数を指定します。 
+[ENTRYID 構造体に、ENTRYID](entryid.md)構造体のサイズを指定するバイト数 **を加えた値を指定** します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連するマクロ:  <br/> |[cbFLATENTRY](cbflatentry.md)、 [CbNewFLATENTRY](cbnewflatentry.md) <br/> |
    
 ```cpp
@@ -41,27 +41,27 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cb**
   
-> **abentry**メンバーのバイト数。 
+> **abEntry メンバーのバイト数**。 
     
- **abentry**
+ **abEntry**
   
-> フラグとバイナリデータの配列を含む完全なエントリ識別子。
+> フラグとバイナリ データの配列を含む完全なエントリ識別子。
     
 ## <a name="remarks"></a>注釈
 
-**FLATENTRY**構造体は、 [ENTRYID](entryid.md)構造に似ています。 ただし、次のような違いがあります。 
+**FLATENTRY 構造体は** [ENTRYID 構造に似](entryid.md)ている。 ただし、いくつかの違いがあります。 
   
-- **FLATENTRY**構造体は、エントリ識別子のサイズを格納します。**ENTRYID**は無効です。 
+- **FLATENTRY 構造体** は、エントリ識別子のサイズを格納します。**ENTRYID** は使用しない。 
     
-- **FLATENTRY**構造体は、フラグデータをエントリ id の残りの部分と一緒に格納します。**ENTRYID**は個別に格納します。 
+- **FLATENTRY 構造体は**、残りのエントリ識別子と共にフラグ データを格納します。**ENTRYID は** それらを個別に格納します。 
     
-- **FLATENTRY**構造体は、エントリ id をファイルに格納したり、バイトのストリームに渡したりするために使用されます。 **ENTRYID**構造は、 [imapiprop](imapipropiunknown.md)のインターフェイスメソッドと、次の**openentry**メソッドで使用されます。 IABLogon は次のようになります。 [: openentry](iablogon-openentry.md)、 [IAddrBook:: openentry](iaddrbook-openentry.md)、 [IMAPIContainer:: openentry](imapicontainer-openentry.md)、 [imapisession:: openentry](imapisession-openentry.md)、 [imapisession:: openentry](imapisupport-openentry.md)、 [IMsgStore:: openentry](imsgstore-openentry.md)、 [IMSLogon:: openentry](imslogon-openentry.md)
+- **FLATENTRY** 構造体は、エントリ識別子をファイルに格納したり、バイト ストリームで渡したりするために使用しますが **、ENTRYID** 構造体は [IMAPIProp](imapipropiunknown.md)インターフェイス メソッドと次の **OpenEntry** メソッドによって使用されます [。IABLogon::OpenEntry](iablogon-openentry.md) [、IAddrBook::OpenEntry](iaddrbook-openentry.md), [IMAPIContainer::OpenEntry](imapicontainer-openentry.md), [IMAPISession::OpenEntry](imapisession-openentry.md), [IMAPISupport::OpenEntry](imapisupport-openentry.md), [IMsgStore::OpenEntry](imsgstore-openentry.md), [IMSLogon::OpenEntry](imslogon-openentry.md)
     
-- **FLATENTRY**構造体は、エントリ id をファイルに格納したり、バイトのストリームに渡したりするために使用されます。 **ENTRYID**構造体は、ディスクにエントリ識別子を格納するために使用されます。 
+- **FLATENTRY 構造体は**、エントリ識別子をファイルに格納したり、バイト ストリームで渡したりするために使用されます。 ENTRYID **構造体は** 、エントリ識別子をディスクに格納するために使用されます。 
     
 ## <a name="see-also"></a>関連項目
 

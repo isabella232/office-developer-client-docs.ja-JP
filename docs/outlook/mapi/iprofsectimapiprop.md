@@ -1,5 +1,5 @@
 ---
-title: IProfSect imapiprop
+title: IProfSect IMAPIProp
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,60 +25,60 @@ ms.locfileid: "33406599"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロファイルセクションオブジェクトのプロパティと共に動作します。 
+プロファイル セクション オブジェクトのプロパティを操作します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapix  <br/> |
-|公開者:  <br/> |Profile section オブジェクト  <br/> |
+|ヘッダー ファイル:  <br/> |Mapix.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |プロファイル セクション オブジェクト  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
 |インターフェイス識別子:  <br/> |IID_IProfSect  <br/> |
 |ポインターの種類:  <br/> |LPPROFSECT  <br/> |
-|トランザクションモデル:  <br/> |非トランザクション  <br/> |
+|トランザクション モデル:  <br/> |非トランザクション  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
-このインターフェイスには一意のメソッドはありません。
+このインターフェイスには、一意のメソッドが含まれる必要があります。
   
 |**必須のプロパティ**|**Access**|
 |:-----|:-----|
-|**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_PROFILE_NAME**([PidTagProfileName](pidtagprofilename-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_PROFILE_NAME** ([PidTagProfileName](pidtagprofilename-canonical-property.md))  <br/> |読み取り専用  <br/> |
    
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**IProfSect**インターフェイスに独自の固有のメソッドはありませんが、プロファイルセクションの[imapiprop](imapipropiunknown.md)メソッドを呼び出すことができます。 **IProfSect**の実装と**imapiprop**の他の実装には、いくつかの相違点があります。
+**IProfSect** インターフェイスには独自の一意のメソッドは存在しないが、プロファイル セクションの [IMAPIProp](imapipropiunknown.md)メソッドを呼び出す事が可能です。 **IProfSect** 実装と IMAPIProp の他の実装にはいくつかの違 **いがあります**。
   
-- **IProfSect**では、トランザクションモデルはサポートされていません。 
+- **IProfSect は** トランザクション モデルをサポートしていない。 
     
-- **IProfSect**は、名前付きプロパティをサポートしていません。 
+- **IProfSect では** 、名前付きプロパティはサポートされていません。 
     
-- **IProfSect**は、セキュリティで保護されたプロパティに対して、identifier range 0x67f0 を0x67f0 に予約します。 
+- **IProfSect は** 、セキュリティで保護されたプロパティ0x67F0に0x67ff識別子の範囲を予約します。 
     
-トランザクションモデルをサポートしていないということは、 [imapiprop:: copyprops](imapiprop-copyprops.md)および[imapiprop:: CopyTo](imapiprop-copyto.md)メソッドへの呼び出しの後、プロファイルセクションに加えられたすべての変更が直ちに実行されることを意味します。 [imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドの呼び出しは成功しますが、変更は実際には保存されません。 
+トランザクション モデルをサポートしていない場合は [、IMAPIProp::CopyProps](imapiprop-copyprops.md) メソッドと [IMAPIProp::CopyTo](imapiprop-copyto.md) メソッドの呼び出し後にプロファイル セクションに加えたすべての変更が直ちに行われます。 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドの呼び出しは成功しますが、実際には変更は保存しません。 
   
-途中で発生した変更から保護するために、サービスプロバイダーは、プロパティシートを通じてユーザーに表示されるプロファイルセクションのコピーを作成する必要があります。 プロパティシートは、実際のプロファイルセクションではなく、コピーで使用する必要があります。 ユーザーが **[OK** ] ボタンをクリックして変更が正確であることを確認すると、変更内容を [実際のプロファイル] セクションに保存することができます。 
+途中で発生する変更から保護するには、サービス プロバイダーは、プロパティ シートを使用してユーザーに表示されるプロファイル セクションのコピーを作成する必要があります。 プロパティ シートは、実際のプロファイル セクションではなく、コピーで動作する必要があります。 ユーザーが **[OK]** ボタンをクリックして変更が正確に行われたか確認すると、変更を実際のプロファイル セクションに保存できます。 
   
-[コピーされたプロファイル] セクションを使用してプロパティシートを実装するには、次の手順を使用します。
+コピーしたプロファイル セクションを使用してプロパティ シートを実装するには、次の手順を実行します。
   
-1. [imapisupport:: openプロファイル](imapisupport-openprofilesection.md)のセクションまたは[IProviderAdmin:: openprofile](iprovideradmin-openprofilesection.md)の開始方法を呼び出すことによって、プロファイルセクションを開きます。 
+1. [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md)または[IProviderAdmin::OpenProfileSection](iprovideradmin-openprofilesection.md)メソッドを呼び出して、プロファイル セクションを開きます。 
     
-2. [createiprop](createiprop.md)関数を呼び出して、プロパティデータオブジェクト ( **ipropdata**インターフェイスをサポートするオブジェクト) を取得します。 
+2. [CreateIProp 関数を呼](createiprop.md)び出して、プロパティ データ オブジェクト **(IPropData** インターフェイスをサポートするオブジェクト) を取得します。 
     
-3. プロファイルセクションの[imapiprop:: CopyTo](imapiprop-copyto.md)メソッドを呼び出して、プロパティシートに表示されるプロパティをプロファイルセクションからプロパティデータオブジェクトにコピーします。 
+3. プロファイル セクションの [IMAPIProp::CopyTo](imapiprop-copyto.md) メソッドを呼び出して、プロパティ シートに表示されるプロパティをプロファイル セクションからプロパティ データ オブジェクトにコピーします。 
     
-4. [imapisupport::D oconfigpropsheet](imapisupport-doconfigpropsheet.md)メソッドを呼び出して、サービスプロバイダーにプロパティシートが表示されるように要求し、 _lpconfigdata_パラメーターのプロパティデータオブジェクトへのポインターを渡します。 
+4. [IMAPISupport::D oConfigPropSheet](imapisupport-doconfigpropsheet.md)メソッドを呼び出して、サービス プロバイダーにプロパティ シートの表示を要求し _、lpConfigData_ パラメーターのプロパティ データ オブジェクトへのポインターを渡します。 
     
-5. ユーザーがプロパティシートの構成プロパティに加えた変更を保存するときには、 [imapiprop:: CopyTo](imapiprop-copyto.md)メソッドを呼び出して、プロパティデータオブジェクトからプロファイルセクションにプロパティをコピーして戻します。 
+5. ユーザーがプロパティ シートに構成プロパティの変更を保存する場合は [、IMAPIProp::CopyTo](imapiprop-copyto.md) メソッドを呼び出して、プロパティ データ オブジェクトからプロファイル セクションにプロパティをコピーします。 
     
-プロファイルセクションは、他のオブジェクトとは異なり、名前付きプロパティをサポートしていません。 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)および[imapiprop:: GetNamesFromIDs](imapiprop-getnamesfromids.md)メソッドは、プロファイルセクションオブジェクトで呼び出された場合、MAPI_E_NO_SUPPORT を返します。 [imapiprop:: setprops](imapiprop-setprops.md)メソッドを使用して、0x8000 を超える範囲のプロパティ識別子を設定すると、PT_ERROR プロパティの型が返されます。 
+プロファイル セクションは、他のオブジェクトとは異なり、名前付きプロパティをサポートしません。 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)および[IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md)メソッドは、プロファイル セクション オブジェクトで呼び出された場合、MAPI_E_NO_SUPPORT を返します。 [IMAPIProp::SetProps](imapiprop-setprops.md)メソッドを使用して、0x8000 の上の範囲でプロパティ識別子を設定すると、PT_ERROR プロパティの種類が返されます。 
   
-プロファイルセクションでは、セキュリティで保護されたプロパティに対して識別子範囲0x67f0 から0x67f0 を予約します。 サービスプロバイダーは、この範囲を使用して、パスワードやその他のプロバイダー固有の資格情報を格納できます。 この範囲内のプロパティは、 [imapiprop:: GetProps](imapiprop-getprops.md)メソッドの_lpPropTag_パラメーターで NULL が渡されたときに、プロパティの完全な一覧に返されません。 __ または、 [imapiprop:: getproplist](imapiprop-getproplist.md)メソッド。 セキュリティで保護されたプロパティは、識別子によって明示的に要求する必要があります。 
+プロファイル セクションでは、セキュリティで保護されたプロパティ0x67F0 0x67FF識別子の範囲を予約します。 サービス プロバイダーは、この範囲を使用して、パスワードや他のプロバイダー固有の資格情報を格納できます。 この範囲のプロパティは [、IMAPIProp::GetProps](imapiprop-getprops.md)メソッドの _lpPropTag_ パラメーターで NULL が渡された場合、プロパティの完全な一覧には返されません。[また、IMAPIProp::GetPropList](imapiprop-getproplist.md)メソッドの _lppPropTagArray_ パラメーターでは返されません。 セキュリティで保護されたプロパティは、識別子によって特に要求する必要があります。 
   
-MAPI furnishes は、ハードコードされた定数 MUID_PROFILE_INSTANCE を持つプロファイルセクションを識別子として、 **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) を1つのプロパティとして使用します。 MAPI を使用すると、作成されたすべてのプロファイルで**PR_SEARCH_KEY**プロパティの値が一意になることが保証されます。 一意性が重要な場合は、 **PR_PROFILE_NAME**の代わりに**PR_SEARCH_KEY**を使用します。これは、削除されたプロファイルの後に同じ名前の別のプロファイルが続く可能性があるためです。 
+MAPI は、ハードコードされた定数を持つプロファイル セクションMUID_PROFILE_INSTANCE識別子として、PR_SEARCH_KEY **(** [PidTagSearchKey](pidtagsearchkey-canonical-property.md)) を単一のプロパティとして指定します。 MAPI を使用すると **、PR_SEARCH_KEYプロパティ** の値が作成されたプロファイルの中で一意になります。 一 **PR_SEARCH_KEY** が重要なPR_PROFILE_NAMEの代わりに、削除されたプロファイルの後に同じ名前の別のプロファイルが続く可能性がある場合に使用します。 
   
-プロファイルセクションの使用方法の詳細については、「[プロファイルおよびメッセージサービスを管理](administering-profiles-and-message-services.md)する」を参照してください。
+プロファイル セクションの使用方法の詳細については、「プロファイルとメッセージ サービスの管理 [」を参照してください](administering-profiles-and-message-services.md)。
   
 ## <a name="see-also"></a>関連項目
 

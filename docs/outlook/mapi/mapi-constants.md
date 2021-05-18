@@ -96,7 +96,7 @@ DEFINE_GUID(IID_IConverterSession, 0x4b401570, 0xb77b, 0x11d0, 0x9d, 0xa5, 0x0, 
 |E_NOINTERFACE  <br/> | *Windows (SDK) の winerror.h ヘッダー ファイルで定義されています*  <br/> |
 |MAPIOFFLINE_ADVISE_DEFAULT  <br/> |(ULONG) 0  <br/> |
 |MAPIOFFLINE_UNADVISE_DEFAULT  <br/> |(ULONG) 0  <br/> |
-|MAPIOFFLINE_ADVISE_TYPE_STATECHANGE  <br/> |1-d  <br/> |
+|MAPIOFFLINE_ADVISE_TYPE_STATECHANGE  <br/> |1  <br/> |
 |MAPIOFFLINE_CAPABILITY_OFFLINE  <br/> |0x1  <br/> |
 |MAPIOFFLINE_CAPABILITY_ONLINE  <br/> |0x2  <br/> |
 |MAPIOFFLINE_FLAG_BLOCK  <br/> |0x00002000  <br/> |
@@ -266,8 +266,8 @@ const MAPIUID g_muidProvPrvNST =
 |MDB_OST_LOGON_UNICODE  <br/> |((ULONG) 0x00000800)  <br/> |
 |MDB_OST_LOGON_ANSI  <br/> |((ULONG) 0x00001000)  <br/> |
 |SHOW_SOFT_DELETES  <br/> |((ULONG) 0x00000002)  <br/> |
-|SS_ACTIVE  <br/> |.0  <br/> |
-|SS_SUSPENDED  <br/> |1-d  <br/> |
+|SS_ACTIVE  <br/> |0  <br/> |
+|SS_SUSPENDED  <br/> |1  <br/> |
 |SYNC_UPLOAD_HIERARCHY  <br/> |0x00000001  <br/> |
 |SYNC_DOWNLOAD_HIERARCHY  <br/> |0x00000002  <br/> |
 |SYNC_UPLOAD_CONTENTS  <br/> |0x00000040  <br/> |
@@ -411,7 +411,7 @@ const GUID PSETID_Meeting       = {0x6ED8DA90, 0x450B, 0x101B, {0x98, 0xDA, 0x00
 const GUID PSETID_Task          = {0x00062003, 0x0000, 0x0000, {0xC0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x46}}; 
 ```
 
-#### <a name="mnidid-properties"></a>MNID_ID プロパティ
+#### <a name="mnid_id-properties"></a>MNID_ID プロパティ
   
 ```cpp
 // In PSETID_Address
@@ -465,7 +465,7 @@ const GUID PSETID_Task          = {0x00062003, 0x0000, 0x0000, {0xC0, 0x00, 0x00
 #define dispidTaskFRecur 0x8126
 ```
 
-#### <a name="mnidstring-properties"></a>MNID_STRING プロパティ
+#### <a name="mnid_string-properties"></a>MNID_STRING プロパティ
   
 ```cpp
 // In PS_PUBLIC_STRINGS 
@@ -528,7 +528,7 @@ DEFINE_OLEGUID(IID_IMSCapabilities, 0x00020393, 0, 0)
 |MAPI_UNICODE  <br/> |0x80000000  <br/> |クライアントまたはサービス プロバイダーは [OpenIMsgOnIStg](openimsgonistg.md) 関数を呼び出し、_ulFlags_ パラメーターに **MAPI_UNICODE** フラグを設定して Unicode の .msg ファイルを作成できます。 結果として [IMessage : IMAPIProp](imessageimapiprop.md) ファイルが作成され、このファイルは [PidTagStoreSupportMask 正規プロパティ](pidtagstoresupportmask-canonical-property.md)に **STORE_UNICODE_OK** を表示し、Unicode のプロパティをサポートします。 この定数は mapidefs.h で定義されます。  <br/> |
 |MDB_ONLINE  <br/> |0x00000100  <br/> |Outlook が Exchange キャッシュ モードの場合、クライアントまたはサービス プロバイダーは [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md) メソッドを呼び出し、_ulFlags_ パラメーターに **MDB_ONLINE** フラグを設定して、ローカルのメッセージ ストアへの接続を上書きし、リモート サーバー上のストアを開くことができます。 なお、同じ MAPI セッションにおいて、同時にキャッシュ モードと非キャッシュ モードで Exchange ストアを開くことはできません。 キャッシュ済みのメッセージ ストアを既に開いている場合は、このフラグを使用してストアを開く前にストアを閉じるか、このフラグを使用してリモート サーバー上の Exchange ストアを開くことができる新しい MAPI セッションを開く必要があります。  <br/> |
 |NON_EMS_XP_SAVE  <br/> |0x00001000  <br/> |クライアントは [IMAPIProp::SaveChanges](imapiprop-savechanges.md) メソッドを呼び出し、_ulFlags_ パラメーターに **NON_EMS_XP_SAVE** フラグを設定して、メッセージが Exchange サーバーから配信されなかったことを示すことができます。 メッセージがルールの処理に適格であることを PST ストアに示すために、このフラグは、_ulFlags_ パラメーターの **ITEMPROC_FORCE** フラグと組み合わせて使用する必要があります。この処理は、リッスンしているすべてのクライアントに PST ストアがメッセージの到着を通知する前に行われる必要があります。 このルールの処理は、Exchange サーバーではないサーバー上の [IMAPIFolder::CreateMessage](imapifolder-createmessage.md) で作成された新しいメッセージにのみ適用されます (Exchange サーバーでは、既にメッセージに対してルールが処理されています)。  <br/> |
-|SPAMFILTER_ONSAVE  <br/> |0x00000080  <br/> |クライアントは [IMAPIProp::SaveChanges](imapiprop-savechanges.md) を呼び出し、_ulFlags_ パラメーターに**SPAMFILTER_ONSAVE** フラグを設定して、保存されているメッセージに関するスパムのフィルター処理を有効にすることができます。 スパムのフィルター処理に関するサポートは、送信者の電子メール アドレスの種類が簡易メール転送プロトコル (SMTP) であり、メッセージが個人用フォルダー ファイル (PST) 向けのストアに保存されている場合にのみ使用することができます。  <br/> |
+|SPAMFILTER_ONSAVE  <br/> |0x00000080  <br/> |クライアントは [IMAPIProp::SaveChanges](imapiprop-savechanges.md) を呼び出し、_ulFlags_ パラメーターに **SPAMFILTER_ONSAVE** フラグを設定して、保存されているメッセージに関するスパムのフィルター処理を有効にすることができます。 スパムのフィルター処理に関するサポートは、送信者の電子メール アドレスの種類が簡易メール転送プロトコル (SMTP) であり、メッセージが個人用フォルダー ファイル (PST) 向けのストアに保存されている場合にのみ使用することができます。  <br/> |
 |STORE_ITEMPROC  <br/> |0x00200000  <br/> |ラップされた PST ストアの [PidTagStoreSupportMask 正規プロパティ](pidtagstoresupportmask-canonical-property.md)にこのフラグが設定されている場合、ストアに新しいメッセージが到着したときに、ストアによるルールの処理とスパムのフィルター処理がメッセージごとに別々に行われることを示します。 それから、ストアは [IMAPISupport::Notify](imapisupport-notify.md) を呼び出し、パラメーターとして渡された [NOTIFICATION](notification.md) 構造に **fnevNewMail** を設定し、リッスンしているクライアントに新しいメッセージの詳細を渡します。 その後、リッスンしているクライアントが通知を受信すれば、メッセージに対するルールの処理は行われなくなります。  <br/> |
 |STORE_UNICODE_OK  <br/> |0x00040000  <br/> |このフラグが [PidTagStoreSupportMask 正規プロパティ](pidtagstoresupportmask-canonical-property.md)に含まれている場合、ストアが Unicode の記憶域をサポートしていることを示します。 クライアントは、フラグの有無を調べて、Unicode の情報を要求するかストアに保存するかを決定できます。  <br/> |
    
@@ -639,7 +639,7 @@ DEFINE_GUID(IID_IMAPISync, 0x5024a385, 0x2d44, 0x486a,  0x81, 0xa8, 0x8f, 0xe, 0
 DEFINE_GUID(IID_IMAPISyncProgressCallback, 0x5024a386, 0x2d44, 0x486a,  0x81, 0xa8, 0x8f, 0xe, 0xcb, 0x60, 0x71, 0xdd);
 ```
 
-#### <a name="iidicontabadmin"></a>IID_IContabAdmin
+#### <a name="iid_icontabadmin"></a>IID_IContabAdmin
   
 ```cpp
 // {CC6A3BA9-E7F5-4769-887B-34E190817BFC}
@@ -647,14 +647,14 @@ DEFINE_GUID(IID_IContabAdmin, 0xcc6a3ba9, 0xe7f5, 0x4769, 0x88, 0x7b, 0x34, 0xe1
 
 ```
 
-#### <a name="iidimapisecuremessage"></a>IID_IMAPISECUREMESSAGE
+#### <a name="iid_imapisecuremessage"></a>IID_IMAPISECUREMESSAGE
   
 ```cpp
 DEFINE_GUID(IID_IMAPISecureMessage, 0x253cc320, 0xeab6, 0x11d0, 0x82, 0x22, 0, 0x60, 0x97, 0x93, 0x87, 0xea);
 
 ```
 
-#### <a name="iidimapigetsession"></a>IID_IMAPIGetSession
+#### <a name="iid_imapigetsession"></a>IID_IMAPIGetSession
   
 ```cpp
 DEFINE_GUID(IID_IMAPIGetSession, 0x614ab435, 0x491d, 0x4f5b, 0xa8, 0xb4, 0x60, 0xeb, 0x3, 0x10, 0x30, 0xc6);
@@ -663,14 +663,14 @@ DEFINE_GUID(IID_IMAPIGetSession, 0x614ab435, 0x491d, 0x4f5b, 0xa8, 0xb4, 0x60, 0
 
 ### <a name="pst-override-handler-interface-identifiers"></a>PST 上書きハンドラーのインターフェイス識別子
 
-#### <a name="iidipstoverridereq"></a>IID_IPSTOVERRIDEREQ
+#### <a name="iid_ipstoverridereq"></a>IID_IPSTOVERRIDEREQ
   
 ```cpp
 // {892EBC6D-24DC-4d90-BA48-C6CBEC14A86A}
 DEFINE_GUID(IID_IPSTOVERRIDEREQ, 0x892ebc6d, 0x24dc, 0x4d90, 0xba, 0x48, 0xc6, 0xcb, 0xec, 0x14, 0xa8, 0x6a);
 ```
 
-#### <a name="iidipstoverride1"></a>IID_IPSTOVERRIDE1
+#### <a name="iid_ipstoverride1"></a>IID_IPSTOVERRIDE1
   
 ```cpp
 // {FBB68D34-F561-44fb-A8CA-AE36696342CA}

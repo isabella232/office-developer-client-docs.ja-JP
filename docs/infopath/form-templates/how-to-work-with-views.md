@@ -85,7 +85,7 @@ Me.ViewInfos.Initial = Me.ViewInfos["MyInitialView"];
 
 ## <a name="selecting-controls-in-a-view"></a>ビューでコントロールを選択する
 
-InfoPath では、現在のビューでプログラムからコントロールを選択するために、[View](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.aspx) クラスの 2 つのメソッド、 [SelectText()](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) と [SelectNodes()](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectNodes.aspx) が用意されており、両方ともオーバーロードされます。 [SelectText(XPathNavigator)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) メソッドはデータ入力用のコントロール ( **テキスト ボックス**など) に使用され、 **SelectNodes** メソッドは構造用のコントロール ( **省略可能セクション**など) に使用されます。ビューで特定のコントロールを選択するには、ノードとオプションでコントロールの ViewContext ID を指定する必要があります。ViewContext ID は、複数のコントロールがデータ ソース内の同じノードにバインドされている場合に必須となります。ViewContext ID 情報は、フォームのデザイン時に InfoPath により提供されます。
+InfoPath では、現在のビューでプログラムからコントロールを選択するために、[View](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.aspx) クラスの 2 つのメソッド、 [SelectText()](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) と [SelectNodes()](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectNodes.aspx) が用意されており、両方ともオーバーロードされます。 [SelectText(XPathNavigator)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) メソッドはデータ入力用のコントロール ( **テキスト ボックス** など) に使用され、 **SelectNodes** メソッドは構造用のコントロール ( **省略可能セクション** など) に使用されます。ビューで特定のコントロールを選択するには、ノードとオプションでコントロールの ViewContext ID を指定する必要があります。ViewContext ID は、複数のコントロールがデータ ソース内の同じノードにバインドされている場合に必須となります。ViewContext ID 情報は、フォームのデザイン時に InfoPath により提供されます。
   
 コントロールの ViewContext ID は、コントロールのプロパティ ダイアログ ボックスの **[詳細設定]** タブに表示されます。これを確認するには、コントロールを右クリックし、[_コントロール名_ **プロパティ**] をクリックして、**[詳細設定]** タブをクリックします。これで、コントロールの ViewContext ID が **[詳細設定]** タブの **[コード]** セクションに表示されます。 
   
@@ -143,7 +143,7 @@ InfoPath では、現在のビューでプログラムからコントロール�
     
 ## <a name="using-the-selecttext-and-selectnodes-methods"></a>SelectText および SelectNodes メソッドを使用する
 
-次の例では、1 つのパラメーター  [xmlNode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) を持つ **SelectText** メソッドの _SelectText(XPathNavigator)_ オーバーロードを使用して、"my:field1" にバインドされている **テキスト ボックス**を選択しています。 
+次の例では、1 つのパラメーター  [xmlNode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) を持つ **SelectText** メソッドの _SelectText(XPathNavigator)_ オーバーロードを使用して、"my:field1" にバインドされている **テキスト ボックス** を選択しています。 
   
 ```cs
 // Create XPathNavigator and select field.

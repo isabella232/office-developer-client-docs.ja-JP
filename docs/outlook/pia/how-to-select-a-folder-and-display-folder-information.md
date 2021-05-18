@@ -25,7 +25,7 @@ ms.locfileid: "32316038"
 
 次のコード例の ShowFolderInfo では、[NameSpace](https://msdn.microsoft.com/library/bb645857\(v=office.15\)) オブジェクトの [PickFolder()](https://msdn.microsoft.com/library/bb623484\(v=office.15\)) メソッドを使用して **[フォルダーの選択]** ダイアログ ボックスをユーザーに表示し、ユーザーがフォルダーを選択するまで待機します。 ユーザーがフォルダーを選択すると、その [EntryID](https://msdn.microsoft.com/library/bb646192\(v=office.15\))、[StoreID](https://msdn.microsoft.com/library/bb612609\(v=office.15\))、[UnReadItemCount](https://msdn.microsoft.com/library/bb610138\(v=office.15\))、[DefaultMessageClass](https://msdn.microsoft.com/library/bb646541\(v=office.15\))、[CurrentView](https://msdn.microsoft.com/library/bb612411\(v=office.15\))、[Name](https://msdn.microsoft.com/library/bb623727\(v=office.15\))、および [FolderPath](https://msdn.microsoft.com/library/bb647409\(v=office.15\)) プロパティを表示します。 その後、[GetFolderFromID](https://msdn.microsoft.com/library/bb647784\(v=office.15\)) メソッドを呼び出し、新しい [Folder](https://msdn.microsoft.com/library/bb645774\(v=office.15\)) オブジェクトを作成して、フォルダーを表示します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

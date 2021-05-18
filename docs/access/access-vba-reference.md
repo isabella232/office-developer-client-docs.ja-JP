@@ -1,5 +1,5 @@
 ---
-title: '[Access VBA リファレンス]'
+title: '[VBA リファレンスへのアクセス]'
 ms.date: 01/01/1900
 ms.audience: Developer
 localization_priority: Normal
@@ -12,7 +12,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33406354"
 ---
-# <a name="access-vba-reference"></a>[Access VBA リファレンス]
+# <a name="access-vba-reference"></a>[VBA リファレンスへのアクセス]
 
 {サマリーを挿入}
   

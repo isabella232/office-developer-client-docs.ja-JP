@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 374cef41-141a-491b-8dd1-eaf1a2044204
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 205b6ddc2b65297d69a2223aab7b745b223ee553
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,50 +25,50 @@ ms.locfileid: "32316283"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-message オブジェクトのフラグの色を指定します。
+メッセージ オブジェクトのフラグの色を指定します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_FOLLOWUP_ICON  <br/> |
 |識別子:  <br/> |0x1095  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |メッセージフォルダーの名前を変更する  <br/> |
+|エリア:  <br/> |メッセージ フォルダーの名前を変更する  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このプロパティは、 **PR_FLAG_STATUS** (PidTagFlagStatus) プロパティの値が "[](pidtagflagstatus-canonical-property.md)/フラグ付き" に設定されているか、またはメッセージオブジェクトが会議関連オブジェクトの場合にのみ存在している必要があります。 このプロパティは、task オブジェクトに存在してはなりません。 他のメッセージオブジェクトに設定されている場合、このプロパティは次のいずれかの値に設定する必要があります。
+このプロパティは **、PR_FLAG_STATUS** ([PidTagFlagStatus](pidtagflagstatus-canonical-property.md)) プロパティの値が "followupFlagged" に設定されている場合、またはメッセージ オブジェクトが会議関連オブジェクトである場合を指定しない限り、存在していなければなりません。 このプロパティは、タスク オブジェクトには存在しません。 他のメッセージ オブジェクトに設定する場合、このプロパティは次のいずれかの値に設定する必要があります。
   
-|**数値**|**[名前]**|**[説明]**|
+|**数値**|**名前**|**説明**|
 |:-----|:-----|:-----|
 |存在しない  <br/> |該当なし  <br/> |色なし  <br/> |
-|1-d  <br/> |followupIcon1  <br/> |紫色のフラグ  <br/> |
-|pbm-2  <br/> |followupIcon2  <br/> |オレンジのフラグ  <br/> |
-|1/3  <br/> |followupIcon3  <br/> |緑色のフラグ  <br/> |
-|2/4  <br/> |followupIcon4  <br/> |黄色のフラグ  <br/> |
-|5  <br/> |followupIcon5  <br/> |青フラグ  <br/> |
-|シックス  <br/> |followupIcon6  <br/> |赤のフラグ  <br/> |
+|1  <br/> |followupIcon1  <br/> |紫色のフラグ  <br/> |
+|2  <br/> |followupIcon2  <br/> |オレンジ 色のフラグ  <br/> |
+|3  <br/> |followupIcon3  <br/> |緑のフラグ  <br/> |
+|4  <br/> |followupIcon4  <br/> |黄色のフラグ  <br/> |
+|5  <br/> |followupIcon5  <br/> |青いフラグ  <br/> |
+|6  <br/> |followupIcon6  <br/> |赤いフラグ  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
+[[MS-OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
   
 > フラグに関連するプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -78,7 +78,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

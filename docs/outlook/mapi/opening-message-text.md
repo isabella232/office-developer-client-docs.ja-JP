@@ -19,36 +19,36 @@ ms.locfileid: "33407537"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージのテキストは、 **pr\_BODY**プロパティまたは**\_pr RTF\_圧縮**プロパティのどちらかに格納されます。 詳細については **、\_「pr BODY** ([PidTagBody](pidtagbody-canonical-property.md))」、「 **\_pr HTML** ([PidTagHtml](pidtaghtml-canonical-property.md))」、および「 **pr\_RTF\_圧縮**([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))」を参照してください。 
+メッセージのテキストは、PR **\_ BODY** プロパティまたは PR **\_ RTF \_ COMPRESSED プロパティに格納** されます。 詳細については **、「PR \_ BODY** [(PidTagBody)」、PR](pidtagbody-canonical-property.md) **\_ HTML** [(PidTagHtml)、PR](pidtaghtml-canonical-property.md) **RTF \_ \_ COMPRESSED** [(PidTagRtfCompressed)を参照してください](pidtagrtfcompressed-canonical-property.md)。 
 
-リッチテキスト形式 (RTF) をサポートしている場合は、 **PR\_RTF_COMPRESSED**を開きます。 RTF をサポートしていない場合は、 **PR\_本文**を開きます。 メッセージのテキストは、書式設定されているかどうかに関係なく大きくなる可能性があるため、 **imapiprop:: openproperty**を使用してこれらのプロパティを開きます。 詳細については、「 [imapiprop:: openproperty](imapiprop-openproperty.md)」を参照してください。
+リッチ テキスト形式 (RTF) をサポートしている場合は **、PR ファイルを \_ 開** RTF_COMPRESSED。 RTF をサポートしていない場合は **、PR BODY を \_ 開きます**。 メッセージのテキストは、書式が設定されているかどうかに関係なく大きくすることができますので **、IMAPIProp::OpenProperty** を使用してこれらのプロパティを開きます。 詳細については [、「IMAPIProp::OpenProperty」を参照してください](imapiprop-openproperty.md)。
   
-### <a name="to-display-formatted-message-text"></a>書式設定されたメッセージテキストを表示するには
+### <a name="to-display-formatted-message-text"></a>書式設定されたメッセージ テキストを表示するには
   
-1. RTF に対応しないメッセージストアを使用している場合は、ストアの**PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) プロパティに STORE_RTF_OK フラグがないことが示されます。
+1. RTF 対応以外のメッセージ ストアを使用している場合は、ストアの PR_STORE_SUPPORT_MASK **(** [PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) プロパティに STORE_RTF_OK フラグがない場合に示されます。
     
-    1. メッセージの**imapiprop:: GetProps**メソッドを呼び出して、 **PR_RTF_IN_SYNC**プロパティを取得します。 詳細については、「 [imapiprop:: GetProps](imapiprop-getprops.md) and **PR_RTF_IN_SYNC** ([PidTagRtfInSync](pidtagrtfinsync-canonical-property.md))」を参照してください。
+    1. メッセージの **IMAPIProp::GetProps** メソッドを呼び出して、PR_RTF_IN_SYNC **取得します** 。 詳細については[、「IMAPIProp::GetProps](imapiprop-getprops.md) and PR_RTF_IN_SYNC ([PidTagRtfInSync)」を参照してください](pidtagrtfinsync-canonical-property.md)。 
         
-    2. rtfsync を呼び出して、メッセージの PR_BODY プロパティを**PR_RTF_COMPRESSED**プロパティと同期します。 詳細については、「 [rtfsync](rtfsync.md), **PR_BODY**, and **PR_RTF_COMPRESSED**」を参照してください。 プロパティが存在しないか FALSE に設定されているため、 **PR_RTF_IN_SYNC**を取得する呼び出しが失敗した場合は、RTF_SYNC_BODY_CHANGED フラグを渡します。 
+    2. RTFSync を呼び出して、メッセージの PR_BODY プロパティを **PR_RTF_COMPRESSEDします** 。 詳細については [、「RTFSync、PR_BODY、](rtfsync.md)および **PR_RTF_COMPRESSED」****を参照してください**。 プロパティがRTF_SYNC_BODY_CHANGED、または FALSE に設定されているPR_RTF_IN_SYNCを取得する呼び出しが失敗した場合は、このフラグを渡します。 
         
-    3. **rtfsync**が TRUE を返した場合—変更が行われたことを示す、メッセージの**imapiprop:: SaveChanges**メソッドを呼び出して永続的に保存します。 詳細については、「 [imapiprop:: SaveChanges](imapiprop-savechanges.md)」を参照してください。
+    3. **RTFSync が** TRUE を返した場合 (変更が行われたことを示す) 場合は、メッセージの **IMAPIProp::SaveChanges** メソッドを呼び出して、それらを完全に保存します。 詳細については [、「IMAPIProp::SaveChanges」を参照してください](imapiprop-savechanges.md)。
     
-2. RTF 対応のメッセージストアを使用しているかどうかに関係なく、次のようになります。
+2. RTF 対応のメッセージ ストアを使用しているかどうかに関係なく、次の点に注意してください。
     
-    1. **PR_RTF_COMPRESSED**プロパティを開くには、 **imapiprop:: openproperty**を呼び出します。 詳細については、「 [imapiprop:: openproperty](imapiprop-openproperty.md) and **PR_RTF_COMPRESSED**」を参照してください。
+    1. **IMAPIProp::OpenProperty** を呼び出して、次のプロパティ **PR_RTF_COMPRESSED** します。 詳細については [、「IMAPIProp::OpenProperty」および「PR_RTF_COMPRESSED」](imapiprop-openproperty.md) を **参照してください**。
         
-    2. **PR_RTF_COMPRESSED**が使用できない場合は、 **openproperty**を呼び出して**PR_BODY**プロパティを開きます。 
+    2. この **PR_RTF_COMPRESSED** 使用できない場合は **、OpenProperty を** 呼び出してプロパティを **開** PR_BODYします。 
         
-    3. 圧縮された RTF データの圧縮されていないバージョンを作成するには、 **WrapCompressedRTFStream**関数を呼び出します。 詳細については、「 [WrapCompressedRTFStream](wrapcompressedrtfstream.md)」を参照してください。
+    3. **WrapCompressedRTFStream** 関数を呼び出して、圧縮された RTF データの圧縮されていないバージョンを作成します (使用可能な場合)。 詳細については [、「WrapCompressedRTFStream」を参照してください](wrapcompressedrtfstream.md)。
         
-    4. 書式設定されたテキストを stream からメッセージフォームの適切な位置にコピーします。 
+    4. メッセージ フォーム内の適切な場所に、ストリームから書式設定されたテキストをコピーします。 
     
-### <a name="to-display-plain-message-text"></a>テキスト形式のメッセージテキストを表示するには
+### <a name="to-display-plain-message-text"></a>プレーン メッセージ テキストを表示するには
   
-1. メッセージの**imapiprop:: GetProps**メソッドを呼び出して、 **PR_BODY**プロパティを取得します。 詳細については、「 [imapiprop:: GetProps](imapiprop-getprops.md)」を参照してください。
+1. メッセージの **IMAPIProp::GetProps** メソッドを呼び出して、PR_BODY **取得します** 。 詳細については [、「IMAPIProp::GetProps」を参照してください](imapiprop-getprops.md)。
     
-2. プロパティの値の構造体または MAPI_E_NOT_ENOUGH_MEMORY でプロパティの型の PT_ERROR が返された場合、 **GetProps**はメッセージの**imapiprop:: openproperty**メソッドを呼び出します。 **PR_BODY**をプロパティタグとして、IID_IStream をインターフェイス識別子として渡します。 詳細については、「 [imapiprop:: openproperty](imapiprop-openproperty.md)」を参照してください。
+2. **GetProps** がプロパティPT_ERROR構造体または MAPI_E_NOT_ENOUGH_MEMORY のプロパティの種類のプロパティを返す場合は、メッセージの **IMAPIProp::OpenProperty** メソッドを呼び出します。 プロパティ **PR_BODY** として渡し、IID_IStream識別子として渡します。 詳細については [、「IMAPIProp::OpenProperty」を参照してください](imapiprop-openproperty.md)。
     
-3. ストリームからメッセージフォームの適切な位置にプレーンテキストをコピーします。 
+3. ストリームからメッセージ フォーム内の適切な場所にプレーン テキストをコピーします。 
     
 

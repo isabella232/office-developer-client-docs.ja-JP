@@ -1,5 +1,5 @@
 ---
-title: imapisessiongetstatustable
+title: IMAPISessionGetStatusTable
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33407138"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-状態テーブル (セッション内のすべての MAPI リソースに関する情報を含むテーブル) へのアクセスを提供します。
+セッション内のすべての MAPI リソースに関する情報を含むテーブルである状態テーブルへのアクセスを提供します。
   
 ```cpp
 HRESULT GetStatusTable(
@@ -38,15 +38,15 @@ HRESULT GetStatusTable(
 
  _ulFlags_
   
-> 順番文字列の列の形式を決定するフラグのビットマスク。 次のフラグを設定できます。
+> [in]文字列である列の形式を決定するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 文字列列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列列は ANSI 形式になります。
+> 文字列列は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列列は ANSI 形式になります。
     
- _lpptable_
+ _lppTable_
   
-> 読み上げ状態テーブルへのポインターへのポインター。
+> [out]状態テーブルへのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -56,11 +56,11 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-**imapisession:: getstatustable**メソッドは、セッション内のすべての MAPI リソースに関する情報を含む状態テーブルへのアクセスを提供します。 このテーブルには、mapi サブシステムに関する情報、mapi スプーラーの1行、統合アドレス帳の1行、プロファイル内のサービスプロバイダーごとに1つの行があります。 
+**IMAPISession::GetStatusTable** メソッドは、セッション内のすべての MAPI リソースに関する情報を含む状態テーブルへのアクセスを提供します。 表には、MAPI サブシステムに関する情報を示す 1 行、MAPI スプーラー用の 1 行、統合アドレス帳用の 1 行、プロファイル内のサービス プロバイダーごとに 1 行があります。 
   
-[状態] テーブルの必須およびオプションの列の完全な一覧については、「 [status Tables](status-tables.md)」を参照してください。 
+状態テーブルの必須列と省略可能列の完全な一覧については、「Status [Tables」を参照してください](status-tables.md)。 
   
-_ulflags_パラメーターの MAPI_UNICODE フラグを設定すると、 [imapitable:: querycolumns](imapitable-querycolumns.md)および[imapitable:: QueryRows](imapitable-queryrows.md)メソッドから返される列の形式に影響します。 このフラグは、 [IMAPITable:: querysortorder](imapitable-querysortorder.md)メソッドによって返される並べ替え順序で、プロパティの種類を制御することもできます。 
+_ulFlags_ パラメーター MAPI_UNICODEフラグを設定すると [、IMAPITable::QueryColumns](imapitable-querycolumns.md)および [IMAPITable::QueryRows](imapitable-queryrows.md)メソッドから返される列の形式に影響します。 このフラグは [、IMAPITable::QuerySortOrder](imapitable-querysortorder.md) メソッドによって返される並べ替え順序のプロパティの種類も制御します。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -68,7 +68,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|maindlg .cpp  <br/> |CMainDlg:: onstatustable  <br/> |mfcmapi は、 **imapisession:: getstatustable**メソッドを使用して、レンダリングされる状態テーブルを取得します。  <br/> |
+|MainDlg.cpp  <br/> |CMainDlg::OnStatusTable  <br/> |MFCMAPI は **IMAPISession::GetStatusTable** メソッドを使用して、レンダリングする状態テーブルを取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

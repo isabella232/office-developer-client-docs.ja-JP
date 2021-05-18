@@ -1,5 +1,5 @@
 ---
-title: imapisupportnewuid
+title: IMAPISupportNewUID
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33406998"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-一意の識別子として使用する新しい[MAPIUID](mapiuid.md)構造を作成します。 
+一意の [識別子として使用する新しい MAPIUID](mapiuid.md) 構造を作成します。 
   
 ```cpp
 HRESULT NewUID(
@@ -35,23 +35,23 @@ LPMAPIUID lpMuid
 
 ## <a name="parameters"></a>パラメーター
 
- _lpmuid_
+ _lpMuid_
   
-> 新しい**MAPIUID**構造体へのポインター。 
+> 新しい **MAPIUID 構造へのポインター** 。 
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 新しい**MAPIUID**構造が作成されました。 
+> 新しい **MAPIUID** 構造が作成されました。 
     
 ## <a name="remarks"></a>注釈
 
-**imapisupport:: newuid**メソッドは、すべてのサポートオブジェクトに実装されています。 サービスプロバイダーとメッセージサービスは、長期の一意の識別子を生成する必要があるときに、 **newuid**を呼び出します。 たとえば、メッセージストアプロバイダーは**newuid**を呼び出して、新しく作成されたメッセージの**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) プロパティに入れる**MAPIUID**を取得することができます。
+**IMAPISupport::NewUID** メソッドは、すべてのサポート オブジェクトに実装されます。 サービス プロバイダーとメッセージ サービスは、長期的な一意識別子を生成する必要がある場合は常に **NewUID** を呼び出します。 たとえば、メッセージ ストア プロバイダーは NewUID を呼び出して、新しく作成されたメッセージの **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) プロパティに入れる **MAPIUID** を取得できます。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-ログオン時に登録した**MAPIUID**構造を、 **newuid**メソッドが作成する**MAPIUID**構造体と混同しないでください。 [imapisupport:: setprovideruid](imapisupport-setprovideruid.md)メソッドを呼び出すときに登録する**MAPIUID**構造は、アドレス帳またはメッセージストアプロバイダーを MAPI に対して表し、さまざまなプロバイダーが作成するエントリ識別子を区別するために使用されます。 この**MAPIUID**構造体は、ハードコーディングされている必要があり、 **newuid**への呼び出しによって取得されることはありません。
+ログオン時に登録する **MAPIUID** 構造と **、NewUID** メソッドが作成する **MAPIUID** 構造体を混同し、混同しなさらね。 [IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md)メソッドを呼び出す際に登録する **MAPIUID** 構造は、MAPI へのアドレス帳またはメッセージ ストア プロバイダーを表し、異なるプロバイダーが作成するエントリ識別子を区別するために使用されます。 この **MAPIUID** 構造体はハードコードされ **、NewUID** の呼び出しでは取得されません。
   
 ## <a name="see-also"></a>関連項目
 

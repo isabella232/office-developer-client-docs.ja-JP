@@ -35,9 +35,9 @@ void SetSpoolSuspendState(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulstate_
+ _ulState_
   
-> 順番スプーラーをに設定する状態。 次のいずれかの値であることが必要です。
+> [in]スプーラーを設定する状態。 これは、次のいずれかの値である必要があります。
     
  **SS_ACTIVE**
   

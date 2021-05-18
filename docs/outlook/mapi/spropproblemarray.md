@@ -25,11 +25,11 @@ ms.locfileid: "33406858"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-1つ以上の[spropproblem](spropproblem.md)構造の配列を含みます。 
+1 つ以上の [SPropProblem 構造体の配列を格納](spropproblem.md) します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連するマクロ:  <br/> |[CbNewSPropProblemArray](cbnewspropproblemarray.md) <br/> [CbSPropProblemArray](cbspropproblemarray.md) <br/> [SizedSPropProblemArray](sizedspropproblemarray.md) <br/> |
    
 ```cpp
@@ -41,19 +41,19 @@ typedef struct _SPropProblemArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cproblem**
+ **cProblem**
   
-> **aproblem**メンバーによって示された、配列内の[spropproblem](spropproblem.md)構造体の数。 
+> [aProblem メンバーによって示](spropproblem.md)される配列内の **SPropProblem** 構造体の数。 
     
- **aproblem**
+ **aProblem**
   
-> プロパティエラーを説明する**spropproblem**構造の配列です。 
+> プロパティ エラー **を記述する SPropProblem** 構造体の配列。 
     
 ## <a name="remarks"></a>注釈
 
-プロパティに関連するエラーについて、 **spropproblem**および**spropproblem の配列**構造がどのように機能するかの詳細については、「 [MAPI の名前付きプロパティ](mapi-named-properties.md)」を参照してください。 
+**SPropProblem** 構造体と **SPropProblemArray** 構造体がプロパティに関連するエラーを処理する方法の詳細については、「MAPI 名前付きプロパティ」[を参照してください](mapi-named-properties.md)。 
   
 ## <a name="see-also"></a>関連項目
 

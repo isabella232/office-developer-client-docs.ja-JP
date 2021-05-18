@@ -15,23 +15,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33407866"
 ---
-# <a name="managing-memory-for-adrlist-and-srowset-structures"></a>adrlist および srowset 構造体のメモリの管理 "
+# <a name="managing-memory-for-adrlist-and-srowset-structures"></a>ADRLIST および SRowSet 構造体のメモリを管理する"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-単一の**MAPIAllocateBuffer**呼び出しで、可能な場合には、アドレス一覧、 **adrlist**、行セット、または**srowset**、構造体を使用している場合には、バッファーのすべてのメモリを割り当てる必要があります。 
+1 つの **MAPIAllocateBuffer** 呼び出しで可能な限りバッファーのすべてのメモリを割り当てる要件は、アドレス一覧または **ADRLIST**、および行セット、または **SRowSet** 構造体を使用する場合は適用されません。 
   
-これらの2つの構造体は、メモリを割り当てて解放するための標準的な規則の例外です。 複数のレベルの構造が含まれており、個々のメンバーを追加または削除できるように設計されています。 そのため、各プロパティは個別に割り当てる必要があります。 
+これら 2 つの構造は、メモリの割り当てと解放に関する標準ルールの例外です。 これらは複数のレベルの構造を含み、個々のメンバーを追加または削除するように設計されています。 したがって、各プロパティは個別の割り当てである必要があります。 
 
-ほとんどの構造体は**MAPIFreeBuffer**への呼び出しによって解放されます。 **adrlist**構造体または**srowset**構造体内の個々のエントリは、 **MAPIFreeBuffer**への独自の呼び出し、または**freeprows**への1回の呼び出しで解放する必要があります。または **、freepadrlist**。 詳細については、「 [MAPIFreeBuffer](mapifreebuffer.md)」、「 [adrlist](adrlist.md)」、および「 [srowset](srowset.md)」を参照してください。 
+ほとんどの構造体が **MAPIFreeBuffer** への 1 回の呼び出しで解放される場合は **、ADRLIST** 構造体または **SRowSet** 構造体の各個々のエントリを **、MAPIFreeBuffer** への独自の呼び出しまたは **FreeProws** または **FreePadrlist** への 1 回の呼び出しで解放する必要があります。 詳細については [、「MAPIFreeBuffer](mapifreebuffer.md) [、ADRLIST、](adrlist.md)および [SRowSet」を参照してください](srowset.md)。 
 
-**freeprows**および**freepadrlist**は、これらのデータ構造の解放を簡略化するために MAPI によって提供される機能です。 詳細については、「 [freeprows](freeprows.md) 」および「 [freepadrlist](freepadrlist.md)」を参照してください。 **freepadrlist**は、 **adrlist**構造体のメモリと、構造体メンバーに関連付けられているすべてのメモリを解放します。**freeprows**は、 **srowset**構造に対して同じことを行います。 
+**FreeProws と** **FreePadrlist は** 、これらのデータ構造の解放を簡略化するために MAPI によって提供される関数です。 詳細については [、「FreeProws and](freeprows.md) [FreePadrlist」を参照してください](freepadrlist.md)。 **FreePadrlist は****、ADRLIST** 構造体のメモリと、その構造体メンバーに関連付けられているすべてのメモリを解放します。**FreeProws は** **SRowSet 構造体でも同じことを** 行います。 
   
-次の図は、 **adrlist**データ構造のレイアウトを示しています。これは、別のメモリ割り当てが必要であることを示します。 灰色のボックスには、1回の呼び出しで割り当てたり解放したりできるメモリが表示されます。 
+次の図は **、ADRLIST** データ構造のレイアウトを示しています。必要な個別のメモリ割り当てを示します。 灰色のボックスには、1 回の呼び出しで割り当ておよび解放できるメモリが表示されます。 
   
 **ADRLIST メモリの割り当て**
   
-![adrlist のメモリ割り当て](media/amapi_52.gif "adrlist のメモリ割り当て")
+![ADRLIST メモリ割り当て](media/amapi_52.gif "ADRLIST メモリ割り当て")
   
 ## <a name="see-also"></a>関連項目
 

@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251281
 localization_priority: Normal
 ms.assetid: b7aea554-f491-6a9a-4d07-feeab739a9df
-description: 図形のコントロールハンドルの位置を示す x 座標を、ローカル座標で表します。
+description: ローカル座標での図形のコントロール ハンドルの位置を示す x 座標を表します。
 ms.openlocfilehash: 58eea4e9c3cfe127c4adcc7fb75e395f53874dd9
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33406452"
 ---
 # <a name="x-cell-controls-section"></a>[X] セル ([Controls] セクション)
 
-図形のコントロールハンドルの位置を示す*x*座標を、ローカル座標で表します。 
+ローカル座標での  *図形*  のコントロール ハンドルの位置を示す x 座標を表します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -26,14 +26,14 @@ ms.locfileid: "33406452"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | 管理.  *名前*です。X どこにコントロールを配置します。  *name*は、コントロール行の名前です。  <br/> |
+| セル名:  <br/> | コントロール。  *name*  .X where Controls.  *name*  は、コントロール行の名前です。  <br/> |
    
 プログラムから、インデックスによって [X] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionControls** <br/> |
-| 行インデックス:  <br/> |**visRowControl** +  *i* = ** 0、1、2...  <br/> |
-| セル インデックス:  <br/> |**visctlx** <br/> |
+| 行インデックス:  <br/> |**visRowControl**  +  *i* *=* 0, 1, 2...  <br/> |
+| セル インデックス:  <br/> |**visCtlX** <br/> |
    
 

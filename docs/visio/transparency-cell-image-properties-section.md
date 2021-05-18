@@ -32,7 +32,7 @@ ms.locfileid: "33405836"
   
 |||
 |:-----|:-----|
-|セル名 :  <br/> |透明度  <br/> |
+|セル名 :  <br/> |Transparency  <br/> |
    
 プログラムから、インデックスによって [Transparency] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -40,6 +40,6 @@ ms.locfileid: "33405836"
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionObject** <br/> |
 |行インデックス:  <br/> |**visRowImage** <br/> |
-|セル インデックス:  <br/> |**viシム age透過性** <br/> |
+|セル インデックス:  <br/> |**visImageTransparency** <br/> |
    
 

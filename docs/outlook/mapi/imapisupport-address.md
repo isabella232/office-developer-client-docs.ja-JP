@@ -1,5 +1,5 @@
 ---
-title: imapisupportaddress
+title: IMAPISupportAddress
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33407320"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[共通のアドレス] ダイアログボックスを表示します。 
+[共通アドレス] ダイアログ ボックスを表示します。 
   
 ```cpp
 HRESULT Address(
@@ -37,53 +37,53 @@ HRESULT Address(
 
 ## <a name="parameters"></a>パラメーター
 
- _l出 uiparam_
+ _lpulUIParam_
   
-> [入力]ダイアログボックスの親ウィンドウのハンドルへのポインター。 入力時には、ウィンドウハンドルを常に渡す必要があります。 出力時に、DIALOG_SDI フラグが_lpadrparms_パラメーターで示される[ADRPARM](adrparm.md)構造で設定されている場合は、モードレスダイアログボックスのウィンドウハンドルが返されます。 
+> [in, out]ダイアログ ボックスの親ウィンドウのハンドルへのポインター。 入力時には、ウィンドウ ハンドルを常に渡す必要があります。 出力時に _、lpAdrParms_ パラメーターが指す [ADRPARM](adrparm.md)構造で DIALOG_SDI フラグが設定されている場合は、モードレス ダイアログ ボックスのウィンドウ ハンドルが返されます。 
     
- _lpadrparms_
+ _lpAdrParms_
   
-> [入力][アドレス] ダイアログボックスの表示と動作を制御する**ADRPARM**構造体へのポインター。 
+> [in, out]アドレス ダイアログ ボックスの表示と動作を制御する **ADRPARM** 構造体へのポインター。 
     
- _lppadrlist_
+ _lppAdrList_
   
-> [入力]アドレス一覧へのポインターへのポインター。 入力時に、このリストは、メッセージ内の受信者の現在のリストまたは NULL (リストが存在しない場合) のいずれかです。 出力では、 _lppadrlist_は、更新されたメッセージ受信者のリストを指します。 
+> [in, out]アドレス一覧へのポインターを指すポインター。 入力時に、このリストはメッセージ内の受信者の現在のリストか、そのようなリストが存在しない場合は NULL のいずれかです。 出力時に  _、lppAdrList は_ メッセージ受信者の更新されたリストをポイントします。 
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> [アドレス] ダイアログボックスが正常に表示されました。
+> [アドレス] ダイアログ ボックスが正常に表示されました。
     
 ## <a name="remarks"></a>注釈
 
-**imapisupport:: address**メソッドは、アドレス帳プロバイダーサポートオブジェクトに実装されています。 アドレス帳プロバイダーの呼び出し**アドレス**。メッセージの受信者の一覧を作成または更新します。 
+**IMAPISupport::Address** メソッドは、アドレス帳プロバイダーのサポート オブジェクトに実装されます。 アドレス帳プロバイダーは、 **アドレスを呼び出** して、メッセージ受信者のリストを作成または更新します。 
   
-各受信者は[adrentry](adrentry.md)構造で記述されており、 _lppadrlist_パラメーターで示される[adrentry](adrlist.md)構造体に含まれています。 **adrentry**構造には、受信者のプロパティ値の配列、1つは受信者の種類、または**PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) プロパティが含まれます。 この**adrlist**構造は、 [IMessage:: modifyrecipients](imessage-modifyrecipients.md)の呼び出しで_lpMods_パラメーターとして使用するために、クライアントに渡すことができます。
+各受信者は [、lppAdrList](adrentry.md) パラメーターが指す [ADRLIST](adrlist.md) 構造に含まれる  _ADRENTRY 構造で説明_ されています。 **ADRENTRY** 構造体には、受信者プロパティ値の配列が含まれます。そのうちの **1** つは受信者の種類、または PR_RECIPIENT_TYPE ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) プロパティです。 この **ADRLIST** 構造体をクライアントに渡して [、IMessage::ModifyRecipients](imessage-modifyrecipients.md)の呼び出しで _lpMods_ パラメーターとして使用できます。
   
-**adrlist**構造内の各受信者は解決できます。これは、そのプロパティ値のいずれかが**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティであるか、または未解決であることを示します。これは、 **PR_ENTRYID**プロパティがれ. 
+**ADRLIST** 構造体の各受信者は、プロパティ値の **1** つが PR_ENTRYID ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティであることを示す解決済みか、**または未解決で、PR_ENTRYID** プロパティが見つからないかどうかを示します。 
   
-**PR_ENTRYID**に加えて、解決された受信者には次のプロパティが含まれています。
+解決済み受信者 **には、PR_ENTRYID** に加えて、次のプロパティが含まれます。
   
 - **PR_RECIPIENT_TYPE**
     
-- **PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
+- **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
     
-- **PR_ADDRTYPE**([PidTagAddressType](pidtagaddresstype-canonical-property.md))
+- **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))
     
-- **PR_DISPLAY_TYPE**([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))
+- **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))
     
-未解決の受信者には、通常、 **PR_DISPLAY_NAME**と**PR_RECIPIENT_TYPE**のみが含まれます。 
+未解決の受信者には、通常、PR_DISPLAY_NAME **と** PR_RECIPIENT_TYPE のみを **含PR_RECIPIENT_TYPE。** 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-発信者が渡す**adrlist**構造は、MAPI が返す構造体のサイズと異なる場合があります。 **adrlist**構造体のメモリを割り当てるときは、各[spropvalue](spropvalue.md)構造体のメモリを個別に割り当てます。 
+呼 **び出し元が渡す ADRLIST** 構造は、MAPI が返す構造とは異なるサイズである可能性があります。 **ADRLIST** 構造体のメモリを割り当てる場合は [、SPropValue](spropvalue.md)構造体ごとに個別にメモリを割り当てる必要があります。 
   
-[abproviderinit](abproviderinit.md)関数に渡される MAPI メモリ割り当て関数へのポインターを使用して、メモリを割り当てます。 adrlist の[MAPIAllocateBuffer](mapiallocatebuffer.md)関数と**** 、adrlist の**adrlist**構造の各プロパティの値構造**** に、メモリを割り当てます。 
+メモリを割り当てるには [、ABProviderInit](abproviderinit.md) 関数に渡される MAPI メモリ割り当て関数へのポインターを使用します。 ADRLIST の [MAPIAllocateBuffer](mapiallocatebuffer.md) 関数を使用してメモリを割り当て **、ADRLIST** の **ADRENTRY** 構造体の各プロパティ値構造 **を割り当てる**。 
   
-**address**がより大きな**adrlist**構造を返す必要がある場合、または_lppadrlist_に NULL が渡された場合、 **address**は元の構造を解放し、新しい構造を割り当てます。 また、**アドレス**は**adrlist**構造に追加のプロパティ値構造を割り当て、必要に応じて古いものを解放します。 **adrlist**構造体のメモリの管理方法の詳細については、「 [adrlist および srowset 構造体のメモリの管理](managing-memory-for-adrlist-and-srowset-structures.md)」を参照してください。
+Address **が大** きい **ADRLIST** 構造体を返す必要がある場合、または  _lppAdrList_ に NULL を渡した場合 **、Address** は元の構造を解放し、新しい構造体を割り当てる必要があります。 **また、アドレス** は **ADRLIST** 構造に追加のプロパティ値構造を割り当て、必要に応じて古いプロパティ値構造を解放します。 **ADRLIST** 構造体のメモリを管理する方法の詳細については [、「ADRLIST および SRowSet 構造体](managing-memory-for-adrlist-and-srowset-structures.md)のメモリの管理」を参照してください。
   
- _lpadrparms_パラメーターの**ADRPARM**構造で DIALOG_SDI フラグが設定されている場合、**アドレス**はすぐに戻ります。 
+ **アドレス** は _、lpAdrParms_ パラメーター DIALOG_SDI **ADRPARM** 構造体にフラグが設定されている場合、すぐに返されます。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -130,5 +130,5 @@ S_OK
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 
 
-[adrlist および srowset 構造のためのメモリの管理](managing-memory-for-adrlist-and-srowset-structures.md)
+[ADRLIST および SRowSet 構造体のメモリの管理](managing-memory-for-adrlist-and-srowset-structures.md)
 

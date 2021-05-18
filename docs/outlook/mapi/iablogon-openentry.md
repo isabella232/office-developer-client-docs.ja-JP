@@ -25,7 +25,7 @@ ms.locfileid: "33409231"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-コンテナー、メッセージングユーザー、または配布リストを開き、インターフェイス実装へのポインターを返して、さらにアクセスできるようにします。
+コンテナー、メッセージング ユーザー、または配布リストを開き、インターフェイス実装へのポインターを返して、さらにアクセスを提供します。
   
 ```cpp
 HRESULT OpenEntry(
@@ -42,71 +42,71 @@ HRESULT OpenEntry(
 
  _cbEntryID_
   
-> 順番_lな tryid_パラメーターで指定されたエントリ識別子のバイト数。 
+> [in]  _lpEntryID_ パラメーターが指すエントリ識別子のバイト数。 
     
- _lて tryid_
+ _lpEntryID_
   
-> 順番開くコンテナー、メッセージングユーザー、または配布リストのエントリ識別子へのポインター。
+> [in]開くコンテナー、メッセージング ユーザー、または配布リストのエントリ識別子へのポインター。
     
- _lpinterface_
+ _lpInterface_
   
-> 順番開いているオブジェクトへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 NULL を渡すと、オブジェクトの標準インターフェイスの識別子が返されます。 コンテナーの場合、標準インターフェイスは[IABContainer: IMAPIContainer](iabcontainerimapicontainer.md)です。 アドレス帳オブジェクトの標準インターフェイスは[idistlist: IMAPIContainer](idistlistimapicontainer.md)の配布リストと[idistlist: imapiprop](imailuserimapiprop.md)がメッセージングユーザーを対象としています。 
+> [in]開いているオブジェクトへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 NULL を渡す場合は、オブジェクトの標準インターフェイスの識別子を返します。 コンテナーの場合、標準インターフェイスは [IABContainer : IMAPIContainer です](iabcontainerimapicontainer.md)。 アドレス帳オブジェクトの標準インターフェイスは、配布リストの [IDistList : IMAPIContainer、](idistlistimapicontainer.md) メッセージング ユーザーの [IMailUser : IMAPIProp](imailuserimapiprop.md) です。 
     
  _ulFlags_
   
-> 順番オブジェクトを開く方法を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]オブジェクトの開き方を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_BEST_ACCESS 
   
-> ユーザーに対して許可される最大のネットワークアクセス許可と、クライアントアプリケーションの最大アクセス権を使用して、オブジェクトを開くように要求します。 たとえば、クライアントに読み取り/書き込みアクセス許可がある場合は、読み取り/書き込みアクセス許可を使用してオブジェクトを開く必要があります。クライアントが読み取り専用アクセス許可を持っている場合、そのオブジェクトは読み取り専用アクセス許可で開かれている必要があります。
+> ユーザーに許可される最大ネットワークアクセス許可と最大クライアント アプリケーション アクセス権を使用してオブジェクトを開く要求。 たとえば、クライアントに読み取り/書き込みアクセス許可がある場合は、オブジェクトを読み取り/書き込みアクセス許可で開く必要があります。クライアントに読み取り専用のアクセス許可がある場合は、オブジェクトを読み取り専用のアクセス許可で開く必要があります。
     
 MAPI_DEFERRED_ERRORS 
   
-> **openentry**メソッドを正常に返すことができるようにします。これは、呼び出し元クライアントが完全にオブジェクトにアクセスする前である可能性があります。 オブジェクトがアクセスされていない場合は、その後のオブジェクト呼び出しでエラーが発生することがあります。 
+> 呼び出し元のクライアントがオブジェクトに完全にアクセスする前に **、OpenEntry** メソッドが正常に返されます。 オブジェクトにアクセスしない場合、後続のオブジェクト呼び出しを実行するとエラーが発生する可能性があります。 
     
 MAPI_MODIFY 
   
-> 読み取り/書き込みアクセス許可を要求します。 既定では、オブジェクトは読み取り専用アクセスで開かれ、クライアントは読み取り/書き込みアクセス許可が与えられていると想定することはできません。
+> 読み取り/書き込みアクセス許可を要求します。 既定では、オブジェクトは読み取り専用アクセス権で開かれません。クライアントは、読み取り/書き込みアクセス許可が付与されたと想定する必要があります。
     
- _lpulobjtype_
+ _lpulObjType_
   
-> 読み上げ開かれているオブジェクトの種類へのポインター。
+> [out]開いたオブジェクトの種類へのポインター。
     
- _lppunk_
+ _lppUnk_
   
-> 読み上げ開かれているオブジェクトへのポインターへのポインター。
+> [out]開いたオブジェクトへのポインターへのポインター。
     
 ## <a name="remarks"></a>注釈
 
 S_OK 
   
-> オブジェクトが正常に開かれました。
+> オブジェクトが正常に開かされました。
     
 MAPI_E_NO_ACCESS 
   
-> ユーザーがオブジェクトを開くための十分な権限を持っていないか、読み取り/書き込みアクセス許可を持つ読み取り専用オブジェクトを開こうとしました。
+> ユーザーがオブジェクトを開くアクセス許可が不足しているか、読み取り/書き込みアクセス許可を持つ読み取り専用オブジェクトを開く試み。
     
 MAPI_E_NOT_FOUND 
   
-> _lな tryid_で指定されたエントリ識別子は、オブジェクトを表していません。 
+> _lpEntryID で指定されたエントリ識別子は_、オブジェクトを表すではありません。 
     
 MAPI_E_UNKNOWN_ENTRYID 
   
-> _lな tryid_パラメーターのエントリ id は、アドレス帳プロバイダーで認識される形式ではありません。 
+> _lpEntryID_ パラメーターのエントリ識別子は、アドレス帳プロバイダーによって認識される形式ではありません。 
     
 ## <a name="remarks"></a>注釈
 
-MAPI は**openentry**メソッドを呼び出して、コンテナー、メッセージングユーザー、または配布リストを開きます。 
+MAPI は **OpenEntry メソッドを呼** び出して、コンテナー、メッセージング ユーザー、または配布リストを開きます。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-MAPI は、 **openentry**メソッドを呼び出す前に、 _lpentryid_パラメーターのエントリ識別子が自分に属していること、および別のプロバイダーには属していないことを判断します。 MAPI では、エントリ識別子の[MAPIUID](mapiuid.md)構造を、起動時に[imapisupport:: setprovideruid](imapisupport-setprovideruid.md)メソッドを呼び出すことによって登録した**MAPIUID**と照合することによって、これを行います。 
+MAPI が **OpenEntry** メソッドを呼び出す前に  _、lpEntryID_ パラメーターのエントリ識別子がユーザーに属し、別のプロバイダーに属していないと判断します。 MAPI は、エントリ識別子の [MAPIUID](mapiuid.md)構造を、起動時に [IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md)メソッドを呼び出して登録した **MAPIUID** と照合することでこれを行います。 
   
-_ulflags_パラメーターに MAPI_MODIFY または MAPI_BEST_ACCESS フラグが設定されていない場合は、オブジェクトを読み取り専用として開きます。 要求されたオブジェクトの変更が許可されていない場合は、オブジェクトを開かずに MAPI_E_NO_ACCESS を返します。 
+_ulFlags_ パラメーターで MAPI_MODIFYまたはMAPI_BEST_ACCESSを設定しない限り、オブジェクトを読み取り専用として開きます。 要求されたオブジェクトの変更を許可しない場合は、オブジェクトを一向に開かMAPI_E_NO_ACCESS。 
   
-MAPI が_lな tryid_に対して NULL を渡す場合は、コンテナー階層のルートコンテナーを開きます。
+MAPI が  _lpEntryID_ に NULL を渡す場合は、コンテナー階層でルート コンテナーを開きます。
   
-開くように求められているオブジェクトは、別のプロバイダーからコピーされたオブジェクトである可能性があります。 この場合は、 **PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) プロパティをサポートします。 オブジェクトがこのプロパティをサポートしている場合は、 [imapisupport:: OpenTemplateID](imapisupport-opentemplateid.md)メソッドを呼び出して、外部プロバイダーのこのエントリのコードにバインドし、 _lpTemplateID_パラメーターで**PR_TEMPLATEID**を渡し、ultemplateflags では0にします。 __ パラメーター。 **imapisupport:: OpenTemplateID**は、外部プロバイダーの[IABLogon:: OpenTemplateID](iablogon-opentemplateid.md)メソッドへの呼び出しで、この情報を外部プロバイダーに渡します。 **imapisupport:: OpenTemplateID**がエラーを発生させる場合は、通常、外部プロバイダーが使用できないか、プロファイルに含まれていないため、非連結エントリを読み取り専用として処理することによって処理を続行します。 外部アドレス帳エントリを開く方法の詳細については、「[ホストアドレス帳プロバイダーとして機能する](acting-as-a-host-address-book-provider.md)」を参照してください。
+開く必要があるオブジェクトは、別のプロバイダーからコピーされたオブジェクトである可能性があります。 この場合、このプロパティは PR_TEMPLATEID **(** [PidTagTemplateid](pidtagtemplateid-canonical-property.md)) プロパティをサポートします。 オブジェクトがこのプロパティをサポートしている場合は [、IMAPISupport::OpenTemplateID](imapisupport-opentemplateid.md)メソッドを呼び出して、外部プロバイダーのこのエントリのコードにバインドし _、lpTemplateID_ パラメーターに _PR_TEMPLATEID、ulTemplateFlags_ パラメーターに 0 を渡します。  **IMAPISupport::OpenTemplateID** は、外部プロバイダーの [IABLogon::OpenTemplateID](iablogon-opentemplateid.md) メソッドへの呼び出しで、この情報を外部プロバイダーに渡します。 **IMAPISupport::OpenTemplateID** がエラーを発生する場合は、通常、外部プロバイダーが使用できないか、プロファイルに含まれていないため、非送信エントリを読み取り専用として扱って続行してください。 外部アドレス帳エントリを開く方法の詳細については、「ホスト アドレス帳プロバイダーとして機能する」 [を参照してください](acting-as-a-host-address-book-provider.md)。
   
 ## <a name="see-also"></a>関連項目
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: a79a139a-6813-49f6-b622-bb66d62c4462
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: b8ce3898ac021bc6eec2af6220889d71ff5a18dc
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,52 +25,52 @@ ms.locfileid: "32316157"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージングユーザーの性別を含みます。
+メッセージング ユーザーの性別が含まれる。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_GENDER  <br/> |
-|識別子:  <br/> |0x3a4d  <br/> |
+|識別子:  <br/> |0x3A4D  <br/> |
 |データの種類 :   <br/> |PT_I2  <br/> |
-|エリア:  <br/> |MAPI メールユーザー  <br/> |
+|エリア:  <br/> |MAPI メール ユーザー  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このプロパティは、メッセージングユーザーおよびコンテンツに関する id とアクセス情報を提供します。 コンテンツは、メッセージングユーザーおよびメッセージングユーザーの組織によって定義されます。 
+このプロパティは、メッセージング ユーザーとコンテンツに関する識別情報とアクセス情報を提供します。 コンテンツは、メッセージング ユーザーとメッセージング ユーザーの組織によって定義されます。 
   
-このプロパティに指定できる値は、性別列挙で定義されています。 これらは次のように一覧表示されます。
+このプロパティに使用できる値は、性別列挙で定義されます。 これらは、次のように一覧表示されます。
   
 |**性別列挙**|**値**|**説明**|
 |:-----|:-----|:-----|
-|genderunspecified  <br/> |0x0000  <br/> |連絡先の性別が指定されていません。  <br/> |
-|genderfemale  <br/> |0x0001  <br/> |連絡先は女性です。  <br/> |
-|gendermale  <br/> |0x0002  <br/> |連絡先は男性です。  <br/> |
+|genderUnspecified  <br/> |0x0000  <br/> |連絡先の性別は指定されていません。  <br/> |
+|genderFemale  <br/> |0x0001  <br/> |連絡先は女性です。  <br/> |
+|genderMale  <br/> |0x0002  <br/> |連絡先は男性です。  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
-> 連絡先および個人用配布リストに対して許容されるプロパティと操作を指定します。
+> 連絡先と個人用配布リストで許容されるプロパティと操作を指定します。
     
-[[OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
-> ユーザー、連絡先、グループ、およびリソースのリストのプロパティと操作を指定します。
+> ユーザー、連絡先、グループ、およびリソースの一覧のプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -80,7 +80,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

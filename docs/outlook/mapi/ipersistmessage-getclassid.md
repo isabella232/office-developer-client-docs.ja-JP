@@ -25,7 +25,7 @@ ms.locfileid: "32309626"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームを管理できるフォームサーバーを表す識別子を返します。 
+フォームを管理できるフォーム サーバーを表す識別子を返します。 
   
 ```cpp
 HRESULT GetClassID(
@@ -35,9 +35,9 @@ HRESULT GetClassID(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpclassid_
+ _lpClassID_
   
-> [入力]フォームのクラス識別子 (CLSID) へのポインター。
+> [in, out]フォームのクラス識別子 (CLSID) へのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -45,11 +45,11 @@ S_OK
   
 > クラス識別子が正常に返されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**IPersistMessge:: GetClassID**メソッドは、 _lpclassid_パラメーターの内容をフォームサーバーのクラス識別子に設定し、S_OK を返します。 フォームビューアーが**GetClassID**を呼び出して正常に戻ると、フォームは[初期化](uninitialized-state.md)されていない状態になります。 
+**IPersistMessge::GetClassID** メソッドは _、lpClassID_ パラメーターの内容をフォーム サーバーのクラス識別子に設定し、S_OK。 フォーム ビューアーが **GetClassID** を呼び出して正常に返されると、フォームは初期化されていない [状態になります](uninitialized-state.md) 。 
   
-構造化ストレージオブジェクトでクラス識別子を使用する方法の詳細については、 [IPersist:: GetClassID](https://msdn.microsoft.com/library/921a3b86-a240-454e-9411-8d653e02b90e.aspx)メソッドのドキュメントを参照してください。 
+構造化ストレージ オブジェクトでクラス識別子を使用する方法の詳細については [、IPersist::GetClassID](https://msdn.microsoft.com/library/921a3b86-a240-454e-9411-8d653e02b90e.aspx) メソッドのドキュメントを参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

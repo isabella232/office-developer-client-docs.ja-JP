@@ -25,21 +25,21 @@ ms.locfileid: "32317627"
 |提供元:  <br/> |空き時間情報プロバイダー  <br/> |
 |インターフェイス識別子:  <br/> |**IEnumFBBlock** <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[Next](ienumfbblock-next.md) <br/> |列挙で、次に指定された空き時間情報データのブロック数を取得します。  <br/> |
-|[Skip](ienumfbblock-skip.md) <br/> |空き時間情報データの指定した数のブロックをスキップします。  <br/> |
+|[Next](ienumfbblock-next.md) <br/> |列挙の空き時間情報データの次に指定したブロック数を取得します。  <br/> |
+|[Skip](ienumfbblock-skip.md) <br/> |空き時間情報データの指定された数のブロックをスキップします。  <br/> |
 |[Reset](ienumfbblock-reset.md) <br/> |カーソルを先頭に設定して、列挙子をリセットします。  <br/> |
-|[Clone](ienumfbblock-clone.md) <br/> |同じ時間制限を使用して列挙子のコピーを作成しますが、カーソルを列挙子の先頭に設定します。  <br/> |
+|[Clone](ienumfbblock-clone.md) <br/> |同じ時間制限を使用して、列挙子のコピーを作成しますが、カーソルを列挙子の先頭に設定します。  <br/> |
 |[Restrict](ienumfbblock-restrict.md) <br/> |列挙を指定した期間に制限します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-列挙には、時間内に重複しないデータの空き時間ブロックが含まれています。 予定表に重複するアイテムがある場合、Outlook はこれらのアイテムを結合して、この優先順位 (不在、取り込み中、仮承諾) に基づいて列挙で重複しない空き時間ブロックを形成します。
+列挙には、時間内に重複しないデータの空き時間情報ブロックが含まれています。 予定表に重複するアイテムがある場合、Outlook は、これらのアイテムを結合して、次の優先順位 (アウトオブオフィス、ビジー、暫定的) に基づいて、列挙内の重複しない空き時間情報ブロックを形成します。
   
-空き時間情報プロバイダーは、このインターフェイスと、 [IFreeBusyData](ifreebusydata.md)を通じてユーザーの時間範囲の列挙を取得します。
+空き時間情報プロバイダーは [、IFreeBusyData](ifreebusydata.md)を使用して、ユーザーの時間範囲のこのインターフェイスと列挙を取得します。
   
 ## <a name="see-also"></a>関連項目
 

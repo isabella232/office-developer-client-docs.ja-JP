@@ -1,5 +1,5 @@
 ---
-title: カレンダー
+title: 予定表
 TOCTitle: Calendar
 ms:assetid: 9a8c8012-b0fd-4ebc-a5e2-da7853657f29
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff184628(v=office.15)

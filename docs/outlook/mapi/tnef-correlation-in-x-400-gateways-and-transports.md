@@ -1,5 +1,5 @@
 ---
-title: x.400 ゲートウェイおよびトランスポートでの TNEF 相互関係
+title: X.400 ゲートウェイとトランスポートの TNEF 相関
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,19 +15,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33406375"
 ---
-# <a name="tnef-correlation-in-x400-gateways-and-transports"></a>x.400 ゲートウェイおよびトランスポートでの TNEF 相互関係
+# <a name="tnef-correlation-in-x400-gateways-and-transports"></a>X.400 ゲートウェイとトランスポートの TNEF 相関
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ゲートウェイとトランスポートは、IM_THIS_IPM のシステムに接続します。この場合、TNEF 属性の値を使用して、 **** tnef の関連付けを実装します。 
+X.400 ベースのシステムに接続するゲートウェイとトランスポートは、IM_THIS_IPM X.400 属性の値と **attMessageID** TNEF 属性を使用して TNEF 相関を実装します。 
   
-送信メッセージの IM_THIS_IPM 属性の値は、TNEF ストリームの " **** 属性" にコピーされます。 IM_THIS_IPM X. 400 属性は、通常は文字列ですが、 **** 属性はバイナリ値を表す16進数の文字列です。 したがって、IM_THIS_IPM X. 400 属性の各文字 (終端の null 文字を含む) は、その文字の ASCII 値を表す2文字の16進文字列に変換する必要があります。 たとえば、IM_THIS_IPM .x 属性が次の文字列であるとします。 
+送信メッセージの IM_THIS_IPM 属性の値は、TNEF ストリームの **attMessageID** にコピーされます。 X.400 属性IM_THIS_IPM通常は文字列ですが **、attMessageID** TNEF 属性はバイナリ値を表す 16 進数の文字列です。 したがって、IM_THIS_IPM X.400 属性の各文字 (終端の null 文字を含む) は、その文字の ASCII 値を表す 2 文字の 16 進文字列に変換する必要があります。 たとえば、X.400 IM_THIS_IPM属性が次の文字列である場合。 
   
-3030322D3030312D305337533A3A3936303631312D313533373030
+3030322D3030312D305337533A3A3A3936303631312D313533373030
   
-次に、[**添付**] の値は次の16進数値になります。 
+**attMessageID の値は**、次の 16 進数字のシーケンスになります。 
   
 33 30 33 30 33 32 32 44
   
@@ -43,8 +43,8 @@ ms.locfileid: "33406375"
   
 33 37 33 30 33 30 00
   
-この手法は、Microsoft Exchange Server X. 400 コネクタによって使用されます。 この手法は、相互運用性を最大にするために Microsoft Exchange Server に接続するすべての X. 400 ゲートウェイおよびトランスポートで使用する必要があります。
+この手法は、X.400 コネクタMicrosoft Exchange Server使用します。 この手法は、相互運用性を最大限に高めるには、Microsoft Exchange Server X.400 ゲートウェイとトランスポートで使用する必要があります。
   
-Microsoft のソフトウェアと共に今後の互換性を維持するために、IM_THIS_IPM の PR_TNEF_CORRELATION_KEY 属性も**** ([PidTagTnefCorrelationKey](pidtagtnefcorrelationkey-canonical-property.md)) プロパティにコピーする必要があります。 ただし、 **PR_TNEF_CORRELATION_KEY**はバイナリプロパティであるため、16進数文字列への変換は必要ありません。 
+将来および現在の Microsoft ソフトウェアとの最大の互換性のために、IM_THIS_IPM X.400 属性も **PR_TNEF_CORRELATION_KEY** ([PidTagTnefCorrelationKey](pidtagtnefcorrelationkey-canonical-property.md)) プロパティにコピーする必要があります。 ただし **、PR_TNEF_CORRELATION_KEY** はバイナリ プロパティですから、16 進文字列への変換は必要ありません。 
   
 

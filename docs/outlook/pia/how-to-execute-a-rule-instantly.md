@@ -39,7 +39,7 @@ ms.locfileid: "32320371"
 <tbody>
 <tr class="odd">
 <td><p>ShowProgress</p></td>
-<td><p>誤り</p></td>
+<td><p>False</p></td>
 </tr>
 <tr class="even">
 <td><p>フォルダー</p></td>
@@ -64,7 +64,7 @@ ms.locfileid: "32320371"
 > [!NOTE]
 > [!メモ] [Enabled](https://msdn.microsoft.com/library/bb609147(v=office.15)) プロパティが **true** を返すかどうかに関係なく、仕分けルールを 1 回適用するには、 **Rule.Execute** メソッドを使用します。現在のセッションおよびそれ以後のセッションに対して仕分けルールを適用するには、 **Rule.Enabled** プロパティと [Save(Object)](https://msdn.microsoft.com/library/bb610738(v=office.15)) メソッドの両方を使用します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

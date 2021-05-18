@@ -23,11 +23,11 @@ ms.locfileid: "33408615"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ラベルコントロールと、指定した長さの関連付けられたラベルを記述するための[dtbllabel](dtbllabel.md)構造を含む名前付き構造を作成します。 
+ラベル コントロールと指定した長さの関連付けられたラベルを記述するための [DTBLLABEL](dtbllabel.md) 構造を含む名前付き構造を作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダーファイルで指定します。  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイルで指定します。  <br/> |Mapidefs.h  <br/> |
 |関連する構造  <br/> |**DTBLLABEL** <br/> |
    
 ```cpp
@@ -38,22 +38,22 @@ SizedDtblLabel (n, u)
 
 _n_
   
-> ラベルの長さ。 これには、末尾の NULL 文字が含まれます。 
+> ラベルの長さ。 これには、終了 NULL 文字が含まれます。 
     
 _u_
   
-> 新しい構造の名前を指定します。
+> 新しい構造の名前。
     
 ## <a name="remarks"></a>注釈
 
-**sizeddtbllabel**マクロを使用すると、ラベル内の文字数が既知の場合に、表示テーブルのラベルを定義できます。 次のメンバーで新しい構造が作成されます。 
+**SizedDtblLabel** マクロを使用すると、ラベルの文字数が分かっているときに表示テーブル ラベルを定義できます。 新しい構造は、次のメンバーで作成されます。 
   
 ```cpp
 DTBLLABEL dtbllabel;
 TCHAR lpszLabelName[n];
 ```
 
-結果の構造体へのポインターを、 **sizeddtbllabel**マクロから**dtbllabel**構造体へのポインターとして使用するには、次のキャストを実行します。 
+**SizedDtblLabel** マクロから生成される構造へのポインターを **DTBLLABEL** 構造体ポインターとして使用するには、次のキャストを実行します。 
   
 ```cpp
 lpDtblLabel = (LPDTBLLABEL) &SizedDtblLabel;

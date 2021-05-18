@@ -19,11 +19,11 @@ ms.locfileid: "33406844"
 指定されたフォントの識別子 (ID) を返します。
   
 > [!NOTE]
-> **FONTTOID**関数に似た[FONT](font-function.md)関数を使用することをお勧めします。 Microsoft Visio 2013 では、 **FONTTOID**を置換するために**FONT**関数が導入されています。 
+> **FONTTOID** 関数に似た [FONT](font-function.md)関数を使用してください。 Microsoft Visio 2013 では **、FONTTOID** を置き換える **FONT 関数が導入されました**。 
   
 ## <a name="syntax"></a>構文
 
-FONTTOID (* * *font_name* * *) 
+FONTTOID(** *font_name* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 

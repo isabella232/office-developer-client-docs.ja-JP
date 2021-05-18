@@ -21,6 +21,6 @@ ms.locfileid: "32317228"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ole も使用する場合は、ole ライブラリを初期化するために、ole 関数[oleinitialize](https://msdn.microsoft.com/library/ms690134%28v=VS.85%29.aspx)を呼び出します。 **oleinitialize**は、セッションのグローバルデータを初期化し、呼び出しを受け入れるように OLE ライブラリを準備します。 **oleinitialize**の呼び出しについては、Windows SDK を参照してください。
+OLE も使用する場合は、OLE 関数 [OleInitialize](https://msdn.microsoft.com/library/ms690134%28v=VS.85%29.aspx) を呼び出して OLE ライブラリを初期化します。 **OleInitialize は** 、セッションのグローバル データを初期化し、呼び出しを受け入れる OLE ライブラリを準備します。 **OleInitialize の呼び出しの詳細については、SDK** のWindowsしてください。
   
 

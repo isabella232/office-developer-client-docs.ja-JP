@@ -1,5 +1,5 @@
 ---
-title: 先月に変更された受信トレイ アイテムをフィルター処理して表示する
+title: 先月に変更された受信トレイアイテムをフィルター処理して表示する
 TOCTitle: Filter and display Inbox items modified in the last month
 ms:assetid: ef6004dc-0b5a-4d1f-8937-1384d1dfc1ca
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff424482(v=office.15)
@@ -108,9 +108,9 @@ DateTime modified = nextRow.LocalTimeUTC(“LastModificationTime”);
 </table>
 
 
-次の例では、DemoDASLDateMacro が **lastmonthDateTime**マクロを使用する DASL クエリを作成し、先月変更されたユーザーの受信トレイ内のアイテムをフィルター処理します。 次に、作成、**表**オブジェクトをフィルターと共に作成、列挙し、制限された**テーブル**オブジェクトの行を表示します。
+次の例では、DemoDASLDateMacro が **lastmonthDateTime** マクロを使用する DASL クエリを作成し、先月変更されたユーザーの受信トレイ内のアイテムをフィルター処理します。 次に、作成、**表** オブジェクトをフィルターと共に作成、列挙し、制限された **テーブル** オブジェクトの行を表示します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

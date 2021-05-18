@@ -21,14 +21,14 @@ ms.locfileid: "33409154"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
- **メッセージに関連付けられているアイコンを検索するには**
+ **メッセージに関連付けられているアイコンを見つけるには**
   
-1. メッセージの[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出して、その**PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) プロパティを取得します。
+1. メッセージの [IMAPIProp::GetProps](imapiprop-getprops.md) メソッドを呼び出して、PR_MESSAGE_CLASS **(** [PidTagMessageClass](pidtagmessageclass-canonical-property.md)) プロパティを取得します。
     
-2. [MAPIOpenFormMgr](mapiopenformmgr.md)を呼び出して、 **imapiformmgr**インターフェイスポインターを取得します。 **imapisession**ポインターを_psession_パラメーターに渡します。 
+2. [MAPIOpenFormMgr を呼び](mapiopenformmgr.md)出して **IMAPIFormMgr インターフェイス ポインターを** 取得します。 pSession パラメーター **で IMAPISession** ポインター  _を渡_ します。 
     
-3. [imapiformmgr:: ResolveMessageClass](imapiformmgr-resolvemessageclass.md)を呼び出して、 **imapiformmgr**インターフェイスポインターを取得します。 
+3. [IMAPIFormMgr::ResolveMessageClass](imapiformmgr-resolvemessageclass.md)を呼び出して **、IMAPIFormInfo** インターフェイス ポインターを取得します。 
     
-4. **imapiforminfo**ポインターを使用して[、imapiprop:: GetProps](imapiprop-getprops.md)を呼び出し、 **PR_ICON** ([PidTagIcon](pidtagicon-canonical-property.md)) プロパティと**PR_MINI_ICON** ([PidTagMiniIcon](pidtagminiicon-canonical-property.md)) プロパティを取得します。 
+4. **IMAPIFormInfo** ポインターを使用して [IMAPIProp::GetProps](imapiprop-getprops.md)を呼び出し **、PR_ICON** ([PidTagIcon](pidtagicon-canonical-property.md)) プロパティまたは PR_MINI_ICON ([PidTagMiniIcon](pidtagminiicon-canonical-property.md)) プロパティ **を** 取得します。 
     
 

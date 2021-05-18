@@ -1,5 +1,5 @@
 ---
-title: 以下 (Access カスタム web アプリ)
+title: より小さいか等しい (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33405654"
 ---
-# <a name="less-than-or-equal-to-access-custom-web-app"></a>以下 (Access カスタム web アプリ)
+# <a name="less-than-or-equal-to-access-custom-web-app"></a>より小さいか等しい (Access カスタム Web アプリ)
 
 2 つの式を比較します。NULL でない式を比較したときに、左側のオペランドの値が右側のオペランドの値よりも小さい場合、結果は TRUE です。それ以外の場合、結果は FALSE です。
   

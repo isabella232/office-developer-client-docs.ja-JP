@@ -1,5 +1,5 @@
 ---
-title: imapisessionadminservices
+title: IMAPISessionAdminServices
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33405906"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージサービスに変更を加えるための[IMsgServiceAdmin](imsgserviceadminiunknown.md)ポインターを返します。 
+メッセージ サービスを [変更する IMsgServiceAdmin](imsgserviceadminiunknown.md) ポインターを返します。 
   
 ```cpp
 HRESULT AdminServices(
@@ -40,19 +40,19 @@ HRESULT AdminServices(
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lppserviceadmin_
+ _lppServiceAdmin_
   
-> 読み上げメッセージサービス管理オブジェクトへのポインターへのポインター。
+> [out]メッセージ サービス管理オブジェクトへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> メッセージサービス管理オブジェクトへのポインターが正常に返されました。
+> メッセージ サービス管理オブジェクトへのポインターが正常に返されました。
     
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**imapisession:: adminservices**メソッドは、 **IMsgServiceAdmin**インターフェイスをサポートするオブジェクトであるメッセージサービス管理オブジェクトを作成し、ポインターを返します。 このポインターを使用すると、 **IMsgServiceAdmin**メソッドを呼び出して、セッションプロファイル内の任意のメッセージサービスを変更できます。 これらの変更は、次のセッションが終了するまで有効にならないことに注意してください。現在のセッションは影響を受けません。 
+**IMAPISession::AdminServices** メソッドは **、IMsgServiceAdmin** インターフェイスをサポートし、ポインターを返すメッセージ サービス管理オブジェクトを作成します。 このポインターを使用すると **、IMsgServiceAdmin** メソッドを呼び出して、セッション プロファイル内のメッセージ サービスを変更できます。 これらの変更は、次のセッションまで有効にされない点に注意してください。現在のセッションは影響を受けません。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -60,7 +60,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIStoreFunctions  <br/> |getservername  <br/> |mfcmapi は、 **imapisession:: adminservices**メソッドを使用して、プロファイルにアクセスしてサーバー名を読み取ります。  <br/> |
+|MAPIStoreFunctions.cpp  <br/> |GetServerName  <br/> |MFCMAPI は **IMAPISession::AdminServices** メソッドを使用して、サーバー名を読み取るプロファイルにアクセスします。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

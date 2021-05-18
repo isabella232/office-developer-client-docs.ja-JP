@@ -25,11 +25,11 @@ ms.locfileid: "33408524"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI DLL のインスタンスごとのグローバルデータを、参照カウント、クリーンアップ、削除します。 
+MAPI DLL の参照カウントをデクレメントし、クリーンアップし、インスタンスごとのグローバル データを削除します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapix  <br/> |
+|ヘッダー ファイル:  <br/> |Mapix.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
 |呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
    
@@ -47,11 +47,11 @@ void MAPIUninitialize ( void );
   
 ## <a name="remarks"></a>注釈
 
-クライアントアプリケーションは、 **MAPIUninitialize**関数を呼び出して MAPI との対話を終了させるため、 [MAPIInitialize](mapiinitialize.md)関数の呼び出しから開始されます。 **MAPIUninitialize**を呼び出した後、クライアントは他の MAPI 呼び出しを行うことはできません。 
+クライアント アプリケーションは **、MAPIUninitialize** 関数を呼び出して MAPI との対話を終了します [。MAPIInitialize](mapiinitialize.md) 関数の呼び出しで開始します。 **MAPIUninitialize が呼** び出された後、クライアントによって他の MAPI 呼び出しを行う必要はありません。 
   
- **MAPIUninitialize**は参照カウントをデクリメントし、対応する**MAPIInitialize**関数が参照カウントをインクリメントします。 そのため、1つの関数への呼び出しの数は、もう一方への呼び出しの数と等しくなければなりません。 
+ **MAPIUninitialize** デクリメントは参照カウントを、対応する **MAPIInitialize** 関数は参照カウントをインクリメントします。 したがって、1 つの関数に対する呼び出しの数は、もう一方の関数への呼び出しの数と等しくする必要があります。 
   
 > [!NOTE]
-> **MAPIInitialize**または**MAPIUninitialize**は、Win32 **DllMain**関数から、またはスレッドを作成または終了する他の関数内から呼び出すことはできません。 詳細については、「[スレッドセーフオブジェクトの使用](using-thread-safe-objects.md)」を参照してください。 
+> Win32 **DllMain** 関数またはスレッドを作成または終了するその他の関数内から **MAPIInitialize** または **MAPIUninitialize** を呼び出す必要があります。 詳細については、「Using [Thread-Safe オブジェクト」を参照してください](using-thread-safe-objects.md)。 
   
 

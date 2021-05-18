@@ -1,5 +1,5 @@
 ---
-title: Excel XLL SDK ���쌠���
+title: Excel XLL SDK 著作権情報
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer

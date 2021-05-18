@@ -37,7 +37,7 @@ HRESULT GetMessage(
 
  _ppmsg_
   
-> 読み上げメッセージに対して返されるインターフェイスへのポインターへのポインター。
+> [out]メッセージの返されるインターフェイスへのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -47,15 +47,15 @@ S_OK
     
 S_FALSE 
   
-> 呼び出し元フォームのメッセージは現在存在しません。
+> 呼び出し元のフォームにメッセージが現在存在しません。
     
 ## <a name="remarks"></a>注釈
 
-フォームは、 **IMAPIMessageSite:: GetMessage**メソッドを呼び出して、現在のメッセージのメッセージインターフェイスを取得します。 現在のメッセージは、 [IPersistMessage:: InitNew](ipersistmessage-initnew.md)、 [IPersistMessage:: Load](ipersistmessage-load.md)、または[IPersistMessage:: SaveCompleted](ipersistmessage-savecompleted.md)メソッドで以前に渡されたのと同じメッセージです。 
+フォームは **IMAPIMessageSite::GetMessage** メソッドを呼び出して、現在のメッセージのメッセージ インターフェイスを取得します。 現在のメッセージは [、IPersistMessage::InitNew](ipersistmessage-initnew.md) [、IPersistMessage::Load、](ipersistmessage-load.md)または [IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md) メソッドで以前に渡されたメッセージと同じです。 
   
- 現在、メッセージが存在しない場合、 **GetMessage**は S_FALSE を返します。 この状態は、 [IPersistMessage:: handsoffmessage](ipersistmessage-handsoffmessage.md)メソッドへの呼び出し、または**IPersistMessage:: Load**または**IPersistMessage:: SaveCompleted**の次の呼び出しの前に発生する可能性があります。 
+ **GetMessage は** 、現在S_FALSEメッセージが存在しない場合、そのメッセージを返します。 この状態は [、IPersistMessage::HandsOffMessage](ipersistmessage-handsoffmessage.md)メソッドを呼び出した後、または **IPersistMessage::Load または IPersistMessage::SaveCompleted** の次の呼び出しが行われる前に発生する可能性があります。  
   
-フォームサーバーに関連するインターフェイスの一覧については、「 [MAPI フォームインターフェイス](mapi-form-interfaces.md)」を参照してください。
+フォーム サーバーに関連するインターフェイスの一覧については [、「MAPI フォーム インターフェイス」を参照してください](mapi-form-interfaces.md)。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -63,7 +63,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer  <br/> |cmymapiformviewer:: getsession  <br/> |mfcmapi は、 **IMAPIMessageSite:: GetMessage**メソッドを使用して、現在キャッシュされているメッセージポインター (使用可能な場合) を返します。  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetSession  <br/> |MFCMAPI は **IMAPIMessageSite::GetMessage** メソッドを使用して、現在キャッシュされているメッセージ ポインター (使用可能な場合) を返します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -84,5 +84,5 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォームインターフェイス](mapi-form-interfaces.md)
+[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
 

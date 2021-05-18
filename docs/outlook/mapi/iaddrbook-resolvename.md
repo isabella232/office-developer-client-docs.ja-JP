@@ -25,7 +25,7 @@ ms.locfileid: "33408132"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-名前解決を実行し、受信者リスト内の受信者にエントリ識別子を割り当てます。
+名前解決を実行し、受信者リストの受信者にエントリ識別子を割り当てる。
   
 ```cpp
 HRESULT ResolveName(
@@ -38,83 +38,83 @@ HRESULT ResolveName(
 
 ## <a name="parameters"></a>パラメーター
 
- _uluiparam_
+ _ulUIParam_
   
-> 順番ダイアログボックスの親ウィンドウへのハンドル。指定されている場合は、あいまいな解決をユーザーに求めるメッセージを表示します。
+> [in]ユーザーにあいまい性の解決を求めるダイアログ ボックスの親ウィンドウへのハンドルを指定すると表示されます。
     
  _ulFlags_
   
-> 順番解決プロセスのさまざまな側面を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]解決プロセスのさまざまな側面を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 AB_UNICODEUI
   
-> _lpsznewentrytitle_が UNICODE 文字列であることを示します。 
+> _lpszNewEntryTitle が_ UNICODE 文字列を示します。 
     
 MAPI_CACHE_ONLY
   
-> 名前解決を実行するには、オフラインアドレス帳のみを使用します。 たとえば、このフラグを使用して、クライアントアプリケーションが exchange キャッシュモードでグローバルアドレス一覧 (GAL) を開き、クライアントとサーバーの間のトラフィックを作成せずに、キャッシュからそのアドレス帳のエントリにアクセスできるようにすることができます。 このフラグは、Exchange アドレス帳プロバイダーによってのみサポートされています。
+> 名前解決を実行するには、オフライン アドレス帳のみを使用します。 たとえば、このフラグを使用すると、クライアント アプリケーションがキャッシュされた Exchange モードでグローバル アドレス一覧 (GAL) を開き、クライアントとサーバー間のトラフィックを作成せずにキャッシュからそのアドレス帳のエントリにアクセスできます。 このフラグは、アドレス帳プロバイダー Exchangeサポートされます。
     
 MAPI_DIALOG 
   
-> 追加の名前解決情報をユーザーに確認するダイアログボックスが表示されます。 このフラグが設定されていない場合は、ダイアログボックスは表示されません。 
+> ユーザーに追加の名前解決情報を求めるダイアログ ボックスを表示します。 このフラグが設定されていない場合、ダイアログ ボックスは表示されません。 
     
 MAPI_UNICODE 
   
-> アドレス一覧で返されるプロパティが、PT_STRING8 ではなく PT_UNICODE 型であることを示します。 
+> アドレス一覧で返されるプロパティは、アドレス一覧ではなく、PT_UNICODE型PT_STRING8。 
     
- _lpsznewentrytitle_
+ _lpszNewEntryTitle_
   
-> 順番ユーザーに受信者の入力を求めるダイアログボックス内のコントロールのタイトルを示すテキストへのポインター。 タイトルは、受信者の種類によって異なります。 _lpsznewentrytitle_パラメーターは NULL にすることができます。 
+> [in]ユーザーに受信者の入力を求めるダイアログ ボックス内のコントロールのタイトルのテキストへのポインター。 タイトルは受信者の種類によって異なります。 _lpszNewEntryTitle パラメーター_ には NULL を指定できます。 
     
- _lpadrlist_
+ _lpAdrList_
   
-> [入力-出力]解決する受信者名のリストを含む[adrlist](adrlist.md)構造体へのポインター。 この**adrlist**構造は、 [IAddrBook:: Address](iaddrbook-address.md)メソッドによって作成できます。 
+> [インアウト]解決する受信者名の一覧を含む [ADRLIST](adrlist.md) 構造体へのポインター。 この **ADRLIST 構造** は [、IAddrBook::Address メソッドによって作成](iaddrbook-address.md) できます。 
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 名前解決プロセスが正常に終了しました。
+> 名前解決プロセスが成功しました。
     
 MAPI_E_AMBIGUOUS_RECIP 
   
-> _lpadrlist_パラメーターの少なくとも1つの受信者が、アドレス帳の複数のエントリと一致しました。 通常、この値は、MAPI_DIALOG フラグが設定されているときに返され、ダイアログボックスの表示を禁止します。 
+> _lpAdrList_ パラメーター内の少なくとも 1 つの受信者が、アドレス帳内の複数のエントリと一致しました。 通常、この値は、MAPI_DIALOGフラグが設定されている場合に返され、ダイアログ ボックスの表示は禁止されます。 
     
 MAPI_E_NOT_FOUND 
   
-> _lpadrlist_パラメーターの少なくとも1人の受信者を解決できません。 通常、この値は、MAPI_DIALOG フラグが設定されているときに返され、ダイアログボックスの表示を禁止します。 
+> _lpAdrList_ パラメーター内の少なくとも 1 つの受信者を解決できません。 通常、この値は、MAPI_DIALOGフラグが設定されている場合に返され、ダイアログ ボックスの表示は禁止されます。 
     
 ## <a name="remarks"></a>注釈
 
-クライアントおよびサービスプロバイダーは、 **ResolveName**メソッドを呼び出して名前解決プロセスを開始します。 未解決のエントリとは、エントリ id または**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティをまだ持っていないエントリのことです。
+クライアントとサービス プロバイダーは **ResolveName メソッドを呼び出** して、名前解決プロセスを開始します。 未解決のエントリは、まだエントリ識別子またはプロパティ [(PidTagEntryId)](pidtagentryid-canonical-property.md)プロパティ **PR_ENTRYIDエントリです**。
   
- _lpadrlist_パラメーターに渡されたアドレス一覧の未解決の各エントリに対して、 **ResolveName**は次のプロセスを実行します。 
+ **ResolveName** は  _、lpAdrList_ パラメーターで渡されたアドレス一覧内の未解決のエントリごとに、次のプロセスを実行します。 
   
-1. 受信者のアドレスの種類が SMTP アドレス ( _displayname_@ _ドメイン_) の形式に準拠している場合、 **ResolveName**は1回限りのエントリ識別子を割り当てます。 
+1. 受信者のアドレスの種類が SMTP アドレス _(displayname_ @  _domain.top-level-domain)_ の形式に準拠している場合 **、ResolveName** は一時エントリ識別子を割り当てる。 
     
-2. **PR_AB_SEARCH_PATH** ([PidTagAbSearchPath](pidtagabsearchpath-canonical-property.md)) プロパティの各コンテナーに対して、 **ResolveName**は[IABContainer:: ResolveNames](iabcontainer-resolvenames.md)メソッドを呼び出します。 **ResolveNames**は、各受信者の表示名を、そのエントリのいずれかに属する表示名に一致させようとします。 
+2. ResolveName は、PR_AB_SEARCH_PATH **(** [PidTagAbSearchPath](pidtagabsearchpath-canonical-property.md)) プロパティ内の各コンテナーについて [、IABContainer::ResolveNames メソッドを呼び出](iabcontainer-resolvenames.md)します。 **ResolveNames は** 、未解決の各受信者の表示名を、そのエントリの 1 つに属する表示名と一致します。 
     
-3. コンテナーが**ResolveNames**をサポートしていない場合、 **ResolveName**は、 **PR_ANR** ([PidTagAnr](pidtaganr-canonical-property.md)) プロパティ制限を使用してコンテナーの contents テーブルを制限します。 この制限によって、コンテナーは一致する受信者を検索するために "最適な推測" の種類の検索を実行します。 すべてのコンテナーは、 **PR_ANR**プロパティ制限をサポートする必要があります。 
+3. コンテナーが **ResolveNames** をサポートしていない **場合、ResolveName** は、プロパティ制限 ([PidTagAnr](pidtaganr-canonical-property.md)) PR_ANR を使用してコンテナーのコンテンツ **テーブル** を制限します。 この制限により、コンテナーは一致する受信者を検索する "最適な推測" タイプの検索を実行します。 すべてのコンテナーは、プロパティ **の制限** PR_ANR必要があります。 
     
-4. コンテナーが複数の名前に一致する受信者を返すと、MAPI_DIALOG フラグが設定されている場合、 **ResolveName**はダイアログボックスを表示し、ユーザーが正しい名前を選択できるようにします。 
+4. コンテナーが複数の名前に一致する受信者を返す場合 **、ResolveName** は MAPI_DIALOG フラグが設定されている場合にダイアログ ボックスを表示し、ユーザーが正しい名前を選択できます。 
     
-5. **PR_AB_SEARCH_PATH**プロパティのすべてのコンテナーが呼び出され、一致が見つからない場合は、受信者は未解決のままになります。 
+5. PR_AB_SEARCH_PATH プロパティ **内のすべてのコンテナーが** 呼び出され、一致が見つからない場合、受信者は未解決のままです。 
     
-1つまたは複数の受信者が未解決の場合、 **ResolveName**は MAPI_E_NOT_FOUND を返します。 1つまたは複数の受信者があいまいな解決策をダイアログボックスで解決できない場合、または MAPI_DIALOG フラグが設定されていない場合、 **ResolveName**は MAPI_E_AMBIGUOUS_RECIP を返します。 一部の受信者があいまいで解決できない場合、 **ResolveName**はどちらかのエラー値を返すことができます。 
+1 つ以上の受信者が未解決の場合 **、ResolveName** は新しい受信者MAPI_E_NOT_FOUND。 1 つ以上の受信者が、ダイアログ ボックスで解決できないあいまいな解決策を持っていた場合、または MAPI_DIALOG フラグが設定されていない場合 **、ResolveName** は MAPI_E_AMBIGUOUS_RECIP を返します。 一部の受信者があいまいで解決できない場合 **、ResolveName** はどちらのエラー値も返す可能性があります。 
   
-名前を解決できない場合、クライアントは、特別な形式のアドレスとエントリ識別子を持つ1回限りのアドレスを作成できます。 1回限りのエントリ識別子の形式の詳細については、「 [1 回限りのエントリ識別子](one-off-entry-identifiers.md)」を参照してください。 1回限りのアドレスの形式の詳細については、「[一時](one-off-addresses.md)アドレス」を参照してください。
+名前を解決できない場合、クライアントは、特別な形式のアドレスとエントリ識別子を持つ 1 回のアドレスを作成できます。 1 回きりエントリ識別子の形式の詳細については [、「One-Off Entry IDENTIFIERs」を参照してください](one-off-entry-identifiers.md)。 1 回のアドレスの形式の詳細については [、「One-Off Addresses 」を参照してください](one-off-addresses.md)。
   
-MAPI では、 **adrlist**の Unicode 文字列と、 **ResolveName**への新しいエントリタイトルパラメーターがサポートされています。MAPI_UNICODE フラグを設定した場合、 [adrentry](adrentry.md)構造では、次のプロパティが PT_UNICODE 型として返されます。 
+MAPI では **、ADRLIST** の Unicode 文字文字列と ResolveName への新しいエントリ タイトル パラメーター **がサポートされています**。このフラグを設定MAPI_UNICODE、次のプロパティは [ADRENTRY](adrentry.md) 構造体の型PT_UNICODE返されます。 
   
-- **PR_ADDRTYPE**([PidTagAddressType](pidtagaddresstype-canonical-property.md))
+- **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))
     
-- **PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
+- **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
     
-- **PR_EMAIL_ADDRESS**([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))
+- **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))
     
-- **PR_TRANSMITABLE_DISPLAY_NAME**([PidTagTransmittableDisplayName](pidtagtransmittabledisplayname-canonical-property.md))
+- **PR_TRANSMITABLE_DISPLAY_NAME** ([PidTagTransmittableDisplayName](pidtagtransmittabledisplayname-canonical-property.md))
     
-ただし、 **PR_7BIT_DISPLAY_NAME** ([PidTag7BitDisplayName](pidtag7bitdisplayname-canonical-property.md)) プロパティは常に PT_STRING8 型として返されます。
+ただし **、PR_7BIT_DISPLAY_NAME** ([PidTag7BitDisplayName](pidtag7bitdisplayname-canonical-property.md)) プロパティは、常に型として返PT_STRING8。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -122,8 +122,8 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**�R�����g**|
 |:-----|:-----|:-----|
-|MAPIABFunctions  <br/> |addoneoffaddress  <br/> |mfcmapi は、メッセージに追加する前に、 **ResolveName**メソッドを使用して、1回限りのアドレスを解決します。  <br/> |
-|MAPIABFunctions  <br/> |AddRecipient  <br/> |mfcmapi は、 **ResolveName**メソッドを使用して、アドレス帳のエントリを表示名で検索します。  <br/> |
+|MAPIABFunctions.cpp  <br/> |AddOneOffAddress  <br/> |MFCMAPI は **ResolveName** メソッドを使用して、メッセージに追加する前に 1 回のアドレスを解決します。  <br/> |
+|MAPIABFunctions.cpp  <br/> |AddRecipient  <br/> |MFCMAPI は **ResolveName メソッドを使用** して、表示名でアドレス帳エントリを検索します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

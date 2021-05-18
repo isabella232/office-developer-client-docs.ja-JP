@@ -25,13 +25,13 @@ ms.locfileid: "33405913"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[OpenIMsgOnIStg](openimsgonistg.md)関数を使用して、その上に構築された**IMessage**オブジェクトの最終リリース後に、 **IStorage**インターフェイスを解放できるコールバック関数を定義します。 
+[OpenIMsgOnIStg](openimsgonistg.md)関数を使用して、その上に構築された **IMessage** オブジェクトの最終リリース後に **IStorage** インターフェイスを解放できるコールバック関数を定義します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Imessage  <br/> |
-|定義された関数の実装:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
-|によって呼び出された定義済み関数:  <br/> |MAPI  <br/> |
+|ヘッダー ファイル:  <br/> |Imessage.h  <br/> |
+|定義された関数は、次の方法で実装されます。  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
+|によって呼び出される定義済み関数:  <br/> |MAPI  <br/> |
    
 ```cpp
 typedef void (STDAPICALLTYPE MSGCALLRELEASE)(
@@ -41,13 +41,13 @@ typedef void (STDAPICALLTYPE MSGCALLRELEASE)(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulcallerdata_
+ _ulCallerData_
   
-> 順番**IMessage**インターフェイスに関する通話アプリケーション情報が保存されています。 
+> [in]IMessage インターフェイスに関する呼び出し元 **のアプリケーション情報が含** まれる。 
     
- _lpmessage_
+ _lpMessage_
   
-> 順番最上位レベルのメッセージと、解放された添付ファイルへのポインター。
+> [in]リリースされたトップ レベルのメッセージと添付ファイルへのポインター。
     
 ## <a name="return-value"></a>Return value
 

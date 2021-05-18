@@ -25,13 +25,13 @@ ms.locfileid: "33406340"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロパティセット内の指定されたプロパティを検索します。
+プロパティ セット内の指定されたプロパティを検索します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 LPSPropValue PpropFindProp(
@@ -45,23 +45,23 @@ LPSPropValue PpropFindProp(
 
  _rgprop_
   
-> 順番検索するプロパティを定義する[spropvalue](spropvalue.md)構造の配列です。 
+> [in]検索する [プロパティを定義する SPropValue](spropvalue.md) 構造体の配列。 
     
  _cprop_
   
-> 順番_rgprop_パラメーターによって示されるプロパティセット内のプロパティの数。 
+> [in]  _rgprop_ パラメーターで示されるプロパティ セット内のプロパティの数。 
     
  _ulPropTag_
   
-> 順番_rgprop_パラメーターによって示されるプロパティセット内で検索するプロパティのプロパティタグ。 
+> [in]  _rgprop_ パラメーターで示されるプロパティ セット内で検索するプロパティのプロパティ タグ。 
     
 ## <a name="return-value"></a>戻り値
 
- **ppropfindprop**は、入力プロパティタグに一致するプロパティを定義する[spropvalue](spropvalue.md)構造体を返します。一致しない場合は NULL になります。 
+ **PpropFindProp** は、入力プロパティ タグに一致するプロパティを定義する [SPropValue](spropvalue.md) 構造体を返します。一致しない場合は NULL を返します。 
   
 ## <a name="remarks"></a>注釈
 
-指定したプロパティタグが PT_UNSPECIFIED 型のプロパティを示している場合、 **ppropfindprop**関数は、タグ内のプロパティ識別子に対してのみ一致を検出します。 それ以外の場合は、プロパティの型を含む property タグ全体の一致を検索し、識別されたプロパティを返します。 
+指定されたプロパティ タグが PT_UNSPECIFIED 型のプロパティを示す場合 **、PpropFindProp** 関数はタグ内のプロパティ識別子の一致のみを検索します。 それ以外の場合は、プロパティの種類を含むプロパティ タグ全体の一致を検索し、識別されたプロパティを返します。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -69,7 +69,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl  <br/> |CContentsTableListCtrl:: builddataitem  <br/> |mfcmapi は、 **ppropfindprop**メソッドを使用して、リストに追加されているプロパティセット内のプロパティを検索します。  <br/> |
+|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::BuildDataItem  <br/> |MFCMAPI は **PpropFindProp** メソッドを使用して、リストに追加されるプロパティ セット内のプロパティを検索します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

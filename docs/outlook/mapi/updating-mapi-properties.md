@@ -19,17 +19,17 @@ ms.locfileid: "33407523"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアントおよびサービスプロバイダーは、次のものを呼び出してプロパティの値を更新できます。
+クライアントとサービス プロバイダーは、次の呼び出しによってプロパティ値を更新できます。
   
-- オブジェクトの[imapiprop:: setprops](imapiprop-setprops.md)メソッドを実行して、1つ以上のオブジェクトのプロパティの値を更新します。 
+- オブジェクトの [IMAPIProp::SetProps](imapiprop-setprops.md) メソッドを使用して、1 つ以上のオブジェクトのプロパティの値を更新します。 
     
-- [hrsetoneprop](hrsetoneprop.md)関数は、一度に1つのプロパティのみを更新します。 **hrsetoneprop**は、対象のオブジェクトがローカルの場合にのみ使用します。この関数は、リモートオブジェクトと共に使用すると、パフォーマンスの低下を引き起こす可能性があります。 
+- [HrSetOneProp](hrsetoneprop.md)関数は、一度に 1 つのプロパティのみを更新します。 ターゲット **オブジェクトがローカルの場合にのみ、HrSetOneProp** を使用します。この関数は、リモート オブジェクトで使用するとパフォーマンスが低下する可能性があります。 
     
-次の手順は、 **setprops**を使用してメッセージの message クラスまたは PR_MESSAGE_CLASS_A ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) プロパティを更新する方法を示しています。 
+次の手順は **、SetProps** を使用してメッセージ クラスまたはメッセージの PR_MESSAGE_CLASS_A ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) プロパティを更新する方法を示しています。 
   
-### <a name="to-update-the-message-class-of-a-message"></a>メッセージのメッセージクラスを更新するには 
+### <a name="to-update-the-message-class-of-a-message"></a>メッセージのメッセージ クラスを更新するには 
   
-1. message クラスの[spropvalue](spropvalue.md)構造体を割り当て、そのメンバーを必要に応じて設定します。 
+1. メッセージ クラス [に SPropValue](spropvalue.md) 構造体を割り当て、そのメンバーを適切に設定します。 
     
   ```cpp
     SPropValue spvMsgClass;
@@ -38,7 +38,7 @@ ms.locfileid: "33407523"
     
   ```
 
-2. メッセージの**imapiprop:: setprops**メソッドを呼び出して、新しいメッセージクラスを設定します。 
+2. メッセージの **IMAPIProp::SetProps** メソッドを呼び出して、新しいメッセージ クラスを設定します。 
     
   ```cpp
     hRes = lpMessage->SetProps(1, (LPSPropValue) &spvMsgClass, NULL);

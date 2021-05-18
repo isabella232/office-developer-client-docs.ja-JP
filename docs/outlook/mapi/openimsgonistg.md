@@ -23,13 +23,13 @@ ms.locfileid: "33406522"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージセッション内で使用するために、既存の OLE **IStorage**オブジェクトの上に新しい[IMessage](imessageimapiprop.md)オブジェクトを作成します。 
+メッセージ セッション内で使用する、既存の OLE **IStorage** オブジェクトの上に新しい [IMessage](imessageimapiprop.md)オブジェクトを作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Imessage  <br/> |
+|ヘッダー ファイル:  <br/> |Imessage.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 SCODE OpenIMsgOnIStg(
@@ -49,60 +49,60 @@ SCODE OpenIMsgOnIStg(
 
 ## <a name="parameters"></a>パラメーター
 
-_lpmsgsess_
+_lpMsgSess_
   
-> 順番新しい**IMessage**オブジェクトが作成されるメッセージセッションオブジェクトへのポインターを**** 指定します。 
+> [in]新しい **IMessage**-on- **IStorage** オブジェクトを作成するメッセージ セッション オブジェクトへのポインター。 
     
 _lpAllocateBuffer_
   
-> 順番メモリの割り当てに使用される[MAPIAllocateBuffer](mapiallocatebuffer.md)関数へのポインター。 
+> [in]メモリの割 [り当てに使用する MAPIAllocateBuffer](mapiallocatebuffer.md) 関数へのポインター。 
     
 _lpAllocateMore_
   
-> 順番追加のメモリを割り当てるために使用される[MAPIAllocateMore](mapiallocatemore.md)関数へのポインター。 
+> [in]追加のメモリ [の割り当てに使用する MAPIAllocateMore](mapiallocatemore.md) 関数へのポインター。 
     
-_lpfreebuffer_
+_lpFreeBuffer_
   
-> 順番メモリを解放するために使用される[MAPIFreeBuffer](mapifreebuffer.md)関数へのポインター。 
+> [in]メモリを解放するために使用する [MAPIFreeBuffer](mapifreebuffer.md) 関数へのポインター。 
     
-_lpmalloc_
+_lpMalloc_
   
-> 順番OLE **imalloc**インターフェイスを公開するメモリアロケーターオブジェクトへのポインター。 **IMessage**インターフェイスは、 **IStorage**や**IStream**などのインターフェイスを使用するときに、この割り当て方法を使用する必要があります。 
+> [in]OLE **IMalloc** インターフェイスを公開するメモリ アロケーター オブジェクトへのポインター。 **IMessage インターフェイスは****、IStorage** や IStream などのインターフェイスを操作するときに、この割り当て方法を使用 **する必要があります**。 
     
 _lpMapiSup_
   
-> 順番(オプション) サービスプロバイダーが[imapisupport: IUnknown](imapisupportiunknown.md)インターフェイスのメソッドを呼び出すために使用できる MAPI サポートオブジェクトを指すポインターです。 
+> [in]サービス プロバイダーが [IMAPISupport : IUnknown](imapisupportiunknown.md) インターフェイスのメソッドを呼び出す場合に使用できる MAPI サポート オブジェクトへのオプションのポインター。 
     
-_lpstg_
+_lpStg_
   
-> [入力]読み取り専用または読み取り/書き込みのアクセス許可を持つ、開いている OLE **IStorage**オブジェクトへのポインター。 **IMessage**は書き込み専用アクセスをサポートしていないため、 **OpenIMsgOnIStg**は書き込み専用モードで開かれたストレージオブジェクトを受け入れません。 
+> [in, out]開いている、読 **み取り専用** または読み取り/書き込みアクセス許可を持つ OLE IStorage オブジェクトへのポインター。 **IMessage は書** き込み専用アクセスをサポートしないので **、OpenIMsgOnIStg** は書き込み専用モードで開いたストレージ オブジェクトを受け入れません。 
     
-_lpfmsgcallrelease_
+_lpfMsgCallRelease_
   
-> 順番オプションのコールバック関数へのポインター。 [](msgcallrelease.md) MAPI は、 **IMessage**オブジェクト上の最後のリリースを呼び出した後に呼び出されます。 **** 
+> [in]**IMessage**-on- **IStorage** オブジェクトの最後のリリースに従って MAPI が呼び出す [MSGCALLRELEASE](msgcallrelease.md)プロトタイプに基づくコールバック関数へのオプションのポインター。 
     
-_ulcallerdata_
+_ulCallerData_
   
-> 順番**IMessage**オブジェクトを使用して MAPI によって保存**** され、 **msgcallrelease**ベースのコールバック関数に渡される発信者データ。 このデータは、解放される**IMessage**オブジェクトと、それが作成された最初の**IStorage**オブジェクトに関するコンテキストを提供します。 
+> [in] **IMessage**-on- **IStorage** オブジェクトを使用して MAPI によって保存され **、MSGCALLRELEASE** ベースのコールバック関数に渡された呼び出し元データ。 データは、リリースされる **IMessage** オブジェクトと、その上に作成された **IStorage** オブジェクトに関するコンテキストを提供します。 
     
 _ulFlags_
   
-> 順番クライアントアプリケーションまたはサービスプロバイダーが**IMessage:: SaveChanges**メソッドを呼び出すときに、OLE **IStorage:: Commit**メソッドが呼び出されるかどうかを制御するために使用されるフラグのビットマスク。 次のフラグを設定できます。 
+> [in]クライアント アプリケーションまたはサービス プロバイダーが **IMessage::SaveChanges** メソッドを呼び出す場合に OLE **IStorage::Commit** メソッドを呼び出すかどうかを制御するために使用されるフラグのビットマスク。 次のフラグを設定できます。 
     
 IMSG_NO_ISTG_COMMIT 
   
-> OLE メソッド**IStorage:: Commit**は、クライアントまたはプロバイダーが[SaveChanges](imapiprop-savechanges.md)を呼び出したときには呼び出されません。 
+> OLE メソッド **IStorage::Commit** は、クライアントまたはプロバイダーが SaveChanges を呼び出す場合は呼 [び出されません](imapiprop-savechanges.md)。 
     
 MAPI_UNICODE
   
-> Unicode .msg ファイルの作成を有効にします。 生成された[IMessage](imessageimapiprop.md)ファイルは、 [PR_STORE_SUPPORT_MASK](pidtagstoresupportmask-canonical-property.md)に STORE_UNICODE_OK を表示し、UNICODE プロパティをサポートします。 
+> Unicode .msg ファイルの作成を有効にする。 結果の [IMessage](imessageimapiprop.md) ファイルは、そのSTORE_UNICODE_OKにPR_STORE_SUPPORT_MASK [Unicode](pidtagstoresupportmask-canonical-property.md) プロパティをサポートします。 
     
   > [!NOTE]
-  > MAPI_UNICODE フラグは、Outlook 2003 以降でのみ、この関数でサポートされています。 
+  > このMAPI_UNICODEフラグは、2003 以上のOutlookでのみサポートされます。 
   
-_lppmsg_
+_lppMsg_
   
-> 読み上げ開いている**IMessage**オブジェクトへのポインターへのポインター。 
+> [out]開いた **IMessage** オブジェクトへのポインターへのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -112,27 +112,27 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-property 属性は、プロパティオブジェクト (つまり、 [imapiprop: IUnknown](imapipropiunknown.md)インターフェイスを実装するオブジェクト) にのみアクセスできます。 ole 構造化ストレージオブジェクトで MAPI プロパティを使用できるようにするために、 **OpenIMsgOnIStg**は、ole **IStorage**オブジェクトの先頭に[IMessage: imapiprop](imessageimapiprop.md)オブジェクトをビルドします。 このようなオブジェクトのプロパティ属性は、 [SetAttribIMsgOnIStg](setattribimsgonistg.md)を使用して設定または変更したり、 [GetAttribIMsgOnIStg](getattribimsgonistg.md)で取得したりできます。 
+プロパティ属性にアクセスできるのは、プロパティ オブジェクト、つまり [IMAPIProp : IUnknown](imapipropiunknown.md) インターフェイスを実装するオブジェクトのみです。 OLE 構造化ストレージ オブジェクトで MAPI プロパティを使用するために **、OpenIMsgOnIStg** は OLE **IStorage** オブジェクトの上に [IMessage : IMAPIProp](imessageimapiprop.md)オブジェクトを作成します。 このようなオブジェクトのプロパティ属性は [、SetAttribIMsgOnIStg](setattribimsgonistg.md) を使用して設定または変更し [、GetAttribIMsgOnIStg](getattribimsgonistg.md)を使用して取得できます。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**OpenIMsgOnIStg**を呼び出す前に、 [OpenIMsgSession](openimsgsession.md)を使用してメッセージセッションを開く必要があります。 有効な_lpmsgsess_パラメーターを指定すると、新しいメッセージがメッセージセッション内に作成され、セッションが閉じられるときに閉じられるようになります。 sures を実行してください。 _lpmsgsess_が NULL の場合、メッセージはメッセージセッションとは独立して作成されます。 メッセージを作成したクライアントアプリケーションまたはサービスプロバイダーが、そのメッセージをリリースしておらず、すべての添付ファイルと開いているテーブルを解放していない場合は、メモリがリークし、アプリケーションが終了する可能性があります。 
+**OpenIMsgOnIStg** が呼び出される前に [、OpenIMsgSession](openimsgsession.md)でメッセージ セッションを開く必要があります。 有効な  _lpMsgSess_ パラメーターを指定すると、新しいメッセージがメッセージ セッション内に作成され、セッションが閉じられます。 _lpMsgSess が_ NULL の場合、メッセージはメッセージ セッションとは別に作成されます。 メッセージを作成したクライアント アプリケーションまたはサービス プロバイダーが、メッセージを解放しない場合、添付ファイルと開いているテーブルのすべてが解放されない場合、メモリがリークされ、アプリケーションが終了する可能性があります。 
   
-MAPI では、特に、 _lpAllocateBuffer_、 _lpAllocateMore_、および_lpfreebuffer_が指す関数を使用して、オブジェクトインターフェイスを呼び出すときに使用するメモリをクライアントアプリケーションに割り当てます。[imapiprop:: GetProps](imapiprop-getprops.md) and [IMAPITable:: QueryRows](imapitable-queryrows.md)など。 _lpAllocateBuffer_、 _lpAllocateMore_、および_lpfreebuffer_の各ポインターは、有効な_lpMapiSup_パラメーターを指定して**OpenIMsgOnIStg**関数を呼び出した場合にオプションです。 
+MAPI では、ほとんどのメモリ割り当ておよび割り当て解除に _lpAllocateBuffer_ _、lpAllocateMore、lpFreeBuffer_ が指す関数を使用して、特に [IMAPIProp::GetProps](imapiprop-getprops.md)や [IMAPITable::QueryRows](imapitable-queryrows.md)などのオブジェクト インターフェイスを呼び出す際にクライアント アプリケーションで使用するメモリを割り当てる。  **OpenIMsgOnIStg** 関数が有効な _lpMapiSup_ パラメーターで呼び出される場合 _、lpAllocateBuffer_ _、lpAllocateMore、_ および _lpFreeBuffer_ ポインターはオプションです。 
   
-基になる ole オブジェクトを処理しているため、MAPI では ole メモリ割り当ても使用する必要があります。 ole 構造化ストレージオブジェクトと ole メモリ割り当ての詳細については、「 _ole プログラマーズリファレンス_」を参照してください。 
+基になる OLE オブジェクトを扱うので、MAPI では OLE メモリ割り当てを使用する必要があります。 OLE 構造化ストレージ オブジェクトと OLE メモリ割り当ての詳細については  _、「OLE プログラマリファレンス」を参照してください_。 
   
-_lpMapiSup_に有効な値が指定されている場合、 **IMessage**は[imapisupport::D oprogress DIALOG](imapisupport-doprogressdialog.md)メソッドを呼び出して、imapisupport [:: CopyTo](imapiprop-copyto.md)の進行状況ユーザーインターフェイスを提供することにより、MAPI_DIALOG および ATTACH_DIALOG フラグをサポートします。[IMessage::D eleteattach](imessage-deleteattach.md)メソッド。 また、 [IMessage:: modifyrecipients](imessage-modifyrecipients.md)メソッドは、 [imapisupport:: OpenAddressBook](imapisupport-openaddressbook.md)メソッドを呼び出して、生成されたアドレス帳オブジェクトに対して呼び出しを行うことによって、短期エントリ識別子を長期エントリ識別子に変換しようとします。 _lpMapiSup_に NULL が渡された場合、 **IMessage**は MAPI_DIALOG と ATTACH_DIALOG を無視し、短い用語エントリ識別子を変換せずに格納します。 
+_lpMapiSup_ に対して有効な値が指定されている場合 **、IMessage** は [IMAPISupport::D oProgressDialog](imapisupport-doprogressdialog.md)メソッドを呼び出して [IMAPIProp::CopyTo](imapiprop-copyto.md)メソッドと [IMessage::D eleteAttach](imessage-deleteattach.md)メソッドの進行状況ユーザー インターフェイスを指定することで、MAPI_DIALOG フラグと ATTACH_DIALOG フラグをサポートします。 [また、IMessage::ModifyRecipients](imessage-modifyrecipients.md)メソッドは[、IMAPISupport::OpenAddressBook](imapisupport-openaddressbook.md)メソッドを呼び出し、結果のアドレス帳オブジェクトを呼び出すことによって、短期エントリ識別子を長期エントリ識別子に変換します。 _lpMapiSup_ に NULL が渡された場合 **、IMessage** は MAPI_DIALOG および ATTACH_DIALOG を無視し、変換なしで短期エントリ識別子を格納します。 
   
-_lpstg_パラメーターが指す**IStorage**オブジェクトは、STGM_READ または STGM_READWRITE モードのどちらかで開く必要があります。 STGM_READWRITE モードが使用されている場合は、STGM_TRANSACTED モードも設定する必要があります。 
+**lpStg パラメーターが** 指す _IStorage_ オブジェクトは、STGM_READモードSTGM_READWRITEがあります。 このモードSTGM_READWRITE場合は、STGM_TRANSACTEDモードも設定する必要があります。 
   
-_lpfmsgcallrelease_パラメーターで指定されたコールバック関数はオプションです。指定する場合は、 [msgcallrelease](msgcallrelease.md)関数プロトタイプに基づいている必要があります。 **IMessage**インターフェイスは、 **IMessage**オブジェクトの参照カウントが、 **Release**メソッドへの**** 最後の呼び出しによって0に設定されたときに、それを呼び出します。 通常、コールバック関数は、基になる**IStorage**インターフェイスを解放するために使用されます。 **IMessage**は、コールバック後に_lpstg_パラメーターが指す**IStorage**オブジェクトへのアクセスを試みません。 
+_lpfMsgCallRelease_ パラメーターが指すコールバック関数はオプションです。指定されている場合は [、MSGCALLRELEASE 関数プロトタイプに基づく](msgcallrelease.md)必要があります。 **IMessage** インターフェイスは **、IMessage**-on- **IStorage** オブジェクトの参照カウントが Release メソッドの最後の呼び出しによって 0 に設定されている場合に呼び **出** します。 コールバック関数は、基になる **IStorage** インターフェイスを解放するために一般的に使用されます。 **IMessage** は、コールバックを行った後 _、lpStg_ パラメーターが指す **IStorage** オブジェクトにアクセスしようとは行ないます。 
   
-一部のクライアントまたはプロバイダーは、 [SaveChanges](imapiprop-savechanges.md)メソッドが呼び出されたときに**IMessage**自体が書き込みを超える、 **IStorage**オブジェクトに追加のデータを書き込む場合があります。 クライアントまたはプロバイダーは、IMSG_NO_ISTG_COMMIT フラグを使用して、 **IMessage**が**SaveChanges**呼び出しの処理中に OLE **IStorage:: COMMIT**メソッドを呼び出さないようにすることができます。この場合、追加のデータが書き込まれたときに、クライアントまたはプロバイダー自体が**IStorage**オブジェクトをコミットする必要があります。 このため、 **IMessage**の実装では、文字列 "__" で始まる**IStorage**オブジェクト内に作成されるすべてのサブストレージの名前を指定する必要があります。つまり、アンダースコアは2つのアンダースコアで始まります。 クライアントまたはプロバイダーは、この名前空間のサブクラス名を保持することで、名前の競合を回避できます。 
+一部のクライアントまたはプロバイダーは [、SaveChanges](imapiprop-savechanges.md)メソッドの呼び出し時に IMessage 自体が書き込むデータを超えて **、IStorage** オブジェクトに追加のデータを書き込む場合があります。  クライアントまたはプロバイダーは、IMSG_NO_ISTG_COMMIT フラグを使用して **、SaveChanges** 呼び出しの処理中に **IMessage** が OLE **IStorage::Commit** メソッドを呼び出すのを防止できます。この場合、クライアントまたはプロバイダーは、追加のデータの書き込み時に **IStorage** オブジェクトをコミットする必要があります。 これを支援するために **、IMessage** 実装では **、IStorage** オブジェクトで作成するサブストルジの名前は、文字列 "__"、つまり 2 つのアンダースコアで始まります。 クライアントまたはプロバイダーは、サブストラージュ名をこの名前空間から外して名前の競合を回避できます。 
   
-MAPI では、添付ファイル、ストリーム、埋め込みメッセージなど、メッセージのサブオブジェクトに対して実行される複数の開いている操作の動作は定義されません。 現在、mapi では、既に開かれているサブオブジェクトをもう一度開くことができますが、mapi は、既存の開いているオブジェクトの参照カウントを増分し、そのオブジェクトを[IMessage:: openattach を呼び出したクライアントまたはプロバイダーに返すことで、open 操作を実行します。](imessage-openattach.md)または[imapiprop:: openproperty](imapiprop-openproperty.md)メソッド。 これは、サブファイルに対する最初の開いた操作に対して要求されたアクセスが、操作によって要求されたアクセス許可に関係なく、以降のすべてのオープン操作に対して提供されるアクセスであることを意味します。 
+MAPI は、添付ファイル、ストリーム、埋め込みメッセージなど、メッセージのサブオブジェクトに対して実行される複数の開いている操作の動作を定義しません。 MAPI は現在、既に開いているサブオブジェクトをもう一度開くことを許可していますが、MAPI は、既存の開いているオブジェクトの参照カウントを増やし [、IMessage::OpenAttach](imessage-openattach.md) メソッドまたは [IMAPIProp::OpenProperty](imapiprop-openproperty.md) メソッドを呼び出したクライアントまたはプロバイダーに返して、開いている操作を実行します。 つまり、サブオブジェクトの最初の開いている操作に対して要求されたアクセスは、操作によって要求されたアクセスに関係なく、後続のすべての開いている操作に対して提供されるアクセスです。 
   
-添付ファイルにメッセージを配置するための適切な手順は、IID_IMessage のインターフェイス識別子を使用して[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出すことです。 **openproperty**は現在、OLE **IStorage**インターフェイスで直接使用できるメッセージの添付ファイルの作成もサポートしています。つまり、IID_IStorage インターフェイス識別子を使用します。 **IStorage** access は、Microsoft Word 文書を OLE **IStream**インターフェイスに変換せずに添付ファイルに簡単に配置できるようにするためにサポートされています。 ただし、 **OpenIMsgOnIStg**に**IStorage**ポインターを添付ファイルデータに渡した後、オブジェクトが間違った順序で解放された場合、 **IMessage**は予測できない場合があります。 
+メッセージを添付ファイルに配置する正しい手順は [、IMAPIProp::OpenProperty](imapiprop-openproperty.md) メソッドを呼び出し、インターフェイス識別子を使用して IID_IMessage。 **OpenProperty は** 現在、OLE **IStorage** インターフェイスで直接使用できるメッセージ添付ファイルの作成 (つまり、このインターフェイス識別子を使用IID_IStorageサポートしています。 **IStorage** アクセスは、OLE IStream インターフェイスに変換したり、OLE **IStream** インターフェイスから変換したりすることなく、Microsoft Word ドキュメントを添付ファイルに簡単に挿入するためのサポートされています。 ただし **、OpenIMsgOnIStg** が添付ファイル データに **IStorage** ポインターを渡され、オブジェクトが間違った順序で解放された場合 **、IMessage** は予測可能に動作しない可能性があります。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -140,7 +140,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ファイル .cpp  <br/> |loadmsgtomessage  <br/> |mfcmapi は、 **OpenIMsgOnIStg**メソッドを使用して、の上に IMessage インターフェイスを開きます。MSG ファイルを使用して、ファイルが MAPI で操作されるようにします。  <br/> |
+|File.cpp  <br/> |LoadMSGToMessage  <br/> |MFCMAPI は **OpenIMsgOnIStg** メソッドを使用して、 の上に IMessage インターフェイスを開きます。ファイルが MAPI で操作される可能性がある MSG ファイル。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

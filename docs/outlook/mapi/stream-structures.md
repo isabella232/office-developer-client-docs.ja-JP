@@ -1,5 +1,5 @@
 ---
-title: Stream 構造体
+title: Stream 構造
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,36 +13,36 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33407824"
 ---
-# <a name="stream-structures"></a>Stream 構造体
+# <a name="stream-structures"></a>Stream 構造
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Microsoft Outlook アイテムのユーザー定義フィールドの定義は、 [PidLidPropertyDefinitionStream](pidlidpropertydefinitionstream-canonical-property.md)プロパティに格納されます。 このプロパティの値は、Outlook アイテムの組み込みフィールドのユーザー定義フィールドおよびデータバインド設定の定義を含むバイナリストリームです。 このセクションでは、バイナリストリームの構造に関する情報を、次のストリーム構造で分けて説明します。 
+アイテムのユーザー定義フィールドの定義Outlook [PidLidPropertyDefinitionStream プロパティに格納](pidlidpropertydefinitionstream-canonical-property.md)されます。 このプロパティの値は、ユーザー定義フィールドの定義と、ユーザー定義アイテムの組み込みフィールドのデータ バインド設定を含むバイナリ ストリームOutlookです。 このセクションでは、バイナリ ストリームの構造に関する情報を以下のストリーム構造で説明します。 
   
 > [!NOTE]
-> これらの stream 構造体の名前 (propertydefinition、fielddefinition、および skipblock など) とそのデータ要素は、メッセージング API (MAPI) のプログラミングインターフェイスの一部ではありません。ここでは、ドキュメントにのみ記載されています。実際のストリーム構造の目的。 開発者は、ユーザーが選択したときに、これらの stream 構造体とデータ要素にラベルを付けることができます。 
+> これらのストリーム構造の名前 (PropertyDefinition、FieldDefinition、SkipBlock など) とそのデータ要素は、技術的にはメッセージング API (MAPI) のプログラミング インターフェイスの一部ではなく、実際のストリーム構造のドキュメント目的でのみ提供されます。 開発者は、選択したアプリケーションでこれらのストリーム構造とデータ要素にラベルを付けできます。 
   
-- [propertydefinition ストリームの構造](propertydefinition-stream-structure.md)
+- [PropertyDefinition ストリーム構造](propertydefinition-stream-structure.md)
     
-- [fielddefinition ストリームの構造](fielddefinition-stream-structure.md)
+- [FieldDefinition ストリーム構造](fielddefinition-stream-structure.md)
     
-- [skipblock ストリームの構造](skipblock-stream-structure.md)
+- [SkipBlock ストリーム構造](skipblock-stream-structure.md)
     
-- [firstskipblockcontent ストリームの構造](firstskipblockcontent-stream-structure.md)
+- [FirstSkipBlockContent ストリーム構造](firstskipblockcontent-stream-structure.md)
     
-- [PackedAnsiString Stream 構造](packedansistring-stream-structure.md)
+- [PackedAnsiString ストリーム構造](packedansistring-stream-structure.md)
     
-- [PackedUnicodeString Stream 構造](packedunicodestring-stream-structure.md)
+- [PackedUnicodeString ストリーム構造](packedunicodestring-stream-structure.md)
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[Outlook のアイテムとフィールド](outlook-items-and-fields.md)
+[Outlookアイテムとフィールド](outlook-items-and-fields.md)
   
-[新しいユーザー定義フィールドの定義を追加する](how-to-add-a-definition-for-a-new-user-defined-field.md)
+[新しいフィールドの定義をUser-Definedする](how-to-add-a-definition-for-a-new-user-defined-field.md)
   
-[propertydefinition ストリームのサンプル](propertydefinition-stream-sample.md)
+[PropertyDefinition ストリームのサンプル](propertydefinition-stream-sample.md)
 

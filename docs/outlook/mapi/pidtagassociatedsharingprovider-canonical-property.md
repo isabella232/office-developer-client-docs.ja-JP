@@ -21,18 +21,18 @@ ms.locfileid: "33408923"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-個人用フォルダーファイル (pst) ストアプロバイダーが Microsoft SharePoint 2010 PST として構成されているかどうかを判断します。
+個人用フォルダー ファイル (PST) ストア プロバイダーが Microsoft 2010 PST として構成SharePointします。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_ASSOCIATED_SHARING_PROVIDER  <br/> |
 |識別子:  <br/> |0x0EA00048  <br/> |
 |データの種類 :   <br/> |PT_CLSID  <br/> |
-|エリア:  <br/> |パーソナルストレージテーブル (.pst) 内部  <br/> |
+|エリア:  <br/> |個人用ストレージ テーブル (.pst) 内部  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-このプロパティは、PST が Microsoft SharePoint 2010 用に構成されているかどうかを示します。 このプロパティが存在しない場合、pst は Microsoft SharePoint 2010 PST として構成されていません。
+このプロパティは、PST が Microsoft 2010 用に構成SharePointします。 プロパティが存在しない場合、PST は Microsoft 2010 PST SharePointされていません。
   
 ## <a name="see-also"></a>関連項目
 
@@ -42,7 +42,7 @@ ms.locfileid: "33408923"
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

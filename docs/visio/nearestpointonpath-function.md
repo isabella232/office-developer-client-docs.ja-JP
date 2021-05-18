@@ -25,15 +25,15 @@ ms.locfileid: "33407334"
   
 ## <a name="syntax"></a>構文
 
-nearestpointonpath (* * *section* * *, * * *x* * *, * * *y* * *) 
+NEARESTPOINTONPATH(** *section* **, ** *x* **, ** *y* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _セクション_ <br/> |必須  <br/> |**String** <br/> |パスを表す [Geometry] セクション。[Path] セルへの参照によって指定されます (Geometry1.Path など)。  <br/> |
-| _x_ <br/> |必須  <br/> |**Double** <br/> |指定した点の_x_座標を指定します。  <br/> |
-| _y_ <br/> |必須  <br/> |**Double** <br/> |指定した点の_y_座標を指定します。  <br/> |
+| _x_ <br/> |必須  <br/> |**Double** <br/> |指定  _した点_ の x 座標。  <br/> |
+| _y_ <br/> |必須  <br/> |**Double** <br/> |指定  _したポイントの y_ 座標。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
@@ -41,6 +41,6 @@ nearestpointonpath (* * *section* * *, * * *x* * *, * * *y* * *)
   
 ## <a name="remarks"></a>注釈
 
-_section_が存在しない場合は、#REF を返します。 
+セクション _が_ 存在しない場合は、Microsoft Visioを#REF! 
   
 

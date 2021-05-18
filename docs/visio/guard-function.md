@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251435
 localization_priority: Normal
 ms.assetid: 6c85414c-9fb6-cdc5-f5b6-8eb13c9608af
-description: 図形の移動、サイズ変更、グループ化、グループ解除など、図面ウィンドウで実行された操作によって、式が削除されたり、変更されたりすることを防ぎます。
+description: 図形の移動、サイズ変更、グループ化、グループ化解除など、図面ウィンドウで実行されるアクションによって、削除や変更から式を保護します。
 ms.openlocfilehash: 0bdfa023d53e739a970cab65b1dbd67bc1a44461
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33408153"
 ---
 # <a name="guard-function"></a>GUARD 関数
 
-図形の移動、サイズ変更、グループ化、グループ解除など、図面ウィンドウで実行された操作によって、*式*が削除されたり、変更されたりすることを防ぎます。 
+図形の  *移動*  、サイズ変更、グループ化、グループ化解除など、図面ウィンドウで実行されるアクションによって、削除や変更から式を保護します。 
   
 ## <a name="syntax"></a>構文
 
-GUARD (* * *expression* * *) 
+GUARD(** *式* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 

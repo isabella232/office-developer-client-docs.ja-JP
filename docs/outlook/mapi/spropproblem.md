@@ -25,11 +25,11 @@ ms.locfileid: "33407775"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロパティを含む操作に関連するエラーを記述します。
+プロパティに関連する操作に関連するエラーについて説明します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SPropProblem
@@ -41,23 +41,23 @@ typedef struct _SPropProblem
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **ulindex**
+ **ulIndex**
   
-> プロパティタグの配列内のインデックス。
+> プロパティ タグの配列内のインデックス。
     
  **ulPropTag**
   
-> エラーが発生したプロパティのプロパティタグ。
+> エラーが発生したプロパティのプロパティ タグ。
     
- **scode as scode**
+ **scode**
   
-> プロパティに関する問題を説明するエラー値。 この値には、任意の MAPI の[SCODE](scode.md)値を指定できます。 
+> プロパティの問題を説明するエラー値。 この値には、任意の MAPI [SCODE 値を指定](scode.md) できます。 
     
 ## <a name="remarks"></a>注釈
 
-**spropproblem**構造体の配列は、次のメソッドから返されます。 
+**SPropProblem** 構造体の配列は、次のメソッドから返されます。 
   
 - [IMAPISupport::DoCopyTo](imapisupport-docopyto.md)
     
@@ -73,9 +73,9 @@ typedef struct _SPropProblem
     
 - [IPropData::HrAddObjProps](ipropdata-hraddobjprops.md)
     
-**spropproblem**構造体には、MAPI プロパティを変更または削除しようとした操作の結果として返される**SCODE**エラー値が含まれています。 
+**SPropProblem** 構造体には、MAPI プロパティを変更または削除しようとする操作によって発生する **SCODE** エラー値が含まれる。 
   
-**spropproblem**構造がプロパティに関連するエラーとどのように連動するかの詳細については、「 [MAPI の名前付きプロパティ](mapi-named-properties.md)」を参照してください。 
+**SPropProblem** 構造体がプロパティに関連するエラーでどのように動作する方法の詳細については、「MAPI 名前付きプロパティ」[を参照してください](mapi-named-properties.md)。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -15,13 +15,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33407782"
 ---
-# <a name="mapiofflinecallbacktype"></a>MAPIOFFLINE_CALLBACK_TYPE
+# <a name="mapioffline_callback_type"></a>MAPIOFFLINE_CALLBACK_TYPE
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-サポートされているコールバックの種類の列挙。
+サポートされている種類のコールバックの列挙。
   
 ## <a name="quick-info"></a>クイック ヒント
 

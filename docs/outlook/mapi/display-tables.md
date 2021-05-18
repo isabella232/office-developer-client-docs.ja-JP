@@ -1,5 +1,5 @@
 ---
-title: 表の表示
+title: テーブルの表示
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,58 +15,58 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33406221"
 ---
-# <a name="display-tables"></a>表の表示
+# <a name="display-tables"></a>テーブルの表示
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-表示テーブルでは、特定の種類のダイアログボックスを表示する方法について説明します。1つは、1つ以上のタブ付きプロパティページを表示し、1つ以上のプロパティを編集できます。 すべての表示テーブルに関連付けられているのは、 [imapiprop: IUnknown](imapipropiunknown.md)インターフェイスの実装です。 **imapiprop**の実装は、ダイアログボックスに表示されるプロパティデータを保持します。 
+表示テーブルは、特定の種類のダイアログ ボックス (1 つ以上のタブ付きプロパティ ページを含む) を表示し、1 つ以上のプロパティを編集する方法について説明します。 すべての表示テーブルに関連付けられている [のは、IMAPIProp : IUnknown インターフェイスの](imapipropiunknown.md) 実装です。 **IMAPIProp の** 実装では、ダイアログ ボックスに表示されるプロパティ データが保持されます。 
   
-表示テーブル内の行は、ダイアログボックスに表示されるコントロールまたはユーザーインターフェイスオブジェクトを表します。 MAPI は、静的な値や、ユーザーが変更できる動的な値を持つ、さまざまな種類のコントロールを定義します。 ほとんどのコントロールは、 **imapiprop**の実装で管理されるプロパティに関連付けることができます。 ユーザーが変更可能なコントロールの値を変更すると、対応するプロパティが更新されます。 
+表示テーブルの行は、ダイアログ ボックスに表示されるコントロールまたはユーザー インターフェイス オブジェクトを表します。 MAPI は、静的な値を持つコントロールと、ユーザーが変更できる動的な値を持つコントロールの多くの種類を定義します。 ほとんどのコントロールは、IMAPIProp 実装で管理されている **プロパティに関連付** けできます。 ユーザーが変更可能なコントロールの値を変更すると、対応するプロパティが更新されます。 
   
-サービスプロバイダーは、表示テーブルと**imapiprop**インターフェイスを実装します。 表示テーブルの作成は、スクリプト言語を使用してプログラムを記述するのと似ています。 サービスプロバイダーは、次の方法で表示テーブルを作成できます。 
+サービス プロバイダーは、表示テーブルと **IMAPIProp インターフェイスを実装** します。 表示テーブルの作成は、スクリプト言語を使用したプログラムの作成に似ています。 サービス プロバイダーは、次の方法で表示テーブルを作成できます。 
   
-- [builddisplaytable](builddisplaytable.md)関数を呼び出しています。 
+- [BuildDisplayTable 関数を呼び出](builddisplaytable.md)します。 
     
-    - や
+    - Or -
     
-- table データオブジェクトを使用して、表示テーブルに直接設定するカスタムコード ( [itabledata: IUnknown](itabledataiunknown.md)インターフェイスをサポートするオブジェクト) を含みます。 
+- テーブル データ オブジェクト [(ITableData : IUnknown](itabledataiunknown.md) インターフェイスをサポートするオブジェクト) を使用して表示テーブルに直接設定するカスタム コードを含む。 
     
-**builddisplaytable**関数は、テーブルの表示構造からの情報をダイアログボックスリソースのビジュアル要素と組み合わせて、表示テーブルの行を作成します。 関数は、 [IMAPITable: IUnknown](imapitableiunknown.md)インターフェイスの実装へのポインターを返し、要求された場合は**itabledata**インターフェイスの実装へのポインターを返します。 
+**BuildDisplayTable 関数は**、表示テーブル構造の情報とダイアログ ボックス リソースの視覚的要素を組み合わせ、表示テーブルの行を作成します。 この関数は [、IMAPITable : IUnknown](imapitableiunknown.md) インターフェイス実装へのポインターと、要求された場合は **ITableData** インターフェイス実装へのポインターを返します。 
   
-表示テーブルを作成するために**builddisplaytable**を使用することは簡単であり、表示が変更されたときに管理が容易になります。 ただし、 **builddisplaytable**を使用しないようにするサービスプロバイダーは、 **itabledata**のメソッドを使用するカスタムコードを使用して、表示テーブルを作成できます。 たとえば、プロパティページ用の既存のテンプレート構造を持つサービスプロバイダーは、 **builddisplaytable**を使用するのではなく、カスタムコードを作成する必要がある場合があります。
+**BuildDisplayTable を使用** して表示テーブルを作成する方法は簡単で、表示の視覚的要素が変化するとメンテナンスが容易になります。 ただし **、BuildDisplayTable** を使用しないサービス プロバイダーは **、ITableData** のメソッドを使用するカスタム コードを使用して表示テーブルを作成できます。 たとえば、プロパティ ページに既存のテンプレート構造を持つサービス プロバイダーは **、BuildDisplayTable** を使用するのではなく、カスタム コードを作成する必要があります。
   
-さまざまな方法で、サービスプロバイダーが表示テーブルのプロパティインターフェイスを実装できます。 これらには以下が含まれます。
+サービス プロバイダーが表示テーブルのプロパティ インターフェイスを実装するには、さまざまな方法があります。 これには、次のものが含まれます。
   
-- 標準[imapiprop: IUnknown](imapipropiunknown.md)実装を提供します。 
+- 標準の [IMAPIProp : IUnknown 実装を指定](imapipropiunknown.md) します。 
     
-- 標準呼び出しを行う前に特別な処理を行う、ラップされた**imapiprop**の実装を提供します。 
+- 標準呼び出しを行う前に、特別な処理を含むラップされた **IMAPIProp** 実装を提供します。 
     
-- [ipropdata: imapiprop](ipropdataimapiprop.md)の実装を提供します。 
+- [IPropData : IMAPIProp 実装を指定](ipropdataimapiprop.md)します。 
     
-実装の種類は、表示されるデータの特性と責任のあるサービスプロバイダーによって異なります。 たとえば、2つのエディットコントロールのデータ間に暗黙的な関係があり、コントロールのいずれかが変更された場合、 **imapiprop**の実装では、他のコントロールの値を適切に変更する必要があります。 
+実装の種類は、表示するデータの特性と責任あるサービス プロバイダーによって異なります。 たとえば、2 つの編集コントロール内のデータの間に暗黙的な関係が生じ、1 つのコントロールが変更される場合 **、IMAPIProp** 実装は他のコントロールの値を適切に変更する必要があります。 
   
-表示テーブルには、必要な列に次のプロパティが設定されています。
+表示テーブルには、必要な列セットに次のプロパティがあります。
   
 |||
 |:-----|:-----|
-|**PR_XPOS**([PidTagXCoordinate](pidtagxcoordinate-canonical-property.md))  <br/> |**PR_YPOS**([PidTagYCoordinate](pidtagycoordinate-canonical-property.md))  <br/> |
-|**PR_DELTAX**([PidTagDeltaX](pidtagdeltax-canonical-property.md))  <br/> |**PR_DELTAY**([PidTagDeltaY](pidtagdeltay-canonical-property.md))  <br/> |
-|**PR_CONTROL_TYPE**([PidTagControlType](pidtagcontroltype-canonical-property.md))  <br/> |**PR_CONTROL_FLAGS**([PidTagControlFlags](pidtagcontrolflags-canonical-property.md))  <br/> |
-|**PR_CONTROL_STRUCTURE**([PidTagControlStructure](pidtagcontrolstructure-canonical-property.md))  <br/> |**PR_CONTROL_ID**([PidTagControlId](pidtagcontrolid-canonical-property.md))  <br/> |
+|**PR_XPOS** ([PidTagXCoordinate](pidtagxcoordinate-canonical-property.md))  <br/> |**PR_YPOS** ([PidTagYCoordinate](pidtagycoordinate-canonical-property.md))  <br/> |
+|**PR_DELTAX** ([PidTagDeltaX](pidtagdeltax-canonical-property.md))  <br/> |**PR_DELTAY** ([PidTagDeltaY](pidtagdeltay-canonical-property.md))  <br/> |
+|**PR_CONTROL_TYPE** ([PidTagControlType](pidtagcontroltype-canonical-property.md))  <br/> |**PR_CONTROL_FLAGS** ([PidTagControlFlags](pidtagcontrolflags-canonical-property.md))  <br/> |
+|**PR_CONTROL_STRUCTURE** ([PidTagControlStructure](pidtagcontrolstructure-canonical-property.md))  <br/> |**PR_CONTROL_ID** ([PidTagControlId](pidtagcontrolid-canonical-property.md))  <br/> |
    
- **PR_XPOS**および**PR_YPOS**コントロールの左上隅の X 座標と Y 座標を指定します。 水平方向の単位は、ダイアログベースの幅の単位の1/4 です。垂直の単位は、ダイアログベースの高さの単位の1/8 です。 現在のダイアログベースの単位は、現在のシステムフォントの高さと幅から計算されます。 座標は、プロパティページ領域の原点を基準にしています。 プロパティページのサイズは、約 200 (180 dialog unit) に制限されています。 
+ **PR_XPOS** および **PR_YPOS** コントロールの左上隅の X 座標と Y 座標を指定します。 水平方向の単位は、ダイアログの基本幅単位の 1/4 です。垂直方向の単位は、ダイアログベースの高さ単位の 1/8 です。 Windowsは、現在のシステム フォントの高さと幅から現在のダイアログの基本単位を計算します。 座標は、プロパティ ページ領域の原点を基準にしています。 プロパティ ページのサイズは、ダイアログ 単位で約 200 ~ 180 個に制限されます。 
   
- **PR_DELTAX**および**PR_DELTAY**は、コントロールの幅と高さです。 これらは ULONG 値です。 幅の単位は、ダイアログベースの幅の単位の1/4 です。高さの単位は、ダイアログベースの高さの単位の1/8 です。 座標は、コントロールの原点を基準にします。 
+ **PR_DELTAX** と **PR_DELTAY** は、コントロールの幅と高さです。 これらは ULONG 値です。 幅の単位は、ダイアログの基本幅単位の 1/4 です。高さの単位は、ダイアログベースの高さ単位の 1/8 です。 座標は、コントロールの原点を基準にしています。 
   
-他の4つのプロパティは、コントロールのさまざまな特性を示します。 **PR_CONTROL_TYPE**コントロールの種類を示します。 MAPI では、それぞれが異なる属性のセットを持つ12種類のコントロールが定義されています。 これらの属性については、flags プロパティ**PR_CONTROL_FLAGS**を参照してください。 属性の例としては、コントロールが編集可能かどうか、または必要かどうかが挙げられます。 
+他の 4 つのプロパティでは、コントロールのさまざまな特性について説明します。 **PR_CONTROL_TYPE** コントロールの種類を示します。 MAPI では、12 種類のコントロールが定義されます。それぞれ異なる属性のセットを持っています。 これらの属性については、flags プロパティ **、PR_CONTROL_FLAGS。** 属性の例には、コントロールが編集可能か必須かなどです。 
   
-制御構造 ( **PR_CONTROL_STRUCTURE**) には、特定の種類のコントロールに関連する情報が含まれています。 それぞれの種類のコントロールについては、異なる構造で記述されています。 たとえば、編集コントロールは、 [DTBLEDIT](dtbledit.md)構造体で記述されます。 **DTBLEDIT**構造体には、コントロールに配置できる文字の数と特定の種類の文字、およびコントロールに表示されるプロパティを識別するプロパティタグをリストするメンバーが含まれています。 **PR_CONTROL_STRUCTURE**はバイナリプロパティとして格納されます。 
+コントロール構造 **(PR_CONTROL_STRUCTURE)** には、特定の種類のコントロールに関連する情報が含まれる。 各種類のコントロールについて、異なる構造で説明します。 たとえば、編集コントロールについては [、DTBLEDIT 構造を使用して説明](dtbledit.md) します。 **DTBLEDIT** 構造体には、コントロールに配置できる文字の数と特定の種類を一覧表示するメンバーと、コントロールに表示する値を持つプロパティを識別するプロパティ タグが含まれています。 **PR_CONTROL_STRUCTURE** バイナリ プロパティとして格納されます。 
   
-コントロール id **PR_CONTROL_ID**は、表示テーブルで記述されたダイアログボックス内のコントロールを一意に識別します。 **PR_CONTROL_ID**は、表示テーブルを作成するために**builddisplaytable**で使用される[DTCTL](dtctl.md)構造の*lpbNotif*および*cbNotif*メンバーに配置された値から設定されます。 MAPI は表示テーブルを結合する場合があるため、 **PR_CONTROL_ID**の識別子は常に一意である必要があります。 通常、プロバイダーは、一意性を保証するために[GUID](guid.md)構造を**PR_CONTROL_ID**に割り当てます。 **PR_CONTROL_ID**プロパティは、表示テーブル通知が生成されるときに、 [TABLE_NOTIFICATION](table_notification.md)構造に含まれています。 
+コントロール識別子 **(PR_CONTROL_ID)** は、表示テーブルで説明されているダイアログ ボックス内のコントロールを一意に識別します。 **PR_CONTROL_ID** は、表示テーブルを作成するために **BuildDisplayTable** によって使用される [DTCTL](dtctl.md)構造体の *lpbNotif* メンバーおよび *cbNotif* メンバーに配置された値から設定されます。 MAPI は表示テーブルを組み合わせPR_CONTROL_ID **一意** である必要があります。 通常、プロバイダーは GUID 構造を [ユーザーに割](guid.md) り **当PR_CONTROL_ID一** 意性を確保します。 PR_CONTROL_IDテーブル **通知** が生成されると、TABLE_NOTIFICATION [プロパティが](table_notification.md) 構造に含まれます。 
   
-表示テーブルの詳細については、「[表の実装](display-table-implementation.md)」および「display [table の通知につい](about-display-table-notifications.md)て」を参照してください。 
+表示テーブルの詳細については、「表示テーブルの実装 [」および「](display-table-implementation.md) テーブル通知の表示 [について」を参照してください](about-display-table-notifications.md)。 
   
 ## <a name="see-also"></a>関連項目
 

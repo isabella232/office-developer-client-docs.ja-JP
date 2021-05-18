@@ -20,10 +20,10 @@ ms.locfileid: "33406228"
 
 テキスト ブロック内にある文字の方向を指定します。
   
-|**値**|**Direction**|**オートメーション定数**|
+|**値**|**[方向]**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| .0  <br/> | 横方向  <br/> |**visTxtBlkLeftToRight** <br/> |
-| 1   <br/> | 縦  <br/> |**visTxtBlkTopToBottom** <br/> |
+| 0  <br/> | 横方向  <br/> |**visTxtBlkLeftToRight** <br/> |
+| 1  <br/> | 縦  <br/> |**visTxtBlkTopToBottom** <br/> |
    
 ## <a name="remarks"></a>注釈
 

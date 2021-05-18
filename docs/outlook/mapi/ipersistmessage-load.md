@@ -25,7 +25,7 @@ ms.locfileid: "32317130"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定したメッセージのフォームを読み込みます。
+指定したメッセージのフォームを読み込む。
   
 ```cpp
 HRESULT Load(
@@ -38,35 +38,35 @@ HRESULT Load(
 
 ## <a name="parameters"></a>パラメーター
 
- _pメッセージ ite_
+ _pMessageSite_
   
-> 順番フォームを読み込むためのメッセージサイトへのポインター。
+> [in]フォームを読み込むメッセージ サイトへのポインター。
     
- _pmessage_
+ _pMessage_
   
-> 順番フォームを読み込むメッセージへのポインター。
+> [in]フォームを読み込むメッセージへのポインター。
     
- _ulmessagestatus_
+ _ulMessageStatus_
   
-> 順番メッセージの**PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) プロパティからコピーし、メッセージの状態に関する情報を提供する、クライアント定義またはプロバイダー定義のフラグのビットマスク。
+> [in]メッセージの状態に関する情報を提供する、メッセージ **の PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) プロパティからコピーされた、クライアント定義フラグまたはプロバイダー定義フラグのビットマスク。
     
- _ulmessageflags_
+ _ulMessageFlags_
   
-> 順番メッセージの状態に関する詳細情報を提供するフラグのビットマスク。メッセージの**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティからコピーされます。
+> [in]メッセージの状態に関する詳細な情報を提供する、メッセージの **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティからコピーされたフラグのビットマスク。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> フォームが正常に読み込まれました。
+> フォームが正常に読み込まれた。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-フォームビューアーは**IPersistMessage:: load**メソッドを呼び出して、既存のメッセージのフォームを読み込みます。 
+フォーム ビューアーは **、IPersistMessage::Load** メソッドを呼び出して、既存のメッセージのフォームを読み込む。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
- **Load**は、フォームが次のいずれかの状態にある場合にのみ呼び出されます。 
+ **読** み込みは、フォームが次のいずれかの状態にある場合にのみ呼び出されます。 
   
 - [初期化されていません](uninitialized-state.md)
     
@@ -74,13 +74,13 @@ S_OK
     
 - [HandsOffFromNormal](handsofffromnormal-state.md)
     
-フォームが他の状態にあるときにフォームビューアーが**Load**を呼び出すと、メソッドは E_UNEXPECTED を返します。 
+フォーム ビューアーが他の状態 **にある間** に Load を呼び出した場合、メソッドはユーザーをE_UNEXPECTED。 
   
-フォームに、**読み込み**に渡されたものとは異なるアクティブなメッセージサイトへの参照がある場合は、そのサイトが使用されなくなったため、元のサイトを解放します。 メッセージサイトおよびメッセージへのポインターを pメッセージパラメーター __ と_pmessage_パラメーターから格納し、両方のオブジェクト ' [IUnknown:: AddRef](https://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx)メソッドを呼び出して参照カウントをインクリメントします。 
+フォームに Load に渡されるメッセージ サイト以外のアクティブなメッセージ サイトへの参照がある場合は、元のサイトが使用されなくなったため、元のサイトを解放します。 _pMessageSite_ パラメーターと _pMessage_ パラメーターからメッセージ サイトへのポインターとメッセージを格納し、両方のオブジェクトの [IUnknown::AddRef](https://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx)メソッドを呼び出して、参照カウントを増やします。 
   
-**AddRef**が完了したら、 _ulmessagestatus_パラメーターと_ulmessagestatus_パラメーターのプロパティをフォームに格納します。 フォームを表示する前に[通常](normal-state.md)の状態に移行し、 [IMAPIViewAdviseSink:: onnewmessage](imapiviewadvisesink-onnewmessage.md)メソッドを呼び出して、登録されているビューアーに通知します。 
+**AddRef が** 完了したら _、ulMessageStatus_ パラメーターと _ulMessageFlags_ パラメーターのプロパティをフォームに格納します。 フォームを表示する前 [にフォーム](normal-state.md) を標準状態に切り替え [、IMAPIViewAdviseSink::OnNewMessage](imapiviewadvisesink-onnewmessage.md) メソッドを呼び出して登録された閲覧者に通知します。 
   
-エラーが発生しない場合は、S_OK を返します。 
+エラーが発生しない場合は、S_OK。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -93,18 +93,18 @@ S_OK
 [IPersistMessage : IUnknown](ipersistmessageiunknown.md)
 
 
-[未初期化状態](uninitialized-state.md)
+[初期化されていない状態](uninitialized-state.md)
   
-[保存の状態を処理する](handsoffaftersave-state.md)
+[HandsOffAfterSave 状態](handsoffaftersave-state.md)
   
-[標準の状態](handsofffromnormal-state.md)
+[HandsOffFromNormal State](handsofffromnormal-state.md)
   
 [フォームの状態](form-states.md)
 
 
-[IPersistStorage:: Load](https://msdn.microsoft.com/library/34379b8d-4e00-49cd-9fd1-65f88746c61a.aspx)
+[IPersistStorage::Load](https://msdn.microsoft.com/library/34379b8d-4e00-49cd-9fd1-65f88746c61a.aspx)
   
-[IPersistStream:: Load](https://msdn.microsoft.com/library/351e1187-9959-4542-8778-925457c3b8e3.aspx)
+[IPersistStream::Load](https://msdn.microsoft.com/library/351e1187-9959-4542-8778-925457c3b8e3.aspx)
   
-[IPersistFile:: Load](https://msdn.microsoft.com/library/8391aa5c-fe6e-4b03-9eef-7958f75910a5.aspx)
+[IPersistFile::Load](https://msdn.microsoft.com/library/8391aa5c-fe6e-4b03-9eef-7958f75910a5.aspx)
 

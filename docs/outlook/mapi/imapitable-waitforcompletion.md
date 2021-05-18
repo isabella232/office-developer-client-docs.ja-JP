@@ -25,7 +25,7 @@ ms.locfileid: "33407061"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルで進行中の1つ以上の非同期操作が完了するまで処理を中断します。
+テーブルで進行中の 1 つ以上の非同期操作が完了するまで、処理を中断します。
   
 ```cpp
 HRESULT WaitForCompletion(
@@ -39,33 +39,33 @@ ULONG FAR * lpulTableStatus
 
  _ulFlags_
   
-> 予約語0である必要があります。
+> 予約済み。は 0 である必要があります。
     
- _ultimeout_
+ _ulTimeout_
   
-> 順番非同期操作または操作が完了するまでの最大待機時間 (ミリ秒)。 完了するまで無期限に待機するには、 _ultimeout_を0xffffffff に設定します。 
+> [in]非同期操作または操作が完了するまで待機する最大ミリ秒数。 完了するまで無期限に待機するには  _、ulTimeout_ を 0xFFFFFFFF。 
     
- _lpultablestatus_
+ _lpulTableStatus_
   
-> [入力]入力では、有効なポインターまたは NULL のいずれかです。 出力では、 _lpultablestatus_が有効なポインターの場合は、テーブルの最新の状態を指します。 _lpultablestatus_が NULL の場合、ステータス情報は返されません。 **waitforcompletion**が失敗した HRESULT 値を返す場合、 _lpultablestatus_の内容は未定義です。 
+> [in, out]入力時に、有効なポインターまたは NULL のいずれか。 出力時に  _、lpulTableStatus_ が有効なポインターである場合は、表の最新の状態を指します。 _lpulTableStatus が_ NULL の場合、状態情報は返されません。 **WaitForCompletion が** 失敗した HRESULT 値を返す場合 _、lpulTableStatus_ の内容は未定義です。 
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 待機操作が正常に完了しました。
+> 待機操作が成功しました。
     
 MAPI_E_NO_SUPPORT 
   
-> このテーブルでは、非同期操作の完了を待機することはサポートされていません。
+> この表では、非同期操作の完了を待機する機能はサポートされていません。
     
 MAPI_E_TIMEOUT 
   
-> 非同期の操作または操作は、指定された時間内に完了しませんでした。
+> 指定された時間内に非同期操作または操作が完了しなかった。
     
 ## <a name="remarks"></a>注釈
 
-**IMAPITable:: waitforcompletion**メソッドは、テーブルに対して現在実行されているすべての非同期操作が完了するまで処理を中断します。 **waitforcompletion**を使用すると、非同期操作を完全に完了するか、または_ultimeout_で指定された回数だけ実行してから中断することができます。 進行中の非同期操作を検出するには、 [IMAPITable:: GetStatus](imapitable-getstatus.md)メソッドを呼び出します。 
+**IMAPITable::WaitForCompletion** メソッドは、テーブルの現在進行中の非同期操作が完了するまで処理を中断します。 **WaitForCompletion** を使用すると、非同期操作を完全に完了するか  _、ulTimeout_ で示されているミリ秒単位で実行してから中断することができます。 進行中の非同期操作を検出するには [、IMAPITable::GetStatus メソッドを呼び出](imapitable-getstatus.md) します。 
   
 ## <a name="see-also"></a>関連項目
 

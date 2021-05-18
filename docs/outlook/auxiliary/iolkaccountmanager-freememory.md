@@ -16,7 +16,7 @@ ms.locfileid: "33408489"
 ---
 # <a name="iolkaccountmanagerfreememory"></a>IOlkAccountManager::FreeMemory
 
-[IOlkAccountManager](iolkaccountmanager.md)インターフェイスによって割り当てられたメモリを解放します。 
+[IOlkAccountManager インターフェイスによって割り当てられたメモリを解放](iolkaccountmanager.md)します。 
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -32,7 +32,7 @@ HRESULT IOlkAccountManager::FreeMemory (
 
 _pv_
   
-> 順番解放するメモリへのポインター。
+> [in]空きメモリへのポインター。
     
 ## <a name="return-values"></a>戻り値
 
@@ -40,7 +40,7 @@ _pv_
   
 ## <a name="remarks"></a>注釈
 
-[IOlkAccountManager:: getorder](iolkaccountmanager-getorder.md)によって割り当てられたメモリを解放するには、このメソッドを使用します。
+[IOlkAccountManager::GetOrder](iolkaccountmanager-getorder.md)によって割り当てられたメモリを解放するには、このメソッドを使用します。
   
 ## <a name="see-also"></a>関連項目
 

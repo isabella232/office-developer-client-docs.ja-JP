@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 9e36e0d9-a28b-5978-0e23-f76e1bf506b5
-description: このトピックでは、バイナリプロパティ PidLidTimeZoneStruct に格納されている永続的な形式から、TZREG 構造体を読み取る方法について説明します。
+description: このトピックでは、バイナリ プロパティ PidLidTimeZoneStruct に格納されている永続化された形式から TZREG 構造体を読み取る方法を示します。
 ms.openlocfilehash: f59251ebc980ca10f4ddce76b34e700bc430540a
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "32317655"
 ---
 # <a name="parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure"></a>バイナリ プロパティからのストリームを解析し、TZREG 構造体を読み取る
 
-このトピックでは、バイナリプロパティ[PidLidTimeZoneStruct](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)に格納されている永続的な形式から、 [TZREG](tzreg.md)構造体を読み取る方法について説明します。
+このトピックでは、バイナリ プロパティ[PidLidTimeZoneStruct](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)に格納されている永続化された形式から[TZREG](tzreg.md)構造体を読み取る方法を示します。
   
 ```cpp
 TZREG* BinToTZREG(ULONG cbReg, LPBYTE lpbReg)  

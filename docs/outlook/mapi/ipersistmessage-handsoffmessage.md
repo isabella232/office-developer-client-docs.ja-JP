@@ -25,7 +25,7 @@ ms.locfileid: "32309717"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームに現在のメッセージを解放させます。
+フォームが現在のメッセージを解放します。
   
 ```cpp
 HRESULT HandsOffMessage( void );
@@ -39,25 +39,25 @@ HRESULT HandsOffMessage( void );
 
 S_OK 
   
-> メッセージが正常に解放されました。
+> メッセージが正常にリリースされました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-フォームは2つの HandsOff 状態に遷移します。
+フォームは 2 つの HandsOff 状態に移行します。
   
 - [HandsOffAfterSave](handsoffaftersave-state.md)
     
 - [HandsOffFromNormal](handsofffromnormal-state.md)
     
-フォームがこれらの状態のいずれかになっている場合、フォームは永続的に保存されています。 
+フォームがいずれかの状態にある場合、フォームは永続的に保存されているプロセスです。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-フォームが[標準](normal-state.md)または[noscribble](noscribble-state.md)状態であるときに、フォームビューアーが**IPersistMessage::** モジュールの入力メソッドを呼び出すと、 **** 現在のメッセージに埋め込まれた各メッセージと、 [IPersistStorage::](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d.aspx)現在のメッセージに埋め込まれている各 OLE オブジェクトに対して、"soffstorage method" を入力します。 次に、現在のメッセージとすべての埋め込みメッセージと OLE オブジェクトを解放します。 フォームが通常の状態であった場合は、[標準] [標準] 状態に移行します。 フォームが noscribble 状態であった場合は、[保存] 状態に切り替えます。 移行が正常に完了したら、メッセージの[IUnknown:: Release](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx)メソッドを呼び出し、S_OK を返します。 
+フォーム ビューアーが **IPersistMessage::HandsOffMessage** メソッドを呼び出す場合 [](normal-state.md)、フォームが Normal または [NoScribble](noscribble-state.md)状態のときに、現在のメッセージに埋め込まれている各メッセージで **HandsOffMessage** を再帰的に呼び出し、現在のメッセージに埋め込まれている各 OLE オブジェクトの [IPersistStorage::HandsOffStorage](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d.aspx)メソッドを呼び出します。 次に、現在のメッセージとすべての埋め込みメッセージと OLE オブジェクトを解放します。 フォームが Normal 状態の場合は、HandsOffFromNormal 状態に移行します。 フォームが NoScribble 状態の場合は、HandsOffAfterSave 状態に移行します。 移行が成功したら、メッセージの [IUnknown::Release](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) メソッドを呼び出し、S_OK。 
   
-フォームが HandsOff 状態のいずれかであるときに、フォームビューアーが入力した**soffmessage**を呼び出すと、E_UNEXPECTED を返します。 
+フォームビューアーが **HandsOffMessage を呼び出** し、フォームがいずれかの HandsOff 状態にある場合は、次のE_UNEXPECTED。 
   
-フォームのさまざまな状態の詳細については、「[フォームの状態](form-states.md)」を参照してください。 ストレージオブジェクトの HandsOff 状態を操作する方法の詳細については、「 [IPersistStorage:: 「保存](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d.aspx)方法」を参照してください。 
+フォームの異なる状態の詳細については、「フォームの状態」 [を参照してください](form-states.md)。 ストレージ オブジェクトの HandsOff 状態を操作する方法の詳細については [、「IPersistStorage::HandsOffStorage](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d.aspx) メソッド」を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

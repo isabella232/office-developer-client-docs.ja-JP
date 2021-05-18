@@ -25,7 +25,7 @@ ms.locfileid: "32317277"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[IMSLogon:: Advise](imslogon-advise.md)メソッドの呼び出しを使用して、以前に作成されたメッセージストア変更の通知用のオブジェクトの登録を削除します。 
+[IMSLogon::Advise](imslogon-advise.md)メソッドの呼び出しを使用して、以前に確立されたメッセージ ストアの変更の通知に対するオブジェクトの登録を削除します。 
   
 ```cpp
 HRESULT Unadvise(
@@ -35,9 +35,9 @@ HRESULT Unadvise(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulconnection_
+ _ulConnection_
   
-> 順番**IMSLogon:: Advise**への呼び出しによって返される登録接続の番号。
+> [in] **IMSLogon::Advise** の呼び出しによって返される登録接続の数。
     
 ## <a name="return-value"></a>戻り値
 
@@ -45,9 +45,9 @@ S_OK
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-メッセージストアプロバイダーは**IMSLogon:: アドバイズ**アドバイスを実装して、前の**IMSLogon:: アドバイズ**の_lpAdviseSink_パラメーターで渡されたアドバイズシンクオブジェクトへのポインターを解放し、通知を取り消します。レジスタ. アドバイズシンクオブジェクトへのポインターを破棄する一環として、オブジェクトの[IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドが呼び出されます。 通常、**リリース**は、**アドバイズ**中止呼び出し中に呼び出されます。 ただし、別のスレッドがアドバイズシンクオブジェクトの[IMAPIAdviseSink:: onnotify](imapiadvisesink-onnotify.md)メソッドを呼び出している場合、 **Release**呼び出しは**onnotify**メソッドが戻るまで遅延します。 
+メッセージ ストア プロバイダーは **、IMSLogon::Unadvise** メソッドを実装して、前の **IMSLogon::Advise** の呼び出しで _lpAdviseSink_ パラメーターで渡されたアアドバイス シンク オブジェクトへのポインターを解放し、通知登録を取り消します。 アアドバイス シンク オブジェクトへのポインターを破棄する一環として、オブジェクトの [IUnknown::Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) メソッドが呼び出されます。 通常、 **リリースは** **Unadvise 呼び出し中に呼び出** されます。 ただし、別のスレッドが、アドバイス シンク オブジェクト [の IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドを呼び出す過程にある場合 **、OnNotify** メソッドが返されるまで、Release 呼び出しは遅延されます。 
   
 ## <a name="see-also"></a>関連項目
 

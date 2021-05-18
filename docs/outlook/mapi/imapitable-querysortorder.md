@@ -35,9 +35,9 @@ LPSSortOrderSet FAR * lppSortCriteria
 
 ## <a name="parameters"></a>パラメーター
 
- _lppsortcriteria_
+ _lppSortCriteria_
   
-> 読み上げ現在の並べ替え順序を保持する[ssortorderset](ssortorderset.md)構造体へのポインターへのポインター。 
+> [out]現在の並べ替え順序を保持する [SSortOrderSet](ssortorderset.md) 構造体へのポインターを指すポインター。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -47,25 +47,25 @@ S_OK
     
 MAPI_E_BUSY 
   
-> 別の操作が進行中であるため、並べ替え順序の取得操作を開始できません。 進行中の操作が完了することを許可するか、停止する必要があります。
+> 並べ替え順序の取得操作が開始されるのを防ぐ別の操作が進行中です。 進行中の操作の完了を許可するか、停止する必要があります。
     
 ## <a name="remarks"></a>注釈
 
-**IMAPITable:: querysortorder**メソッドは、テーブルの現在の並べ替え順序を取得します。 並べ替え順序は、 [ssortorderset](ssortorderset.md)構造で記述されます。 
+**IMAPITable::QuerySortOrder** メソッドは、テーブルの現在の並べ替え順序を取得します。 並べ替え順序については [、SSortOrderSet 構造体で説明](ssortorderset.md) します。 
   
-- 次**** の場合、 **ssortorderset**構造の csortmember は0に設定できます。 
+- **SSortOrderSet 構造体** の **cSorts** メンバーは、次の場合に 0 に設定できます。 
     
-- 表は並べ替えられていません。
+- テーブルはソートされません。
     
-- 表の並べ替え方法に関する情報はありません。
+- テーブルの並べ替え方法に関する情報はありません。
     
-- **ssortorderset**構造は、並べ替え順序の記述には適していません。 
+- **SSortOrderSet** 構造体は、並べ替え順序を記述するには適切ではありません。 
     
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-[IMAPITable:: sorttable](imapitable-sorttable.md)メソッドに対して、列に0を含む**ssortorderset**構造が設定されている場合は、現在の並べ替え順序を削除し、既定の順序 (存在する場合) を適用します。 以降の**querysortorder**の呼び出しでは、並べ替えキーに0個以上の列を返すかどうかを選択できます。 現在のビューの数を超える列を返すことができます。
+並べ替えキーに 0 列を含む **SSortOrderSet** 構造体を持つ [IMAPITable::SortTable](imapitable-sorttable.md)メソッドに対して呼び出しが行われた場合は、現在の並べ替え順序を削除し、ある場合は既定の順序を適用します。 **QuerySortOrder** への後続の呼び出しでは、並べ替えキーの列を 0 個以上返すかどうかを選択できます。 現在のビューよりも多くの列を返す場合があります。
   
-並べ替えの詳細については、「[並べ替えと分類](sorting-and-categorization.md)」を参照してください。
+並べ替えの詳細については、「並べ替え [と分類」を参照してください](sorting-and-categorization.md)。
   
 ## <a name="see-also"></a>関連項目
 

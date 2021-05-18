@@ -1,5 +1,5 @@
 ---
-title: Equals (Access カスタム web アプリ)
+title: Equals(Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33408930"
 ---
-# <a name="equals-access-custom-web-app"></a>Equals (Access カスタム web アプリ)
+# <a name="equals-access-custom-web-app"></a>Equals (Access カスタム Web アプリ)
 
 2 つの値が等しいかどうかを比較します。
   
@@ -30,7 +30,7 @@ ms.locfileid: "33408930"
   
 ## <a name="return-type"></a>戻り値の型
 
-**Boolean**
+**ブール型 (Boolean)**
   
 ## <a name="remarks"></a>注釈
 

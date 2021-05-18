@@ -29,7 +29,7 @@ ms.locfileid: "33406326"
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SSubRestriction
@@ -40,11 +40,11 @@ typedef struct _SSubRestriction
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **ulsubobject の**
+ **ulSubObject**
   
-> 制限のターゲットとして機能するサブオブジェクトの種類。 可能な値は次のとおりです。 
+> 制限のターゲットとして機能するサブオブジェクトの種類。 指定できる値は次のとおりです。 
     
 PR_MESSAGE_RECIPIENTS 
   
@@ -52,19 +52,19 @@ PR_MESSAGE_RECIPIENTS
     
 PR_MESSAGE_ATTACHMENTS 
   
->  メッセージの添付ファイルテーブルに制限を適用します。 
+>  メッセージの添付ファイル テーブルに制限を適用します。 
     
- **lpres**
+ **lpRes**
   
-> [srestriction](srestriction.md)構造体へのポインター。 
+> [SRestriction](srestriction.md)構造体へのポインター。 
     
 ## <a name="remarks"></a>注釈
 
-サブオブジェクトの制限は、すべてのテーブルでサポートされているわけではありません。 通常、フォルダーの内容のテーブルと検索結果のフォルダーのみがサポートしています。 たとえば、サブオブジェクトの制限を使用して、特定の種類の添付ファイルまたは受信者を持つメッセージを検索します。 
+サブオブジェクトの制限は、すべてのテーブルではサポートされていません。 通常、サポートできるのはフォルダー コンテンツ テーブルと検索結果フォルダーのみです。 たとえば、サブオブジェクトの制限は、特定の種類の添付ファイルまたは受信者を持つメッセージを検索するために使用されます。 
   
-実装がサブオブジェクトの制限をサポートしていない場合は、 [IMAPITable:: Restrict](imapitable-restrict.md)または[imapitable:: FindRow](imapitable-findrow.md)メソッドから MAPI_E_TOO_COMPLEX を返します。 
+実装がサブオブジェクト制限をサポートしていない場合は [、IMAPITable::Restrict](imapitable-restrict.md) メソッドまたは [IMAPITable::FindRow](imapitable-findrow.md) メソッドから MAPI_E_TOO_COMPLEX を返します。 
   
-制限のしくみについての一般的な説明については、「[制限につい](about-restrictions.md)て」を参照してください。 
+制限の動作の一般的な説明については、「 [制限について」を参照してください](about-restrictions.md)。 
   
 ## <a name="see-also"></a>関連項目
 

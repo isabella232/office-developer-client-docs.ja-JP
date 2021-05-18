@@ -25,7 +25,7 @@ ms.locfileid: "33408685"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアントプロセスをすぐに終了する MAPI クライアントの意図を示します。
+MAPI クライアントがクライアント プロセスを直ちに終了する意図を示します。
   
 ```cpp
 HRESULT DoFastShutdown ();
@@ -35,15 +35,15 @@ HRESULT DoFastShutdown ();
 
 S_OK
   
-> mapi サブシステムは、mapi クライアントが直ちに終了し、mapi プロバイダーがクライアントの終了の準備ができていることを、読み込み済みの mapi プロバイダーに示しています。
+> MAPI サブシステムは、MAPI クライアントが直ちに終了し、MAPI プロバイダーがクライアント出口の準備ができていることを読み込んだ MAPI プロバイダーに示しています。
     
 MAPI_E_NO_SUPPORT
   
-> MAPI サブシステムは、クライアントの高速シャットダウンをサポートしていません。
+> MAPI サブシステムでは、クライアントの高速シャットダウンはサポートされていません。
     
 ## <a name="remarks"></a>注釈
 
-mapi クライアントの高速シャットダウンからのデータ損失を回避するために、mapi クライアントは、 [IMAPIClientShutdown:: notifyprocessshutdown](imapiclientshutdown-notifyprocessshutdown.md)および**IMAPIClientShutdown::D ofastshutdown**メソッドを呼び出す必要があります。これは、次の mapi サブシステムによって返される S_OK 結果に基づいています。[IMAPIClientShutdown:: queryfastshutdown](imapiclientshutdown-queryfastshutdown.md)メソッド。 詳細については、「[ファストシャットダウンのベストプラクティス](best-practices-for-fast-shutdown.md)」を参照してください。
+MAPI クライアントの高速シャットダウンによるデータ損失を回避するために、MAPI クライアントは[IMAPIClientShutdown::NotifyProcessShutdown](imapiclientshutdown-notifyprocessshutdown.md)メソッドと IMAPIClientShutdown::D oFastShutdown メソッドを[IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md)メソッドの MAPI サブシステムによって返される S_OK 結果に基づいて呼び出す必要があります。  詳細については、「高速シャットダウン [のベスト プラクティス」を参照してください](best-practices-for-fast-shutdown.md)。
   
 ## <a name="see-also"></a>関連項目
 

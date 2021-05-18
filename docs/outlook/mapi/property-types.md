@@ -21,34 +21,34 @@ ms.locfileid: "33407054"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI では、単一値プロパティと複数値プロパティの両方がサポートされています。 単一値のプロパティを使用すると、プロパティの基本型の値が1つあります。 複数値プロパティを使用すると、基本型に複数の値が存在します。 
+MAPI では、単一値プロパティと複数値プロパティの両方がサポートされています。 単一値のプロパティでは、プロパティの基本型の値が 1 つ指定されます。 複数値プロパティを使用すると、基本型の値が複数ある。 
   
-次の表では、MAPI がサポートする単一値と複数値のプロパティの種類について説明します。 対応する複数値の型を持つ単一の値の型に対して、複数値の型は、単一値の型の後にかっこで囲んで表示されます。
+MAPI でサポートされる単一値および複数値のプロパティの種類を次の表に示します。 対応する複数値型を持つ単一値型ごとに、単一値型の後に複数値型がかっこで囲んで表示されます。
   
-|**プロパティの種類**|**16進値**|**説明**|
+|**プロパティの種類**|**16 進数の値**|**説明**|
 |:-----|:-----|:-----|
-|PT_UNSPECIFIED  <br/> |0000  <br/> |プロパティの種類が不明であることを示します。 このプロパティの種類は、インターフェイスメソッドで使用するために予約されています。  <br/> |
-|PT_NULL  <br/> |0001  <br/> |プロパティ値がないことを示します。 このプロパティの種類は、インターフェイスメソッドで使用するために予約されており、OLE 型 VT_NULL と同じです。  <br/> |
-|PT_I2 (PT_MV_I2)  <br/> |0002  <br/> |符号付き16ビット (2 バイト) 整数。 このプロパティの種類は、PT_SHORT (PT_MV_SHORT) および OLE type VT_I2 と同じです。  <br/> |
-|PT_I4 (PT_MV_I4)  <br/> |0003  <br/> |符号付きまたは符号なしの32ビット (4 バイト) 整数。 このプロパティの種類は、PT_LONG (PT_MV_LONG) および OLE type VT_I4 と同じです。  <br/> |
-|PT_FLOAT (PT_MV_FLOAT)  <br/> |0004  <br/> |32ビット (8 バイト) 浮動小数点値。 このプロパティの種類は、PT_R4 (PT_MV_R4) および OLE type VT_R4 と同じです。  <br/> |
-|PT_DOUBLE (PT_MV_DOUBLE)  <br/> |0005  <br/> |64ビット (8 バイト) 浮動小数点値。 このプロパティの種類は、PT_R8 と OLE の種類 VT_R8 および VT_DOUBLE と同じです。  <br/> |
-|PT_CURRENCY (PT_MV_CURRENCY)  <br/> |0006  <br/> |64ビット (8 バイト) 整数は、10進数として解釈されます。 このプロパティの種類は、Microsoft Visual Basic の通貨の種類と互換性があり、OLE type VT_CY と同じです。  <br/> |
-|PT_APPTIME (PT_MV_APPTIME)  <br/> |0007  <br/> |日付と時刻として解釈される倍精度浮動小数点型 (Double) の値です。 整数部分は日付で、小数部分は時刻です。 このプロパティの型は、OLE type VT_DATE と同じで、Microsoft Visual Basic の時刻表現と互換性があります。  <br/> |
-|PT_ERROR  <br/> |000a  <br/> |SCODE 値。32ビット (4 バイト) の符号なし整数。 このプロパティの型は、OLE type VT_ERROR と同じです。  <br/> |
-|PT_BOOLEAN (PT_MV_12)  <br/> |000B  <br/> |0が**false**で0以外の値が**true**の場合、16ビット (2 バイト) のブール値。 このプロパティの型は、OLE type VT_BOOL と同じです。  <br/> |
-|PT_OBJECT  <br/> |000d  <br/> |**IUnknown**インターフェイスを実装するオブジェクトへのポインター。 このプロパティの種類は、VT_UNKNOWN などのいくつかの OLE の種類に似ています。  <br/> |
-|PT_I8 (PT_MV_I8)  <br/> |0014  <br/> |**LARGE_INTEGER**構造体を使用する、符号付きまたは符号なしの64ビット (8 バイト) 整数。 このプロパティの種類は、PT_I8 および OLE type VT_I8 と同じです。  <br/> |
-|PT_STRING8 (PT_MV_STRING8)  <br/> |001e  <br/> |Null で終了した8ビット (2 バイト) 文字の文字列。 このプロパティの型は、OLE type VT_LPSTR と同じです。  <br/> |
-|PT_TSTRING (PT_MV_TSTRING)  <br/> |001f  <br/> |Null で終端された16ビット (2 バイト) 文字列。 この型のプロパティは、unicode 記号を使用してコンパイルする場合はプロパティの種類を PT_UNICODE に、unicode 記号を使用してコンパイルしない場合は PT_STRING8 に設定します。 このプロパティの型は、結果として得られる PT_STRING8 properties および VT_LPWSTR の OLE type VT_LPSTR と同じです。  <br/> |
-|PT_SYSTIME (PT_MV_SYSTIME)  <br/> |0040  <br/> |64ビット (8 バイト) 整数データと時刻値を、 **FILETIME**構造体の形式で指定します。 このプロパティの型は、OLE type VT_FILETIME と同じです。  <br/> |
-|PT_CLSID (PT_MV_CLSID)  <br/> |0048  <br/> |**CLSID**構造の値。 このプロパティの型は、OLE type VT_CLSID と同じです。  <br/> |
-|PT_SVREID  <br/> |00fb  <br/> |可変サイズ、16ビット (2 バイト)、その後**** に構造が続きます。  <br/> |
-|PT_SRESTRICT  <br/> |00fd  <br/> |可変サイズ。1つまたは複数の制限構造を表すバイト配列。  <br/> |
-|PT_ACTIONS  <br/> |00fe  <br/> |可変サイズ、16ビット (2 バイト) のアクション数**** (バイトではない) の後に、多くのルールアクション構造が続きます。  <br/> |
-|PT_BINARY (PT_MV_BINARY)  <br/> |0102  <br/> |**sbinary**構造体の値。カウントされたバイト配列。  <br/> |
+|PT_UNSPECIFIED  <br/> |0000  <br/> |プロパティの種類が不明です。 このプロパティの種類は、インターフェイス メソッドで使用するために予約されています。  <br/> |
+|PT_NULL  <br/> |0001  <br/> |プロパティ値なしを示します。 このプロパティの種類は、インターフェイス メソッドで使用するために予約され、OLE 型と同VT_NULL。  <br/> |
+|PT_I2 (PT_MV_I2)  <br/> |0002  <br/> |符号付き 16 ビット (2 バイト) の整数。 このプロパティの種類は、(PT_SHORT) PT_MV_SHORT OLE 型と同VT_I2。  <br/> |
+|PT_I4 (PT_MV_I4)  <br/> |0003  <br/> |符号付きまたは符号なし 32 ビット (4 バイト) の整数。 このプロパティの種類は、(PT_LONG) PT_MV_LONG OLE 型と同VT_I4。  <br/> |
+|PT_FLOAT (PT_MV_FLOAT)  <br/> |0004  <br/> |32 ビット (8 バイト) 浮動小数点値。 このプロパティの種類は、(PT_R4) PT_MV_R4 OLE 型と同VT_R4。  <br/> |
+|PT_DOUBLE (PT_MV_DOUBLE)  <br/> |0005  <br/> |64 ビット (8 バイト) 浮動小数点値。 このプロパティの種類は、OLE の種類PT_R8と同じVT_R8とVT_DOUBLE。  <br/> |
+|PT_CURRENCY (PT_MV_CURRENCY )  <br/> |0006  <br/> |64 ビット (8 バイト) の整数を 10 進数と解釈します。 このプロパティの種類は、Microsoft の通貨Visual Basicと互換性があり、OLE の種類と同VT_CY。  <br/> |
+|PT_APPTIME (PT_MV_APPTIME)  <br/> |0007  <br/> |日付と時刻として解釈される倍数の値。 整数部分は日付で、分数部分は時刻です。 このプロパティの種類は、OLE の種類と同VT_DATE、Microsoft の時刻表記Visual Basic互換性があります。  <br/> |
+|PT_ERROR  <br/> |000A  <br/> |SCODE 値。32 ビット (4 バイト) の符号なし整数。 このプロパティの種類は、OLE の種類と同VT_ERROR。  <br/> |
+|PT_BOOLEAN (PT_MV_12)  <br/> |000B  <br/> |16 ビット (2 バイト) のブール値で、ゼロが **false、** ゼロ以外が **true です**。 このプロパティの種類は、OLE の種類と同VT_BOOL。  <br/> |
+|PT_OBJECT  <br/> |000D  <br/> |**IUnknown** インターフェイスを実装するオブジェクトへのポインター。 このプロパティの種類は、次のような複数の OLE 型に似VT_UNKNOWN。  <br/> |
+|PT_I8 (PT_MV_I8)  <br/> |0014  <br/> |符号付きまたは符号なしの 64 ビット (8 バイト) **の** 整数で、この構造体をLARGE_INTEGERします。 このプロパティの種類は、次のプロパティPT_I8 OLE 型と同VT_I8。  <br/> |
+|PT_STRING8 (PT_MV_STRING8)  <br/> |001E  <br/> |Null で終端された 8 ビット (2 バイト) の文字列。 このプロパティの種類は、OLE の種類と同VT_LPSTR。  <br/> |
+|PT_TSTRING (PT_MV_TSTRING)  <br/> |001F  <br/> |Null で終端された 16 ビット (2 バイト) の文字列。 この型のプロパティは、UNICODE シンボルを使用してPT_UNICODE、UNICODE シンボルを使用してコンパイルしない場合PT_STRING8プロパティの種類がリセットされます。 このプロパティの種類は、結果のプロパティの OLE VT_LPSTRとPT_STRING8プロパティVT_LPWSTR同PT_UNICODEです。  <br/> |
+|PT_SYSTIME (PT_MV_SYSTIME)  <br/> |0040  <br/> |FILETIME 構造体の形式の 64 ビット (8 バイト) の整数データと **時間値** 。 このプロパティの種類は、OLE の種類と同VT_FILETIME。  <br/> |
+|PT_CLSID (PT_MV_CLSID)  <br/> |0048  <br/> |**CLSID** 構造体の値。 このプロパティの種類は、OLE の種類と同VT_CLSID。  <br/> |
+|PT_SVREID  <br/> |00FB  <br/> |可変サイズ、16 ビット (2 バイト) **の COUNT** の後に構造体が続きます。  <br/> |
+|PT_SRESTRICT  <br/> |00FD  <br/> |可変サイズ、1 つ以上の Restriction 構造体を表すバイト配列。  <br/> |
+|PT_ACTIONS  <br/> |00FE  <br/> |可変サイズ、16 ビット (2 バイト) のアクションの **COUNT** (バイトではなく) の後に多数の Rule Action 構造体が続きます。  <br/> |
+|PT_BINARY (PT_MV_BINARY)  <br/> |0102  <br/> |**SBinary 構造体** の値、カウントされたバイト配列。  <br/> |
    
 > [!NOTE]
-> 複数値を持つプロパティの種類の16進値を確認するには、または、PT_MV フラグ (0x00001000) をプロパティの種類の16進値に設定します。 たとえば、PT_MV_UNICODE の16進値は0x101F で、PT_MV_BINARY の16進値は0x1102 です。 
+> 複数値を持つプロパティの種類の 16 進数の値を確認するには、プロパティの種類の hex 値PT_MVフラグ (0x00001000) を指定します。 たとえば、値の 16 進値PT_MV_UNICODE、0x101Fの Hex 値がPT_MV_BINARYされます0x1102。 
   
 

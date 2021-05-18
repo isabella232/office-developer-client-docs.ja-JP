@@ -24,7 +24,7 @@ Microsoft Outlook では、受信トレイ内のアイテムをスレッド別�
 
 この例には 1 つのメソッド DemoConversationHeadersFromSelectio が含まれます。 このメソッドは、現在のビューを受信トレイに設定した後、現在のビューがスレッドを日付順に表示している表ビューかどうかを調べます。 選択されているすべての [ConversationHeader](https://msdn.microsoft.com/library/ff184727\(v=office.15\)) オブジェクトを含む選択項目を取得するために、DemoConversationHeadersFromSelection では [Selection](https://msdn.microsoft.com/library/bb612099\(v=office.15\)) オブジェクトの **GetSelection** メソッドを使用し、引数として [olConversationHeaders](https://msdn.microsoft.com/library/ff184867\(v=office.15\)) 定数を指定します。 スレッドの見出しが選択されている場合、DemoConversationHeadersFromSelection は [SimpleItems](https://msdn.microsoft.com/library/ff184992\(v=office.15\)) オブジェクトを使用して、選択されている各スレッドのアイテムを列挙し、[MailItem](https://msdn.microsoft.com/library/bb643865\(v=office.15\)) オブジェクトで表されるこれらのスレッド アイテムの件名を表示します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

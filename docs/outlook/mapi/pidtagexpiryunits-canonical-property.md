@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: f6a1ca22-cf4c-4e59-8846-6bd937fa8f6e
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8e8deb67990ce25b10a3b0fc1d373f635f958013
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,44 +25,44 @@ ms.locfileid: "32316409"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**PR_EXPIRY_NUMBER** ([PidTagExpiryNumber](pidtagexpirynumber-canonical-property.md)) プロパティが乗算する時間の単位を表します。
+プロパティ [(PidTagExpiryNumber)](pidtagexpirynumber-canonical-property.md)プロパティ **PR_EXPIRY_NUMBER** 乗算する時間の単位を示します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_EXPIRY_UNITS  <br/> |
-|識別子:  <br/> |0x3fee  <br/> |
+|識別子:  <br/> |0x3FEE  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |MAPI の状態  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティを設定する場合は、次のいずれかの値を指定する必要があります。
   
 |||
 |:-----|:-----|
-|PidTagExpiryUnits  <br/> |説明 (timeof)  <br/> |
+|PidTagExpiryUnits  <br/> |説明 (TimeOf)  <br/> |
 |0x00000000  <br/> |分 (60 秒など)  <br/> |
-|0x00000001  <br/> |時間 (例: 60x60 秒)  <br/> |
-|0x00000002  <br/> |日 (たとえば24x60x60 秒)  <br/> |
+|0x00000001  <br/> |時間 (60x60 秒など)  <br/> |
+|0x00000002  <br/> |Day (24x60x60 秒など)  <br/> |
 |0x00000003  <br/> |週 (7x24x60x60 秒など)  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
-> 電子メールメッセージオブジェクトに対して許容されるプロパティと操作を指定します。
+> 電子メール メッセージ オブジェクトで許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -72,7 +72,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

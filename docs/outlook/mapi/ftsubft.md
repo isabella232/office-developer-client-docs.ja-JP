@@ -25,13 +25,13 @@ ms.locfileid: "33408419"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-1つの符号なし64ビット整数を別の値に減算します。 
+1 つの符号なし 64 ビット整数を別の整数から減算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 FILETIME FtSubFt(
@@ -44,14 +44,14 @@ FILETIME FtSubFt(
 
  _Minuend_
   
-> 順番_Subtrahend_パラメーターの値を減算する、符号なしの64ビットの整数を含む[FILETIME](filetime.md)構造。 
+> [in]_Subtrahend_ パラメーターの値を減算する符号なし 64 ビット整数を含む [FILETIME](filetime.md)構造体。 
     
  _Subtrahend_
   
-> 順番_Minuend_パラメーターによって指定された値から減算される、符号なしの64ビット整数を含む**FILETIME**構造。 
+> [in]_Minuend_ パラメーターで示される値から減算された符号なし 64 ビット整数を含む **FILETIME** 構造体。 
     
 ## <a name="return-value"></a>戻り値
 
-**ftsubft**関数は、減算の結果を含む**FILETIME**構造を返します。 2つの入力パラメーターは変更されません。 
+**FtSubFt** 関数は、減算の結果を含む **FILETIME** 構造体を返します。 2 つの入力パラメーターは変更されません。 
   
 

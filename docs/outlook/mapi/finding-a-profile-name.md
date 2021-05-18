@@ -21,34 +21,34 @@ ms.locfileid: "33407922"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアントは、セッションで現在使用されているプロファイルの名前、既定のプロファイルの名前、またはコンピューターにインストールされている代替プロファイルの名前を検索する必要がある場合があります。
+クライアントは、セッションに現在使用されているプロファイルの名前、既定のプロファイルの名前、またはコンピューターにインストールされている代替プロファイルの名前を見つける必要がある場合があります。
   
-セッション中にプロファイルの名前を取得するには、いくつかの方法があります。 セッションで使用されているものとは限らないプロファイルの名前を検索する必要がある場合は、最初の手順を使用します。 既定のプロファイルの名前を検索する必要がある場合は、2番目の手順を使用します。 セッションの現在のプロファイルの名前を検索する必要がある場合は、last プロシージャを使用します。 
+セッション中にプロファイルの名前を取得するには、いくつかの方法があります。 セッションで必ずしも使用されていないプロファイルの名前を見つける必要がある場合は、最初の手順を使用します。 既定のプロファイルの名前を見つける必要がある場合は、2 番目の手順を使用します。 セッションの現在のプロファイルの名前を見つける必要がある場合は、最後の手順を使用します。 
   
- **任意のプロファイルの名前を検索するには**
+ **プロファイルの名前を見つけるには**
   
-1. [MAPIAdminProfiles](mapiadminprofiles.md)を呼び出して、 **IProfAdmin**インターフェイスポインターを取得します。 
+1. [MAPIAdminProfiles を呼び出](mapiadminprofiles.md)して **、IProfAdmin インターフェイス ポインターを** 取得します。 
     
-2. プロファイルテーブルにアクセスするには、 [IProfAdmin:: getprofiletable](iprofadmin-getprofiletable.md)を呼び出します。 
+2. [IProfAdmin::GetProfileTable](iprofadmin-getprofiletable.md)を呼び出して、プロファイル テーブルにアクセスします。 
     
-3. プロファイルテーブルの[IMAPITable:: QueryRows](imapitable-queryrows.md)メソッドを呼び出して、テーブル内のすべての行を取得し、それぞれの行を調べてターゲットプロファイルを表しているかどうかを確認します。 
+3. プロファイル テーブルの [IMAPITable::QueryRows](imapitable-queryrows.md) メソッドを呼び出して、テーブル内のすべての行を取得し、各行を調べて、ターゲット プロファイルを表すかどうかを判断します。 
     
- **既定のプロファイルの名前を検索するには**
+ **既定のプロファイルの名前を見つけるには**
   
-1. [MAPIAdminProfiles](mapiadminprofiles.md)を呼び出します。
+1. [MAPIAdminProfiles を呼び出します](mapiadminprofiles.md)。
     
-2. プロファイルテーブルにアクセスするには、 [IProfAdmin:: getprofiletable](iprofadmin-getprofiletable.md)を呼び出します。 
+2. [IProfAdmin::GetProfileTable](iprofadmin-getprofiletable.md)を呼び出して、プロファイル テーブルにアクセスします。 
     
-3. **PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md)) と値が TRUE に一致する[spropertyrestriction](spropertyrestriction.md)構造を持つプロパティ制限を構築します。
+3. [SPropertyRestriction](spropertyrestriction.md)構造体を使用してプロパティ制限を構築し、PR_DEFAULT_PROFILE **(** [PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md)) と値 TRUE を一致します。
     
-4. [ [IMAPITable:: FindRow](imapitable-findrow.md)を呼び出して、既定のプロファイルを表すプロファイルテーブルの行を検索します。 **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) 列には、既定のプロファイルの名前が含まれています。
+4. [IMAPITable::FindRow を](imapitable-findrow.md)呼び出して、既定のプロファイルを表すプロファイル テーブル内の行を検索します。 **[PR_DISPLAY_NAME** ([PidTagDisplayName)](pidtagdisplayname-canonical-property.md)列には、既定のプロファイルの名前が含まれる。
     
- **現在のプロファイルの名前を検索するには**
+ **現在のプロファイルの名前を見つけるには**
   
-現在のプロファイルの名前を検索するには、次のいずれかの手順を実行します。
+現在のプロファイルの名前を見つけるには、次のいずれかの手順を実行します。
   
-- 現在のプロファイルのセクションの1つを表す[MAPIUID](mapiuid.md)構造体がある場合は、 _lpuid_パラメーターにそのセクションを渡して[imapisession:: openprofile](imapisession-openprofilesection.md)のセクションに渡します。 [imapiprop:: GetProps](imapiprop-getprops.md)メソッドを使用して、プロファイルセクションの**PR_PROFILE_NAME** ([PidTagProfileName](pidtagprofilename-canonical-property.md)) プロパティを取得します。 
+- 現在のプロファイルのセクションの 1 つを表す [MAPIUID](mapiuid.md) 構造がある場合は  _、lpUID_ パラメーターで [IMAPISession::OpenProfileSection](imapisession-openprofilesection.md)に渡します。 IMAPIProp::GetProps メソッドを **PR_PROFILE_NAME** プロファイル セクションのプロパティ [(PidTagProfileName)](pidtagprofilename-canonical-property.md)[プロパティを取得](imapiprop-getprops.md)します。 
     
-- 呼び出し[imapisession:: getstatustable](imapisession-getstatustable.md)は状態テーブルにアクセスして、その**PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md)) 列が MAPI_SUBSYSTEM に設定されている行を検索します。 この行の**PR_DISPLAY_NAME**列はプロファイル名です。 起動時に状態テーブルを使用しないでください。これは、MAPI スプーラーがすべてのトランスポートプロバイダーの初期化を終了するまでアプリケーションをブロックするためです。 これにより、パフォーマンスが低下する可能性があります。 
+- [IMAPISession::GetStatusTable](imapisession-getstatustable.md)を呼び出して、状態テーブルにアクセスし **、PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md)) 列が MAPI_SUBSYSTEM に設定されている行を検索します。 この **PR_DISPLAY_NAME** の列はプロファイル名です。 MAPI スプーラーがすべてのトランスポート プロバイダーの初期化を完了するまで、アプリケーションをブロックするために、起動中に状態テーブルを使用しない。 これにより、パフォーマンスが低下する可能性があります。 
     
 

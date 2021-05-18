@@ -25,7 +25,7 @@ ms.locfileid: "33406172"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームの印刷状態をフォームビューアーに通知します。
+フォームの印刷状態をフォーム ビューアーに通知します。
   
 ```cpp
 HRESULT OnPrint(
@@ -36,13 +36,13 @@ HRESULT hrStatus
 
 ## <a name="parameters"></a>パラメーター
 
- _dwpagenumber_
+ _dwPageNumber_
   
-> 順番印刷された最後のページの番号を指定します。
+> [in]印刷された最後のページの番号。
     
- _hrstatus_
+ _hrStatus_
   
-> 順番印刷ジョブの状態を示す HRESULT 値。 使用可能な値は次のいずれかです。
+> [in]印刷ジョブの状態を示す HRESULT 値。 使用可能な値は次のいずれかです。
     
 S_FALSE 
   
@@ -52,29 +52,29 @@ S_OK
   
 > 印刷ジョブが進行中です。
     
-フェール 
+FAILED 
   
-> 印刷ジョブは失敗したため、終了しました。
+> エラーが原因で印刷ジョブが終了しました。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 通知に成功しました。
+> 通知が成功しました。
     
 MAPI_E_USER_CANCEL 
   
-> ユーザーが操作をキャンセルしました。通常は、ダイアログボックスの [キャンセル] ボタンをクリックします。 
+> 通常、ユーザーはダイアログ ボックスの [キャンセル] ボタンをクリックして操作をキャンセルしました。 
     
 ## <a name="remarks"></a>注釈
 
-フォームオブジェクトは印刷中に**IMAPIViewAdviseSink:: OnPrint**メソッドを呼び出して、印刷の進行状況を表示します。 
+フォーム オブジェクトは **、印刷中に IMAPIViewAdviseSink::OnPrint** メソッドを呼び出して、印刷の進行状況をビューアーに通知します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-印刷ジョブに複数のページが含まれている場合は、各ページが印刷された後に、 **OnPrint**を呼び出すことができます。 現在__ 印刷中のページと_hrstatus_を S_OK に設定します。 印刷ジョブが完了すると、 _dwpagenumber_を使用して**OnPrint**を呼び出し、最後のページが印刷され、 _hrstatus_が S_FALSE に設定されます。 
+印刷ジョブに複数のページが含まれる場合は、各ページの印刷後に **OnPrint** を呼び出します。 _dwPageNumber を_ 現在印刷中のページに設定し _、hrStatus_ を [S_OK. 印刷ジョブが完了したら、印刷された最後のページに _dwPageNumber_ が設定された **OnPrint** を呼び出し _、hrStatus_ を [印刷] にS_FALSE。 
   
-フォーム通知の詳細については、「[フォーム通知の送信と受信](sending-and-receiving-form-notifications.md)」を参照してください。
+フォーム通知の詳細については、「フォーム通知の送受信 [」を参照してください](sending-and-receiving-form-notifications.md)。
   
 ## <a name="see-also"></a>関連項目
 

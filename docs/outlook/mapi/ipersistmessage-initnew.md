@@ -36,13 +36,13 @@ HRESULT InitNew(
 
 ## <a name="parameters"></a>パラメーター
 
- _pメッセージ ite_
+ _pMessageSite_
   
-> 順番フォームがビューアー内のメッセージを操作するために使用するメッセージサイトへのポインター。
+> [in]フォームがビューアーでメッセージを処理するために使用するメッセージ サイトへのポインター。
     
- _pmessage_
+ _pMessage_
   
-> 順番新しいメッセージへのポインター。
+> [in]新しいメッセージへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -50,43 +50,43 @@ S_OK
   
 > 新しいメッセージが正常に初期化されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-フォームビューアーは、フォームが処理するメッセージクラスに属する新しいメッセージをユーザーが書き込むときに、 **IPersistMessage:: InitNew**メソッドを呼び出します。 form オブジェクトに有効なユーザーインターフェイスポインターがある場合は、そのメッセージオブジェクトのユーザーインターフェイスが表示されます。 
+フォーム ビューアーは、ユーザーがフォームで処理するメッセージ クラスに属する新しいメッセージを書き込むときに **、IPersistMessage::InitNew** メソッドを呼び出します。 フォーム オブジェクトに有効なユーザー インターフェイス ポインターがある場合は、メッセージ オブジェクトのユーザー インターフェイスが表示されます。 
   
- フォームが[初期化](uninitialized-state.md)されていない状態以外の状態にある場合は、 **InitNew**を呼び出すことはできません。 **InitNew**が呼び出されたときに、フォームが他の状態のいずれかになっている場合は、E_UNEXPECTED を返します。 
+ **InitNew** は、フォームが初期化されていない状態以外の状態にある場合 [は呼び出す必要](uninitialized-state.md) があります。 **InitNew** が呼び出された場合にフォームが他の状態の 1 つにある場合は、次のE_UNEXPECTED。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-通常、保存されていないプロパティを持つメッセージは変更済みとしてマークされるため、クライアントは、これらのプロパティを保存するかどうかを確認するダイアログボックスを表示することができます。 ユーザーがメッセージを保存することを示している場合は、データを保存し、メッセージを [クリーン] としてマークし、通常どおりに終了します。
+通常、保存されていないプロパティを持つメッセージは変更済みとしてマークされ、クライアントは、これらのプロパティを保存するかどうかをユーザーに求めるダイアログ ボックスを表示できます。 ユーザーがメッセージを保存する必要がある場合は、データを保存し、メッセージをクリーンとしてマークし、正常に終了します。
   
-ただし、新しく初期化されたメッセージを処理する場合は、1つ以上の計算プロパティを設定する必要があります。これらのプロパティを保存する場合は、メッセージを変更済みとしてマークしないようにしてください。 ユーザーは、計算されたプロパティを非表示にする必要があるので、ダイアログボックスを表示する必要はありません。
+ただし、新しく初期化されたメッセージの処理に 1 つ以上の計算プロパティの設定が含まれる場合、それらのプロパティを保存することが重要である場合は、メッセージを変更済みとしてマークしません。 計算されたプロパティはユーザーには表示されない必要があります。ダイアログ ボックスは表示されません。
   
-フォームに、 **InitNew**に渡されたものとは異なるアクティブなメッセージサイトへの参照がある場合は、そのサイトが使用されなくなっているため、元のサイトを解放します。 メッセージサイトおよびメッセージへのポインターを pメッセージパラメーター __ と_pmessage_パラメーターから格納し、両方のオブジェクト ' [IUnknown:: AddRef](https://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx)メソッドを呼び出して参照カウントをインクリメントします。 
+フォームに **InitNew** に渡されるメッセージ サイト以外のアクティブなメッセージ サイトへの参照がある場合は、元のサイトが使用されなくなったため、元のサイトを解放します。 _pMessageSite_ パラメーターと _pMessage_ パラメーターからメッセージ サイトへのポインターとメッセージを格納し、両方のオブジェクトの [IUnknown::AddRef](https://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx)メソッドを呼び出して、参照カウントを増やします。 
   
-新しいメッセージの**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) および**PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) プロパティを、自分のメッセージクラスに適したものに設定します。 多くのメッセージクラスでは、たとえば、新しいメッセージの**PR_MESSAGE_FLAGS**を MSGFLAG_UNSENT に設定します。 
+新しいメッセージ **の** PR_MESSAGE_FLAGS ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティと **PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) プロパティを、メッセージ クラスに適した値に設定します。 たとえば、多くのメッセージ クラスは、新しい **PR_MESSAGE_FLAGS** のMSGFLAG_UNSENTに設定します。 
   
-戻る前に、エラーが発生していない場合は、フォームを[通常](normal-state.md)の状態に移行します。 登録されているすべてのビューアーに新しいメッセージ通知を送信するには、 [IMAPIViewAdviseSink:: onnewmessage](imapiviewadvisesink-onnewmessage.md)メソッドを呼び出し、S_OK を返します。 
+返す前に、エラーが発生したことがない場合は、フォームを [Normal](normal-state.md) 状態に移行します。 [IMAPIViewAdviseSink::OnNewMessage](imapiviewadvisesink-onnewmessage.md)メソッドを呼び出して、登録されているすべての閲覧者に新しいメッセージ通知を送信し、S_OK。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**InitNew**を正常に呼び出した後、フォームに対して次の必要なプロパティが設定されていると仮定できます。
+**InitNew** を正常に呼び出した後、フォームに対して次の必須プロパティと他のプロパティが設定されていないと仮定できます。
   
- **PR_DELETE_AFTER_SUBMIT**([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md))
+ **PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md))
   
- **PR_IMPORTANCE**([PidTagImportance](pidtagimportance-canonical-property.md))
+ **PR_IMPORTANCE** ([PidTagImportance](pidtagimportance-canonical-property.md))
   
- **PR_ORIGINATOR_DELIVERY_REPORT_REQUESTED**([PidTagOriginatorDeliveryReportRequested](pidtagoriginatordeliveryreportrequested-canonical-property.md))
+ **PR_ORIGINATOR_DELIVERY_REPORT_REQUESTED** ([PidTagOriginatorDeliveryReportRequested](pidtagoriginatordeliveryreportrequested-canonical-property.md))
   
- **PR_PRIORITY**([PidTagPriority](pidtagpriority-canonical-property.md))
+ **PR_PRIORITY** ([PidTagPriority](pidtagpriority-canonical-property.md))
   
- **PR_READ_RECEIPT_REQUESTED**([PidTagReadReceiptRequested](pidtagreadreceiptrequested-canonical-property.md))
+ **PR_READ_RECEIPT_REQUESTED** ([PidTagReadReceiptRequested](pidtagreadreceiptrequested-canonical-property.md))
   
- **PR_SENSITIVITY**([PidTagSensitivity](pidtagsensitivity-canonical-property.md))
+ **PR_SENSITIVITY** ([PidTagSensitivity](pidtagsensitivity-canonical-property.md))
   
- **PR_SENTMAIL_ENTRYID**([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md))
+ **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md))
   
-フォームの状態の詳細については、「[フォームの状態](form-states.md)」を参照してください。 ストレージオブジェクトが初期化される方法の詳細については、 [IPersistStorage:: InitNew](https://msdn.microsoft.com/library/79caf1f6-d974-4aee-8563-eda4876a0a90%28Office.15%29.aspx)メソッドを参照してください。 
+フォームの状態の詳細については、「フォームの状態」 [を参照してください](form-states.md)。 記憶域オブジェクトの初期化方法の詳細については [、「IPersistStorage::InitNew メソッド」を参照](https://msdn.microsoft.com/library/79caf1f6-d974-4aee-8563-eda4876a0a90%28Office.15%29.aspx) してください。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: メッセージサービスを追加する
+title: メッセージ サービスの追加
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,28 +15,28 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33407236"
 ---
-# <a name="adding-a-message-service"></a>メッセージサービスを追加する
+# <a name="adding-a-message-service"></a>メッセージ サービスの追加
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
- **新しいメッセージサービスをプロファイルに追加して、新しいメッセージサービスにアクセスするには**
+ **プロファイルに新しいメッセージ サービスを追加し、新しいメッセージ サービスにアクセスするには**
   
-[IMsgServiceAdmin2:: CreateMsgServiceEx](imsgserviceadmin2-createmsgserviceex.md)を呼び出します。 **CreateMsgServiceEx**は、次のタスクを実行します。 
+[IMsgServiceAdmin2::CreateMsgServiceEx を呼び出します](imsgserviceadmin2-createmsgserviceex.md)。 **CreateMsgServiceEx は** 、次のタスクを実行します。 
   
-1. mapisvc.inf に含まれるメッセージサービスの関連情報をすべてコピーします。INF ファイル。すべてのプロバイダーセクションのプロファイルセクションを作成します。
+1. MAPISVC にあるメッセージ サービスに関連するすべての情報をコピーします。INF ファイル。プロバイダー セクションごとにプロファイル セクションを作成します。
     
-2. _ulcontext_パラメーターを MSG_SERVICE_CREATE に設定して、メッセージサービスのエントリポイント関数**msgserviceentry**を呼び出します。 
+2. _ulContext_ パラメーターを指定して、メッセージ サービスのエントリ ポイント関数 **MSGSERVICEENTRY** を呼び出MSG_SERVICE_CREATE。 
     
-3. メッセージサービスの**PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) プロパティを設定および取得します。
+3. メッセージ サービスのプロパティ [(PidTagServiceUid)](pidtagserviceuid-canonical-property.md) **PR_SERVICE_UIDを** 設定して取得します。
     
- **新しく追加されたメッセージサービスにアクセスするには**
+ **新しく追加されたメッセージ サービスにアクセスするには**
   
-1. message service テーブルを取得するには、 [IMsgServiceAdmin:: getmsgservicetable](imsgserviceadmin-getmsgservicetable.md)を呼び出します。 
+1. メッセージ [サービス テーブルを取得するには、IMsgServiceAdmin::GetMsgServiceTable](imsgserviceadmin-getmsgservicetable.md) を呼び出します。 
     
-2. メッセージサービステーブルの[IMAPITable:: アドバイズ](imapitable-advise.md)メソッドを呼び出して、テーブル通知の登録を行います。 
+2. メッセージ サービス テーブルの [IMAPITable::Advise](imapitable-advise.md) メソッドを呼び出して、テーブル通知に登録します。 
     
-3. MAPI が TABLE_ROW_ADDED 通知を送信する場合は、 [TABLE_NOTIFICATION](table_notification.md)構造に含まれている[srow](srow.md)構造で新しく追加されたメッセージサービスのエントリ識別子を見つけます。 
+3. MAPI が通知を送信TABLE_ROW_ADDED、新しく追加されたメッセージ サービスのエントリ識別子を、新しいメッセージ構造に含まれる [SRow](srow.md) 構造 [TABLE_NOTIFICATION](table_notification.md) します。 
     
 

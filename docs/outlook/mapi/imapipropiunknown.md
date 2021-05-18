@@ -1,5 +1,5 @@
 ---
-title: imapiprop IUnknown
+title: IMAPIProp IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,45 +25,45 @@ ms.locfileid: "33407663"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアント、サービスプロバイダ、MAPI がプロパティを使用できるようにします。 プロパティをサポートするすべてのオブジェクトは、このインターフェイスを実装します。
+クライアント、サービス プロバイダー、MAPI がプロパティを操作できます。 プロパティをサポートするオブジェクトはすべて、このインターフェイスを実装します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
-|公開者:  <br/> |このインターフェイスを直接公開するオブジェクトはありません。  <br/> |
-|実装元:  <br/> |サービスプロバイダーと MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーション、サービスプロバイダー、MAPI  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |このインターフェイスを直接公開するオブジェクトはありません。  <br/> |
+|実装元:  <br/> |サービス プロバイダーと MAPI  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーション、サービス プロバイダー、MAPI  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMAPIProp  <br/> |
 |ポインターの種類:  <br/> |LPMAPIPROP  <br/> |
-|トランザクションモデル:  <br/> |抽象クラス、実装されていません  <br/> |
+|トランザクション モデル:  <br/> |抽象クラス(実装されていない)  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[GetLastError](imapiprop-getlasterror.md) <br/> |前のエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
-|[SaveChanges](imapiprop-savechanges.md) <br/> |前回の保存操作以降にオブジェクトに加えられたすべての変更を永続的に行います。  <br/> |
-|[GetProps](imapiprop-getprops.md) <br/> |オブジェクトの1つ以上のプロパティのプロパティ値を取得します。  <br/> |
-|[getproplist](imapiprop-getproplist.md) <br/> |すべてのプロパティのプロパティタグを返します。  <br/> |
-|[openproperty](imapiprop-openproperty.md) <br/> |プロパティへのアクセスに使用できるインターフェイスへのポインターを返します。  <br/> |
-|[setprops による](imapiprop-setprops.md) <br/> |1つまたは複数のプロパティを更新します。  <br/> |
-|[deleteprops](imapiprop-deleteprops.md) <br/> |オブジェクトから1つ以上のプロパティを削除します。  <br/> |
-|[CopyTo](imapiprop-copyto.md) <br/> |明示的に除外されているプロパティ以外のすべてのプロパティをコピーまたは移動します。  <br/> |
-|[copyprops](imapiprop-copyprops.md) <br/> |選択されたプロパティをコピーまたは移動します。  <br/> |
-|[GetNamesFromIDs](imapiprop-getnamesfromids.md) <br/> |1つまたは複数のプロパティ識別子に対応するプロパティ名を提供します。  <br/> |
-|[getidsfromnames](imapiprop-getidsfromnames.md) <br/> |1つまたは複数のプロパティ名に対応するプロパティ識別子を提供します。  <br/> |
+|[GetLastError](imapiprop-getlasterror.md) <br/> |前のエラー [に関する](mapierror.md) 情報を含む MAPIERROR 構造体を返します。  <br/> |
+|[SaveChanges](imapiprop-savechanges.md) <br/> |最後の保存操作以降にオブジェクトに加えた変更を永続的に行います。  <br/> |
+|[GetProps](imapiprop-getprops.md) <br/> |オブジェクトの 1 つ以上のプロパティのプロパティ値を取得します。  <br/> |
+|[GetPropList](imapiprop-getproplist.md) <br/> |すべてのプロパティのプロパティ タグを返します。  <br/> |
+|[OpenProperty](imapiprop-openproperty.md) <br/> |プロパティへのアクセスに使用できるインターフェイスへのポインターを返します。  <br/> |
+|[SetProps](imapiprop-setprops.md) <br/> |1 つ以上のプロパティを更新します。  <br/> |
+|[DeleteProps](imapiprop-deleteprops.md) <br/> |オブジェクトから 1 つ以上のプロパティを削除します。  <br/> |
+|[CopyTo](imapiprop-copyto.md) <br/> |特定の除外プロパティを除くすべてのプロパティをコピーまたは移動します。  <br/> |
+|[CopyProps](imapiprop-copyprops.md) <br/> |選択したプロパティをコピーまたは移動します。  <br/> |
+|[GetNamesFromIDs](imapiprop-getnamesfromids.md) <br/> |1 つ以上のプロパティ識別子に対応するプロパティ名を指定します。  <br/> |
+|[GetIDsFromNames](imapiprop-getidsfromnames.md) <br/> |1 つ以上のプロパティ名に対応するプロパティ識別子を提供します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
- **imapiprop**は、次のインターフェイスの基本インターフェイスです。 
+ **IMAPIProp** は、次のインターフェイスの基本インターフェイスです。 
   
-- [iattach](iattachimapiprop.md)
+- [IAttach](iattachimapiprop.md)
     
-- [imailuser](imailuserimapiprop.md)
+- [IMailUser](imailuserimapiprop.md)
     
 - [IMAPIContainer](imapicontainerimapiprop.md)
     
-- [imapiforminfo](imapiforminfoimapiprop.md)
+- [IMAPIFormInfo](imapiforminfoimapiprop.md)
     
 - [IMAPIStatus](imapistatusimapiprop.md)
     
@@ -73,7 +73,7 @@ ms.locfileid: "33407663"
     
 - [IProfSect](iprofsectimapiprop.md)
     
-- [ipropdata](ipropdataimapiprop.md)
+- [IPropData](ipropdataimapiprop.md)
     
 ## <a name="see-also"></a>関連項目
 

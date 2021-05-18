@@ -31,7 +31,7 @@ ms.locfileid: "32320253"
 
 次のコード例の CheckOccurrenceExample では、「[週単位パターンの定期的な予定を作成する](how-to-create-a-recurring-appointment-that-has-a-weekly-pattern.md)」で作成した定期的な予定を使用します。 GetOccurrence メソッドを呼び出して、定期的な予定の開始日と時刻が指定されているかどうかを調べます。 定期的な予定のインスタンスの開始日と時刻が指定の情報と一致しない場合でもプロシージャが続行されるように、この例では try…catch ブロックを使用しています。 CheckOccurrenceExample では、一連の定期的な予定に含まれる予定ごとに GetOccurrence メソッドを呼び出してから、singleAppt 変数をテストして、その変数が null 参照に設定されているかどうかを調べます。この null 参照は、メソッドが失敗して **AppointmentItem** オブジェクトが返されなかったことを示します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

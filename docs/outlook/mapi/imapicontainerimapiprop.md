@@ -1,5 +1,5 @@
 ---
-title: IMAPIContainer imapiprop
+title: IMAPIContainer IMAPIProp
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,33 +25,33 @@ ms.locfileid: "33406123"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-アドレス帳、配布リスト、フォルダーなどのコンテナーオブジェクトの高レベルの操作を管理します。 [imapifolder: IMAPIContainer](imapifolderimapicontainer.md)、 [IABContainer: IMAPIContainer](iabcontainerimapicontainer.md)、および[idistlist: IMAPIContainer](idistlistimapicontainer.md)インターフェイスは、 **IMAPIContainer**から派生します。
+アドレス帳、配布リスト、フォルダーなどのコンテナー オブジェクトに対する高レベルの操作を管理します。 [IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md), [IABContainer : IMAPIContainer](iabcontainerimapicontainer.md), and [IDistList : IMAPIContainer](idistlistimapicontainer.md)インターフェイスは **IMAPIContainer から派生しています**。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
-|公開者:  <br/> |フォルダー、アドレス帳コンテナー、および配布リストオブジェクト  <br/> |
-|実装元:  <br/> |メッセージストア、アドレス帳、リモートトランスポートプロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |フォルダー、アドレス帳コンテナー、配布リスト オブジェクト  <br/> |
+|実装元:  <br/> |メッセージ ストア、アドレス帳、およびリモート トランスポート プロバイダー  <br/> |
 |呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMAPIContainer  <br/> |
 |ポインターの種類:  <br/> |LPMAPICONTAINER  <br/> |
-|トランザクションモデル:  <br/> |抽象クラス、実装されていません  <br/> |
+|トランザクション モデル:  <br/> |抽象クラス(実装されていない)  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[getcontentstable](imapicontainer-getcontentstable.md) <br/> |コンテナーの contents テーブルへのポインターを返します。  <br/> |
+|[GetContentsTable](imapicontainer-getcontentstable.md) <br/> |コンテナーのコンテンツ テーブルへのポインターを返します。  <br/> |
 |[GetHierarchyTable](imapicontainer-gethierarchytable.md) <br/> |コンテナーの階層テーブルへのポインターを返します。  <br/> |
-|[OpenEntry](imapicontainer-openentry.md) <br/> |コンテナー内のオブジェクトを開き、さらにアクセスするためのインターフェイスポインターを返します。  <br/> |
-|[SetSearchCriteria](imapicontainer-setsearchcriteria.md) <br/> |コンテナーの検索条件を確立します。  <br/> |
-|[getsearchcriteria](imapicontainer-getsearchcriteria.md) <br/> |コンテナーの検索条件を取得します。  <br/> |
+|[OpenEntry](imapicontainer-openentry.md) <br/> |コンテナー内のオブジェクトを開き、さらにアクセスするインターフェイス ポインターを返します。  <br/> |
+|[SetSearchCriteria](imapicontainer-setsearchcriteria.md) <br/> |コンテナーの検索条件を設定します。  <br/> |
+|[GetSearchCriteria](imapicontainer-getsearchcriteria.md) <br/> |コンテナーの検索条件を取得します。  <br/> |
    
 |**必須のプロパティ**|**Access**|
 |:-----|:-----|
-|**PR_CONTAINER_HIERARCHY**([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_CONTAINER_CONTENTS**([PidTagContainerContents](pidtagcontainercontents-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_CONTAINER_FLAGS**([PidTagContainerFlags](pidtagcontainerflags-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
+|**PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_CONTAINER_FLAGS** ([PidTagContainerFlags](pidtagcontainerflags-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

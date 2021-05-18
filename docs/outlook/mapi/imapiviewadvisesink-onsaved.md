@@ -25,7 +25,7 @@ ms.locfileid: "33407607"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームの現在のメッセージが保存されたことをフォームビューアーに通知します。
+フォームの現在のメッセージが保存されたとフォーム ビューアーに通知します。
   
 ```cpp
 HRESULT OnSaved( void );
@@ -43,9 +43,9 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-form オブジェクトは、フォーム内の現在のメッセージが正常に保存された後に、 **IMAPIViewAdviseSink:: onsaved**メソッドを呼び出します。 これにより、閲覧者は、メッセージの変更を反映するように windows を更新することができます。 
+フォーム オブジェクトは、フォーム内の現在のメッセージが正常に保存された後 **、IMAPIViewAdviseSink::OnSaved** メソッドを呼び出します。 これにより、閲覧者はメッセージの変更を反映するようにウィンドウを更新できます。 
   
-フォーム通知の詳細については、「[フォーム通知の送信と受信](sending-and-receiving-form-notifications.md)」を参照してください。
+フォーム通知の詳細については、「フォーム通知の送受信 [」を参照してください](sending-and-receiving-form-notifications.md)。
   
 ## <a name="see-also"></a>関連項目
 

@@ -25,13 +25,13 @@ ms.locfileid: "33408664"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-配信不能レポートに設定した場合は、メッセージが再送信された時刻を示します。
+送信以外のレポートに設定されている場合は、メッセージが再送信された時刻を示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidresendtime  <br/> |
-|プロパティセット:  <br/> |PSETID_Report  <br/> |
-|ロング ID (LID):  <br/> |0x00008D00  <br/> |
+|関連するプロパティ:  <br/> |dispidResendTime  <br/> |
+|プロパティ セット:  <br/> |PSETID_Report  <br/> |
+|長い ID (LID):  <br/> |0x00008D00  <br/> |
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
 |エリア:  <br/> |一般的なメッセージング  <br/> |
    
@@ -39,15 +39,15 @@ ms.locfileid: "33408664"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]] 
+[[MS-OXPROPS]] 
   
-> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
 ## <a name="see-also"></a>関連項目
 
@@ -57,7 +57,7 @@ mapidefs.h
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

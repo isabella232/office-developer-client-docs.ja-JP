@@ -1,5 +1,5 @@
 ---
-title: imapipropdeleteprops
+title: IMAPIPropDeleteProps
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33409238"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-オブジェクトから1つ以上のプロパティを削除します。 
+オブジェクトから 1 つ以上のプロパティを削除します。 
   
 ```cpp
 HRESULT DeleteProps(
@@ -38,11 +38,11 @@ HRESULT DeleteProps(
 
  _lpPropTagArray_
   
-> 順番削除するプロパティを示すプロパティタグの配列へのポインター。 _lpPropTagArray_によって参照される[SPropTagArray](sproptagarray.md)構造の**cvalues**メンバーは0であってはなりません。また、 _lpPropTagArray_パラメーター自体を NULL にすることはできません。 
+> [in]削除するプロパティを示すプロパティ タグの配列へのポインター。 _lpPropTagArray_ が指す [SPropTagArray](sproptagarray.md)構造体の **cValues** メンバーは 0 にし _、lpPropTagArray_ パラメーター自体は NULL にすることはできません。 
     
- _lppproblems 問題_
+ _lppProblems_
   
-> [入力]input の場合は、 [spropの配列](spropproblemarray.md)構造体へのポインターへのポインターを返します。それ以外の場合は、エラー情報を必要としないことを示す NULL。 _lppproblems_が入力の有効なポインターの場合、 **deleteprops**は、1つ以上のプロパティを削除するときのエラーについての詳細情報を返します。 
+> [in, out]入力時に [、SPropProblemArray](spropproblemarray.md) 構造体へのポインターを指すポインター。それ以外の場合は、エラー情報が不要な NULL を指定します。 _lppProblems が_ 入力の有効なポインターである場合 **、DeleteProps** は 1 つ以上のプロパティを削除するエラーに関する詳細情報を返します。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -52,25 +52,25 @@ S_OK
     
 MAPI_E_NO_ACCESS 
   
-> 呼び出し元に、プロパティを削除するための十分な権限がありません。
+> 呼び出し元には、プロパティを削除するためのアクセス許可が不十分です。
     
 ## <a name="remarks"></a>注釈
 
-**imapiprop::D eleteprops**メソッドは、現在のオブジェクトから1つ以上のプロパティを削除します。 
+**IMAPIProp::D eleteProps** メソッドは、現在のオブジェクトから 1 つ以上のプロパティを削除します。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-すべてのオブジェクトからプロパティを削除できるようにする必要はありません。 オブジェクトが変更できない場合は、 **deleteprops**メソッドから MAPI_E_NO_ACCESS を返します。 
+すべてのオブジェクトからプロパティを削除できる必要はない。 オブジェクトが変更できない場合は **、DeleteProps** MAPI_E_NO_ACCESSを返します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-_lpPropTagArray_パラメーターによって示されるプロパティタグ配列内の各 property タグに対して、プロパティの種類を設定する必要はありません。 プロパティの種類は無視されます。プロパティ識別子のみが使用されます。 
+_lpPropTagArray_ パラメーターが指すプロパティ タグ配列内の各プロパティ タグのプロパティの種類を設定する必要があります。 プロパティの種類は無視されます。プロパティ識別子だけが使用されます。 
   
-一部のオブジェクトは変更を許可しないため、これらのオブジェクトは**deleteprops**メソッドから MAPI_E_NO_ACCESS を返すことに注意してください。 その他のオブジェクトでは、一部のプロパティを削除できますが、他のオブジェクトを削除することはできません。 一部のプロパティの削除のみで問題が発生した場合、 **deleteprops**は S_OK を返します。 _lppproblems_パラメーターで有効なポインターを渡した場合、 **deleteprops**は、各プロパティの問題に関する詳細情報を含む**sprop問題の配列**構造体へのポインターを設定します。 たとえば、メッセージのすべてのプロパティを削除していて、その1つ以上の添付ファイルに問題がある場合、 **sprop問題の配列**構造には、 **PR_MESSAGE_ATTACHMENTS** (PidTagMessageAttachments のエントリが含まれます。[](pidtagmessageattachments-canonical-property.md)) プロパティ。 
+一部のオブジェクトは変更を許可していないので、これらのオブジェクトは **DeleteProps** メソッドMAPI_E_NO_ACCESS返します。 その他のオブジェクトでは、一部のプロパティを削除できますが、他のプロパティは削除されません。 プロパティの一部のみを削除する際に問題が発生した場合 **、DeleteProps** はプロパティをS_OK。 _lppProblems_ パラメーターで有効なポインターを渡した場合 **、DeleteProps** は、各プロパティの問題に関する詳細情報を含む **SPropProblemArray** 構造体にポインターを設定します。 たとえば、メッセージのすべてのプロパティを削除し、1 つ以上の添付ファイルに問題がある場合 **、SPropProblemArray** 構造体には **PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) プロパティのエントリが含まれます。 
   
-_lppproblems_が指す構造体は、 **deleteprops**が S_OK を返す場合にのみ有効です。 **deleteprops**がエラーを返す場合は、sprop問題の**配列**構造を使用しないようにしてください。 代わりに、オブジェクトの[imapiprop:: GetLastError](imapiprop-getlasterror.md)メソッドを呼び出して、エラーに関する詳細情報を取得します。 
+_lppProblems_ が指す構造は **、DeleteProps** が値を返す場合にのみ有効S_OK。 **DeleteProps がエラー** を返す場合は **、SPropProblemArray 構造体の使用を試み** ない。 代わりに、オブジェクトの [IMAPIProp::GetLastError](imapiprop-getlasterror.md) メソッドを呼び出して、エラーの詳細を取得します。 
   
-[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出すことで、返された**spropの配列**構造を解放します。 
+MAPIFreeBuffer 関数を呼び出して、返された[SPropProblemArray 構造体を解放](mapifreebuffer.md)します。  
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -78,7 +78,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIFunctions  <br/> |DeleteProperty  <br/> |mfcmapi は、 **imapiprop::D eleteprops**メソッドを使用して、オブジェクトからプロパティを削除します。  <br/> |
+|MAPIFunctions.cpp  <br/> |DeleteProperty  <br/> |MFCMAPI は **IMAPIProp::D eleteProps** メソッドを使用して、オブジェクトからプロパティを削除します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -25,11 +25,11 @@ ms.locfileid: "33407845"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-PT_BINARY 型のプロパティについて説明します。
+型のプロパティをPT_BINARY。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SBinary
@@ -40,19 +40,19 @@ typedef struct _SBinary
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cb**
   
-> **lpb**メンバーのバイト数。 
+> **lpb** メンバー内のバイト数。 
     
  **lpb**
   
-> PT_BINARY プロパティの値へのポインター。
+> プロパティ値PT_BINARYポインター。
     
 ## <a name="remarks"></a>注釈
 
-プロパティの種類の詳細については、「 [MAPI プロパティの種類の概要](mapi-property-type-overview.md)」を参照してください。
+プロパティの種類の詳細については [、「MAPI プロパティの種類の概要」を参照してください](mapi-property-type-overview.md)。
   
 ## <a name="see-also"></a>関連項目
 

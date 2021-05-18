@@ -1,5 +1,5 @@
 ---
-title: よく使用されるプロパティ
+title: 一般的に使用されるプロパティ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 887c5e82-170f-4c3c-986f-465c05fbbdbe
-description: '最終更新日: 2011 年11月8日'
+description: '最終更新日: 2011 年 11 月 08 日'
 ms.openlocfilehash: 5e9a1832890c65998a1732278367c0e916fb0c5c
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -15,13 +15,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33409203"
 ---
-# <a name="commonly-used-properties"></a>よく使用されるプロパティ
+# <a name="commonly-used-properties"></a>一般的に使用されるプロパティ
 
  
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-必須およびオプションの MAPI プロパティの一覧については、いくつかの場所で説明されています。
+必要な MAPI プロパティと省略可能な MAPI プロパティの一覧は、いくつかの場所で文書化されています。
   
 これらのインターフェイスをサポートするオブジェクトに関連付けられているプロパティの一覧については、次のインターフェイスを参照してください。
   
@@ -43,15 +43,15 @@ ms.locfileid: "33409203"
     
 - [IProfSect : IMAPIProp](iprofsectimapiprop.md)
     
-テーブルに必要なプロパティの一覧については、 [MAPI テーブル](mapi-tables.md)の表の種類ごとのドキュメントを参照してください。
+テーブルに必要なプロパティの一覧については、「MAPI テーブル」の各種類のテーブルのドキュメント [を参照してください](mapi-tables.md)。
   
-MAPI で定義されているメッセージクラスの必須およびオプションのメッセージプロパティの一覧については、以下のトピックを参照してください。 
+MAPI で定義されたメッセージ クラスの必須およびオプションのメッセージ プロパティの一覧については、次のトピックを参照してください。 
   
 - [すべてのメッセージに必要なプロパティ](required-properties-for-all-messages.md)
     
-- [必須のレポートメッセージのプロパティ](required-report-message-properties.md)
+- [必須のレポート メッセージのプロパティ](required-report-message-properties.md)
     
-- [オプションのレポートメッセージのプロパティ](optional-report-message-properties.md)
+- [オプションのレポート メッセージのプロパティ](optional-report-message-properties.md)
     
 - [すべてのメッセージの受信者プロパティ](recipient-properties-for-all-messages.md)
     

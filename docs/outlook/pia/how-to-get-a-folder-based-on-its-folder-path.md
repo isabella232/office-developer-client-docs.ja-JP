@@ -25,7 +25,7 @@ ms.locfileid: "32320287"
 
 このコード例の GetKeyContacts メソッドは、[GetRootFolder()](https://msdn.microsoft.com/library/bb645807\(v=office.15\)) プロパティを使用して Contacts\\Key Contacts フォルダーのフォルダー パスを取得します。 次に、[FolderPath](https://msdn.microsoft.com/library/bb647409\(v=office.15\)) プロパティを引数として使用して、GetFolder メソッドを呼び出します。 GetFolder がフォルダーを返すと、Key Contacts が見つかったことを示すメッセージが表示されます。 GetFolder メソッドはフォルダーへのパスを取得して、適切な [Folder](https://msdn.microsoft.com/library/bb645774\(v=office.15\)) オブジェクトを返します。 この処理は、まず **FolderPath** プロパティを string 配列に分割し、次にその配列を使用して **FolderPath** プロパティの先頭から始まる適切な **Folder** オブジェクトを検出することによって実行されます。 指定されたフォルダーが見つからない場合、GetFolder は NULL 参照を返します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

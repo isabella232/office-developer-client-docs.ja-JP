@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 1fd848c7-038e-4e2f-8997-c8509b31df79
-description: このセクションでは、Outlook によって使用可能になるイベントのディスパッチ識別子について説明します。
+description: このセクションでは、使用できるイベントのディスパッチOutlook説明します。
 ms.openlocfilehash: 31843a2eb8f91eabdc0dbf54a269270eb172baa7
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -16,21 +16,21 @@ ms.locfileid: "32316878"
 ---
 # <a name="available-events-and-their-dispids-outlook-exported-apis"></a>使用可能なイベントの dispid (Outlook エクスポート Api)
 
-このセクションでは、Outlook によって使用可能になるイベントのディスパッチ識別子について説明します。
+このセクションでは、使用できるイベントのディスパッチOutlook説明します。
   
-Outlook では、次のディスパッチ識別子 (dispid) が公開されており、C++ アドインは、 [IDispatch:: Invoke](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke)関数から対応するイベントをリッスンし、処理することができます。 
+Outlook、次のディスパッチ識別子 (dispids) を公開して、C++ アドインが[IDispatch::Invoke](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke)関数の対応するイベントをリッスンして処理できます。 
   
-|**定数**|**イベントの Dispid**|**説明**|**パラメーター**|**解説**|
+|**定数**|**イベントの Dispid**|**説明**|**パラメーター**|**注釈**|
 |:-----|:-----|:-----|:-----|:-----|
-|**dispidbeforeprint** <br/> |0xFC8E  <br/> |**IDispatch:: Invoke**関数から印刷操作の前に発生するアプリケーションレベルのイベントを処理するために使用されます。  <br/> | 2つの無名パラメーターがあります。  <br/>  最初のパラメーターの型は、* * VT_BOOL です。|VT_BREF * *。 イベントを取り消すには、このパラメーターで**VARIANT_TRUE**を返します。  <br/>  2番目のパラメーターは使用されないため、無視する必要があります。  <br/> |この dispid は、Outlook 2010 以降で利用可能です。  <br/> |
-|**dispidEventReadComplete** <br/> |0xfc8f  <br/> |Outlook がアイテムのプロパティの読み取りを完了したときに発生する**IDispatch:: Invoke**関数からのアイテムレベルのイベントを処理するために使用されます。  <br/> |VT_BOOL 型のパラメーターは__ 1 つだけです。|VT_BREF * *。 読み取り操作を取り消すには、このパラメーターで**VARIANT_TRUE**を返します。  <br/> |この dispid は、Outlook 2010 以降で利用可能です。  <br/> このイベントは、Exchange クライアント拡張機能 (ECE) イベントの**iexchextmessageevents:: onreadcomplete**、および Outlook 2013 以降のオブジェクトモデルに追加された**readcomplete**イベントに対応しています。  <br/> |
+|**dispidBeforePrint** <br/> |0xFC8E  <br/> |印刷操作の前に発生する **IDispatch::Invoke** 関数からアプリケーション レベルのイベントを処理するために使用します。  <br/> | 2 つの名前のないパラメーターがあります。  <br/>  最初のパラメーターは型 **VT_BOOL|VT_BREF**。 イベント **VARIANT_TRUE** を取り消す場合は、このパラメーターの値を返します。  <br/>  2 番目のパラメーターは使用されないので、無視する必要があります。  <br/> |この dispid は、2010 年Outlook使用できます。  <br/> |
+|**dispidEventReadComplete** <br/> |0xFC8F  <br/> |アイテムのプロパティの読み取りが完了した場合に発生する **IDispatch::Invoke** 関数Outlookを処理するために使用されます。  <br/> |**VT_BOOL の型の  _Cancel_ パラメーターは 1 つVT_BOOL|VT_BREF**。 この **パラメーター VARIANT_TRUE** 値を返して、読み取り操作を取り消します。  <br/> |この dispid は、2010 年Outlook使用できます。  <br/> このイベントは、Exchange クライアント拡張機能 (ECE) イベント **IExchExtMessageEvents::OnReadComplete** に対応し、Outlook 2013 以降にオブジェクト モデルに追加された **ReadComplete** イベントにも対応します。  <br/> |
    
-dispid を使用してイベントをリッスンして処理する方法の例については`CAppEventListener::Invoke` 、「 [MFC c++ 2003 .net での outlook 2002/XP イベントシンクの実装](https://www.codeproject.com/Articles/4230/Implementing-Outlook-2002-XP-Event-Sinks-in-MFC-C)」で説明されている C++ outlook ソリューションの関数を参照してください。
+dispid を使用してイベントをリッスンして処理する方法の例については `CAppEventListener::Invoke` [、「MFC C++ 2003 .NET での Outlook 2002/XP](https://www.codeproject.com/Articles/4230/Implementing-Outlook-2002-XP-Event-Sinks-in-MFC-C)イベント シンクの実装」で説明されている C++ Outlook ソリューションの関数を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
 - [Outlook でエクスポートされている API](outlook-exported-apis.md)
 - [(Outlook エクスポート Api) 定数](constants-outlook-exported-apis.md)
 - [Outlook によりエクスポートされる API について](about-apis-exported-by-outlook.md)
-- [MFC C++ 2003 .net での Outlook 2002/XP イベントシンクの実装](https://www.codeproject.com/Articles/4230/Implementing-Outlook-2002-XP-Event-Sinks-in-MFC-C)
+- [MFC C++ 2003 Outlook 2002/XP イベント シンクの実装](https://www.codeproject.com/Articles/4230/Implementing-Outlook-2002-XP-Event-Sinks-in-MFC-C)
 
