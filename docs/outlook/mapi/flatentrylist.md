@@ -19,16 +19,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33413858"
 ---
-# <a name="flatentrylist"></a><span data-ttu-id="6ec3e-103">FLATENTRYLIST</span><span class="sxs-lookup"><span data-stu-id="6ec3e-103">FLATENTRYLIST</span></span>
+# <a name="flatentrylist"></a><span data-ttu-id="328c7-103">FLATENTRYLIST</span><span class="sxs-lookup"><span data-stu-id="328c7-103">FLATENTRYLIST</span></span>
 
-<span data-ttu-id="6ec3e-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="6ec3e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="328c7-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="328c7-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="6ec3e-105">[FLATENTRY](flatentry.md)構造体の配列を格納します。</span><span class="sxs-lookup"><span data-stu-id="6ec3e-105">Contains an array of [FLATENTRY](flatentry.md) structures.</span></span> 
+<span data-ttu-id="328c7-105">[FLATENTRY 構造体の配列を含](flatentry.md)む。</span><span class="sxs-lookup"><span data-stu-id="328c7-105">Contains an array of [FLATENTRY](flatentry.md) structures.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="6ec3e-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="6ec3e-106">Header file:</span></span>  <br/> |<span data-ttu-id="6ec3e-107">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="6ec3e-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="6ec3e-108">関連するマクロ:</span><span class="sxs-lookup"><span data-stu-id="6ec3e-108">Related macros:</span></span>  <br/> |<span data-ttu-id="6ec3e-109">[CbFLATENTRYLIST](cbflatentrylist.md)、 [CbNewFLATENTRYLIST](cbnewflatentrylist.md)</span><span class="sxs-lookup"><span data-stu-id="6ec3e-109">[CbFLATENTRYLIST](cbflatentrylist.md), [CbNewFLATENTRYLIST](cbnewflatentrylist.md)</span></span> <br/> |
+|<span data-ttu-id="328c7-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="328c7-106">Header file:</span></span>  <br/> |<span data-ttu-id="328c7-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="328c7-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="328c7-108">関連するマクロ:</span><span class="sxs-lookup"><span data-stu-id="328c7-108">Related macros:</span></span>  <br/> |<span data-ttu-id="328c7-109">[CbFLATENTRYLIST](cbflatentrylist.md)、 [CbNewFLATENTRYLIST](cbnewflatentrylist.md)</span><span class="sxs-lookup"><span data-stu-id="328c7-109">[CbFLATENTRYLIST](cbflatentrylist.md), [CbNewFLATENTRYLIST](cbnewflatentrylist.md)</span></span> <br/> |
    
 ```cpp
 typedef struct
@@ -40,27 +40,27 @@ typedef struct
 
 ```
 
-## <a name="members"></a><span data-ttu-id="6ec3e-110">メンバー</span><span class="sxs-lookup"><span data-stu-id="6ec3e-110">Members</span></span>
+## <a name="members"></a><span data-ttu-id="328c7-110">Members</span><span class="sxs-lookup"><span data-stu-id="328c7-110">Members</span></span>
 
-<span data-ttu-id="6ec3e-111">**centries**</span><span class="sxs-lookup"><span data-stu-id="6ec3e-111">**cEntries**</span></span>
+<span data-ttu-id="328c7-111">**cEntries**</span><span class="sxs-lookup"><span data-stu-id="328c7-111">**cEntries**</span></span>
   
-> <span data-ttu-id="6ec3e-112">**abentries**メンバーによって記述された、配列内の**FLATENTRY**構造体の数。</span><span class="sxs-lookup"><span data-stu-id="6ec3e-112">Count of **FLATENTRY** structures in the array described by the **abEntries** member.</span></span> 
+> <span data-ttu-id="328c7-112">abEntries **メンバーによって** 記述された配列内の **FLATENTRY 構造体の** 数。</span><span class="sxs-lookup"><span data-stu-id="328c7-112">Count of **FLATENTRY** structures in the array described by the **abEntries** member.</span></span> 
     
-<span data-ttu-id="6ec3e-113">**cbentries**</span><span class="sxs-lookup"><span data-stu-id="6ec3e-113">**cbEntries**</span></span>
+<span data-ttu-id="328c7-113">**cbEntries**</span><span class="sxs-lookup"><span data-stu-id="328c7-113">**cbEntries**</span></span>
   
-> <span data-ttu-id="6ec3e-114">**abentries**で記述された配列内のバイト数。</span><span class="sxs-lookup"><span data-stu-id="6ec3e-114">Count of bytes in the array described by **abEntries**.</span></span> 
+> <span data-ttu-id="328c7-114">abEntries で記述された配列内 **のバイト数** です。</span><span class="sxs-lookup"><span data-stu-id="328c7-114">Count of bytes in the array described by **abEntries**.</span></span> 
     
-<span data-ttu-id="6ec3e-115">**abentries**</span><span class="sxs-lookup"><span data-stu-id="6ec3e-115">**abEntries**</span></span>
+<span data-ttu-id="328c7-115">**abEntries**</span><span class="sxs-lookup"><span data-stu-id="328c7-115">**abEntries**</span></span>
   
-> <span data-ttu-id="6ec3e-116">1つまたは複数の**FLATENTRY**構造を含むバイト配列。エンドツーエンドで配置されています。</span><span class="sxs-lookup"><span data-stu-id="6ec3e-116">Byte array that contains one or more **FLATENTRY** structures, arranged end to end.</span></span> 
+> <span data-ttu-id="328c7-116">端から端まで配置された 1 つ以上の **FLATENTRY** 構造体を含むバイト配列。</span><span class="sxs-lookup"><span data-stu-id="328c7-116">Byte array that contains one or more **FLATENTRY** structures, arranged end to end.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="6ec3e-117">注釈</span><span class="sxs-lookup"><span data-stu-id="6ec3e-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="328c7-117">注釈</span><span class="sxs-lookup"><span data-stu-id="328c7-117">Remarks</span></span>
 
-<span data-ttu-id="6ec3e-118">**abentries**配列では、各**FLATENTRY**構造は、自然に配置された境界に沿って配置されます。</span><span class="sxs-lookup"><span data-stu-id="6ec3e-118">In the **abEntries** array, each **FLATENTRY** structure is aligned on a naturally aligned boundary.</span></span> <span data-ttu-id="6ec3e-119">2つの**FLATENTRY**構造体間で自然な配置が行われるように、パディングとして追加のバイトが含まれています。</span><span class="sxs-lookup"><span data-stu-id="6ec3e-119">Extra bytes are included as padding to make sure natural alignment between any two **FLATENTRY** structures.</span></span> <span data-ttu-id="6ec3e-120">**abentries**メンバーのオフセットは8であるため、配列内の最初の**FLATENTRY**構造体は常に正確に調整されます。</span><span class="sxs-lookup"><span data-stu-id="6ec3e-120">The first **FLATENTRY** structure in the array is always aligned correctly because the offset of the **abEntries** member is 8.</span></span> <span data-ttu-id="6ec3e-121">次の構造体のオフセットを計算するには、最初のエントリのサイズを、次の4つの倍数まで切り上げて使用します。</span><span class="sxs-lookup"><span data-stu-id="6ec3e-121">To compute the offset of the next structure, use the size of the first entry rounded up to the next multiple of 4.</span></span> <span data-ttu-id="6ec3e-122">[CbFLATENTRY](cbflatentry.md)マクロを使用して、 **FLATENTRY**構造体のサイズを計算します。</span><span class="sxs-lookup"><span data-stu-id="6ec3e-122">Use the [CbFLATENTRY](cbflatentry.md) macro to compute the size of a **FLATENTRY** structure.</span></span> 
+<span data-ttu-id="328c7-118">**abEntries 配列では**、**各 FLATENTRY** 構造体は自然に整列された境界に配置されます。</span><span class="sxs-lookup"><span data-stu-id="328c7-118">In the **abEntries** array, each **FLATENTRY** structure is aligned on a naturally aligned boundary.</span></span> <span data-ttu-id="328c7-119">余分なバイトは、2 つの FLATENTRY 構造体間の自然な配置を確実に行う埋 **め込みとして含** まれます。</span><span class="sxs-lookup"><span data-stu-id="328c7-119">Extra bytes are included as padding to make sure natural alignment between any two **FLATENTRY** structures.</span></span> <span data-ttu-id="328c7-120">配列内 **の最初の FLATENTRY** 構造体は **、abEntries** メンバーのオフセットが 8 なので、常に正しく配置されます。</span><span class="sxs-lookup"><span data-stu-id="328c7-120">The first **FLATENTRY** structure in the array is always aligned correctly because the offset of the **abEntries** member is 8.</span></span> <span data-ttu-id="328c7-121">次の構造体のオフセットを計算するには、4 の次の倍数に切り上げ、最初のエントリのサイズを使用します。</span><span class="sxs-lookup"><span data-stu-id="328c7-121">To compute the offset of the next structure, use the size of the first entry rounded up to the next multiple of 4.</span></span> <span data-ttu-id="328c7-122">[CBFLATENTRY マクロを使用](cbflatentry.md)して **FLATENTRY 構造体のサイズを計算** します。</span><span class="sxs-lookup"><span data-stu-id="328c7-122">Use the [CbFLATENTRY](cbflatentry.md) macro to compute the size of a **FLATENTRY** structure.</span></span> 
   
-<span data-ttu-id="6ec3e-123">たとえば、2番目の**FLATENTRY**構造体は、最初のエントリのオフセットと、次の4バイトに丸められた最初のエントリの長さで構成されるオフセットから始まります。</span><span class="sxs-lookup"><span data-stu-id="6ec3e-123">For example, the second **FLATENTRY** structure starts at an offset that consists of the offset of the first entry plus the length of the first entry rounded to the next four bytes.</span></span> <span data-ttu-id="6ec3e-124">最初のエントリの長さは、 **cb**メンバーの長さに**abentry**メンバーの長さを加えたものです。</span><span class="sxs-lookup"><span data-stu-id="6ec3e-124">The length of the first entry is the length of its **cb** member plus the length of its **abEntry** member.</span></span> 
+<span data-ttu-id="328c7-123">たとえば、2 番目の **FLATENTRY** 構造体は、最初のエントリのオフセットと、次の 4 バイトに丸められた最初のエントリの長さで構成されるオフセットから始まります。</span><span class="sxs-lookup"><span data-stu-id="328c7-123">For example, the second **FLATENTRY** structure starts at an offset that consists of the offset of the first entry plus the length of the first entry rounded to the next four bytes.</span></span> <span data-ttu-id="328c7-124">最初のエントリの長さは **、cb** メンバーの長さと **abEntry** メンバーの長さです。</span><span class="sxs-lookup"><span data-stu-id="328c7-124">The length of the first entry is the length of its **cb** member plus the length of its **abEntry** member.</span></span> 
   
-<span data-ttu-id="6ec3e-125">次のコードサンプルは、 **FLATENTRYLIST**構造体でオフセットを計算する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="6ec3e-125">The following code sample indicates how to compute offsets in a **FLATENTRYLIST** structure.</span></span> <span data-ttu-id="6ec3e-126">_lpFlatEntry_はリスト内の最初の構造体へのポインターであると仮定します。</span><span class="sxs-lookup"><span data-stu-id="6ec3e-126">Assume that  _lpFlatEntry_ is a pointer to the first structure in the list.</span></span> 
+<span data-ttu-id="328c7-125">次のコード サンプルは **、FLATENTRYLIST 構造体のオフセットを計算する方法を示** しています。</span><span class="sxs-lookup"><span data-stu-id="328c7-125">The following code sample indicates how to compute offsets in a **FLATENTRYLIST** structure.</span></span> <span data-ttu-id="328c7-126">_lpFlatEntry は、_ リスト内の最初の構造体へのポインターと仮定します。</span><span class="sxs-lookup"><span data-stu-id="328c7-126">Assume that  _lpFlatEntry_ is a pointer to the first structure in the list.</span></span> 
   
 ```cpp
 (offsetof(lpFlatEntry->ab) // for example, 4
@@ -68,9 +68,9 @@ typedef struct
 + 4) & ~3 // round to next 4 byte boundary
 ```
 
-## <a name="see-also"></a><span data-ttu-id="6ec3e-127">関連項目</span><span class="sxs-lookup"><span data-stu-id="6ec3e-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="328c7-127">関連項目</span><span class="sxs-lookup"><span data-stu-id="328c7-127">See also</span></span>
 
-- [<span data-ttu-id="6ec3e-128">FLATENTRY</span><span class="sxs-lookup"><span data-stu-id="6ec3e-128">FLATENTRY</span></span>](flatentry.md)
-- [<span data-ttu-id="6ec3e-129">PidTagReplyRecipientEntries 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="6ec3e-129">PidTagReplyRecipientEntries Canonical Property</span></span>](pidtagreplyrecipiententries-canonical-property.md)
-- [<span data-ttu-id="6ec3e-130">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="6ec3e-130">MAPI Structures</span></span>](mapi-structures.md)
+- [<span data-ttu-id="328c7-128">FLATENTRY</span><span class="sxs-lookup"><span data-stu-id="328c7-128">FLATENTRY</span></span>](flatentry.md)
+- [<span data-ttu-id="328c7-129">PidTagReplyRecipientEntries 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="328c7-129">PidTagReplyRecipientEntries Canonical Property</span></span>](pidtagreplyrecipiententries-canonical-property.md)
+- [<span data-ttu-id="328c7-130">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="328c7-130">MAPI Structures</span></span>](mapi-structures.md)
 

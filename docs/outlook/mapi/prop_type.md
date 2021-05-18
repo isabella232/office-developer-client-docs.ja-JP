@@ -19,41 +19,41 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33412836"
 ---
-# <a name="proptype"></a><span data-ttu-id="8f34d-103">PROP_TYPE</span><span class="sxs-lookup"><span data-stu-id="8f34d-103">PROP_TYPE</span></span>
+# <a name="prop_type"></a><span data-ttu-id="69b77-103">PROP_TYPE</span><span class="sxs-lookup"><span data-stu-id="69b77-103">PROP_TYPE</span></span>
 
   
   
-<span data-ttu-id="8f34d-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="8f34d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="69b77-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="69b77-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="8f34d-105">指定したプロパティタグのプロパティの種類を返します。</span><span class="sxs-lookup"><span data-stu-id="8f34d-105">Returns the property type of a specified property tag.</span></span>
+<span data-ttu-id="69b77-105">指定したプロパティ タグのプロパティの種類を返します。</span><span class="sxs-lookup"><span data-stu-id="69b77-105">Returns the property type of a specified property tag.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="8f34d-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="8f34d-106">Header file:</span></span>  <br/> |<span data-ttu-id="8f34d-107">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="8f34d-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="8f34d-108">関連する構造:</span><span class="sxs-lookup"><span data-stu-id="8f34d-108">Related structure:</span></span>  <br/> |[<span data-ttu-id="8f34d-109">SPropValue</span><span class="sxs-lookup"><span data-stu-id="8f34d-109">SPropValue</span></span>](spropvalue.md) <br/> |
+|<span data-ttu-id="69b77-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="69b77-106">Header file:</span></span>  <br/> |<span data-ttu-id="69b77-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="69b77-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="69b77-108">関連する構造:</span><span class="sxs-lookup"><span data-stu-id="69b77-108">Related structure:</span></span>  <br/> |[<span data-ttu-id="69b77-109">SPropValue</span><span class="sxs-lookup"><span data-stu-id="69b77-109">SPropValue</span></span>](spropvalue.md) <br/> |
    
 ```cpp
 PROP_TYPE (ulPropTag)
 ```
 
-## <a name="parameters"></a><span data-ttu-id="8f34d-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="8f34d-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="69b77-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="69b77-110">Parameters</span></span>
 
- <span data-ttu-id="8f34d-111">_ulPropTag_</span><span class="sxs-lookup"><span data-stu-id="8f34d-111">_ulPropTag_</span></span>
+ <span data-ttu-id="69b77-111">_ulPropTag_</span><span class="sxs-lookup"><span data-stu-id="69b77-111">_ulPropTag_</span></span>
   
-> <span data-ttu-id="8f34d-112">返されるプロパティの型を含む property タグ。</span><span class="sxs-lookup"><span data-stu-id="8f34d-112">Property tag that contains the property type to be returned.</span></span>
+> <span data-ttu-id="69b77-112">返されるプロパティの種類を含むプロパティ タグ。</span><span class="sxs-lookup"><span data-stu-id="69b77-112">Property tag that contains the property type to be returned.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="8f34d-113">注釈</span><span class="sxs-lookup"><span data-stu-id="8f34d-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="69b77-113">注釈</span><span class="sxs-lookup"><span data-stu-id="69b77-113">Remarks</span></span>
 
-<span data-ttu-id="8f34d-114">**PROP_TYPE**マクロを使用して、プロパティの種類を調べることができます。</span><span class="sxs-lookup"><span data-stu-id="8f34d-114">The **PROP_TYPE** macro can be used to determine the type of a property.</span></span> <span data-ttu-id="8f34d-115">たとえば、PROP_TYPE (**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))) を呼び出すと、値 PT_BINARY が返されます。</span><span class="sxs-lookup"><span data-stu-id="8f34d-115">For example, calling PROP_TYPE (**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))) results in the value PT_BINARY being returned.</span></span>
+<span data-ttu-id="69b77-114">プロパティ **PROP_TYPE** マクロを使用して、プロパティの種類を特定できます。</span><span class="sxs-lookup"><span data-stu-id="69b77-114">The **PROP_TYPE** macro can be used to determine the type of a property.</span></span> <span data-ttu-id="69b77-115">たとえば、呼び出PROP_TYPE **(** PR_ENTRYID ([PidTagEntryId](pidtagentryid-canonical-property.md))) は、返される値PT_BINARYします。</span><span class="sxs-lookup"><span data-stu-id="69b77-115">For example, calling PROP_TYPE (**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))) results in the value PT_BINARY being returned.</span></span>
   
-<span data-ttu-id="8f34d-116">すべてのプロパティタグには、下位ワード (ビット 0 ~ 15) のプロパティの種類と、上位ワード (ビット 16 ~ 31) のプロパティの識別子が含まれています。</span><span class="sxs-lookup"><span data-stu-id="8f34d-116">Every property tag contains the property type in the low-order word (bits 0 through 15) and the property identifier in the high-order word (bits 16 through 31).</span></span> <span data-ttu-id="8f34d-117">**PROP_TYPE**マクロは、プロパティの型を抽出し、それをビット 0 ~ 15 の整数に設定して返します。</span><span class="sxs-lookup"><span data-stu-id="8f34d-117">The **PROP_TYPE** macro extracts the property type and puts it in bits 0 through 15 of the integer to be returned.</span></span> <span data-ttu-id="8f34d-118">戻り値の残りのビットは0に設定されます。</span><span class="sxs-lookup"><span data-stu-id="8f34d-118">The remaining bits of the return value are set to zeros.</span></span> 
+<span data-ttu-id="69b77-116">すべてのプロパティ タグには、低次ワード (ビット 0 ~ 15) のプロパティ型と、高次ワード (ビット 16 ~ 31) のプロパティ識別子が含まれる。</span><span class="sxs-lookup"><span data-stu-id="69b77-116">Every property tag contains the property type in the low-order word (bits 0 through 15) and the property identifier in the high-order word (bits 16 through 31).</span></span> <span data-ttu-id="69b77-117">この **PROP_TYPE** は、プロパティの種類を抽出し、返される整数のビット 0 ~ 15 に格納します。</span><span class="sxs-lookup"><span data-stu-id="69b77-117">The **PROP_TYPE** macro extracts the property type and puts it in bits 0 through 15 of the integer to be returned.</span></span> <span data-ttu-id="69b77-118">戻り値の残りのビットは 0 に設定されます。</span><span class="sxs-lookup"><span data-stu-id="69b77-118">The remaining bits of the return value are set to zeros.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="8f34d-119">関連項目</span><span class="sxs-lookup"><span data-stu-id="8f34d-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="69b77-119">関連項目</span><span class="sxs-lookup"><span data-stu-id="69b77-119">See also</span></span>
 
 
 
-[<span data-ttu-id="8f34d-120">SPropValue</span><span class="sxs-lookup"><span data-stu-id="8f34d-120">SPropValue</span></span>](spropvalue.md)
+[<span data-ttu-id="69b77-120">SPropValue</span><span class="sxs-lookup"><span data-stu-id="69b77-120">SPropValue</span></span>](spropvalue.md)
 
 
-[<span data-ttu-id="8f34d-121">構造に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="8f34d-121">Macros Related to Structures</span></span>](macros-related-to-structures.md)
+[<span data-ttu-id="69b77-121">構造に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="69b77-121">Macros Related to Structures</span></span>](macros-related-to-structures.md)
 

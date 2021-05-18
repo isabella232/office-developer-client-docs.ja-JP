@@ -16,30 +16,30 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33414019"
 ---
-# <a name="pos-cell-character-section"></a><span data-ttu-id="d384f-103">[Pos] セル ([Character] セクション)</span><span class="sxs-lookup"><span data-stu-id="d384f-103">Pos Cell (Character Section)</span></span>
+# <a name="pos-cell-character-section"></a><span data-ttu-id="f1b1e-103">[Pos] セル ([Character] セクション)</span><span class="sxs-lookup"><span data-stu-id="f1b1e-103">Pos Cell (Character Section)</span></span>
 
-<span data-ttu-id="d384f-104">基線に対する、図形のテキストの位置を指定します。</span><span class="sxs-lookup"><span data-stu-id="d384f-104">Determines the position of the shape's text relative to the baseline.</span></span>
+<span data-ttu-id="f1b1e-104">基線に対する、図形のテキストの位置を指定します。</span><span class="sxs-lookup"><span data-stu-id="f1b1e-104">Determines the position of the shape's text relative to the baseline.</span></span>
   
-|<span data-ttu-id="d384f-105">**値**</span><span class="sxs-lookup"><span data-stu-id="d384f-105">**Value**</span></span>|<span data-ttu-id="d384f-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="d384f-106">**Description**</span></span>|<span data-ttu-id="d384f-107">**オートメーション定数**</span><span class="sxs-lookup"><span data-stu-id="d384f-107">**Automation constant**</span></span>|
+|<span data-ttu-id="f1b1e-105">**値**</span><span class="sxs-lookup"><span data-stu-id="f1b1e-105">**Value**</span></span>|<span data-ttu-id="f1b1e-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="f1b1e-106">**Description**</span></span>|<span data-ttu-id="f1b1e-107">**オートメーション定数**</span><span class="sxs-lookup"><span data-stu-id="f1b1e-107">**Automation constant**</span></span>|
 |:-----|:-----|:-----|
-| <span data-ttu-id="d384f-108">.0</span><span class="sxs-lookup"><span data-stu-id="d384f-108">0</span></span>  <br/> | <span data-ttu-id="d384f-109">標準の位置</span><span class="sxs-lookup"><span data-stu-id="d384f-109">Normal position</span></span>  <br/> |<span data-ttu-id="d384f-110">**visPosNormal**</span><span class="sxs-lookup"><span data-stu-id="d384f-110">**visPosNormal**</span></span> <br/> |
-| <span data-ttu-id="d384f-111">1 </span><span class="sxs-lookup"><span data-stu-id="d384f-111">1</span></span>  <br/> | <span data-ttu-id="d384f-112">付</span><span class="sxs-lookup"><span data-stu-id="d384f-112">Superscript</span></span>  <br/> |<span data-ttu-id="d384f-113">**visPosSuper**</span><span class="sxs-lookup"><span data-stu-id="d384f-113">**visPosSuper**</span></span> <br/> |
-| <span data-ttu-id="d384f-114">2 </span><span class="sxs-lookup"><span data-stu-id="d384f-114">2</span></span>  <br/> | <span data-ttu-id="d384f-115">13</span><span class="sxs-lookup"><span data-stu-id="d384f-115">Subscript</span></span>  <br/> |<span data-ttu-id="d384f-116">**visPosSub**</span><span class="sxs-lookup"><span data-stu-id="d384f-116">**visPosSub**</span></span> <br/> |
+| <span data-ttu-id="f1b1e-108">0</span><span class="sxs-lookup"><span data-stu-id="f1b1e-108">0</span></span>  <br/> | <span data-ttu-id="f1b1e-109">標準の位置</span><span class="sxs-lookup"><span data-stu-id="f1b1e-109">Normal position</span></span>  <br/> |<span data-ttu-id="f1b1e-110">**visPosNormal**</span><span class="sxs-lookup"><span data-stu-id="f1b1e-110">**visPosNormal**</span></span> <br/> |
+| <span data-ttu-id="f1b1e-111">1</span><span class="sxs-lookup"><span data-stu-id="f1b1e-111">1</span></span>  <br/> | <span data-ttu-id="f1b1e-112">Superscript</span><span class="sxs-lookup"><span data-stu-id="f1b1e-112">Superscript</span></span>  <br/> |<span data-ttu-id="f1b1e-113">**visPosSuper**</span><span class="sxs-lookup"><span data-stu-id="f1b1e-113">**visPosSuper**</span></span> <br/> |
+| <span data-ttu-id="f1b1e-114">2</span><span class="sxs-lookup"><span data-stu-id="f1b1e-114">2</span></span>  <br/> | <span data-ttu-id="f1b1e-115">Subscript</span><span class="sxs-lookup"><span data-stu-id="f1b1e-115">Subscript</span></span>  <br/> |<span data-ttu-id="f1b1e-116">**visPosSub**</span><span class="sxs-lookup"><span data-stu-id="f1b1e-116">**visPosSub**</span></span> <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="d384f-117">注釈</span><span class="sxs-lookup"><span data-stu-id="d384f-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f1b1e-117">注釈</span><span class="sxs-lookup"><span data-stu-id="f1b1e-117">Remarks</span></span>
 
-<span data-ttu-id="d384f-118">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Pos] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="d384f-118">To get a reference to the Pos cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="f1b1e-118">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Pos] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="f1b1e-118">To get a reference to the Pos cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="d384f-119">セル名:</span><span class="sxs-lookup"><span data-stu-id="d384f-119">Cell name:</span></span>  <br/> | <span data-ttu-id="d384f-120">*i* = <1>、 \*\* 2、3......</span><span class="sxs-lookup"><span data-stu-id="d384f-120">Char.Pos[  *i*  ]            where  *i*  = <1>, 2, 3...</span></span>  <br/> |
+| <span data-ttu-id="f1b1e-119">セル名:</span><span class="sxs-lookup"><span data-stu-id="f1b1e-119">Cell name:</span></span>  <br/> | <span data-ttu-id="f1b1e-120">Char.Pos[  *i*  ] ここで  *、i*  = <1>、2、3...</span><span class="sxs-lookup"><span data-stu-id="f1b1e-120">Char.Pos[  *i*  ]            where  *i*  = <1>, 2, 3...</span></span>  <br/> |
    
-<span data-ttu-id="d384f-121">プログラムから、インデックスによって [Pos] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="d384f-121">To get a reference to the Pos cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="f1b1e-121">プログラムから、インデックスによって [Pos] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="f1b1e-121">To get a reference to the Pos cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="d384f-122">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="d384f-122">Section index:</span></span>  <br/> |<span data-ttu-id="d384f-123">**visSectionCharacter**</span><span class="sxs-lookup"><span data-stu-id="d384f-123">**visSectionCharacter**</span></span> <br/> |
-| <span data-ttu-id="d384f-124">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="d384f-124">Row index:</span></span>  <br/> |<span data-ttu-id="d384f-125">**visRowCharacter** +  *i* = \*\* 0、1、2...</span><span class="sxs-lookup"><span data-stu-id="d384f-125">**visRowCharacter** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
-| <span data-ttu-id="d384f-126">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="d384f-126">Cell index:</span></span>  <br/> |<span data-ttu-id="d384f-127">**visCharacterPos**</span><span class="sxs-lookup"><span data-stu-id="d384f-127">**visCharacterPos**</span></span> <br/> |
+| <span data-ttu-id="f1b1e-122">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="f1b1e-122">Section index:</span></span>  <br/> |<span data-ttu-id="f1b1e-123">**visSectionCharacter**</span><span class="sxs-lookup"><span data-stu-id="f1b1e-123">**visSectionCharacter**</span></span> <br/> |
+| <span data-ttu-id="f1b1e-124">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="f1b1e-124">Row index:</span></span>  <br/> |<span data-ttu-id="f1b1e-125">**visRowCharacter**  +  *i* *=* 0, 1, 2...</span><span class="sxs-lookup"><span data-stu-id="f1b1e-125">**visRowCharacter** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
+| <span data-ttu-id="f1b1e-126">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="f1b1e-126">Cell index:</span></span>  <br/> |<span data-ttu-id="f1b1e-127">**visCharacterPos**</span><span class="sxs-lookup"><span data-stu-id="f1b1e-127">**visCharacterPos**</span></span> <br/> |
    
 

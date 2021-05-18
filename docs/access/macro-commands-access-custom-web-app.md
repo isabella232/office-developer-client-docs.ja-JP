@@ -1,5 +1,5 @@
 ---
-title: マクロコマンド (Access カスタム web アプリ)
+title: マクロ コマンド (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,17 +14,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411688"
 ---
-# <a name="macro-commands-access-custom-web-app"></a><span data-ttu-id="822b9-102">マクロコマンド (Access カスタム web アプリ)</span><span class="sxs-lookup"><span data-stu-id="822b9-102">Macro commands (Access custom web app)</span></span>
+# <a name="macro-commands-access-custom-web-app"></a><span data-ttu-id="5f41a-102">マクロ コマンド (Access カスタム Web アプリ)</span><span class="sxs-lookup"><span data-stu-id="5f41a-102">Macro commands (Access custom web app)</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="822b9-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="822b9-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="5f41a-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="5f41a-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
-## <a name="in-this-section"></a><span data-ttu-id="822b9-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="822b9-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="5f41a-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="5f41a-105">In this section</span></span>
 
-- [<span data-ttu-id="822b9-106">RunDataMacro マクロアクション (Access カスタム web アプリ)</span><span class="sxs-lookup"><span data-stu-id="822b9-106">RunDataMacro Macro Action (Access custom web app)</span></span>](rundatamacro-macro-action-access-custom-web-app.md)
+- [<span data-ttu-id="5f41a-106">RunDataMacro マクロ アクション (Access カスタム Web アプリ)</span><span class="sxs-lookup"><span data-stu-id="5f41a-106">RunDataMacro Macro Action (Access custom web app)</span></span>](rundatamacro-macro-action-access-custom-web-app.md)
     
-- [<span data-ttu-id="822b9-107">RunMacro マクロアクション (Access カスタム web アプリ)</span><span class="sxs-lookup"><span data-stu-id="822b9-107">RunMacro Macro Action (Access custom web app)</span></span>](runmacro-macro-action-access-custom-web-app.md)
+- [<span data-ttu-id="5f41a-107">RunMacro マクロ アクション (Access カスタム Web アプリ)</span><span class="sxs-lookup"><span data-stu-id="5f41a-107">RunMacro Macro Action (Access custom web app)</span></span>](runmacro-macro-action-access-custom-web-app.md)
     
-- [<span data-ttu-id="822b9-108">setvariable マクロアクション (Access カスタム web アプリ)</span><span class="sxs-lookup"><span data-stu-id="822b9-108">SetVariable Macro Action (Access custom web app)</span></span>](setvariable-macro-action-access-custom-web-app.md)
+- [<span data-ttu-id="5f41a-108">SetVariable マクロ アクション (Access カスタム Web アプリ)</span><span class="sxs-lookup"><span data-stu-id="5f41a-108">SetVariable Macro Action (Access custom web app)</span></span>](setvariable-macro-action-access-custom-web-app.md)
     
 

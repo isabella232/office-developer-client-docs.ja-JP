@@ -16,31 +16,31 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33412430"
 ---
-# <a name="strikethru-cell-character-section"></a><span data-ttu-id="44c15-103">[Strikethru] セル ([Character] セクション)</span><span class="sxs-lookup"><span data-stu-id="44c15-103">Strikethru Cell (Character Section)</span></span>
+# <a name="strikethru-cell-character-section"></a><span data-ttu-id="c3657-103">[Strikethru] セル ([Character] セクション)</span><span class="sxs-lookup"><span data-stu-id="c3657-103">Strikethru Cell (Character Section)</span></span>
 
-<span data-ttu-id="44c15-104">テキストを取り消し線として書式設定するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="44c15-104">Determines whether the text is formatted as strikethrough.</span></span>
+<span data-ttu-id="c3657-104">テキストを取り消し線として書式設定するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="c3657-104">Determines whether the text is formatted as strikethrough.</span></span>
   
-|<span data-ttu-id="44c15-105">**値**</span><span class="sxs-lookup"><span data-stu-id="44c15-105">**Value**</span></span>|<span data-ttu-id="44c15-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="44c15-106">**Description**</span></span>|
+|<span data-ttu-id="c3657-105">**値**</span><span class="sxs-lookup"><span data-stu-id="c3657-105">**Value**</span></span>|<span data-ttu-id="c3657-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="c3657-106">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="44c15-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="44c15-107">TRUE</span></span>  <br/> |<span data-ttu-id="44c15-108">テキストを取り消し線として書式設定します。</span><span class="sxs-lookup"><span data-stu-id="44c15-108">Text is formatted as strikethrough.</span></span>  <br/> |
-|<span data-ttu-id="44c15-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="44c15-109">FALSE</span></span>  <br/> |<span data-ttu-id="44c15-110">テキストを取り消し線として書式設定しません。</span><span class="sxs-lookup"><span data-stu-id="44c15-110">Text is not formatted as strikethrough.</span></span>  <br/> |
+|<span data-ttu-id="c3657-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="c3657-107">TRUE</span></span>  <br/> |<span data-ttu-id="c3657-108">テキストを取り消し線として書式設定します。</span><span class="sxs-lookup"><span data-stu-id="c3657-108">Text is formatted as strikethrough.</span></span>  <br/> |
+|<span data-ttu-id="c3657-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="c3657-109">FALSE</span></span>  <br/> |<span data-ttu-id="c3657-110">テキストを取り消し線として書式設定しません。</span><span class="sxs-lookup"><span data-stu-id="c3657-110">Text is not formatted as strikethrough.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="44c15-111">注釈</span><span class="sxs-lookup"><span data-stu-id="44c15-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c3657-111">注釈</span><span class="sxs-lookup"><span data-stu-id="c3657-111">Remarks</span></span>
 
-<span data-ttu-id="44c15-112">このセルの値は、[**テキスト**] ダイアログ ボックスを使用して設定することもできます (このダイアログ ボックスを開くには、[**ホーム**] タブで [**フォント**] 矢印をクリックします)。</span><span class="sxs-lookup"><span data-stu-id="44c15-112">You can also set the value of this cell by using the **Text** dialog box (on the **Home** tab, click the **Font** arrow).</span></span> 
+<span data-ttu-id="c3657-112">このセルの値は、[**テキスト**] ダイアログ ボックスを使用して設定することもできます (このダイアログ ボックスを開くには、[**ホーム**] タブで [**フォント**] 矢印をクリックします)。</span><span class="sxs-lookup"><span data-stu-id="c3657-112">You can also set the value of this cell by using the **Text** dialog box (on the **Home** tab, click the **Font** arrow).</span></span> 
   
-<span data-ttu-id="44c15-113">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Strikethru] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="44c15-113">To get a reference to the Strikethru cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="c3657-113">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Strikethru] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="c3657-113">To get a reference to the Strikethru cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="44c15-114">セル名:</span><span class="sxs-lookup"><span data-stu-id="44c15-114">Cell name:</span></span>  <br/> |<span data-ttu-id="44c15-115">[strikethru] [ *i* ] *i* = <1>、2、3...</span><span class="sxs-lookup"><span data-stu-id="44c15-115">Char.Strikethru[ *i*  ] where  *i*  = <1>, 2, 3...</span></span>  <br/> |
+|<span data-ttu-id="c3657-114">セル名:</span><span class="sxs-lookup"><span data-stu-id="c3657-114">Cell name:</span></span>  <br/> |<span data-ttu-id="c3657-115">Char.Strikethru[ i ]*ここで\*\*、i* = <1>、2、3...</span><span class="sxs-lookup"><span data-stu-id="c3657-115">Char.Strikethru[ *i*  ] where  *i*  = <1>, 2, 3...</span></span>  <br/> |
    
-<span data-ttu-id="44c15-116">プログラムから、インデックスによって [Strikethru] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="44c15-116">To get a reference to the Strikethru cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="c3657-116">プログラムから、インデックスによって [Strikethru] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="c3657-116">To get a reference to the Strikethru cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="44c15-117">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="44c15-117">Section index:</span></span>  <br/> |<span data-ttu-id="44c15-118">**visSectionCharacter**</span><span class="sxs-lookup"><span data-stu-id="44c15-118">**visSectionCharacter**</span></span> <br/> |
-|<span data-ttu-id="44c15-119">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="44c15-119">Row index:</span></span>  <br/> |<span data-ttu-id="44c15-120">**visRowCharacter** +  *i* = \*\* 0、1、2...</span><span class="sxs-lookup"><span data-stu-id="44c15-120">**visRowCharacter** +  *i*  where  *i*  = 0, 1, 2...</span></span>  <br/> |
-|<span data-ttu-id="44c15-121">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="44c15-121">Cell index:</span></span>  <br/> |<span data-ttu-id="44c15-122">**visCharacterStrikethru**</span><span class="sxs-lookup"><span data-stu-id="44c15-122">**visCharacterStrikethru**</span></span> <br/> |
+|<span data-ttu-id="c3657-117">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="c3657-117">Section index:</span></span>  <br/> |<span data-ttu-id="c3657-118">**visSectionCharacter**</span><span class="sxs-lookup"><span data-stu-id="c3657-118">**visSectionCharacter**</span></span> <br/> |
+|<span data-ttu-id="c3657-119">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="c3657-119">Row index:</span></span>  <br/> |<span data-ttu-id="c3657-120">**visRowCharacter**  +  *i* *=* 0, 1, 2...</span><span class="sxs-lookup"><span data-stu-id="c3657-120">**visRowCharacter** +  *i*  where  *i*  = 0, 1, 2...</span></span>  <br/> |
+|<span data-ttu-id="c3657-121">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="c3657-121">Cell index:</span></span>  <br/> |<span data-ttu-id="c3657-122">**visCharacterStrikethru**</span><span class="sxs-lookup"><span data-stu-id="c3657-122">**visCharacterStrikethru**</span></span> <br/> |
    
 

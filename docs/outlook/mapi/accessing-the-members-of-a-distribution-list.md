@@ -15,20 +15,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33412388"
 ---
-# <a name="accessing-the-members-of-a-distribution-list"></a><span data-ttu-id="db7bd-103">配布リストのメンバーへのアクセス</span><span class="sxs-lookup"><span data-stu-id="db7bd-103">Accessing the Members of a Distribution List</span></span>
+# <a name="accessing-the-members-of-a-distribution-list"></a><span data-ttu-id="76a25-103">配布リストのメンバーへのアクセス</span><span class="sxs-lookup"><span data-stu-id="76a25-103">Accessing the Members of a Distribution List</span></span>
 
   
   
-<span data-ttu-id="db7bd-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="db7bd-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="76a25-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="76a25-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
- <span data-ttu-id="db7bd-105">**配布リストのメンバーを取得するには**</span><span class="sxs-lookup"><span data-stu-id="db7bd-105">**To get the members of a distribution list**</span></span>
+ <span data-ttu-id="76a25-105">**配布リストのメンバーを取得するには**</span><span class="sxs-lookup"><span data-stu-id="76a25-105">**To get the members of a distribution list**</span></span>
   
-1. <span data-ttu-id="db7bd-106">**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))、 **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))、 **PR_DISPLAY_TYPE**など、取得するメンバーのプロパティを使用して、サイズが変更されたプロパティタグ配列を作成します ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="db7bd-106">Create a sized property tag array with the properties of the members you would like to retrieve, such as **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)), **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)), and **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)).</span></span>
+1. <span data-ttu-id="76a25-106">PR_ENTRYID ([PidTagEntryId)](pidtagentryid-canonical-property.md) **、PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) **、PR_DISPLAY_TYPE** ([PidTagDisplayType)](pidtagdisplaytype-canonical-property.md)など、取得するメンバーのプロパティを含むサイズのプロパティ タグ **配列を** 作成します。</span><span class="sxs-lookup"><span data-stu-id="76a25-106">Create a sized property tag array with the properties of the members you would like to retrieve, such as **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)), **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)), and **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)).</span></span>
     
-2. <span data-ttu-id="db7bd-107">[IAddrBook:: openentry](iaddrbook-openentry.md)を呼び出して、配布リストを開きます。</span><span class="sxs-lookup"><span data-stu-id="db7bd-107">Call [IAddrBook::OpenEntry](iaddrbook-openentry.md) to open the distribution list.</span></span> 
+2. <span data-ttu-id="76a25-107">[IAddrBook::OpenEntry を呼び出して](iaddrbook-openentry.md)配布リストを開きます。</span><span class="sxs-lookup"><span data-stu-id="76a25-107">Call [IAddrBook::OpenEntry](iaddrbook-openentry.md) to open the distribution list.</span></span> 
     
-3. <span data-ttu-id="db7bd-108">配布リストの**IABContainer:: getcontentstable**メソッドを呼び出して、そのコンテンツテーブルにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="db7bd-108">Call the distribution list's **IABContainer::GetContentsTable** method to access its contents table.</span></span> 
+3. <span data-ttu-id="76a25-108">配布リストの **IABContainer::GetContentsTable** メソッドを呼び出して、そのコンテンツ テーブルにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="76a25-108">Call the distribution list's **IABContainer::GetContentsTable** method to access its contents table.</span></span> 
     
-4. <span data-ttu-id="db7bd-109">[hrqueryallrows](hrqueryallrows.md)を呼び出して、配布リストのメンバーを表すすべてのテーブルの行を取得します。</span><span class="sxs-lookup"><span data-stu-id="db7bd-109">Call [HrQueryAllRows](hrqueryallrows.md) to retrieve all of the table's rows representing the members of the distribution list.</span></span> 
+4. <span data-ttu-id="76a25-109">[HrQueryAllRows を](hrqueryallrows.md)呼び出して、配布リストのメンバーを表すテーブルのすべての行を取得します。</span><span class="sxs-lookup"><span data-stu-id="76a25-109">Call [HrQueryAllRows](hrqueryallrows.md) to retrieve all of the table's rows representing the members of the distribution list.</span></span> 
     
 

@@ -16,13 +16,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33412003"
 ---
-# <a name="display-formulas-or-values-in-cells"></a><span data-ttu-id="776d3-102">セルの数式または値を表示する</span><span class="sxs-lookup"><span data-stu-id="776d3-102">Display Formulas or Values in Cells</span></span>
+# <a name="display-formulas-or-values-in-cells"></a><span data-ttu-id="abf92-102">セルの数式または値を表示する</span><span class="sxs-lookup"><span data-stu-id="abf92-102">Display Formulas or Values in Cells</span></span>
 
-1. <span data-ttu-id="776d3-103">[シェイプシート] ウィンドウをクリックしてアクティブにします。</span><span class="sxs-lookup"><span data-stu-id="776d3-103">Click in the ShapeSheet window to make it active.</span></span>
+1. <span data-ttu-id="abf92-103">[シェイプシート] ウィンドウをクリックしてアクティブにします。</span><span class="sxs-lookup"><span data-stu-id="abf92-103">Click in the ShapeSheet window to make it active.</span></span>
     
-2. <span data-ttu-id="776d3-104">数式を表示する場合は [**シェイプシート ツール**] タブの [**表示**] グループで [**数式**] を、値を表示する場合は [**値**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="776d3-104">On the **ShapeSheet Tools** tab, in the **View** group, click **Formulas** to view formulas, or click **Values** to view values.</span></span> 
+2. <span data-ttu-id="abf92-104">数式を表示する場合は [**シェイプシート ツール**] タブの [**表示**] グループで [**数式**] を、値を表示する場合は [**値**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="abf92-104">On the **ShapeSheet Tools** tab, in the **View** group, click **Formulas** to view formulas, or click **Values** to view values.</span></span> 
     
     > [!NOTE]
-    > <span data-ttu-id="776d3-105">または、[シェイプシート] ウィンドウを右クリックして、ショートカット メニューの [**数式**] または [**値**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="776d3-105">You can also right-click in the ShapeSheet window and then click **Formulas** or **Values** on the shortcut menu.</span></span> 
+    > <span data-ttu-id="abf92-105">または、[シェイプシート] ウィンドウを右クリックして、ショートカット メニューの [**数式**] または [**値**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="abf92-105">You can also right-click in the ShapeSheet window and then click **Formulas** or **Values** on the shortcut menu.</span></span> 
   
 

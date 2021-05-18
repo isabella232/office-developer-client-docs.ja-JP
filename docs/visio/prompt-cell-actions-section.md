@@ -16,12 +16,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33413466"
 ---
-# <a name="prompt-cell-actions-section"></a><span data-ttu-id="e4423-103">[Prompt] セル ([Actions] セクション)</span><span class="sxs-lookup"><span data-stu-id="e4423-103">Prompt Cell (Actions Section)</span></span>
+# <a name="prompt-cell-actions-section"></a><span data-ttu-id="78309-103">[Prompt] セル ([Actions] セクション)</span><span class="sxs-lookup"><span data-stu-id="78309-103">Prompt Cell (Actions Section)</span></span>
 
-<span data-ttu-id="e4423-104">Visio 2002 以降、このセルは使用されなくなりました。</span><span class="sxs-lookup"><span data-stu-id="e4423-104">Beginning with Visio 2002, this cell is no longer used.</span></span>
+<span data-ttu-id="78309-104">Visio 2002 以降、このセルは使用されなくなりました。</span><span class="sxs-lookup"><span data-stu-id="78309-104">Beginning with Visio 2002, this cell is no longer used.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="e4423-105">注釈</span><span class="sxs-lookup"><span data-stu-id="e4423-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="78309-105">注釈</span><span class="sxs-lookup"><span data-stu-id="78309-105">Remarks</span></span>
 
-<span data-ttu-id="e4423-106">旧バージョンの Visio では、このセルには、ショートカット コマンドを選択したときにステータス バーに表示される説明文を指定していました。</span><span class="sxs-lookup"><span data-stu-id="e4423-106">In earlier versions of Visio, this cell specified a descriptive prompt that appeared in the status bar when you selected the corresponding shortcut command.</span></span>
+<span data-ttu-id="78309-106">旧バージョンの Visio では、このセルには、ショートカット コマンドを選択したときにステータス バーに表示される説明文を指定していました。</span><span class="sxs-lookup"><span data-stu-id="78309-106">In earlier versions of Visio, this cell specified a descriptive prompt that appeared in the status bar when you selected the corresponding shortcut command.</span></span>
   
 

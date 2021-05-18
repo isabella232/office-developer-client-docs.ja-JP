@@ -1,5 +1,5 @@
 ---
-title: 文字列演算子 (Access カスタム web アプリ)
+title: 文字列演算子 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,13 +14,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411611"
 ---
-# <a name="string-operators-access-custom-web-app"></a><span data-ttu-id="b26cc-102">文字列演算子 (Access カスタム web アプリ)</span><span class="sxs-lookup"><span data-stu-id="b26cc-102">String Operators (Access custom web app)</span></span>
+# <a name="string-operators-access-custom-web-app"></a><span data-ttu-id="54649-102">文字列演算子 (Access カスタム Web アプリ)</span><span class="sxs-lookup"><span data-stu-id="54649-102">String Operators (Access custom web app)</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="b26cc-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="b26cc-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="54649-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="54649-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
-## <a name="in-this-section"></a><span data-ttu-id="b26cc-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="b26cc-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="54649-105">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="54649-105">In this section</span></span>
 
-- [<span data-ttu-id="b26cc-106">+ (文字列連結演算子) (Access カスタム web アプリ)</span><span class="sxs-lookup"><span data-stu-id="b26cc-106">+ (String Concatenation Operator) (Access custom web app)</span></span>](plusstring-concatenation-operatoraccess-custom-web-app.md)
+- [<span data-ttu-id="54649-106">+ (文字列連結演算子) (Access カスタム Web アプリ)</span><span class="sxs-lookup"><span data-stu-id="54649-106">+ (String Concatenation Operator) (Access custom web app)</span></span>](plusstring-concatenation-operatoraccess-custom-web-app.md)
     
 

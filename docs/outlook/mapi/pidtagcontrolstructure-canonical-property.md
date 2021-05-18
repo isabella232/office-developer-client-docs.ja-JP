@@ -19,55 +19,55 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33412948"
 ---
-# <a name="pidtagcontrolstructure-canonical-property"></a><span data-ttu-id="86069-103">PidTagControlStructure 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="86069-103">PidTagControlStructure Canonical Property</span></span>
+# <a name="pidtagcontrolstructure-canonical-property"></a><span data-ttu-id="03403-103">PidTagControlStructure 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="03403-103">PidTagControlStructure Canonical Property</span></span>
 
   
   
-<span data-ttu-id="86069-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="86069-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="03403-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="03403-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="86069-105">ダイアログボックスで使用されるコントロールの構造体へのポインターを格納します。</span><span class="sxs-lookup"><span data-stu-id="86069-105">Contains a pointer to a structure for a control used in a dialog box.</span></span> 
+<span data-ttu-id="03403-105">ダイアログ ボックスで使用されるコントロールの構造へのポインターを格納します。</span><span class="sxs-lookup"><span data-stu-id="03403-105">Contains a pointer to a structure for a control used in a dialog box.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="86069-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="86069-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="86069-107">PR_CONTROL_STRUCTURE</span><span class="sxs-lookup"><span data-stu-id="86069-107">PR_CONTROL_STRUCTURE</span></span>  <br/> |
-|<span data-ttu-id="86069-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="86069-108">Identifier:</span></span>  <br/> |<span data-ttu-id="86069-109">0x3f01</span><span class="sxs-lookup"><span data-stu-id="86069-109">0x3F01</span></span>  <br/> |
-|<span data-ttu-id="86069-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="86069-110">Data type:</span></span>  <br/> |<span data-ttu-id="86069-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="86069-111">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="86069-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="86069-112">Area:</span></span>  <br/> |<span data-ttu-id="86069-113">MAPI 表示テーブル</span><span class="sxs-lookup"><span data-stu-id="86069-113">MAPI display table</span></span>  <br/> |
+|<span data-ttu-id="03403-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="03403-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="03403-107">PR_CONTROL_STRUCTURE</span><span class="sxs-lookup"><span data-stu-id="03403-107">PR_CONTROL_STRUCTURE</span></span>  <br/> |
+|<span data-ttu-id="03403-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="03403-108">Identifier:</span></span>  <br/> |<span data-ttu-id="03403-109">0x3F01</span><span class="sxs-lookup"><span data-stu-id="03403-109">0x3F01</span></span>  <br/> |
+|<span data-ttu-id="03403-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="03403-110">Data type:</span></span>  <br/> |<span data-ttu-id="03403-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="03403-111">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="03403-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="03403-112">Area:</span></span>  <br/> |<span data-ttu-id="03403-113">MAPI 表示テーブル</span><span class="sxs-lookup"><span data-stu-id="03403-113">MAPI display table</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="86069-114">注釈</span><span class="sxs-lookup"><span data-stu-id="86069-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="03403-114">注釈</span><span class="sxs-lookup"><span data-stu-id="03403-114">Remarks</span></span>
 
-<span data-ttu-id="86069-115">このプロパティは、コントロール構造のいずれかにキャストされる long ポインターを表します。</span><span class="sxs-lookup"><span data-stu-id="86069-115">This property represents a long pointer that is cast to one of the control structures.</span></span> <span data-ttu-id="86069-116">制御構造には次のものがあります。</span><span class="sxs-lookup"><span data-stu-id="86069-116">The control structures include:</span></span>
+<span data-ttu-id="03403-115">このプロパティは、コントロール構造の 1 つにキャストされる長いポインターを表します。</span><span class="sxs-lookup"><span data-stu-id="03403-115">This property represents a long pointer that is cast to one of the control structures.</span></span> <span data-ttu-id="03403-116">コントロール構造には、次のものが含まれます。</span><span class="sxs-lookup"><span data-stu-id="03403-116">The control structures include:</span></span>
   
 |||
 |:-----|:-----|
-|[<span data-ttu-id="86069-117">DTBLBUTTON</span><span class="sxs-lookup"><span data-stu-id="86069-117">DTBLBUTTON</span></span>](dtblbutton.md) <br/> |[<span data-ttu-id="86069-118">DTBLCHECKBOX</span><span class="sxs-lookup"><span data-stu-id="86069-118">DTBLCHECKBOX</span></span>](dtblcheckbox.md) <br/> |
-|[<span data-ttu-id="86069-119">DTBLCOMBOBOX</span><span class="sxs-lookup"><span data-stu-id="86069-119">DTBLCOMBOBOX</span></span>](dtblcombobox.md) <br/> |[<span data-ttu-id="86069-120">DTBLDDLBX</span><span class="sxs-lookup"><span data-stu-id="86069-120">DTBLDDLBX</span></span>](dtblddlbx.md) <br/> |
-|[<span data-ttu-id="86069-121">DTBLEDIT</span><span class="sxs-lookup"><span data-stu-id="86069-121">DTBLEDIT</span></span>](dtbledit.md) <br/> |[<span data-ttu-id="86069-122">DTBLGROUPBOX</span><span class="sxs-lookup"><span data-stu-id="86069-122">DTBLGROUPBOX</span></span>](dtblgroupbox.md) <br/> |
-|[<span data-ttu-id="86069-123">DTBLLABEL</span><span class="sxs-lookup"><span data-stu-id="86069-123">DTBLLABEL</span></span>](dtbllabel.md) <br/> |[<span data-ttu-id="86069-124">DTBLLBX</span><span class="sxs-lookup"><span data-stu-id="86069-124">DTBLLBX</span></span>](dtbllbx.md) <br/> |
-|[<span data-ttu-id="86069-125">DTBLMVDDLBOX</span><span class="sxs-lookup"><span data-stu-id="86069-125">DTBLMVDDLBOX</span></span>](dtblmvddlbox.md) <br/> |[<span data-ttu-id="86069-126">DTBLMVLISTBOX</span><span class="sxs-lookup"><span data-stu-id="86069-126">DTBLMVLISTBOX</span></span>](dtblmvlistbox.md) <br/> |
-|[<span data-ttu-id="86069-127">DTBLPAGE</span><span class="sxs-lookup"><span data-stu-id="86069-127">DTBLPAGE</span></span>](dtblpage.md) <br/> |[<span data-ttu-id="86069-128">DTBLRADIOBUTTON</span><span class="sxs-lookup"><span data-stu-id="86069-128">DTBLRADIOBUTTON</span></span>](dtblradiobutton.md) <br/> |
+|[<span data-ttu-id="03403-117">DTBLBUTTON</span><span class="sxs-lookup"><span data-stu-id="03403-117">DTBLBUTTON</span></span>](dtblbutton.md) <br/> |[<span data-ttu-id="03403-118">DTBLCHECKBOX</span><span class="sxs-lookup"><span data-stu-id="03403-118">DTBLCHECKBOX</span></span>](dtblcheckbox.md) <br/> |
+|[<span data-ttu-id="03403-119">DTBLCOMBOBOX</span><span class="sxs-lookup"><span data-stu-id="03403-119">DTBLCOMBOBOX</span></span>](dtblcombobox.md) <br/> |[<span data-ttu-id="03403-120">DTBLDDLBX</span><span class="sxs-lookup"><span data-stu-id="03403-120">DTBLDDLBX</span></span>](dtblddlbx.md) <br/> |
+|[<span data-ttu-id="03403-121">DTBLEDIT</span><span class="sxs-lookup"><span data-stu-id="03403-121">DTBLEDIT</span></span>](dtbledit.md) <br/> |[<span data-ttu-id="03403-122">DTBLGROUPBOX</span><span class="sxs-lookup"><span data-stu-id="03403-122">DTBLGROUPBOX</span></span>](dtblgroupbox.md) <br/> |
+|[<span data-ttu-id="03403-123">DTBLLABEL</span><span class="sxs-lookup"><span data-stu-id="03403-123">DTBLLABEL</span></span>](dtbllabel.md) <br/> |[<span data-ttu-id="03403-124">DTBLLBX</span><span class="sxs-lookup"><span data-stu-id="03403-124">DTBLLBX</span></span>](dtbllbx.md) <br/> |
+|[<span data-ttu-id="03403-125">DTBLMVDDLBOX</span><span class="sxs-lookup"><span data-stu-id="03403-125">DTBLMVDDLBOX</span></span>](dtblmvddlbox.md) <br/> |[<span data-ttu-id="03403-126">DTBLMVLISTBOX</span><span class="sxs-lookup"><span data-stu-id="03403-126">DTBLMVLISTBOX</span></span>](dtblmvlistbox.md) <br/> |
+|[<span data-ttu-id="03403-127">DTBLPAGE</span><span class="sxs-lookup"><span data-stu-id="03403-127">DTBLPAGE</span></span>](dtblpage.md) <br/> |[<span data-ttu-id="03403-128">DTBLRADIOBUTTON</span><span class="sxs-lookup"><span data-stu-id="03403-128">DTBLRADIOBUTTON</span></span>](dtblradiobutton.md) <br/> |
    
-## <a name="related-resources"></a><span data-ttu-id="86069-129">関連リソース</span><span class="sxs-lookup"><span data-stu-id="86069-129">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="03403-129">関連リソース</span><span class="sxs-lookup"><span data-stu-id="03403-129">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="86069-130">ヘッダーファイル</span><span class="sxs-lookup"><span data-stu-id="86069-130">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="03403-130">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="03403-130">Header files</span></span>
 
-<span data-ttu-id="86069-131">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="86069-131">Mapidefs.h</span></span>
+<span data-ttu-id="03403-131">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="03403-131">Mapidefs.h</span></span>
   
-> <span data-ttu-id="86069-132">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="86069-132">Provides data type definitions.</span></span>
+> <span data-ttu-id="03403-132">データ型の定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="03403-132">Provides data type definitions.</span></span>
     
-<span data-ttu-id="86069-133">Mapitags</span><span class="sxs-lookup"><span data-stu-id="86069-133">Mapitags.h</span></span>
+<span data-ttu-id="03403-133">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="03403-133">Mapitags.h</span></span>
   
-> <span data-ttu-id="86069-134">代替名としてリストされているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="86069-134">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="03403-134">代替名として一覧表示されるプロパティの定義が含まれる。</span><span class="sxs-lookup"><span data-stu-id="03403-134">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="86069-135">関連項目</span><span class="sxs-lookup"><span data-stu-id="86069-135">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="03403-135">関連項目</span><span class="sxs-lookup"><span data-stu-id="03403-135">See also</span></span>
 
 
 
-[<span data-ttu-id="86069-136">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="86069-136">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="03403-136">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="03403-136">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="86069-137">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="86069-137">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="03403-137">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="03403-137">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="86069-138">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="86069-138">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="03403-138">標準プロパティ名を MAPI 名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="03403-138">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="86069-139">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="86069-139">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="03403-139">MAPI 名を標準プロパティ名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="03403-139">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

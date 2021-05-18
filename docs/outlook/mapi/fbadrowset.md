@@ -19,19 +19,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411793"
 ---
-# <a name="fbadrowset"></a><span data-ttu-id="33bc7-103">FBadRowSet</span><span class="sxs-lookup"><span data-stu-id="33bc7-103">FBadRowSet</span></span>
+# <a name="fbadrowset"></a><span data-ttu-id="72c3c-103">FBadRowSet</span><span class="sxs-lookup"><span data-stu-id="72c3c-103">FBadRowSet</span></span>
 
   
   
-<span data-ttu-id="33bc7-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="33bc7-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="72c3c-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="72c3c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="33bc7-105">テーブルの行のセットに含まれるすべてのテーブルの行を検証します。</span><span class="sxs-lookup"><span data-stu-id="33bc7-105">Validates all table rows included in a set of table rows.</span></span>
+<span data-ttu-id="72c3c-105">一連のテーブル行に含まれるすべてのテーブル行を検証します。</span><span class="sxs-lookup"><span data-stu-id="72c3c-105">Validates all table rows included in a set of table rows.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="33bc7-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="33bc7-106">Header file:</span></span>  <br/> |<span data-ttu-id="33bc7-107">Mapival.h</span><span class="sxs-lookup"><span data-stu-id="33bc7-107">Mapival.h</span></span>  <br/> |
-|<span data-ttu-id="33bc7-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="33bc7-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="33bc7-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="33bc7-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="33bc7-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="33bc7-110">Called by:</span></span>  <br/> |<span data-ttu-id="33bc7-111">サービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="33bc7-111">Service providers</span></span>  <br/> |
+|<span data-ttu-id="72c3c-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="72c3c-106">Header file:</span></span>  <br/> |<span data-ttu-id="72c3c-107">Mapival.h</span><span class="sxs-lookup"><span data-stu-id="72c3c-107">Mapival.h</span></span>  <br/> |
+|<span data-ttu-id="72c3c-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="72c3c-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="72c3c-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="72c3c-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="72c3c-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="72c3c-110">Called by:</span></span>  <br/> |<span data-ttu-id="72c3c-111">サービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="72c3c-111">Service providers</span></span>  <br/> |
    
 ```cpp
 BOOL FBadRowSet(
@@ -39,25 +39,25 @@ BOOL FBadRowSet(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="33bc7-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="33bc7-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="72c3c-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="72c3c-112">Parameters</span></span>
 
- <span data-ttu-id="33bc7-113">_lpRowSet_</span><span class="sxs-lookup"><span data-stu-id="33bc7-113">_lpRowSet_</span></span>
+ <span data-ttu-id="72c3c-113">_lpRowSet_</span><span class="sxs-lookup"><span data-stu-id="72c3c-113">_lpRowSet_</span></span>
   
-> <span data-ttu-id="33bc7-114">順番検証する行セットを識別する[srowset](srowset.md)構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="33bc7-114">[in] Pointer to an [SRowSet](srowset.md) structure identifying the row set to be validated.</span></span> <span data-ttu-id="33bc7-115">ポインターが NULL の場合、この構造体は無効です。</span><span class="sxs-lookup"><span data-stu-id="33bc7-115">If the pointer is NULL, the structure is invalid.</span></span> 
+> <span data-ttu-id="72c3c-114">[in]検証する [行セットを識別する SRowSet](srowset.md) 構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="72c3c-114">[in] Pointer to an [SRowSet](srowset.md) structure identifying the row set to be validated.</span></span> <span data-ttu-id="72c3c-115">ポインターが NULL の場合、構造は無効です。</span><span class="sxs-lookup"><span data-stu-id="72c3c-115">If the pointer is NULL, the structure is invalid.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="33bc7-116">戻り値</span><span class="sxs-lookup"><span data-stu-id="33bc7-116">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="72c3c-116">戻り値</span><span class="sxs-lookup"><span data-stu-id="72c3c-116">Return value</span></span>
 
-<span data-ttu-id="33bc7-117">TRUE</span><span class="sxs-lookup"><span data-stu-id="33bc7-117">TRUE</span></span> 
+<span data-ttu-id="72c3c-117">TRUE</span><span class="sxs-lookup"><span data-stu-id="72c3c-117">TRUE</span></span> 
   
-> <span data-ttu-id="33bc7-118">指定された行セットの行が無効であるか、行セット自体が無効です。</span><span class="sxs-lookup"><span data-stu-id="33bc7-118">A row of the specified row set is invalid, or the row set itself is invalid.</span></span> 
+> <span data-ttu-id="72c3c-118">指定した行セットの行が無効であるか、行セット自体が無効です。</span><span class="sxs-lookup"><span data-stu-id="72c3c-118">A row of the specified row set is invalid, or the row set itself is invalid.</span></span> 
     
-<span data-ttu-id="33bc7-119">FALSE</span><span class="sxs-lookup"><span data-stu-id="33bc7-119">FALSE</span></span> 
+<span data-ttu-id="72c3c-119">FALSE</span><span class="sxs-lookup"><span data-stu-id="72c3c-119">FALSE</span></span> 
   
-> <span data-ttu-id="33bc7-120">指定した行セットと行セット自体の行はすべて有効です。</span><span class="sxs-lookup"><span data-stu-id="33bc7-120">The rows of the specified row set and the row set itself are all valid.</span></span>
+> <span data-ttu-id="72c3c-120">指定した行セットと行セット自体の行はすべて有効です。</span><span class="sxs-lookup"><span data-stu-id="72c3c-120">The rows of the specified row set and the row set itself are all valid.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="33bc7-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="33bc7-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="72c3c-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="72c3c-121">See also</span></span>
 
 
 
-[<span data-ttu-id="33bc7-122">FBadRow</span><span class="sxs-lookup"><span data-stu-id="33bc7-122">FBadRow</span></span>](fbadrow.md)
+[<span data-ttu-id="72c3c-122">FBadRow</span><span class="sxs-lookup"><span data-stu-id="72c3c-122">FBadRow</span></span>](fbadrow.md)
 

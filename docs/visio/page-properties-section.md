@@ -16,12 +16,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411653"
 ---
-# <a name="page-properties-section"></a><span data-ttu-id="ca533-103">[Page Properties] セクション</span><span class="sxs-lookup"><span data-stu-id="ca533-103">Page Properties Section</span></span>
+# <a name="page-properties-section"></a><span data-ttu-id="6f953-103">[Page Properties] セクション</span><span class="sxs-lookup"><span data-stu-id="6f953-103">Page Properties Section</span></span>
 
-<span data-ttu-id="ca533-104">ページの幅、高さ、縮尺などの、ページの属性を制御するセルを格納します。</span><span class="sxs-lookup"><span data-stu-id="ca533-104">Contains cells that control page attributes, such as the page width, height, and scale.</span></span>
+<span data-ttu-id="6f953-104">ページの幅、高さ、縮尺などの、ページの属性を制御するセルを格納します。</span><span class="sxs-lookup"><span data-stu-id="6f953-104">Contains cells that control page attributes, such as the page width, height, and scale.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="ca533-105">注釈</span><span class="sxs-lookup"><span data-stu-id="ca533-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6f953-105">注釈</span><span class="sxs-lookup"><span data-stu-id="6f953-105">Remarks</span></span>
 
-<span data-ttu-id="ca533-106">ページプロパティの値を設定するには、[ **page properties** ] セクションのセルにエントリを作成するか、[**ページ設定**] ダイアログボックス ([**デザイン**] タブで [**ページ設定**] グループのダイアログボックス起動ツールをクリックします) を使用します。</span><span class="sxs-lookup"><span data-stu-id="ca533-106">You can set the values of page properties by making an entry in the **Page Properties** section cell, or by using the **Page Setup** dialog box (on the **Design** tab, click the dialog box launcher in the **Page Setup** group).</span></span> 
+<span data-ttu-id="6f953-106">ページ プロパティの値を設定するには、[ページのプロパティ]セクション セルに入力するか、[ページ設定] ダイアログ ボックスを使用します ([デザイン] タブの [ページ セットアップ] グループのダイアログ ボックス 起動ツールを **クリック** します)。</span><span class="sxs-lookup"><span data-stu-id="6f953-106">You can set the values of page properties by making an entry in the **Page Properties** section cell, or by using the **Page Setup** dialog box (on the **Design** tab, click the dialog box launcher in the **Page Setup** group).</span></span> 
   
 

@@ -16,28 +16,28 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33414033"
 ---
-# <a name="shapeshdwobliqueangle-cell-fill-format-section"></a><span data-ttu-id="4700b-103">[ShapeShdwObliqueAngle] セル ([Fill Format] セクション)</span><span class="sxs-lookup"><span data-stu-id="4700b-103">ShapeShdwObliqueAngle Cell (Fill Format Section)</span></span>
+# <a name="shapeshdwobliqueangle-cell-fill-format-section"></a><span data-ttu-id="fffec-103">[ShapeShdwObliqueAngle] セル ([Fill Format] セクション)</span><span class="sxs-lookup"><span data-stu-id="fffec-103">ShapeShdwObliqueAngle Cell (Fill Format Section)</span></span>
 
-<span data-ttu-id="4700b-104">図形の斜体の影に角度を指定します。</span><span class="sxs-lookup"><span data-stu-id="4700b-104">Specifies the angle of oblique direction of a shape's shadow.</span></span>
+<span data-ttu-id="fffec-104">図形の斜体の影に角度を指定します。</span><span class="sxs-lookup"><span data-stu-id="fffec-104">Specifies the angle of oblique direction of a shape's shadow.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="4700b-105">注釈</span><span class="sxs-lookup"><span data-stu-id="4700b-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="fffec-105">注釈</span><span class="sxs-lookup"><span data-stu-id="fffec-105">Remarks</span></span>
 
-<span data-ttu-id="4700b-106">このセルの値がゼロ (0) の場合は影の傾きの角度が真上で、時計回りに角度を指定します。</span><span class="sxs-lookup"><span data-stu-id="4700b-106">A value of zero (0) in this cell indicates that the angle direction is straight up and is measured moving clockwise.</span></span>
+<span data-ttu-id="fffec-106">このセルの値がゼロ (0) の場合は影の傾きの角度が真上で、時計回りに角度を指定します。</span><span class="sxs-lookup"><span data-stu-id="fffec-106">A value of zero (0) in this cell indicates that the angle direction is straight up and is measured moving clockwise.</span></span>
   
-<span data-ttu-id="4700b-107">この値は、[**影**] ダイアログ ボックスの [**方向**] 設定の値に対応しています (このダイアログ ボックスを開くには、[**ホーム**] タブの [**図形**] グループで、[**影**] をクリックし、[**影のオプション**] をクリックします)。</span><span class="sxs-lookup"><span data-stu-id="4700b-107">This value corresponds to the value of the **Direction** setting in the **Shadow** dialog box (on the **Home** tab, in the **Shape** group, click **Shadow**, and then click **Shadow Options**).</span></span>
+<span data-ttu-id="fffec-107">この値は、[**影**] ダイアログ ボックスの [**方向**] 設定の値に対応しています (このダイアログ ボックスを開くには、[**ホーム**] タブの [**図形**] グループで、[**影**] をクリックし、[**影のオプション**] をクリックします)。</span><span class="sxs-lookup"><span data-stu-id="fffec-107">This value corresponds to the value of the **Direction** setting in the **Shadow** dialog box (on the **Home** tab, in the **Shape** group, click **Shadow**, and then click **Shadow Options**).</span></span>
   
-<span data-ttu-id="4700b-108">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ShapeShdwObliqueAngle] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="4700b-108">To get a reference to the ShapeShdwObliqueAngle cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="fffec-108">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ShapeShdwObliqueAngle] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="fffec-108">To get a reference to the ShapeShdwObliqueAngle cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="4700b-109">セル名 :</span><span class="sxs-lookup"><span data-stu-id="4700b-109">Cell name:</span></span>  <br/> | <span data-ttu-id="4700b-110">[shapeshdwobliqueangle]</span><span class="sxs-lookup"><span data-stu-id="4700b-110">ShapeShdwObliqueAngle</span></span>  <br/> |
+| <span data-ttu-id="fffec-109">セル名 :</span><span class="sxs-lookup"><span data-stu-id="fffec-109">Cell name:</span></span>  <br/> | <span data-ttu-id="fffec-110">ShapeShdwObliqueAngle</span><span class="sxs-lookup"><span data-stu-id="fffec-110">ShapeShdwObliqueAngle</span></span>  <br/> |
    
-<span data-ttu-id="4700b-111">プログラムから、インデックスによって [ShapeShdwObliqueAngle] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="4700b-111">To get a reference to the ShapeShdwObliqueAngle cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="fffec-111">プログラムから、インデックスによって [ShapeShdwObliqueAngle] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="fffec-111">To get a reference to the ShapeShdwObliqueAngle cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="4700b-112">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="4700b-112">Section index:</span></span>  <br/> |<span data-ttu-id="4700b-113">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="4700b-113">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="4700b-114">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="4700b-114">Row index:</span></span>  <br/> |<span data-ttu-id="4700b-115">**visRowFill**</span><span class="sxs-lookup"><span data-stu-id="4700b-115">**visRowFill**</span></span> <br/> |
-| <span data-ttu-id="4700b-116">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="4700b-116">Cell index:</span></span>  <br/> |<span data-ttu-id="4700b-117">**visFillShdwObliqueAngle**</span><span class="sxs-lookup"><span data-stu-id="4700b-117">**visFillShdwObliqueAngle**</span></span> <br/> |
+| <span data-ttu-id="fffec-112">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="fffec-112">Section index:</span></span>  <br/> |<span data-ttu-id="fffec-113">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="fffec-113">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="fffec-114">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="fffec-114">Row index:</span></span>  <br/> |<span data-ttu-id="fffec-115">**visRowFill**</span><span class="sxs-lookup"><span data-stu-id="fffec-115">**visRowFill**</span></span> <br/> |
+| <span data-ttu-id="fffec-116">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="fffec-116">Cell index:</span></span>  <br/> |<span data-ttu-id="fffec-117">**visFillShdwObliqueAngle**</span><span class="sxs-lookup"><span data-stu-id="fffec-117">**visFillShdwObliqueAngle**</span></span> <br/> |
    
 

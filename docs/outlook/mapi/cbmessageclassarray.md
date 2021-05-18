@@ -19,35 +19,35 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33413123"
 ---
-# <a name="cbmessageclassarray"></a><span data-ttu-id="692ce-103">CbMessageClassArray</span><span class="sxs-lookup"><span data-stu-id="692ce-103">CbMessageClassArray</span></span>
+# <a name="cbmessageclassarray"></a><span data-ttu-id="ce772-103">CbMessageClassArray</span><span class="sxs-lookup"><span data-stu-id="ce772-103">CbMessageClassArray</span></span>
 
   
   
-<span data-ttu-id="692ce-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="692ce-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="ce772-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ce772-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="692ce-105">メッセージクラスへの指定された数の文字列ポインターを含む、既存の[SMessageClassArray](smessageclassarray.md)構造体のバイト数を計算します。</span><span class="sxs-lookup"><span data-stu-id="692ce-105">Computes the number of bytes in an existing [SMessageClassArray](smessageclassarray.md) structure that contains a specified number of string pointers to message classes.</span></span> 
+<span data-ttu-id="ce772-105">メッセージ クラスへの指定された数の文字列ポインターを含む既存の [SMessageClassArray](smessageclassarray.md) 構造体内のバイト数を計算します。</span><span class="sxs-lookup"><span data-stu-id="ce772-105">Computes the number of bytes in an existing [SMessageClassArray](smessageclassarray.md) structure that contains a specified number of string pointers to message classes.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="692ce-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="692ce-106">Header file:</span></span>  <br/> |<span data-ttu-id="692ce-107">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="692ce-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="692ce-108">関連する構造:</span><span class="sxs-lookup"><span data-stu-id="692ce-108">Related structure:</span></span>  <br/> |<span data-ttu-id="692ce-109">**SMessageClassArray**</span><span class="sxs-lookup"><span data-stu-id="692ce-109">**SMessageClassArray**</span></span> <br/> |
+|<span data-ttu-id="ce772-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="ce772-106">Header file:</span></span>  <br/> |<span data-ttu-id="ce772-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="ce772-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="ce772-108">関連する構造:</span><span class="sxs-lookup"><span data-stu-id="ce772-108">Related structure:</span></span>  <br/> |<span data-ttu-id="ce772-109">**SMessageClassArray**</span><span class="sxs-lookup"><span data-stu-id="ce772-109">**SMessageClassArray**</span></span> <br/> |
    
 ```cpp
 CbMessageClassArray (_c)
 ```
 
-## <a name="parameters"></a><span data-ttu-id="692ce-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="692ce-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="ce772-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ce772-110">Parameters</span></span>
 
- <span data-ttu-id="692ce-111">__c_</span><span class="sxs-lookup"><span data-stu-id="692ce-111">__c_</span></span>
+ <span data-ttu-id="ce772-111">_ _c_</span><span class="sxs-lookup"><span data-stu-id="ce772-111">_ _c_</span></span>
   
-> <span data-ttu-id="692ce-112">既存の**SMessageClassArray**に含まれているメッセージクラスへのポインターの数。</span><span class="sxs-lookup"><span data-stu-id="692ce-112">Count of the pointers to message classes that are included in the existing **SMessageClassArray**.</span></span>
+> <span data-ttu-id="ce772-112">既存の **SMessageClassArray** に含まれるメッセージ クラスへのポインターの数。</span><span class="sxs-lookup"><span data-stu-id="ce772-112">Count of the pointers to message classes that are included in the existing **SMessageClassArray**.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="692ce-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="692ce-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ce772-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="ce772-113">See also</span></span>
 
 
 
-[<span data-ttu-id="692ce-114">SMessageClassArray</span><span class="sxs-lookup"><span data-stu-id="692ce-114">SMessageClassArray</span></span>](smessageclassarray.md)
+[<span data-ttu-id="ce772-114">SMessageClassArray</span><span class="sxs-lookup"><span data-stu-id="ce772-114">SMessageClassArray</span></span>](smessageclassarray.md)
 
 
-[<span data-ttu-id="692ce-115">構造に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="692ce-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
+[<span data-ttu-id="ce772-115">構造に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="ce772-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
 

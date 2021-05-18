@@ -16,12 +16,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411716"
 ---
-# <a name="foreign-image-info-section"></a><span data-ttu-id="2e537-104">[Foreign Image Info] セクション</span><span class="sxs-lookup"><span data-stu-id="2e537-104">Foreign Image Info Section</span></span>
+# <a name="foreign-image-info-section"></a><span data-ttu-id="3d747-104">[Foreign Image Info] セクション</span><span class="sxs-lookup"><span data-stu-id="3d747-104">Foreign Image Info Section</span></span>
 
-<span data-ttu-id="2e537-p102">Microsoft Visio の図面で使用される別のプログラムのオブジェクトの幅と高さを格納します。このセクションは、該当するオブジェクトの [シェイプシート] ウィンドウにのみ表示されます。オブジェクトのイメージが枠の中でオフセットされる距離も示します。</span><span class="sxs-lookup"><span data-stu-id="2e537-p102">Contains the width and height of an object from another program used in a Microsoft Visio drawing and appears in the ShapeSheet window only for such objects. It also indicates the distance the object's image is offset within its borders.</span></span>
+<span data-ttu-id="3d747-p102">Microsoft Visio の図面で使用される別のプログラムのオブジェクトの幅と高さを格納します。このセクションは、該当するオブジェクトの [シェイプシート] ウィンドウにのみ表示されます。オブジェクトのイメージが枠の中でオフセットされる距離も示します。</span><span class="sxs-lookup"><span data-stu-id="3d747-p102">Contains the width and height of an object from another program used in a Microsoft Visio drawing and appears in the ShapeSheet window only for such objects. It also indicates the distance the object's image is offset within its borders.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="2e537-107">注釈</span><span class="sxs-lookup"><span data-stu-id="2e537-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3d747-107">注釈</span><span class="sxs-lookup"><span data-stu-id="3d747-107">Remarks</span></span>
 
-<span data-ttu-id="2e537-108">バージョン2000より前のバージョンの Visio 製品では、このセクションは**Image Info**という名前でした。</span><span class="sxs-lookup"><span data-stu-id="2e537-108">In versions of Visio products earlier than version 2000, this section was named **Image Info**.</span></span>
+<span data-ttu-id="3d747-108">バージョン 2000 Visio製品のバージョンでは、このセクションの名前は Image **Info です**。</span><span class="sxs-lookup"><span data-stu-id="3d747-108">In versions of Visio products earlier than version 2000, this section was named **Image Info**.</span></span>
   
 

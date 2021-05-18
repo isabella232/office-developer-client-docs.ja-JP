@@ -19,25 +19,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33413830"
 ---
-# <a name="pidlidimageattachmentscompressionlevel-canonical-property"></a><span data-ttu-id="b8cab-103">PidLidImageAttachmentsCompressionLevel 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="b8cab-103">PidLidImageAttachmentsCompressionLevel Canonical Property</span></span>
+# <a name="pidlidimageattachmentscompressionlevel-canonical-property"></a><span data-ttu-id="f6b2d-103">PidLidImageAttachmentsCompressionLevel 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="f6b2d-103">PidLidImageAttachmentsCompressionLevel Canonical Property</span></span>
 
   
   
-<span data-ttu-id="b8cab-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b8cab-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="f6b2d-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f6b2d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="b8cab-105">画像の添付ファイルに適用する圧縮レベルを定義します。</span><span class="sxs-lookup"><span data-stu-id="b8cab-105">Defines a compression level to apply on image attachments.</span></span>
+<span data-ttu-id="f6b2d-105">イメージ添付ファイルに適用する圧縮レベルを定義します。</span><span class="sxs-lookup"><span data-stu-id="f6b2d-105">Defines a compression level to apply on image attachments.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="b8cab-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="b8cab-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="b8cab-107">dispidImgAttchmtsCompressLevel</span><span class="sxs-lookup"><span data-stu-id="b8cab-107">dispidImgAttchmtsCompressLevel</span></span>  <br/> |
-|<span data-ttu-id="b8cab-108">プロパティセット:</span><span class="sxs-lookup"><span data-stu-id="b8cab-108">Property set:</span></span>  <br/> |<span data-ttu-id="b8cab-109">PSETID_Common</span><span class="sxs-lookup"><span data-stu-id="b8cab-109">PSETID_Common</span></span>  <br/> |
-|<span data-ttu-id="b8cab-110">ロング ID (LID):</span><span class="sxs-lookup"><span data-stu-id="b8cab-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="b8cab-111">0x00008593</span><span class="sxs-lookup"><span data-stu-id="b8cab-111">0x00008593</span></span>  <br/> |
-|<span data-ttu-id="b8cab-112">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="b8cab-112">Data type:</span></span>  <br/> |<span data-ttu-id="b8cab-113">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="b8cab-113">PT_LONG</span></span>  <br/> |
-|<span data-ttu-id="b8cab-114">エリア:</span><span class="sxs-lookup"><span data-stu-id="b8cab-114">Area:</span></span>  <br/> |<span data-ttu-id="b8cab-115">実行時の構成</span><span class="sxs-lookup"><span data-stu-id="b8cab-115">Run-time configuration</span></span>  <br/> |
+|<span data-ttu-id="f6b2d-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="f6b2d-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="f6b2d-107">dispidImgAttchmtsCompressLevel</span><span class="sxs-lookup"><span data-stu-id="f6b2d-107">dispidImgAttchmtsCompressLevel</span></span>  <br/> |
+|<span data-ttu-id="f6b2d-108">プロパティ セット:</span><span class="sxs-lookup"><span data-stu-id="f6b2d-108">Property set:</span></span>  <br/> |<span data-ttu-id="f6b2d-109">PSETID_Common</span><span class="sxs-lookup"><span data-stu-id="f6b2d-109">PSETID_Common</span></span>  <br/> |
+|<span data-ttu-id="f6b2d-110">長い ID (LID):</span><span class="sxs-lookup"><span data-stu-id="f6b2d-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="f6b2d-111">0x00008593</span><span class="sxs-lookup"><span data-stu-id="f6b2d-111">0x00008593</span></span>  <br/> |
+|<span data-ttu-id="f6b2d-112">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="f6b2d-112">Data type:</span></span>  <br/> |<span data-ttu-id="f6b2d-113">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="f6b2d-113">PT_LONG</span></span>  <br/> |
+|<span data-ttu-id="f6b2d-114">エリア:</span><span class="sxs-lookup"><span data-stu-id="f6b2d-114">Area:</span></span>  <br/> |<span data-ttu-id="f6b2d-115">実行時の構成</span><span class="sxs-lookup"><span data-stu-id="f6b2d-115">Run-time configuration</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="b8cab-116">注釈</span><span class="sxs-lookup"><span data-stu-id="b8cab-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f6b2d-116">注釈</span><span class="sxs-lookup"><span data-stu-id="f6b2d-116">Remarks</span></span>
 
-<span data-ttu-id="b8cab-117">有効な圧縮レベルは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="b8cab-117">The following are valid compression levels:</span></span>
+<span data-ttu-id="f6b2d-117">有効な圧縮レベルは次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="f6b2d-117">The following are valid compression levels:</span></span>
   
 ```cpp
 enum PictureCompressLevel
@@ -49,29 +49,29 @@ enum PictureCompressLevel
 };
 ```
 
-## <a name="related-resources"></a><span data-ttu-id="b8cab-118">関連リソース</span><span class="sxs-lookup"><span data-stu-id="b8cab-118">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="f6b2d-118">関連リソース</span><span class="sxs-lookup"><span data-stu-id="f6b2d-118">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="b8cab-119">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="b8cab-119">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="f6b2d-119">プロトコルの仕様</span><span class="sxs-lookup"><span data-stu-id="f6b2d-119">Protocol specifications</span></span>
 
-<span data-ttu-id="b8cab-120">[[OXPROPS]]</span><span class="sxs-lookup"><span data-stu-id="b8cab-120">[[MS-OXPROPS]]</span></span> 
+<span data-ttu-id="f6b2d-120">[[MS-OXPROPS]]</span><span class="sxs-lookup"><span data-stu-id="f6b2d-120">[[MS-OXPROPS]]</span></span> 
   
-> <span data-ttu-id="b8cab-121">プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。</span><span class="sxs-lookup"><span data-stu-id="b8cab-121">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="f6b2d-121">プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。</span><span class="sxs-lookup"><span data-stu-id="f6b2d-121">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="b8cab-122">ヘッダーファイル</span><span class="sxs-lookup"><span data-stu-id="b8cab-122">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="f6b2d-122">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="f6b2d-122">Header files</span></span>
 
-<span data-ttu-id="b8cab-123">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="b8cab-123">Mapidefs.h</span></span>
+<span data-ttu-id="f6b2d-123">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="f6b2d-123">Mapidefs.h</span></span>
   
-> <span data-ttu-id="b8cab-124">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="b8cab-124">Provides data type definitions.</span></span>
+> <span data-ttu-id="f6b2d-124">データ型の定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="f6b2d-124">Provides data type definitions.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="b8cab-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="b8cab-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f6b2d-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="f6b2d-125">See also</span></span>
 
 
 
-[<span data-ttu-id="b8cab-126">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="b8cab-126">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="f6b2d-126">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="f6b2d-126">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="b8cab-127">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="b8cab-127">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="f6b2d-127">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="f6b2d-127">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="b8cab-128">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="b8cab-128">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="f6b2d-128">標準プロパティ名を MAPI 名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="f6b2d-128">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="b8cab-129">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="b8cab-129">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="f6b2d-129">MAPI 名を標準プロパティ名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="f6b2d-129">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 
