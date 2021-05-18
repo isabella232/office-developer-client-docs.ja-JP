@@ -25,7 +25,7 @@ ms.locfileid: "33411597"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI インターフェイスの識別子を記述するために使用される[GUID](guid.md)構造を記述します。 
+MAPI インターフェイスの [識別子](guid.md) を記述するために使用される GUID 構造について説明します。 
   
 ```cpp
 typedef struct _GUID
@@ -38,15 +38,15 @@ typedef struct _GUID
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
-**GUID**構造を参照してください。 
+GUID 構造 **を参照** してください。 
   
 ## <a name="remarks"></a>注釈
 
-**IID**構造は、MAPI インターフェイスを一意に識別し、特定のインターフェイスをオブジェクトに関連付けるために使用されます。 たとえば、クライアントが[imapisession:: openentry](imapisession-openentry.md)を呼び出してフォルダーを開くと、クライアントは[imapisession](imapifolderimapicontainer.md)インターフェイスを表す**IID**を指すように_lpinterface_パラメーターを設定します。 MAPI は、IID_IMAPIFolder する**IMAPIFolderIID**を定義します。 **IID**の構造体は、OLE インターフェイスを一意に識別するためにも使用されます。 
+**IID 構造は**、MAPI インターフェイスを一意に識別し、特定のインターフェイスをオブジェクトに関連付ける場合に使用します。 たとえば、クライアントが [IMAPISession::OpenEntry](imapisession-openentry.md)を呼び出してフォルダーを開く場合、クライアントは [、IMAPIFolder](imapifolderimapicontainer.md)インターフェイスを表す **IID** を指す _lpInterface_ パラメーターを設定します。 MAPI では **、IMAPIFolderIID** を使用するIID_IMAPIFolder。 **IID** 構造は、OLE インターフェイスを一意に識別するためにも使用されます。 
   
-MAPI インターフェイスの特定の**IID**構造はすべて、mapiguid .h ヘッダーファイルで定義されています。 
+MAPI インターフェイスの **特定の IID** 構造はすべて、Mapiguid.h ヘッダー ファイルで定義されます。 
   
 ## <a name="see-also"></a>関連項目
 

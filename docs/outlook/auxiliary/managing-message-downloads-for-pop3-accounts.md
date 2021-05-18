@@ -24,9 +24,9 @@ ms.locfileid: "32322247"
   
 POP アカウントのメッセージは、一意の識別子 (Uid) で識別されます。電子メール クライアントがメール サーバーに残ります UIDL マップを関連付けるその UID をメールボックスに送信された各メッセージを取得するために、UIDL コマンドを使用します。クライアントはダウンロードまたはクライアント上で受信トレイを削除するメッセージの UIDL 履歴も取得します。クライアントは、UIDL 履歴に基づき、メッセージは新しいをダウンロードするかを確認できます。
 
-- [pop3 アカウントのメッセージダウンロード履歴の検索](locating-the-message-download-history-for-a-pop3-account.md): このトピックでは、メールクライアントが[PidTagAttachDataBinary](https://msdn.microsoft.com/library/3b0a8b28-863e-4b96-a4c0-fdb8f40555b9%28Office.15%29.aspx)プロパティにアクセスして、pop3 アカウントのクライアント受信トレイ内のメッセージの UIDL 履歴を取得する方法について説明します。 
+- [POP3](locating-the-message-download-history-for-a-pop3-account.md)アカウントのメッセージダウンロード履歴を検索する : このトピックでは、メール クライアントが [PidTagAttachDataBinary](https://msdn.microsoft.com/library/3b0a8b28-863e-4b96-a4c0-fdb8f40555b9%28Office.15%29.aspx) プロパティにアクセスして、POP3 アカウントのクライアント受信トレイにあるメッセージの UIDL 履歴を取得する方法について説明します。 
     
-- [[pop3 アカウントのメッセージのダウンロード履歴を解析](parsing-the-message-download-history-for-a-pop3-account.md)する]: このトピックでは、pop3 アカウントのクライアント受信トレイ内のメッセージの UIDL 履歴を表す pop3 BLOB を解析し、そのメッセージに対してダウンロードまたは削除されたメッセージを特定する方法について説明します。分割払.
+- [POP3](parsing-the-message-download-history-for-a-pop3-account.md)アカウントのメッセージダウンロード履歴を解析する : このトピックでは、POP3 アカウントのクライアント受信トレイにあるメッセージの UIDL 履歴を表す POP3 BLOB を解析し、そのアカウントでダウンロードまたは削除されたメッセージを識別する方法について説明します。
     
 ## <a name="see-also"></a>関連項目
 

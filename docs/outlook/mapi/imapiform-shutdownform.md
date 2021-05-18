@@ -1,5 +1,5 @@
 ---
-title: imapiformshutdownform
+title: IMAPIFormShutdownForm
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -35,21 +35,21 @@ HRESULT ShutdownForm(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulsaveoptions_
+ _ulSaveOptions_
   
-> 順番フォームを閉じる前に、フォーム内のデータを保存するかどうかを制御する値を指定します。 次のいずれかのフラグを設定できます。
+> [in]フォームを閉じる前に、フォーム内のデータを保存する方法またはかどうかを制御する値。 次のいずれかのフラグを設定できます。
     
 SAVEOPTS_NOSAVE 
   
-> フォームデータは保存しないようにします。
+> フォーム データを保存する必要があります。
     
 SAVEOPTS_PROMPTSAVE 
   
-> ユーザーは、変更されたデータをフォームに保存するかどうかを確認するメッセージを表示する必要があります。
+> ユーザーは、フォームに変更されたデータを保存するように求めるメッセージが表示されます。
     
 SAVEOPTS_SAVEIFDIRTY 
   
-> 前回の保存以降に変更されている場合は、フォームデータを保存する必要があります。 ユーザーインターフェイスが表示されていない場合は、必要に応じて、SAVEOPTS_NOSAVE オプションの機能を使用してフォームを切り替えることができます。
+> フォーム データは、前回の保存以降に変更された場合に保存する必要があります。 ユーザー インターフェイスが表示されない場合は、必要に応じてフォームを [ユーザー インターフェイス] オプションの機能を使用SAVEOPTS_NOSAVEできます。
     
 ## <a name="return-value"></a>戻り値
 
@@ -59,42 +59,42 @@ S_OK
     
 E_UNEXPECTED 
   
-> このフォームは、以前に**shutdownform**を呼び出したときに既に閉じられています。
+> このフォームは、ShutdownForm の事前呼び出しによって既 **に閉じられました**。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-フォームビューアーは、 **imapiform:: shutdownform**メソッドを呼び出してフォームを閉じます。 
+フォーム ビューアーは **IMAPIForm::ShutdownForm** メソッドを呼び出してフォームを閉じます。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**shutdownform**の実装で、次のタスクを実行します。
+ShutdownForm の実装で次のタスク **を実行します**。
   
-1. viewer が**shutdownform**を呼び出していないことを確認し、E_UNEXPECTED がある場合はそれを返します。 このことはほとんどありませんが、確認する必要があります。
+1. ビューアーが **ShutdownForm** をまだ呼び出していないか確認し、存在する場合E_UNEXPECTEDを返します。 これはありそうもないが、確認する必要があります。
     
-2. フォームの[IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx)メソッドを呼び出して、フォームおよび内部データ構造のストレージを処理が完了するまで引き続き使用できるようにします。 
+2. フォームの [IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx) メソッドを呼び出して、フォームのストレージと内部データ構造を処理が完了するまで使用できます。 
     
-3. フォームのデータに保存されていない変更があるかどうかを確認します。 [IMAPIMessageSite:: SaveMessage](imapimessagesite-savemessage.md)メソッドを呼び出すことにより、 _ulsaveoptions_パラメーターの設定方法に従って未保存のデータを保存します。 
+3. フォームのデータに保存されていない変更が含されているかどうかを判断します。 ビューアーの [IMAPIMessageSite::SaveMessage](imapimessagesite-savemessage.md)メソッドを呼び出して _、ulSaveOptions_ パラメーターの設定方法に従って、保存されていないデータを保存します。 
     
-4. フォームのユーザーインターフェイスウィンドウを破棄します。
+4. フォームのユーザー インターフェイス ウィンドウを破棄します。
     
-5. [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドを呼び出して、フォームのメッセージおよびメッセージサイトオブジェクトを解放します。 
+5. フォームのメッセージおよびメッセージ サイト オブジェクトを [解放するには、IUnknown::Release メソッドを呼び](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) 出します。 
     
-6. [IMAPIViewAdviseSink:: onshutdown](imapiviewadvisesink-onshutdown.md)メソッドを呼び出して、保留中のシャットダウンのすべての登録済みビューアーに通知します。 
+6. [IMAPIViewAdviseSink::OnShutdown](imapiviewadvisesink-onshutdown.md)メソッドを呼び出して、保留中のシャットダウンを登録しているすべてのビューアーに通知します。 
     
-7. [imapiviewcontext:: SetAdviseSink](imapiviewcontext-setadvisesink.md)メソッドを呼び出して、アドバイズシンクポインターを**null**に設定することにより、フォームの通知の登録を取り消します。
+7. [IMAPIViewContext::SetAdviseSink](imapiviewcontext-setadvisesink.md)メソッドを呼び出して、アドバイス シンク ポインターを null に設定して、通知のためにフォームの登録をキャンセル **します**。
     
-8. [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して、フォームのプロパティのメモリを解放します。 
+8. [MAPIFreeBuffer 関数を呼](mapifreebuffer.md)び出して、フォームのプロパティのメモリを解放します。 
     
-9. 手順2で作成した**AddRef**呼び出しに一致するように、フォームの**IUnknown:: Release**メソッドを呼び出します。 
+9. 手順 2 で行った **AddRef** 呼び出しと一致する、フォームの **IUnknown::Release** メソッドを呼び出します。 
     
 10. S_OK ��Ԃ��܂��B
     
 > [!NOTE]
-> これらの操作が完了した後、呼び出される可能性のある form オブジェクトの有効なメソッドは、 [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx)インターフェイスからのものだけです。 
+> これらのアクションが完了すると、呼び出される可能性があるフォーム オブジェクトの有効なメソッドは [、IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) インターフェイスからのメソッドのみです。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-エラーが返されるかどうかに関係なく、 **shutdownform**から制御が戻ると、 **IUnknown:: release**メソッドを呼び出してフォームを解放します。 **shutdownform**によって返されるエラーは無視しても問題ありません。
+**ShutdownForm が** 返された場合、エラーが返されるかどうかに関係なく **、IUnknown::Release** メソッドを呼び出してフォームを解放します。 ShutdownForm によって返されるエラーは無視しても **問題ない**。
   
 ## <a name="see-also"></a>関連項目
 

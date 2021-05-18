@@ -25,11 +25,11 @@ ms.locfileid: "33412696"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージクラスの文字列へのポインターの配列を格納します。
+メッセージ クラス文字列へのポインターの配列を格納します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
 |関連するマクロ:  <br/> |[CbMessageClassArray](cbmessageclassarray.md) <br/> |
    
 ```cpp
@@ -41,19 +41,19 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cvalues**
+ **cValues**
   
-> 配列内のメッセージクラス文字列ポインターの数。
+> 配列内のメッセージ クラス文字列ポインターの数。
     
- **amessageclass**
+ **aMessageClass**
   
-> メッセージクラスの文字列へのポインターの配列です。
+> メッセージ クラス文字列へのポインターの配列。
     
 ## <a name="remarks"></a>注釈
 
-**SMessageClassArray**構造体は、次のメソッドのパラメーターとして渡されます。 
+**SMessageClassArray** 構造体は、次のメソッドでパラメーターとして渡されます。 
   
 - [IMAPIFormContainer::ResolveMultipleMessageClasses](imapiformcontainer-resolvemultiplemessageclasses.md)
     

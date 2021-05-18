@@ -1,5 +1,5 @@
 ---
-title: imapiformmgr IUnknown
+title: IMAPIFormMgr IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,33 +25,33 @@ ms.locfileid: "33413060"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームビューアーがフォームサーバーに関する情報を取得し、アクティブ化できるようにします。 
+フォーム ビューアーがフォーム サーバーに関する情報を取得し、アクティブ化できます。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
-|公開者:  <br/> |フォームマネージャーオブジェクト  <br/> |
-|実装元:  <br/> |フォームライブラリプロバイダー  <br/> |
-|呼び出し元:  <br/> |フォームビューアー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |フォーム マネージャー オブジェクト  <br/> |
+|実装元:  <br/> |フォーム ライブラリ プロバイダー  <br/> |
+|呼び出し元:  <br/> |フォーム ビューアー  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMAPIFormMgr  <br/> |
 |ポインターの種類:  <br/> |LPMAPIFORMMGR  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[loadform](imapiformmgr-loadform.md) <br/> |既存のメッセージを開くフォームを開始します。  <br/> |
-|[ResolveMessageClass](imapiformmgr-resolvemessageclass.md) <br/> |form コンテナー内のフォームに対してメッセージクラスを解決し、そのフォームのフォーム情報オブジェクトを返します。  <br/> |
-|[ResolveMultipleMessageClasses](imapiformmgr-resolvemultiplemessageclasses.md) <br/> |フォームコンテナー内のフォームに対するメッセージクラスのグループを解決し、それらのフォームのフォーム情報オブジェクトの配列を返します。  <br/> |
+|[LoadForm](imapiformmgr-loadform.md) <br/> |既存のメッセージを開くフォームを開始します。  <br/> |
+|[ResolveMessageClass](imapiformmgr-resolvemessageclass.md) <br/> |メッセージ クラスをフォーム コンテナー内のフォームに解決し、そのフォームのフォーム情報オブジェクトを返します。  <br/> |
+|[ResolveMultipleMessageClasses](imapiformmgr-resolvemultiplemessageclasses.md) <br/> |メッセージ クラスのグループをフォーム コンテナー内のフォームに解決し、それらのフォームのフォーム情報オブジェクトの配列を返します。  <br/> |
 |[CalcFormPropSet](imapiformmgr-calcformpropset.md) <br/> |フォームのグループが使用するプロパティの配列を返します。  <br/> |
-|[CreateForm](imapiformmgr-createform.md) <br/> |フォームのメッセージクラスに基づいて新しいメッセージを作成するためのフォームを起動します。  <br/> |
-|[selectform](imapiformmgr-selectform.md) <br/> |ユーザーがフォームを選択できるようにするダイアログボックスを表示し、そのフォームを記述するフォーム情報オブジェクトを返します。  <br/> |
-|[select多重フォーム](imapiformmgr-selectmultipleforms.md) <br/> |ユーザーが複数のフォームを選択できるようにするダイアログボックスを表示し、それらのフォームを記述するフォーム情報オブジェクトの配列を返します。  <br/> |
-|[selectformcontainer](imapiformmgr-selectformcontainer.md) <br/> |ユーザーがフォームコンテナーを選択できるようにするダイアログボックスを提供し、ユーザーが選択したコンテナーオブジェクトのインターフェイスを返します。  <br/> |
-|[openformcontainer](imapiformmgr-openformcontainer.md) <br/> |特定のフォームコンテナーの[imapiformcontainer](imapiformcontaineriunknown.md)インターフェイスを開きます。  <br/> |
+|[CreateForm](imapiformmgr-createform.md) <br/> |フォームを起動して、フォームのメッセージ クラスに基づいて新しいメッセージを作成します。  <br/> |
+|[SelectForm](imapiformmgr-selectform.md) <br/> |ユーザーがフォームを選択できるダイアログ ボックスを表示し、そのフォームを説明するフォーム情報オブジェクトを返します。  <br/> |
+|[SelectMultipleForms](imapiformmgr-selectmultipleforms.md) <br/> |ユーザーが複数のフォームを選択できるダイアログ ボックスを表示し、それらのフォームを記述するフォーム情報オブジェクトの配列を返します。  <br/> |
+|[SelectFormContainer](imapiformmgr-selectformcontainer.md) <br/> |ユーザーがフォーム コンテナーを選択できるダイアログ ボックスを表示し、ユーザーが選択したコンテナー オブジェクトのインターフェイスを返します。  <br/> |
+|[OpenFormContainer](imapiformmgr-openformcontainer.md) <br/> |特定の [フォーム コンテナーの IMAPIFormContainer](imapiformcontaineriunknown.md) インターフェイスを開きます。  <br/> |
 |[PrepareForm](imapiformmgr-prepareform.md) <br/> |開くフォームをダウンロードします。  <br/> |
 |[IsInConflict](imapiformmgr-isinconflict.md) <br/> |フォームが独自のメッセージ競合を処理できるかどうかを決定します。  <br/> |
-|[GetLastError](imapiformmgr-getlasterror.md) <br/> |フォームマネージャーオブジェクトに発生する前のエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
+|[GetLastError](imapiformmgr-getlasterror.md) <br/> |フォーム マネージャー オブジェクトに発生した以前のエラーに関する情報を含む [MAPIERROR](mapierror.md) 構造体を返します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

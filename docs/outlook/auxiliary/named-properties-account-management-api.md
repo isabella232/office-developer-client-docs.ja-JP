@@ -18,9 +18,9 @@ ms.locfileid: "33412017"
 
 このセクションでは、アカウント管理 API の名前付きプロパティについて説明します。
   
-|**名前付きプロパティ**|**説明**|
+|**Named プロパティ**|**説明**|
 |:-----|:-----|
 |[PidLidInternetAccountName](pidlidinternetaccountname.md) <br/> |メッセージを配信したアカウントの表示名を返します。  <br/> |
-|[PidLidInternetAccountStamp](pidlidinternetaccountstamp.md) <br/> |メッセージを配信したアカウントのアカウントスタンプを返します。  <br/> |
+|[PidLidInternetAccountStamp](pidlidinternetaccountstamp.md) <br/> |メッセージを配信したアカウントのアカウント スタンプを返します。  <br/> |
    
 

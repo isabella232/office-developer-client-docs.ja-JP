@@ -23,12 +23,12 @@ ms.locfileid: "33412388"
   
  **配布リストのメンバーを取得するには**
   
-1. **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))、 **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))、 **PR_DISPLAY_TYPE**など、取得するメンバーのプロパティを使用して、サイズが変更されたプロパティタグ配列を作成します ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))
+1. PR_ENTRYID ([PidTagEntryId)](pidtagentryid-canonical-property.md) **、PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) **、PR_DISPLAY_TYPE** ([PidTagDisplayType)](pidtagdisplaytype-canonical-property.md)など、取得するメンバーのプロパティを含むサイズのプロパティ タグ **配列を** 作成します。
     
-2. [IAddrBook:: openentry](iaddrbook-openentry.md)を呼び出して、配布リストを開きます。 
+2. [IAddrBook::OpenEntry を呼び出して](iaddrbook-openentry.md)配布リストを開きます。 
     
-3. 配布リストの**IABContainer:: getcontentstable**メソッドを呼び出して、そのコンテンツテーブルにアクセスします。 
+3. 配布リストの **IABContainer::GetContentsTable** メソッドを呼び出して、そのコンテンツ テーブルにアクセスします。 
     
-4. [hrqueryallrows](hrqueryallrows.md)を呼び出して、配布リストのメンバーを表すすべてのテーブルの行を取得します。 
+4. [HrQueryAllRows を](hrqueryallrows.md)呼び出して、配布リストのメンバーを表すテーブルのすべての行を取得します。 
     
 

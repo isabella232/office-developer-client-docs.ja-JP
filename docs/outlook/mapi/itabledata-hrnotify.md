@@ -1,5 +1,5 @@
 ---
-title: itabledatahrnotify
+title: ITableDataHrNotify
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33413270"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-表の行の通知を送信します。
+テーブル行の通知を送信します。
   
 ```cpp
 HRESULT HrNotify(
@@ -41,13 +41,13 @@ HRESULT HrNotify(
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _cvalues_
+ _cValues_
   
-> 順番_lpspropvalue_パラメーターによってポイントされている[spropvalue](spropvalue.md)構造のプロパティ値の数。 
+> [in]_lpSPropValue_ パラメーターが指す [SPropValue](spropvalue.md)構造体のプロパティ値の数。 
     
- _lpspropvalue_
+ _lpSPropValue_
   
-> 順番ターゲット行の列の値を記述する**spropvalue**構造体へのポインター。 
+> [in]ターゲット行の列の値を記述する **SPropValue** 構造体へのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -57,7 +57,7 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-**itabledata:: hrnotify**メソッドは、 _lpspropvalue_パラメーターで指定されたプロパティによって示される行に一致する行に対して TABLE_ROW_MODIFIED 通知を送信します。 **hrnotify**は、変更が行に対して発生したかどうかにかかわらず通知を送信します。 表のビューを持つすべてのクライアントおよびサービスプロバイダーは、 [「IMAPITable:: アドバイス](imapitable-advise.md)」を参照して、この通知を受信します。 
+**ITableData::HrNotify** メソッドは _、lpSPropValue_ パラメーターが示すプロパティで説明されている行に一致する行に対して TABLE_ROW_MODIFIED 通知を送信します。 **HrNotify は** 、行に変更が発生したかどうかに関係なく通知を送信します。 テーブルのビューを持ち [、IMAPITable::Advise](imapitable-advise.md) を呼び出しているすべてのクライアントとサービス プロバイダーは、ビューに関する通知を登録するためにこの通知を受け取ります。 
   
 ## <a name="see-also"></a>関連項目
 

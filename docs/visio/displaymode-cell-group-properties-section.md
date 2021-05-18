@@ -22,13 +22,13 @@ ms.locfileid: "33413186"
   
 |**値**|**表示モード**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|.0  <br/> |グループ図形とテキストを表示しません。  <br/> |**visGrpDispModeNone** <br/> |
-|1   <br/> |メンバー図形の背後にグループ図形を表示します。  <br/> |**visGrpDispModeBack** <br/> |
-|2   <br/> |メンバー図形の手前にグループ図形を表示します。  <br/> |**visGrpDispModeFront** <br/> |
+|0  <br/> |グループ図形とテキストを表示しません。  <br/> |**visGrpDispModeNone** <br/> |
+|1  <br/> |メンバー図形の背後にグループ図形を表示します。  <br/> |**visGrpDispModeBack** <br/> |
+|2  <br/> |メンバー図形の手前にグループ図形を表示します。  <br/> |**visGrpDispModeFront** <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この値を設定するには、グループを選択し、[[開発](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] グループで [**基本動作**] をクリックし、[**グループデータ**] ボックスの一覧から表示モードを選択することもできます。 
+この値を設定するには、グループを選択し、[開発]タブの [図形デザイン][](run-in-developer-mode-display-the-developer-tab.md)グループの [動作] をクリックし、[グループ データ] リストから表示モード **を選択** します。  
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [DisplayMode] セルへの参照を取得するには、次の値を使用します。 
   

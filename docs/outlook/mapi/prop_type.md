@@ -19,17 +19,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33412836"
 ---
-# <a name="proptype"></a>PROP_TYPE
+# <a name="prop_type"></a>PROP_TYPE
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定したプロパティタグのプロパティの種類を返します。
+指定したプロパティ タグのプロパティの種類を返します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |[SPropValue](spropvalue.md) <br/> |
    
 ```cpp
@@ -40,13 +40,13 @@ PROP_TYPE (ulPropTag)
 
  _ulPropTag_
   
-> 返されるプロパティの型を含む property タグ。
+> 返されるプロパティの種類を含むプロパティ タグ。
     
 ## <a name="remarks"></a>注釈
 
-**PROP_TYPE**マクロを使用して、プロパティの種類を調べることができます。 たとえば、PROP_TYPE (**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))) を呼び出すと、値 PT_BINARY が返されます。
+プロパティ **PROP_TYPE** マクロを使用して、プロパティの種類を特定できます。 たとえば、呼び出PROP_TYPE **(** PR_ENTRYID ([PidTagEntryId](pidtagentryid-canonical-property.md))) は、返される値PT_BINARYします。
   
-すべてのプロパティタグには、下位ワード (ビット 0 ~ 15) のプロパティの種類と、上位ワード (ビット 16 ~ 31) のプロパティの識別子が含まれています。 **PROP_TYPE**マクロは、プロパティの型を抽出し、それをビット 0 ~ 15 の整数に設定して返します。 戻り値の残りのビットは0に設定されます。 
+すべてのプロパティ タグには、低次ワード (ビット 0 ~ 15) のプロパティ型と、高次ワード (ビット 16 ~ 31) のプロパティ識別子が含まれる。 この **PROP_TYPE** は、プロパティの種類を抽出し、返される整数のビット 0 ~ 15 に格納します。 戻り値の残りのビットは 0 に設定されます。 
   
 ## <a name="see-also"></a>関連項目
 

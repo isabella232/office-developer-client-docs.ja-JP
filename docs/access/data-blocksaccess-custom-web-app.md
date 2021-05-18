@@ -1,5 +1,5 @@
 ---
-title: データブロック (Access カスタム web アプリ)
+title: データ ブロック (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,19 +13,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411331"
 ---
-# <a name="data-blocks-access-custom-web-app"></a>データブロック (Access カスタム web アプリ)
+# <a name="data-blocks-access-custom-web-app"></a>データ ブロック (Access カスタム Web アプリ)
 
 > [!IMPORTANT]
 > マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [CreateRecord データブロック (Access カスタム web アプリ)](createrecord-data-block-access-custom-web-app.md)
+- [CreateRecord Data Block (Access custom Web app)](createrecord-data-block-access-custom-web-app.md)
     
-- [[データの制限] ブロック (Access カスタム web アプリ)](editrecord-data-block-access-custom-web-app.md)
+- [EditRecord Data Block (Access custom Web app)](editrecord-data-block-access-custom-web-app.md)
     
-- [ForEachRecord データブロック (Access カスタム web アプリ)](foreachrecord-data-block-access-custom-web-app.md)
+- [ForEachRecord データ ブロック (Access カスタム Web アプリ)](foreachrecord-data-block-access-custom-web-app.md)
     
-- [LookupRecord データブロック (Access カスタム web アプリ)](lookuprecord-data-block-access-custom-web-app.md)
+- [LookupRecord Data Block (Access custom Web app)](lookuprecord-data-block-access-custom-web-app.md)
     
 

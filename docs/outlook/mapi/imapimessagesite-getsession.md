@@ -25,7 +25,7 @@ ms.locfileid: "33412689"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-現在のメッセージが作成または開かれた MAPI セッションを返します。
+現在のメッセージが作成または開かされた MAPI セッションを返します。
   
 ```cpp
 HRESULT GetSession(
@@ -35,9 +35,9 @@ HRESULT GetSession(
 
 ## <a name="parameters"></a>パラメーター
 
- _ppsession_
+ _ppSession_
   
-> 読み上げ返されたセッションオブジェクトへのポインターへのポインター。
+> [out]返されたセッション オブジェクトへのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -47,11 +47,11 @@ S_OK
     
 S_FALSE 
   
-> 現在のメッセージにはセッションが存在しません。
+> 現在のメッセージのセッションは存在しません。
     
 ## <a name="remarks"></a>注釈
 
-フォームサーバーに関連するインターフェイスの一覧については、「 [MAPI フォームインターフェイス](mapi-form-interfaces.md)」を参照してください。
+フォーム サーバーに関連するインターフェイスの一覧については、「MAPI フォーム インターフェイス [」を参照してください](mapi-form-interfaces.md)。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -59,7 +59,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer  <br/> |cmymapiformviewer:: getsession  <br/> |mfcmapi は、 **IMAPIMessageSite:: getsession**メソッドを使用して、現在キャッシュされているセッションポインターを返します (使用可能な場合)。  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetSession  <br/> |MFCMAPI では **、IMAPIMessageSite::GetSession** メソッドを使用して、現在キャッシュされているセッション ポインター (使用可能な場合) を返します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

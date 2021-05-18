@@ -25,11 +25,11 @@ ms.locfileid: "33413123"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージクラスへの指定された数の文字列ポインターを含む、既存の[SMessageClassArray](smessageclassarray.md)構造体のバイト数を計算します。 
+メッセージ クラスへの指定された数の文字列ポインターを含む既存の [SMessageClassArray](smessageclassarray.md) 構造体内のバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |**SMessageClassArray** <br/> |
    
 ```cpp
@@ -38,9 +38,9 @@ CbMessageClassArray (_c)
 
 ## <a name="parameters"></a>パラメーター
 
- __c_
+ _ _c_
   
-> 既存の**SMessageClassArray**に含まれているメッセージクラスへのポインターの数。
+> 既存の **SMessageClassArray** に含まれるメッセージ クラスへのポインターの数。
     
 ## <a name="see-also"></a>関連項目
 

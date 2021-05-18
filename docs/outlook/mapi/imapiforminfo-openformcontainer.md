@@ -1,5 +1,5 @@
 ---
-title: imapiforminfoopenformcontainer
+title: IMAPIFormInfoOpenFormContainer
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33414005"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-特定のフォームがインストールされているフォームコンテナーへのポインターを返します。
+特定のフォームがインストールされているフォーム コンテナーへのポインターを返します。
   
 ```cpp
 HRESULT OpenFormContainer(
@@ -37,7 +37,7 @@ HRESULT OpenFormContainer(
 
  _ppformcontainer_
   
-> 読み上げ返される form container オブジェクトへのポインターへのポインター。
+> [out]返されるフォーム コンテナー オブジェクトへのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 

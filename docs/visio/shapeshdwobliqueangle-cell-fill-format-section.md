@@ -30,7 +30,7 @@ ms.locfileid: "33414033"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [shapeshdwobliqueangle]  <br/> |
+| セル名 :  <br/> | ShapeShdwObliqueAngle  <br/> |
    
 プログラムから、インデックスによって [ShapeShdwObliqueAngle] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

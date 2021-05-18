@@ -25,7 +25,7 @@ ms.locfileid: "33412052"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージストアの種類を示すプロバイダー定義の[MAPIUID](mapiuid.md)構造が含まれています。 
+メッセージ ストアの種類を示すプロバイダー定義 [の MAPIUID](mapiuid.md) 構造体を含む。 
   
 |||
 |:-----|:-----|
@@ -36,21 +36,21 @@ ms.locfileid: "33412052"
    
 ## <a name="remarks"></a>注釈
 
-[MAPIUID](mapiuid.md)構造体は、メッセージストアの種類を識別します。 この値は、メッセージストアオブジェクトのメッセージストアプロバイダーによって計算され、各プロバイダーに対して一意です。 通常、メッセージストアテーブルを参照して、必要な種類 (パブリックフォルダーなど) のストアを検索するために使用されます。 
+[MAPIUID 構造体は](mapiuid.md)、メッセージ ストアの種類を識別します。 この値は、メッセージ ストア オブジェクト上のメッセージ ストア プロバイダーによって計算され、各プロバイダーに固有です。 通常、メッセージ ストア テーブルを参照して、パブリック フォルダーなどの目的の種類のストアを検索するために使用されます。 
   
-このプロパティは、アドレス帳の**PR_AB_PROVIDER_ID** ([PidTagAbProviderId](pidtagabproviderid-canonical-property.md)) プロパティに似ています。 
+このプロパティは、アドレス帳の PR_AB_PROVIDER_ID **(** [PidTagAbProviderId](pidtagabproviderid-canonical-property.md)) プロパティに類似しています。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -60,7 +60,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 25368f6c-4fba-4381-840c-ca122bd31b5f
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7e61e98d1db1ab3acb958da353d8d22870937632
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32328715"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-連絡先フォルダー内の連絡先の電子メールアドレスがスパムフィルターに関して特別に処理されるかどうかを示します。
+連絡先フォルダー内の連絡先の電子メール アドレスがスパム フィルターに関して特別に処理されるかどうかを示します。
   
 |||
 |:-----|:-----|
@@ -34,33 +34,33 @@ ms.locfileid: "32328715"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |スパム  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-"0x00000001" に設定されている場合、これらの電子メールアドレスは、これらのアドレスからのメールが "not 迷惑" として扱われるように、迷惑メールルール制限の "信頼できる連絡先の電子メールアドレス" 部分に設定する必要があります。 "0x00000000" に設定されている場合は、連絡先フォルダーからの電子メールアドレスを迷惑メールルールに追加してはいけません。また、ルールのセクションは NULL である必要があります。
+"0x00000001" に設定されている場合、これらの電子メール アドレスは、これらのアドレスからのメールが "迷惑メールではない" として扱われるなど、迷惑メール ルール制限の "信頼済み" 連絡先メール アドレス部分を設定する必要があります。 "0x00000000" に設定されている場合、連絡先フォルダーの電子メール アドレスを迷惑メール ルールに追加し、ルールのセクションは NULL である必要があります。
   
-このプロパティが "0x00000001" という値で存在し、追加された連絡先の電子メールアドレスが迷惑メールルールの [信頼できる連絡先] セクションにまだ含まれていない場合は、それらの電子メールアドレスを制限に追加する必要があります。 このプロパティが "0x00000000" の場合は、何もする必要はありません。
+このプロパティに値 "0x00000001" が指定されている場合、追加された連絡先に迷惑メール ルールの信頼できる連絡先セクションにまだ含まれていない電子メール アドレスがある場合は、これらの電子メール アドレスを制限に追加する必要があります。 このプロパティが "0x00000000"の場合、アクションは必要ありません。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
+[[MS-OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
   
-> 許可/ブロックリストの処理と、迷惑メールメッセージの決定を有効にします。
+> 許可/ブロック リストの処理と迷惑メール メッセージの決定を有効にできます。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -70,7 +70,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -23,7 +23,7 @@ ms.locfileid: "33411408"
 |**Cell**|**説明**|
 |:-----|:-----|
 |**Color** <br/> |グラデーションの分岐点の色の値。この値は、文書パレットで色のインデックス番号として記述するか、[RGB](rgb-function-visioshapesheet.md)、[THEMEVAL](themeval-function.md)、または [HSL](hsl-function.md) 関数 (例として) を使用して記述できます。<br/> |
-|**colortrans** <br/> |グラデーション色の透明度をパーセントで表します。  <br/> |
+|**ColorTrans** <br/> |グラデーション色の透明度をパーセントで表します。  <br/> |
 |**Position** <br/> |線のグラデーションに沿ったグラデーションの分岐点の位置を、グラデーションの起点から行の外縁までのパーセントで表します。  <br/> |
    
 

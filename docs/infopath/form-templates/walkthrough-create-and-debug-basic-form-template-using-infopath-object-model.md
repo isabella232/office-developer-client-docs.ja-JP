@@ -1,13 +1,13 @@
 ---
-title: 'チュートリアル: InfoPath オブジェクトモデルを使用して基本的なフォームテンプレートを作成およびデバッグする'
+title: 'チュートリアル: InfoPath オブジェクト モデルを使用して基本的なフォーム テンプレートを作成およびデバッグする'
 manager: soliver
 ms.date: 01/13/2015
 ms.audience: Developer
 keywords:
-- フォームテンプレート [infopath 2007], チュートリアル, フォームテンプレート [infopath 2007], infopath 2003 互換の infopath 2003 互換フォームテンプレートの作成、チュートリアル
+- フォーム テンプレート [infopath 2007]、ウォークスルー、フォーム テンプレート [InfoPath 2007]、InfoPath 2003 互換、InfoPath 2003 互換フォーム テンプレートの作成、チュートリアル
 localization_priority: Normal
 ms.assetid: 7658705f-c062-49a1-bea6-837737df2425
-description: このトピックでは、SemiTrust 名前空間によって提供される infopath 2003 互換オブジェクトモデルで動作する、基本的な infopath マネージコードフォームテンプレートを作成する方法について説明します。
+description: このトピックでは、Microsoft が提供する InfoPath 2003 互換オブジェクト モデルで動作する基本的な InfoPath マネージ コード フォーム テンプレートを作成する方法について説明します。Office.Interop.InfoPath.SemiTrust 名前空間。
 ms.openlocfilehash: c559aedad5c62134c796196c63c1a84f70c4dc3e
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -15,17 +15,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33414341"
 ---
-# <a name="walkthrough-create-and-debug-a-basic-form-template-using-the-infopath-object-model"></a>チュートリアル: InfoPath オブジェクトモデルを使用して基本的なフォームテンプレートを作成およびデバッグする
+# <a name="walkthrough-create-and-debug-a-basic-form-template-using-the-infopath-object-model"></a>チュートリアル: InfoPath オブジェクト モデルを使用して基本的なフォーム テンプレートを作成およびデバッグする
 
-このトピックでは、 [SemiTrust](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.aspx)名前空間によって提供される infopath 2003 互換オブジェクトモデルで動作する、基本的な infopath マネージコードフォームテンプレートを作成する方法について説明します。 
+このトピックでは[、Microsoft.Office.Interop.InfoPath.SemiTrust](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.aspx)名前空間によって提供される InfoPath 2003 互換オブジェクト モデルで動作する基本的な InfoPath マネージ コード フォーム テンプレートを作成する方法について説明します。 
   
 ## <a name="hello-world"></a>Hello World
 
-次の例では、InfoPath 2003 互換オブジェクトモデルの[alert](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.Alert.aspx)メソッドを使用して、簡単な警告ダイアログボックスを表示する方法について説明します。 
+次の例では、InfoPath 2003 互換オブジェクト モデルの [Alert](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.Alert.aspx) メソッドを使用して、簡単なアラート ダイアログ ボックスを表示する方法について説明します。 
   
 ### <a name="create-a-new-infopath-form-template-that-works-with-the-infopath-2003-compatible-object-model"></a>InfoPath 2003 互換オブジェクト モデルを使用する新しい InfoPath フォーム テンプレートを作成する
 
-1. infopath 2003 互換オブジェクトモデルで動作する新しいフォームテンプレートを作成します。詳細については、「 [infopath 2003 オブジェクトモデルを使用してフォームテンプレートを作成する](how-to-create-a-form-template-using-the-infopath-2003-object-model.md)」を参照してください。
+1. [「InfoPath 2003](how-to-create-a-form-template-using-the-infopath-2003-object-model.md)オブジェクト モデルを使用してフォーム テンプレートを作成する」の説明に従って、InfoPath 2003 互換オブジェクト モデルで動作する新しいフォーム テンプレートを作成します。
     
 2. フォーム テンプレート プロジェクトを HelloWorld という名前で保存します。 
     
@@ -37,13 +37,13 @@ ms.locfileid: "33414341"
     
 2. 挿入したコントロールを右クリックして、[**ボタンのプロパティ**] をクリックします。
     
-3. [**ラベル**を警告に変更する。
+3. [ラベル] **を [アラート** ] に変更します。
     
-4. **ID**を AlertID に変更します。
+4. ID を **AlertID** に変更します。
     
 5. [**フォームのコードを編集**] をクリックします。
     
-   [OnClick](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._ButtonEventSink_Event.OnClick.aspx)イベントのイベントハンドラースケルトンが作成され、Visual Studio 2012 のコードエディターにフォーカスが移動します。 イベントハンドラーの処理の詳細については、「 [InfoPath 2003 オブジェクトモデルを使用してイベントハンドラーを追加](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md)する」を参照してください。 
+   [OnClick](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._ButtonEventSink_Event.OnClick.aspx)イベントのイベント ハンドラー スケルトンが作成され、フォーカスは 2012 年にコード エディター Visual Studioされます。 イベント ハンドラーの操作の詳細については [、「InfoPath 2003](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md)オブジェクト モデルを使用してイベント ハンドラーを追加する」を参照してください。 
     
    これでボタンのイベント ハンドラーにフォーム コードを追加する準備ができました。
     
@@ -77,7 +77,7 @@ ms.locfileid: "33414341"
    ```
 
    > [!NOTE]
-   > **Alert** メソッドを使用する代わりに、**System.Windows.Forms** 名前空間の **MessageBox.Show** メソッドを使用してメッセージ ボックスを表示することもできます。 そのためには、system.web アセンブリへの参照を追加し、コードファイルの先頭に`using System.Windows.Forms;`ディレクティブ`Imports System.Windows.Forms`を追加するか、または次のようなコード行を入力する必要があります。`MessageBox.Show("Hello World!); or MessageBox.Show("Hello World!)`
+   > **Alert** メソッドを使用する代わりに、**System.Windows.Forms** 名前空間の **MessageBox.Show** メソッドを使用してメッセージ ボックスを表示することもできます。 これを行うには、システムへの参照を追加する必要があります。Windows。フォーム アセンブリを作成し、コード ファイルの先頭にあるディレクティブを追加または追加し、次のようなコード行 `using System.Windows.Forms;` `Imports System.Windows.Forms` を入力します。`MessageBox.Show("Hello World!); or MessageBox.Show("Hello World!)`
   
 2. InfoPath のデザイン モード ウィンドウに切り替え、[**ホーム**] タブの [**プレビュー**] ボタンをクリックします。 
     
@@ -109,7 +109,7 @@ ms.locfileid: "33414341"
     
 4. [**デバッグ**] メニューで [**ステップ オーバー**] をクリックするか、または Shift キーを押しながら F8 キーを押して、コード内を順に移動します。 
     
-   **Alert**メソッドのコードが実行され、"Hello World!" が実行されます。 通知が InfoPath**プレビュー**ウィンドウに表示されます。 
+   **Alert** メソッドのコードが実行され、InfoPath の [**プレビュー**] ウィンドウに "Hello World!" という通知が表示されます。 
     
 ## <a name="getting-the-current-users-name"></a>現在のユーザーの名前を取得する
 
@@ -123,13 +123,13 @@ ms.locfileid: "33414341"
     
 3. [**マイフィールド**] ノードを右クリックし、[**追加**] をクリックします。
     
-4. [**名前**] に「 **employee**」と入力し、[ **OK**] をクリックします。
+4. [**名前] に****「employee」と入力** し **、[OK] をクリックします**。
     
 5. [**employee**] ノードをビューにドラッグします。 
     
 6. [**開発**] タブの [**OnLoad イベント**] をクリックします。
     
-   これにより、 [OnLoad](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnLoad.aspx)イベントのイベントハンドラーが作成され、コードエディターにフォーカスが移動します。 フォームを読み込むたびに、このイベント ハンドラーのコードが呼び出されます。 次の手順は、ユーザーの名前を取得するフォーム コードをイベント ハンドラーに追加する方法を示しています。 
+   これにより [、OnLoad](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnLoad.aspx) イベントのイベント ハンドラーが作成され、コード エディターにフォーカスが移動します。 フォームを読み込むたびに、このイベント ハンドラーのコードが呼び出されます。 次の手順は、ユーザーの名前を取得するフォーム コードをイベント ハンドラーに追加する方法を示しています。 
     
 ### <a name="add-form-code"></a>フォーム コードを追加する
 
@@ -166,7 +166,7 @@ ms.locfileid: "33414341"
     
    [employee] ボックスに自分のユーザー名が表示されます。 
     
-マネージコードフォームテンプレートを展開する方法については、「[コードを含む InfoPath フォームテンプレートを展開](how-to-deploy-infopath-form-templates-with-code.md)する」を参照してください。 infopath の2003互換オブジェクトモデルで動作するマネージコードフォームテンプレートの infopath オブジェクトモデルと一般的なプログラミングタスクの詳細については、「 [infopath 2003 オブジェクトモデルについ](understanding-the-infopath-2003-object-model.md)て」を参照してください。 
+マネージ コード フォーム テンプレートを展開する方法については、「コードを使用して InfoPath フォーム テンプレートを展開 [する」を参照してください](how-to-deploy-infopath-form-templates-with-code.md)。 InfoPath 2003 互換オブジェクト モデルで動作するマネージ コード フォーム テンプレートの InfoPath オブジェクト モデルと一般的なプログラミング タスクの詳細については [、「InfoPath 2003](understanding-the-infopath-2003-object-model.md)オブジェクト モデルについて」を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

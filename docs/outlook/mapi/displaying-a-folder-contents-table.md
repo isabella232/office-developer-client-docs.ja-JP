@@ -19,26 +19,26 @@ ms.locfileid: "33412395"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォルダーの contents テーブルには、すべてのメッセージに関する概要情報が含まれています。 新しい受信メッセージに関する概要情報は、メッセージクラスの受信フォルダーのコンテンツテーブルに表示されます。 ユーザーがこの情報を使用できるようにするには、テーブルを取得し、必要に応じて列と行を表示します。
+フォルダーのコンテンツ テーブルには、すべてのメッセージに関する概要情報が含まれます。 新しい受信メッセージに関する概要情報が、メッセージ クラスの受信フォルダーのコンテンツ テーブルに表示されます。 この情報をユーザーが利用するには、テーブルを取得し、必要に応じて列と行を表示します。
   
-**フォルダコンテンツテーブルを表示するには**
+**フォルダーの内容テーブルを表示するには**
   
-1. [IMsgStore:: openentry](imsgstore-openentry.md)を呼び出し、テーブルを含むフォルダーのエントリ識別子を渡します。
+1. [IMsgStore::OpenEntry](imsgstore-openentry.md)を呼び出し、テーブルを含むフォルダーのエントリ識別子を渡します。
     
-2. フォルダーの[IMAPIContainer:: getcontentstable](imapicontainer-getcontentstable.md)メソッドを呼び出して、そのコンテンツテーブルを開きます。 
+2. フォルダーの [IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md) メソッドを呼び出して、そのコンテンツ テーブルを開きます。 
     
-3. 必要に応じて、テーブルの[IMAPITable:: SetColumns](imapitable-setcolumns.md)メソッドを呼び出して特定の列を指定することによって、contents テーブルの表示を制限します。 
+3. テーブルの [IMAPITable::SetColumns](imapitable-setcolumns.md) メソッドを呼び出して特定の列を指定することで、必要に応じてコンテンツ テーブルのビューを制限します。 
     
-4. 必要に応じて、テーブルの[IMAPITable:: Restrict](imapitable-restrict.md)メソッドを呼び出して、特定の行をフィルター処理することによって、contents テーブルの表示を制限します。 たとえば、まだ読まれていない特定のメッセージクラスを持つメッセージのみを表示する場合は、次のようにします。 
+4. テーブルの [IMAPITable::Restrict](imapitable-restrict.md) メソッドを呼び出して特定の行をフィルター処理することで、必要に応じてコンテンツ テーブルのビューを制限します。 たとえば、まだ読み取っていない特定のメッセージ クラスを持つメッセージのみを表示する場合は、次の処理を行います。 
     
-    1. **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) プロパティと目的のメッセージクラスを一致させるプロパティ制限を[spropertyrestriction](spropertyrestriction.md)構造で作成します。 
+    1. 目的のメッセージ クラスと PR_MESSAGE_CLASS **(** [PidTagMessageClass](pidtagmessageclass-canonical-property.md)) プロパティと一致する [SPropertyRestriction](spropertyrestriction.md)構造体にプロパティ制限を作成します。 
         
-    2. **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) をプロパティタグとして使用し、MSGFLAG_UNREAD 値をマスクとして使用する[sbitmaskrestriction](sbitmaskrestriction.md)構造で、ビットマスク制限を作成します。
+    2. プロパティ タグとして PR_MESSAGE_FLAGS ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) を使用し、マスクとして **MSGFLAG_UNREAD** 値を使用する [SBitMaskRestriction](sbitmaskrestriction.md)構造体にビットマスク制限を作成します。
         
-    3. プロパティとビットマスク制限を結合する[SAndRestriction](sandrestriction.md)構造で制限を作成します。 
+    3. プロパティとビットマスク [の制限に参加する SAndRestriction](sandrestriction.md) 構造体に制限を作成します。 
     
-5. 必要に応じて、テーブルの[IMAPITable:: sorttable](imapitable-sorttable.md)メソッドを呼び出して、コンテンツテーブルを並べ替えます。 
+5. 必要に応じて、テーブルの [IMAPITable::SortTable](imapitable-sorttable.md) メソッドを呼び出して、コンテンツ テーブルを並べ替えてください。 
     
-6. 処理のために contents テーブルからすべての行を取得するには、 [IMAPITable:: QueryRows](imapitable-queryrows.md)を呼び出します。 
+6. [IMAPITable::QueryRows](imapitable-queryrows.md)を呼び出して、処理のためにコンテンツ テーブルからすべての行を取得します。 
     
 

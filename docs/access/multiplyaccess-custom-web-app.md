@@ -1,5 +1,5 @@
 ---
-title: 掛け算 (Access カスタム web アプリ)
+title: 乗算 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33412164"
 ---
-# <a name="multiply-access-custom-web-app"></a>掛け算 (Access カスタム web アプリ)
+# <a name="multiply-access-custom-web-app"></a>乗算 (Access カスタム Web アプリ)
 
 2 つの式を乗算します。
   
@@ -27,7 +27,7 @@ ms.locfileid: "33412164"
 
 *expression*  \*  *expression* 
   
-*式* 数値カテゴリに含まれるいずれかのデータ型の任意の有効な式。 
+*式*  数値カテゴリ内のいずれかのデータ型の有効な式。 
   
 ## <a name="return-value"></a>戻り値
 

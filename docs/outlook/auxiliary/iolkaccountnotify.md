@@ -15,7 +15,7 @@ ms.locfileid: "33412500"
 ---
 # <a name="iolkaccountnotify"></a>IOlkAccountNotify
 
-アカウントの変更についてクライアントへのコールバックを提供します。
+アカウントに対する変更のコールバックをクライアントに提供します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -25,7 +25,7 @@ ms.locfileid: "33412500"
 |提供元:  <br/> | クライアント  <br/> |
 |インターフェイス識別子:  <br/> |IID_IOlkAccountNotify  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
@@ -33,7 +33,7 @@ ms.locfileid: "33412500"
    
 ## <a name="remarks"></a>注釈
 
-このインターフェイスは、通知を設定するときに[IOlkAccountManager:: アドバイズ](iolkaccountmanager-advise.md)に渡されます。 
+このインターフェイスは、通知の設定時 [に IOlkAccountManager::Advise](iolkaccountmanager-advise.md) に渡されます。 
   
 ## <a name="see-also"></a>関連項目
 

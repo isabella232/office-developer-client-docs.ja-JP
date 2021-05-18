@@ -8,7 +8,7 @@ f1_keywords:
 - vis_sdr.chm340
 localization_priority: Normal
 ms.assetid: 3fbfa4bc-7792-b6d9-d549-4602d252c293
-description: 親図形の原点を基準としたときの、1-d 図形の終点の y 座標を表します。
+description: 親図形の原点との関係で、1-D 図形の端点の y 座標を表します。
 ms.openlocfilehash: e75355ad333b7f6398618c974f7c49e5c26c41d6
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33414194"
 ---
 # <a name="endy-cell-1-d-endpoints-section"></a>[EndY] セル ([1-D Endpoints] セクション)
 
-親図形の原点を基準としたときの、1-d 図形の終点の*y*座標を表します。 
+親図形  *の原点との*  関係で、1-D 図形の端点の y 座標を表します。 
   
 ## <a name="remarks"></a>注釈
 

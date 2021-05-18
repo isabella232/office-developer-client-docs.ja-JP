@@ -25,13 +25,13 @@ ms.locfileid: "33412038"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージセッションと、そのセッション内で作成されたすべてのメッセージを閉じます。 
+メッセージ セッションと、そのセッション内で作成されたすべてのメッセージを閉じます。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Imessage  <br/> |
+|ヘッダー ファイル:  <br/> |Imessage.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 VOID CloseIMsgSession(
@@ -41,9 +41,9 @@ VOID CloseIMsgSession(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpmsgsess_
+ _lpMsgSess_
   
-> 順番メッセージセッションの開始時に[OpenIMsgSession](openimsgsession.md)関数を使用して取得したメッセージセッションオブジェクトへのポインター。 
+> [in]メッセージ セッションの最初に [OpenIMsgSession](openimsgsession.md) 関数を使用して取得したメッセージ セッション オブジェクトへのポインター。 
     
 ## <a name="return-value"></a>Return value
 
@@ -51,8 +51,8 @@ VOID CloseIMsgSession(
   
 ## <a name="remarks"></a>注釈
 
-メッセージセッションは、基になる OLE **IStorage**オブジェクトの上に構築された複数の関連する MAPI **IMessage**オブジェクトを処理するクライアントアプリケーションおよびサービスプロバイダーによって使用されます。 クライアントまたはプロバイダーは、 [OpenIMsgSession](openimsgsession.md)関数と**CloseIMsgSession**関数を使用して、メッセージセッション内のメッセージの作成をラップします。 メッセージセッションが開かれると、クライアントまたはプロバイダーは、 [OpenIMsgOnIStg](openimsgonistg.md)への呼び出しによって、新しい**IMessage**オブジェクトを作成するために**** ポインターを渡します。 
+メッセージ セッションは、基になる OLE **IStorage** オブジェクトの上に構築された複数の関連する MAPI **IMessage** オブジェクトを処理するクライアント アプリケーションおよびサービス プロバイダーによって使用されます。 クライアントまたはプロバイダーは [、OpenIMsgSession](openimsgsession.md) 関数と **CloseIMsgSession** 関数を使用して、メッセージ セッション内でこのようなメッセージの作成をラップします。 メッセージ セッションを開いた後、クライアントまたはプロバイダーは [OpenIMsgOnIStg](openimsgonistg.md) への呼び出しでポインターを渡して、新しい **IMessage**-on- **IStorage** オブジェクトを作成します。 
   
-メッセージセッションは、メッセージのすべての添付ファイルと**** その他のプロパティに加えて、セッションの間に開かれたすべての**IMessage**オブジェクトを追跡します。 クライアントまたはプロバイダーが**CloseIMsgSession**を呼び出すと、これらのすべてのオブジェクトが閉じられます。 **CloseIMsgSession**の呼び出しは、 **IMessage**で、 **IStorage**オブジェクトを閉じる唯一の方法です。 
+メッセージ セッションでは、すべての添付ファイルとメッセージの他のプロパティに加えて、セッション期間中に開いたすべての **IMessage**-on- **IStorage** オブジェクトが追跡されます。 クライアントまたはプロバイダーが **CloseIMsgSession** を呼び出す場合、これらのオブジェクトはすべて閉じます。 **CloseIMsgSession** を呼び出す方法は **、IMessage**-on- **IStorage オブジェクトを閉じる唯一の方法** です。 
   
 

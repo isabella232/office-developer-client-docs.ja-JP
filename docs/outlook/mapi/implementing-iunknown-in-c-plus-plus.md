@@ -19,9 +19,9 @@ ms.locfileid: "32330178"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-C++ の iunknown インターフェイスの iunknown: [: QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)、 [iunknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)、および[iunknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドの実装は非常に簡単です。 [](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) 渡されたパラメーターの標準的な検証の後、 **QueryInterface**の実装は、サポートされているインターフェイスのリストに対して、要求されたインターフェイスの識別子をチェックします。 要求された識別子がサポートされている場合は、 **AddRef**が呼び出され、**この**ポインターが返されます。 要求された識別子がサポートされているリストに含まれていない場合、出力ポインターは NULL に設定され、MAPI_E_INTERFACE_NOT_SUPPORTED 値が返されます。 
+C++ での[IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) [、IUnknown::AddRef、](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)[および IUnknown::Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドの実装は、かなり簡単です。 [](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) 渡されるパラメーターの標準的な検証の後 **、QueryInterface** の実装は、要求されたインターフェイスの識別子とサポートされているインターフェイスの一覧をチェックします。 要求された識別子がサポートされている識別子の中に含まれる場合 **、AddRef** が呼び出され、この **ポインター** が返されます。 要求された識別子がサポートされているリストに含めされていない場合、出力ポインターは NULL に設定され、MAPI_E_INTERFACE_NOT_SUPPORTED値が返されます。 
   
-次のコード例は、ステータスオブジェクト ( [imapistatus: imapistatus](imapistatusimapiprop.md)インターフェイスのサブクラスであるオブジェクト) に対する**QueryInterface**を C++ で実装する方法を示しています。 **imapistatus**は、 **iunknown**から[imapistatus: iunknown](imapipropiunknown.md)を継承します。 そのため、発信者がこれらのインターフェイスのいずれかを要求した場合、インターフェイスは継承によって関連付けられるため、**この**ポインターを返すことができます。 
+次のコード例は、状態オブジェクト [(IMAPIStatus : IMAPIProp](imapistatusimapiprop.md)インターフェイスのサブクラスであるオブジェクト) に対して C++ で **QueryInterface** を実装する方法を示しています。 **IMAPIStatus は****、IUnknown** から [IMAPIProp : IUnknown を介して継承します](imapipropiunknown.md)。 したがって、呼び出し元がこれらのインターフェイスを求める場合は、継承によってインターフェイスが関連付けされるため、このポインターを返すことができます。 
   
 ```cpp
 HRESULT CMyMAPIObject::QueryInterface (REFIID   riid,
@@ -44,7 +44,7 @@ HRESULT CMyMAPIObject::QueryInterface (REFIID   riid,
 
 ```
 
-次のコード例は、 `CMyMAPIObject`オブジェクトの**AddRef**メソッドと**Release**メソッドを実装する方法を示しています。 **AddRef**と**Release**の実装は簡単であるため、多くのサービスプロバイダーはそれらをインラインで実装することを選択します。 Win32 関数**InterlockedIncrement**および**InterlockedDecrement**の呼び出しにより、スレッドセーフが保証されます。 オブジェクトのメモリはデストラクターによって解放されます。これは、 **Release**メソッドによってオブジェクトが削除されるときに呼び出されます。 
+次のコード例は、オブジェクトの **AddRef** メソッドと **Release** メソッドを実装する方法を示  `CMyMAPIObject` しています。 AddRef と Releaseの **実装は** 簡単なので、多くのサービス プロバイダーがインラインで実装を選択しています。 Win32 関数の呼び出し **は、InterlockedIncrement** と **InterlockedDecrement** によってスレッドの安全性を確保します。 オブジェクトのメモリは、Release メソッドがオブジェクトを削除するときに呼び出されるデストラクタによって解放されます。 
   
 ```cpp
 ULONG CMyMAPIObject::AddRef()

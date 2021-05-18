@@ -7,7 +7,7 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f61960f7-e018-4d2e-8e32-426ed46d9064
-description: このセクションでは、.osc プロバイダーが実装している、.osc プロバイダー拡張インターフェイスのメンバーの一般的な呼び出しシーケンス (.osc) について説明します。
+description: このセクションでは、OSC プロバイダー Outlook実装する OSC プロバイダー拡張インターフェイスのメンバーの Outlook ソーシャル コネクタ (OSC) の一般的な呼び出しシーケンスについて説明します。
 ms.openlocfilehash: f7829b710d6840ccd1fa0f990d6e03b2eb879431
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -17,41 +17,41 @@ ms.locfileid: "33413613"
 ---
 # <a name="osc-typical-calling-sequences"></a>OSC の典型的な呼び出しシーケンス
 
-このセクションでは、.osc プロバイダーが実装している、.osc プロバイダー拡張インターフェイスのメンバーの一般的な呼び出しシーケンス (.osc) について説明します。 典型的な呼び出しシーケンスは、.osc がこのようなインターフェイスやメソッドを使用する方法とタイミングを示しており、プロバイダー拡張インターフェイスに特定のメンバーを実装する方法をより良く判断できるようにします。 実際の通話シーケンスは、 [iime alprovider:: getcapabilities](isocialprovider-getcapabilities.md)メソッドによって返される機能によって異なる場合があります。 機能の例を次に示します。 
+このセクションでは、OSC プロバイダー Outlook実装する OSC プロバイダー拡張インターフェイスのメンバーの Outlook ソーシャル コネクタ (OSC) の一般的な呼び出しシーケンスについて説明します。 一般的な呼び出しシーケンスは、OSC がこのようなインターフェイスとメソッドを使用する方法と時間を示し、プロバイダー拡張インターフェイスに特定のメンバーを実装する方法をより適切に決定できます。 実際の呼び出しシーケンスは [、ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md) メソッドによって返される機能によって異なります。 機能の例を次に示します。 
   
-- プロバイダーは、ソーシャルネットワークからの友人やアクティビティを取得、キャッシュ、または動的に検索するためにサポートされています。
+- ソーシャル ネットワークからフレンドやアクティビティを取得、キャッシュ、または動的に参照するプロバイダーのサポート。
     
-- ユーザーがログオンするために、.osc が表示するユーザーインターフェイス。
+- ユーザー ログオンのために OSC が表示するユーザー インターフェイス。
     
-- .osc が使用する認証の種類 (フォームベース認証など)。
+- OSC で使用する認証の種類 (フォーム ベース認証など)。
     
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [基本認証](basic-authentication.md): .osc プロバイダーが基本認証をサポートしている場合、ソーシャルネットワークにログオンしている Office ユーザーをサポートするために、.osc の一般的な呼び出しシーケンスについて説明します。
+- [基本認証](basic-authentication.md): OSC プロバイダーが基本認証をサポートしている場合に、ソーシャル ネットワークにログオンしている Office ユーザーをサポートする OSC の一般的な呼び出しシーケンスについて説明します。
     
-- [フォームベース認証](forms-based-authentication.md): .osc プロバイダーがフォームベース認証をサポートしている場合、ソーシャルネットワークにログオンしている Office ユーザーをサポートするために、.osc の一般的な呼び出しシーケンスについて説明します。
+- [フォーム ベース認証](forms-based-authentication.md): OSC プロバイダーがフォーム ベース認証をサポートしている場合に、ソーシャル ネットワークにログオンしている Office ユーザーをサポートする OSC の一般的な呼び出しシーケンスについて説明します。
     
-- [アクティビティの取得](getting-activities.md): ソーシャルネットワークの関連プロバイダーがアクティビティの同期をサポートしている場合は、.osc の一般的な呼び出しシーケンスを、ソーシャルネットワークから同期するように記述します。
+- [Getting Activities](getting-activities.md): ソーシャル ネットワーク OSC プロバイダーがアクティビティの同期をサポートしている場合に、Office ユーザーのフレンドのアクティビティをソーシャル ネットワークから同期する OSC の一般的な呼び出しシーケンスについて説明します。
     
-- [フレンド情報の取得](getting-friends-information.md): ソーシャルネットワークの機能プロバイダーが連絡先のキャッシュされた同期をサポートしている場合は、アプリケーションから Office ユーザーのフレンドリストをソーシャルネットワークから同期するための、.osc の一般的な呼び出しシーケンスについて説明します。
+- [フレンド情報の](getting-friends-information.md)取得 : ソーシャル ネットワーク OSC プロバイダーが連絡先のキャッシュ同期をサポートしている場合に、ソーシャル ネットワークから Office ユーザーのフレンド リストを同期する OSC の一般的な呼び出しシーケンスについて説明します。
     
 ## <a name="reference"></a>参照
 
-- [Outlook Social Connector プロバイダーリファレンス](outlook-social-connector-provider-reference-0.md)
+- [Outlookソーシャル コネクタ プロバイダーリファレンス](outlook-social-connector-provider-reference-0.md)
   
 ## <a name="related-sections"></a>関連情報
 
 - [Outlook Social Connector プロバイダーの開発の概要 (英語)(機械翻訳)](getting-started-with-developing-an-outlook-social-connector-provider.md)
   
-- [.osc サンプルテンプレート](osc-sample-templates.md)
+- [OSC サンプル テンプレート](osc-sample-templates.md)
   
-- [.osc XML スキーマを使用してプロバイダーを開発する](developing-a-provider-with-the-osc-xml-schema.md)
+- [OSC XML スキーマを使用したプロバイダーの開発](developing-a-provider-with-the-osc-xml-schema.md)
   
-- [プロバイダーをデバッグする](debugging-a-provider.md)
+- [プロバイダーのデバッグ](debugging-a-provider.md)
   
-- [プロバイダーを展開する](deploying-a-provider.md)
+- [プロバイダーの展開](deploying-a-provider.md)
   
-- [プロバイダーを開発するためのベストプラクティス](best-practices-for-developing-a-provider.md)
+- [プロバイダーの開発に関するベスト プラクティス](best-practices-for-developing-a-provider.md)
   
 ## <a name="see-also"></a>関連項目
 

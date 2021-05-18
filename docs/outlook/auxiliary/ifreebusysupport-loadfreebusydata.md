@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: f0baa310-7a53-07ee-0a7d-33dd1fb465c2
-description: 指定した各ユーザーについて、時間範囲内のデータの空き時間ブロックを列挙するためのインターフェイスを返します。
+description: 指定したユーザーごとに、時間範囲内のデータの空き時間情報ブロックを列挙するインターフェイスを返します。
 ms.openlocfilehash: e55f902117a20bfefaa5d9a2f3a067cb78ec86cb
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,11 +16,11 @@ ms.locfileid: "33411233"
 ---
 # <a name="ifreebusysupportloadfreebusydata"></a>IFreeBusySupport::LoadFreeBusyData
 
-指定した各ユーザーについて、時間範囲内のデータの空き時間ブロックを列挙するためのインターフェイスを返します。 
+指定したユーザーごとに、時間範囲内のデータの空き時間情報ブロックを列挙するインターフェイスを返します。 
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IFreeBusySupport](ifreebusysupport.md)を参照してください。
+[「IFreeBusySupport」を参照してください](ifreebusysupport.md)。
   
 ```cpp
 HRESULT LoadFreeBusyData( 
@@ -34,28 +34,28 @@ HRESULT LoadFreeBusyData(
 
 ## <a name="parameters"></a>パラメーター
 
-_cmax_
+_cMax_
   
-> 順番取得する[IFreeBusyData](ifreebusydata.md)インターフェイスの数を指定します。 
+> [in]返す [IFreeBusyData](ifreebusydata.md) インターフェイスの数。 
     
 _rgfbuser_
   
-> 順番データを取得する空き時間情報ユーザーの配列。
+> [in]データを取得する空き時間情報ユーザーの配列。
     
 _prgfbdata_
   
-> 順番読み上げ[fbuser](fbuser.md)構造の_rgfbuser_配列に対応する**IFreeBusyData**インターフェイスの配列。 
+> [in][out][FBUser](fbuser.md)構造体の _rgfbuser_ 配列に対応する **IFreeBusyData** インターフェイスの配列。 
     
    > [!NOTE]
-   > このポインターの配列は、呼び出し元によって割り当てられ、呼び出し元によって解放されます。 呼び出し元が実行されたときに、参照されている実際のインターフェイスは解放されます。 
+   > このポインターの配列は、呼び出し元によって割り当て、呼び出し元によって解放されます。 呼び出し元が呼び出し元と一緒に実行されると、指す実際のインターフェイスが解放されます。 
   
 _phrStatus_
   
-> 読み上げそれぞれの対応する**IFreeBusyData**インターフェイスを取得するための**HRESULT**結果の配列。 値は NULL である場合があります。 対応する_prgfbdata_が有効な場合、結果は S_OK に設定されます。 
+> [out] **HRESULT の配列は** 、対応する各 **IFreeBusyData インターフェイスを取得するための結果** です。 値には NULL を指定できます。 対応する  _prgfbdata_ が有効S_OK場合、結果は値に設定されます。 
     
-_pcread_
+_pcRead_
   
->  読み上げ**IFreeBusyData**インターフェイスが検出された実際のユーザー数。 
+>  [out] **IFreeBusyData** インターフェイスが見つかったユーザーの実際の数。 
     
 ## <a name="return-values"></a>戻り値
 

@@ -32,19 +32,19 @@ HRESULT BeginRebaseAppointments(
 
 ## <a name="parameters"></a>パラメーター
 
-_prows_
+_pRows_
   
 > [in]必要があります。再配置する必要がある予定を記述する[SRowSet](https://msdn.microsoft.com/library/7e3761be-afd6-46cb-9a08-25e9016c1241%28Office.15%29.aspx)構造体へのポインター。通常、この構造体は[IOlkApptRebaser::EndEnumerateAppointments](iolkapptrebaser-endenumerateappointments.md)の前回の呼び出しから取得されます。
     
-_pfnprogress_
+_pfnProgress_
   
 > [in]省略可能です。進行状況が表示されることを再作業の進行状況関数へのポインター。 **PFNREBASETASKPROGRESS** は、tzmovelib.h で定義されます。 
     
-_pfncomplete_
+_pfnComplete_
   
 > [out]省略可能です。再配置の完了の通知を受信するには、再作業完了関数へのポインター。 **PFNREBASETASKCOMPLETE** は、tzmovelib.h で定義されます。 
     
-_ppcontext_
+_ppContext_
   
 > [out]必要があります。返されるコンテキストへのポインターへのポインター。このコンテキストは、通常[IOlkApptRebaser::EndRebaseAppointments](iolkapptrebaser-endrebaseappointments.md)に渡されます。
     
@@ -52,7 +52,7 @@ _ppcontext_
 
 呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このタスクは、新しいスレッドで実行されます。
   

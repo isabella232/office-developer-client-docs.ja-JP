@@ -19,11 +19,11 @@ ms.locfileid: "33414390"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
- オブジェクトがオンラインおよびオフラインになったときに mapi に通知するために、プロバイダーとストアによって使用される mapi オフラインオブジェクトを作成します。 
+ プロバイダーとストアで使用される MAPI オフライン オブジェクトを作成し、オブジェクトがオンラインおよびオフラインのときに MAPI に通知します。 
   
 |||
 |:-----|:-----|
-|エクスポート対象:  <br/> |Msmapi32  <br/> |
+|次の方法でエクスポートされます。  <br/> |Msmapi32.dll  <br/> |
 |実装元:  <br/> |Outlook  <br/> |
 |呼び出し元:  <br/> |クライアント  <br/> |
    
@@ -39,15 +39,15 @@ IMAPIOfflineMgr** ppOffline
 
 _ulFlags_
   
-> 順番0である必要があります。
+> [in]0 である必要があります。
     
-_pcreateinfo_
+_pCreateInfo_
   
-> 順番オフラインオブジェクトの作成に必要な情報が含まれている**MAPIOFFLINE_CREATEINFO**構造体へのポインター。 
+> [in]オフライン オブジェクトの作成 **にMAPIOFFLINE_CREATEINFO** 情報を含むオブジェクト構造へのポインター。 
     
-_ppoffline_
+_ppOffline_
   
-> 読み上げ**IMAPIOfflineMgr**インターフェイスへのポインター。 
+> [out] **IMAPIOfflineMgr インターフェイスへの** ポインター。 
     
 ## <a name="return-value"></a>Return value
 

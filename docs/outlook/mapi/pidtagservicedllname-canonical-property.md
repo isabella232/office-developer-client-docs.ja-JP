@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a651af84-1711-449e-ba7e-5ce09cafa02b
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: adf24bcd02d7efc303f911ee01a64325150339ce
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,34 +25,34 @@ ms.locfileid: "32330066"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-構成のために呼び出すメッセージサービスプロバイダーエントリポイント関数を含む DLL のファイル名が含まれています。
+構成を呼び出すメッセージ サービス プロバイダーエントリ ポイント関数を含む DLL のファイル名を格納します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_SERVICE_DLL_NAME、PR_SERVICE_DLL_NAME_A、PR_SERVICE_DLL_NAME_W  <br/> |
-|識別子:  <br/> |0x3d0a  <br/> |
+|識別子:  <br/> |0x3D0A  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |MAPI プロファイル  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-エントリポイント関数名が**PR_SERVICE_ENTRY_NAME** ([PidTagServiceEntryName](pidtagserviceentryname-canonical-property.md)) メソッドに表示される場合、エントリポイントが存在することを示します。
+エントリ ポイント関数名が PR_SERVICE_ENTRY_NAME **(** [PidTagServiceEntryName)](pidtagserviceentryname-canonical-property.md)メソッドに表示される場合、エントリ ポイントが存在することを示します。
   
-MAPI は DLL ファイルの名前付け規則を使用します。 文字列32をベース DLL 名に追加して、32ビットプラットフォームで実行されているバージョンを識別します。 たとえば、MAPI という名前があるとします。DLL が指定されている場合、MAPI は MAPI32 という名前を作成します。dll は、対応する32ビットバージョンの dll を表します。
+MAPI では、DLL ファイルの名前付け規則を使用します。 文字列 32 を基本 DLL 名に追加して、32 ビット プラットフォームで実行されるバージョンを識別します。 たとえば、名前を指定MAPI.DLL MAPI は、対応する 32 ビット バージョンの DLL を表す名前 MAPI32.DLL を作成します。
   
-これらのプロパティは、基本名を指定する必要があります。 MAPI は、文字列32を必要に応じて追加します。 これらのプロパティの一部として文字列32を含めると、エラーが発生します。
+これらのプロパティには、基本名を指定する必要があります。 MAPI は、必要に応じて文字列 32 を追加します。 これらのプロパティの一部として文字列 32 を含めた場合、エラーが発生します。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -65,7 +65,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -33,14 +33,14 @@ ms.locfileid: "33412430"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[strikethru] [ *i* ] *i* = <1>、2、3...  <br/> |
+|セル名:  <br/> |Char.Strikethru[ i ]*ここで**、i* = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [Strikethru] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionCharacter** <br/> |
-|行インデックス:  <br/> |**visRowCharacter** +  *i* = ** 0、1、2...  <br/> |
+|行インデックス:  <br/> |**visRowCharacter**  +  *i* *=* 0, 1, 2...  <br/> |
 |セル インデックス:  <br/> |**visCharacterStrikethru** <br/> |
    
 

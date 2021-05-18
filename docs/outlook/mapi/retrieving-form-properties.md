@@ -1,5 +1,5 @@
 ---
-title: フォームプロパティの取得
+title: フォーム プロパティの取得
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,13 +15,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33412920"
 ---
-# <a name="retrieving-form-properties"></a>フォームプロパティの取得
+# <a name="retrieving-form-properties"></a>フォーム プロパティの取得
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-カスタムメッセージの種類に意味のあるクエリを発行するには、アプリケーションがそのメッセージで想定されるプロパティを知っている必要があります。 カスタムメッセージクラスが使用するプロパティの一覧を取得するために、クライアントアプリケーションは MAPI フォームマネージャーを照会します。 フォームマネージャーは、この情報を適切なフォーム構成ファイルから取得するので、クライアントアプリケーションはこの情報を使用して、フォームサーバー自体をアクティブにするというオーバーヘッドを発生しません。 これを行うには、クライアントアプリケーションは次のように[imapiformmgr:: ResolveMessageClass](imapiformmgr-resolvemessageclass.md)メソッドを呼び出します。 
+カスタム メッセージの種類にとって意味のあるクエリを発行するには、アプリケーションで、そのメッセージで必要なプロパティを知る必要があります。 カスタム メッセージ クラスが使用するプロパティの一覧を取得するには、クライアント アプリケーションが MAPI フォーム マネージャーを照会します。 フォーム マネージャーは、適切なフォーム構成ファイルからこの情報を取得し、クライアント アプリケーションがフォーム サーバー自体をアクティブ化するオーバーヘッドなしにこの情報を使用できます。 これを行うには、クライアント アプリケーションは [IMAPIFormMgr::ResolveMessageClass](imapiformmgr-resolvemessageclass.md) メソッドを次のように呼び出します。 
   
 ```cpp
 IMAPIFormInfo *pfrminf = NULL;
@@ -29,11 +29,11 @@ hr = pfrmmgr->ResolveMessageClass("IPM.Demo", 0L, NULL, &amp;pfrminf);
 
 ```
 
-**ResolveMessageClass**の3番目の引数は、クエリがフォームサーバーを検索する、関連付けられた contents テーブルを含むフォルダーです。 NULL は、フォームマネージャーが使用可能なすべてのフォームコンテナーを検索する必要があることを示します。 クエリが特定のフォルダーに対して実行される場合は、代わりに適切な[imapifolder](imapifolderimapicontainer.md)ポインターを含めることをお勧めします。 
+**ResolveMessageClass** の 3 番目の引数は、クエリがフォーム サーバーを検索する関連付けられたコンテンツ テーブルを含むフォルダーです。 NULL は、フォーム マネージャーが使用可能なすべてのフォーム コンテナーを検索する必要があります。 クエリを特定のフォルダーに対して実行する場合は、代わりに適切な [IMAPIFolder](imapifolderimapicontainer.md) ポインターを含める方が良いです。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[フォームサーバーの相互作用](form-server-interactions.md)
+[フォーム サーバーの操作](form-server-interactions.md)
 

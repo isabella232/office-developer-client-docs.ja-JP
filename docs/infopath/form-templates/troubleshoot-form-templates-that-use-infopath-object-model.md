@@ -1,5 +1,5 @@
 ---
-title: InfoPath オブジェクトモデルを使用するフォームテンプレートのトラブルシューティング
+title: InfoPath オブジェクト モデルを使用するフォーム テンプレートのトラブルシューティング
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,22 +15,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33413662"
 ---
-# <a name="troubleshoot-form-templates-that-use-the-infopath-object-model"></a>InfoPath オブジェクトモデルを使用するフォームテンプレートのトラブルシューティング
+# <a name="troubleshoot-form-templates-that-use-the-infopath-object-model"></a>InfoPath オブジェクト モデルを使用するフォーム テンプレートのトラブルシューティング
 
 ここでは、InfoPath 2003 互換オブジェクト モデルを使用するマネージ コード フォーム テンプレートを作成する際に、発生する可能性のある一般的な問題の解決に役立つヒントを記載します。
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-[実行時に infopath 2003 オブジェクトモデルを使用するフォームテンプレートのトラブルシューティング](troubleshoot-form-templates-that-use-infopath-object-model-at-runtime.md): infopath 2003 互換の infopath マネージコードフォームテンプレートを作成およびプレビューしているときに発生する可能性のある問題のトラブルシューティングについて説明します。オブジェクトモデル。
+実行時に InfoPath 2003 オブジェクト モデルを使用するフォーム テンプレートのトラブルシューティング : [InfoPath 2003](troubleshoot-form-templates-that-use-infopath-object-model-at-runtime.md)互換オブジェクト モデルを使用する InfoPath マネージ コード フォーム テンプレートを作成およびプレビューする際に発生する可能性のあるトラブルシューティングの問題について説明します。
     
-[設計時に infopath 2003 オブジェクトモデルを使用するフォームテンプレートのトラブルシューティング](troubleshoot-form-templates-that-use-infopath-object-model-at-design-time.md): infopath 2003 互換オブジェクトモデルを使用するマネージコードフォームテンプレートを設計しているときに発生する可能性のある問題のトラブルシューティングについて説明します。
+デザイン時に InfoPath 2003 オブジェクト モデルを使用するフォーム テンプレートのトラブルシューティング : [InfoPath 2003](troubleshoot-form-templates-that-use-infopath-object-model-at-design-time.md)互換オブジェクト モデルを使用するマネージ コード フォーム テンプレートを設計する際に発生する可能性のあるトラブルシューティングの問題について説明します。
     
 ## <a name="related-sections"></a>関連情報
 
-[コードを含む InfoPath フォームテンプレートを展開](how-to-deploy-infopath-form-templates-with-code.md)する: セキュリティ上の懸念事項を含むソリューションの展開についての情報と、展開モデルを選択する際の考慮事項について説明します。
+[コードを使用して InfoPath フォーム](how-to-deploy-infopath-form-templates-with-code.md)テンプレートを展開する : ソリューションの展開に関する情報 (セキュリティ上の懸念事項、展開モデルを選択する際に考慮すべき問題など) を提供します。
     
-[infopath 2003 オブジェクトモデルを使用してエラーを処理](how-to-handle-errors-using-the-infopath-2003-object-model.md)する: infopath マネージコードソリューションでエラーを処理する方法について説明します。
+[InfoPath 2003](how-to-handle-errors-using-the-infopath-2003-object-model.md)オブジェクト モデルを使用してエラーを処理する : InfoPath マネージ コード ソリューションでエラーを処理する方法について説明します。
     
-[infopath 2003 オブジェクトモデルを使用してフォームテンプレートを開発するための一般的なタスク](common-tasks-for-developing-form-templates-using-infopath-object-model.md): infopath 2003 互換オブジェクトモデルを使用したプログラミングに関してよく寄せられる質問と、一般的な問題の解決に役立つトピックへのリンクが示されています。
+フォーム テンプレートの開発に関する一般的なタスク InfoPath 2003 オブジェクト モデルを使用する : [InfoPath 2003](common-tasks-for-developing-form-templates-using-infopath-object-model.md)互換オブジェクト モデルを使用したプログラミングに関するよく寄せられる質問と、一般的な問題の解決に役立つトピックへのリンクを示します。
     
 

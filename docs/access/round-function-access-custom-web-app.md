@@ -1,5 +1,5 @@
 ---
-title: Round 関数 (Access カスタム web アプリ)
+title: Round 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33413746"
 ---
-# <a name="round-function-access-custom-web-app"></a>Round 関数 (Access カスタム web アプリ)
+# <a name="round-function-access-custom-web-app"></a>Round 関数 (Access カスタム Web アプリ)
 
 指定された長さまたは精度で四捨五入されたか切り捨てられた数値を返します。
   
@@ -23,15 +23,15 @@ ms.locfileid: "33413746"
   
 ## <a name="syntax"></a>構文
 
- **Round**(*数値*、*精度*、[ *TruncateInsteadOfRound* ]) 
+ **Round** (*Number*, *Precision*  , [  *TruncateInsteadOfRound*  ]) 
   
 **Round** 関数の引数は次のとおりです。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
 | *Number*  <br/> |数式。  <br/> |
-| *精度*  <br/> |丸められる桁数** を指定します。  *精度*は、数値式である必要があります。 *精度*に正の数値を指定すると、引数*number*は引数 length で指定した小数点の桁数に四捨五入されます。 *精度*に負の数値を指定すると、引数 length で指定した*数値*が小数点の左側で四捨五入されます。  <br/> |
-| *TruncateInsteadOfRound*  <br/> |実行する操作の種類。 省略するか0に設定すると、*数値*は丸められます。 0以外の値を指定すると、*数値*は切り捨てられます。 既定値は 0 です。  <br/> |
+| *精度*  <br/> |数値を四捨  *五入*  する精度。  *精度*  は、数値式である必要があります。 Precision  *が*  正の数値の場合  *、Number*  は長さによって指定された小数点以下の桁数に丸められます。 Precision  *が*  負の数値の場合  *、Number*  は長さによって指定された小数点の左側に四捨五入されます。  <br/> |
+| *TruncateInsteadOfRound*  <br/> |実行する操作の種類。 省略または 0 に設定すると、  *数値は四捨*  五入されます。 0 以外の値を指定すると  *、Number*  は切り捨てされます。 既定値は 0 です。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

@@ -22,9 +22,9 @@ ms.locfileid: "33414019"
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| .0  <br/> | 標準の位置  <br/> |**visPosNormal** <br/> |
-| 1   <br/> | 付  <br/> |**visPosSuper** <br/> |
-| 2   <br/> | 13  <br/> |**visPosSub** <br/> |
+| 0  <br/> | 標準の位置  <br/> |**visPosNormal** <br/> |
+| 1  <br/> | Superscript  <br/> |**visPosSuper** <br/> |
+| 2  <br/> | Subscript  <br/> |**visPosSub** <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -32,14 +32,14 @@ ms.locfileid: "33414019"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | *i* = <1>、 ** 2、3......  <br/> |
+| セル名:  <br/> | Char.Pos[  *i*  ] ここで  *、i*  = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [Pos] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionCharacter** <br/> |
-| 行インデックス:  <br/> |**visRowCharacter** +  *i* = ** 0、1、2...  <br/> |
+| 行インデックス:  <br/> |**visRowCharacter**  +  *i* *=* 0, 1, 2...  <br/> |
 | セル インデックス:  <br/> |**visCharacterPos** <br/> |
    
 

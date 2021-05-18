@@ -46,7 +46,7 @@ FORMAT(NOW(),"dd MMM., yyyy hh:mm")
   
 ## <a name="example-3"></a>例 3
 
-NOW () + 2ew
+NOW()+2EW。
   
 現在の日付と時刻から 2 週間経過した日付と時刻 (10/11/10 12:03:30 PM など) を返します。
   

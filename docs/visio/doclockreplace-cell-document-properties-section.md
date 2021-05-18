@@ -29,7 +29,7 @@ ms.locfileid: "33413424"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | doclocreplace  <br/> |
+| セル名:  <br/> | DocLocReplace  <br/> |
    
 プログラムから、インデックスによって [**DocLocReplace**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -37,6 +37,6 @@ ms.locfileid: "33413424"
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowDoc** <br/> |
-| セル インデックス:  <br/> |* * visDocLockReplace * * <br/> |
+| セル インデックス:  <br/> |**visDocLockReplace ** <br/> |
    
 

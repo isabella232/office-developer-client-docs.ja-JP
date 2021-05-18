@@ -25,7 +25,7 @@ ms.locfileid: "33412542"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームコンテナー内のフォームに対するメッセージクラスのグループを解決し、それらのフォームのフォーム情報オブジェクトの配列を返します。
+メッセージ クラスのグループをフォーム コンテナー内のフォームに解決し、それらのフォームのフォーム情報オブジェクトの配列を返します。
   
 ```cpp
 HRESULT ResolveMultipleMessageClasses(
@@ -37,21 +37,21 @@ HRESULT ResolveMultipleMessageClasses(
 
 ## <a name="parameters"></a>パラメーター
 
- _pmsgclassarray_
+ _pMsgClassArray_
   
-> 順番解決するメッセージクラスの名前を含む配列へのポインター。 メッセージクラス名は常に ANSI 文字列で、Unicode はありません。
+> [in]解決するメッセージ クラスの名前を含む配列へのポインター。 メッセージ クラス名は常に ANSI 文字列で、Unicode は使用しません。
     
  _ulFlags_
   
-> 順番メッセージクラスの解決方法を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]メッセージ クラスの解決方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPIFORM_EXACTMATCH 
   
-> 完全一致のメッセージクラス文字列のみを解決する必要があります。
+> 完全に一致するメッセージ クラスの文字列のみを解決する必要があります。
     
  _ppfrminfoarray_
   
-> 読み上げフォーム情報オブジェクトの配列へのポインターへのポインター。 クライアントアプリケーションが_pmsgclassarray_パラメーターに NULL を渡す場合、 _ppfrminfoarray_パラメーターには、コンテナー内のすべてのフォームのフォーム情報オブジェクトが格納されます。 
+> [out]フォーム情報オブジェクトの配列へのポインター。 クライアント アプリケーションが  _pMsgClassArray_ パラメーターで NULL を渡した場合  _、ppfrminfoarray_ パラメーターには、コンテナー内のすべてのフォームのフォーム情報オブジェクトが含まれます。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -61,13 +61,13 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-クライアントアプリケーションは、 **imapiformcontainer:: ResolveMultipleMessageClasses**メソッドを呼び出して、フォームコンテナー内のフォームに対するメッセージクラスのグループを解決します。 _ppfrminfoarray_パラメーターによって返されるフォーム情報オブジェクトの配列は、各フォームのプロパティへのアクセスをさらに提供します。 
+クライアント アプリケーションは **IMAPIFormContainer::ResolveMultipleMessageClasses** メソッドを呼び出して、メッセージ クラスのグループをフォーム コンテナー内のフォームに解決します。 _ppfrminfoarray_ パラメーターで返されるフォーム情報オブジェクトの配列は、フォームの各プロパティにさらにアクセスできます。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-メッセージクラスのグループをフォームに解決するには、解決するメッセージクラス名の配列を渡します。 解決策を正確にする (つまり、メッセージクラスの基本クラスに解決されないようにする) には、 _ulflags_パラメーターに MAPIFORM_EXACTMATCH フラグを渡すことができます。 
+メッセージ クラスのグループをフォームに解決するには、解決するメッセージ クラス名の配列を渡します。 解決を厳密に (つまり、メッセージ クラスの基本クラスへの解決を防ぐため) には  _、ulFlags_ パラメーターに MAPIFORM_EXACTMATCH フラグを渡します。 
   
-メッセージクラスをフォームに解決できない場合は、フォーム情報配列でそのメッセージクラスに対して NULL が返されます。 したがって、メソッドが S_OK を返す場合でも、すべてのメッセージクラスが正常に解決されたとは限りません。 代わりに、返される配列内の値を確認します。
+メッセージ クラスをフォームに解決できない場合、フォーム情報配列内のそのメッセージ クラスに対して NULL が返されます。 したがって、メソッドがメッセージ クラスを返S_OK、すべてのメッセージ クラスが正常に解決されたと見なす必要はありません。 代わりに、返される配列の値を確認します。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -75,7 +75,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|FormContainerDlg  <br/> |CFormContainerDlg:: OnResolveMultipleMessageClasses  <br/> |mfcmapi は、 **imapiformcontainer:: ResolveMultipleMessageClasses**メソッドを使用して、一連のメッセージクラスに関連付けられているフォームを特定します。  <br/> |
+|FormContainerDlg.cpp  <br/> |CFormContainerDlg::OnResolveMultipleMessageClasses  <br/> |MFCMAPI は **IMAPIFormContainer::ResolveMultipleMessageClasses** メソッドを使用して、一連のメッセージ クラスに関連付けられているフォームを検索します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

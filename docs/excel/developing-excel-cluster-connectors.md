@@ -1,5 +1,5 @@
 ---
-title: Excel �N���X�^�[ �R�l�N�^�̊J��
+title: Excel クラスター コネクタの開発
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer

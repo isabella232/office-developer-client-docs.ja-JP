@@ -25,7 +25,7 @@ ms.locfileid: "33413179"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-status オブジェクトを開きます。
+状態オブジェクトを開きます。
   
 ```cpp
 HRESULT OpenStatusEntry(
@@ -38,25 +38,25 @@ HRESULT OpenStatusEntry(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpinterface_
+ _lpInterface_
   
-> 順番開く状態オブジェクトのインターフェイス識別子 (IID) へのポインター。 NULL を渡すと、オブジェクトの標準インターフェイスが返されます (この場合は[imapistatus](imapistatusimapiprop.md)インターフェイス)。 _lpinterface_パラメーターは、オブジェクトの適切なインターフェイスの識別子に設定することもできます。 
+> [in]status オブジェクトを開くインターフェイス識別子 (IID) へのポインター。 NULL を渡す場合は、オブジェクトの標準インターフェイスが返されます (この場合は [IMAPIStatus](imapistatusimapiprop.md) インターフェイス)。 _lpInterface パラメーター_ は、オブジェクトの適切なインターフェイスの識別子に設定することもできます。 
     
  _ulFlags_
   
-> 順番status オブジェクトが開かれる方法を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]status オブジェクトの開き方を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_MODIFY 
   
-> 読み取り/書き込みアクセス許可を要求します。 既定では、オブジェクトは読み取り専用のアクセス許可で作成され、読み取り/書き込みアクセス許可が与えられているという前提でクライアントアプリケーションを使用することはできません。 
+> 読み取り/書き込みアクセス許可を要求します。 既定では、オブジェクトは読み取り専用のアクセス許可で作成され、クライアント アプリケーションは、読み取り/書き込みアクセス許可が付与されているという前提で動作しません。 
     
- _lpulobjtype_
+ _lpulObjType_
   
-> 読み上げ開かれているオブジェクトの種類へのポインター。
+> [out]開いたオブジェクトの種類へのポインター。
     
- _lppentry_
+ _lppEntry_
   
-> 読み上げ開かれているオブジェクトへのポインターへのポインター。
+> [out]開いたオブジェクトへのポインターへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -66,7 +66,7 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-メッセージストアプロバイダーは、status オブジェクトを開くために**IMSLogon:: openstatusentry**メソッドを実装します。 この状態オブジェクトは、クライアントが[imapistatus](imapistatusimapiprop.md)メソッドを呼び出せるようにするために使用されます。 たとえば、クライアントは[imapistatus:: settingsdialog](imapistatus-settingsdialog.md)メソッドを使用して、メッセージストアログオンセッションまたは[imapistatus:: validatestate](imapistatus-validatestate.md)メソッドを再構成し、メッセージストアログオンセッションの状態を検証することができます。 
+メッセージ ストア プロバイダーは、状態オブジェクトを開く **IMSLogon::OpenStatusEntry** メソッドを実装します。 この状態オブジェクトは、クライアントが [IMAPIStatus メソッドを呼び出すのを有効に](imapistatusimapiprop.md) するために使用されます。 たとえば、クライアントは [IMAPIStatus::SettingsDialog](imapistatus-settingsdialog.md) メソッドを使用してメッセージ ストア ログオン セッションを再構成したり [、IMAPIStatus::ValidateState](imapistatus-validatestate.md) メソッドを使用してメッセージ ストア ログオン セッションの状態を検証できます。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -20,15 +20,15 @@ ms.locfileid: "33412283"
 
 線の開始位置にある矢印のサイズを指定します。
   
-|**値**|**Size**|**オートメーション定数**|
+|**値**|**[サイズ]**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| .0  <br/> | 極小  <br/> |**visArrowSizeVerySmall** <br/> |
-| 1   <br/> | 小  <br/> |**visArrowSizeSmall** <br/> |
-| 2   <br/> | 中  <br/> |**visArrowSizeMedium** <br/> |
-| 3   <br/> | 大  <br/> |**visArrowSizeLarge** <br/> |
-| 4   <br/> | 特大  <br/> |**visArrowSizeVeryLarge** <br/> |
-| 5   <br/> | ジャンボ  <br/> |**visArrowSizeJumbo** <br/> |
-| 6   <br/> | Colossal  <br/> |**visArrowSizeColossal** <br/> |
+| 0  <br/> | 極小  <br/> |**visArrowSizeVerySmall** <br/> |
+| 1  <br/> | 小  <br/> |**visArrowSizeSmall** <br/> |
+| 2  <br/> | 中  <br/> |**visArrowSizeMedium** <br/> |
+| 3  <br/> | 大  <br/> |**visArrowSizeLarge** <br/> |
+| 4  <br/> | 特大  <br/> |**visArrowSizeVeryLarge** <br/> |
+| 5  <br/> | ジャンボ  <br/> |**visArrowSizeJumbo** <br/> |
+| 6  <br/> | Colossal  <br/> |**visArrowSizeColossal** <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -38,7 +38,7 @@ ms.locfileid: "33412283"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [beginarrowsize]  <br/> |
+| セル名 :  <br/> | BeginArrowSize  <br/> |
    
 プログラムから、インデックスによって [BeginArrowSize] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

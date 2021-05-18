@@ -1,5 +1,5 @@
 ---
-title: Mod (Access カスタム web アプリ)
+title: Mod (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33412507"
 ---
-# <a name="mod-access-custom-web-app"></a>Mod (Access カスタム web アプリ)
+# <a name="mod-access-custom-web-app"></a>Mod (Access カスタム Web アプリ)
 
 1 つの数字をもう 1 つの数字で除算したときの剰余を返します。
   

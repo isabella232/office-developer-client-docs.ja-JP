@@ -27,35 +27,35 @@ ms.locfileid: "33413655"
 |呼び出し元:  <br/> |クライアント  <br/> |
 |インターフェイス識別子:  <br/> |IID_IOlkAccountManager  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[Init](iolkaccountmanager-init.md) <br/> |使用するアカウントマネージャーを初期化します。  <br/> |
-|[displayaccountlist](iolkaccountmanager-displayaccountlist.md) <br/> |[**アカウント設定**] または [**新しいアカウントの追加**] ダイアログボックスを表示します。  <br/> |
-| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
-| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
-| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
-| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
-| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
-|[findaccount](iolkaccountmanager-findaccount.md) <br/> |プロパティ値でアカウントを検索します。  <br/> |
-| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
-| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
-| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
-|[deleteaccount](iolkaccountmanager-deleteaccount.md) <br/> |指定されたアカウントを削除します。  <br/> |
-| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
-|[SaveChanges](iolkaccountmanager-savechanges.md) <br/> |指定したアカウントに変更内容を保存します。  <br/> |
-|[getorder](iolkaccountmanager-getorder.md) <br/> |指定されたアカウントのカテゴリの順序を取得します。  <br/> |
-|[setorder](iolkaccountmanager-setorder.md) <br/> |指定したアカウントのカテゴリの順序を変更します。  <br/> |
-|[EnumerateAccounts](iolkaccountmanager-enumerateaccounts.md) <br/> |特定のカテゴリと種類のアカウントの列挙子を取得します。  <br/> |
-| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
-| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
-|[FreeMemory](iolkaccountmanager-freememory.md) <br/> |**IOlkAccountManager**インターフェイスによって割り当てられたメモリを解放します。  <br/> |
-|[助言](iolkaccountmanager-advise.md) <br/> |アカウントマネージャーにクライアントを登録して、すべてのアカウントに関する通知を行います。  <br/> |
-|[アドバイズ](iolkaccountmanager-unadvise.md) <br/> |すべてのアカウントの通知について、アカウントマネージャーでクライアントの登録を解除します。  <br/> |
-| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
-| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
-| *Placeholder メンバー*  <br/> | *未サポートまたは文書化*  <br/> |
+|[Init](iolkaccountmanager-init.md) <br/> |使用するアカウント マネージャーを初期化します。  <br/> |
+|[DisplayAccountList](iolkaccountmanager-displayaccountlist.md) <br/> |[アカウント設定]**または [新しい****アカウントの追加] ダイアログ ボックスを** 表示します。  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていない、または文書化されていない*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていない、または文書化されていない*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていない、または文書化されていない*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていない、または文書化されていない*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていない、または文書化されていない*  <br/> |
+|[FindAccount](iolkaccountmanager-findaccount.md) <br/> |プロパティ値でアカウントを検索します。  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていない、または文書化されていない*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていない、または文書化されていない*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていない、または文書化されていない*  <br/> |
+|[DeleteAccount](iolkaccountmanager-deleteaccount.md) <br/> |指定したアカウントを削除します。  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていない、または文書化されていない*  <br/> |
+|[SaveChanges](iolkaccountmanager-savechanges.md) <br/> |指定したアカウントへの変更を保存します。  <br/> |
+|[GetOrder](iolkaccountmanager-getorder.md) <br/> |指定したカテゴリのアカウントの順序を取得します。  <br/> |
+|[SetOrder](iolkaccountmanager-setorder.md) <br/> |指定したカテゴリのアカウントの順序を変更します。  <br/> |
+|[列挙Accounts](iolkaccountmanager-enumerateaccounts.md) <br/> |特定のカテゴリと種類のアカウントの列挙子を取得します。  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていない、または文書化されていない*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていない、または文書化されていない*  <br/> |
+|[FreeMemory](iolkaccountmanager-freememory.md) <br/> |**IOlkAccountManager インターフェイスによって割り当てられたメモリを解放** します。  <br/> |
+|[アドバイス](iolkaccountmanager-advise.md) <br/> |クライアントをアカウント マネージャーに登録して、すべてのアカウントに関する通知を受け取る。  <br/> |
+|[Unadvise](iolkaccountmanager-unadvise.md) <br/> |すべてのアカウントの通知をアカウント マネージャーでクライアントに登録解除します。  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていない、または文書化されていない*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていない、または文書化されていない*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていない、または文書化されていない*  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -23,8 +23,8 @@ ms.locfileid: "33412157"
   
 _Row_Seq:_
   
->  _行数__Property_Sequence_ 
+>  _row-count_ _Property_Sequence.._ 
     
-_Property_Seq_の形式は、 [attMAPIProps](attmapiprops.md)属性と同じです。 
+プロパティの  _形式Property_Seq_ [attMAPIProps 属性と同](attmapiprops.md) じです。 
     
 

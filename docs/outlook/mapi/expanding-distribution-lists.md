@@ -21,10 +21,10 @@ ms.locfileid: "33414138"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
- **MAPI に配布リストを展開するかどうかを確認するには**
+ **配布リストの展開を MAPI に求めるメッセージを表示するには**
   
-- **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) プロパティを mapipdl に設定します。
+- そのプロパティ **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) プロパティを MAPIPDL に設定します。
     
-    MAPI は、メッセージをトランスポートプロバイダーに送信する前に、この種類のアドレスを展開します。
+    MAPI は、トランスポート プロバイダーにメッセージを送信する前に、この種類のアドレスを展開します。
     
 

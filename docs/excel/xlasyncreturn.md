@@ -36,7 +36,7 @@ UDF の戻り値です。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-成功した場合、**TRUE** (**xltypeBool**) を返します。 失敗した場合は、**FALSE** を返します。
+成功した場合は、**TRUE** (**xltypeBool**) が返されます。失敗した場合は、**FALSE** が返されます。
   
 ## <a name="remarks"></a>注釈
 

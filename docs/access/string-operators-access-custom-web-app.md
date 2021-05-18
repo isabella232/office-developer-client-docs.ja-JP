@@ -1,5 +1,5 @@
 ---
-title: 文字列演算子 (Access カスタム web アプリ)
+title: 文字列演算子 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,13 +14,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411611"
 ---
-# <a name="string-operators-access-custom-web-app"></a>文字列演算子 (Access カスタム web アプリ)
+# <a name="string-operators-access-custom-web-app"></a>文字列演算子 (Access カスタム Web アプリ)
 
 > [!IMPORTANT]
 > マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [+ (文字列連結演算子) (Access カスタム web アプリ)](plusstring-concatenation-operatoraccess-custom-web-app.md)
+- [+ (文字列連結演算子) (Access カスタム Web アプリ)](plusstring-concatenation-operatoraccess-custom-web-app.md)
     
 

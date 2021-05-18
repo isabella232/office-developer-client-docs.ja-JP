@@ -23,11 +23,11 @@ ms.locfileid: "33413858"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[FLATENTRY](flatentry.md)構造体の配列を格納します。 
+[FLATENTRY 構造体の配列を含](flatentry.md)む。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連するマクロ:  <br/> |[CbFLATENTRYLIST](cbflatentrylist.md)、 [CbNewFLATENTRYLIST](cbnewflatentrylist.md) <br/> |
    
 ```cpp
@@ -40,27 +40,27 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
-**centries**
+**cEntries**
   
-> **abentries**メンバーによって記述された、配列内の**FLATENTRY**構造体の数。 
+> abEntries **メンバーによって** 記述された配列内の **FLATENTRY 構造体の** 数。 
     
-**cbentries**
+**cbEntries**
   
-> **abentries**で記述された配列内のバイト数。 
+> abEntries で記述された配列内 **のバイト数** です。 
     
-**abentries**
+**abEntries**
   
-> 1つまたは複数の**FLATENTRY**構造を含むバイト配列。エンドツーエンドで配置されています。 
+> 端から端まで配置された 1 つ以上の **FLATENTRY** 構造体を含むバイト配列。 
     
 ## <a name="remarks"></a>注釈
 
-**abentries**配列では、各**FLATENTRY**構造は、自然に配置された境界に沿って配置されます。 2つの**FLATENTRY**構造体間で自然な配置が行われるように、パディングとして追加のバイトが含まれています。 **abentries**メンバーのオフセットは8であるため、配列内の最初の**FLATENTRY**構造体は常に正確に調整されます。 次の構造体のオフセットを計算するには、最初のエントリのサイズを、次の4つの倍数まで切り上げて使用します。 [CbFLATENTRY](cbflatentry.md)マクロを使用して、 **FLATENTRY**構造体のサイズを計算します。 
+**abEntries 配列では**、**各 FLATENTRY** 構造体は自然に整列された境界に配置されます。 余分なバイトは、2 つの FLATENTRY 構造体間の自然な配置を確実に行う埋 **め込みとして含** まれます。 配列内 **の最初の FLATENTRY** 構造体は **、abEntries** メンバーのオフセットが 8 なので、常に正しく配置されます。 次の構造体のオフセットを計算するには、4 の次の倍数に切り上げ、最初のエントリのサイズを使用します。 [CBFLATENTRY マクロを使用](cbflatentry.md)して **FLATENTRY 構造体のサイズを計算** します。 
   
-たとえば、2番目の**FLATENTRY**構造体は、最初のエントリのオフセットと、次の4バイトに丸められた最初のエントリの長さで構成されるオフセットから始まります。 最初のエントリの長さは、 **cb**メンバーの長さに**abentry**メンバーの長さを加えたものです。 
+たとえば、2 番目の **FLATENTRY** 構造体は、最初のエントリのオフセットと、次の 4 バイトに丸められた最初のエントリの長さで構成されるオフセットから始まります。 最初のエントリの長さは **、cb** メンバーの長さと **abEntry** メンバーの長さです。 
   
-次のコードサンプルは、 **FLATENTRYLIST**構造体でオフセットを計算する方法を示しています。 _lpFlatEntry_はリスト内の最初の構造体へのポインターであると仮定します。 
+次のコード サンプルは **、FLATENTRYLIST 構造体のオフセットを計算する方法を示** しています。 _lpFlatEntry は、_ リスト内の最初の構造体へのポインターと仮定します。 
   
 ```cpp
 (offsetof(lpFlatEntry->ab) // for example, 4

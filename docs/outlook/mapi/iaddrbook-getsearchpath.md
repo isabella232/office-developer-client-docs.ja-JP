@@ -25,7 +25,7 @@ ms.locfileid: "33412983"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[IAddrBook:: ResolveName](iaddrbook-resolvename.md)メソッドによって開始された名前解決プロセスに含まれるコンテナーのエントリ id の順序付きリストを返します。 
+[IAddrBook::ResolveName](iaddrbook-resolvename.md)メソッドによって開始される名前解決プロセスに含めるコンテナーのエントリ識別子の順序付きリストを返します。 
   
 ```cpp
 HRESULT GetSearchPath(
@@ -38,15 +38,15 @@ HRESULT GetSearchPath(
 
  _ulFlags_
   
-> 順番検索パスで返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]検索パスで返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 返される文字列は、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
+> 返される文字列は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列は ANSI 形式になります。
     
  _lppSearchPath_
   
-> 読み上げコンテナーエントリ識別子の順序付きリストへのポインターへのポインター。 **GetSearchPath**は、注文されたリストを[srowset](srowset.md)構造に格納します。 アドレス帳の階層にコンテナーが存在しない場合は、 **srowset**構造体に0が返されます。 
+> [out]コンテナー エントリ識別子の順序付きリストへのポインター。 **GetSearchPath は** 、順序付きリストを [SRowSet 構造体に格納](srowset.md) します。 アドレス帳階層にコンテナーがない場合は **、SRowSet** 構造体で 0 が返されます。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -56,19 +56,19 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-クライアントおよびサービスプロバイダーは、 **GetSearchPath**メソッドを呼び出して、 **ResolveName**メソッドで名前を解決するために使用される検索パスを取得します。 通常、クライアントは[IAddrBook:: SetSearchPath](iaddrbook-setsearchpath.md)メソッドを呼び出して、プロファイルにコンテナー検索パスを設定してから、 **GetSearchPath**を呼び出して取得します。 ただし、 **SetSearchPath**の呼び出しはオプションです。 
+クライアントとサービス プロバイダーは **GetSearchPath** メソッドを呼び出して **、ResolveName** メソッドで名前を解決するために使用される検索パスを取得します。 通常、クライアントは [IAddrBook::SetSearchPath](iaddrbook-setsearchpath.md) メソッドを呼び出して **、GetSearchPath** を呼び出して取得する前に、プロファイル内にコンテナー検索パスを確立します。 ただし **、SetSearchPath の呼び出し** はオプションです。 
   
-**SetSearchPath**が呼び出されていない場合、 **GetSearchPath**はアドレス帳の階層テーブルを使用してパスを作成します。 **GetSearchPath**によって確立される既定の検索パスは、次の順序で構成されています。 
+**SetSearchPath が** 呼び出されたことがない場合 **、GetSearchPath** はアドレス帳の階層テーブルを操作してパスを構築します。 **GetSearchPath** によって確立される既定の検索パスは、次の順序で次のコンテナーで構成されます。 
   
-1. 読み取り/書き込みアクセス許可を持つ最初のコンテナー。通常は個人用アドレス帳 (PAB)。
+1. 読み取り/書き込みアクセス許可を持つ最初のコンテナー (通常は個人用アドレス帳 (PAB) です。
     
-2. **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) プロパティが DT_GLOBAL に設定されているすべてのコンテナー。 この設定は、コンテナーが受信者を保持することを示します。 
+2. そのコンテナー [(PidTagDisplayType)](pidtagdisplaytype-canonical-property.md)プロパティ **が** PR_DISPLAY_TYPEに設定されているコンテナー DT_GLOBAL。 この設定は、コンテナーが受信者を保持します。 
     
-3. **PR_DISPLAY_TYPE**プロパティに DT_GLOBAL フラグが設定されていて、既定のコンテナーが読み取り/書き込みアクセス許可を持つ最初のコンテナーと異なる場合に、既定として指定されているコンテナー。 
+3. **PR_DISPLAY_TYPE** プロパティに DT_GLOBAL フラグが設定されているコンテナーが存在し、既定のコンテナーが読み取り/書き込みアクセス許可を持つ最初のコンテナーとは異なる場合、既定として指定されたコンテナー。 
     
-**SetSearchPath**が呼び出されている場合、 **GetSearchPath**は、プロファイルに格納されているアドレス帳のコンテナーを使用してパスを作成します。 **GetSearchPath**は、このパスを呼び出し元に返す前に検証します。 
+**SetSearchPath が** 呼び出された場合 **、GetSearchPath** はプロファイルに格納されているアドレス帳コンテナーを使用してパスを構築します。 **GetSearchPath は** 、呼び出し元に返す前に、このパスを検証します。 
   
-**SetSearchPath**の最初の呼び出しの後、 **SetSearchPath**の以降の呼び出しを使用して、 **GetSearchPath**によって返される検索パスを変更する必要があります。 言い換えると、呼び出し元のクライアントまたはプロバイダーは、 **SetSearchPath**の最初の呼び出しの後に既定の検索パスを受信しません。
+**SetSearchPath** の最初の呼び出しの後、GetSearchPath によって返される検索パスを変更するには **、SetSearchPath** への後続の呼び出し **を使用する必要があります**。 つまり、呼び出し元のクライアントまたはプロバイダーは、SetSearchPath の最初の呼び出し後に既定の検索パス **を受け取らないのです**。
   
 ## <a name="see-also"></a>関連項目
 

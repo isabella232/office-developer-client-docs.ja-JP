@@ -25,11 +25,11 @@ ms.locfileid: "33411891"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[srowset](srow.md)構造で表される、指定された数の行を含む新しい[srowset](srowset.md)構造体に割り当てるバイト数を計算します。 
+SRow 構造体で表される指定した行数を含む新しい [SRowSet](srowset.md) 構造体に割り当てるバイト数 [を計算](srow.md) します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |**SRowSet** <br/> |
    
 ```cpp
@@ -38,9 +38,9 @@ CbNewSRowSet (_crow)
 
 ## <a name="parameters"></a>パラメーター
 
- __クロウズ_
+ _ _crow_
   
-> 新しい**srow**構造に含める行数を示す、 **srow**構造の数を示します。 
+> 新しい **SRowSet** 構造体に含める行数を示す **SRow** 構造体の数。 
     
 ## <a name="see-also"></a>関連項目
 

@@ -25,7 +25,7 @@ ms.locfileid: "33411877"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-送信メッセージの受信者リストに追加する受信者を作成するための、1回限りのテンプレートのテーブルを返します。
+送信メッセージの受信者リストに追加する受信者を作成するための一時テンプレートのテーブルを返します。
   
 ```cpp
 HRESULT GetOneOffTable(
@@ -38,37 +38,37 @@ HRESULT GetOneOffTable(
 
  _ulFlags_
   
-> 順番テーブルに含まれる文字列型 (string) の列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]テーブルに含まれる文字列列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 文字列列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列列は ANSI 形式になります。
+> 文字列列は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列列は ANSI 形式になります。
     
- _lpptable_
+ _lppTable_
   
-> 読み上げ1回限りのテーブルへのポインターへのポインター。
+> [out]1 回表へのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 1回限りのテーブルが正常に取得されました。
+> 1 回のテーブルが正常に取得されました。
     
 MAPI_E_BAD_CHARWIDTH 
   
-> MAPI_UNICODE フラグが設定されていて、アドレス帳プロバイダーが unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、アドレス帳プロバイダーが unicode のみをサポートしています。
+> アドレス帳MAPI_UNICODEフラグが設定され、アドレス帳プロバイダーが Unicode をサポートしていないか、MAPI_UNICODE が設定されていないと、アドレス帳プロバイダーは Unicode のみをサポートします。
     
 MAPI_E_NO_SUPPORT 
   
-> アドレス帳プロバイダーでは、1回限りのテンプレートは提供されません。
+> アドレス帳プロバイダーは、1 回きりテンプレートを提供しない。
     
 ## <a name="remarks"></a>注釈
 
-MAPI は、 **getoneofftable**メソッドを呼び出して、受信者を作成するために1回限りのテンプレートを使用できるようにします。 新しい受信者が送信メッセージの受信者一覧に追加されます。 アドレス帳プロバイダーは、テンプレートの変更を MAPI に通知するために、1回限りのテーブルに対する通知をサポートする必要があります。 MAPI は、動的更新を有効にするために、1回限りのテーブルを開いたままにします。 
+MAPI は **GetOneOffTable メソッドを呼** び出して、受信者を作成するために使用可能な 1 回のテンプレートを作成します。 新しい受信者は、送信メッセージの受信者リストに追加されます。 アドレス帳プロバイダーは、テンプレートの変更を MAPI に通知するために、1 回きりテーブルの通知をサポートする必要があります。 MAPI は、動的更新を有効にするための 1 回きりテーブルを開いた保持します。 
   
-また、アドレス帳プロバイダーは、各コンテナーに対して1回限りのテーブルをサポートすることもできます。 発信者は、コンテナーの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出して、 **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) プロパティを要求することによって、この1回限りのテーブルを取得します。 この表で使用できるテンプレートは、受信者をコンテナーに追加するために使用されます。 2種類の一度限りのテーブルの違いについては、「 [1 回限りのテーブルの実装](implementing-one-off-tables.md)」を参照してください。
+アドレス帳プロバイダーは、各コンテナーに対して 1 回のテーブルをサポートできます。 呼び出し元は、コンテナーの [IMAPIProp::OpenProperty](imapiprop-openproperty.md) メソッドを呼び出し **、PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) プロパティを要求することで、この一時テーブルを取得します。 この表で使用できるテンプレートは、コンテナーに受信者を追加するために使用されます。 2 種類の 1 回使用テーブルの違いについては、「テーブルの実装」 [をOne-Offしてください](implementing-one-off-tables.md)。
   
-アドレス帳プロバイダーの1回限りのテーブルで必要な列の一覧については、「 [1 回限りのテーブル](one-off-tables.md)」を参照してください。
+アドレス帳プロバイダーの 1 回のテーブルで必要な列の一覧については [、「One-Off Tables」を参照してください](one-off-tables.md)。
   
 ## <a name="see-also"></a>関連項目
 

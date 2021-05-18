@@ -1,5 +1,5 @@
 ---
-title: iattachmentsecurity IUnknown
+title: IAttachmentSecurity IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,21 +25,21 @@ ms.locfileid: "33411415"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-microsoft outlook 2010 および microsoft outlook 2013 ソリューションを使用して、添付ファイルが安全でないと見なされ、表示およびインデックス作成がブロックされているかどうかを確認します。
+ソリューションMicrosoft Outlook 2010およびMicrosoft Outlook 2013、添付ファイルが安全でないと見なされ、表示およびインデックス作成のためにブロックされるのを確認できます。
   
 |||
 |:-----|:-----|
 |インターフェイス識別子:  <br/> |IID_IAttachmentSecurity  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[IAttachmentSecurity::IsAttachmentBlocked](iattachmentsecurity-isattachmentblocked.md) <br/> |指定された添付ファイルが outlook 2010 または outlook 2013 によってブロックされているかどうかを確認し、表示およびインデックスを作成します。  <br/> |
+|[IAttachmentSecurity::IsAttachmentBlocked](iattachmentsecurity-isattachmentblocked.md) <br/> |指定した添付ファイルが 2010 年または 2013 年Outlook 2013 年Outlook表示およびインデックス作成のためにブロックされている場合にチェックします。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-outlook 2010 および outlook 2013 ソリューションは、このインターフェイスを照会して、添付ファイルがブロックされているかどうかを確認できます。 outlook 2010 または outlook 2013 によってブロックされている添付ファイルは、outlook 2010 または outlook 2013 がどのように構成されているか、および管理者が適用したポリシーによって異なります。
+Outlook 2010 および 2013 Outlook 2013 ソリューションでは、このインターフェイスに対してクエリを実行して、添付ファイルがブロックされるのを確認できます。 Outlook 2010 または Outlook 2013 によってブロックされる添付ファイルは、Outlook 2010 または Outlook 2013 の構成方法と管理者が適用したポリシーによって異なります。
   
 ## <a name="see-also"></a>関連項目
 
@@ -47,5 +47,5 @@ outlook 2010 および outlook 2013 ソリューションは、このインタ�
 
 [MAPI 定数](mapi-constants.md)
   
-[添付ファイルがブロックされていることを確認する](how-to-verify-an-attachment-is-blocked.md)
+[添付ファイルがブロックされているのを確認する](how-to-verify-an-attachment-is-blocked.md)
 

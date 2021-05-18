@@ -15,7 +15,7 @@ ms.locfileid: "32322100"
 ---
 # <a name="iolkenum"></a>IOlkEnum
 
-[IUnknown](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown)オブジェクトとしてのアカウントの列挙をサポートします。 
+[IUnknown オブジェクトとしてアカウントの列挙をサポート](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown)します。 
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -27,18 +27,18 @@ ms.locfileid: "32322100"
 |呼び出し元:  <br/> |クライアント  <br/> |
 |インターフェイス識別子:  <br/> |IID_IOlkEnum  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
 |[GetCount](iolkenum-getcount.md) <br/> |列挙子内のアカウントの数を取得します。  <br/> |
-|[Reset](iolkenum-reset.md) <br/> |列挙子を最初にリセットします。  <br/> |
+|[Reset](iolkenum-reset.md) <br/> |列挙子を先頭にリセットします。  <br/> |
 |[GetNext](iolkenum-getnext.md) <br/> |列挙子の次のアカウントを取得します。  <br/> |
-|[Skip](iolkenum-skip.md) <br/> |列挙子内の指定された数のアカウントをスキップします。  <br/> |
+|[Skip](iolkenum-skip.md) <br/> |列挙子内の指定した数のアカウントをスキップします。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このインターフェイスは、アカウントの列挙子を取得するときに、 **IOlkAccountManager:: EnumerateAccounts**によって返されます。 
+このインターフェイスは、アカウントの列挙子を取得するときに **、IOlkAccountManager::EnumerateAccounts** によって返されます。 
   
 ## <a name="see-also"></a>関連項目
 

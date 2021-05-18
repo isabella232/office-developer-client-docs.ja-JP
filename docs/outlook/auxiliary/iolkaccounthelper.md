@@ -15,7 +15,7 @@ ms.locfileid: "32322156"
 ---
 # <a name="iolkaccounthelper"></a>IOlkAccountHelper
 
-現在の MAPI セッションでアカウントを管理するためのヘルパー機能を提供します。
+現在の MAPI セッションで、アカウントを管理するためのヘルパー機能を提供します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -25,18 +25,18 @@ ms.locfileid: "32322156"
 |提供元:  <br/> |クライアント  <br/> |
 |インターフェイス識別子:  <br/> |IID_IOlkAccountHelper  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[Placeholder1](iolkaccounthelper-placeholder1.md) <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
+|[プレースホルダー 1](iolkaccounthelper-placeholder1.md) <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
 |[GetIdentity](iolkaccounthelper-getidentity.md) <br/> |アカウントのプロファイル名を取得します。  <br/> |
-|[GetMapiSession](iolkaccounthelper-getmapisession.md) <br/> |MAPI セッションを開き、アカウントマネージャーのセッションへの参照を保持します。  <br/> |
-|[「sosoffsession」](iolkaccounthelper-handsoffsession.md) <br/> |[IOlkAccountHelper:: GetMapiSession](iolkaccounthelper-getmapisession.md)によって返された MAPI セッションオブジェクトを解放します。  <br/> |
+|[GetMapiSession](iolkaccounthelper-getmapisession.md) <br/> |MAPI セッションを開き、アカウント マネージャーのセッションへの参照を維持します。  <br/> |
+|[HandsOffSession](iolkaccounthelper-handsoffsession.md) <br/> |[IOlkAccountHelper::GetMapiSession](iolkaccounthelper-getmapisession.md)によって返された MAPI セッション オブジェクトを解放します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このインターフェイスは、アカウントマネージャーを初期化するときに[IOlkAccountManager:: Init](iolkaccountmanager-init.md)に渡されます。 
+このインターフェイスは、アカウント マネージャーの初期化時に [IOlkAccountManager::Init](iolkaccountmanager-init.md) に渡されます。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -29,7 +29,7 @@ ms.locfileid: "33412353"
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapix  <br/> |
+|ヘッダー ファイル:  <br/> |Mapix.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
 |呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
    
@@ -44,11 +44,11 @@ HRESULT MAPIAdminProfiles(
 
  _ulFlags_
   
-> 順番サービスエントリ関数のオプションを示すフラグのビットマスク。 
+> [in]サービス エントリ関数のオプションを示すフラグのビットマスク。 
     
  _lppProfAdmin_
   
-> 読み上げ新しいプロファイル管理オブジェクトへのポインターへのポインター。
+> [out]新しいプロファイル管理オブジェクトへのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -62,7 +62,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIObjects  <br/> |cmapiobjects:: GetProfAdmin  <br/> |mfcmapi は、 **MAPIAdminProfiles**メソッドを使用して、プロファイル管理オブジェクトを取得します。  <br/> |
+|MAPIObjects.cpp  <br/> |CMapiObjects::GetProfAdmin  <br/> |MFCMAPI は **MAPIAdminProfiles メソッドを使用して** プロファイル管理オブジェクトを取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

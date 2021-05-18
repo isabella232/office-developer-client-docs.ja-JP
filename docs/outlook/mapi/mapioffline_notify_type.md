@@ -15,17 +15,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33413431"
 ---
-# <a name="mapiofflinenotifytype"></a>MAPIOFFLINE_NOTIFY_TYPE
+# <a name="mapioffline_notify_type"></a>MAPIOFFLINE_NOTIFY_TYPE
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-通知の MAPIOFFLINE_NOTIFY_TYPE によって、接続状態の変更が行われるか、実行されるか、または完了したかが特定されます。 
+通知MAPIOFFLINE_NOTIFY_TYPEは、接続状態の変更が行うのか、起こっているのか、完了したのか、を識別します。 
   
 ## <a name="quick-info"></a>クイック ヒント
 
-**[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** を参照してください。 
+**[「IMAPIOfflineNotify」を参照してください](imapiofflinenotifyiunknown.md)**。 
   
 ```cpp
 typedef enum { 

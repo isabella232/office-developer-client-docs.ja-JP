@@ -1,5 +1,5 @@
 ---
-title: Month 関数 (Access カスタム web アプリ)
+title: Month 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411492"
 ---
-# <a name="month-function-access-custom-web-app"></a>Month 関数 (Access カスタム web アプリ)
+# <a name="month-function-access-custom-web-app"></a>Month 関数 (Access カスタム Web アプリ)
 
 指定された日付の月を表す整数を返します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "33411492"
   
 ## <a name="syntax"></a>構文
 
- **Month** (Date**) 
+ **Month** (Date **) 
   
 **Month** 関数の引数は次のとおりです。 
   

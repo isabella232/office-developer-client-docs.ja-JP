@@ -25,11 +25,11 @@ ms.locfileid: "33413606"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-PT_MV_UNICODE 型のプロパティを記述するために使用される文字列の配列を格納します。 
+文字列型のプロパティを記述するために使用される文字列の配列をPT_MV_UNICODE。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SWStringArray
@@ -40,19 +40,19 @@ typedef struct _SWStringArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cvalues**
+ **cValues**
   
-> **lppszw**メンバーによって示される配列内の文字列の数。 
+> lppszW メンバーが指す配列 **内の文字列の** 数。 
     
- **lppszw**
+ **lppszW**
   
-> null で終了する Unicode 文字列の配列へのポインター。
+> Null で終了した Unicode 文字文字列の配列へのポインター。
     
 ## <a name="remarks"></a>注釈
 
-PT_MV_UNICODE の詳細については、「[プロパティの種類](property-types.md)」を参照してください。
+プロパティの詳細については、「プロパティPT_MV_UNICODE」 [を参照してください](property-types.md)。
   
 ## <a name="see-also"></a>関連項目
 

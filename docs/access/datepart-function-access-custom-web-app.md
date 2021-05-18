@@ -1,5 +1,5 @@
 ---
-title: DatePart 関数 (Access カスタム web アプリ)
+title: DatePart 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411436"
 ---
-# <a name="datepart-function-access-custom-web-app"></a>DatePart 関数 (Access カスタム web アプリ)
+# <a name="datepart-function-access-custom-web-app"></a>DatePart 関数 (Access カスタム Web アプリ)
 
 指定した日付のうち、指定した日付部分を表す数値を返します。
   
@@ -22,14 +22,14 @@ ms.locfileid: "33411436"
   
 ## <a name="syntax"></a>構文
 
-**DatePart**(*DatePart*、*日付*) 
+**DatePart** (*DatePart*, *Date*) 
   
 **DatePart** 関数の引数は次のとおりです。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *DatePart*  <br/> |整数が返される*日付*の部分 (日付または時刻の値)。 有効な省略形のリストについては、「注釈」を参照してください。  <br/> |
-| *Date*  <br/> |日付/時刻の値に解決可能な式。 *Date*引数 expression、column 式、ユーザー定義の変数または文字列リテラル。  <br/> |
+| *DatePart*  <br/> |整数が返される  *Date*  (日付または時刻の値) の部分。 有効な省略形のリストについては、「注釈」を参照してください。  <br/> |
+| *Date*  <br/> |日付/時刻の値に解決可能な式。 *Date 引数* 式、列式、ユーザー定義変数、または文字列リテラル。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -38,15 +38,15 @@ The following table lists all valid  *DatePart*  arguments.
 |***DatePart***|
 |:-----|
 |**year** <br/> |
-|**現** <br/> |
+|**四半期** <br/> |
 |**month** <br/> |
 |**dayofyear** <br/> |
 |**day** <br/> |
-|**回** <br/> |
+|**週** <br/> |
 |**weekday** <br/> |
 |**hour** <br/> |
 |**minute** <br/> |
 |**second** <br/> |
-|**ミリ** <br/> |
+|**ミリ秒** <br/> |
    
 

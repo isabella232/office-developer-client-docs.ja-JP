@@ -25,11 +25,11 @@ ms.locfileid: "33411177"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-mapi サブシステムの参照カウントを増分し、mapi DLL のグローバルデータを初期化します。 
+MAPI サブシステム参照カウントをインクリメントし、MAPI DLL のグローバル データを初期化します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapix  <br/> |
+|ヘッダー ファイル:  <br/> |Mapix.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
 |呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
    
@@ -43,70 +43,70 @@ HRESULT MAPIInitialize(
 
  _lpMapiInit_
   
-> 順番[MAPIINIT_0](mapiinit_0.md)構造体へのポインター。 _lpMapiInit_パラメーターは NULL に設定できます。 
+> [in]構造体への [ポインター](mapiinit_0.md) MAPIINIT_0します。 _lpMapiInit パラメーター_ は NULL に設定できます。 
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> MAPI サブシステムは正常に初期化されました。
+> MAPI サブシステムが正常に初期化されました。
     
 ## <a name="remarks"></a>注釈
 
-**MAPIInitialize**関数は mapi サブシステムの mapi 参照カウントをインクリメントし、 [MAPIUninitialize](mapiuninitialize.md)関数は内部参照カウントをデクリメントします。 そのため、1つの関数への呼び出しの数は、もう一方への呼び出しの数と等しくなければなりません。 MAPI が以前に初期化されていない場合、 **MAPIInitialize**は S_OK を返します。 
+**MAPIInitialize** 関数は MAPI サブシステムの MAPI 参照カウントをインクリメントし [、MAPIUninitialize](mapiuninitialize.md)関数は内部参照カウントをデクリメントします。 したがって、1 つの関数に対する呼び出しの数は、もう一方の関数への呼び出しの数と等しくする必要があります。 **MAPIInitialize は** 、MAPI S_OK初期化されていない場合は、この値を返します。 
   
-クライアントまたはサービスプロバイダーは、他の MAPI 呼び出しを行う前に**MAPIInitialize**を呼び出す必要があります。 失敗すると、クライアントまたはサービスプロバイダーの呼び出しが MAPI_E_NOT_INITIALIZED の値を返します。 
+クライアントまたはサービス プロバイダーは、他の MAPI 呼 **び出しを行う前に MAPIInitialize** を呼び出す必要があります。 そうしない場合、クライアントまたはサービス プロバイダーの呼び出しは、MAPI_E_NOT_INITIALIZEDします。 
   
-マルチスレッドアプリケーションから**MAPIInitialize**を呼び出すときは、 _lpMapiInit_パラメーターを次のように宣言されている[MAPIINIT_0](mapiinit_0.md)構造に設定します。 
+マルチスレッド アプリケーション **から MAPIInitialize** を呼び出す場合は  _、lpMapiInit_ パラメーター [を次のように](mapiinit_0.md) 宣言された MAPIINIT_0 構造体に設定します。 
   
- **MAPIINIT_0**MAPIINIT = {0, MAPI_MULTITHREAD_NOTIFICATIONS} 
+ **MAPIINIT_0** MAPIINIT= { 0, MAPI_MULTITHREAD_NOTIFICATIONS} 
   
-そして、次のように呼び出します。 
+と呼び出し: 
   
- **MAPIInitialize**(&amp;MAPIINIT); 
+ **MAPIInitialize** &amp; (MAPIINIT); 
   
-この構造体を宣言すると、MAPI は通知ウィンドウを処理する別のスレッドを作成します。これは、初期化の参照カウントが0になるまで続行します。 Windows サービスでは、 _lpMapiInit_によって参照されている**MAPIINIT_0**構造体の**ulflags**メンバーを MAPI_NT_SERVICE に設定する必要があります。 
+この構造体を宣言すると、MAPI は通知ウィンドウを処理する別のスレッドを作成します。これは、初期化参照カウントが 0 になるまで続きます。 サービス _Windows、lpMapiInit_ が指す MAPIINIT_0構造体の **ulflags** メンバーを、MAPI_NT_SERVICE。 
   
 > [!NOTE]
-> **MAPIInitialize**または**MAPIUninitialize**は、Win32 **DllMain**関数から、またはスレッドを作成または終了する他の関数内から呼び出すことはできません。 詳細については、「[スレッドセーフオブジェクトの使用](using-thread-safe-objects.md)」を参照してください。 
+> Win32 **DllMain** 関数またはスレッドを作成または終了するその他の関数内から **MAPIInitialize** または **MAPIUninitialize** を呼び出す必要があります。 詳細については、「Using [Thread-Safe オブジェクト」を参照してください](using-thread-safe-objects.md)。 
   
- **MAPIInitialize**では、拡張エラー情報は返されません。 他のほとんどの MAPI 呼び出しとは異なり、戻り値の意味は、エラーが発生した初期化の特定の手順に対応するように厳密に定義されます。 
+ **MAPIInitialize では** 、拡張エラー情報は返されません。 他のほとんどの MAPI 呼び出しとは異なり、戻り値の意味は、失敗した初期化の特定の手順に対応するために厳密に定義されます。 
   
 1. パラメーターとフラグをチェックします。
     
-    MAPI_E_INVALID_PARAMETER または MAPI_E_UNKNOWN_FLAGS。 発信者が無効なパラメーターまたはフラグを渡しました。
+    MAPI_E_INVALID_PARAMETERまたはMAPI_E_UNKNOWN_FLAGS。 呼び出し元が無効なパラメーターまたはフラグを渡しました。
     
-2. MAPI に必要なレジストリキーを初期化し、オペレーティングシステムの種類を確認します。 この手順は、クライアントプロセスが Windows でサービスとして実行されていて、 **MAPIINIT_0**構造の MAPI_NT サービスフラグを設定している場合にのみ発生します。 
+2. MAPI で必要なレジストリ キーを初期化し、オペレーティング システムの種類を確認します。 この手順は、クライアント プロセスが Windows の下でサービスとして実行され、MAPI_NT SERVICE フラグを MAPIINIT_0する **場合にのみMAPIINIT_0** されます。 
     
-    MAPI_E_TOO_COMPLEX。 呼び出し元のプロセスは Windows サービスであり、MAPI に必要なレジストリキーを初期化できませんでした。 
+    MAPI_E_TOO_COMPLEX。 呼び出しプロセスはWindowsサービスであり、MAPI で必要なレジストリ キーを初期化できませんでした。 
     
-    アプリケーションイベントログで追加情報を入手できる場合があります。
+    その他の情報は、アプリケーション イベント ログで確認できます。
     
-3. MAPI と ole が互換性があるかどうかを確認し、ole を初期化します。
+3. MAPI と OLE の互換性を確認し、OLE を初期化します。
     
-1. 現在のバージョンの OLE と MAPI の間に互換性があるかどうかを確認します。 
+1. OLE と MAPI の現在のバージョン間の互換性を確認します。 
     
     MAPI_E_VERSION。 ワークステーションにインストールされている OLE のバージョンは、このバージョンの MAPI と互換性がありません。
     
 2. OLE を初期化します。 
     
-    この手順では、この関数では、ここに記載されていないエラーコードを返すことができます。 ここに記載さ_れていない_エラーは、OLE 関数**CoInitialize**からのものであることを前提としています。
+    この手順の間のみ、この関数はここに記載されていないエラー コードを返す場合があります。 ここに記載  _されていない_ エラーは、OLE 関数 **CoInitialize からのエラーと見なす必要があります**。
     
 4. プロセスごとのグローバル変数を初期化します。
     
-    MAPI_E_SESSION_LIMIT。 MAPI は、現在のプロセスに固有のコンテキストを設定します。 プロセスの数が特定の数を超えた場合、または使用可能なメモリが不足している場合は、Win16 でエラーが発生することがあります。
+    MAPI_E_SESSION_LIMIT。 MAPI は、現在のプロセスに固有のコンテキストを設定します。 Win16 では、プロセス数が一定の数を超えた場合、または使用可能なメモリが使い果たされた場合はシステム上でエラーが発生する可能性があります。
     
 5. すべてのプロセスの共有グローバル変数を初期化します。
     
-    MAPI_E_NOT_ENOUGH_RESOURCES。 システムリソースが不足しているため、操作を完了できませんでした。
+    MAPI_E_NOT_ENOUGH_RESOURCES。 操作を完了するのに十分なシステム リソースが使用できません。
     
-6. 通知エンジンを初期化し、MAPI_MULTITHREAD_NOTIFICATIONS フラグによって要求された場合は、ウィンドウとそのスレッドを作成します。 
+6. 通知エンジンを初期化し、ウィンドウとそのスレッドを作成します (このフラグで要求された場合MAPI_MULTITHREAD_NOTIFICATIONSします。 
     
-    MAPI_E_INVALID_OBJECT。 システムリソースが不足すると、エラーが発生することがあります。 
+    MAPI_E_INVALID_OBJECT。 システム リソースが使い果たされた場合、失敗する可能性があります。 
     
-7. プロファイルプロバイダーを読み込んで初期化します。 **MAPIInitialize**がプロファイルデータが格納されているレジストリキーにアクセスできることを確認します。 
+7. プロファイル プロバイダーを読み込み、初期化します。 **MAPIInitialize がプロファイル** データが格納されているレジストリ キーにアクセスできると確認します。 
     
-    MAPI_E_NOT_INITIALIZED。 プロファイルプロバイダーでエラーが発生しました。 
+    MAPI_E_NOT_INITIALIZED。 プロファイル プロバイダーでエラーが発生しました。 
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -114,7 +114,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl  <br/> ||mfcmapi は、 **MAPIInitialize**メソッドを使用して、バックグラウンドスレッドで MAPI を初期化し、一部のテーブル処理を実行します。  <br/> |
+|ContentsTableListCtrl.cpp  <br/> ||MFCMAPI では **、MAPIInitialize** メソッドを使用して、バックグラウンド スレッドで MAPI を初期化して、テーブル処理を実行します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

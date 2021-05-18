@@ -1,5 +1,5 @@
 ---
-title: マクロコマンド (Access カスタム web アプリ)
+title: マクロ コマンド (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,17 +14,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411688"
 ---
-# <a name="macro-commands-access-custom-web-app"></a>マクロコマンド (Access カスタム web アプリ)
+# <a name="macro-commands-access-custom-web-app"></a>マクロ コマンド (Access カスタム Web アプリ)
 
 > [!IMPORTANT]
 > マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [RunDataMacro マクロアクション (Access カスタム web アプリ)](rundatamacro-macro-action-access-custom-web-app.md)
+- [RunDataMacro マクロ アクション (Access カスタム Web アプリ)](rundatamacro-macro-action-access-custom-web-app.md)
     
-- [RunMacro マクロアクション (Access カスタム web アプリ)](runmacro-macro-action-access-custom-web-app.md)
+- [RunMacro マクロ アクション (Access カスタム Web アプリ)](runmacro-macro-action-access-custom-web-app.md)
     
-- [setvariable マクロアクション (Access カスタム web アプリ)](setvariable-macro-action-access-custom-web-app.md)
+- [SetVariable マクロ アクション (Access カスタム Web アプリ)](setvariable-macro-action-access-custom-web-app.md)
     
 

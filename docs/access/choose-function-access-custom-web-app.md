@@ -1,5 +1,5 @@
 ---
-title: Choose function (Access カスタム web アプリ)
+title: 関数の選択 (カスタム Web アプリへのアクセス)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33414117"
 ---
-# <a name="choose-function-access-custom-web-app"></a>Choose function (Access カスタム web アプリ)
+# <a name="choose-function-access-custom-web-app"></a>関数の選択 (カスタム Web アプリへのアクセス)
 
 値のリストから、指定されたインデックスの位置にあるアイテムを返します。
   
@@ -22,19 +22,19 @@ ms.locfileid: "33414117"
   
 ## <a name="syntax"></a>構文
 
-**[**(*indexnumber*, *Value*, [*Value_n*]) 
+**Choose** (*IndexNumber*, *Value*,*[* Value_n ]) 
   
 **Choose** 関数の引数は次のとおりです。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *indexnumber*  <br/> |この引数に続くアイテム リストのインデックス (1 から始まるインデックス) を表す整数式。  <br/> |
+| *IndexNumber*  <br/> |この引数に続くアイテム リストのインデックス (1 から始まるインデックス) を表す整数式。  <br/> |
 | *値*  <br/> |任意のデータ型の値のリスト。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
 If the provided  *IndexNumber*  is not an integer, then the value is implicitly converted to an integer. 
   
-インデックス値が値の配列の範囲を超える場合、 **Choose**は NULL を返します。 
+インデックス値が値の配列の境界を超えた場合 **、Choose** は NULL を返します。 
   
 

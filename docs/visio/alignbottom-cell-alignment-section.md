@@ -26,7 +26,7 @@ ms.locfileid: "33411800"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | alignbottom]  <br/> |
+| セル名 :  <br/> | AlignBottom  <br/> |
    
 プログラムから、インデックスによって [AlignBottom] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

@@ -26,7 +26,7 @@ ms.locfileid: "32321330"
 
 次のコード例の **AddMyNewFolder** は、[Folders](https://msdn.microsoft.com/library/bb612071\(v=office.15\)) コレクションの **Add** メソッドを呼び出して、フォルダー "My New Folder" を表す [Folder](https://msdn.microsoft.com/library/bb645774\(v=office.15\)) オブジェクトを Outlook のフォルダー一覧の **[受信トレイ]** に追加します。 "My New Folder" が表示されます。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

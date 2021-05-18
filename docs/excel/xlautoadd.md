@@ -38,7 +38,7 @@ int WINAPI xlAutoAdd(void);
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-この関数を実装する場合、1 を返す必要があります。 (**int**)。
+この関数を実装する場合、1 (**int**) を返す必要があります。
   
 ## <a name="remarks"></a>注釈
 

@@ -32,7 +32,7 @@ ms.locfileid: "33413074"
    
 ## <a name="remarks"></a>注釈
 
-docmd 関数でサポートされているコマンドの一覧については、Microsoft Visio 2013 Automation リファレンスのトピック「docmd/docmd コマンド」を参照してください。 
+DOCMD 関数でサポートされるコマンドの一覧については、「Microsoft Visio 2013 オートメーション リファレンス」のトピック「DoCmd/DOCMD コマンド」を参照してください。 
   
 ## <a name="example"></a>例
 

@@ -21,18 +21,18 @@ ms.locfileid: "33412416"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームサーバーを使用して既存のメッセージをフォームに読み込むには、次のいずれかの方法を使用します。
+フォーム サーバーを使用して既存のメッセージをフォームに読み込むには、次のいずれかの方法を使用します。
   
-- 次のように、imapisession を呼び出します。トークンを作成し、次に、フォームを表示するために[apiapisession:: showform](imapisession-showform.md)を実行するには[:P repareform](imapisession-prepareform.md) 。 
+- [IMAPISession::P repareForm](imapisession-prepareform.md)を呼び出してトークンを作成し、次に[IMAPISession::ShowForm](imapisession-showform.md)を呼び出してフォームを表示します。 
     
-- [imapiformmgr:: loadform](imapiformmgr-loadform.md)を呼び出します。 
+- [IMAPIFormMgr::LoadForm を呼び出します](imapiformmgr-loadform.md)。 
     
-**PrepareForm**および**showform**戦略は、比較的簡単ですが、クライアントに関してはモーダルであるフォームが生成されます。 これは、 **showform**の呼び出しが、フォームが終了するまで返されないためです。 フォームを非同期的に処理する必要がある場合は、この方法を使用しないでください。 
+**PrepareForm と** **ShowForm** 戦略の使用は比較的簡単ですが、クライアントに関してモーダルなフォームになります。 これは、フォームが終了するまで **ShowForm** の呼び出しが返されないためです。 フォームを非同期的に処理する必要がある場合は、この戦略を使用しない。 
   
-メソッドにはいくつかのパラメーターが必要なため、 **loadform**戦略を使用することは困難です。 これらのパラメーターによって、フォームマネージャーは適切なコンテキストで適切なフォームサーバーを起動し、適切なメッセージを表示するように指示されます。 フォームサーバーが既に実行されている場合、フォームマネージャーはフォームサーバーの新しいインスタンスを起動せずに、そのメッセージをフォームサーバーに読み込みます。 
+メソッドには **いくつかのパラメーターが必要なので、LoadForm** 戦略の使用は難しくなります。 これらのパラメーターは、適切なコンテキストで適切なフォーム サーバーを起動し、適切なメッセージを表示するようにフォーム マネージャーに指示します。 フォーム サーバーが既に実行されている場合、フォーム マネージャーは、フォーム サーバーの新しいインスタンスを起動せずに、メッセージをフォーム サーバーに読み込む。 
   
-起動するフォームサーバーを指定するには、ターゲットサーバーによって処理されるメッセージクラスを_lpszmessageclass_パラメーターの内容で渡します。 適切なメッセージクラスは、読み込まれるメッセージの**PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) プロパティを取得することによって判断できます。 指定したメッセージクラスのフォームサーバーがなく、メッセージのスーパークラスに属するメッセージを処理するフォームサーバーだけが存在することもあります。 このクラスのメッセージを処理することを目的としたフォームサーバーのみがメッセージを読み込むことを希望する場合は、 **loadform**呼び出しで MAPIFORM_EXACTMATCH フラグを設定します。 詳細については、「 [MAPI メッセージクラス](mapi-message-classes.md)」を参照してください。
+起動するフォーム サーバーを指定するには  _、lpszMessageClass_ パラメーターの内容でターゲット サーバーが処理するメッセージ クラスを渡します。 適切なメッセージ クラスは、読み込むメッセージの PR_MESSAGE_CLASS **(** [PidTagMessageClass](pidtagmessageclass-canonical-property.md)) プロパティを取得することで決定できます。 指定したメッセージ クラスのフォーム サーバーがない場合があります。メッセージのスーパークラスに属するメッセージを処理するフォーム サーバーのみです。 そのクラスのメッセージを処理することを特に意図したフォーム サーバーによってのみメッセージを読み込む場合は **、LoadForm** 呼び出しで MAPIFORM_EXACTMATCH フラグを設定します。 詳細については、「MAPI メッセージ [クラス」を参照してください](mapi-message-classes.md)。
   
- また、 **loadform**には、ビューアーのメッセージサイトとビューコンテキストへのポインターと、ターゲットメッセージの**PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) および**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) の値を指定する必要があります。プロパティ.
+ **LoadForm** には、ビューアーのメッセージ サイトへのポインターと、ターゲット メッセージ **の PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) プロパティと PR_MESSAGE_FLAGS ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティのコンテキストと値が必要です。 
   
 

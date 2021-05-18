@@ -1,5 +1,5 @@
 ---
-title: 合体関数 (Access カスタム web アプリ)
+title: Coalesce 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411394"
 ---
-# <a name="coalesce-function-access-custom-web-app"></a>合体関数 (Access カスタム web アプリ)
+# <a name="coalesce-function-access-custom-web-app"></a>Coalesce 関数 (Access カスタム Web アプリ)
 
 一連の引数から Null でない最初の式を返します。
   
@@ -22,7 +22,7 @@ ms.locfileid: "33411394"
   
 ## <a name="syntax"></a>構文
 
-**Coalesce** (Value**, [Value**], …,[Value**]) 
+**Coalesce** (Value **, [Value **], …,[Value **]) 
   
 **Coalesce** 関数の引数は次のとおりです。 
   

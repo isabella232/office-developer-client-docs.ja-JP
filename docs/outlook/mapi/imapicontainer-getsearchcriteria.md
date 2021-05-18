@@ -40,39 +40,39 @@ HRESULT GetSearchCriteria(
 
  _ulFlags_
   
-> 順番渡された文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]渡された文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 渡された文字列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
+> 渡された文字列は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列は ANSI 形式になります。
     
  _lppRestriction_
   
-> 読み上げ検索条件を定義する[srestriction](srestriction.md)構造体へのポインターへのポインター。 クライアントアプリケーションが_lppRestriction_パラメーターで NULL を渡した場合、 **getsearchcriteria**は**srestriction**構造を返しません。 
+> [out]検索条件を定義する [SRestriction](srestriction.md) 構造体へのポインター。 クライアント アプリケーションが  _lppRestriction_ パラメーターで NULL を渡した場合 **、GetSearchCriteria** は **SRestriction 構造を返す必要** があります。 
     
  _lppContainerList_
   
-> 読み上げ検索に含めるコンテナーを表すエントリ識別子の配列へのポインターへのポインター。 クライアントが_lppContainerList_パラメーターで NULL を渡した場合、 **getsearchcriteria**はエントリ識別子の配列を返しません。 
+> [out]検索に含めるコンテナーを表すエントリ識別子の配列へのポインター。 クライアントが  _lppContainerList_ パラメーターで NULL を渡した場合 **、GetSearchCriteria** はエントリ識別子の配列を返します。 
     
- _lpulsearchstate_
+ _lpulSearchState_
   
-> 読み上げ検索の現在の状態を示すために使用されるフラグのビットマスクへのポインター。 クライアントが_lpulsearchstate_パラメーターで NULL を渡すと、 **getsearchcriteria**はフラグを返しません。 次のフラグを設定できます。 
+> [out]検索の現在の状態を示すために使用されるフラグのビットマスクへのポインター。 クライアントが  _lpulSearchState_ パラメーターで NULL を渡した場合 **、GetSearchCriteria は** フラグを返します。 次のフラグを設定できます。 
     
 SEARCH_FOREGROUND 
   
-> 検索は、他の検索と比較して高い優先度で実行する必要があります。 このフラグが設定されていない場合、検索は他の検索と比較して標準の優先度で実行されます。
+> 検索は、他の検索と相対的に高い優先度で実行する必要があります。 このフラグが設定されていない場合、検索は他の検索に対して通常の優先度で実行されます。
     
 SEARCH_REBUILD 
   
-> 検索は、CPU を集中的に消費する操作で、条件に一致するメッセージを見つけようとしています。 このフラグが設定されていない場合は、検索の処理の CPU に負荷のかかる部分があります。 このフラグは、検索がアクティブである場合 (つまり、SEARCH_RUNNING フラグが設定されている場合) にのみ意味を持ちます。
+> 検索は CPU 負荷の高い操作モードで、条件に一致するメッセージを検索します。 このフラグが設定されていない場合、検索の操作の CPU 負荷の高い部分は終了します。 このフラグは、検索がアクティブである場合にのみ意味を持ちます (つまり、SEARCH_RUNNINGフラグが設定されている場合)。
     
 SEARCH_RECURSIVE 
   
-> 指定されたコンテナーと、そのすべての子コンテナーを検索して、一致するエントリを探します。 このフラグが設定されていない場合、 [IMAPIContainer:: setsearchcriteria](imapicontainer-setsearchcriteria.md)メソッドへの最後の呼び出しに明示的に含まれているコンテナーのみが検索されます。 
+> 検索では、指定したコンテナーとそのすべての子コンテナーで、一致するエントリが検索されます。 このフラグが設定されていない場合 [、IMAPIContainer::SetSearchCriteria](imapicontainer-setsearchcriteria.md) メソッドの最後の呼び出しに明示的に含まれるコンテナーだけが検索されます。 
     
 SEARCH_RUNNING 
   
-> 検索がアクティブで、メッセージストアまたはアドレス帳の変更を反映するためにコンテナーの contents テーブルが更新されています。 このフラグが設定されていない場合、検索は非アクティブで、contents テーブルは静的です。
+> 検索がアクティブで、コンテナーのコンテンツ テーブルが更新され、メッセージ ストアまたはアドレス帳の変更が反映されます。 このフラグが設定されていない場合、検索は非アクティブであり、コンテンツ テーブルは静的です。
     
 ## <a name="return-value"></a>戻り値
 
@@ -82,23 +82,23 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
+> このフラグMAPI_UNICODE設定され、実装が Unicode をサポートしていないか、または設定されていないMAPI_UNICODE実装が Unicode のみをサポートしています。
     
 MAPI_E_NOT_INITIALIZED 
   
-> コンテナーに対して検索条件が設定されていません。
+> コンテナーに対して検索条件が確立されていませんでした。
     
 ## <a name="remarks"></a>注釈
 
-**IMAPIContainer:: getsearchcriteria**メソッドは、通常、検索結果フォルダーである検索をサポートするコンテナーの検索条件を取得します。 検索条件を作成するには、コンテナーの**IMAPIContainer:: setsearchcriteria**メソッドを呼び出します。 
+**IMAPIContainer::GetSearchCriteria** メソッドは、検索をサポートするコンテナー (通常は検索結果フォルダー) の検索条件を取得します。 検索条件を作成するには、コンテナーの **IMAPIContainer::SetSearchCriteria メソッドを呼び出** します。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**PR_SEARCH** ([PidTagSearch](pidtagsearch-canonical-property.md)) プロパティに関連付けられている高度な検索機能を提供する場合にのみ、アドレス帳コンテナーで**getsearchcriteria**をサポートする必要があります。 アドレス帳コンテナーの高度な検索機能を実装する方法の詳細については、「[高度な](implementing-advanced-searching.md)検索の実装」を参照してください。
+アドレス帳コンテナーは **、GetSearchCriteria** プロパティ [(PidTagSearch)](pidtagsearch-canonical-property.md)プロパティに関連付けられている高度な検索機能を提供する場合にのみ **、PR_SEARCH** GetSearchCriteria をサポートする必要があります。 アドレス帳コンテナーの高度な検索機能を実装する方法の詳細については [、「Implementing Advanced Searching」を参照してください](implementing-advanced-searching.md)。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-_lppRestriction_パラメーターと_lppContainerList_パラメーターで示されるデータ構造が完成したら、各構造体を解放するために、 [MAPIFreeBuffer](mapifreebuffer.md)を1回呼び出します。 
+_lppRestriction_ パラメーターと _lppContainerList_ パラメーターが示すデータ構造が終了したら、リリースする構造体ごとに [MAPIFreeBuffer](mapifreebuffer.md)を 1 回呼び出します。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -106,7 +106,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|HierarchyTableDlg  <br/> |CHierarchyTableDlg:: oneditsearchcriteria  <br/> |mfcmapi は、 **IMAPIContainer:: getsearchcriteria**メソッドを使用して、フォルダーから表示する検索条件を取得します。  <br/> |
+|HierarchyTableDlg.cpp  <br/> |CHierarchyTableDlg::OnEditSearchCriteria  <br/> |MFCMAPI は **IMAPIContainer::GetSearchCriteria** メソッドを使用して、表示するフォルダーから検索条件を取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

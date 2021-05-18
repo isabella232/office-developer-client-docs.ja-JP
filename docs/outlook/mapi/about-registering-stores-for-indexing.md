@@ -1,11 +1,11 @@
 ---
-title: インデックス作成のためのストア登録について
+title: 概要 - インデックス作成用のストアの登録
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: dd2aa06a-96e8-1291-18b5-fc3c40b74e4d
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 96322d12b3b7b334b5f78f81910dcf34c3fc78e1
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -13,56 +13,56 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32321827"
 ---
-# <a name="about-registering-stores-for-indexing"></a>インデックス作成のためのストア登録について
+# <a name="about-registering-stores-for-indexing"></a>概要 - インデックス作成用のストアの登録
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックは、Microsoft Office Outlook 2007 のクイック検索に固有のものです。
+このトピックは、2007 年のインスタント検索Microsoft Office Outlookです。
   
-クイック検索を使用すると、Outlook のアイテムをすばやく見つけることができます。 Windows デスクトップサーチのコンポーネントを使用します。
+インスタント検索を使用すると、アプリ内のアイテムをすばやくOutlook。 デスクトップ検索のコンポーネントWindows使用します。
   
-MAPI プロトコルハンドラーは、検索用にインデックスが必要なストアの Windows レジストリをチェックします。 インデックスを作成するストアプロバイダーは、Windows レジストリに登録する必要があります。
+MAPI プロトコル ハンドラーは、検索Windowsインデックスを作成する必要があるストアのレジストリをチェックします。 インデックスを作成するストア プロバイダーは、レジストリに登録Windows必要があります。
   
-既定では、windows デスクトップ検索は、次の4種類のストアプロバイダーを windows レジストリに追加して、インデックスを許可します。
+既定では、Windowsデスクトップ検索は、インデックス作成を許可するために、次の 4 種類のストア プロバイダーを Windowsレジストリに追加します。
   
-- 個人用フォルダーファイルのストア (。PST)。
+- 個人用フォルダー ファイルの保存 (.PST)。
     
--  すべてのオフラインフォルダーファイル (.ost) を含む Microsoft Exchange ストア。 
+-  Microsoft Exchange(オフライン フォルダー ファイル (.ost) を含む) を格納します。 
     
--  パブリックフォルダーのストア。 
+-  パブリック フォルダー用のストア。 
     
--  Microsoft Office Outlook Connector for MSN に保存します。 
+-  MSN 用Microsoft Office Outlookコネクタ用に格納します。 
     
- インデックスを作成するサードパーティ製のストアプロバイダーは、Windows レジストリに登録する必要があります。 
+ インデックスを作成するサード パーティのストア プロバイダーは、自身をレジストリに登録Windows必要があります。 
   
 > [!NOTE]
-> 管理者とユーザーは、グループポリシー設定を使用して、Windows デスクトップサーチが Outlook アイテムのインデックスを作成できないようにすることができます。 詳細については、「 [Windows デスクトップサーチの拡張](https://msdn.microsoft.com/library/2eab146a-8516-4b95-b73c-ca7f980ba233%28Office.15%29.aspx)」を参照してください。 
+> 管理者とユーザーは、グループ ポリシー設定を使用して、デスクトップWindowsアイテムのインデックスを作成Outlookできます。 詳細については[、「Extending Windows デスクトップ検索」を参照してください](https://msdn.microsoft.com/library/2eab146a-8516-4b95-b73c-ca7f980ba233%28Office.15%29.aspx)。 
   
-## <a name="registry-keys"></a>レジストリキー
+## <a name="registry-keys"></a>レジストリ キー
 
-コンピューターでは、インデックスを作成するすべてのストアプロバイダーは、Windows レジストリ内の次の3つのレジストリキーのいずれか1つにのみ登録されている必要があります。 MAPI プロトコルハンドラーは、次の順序で各キーの下を調べます。
+コンピューターでは、インデックスを作成するストア プロバイダーはすべて、次の 3 つのレジストリ キーの 1 つのみ登録する必要があります。Windowsします。 MAPI プロトコル ハンドラーは、これらの各キーの下を次の順序で確認します。
   
-1. [HKLM] \Software\Policies\Microsoft\Windows\Windows Search \
+1. [HKLM]\Software\Policies\Microsoft\Windows\Windows Search\
     
-2. [HKLM] \Software\Microsoft\Windows\Windows Search\Preferences\
+2. [HKLM]\Software\Microsoft\Windows\Windows\Preferences\
     
-3. [HKCU] \Software\Microsoft\Windows\Windows Search\Preferences\
+3. [HKCU]\Software\Microsoft\Windows\Windows\Preferences\
     
- キーの下の各値は、インデックスを作成するストアプロバイダーに対応しています。 値の名前は、格納プロバイダーのグローバル一意識別子 (GUID) です。これは、 **DWORD**型で、16進数の値0x00000001 です。 
+ キーの下の各値は、インデックスが作成されるストア プロバイダーに対応します。 値の名前は、ストア プロバイダーのグローバル一意識別子 (GUID) です。これは **DWORD** 型で、値は 16 進値0x00000001。 
   
-## <a name="guids-for-store-providers"></a>ストアプロバイダーの guid
+## <a name="guids-for-store-providers"></a>ストア プロバイダーの GUID
 
-mapi プロパティ**[PR_MDB_PROVIDER](pidtagstoreprovider-canonical-property.md)** は、mapi ストアの GUID を指定します。 次の表では、Outlook インデックスが格納されているストアプロバイダーの guid について説明します。 
+MAPI プロパティは **[PR_MDB_PROVIDER](pidtagstoreprovider-canonical-property.md)** MAPI ストアの GUID を指定します。 インデックスを作成するストア プロバイダー Outlook、次の表で説明します。 
   
 ||||
 |:-----|:-----|:-----|
-|**ストアプロバイダーの種類** <br/> |**GUID** <br/> |**メモ** <br/> |
-|個人用フォルダーファイル (。PST  <br/> |{4154494E-BFF9-01B8-00AA-0037D96E0000}  <br/> |GUID は、 **MSPST_UID_PROVIDER**として、パブリックヘッダーファイル mspst に記載されています。 <br/> |
-|Exchange  <br/> |{C0A19454-7F29-1B10-A587-08002B2A2517}  <br/> |guid は、パブリックヘッダーファイル edkmdb で、 **pbexchangeproviderprimaryuserguid**としてドキュメント化されています。 <br/> |
-|パブリック フォルダー  <br/> |{70fab278-f7af-cd11-9bc8-00aa002fc45a}  <br/> |GUID は、パブリックヘッダーファイル edkmdb では**pbexchangeproviderpublicguid**として記述されています。 <br/> |
-|MSN 用 Outlook コネクタ  <br/> |{c34f5c97-eb05-bb4b-b199-2a7570ec7cf9}  <br/> |なし  <br/> |
+|**ストア プロバイダーの種類** <br/> |**GUID** <br/> |**注** <br/> |
+|個人用フォルダー ファイル (.PST)  <br/> |{4154494E-BFF9-01B8-00AA-0037D96E0000}  <br/> |GUID は、パブリック ヘッダー ファイル mspst.h に次のように **MSPST_UID_PROVIDER** <br/> |
+|Exchange  <br/> |{C0A19454-7F29-1B10-A587-08002B2A2517}  <br/> |GUID はパブリック ヘッダー ファイル edkmdb.h に **pbExchangeProviderPrimaryUserGuid として文書化されています** <br/> |
+|パブリック フォルダー  <br/> |{70fab278-f7af-cd11-9bc8-00aa002fc45a}  <br/> |GUID はパブリック ヘッダー ファイル edkmdb.h に **pbExchangeProviderPublicGuid として文書化されています** <br/> |
+|OutlookMSN 用コネクタ  <br/> |{c34f5c97-eb05-bb4b-b199-2a7570ec7cf9}  <br/> |なし  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

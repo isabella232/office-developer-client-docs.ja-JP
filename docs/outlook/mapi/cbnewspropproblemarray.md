@@ -25,11 +25,11 @@ ms.locfileid: "33413340"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定した数の[sprop問題](spropproblem.md)構造を含む新しい[sprop問題の配列](spropproblemarray.md)構造に割り当てるバイト数を計算します。 
+指定した数の[SPropProblem](spropproblem.md)構造体を含む新しい[SPropProblemArray](spropproblemarray.md)構造体に割り当てるバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |**SPropProblemArray** <br/> |
    
 ```cpp
@@ -38,9 +38,9 @@ CbNewSPropProblemArray (_cprob)
 
 ## <a name="parameters"></a>パラメーター
 
- __cprob_
+ _ _cprob_
   
-> 新しい**spropproblem の配列**構造に含めることができる**spropproblem**の構造体の数。 
+> 新しい **SPropProblemArray** 構造体に含める **SPropProblem 構造体の** 数。 
     
 ## <a name="see-also"></a>関連項目
 

@@ -20,7 +20,7 @@ ms.locfileid: "32322107"
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IOlkAccountHelper](iolkaccounthelper.md)を参照してください。
+[「IOlkAccountHelper」を参照してください](iolkaccounthelper.md)。
   
 ```cpp
 HRESULT IOlkAccountHelper::GetIdentity (  
@@ -33,23 +33,23 @@ HRESULT IOlkAccountHelper::GetIdentity (
 
 _pwszIdentity_
   
-> 順番読み上げプロファイル名。
+> [in][out]プロファイル名。
     
 _pcch_
   
-> 順番読み上げこのメソッドを呼び出すと、割り当てられている_pwszIdentity_のサイズ (文字数) が格納されます。 戻り時には、返されるプロファイル名の実際の長さ (0 終端文字を含む) が格納されます。 
+> [in][out]このメソッドを呼び出す際に、割り当てられた  _pwszIdentity_ のサイズ (文字数) が含まれています。 返された場合、返されるプロファイル名の実際の長さ (0 終端文字を含む) が含まれる。 
     
 ## <a name="return-values"></a>戻り値
 
 |**HRESULT 型**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |呼び出しが成功しました。  <br/> |
-|E_OUTOFMEMORY  <br/> |返されたプロファイル名が_pwszIdentity_のサイズを超えています。  <br/> |
-|E_INVALIDARG  <br/> | _pcch_が NULL です。  <br/> |
+|E_OUTOFMEMORY  <br/> |返されるプロファイル名は  _、pwszIdentity_ のサイズよりも長くなります。  <br/> |
+|E_INVALIDARG  <br/> | _pcch は_ NULL です。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-_pwszIdentity_が小さすぎてプロファイル名を保持できない場合は、戻り値に設定されず、 _pcch_は_pwszIdentity_に必要なサイズをポイントします。
+_pwszIdentity が_ 小さすぎてプロファイル名を保持できない場合、戻り値に設定され _、pcch_ は _pwszIdentity_ に必要なサイズを指します。
   
 ## <a name="see-also"></a>関連項目
 

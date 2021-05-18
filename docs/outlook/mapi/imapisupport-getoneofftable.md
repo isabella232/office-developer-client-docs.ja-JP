@@ -1,5 +1,5 @@
 ---
-title: imapisupportgetoneofftable
+title: IMAPISupportGetOneOffTable
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33412759"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI の1回限りのテーブルへのポインター (すべてのアドレス帳プロバイダーが新しい受信者を作成するためにサポートするテンプレートのリスト) を返します。
+MAPI 一時テーブルへのポインター (すべてのアドレス帳プロバイダーが新しい受信者の作成をサポートするテンプレートの一覧) を返します。
   
 ```cpp
 HRESULT GetOneOffTable(
@@ -38,35 +38,35 @@ HRESULT GetOneOffTable(
 
  _ulFlags_
   
-> 順番文字列列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]文字列列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 文字列列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列列は ANSI 形式になります。
+> 文字列列は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列列は ANSI 形式になります。
     
- _lpptable_
+ _lppTable_
   
-> 読み上げ1回限りのテーブルへのポインターへのポインター。
+> [out]1 回表へのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 1回限りのテーブルが正常に取得されました。
+> 1 回のテーブルが正常に取得されました。
     
 ## <a name="remarks"></a>注釈
 
-**imapisupport:: getoneofftable**メソッドは、アドレス帳プロバイダーサポートオブジェクトに対して実装されています。 アドレス帳プロバイダーは、 **getoneofftable**を呼び出して、新しい受信者を作成するためのテンプレートの完全なリストを取得します。 この表には、セッションのサポートでアクティブになっているブックプロバイダーと MAPI がサポートするテンプレートのテンプレートが含まれています。 
+**IMAPISupport::GetOneOffTable** メソッドは、アドレス帳プロバイダーサポート オブジェクトに実装されます。 アドレス帳プロバイダーは **GetOneOffTable** を呼び出して、新しい受信者を作成するためのテンプレートの完全な一覧を取得します。 この表には、セッション サポートでアクティブなアドレス帳プロバイダーのテンプレートと、MAPI がサポートするテンプレートが含まれています。 
   
-新しく作成された受信者を使用して、メッセージの宛先を指定することも、アドレス帳コンテナーに追加することもできます。
+新しく作成された受信者は、メッセージのアドレス指定に使用するか、アドレス帳コンテナーに追加できます。
   
-1回限りのテーブルで必要な列セットを構成するプロパティの一覧については、「 [1 回限りのテーブル](one-off-tables.md)」を参照してください。
+1 回のテーブルで必要な列セットを作成するプロパティの一覧については [、「One-Off Tables」を参照してください](one-off-tables.md)。
   
-_ulflags_パラメーターの MAPI_UNICODE フラグを設定すると、 [imapitable:: querycolumns](imapitable-querycolumns.md)および[imapitable:: QueryRows](imapitable-queryrows.md)メソッドから返される列の形式に影響します。 このフラグは、 [IMAPITable:: querysortorder](imapitable-querysortorder.md)メソッドによって返される並べ替え順序で、プロパティの種類を制御することもできます。 
+_ulFlags_ パラメーター MAPI_UNICODEフラグを設定すると [、IMAPITable::QueryColumns](imapitable-querycolumns.md)および [IMAPITable::QueryRows](imapitable-queryrows.md)メソッドから返される列の形式に影響します。 このフラグは [、IMAPITable::QuerySortOrder](imapitable-querysortorder.md) メソッドによって返される並べ替え順序のプロパティの種類も制御します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-この1回限りのテーブルへの変更の通知を受信するように登録されている場合は、他のプロバイダーの1回限りのテーブルへの変更について通知を受け取ることもあります。 これらの通知に基づいて、現在のセッション中に追加された新しいアドレスの種類をサポートできます。
+この一時テーブルに対する変更の通知を受け取る登録されている場合は、他のプロバイダーの一時テーブルに対する変更の通知も受け取る。 これらの通知に基づいて、現在のセッション中に追加される新しいアドレスの種類をサポートできます。
   
 ## <a name="see-also"></a>関連項目
 
@@ -89,5 +89,5 @@ _ulflags_パラメーターの MAPI_UNICODE フラグを設定すると、 [imap
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 
 
-[1回限りのテーブル](one-off-tables.md)
+[1 回切りテーブル](one-off-tables.md)
 

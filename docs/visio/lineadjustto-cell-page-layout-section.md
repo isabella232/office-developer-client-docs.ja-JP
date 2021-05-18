@@ -20,12 +20,12 @@ ms.locfileid: "33414026"
 
 線を束ねるときに対象とする動的コネクタを指定します。
   
-|**値**|**セレクター**|**オートメーション定数**|
+|**値**|**調整**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|.0  <br/> |迂回方法の既定値に合わせる  <br/> |**visPLOLineAdjustToDefault** <br/> |
-|1   <br/> |近接しているすべての線  <br/> |**visPLOLineAdjustToAll** <br/> |
-|2   <br/> |なし  <br/> |**visPLOLineAdjustToNone** <br/> |
-|3   <br/> |関連付けられている線  <br/> |**visPLOLineAdjustToRelated** <br/> |
+|0  <br/> |迂回方法の既定値に合わせる  <br/> |**visPLOLineAdjustToDefault** <br/> |
+|1  <br/> |近接しているすべての線  <br/> |**visPLOLineAdjustToAll** <br/> |
+|2  <br/> |なし  <br/> |**visPLOLineAdjustToNone** <br/> |
+|3  <br/> |関連付けられている線  <br/> |**visPLOLineAdjustToRelated** <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -35,7 +35,7 @@ ms.locfileid: "33414026"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[lineadjustto]  <br/> |
+|セル名:  <br/> |LineAdjustTo  <br/> |
    
 プログラムから、インデックスによって [LineAdjustTo] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

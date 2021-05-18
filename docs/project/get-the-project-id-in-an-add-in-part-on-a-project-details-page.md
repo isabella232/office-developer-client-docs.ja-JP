@@ -5,7 +5,7 @@ ms.date: 08/10/2016
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 009cd997-c7e5-4078-b495-c40caa29a5fb
-description: アドインパーツは、ホスティングページから完全に分離された iframe 要素にホストされます。 プロジェクト詳細ページ (PDP) のアドインパーツから現在のプロジェクトに関する情報を取得するには、postMessage メソッド、イベントリスナー、およびメッセージからプロジェクト ID を解析するイベントハンドラーを使用できます。
+description: アドイン パーツは、ホスティング ページから完全に分離された iframe 要素でホストされます。 Project 詳細ページ (PDP) のアドイン パーツから現在のプロジェクトに関する情報を取得するには、window.postMessage メソッド、イベント リスナー、およびメッセージからプロジェクト ID を解析するイベント ハンドラーを使用できます。
 ms.openlocfilehash: ffaf9cb7dac783a754b2d56b5ece4d5a7a0319be
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -15,60 +15,60 @@ ms.locfileid: "32322597"
 ---
 # <a name="get-the-project-id-in-an-add-in-part-on-a-project-details-page"></a>プロジェクト詳細ページのアドインの部分でプロジェクト ID を取得する
 
-アドインパーツは、ホスティングページから完全に分離された**iframe**要素にホストされます。 プロジェクト詳細ページ (PDP) のアドインパーツから現在のプロジェクトに関する情報を取得するには、 **postMessage**メソッド、イベントリスナー、およびメッセージからプロジェクト ID を解析するイベントハンドラーを使用できます。 
+アドイン パーツは、ホスティング ページから完全に分離された **iframe** 要素でホストされます。 Project 詳細ページ (PDP) のアドイン パーツから現在のプロジェクトに関する情報を取得するには **、window.postMessage** メソッド、イベント リスナー、およびメッセージからプロジェクト ID を解析するイベント ハンドラーを使用できます。 
   
-## <a name="prerequisites-for-creating-a-sharepoint-hosted-add-in-part-that-gets-the-project-id"></a>プロジェクト ID を取得する SharePoint ホスト型アドインパーツを作成するための前提条件
+## <a name="prerequisites-for-creating-a-sharepoint-hosted-add-in-part-that-gets-the-project-id"></a>プロジェクト ID を取得するSharePointホスト型アドイン パーツを作成するための前提条件
 <a name="Prereqs"> </a>
 
-この記事のコード例を使用するには、次のいずれかが必要になります。
+この記事のコード例を使用するには、次のどちらかが必要です。
   
-- SharePoint 2013 および Project Server 2013。アドイン分離用に構成されています。 リモートで開発している場合、サーバーはアドインのサイドロードをサポートする必要があります。または、開発者向けサイトにアドインをインストールする必要があります。
+- SharePoint分離用にProject 2013 およびサーバー 2013 を使用します。 リモートで開発する場合、サーバーはアドインのサイドローディングをサポートするか、開発者サイトにアドインをインストールする必要があります。
   
-- SharePoint online と Project online
+- SharePointオンラインとProject Online
     
-    - visual studio 2013、visual studio 2012 (Office Developer Tools for visual studio 2013、または Napa
+    - Visual Studio 2013 2012 Visual Studio 2012 Office開発者向けツール、Visual Studio 2013 Napa
         
     - ログオン ユーザーの次の十分なアクセス許可。
         
         - 開発用コンピュータのローカル管理者権限。
             
-        - 少なくとも1つのプロジェクトへの読み取りアクセス権。
+        - 少なくとも 1 つのプロジェクトへの読み取りアクセス。
             
-        - Project Web App サイトのページを編集する権限。
+        - サイト上のページを編集Project Web Appアクセス許可。
             
-        - システム アカウント以外の誰かとしてログオンする必要があります。 システムアカウントにアドインをインストールする権限がありません。
+        - システム アカウント以外の誰かとしてログオンする必要があります。 システム アカウントには、アドインをインストールするアクセス許可が付与されません。
     
-project 用アドインの詳細については、「project [Server 2013 用のアドインを作成するための前提条件](create-a-sharepoint-hosted-project-server-add-in.md#pj15_StatusingApp_Prerequisites)」を参照してください。 オンプレミスの設定 (必要に応じてループバックチェックを無効にする方法を含む) に関するガイダンスについては[、「SharePoint アドインのオンプレミスの開発環境をセットアップ](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/set-up-an-on-premises-development-environment-for-sharepoint-add-ins)する」を参照してください。 リモートで開発している場合は、「[リモートシステムで SharePoint 用アプリを開発](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/develop-sharepoint-add-ins)する」を参照してください。
+詳細[については、「Project Server 2013](create-a-sharepoint-hosted-project-server-add-in.md#pj15_StatusingApp_Prerequisites)のアドインを作成するための前提条件」を参照Project。 オンプレミス[のセットアップに関するガイダンスについては、「SharePoint](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/set-up-an-on-premises-development-environment-for-sharepoint-add-ins)アドインのオンプレミスの開発環境をセットアップする(必要に応じてループバック チェックを無効にする方法を含む)」を参照してください。 リモートで開発する場合は、「リモート システムでのアプリの開発[SharePointを参照してください](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/develop-sharepoint-add-ins)。
   
-## <a name="create-the-sharepoint-hosted-add-in-and-client-web-part"></a>SharePoint ホスト型アドインとクライアント web パーツを作成する
+## <a name="create-the-sharepoint-hosted-add-in-and-client-web-part"></a>ホストされるSharePointクライアント Web パーツを作成する
 <a name="CreateApp"> </a>
 
-1. Visual Studio を開き、[**ファイル** > ] [**新しい** > **プロジェクト**] の順に選択します。
+1. [ファイルVisual Studio開き、[**ファイル** の新  >  **しいファイル] を**  >  **Project。**
     
-2. [ **新しいプロジェクト**] ダイアログ ボックスで、上部のドロップダウン リストから [ **.NET Framework 4.5**] を選択します。 
+2. **[新しいプロジェクト]** ダイアログ ボックスで、上部のドロップダウン リストから **[.NET Framework 4.5]** を選択します。 
     
-3. [**テンプレート**] リストで、[ **Visual C#** > **Office/sharepoint** > **アドイン** > **アドイン (sharepoint 用) 2013**] を選択します。
+3. [テンプレート **] リスト** で  >  、[2013 **Visual C#Office/SharePoint** アドイン アドイン] を選択SharePoint  >    >  **します**。
     
-4. アドインに GetProjectIdAddinPart という名前を指定し、[ **OK** ] ボタンをクリックします。 
+4. アドインに GetProjectIdAddinPart という名前を付け **、[OK] ボタンを選択** します。 
     
-5. [ **SharePoint 用アドインの新規作成**] ダイアログボックスで、デバッグに使用する PWA サイトの URL を入力します (例: _https://contoso.com/sites/pwasite/_)。
+5. [新 **しい** アドインを作成SharePoint] ダイアログ ボックスに、デバッグに使用する PWA サイトの URL を入力します (例: _https://contoso.com/sites/pwasite/_ )。
     
-6. [ **SharePoint ホスト型**] オプションを選択してアドインをホストし、[**完了**] ボタンをクリックします。 
+6. [ホスト **SharePoint] オプション** を選択してアドインをホストし、[完了] ボタン **を選択** します。 
     
-7. **ソリューションエクスプローラー**で、GetProjectIdAddinPart プロジェクトのショートカットメニューを開き、[**新しい項目**の**追加** > ] を選択します。
+7. ソリューション **エクスプローラーで、GetProjectIdAddinPart** プロジェクトのショートカット メニューを開き、[新しいアイテムの追加]  >  **を選択します**。
     
-8. [**新しいアイテムの追加**] ダイアログボックスで、[**クライアント web パーツ (ホスト web)**] を選択し、web パーツ GetProjectId に名前を指定して、[**追加**] をクリックします。 
+8. [新しい **アイテムの追加** ] ダイアログ ボックスで、[クライアント Web パーツ **(Host Web)]** を選択し、Web パーツに GetProjectId という名前を付け、[追加] ボタン **を選択** します。 
     
-9. [**クライアント web パーツの作成**] ダイアログボックスで、[**新しいクライアント web パーツページを作成する**] オプションを選択し、[**完了**] ボタンをクリックします。 
+9. [クライアント **Web パーツの作成** ] ダイアログ ボックスで、[新しいクライアント Web パーツ ページの作成] オプションを **選択** し、[完了] ボタン **を選択** します。 
     
-## <a name="get-the-project-id-in-the-add-in-part"></a>アドインパーツのプロジェクト ID を取得する
+## <a name="get-the-project-id-in-the-add-in-part"></a>アドイン パーツでプロジェクト ID を取得する
 <a name="GetProjectId"> </a>
 
-GetProjectId アドインパーツは、クライアント web パーツの GetProjectId ページでカスタムコードを定義します。 メッセージを受け取って処理するロジックは、ページの**head**要素で定義され、ページコントロールはページの**body**要素で定義されます。 
+GetProjectId アドイン パーツは、クライアント Web パーツの GetProjectId.aspx ページでカスタム コードを定義します。 メッセージを受信して処理するロジックは、ページの **head** 要素で定義され、ページ コントロールはページの **body** 要素で定義されます。 
   
-1. GetProjectId web パーツページ ( **Pages**フォルダー内) を開きます。 
+1. GetProjectId.aspx Web パーツ ページ (Pages フォルダー内) **を開** きます。 
     
-2. ページの**head**要素で、 **script**タグ間のコードを次のコードに置き換えます。 
+2. ページの **head** 要素で、スクリプト タグ間のコードを次のコードに置き換えます。 
     
    ```js
         'use strict';
@@ -133,36 +133,36 @@ GetProjectId アドインパーツは、クライアント web パーツの GetP
         }
    ```
 
-3. ページの**body**要素に次のコードを追加します。 このコードでは、プロジェクト ID を表示する span コントロールを定義します。 
+3. ページの body 要素に次 **の** コードを追加します。 このコードは、プロジェクト ID を表示するスパン コントロールを定義します。 
     
    ```HTML
     <p>The ID for this project is:</p>
     <span id="projectUid"></span>
    ```
 
-4. Elements .xml ファイルで、必要に応じてアドインパーツの名前、タイトル、説明、および既定のサイズを変更します。 この例では、既定値を使用します。
+4. このファイルElements.xml必要に応じて、アドイン パーツの名前、タイトル、説明、および既定のサイズを変更します。 この例では、既定値を使用します。
     
-5. アドインパーツをテストするには、メニューバーで [**デバッグ**] を選択し、**デバッグを開始**します。 web.config ファイルを変更するように求められた場合は、[ **OK**] ボタンをクリックします。 
+5. アドイン パーツをテストするには、メニュー バーで [デバッグ] 、[ **デバッグ** の開始] **を選択します**。 web.config ファイルを変更するように求められた場合は、[ **OK**] ボタンをクリックします。 
     
-   アドインパーツをデバッグするには、追加したスクリプトに適切なブレークポイントを設定します。
+   アドイン パーツをデバッグするには、追加したスクリプトに適切なブレークポイントを設定します。
     
-6. PDP ページに移動し、[ツール] メニュー (歯車アイコン) から [**ページの編集**] を選択します。 
+6. PDP ページを参照し、[ **ツール]** メニュー (歯車アイコン) から [ページの編集] を選択します。 
     
-7. **GetProjectId Title**パーツをページ上の web パーツに追加します。 プロジェクト ID が web パーツページの**span**コントロールに表示されます。 
+7. ページ上 **の Web パーツに GetProjectId Title** パーツを追加します。 プロジェクト ID は、Web パーツ **ページの span** コントロールに表示されます。 
     
 ## <a name="next-steps"></a>次の手順
 <a name="NextSteps"> </a>
 
-この例のアドインパーツは、Project Server データまたは SharePoint データにアクセスしません。 プロダクト ID を使用して、JavaScript オブジェクトモデル、REST サービスなど、クライアント API を使用して現在のプロジェクトに関する情報を取得できます。
+この例のアドイン パーツは、サーバー データまたはサーバー データProjectアクセスSharePointしません。 製品 ID を使用して、JavaScript オブジェクト モデルや REST サービスなどのクライアント API を使用して、現在のプロジェクトに関する情報を取得できます。
   
-appmanifest.xml ファイルで、アドインが Project Server データまたは SharePoint データにアクセスするために必要なアクセス許可を指定します。 
+このファイルAppManifest.xml、アドインがサーバー データまたはサーバー データにアクセスするために必要Projectアクセス許可SharePointします。 
   
-アドインパーツにカスタムプロパティを設定する方法については[、「アドインパーツを作成して SharePoint アドインと共にインストールする](https://msdn.microsoft.com/library/a2664289-6c56-4cb1-987a-22367fad55eb%28Office.15%29.aspx)」を参照してください。 
+アドイン[パーツのカスタム プロパティを設定する方法については、「create add-in](https://msdn.microsoft.com/library/a2664289-6c56-4cb1-987a-22367fad55eb%28Office.15%29.aspx) parts to install with your SharePoint アドイン」を参照してください。 
   
-## <a name="example-getting-the-project-id-in-an-add-in-part-on-a-pdp-page"></a>例: PDP ページでアドインパーツのプロジェクト ID を取得する
+## <a name="example-getting-the-project-id-in-an-add-in-part-on-a-pdp-page"></a>例: PDP ページのアドイン パーツでプロジェクト ID を取得する
 <a name="CodeExample"> </a>
 
-次の例は、クライアント web パーツの GetProjectID ページの完全なコードです。 このコードでは、プロジェクト ID を含むメッセージを受け取って解析するイベントリスナーとイベントハンドラーを登録します。
+次の例は、クライアント Web パーツの GetProjectID.aspx ページの完全なコードです。 このコードは、プロジェクト ID を含むメッセージを受信して解析するイベント リスナーとイベント ハンドラーを登録します。
   
 ```HTML
 <%@ Page language="C#" Inherits="Microsoft.SharePoint.WebPartPages.WebPartPage, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>

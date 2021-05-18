@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 32089213-ef7b-4152-84ab-b44e9911332b
-description: '最終更新日: 2016 年9月7日'
+description: '最終更新日: 2016 年 9 月 7 日'
 ms.openlocfilehash: b84549ab31c939b4e6115795916ebd3520a96dbd
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32327259"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-添付ファイルのコンテンツにアクセスできる方法を表す MAPI 定義の定数が格納されています。 
+添付ファイルの内容にアクセスする方法を表す MAPI 定義の定数を格納します。 
   
 |||
 |:-----|:-----|
@@ -34,79 +34,79 @@ ms.locfileid: "32327259"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このプロパティには、次のいずれかの値を指定できます。
   
 NO_ATTACHMENT 
   
-> 添付ファイルは作成されたばかりです。 
+> 添付ファイルが作成されたばかりです。 
     
 ATTACH_BY_VALUE 
   
-> **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) プロパティには、添付ファイルデータが含まれています。 
+> プロパティ **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) プロパティには、添付ファイル データが含まれる。 
     
 ATTACH_BY_REFERENCE 
   
-> **PR_ATTACH_PATHNAME** ([PidTagAttachPathname](pidtagattachpathname-canonical-property.md)) または**PR_ATTACH_LONG_PATHNAME** ([PidTagAttachLongPathname](pidtagattachlongpathname-canonical-property.md)) プロパティには、共通ファイルへのアクセス権を持つ受信者への添付ファイルを識別する完全修飾パスが含まれています。server. 
+> **PR_ATTACH_PATHNAME** ([PidTagAttachPathname](pidtagattachpathname-canonical-property.md)) プロパティまたは PR_ATTACH_LONG_PATHNAME ([PidTagAttachLongPathname](pidtagattachlongpathname-canonical-property.md)) プロパティには、共通ファイル サーバーへのアクセス権を持つ受信者への添付ファイルを識別する完全修飾パスが含まれる。  
     
 ATTACH_BY_REF_RESOLVE 
   
-> **PR_ATTACH_PATHNAME**または**PR_ATTACH_LONG_PATHNAME**プロパティには、添付ファイルを識別する完全修飾パスが含まれています。 
+> プロパティ **PR_ATTACH_PATHNAME** または **PR_ATTACH_LONG_PATHNAME** には、添付ファイルを識別する完全修飾パスが含まれる。 
     
 ATTACH_BY_REF_ONLY 
   
-> **PR_ATTACH_PATHNAME**または**PR_ATTACH_LONG_PATHNAME**プロパティには、添付ファイルを識別する完全修飾パスが含まれています。 
+> プロパティ **PR_ATTACH_PATHNAME** または **PR_ATTACH_LONG_PATHNAME** には、添付ファイルを識別する完全修飾パスが含まれる。 
     
 ATTACH_EMBEDDED_MSG 
   
-> **PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) プロパティには、 **IMessage**インターフェイスをサポートする埋め込みオブジェクトが含まれています。 
+> プロパティ **PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) プロパティには **、IMessage** インターフェイスをサポートする埋め込みオブジェクトが含まれる。 
     
 ATTACH_OLE 
   
-> 添付ファイルは、埋め込み OLE オブジェクトです。
+> 添付ファイルは埋め込み OLE オブジェクトです。
     
 ATTACH_BY_WEBREFERENCE 
   
-> 添付ファイルの内容がメッセージに含まれていません。 
+> 添付ファイルのコンテンツはメッセージに含めされません。 
     
-作成されると、すべての attachment オブジェクトには、 **NO_ATTACHMENT**の初期**PR_ATTACH_METHOD**値が設定されます。 
+作成すると、すべての添付ファイル オブジェクトの初期 **PR_ATTACH_METHOD値が****NO_ATTACHMENT。** 
   
-クライアントアプリケーションおよびサービスプロバイダーは、 **ATTACH_BY_VALUE**値で表される attachment メソッドをサポートするためにのみ必要です。 その他の添付ファイルメソッドはオプションです。 メッセージストアでは、 **PR_ATTACH_METHOD**の値と他の添付ファイルのプロパティの値との間の整合性は適用されません。 
+クライアント アプリケーションとサービス プロバイダーは、この値で表される添付ファイルメソッドをサポートするために **ATTACH_BY_VALUE** です。 その他の添付ファイル メソッドはオプションです。 メッセージ ストアでは、メッセージ ストアの値と他の添付ファイル プロパティPR_ATTACH_METHOD一貫性は適用されません。 
   
-汎用名前付け規則 (UNC) 名は、 **ATTACH_BY_REFERENCE**および**ATTACH_BY_REF_ONLY**で使用する必要がある完全修飾パスに対してお勧めします。 **ATTACH_BY_REF_RESOLVE**では、MAPI スプーラーが添付ファイルを**ATTACH_BY_VALUE**に変換するため、絶対パスの方が高速になります。 
+汎用名前付け規則 (UNC) 名は、完全修飾パスに対して推奨されます。この名前は、ATTACH_BY_REFERENCEおよび **ATTACH_BY_REF_ONLY。** この **ATTACH_BY_REF_RESOLVE、MAPI** スプーラーは添付ファイルをファイルに変換するために、絶対パス **ATTACH_BY_VALUE。** 
   
-**ATTACH_BY_REFERENCE**が設定されている場合、 **PR_ATTACH_DATA_BIN**は空である必要があります。 送信ゲートウェイは、添付ファイルのデータを**PR_ATTACH_DATA_BIN**プロパティにコピーすることによって、 **ATTACH_BY_REFERENCE**の添付ファイルを**ATTACH_BY_VALUE**添付ファイルに変換できます。 
+この **ATTACH_BY_REFERENCE** 設定 **されている場合** 、PR_ATTACH_DATA_BINが空である必要があります。 送信ゲートウェイは、添付ファイル データ **を** ATTACH_BY_REFERENCEプロパティにコピーすることでATTACH_BY_VALUE添付ファイルに **PR_ATTACH_DATA_BINできます。** 
   
-**ATTACH_BY_REF_RESOLVE**が設定されている場合、 **PR_ATTACH_DATA_BIN**は空である必要があります。 **ATTACH_BY_REF_RESOLVE**添付ファイルを含むメッセージが送信されると、MAPI スプーラーは添付ファイルデータを**ATTACH_BY_VALUE**添付ファイルにコピーします。 この解決プロセスでは、添付ファイルのデータを**PR_ATTACH_DATA_BIN**に配置します。 
+この **ATTACH_BY_REF_RESOLVE** 設定 **されている場合** 、PR_ATTACH_DATA_BINが空である必要があります。 添付ファイルを含むメッセージATTACH_BY_REF_RESOLVE送信すると、MAPI スプーラーは添付ファイル データを添付ファイルに **ATTACH_BY_VALUE** します。 この解決プロセスでは、添付ファイル データを **PR_ATTACH_DATA_BIN。** 
   
-**ATTACH_BY_REF_ONLY**が設定されている場合、 **PR_ATTACH_DATA_BIN**は空である必要があり、メッセージングシステムは添付ファイルの参照を解決しません。 この値は、リンクを送信するがデータは送信しない場合に使用します。 
+この **ATTACH_BY_REF_ONLY** 設定されている **場合、PR_ATTACH_DATA_BIN** は空にする必要があります。メッセージング システムは添付ファイル参照を解決しない必要があります。 この値は、データではなくリンクを送信する場合に使用します。 
   
-ole オブジェクトが ole 2.0 **IStorage**形式の場合は、 **PR_ATTACH_DATA_OBJ**を使用してデータにアクセスできます。 ole オブジェクトが ole 1.0 **olestream**形式の場合、データは**IStream**として**PR_ATTACH_DATA_BIN**を通じてアクセスされます。 OLE エンコードの種類は、 **PR_ATTACH_TAG** ([PidTagAttachTag](pidtagattachtag-canonical-property.md)) 値で決定できます。 
+OLE オブジェクトが OLE 2.0 **IStorage** 形式の場合、データにアクセスするには、次の **PR_ATTACH_DATA_OBJ。** OLE オブジェクトが OLE 1.0 **OLESTREAM** 形式の場合、データには IStream **PR_ATTACH_DATA_BINを使用****してアクセスできます**。 OLE エンコードの種類は、次の値 [(PidTagAttachTag)](pidtagattachtag-canonical-property.md) **PR_ATTACH_TAGによって決** まります。 
   
-ole のインターフェイスと形式の詳細については、「 *ole プログラマーズリファレンス*」を参照してください。 
+OLE インターフェイスと形式の詳細については  *、「OLE プログラマリファレンス」を参照してください*  。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**PR_ATTACH_METHOD**が**ATTACH_BY_WEBREFERENCE**の場合、添付ファイルの内容はメッセージに含まれません。 代わりに、 **PR_ATTACH_LONG_FILENAME**プロパティには、オンラインで格納されている添付ファイルの内容への絶対 URL が含まれています。 
+メッセージが **PR_ATTACH_METHOD** 場合 **ATTACH_BY_WEBREFERENCE** 添付ファイルのコンテンツはメッセージに含めされません。 代わりに **、PR_ATTACH_LONG_FILENAME** プロパティには、添付ファイルコンテンツの絶対 URL が含まれるので、オンラインで保存されます。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルオブジェクトを処理します。
+> メッセージ オブジェクトと添付ファイル オブジェクトを処理します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -119,7 +119,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -25,37 +25,37 @@ ms.locfileid: "33412864"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージストアプロバイダーオブジェクトを使用して、メッセージストアプロバイダーへのアクセスを提供します。 このメッセージストアプロバイダオブジェクトは、メッセージストアプロバイダーの[msproviderinit](msproviderinit.md) entry point 関数によってプロバイダログオンで返されます。 メッセージストアプロバイダーオブジェクトは、主にクライアントアプリケーションと MAPI スプーラーによって、メッセージストアを開くために使用されます。 
+メッセージ ストア プロバイダー オブジェクトを介してメッセージ ストア プロバイダーへのアクセスを提供します。 このメッセージ ストア プロバイダー オブジェクトは、メッセージ ストア プロバイダーの [MSProviderInit](msproviderinit.md) エントリ ポイント関数によってプロバイダー ログオン時に返されます。 メッセージ ストア プロバイダー オブジェクトは、主にクライアント アプリケーションと MAPI スプーラーによってメッセージ ストアを開く目的で使用されます。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapispi  <br/> |
-|公開者:  <br/> |メッセージ ストア プロバイダーのオブジェクト  <br/> |
-|実装元:  <br/> |メッセージストアプロバイダー  <br/> |
-|呼び出し元:  <br/> |mapi および mapi スプーラー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapispi.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |メッセージ ストア プロバイダーのオブジェクト  <br/> |
+|実装元:  <br/> |メッセージ ストア プロバイダー  <br/> |
+|呼び出し元:  <br/> |MAPI と MAPI スプーラー  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMSProvider  <br/> |
-|ポインターの種類:  <br/> |lpmsprovider  <br/> |
+|ポインターの種類:  <br/> |LPMSPROVIDER  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[シャットダウン](imsprovider-shutdown.md) <br/> |メッセージストアプロバイダーを整然と閉じます。  <br/> |
-|[Logon](imsprovider-logon.md) <br/> |メッセージストアプロバイダーの1つのインスタンスに MAPI を記録します。  <br/> |
-|[SpoolerLogon](imsprovider-spoolerlogon.md) <br/> |MAPI スプーラーをメッセージストアに記録します。  <br/> |
-|[comparestoreids](imsprovider-comparestoreids.md) <br/> |2つのメッセージストアエントリ識別子を比較して、同じ store オブジェクトを参照しているかどうかを判断します。  <br/> |
+|[シャットダウン](imsprovider-shutdown.md) <br/> |メッセージ ストア プロバイダーを順番に閉じます。  <br/> |
+|[Logon](imsprovider-logon.md) <br/> |メッセージ ストア プロバイダーの 1 つのインスタンスに MAPI をログオンします。  <br/> |
+|[SpoolerLogon](imsprovider-spoolerlogon.md) <br/> |MAPI スプーラーをメッセージ ストアにログに記録します。  <br/> |
+|[CompareStoreIDs](imsprovider-comparestoreids.md) <br/> |2 つのメッセージ ストア エントリ識別子を比較して、同じストア オブジェクトを参照するかどうかを判断します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-MAPI では、ストアプロバイダーによって開かれるメッセージストアの数に関係なく、セッションごとに1つのメッセージストアプロバイダオブジェクトが使用されます。 2番目の mapi セッションが開いているストアにログオンすると、mapi は**msproviderinit**をもう一度呼び出して、そのセッションで使用する新しいメッセージストアプロバイダオブジェクトを作成します。 
+MAPI は、ストア プロバイダーによって開くメッセージ ストアの数に関係なく、セッションごとに 1 つのメッセージ ストア プロバイダー オブジェクトを使用します。 2 つ目の MAPI セッションが開いているストアにログオンすると、MAPI は **MSProviderInit** を 2 回目に呼び出して、そのセッションで使用する新しいメッセージ ストア プロバイダー オブジェクトを作成します。 
   
-メッセージストアプロバイダオブジェクトには、正しく動作するために次のものが含まれている必要があります。
+正しく動作するには、メッセージ ストア プロバイダー オブジェクトに次の情報が含まれている必要があります。
   
-- このプロバイダーオブジェクトを使用して開かれたすべてのストアが使用する_lpmalloc_メモリ割り当てルーチンポインター。 
+- この  _プロバイダー オブジェクトを使用_ して開かれたすべてのストアで使用する lpMalloc メモリ割り当てルーチン ポインター。 
     
-- [MAPIAllocateBuffer](mapiallocatebuffer.md)、 [MAPIAllocateMore](mapiallocatemore.md)、および[MAPIFreeBuffer](mapifreebuffer.md)のメモリ割り当て関数への_lpfAllocateBuffer_、_ lpfAllocateMore _、および_lpfFreeBuffer_ルーチンポインター。 
+- _lpfAllocateBuffer_、_ lpfAllocateMore _、_および lpfFreeBuffer_ ルーチン ポインターから [MAPIAllocateBuffer、MAPIAllocateMore、MAPIFreeBuffer](mapiallocatebuffer.md)メモリ割り当て関数を取得します。 [](mapiallocatemore.md) [](mapifreebuffer.md) 
     
-- このプロバイダオブジェクトを使用して開かれているが、まだ閉じていないすべてのストアのリンクリスト。
+- このプロバイダー オブジェクトを使用して開き、まだ閉じていないすべてのストアのリンクリスト。
     
 ## <a name="see-also"></a>関連項目
 

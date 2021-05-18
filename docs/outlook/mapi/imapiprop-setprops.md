@@ -1,5 +1,5 @@
 ---
-title: imapipropsetprops
+title: IMAPIPropSetProps
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33412619"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-1つまたは複数のプロパティを更新します。
+1 つ以上のプロパティを更新します。
   
 ```cpp
 HRESULT SetProps(
@@ -37,17 +37,17 @@ HRESULT SetProps(
 
 ## <a name="parameters"></a>パラメーター
 
- _cvalues_
+ _cValues_
   
-> 順番_lpproparray_パラメーターが指すプロパティ値の数。 _cvalues_パラメーターは0以外でなければなりません。 
+> [in]  _lpPropArray_ パラメーターが指すプロパティ値の数。 _cValues パラメーター_ は 0 にすることはできません。 
     
- _lpproparray_
+ _lpPropArray_
   
-> 順番更新するプロパティ値を含む[spropvalue](spropvalue.md)構造体の配列へのポインター。 
+> [in]更新するプロパティ値を含む [SPropValue](spropvalue.md) 構造体の配列へのポインター。 
     
- _lppproblems 問題_
+ _lppProblems_
   
-> [入力]input の場合は、 [spropの配列](spropproblemarray.md)構造体へのポインターへのポインターを返します。それ以外の場合、エラー情報を必要としないことを示す NULL。 _lppproblems_が入力の有効なポインターである場合、 **setprops**は、1つ以上のプロパティの更新中に発生したエラーに関する詳細情報を返します。 
+> [in, out]入力時に [、SPropProblemArray](spropproblemarray.md) 構造体へのポインターを指すポインター。それ以外の場合は、エラー情報が不要であることを示す NULL。 _lppProblems が_ 入力の有効なポインターである場合 **、SetProps** は 1 つ以上のプロパティを更新するエラーに関する詳細情報を返します。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -55,15 +55,15 @@ S_OK
   
 > プロパティが正常に更新されました。
     
-次の値は、 **spropの配列**構造で返すことができますが、 **setprops**の戻り値としては返されません。
+次の値は **、SPropProblemArray** 構造体で返されますが、SetProps の戻り値 **として返す値として返す必要があります**。
   
 MAPI_E_BAD_CHARWIDTH 
   
-> MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
+> このフラグMAPI_UNICODE設定され、実装が Unicode をサポートしていないか、または設定されていないMAPI_UNICODE実装が Unicode のみをサポートしています。
     
 MAPI_E_COMPUTED 
   
-> プロパティは読み取り専用で、オブジェクトを処理するサービスプロバイダーによって計算されるため、更新できません。
+> プロパティは、オブジェクトを担当するサービス プロバイダーによって計算される読み取り専用のため、更新できません。
     
 MAPI_E_INVALID_TYPE 
   
@@ -71,37 +71,37 @@ MAPI_E_INVALID_TYPE
     
 MAPI_E_NO_ACCESS 
   
-> 読み取り専用オブジェクトを変更しようとしたか、またはユーザーが十分なアクセス許可を持っていないオブジェクトにアクセスしようとしました。
+> 読み取り専用オブジェクトを変更しようとしたり、ユーザーのアクセス許可が不十分なオブジェクトにアクセスしようとしたりしました。
     
 MAPI_E_NOT_ENOUGH_MEMORY 
   
-> このプロパティは、リモートプロシージャコール (RPC) のバッファーサイズよりも大きいため、更新できません。
+> リモート プロシージャ 呼び出し (RPC) バッファー サイズよりも大きいので、プロパティを更新できません。
     
 MAPI_E_UNEXPECTED_TYPE 
   
-> プロパティの型は、呼び出し元の実装で想定される型ではありません。
+> プロパティの種類は、呼び出し元の実装で予期される型ではありません。
     
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) プロパティタグと、 **PT_ERROR**型のすべてのプロパティを無視します。 **sprop問題の配列**構造で、変更を加えたり、問題を報告したりしないでください。 
+プロパティ **タグPR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) プロパティ タグおよびプロパティの種類を持つすべてのプロパティを **無視** PT_ERROR。 **SPropProblemArray** 構造体に変更を加え、問題を報告したりしない。 
   
-プロパティ値の配列に**PT_OBJECT**型のプロパティが含まれている場合は、MAPI_E_INVALID_PARAMETER を返します。 また、複数値のプロパティが配列に含まれており、その**cvalues**メンバーが0に設定されている場合にも、このエラーを返します。 
+プロパティMAPI_E_INVALID_PARAMETER値の配列 **に型の** プロパティPT_OBJECT含まれている場合は、この値を返します。 配列に複数値のプロパティが含まれていて、その **cValues** メンバーが 0 に設定されている場合も、このエラーを返します。 
   
-呼び出しが全体的に成功しても、一部のプロパティの設定に問題がある場合は、S_OK を返し、 _lppproblems_パラメーターが指す**sprop問題の配列**構造の適切なエントリに問題に関する情報を格納します。 
+呼び出しが全体的に成功したが、一部のプロパティの設定に問題がある場合は、S_OK を返し _、lppProblems_ パラメーターが示す **SPropProblemArray** 構造体の適切なエントリに問題に関する情報を入力します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-また、サービスプロバイダーによっては、プロパティの種類を変更できるようにするために、特定のプロパティ識別子で以前に使用されていたのとは異なる種類のプロパティタグを渡すことができます。
+サービス プロバイダーによっては、特定のプロパティ識別子で以前に使用された型とは異なる型を含むプロパティ タグを渡して、プロパティの種類を変更できる場合があります。
   
-オブジェクトでサポートされていないプロパティのプロパティタグを指定し、 **setprops**の実装で新しいプロパティを作成できる場合、プロパティはオブジェクトに追加されます。 新しいプロパティに使用されたプロパティ識別子に格納されていた以前の値は、すべて破棄されます。 
+オブジェクトでサポートされていないプロパティのプロパティ タグを含め **、SetProps** の実装によって新しいプロパティを作成できる場合、プロパティはオブジェクトに追加されます。 新しいプロパティに使用されたプロパティ識別子と一緒に格納された以前の値は破棄されます。 
   
-S_OK 戻り値は、すべてのプロパティが正常に更新されたことを保証するものではないことに注意してください。 一部のプロバイダーは、 **setprops**呼び出しを受信するまで、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)または[imapiprop:: GetProps](imapiprop-getprops.md)などのプロバイダーの介入を必要とする呼び出しを受け取るまでキャッシュします。 そのため、以降の呼び出しで**setprops**呼び出しに関連するエラー値を受け取ることができます。 
+戻り値S_OK、すべてのプロパティが正常に更新されたことを保証するものではありません。 一部のプロバイダーは [、IMAPIProp::SaveChanges](imapiprop-savechanges.md)や [IMAPIProp::GetProps](imapiprop-getprops.md)などのプロバイダーの介入を必要とする呼び出しを受信するまで **、SetProps** 呼び出しをキャッシュします。 したがって **、SetProps** 呼び出しに関連するエラー値を、後の呼び出しで受け取ることができます。 
   
-**setprops**が S_OK を返す場合は、個々のプロパティの更新時に問題が発生したことを確認するために、 _lppproblems_に示されている**sprop問題の配列**構造を確認します。 **setprops**がエラーを返す場合は、プロパティの問題の配列をチェックしません。 代わりに、オブジェクトの[imapiprop:: GetLastError](imapiprop-getlasterror.md)メソッドを呼び出します。 
+**SetProps が** S_OKを返す場合は _、lppProblems_ が示す **SPropProblemArray** 構造体で、個々のプロパティの更新に関する問題を確認します。 **SetProps がエラー** を返す場合は、プロパティの問題の配列をチェックしない。 代わりに、オブジェクトの [IMAPIProp::GetLastError メソッドを呼び出](imapiprop-getlasterror.md) します。 
   
-大きなプロパティを更新する場合、 **setprops**は失敗して MAPI_E_NOT_ENOUGH_MEMORY を返します。 プロパティの最大サイズはありません。また、オブジェクトごとに異なる制限を設定することもできます。 大きなプロパティを処理する場合は、 **setprops**がこのエラー値を返す場合、IID_IStream をインターフェイス識別子として使用して、 [imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出すように準備してください。 
+大規模なプロパティを更新すると **、SetProps が** 失敗し、エラーが発生MAPI_E_NOT_ENOUGH_MEMORY。 プロパティの最大サイズはありません。また、オブジェクトによって制限が異なる場合があります。 潜在的に大きいプロパティを処理する場合は **、SetProps** がこのエラー値を返す場合、インターフェイス識別子として IID_IStream を使用して [IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを呼び出す準備をしてください。 
   
-[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して、 **spropの配列**構造を解放します。 
+[MAPIFreeBuffer 関数を呼び出](mapifreebuffer.md)して **、SPropProblemArray 構造体を解放** します。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -109,7 +109,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|propertyeditor .cpp  <br/> |cpropertyeditor:: writespropvaluetoobject  <br/> |mfcmapi は、 **imapiprop:: setprops**メソッドを使用して、プロパティが編集された後、そのプロパティをオブジェクトに書き戻します。  <br/> |
+|PropertyEditor.cpp  <br/> |CPropertyEditor::WriteSPropValueToObject  <br/> |MFCMAPI は **IMAPIProp::SetProps** メソッドを使用して、プロパティの編集後にプロパティをオブジェクトに書き戻します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

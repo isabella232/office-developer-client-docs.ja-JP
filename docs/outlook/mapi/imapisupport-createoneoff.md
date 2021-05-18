@@ -1,5 +1,5 @@
 ---
-title: imapisupportcreateoneoff
+title: IMAPISupportCreateOneOff
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33411996"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-1回限りのアドレスのエントリ id を作成します。
+1 回のアドレスのエントリ識別子を作成します。
   
 ```cpp
 HRESULT CreateOneOff(
@@ -40,55 +40,55 @@ HRESULT CreateOneOff(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpszname_
+ _lpszName_
   
-> 順番**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) プロパティの受信者の表示名へのポインター。 _lpszname_パラメーターには NULL を指定できます。 
+> [in]受信者 [(PidTagDisplayName)](pidtagdisplayname-canonical-property.md)**プロパティPR_DISPLAY_NAME表示** 名へのポインター。 _lpszName パラメーター_ には NULL を指定できます。 
     
- _lpszadrtype_
+ _lpszAdrType_
   
-> 順番受信者のアドレスの種類 (FAX、SMTP、または X500 など) へのポインター。 _lpszadrtype_パラメーターを NULL にすることはできません。 
+> [in]受信者のアドレスの種類 (FAX、SMTP、X500 など) へのポインター。 _lpszAdrType パラメーター_ を NULL にすることはできません。 
     
- _lpszaddress_
+ _lpszAddress_
   
-> 順番受信者のメッセージアドレスへのポインター。 _lpszaddress_パラメーターを NULL にすることはできません。 
+> [in]受信者のメッセージング アドレスへのポインター。 _lpszAddress パラメーター_ は NULL にすることはできません。 
     
  _ulFlags_
   
-> 順番1回限りの受信者に影響を与えるフラグのビットマスク。 次のフラグを設定できます。
+> [in]1 回の受信者に影響を与えるフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_SEND_NO_RICH_INFO 
   
-> 受信者は、書式設定されたメッセージコンテンツを処理できません。 MAPI_SEND_NO_RICH_INFO が設定されている場合、MAPI は受信者の**PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)) プロパティを FALSE に設定します。 MAPI_SEND_NO_RICH_INFO が設定されていない場合、MAPI は、 _lpszaddress_が指す受信者のメッセージアドレスがインターネットアドレスであると解釈されない限り、このプロパティを TRUE に設定します。 この場合、MAPI は**PR_SEND_RICH_INFO**を FALSE に設定します。 
+> 受信者は、書式設定されたメッセージ コンテンツを処理できません。 このMAPI_SEND_NO_RICH_INFO設定されている場合、MAPI は受信者のPR_SEND_RICH_INFO **(** [PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)) プロパティを FALSE に設定します。 このMAPI_SEND_NO_RICH_INFO設定されていない場合  _、LPszAddress_ が指す受信者のメッセージング アドレスがインターネット アドレスと解釈されない限り、MAPI はこのプロパティを TRUE に設定します。 この場合、MAPI は、この値 **PR_SEND_RICH_INFO** FALSE に設定します。 
     
 MAPI_UNICODE 
   
-> 表示名、アドレスの種類、アドレスは、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、これらの文字列は ANSI 形式になります。
+> 表示名、アドレスの種類、およびアドレスは Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、これらの文字列は ANSI 形式です。
     
  _lpcbEntryID_
   
-> 読み上げ_lppentryid_パラメーターによって示されるエントリ識別子のバイト数へのポインター。 
+> [out]  _lppEntryID_ パラメーターが指すエントリ識別子内のバイト数へのポインター。 
     
- _lppentryid_
+ _lppEntryID_
   
-> 読み上げ1回限りの受信者のエントリ識別子へのポインターへのポインター。
+> [out]1 回の受信者のエントリ識別子へのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 1回限りのエントリ識別子が正常に作成されました。
+> 1 回のエントリ識別子が正常に作成されました。
     
 ## <a name="remarks"></a>注釈
 
-**imapisupport:: createoneoff**メソッドは、すべてのサービスプロバイダーサポートオブジェクトに実装されています。 サービスプロバイダーは、 **createoneoff**を呼び出して、1回限りの受信者 (現在読み込まれているアドレス帳プロバイダーのいずれかのコンテナーに属さない受信者) のエントリ識別子を作成します。 
+**IMAPISupport::CreateOneOff** メソッドは、すべてのサービス プロバイダー サポート オブジェクトに実装されます。 サービス プロバイダーは **CreateOneOff** を呼び出して、1 回の受信者 (現在読み込まれているアドレス帳プロバイダーのコンテナーに属していない受信者) のエントリ識別子を作成します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**createoneoff**で返されるエントリ識別子の使用が終了したら、 [MAPIFreeBuffer](mapifreebuffer.md)関数を使用して、エントリ識別子に割り当てられているメモリを解放します。 
+**CreateOneOff** によって返されるエントリ識別子の使用が完了したら [、MAPIFreeBuffer](mapifreebuffer.md)関数を使用してエントリ識別子に割り当てられたメモリを解放します。 
   
-## <a name="notes-to-transport-providers"></a>トランスポートプロバイダーへのメモ
+## <a name="notes-to-transport-providers"></a>トランスポート プロバイダーへのメモ
 
-トランスポートニュートラルカプセル化形式 (TNEF) をサポートし、 **PR_SEND_RICH_INFO**プロパティの値を使用して、メッセージを転送するときに TNEF を使用するかどうかを決定します。 TNEF をサポートしていない場合、または要求されたときにこの形式でメッセージを送信しない場合は、フォームベースのクライアントまたはカスタム MAPI プロパティを必要とするクライアントで問題になる可能性があります。 これは、通常、カスタムメッセージクラスのカスタムプロパティを送信するために TNEF が使用されるためです。 
+トランスポート ニュートラル カプセル化形式 (TNEF) をサポートし **、PR_SEND_RICH_INFO** プロパティの値を使用して、メッセージを転送するときに TNEF を使用するかどうかを決定します。 TNEF をサポートしていない、または要求された場合にこの形式でメッセージを送信しない場合は、カスタム MAPI プロパティを必要とするフォーム ベースのクライアントまたはクライアントに問題が発生する可能性があります。 これは、TNEF は通常、カスタム メッセージ クラスのカスタム プロパティを送信するために使用されるためです。 
   
 ## <a name="see-also"></a>関連項目
 

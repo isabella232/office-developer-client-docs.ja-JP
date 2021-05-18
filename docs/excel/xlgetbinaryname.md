@@ -30,7 +30,7 @@ Excel12(xlGetBinaryName, LPXLOPER12 pxRes, 1, LPXLOPER12 pxName);
 
 ## <a name="parameters"></a>パラメーター
 
-_pxRes _ (**xltypeBigData** または **xltypeErr**)
+_pxRes_ (**xltypeBigData** または **xltypeErr**)
   
 取得されたデータまたはエラーを指定する Bigdata 構造体は、取得できなかったデータまたは定義されていない名前になります。関数が戻った時点で、**XLOPER**/ **XLOPER12** の **hdata** メンバーに名前付きデータのハンドルが格納されています。_pxRes_ が不要になったら、**xlFree** の呼び出しでこれを解放する必要があります。 
   

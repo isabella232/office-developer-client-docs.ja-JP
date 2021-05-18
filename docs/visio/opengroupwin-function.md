@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251472
 localization_priority: Normal
 ms.assetid: 856ece39-18a4-766a-0dd9-7e888b8b78a5
-description: グループウィンドウでグループを開きます。 オブジェクトがグループではない場合、この関数は何も実行しません。
+description: グループ ウィンドウでグループを開きます。 オブジェクトがグループではない場合、この関数は何もしません。
 ms.openlocfilehash: 67d5f055408d5dd887a6bbf052b34726986a1220
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33412115"
 ---
 # <a name="opengroupwin-function"></a>OPENGROUPWIN 関数
 
-グループウィンドウでグループを開きます。 オブジェクトがグループではない場合、この関数は何も実行しません。
+グループ ウィンドウでグループを開きます。 オブジェクトがグループではない場合、この関数は何もしません。
   
 ## <a name="syntax"></a>構文
 

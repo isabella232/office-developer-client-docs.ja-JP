@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: cd4d7b11-fad0-4f05-a99e-9567abcab45c
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: c68e4fbda661a119416918a2c35d1780f1deccda
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -37,17 +37,17 @@ HRESULT MoveMessage(
 
 ## <a name="parameters"></a>パラメーター
 
- _pfolderdestination_
+ _pFolderDestination_
   
-> 順番メッセージを移動するフォルダーへのポインター。
+> [in]メッセージを移動するフォルダーへのポインター。
     
- _pviewcontext_
+ _pViewContext_
   
-> 順番ビューコンテキストオブジェクトへのポインター。
+> [in]ビュー コンテキスト オブジェクトへのポインター。
     
- _prcposrect_
+ _prcPosRect_
   
-> 順番現在のフォームのウィンドウのサイズと位置を含む[RECT](https://msdn.microsoft.com/library/dd162897%28VS.85%29.aspx)構造体へのポインター。 次に表示されるフォームは、このウィンドウの四角形も使用します。 
+> [in]現在のフォームのウィンドウ サイズと位置を含む [RECT](https://msdn.microsoft.com/library/dd162897%28VS.85%29.aspx) 構造体へのポインター。 次に表示されるフォームでは、このウィンドウの四角形も使用されます。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -57,21 +57,21 @@ S_OK
     
 MAPI_E_NO_SUPPORT 
   
-> 操作は、このメッセージサイトではサポートされていません。
+> この操作は、このメッセージ サイトではサポートされていません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-Form オブジェクトは、 **IMAPIMessageSite:: MoveMessage**メソッドを呼び出して、現在のメッセージを新しいフォルダーに移動します。 
+フォーム オブジェクトは **IMAPIMessageSite::MoveMessage** メソッドを呼び出して、現在のメッセージを新しいフォルダーに移動します。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-フォームビューアーで**MoveMessage**を実装するには、実際にメッセージを新しいフォルダーに移動する前に、 [imapiviewcontext:: ActivateNext](imapiviewcontext-activatenext.md)メソッドを呼び出して、VCDIR_MOVE フラグを渡します。 フォームのウィンドウで使用される**RECT**構造を取得するには、Windows [getwindowrect](https://msdn.microsoft.com/library/ms633519)関数を呼び出します。 
+フォーム ビューアーの **MoveMessage** の実装では、メッセージを実際に新しいフォルダーに移動する前に [、IMAPIViewContext::ActivateNext](imapiviewcontext-activatenext.md) メソッドを呼び出し、VCDIR_MOVE フラグを渡す必要があります。 フォームのウィンドウ **で使用される RECT** 構造を取得するには [、GetWindowRect](https://msdn.microsoft.com/library/ms633519)関数Windows呼び出します。 
   
-フォームサーバーに関連するインターフェイスの一覧については、「 [MAPI フォームインターフェイス](mapi-form-interfaces.md)」を参照してください。
+フォーム サーバーに関連するインターフェイスの一覧については [、「MAPI フォーム インターフェイス」を参照してください](mapi-form-interfaces.md)。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**MoveMessage**の戻り値の後、フォームは現在のメッセージを確認し、存在しない場合はそれを破棄する必要があります。 
+**MoveMessage** の戻り値に従って、フォームは現在のメッセージをチェックし、存在しない場合は自分自身を閉じなければならない。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -79,7 +79,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer  <br/> |cmymapiformviewer:: MoveMessage  <br/> |実装されていません。  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::MoveMessage  <br/> |実装されていません。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -92,5 +92,5 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォームインターフェイス](mapi-form-interfaces.md)
+[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
 

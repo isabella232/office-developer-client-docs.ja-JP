@@ -1,5 +1,5 @@
 ---
-title: i社会 alproviderdefaultsiteurls
+title: ISocialProviderDefaultSiteUrls
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 322ea2e9-d6c9-48f9-a927-7162346d16a4
-description: Outlook Social Connector (.osc) プロバイダーのサイト url を指定する文字列の配列を返します。
+description: ソーシャル コネクタ (OSC) プロバイダーのサイト URL を指定Outlook文字列の配列を返します。
 ms.openlocfilehash: 34d779d5eb42b81a14c5236685104e9ef4fe36f2
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "33413774"
 ---
 # <a name="isocialproviderdefaultsiteurls"></a>ISocialProvider::DefaultSiteUrls
 
-Outlook Social Connector (.osc) プロバイダーのサイト url を指定する文字列の配列を返します。
+ソーシャル コネクタ (OSC) プロバイダーのサイト URL を指定Outlook文字列の配列を返します。
   
 ```cpp
 [propget] HRESULT _stdcall DefaultSiteUrls([out, retval] SAFEARRAY(BSTR)* siteUrls);
@@ -25,13 +25,13 @@ Outlook Social Connector (.osc) プロバイダーのサイト url を指定す�
 
 ## <a name="property-value"></a>プロパティ値
 
-.osc プロバイダーのサイト url を表す文字列の配列を指定する構造体へのポインター。
+OSC プロバイダーのサイト URL を表す文字列の配列を指定する構造体へのポインター。
   
 ## <a name="remarks"></a>注釈
 
-プロバイダーは複数のサイト url をサポートできます。 .osc は、選択されているサイトの URL をプロバイダーに通知するために、i// [SiteUrl](isocialsession-siteurl.md)プロパティを設定します。 
+プロバイダーは、複数のサイト URL をサポートできます。 OSC は [、ISocialSession::SiteUrl](isocialsession-siteurl.md) プロパティを設定して、選択したサイト URL をプロバイダーに通知します。 
   
-.osc は、配列の最初の要素を既定のサイト URL として使用します。 プロバイダーは、サイト URL 配列の追加の要素を返すことができますが、.osc はそれらを使用しません。 
+OSC は、配列の最初の要素を既定のサイト URL として使用します。 プロバイダーは、サイト URL 配列内の追加の要素を返できますが、OSC はそれらを使用しません。 
   
 ## <a name="see-also"></a>関連項目
 

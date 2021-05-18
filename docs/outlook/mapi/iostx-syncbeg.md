@@ -25,7 +25,7 @@ ms.locfileid: "33411940"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-特定の状態の同期用にローカルストアを準備し、レプリケートするために必要な情報を取得します。
+特定の状態での同期のためにローカル ストアを準備し、レプリケートに必要な情報を取得します。
   
 ```cpp
 HRESULT SyncBeg( 
@@ -36,9 +36,9 @@ HRESULT SyncBeg(
 
 ## <a name="parameters"></a>パラメーター
 
- _uisync_
+ _uiSync_
   
->  順番ローカルストアが入力する状態。 state 識別子のリストを次に示します。 
+>  [in]ローカル ストアが入力する状態。 状態の identifers の一覧を次に示します。 
     
 LR_SYNC_IDLE
   
@@ -86,7 +86,7 @@ LR_SYNC_DOWNLOAD_TABLE
     
  _ppv_
   
->  [in]/[out] 入力する状態に対応するデータ構造体へのポインター。 
+>  [in]/[out] 入力する状態に対応するデータ構造へのポインター。 
     
 [DNHIER](dnhier.md)
   
@@ -150,9 +150,9 @@ LR_SYNC_DOWNLOAD_TABLE
     
 ## <a name="remarks"></a>注釈
 
-クライアントは**[iostx:: SetSyncResult](iostx-setsyncresult.md)** を呼び出して、同期の結果を設定した後、 **[iostx:: syncend](iostx-syncend.md)** を呼び出してその状態を終了します。 クライアントは、状態が正常にレプリケートされたかどうかを判断するために、 **iostx** :: SyncBeg への各呼び出しに**[iostx:: syncend](iostx-syncend.md)** を呼び出す必要があります。 これが決定されると、Outlook は内部状態のクリーンアップを開始できるようになります。 
+クライアントは **[IOSTX::SetSyncResult](iostx-setsyncresult.md)** を呼び出して同期の結果を設定し、その状態を終了するために **[IOSTX::SyncEnd](iostx-syncend.md)** を呼び出します。 クライアントは、状態が正常にレプリケートされたかどうかを判断するために **、IOSTX::SyncBeg** への各呼び出しに対して **[IOSTX::SyncEnd](iostx-syncend.md)** を呼び出す必要があります。 これが決定された後、Outlook は内部状態のクリーンアップを開始できます。 
   
-これらの構造のほとんどには [out]/[in] 情報が含まれており、outlook が情報をクライアントに渡し、クライアントが outlook に情報を渡すことができます。 クライアントが**iostx:: SyncBeg**を呼び出すと、Outlook は指定された状態のデータ構造を割り当て、その状態の情報で初期化します。 これは、[out] の情報です。 状態になっている間、クライアントは、その状態に対応するデータ構造を更新します。 これは [入力] 情報です。 
+これらの構造の多くには [out]/[in] 情報が含まれているため、Outlook はクライアントに情報を渡し、クライアントは Outlook に情報を渡します。 クライアントが **IOSTX::SyncBeg** を呼び出す場合、Outlook は特定の状態のデータ構造を割り当て、その状態の情報を使用して初期化します。 これは [out] 情報です。 状態の間、クライアントは、その状態に対応するデータ構造を更新します。 これは [in] 情報です。 
   
 ## <a name="see-also"></a>関連項目
 

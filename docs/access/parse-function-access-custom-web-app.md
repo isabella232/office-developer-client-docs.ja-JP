@@ -1,5 +1,5 @@
 ---
-title: Parse 関数 (Access カスタム web アプリ)
+title: Parse 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411135"
 ---
-# <a name="parse-function-access-custom-web-app"></a>Parse 関数 (Access カスタム web アプリ)
+# <a name="parse-function-access-custom-web-app"></a>Parse 関数 (Access カスタム Web アプリ)
 
 アプリケーションのカルチャを使用して、テキスト値を解析し、その値を特定の型で戻します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "33411135"
   
 ## <a name="syntax"></a>構文
 
- **Parse**(*textexpression*、 *DataType*) 
+ **Parse** (*TextExpression*, *DataType*) 
   
 **Parse** 関数には、以下の引数があります。 
   

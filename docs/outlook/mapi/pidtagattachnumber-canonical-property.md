@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 507e0f2c-383c-4e2f-917b-159913f7234d
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 474ffaf2317cadd214074419f09bb913b1eee4ff
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,40 +25,40 @@ ms.locfileid: "32327252"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-親メッセージ内の添付ファイルを一意に識別する番号を含みます。 
+親メッセージ内の添付ファイルを一意に識別する番号を含む。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_ATTACH_NUM  <br/> |
-|識別子:  <br/> |0x0e21  <br/> |
+|識別子:  <br/> |0x0E21  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-メッセージストアは、このプロパティを生成して管理します。 添付ファイルの番号は、描画位置の後の2番目の並べ替えキーです (添付ファイルテーブル内)。 
+メッセージ ストアは、このプロパティを生成および管理します。 添付ファイル番号は、添付ファイル テーブルのレンダリング位置の後のセカンダリ 並べ替えキーです。 
   
- **PR_ATTACH_NUM**は、 [IMessage:: openattach](imessage-openattach.md)メソッドを使用して添付ファイルを開くために使用されます。 クライアントアプリケーションのセッションでは、添付ファイルテーブルが開いている間は、メッセージの添付ファイルの**PR_ATTACH_NUM**プロパティは一定のままです。 
+ **PR_ATTACH_NUM** は [、IMessage::OpenAttach](imessage-openattach.md) メソッドを使用して添付ファイルを開くのに使用されます。 クライアント アプリケーションのセッション内では、PR_ATTACH_NUM **テーブルが** 開いている限り、メッセージ添付ファイルのプロパティは一定のままです。 
   
-メッセージストアは、 **IMessage:: createattach**および**IMessage::D eleteattach**メソッドを使用して、変更内容をテーブルに反映します。 このオプションでは、メッセージストアは、クライアントがそれらの変更に再同期できるように、開いている添付ファイルテーブルでテーブル通知を生成できます。 
+メッセージ ストアは **、IMessage::CreateAttach** メソッドと **IMessage::D eleteAttach** メソッドを使用してテーブルに変更を伝達します。 そのオプションで、メッセージ ストアは開いている添付ファイル テーブルにテーブル通知を生成して、クライアントがそれらの変更に再同期できます。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルオブジェクトを処理します。
+> メッセージ オブジェクトと添付ファイル オブジェクトを処理します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -68,7 +68,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 8b8368d2-b04b-42a5-fdc3-955fc873c2f5
-description: 予定の列挙およびリベースの進行状況を報告します。
+description: 予定の列挙と再適用の進行状況を報告します。
 ms.openlocfilehash: e5df0cd6df10ab86b1a125b9807637438976726f
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -16,16 +16,16 @@ ms.locfileid: "32326454"
 ---
 # <a name="rebasetaskprogress"></a>RebaseTaskProgress
 
-予定の列挙およびリベースの進行状況を報告します。
+予定の列挙と再適用の進行状況を報告します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |、tzmovelib.h  <br/> |
-|実装元:  <br/> |MAPI クライアントアプリケーション  <br/> |
-|呼び出し元:  <br/> |Outlook のリベース/再配置オブジェクト  <br/> |
-|ポインターの種類:  <br/> |、tzmovelib.h で定義されている**PFNREBASETASKPROGRESS**  <br/> |
+|ヘッダー ファイル:  <br/> |tzmovelib.h  <br/> |
+|実装元:  <br/> |MAPI クライアント アプリケーション  <br/> |
+|呼び出し元:  <br/> |Outlook の再basing オブジェクト  <br/> |
+|ポインターの種類:  <br/> |tzmovelib.h で定義されている **PFNREBASETASKPROGRESS**  <br/> |
    
 ```cpp
 void STDAPICALLTYPE RebaseTaskProgress(  
@@ -39,45 +39,45 @@ void STDAPICALLTYPE RebaseTaskProgress(
 
 ## <a name="parameters"></a>パラメーター
 
-_ulmin_
+_ulMin_
   
-> 順番処理されている予定の範囲の下限。 通常は0になります。
+> [in]処理される予定の範囲の低い端。 通常は 0 です。
     
-_ulmax_
+_ulMax_
   
-> 順番処理されている予定の範囲の上限です。 通常は、処理されている予定表フォルダー内のアイテムの数です。
+> [in]処理される予定の範囲の高端。 これは通常、処理される予定表フォルダー内のアイテムの数です。
     
-_ulcur_
+_ulCur_
   
-> 順番処理されている現在のアイテムです。
+> [in]現在処理されているアイテム。
     
 _State_
   
-> 順番処理されているアイテムの状態を示す値。 列挙**REBASE_APPT_STATE**は、tzmovelib.h で定義されています。  _State_ は、次のいずれかの値です。 
+> [in]処理されるアイテムの状態を示す値。 列挙型 **REBASE_APPT_STATE** tzmovelib.h で定義されます。  _State_ は、次のいずれかの値です。 
     
-   - **REBASE_APPT_STATE_SCANNING_EXAMINING** -アイテムをスキャンし、検査します。 
+   - **REBASE_APPT_STATE_SCANNING_EXAMINING** —アイテムをスキャンして調べる。 
     
-   - **REBASE_APPT_STATE_SCANNING_FOUND** —アイテムをスキャンして検出しました。 
+   - **REBASE_APPT_STATE_SCANNING_FOUND** — アイテムをスキャンして見つかりました。 
     
-   - **REBASE_APPT_STATE_BEGIN** —アイテムを修正して開始します。 
+   - **REBASE_APPT_STATE_BEGIN** —アイテムの固定と開始。 
     
-   - **REBASE_APPT_STATE_REBASING** —アイテムを修正し、調整します。 
+   - **REBASE_APPT_STATE_REBASING** —アイテムの固定と調整。 
     
-   - **REBASE_APPT_STATE_SENDING** —会議の更新を修正し、送信します。 
+   - **REBASE_APPT_STATE_SENDING** —会議の更新プログラムを修正して送信します。 
     
-   - **REBASE_APPT_STATE_DONE** —アイテムを修正して実行します。 
+   - **REBASE_APPT_STATE_DONE** —アイテムを修正して完了します。 
     
 _pRowCur_
   
-> 順番スキャンまたは固定されているアイテムを記述する**[srow](https://msdn.microsoft.com/library/369c2d5c-8c2b-4314-9cb2-aaa89580aa2b%28Office.15%29.aspx)** 構造体へのポインター。 
+> [in]スキャンまたは修正されるアイテムを記述する **[SRow](https://msdn.microsoft.com/library/369c2d5c-8c2b-4314-9cb2-aaa89580aa2b%28Office.15%29.aspx)** 構造体へのポインター。 
     
 ## <a name="return-values"></a>戻り値
 
 呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-[IOlkApptRebaser](iolkapptrebaser.md)インターフェイスを使用する MAPI クライアントアプリケーションは、この関数を実装してアイテム処理を追跡します。 
+[IOlkApptRebaser](iolkapptrebaser.md)インターフェイスを使用する MAPI クライアント アプリケーションは、アイテム処理を追跡するためにこの関数を実装します。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: 天井関数 (Access カスタム web アプリ)
+title: Ceiling 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33414208"
 ---
-# <a name="ceiling-function-access-custom-web-app"></a>天井関数 (Access カスタム web アプリ)
+# <a name="ceiling-function-access-custom-web-app"></a>Ceiling 関数 (Access カスタム Web アプリ)
 
 指定した数値式より大きい、または等しい最小の整数を戻します。
   
@@ -22,7 +22,7 @@ ms.locfileid: "33414208"
   
 ## <a name="syntax"></a>構文
 
-**天井**(*NumericExpression*) 
+**Ceiling** (*NumericExpression*) 
   
 Ceiling 関数には以下の引数が含まれます。
   

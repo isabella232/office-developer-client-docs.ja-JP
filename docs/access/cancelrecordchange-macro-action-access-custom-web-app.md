@@ -1,5 +1,5 @@
 ---
-title: cancelrecordchange マクロアクション (Access カスタム web アプリ)
+title: CancelRecordChange マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411828"
 ---
-# <a name="cancelrecordchange-macro-action-access-custom-web-app"></a>cancelrecordchange マクロアクション (Access カスタム web アプリ)
+# <a name="cancelrecordchange-macro-action-access-custom-web-app"></a>CancelRecordChange マクロ アクション (Access カスタム Web アプリ)
 
 You can use the **CancelRecordChange** action to cancel the changes applied to a record in a **[CreateRecord](createrecord-data-block-access-custom-web-app.md)** or **[EditRecord](editrecord-data-block-access-custom-web-app.md)** data block before the changes are committed. 
   

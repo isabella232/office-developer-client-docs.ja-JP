@@ -25,7 +25,7 @@ ms.locfileid: "33412458"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-オブジェクトの1つ以上のプロパティのプロパティ値を取得します。
+オブジェクトの 1 つ以上のプロパティのプロパティ値を取得します。
   
 ```cpp
 HRESULT GetProps(
@@ -40,23 +40,23 @@ HRESULT GetProps(
 
  _lpPropTagArray_
   
-> 順番値を取得するプロパティを識別するプロパティタグの配列へのポインター。 _lpPropTagArray_パラメーターは、オブジェクトのすべてのプロパティの値を返す必要があるか、または1つ以上の property タグを含む[SPropTagArray](sproptagarray.md)構造をポイントする必要があることを示す NULL である必要があります。 
+> [in]値を取得するプロパティを識別するプロパティ タグの配列へのポインター。 _lpPropTagArray_ パラメーターは NULL で、オブジェクトのすべてのプロパティの値を返す必要があります、または 1 つ以上のプロパティ タグを含む [SPropTagArray](sproptagarray.md)構造体を指す必要があります。 
     
  _ulFlags_
   
-> 順番PT_UNSPECIFIED 型のプロパティの形式を示すフラグのビットマスク。 次のフラグを設定できます。
+> [in]型を持つプロパティの形式を示すフラグのビットマスクPT_UNSPECIFIED。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> これらのプロパティの文字列値は、Unicode 形式で返される必要があります。 MAPI_UNICODE フラグが設定されていない場合、文字列値は ANSI 形式で返されます。
+> これらのプロパティの文字列値は、Unicode 形式で返す必要があります。 このフラグMAPI_UNICODE設定しない場合は、ANSI 形式で文字列値を返す必要があります。
     
  _lpcValues_
   
-> 読み上げ_lppproparray_パラメーターが指すプロパティ値の数へのポインター。 _lppproparray_が NULL の場合、 _lpcValues_パラメーターの内容は0になります。 
+> [out]  _lppPropArray_ パラメーターが指すプロパティ値の数を指すポインター。 _lppPropArray が_ NULL の場合 _、lpcValues_ パラメーターの内容は 0 です。 
     
- _lppproparray_
+ _lppPropArray_
   
-> 読み上げ取得したプロパティ値へのポインターへのポインター。
+> [out]取得したプロパティ値へのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -66,103 +66,103 @@ S_OK
     
 MAPI_W_ERRORS_RETURNED 
   
-> 呼び出しは全体的に成功しましたが、1つ以上のプロパティにアクセスできませんでした。 使用できない各プロパティのプロパティ値の**aulPropTag**メンバには、プロパティの種類が PT_ERROR で、識別子が0になっています。 この警告が返された場合、呼び出しは正常に処理されます。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
+> 呼び出しは全体的に成功しましたが、1 つ以上のプロパティにアクセスする必要がありました。 使用できない各プロパティのプロパティ値の **aulPropTag** メンバーには、プロパティの種類PT_ERROR識別子が 0 です。 この警告が返されると、呼び出しは正常に処理されます。 この警告をテストするには、次のマクロ **HR_FAILED** します。 詳細については、「Using [Macros for Error Handling 」を参照してください](using-macros-for-error-handling.md)。
     
 MAPI_E_INVALID_PARAMETER 
   
-> _lpPropTagArray_で参照されている**SPropTagArray**構造の**cvalues**メンバーに0が渡されました。
+> _lpPropTagArray_ が指す **SPropTagArray** 構造体の **cValues** メンバーにゼロが渡されています。
     
 ## <a name="remarks"></a>注釈
 
-**imapiprop:: GetProps**メソッドは、オブジェクトの1つ以上のプロパティのプロパティ値を取得します。 
+**IMAPIProp::GetProps** メソッドは、オブジェクトの 1 つ以上のプロパティのプロパティ値を取得します。 
   
-プロパティ値は、要求されたときと同じ順序で返されます (つまり、 _lpPropTagArray_によって参照されているプロパティタグ配列内のプロパティの順序は、lppproparray が指すプロパティ値構造の配列内の順序と一致します) __). 
+プロパティの値は、要求された順序と同じ順序で返されます (つまり  _、lpPropTagArray_ が指すプロパティ タグ配列内のプロパティの順序は  _、lppPropArray_ が指すプロパティ値構造体の配列の順序と一致します)。 
   
-property タグ配列の**aulPropTag**メンバーで指定されているプロパティの種類は、各プロパティの値構造の**value**メンバーで返される値の種類を示します。 ただし、呼び出し元がプロパティの型を知らない場合は、代わりに**aulPropTag**メンバーの型を PT_UNSPECIFIED に設定できます。 **GetProps**は、値を取得するときに、プロパティのプロパティ値構造の**aulPropTag**メンバーで適切な型を設定します。 
+プロパティ タグ配列の **aulPropTag** メンバーで指定されたプロパティ型は、各プロパティ値構造体の **Value** メンバーで返される値の種類を示します。 ただし、呼び出し元がプロパティの種類を知らない場合は **、aulPropTag** メンバーの型を代わりにプロパティにPT_UNSPECIFIED。 値を取得する際に **、GetProps は** プロパティのプロパティ値構造体 **の aulPropTag** メンバーに正しい型を設定します。 
   
-プロパティの種類が_lpPropTagArray_の**SPropTagArray**で指定されている場合、 _lppproparray_に返される**spropvalue**のプロパティ値は、エラー値が返されない限り、要求された型と正確に一致する型を持っています。その代わりに。 
+_lpPropTagArray の SPropTagArray_ でプロパティ型が指定されている場合 _、lppPropArray_ で返される **SPropValue** のプロパティ値には、エラー値が代わりに返されていない限り、要求された型と完全に一致する型があります。  
   
-文字列プロパティには、次の2つのプロパティの種類のいずれかを指定できます: PT_UNICODE は、UNICODE 形式と PT_STRING8 を表す ANSI 形式を表します。 MAPI_UNICODE フラグが_ulflags_パラメーターで設定されている場合は、 **GetProps**が文字列プロパティの適切な形式を決定できないときに、その値を UNICODE 形式で返します。 **GetProps**は、次の状況では、正確な文字列プロパティの種類を特定できません。 
+文字列プロパティには、Unicode 形式を表すプロパティPT_UNICODE ANSI 形式を表PT_STRING8プロパティの 2 つのいずれかを指定できます。 _ulFlags_ パラメーターで MAPI_UNICODE フラグが設定されている場合 **、GetProps** が文字列プロパティの適切な形式を決定できない場合は常に、Unicode 形式で値を返します。 **GetProps は** 、次の状況で正確な文字列プロパティの種類を特定できません。 
   
-- _lpPropTagArray_パラメーターは、すべてのプロパティを要求するために NULL に設定されています。 
+- _lpPropTagArray パラメーターは_ NULL に設定して、すべてのプロパティを要求します。 
     
-- **aulPropTag**メンバーには、プロパティのタグ配列に、プロパティの型として PT_UNSPECIFIED 値が含まれています。 
+- **aulPropTag** メンバーには、プロパティ タグPT_UNSPECIFIEDプロパティの種類として指定された値が含まれます。 
     
-オブジェクトのすべてのプロパティを取得するために_lpPropTagArray_パラメーターが NULL に設定されていて、プロパティが存在しない場合、 **GetProps**は次の処理を行います。 
+_lpPropTagArray_ パラメーターが NULL に設定され、オブジェクトのすべてのプロパティを取得し、プロパティが存在しない場合 **、GetProps は** 次の処理を実行します。 
   
-- S_OK を返します。
+- 値をS_OKします。
     
-- プロパティ値構造の**cvalues**メンバーの count 値を0に設定します。 
+- プロパティ値構造体の **cValues** メンバーの count 値を 0 に設定します。 
     
-- _lpcValues_の内容を0に設定します。 
+- _lpcValues の内容を_ 0 に設定します。 
     
-- _lppproparray_を NULL に設定します。 
+- _lppPropArray を_ NULL に設定します。 
     
- **GetProps**は、 **cvalues**が0に設定された複数値のプロパティを返すことはできません。 
+ **GetProps は****、cValues** を 0 に設定した複数値のプロパティを返す必要があります。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-[MAPIAllocateBuffer](mapiallocatebuffer.md)関数を呼び出して、 _lpPropTagArray_によってポイントされている[spropvalue](spropvalue.md)構造体の初期メモリを割り当てます。[MAPIAllocateMore](mapiallocatemore.md)を呼び出して、構造体のメンバーに必要な追加メモリを割り当てます。 
+[MAPIAllocateBuffer](mapiallocatebuffer.md)関数を呼び出して _、lpPropTagArray_ が指す [SPropValue](spropvalue.md)構造体のメモリを最初に割り当てる。[MAPIAllocateMore を呼](mapiallocatemore.md)び出して、構造体のメンバーに必要な追加のメモリを割り当てる。 
   
-要求された1つ以上のプロパティの値を取得できない場合は、MAPI_W_ERRORS_RETURNED を返します。 プロパティ値の構造で、 **aulPropTag**メンバーの型を PT_ERROR に設定し、 **value**メンバーを、エラーを説明する状態コードに設定します。 たとえば、文字列を unicode に変換する必要があり、unicode をサポートしていない場合は、 **Value**メンバーを MAPI_E_BAD_CHARWIDTH に設定します。 プロパティが大きすぎる場合は、MAPI_E_NOT_ENOUGH_MEMORY に設定します。 オブジェクトがプロパティをサポートしていない場合は、MAPI_E_NOT_FOUND に設定します。 
+要求MAPI_W_ERRORS_RETURNEDプロパティの値を取得できない場合は、この値を返します。 プロパティ値構造で **、aulPropTag** メンバーの型を PT_ERROR に設定し **、Value** メンバーにエラーを説明する状態コードを設定します。 たとえば、文字列を Unicode に変換する必要がある場合、Unicode をサポートしていない場合は **、Value** メンバーを次の文字列にMAPI_E_BAD_CHARWIDTH。 プロパティが大きすぎる場合は、プロパティを [プロパティ] MAPI_E_NOT_ENOUGH_MEMORY。 オブジェクトがプロパティをサポートしていない場合は、このプロパティを [プロパティ] MAPI_E_NOT_FOUND。 
   
-リモートトランスポートプロバイダーの**GetProps**メソッドの実装は、呼び出し元によって要求されたプロパティのフォルダーのプロパティ値を返す必要があります。 実装では、次のことを行う必要があります。 
+リモート トランスポート プロバイダーによる **GetProps** メソッドの実装では、呼び出し元が要求したプロパティのフォルダーのプロパティ値を返す必要があります。 実装では、次の操作を行う必要があります。 
   
-- 呼び出し元に返されるプロパティ値の配列を割り当て、そのアドレスを、その目的のために渡されたプロパティ値ポインターパラメーターに格納します。
+- 呼び出し元に返すプロパティ値配列を割り当て、その目的で渡されたプロパティ値ポインター パラメーターにアドレスを格納します。
     
-- **GetProps**に渡されたプロパティタグの配列に従って、フォルダーのプロパティのプロパティタグを、プロパティの値の配列のプロパティタグにコピーします。
+- GetProps に渡されるプロパティ タグの配列に従って、フォルダーのプロパティからプロパティ値配列のプロパティ タグにプロパティ タグ **をコピーします**。
     
-- **GetProps**に渡されるすべてのプロパティタグについて、プロパティの型が設定されていることを確認します。 呼び出し元は、PT_UNSPECIFIED のプロパティの種類を渡すことができます。この場合、 **GetProps**は、そのプロパティタグに適切なプロパティの種類を設定する必要があります。 
+- GetProps に渡されるすべてのプロパティ タグに対してプロパティの種類が **設定されている必要があります**。 呼び出し元は、プロパティの種類のプロパティ PT_UNSPECIFIED渡すことができます。その場合 **、GetProps** は、そのプロパティ タグの正しいプロパティの種類を設定する必要があります。 
     
-- プロパティ値配列の各プロパティの値をタグに従って設定します。 たとえば、呼び出し元によって要求されたプロパティタグが**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md)) である場合、 **GetProps**は値を MAPI_FOLDER に設定できます。 
+- タグに従ってプロパティ値配列の各プロパティの値を設定します。 たとえば、呼び出し元から要求されたプロパティ タグが PR_OBJECT_TYPE **(** [PidTagObjectType)](pidtagobjecttype-canonical-property.md)の場合 **、GetProps** は値を MAPI_FOLDER に設定できます。 
     
-- 呼び出し元が、実装で処理されていないプロパティタグを渡した場合は、そのプロパティのプロパティタグを PT_ERROR に設定し、プロパティ値を MAPI_E_NOT_FOUND に設定します。
+- 呼び出し元が実装で処理しないプロパティ タグを渡す場合は、それらのプロパティのプロパティ タグを PT_ERROR に設定し、プロパティ値を MAPI_E_NOT_FOUND に設定できます。
     
-- エラーが発生しなかった場合は S_OK を返し、エラーが発生した場合は MAPI_W_ERRORS_RETURNED を返します。
+- エラー S_OKが発生した場合、またはエラーが発生MAPI_W_ERRORS_RETURNED場合は、エラーを返します。
     
-リモートトランスポートプロバイダーの**GetProps**メソッドの実装では、少なくとも次のプロパティをサポートする必要があります。 
+リモート トランスポート プロバイダーによる **GetProps** メソッドの実装では、少なくとも次のプロパティをサポートする必要があります。 
   
-- **PR_ACCESS**([PidTagAccess](pidtagaccess-canonical-property.md))
+- **PR_ACCESS** ([PidTagAccess](pidtagaccess-canonical-property.md))
     
-- **PR_ACCESS_LEVEL**([PidTagAccessLevel](pidtagaccesslevel-canonical-property.md))
+- **PR_ACCESS_LEVEL** ([PidTagAccessLevel](pidtagaccesslevel-canonical-property.md))
     
-- **PR_ASSOC_CONTENT_COUNT**([PidTagAssociatedContentCount](pidtagassociatedcontentcount-canonical-property.md))
+- **PR_ASSOC_CONTENT_COUNT** ([PidTagAssociatedContentCount](pidtagassociatedcontentcount-canonical-property.md))
     
-- **PR_CONTENT_COUNT**([PidTagContentCount](pidtagcontentcount-canonical-property.md))
+- **PR_CONTENT_COUNT** ([PidTagContentCount](pidtagcontentcount-canonical-property.md))
     
-- **PR_CREATION_TIME**([PidTagCreationTime](pidtagcreationtime-canonical-property.md))
+- **PR_CREATION_TIME** ([PidTagCreationTime](pidtagcreationtime-canonical-property.md))
     
-- **PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
+- **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
     
-- **PR_DISPLAY_TYPE**([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))
+- **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))
     
-- **PR_FOLDER_TYPE**([PidTagFolderType](pidtagfoldertype-canonical-property.md))
+- **PR_FOLDER_TYPE** ([PidTagFolderType](pidtagfoldertype-canonical-property.md))
     
 - **PR_OBJECT_TYPE**
     
-- **PR_SUBFOLDERS**([PidTagSubfolders](pidtagsubfolders-canonical-property.md))
+- **PR_SUBFOLDERS** ([PidTagSubfolders](pidtagsubfolders-canonical-property.md))
     
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-PT_OBJECT 型のプロパティの場合は、 **GetProps**ではなく、 [imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出します。 
+型プロパティのプロパティPT_OBJECT、GetProps の代わりに [IMAPIProp::OpenProperty](imapiprop-openproperty.md) メソッド **を呼び出します**。 
   
-セキュリティで保護されたプロパティの場合は、 _lppPropTagArray_パラメーターを NULL に設定して**GetProps**を呼び出すことによって、プロパティを取得する必要はありません。 **GetProps**を呼び出すときには、そのプロパティタグ配列の**aulPropTag**メンバーで、セキュリティで保護されたプロパティの識別子を明示的に設定する必要があります。 セキュリティで保護されたプロパティを使用可能にする時期と方法は、サービスプロバイダーによって設定されます。 
+セキュリティで保護されたプロパティの場合は _、lppPropTagArray_ パラメーターを NULL に設定して **GetProps** を呼び出して取得する必要はありません。 GetProps を呼び出す場合は、プロパティ タグ配列 **の aulPropTag** メンバーでセキュリティで保護されたプロパティの識別子を明示的に **設定する必要があります**。 セキュリティで保護されたプロパティを使用できる場合と方法は、サービス プロバイダーによって管理されます。 
   
-**GetProps**が S_OK または MAPI_W_ERRORS_RETURNED を返す場合にのみ、 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出すことで、返される**spropvalue**構造を解放します。 
+**GetProps** が関数または関数を返す場合にのみ [、MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して、返される **SPropValue** 構造体S_OK解放MAPI_W_ERRORS_RETURNED。 
   
-1つ以上のプロパティにアクセスできなかったために**GetProps**が MAPI_W_ERRORS_RETURNED を返す場合は、返されたプロパティのプロパティタグを確認してください。 失敗したプロパティの値は、プロパティの値の構造に次の値が設定されます。 
+**GetProps** が 1 つMAPI_W_ERRORS_RETURNEDプロパティにアクセスできないため、プロパティを返す場合は、返されるプロパティのプロパティ タグを確認します。 失敗したプロパティには、プロパティ値構造に次の値が設定されます。 
   
-- **aulPropTag**メンバーのプロパティの型が PT_ERROR に設定されます。 
+- **aulPropTag メンバーのプロパティ** の種類は、プロパティに設定PT_ERROR。 
     
-- **value**メンバーのプロパティ値がエラーの状態コードに設定されています (MAPI_E_NOT_FOUND など)。 
+- Value メンバーのプロパティ **の値** は、エラーの状態コード (エラーなど) に設定MAPI_E_NOT_FOUND。 
     
-プロパティの値の構造体に返されるのが非常に大きいために失敗するプロパティは、その**値**のメンバーが MAPI_E_NOT_ENOUGH_MEMORY に設定されています。 通常、このエラーは、プロパティの値が 4 KB 以上の場合に、PT_STRING8、PT_UNICODE、または PT_BINARY 型の文字列またはバイナリのプロパティを使用して発生します。 大きなプロパティを取得するには、 **imapiprop:: openproperty**を呼び出します。 
+プロパティ値構造体で返すには大きすぎるため失敗するプロパティには **、Value** メンバーが値に設定MAPI_E_NOT_ENOUGH_MEMORY。 通常、これは、プロパティの値が 4 KB 以上の場合に、PT_STRING8、PT_UNICODE、または PT_BINARY 型の文字列プロパティまたはバイナリ プロパティで発生します。 **IMAPIProp::OpenProperty を呼び出して、大** きなプロパティを取得します。 
   
-**GetProps**のすべての実装で、文字列の Unicode 形式と ANSI 形式の両方をサポートしているわけではありません。 特定のプロパティが文字列形式の変換を必要とし、 **GetProps**がそれをサポートできない場合、プロパティの**値**のメンバーは MAPI_E_BAD_CHARWIDTH に設定されます。 
+**GetProps のすべての実装で、文字列** の Unicode 形式と ANSI 形式の両方がサポートされているという場合があります。 特定のプロパティで文字列形式の変換が必要で **、GetProps** でサポートできない場合は、プロパティの **Value** メンバーが文字列形式にMAPI_E_BAD_CHARWIDTH。 
   
-pst が SharePoint pst であるかどうかを確認するには、 [imapisession:: openmsgstore](imapisession-openmsgstore.md)を使用して pst をマウントし、このプロパティを要求しているメッセージストアオブジェクトで**GetProps**を呼び出します。 存在する場合は、SharePoint 用に PST が構成されていると想定できます。含まれていない場合、pst は SharePoint pst として構成されていません。 
+PST が SharePoint PST である場合は [、IMAPISession::OpenMsgStore](imapisession-openmsgstore.md)を使用して PST をマウントし、このプロパティを要求するメッセージ ストア オブジェクトで **GetProps** を呼び出します。 存在する場合は、PST がユーザーに対して構成SharePoint。指定されていない場合、PST は PST の構成SharePointされていません。 
   
-**GetProps**を使用してプロパティにアクセスする方法の詳細については、「 [MAPI プロパティの取得](retrieving-mapi-properties.md)」を参照してください。
+**GetProps** を使用してプロパティにアクセスする方法の詳細については、「MAPI プロパティの取得 [」を参照してください](retrieving-mapi-properties.md)。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -170,7 +170,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIFunctions  <br/> |GetPropsNULL  <br/> |mfcmapi は、 **imapiprop:: GetProps**メソッドを使用して、オブジェクトのすべてのプロパティを取得します。 NULL または、 _lpPropTagArray_パラメーターの[imapiprop:: getproplist](imapiprop-getproplist.md)メソッドによって返される配列を渡します。  <br/> |
+|MAPIFunctions.cpp  <br/> |GetPropsNULL  <br/> |MFCMAPI は **、IMAPIProp::GetProps** メソッドを使用して _、LPPropTagArray_ パラメーターで [IMAPIProp::GetPropList](imapiprop-getproplist.md)メソッドによって返される NULL または配列を渡して、オブジェクトのすべてのプロパティを取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

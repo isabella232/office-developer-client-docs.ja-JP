@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: fb478151-4afc-9a06-42a2-1defa54a3c4a
-description: このドキュメントは現状のまま提供されます。 このドキュメントで説明されている情報とビュー (URL やその他のインターネット web サイト参照を含む) は、将来予告なしに変更されることがあります。 You bear the risk of using it.
+description: このドキュメントは現状のまま提供されます。 このドキュメントに記載されている情報とビュー (URL や他のインターネット Web サイト参照を含む) は、予告なしに変更される場合があります。 使用に伴うリスクは、お客様が負うものとします。
 ms.openlocfilehash: 2faffee253779cbc2c6fde0716db1ff46b1583bc
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT

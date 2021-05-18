@@ -19,24 +19,24 @@ ms.locfileid: "33411485"
 > マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
 
 
-- [DateAdd 関数 (Access カスタム web アプリ)](dateadd-function-access-custom-web-app.md)
+- [DateAdd 関数 (Access カスタム Web アプリ)](dateadd-function-access-custom-web-app.md)
     
-- [DateDiff 関数 (Access カスタム web アプリ)](datediff-function-access-custom-web-app.md)
+- [DateDiff 関数 (Access カスタム Web アプリ)](datediff-function-access-custom-web-app.md)
     
-- [datefromparts 関数 (Access カスタム web アプリ)](datefromparts-function-access-custom-web-app.md)
+- [DateFromParts 関数 (Access カスタム Web アプリ)](datefromparts-function-access-custom-web-app.md)
     
-- [DatePart 関数 (Access カスタム web アプリ)](datepart-function-access-custom-web-app.md)
+- [DatePart 関数 (Access カスタム Web アプリ)](datepart-function-access-custom-web-app.md)
     
-- [Day 関数 (Access カスタム web アプリ)](day-function-access-custom-web-app.md)
+- [Day 関数 (Access カスタム Web アプリ)](day-function-access-custom-web-app.md)
     
-- [EOMonth 関数 (Access カスタム web アプリ)](eomonth-function-access-custom-web-app.md)
+- [EOMonth 関数 (Access カスタム Web アプリ)](eomonth-function-access-custom-web-app.md)
     
-- [Month 関数 (Access カスタム web アプリ)](month-function-access-custom-web-app.md)
+- [Month 関数 (Access カスタム Web アプリ)](month-function-access-custom-web-app.md)
     
-- [Now 関数 (Access カスタム web アプリ)](now-function-access-custom-web-app.md)
+- [Now 関数 (Access カスタム Web アプリ)](now-function-access-custom-web-app.md)
     
-- [Today 関数 (Access カスタム web アプリ)](today-function-access-custom-web-app.md)
+- [Today 関数 (Access カスタム Web アプリ)](today-function-access-custom-web-app.md)
     
-- [Year 関数 (Access カスタム web アプリ)](year-function-access-custom-web-app.md)
+- [Year 関数 (Access カスタム Web アプリ)](year-function-access-custom-web-app.md)
     
 

@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm795
 localization_priority: Normal
 ms.assetid: 98b86b9d-9cc0-1169-1c44-ef1505bf92fa
-description: 親図形の原点を基準としたときの、図形の pin (回転の中心) の y 座標を表します。
+description: 図形のピンの y 座標 (回転の中心) を、親の原点との関係で表します。
 ms.openlocfilehash: 17daf691e4802a93775bfd5272d2142ef33bd189
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33411863"
 ---
 # <a name="piny-cell-shape-transform-section"></a>[PinY] セル ([Shape Transform] セクション)
 
-親図形の原点を基準としたときの、図形の pin (回転の中心) の*y*座標を表します。 
+図形の  *ピンの y*  座標 (回転の中心) を、親の原点との関係で表します。 
   
 ## <a name="remarks"></a>注釈
 

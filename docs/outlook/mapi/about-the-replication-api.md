@@ -19,30 +19,30 @@ ms.locfileid: "32329520"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-レプリケーション API は、MAPI メッセージストアプロバイダーが、microsoft outlook 2013 または microsoft outlook 2010 アイテムを、そのプロバイダに対して作成されたサーバーとプライベート .pst ベースのローカルストアとの間で同期する機能を提供します。 
+レプリケーション API は、MAPI メッセージ ストア プロバイダーがサーバーと、そのプロバイダー用に作成されたプライベートの .pst ベースのローカル ストアとの間で Microsoft Outlook 2013 または Microsoft Outlook 2010 アイテムを同期する機能を提供します。 
   
 > [!NOTE]
-> MAPI メッセージストアプロバイダーは、[レプリケーション状態マシンについて](about-the-replication-state-machine.md)の指示に従って、レプリケーション API を実装する必要があります。 プロバイダーは、他のプロバイダー用に作成された個人用ストアに対してのみ API を使用する必要があります。他のプロバイダー用に作成された個人用ストアでは、それぞれのサーバーに対して独自のレプリケーションメカニズムが既にセットアップされている場合があるためです。 たとえば、オフラインフォルダーファイル (.ost) は、Microsoft Exchange サーバーとの間でレプリケーション関係を維持します。 
+> MAPI メッセージ ストア プロバイダーは、「レプリケーション ステート マシンについて」の手順に従ってレプリケーション API [を実装する必要があります](about-the-replication-state-machine.md)。 プロバイダーは、他のプロバイダー用に作成された個人用ストアが、既にそれぞれのサーバーで独自のレプリケーション メカニズムを設定している可能性があるため、他のプロバイダー用に作成された個人用ストアではなく、自身用に作成された個人用ストアでのみ API を使用する必要があります。 たとえば、オフライン フォルダー ファイル (.ost) は、Microsoft サーバーと独自のレプリケーションExchangeします。 
   
-レプリケーション API を使用するには、最初に**[nstserviceentry](nstserviceentry.md)** を呼び出すことによって、MAPI メッセージストアプロバイダーが .pst ベースのローカルストアを開いてラップする必要があります。 プロバイダーは、API の主なインターフェイスである**[iostx](iostxiunknown.md)** と**[ipstx](ipstxiunknown.md)** を使用して、レプリケーションを実行することができます。 **ipstx**は、IMsgStore に対するクエリによって提供され[ます。 imapiprop](imsgstoreimapiprop.md)、および**[GetSyncObject](ipstx-getsyncobject.md)** によって**iostx**が提供されます。 
+レプリケーション API を使用するには、MAPI メッセージ ストア プロバイダーが **[NSTServiceEntry](nstserviceentry.md)** を呼び出して .pst ベースのローカル ストアを開いてラップする必要があります。 プロバイダーは **[、API、IOSTX、IPSTX](iostxiunknown.md)** の主要なインターフェイス **[](ipstxiunknown.md)** を使用してレプリケーションを実行できます。 **IPSTX** は [IMsgStore : IMAPIProp](imsgstoreimapiprop.md)でのクエリによって提供され **、IOSTX** は **[IPSTX::GetSyncObject によって提供されます](ipstx-getsyncobject.md)**。 
   
-## <a name="the-iostx-interface"></a>iostx インターフェイス
+## <a name="the-iostx-interface"></a>IOSTX インターフェイス
 
-**iostx**インターフェイスは、レプリケーション API で同期を実行するプライマリインターフェイスです。 **iostx**ローカルストアを一連の状態で移動し、ローカルストアの変更に関する各状態の情報を取得します。また、サーバー上の変更をローカルストアに通知することもできます。 レプリケーション API でも、同期をサポートする多くのデータ構造が指定されています。 
+**IOSTX インターフェイス** は、レプリケーション API で同期を実行するプライマリ インターフェイスです。 **IOSTX** は、一連の状態を通じてローカル ストアを移動し、ローカル ストアの変更に関する各状態の情報を取得し、サーバー上の変更をローカル ストアに通知します。 レプリケーション API では、同期をサポートする多くのデータ構造も指定します。 
   
-この api のクライアントとしてのストアプロバイダーは、レプリケーション API を使用して、ローカルストアをラップし、これらの状態を使用して、ローカルストアに対する変更 (フォルダー階層への変更、新しいアイテムの追加など) をサーバーにプッシュします。また、サーバー上の変更に関する情報と、その情報を**iostx**インターフェイスに提供します。 **iostx**インターフェイスは、Microsoft Exchange Server によって提供される増分変更同期 (ICS) を採用します。 ics の詳細については、「 [ics の評価基準](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)」を参照してください。 **iostx**を使用すると、クライアントは ICS を使用して、ローカルストア上の階層またはコンテンツに対する増分の変更を監視し、同期します。 
+ストア プロバイダーは、この API のクライアントとして、レプリケーション API を使用してローカル ストアをラップし、これらの状態を移動し、ローカル ストアでの変更 (フォルダー階層の変更や新しいアイテムの追加など) をサーバーにプッシュし、サーバー上の変更に関する情報を取得し、その情報を **IOSTX** インターフェイスに提供します。 **IOSTX インターフェイスは**、ユーザーが提供する増分変更同期 (ICS) をMicrosoft Exchange Server。 ICS の詳細については [、「ICS 評価基準」を参照してください](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)。 **IOSTX を介** して、クライアントは ICS を使用して、ローカル ストア上の階層またはコンテンツに対する増分変更を監視および同期します。 
   
-## <a name="the-ipstx-interface"></a>ipstx インターフェイス
+## <a name="the-ipstx-interface"></a>IPSTX インターフェイス
 
- **** ipstx およびその他の5つの * * ipstx n * * **** ipstx *n* * * は、 **iostx**インターフェイスを介してレプリケーションを実行するときに使用できるヘルパー機能を提供します。 たとえば、 **[ipstx:: EmulateSpooler](ipstx-emulatespooler.md)** を使用すると、ローカルストアが Outlook プロトコルマネージャーをエミュレートして、送信メッセージをサーバーにスプールするようにすることができます。 
+ **IPSTX および** IPSTXから継承する他の 5 つの ****IPSTX** n ** インターフェイスは **、IOSTX** インターフェイスを介してレプリケーションを実行するときに使用できるヘルパー機能を提供します。 たとえば **[、IPSTX::EmulateSpooler](ipstx-emulatespooler.md)** を使用すると、ローカル ストアで Outlook プロトコル マネージャーをエミュレートして、送信メッセージをサーバーにスプールできます。 
   
-レプリケーション中の状態遷移の詳細については、「 [replication state Machine につい](about-the-replication-state-machine.md)て」を参照してください。
+レプリケーション中の状態遷移の詳細については、「レプリケーションステート マシンについて [」を参照してください](about-the-replication-state-machine.md)。
   
 ## <a name="the-replication-api"></a>レプリケーション API
 
-レプリケーション API は、次の日、データ型、およびインターフェイスを提供します。 ラップされた個人用フォルダーファイル (PST) のストアプロバイダーのサンプルの実装については、「[サンプルのラップされた PST ストアプロバイダーについ](about-the-sample-wrapped-pst-store-provider.md)て」を参照してください。
+レプリケーション API には、次の定義、データ型、およびインターフェイスが含まれます。 ラップされた個人用フォルダー ファイル (PST) のストア プロバイダーの実装例については、「サンプル ラップされた PST ストア プロバイダーについて」 [を参照してください](about-the-sample-wrapped-pst-store-provider.md)。
   
-定義
+定義:
   
 - [レプリケーション API の定数](mapi-constants.md)
     
@@ -70,7 +70,7 @@ ms.locfileid: "32329520"
     
 - **[SKEY](skey.md)**
     
-- **[頻度](sync.md)**
+- **[SYNC](sync.md)**
     
 - **[SYNCCONT](synccont.md)**
     
@@ -98,9 +98,9 @@ ms.locfileid: "32329520"
     
 インターフェイス
   
-- **[iostx](iostxiunknown.md)**
+- **[IOSTX](iostxiunknown.md)**
     
-- **[ipstx](ipstxiunknown.md)**
+- **[IPSTX](ipstxiunknown.md)**
     
 - **[IPSTX2](ipstx2ipstx.md)**
     

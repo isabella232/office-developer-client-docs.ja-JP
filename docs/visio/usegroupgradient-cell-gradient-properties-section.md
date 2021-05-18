@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: f1dcf0ec-8b4a-4ee1-9208-b1c84e30d37b
-description: 図形が他の図形とグループ化されている場合、図形にグラデーションを適用するかどうかを、ブール演算型で決定します。 [UseGroupGradient] セルの値が影響するのは、図形の塗りつぶしのみです。
+description: 図形が他の図形とグループ化されている場合、図形にグラデーションを適用するかどうかを、ブール演算型で決定します。[UseGroupGradient] セルの値が影響するのは、図形の塗りつぶしのみです。
 ms.openlocfilehash: a69b48095aec93705c686a5401051f1d1e368d18
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33411366"
 ---
 # <a name="usegroupgradient-cell-gradient-properties-section"></a>[UseGroupGradient] セル ([グラデーションのプロパティ] セクション)
 
-図形が他の図形とグループ化されている場合、図形にグラデーションを適用するかどうかを、ブール演算型で決定します。 [**UseGroupGradient**] セルの値が影響するのは、図形の塗りつぶしのみです。 
+図形が他の図形とグループ化されている場合、図形にグラデーションを適用するかどうかを、ブール演算型で決定します。[**UseGroupGradient**] セルの値が影響するのは、図形の塗りつぶしのみです。 
   
 ## <a name="remarks"></a>注釈
 
@@ -24,7 +24,7 @@ ms.locfileid: "33411366"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [usegroupgradient]  <br/> |
+| セル名:  <br/> | UseGroupGradient  <br/> |
    
 プログラムから、インデックスによって [**UseGroupGradient**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -32,6 +32,6 @@ ms.locfileid: "33411366"
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowGradientProperties** <br/> |
-| セル インデックス:  <br/> |* * visUseGroupGradient * * <br/> |
+| セル インデックス:  <br/> |**visUseGroupGradient ** <br/> |
    
 

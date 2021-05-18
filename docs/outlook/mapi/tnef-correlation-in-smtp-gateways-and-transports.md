@@ -1,5 +1,5 @@
 ---
-title: SMTP ゲートウェイおよびトランスポートでの TNEF 相互関係
+title: SMTP ゲートウェイとトランスポートの TNEF 相関
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,16 +15,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33413669"
 ---
-# <a name="tnef-correlation-in-smtp-gateways-and-transports"></a>SMTP ゲートウェイおよびトランスポートでの TNEF 相互関係
+# <a name="tnef-correlation-in-smtp-gateways-and-transports"></a>SMTP ゲートウェイとトランスポートの TNEF 相関
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-インターネットベースのシステムに接続するゲートウェイとトランスポート (SMTP を使用するもの) は、MessageID smtp ヘッダーの値と**PR_TNEF_CORRELATION_KEY**プロパティを使用して、TNEF の関連付けを実装します。 
+インターネット ベースのシステム (SMTP を使用するシステム) に接続するゲートウェイとトランスポートは、MessageID SMTP ヘッダーの値と **PR_TNEF_CORRELATION_KEY** プロパティを使用して TNEF の相関関係を実装します。 
   
-送信メッセージの MessageID ヘッダーの値は、 **PR_TNEF_CORRELATION_KEY** ([PidTagTnefCorrelationKey](pidtagtnefcorrelationkey-canonical-property.md)) プロパティにコピーし、TNEF ストリームの[attMAPIProps](attmapiprops.md)属性でエンコードする必要があります。 **PR_TNEF_CORRELATION_KEY**はバイナリプロパティですが、MessageID が文字列である点に注意してください。null ターミネータはコピーと比較に含める必要があります。 
+送信メッセージの MessageID ヘッダーの値は **、PR_TNEF_CORRELATION_KEY** ([PidTagTnefCorrelationKey](pidtagtnefcorrelationkey-canonical-property.md)) プロパティにコピーし、TNEF ストリームの [attMAPIProps](attmapiprops.md) 属性でエンコードする必要があります。 このプロパティ **PR_TNEF_CORRELATION_KEY** バイナリ プロパティですが、MessageID は文字列です。null ターミネーターは、コピーと比較に含める必要があります。 
   
-この手法は、microsoft Exchange Server などの MAPI ベースのメッセージングシステムをインターネットに接続するすべての microsoft ソフトウェアで使用されます。 この手法は、相互運用性を最大にするために、MAPI クライアントをサポートするシステムに接続するすべての SMTP ゲートウェイおよびトランスポートで使用する必要があります。
+この手法は、MAPI ベースのメッセージング システムをインターネットに接続する Microsoft のすべてのソフトウェアで使用Microsoft Exchange Server。 この手法は、相互運用性を最大化するために、MAPI クライアントをサポートするシステムに接続する SMTP ゲートウェイおよびトランスポートで使用する必要があります。
   
 

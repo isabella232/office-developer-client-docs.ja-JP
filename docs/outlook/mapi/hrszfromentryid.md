@@ -29,7 +29,7 @@ ms.locfileid: "33411555"
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
 |呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
    
@@ -45,15 +45,15 @@ HrSzFromEntryID(
 
  _cb_
   
-> 順番_pentry_パラメーターによって指定されたエントリ識別子のサイズ (バイト単位)。 
+> [in]  _pentry_ パラメーターが指すエントリ識別子のサイズ (バイト単位)。 
     
  _pentry_
   
-> 順番エンコードするエントリ識別子を含む[ENTRYID](entryid.md)構造体へのポインター。 
+> [in]エンコードするエントリ識別子を含む [ENTRYID](entryid.md) 構造体へのポインター。 
     
  _psz_
   
-> 読み上げ返された ASCII 文字列へのポインター。
+> [out]返される ASCII 文字列へのポインター。
     
 ## <a name="return-value"></a>Return value
 
@@ -61,10 +61,10 @@ HrSzFromEntryID(
   
 ## <a name="remarks"></a>注釈
 
-[HrEntryIDFromSz](hrentryidfromsz.md)および**hrszfromentryid**関数は、エントリ識別子の文字列形式とバイナリ形式の間の変換を提供します。 MAPI では、バイナリデータで構造体を使用する必要があります。 
+[HrEntryIDFromSz](hrentryidfromsz.md)関数と **HrSzFromEntryID** 関数は、エントリ識別子の文字列形式とバイナリ形式の間の変換を提供します。 MAPI では、バイナリ データで構造体を使用する必要があります。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**hrszfromentryid**関数は、 [MAPIAllocateBuffer](mapiallocatebuffer.md)関数を使用して ASCII 文字列のメモリを割り当てます。 
+**HrSzFromEntryID** 関数は [、MAPIAllocateBuffer](mapiallocatebuffer.md)関数を使用して ASCII 文字列のメモリを割り当てる。 
   
 

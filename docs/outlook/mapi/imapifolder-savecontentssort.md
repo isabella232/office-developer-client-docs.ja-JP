@@ -25,7 +25,7 @@ ms.locfileid: "33411618"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォルダーの contents テーブルの既定の並べ替え順序を設定します。
+フォルダーのコンテンツ テーブルの既定の並べ替え順序を設定します。
   
 ```cpp
 HRESULT SaveContentsSort(
@@ -36,17 +36,17 @@ HRESULT SaveContentsSort(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpsortcriteria_
+ _lpSortCriteria_
   
-> 順番既定の並べ替え順序を含む[ssortorderset](ssortorderset.md)構造体へのポインター。 
+> [in]既定の並べ替え順序を含む [SSortOrderSet](ssortorderset.md) 構造体へのポインター。 
     
  _ulFlags_
   
-> 順番既定の並べ替え順序を設定する方法を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]既定の並べ替え順序の設定方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 RECURSIVE_SORT 
   
-> 既定の並べ替え順序セットは、指定したフォルダーとそのすべてのサブフォルダーに適用されます。
+> 既定の並べ替え順序セットは、指定されたフォルダーとそのすべてのサブフォルダーに適用されます。
     
 ## <a name="return-value"></a>戻り値
 
@@ -56,13 +56,13 @@ S_OK
     
 MAPI_E_NO_SUPPORT 
   
-> メッセージストアプロバイダーは、フォルダーコンテンツテーブルの並べ替え順序の保存をサポートしていません。
+> メッセージ ストア プロバイダーは、フォルダーコンテンツ テーブルの並べ替え順序の保存をサポートされていません。
     
 ## <a name="remarks"></a>注釈
 
-**imapifolder:: SaveContentsSort**メソッドは、フォルダーの contents テーブルに既定の並べ替え順序を設定します。 つまり、クライアントが**SaveContentsSort**を呼び出した後に、フォルダーの[IMAPIContainer:: getcontentstable](imapicontainer-getcontentstable.md)メソッドを呼び出すと、返されたコンテンツテーブルの行が**SaveContentsSort**で設定された順序で表示されます。
+**IMAPIFolder::SaveContentsSort** メソッドは、フォルダーのコンテンツ テーブルの既定の並べ替え順序を確立します。 つまり、コードが **SaveContentsSort** を呼び出した後にクライアントがフォルダーの [IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md)メソッドを呼び出す場合、返されるコンテンツ テーブルの行は **SaveContentsSort** によって確立された順序で表示されます。
   
-すべてのメッセージストアプロバイダーが**SaveContentsSort**をサポートしているわけではありません。メッセージストアプロバイダーは、 **SaveContentsSort**メソッドから MAPI_E_NO_SUPPORT を返すことができます。 
+すべてのメッセージ ストア プロバイダーが **SaveContentsSort をサポートしているのではありません**。メッセージ ストア プロバイダーが **SaveContentsSort** メソッドからMAPI_E_NO_SUPPORTを返すのは許容されます。 
   
 ## <a name="see-also"></a>関連項目
 

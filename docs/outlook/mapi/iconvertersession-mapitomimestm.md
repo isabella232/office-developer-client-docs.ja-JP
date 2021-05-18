@@ -10,7 +10,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8660c701-f7f4-8d92-7984-5dae7f677783
-description: '最終更新日: 2017 年9月20日'
+description: '最終更新日: 2017 年 9 月 20 日'
 ms.openlocfilehash: 55c547c4dae1acc3e9874edc7778f53a5d34f957
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -37,35 +37,35 @@ HRESULT IConverterSession::MAPIToMIMEStm(
 
  _pmsg_
   
-> 順番変換するメッセージへのポインター。 **lpmessage**の種類の定義については、「mapidefs.h」を参照してください。
+> [in]変換するメッセージへのポインター。 LPMESSAGE の型定義については、mapidefs.h **を参照してください**。
     
  _pstm_
   
-> 読み上げストリームを出力する[IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)インターフェイス。 
+> [out] [ストリームを](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) 出力する IStream インターフェイス。 
     
  _ulFlags_
   
->  順番コンバータの特定のアクションを示すフラグ。 
+>  [in]コンバーターの特定のアクションを示すフラグ。 
     
 CCSF_8BITHEADERS
   
-> コンバータでは8ビットヘッダーが許可されている必要があります。
+> コンバーターは 8 ビット ヘッダーを許可する必要があります。
     
 CCSF_EMBEDDED_MESSAGE
   
-> 送信/未送信の情報は、X 未送信の情報として保持されます。
+> 送信/送信されていない情報は X-Unsent に保持されます。
     
 CCSF_GLOBAL_MESSAGE
   
-> コンバータは、国際メッセージ (EAI/RFC6530) を作成する必要があります。
+> コンバーターは、国際メッセージ (EAI/RFC6530) を作成する必要があります。
     
 CCSF_INCLUDE_BCC
   
-> MAPI メッセージの BCC 受信者は、MIME ストリームに含める必要があります。
+> MAPI メッセージの BCC 受信者は MIME ストリームに含める必要があります。
     
 CCSF_NO_MSGID
   
-> 送信メッセージには、メッセージ Id フィールドを含めないでください。
+> 送信メッセージにMessage-Idフィールドを含めない。
     
 CCSF_NOHEADERS
   
@@ -73,29 +73,29 @@ CCSF_NOHEADERS
     
 CCSF_PLAIN_TEXT_ONLY
   
-> コンバータは、プレーンテキストのみを送信する必要があります。
+> コンバーターはプレーン テキストを送信する必要があります。
     
 CCSF_SMTP
   
-> コンバーターに SMTP メッセージが渡されています。 このフラグは常に設定する必要があります。
+> コンバーターは SMTP メッセージを渡されています。 このフラグは常に設定する必要があります。
     
 CCSF_USE_RTF
   
-> コンバーターは、MIME メッセージの HTML から RTF 形式に変換する必要があります。
+> コンバーターは、MIME メッセージで HTML から RTF 形式に変換する必要があります。
     
 CCSF_USE_TNEF
   
-> コンバーターは、MIME メッセージでトランスポートニュートラルカプセル化形式 (TNEF) 形式を使用する必要があります。
+> コンバーターは、MIME メッセージでトランスポート ニュートラル カプセル化形式 (TNEF) 形式を使用する必要があります。
     
 ## <a name="return-values"></a>戻り値
 
 E_INVALIDARG
   
-> 無効なフラグが渡されたか、 *pmsg*または*pstm*が NULL です。 
+> 無効なフラグが渡されたか  *、pmsg*  または  *pstm が*  NULL です。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-標準の Outlook メッセージの種類に対してのみサポートされています。
+標準の Outlook メッセージの種類でのみサポートされます。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -103,8 +103,8 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|mapimime .cpp  <br/> |ImportEMLToIMessage  <br/> |mfcmapi は MimeToMAPI を使用して、EML ファイルを MAPI メッセージに変換します。  <br/> |
-|mapimime .cpp  <br/> |ExportIMessageToEML  <br/> |mfcmapi は、MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。  <br/> |
+|MapiMime.cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI は MimeToMAPI を使用して EML ファイルを MAPI メッセージに変換します。  <br/> |
+|MapiMime.cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI は MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

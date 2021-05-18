@@ -1,5 +1,5 @@
 ---
-title: Rows (Visio シェイプシートリファレンス)
+title: 行 (Visioシェイプシート 参照)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33413018"
 ---
-# <a name="rows-visio-shapesheet-reference"></a>Rows (Visio シェイプシートリファレンス)
+# <a name="rows-visio-shapesheet-reference"></a>行 (Visioシェイプシート 参照)
 
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -29,9 +29,9 @@ ms.locfileid: "33413018"
     
 - [[EllipticalArcTo] 行 ([Geometry] セクション)](ellipticalarcto-row-geometry-section.md)
     
-- [グラデーションの分岐点の行 (塗りつぶしのグラデーションのセクション)](gradient-stop-row-fill-gradient-section.md)
+- [[グラデーションの停止] 行 ([塗りつぶしのグラデーション] セクション)](gradient-stop-row-fill-gradient-section.md)
     
-- [グラデーションの分岐点の行 (線のグラデーションのセクション)](gradient-stop-row-line-gradient-section.md)
+- [[グラデーションの停止] 行 ([線のグラデーション] セクション)](gradient-stop-row-line-gradient-section.md)
     
 - [[Hyperlink] 行 ([Hyperlinks] セクション)](hyperlink-row-hyperlinks-section.md)
     
@@ -45,15 +45,15 @@ ms.locfileid: "33413018"
     
 - [[PolylineTo] 行 ([Geometry] セクション)](polylineto-row-geometry-section.md)
     
-- [[relcubbezto] 行 (Geometry セクション)](relcubbezto-row-geometry-section.md)
+- [RelCubBezTo 行 (Geometry セクション)](relcubbezto-row-geometry-section.md)
     
-- [[relellipticalarcto] 行 (Geometry セクション)](relellipticalarcto-row-geometry-section.md)
+- [RelEllipticalArcTo 行 (Geometry セクション)](relellipticalarcto-row-geometry-section.md)
     
-- [rellineto 行 (図形座標] セクション)](rellineto-row-geometry-section.md)
+- [RelLineTo 行 (Geometry セクション)](rellineto-row-geometry-section.md)
     
-- [「relmoveto」行 (「Geometry」セクション)](relmoveto-row-geometry-section.md)
+- [RelMoveTo 行 (Geometry セクション)](relmoveto-row-geometry-section.md)
     
-- [[relquadbezto] 行 (Geometry セクション)](relquadbezto-row-geometry-section.md)
+- [RelQuadBezTo 行 (Geometry セクション)](relquadbezto-row-geometry-section.md)
     
 - [[Shape Data] 行 ([Shape Data] セクション)](shape-data-row-shape-data-section.md)
     

@@ -1,5 +1,5 @@
 ---
-title: RTrim 関数 (Access カスタム web アプリ)
+title: RTrim 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33413634"
 ---
-# <a name="rtrim-function-access-custom-web-app"></a>RTrim 関数 (Access カスタム web アプリ)
+# <a name="rtrim-function-access-custom-web-app"></a>RTrim 関数 (Access カスタム Web アプリ)
 
 テキスト値を、後続するすべての空白を切り捨てた後で戻します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "33413634"
   
 ## <a name="syntax"></a>構文
 
- **RTrim**(*textexpression*) 
+ **RTrim** (*TextExpression*) 
   
 **RTrim** 関数には、以下の引数があります。 
   

@@ -1,5 +1,5 @@
 ---
-title: imapioffline IUnknown
+title: IMAPIOffline IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 211281ff-3c22-1b51-4b72-ca1e313c7202
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 20d8c39765b0dbbfdde530361894d0a27876010a
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,28 +25,28 @@ ms.locfileid: "32321267"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-オフラインオブジェクトに関する情報を提供します。
+オフライン オブジェクトの情報を提供します。
   
 |||
 |:-----|:-----|
-|提供元:  <br/> |[IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)のクエリ <br/> |
+|提供元:  <br/> |[IMAPIOfflineMgr のクエリ](imapiofflinemgrimapioffline.md) <br/> |
 |呼び出し元:  <br/> |クライアント  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMAPIOffline  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|**[setlevel](imapioffline-setcurrentstate.md)** <br/> |オフラインオブジェクトの現在の状態をオンラインまたはオフラインに設定します。  <br/> |
-|**[GetCapabilities](imapioffline-getcapabilities.md)** <br/> |オフラインオブジェクトでサポートされているコールバックの条件を取得します。  <br/> |
-|**[getselected](imapioffline-getcurrentstate.md)** <br/> |オフラインオブジェクトの現在のオンライン状態またはオフライン状態を取得します。  <br/> |
-| *Placeholder メンバー*  <br/> |このメンバーはプレースホルダーで、サポートされていません。  <br/> |
+|**[SetCurrentState](imapioffline-setcurrentstate.md)** <br/> |オフライン オブジェクトの現在の状態をオンラインまたはオフラインに設定します。  <br/> |
+|**[GetCapabilities](imapioffline-getcapabilities.md)** <br/> |オフライン オブジェクトでコールバックがサポートされる条件を取得します。  <br/> |
+|**[GetCurrentState](imapioffline-getcurrentstate.md)** <br/> |オフライン オブジェクトの現在のオンライン状態またはオフライン状態を取得します。  <br/> |
+| *プレースホルダー メンバー*  <br/> |このメンバーはプレースホルダーであり、サポートされていません。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-クライアントは**[hropenofflineobj](hropenofflineobj.md)** を使用して、 **IMAPIOfflineMgr**をサポートするオフラインオブジェクトを開いて取得します。 **IMAPIOfflineMgr**は[iunknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx)から継承するため、クライアントはこのインターフェイスを ( [iunknown:: QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)を使用して) 照会し、オフラインオブジェクトの**imapioffline**のインターフェイスポインターへのポインターを取得することができます。 クライアントは、オブジェクトの現在の状態を取得または設定したり、オブジェクトのコールバック機能 ( **imapioffline:: getcapabilities**を呼び出すことによって) を調べたり、 **[IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)** を使用してコールバックを設定したりすることができます。 
+クライアントは **[、HrOpenOfflineObj](hropenofflineobj.md)** を使用して **、IMAPIOfflineMgr** をサポートするオフライン オブジェクトを開いて取得します。 **IMAPIOfflineMgr** は [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx)から継承しますので、クライアントは [(IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)を使用して) このインターフェイスをクエリして、オフライン オブジェクトの **IMAPIOffline** のインターフェイス ポインターへのポインターを取得できます。 その後、クライアントはオブジェクトの現在の状態を取得または設定するか、オブジェクトのコールバック機能 **(IMAPIOffline::GetCapabilities** を呼び出して) を確認し **[、IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)** を使用してコールバックを設定できます。 
   
-このインターフェイスのメンバーは、Microsoft Outlook 2013 の内部使用のために予約されているプレースホルダーであり、変更される可能性があります。 このインターフェイスの他のメンバーは、ドキュメント化されている場合にのみ使用する必要があります。 
+このインターフェイスのメンバーは、内部で使用するために予約されたプレースホルダーであり、Microsoft Outlook 2013変更される場合があります。 このインターフェイスの他のメンバーは、ドキュメントとしてのみ使用する必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

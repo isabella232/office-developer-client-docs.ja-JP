@@ -1,5 +1,5 @@
 ---
-title: imapiformunadvise
+title: IMAPIFormUnadvise
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "32329471"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-以前に[imapiform:: アドバイズ](imapiform-advise.md)を呼び出して、フォームビューアーでの通知の登録を取り消します。
+[IMAPIForm::Advise](imapiform-advise.md)を呼び出して以前に確立されたフォーム ビューアーを使用して通知の登録をキャンセルします。
   
 ```cpp
 HRESULT Unadvise(
@@ -35,27 +35,27 @@ HRESULT Unadvise(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulconnection_
+ _ulConnection_
   
-> 順番キャンセルする通知登録を識別する接続番号。
+> [in]取り消す通知登録を識別する接続番号。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 登録は取り消されました。
+> 登録が取り消されました。
     
 E_INVALIDARG 
   
-> _ulconnection_パラメーターで渡された接続番号は、有効な登録を表していません。 
+> _ulConnection_ パラメーターで渡される接続番号は、有効な登録を表すではありません。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-フォームビューアーは、 **imapiform:: アドバイズ**メソッドを呼び出して、最初に設定された通知の登録**** を取り消します。 
+フォーム ビューアーは **IMAPIForm::Unadvise** メソッドを呼び出して **、IMAPIForm::Advise** メソッドを呼び出して最初に確立した通知の登録をキャンセルします。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-フォームビューアーの view アドバイズシンクに対して保持しているポインターを破棄するには、 [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドを呼び出します。 通常、**リリース**は、**アドバイズ**中止呼び出し中に呼び出されます。 ただし、別のスレッドが、view アドバイズシンクの[IMAPIViewAdviseSink](imapiviewadvisesinkiunknown.md)メソッドの1つを呼び出しているプロセス内にいる場合は、 **IMAPIViewAdviseSink**メソッドが戻るまで、 **Release**呼び出しを遅延させます。 
+フォーム ビューアーのビューに保持しているポインターを破棄するには、 [その IUnknown::Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) メソッドを呼び出します。 通常、 **リリースは** **Unadvise 呼び出し中に呼び出** されます。 ただし、別のスレッドがビューの IMAPIViewAdviseSink メソッドのいずれかを呼び出す過程にある場合は **、IMAPIViewAdviseSink** メソッドが返されるまで Release 呼び出しを遅延します。 [](imapiviewadvisesinkiunknown.md) 
   
 ## <a name="see-also"></a>関連項目
 

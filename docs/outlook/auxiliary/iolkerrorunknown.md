@@ -15,7 +15,7 @@ ms.locfileid: "32321855"
 ---
 # <a name="iolkerrorunknown"></a>IOlkErrorUnknown
 
-最新のエラーについての詳細情報を提供します。
+最後のエラーに関する詳細な情報を提供します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -25,15 +25,15 @@ ms.locfileid: "32321855"
 |提供元:  <br/> |クライアント  <br/> |
 |インターフェイス識別子:  <br/> |IID_IOlkErrorUnknown  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
 |[GetLastError](iolkerrorunknown-getlasterror.md) <br/> |指定したエラーのメッセージ文字列を取得します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このインターフェイスは、 [IOlkAccountManager](iolkaccountmanager.md)、 [IOlkAccountNotify](iolkaccountnotify.md)、および[IOlkAccount](iolkaccount.md)のエラーに関するその他の情報を提供します。 また、 **IOlkAccountManager**、 **IOlkAccountNotify**、および**IOlkAccount**の基本インターフェイスでもあります。 
+このインターフェイスは[、IOlkAccountManager、IOlkAccountNotify、](iolkaccountmanager.md)[および IOlkAccount](iolkaccountnotify.md)のエラーに関する詳細な[情報を提供します](iolkaccount.md)。 また **、IOlkAccountManager、IOlkAccountNotify、****および** **IOlkAccount** の基本インターフェイスです。 
   
 ## <a name="see-also"></a>関連項目
 

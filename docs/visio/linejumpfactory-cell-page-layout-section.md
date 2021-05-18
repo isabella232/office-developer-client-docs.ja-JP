@@ -28,7 +28,7 @@ ms.locfileid: "33411961"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[linejumpfactory]  <br/> |
+|セル名:  <br/> |LineJumpFactorY  <br/> |
    
 プログラムから、インデックスによって [LineJumpFactorY] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

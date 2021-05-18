@@ -36,15 +36,15 @@ _pContext_
   
 > [in]必要があります。[IOlkApptRebaser::BeginEnumerateAppointments](iolkapptrebaser-beginenumerateappointments.md)の前回の呼び出しから取得されたコンテキストへのポインター。
     
-_phresult_
+_phResult_
   
 > [out]必要があります。列挙操作の結果を取得するためには、 **HRESULT** へのポインター。 
     
-_pperror_
+_ppError_
   
 > [out]省略可能です。拡張エラー情報を取得する **MAPIERROR** 構造体へのポインターへのポインター。 
     
-_pprows_
+_ppRows_
   
 > [out]必要があります。再配置する必要がある予定を記述する[SRowSet](https://msdn.microsoft.com/library/7e3761be-afd6-46cb-9a08-25e9016c1241%28Office.15%29.aspx)構造体へのポインターへのポインター。通常、この構造体は[IOlkApptRebaser::BeginRebaseAppointments](iolkapptrebaser-beginrebaseappointments.md)に渡されます。
     

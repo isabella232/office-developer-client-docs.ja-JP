@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251469
 localization_priority: Normal
 ms.assetid: 65873b32-2406-7c33-8e68-802461f467b2
-description: logicalexpression が FALSE の場合は、TRUE (1) を返します。 それ以外の場合は、FALSE (0) を返します。
+description: 論理式が FALSE の場合は TRUE (1) を返します。 それ以外の場合は、FALSE (0) を返します。
 ms.openlocfilehash: 3359e21654bcc318caf31405093f851eca064119
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33413333"
 ---
 # <a name="not-function"></a>NOT 関数
 
-_logicalexpression_が FALSE の場合は、TRUE (1) を返します。 それ以外の場合は、FALSE (0) を返します。 
+論理式が FALSE の場合は TRUE (1)  _を_ 返します。 それ以外の場合は、FALSE (0) を返します。 
   
 ## <a name="syntax"></a>構文
 
-NOT (* * *logicalexpression* * *) 
+NOT(** *logicalexpression* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -36,8 +36,8 @@ Boolean
   
 ## <a name="example"></a>例
 
-NOT (高さ\> 0.75) 
+NOT(Height \> 0.75 in) 
   
-Height が 0.75 インチ以下の場合は、1 を返します。 Height が 0.75 インチより大きい場合は、0 を返します。 
+Height が 0.75 インチ以下の場合は、1 を返します。Height が 0.75 インチより大きい場合は、0 を返します。 
   
 
