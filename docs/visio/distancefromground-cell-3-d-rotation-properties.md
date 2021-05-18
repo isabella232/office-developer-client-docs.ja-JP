@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 87499dab-977a-45bc-9f6a-8daa80a82abb
-description: 3-d で回転したときに、オブジェクトが地上からポイント単位で発生する距離を指定します。
+description: 3-D で回転した場合に、オブジェクトが地面からポイントで上がる距離を決定します。
 ms.openlocfilehash: aa2f1629ecad234d85d4393411bd40215a671e1d
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -14,24 +14,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33405619"
 ---
-# <a name="distancefromground-cell-3-d-rotation-properties"></a><span data-ttu-id="6090b-103">[DistanceFromGround] セル ([3-D 回転のプロパティ] セクション)</span><span class="sxs-lookup"><span data-stu-id="6090b-103">DistanceFromGround Cell (3-D Rotation Properties)</span></span>
+# <a name="distancefromground-cell-3-d-rotation-properties"></a><span data-ttu-id="5c3a2-103">[DistanceFromGround] セル ([3-D 回転のプロパティ] セクション)</span><span class="sxs-lookup"><span data-stu-id="5c3a2-103">DistanceFromGround Cell (3-D Rotation Properties)</span></span>
 
-<span data-ttu-id="6090b-104">3-d で回転したときに、オブジェクトが地上からポイント単位で発生する距離を指定します。</span><span class="sxs-lookup"><span data-stu-id="6090b-104">Determines the distance the object is raised from the ground in points when rotated in 3-D.</span></span>
+<span data-ttu-id="5c3a2-104">3-D で回転した場合に、オブジェクトが地面からポイントで上がる距離を決定します。</span><span class="sxs-lookup"><span data-stu-id="5c3a2-104">Determines the distance the object is raised from the ground in points when rotated in 3-D.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="6090b-105">注釈</span><span class="sxs-lookup"><span data-stu-id="6090b-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5c3a2-105">注釈</span><span class="sxs-lookup"><span data-stu-id="5c3a2-105">Remarks</span></span>
 
-<span data-ttu-id="6090b-106">別の数式から、 **cell**要素の**N**属性の値によって、または**CellsU**プロパティを使用したプログラムから、名前によって [ **[distancefromground]** ] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="6090b-106">To get a reference to the **DistanceFromGround** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="5c3a2-106">別の数式 **、Cell** 要素の **N** 属性の値、または **CellsU** プロパティを使用したプログラムから、名前によって **DistanceFromGround** セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="5c3a2-106">To get a reference to the **DistanceFromGround** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="6090b-107">セル名:</span><span class="sxs-lookup"><span data-stu-id="6090b-107">Cell name:</span></span>  <br/> |<span data-ttu-id="6090b-108">[distancefromground]</span><span class="sxs-lookup"><span data-stu-id="6090b-108">DistanceFromGround</span></span>  <br/> |
+|<span data-ttu-id="5c3a2-107">セル名:</span><span class="sxs-lookup"><span data-stu-id="5c3a2-107">Cell name:</span></span>  <br/> |<span data-ttu-id="5c3a2-108">DistanceFromGround</span><span class="sxs-lookup"><span data-stu-id="5c3a2-108">DistanceFromGround</span></span>  <br/> |
    
-<span data-ttu-id="6090b-109">プログラムから、インデックスによって [ **[distancefromground]** ] セルへの参照を取得するには、 **CellsSRC**プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="6090b-109">To get a reference to the **DistanceFromGround** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="5c3a2-109">プログラムからインデックスによって **DistanceFromGround** セルへの参照を取得するには **、CellsSRC** プロパティを使用して、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="5c3a2-109">To get a reference to the **DistanceFromGround** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="6090b-110">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="6090b-110">Section index:</span></span>  <br/> |<span data-ttu-id="6090b-111">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="6090b-111">**visSectionObject**</span></span> <br/> |
-|<span data-ttu-id="6090b-112">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="6090b-112">Row index:</span></span>  <br/> |<span data-ttu-id="6090b-113">**visRow3DRotationProperties**</span><span class="sxs-lookup"><span data-stu-id="6090b-113">**visRow3DRotationProperties**</span></span> <br/> |
-|<span data-ttu-id="6090b-114">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="6090b-114">Cell index:</span></span>  <br/> |<span data-ttu-id="6090b-115">**visDistanceFromGround**</span><span class="sxs-lookup"><span data-stu-id="6090b-115">**visDistanceFromGround**</span></span> <br/> |
+|<span data-ttu-id="5c3a2-110">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="5c3a2-110">Section index:</span></span>  <br/> |<span data-ttu-id="5c3a2-111">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="5c3a2-111">**visSectionObject**</span></span> <br/> |
+|<span data-ttu-id="5c3a2-112">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="5c3a2-112">Row index:</span></span>  <br/> |<span data-ttu-id="5c3a2-113">**visRow3DRotationProperties**</span><span class="sxs-lookup"><span data-stu-id="5c3a2-113">**visRow3DRotationProperties**</span></span> <br/> |
+|<span data-ttu-id="5c3a2-114">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="5c3a2-114">Cell index:</span></span>  <br/> |<span data-ttu-id="5c3a2-115">**visDistanceFromGround**</span><span class="sxs-lookup"><span data-stu-id="5c3a2-115">**visDistanceFromGround**</span></span> <br/> |
    
 

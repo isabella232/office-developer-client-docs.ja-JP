@@ -15,10 +15,10 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33405962"
 ---
-# <a name="improving-client-performance"></a><span data-ttu-id="48f34-103">クライアント パフォーマンスの向上</span><span class="sxs-lookup"><span data-stu-id="48f34-103">Improving client performance</span></span>
+# <a name="improving-client-performance"></a><span data-ttu-id="d5bfa-103">クライアント パフォーマンスの向上</span><span class="sxs-lookup"><span data-stu-id="d5bfa-103">Improving client performance</span></span>
  
-<span data-ttu-id="48f34-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="48f34-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="d5bfa-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="d5bfa-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="48f34-105">このセクションのトピックには、最適なパフォーマンスを備えたクライアントアプリケーションの作成に役立つヒントが記載されています。</span><span class="sxs-lookup"><span data-stu-id="48f34-105">The topics in this section contain tips that help you create a client application with the best possible performance.</span></span>
+<span data-ttu-id="d5bfa-105">このセクションのトピックには、可能な限り最高のパフォーマンスを備えるクライアント アプリケーションを作成するためのヒントが含まれています。</span><span class="sxs-lookup"><span data-stu-id="d5bfa-105">The topics in this section contain tips that help you create a client application with the best possible performance.</span></span>
   
 

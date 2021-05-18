@@ -19,13 +19,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33407110"
 ---
-# <a name="ipstxgetsyncobject"></a><span data-ttu-id="fa9d4-103">IPSTX::GetSyncObject</span><span class="sxs-lookup"><span data-stu-id="fa9d4-103">IPSTX::GetSyncObject</span></span>
+# <a name="ipstxgetsyncobject"></a><span data-ttu-id="89e49-103">IPSTX::GetSyncObject</span><span class="sxs-lookup"><span data-stu-id="89e49-103">IPSTX::GetSyncObject</span></span>
 
   
   
-<span data-ttu-id="fa9d4-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="fa9d4-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="89e49-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="89e49-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="fa9d4-105">同期セッションを開始し、関連付けられた**[iostx](iostxiunknown.md)** インターフェイスを取得します。</span><span class="sxs-lookup"><span data-stu-id="fa9d4-105">Starts a synchronization session and gets the associated **[IOSTX](iostxiunknown.md)** interface.</span></span> 
+<span data-ttu-id="89e49-105">同期セッションを開始し、関連付けられた **[IOSTX インターフェイスを取得](iostxiunknown.md)** します。</span><span class="sxs-lookup"><span data-stu-id="89e49-105">Starts a synchronization session and gets the associated **[IOSTX](iostxiunknown.md)** interface.</span></span> 
   
 ```cpp
 HRESULT GetSyncObject( 
@@ -33,21 +33,21 @@ HRESULT GetSyncObject(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="fa9d4-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="fa9d4-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="89e49-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="89e49-106">Parameters</span></span>
 
- <span data-ttu-id="fa9d4-107">_ppostx_</span><span class="sxs-lookup"><span data-stu-id="fa9d4-107">_ppostx_</span></span>
+ <span data-ttu-id="89e49-107">_ppostx_</span><span class="sxs-lookup"><span data-stu-id="89e49-107">_ppostx_</span></span>
   
->  <span data-ttu-id="fa9d4-108">読み上げ取得する**iostx**インターフェイスへのポインター。</span><span class="sxs-lookup"><span data-stu-id="fa9d4-108">[out] Pointer to the **IOSTX** interface to get.</span></span> 
+>  <span data-ttu-id="89e49-108">[out]取得する **IOSTX** インターフェイスへのポインター。</span><span class="sxs-lookup"><span data-stu-id="89e49-108">[out] Pointer to the **IOSTX** interface to get.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="fa9d4-109">注釈</span><span class="sxs-lookup"><span data-stu-id="fa9d4-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="89e49-109">注釈</span><span class="sxs-lookup"><span data-stu-id="89e49-109">Remarks</span></span>
 
-<span data-ttu-id="fa9d4-110">呼び出し元は、同じフォルダーが複数のスレッドで同時に同期されないようにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="fa9d4-110">The caller must ensure that the same folder is not synchronized at the same time on more than one thread.</span></span>
+<span data-ttu-id="89e49-110">呼び出し元は、同じフォルダーが複数のスレッドで同時に同期されない必要があります。</span><span class="sxs-lookup"><span data-stu-id="89e49-110">The caller must ensure that the same folder is not synchronized at the same time on more than one thread.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="fa9d4-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="fa9d4-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="89e49-111">関連項目</span><span class="sxs-lookup"><span data-stu-id="89e49-111">See also</span></span>
 
 
 
-[<span data-ttu-id="fa9d4-112">IPSTX::EmulateSpooler</span><span class="sxs-lookup"><span data-stu-id="fa9d4-112">IPSTX::EmulateSpooler</span></span>](ipstx-emulatespooler.md)
+[<span data-ttu-id="89e49-112">IPSTX::EmulateSpooler</span><span class="sxs-lookup"><span data-stu-id="89e49-112">IPSTX::EmulateSpooler</span></span>](ipstx-emulatespooler.md)
   
-[<span data-ttu-id="fa9d4-113">IPSTX::GetLastError</span><span class="sxs-lookup"><span data-stu-id="fa9d4-113">IPSTX::GetLastError</span></span>](ipstx-getlasterror.md)
+[<span data-ttu-id="89e49-113">IPSTX::GetLastError</span><span class="sxs-lookup"><span data-stu-id="89e49-113">IPSTX::GetLastError</span></span>](ipstx-getlasterror.md)
 

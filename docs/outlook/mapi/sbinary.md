@@ -19,17 +19,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33407845"
 ---
-# <a name="sbinary"></a><span data-ttu-id="7b854-103">SBinary</span><span class="sxs-lookup"><span data-stu-id="7b854-103">SBinary</span></span>
+# <a name="sbinary"></a><span data-ttu-id="5d4b4-103">SBinary</span><span class="sxs-lookup"><span data-stu-id="5d4b4-103">SBinary</span></span>
 
   
   
-<span data-ttu-id="7b854-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="7b854-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="5d4b4-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="5d4b4-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="7b854-105">PT_BINARY 型のプロパティについて説明します。</span><span class="sxs-lookup"><span data-stu-id="7b854-105">Describes a property of type PT_BINARY.</span></span>
+<span data-ttu-id="5d4b4-105">型のプロパティをPT_BINARY。</span><span class="sxs-lookup"><span data-stu-id="5d4b4-105">Describes a property of type PT_BINARY.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="7b854-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="7b854-106">Header file:</span></span>  <br/> |<span data-ttu-id="7b854-107">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="7b854-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="5d4b4-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="5d4b4-106">Header file:</span></span>  <br/> |<span data-ttu-id="5d4b4-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="5d4b4-107">Mapidefs.h</span></span>  <br/> |
    
 ```cpp
 typedef struct _SBinary
@@ -40,26 +40,26 @@ typedef struct _SBinary
 
 ```
 
-## <a name="members"></a><span data-ttu-id="7b854-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="7b854-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="5d4b4-108">Members</span><span class="sxs-lookup"><span data-stu-id="5d4b4-108">Members</span></span>
 
- <span data-ttu-id="7b854-109">**cb**</span><span class="sxs-lookup"><span data-stu-id="7b854-109">**cb**</span></span>
+ <span data-ttu-id="5d4b4-109">**cb**</span><span class="sxs-lookup"><span data-stu-id="5d4b4-109">**cb**</span></span>
   
-> <span data-ttu-id="7b854-110">**lpb**メンバーのバイト数。</span><span class="sxs-lookup"><span data-stu-id="7b854-110">Count of bytes in the **lpb** member.</span></span> 
+> <span data-ttu-id="5d4b4-110">**lpb** メンバー内のバイト数。</span><span class="sxs-lookup"><span data-stu-id="5d4b4-110">Count of bytes in the **lpb** member.</span></span> 
     
- <span data-ttu-id="7b854-111">**lpb**</span><span class="sxs-lookup"><span data-stu-id="7b854-111">**lpb**</span></span>
+ <span data-ttu-id="5d4b4-111">**lpb**</span><span class="sxs-lookup"><span data-stu-id="5d4b4-111">**lpb**</span></span>
   
-> <span data-ttu-id="7b854-112">PT_BINARY プロパティの値へのポインター。</span><span class="sxs-lookup"><span data-stu-id="7b854-112">Pointer to the PT_BINARY property value.</span></span>
+> <span data-ttu-id="5d4b4-112">プロパティ値PT_BINARYポインター。</span><span class="sxs-lookup"><span data-stu-id="5d4b4-112">Pointer to the PT_BINARY property value.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="7b854-113">注釈</span><span class="sxs-lookup"><span data-stu-id="7b854-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5d4b4-113">注釈</span><span class="sxs-lookup"><span data-stu-id="5d4b4-113">Remarks</span></span>
 
-<span data-ttu-id="7b854-114">プロパティの種類の詳細については、「 [MAPI プロパティの種類の概要](mapi-property-type-overview.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7b854-114">For information about property types, see [MAPI Property Type Overview](mapi-property-type-overview.md).</span></span>
+<span data-ttu-id="5d4b4-114">プロパティの種類の詳細については [、「MAPI プロパティの種類の概要」を参照してください](mapi-property-type-overview.md)。</span><span class="sxs-lookup"><span data-stu-id="5d4b4-114">For information about property types, see [MAPI Property Type Overview](mapi-property-type-overview.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="7b854-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="7b854-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5d4b4-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="5d4b4-115">See also</span></span>
 
 
 
-[<span data-ttu-id="7b854-116">SPropValue</span><span class="sxs-lookup"><span data-stu-id="7b854-116">SPropValue</span></span>](spropvalue.md)
+[<span data-ttu-id="5d4b4-116">SPropValue</span><span class="sxs-lookup"><span data-stu-id="5d4b4-116">SPropValue</span></span>](spropvalue.md)
 
 
-[<span data-ttu-id="7b854-117">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="7b854-117">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="5d4b4-117">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="5d4b4-117">MAPI Structures</span></span>](mapi-structures.md)
 

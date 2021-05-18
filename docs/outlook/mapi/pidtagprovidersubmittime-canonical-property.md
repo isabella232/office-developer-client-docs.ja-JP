@@ -19,48 +19,48 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33409021"
 ---
-# <a name="pidtagprovidersubmittime-canonical-property"></a><span data-ttu-id="61630-103">PidTagProviderSubmitTime 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="61630-103">PidTagProviderSubmitTime Canonical Property</span></span>
+# <a name="pidtagprovidersubmittime-canonical-property"></a><span data-ttu-id="49cec-103">PidTagProviderSubmitTime 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="49cec-103">PidTagProviderSubmitTime Canonical Property</span></span>
 
   
   
-<span data-ttu-id="61630-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="61630-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="49cec-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="49cec-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="61630-105">トランスポートプロバイダーが、基になるメッセージングシステムにメッセージを渡した日時を格納します。</span><span class="sxs-lookup"><span data-stu-id="61630-105">Contains the date and time a transport provider passed a message to its underlying messaging system.</span></span>
+<span data-ttu-id="49cec-105">トランスポート プロバイダーが基になるメッセージング システムにメッセージを渡した日時を格納します。</span><span class="sxs-lookup"><span data-stu-id="49cec-105">Contains the date and time a transport provider passed a message to its underlying messaging system.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="61630-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="61630-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="61630-107">PR_PROVIDER_SUBMIT_TIME</span><span class="sxs-lookup"><span data-stu-id="61630-107">PR_PROVIDER_SUBMIT_TIME</span></span>  <br/> |
-|<span data-ttu-id="61630-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="61630-108">Identifier:</span></span>  <br/> |<span data-ttu-id="61630-109">0x0048</span><span class="sxs-lookup"><span data-stu-id="61630-109">0x0048</span></span>  <br/> |
-|<span data-ttu-id="61630-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="61630-110">Data type:</span></span>  <br/> |<span data-ttu-id="61630-111">PT_SYSTIME</span><span class="sxs-lookup"><span data-stu-id="61630-111">PT_SYSTIME</span></span>  <br/> |
-|<span data-ttu-id="61630-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="61630-112">Area:</span></span>  <br/> |<span data-ttu-id="61630-113">MAPI エンベロープ</span><span class="sxs-lookup"><span data-stu-id="61630-113">MAPI envelope</span></span>  <br/> |
+|<span data-ttu-id="49cec-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="49cec-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="49cec-107">PR_PROVIDER_SUBMIT_TIME</span><span class="sxs-lookup"><span data-stu-id="49cec-107">PR_PROVIDER_SUBMIT_TIME</span></span>  <br/> |
+|<span data-ttu-id="49cec-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="49cec-108">Identifier:</span></span>  <br/> |<span data-ttu-id="49cec-109">0x0048</span><span class="sxs-lookup"><span data-stu-id="49cec-109">0x0048</span></span>  <br/> |
+|<span data-ttu-id="49cec-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="49cec-110">Data type:</span></span>  <br/> |<span data-ttu-id="49cec-111">PT_SYSTIME</span><span class="sxs-lookup"><span data-stu-id="49cec-111">PT_SYSTIME</span></span>  <br/> |
+|<span data-ttu-id="49cec-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="49cec-112">Area:</span></span>  <br/> |<span data-ttu-id="49cec-113">MAPI 封筒</span><span class="sxs-lookup"><span data-stu-id="49cec-113">MAPI envelope</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="61630-114">注釈</span><span class="sxs-lookup"><span data-stu-id="61630-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="49cec-114">注釈</span><span class="sxs-lookup"><span data-stu-id="49cec-114">Remarks</span></span>
 
-<span data-ttu-id="61630-115">このプロパティは、メッセージの送信時に、送信トランスポートプロバイダーによって設定されます。</span><span class="sxs-lookup"><span data-stu-id="61630-115">This property is set by the outgoing transport provider at the time a message is sent.</span></span>
+<span data-ttu-id="49cec-115">このプロパティは、メッセージの送信時に送信トランスポート プロバイダーによって設定されます。</span><span class="sxs-lookup"><span data-stu-id="49cec-115">This property is set by the outgoing transport provider at the time a message is sent.</span></span>
   
-<span data-ttu-id="61630-116">このプロパティは、メッセージごとの400送信エンベロープ属性に対応します。</span><span class="sxs-lookup"><span data-stu-id="61630-116">This property corresponds to an X.400 submission envelope per-message attribute.</span></span> 
+<span data-ttu-id="49cec-116">このプロパティは、X.400 送信エンベロープのメッセージごとの属性に対応します。</span><span class="sxs-lookup"><span data-stu-id="49cec-116">This property corresponds to an X.400 submission envelope per-message attribute.</span></span> 
   
-## <a name="related-resources"></a><span data-ttu-id="61630-117">関連リソース</span><span class="sxs-lookup"><span data-stu-id="61630-117">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="49cec-117">関連リソース</span><span class="sxs-lookup"><span data-stu-id="49cec-117">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="61630-118">ヘッダーファイル</span><span class="sxs-lookup"><span data-stu-id="61630-118">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="49cec-118">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="49cec-118">Header files</span></span>
 
-<span data-ttu-id="61630-119">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="61630-119">Mapidefs.h</span></span>
+<span data-ttu-id="49cec-119">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="49cec-119">Mapidefs.h</span></span>
   
-> <span data-ttu-id="61630-120">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="61630-120">Provides data type definitions.</span></span>
+> <span data-ttu-id="49cec-120">データ型の定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="49cec-120">Provides data type definitions.</span></span>
     
-<span data-ttu-id="61630-121">Mapitags</span><span class="sxs-lookup"><span data-stu-id="61630-121">Mapitags.h</span></span>
+<span data-ttu-id="49cec-121">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="49cec-121">Mapitags.h</span></span>
   
-> <span data-ttu-id="61630-122">代替名としてリストされているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="61630-122">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="49cec-122">代替名として一覧表示されるプロパティの定義が含まれる。</span><span class="sxs-lookup"><span data-stu-id="49cec-122">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="61630-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="61630-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="49cec-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="49cec-123">See also</span></span>
 
 
 
-[<span data-ttu-id="61630-124">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="61630-124">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="49cec-124">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="49cec-124">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="61630-125">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="61630-125">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="49cec-125">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="49cec-125">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="61630-126">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="61630-126">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="49cec-126">標準プロパティ名を MAPI 名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="49cec-126">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="61630-127">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="61630-127">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="49cec-127">MAPI 名を標準プロパティ名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="49cec-127">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

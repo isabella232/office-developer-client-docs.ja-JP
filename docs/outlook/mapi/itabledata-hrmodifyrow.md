@@ -1,5 +1,5 @@
 ---
-title: itabledatahrmodifyrow
+title: ITableDataHrModifyRow
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33409000"
 ---
-# <a name="itabledatahrmodifyrow"></a><span data-ttu-id="02044-103">ITableData::HrModifyRow</span><span class="sxs-lookup"><span data-stu-id="02044-103">ITableData::HrModifyRow</span></span>
+# <a name="itabledatahrmodifyrow"></a><span data-ttu-id="16145-103">ITableData::HrModifyRow</span><span class="sxs-lookup"><span data-stu-id="16145-103">ITableData::HrModifyRow</span></span>
 
   
   
-<span data-ttu-id="02044-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="02044-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="16145-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="16145-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="02044-105">既存の行を置き換える可能性がある新しいテーブル行を挿入します。</span><span class="sxs-lookup"><span data-stu-id="02044-105">Inserts a new table row, possibly replacing an existing row.</span></span>
+<span data-ttu-id="16145-105">新しいテーブル行を挿入し、既存の行を置き換える可能性があります。</span><span class="sxs-lookup"><span data-stu-id="16145-105">Inserts a new table row, possibly replacing an existing row.</span></span>
   
 ```cpp
 HRESULT HrModifyRow(
@@ -33,39 +33,39 @@ HRESULT HrModifyRow(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="02044-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="02044-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="16145-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="16145-106">Parameters</span></span>
 
- <span data-ttu-id="02044-107">_lpsrow_</span><span class="sxs-lookup"><span data-stu-id="02044-107">_lpSRow_</span></span>
+ <span data-ttu-id="16145-107">_lpSRow_</span><span class="sxs-lookup"><span data-stu-id="16145-107">_lpSRow_</span></span>
   
-> <span data-ttu-id="02044-108">順番追加する行を記述する[srow](srow.md)構造体へのポインター、または既存の行を置換するためのポインター。</span><span class="sxs-lookup"><span data-stu-id="02044-108">[in] A pointer to an [SRow](srow.md) structure that describes the row to be added or to replace an existing row.</span></span> <span data-ttu-id="02044-109">**srow**構造の**lpprops**メンバーによって参照されるプロパティ値構造の1つに、インデックス列、CreateTable への呼び出しで_ulPropTagIndexColumn_パラメーターで指定したものと同じ値が含まれている必要があります。 [](createtable.md)関数。</span><span class="sxs-lookup"><span data-stu-id="02044-109">One of the property value structures pointed to by the **lpProps** member of the **SRow** structure should contain the index column, the same value that was specified in the  _ulPropTagIndexColumn_ parameter in the call to the [CreateTable](createtable.md) function.</span></span> 
+> <span data-ttu-id="16145-108">[in]追加する行または既存の行を置き換える [SRow](srow.md) 構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="16145-108">[in] A pointer to an [SRow](srow.md) structure that describes the row to be added or to replace an existing row.</span></span> <span data-ttu-id="16145-109">**SRow** 構造体の **lpProps** メンバーが指すプロパティ値構造体の 1 つは [、CreateTable](createtable.md)関数の呼び出しで _ulPropTagIndexColumn_ パラメーターで指定されたのと同じ値のインデックス列を含む必要があります。</span><span class="sxs-lookup"><span data-stu-id="16145-109">One of the property value structures pointed to by the **lpProps** member of the **SRow** structure should contain the index column, the same value that was specified in the  _ulPropTagIndexColumn_ parameter in the call to the [CreateTable](createtable.md) function.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="02044-110">戻り値</span><span class="sxs-lookup"><span data-stu-id="02044-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="16145-110">戻り値</span><span class="sxs-lookup"><span data-stu-id="16145-110">Return value</span></span>
 
-<span data-ttu-id="02044-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="02044-111">S_OK</span></span> 
+<span data-ttu-id="16145-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="16145-111">S_OK</span></span> 
   
-> <span data-ttu-id="02044-112">行が正常に挿入または変更されました。</span><span class="sxs-lookup"><span data-stu-id="02044-112">The row was successfully inserted or modified.</span></span>
+> <span data-ttu-id="16145-112">行が正常に挿入または変更されました。</span><span class="sxs-lookup"><span data-stu-id="16145-112">The row was successfully inserted or modified.</span></span>
     
-<span data-ttu-id="02044-113">MAPI_E_INVALID_PARAMETER</span><span class="sxs-lookup"><span data-stu-id="02044-113">MAPI_E_INVALID_PARAMETER</span></span> 
+<span data-ttu-id="16145-113">MAPI_E_INVALID_PARAMETER</span><span class="sxs-lookup"><span data-stu-id="16145-113">MAPI_E_INVALID_PARAMETER</span></span> 
   
-> <span data-ttu-id="02044-114">渡された行にインデックス列がありません。</span><span class="sxs-lookup"><span data-stu-id="02044-114">The passed-in row does not have an index column.</span></span>
+> <span data-ttu-id="16145-114">渡された行にはインデックス列が含めではありません。</span><span class="sxs-lookup"><span data-stu-id="16145-114">The passed-in row does not have an index column.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="02044-115">注釈</span><span class="sxs-lookup"><span data-stu-id="02044-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="16145-115">注釈</span><span class="sxs-lookup"><span data-stu-id="16145-115">Remarks</span></span>
 
-<span data-ttu-id="02044-116">**itabledata:: hrmodifyrow**メソッドは、 _lpsrow_パラメーターで指定された**srow**構造によって示される行を挿入します。</span><span class="sxs-lookup"><span data-stu-id="02044-116">The **ITableData::HrModifyRow** method inserts the row described by the **SRow** structure pointed to by the  _lpSRow_ parameter.</span></span> <span data-ttu-id="02044-117">テーブル内に既に存在する_lpsrow_と同じ値のインデックス列の行がある場合、既存の行は置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="02044-117">If a row that has the same value for its index column as the row that  _lpSRow_ points to already exists in the table, the existing row is replaced.</span></span> <span data-ttu-id="02044-118">**srow**構造に含まれるものと一致する行が存在しない場合、 **hrmodifyrow**はテーブルの末尾に行を追加します。</span><span class="sxs-lookup"><span data-stu-id="02044-118">If no row exists that matches the one included in the **SRow** structure, **HrModifyRow** adds the row to the end of the table.</span></span> 
+<span data-ttu-id="16145-116">**ITableData::HrModifyRow** メソッドは _、lpSRow_ パラメーターが指す **SRow** 構造で記述された行を挿入します。</span><span class="sxs-lookup"><span data-stu-id="16145-116">The **ITableData::HrModifyRow** method inserts the row described by the **SRow** structure pointed to by the  _lpSRow_ parameter.</span></span> <span data-ttu-id="16145-117">インデックス列の値が  _lpSRow_ が示す行と同じ値を持つ行がテーブルに既に存在する場合、既存の行が置き換えられる。</span><span class="sxs-lookup"><span data-stu-id="16145-117">If a row that has the same value for its index column as the row that  _lpSRow_ points to already exists in the table, the existing row is replaced.</span></span> <span data-ttu-id="16145-118">**SRow** 構造に含まれる行と一致する行が存在しない場合 **、HrModifyRow** は行をテーブルの末尾に追加します。</span><span class="sxs-lookup"><span data-stu-id="16145-118">If no row exists that matches the one included in the **SRow** structure, **HrModifyRow** adds the row to the end of the table.</span></span> 
   
-<span data-ttu-id="02044-119">テーブルのすべてのビューが変更され、 _lpsrow_によって示される行が含まれるようになります。</span><span class="sxs-lookup"><span data-stu-id="02044-119">All views of the table are modified to include the row pointed to by  _lpSRow_.</span></span> <span data-ttu-id="02044-120">ただし、その行を除外する制限がビューにある場合は、ユーザーに表示されないことがあります。</span><span class="sxs-lookup"><span data-stu-id="02044-120">However, if a view has a restriction in place that excludes the row, it may not be visible to the user.</span></span> 
+<span data-ttu-id="16145-119">テーブルのすべてのビューが変更され  _、lpSRow_ が指す行が含まれます。</span><span class="sxs-lookup"><span data-stu-id="16145-119">All views of the table are modified to include the row pointed to by  _lpSRow_.</span></span> <span data-ttu-id="16145-120">ただし、ビューに行を除外する制限がある場合は、ユーザーに表示されない場合があります。</span><span class="sxs-lookup"><span data-stu-id="16145-120">However, if a view has a restriction in place that excludes the row, it may not be visible to the user.</span></span> 
   
-<span data-ttu-id="02044-121">_lpsrow_によって参照される行の列は、テーブル内の列と同じ順序である必要はありません。</span><span class="sxs-lookup"><span data-stu-id="02044-121">The columns in the row pointed to by  _lpSRow_ do not have to be in the same order as the columns in the table.</span></span> <span data-ttu-id="02044-122">また、呼び出し元には、現在テーブルにない列のプロパティを含めることもできます。</span><span class="sxs-lookup"><span data-stu-id="02044-122">The caller can also include as columns properties that are not currently in the table.</span></span> <span data-ttu-id="02044-123">既存のビューの場合、 **hrmodifyrow**によって、これらの新しい列が使用可能になりますが、現在の列のセットには含まれません。</span><span class="sxs-lookup"><span data-stu-id="02044-123">For existing views, **HrModifyRow** makes these new columns available but does not include them in the current column set.</span></span> <span data-ttu-id="02044-124">今後のビューの場合、 **hrmodifyrow**には列セットの新しい列が含まれます。</span><span class="sxs-lookup"><span data-stu-id="02044-124">For future views, **HrModifyRow** includes the new columns in the column set.</span></span> 
+<span data-ttu-id="16145-121">_lpSRow_ が指す行の列は、テーブル内の列と同じ順序である必要があります。</span><span class="sxs-lookup"><span data-stu-id="16145-121">The columns in the row pointed to by  _lpSRow_ do not have to be in the same order as the columns in the table.</span></span> <span data-ttu-id="16145-122">呼び出し元は、現在テーブルに含めされていない列プロパティとして含めすることもできます。</span><span class="sxs-lookup"><span data-stu-id="16145-122">The caller can also include as columns properties that are not currently in the table.</span></span> <span data-ttu-id="16145-123">既存のビューの **場合、HrModifyRow** は新しい列を使用できますが、現在の列セットには含められません。</span><span class="sxs-lookup"><span data-stu-id="16145-123">For existing views, **HrModifyRow** makes these new columns available but does not include them in the current column set.</span></span> <span data-ttu-id="16145-124">今後のビューでは **、HrModifyRow には** 列セットに新しい列が含まれます。</span><span class="sxs-lookup"><span data-stu-id="16145-124">For future views, **HrModifyRow** includes the new columns in the column set.</span></span> 
   
-<span data-ttu-id="02044-125">**hrmodifyrow**が行を追加すると、テーブルのビューを持つすべてのクライアントまたはサービスプロバイダーに通知が送信され、通知を登録するためにテーブルの[IMAPITable:: Advise](imapitable-advise.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="02044-125">After **HrModifyRow** adds the row, notifications are sent to all clients or service providers that have a view of the table and that have called the table's [IMAPITable::Advise](imapitable-advise.md) method to register for notifications.</span></span> 
+<span data-ttu-id="16145-125">**HrModifyRow** が行を追加すると、テーブルのビューを持ち、テーブルの [IMAPITable::Advise](imapitable-advise.md)メソッドを呼び出して通知を登録しているすべてのクライアントまたはサービス プロバイダーに通知が送信されます。</span><span class="sxs-lookup"><span data-stu-id="16145-125">After **HrModifyRow** adds the row, notifications are sent to all clients or service providers that have a view of the table and that have called the table's [IMAPITable::Advise](imapitable-advise.md) method to register for notifications.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="02044-126">関連項目</span><span class="sxs-lookup"><span data-stu-id="02044-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="16145-126">関連項目</span><span class="sxs-lookup"><span data-stu-id="16145-126">See also</span></span>
 
 
 
-[<span data-ttu-id="02044-127">SRow</span><span class="sxs-lookup"><span data-stu-id="02044-127">SRow</span></span>](srow.md)
+[<span data-ttu-id="16145-127">SRow</span><span class="sxs-lookup"><span data-stu-id="16145-127">SRow</span></span>](srow.md)
   
-[<span data-ttu-id="02044-128">TABLE_NOTIFICATION</span><span class="sxs-lookup"><span data-stu-id="02044-128">TABLE_NOTIFICATION</span></span>](table_notification.md)
+[<span data-ttu-id="16145-128">TABLE_NOTIFICATION</span><span class="sxs-lookup"><span data-stu-id="16145-128">TABLE_NOTIFICATION</span></span>](table_notification.md)
   
-[<span data-ttu-id="02044-129">ITableData : IUnknown</span><span class="sxs-lookup"><span data-stu-id="02044-129">ITableData : IUnknown</span></span>](itabledataiunknown.md)
+[<span data-ttu-id="16145-129">ITableData : IUnknown</span><span class="sxs-lookup"><span data-stu-id="16145-129">ITableData : IUnknown</span></span>](itabledataiunknown.md)
 

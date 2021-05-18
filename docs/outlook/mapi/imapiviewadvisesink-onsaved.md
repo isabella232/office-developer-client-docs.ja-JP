@@ -19,37 +19,37 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33407607"
 ---
-# <a name="imapiviewadvisesinkonsaved"></a><span data-ttu-id="e2b3f-103">IMAPIViewAdviseSink::OnSaved</span><span class="sxs-lookup"><span data-stu-id="e2b3f-103">IMAPIViewAdviseSink::OnSaved</span></span>
+# <a name="imapiviewadvisesinkonsaved"></a><span data-ttu-id="6a08a-103">IMAPIViewAdviseSink::OnSaved</span><span class="sxs-lookup"><span data-stu-id="6a08a-103">IMAPIViewAdviseSink::OnSaved</span></span>
 
   
   
-<span data-ttu-id="e2b3f-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="e2b3f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="6a08a-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="6a08a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="e2b3f-105">フォームの現在のメッセージが保存されたことをフォームビューアーに通知します。</span><span class="sxs-lookup"><span data-stu-id="e2b3f-105">Notifies the form viewer that the current message in a form has been saved.</span></span>
+<span data-ttu-id="6a08a-105">フォームの現在のメッセージが保存されたとフォーム ビューアーに通知します。</span><span class="sxs-lookup"><span data-stu-id="6a08a-105">Notifies the form viewer that the current message in a form has been saved.</span></span>
   
 ```cpp
 HRESULT OnSaved( void );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="e2b3f-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="e2b3f-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="6a08a-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="6a08a-106">Parameters</span></span>
 
-<span data-ttu-id="e2b3f-107">なし</span><span class="sxs-lookup"><span data-stu-id="e2b3f-107">None</span></span>
+<span data-ttu-id="6a08a-107">なし</span><span class="sxs-lookup"><span data-stu-id="6a08a-107">None</span></span>
   
-## <a name="return-value"></a><span data-ttu-id="e2b3f-108">戻り値</span><span class="sxs-lookup"><span data-stu-id="e2b3f-108">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="6a08a-108">戻り値</span><span class="sxs-lookup"><span data-stu-id="6a08a-108">Return value</span></span>
 
-<span data-ttu-id="e2b3f-109">S_OK</span><span class="sxs-lookup"><span data-stu-id="e2b3f-109">S_OK</span></span> 
+<span data-ttu-id="6a08a-109">S_OK</span><span class="sxs-lookup"><span data-stu-id="6a08a-109">S_OK</span></span> 
   
-> <span data-ttu-id="e2b3f-110">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="e2b3f-110">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="6a08a-110">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="6a08a-110">The call succeeded and has returned the expected value or values.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="e2b3f-111">注釈</span><span class="sxs-lookup"><span data-stu-id="e2b3f-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6a08a-111">注釈</span><span class="sxs-lookup"><span data-stu-id="6a08a-111">Remarks</span></span>
 
-<span data-ttu-id="e2b3f-112">form オブジェクトは、フォーム内の現在のメッセージが正常に保存された後に、 **IMAPIViewAdviseSink:: onsaved**メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="e2b3f-112">A form object calls the **IMAPIViewAdviseSink::OnSaved** method after the current message in a form has been successfully saved.</span></span> <span data-ttu-id="e2b3f-113">これにより、閲覧者は、メッセージの変更を反映するように windows を更新することができます。</span><span class="sxs-lookup"><span data-stu-id="e2b3f-113">Doing so permits viewers to update their windows to reflect changes to the message.</span></span> 
+<span data-ttu-id="6a08a-112">フォーム オブジェクトは、フォーム内の現在のメッセージが正常に保存された後 **、IMAPIViewAdviseSink::OnSaved** メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="6a08a-112">A form object calls the **IMAPIViewAdviseSink::OnSaved** method after the current message in a form has been successfully saved.</span></span> <span data-ttu-id="6a08a-113">これにより、閲覧者はメッセージの変更を反映するようにウィンドウを更新できます。</span><span class="sxs-lookup"><span data-stu-id="6a08a-113">Doing so permits viewers to update their windows to reflect changes to the message.</span></span> 
   
-<span data-ttu-id="e2b3f-114">フォーム通知の詳細については、「[フォーム通知の送信と受信](sending-and-receiving-form-notifications.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e2b3f-114">For more information about form notifications, see [Sending and Receiving Form Notifications](sending-and-receiving-form-notifications.md).</span></span>
+<span data-ttu-id="6a08a-114">フォーム通知の詳細については、「フォーム通知の送受信 [」を参照してください](sending-and-receiving-form-notifications.md)。</span><span class="sxs-lookup"><span data-stu-id="6a08a-114">For more information about form notifications, see [Sending and Receiving Form Notifications](sending-and-receiving-form-notifications.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="e2b3f-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="e2b3f-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6a08a-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="6a08a-115">See also</span></span>
 
 
 
-[<span data-ttu-id="e2b3f-116">IMAPIViewAdviseSink : IUnknown</span><span class="sxs-lookup"><span data-stu-id="e2b3f-116">IMAPIViewAdviseSink : IUnknown</span></span>](imapiviewadvisesinkiunknown.md)
+[<span data-ttu-id="6a08a-116">IMAPIViewAdviseSink : IUnknown</span><span class="sxs-lookup"><span data-stu-id="6a08a-116">IMAPIViewAdviseSink : IUnknown</span></span>](imapiviewadvisesinkiunknown.md)
 

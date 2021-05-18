@@ -1,5 +1,5 @@
 ---
-title: imapiformcontainer IUnknown
+title: IMAPIFormContainer IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,38 +19,38 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33407530"
 ---
-# <a name="imapiformcontainer--iunknown"></a><span data-ttu-id="4ddb6-103">IMAPIFormContainer : IUnknown</span><span class="sxs-lookup"><span data-stu-id="4ddb6-103">IMAPIFormContainer : IUnknown</span></span>
+# <a name="imapiformcontainer--iunknown"></a><span data-ttu-id="e857d-103">IMAPIFormContainer : IUnknown</span><span class="sxs-lookup"><span data-stu-id="e857d-103">IMAPIFormContainer : IUnknown</span></span>
 
   
   
-<span data-ttu-id="4ddb6-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="4ddb6-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="e857d-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="e857d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="4ddb6-105">フォームライブラリ内のフォームを管理します。</span><span class="sxs-lookup"><span data-stu-id="4ddb6-105">Manages forms in form libraries.</span></span> <span data-ttu-id="4ddb6-106">このインターフェイスは、アプリケーション固有のフォームライブラリを作成するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="4ddb6-106">This interface is used to create application-specific form libraries.</span></span> 
+<span data-ttu-id="e857d-105">フォーム ライブラリ内のフォームを管理します。</span><span class="sxs-lookup"><span data-stu-id="e857d-105">Manages forms in form libraries.</span></span> <span data-ttu-id="e857d-106">このインターフェイスは、アプリケーション固有のフォーム ライブラリを作成するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="e857d-106">This interface is used to create application-specific form libraries.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="4ddb6-107">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="4ddb6-107">Header file:</span></span>  <br/> |<span data-ttu-id="4ddb6-108">Mapiform</span><span class="sxs-lookup"><span data-stu-id="4ddb6-108">Mapiform.h</span></span>  <br/> |
-|<span data-ttu-id="4ddb6-109">公開者:</span><span class="sxs-lookup"><span data-stu-id="4ddb6-109">Exposed by:</span></span>  <br/> |<span data-ttu-id="4ddb6-110">Form container オブジェクト</span><span class="sxs-lookup"><span data-stu-id="4ddb6-110">Form container objects</span></span>  <br/> |
-|<span data-ttu-id="4ddb6-111">実装元:</span><span class="sxs-lookup"><span data-stu-id="4ddb6-111">Implemented by:</span></span>  <br/> |<span data-ttu-id="4ddb6-112">フォームライブラリプロバイダー</span><span class="sxs-lookup"><span data-stu-id="4ddb6-112">Form library providers</span></span>  <br/> |
-|<span data-ttu-id="4ddb6-113">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="4ddb6-113">Called by:</span></span>  <br/> |<span data-ttu-id="4ddb6-114">クライアント アプリケーション</span><span class="sxs-lookup"><span data-stu-id="4ddb6-114">Client applications</span></span>  <br/> |
-|<span data-ttu-id="4ddb6-115">インターフェイス識別子:</span><span class="sxs-lookup"><span data-stu-id="4ddb6-115">Interface identifier:</span></span>  <br/> |<span data-ttu-id="4ddb6-116">IID_IMAPIFormContainer</span><span class="sxs-lookup"><span data-stu-id="4ddb6-116">IID_IMAPIFormContainer</span></span>  <br/> |
-|<span data-ttu-id="4ddb6-117">ポインターの種類:</span><span class="sxs-lookup"><span data-stu-id="4ddb6-117">Pointer type:</span></span>  <br/> |<span data-ttu-id="4ddb6-118">LPMAPIFORMCONTAINER</span><span class="sxs-lookup"><span data-stu-id="4ddb6-118">LPMAPIFORMCONTAINER</span></span>  <br/> |
+|<span data-ttu-id="e857d-107">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="e857d-107">Header file:</span></span>  <br/> |<span data-ttu-id="e857d-108">Mapiform.h</span><span class="sxs-lookup"><span data-stu-id="e857d-108">Mapiform.h</span></span>  <br/> |
+|<span data-ttu-id="e857d-109">次のユーザーによって公開されます。</span><span class="sxs-lookup"><span data-stu-id="e857d-109">Exposed by:</span></span>  <br/> |<span data-ttu-id="e857d-110">フォーム コンテナー オブジェクト</span><span class="sxs-lookup"><span data-stu-id="e857d-110">Form container objects</span></span>  <br/> |
+|<span data-ttu-id="e857d-111">実装元:</span><span class="sxs-lookup"><span data-stu-id="e857d-111">Implemented by:</span></span>  <br/> |<span data-ttu-id="e857d-112">フォーム ライブラリ プロバイダー</span><span class="sxs-lookup"><span data-stu-id="e857d-112">Form library providers</span></span>  <br/> |
+|<span data-ttu-id="e857d-113">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="e857d-113">Called by:</span></span>  <br/> |<span data-ttu-id="e857d-114">クライアント アプリケーション</span><span class="sxs-lookup"><span data-stu-id="e857d-114">Client applications</span></span>  <br/> |
+|<span data-ttu-id="e857d-115">インターフェイス識別子:</span><span class="sxs-lookup"><span data-stu-id="e857d-115">Interface identifier:</span></span>  <br/> |<span data-ttu-id="e857d-116">IID_IMAPIFormContainer</span><span class="sxs-lookup"><span data-stu-id="e857d-116">IID_IMAPIFormContainer</span></span>  <br/> |
+|<span data-ttu-id="e857d-117">ポインターの種類:</span><span class="sxs-lookup"><span data-stu-id="e857d-117">Pointer type:</span></span>  <br/> |<span data-ttu-id="e857d-118">LPMAPIFORMCONTAINER</span><span class="sxs-lookup"><span data-stu-id="e857d-118">LPMAPIFORMCONTAINER</span></span>  <br/> |
    
-## <a name="vtable-order"></a><span data-ttu-id="4ddb6-119">v の順序</span><span class="sxs-lookup"><span data-stu-id="4ddb6-119">Vtable order</span></span>
+## <a name="vtable-order"></a><span data-ttu-id="e857d-119">Vtable の順序</span><span class="sxs-lookup"><span data-stu-id="e857d-119">Vtable order</span></span>
 
 |||
 |:-----|:-----|
-|[<span data-ttu-id="4ddb6-120">installform</span><span class="sxs-lookup"><span data-stu-id="4ddb6-120">InstallForm</span></span>](imapiformcontainer-installform.md) <br/> |<span data-ttu-id="4ddb6-121">フォームをフォームコンテナーにインストールします。</span><span class="sxs-lookup"><span data-stu-id="4ddb6-121">Installs a form into a form container.</span></span>  <br/> |
-|[<span data-ttu-id="4ddb6-122">removeform</span><span class="sxs-lookup"><span data-stu-id="4ddb6-122">RemoveForm</span></span>](imapiformcontainer-removeform.md) <br/> |<span data-ttu-id="4ddb6-123">フォームコンテナーから特定のフォームを削除します。</span><span class="sxs-lookup"><span data-stu-id="4ddb6-123">Removes a particular form from a form container.</span></span>  <br/> |
-|[<span data-ttu-id="4ddb6-124">ResolveMessageClass</span><span class="sxs-lookup"><span data-stu-id="4ddb6-124">ResolveMessageClass</span></span>](imapiformcontainer-resolvemessageclass.md) <br/> |<span data-ttu-id="4ddb6-125">メッセージクラスをフォームコンテナー内のフォームに解決し、そのフォームのフォーム情報オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="4ddb6-125">Resolves a message class to its form in a form container and returns a form information object for that form.</span></span>  <br/> |
-|[<span data-ttu-id="4ddb6-126">ResolveMultipleMessageClasses</span><span class="sxs-lookup"><span data-stu-id="4ddb6-126">ResolveMultipleMessageClasses</span></span>](imapiformcontainer-resolvemultiplemessageclasses.md) <br/> |<span data-ttu-id="4ddb6-127">フォームコンテナー内のフォームに対するメッセージクラスのグループを解決し、それらのフォームのフォーム情報オブジェクトの配列を返します。</span><span class="sxs-lookup"><span data-stu-id="4ddb6-127">Resolves a group of message classes to their forms in a form container and returns an array of form information objects for those forms.</span></span>  <br/> |
-|[<span data-ttu-id="4ddb6-128">CalcFormPropSet</span><span class="sxs-lookup"><span data-stu-id="4ddb6-128">CalcFormPropSet</span></span>](imapiformcontainer-calcformpropset.md) <br/> |<span data-ttu-id="4ddb6-129">フォームコンテナーにインストールされているすべてのフォームで使用されるプロパティの配列を返します。</span><span class="sxs-lookup"><span data-stu-id="4ddb6-129">Returns an array of the properties used by all forms installed in a form container.</span></span>  <br/> |
-|[<span data-ttu-id="4ddb6-130">getdisplay</span><span class="sxs-lookup"><span data-stu-id="4ddb6-130">GetDisplay</span></span>](imapiformcontainer-getdisplay.md) <br/> |<span data-ttu-id="4ddb6-131">フォームコンテナーの表示名を返します。</span><span class="sxs-lookup"><span data-stu-id="4ddb6-131">Returns the display name of a form container.</span></span>  <br/> |
-|[<span data-ttu-id="4ddb6-132">GetLastError</span><span class="sxs-lookup"><span data-stu-id="4ddb6-132">GetLastError</span></span>](imapiformcontainer-getlasterror.md) <br/> |<span data-ttu-id="4ddb6-133">form container オブジェクトに発生する前のエラーに関する情報を含む[MAPIERROR](mapierror.md)構造体を返します。</span><span class="sxs-lookup"><span data-stu-id="4ddb6-133">Returns a [MAPIERROR](mapierror.md) structure containing information about the previous error occurring to the form container object.</span></span>  <br/> |
+|[<span data-ttu-id="e857d-120">InstallForm</span><span class="sxs-lookup"><span data-stu-id="e857d-120">InstallForm</span></span>](imapiformcontainer-installform.md) <br/> |<span data-ttu-id="e857d-121">フォームコンテナーにフォームをインストールします。</span><span class="sxs-lookup"><span data-stu-id="e857d-121">Installs a form into a form container.</span></span>  <br/> |
+|[<span data-ttu-id="e857d-122">RemoveForm</span><span class="sxs-lookup"><span data-stu-id="e857d-122">RemoveForm</span></span>](imapiformcontainer-removeform.md) <br/> |<span data-ttu-id="e857d-123">フォーム コンテナーから特定のフォームを削除します。</span><span class="sxs-lookup"><span data-stu-id="e857d-123">Removes a particular form from a form container.</span></span>  <br/> |
+|[<span data-ttu-id="e857d-124">ResolveMessageClass</span><span class="sxs-lookup"><span data-stu-id="e857d-124">ResolveMessageClass</span></span>](imapiformcontainer-resolvemessageclass.md) <br/> |<span data-ttu-id="e857d-125">メッセージ クラスをフォーム コンテナー内のフォームに解決し、そのフォームのフォーム情報オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="e857d-125">Resolves a message class to its form in a form container and returns a form information object for that form.</span></span>  <br/> |
+|[<span data-ttu-id="e857d-126">ResolveMultipleMessageClasses</span><span class="sxs-lookup"><span data-stu-id="e857d-126">ResolveMultipleMessageClasses</span></span>](imapiformcontainer-resolvemultiplemessageclasses.md) <br/> |<span data-ttu-id="e857d-127">メッセージ クラスのグループをフォーム コンテナー内のフォームに解決し、それらのフォームのフォーム情報オブジェクトの配列を返します。</span><span class="sxs-lookup"><span data-stu-id="e857d-127">Resolves a group of message classes to their forms in a form container and returns an array of form information objects for those forms.</span></span>  <br/> |
+|[<span data-ttu-id="e857d-128">CalcFormPropSet</span><span class="sxs-lookup"><span data-stu-id="e857d-128">CalcFormPropSet</span></span>](imapiformcontainer-calcformpropset.md) <br/> |<span data-ttu-id="e857d-129">フォーム コンテナーにインストールされているすべてのフォームで使用されるプロパティの配列を返します。</span><span class="sxs-lookup"><span data-stu-id="e857d-129">Returns an array of the properties used by all forms installed in a form container.</span></span>  <br/> |
+|[<span data-ttu-id="e857d-130">GetDisplay</span><span class="sxs-lookup"><span data-stu-id="e857d-130">GetDisplay</span></span>](imapiformcontainer-getdisplay.md) <br/> |<span data-ttu-id="e857d-131">フォーム コンテナーの表示名を返します。</span><span class="sxs-lookup"><span data-stu-id="e857d-131">Returns the display name of a form container.</span></span>  <br/> |
+|[<span data-ttu-id="e857d-132">GetLastError</span><span class="sxs-lookup"><span data-stu-id="e857d-132">GetLastError</span></span>](imapiformcontainer-getlasterror.md) <br/> |<span data-ttu-id="e857d-133">フォーム コンテナー オブジェクトに発生した以前のエラーに関する情報を含む [MAPIERROR](mapierror.md) 構造体を返します。</span><span class="sxs-lookup"><span data-stu-id="e857d-133">Returns a [MAPIERROR](mapierror.md) structure containing information about the previous error occurring to the form container object.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="4ddb6-134">関連項目</span><span class="sxs-lookup"><span data-stu-id="4ddb6-134">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e857d-134">関連項目</span><span class="sxs-lookup"><span data-stu-id="e857d-134">See also</span></span>
 
 
 
-[<span data-ttu-id="4ddb6-135">MAPI のインターフェイス</span><span class="sxs-lookup"><span data-stu-id="4ddb6-135">MAPI Interfaces</span></span>](mapi-interfaces.md)
+[<span data-ttu-id="e857d-135">MAPI のインターフェイス</span><span class="sxs-lookup"><span data-stu-id="e857d-135">MAPI Interfaces</span></span>](mapi-interfaces.md)
 

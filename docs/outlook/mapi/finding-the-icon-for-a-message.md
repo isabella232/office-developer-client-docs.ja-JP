@@ -15,20 +15,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33409154"
 ---
-# <a name="finding-the-icon-for-a-message"></a><span data-ttu-id="846f4-103">メッセージのアイコンの検索</span><span class="sxs-lookup"><span data-stu-id="846f4-103">Finding the Icon for a Message</span></span>
+# <a name="finding-the-icon-for-a-message"></a><span data-ttu-id="e0173-103">メッセージのアイコンの検索</span><span class="sxs-lookup"><span data-stu-id="e0173-103">Finding the Icon for a Message</span></span>
 
   
   
-<span data-ttu-id="846f4-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="846f4-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="e0173-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="e0173-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
- <span data-ttu-id="846f4-105">**メッセージに関連付けられているアイコンを検索するには**</span><span class="sxs-lookup"><span data-stu-id="846f4-105">**To find the icon associated with a message**</span></span>
+ <span data-ttu-id="e0173-105">**メッセージに関連付けられているアイコンを見つけるには**</span><span class="sxs-lookup"><span data-stu-id="e0173-105">**To find the icon associated with a message**</span></span>
   
-1. <span data-ttu-id="846f4-106">メッセージの[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出して、その**PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) プロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="846f4-106">Call the message's [IMAPIProp::GetProps](imapiprop-getprops.md) method to retrieve its **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) property.</span></span>
+1. <span data-ttu-id="e0173-106">メッセージの [IMAPIProp::GetProps](imapiprop-getprops.md) メソッドを呼び出して、PR_MESSAGE_CLASS **(** [PidTagMessageClass](pidtagmessageclass-canonical-property.md)) プロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="e0173-106">Call the message's [IMAPIProp::GetProps](imapiprop-getprops.md) method to retrieve its **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) property.</span></span>
     
-2. <span data-ttu-id="846f4-107">[MAPIOpenFormMgr](mapiopenformmgr.md)を呼び出して、 **imapiformmgr**インターフェイスポインターを取得します。</span><span class="sxs-lookup"><span data-stu-id="846f4-107">Call [MAPIOpenFormMgr](mapiopenformmgr.md) to retrieve an **IMAPIFormMgr** interface pointer.</span></span> <span data-ttu-id="846f4-108">**imapisession**ポインターを_psession_パラメーターに渡します。</span><span class="sxs-lookup"><span data-stu-id="846f4-108">Pass your **IMAPISession** pointer in the  _pSession_ parameter.</span></span> 
+2. <span data-ttu-id="e0173-107">[MAPIOpenFormMgr を呼び](mapiopenformmgr.md)出して **IMAPIFormMgr インターフェイス ポインターを** 取得します。</span><span class="sxs-lookup"><span data-stu-id="e0173-107">Call [MAPIOpenFormMgr](mapiopenformmgr.md) to retrieve an **IMAPIFormMgr** interface pointer.</span></span> <span data-ttu-id="e0173-108">pSession パラメーター **で IMAPISession** ポインター  _を渡_ します。</span><span class="sxs-lookup"><span data-stu-id="e0173-108">Pass your **IMAPISession** pointer in the  _pSession_ parameter.</span></span> 
     
-3. <span data-ttu-id="846f4-109">[imapiformmgr:: ResolveMessageClass](imapiformmgr-resolvemessageclass.md)を呼び出して、 **imapiformmgr**インターフェイスポインターを取得します。</span><span class="sxs-lookup"><span data-stu-id="846f4-109">Call [IMAPIFormMgr::ResolveMessageClass](imapiformmgr-resolvemessageclass.md) to retrieve an **IMAPIFormInfo** interface pointer.</span></span> 
+3. <span data-ttu-id="e0173-109">[IMAPIFormMgr::ResolveMessageClass](imapiformmgr-resolvemessageclass.md)を呼び出して **、IMAPIFormInfo** インターフェイス ポインターを取得します。</span><span class="sxs-lookup"><span data-stu-id="e0173-109">Call [IMAPIFormMgr::ResolveMessageClass](imapiformmgr-resolvemessageclass.md) to retrieve an **IMAPIFormInfo** interface pointer.</span></span> 
     
-4. <span data-ttu-id="846f4-110">**imapiforminfo**ポインターを使用して[、imapiprop:: GetProps](imapiprop-getprops.md)を呼び出し、 **PR_ICON** ([PidTagIcon](pidtagicon-canonical-property.md)) プロパティと**PR_MINI_ICON** ([PidTagMiniIcon](pidtagminiicon-canonical-property.md)) プロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="846f4-110">Use the **IMAPIFormInfo** pointer to call [IMAPIProp::GetProps](imapiprop-getprops.md) and retrieve the **PR_ICON** ([PidTagIcon](pidtagicon-canonical-property.md)) and/or **PR_MINI_ICON** ([PidTagMiniIcon](pidtagminiicon-canonical-property.md)) properties.</span></span> 
+4. <span data-ttu-id="e0173-110">**IMAPIFormInfo** ポインターを使用して [IMAPIProp::GetProps](imapiprop-getprops.md)を呼び出し **、PR_ICON** ([PidTagIcon](pidtagicon-canonical-property.md)) プロパティまたは PR_MINI_ICON ([PidTagMiniIcon](pidtagminiicon-canonical-property.md)) プロパティ **を** 取得します。</span><span class="sxs-lookup"><span data-stu-id="e0173-110">Use the **IMAPIFormInfo** pointer to call [IMAPIProp::GetProps](imapiprop-getprops.md) and retrieve the **PR_ICON** ([PidTagIcon](pidtagicon-canonical-property.md)) and/or **PR_MINI_ICON** ([PidTagMiniIcon](pidtagminiicon-canonical-property.md)) properties.</span></span> 
     
 

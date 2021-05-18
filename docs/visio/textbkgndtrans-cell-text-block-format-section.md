@@ -16,32 +16,32 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33408692"
 ---
-# <a name="textbkgndtrans-cell-text-block-format-section"></a><span data-ttu-id="0ad7d-103">[TextBkgndTrans] セル ([Text Block Format] セクション)</span><span class="sxs-lookup"><span data-stu-id="0ad7d-103">TextBkgndTrans Cell (Text Block Format Section)</span></span>
+# <a name="textbkgndtrans-cell-text-block-format-section"></a><span data-ttu-id="3cdd1-103">[TextBkgndTrans] セル ([Text Block Format] セクション)</span><span class="sxs-lookup"><span data-stu-id="3cdd1-103">TextBkgndTrans Cell (Text Block Format Section)</span></span>
 
-<span data-ttu-id="0ad7d-104">図形のテキスト ブロックの背景色に適用される透過性レベルを指定します。</span><span class="sxs-lookup"><span data-stu-id="0ad7d-104">Determines the transparency level for the background color of the shape's text block.</span></span>
+<span data-ttu-id="3cdd1-104">図形のテキスト ブロックの背景色に適用される透過性レベルを指定します。</span><span class="sxs-lookup"><span data-stu-id="3cdd1-104">Determines the transparency level for the background color of the shape's text block.</span></span>
   
-|<span data-ttu-id="0ad7d-105">**値**</span><span class="sxs-lookup"><span data-stu-id="0ad7d-105">**Value**</span></span>|<span data-ttu-id="0ad7d-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="0ad7d-106">**Description**</span></span>|
+|<span data-ttu-id="3cdd1-105">**値**</span><span class="sxs-lookup"><span data-stu-id="3cdd1-105">**Value**</span></span>|<span data-ttu-id="3cdd1-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="3cdd1-106">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="0ad7d-107">0 ～ 100</span><span class="sxs-lookup"><span data-stu-id="0ad7d-107">0 - 100</span></span>  <br/> |<span data-ttu-id="0ad7d-p101">透過性をパーセントで表します。既定値は 0% (完全に不透明) です。</span><span class="sxs-lookup"><span data-stu-id="0ad7d-p101">Represents the percentage of transparency. The default is 0% (completely opaque).</span></span>  <br/> |
+|<span data-ttu-id="3cdd1-107">0 ～ 100</span><span class="sxs-lookup"><span data-stu-id="3cdd1-107">0 - 100</span></span>  <br/> |<span data-ttu-id="3cdd1-p101">透過性をパーセントで表します。既定値は 0% (完全に不透明) です。</span><span class="sxs-lookup"><span data-stu-id="3cdd1-p101">Represents the percentage of transparency. The default is 0% (completely opaque).</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="0ad7d-110">注釈</span><span class="sxs-lookup"><span data-stu-id="0ad7d-110">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3cdd1-110">注釈</span><span class="sxs-lookup"><span data-stu-id="3cdd1-110">Remarks</span></span>
 
-<span data-ttu-id="0ad7d-p102">値は、最も近い 0.5% 単位の値に丸められます。値 "100%" は完全な透明を表します。テキストの背景が完全に透明な図形は、図面ページでは背景がない図形と同じように表示されますが、ページ上の他のオブジェクトに対しては、透過性が 0% の場合と同様な状態で相互に影響し合います。</span><span class="sxs-lookup"><span data-stu-id="0ad7d-p102">Values are rounded to the nearest half percent. A value of 100% is completely transparent. Although a shape that has a completely transparent text background appears the same on the drawing page as a shape that has no text background, it interacts with other objects on the page in the same way as if its transparency were 0%.</span></span>
+<span data-ttu-id="3cdd1-p102">値は、最も近い 0.5% 単位の値に丸められます。値 "100%" は完全な透明を表します。テキストの背景が完全に透明な図形は、図面ページでは背景がない図形と同じように表示されますが、ページ上の他のオブジェクトに対しては、透過性が 0% の場合と同様な状態で相互に影響し合います。</span><span class="sxs-lookup"><span data-stu-id="3cdd1-p102">Values are rounded to the nearest half percent. A value of 100% is completely transparent. Although a shape that has a completely transparent text background appears the same on the drawing page as a shape that has no text background, it interacts with other objects on the page in the same way as if its transparency were 0%.</span></span>
   
-<span data-ttu-id="0ad7d-114">この値は、[**テキスト**] ダイアログ ボックスの [**フォント**] タブのスライダー コントロールを使用して設定することもできます (このタブを開くには、[**ホーム**] タブの [**フォント**] 矢印をクリックします)。</span><span class="sxs-lookup"><span data-stu-id="0ad7d-114">You can also set this value using the slider control on the **Font** tab of the **Text** dialog box (on the **Home** tab, click the **Font** arrow).</span></span> 
+<span data-ttu-id="3cdd1-114">この値は、[**テキスト**] ダイアログ ボックスの [**フォント**] タブのスライダー コントロールを使用して設定することもできます (このタブを開くには、[**ホーム**] タブの [**フォント**] 矢印をクリックします)。</span><span class="sxs-lookup"><span data-stu-id="3cdd1-114">You can also set this value using the slider control on the **Font** tab of the **Text** dialog box (on the **Home** tab, click the **Font** arrow).</span></span> 
   
-<span data-ttu-id="0ad7d-115">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [TextBkgndTrans] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="0ad7d-115">To get a reference to the TextBkgndTrans cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="3cdd1-115">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [TextBkgndTrans] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="3cdd1-115">To get a reference to the TextBkgndTrans cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="0ad7d-116">セル名:</span><span class="sxs-lookup"><span data-stu-id="0ad7d-116">Cell name:</span></span>  <br/> |<span data-ttu-id="0ad7d-117">[textbkgndtrans]</span><span class="sxs-lookup"><span data-stu-id="0ad7d-117">TextBkgndTrans</span></span>  <br/> |
+|<span data-ttu-id="3cdd1-116">セル名:</span><span class="sxs-lookup"><span data-stu-id="3cdd1-116">Cell name:</span></span>  <br/> |<span data-ttu-id="3cdd1-117">TextBkgndTrans</span><span class="sxs-lookup"><span data-stu-id="3cdd1-117">TextBkgndTrans</span></span>  <br/> |
    
-<span data-ttu-id="0ad7d-118">プログラムから、インデックスによって [TextBkgndTrans] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="0ad7d-118">To get a reference to the TextBkgndTrans cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="3cdd1-118">プログラムから、インデックスによって [TextBkgndTrans] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="3cdd1-118">To get a reference to the TextBkgndTrans cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="0ad7d-119">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="0ad7d-119">Section index:</span></span>  <br/> |<span data-ttu-id="0ad7d-120">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="0ad7d-120">**visSectionObject**</span></span> <br/> |
-|<span data-ttu-id="0ad7d-121">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="0ad7d-121">Row index:</span></span>  <br/> |<span data-ttu-id="0ad7d-122">**visRowText**</span><span class="sxs-lookup"><span data-stu-id="0ad7d-122">**visRowText**</span></span> <br/> |
-|<span data-ttu-id="0ad7d-123">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="0ad7d-123">Cell index:</span></span>  <br/> |<span data-ttu-id="0ad7d-124">**visTxtBlkBkgndTrans**</span><span class="sxs-lookup"><span data-stu-id="0ad7d-124">**visTxtBlkBkgndTrans**</span></span> <br/> |
+|<span data-ttu-id="3cdd1-119">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="3cdd1-119">Section index:</span></span>  <br/> |<span data-ttu-id="3cdd1-120">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="3cdd1-120">**visSectionObject**</span></span> <br/> |
+|<span data-ttu-id="3cdd1-121">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="3cdd1-121">Row index:</span></span>  <br/> |<span data-ttu-id="3cdd1-122">**visRowText**</span><span class="sxs-lookup"><span data-stu-id="3cdd1-122">**visRowText**</span></span> <br/> |
+|<span data-ttu-id="3cdd1-123">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="3cdd1-123">Cell index:</span></span>  <br/> |<span data-ttu-id="3cdd1-124">**visTxtBlkBkgndTrans**</span><span class="sxs-lookup"><span data-stu-id="3cdd1-124">**visTxtBlkBkgndTrans**</span></span> <br/> |
    
 

@@ -16,13 +16,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33405682"
 ---
-# <a name="enter-an-empty-formula"></a><span data-ttu-id="69abe-102">空の数式を入力する</span><span class="sxs-lookup"><span data-stu-id="69abe-102">Enter an Empty Formula</span></span>
+# <a name="enter-an-empty-formula"></a><span data-ttu-id="4e194-102">空の数式を入力する</span><span class="sxs-lookup"><span data-stu-id="4e194-102">Enter an Empty Formula</span></span>
 
-1. <span data-ttu-id="69abe-103">数式を含めるセルを選択します。</span><span class="sxs-lookup"><span data-stu-id="69abe-103">Select the cell that will contain the formula.</span></span>
+1. <span data-ttu-id="4e194-103">数式を含めるセルを選択します。</span><span class="sxs-lookup"><span data-stu-id="4e194-103">Select the cell that will contain the formula.</span></span>
     
-2. <span data-ttu-id="69abe-104">Del キーを押してから、Enter キーを押します。</span><span class="sxs-lookup"><span data-stu-id="69abe-104">Press DELETE, and then press ENTER.</span></span>
+2. <span data-ttu-id="4e194-104">Del キーを押してから、Enter キーを押します。</span><span class="sxs-lookup"><span data-stu-id="4e194-104">Press DELETE, and then press ENTER.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="69abe-105">ローカルの数式を挿入した後、それを**スクラッチ**のセルで試してみてください。</span><span class="sxs-lookup"><span data-stu-id="69abe-105">Try this in a **Scratch** cell after inserting a local formula.</span></span> <span data-ttu-id="69abe-106">マスターから継承する数式がないので、セルは [数式なし] に戻ります。</span><span class="sxs-lookup"><span data-stu-id="69abe-106">The cell reverts to 'No Formula', because there is no formula to inherit from the master.</span></span> 
+> <span data-ttu-id="4e194-105">ローカル数式を挿入した **後、Scratch** セルでこれを試してください。</span><span class="sxs-lookup"><span data-stu-id="4e194-105">Try this in a **Scratch** cell after inserting a local formula.</span></span> <span data-ttu-id="4e194-106">マスターから継承する数式が存在しないので、セルは 'No Formula' に戻されます。</span><span class="sxs-lookup"><span data-stu-id="4e194-106">The cell reverts to 'No Formula', because there is no formula to inherit from the master.</span></span> 
   
 

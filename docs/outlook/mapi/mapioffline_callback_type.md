@@ -15,15 +15,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33407782"
 ---
-# <a name="mapiofflinecallbacktype"></a><span data-ttu-id="fbf67-103">MAPIOFFLINE_CALLBACK_TYPE</span><span class="sxs-lookup"><span data-stu-id="fbf67-103">MAPIOFFLINE_CALLBACK_TYPE</span></span>
+# <a name="mapioffline_callback_type"></a><span data-ttu-id="af36e-103">MAPIOFFLINE_CALLBACK_TYPE</span><span class="sxs-lookup"><span data-stu-id="af36e-103">MAPIOFFLINE_CALLBACK_TYPE</span></span>
 
   
   
-<span data-ttu-id="fbf67-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="fbf67-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="af36e-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="af36e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="fbf67-105">サポートされているコールバックの種類の列挙。</span><span class="sxs-lookup"><span data-stu-id="fbf67-105">Enumeration of supported types of callbacks.</span></span>
+<span data-ttu-id="af36e-105">サポートされている種類のコールバックの列挙。</span><span class="sxs-lookup"><span data-stu-id="af36e-105">Enumeration of supported types of callbacks.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="fbf67-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="fbf67-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="af36e-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="af36e-106">Quick info</span></span>
 
 ```cpp
 typedef enum  
@@ -33,13 +33,13 @@ typedef enum
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="fbf67-107">関連項目</span><span class="sxs-lookup"><span data-stu-id="fbf67-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="af36e-107">関連項目</span><span class="sxs-lookup"><span data-stu-id="af36e-107">See also</span></span>
 
 
 
-[<span data-ttu-id="fbf67-108">オフライン状態 API について</span><span class="sxs-lookup"><span data-stu-id="fbf67-108">About the Offline State API</span></span>](about-the-offline-state-api.md)
+[<span data-ttu-id="af36e-108">オフライン状態 API について</span><span class="sxs-lookup"><span data-stu-id="af36e-108">About the Offline State API</span></span>](about-the-offline-state-api.md)
   
-[<span data-ttu-id="fbf67-109">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="fbf67-109">MAPI Constants</span></span>](mapi-constants.md)
+[<span data-ttu-id="af36e-109">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="af36e-109">MAPI Constants</span></span>](mapi-constants.md)
   
-[<span data-ttu-id="fbf67-110">MAPIOFFLINE_ADVISEINFO</span><span class="sxs-lookup"><span data-stu-id="fbf67-110">MAPIOFFLINE_ADVISEINFO</span></span>](mapioffline_adviseinfo.md)
+[<span data-ttu-id="af36e-110">MAPIOFFLINE_ADVISEINFO</span><span class="sxs-lookup"><span data-stu-id="af36e-110">MAPIOFFLINE_ADVISEINFO</span></span>](mapioffline_adviseinfo.md)
 

@@ -19,19 +19,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33408643"
 ---
-# <a name="freepadrlist"></a><span data-ttu-id="fd162-103">FreePadrlist</span><span class="sxs-lookup"><span data-stu-id="fd162-103">FreePadrlist</span></span>
+# <a name="freepadrlist"></a><span data-ttu-id="0418e-103">FreePadrlist</span><span class="sxs-lookup"><span data-stu-id="0418e-103">FreePadrlist</span></span>
 
   
   
-<span data-ttu-id="fd162-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="fd162-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="0418e-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="0418e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="fd162-105">[adrlist](adrlist.md)構造体を破棄し、すべてのメンバー配列および構造体に割り当てられたメモリを含む、関連するメモリを解放します。</span><span class="sxs-lookup"><span data-stu-id="fd162-105">Destroys an [ADRLIST](adrlist.md) structure and frees associated memory, including memory allocated for all member arrays and structures.</span></span> 
+<span data-ttu-id="0418e-105">[ADRLIST 構造体を破棄し](adrlist.md)、関連付けられたメモリ (すべてのメンバー配列と構造体に割り当てられたメモリを含む) を解放します。</span><span class="sxs-lookup"><span data-stu-id="0418e-105">Destroys an [ADRLIST](adrlist.md) structure and frees associated memory, including memory allocated for all member arrays and structures.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="fd162-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="fd162-106">Header file:</span></span>  <br/> |<span data-ttu-id="fd162-107">Mapiutil</span><span class="sxs-lookup"><span data-stu-id="fd162-107">Mapiutil.h</span></span>  <br/> |
-|<span data-ttu-id="fd162-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="fd162-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="fd162-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="fd162-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="fd162-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="fd162-110">Called by:</span></span>  <br/> |<span data-ttu-id="fd162-111">クライアントアプリケーションとサービスプロバイダー</span><span class="sxs-lookup"><span data-stu-id="fd162-111">Client applications and service providers</span></span>  <br/> |
+|<span data-ttu-id="0418e-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="0418e-106">Header file:</span></span>  <br/> |<span data-ttu-id="0418e-107">Mapiutil.h</span><span class="sxs-lookup"><span data-stu-id="0418e-107">Mapiutil.h</span></span>  <br/> |
+|<span data-ttu-id="0418e-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="0418e-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="0418e-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="0418e-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="0418e-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="0418e-110">Called by:</span></span>  <br/> |<span data-ttu-id="0418e-111">クライアント アプリケーションとサービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="0418e-111">Client applications and service providers</span></span>  <br/> |
    
 ```cpp
 void FreePadrlist(
@@ -39,33 +39,33 @@ void FreePadrlist(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="fd162-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="fd162-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="0418e-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0418e-112">Parameters</span></span>
 
- <span data-ttu-id="fd162-113">_padrlist_</span><span class="sxs-lookup"><span data-stu-id="fd162-113">_padrlist_</span></span>
+ <span data-ttu-id="0418e-113">_padrlist_</span><span class="sxs-lookup"><span data-stu-id="0418e-113">_padrlist_</span></span>
   
-> <span data-ttu-id="fd162-114">順番破棄する**adrlist**構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="fd162-114">[in] Pointer to the **ADRLIST** structure to be destroyed.</span></span> 
+> <span data-ttu-id="0418e-114">[in]破棄する **ADRLIST** 構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="0418e-114">[in] Pointer to the **ADRLIST** structure to be destroyed.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="fd162-115">Return value</span><span class="sxs-lookup"><span data-stu-id="fd162-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="0418e-115">Return value</span><span class="sxs-lookup"><span data-stu-id="0418e-115">Return value</span></span>
 
-<span data-ttu-id="fd162-116">なし。</span><span class="sxs-lookup"><span data-stu-id="fd162-116">None.</span></span>
+<span data-ttu-id="0418e-116">なし。</span><span class="sxs-lookup"><span data-stu-id="0418e-116">None.</span></span>
   
-## <a name="notes-to-callers"></a><span data-ttu-id="fd162-117">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="fd162-117">Notes to callers</span></span>
+## <a name="notes-to-callers"></a><span data-ttu-id="0418e-117">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="0418e-117">Notes to callers</span></span>
 
-<span data-ttu-id="fd162-118">[MAPIFreeBuffer](mapifreebuffer.md)関数は、 **freepadrlist**の実装の一環として、完全な構造を解放する前に**adrlist**構造体のすべてのエントリを解放するために呼び出します。</span><span class="sxs-lookup"><span data-stu-id="fd162-118">As part of its implementation of **FreePadrlist**, MAPI calls the [MAPIFreeBuffer](mapifreebuffer.md) function to free every entry in the **ADRLIST** structure before freeing the complete structure.</span></span> <span data-ttu-id="fd162-119">そのため、このようなエントリはすべて、各メンバーの配列および構造に対して個別の[MAPIAllocateBuffer](mapiallocatebuffer.md)呼び出しを使用して、 [adrlist](adrlist.md)構造の割り当てルールに従っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="fd162-119">Therefore all such entries must have followed the allocation rules for the [ADRLIST](adrlist.md) structure, using an individual [MAPIAllocateBuffer](mapiallocatebuffer.md) call for each member array and structure.</span></span> 
+<span data-ttu-id="0418e-118">**FreePadrlist** の実装の一環として、MAPI は [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して **、ADRLIST** 構造内のすべてのエントリを解放してから、完全な構造を解放します。</span><span class="sxs-lookup"><span data-stu-id="0418e-118">As part of its implementation of **FreePadrlist**, MAPI calls the [MAPIFreeBuffer](mapifreebuffer.md) function to free every entry in the **ADRLIST** structure before freeing the complete structure.</span></span> <span data-ttu-id="0418e-119">したがって、このようなエントリはすべて、メンバー配列と構造体ごとに個別の[MAPIAllocateBuffer](mapiallocatebuffer.md)呼び出しを使用して[、ADRLIST](adrlist.md)構造体の割り当てルールに従っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="0418e-119">Therefore all such entries must have followed the allocation rules for the [ADRLIST](adrlist.md) structure, using an individual [MAPIAllocateBuffer](mapiallocatebuffer.md) call for each member array and structure.</span></span> 
   
-<span data-ttu-id="fd162-120">**adrlist**および**srowset**構造体のメモリ割り当ての詳細については、「 [adrlist および srowset 構造体のメモリの管理](managing-memory-for-adrlist-and-srowset-structures.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fd162-120">For more information about allocating memory for **ADRLIST** and **SRowSet** structures, see [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md).</span></span> 
+<span data-ttu-id="0418e-120">ADRLIST 構造体および **SRowSet** 構造体のメモリ割り当ての詳細については **、「ADRLIST** および SRowSet 構造体のメモリの管理」[を参照してください](managing-memory-for-adrlist-and-srowset-structures.md)。</span><span class="sxs-lookup"><span data-stu-id="0418e-120">For more information about allocating memory for **ADRLIST** and **SRowSet** structures, see [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md).</span></span> 
   
-## <a name="mfcmapi-reference"></a><span data-ttu-id="fd162-121">MFCMAPI リファレンス</span><span class="sxs-lookup"><span data-stu-id="fd162-121">MFCMAPI reference</span></span>
+## <a name="mfcmapi-reference"></a><span data-ttu-id="0418e-121">MFCMAPI リファレンス</span><span class="sxs-lookup"><span data-stu-id="0418e-121">MFCMAPI reference</span></span>
 
-<span data-ttu-id="fd162-122">MFCMAPI のサンプル コードについては、次の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fd162-122">For MFCMAPI sample code, see the following table.</span></span>
+<span data-ttu-id="0418e-122">MFCMAPI のサンプル コードについては、次の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0418e-122">For MFCMAPI sample code, see the following table.</span></span>
   
-|<span data-ttu-id="fd162-123">**ファイル**</span><span class="sxs-lookup"><span data-stu-id="fd162-123">**File**</span></span>|<span data-ttu-id="fd162-124">**関数**</span><span class="sxs-lookup"><span data-stu-id="fd162-124">**Function**</span></span>|<span data-ttu-id="fd162-125">**�R�����g**</span><span class="sxs-lookup"><span data-stu-id="fd162-125">**Comment**</span></span>|
+|<span data-ttu-id="0418e-123">**ファイル**</span><span class="sxs-lookup"><span data-stu-id="0418e-123">**File**</span></span>|<span data-ttu-id="0418e-124">**関数**</span><span class="sxs-lookup"><span data-stu-id="0418e-124">**Function**</span></span>|<span data-ttu-id="0418e-125">**�R�����g**</span><span class="sxs-lookup"><span data-stu-id="0418e-125">**Comment**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="fd162-126">MAPIABFunctions</span><span class="sxs-lookup"><span data-stu-id="fd162-126">MAPIABFunctions.cpp</span></span>  <br/> |<span data-ttu-id="fd162-127">addoneoffaddress</span><span class="sxs-lookup"><span data-stu-id="fd162-127">AddOneOffAddress</span></span>  <br/> |<span data-ttu-id="fd162-128">mfcmapi は、 **freepadrlist**メソッドを使用して、メッセージに1回限りのアドレスを追加するために構築された adrlist 構造を解放します。</span><span class="sxs-lookup"><span data-stu-id="fd162-128">MFCMAPI uses the **FreePadrlist** method to free an ADRLIST structure that was built to add a one-off address to a message.</span></span>  <br/> |
+|<span data-ttu-id="0418e-126">MAPIABFunctions.cpp</span><span class="sxs-lookup"><span data-stu-id="0418e-126">MAPIABFunctions.cpp</span></span>  <br/> |<span data-ttu-id="0418e-127">AddOneOffAddress</span><span class="sxs-lookup"><span data-stu-id="0418e-127">AddOneOffAddress</span></span>  <br/> |<span data-ttu-id="0418e-128">MFCMAPI は **FreePadrlist** メソッドを使用して、メッセージに 1 回きりアドレスを追加するために構築された ADRLIST 構造体を解放します。</span><span class="sxs-lookup"><span data-stu-id="0418e-128">MFCMAPI uses the **FreePadrlist** method to free an ADRLIST structure that was built to add a one-off address to a message.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="fd162-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="fd162-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0418e-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="0418e-129">See also</span></span>
 
 
 
-<span data-ttu-id="fd162-130">[�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)</span><span class="sxs-lookup"><span data-stu-id="fd162-130">[MFCMAPI as a Code Sample](mfcmapi-as-a-code-sample.md)</span></span>
+<span data-ttu-id="0418e-130">[�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)</span><span class="sxs-lookup"><span data-stu-id="0418e-130">[MFCMAPI as a Code Sample](mfcmapi-as-a-code-sample.md)</span></span>
 

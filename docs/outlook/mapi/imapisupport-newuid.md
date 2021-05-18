@@ -1,5 +1,5 @@
 ---
-title: imapisupportnewuid
+title: IMAPISupportNewUID
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33406998"
 ---
-# <a name="imapisupportnewuid"></a><span data-ttu-id="fad07-103">IMAPISupport::NewUID</span><span class="sxs-lookup"><span data-stu-id="fad07-103">IMAPISupport::NewUID</span></span>
+# <a name="imapisupportnewuid"></a><span data-ttu-id="20c76-103">IMAPISupport::NewUID</span><span class="sxs-lookup"><span data-stu-id="20c76-103">IMAPISupport::NewUID</span></span>
 
   
   
-<span data-ttu-id="fad07-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="fad07-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="20c76-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="20c76-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="fad07-105">一意の識別子として使用する新しい[MAPIUID](mapiuid.md)構造を作成します。</span><span class="sxs-lookup"><span data-stu-id="fad07-105">Creates a new [MAPIUID](mapiuid.md) structure to be used as a unique identifier.</span></span> 
+<span data-ttu-id="20c76-105">一意の [識別子として使用する新しい MAPIUID](mapiuid.md) 構造を作成します。</span><span class="sxs-lookup"><span data-stu-id="20c76-105">Creates a new [MAPIUID](mapiuid.md) structure to be used as a unique identifier.</span></span> 
   
 ```cpp
 HRESULT NewUID(
@@ -33,31 +33,31 @@ LPMAPIUID lpMuid
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="fad07-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="fad07-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="20c76-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="20c76-106">Parameters</span></span>
 
- <span data-ttu-id="fad07-107">_lpmuid_</span><span class="sxs-lookup"><span data-stu-id="fad07-107">_lpMuid_</span></span>
+ <span data-ttu-id="20c76-107">_lpMuid_</span><span class="sxs-lookup"><span data-stu-id="20c76-107">_lpMuid_</span></span>
   
-> <span data-ttu-id="fad07-108">新しい**MAPIUID**構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="fad07-108">A pointer to the new **MAPIUID** structure.</span></span> 
+> <span data-ttu-id="20c76-108">新しい **MAPIUID 構造へのポインター** 。</span><span class="sxs-lookup"><span data-stu-id="20c76-108">A pointer to the new **MAPIUID** structure.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="fad07-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="fad07-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="20c76-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="20c76-109">Return value</span></span>
 
-<span data-ttu-id="fad07-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="fad07-110">S_OK</span></span> 
+<span data-ttu-id="20c76-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="20c76-110">S_OK</span></span> 
   
-> <span data-ttu-id="fad07-111">新しい**MAPIUID**構造が作成されました。</span><span class="sxs-lookup"><span data-stu-id="fad07-111">The new **MAPIUID** structure was created.</span></span> 
+> <span data-ttu-id="20c76-111">新しい **MAPIUID** 構造が作成されました。</span><span class="sxs-lookup"><span data-stu-id="20c76-111">The new **MAPIUID** structure was created.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="fad07-112">注釈</span><span class="sxs-lookup"><span data-stu-id="fad07-112">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="20c76-112">注釈</span><span class="sxs-lookup"><span data-stu-id="20c76-112">Remarks</span></span>
 
-<span data-ttu-id="fad07-113">**imapisupport:: newuid**メソッドは、すべてのサポートオブジェクトに実装されています。</span><span class="sxs-lookup"><span data-stu-id="fad07-113">The **IMAPISupport::NewUID** method is implemented for all support objects.</span></span> <span data-ttu-id="fad07-114">サービスプロバイダーとメッセージサービスは、長期の一意の識別子を生成する必要があるときに、 **newuid**を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="fad07-114">Service providers and message services call **NewUID** whenever they need to generate a long-term unique identifier.</span></span> <span data-ttu-id="fad07-115">たとえば、メッセージストアプロバイダーは**newuid**を呼び出して、新しく作成されたメッセージの**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) プロパティに入れる**MAPIUID**を取得することができます。</span><span class="sxs-lookup"><span data-stu-id="fad07-115">A message store provider, for example, might call **NewUID** to obtain a **MAPIUID** to put in the **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) property of a newly created message.</span></span>
+<span data-ttu-id="20c76-113">**IMAPISupport::NewUID** メソッドは、すべてのサポート オブジェクトに実装されます。</span><span class="sxs-lookup"><span data-stu-id="20c76-113">The **IMAPISupport::NewUID** method is implemented for all support objects.</span></span> <span data-ttu-id="20c76-114">サービス プロバイダーとメッセージ サービスは、長期的な一意識別子を生成する必要がある場合は常に **NewUID** を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="20c76-114">Service providers and message services call **NewUID** whenever they need to generate a long-term unique identifier.</span></span> <span data-ttu-id="20c76-115">たとえば、メッセージ ストア プロバイダーは NewUID を呼び出して、新しく作成されたメッセージの **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) プロパティに入れる **MAPIUID** を取得できます。 </span><span class="sxs-lookup"><span data-stu-id="20c76-115">A message store provider, for example, might call **NewUID** to obtain a **MAPIUID** to put in the **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) property of a newly created message.</span></span>
   
-## <a name="notes-to-callers"></a><span data-ttu-id="fad07-116">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="fad07-116">Notes to callers</span></span>
+## <a name="notes-to-callers"></a><span data-ttu-id="20c76-116">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="20c76-116">Notes to callers</span></span>
 
-<span data-ttu-id="fad07-117">ログオン時に登録した**MAPIUID**構造を、 **newuid**メソッドが作成する**MAPIUID**構造体と混同しないでください。</span><span class="sxs-lookup"><span data-stu-id="fad07-117">Do not confuse the **MAPIUID** structure that you register at logon time with the **MAPIUID** structures that the **NewUID** method creates.</span></span> <span data-ttu-id="fad07-118">[imapisupport:: setprovideruid](imapisupport-setprovideruid.md)メソッドを呼び出すときに登録する**MAPIUID**構造は、アドレス帳またはメッセージストアプロバイダーを MAPI に対して表し、さまざまなプロバイダーが作成するエントリ識別子を区別するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="fad07-118">The **MAPIUID** structure that you register when you call the [IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md) method represents your address book or message store provider to MAPI and is used to distinguish entry identifiers that different providers create.</span></span> <span data-ttu-id="fad07-119">この**MAPIUID**構造体は、ハードコーディングされている必要があり、 **newuid**への呼び出しによって取得されることはありません。</span><span class="sxs-lookup"><span data-stu-id="fad07-119">This **MAPIUID** structure should be hard-coded and not obtained through a call to **NewUID**.</span></span>
+<span data-ttu-id="20c76-117">ログオン時に登録する **MAPIUID** 構造と **、NewUID** メソッドが作成する **MAPIUID** 構造体を混同し、混同しなさらね。</span><span class="sxs-lookup"><span data-stu-id="20c76-117">Do not confuse the **MAPIUID** structure that you register at logon time with the **MAPIUID** structures that the **NewUID** method creates.</span></span> <span data-ttu-id="20c76-118">[IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md)メソッドを呼び出す際に登録する **MAPIUID** 構造は、MAPI へのアドレス帳またはメッセージ ストア プロバイダーを表し、異なるプロバイダーが作成するエントリ識別子を区別するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="20c76-118">The **MAPIUID** structure that you register when you call the [IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md) method represents your address book or message store provider to MAPI and is used to distinguish entry identifiers that different providers create.</span></span> <span data-ttu-id="20c76-119">この **MAPIUID** 構造体はハードコードされ **、NewUID** の呼び出しでは取得されません。</span><span class="sxs-lookup"><span data-stu-id="20c76-119">This **MAPIUID** structure should be hard-coded and not obtained through a call to **NewUID**.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="fad07-120">関連項目</span><span class="sxs-lookup"><span data-stu-id="fad07-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="20c76-120">関連項目</span><span class="sxs-lookup"><span data-stu-id="20c76-120">See also</span></span>
 
 
 
-[<span data-ttu-id="fad07-121">MAPIUID</span><span class="sxs-lookup"><span data-stu-id="fad07-121">MAPIUID</span></span>](mapiuid.md)
+[<span data-ttu-id="20c76-121">MAPIUID</span><span class="sxs-lookup"><span data-stu-id="20c76-121">MAPIUID</span></span>](mapiuid.md)
   
-[<span data-ttu-id="fad07-122">IMAPISupport: IUnknown</span><span class="sxs-lookup"><span data-stu-id="fad07-122">IMAPISupport : IUnknown</span></span>](imapisupportiunknown.md)
+[<span data-ttu-id="20c76-122">IMAPISupport: IUnknown</span><span class="sxs-lookup"><span data-stu-id="20c76-122">IMAPISupport : IUnknown</span></span>](imapisupportiunknown.md)
 

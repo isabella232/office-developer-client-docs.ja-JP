@@ -18,33 +18,33 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33408916"
 ---
-# <a name="func1"></a><span data-ttu-id="fa15b-104">Func1</span><span class="sxs-lookup"><span data-stu-id="fa15b-104">Func1</span></span>
+# <a name="func1"></a><span data-ttu-id="cc978-104">Func1</span><span class="sxs-lookup"><span data-stu-id="cc978-104">Func1</span></span>
 
- <span data-ttu-id="fa15b-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="fa15b-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
+ <span data-ttu-id="cc978-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="cc978-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
   
-<span data-ttu-id="fa15b-p101">ユーザー定義のワークシート関数の例で、返される静的な文字列値について説明します。GENERIC.xll が読み込まれると、GENERIC.xll によってこの関数が登録されて、ワークシートから呼び出すことができるようになります。</span><span class="sxs-lookup"><span data-stu-id="fa15b-p101">Example user-defined worksheet function demonstrates the return of a static string value. When GENERIC.xll is loaded, it registers this function so that it can be called from the worksheet.</span></span>
+<span data-ttu-id="cc978-p101">ユーザー定義のワークシート関数の例で、返される静的な文字列値について説明します。GENERIC.xll が読み込まれると、GENERIC.xll によってこの関数が登録されて、ワークシートから呼び出すことができるようになります。</span><span class="sxs-lookup"><span data-stu-id="cc978-p101">Example user-defined worksheet function demonstrates the return of a static string value. When GENERIC.xll is loaded, it registers this function so that it can be called from the worksheet.</span></span>
   
 ```cs
 LPXLOPER12 WINAPI Func1(LPXLOPER12 px);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="fa15b-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="fa15b-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="cc978-108">パラメーター</span><span class="sxs-lookup"><span data-stu-id="cc978-108">Parameters</span></span>
 
- <span data-ttu-id="fa15b-109">_px_ (**LPXLOPER**)</span><span class="sxs-lookup"><span data-stu-id="fa15b-109">_px_ (**LPXLOPER**)</span></span>
+ <span data-ttu-id="cc978-109">_px_ (**LPXLOPER**)</span><span class="sxs-lookup"><span data-stu-id="cc978-109">_px_ (**LPXLOPER**)</span></span>
   
-<span data-ttu-id="fa15b-110">この引数は無視され、Microsoft Excel をトリガーして関数を呼び出すためだけの役目を果たします。</span><span class="sxs-lookup"><span data-stu-id="fa15b-110">This argument is ignored, and serves only to trigger Microsoft Excel to call the function.</span></span>
+<span data-ttu-id="cc978-110">この引数は無視され、Microsoft Excel をトリガーして関数を呼び出すためだけの役目を果たします。</span><span class="sxs-lookup"><span data-stu-id="cc978-110">This argument is ignored, and serves only to trigger Microsoft Excel to call the function.</span></span>
   
-## <a name="property-valuereturn-value"></a><span data-ttu-id="fa15b-111">プロパティ値/戻り値</span><span class="sxs-lookup"><span data-stu-id="fa15b-111">Property value/Return value</span></span>
+## <a name="property-valuereturn-value"></a><span data-ttu-id="cc978-111">プロパティ値/戻り値</span><span class="sxs-lookup"><span data-stu-id="cc978-111">Property value/Return value</span></span>
 
- <span data-ttu-id="fa15b-112">**LPXLOPER12**: 常に文字列 "Func1"</span><span class="sxs-lookup"><span data-stu-id="fa15b-112">**LPXLOPER12**: Always the string "Func1"</span></span>
+ <span data-ttu-id="cc978-112">**LPXLOPER12**: 常に文字列 "Func1"</span><span class="sxs-lookup"><span data-stu-id="cc978-112">**LPXLOPER12**: Always the string "Func1"</span></span>
   
-### <a name="example"></a><span data-ttu-id="fa15b-113">例</span><span class="sxs-lookup"><span data-stu-id="fa15b-113">Example</span></span>
+### <a name="example"></a><span data-ttu-id="cc978-113">例</span><span class="sxs-lookup"><span data-stu-id="cc978-113">Example</span></span>
 
-<span data-ttu-id="fa15b-114">この関数のソース コードについては、`\SAMPLES\GENERIC\GENERIC.C` を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fa15b-114">See  `\SAMPLES\GENERIC\GENERIC.C` for the source code for this function.</span></span> 
+<span data-ttu-id="cc978-114">この関数のソース コードについては、`\SAMPLES\GENERIC\GENERIC.C` を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cc978-114">See  `\SAMPLES\GENERIC\GENERIC.C` for the source code for this function.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="fa15b-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="fa15b-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cc978-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="cc978-115">See also</span></span>
 
 
 
-[<span data-ttu-id="fa15b-116">汎用 DLL の関数</span><span class="sxs-lookup"><span data-stu-id="fa15b-116">Functions in the Generic DLL</span></span>](functions-in-the-generic-dll.md)
+[<span data-ttu-id="cc978-116">汎用 DLL の関数</span><span class="sxs-lookup"><span data-stu-id="cc978-116">Functions in the Generic DLL</span></span>](functions-in-the-generic-dll.md)
 
