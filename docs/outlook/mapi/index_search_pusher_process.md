@@ -15,13 +15,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33423350"
 ---
-# <a name="indexsearchpusherprocess"></a>INDEX_SEARCH_PUSHER_PROCESS
+# <a name="index_search_pusher_process"></a>INDEX_SEARCH_PUSHER_PROCESS
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI プロトコルハンドラーに通知を送信しているプロセスを指定します。そのストア内のオブジェクトは、インデックス処理の準備ができています。
+そのストア内のオブジェクトがインデックス作成の準備ができているという通知を MAPI プロトコル ハンドラーに送信するプロセスを指定します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -33,8 +33,8 @@ typedef struct _INDEX_SEARCH_PUSHER_PROCESS {
 
 ## <a name="members"></a>メンバー
 
- *dwpid* 
+ *dwPID* 
   
->  MAPI プロトコルハンドラーのインデクサーにインデックス通知を送信しているプロセスのプロセス ID。 
+>  MAPI プロトコル ハンドラーのインデクサーにインデックス通知を送信するプロセスのプロセス ID。 
     
 

@@ -25,12 +25,12 @@ ms.locfileid: "33405514"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-オブジェクトのプロパティの属性の一覧が含まれています。 
+オブジェクトのプロパティの属性の一覧を含む。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Imessage  <br/> |
-|関連するマクロ:  <br/> |[CbNewSPropAttrArray](cbnewspropattrarray.md)、 [cbspro trarray](cbspropattrarray.md) <br/> |
+|ヘッダー ファイル:  <br/> |Imessage.h  <br/> |
+|関連するマクロ:  <br/> |[CbNewSPropAttrArray](cbnewspropattrarray.md)、 [CbSPropAttrArray](cbspropattrarray.md) <br/> |
    
 ```cpp
 typedef struct
@@ -41,13 +41,13 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cvalues**
+ **cValues**
   
-> **apropattr**メンバーのプロパティ属性の数。 
+> **aPropAttr メンバーのプロパティ属性の** 数。 
     
- **apropattr**
+ **aPropAttr**
   
 > プロパティ属性の配列。 属性の有効な値は次のとおりです。
     
@@ -61,7 +61,7 @@ typedef struct
     
 ## <a name="remarks"></a>注釈
 
-**sproな trarray**構造体は、 [ipropdata: imapiprop](ipropdataimapiprop.md)インターフェイスを実装するプロパティデータオブジェクトによって使用されます。 また、構造化ストレージに基づく[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)の MAPI 実装でも使用されます。 
+**SPropAttrArray** 構造体は [、IPropData : IMAPIProp](ipropdataimapiprop.md)インターフェイスを実装するプロパティ データ オブジェクトによって使用されます。 また、MAPI の [IMAPIMessageSite : 構造化](imapimessagesiteiunknown.md) ストレージに基づく IUnknown の実装でも使用されます。 
   
 ## <a name="see-also"></a>関連項目
 

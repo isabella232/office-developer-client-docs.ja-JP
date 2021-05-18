@@ -1,5 +1,5 @@
 ---
-title: ユーザーインターフェイスコマンド (Access カスタム web アプリ)
+title: ユーザー インターフェイス コマンド (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,18 +14,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421691"
 ---
-# <a name="user-interface-commands-access-custom-web-app"></a>ユーザーインターフェイスコマンド (Access カスタム web アプリ)
+# <a name="user-interface-commands-access-custom-web-app"></a>ユーザー インターフェイス コマンド (Access カスタム Web アプリ)
 
 > [!IMPORTANT]
 > マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [changeview マクロアクション (Access カスタム web アプリ)](changeview-macro-action-access-custom-web-app.md)
+- [ChangeView マクロ アクション (カスタム Web アプリへのアクセス)](changeview-macro-action-access-custom-web-app.md)
     
-- [closepopup マクロアクション (Access カスタム web アプリ)](closepopup-macro-action-access-custom-web-app.md)
+- [ClosePopup マクロ アクション (Access カスタム Web アプリ)](closepopup-macro-action-access-custom-web-app.md)
     
-- [MessageBox マクロアクション (Access カスタム web アプリ)](messagebox-macro-action-access-custom-web-app.md)
+- [MessageBox マクロ アクション (Access カスタム Web アプリ)](messagebox-macro-action-access-custom-web-app.md)
     
 - [OpenPopup マクロのアクション (カスタム web アプリケーションのアクセス)](openpopup-macro-action-access-custom-web-app.md)
     

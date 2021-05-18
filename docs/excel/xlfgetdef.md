@@ -45,8 +45,8 @@ _pxTypeNum_ (**xltypeNum**)
 |**_pxTypeNum_**|**返される値**|
 |:-----|:-----|
 |1 または省略  <br/> |標準名のみ。  <br/> |
-|2   <br/> |非表示名のみ。  <br/> |
-|3   <br/> |すべての名前。  <br/> |
+|2  <br/> |非表示名のみ。  <br/> |
+|3  <br/> |すべての名前。  <br/> |
    
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
@@ -60,10 +60,10 @@ _pxTypeNum_ (**xltypeNum**)
   
 |**Excel で定義された名前**|**_pxDefText_**|**_pxDocumentText_**|**_pxTypeNum_**|**戻り値**|
 |:-----|:-----|:-----|:-----|:-----|
-|Sheet4 の指定の範囲には「Sales」という名前が付いています。  <br/> |"R2C2:R9C6"  <br/> |"Sheet4"  <br/> |\<�ȗ�\>  <br/> |"Sales"  <br/> |
-|Sheet4 の値 100 は、「Constant」として定義されています。  <br/> |"100"  <br/> |"Sheet4"  <br/> |\<�ȗ�\>  <br/> |"Constant"  <br/> |
-|Sheet4 の指定の数式には「SumTotal」という名前が付いています。  <br/> |"SUM(R1C1:R10C1)"  <br/> |"Sheet4"  <br/> |\<�ȗ�\>  <br/> |"SumTotal"  <br/> |
-|アクティブなシートの非表示名「Counter」として 3 が定義されています。  <br/> |"3"  <br/> |\<省略\>  <br/> |2   <br/> |"Counter"  <br/> |
+|Sheet4 の指定の範囲には「Sales」という名前が付いています。  <br/> |"R2C2:R9C6"  <br/> |"Sheet4"  <br/> |\<省略\>  <br/> |"Sales"  <br/> |
+|Sheet4 の値 100 は、「Constant」として定義されています。  <br/> |"100"  <br/> |"Sheet4"  <br/> |\<省略\>  <br/> |"Constant"  <br/> |
+|Sheet4 の指定の数式には「SumTotal」という名前が付いています。  <br/> |"SUM(R1C1:R10C1)"  <br/> |"Sheet4"  <br/> |\<省略\>  <br/> |"SumTotal"  <br/> |
+|アクティブなシートの非表示名「Counter」として 3 が定義されています。  <br/> |"3"  <br/> |\<省略\>  <br/> |2  <br/> |"Counter"  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

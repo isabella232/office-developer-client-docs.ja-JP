@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 40b50181-f88c-40ee-b3d0-a36dd36c158e
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 4b2aa12b1b81dfd218781a839f5f84881763ef06
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "32359550"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ローミングディクショナリを記述する XML ドキュメントが保存されています。
+ローミング ディクショナリを記述する XML ドキュメントが含まれる。
   
 |||
 |:-----|:-----|
@@ -32,9 +32,9 @@ ms.locfileid: "32359550"
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |構成  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このプロパティには、UTF8 エンコードを使用する UNICODE XML ドキュメントが含まれています。 dictionary ストリームを含むメッセージは、次のスキーマを使用してこのプロパティを設定する必要があります。
+このプロパティには、UTF8 エンコードを使用している UNICODE XML ドキュメントが含まれる。 辞書ストリームを含むメッセージは、次のスキーマでこのプロパティを設定する必要があります。
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?> 
@@ -50,7 +50,7 @@ ms.locfileid: "32359550"
    </xs:complexType>
 ```
 
-構成データメッセージのこのプロパティに格納されている XML ドキュメントの例を次に示します。 
+構成データ メッセージにこのプロパティに格納されている XML ドキュメントの例を次に示します。 
   
 ```xml
 <?xml version="1.0"?> 
@@ -68,23 +68,23 @@ ms.locfileid: "32359550"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
+[[MS-OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
   
-> カテゴリの共有リストや稼働時間など、クライアントおよびサーバーの構成データの場所とプロパティを指定します。
+> 共有カテゴリ リストや作業時間など、クライアントおよびサーバー構成データの場所とプロパティを指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
+> 関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -94,7 +94,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

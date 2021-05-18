@@ -26,7 +26,7 @@ ms.locfileid: "32359738"
 
 次のコード例の AssignTaskExample は、[TaskItem](https://msdn.microsoft.com/library/bb624227\(v=office.15\)) オブジェクトを作成し、[Subject](https://msdn.microsoft.com/library/bb624148\(v=office.15\))、[StartDate](https://msdn.microsoft.com/library/bb643988\(v=office.15\))、および [DueDate](https://msdn.microsoft.com/library/bb612307\(v=office.15\)) プロパティの値を指定します。 [Assign()](https://msdn.microsoft.com/library/bb644565\(v=office.15\)) メソッドを使用して、このタスクが割り当てられたタスクであることを指定します。 [Add(String)](https://msdn.microsoft.com/library/bb612668\(v=office.15\)) メソッドを使用して [Recipient](https://msdn.microsoft.com/library/bb624370\(v=office.15\)) オブジェクトを **TaskItem** に追加した後、[Send()](https://msdn.microsoft.com/library/bb646608\(v=office.15\)) メソッドでタスクを受信者に送信します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

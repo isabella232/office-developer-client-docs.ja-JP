@@ -72,7 +72,7 @@ ms.locfileid: "32359172"
 
 次のコード例では、RecurringAppointmentEveryMondayWednesdayFriday で [AppointmentItem](https://msdn.microsoft.com/library/bb645611\(v=office.15\)) オブジェクトを作成し、新しく作成した予定の RecurrencePattern オブジェクト取得するために [GetRecurrencePattern()](https://msdn.microsoft.com/library/bb652582\(v=office.15\)) を呼び出しています。 その後、RecurringAppointmentEveryMondayWednesdayFriday では、RecurrenceType、DayOfWeekMask、PatternStartDate、PatternEndDate、Duration、StartTime、EndTime、および Subject の各プロパティを設定し、予定を保存して、最終的に「毎週月曜、水曜、金曜に発生: 有効期間 2006/7/10 から 2006/8/25: 午後 2:00 から午後 3:00 まで」のパターンで予定を表示します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

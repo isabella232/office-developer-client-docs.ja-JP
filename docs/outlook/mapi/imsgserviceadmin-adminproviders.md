@@ -37,17 +37,17 @@ HRESULT AdminProviders(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpuid_
+ _lpUID_
   
-> 順番管理するメッセージサービスの一意の識別子を含む[MAPIUID](mapiuid.md)構造体へのポインター。 
+> [in]管理するメッセージ サービスの一意の識別子を含む [MAPIUID](mapiuid.md) 構造体へのポインター。 
     
  _ulFlags_
   
-> 順番常に NULL。 
+> [in]常に NULL。 
     
- _lppprovideradmin_
+ _lppProviderAdmin_
   
-> 読み上げプロバイダー管理オブジェクトへのポインターへのポインター。
+> [out]プロバイダー管理オブジェクトへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -57,25 +57,25 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> _lpuid_が指す**MAPIUID**が存在しません。 
+> **lpUID が** 指す _MAPIUID_ が存在しません。 
     
 ## <a name="remarks"></a>注釈
 
-**IMsgServiceAdmin:: adminproviders**メソッドは、プロバイダ管理オブジェクトへのアクセスを提供します。 プロバイダー管理は、 [IProviderAdmin](iprovideradminiunknown.md)インターフェイスをサポートし、クライアントが次の操作を実行できるようにするオブジェクトです。 
+**IMsgServiceAdmin::AdminProviders メソッドは**、プロバイダー管理オブジェクトへのアクセスを提供します。 プロバイダー管理は [、IProviderAdmin](iprovideradminiunknown.md) インターフェイスをサポートし、クライアントが次の操作を実行できるオブジェクトです。 
   
-- メッセージサービスにサービスプロバイダーを追加します。
+- サービス プロバイダーをメッセージ サービスに追加します。
     
-- メッセージサービスからサービスプロバイダーを削除します。
+- メッセージ サービスからサービス プロバイダーを削除します。
     
-- [プロファイル] セクションを開きます。
+- プロファイル セクションを開きます。
     
-- メッセージサービスプロバイダテーブルにアクセスします。
+- メッセージ サービス プロバイダー テーブルにアクセスします。
     
-プロファイルが使用されている間にメッセージサービスに対して実際に行うことができる変更の種類は、メッセージサービスによって異なります。 ただし、ほとんどのメッセージサービスでは、プロファイルの使用中にプロバイダーを追加および削除するなどの変更はサポートされていません。
+プロファイルの実行中に実際にメッセージ サービスに対して行える変更の種類は、メッセージ サービスによって異なります。 ただし、ほとんどのメッセージ サービスでは、プロファイルの実行中にプロバイダーの追加や削除などの変更はサポートされていません。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-管理するメッセージサービスの**MAPIUID**構造を取得するには、メッセージサービステーブルのメッセージサービスの行から**PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) プロパティ列を取得します。 詳細については、 [IMsgServiceAdmin:: CreateMsgService](imsgserviceadmin-createmsgservice.md)メソッドに記載されている手順を参照してください。 
+管理するメッセージ サービスの **MAPIUID** 構造を取得するには、メッセージ サービス テーブルのメッセージ サービスの行から **PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) プロパティ列を取得します。 詳細については [、「IMsgServiceAdmin::CreateMsgService メソッド」で説明されている手順を参照](imsgserviceadmin-createmsgservice.md) してください。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -83,7 +83,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MsgServiceTableDlg  <br/> |CMsgServiceTableDlg:: ondisplayitem  <br/> |mfcmapi は、 **IMsgServiceAdmin:: adminproviders**メソッドを使用して、サービスのプロバイダー管理オブジェクトを開きます。  <br/> |
+|MsgServiceTableDlg.cpp  <br/> |CMsgServiceTableDlg::OnDisplayItem  <br/> |MFCMAPI は **、IMsgServiceAdmin::AdminProviders** メソッドを使用して、サービスのプロバイダー管理オブジェクトを開きます。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

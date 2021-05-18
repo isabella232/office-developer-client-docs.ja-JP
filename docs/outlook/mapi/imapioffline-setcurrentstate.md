@@ -1,5 +1,5 @@
 ---
-title: imapiofflinesetlevel
+title: IMAPIOfflineSetCurrentState
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33421740"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-オフラインオブジェクトの現在の状態をオンラインまたはオフラインに設定します。
+オフライン オブジェクトの現在の状態をオンラインまたはオフラインに設定します。
   
 ```cpp
 HRESULT SetCurrentState( 
@@ -40,23 +40,23 @@ HRESULT SetCurrentState(
 
  _ulFlags_
   
-> 順番この呼び出しの動作を変更します。 サポートされている値を次に示します。
+> [in]この呼び出しの動作を変更します。 サポートされている値を次に示します。
     
 MAPIOFFLINE_FLAG_BLOCK
   
-> _ulflags_をこの値に設定すると**** 、状態の変更が完了するまで setlevelcall がブロックされます。 既定では、移行は非同期的に行われます。 遷移が非同期で発生している**** 場合、すべての setcurrentstate 呼び出しは、変更が完了するまで**** を返します。 
+> _ulFlags をこの_ 値に設定すると、状態の変更が完了するまで **SetCurrentState** 呼び出しがブロックされます。 既定では、移行は非同期的に行います。 移行が非同期的に発生すると、変更が完了するまで、 **すべての SetCurrentState** 呼び **E_PENDINGが返** されます。 
     
 MAPIOFFLINE_FLAG_DEFAULT
   
 > ブロックせずに現在の状態を設定します。
     
- _ulmask_
+ _ulMask_
   
-> 順番変更する状態の部分。 サポートされている値は MAPIOFFLINE_STATE_OFFLINE_MASK のみです。
+> [in]変更する状態の部分。 サポートされている唯一の値は、MAPIOFFLINE_STATE_OFFLINE_MASK。
     
- _ulstate_
+ _ulState_
   
-> 順番変更後の状態。 次の2つの値のいずれかである必要があります。
+> [in]に変更する状態。 この値は、次の 2 つの値の 1 つである必要があります。
     
 MAPIOFFLINE_STATE_ONLINE
   
@@ -66,19 +66,19 @@ MAPIOFFLINE_STATE_OFFLINE
   
 > 
     
- _保持され_
+ _pReserved_
   
-> このパラメーターは、Outlook の内部使用のために予約されており、サポートされていません。 
+> このパラメーターは、内部Outlook使用するために予約され、サポートされていません。 
     
 ## <a name="return-value"></a>戻り値
 
 S_OK
   
-> オフラインオブジェクトの状態が正常に変更されました。
+> オフライン オブジェクトの状態が正常に変更されました。
     
 E_PENDING
   
-> これは、オフラインオブジェクトの状態が非同期に変化していることを示します。 これは、 _ulflags_が以前の setcurrentstate に設定**** されている場合に発生し、以降の**setcurrentstate**変更が完了するまでこの値が返されます。 
+> これは、オフライン オブジェクトの状態が非同期的に変化している状態を示します。 これは、以前の **SetCurrentState** 呼び出しで _ulFlags_ が MAPIOFFLINE_FLAG_BLOCK に設定され、それ以降の **SetCurrentState** 呼び出しが非同期状態の変更が完了するまでこの値を返す場合に発生します。 
     
 ## <a name="see-also"></a>関連項目
 

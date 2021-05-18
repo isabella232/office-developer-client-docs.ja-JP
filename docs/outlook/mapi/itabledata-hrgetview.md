@@ -1,5 +1,5 @@
 ---
-title: itabledatahrgetview
+title: ITableDataHrGetView
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "32278716"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[IMAPITable](imapitableiunknown.md)実装へのポインターを返すテーブルビューを作成します。 
+IMAPITable 実装へのポインターを返すテーブル [ビューを作成](imapitableiunknown.md) します。 
   
 ```cpp
 HRESULT HrGetView(
@@ -38,21 +38,21 @@ HRESULT HrGetView(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpssortorderset_
+ _lpSSortOrderSet_
   
-> 順番テーブルビューの並べ替え順序を記述する並べ替え順序構造体へのポインター。 _lpssortorderset_パラメーターで NULL が渡された場合、ビューは並べ替えられません。 
+> [in]テーブル ビューの並べ替え順序を表す並べ替え順序構造へのポインター。 _lpSSortOrderSet_ パラメーターで NULL が渡された場合、ビューは並べ替えされません。 
     
- _lpfcallerrelease_
+ _lpfCallerRelease_
   
-> 順番ビューを解放したときに MAPI が呼び出す呼び出し[errelease](callerrelease.md)プロトタイプに基づく、コールバック関数へのポインター。 _lpfcallerrelease_パラメーターで NULL が渡された場合、ビューのリリース時に関数は呼び出されません。 
+> [in]MAPI がビューを解放するときに呼び出す [CALLERRELEASE](callerrelease.md) プロトタイプに基づくコールバック関数へのポインター。 _lpfCallerRelease_ パラメーターで NULL が渡された場合、ビューのリリース時に関数は呼び出されません。 
     
- _ulcallerdata_
+ _ulCallerData_
   
-> 順番新しいビューで保存する必要があり、 _lpfcallerrelease_が指すコールバック関数に渡されるデータ。
+> [in]新しいビューで保存し  _、lpfCallerRelease_ が指すコールバック関数に渡す必要があるデータ。
     
  _lppMAPITable_
   
-> 読み上げ新しく作成されたビューへのポインターへのポインター。
+> [out]新しく作成されたビューへのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -60,13 +60,13 @@ S_OK
   
 > ビューが正常に作成されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**itabledata:: hrgetview**メソッドは、テーブル内のデータの読み取り専用のビューを作成します。これは、 _lpssortorderset_パラメーターで示された順序で並べ替えられます。 カーソルは、ビューの最初の行の先頭に配置されます。 ビューにアクセスするための**IMAPITable**インターフェイスの実装が返されます。 
+**ITableData::HrGetView** メソッドは _、lpSSortOrderSet_ パラメーターが指す順序で並べ替え、テーブル内のデータの読み取り専用ビューを作成します。 カーソルは、ビューの最初の行の先頭に配置されます。 ビュー **にアクセスする IMAPITable** インターフェイス実装が返されます。 
   
-サービスプロバイダーは、クライアントがテーブルにアクセスできるようにする必要がある場合に**hrgetview**を呼び出します。 **hrgetview**はビューを作成し、 **IMAPITable**ポインターを返します。 その後、サービスプロバイダーはクライアントにポインターを渡します。 表を使用してクライアントが終了し、その[IUnknown:: Release](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx)メソッドを呼び出すと、 **hrgetview**は_lpfcallerrelease_パラメーターで指定されたコールバック関数を呼び出します。 
+サービス プロバイダーは、 **クライアントにテーブルへの** アクセス権を与える必要がある場合に HrGetView を呼び出します。 **HrGetView は** ビューを作成し **、IMAPITable ポインターを返** します。 サービス プロバイダーは、クライアントにポインターを渡します。 クライアントがテーブルの使用を終了し、 [その IUnknown::Release](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) メソッドを呼び出す場合 **、HrGetView** は  _lpfCallerRelease_ パラメーターが指すコールバック関数を呼び出します。 
   
-サービスプロバイダーが、カスタマイズされた列セットまたは制限を持つビューをクライアントに戻す必要がある場合、プロバイダーはクライアントアクセスを許可する前に、ビューの[IMAPITable:: SetColumns](imapitable-setcolumns.md)および[imapitable:: Restrict](imapitable-restrict.md)メソッドを呼び出すことができます。 
+サービス プロバイダーがカスタマイズされた列セットまたは制限を持つビューをクライアントに返す必要がある場合、プロバイダーは、クライアント アクセスを許可する前に、ビューの [IMAPITable::SetColumns](imapitable-setcolumns.md) メソッドと [IMAPITable::Restrict](imapitable-restrict.md) メソッドを呼び出すことができます。 
   
 ## <a name="see-also"></a>関連項目
 

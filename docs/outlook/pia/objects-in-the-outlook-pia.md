@@ -1,5 +1,5 @@
 ---
-title: Outlook PIA でのオブジェクト
+title: Outlook PIA のオブジェクト
 TOCTitle: Objects in the Outlook PIA
 ms:assetid: 1be732a6-d6da-4fa0-beaa-accf35db12d6
 ms:mtpsurl: https://msdn.microsoft.com/library/Bb609459(v=office.15)

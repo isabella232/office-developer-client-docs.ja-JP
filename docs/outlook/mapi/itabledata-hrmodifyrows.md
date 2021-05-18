@@ -1,5 +1,5 @@
 ---
-title: itabledatahrmodifyrows
+title: ITableDataHrModifyRows
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33405360"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-複数のテーブル行を挿入します。既存の行を置換する場合もあります。
+複数のテーブル行を挿入し、既存の行を置き換える可能性があります。
   
 ```cpp
 HRESULT HrModifyRows(
@@ -40,9 +40,9 @@ HRESULT HrModifyRows(
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lpsrowset_
+ _lpSRowSet_
   
-> 順番追加する行のセットを含む[srowset](srowset.md)構造体へのポインター。必要に応じて既存の行を置き換えます。 行セットの各[srow](srow.md)構造の**lpprops**メンバーによって参照されているプロパティ値構造の1つに、インデックス列が含まれている必要があります。これには、 __ [ulPropTagIndexColumn パラメーターで指定したものと同じ値があります。CreateTable](createtable.md)関数。 
+> [in]追加する行のセットを含む [SRowSet](srowset.md) 構造体へのポインターで、必要に応じて既存の行を置き換える。 行セット内の [各 SRow](srow.md)構造体の **lpProps** メンバーが指すプロパティ値構造の 1 つには [、CreateTable](createtable.md)関数の呼び出しで _ulPropTagIndexColumn_ パラメーターで指定されたのと同じインデックス列が含まれている必要があります。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -52,17 +52,17 @@ S_OK
     
 MAPI_E_INVALID_PARAMETER 
   
-> 渡された1つ以上の行にインデックス列がありません。 このエラーが返された場合、行は変更されません。
+> 1 つ以上の渡された行にインデックス列が含まれます。 このエラーが返された場合、行は変更されません。
     
 ## <a name="remarks"></a>注釈
 
-**itabledata:: hrmodifyrows**メソッドは、 _lpsrowset_パラメーターで指定された[srowset](srowset.md)構造によって示される行を挿入します。 行セットの行のインデックス列の値が、テーブル内の既存の行の値と一致する場合は、既存の行が置き換えられます。 **srowset**構造に含まれるものに一致する行が存在しない場合、 **hrmodifyrows**はテーブルの末尾に行を追加します。 
+**ITableData::HrModifyRows** メソッドは _、lpSRowSet_ パラメーターが指す [SRowSet](srowset.md)構造体で記述された行を挿入します。 行セット内の行のインデックス列の値がテーブル内の既存の行の値と一致する場合は、既存の行が置き換えられる。 **SRowSet** 構造体に含まれる行と一致する行が存在しない場合 **、HrModifyRows** は行をテーブルの末尾に追加します。 
   
-テーブルのすべてのビューは、 _lpsrowset_で示される行を含むように変更されます。 ただし、ビューに行を除外する制限がある場合は、ユーザーに表示されないことがあります。 
+テーブルのすべてのビューは  _、lpSRowSet_ が指す行を含む変更を行います。 ただし、ビューに行を除外する制限がある場合は、ユーザーに表示されない場合があります。 
   
-_lpsrowset_で示される行の列は、テーブル内の列と同じ順序である必要はありません。 また、呼び出し元には、現在テーブルにない列のプロパティを含めることもできます。 既存のビューの場合、 **hrmodifyrows**によって、これらの新しい列が使用可能になりますが、現在の列のセットには含まれません。 今後のビューの場合、 **hrmodifyrows**には列セットの新しい列が含まれます。 
+_lpSRowSet_ が指す行の列は、テーブル内の列と同じ順序である必要があります。 呼び出し元は、現在テーブルに含めされていない列プロパティとして含めすることもできます。 既存のビューの **場合、HrModifyRows** は、これらの新しい列を使用できますが、現在の列セットには含められません。 今後のビューでは **、HrModifyRows には** 列セットに新しい列が含まれます。 
   
-**hrmodifyrows**が行を追加すると、テーブルのビューを持つすべてのクライアントまたはサービスプロバイダーに通知が送信され、通知のために登録するためにテーブルの[IMAPITable:: アドバイズ](imapitable-advise.md)メソッドを呼び出します。 MAPI は、各行に対して TABLE_ROW_ADDED または TABLE_ROW_MODIFIED の通知を送信します。最大8行。 **hrmodifyrows**呼び出しの処理に8行を超える行が含まれている場合、MAPI は代わりに1つの TABLE_CHANGED 通知を送信します。 
+**HrModifyRows** が行を追加すると、テーブルのビューを持ち、テーブルの [IMAPITable::Advise](imapitable-advise.md)メソッドを呼び出して通知を登録しているすべてのクライアントまたはサービス プロバイダーに通知が送信されます。 MAPI は、TABLE_ROW_ADDED行TABLE_ROW_MODIFIED、最大 8 行の通知を送信します。 8 行以上が **HrModifyRows** 呼び出しの影響を受ける場合、MAPI は代わりに 1 つのTABLE_CHANGED送信します。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: メッセージストアテーブル
+title: メッセージ ストア テーブル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,27 +15,27 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33405353"
 ---
-# <a name="message-store-tables"></a>メッセージストアテーブル
+# <a name="message-store-tables"></a>メッセージ ストア テーブル
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージストアテーブルには、現在のプロファイルのメッセージストアプロバイダーに関する情報が含まれています。 mapi によって実装され、クライアントによって使用される、すべての mapi セッションに対してメッセージストアテーブルが1つあります。 クライアントは、このテーブルを使用して、特定のプロバイダーのすべてのインスタンスを検索したり、特定のメッセージストアを見つけたりすることができます。 
+メッセージ ストア テーブルには、現在のプロファイルのメッセージ ストア プロバイダーに関する情報が含まれる。 MAPI セッションごとに 1 つのメッセージ ストア テーブルがあります。MAPI によって実装され、クライアントによって使用されます。 たとえば、クライアントは、このテーブルを使用して、特定のプロバイダーのすべてのインスタンスを検索したり、特定のメッセージ ストアを検索したりできます。 
   
-メッセージストアテーブルが動的である。 クライアントアプリケーションのユーザーがプロファイルを編集し、既定のメッセージストアを変更した場合は、影響を受けるメッセージストアの**PR_DEFAULT_STORE**プロパティの値がすぐに更新されます。 
+メッセージ ストア テーブルは動的です。 クライアント アプリケーションのユーザーがプロファイルを編集し、既定のメッセージ ストア (たとえば、影響を受けるメッセージ ストアの **PR_DEFAULT_STORE** プロパティの値) を変更すると、すぐに更新されます。 
   
-クライアントは、 [imapisession:: getmsgstorestable](imapisession-getmsgstorestable.md)メソッドを呼び出すことによって、メッセージストアテーブルにアクセスします。 
+クライアントは [、IMAPISession::GetMsgStoresTable](imapisession-getmsgstorestable.md) メソッドを呼び出してメッセージ ストア テーブルにアクセスします。 
   
-次のプロパティを使用して、メッセージストアテーブルで必要な列セットを作成します。
+次のプロパティは、メッセージ ストア テーブルで必要な列セットを構成します。
   
 |||
 |:-----|:-----|
-|**PR_DEFAULT_STORE**([PidTagDefaultStore](pidtagdefaultstore-canonical-property.md))  <br/> |**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |
-|**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |**PR_INSTANCE_KEY**([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))  <br/> |
-|**PR_MDB_PROVIDER**([PidTagStoreProvider](pidtagstoreprovider-canonical-property.md))  <br/> |**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |
-|**PR_PROVIDER_DISPLAY**([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md))  <br/> |**PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |
-|**PR_RESOURCE_FLAGS**([PidTagResourceFlags](pidtagresourceflags-canonical-property.md))  <br/> |**PR_RESOURCE_TYPE**([PidTagResourceType](pidtagresourcetype-canonical-property.md))  <br/> |
+|**PR_DEFAULT_STORE** ([PidTagDefaultStore](pidtagdefaultstore-canonical-property.md))  <br/> |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |
+|**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |**PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))  <br/> |
+|**PR_MDB_PROVIDER** ([PidTagStoreProvider](pidtagstoreprovider-canonical-property.md))  <br/> |**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |
+|**PR_PROVIDER_DISPLAY** ([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md))  <br/> |**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |
+|**PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md))  <br/> |**PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md))  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

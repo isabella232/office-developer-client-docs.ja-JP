@@ -21,34 +21,34 @@ ms.locfileid: "33422363"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-状態テーブルには、現在のセッションの状態に関する情報が含まれています。 mapi およびサービスプロバイダーによって提供される情報を含むすべての mapi セッションに対して、1つの状態テーブルがあります。 mapi では、mapi サブシステムの行、mapi スプーラーの行、統合アドレス帳の行という3つの行のデータが提供されます。 状態情報を状態テーブルに提供するにはトランスポートプロバイダーが必要であるため、アクティブなトランスポートプロバイダーごとに1つの行があります。 アドレス帳およびメッセージストアプロバイダーは、状態テーブルをサポートするかどうかを選択できます。 
+状態テーブルには、現在のセッションの状態に関連する情報が含まれている。 MAPI およびサービス プロバイダーによって提供される情報を含む MAPI セッションごとに 1 つの状態テーブルがあります。 MAPI は、MAPI サブシステムの行、MAPI スプーラーの行、および統合アドレス帳の行の 3 行のデータを提供します。 状態テーブルに状態情報を提供するにはトランスポート プロバイダーが必要なので、アクティブなトランスポート プロバイダーごとに 1 つの行があります。 アドレス帳とメッセージ ストア プロバイダーは、状態テーブルをサポートするかどうかを選択できます。 
   
-各行は別のリソースによって提供されるため、列のセットは行ごとに異なる場合があります。 すべてのステータスオブジェクトに必要な列のセットと、MAPI が提供する列のセットがあります。 サービスプロバイダーは、これらのセットに追加して、プロバイダー固有のプロパティを公開することができます。 たとえば、メッセージストアプロバイダーが**PR_STORE_RECORD_KEY** ([PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md)) を追加して、クライアントにメッセージストアの識別子を提供する場合があります。 クライアントは、この情報を使用できるようにするために、この特別な情報があるかどうかを事前に知っておく必要があります。 
+各行は異なるリソースによって提供されるので、列のセットは行ごとに異なる場合があります。 すべての status オブジェクトが指定するために必要な列のセットと、MAPI が提供する列のセットがあります。 サービス プロバイダーは、これらのセットに追加して、プロバイダー固有のプロパティを公開できます。 たとえば、メッセージ ストア プロバイダーは、PR_STORE_RECORD_KEY[(PidTagStoreRecordKey)](pidtagstorerecordkey-canonical-property.md)を追加して、クライアントにメッセージ ストアの識別子を提供します。  クライアントが使用するには、この追加情報の存在に関する事前の知識が必要です。 
   
-次の表に、すべての状態テーブルの行に必要なプロパティを示します。 status オブジェクトの実装側は、いくつかのプロパティを提供します。他のユーザーは MAPI によって計算されます。
+次の表に、すべての状態テーブル行に含む必要があるプロパティを示します。 status オブジェクトの実装者は、プロパティの一部を提供します。その他は MAPI によって計算されます。
   
-|**status オブジェクトによって提供されるプロパティ**|**MAPI で提供されるプロパティ**|
+|**status オブジェクトによって提供されるプロパティ**|**MAPI によって提供されるプロパティ**|
 |:-----|:-----|
-|**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |**PR_PROVIDER_DLL_NAME**([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md))  <br/> |
-|**PR_STATUS_CODE**([PidTagStatusCode](pidtagstatuscode-canonical-property.md))  <br/> |**PR_RESOURCE_FLAGS**([PidTagResourceFlags](pidtagresourceflags-canonical-property.md))  <br/> |
-|**PR_RESOURCE_METHODS**([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md))  <br/> |**PR_RESOURCE_TYPE**([PidTagResourceType](pidtagresourcetype-canonical-property.md))  <br/> |
+|**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |**PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md))  <br/> |
+|**PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md))  <br/> |**PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md))  <br/> |
+|**PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md))  <br/> |**PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md))  <br/> |
    
-status オブジェクトが id を提供する場合は、 **PR_IDENTITY_DISPLAY** ([PidTagIdentityDisplay](pidtagidentitydisplay-canonical-property.md))、 **PR_IDENTITY_ENTRYID** ([PidTagIdentityEntryId](pidtagidentityentryid-canonical-property.md))、および**PR_IDENTITY_SEARCH_KEY**を設定する必要があります ([PidTagIdentitySearchKey](pidtagidentitysearchkey-canonical-property.md)) を指定し、これらのプロパティをテーブルに含めます。 
+status オブジェクトが ID を提供する場合 **は、PR_IDENTITY_DISPLAY** ([PidTagIdentityDisplay)](pidtagidentitydisplay-canonical-property.md) **、PR_IDENTITY_ENTRYID** ([PidTagIdentityEntryId)、](pidtagidentityentryid-canonical-property.md)および **PR_IDENTITY_SEARCH_KEY** ([PidTagIdentitySearchKey)](pidtagidentitysearchkey-canonical-property.md)を設定し、これらのプロパティを表に含める必要があります。 
   
-各状態テーブルの行では、次の4つのプロパティが MAPI によって計算されます。
+MAPI では、状態テーブル行ごとに 4 つのプロパティが計算されます。
   
 |||
 |:-----|:-----|
-|**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |**PR_INSTANCE_KEY**([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))  <br/> |
-|**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |**PR_ROWID**([PidTagRowid](pidtagrowid-canonical-property.md))  <br/> |
+|**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |**PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))  <br/> |
+|**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |**PR_ROWID** ([PidTagRowid](pidtagrowid-canonical-property.md))  <br/> |
    
-MAPI は、ステータス行にエントリ識別子を割り当てて、クライアントが対応する status オブジェクトを開くことができるようにします。 また、status オブジェクトのデータを識別するためのインスタンスキーとして、テーブル内の行を識別するための行識別子も割り当てられます。 **PR_OBJECT_TYPE**プロパティは MAPI_STATUS に設定されています。 
+MAPI は、クライアントが対応する状態オブジェクトを開くことができる状態行にエントリ識別子を割り当てる。 行識別子は、テーブル内の行を、状態オブジェクト内のデータを識別するためのインスタンス キーとして割り当てられます。 プロパティ **PR_OBJECT_TYPE** に設定MAPI_STATUS。 
   
-状態テーブルにアクセスするために、クライアントは[imapisession:: getstatustable](imapisession-getstatustable.md)メソッドを呼び出します。 この呼び出しは、スタートアップ時に直ちに行わないでください。 これは、 **getstatustable**が MAPI スプーラーによるトランスポートプロバイダーの初期化を待機する必要があるためです。これは、クライアントがログオンを終了するまで延期される操作です。 **getstatustable**は、MAPI スプーラーがスタートアップ処理を完了した後、比較的高速な呼び出しです。 
+状態テーブルにアクセスするには、クライアントは [IMAPISession::GetStatusTable メソッドを呼び出](imapisession-getstatustable.md) します。 この呼び出しは、起動時に直ちに行う必要があります。 **これは、GetStatusTable** が MAPI スプーラーがトランスポート プロバイダーを初期化するのを待つ必要があるためです。これは、クライアントがログオンを完了するまで延期される操作です。 **GetStatusTable** は、MAPI スプーラーがスタートアップ処理を完了した後の比較的高速な呼び出しです。 
   
-状態テーブル情報は、ステータスオブジェクトへのアクセスなど、さまざまな方法で使用でき、クライアントが接続モードまたはオフラインモードで実行されているかどうかを確認し、プロバイダーの状態を監視します。 たとえば、クライアントは、 **PR_ENTRYID**プロパティの値を[imapisession:: openentry](imapisession-openentry.md)メソッドに渡すことによって、特定のサービスプロバイダーの状態オブジェクトを開くことができます。 status オブジェクトは、 **imapistatus**インターフェイスをサポートしています。このインターフェイスには、サービスプロバイダのパスワードを変更するメソッド、メッセージキューをフラッシュするメソッド、構成プロパティシートを表示するメソッド、またはプロバイダーによる状態を直接確認するメソッドが含まれています。 状態テーブル情報を使用して、時間のかかる操作中にクライアントに進行状況を通知するダイアログボックスを作成することもできます。 
+状態テーブルの情報は、状態オブジェクトにアクセスしたり、クライアントが接続モードまたはオフライン モードで実行されているかどうかを判断したり、プロバイダーの状態を監視したりするために、さまざまな方法で使用できます。 たとえば、クライアントは **、PR_ENTRYID** プロパティの値を [IMAPISession::OpenEntry](imapisession-openentry.md) メソッドに渡して、特定のサービス プロバイダーの状態オブジェクトを開きます。 status オブジェクトは **、IMAPIStatus** インターフェイスをサポートします。サービス プロバイダーのパスワードの変更、メッセージ キューのフラッシュ、構成プロパティ シートの表示、またはプロバイダーとの状態の直接確認を行うメソッドを含むインターフェイス。 状態テーブルの情報を使用して、長い操作中に進行状況をクライアントに通知するダイアログ ボックスを作成することもできます。 
   
-状態テーブルをサポートするサービスプロバイダーは、 [imapisupport:: modifystatusrow](imapisupport-modifystatusrow.md)メソッドを使用して、行を作成および更新します。 行が変更されるたびに、状態テーブル通知を受信するように登録されているすべてのアドバイズシンクオブジェクトに通知する必要があります。 MAPI 通知ユーティリティを使用している場合、または各アドバイズシンクの[IMAPIAdviseSink:: onnotify](imapiadvisesink-onnotify.md)メソッドを直接呼び出している場合は、サービスプロバイダーは[imapisupport:: Notify](imapisupport-notify.md)メソッドを呼び出すことができます。 
+状態テーブルをサポートするサービス プロバイダーは [、IMAPISupport::ModifyStatusRow](imapisupport-modifystatusrow.md) メソッドを使用して行を作成および更新します。 行に変更が発生するたびに、状態テーブル通知を受信するために登録されているすべてのアアドバイス シンク オブジェクトに通知する必要があります。 サービス プロバイダーは、MAPI 通知ユーティリティを使用している場合は [IMAPISupport::Notify](imapisupport-notify.md) メソッドを呼び出したり、各アドバイス シンクの [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) メソッドを直接呼び出したりできます。 
   
 ## <a name="see-also"></a>関連項目
 

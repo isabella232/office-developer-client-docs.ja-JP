@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: e83e409c-f201-df9d-5e30-879adf15318d
-description: 列挙子内の指定された数のアカウントをスキップします。
+description: 列挙子内の指定した数のアカウントをスキップします。
 ms.openlocfilehash: d4063b0ff4852e6932cf50789eea3caa81d4d586
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,11 +16,11 @@ ms.locfileid: "33404779"
 ---
 # <a name="iolkenumskip"></a>IOlkEnum::Skip
 
-列挙子内の指定された数のアカウントをスキップします。
+列挙子内の指定した数のアカウントをスキップします。
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IOlkEnum](iolkenum.md)を参照してください。
+[「IOlkEnum」を参照してください](iolkenum.md)。
   
 ```cpp
 HRESULT IOlkEnum::Skip(  
@@ -30,9 +30,9 @@ HRESULT IOlkEnum::Skip(
 
 ## <a name="parameters"></a>パラメーター
 
-_cskip_
+_cSkip_
   
-> 順番スキップするアカウントの数。
+> [in]スキップするアカウントの数。
     
 ## <a name="return-values"></a>戻り値
 

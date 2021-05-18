@@ -31,7 +31,7 @@ ms.locfileid: "33422622"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [ctrlasinput]  <br/> |
+| セル名:  <br/> | CtrlAsInput  <br/> |
    
 プログラムから、インデックスによって [CtrlAsInput] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

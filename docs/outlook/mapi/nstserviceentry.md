@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5ada6363-2406-4c0a-8326-a299a8bbefe1
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 96c04a242c477204ea1447fb78c31d189eeac59a
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "32280055"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI ストアプロバイダーのメッセージサービスエントリポイント関数。 PST ベースのローカルストアを NST ストアとしてラップします。 
+PST ベースのローカル ストアを NST ストアとしてラップする MAPI ストア プロバイダーのメッセージ サービス エントリ ポイント関数。 
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -47,37 +47,37 @@ HRESULT NSTServiceEntry(
 
 ## <a name="parameters"></a>パラメーター
 
- **nstserviceentry**は、 **[msgserviceentry](msgserviceentry.md)** 関数プロトタイプを使用します。 パラメーターの詳細については、「 **[msgserviceentry](msgserviceentry.md)**」を参照してください。 
+ **NSTServiceEntry** は **[、MSGSERVICEENTRY 関数プロトタイプを](msgserviceentry.md)** 使用します。 パラメーターの詳細については **[、「MSGSERVICEENTRY」を参照してください](msgserviceentry.md)**。 
   
 ## <a name="return-values"></a>戻り値
 
-戻り値の詳細については、「 **[msgserviceentry](msgserviceentry.md)**」を参照してください。 
+戻り値の詳細については **[、「MSGSERVICEENTRY」を参照してください](msgserviceentry.md)**。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**[GetProcAddress](https://msdn.microsoft.com/library/ms683212.aspx)** を使用して msmapi32 でこの関数のアドレスを検索する場合は、プロシージャ名として "nstserviceentry" を指定します。 
+**[GetProcAddress](https://msdn.microsoft.com/library/ms683212.aspx)** を使用して msmapi32.dll でこの関数のアドレスを検索する場合は、プロシージャ名として "NSTServiceEntry" を指定します。 
   
-レプリケーション API を使用するには、最初に**[nstserviceentry](nstserviceentry.md)** を呼び出して、MAPI ストアプロバイダーが PST ベースのローカルストアを開いてラップする必要があります。 プロバイダーは、API の主なインターフェイスである**[iostx](iostxiunknown.md)** と**[ipstx](ipstxiunknown.md)** を使用して、レプリケーションを実行することができます。 
+レプリケーション API を使用するには、MAPI ストア プロバイダーが最初に **[NSTServiceEntry](nstserviceentry.md)** を呼び出して PST ベースのローカル ストアを開いてラップする必要があります。 プロバイダーは **[、API、IOSTX、IPSTX](iostxiunknown.md)** の主要なインターフェイス **[](ipstxiunknown.md)** を使用してレプリケーションを実行できます。 
   
-次の解説は、NST ストアに適用されます。
+次の注釈は、NST ストアに適用されます。
   
-- **nstserviceentry**を使用する MAPI プロバイダーを実装する場合は、[グローバルプロファイル] セクションに情報を格納しないでください。 [グローバルプロファイル] セクションは、多くのプロバイダーによって共有され、このプロファイルに格納されているデータは上書きできます。 
+- **NSTServiceEntry** を使用する MAPI プロバイダーを実装する場合は、グローバル プロファイル セクションに情報を保存しない。 グローバル プロファイル セクションは多くのプロバイダーによって共有され、このプロファイルに格納されているデータは上書きできます。 
     
-- 変更された既存のタイムスタンプを持つアイテムのみ、スタンプが保存されたときに更新されます。 
+- 既存の変更タイム スタンプを持つアイテムだけが、保存時にスタンプを更新します。 
     
-- アイテムが保存されるときに競合チェックは自動的に実行されません。
+- アイテムを保存しても、競合チェックは自動的には行われません。
     
--  アイテムの保存時に重複データ検出が発生しません。 
+-  アイテムを保存しても重複検出は発生しません。 
     
--  サーバーのキャッシュされたバージョンを表すファイルがに追加されます。NST. 
+-  キャッシュされたバージョンのサーバーを表すファイルが追加されます。NST。 
     
-- グローバルプロファイルセクションへのポインターを取得するために、メッセージサービスは、以下に定義されているように、 **pbNSTGlobalProfileSectionGuid**を使用して、support オブジェクトの**[imapisupport:: openprofile](imapisupport-openprofilesection.md)** セクションを呼び出します。 
+- グローバル プロファイル セクションへのポインターを取得するには、メッセージ サービスは、以下で定義されている **pbNSTGlobalProfileSectionGuid** を使用して、サポート オブジェクトで **[IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md)** を呼び出します。 
     
   ```
   #define  pbNSTGlobalProfileSectionGuid "\x85\xED\x14\x23\x9D\xF7\x42\x66\x8B\xF2\xFB\xD4\xA5\x21\x29\x41"
   ```
 
-- この場合、message service の support オブジェクトは、 **imapisupport:: openprofile** section が**[PR_SERVICE_UID](pidtagserviceuid-canonical-property.md)** プロパティによって識別されるプロファイルセクションを既定のプロファイルセクションにあることを確認する必要があります。 このプロファイルセクションを取得するには、support オブジェクトで [既定のプロファイル] セクションを開き、 **PR_SERVICE_UID**を取得して、その結果を**imapisupport:: openprofile**セクションに渡すことで、適切なグローバルプロファイルセクションを取得できます。 このサポートオブジェクトは、メッセージサービスへのこのグローバルプロファイルセクションへのポインターを返します。 
+- この場合、メッセージ サービスのサポート オブジェクトは **、IMAPISupport::OpenProfileSection** が既定のプロファイル セクションの **[PR_SERVICE_UID](pidtagserviceuid-canonical-property.md)** プロパティで識別されるプロファイル セクションを返す必要があります。 このプロファイル セクションを取得するには、サポート オブジェクトで既定のプロファイル セクションを開き **、PR_SERVICE_UID** を取得し、その結果を **IMAPISupport::OpenProfileSection** に渡して、正しいグローバル プロファイル セクションを取得できます。 サポート オブジェクトは、このグローバル プロファイル セクションへのポインターをメッセージ サービスに返します。 
     
 ## <a name="see-also"></a>関連項目
 

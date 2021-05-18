@@ -25,11 +25,11 @@ ms.locfileid: "33405528"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定したサイズの新しい[ENTRYID](entryid.md)構造に割り当てる必要があるバイト数を計算します。 
+指定したサイズの新しい [ENTRYID](entryid.md) 構造に割り当てるバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |**ENTRYID** <br/> |
    
 ```cpp
@@ -38,9 +38,9 @@ CbNewENTRYID (_cb)
 
 ## <a name="parameters"></a>パラメーター
 
- __cb_
+ _ _cb_
   
-> 新しい**ENTRYID**構造に格納されるエントリ id のバイト数。 
+> 新しい ENTRYID 構造体に格納するエントリ識別子 **のバイト数** 。 
     
 ## <a name="see-also"></a>関連項目
 

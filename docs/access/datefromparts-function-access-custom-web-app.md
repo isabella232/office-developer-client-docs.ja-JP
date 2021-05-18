@@ -1,5 +1,5 @@
 ---
-title: datefromparts 関数 (Access カスタム web アプリ)
+title: DateFromParts 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33423224"
 ---
-# <a name="datefromparts-function-access-custom-web-app"></a>datefromparts 関数 (Access カスタム web アプリ)
+# <a name="datefromparts-function-access-custom-web-app"></a>DateFromParts 関数 (Access カスタム Web アプリ)
 
 指定された年、月、および日を表す日付値を返します。
   
@@ -22,7 +22,7 @@ ms.locfileid: "33423224"
   
 ## <a name="syntax"></a>構文
 
-**datefromparts**(*年*、*月*、*日*) 
+**DateFromParts** (*Year*, *Month*, *Day*) 
   
 **DateFromParts** 関数の引数は次のとおりです。 
   

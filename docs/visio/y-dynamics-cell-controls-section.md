@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251284
 localization_priority: Normal
 ms.assetid: cb221974-2f1a-edb0-477b-39a3c4a64c56
-description: コントロールハンドルのアンカーポイントの y 座標を、ローカル座標で表します。 アンカー ポイントは、ダイナミックス機能を使うときのラバーバンディングに使用されます。
+description: コントロール ハンドルのアンカー ポイントの y 座標をローカル座標で表します。 アンカー ポイントは、ダイナミックス機能を使うときのラバーバンディングに使用されます。
 ms.openlocfilehash: 13d463ebccd9cc7a23641a036dc5dd967513b07f
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33404828"
 ---
 # <a name="y-dynamics-cell-controls-section"></a>[Y Dynamics] セル ([Controls] セクション)
 
-コントロールハンドルのアンカーポイントの*y*座標を、ローカル座標で表します。 アンカー ポイントは、ダイナミックス機能を使うときのラバーバンディングに使用されます。 
+コントロール ハンドル  *のアンカー ポイントの y*  座標をローカル座標で表します。 アンカー ポイントは、ダイナミックス機能を使うときのラバーバンディングに使用されます。 
   
 ## <a name="remarks"></a>注釈
 
@@ -26,14 +26,14 @@ ms.locfileid: "33404828"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | 管理.  *名前*です。YDynwhere コントロール  *name*は、コントロール行の名前です。  <br/> |
+| セル名 :  <br/> | コントロール。  *name*  .YDynwhere コントロール。  *name*  は、コントロール行の名前です。  <br/> |
    
 プログラムから、インデックスによって [Y Dynamics] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionControls** <br/> |
-| 行インデックス:  <br/> |**visRowControl** +  *i* = ** 0、1、2...  <br/> |
+| 行インデックス:  <br/> |**visRowControl**  +  *i* *=* 0, 1, 2...  <br/> |
 | セル インデックス:  <br/> |**visCtlYDyn** <br/> |
    
 

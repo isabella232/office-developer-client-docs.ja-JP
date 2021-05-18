@@ -34,7 +34,7 @@ HRESULT IOlkAccountManager::EnumerateAccounts (
 
 ## <a name="parameters"></a>パラメーター
 
-_pclsidcategory_
+_pclsidCategory_
   
 > [in]列挙するカテゴリのクラスの id。値は、次のいずれかする必要があります。
     
@@ -44,7 +44,7 @@ _pclsidcategory_
     
    - CLSID_OlkStore 
     
-_pclsidtype_
+_pclsidType_
   
 > [in]アカウントの種類を列挙するのクラス識別子。値は、次のいずれかする必要があります。
     
@@ -62,7 +62,7 @@ _dwFlags_
   
 > [in]動作を変更するフラグです。サポートされている唯一の値は OLK_ACCOUNT_NO_FLAGS です。
     
-_ppenum_
+_ppEnum_
   
 > [out] An enumerator that supports the [IOlkEnum](iolkenum.md) interface. 
     
@@ -77,7 +77,7 @@ _ppenum_
 
 NULL を指定するカテゴリの指定した型のすべてのアカウントの列挙子を返します。同様に、NULL の種類を指定すると、指定したカテゴリのすべてのアカウントの列挙子を返します。
   
- **IOlkAccountManager::EnumerateAccounts** は、Exchange アカウントのアドレス帳カテゴリをサポートしていません。 アカウントが Exchange アカウント (*pclsidtype*が**CLSID_OlkMAPIAccount** ) で、アドレス帳を実装するアカウント (*prgclsidCategory*が**CLSID_OlkAddressBook** ) を列挙しようとしている場合は、 **IOlkAccountManager:: EnumerateAccounts**は、accounts 列挙*ppenum*の Exchange アカウントを返しません。 
+ **IOlkAccountManager::EnumerateAccounts** は、Exchange アカウントのアドレス帳カテゴリをサポートしていません。 アカウントが Exchange アカウント *(pclsidType* は **CLSID_OlkMAPIAccount)** で、アドレス帳を実装するアカウントを列挙しようとしている場合 *(prgclsidCategory* は CLSID_OlkAddressBook)、IOlkAccountManager::EnumerateAccounts を呼び出した場合、アカウント列挙子 *ppEnum* の Exchange アカウントは返されません。   
   
 ## <a name="see-also"></a>関連項目
 

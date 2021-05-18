@@ -42,9 +42,9 @@ _pxValue_
 
 ### <a name="pxvalue-argument"></a>pxValue 引数
 
-_pxValue_ には、値または配列のいずれかを指定できます。 値の場合は、指定の範囲全体にその値が入力されます。 配列 (**xltypeMulti**) の場合は、配列の要素が長方形の対応する場所に配置されます。
+_pxValue_ には、値または配列のいずれかを指定できます。値の場合は、指定の範囲全体にその値が入力されます。配列 (**xltypeMulti**) の場合は、配列の要素が長方形の対応する場所に配置されます。
   
-If you use a horizontal array for the second argument, it is duplicated down to fill the entire rectangle. If you use a vertical array, it is duplicated right to fill the entire rectangle. If you use a rectangular array, and it is too small for the rectangular range you want to put it in, that range is padded with **#N/A**s.
+If you use a horizontal array for the second argument, it is duplicated down to fill the entire rectangle. If you use a vertical array, it is duplicated right to fill the entire rectangle. If you use a rectangular array, and it is too small for the rectangular range you want to put it in, that range is padded with **#N/A** s.
   
 対象範囲がソース配列よりも小さい場合は、対象範囲の境界まで値がコピーされ、余分なデータは無視されます。
   

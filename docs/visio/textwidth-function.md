@@ -22,14 +22,14 @@ ms.locfileid: "33422034"
   
 ## <a name="syntax"></a>構文
 
-TEXTWIDTH (* * 図形の場合) ** テキスト * * * * *[, maximumwidth]* * *) 
+TEXTWIDTH(** *shapename!TheText* ** *** [,maximumwidth]* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _offename! テキスト_ <br/> |必須  <br/> |**String** <br/> |ターゲットとなる図形の [TheText] セルに対する参照を指定します。  _shapename!_ は、テキストを取得する図形の名前です。  <br/> |
-| _maximumwidth_ <br/> |省略可能  <br/> |**数値** <br/> |テキスト ブロックの最大幅を指定します。  <br/> |
+| _shapename!theText_ <br/> |必須  <br/> |**String** <br/> |ターゲットとなる図形の [TheText] セルに対する参照を指定します。  _shapename!_ は、テキストを取得する図形の名前です。  <br/> |
+| _maximumwidth_ <br/> |省略可能  <br/> |**数値型 (Numeric)** <br/> |テキスト ブロックの最大幅を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
@@ -39,13 +39,13 @@ TEXTWIDTH (* * 図形の場合) ** テキスト * * * * *[, maximumwidth]* * *)
 
 TEXTWIDTH 関数は、通常、格納するテキストのサイズに合わせて図形の幅を調整する場合に使用します。
   
-_\n_ を省略すると、既定の図形は現在の図形になります。 
+_sheetN!_ を省略すると、既定の図形は現在の図形になります。 
   
-_maximumwidth_が指定されている場合、結果は、 _maximumwidth_に収まる最大のテキスト行になります。 _maximumwidth_を省略すると、結果はテキストの幅の合計になります。 
+_maximumwidth を指定_ すると、結果は最大の範囲に収まるテキストの最長行 _になります_。 _maximumwidth を_ 省略すると、テキストの合計幅が返されます。 
   
 ## <a name="example"></a>例
 
-TEXTWIDTH (テキスト) 
+TEXTWIDTH(TheText) 
   
 現在の図形内にあるテキストの長さの合計を返します。 
   

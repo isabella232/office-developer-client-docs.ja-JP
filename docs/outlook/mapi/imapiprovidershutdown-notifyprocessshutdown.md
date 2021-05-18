@@ -1,5 +1,5 @@
 ---
-title: imapiprovidershutdownnotifyprocessshutdown
+title: IMAPIProviderShutdownNotifyProcessShutdown
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33405248"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-mapi クライアントが高速シャットダウンを実行することを mapi プロバイダーに示します。これにより、プロバイダーはデータ損失を防止するアクションを実行できるようになります。
+MAPI クライアントが高速シャットダウンを実行し、プロバイダーがデータ損失を防止するアクションを実行できるよう、MAPI プロバイダーに対して示します。
   
 ```cpp
 HRESULT NotifyProcessShutdown ();
@@ -35,7 +35,7 @@ HRESULT NotifyProcessShutdown ();
 
 S_OK
   
-> mapi プロバイダーは、mapi クライアントのシャットダウン時にデータ損失を防止するアクションを実行しています。
+> MAPI プロバイダーは、MAPI クライアントがシャットダウンするときにデータ損失を防止するアクションを実行しています。
     
 ## <a name="see-also"></a>関連項目
 

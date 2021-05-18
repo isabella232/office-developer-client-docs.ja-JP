@@ -20,7 +20,7 @@ ms.locfileid: "33421824"
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IOlkEnum](iolkenum.md)を参照してください。
+[「IOlkEnum」を参照してください](iolkenum.md)。
   
 ```cpp
 HRESULT IOlkEnum::GetCount ( 
@@ -31,9 +31,9 @@ HRESULT IOlkEnum::GetCount (
 
 ## <a name="parameters"></a>パラメーター
 
-_出てきた回数_
+_pulCount_
   
-> 読み上げ列挙されるオブジェクトの数へのポインター。
+> [out]列挙するオブジェクトの数を指すポインター。
     
 ## <a name="return-values"></a>戻り値
 

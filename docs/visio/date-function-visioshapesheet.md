@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251412
 localization_priority: Normal
 ms.assetid: 2b6c5375-c543-ff2f-f20a-6d92fd65717a
-description: システムの地域の設定で短い日付形式に従って、年、月、および日で表される日付を返します。 年、月、および日の値は、グレゴリオ暦を反映しています。
+description: システムの地域情報の短い日付スタイルに従って書式設定された年、月、および日で表される日付を設定。 年、月、および日の値は、グレゴリオ暦を反映します。
 ms.openlocfilehash: 0175c1f06ec3dbdf89774759546c65994d38105e
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "32360334"
 ---
 # <a name="date-function-visioshapesheet"></a>DATE 関数 (VisioShapeSheet)
 
-システムの地域の設定で短い日付形式に従って、*年、月、* および*日*で表される日付を返します。 *年*、*月*、および*日*の値は、グレゴリオ暦を反映しています。 
+システムの地域情報の短い日付スタイルに従って書式設定された年、月、および日で表される日付を設定。 年、月 *、**および* 日の値 *は*、グレゴリオ暦を反映します。 
   
 ## <a name="syntax"></a>構文
 
-DATE (* **年** *、* **月** *、* **日** *) 
+DATE(** *year* **, ** *month* **, ** *day* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -34,7 +34,7 @@ DATE (* **年** *、* **月** *、* **日** *)
    
 ## <a name="example-1"></a>例 1
 
-DATE (1999、6、7)
+DATE(1999,6,7)
   
 07.06.99 を表す値を返します。
   
@@ -46,7 +46,7 @@ DATE(1999,6,7) + 4 ed.
   
 ## <a name="example-3"></a>例 3
 
-形式 (DATE (1999、10、14)、"C")
+FORMAT(DATE(1999,10,14),"C")
   
 1999 年 10 月 14 日、火曜日を表す値を返します。
   

@@ -1,5 +1,5 @@
 ---
-title: DateAdd 関数 (Access カスタム web アプリ)
+title: DateAdd 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33423203"
 ---
-# <a name="dateadd-function-access-custom-web-app"></a>DateAdd 関数 (Access カスタム web アプリ)
+# <a name="dateadd-function-access-custom-web-app"></a>DateAdd 関数 (Access カスタム Web アプリ)
 
 日付の指定した日付部分に、指定した間隔 (正または負の整数) を加算した結果の日付を返します。
   
@@ -22,15 +22,15 @@ ms.locfileid: "33423203"
   
 ## <a name="syntax"></a>構文
 
-**DateAdd**(*DatePart*、*数値*、*日付*) 
+**DateAdd** (*DatePart*, *Number*, *Date*) 
   
 **DateAdd** 関数の引数は次のとおりです。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *DatePart*  <br/> |整数値が追加される*日付*の部分を指定します。 有効な設定値のリストについては、「注釈」を参照してください。  <br/> |
-| *数値*  <br/> |は、*日付*の*DatePart*に追加される整数に解決できる式です。 小数を含む値を指定した場合、その少数は切り捨てられます。  <br/> |
-| *Date*  <br/> |日付/時刻の値に解決可能な式。 *Date*引数 expression、column 式、ユーザー定義の変数または文字列リテラル。  <br/> |
+| *DatePart*  <br/> |整数が追加される  *Date*  の部分。 有効な設定値のリストについては、「注釈」を参照してください。  <br/> |
+| *数値*  <br/> |Date の DatePart に追加される整数に解決できる *式**です*。 小数を含む値を指定した場合、その少数は切り捨てられます。  <br/> |
+| *Date*  <br/> |日付/時刻の値に解決可能な式。 *Date 引数* 式、列式、ユーザー定義変数、または文字列リテラル。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -39,15 +39,15 @@ The following table lists all valid  *DatePart*  arguments.
 |***DatePart***|
 |:-----|
 |**year** <br/> |
-|**現** <br/> |
+|**四半期** <br/> |
 |**month** <br/> |
 |**dayofyear** <br/> |
 |**day** <br/> |
-|**回** <br/> |
+|**週** <br/> |
 |**hour** <br/> |
 |**minute** <br/> |
 |**second** <br/> |
-|**ミリ** <br/> |
+|**ミリ秒** <br/> |
    
 ## <a name="example"></a>例
 

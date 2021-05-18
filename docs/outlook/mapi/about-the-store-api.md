@@ -19,11 +19,11 @@ ms.locfileid: "33405556"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-store API は、ストアプロバイダーにさまざまなストア機能を提供します。 これにより、次の日、データ型、プロパティ、およびインターフェイスが提供されます。
+ストア API は、プロバイダーを格納するためのさまざまなストア機能を提供します。 次の定義、データ型、プロパティ、およびインターフェイスを提供します。
   
-定義
+定義:
   
-- [Store API の定数](mapi-constants.md)
+- [ストア API の定数](mapi-constants.md)
     
 データ型:
   
@@ -37,7 +37,7 @@ store API は、ストアプロバイダーにさまざまなストア機能を�
     
 - **[CrawlSourceSupportMask](crawlsourcesupportmask.md)**
     
-- **[サーバーフォルダーのサイズを表示する](display-server-folder-sizes-property.md)**
+- **[サーバー フォルダーのサイズの表示](display-server-folder-sizes-property.md)**
     
 - **[会議の更新オプションを非表示にする](hide-meeting-update-option-property.md)**
     
@@ -46,7 +46,7 @@ store API は、ストアプロバイダーにさまざまなストア機能を�
 - **[NoFolderScan](nofolderscan.md)**
     
 > [!NOTE]
-> これらの名前付きプロパティによって提供される機能を必要としないストアプロバイダーは、単にそれらを無視して、 **imapiprop**インターフェイスでサポートを実装することはできません。 これらのプロパティは、microsoft outlook 2003 Service Pack 1 以降で提供されるため、以前のバージョンの microsoft outlook でストアに追加しても効果はありません。 存在しない場合、または値が**false**の場合は無視されます。 
+> これらの名前付きプロパティによって提供される機能を必要としないストア プロバイダーは、それらを無視するだけで **、IMAPIProp** インターフェイスでのサポートを実装しません。 これらのプロパティは、Microsoft Outlook 2003 Service Pack 1 から提供されるので、以前のバージョンの Microsoft Outlook のストアに追加する効果はありません。 存在しない場合、または値が false の場合は無視 **されます**。 
   
 プロパティ:
   
@@ -62,16 +62,16 @@ store API は、ストアプロバイダーにさまざまなストア機能を�
   
 - **[IFolderSupport](ifoldersupportiunknown.md)**
     
-- **[imscapabilities](imscapabilitiesiunknown.md)**
+- **[IMSCapabilities](imscapabilitiesiunknown.md)**
     
 - **[IProxyStoreObject](iproxystoreobject.md)**
     
-## <a name="registering-stores-for-indexing"></a>インデックス作成のためのストアの登録
+## <a name="registering-stores-for-indexing"></a>インデックス作成用のストアの登録
 
-MAPI プロトコルハンドラーは、検索用にインデックスが必要なストアの Windows レジストリをチェックします。 インデックスを作成するストアプロバイダーは、Windows レジストリに登録する必要があります。 outlook 2013 または outlook 2010 でのインデックス作成のためのストアプロバイダーの登録の詳細については、「[インデックス作成のためのストア登録につい](about-registering-stores-for-indexing.md)て」を参照してください。
+MAPI プロトコル ハンドラーは、検索Windowsインデックスを作成する必要があるストアのレジストリをチェックします。 インデックスを作成するストア プロバイダーは、レジストリに登録Windows必要があります。 Outlook 2013 または Outlook 2010 でのインデックス作成用のストア プロバイダーの登録の詳細については、「About [Registering Stores for Indexing](about-registering-stores-for-indexing.md)」を参照してください。
   
-## <a name="indexing-stores"></a>インデックス作成ストア
+## <a name="indexing-stores"></a>Indexing Stores
 
-mapi ストアプロバイダーでは、mapi プロトコルハンドラーでストア内のメッセージのクロールとインデックス作成を行うことができます。また、インデックスを作成するメッセージがある場合にのみ、インデクサーに通知を送信することもできます。 通知ベースのインデックス作成の詳細については、「[通知ベースのストアインデックス作成につい](about-notification-based-store-indexing.md)て」を参照してください。
+MAPI ストア プロバイダーは、MAPI プロトコル ハンドラーがストア内のメッセージのクロールとインデックス作成を許可するか、インデックスを作成するメッセージがある場合にのみインデクサーに通知を送信できます。 通知ベースのインデックス作成の詳細については、「概要 [- ストア インデックスNotification-Basedを参照してください](about-notification-based-store-indexing.md)。
   
 

@@ -17,9 +17,9 @@ ms.locfileid: "32299077"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックでは、 **[iproxystoreobject](iproxystoreobject.md)** インターフェイスのメッセージストアに対してクエリを実行する C++ のコードサンプルを示し、返されたポインターと**[iproxystoreobject:: UnwrapNoRef](iproxystoreobject-unwrapnoref.md)** 関数を使用して、IMAP ストアオブジェクトへのポインターを取得します。解除. このラップされていないストアを使用すると、メッセージ全体のダウンロードを呼び出すことなく、現在の状態のメッセージにアクセスできます。 
+このトピックでは、C++ のコード サンプルを示し **[、IProxyStoreObject](iproxystoreobject.md)** インターフェイスのメッセージ ストアを照会し、返されたポインターと **[IProxyStoreObject::UnwrapNoRef](iproxystoreobject-unwrapnoref.md)** 関数を使用して、ラップされていない IMAP ストア オブジェクトへのポインターを取得します。 このラップされていないストアを使用すると、メッセージ全体のダウンロードを呼び出さずに、現在の状態のメッセージにアクセスできます。 
   
-**UnwrapNoRef**は、ラップされていない store オブジェクトへのこの新しいポインターの参照カウントをインクリメントしないため、 **UnwrapNoRef**の呼び出しに成功した後で、 [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx)を呼び出して参照カウントを維持する必要があります。 
+**UnwrapNoRef** はアンラップされたストア オブジェクトへのこの新しいポインターの参照カウントをインクリメントしないので **、UnwrapNoRef** を正常に呼び出した後、参照カウントを維持するために [IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx)を呼び出す必要があります。 
   
 ```cpp
 HRESULT HrUnWrapMDB(LPMDB lpMDBIn, LPMDB* lppMDBOut) 

@@ -36,6 +36,6 @@ ms.locfileid: "33421817"
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowMisc** <br/> |
-| セル インデックス:  <br/> |**visobjcalendar** <br/> |
+| セル インデックス:  <br/> |**visObjCalendar** <br/> |
    
 

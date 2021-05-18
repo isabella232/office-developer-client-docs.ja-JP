@@ -35,7 +35,7 @@ ms.locfileid: "33421894"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[isdropsource]  <br/> |
+|セル名:  <br/> |IsDropSource  <br/> |
    
 プログラムから、インデックスによって [IsDropSource] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

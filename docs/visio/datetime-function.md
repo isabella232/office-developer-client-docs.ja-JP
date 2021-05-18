@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251413
 localization_priority: Normal
 ms.assetid: 0bf7f757-0b7f-dec1-9709-6612c9ad0d53
-description: datetime または expression で表される日付と時刻の値を返します。
+description: datetime または式で表される日付と時刻の値を返します。
 ms.openlocfilehash: 2da084f685c044d48495b04f727a877140b51004
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "32360320"
 ---
 # <a name="datetime-function"></a>DATETIME 関数
 
-_datetime_または_expression_で表される日付と時刻の値を返します。
+datetime または式で表される日付と時刻  _の値を_ 返  _します_。
   
 ## <a name="syntax"></a>構文
 
-datetime ("* * *datetime* * *" |* **式** * [, * * *lcid* * *]) 
+DATETIME(" ** *datetime* ** "|** *式* ** [, ** *lcid* ** ]) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -36,13 +36,13 @@ datetime ("* * *datetime* * *" |* **式** * [, * * *lcid* * *])
 
 Datetime
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-*datetime*が指定されていない場合、または有効な日付または時刻として解釈できない場合は、datetime は #VALUE を返します。 エラーを返します。 
+datetime  *が見*  つからないか、有効な日付または時刻として解釈できない場合、DATETIME は日付を返#VALUE! エラーを返します。 
   
 戻り値は、システムの現在の [地域] で設定されている短い日付と時刻の形式に従って書式設定されます。 
   
-DATETIME 関数では、 *expression*に単一の数値を使用することもできます。この場合、整数部分には1899年12月30日から起算した日数を指定し、小数部分には午前0時からの日数を指定します。 
+DATETIME 関数は、結果の整数部分が1899 年 12 月 30 日からの日数を表し、小数部が午前 0 時からの 1 日の小数部を表す式の単一の数値値も受け入れられます。 
   
 ## <a name="example-1"></a>例 1
 
@@ -64,7 +64,7 @@ DATETIME("1:30 PM July 19")
   
 ## <a name="example-4"></a>例 4
 
-DATETIME (35580.6337)
+DATETIME(35580.6337)
   
 1997/5/30 午後 3:12:32 を表す値を返します。
   

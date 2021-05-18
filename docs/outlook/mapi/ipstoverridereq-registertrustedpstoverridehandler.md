@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4a73c77c-7e32-4302-bffe-a1ea13574731
-description: '最終更新日: 2013 年2月24日'
+description: '最終更新日: 2013 年 2 月 24 日'
 ms.openlocfilehash: acc0986dd80b549b0cb2b941a6937d47a4a959fe
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -39,11 +39,11 @@ HRESULT RegisterTrustedPSTOverrideHandler (
 
  _pwzDllPath_
   
-> 順番サードパーティのダイナミックリンクライブラリ (DLL) のパスへのポインター。
+> [in]サードパーティのダイナミック リンク ライブラリ (DLL) のパスへのポインター。
     
- _pvclientdata_
+ _pvClientData_
   
-> 順番クライアントデータへのポインター。 PST プロバイダによって、その後の DLL の HrTrustedPSTOverrideHandlerCallback 関数への呼び出しに渡されます。 このクライアントデータは、PST のロックを解除する必要があるかどうかの確認を支援するために DLL によって使用されます。
+> [in]クライアント データへのポインター。これは、PST プロバイダーによって DLL の HrTrustedPSTOverrideHandlerCallback 関数への後続の呼び出しに渡されます。 このクライアント データは、PST をロック解除する必要があるかどうかを確認するために DLL で使用できます。
     
 ## <a name="return-value"></a>戻り値
 
@@ -51,7 +51,7 @@ S_OK
   
 > 関数呼び出しが成功しました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 wzDllPath パラメーターで指定された DLL は、デジタル証明書を使用して署名する必要があります。 DLL は、次のシグネチャを持つ関数もエクスポートする必要があります。
   
@@ -59,9 +59,9 @@ wzDllPath パラメーターで指定された DLL は、デジタル証明書�
 extern "C" HRESULT __cdecl HrTrustedPSTOverrideHandlerCallback(IMsgStore *pmstore, IUnknown *pOverride, LPVOID pvClientData)
 ```
 
-この関数は、PST の IMsgStore オブジェクトへのポインター、IPSTOVERRIDE1 インターフェイスを実装する IUnknown オブジェクトへのポインター、および pvclientdata から最初に提供されたデータへのポインターを使用して呼び出されます。
+この関数は、PST の IMsgStore オブジェクトへのポインター、IPSTOVERRIDE1 インターフェイスを実装する IUnknown オブジェクトへのポインター、および pvClientData を介して最初に提供されたデータへのポインターを使用して呼び出されます。
   
-詳細については、「 [Outlook 2007 で PSTDisableGrow ポリシーをバイパスするように PST オーバーライドハンドラーを実装する方法](https://support.microsoft.com/kb/956070)」を参照してください。
+詳細については、「PST オーバーライド[ハンドラーを実装して、2007 年の PSTDisableGrow](https://support.microsoft.com/kb/956070)ポリシーをバイパスするOutlook参照してください。
   
 ## <a name="see-also"></a>関連項目
 

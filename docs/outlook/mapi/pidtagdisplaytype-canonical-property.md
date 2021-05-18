@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: ee2bc6ca-3769-4b56-a77d-81418d28f768
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: da26fd2a8643817cf60adbfa6f4e85da345b875c
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32360782"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-表の特定の行にアイコンを関連付けるために使用される値を格納します。 
+アイコンをテーブルの特定の行に関連付けるのに使用する値を含む。 
   
 |||
 |:-----|:-----|
@@ -34,17 +34,17 @@ ms.locfileid: "32360782"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |MAPI アドレス帳  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このプロパティには、その種類に基づいてテーブルエントリの特別な処理を容易にする長整数型 (long) の値が含まれています。 この特別な処理では、通常、表示の種類に関連付けられたアイコンまたはその他の表示要素が表示されます。 
+このプロパティには長整数が含まれているので、その型に基づいてテーブル エントリを特別に処理できます。 通常、この特別な処理は、表示の種類に関連付けられたアイコン、または他の表示要素を表示して構成されます。 
   
-このプロパティは、フォルダーの内容の表では使用されません。 クライアントアプリケーションは、メッセージの**PR_MESSAGE_CLASS** (PidTagMessageClass) プロパティと適切な[imapiforminfo](imapiforminfoimapiprop.md)インターフェイスを使用して、 **PR_ICON** ([PidTagIcon](pidtagicon-canonical-property.md)) と**PR_MINI_ICON** ([](pidtagmessageclass-canonical-property.md)) を取得する必要があります ([PidTagMiniIcon](pidtagminiicon-canonical-property.md)) そのメッセージのプロパティ。 
+このプロパティは、フォルダーコンテンツ テーブルでは使用されません。 クライアント アプリケーションは、メッセージの **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) プロパティと適切な [IMAPIFormInfo](imapiforminfoimapiprop.md) インターフェイスを使用して、そのメッセージの **PR_ICON** ([PidTagIcon](pidtagicon-canonical-property.md)) プロパティと **PR_MINI_ICON** ([PidTagMiniIcon](pidtagminiicon-canonical-property.md)) プロパティを取得する必要があります。 
   
 このプロパティには、次のいずれかの値を指定できます。
   
 DT_AGENT 
   
-> 自動エージェント (見積書など) または天気予報チャートが表示されます。
+> 自動エージェント (Quote-Of-The-Day や天気予報グラフの表示など)。
     
 DT_DISTLIST 
   
@@ -52,35 +52,35 @@ DT_DISTLIST
     
 DT_FOLDER 
   
-> フォルダーの横に既定のフォルダーアイコンを表示します。
+> フォルダーの横に既定のフォルダー アイコンを表示します。
     
 DT_FOLDER_LINK 
   
-> 既定のフォルダーアイコンではなく、フォルダーの横に既定のフォルダーリンクアイコンを表示します。
+> 既定のフォルダー アイコンではなく、フォルダーの横に既定のフォルダー リンク アイコンを表示します。
     
 DT_FOLDER_SPECIAL 
   
-> 特別な種類のパブリックフォルダーなど、アプリケーション固有の区別があるフォルダーのアイコンを表示します。
+> 特殊な種類のパブリック フォルダーなど、アプリケーション固有の区別を持つフォルダーの表示アイコン。
     
 DT_FORUM 
   
-> 掲示板サービス、公共または共有フォルダーなどのフォーラム。
+> 掲示板サービス、パブリック フォルダーまたは共有フォルダーなどのフォーラム。
     
 DT_GLOBAL 
   
-> グローバルアドレス帳。
+> グローバル アドレス帳。
     
 DT_LOCAL 
   
-> 小さなワークグループと共有しているローカルアドレス帳。
+> 小さなワークグループと共有するローカル アドレス帳。
     
 DT_MAILUSER 
   
-> 一般的なメッセージングユーザー。
+> 一般的なメッセージング ユーザー。
     
 DT_MODIFIABLE 
   
-> 可能コンテナーは、ユーザーインターフェイスで変更可能として表示される必要があります。
+> 変更可能。コンテナーは、ユーザー インターフェイスで変更可能として示す必要があります。
     
 DT_NOT_SPECIFIC 
   
@@ -88,55 +88,55 @@ DT_NOT_SPECIFIC
     
 DT_ORGANIZATION 
   
-> ヘルプデスク、経理、または血圧のコーディネーターなど、大規模なグループに定義された特別なエイリアス。
+> ヘルプデスク、会計、血液駆動コーディネーターなど、大規模なグループに対して定義された特別なエイリアス。
     
 DT_PRIVATE_DISTLIST 
   
-> 個人が管理する私的な配布リスト。
+> 個人管理の配布リスト。
     
 DT_REMOTE_MAILUSER 
   
-> 外部またはリモートのメッセージングシステムからの受信者であることがわかっている受信者。
+> 外部メッセージング システムまたはリモート メッセージング システムからの受信者。
     
 DT_WAN 
   
-> ワイドエリアネットワークのアドレス帳。
+> ワイド エリア ネットワーク アドレス帳。
     
-アドレス帳の内容の表では、DT_AGENT、DT_DISTLIST、DT_FORUM、DT_MAILUSER、DT_ORGANIZATION、DT_PRIVATE_DISTLIST、および DT_REMOTE_MAILUSER の値を使用します。 アドレス帳階層テーブルと1回限りのテーブルは、DT_GLOBAL、DT_LOCAL、DT_MODIFIABLE、DT_NOT_SPECIFIC、DT_WAN の各値を使用します。 フォルダー階層テーブルは、DT_FOLDER、DT_FOLDER_LINK、および DT_FOLDER_SPECIAL の値を使用します。 
+アドレス帳のコンテンツ テーブルでは、DT_AGENT、DT_DISTLIST、DT_FORUM、DT_MAILUSER、DT_ORGANIZATION、DT_PRIVATE_DISTLIST、DT_REMOTE_MAILUSER の値をDT_REMOTE_MAILUSERします。 アドレス帳階層テーブルと 1 回割り当てテーブルでは、DT_GLOBAL、DT_LOCAL、DT_MODIFIABLE、DT_NOT_SPECIFIC、DT_WANが使用されます。 フォルダー階層テーブルは、DT_FOLDER、DT_FOLDER_LINK、およびDT_FOLDER_SPECIAL使用します。 
   
-このプロパティが設定されていない場合、クライアントは、テーブルに適した既定の種類 (通常は、DT_FOLDER、DT_LOCAL、または DT_MAILUSER) を想定する必要があります。 
+このプロパティを設定しない場合、クライアントはテーブルに適した既定の型 (通常はテーブル、DT_FOLDER、DT_LOCAL、またはDT_MAILUSER。 
   
- **メモ**文書化されていないすべての値は MAPI 用に予約されています。 クライアントアプリケーションは、新しい値を定義せず、文書化されていない値を処理するために準備する必要があります。 
+ **メモ** 文書化されていないすべての値は、MAPI 用に予約されています。 クライアント アプリケーションは、新しい値を定義し、文書化されていない値を処理する準備をする必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルオブジェクトを処理します。
+> メッセージ オブジェクトと添付ファイル オブジェクトを処理します。
     
-[[OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
 > アドレス帳テンプレートで許容されるプロパティと操作を指定します。
     
-[[OXLDAP]](https://msdn.microsoft.com/library/727c090a-f05c-4eed-94aa-565724cfc550%28Office.15%29.aspx)
+[[MS-OXLDAP]](https://msdn.microsoft.com/library/727c090a-f05c-4eed-94aa-565724cfc550%28Office.15%29.aspx)
   
-> ディレクトリアクセスを有効にします。
+> ディレクトリ アクセスを有効にする。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -146,7 +146,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

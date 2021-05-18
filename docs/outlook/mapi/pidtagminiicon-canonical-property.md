@@ -25,32 +25,32 @@ ms.locfileid: "33405416"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームの半分サイズのアイコンのビットマップが格納されています。
+フォームのハーフサイズ アイコンのビットマップを含む。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_MINI_ICON  <br/> |
-|識別子:  <br/> |0x0ffc  <br/> |
+|識別子:  <br/> |0x0FFC  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |一般的なメッセージング  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-このプロパティには、アイコンの32×32ピクセルのイメージが含まれています。これは、のコンテンツと同じです。.ico ファイル。ただし、左上の16×16ピクセルのみが重要であると見なされます。 通常、このプロパティはからコピーされます。フォーム構成ファイルの該当する [Description] セクションの SmallIcon 行で指定された .ico ファイル。
+このプロパティには、アイコンの 32 × 32 ピクセルの画像が含まれる。これは、 の内容と同じです。ICO ファイルですが、左上 16 ピクセル× 16 ピクセルだけが重要と見なされます。 このプロパティは、通常は . からコピーされます。フォーム構成ファイルの適切な [Description] セクションの SmallIcon 行で指定された ICO ファイル。
   
- **メモ**一部のプラットフォームは16×16ピクセルのアイコンをサポートしていません。 このような場合、このプロパティの32×32形式は使用できますが、クライアントアプリケーションは表示の不整合を認識する必要があります。 
+ **メモ** 一部のプラットフォームでは、16 ピクセル×アイコンがサポートされていません。 このプロパティの 32 × 32 形式は、このような場合に使用できますが、クライアント アプリケーションは、表示の不整合に注意する必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -63,7 +63,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

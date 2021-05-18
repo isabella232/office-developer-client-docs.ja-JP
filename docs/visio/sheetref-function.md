@@ -16,7 +16,7 @@ ms.locfileid: "33405185"
 ---
 # <a name="sheetref-function"></a>SHEETREF 関数
 
-sheet _ref_で指定されたシート (shape) への参照、または現在のシートにシート__ 参照修飾子がない場合は、そのシートへの参照を返します。 
+_sheetref_ で指定されているシート (図形) への参照、またはシート参照修飾子がない場合は現在のシートへの参照を返します。 
   
 ## <a name="version-information"></a>バージョン情報
 
@@ -25,7 +25,7 @@ sheet _ref_で指定されたシート (shape) への参照、または現在の
   
 ## <a name="syntax"></a>構文
 
- *\<offref\>!*  offref () 
+ *\<sheetref \> !*  SHEETREF() 
   
 ### <a name="return-value"></a>戻り値
 

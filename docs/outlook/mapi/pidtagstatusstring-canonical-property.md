@@ -25,32 +25,32 @@ ms.locfileid: "33421565"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-セッションリソースの現在の状態を示すメッセージを格納します。 
+セッション リソースの現在の状態を示すメッセージが含まれる。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_STATUS_STRING、PR_STATUS_STRING_A、PR_STATUS_STRING_W  <br/> |
-|識別子:  <br/> |0x3e08  <br/> |
+|識別子:  <br/> |0x3E08  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |MAPI の状態  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-これらのプロパティによって、サービスプロバイダーと MAPI は、統合されたアドレス帳や特定のサービスプロバイダーなど、セッションリソースの状態に関する特定の情報を提供する機会を提供します。 このプロパティは、状態コードまたは**PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md)) プロパティについて説明し、追加情報を提供します。 **PR_STATUS_CODE**はすべての状態オブジェクトに必要ですが、 **PR_STATUS_STRING**と関連付けられたプロパティは省略可能です。 トランスポートプロバイダーで値が指定されていない場合、MAPI スプーラーは既定値を提供します。 
+これらのプロパティを使用すると、サービス プロバイダーと MAPI は、統合アドレス帳や特定のサービス プロバイダーなど、セッション リソースの状態に関する特定の情報を提供できます。 このプロパティは、状態コードまたはプロパティ[(PidTagStatusCode)](pidtagstatuscode-canonical-property.md)プロパティPR_STATUS_CODE説明し、その他の情報を提供します。  すべての状態 **PR_STATUS_CODE** 必要な場合は、PR_STATUS_STRING **関連付** けられているプロパティは省略可能です。 トランスポート プロバイダーが値を指定しない場合、MAPI スプーラーは既定値を提供します。 
   
-文字列は、リモートプロシージャコールの同じ側で MAPI スプーラーとして生成されます。プロセス境界を越えてマーシャリングされるのではなく、共有メモリを経由します。
+この文字列は、MAPI スプーラーと同じ側のリモート プロシージャ呼び出しで生成されます。プロセス境界を越えてマーシャリングされるのではなく、共有メモリを通過します。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -63,7 +63,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

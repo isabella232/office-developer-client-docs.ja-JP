@@ -25,7 +25,7 @@ ms.locfileid: "33422188"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージサービスを再構成します。
+メッセージ サービスを再構成します。
   
 ```cpp
 HRESULT ConfigureMsgService(
@@ -39,77 +39,77 @@ HRESULT ConfigureMsgService(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpuid_
+ _lpUID_
   
-> 順番構成するメッセージサービスの一意の識別子を含む[MAPIUID](mapiuid.md)構造体へのポインター。 
+> [in]構成するメッセージ サービスの一意の識別子を含む [MAPIUID](mapiuid.md) 構造体へのポインター。 
     
- _uluiparam_
+ _ulUIParam_
   
-> 順番構成プロパティシートの親ウィンドウへのハンドル。
+> [in]構成プロパティ シートの親ウィンドウへのハンドル。
     
  _ulFlags_
   
-> 順番プロパティシートの表示を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]プロパティ シートの表示を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 渡された文字列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
+> 渡された文字列は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列は ANSI 形式になります。
     
 MSG_SERVICE_UI_READ_ONLY 
   
-> メッセージサービスには、その構成プロパティシートが表示されますが、ユーザーが変更することはできません。 ほとんどのメッセージサービスでは、このフラグは無視します。
+> メッセージ サービスは構成プロパティ シートを表示しますが、ユーザーが変更を有効にしない必要があります。 ほとんどのメッセージ サービスでは、このフラグは無視されます。
     
 SERVICE_UI_ALLOWED 
   
-> サービスが完全に構成されていない場合にのみ、メッセージサービスにその構成プロパティシートが表示されます。
+> メッセージ サービスは、サービスが完全に構成されていない場合にのみ、構成プロパティ シートを表示する必要があります。
     
 SERVICE_UI_ALWAYS 
   
-> メッセージサービスには、常にその構成プロパティシートが表示されている必要があります。 SERVICE_UI_ALWAYS が設定されていない場合でも、SERVICE_UI_ALLOWED が設定されていて、有効な構成情報が_lpprops_パラメーターのプロパティ値の配列から利用できない場合、構成プロパティシートが表示されることがあります。 プロパティシートが表示されるようにするには、SERVICE_UI_ALLOWED または SERVICE_UI_ALWAYS のいずれかを設定する必要があります。 
+> メッセージ サービスは常に構成プロパティ シートを表示する必要があります。 このSERVICE_UI_ALWAYS設定されていない場合、SERVICE_UI_ALLOWED が設定されている場合でも  _、lpProps_ パラメーターのプロパティ値配列から有効な構成情報を使用できない場合は、構成プロパティ シートを表示できます。 プロパティ SERVICE_UI_ALLOWED表示SERVICE_UI_ALWAYS設定する必要があります。 
     
- _cvalues_
+ _cValues_
   
-> 順番_lpprops_によってポイントされた[spropvalue](spropvalue.md)構造のプロパティ値の数。 
+> [in]lpProps が指す [SPropValue](spropvalue.md) 構造体のプロパティ値  _の数_ です。 
     
- _lpprops_
+ _lpProps_
   
-> 順番プロパティシートに表示されるプロパティを説明するプロパティ値の配列へのポインター。 メッセージサービスをユーザーインターフェイスなしで構成する必要がある場合は、 _lpprops_パラメーターを NULL にしないでください。 
+> [in]プロパティ シートに表示するプロパティを表すプロパティ値の配列へのポインター。 メッセージ サービスをユーザー インターフェイスなしで構成する必要がある場合は  _、lpProps_ パラメーターを NULL にすることはできません。 
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> メッセージサービスが正常に構成されました。
+> メッセージ サービスが正常に構成されました。
     
 MAPI_E_EXTENDED_ERROR 
   
-> メッセージサービスに固有のエラー。 エラーを説明する[MAPIERROR](mapierror.md)構造を取得するには、クライアントアプリケーションは[IMsgServiceAdmin:: GetLastError](imsgserviceadmin-getlasterror.md)メソッドを呼び出す必要があります。 
+> メッセージ サービスに固有のエラー。 エラーを [説明する MAPIERROR](mapierror.md) 構造を取得するには、クライアント アプリケーションが [IMsgServiceAdmin::GetLastError メソッドを呼び出す必要](imsgserviceadmin-getlasterror.md) があります。 
     
 MAPI_E_NOT_FOUND 
   
-> _lpuid_が指す**MAPIUID**が、既存のメッセージサービスのものと一致しません。 
+> lpUID が指す _MAPIUID_ は、既存のメッセージ サービスの **MAPIUID** と一致しません。 
     
 MAPI_E_NOT_INITIALIZED 
   
-> メッセージサービスにエントリポイント関数がありません。
+> メッセージ サービスにエントリ ポイント関数はありません。
     
 MAPI_E_USER_CANCEL 
   
-> ユーザーが操作をキャンセルしました。通常は、プロパティシートの **[キャンセル**] ボタンをクリックします。 
+> ユーザーは、通常、プロパティ シートの [キャンセル] ボタンをクリック **して、操作** を取り消しました。 
     
 ## <a name="remarks"></a>注釈
 
-**IMsgServiceAdmin:: ConfigureMsgService**メソッドを使用すると、構成プロパティシートの有無にかかわらず、メッセージサービスを構成できます。 
+**IMsgServiceAdmin::ConfigureMsgService** メソッドを使用すると、構成プロパティ シートの付きまたは指定なしでメッセージ サービスを構成できます。 
   
-プロパティシートが表示されない構成を許可する場合、通常、メッセージサービスは、必要なすべてのプロパティとその値の定数を含むヘッダーファイルを準備します。
+プロパティ シートを表示せずに構成を許可するには、通常、メッセージ サービスは、必要なすべてのプロパティとオプションのプロパティとその値の定数を含むヘッダー ファイルを準備します。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-構成するメッセージサービスの**MAPIUID**構造を取得するには、メッセージサービステーブルのメッセージサービスの行から [ **PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md))] 列を取得します。 詳細については、 [IMsgServiceAdmin:: CreateMsgService](imsgserviceadmin-createmsgservice.md)メソッドに記載されている手順を参照してください。 
+構成するメッセージ サービスの **MAPIUID** 構造を取得するには、メッセージ サービス テーブルのメッセージ サービスの行から **PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) 列を取得します。 詳細については [、「IMsgServiceAdmin::CreateMsgService メソッド」で説明されている手順を参照](imsgserviceadmin-createmsgservice.md) してください。 
   
-設定するプロパティ値に関する詳細情報がある場合にのみ、ユーザーにプロパティシートを表示せずに、メッセージサービスを構成できます。 プロパティシートを表示せずにメッセージサービスを構成する場合は、 _lpprops_パラメーターに有効なプロパティ値を渡し、MSG_SERVICE_UI_READ_ONLY、SERVICE_UI_ALLOWED、または SERVICE_UI_ALWAYS フラグは設定しません。 
+設定するプロパティ値に関する事前情報がある場合にのみ、ユーザーにプロパティ シートを表示せずにメッセージ サービスを構成できます。 プロパティ シートを表示せずにメッセージ サービスを構成する場合は  _、lpProps_ パラメーターに有効なプロパティ値を渡し、MSG_SERVICE_UI_READ_ONLY、SERVICE_UI_ALLOWED、または SERVICE_UI_ALWAYS フラグを設定しない。 
   
-プロパティシートを使用して、ユーザーから構成情報の全部または一部を受け取った場合は、 _ulflags_で SERVICE_UI_ALLOWED を設定します。 既存のプロパティ情報のみを使用して既定の設定を確立し、ユーザーが設定を変更できる場合は、 _ulflags_で SERVICE_UI_ALWAYS を設定します。
+プロパティ シートを使用してユーザーから構成情報のすべてまたは一部を受け取る場合は  _、ulFlags_ にSERVICE_UI_ALLOWED設定します。 既存のプロパティ情報のみを使用して既定の設定を確立し、ユーザーが設定を変更できる場合は  _、ulFlags_ で SERVICE_UI_ALWAYSを設定します。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -117,7 +117,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIProfileFunctions  <br/> |hraddservicetoprofile  <br/> |mfcmapi は、 **IMsgServiceAdmin:: ConfigureMsgService**メソッドを使用して、プロファイルに追加されたサービスを構成します。  <br/> |
+|MAPIProfileFunctions.cpp  <br/> |HrAddServiceToProfile  <br/> |MFCMAPI は **、IMsgServiceAdmin::ConfigureMsgService** メソッドを使用して、プロファイルに追加されたサービスを構成します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

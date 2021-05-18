@@ -22,23 +22,23 @@ ms.locfileid: "33421621"
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|.0  <br/> |
+|0  <br/> |
           ページの指定に合わせます。[**デザイン**] タブの [**ページ設定**] グループの矢印をクリックして、[**レイアウトと経路**] タブをクリックするとページの指定内容を参照できます。
   <br/> |**visSLOJumpDefault** <br/> |
-|1   <br/> |Never/なし  <br/> |**visSLOJumpNever** <br/> |
-|2   <br/> |[Always/印刷/画面]  <br/> |**visSLOJumpAlways** <br/> |
-|3   <br/> |常に相手側に表示します。  <br/> |**visSLOJumpOther** <br/> |
-|4   <br/> |どちらの側にも表示しません。  <br/> |**visSLOJumpNeither** <br/> |
+|1  <br/> |Never  <br/> |**visSLOJumpNever** <br/> |
+|2  <br/> |[Always/印刷/画面]  <br/> |**visSLOJumpAlways** <br/> |
+|3  <br/> |常に相手側に表示します。  <br/> |**visSLOJumpOther** <br/> |
+|4  <br/> |どちらの側にも表示しません。  <br/> |**visSLOJumpNeither** <br/> |
    
 ## <a name="remarks"></a>注釈
 
-このセルの値は、動的コネクタを選択し、[[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] で [**基本動作**] をクリックし、[**コネクタ**] タブをクリックして設定することもできます。 
+このセルの値を設定するには、動的コネクタを選択し、[開発] タブの [図形デザイン] グループ [](run-in-developer-mode-display-the-developer-tab.md)の [動作] をクリックし、[コネクタ] タブ **をクリック** します。  
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ConLineJumpCode] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[conlinejumpcode]  <br/> |
+|セル名:  <br/> |ConLineJumpCode  <br/> |
    
 プログラムから、インデックスによって [ConLineJumpCode] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

@@ -25,7 +25,7 @@ ms.locfileid: "33404856"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-オフラインオブジェクトのコールバックをキャンセルします。
+オフライン オブジェクトのコールバックをキャンセルします。
   
 ```cpp
 HRESULT COfflineObj::Unadvise( 
@@ -38,21 +38,21 @@ HRESULT COfflineObj::Unadvise(
 
  _ulFlags_
   
-> 順番コールバックをキャンセルするためのフラグ。 MAPIOFFLINE_UNADVISE_DEFAULT の値のみがサポートされています。
+> [in]コールバックをキャンセルするフラグ。 サポートされているMAPIOFFLINE_UNADVISE_DEFAULT値のみです。
     
  _ulAdviseToken_
   
-> 順番キャンセルされるコールバック登録を識別するアドバイズトークン。 
+> [in]取り消すコールバック登録を識別するアドバイス トークン。 
     
 ## <a name="return-value"></a>戻り値
 
 S_OK
   
-> 呼び出しが正常になされました。 この呼び出しは S_OK を返す必要があります。
+> 呼び出しが正常になされました。 この呼び出しは、S_OK。
     
 ## <a name="remarks"></a>注釈
 
-以前の**[IMAPIOfflineMgr:: Advise](imapiofflinemgr-advise.md)** への呼び出しから返された*ulAdviseToken*に関連付けられていたコールバックの登録を削除します。 **IMAPIOfflineMgr**オブジェクトは、 *ulAdviseToken*に関連付けられた**[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** オブジェクトに対する参照を解放します。 
+**[IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)** への以前の呼び出しから返された *ulAdviseToken* に関連付けられたコールバックの登録を削除します。 *ULAdviseToken* に関連付けられた **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** オブジェクト上の **IMAPIOfflineMgr** オブジェクトの参照を解放します。 
   
 ## <a name="see-also"></a>関連項目
 

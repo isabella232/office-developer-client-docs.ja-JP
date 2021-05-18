@@ -1,5 +1,5 @@
 ---
-title: Today 関数 (Access カスタム web アプリ)
+title: Today 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33422125"
 ---
-# <a name="today-function-access-custom-web-app"></a>Today 関数 (Access カスタム web アプリ)
+# <a name="today-function-access-custom-web-app"></a>Today 関数 (Access カスタム Web アプリ)
 
 アプリケーションで定義されたタイムゾーンに従って、現在の日付型の値を返します。
   

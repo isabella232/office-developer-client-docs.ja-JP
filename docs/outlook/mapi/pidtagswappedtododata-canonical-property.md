@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d2a82fc8-de5d-4819-906e-b8314fd06ea0
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3ecfa1e89688ae525a28e221424fb4a8194fc217
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,48 +25,48 @@ ms.locfileid: "32359137"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Message オブジェクトのフラグ付き状態に影響しないプロパティ値の2番目のセットを保持します。
+Message オブジェクトのフラグ付き状態に影響しないプロパティ値の 2 番目のセットを保持します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_SWAPPED_TODO_DATA  <br/> |
-|識別子:  <br/> |0x0e2d  <br/> |
+|識別子:  <br/> |0x0E2D  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |MAPI ノンノンアウトテーブル  <br/> |
+|エリア:  <br/> |MAPI 送信不可  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-第2のフラグの格納場所として機能送信者フラグまたは送信者事前通知がサポートされている場合、この構造では、sender フラグでサポートされている情報フラグ設定プロトコルに関連するすべてのプロパティを格納する場所を提供します。送信者のフラグまたは送信者の事前通知情報をメッセージの受信者に公開せずに、送信者の事前通知でサポートされている、アラーム設定プロトコルに関連するプロパティ。
+送信者フラグまたは送信者アラームがサポートされている場合、セカンダリ フラグの保存場所として機能するこの構造は、送信者フラグでサポートされている情報フラグ プロトコルに関連するすべてのプロパティ、および送信者のアラームでサポートされているアラーム 設定 プロトコルに関連するすべてのプロパティを、送信者フラグまたは送信者アラーム情報をメッセージの受信者に公開せずに保存する場所を提供します。
   
-同様に、この構造体には、受信者フラグでサポートされている情報フラグ設定プロトコルに関連するすべてのプロパティと、受信者でサポートされているアラーム設定プロトコルに関連するプロパティが格納される場所があります。以前に送信されたメッセージのアラーム。
+同様に、この構造は、以前に送信されたメッセージの受信者アラームでサポートされているリマインダー 設定 プロトコルに関連する受信者フラグとプロパティでサポートされている Informational Flagging Protocol に関連するすべてのプロパティを格納する場所を提供します。
   
-このプロパティの詳細については、「 [[OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)」を参照してください。
+このプロパティの詳細については [、「[MS-OXOFLAG] 」を参照してください](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
+[[MS-OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
   
 > フラグに関連するプロパティと操作を指定します。
     
-[[OXORMDR]](https://msdn.microsoft.com/library/5454ebcc-e5d1-4da8-a598-d393b101caab%28Office.15%29.aspx)
+[[MS-OXORMDR]](https://msdn.microsoft.com/library/5454ebcc-e5d1-4da8-a598-d393b101caab%28Office.15%29.aspx)
   
-> 電子メールおよびその他のオブジェクトの事前通知のプロパティと相互作用モデルを指定します。
+> メールなどのオブジェクトアラームのプロパティと対話モデルを指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -76,7 +76,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

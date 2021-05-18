@@ -25,30 +25,30 @@ ms.locfileid: "33422307"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージサービスの追加のプロファイルセクションを識別する[MAPIUID](mapiuid.md)構造体の一覧が含まれています。 
+メッセージ サービスの追加のプロファイル セクションを識別する [MAPIUID](mapiuid.md) 構造の一覧が含まれています。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_SERVICE_EXTRA_UIDS  <br/> |
-|識別子:  <br/> |0x3d0d  <br/> |
+|識別子:  <br/> |0x3D0D  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |MAPI プロファイル  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-メッセージフィルターごとに新しいプロファイルセクションを作成できます。 メッセージサービスに関する情報を別のプロファイルにコピーする場合は、フィルターの追加のプロファイルセクションもコピーすることが重要です。 追加のプロファイルセクションを使用するサービスプロバイダーは、これらのプロファイルセクションの**MAPIUID**構造を**PR_SERVICE_EXTRA_UIDS**に格納することができます。これにより、MAPI が追加のメッセージサービス情報をコピーできるようになります。
+メッセージ フィルターごとに新しいプロファイル セクションを作成できます。 メッセージ サービスに関する情報を別のプロファイルにコピーする場合は、フィルターの追加プロファイル セクションもコピーすることが重要です。 追加のプロファイル セクションを使用するサービス プロバイダーは、これらのプロファイル セクションの **MAPIUID** 構造を PR_SERVICE_EXTRA_UIDS に格納できます **。これにより**、MAPI は追加のメッセージ サービス情報をコピーできます。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -58,7 +58,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

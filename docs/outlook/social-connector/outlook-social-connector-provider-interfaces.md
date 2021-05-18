@@ -1,5 +1,5 @@
 ---
-title: Outlook Social Connector プロバイダーインターフェイス
+title: Outlookソーシャル コネクタ プロバイダー インターフェイス
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8f92b2c7-9f47-4c84-874b-fec1a2a5b555
-description: Outlook Social Connector (.osc) は、office クライアントアプリケーションによってソーシャルおよびビジネスネットワークに接続され、ユーザーが office を離れずにネットワーク内のユーザーと連絡を取り合うことができるようにする office の機能です。
+description: Outlook ソーシャル コネクタ (OSC) は、Office クライアント アプリケーションが共有する Office 機能で、ソーシャル ネットワークやビジネス ネットワークに接続し、ユーザーが Office を離れることなくネットワーク内のユーザーと連絡を取り合える機能です。
 ms.openlocfilehash: 77759db34f63239473e0682cfaca720860e96768
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -15,18 +15,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33422811"
 ---
-# <a name="outlook-social-connector-provider-interfaces"></a>Outlook Social Connector プロバイダーインターフェイス
+# <a name="outlook-social-connector-provider-interfaces"></a>Outlookソーシャル コネクタ プロバイダー インターフェイス
 
-Outlook Social Connector (.osc) は、office クライアントアプリケーションによってソーシャルおよびビジネスネットワークに接続され、ユーザーが office を離れずにネットワーク内のユーザーと連絡を取り合うことができるようにする office の機能です。 
+Outlook ソーシャル コネクタ (OSC) は、Office クライアント アプリケーションが共有する Office 機能で、ソーシャル ネットワークやビジネス ネットワークに接続し、ユーザーが Office を離れることなくネットワーク内のユーザーと連絡を取り合える機能です。 
   
-.osc プロバイダーは、コンポーネントオブジェクトモデル (COM) DLL で、各ソーシャルネットワークの api とは無関係に、.osc がソーシャルネットワークデータにアクセスできるようにします。 次の表に、.osc プロバイダ拡張機能のインターフェイスを示します。 .osc プロバイダーは、.osc と通信するために、次の5つのインターフェイスを実装する必要があります。 i入力された[alperson](isocialpersoniunknown.md)、 [i通達 alprofile](isocialprofileisocialperson.md)、 [isocialperson](isocialprovideriunknown.md)、および[i指定 alsession](isocialsessioniunknown.md)。 .osc プロバイダーが、フレンドの同期アクティビティ、オンデマンドまたはハイブリッド同期、ログイン資格情報のキャッシュ、キャッシュされた資格情報を使用したログオン、または個人をフォローする機能をサポートしている場合は、プロバイダーは ISocialSession2 を実装する必要があります。 [](isocialsession2iunknown.md)も同様です。
+OSC プロバイダーはコンポーネント オブジェクト モデル (COM) DLL で、各ソーシャル ネットワークの API とは独立した方法で OSC がソーシャル ネットワーク データにアクセスできます。 次の表に、OSC プロバイダーの機能拡張のインターフェイスを示します。 OSC プロバイダーは、5 つのインターフェイスの 4 つを実装して OSC と通信する必要があります[。ISocialPerson](isocialpersoniunknown.md) [、ISocialProfile、ISocialProvider、](isocialprofileisocialperson.md)[および ISocialSession](isocialsessioniunknown.md)です。 [](isocialprovideriunknown.md) OSC プロバイダーがアクティビティの同期、フレンドのオンデマンドまたはハイブリッド同期、ログオン資格情報のキャッシュ、キャッシュされた資格情報の使用、またはユーザーのフォロー機能をサポートしている場合、プロバイダーは [ISocialSession2](isocialsession2iunknown.md)も実装する必要があります。
   
 |**名前**|**説明**|
 |:-----|:-----|
-|[i社会](isocialpersoniunknown.md) <br/> |ソーシャルネットワーク上の人物を表します。  <br/> |
-|[iこの alprofile](isocialprofileisocialperson.md) <br/> |ログオンしているユーザーを表します。  <br/> |
-|[iこの alprovider](isocialprovideriunknown.md) <br/> |.osc プロバイダーのインスタンスを表します。  <br/> |
-|[ISocialSession](isocialsessioniunknown.md) <br/> |ソーシャルネットワークサイトへの接続を表します。  <br/> |
-|[ISocialSession2](isocialsession2iunknown.md) <br/> |アクティビティの同期、フレンドの追加、オンデマンドまたはハイブリッド同期、またはキャッシュされた資格情報を使用したソーシャルネットワークへのログオンをサポートします。  <br/> |
+|[ISocialPerson](isocialpersoniunknown.md) <br/> |ソーシャル ネットワーク上のユーザーを表します。  <br/> |
+|[ISocialProfile](isocialprofileisocialperson.md) <br/> |ログオンしているユーザーを表します。  <br/> |
+|[ISocialProvider](isocialprovideriunknown.md) <br/> |OSC プロバイダーのインスタンスを表します。  <br/> |
+|[ISocialSession](isocialsessioniunknown.md) <br/> |ソーシャル ネットワーク サイトへの接続を表します。  <br/> |
+|[ISocialSession2](isocialsession2iunknown.md) <br/> |キャッシュされた資格情報を使用して、アクティビティの同期、友人の追加、フレンドのオンデマンドまたはハイブリッド同期、またはソーシャル ネットワークへのログオンをサポートします。  <br/> |
    
 

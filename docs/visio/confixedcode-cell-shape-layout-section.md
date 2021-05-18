@@ -22,23 +22,23 @@ ms.locfileid: "33404184"
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|.0  <br/> |自由に経路を変更します。  <br/> |**visSLOConFixedRerouteFreely** <br/> |
-|1   <br/> |必要に応じて経路を再設定します (手動による変更)。  <br/> |**visSLOConFixedRerouteAsNeeded** <br/> |
-|2   <br/> |経路変更しません。  <br/> |**visSLOConFixedRerouteNever** <br/> |
-|3   <br/> |交差時に経路を変更します。  <br/> |**visSLOConFixedRerouteOnCrossover** <br/> |
-|4   <br/> |システム内部でのみ使用します。  <br/> |**visSLOConFixedByAlgFrom** <br/> |
-|5   <br/> |システム内部でのみ使用します。  <br/> |**visSLOConFixedByAlgTo** <br/> |
-|6   <br/> |システム内部でのみ使用します。  <br/> |**visSLOConFixedByAlgFromTo** <br/> |
+|0  <br/> |自由に経路を変更します。  <br/> |**visSLOConFixedRerouteFreely** <br/> |
+|1  <br/> |必要に応じて経路を再設定します (手動による変更)。  <br/> |**visSLOConFixedRerouteAsNeeded** <br/> |
+|2  <br/> |経路変更しません。  <br/> |**visSLOConFixedRerouteNever** <br/> |
+|3  <br/> |交差時に経路を変更します。  <br/> |**visSLOConFixedRerouteOnCrossover** <br/> |
+|4  <br/> |システム内部でのみ使用します。  <br/> |**visSLOConFixedByAlgFrom** <br/> |
+|5  <br/> |システム内部でのみ使用します。  <br/> |**visSLOConFixedByAlgTo** <br/> |
+|6  <br/> |システム内部でのみ使用します。  <br/> |**visSLOConFixedByAlgFromTo** <br/> |
    
 ## <a name="remarks"></a>注釈
 
-このセルの値は、動的コネクタを選択し、[[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] で [**基本動作**] をクリックし、[**コネクタ**] タブをクリックして設定することもできます。 
+このセルの値を設定するには、動的コネクタを選択し、[開発] タブの [図形デザイン] グループ [](run-in-developer-mode-display-the-developer-tab.md)の [動作] をクリックし、[コネクタ] タブ **をクリック** します。  
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ConFixedCode] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[confixedcode]  <br/> |
+|セル名:  <br/> |ConFixedCode  <br/> |
    
 プログラムから、インデックスによって [ConFixedCode] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -46,6 +46,6 @@ ms.locfileid: "33404184"
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionObject** <br/> |
 |行インデックス:  <br/> |**visRowShapeLayout** <br/> |
-|セル インデックス:  <br/> |**visslo# xedcode** <br/> |
+|セル インデックス:  <br/> |**visSLOConFixedCode** <br/> |
    
 

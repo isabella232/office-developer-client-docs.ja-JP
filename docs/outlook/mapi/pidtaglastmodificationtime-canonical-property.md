@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: a64e5300-6865-4588-8e1b-158cfd9c60c2
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: dea709b457e28efef62718fc388621e01c4eb5bf
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,44 +25,44 @@ ms.locfileid: "32279710"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-オブジェクトまたはサブオブジェクトが最後に変更された日付と時刻を格納します。 
+オブジェクトまたはサブオブジェクトが最後に変更された日時を格納します。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_LAST_MODIFICATION_TIME  <br/> |
 |識別子:  <br/> |0x3008  <br/> |
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
-|エリア:  <br/> |メッセージ時間  <br/> |
+|エリア:  <br/> |メッセージ時刻  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このプロパティは、最初は**PR_CREATION_TIME** ([PidTagCreationTime](pidtagcreationtime-canonical-property.md)) プロパティと同じ値に設定されます。 添付ファイルサブオブジェクトは、ネイティブファイルシステムによって管理される最終変更時刻をコピーすることによって、必要に応じて更新できます。 クライアントアプリケーションは、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを最初に呼び出すまで、このプロパティを設定できます。 プロバイダーでは、PR_LAST_MODIFICATION_TIME は、すべての**imapiprop:: SaveChanges**呼び出し中に、 **** を更新する必要があります。 
+このプロパティは、最初はプロパティ ([PidTagCreationTime](pidtagcreationtime-canonical-property.md) **)** プロパティPR_CREATION_TIME同じ値に設定されます。 添付ファイル サブオブジェクトは、ネイティブ ファイル システムによって保持された最後の変更時刻をコピーすることで、必要に応じて更新できます。 クライアント アプリケーションは [、IMAPIProp::SaveChanges](imapiprop-savechanges.md) メソッドを最初に呼び出すまで、このプロパティを設定できます。 それ以降、プロバイダーは **IMAPIProp::SaveChanges** 呼び出 **し** PR_LAST_MODIFICATION_TIME間に更新する必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルオブジェクトを処理します。
+> メッセージ オブジェクトと添付ファイル オブジェクトを処理します。
     
-[[OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[MS-OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
-> サーバーとクライアントの間でメッセージオブジェクトデータの同期を処理します。
+> サーバーとクライアント間のメッセージング オブジェクト データの同期を処理します。
     
-[[OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
-> ユーザー、連絡先、グループ、およびリソースのリストのプロパティと操作を指定します。
+> ユーザー、連絡先、グループ、およびリソースの一覧のプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -72,7 +72,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

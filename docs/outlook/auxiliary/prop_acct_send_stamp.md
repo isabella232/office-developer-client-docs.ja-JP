@@ -14,24 +14,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33423007"
 ---
-# <a name="propacctsendstamp"></a>PROP_ACCT_SEND_STAMP
+# <a name="prop_acct_send_stamp"></a>PROP_ACCT_SEND_STAMP
 
-アカウント "send" スタンプを返します。
+アカウントの "送信" スタンプを返します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IOlkAccount](iolkaccount.md)を参照してください。
+[「IOlkAccount」を参照してください](iolkaccount.md)。
   
 |||
 |:-----|:-----|
-|識別子:  <br/> |0x000e  <br/> |
+|識別子:  <br/> |0x000E  <br/> |
 |プロパティの種類:  <br/> |PT_UNICODE  <br/> |
-|プロパティタグ:  <br/> |0x000e001f  <br/> |
-|接続  <br/> |読み取り専用  <br/> |
+|プロパティ タグ:  <br/> |0x000E001F  <br/> |
+|アクセス:  <br/> |読み取り専用  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-[IOlkAccount:: getprop](iolkaccount-getprop.md)を使用して、このプロパティを取得します。 クライアントがこのプロパティを設定しようとすると、このプロパティは**E_OLK_PROP_READ_ONLY**を返します。 
+[IOlkAccount::GetProp を使用してこのプロパティを取得します](iolkaccount-getprop.md)。 クライアントがこのプロパティを設定しようとすると、このプロパティは次 **E_OLK_PROP_READ_ONLY。** 
   
 ## <a name="see-also"></a>関連項目
 

@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: b09b48d0-9008-4e43-9506-93a830ad9452
-description: 図形の上面取りの高さをポイント単位で指定します。
+description: 図形の上部斜角の高さをポイントで指定します。
 ms.openlocfilehash: 4da2fd1d61b530450f9020b12d5016015fd59dba
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,17 +16,17 @@ ms.locfileid: "33421866"
 ---
 # <a name="beveltopheight-cell-bevel-properties-section"></a>[BevelTopHeight] セル ([ベベルのプロパティ] セクション)
 
-図形の上面取りの高さをポイント単位で指定します。 
+図形の上部斜角の高さをポイントで指定します。 
   
 ## <a name="remarks"></a>注釈
 
-別の数式から、 **cell**要素の**N**属性の値によって、または**CellsU**プロパティを使用したプログラムから、名前によって [傾斜] [**高さ**] セルへの参照を取得するには、次の値を使用します。 
+別の数式 **、Cell** 要素の **N** 属性の値、**または CellsU** プロパティを使用したプログラムから、名前によって **BevelTopHeight** セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [beveltopheight]  <br/> |
+| セル名:  <br/> | BevelTopHeight  <br/> |
    
-プログラムから、インデックスによって [傾斜] [**高さ**] セルへの参照を取得するには、 **CellsSRC**プロパティを使用し、次の引数を指定します。 
+プログラムからインデックスによって **[BevelTopHeight]** セルへの参照を取得するには **、CellsSRC** プロパティを使用して、次の引数を指定します。 
   
 |||
 |:-----|:-----|

@@ -1,5 +1,5 @@
 ---
-title: datewithtimefromparts 関数 (Access カスタム web アプリ)
+title: DateWithTimeFromParts 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33422090"
 ---
-# <a name="datewithtimefromparts-function-access-custom-web-app"></a>datewithtimefromparts 関数 (Access カスタム web アプリ)
+# <a name="datewithtimefromparts-function-access-custom-web-app"></a>DateWithTimeFromParts 関数 (Access カスタム Web アプリ)
 
 指定した年、月、日、および時刻に基づく日付時刻を返します。
   

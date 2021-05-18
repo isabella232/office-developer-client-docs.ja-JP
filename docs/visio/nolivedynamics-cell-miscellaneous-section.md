@@ -33,7 +33,7 @@ ms.locfileid: "33421481"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [nolivedynamics]  <br/> |
+| セル名 :  <br/> | NoLiveDynamics  <br/> |
    
 プログラムから、インデックスによって [NoLiveDynamics] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   

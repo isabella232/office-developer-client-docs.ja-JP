@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 578be74e-6aeb-fc62-7c32-7e7e6aa61f39
-description: このメンバーはプレースホルダーで、サポートされていません。
+description: このメンバーはプレースホルダーであり、サポートされていません。
 ms.openlocfilehash: 92bab8ba239db17ece9c9ed565312b119aaaa88b
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,11 +16,11 @@ ms.locfileid: "33422412"
 ---
 # <a name="ifreebusydataplaceholder1"></a>IFreeBusyData::Placeholder1
 
-このメンバーはプレースホルダーで、サポートされていません。
+このメンバーはプレースホルダーであり、サポートされていません。
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IFreeBusyData](ifreebusydata.md)を参照してください。
+[「IFreeBusyData」を参照してください](ifreebusydata.md)。
   
 ```cpp
 HRESULT Placeholder1( 
@@ -31,11 +31,11 @@ HRESULT Placeholder1(
 
 ## <a name="return-values"></a>戻り値
 
-このメンバーは**IFreeBusyData**のプレースホルダーであり、サポートされていないため、常に E_NOTIMPL。 
+このE_NOTIMPL **IFreeBusyData** のプレースホルダーであり、サポートされていないので、常に使用してください。 
   
 ## <a name="remarks"></a>注釈
 
-このメンバーは、E_NOTIMPL を返す必要があります。
+このメンバーは、この値をE_NOTIMPL。
   
 ## <a name="see-also"></a>関連項目
 

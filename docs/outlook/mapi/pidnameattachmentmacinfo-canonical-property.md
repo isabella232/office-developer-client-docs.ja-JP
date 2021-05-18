@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c46656d5-2cb1-45eb-9f66-9c2b6e3315cf
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: d2a7fcf06c4e09f46c0d50f9e5f8897874c5f9a2
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,37 +25,37 @@ ms.locfileid: "32360929"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Macintosh ベースの電子メールクライアントによって使用される適切なヘッダーとリソースフォークデータから成る [RFC3282] 添付ファイルの値を格納します。
+Macintosh ベースの電子メール クライアントで使用される適切なヘッダーおよびリソース フォーク データで構成される [RFC3282] 添付ファイルの値が含まれています。
   
 |||
 |:-----|:-----|
-|フレンドリ名:  <br/> |なし  <br/> |
-|プロパティセット:  <br/> |PSETID_Attachment  <br/> |
-|プロパティ名:  <br/> |attachmentmacinfo  <br/> |
+|分名:  <br/> |なし  <br/> |
+|プロパティ セット:  <br/> |PSETID_Attachment  <br/> |
+|プロパティ名:  <br/> |AttachmentMacInfo  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-詳細については、「OXCMAIL section 2.2.4.2 Apple ファイル形式」を参照してください。
+詳細については、「MS-OXCMAIL」セクション 2.2.4.2 Apple File Formats を参照してください。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
-[[OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS-OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
-> インターネット標準の電子メールの規則からメッセージオブジェクトに変換します。
+> インターネット標準の電子メール規則からメッセージ オブジェクトに変換します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
 ## <a name="see-also"></a>関連項目
 
@@ -65,7 +65,7 @@ mapidefs.h
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

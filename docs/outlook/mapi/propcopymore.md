@@ -25,13 +25,13 @@ ms.locfileid: "33404471"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-1つのプロパティ値をソースの場所から移動先の場所にコピーします。 
+1 つのプロパティ値をソースの場所からコピー先の場所にコピーします。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 SCODE PropCopyMore(
@@ -44,21 +44,21 @@ SCODE PropCopyMore(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpspropvaluedest_
+ _lpSPropValueDest_
   
-> 読み上げこの関数がコピーされたプロパティ値を定義する[spropvalue](spropvalue.md)構造を書き込む場所へのポインター。 
+> [out]コピーされたプロパティ値を定義する [SPropValue](spropvalue.md) 構造体をこの関数が書き込む場所へのポインター。 
     
- _lpspropて rc_
+ _lpSPropValueSrc_
   
-> 順番コピーするプロパティ値を含む[spropvalue](spropvalue.md)構造体へのポインター。 
+> [in]コピーする [プロパティ値を含む SPropValue](spropvalue.md) 構造体へのポインター。 
     
  _lpfAllocMore_
   
-> 順番コピーするプロパティを保持するには、コピー先の場所が十分でない場合に、追加のメモリを割り当てるために使用される[MAPIAllocateMore](mapiallocatemore.md)関数へのポインター。 
+> [in]コピー先の場所がコピーするプロパティを保持するのに十分な大きさではない場合に、追加のメモリを割り当てるのに使用する [MAPIAllocateMore](mapiallocatemore.md) 関数へのポインター。 
     
- _lpvobject_
+ _lpvObject_
   
-> 順番**MAPIAllocateMore**が必要に応じてスペースを割り当てるオブジェクトへのポインター。 
+> [in] **MAPIAllocateMore** が必要に応じて領域を割り当てるオブジェクトへのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -72,10 +72,10 @@ MAPI_E_NO_SUPPORT
     
 ## <a name="remarks"></a>注釈
 
-クライアントアプリケーションまたはサービスプロバイダーは、 **propcopymore**関数を使用して、別の場所で使用するために解放されることになるテーブルからプロパティをコピーできます。 
+クライアント アプリケーションまたはサービス プロバイダーは **PropCopyMore** 関数を使用して、他の場所でプロパティを使用するために解放されるテーブルからプロパティをコピーできます。 
   
- コピーされたプロパティ値が PT_STRING8 など、 [spropvalue](spropvalue.md)構造に適合しない場合を除いて、 **propcopymore**はメモリを割り当てる必要はありません。 このような大きなプロパティの場合、関数は、ポインターが_lpfAllocMore_パラメータで渡される[MAPIAllocateMore](mapiallocatemore.md)関数を使用してメモリを割り当てます。 
+ **PropCopyMore は** 、コピーされるプロパティ値が [sPropValue](spropvalue.md) 構造体に収まらない PT_STRING8 などの型の場合を指定しない限り、メモリを割り当てる必要があります。 これらの大きなプロパティの場合、関数は、ポインターが _lpfAllocMore_ パラメーターで渡される [MAPIAllocateMore](mapiallocatemore.md)関数を使用してメモリを割り当てる。 
   
-injudicious use **propcopymore**の断片メモリ。代わりに、 [sccopyprops](sccopyprops.md)関数の使用を検討してください。 
+**PropCopyMore** フラグメント メモリの不当な使用。代わりに [ScCopyProps 関数の使用](sccopyprops.md)を検討してください。 
   
 

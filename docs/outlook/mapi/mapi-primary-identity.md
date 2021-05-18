@@ -1,5 +1,5 @@
 ---
-title: MAPI プライマリ id
+title: MAPI プライマリ ID
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,44 +15,44 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33404723"
 ---
-# <a name="mapi-primary-identity"></a>MAPI プライマリ id
+# <a name="mapi-primary-identity"></a>MAPI プライマリ ID
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ほとんどの MAPI セッションには、セッションのプライマリ id を提供する特定のサービスプロバイダーがあります。 通常、アドレス帳プロバイダーは、メッセージングユーザーオブジェクトまたは配布リストのいずれかを使用して id を提供します。 実際に、MAPI では、アドレス帳プロバイダーを含むメッセージサービスがプライマリ id に対してオブジェクトの1つを使用することをお勧めします。 メッセージサービスに属するサービスプロバイダーがプライマリ id を提供すると、メッセージサービス内の他のすべてのサービスプロバイダーがこの id を共有します。
+ほとんどの MAPI セッションには、セッションのプライマリ ID を提供する特定のサービス プロバイダーがあります。 通常、これはアドレス帳プロバイダーで、メッセージング ユーザー オブジェクトまたは配布リストのいずれかを通じて ID を提供します。 実際、MAPI では、アドレス帳プロバイダーを含むメッセージ サービスがプライマリ ID に対してそのオブジェクトの 1 つを使用する必要があります。 メッセージ サービスに属するサービス プロバイダーがプライマリ ID を提供する場合、メッセージ サービス内の他のすべてのサービス プロバイダーは、この ID を共有します。
   
-mapisvc.inf。INF 構成ファイルには、メッセージサービスとサービスプロバイダーレベルの両方で id に関連するエントリがあります。 メッセージサービスセクションには、サービスがプライマリ id を提供できるかどうかを示すエントリを含める必要があります。サービスプロバイダーのセクションには、プロバイダーが id を提供できる場合にのみ、同様のエントリが含まれます。
+MAPISVC。INF 構成ファイルには、メッセージ サービスとサービス プロバイダー レベルの両方の ID に関連するエントリがあります。 メッセージ サービス セクションには、サービスがプライマリ ID を提供できるかどうかを示すエントリが含まれる必要があります。サービス プロバイダー セクションには、プロバイダーが ID を指定できる場合にのみ、同様のエントリが含まれます。
   
-次の表に、mapisvc.inf のメッセージサービスおよびサービスプロバイダーのセクションに表示されるエントリを示します。INF ファイル
+次の表に、MAPISVC のメッセージ サービスとサービス プロバイダーのセクションに表示されるエントリの一覧を示します。INF ファイル。
   
-|**プライマリ id サプライヤー**|**PR_RESOURCE_FLAGS 設定**|
+|**プライマリ ID サプライヤー**|**PR_RESOURCE_FLAGS設定**|
 |:-----|:-----|
-|メッセージサービス  <br/> | `SERVICE_PRIMARY_IDENTITY` <br/> |
-|メッセージサービスではありません  <br/> | `SERVICE_NO_PRIMARY_IDENTITY` <br/> |
-|サービスプロバイダー  <br/> | `STATUS_PRIMARY_IDENTITY` <br/> |
+|メッセージ サービス  <br/> | `SERVICE_PRIMARY_IDENTITY` <br/> |
+|メッセージ サービスではない  <br/> | `SERVICE_NO_PRIMARY_IDENTITY` <br/> |
+|サービス プロバイダー  <br/> | `STATUS_PRIMARY_IDENTITY` <br/> |
    
-複数のメッセージサービスは、セッションのプライマリ id を提供する機能を宣言できますが、そのために選択されているメッセージサービスは1つだけです。 次の選択が可能です。
+複数のメッセージ サービスがセッションのプライマリ ID を提供する機能を宣言することができますが、これを行うメッセージ サービスは 1 つしか選択されません。 この選択は次の場合に発生します。
   
-- プロファイルが作成されたとき。
+- プロファイルが作成された場合。
     
-- クライアントが**IMsgServiceAdmin:: setprimaryidentity**を呼び出して、特定のメッセージサービスをセッション id のプロバイダーとして明示的に確立するとき。 を参照してください。 「 [IMsgServiceAdmin:: setprimaryidentity](imsgserviceadmin-setprimaryidentity.md)」を参照してください。
+- クライアントが **IMsgServiceAdmin::SetPrimaryIdentity** を呼び出して、特定のメッセージ サービスをセッション ID のプロバイダーとして明示的に確立する場合。 詳細については、次の情報を参照してください。 [「IMsgServiceAdmin::SetPrimaryIdentity」を参照してください](imsgserviceadmin-setprimaryidentity.md)。
     
-プロファイルが作成されると、MAPI は、STATUS_PRIMARY_IDENTITY フラグを**PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) プロパティに設定してプライマリ id を指定したプロバイダーを含む、構成する最初のメッセージサービスを指定します。. 指定したメッセージサービス内で、このリソースフラグセットを使用して構成する最初のプロバイダーが、サービスの id を提供するために選択されます。 STATUS_PRIMARY_IDENTITY フラグは、指定されたサービス内の他のすべてのプロバイダーと、プロファイル内の他のメッセージサービスに対してクリアされます。 プライマリ id を提供するプロバイダーがプロファイルから削除されるたびに、MAPI は、id を提供できる次のプロバイダーに役割を割り当てます。 これは、mapisvc.inf のプロバイダーのセクション`PR_RESOURCE_FLAGS=STATUS_PRIMARY_IDENTITY`にあるエントリの外観によって決まります。 
+プロファイルが作成されると、MAPI は **、PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) プロパティに STATUS_PRIMARY_IDENTITY フラグが設定されたプロバイダーを含む構成する最初のメッセージ サービスを指定して、プライマリ ID を指定します。 指定されたメッセージ サービス内で、このリソース フラグセットを使用して構成される最初のプロバイダーが、サービスの ID を提供するように選択されます。 指定STATUS_PRIMARY_IDENTITY内の他のすべてのプロバイダーと、プロファイル内の他のメッセージ サービスに対して、このフラグがクリアされます。 プライマリ ID を提供するプロバイダーがプロファイルから削除されると、MAPI は、ID を提供できる構成する次のプロバイダーに役割を割り当てる。 これは、MAPISVC.INF のプロバイダーのセクションのエントリの  `PR_RESOURCE_FLAGS=STATUS_PRIMARY_IDENTITY` 外観によって決まります。 
   
-クライアントは、message service の**IMsgServiceAdmin:: setprimaryidentity**メソッドを呼び出すときに、ターゲットサービス内のサービスプロバイダーの MAPIUID を指定します。 詳細については、「 [MAPIUID](mapiuid.md)」を参照してください。 **MAPIUID**によって表されるサービスプロバイダーは、メッセージサービスとセッションのプライマリ id を指定するために割り当てられ、サービス内の他のすべてのプロバイダーがこの id を共有します。 
+クライアントがメッセージ サービスの **IMsgServiceAdmin::SetPrimaryIdentity** メソッドを呼び出す場合、ターゲット サービス内のサービス プロバイダーの MAPIUID を指定します。 詳細については [、「MAPIUID」を参照してください](mapiuid.md)。 **MAPIUID** によって表されるサービス プロバイダーは、メッセージ サービスとセッションのプライマリ ID を提供するために割り当て、サービス内の他のすべてのプロバイダーは、この ID を共有します。 
   
-プライマリ id の指定を担当するメッセージサービスのすべてのプロバイダーは、次のプロパティを含むように状態テーブルの行を更新します。
+プライマリ ID の提供を担当するメッセージ サービスのすべてのプロバイダーは、次のプロパティを含む状態テーブルの行を更新します。
   
-|**プライマリ id プロパティ**|**設定値**|
+|**プライマリ ID プロパティ**|**設定値**|
 |:-----|:-----|
-|**PR_IDENTITY_DISPLAY**([PidTagIdentityDisplay](pidtagidentitydisplay-canonical-property.md))  <br/> |プライマリ id を提供するオブジェクトの表示名。  <br/> |
-|**PR_IDENTITY_SEARCH_KEY**([PidTagIdentitySearchKey](pidtagidentitysearchkey-canonical-property.md))  <br/> |プライマリ id を提供するオブジェクトの検索キー。  <br/> |
-|**PR_IDENTITY_ENTRYID**([PidTagIdentityEntryId](pidtagidentityentryid-canonical-property.md))  <br/> |プライマリ id を提供するオブジェクトのエントリ識別子。  <br/> |
+|**PR_IDENTITY_DISPLAY** ([PidTagIdentityDisplay](pidtagidentitydisplay-canonical-property.md))  <br/> |プライマリ ID を指定するオブジェクトの表示名。  <br/> |
+|**PR_IDENTITY_SEARCH_KEY** ([PidTagIdentitySearchKey](pidtagidentitysearchkey-canonical-property.md))  <br/> |プライマリ ID を指定するオブジェクトの検索キー。  <br/> |
+|**PR_IDENTITY_ENTRYID** ([PidTagIdentityEntryId](pidtagidentityentryid-canonical-property.md))  <br/> |プライマリ ID を指定するオブジェクトのエントリ識別子。  <br/> |
    
- **プライマリ id を提供するオブジェクトのエントリ識別子を取得するには**
+ **プライマリ ID を指定するオブジェクトのエントリ識別子を取得するには**
   
-- **imapisession:: queryidentity**メソッドを呼び出します。 詳細については、「 [imapisession:: queryidentity](imapisession-queryidentity.md)」を参照してください。 **queryidentity**は、 **PR_RESOURCE_FLAGS**列の値 STATUS_PRIMARY_IDENTITY が含まれている行の状態テーブルを検索し、プライマリのエントリ識別子として対応する**PR_IDENTITY_ENTRYID**を返します。独自性. 
+- **IMAPISession::QueryIdentity メソッドを呼び出** します。 詳細については [、「IMAPISession::QueryIdentity」を参照してください](imapisession-queryidentity.md)。 **QueryIdentity** は **、PR_RESOURCE_FLAGS** 列の値 STATUS_PRIMARY_IDENTITY を含む行の状態テーブルを検索し、対応する **PR_IDENTITY_ENTRYID** をプライマリ ID のエントリ識別子として返します。 
     
 

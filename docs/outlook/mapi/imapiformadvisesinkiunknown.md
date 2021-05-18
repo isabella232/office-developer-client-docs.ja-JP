@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 180022af-4c1c-408c-a3fe-ed075cef79ab
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 68c2af0cd8d7ccddf6aa6017cfb830b196ac0771
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,29 +25,29 @@ ms.locfileid: "32286605"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームサーバーがフォームビューアーから通知を受信できるようにします。 
+フォーム サーバーがフォーム ビューアーから通知を受け取ることができます。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
-|公開者:  <br/> |Form アドバイズシンクオブジェクト  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |フォームアアドバイスシンク オブジェクト  <br/> |
 |実装元:  <br/> |フォーム サーバー  <br/> |
-|呼び出し元:  <br/> |フォームビューアー  <br/> |
+|呼び出し元:  <br/> |フォーム ビューアー  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMAPIFormAdviseSink  <br/> |
 |ポインターの種類:  <br/> |LPMAPIFORMADVISESINK  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[OnChange](imapiformadvisesink-onchange.md) <br/> |フォームビューアーの状態で変更が発生したことを示します。  <br/> |
-|[OnActivateNext](imapiformadvisesink-onactivatenext.md) <br/> |フォームが次に表示されるメッセージのメッセージクラスを処理できるかどうかを示します。  <br/> |
+|[OnChange](imapiformadvisesink-onchange.md) <br/> |フォーム ビューアーの状態で変更が発生したかどうかを示します。  <br/> |
+|[OnActivateNext](imapiformadvisesink-onactivatenext.md) <br/> |表示する次のメッセージのメッセージ クラスをフォームで処理できるかどうかを示します。  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-フォームサーバーは form アドバイズシンクオブジェクトを使用して、form オブジェクトに含めるのではなく、 **IMAPIFormAdviseSink**を実装します。 そのため、フォーム閲覧者は、このインターフェイスへのポインターを取得するために、フォームの[IUnknown:: QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)メソッドへの呼び出しが失敗したことを想定してください。 
+フォーム サーバーでは、フォーム オブジェクトに **IMAPIFormAdviseSink** を含める代わりに、フォーム アアドバイス シンク オブジェクトを使用して IMAPIFormAdviseSink を実装します。 したがって、フォーム ビューアーは、このインターフェイスへのポインターを取得するために、フォームの [IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) メソッドへの呼び出しが失敗したと予想する必要があります。 
   
-フォームサーバーは、通知を登録するために、ビューアーの[imapiviewcontext:: SetAdviseSink](imapiviewcontext-setadvisesink.md)メソッドを呼び出します。 **IMAPIFormAdviseSink**実装へのポインターは、パラメーターとして含まれています。 
+フォーム サーバーは、ビューアーの [IMAPIViewContext::SetAdviseSink](imapiviewcontext-setadvisesink.md) メソッドを呼び出して、通知に登録します。 **IMAPIFormAdviseSink** 実装へのポインターがパラメーターとして含まれます。 
   
 ## <a name="see-also"></a>関連項目
 

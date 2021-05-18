@@ -1,5 +1,5 @@
 ---
-title: TNEF ストリームの構文
+title: TNEF ストリーム構文
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,39 +15,39 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33423028"
 ---
-# <a name="tnef-stream-syntax"></a>TNEF ストリームの構文
+# <a name="tnef-stream-syntax"></a>TNEF ストリーム構文
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックでは、TNEF ストリームの構文についての、Bakus という名前の説明を示します。 この説明では、さらに詳細が定義されている nonterminal 要素は斜体になっています。 定数とリテラルアイテムは太字で示しています。 要素のシーケンスは、1行に順に表示されます。 たとえば、_ストリーム_アイテムは定数**TNEF_SIGNATURE**で構成され、その後に_キー_が続き、その後に_オブジェクト_が続きます。 アイテムに複数の実装がある場合、選択肢は連続した行に表示されます。 たとえば、_オブジェクト_は、 _Message_Seq_、 _Message_Seq_の後に_Attach_Seq_、または_Attach_Seq_だけで構成できます。
+このトピックでは、TNEF ストリームBakus-Nauer説明のような方法について説明します。 この説明では、それ以上の定義を持つ非ターミニナル要素が italics に含まれています。 定数とリテラル項目は太字です。 要素のシーケンスは、1 行に順番に一覧表示されます。 たとえば _、Stream_ アイテムは定数の値TNEF_SIGNATUREキー 、続いて Object で構成 _されます_。  アイテムに複数の実装が可能な場合、代替案は連続した行に一覧表示されます。 たとえば、_オブジェクト_ は、オブジェクト、Message_Seq、Message_Seq、Attach_Seq、または単なるAttach_Seq _で構成Attach_Seq。_  
   
  _TNEF_Stream:_
   
-> **TNEF_SIGNATURE**_キー__オブジェクト_
+> **TNEF_SIGNATURE**_キー_ _オブジェクト_
     
- _要点_
+ _キー:_
   
-> 0以外の16ビットの符号なし整数
+> 0 以外の 16 ビット符号なし整数
     
-tnef が有効なトランスポート tnef の実装を使用して tnef ストリームを生成する前に、この値を生成します。
+TNEF が有効なトランスポートは、TNEF 実装を使用して TNEF ストリームを生成する前に、この値を生成します。
   
- _対象_
+ _オブジェクト:_
   
 >  _Message_Seq Message_Seq Attach_Seq Attach_Seq_
     
  _Message_Seq:_
   
->  _attTnefVersion attTnefVersion Msg_Attribute_Seq attTnefVersion/attTnefVersion/Msg_Attribute_Seq の添付 messageclass Msg_Attribute_Seq Msg_Attribute_Seq_
+>  _attTnefVersion attTnefVersion Msg_Attribute_Seq attTnefVersion attMessageClass attTnefVersion attMessageClass Msg_Attribute_Seq attMessageClass attMessageClass Msg_Attribute_Seq Msg_Attribute_Seq_
     
  _attTnefVersion:_
   
-> **LVL_MESSAGE attTnefVersion sizeof (ULONG)****0x00010000**チェックサム 
+> **LVL_MESSAGE attTnefVersion sizeof(ULONG) 0x00010000****チェックサム** 
     
- _/添付:_
+ _attMessageClass:_
   
-> **LVL_MESSAGE の添付の messageclass**_msg_class_length msg_class_チェックサム 
+> **LVL_MESSAGE attMessageClass** _msg_class_length msg_class_ チェックサム 
     
  _Msg_Attribute_Seq:_
   
@@ -55,9 +55,9 @@ tnef が有効なトランスポート tnef の実装を使用して tnef スト
     
  _Msg_Attribute:_
   
-> **LVL_MESSAGE**属性-ID 属性-長さ属性-データチェックサム 
+> **LVL_MESSAGE-ID** 属性長属性データ チェックサム 
     
-属性-ID は、発行されたものなど、TNEF **** 属性識別子の1つです。 属性-length は、属性データの長さ (バイト単位) です。 属性-data は、属性に関連付けられているデータです。
+属性 ID は **、attSubject** などの TNEF 属性識別子の 1 つです。 属性の長さは、属性データのバイト単位の長さです。 属性データは、属性に関連付けられたデータです。
   
  _Attach_Seq:_
   
@@ -65,9 +65,9 @@ tnef が有効なトランスポート tnef の実装を使用して tnef スト
     
  _attRenddata:_
   
-> **LVL_ATTACHMENT attRenddata****sizeof (RENDDATA)** RENDDATA チェックサム 
+> **LVL_ATTACHMENT attRenddata** **sizeof(RENDDATA) renddata** チェックサム 
     
-Renddata は、対応する添付ファイルのレンダリング情報を含む、 **Renddata**構造に関連付けられているデータです。 **RENDDATA**構造体は TNEF で定義されています。H ヘッダーファイル。 
+Renddata は、対応する添付ファイルのレンダリング情報を含む **RENDDATA** 構造体に関連付けられたデータです。 **RENDDATA 構造** は TNEF で定義されます。H ヘッダー ファイル。 
   
  _Att_Attribute_Seq:_
   
@@ -75,8 +75,8 @@ Renddata は、対応する添付ファイルのレンダリング情報を含�
     
  _Att_Attribute:_
   
-> **LVL_ATTACHMENT**属性-ID 属性-長さ属性-データチェックサム 
+> **LVL_ATTACHMENT-ID** 属性長属性データ チェックサム 
     
-属性 ID、属性長、および属性データの意味は、Msg_Attribute item の場合と同じです。
+属性 ID、属性の長さ、および属性データは、属性アイテムと同Msg_Attributeです。
   
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 28453d29-30c5-405b-84d2-5bb5f281756c
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 18bc41d9038113b5b813f1cfd02d90b8e982703c
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32359775"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-空き時間情報の状態が [仮承諾] である時間のブロックが含まれています。
+空き時間情報の状態が暫定的な時間のブロックを含む。
   
 |||
 |:-----|:-----|
@@ -34,35 +34,35 @@ ms.locfileid: "32359775"
 |データの種類 :   <br/> |PT_MV_BINARY  <br/> |
 |エリア:  <br/> |空き時間情報  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このプロパティの値の個数は、 **PR_SCHDINFO_MONTHS_TENTATIVE** ([PidTagScheduleInfoMonthsTentative](pidtagscheduleinfomonthstentative-canonical-property.md)) の値の数と同じです。 各バイナリ値は月を表し、 **PR_SCHDINFO_MONTHS_TENTATIVE**の同じインデックスの値に対応します。 バイナリ値は、 **PR_SCHDINFO_MONTHS_TENTATIVE**の値と同じ順序で並べ替えられます。
+このプロパティの値の数は、PR_SCHDINFO_MONTHS_TENTATIVE **(** [PidTagScheduleInfoMonthsTentative](pidtagscheduleinfomonthstentative-canonical-property.md)) です。 各バイナリ値は月を表し、同じインデックスの値に **対応** PR_SCHDINFO_MONTHS_TENTATIVE。 バイナリ値は、バイナリの値と同じ順序で並 **べPR_SCHDINFO_MONTHS_TENTATIVE。**
   
-各バイナリ値には、1つまたは複数の4バイトブロックがあり、それぞれの最初の2バイトの開始時刻と終了時刻はリトルエンディアン形式になっています。 start time は、月の最初の日のグリニッジ標準時 (utc) と、イベントの開始時刻 (utc) の間の時間 (分単位) です。 終了時刻は、月の最初の日の午前0時から utc の終了時刻までの時間を分単位で示します。 4バイトブロックは、昇順で並べ替えられます。
+各バイナリ値には 1 つ以上の 4 バイト ブロックが含まれます。各ブロックには、最初の 2 バイトの開始時刻と、2 番目の 2 バイトの終了時刻がリトル エンド形式で含まれます。 開始時刻は、月の最初の日の午前 0 時の協定世界時 (UTC) から UTC でのイベントの開始時刻の間の分数です。 終了時刻は、月の最初の日の午前 0 時 UTC から UTC でのイベントの終了時刻の間の分数です。 4 バイト ブロックは昇順に並べ替えます。
   
-時間の連続または重複するブロックは、開始時間が最初のブロックの開始時刻と最後のブロックの終了時刻として、1つのブロックにマージされます。 イベントが複数の月または年にまたがっている場合、イベントは月ごとに1つずつ、複数のブロックに分割されます。 公開範囲に一時的なイベントがない場合は、このプロパティと**PR_SCHDINFO_MONTHS_TENTATIVE**を設定したり、既に存在する場合は削除したりする必要があります。 それ以外の場合は、このプロパティを設定する必要があります。 
+連続または重複する時間ブロックは、最初のブロックの開始時刻として開始時刻を、最後のブロックの終了時刻として終了時刻として 1 つのブロックに結合されます。 イベントが複数の月または年にまたがっている場合、イベントは月ごとに 1 つ、複数のブロックに分割されます。 発行範囲に仮イベントがない場合は、このプロパティと PR_SCHDINFO_MONTHS_TENTATIVE を設定しないか、既に存在する場合は削除する必要があります。 それ以外の場合は、このプロパティを設定する必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXOPFFB]](https://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
+[[MS-OXOPFFB]](https://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
   
-> ユーザーまたはリソースの空き時間情報を公開します。
+> ユーザーまたはリソースの可用性を公開します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -72,7 +72,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

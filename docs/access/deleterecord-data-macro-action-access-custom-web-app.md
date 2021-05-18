@@ -1,5 +1,5 @@
 ---
-title: DeleteRecord Data マクロアクション (Access カスタム web アプリ)
+title: DeleteRecord Data Macro アクション (Access custom Web app)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33423154"
 ---
-# <a name="deleterecord-data-macro-action-access-custom-web-app"></a>DeleteRecord Data マクロアクション (Access カスタム web アプリ)
+# <a name="deleterecord-data-macro-action-access-custom-web-app"></a>DeleteRecord Data Macro アクション (Access custom Web app)
 
 You can use the **DeleteRecord** action to delete a record. 
   
@@ -26,7 +26,7 @@ You can use the **DeleteRecord** action to delete a record.
   
 |**Arg1 と Arg2 の値**|**説明**|
 |:-----|:-----|
-|**Record Alias/レコードの別名** <br/> |削除するレコードを識別する文字列。 *Alias*引数が指定されていない場合は、カレントレコードが削除されます。  <br/> |
+|**Record Alias/レコードの別名** <br/> |削除するレコードを識別する文字列。 Alias 引数  *を指定*  しない場合は、現在のレコードが削除されます。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

@@ -34,7 +34,7 @@ ms.locfileid: "33423210"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[fillbkgndtrans]  <br/> |
+|セル名:  <br/> |FillBkgndTrans  <br/> |
    
 プログラムから、インデックスによって [FillBkgndTrans] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

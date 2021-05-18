@@ -1,5 +1,5 @@
 ---
-title: トランスポートプロバイダーに必要な機能
+title: トランスポート プロバイダーに必要な機能
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,22 +15,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33404443"
 ---
-# <a name="required-functionality-for-transport-providers"></a>トランスポートプロバイダーに必要な機能
+# <a name="required-functionality-for-transport-providers"></a>トランスポート プロバイダーに必要な機能
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-すべての MAPI トランスポートプロバイダーは次のことを行う必要があります。
+すべての MAPI トランスポート プロバイダーは、次の必要があります。
   
-- MAPI およびその他のサービスプロバイダーを使用する場合の一般的なガイドラインに従ってください。 詳細については、「 [mapi アプリケーション開発](mapi-application-development.md)および[mapi サービスプロバイダ](mapi-service-providers.md)」を参照してください。
+- MAPI および他のサービス プロバイダーの操作に関する一般的なガイドラインに従います。 詳細については [、「MAPI アプリケーション開発と](mapi-application-development.md) [MAPI サービス プロバイダー」を参照してください](mapi-service-providers.md)。
     
-- トランスポートプロバイダ DLL が MAPI に公開される[](xpproviderinit.md)ようにします。 
+- トランスポート プロバイダー DLL を MAPI の [XPProviderInit 初期化関数に](xpproviderinit.md) 公開します。 
     
-- [ixpprovider: iunknown](ixpprovideriunknown.md)インターフェイスと[IXPLogon: iunknown](ixplogoniunknown.md)インターフェイスの実装を MAPI に公開します。 
+- [IXPProvider : IUnknown](ixpprovideriunknown.md)と[IXPLogon : IUnknown](ixplogoniunknown.md)インターフェイスの実装を MAPI に公開します。 
     
-- MAPI およびクライアントアプリケーションに対して、 [imapistatus: imapistatus](imapistatusimapiprop.md)インターフェイスの実装を公開します。 **imapistatus**の実装の詳細については、「 [status オブジェクトの実装](status-object-implementation.md)」を参照してください。 
+- MAPI およびクライアント アプリケーションに対して [IMAPIStatus : IMAPIProp インターフェイスの実装を公開](imapistatusimapiprop.md) します。 **IMAPIStatus** の実装の詳細については、「Status Object Implementation [」を参照してください](status-object-implementation.md)。 
     
-- 構成用のプロパティシートダイアログボックスを実装します。 プロパティシートの実装の詳細については、「[プロパティシートの実装](property-sheet-implementation.md)」を参照してください。
+- 構成用のプロパティ シート ダイアログ ボックスを実装します。 プロパティ シートの実装の詳細については、「プロパティ シートの [実装」を参照してください](property-sheet-implementation.md)。
     
 

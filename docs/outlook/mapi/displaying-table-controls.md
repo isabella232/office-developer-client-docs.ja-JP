@@ -1,5 +1,5 @@
 ---
-title: テーブルコントロールの表示
+title: テーブル コントロールの表示
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,30 +15,30 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33422692"
 ---
-# <a name="displaying-table-controls"></a>テーブルコントロールの表示
+# <a name="displaying-table-controls"></a>テーブル コントロールの表示
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-さまざまな種類のコントロールがあります。 MAPI に固有のものではありません。 しかし、MAPI は独自の構造を定義しています。これらは、各コントロールに関連する一意のデータセットを[builddisplaytable](builddisplaytable.md)と組み合わせて記述するために使用されます。 
+さまざまな種類のコントロールがあります。MAPI に固有のコントロールは存在します。 ただし、MAPI は、各コントロールに関連する一意のデータ セットを記述するために [BuildDisplayTable](builddisplaytable.md) と組み合わせて使用される独自の構造を定義します。 
   
-次の表に、各種類のコントロールを説明する構造を示します。 
+次の表に、各種類のコントロールについて説明する構造を示します。 
   
 |**制御構造**|**説明**|
 |:-----|:-----|
-|[DTBLBUTTON](dtblbutton.md) <br/> |ボタンコントロールについて説明します。  <br/> |
-|[DTBLCHECKBOX](dtblcheckbox.md) <br/> |チェックボックスコントロールについて説明します。  <br/> |
-|[DTBLCOMBOBOX](dtblcombobox.md) <br/> |コンボボックスコントロールを表します。  <br/> |
-|[DTBLDDLBX](dtblddlbx.md) <br/> |ドロップダウンリストボックスコントロールについて説明します。  <br/> |
-|[DTBLEDIT](dtbledit.md) <br/> |編集コントロールを表します。  <br/> |
-|[DTBLGROUPBOX](dtblgroupbox.md) <br/> |グループボックスコントロールを表します。  <br/> |
-|[DTBLLABEL](dtbllabel.md) <br/> |label コントロールを表します。  <br/> |
-|[DTBLLBX](dtbllbx.md) <br/> |リストボックスコントロールを表します。  <br/> |
-|[DTBLMVDDLBOX](dtblmvddlbox.md) <br/> |複数値ドロップダウンリストボックスコントロールを表します。  <br/> |
-|[DTBLMVLISTBOX](dtblmvlistbox.md) <br/> |複数値リストボックスコントロールを記述します。  <br/> |
-|[DTBLPAGE](dtblpage.md) <br/> |タブページコントロールについて説明します。  <br/> |
-|[DTBLRADIOBUTTON](dtblradiobutton.md) <br/> |オプションボタンコントロールについて説明します。  <br/> |
+|[DTBLBUTTON](dtblbutton.md) <br/> |ボタン コントロールについて説明します。  <br/> |
+|[DTBLCHECKBOX](dtblcheckbox.md) <br/> |チェック ボックス コントロールについて説明します。  <br/> |
+|[DTBLCOMBOBOX](dtblcombobox.md) <br/> |コンボ ボックス コントロールについて説明します。  <br/> |
+|[DTBLDDLBX](dtblddlbx.md) <br/> |ドロップダウン リスト ボックス コントロールについて説明します。  <br/> |
+|[DTBLEDIT](dtbledit.md) <br/> |編集コントロールについて説明します。  <br/> |
+|[DTBLGROUPBOX](dtblgroupbox.md) <br/> |グループ ボックス コントロールについて説明します。  <br/> |
+|[DTBLLABEL](dtbllabel.md) <br/> |ラベル コントロールについて説明します。  <br/> |
+|[DTBLLBX](dtbllbx.md) <br/> |リスト ボックス コントロールについて説明します。  <br/> |
+|[DTBLMVDDLBOX](dtblmvddlbox.md) <br/> |複数値のドロップダウン リスト ボックス コントロールについて説明します。  <br/> |
+|[DTBLMVLISTBOX](dtblmvlistbox.md) <br/> |複数値のリスト ボックス コントロールについて説明します。  <br/> |
+|[DTBLPAGE](dtblpage.md) <br/> |タブ付きページ コントロールについて説明します。  <br/> |
+|[DTBLRADIOBUTTON](dtblradiobutton.md) <br/> |オプション ボタン コントロールについて説明します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

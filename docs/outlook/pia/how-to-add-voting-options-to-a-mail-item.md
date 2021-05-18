@@ -28,7 +28,7 @@ ms.locfileid: "32359725"
 
 次の例の OrderPizza は、新しいメール メッセージに投票オプションを作成します。 OrderPizza は、まず **MailItem** を作成し、**VotingOptions** プロパティを "Cheese; Mushroom; Sausage; Combo; Veg Combo" に設定して、[Subject](https://msdn.microsoft.com/library/bb611353\(v=office.15\)) プロパティを "Pizza Order" に設定します。 "Pizza Order" メッセージを送信すると、受信者には投票オプションが表示されます。 回答を受診するたびに、差出人の送信済みアイテム フォルダーのメッセージの **[追跡]** ページに、受診者の選択内容が集計されます。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

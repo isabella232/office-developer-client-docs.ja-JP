@@ -1,5 +1,5 @@
 ---
-title: Concat 関数 (Access カスタム web アプリ)
+title: Concat 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33423273"
 ---
-# <a name="concat-function-access-custom-web-app"></a>Concat 関数 (Access カスタム web アプリ)
+# <a name="concat-function-access-custom-web-app"></a>Concat 関数 (Access カスタム Web アプリ)
 
 複数の文字列値を結合した結果の文字列を戻します。
   
@@ -22,7 +22,7 @@ ms.locfileid: "33423273"
   
 ## <a name="syntax"></a>構文
 
-**Concat**(*Value1*、 *Value2*、...[*valuen*]) 
+**Concat** (*Value1*, *Value2*, ...[*ValueN*]) 
   
 **Concat** 関数には、以下の引数があります。 
   
@@ -38,7 +38,7 @@ ms.locfileid: "33423273"
   
 ## <a name="example"></a>例
 
-テーブルに FirstName、MiddleInitial、および LastName の各フィールドが含まれる場合、次の式を使用して人のフル ネームを表示できます。 MiddleInitial フィールドが空白の場合は、姓と名のフィールドだけが組み合わせられ、氏名が表示されます。
+テーブルに FirstName、MiddleInitial、および LastName の各フィールドが含まれる場合、次の式を使用して人のフル ネームを表示できます。 MiddleInitial フィールドが空白の場合、完全な名前を表示するには、FirstName フィールドと LastName フィールドだけが結合されます。
   
 ```vb
 IIf([MiddleInitial] Is Null,Concat([FirstName]," ",[LastName]),Concat([FirstName]," ",[MiddleInitial]," ",[LastName]))

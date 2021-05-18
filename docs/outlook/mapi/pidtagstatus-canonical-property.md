@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8b947660-eafe-47e1-9595-bd3ab7d455bf
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: de2342ef4d3e9d06f198e06dc19c65b7b144624f
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,62 +25,62 @@ ms.locfileid: "32278793"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォルダーの状態を定義するフラグの32ビットビットマスクを含みます。
+フォルダーの状態を定義するフラグの 32 ビット ビットマスクが含まれる。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_STATUS  <br/> |
-|識別子:  <br/> |0x360b  <br/> |
+|識別子:  <br/> |0x360B  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |MAPI コンテナー  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-フォルダーのこのプロパティは、メッセージの**PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) プロパティに似ています。 このフラグは、クライアントアプリケーションに対してのみ提供され、メッセージストアには影響しません。 クライアントは、これらの設定を使用または無視できます。 クライアントは、このプロパティのクライアントで定義可能なビットに対して独自の値を定義することもできます。
+フォルダーのこのプロパティは、メッセージの PR_MSG_STATUS **(** [PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) プロパティに類似しています。 そのフラグはクライアント アプリケーションにのみ提供され、メッセージ ストアには影響を与えかねない。 クライアントは、これらの設定を使用または無視できます。 クライアントは、このプロパティのクライアント定義可能なビットに対して独自の値を定義することもできます。
   
-ビットマスクには、次の1つ以上のフラグを設定できます。
+ビットマスクには、次のフラグを 1 つ以上設定できます。
   
 FLDSTATUS_DELMARKED 
   
-> フォルダーは削除するように設定されています。 クライアントアプリケーションがこのフラグを設定します。
+> フォルダーは削除のマークが付きます。 クライアント アプリケーションは、このフラグを設定します。
     
 FLDSTATUS_HIDDEN 
   
-> フォルダーは表示されません。
+> フォルダーは非表示です。
     
 FLDSTATUS_HIGHLIGHTED 
   
-> フォルダーが強調表示されます。たとえば、[リバースビデオ] に示されています。
+> フォルダーが強調表示されます 。たとえば、逆ビデオで表示されます。
     
 FLDSTATUS_TAGGED 
   
-> フォルダーにタグが付けられます。
+> フォルダーにタグが付きます。
     
-メッセージストアプロバイダーは、フォルダーのこのプロパティをこれらの値の1つ以上に設定し、クライアントはアプリケーションに応じて状態を解釈します。 たとえば、クライアントはフォルダーの状態を使用して、階層テーブル内のフォルダーを視覚的に区別し、同じ状態のフォルダーを同じ方法で表示することができます。 強調表示されたフォルダーを反転表示することができます。タグ付きフォルダーや削除用のマークが付いたフォルダーは、わかりやすいアイコンで表示できます。隠しフォルダーは非表示にすることができます。
+メッセージ ストア プロバイダーは、フォルダー上のこのプロパティを 1 つ以上のこれらの値に設定し、クライアントはアプリケーションに合った状態を解釈します。 たとえば、クライアントはフォルダーの状態を使用して階層テーブル内のフォルダーを視覚的に区別し、同じ状態のフォルダーを同じ方法で表示できます。 強調表示されたフォルダーは、リバース ビデオで表示できます。タグ付けされたフォルダーと削除マークが付いたフォルダーは、意味のあるアイコンで表示し、非表示のフォルダーを非表示にできます。
   
-このプロパティのビット16から 31 (";" ~ "0x80000000") は、IPM クライアントアプリケーションで使用できます。 他のすべてのビットは MAPI での使用のために予約されています。前述のリストで定義されていないものは、最初は0に設定され、変更されません。
+このプロパティのビット 16 ~ 31 ("0x10000" ~ "0x80000000") は、IPM クライアント アプリケーションで使用できます。 その他のすべてのビットは、MAPI で使用するために予約されています。前のリストで定義されていない値は、最初は 0 に設定し、変更する必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルオブジェクトを処理します。
+> メッセージ オブジェクトと添付ファイル オブジェクトを処理します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -90,7 +90,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

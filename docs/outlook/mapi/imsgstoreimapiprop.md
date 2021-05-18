@@ -1,5 +1,5 @@
 ---
-title: IMsgStore imapiprop
+title: IMsgStore IMAPIProp
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,56 +25,56 @@ ms.locfileid: "33422328"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージストア情報およびメッセージとフォルダーへのアクセスを提供します。
+メッセージ ストア情報とメッセージとフォルダーへのアクセスを提供します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
-|公開者:  <br/> |メッセージストアオブジェクト  <br/> |
-|実装元:  <br/> |メッセージストアプロバイダー  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーション、mapi スプーラー、mapi  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |メッセージ ストア オブジェクト  <br/> |
+|実装元:  <br/> |メッセージ ストア プロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーション、MAPI スプーラー、MAPI  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMsgStore  <br/> |
-|ポインターの種類:  <br/> |lpmdb  <br/> |
-|トランザクションモデル:  <br/> |非トランザクション  <br/> |
+|ポインターの種類:  <br/> |LPMDB  <br/> |
+|トランザクション モデル:  <br/> |非トランザクション  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[助言](imsgstore-advise.md) <br/> |メッセージストアに影響を与える指定したイベントの通知を受信するように登録します。  <br/> |
-|[アドバイズ](imsgstore-unadvise.md) <br/> |**IMsgStore:: Advise**メソッドへの呼び出しによって、以前に設定された通知の送信をキャンセルします。  <br/> |
-|[CompareEntryIDs](imsgstore-compareentryids.md) <br/> |2つのエントリ識別子を比較して、メッセージストア内の同じエントリを参照しているかどうかを判断します。  <br/> |
-|[OpenEntry](imsgstore-openentry.md) <br/> |フォルダーまたはメッセージを開き、さらにアクセスするためのインターフェイスポインターを返します。  <br/> |
-|[setreceivefolder](imsgstore-setreceivefolder.md) <br/> |特定のメッセージクラスの受信メッセージの送信先としてフォルダーを確立します。  <br/> |
-|[getreceivefolder](imsgstore-getreceivefolder.md) <br/> |指定したメッセージクラスの受信メッセージの宛先として、またはメッセージストアの既定の受信フォルダーとして確立されたフォルダーを取得します。  <br/> |
-|[getreceivefoldertable](imsgstore-getreceivefoldertable.md) <br/> |受信フォルダーテーブル (メッセージストアのすべての受信フォルダーに関する情報を含む表) へのアクセスを提供します。  <br/> |
-|[storelogoff](imsgstore-storelogoff.md) <br/> |メッセージストアの正常なログオフを有効にします。  <br/> |
-|[abortsubmit](imsgstore-abortsubmit.md) <br/> |送信キューからメッセージを削除しようとしています。  <br/> |
-|[getoutgoingqueue](imsgstore-getoutgoingqueue.md) <br/> |送信キューテーブル (メッセージストアの送信キューにあるすべてのメッセージに関する情報を含むテーブル) へのアクセスを提供します。  <br/> |
+|[アドバイス](imsgstore-advise.md) <br/> |メッセージ ストアに影響を与える指定されたイベントの通知を受信するために登録します。  <br/> |
+|[Unadvise](imsgstore-unadvise.md) <br/> |**IMsgStore::Advise** メソッドへの呼び出しで以前に設定された通知の送信をキャンセルします。  <br/> |
+|[CompareEntryIDs](imsgstore-compareentryids.md) <br/> |2 つのエントリ識別子を比較して、メッセージ ストア内の同じエントリを参照するかどうかを判断します。  <br/> |
+|[OpenEntry](imsgstore-openentry.md) <br/> |フォルダーまたはメッセージを開き、さらにアクセスするインターフェイス ポインターを返します。  <br/> |
+|[SetReceiveFolder](imsgstore-setreceivefolder.md) <br/> |特定のメッセージ クラスの受信メッセージの宛先としてフォルダーを確立します。  <br/> |
+|[GetReceiveFolder](imsgstore-getreceivefolder.md) <br/> |指定したメッセージ クラスの受信メッセージの送信先として、またはメッセージ ストアの既定の受信フォルダーとして確立されたフォルダーを取得します。  <br/> |
+|[GetReceiveFolderTable](imsgstore-getreceivefoldertable.md) <br/> |メッセージ ストアのすべての受信フォルダーに関する情報を含む、受信フォルダー テーブルへのアクセスを提供します。  <br/> |
+|[StoreLogoff](imsgstore-storelogoff.md) <br/> |メッセージ ストアの順序付けされたログオフを有効にします。  <br/> |
+|[AbortSubmit](imsgstore-abortsubmit.md) <br/> |送信キューからメッセージを削除します。  <br/> |
+|[GetOutgoingQueue](imsgstore-getoutgoingqueue.md) <br/> |メッセージ ストアの送信キュー内のすべてのメッセージに関する情報を含む、送信キュー テーブルへのアクセスを提供します。  <br/> |
 |[SetLockState](imsgstore-setlockstate.md) <br/> |メッセージをロックまたはロック解除します。  <br/> |
-|[FinishedMsg](imsgstore-finishedmsg.md) <br/> |メッセージストアプロバイダーが、送信されたメッセージに対して処理を実行できるようにします。  <br/> |
-|[NotifyNewMail](imsgstore-notifynewmail.md) <br/> |新しいメッセージが到着したことをメッセージストアに通知します。  <br/> |
+|[FinishedMsg](imsgstore-finishedmsg.md) <br/> |メッセージ ストア プロバイダーが送信されたメッセージに対して処理を実行できます。  <br/> |
+|[NotifyNewMail](imsgstore-notifynewmail.md) <br/> |新しいメッセージが到着したとメッセージ ストアに通知します。  <br/> |
    
-|**必須のプロパティ**|**アクセスレベル**|
+|**必須のプロパティ**|**アクセス レベル**|
 |:-----|:-----|
-|**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
-|**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_STORE_ENTRYID**([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_STORE_RECORD_KEY**([PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_MDB_PROVIDER**([PidTagStoreProvider](pidtagstoreprovider-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_STORE_SUPPORT_MASK**([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
+|**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_STORE_RECORD_KEY** ([PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_MDB_PROVIDER** ([PidTagStoreProvider](pidtagstoreprovider-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))  <br/> |読み取り専用  <br/> |
    
-次のプロパティは、個人間メッセージ (IPM) メッセージストアに対するものです。
+次のプロパティは、対人間メッセージ (IPM) メッセージ ストア用です。
   
-- **PR_IPM_OUTBOX_ENTRYID**([PidTagIpmOutboxEntryId](pidtagipmoutboxentryid-canonical-property.md))
+- **PR_IPM_OUTBOX_ENTRYID** ([PidTagIpmOutboxEntryId](pidtagipmoutboxentryid-canonical-property.md))
     
-- **PR_IPM_SENTMAIL_ENTRYID**([PidTagIpmSentMailEntryId](pidtagipmsentmailentryid-canonical-property.md))
+- **PR_IPM_SENTMAIL_ENTRYID** ([PidTagIpmSentMailEntryId](pidtagipmsentmailentryid-canonical-property.md))
     
-- **PR_IPM_SUBTREE_ENTRYID**([PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md))
+- **PR_IPM_SUBTREE_ENTRYID** ([PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md))
     
-- **PR_IPM_WASTEBASKET_ENTRYID**([PidTagIpmWastebasketEntryId](pidtagipmwastebasketentryid-canonical-property.md))
+- **PR_IPM_WASTEBASKET_ENTRYID** ([PidTagIpmWastebasketEntryId](pidtagipmwastebasketentryid-canonical-property.md))
     
 - **PR_MDB_PROVIDER**
     

@@ -25,7 +25,7 @@ ms.locfileid: "33422244"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-アドレス帳プロバイダーの[MAPIUID](mapiuid.md)構造が含まれています。 
+アドレス帳プロバイダーの [MAPIUID 構造を含](mapiuid.md) む。 
   
 |||
 |:-----|:-----|
@@ -36,23 +36,23 @@ ms.locfileid: "33422244"
    
 ## <a name="remarks"></a>注釈
 
-**MAPIUID**構造体は、コンテナー階層にこの特定のコンテナーを提供するアドレス帳プロバイダーを識別します。 値は、各プロバイダーに対して一意です。 
+**MAPIUID 構造体は**、コンテナー階層でこの特定のコンテナーを提供するアドレス帳プロバイダーを識別します。 値は、各プロバイダーに固有です。 
   
-アドレス帳プロバイダーは、複数の識別子を提供できます。 たとえば、2つの異なるコンテナーを提供するプロバイダーは、各コンテナーの**PR_AB_PROVIDER_ID**一意識別子で公開できます。 
+アドレス帳プロバイダーは、複数の識別子を指定できます。 たとえば、2 つの異なるコンテナーを提供するプロバイダーは、各コンテナー PR_AB_PROVIDER_ID一 **意** の識別子を発行できます。 
   
- **PR_AB_PROVIDER_ID**は、メッセージストアの**PR_MDB_PROVIDER** ([PidTagStoreProvider](pidtagstoreprovider-canonical-property.md)) プロパティに似ています。 クライアントアプリケーションは、 **PR_AB_PROVIDER_ID**を使用して、アドレス帳階層テーブル内の関連する行を見つけることができます。 
+ **PR_AB_PROVIDER_ID** は、メッセージ ストアの PR_MDB_PROVIDER **(** [PidTagStoreProvider](pidtagstoreprovider-canonical-property.md)) プロパティに類似しています。 クライアント アプリケーションは **、PR_AB_PROVIDER_IDを** 使用して、アドレス帳階層テーブル内の関連する行を検索できます。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-Mapitags
+Mapitags.h
   
-> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
+> 関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。
     
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
 ## <a name="see-also"></a>関連項目
 
@@ -65,7 +65,7 @@ mapidefs.h
 
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

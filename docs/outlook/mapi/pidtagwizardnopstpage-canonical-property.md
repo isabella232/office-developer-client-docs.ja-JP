@@ -25,30 +25,30 @@ ms.locfileid: "33422888"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロファイルウィザードで個人用メッセージストア (PST) のページを非表示にする場合は、このプロパティには TRUE が含まれます。
+プロファイル ウィザードが個人用メッセージ ストア (PST) ページを非表示にしている場合、このプロパティには TRUE が含まれる。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_WIZARD_NO_PST_PAGE  <br/> |
 |識別子:  <br/> |0x6700  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|エリア:  <br/> |Exchange 管理  <br/> |
+|エリア:  <br/> |Exchange管理  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-サービスプロバイダーは、 [launchwizardentry](launchwizardentry.md)関数プロトタイプに基づいて関数を呼び出すときに、このプロパティを設定できます。 このプロパティは、ユーザーダイアログの間、プロバイダーが PST ページを表示しないようにすることを、プロファイルウィザードに通知します。 
+サービス プロバイダーは [、LAUNCHWIZARDENTRY](launchwizardentry.md) 関数プロトタイプに基づいて関数を呼び出す場合に、このプロパティを設定できます。 このプロパティは、プロバイダーがユーザー ダイアログの間に PST ページを表示したくないとプロファイル ウィザードに指示します。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
+> 関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -58,7 +58,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

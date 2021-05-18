@@ -25,7 +25,7 @@ ms.locfileid: "33421677"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-表の行を削除します。
+テーブル行を削除します。
   
 ```cpp
 HRESULT HrDeleteRow(
@@ -35,9 +35,9 @@ HRESULT HrDeleteRow(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpspropvalue_
+ _lpSPropValue_
   
-> 順番削除する行のインデックス列を記述するプロパティ値構造へのポインター。 プロパティ値構造の**ulPropTag**メンバーには、 [CreateTable](createtable.md)関数の呼び出しの_ulPropTagIndexColumn_パラメーターと同じプロパティタグが含まれている必要があります。 
+> [in]削除する行のインデックス列を記述するプロパティ値構造へのポインター。 プロパティ **値構造体の ulPropTag** メンバーには、CreateTable 関数の呼び出しから  _ulPropTagIndexColumn_ パラメーターと同じプロパティ タグを [含む必要](createtable.md) があります。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -47,15 +47,15 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> _lpspropvalue_パラメーターによって示されるプロパティは、テーブル内の行を識別しません。 
+> _lpSPropValue_ パラメーターが示すプロパティは、テーブル内の行を識別します。 
     
 ## <a name="remarks"></a>注釈
 
-**itabledata:: HrDeleteRow**メソッドは、 _lpspropvalue_パラメーターによって示されるプロパティに一致する列を含むテーブル行を削除します。 行のデータが削除され、開いているすべてのビューからその行が削除されます。 
+**ITableData::HrDeleteRow** メソッドは _、lpSPropValue_ パラメーターが指すプロパティに一致する列を含むテーブル行を削除します。 行のデータが削除され、開いているすべてのビューから行が削除されます。 
   
-行が削除されると、テーブルのビューを持つすべてのクライアントまたはサービスプロバイダーに通知が送信され、通知を登録するためにテーブルの[IMAPITable:: Advise](imapitable-advise.md)メソッドを呼び出します。 
+行が削除された後、テーブルのビューを持ち、テーブルの [IMAPITable::Advise](imapitable-advise.md) メソッドを呼び出して通知を登録しているすべてのクライアントまたはサービス プロバイダーに通知が送信されます。 
   
-行を削除しても、削除された行が、特定の列の値を持つ最後の行であっても、既存のビューまたは後で開くことができる列セットは縮小されません。
+行を削除しても、削除された行が特定の列の値を持つ最後の行である場合でも、既存のビューまたは後で開いたビューで使用できる列セットは減らされません。
   
 ## <a name="see-also"></a>関連項目
 

@@ -30,7 +30,7 @@ ms.locfileid: "32359697"
 
 次のコード例の ModifyMeetingRequestsView は、ユーザーの受信トレイから "Meeting Requests" (会議出席依頼) ビューと区分されるすべてのビューを表す **TableView** オブジェクトを取得します。次に、**Add** メソッドを使用して、"Start" フィールドと "End" フィールドを、**TableView** オブジェクトに対応する **ViewFields** オブジェクトに追加します。さらに、"From" フィールドのラベルを "Organized By" (開催者) に変更します。その後、ModifyMeetingRequestsView は、変更された **TableView** オブジェクトを保存します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

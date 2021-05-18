@@ -33,7 +33,7 @@ ms.locfileid: "33422524"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[lockcustprop]  <br/> |
+|セル名:  <br/> |LockCustProp  <br/> |
    
 プログラムから、インデックスによって [LockCustProp] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

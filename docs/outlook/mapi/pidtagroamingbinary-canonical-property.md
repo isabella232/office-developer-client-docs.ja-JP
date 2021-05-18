@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f06bf063-fc95-46f9-b5fa-3f127a59ebda
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: ead7c9c33c92240ba5e458b68635b766caaa9760
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "32359564"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-IPM のサブクラスに関連付けられたメッセージストリームを含み**ます。構成**クラス。 
+uriation クラスのサブクラスに関連付けられた **メッセージ ストリームIPM.Configします** 。 
   
 |||
 |:-----|:-----|
@@ -30,31 +30,31 @@ IPM のサブクラスに関連付けられたメッセージストリームを�
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |構成  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このプロパティには、IPM に関連付けられているデータストリームが含まれ**ます。構成**メッセージクラスメッセージ。 stream の形式は、メッセージクラスに依存します。 たとえば、クラスの種類が IPM であるメッセージ **。構成。オートコンプリート**は、[オートコンプリートストリーム](autocomplete-stream.md)として書式設定されます。
+このプロパティには、特定の uration メッセージ クラス メッセージに関連IPM.Config **データ** ストリームが含まれます。 ストリームの形式は、メッセージ クラスによって異なります。 たとえば、クラスの種類のメッセージは、IPM.Config **します。オートコンプリートは** オートコンプリート ストリームとして [書式設定されます](autocomplete-stream.md)。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Microsoft Exchange Server プロトコルの仕様への参照を提供します。
+> 関連するプロトコル仕様へのMicrosoft Exchange Server提供します。
     
-[[OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
+[[MS-OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
   
-> カテゴリの共有リストや稼働時間など、クライアントおよびサーバーの構成データの場所とプロパティを指定します。
+> 共有カテゴリ リストや作業時間など、クライアントおよびサーバー構成データの場所とプロパティを指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
+> 関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -64,7 +64,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

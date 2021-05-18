@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d57ce5c8-1f60-4709-b86a-4468c4208dfe
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 962e8c92ae61e8b60862a3ae26a7cdfbf5034e89
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,54 +25,54 @@ ms.locfileid: "32359515"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブル内の行の種類を示す値を格納します。
+テーブル内の行の種類を示す値を含む。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_ROW_TYPE  <br/> |
-|識別子:  <br/> |0x0ff5  <br/> |
+|識別子:  <br/> |0x0FF5  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |MAPI ノンノンアウトテーブル  <br/> |
+|エリア:  <br/> |MAPI 送信不可  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このプロパティは、コンテンツテーブルにのみ表示されます。 カテゴリは、アイテムがある場合にのみ存在します。
+このプロパティは、コンテンツ テーブルにのみ表示されます。 カテゴリは、アイテムがある場合にのみ存在します。
   
 このプロパティには、次のいずれかの値を指定できます。
   
 TBL_LEAF_ROW 
   
-> カテゴリの行ではなく、実際のデータを表します。
+> カテゴリ行ではなく、実際のデータを表します。
     
 TBL_EMPTY_CATEGORY 
   
-> 現在使用されていません。
+> 現在使用されていない。
     
 TBL_EXPANDED_CATEGORY 
   
-> カテゴリが展開されます。通常、ユーザーインターフェイスには、その横にマイナス記号 (-) が表示されます。
+> カテゴリが展開されます。通常、ユーザー インターフェイスには、マイナス記号 ( - ) が横に表示されます。
     
 TBL_COLLAPSED_CATEGORY 
   
-> カテゴリは折りたたまれています。通常、ユーザーインターフェイスには、その横にプラス記号 (+) が表示されます。
+> カテゴリは折りたたみ込みです。通常、ユーザー インターフェイスには、プラス記号 (+) が横に表示されます。
     
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXCTABL]](https://msdn.microsoft.com/library/d33612dc-36a8-4623-8a26-c156cf8aae4b%28Office.15%29.aspx)
+[[MS-OXCTABL]](https://msdn.microsoft.com/library/d33612dc-36a8-4623-8a26-c156cf8aae4b%28Office.15%29.aspx)
   
-> コアテーブルオブジェクトの許容可能な操作が含まれています。
+> コア テーブル オブジェクトに対して許容される操作が含まれます。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -85,7 +85,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

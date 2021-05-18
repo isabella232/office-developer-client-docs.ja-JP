@@ -25,11 +25,11 @@ ms.locfileid: "33404317"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[adrlist](adrentry.md)構造体で表される指定された数の受信者を含む、新しい[adrlist](adrlist.md)構造体に割り当てる必要があるバイト数を計算します。 
+[ADRENTRY](adrentry.md)構造体で表される受信者の指定した数を含む新しい[ADRLIST](adrlist.md)構造体に割り当てる必要があるバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |**ADRLIST** <br/> |
    
 ```cpp
@@ -38,9 +38,9 @@ CbNewADRLIST (_centries)
 
 ## <a name="parameters"></a>パラメーター
 
- __centries_
+ _ _centries_
   
-> 新しい**adrentry**構造に含める**adrentry**構造体の数。 
+> 新しい **ADRLIST** 構造に含める **ADRENTRY** 構造体の数。 
     
 ## <a name="see-also"></a>関連項目
 

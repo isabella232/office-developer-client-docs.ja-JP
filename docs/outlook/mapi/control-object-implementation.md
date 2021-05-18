@@ -1,5 +1,5 @@
 ---
-title: コントロールオブジェクトの実装
+title: コントロール オブジェクトの実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,33 +15,33 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33422608"
 ---
-# <a name="control-object-implementation"></a>コントロールオブジェクトの実装
+# <a name="control-object-implementation"></a>コントロール オブジェクトの実装
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-コントロールオブジェクト、または[IMAPIControl: IUnknown](imapicontroliunknown.md)インターフェイスをサポートするオブジェクトは、プロバイダーによって実装され、MAPI ダイアログボックスに表示されるボタンに機能を追加します。 コントロールオブジェクトは、ボタンに対してのみ実装できます。 
+[IMAPIControl : IUnknown](imapicontroliunknown.md)インターフェイスをサポートするコントロール オブジェクトまたはオブジェクトは、MAPI ダイアログ ボックスに表示されるボタンに機能を追加するためにプロバイダーによって実装されます。 コントロール オブジェクトはボタンにのみ実装できます。 
   
- **IMAPIControl**には、 [GetLastError](imapicontrol-getlasterror.md)、 [GetState](imapicontrol-getstate.md)、および[Activate](imapicontrol-activate.md)の3つのメソッドがあります。 
+ **IMAPIControl には**[、GetLastError、GetState、](imapicontrol-getlasterror.md)[および](imapicontrol-getstate.md)Activate の 3 つのメソッド [があります](imapicontrol-activate.md)。 
   
-MAPI は**GetState**を呼び出して、ボタンを無効にするかどうかを判断します。 **GetState**は、次のような場合に呼び出されます。 
+MAPI は **GetState を** 呼び出して、ボタンを無効にするかどうかを決定します。 **GetState は** 、次の状況で呼び出されます。 
   
-- ボタンが表示されるダイアログボックスが最初に表示されます。
+- ボタンが表示されるダイアログ ボックスが最初に表示される場合。
     
-- ボタンに対して表示テーブル通知が発行されたとき。 
+- ボタンに対して表示テーブル通知が発行された場合。 
     
-ユーザーが操作できる場合は、ボタンと MAPI_ENABLED を操作できない場合は、 _lMAPI_DISABLED state_パラメーターの内容を「」に設定します。 
+ユーザーがボタンを操作できないMAPI_DISABLED操作できる場合は  _、lpulState_ パラメーター MAPI_ENABLEDに設定します。 
   
-ユーザーがボタンをクリックすると、MAPI 呼び出しが**アクティブ**になります。 **Activate**は、ボタンに関連付けられているタスクを実行します。 このタスクは、ダイアログボックスを表示したり、プロパティを更新したりするなど、プロバイダーにとって適切なものでもかまいません。 ユーザーがキャンセルしたためにタスクが失敗した場合は、MAPI_E_USER_CANCEL を返します。 失敗のその他の原因については、適切なエラー値を返します。 
+ユーザーがボタンをクリックすると、MAPI は Activate を呼び **出します**。 **[アクティブ** 化] ボタンに関連付けられているタスクを実行します。 このタスクは、ダイアログ ボックスの表示やプロパティの更新など、プロバイダーに適したタスクです。 ユーザーが取り消したため、タスクが失敗した場合は、タスクをMAPI_E_USER_CANCEL。 その他のエラーの原因については、適切なエラー値を返します。 
   
-タスクが正常に実行され、ダイアログボックスの別のコントロールに反映されるプロパティの変更にリンクされている場合は、 [itabledata:: hrnotify](itabledata-hrnotify.md)を呼び出します。 **hrnotify**は、 [TABLE_NOTIFICATION](table_notification.md)構造の変更されたプロパティの**PR_CONTROL_ID** ([PidTagControlId](pidtagcontrolid-canonical-property.md)) プロパティを使用して、表示テーブル通知を発行するために呼び出されます。 新しいプロパティの値は、構造体に配置しないでください。代わりに、 [imapiprop:: GetProps](imapiprop-getprops.md)が呼び出されたときに返されます。 通常、表示テーブル通知を使用してコントロールを無効または有効にすることはできませんが、ボタンと共に使用することができます。 MAPI は、通知に応答するように変更されたコントロールを更新します。 
+タスクが成功し、ダイアログ ボックスの別のコントロールに反映されるプロパティの変更にリンクされている場合は [、ITableData::HrNotify を呼び出します](itabledata-hrnotify.md)。 **HrNotify は**、変更されたプロパティの PR_CONTROL_ID **(** [PidTagControlId](pidtagcontrolid-canonical-property.md)) プロパティを持つ表示テーブル通知を [TABLE_NOTIFICATIONします。](table_notification.md) 構造体に新しいプロパティ値を配置しない。代わりに [、IMAPIProp::GetProps](imapiprop-getprops.md) が呼び出された場合に返します。 通常、表示テーブル通知を使用してコントロールを無効または有効にすることはできませんが、ボタンと一緒に使用できます。 MAPI は、変更されたコントロールを更新して通知に応答します。 
   
-MAPI は、**アクティブ化**時に MAPI_E_USER_CANCEL 以外のエラーを返すコントロールの**GetLastError**メソッドを呼び出します。 **GetLastError**が、 _lppMAPIError_パラメーターの内容で返される[MAPIERROR](mapierror.md)構造に拡張エラー情報を配置すると、ユーザーに対して MAPI に表示されます。 
+MAPI は、コントロールの **GetLastError** メソッドを呼び出します **。Activate** は、コントロール以外のエラーをMAPI_E_USER_CANCEL。 **GetLastError が** _lppMAPIError_ パラメーターの内容で返す [MAPIERROR](mapierror.md)構造体に拡張エラー情報を入れた場合、MAPI はユーザーに対してそれを表示します。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI サービスプロバイダー](mapi-service-providers.md)
+[MAPI サービス プロバイダー](mapi-service-providers.md)
 

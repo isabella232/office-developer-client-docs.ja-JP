@@ -8,7 +8,7 @@ f1_keywords:
 - vis_sdr.chm3025
 localization_priority: Normal
 ms.assetid: 6b385a9a-9294-1703-9d6f-628a11498669
-description: 直線セグメントの最後の頂点に対する x 座標と y 座標を格納します。
+description: 直線セグメントの終了頂点の x 座標と y 座標を含む。
 ms.openlocfilehash: 570ee677aff07d54fcee22ebba2faa210831fb10
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,13 +18,13 @@ ms.locfileid: "33404730"
 ---
 # <a name="lineto-row-geometry-section"></a>[LineTo] 行 ([Geometry] セクション)
 
-直線セグメントの最後の頂点に対する*x*座標と*y*座標を格納します。 
+直線  *セグメントの*  終了頂点の x 座標と  *y*  座標を含む。 
   
 [LineTo] 行には次のセルが含まれます。
   
 |**Cell**|**説明**|
 |:-----|:-----|
-|[X](x-cell-geometry-section.md) <br/> |直線セグメントの最後の頂点に対する*x*座標です。  <br/> |
-|[Y](y-cell-geometry-section.md) <br/> |直線セグメントの最後の頂点に対する*y*座標です。  <br/> |
+|[X](x-cell-geometry-section.md) <br/> |直線  *セグメント*  の終了頂点の x 座標。  <br/> |
+|[Y](y-cell-geometry-section.md) <br/> |直線  *セグメントの*  終了頂点の y 座標。  <br/> |
    
 

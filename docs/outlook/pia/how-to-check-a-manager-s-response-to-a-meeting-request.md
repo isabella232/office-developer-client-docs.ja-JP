@@ -27,7 +27,7 @@ ms.locfileid: "32359711"
 
 次のコード サンプルの CheckManagerResponseStatus は、パラメーターとして **AppointmentItem** オブジェクトを使用します。 CheckManagerResponseStatus では、現在のユーザーの **GetExchangeUser** メソッドを呼び出して [ExchangeUser](https://msdn.microsoft.com/library/bb609574\(v=office.15\)) オブジェクトを取得します。 次に、CheckManagerResponseStatus は **GetExchangeUserManager** メソッドを呼び出して、現在のユーザーの上司に関連付けられている **ExchangeUser** オブジェクトを取得します。 [NameSpace](https://msdn.microsoft.com/library/bb645857\(v=office.15\)) オブジェクトの [CompareEntryIDs(String, String)](https://msdn.microsoft.com/library/bb646919\(v=office.15\)) メソッドを使用して、**AppointmentItem** に関連付けられている **Recipient** オブジェクトが、ユーザーの上司を表す **ExchangeUser** オブジェクトと同一であるかどうか確認します。 **CompareEntryIDs** が **true** を返す場合は、ユーザーの上司が **Recipients** コレクション内に存在し、CheckManagerResponseStatus は上司の **MeetingResponseStatus** を返します。 **CompareEntryIDs** が **false** を返す場合、CheckManagerResponseStatus は null 参照を返します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

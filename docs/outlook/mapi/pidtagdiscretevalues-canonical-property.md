@@ -25,34 +25,34 @@ ms.locfileid: "33404842"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-リスト全体ではなく、配布リストの個々のメンバーにのみ配信不能レポートが適用される場合は、TRUE が含まれます。 
+配信以外のレポートがリスト全体ではなく配布リストの個別のメンバーにのみ適用される場合は TRUE を含む。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_DISCRETE_VALUES  <br/> |
-|識別子:  <br/> |0x0e0e  <br/> |
+|識別子:  <br/> |0x0E0E  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|エリア:  <br/> |MAPI ノンノンアウトテーブル  <br/> |
+|エリア:  <br/> |MAPI 送信不可  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-このプロパティは、メッセージが配布リストの1つ以上のメンバーに配信できなかった場合に、配信不能レポート内で使用されます。 この目的は、再送信の試行を、配布リスト全体ではなく、個々のメンバーのみに制限することです。 
+このプロパティは、配布リストの 1 つ以上のメンバーにメッセージを配信できない場合に、配信以外のレポート内で使用されます。 その目的は、再送信の試行を、配布リスト全体ではなく、個々のメンバーにのみ制限する目的です。 
   
-配信不能レポートの recipient テーブルには、そのメッセージが配信できなかったすべての受信者のエントリと、それが属する配布リスト (存在する場合) のエントリが含まれています。 トランスポートプロバイダーは、各配布リストエントリに対してこのプロパティを TRUE に設定し、 **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))、 **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))、および**PR_SEARCH_KEY**をコピーする必要があります ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) を配布リストから**PR_ORIGINAL_DISPLAY_NAME** ([PidTagOriginalDisplayName](pidtagoriginaldisplayname-canonical-property.md))、 **PR_ORIGINAL_ENTRYID** ([PidTagOriginalEntryId](pidtagoriginalentryid-canonical-property.md))、および**PR_ORIGINAL_SEARCH_KEY** ([PidTagOriginalSearchKey](pidtagoriginalsearchkey-canonical-property.md)) プロパティを使用して、配布リストのメンバーを指定します。 
+配信されないレポートの受信者テーブルには、メッセージを配信できないすべての受信者のエントリと、メッセージが属する配布リスト (その場合) のエントリが含まれる。 トランスポート プロバイダーは、配布リスト エントリごとにこのプロパティを TRUE に設定する必要があります。 配布リストから **PR_DISPLAY_NAME** [(PidTagDisplayName)、PR_ENTRYID](pidtagdisplayname-canonical-property.md)[(PidTagEntryId)、](pidtagentryid-canonical-property.md)および **PR_SEARCH_KEY** ([PidTagSearchKey)](pidtagsearchkey-canonical-property.md)を配布リストから **PR_ORIGINAL_DISPLAY_NAME** ([PidTagOriginalDisplayName)](pidtagoriginaldisplayname-canonical-property.md) **、PR_ORIGINAL_ENTRYID** ([PidTagOriginalEntryId)、](pidtagoriginalentryid-canonical-property.md)および PR_ORIGINAL_SEARCH_KEY **(** [PidTagOriginalSearchKey](pidtagoriginalsearchkey-canonical-property.md)) プロパティをその配布リストの各メンバーにコピーする必要があります。  
   
- 配布リスト以外の配信不能レポート受信者エントリに対して**PR_DISCRETE_VALUES**を設定することはできません。 
+ **PR_DISCRETE_VALUES、** 配布リスト以外の配信レポート受信者エントリに対して設定する必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
+> 関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -62,7 +62,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

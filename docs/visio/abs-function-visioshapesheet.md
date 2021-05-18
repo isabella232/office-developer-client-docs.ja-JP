@@ -22,7 +22,7 @@ ms.locfileid: "33421810"
   
 ## <a name="syntax"></a>構文
 
-ABS (*数値*) 
+ABS( *number*) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -32,7 +32,7 @@ ABS (*数値*)
    
 ## <a name="example"></a>例
 
-ABS (-1.24) 
+ABS(-1.24) 
   
 1.24 を返します。
   

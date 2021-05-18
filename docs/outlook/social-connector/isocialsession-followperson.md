@@ -1,5 +1,5 @@
 ---
-title: i社会 alsessionん
+title: ISocialSessionFollowPerson
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: de7f56e2-c131-4955-b945-0a72043e0f5a
-description: ソーシャルネットワークにログオンしているユーザーのフレンドとして、emailAddress パラメーターによって識別された人物を追加します。
+description: emailAddress パラメーターで識別されたユーザーを、ソーシャル ネットワーク上のログオンユーザーのフレンドとして追加します。
 ms.openlocfilehash: 849085bd40788039a96ac159fd76a5e252395916
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "33423259"
 ---
 # <a name="isocialsessionfollowperson"></a>ISocialSession::FollowPerson
 
-ソーシャルネットワークにログオンしているユーザーのフレンドとして、 _emailAddress_パラメーターによって識別された人物を追加します。 
+_emailAddress_ パラメーターで識別されたユーザーを、ソーシャル ネットワーク上のログオンユーザーのフレンドとして追加します。 
   
 ```cpp
 HRESULT _stdcall FollowPerson([in] BSTR emailAddress);
@@ -27,15 +27,15 @@ HRESULT _stdcall FollowPerson([in] BSTR emailAddress);
 
 _emailAddress_
   
-> 順番個人の電子メールアドレスを含む文字列。
+> [in]ユーザーの電子メール アドレスを含む文字列。
     
 ## <a name="remarks"></a>注釈
 
-_emailAddress_パラメーターは、有効な SMTP アドレスであることが必要です。 Outlook Social Connector (.osc) プロバイダーが、**機能**では**** 、 _emailAddress_の引数が**true**として設定されており、その引数がネットワーク上のユーザーと一致しない場合、プロバイダーは OSC_E_NOT_FOUND を返す必要があります。エラー. プロバイダーが**権限**で OSC_E_FAIL **** を**false**として設定している場合、プロバイダーはエラーを返す必要があります。
+_emailAddress パラメーター_ は、有効な SMTP アドレスである必要があります。 Outlook Social Connector (OSC) プロバイダーが **followPerson** メソッドを機能でtrue に設定し _、emailAddress_ の引数がネットワーク上のユーザーと一致しない場合、プロバイダーは OSC_E_NOT_FOUND エラーを返す必要があります。 プロバイダーが **followPerson** を機能で **false** に設定している場合、プロバイダーはエラー メッセージをOSC_E_FAILします。
   
-プロバイダーが[ISocialSession2](isocialsession2iunknown.md)インターフェイスを実装していて**** 、**機能**に**true**として ISocialSession2 が設定されている場合、.osc は、i alsession:::/の代わりに、 [::](isocialsession2-followpersonex.md)のようにします。 ****. プロバイダーが**ISocialSession2**インターフェイスを実装していない場合、または**ISocialSession2::** を返します。 OSC_E_NOTIMPL エラーを返します。この場合、.osc は、プロバイダーが設定**** **されている限り、i alsession:: という名前を呼び出します。****機能**につい**** ての概要 エラー コードの詳細については、「[Outlook Social Connector Provider Error Codes](outlook-social-connector-provider-error-codes.md)」を参照してください。
+プロバイダーが [ISocialSession2](isocialsession2iunknown.md)インターフェイスを実装し **、followPerson** を機能に **true** に設定している場合、OSC は **ISocialSession::FollowPerson ではなく ISocialSession2::FollowPersonEx** を呼び出します。 [](isocialsession2-followpersonex.md) プロバイダーが **ISocialSession2** インターフェイスを実装しない場合、または **ISocialSession2::FollowPersonEx** が OSC_E_NOTIMPL エラーを返す場合、プロバイダーが **followPerson** を機能で true に設定している限り、OSC は **ISocialSession::FollowPerson** を呼び出します。 エラー コードの詳細については、「[Outlook Social Connector Provider Error Codes](outlook-social-connector-provider-error-codes.md)」を参照してください。
   
-**isocalsession::** **ISocialSession2::** を実装するかどうかを決定するには、プロバイダーが**ISocialSession2**内の他のメソッドを必要とするかどうか、およびその方法を使用_できるかどうかを検討する必要があります。djsplayName_パラメーターを**** 指定します。
+**ISocalSession:::FollowPerson** または **ISocialSession2::FollowPersonEx** を実装するかどうかを決定する際には、プロバイダーが **ISocialSession2** で他のメソッドを必要とするかどうか、**および FollowPersonEx** で _djsplayName_ パラメーターを使用できるかどうかを検討する必要があります。
   
 ## <a name="see-also"></a>関連項目
 

@@ -25,11 +25,11 @@ ms.locfileid: "33421586"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-グローバル一意識別子 (GUID) を記述します。 
+グローバル一意識別子 (GUID) について説明します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapiguid. .h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiguid.h  <br/> |
    
 ```cpp
 typedef struct _GUID
@@ -42,39 +42,39 @@ typedef struct _GUID
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **Data1**
   
-> 符号なしの長整数型 (long) のデータ値。
+> 符号なし長整数データ値。
     
  **Data2**
   
-> 符号なし short 整数型のデータ値。
+> 符号なし短整数データ値。
     
  **Data3**
   
-> 符号なし short 整数型のデータ値。
+> 符号なし短整数データ値。
     
  **Data4**
   
-> 符号なしの文字の配列。
+> 符号なし文字の配列。
     
 ## <a name="remarks"></a>注釈
 
- **GUID**構造は、次のように MAPI で使用されます。 
+ **GUID** 構造は、次のように MAPI で使用されます。 
   
-- [MAPIUID](mapiuid.md)構造で、サービスプロバイダーを一意に識別します。 
+- サービス プロバイダーを一意に識別する [MAPIUID](mapiuid.md) 構造。 
     
 - インターフェイス識別子の場合。
     
-- プロパティの名前付きプロパティのセット。 
+- プロパティで、名前付きプロパティの名前を設定します。 
     
-メッセージストアプロバイダーとアドレス帳プロバイダーは、 **MAPIUID**構造で使用する**GUID**構造を生成します。 結果の**MAPIUID**を[imapisupport:: setprovideruid](imapisupport-setprovideruid.md)に渡すことにより、これらのサービスプロバイダーは、一意の識別子を MAPI に通知します。
+メッセージ ストアとアドレス帳プロバイダーは **、MAPIUID** 構造で使用する **GUID 構造を生成** します。 結果の **MAPIUID** を [IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md)に渡して、これらのサービス プロバイダーは MAPI に一意の識別子を通知します。
   
-また、Microsoft リモートプロシージャコール (RPC) およびオブジェクト記述言語 (ODL) の実装でも使用されます。 これらの使用の詳細については、「 *Microsoft RPC プログラマーズガイドとリファレンス*」、「 *ole プログラマーズリファレンス*」、および「 *ole*、 *Second Edition* 」を参照してください。 
+また、Microsoft リモート プロシージャ 呼び出し (RPC) およびオブジェクト記述言語 (ODL) の実装でも使用されます。 これらの使用の詳細については *、「Microsoft RPC プログラマ* ガイドとリファレンス」、OLEプログラマリファレンス *、Inside OLE 、Second* Edition を *参照してください*。 
   
-**GUID**構造は、 *Win32 プログラマーズリファレンス*で定義されています。 mapi 内で使用される**GUID**構造の特定の値は、mapi ヘッダーファイルの mapiguid で定義されます。 
+**GUID 構造** は *、Win32 プログラマリファレンスで定義されています*。 MAPI 内で **使用される GUID** 構造体の特定の値は、MAPI ヘッダー ファイル Mapiguid.h で定義されます。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm790
 localization_priority: Normal
 ms.assetid: dd88fb8d-3ec3-476a-870d-6642b191496f
-description: 親図形の原点を基準としたときの、図形の pin (回転の中心) の x 座標を表します。
+description: 図形のピンの x 座標 (回転の中心) を、親の原点との関係で表します。
 ms.openlocfilehash: de12b379d5f345209a468298174634ff4f9cd639
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33404821"
 ---
 # <a name="pinx-cell-shape-transform-section"></a>[PinX] セル ([Shape Transform] セクション)
 
-親図形の原点を基準としたときの、図形の pin (回転の中心) の*x*座標を表します。 
+図形の  *ピンの x*  座標 (回転の中心) を、親の原点との関係で表します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -26,7 +26,7 @@ ms.locfileid: "33404821"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [pinx]  <br/> |
+| セル名:  <br/> | PinX  <br/> |
    
 プログラムから、インデックスによって [PinX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

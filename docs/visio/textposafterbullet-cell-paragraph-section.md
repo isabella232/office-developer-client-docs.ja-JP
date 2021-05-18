@@ -28,14 +28,14 @@ ms.locfileid: "33422153"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | 段落の行頭文字 [ *i* ] = <1>、 ** 2、3...  <br/> |
+| セル名 :  <br/> | Para.TextPosAfterBullet[ i ]*ここで、i* = <1>、2、3...   <br/> |
    
 プログラムから、インデックスによって [TextPosAfterBullet] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionParagraph** <br/> |
-| 行インデックス:  <br/> |**visRowParagraph** +  *i* = ** 0、1、2...  <br/> |
+| 行インデックス:  <br/> |**visRowParagraph**  +  *i* *=* 0, 1, 2...  <br/> |
 | セル インデックス:  <br/> |**visTextPosAfterBullet** <br/> |
    
 

@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8733aab9-3a8e-4924-b62f-4e871d991c72
-description: ユーザーの個人情報および画像の詳細のコレクションが含まれている文字列を返します。
+description: personsAddresses パラメーターで指定されたユーザーの人物と画像の詳細のコレクションを含む文字列を返します。
 ms.openlocfilehash: 08b6eca193da59bbdc3c9d21d4dc9b6d0e0c884f
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "33404534"
 ---
 # <a name="isocialsession2getpeopledetails"></a>ISocialSession2::GetPeopleDetails
 
-ユーザーの個人情報および画像の詳細のコレクションが含まれている文字列を返し__ ます。 
+_personsAddresses_ パラメーターで指定されたユーザーの人物と画像の詳細のコレクションを含む文字列を返します。 
   
 ```cpp
 HRESULT _stdcall GetPeopleDetails([in] BSTR personsAddresses, [out, retval] BSTR* personsCollection);
@@ -25,21 +25,21 @@ HRESULT _stdcall GetPeopleDetails([in] BSTR personsAddresses, [out, retval] BSTR
 
 ## <a name="parameters"></a>パラメーター
 
-_個人住所_
+_personsAddresses_
   
-> 順番一連のユーザーのハッシュ化された SMTP アドレスを指定する XML 文字列。
+> [in]一連のユーザーのハッシュ化された SMTP アドレスを指定する XML 文字列。
     
-_個人コレクション_
+_personsCollection_
   
-> 読み上げ個人および画像の詳細のコレクションを含む XML 文字列。
+> [out]人物と画像の詳細のコレクションを含む XML 文字列。
     
 ## <a name="remarks"></a>注釈
 
-.osc プロバイダーが友人および友人以外の**GetPeopleDetails**またはハイブリッド同期をサポートしている場合、Outlook Social Connector (.osc) はを呼び出します。 
+OUTLOOK Social Connector (OSC) は、OSC プロバイダーがフレンドとフレンド以外のオンデマンドまたはハイブリッド同期をサポートしている場合に **GetPeopleDetails** を呼び出します。 
   
-_個人住所_パラメーターは、プロバイダ拡張機能のスキーマで定義されているように、 **hashedAddresses**のスキーマ定義に準拠している必要があります。 _個人_情報の文字列は、[人] ウィンドウに表示される各ユーザーのハッシュされた SMTP アドレスのセットを表します。 ユーザーは、 [iLoggedOnUserName](isocialsession-loggedonusername.md)プロパティによって表されるログオンユーザーのフレンドである必要はありません。 ハッシュされた SMTP アドレスは、プロバイダーの**機能**XML の**hashfunction**要素によって指定されたハッシュ関数を使用して暗号化されます。 .osc は、**キーワード**要素を使用して、_個人住所_コレクション内の各**hashedAddress**を識別します。 プロバイダーは、 **GetPeopleDetails**の**フレンド**xml を返すときに、受信者の**person** xml を識別するために、 **index**要素を使用する必要があります。 受信者がソーシャルネットワーク上の登録済みユーザーではない場合、プロバイダーはその受信者の**個人**XML を返さないようにする必要があります。 **person** XML で表される各ネットワークユーザーの**index**要素は、個人_住所_の受信者の**index**要素に対応します。
+_personsAddresses パラメーター_ は、OSC プロバイダーの拡張性のスキーマで定義されている **hashedAddresses** のスキーマ定義に準拠している必要があります。 _personsAddresses 文字列_ は、People Pane に表示される各ユーザーのハッシュ化された SMTP アドレスのセットを表します。 ユーザーは [、ISocialSession::LoggedOnUserName](isocialsession-loggedonusername.md) プロパティで表されるログオン ユーザーのフレンドである必要があります。 ハッシュされた SMTP アドレスは、プロバイダーの機能 XML の **hashFunction** 要素で指定されたハッシュ関数を **使用して暗号化** されます。 OSC は **、personAddresses** コレクション内の各ハッシュされた  _Addressを index_ 要素で **識別** します。 プロバイダーは **、GetPeopleDetails** のフレンド **XML** を返す際に、index 要素を使用して受信者 **の個人** XML を識別する必要があります。  受信者がソーシャル ネットワーク上の登録ユーザーではない場合、プロバイダーは、その受信者 **の任意の** ユーザー XML を返す必要があります。 ユーザー **XML で** 表される各ネットワークユーザーの index 要素は _、personsAddresses_ の受信者の **index** 要素に対応します。
   
-.osc は、_個人コレクション_パラメーターによって返される情報をメモリに格納します。 _個人コレクション_XML 文字列は、プロバイダ拡張機能のスキーマで定義されているように、**フレンド**のスキーマ定義に準拠している必要があります。 .osc がメモリでこの情報を使用して更新する方法の詳細については、「[友人とアクティビティを同期](synchronizing-friends-and-activities.md)する」を参照してください。
+OSC は  _、personsCollection_ パラメーターによって返される情報をメモリに格納します。 _personsCollection_ XML 文字列は、OSC プロバイダーの拡張性のスキーマで定義されているフレンドのスキーマ定義に準拠している必要があります。 OSC がメモリ内でこの情報を使用して更新する方法の詳細については、「友人とアクティビティの同期 [」を参照してください](synchronizing-friends-and-activities.md)。
   
 ## <a name="see-also"></a>関連項目
 

@@ -25,11 +25,11 @@ ms.locfileid: "33421439"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-受信者に属する0個以上のプロパティを記述します。
+受信者に属する 0 個以上のプロパティについて説明します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _ADRENTRY
@@ -41,41 +41,41 @@ typedef struct _ADRENTRY
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulReserved1**
   
-> 予約語0である必要があります。
+> 予約済み。は 0 である必要があります。
     
- **cvalues**
+ **cValues**
   
-> **rgPropVals**メンバーによって参照されているプロパティ値配列のプロパティの数。 **cvalues**メンバーは0にすることができます。 
+> **rgPropVals** メンバーが指すプロパティ値配列内のプロパティの数。 **cValues メンバーには** 0 を指定できます。 
     
  **rgPropVals**
   
-> 受信者のプロパティを説明するプロパティ値配列へのポインター。 **rgPropVals**メンバーは NULL にすることができます。 
+> 受信者のプロパティを記述するプロパティ値配列へのポインター。 **rgPropVals メンバー** には NULL を指定できます。 
     
 ## <a name="remarks"></a>注釈
 
-**adrentry**構造は、1人の受信者に属するプロパティを示します。 通常、受信者を表すために使用されるプロパティには、次のようなものがあります。 
+**ADRENTRY 構造体は**、単一の受信者に属するプロパティを表します。 通常、受信者の説明に使用されるプロパティには、次のものが含まれます。 
   
- **PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
+ **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
   
- **PR_ADDRTYPE**([PidTagAddressType](pidtagaddresstype-canonical-property.md))
+ **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))
   
- **PR_EMAIL_ADDRESS**([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))
+ **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))
   
- **PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))
+ **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))
   
-受信者の[spropvalue](spropvalue.md)配列にエントリ識別子または**PR_ENTRYID**プロパティが表示される場合、これは受信者が解決されたことを示します。 クライアントは[IAddrBook:: ResolveName](iaddrbook-resolvename.md)メソッドを呼び出して、送信メッセージの受信者一覧内のすべての受信者が解決されたことを確認します。 解決された受信者のみがメッセージと共に送信できます。 
+受信者の [SPropValue](spropvalue.md) **配列に** PR_ENTRYID識別子またはプロパティが表示される場合、これは受信者が解決済みかどうかを示します。 クライアントは [、IAddrBook::ResolveName](iaddrbook-resolvename.md) メソッドを呼び出して、送信メッセージの受信者リスト内のすべての受信者が解決済みである必要があります。 メッセージと一緒に送信できるのは、解決された受信者のみです。 
   
- 通常、 **adrentry**構造体は、 [adrentry](adrlist.md)構造体の**aentries**メンバーの配列を形成するために組み合わされています。 
+ **ADRENTRY** 構造体は、通常、ADRLIST 構造体 **の aEntries** メンバーの [配列を形成するために結合](adrlist.md) されます。 
   
- **adrentry**構造体と[srow](srow.md)構造体の両方には、予約済みのメンバー、プロパティ値の配列、および配列内の値の数が含まれているため、同一です。 **adrentry**構造体は**adrentry**構造体の**aentries**メンバーを形成するために組み合わされていますが、 **srow**構造体は、 [srow](srowset.md)構造の**arow**メンバーを形成するために組み合わされています。 両方の種類の構造体は同じ割り当てルールに従い、アドレス帳コンテナーの contents テーブルから取得された**srowset**構造を**adrlist**構造体にキャストして、そのものとして使用できるということを意味します。 
+ **ADRENTRY** 構造体と [SRow](srow.md) 構造体は、予約メンバー、プロパティ値の配列、および配列内の値の数を含むため、同じです。 **ADRENTRY** 構造体が結合され **、ADRLIST** 構造体の **aEntries** メンバーが形成されるのに対し **、SRow** 構造体は結合して [SRowSet](srowset.md)構造体の **aRow** メンバーを形成します。 どちらの構造も同じ割り当てルールに従います。これは、アドレス帳コンテナーの目次テーブルから取得された **SRowSet** 構造体を **ADRLIST** 構造にキャストし、この方法で使用できることを示しています。 
   
-**adrentry**構造は空にすることができます。 たとえば、lppadrlist パラメーターによって指定さ**** れた adrentry 構造が、 **IAddrBook::** の呼び出しで**** _lppadrlist_パラメーターによって指定されている場合は、受信者が削除されているときに空になることがあります。 
+**ADRENTRY 構造体は** 空の場合があります。 たとえば **、IAddrBook::Address** の呼び出しで _lppAdrList_ パラメーターが指す **ADRLIST** 構造体に含まれる **ADRENTRY** 構造体は、受信者が削除されているときに空にできます。 
   
-**adrentry**構造にメモリを割り当てる方法の詳細については、「 [adrentry および srowset 構造体のメモリの管理](managing-memory-for-adrlist-and-srowset-structures.md)」を参照してください。
+**ADRENTRY** 構造体にメモリを割り当てる方法の詳細については [、「ADRLIST および SRowSet 構造体](managing-memory-for-adrlist-and-srowset-structures.md)のメモリの管理」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251391
 localization_priority: Normal
 ms.assetid: 434d7ceb-1050-c667-fb3d-b6634440c18e
-description: 指定されたすべての論理式が true の場合は、true (1) を返します。 論理式のいずれかが false または0の場合、AND 関数は false (0) を返します。
+description: 指定された論理式のすべてが TRUE の場合は、TRUE (1) を返します。 論理式が FALSE または 0 の場合、AND 関数は FALSE (0) を返します。
 ms.openlocfilehash: 74e8301718e69a2ab61f6bf9992d0d6855bbc6f1
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33422013"
 ---
 # <a name="and-function"></a>AND 関数
 
-指定されたすべての論理式が true の場合は、true (1) を返します。 論理式のいずれかが false または0の場合、AND 関数は false (0) を返します。
+指定された論理式のすべてが TRUE の場合は、TRUE (1) を返します。 論理式が FALSE または 0 の場合、AND 関数は FALSE (0) を返します。
   
 ## <a name="syntax"></a>構文
 
-AND (* * *logical expression1* * *、* **論理 expression2* * *,..., * **論理式 n* * *) 
+AND(** *論理式1* **, ** *論理式2* **,..., ** *論理式 *** ) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -32,8 +32,8 @@ AND (* * *logical expression1* * *、* **論理 expression2* * *,..., * **論理
    
 ## <a name="example"></a>例
 
-AND (Height \> 1, PinX \> 1)
+AND(Height \> 1, PinX \> 1)
   
-両方の式が TRUE の場合、TRUE を返します。 いずれかの式が FALSE の場合、FALSE を返します。
+両方の式が TRUE の場合、TRUE を返します。いずれかの式が FALSE の場合、FALSE を返します。
   
 

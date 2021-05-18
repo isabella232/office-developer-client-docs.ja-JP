@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251453
 localization_priority: Normal
 ms.assetid: c7feec6f-f47a-60ee-b056-7b2dc51ed9a9
-description: 'cellreference の値が error type #VALUE の場合は TRUE を返します。数式の引数の型が正しくありません。 iserrvalue 関数は、別のセルを参照する論理式で使用します。'
+description: セル参照の値がエラー型の場合は true を#VALUE式の引数が間違った型です。 ISERRVALUE 関数は、別のセルを参照する論理式で使用されます。
 ms.openlocfilehash: 62058522dc8a2387aec9867e4892da740aba9b44
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33404429"
 ---
 # <a name="iserrvalue-function"></a>ISERRVALUE 関数
 
-_cellreference_の値が error type #VALUE の場合は TRUE を返します。数式の引数の型が正しくありません。 iserrvalue 関数は、別のセルを参照する論理式で使用します。 
+セル参照の値がエラー型の場合は true を#VALUE式の引数が間違った型です。 ISERRVALUE 関数は、別のセルを参照する論理式で使用されます。 
   
 ## <a name="syntax"></a>構文
 
-iserrvalue (* * *cellreference* * *) 
+ISERRVALUE(** *cellreference* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -36,19 +36,19 @@ iserrvalue (* * *cellreference* * *)
   
 ## <a name="example-1"></a>例 1
 
-|**Cell**|**Formula**|**戻り値**|
+|**Cell**|**式**|**戻り値**|
 |:-----|:-----|:-----|
-|最初の X1  <br/> |= "House"  <br/> |#VALUE!  <br/> |
-|最初の A1  <br/> |= If (ISERRVALUE(Scratch.X1),2,Scratch.X1)  <br/> |2   <br/> |
+|Scratch.X1  <br/> |= "House"  <br/> |#VALUE!  <br/> |
+|Scratch.A1  <br/> |= If (ISERRVALUE(Scratch.X1),2,Scratch.X1)  <br/> |2  <br/> |
    
 戻り値は #VALUE! エラーを示す 2 です。Microsoft Visio でエラーの代わりに 2 を返すように式で指定されています。
   
 ## <a name="example-2"></a>例 2
 
-|**Cell**|**Formula**|**戻り値**|
+|**Cell**|**式**|**戻り値**|
 |:-----|:-----|:-----|
-|最初の A1  <br/> |="5 +7"  <br/> |5 + 7  <br/> |
-|最初の B1  <br/> |=If (ISERRVALUE(Scratch.A1),2,Scratch.A1)  <br/> |5 + 7  <br/> |
+|Scratch.A1  <br/> |="5 +7"  <br/> |5 + 7  <br/> |
+|Scratch.B1  <br/> |=If (ISERRVALUE(Scratch.A1),2,Scratch.A1)  <br/> |5 + 7  <br/> |
    
 戻り値は #VALUE! エラーではなく、また元のセルの値を返すように式で指定されているため、12 を返します。
   

@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251698
 localization_priority: Normal
 ms.assetid: 62d87db9-b8ca-60b6-bf27-5168c718ec96
-description: Microsoft Visio ユーザーインターフェイスでスタイルが表示されている場所を決定します。
+description: Microsoft ユーザー インターフェイスでスタイルを表示するVisioします。
 ms.openlocfilehash: 7b3830488770a66d7be35923e1807dbcdcd1f1c3
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33423245"
 ---
 # <a name="hideforapply-cell-style-properties-section"></a>[HideForApply] セル ([Style Properties] セクション)
 
-Microsoft Visio ユーザーインターフェイスでスタイルが表示されている場所を決定します。
+Microsoft ユーザー インターフェイスでスタイルを表示するVisioします。
   
 |**値**|**説明**|
 |:-----|:-----|
@@ -33,7 +33,7 @@ Microsoft Visio ユーザーインターフェイスでスタイルが表示さ�
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [hideforapply]  <br/> |
+| セル名:  <br/> | HideForApply  <br/> |
    
 プログラムから、インデックスによって [HideForApply] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

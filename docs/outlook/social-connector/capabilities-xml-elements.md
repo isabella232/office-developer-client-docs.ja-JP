@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1951643d-e3ca-4d04-bc0c-10d9d0b35dad
-description: このトピックの表では、機能 XML の子要素について説明し、それらがサポートする領域によってグループ化されています。
+description: このトピックの表では、機能 XML の子要素について説明し、サポートする領域によってグループ化されています。
 ms.openlocfilehash: 6816bbdcd24eceffc47d6b9d0835a90c7089c039
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -17,79 +17,79 @@ ms.locfileid: "32281194"
 ---
 # <a name="capabilities-xml-elements"></a>機能 XML の要素
 
-このトピックの表では、**機能**XML の子要素について説明し、それらがサポートする領域によってグループ化されています。 各**capabilities**要素の既定値は**false**です。 [imethod alprovider:: getcapabilities](isocialprovider-getcapabilities.md)メソッドによって返される**機能**XML で要素が指定されていない場合、要素の値は**false**となります。
+このトピックの表では、機能 **XML** の子要素について説明し、サポートする領域によってグループ化されています。 各 capabilities 要素の既定値 **は** false **です**。 要素が [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md)メソッドによって返される機能 **XML** で指定されていない場合、要素の値は false に等 **しくなります**。
   
-**機能**xml の概要の説明については、「 [xml for capabilities](xml-for-capabilities.md)」を参照してください。 **機能**xml の例については、「 [capabilities xml の例](capabilities-xml-example.md)」を参照してください。 Microsoft outlook social connector (.osc) プロバイダ xml スキーマの完全な定義 (必須または任意の要素を含む) については、「 [Outlook social connector プロバイダーの xml スキーマ](outlook-social-connector-provider-xml-schema.md)」を参照してください。
+機能 XML の **概要については** 、「XML [for Capabilities」を参照してください](xml-for-capabilities.md)。 機能 XML の例 **については、「Capabilities** [XML の例」を参照してください](capabilities-xml-example.md)。 必要またはオプションの要素を含む、Microsoft Outlook Social Connector (OSC) プロバイダー XML スキーマの完全な定義については [、「Outlook Social](outlook-social-connector-provider-xml-schema.md)Connector Provider XML スキーマ」を参照してください。
   
-## <a name="capabilities-for-supporting-friends"></a>友人をサポートする機能
+## <a name="capabilities-for-supporting-friends"></a>友人をサポートするための機能
 
-次の表は、友人または友人以外の任意の形式の同期に適用される要素を示しています。
+次の表は、友人または友人以外の同期の任意の形式に適用される要素を示しています。
   
 |**要素**|**説明**|
 |:-----|:-----|
-|**ユーザー** <br/> |プロバイダーが[iruncommand alsession::](isocialsession-unfollowperson.md)メソッド呼び出しをサポートしているかどうかを示します。  <br/> **** この**ユーザー**は、.osc プロバイダーの独立した機能です。 .osc プロバイダーは、ユーザーを友人として追加 (ユーザーには、[**はい**] **** に設定) したり、ソーシャルネットワークアカウントでユーザーを友人として削除したり (「」 **** を**true**に設定) したりできる機能を示します。 一般に、フォローできることは、フォローを停止することを意味しません。 **** [参照] は機能であり、ソーシャルネットワークアカウント上の特定のユーザーまたはすべてのユーザーをフォローするアクションとして誤解されることはありません。 **** **true の場合**は、値が**** **false**であるとは限りません。  <br/> |
-|**ユーザー** <br/> |プロバイダーが i/メソッド呼び出し[](isocialsession-followperson.md)をサポートするかどうかを示します。 .osc は、 **** **cacheFriends**が**true**の場合 (キャッシュされたフレンドの同期)、 **dynamicContactsLookup**は**true** (友人と非友人のオンデマンド同期)、または両方 cacheFriends のいずれかをチェックします。 **** **dynamicContactsLookup**は true (友人と非友人のハイブリッド同期) です。 プロバイダーが [ **true**] に設定されている場合は、ユーザーがフォローしているユーザーの [ **** ** \<\> **ユーザー] ウィンドウにネットワークバッジが表示され、people の [**追加] (+)** メニューの [networkname] コマンドが有効になります。ペイン. プロバイダーが [ **true**] に設定した場合、ネットワークバッジは表示されず **、 \<[networkname\> ** ] コマンドは表示されません。 ****  <br/> |
-|**getfriends** <br/> |プロバイダーが[iGetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md)または[ISocialSession2:: GetPeopleDetails](isocialsession2-getpeopledetails.md)メソッド呼び出しをサポートするかどうかを示します。 プロバイダーが**getfriends**を**true**として設定した場合、.osc は**cacheFriends**または**dynamicContactsLookup**の値を使用して、ソーシャルネットワークが友人を Outlook の連絡先アイテムまたはメモリに保存できるかどうかを判断します。 プロバイダーが**getfriends**を**false**として設定した場合、ソーシャルネットワークはフレンドおよび**iGetFriendsAndColleagues**および**ISocialSession2:: GetPeopleDetails**メソッドをサポートしていません。また、.osc では、次の値は無視されます。**cacheFriends**および**dynamicContactsLookup**。  <br/> |
+|**doNotFollowPerson** <br/> |プロバイダーが [ISocialSession::UnFollowPerson](isocialsession-unfollowperson.md) メソッド呼び出しをサポートするかどうかを示します。  <br/> **followPerson** と **doNotFollowPerson は** 、OSC プロバイダーの独立した機能です。 OSC プロバイダーは、ユーザーをフレンドとして追加できる機能 **(followPerson** を **true** に設定) またはソーシャル ネットワーク アカウントでフレンドとして削除できる機能を示します **(doNotFollowPerson** を **true** に設定します)。 一般に、フォローできるからといって、フォローを停止できるという問題ではありません。 **followPerson** は機能であり、特定のユーザーまたはソーシャル ネットワーク アカウントのすべてのユーザーをフォローするアクションとして誤解される必要はありません。 **followPerson が** **true であること** は **、doNotFollowPerson** が false という意味 **ではありません**。  <br/> |
+|**followPerson** <br/> |プロバイダーが [ISocialSession::FollowPerson](isocialsession-followperson.md) メソッド呼び出しをサポートするかどうかを示します。 OSC は **、cacheFriends** が true **(友人** のキャッシュ同期) である場合 **、dynamicContactsLookup** が true **(フレンド** とフレンド以外のオンデマンド同期) の場合、または **cacheFriends** と **dynamicContactsLookup** の両方が true (友人と友人以外のハイブリッド同期) の場合に **followPerson** をチェックします。 プロバイダーが **followPerson** をtrue に設定すると、ユーザーがフォローしているユーザーのネットワーク バッジがユーザー ウィンドウに表示され、ユーザー ウィンドウの [追加] **(+)** メニューで **\< [ネットワーク \>** 名] コマンドを有効にします。 プロバイダーが **followPerson を** **false** に設定すると、ネットワーク バッジは表示されません **\< 。on NetworkName \>** コマンドは非表示になります。  <br/> |
+|**getFriends** <br/> |プロバイダーが [ISocialPerson::GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md) または [ISocialSession2:::GetPeopleDetails](isocialsession2-getpeopledetails.md) メソッド呼び出しをサポートするかどうかを示します。 プロバイダーが getFriends をtrue に設定した場合、OSC は **cacheFriends** または **dynamicContactsLookup** の値を使用して、ソーシャル ネットワークでフレンドを Outlook 連絡先アイテムまたはメモリに格納できるかどうかを判断します。  プロバイダーが **getFriends** をfalse に設定した場合、ソーシャル ネットワークはフレンドと **ISocialPerson::GetFriendsAndColleagues** メソッドと **ISocialSession2::GetPeopleDetails** メソッドをサポートしません。OSC は **cacheFriends** メソッドと **dynamicContactsLookup** の値を無視します。  <br/> |
    
-以下の要素は、フレンドのキャッシュ同期、または友人と非友人のハイブリッド同期にのみ適用されます。 フレンドの同期の詳細については、「[友人とアクティビティを同期](synchronizing-friends-and-activities.md)する」を参照してください。
+次の要素は、友人のキャッシュされた同期、または友人と友人以外のハイブリッド同期にのみ適用されます。 友人の同期の詳細については、「友人とアクティビティの [同期」を参照してください](synchronizing-friends-and-activities.md)。
   
 |**要素**|**説明**|
 |:-----|:-----|
-|**cacheFriends** <br/> |.osc プロバイダーが Outlook の連絡先アイテムとして友人を保存することを許可するかどうかを示します。 .osc は、 **getfriends**が**true**の場合にのみ**cacheFriends**をチェックします。 プロバイダーが**cacheFriends**を**true**に設定した場合、.osc はキャッシュによって友人を同期し、ユーザーの既定のストアに、フレンド連絡先用のネットワーク固有の連絡先フォルダーを作成します。 ネットワーク固有の連絡先フォルダーの名前は、 [i指定 alprovider::](isocialprovider-socialnetworkname.md) /"/" という値です。 プロバイダーが**cacheFriends**を**false**として設定した場合、.osc は友人の連絡先を格納するためのネットワーク固有の連絡先フォルダーを作成しません。  <br/> |
-|**contactsyncrestartinterval** <br/> |同期エラーが発生した場合に、ソーシャルネットワークからのフレンド情報の同期試行の間隔を分単位で指定します。 .osc は、この要素を使用します。この要素は、.osc プロバイダーがソーシャルネットワーク固有の連絡先フォルダーへのフレンドのキャッシュ同期またはハイブリッド同期をサポートしている場合にのみ使用されます (**cacheFriends**が**true**)。  <br/> 既定の再試行間隔は30分です。既定値は、の下`ContactSyncRestartInterval` `HKEY_CURRENT_USER\Software\Microsoft\Office\Outlook\SocialConnector`にあるキーによって上書きされています。 プロバイダーが**contactsyncrestartinterval**を設定すると、プロバイダーの値は既定の再試行間隔である30分またはレジストリキーの値より優先されます。  <br/> 友人および友人以外の情報を需要に同期する方法の詳細については、「[友人とアクティビティを同期](synchronizing-friends-and-activities.md)する」を参照してください。  <br/> |
+|**cacheFriends** <br/> |OSC プロバイダーが Outlook 連絡先アイテムとしてフレンドを格納できるかどうかを示します。 OSC は **、getFriends が** true の **場合にのみ cacheFriends を** チェック **します**。 プロバイダーが **cacheFriends** を **true** に設定すると、OSC はキャッシュによってフレンドを同期し、フレンド連絡先のユーザーの既定のストアにネットワーク固有の連絡先フォルダーを作成します。 ネットワーク固有の連絡先フォルダーの名前は [、ISocialProvider::SocialNetworkName プロパティの値](isocialprovider-socialnetworkname.md) です。 プロバイダーが **cacheFriends** を **false** に設定した場合、OSC は友人の連絡先が友人を保存するネットワーク固有の連絡先フォルダーを作成しない。  <br/> |
+|**contactSyncRestartInterval** <br/> |同期エラーが発生した場合に、ソーシャル ネットワークから友人の情報を同期する試行の間の再試行間隔を分で指定します。 OSC は、OSC プロバイダーがソーシャル ネットワーク固有の連絡先フォルダーへの友人のキャッシュ同期またはハイブリッド同期をサポートしている場合にのみ、この要素を使用します **(cacheFriends は** **true)。**  <br/> 既定の再試行間隔は 30 分です。既定値が下のキーによって  `ContactSyncRestartInterval` 上書きされない限り  `HKEY_CURRENT_USER\Software\Microsoft\Office\Outlook\SocialConnector` 。 プロバイダーが **contactSyncRestartInterval** を設定すると、プロバイダー値は既定の再試行間隔 30 分またはレジストリ キー値を上書きします。  <br/> フレンドとフレンド以外の情報をオンデマンドで同期する方法の詳細については、「同期するフレンドとアクティビティ」 [を参照してください](synchronizing-friends-and-activities.md)。  <br/> |
    
-次の要素は、オンデマンド同期または友人および非友人のハイブリッド同期にのみ適用されます。
+次の要素は、友人と友人以外のオンデマンド同期またはハイブリッド同期にのみ適用されます。
   
 |**要素**|**説明**|
 |:-----|:-----|
-|**dynamicContactsLookup** <br/> |.osc プロバイダーが友人および非友人のオンデマンド同期の[ISocialSession2:: GetPeopleDetails](isocialsession2-getpeopledetails.md)呼び出しをサポートしているかどうかを示します。  <br/> .osc は、 **getfriends**が**true**の場合にのみ**dynamicContactsLookup**をチェックします。**dynamicContactsLookup**の既定の設定は**false**です。  <br/> .osc プロバイダーが**dynamicContactsLookup**を**true**と指定し、 **getfriends**が**true**の場合、[ユーザー] ウィンドウが更新されるたびに、.osc が**ISocialSession2:: GetPeopleDetails**を呼び出します。 ユーザーが別のユーザーを [ユーザー] ウィンドウまたは outlook エクスプローラーウィンドウの他のアイテムで選択するか、outlook インスペクターウィンドウが開くと、[人] ウィンドウが更新されます。 動的連絡先検索では、ユーザーが最新のユーザー画像とプロファイル情報を [ユーザー] ウィンドウに常に表示することができますが、プロバイダーからソーシャルネットワークへの呼び出し回数が増加します。  <br/> プロバイダーが**dynamicContactsLookup**を**false**として設定した場合、.osc は**ISocialSession2:: GetPeopleDetails**を呼び出してユーザーウィンドウを更新しません。  <br/> |
-|**showOnDemandContactsWhenMinimized** <br/> |ユーザーウィンドウが最小化されている場合に、.osc が友人および非友人に対してオンデマンド同期を実行する必要があるかどうかを示します。  <br/> |
+|**dynamicContactsLookup** <br/> |OSC プロバイダーが [ISocialSession2::GetPeopleDetails](isocialsession2-getpeopledetails.md) 呼び出しをサポートするかどうかを示します。  <br/> OSC は、getFriends が true の場合にのみ **、dynamicContactsLookup を** チェック **します**。 **dynamicContactsLookup の既定の設定は** false **です**。  <br/> OSC プロバイダーが **dynamicContactsLookup** をtrue に指定し **、getFriends** を true に指定すると、ユーザー ウィンドウが更新されるごとに、OSC は **ISocialSession2::GetPeopleDetails** を呼び出します。 ユーザー ウィンドウは、ユーザー ウィンドウまたは Outlook エクスプローラー ウィンドウ内の別のアイテムで別のユーザーを選択するか、Outlook インスペクター ウィンドウを開くと更新されます。 動的な連絡先の参照により、ユーザーは常にユーザー ウィンドウに最新のユーザー画像とプロファイル情報が表示されますが、プロバイダーからソーシャル ネットワークへの呼び出しの数が増えます。  <br/> プロバイダーが **dynamicContactsLookup** を **false** に設定した場合、OSC は **ISocialSession2::GetPeopleDetails** を呼び出して People Pane を更新しません。  <br/> |
+|**showOnDemandContactsWhenMinimized** <br/> |ユーザー ウィンドウを最小化するときに、OSC がフレンドと非フレンドのオンデマンド同期を実行する必要があるかどうかを示します。  <br/> |
    
-## <a name="capabilities-for-supporting-activities"></a>サポートアクティビティの機能
+## <a name="capabilities-for-supporting-activities"></a>アクティビティをサポートする機能
 
-次の要素は、.osc プロバイダーによってサポートされるアクティビティのあらゆる形式の同期に適用されます。
+次の要素は、OSC プロバイダーがサポートするアクティビティの任意の形式の同期に適用されます。
   
 |**要素**|**説明**|
 |:-----|:-----|
-|**getactivities** <br/> |プロバイダーが[ISocialSession2:: GetActivitiesEx](isocialsession2-getactivitiesex.md)または[i alperson:: getactivities](isocialperson-getactivities.md)メソッドの呼び出しをサポートしているかどうかを示します。 プロバイダーが**getactivities**を**true**に設定した場合、.osc は**cacheactivities**または**** の値を使用して、ソーシャルネットワークサイトがアクティビティを Outlook RSS アイテムとして保存できるかどうか、またはメモリ内のアクティビティ。 プロバイダーが**getactivities**を**false**に設定した場合、ソーシャルネットワークはアクティビティと**ISocialSession2:: GetActivitiesEx**および**i alperson:: getactivities**メソッドをサポートしておらず、.osc は次の**値を無視します。cacheactivities**と**dynamicActivitiesLookupEx**。  <br/> |
+|**getActivities** <br/> |プロバイダーが [ISocialSession2::GetActivitiesEx](isocialsession2-getactivitiesex.md) または [ISocialPerson::GetActivities](isocialperson-getactivities.md) メソッド呼び出しをサポートするかどうかを示します。 プロバイダーが getActivities をtrue に設定すると、OSC は **cacheActivities** または **dynamicActivitiesLookupEx** の値を使用して、ソーシャル ネットワーク サイトが Outlook RSS アイテムまたはメモリ内アクティビティとしてアクティビティを格納できるかどうかを判断します。  プロバイダーが **getActivities** をfalse に設定すると、ソーシャル ネットワークはアクティビティと **ISocialSession2::GetActivitiesEx** メソッドと **ISocialPerson::GetActivities** メソッドをサポートし、OSC は cacheActivities メソッドと **dynamicActivitiesLookupEx** の値を無視します。   <br/> |
    
-次の要素は、アクティビティのキャッシュ同期またはハイブリッド同期にのみ適用されます。
+次の要素は、キャッシュされた同期またはアクティビティのハイブリッド同期にのみ適用されます。
   
 |**要素**|**説明**|
 |:-----|:-----|
-|**cacheactivities** <br/> |Outlook Social Connector 2013 以降では、プロバイダーがユーザーのストアの隠しフォルダーにキャッシュすることによってアクティビティを同期できなくなるため、.osc はこの要素を無視します。  <br/> プロバイダーがアクティビティをサポートする場合、プロバイダーはオンデマンドでの同期アクティビティをサポートする必要があります。 プロバイダーは**cacheactivities**を**false**に設定し、 **dynamicActivitesLookupEx**を**true**に設定します。 .osc は、必要に応じてアクティビティを同期させ、アクティビティをメモリ内にキャッシュします。 アクティビティのメモリキャッシュは、30分間隔で更新されます。  <br/> |
+|**cacheActivities** <br/> |Outlook Social Connector 2013 以降、OSC は、プロバイダーがユーザーのストア内の非表示フォルダーにキャッシュしてアクティビティを同期できなくなったので、この要素を無視します。  <br/> プロバイダーがアクティビティをサポートしている場合、プロバイダーはオンデマンドでアクティビティの同期をサポートする必要があります。 プロバイダーは **cacheActivities を** **false** に設定し **、dynamicActivitesLookupEx** を true に **設定します**。 OSC は、オンデマンドでアクティビティを同期し、アクティビティをメモリにキャッシュします。 アクティビティのメモリ キャッシュは、30 分間隔で更新されます。  <br/> |
    
-以下の要素は、アクティビティのオンデマンド同期またはハイブリッド同期にのみ適用されます。
+次の要素は、オンデマンド同期またはアクティビティのハイブリッド同期にのみ適用されます。
   
 |**要素**|**説明**|
 |:-----|:-----|
-|**dynamicActivitiesLookup** <br/> |.osc 1.1 では廃止されました。  <br/> .osc 1.1 以降、.osc は[idynamicActivitiesLookup alsession:: getactivities](isocialsession-getactivities.md)を呼び出すことなく、 **** の値を無視します。 オンデマンドアクティビティ検索をサポートするには、 **cacheactivities**を**false**および**getactivities**と**dynamicActivitiesLookupEx**と**** して設定し、.osc は**ISocialSession2:: GetActivitiesEx**を呼び出します。  <br/> |
-|**dynamicActivitiesLookupEx** <br/> |アクティビティのオンデマンド同期に対して、.osc プロバイダーが**ISocialSession2:: GetActivitiesEx**呼び出しをサポートしているかどうかを示します。  <br/> .osc プロバイダーがオンデマンドアクティビティの同期をサポートしている場合は、 **getactivities**と**dynamicActivitiesLookupEx**を**true**に設定し、 **cacheactivities**を**false**とします。 .osc は、[人] ウィンドウが更新されるたびに、 **ISocialSession2:: GetActivitiesEx**を呼び出します。 ユーザーが outlook エクスプローラーウィンドウで選択された項目を変更するか、outlook インスペクターウィンドウを開くと、[ユーザー] ウィンドウが更新されます。 動的アクティビティ検索を実行すると、ユーザーは常に最新のアクティビティを [ユーザー] ウィンドウに表示しますが、プロバイダーからソーシャルネットワークへの呼び出しの数は増加します。  <br/> プロバイダーが**dynamicActivitiesLookupEx**を**false**として設定した場合、.osc は**ISocialSession2:: GetActivitiesEx**を呼び出しません。 [人] ウィンドウに表示されている人の場合。  <br/> |
-|**showOnDemandActivitiesWhenMinimized** <br/> |People ペインが最小化されている場合に、アクティビティのオンデマンド同期を実行する必要があるかどうかを示します。  <br/> |
+|**dynamicActivitiesLookup** <br/> |OSC 1.1 では非推奨です。  <br/> OSC 1.1 から、OSC は [ISocialSession::GetActivities](isocialsession-getactivities.md) を呼び出さなくなったので **、dynamicActivitiesLookup** の値を無視します。 オンデマンド アクティビティの参照をサポートするには **、cacheActivities** を **false、getActivities、dynamicActivitiesLookupEx** を true に設定し、OSC は **ISocialSession2::GetActivitiesEx** を呼び出します。    <br/> |
+|**dynamicActivitiesLookupEx** <br/> |OSC プロバイダーが、アクティビティのオンデマンド同期を求める **ISocialSession2::GetActivitiesEx** 呼び出しをサポートするかどうかを示します。  <br/> OSC プロバイダーがオンデマンド アクティビティの同期をサポートしている場合は **、getActivities** と **dynamicActivitiesLookupEx** を **true** に設定し **、cacheActivities** を false に **設定します**。 OSC は、People Pane が更新されるごとに **ISocialSession2::GetActivitiesEx** を呼び出します。 ユーザーが Outlook エクスプローラー ウィンドウで選択したアイテムを変更するか、Outlook インスペクター ウィンドウを開くと、ユーザー ウィンドウが更新されます。 動的アクティビティの参照により、ユーザーは常に People Pane に最新のアクティビティを表示しますが、プロバイダーからソーシャル ネットワークへの呼び出しの数が増えます。  <br/> プロバイダーが **dynamicActivitiesLookupEx** をfalse に設定した場合、OSC はユーザー ウィンドウに表示されるユーザーに対して **ISocialSession2::GetActivitiesEx** を呼び出す必要があります。  <br/> |
+|**showOnDemandActivitiesWhenMinimized** <br/> |ユーザー ウィンドウを最小化するときに、OSC がアクティビティのオンデマンド同期を実行するかどうかを示します。  <br/> |
    
-## <a name="common-capabilities-for-supporting-on-demand-or-hybrid-synchronization-of-friends-non-friends-and-activities"></a>友人、非友人、および活動のオンデマンドまたはハイブリッド同期をサポートするための一般的な機能
-
-|**要素**|**説明**|
-|:-----|:-----|
-|**hashfunction** <br/> | .osc プロバイダーがサポートするハッシュ関数を指定します。 プロバイダーのソーシャルネットワークまたは基幹業務アプリケーションに含まれていないユーザーの個人を特定できる情報を保護するために、.osc はハッシュされた電子メールアドレスを**ISocialSession2:: GetPeopleDetails**と**ISocialSession2:: に渡します。GetActivitiesEx**。  <br/>  **dynamicContactsLookup**が**true**に設定されている場合、または**dynamicActivitiesLookupEx**が**true**に設定されている場合、プロバイダーはハッシュ**関数**を**SHA1**、 **MD5**、または**CRC32MD5**のいずれかに設定する必要があります。 **hashfunction**が見つからない場合、または正しくない値が指定された場合、.osc はエラーを返します。  <br/> **SHA1**は、 [[RFC3174]](https://www.rfc-editor.org/rfc/rfc3174.txt)によって定義された、インターネット技術標準化委員会 (IETF) のセキュアハッシュアルゴリズム1です。 たとえば、電子メールアドレス melissa@contoso.com の**SHA1**ハッシュ値は`bb81577b567262a21a4df5f6e335c1250acd7b50`です。  <br/> **md5**は、 [[RFC1321]](https://www.rfc-editor.org/rfc/rfc1321.txt)で定義されているインターネット技術標準化委員会 (IETF) MD5 メッセージダイジェストアルゴリズムです。 たとえば、電子メールアドレス melissa@contoso.com の**MD5**ハッシュ値は`c8c39e61ca1662477b39b83d7b0a0615`になります。  <br/> **CRC32MD5**は、次のように定義された**CRC32**と**MD5**の組み合わせです。  <br/>  先頭および末尾の空白を削除し、すべての文字を小文字に変換して、電子メールアドレスを正規化します。  <br/>  正規化された電子メールアドレスの**CRC32**値を計算し、この値の10進整数表現を使用します。 実装が符号付き整数を返す場合は、符号付き整数を符号なし整数に変換する必要があります。  <br/>  正規化された電子メールアドレスの**MD5**値を計算し、この値の16進表現を使用します (小文字の A ~ F)。  <br/>  これらの2つの値をアンダースコアで結合します。  <br/>  たとえば、電子メールアドレス melissa@contoso.com の**CRC32MD5**ハッシュ値は`2149665315_c8c39e61ca1662477b39b83d7b0a0615`です。  <br/> |
-   
-## <a name="capabilities-for-supporting-authentication-and-account-configuration"></a>認証とアカウントの構成をサポートする機能
+## <a name="common-capabilities-for-supporting-on-demand-or-hybrid-synchronization-of-friends-non-friends-and-activities"></a>友人、友人以外、およびアクティビティのオンデマンドまたはハイブリッド同期をサポートするための一般的な機能
 
 |**要素**|**説明**|
 |:-----|:-----|
-|**allowChangesToAutoConfigure** <br/> |ユーザーがソーシャルネットワークで自動構成設定を変更できるようにするかどうかを指定します。これには、ログオンに別の URL を指定するなどがあります。  <br/> |
-|**createAccountUrl** <br/> |プロバイダーが**hidehyperlinks**を**false**に設定した場合、ユーザーが [**アカウント構成**] ダイアログボックスで **[アカウントを作成するには、ここをクリック**します] をクリックすると、 **createAccountUrl**で指定されている URL が既定のブラウザーで開きます。  <br/> |
-|**displayurl** <br/> |.osc で、[アカウントの構成] ダイアログボックスにソーシャルネットワークの**URL アドレス**テキストボックスを表示するかどうかを示します。  <br/> |
-|**forgotPasswordUrl** <br/> |プロバイダーが**hidehyperlinks**を**false**として設定した場合、ユーザーが [ **** **パスワードの確認**] をクリックすると、既定のブラウザーで**forgotPasswordUrl**で指定された URL が開きます。  <br/> |
-|**hidehyperlinks** <br/> |[アカウントの構成] ダイアログボックスで、 **[アカウントの作成**と**パスワードの忘れる**] を非表示にするかどうかを指定します。  <br/> .osc 1.0 は、この設定を無視し、ハイパーリンクは常に非表示になります。 .osc 1.1 は、この設定の値を監視します。  <br/> |
-|**hideRememberMyPassword** <br/> |[アカウントの構成] ダイアログボックスで、 **[パスワードを記憶**する] チェックボックスをオフにするかどうかを指定します。  <br/> プロバイダーが**hideRememberMyPassword**を**true**に設定すると、 **[パスワードを記憶**する] チェックボックスをオフにし、パスワードを保存しない場合に、.osc が機能します。  <br/> プロバイダーが**hideRememberMyPassword**を**false**に設定すると、[アカウントの構成] ダイアログボックスに [**パスワードを記憶**する] チェックボックスが表示されます。  <br/> |
-|**supportsAutoConfigure** <br/> |ユーザーの自動構成を試行し、ソーシャルネットワークにログオンするために、.osc が**iGetAutoConfiguredSession alprovider**インターフェイス上で**** 関数を呼び出す必要があるかどうかを示します。  <br/> |
-|**uselogoncached** <br/> |.osc プロバイダーが、キャッシュされた資格情報を使用してログオンするために[ISocialSession2:: logoncached](isocialsession2-logoncached.md)呼び出しをサポートしているかどうかを示します。  <br/> プロバイダーが**uselogoncached**が**true**として設定されている場合、.osc は**uselogonwebauth**および .osc 呼び出しの設定を無視します**ISocialSession2:: logoncached** for authentication。  <br/> プロバイダーが**dynamicActivitiesLookupEx**を**false**に設定した場合、.osc は認証のために**ISocialSession2:: logoncached**を呼び出しません。  <br/> |
-|**uselogonwebauth** <br/> |.osc でフォームベース認証を使用する必要があるか[](isocialsession-logonweb.md)どうかを示します。 プロバイダーが**uselogonwebauth**を**false**として設定している場合、.osc は基本認証を使用して、 [iime alsession:: Logon](isocialsession-logon.md)メソッドを呼び出します。 プロバイダーが**uselogonwebauth**を**true**として設定すると、フォームベース認証を使用して、次のように**isocialsession:: logonweb**を呼び出します。  <br/> |
+|**hashFunction** <br/> | OSC プロバイダーがサポートするハッシュ関数を指定します。 プロバイダーのソーシャル ネットワークまたは業務上のアプリケーションではないユーザーの個人を特定できる情報を保護するために、OSC はハッシュされた電子メール アドレスを **ISocialSession2:::GetPeopleDetails** および **ISocialSession2::GetActivitiesEx** に渡します。  <br/>  **dynamicContactsLookup** が **true** に設定されている場合、または **dynamicActivitiesLookupEx** が **true** に設定されている場合、プロバイダーは **hashFunction** を **SHA1、MD5、** または **CRC32MD5** のいずれかの値に設定する必要があります。  **hashFunction が見** つからないか、正しくない値を指定すると、OSC はエラーを返します。  <br/> **SHA1** は [、[RFC3174]](https://www.rfc-editor.org/rfc/rfc3174.txt)で定義されたインターネット エンジニアリング タスク フォース (IETF) US Secure Hash Algorithm 1 です。 たとえば、メール アドレス **の SHA1** ハッシュ値は次 melissa@contoso.com です  `bb81577b567262a21a4df5f6e335c1250acd7b50` 。  <br/> **MD5** はインターネット エンジニアリング タスク フォース (IETF) MD5 Message-Digest [[RFC1321]](https://www.rfc-editor.org/rfc/rfc1321.txt)で定義されているアルゴリズムです。 たとえば、電子メール アドレス **の MD5** ハッシュ値 melissa@contoso.com です  `c8c39e61ca1662477b39b83d7b0a0615` 。  <br/> **CRC32MD5 は****、次のように定義された CRC32** と **MD5 の** 組み合わせです。  <br/>  先頭と末尾の空白文字を削除し、すべての文字を小文字に変換して、電子メール アドレスを正規化します。  <br/>  正規化された **電子メール アドレスの CRC32** 値を計算し、この値の 10 進整数表記を使用します。 実装が符号付き整数を返す場合は、符号付き整数を符号なし整数に変換する必要があります。  <br/>  正規化された **電子メール アドレスの MD5** 値を計算し、この値の 16 進表記を使用します (A ~ F の場合は小文字を使用)。  <br/>  これら 2 つの値をアンダースコアと組み合わせます。  <br/>  たとえば、電子メール **アドレスの CRC32MD5** ハッシュ値 melissa@contoso.com です  `2149665315_c8c39e61ca1662477b39b83d7b0a0615` 。  <br/> |
    
-**imethod alprovider:: getcapabilities**メソッドでプロバイダーによって返される**機能**の XML に応じて、[アカウントの構成] ダイアログボックスが変更されます。 たとえば、図1は、testprovider の例の [アカウントの構成] ダイアログボックスを示しています。 
+## <a name="capabilities-for-supporting-authentication-and-account-configuration"></a>認証とアカウント構成をサポートする機能
+
+|**要素**|**説明**|
+|:-----|:-----|
+|**allowChangesToAutoConfigure** <br/> |ユーザーがログオンする別の URL を指定するなどの自動構成設定をソーシャル ネットワークで変更できるかどうかを示します。  <br/> |
+|**createAccountUrl** <br/> |プロバイダーが **hideHyperlinks** をfalse に設定すると、ユーザーが [アカウント構成]ダイアログ ボックスで [ここをクリックしてアカウントを作成する] をクリックすると **、createAccountUrl** で指定された URL が既定のブラウザーで開きます。   <br/> |
+|**displayUrl** <br/> |OSC がソーシャル ネットワークの **[URL アドレス** ] テキスト ボックスを [アカウント構成] ダイアログ ボックスに表示するかどうかを示します。  <br/> |
+|**forgotPasswordUrl** <br/> |プロバイダーが **hideHyperlinks** を **false** に設定した場合、ユーザーが [アカウント構成] ダイアログ ボックスで [パスワードを忘れた場合] をクリックすると **、forgotPasswordUrl** で指定された URL が既定のブラウザーで開きます。  <br/> |
+|**hideHyperlinks** <br/> |OSC で [ここをクリックしてアカウントを作成する] と [パスワードを忘れた場合 **]** ハイパーリンクを [アカウント構成] ダイアログ ボックスで非表示にするかどうかを示します。  <br/> OSC 1.0 ではこの設定は無視され、ハイパーリンクは常に非表示になります。 OSC 1.1 は、この設定の値を監視します。  <br/> |
+|**hideRememberMyPassword** <br/> |OSC が [アカウント構成] ダイアログ ボックスの **[** パスワードを記憶する] チェック ボックスを非表示にするかどうかを示します。  <br/> プロバイダーが **hideRememberMyPassword** を **true** に設定すると、OSCは [パスワードを記憶する] ボックスがオフになっている場合と同様に機能し、パスワードは保存されません。  <br/> プロバイダーが **hideRememberMyPassword** を **false** に設定すると、OSC は [アカウント構成] ダイアログ ボックスに [パスワードを記憶する] チェック ボックスを表示します。   <br/> |
+|**supportsAutoConfigure** <br/> |OSC が **ISocialProvider** インターフェイスで **GetAutoConfiguredSession** 関数を呼び出して、自動構成を試み、ユーザーのソーシャル ネットワークにログオンするかどうかを示します。  <br/> |
+|**useLogonCached** <br/> |OSC プロバイダーがキャッシュされた資格情報でログオンするための [ISocialSession2::LogonCached](isocialsession2-logoncached.md) 呼び出しをサポートするかどうかを示します。  <br/> プロバイダーが **useLogonCached** を **true** に設定すると、OSC は **useLogonWebAuth** の設定を無視し、OSC は認証のために **ISocialSession2::LogonCached** を呼び出します。  <br/> プロバイダーが **dynamicActivitiesLookupEx** を **false** に設定した場合、OSC は認証のために **ISocialSession2::LogonCached** を呼び出す必要があります。  <br/> |
+|**useLogonWebAuth** <br/> |OSC がフォーム ベース認証と [ISocialSession::LogonWeb メソッド](isocialsession-logonweb.md) を使用するかどうかを示します。 プロバイダーが **useLogonWebAuth** を **false** に設定すると、OSC は基本認証を使用し [、ISocialSession::Logon メソッドを呼び出](isocialsession-logon.md) します。 プロバイダーが **useLogonWebAuth** を **true** に設定すると、OSC はフォーム ベース認証を使用し **、ISocialSession::LogonWeb を呼び出します**。  <br/> |
+   
+**ISocialProvider::GetCapabilities** メソッドのプロバイダーによって返される機能 **XML** に応じて、アカウント構成ダイアログ ボックスが変更されます。 たとえば、図 1 は TestProvider の例のアカウント構成ダイアログ ボックスを示しています。 
   
-**図1。[アカウントの構成] ダイアログボックスの testprovider の例**
+**図 1.アカウント構成ダイアログ ボックスの TestProvider の例**
 
 ![TestProvider の構成情報の例](media/odc_ol14_ta_OSCFigure4.jpg)
   

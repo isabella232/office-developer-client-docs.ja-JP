@@ -1,5 +1,5 @@
 ---
-title: PackedUnicodeString Stream 構造
+title: PackedUnicodeString ストリーム構造
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,35 +13,35 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33422615"
 ---
-# <a name="packedunicodestring-stream-structure"></a>PackedUnicodeString Stream 構造
+# <a name="packedunicodestring-stream-structure"></a>PackedUnicodeString ストリーム構造
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-PackedUnicodeString stream 構造体には、文字列の Unicode (utf-16) 表現が含まれています。 この文字列は、null 文字で終了していません。 このストリームの Data 要素は、次に示す順序で互いに続けて、リトルエンディアンバイト順に格納されます。 実際に存在するデータ要素は、utf-16 形式の文字列の長さによって決まります。
+PackedUnicodeString ストリーム構造には、文字列の Unicode (UTF-16) 表記が含まれます。 この文字列は null 文字で終了されません。 このストリーム内のデータ要素は、次に示す順序で、お互いに直後に続く、リトル エンディアン バイト順に格納されます。 実際に存在するデータ要素は、UTF-16 表記の文字列の長さに依存します。
   
-- utf-16 形式の wchars が255未満の文字列の場合、データ要素は次のようになります。
+- UTF-16 表記が 255 WCHA 未満の文字列の場合、データ要素は次のとおりです。
     
-  - 長さ: バイト (1 バイト)。文字列の utf-16 形式の wchars の長さ。 (バイト数)。
+  - 長さ: BYTE (1 バイト)、文字列の UTF-16 表記の長さ (WCHARs の数)。
     
-  - 文字: WCHAR の配列。 この配列の数は、Length data 要素と同じです。 配列内のデータは、文字列を utf-16 で表現したものです。
+  - 文字: WCHAR の配列。 この配列の数は、Length データ要素と等しくなります。 配列内のデータは、文字列の UTF-16 表記です。
     
-- utf-16 形式の 255 ~ 65535 wchars を含む文字列の場合、データ要素は次のようになります。
+- UTF-16 表記に 255 ~ 65535 WCHA が含まれる文字列の場合、データ要素は次のとおりです。
     
-  - プレフィックス: BYTE (1 バイト)、255 (0xff) の値。
+  - プレフィックス: BYTE (1 バイト)、値 255 (0xff)。
     
-  - 長さ: WORD (2 バイト)。文字列の utf-16 形式の wchars の長さ。 (2 バイト) を指定します。
+  - 長さ: 文字列の UTF-16 表記の WORD (2 バイト)、WCHARs の数の長さ。
     
-  - 文字: WCHAR の配列。 この配列の数は、Length data 要素と同じです。 配列内のデータは、文字列を utf-16 で表現したものです。
+  - 文字: WCHAR の配列。 この配列の数は、Length データ要素と等しくなります。 配列内のデータは、文字列の UTF-16 表記です。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[Outlook のアイテムとフィールド](outlook-items-and-fields.md)
+[Outlookアイテムとフィールド](outlook-items-and-fields.md)
   
-[Stream 構造体](stream-structures.md)
+[Stream 構造](stream-structures.md)
   
-[fielddefinition ストリームの構造](fielddefinition-stream-structure.md)
+[FieldDefinition ストリーム構造](fielddefinition-stream-structure.md)
 

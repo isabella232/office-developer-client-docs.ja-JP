@@ -25,7 +25,7 @@ InfoPath フォームの機能を拡張しようと思うと、多くの場合�
 
 [XmlFormCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlFormCollection.aspx) クラスには、次のメソッドとプロパティがあります。フォームの開発者は、これらを使用することにより、コレクションに含まれている [XmlForm](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx) オブジェクトを管理できます。 
   
-|**[名前]**|**[説明]**|
+|**名前**|**説明**|
 |:-----|:-----|
 |[New(String)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlFormCollection.New.aspx) メソッド  <br/> |指定したフォームに基づいて新しいフォームを作成します。  <br/> |
 |[New(String, XmlFormOpenMode)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlFormCollection.New.aspx) メソッド (オーバーロード 1)  <br/> |指定した開くモードの動作を使用して、指定したフォームに基づいて新しいフォームを作成します。  <br/> |
@@ -42,7 +42,7 @@ InfoPath フォームの機能を拡張しようと思うと、多くの場合�
 
 [XmlForm](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx) クラスには、次のメソッドとプロパティがあります。フォームの開発者は、これらを使用することにより、フォームの基になる XML ドキュメントとの相互作用により、その XML ドキュメントに対して操作を実行できます。 
   
-|**[名前]**|**[説明]**|
+|**名前**|**説明**|
 |:-----|:-----|
 |[Close](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.Close.aspx) メソッド  <br/> |フォームを閉じます。  <br/> |
 |[GetWorkflowTasks](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.GetWorkflowTasks.aspx) メソッド  <br/> |現在のフォームの **Microsoft.Office.Core.WorkflowTasks** コレクションへの参照を取得します。  <br/> |

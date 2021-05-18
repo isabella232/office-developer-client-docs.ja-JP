@@ -39,25 +39,25 @@ Most other folders are generic folders. Like root folders, generic folders conta
   
 A search folder contains links to messages that match a set of predefined criteria. Because search folders contain links rather than actual messages, they are in effect read-only. They cannot contain other folders or have messages or folders moved or copied into them. They cannot have new messages created in them; and they themselves cannot be moved, copied, or renamed. When a message is deleted from a search folder, it is actually deleted from the folder that contains the message.
   
-フォルダーの種類は、 **PR_FOLDER_TYPE** ([PidTagFolderType](pidtagfoldertype-canonical-property.md)) プロパティに格納されます。 すべてのフォルダーの種類に応じて、このプロパティは FOLDER_GENERIC、FOLDER_ROOT、または FOLDER_SEARCH のいずれかに設定されています。
+フォルダーの種類は、PR_FOLDER_TYPE **(** [PidTagFolderType](pidtagfoldertype-canonical-property.md)) プロパティに格納されます。 すべてのフォルダーには、種類に応じて、FOLDER_GENERIC、FOLDER_ROOT、FOLDER_SEARCHにこのプロパティが設定されています。
   
-すべてのフォルダーには、1つのエントリ id と1つのレコードキーがあります。 エントリ id **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) は、クライアントとサービスプロバイダーがフォルダーを開くために使用します。 record キー **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) は、フォルダーと他のフォルダーを比較するために使用されるバイナリ値です。 
+すべてのフォルダーには、1 つのエントリ識別子と 1 つのレコード キーがあります。 エントリ識別子 **(PR_ENTRYID** [pidTagEntryId) (PidTagEntryId)](pidtagentryid-canonical-property.md)は、クライアントとサービス プロバイダーがフォルダーを開くのに使用します。 レコード キー **(PR_RECORD_KEY** ([PidTagRecordKey)](pidtagrecordkey-canonical-property.md)は、フォルダーを他のフォルダーと比較するために使用されるバイナリ値です。 
   
-フォルダーには、関連するフォルダーとメッセージストアを識別するためのその他のプロパティがあります。 次のプロパティが必要です。
+フォルダーには、関連するフォルダーとメッセージ ストアを識別するためのその他のプロパティがあります。 次のプロパティが必要です。
   
-- **PR_PARENT_ENTRYID**([PidTagParentEntryId](pidtagparententryid-canonical-property.md))
+- **PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md))
     
-- **PR_STORE_ENTRYID**([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md))
+- **PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md))
     
-- **PR_STORE_RECORD_KEY**([PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md))
+- **PR_STORE_RECORD_KEY** ([PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md))
     
-一部のフォルダーは、ユーザーが実行できる操作の種類を示す**PR_ACCESS** ([PidTagAccess](pidtagaccess-canonical-property.md)) プロパティをサポートしています。 たとえば、 **PR_ACCESS**の有効な設定の1つは MAPI_ACCESS_DELETE で、これはフォルダーを削除できることを示します。 もう1つの設定 MAPI_ACCESS_MODIFY は、フォルダーが変更可能であることを示します。 
+一部のフォルダー **では、PR_ACCESS** 実行できる操作の種類を示すプロパティ [(PidTagAccess)](pidtagaccess-canonical-property.md)プロパティがサポートされています。 たとえば、フォルダーを削除できるPR_ACCESS示MAPI_ACCESS_DELETE有効な設定の 1 つが使用されます。 別の設定MAPI_ACCESS_MODIFY、フォルダーを変更可能にする必要があります。 
   
-必要なフォルダープロパティの完全な一覧については、 [imapifolder](imapifolderimapicontainer.md)インターフェイスを参照してください。 
+必要なフォルダー プロパティの完全な一覧については [、「IMAPIFolder インターフェイス」を参照](imapifolderimapicontainer.md) してください。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI アプリケーションの開発](mapi-application-development.md)
+[MAPI アプリケーション開発](mapi-application-development.md)
 

@@ -1,5 +1,5 @@
 ---
-title: "title: \"DLL �܂��� XLL ����̂݌Ăяo���\x94\\�� C API �֐�\" ms.author: mroberts author: mroberts manager: soliver ms.date: 11/16/2014 ms.audience: Developer ms.topic: overview keywords:"
+title: DLL または XLL からのみ呼び出し可能な C API 関数
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer

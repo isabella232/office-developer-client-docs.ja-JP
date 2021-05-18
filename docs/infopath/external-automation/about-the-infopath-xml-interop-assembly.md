@@ -4,7 +4,7 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- msxml 相互運用機能 [infopath 2007], infopath 2007, xml プライマリ相互運用機能アセンブリ, infopath xml 相互運用機能アセンブリ
+- msxml 相互運用機能 [infopath 2007],InfoPath 2007,XML プライマリ相互運用機能アセンブリ,InfoPath XML 相互運用機能アセンブリ
 localization_priority: Normal
 ms.assetid: fb28659b-8a71-4f43-9121-2c748fb2c5e1
 description: InfoPath XML 相互運用機能アセンブリは、マネージ コードと、InfoPath を自動化する外部のアプリケーションからの Microsoft XML Core Services (MSXML) が公開する COM サーバーとの間の相互運用性をサポートするために提供されます。
@@ -19,10 +19,10 @@ ms.locfileid: "32303781"
 
 InfoPath XML 相互運用機能アセンブリは、マネージ コードと、InfoPath を自動化する外部のアプリケーションからの Microsoft XML Core Services (MSXML) が公開する COM サーバーとの間の相互運用性をサポートするために提供されます。
 
-InfoPath セットアッププログラムの **.net プログラミングサポート**オプションは、3つの相互運用機能アセンブリをインストールします。 相互運用アセンブリとは、マネージ コードとアンマネージ コードの仲介役として機能する .NET アセンブリで、COM オブジェクトのメンバーを、対応する .NET マネージ メンバーにマップします。 これらのアセンブリの1つには、microsoft xml Core Services (MSXML) の COM サーバーによって[](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.infopath.xml?view=infopath-external)公開されているメンバーを操作するために使用される、名前空間のメンバーが含まれています。マネージコードを使用して InfoPath を自動化する外部アプリケーションから。 
+InfoPath **セットアップ プログラムの .NET プログラミング サポート** オプションは、3 つの相互運用機能アセンブリをインストールします。 相互運用アセンブリとは、マネージ コードとアンマネージ コードの仲介役として機能する .NET アセンブリで、COM オブジェクトのメンバーを、対応する .NET マネージ メンバーにマップします。 これらのアセンブリの 1 つである Microsoft.Office.Interop.InfoPath.Xml.dll は、マネージ コードを使用して[InfoPath](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.infopath.xml?view=infopath-external)を自動化する外部アプリケーションから Microsoft XML Core Services (MSXML) の COM サーバーによって公開されるメンバーを操作するために使用されるMicrosoft.Office.Interop.InfoPath.Xml名前空間のメンバーを提供します。 
   
 > [!NOTE]
-> infopath 外部オートメーションプロジェクトに必要な、microsoft office との相互運用機能アセンブリへの参照は、手動で設定する必要があります (これについては、「」を参照してください)。 外部オートメーションの詳細については、「[外部オートメーションのシナリオと例](external-automation-scenarios-and-examples.md)」を参照してください。 
+> InfoPath 外部オートメーション プロジェクトMicrosoft.Office.Interop.InfoPath.dll必要Microsoft.Office.Interop.InfoPath.Xml.dll相互運用機能アセンブリへの参照は、手動で確立する必要があります。 外部オートメーションの詳細については、「外部オートメーションの [シナリオと例」を参照してください](external-automation-scenarios-and-examples.md)。 
   
 ## <a name="see-also"></a>関連項目
 

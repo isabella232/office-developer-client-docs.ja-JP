@@ -25,7 +25,7 @@ ms.locfileid: "33423014"
   
 ## <a name="syntax"></a>構文
 
-CALLOUTTARGETREF ()!
+CALLOUTTARGETREF()!
   
 ### <a name="return-value"></a>戻り値
 
@@ -33,11 +33,11 @@ CALLOUTTARGETREF ()!
   
 ## <a name="remarks"></a>注釈
 
-図形が引き出し図形ではない場合、または図形が対象の図形に関連付けられていない場合、CALLOUTTARGETREF は #REF を返します。
+図形が引き出し図形ではない場合、またはターゲット図形に関連付けされていない場合、CALLOUTTARGETREF は次の#REF。
   
 ## <a name="example"></a>例
 
-CALLOUTTARGETREF ()!寸法 
+CALLOUTTARGETREF()!Height 
   
 引き出しに関連付けられた図形の [Height] セルの値を返します。 
   

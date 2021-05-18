@@ -1,5 +1,5 @@
 ---
-title: Sqrt 関数 (Access カスタム web アプリ)
+title: Sqrt 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33404793"
 ---
-# <a name="sqrt-function-access-custom-web-app"></a>Sqrt 関数 (Access カスタム web アプリ)
+# <a name="sqrt-function-access-custom-web-app"></a>Sqrt 関数 (Access カスタム Web アプリ)
 
 指定した値の平方根を返します。
   

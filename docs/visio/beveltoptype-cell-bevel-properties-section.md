@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3e29af0d-4183-41d1-8b0f-96450089f882
-description: 図形の上端にあるベベルの種類を指定します。
+description: 図形の上端のベベルの種類を指定します。
 ms.openlocfilehash: 225600a3e39ec58622bcd8597e1115a52cb62a3f
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,22 +16,22 @@ ms.locfileid: "33421495"
 ---
 # <a name="beveltoptype-cell-bevel-properties-section"></a>[BevelTopType] セル ([ベベルのプロパティ] セクション)
 
-図形の上端にあるベベルの種類を指定します。 
+図形の上端のベベルの種類を指定します。 
   
 |**値**|**説明**|
 |:-----|:-----|
-|.0  <br/> |ベベルなし  <br/> |
-|1   <br/> |円ベベル  <br/> |
-|2   <br/> |額縁風ベベル  <br/> |
-|3   <br/> |クロス ベベル  <br/> |
-|4   <br/> |クール スラント ベベル  <br/> |
-|5   <br/> |アングル ベベル  <br/> |
-|6   <br/> |ソフト ラウンド ベベル  <br/> |
-|7   <br/> |凸面ベベル  <br/> |
-|8   <br/> |スロープ ベベル  <br/> |
-|9   <br/> |切り込みベベル  <br/> |
-|10   <br/> |スケール ベベル  <br/> |
-|11   <br/> |ハード エッジ ベベル  <br/> |
+|0  <br/> |ベベルなし  <br/> |
+|1  <br/> |円ベベル  <br/> |
+|2  <br/> |額縁風ベベル  <br/> |
+|3  <br/> |クロス ベベル  <br/> |
+|4  <br/> |クール スラント ベベル  <br/> |
+|5  <br/> |アングル ベベル  <br/> |
+|6  <br/> |ソフト ラウンド ベベル  <br/> |
+|7  <br/> |凸面ベベル  <br/> |
+|8  <br/> |スロープ ベベル  <br/> |
+|9  <br/> |切り込みベベル  <br/> |
+|10  <br/> |スケール ベベル  <br/> |
+|11  <br/> |ハード エッジ ベベル  <br/> |
 |12   <br/> |アール デコ ベベル  <br/> |
    
 ## <a name="remarks"></a>注釈

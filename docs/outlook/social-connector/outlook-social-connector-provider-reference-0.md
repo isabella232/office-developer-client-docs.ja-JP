@@ -7,7 +7,7 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 157aed97-1cb9-465d-b7eb-343771cc0cba
-description: このセクションには、Outlook Social Connector (.osc) プロバイダーの拡張機能に関するリファレンストピックが含まれています。
+description: このセクションでは、ソーシャル コネクタ (OSC) プロバイダー Outlook機能拡張に関するリファレンス トピックについて説明します。
 ms.openlocfilehash: 0e70993e7773f1c4974f557dfec89cce3eb65b13
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "32359844"
 ---
 # <a name="outlook-social-connector-provider-reference"></a>Outlook Social Connector プロバイダーのリファレンス
 
-このセクションには、Outlook Social Connector (.osc) プロバイダーの拡張機能に関するリファレンストピックが含まれています。
+このセクションでは、ソーシャル コネクタ (OSC) プロバイダー Outlook機能拡張に関するリファレンス トピックについて説明します。
   
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -25,12 +25,12 @@ ms.locfileid: "32359844"
   
 - [XML スキーマ](outlook-social-connector-provider-xml-schema.md)
   
-- [エラーコード](outlook-social-connector-provider-error-codes.md)
+- [エラー コード](outlook-social-connector-provider-error-codes.md)
   
 ## <a name="related-sections"></a>関連情報
 
-- [プロバイダーを開発するためのベストプラクティス](best-practices-for-developing-a-provider.md)
+- [プロバイダーの開発に関するベスト プラクティス](best-practices-for-developing-a-provider.md)
   
-- [.osc サンプルテンプレート](osc-sample-templates.md)
+- [OSC サンプル テンプレート](osc-sample-templates.md)
   
 

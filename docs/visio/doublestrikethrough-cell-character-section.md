@@ -20,20 +20,20 @@ ms.locfileid: "32360593"
 
 テキストを二重取り消し線で書式設定するかどうかを指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [DoubleStrikethrough] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [doublestrikethrough] [ *i* ] *i* = <1>、2、3...  <br/> |
+| セル名 :  <br/> | Char.DoubleStrikethrough[ i ]*ここで**、i* = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [DoubleStrikethrough] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionCharacter** <br/> |
-| 行インデックス:  <br/> |**visRowCharacter** +  *i* = ** 0、1、2...  <br/> |
+| 行インデックス:  <br/> |**visRowCharacter**  +  *i* *=* 0, 1, 2...  <br/> |
 | セル インデックス:  <br/> |**visCharacterDoubleStrikethrough** <br/> |
    
 

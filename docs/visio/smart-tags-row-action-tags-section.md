@@ -23,25 +23,25 @@ ms.locfileid: "33404709"
 > [!NOTE]
 > Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。 
   
-[Smart Tags] 行の名前は Smart Tags. 次のセルに*名前*とが含まれます。 詳細については、各セルに関連する項目を参照してください。 
+[Smart Tags] 行の名前は Smart Tags. *名前*  を指定し、次のセルを含む。 詳細については、各セルに関連する項目を参照してください。 
   
 |**Cell**|**説明**|
 |:-----|:-----|
-|[X](x-cell-action-tags-section.md) <br/> |図形のローカル座標で、アクションタグボタンが配置される位置の*x*座標の位置です。  <br/> |
-|[Y](y-cell-action-tags-section.md) <br/> |図形のローカル座標で、アクションタグボタンが配置される位置の*y*座標の位置です。  <br/> |
-|[[tagname]](tagname-cell-action-tags-section.md) <br/> |アクション タグの論理名です。  <br/> |
-|[X Justify](x-justify-cell-action-tags-section.md) <br/> |[x] セルと [Y] セルによって定義された点に対する、アクションタグボタンの*x*座標のオフセット値です。  <br/> |
-|[Y Justify](y-justify-cell-action-tags-section.md) <br/> |[X] セルと [y] セルによって定義された点に対する、アクションタグボタンの*y*オフセット。  <br/> |
+|[X](x-cell-action-tags-section.md) <br/> |アクション  *タグ*  ボタンを配置する図形のローカル座標内のポイントの x 座標位置。  <br/> |
+|[Y](y-cell-action-tags-section.md) <br/> |アクション タグ ボタンを配置する図形のローカル座標内のポイントの  *y*  座標位置。  <br/> |
+|[TagName](tagname-cell-action-tags-section.md) <br/> |アクション タグの論理名です。  <br/> |
+|[X Justify](x-justify-cell-action-tags-section.md) <br/> |X  *セル*  と Y セルで定義されたポイントを基準にしたアクション タグ ボタンの x -offset。  <br/> |
+|[Y Justify](y-justify-cell-action-tags-section.md) <br/> |X  *セルと Y*  セルで定義されたポイントを基準にしたアクション タグ ボタンの y オフセット。  <br/> |
 |[DisplayMode](displaymode-cell-action-tags-section.md) <br/> |どのようなときにアクション タグを表示するかを指定します。  <br/> |
-|[buttonface]](buttonface-cell-action-tags-section.md) <br/> |アクション タグ ボタンの表面に表示する画像の ID です。  <br/> |
+|[ButtonFace](buttonface-cell-action-tags-section.md) <br/> |アクション タグ ボタンの表面に表示する画像の ID です。  <br/> |
 |[説明](description-cell-action-tags-section.md) <br/> |アクション タグを説明する文字列です。  <br/> |
 |[Disabled](disabled-cell-action-tags-section.md) <br/> |アクション タグが無効かどうかを示します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
- 必要に応じて [SmartTags.  必要に応じて行に*名前*を付け、わかりやすい名前を行に割り当て、セルの値を設定します。 既存の [Smart Tags] セクションにアクション タグを追加するには、行を右クリックして、ショートカット メニューの [**行の挿入**] をクリックします。 
+ 必要に応じて [SmartTags.  *必要に*  応じて行に名前を付け、行にわかりやすい名前を割り当て、セル値を設定します。 既存の [Smart Tags] セクションにアクション タグを追加するには、行を右クリックして、ショートカット メニューの [**行の挿入**] をクリックします。 
   
-これらのセルを行名で参照できます。これは、シェイプシートウィンドウに赤いテキストで表示されます。 スマートタグにわかりやすい名前を割り当てることができます。 [*名前*] 行をクリックし、[*サイズ*] などの名前を入力します。たとえば、行名スマートタグを作成します。 [説明] セルは、スマートタグを使用して参照できます。説明: 
+これらのセルは行名で参照できます。これは、赤いテキストの ShapeSheet ウィンドウに表示されます。 スマート タグにわかりやすい名前を割り当てるには。 *名前*  の行をクリックし、その行をクリックし、  *たとえば Size*  などの名前を入力して、行名 Smart Tags.Size を作成します。 [説明] セルは、Smart Tags.Size.Description を使用して参照できます。 
   
 入力する行名は、セクション内で一意の名前にする必要があります。
   

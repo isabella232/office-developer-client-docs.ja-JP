@@ -25,7 +25,7 @@ ms.locfileid: "33405094"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージヘッダーの同期を開始します。
+メッセージ ヘッダーの同期を開始します。
   
 ```cpp
 HRESULT SyncHdrBeg( 
@@ -39,19 +39,19 @@ HRESULT SyncHdrBeg(
 
  _cbeid_
   
-> 順番メッセージのエントリ ID のバイト数。
+> [in]メッセージのエントリ ID のバイト数。
     
  _lpeid_
   
-> 順番メッセージのエントリ ID。
+> [in]メッセージのエントリ ID。
     
  _ppv_
   
->  [in]/[out] メッセージヘッダーの**[HDRSYNC](hdrsync.md)** 構造体へのポインター。 
+>  [in]/[out] メッセージ ヘッダーの **[HDRSYNC](hdrsync.md)** 構造へのポインター。 
     
 ## <a name="remarks"></a>注釈
 
-**iostx:: SyncHdrBeg**では、ローカルストアは、[メッセージヘッダーのダウンロード状態](download-message-header-state.md)に移行します。 Outlook は、ストア内の現在のメッセージヘッダーと親フォルダーを使用して、クライアントの**HDRSYNC**構造を初期化します。 クライアントは、完全なメッセージアイテム ( **HDRSYNC**では*pmsgfull*として) をダウンロードする必要があります。 これが成功した場合、クライアントは**HSF_OK**として**HDRSYNC**の*ulflags*も設定します。 **[iostx:: SyncHdrEnd](iostx-synchdrend.md)** では、Outlook が**HDRSYNC**で結果をチェックし、 **HDRSYNC**の情報を使用してローカルメッセージヘッダーを更新します。 
+**IOSTX::SyncHdrBeg** の場合、ローカル ストアはダウンロード メッセージ ヘッダーの状態 [に移行します](download-message-header-state.md)。 Outlook、ストア内のメッセージ ヘッダーと親フォルダーの現在の表現を使用して **、クライアントの HDRSYNC** 構造を初期化します。 その後、クライアントは完全なメッセージ アイテム  *(HDRSYNC の pmsgFull として)*  を **ダウンロードする必要があります** 。 これが成功した場合、クライアントは **HDRSYNC** の *ulFlags* も **HSF_OK。** **[IOSTX::SyncHdrEnd](iostx-synchdrend.md)** のOutlook **HDRSYNC** で結果をチェックし **、HDRSYNC** の情報を使用してローカル メッセージ ヘッダーを更新します。 
   
 ## <a name="see-also"></a>関連項目
 

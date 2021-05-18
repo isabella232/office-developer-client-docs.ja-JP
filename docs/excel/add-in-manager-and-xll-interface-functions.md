@@ -1,5 +1,5 @@
 ---
-title: �A�h�C�� �}�l�[�W���[�� XLL �C���^�[�t�F�C�X�֐�
+title: アドイン マネージャーと XLL インターフェイス関数
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer

@@ -29,7 +29,7 @@ ms.locfileid: "33404142"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [lockreplace]  <br/> |
+| セル名:  <br/> | LockReplace  <br/> |
    
 プログラムから、インデックスによって [**LockReplace**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

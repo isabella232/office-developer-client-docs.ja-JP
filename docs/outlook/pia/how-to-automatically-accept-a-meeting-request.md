@@ -28,7 +28,7 @@ ms.locfileid: "32359704"
 
 *Response* パラメーターは、応答が受諾、辞退、仮の予定のいずれであるかを示します。 fNoUI と fAdditionalTextDialog は **bool** 値のパラメーターで、それぞれ、応答を送信するかどうか、ユーザーが応答を編集できるかどうかを決定します。 次のコード例の AutoAcceptMeetingRequests では、すべての **MeetingItem** オブジェクトを列挙して、関連する **AppointmentItem** を取得します。 その後、AutoAcceptMeetingRequests では、*fNoUI* パラメーターを指定した **Respond** メソッドを使用します。このパラメーターは、会議出席依頼を受諾する応答を自動的に送信するように指示するために **true** に設定します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

@@ -1,5 +1,5 @@
 ---
-title: imapi進捗の制限
+title: IMAPIProgressSetLimits
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33421467"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-操作内の項目数の下限と上限を設定します。また、操作の進行状況に関する情報の計算方法を制御するフラグを設定します。
+操作のアイテム数の下限と上限、および操作の進行状況情報の計算方法を制御するフラグを設定します。
   
 ```cpp
 HRESULT SetLimits(
@@ -39,19 +39,19 @@ HRESULT SetLimits(
 
  _lpulMin_
   
-> 順番操作中のアイテムの下限を含む変数へのポインター。
+> [in]操作内のアイテムの下限を含む変数へのポインター。
     
- _lプル最大_
+ _lpulMax_
   
-> 順番操作中のアイテムの上限を含む変数へのポインター。
+> [in]操作内のアイテムの上限を含む変数へのポインター。
     
- _lアウトフラグ_
+ _lpulFlags_
   
-> 順番進行状況情報を計算する操作のレベルを制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]進行状況情報を計算する操作のレベルを制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_TOP_LEVEL 
   
-> imapiprogress の値を使用し[ます。:P rogvalumethod](imapiprogress-progress.md)の_ulcount_および_ulcount_パラメーターは、現在処理されているアイテムとアイテムの合計数を示す、それぞれの処理の進行をインクリメントします。 このフラグが設定されている場合は、グローバルな下限と上限の値を設定する必要があります。 
+> [IMAPIProgress::P rogress メソッド](imapiprogress-progress.md)の _ulCount_ パラメーターと _ulTotal_ パラメーターの値を使用します。これは、現在処理されているアイテムと合計アイテムをそれぞれ示し、操作の進行状況を増分します。 このフラグを設定すると、グローバル下限と上限の値を設定する必要があります。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -61,11 +61,11 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-サービスプロバイダーは、 **imapiprogress:: setlimits**メソッドを呼び出して、MAPI_TOP_LEVEL フラグを設定またはクリアし、ローカルおよびグローバルの最小値と最大値を設定します。 flag 設定の値は、progress オブジェクトが最小値と最大値をローカルまたはグローバルに認識するかどうかに影響します。 MAPI_TOP_LEVEL フラグが設定されている場合、これらの値はグローバルと見なされ、操作全体の進行状況を計算するために使用されます。 Progress オブジェクトは、グローバルの最小値を1に、グローバルの最大値を1000に初期化します。 
+サービス プロバイダーは **IMAPIProgress::SetLimits** メソッドを呼び出して、MAPI_TOP_LEVEL フラグを設定またはクリアし、ローカルおよびグローバルの最小値と最大値を設定します。 フラグ設定の値は、進行状況オブジェクトがローカルまたはグローバルの最小値と最大値を理解するかどうかに影響します。 このフラグMAPI_TOP_LEVEL設定すると、これらの値はグローバルと見なされ、操作全体の進行状況を計算するために使用されます。 Progress オブジェクトは、グローバル最小値を 1 に、グローバル最大値を 1000 に初期化します。 
   
-MAPI_TOP_LEVEL が設定されていない場合、最小値と最大値はローカルと見なされ、プロバイダーはこれらを内部的に使用して、下位レベルのサブオブジェクトの進行状況を表示します。 progress オブジェクトは、 [imapiprogress:: getmin](imapiprogress-getmin.md)および[imapiprogress:: getmin](imapiprogress-getmax.md)メソッドが呼び出されたときに、プロバイダーに返されることができるように、ローカルの最小値と最大値のみを保存します。 
+このMAPI_TOP_LEVEL設定されていない場合、最小値と最大値はローカルと見なされ、プロバイダーはそれらを内部的に使用して下位レベルのサブオブジェクトの進行状況を表示します。 Progress オブジェクトは [、IMAPIProgress::GetMin](imapiprogress-getmin.md) メソッドと [IMAPIProgress::GetMax](imapiprogress-getmax.md) メソッドが呼び出された場合にプロバイダーに返される場合にのみ、ローカルの最小値と最大値を保存します。 
   
-**setlimits**およびその他の[imapiprogress](imapiprogressiunknown.md)メソッドを実装する方法の詳細については、「[進行状況インジケーターの実装](implementing-a-progress-indicator.md)」を参照してください。
+**SetLimits** および他の [IMAPIProgress](imapiprogressiunknown.md)メソッドを実装する方法の詳細については、「Progress Indicator の実装 [」を参照してください](implementing-a-progress-indicator.md)。
   
 進行状況オブジェクトを呼び出す方法とタイミングの詳細については、「[進行状況インジケーターを表示する](how-to-display-a-progress-indicator.md)」を参照してください。
   
@@ -75,7 +75,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIProgress.cpp  <br/> |cmapiprogress 進行状況:: setlimits  <br/> |mfcmapi は、 **imapiprogress:: setlimits**メソッドを使用して、progress オブジェクトの最大値と最小値、およびフラグを設定します。  <br/> |
+|MAPIProgress.cpp  <br/> |CMAPIProgress::SetLimits  <br/> |MFCMAPI は **IMAPIProgress::SetLimits** メソッドを使用して、進行状況オブジェクトの最大および最小の制限とフラグを設定します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

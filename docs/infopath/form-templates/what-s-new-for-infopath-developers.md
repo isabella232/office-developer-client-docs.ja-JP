@@ -63,7 +63,7 @@ InfoPath を使用して、SharePoint リスト内のアイテムの作成、編
   
 ## <a name="host-forms-on-portal-pages-using-the-infopath-form-web-part"></a>InfoPath フォーム Web パーツを使用したポータル ページ上でのフォームのホスト
 
-SharePoint Server 2013 では、新しい **InfoPath フォーム Web パーツ**を使用して、これまでよりも簡単に Web ページ上でフォームをホストできます。 Microsoft Office SharePoint Server 2007 では、ユーザーが Visual Studio でコードを記述しなければ、InfoPath フォームを Web ページでホストすることはできません。 現在、コードを 1 行も作成せずに、**InfoPath フォーム Web パーツ**を使用して SharePoint リストやフォーム ライブラリに発行する任意の InfoPath ブラウザー フォームをホストできるようになっています。それには、**InfoPath フォーム Web パーツ**を Web パーツのページに追加して、そのパーツで発行済みフォームを指せばよいだけです。 また、InfoPath フォーム Web パーツをページ上の他の Web パーツに接続して、データを送受信することもできます。 **InfoPath フォーム Web パーツ**の使用方法の詳細については、SharePoint 2010 SDK の「[InfoPath フォーム Web パーツの使用](https://msdn.microsoft.com/library/bb87e126-1a07-45aa-af36-b294df3a2576%28Office.15%29.aspx)」を参照してください。 
+SharePoint Server 2013 では、新しい **InfoPath フォーム Web パーツ** を使用して、これまでよりも簡単に Web ページ上でフォームをホストできます。 Microsoft Office SharePoint Server 2007 では、ユーザーが Visual Studio でコードを記述しなければ、InfoPath フォームを Web ページでホストすることはできません。 現在、コードを 1 行も作成せずに、**InfoPath フォーム Web パーツ** を使用して SharePoint リストやフォーム ライブラリに発行する任意の InfoPath ブラウザー フォームをホストできるようになっています。それには、**InfoPath フォーム Web パーツ** を Web パーツのページに追加して、そのパーツで発行済みフォームを指せばよいだけです。 また、InfoPath フォーム Web パーツをページ上の他の Web パーツに接続して、データを送受信することもできます。 **InfoPath フォーム Web パーツ** の使用方法の詳細については、SharePoint 2010 SDK の「[InfoPath フォーム Web パーツの使用](https://msdn.microsoft.com/library/bb87e126-1a07-45aa-af36-b294df3a2576%28Office.15%29.aspx)」を参照してください。 
   
 ## <a name="richer-web-forms"></a>さらに豊富になった Web フォーム
 

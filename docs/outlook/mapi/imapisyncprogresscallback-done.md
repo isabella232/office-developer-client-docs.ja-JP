@@ -1,5 +1,5 @@
 ---
-title: imapisync進行 scallbackdone
+title: IMAPISyncProgressCallbackDone
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33422349"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
- 同期が完了したことを Microsoft Outlook に通知します。 
+ 同期が完了Outlook Microsoft に通知します。 
   
 ```cpp
 HRESULT Done(
@@ -36,9 +36,9 @@ HRESULT Done(
 
 ## <a name="parameters"></a>パラメーター
 
- **h月間 addoneevent**
+ **hThreadDoneEvent**
   
-> Microsoft Outlook がハンドルを閉じることができるようにするイベントを返します。 NULL でもかまいません。
+> Microsoft がハンドルを閉じOutlook返されるイベント。 NULL を指定できます。
     
  **hResult**
   

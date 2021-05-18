@@ -1,5 +1,5 @@
 ---
-title: Sign 関数 (Access カスタム web アプリ)
+title: Sign Function (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33404380"
 ---
-# <a name="sign-function-access-custom-web-app"></a>Sign 関数 (Access カスタム web アプリ)
+# <a name="sign-function-access-custom-web-app"></a>Sign Function (Access カスタム Web アプリ)
 
 指定された式の正 (+1)、ゼロ (0)、または負 (-1) の記号を返します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "33404380"
   
 ## <a name="syntax"></a>構文
 
- **Sign** (NumericExpression**) 
+ **Sign** (NumericExpression **) 
   
 **Sign** 関数の引数は次のとおりです。 
   

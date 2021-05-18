@@ -25,7 +25,7 @@ ms.locfileid: "33422279"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-内部関数を呼び出して、MAPI によって呼び出されるサービスプロバイダーメソッドのデバッグパラメーターを検証します。 
+MAPI によって呼び出されるサービス プロバイダー メソッドのデバッグ パラメーターを検証する内部関数を呼び出します。 
   
 |||
 |:-----|:-----|
@@ -44,11 +44,11 @@ HRESULT CheckParms(
 
  _eMethod_
   
-> 順番検証するメソッドを列挙で指定します。 
+> [in]列挙で検証するメソッドを指定します。 
     
  _First_
   
-> 順番スタック上の最初の引数へのポインター。
+> [in]スタックの最初の引数へのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -58,6 +58,6 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-[validateparms](validateparms.md)および[ulvalidateparms](ulvalidateparms.md)マクロとは異なり、 **checkparms**マクロは完全なパラメーター検証を実行しません。 MAPI プロバイダーとサービスプロバイダー間で渡されるパラメーターは正しいと見なされるため、 **checkparms**はデバッグ検証のみを実行します。 
+[ValidateParms](validateparms.md)マクロと [UlValidateParms](ulvalidateparms.md)マクロとは対照的に **、CheckParms** マクロは完全なパラメーター検証を実行しません。 MAPI とサービス プロバイダーの間で渡されるパラメーターは正しいと見なされます。 **そのため、CheckParms は** デバッグ検証のみを実行します。 
   
 

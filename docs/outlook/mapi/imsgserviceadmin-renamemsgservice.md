@@ -25,7 +25,7 @@ ms.locfileid: "33422104"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-現在は廃止されています。 メッセージサービスに新しい名前を割り当てます。 
+非推奨。 メッセージ サービスに新しい名前を割り当てる。 
   
 ```cpp
 HRESULT RenameMsgService(
@@ -37,27 +37,27 @@ HRESULT RenameMsgService(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpuid_
+ _lpUID_
   
-> 順番名前を変更するメッセージサービスの一意の識別子を含む[MAPIUID](mapiuid.md)構造体へのポインター。 
+> [in]名前を変更するメッセージ サービスの一意の識別子を含む [MAPIUID](mapiuid.md) 構造体へのポインター。 
     
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lpszdisplayname_
+ _lpszDisplayName_
   
-> 順番メッセージサービスの新しい名前へのポインター。
+> [in]メッセージ サービスの新しい名前へのポインター。
     
 ## <a name="return-value"></a>戻り値
 
 MAPI_E_NO_SUPPORT 
   
-> MAPI では、このメッセージサービスの名前変更はサポートされていません。 **RenameMsgService**は、常にこの値を返します。 
+> MAPI では、このメッセージ サービスの名前の変更はサポートされていません。 **RenameMsgService は常** にこの値を返します。 
     
 ## <a name="remarks"></a>注釈
 
-メッセージサービスに新しい名前を割り当てるには、クライアントでメッセージサービスの**PR_SERVICE_NAME** ([PidTagServiceName](pidtagservicename-canonical-property.md)) プロパティを使用する必要があります。 メッセージサービスのサービスプロバイダーの名前は、 **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) プロパティに格納されます。 
+新しい名前をメッセージ サービスに割り当てるには、クライアントがメッセージ サービスの PR_SERVICE_NAME **(** [PidTagServiceName](pidtagservicename-canonical-property.md)) プロパティを使用する必要があります。 メッセージ サービス内のサービス プロバイダーの名前は、メッセージ サービス **(** [PidTagDisplayName](pidtagdisplayname-canonical-property.md)) PR_DISPLAY_NAMEプロパティに格納されます。 
   
 ## <a name="see-also"></a>関連項目
 

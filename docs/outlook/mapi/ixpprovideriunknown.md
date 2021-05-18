@@ -1,5 +1,5 @@
 ---
-title: ixpprovider IUnknown
+title: IXPProvider IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,22 +25,22 @@ ms.locfileid: "33404695"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-トランスポートプロバイダオブジェクトを初期化し、不要になったオブジェクトをシャットダウンします。
+トランスポート プロバイダー オブジェクトを初期化し、不要になったときにオブジェクトをシャットダウンします。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapispi  <br/> |
-|公開者:  <br/> |トランスポート プロバイダーのオブジェクト  <br/> |
-|実装元:  <br/> |トランスポートプロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapispi.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |トランスポート プロバイダーのオブジェクト  <br/> |
+|実装元:  <br/> |トランスポート プロバイダー  <br/> |
 |呼び出し元:  <br/> |MAPI スプーラー  <br/> |
 |インターフェイス識別子:  <br/> |IID_IXPProvider  <br/> |
-|ポインターの種類:  <br/> |lpxprovider  <br/> |
+|ポインターの種類:  <br/> |LPXPROVIDER  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[シャットダウン](ixpprovider-shutdown.md) <br/> |トランスポートプロバイダーを正しい順序で閉じます。  <br/> |
-|[transportlogon](ixpprovider-transportlogon.md) <br/> |クライアントアプリケーションがトランスポートプロバイダーにログオンするセッションを確立します。  <br/> |
+|[シャットダウン](ixpprovider-shutdown.md) <br/> |トランスポート プロバイダーを順番に閉じます。  <br/> |
+|[TransportLogon](ixpprovider-transportlogon.md) <br/> |クライアント アプリケーションがトランスポート プロバイダーにログオンするセッションを確立します。  <br/> |
    
 

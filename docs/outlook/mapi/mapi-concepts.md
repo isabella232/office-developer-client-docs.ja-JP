@@ -17,22 +17,22 @@ ms.locfileid: "33422181"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このセクションでは、MAPI を理解し、プログラミングするためのガイドを提供します。
+このセクションでは、MAPI を使用した理解とプログラミングのガイドを提供します。
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [mapi の機能とアーキテクチャ](mapi-features-and-architecture.md): mapi の一般的な設計と概念に関する情報が含まれています。
+- [MAPI の機能とアーキテクチャ](mapi-features-and-architecture.md): MAPI の一般的な設計と概念に関する情報が含まれる。
     
-- [mapi アプリケーション開発](mapi-application-development.md): mapi を使用してクライアントアプリケーションおよびサービスプロバイダーを開発する方法について説明します。
+- [MAPI アプリケーション開発](mapi-application-development.md): MAPI を使用したクライアント アプリケーションとサービス プロバイダーの開発に関する情報を提供します。
     
-- [mapi プログラミング要素](mapi-programming-elements.md): [mapi リファレンス](mapi-reference.md)のプログラミング要素の概念に関する概要が含まれています。
+- [MAPI プログラミング要素](mapi-programming-elements.md): MAPI リファレンスのプログラミング要素の概念的な概要 [が含まれています](mapi-reference.md)。
     
-- [mapi サービスプロバイダ](mapi-service-providers.md): mapi サービスプロバイダーに関する基本的な情報を提供します。
+- [MAPI サービス プロバイダー](mapi-service-providers.md): MAPI サービス プロバイダーに関する基本情報を提供します。
     
 ## <a name="related-sections"></a>関連情報
 
-- [Outlook MAPI リファレンスの概要](getting-started-with-the-outlook-mapi-reference.md)
-- [MAPI のサンプル](mapi-samples.md)
+- [MAPI リファレンスの概要Outlookする](getting-started-with-the-outlook-mapi-reference.md)
+- [MAPI サンプル](mapi-samples.md)
 - [MAPI リファレンス](mapi-reference.md)
   
 

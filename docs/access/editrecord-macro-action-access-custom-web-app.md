@@ -1,5 +1,5 @@
 ---
-title: "\"Macro/レコードの設定\" マクロアクション (Access カスタム web アプリ)"
+title: EditRecord マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421747"
 ---
-# <a name="editrecord-macro-action-access-custom-web-app"></a>"Macro/レコードの設定" マクロアクション (Access カスタム web アプリ)
+# <a name="editrecord-macro-action-access-custom-web-app"></a>EditRecord マクロ アクション (Access カスタム Web アプリ)
 
 現在のレコードを編集モードに配置します。
   

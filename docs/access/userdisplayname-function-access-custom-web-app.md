@@ -1,5 +1,5 @@
 ---
-title: userdisplayname 関数 (Access カスタム web アプリ)
+title: UserDisplayName 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421579"
 ---
-# <a name="userdisplayname-function-access-custom-web-app"></a>userdisplayname 関数 (Access カスタム web アプリ)
+# <a name="userdisplayname-function-access-custom-web-app"></a>UserDisplayName 関数 (Access カスタム Web アプリ)
 
 現在のユーザーの表示名を返します。
   
@@ -23,10 +23,10 @@ ms.locfileid: "33421579"
   
 ## <a name="syntax"></a>構文
 
- **userdisplayname**() 
+ **UserDisplayName** () 
   
 ## <a name="remarks"></a>注釈
 
-**userdisplayname**関数は、ユーザーインターフェイス (UI) マクロでのみ使用できます。 
+**UserDisplayName** 関数は、ユーザー インターフェイス (UI) マクロでのみ使用できます。 
   
 

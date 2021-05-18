@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3537de44-8d6f-4bd9-bf8c-fa851fc007b9
-description: 図形のテキストが3-d 図形の回転を無視するかどうかを示します。 2-D 回転には適用されません。
+description: 図形のテキストが 3-D での図形の回転を無視するかどうかを示します。 2-D 回転には適用されません。
 ms.openlocfilehash: fc8cf2fac431645876c7f81ed9864cb6c2036169
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,14 +16,14 @@ ms.locfileid: "33422041"
 ---
 # <a name="keeptextflat-cell-3-d-rotation-properties-section"></a>[KeepTextFlat] セル ([3-D 回転のプロパティ] セクション)
 
-図形のテキストが3-d 図形の回転を無視するかどうかを示します。 2-D 回転には適用されません。 
+図形のテキストが 3-D での図形の回転を無視するかどうかを示します。 2-D 回転には適用されません。 
   
 ****
 
 |**値**|**説明**|
 |:-----|:-----|
-|TRUE  <br/> |図形のテキストは、図形の座標を使用して回転しません。  <br/> |
-|FALSE  <br/> |図形のテキストは、図形の座標を使用して回転するように変換されます。  <br/> |
+|TRUE  <br/> |図形テキストは、図形のジオメトリと一緒に回転されません。  <br/> |
+|FALSE  <br/> |図形のテキストは、図形のジオメトリと一緒に回転するために変換されます。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -31,7 +31,7 @@ ms.locfileid: "33422041"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[keeptextflat]  <br/> |
+|セル名:  <br/> |KeepTextFlat  <br/> |
    
 プログラムから、インデックスによって [**KeepTextFlat**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

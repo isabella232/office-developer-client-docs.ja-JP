@@ -1,5 +1,5 @@
 ---
-title: CharIndex 関数 (Access カスタム web アプリ)
+title: CharIndex 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33423133"
 ---
-# <a name="charindex-function-access-custom-web-app"></a>CharIndex 関数 (Access カスタム web アプリ)
+# <a name="charindex-function-access-custom-web-app"></a>CharIndex 関数 (Access カスタム Web アプリ)
 
 あるテキスト式を他のテキスト式内で検索して、それが見つかった場合はその開始位置を戻します。
   
@@ -22,19 +22,19 @@ ms.locfileid: "33423133"
   
 ## <a name="syntax"></a>構文
 
-**CharIndex**(*textexpression*、 *within text*、[*Start*]) 
+**CharIndex** (*TextExpression*, *WithinText*, [*Start*]) 
   
 |**引数名**|**必須**|**説明**|
 |:-----|:-----|:-----|
 | *TextExpression*  <br/> |はい  <br/> |検索するテキストを含むテキスト式。  <br/> |
-| *戻し*  <br/> |はい  <br/> |検索するテキスト式。  <br/> |
-| *Start*  <br/> |いいえ  <br/> |検索を開始する、*テキスト*内の位置を指定する整数。 *Start*が指定されていない場合、負の数である場合、または0の場合は、検索はその*テキスト*の先頭から開始されます。  <br/> |
+| *WithinText*  <br/> |はい  <br/> |検索するテキスト式。  <br/> |
+| *Start*  <br/> |いいえ  <br/> |検索を開始する  *WithinText*  の場所を指定する整数。 Start  *が*  指定されていない場合、負の数値、または 0 の場合、検索は WithinText の先頭から  *始まります*  。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
 If either  *TextExpression*  or  *WithinText*  is NULL,  *CharIndex*  returns NULL. 
   
-*textexpression*が内部に存在し** ない場合、 *CharIndex*は0を返します。 
+*WithinText 内に TextExpression* *が見つからない* 場合 *、CharIndex* は 0 を返します。 
   
 戻される開始位置は、0 ベースではなく、1 ベースです。
   

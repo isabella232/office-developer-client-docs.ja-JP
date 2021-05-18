@@ -22,17 +22,17 @@ ms.locfileid: "33421964"
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|.0  <br/> |グループの設定を使用します。  <br/> |**visXFormResizeDontCare** <br/> |
-|1   <br/> |位置のみを変更します。  <br/> |**visXFormResizeSpread** <br/> |
-|2   <br/> |グループに合わせてサイズを変更します。  <br/> |**visXFormResizeScale** <br/> |
+|0  <br/> |グループの設定を使用します。  <br/> |**visXFormResizeDontCare** <br/> |
+|1  <br/> |位置のみを変更します。  <br/> |**visXFormResizeSpread** <br/> |
+|2  <br/> |グループに合わせてサイズを変更します。  <br/> |**visXFormResizeScale** <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この値は、[**基本動作**] ダイアログボックス ([[開発](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] グループで、[**基本動作**] をクリック) の [**動作**] タブで設定することもできます。 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ResizeMode] セルへの参照を取得するには、次の値を使用します。 
+この値は、[動作] ダイアログボックスの [動作] タブで [](run-in-developer-mode-display-the-developer-tab.md)設定することもできます ([開発] タブの [図形のデザイン] グループで、[動作] を **クリックします**)。  別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ResizeMode] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[resizemode]  <br/> |
+|セル名:  <br/> |ResizeMode  <br/> |
    
 プログラムから、インデックスによって [ResizeMode] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

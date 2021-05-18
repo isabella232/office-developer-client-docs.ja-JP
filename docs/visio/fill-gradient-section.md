@@ -20,12 +20,12 @@ ms.locfileid: "33405465"
   
 ## <a name="remarks"></a>注釈
 
-セクションの [[グラデーションの分岐点] 行 ([塗りつぶしのグラデーション] セクション)](gradient-stop-row-fill-gradient-section.md)行は、塗りつぶしのグラデーションの分岐点を表します。 このセクションは空にできます。 
+セクション [の各グラデーションの停止行 (塗](gradient-stop-row-fill-gradient-section.md) りつぶしグラデーション セクション) 行は、塗りつぶしのグラデーションの停止を表します。 このセクションは空にできます。 
   
-グラデーションの設定では、セクションに格納された最初の 10 行のみが使用されます。 10 行を超える [**Gradient Stop**] 行はすべて無視されます。 
+グラデーションの設定では、セクションに格納された最初の 10 行のみが使用されます。10 行を超える [**Gradient Stop**] 行はすべて無視されます。 
   
 [**図形の書式設定**] ウィンドウでは、塗りつぶしのグラデーションのプロパティを設定できます。このウィンドウは、[**ホーム**] タブの、[**図形のスタイル**] グループで、[**塗りつぶし**] をクリックして、[**塗りつぶしのオプション**] をクリックすると表示されます。 
   
-図形のグラデーションの塗りつぶしを有効または無効にするには、[ [[fillgradientenabled]] セル ([グラデーションのプロパティ] セクション)](fillgradientenabled-cell-gradient-properties-section.md)セルの値を変更します。 
+[[FillGradientEnabled] セル (Gradient Properties Section)](fillgradientenabled-cell-gradient-properties-section.md)セルの値を変更すると、図形のグラデーション塗りつぶしを有効または無効にできます。 
   
 

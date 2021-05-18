@@ -20,7 +20,7 @@ ms.locfileid: "33422601"
   
 |**データ型**|**説明**|
 |:-----|:-----|
-|[ACCT_BIN](acct_bin.md) <br/> |このデータ型の変数は、バイナリ値を保持します。  <br/> |
-|[ACCT_VARIANT](acct_variant.md) <br/> |このデータ型の変数は、バリアント型 (variant) のデータ型のプロパティの値を保持します。  <br/> |
+|[ACCT_BIN](acct_bin.md) <br/> |このデータ型の変数はバイナリ値を保持します。  <br/> |
+|[ACCT_VARIANT](acct_variant.md) <br/> |このデータ型の変数は、バリアント 型であるプロパティの値を保持します。  <br/> |
    
 

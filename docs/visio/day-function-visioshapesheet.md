@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251415
 localization_priority: Normal
 ms.assetid: 3b0842ae-6893-2d7b-6cb2-8905198fae30
-description: datetime または expression の日を表す 1 ~ 31 の整数を返します。 DAY 関数ではグレゴリオ暦が使用されます。
+description: 日付または式の日を表す 1 ~ 31 の整数を返します。 DAY 関数はグレゴリオ暦を使用します。
 ms.openlocfilehash: 49c29d5dc25bf11599f89a20cb2bc2367bd74187
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "32360298"
 ---
 # <a name="day-function-visioshapesheet"></a>DAY 関数 (VisioShapeSheet)
 
-_datetime_または_expression_の日を表す 1 ~ 31 の整数を返します。 DAY 関数ではグレゴリオ暦が使用されます。
+日付または式の日を表す 1 ~ 31  _の整数を_ 返  _します_。 DAY 関数はグレゴリオ暦を使用します。
   
 ## <a name="syntax"></a>構文
 
-DAY ("* * *datetime* * *" |* **式** * [, * * *lcid* * *]) 
+DAY(" ** *datetime* ** "|** *式* ** [, ** *lcid* ** ]) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -36,13 +36,13 @@ DAY ("* * *datetime* * *" |* **式** * [, * * *lcid* * *])
 
 整数
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-_datetime_または_expression_の時刻コンポーネントは破棄されます。 
+datetime または  _式内の_ 任意の  _時刻コンポーネント_ は破棄されます。 
   
-数値は四捨五入されません。 _datetime_が指定されていない場合、または有効な結果に変換できない場合、関数はエラーを返します。 
+数値は四捨五入されません。 datetime  _が見_ つからないか、有効な結果に変換できない場合、関数はエラーを返します。 
   
-DAY 関数では、 _expression_に単一の数値を使用することもできます。この場合、整数部分には1899年12月30日から起算した日数を指定します。 
+DAY 関数は、結果の整数部分が1899 年 12 月 30 日からの日数を表す式の単一の数値も受け入れられます。 
   
 ## <a name="example-1"></a>例 1
 
@@ -58,7 +58,7 @@ DAY(DATEVALUE("May 30, 1997")+7 ed.)
   
 ## <a name="example-3"></a>例 3
 
-日 (35580.6337)
+DAY(35580.6337)
   
 30 を返します。
   

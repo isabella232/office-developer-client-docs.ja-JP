@@ -1,5 +1,5 @@
 ---
-title: IMAPIOfflineMgr imapioffline
+title: IMAPIOfflineMgr IMAPIOffline
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3e430308-190c-c9bb-fffc-c26ffecb73a5
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 235c2afb20e6f36df72eac4070c1df5fd10fcce8
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,36 +25,36 @@ ms.locfileid: "32270092"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ユーザーアカウントの接続状態の変更に関する通知コールバックの登録をサポートします。
+ユーザー アカウントの接続状態の変更に関する通知コールバックの登録をサポートします。
   
 |||
 |:-----|:-----|
-|エクスポート対象:  <br/> |msmapi32  <br/> |
+|次の方法でエクスポートされます。  <br/> |msmapi32.dll  <br/> |
 |実装元:  <br/> |Outlook  <br/> |
 |呼び出し元:  <br/> |クライアント  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMAPIOfflineMgr  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[助言](imapiofflinemgr-advise.md) <br/> |接続の変更に関する通知コールバックを登録します。  <br/> |
-|[アドバイズ](imapiofflinemgr-unadvise.md) <br/> |通知コールバックの指定された登録を削除します。  <br/> |
-| *Placeholder メンバー*  <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-| *Placeholder メンバー*  <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-| *Placeholder メンバー*  <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-| *Placeholder メンバー*  <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-| *Placeholder メンバー*  <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-| *Placeholder メンバー*  <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
-| *Placeholder メンバー*  <br/> | *このメンバーはプレースホルダーで、サポートされていません。*  <br/> |
+|[アドバイス](imapiofflinemgr-advise.md) <br/> |接続の変更に関する通知コールバックを登録します。  <br/> |
+|[Unadvise](imapiofflinemgr-unadvise.md) <br/> |通知コールバックの特定の登録を削除します。  <br/> |
+| *プレースホルダー メンバー*  <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *このメンバーはプレースホルダーであり、サポートされていません。*  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**[hroな offlineobj](hropenofflineobj.md)** を使用してユーザーアカウントプロファイルのオフラインオブジェクトを開くと、クライアントは**IMAPIOfflineMgr**をサポートするオフラインオブジェクトを取得します。 
+**[HrOpenOfflineObj](hropenofflineobj.md)** を使用してユーザー アカウント プロファイルのオフライン オブジェクトを開いた後、クライアントは **IMAPIOfflineMgr** をサポートするオフライン オブジェクトを取得します。 
   
-このインターフェイスは**[iunknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx)** から継承されるため、クライアントはこのインターフェイスを ( **[iunknown:: QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)** を使用して) 照会して、 **[imapioffline](imapiofflineiunknown.md)** をサポートするオブジェクトを取得できます。 クライアントは、oab ( **[imapioffline:: getcapabilities](imapioffline-getcapabilities.md)** ) を呼び出すことによって、オフラインオブジェクトのコールバック機能について調べることができます。また、( **IMAPIOfflineMgr:: Advise**を使用して) コールバックの設定を選択することもできます。 
+このインターフェイスは **[IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx)** から継承されますので、クライアントは **[(IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)** を使用して) このインターフェイスを照会して **[、IMAPIOffline](imapiofflineiunknown.md)** をサポートするオブジェクトを取得できます。 クライアントは、オフライン オブジェクトのコールバック機能 **[(IMAPIOffline::GetCapabilities](imapioffline-getcapabilities.md)** を呼び出すことによって) を確認し **、(IMAPIOfflineMgr::Advise** を使用して) コールバックを設定します。 
   
-このインターフェイスのメンバーのほとんどは、Outlook の内部使用のために予約されたプレースホルダーであり、変更される可能性があります。 このインターフェイスの発信者は、ドキュメント化されている場合にのみ、プレースホルダー以外のメンバーを使用する必要があります。
+このインターフェイスのメンバーの大部分は、内部で使用するために予約されたプレースホルダーであり、Outlook変更される場合があります。 このインターフェイスの呼び出し元は、文書化されているプレースホルダー以外のメンバーのみを使用する必要があります。
   
 ## <a name="see-also"></a>関連項目
 

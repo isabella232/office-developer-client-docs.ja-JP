@@ -1,5 +1,5 @@
 ---
-title: mapisvc.inf サービスプロバイダーのセクション
+title: MapiSvc.inf サービス プロバイダーのセクション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,37 +15,37 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33405563"
 ---
-# <a name="mapisvcinf-service-provider-sections"></a>mapisvc.inf サービスプロバイダーのセクション
+# <a name="mapisvcinf-service-provider-sections"></a>MapiSvc.inf サービス プロバイダーのセクション
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-mapisvc.inf には、前の「メッセージサービス」セクションの**プロバイダ**エントリにリストされている各エントリのサービスプロバイダセクションが含まれています。 **サービス**プロバイダーのセクションは、両方の種類のセクションに次の形式のエントリが含まれているという点で、メッセージサービスセクションに似ています。 
+Mapisvc.inf には、前のメッセージ サービス セクションの **Providers** エントリに記載されている各エントリに対して 1 つのサービス プロバイダー セクションが含まれています。 **サービス** プロバイダー のセクションは、両方の種類のセクションにこの形式のエントリが含まれるという点で、メッセージ サービス セクションに似ています。 
   
-**プロパティタグ**= プロパティ値 
+**プロパティ タグ** = プロパティ値 
   
-ただし、サービスプロバイダーのセクションとメッセージサービスのセクションは、このようなプロパティエントリがサービスプロバイダーセクションに含まれるエントリの唯一の種類であるという点で異なります。 サービスプロバイダーには、追加またはリンクされたセクションはありません。すべてのサービスプロバイダー情報は、1つのセクション内に含める必要があります。 
+ただし、サービス プロバイダー セクションとメッセージ サービス セクションは、このようなプロパティ エントリがサービス プロバイダー セクションに含まれる唯一の種類のエントリである点で異なります。 サービス プロバイダーの追加またはリンクされたセクションはありません。すべてのサービス プロバイダー情報は、1 つのセクションに含まれている必要があります。 
   
-[メッセージサービス] セクションで設定されているプロパティの一部は、[サービスプロバイダ] セクションでも設定されています。これらのプロパティは両方にとって有効です。 **PR_DISPLAY_NAME**プロパティの例を次に示します。 サービスプロバイダーとメッセージサービスの両方には、構成ユーザーインターフェイスでの表示に使用される名前があります。 この名前は、サービスプロバイダーによって異なりますが、同じでもかまいません。 その他のプロパティは、サービスプロバイダーに固有のものです。 
+これらのプロパティは両方とも意味を持つため、メッセージ サービス セクションで設定されているプロパティの一部は、サービス プロバイダー セクションでも設定されます。 プロパティ **PR_DISPLAY_NAME** 例を示します。 サービス プロバイダーとメッセージ サービスの両方に、構成ユーザー インターフェイスでの表示に使用される名前があります。 サービス プロバイダーによっては、その名前が同じか異なる場合があります。 その他のプロパティは、サービス プロバイダーに固有です。 
   
-サービスプロバイダーの一般的なセクションには、次のエントリが含まれています。これらはすべて必要です。
+一般的なサービス プロバイダー のセクションには、次のエントリが含まれます。そのすべてが必須です。
   
-**PR_DISPLAY_NAME** =  _文字列_
+**PR_DISPLAY_NAME**  =  _string_
   
-**PR_PROVIDER_DISPLAY** =  _文字列_
+**PR_PROVIDER_DISPLAY**  =  _string_
   
-**** =  _DLL ファイルの PR_PROVIDER_DLL_NAME 名_
+**PR_PROVIDER_DLL_NAME**  =  _DLL ファイルの名前_
   
-**PR_RESOURCE_TYPE** =  _long_
+**PR_RESOURCE_TYPE**  =  _long_
   
-**PR_RESOURCE_FLAGS** =  _ビットマスク_
+**PR_RESOURCE_FLAGS**  =  _ビットマスク_
   
-**PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md)) エントリは**PR_SERVICE_DLL_NAME**に似ています。これは、サービスプロバイダーを含む DLL のファイル名を示します。 メッセージサービスコードは、サービスプロバイダーの1つと同じ dll ファイルに格納するか、別の dll として存在することができます。 ターゲットプラットフォームに関係なく、エントリにサフィックスが含まれていないことに注意してください。MAPI は必要に応じてサフィックスを追加します。 
+この **PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md)) エントリは、次の **PR_SERVICE_DLL_NAME。** サービス プロバイダーを含む DLL のファイル名を示します。 メッセージ サービス コードは、サービス プロバイダーの 1 つを同じ DLL ファイルに格納するか、別の DLL として存在することができます。 ターゲット プラットフォームに関係なく、エントリに接尾辞が含まれていない点に注意してください。MAPI は、必要に応じて接尾辞の追加を行います。 
   
-**PR_RESOURCE_TYPE**([PidTagResourceType](pidtagresourcetype-canonical-property.md)) entry は、サービスプロバイダーの種類を表します。サービスプロバイダーは、それを適切な定義済みの定数に設定します。 有効な値は、MAPI_STORE_PROVIDER、MAPI_TRANSPORT_PROVIDER、および MAPI_AB_PROVIDER です。
+**PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md)) エントリは、サービス プロバイダーの種類を表します。サービス プロバイダーは、それを適切な定義済みの定数に設定します。 有効な値には、MAPI_STORE_PROVIDER、MAPI_TRANSPORT_PROVIDER、およびMAPI_AB_PROVIDER。
   
-メッセージサービスとサービスプロバイダーの両方に適用される別のプロパティエントリは、 **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) エントリがオプションを示します。 このプロパティエントリの設定は、サービスプロバイダーによって異なる場合があります。 たとえば、一部のメッセージストアプロバイダーでは、 **PR_RESOURCE_FLAGS**が既定のメッセージストアとして機能しない場合、STATUS_NO_DEFAULT_STORE に設定されている場合があります。 
+メッセージ サービスとサービス プロバイダーの両方に適用される別のプロパティ エントリで、PR_RESOURCE_FLAGS **(** [PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) エントリはオプションを示します。 このプロパティ エントリの設定は、サービス プロバイダーによって異なる場合があります。 たとえば、一部のメッセージ ストア プロバイダーは、既定のメッセージ PR_RESOURCE_FLAGSとしてSTATUS_NO_DEFAULT_STORE機能しない場合に、メッセージ ストアプロバイダーを既定のメッセージ ストアに設定する場合があります。 
   
-次に、サービスプロバイダーセクションの3つの例を示します。 **[AB provider]** セクションは、既定のアドレス帳サービスのサービスプロバイダーセクションです。 **[msgservice Prov1]** および **[msgservice Prov2]** セクションは、自分のサービスに属しています。1つ目はアドレス帳プロバイダーセクションで、2つ目はメッセージストアプロバイダーセクションです。 
+サービス プロバイダーセクションの 3 つの例を次に示します。 [AB **プロバイダー] セクションは** 、既定のアドレス帳サービスのサービス プロバイダー セクションです。 **[MsgService Prov1] セクションと** **[MsgService Prov2]** セクションは、My Own Service に属します。1 つ目はアドレス帳プロバイダー セクションで、2 つ目はメッセージ ストア プロバイダー セクションです。 
   
 ```cpp
 [AB Provider]

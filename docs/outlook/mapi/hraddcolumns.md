@@ -21,13 +21,13 @@ ms.locfileid: "33422475"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-既存の表の先頭に列を追加または移動します。
+既存のテーブルの先頭に列を追加または移動します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー。  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー。  <br/> |
    
 ```cpp
 HRESULT HrAddColumns(
@@ -42,19 +42,19 @@ HRESULT HrAddColumns(
 
  _lptbl_
   
-> 順番影響を受ける MAPI テーブルへのポインター。
+> [in]影響を受ける MAPI テーブルへのポインター。
     
  _lpproptagColumnsNew_
   
-> 順番表の先頭に追加または移動するプロパティのプロパティタグの配列を含む**SPropTagArray**構造体へのポインター。 
+> [in]テーブルの先頭に追加または移動するプロパティのプロパティ タグの配列を含む **SPropTagArray** 構造体へのポインター。 
     
  _lpAllocateBuffer_
   
-> 順番**MAPIAllocateBuffer**関数へのポインター。 メモリの割り当てに使用されます。 
+> [in] **MAPIAllocateBuffer 関数への** ポインター。 メモリの割り当てに使用されます。 
     
- _lpfreebuffer_
+ _lpFreeBuffer_
   
-> 順番**MAPIFreeBuffer**関数へのポインター。 メモリを解放するために使用します。 
+> [in] **MAPIFreeBuffer 関数への** ポインター。 メモリを解放するために使用します。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -64,7 +64,7 @@ HRESULT HrAddColumns(
     
 ## <a name="remarks"></a>注釈
 
-**hraddcolumns**関数は、 _lpfnFilterColumns_が NULL に設定されている**hraddcolumnsex**を使用するのと同じです。 
+**HrAddColumns 関数** は _、lpfnFilterColumns_ が NULL に設定された **HrAddColumnsEx** を使用するのと同じです。 
   
 ## <a name="see-also"></a>関連項目
 

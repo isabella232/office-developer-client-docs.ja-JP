@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 12cfe096-6882-c0be-b248-87567cb71e83
-description: 必要な同期タスクを決定するために Outlook で使用するトランスポート設定を表し、アカウントがサポートしていないユーザーインターフェイス (UI) 要素を無効にします。
+description: 必要な同期タスクOutlook、アカウントがサポートしていないユーザー インターフェイス (UI) 要素を無効にするために使用するトランスポート設定を表します。
 ms.openlocfilehash: 707306c3bfbeebdd18f82bacfc121274be08aa50
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -14,26 +14,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33404527"
 ---
-# <a name="propmapitransportflags"></a>PROP_MAPI_TRANSPORT_FLAGS
+# <a name="prop_mapi_transport_flags"></a>PROP_MAPI_TRANSPORT_FLAGS
 
-必要な同期タスクを決定するために Outlook で使用するトランスポート設定を表し、アカウントがサポートしていないユーザーインターフェイス (UI) 要素を無効にします。
+必要な同期タスクOutlook、アカウントがサポートしていないユーザー インターフェイス (UI) 要素を無効にするために使用するトランスポート設定を表します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IOlkAccount](iolkaccount.md)を参照してください。
+[「IOlkAccount」を参照してください](iolkaccount.md)。
   
 |||
 |:-----|:-----|
 |識別子:  <br/> |0x2010  <br/> |
 |プロパティの種類:  <br/> |PT_BINARY  <br/> |
-|プロパティタグ:  <br/> |0x20100102  <br/> |
-|接続  <br/> |読み取り/書き込み  <br/> |
+|プロパティ タグ:  <br/> |0x20100102  <br/> |
+|アクセス:  <br/> |読み取り/書き込み  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-[IOlkAccount:: getprop](iolkaccount-getprop.md)または[IOlkAccount:: setprop](iolkaccount-setprop.md)を使用して、このプロパティを取得または設定します。
+[IOlkAccount::GetProp](iolkaccount-getprop.md)または[IOlkAccount::SetProp](iolkaccount-setprop.md)をそれぞれ使用して、このプロパティを取得または設定します。
   
-アカウントがメッセージを送信するだけでメッセージを受信できない場合は、 **MAPIACCT_SEND_ONLY**を返します。 この場合、Outlook では、この種類のアカウントに適用されない ui (たとえば、**送信/受信**の ui) を無効にします。
+アカウントが **MAPIACCT_SEND_ONLY** のみ送信できますが、メッセージを受信できない場合は、この値を返します。 この場合、Outlook種類のアカウント (たとえば、送信/受信の UI) に適用されない UI が **無効にされます**。
   
 ## <a name="see-also"></a>関連項目
 

@@ -25,7 +25,7 @@ ms.locfileid: "33421971"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-保留中の受信または送信メッセージをすべてトランスポートプロバイダーが直ちに配信するよう要求します。
+トランスポート プロバイダーが保留中のすべての受信メッセージまたは送信メッセージを直ちに配信する要求。
   
 ```cpp
 HRESULT FlushQueues(
@@ -38,49 +38,49 @@ HRESULT FlushQueues(
 
 ## <a name="parameters"></a>パラメーター
 
- _uluiparam_
+ _ulUIParam_
   
-> 順番このメソッドが表示するダイアログボックスまたはウィンドウの親ウィンドウへのハンドル。
+> [in]このメソッドが表示するダイアログ ボックスまたはウィンドウの親ウィンドウへのハンドル。
     
- _cbtargettransport_
+ _cbTargetTransport_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lptargettransport_
+ _lpTargetTransport_
   
-> 順番予約語NULL である必要があります。
+> [in]予約済み。NULL である必要があります。
     
  _ulFlags_
   
-> 順番メッセージキューのフラッシュがどのように行われるかを制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]メッセージ キューのフラッシュの実行方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 FLUSH_DOWNLOAD 
   
-> 受信メッセージキューまたはキューをフラッシュする必要があります。
+> 受信メッセージ キューまたはキューをフラッシュする必要があります。
     
 FLUSH_FORCE 
   
-> 可能であれば、トランスポートプロバイダーはこの要求を処理する必要があります (これを実行すると時間がかかる場合もあります)。 
+> トランスポート プロバイダーは、可能な場合は、時間がかかる場合でも、この要求を処理する必要があります。 
     
 FLUSH_NO_UI 
   
-> トランスポートプロバイダーは、ユーザーインターフェイスを表示しません。
+> トランスポート プロバイダーは、ユーザー インターフェイスを表示しない必要があります。
     
 FLUSH_UPLOAD 
   
-> 送信メッセージキューまたはキューをフラッシュする必要があります。
+> 送信メッセージ キューまたはキューをフラッシュする必要があります。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 呼び出しが成功し、予想される値または値が返されました。
+> 呼び出しは成功し、予期される値または値を返しました。
     
 ## <a name="remarks"></a>注釈
 
-mapi スプーラーは**IXPLogon:: flushqueues**メソッドを呼び出して、mapi スプーラーがメッセージの処理を開始しようとしていることをトランスポートプロバイダーに通知します。 トランスポートプロバイダーは、 [imapisupport:: modifystatusrow](imapisupport-modifystatusrow.md)メソッドを呼び出して、ステータス行の**PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md)) プロパティでその状態に適したビットを設定する必要があります。 状態行を更新した後、トランスポートプロバイダーは**flushqueues**呼び出しに対して S_OK を返す必要があります。 その後、mapi スプーラーは、mapi スプーラーと同期された操作で、メッセージの送信を開始します。 
+MAPI スプーラーは **、IXPLogon::FlushQueues** メソッドを呼び出して、MAPI スプーラーがメッセージの処理を開始する予定であるトランスポート プロバイダーに通知します。 トランスポート プロバイダーは [IMAPISupport::ModifyStatusRow](imapisupport-modifystatusrow.md) メソッドを呼び出して、状態行の **PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md)) プロパティの状態に適切なビットを設定する必要があります。 状態行を更新した後、トランスポート プロバイダーは **FlushQueues** 呼び出しS_OKを返す必要があります。 その後、MAPI スプーラーはメッセージの送信を開始し、操作は MAPI スプーラーと同期します。 
   
-[imapistatus:: flushqueues](imapistatus-flushqueues.md)メソッドの実装をサポートするために、MAPI スプーラーはプロファイルセッションで実行されているアクティブなトランスポートプロバイダーのすべてのログオンオブジェクトに対して**IXPLogon:: flushqueues**を呼び出します。 **imapistatus:: flushqueues**へのクライアントアプリケーション呼び出しの結果として、トランスポートプロバイダーの**flushqueues**メソッドが呼び出されると、メッセージ処理はクライアントに非同期で行われます。
+[IMAPIStatus::FlushQueues](imapistatus-flushqueues.md)メソッドの実装をサポートするために、MAPI スプーラーは、プロファイル セッションで実行されているアクティブ なトランスポート プロバイダーのすべてのログオン オブジェクトに対して **IXPLogon::FlushQueues** を呼び出します。 **IMAPIStatus::FlushQueues** へのクライアント アプリケーション呼び出しの結果としてトランスポート プロバイダーの **FlushQueues** メソッドが呼び出された場合、メッセージ処理はクライアントに対して非同期的に行われます。
   
 ## <a name="see-also"></a>関連項目
 

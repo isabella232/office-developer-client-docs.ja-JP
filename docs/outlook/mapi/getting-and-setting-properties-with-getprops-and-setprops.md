@@ -19,6 +19,6 @@ ms.locfileid: "32299399"
  
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-可能な限り、 [imapiprop:: GetProps](imapiprop-getprops.md)および[imapiprop:: setprops](imapiprop-setprops.md)メソッドを使用して、プロパティを取得または変更してみてください。 作業しているプロパティが非常に大きい場合以外は、これらのメソッドが適切である必要があります。 もう1つの方法として、 [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)インターフェイスを使用してストリームの読み取りまたは書き込みを行うことができます。 ストリームは非常に大きなプロパティを正常に処理できますが、COM ライブラリを必要とするため、リソースがより高速に処理されます。 **IStream**インターフェイスは、 **imapiprop:: GetProps**または**imapiprop:: setprops**の呼び出しが失敗した後にのみ使用してください。 
+可能な限り [、IMAPIProp::GetProps](imapiprop-getprops.md) メソッドと [IMAPIProp::SetProps](imapiprop-setprops.md) メソッドを使用してプロパティを取得または変更してください。 操作するプロパティが非常に大きい場合を指定しない限り、これらのメソッドは適切です。 もう 1 つの方法は [、IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) インターフェイスを使用してストリームから読み取りまたはストリームに書き込む方法です。 ストリームは非常に大きなプロパティを正常に処理できますが、COM ライブラリが必要なので、リソースの消耗が大きくなります。 **IStream インターフェイスは****、IMAPIProp::GetProps** または **IMAPIProp::SetProps** の呼び出しが失敗した後にのみ使用します。 
   
 

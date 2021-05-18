@@ -25,11 +25,11 @@ ms.locfileid: "33421915"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ボタンと指定された長さのラベルを記述するための[dtblbutton](dtblbutton.md)構造を含む名前付き構造を作成します。 
+ボタンと指定した長さのラベルを記述するための [DTBLBUTTON](dtblbutton.md) 構造を含む名前付き構造を作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |**DTBLBUTTON** <br/> |
    
 ```cpp
@@ -44,11 +44,11 @@ SizedDtblButton (n, u)
     
  _u_
   
-> 新しい構造の名前を指定します。
+> 新しい構造の名前。
     
 ## <a name="remarks"></a>注釈
 
-次のメンバーで新しい構造が作成されます。
+新しい構造は、次のメンバーで作成されます。
   
 ```
 DTBLBUTTON dtblbutton;

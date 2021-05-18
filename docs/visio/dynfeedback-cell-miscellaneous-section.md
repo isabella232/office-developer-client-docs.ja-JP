@@ -22,9 +22,9 @@ ms.locfileid: "33404800"
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| .0  <br/> | 直線を維持します (脚なし)。  <br/> |**visDynFBDefault** <br/> |
-| 1   <br/> | ドラッグすると脚を 3 本表示します。  <br/> |**visDynFBUCon3Leg** <br/> |
-| 2   <br/> | ドラッグすると脚を 5 本表示します。  <br/> |**visDynFBUCon5Leg** <br/> |
+| 0  <br/> | 直線を維持します (脚なし)。  <br/> |**visDynFBDefault** <br/> |
+| 1  <br/> | ドラッグすると脚を 3 本表示します。  <br/> |**visDynFBUCon3Leg** <br/> |
+| 2  <br/> | ドラッグすると脚を 5 本表示します。  <br/> |**visDynFBUCon5Leg** <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -32,7 +32,7 @@ ms.locfileid: "33404800"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [dynfeedback]  <br/> |
+| セル名 :  <br/> | DynFeedback  <br/> |
    
 プログラムから、インデックスによって [DynFeedback] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

@@ -1,5 +1,5 @@
 ---
-title: Floor 関数 (Access カスタム web アプリ)
+title: Floor 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33404814"
 ---
-# <a name="floor-function-access-custom-web-app"></a>Floor 関数 (Access カスタム web アプリ)
+# <a name="floor-function-access-custom-web-app"></a>Floor 関数 (Access カスタム Web アプリ)
 
 指定した数値式より小さい、または等しい最大の整数を戻します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "33404814"
   
 ## <a name="syntax"></a>構文
 
- **床面**(*NumericExpression*) 
+ **Floor** (*NumericExpression*) 
   
 **Floor** 関数には、以下の引数があります。 
   

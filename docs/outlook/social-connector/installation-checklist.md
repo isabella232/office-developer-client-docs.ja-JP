@@ -7,7 +7,7 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9dfb9b6d-2fb4-45bf-a12f-bd10a799ce29
-description: このトピックでは、Outlook Social Connector (.osc) プロバイダーを正常にインストールするための前提条件について説明します。また、プロバイダーのインストーラーが正常に動作することを確認する必要があります。
+description: このトピックでは、Outlook Social Connector (OSC) プロバイダーを正常にインストールするための前提条件と、プロバイダー インストーラーが正常に動作するために完了する必要があるインストール チェックについて説明します。
 ms.openlocfilehash: 8fec8523e57ad2678d02a0c5cbc1ad57340e5267
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -17,114 +17,114 @@ ms.locfileid: "32286342"
 ---
 # <a name="installation-checklist"></a>インストール チェックリスト
 
-このトピックでは、Outlook Social Connector (.osc) プロバイダーを正常にインストールするための前提条件について説明します。また、プロバイダーのインストーラーが正常に動作することを確認する必要があります。
+このトピックでは、Outlook Social Connector (OSC) プロバイダーを正常にインストールするための前提条件と、プロバイダー インストーラーが正常に動作するために完了する必要があるインストール チェックについて説明します。
   
 ## <a name="installation-overview"></a>インストールの概要
 
-ユーザーは、Outlook のサポートバージョンが存在し、.osc がインストールされてクライアントコンピューターに有効になっている場合にのみ、.osc プロバイダーをインストールする必要があります。 outlook のバージョンをサポートしているのは、office outlook 2003、office outlook 2007、outlook 2010、outlook 2013 (クライアントコンピューターにインストールされているか、outlook 2010 および outlook の場合は、クライアントコンピューター上でクイック実行が配信される場合) です。 インストールが正常に行われるように、プロバイダーのインストーラーは次の操作を実行する必要があります。
+ユーザーは、サポート されているバージョンの OSC プロバイダーが存在し、Outlook コンピューターに OSC がインストールされ、有効になっている場合にのみ、OSC プロバイダーをインストールする必要があります。 Outlook のサポート バージョンは、Office Outlook 2003、Office Outlook 2007、Outlook 2010、Outlook 2013 です (クライアント コンピューターにインストールされている場合、または Outlook 2010 および Outlook 2013 の場合は、クライアント コンピューターで クイック実行 によって配信されます)。 インストールが正常に完了するには、プロバイダー インストーラーで次の操作を行う必要があります。
   
-- サポートされているバージョンの Outlook があるかどうかを確認します。
+- サポートされているバージョンのファイルが存在Outlook確認します。
     
-- .osc がインストールされているかどうかを確認します。
+- OSC がインストールされているかどうかを確認します。
     
 > [!NOTE]
-> クイック実行は、outlook 2010 (32 ビット) または outlook 2013 (32 ビット) が実行できる仮想環境です。 Outlook 2013 の場合は、Windows レジストリの HKEY_LOCAL_MACHINE\Software\Microsoft\Office\15.0\Common\InstallRoot\Virtual\VirtualOutlook に virtualoutlook キーが存在するかどうかを確認します。 クイック実行製品として outlook をクライアントコンピューターに配信する方法の詳細については、「[クイック実行製品としてコンピューター上で outlook が利用可能かどうかを確認する方法](https://blogs.msdn.com/b/officedevdocs/archive/2010/03/09/how-to-verify-if-outlook-is-available-on-a-computer-as-a-click-to-run-product.aspx)」を参照してください。 
+> クイック実行は、Outlook 2010 (32 ビット) または Outlook 2013 (32 ビット) を実行できる仮想環境です。 2013 Outlook、VirtualOutlook キーがレジストリのHKEY_LOCAL_MACHINE\Software\Microsoft\Office\15.0\Common\InstallRoot\Virtual\VirtualOutlook存在Windowsします。 クライアント コンピューターで クイック実行 製品として Outlook を配信する方法の詳細については[、「how to Verify if Outlook](https://blogs.msdn.com/b/officedevdocs/archive/2010/03/09/how-to-verify-if-outlook-is-available-on-a-computer-as-a-click-to-run-product.aspx)is Available on a computer as a クイック実行 Product」を参照してください。 
   
-ただし、ユーザーは、プロバイダーをインストールする前に、.osc が有効になっていることを確認する必要があります。
+ただし、ユーザーは、プロバイダーをインストールする前に OSC が有効になっている必要があります。
   
-.osc プロバイダーを含むサードパーティは、.osc を再配布できません。 ただし、.osc がインストールされていない場合、プロバイダーインストーラーは適切な g リンクを使用して、クライアントコンピューターに .osc をインストールすることができます。 g リンクは、ユーザーを対応する web ページhttps://g.live.comに転送して、.osc をダウンロードするための特別に構築された URL です。 .osc g リンクは、 https://g.live.com/0CR _lcid_/ _glink_として書式設定されます。 _lcid_と_glink_では、クライアントコンピューター上の Outlook のロケール、バージョン、ビットが指定されます。 各 g リンクは、実行可能ファイルを指しており、指定された_LCID_および_glink_値に固有のものです。 
+OSC プロバイダーを含むサード パーティは、OSC を再配布できません。 ただし、OSC がインストールされていない場合、プロバイダー インストーラーは適切な g-links を使用して OSC をクライアント コンピューターにインストールできます。 g-link は、ユーザーを対応する Web ページに転送して OSC をダウンロードする特別に構築された https://g.live.com URL です。 OSC g-link は https://g.live.com/0CR _LCID_ /  _Glink_ として書式設定され _、LCID_ と _Glink_ はクライアント コンピューター上の Outlookのロケール、バージョン、およびビット数を指定します。 各 g-link は実行可能ファイルをポイントし、指定された  _LCID_ 値と  _Glink 値に固有_ です。 
   
-たとえば、LCID 1033 (米国英語) 用の outlook 2003 または outlook 2007 用の最新バージョンの .osc をインストールするための g リンクは次のようになります。
+たとえば、LCID 1033 (米国英語) の Outlook 2003 または Outlook 2007 の OSC の最新バージョンをインストールする g リンクは次のとおりです。
   
 https://g.live.com/0CR1033/80
   
-Outlook のさまざまなバージョンとビットの_リンク_値、およびサポートされるロケールの_LCID_値の詳細については、次のセクション「[インストールチェックリスト](#olosc_InstallationOverview_InstallationChecklist)」の「#7」を参照してください。 
+Outlook の異なるバージョンとビット数の Glink 値、およびサポートされている地域の _LCID_ 値の詳細については、以下の「インストール チェックリスト」の「#7」を [参照](#olosc_InstallationOverview_InstallationChecklist)してください。 
 
 <a name="olosc_InstallationOverview_InstallationChecklist"> </a>
 
 ## <a name="installation-checklist"></a>インストール チェックリスト
 
-プロバイダーのセットアップパッケージは、図1に示すように、一連のインストールチェックを実行して、プロバイダーが正常にインストールされるようにする必要があります。
+プロバイダーセットアップ パッケージは、プロバイダーが正常にインストールされたことを確認するために、図 1 に示すように、一連のインストール チェックを実行する必要があります。
   
-**図1。プロバイダーのインストールロジック**
+**図 1.プロバイダーのインストール ロジック**
 
 ![インストール チェックリスト](media/odc_ol14_ta_OSC_Fig07.gif)
   
-次の手順では、図1に示されているインストールの確認について説明します。
+次の手順では、図 1 に示すインストール チェックについて説明します。
   
-1. 前提条件として、outlook がインストールされているかどうかを検出し、インストールされているか存在している場合は、outlook のバージョンが .osc をサポートしているかどうかを判断します。 インストールされている outlook のバージョンを検出する方法については、「 [outlook のバージョンを確認](https://msdn.microsoft.com/library/672fc380-a29b-4e99-9211-949fd5065723%28Office.15%29.aspx)する」を参照してください。
+1. 前提条件として、インストールまたはOutlookを検出し、インストールされている場合または存在する場合は、OSC のバージョンがサポートOutlook判断します。 インストールされているバージョンの検出方法の詳細については、「Outlookバージョンを確認する」を[参照](https://msdn.microsoft.com/library/672fc380-a29b-4e99-9211-949fd5065723%28Office.15%29.aspx)Outlook。
     
-   - インストールされている outlook のバージョンが outlook 2003 より前の場合は、プロバイダーのインストール手順を完了できません。 ユーザーに、サポートされているバージョンの Outlook と .osc を入手してから、.osc プロバイダーをインストールするように通知します。
+   - インストール済みバージョンのOutlook 2003 より前Outlookプロバイダーのインストール手順を完了できません。 OSC プロバイダーのインストールに進む前に、サポートされているバージョンOutlook OSC を入手してください。
     
-   - Outlook がインストールされていない場合は、手順2に進みます。
+   - インストールOutlook場合は、手順 2 に進みます。
     
-   - outlook 2003 または outlook 2007 がインストールされている場合は、手順3に進みます。 
+   - 2003 Outlook 2007 Outlookインストールされている場合は、手順 3 に進みます。 
     
-   - outlook 2010 または outlook 2013 がインストールされている場合は、手順4に進みます。
+   - 2010 Outlookまたは 2013 Outlookインストールされている場合は、手順 4 に進みます。
     
-2. **クライアントコンピューターに Outlook がインストールされていない場合は、次の手順を続行します。**
+2. **クライアント コンピューターにインストールされていない場合Outlook手順を実行します。**
     
-   1. outlook 2010 または outlook 2013 のクイック実行インストールの既定のコンポーネントとして、.osc がインストールされているかどうかを確認します。 Windows レジストリ`VirtualOutlook`の次の場所にあるキーを調べます。 
+   1. OSC が 2010 または 2013 の クイック実行 インストールの既定のOutlookインストールOutlookします。 レジストリ内 `VirtualOutlook` の次の場所にあるキー Windowsします。 
       
-      - Outlook 2010 の場合`HKEY_LOCAL_MACHINE\Software\Microsoft\Office\14.0\Common\InstallRoot\Virtual\VirtualOutlook`
+      - 2010 Outlookの場合、`HKEY_LOCAL_MACHINE\Software\Microsoft\Office\14.0\Common\InstallRoot\Virtual\VirtualOutlook`
       
-      - Outlook Social Connector 2013 の場合`HKEY_LOCAL_MACHINE\Software\Microsoft\Office\15.0\Common\InstallRoot\Virtual\VirtualOutlook`
+      - ソーシャル Outlook 2013 の場合、`HKEY_LOCAL_MACHINE\Software\Microsoft\Office\15.0\Common\InstallRoot\Virtual\VirtualOutlook`
       
-      `VirtualOutlook`キーは、インストールされている製品の "en-us" などのロケールタグを含む REG_SZ 値です。 
+      キー  `VirtualOutlook` は、REG_SZのロケール タグ ("en-us" など) を含む値です。 
       
-   2. この`VirtualOutlook`キーが存在しない場合、Outlook はクライアントコンピューターに存在せず、プロバイダーのインストール手順を完了できません。 ユーザーに、サポートされているバージョンの Outlook と .osc を入手してから、.osc プロバイダーをインストールするように通知します。 
+   2. キーが存在しない場合Outlookクライアント コンピューターに存在しない場合、プロバイダーのインストール手順 `VirtualOutlook` を完了できません。 OSC プロバイダーのインストールに進む前に、サポートされているバージョンOutlook OSC を入手してください。 
       
-   3. このキー `VirtualOutlook`が存在する場合、Outlook はクイック実行でクライアントコンピューターに配信されていました。 Windows レジストリの次の場所にある`OSCVersion`キーを調べて、インストールされている .osc タイプライブラリのバージョンを確認します。 
+   3. キーが `VirtualOutlook` 存在する場合は、Outlookコンピュータークイック実行によって配信されました。 OSC タイプ ライブラリのインストール済みバージョンを確認するには、次の場所にあるキーをレジストリWindows `OSCVersion` します。 
       
       `HKEY_LOCAL_MACHINE\Software\Microsoft\Office\Outlook\SocialConnector\OSCVersion`
       
-      の`OSCVersion`値は、形式ライブラリのバージョン番号を指定する文字列です (たとえば、"1.0"、"1.1"、または "15")。 
+      値は、タイプ ライブラリのバージョン番号  `OSCVersion` Socialprovider.dll ("1.0"、"1.1"、または "15" など) を指定する文字列です。 
       
-   4. が`OSCVersion` "1.0"、"1.1"、または "15" の場合は、適切なバージョンの .osc がインストールされています。 手順6に進み、最新バージョンの .osc をインストールするための準備として、現在の Outlook ユーザーインターフェイスのロケールを検索します。 
+   4. `OSCVersion`"1.0"、"1.1" または "15" の場合は、適切なバージョンの OSC がインストールされます。 手順 6 に進み、最新バージョンの OSC Outlookを準備するために、現在のユーザー インターフェイス ロケールを確認します。 
       
-   5. それ以外`OSCVersion`の場合は、予期される値を含みません。 手順6に進み、適切なバージョンの .osc をインストールするための準備として、現在の Outlook ユーザーインターフェイスのロケールを検索します。 
+   5. それ以外の場合  `OSCVersion` 、予期される値は含めされません。 手順 6 に進み、適切なバージョンの OSC をインストールOutlookする現在のユーザー インターフェイス ロケールを確認します。 
     
-3. **outlook 2003 または outlook 2007 がクライアントコンピューターにインストールされている場合は、次の手順を続行します。**
+3. **クライアント コンピューターに 2003 Outlook 2007 Outlookインストールされている場合は、次の手順に進みます。**
     
-   1. 次の修飾されたコンポーネント ID が存在するかどうかをテストするインストーラーカスタムアクションを記述して、.osc がインストールされているかどうかを確認します。
+   1. 次の修飾されたコンポーネント ID が存在するかどうかをテストするインストーラー カスタム アクションを記述して、OSC がインストールされているかどうかを確認します。
       
       `{A3B82DA3-8AD9-4935-AEA8-54B754459483}`
       
-      修飾コンポーネント ID は、ポインターに似た単一レベルの間接的なメソッドを提供する GUID です。 windows インストーラーの詳細については、「 [windows インストーラーのドキュメントのロードマップ](https://docs.microsoft.com/windows/desktop/msi/roadmap-to-windows-installer-documentation)」を参照してください。
+      修飾されたコンポーネント ID は、ポインターと同様に、単一レベルの間接参照のメソッドを提供する GUID です。 インストーラーの詳細については、「Windowsドキュメント[へのロードマップ」をWindowsしてください](https://docs.microsoft.com/windows/desktop/msi/roadmap-to-windows-installer-documentation)。
       
-   2. 指定した修飾コンポーネントが存在する場合は、.osc のバージョンがインストールされます。 手順5に進み、最新バージョンの .osc をインストールするための準備として、現在の Outlook ユーザーインターフェイスのロケールを検索します。
+   2. 指定した修飾コンポーネントが存在する場合は、OSC のバージョンがインストールされます。 手順 5 に進み、最新バージョンの OSC Outlook準備するために、現在のユーザー インターフェイス ロケールを確認します。
       
-   3. それ以外の場合は、.osc がインストールされません。 手順6に進み、適切なバージョンの .osc をインストールするための準備として、現在の Outlook ユーザーインターフェイスのロケールを検索します。
+   3. それ以外の場合、OSC はインストールされません。 手順 6 に進み、適切なバージョンの OSC をインストールOutlookする現在のユーザー インターフェイス ロケールを確認します。
       
-4. **outlook 2010 または outlook 2013 がクライアントコンピューターにインストールされている場合は、次の手順を続行します。**
+4. **クライアント コンピューターに 2010 Outlook 2013 Outlookインストールされている場合は、次の手順に進みます。**
     
-   1. Windows レジストリの以下の場所にある`Bitness`キーを調べて、インストールされている Outlook のバージョンのビット数を確認します。 
+   1. レジストリ内の次の場所にあるキーを調Outlookして、インストールされているバージョンのコンピューターのビット `Bitness` Windowsします。 
       
-      - Outlook 2010 の場合は、`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\14.0\Outlook`
+      - 2010 Outlookについては、`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\14.0\Outlook`
       
-      - Outlook 2013 の場合は、`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\15.0\Outlook`
+      - 2013 Outlookについては、`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\15.0\Outlook`
       
-      キー `Bitness`は、32ビット outlook の場合は "x86"、64ビットの outlook の場合は "x64" です。 
+      キーは、32 ビット Outlookの場合は `Bitness` "x86"、64 ビット の場合は "x64" Outlook。 
       
-   2. プロバイダーがマネージドプロバイダーで、ターゲットプラットフォームを指定したプロバイダコンポーネントを**任意の CPU**としてコンパイルした場合は、手順6に進み、最新バージョンの .osc のインストールを準備するための現在の Outlook ユーザーインターフェイスロケールを見つけます。 プロバイダーは、この .osc の32ビットバージョンと64ビットバージョンの両方で機能します。
+   2. プロバイダーが管理プロバイダーであり、ターゲット プラットフォームを **Any CPU** として指定するプロバイダー コンポーネントをコンパイルした場合は、手順 6 に進み、最新バージョンの OSC のインストールを準備するために現在の Outlook ユーザー インターフェイス ロケールを検索します。 プロバイダーは、OSC の 32 ビット バージョンと 64 ビット バージョンの両方で動作します。
       
-   3. プロバイダーがネイティブ COM コンポーネントの場合は、インストールされている Outlook のバージョンのビット数を確認します。
+   3. プロバイダーがネイティブ COM コンポーネントの場合は、インストールされているバージョンのデバイスのビット数をOutlook。
       
-      - インストールされている Outlook のバージョンが32ビットである場合は、適切な .osc がインストールされていることを確認した後に、インストール手順で32ビットのプロバイダー (手順 8) をインストールする必要があります。
+      - インストールされているバージョンの Outlook が 32 ビットの場合、適切な OSC がインストールされていることを確認した後、インストール手順で 32 ビット プロバイダーをインストールする必要があります (手順 8)。
       
-      - インストールされている Outlook のバージョンが64ビットである場合は、適切な .osc がインストールされていることを確認した後、インストール手順で64ビットのプロバイダー (手順 8) をインストールする必要があります。 
+      - それ以外の場合、インストールされているバージョンの Outlook は 64 ビットであり、適切な OSC がインストールされていることを確認した後、インストール手順で 64 ビット プロバイダーをインストールする必要があります (手順 8)。 
       
-   4. 手順6に進み、適切なバージョンの .osc をインストールするための準備として、現在の Outlook ユーザーインターフェイスのロケールを検索します。
+   4. 手順 6 に進み、適切なバージョンの OSC Outlookを準備するために、現在のユーザー インターフェイス ロケールを確認します。
     
-5. **outlook 2003 または outlook 2007 がインストールされており、クライアントコンピューターに .osc がインストールされている場合は、この手順を続行します。** Windows レジストリの次の場所にある`OSCLcid`キーを調べて、現在の Outlook ユーザーインターフェイスのロケールを確認します。 
+5. **2003 または Outlook 2007** Outlook OSC がクライアント コンピューターにインストールされている場合は、次の手順に進みます。ユーザー インターフェイスの現在Outlookロケールを確認するには、次の場所にあるキーをレジストリ `OSCLcid` Windowsします。 
     
    `HKEY_LOCAL_MACHINE\Software\Microsoft\Office\Outlook\SocialConnector\OSCLcid`
     
-   `OSCLcid`キーは、現在の Outlook ユーザーインターフェイスのロケールを表す、インターネット技術標準化委員会 (IETF) のロケールタグ ( [[RFC4646]](https://www.ietf.org/rfc/rfc4646.txt)および[[RFC4647]](https://www.ietf.org/rfc/rfc4647.txt)で定義) を指定する DWORD 値です。 手順7に進み、クライアントコンピューターに最新の .osc をインストールします。
+   キーは、現在の Outlook ユーザー インターフェイス ロケールを表すインターネット エンジニアリング タスク フォース (IETF) ロケール タグ `OSCLcid` [([RFC4646]](https://www.ietf.org/rfc/rfc4646.txt)と[[RFC4647]](https://www.ietf.org/rfc/rfc4647.txt)で定義) を指定する DWORD 値です。 手順 7 に進み、最新の OSC をクライアント コンピューターにインストールします。
     
-6. **outlook 2003 または outlook 2007 がインストールされているか、outlook 2010 または outlook 2013 がインストールされている場合に、この手順を続行します。ただし、最新の .osc が必ずしもクライアントコンピューターにインストールされるとは限りません。**
+6. **Outlook 2003 または Outlook 2007 がインストールされている場合、または Outlook 2010 または Outlook 2013 が存在するが、最新の OSC が必ずしもクライアント コンピューターにインストールされていない場合は、この手順を実行します。**
     
-   **言語設定**オブジェクトを使用して、Outlook ユーザーインターフェイスのロケールの LCID を特定します。 次の Visual Basic Scripting Edition (VBScript) コードスニペットは、Outlook ユーザーインターフェイスロケールの LCID を取得する方法を示しています。 
+   **LanguageSettings オブジェクトを使用** して、ユーザー インターフェイス ロケールの LCID Outlook決定します。 次のVisual Basicスクリプト エディション (VBScript) コード スニペットは、ユーザー インターフェイス ロケールの LCID を取得Outlook示しています。 
     
    ```vb
     Function GetOutlookUI_LCID()
@@ -137,19 +137,19 @@ Outlook のさまざまなバージョンとビットの_リンク_値、およ�
     End Function
    ```
 
-7. **インストーラーにインストールされているバージョンの Outlook の LCID がある場合は、次の手順に進みます。最新の .osc は、必ずしもクライアントコンピューターにインストールされません。**
+7. **インストーラーにインストールされているバージョンの LCID Outlook があるが、最新の OSC が必ずしもクライアント コンピューターにインストールされていない場合は、次の手順を実行します。**
     
-   インストールパッケージに g リンクをチェーンして、最新バージョンの .osc がクライアントコンピューターにインストールされていることを確認します。 g リンクの形式は次のとおりです。
+   g-link をインストール パッケージにチェーンして、最新バージョンの OSC がクライアント コンピューターにインストールされていることを確認します。 g-link 形式は次のとおりです。
     
-   https://g.live.com/0CR_LCID_/  _glink_
+   https://g.live.com/0CR_LCID_ / _Glink_
     
-   サポートされている_LCID_値については、表1を参照してください。サポートされている_glink_値については、表2を参照してください。 たとえば、次のように、32ビットの Outlook Social Connector 2013 (米国英語) 用に32ビットの .osc の最新バージョンをインストールするための g リンクがあります。 
+   サポートされている LCID 値については、以下の表 1、サポートされている  _Glink_ 値については表 2  _を参照_ してください。 たとえば、32 ビット Outlook Social Connector 2013 (米国英語) 用の 32 ビット OSC の最新バージョンをインストールする g-link は次のとおりです。 
     
    https://g.live.com/0CR1033/82
     
-8. プロバイダーをインストールします。 プロバイダーのインストール手順では、プログラム id (ProgID) を適切な Windows レジストリの場所に登録する必要があります。 詳細については、「[プロバイダーの登録](registering-a-provider.md)」を参照してください。 また、インストールするプロバイダーのビット数が、クライアントコンピューター上に存在する Outlook のバージョンのビットと同じであることを確認してください。 たとえば、32ビットの outlook 2013 が存在する場合は、32ビットのプロバイダーをインストールし、64ビットの outlook をインストールしている場合は、64ビットのプロバイダーをインストールします。 Outlook 2003 または2007の場合は、使用しているプロバイダーの32ビットバージョンのみが適用されます。 
+8. プロバイダーをインストールします。 プロバイダーのインストール手順では、プログラム識別子 (ProgID) をレジストリの適切な場所Windowsする必要があります。 詳細については、「プロバイダーの [登録」を参照してください](registering-a-provider.md)。 また、インストールするプロバイダーのビット数が、クライアント コンピューターに存在するバージョンのビットOutlook同じことを確認してください。 たとえば、32 ビット Outlook 2013 が存在する場合は 32 ビット プロバイダーをインストールし、64 ビット Outlook 2013 がインストールされている場合は 64 ビット プロバイダーをインストールします。 2003 Outlook 2007 の場合、プロバイダーの 32 ビット バージョンだけが適用されます。 
     
-**表 1: サポートされているロケールおよび対応する LCID 値を、.osc の16進数で指定します。**
+**表 1: OSC でサポートされているロケールと対応する LCID 値 (16 進数)**
   
 |**Locale**|**LCID**|
 |:-----|:-----|
@@ -186,8 +186,8 @@ Outlook のさまざまなバージョンとビットの_リンク_値、およ�
 |ru-ru  <br/> |1049  <br/> |
 |sk-sk  <br/> |1051  <br/> |
 |sl-si  <br/> |1060  <br/> |
-|cyrl-cs  <br/> |3098  <br/> |
-|latn-cs  <br/> |2074  <br/> |
+|sr-cyrl-cs  <br/> |3098  <br/> |
+|sr-latn-cs  <br/> |2074  <br/> |
 |sv-se  <br/> |1053  <br/> |
 |th-th  <br/> |1054  <br/> |
 |tr-tr  <br/> |1055  <br/> |
@@ -195,17 +195,17 @@ Outlook のさまざまなバージョンとビットの_リンク_値、およ�
 |zh-cn  <br/> |2052  <br/> |
 |zh-tw  <br/> |1028  <br/> |
    
-**表 2: .osc のサポートされている glink 値**
+**表 2: OSC でサポートされている Glink 値**
   
-|**glink 値**|**Function**|
+|**Glink 値**|**Function**|
 |:-----|:-----|
-|80  <br/> |outlook 2003 または outlook 2007 用の最新バージョンの .osc をインストールします。  <br/> |
-|82  <br/> |outlook 2007、outlook 2010、または outlook Social Connector 2013 用に32ビットの詳細な更新プログラムをインストールします。  <br/> |
-|83  <br/> |outlook 2010 または outlook Social Connector 2013 用に64ビットの詳細な更新プログラムをインストールします。  <br/> |
+|80  <br/> |最新バージョンの OSC for Outlook 2003 または Outlook 2007 をインストールします。  <br/> |
+|82  <br/> |Outlook 2007、Outlook 2010、または Outlook Social Connector 2013 用の 32 ビット OSC の最新パッチをインストールします。  <br/> |
+|83  <br/> |Outlook 2010 または Outlook Social Connector 2013 用の 64 ビット OSC の最新パッチをインストールします。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
 - [プロバイダーの登録](registering-a-provider.md) 
-- [プロバイダーを開発するための簡単な手順](quick-steps-for-learning-to-develop-a-provider.md)
-- [プロバイダーを展開する](deploying-a-provider.md)
+- [プロバイダーを開発するための学習のクイック ステップ](quick-steps-for-learning-to-develop-a-provider.md)
+- [プロバイダーの展開](deploying-a-provider.md)
 

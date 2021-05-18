@@ -36,11 +36,11 @@ _pxNameText_ (**xltypeStr**)
   
 _pxNameDefinition_ (**xltypeStr**、**xltypeNum**、**xltypeBool**、**xltypeErr**、**xltypeMulti**、**xltypeSRef**、**xltypeRef**、または **xltypeInt**)
   
-(省略可能)。 値、値のセット、セル、または _pxNameText_ として定義されたセルの範囲。 省略した場合は名前が削除されます。 
+(Optional). The value, set of values, cell, or range of cells that  _pxNameText_ is defined as. If omitted, the name is deleted. 
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-_pxRes _ (**xltypeBool** または **xltypeErr**)
+_pxRes_ (**xltypeBool** または **xltypeErr**)
   
 操作が成功した場合は TRUE、名前を作成または削除できなかった場合は FALSE を返します。引数の 1 つ以上が無効であれば、#VALUE! を返します。
   

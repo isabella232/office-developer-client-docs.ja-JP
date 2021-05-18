@@ -1,5 +1,5 @@
 ---
-title: テーブルの行からデータを取得する
+title: テーブル行からのデータの取得
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33405255"
 ---
-# <a name="retrieving-data-from-table-rows"></a>テーブルの行からデータを取得する
+# <a name="retrieving-data-from-table-rows"></a>テーブル行からのデータの取得
 
   
   
@@ -27,17 +27,17 @@ ms.locfileid: "33405255"
     
 - 現在の位置を変更します。
     
-ほとんどのテーブルで必要な列の1つはエントリ識別子 ( **** [PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティで、これを使用して行を表すオブジェクトを開くことができます。 このエントリ識別子は、通常、短い用語のエントリ識別子です。これは、テーブルの有効期間を超えて保持されないものです。 ただし、テーブルを実装するサービスプロバイダーが1つの種類のエントリ識別子のみをサポートする場合は、長期の識別子になることがあります。
+ほとんどのテーブルで必要な列の **1 つは、PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティというエントリ識別子で、行を表すオブジェクトを開くのに使用できます。 このエントリ識別子は、通常、短期的なエントリ識別子で、テーブルの有効期間を過ぎた後も保持されません。 ただし、テーブルを実装するサービス プロバイダーが 1 種類のエントリ識別子のみをサポートしている場合は、長期的な識別子を指定できます。
   
-クライアントとサービスプロバイダーは、次のいずれかの呼び出しを行って行を取得できます。
+クライアントとサービス プロバイダーは、次のいずれかの呼び出しを行って行を取得できます。
   
 |||
 |:-----|:-----|
-|[IMAPITable::QueryRows](imapitable-queryrows.md) <br/> |前方または後方のどちらかの方向に、現在の行から始まる指定された数の行を取得します。  <br/> |
+|[IMAPITable::QueryRows](imapitable-queryrows.md) <br/> |現在の行から順方向または逆方向の行で始まる、指定した数の行を取得します。  <br/> |
 |[HrQueryAllRows](hrqueryallrows.md) <br/> |テーブル内のすべての行を取得します。  <br/> |
-|[ITableData::HrQueryRow](itabledata-hrqueryrow.md) <br/> |インデックス列の値に従って、テーブル内の行を取得します。 **PR_INSTANCE_KEY**([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) は、通常、テーブルのインデックス列です。  <br/> |
+|[ITableData::HrQueryRow](itabledata-hrqueryrow.md) <br/> |インデックス列の値に従ってテーブル内の行を取得します。 **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) は、通常、テーブルのインデックス列です。  <br/> |
    
-オプションのプロパティがテーブルの列の1つとして含まれている場合、一部の行には列に有効な値が含まれている場合がありますが、それ以外の場合もあります。 列に有効な値が存在するかどうかは、その行の情報を提供するオブジェクトがプロパティを設定するかどうかによって決まります。 オブジェクトの実装によっては、存在しないプロパティをテーブルで**PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) または任意の値として表すことができます。 テーブルのユーザーは、存在しないプロパティと、存在しない値および有効な値を持つプロパティを慎重に区別する必要があります。 
+省略可能なプロパティを表の列の 1 つとして含める場合、一部の行には列に対して有効な値を持つ場合があります。一部の行には有効な値が含まれていない場合があります。 列に有効な値が存在するかどうかは、行の情報を提供するオブジェクトがプロパティを設定するかどうかによって異なります。 オブジェクトの実装に応じて、存在しないプロパティを **PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) または任意の値として表します。 テーブルのユーザーは、存在しないプロパティと、存在し、有効な値を持つ無意味な値とプロパティを区別するために注意する必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

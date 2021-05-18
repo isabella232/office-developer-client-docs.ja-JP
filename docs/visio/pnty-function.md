@@ -18,25 +18,25 @@ ms.locfileid: "33423315"
 ---
 # <a name="pnty-function"></a>PNTY 関数
 
-ポイントの_y_座標を返します。
+ポイントの  _y_ 座標を返します。
   
 ## <a name="syntax"></a>構文
 
-PNTX (* * *point* * *) 
+PNTX(** *point* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _ポイント_ <br/> |必須  <br/> |**数値** <br/> |点の_y_座標です。  <br/> |
+| _point_ <br/> |必須  <br/> |**数値** <br/> |ポイント  _の y_ 座標。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
-数値
+番号
   
 ## <a name="example"></a>例
 
-pnty (PNT (7, 12)) 
+PNTY(PNT(7,12)) 
   
 12 を返します。 
   

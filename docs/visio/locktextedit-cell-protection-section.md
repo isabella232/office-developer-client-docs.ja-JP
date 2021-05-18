@@ -33,7 +33,7 @@ ms.locfileid: "33404499"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [locktextedit]  <br/> |
+| セル名:  <br/> | LockTextEdit  <br/> |
    
 プログラムから、インデックスによって [LockTextEdit] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

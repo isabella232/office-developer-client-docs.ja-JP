@@ -1,5 +1,5 @@
 ---
-title: imapisupportcopymessages
+title: IMAPISupportCopyMessages
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33405157"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージを1つのフォルダーから別のフォルダーにコピーまたは移動します。
+メッセージを 1 つのフォルダーから別のフォルダーにコピーまたは移動します。
   
 ```cpp
 HRESULT CopyMessages(
@@ -42,37 +42,37 @@ HRESULT CopyMessages(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpsrcinterface_
+ _lpSrcInterface_
   
-> 順番コピーまたは移動するメッセージを含むフォルダーへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。
+> [in]コピーまたは移動するメッセージを含むフォルダーにアクセスするために使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。
     
- _lpsrcfolder_
+ _lpSrcFolder_
   
-> 順番コピーまたは移動するメッセージを含むフォルダーへのポインター。
+> [in]コピーまたは移動するメッセージを含むフォルダーへのポインター。
     
- _lpmsglist_
+ _lpMsgList_
   
-> 順番コピーまたは移動するメッセージを識別するエントリ識別子の配列へのポインター。 
+> [in]コピーまたは移動するメッセージを識別するエントリ識別子の配列へのポインター。 
     
- _lpdestinterface_
+ _lpDestInterface_
   
-> 順番コピーまたは移動されたメッセージの宛先フォルダーへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。
+> [in]コピーまたは移動されたメッセージの移動先フォルダーにアクセスするために使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。
     
- _lpdestfolder_
+ _lpDestFolder_
   
-> 順番コピーまたは移動されたメッセージの宛先フォルダーへのポインター。 このフォルダーは開いている必要があります。
+> [in]コピーまたは移動されたメッセージの移動先フォルダーへのポインター。 このフォルダーは開いている必要があります。
     
- _uluiparam_
+ _ulUIParam_
   
-> 順番進行状況インジケーターを表示する progress オブジェクトへのポインター。 _lpprogress_で NULL が渡された場合、メッセージストアプロバイダーは MAPI 進行状況オブジェクトの実装を使用して進行状況インジケーターを表示します。 MESSAGE_DIALOG フラグが_ulflags_で設定されていない場合、 _lpprogress_パラメーターは無視されます。
+> [in]進行状況インジケーターを表示する進行状況オブジェクトへのポインター。 _lpProgress_ で NULL が渡された場合、メッセージ ストア プロバイダーは MAPI 進行状況オブジェクトの実装を使用して進行状況インジケーターを表示します。 _lpProgress パラメーター_ は _、ulFlags_ で MESSAGE_DIALOGフラグが設定されていない限り無視されます。
     
- _lpprogress_
+ _lpProgress_
   
-> 順番進行状況インジケーターを表示する progress オブジェクトへのポインター。 _lpprogress_で NULL が渡された場合、メッセージストアプロバイダーは MAPI 進行状況オブジェクトの実装を使用して進行状況インジケーターを表示します。 MESSAGE_DIALOG フラグが_ulflags_で設定されていない場合、 _lpprogress_パラメーターは無視されます。
+> [in]進行状況インジケーターを表示する進行状況オブジェクトへのポインター。 _lpProgress_ で NULL が渡された場合、メッセージ ストア プロバイダーは MAPI 進行状況オブジェクトの実装を使用して進行状況インジケーターを表示します。 _lpProgress パラメーター_ は _、ulFlags_ で MESSAGE_DIALOGフラグが設定されていない限り無視されます。
     
  _ulFlags_
   
-> 順番コピー操作または移動操作の実行方法を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]コピーまたは移動操作の実行方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MESSAGE_DIALOG 
   
@@ -80,21 +80,21 @@ MESSAGE_DIALOG
     
 MESSAGE_MOVE 
   
-> メッセージはコピーではなく移動する必要があります。 MESSAGE_MOVE が設定されていない場合は、メッセージがコピーされます。
+> メッセージはコピーの代わりに移動する必要があります。 このMESSAGE_MOVE設定されていない場合は、メッセージがコピーされます。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> コピーまたは移動操作が正常に完了しました。
+> コピー操作または移動操作が成功しました。
     
 MAPI_E_USER_CANCEL 
   
-> ユーザーが操作をキャンセルしました。通常は、ダイアログボックスの **[キャンセル**] ボタンをクリックします。 
+> 通常、ユーザーはダイアログ ボックスの [キャンセル] ボタンをクリック **して操作を** キャンセルしました。 
     
 ## <a name="remarks"></a>注釈
 
-**imapisupport:: copymessages**メソッドは、メッセージストアプロバイダーサポートオブジェクトに実装されています。 メッセージストアプロバイダーは、imapisupport [:: copymessages](imapifolder-copymessages.md)を使用して、1つまたは複数のメッセージを別のフォルダーにコピーまたは移動する**imapisupport:: copymessages**を呼び出すことができます。 **imapisupport:: copymessages**呼び出しの一部として、メッセージストアプロバイダーは MAPI が進行状況インジケーターを表示するように指定できます。 
+**IMAPISupport::CopyMessages** メソッドは、メッセージ ストア プロバイダーのサポート オブジェクトに実装されます。 メッセージ ストア プロバイダーは [、IMAPIFolder::CopyMessages](imapifolder-copymessages.md)の実装で **IMAPISupport::CopyMessages** を呼び出して、1 つ以上のメッセージを 1 つのフォルダーから別のフォルダーにコピーまたは移動できます。 **IMAPISupport::CopyMessages** 呼び出しの一環として、メッセージ ストア プロバイダーは MAPI に進行状況インジケーターを表示する必要を指定できます。 
   
 ## <a name="see-also"></a>関連項目
 

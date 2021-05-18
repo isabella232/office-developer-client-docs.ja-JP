@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: ca7e6621-f39b-64dd-3594-41d74da21a94
-description: ユーザーが後でテーマを削除した場合にローカルの書式設定を復元できるように、テーマを適用するときに、図形のローカルの書式設定値を格納します。
+description: テーマを適用するときに図形のローカル書式の値を格納し、その後でユーザーがテーマを削除した場合にローカル書式を復元できます。
 ms.openlocfilehash: 628e246f91172f136dd1a70807fca2abc1ff5bdd
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,11 +16,11 @@ ms.locfileid: "33404289"
 ---
 # <a name="themerestore-function"></a>THEMERESTORE 関数
 
-ユーザーが後でテーマを削除した場合にローカルの書式設定を復元できるように、テーマを適用するときに、図形のローカルの書式設定値を格納します。
+テーマを適用するときに図形のローカル書式の値を格納し、その後でユーザーがテーマを削除した場合にローカル書式を復元できます。
   
 ## <a name="syntax"></a>構文
 
-THEMERESTORE ()
+THEMERESTORE()
   
 ## <a name="example"></a>例
 
