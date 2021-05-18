@@ -1,5 +1,5 @@
 ---
-title: トランスポートプロバイダーに必要な機能
+title: トランスポート プロバイダーに必要な機能
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,22 +15,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33404443"
 ---
-# <a name="required-functionality-for-transport-providers"></a><span data-ttu-id="00736-103">トランスポートプロバイダーに必要な機能</span><span class="sxs-lookup"><span data-stu-id="00736-103">Required Functionality for Transport Providers</span></span>
+# <a name="required-functionality-for-transport-providers"></a><span data-ttu-id="1afe1-103">トランスポート プロバイダーに必要な機能</span><span class="sxs-lookup"><span data-stu-id="1afe1-103">Required Functionality for Transport Providers</span></span>
 
   
   
-<span data-ttu-id="00736-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="00736-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="1afe1-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="1afe1-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="00736-105">すべての MAPI トランスポートプロバイダーは次のことを行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="00736-105">Every MAPI transport provider must:</span></span>
+<span data-ttu-id="1afe1-105">すべての MAPI トランスポート プロバイダーは、次の必要があります。</span><span class="sxs-lookup"><span data-stu-id="1afe1-105">Every MAPI transport provider must:</span></span>
   
-- <span data-ttu-id="00736-106">MAPI およびその他のサービスプロバイダーを使用する場合の一般的なガイドラインに従ってください。</span><span class="sxs-lookup"><span data-stu-id="00736-106">Follow the general guidelines for working with MAPI and other service providers.</span></span> <span data-ttu-id="00736-107">詳細については、「 [mapi アプリケーション開発](mapi-application-development.md)および[mapi サービスプロバイダ](mapi-service-providers.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="00736-107">For more information, see [MAPI Application Development](mapi-application-development.md) and [MAPI Service Providers](mapi-service-providers.md).</span></span>
+- <span data-ttu-id="1afe1-106">MAPI および他のサービス プロバイダーの操作に関する一般的なガイドラインに従います。</span><span class="sxs-lookup"><span data-stu-id="1afe1-106">Follow the general guidelines for working with MAPI and other service providers.</span></span> <span data-ttu-id="1afe1-107">詳細については [、「MAPI アプリケーション開発と](mapi-application-development.md) [MAPI サービス プロバイダー」を参照してください](mapi-service-providers.md)。</span><span class="sxs-lookup"><span data-stu-id="1afe1-107">For more information, see [MAPI Application Development](mapi-application-development.md) and [MAPI Service Providers](mapi-service-providers.md).</span></span>
     
-- <span data-ttu-id="00736-108">トランスポートプロバイダ DLL が MAPI に公開される[](xpproviderinit.md)ようにします。</span><span class="sxs-lookup"><span data-stu-id="00736-108">Have its transport provider DLL expose to MAPI its [XPProviderInit](xpproviderinit.md) initialization function.</span></span> 
+- <span data-ttu-id="1afe1-108">トランスポート プロバイダー DLL を MAPI の [XPProviderInit 初期化関数に](xpproviderinit.md) 公開します。</span><span class="sxs-lookup"><span data-stu-id="1afe1-108">Have its transport provider DLL expose to MAPI its [XPProviderInit](xpproviderinit.md) initialization function.</span></span> 
     
-- <span data-ttu-id="00736-109">[ixpprovider: iunknown](ixpprovideriunknown.md)インターフェイスと[IXPLogon: iunknown](ixplogoniunknown.md)インターフェイスの実装を MAPI に公開します。</span><span class="sxs-lookup"><span data-stu-id="00736-109">Expose to MAPI its implementation of the [IXPProvider : IUnknown](ixpprovideriunknown.md) and [IXPLogon : IUnknown](ixplogoniunknown.md) interfaces.</span></span> 
+- <span data-ttu-id="1afe1-109">[IXPProvider : IUnknown](ixpprovideriunknown.md)と[IXPLogon : IUnknown](ixplogoniunknown.md)インターフェイスの実装を MAPI に公開します。</span><span class="sxs-lookup"><span data-stu-id="1afe1-109">Expose to MAPI its implementation of the [IXPProvider : IUnknown](ixpprovideriunknown.md) and [IXPLogon : IUnknown](ixplogoniunknown.md) interfaces.</span></span> 
     
-- <span data-ttu-id="00736-110">MAPI およびクライアントアプリケーションに対して、 [imapistatus: imapistatus](imapistatusimapiprop.md)インターフェイスの実装を公開します。</span><span class="sxs-lookup"><span data-stu-id="00736-110">Expose to MAPI and client applications its implementation of the [IMAPIStatus : IMAPIProp](imapistatusimapiprop.md) interface.</span></span> <span data-ttu-id="00736-111">**imapistatus**の実装の詳細については、「 [status オブジェクトの実装](status-object-implementation.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="00736-111">For more information about implementing **IMAPIStatus**, see [Status Object Implementation](status-object-implementation.md).</span></span> 
+- <span data-ttu-id="1afe1-110">MAPI およびクライアント アプリケーションに対して [IMAPIStatus : IMAPIProp インターフェイスの実装を公開](imapistatusimapiprop.md) します。</span><span class="sxs-lookup"><span data-stu-id="1afe1-110">Expose to MAPI and client applications its implementation of the [IMAPIStatus : IMAPIProp](imapistatusimapiprop.md) interface.</span></span> <span data-ttu-id="1afe1-111">**IMAPIStatus** の実装の詳細については、「Status Object Implementation [」を参照してください](status-object-implementation.md)。</span><span class="sxs-lookup"><span data-stu-id="1afe1-111">For more information about implementing **IMAPIStatus**, see [Status Object Implementation](status-object-implementation.md).</span></span> 
     
-- <span data-ttu-id="00736-112">構成用のプロパティシートダイアログボックスを実装します。</span><span class="sxs-lookup"><span data-stu-id="00736-112">Implement a property sheet dialog box for configuration.</span></span> <span data-ttu-id="00736-113">プロパティシートの実装の詳細については、「[プロパティシートの実装](property-sheet-implementation.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="00736-113">For more information about implementing property sheets, see [Property Sheet Implementation](property-sheet-implementation.md).</span></span>
+- <span data-ttu-id="1afe1-112">構成用のプロパティ シート ダイアログ ボックスを実装します。</span><span class="sxs-lookup"><span data-stu-id="1afe1-112">Implement a property sheet dialog box for configuration.</span></span> <span data-ttu-id="1afe1-113">プロパティ シートの実装の詳細については、「プロパティ シートの [実装」を参照してください](property-sheet-implementation.md)。</span><span class="sxs-lookup"><span data-stu-id="1afe1-113">For more information about implementing property sheets, see [Property Sheet Implementation](property-sheet-implementation.md).</span></span>
     
 

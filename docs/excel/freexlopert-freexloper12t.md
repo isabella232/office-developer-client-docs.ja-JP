@@ -19,26 +19,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421523"
 ---
-# <a name="freexlopertfreexloper12t"></a><span data-ttu-id="9cb42-104">FreeXLOperT/FreeXLOper12T</span><span class="sxs-lookup"><span data-stu-id="9cb42-104">FreeXLOperT/FreeXLOper12T</span></span>
+# <a name="freexlopertfreexloper12t"></a><span data-ttu-id="b5cbe-104">FreeXLOperT/FreeXLOper12T</span><span class="sxs-lookup"><span data-stu-id="b5cbe-104">FreeXLOperT/FreeXLOper12T</span></span>
 
- <span data-ttu-id="9cb42-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="9cb42-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
+ <span data-ttu-id="b5cbe-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="b5cbe-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
   
-<span data-ttu-id="9cb42-p101">**XLOPER**/ **XLOPER12** に関連付けられているメモリを解放するフレームワーク関数。この関数は、DLL 内での malloc の呼び出しでメモリが割り当てられたことを前提としています。Microsoft Excel、その他の何らかの方法、または他のプロセスによりメモリが割り当てられた場合は、この関数を使用してメモリを解放すべきではありません。Excel によって **XLOPER**/ **XLOPER12** に割り当てられたメモリを解放するには、[xlFree](xlfree.md) を使用します。</span><span class="sxs-lookup"><span data-stu-id="9cb42-p101">Framework function that frees memory associated with an **XLOPER**/ **XLOPER12**. The function assumes that the memory was allocated with calls to malloc within the DLL. If the memory was allocated by Microsoft Excel or in some other way or by some other process, this function should not be used to free the memory. Use [xlFree](xlfree.md) to free memory allocated by Excel for **XLOPER**/ **XLOPER12**s.</span></span> 
+<span data-ttu-id="b5cbe-p101">**XLOPER**/ **XLOPER12** に関連付けられているメモリを解放するフレームワーク関数。この関数は、DLL 内での malloc の呼び出しでメモリが割り当てられたことを前提としています。Microsoft Excel、その他の何らかの方法、または他のプロセスによりメモリが割り当てられた場合は、この関数を使用してメモリを解放すべきではありません。Excel によって **XLOPER**/ **XLOPER12** に割り当てられたメモリを解放するには、[xlFree](xlfree.md) を使用します。</span><span class="sxs-lookup"><span data-stu-id="b5cbe-p101">Framework function that frees memory associated with an **XLOPER**/ **XLOPER12**. The function assumes that the memory was allocated with calls to malloc within the DLL. If the memory was allocated by Microsoft Excel or in some other way or by some other process, this function should not be used to free the memory. Use [xlFree](xlfree.md) to free memory allocated by Excel for **XLOPER**/ **XLOPER12** s.</span></span> 
   
 ```cs
 void FreeXLOperT(LPXLOPER pxloper);
 void FreeXLOper12T(LPXLOPER12 pxloper12);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="9cb42-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="9cb42-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="b5cbe-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b5cbe-110">Parameters</span></span>
 
- <span data-ttu-id="9cb42-111">_pxloper_ (**LPXLOPER**)</span><span class="sxs-lookup"><span data-stu-id="9cb42-111">_pxloper_ (**LPXLOPER**)</span></span>
+ <span data-ttu-id="b5cbe-111">_pxloper_ (**LPXLOPER**)</span><span class="sxs-lookup"><span data-stu-id="b5cbe-111">_pxloper_ (**LPXLOPER**)</span></span>
   
- <span data-ttu-id="9cb42-112">_pxloper12_ (**LPXLOPER12**)</span><span class="sxs-lookup"><span data-stu-id="9cb42-112">_pxloper12_ (**LPXLOPER12**)</span></span>
+ <span data-ttu-id="b5cbe-112">_pxloper12_ (**LPXLOPER12**)</span><span class="sxs-lookup"><span data-stu-id="b5cbe-112">_pxloper12_ (**LPXLOPER12**)</span></span>
   
-<span data-ttu-id="9cb42-113">解放する **XLOPER**/ **XLOPER12** へのポインター。</span><span class="sxs-lookup"><span data-stu-id="9cb42-113">Pointer to the **XLOPER**/ **XLOPER12** to be freed.</span></span> 
+<span data-ttu-id="b5cbe-113">解放する **XLOPER**/ **XLOPER12** へのポインター。</span><span class="sxs-lookup"><span data-stu-id="b5cbe-113">Pointer to the **XLOPER**/ **XLOPER12** to be freed.</span></span> 
   
-## <a name="example"></a><span data-ttu-id="9cb42-114">例</span><span class="sxs-lookup"><span data-stu-id="9cb42-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b5cbe-114">例</span><span class="sxs-lookup"><span data-stu-id="b5cbe-114">Example</span></span>
 
  `\SAMPLES\FRAMEWRK\FRAMEWRK.C`
   
@@ -81,9 +81,9 @@ void FreeXLOper12T(LPXLOPER12 pxloper12)
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="9cb42-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="9cb42-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b5cbe-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="b5cbe-115">See also</span></span>
 
 
 
-[<span data-ttu-id="9cb42-116">フレームワーク ライブラリの関数</span><span class="sxs-lookup"><span data-stu-id="9cb42-116">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
+[<span data-ttu-id="b5cbe-116">フレームワーク ライブラリの関数</span><span class="sxs-lookup"><span data-stu-id="b5cbe-116">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
 

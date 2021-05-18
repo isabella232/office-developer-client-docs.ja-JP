@@ -19,46 +19,46 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33422307"
 ---
-# <a name="pidtagserviceextrauids-canonical-property"></a><span data-ttu-id="ed04c-103">PidTagServiceExtraUids 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="ed04c-103">PidTagServiceExtraUids Canonical Property</span></span>
+# <a name="pidtagserviceextrauids-canonical-property"></a><span data-ttu-id="ad556-103">PidTagServiceExtraUids 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="ad556-103">PidTagServiceExtraUids Canonical Property</span></span>
 
   
   
-<span data-ttu-id="ed04c-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ed04c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="ad556-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ad556-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="ed04c-105">メッセージサービスの追加のプロファイルセクションを識別する[MAPIUID](mapiuid.md)構造体の一覧が含まれています。</span><span class="sxs-lookup"><span data-stu-id="ed04c-105">Contains a list of [MAPIUID](mapiuid.md) structures that identify additional profile sections for the message service.</span></span> 
+<span data-ttu-id="ad556-105">メッセージ サービスの追加のプロファイル セクションを識別する [MAPIUID](mapiuid.md) 構造の一覧が含まれています。</span><span class="sxs-lookup"><span data-stu-id="ad556-105">Contains a list of [MAPIUID](mapiuid.md) structures that identify additional profile sections for the message service.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="ed04c-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="ed04c-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="ed04c-107">PR_SERVICE_EXTRA_UIDS</span><span class="sxs-lookup"><span data-stu-id="ed04c-107">PR_SERVICE_EXTRA_UIDS</span></span>  <br/> |
-|<span data-ttu-id="ed04c-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="ed04c-108">Identifier:</span></span>  <br/> |<span data-ttu-id="ed04c-109">0x3d0d</span><span class="sxs-lookup"><span data-stu-id="ed04c-109">0x3D0D</span></span>  <br/> |
-|<span data-ttu-id="ed04c-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="ed04c-110">Data type:</span></span>  <br/> |<span data-ttu-id="ed04c-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="ed04c-111">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="ed04c-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="ed04c-112">Area:</span></span>  <br/> |<span data-ttu-id="ed04c-113">MAPI プロファイル</span><span class="sxs-lookup"><span data-stu-id="ed04c-113">MAPI profile</span></span>  <br/> |
+|<span data-ttu-id="ad556-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="ad556-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="ad556-107">PR_SERVICE_EXTRA_UIDS</span><span class="sxs-lookup"><span data-stu-id="ad556-107">PR_SERVICE_EXTRA_UIDS</span></span>  <br/> |
+|<span data-ttu-id="ad556-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="ad556-108">Identifier:</span></span>  <br/> |<span data-ttu-id="ad556-109">0x3D0D</span><span class="sxs-lookup"><span data-stu-id="ad556-109">0x3D0D</span></span>  <br/> |
+|<span data-ttu-id="ad556-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="ad556-110">Data type:</span></span>  <br/> |<span data-ttu-id="ad556-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="ad556-111">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="ad556-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="ad556-112">Area:</span></span>  <br/> |<span data-ttu-id="ad556-113">MAPI プロファイル</span><span class="sxs-lookup"><span data-stu-id="ad556-113">MAPI profile</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="ed04c-114">注釈</span><span class="sxs-lookup"><span data-stu-id="ed04c-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ad556-114">注釈</span><span class="sxs-lookup"><span data-stu-id="ad556-114">Remarks</span></span>
 
-<span data-ttu-id="ed04c-115">メッセージフィルターごとに新しいプロファイルセクションを作成できます。</span><span class="sxs-lookup"><span data-stu-id="ed04c-115">New profile sections can be created for each message filter.</span></span> <span data-ttu-id="ed04c-116">メッセージサービスに関する情報を別のプロファイルにコピーする場合は、フィルターの追加のプロファイルセクションもコピーすることが重要です。</span><span class="sxs-lookup"><span data-stu-id="ed04c-116">When the information about the message service is to be copied to another profile, it is important to copy the additional profile sections for the filters as well.</span></span> <span data-ttu-id="ed04c-117">追加のプロファイルセクションを使用するサービスプロバイダーは、これらのプロファイルセクションの**MAPIUID**構造を**PR_SERVICE_EXTRA_UIDS**に格納することができます。これにより、MAPI が追加のメッセージサービス情報をコピーできるようになります。</span><span class="sxs-lookup"><span data-stu-id="ed04c-117">A service provider that uses additional profile sections can store the **MAPIUID** structures of those profile sections in **PR_SERVICE_EXTRA_UIDS**, which allows MAPI to copy the additional message service information.</span></span>
+<span data-ttu-id="ad556-115">メッセージ フィルターごとに新しいプロファイル セクションを作成できます。</span><span class="sxs-lookup"><span data-stu-id="ad556-115">New profile sections can be created for each message filter.</span></span> <span data-ttu-id="ad556-116">メッセージ サービスに関する情報を別のプロファイルにコピーする場合は、フィルターの追加プロファイル セクションもコピーすることが重要です。</span><span class="sxs-lookup"><span data-stu-id="ad556-116">When the information about the message service is to be copied to another profile, it is important to copy the additional profile sections for the filters as well.</span></span> <span data-ttu-id="ad556-117">追加のプロファイル セクションを使用するサービス プロバイダーは、これらのプロファイル セクションの **MAPIUID** 構造を PR_SERVICE_EXTRA_UIDS に格納できます **。これにより**、MAPI は追加のメッセージ サービス情報をコピーできます。</span><span class="sxs-lookup"><span data-stu-id="ad556-117">A service provider that uses additional profile sections can store the **MAPIUID** structures of those profile sections in **PR_SERVICE_EXTRA_UIDS**, which allows MAPI to copy the additional message service information.</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="ed04c-118">関連リソース</span><span class="sxs-lookup"><span data-stu-id="ed04c-118">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="ad556-118">関連リソース</span><span class="sxs-lookup"><span data-stu-id="ad556-118">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="ed04c-119">ヘッダーファイル</span><span class="sxs-lookup"><span data-stu-id="ed04c-119">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="ad556-119">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="ad556-119">Header files</span></span>
 
-<span data-ttu-id="ed04c-120">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="ed04c-120">Mapidefs.h</span></span>
+<span data-ttu-id="ad556-120">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="ad556-120">Mapidefs.h</span></span>
   
-> <span data-ttu-id="ed04c-121">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="ed04c-121">Provides data type definitions.</span></span>
+> <span data-ttu-id="ad556-121">データ型の定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="ad556-121">Provides data type definitions.</span></span>
     
-<span data-ttu-id="ed04c-122">Mapitags</span><span class="sxs-lookup"><span data-stu-id="ed04c-122">Mapitags.h</span></span>
+<span data-ttu-id="ad556-122">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="ad556-122">Mapitags.h</span></span>
   
-> <span data-ttu-id="ed04c-123">代替名としてリストされているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="ed04c-123">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="ad556-123">代替名として一覧表示されるプロパティの定義が含まれる。</span><span class="sxs-lookup"><span data-stu-id="ad556-123">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="ed04c-124">関連項目</span><span class="sxs-lookup"><span data-stu-id="ed04c-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ad556-124">関連項目</span><span class="sxs-lookup"><span data-stu-id="ad556-124">See also</span></span>
 
 
 
-[<span data-ttu-id="ed04c-125">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="ed04c-125">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="ad556-125">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="ad556-125">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="ed04c-126">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="ed04c-126">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="ad556-126">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="ad556-126">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="ed04c-127">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="ed04c-127">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="ad556-127">標準プロパティ名を MAPI 名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="ad556-127">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="ed04c-128">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="ed04c-128">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="ad556-128">MAPI 名を標準プロパティ名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="ad556-128">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

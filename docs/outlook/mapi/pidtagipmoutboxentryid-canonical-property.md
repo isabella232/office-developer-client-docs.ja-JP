@@ -19,46 +19,46 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33405059"
 ---
-# <a name="pidtagipmoutboxentryid-canonical-property"></a><span data-ttu-id="28233-103">PidTagIpmOutboxEntryId 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="28233-103">PidTagIpmOutboxEntryId Canonical Property</span></span>
+# <a name="pidtagipmoutboxentryid-canonical-property"></a><span data-ttu-id="63b34-103">PidTagIpmOutboxEntryId 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="63b34-103">PidTagIpmOutboxEntryId Canonical Property</span></span>
 
   
   
-<span data-ttu-id="28233-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="28233-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="63b34-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="63b34-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="28233-105">標準の個人間メッセージ (IPM) 送信トレイフォルダーのエントリ識別子を含みます。</span><span class="sxs-lookup"><span data-stu-id="28233-105">Contains the entry identifier of the standard interpersonal message (IPM) Outbox folder.</span></span> 
+<span data-ttu-id="63b34-105">標準の対人間メッセージ (IPM) 送信ボックス フォルダーのエントリ識別子を格納します。</span><span class="sxs-lookup"><span data-stu-id="63b34-105">Contains the entry identifier of the standard interpersonal message (IPM) Outbox folder.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="28233-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="28233-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="28233-107">PR_IPM_OUTBOX_ENTRYID</span><span class="sxs-lookup"><span data-stu-id="28233-107">PR_IPM_OUTBOX_ENTRYID</span></span>  <br/> |
-|<span data-ttu-id="28233-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="28233-108">Identifier:</span></span>  <br/> |<span data-ttu-id="28233-109">0x35e2</span><span class="sxs-lookup"><span data-stu-id="28233-109">0x35E2</span></span>  <br/> |
-|<span data-ttu-id="28233-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="28233-110">Data type:</span></span>  <br/> |<span data-ttu-id="28233-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="28233-111">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="28233-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="28233-112">Area:</span></span>  <br/> |<span data-ttu-id="28233-113">フォルダー</span><span class="sxs-lookup"><span data-stu-id="28233-113">Folder</span></span>  <br/> |
+|<span data-ttu-id="63b34-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="63b34-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="63b34-107">PR_IPM_OUTBOX_ENTRYID</span><span class="sxs-lookup"><span data-stu-id="63b34-107">PR_IPM_OUTBOX_ENTRYID</span></span>  <br/> |
+|<span data-ttu-id="63b34-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="63b34-108">Identifier:</span></span>  <br/> |<span data-ttu-id="63b34-109">0x35E2</span><span class="sxs-lookup"><span data-stu-id="63b34-109">0x35E2</span></span>  <br/> |
+|<span data-ttu-id="63b34-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="63b34-110">Data type:</span></span>  <br/> |<span data-ttu-id="63b34-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="63b34-111">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="63b34-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="63b34-112">Area:</span></span>  <br/> |<span data-ttu-id="63b34-113">Folder</span><span class="sxs-lookup"><span data-stu-id="63b34-113">Folder</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="28233-114">注釈</span><span class="sxs-lookup"><span data-stu-id="28233-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="63b34-114">注釈</span><span class="sxs-lookup"><span data-stu-id="63b34-114">Remarks</span></span>
 
-<span data-ttu-id="28233-115">通常、送信メッセージは送信トレイフォルダーに作成されます。</span><span class="sxs-lookup"><span data-stu-id="28233-115">Outbound messages are usually created in the Outbox folder.</span></span> <span data-ttu-id="28233-116">送信用に、個人間メッセージをこのフォルダーに配置する必要があります。</span><span class="sxs-lookup"><span data-stu-id="28233-116">Interpersonal messages should be placed in this folder for submission.</span></span> 
+<span data-ttu-id="63b34-115">送信メッセージは通常、送信ボックス フォルダーに作成されます。</span><span class="sxs-lookup"><span data-stu-id="63b34-115">Outbound messages are usually created in the Outbox folder.</span></span> <span data-ttu-id="63b34-116">送信のために、このフォルダーに対人間メッセージを配置する必要があります。</span><span class="sxs-lookup"><span data-stu-id="63b34-116">Interpersonal messages should be placed in this folder for submission.</span></span> 
   
-## <a name="related-resources"></a><span data-ttu-id="28233-117">関連リソース</span><span class="sxs-lookup"><span data-stu-id="28233-117">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="63b34-117">関連リソース</span><span class="sxs-lookup"><span data-stu-id="63b34-117">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="28233-118">ヘッダーファイル</span><span class="sxs-lookup"><span data-stu-id="28233-118">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="63b34-118">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="63b34-118">Header files</span></span>
 
-<span data-ttu-id="28233-119">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="28233-119">Mapidefs.h</span></span>
+<span data-ttu-id="63b34-119">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="63b34-119">Mapidefs.h</span></span>
   
-> <span data-ttu-id="28233-120">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="28233-120">Provides data type definitions.</span></span>
+> <span data-ttu-id="63b34-120">データ型の定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="63b34-120">Provides data type definitions.</span></span>
     
-<span data-ttu-id="28233-121">Mapitags</span><span class="sxs-lookup"><span data-stu-id="28233-121">Mapitags.h</span></span>
+<span data-ttu-id="63b34-121">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="63b34-121">Mapitags.h</span></span>
   
-> <span data-ttu-id="28233-122">代替名としてリストされているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="28233-122">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="63b34-122">代替名として一覧表示されるプロパティの定義が含まれる。</span><span class="sxs-lookup"><span data-stu-id="63b34-122">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="28233-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="28233-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="63b34-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="63b34-123">See also</span></span>
 
 
 
-[<span data-ttu-id="28233-124">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="28233-124">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="63b34-124">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="63b34-124">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="28233-125">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="28233-125">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="63b34-125">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="63b34-125">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="28233-126">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="28233-126">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="63b34-126">標準プロパティ名を MAPI 名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="63b34-126">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="28233-127">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="28233-127">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="63b34-127">MAPI 名を標準プロパティ名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="63b34-127">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

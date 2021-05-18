@@ -16,12 +16,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33404163"
 ---
-# <a name="text-transform-section"></a><span data-ttu-id="5f1b1-103">[Text Transform] セクション</span><span class="sxs-lookup"><span data-stu-id="5f1b1-103">Text Transform Section</span></span>
+# <a name="text-transform-section"></a><span data-ttu-id="9553e-103">[Text Transform] セクション</span><span class="sxs-lookup"><span data-stu-id="9553e-103">Text Transform Section</span></span>
 
-<span data-ttu-id="5f1b1-104">図形のテキスト ブロックに関する位置の情報を格納します。</span><span class="sxs-lookup"><span data-stu-id="5f1b1-104">Contains positioning information about a shape's text block.</span></span>
+<span data-ttu-id="9553e-104">図形のテキスト ブロックに関する位置の情報を格納します。</span><span class="sxs-lookup"><span data-stu-id="9553e-104">Contains positioning information about a shape's text block.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="5f1b1-105">注釈</span><span class="sxs-lookup"><span data-stu-id="5f1b1-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9553e-105">注釈</span><span class="sxs-lookup"><span data-stu-id="9553e-105">Remarks</span></span>
 
-<span data-ttu-id="5f1b1-106">このセクションを追加するには、[**セクションの挿入**] ダイアログ ボックスを使用します (このダイアログ ボックスを開くには、[シェイプシート] ウィンドウで右クリックして、[**セクションの挿入**] をクリックします)。</span><span class="sxs-lookup"><span data-stu-id="5f1b1-106">To add this section, use the **Insert Section** dialog box (right-click in the ShapeSheet window and click **Insert Section**).</span></span> <span data-ttu-id="5f1b1-107">[**テキスト変換**] セクションで値を設定することは、テキストブロックツール ([ \*\*\*\* **ホーム**] タブの [**ツール**] グループ) を使用してテキストブロックを処理するのと同じです。</span><span class="sxs-lookup"><span data-stu-id="5f1b1-107">Setting values in the **Text Transform** section is comparable to working with the text block by using the **Text Block** tool (the **Tools** group on the **Home** tab).</span></span> 
+<span data-ttu-id="9553e-106">このセクションを追加するには、[**セクションの挿入**] ダイアログ ボックスを使用します (このダイアログ ボックスを開くには、[シェイプシート] ウィンドウで右クリックして、[**セクションの挿入**] をクリックします)。</span><span class="sxs-lookup"><span data-stu-id="9553e-106">To add this section, use the **Insert Section** dialog box (right-click in the ShapeSheet window and click **Insert Section**).</span></span> <span data-ttu-id="9553e-107">[テキスト変換] セクション **の値** の設定は、[テキスト ブロック] ツール([ホーム] タブの [**ツール**] グループ) を使用してテキスト ブロックを操作する場合と **同** じになります。</span><span class="sxs-lookup"><span data-stu-id="9553e-107">Setting values in the **Text Transform** section is comparable to working with the text block by using the **Text Block** tool (the **Tools** group on the **Home** tab).</span></span> 
   
 

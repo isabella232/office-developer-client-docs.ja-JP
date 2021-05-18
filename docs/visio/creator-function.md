@@ -16,10 +16,10 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33422699"
 ---
-# <a name="creator-function"></a><span data-ttu-id="826d3-103">CREATOR 関数</span><span class="sxs-lookup"><span data-stu-id="826d3-103">CREATOR Function</span></span>
+# <a name="creator-function"></a><span data-ttu-id="ebc79-103">CREATOR 関数</span><span class="sxs-lookup"><span data-stu-id="ebc79-103">CREATOR Function</span></span>
 
-<span data-ttu-id="826d3-104">図面のプロパティの [**作成者**] フィールドにあるテキストを返します。</span><span class="sxs-lookup"><span data-stu-id="826d3-104">Returns the text from the **Author** field of a document's properties.</span></span> 
+<span data-ttu-id="ebc79-104">図面のプロパティの [**作成者**] フィールドにあるテキストを返します。</span><span class="sxs-lookup"><span data-stu-id="ebc79-104">Returns the text from the **Author** field of a document's properties.</span></span> 
   
-<span data-ttu-id="826d3-105">CREATOR ()</span><span class="sxs-lookup"><span data-stu-id="826d3-105">CREATOR ()</span></span> 
+<span data-ttu-id="ebc79-105">CREATOR ()</span><span class="sxs-lookup"><span data-stu-id="ebc79-105">CREATOR ()</span></span> 
   
 

@@ -14,13 +14,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33422601"
 ---
-# <a name="data-types-account-management-api"></a><span data-ttu-id="d0b0c-103">データ型 (アカウント管理 API)</span><span class="sxs-lookup"><span data-stu-id="d0b0c-103">Data types (Account management API)</span></span>
+# <a name="data-types-account-management-api"></a><span data-ttu-id="d830d-103">データ型 (アカウント管理 API)</span><span class="sxs-lookup"><span data-stu-id="d830d-103">Data types (Account management API)</span></span>
 
-<span data-ttu-id="d0b0c-104">このセクションでは、アカウント管理 API のデータ型について説明します。</span><span class="sxs-lookup"><span data-stu-id="d0b0c-104">This section describes the data types in the Account Management API.</span></span>
+<span data-ttu-id="d830d-104">このセクションでは、アカウント管理 API のデータ型について説明します。</span><span class="sxs-lookup"><span data-stu-id="d830d-104">This section describes the data types in the Account Management API.</span></span>
   
-|<span data-ttu-id="d0b0c-105">**データ型**</span><span class="sxs-lookup"><span data-stu-id="d0b0c-105">**Data type**</span></span>|<span data-ttu-id="d0b0c-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="d0b0c-106">**Description**</span></span>|
+|<span data-ttu-id="d830d-105">**データ型**</span><span class="sxs-lookup"><span data-stu-id="d830d-105">**Data type**</span></span>|<span data-ttu-id="d830d-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="d830d-106">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="d0b0c-107">ACCT_BIN</span><span class="sxs-lookup"><span data-stu-id="d0b0c-107">ACCT_BIN</span></span>](acct_bin.md) <br/> |<span data-ttu-id="d0b0c-108">このデータ型の変数は、バイナリ値を保持します。</span><span class="sxs-lookup"><span data-stu-id="d0b0c-108">A variable of this data type holds a binary value.</span></span>  <br/> |
-|[<span data-ttu-id="d0b0c-109">ACCT_VARIANT</span><span class="sxs-lookup"><span data-stu-id="d0b0c-109">ACCT_VARIANT</span></span>](acct_variant.md) <br/> |<span data-ttu-id="d0b0c-110">このデータ型の変数は、バリアント型 (variant) のデータ型のプロパティの値を保持します。</span><span class="sxs-lookup"><span data-stu-id="d0b0c-110">A variable of this data type holds the value of a property, which is of a variant data type.</span></span>  <br/> |
+|[<span data-ttu-id="d830d-107">ACCT_BIN</span><span class="sxs-lookup"><span data-stu-id="d830d-107">ACCT_BIN</span></span>](acct_bin.md) <br/> |<span data-ttu-id="d830d-108">このデータ型の変数はバイナリ値を保持します。</span><span class="sxs-lookup"><span data-stu-id="d830d-108">A variable of this data type holds a binary value.</span></span>  <br/> |
+|[<span data-ttu-id="d830d-109">ACCT_VARIANT</span><span class="sxs-lookup"><span data-stu-id="d830d-109">ACCT_VARIANT</span></span>](acct_variant.md) <br/> |<span data-ttu-id="d830d-110">このデータ型の変数は、バリアント 型であるプロパティの値を保持します。</span><span class="sxs-lookup"><span data-stu-id="d830d-110">A variable of this data type holds the value of a property, which is of a variant data type.</span></span>  <br/> |
    
 

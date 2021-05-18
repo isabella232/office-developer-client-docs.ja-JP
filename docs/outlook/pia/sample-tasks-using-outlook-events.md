@@ -14,17 +14,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32286309"
 ---
-# <a name="sample-tasks-using-outlook-events"></a><span data-ttu-id="a05cb-102">Outlook のイベントを使用するサンプル タスク</span><span class="sxs-lookup"><span data-stu-id="a05cb-102">Sample tasks using Outlook events</span></span>
+# <a name="sample-tasks-using-outlook-events"></a><span data-ttu-id="35cf4-102">Outlook のイベントを使用するサンプル タスク</span><span class="sxs-lookup"><span data-stu-id="35cf4-102">Sample tasks using Outlook events</span></span>
 
-<span data-ttu-id="a05cb-103">このセクションでは、Microsoft Outlook の PIA イベントに関するサンプル タスクを示します。</span><span class="sxs-lookup"><span data-stu-id="a05cb-103">This section provides sample tasks that involve Microsoft Outlook PIA events.</span></span>
+<span data-ttu-id="35cf4-103">このセクションでは、Microsoft Outlook の PIA イベントに関するサンプル タスクを示します。</span><span class="sxs-lookup"><span data-stu-id="35cf4-103">This section provides sample tasks that involve Microsoft Outlook PIA events.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="a05cb-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="a05cb-104">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="35cf4-104">このセクションの内容</span><span class="sxs-lookup"><span data-stu-id="35cf4-104">In this section</span></span>
 
-|<span data-ttu-id="a05cb-105">トピック</span><span class="sxs-lookup"><span data-stu-id="a05cb-105">Topic</span></span>|<span data-ttu-id="a05cb-106">説明</span><span class="sxs-lookup"><span data-stu-id="a05cb-106">Description</span></span>|
+|<span data-ttu-id="35cf4-105">トピック</span><span class="sxs-lookup"><span data-stu-id="35cf4-105">Topic</span></span>|<span data-ttu-id="35cf4-106">説明</span><span class="sxs-lookup"><span data-stu-id="35cf4-106">Description</span></span>|
 |:----|:----------|
-|[<span data-ttu-id="a05cb-107">インスペクターのラッパーを実装し、インスペクターごとにアイテム レベルのイベントを追跡する</span><span class="sxs-lookup"><span data-stu-id="a05cb-107">Implement a wrapper for inspectors and track item-level events in each inspector</span></span>](how-to-implement-a-wrapper-for-inspectors-and-track-item-level-events-in-each-inspector.md)  |<span data-ttu-id="a05cb-108">[Inspectors](https://msdn.microsoft.com/library/bb623458\(v=office.15\)) コレクションのラッパーを実装します。また、このラッパーを使用して、コレクション内の各 [Inspector](https://msdn.microsoft.com/library/bb647744\(v=office.15\)) オブジェクトでアイテム レベルのイベントを追跡します。</span><span class="sxs-lookup"><span data-stu-id="a05cb-108">Implements a wrapper for an [Inspectors](https://msdn.microsoft.com/library/bb623458\(v=office.15\)) collection, and uses that wrapper to track item-level events in each [Inspector](https://msdn.microsoft.com/library/bb647744\(v=office.15\)) object in the collection.</span></span>|
+|[<span data-ttu-id="35cf4-107">インスペクターのラッパーを実装し、インスペクターごとにアイテム レベルのイベントを追跡する</span><span class="sxs-lookup"><span data-stu-id="35cf4-107">Implement a wrapper for inspectors and track item-level events in each inspector</span></span>](how-to-implement-a-wrapper-for-inspectors-and-track-item-level-events-in-each-inspector.md)  |<span data-ttu-id="35cf4-108">[Inspectors](https://msdn.microsoft.com/library/bb623458\(v=office.15\)) コレクションのラッパーを実装します。また、このラッパーを使用して、コレクション内の各 [Inspector](https://msdn.microsoft.com/library/bb647744\(v=office.15\)) オブジェクトでアイテム レベルのイベントを追跡します。</span><span class="sxs-lookup"><span data-stu-id="35cf4-108">Implements a wrapper for an [Inspectors](https://msdn.microsoft.com/library/bb623458\(v=office.15\)) collection, and uses that wrapper to track item-level events in each [Inspector](https://msdn.microsoft.com/library/bb647744\(v=office.15\)) object in the collection.</span></span>|
 
-## <a name="see-also"></a><span data-ttu-id="a05cb-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="a05cb-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="35cf4-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="35cf4-109">See also</span></span>
 
-- [<span data-ttu-id="a05cb-110">操作方法 (Outlook 2013 PIA リファレンス)</span><span class="sxs-lookup"><span data-stu-id="a05cb-110">How do I... (Outlook 2013 PIA reference)</span></span>](how-do-i-outlook-2013-pia-reference.md)
+- [<span data-ttu-id="35cf4-110">操作方法 (Outlook 2013 PIA リファレンス)</span><span class="sxs-lookup"><span data-stu-id="35cf4-110">How do I... (Outlook 2013 PIA reference)</span></span>](how-do-i-outlook-2013-pia-reference.md)
 

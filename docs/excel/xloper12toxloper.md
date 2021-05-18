@@ -18,47 +18,47 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33422909"
 ---
-# <a name="xloper12toxloper"></a><span data-ttu-id="5f552-104">XLOper12ToXLOper</span><span class="sxs-lookup"><span data-stu-id="5f552-104">XLOper12ToXLOper</span></span>
+# <a name="xloper12toxloper"></a><span data-ttu-id="bf45c-104">XLOper12ToXLOper</span><span class="sxs-lookup"><span data-stu-id="bf45c-104">XLOper12ToXLOper</span></span>
 
-<span data-ttu-id="5f552-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="5f552-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
+<span data-ttu-id="bf45c-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="bf45c-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
   
-<span data-ttu-id="5f552-106">新しい **XLOPER12** から古いい **XLOPER** への変換に使用する変換ルーチンです。</span><span class="sxs-lookup"><span data-stu-id="5f552-106">Conversion routine used to convert from the new **XLOPER12** to the old **XLOPER**.</span></span>
+<span data-ttu-id="bf45c-106">新しい **XLOPER12** から古いい **XLOPER** への変換に使用する変換ルーチンです。</span><span class="sxs-lookup"><span data-stu-id="bf45c-106">Conversion routine used to convert from the new **XLOPER12** to the old **XLOPER**.</span></span>
   
 ```cs
 BOOL XLOper12ToXLOper(LPXLOPER12 pxloper12, LPXLOPER pxloper);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="5f552-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5f552-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="bf45c-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bf45c-107">Parameters</span></span>
 
-<span data-ttu-id="5f552-108">_pxloper12_ (**LPXLOPER12**)</span><span class="sxs-lookup"><span data-stu-id="5f552-108">_pxloper12_ (**LPXLOPER12**)</span></span>
+<span data-ttu-id="bf45c-108">_pxloper12_ (**LPXLOPER12**)</span><span class="sxs-lookup"><span data-stu-id="bf45c-108">_pxloper12_ (**LPXLOPER12**)</span></span>
   
-<span data-ttu-id="5f552-109">変換対象のソース **XLOPER12** へのポインター。</span><span class="sxs-lookup"><span data-stu-id="5f552-109">Pointer to the source **XLOPER12** to be converted.</span></span> 
+<span data-ttu-id="bf45c-109">変換対象のソース **XLOPER12** へのポインター。</span><span class="sxs-lookup"><span data-stu-id="bf45c-109">Pointer to the source **XLOPER12** to be converted.</span></span> 
   
-<span data-ttu-id="5f552-110">_pxloper_ (**LPXLOPER**)</span><span class="sxs-lookup"><span data-stu-id="5f552-110">_pxloper_ (**LPXLOPER**)</span></span>
+<span data-ttu-id="bf45c-110">_pxloper_ (**LPXLOPER**)</span><span class="sxs-lookup"><span data-stu-id="bf45c-110">_pxloper_ (**LPXLOPER**)</span></span>
   
-<span data-ttu-id="5f552-111">変換された値を格納するターゲット **XLOPER** へのポインター。</span><span class="sxs-lookup"><span data-stu-id="5f552-111">Pointer to the target **XLOPER** to contain the converted value.</span></span> 
+<span data-ttu-id="bf45c-111">変換された値を格納するターゲット **XLOPER** へのポインター。</span><span class="sxs-lookup"><span data-stu-id="bf45c-111">Pointer to the target **XLOPER** to contain the converted value.</span></span> 
   
-## <a name="property-valuereturn-value"></a><span data-ttu-id="5f552-112">プロパティ値/戻り値</span><span class="sxs-lookup"><span data-stu-id="5f552-112">Property value/Return value</span></span>
+## <a name="property-valuereturn-value"></a><span data-ttu-id="bf45c-112">プロパティ値/戻り値</span><span class="sxs-lookup"><span data-stu-id="bf45c-112">Property value/Return value</span></span>
 
-<span data-ttu-id="5f552-113">変換が成功した場合は **TRUE**。それ以外の場合は **FALSE**。</span><span class="sxs-lookup"><span data-stu-id="5f552-113">**TRUE** if the conversion succeeded, **FALSE** otherwise.</span></span> 
+<span data-ttu-id="bf45c-113">変換が成功した場合は **TRUE**。それ以外の場合は **FALSE**。</span><span class="sxs-lookup"><span data-stu-id="bf45c-113">**TRUE** if the conversion succeeded, **FALSE** otherwise.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="5f552-114">注釈</span><span class="sxs-lookup"><span data-stu-id="5f552-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bf45c-114">注釈</span><span class="sxs-lookup"><span data-stu-id="bf45c-114">Remarks</span></span>
 
-<span data-ttu-id="5f552-p101">**XLOPER12** の型によっては、この関数は、変換されてターゲット **XLOPER** をポイントする値に新しいメモリ バッファーを割り当てます。変換が成功した場合、そのコピーに関連付けられたメモリを解放する責任は、呼び出し元にあります。メモリを解放するには、**FreeXLOperT** を使用するか、**free** を使用して直接解放します。</span><span class="sxs-lookup"><span data-stu-id="5f552-p101">Depending on the type of the **XLOPER12**, this function allocates a new memory buffer for the converted values, which are pointed to in the target **XLOPER**. The caller is responsible for freeing any memory associated with the copy if the conversion is a success; **FreeXLOperT** can be used, or it can be done directly by using **free**.</span></span>
+<span data-ttu-id="bf45c-p101">**XLOPER12** の型によっては、この関数は、変換されてターゲット **XLOPER** をポイントする値に新しいメモリ バッファーを割り当てます。変換が成功した場合、そのコピーに関連付けられたメモリを解放する責任は、呼び出し元にあります。メモリを解放するには、**FreeXLOperT** を使用するか、**free** を使用して直接解放します。</span><span class="sxs-lookup"><span data-stu-id="bf45c-p101">Depending on the type of the **XLOPER12**, this function allocates a new memory buffer for the converted values, which are pointed to in the target **XLOPER**. The caller is responsible for freeing any memory associated with the copy if the conversion is a success; **FreeXLOperT** can be used, or it can be done directly by using **free**.</span></span>
   
-<span data-ttu-id="5f552-117">変換が失敗した場合は、呼び出し元でメモリを解放する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="5f552-117">If the conversion fails, the caller does not need to free any memory.</span></span>
+<span data-ttu-id="bf45c-117">変換が失敗した場合は、呼び出し元でメモリを解放する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="bf45c-117">If the conversion fails, the caller does not need to free any memory.</span></span>
   
-<span data-ttu-id="5f552-118">**XLOPER12** から **XLOPER** への変換は、**XLOPER12** に収まりきらないほど大きい配列や参照、または長い文字列が **XLOPER** に格納されていると、失敗することがあります。</span><span class="sxs-lookup"><span data-stu-id="5f552-118">Conversion from an **XLOPER12** to an **XLOPER** can fail when the **XLOPER12** contains an array or reference that is too large or a string that is too long for the **XLOPER** to contain.</span></span> 
+<span data-ttu-id="bf45c-118">**XLOPER12** から **XLOPER** への変換は、**XLOPER12** に収まりきらないほど大きい配列や参照、または長い文字列が **XLOPER** に格納されていると、失敗することがあります。</span><span class="sxs-lookup"><span data-stu-id="bf45c-118">Conversion from an **XLOPER12** to an **XLOPER** can fail when the **XLOPER12** contains an array or reference that is too large or a string that is too long for the **XLOPER** to contain.</span></span> 
   
-<span data-ttu-id="5f552-119">**XLOPER12** の Unicode ワイド文字文字列は、ロケールに依存する方法で **XLOPER** の ASCII バイト文字列に変換されます。</span><span class="sxs-lookup"><span data-stu-id="5f552-119">**XLOPER12** Unicode wide-character strings are converted to **XLOPER** ASCII byte strings in a way that is locale-dependent.</span></span> 
+<span data-ttu-id="bf45c-119">**XLOPER12** の Unicode ワイド文字文字列は、ロケールに依存する方法で **XLOPER** の ASCII バイト文字列に変換されます。</span><span class="sxs-lookup"><span data-stu-id="bf45c-119">**XLOPER12** Unicode wide-character strings are converted to **XLOPER** ASCII byte strings in a way that is locale-dependent.</span></span> 
   
-<span data-ttu-id="5f552-p102">**XLOPER12** **xltypeInt** は 32 ビット符号付き整数です。**XLOPER** **xltypeInt** は 16 ビット符号付き整数です。指定された **XLOPER12** 整数が **XLOPER** 整数の制限を超える場合は、その整数は 8 バイトの double に変換され、**xltypeNum** 型の **XLOPER** で返されます。この場合にのみ、この関数は変換した **XLOPER** の型を変更します。</span><span class="sxs-lookup"><span data-stu-id="5f552-p102">The **XLOPER12** **xltypeInt** is a 32-bit signed integer, whereas the **XLOPER** **xltypeInt** is a 16-bit signed integer. When a supplied **XLOPER12** integer exceeds the limit of an **XLOPER** integer, the integer is converted to an 8-byte double and returned in an **XLOPER** of type **xltypeNum**. This is the only case in which this function changes the type of the converted **XLOPER**.</span></span>
+<span data-ttu-id="bf45c-p102">**XLOPER12** **xltypeInt** は 32 ビット符号付き整数です。**XLOPER** **xltypeInt** は 16 ビット符号付き整数です。指定された **XLOPER12** 整数が **XLOPER** 整数の制限を超える場合は、その整数は 8 バイトの double に変換され、**xltypeNum** 型の **XLOPER** で返されます。この場合にのみ、この関数は変換した **XLOPER** の型を変更します。</span><span class="sxs-lookup"><span data-stu-id="bf45c-p102">The **XLOPER12** **xltypeInt** is a 32-bit signed integer, whereas the **XLOPER** **xltypeInt** is a 16-bit signed integer. When a supplied **XLOPER12** integer exceeds the limit of an **XLOPER** integer, the integer is converted to an 8-byte double and returned in an **XLOPER** of type **xltypeNum**. This is the only case in which this function changes the type of the converted **XLOPER**.</span></span>
   
-### <a name="example"></a><span data-ttu-id="5f552-123">例</span><span class="sxs-lookup"><span data-stu-id="5f552-123">Example</span></span>
+### <a name="example"></a><span data-ttu-id="bf45c-123">例</span><span class="sxs-lookup"><span data-stu-id="bf45c-123">Example</span></span>
 
-<span data-ttu-id="5f552-124">この関数のコードについては、`\SAMPLES\FRAMEWRK\FRAMEWRK.C` ファイルを参照してください。</span><span class="sxs-lookup"><span data-stu-id="5f552-124">See the file  `\SAMPLES\FRAMEWRK\FRAMEWRK.C` for the code for this function.</span></span> 
+<span data-ttu-id="bf45c-124">この関数のコードについては、`\SAMPLES\FRAMEWRK\FRAMEWRK.C` ファイルを参照してください。</span><span class="sxs-lookup"><span data-stu-id="bf45c-124">See the file  `\SAMPLES\FRAMEWRK\FRAMEWRK.C` for the code for this function.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="5f552-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="5f552-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bf45c-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="bf45c-125">See also</span></span>
 
-- [<span data-ttu-id="5f552-126">フレームワーク ライブラリの関数</span><span class="sxs-lookup"><span data-stu-id="5f552-126">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
+- [<span data-ttu-id="bf45c-126">フレームワーク ライブラリの関数</span><span class="sxs-lookup"><span data-stu-id="bf45c-126">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
 

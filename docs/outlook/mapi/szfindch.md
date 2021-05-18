@@ -19,17 +19,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421943"
 ---
-# <a name="szfindch"></a><span data-ttu-id="8d06d-103">SzFindCh</span><span class="sxs-lookup"><span data-stu-id="8d06d-103">SzFindCh</span></span>
+# <a name="szfindch"></a><span data-ttu-id="6dea5-103">SzFindCh</span><span class="sxs-lookup"><span data-stu-id="6dea5-103">SzFindCh</span></span>
  
-<span data-ttu-id="8d06d-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="8d06d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="6dea5-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="6dea5-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="8d06d-105">null で終了する文字列内で最初に見つかった文字を検索します。</span><span class="sxs-lookup"><span data-stu-id="8d06d-105">Searches for the first occurrence of a character in a null-terminated string.</span></span> 
+<span data-ttu-id="6dea5-105">null 終端文字列内の文字の最初の出現箇所を検索します。</span><span class="sxs-lookup"><span data-stu-id="6dea5-105">Searches for the first occurrence of a character in a null-terminated string.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="8d06d-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="8d06d-106">Header file:</span></span>  <br/> |<span data-ttu-id="8d06d-107">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="8d06d-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="8d06d-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="8d06d-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="8d06d-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="8d06d-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="8d06d-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="8d06d-110">Called by:</span></span>  <br/> |<span data-ttu-id="8d06d-111">クライアントアプリケーションとサービスプロバイダー</span><span class="sxs-lookup"><span data-stu-id="8d06d-111">Client applications and service providers</span></span>  <br/> |
+|<span data-ttu-id="6dea5-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="6dea5-106">Header file:</span></span>  <br/> |<span data-ttu-id="6dea5-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="6dea5-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="6dea5-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="6dea5-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="6dea5-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="6dea5-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="6dea5-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="6dea5-110">Called by:</span></span>  <br/> |<span data-ttu-id="6dea5-111">クライアント アプリケーションとサービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="6dea5-111">Client applications and service providers</span></span>  <br/> |
    
 ```cpp
 LPSTR SzFindCh(
@@ -38,22 +38,22 @@ LPSTR SzFindCh(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="8d06d-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="8d06d-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="6dea5-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="6dea5-112">Parameters</span></span>
 
-<span data-ttu-id="8d06d-113">_lpsz_</span><span class="sxs-lookup"><span data-stu-id="8d06d-113">_lpsz_</span></span>
+<span data-ttu-id="6dea5-113">_lpsz_</span><span class="sxs-lookup"><span data-stu-id="6dea5-113">_lpsz_</span></span>
   
-> <span data-ttu-id="8d06d-114">順番検索する null で終わる文字列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="8d06d-114">[in] Pointer to the null-terminated string to be searched.</span></span> 
+> <span data-ttu-id="6dea5-114">[in]検索する null 終端文字列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="6dea5-114">[in] Pointer to the null-terminated string to be searched.</span></span> 
     
-<span data-ttu-id="8d06d-115">_焦げ_</span><span class="sxs-lookup"><span data-stu-id="8d06d-115">_ch_</span></span>
+<span data-ttu-id="6dea5-115">_ch_</span><span class="sxs-lookup"><span data-stu-id="6dea5-115">_ch_</span></span>
   
-> <span data-ttu-id="8d06d-116">順番検索する文字を指定します。</span><span class="sxs-lookup"><span data-stu-id="8d06d-116">[in] The character to be searched for.</span></span>
+> <span data-ttu-id="6dea5-116">[in]検索する文字。</span><span class="sxs-lookup"><span data-stu-id="6dea5-116">[in] The character to be searched for.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="8d06d-117">戻り値</span><span class="sxs-lookup"><span data-stu-id="8d06d-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="6dea5-117">戻り値</span><span class="sxs-lookup"><span data-stu-id="6dea5-117">Return value</span></span>
 
-<span data-ttu-id="8d06d-118">**szfindch**は、文字列内で最初に見つかった文字へのポインターを返します。</span><span class="sxs-lookup"><span data-stu-id="8d06d-118">**SzFindCh** returns a pointer to the first occurrence of the character in the string.</span></span> <span data-ttu-id="8d06d-119">文字が文字列の任意の場所に出現しない場合、または_lpsz_パラメーターが null の場合は、null 値が返されます。</span><span class="sxs-lookup"><span data-stu-id="8d06d-119">If the character does not occur anywhere in the string, or if the  _lpsz_ parameter is NULL, a value of NULL is returned.</span></span> 
+<span data-ttu-id="6dea5-118">**SzFindCh** は、文字列内の文字の最初の出現位置へのポインターを返します。</span><span class="sxs-lookup"><span data-stu-id="6dea5-118">**SzFindCh** returns a pointer to the first occurrence of the character in the string.</span></span> <span data-ttu-id="6dea5-119">文字列内の任意の場所で文字が発生しない場合、または  _lpsz_ パラメーターが NULL の場合は、NULL の値が返されます。</span><span class="sxs-lookup"><span data-stu-id="6dea5-119">If the character does not occur anywhere in the string, or if the  _lpsz_ parameter is NULL, a value of NULL is returned.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="8d06d-120">注釈</span><span class="sxs-lookup"><span data-stu-id="8d06d-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6dea5-120">注釈</span><span class="sxs-lookup"><span data-stu-id="6dea5-120">Remarks</span></span>
 
-<span data-ttu-id="8d06d-121">**szfindch**関数は、完全一致のみを検索します。大文字と小文字は区別されます。</span><span class="sxs-lookup"><span data-stu-id="8d06d-121">The **SzFindCh** function searches for an exact match only; it is sensitive to case and diacritical differences.</span></span> <span data-ttu-id="8d06d-122">Unicode および DBCS 形式での検索がサポートされています。</span><span class="sxs-lookup"><span data-stu-id="8d06d-122">Searches in the Unicode and DBCS formats are supported.</span></span> 
+<span data-ttu-id="6dea5-121">**SzFindCh** 関数は完全一致のみを検索します。大文字と小文字の違いには敏感です。</span><span class="sxs-lookup"><span data-stu-id="6dea5-121">The **SzFindCh** function searches for an exact match only; it is sensitive to case and diacritical differences.</span></span> <span data-ttu-id="6dea5-122">Unicode 形式と DBCS 形式の検索がサポートされています。</span><span class="sxs-lookup"><span data-stu-id="6dea5-122">Searches in the Unicode and DBCS formats are supported.</span></span> 
   
 

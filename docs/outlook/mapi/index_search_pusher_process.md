@@ -15,15 +15,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33423350"
 ---
-# <a name="indexsearchpusherprocess"></a><span data-ttu-id="25f46-103">INDEX_SEARCH_PUSHER_PROCESS</span><span class="sxs-lookup"><span data-stu-id="25f46-103">INDEX_SEARCH_PUSHER_PROCESS</span></span>
+# <a name="index_search_pusher_process"></a><span data-ttu-id="04a5b-103">INDEX_SEARCH_PUSHER_PROCESS</span><span class="sxs-lookup"><span data-stu-id="04a5b-103">INDEX_SEARCH_PUSHER_PROCESS</span></span>
 
   
   
-<span data-ttu-id="25f46-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="25f46-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="04a5b-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="04a5b-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="25f46-105">MAPI プロトコルハンドラーに通知を送信しているプロセスを指定します。そのストア内のオブジェクトは、インデックス処理の準備ができています。</span><span class="sxs-lookup"><span data-stu-id="25f46-105">Specifies the process that is sending a notification to the MAPI Protocol Handler that an object in that store is ready for indexing.</span></span>
+<span data-ttu-id="04a5b-105">そのストア内のオブジェクトがインデックス作成の準備ができているという通知を MAPI プロトコル ハンドラーに送信するプロセスを指定します。</span><span class="sxs-lookup"><span data-stu-id="04a5b-105">Specifies the process that is sending a notification to the MAPI Protocol Handler that an object in that store is ready for indexing.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="25f46-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="25f46-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="04a5b-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="04a5b-106">Quick info</span></span>
 
 ```cpp
 typedef struct _INDEX_SEARCH_PUSHER_PROCESS {  
@@ -31,10 +31,10 @@ typedef struct _INDEX_SEARCH_PUSHER_PROCESS {
 } INDEX_SEARCH_PUSHER_PROCESS; 
 ```
 
-## <a name="members"></a><span data-ttu-id="25f46-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="25f46-107">Members</span></span>
+## <a name="members"></a><span data-ttu-id="04a5b-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="04a5b-107">Members</span></span>
 
- <span data-ttu-id="25f46-108">*dwpid*</span><span class="sxs-lookup"><span data-stu-id="25f46-108">*dwPID*</span></span> 
+ <span data-ttu-id="04a5b-108">*dwPID*</span><span class="sxs-lookup"><span data-stu-id="04a5b-108">*dwPID*</span></span> 
   
->  <span data-ttu-id="25f46-109">MAPI プロトコルハンドラーのインデクサーにインデックス通知を送信しているプロセスのプロセス ID。</span><span class="sxs-lookup"><span data-stu-id="25f46-109">Process ID for the process that is sending an indexing notification to the indexer of the MAPI Protocol Handler.</span></span> 
+>  <span data-ttu-id="04a5b-109">MAPI プロトコル ハンドラーのインデクサーにインデックス通知を送信するプロセスのプロセス ID。</span><span class="sxs-lookup"><span data-stu-id="04a5b-109">Process ID for the process that is sending an indexing notification to the indexer of the MAPI Protocol Handler.</span></span> 
     
 

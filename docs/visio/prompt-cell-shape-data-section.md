@@ -16,24 +16,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33405486"
 ---
-# <a name="prompt-cell-shape-data-section"></a><span data-ttu-id="4cdb7-103">[Prompt] セル ([Shape Data] セクション)</span><span class="sxs-lookup"><span data-stu-id="4cdb7-103">Prompt Cell (Shape Data Section)</span></span>
+# <a name="prompt-cell-shape-data-section"></a><span data-ttu-id="a4de5-103">[Prompt] セル ([Shape Data] セクション)</span><span class="sxs-lookup"><span data-stu-id="a4de5-103">Prompt Cell (Shape Data Section)</span></span>
 
-<span data-ttu-id="4cdb7-104">[**図形データ**] ウィンドウで値の上にマウスを置いたときにヒントとして表示される説明または手順を示すテキストを指定します。</span><span class="sxs-lookup"><span data-stu-id="4cdb7-104">Specifies descriptive or instructional text that appears as a tip when the mouse is paused over a value in the **Shape Data** window.</span></span> 
+<span data-ttu-id="a4de5-104">[**図形データ**] ウィンドウで値の上にマウスを置いたときにヒントとして表示される説明または手順を示すテキストを指定します。</span><span class="sxs-lookup"><span data-stu-id="a4de5-104">Specifies descriptive or instructional text that appears as a tip when the mouse is paused over a value in the **Shape Data** window.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="4cdb7-105">注釈</span><span class="sxs-lookup"><span data-stu-id="4cdb7-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a4de5-105">注釈</span><span class="sxs-lookup"><span data-stu-id="a4de5-105">Remarks</span></span>
 
-<span data-ttu-id="4cdb7-106">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Prompt] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="4cdb7-106">To get a reference to the Prompt cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="a4de5-106">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Prompt] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="a4de5-106">To get a reference to the Prompt cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="4cdb7-107">セル名:</span><span class="sxs-lookup"><span data-stu-id="4cdb7-107">Cell name:</span></span>  <br/> | <span data-ttu-id="4cdb7-108">提案. *名前*です。[ *name*が行名であることを確認します。</span><span class="sxs-lookup"><span data-stu-id="4cdb7-108">Prop.  *Name*  .Prompt where  *Name*  is the row name</span></span>  <br/> |
+| <span data-ttu-id="a4de5-107">セル名:</span><span class="sxs-lookup"><span data-stu-id="a4de5-107">Cell name:</span></span>  <br/> | <span data-ttu-id="a4de5-108">Prop。  *Name*  .[名前]  *が行*  名のプロンプト</span><span class="sxs-lookup"><span data-stu-id="a4de5-108">Prop.  *Name*  .Prompt where  *Name*  is the row name</span></span>  <br/> |
    
-<span data-ttu-id="4cdb7-109">プログラムから、インデックスによって [Prompt] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="4cdb7-109">To get a reference to the Prompt cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="a4de5-109">プログラムから、インデックスによって [Prompt] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="a4de5-109">To get a reference to the Prompt cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="4cdb7-110">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="4cdb7-110">Section index:</span></span>  <br/> |<span data-ttu-id="4cdb7-111">**visSectionProp**</span><span class="sxs-lookup"><span data-stu-id="4cdb7-111">**visSectionProp**</span></span> <br/> |
-| <span data-ttu-id="4cdb7-112">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="4cdb7-112">Row index:</span></span>  <br/> |<span data-ttu-id="4cdb7-113">\*\*visRowProp +\*\*\*\* i = \*\* 0、1、2...</span><span class="sxs-lookup"><span data-stu-id="4cdb7-113">**visRowProp +** *i*  where  *i*  = 0, 1, 2...</span></span>  <br/> |
-| <span data-ttu-id="4cdb7-114">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="4cdb7-114">Cell index:</span></span>  <br/> |<span data-ttu-id="4cdb7-115">**viscustpropsprompt**</span><span class="sxs-lookup"><span data-stu-id="4cdb7-115">**visCustPropsPrompt**</span></span> <br/> |
+| <span data-ttu-id="a4de5-110">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="a4de5-110">Section index:</span></span>  <br/> |<span data-ttu-id="a4de5-111">**visSectionProp**</span><span class="sxs-lookup"><span data-stu-id="a4de5-111">**visSectionProp**</span></span> <br/> |
+| <span data-ttu-id="a4de5-112">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="a4de5-112">Row index:</span></span>  <br/> |<span data-ttu-id="a4de5-113">**visRowProp +** *i*  *=*  0, 1, 2...</span><span class="sxs-lookup"><span data-stu-id="a4de5-113">**visRowProp +** *i*  where  *i*  = 0, 1, 2...</span></span>  <br/> |
+| <span data-ttu-id="a4de5-114">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="a4de5-114">Cell index:</span></span>  <br/> |<span data-ttu-id="a4de5-115">**visCustPropsPrompt**</span><span class="sxs-lookup"><span data-stu-id="a4de5-115">**visCustPropsPrompt**</span></span> <br/> |
    
 

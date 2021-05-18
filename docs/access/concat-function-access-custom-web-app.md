@@ -1,5 +1,5 @@
 ---
-title: Concat 関数 (Access カスタム web アプリ)
+title: Concat 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,32 +13,32 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33423273"
 ---
-# <a name="concat-function-access-custom-web-app"></a><span data-ttu-id="23331-103">Concat 関数 (Access カスタム web アプリ)</span><span class="sxs-lookup"><span data-stu-id="23331-103">Concat function (Access custom web app)</span></span>
+# <a name="concat-function-access-custom-web-app"></a><span data-ttu-id="b8cba-103">Concat 関数 (Access カスタム Web アプリ)</span><span class="sxs-lookup"><span data-stu-id="b8cba-103">Concat function (Access custom web app)</span></span>
 
-<span data-ttu-id="23331-104">複数の文字列値を結合した結果の文字列を戻します。</span><span class="sxs-lookup"><span data-stu-id="23331-104">Returns a string that is the result of combining two or more string values.</span></span>
+<span data-ttu-id="b8cba-104">複数の文字列値を結合した結果の文字列を戻します。</span><span class="sxs-lookup"><span data-stu-id="b8cba-104">Returns a string that is the result of combining two or more string values.</span></span>
   
 > [!IMPORTANT]
-> <span data-ttu-id="23331-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="23331-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="b8cba-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="b8cba-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="23331-107">構文</span><span class="sxs-lookup"><span data-stu-id="23331-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b8cba-107">構文</span><span class="sxs-lookup"><span data-stu-id="b8cba-107">Syntax</span></span>
 
-<span data-ttu-id="23331-108">**Concat**(*Value1*、 *Value2*、...[*valuen*])</span><span class="sxs-lookup"><span data-stu-id="23331-108">**Concat** (*Value1*, *Value2*, …[*ValueN*])</span></span> 
+<span data-ttu-id="b8cba-108">**Concat** (*Value1*, *Value2*, ...[*ValueN*])</span><span class="sxs-lookup"><span data-stu-id="b8cba-108">**Concat** (*Value1*, *Value2*, …[*ValueN*])</span></span> 
   
-<span data-ttu-id="23331-109">**Concat** 関数には、以下の引数があります。</span><span class="sxs-lookup"><span data-stu-id="23331-109">The **Concat** function contains the following arguments.</span></span> 
+<span data-ttu-id="b8cba-109">**Concat** 関数には、以下の引数があります。</span><span class="sxs-lookup"><span data-stu-id="b8cba-109">The **Concat** function contains the following arguments.</span></span> 
   
-|<span data-ttu-id="23331-110">**引数名**</span><span class="sxs-lookup"><span data-stu-id="23331-110">**Argument Name**</span></span>|<span data-ttu-id="23331-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="23331-111">**Description**</span></span>|
+|<span data-ttu-id="b8cba-110">**引数名**</span><span class="sxs-lookup"><span data-stu-id="b8cba-110">**Argument Name**</span></span>|<span data-ttu-id="b8cba-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="b8cba-111">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="23331-112">値</span><span class="sxs-lookup"><span data-stu-id="23331-112">Value</span></span>  <br/> |<span data-ttu-id="23331-113">その他の値に連結する文字列値。</span><span class="sxs-lookup"><span data-stu-id="23331-113">A string value to concatenate to the other values.</span></span>  <br/> |
+|<span data-ttu-id="b8cba-112">値</span><span class="sxs-lookup"><span data-stu-id="b8cba-112">Value</span></span>  <br/> |<span data-ttu-id="b8cba-113">その他の値に連結する文字列値。</span><span class="sxs-lookup"><span data-stu-id="b8cba-113">A string value to concatenate to the other values.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="23331-114">注釈</span><span class="sxs-lookup"><span data-stu-id="23331-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b8cba-114">注釈</span><span class="sxs-lookup"><span data-stu-id="b8cba-114">Remarks</span></span>
 
-<span data-ttu-id="23331-p102">**Concat** は複数の文字列引数を単一の文字列に連結します。少なくとも 2 つの文字列引数が必要です。文字列引数が 1 つの場合は、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="23331-p102">**Concat** takes a variable number of string arguments and concatenates them into a single string. A minimum of two string arguments are required; otherwise, an error is raised.</span></span> 
+<span data-ttu-id="b8cba-p102">**Concat** は複数の文字列引数を単一の文字列に連結します。少なくとも 2 つの文字列引数が必要です。文字列引数が 1 つの場合は、エラーが発生します。</span><span class="sxs-lookup"><span data-stu-id="b8cba-p102">**Concat** takes a variable number of string arguments and concatenates them into a single string. A minimum of two string arguments are required; otherwise, an error is raised.</span></span> 
   
-<span data-ttu-id="23331-117">すべての引数は文字列データ型に暗黙的に変換されてから、連結されます。</span><span class="sxs-lookup"><span data-stu-id="23331-117">All arguments are implicitly converted to string data types and then concatenated.</span></span>
+<span data-ttu-id="b8cba-117">すべての引数は文字列データ型に暗黙的に変換されてから、連結されます。</span><span class="sxs-lookup"><span data-stu-id="b8cba-117">All arguments are implicitly converted to string data types and then concatenated.</span></span>
   
-## <a name="example"></a><span data-ttu-id="23331-118">例</span><span class="sxs-lookup"><span data-stu-id="23331-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b8cba-118">例</span><span class="sxs-lookup"><span data-stu-id="b8cba-118">Example</span></span>
 
-<span data-ttu-id="23331-119">テーブルに FirstName、MiddleInitial、および LastName の各フィールドが含まれる場合、次の式を使用して人のフル ネームを表示できます。</span><span class="sxs-lookup"><span data-stu-id="23331-119">The following expression can be used to display the full name of a person where the table contains FirstName, MiddleInitial, and LastName fields.</span></span> <span data-ttu-id="23331-120">MiddleInitial フィールドが空白の場合は、姓と名のフィールドだけが組み合わせられ、氏名が表示されます。</span><span class="sxs-lookup"><span data-stu-id="23331-120">If the MiddleInitial field is blank, only the FirstName and LastName fields are combined to display the full name.</span></span>
+<span data-ttu-id="b8cba-119">テーブルに FirstName、MiddleInitial、および LastName の各フィールドが含まれる場合、次の式を使用して人のフル ネームを表示できます。</span><span class="sxs-lookup"><span data-stu-id="b8cba-119">The following expression can be used to display the full name of a person where the table contains FirstName, MiddleInitial, and LastName fields.</span></span> <span data-ttu-id="b8cba-120">MiddleInitial フィールドが空白の場合、完全な名前を表示するには、FirstName フィールドと LastName フィールドだけが結合されます。</span><span class="sxs-lookup"><span data-stu-id="b8cba-120">If the MiddleInitial field is blank, only the FirstName and LastName fields are combined to display the full name.</span></span>
   
 ```vb
 IIf([MiddleInitial] Is Null,Concat([FirstName]," ",[LastName]),Concat([FirstName]," ",[MiddleInitial]," ",[LastName]))

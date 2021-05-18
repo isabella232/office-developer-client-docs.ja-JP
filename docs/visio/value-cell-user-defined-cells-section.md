@@ -16,26 +16,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33422990"
 ---
-# <a name="value-cell-user-defined-cells-section"></a><span data-ttu-id="0415f-103">[Value] セル ([User-Defined Cells] セクション)</span><span class="sxs-lookup"><span data-stu-id="0415f-103">Value Cell (User-Defined Cells Section)</span></span>
+# <a name="value-cell-user-defined-cells-section"></a><span data-ttu-id="03132-103">[Value] セル ([User-Defined Cells] セクション)</span><span class="sxs-lookup"><span data-stu-id="03132-103">Value Cell (User-Defined Cells Section)</span></span>
 
-<span data-ttu-id="0415f-104">対応するユーザー定義のセルの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="0415f-104">Specifies a value for the corresponding user-defined cell.</span></span>
+<span data-ttu-id="03132-104">対応するユーザー定義のセルの値を指定します。</span><span class="sxs-lookup"><span data-stu-id="03132-104">Specifies a value for the corresponding user-defined cell.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="0415f-105">注釈</span><span class="sxs-lookup"><span data-stu-id="0415f-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="03132-105">注釈</span><span class="sxs-lookup"><span data-stu-id="03132-105">Remarks</span></span>
 
-<span data-ttu-id="0415f-106">別のセルでこの値を参照するには、行ラベル [User.Row] に入力したユーザー定義の名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="0415f-106">To refer to this value in another cell, specify the user-defined name entered in the row label User.Row.</span></span>
+<span data-ttu-id="03132-106">別のセルでこの値を参照するには、行ラベル [User.Row] に入力したユーザー定義の名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="03132-106">To refer to this value in another cell, specify the user-defined name entered in the row label User.Row.</span></span>
   
-<span data-ttu-id="0415f-107">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Value] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="0415f-107">To get a reference to the Value cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="03132-107">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Value] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="03132-107">To get a reference to the Value cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="0415f-108">セル名 :</span><span class="sxs-lookup"><span data-stu-id="0415f-108">Cell name:</span></span>  <br/> | <span data-ttu-id="0415f-109">マニュアル.</span><span class="sxs-lookup"><span data-stu-id="0415f-109">User.</span></span>  <span data-ttu-id="0415f-110">*名前*です。Value (ユーザーの場合)。</span><span class="sxs-lookup"><span data-stu-id="0415f-110">*Name*  .Value            where User.</span></span>  <span data-ttu-id="0415f-111">*name*には、行の名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="0415f-111">*Name*  is the row name</span></span>  <br/> |
+| <span data-ttu-id="03132-108">セル名 :</span><span class="sxs-lookup"><span data-stu-id="03132-108">Cell name:</span></span>  <br/> | <span data-ttu-id="03132-109">ユーザー。</span><span class="sxs-lookup"><span data-stu-id="03132-109">User.</span></span>  <span data-ttu-id="03132-110">*Name*  .ユーザーの値。</span><span class="sxs-lookup"><span data-stu-id="03132-110">*Name*  .Value            where User.</span></span>  <span data-ttu-id="03132-111">*名前*  は行名です</span><span class="sxs-lookup"><span data-stu-id="03132-111">*Name*  is the row name</span></span>  <br/> |
    
-<span data-ttu-id="0415f-112">プログラムから、インデックスによって [Value] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="0415f-112">To get a reference to the Value cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="03132-112">プログラムから、インデックスによって [Value] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="03132-112">To get a reference to the Value cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="0415f-113">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="0415f-113">Section index:</span></span>  <br/> |<span data-ttu-id="0415f-114">**visSectionUser**</span><span class="sxs-lookup"><span data-stu-id="0415f-114">**visSectionUser**</span></span> <br/> |
-| <span data-ttu-id="0415f-115">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="0415f-115">Row index:</span></span>  <br/> |<span data-ttu-id="0415f-116">**visRowUser** +  *i* = \*\* 0、1、2...</span><span class="sxs-lookup"><span data-stu-id="0415f-116">**visRowUser** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
-| <span data-ttu-id="0415f-117">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="0415f-117">Cell index:</span></span>  <br/> |<span data-ttu-id="0415f-118">**visUserValue**</span><span class="sxs-lookup"><span data-stu-id="0415f-118">**visUserValue**</span></span> <br/> |
+| <span data-ttu-id="03132-113">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="03132-113">Section index:</span></span>  <br/> |<span data-ttu-id="03132-114">**visSectionUser**</span><span class="sxs-lookup"><span data-stu-id="03132-114">**visSectionUser**</span></span> <br/> |
+| <span data-ttu-id="03132-115">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="03132-115">Row index:</span></span>  <br/> |<span data-ttu-id="03132-116">**visRowUser**  +  *i* *=* 0, 1, 2...</span><span class="sxs-lookup"><span data-stu-id="03132-116">**visRowUser** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
+| <span data-ttu-id="03132-117">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="03132-117">Cell index:</span></span>  <br/> |<span data-ttu-id="03132-118">**visUserValue**</span><span class="sxs-lookup"><span data-stu-id="03132-118">**visUserValue**</span></span> <br/> |
    
 
