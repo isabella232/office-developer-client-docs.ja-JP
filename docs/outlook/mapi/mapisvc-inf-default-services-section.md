@@ -1,5 +1,5 @@
 ---
-title: mapisvc.inf [Default Services] セクション
+title: MapiSvc.inf [既定のサービス] セクション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,21 +15,21 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33435321"
 ---
-# <a name="mapisvcinf-default-services-section"></a>mapisvc.inf [Default Services] セクション
+# <a name="mapisvcinf-default-services-section"></a>MapiSvc.inf [既定のサービス] セクション
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**[default Services]** セクションには、既定のメッセージサービスとして選択されているすべてのメッセージサービスが一覧表示されます。 これらの既定のメッセージサービスは、 **[services]** セクションにリストされているメッセージサービスのサブセットです。 プロファイル構成プログラムが既定のプロファイルを作成すると、このセクションのメッセージサービスが自動的に追加されます。 
+[ **既定のサービス] セクション** には、既定のメッセージ サービスとして選択されているすべてのメッセージ サービスが一覧表示されます。 これらの既定のメッセージ サービスは、[サービス] セクションに記載されているメッセージ サービス **のサブセット** です。 プロファイル構成プログラムが既定のプロファイルを作成すると、このセクションのメッセージ サービスが自動的に含まれます。 
   
-これらのエントリは、次に示すように **[Services]** セクションのエントリと同じ形式を使用します。 
+次に示すように、エントリは [ **サービス]** セクションのエントリと同じ形式を使用します。 
   
  **[既定のサービス]**
   
- _メッセージ-サービスセクション名_ =  _メッセージサービス名_
+ _message-service セクション名_  =  _メッセージ サービス名_
   
-前の図に示したように、mapisvc.inf の **[Default Services]** セクションには次のエントリが含まれています。 
+次のエントリは、前の図に示す mapisvc.inf の [既定のサービス **]** セクションに含まれます。 
   
 ```cpp
 [Default Services]

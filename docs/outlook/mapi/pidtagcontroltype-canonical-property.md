@@ -42,11 +42,11 @@ DTCT_LABEL (0x00000000)
   
 > ダイアログ ラベル。
    
-DTCT_EDIT (0x000000001)
+DTCT_EDIT (0x00000001)
   
 > ダイアログの編集テキスト ボックス。
 
-DTCT_LBX (0x000000002)
+DTCT_LBX (0x00000002)
   
 > ダイアログ リスト ボックス。
     
@@ -54,13 +54,13 @@ DTCT_COMBOBOX (0x00000003)
   
 > ダイアログ コンボ ボックス。
 
-DTCT_DDLBX (0x000000004)
+DTCT_DDLBX (0x00000004)
   
 > ダイアログ ボックスのドロップダウン リスト ボックス。
 
 DTCT_CHECKBOX (0x00000005)
   
-> ダイアログ チェック ボックス。
+> ダイアログ ボックス。
 
 DTCT_GROUPBOX (0x00000006)
   
@@ -70,13 +70,13 @@ DTCT_BUTTON (0x00000007)
   
 > ダイアログ ボタン コントロール。
     
-DTCT_PAGE (0x000000008)
+DTCT_PAGE (0x00000008)
   
-> タブ付きダイアログ ページ。
+> ダイアログ タブ付きページ。
     
 DTCT_RADIOBUTTON (0x00000009)
   
-> ダイアログのラジオ ボタン。
+> ダイアログ ラジオ ボタン。
     
 DTCT_MVLISTBOX (0x0000000B)
   
@@ -84,7 +84,7 @@ DTCT_MVLISTBOX (0x0000000B)
     
 DTCT_MVDDLBX (0x0000000C)
   
-> 文字列型の複数値プロパティによって設定される複数値ドロップダウン リスト ボックス。
+> string 型の複数値プロパティによって設定される複数値のドロップダウン リスト ボックス。
     
 ## <a name="related-resources"></a>関連リソース
 
@@ -96,7 +96,7 @@ Mapidefs.h
     
 mapitags.h
   
-> 代替名として表示されるプロパティの定義を含む。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -106,7 +106,7 @@ mapitags.h
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名と MAPI 名のマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名と標準プロパティ名のマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

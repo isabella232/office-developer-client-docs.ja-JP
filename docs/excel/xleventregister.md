@@ -43,7 +43,7 @@ Excel 2010 以降の Excel では、次のイベントをサポートしてい�
    
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-成功した場合、pxRes (**Xltypeint**) の値 > 0 になります。 失敗した場合は、pxRes = = 0。
+成功した場合、pxRes (**xltypeInt**) の値は 0 >されます。 成功しなかった場合、pxRes ==0。
   
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: setvariable マクロアクション (Access カスタム web アプリ)
+title: SetVariable マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433921"
 ---
-# <a name="setvariable-macro-action-access-custom-web-app"></a>setvariable マクロアクション (Access カスタム web アプリ)
+# <a name="setvariable-macro-action-access-custom-web-app"></a>SetVariable マクロ アクション (Access カスタム Web アプリ)
 
 " **SetVariable** /変数の設定" アクションを使用すると、一時変数を作成して特定の値に設定できます。作成した変数は、後続のアクションで条件や引数として使用したり、別のユーザー インターフェイス (UI) マクロで使用したりできます。 
   
@@ -28,6 +28,6 @@ ms.locfileid: "33433921"
 |**アクションの引数**|**説明**|
 |:-----|:-----|
 |**変数** <br/> |一時変数の名前を入力します。  <br/> |
-|**Value =** <br/> |この一時変数の値を設定するために使用する式を入力します。 式の前に等号 (**=** ) 記号を付けないでください。 式ビルダーを使用してこの引数を設定するには、[**ビルド**] ボタンの![数式]の(media/buildbut_ZA06047218.gif "数式")をクリックします。  <br/> |
+|**Value =** <br/> |この一時変数の値を設定するために使用する式を入力します。 式の前に等号 ( ) 記号を **=** 付けない。 [ビルド] ボタン **の [数式]** ![をクリック](media/buildbut_ZA06047218.gif "すると、") 式ビルダーを使用してこの引数を設定できます。  <br/> |
    
 

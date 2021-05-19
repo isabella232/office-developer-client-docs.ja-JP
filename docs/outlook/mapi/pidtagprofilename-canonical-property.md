@@ -25,34 +25,34 @@ ms.locfileid: "33435650"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロファイルの名前が含まれます。
+プロファイルの名前を含む。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_PROFILE_NAME、PR_PROFILE_NAME_A、PR_PROFILE_NAME_W  <br/> |
-|識別子:  <br/> |0x3d12  <br/> |
+|識別子:  <br/> |0x3D12  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |MAPI プロファイルの構成  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-これらのプロパティは、サービスプロバイダーによって計算されます。 プロバイダーの**serviceentry**関数の実装では、これらのプロパティを使用してプロファイル名を検出できます。 
+これらのプロパティは、サービス プロバイダーによって計算されます。 プロバイダーの **ServiceEntry** 関数の実装では、これらのプロパティを使用してプロファイル名を検出できます。 
   
-クライアントアプリケーションは、これらのプロパティを使用して、プロファイル名を取得する便利な方法として、MAPI サブシステムの状態テーブル行の**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) プロパティを調べることができます。
+クライアント アプリケーションは、MAPI サブシステムの状態テーブル行で **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) プロパティを調べることで、プロファイル名を取得する便利な代替手段としてこれらのプロパティを使用できます。
   
-これらのプロパティは、プロファイルが削除された後に同じ名前で再作成された場合など、時間の経過とともに一意になることはありません。 MAPI furnishes は、MUID_PROFILE_INSTANCE という名前のハードコーディングされたプロファイルセクションで、完全に一意の**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) プロパティを**示しています。**
+これらのプロパティは、プロファイルが削除され、後で同じ名前で再作成されるなど、時間の間に一意ではない場合があります。 MAPI は、PR_SEARCH_KEY **と呼** ばれるハードコードされたプロファイル セクションに、完全に一意のプロパティ ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) プロパティ **MUID_PROFILE_INSTANCE。**
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -62,7 +62,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

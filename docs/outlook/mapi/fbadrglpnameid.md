@@ -25,7 +25,7 @@ ms.locfileid: "33434831"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-名前付きプロパティを記述し、それらの割り当てを検証する構造体の配列を検証します。 
+名前付きプロパティを記述する構造体の配列を検証し、割り当てを検証します。 
   
 |||
 |:-----|:-----|
@@ -42,26 +42,26 @@ BOOL FBadRglpNameID(
 
 ## <a name="parameters"></a>パラメーター
 
- _lppnameid_
+ _lppNameId_
   
-> 順番名前付きプロパティを説明する[mapinameid](mapinameid.md)構造の配列へのポインター。 
+> [in]名前付きプロパティを記述 [する MAPINAMEID](mapinameid.md) 構造体の配列へのポインター。 
     
- _cname_
+ _cNames_
   
-> 順番_lppnameid_パラメーターで指定された、配列内の名前付きプロパティ構造体の数。 
+> [in]  _lppNameId_ パラメーターが指す配列内の名前付きプロパティ構造の数。 
     
 ## <a name="return-value"></a>戻り値
 
 TRUE 
   
-> 指定された1つ以上のプロパティ名の構造が無効です。 
+> 指定されたプロパティ名構造体の 1 つ以上が無効です。 
     
 FALSE 
   
-> 指定したプロパティ名の構造体はすべて有効です。
+> 指定したプロパティ名の構造はすべて有効です。
     
 ## <a name="remarks"></a>注釈
 
-**fbadrglpnameid**関数は、 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)または[imapiprop:: GetNamesFromIDs](imapiprop-getnamesfromids.md)の呼び出しを設定するときに使用できます。 
+**FBadRglpNameID** 関数は [、IMAPIProp:::GetIDsFromNames](imapiprop-getidsfromnames.md)または [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md)への呼び出しを設定するときに使用できます。 
   
 

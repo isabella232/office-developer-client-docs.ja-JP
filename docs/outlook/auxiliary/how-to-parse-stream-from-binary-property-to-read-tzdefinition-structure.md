@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 039b3a45-bd57-51f5-1485-a3f6d1bde85a
-description: このトピックでは、バイナリプロパティに格納されている永続的な形式から TZDEFINITION 構造体を読み取る方法について説明します。
+description: このトピックでは、バイナリ プロパティに格納されている永続化された形式から TZDEFINITION 構造を読み取る方法を示します。
 ms.openlocfilehash: a685fbfcf918e13aa82ac32799997bb05730184e
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33434208"
 ---
 # <a name="parse-a-stream-from-a-binary-property-to-read-the-tzdefinition-structure"></a>バイナリ プロパティからのストリームを解析し、TZDEFINITION 構造体を読み取る
 
-このトピックでは、バイナリプロパティに格納されている永続的な形式から[TZDEFINITION](tzdefinition.md)構造体を読み取る方法について説明します。 
+このトピックでは、バイナリ プロパティに格納されている永続化された形式から [TZDEFINITION](tzdefinition.md) 構造を読み取る方法を示します。 
   
 ```cpp
 TZDEFINITION* BinToTZDEFINITION(ULONG cbDef, LPBYTE lpbDef) 

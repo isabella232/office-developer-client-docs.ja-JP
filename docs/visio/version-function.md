@@ -25,7 +25,7 @@ ms.locfileid: "33434110"
   
 ## <a name="syntax"></a>構文
 
-バージョン ()
+VERSION()
   
 ### <a name="return-value"></a>戻り値
 

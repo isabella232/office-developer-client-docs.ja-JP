@@ -1,5 +1,5 @@
 ---
-title: Year 関数 (Access カスタム web アプリ)
+title: Year 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433123"
 ---
-# <a name="year-function-access-custom-web-app"></a>Year 関数 (Access カスタム web アプリ)
+# <a name="year-function-access-custom-web-app"></a>Year 関数 (Access カスタム Web アプリ)
 
 グレゴリオ暦で指定した日付の年を表す数値が返されます。
   
@@ -23,13 +23,13 @@ ms.locfileid: "33433123"
   
 ## <a name="syntax"></a>構文
 
- **年**(*Date*) 
+ **年** (*日付*) 
   
 **Year** 関数には次の引数があります。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *Date*  <br/> |日付/時刻の値に解決可能な式。 *Date*引数 expression、column 式、ユーザー定義の変数または文字列リテラル。  <br/> |
+| *Date*  <br/> |日付/時刻の値に解決可能な式。 *Date 引数* 式、列式、ユーザー定義変数、または文字列リテラル。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

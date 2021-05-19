@@ -1,5 +1,5 @@
 ---
-title: itabledatahrqueryrow
+title: ITableDataHrQueryRow
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33434768"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-表の行を取得します。
+テーブル行を取得します。
   
 ```cpp
 HRESULT HrQueryRow(
@@ -37,17 +37,17 @@ HRESULT HrQueryRow(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpspropvalue_
+ _lpSPropValue_
   
-> 順番取得する行のインデックス列を記述するプロパティ値構造へのポインター。 プロパティ値構造の**ulPropTag**メンバーには、 _ulPropTagIndexColumn_パラメーターと同じプロパティタグが含まれている必要があります。この関数は、 [itabledata](itabledataiunknown.md)実装にアクセスする[CreateTable](createtable.md)関数を呼び出します。 
+> [in]取得する行のインデックス列を表すプロパティ値構造へのポインター。 プロパティ値構造体の **ulPropTag** メンバーには [、ITableData](itabledataiunknown.md)実装にアクセスする [CreateTable](createtable.md)関数の呼び出しから _ulPropTagIndexColumn_ パラメーターと同じプロパティ タグを含む必要があります。 
     
- _lppsrow_
+ _lppSRow_
   
-> 読み上げ取得した行へのポインターへのポインター。 
+> [out]取得した行へのポインターを指すポインター。 
     
- _lpulirow_
+ _lpuliRow_
   
-> [入力]入力時に、有効なポインターまたは NULL を返します。これは、返される情報がないことを示します。 出力では、行の行番号をポイントする有効なポインターは、テーブル内の行の位置を識別する連続した番号です。
+> [in, out]入力時に、情報を返す必要がないかどうかを示す有効なポインターまたは NULL。 出力時に、行の行番号 (テーブル内の行の位置を識別する連続番号) を指す有効なポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -57,13 +57,13 @@ S_OK
     
 MAPI_E_INVALID_PARAMETER 
   
-> _lpspropvalue_がポイントする[spropvalue](spropvalue.md)構造に、インデックス列プロパティが含まれていません。 
+> [lpSPropValue](spropvalue.md)がポイント _する SPropValue_ 構造体には、index 列プロパティは含めではありません。 
     
 ## <a name="remarks"></a>注釈
 
-**itabledata:: hrqueryrow**メソッドは、 _lpspropvalue_が指すプロパティ構造に含まれるインデックス列の値に一致するインデックス列を持つ行のすべてのプロパティを取得します。 **** また、呼び出し元が要求した場合、テーブル内の行の位置を示す行番号も返します。 
+**ITableData::HrQueryRow** メソッドは _、lpSPropValue_ が指すプロパティ構造に含まれるインデックス列の値と一致するインデックス列を持つ行のすべてのプロパティを取得します。 **HrQueryRow** は、呼び出し元が要求した場合、テーブル内の行の位置を識別する行番号も返します。 
   
-**hrqueryrow**は、 _lpspropvalue_によって示される**spropvalue**構造体を変更しないので、 **hrqueryrow**が戻るときには、呼び出し元は構造を解放する必要があります。 呼び出し元は、取得した行を含む**srow**構造も解放する必要があります。 
+**HrQueryRow は** _lpSPropValue_ によって指される **SPropValue** 構造体を変更しないので、呼び出し元は **HrQueryRow** が戻る際に構造体を解放する必要があります。 呼び出し元は、取得した行を含む **SRow** 構造も解放する必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

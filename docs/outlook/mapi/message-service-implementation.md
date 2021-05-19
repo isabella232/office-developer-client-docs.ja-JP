@@ -1,5 +1,5 @@
 ---
-title: メッセージサービスの実装
+title: Message Service の実装
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,27 +15,27 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33434033"
 ---
-# <a name="message-service-implementation"></a>メッセージサービスの実装
+# <a name="message-service-implementation"></a>Message Service の実装
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージサービスは、インストールと構成を簡素化するためにまとめられた1つ以上の関連するサービスプロバイダーです。 すべてのサービスプロバイダーがメッセージサービスに含まれている必要があります。
+メッセージ サービスは、インストールと構成を簡略化するためにグループ化された 1 つ以上の関連サービス プロバイダーです。 すべてのサービス プロバイダーは、メッセージ サービスに含める必要があります。
   
-1つ以上のプロバイダーでメッセージサービスを実装するには、次の手順を使用します。
+1 つ以上のプロバイダーでメッセージ サービスを実装するには、次の手順を実行します。
   
-1. メッセージサービスを設計し、含めるサービスプロバイダーの数と種類を決定します。 メッセージサービスの設計方法の詳細については、「[メッセージサービスを設計](designing-a-message-service.md)する」を参照してください。
+1. メッセージ サービスを設計し、含めるサービス プロバイダーの数と種類を決定します。 メッセージ サービスを設計する方法の詳細については、「メッセージ サービスの設計 [」を参照してください](designing-a-message-service.md)。
     
-2. セットアッププログラムを作成して、メッセージサービスにサービスプロバイダーをインストールします。 メッセージサービスのセットアッププログラムの記述の詳細については、「[サポートメッセージサービスのインストール](supporting-message-service-installation.md)」を参照してください。 
+2. メッセージ サービスにサービス プロバイダーをインストールするセットアップ プログラムを作成します。 メッセージ サービス セットアップ プログラムの作成の詳細については、「メッセージ サービスのインストールのサポート [」を参照してください](supporting-message-service-installation.md)。 
     
-3. 構成を実行するためのエントリポイント関数を作成します。 メッセージサービスのエントリポイント関数の記述の詳細については、「[サポートメッセージサービスの構成](supporting-message-service-configuration.md)」および「 [msgserviceentry](msgserviceentry.md)」を参照してください。 
+3. 構成を実行するエントリ ポイント関数を作成します。 メッセージ サービス エントリ ポイント関数の記述の詳細については、「Supporting [Message Service Configuration](supporting-message-service-configuration.md) and [MSGSERVICEENTRY」を参照してください](msgserviceentry.md)。 
     
-4. メッセージサービスがサポートするカスタムプロパティについて、プロパティタグと有効な値の説明を含むパブリックヘッダーファイルを作成します。 
+4. メッセージ サービスがサポートするカスタム プロパティのプロパティ タグと有効な値の説明を含むパブリック ヘッダー ファイルを作成します。 
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI サービスプロバイダー](mapi-service-providers.md)
+[MAPI サービス プロバイダー](mapi-service-providers.md)
 

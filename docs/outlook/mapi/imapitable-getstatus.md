@@ -25,7 +25,7 @@ ms.locfileid: "33434334"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルの状態と種類を返します。
+テーブルの状態と型を返します。
   
 ```cpp
 HRESULT GetStatus(
@@ -36,57 +36,57 @@ ULONG FAR * lpulTableType
 
 ## <a name="parameters"></a>パラメーター
 
- _lpultablestatus_
+ _lpulTableStatus_
   
-> 読み上げテーブルの状態を示す値へのポインター。 次のいずれかの値を返すことができます。
+> [out]テーブルの状態を示す値へのポインター。 次のいずれかの値を返します。
     
 TBLSTAT_COMPLETE 
   
-> 進行中の操作はありません。
+> 操作は進行中です。
     
 TBLSTAT_QCHANGED 
   
-> 表の内容が expectantly 変更されました。 この状態値は、並べ替えまたは制限の操作によって発生した変更に対しては返されません。
+> テーブルの内容が予想通り変更されました。 この状態の値は、並べ替え操作または制限操作による変更に対して返されません。
     
 TBLSTAT_RESTRICT_ERROR 
   
-> [IMAPITable:: Restrict](imapitable-restrict.md)操作中にエラーが発生しました。 
+> [IMAPITable::Restrict 操作中にエラーが発生](imapitable-restrict.md)しました。 
     
 TBLSTAT_RESTRICTING 
   
-> **IMAPITable:: Restrict**操作が進行中です。 
+> **IMAPITable::Restrict 操作** が進行中です。 
     
 TBLSTAT_SETCOL_ERROR 
   
-> [IMAPITable:: SetColumns](imapitable-setcolumns.md)操作中にエラーが発生しました。 
+> [IMAPITable::SetColumns 操作中にエラーが発生](imapitable-setcolumns.md)しました。 
     
 TBLSTAT_SETTING_COLS 
   
-> **IMAPITable:: SetColumns**操作が進行中です。 
+> **IMAPITable::SetColumns 操作** が進行中です。 
     
 TBLSTAT_SORT_ERROR 
   
-> [IMAPITable:: sorttable](imapitable-sorttable.md)操作中にエラーが発生しました。 
+> [IMAPITable::SortTable 操作中にエラーが発生](imapitable-sorttable.md)しました。 
     
 TBLSTAT_SORTING 
   
-> **IMAPITable:: sorttable**操作が進行中です。 
+> **IMAPITable::SortTable** 操作が進行中です。 
     
  _lpulTableType_
   
-> 読み上げテーブルの種類を示す値へのポインター。 次の3種類のテーブルのいずれかを返すことができます。
+> [out]テーブルの種類を示す値へのポインター。 次の 3 つのテーブルの種類のいずれかを返します。
     
 TBLTYPE_DYNAMIC 
   
-> テーブルの内容は動的です。行と列の値は、基になるデータが変更されたときに変更されることがあります。
+> テーブルの内容は動的です。基になるデータの変更に応じ、行と列の値が変更される可能性があります。
     
 TBLTYPE_KEYSET 
   
-> テーブル内の行は固定されていますが、これらの行の列の値は動的であり、基になるデータの変更として変更できます。
+> テーブル内の行は固定されますが、これらの行内の列の値は動的であり、基になるデータが変更されるに従って変更される可能性があります。
     
 TBLTYPE_SNAPSHOT 
   
-> テーブルは静的であり、基になるデータが変更されてもその内容は変更されません。
+> テーブルは静的であり、基になるデータが変更された場合、その内容は変更されません。
     
 ## <a name="return-value"></a>戻り値
 
@@ -96,17 +96,17 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-**IMAPTable:: GetStatus**メソッドは、テーブルの種類と現在の状態に関する情報を取得します。 
+**IMAPTable::GetStatus** メソッドは、テーブルの種類と現在の状態に関する情報を取得します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**GetStatus**を3つの他の**IMAPITable**メソッドと組み合わせて使用すると、これらの操作の状態を監視し、テーブルに対する効果を確認できます。 次の**IMAPITable**呼び出しのいずれかを行った後、 **GetStatus**を呼び出します。 
+**GetStatus** を他の 3 つの **IMAPITable** メソッドと組み合わせて使用して、これらの操作の状態を監視し、テーブルに対する影響を判断できます。 次のいずれかの **IMAPITable** 呼び出しを行った後 **、GetStatus を呼び出** します。 
   
-- [IMAPITable::](imapitable-restrict.md)制限を設定します。 
+- [IMAPITable::制限を](imapitable-restrict.md) 設定します。 
     
-- [IMAPITable:: sorttable](imapitable-sorttable.md)は、並べ替えの順序を設定します。 
+- [IMAPITable::SortTable を使用](imapitable-sorttable.md) して並べ替え順序を確立します。 
     
-- [IMAPITable:: SetColumns](imapitable-setcolumns.md)列セットを定義します。 
+- [IMAPITable::SetColumns を使用](imapitable-setcolumns.md) して列セットを定義します。 
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -114,7 +114,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl  <br/> |CContentsTableListCtrl:: GetStatus  <br/> |mfcmapi は、 **IMAPITable:: GetStatus**メソッドを使用して、テーブルの状態を報告します。  <br/> |
+|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::GetStatus  <br/> |MFCMAPI は **IMAPITable::GetStatus** メソッドを使用してテーブルの状態を報告します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

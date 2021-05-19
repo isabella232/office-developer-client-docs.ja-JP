@@ -23,11 +23,11 @@ ms.locfileid: "33432878"
  
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-発生したイベントおよびイベントの影響を受けたデータに関する情報を格納します。
+発生したイベントと、イベントの影響を受けたデータに関する情報を格納します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct
@@ -46,61 +46,61 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
-**uleventtype**
+**ulEventType**
   
-> 発生した通知イベントの種類。 **uleventtype**メンバーの値は、 **info**ユニオンに含まれている構造に対応しています。 **uleventtype**メンバーは、次のいずれかの値に設定できます。 
+> 発生した通知イベントの種類。 **ulEventType メンバーの値** は、情報ユニオンに含まれる構造に **対応** します。 **ulEventType メンバー** は、次のいずれかの値に設定できます。 
     
  _fnevCriticalError_
   
-> グローバルなエラーが発生しました。セッションが進行中にシャットダウンされた場合などです。 **info**メンバーには、 [ERROR_NOTIFICATION](error_notification.md)構造体が含まれています。 
+> 進行中のセッションのシャットダウンなど、グローバル エラーが発生しました。 info **メンバー** には、新しい構造 [ERROR_NOTIFICATION](error_notification.md) 含まれる。 
     
  _fnevExtended_
   
-> 特定のサービスプロバイダーによって定義された内部イベントが発生しました。 **info**メンバーには、 [EXTENDED_NOTIFICATION](extended_notification.md)構造体が含まれています。 
+> 特定のサービス プロバイダーによって定義された内部イベントが発生しました。 info **メンバー** には、新 [しいEXTENDED_NOTIFICATION](extended_notification.md) があります。 
     
  _fnevNewMail_
   
-> メッセージは、メッセージクラスの適切な受信フォルダーに配信され、処理を待機しています。 **info**メンバーには、 [NEWMAIL_NOTIFICATION](newmail_notification.md)構造体が含まれています。 
+> メッセージがメッセージ クラスの適切な受信フォルダーに配信され、処理を待機しています。 info **メンバー** には、特定の構造 [NEWMAIL_NOTIFICATION](newmail_notification.md) があります。 
     
  _fnevObjectCopied_
   
-> MAPI オブジェクトがコピーされました。 **info**メンバーには、 [OBJECT_NOTIFICATION](object_notification.md)構造体が含まれています。 
+> MAPI オブジェクトがコピーされました。 info **メンバー** には、次 [のOBJECT_NOTIFICATIONがあります](object_notification.md) 。 
     
  _fnevObjectCreated_
   
-> MAPI オブジェクトが作成されました。 **info**メンバーには、 **OBJECT_NOTIFICATION**構造体が含まれています。 
+> MAPI オブジェクトが作成されました。 info **メンバー** には、次 **のOBJECT_NOTIFICATIONがあります** 。 
     
  _fnevObjectDeleted_
   
-> MAPI オブジェクトが削除されました。 **info**メンバーには、 **OBJECT_NOTIFICATION**構造体が含まれています。 
+> MAPI オブジェクトが削除されました。 info **メンバー** には、次 **のOBJECT_NOTIFICATIONがあります** 。 
     
  _fnevObjectModified_
   
-> MAPI オブジェクトが変更されました。 **info**メンバーには、 **OBJECT_NOTIFICATION**構造体が含まれています。 
+> MAPI オブジェクトが変更されました。 info **メンバー** には、次 **のOBJECT_NOTIFICATIONがあります** 。 
     
  _fnevObjectMoved_
   
-> メッセージストアまたはアドレス帳オブジェクトが移動されました。 **info**メンバーには、 **OBJECT_NOTIFICATION**構造体が含まれています。 
+> メッセージ ストアまたはアドレス帳オブジェクトが移動されました。 info **メンバー** には、次 **のOBJECT_NOTIFICATIONがあります** 。 
     
  _fnevSearchComplete_
   
-> 検索操作が終了し、結果を使用できるようになります。 **info**メンバーには、 **OBJECT_NOTIFICATION**構造体が含まれています。 
+> 検索操作が完了し、結果を使用できます。 info **メンバー** には、次 **のOBJECT_NOTIFICATIONがあります** 。 
     
  _fnevTableModified_
   
-> テーブル内の情報が変更されました。 **info**メンバーには、 [TABLE_NOTIFICATION](table_notification.md)構造体が含まれています。 
+> テーブル内の情報が変更されました。 info **メンバー** には、新しい構造 [TABLE_NOTIFICATION](table_notification.md) があります。 
     
 **info**
   
-> 特定の種類のイベントの影響を受けるデータを記述する通知構造の和集合。 **info**メンバーに含まれる構造は、 **uleventtype**メンバーの値に依存します。 
+> 特定の種類のイベントの影響を受けるデータを記述する通知構造のユニオン。 info メンバーに含まれる構造は **、ulEventType メンバーの値によって異** なります。  
     
 ## <a name="remarks"></a>注釈
 
-登録されたアドバイズシンクの[IMAPIAdviseSink:: onnotify](imapiadvisesink-onnotify.md)メソッドへのすべての呼び出しで、1つ以上の**通知**構造が入力パラメーターとして渡されます。 **通知**構造には、発生した特定のイベントに関する情報が含まれ、影響を受けるオブジェクトについて説明します。 
+1 つ以上 **の NOTIFICATION** 構造体は、登録されたアアドバイス シンクの [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) メソッドへのすべての呼び出しで入力パラメーターとして渡されます。 **NOTIFICATION 構造体** には、発生した特定のイベントに関する情報と、影響を受けるオブジェクトの説明が含まれます。 
   
-通知を受け取るクライアントまたはサービスプロバイダーは、構造体を使用してイベントを処理する前に、 **uleventtype**メンバーに示されているように、イベントの種類を確認する必要があります。 たとえば、次に示すコードサンプルでは、新しいメッセージの到着をチェックし、この種のイベントを検出すると、メッセージのメッセージクラスを出力します。 
+通知を受け取るクライアントまたはサービス プロバイダーが構造を使用してイベントを処理する前に **、ulEventType** メンバーに示されているイベントの種類を確認する必要があります。 たとえば、次に示すコード サンプルは、新しいメッセージの到着を確認し、この種のイベントを検出すると、メッセージのメッセージ クラスを出力します。 
   
 ```cpp
 if (pNotif -> ulEventType == fnevNewMail)
@@ -115,8 +115,8 @@ printf("%s\n", pNotif -> newmail.lpszMessageClass)
 |**トピック**|**説明**|
 |:-----|:-----|
 |[MAPI のイベント通知](event-notification-in-mapi.md) <br/> |通知イベントと通知イベントの一般的な概要。  <br/> |
-|[通知の処理](handling-notifications.md) <br/> |クライアントが通知を処理する方法についての説明。  <br/> |
-|[イベント通知のサポート](supporting-event-notification.md) <br/> |サービスプロバイダーが[imapisupport](imapisupportiunknown.md)メソッドを使用して通知を生成する方法についての説明。  <br/> |
+|[通知の処理](handling-notifications.md) <br/> |クライアントが通知を処理する方法について説明します。  <br/> |
+|[サポート イベント通知](supporting-event-notification.md) <br/> |サービス プロバイダーが [IMAPISupport](imapisupportiunknown.md) メソッドを使用して通知を生成する方法について説明します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

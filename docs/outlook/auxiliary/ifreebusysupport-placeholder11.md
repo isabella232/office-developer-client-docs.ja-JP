@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 906f6c19-7f53-a8de-9748-c5dff0425bd3
-description: このメンバーはプレースホルダーで、サポートされていません。
+description: このメンバーはプレースホルダーであり、サポートされていません。
 ms.openlocfilehash: 8d929d330aeccb45cc492a4d4b887ec81f4b2d87
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,11 +16,11 @@ ms.locfileid: "33434964"
 ---
 # <a name="ifreebusysupportplaceholder11"></a>IFreeBusySupport::Placeholder11
 
-このメンバーはプレースホルダーで、サポートされていません。
+このメンバーはプレースホルダーであり、サポートされていません。
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IFreeBusySupport](ifreebusysupport.md)を参照してください。
+[「IFreeBusySupport」を参照してください](ifreebusysupport.md)。
   
 ```cpp
 BOOL Placeholder11( 
@@ -30,11 +30,11 @@ BOOL Placeholder11(
 
 ## <a name="return-values"></a>戻り値
 
-このメンバーはプレースホルダーで、サポートされていないため、常に**false**にします。
+この **メンバーは** プレースホルダーであり、サポートされていないので、常に false。
   
 ## <a name="remarks"></a>注釈
 
-このメンバーは、 **false**を返す必要があります。
+このメンバーは false を返す **必要があります**。
   
 ## <a name="see-also"></a>関連項目
 

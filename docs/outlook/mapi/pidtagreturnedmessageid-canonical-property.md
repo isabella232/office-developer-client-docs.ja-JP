@@ -23,30 +23,30 @@ ms.locfileid: "33435629"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-非開封レポートで元のメッセージが返される場合は、TRUE が含まれます。
+元のメッセージが読み取り以外のレポートで返される場合は TRUE を含む。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_RETURNED_IPM  <br/> |
 |識別子:  <br/> |0x0033  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|エリア:  <br/> |MAPI エンベロープ  <br/> |
+|エリア:  <br/> |MAPI 封筒  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-x. transport プロバイダーは、このプロパティを未読レポートに設定します。
+X.400 トランスポート プロバイダーは、未読レポートにこのプロパティを設定します。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -56,7 +56,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

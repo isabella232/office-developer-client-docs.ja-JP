@@ -25,11 +25,11 @@ ms.locfileid: "33435174"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-には、メッセージトランスポートシステム (MTS) エントリ id が含まれています。 
+X.400 メッセージ トランスポート システム (MTS) エントリ識別子が含まれています。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連するマクロ:  <br/> |[CbMTSID](cbmtsid.md)、 [CbNewMTSID](cbnewmtsid.md) <br/> |
    
 ```cpp
@@ -41,21 +41,21 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cb**
   
-> **abentry**メンバーによって記述された配列内のバイト数。 
+> abEntry メンバーによって記述された配列 **内のバイト数** 。 
     
- **abentry**
+ **abEntry**
   
 > MTS エントリ識別子データを含むバイト配列。
     
 ## <a name="remarks"></a>注釈
 
-**MTSID**構造体は、MAPI エントリ識別子の X 400 マッピングに対してのみ使用されます。 MAPI の[FLATENTRY](flatentry.md)構造に対応しています。 
+**MTSID 構造** は、MAPI エントリ識別子の X.400 マッピングにのみ使用されます。 MAPI [FLATENTRY 構造に対応](flatentry.md) します。 
   
-MTS 識別子の形式は、MAPI エントリ識別子またはバイナリプロパティの値と同じです。 MTS 識別子は、延期されたメッセージのキャンセルに特に役立ちます。 
+MTS 識別子は、MAPI エントリ識別子またはバイナリ プロパティ値と同じ形式です。 MTS 識別子は、遅延メッセージをキャンセルする場合に特に役立ちます。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -25,7 +25,7 @@ ms.locfileid: "33434250"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-以前のアドレス帳プロバイダーエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。 
+以前のアドレス [帳プロバイダー エラー](mapierror.md) に関する情報を含む MAPIERROR 構造体を返します。 
   
 ```cpp
 HRESULT GetLastError(
@@ -39,19 +39,19 @@ HRESULT GetLastError(
 
  _hResult_
   
-> 順番前のメソッド呼び出しで生成されたエラー値へのハンドル。
+> [in]前のメソッド呼び出しで生成されたエラー値のハンドル。
     
  _ulFlags_
   
-> 順番返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> _lppMAPIError_パラメーターで返される**MAPIERROR**構造体の文字列は、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。 
+> _lppMAPIError_ パラメーターで返される **MAPIERROR** 構造体の文字列は、Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列は ANSI 形式になります。 
     
  _lppMAPIError_
   
-> 読み上げエラーのバージョン、コンポーネント、およびコンテキスト情報を含む**MAPIERROR**構造体へのポインターへのポインター。 プロバイダーが適切な情報を使用して**MAPIERROR**構造を提供できない場合は、 _lppMAPIError_パラメーターを NULL に設定できます。 
+> [out]エラーのバージョン、コンポーネント、コンテキスト情報を含む **MAPIERROR** 構造体へのポインターを指すポインター。 プロバイダーが適切な情報を MAPIERROR 構造体に指定できない場合は  _、lppMAPIError_ パラメーターを **NULL** に設定できます。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -61,17 +61,17 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> MAPI_UNICODE フラグが設定されていて、アドレス帳プロバイダーが unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、アドレス帳プロバイダーが unicode のみをサポートしています。
+> アドレス帳MAPI_UNICODEフラグが設定され、アドレス帳プロバイダーが Unicode をサポートしていないか、MAPI_UNICODE が設定されていないと、アドレス帳プロバイダーは Unicode のみをサポートします。
     
 ## <a name="remarks"></a>注釈
 
-アドレス帳プロバイダーは、失敗した前のメソッド呼び出しに関する情報を指定する**GetLastError**メソッドを実装します。 呼び出し元は、 **MAPIERROR**構造のデータをダイアログボックスに含めることによって、エラーに関する詳細情報をユーザーに提供できます。 
+アドレス帳プロバイダーは **、GetLastError メソッドを実装して** 、失敗した以前のメソッド呼び出しに関する情報を提供します。 発信者は **、MAPIERROR** 構造のデータをダイアログ ボックスに含めて、エラーに関する詳細情報をユーザーに提供できます。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-アドレス帳プロバイダーが S_OK を返す場合にのみ、 _lppMAPIError_パラメーターによって示される**MAPIERROR**構造を使用でき**** ます。 場合によっては、アドレス帳プロバイダーが、エラーについての報告に最後のエラーがあったかどうかを判断できないこともあります。 このような状況では、アドレス帳プロバイダーは、代わりに_lppMAPIError_で NULL へのポインターを返します。 
+アドレス帳プロバイダーが構造体を提供する場合、および **GetLastError** が関数を返す場合にのみ _、lppMAPIError_ パラメーターが示す **MAPIERROR** 構造をS_OK。 アドレス帳プロバイダーは、最後のエラーが何だったのか、エラーについて報告する必要がなにもない場合があります。 この状況では、アドレス帳プロバイダーは、代わりに  _lppMAPIError_ で NULL へのポインターを返します。 
   
-**GetLastError**メソッドの詳細については、「 [MAPI 拡張エラー](mapi-extended-errors.md)」を参照してください。
+**GetLastError メソッドの詳細については、「MAPI** 拡張 [エラー」を参照してください](mapi-extended-errors.md)。
   
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: '[xgridspacing] セル&amp; ([ルーラーグリッド] セクション)'
+title: '[XGridSpacing] セル (Ruler &amp; Grid セクション)'
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -16,19 +16,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33435076"
 ---
-# <a name="xgridspacing-cell-ruler-amp-grid-section"></a>[xgridspacing] セル&amp; ([ルーラーグリッド] セクション)
+# <a name="xgridspacing-cell-ruler-amp-grid-section"></a>[XGridSpacing] セル (Ruler &amp; Grid セクション)
 
 固定グリッド (XGridDensity = 0) の水平線の間隔を指定します。
   
 ## <a name="remarks"></a>注釈
 
-このセルは、[**ルーラー &amp;グリッド**] ダイアログボックス ([**表示**] タブの [**表示**] 矢印をクリックすると表示されます) の [上下の**間隔**] オプションに対応しています。 
+このセルは、[ルーラーグリッド] ダイアログ ボックスの水平方向の [最小間隔] オプションに対応します ([表示] タブの [表示] 矢印を **クリック** します)。 **&amp;** 
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [XGridSpacing] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[xgridspacing]  <br/> |
+|セル名:  <br/> |XGridSpacing  <br/> |
    
 プログラムから、インデックスによって [XGridSpacing] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

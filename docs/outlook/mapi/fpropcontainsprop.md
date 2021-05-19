@@ -23,13 +23,13 @@ ms.locfileid: "33432633"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-2つのプロパティ値 (通常は文字列またはバイナリ配列) を比較して、一方に他方が含まれているかどうかを確認します。 
+2 つのプロパティ値 (通常は文字列またはバイナリ配列) を比較して、もう 1 つのプロパティ値にもう一方が含まれているか確認します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 BOOL FPropContainsProp(
@@ -41,48 +41,48 @@ BOOL FPropContainsProp(
 
 ## <a name="parameters"></a>パラメーター
 
-_lpspropvaluedst_
+_lpSPropValueDst_
   
-> 順番_lpspropバリュー rc_パラメーターで指定された検索文字列を含むことができるプロパティ値を定義する[spropvalue](spropvalue.md)構造体へのポインター。 
+> [in]_lpSPropValueSrc_ パラメーターが指す検索文字列を含む可能性があるプロパティ値を定義する [SPropValue](spropvalue.md)構造体へのポインター。 
     
-_lpspropて rc_
+_lpSPropValueSrc_
   
-> 順番**fpropan prop**が、 _lpspropvaluedst_パラメーターで指定されたプロパティ値をシークする、 **spropvalue**構造体へのポインター。 
+> [in]_lpSPropValueDst_ パラメーターが指すプロパティ値で **FPropContainsProp** がシークしている検索文字列を定義する **SPropValue** 構造体へのポインター。 
     
 _ulFuzzyLevel_
   
-> 順番比較で使用する preciseness のレベルを定義するオプション設定。 
+> [in]比較で使用する精度のレベルを定義するオプション設定。 
 
-  - **下位16ビット**は、PT_BINARY および PT_STRING8 型のプロパティに適用されます。 次の値のいずれかを正確に設定する必要があります。
+  - 下位 **16 ビットは、** 種類と種類のプロパティに適用PT_BINARYおよびPT_STRING8。 これらは、次のいずれかの値に設定する必要があります。
       
-    - FL_FULLSTRING: _lpspropvalues rc_検索文字列は、 _lpspropvaluedst_で識別されるプロパティ値と等しくなければなりません。
+    - FL_FULLSTRING:  _lpSPropValueSrc_ 検索文字列は  _、lpSPropValueDst_ で識別されるプロパティ値と等しくする必要があります。
         
-    - FL_PREFIX: lpspropvaluesrc の検索文字列は、 _lpspropvaluedst_で識別されるプロパティ値の先頭に配置する必要があります。 __ 2つの値は、 _lpspropvalues rc_で示される検索文字列の長さまで比較する必要があります。 
+    - FL_PREFIX:  _lpSPropValueSrc_ 検索文字列は  _、lpSPropValueDst_ で識別されるプロパティ値の先頭に表示する必要があります。 2 つの値は  _、lpSPropValueSrc_ で示される検索文字列の長さまでのみ比較する必要があります。 
         
-    - FL_SUBSTRING: lpspropvaluesrc の検索文字列は、 _lpspropvaluedst_で識別されるプロパティ値の任意の場所に格納されている必要があります。 __ 
+    - FL_SUBSTRING:  _lpSPropValueSrc_ 検索文字列は  _、lpSPropValueDst_ で識別されるプロパティ値の任意の場所に含まれている必要があります。 
       
-  - **上位16ビット**は、PT_STRING8 型のプロパティにのみ適用されます。 これらの値は、次の任意の組み合わせで設定できます。
+  - 上位 **16 ビットは、** データ型のプロパティにのみPT_STRING8。 これらは、任意の組み合わせで次の値に設定できます。
     
-    - FL_IGNORECASE: 比較は大文字と小文字の区別を考慮せずに行う必要があります。 
+    - FL_IGNORECASE: 大文字と小文字の区別を考慮せずに比較を行う必要があります。 
         
-    - FL_IGNORENONSPACE: 比較では、Unicode で定義されたスペーシング文字 (アクセント記号など) を無視する必要があります。 
+    - FL_IGNORENONSPACE: この比較では、Unicode で定義された非太平洋文字 (等値記号など) は無視する必要があります。 
         
-    - FL_LOOSE: 比較では、大文字と小文字の区別を無視して、可能な限り一致を示す必要があります。
+    - FL_LOOSE: 大文字と小文字の区別と非スパック文字を無視して、可能な限り一致を示す必要があります。
     
 ## <a name="return-value"></a>戻り値
 
 TRUE 
   
-> パラメーターはすべて有効で、lpspropvaluesrc の検索文字列は_lpspropvaluedst_プロパティ値に指定されたとおりに含まれています。 __ 
+> パラメーターはすべて有効で  _、lpSPropValueSrc_ 検索文字列は  _lpSPropValueDst_ プロパティの値で指定されている通り含まれています。 
     
 FALSE 
   
-> 比較対象のプロパティ値が PT_STRING8 または PT_BINARY の型ではないか、プロパティ値が異なる型で__ あるか、lpspropvaluesrc 検索文字列が_lpspropvaluedst_プロパティ値で指定されたとおりに含まれていません。 
+> 比較されるプロパティの値は、PT_STRING8 または PT_BINARY 型ではないか、プロパティ値が異なる型か  _、lpSPropValueSrc_ 検索文字列が  _lpSPropValueDst_ プロパティ値で指定された値に含めされていません。 
     
 ## <a name="remarks"></a>注釈
 
-比較方法は、 [spropvalue](spropvalue.md)プロパティの定義に指定されているプロパティの種類と、 _ulFuzzyLevel_パラメーターで指定されているファジーレベルヒューリスティックによって異なります。 [fpropcompareprop](fpropcompareprop.md)および**fpropの prop**関数を使用して、テーブルの生成に関する制限を準備できます。 
+比較メソッドは [、SPropValue](spropvalue.md) プロパティ定義で指定されたプロパティの種類と  _、ulFuzzyLevel_ パラメーターで提供されるファジー レベルのヒューリスティックによって異なります。 [FPropCompareProp](fpropcompareprop.md)関数と **FPropContainsProp** 関数を使用して、テーブルを生成するための制限を準備できます。 
   
-プロパティの種類が PT_BINARY の場合、 _ulFuzzyLevel_の上位16ビットは無視されます。 _ulFuzzyLevel_の設定が指定されていない場合、または無効な場合は、完全な文字列の完全一致が実行されます。 プロパティコンテインメントの詳細については、 [scontentrestriction](scontentrestriction.md)構造を参照してください。 
+_ulFuzzyLevel_ の上位 16 ビットは、プロパティの種類が指定PT_BINARY。 _ulFuzzyLevel の設定が_ 見つからないか無効な場合は、完全文字列の完全一致が実行されます。 プロパティの格納の詳細については [、「SContentRestriction 構造体」を参照](scontentrestriction.md) してください。 
   
 

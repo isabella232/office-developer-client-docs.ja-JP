@@ -22,9 +22,9 @@ ms.locfileid: "33434348"
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| .0  <br/> | 通常  <br/> |**visCaseNormal** <br/> |
-| 1   <br/> | すべて大文字  <br/> |**viscaseallcaps** <br/> |
-| 2   <br/> | 先頭文字のみ大文字  <br/> |**viscaseinitialcaps** <br/> |
+| 0  <br/> | 通常  <br/> |**visCaseNormal** <br/> |
+| 1  <br/> | すべて大文字  <br/> |**visCaseAllCaps** <br/> |
+| 2  <br/> | 先頭文字のみ大文字  <br/> |**visCaseInitialCaps** <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -32,14 +32,14 @@ ms.locfileid: "33434348"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | 文字種 [ *i* ] *i* = <1>、2、3、...  <br/> |
+| セル名 :  <br/> | Char.Case[  *i*  ] ここで  *、i*  = <1>、2、3、..  <br/> |
    
 プログラムから、インデックスによって [Case] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionCharacter** <br/> |
-| 行インデックス:  <br/> |**visRowCharacter** +  *i* = ** 0、1、2、...  <br/> |
+| 行インデックス:  <br/> |**visRowCharacter**  +  *i* *=* 0, 1, 2, ...  <br/> |
 | セル インデックス:  <br/> |**visCharacterCase** <br/> |
    
 

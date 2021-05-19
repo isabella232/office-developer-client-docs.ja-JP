@@ -1,5 +1,5 @@
 ---
-title: MessageBox マクロアクション (Access カスタム web アプリ)
+title: MessageBox マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433452"
 ---
-# <a name="messagebox-macro-action-access-custom-web-app"></a>MessageBox マクロアクション (Access カスタム web アプリ)
+# <a name="messagebox-macro-action-access-custom-web-app"></a>MessageBox マクロ アクション (Access カスタム Web アプリ)
 
 " **MessageBox/メッセージボックス** " アクションを使用すると、警告または情報メッセージが含まれるメッセージ ボックスを表示できます。たとえば、" **MessageBox/メッセージボックス** " アクションは入力検査マクロで使用できます。コントロールまたはレコードがマクロの入力検査の条件に適合しない場合は、メッセージ ボックスが表示され、エラー メッセージと入力できるデータの種類に関する説明が示されます。 
   
@@ -27,6 +27,6 @@ ms.locfileid: "33433452"
   
 |**アクションの引数**|**説明**|
 |:-----|:-----|
-|Message  <br/> |メッセージ ボックスに表示するテキスト。最大 255 文字または式 (頭に等号記号を付けます) を入力します。  <br/> |
+|メッセージ  <br/> |メッセージ ボックスに表示するテキスト。最大 255 文字または式 (頭に等号記号を付けます) を入力します。  <br/> |
    
 

@@ -25,7 +25,7 @@ ms.locfileid: "33433984"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-現在のメッセージが MAPI スプーラーに送信されたことをフォームビューアーに通知します。
+現在のメッセージが MAPI スプーラーに送信されたとフォーム ビューアーに通知します。
   
 ```cpp
 HRESULT OnSubmitted( void );
@@ -39,17 +39,17 @@ HRESULT OnSubmitted( void );
 
 S_OK 
   
-> 通知に成功しました。
+> 通知が成功しました。
     
 ## <a name="remarks"></a>注釈
 
-form オブジェクトは、 [IMAPIMessageSite:: submitmessage](imapimessagesite-submitmessage.md)の呼び出しが正常に返された後に**IMAPIViewAdviseSink:: onsubmitted**メソッドを呼び出します。 
+フォーム オブジェクトは [、IMAPIMessageSite::SubmitMessage](imapimessagesite-submitmessage.md)の呼び出しが正常に返された後 **、IMAPIViewAdviseSink::OnSubmitted** メソッドを呼び出します。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**onsubmitted**を呼び出した後は、メッセージが更新されたことを想定して続行できます。 発生した変更を反映するように windows を更新します。 
+**OnSubmitted が** 呼び出された後、メッセージが更新されたという前提で続行できます。 発生した変更を反映するようにウィンドウを更新します。 
   
-フォーム通知の詳細については、「[フォーム通知の送信と受信](sending-and-receiving-form-notifications.md)」を参照してください。
+フォーム通知の詳細については、「フォーム通知の送受信 [」を参照してください](sending-and-receiving-form-notifications.md)。
   
 ## <a name="see-also"></a>関連項目
 

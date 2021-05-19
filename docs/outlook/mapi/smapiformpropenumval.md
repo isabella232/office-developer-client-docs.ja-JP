@@ -25,11 +25,11 @@ ms.locfileid: "33435412"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-列挙された整数値をその値の表示名にマップします。 
+マップの表示名に列挙された整数値を指定します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
    
 ```cpp
 typedef struct _SMAPIFormPropEnumVal
@@ -40,19 +40,19 @@ typedef struct _SMAPIFormPropEnumVal
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **pszdisplayname**
+ **pszDisplayName**
   
-> **nval**メンバーで指定された値の表示名を含む文字列。 
+> **nVal** メンバーで指定された値の表示名を含む文字列。 
     
- **nval**
+ **nVal**
   
-> **pszdisplayname**メンバーによって示される表示名の列挙値。 
+> **pszDisplayName** メンバーが指す表示名の列挙値。 
     
 ## <a name="remarks"></a>注釈
 
-ユーザーがフォームから表示名を選択すると、その名前の対応する列挙値は、フォームに関連付けられている[imapiprop](imapipropiunknown.md)インターフェイスの実装を使用して格納されます。 
+ユーザーがフォームから表示名を選択すると、フォームに関連付けられた [IMAPIProp](imapipropiunknown.md) インターフェイス実装を使用して、名前の対応する列挙値が格納されます。 
   
 ## <a name="see-also"></a>関連項目
 

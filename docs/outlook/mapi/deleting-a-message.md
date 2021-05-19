@@ -1,5 +1,5 @@
 ---
-title: メッセージを削除する
+title: メッセージの削除
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,26 +15,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433165"
 ---
-# <a name="deleting-a-message"></a>メッセージを削除する
+# <a name="deleting-a-message"></a>メッセージの削除
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアントは開いているメッセージを削除することができ、ユーザーがメッセージを読んでいるとき、または閉じているときに、ユーザーが [コンテンツ] テーブルを表示しているときに、そのメッセージを削除することができます。 ユーザーが誤ってメッセージを削除しないようにするために、MAPI はメッセージの削除を2段階の手順で定義します。
+クライアントは、メッセージが開いているときに、ユーザーがメッセージを読み取る場合、またはメッセージが閉じ、ユーザーがコンテンツ テーブルを表示している場合に削除できます。 ユーザーが誤ってメッセージを削除することを保護するために、MAPI はメッセージの削除を 2 つの手順プロセスとして定義します。
   
-1. 削除済みアイテムフォルダーとして指定されているフォルダー ( **PR_IPM_WASTEBASKET_ENTRYID** ([PidTagIpmWastebasketEntryId](pidtagipmwastebasketentryid-canonical-property.md)) プロパティにエントリ識別子が格納されているフォルダー) にメッセージを移動するようにマークします。 
+1. 削除済みアイテム フォルダーとして指定されているフォルダー (エントリ識別子が **PR_IPM_WASTEBASKET_ENTRYID** ([PidTagIpmWastebasketEntryId)](pidtagipmwastebasketentryid-canonical-property.md)プロパティに格納されているフォルダー) に移動して、削除メッセージをマークします。 
     
-2. [imapifolder::D eletemessages](imapifolder-deletemessages.md)メソッドを呼び出して、メッセージを削除します。 
+2. [IMAPIFolder::D eleteMessages メソッドを呼び出して、メッセージを削除](imapifolder-deletemessages.md)します。 
     
-削除済みアイテムフォルダー以外のフォルダーにあるメッセージを削除することをユーザーが選択した場合は、削除対象としてマークします。 ユーザーが [削除済みアイテム] フォルダー内からメッセージを選択した場合にのみ、メッセージがワークステーションから物理的に削除されます。 ユーザーに本当に削除を実行しているかどうかを確認するように求めるメッセージを表示することができます。
+ユーザーが [削除済みアイテム] フォルダー以外のフォルダー内のメッセージを削除する場合は、削除のマークを付きます。 ユーザーが削除済みアイテム フォルダー内からメッセージを選択した場合にのみ、メッセージをワークステーションから物理的に削除する必要があります。 ユーザーに対して、削除を実際に実行する意図を確認するように求めるメッセージを表示できます。
   
  **メッセージを削除するには**
   
-1. その後の削除が意図的なものであることをユーザーに確認します。
+1. 差し迫った削除が意図的な場合は、ユーザーに確認します。
     
-2. 削除するフォルダーの親を決定します。 削除済みアイテムフォルダーまたは削除済みアイテムフォルダー内のサブフォルダーである場合は、 [imapifolder::D eletemessages](imapifolder-deletemessages.md)を呼び出してメッセージを削除します。 
+2. 削除するフォルダーの親を決定します。 削除済みアイテム フォルダーまたは削除済みアイテム フォルダー内のサブフォルダーである場合は [、IMAPIFolder::D eleteMessages](imapifolder-deletemessages.md) を呼び出してメッセージを削除します。 
     
-3. フォルダーが [削除済みアイテム] フォルダーに含まれていない場合は、MESSAGE_MOVE フラグが設定された[imapifolder:: copymessages](imapifolder-copymessages.md)を呼び出して、メッセージを削除済みアイテムフォルダーに移動します。 
+3. フォルダーが削除済みアイテム フォルダー内に含まれている場合は、メッセージを削除済みアイテム フォルダーに再配置するために、MESSAGE_MOVE フラグが設定された [IMAPIFolder::CopyMessages](imapifolder-copymessages.md) を呼び出します。 
     
 

@@ -1,5 +1,5 @@
 ---
-title: もし。。。そうしたら。。。Else マクロブロック (Access カスタム web アプリ)
+title: もし。。。そうしたら。。。Else マクロ ブロック (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33434495"
 ---
-# <a name="ifthenelse-macro-block-access-custom-web-app"></a>もし。。。そうしたら。。。Else マクロブロック (Access カスタム web アプリ)
+# <a name="ifthenelse-macro-block-access-custom-web-app"></a>もし。。。そうしたら。。。Else マクロ ブロック (Access カスタム Web アプリ)
 
 式の値に応じた条件に基づいてアクションのグループを実行するには、If マクロ ブロックを使用します。 
   
@@ -39,7 +39,7 @@ For both **If** and ** Else If **, the following arguments are required.
   
 |**アクションの引数**|**説明**|
 |:-----|:-----|
-|**Expression** <br/> |テストする条件です。 真または偽のいずれかに評価できる式でなければなりません。  <br/> |
+|**Expression** <br/> |テストする条件です。True または False に評価される式を指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

@@ -1,5 +1,5 @@
 ---
-title: ipropdata imapiprop
+title: IPropData IMAPIProp
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -29,28 +29,28 @@ ms.locfileid: "33435146"
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
-|公開者:  <br/> |プロパティデータオブジェクト  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |プロパティ データ オブジェクト  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |サービスプロバイダおよびクライアントアプリケーション  <br/> |
+|呼び出し元:  <br/> |サービス プロバイダーとクライアント アプリケーション  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMAPIPropData  <br/> |
-|ポインターの種類:  <br/> |lppropdata  <br/> |
-|トランザクションモデル:  <br/> |非トランザクション  <br/> |
+|ポインターの種類:  <br/> |LPPROPDATA  <br/> |
+|トランザクション モデル:  <br/> |非トランザクション  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
 |[HrSetObjAccess](ipropdata-hrsetobjaccess.md) <br/> |�I�u�W�F�N�g�̃A�N�Z�X ���x����ݒ肵�܂��B  <br/> |
-|[hrsetpropaccess](ipropdata-hrsetpropaccess.md) <br/> |1つ以上のオブジェクトのプロパティのアクセスレベルと状態を設定します。  <br/> |
-|[hrgetpropaccess](ipropdata-hrgetpropaccess.md) <br/> |�A�N�Z�X ���x���� 1 �܂��͕����̃I�u�W�F�N�g�̃v���p�e�B�̏�Ԃ�擾���܂��B  <br/> |
-|[hraddobjprops](ipropdata-hraddobjprops.md) <br/> |オブジェクトに PT_OBJECT 型の1つ以上のプロパティを追加します。  <br/> |
+|[HrSetPropAccess](ipropdata-hrsetpropaccess.md) <br/> |1 つ以上のオブジェクトのプロパティのアクセス レベルと状態を設定します。  <br/> |
+|[HrGetPropAccess](ipropdata-hrgetpropaccess.md) <br/> |�A�N�Z�X ���x���� 1 �܂��͕����̃I�u�W�F�N�g�̃v���p�e�B�̏�Ԃ�擾���܂��B  <br/> |
+|[HrAddObjProps](ipropdata-hraddobjprops.md) <br/> |オブジェクトの種類のプロパティを 1 つ以上PT_OBJECTオブジェクトに追加します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-**ipropdata:: imapiprop**インターフェイスは MAPI で実装されており、主に、 [createiprop](createiprop.md)関数を呼び出してこの実装にアクセスするサービスプロバイダーによって使用されます。 
+**IPropData::IMAPIProp** インターフェイスは MAPI によって実装され、主に CreateIProp 関数を呼び出してこの実装にアクセスする [サービス プロバイダーによって使用](createiprop.md)されます。 
   
-オブジェクトおよびプロパティのアクセスレベルの詳細については、「[オブジェクトおよびプロパティのアクセス許可](permissions-for-mapi-objects-and-properties.md)」を参照してください。
+オブジェクトとプロパティのアクセス レベルの詳細については、「オブジェクトとプロパティの [アクセス許可」を参照してください](permissions-for-mapi-objects-and-properties.md)。
   
 ## <a name="see-also"></a>関連項目
 

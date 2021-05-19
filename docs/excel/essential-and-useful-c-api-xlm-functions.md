@@ -1,5 +1,5 @@
 ---
-title: �d�v�Ŗ�ɗ��� C API XLM �֐�
+title: 重要で役に立つ C API XLM 関数
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer

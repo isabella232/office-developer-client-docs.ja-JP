@@ -7,7 +7,7 @@ ms.date: 11/16/2019
 ms.audience: Developer
 ms.topic: overview
 keywords:
-- フォームテンプレート [infopath 2007], マネージコードフォームテンプレート [InfoPath 2007], reference [InfoPath 2007], マネージコード [InfoPath 2007], InfoPath 2007, リファレンス
+- フォーム テンプレート [infopath 2007],マネージ コード フォーム テンプレート [InfoPath 2007],リファレンス [InfoPath 2007],マネージ コード [InfoPath 2007],InfoPath 2007,reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7610acc3-f705-4a38-968c-5b3a358efc90
@@ -27,7 +27,7 @@ InfoPath 2013 フォーム テンプレートの開発者向けリファレン�
   
 ## <a name="related-links"></a>関連リンク
 
-[Microsoft Office デベロッパーセンター: Docs](https://developer.microsoft.com/en-us/office/docs)
+[Microsoft Office開発者センター: Docs](https://developer.microsoft.com/en-us/office/docs)
   
 
 [Microsoft アクセシビリティ](https://www.microsoft.com/en-us/accessibility/)

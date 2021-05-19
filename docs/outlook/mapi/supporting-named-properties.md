@@ -21,18 +21,18 @@ ms.locfileid: "33434327"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[imapiprop: IUnknown](imapipropiunknown.md)インターフェイスを実装するオブジェクトは、名前付きプロパティをサポートできます。 名前付きプロパティのサポートは、次の場合に必要です。 
+IMAPIProp : [IUnknown](imapipropiunknown.md) インターフェイスを実装するオブジェクトは、名前付きプロパティをサポートできます。 名前付きプロパティのサポートは、次の場合に必要です。 
   
 - 他のプロバイダーからのエントリをコンテナーにコピーできるアドレス帳プロバイダー。
     
-- 任意のメッセージの種類を作成するために使用できるメッセージストアプロバイダー。
+- 任意のメッセージの種類を作成するために使用できるメッセージ ストア プロバイダー。
     
-名前付きプロパティのサポートは、他のすべてのサービスプロバイダーでは省略可能です。 名前付きプロパティをサポートするサービスプロバイダーは、 [imapiprop:: GetNamesFromIDs](imapiprop-getnamesfromids.md)および[imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)メソッドに名前から識別子へのマッピングを実装する必要があります。 クライアントは**GetNamesFromIDs**を呼び出して、1つ以上の名前の識別子を作成または取得するために、0x8000 を超える範囲および**getidsfromnames**内の1つ以上のプロパティ識別子に対応する名前を取得します。 
+他のすべてのサービス プロバイダーでは、名前付きプロパティのサポートは省略可能です。 名前付きプロパティをサポートするサービス プロバイダーは [、IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md) および [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) メソッドに名前と識別子のマッピングを実装する必要があります。 クライアントは **GetNamesFromIDs** を呼び出して、0x8000 以上の範囲の 1 つ以上のプロパティ識別子に対応する名前を取得し **、GetIDsFromNames** を使用して 1 つ以上の名前の識別子を作成または取得します。 
   
-名前付きプロパティをサポートしていないサービスプロバイダーは次のようにする必要があります。
+名前付きプロパティをサポートしないサービス プロバイダーは、次の必要があります。
   
-- 失敗した[imapiprop:: setprops](imapiprop-setprops.md)を使用して、id 0x8000 以上のプロパティを設定します。この値は、 [spropproblem](spropproblem.md)の配列の MAPI_E_UNEXPECTED_ID を返します。 
+- [IMAPIProp::SetProps](imapiprop-setprops.md)の呼び出しを失敗して[、SPropProblem](spropproblem.md)配列で 0x8000 以上の識別子を持つプロパティMAPI_E_UNEXPECTED_IDを設定します。 
     
-- [imapiprop:: GetNamesFromIDs](imapiprop-getnamesfromids.md)および[imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)メソッドから MAPI_E_NO_SUPPORT を返します。 
+- [IMAPIProp:::GetNamesFromIDs](imapiprop-getnamesfromids.md)および[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)メソッドから値を返します。 MAPI_E_NO_SUPPORT 
     
 

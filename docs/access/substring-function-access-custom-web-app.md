@@ -1,5 +1,5 @@
 ---
-title: SubString 関数 (Access カスタム web アプリ)
+title: SubString 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433473"
 ---
-# <a name="substring-function-access-custom-web-app"></a>SubString 関数 (Access カスタム web アプリ)
+# <a name="substring-function-access-custom-web-app"></a>SubString 関数 (Access カスタム Web アプリ)
 
 文字列式の一部が返されます。
   

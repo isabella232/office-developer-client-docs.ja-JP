@@ -26,7 +26,7 @@ TYPE ()
   
 ### <a name="return-value"></a>戻り値
 
-数値
+番号
   
 ## <a name="remarks"></a>注釈
 
@@ -38,7 +38,7 @@ TYPE ()
 |Group  <br/> |71  <br/> |
 |Shape  <br/> |72  <br/> |
 |Style  <br/> |74  <br/> |
-|ドキュメント  <br/> |77  <br/> |
+|ガイド  <br/> |77  <br/> |
 |外部  <br/> |78  <br/> |
 |Document  <br/> |79  <br/> |
    

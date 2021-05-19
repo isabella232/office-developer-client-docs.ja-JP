@@ -1,5 +1,5 @@
 ---
-title: 受信メッセージでの書式付きテキストのサポートクライアントの責任
+title: 受信メッセージの書式設定されたテキストのサポート クライアントの責任
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,31 +15,31 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33434502"
 ---
-# <a name="supporting-formatted-text-in-incoming-messages-client-responsibilities"></a>受信メッセージでの書式付きテキストのサポート: クライアントの責任
+# <a name="supporting-formatted-text-in-incoming-messages-client-responsibilities"></a>受信メッセージの書式設定されたテキストのサポート: クライアントの責任
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージはメッセージングシステム間で転送されるため、MAPI スプーラーは、リッチテキスト形式がメッセージテキストと同期したままになるようにします。 MAPI スプーラーは、ラップされたバージョンのメッセージ内から、トランスポートプロバイダーに渡される[rtfsync](rtfsync.md) function を呼び出します。 トランスポートプロバイダーは、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出して、メッセージに加えられた変更を保存し、新しい受信者にルーティングします。 
+メッセージがメッセージング システム間で転送される場合、MAPI スプーラーはリッチ テキストの書式設定がメッセージ テキストと同期されたままになります。 MAPI スプーラーは、トランスポート プロバイダーに渡すメッセージのラップされたバージョン内から [RTFSync](rtfsync.md) 関数を呼び出します。 トランスポート プロバイダーは [、IMAPIProp::SaveChanges](imapiprop-savechanges.md) メソッドを呼び出してメッセージに加えた変更を保存し、新しい受信者にルーティングします。 
   
-受信者の RTF 対応クライアントアプリケーションがメッセージを開いてテキストを表示する場合は、テキストを書式設定と同期して、 **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) または**PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) のどちらかを開く必要があります。使用できるプロパティに応じて異なります。
+受信者の RTF 対応クライアント アプリケーションがメッセージを開いてテキストを表示する場合は、テキストを書式設定と同期し、使用可能なプロパティに応じて **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) または **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) を開く必要があります。
   
- **メッセージ、RTF 対応クライアントを開くには**
+ **メッセージを開く場合は、RTF 対応のクライアント**
   
-1. メッセージストアが RTF に対応していない場合は、 **rtfsync**を呼び出してメッセージテキストと書式設定を同期します。 **PR_RTF_IN_SYNC** ([PidTagRtfInSync](pidtagrtfinsync-canonical-property.md)) プロパティが存在しない場合、または FALSE に設定されている場合は、 _ulflags_パラメーターで RTF_SYNC_BODY_CHANGED フラグを渡す必要があります。 RTF 対応のメッセージストアを使用しているクライアントは、メッセージストアがそれを処理するため、 **rtfsync**呼び出しを行わないでください。 
+1. メッセージ **ストアが RTF** 対応ではない場合は、RTFSync を呼び出して、メッセージ テキストを書式設定と同期します。 **PR_RTF_IN_SYNC RTF_SYNC_BODY_CHANGED** ([PidTagRtfInSync](pidtagrtfinsync-canonical-property.md)) プロパティが見つからないか、FALSE に設定されている場合は、ulFlags パラメーターにこのフラグを渡す必要があります。  RTF 対応のメッセージ ストアを操作するクライアントは、メッセージ ストアが処理を行うので **、RTFSync** 呼び出しを行う必要があります。 
     
-2. メッセージテキストが更新された場合は、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)を呼び出します。 
+2. メッセージ [テキストが更新されている場合は、IMAPIProp::SaveChanges](imapiprop-savechanges.md) を呼び出します。 
     
-3. **PR_RTF_COMPRESSED**プロパティを開くには、 [imapiprop:: openproperty](imapiprop-openproperty.md)を呼び出します。 **PR_RTF_COMPRESSED**が使用できない場合は、代わりに**PR_BODY**プロパティを開いて、メッセージの内容を表示する必要があります。 
+3. [IMAPIProp::OpenProperty](imapiprop-openproperty.md)を呼び出して、次のプロパティ **PR_RTF_COMPRESSED** します。 この **PR_RTF_COMPRESSED** 使用できない場合は、代わりに PR_BODY プロパティを開き **、メッセージ** コンテンツを表示する必要があります。 
     
-4. 圧縮された RTF データの圧縮されていないバージョンを作成するには、 [WrapCompressedRTFStream](wrapcompressedrtfstream.md)関数を呼び出します。 
+4. [WrapCompressedRTFStream](wrapcompressedrtfstream.md)関数を呼び出して、圧縮された RTF データの圧縮されていないバージョンを作成します (使用可能な場合)。 
     
-5. 非圧縮 RTF データまたはプレーンテキストデータをユーザーに表示します。
+5. 圧縮されていない RTF データまたはプレーン テキスト データをユーザーに表示します。
     
- **rtfsync**メッセージが更新されたかどうかを示すブール値を返します。 この値が TRUE を返す場合は、任意の時点で**SaveChanges**を呼び出して更新を永続的に行います。 **rtfsync**が返された直後に呼び出しを行う必要はありません。 
+ **RTFSync** は、メッセージが更新されたかどうかを示すブール値を返します。 この値が TRUE を返す場合は、ある時点で **SaveChanges** を呼び出して更新プログラムを永続的に設定します。 RTFSync が返された直後に呼び **出しを行う** 必要はなされません。 
   
 > [!NOTE]
-> 受信する前に、多くのコンポーネントが書式設定されたテキストを処理するため、破損の可能性があります。 この破損は、メッセージストアプロバイダー、サードパーティアプリケーション、ゲートウェイ、または転送エラーによって発生する可能性があります。 
+> 多くのコンポーネントで、書式設定されたテキストを受信する前に処理する場合が多いので、破損の可能性があります。 この破損は、メッセージ ストア プロバイダー、サードパーティ アプリケーション、ゲートウェイ、または送信エラーから発生する可能性があります。 
   
 

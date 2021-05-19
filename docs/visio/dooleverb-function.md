@@ -22,13 +22,13 @@ OLE オブジェクトの動詞を実行します。
   
 ## <a name="syntax"></a>構文
 
-DOOLEVERB ("* * *verb* * *") 
+DOOLEVERB(" ** *verb* ** ") 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _xexch50_ <br/> |必須  <br/> |**String** <br/> |実行する動詞を指定します。  <br/> |
+| _"verb"_ <br/> |必須  <br/> |**String** <br/> |実行する動詞を指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -36,7 +36,7 @@ DOOLEVERB ("* * *verb* * *")
   
 ## <a name="example"></a>例
 
-DOOLEVERB ("edit")
+DOOLEVERB("edit")
   
 OLE オブジェクト プログラムを実行し、リンクされた、または埋め込まれているオブジェクトを表示して編集できるようにします。
   

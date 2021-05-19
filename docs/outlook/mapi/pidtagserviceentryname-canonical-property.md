@@ -25,7 +25,7 @@ ms.locfileid: "33432472"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージサービスを構成するためのエントリポイント関数の名前を含みます。
+メッセージ サービスの構成用のエントリ ポイント関数の名前を格納します。
   
 |||
 |:-----|:-----|
@@ -36,23 +36,23 @@ ms.locfileid: "33432472"
    
 ## <a name="remarks"></a>注釈
 
-メッセージサービスの実装者は、メッセージサービスのエントリポイントを指定することをお勧めしますが、エントリポイントは必須ではありません。 ただし、関連する構成プロパティが存在する場合にのみ、エントリポイントを指定する必要があります。 これらのプロパティが存在しない場合、MAPI はエントリポイントが提供されていないことを前提としています。
+メッセージ サービスの実装者は、メッセージ サービスエントリ ポイントを提供しますが、エントリ ポイントは必要ありません。 ただし、エントリ ポイントは、関連する構成プロパティが存在する場合にのみ指定する必要があります。 これらのプロパティが存在しない場合、MAPI はエントリ ポイントが指定されていないと見なします。
   
-エントリポイント関数が表示されるダイナミックリンクライブラリ (DLL) は、 **PR_SERVICE_DLL_NAME** ([PidTagServiceDllName](pidtagservicedllname-canonical-property.md)) プロパティによって名前が付けられます。
+エントリ ポイント関数が表示されるダイナミック リンク ライブラリ (DLL) の名前は、PR_SERVICE_DLL_NAME **(** [PidTagServiceDllName](pidtagservicedllname-canonical-property.md)) プロパティによって指定されます。
   
-メッセージサービスのエントリポイントの詳細については、「[サービスプロバイダーエントリポイント関数の実装](implementing-a-service-provider-entry-point-function.md)」を参照してください。
+メッセージ サービス エントリ ポイントの詳細については、「Service Provider Entry Point Function の実装 [」を参照してください](implementing-a-service-provider-entry-point-function.md)。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -62,7 +62,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

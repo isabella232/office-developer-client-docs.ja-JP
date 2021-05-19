@@ -1,5 +1,5 @@
 ---
-title: Lower 関数 (Access カスタム web アプリ)
+title: Lower Function (Access custom Web app)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33434411"
 ---
-# <a name="lower-function-access-custom-web-app"></a>Lower 関数 (Access カスタム web アプリ)
+# <a name="lower-function-access-custom-web-app"></a>Lower Function (Access custom Web app)
 
 大文字データを小文字に変換した後の文字式を返します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "33434411"
   
 ## <a name="syntax"></a>構文
 
- **下げる**(*textexpression*) 
+ **Lower** (*TextExpression*) 
   
 **Lower** 関数には、以下の引数があります。 
   

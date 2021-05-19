@@ -25,34 +25,34 @@ ms.locfileid: "33433368"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージを操作し、そのような操作に応答するフォームビューアコード (通常はクライアントアプリケーション) によって実装されます。
+メッセージを操作し、そのような操作に応答するフォーム ビューアー コード (通常はクライアント アプリケーション) によって実装されます。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
-|公開者:  <br/> |メッセージサイトオブジェクト  <br/> |
-|実装元:  <br/> |フォームビューアー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |メッセージ サイト オブジェクト  <br/> |
+|実装元:  <br/> |フォーム ビューアー  <br/> |
 |呼び出し元:  <br/> |フォーム オブジェクト  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMAPIMessageSite  <br/> |
 |ポインターの種類:  <br/> |LPMAPIMESSAGESITE  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[getsession](imapimessagesite-getsession.md) <br/> |現在のメッセージが作成または開かれた MAPI セッションを返します。  <br/> |
-|[GetStore](imapimessagesite-getstore.md) <br/> |そのようなストアが存在する場合は、現在のメッセージが含まれているメッセージストアを返します。  <br/> |
-|[GetFolder](imapimessagesite-getfolder.md) <br/> |現在のメッセージが作成または開かれたフォルダー (そのフォルダーが存在する場合) を返します。  <br/> |
+|[GetSession](imapimessagesite-getsession.md) <br/> |現在のメッセージが作成または開かされた MAPI セッションを返します。  <br/> |
+|[GetStore](imapimessagesite-getstore.md) <br/> |そのようなストアが存在する場合は、現在のメッセージを含むメッセージ ストアを返します。  <br/> |
+|[GetFolder](imapimessagesite-getfolder.md) <br/> |そのようなフォルダーが存在する場合は、現在のメッセージが作成または開かされたフォルダーを返します。  <br/> |
 |[GetMessage](imapimessagesite-getmessage.md) <br/> |現在のメッセージを返します。  <br/> |
-|[getformmanager](imapimessagesite-getformmanager.md) <br/> |フォームサーバーが別のフォームサーバーを開くために使用できるフォームマネージャーインターフェイスを返します。  <br/> |
+|[GetFormManager](imapimessagesite-getformmanager.md) <br/> |フォーム サーバーが別のフォーム サーバーを開くのに使用できるフォーム マネージャー インターフェイスを返します。  <br/> |
 |[NewMessage](imapimessagesite-newmessage.md) <br/> |新しいメッセージを作成します。  <br/> |
-|[copymessage](imapimessagesite-copymessage.md) <br/> |現在のメッセージをフォルダーにコピーします。  <br/> |
+|[CopyMessage](imapimessagesite-copymessage.md) <br/> |現在のメッセージをフォルダーにコピーします。  <br/> |
 |[MoveMessage](imapimessagesite-movemessage.md) <br/> |現在のメッセージをフォルダーに移動します。  <br/> |
 |[DeleteMessage](imapimessagesite-deletemessage.md) <br/> |現在のメッセージを削除します。  <br/> |
-|[SaveMessage](imapimessagesite-savemessage.md) <br/> |現在のメッセージを保存するよう要求します。  <br/> |
-|[submitmessage](imapimessagesite-submitmessage.md) <br/> |現在のメッセージが配信のためにキューに入れられるように要求します。  <br/> |
-|[getsitestatus](imapimessagesite-getsitestatus.md) <br/> |現在のメッセージのメッセージサイトの機能に関する情報をメッセージサイトオブジェクトから返します。  <br/> |
-|[GetLastError](imapimessagesite-getlasterror.md) <br/> |メッセージサイトオブジェクトに発生する前のエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
+|[SaveMessage](imapimessagesite-savemessage.md) <br/> |現在のメッセージを保存する要求。  <br/> |
+|[SubmitMessage](imapimessagesite-submitmessage.md) <br/> |現在のメッセージを配信キューに入れろという要求。  <br/> |
+|[GetSiteStatus](imapimessagesite-getsitestatus.md) <br/> |現在のメッセージに対するメッセージ サイトの機能に関する情報をメッセージ サイト オブジェクトから返します。  <br/> |
+|[GetLastError](imapimessagesite-getlasterror.md) <br/> |メッセージ サイト オブジェクトに発生した以前のエラーに関する情報を含む [MAPIERROR](mapierror.md) 構造体を返します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

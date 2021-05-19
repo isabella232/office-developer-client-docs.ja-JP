@@ -25,7 +25,7 @@ ms.locfileid: "33434089"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-特定のメッセージクラスの受信メッセージの送信先としてフォルダーを確立します。
+特定のメッセージ クラスの受信メッセージの宛先としてフォルダーを確立します。
   
 ```cpp
 HRESULT SetReceiveFolder(
@@ -38,25 +38,25 @@ HRESULT SetReceiveFolder(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpszmessageclass_
+ _lpszMessageClass_
   
-> 順番新しい受信フォルダーに関連付けられるメッセージクラスへのポインター。 _lpszmessageclass_パラメーターが NULL または空の文字列に設定されている場合、 **setreceivefolder**は、メッセージストアの既定の受信フォルダーを設定します。 
+> [in]新しい受信フォルダーに関連付けるメッセージ クラスへのポインター。 _lpszMessageClass_ パラメーターが NULL または空の文字列に設定されている場合 **、SetReceiveFolder** はメッセージ ストアの既定の受信フォルダーを設定します。 
     
  _ulFlags_
   
-> 順番渡された文字列内のテキストの種類を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]渡された文字列内のテキストの種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> メッセージクラスの文字列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、メッセージクラスの文字列は ANSI 形式になります。
+> メッセージ クラスの文字列は Unicode 形式です。 メッセージ クラスMAPI_UNICODEが設定されていない場合、メッセージ クラス文字列は ANSI 形式です。
     
  _cbEntryID_
   
-> 順番_lな tryid_パラメーターで指定されたエントリ識別子のバイト数。 
+> [in]  _lpEntryID_ パラメーターが指すエントリ識別子のバイト数。 
     
- _lて tryid_
+ _lpEntryID_
   
-> 順番受信フォルダーとして確立するフォルダーのエントリ識別子へのポインター。 _lpentryid_パラメーターが NULL に設定されている場合、 **setreceivefolder**は現在の受信フォルダーをメッセージストアの既定値で置き換えます。 
+> [in]受信フォルダーとして確立するフォルダーのエントリ識別子へのポインター。 _lpEntryID_ パラメーターが NULL に設定されている場合 **、SetReceiveFolder** は現在の受信フォルダーをメッセージ ストアの既定値に置き換える。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -66,11 +66,11 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-**IMsgStore:: setreceivefolder**メソッドは、特定のメッセージクラスの受信フォルダーを設定または変更します。 **setreceivefolder**では、クライアントは、連続した呼び出しを使用して、定義された各メッセージクラスに対して異なる受信フォルダーを指定したり、複数のメッセージクラスの受信メッセージをすべて同じフォルダーに移動するように指定したりできます。 たとえば、クライアントは独自のフォルダーにメッセージの独自のクラスを受け取ることができます。 fax アプリケーションは、受信 fax を格納する1つのフォルダーと、プロバイダーが発信 fax を配置する別のフォルダーを指定できます。
+**IMsgStore::SetReceiveFolder** メソッドは、特定のメッセージ クラスの受信フォルダーを設定または変更します。 **SetReceiveFolder** を使用すると、クライアントは、連続する呼び出しを使用して、定義されたメッセージ クラスごとに異なる受信フォルダーを指定するか、複数のメッセージ クラスの受信メッセージがすべて同じフォルダーに移動することを指定できます。 たとえば、クライアントは独自のクラスのメッセージを独自のフォルダーに到着できます。 FAX アプリケーションは、ストア プロバイダーが受信 FAX を置く 1 つのフォルダーと、プロバイダーが送信 FAX を置く別のフォルダーを指定できます。
   
-**setreceivefolder**の呼び出し中にエラーが発生しても、受信フォルダーの設定は変わりません。 
+**SetReceiveFolder** の呼び出し中にエラーが発生した場合、受信フォルダーの設定は変更されません。 
   
-**setreceivefolder**で、 _lpentryid_が NULL に設定されている受信フォルダーの設定を変更すると、既定の受信フォルダーが設定されていることを示します。 **setreceivefolder**は、指定されたメッセージクラス。 
+**SetReceiveFolder** が _lpEntryID_ を NULL に設定して受信フォルダーの設定を変更すると、既定の受信フォルダーを設定する必要がある場合 **、SetReceiveFolder** は、指定されたメッセージ クラスに既存の設定が存在しない場合でも、S_OK を返します。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -78,7 +78,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MsgStoreDlg  <br/> |CMsgStoreDlg:: OnSetReceiveFolder  <br/> |mfcmapi は、 **IMsgStore:: setreceivefolder**メソッドを使用して、特定のメッセージクラスの受信フォルダーとしてフォルダーを設定します。  <br/> |
+|MsgStoreDlg.cpp  <br/> |CMsgStoreDlg::OnSetReceiveFolder  <br/> |MFCMAPI は **、IMsgStore::SetReceiveFolder** メソッドを使用して、フォルダーを特定のメッセージ クラスの受信フォルダーとして設定します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

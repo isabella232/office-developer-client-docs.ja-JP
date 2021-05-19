@@ -25,11 +25,11 @@ ms.locfileid: "33433298"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-既存の[spro指定 trarray](spropattrarray.md)構造体のバイト数を計算します。 
+既存の [SPropAttrArray](spropattrarray.md) 構造体のバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Imessage  <br/> |
+|ヘッダー ファイル:  <br/> |Imessage.h  <br/> |
 |関連する構造:  <br/> |**SPropAttrArray** <br/> |
    
 ```cpp
@@ -38,9 +38,9 @@ CbSPropAttrArray (_lparray)
 
 ## <a name="parameters"></a>パラメーター
 
- __lparray_
+ _ _lparray_
   
-> 既存の**sproな trarray**構造体へのポインター。 
+> 既存の **SPropAttrArray 構造体へのポインター** 。 
     
 ## <a name="see-also"></a>関連項目
 

@@ -25,13 +25,13 @@ ms.locfileid: "33432444"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-呼び出し元アプリケーションの MAPI アイドルエンジンを初期化します。 
+呼び出し元のアプリケーションの MAPI アイドル エンジンを初期化します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 LONG MAPIInitIdle(
@@ -41,31 +41,31 @@ LONG MAPIInitIdle(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpvreserved_
+ _lpvReserved_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
 ## <a name="return-value"></a>戻り値
 
-**MAPIInitIdle**関数は、初期化が成功した場合は0を返し、それ以外の場合は1を返します。 **MAPIInitIdle**が複数回呼び出された場合、追加の呼び出しはすべて成功しますが、参照カウントを増分する場合を除いて無視されます。 
+**MAPIInitIdle 関数は**、初期化が成功した場合は 0 を返し、それ以外の場合は 1 を返します。 **MAPIInitIdle が** 複数回呼び出された場合、追加の呼び出しはすべて成功しますが、参照カウントを増やす以外は無視されます。 
   
 ## <a name="remarks"></a>注釈
 
-クライアントアプリケーションまたはサービスプロバイダーは、他の idle engine 関数を呼び出す前に、 **MAPIInitIdle**を呼び出す必要があります。 
+クライアント アプリケーションまたはサービス プロバイダーは、他のアイドル 状態のエンジン関数を呼び出す前に **MAPIInitIdle** を呼び出す必要があります。 
   
-**MAPIInitIdle**のすべての呼び出しは、以降の[MAPIDeInitIdle](mapideinitidle.md)の呼び出しで一致する必要があります。または、呼び出し元アプリケーションに対してアイドル状態のエンジンが実行されたままになります。 
+**MAPIInitIdle** へのすべての呼び出しは [、MAPIDeInitIdle](mapideinitidle.md)への後続の呼び出しによって一致する必要があります。または、アイドル 状態のエンジンが呼び出し元のアプリケーションに対して実行された状態を残している必要があります。 
   
-次の関数は、MAPI アイドルエンジンと、 [FNIDLE](fnidle.md)関数プロトタイプに基づいてアイドルルーチンを処理します。 
+次の関数は、MAPI アイドル エンジンと [、FNIDLE](fnidle.md) 関数プロトタイプに基づくアイドル ルーチンを処理します。 
   
-|**Idle ルーチン関数**|**使用法**|
+|**アイドル ルーチン関数**|**使用状況**|
 |:-----|:-----|
-|[ChangeIdleRoutine](changeidleroutine.md) <br/> |登録されているアイドルルーチンの特性を変更します。  <br/> |
-|[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |登録されているアイドルルーチンを MAPI システムから削除します。  <br/> |
-|[EnableIdleRoutine](enableidleroutine.md) <br/> |登録済みのアイドル状態を、MAPI システムから削除せずに無効または再度有効にします。  <br/> |
-|[FtgRegisterIdleRoutine](ftgregisteridleroutine.md) <br/> |アイドルルーチンを MAPI システムに追加するか、有効にします。  <br/> |
-|[MAPIDeInitIdle](mapideinitidle.md) <br/> |呼び出し元アプリケーションの MAPI アイドルエンジンをシャットダウンします。  <br/> |
-|**MAPIInitIdle** <br/> |呼び出し元アプリケーションの MAPI アイドルエンジンを初期化します。  <br/> |
+|[ChangeIdleRoutine](changeidleroutine.md) <br/> |登録済みのアイドル ルーチンの特性を変更します。  <br/> |
+|[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |MAPI システムから登録済みのアイドル ルーチンを削除します。  <br/> |
+|[EnableIdleRoutine](enableidleroutine.md) <br/> |MAPI システムから削除せずに、登録済みのアイドル ルーチンを無効または再び有効にします。  <br/> |
+|[FtgRegisterIdleRoutine](ftgregisteridleroutine.md) <br/> |MAPI システムにアイドル 状態のルーチンを追加します。有効にするか、有効にしないか。  <br/> |
+|[MAPIDeInitIdle](mapideinitidle.md) <br/> |呼び出し元のアプリケーションの MAPI アイドル エンジンをシャットダウンします。  <br/> |
+|**MAPIInitIdle** <br/> |呼び出し元のアプリケーションの MAPI アイドル エンジンを初期化します。  <br/> |
    
-プラットフォームのすべてのフォアグラウンドタスクがアイドル状態になると、MAPI アイドルエンジンは、実行の準備ができている最も優先度の高いアイドルルーチンを呼び出します。 同じ優先度のアイドルルーチン間での通話順序は保証されません。 
+プラットフォームのすべてのフォアグラウンド タスクがアイドル状態になると、MAPI アイドル エンジンは、実行の準備ができている優先度の高いアイドル ルーチンを呼び出します。 同じ優先度のアイドル ルーチン間で順序を呼び出す保証はありません。 
   
 

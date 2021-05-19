@@ -26,7 +26,7 @@ ms.locfileid: "33432864"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [alignmiddle]  <br/> |
+| セル名 :  <br/> | AlignMiddle  <br/> |
    
 プログラムから、インデックスによって [AlignMiddle] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

@@ -1,5 +1,5 @@
 ---
-title: メッセージサービスの構成
+title: メッセージ サービスの構成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,22 +15,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33434509"
 ---
-# <a name="configuring-a-message-service"></a>メッセージサービスの構成
+# <a name="configuring-a-message-service"></a>メッセージ サービスの構成
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
- **メッセージサービスのすべてのサービスプロバイダーを構成するには**
+ **メッセージ サービス内のすべてのサービス プロバイダーを構成するには**
   
-- [IMsgServiceAdmin:: ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)を呼び出します。 構成に必要なすべてのデータがプログラムで利用できる場合は、ユーザーインターフェイスを表示するかどうかを選択できます。 ただし、1つまたは複数のプロバイダーの情報の一部を使用できない場合は、SERVICE_UI_ALLOWED または SERVICE_UI_ALWAYS フラグを設定してください。 必要な構成データが利用できない場合にユーザーインターフェイスを非表示にすると、メッセージサービスは未構成の状態になります。
+- [IMsgServiceAdmin::ConfigureMsgService を呼び出します](imsgserviceadmin-configuremsgservice.md)。 構成に必要なすべてのデータをプログラムで使用できる場合は、ユーザー インターフェイスを表示するかどうかを選択できます。 ただし、1 つ以上のプロバイダーの情報の一部が使用できない場合は、SERVICE_UI_ALLOWEDまたはSERVICE_UI_ALWAYSしてください。 必要な構成データが使用できない場合にユーザー インターフェイスを抑制すると、構成されていないメッセージ サービスが発生します。
     
- **メッセージサービスで1つのサービスプロバイダーを構成するには**
+ **メッセージ サービスで 1 つのサービス プロバイダーを構成するには**
   
-1. 呼び出し[imapisession:: getstatustable](imapisession-getstatustable.md)は、サービスプロバイダーの status オブジェクトにアクセスできます。 
+1. [IMAPISession::GetStatusTable](imapisession-getstatustable.md)を呼び出して、サービス プロバイダーの状態オブジェクトにアクセスします。 
     
-2. 呼び出し[imapistatus:: settingsdialog](imapistatus-settingsdialog.md)を呼び出して、サービスプロバイダーのプロパティシートを表示します。 
+2. [IMAPIStatus::SettingsDialog](imapistatus-settingsdialog.md)を呼び出して、サービス プロバイダーのプロパティ シートを表示します。 
     
-状態オブジェクトの使用の詳細については、「 [status Table and status objects](status-table-and-status-objects.md)」を参照してください。
+状態オブジェクトの使用の詳細については、「Status [Table and Status Objects」を参照してください](status-table-and-status-objects.md)。
   
 

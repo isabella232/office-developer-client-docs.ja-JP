@@ -35,13 +35,13 @@ HRESULT SetSyncResult(
 
 ## <a name="parameters"></a>パラメーター
 
- _hrsync_
+ _hrSync_
   
->  順番同期の結果。 
+>  [in]同期の結果。 
     
 ## <a name="remarks"></a>注釈
 
-同期の結果をローカルストアに通知するには、iostx:: **syncend**を呼び出す前に、 **iostx:: SetSyncResult**を呼び出します。 
+IOSTX:::SyncEnd を呼び出す前に **IOSTX::SetSyncResult** を呼び出して、同期の結果をローカル ストアに通知します。  
   
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: Pi 関数 (Access カスタム web アプリ)
+title: Pi 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33432577"
 ---
-# <a name="pi-function-access-custom-web-app"></a>Pi 関数 (Access カスタム web アプリ)
+# <a name="pi-function-access-custom-web-app"></a>Pi 関数 (Access カスタム Web アプリ)
 
 円周率の定数値を戻します。
   

@@ -29,8 +29,8 @@ MAPI プロパティについて説明します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
-|関連するマクロ:  <br/> |[CHANGE_PROP_TYPE](change_prop_type.md)、 [MVI_PROP](mvi_prop.md)、 [PROP_ID](prop_id.md)、 [PROP_TAG](prop_tag.md)、 [PROP_TYPE](prop_type.md) <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|関連するマクロ:  <br/> |[CHANGE_PROP_TYPE](change_prop_type.md)、 [MVI_PROP](mvi_prop.md) [、](prop_id.md)PROP_ID [、](prop_tag.md)PROP_TAG [、](prop_type.md) PROP_TYPE <br/> |
    
 ```cpp
 typedef struct _SPropValue
@@ -42,69 +42,69 @@ typedef struct _SPropValue
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **ulPropTag**
   
-> プロパティのプロパティタグ。 property タグは、上位16ビットのプロパティの一意の識別子と、下位16ビットのプロパティの型で構成される、32ビットの符号なし整数です。
+> プロパティのプロパティ タグ。 プロパティ タグは、高次 16 ビットのプロパティの一意識別子と、低次 16 ビットのプロパティの型で構成される 32 ビットの符号なし整数です。
     
  **dwAlignPad**
   
-> MAPI 用に予約済み。を使用しないでください。 
+> MAPI 用に予約されています。使用しない。 
     
  **値**
   
-> データ値の和集合。プロパティの型によって指定される特定の値。 次の表に、使用する必要がある結合のメンバーと、関連付けられたデータ型について、各プロパティの種類の一覧を示します。
+> データ値の共用体、プロパティの種類によって決まる特定の値。 次の表に、各プロパティの種類、使用する共用体のメンバー、および関連するデータ型を示します。
     
-|**プロパティの種類**|**値**|**値のデータ型**|
+|**プロパティの種類**|**値**|**Value のデータ型**|
 |:-----|:-----|:-----|
-|PT_I2 または PT_SHORT  <br/> |**i** <br/> |short int  <br/> |
-|PT_I4 または PT_LONG (署名済み)  <br/> |**l** <br/> |LONG  <br/> |
-|PT_I4 または PT_LONG (署名なし)  <br/> |**ul** <br/> |ULONG  <br/> |
-|PT_R4 または PT_FLOAT  <br/> |**flt** <br/> |浮動小数点数  <br/> |
-|PT_R8 または PT_DOUBLE  <br/> |**click** <br/> |double  <br/> |
+|PT_I2またはPT_SHORT  <br/> |**i** <br/> |short int  <br/> |
+|PT_I4またはPT_LONG (署名済み)  <br/> |**l** <br/> |LONG  <br/> |
+|PT_I4またはPT_LONG (符号なし)  <br/> |**ul** <br/> |ULONG  <br/> |
+|PT_R4またはPT_FLOAT  <br/> |**flt** <br/> |浮動小数点数  <br/> |
+|PT_R8またはPT_DOUBLE  <br/> |**dbl** <br/> |double  <br/> |
 |PT_BOOLEAN  <br/> |**b** <br/> |符号なし short int  <br/> |
-|PT_CURRENCY  <br/> |**.cur** <br/> |[CURRENCY](currency.md) <br/> |
-|PT_APPTIME  <br/> |**下部** <br/> |double  <br/> |
-|PT_SYSTIME  <br/> |**cm** <br/> |[FILETIME](filetime.md) <br/> |
+|PT_CURRENCY  <br/> |**cur** <br/> |[CURRENCY](currency.md) <br/> |
+|PT_APPTIME  <br/> |**at** <br/> |double  <br/> |
+|PT_SYSTIME  <br/> |**ft** <br/> |[FILETIME](filetime.md) <br/> |
 |PT_STRING8  <br/> |**lpszA** <br/> |LPSTR  <br/> |
-|PT_BINARY  <br/> |**在庫** <br/> |BYTE [配列]  <br/> |
-|PT_UNICODE  <br/> |**lpszw** <br/> |LPWSTR  <br/> |
-|PT_CLSID  <br/> |**lpguid** <br/> |lpguid  <br/> |
-|PT_I8 または PT_LONGLONG  <br/> |**&** <br/> |**LARGE_INTEGER** <br/> |
-|PT_MV_I2  <br/> |**mvi** <br/> |[SShortArray](sshortarray.md) <br/> |
-|PT_MV_LONG  <br/> |**mvi** <br/> |[SLongArray](slongarray.md) <br/> |
+|PT_BINARY  <br/> |**bin** <br/> |BYTE [配列]  <br/> |
+|PT_UNICODE  <br/> |**lpszW** <br/> |LPWSTR  <br/> |
+|PT_CLSID  <br/> |**lpguid** <br/> |LPGUID  <br/> |
+|PT_I8またはPT_LONGLONG  <br/> |**li** <br/> |**LARGE_INTEGER** <br/> |
+|PT_MV_I2  <br/> |**MVi** <br/> |[SShortArray](sshortarray.md) <br/> |
+|PT_MV_LONG  <br/> |**MVI** <br/> |[SLongArray](slongarray.md) <br/> |
 |PT_MV_R4  <br/> |**MVflt** <br/> |[SRealArray](srealarray.md) <br/> |
 |PT_MV_DOUBLE  <br/> |**MVdbl** <br/> |[SDoubleArray](sdoublearray.md) <br/> |
 |PT_MV_CURRENCY  <br/> |**MVcur** <br/> |[SCurrencyArray](scurrencyarray.md) <br/> |
-|PT_MV_APPTIME  <br/> |**mvat** <br/> |[SAppTimeArray](sapptimearray.md) <br/> |
+|PT_MV_APPTIME  <br/> |**MVat** <br/> |[SAppTimeArray](sapptimearray.md) <br/> |
 |PT_MV_SYSTIME  <br/> |**MVft** <br/> |[SDateTimeArray](sdatetimearray.md) <br/> |
-|PT_MV_BINARY  <br/> |**mvbin** <br/> |[SBinaryArray](sbinaryarray.md) <br/> |
+|PT_MV_BINARY  <br/> |**MVbin** <br/> |[SBinaryArray](sbinaryarray.md) <br/> |
 |PT_MV_STRING8  <br/> |**MVszA** <br/> |[SLPSTRArray](slpstrarray.md) <br/> |
 |PT_MV_UNICODE  <br/> |**MVszW** <br/> |[SWStringArray](swstringarray.md) <br/> |
 |PT_MV_CLSID  <br/> |**MVguid** <br/> |[SGuidArray](sguidarray.md) <br/> |
 |PT_MV_I8  <br/> |**MVli** <br/> |[SLargeIntegerArray](slargeintegerarray.md) <br/> |
 |PT_ERROR  <br/> |**err** <br/> |[SCODE](scode.md) <br/> |
-|PT_NULL または PT_OBJECT  <br/> |**x** <br/> |LONG  <br/> |
-|PT_PTR  <br/> |**lpv** <br/> |VOID\*  <br/> |
+|PT_NULLまたはPT_OBJECT  <br/> |**x** <br/> |LONG  <br/> |
+|PT_PTR  <br/> |**lpv** <br/> |VOID \*  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-**ulPropTag**メンバーは、次の2つの部分で構成されます。 
+**ulPropTag メンバー** は、次の 2 つの部分で構成されます。 
   
-- 上位16ビットの識別子。
+- 高次 16 ビットの識別子。
     
-- ローオーダー16ビットの型。
+- 低次 16 ビットの型。
     
-識別子は、特定の範囲内の数値です。 MAPI は、識別子の範囲を定義して、プロパティがどのように使用され、保持する責任者を示します。 MAPI は、Mapitags ヘッダーファイルでサポートされている各プロパティタグに対する制約を定義します。
+識別子は、特定の範囲内の数値です。 MAPI では、プロパティの使用および管理の責任者を示す識別子の範囲を定義します。 MAPI は、Mapitags.h ヘッダー ファイルでサポートする各プロパティ タグの制約を定義します。
   
-この型は、プロパティの値の形式を示します。 MAPI は、mapidefs.h ヘッダーファイルでサポートされている各プロパティの種類に対して定数を定義します。 
+型は、プロパティの値の形式を示します。 MAPI は、Mapidefs.h ヘッダー ファイルでサポートする各プロパティの種類の定数を定義します。 
   
-識別子およびプロパティの種類の有効なプロパティ範囲の完全な一覧については、「付録」の「[プロパティの識別子と種類](property-identifiers-and-types.md)」を参照してください。 
+識別子とプロパティ型の有効なプロパティ範囲の完全な一覧については、付録「プロパティ識別子と型」 [を参照](property-identifiers-and-types.md) してください。 
   
-**dwAlignPad**メンバーは、8バイト値の8バイト配置を必要とするコンピューターで適切に配置されるように、パディングとして使用されます。 このようなコンピューターでコードを記述する開発者は、8バイト境界に**spropvalue**配列を割り当てるメモリ割り当てルーチンを使用する必要があります。 
+**dwAlignPad メンバー** は、8 バイト値に対して 8 バイトの配置を必要とするコンピューター上で適切な配置を行うパディングとして使用されます。 このようなコンピューターでコードを記述する開発者は、8 バイト境界に **SPropValue** 配列を割り当てるメモリ割り当てルーチンを使用する必要があります。 
   
-詳細については、「 [mapi プロパティの種類の概要](mapi-property-type-overview.md)」および「 [mapi プロパティの更新](updating-mapi-properties.md)」を参照してください。 
+詳細については、「MAPI プロパティの [種類の概要」および「MAPI](mapi-property-type-overview.md) [プロパティの更新」を参照してください](updating-mapi-properties.md)。 
   
 ## <a name="see-also"></a>関連項目
 

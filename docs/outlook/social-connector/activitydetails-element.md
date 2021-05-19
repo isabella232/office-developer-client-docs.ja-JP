@@ -1,5 +1,5 @@
 ---
-title: activitydetails 要素
+title: activityDetails 要素
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c103d48d-53ca-4b19-b16f-2862379587ef
-description: activitydetails 要素は、1つのアクティビティフィードアイテムの生データを格納します。 各アクティビティフィードアイテムは、独自の activitydetails 要素を持つ必要があります。 activitydetails 要素のデータは、アクティビティテンプレートで name 要素を使用して参照されます。
+description: activityDetails 要素は、1 つのアクティビティ フィード アイテムの生データを格納します。 各アクティビティ フィード アイテムには、独自の activityDetails 要素が必要です。 activityDetails 要素のデータは、name 要素を使用してアクティビティ テンプレートで参照されます。
 ms.openlocfilehash: fd9c2136e8e2b687fa281ecda71039809848f63c
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -15,30 +15,30 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33434873"
 ---
-# <a name="activitydetails-element"></a>activitydetails 要素
+# <a name="activitydetails-element"></a>activityDetails 要素
 
-**activitydetails**要素は、1つのアクティビティフィードアイテムの生データを格納します。 各アクティビティフィードアイテムは、独自の**activitydetails**要素を持つ必要があります。 **activitydetails**要素のデータは、アクティビティテンプレートで**name**要素を使用して参照されます。 **activitydetails**要素のすべてのデータに**name**要素が含まれている必要があります。 
+**activityDetails 要素** は、1 つのアクティビティ フィード アイテムの生データを格納します。 各アクティビティ フィード アイテムには、独自の **activityDetails 要素が必要** です。 **activityDetails 要素のデータ** は、name 要素を使用してアクティビティ テンプレート **で参照** されます。 **activityDetails** 要素のすべてのデータには、name 要素が **必要** です。 
   
-次の表では、 **activitydetails**要素に必要な6つの要素について説明します。 
+次の表に **、activityDetails** 要素で必要な 6 つの要素について説明します。 
   
 |**要素**|**説明**|
 |:-----|:-----|
-|**ownerID** <br/> |このアクティビティフィードアイテムを生成したソーシャルネットワーク上のユーザーの ID。  <br/> |
-|**id** <br/> |重複したフィードアイテムを検出するためのアクティビティフィードアイテムの一意の文字列。  <br/> |
-|**applicationId** <br/> |アクティビティフィードアイテムをテンプレートと照合するために使用される2つの一意の id のいずれか。 複数のアプリケーションまたは他のグループがある場合は、これを第1層のテンプレートオーガナイザーとして使用できます。  <br/> |
-|**templateId** <br/> |アクティビティフィードアイテムをテンプレートと照合するために使用される2番目の一意の ID。 これは、第2層のテンプレート開催者として使用できます。  <br/> |
-|**publishdate** <br/> |アクティビティフィードアイテムが発行された日時。  <br/> |
-|**templateVariables** <br/> |アクティビティフィードアイテムテンプレートのトークンで使用されるデータ。  <br/> |
+|**ownerID** <br/> |このアクティビティ フィード アイテムを生成したソーシャル ネットワーク上のユーザーの ID。  <br/> |
+|**objectID** <br/> |重複するフィード アイテムを検出するアクティビティ フィード アイテムの一意の文字列。  <br/> |
+|**applicationId** <br/> |アクティビティ フィード アイテムとテンプレートを一致するために使用される 2 つの一意の ID の 1 つ。 複数のアプリケーションまたは他のグループ化がある場合、これは第 1 層テンプレートオーガナイザーとして使用できます。  <br/> |
+|**templateId** <br/> |アクティビティ フィード アイテムとテンプレートを一致するために使用される 2 番目の一意の ID。 これは、第 2 層テンプレートオーガナイザーとして使用できます。  <br/> |
+|**publishDate** <br/> |アクティビティ フィード アイテムが発行された日付と時刻。  <br/> |
+|**templateVariables** <br/> |アクティビティ フィード アイテム テンプレートのトークンで使用するデータ。  <br/> |
    
-アクティビティフィード xml の例については、「[アクティビティフィード xml の例](activity-feed-xml-example.md)」を参照してください。
+アクティビティ フィード XML の例については、「アクティビティ フィード [XML の例」を参照してください。](activity-feed-xml-example.md)
   
 ## <a name="see-also"></a>関連項目
 
-- [アクティビティフィードアイテムの XML の概要](overview-of-xml-for-an-activity-feed-item.md)  
-- [activitytemplatecontainer 要素](activitytemplatecontainer-element.md)  
+- [アクティビティ フィード アイテムの XML の概要](overview-of-xml-for-an-activity-feed-item.md)  
+- [activityTemplateContainer 要素](activitytemplatecontainer-element.md)  
 - [テンプレート変数](template-variables.md) 
 - [アクティビティを適切に表示するためのガイドライン](guidelines-for-properly-displaying-activities.md)  
 - [アクティビティの XML](xml-for-activities.md)  
-- [Outlook Social Connector プロバイダーの XML スキーマ](outlook-social-connector-provider-xml-schema.md)
-- [.osc XML スキーマを使用してプロバイダーを開発する](developing-a-provider-with-the-osc-xml-schema.md)
+- [Outlookソーシャル コネクタ プロバイダー XML スキーマ](outlook-social-connector-provider-xml-schema.md)
+- [OSC XML スキーマを使用したプロバイダーの開発](developing-a-provider-with-the-osc-xml-schema.md)
 

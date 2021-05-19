@@ -8,7 +8,7 @@ f1_keywords:
 - vis_sdr.chm60027
 localization_priority: Normal
 ms.assetid: f5dcc6d9-474a-9ecb-21f5-56415d934890
-description: データ型が Date のときに図形データに使用するカレンダーを指定します。
+description: データ型が Date の場合に図形データに使用される予定表を指定します。
 ms.openlocfilehash: 2ddbd578053e2ae37514194450bd95dc9cdf441d
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33432759"
 ---
 # <a name="calendar-cell-shape-data-section"></a>[Calendar] セル ([Shape Data] セクション)
 
-データ型が Date のときに図形データに使用するカレンダーを指定します。
+データ型が Date の場合に図形データに使用される予定表を指定します。
   
 ## <a name="remarks"></a>注釈
 
@@ -28,14 +28,14 @@ ms.locfileid: "33432759"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | 提案. *名前*です。Prop の予定表。 *name*には、行の名前を指定します。  <br/> |
+| セル名 :  <br/> | Prop。  *name*  .Prop のカレンダー。  *name*  は行名です  <br/> |
    
 プログラムから、インデックスによって [Calendar] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionProp** <br/> |
-| 行インデックス:  <br/> |**visRowProp** +  *i* = ** 0、1、2...  <br/> |
+| 行インデックス:  <br/> |**visRowProp**  +  *i* *=* 0, 1, 2...  <br/> |
 | セル インデックス:  <br/> |**visCustPropsCalendar** <br/> |
    
 

@@ -25,12 +25,12 @@ ms.locfileid: "33434957"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-サービスプロバイダの種類を示す値を格納します。
+サービス プロバイダーの種類を示す値を含む。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_RESOURCE_TYPE  <br/> |
-|識別子:  <br/> |0x3e03  <br/> |
+|識別子:  <br/> |0x3E03  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |MAPI の状態  <br/> |
    
@@ -48,39 +48,39 @@ MAPI_AB_PROVIDER
     
 MAPI_HOOK_PROVIDER 
   
-> スプーラーフックプロバイダー
+> スプーラー フック プロバイダー
     
 MAPI_PROFILE_PROVIDER 
   
-> プロファイルプロバイダ
+> プロファイル プロバイダー
     
 MAPI_SPOOLER 
   
-> メッセージスプーラー
+> メッセージ スプーラー
     
 MAPI_STORE_PROVIDER 
   
-> メッセージストアプロバイダー
+> メッセージ ストア プロバイダー
     
 MAPI_SUBSYSTEM 
   
-> MAPI の内部サブシステム
+> 内部 MAPI サブシステム
     
 MAPI_TRANSPORT_PROVIDER 
   
-> トランスポートプロバイダー
+> トランスポート プロバイダー
     
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -90,7 +90,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

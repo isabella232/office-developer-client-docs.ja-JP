@@ -1,5 +1,5 @@
 ---
-title: imapiofflinegetcapabilities
+title: IMAPIOfflineGetCapabilities
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33433375"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-オフラインオブジェクトでサポートされているコールバックの条件を取得します。
+オフライン オブジェクトでコールバックがサポートされる条件を取得します。
   
 ```cpp
 HRESULT GetCapabilities( 
@@ -35,25 +35,25 @@ HRESULT GetCapabilities(
 
 ## <a name="parameters"></a>パラメーター
 
- _アウト (アウト)_
+ _pulCapablities_
   
-> 読み上げ次の機能フラグのビットマスク。
+> [out]次の機能フラグのビットマスク。
     
 MAPIOFFLINE_CAPABILITY_OFFLINE
   
-> オフラインオブジェクトがオフライン通知を提供できる。
+> オフライン オブジェクトは、オフライン通知を提供できます。
     
 MAPIOFFLINE_CAPABILITY_ONLINE
   
-> オフラインオブジェクトは、オンライン通知を提供できます。
+> オフライン オブジェクトは、オンライン通知を提供できます。
     
 ## <a name="remarks"></a>注釈
 
-**[hropenofflineobj](hropenofflineobj.md)** を使用してオフラインオブジェクトを開くときに、クライアントは[IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)上でクエリを実行して**imapioffline**インターフェイスへのポインターを取得し、 **imapioffline:: getcapabilities**を呼び出して、サポートされているコールバックを検索できます。オブジェクトによって。 クライアントは、 **IMAPIOfflineMgr**を使用してコールバックをセットアップすることを選択できます。
+**[HrOpenOfflineObj](hropenofflineobj.md)** を使用してオフライン オブジェクトを開いた後、クライアントは [IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)でクエリを実行して **IMAPIOffline** インターフェイスへのポインターを取得し **、IMAPIOffline::GetCapabilities** を呼び出して、オブジェクトでサポートされるコールバックを検索できます。 その後、クライアントは **IMAPIOfflineMgr** を使用してコールバックを設定できます。
   
-オフラインオブジェクトのメールサーバーによっては、オンラインに移行するためのコールバックをサポートするオブジェクトが、必ずしもオフラインへのコールバックをサポートするわけではないことに注意してください。
+オフライン オブジェクトのメール サーバーによっては、オンラインに行くコールバックをサポートするオブジェクトは、オフラインに行くコールバックを必ずしもサポートしていない点に注意してください。
   
-また、オフラインオブジェクトはオンライン/オフライン以外の変更に対するコールバックをサポートしていますが、オフライン状態 API はオンライン/オフライン変更のみをサポートしており、クライアントはそのような機能だけをチェックする必要があることにも注意してください。
+また、オフライン オブジェクトはオンライン/オフライン以外の変更のコールバックをサポートする場合があります。オフライン状態 API はオンライン/オフラインの変更のみをサポートし、クライアントはそのような機能のみを確認する必要があります。
   
 ## <a name="see-also"></a>関連項目
 

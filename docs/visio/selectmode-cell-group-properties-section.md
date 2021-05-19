@@ -22,19 +22,19 @@ ms.locfileid: "33435363"
   
 |**値**|**選択モード**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|.0  <br/> |グループ図形だけを選択します。  <br/> |**visGrpSelModeGroupOnly** <br/> |
-|1   <br/> |グループ図形を最初に選択します。  <br/> |**visGrpSelModeGroup1st** <br/> |
-|2   <br/> |グループのメンバーを最初に選択します。  <br/> |**visGrpSelModeMembers1st** <br/> |
+|0  <br/> |グループ図形だけを選択します。  <br/> |**visGrpSelModeGroupOnly** <br/> |
+|1  <br/> |グループ図形を最初に選択します。  <br/> |**visGrpSelModeGroup1st** <br/> |
+|2  <br/> |グループのメンバーを最初に選択します。  <br/> |**visGrpSelModeMembers1st** <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この値は、[**基本動作**] ダイアログボックスで設定することもできます (グループ図形が選択されている状態)。 [[開発](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] グループで、[**基本動作**] をクリックし、[グループ] の下にある**選択**リストでモードをクリックします。 **動作**)。 
+この値は、[動作] ダイアログボックスで設定することもできます (グループ図形が選択されている場合は、[開発]タブの [図形のデザイン] グループで、[動作]をクリックし、[グループの動作] の下の [選択] リストでモードをクリック **します**)。 [](run-in-developer-mode-display-the-developer-tab.md)  
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [SelectMode] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-|セル名 :  <br/> |[selectmode]  <br/> |
+|セル名 :  <br/> |SelectMode  <br/> |
    
 プログラムから、インデックスによって [SelectMode] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

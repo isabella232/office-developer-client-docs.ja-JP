@@ -1,5 +1,5 @@
 ---
-title: /(除算) (Access カスタム web アプリ)
+title: / (分割) (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33435188"
 ---
-# <a name="-divide-access-custom-web-app"></a>/(除算) (Access カスタム web アプリ)
+# <a name="-divide-access-custom-web-app"></a>/ (分割) (Access カスタム Web アプリ)
 
 ある数を別の数で割ります。
   

@@ -25,13 +25,13 @@ ms.locfileid: "33432836"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-OLE メソッド**IUnknown:: AddRef**を呼び出すための別の方法を提供します。 
+OLE メソッド **IUnknown::AddRef を呼び出す別の方法を提供します**。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 ULONG UlAddRef(
@@ -41,9 +41,9 @@ ULONG UlAddRef(
 
 ## <a name="parameters"></a>パラメーター
 
- _パンク_
+ _punk_
   
-> 順番**IUnknown**インターフェイスから派生したインターフェイスへのポインター、つまり任意の MAPI インターフェイス。 
+> [in] **IUnknown** インターフェイスから派生したインターフェイスへのポインター、つまり任意の MAPI インターフェイス。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -53,12 +53,12 @@ S_OK
     
 MAPI_E_CALL_FAILED 
   
-> 予期しないまたは不明な配信元のエラーにより、操作が完了しませんでした。
+> 予期しない、または不明な発生源のエラーにより、操作が完了しなかっていません。
     
 ## <a name="remarks"></a>注釈
 
- **uladdref**は、 **IUnknown:: AddRef**メソッドによって返された値を返します。これは、インターフェイスの参照カウントの新しい値です。 値は0以外の値です。 
+ **UlAddRef** は、インターフェイスの参照カウントの新しい値である **IUnknown::AddRef** メソッドによって返される値を返します。 値は 0 以外です。 
   
-**iunknown:: AddRef**の詳細については、「 [iunknown インターフェイスを実装する](implementing-the-iunknown-interface.md)」を参照してください。 
+**IUnknown::AddRef** の詳細については [、「IUnknown インターフェイスの実装」を参照してください](implementing-the-iunknown-interface.md)。 
   
 

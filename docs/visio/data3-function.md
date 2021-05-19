@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251597
 localization_priority: Normal
 ms.assetid: c3a72b48-5edf-221e-0508-bab6cbbe64fa
-description: 図形の図形の名前] ダイアログボックス ([開発] タブの [図形名] をクリック) の [データ 3] ボックスのテキストを文字列として返します。
+description: 図形の [図形名] ダイアログ ボックスの [データ 3] ボックスのテキストを文字列として返します ([開発] タブの [図形名] をクリックします)。
 ms.openlocfilehash: 982b6eaa241e6a13137549ad191a62360bfff38e
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33434985"
 ---
 # <a name="data3-function"></a>DATA3 関数
 
-図形の図形の**名前**] ダイアログボックス ([**開発**] タブの [**図形名**] をクリック) の [**データ 3** ] ボックスのテキストを文字列として返します。 
+図形の [図形名] ダイアログ ボックスの[**データ 3]** ボックスのテキストを文字列として返します ([開発] タブの [図形 **名]** をクリックします)。 
   
 ## <a name="syntax"></a>構文
 

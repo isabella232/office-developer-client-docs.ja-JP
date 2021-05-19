@@ -25,13 +25,13 @@ ms.locfileid: "33433354"
   
 ## <a name="syntax"></a>構文
 
-hascategory (* * *category* * *) 
+HASCATEGORY(** *category* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _項目_ <br/> |必須  <br/> |**String** <br/> |検索するカテゴリ。  <br/> |
+| _category_ <br/> |必須  <br/> |**String** <br/> |検索するカテゴリ。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
@@ -39,6 +39,6 @@ hascategory (* * *category* * *)
   
 ## <a name="remarks"></a>注釈
 
- *カテゴリ*は、図形の分類に使用できるユーザー定義の文字列です。 カテゴリは、図形のシェイプシート内の User.msvShapeCategories セルで定義できます。 1 つの図形に対して複数のカテゴリを定義するには、カテゴリをセミコロンで区切ります。 
+ *カテゴリ*  は、図形を分類するために使用できるユーザー定義の文字列です。 カテゴリは、図形のシェイプシート内の User.msvShapeCategories セルで定義できます。 1 つの図形に対して複数のカテゴリを定義するには、カテゴリをセミコロンで区切ります。 
   
 

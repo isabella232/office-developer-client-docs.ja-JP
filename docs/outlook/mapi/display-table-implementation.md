@@ -21,29 +21,29 @@ ms.locfileid: "33435265"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-表示テーブルは、プロパティシートを表示するために使用されます。このダイアログボックスには、1つまたは複数のプロパティを表示して編集するための専用のタブ付きプロパティページから構成されます。 すべての表示テーブルに関連付けられているのは、 [iattach: imapiprop](iattachimapiprop.md)インターフェイスの実装です。 [imapiprop](imapipropiunknown.md)の実装は、プロパティシートに表示されるプロパティデータを保持します。 
+表示テーブルは、1 つ以上のプロパティの表示と編集専用の 1 つ以上のタブ付きプロパティ ページで構成される特別なダイアログ ボックスであるプロパティ シートを表示するために使用されます。 すべての表示テーブルに関連付けられている [のは、IAttach : IMAPIProp インターフェイス](iattachimapiprop.md) の実装です。 [IMAPIProp の実装](imapipropiunknown.md)では、プロパティ シートに表示されるプロパティ データが保持されます。 
   
-表示テーブル内の行は、プロパティシートのコントロールを表します。 ほとんどのコントロールは、 **imapiprop**の実装で管理されるプロパティに関連付けることができます。 ユーザーが変更可能なコントロールの値を変更すると、対応するプロパティが更新されます。 
+表示テーブル内の行は、プロパティ シート内のコントロールを表します。 ほとんどのコントロールは、IMAPIProp 実装で管理されている **プロパティに関連付** けできます。 ユーザーが変更可能なコントロールの値を変更すると、対応するプロパティが更新されます。 
   
-表示テーブル内の列は、コントロールのプロパティを表します。たとえば、プロパティシート内の位置、種類、関連付けられた構造体、識別子などがあります。 必要な表示テーブル列の完全な一覧については、「[表の表示](display-tables.md)」を参照してください。
+表示テーブル内の列は、プロパティ シート内の位置、その種類、関連する構造、識別子など、コントロールのプロパティを表します。 必要な表示テーブル列の完全な一覧については、「表示テーブル」 [を参照してください](display-tables.md)。
   
-MAPI では、表示テーブルに関連付けられている**imapiprop**実装のプロパティ値、または直接表示テーブルからプロパティ値を読み取ることによって、クライアントアプリケーションのユーザーにプロパティシートが表示されます。 ユーザーがプロパティシートを使用してコントロールの値を変更すると、MAPI は[imapiprop:: setprops](imapiprop-setprops.md)を呼び出して、コントロールの DT_SET_IMMEDIATE フラグが設定されている場合は、変更されたコントロールを保存します。 DT_SET_IMMEDIATE フラグが設定されていないコントロールでは、ユーザーが **[OK** ] または [**今すぐ適用**] ボタンをクリックしてダイアログボックスを閉じたときに、プロパティの変更が保存されます。 これらのボタンのいずれか、または **[キャンセル**] ボタンがクリックされると、MAPI はプロパティシートをビューから削除します。 
+MAPI は、表示テーブルまたは表示テーブルに関連付けられた **IMAPIProp** 実装のプロパティ値を直接読み取って、クライアント アプリケーションのユーザーにプロパティ シートを表示します。 ユーザーがコントロールの値を変更してプロパティ シートを操作すると、MAPI は [IMAPIProp::SetProps](imapiprop-setprops.md) を呼び出して、コントロールの DT_SET_IMMEDIATE フラグが設定されている場合に変更されたコントロールを保存します。 DT_SET_IMMEDIATE フラグが設定DT_SET_IMMEDIATEコントロールの場合、ユーザーが **[OK]** または [今すぐ適用] ボタンをクリックしてダイアログ ボックスを閉じ、プロパティに対する変更 **が保存** されます。 これらのボタンまたは [キャンセル]ボタンのいずれかをクリックすると、MAPI はプロパティ シートをビューから削除します。 
   
-MAPI は、 **imapiprop**の実装で[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出して、 **PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) プロパティを要求するか、またはこのプロパティを継承することによって、表示テーブルへのアクセスを取得します。[imapisupport::D oconfigpropsheet](imapisupport-doconfigpropsheet.md)など、MAPI に対して行った通話。
+MAPI は **、IMAPIProp** 実装で [IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを呼び出し **、PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) プロパティを要求するか [、IMAPISupport::D oConfigPropsheet](imapisupport-doconfigpropsheet.md)などの MAPI に対して行った呼び出しで継承することで、表示テーブルにアクセスできます。
   
-最初のアクセス方法は、アドレス帳プロバイダーがメッセージングユーザーまたは配布リストに関する詳細を表示するように求められた場合に使用します。 次の処理が行われます。
+最初のアクセス方法は、メッセージング ユーザーまたは配布リストに関する詳細を表示するアドレス帳プロバイダーに求める場合に使用されます。 次の処理が行われます。
   
-1. クライアントが[IAddrBook::D etails](iaddrbook-details.md)メソッドを呼び出します。 
+1. クライアントは [、IAddrBook::Dメソッドを呼び出](iaddrbook-details.md) します。 
     
-2. MAPI は、アドレス帳プロバイダーの[IABLogon:: openentry](iablogon-openentry.md)メソッドを呼び出して、選択されたエントリを表すメッセージングユーザーにアクセスします。 
+2. MAPI は、アドレス帳プロバイダーの [IABLogon::OpenEntry](iablogon-openentry.md) メソッドを呼び出して、選択したエントリを表すメッセージング ユーザーにアクセスします。 
     
-3. MAPI は、メッセージングユーザーの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出して、 **PR_DETAILS_TABLE**プロパティ、[詳細] ダイアログボックスの表示テーブルを取得します。 
+3. MAPI は、メッセージング ユーザーの [IMAPIProp::OpenProperty](imapiprop-openproperty.md) メソッドを呼び出して **、PR_DETAILS_TABLE** プロパティ 、詳細ダイアログ ボックスの表示テーブルを取得します。 
     
-4. MAPI はダイアログボックスを表示し、ユーザーの情報の操作を処理して、ユーザーが終了したときに削除します。 
+4. MAPI は、ユーザーの情報とのやり取りを処理するダイアログ ボックスを表示し、ユーザーが終了するとそのダイアログ ボックスを削除します。 
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI サービスプロバイダー](mapi-service-providers.md)
+[MAPI サービス プロバイダー](mapi-service-providers.md)
 

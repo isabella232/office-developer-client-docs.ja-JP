@@ -29,26 +29,26 @@ ms.locfileid: "33434117"
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapix  <br/> |
-|公開者:  <br/> |プロファイル管理オブジェクト  <br/> |
+|ヘッダー ファイル:  <br/> |Mapix.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |プロファイル管理オブジェクト  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
 |呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
 |インターフェイス識別子:  <br/> |IID_IProfAdmin  <br/> |
 |ポインターの種類:  <br/> |LPPROFADMIN  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[GetLastError](iprofadmin-getlasterror.md) <br/> |プロファイル管理オブジェクトに発生した前のエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
-|[getprofiletable](iprofadmin-getprofiletable.md) <br/> |利用可能なすべてのプロファイルについての情報を含むテーブルである、プロファイルテーブルへのアクセスを提供します。  <br/> |
-|[createprofile](iprofadmin-createprofile.md) <br/> |新しいプロファイルを作成します。  <br/> |
-|[deleteprofile](iprofadmin-deleteprofile.md) <br/> |プロファイルを削除します。  <br/> |
-|[changeprofilepassword](iprofadmin-changeprofilepassword.md) <br/> |現在は廃止されています。 プロファイルのパスワードを変更します。  <br/> |
-|[copyprofile](iprofadmin-copyprofile.md) <br/> |プロファイルをコピーします。  <br/> |
-|[renameprofile](iprofadmin-renameprofile.md) <br/> |プロファイルに新しい名前を割り当てます。  <br/> |
+|[GetLastError](iprofadmin-getlasterror.md) <br/> |プロファイル管理オブジェクト [に発生](mapierror.md) した以前のエラーに関する情報を含む MAPIERROR 構造体を返します。  <br/> |
+|[GetProfileTable](iprofadmin-getprofiletable.md) <br/> |使用可能なすべてのプロファイルに関する情報を含むテーブルであるプロファイル テーブルへのアクセスを提供します。  <br/> |
+|[CreateProfile](iprofadmin-createprofile.md) <br/> |新しいプロファイルを作成します。  <br/> |
+|[DeleteProfile](iprofadmin-deleteprofile.md) <br/> |プロファイルを削除します。  <br/> |
+|[ChangeProfilePassword](iprofadmin-changeprofilepassword.md) <br/> |非推奨。 プロファイルのパスワードを変更します。  <br/> |
+|[CopyProfile](iprofadmin-copyprofile.md) <br/> |プロファイルをコピーします。  <br/> |
+|[RenameProfile](iprofadmin-renameprofile.md) <br/> |プロファイルに新しい名前を割り当てる。  <br/> |
 |[SetDefaultProfile](iprofadmin-setdefaultprofile.md) <br/> |クライアントの既定のプロファイルを設定またはクリアします。  <br/> |
-|[adminservices](iprofadmin-adminservices.md) <br/> |プロファイル内のメッセージサービスに変更を加えるためのメッセージサービス管理オブジェクトへのアクセスを提供します。  <br/> |
+|[AdminServices](iprofadmin-adminservices.md) <br/> |プロファイル内のメッセージ サービスに変更を加えるメッセージ サービス管理オブジェクトへのアクセスを提供します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

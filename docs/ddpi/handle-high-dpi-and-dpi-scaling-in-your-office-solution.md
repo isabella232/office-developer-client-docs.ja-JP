@@ -41,7 +41,7 @@ Windows では、アプリケーションが 1 つのディスプレイから DP
 |モード  |説明  |DPI が変更されたとき  |
 |---------|---------|---------|
 |DPI 非対応 |  常に、DPI 値 96 のディスプレイ上に表示すると仮定してアプリケーションを表示します。 |  プライマリ ディスプレイとセカンダリ ディスプレイ上で想定されているサイズまでアプリケーションをビットマップ伸縮します。    |
-|システム DPI 対応 |  Windows へのログイン時に、接続されているプライマリ モニターの DPI をアプリケーションで検出しますが、DPI の変更に応答することはできません。 詳細については、この記事の「Windows を使用して、 [ぼやけたアプリを修正するための構成](#configure-windows-to-fix-blurry-apps) 」を参照してください。  | DPI の異なる新しいディスプレイに移動したときにアプリケーションをビットマップ伸縮します。    |
+|システム DPI 対応 |  Windows へのログイン時に、接続されているプライマリ モニターの DPI をアプリケーションで検出しますが、DPI の変更に応答することはできません。 詳細については、この記事の[「ぼやけたアプリを修正Windowsを構成する](#configure-windows-to-fix-blurry-apps)」セクションを参照してください。  | DPI の異なる新しいディスプレイに移動したときにアプリケーションをビットマップ伸縮します。    |
 |モニターごとの DPI 対応 |  DPI が変更されたときにアプリケーションを正しく再表示できます。  |   Windows からアプリケーションのトップレベル ウィンドウに DPI 通知が送信され、DPI が変更されたときにアプリケーションを再表示できます。     |
 |モニターごと (v2) |  DPI が変更されたときにアプリケーションを正しく再表示できます。  |   Windows からトップレベル ウィンドウと子ウィンドウの両方に DPI 通知が送信され、DPI が変更されたときにアプリケーションを再表示できます。 |
 
@@ -237,7 +237,7 @@ Windows April 2018 (1803) Update 以降では、一部のシナリオについ�
 
 ![Windows April 2018 Update (1803) 上で、システム DPI 対応コンテキストで実行されている子ウィンドウを示す図。](./media/office-dpi-behavior-on-windows-april-2018-update.png)
 
-新しい子ウィンドウを作成するときは、親ウィンドウの DPI 対応と一致していることを確認してください。 [GetWindowDpiAwarenessContext](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-getwindowdpiawarenesscontext)関数を使用すると、親ウィンドウの DPI 対応を取得できます。 DPI 対応の一貫性の詳細については、「[High DPI Desktop Application Development on Windows](https://docs.microsoft.com/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows#related-topics)」 (Windows での高 DPI デスクトップ アプリケーション開発) の「Forced reset of process-wide DPI awareness」 (プロセス全体で DPI 対応を強制的に再設定する) セクションを参照してください。
+新しい子ウィンドウを作成するときは、親ウィンドウの DPI 対応と一致していることを確認してください。 [GetWindowDpiAwarenessContext](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-getwindowdpiawarenesscontext)関数を使用すると、親ウィンドウの DPI 認識を取得できます。 DPI 対応の一貫性の詳細については、「[High DPI Desktop Application Development on Windows](https://docs.microsoft.com/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows#related-topics)」 (Windows での高 DPI デスクトップ アプリケーション開発) の「Forced reset of process-wide DPI awareness」 (プロセス全体で DPI 対応を強制的に再設定する) セクションを参照してください。
 
 > [!NOTE]
 > プロセスの DPI 対応は、アプリケーションのメイン スレッドの DPI 対応コンテキストが [DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE](https://docs.microsoft.com/windows/desktop/hidpi/dpi-awareness-context) であったとしても [PROCESS_SYSTEM_DPI_AWARE](https://docs.microsoft.com/windows/desktop/api/shellscalingapi/ne-shellscalingapi-process_dpi_awareness) を返す可能性があるため、プロセスの DPI 対応を利用することはできません。 スレッドの DPI 対応コンテキストを取得するには、[GetThreadDpiAwarenessContext](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-getthreaddpiawarenesscontext) 関数を使用します。
@@ -564,7 +564,7 @@ DPI スケーリングをサポートするようにアプリケーションを�
 
 ### <a name="articles"></a>記事
 
-- [モニターごとの DPI 対応 WPF アプリケーションの開発](https://docs.microsoft.com/windows/desktop/hidpi/declaring-managed-apps-dpi-aware) には、Win32 デスクトップアプリケーションを作成するための一般的な概要とガイドが用意されています。 この記事で説明されているのと同じ方法の多くは、Office 機能拡張ソリューションにも適用されます。
+- [WPF アプリケーションPer-Monitor DPI-Aware開発すると](https://docs.microsoft.com/windows/desktop/hidpi/declaring-managed-apps-dpi-aware) 、Win32 デスクトップ アプリケーションの作成に関する一般的な概要とガイドが提供されます。 この記事で説明されているのと同じ方法の多くは、Office 機能拡張ソリューションにも適用されます。
 - 「[Mixed-Mode DPI Scaling and DPI-aware APIs](https://docs.microsoft.com/windows/desktop/hidpi/high-dpi-improvements-for-desktop-applications)」 (混在モードの DPI スケーリングと DPI 対応 API) には、DPI に関連した API の一覧が記載されています。
 - 「[Developer Guide - Per Monitor DPI - WPF Preview](https://github.com/Microsoft/WPF-Samples/blob/master/PerMonitorDPI/Developer%20Guide%20-%20Per%20Monitor%20DPI%20-%20WPF%20Preview.docx)」 (開発者ガイド - モニターごとの DPI - WPF プレビュー) は、DPI 対応 WPF アプリを作成するための WPF アプリ開発ガイドです。
 - 「[Office による高解像度ディスプレイのサポート](https://support.office.com/article/Office-support-for-high-definition-displays-6720ca0e-be59-41f6-b629-1369f549279d)」では、DPI が変更されたときに Office ソリューションが適切にサポートされない場合に、ユーザーが互換性を最適化するように Office を設定する方法に関する情報を提供します。

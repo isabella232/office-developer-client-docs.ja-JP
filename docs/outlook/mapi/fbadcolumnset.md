@@ -25,7 +25,7 @@ ms.locfileid: "33434719"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-次に[IMAPITable:: SetColumns](imapitable-setcolumns.md)メソッドを呼び出したときに、サービスプロバイダーによって使用されるように設定されたテーブル列セットの有効性をテストします。 
+[IMAPITable::SetColumns](imapitable-setcolumns.md)メソッドへの後続の呼び出しで、サービス プロバイダーが使用するテーブル列セットの有効性をテストします。 
   
 |||
 |:-----|:-----|
@@ -43,7 +43,7 @@ ULONG FBadColumnSet(
 
  _lpptaCols_
   
-> 順番検証するテーブル列を定義するプロパティタグの配列を含む[SPropTagArray](sproptagarray.md)構造体へのポインター。 
+> [in]検証するテーブル列を定義するプロパティ タグの配列を含む [SPropTagArray](sproptagarray.md) 構造体へのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -53,10 +53,10 @@ TRUE
     
 FALSE 
   
-> 指定した列セットは有効です。
+> 指定した列セットが有効です。
     
 ## <a name="remarks"></a>注釈
 
-**FBadColumnSet**関数は、PT_ERROR 型の列を無効として扱い、PT_NULL 型の列を有効なものとして処理します。 
+**FBadColumnSet** 関数は、データ型の列を無効PT_ERROR、型の列が有効PT_NULL扱います。 
   
 

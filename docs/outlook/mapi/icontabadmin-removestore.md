@@ -1,5 +1,5 @@
 ---
-title: icontabadminremovestore
+title: IContabAdminRemoveStore
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33435419"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定したエントリ ID によって指定された連絡先アドレス帳 (CAB) をアドレス帳階層から削除します。
+指定したエントリ ID で指定された連絡先アドレス帳 (CAB) をアドレス帳階層から削除します。
   
 ```cpp
 HRESULT RemoveStore(
@@ -38,10 +38,10 @@ LPENTRYID lpEntryID
 
  _cbEntryID_
   
-> 順番_lな tryid_パラメーターで指定されたエントリ識別子のバイト数。 
+> [in]  _lpEntryID_ パラメーターが指すエントリ識別子のバイト数。 
     
- _lて tryid_
+ _lpEntryID_
   
-> 順番開くオブジェクトのエントリ識別子へのポインター。
+> [in]開くオブジェクトのエントリ識別子へのポインター。
     
 

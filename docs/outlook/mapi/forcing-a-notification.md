@@ -1,5 +1,5 @@
 ---
-title: 通知を強制する
+title: 通知の送信を行う
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,15 +15,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433284"
 ---
-# <a name="forcing-a-notification"></a>通知を強制する
+# <a name="forcing-a-notification"></a>通知の送信を行う
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-サービスプロバイダーが[imapisupport:](imapisupportiunknown.md) notification 用に IUnknown メソッドを使用すると、MAPI は非表示ウィンドウと対応するウィンドウプロシージャを使用して通知を配信します。 各プロセスが通知を受信するには、MAPI が非表示のウィンドウに特別なメッセージを投稿します。 このメッセージは、mapidefs.h で定義されている定数**szMAPINotificationMsg**を使用して名前が付けられます。H. 
+サービス プロバイダーが [IMAPISupport : IUnknown](imapisupportiunknown.md) メソッドを通知に使用する場合、MAPI は非表示ウィンドウとそれに対応するウィンドウ プロシージャを使用して通知を配信します。 通知を受信するプロセスごとに、MAPI は非表示ウィンドウに特別なメッセージを投稿します。 このメッセージの名前は、MAPIDEFS.H で定義されている定数 **szMAPINotificationMsg** です。 
   
-これらの通知は、非表示のウィンドウのウィンドウプロシージャが**szMAPINotificationMsg**メッセージを処理するときに表示されます。 通知が配信されることを保証するには、この**szMAPINotificationMsg**メッセージを待機してディスパッチする必要があります。 これを実現するためのロジックを実装することは非常に簡単ですが、mapi は[HrDispatchNotifications](hrdispatchnotifications.md)と呼ばれる mapi DLL にエントリポイントを提供して、処理をさらに簡単にします。 クライアントで通知を受信するには、次のように**HrDispatchNotifications**を呼び出します。 
+これらの通知は、非表示ウィンドウのウィンドウ プロシージャが **szMAPINotificationMsg メッセージを処理するときに受け取** ります。 通知が配信されるのを保証するには、この **szMAPINotificationMsg** メッセージを待機してディスパッチする必要があります。 これを実現するためのロジックを実装する場合は、かなり単純に実行できますが、MAPI には、処理をさらに簡単にする [HrDispatchNotifications](hrdispatchnotifications.md) と呼ばれる MAPI DLL へのエントリ ポイントが提供されます。 クライアント **で通知を受信するには、次のように HrDispatchNotifications** を呼び出します。 
   
 ```cpp
 HRESULT hr = HrDispatchNotifications(0);

@@ -1,5 +1,5 @@
 ---
-title: firstskipblockcontent ストリームの構造
+title: FirstSkipBlockContent ストリーム構造
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,25 +13,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433928"
 ---
-# <a name="firstskipblockcontent-stream-structure"></a>firstskipblockcontent ストリームの構造
+# <a name="firstskipblockcontent-stream-structure"></a>FirstSkipBlockContent ストリーム構造
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-firstskipblockcontent ストリーム構造は、 [fielddefinition](fielddefinition-stream-structure.md)ストリームの skipblocks データ要素の最初の[skipblock](skipblock-stream-structure.md)構造体の内容です。 firstskipblockcontent ストリームは単なる data 要素である FieldName、次のようになります。 
+FirstSkipBlockContent ストリーム構造は[、FieldDefinition](fielddefinition-stream-structure.md)ストリームの[SkipBlocks](skipblock-stream-structure.md)データ要素の最初の SkipBlock 構造体のコンテンツです。 FirstSkipBlockContent ストリームは、単一のデータ要素である FieldName です。 
   
-- FieldName: [PackedUnicodeString](packedunicodestring-stream-structure.md)。フィールド名を指定します。
+- FieldName: [PackedUnicodeString](packedunicodestring-stream-structure.md)、フィールド名。
     
 ## <a name="see-also"></a>関連項目
 
 
 
-[Outlook のアイテムとフィールド](outlook-items-and-fields.md)
+[Outlookアイテムとフィールド](outlook-items-and-fields.md)
   
-[Stream 構造体](stream-structures.md)
+[Stream 構造](stream-structures.md)
   
-[skipblock ストリームの構造](skipblock-stream-structure.md)
+[SkipBlock ストリーム構造](skipblock-stream-structure.md)
   
-[PackedUnicodeString Stream 構造](packedunicodestring-stream-structure.md)
+[PackedUnicodeString ストリーム構造](packedunicodestring-stream-structure.md)
 

@@ -1,5 +1,5 @@
 ---
-title: imapisupportdo進捗ダイアログ
+title: IMAPISupportDoProgressDialog
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33432584"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-進行状況インジケーターを表示する progress オブジェクトを取得します。
+進行状況インジケーターを表示する進行状況オブジェクトを取得します。
   
 ```cpp
 HRESULT DoProgressDialog(
@@ -37,21 +37,21 @@ HRESULT DoProgressDialog(
 
 ## <a name="parameters"></a>パラメーター
 
- _uluiparam_
+ _ulUIParam_
   
-> 順番進行状況インジケーターの親ウィンドウへのハンドル。
+> [in]進行状況インジケーターの親ウィンドウへのハンドル。
     
  _ulFlags_
   
-> 順番進捗状況オブジェクトが進捗状況を計算する方法を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]進行状況オブジェクトが進行状況を計算する方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_TOP_LEVEL 
   
-> 最上位レベルのアイテム (親フォルダーなど) について、進行状況が計算されます。 progress オブジェクトは、imapiprogress の値を使用する必要があり[ます。:P rogress](imapiprogress-progress.md)メソッドの_ulcount_および_ulcount_パラメーター (それぞれ、現在のアイテムおよび操作の合計アイテムを示す) を使用して、進行状況を増分します。操作のインジケーター。 
+> 進行状況は、親フォルダーなどの上位レベルのアイテムに対して計算されます。 progress オブジェクトは、操作の進行状況インジケーターをインクリメントするために [、IMAPIProgress::P rogress](imapiprogress-progress.md) メソッドの  _ulCount_ パラメーターと  _ulTotal_ パラメーターの値を使用する必要があります。 
     
- _lppprogress_
+ _lppProgress_
   
-> 読み上げprogress オブジェクトへのポインターへのポインター。
+> [out]progress オブジェクトへのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -61,9 +61,9 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-**imapisupport::D o進捗ダイアログ**メソッドは、アドレス帳とメッセージストアプロバイダーのサポートオブジェクトに実装されています。 これらのプロバイダーは**doprogress ダイアログ**を呼び出して、進行状況の情報を計算し、標準ダイアログボックスを表示する[imapiprogress](imapiprogressiunknown.md)インターフェイスの MAPI 実装にアクセスします。 
+**IMAPISupport::D oProgressDialog** メソッドは、アドレス帳およびメッセージ ストア プロバイダーのサポート オブジェクトに実装されます。 これらのプロバイダーは **DoProgressDialog** を呼び出して [IMAPIProgress](imapiprogressiunknown.md) インターフェイスの MAPI 実装にアクセスし、進行状況情報を計算し、標準のダイアログ ボックスを表示します。 
   
-progress オブジェクトと**imapiprogress**インターフェイスを使用する方法については、「[進行状況インジケーターを表示する](how-to-display-a-progress-indicator.md)」を参照してください。
+進行状況オブジェクトと **IMAPIProgress** インターフェイスを使用する方法については、「進捗インジケーターを表示 [する」を参照してください](how-to-display-a-progress-indicator.md)。
   
 ## <a name="see-also"></a>関連項目
 

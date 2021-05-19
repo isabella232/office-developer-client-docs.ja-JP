@@ -1,5 +1,5 @@
 ---
-title: サポートオブジェクトの概要
+title: サポート オブジェクトの概要
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,65 +15,65 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433613"
 ---
-# <a name="support-object-overview"></a>サポートオブジェクトの概要
+# <a name="support-object-overview"></a>サポート オブジェクトの概要
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI furnishes は、すべてのサービスプロバイダー用の[imapisupport: IUnknown](imapisupportiunknown.md)インターフェイスを実装するオブジェクトで、構成中にすべてのメッセージサービスに対して使用されます。 
+MAPI は [、IMAPISupport : IUnknown](imapisupportiunknown.md) インターフェイスを実装するオブジェクトであるサポート オブジェクトを、ログオン中のすべてのサービス プロバイダーと構成中のすべてのメッセージ サービスに提供します。 
   
-サポートオブジェクトはクライアントからアクセスできません。これらは MAPI によって実装され、サービスプロバイダーによってのみ呼び出されます。 **imapisupport**インターフェイスは、Mapispi ヘッダーファイルで指定されています。 その識別子は IID_IMAPISup で、ポインターの種類は LPMAPISUP です。 サポートオブジェクトによって、MAPI プロパティは公開されません。 
+サポート オブジェクトはクライアントからアクセスできない。MAPI によって実装され、サービス プロバイダーによってのみ呼び出されます。 **IMAPISupport インターフェイス** は Mapispi.h ヘッダー ファイルで指定されます。 その識別子はIID_IMAPISup、ポインターの種類は LPMAPISUP です。 MAPI プロパティはサポート オブジェクトによって公開されません。 
   
-プロバイダーには、1つまたは複数のサポートオブジェクトを指定できます。これは、MAPI がプロバイダーをログに記録した回数またはプロバイダーのメッセージサービスの entry 関数が呼び出された回数によって決まります。 通常、プロバイダーは、セッションごとに少なくとも1回はログインします。 クライアントがセッションを要求するプロファイルエントリを使用してセッションを開始するたびに、アドレス帳とトランスポートプロバイダーがログオンします。 クライアントが[imapisession:: openmsgstore](imapisession-openmsgstore.md)メソッドを呼び出すたびに、メッセージストアプロバイダーがログインします。 
+プロバイダーには、MAPI がプロバイダーをログオンする回数、またはプロバイダーのメッセージ サービス エントリ関数が呼び出された回数に応じて、1 つ以上のサポート オブジェクトを指定できます。 通常、プロバイダーはセッションごとに少なくとも 1 回ログオンします。 アドレス帳とトランスポート プロバイダーは、クライアントが要求するプロファイル エントリでセッションを開始する度にログオンします。 メッセージ ストア プロバイダーは、クライアントが [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md) メソッドを呼び出す度にログオンします。 
   
-セッションで複数のログオンがある場合は、1つのサポートオブジェクトを保持して使用するか、個別に使用するか、または、その後のサポートオブジェクトを破棄するかを選択できます。 サポートオブジェクトを保持するには、 **IUnknown:: AddRef**メソッドを呼び出します。 セッション全体を保持する必要があるサポートオブジェクトに対して**AddRef**を呼び出すことは非常に重要です。呼び出しが行われていない場合、MAPI はサポートオブジェクトを解放し、そのメモリを解放します。 
+セッション内の複数のログオンの場合は、各サポート オブジェクトを個別に保持して使用するか、1 つ目のサポート オブジェクトのみを保持して使用するかのどちらかを選択し、後続の各サポート オブジェクトを破棄します。 サポート オブジェクトを保持するには、 **その IUnknown::AddRef メソッドを呼び出** します。 セッション **全体で保持** するサポート オブジェクトで AddRef を呼び出すのは非常に重要です。呼び出しが行われた場合、MAPI はサポート オブジェクトを解放し、そのメモリを解放します。 
   
-サポートオブジェクトの目的は、プロバイダーが一般的に使用する多くのメソッドの実装を提供することです。 各サポートオブジェクトには、プロバイダーが実行されているセッション、プロバイダーが使用しているプロファイルセクション、セッションのエラー情報など、独自のインスタンスに固有のコンテキストデータも含まれています。 
+サポート オブジェクトの目的は、プロバイダーが一般的に使用するメソッドの数がかなり多い場合に実装を提供します。 各サポート オブジェクトには、プロバイダーが実行しているセッション、プロバイダーが使用しているプロファイル セクション、セッションのエラー情報など、独自のインスタンスに固有のコンテキスト データも含まれる。 
   
-サポートオブジェクトには、主なプロバイダーの種類 (アドレス帳、メッセージストア、トランスポート) ごとに1つと構成サポート用の4つの種類があります。 
+サポート オブジェクトには、主要なプロバイダーの種類 (アドレス帳、メッセージ ストア、トランスポート) ごとに 1 つ、構成サポート用の 4 種類があります。 
   
-MAPI では、その使用に関連するメソッドの実装を含めることによって、各サポートオブジェクトをカスタマイズします。 [imapisupport:: openプロファイル](imapisupport-openprofilesection.md)のようないくつかのメソッドの実装は、すべてのサポートオブジェクトに含まれています。 [imapisupport:: SpoolerNotify](imapisupport-spoolernotify.md)などの他のメソッドの実装は、特定のサポートオブジェクトにのみ適用されます。 このメソッドを使用できるのは、メッセージストアとトランスポートプロバイダーのみです。アドレス帳プロバイダーまたはメッセージサービスが呼び出しを試みると、MAPI は MAPI_E_NO_SUPPORT を返します。
+MAPI では、使用に関連するメソッドの実装を含めて、各サポート オブジェクトをカスタマイズします。 [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md)などの一部のメソッドの実装は、すべてのサポート オブジェクトに含まれています。 [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md)などの他のメソッドの実装は、特定のサポート オブジェクトにのみ適用されます。 このメソッドを使用できるのは、メッセージ ストアとトランスポート プロバイダーのみです。アドレス帳プロバイダーまたはメッセージ サービスが呼び出しを試みた場合、MAPI はアドレス帳プロバイダーをMAPI_E_NO_SUPPORT。
   
-サポートオブジェクトは、次のような多くのタスクを実行するために使用できます。
+サポート オブジェクトは、次のような多くのタスクを実行するために使用できます。
   
-- プロファイルセクションへのアクセス。
+- プロファイル セクションへのアクセス。
     
-- フォルダーまたはメッセージをコピーする。 詳細については、「[メッセージまたはフォルダーをコピーまたは移動する](copying-or-moving-a-message-or-a-folder.md)」を参照してください。
+- フォルダーまたはメッセージのコピー。 詳細については、「メッセージまたは [フォルダーのコピーまたは移動」を参照してください](copying-or-moving-a-message-or-a-folder.md)。
     
-- 他のプロバイダーに属するオブジェクトへのアクセス。 詳細については、「[オブジェクトのアクセスと比較のサポート](supporting-object-access-and-comparison.md)」を参照してください。 
+- 他のプロバイダーに属するオブジェクトへのアクセス。 詳細については、「Supporting [Object Access and Comparison」を参照してください](supporting-object-access-and-comparison.md)。 
     
-- イベント通知の処理。 詳細については、「[イベント通知のサポート](supporting-event-notification.md)」を参照してください。
+- イベント通知の処理。 詳細については、「サポート イベント通知 [」を参照してください](supporting-event-notification.md)。
     
 - メモリの割り当てと解放。
     
 - 一意の識別子を取得します。
     
-- オブジェクトを無効にする。
+- オブジェクトの無効化。
     
-- エラーを処理する。
+- エラーの処理。
     
-- メッセージ preprocessors を登録します。 
+- メッセージ プリプロセッサの登録。 
     
 - メッセージ配信レポートの準備。 
     
-ログオン時に、MAPI は各サービスプロバイダーのプロバイダーオブジェクトの logon メソッドを呼び出します。 アドレス帳プロバイダーの場合、MAPI は[IABProvider:: Logon](iabprovider-logon.md)を呼び出します。 メッセージストアプロバイダーの場合、MAPI は[IMSProvider:: Logon](imsprovider-logon.md)を呼び出します。 トランスポートプロバイダーの場合、MAPI は[ixpprovider:: transportlogon](ixpprovider-transportlogon.md)を呼び出します。 MAPI は、このメソッドへのパラメーターのいずれかで、適切なサポートオブジェクトへのポインターを渡します。 ログオン方法では、ログオンオブジェクトをインスタンス化し、サポートオブジェクトポインターを渡します。 logon オブジェクトは、必要に応じて、サポートオブジェクトの**IUnknown:: AddRef**メソッドを呼び出して保持します。 サービスプロバイダーのログオンプロセスの詳細については、「[サービスプロバイダーを開始する](starting-a-service-provider.md)」を参照してください。
+ログオン時に、MAPI は各サービス プロバイダーのプロバイダー オブジェクトのログオン メソッドを呼び出します。 アドレス帳プロバイダーの場合、MAPI は [IABProvider::Logon を呼び出します](iabprovider-logon.md)。 メッセージ ストア プロバイダーの場合、MAPI は [IMSProvider::Logon を呼び出します](imsprovider-logon.md)。 トランスポート プロバイダーの場合、MAPI は [IXPProvider::TransportLogon を呼び出します](ixpprovider-transportlogon.md)。 MAPI は、パラメーターの 1 つで適切なサポート オブジェクトへのポインターをこのメソッドに渡します。 ログオン メソッドは、ログオン オブジェクトをインスタンス化し、サポート オブジェクト ポインターを渡します。 ログオン オブジェクトは、必要に応じてサポート オブジェクト **の IUnknown::AddRef** メソッドを呼び出して保持します。 サービス プロバイダーのログオン プロセスの詳細については、「サービス プロバイダーの開始 [」を参照してください](starting-a-service-provider.md)。
   
-クライアントがログオフすると、MAPI はログオンオブジェクトの logoff メソッドを呼び出します。 logoff メソッドは、サポートオブジェクトの**IUnknown:: Release**メソッドを呼び出して、プロバイダーがサポート方法を呼び出すことがなくなったことを示します。 ログオンの場合と同様に、logoff メソッドの名前は少し異なります。 [IABLogon](iablogoniunknown.md)および[IMSLogon](imslogoniunknown.md)インターフェイスには、 **Logoff**メソッドがあります。[IXPLogon](ixplogoniunknown.md)インターフェイスには、 [transportlogoff](ixplogon-transportlogoff.md)メソッドがあります。 
+クライアントがログオフすると、MAPI はログオン オブジェクトの logoff メソッドを呼び出します。 logoff メソッドは、サポート オブジェクトの **IUnknown::Release** メソッドを呼び出して、プロバイダーがサポート メソッドを呼び出す予定がなくなったかどうかを示します。 ログオンと同様に、logoff メソッドの名前は若干異なります。 [IABLogon インターフェイスと](iablogoniunknown.md) [IMSLogon](imslogoniunknown.md)インターフェイスには **Logoff メソッド** があります。[IXPLogon インターフェイス](ixplogoniunknown.md)には [TransportLogoff メソッド](ixplogon-transportlogoff.md)があります。 
   
-メッセージサービスエントリポイント関数は、ログオン試行がエラー MAPI_E_UNCONFIGURED で失敗したとき、またはクライアントが構成要求を開始したときに呼び出されます。 MAPI は、構成のサポートオブジェクトをインスタンス化し、構成が変更されることがないプロバイダーまたはプロバイダーのいずれかに対して、メッセージサービスエントリポイント関数を呼び出します。 その他のサポートオブジェクトとは異なり、構成サポートオブジェクトは、エントリポイント関数が戻るまで有効です。メッセージサービスは、これらのオブジェクトの**AddRef**メソッドを呼び出して保持しません。 
+メッセージ サービスエントリ ポイント関数は、ログオン試行が失敗した場合、またはクライアントが構成要求を開始MAPI_E_UNCONFIGUREDエラーが発生した場合に呼び出されます。 MAPI は、構成サポート オブジェクトをインスタンス化し、構成が変更されるプロバイダーまたは構成が変更されるプロバイダーのいずれかのメッセージ サービス エントリ ポイント関数を呼び出します。 他のサポート オブジェクトとは異なり、構成サポート オブジェクトは、エントリ ポイント関数が返されるまで有効です。メッセージ サービスは、これらのオブジェクトを保持するために **これらのオブジェクトの AddRef** メソッドを呼び出しません。 
   
-通常、MAPI はプロバイダーのメッセージサービスのエントリポイント関数に対して呼び出しを行いますが、プロバイダーから呼び出しを要求される場合もあります。 これは、クライアントがプロバイダーの[imapistatus:: settingsdialog](imapistatus-settingsdialog.md)メソッドを呼び出して、プロバイダーに構成プロパティシートを表示するように求める場合に、発生する可能性があります。 **settingsdialog**は、メッセージサービスエントリポイント関数に渡すことができる構成サポートオブジェクトを取得するために、 [imapisupport:: GetSvcConfigSupportObj](imapisupport-getsvcconfigsupportobj.md)を呼び出す必要があります。 
+通常、MAPI はプロバイダーのメッセージ サービス エントリ ポイント関数を呼び出しますが、プロバイダーに呼び出しを求めらる場合があります。 これは、クライアントがプロバイダーの [IMAPIStatus::SettingsDialog](imapistatus-settingsdialog.md) メソッドを呼び出して、プロバイダーに構成プロパティ シートの表示を求めるメッセージを表示するときに発生することがあります。 **SettingsDialog は** [IMAPISupport::GetSvcConfigSupportObj](imapisupport-getsvcconfigsupportobj.md) を呼び出して、メッセージ サービス エントリ ポイント関数に渡す構成サポート オブジェクトを取得する必要があります。 
   
-[imapisupport:: getmemallocroutines](imapisupport-getmemallocroutines.md)メソッドを使用して、MAPI でリンクしなくてもメモリの割り当てと解放関数のアドレスを判別できます。 **getmemallocroutines**を使用すると、デバッグコードを使用して割り当て関数の呼び出しを囲むことにより、メモリリークのトレースが容易になります。 推奨されているように**getmemallocroutines**を呼び出す場合は、 [createiprop](createiprop.md)関数を呼び出す前に実行してください。これには、アロケーション関数のアドレスをパラメーターとして指定する必要があります。 
+[IMAPISupport::GetMemAllocRoutines](imapisupport-getmemallocroutines.md)メソッドは、MAPI とリンクすることなく、メモリ割り当ておよび割り当て解除関数のアドレスを決定するために使用できます。 **GetMemAllocRoutines** を使用すると、割り当て関数呼び出しをデバッグ コードで囲み、メモリ リークの追跡も容易になります。 **GetMemAllocRoutines** を呼び出す場合は、パラメーターとして割り当て関数のアドレスを必要とする [CreateIProp](createiprop.md)関数を呼び出す前に呼び出してください。 
   
-新しいアドレス帳またはメッセージストアオブジェクトを作成する必要がある場合は、 **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) プロパティでオブジェクトの検索キーを作成して設定します。 検索キーを作成するために使用する一意の識別子を取得するには、 [「imapisupport:: newuid](imapisupport-newuid.md) 」を呼び出します。 独自のハードコーディングされた[MAPIUID](mapiuid.md)は使用しないでください。 プロバイダーの**MAPIUID**は、エントリ識別子に対してのみ使用する必要があります。 検索キーの作成方法の詳細については、「 [MAPI レコードおよび検索キー](mapi-record-and-search-keys.md)」を参照してください。
+新しいアドレス帳またはメッセージ ストア オブジェクトを作成する必要がある場合は、オブジェクトの検索キーを作成して、そのオブジェクトのプロパティ [(PidTagSearchKey)](pidtagsearchkey-canonical-property.md) **PR_SEARCH_KEY設定します**。 [IMAPISupport::NewUID](imapisupport-newuid.md)を呼び出して、検索キーの作成に使用する一意の識別子を取得します。 独自のハードコードされた [MAPIUID を使用しない](mapiuid.md)。 プロバイダーの **MAPIUID は** 、エントリ識別子にのみ使用する必要があります。 検索キーの作成の詳細については、「MAPI レコードと [検索キー」を参照してください](mapi-record-and-search-keys.md)。
   
-クライアントアプリケーションは、1つ以上の関連オブジェクトを解放せずにオブジェクトを解放する場合があります。 このような場合、プロバイダーは解放されていないオブジェクトを使用できないようにする必要があります。 これを行うために、プロバイダーは、オブジェクトに接続されているすべてのリソースを解放し、 [imapisupport:: makeinvalid](imapisupport-makeinvalid.md)を呼び出して、オブジェクトの vtable を無効にします。 **makeinvalid**は、vtable の**IUnknown**メソッド (**QueryInterface**、 **AddRef**、および**Release**) を標準の MAPI 実装に置き換え、他のすべてのメソッドが MAPI_E_INVALID_OBJECT を返すようにします。 **makeinvalid**は、vtable 以外のすべてのオブジェクトのメモリも解放します。 
+クライアント アプリケーションは、1 つ以上の関連オブジェクトを解放せずにオブジェクトを解放できる場合があります。 このような場合、プロバイダーは、使用できない未発表のオブジェクトをレンダリングする必要があります。 これを行うには、プロバイダーはオブジェクトに接続されているリソースをすべて解放し [、IMAPISupport::MakeInvalid](imapisupport-makeinvalid.md) を呼び出してオブジェクトの vtable を無効にします。 **MakeInvalid** は、vtable の **IUnknown** メソッド **(QueryInterface、AddRef、** および **Release)** を標準の MAPI 実装に置き換え、他のすべてのメソッドが MAPI_E_INVALID_OBJECT を返します。  **MakeInvalid は** 、vtable 以外のすべてのオブジェクトのメモリも解放します。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI サービスプロバイダー](mapi-service-providers.md)
+[MAPI サービス プロバイダー](mapi-service-providers.md)
 

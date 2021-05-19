@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a0beb6eb-7978-c64e-dba1-89f0caf2090e
-description: '最終更新日: 2012 年7月3日'
+description: '最終更新日: 2012 年 7 月 3 日'
 ms.openlocfilehash: 864c2d2dfd17c285b0d8a401d59ce5b7d0463864
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "33432773"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージヘッダーの同期を終了します。
+メッセージ ヘッダーの同期を終了します。
   
 ```cpp
 HRESULT SyncHdrEnd( 
@@ -37,13 +37,13 @@ HRESULT SyncHdrEnd(
 
  _pprog_
   
-> 順番移動またはコピーされたメッセージを同期するための**[imapiprogress](imapiprogressiunknown.md)** インターフェイス。 **LPMAPIPROGRESS**の型定義については、「mapidefs.h」を参照してください。 
+> [in] **[IMAPIProgress インターフェイス](imapiprogressiunknown.md)** を使用して、移動またはコピーされたメッセージの同期を行います。 **LPMAPIPROGRESS の型定義については、mapidefs.h を参照してください**。 
     
 ## <a name="remarks"></a>注釈
 
-**[iostx:: SyncBeg](iostx-syncbeg.md)** の場合、ローカルストアは[ダウンロードメッセージヘッダーの状態](download-message-header-state.md)を入力します。 クライアントは、完全なメッセージアイテム ( **[HDRSYNC](hdrsync.md)** では*pmsgfull* ) をダウンロードします。 この処理が成功した場合、クライアントは**HSF_OK**として**HDRSYNC**の*ulflags*も設定します。 **iostx:: SyncHdrEnd**の場合、Outlook は**HDRSYNC**の結果をチェックし、 *pprog*と**HDRSYNC**内の情報を使用して、ローカルメッセージヘッダーを更新します。 
+**[IOSTX::SyncBeg](iostx-syncbeg.md)** の場合、ローカル ストアはダウンロード メッセージ ヘッダー [の状態に入ります](download-message-header-state.md)。 クライアントは完全なメッセージ アイテム  *(HDRSYNC の pmsgFull として*  ) **[をダウンロードします](hdrsync.md)** 。 これが成功した場合、クライアントは **HDRSYNC** の *ulFlags* も **HSF_OK。** **IOSTX::SyncHdrEnd** の場合、Outlook は **HDRSYNC** で結果をチェックし *、pprog* と **HDRSYNC** の情報を使用してローカル メッセージ ヘッダーを更新します。 
   
-ローカルストアは、前の**[iostx:: SyncHdrBeg](iostx-synchdrbeg.md)** の前の状態に戻ります。 
+ローカル ストアは、前の **[IOSTX::SyncHdrBeg](iostx-synchdrbeg.md)** より前の状態に戻ります。 
   
 ## <a name="see-also"></a>関連項目
 

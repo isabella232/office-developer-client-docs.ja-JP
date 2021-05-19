@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm60105
 localization_priority: Normal
 ms.assetid: 2b757c8d-7732-0f9b-c836-ef755dd1c673
-description: 参照先セルにローカルの数式が含まれているかどうかを示します。
+description: 参照先のセルにローカル数式が含まれているかどうかを示します。
 ms.openlocfilehash: bd0a5dafecf1bd8dca1567392d880ecaaa3e0374
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33433291"
 ---
 # <a name="localformulaexists-function"></a>LOCALFORMULAEXISTS 関数
 
-参照先セルにローカルの数式が含まれているかどうかを示します。 
+参照先のセルにローカル数式が含まれているかどうかを示します。 
   
 ## <a name="syntax"></a>構文
 
-LOCALFORMULAEXISTS (* * *cellref* * *) 
+LOCALFORMULAEXISTS (** *cellref* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 

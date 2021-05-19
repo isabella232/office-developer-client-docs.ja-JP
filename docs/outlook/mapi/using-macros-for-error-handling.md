@@ -21,23 +21,23 @@ ms.locfileid: "33435566"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-HRESULT 値を使用して操作しやすくするために、いくつかのマクロが用意されています。
+HRESULT 値の操作を容易にするマクロがいくつかあります。
   
-失敗または成功をテストするマクロは、HR_SUCCEEDED と HR_FAILED の2つのセットがあり、成功して失敗しました。 SUCCEEDED は HR_SUCCEEDED と同じで、FAILED は HR_FAILED と同じです。
+エラーまたは成功をテストするマクロのセットは、HR_SUCCEEDEDとHR_FAILED FAILED です。 SUCCEEDED は、システムと同HR_SUCCEEDED FAILED は、同じHR_FAILED。
   
-この場合は、 **resultfromscode**マクロを使用して、hresult 変数を S_OK の対応する hresult 値に設定します。 
+この場合 **、ResultFromScode** マクロを使用して、HRESULT 変数に対応する HRESULT 値を設定S_OK。 
   
 一般的に使用されるマクロについては、次の表で簡単に説明します。
   
 |**Macro**|**説明**|
 |:-----|:-----|
-|**MAKE_HRESULT** <br/> |コンポーネントから HRESULT を構築します。  <br/> |
-|**HR_SUCCEEDED** <br/> |成功または警告状態の HRESULT をテストします。  <br/> |
+|**MAKE_HRESULT** <br/> |コンポーネントから HRESULT を作成します。  <br/> |
+|**HR_SUCCEEDED** <br/> |成功または警告の条件について HRESULT をテストします。  <br/> |
 |**HR_FAILED** <br/> |エラー状態の HRESULT をテストします。  <br/> |
-|**HRESULT_CODE** <br/> |HRESULT のエラーコード部分を抽出します。  <br/> |
-|**HRESULT_FACILITY** <br/> |HRESULT からファシリティを抽出します。  <br/> |
-|**HRESULT_SEVERITY** <br/> |重要度から重要度ビットを抽出します。  <br/> |
-|**失敗** <br/> |成功または警告状態の HRESULT をテストします。  <br/> |
-|**フェール** <br/> |エラー状態の HRESULT をテストします。  <br/> |
+|**HRESULT_CODE** <br/> |HRESULT のエラー コード部分を抽出します。  <br/> |
+|**HRESULT_FACILITY** <br/> |HRESULT から施設を抽出します。  <br/> |
+|**HRESULT_SEVERITY** <br/> |重大度ビットを重大度から抽出します。  <br/> |
+|**成功しました** <br/> |成功または警告の条件について HRESULT をテストします。  <br/> |
+|**FAILED** <br/> |エラー状態の HRESULT をテストします。  <br/> |
    
 

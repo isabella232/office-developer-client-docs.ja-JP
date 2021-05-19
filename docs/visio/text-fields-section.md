@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm2155
 localization_priority: Normal
 ms.assetid: f743e4ee-343d-0edd-4a6d-5f104781a524
-description: '[フィールド] ダイアログ ボックスを使用して図形のテキストに挿入した関数および数式を表示します。'
+description: '[フィールド] ダイアログ ボックスを使用して、図形のテキストに挿入された関数と数式を表示します。'
 ms.openlocfilehash: ce6a658a553182e360eaa978254fc59b5bd5b59b
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT

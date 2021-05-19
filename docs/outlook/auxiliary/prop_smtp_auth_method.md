@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33434642"
 ---
-# <a name="propsmtpauthmethod"></a>PROP_SMTP_AUTH_METHOD
+# <a name="prop_smtp_auth_method"></a>PROP_SMTP_AUTH_METHOD
 
 SMTP アカウントに使用する認証方法を指定します。
   
@@ -24,18 +24,18 @@ SMTP アカウントに使用する認証方法を指定します。
 |:-----|:-----|
 |識別子:  <br/> |0x0208  <br/> |
 |プロパティの種類:  <br/> |PT_DWORD  <br/> |
-|プロパティタグ:  <br/> |0x02080003  <br/> |
-|接続  <br/> |読み取り専用  <br/> |
+|プロパティ タグ:  <br/> |0x02080003  <br/> |
+|アクセス:  <br/> |読み取り専用  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-値は、次の定数のビットマスクです。 値については、「 [Constants (Account management API)](constants-account-management-api.md) 」を参照してください。 
+値は、次の定数のビットマスクです。 値 [については、「定数 (アカウント管理 API)」](constants-account-management-api.md) を参照してください。 
   
-- **SMTP_AUTH_SAME_AS_POP**は、 [PROP_INET_USER](prop_inet_user.md)と[PROP_INET_PASSWORD](prop_inet_password.md)で提供されるように、受信メールサーバーと同じ資格情報を使用することを意味します。
+- **SMTP_AUTH_SAME_AS_POP** とは、受信メール サーバーと同じ資格情報を使用 [PROP_INET_USERおよび](prop_inet_user.md)PROP_INET_PASSWORD。 [](prop_inet_password.md)
     
-- **SMTP_AUTH_USER_PASS**は、 [PROP_SMTP_USER](prop_smtp_user.md)および[PROP_SMTP_PASSWORD](prop_smtp_password.md)によって提供される資格情報を使用することを意味します。
+- **SMTP_AUTH_USER_PASS** とは、ユーザーおよびユーザーが提供する資格情報を [PROP_SMTP_USER意味](prop_smtp_user.md)[PROP_SMTP_PASSWORD。](prop_smtp_password.md)
     
-- **SMTP_AUTH_RECEIVE_BEFORE_SEND**は、メールを送信する前に、受信メールサーバーにログオンするようにユーザーに要求することを意味します。 
+- **SMTP_AUTH_RECEIVE_BEFORE_SEND** は、メールを送信する前に受信メール サーバーにログオンするユーザーを要求する方法を意味します。 
     
 ## <a name="see-also"></a>関連項目
 

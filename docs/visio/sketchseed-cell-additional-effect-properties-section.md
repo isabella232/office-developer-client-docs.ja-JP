@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6f62650d-36f8-4c6e-b79f-c9c397a5954d
-description: スケッチ効果の図形座標を決定するために使用されるランダム化の値を、正の整数で表します。 [SketchSeed] セルの値は、スケッチ効果を図形に適用するとき、ランダムで作成されます。
+description: スケッチ効果の図形座標を決定するために使用されるランダム化の値を、正の整数で表します。[SketchSeed] セルの値は、スケッチ効果を図形に適用するとき、ランダムで作成されます。
 ms.openlocfilehash: 3ec58fbfa183d1a6d7bb6960672658f9a6cca073
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33434397"
 ---
 # <a name="sketchseed-cell-additional-effect-properties-section"></a>[SketchSeed] セル ([追加効果のプロパティ] セクション)
 
-スケッチ効果の図形座標を決定するために使用されるランダム化の値を、正の整数で表します。 [**SketchSeed**] セルの値は、スケッチ効果を図形に適用するとき、ランダムで作成されます。 
+スケッチ効果の図形座標を決定するために使用されるランダム化の値を、正の整数で表します。[**SketchSeed**] セルの値は、スケッチ効果を図形に適用するとき、ランダムで作成されます。 
   
 ## <a name="remarks"></a>注釈
 
@@ -24,7 +24,7 @@ ms.locfileid: "33434397"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [sketchseed]  <br/> |
+| セル名:  <br/> | SketchSeed  <br/> |
    
 プログラムから、インデックスによって [**SketchSeed**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

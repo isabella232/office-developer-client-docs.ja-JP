@@ -22,19 +22,19 @@ ms.locfileid: "33434866"
   
 |**値**|**Orientation**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| .0  <br/> | プリンターの用紙サイズに合わせます。  <br/> |**vispposameasprinter** <br/> |
-| 1   <br/> | Portrait  <br/> |**visppoportrait** <br/> |
-|2   <br/> |写真  <br/> |**visPPOLandscape** <br/> |
+| 0  <br/> | プリンターの用紙サイズに合わせます。  <br/> |**visPPOSameAsPrinter** <br/> |
+| 1  <br/> | Portrait  <br/> |**visPPOPortrait** <br/> |
+|2  <br/> |横向き  <br/> |**visPPOLandscape** <br/> |
    
 ## <a name="remarks"></a>注釈
 
-文書に新しいページを挿入すると、この設定は作業中のページの設定に既定値として設定されます。
+ドキュメントに新しいページを挿入すると、この設定は既定でアクティブ ページの設定になります。
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [PrintPageOrientation] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [printpageorientation]  <br/> |
+| セル名:  <br/> | PrintPageOrientation  <br/> |
    
 プログラムから、インデックスによって [PrintPageOrientation] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

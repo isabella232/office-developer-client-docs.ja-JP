@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5725eb52-3a78-897d-f9e3-c5a494fb78c0
-description: 指定されたアカウントのプロパティの値を取得します。
+description: 指定したアカウント プロパティの値を取得します。
 ms.openlocfilehash: d24df8cfa9d54bee4614c1f31e12268748b8c986
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,11 +16,11 @@ ms.locfileid: "33433739"
 ---
 # <a name="iolkaccountgetprop"></a>IOlkAccount::GetProp
 
-指定されたアカウントのプロパティの値を取得します。
+指定したアカウント プロパティの値を取得します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IOlkAccount](iolkaccount.md)を参照してください。
+[「IOlkAccount」を参照してください](iolkaccount.md)。
   
 ```cpp
 HRESULT IOlkAccount::GetProp(  
@@ -31,25 +31,25 @@ ACCT_VARIANT *pVar
 
 ## <a name="parameters"></a>パラメーター
 
-_dwprop_
+_dwProp_
   
-> 順番取得する account プロパティのプロパティタグ。
+> [in]取得する account プロパティのプロパティ タグ。
     
-_pvar_
+_pVar_
   
-> 読み上げ指定したプロパティの値を指定します。
+> [out]指定したプロパティの値。
     
 ## <a name="return-values"></a>戻り値
 
 |**HRESULT 型**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |呼び出しが成功しました。  <br/> |
-|E_ACCT_NOT_FOUND  <br/> |指定されたアカウントのプロパティが見つかりません。  <br/> |
-|E_INVALIDARG  <br/> |無効なプロパティタグが指定されています。  <br/> |
+|E_ACCT_NOT_FOUND  <br/> |指定したアカウントのプロパティが見つかりません。  <br/> |
+|E_INVALIDARG  <br/> |無効なプロパティ タグが指定されています。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-このメソッドが返された後、account プロパティの値がバイナリ型または文字列型の場合は、 [IOlkAccount:: FreeMemory](iolkaccount-freememory.md)を使用して*pvar*を解放する必要があります。
+このメソッドが返された後、account プロパティの値がバイナリ型または文字列型の場合は [、IOlkAccount::FreeMemory](iolkaccount-freememory.md)を使用して *pVar* を解放する必要があります。
   
 ## <a name="see-also"></a>関連項目
 

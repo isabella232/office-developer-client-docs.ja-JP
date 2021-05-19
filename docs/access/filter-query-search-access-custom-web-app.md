@@ -1,5 +1,5 @@
 ---
-title: Filter/query/search (Access カスタム web アプリ)
+title: フィルター/クエリ/検索 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,13 +14,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33432934"
 ---
-# <a name="filterquerysearch-access-custom-web-app"></a>Filter/query/search (Access カスタム web アプリ)
+# <a name="filterquerysearch-access-custom-web-app"></a>フィルター/クエリ/検索 (Access カスタム Web アプリ)
 
 > [!IMPORTANT]
 > マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [RequeryRecords マクロアクション (Access カスタム web アプリ)](requeryrecords-macro-action-access-custom-web-app.md)
+- [RequeryRecords マクロ アクション (Access カスタム Web アプリ)](requeryrecords-macro-action-access-custom-web-app.md)
     
 

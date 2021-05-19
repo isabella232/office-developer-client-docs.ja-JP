@@ -5,7 +5,7 @@ ms.date: 08/10/2016
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: bb9c3c00-7121-41e1-9db3-75550d040ba8
-description: Project Online (自動ホスト型、プロバイダーホスト型、および SharePoint ホスト型) 用に作成できる3種類のアプリの中から、SharePoint でホストされるアプリを作成して展開するのが最も簡単です。
+description: Project Online 用に作成できる 3 種類のアプリ (自動ホスト型アプリ、プロバイダー ホスト型アプリ、SharePoint ホスト型アプリ) の中で、SharePoint ホスト型アプリは最も簡単に作成および展開できます。
 ms.openlocfilehash: 9b3b41eda40a8419ad72f11bb474acf7acaf81e9
 ms.sourcegitcommit: 31b0a7373ff74fe1d6383c30bc67d7675b73d283
 ms.translationtype: MT
@@ -15,162 +15,162 @@ ms.locfileid: "41773758"
 ---
 # <a name="create-a-sharepoint-hosted-project-server-add-in"></a>SharePoint をホストとする Project Server アドインを作成する
 
-Project Online (自動ホスト型、プロバイダーホスト型、および SharePoint ホスト型) 用に作成できる3種類のアプリの中から、SharePoint でホストされるアプリを作成して展開するのが最も簡単です。 SharePoint ホスト型アプリは、OAuth 認証を必要とせず、プロバイダーでホストされているリソースのために、Azure を使用したり、ローカルサイトのメンテナンスを必要としたりしません。 Visual Studio の [ **2013 sharepoint 用アプリ**] テンプレートは、Office ストアで発行および販売できるアプリを開発したり、sharepoint のプライベートアプリカタログに展開したりするための便利なフレームワークです。 
+Project Online 用に作成できる 3 種類のアプリ (自動ホスト型アプリ、プロバイダー ホスト型アプリ、SharePoint ホスト型アプリ) の中で、SharePoint ホスト型アプリは最も簡単に作成および展開できます。 ホストSharePointアプリは、OAuth 認証を必要としないし、Azure を使用しないか、プロバイダーホスト型リソースのローカル サイトのメンテナンスを必要とします。 Visual Studio **の SharePoint 2013** 用アプリ テンプレートは、Office ストアで公開および販売したり、SharePoint のプライベート アプリ カタログに展開したりできるアプリを開発するための便利なフレームワークです。 
   
-Project では、statusing は、チームメンバーが Project Web App の [タスク] ページを使用して、割り当てられたタスクの状態 (タスクの作業に費やした1週間の毎日の勤務時間数など) を送信するプロセスです。 割り当て所有者 (通常はプロジェクトマネージャー) は、状態を承認または拒否することができます。 ステータスが [承認済み] の場合、Project はスケジュールを再計算します。 **Quickstatus**アプリには、割り当てられたタスクが表示され、ユーザーは、完了率をすばやく更新し、選択された割り当ての進捗状況を提出して承認を求めることができます。 Project Web App の [タスク] ページには多くの機能がありますが、 **Quickstatus** App は簡単なインターフェイスを提供する例です。 
+Project では、ステータスは、チーム メンバーが Project Web App の [タスク] ページを使用して、割り当てられたタスクの状態 (タスクの作業に費やされた 1 週間の毎日の作業時間数など) を送信できるプロセスです。 割り当ての所有者 (通常はプロジェクト マネージャー) は、状態を承認または拒否できます。 状態が承認されると、スケジュールProject再計算されます。 **QuickStatus アプリには割** り当てられたタスクが表示され、ユーザーは選択した割り当ての完了率を迅速に更新し、承認のために状態を送信できます。 [タスク] ページにはProject Web App機能が追加されましたが **、QuickStatus** アプリは簡略化されたインターフェイスを提供する例です。 
   
-**Quickstatus**アプリは開発者のためのサンプルです。これは、運用環境での使用を目的としたものではありません。 主な目的は、完全に機能する statusing アプリを作成することではなく、Project Online のアプリ開発の例を示すことです。 Statusing のより良いアプローチについては、[次の手順](#pj15_StatusingApp_NextSteps)の推奨事項を参照してください。
+**QuickStatus アプリ** は、開発者向けのサンプルです。これは、実稼働環境での使用を目的としていない。 主な目的は、完全に機能する状態アプリを作成するのではなく、Project Onlineのアプリ開発の例を示す方法です。 ステータス設定の優れた方法については、「次の手順」の推奨事項 [を参照してください](#pj15_StatusingApp_NextSteps)。
   
-Statusing の一般的な情報については、「[タスクの進行状況](https://support.office.com/article/Find-information-about-Project-Server-2013-8b08a414-15a7-4076-b2db-c90d0214ea7f?ui=en-US&rs=en-US&ad=US#BKMK_TaskProgress)」を参照してください。 SharePoint および Project Server 用のアドインの開発の詳細については、「 [Sharepoint アドイン](https://msdn.microsoft.com/library/jj163230.aspx)」を参照してください。
+状態の一般的な情報については、「タスクの進行状況 [」を参照してください](https://support.office.com/article/Find-information-about-Project-Server-2013-8b08a414-15a7-4076-b2db-c90d0214ea7f?ui=en-US&rs=en-US&ad=US#BKMK_TaskProgress)。 SharePoint および Project サーバー用のアドインの開発の詳細については、「SharePoint[アドイン」を参照してください](https://msdn.microsoft.com/library/jj163230.aspx)。
 
 <a name="pj15_StatusingApp_Prerequisites"> </a>
 
-## <a name="prerequisites-for-creating-an-app-for-project-server-2013"></a>Project Server 2013 用アプリを作成するための前提条件
+## <a name="prerequisites-for-creating-an-app-for-project-server-2013"></a>サーバー 2013 のアプリProject前提条件
 
-Project Online またはオンプレミスの Project Server 2013 に展開できる比較的簡単なアプリを開発する場合は、オンライン開発環境を提供する Napa を使用できます。 より複雑なアプリ、Project Web App のリボンの変更、および開発時の簡単なデバッグには、Visual Studio 2012 または Visual Studio 2013 を使用できます。 たとえば、オンプレミスのインストールでは、Project Server データベースの変更について下書き datatable を手動で確認できます。 この記事では、Visual Studio でアプリを開発する方法について説明します。
+Project Online または Project Server 2013 のオンプレミス インストールに展開できる比較的単純なアプリを開発するには、オンラインの開発環境を提供する Napa を使用できます。 より複雑なアプリ、Project Web App リボンの変更、開発中のデバッグの容易さについては、Visual Studio 2012 または Visual Studio 2013。 たとえば、オンプレミスのインストールでは、サーバー データベースの変更について下書きデータテーブルを手動でProjectできます。 この記事では、アプリを使用してアプリ開発を行う方法をVisual Studio。
   
-Visual Studio を使用して Project Server アプリを開発するには、次のものが必要です。
+アプリケーションを使用Projectサーバー アプリの開発Visual Studio以下が必要です。
   
 - 使用するローカルの開発用コンピューターに最新のサービス パックと Windows 更新プログラムをインストールしてあることを確認します。オペレーティング システムは、Windows 7、Windows 8、Windows Server 2008、Windows Server 2012 のいずれでもかまいません。
     
-- SharePoint Server 2013 および Project Server 2013 がインストールされているコンピューターに、アプリの分離とアプリケーションのサイドロードが構成されている必要があります。 サイドロードを使用すると、Visual Studio が一時的にアプリをデバッグ用にインストールできるようになります。 SharePoint および Project Server のオンプレミスインストールを使用できます。 詳細については、「 [SharePoint 用アプリのオンプレミスの開発環境をセットアップする](https://msdn.microsoft.com/library/fp179923%28Office.15%29.aspx)」を参照してください。
+- SharePoint Server 2013 および Project Server 2013 がインストールされているコンピューターが必要です。このコンピューターはアプリの分離とサイドローディング用に構成されています。 サイドローディングを使用するとVisual Studioアプリを一時的にインストールしてデバッグできます。 サーバーとサーバーのオンプレミス インストールSharePoint使用Projectできます。 詳細については、「アプリのオンプレミスの開発環境をセットアップする」[を](https://msdn.microsoft.com/library/fp179923%28Office.15%29.aspx)参照SharePoint。
     
    > [!NOTE]
-   > オンプレミスのインストールの場合は、企業のアプリカタログを作成する*前に*分離アプリドメインを構成します。 
+   > 社内インストールの場合は、企業アプリ カタログを作成する前に、  *分離されたアプリ*  ドメインを構成します。 
   
-- 開発用コンピューターは、Office Developer Tools for Visual Studio 2012 がインストールされているリモートコンピューターの場合があります。 最新のバージョンがインストールされていることを確認します。[Office 用アプリおよび SharePoint 用アプリのダウンロード](https://msdn.microsoft.com/office/apps/fp123627.aspx)の [*ツール*] セクションを参照してください。
+- 開発用コンピューターは、2012 年の開発者Officeインストールされているリモート Visual Studioできます。 最新バージョンがインストールされていることを確認します。ダウンロードの *詳細については*[、「Apps for the Apps for Office」をSharePointしてください](https://msdn.microsoft.com/office/apps/fp123627.aspx)。
     
-- 開発およびテストに使用する Project Web App インスタンスがブラウザーでアクセスできることを確認します。
+- 開発およびテストProject Web App使用するインスタンスにブラウザーでアクセス可能なインスタンスを確認します。
     
-オンラインツールの使用方法については、「 [Office 365 で SharePoint 用アプリを開発するための環境を設定する](https://msdn.microsoft.com/library/fp161179.aspx)」を参照してください。 オンラインツールを使用する Project Server 用の単純なアプリを構築する方法のチュートリアルについては、「EPMSource ブログシリーズ」を参照して、[最初の Project server アプリを作成](https://epmsource.com/2012/11/20/building-your-first-project-server-app-part-zerothe-introduction/)してください。
+オンライン ツールの使用の詳細については、「アプリを開発するための環境をセットアップする」を参照SharePoint[をOffice 365。](https://msdn.microsoft.com/library/fp161179.aspx) オンライン ツールを使用する Project Server 用の簡単なアプリを構築する方法のチュートリアルについては、「EPMSource ブログ シリーズ」「Building your first Project [Server app」を参照してください](https://epmsource.com/2012/11/20/building-your-first-project-server-app-part-zerothe-introduction/)。
 
 <a name="pj15_StatusingApp_UsingVisualStudio"> </a>
 
-## <a name="using-visual-studio-to-create-a-project-server-app"></a>Visual Studio を使用して Project Server アプリを作成する
+## <a name="using-visual-studio-to-create-a-project-server-app"></a>サーバー Visual Studioを使用してサーバー アプリProject作成する
 
-Office Developer Tools for Visual Studio 2012 には、Project Server 2013 で使用できる SharePoint アプリのテンプレートが含まれています。 アプリソリューションを作成すると、ソリューションには、カスタムコードに次のファイルが含まれます。
+Office2012 Visual Studio開発者向けツールには、SharePoint Server 2013 で使用できるアプリProjectが含まれています。 アプリ ソリューションを作成すると、カスタム コード用の次のファイルがソリューションに含まれます。
   
-- **Appmanifest.xml**には、アプリタイトル、アクセス許可要求スコープ、およびその他のプロパティの設定が含まれています。 手順1では、マニフェストデザイナーを使用してプロパティを設定する手順について説明します。 
+- **AppManifest.xml** には、アプリのタイトル、アクセス許可要求スコープ、その他のプロパティの設定が含まれます。 手順 1 には、マニフェスト デザイナーを使用してプロパティを設定する手順が含まれています。 
     
-- Pages フォルダーの**default.aspx**は、アプリのメインページです。 手順2は、 **Quickstatus**アプリに HTML5 コンテンツを追加する方法を示しています。 
+- **Pages フォルダーの Default.aspx** は、アプリのメイン ページです。 手順 2 は、QuickStatus アプリの HTML5 コンテンツを追加 **する方法を示** しています。 
     
-- Scripts フォルダー内の**app.config**は、カスタム JavaScript コードのプライマリファイルです。 手順3では、 **Quickstatus**アプリの JavaScript コードについて説明します。 
+- **App.js** フォルダー内のファイルは、カスタム JavaScript コードのプライマリ ファイルです。 手順 3 では、QuickStatus アプリの **JavaScript コードについて説明** します。 
     
-   JQuery ベースのグリッドまたは日付選択などの市販のコントロールを追加する場合は、default.aspx ファイルに追加の JavaScript ファイルへの参照を追加することができます。
+   jQuery ベースのグリッドや日付ピッカーなどの商用コントロールを追加する場合は、Default.aspx ファイルで追加の JavaScript ファイルへの参照を追加できます。
     
-- コンテンツフォルダー内の**app.xaml**は、カスタム CSS3 スタイルのプライマリファイルです。 手順2と手順3には、 **Quickstatus**アプリのカスケードスタイルシート (CSS) のスタイルに関する情報が記載されています。 Default.aspx ファイルには、追加の CSS ファイルへの参照を追加できます。 
+- **コンテンツ フォルダーの App.css** は、カスタム CSS3 スタイルのプライマリ ファイルです。 手順 2 と手順 3 には、QuickStatus アプリのカスケード スタイル シート (CSS) スタイル **に関する情報が含** まれています。 Default.aspx ファイルで、追加の CSS ファイルへの参照を追加できます。 
     
-- Images フォルダーの**AppIcon**は、アプリが Office ストアまたはアプリカタログに表示する 96 x 96 アイコンです。 
+- **AppIcon.png** フォルダー内の 96 x 96 アイコンは、アプリが Office ストアまたはアプリ カタログに表示されます。 
     
-Project Web App のリボンを変更するには、リボンのカスタムアクションを追加します。 [QuickStatus app セクションのコード例](#pj15_StatusingApp_Example)には、変更された Default.aspx、App.config、app.xaml、および appmanifest.xml ファイルの完全なコードが含まれています。 
+リボンを変更Project Web App、リボン のカスタム アクションを追加できます。 [[QuickStatus](#pj15_StatusingApp_Example)アプリのコード例] セクションには、変更された Default.aspx、App.js、App.css、Elements.xml、および AppManifest.xml ファイルの完全なコードが含まれています。 
   
-### <a name="procedure-1-to-create-an-app-project-in-visual-studio"></a>手順 1. Visual Studio でアプリプロジェクトを作成するには
+### <a name="procedure-1-to-create-an-app-project-in-visual-studio"></a>手順 1. アプリ プロジェクトを作成するには、Visual Studio
 
-1. 管理者として Visual Studio 2012 を実行し、スタートページで [**新しいプロジェクト**] を選択します。 
+1. 管理者Visual Studio 2012 を実行し、[スタート] ページで **[Project]** を選択します。 
     
-2. [**新しいプロジェクト**] ダイアログボックスで、[**テンプレート**]、[ **Visual C#**]、[ **Office/SharePoint** ] ノードを展開し、[**アプリ**] を選択します。 中央のウィンドウの上部にある [ターゲットフレームワーク] ドロップダウンリストで、既定の **.Net framework 4.5**を使用し、[ **SharePoint 用アプリ 2013** ] を選択します (図1を参照)。 
+2. [新しい **Project]** ダイアログ ボックスで、[テンプレート] 、[Visual C#]、および **[Office/SharePoint]** ノードを展開し、[アプリ] を選択 **します**。  中央ウィンドウの.NET Frameworkにあるターゲット フレームワーク ドロップダウン リストの既定の .NET Framework **4.5** を使用し、次に **[SharePoint 2013** のアプリ] を選択します (図 1 を参照)。 
     
-3. [**名前**] フィールドに「quickstatus」と入力し、アプリを保存する場所を参照して、[ **OK]** を選択します。
+3. [名前 **] フィールドに** 「QuickStatus」と入力し、アプリを保存する場所を参照し **、[OK] を選択します**。
     
-   **図1。Visual Studio で Project Server アプリを作成する**
+   **図 1.サーバー 内Projectサーバー アプリを作成Visual Studio**
 
    ![Visual Studio での Project Server アプリの作成](media/pj15_CreateStatusingApp_NewProject.gif "Visual Studio での Project Server アプリの作成")
   
-4. [**新しい SharePoint 用アプリ**] ダイアログボックスで、次の3つのフィールドに入力します。 
+4. [アプリの **新しいSharePoint]** ダイアログ ボックスで、次の 3 つのフィールドに入力します。 
     
-   - 上部のテキストボックスに、Project Web App に表示するアプリの名前を入力します。 たとえば、「クイック状態の更新」と入力します。
+   - 上部のテキスト ボックスに、アプリでアプリに表示する名前を入力Project Web App。 たとえば、「Quick Status Update」と入力します。
     
-   - デバッグに使用するサイトには、Project Web App インスタンスの URL を入力します。 たとえば、「」 `https://ServerName/ProjectServerName`と入力して ( _Servername_と_projectservername_を独自の値に置き換え)、[**検証**] を選択します。 すべてが正常に実行されると、Visual Studio は**接続が成功**したことを示します。 エラーメッセージが表示された場合は、Project Web App の URL が正しいことと、Project Server コンピュータがアプリの分離とアプリケーションのサイドロード用に構成されていることを確認してください。 詳細については、「 [Project Server 2013 用アプリを作成するための前提条件](#pj15_StatusingApp_Prerequisites)」セクションを参照してください。 
+   - デバッグに使用するサイトの場合は、インスタンスの URL をProject Web Appします。 たとえば  `https://ServerName/ProjectServerName`  _、(ServerName_ と  _ProjectServerName_ を独自の値に置き換える) と入力し、[検証] を **選択します**。 すべてが正常に終了すると、接続Visual Studioが **表示されます**。 エラー メッセージが表示された場合は、Project Web App URL が正しく、Project Server コンピューターがアプリの分離とサイドローディング用に構成されていることを確認します。 詳細については、「サーバー [2013 のアプリを作成するためのProject」を参照](#pj15_StatusingApp_Prerequisites)してください。 
     
-   - [ **Sharepoint 用アプリをホストする方法**] ドロップダウンリストで、[ **sharepoint ホスト型**] を選択します。
+   - [アプリ **をホストする方法] ボックス** の一覧SharePoint、[ホストされているアプリSharePoint **選択します**。
     
    > [!CAUTION]
-   > **プロバイダーでホスト**される既定のプロジェクトの種類を誤って選択すると、Visual Studio によって、 **quickstatus**プロジェクトと**quickstatusweb**プロジェクトという2つのプロジェクトが作成されます。 2つのプロジェクトが表示された場合は、そのソリューションを削除し、もう一度開始します。 
+   > プロバイダーホスト型の既定のプロジェクトの種類を誤って選択した場合、Visual Studio はソリューションに QuickStatus プロジェクトと **QuickStatusWeb** プロジェクトの 2 つのプロジェクトを **作成** します。 2 つのプロジェクトが表示される場合は、そのソリューションを削除して、もう一度開始します。 
   
-5. **[OK]** を選択して、 **Quickstatus**ソリューション、 **quickstatus**プロジェクト、および既定のファイルを作成します。 
+5. **[OK]** を選択して **、QuickStatus** ソリューション **、QuickStatus** プロジェクト、および既定のファイルを作成します。 
     
-6. [マニフェストデザイナー] ビューを開きます (たとえば、Appmanifest.xml ファイルをダブルクリックします)。 [**全般**] タブの [**タイトル**] テキストボックスに、手順4で入力したアプリ名が表示されます。 [**アクセス許可**] タブを選択して、アプリに対して次のアクセス許可要求を追加します (図2を参照)。 
+6. マニフェスト デザイナー ビューを開きます (たとえば、ファイルをダブルクリックAppManifest.xmlします。 [全般 **] タブ** の **[タイトル] テキスト** ボックスに、手順 4 で入力したアプリ名が表示されます。 [アクセス許可 **] タブを** 選択して、アプリの次のアクセス許可要求を追加します (図 2 を参照)。 
     
-   - [**アクセス許可要求**] リストの最初の行で、[**範囲**] 列のドロップダウンリストから [ **Statusing** ] を選択します。 [**アクセス許可**] 列で、[ **submitstatus**] を選択します。
+   - [アクセス許可要求]**リストの** 最初の行の [スコープ]**列で、** ドロップダウン リストの [状態] を選択します。 [アクセス許可 **] 列で****、[SubmitStatus] を選択します**。
     
-   - **範囲**が**複数のプロジェクト**であり、**アクセス許可**が**読み取ら**れる行を追加します。
+   - スコープが複数のプロジェクトで **、アクセス****許可** が読み取 **りである行を** 追加 **します**。
     
-   **図2Statusing アプリのアクセス許可のスコープの設定**
+   **図 2.状態アプリのアクセス許可スコープの設定**
 
    ![状態管理アプリのアクセス許可の範囲を設定](media/pj15_CreateStatusingApp_PermissionScope.gif "状態管理アプリのアクセス許可の範囲を設定")
   
-**Quickstatus**アプリを使用すると、Project Web app のユーザーは、複数のプロジェクトからそのユーザーの割り当てを読み取り、割り当ての達成率を変更し、更新を送信することができます。 図2のドロップダウンリストに表示されるその他のアクセス許可要求スコープは、このアプリでは必要ありません。 アクセス許可要求スコープとは、アプリがユーザーに代わって要求するアクセス許可のことです。 ユーザーが Project Web App でこれらの権限を持っていない場合、アプリは実行されません。 アプリには、他の SharePoint アクセス許可の場合を含む複数のアクセス許可要求スコープを含めることができますが、アプリの機能に必要な最低限の要件のみを含める必要があります。 Project Server に関連付けられているアクセス許可要求の範囲を次に示します。 
+**QuickStatus アプリを使用** すると、Project Web Appユーザーは、そのユーザーの割り当てを複数のプロジェクトから読み取り、割り当て率の完了率を変更し、更新プログラムを提出できます。 図 2 のドロップダウン リストに示されている他のアクセス許可要求スコープは、このアプリでは必要ありません。 アクセス許可要求スコープは、アプリがユーザーに代わって要求するアクセス許可です。 ユーザーがこれらのアクセス許可を持Project Web App、アプリは実行されません。 アプリには、他のアクセス許可のアクセス許可を含む複数のアクセス許可要求スコープをSharePointできますが、アプリの機能に必要な最小限の権限のみを持つ必要があります。 サーバーに関連するアクセス許可要求スコープをProjectします。 
 
-- **エンタープライズリソース**: 他の Project Web App ユーザーに関する情報を読み取りまたは書き込みを行うためのリソース管理者のアクセス許可。
+- **Enterprise : リソース** マネージャーのアクセス許可、他のユーザーに関する情報の読み取りProject Web Appします。
     
-- **複数のプロジェクト**: ユーザーがアクセス許可を要求した複数のプロジェクトに対して読み取りまたは書き込みを行います。
+- **複数のプロジェクト**: 複数のプロジェクトに対する読み取りまたは書き込み。ユーザーはアクセス許可を要求します。
     
-- **Project Server**: アプリユーザーが Project Web app の管理者権限を持っている必要があります。
+- **Project サーバー**: アプリ ユーザーに管理者のアクセス許可を付与する必要Project Web App。
     
-- **レポート**: Project web App の**projectdata** OData サービスを確認します (project web app に対するログオン権限のみが必要です)。 
+- **レポート**: **ProjectData OData** サービスを読み取り、Project Web App (ユーザーのアクセス許可のみをログオンする必要Project Web App)。 
     
-- **単一プロジェクト**: ユーザーがアクセス許可を要求したプロジェクトに対して、読み取りまたは書き込みを行います。
+- **単Project**: ユーザーが要求したアクセス許可を持つプロジェクトに対する読み取りまたは書き込み。
     
-- **Statusing**: 作業時間、達成率、新しい割り当てなどの、割り当ての進捗状況の更新を提出します。
+- **Statusing**: 割り当ての状態 (作業時間、完了率、新しい割り当てなど) の更新プログラムを送信します。
     
-- **ワークフロー**: ユーザーが Project Server ワークフローを実行する権限を持っている場合、アプリはワークフローの引き上げられた権限で実行されます。
+- **ワークフロー**: ユーザーがサーバー ワークフローを実行Project場合、アプリはワークフローの管理者特権のアクセス許可を使用して実行されます。
     
-Project Server 2013 のアクセス許可要求範囲の詳細については、「project [2013 の開発者向けの更新プログラム](updates-for-developers-in-project-2013.md)」および「 [SharePoint 2013 のアプリのアクセス許可](https://msdn.microsoft.com/library/fp142383.aspx)」の「*プロジェクトアプリ*」セクションを参照してください。
+Project Server 2013 のアクセス許可要求スコープの詳細については、「Project 2013 の開発者向け更新プログラム」および[「SharePoint 2013](updates-for-developers-in-project-2013.md)のアプリのアクセス許可」の「Project アプリ」セクション[を参照](https://msdn.microsoft.com/library/fp142383.aspx)してください。 
 
 
 <a name="pj15_StatusingApp_HTML"> </a>
 
-### <a name="creating-the-html-content-for-the-quickstatus-app"></a>QuickStatus アプリの HTML コンテンツを作成する
+### <a name="creating-the-html-content-for-the-quickstatus-app"></a>QuickStatus アプリの HTML コンテンツの作成
 
-HTML コンテンツのコーディングを開始する前に、QuickStatus アプリのユーザーインターフェイスとユーザーの利便性を設計します (図3は、完成したページの例を示しています)。 デザインには、HTML コードを操作する JavaScript 関数のアウトラインを含めることもできます。 一般的な情報については、「 [SharePoint 2013 のアプリの UX 設計](https://msdn.microsoft.com/library/fp179934.aspx)」を参照してください。
+HTML コンテンツのコーディングを開始する前に、QuickStatus アプリのユーザー インターフェイスとユーザー エクスペリエンスを設計します (図 3 は、完成したページの例を示しています)。 デザインには、HTML コードを操作する JavaScript 関数のアウトラインも含めできます。 一般的な情報については[、「2013](https://msdn.microsoft.com/library/fp179934.aspx)年のアプリの UX デザイン」をSharePointしてください。
   
-**図3QuickStatus app ページの設計**
+**図 3.QuickStatus アプリ ページのデザイン**
 
 ![QuickStatus アプリ ページの設計](media/pj15_CreateStatusingApp_AfterRefresh.gif "QuickStatus アプリ ページの設計")
   
-アプリでは、表示名が上部に表示されます。これは、Appmanifest.xml の**Title**要素の値です。 
+アプリの上部に表示名が表示されます。これは、アプリの **Title** 要素の値AppManifest.xml。 
   
-既定では、ページは HTML5 を使用します。 次に示すのは、 **Quickstatus**アプリによってページの本文に含まれるメイン UI オブジェクトの標準の HTML 要素です。 
+既定では、ページは HTML5 を使用します。 **QuickStatus** アプリがページの本文に含まれている主な UI オブジェクトの標準 HTML 要素を次に示します。 
   
-- **Form**要素には、その他すべての UI 要素が含まれています。 
+- フォーム **要素** には、他のすべての UI 要素が含まれます。 
     
-- **Fieldset**要素は、割り当てのテーブルのコンテナーと枠線を作成します。子の**legend**要素は、コンテナーのラベルを提供します。 
+- fieldset **要素は** 、割り当てのテーブルのコンテナーと罫線を作成します。子凡例 **要素は** 、コンテナーのラベルを提供します。 
     
-- **Table**要素には、キャプションとテーブルヘッダーのみが含まれています。 JavaScript 関数は、テーブルの標題を変更し、割り当ての行を追加します。 
+- **table 要素には**、キャプションとテーブル ヘッダーだけが含まれます。 JavaScript 関数は、テーブルのキャプションを変更し、割り当ての行を追加します。 
     
    > [!NOTE]
-   > ページングと並べ替えを簡単に追加するために、運用アプリでは、テーブルではなく、商用の jQuery ベースのグリッドコントロールを使用する可能性があります。 
+   > ページングと並べ替えを簡単に追加するには、実稼働アプリでテーブルの代わりに商用の jQuery ベースのグリッド コントロールを使用する可能性があります。 
   
-   この表には、プロジェクト名、チェックボックスのあるタスク名、実績作業時間、達成率、残存作業時間、割り当て終了日の列が含まれています。 JavaScript 関数は、チェックボックスと、各タスクの達成率のテキスト入力フィールドを作成します。
+   このテーブルには、プロジェクト名の列、チェック ボックス付きタスク名、実績作業時間、完了率、残りの作業時間、および割り当ての終了日が含まれます。 JavaScript 関数は、各タスクの完了率のチェック ボックスとテキスト入力フィールドを作成します。
     
-- テキストボックスの**input**要素は、選択したすべての割り当てに対して達成率を設定します。 
+- テキスト **ボックスの** 入力要素は、選択した割り当てすべてについて、完了率を設定します。 
     
-- **Button**要素は、状態の変更を送信します。 
+- **button 要素は**、状態の変更を送信します。 
     
-- **Button**要素は、ページを更新します。 
+- **button 要素によって** ページが更新されます。 
     
-- **Button**要素は、アプリを終了し、Project Web app の [タスク] ページに戻ります。 
+- button **要素** はアプリを終了し、アプリの [タスク] ページにProject Web App。 
     
-下部のテキストボックス要素と button 要素は**div**要素内にあるので、CSS は UI オブジェクトの位置と外観を簡単に管理できます。 JavaScript 関数は、ステータス更新の成功または失敗の結果が含まれるページの下部に段落を追加します。 
+下部のテキスト ボックスとボタン要素は **div** 要素内にあるので、CSS は UI オブジェクトの位置と外観を簡単に管理できます。 JavaScript 関数は、ページの下部に、状態更新の成功または失敗の結果を含む段落を追加します。 
   
 ### <a name="procedure-2-to-create-the-html-content"></a>手順 2. HTML コンテンツを作成するには
 
-1. Visual Studio で、default.aspx ファイルを開きます。
+1. [Visual Studioで、Default.aspx ファイルを開きます。
     
-   このファイルには、2つの**asp: Content**要素が`ContentPlaceHolderID="PlaceHolderAdditionalPageHead"`含まれています。属性を持つ要素がページヘッダー `ContentPlaceHolderID="PlaceHolderMain"`内に追加され、その属性を持つ要素が page **body**要素内に配置されます。 
+   このファイルには **、2 つの asp:Content** 要素が含まれています。属性を持つ要素はページ ヘッダー内に追加され、属性を持つ要素はページ本文要素  `ContentPlaceHolderID="PlaceHolderAdditionalPageHead"`  `ContentPlaceHolderID="PlaceHolderMain"` 内 **に配置** されます。 
     
-2. ページヘッダー `<asp:Content ContentPlaceHolderID="PlaceHolderAdditionalPageHead" runat="server">`のコントロールで、Project Server コンピュータ上のファイルへの参照を追加します。 テストおよびデバッグの場合は、.PS を使用できます。 
+2. ページ ヘッダーのコントロールで、サーバー コンピューター上の PS.js `<asp:Content ContentPlaceHolderID="PlaceHolderAdditionalPageHead" runat="server">` ファイルへの参照Projectします。 テストとデバッグでは、次のコマンドをPS.debug.js。 
     
    ```HTML
      <script type="text/javascript" src="/_layouts/15/ps.debug.js"></script>
    ```
 
-   アプリインフラストラクチャは、IIS `/_layouts/15/`の SharePoint サイトの仮想ディレクトリを使用します。 物理ファイルは`%ProgramFiles%\Common Files\Microsoft Shared\Web Server Extensions\15\TEMPLATE\LAYOUTS\PS.debug.js`です。
+   アプリ インフラストラクチャは `/_layouts/15/` 、IIS のサイトの仮想ディレクトリSharePoint使用します。 物理ファイルはです  `%ProgramFiles%\Common Files\Microsoft Shared\Web Server Extensions\15\TEMPLATE\LAYOUTS\PS.debug.js` 。
     
    > [!NOTE]
-   > 運用のためにアプリを展開する前に`.debug` 、パフォーマンスを向上させるために、スクリプト参照からを削除してください。 
+   > 実稼働用にアプリを展開する前に、スクリプト参照から削除  `.debug` してパフォーマンスを向上させます。 
   
-3. ページの`<asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">`本文のコントロールで、生成された**div**要素を削除してから、UI オブジェクトの HTML コードを追加します。 **Table**要素には、ヘッダー行のみが含まれています。 [**タスク名**] 列には、チェックボックス入力コントロールが含まれています。 **Caption**要素のテキストは、app.config ファイル内の**Getuserinfo**関数の**onGetUserNameSuccess**コールバックに置き換えられます。 
+3. ページ本文  `<asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">` のコントロールで、生成された **div** 要素を削除し、UI オブジェクトの HTML コードを追加します。 table **要素** にはヘッダー行だけが含まれます。 [ **タスク名] 列** には、チェック ボックス入力コントロールが含まれます。 caption 要素 **のテキスト** は、ファイル内の getUserInfo 関数の **onGetUserNameSuccess** コールバックに置き換App.jsされます。  
     
     ```HTML
     <form>
@@ -208,39 +208,39 @@ HTML コンテンツのコーディングを開始する前に、QuickStatus ア
     </form>
     ```
 
-4. App.xaml ファイルに、UI 要素の位置と外観の CSS コードを追加します。 **Quickstatus**アプリの完全な CSS コードについては、「 [quickstatus app」セクションのコード例](#pj15_StatusingApp_Example)を参照してください。 
+4. App.css ファイルで、UI 要素の位置と外観の CSS コードを追加します。 QuickStatus アプリの完全な CSS コードについては **、「QuickStatus** アプリのサンプル [コード」セクションを参照](#pj15_StatusingApp_Example) してください。 
     
-手順 3 JavaScript 関数を追加して、割り当てを読み取り、テーブルの行を作成し、割り当ての達成率を変更して更新します。 実際の手順は、さらに多くの場合、HTML コードを作成し、関連するスタイルと JavaScript 関数を追加してテストし、HTML コードを変更または追加し、そのプロセスを繰り返すことによって、アプリの開発において反復処理を行います。
+手順 3 では、割り当てを読み取り、テーブル行を作成し、割り当ての完了率を変更および更新する JavaScript 関数を追加します。 実際の手順は、HTML コードの一部を交互に作成し、関連するスタイルと JavaScript 関数を追加およびテストし、HTML コードを変更または追加してから、プロセスを繰り返す、アプリの開発におけるより反復的な手順です。
 
 <a name="pj15_StatusingApp_JavaScript"> </a>
 
-### <a name="creating-the-javascript-functions-for-the-quickstatus-app"></a>QuickStatus アプリ用の JavaScript 関数の作成
+### <a name="creating-the-javascript-functions-for-the-quickstatus-app"></a>QuickStatus アプリの JavaScript 関数の作成
 
-SharePoint アプリの Visual Studio テンプレートには、SharePoint クライアントコンテキストを取得する既定の初期化コードを含む App.config ファイルが含まれています。このファイルには、アプリページの基本的な get アクションおよび set アクションのデモが示されています。 SharePoint クライアント側の SP .js ライブラリの JavaScript 名前空間は**sp**です。 Project Server アプリは、.PS ライブラリを使用するため、アプリは**ps**名前空間を使用してクライアントコンテキストを取得し、Project SERVER の jsom にアクセスします。 
+SharePoint アプリの Visual Studio テンプレートには、SharePoint クライアント コンテキストを取得し、アプリ ページの基本的な取得および設定アクションを示す既定の初期化コードを含む App.js ファイルが含まれています。 クライアント側のライブラリライブラリSharePoint JavaScript 名前空間SP.js SP **です**。 Project Server アプリは PS.js ライブラリを使用しますので、アプリは **PS** 名前空間を使用してクライアント コンテキストを取得し、Project Server の JSOM にアクセスします。 
   
-**Quickstatus**アプリの JavaScript 関数には、次のようなものがあります。 
+QuickStatus アプリの **JavaScript 関数には** 、次のものが含まれます。 
   
-- Document **ready**イベントハンドラーは、ドキュメントオブジェクトモデル (DOM) のインスタンスが生成されたときに実行されます。 **準備完了**イベントハンドラーは、次の4つの手順を実行します。 
+- ドキュメント オブジェクト **モデル** (DOM) がインスタンス化されると、ドキュメント準備完了イベント ハンドラーが実行されます。 ready **イベント ハンドラー** は、次の 4 つの手順を実行します。 
     
-    1. プロジェクトサーバー JSOM および**Pwaweb**グローバル変数のクライアントコンテキストで**projcontext**グローバル変数を初期化します。 
+    1. サーバー JSOM **と pwaWeb** グローバル変数のクライアント コンテキストProject **projContext** グローバル変数を初期化します。 
         
-    2. **Getuserinfo**関数を呼び出して、 **projuser**グローバル変数を初期化します。 
+    2. **getUserInfo 関数を呼び** 出して **、projUser グローバル変数を** 初期化します。 
         
-    3. ユーザーに対して指定された割り当てデータを取得する**getAssignments**関数を呼び出します。 
+    3. **getAssignments 関数を呼び出** し、ユーザーの指定された割り当てデータを取得します。 
         
-    4. [イベントハンドラー] を [テーブルヘッダー] チェックボックスに、[テーブルの各行のチェックボックスにバインドします。 Click イベントハンドラーは、ユーザーがテーブルのチェックボックスをオンまたはオフにしたときにチェックボックスのチェック**マークが付い**ている属性を管理します。 
+    4. クリック イベント ハンドラーをテーブル ヘッダー チェック ボックスにバインドし、テーブルの各行のチェック ボックスにバインドします。 Click イベント ハンドラーは、ユーザーがテーブル内のチェック ボックスをオンまたはオフにした場合に、チェック ボックスの check 属性を管理します。 
     
-- **GetAssignments**関数が正常に実行された場合は、 **onGetAssignmentsSuccess**関数を呼び出します。 この関数は、各割り当てのテーブルに行を挿入し、各行の HTML コントロールを初期化してから、下部のボタンのプロパティを初期化します。 
+- **getAssignments 関数** が成功すると **、onGetAssignmentsSuccess 関数が呼び出** されます。 この関数は、各割り当てのテーブルに行を挿入し、各行の HTML コントロールを初期化し、下ボタンのプロパティを初期化します。 
     
-- [**更新**] ボタンの**onClick**イベントハンドラーは、 **updateassignments**関数を呼び出します。 この関数は、選択された各割り当てに適用される達成率の値を取得します。または、[達成率] テキストボックスが空の場合、この関数は、テーブル内の選択された各割り当ての達成率を取得します。 **Updateassignments**関数は、状態の更新を保存して送信し、結果についてのメッセージをページの下部に書き込みます。 
+- [**更新] ボタンの onClick** イベント ハンドラー **は****、updateAssignments 関数を呼び出** します。 この関数は、選択した各割り当てに適用される完全率の値を取得します。または、パーセントの完全なテキスト ボックスが空の場合、関数はテーブル内で選択した各割り当ての完了率を取得します。 **updateAssignments 関数** は、状態の更新を保存して送信し、結果に関するメッセージをページの下部に書き込みます。 
     
 ### <a name="procedure-3-to-create-the-javascript-functions"></a>手順 3. JavaScript 関数を作成するには
 
-1. Visual Studio で、App.config ファイルを開き、ファイル内のすべてのコンテンツを削除します。
+1. [Visual Studio] で、App.jsファイルを開き、ファイル内のすべてのコンテンツを削除します。
     
-2. グローバル変数とドキュメント**準備**イベントハンドラーを追加します。 **Document**オブジェクトは、jQuery 関数を使用してアクセスされます。 
+2. グローバル変数とドキュメント準備完了イベント **ハンドラーを** 追加します。 ドキュメント **オブジェクト** にアクセスするには、jQuery 関数を使用します。 
     
-   [テーブルヘッダー] チェックボックスの click イベントハンドラーは、チェックボックスのオン/オフ状態を設定します。 すべての行のチェックボックスが選択されている場合、またはすべてオフになっている場合は、[行のクリックイベントハンドラー] チェックボックスをオンにして、ヘッダーのチェックボックスの状態を設定します。 Click イベントハンドラーは、ページの下部にある結果メッセージも空の文字列に設定します。
+   [テーブル ヘッダーのクリック イベント ハンドラー] チェック ボックスは、行チェック ボックスのチェック状態を設定します。 すべての行チェック ボックスがオンまたはすべてクリアされている場合、行チェック ボックスの click イベント ハンドラーは、ヘッダー チェック ボックスのチェック状態を設定します。 click イベント ハンドラーは、ページの下部にある結果メッセージを空の文字列に設定します。
     
    ```js
     var projContext;
@@ -272,7 +272,7 @@ SharePoint アプリの Visual Studio テンプレートには、SharePoint ク�
     });
    ```
 
-3. クエリが成功した場合は**onGetUserNameSuccess**を呼び出す**getuserinfo**関数を追加します。 **OnGetUserNameSuccess**関数は、**キャプション**の段落の内容を、ユーザー名を含む表のキャプションに置き換えます。 
+3. クエリが **成功した場合** に **GetUserNameSuccess** を呼び出す getUserInfo 関数を追加します。 **onGetUserNameSuccess 関数** は、キャプション段落の内容を、ユーザー名を含む表のキャプションに置き換える。 
     
    ```js
         // Get information about the current user.
@@ -292,7 +292,7 @@ SharePoint アプリの Visual Studio テンプレートには、SharePoint ク�
         }
    ```
 
-4. 割り当てクエリが成功した場合は、 **onGetAssignmentsSuccess**を呼び出す**getAssignments**関数を追加します (手順5を参照)。 **Include**オプションは、指定されたフィールドのみを返すようにクエリを制限します。 
+4. **getAssignments** 関数を追加します。この関数は、割り当てクエリが成功した場合に **、onGetAssignmentsSuccess** (手順 5 を参照) を呼び出します。 [ **含める** ] オプションは、指定したフィールドのみを返すクエリを制限します。 
     
    ```js
     // Get the collection of assignments for the current user.
@@ -311,12 +311,12 @@ SharePoint アプリの Visual Studio テンプレートには、SharePoint ク�
     }
    ```
 
-5. **OnGetAssignmentsSuccess**関数を追加します。この関数は、テーブルに割り当てごとに行を追加します。 **Prevprojname**変数は、ある行が別のプロジェクトに対してかどうかを判断するために使用されます。 その場合は、プロジェクト名が太字のフォントで表示されます。指定しない場合、プロジェクト名は空の文字列に設定されます。 
+5. 表に **各割り当ての行を追加する onGetAssignmentsSuccess** 関数を追加します。 **prevProjName** 変数を使用して、行が別のプロジェクト用であるかどうかを判断します。 その場合、プロジェクト名は太字で表示されます。指定しない場合、プロジェクト名は空の文字列に設定されます。 
     
    > [!NOTE]
-   > JSOM には、 **Actualwork timespan**など、csom に含まれる**TimeSpan**プロパティは含まれていません。 代わりに、JSOM は、PS などのミリ秒数のプロパティを使用し[ます。StatusAssignment プロパティ (Actualwork milliseconds)](https://msdn.microsoft.com/library/736bce1e-f734-0efe-6c5f-e0e891ab00ef%28Office.15%29.aspx) 。 このプロパティを取得するメソッドは **、\_actualwork ミリ秒を取得**します。これは、整数値を返します。 > **get_actualWork**メソッドは、"3h" などの文字列を返します。 **Quickstatus**アプリではいずれの値も使用できますが、表示方法が異なります。 割り当てのクエリには両方のプロパティが含まれているため、デバッグ時に値をテストできます。 **Actualwork**変数を削除した場合は、割り当てクエリで**actualwork**プロパティを削除することもできます。 
+   > JSOM には **、CSOM** に含まれる TimeSpan プロパティ **(ActualWorkTimeSpan** など) は含まれています。 代わりに、JSOM は PS などのミリ秒単位のプロパティを使用 [します。StatusAssignment.actualWorkMilliseconds](https://msdn.microsoft.com/library/736bce1e-f734-0efe-6c5f-e0e891ab00ef%28Office.15%29.aspx) プロパティ。 そのプロパティを取得するメソッドは **、整数値を返す \_ actualWorkMilliseconds** を取得します。 > メソッドget_actualWork"3h" などの文字列を返します。  どちらの値も **QuickStatus アプリで使用** できますが、表示方法は異なります。 割り当てクエリには両方のプロパティが含まれるので、デバッグ中に値をテストできます。 actualWork 変数 **を削除した** 場合は、割り当てクエリ **で ActualWork** プロパティを削除することもできます。 
   
-   最後に、 **onGetAssignmentsSuccess**関数は、[**更新**] ボタンと [更新] ボタンをクリックし**て、click**イベントハンドラーを初期化します。 [**更新**] ボタンのテキスト値は、HTML コードで設定することもできます。 
+   最後に **、onGetAssignmentsSuccess** 関数は、[更新] ボタンと[更新] ボタンをクリック イベント ハンドラーで初期化します。 [更新] ボタンの **テキスト値** は、HTML コードでも設定できます。 
     
    ```js
         // Get the enumerator, iterate through the assignment collection, 
@@ -375,14 +375,14 @@ SharePoint アプリの Visual Studio テンプレートには、SharePoint ク�
         }
    ```
 
-6. [**更新**] ボタンの**updateassignments**クリックイベントハンドラーを追加します。 ユーザーがタスクの達成率の値を変更したり、[**達成**率] テキストボックスに値を追加したりすると、"60"、"60%"、"60%" などのさまざまな形式で値を入力することができます。 **Getnumericvalue**メソッドは、入力テキストの数値を返します。 
+6. Update ボタン **の updateAssignments** click イベント ハンドラーを **追加** します。 ユーザーがタスクの完了率の値を変更したり **、percentComplete** テキスト ボックスに値を追加したりすると、値は "60"、"60%"、"60%" などの複数の形式で入力できます。 **getNumericValue** メソッドは、入力テキストの数値を返します。 
     
    > [!NOTE]
-   > 運用環境で使用するように設計されているアプリでは、数値情報の入力値にフィールドの入力規則と追加のエラーチェックを含める必要があります。 
+   > 実稼働用に設計されたアプリでは、数値情報の入力値には、フィールドの検証と追加のエラー チェックが含まれる必要があります。 
   
-   **Updateassignments**の例には、基本的なエラーチェックが含まれています。ページの下部にある**メッセージ**の段落に情報が表示されます。更新クエリが成功した場合は緑色、入力エラーが発生した場合、または更新クエリが失敗した場合は赤になります。 
+   **updateAssignments** の例には、基本的なエラー チェックが含まれています。ページの下部にあるメッセージ段落に情報が表示されます。更新クエリが成功した場合は緑、入力エラーが発生した場合や更新クエリが失敗した場合は赤を表示します。 
     
-   **Submitallstatusupdates**メソッドを使用する前に、アプリは PS を使用してサーバーに更新を保存する必要があり**ます。Status割り当てコレクション. update**メソッド。 
+   **submitAllStatusUpdates** メソッドを使用する前に、アプリは PS を使用して更新プログラムをサーバーに保存する必要 **があります。StatusAssignmentCollection.update** メソッド。 
     
    ```js
         // Update all checked assignments. If the bottom percent complete field is blank,
@@ -444,9 +444,9 @@ SharePoint アプリの Visual Studio テンプレートには、SharePoint ク�
         }
    ```
 
-7. ホストプロジェクト Web App サイトの URL に**Sphosturl**クエリ文字列パラメーターを使用する**exittopwa**関数を追加します。 [タスク] ページに戻るには、 `"/Tasks.aspx"` URL にを追加します。 たとえば、 **Sphosturl**変数はに`https://ServerName/ProjectServerName/Tasks.aspx`設定します。
+7. サイトのホストの URL に **SPHostUrl** クエリ文字列パラメーターを使用する **exitToPwa** 関数をProject Web Appします。 [タスク] ページに戻る場合は  `"/Tasks.aspx"` 、URL に追加します。 たとえば **、spHostUrl** 変数はに設定されます  `https://ServerName/ProjectServerName/Tasks.aspx` 。
     
-   **Getquerystringparameter**関数は、 **quickstatus**ページの url を分割して、url オプションで指定されたパラメーターを抽出して返します。 ドキュメントの例を次に示し**ます。** **Quickstatus**ドキュメントの URL 値 (すべて1行)。 
+   **getQueryStringParameter** 関数は **、QuickStatus** ページの URL を分割して、URL オプションで指定されたパラメーターを抽出して返します。 ドキュメントの例を次に示 **します。QuickStatus** ドキュメント **の URL 値** (すべて 1 行目): 
     
    ```HTML
     https://app-ef98082fa37e3c.servername.officeapps.selfhost.corp.microsoft.com/pwa/
@@ -459,7 +459,7 @@ SharePoint アプリの Visual Studio テンプレートには、SharePoint ク�
             %2Eofficeapps%2Eselfhost%2Ecorp%2Emicrosoft%2Ecom%2Fpwa%2FQuickStatus
    ```
 
-   前の URL の場合、 **Getquerystringparameter**関数は**sphosturl**クエリ文字列値を`https://ServerName/pwa`返します。 
+   前の URL では **、getQueryStringParameter** 関数は **SPHostUrl** クエリ文字列値を返します  `https://ServerName/pwa` 。 
     
    ```js
         // Exit the QuickStatus page and go back to the Tasks page in Project Web App.
@@ -482,17 +482,17 @@ SharePoint アプリの Visual Studio テンプレートには、SharePoint ク�
         }
    ```
 
-この時点で**Quickstatus**アプリを発行して Project Web app に追加すると、アプリは [サイトコンテンツ] ページから実行できるようになりますが、ユーザーが簡単に使用できるわけではありません。 ユーザーがアプリを見つけて実行できるようにするには、[タスク] ページのリボンにボタンを追加します。 手順4は、リボンのカスタムアクションを追加する方法を示しています。 
+この時点で **QuickStatus** アプリを発行し、Project Web App に追加した場合、アプリは [サイト コンテンツ] ページから実行できますが、ユーザーが簡単に使用できません。 ユーザーがアプリを見つけて実行するために、[タスク] ページのリボンにボタンを追加できます。 手順 4 は、リボン のカスタム アクションを追加する方法を示しています。 
 
 <a name="pj15_StatusingApp_ribbon"> </a>
 
 ### <a name="adding-a-ribbon-custom-action"></a>リボンのカスタム操作の追加
 
-Project Web App のリボンタブ、グループ、コントロールは、pwaribbon.xml ファイルで指定されています。このファイルは`[Program Files]\Common Files\Microsoft Shared\Web Server Extensions\15\TEMPLATE\FEATURES\PWARibbon\listtemplates` 、project Server を実行しているコンピュータ上のディレクトリにインストールされます。 Project Web App のリボンのカスタムアクションを設計するために、Project 2013 SDK のダウンロードには pwaribbon.xml のコピーが含まれています。 
+リボン タブ、グループ、およびコントロールは、Project Web App Server を実行しているコンピューターのディレクトリにインストールされている pwaribbon.xml ファイル `[Program Files]\Common Files\Microsoft Shared\Web Server Extensions\15\TEMPLATE\FEATURES\PWARibbon\listtemplates` でProjectされます。 2013 SDK のダウンロードには、Project Web Appリボンのカスタム アクションを設計Project 2013 SDK のダウンロードには、pwaribbon.xml。 
   
-Project Web App では、[タスク] ページにさまざまなリボン定義が使用されています。これは、Project Web App インスタンスが、タイムシートとタスクの状態の両方の値を入力できるようにする単一入力モードを使用するかどうかによって異なります。 Project Web App の管理アクセス許可を持っている場合は、エントリモードを確認するには、ページの右上隅にあるドロップダウン設定メニューで [ **PWA 設定**] を選択します。 [PWA 設定] ページで、[**タイムシートの設定および既定値**] を選択し、ページの下部にある [**単一入力モード**] チェックボックスを確認します。 
+Project Web Appは、Project Web App インスタンスでタイムシートとタスクの状態の両方の値を入力できる単一入力モードを使用するかどうかに応じて、[タスク] ページで異なるリボン定義を使用します。 Project Web App の管理アクセス許可がある場合は、エントリ モードを決定するには、ページの右上隅にあるドロップダウン設定メニューで **[PWA 設定]** を選択します。 [PWA 設定] ページで、[タイムシート] 設定 **と [** 既定値] を選択し、ページの下部にある [単一エントリ モード] チェック ボックスをオンにします。 
   
-単一入力モードがオフの場合、[タスク] ページのリボンは pwaribbon.xml の [自分の作業] 領域で定義されます。 
+単一入力モードがオフの場合、[タスク] ページのリボンは、[タスク] ページの [自分の作業] 領域pwaribbon.xml。 
   
 ```XML
    <!-- REGION My Work Ribbon-->
@@ -501,7 +501,7 @@ Project Web App では、[タスク] ページにさまざまなリボン定義�
       . . .
 ```
 
-単一入力モードがオンの場合、[タスク] ページのリボンは pwaribbon.xml の [結び付けられたモード] 領域で定義されます。 
+単一エントリ モードがオンの場合、[タスク] ページリボンは、次の項目の [タイド モード] 領域pwaribbon.xml。 
   
 ```XML
    <!-- REGION Tied Mode Ribbon-->
@@ -510,34 +510,34 @@ Project Web App では、[タスク] ページにさまざまなリボン定義�
       . . .
 ```
 
-各地域のグループとコントロールは似ていますが、結合されたモードのコントロールは、非連結モードの同じコントロールとは別の関数を呼び出すことができます。 手順4は、単一入力モードがオフのときに**Quickstatus**アプリにボタンコントロールを追加する方法を示しています ([**単一入力モード**] チェックボックスをオフにします)。 
+各領域のグループとコントロールは似ていますが、タイド モードのコントロールは、非タイド モードの同じコントロールとは異なる関数を呼び出す場合があります。 手順 4 は、シングル エントリ モードがオフのときに **QuickStatus** アプリのボタン コントロールを追加する方法を示しています ([単一エントリ **モード]** チェック ボックスはオフです)。 
   
 > [!NOTE]
-> SharePoint アプリケーションのリボンまたはメニューにカスタムアクションを追加する方法の概要については、「 [sharepoint 用アプリを使用して展開するカスタムアクションを作成する](https://msdn.microsoft.com/library/jj163954.aspx)」を参照してください。 
+> リボンまたは SharePoint アプリケーションのメニューにカスタム アクションを追加する方法の一般的な情報については、「カスタム アクションを作成して、SharePoint 用アプリを使用して展開[する」を参照してください](https://msdn.microsoft.com/library/jj163954.aspx)。 
   
-### <a name="procedure-4-to-add-a-ribbon-custom-action-to-the-tasks-page"></a>手順 4. [タスク] ページにリボンカスタムアクションを追加するには
+### <a name="procedure-4-to-add-a-ribbon-custom-action-to-the-tasks-page"></a>手順 4. リボン のカスタム アクションを [タスク] ページに追加するには
 
-1. Project Web App の [タスク] ページでリボンを調べます。 リボンの [**タスク**] タブを選択し、その変更方法を計画します。 **提出**、**タスク**、**期間**など、7つのグループがあります。 **Submit**グループには、[**保存**] ボタンと [**送信の状態**] ドロップダウンメニューという2つのコントロールがあります。 グループ内の任意の場所にコントロールを追加したり、[**タスク**] タブの任意の場所に新しいコントロールを含むグループを追加したり、ユーザー設定のグループとコントロールを持つ別のリボンタブを追加したりできます。 この例では、3番目のボタンを**Submit**グループに追加します。ここでは、ボタンが**QUICKSTATUS**アプリの URL を呼び出します。 
+1. [タスク] ページのリボンを確認Project Web App。 リボンの **[タスク]** タブを選択し、変更方法を計画します。 Submit、Tasks、Period など、7 **つのグループ****があります**。 送信 **グループには** 、[保存] ボタンと **[** 状態の送信] ドロップダウン メニューの **2** つのコントロールがあります。 グループ内の任意の場所にコントロールを追加したり、[ **タスク** ] タブの任意の場所に新しいコントロールを含むグループを追加したり、カスタム グループとコントロールを持つ別のリボン タブを追加することができます。 この例では、Submit グループに 3番目のボタンを追加します。このボタンは QuickStatus アプリの URL **を呼び出** します。 
     
-2. Visual Studio の [**ソリューションエクスプローラー** ] ウィンドウで、 **quickstatus**プロジェクトを右クリックして、新しいアイテムを追加します。 [**新しいアイテムの追加**] ダイアログボックスで、[**リボンのカスタムアクション**] を選択します (図4を参照)。 たとえば、ユーザー設定アクションの "Ribbonquick" アクションに名前を指定し、[**追加**] を選択します。
+2. [ソリューション **エクスプローラー] ウィンドウ** Visual Studio **QuickStatus** プロジェクトを右クリックし、新しいアイテムを追加します。 [新しい **アイテムの追加] ダイアログ** ボックスで、[リボン カスタム アクション] を **選択します** (図 4 を参照)。 たとえば、カスタム アクションに RibbonQuickStatusAction という名前を付け、[追加] を **選択します**。
     
-   **図4リボンのカスタムアクションを追加する**
+   **図 4.リボン のカスタム アクションの追加**
 
    ![リボンのカスタム操作の追加](media/pj15_CreateStatusingApp_AddRibbonCustomAction.gif "リボンのカスタム操作の追加")
   
-3. [**リボンのカスタムアクションの作成**] ウィザードの最初のページで、 **[ホスト Web** ] オプションが選択されたままにして、カスタムアクションのスコープのドロップダウンリストで [**なし**] を選択し、[**次へ**] を選択します (図5を参照)。 ドロップダウンリスト内の項目は、Project Server ではなく、SharePoint に関連しています。 カスタムアクションの生成された XML の大部分は、Project Server に適用されるように置き換えられます。 
+3. リボンのカスタム アクションの作成ウィザードの最初のページで、[**ホスト Web]** オプションを選択したままにし、カスタム アクション スコープのドロップダウン リストで [なし] を選択し、[次へ] を選択します **(図** 5 を参照)。 ドロップダウン リスト内のアイテムは、サーバーのSharePointにProjectされます。 カスタム アクションに対して生成された XML のほとんどを置き換え、その XML がサーバーに適用Projectします。 
     
-   **図5リボンのカスタムアクションのプロパティを指定する**
+   **図 5.リボン のカスタム アクションのプロパティを指定する**
 
    ![リボンのカスタム アクションにプロパティを指定](media/pj15_CreateStatusingApp_RibbonCustomAction2.gif "リボンのカスタム アクションにプロパティを指定")
   
-4. [**リボンのカスタムアクションの作成**] ウィザードの次のページで、設定のすべての既定値をそのまま使用し、[**完了**] を選択します (図6を参照)。 Visual Studio は、要素 .xml ファイルを含む**Ribbonquickstatusaction**フォルダーを作成します。 
+4. [リボン用カスタム アクションの作成] ウィザードの次のページで、設定のすべての既定値を残し、[完了] を選択します **(図** 6 を参照)。 Visual Studioを含む **RibbonQuickStatusAction** フォルダーをElements.xmlします。 
     
-   **図6ボタンコントロールの設定を指定する**
+   **図 6.ボタン コントロールの設定を指定する**
 
    ![ボタン コントロールに設定を指定](media/pj15_CreateStatusingApp_RibbonCustomAction3.gif "ボタン コントロールに設定を指定")
   
-5. リボンカスタムアクションの要素 .xml ファイルで、既定で生成されたコードを変更します。 既定の XML コードは次のとおりです。
+5. リボン カスタム アクションの既定Elements.xmlコードを変更します。 既定の XML コードを次に示します。
     
    ```XML
     <?xml version="1.0" encoding="utf-8"?>
@@ -572,9 +572,9 @@ Project Web App では、[タスク] ページにさまざまなリボン定義�
     </Elements>
    ```
 
-   1. **CustomAction**要素で、 **Sequence**属性と**Title**属性を削除します。 
+   1. **CustomAction 要素で****、Sequence** 属性と Title 属性を **削除** します。 
     
-   2. **送信**グループにコントロールを追加するには、pwaribbon.xml ファイル内の`Ribbon.ContextualTabs.MyWork.Home.Groups`コレクションの最初のグループ (を開始する要素) を検索`<Group Id="Ribbon.ContextualTabs.MyWork.Home.Page" Command="PageGroup" Sequence="10" Title="$Resources:pwafeatures,PAGE_PDP_CM_SUBMIT"`します。 子コントロールを**送信**グループに追加するために、次のコードは、Elements ファイル内の/////////////////の正しい**場所**の属性を**示してい**ます。 
+   2. Submit グループにコントロールを追加するには、コレクション内の最初のグループを pwaribbon.xml ファイル (開始する要素) `Ribbon.ContextualTabs.MyWork.Home.Groups` で検索します `<Group Id="Ribbon.ContextualTabs.MyWork.Home.Page" Command="PageGroup" Sequence="10" Title="$Resources:pwafeatures,PAGE_PDP_CM_SUBMIT"` 。 子コントロールを **Submit** グループに追加するには、次のコードは、コマンド ファイル内の **CommandUIDefinition** 要素の正しい Location 属性Elements.xmlします。 
     
       ```XML
         <CommandUIDefinitions>
@@ -584,7 +584,7 @@ Project Web App では、[タスク] ページにさまざまなリボン定義�
         </CommandUIDefinitions>
       ```
 
-   3. 子**Button**要素の属性値を次のように変更します。 
+   3. 子 Button 要素の属性値を次 **のように** 変更します。 
     
        ```XML
             <Button Id="Ribbon.ContextualTabs.MyWork.Home.Page.QuickStatus"
@@ -603,15 +603,15 @@ Project Web App では、[タスク] ページにさまざまなリボン定義�
                     ToolTipDescription="Run the QuickStatus app" />
        ```
 
-       - このボタンをグループ内の3番目のコントロールにするには、 **Sequence**属性に既存の`Sequence="20"` **送信状態**コントロール (pwaribbon.xml の**FlyoutAnchor**要素) の値よりも大きい数値を指定します。 規則によって、グループとコントロールのシーケンス番号`10, 20, 30, …`がで、要素を中間位置に挿入できるようになります。
+       - グループ内の 3 番目のコントロールをボタンに設定するには **、Sequence** 属性を既存の [状態の送信] コントロールの値 (pwaribbon.xml の `Sequence="20"` **FlyoutAnchor** 要素) よりも任意の数値にできます。  規則により、グループとコントロールのシーケンス番号は、中間位置に要素を  `10, 20, 30, …` 挿入することができます。
     
-       - **Command**属性には、コマンドを指定します。このコマンド**は、コマンド**を指定します (次の手順5を参照)。 次の開発者にとって簡単になるように、コマンド名を簡略化することができます。 たとえば`Command="Invoke_QuickStatus"` 、より`Command="Invoke_RibbonQuickStatusActionButtonRequest"`読みやすくなります。
+       - **Command 属性** は **、CommandUIHandler** 要素で実行するコマンドを指定します (次の手順 5.d を参照)。 コマンド名を簡略化して、次の開発者が簡単に実行できます。 たとえば、  `Command="Invoke_QuickStatus"` より簡単に読み取りが可能です  `Command="Invoke_RibbonQuickStatusActionButtonRequest"` 。
     
-       - イメージ属性は、16 x 16 ピクセルアイコンと、ボタンコントロールの 32 x 32 ピクセルアイコンを指定します。 既定の要素 .xml ファイルで、 `Image32by32="_layouts/15/images/placeholder32x32.png"`オレンジ色のドットを指定します。 Project Server を実行しているコンピューターの`[Program Files]\Common Files\Microsoft Shared\Web Server Extensions\15\TEMPLATE\LAYOUTS\1033\IMAGES`ディレクトリにインストールされているイメージマップファイル (ps16x16 および ps32x32) からアイコンを抽出することができます。 たとえば、32 x 32 ピクセルのアイコンは、左から10番目のアイコン、ps32x32 イメージマップの上部から10行下にスクロールされます (アイコンの上部は9行目の末尾の後、9行は32ピクセル/行 = 288 ピクセルです)。 
+       - 画像属性は、ボタン コントロールの 16 x 16 ピクセル アイコンと 32 x 32 ピクセル のアイコンを指定します。 既定の既定のElements.xml、  `Image32by32="_layouts/15/images/placeholder32x32.png"` オレンジ色のドットを指定します。 サーバーを実行しているコンピューターのディレクトリにインストールされているイメージ マップ ファイル (ps16x16.png および ps32x32.png) からアイコンを `[Program Files]\Common Files\Microsoft Shared\Web Server Extensions\15\TEMPLATE\LAYOUTS\1033\IMAGES` Projectできます。 たとえば、32 x 32 ピクセルのアイコンは、ps32x32.png イメージ マップの上端から左から 10 行目のアイコンの 2 列目に表示されます (アイコンの上部は 9 行目の終わりの後、9 行 x 32 ピクセル/行 = 288 ピクセル)。 
     
-       - [ボタン] コントロールのツールヒントを表示するには、 **ToolTipTitle**属性と**ToolTipDescription**属性を追加します。 
+       - ボタン コントロールのツール ヒントを表示するには **、ToolTipTitle** 属性と **ToolTipDescription 属性を追加** します。 
     
-    4. //または**Ihandler**要素の属性を変更します。 たとえば、 **command**属性が**Button**要素の**コマンド**属性値と一致することを確認します。 **Commandaction**属性に`~appWebUrl`は、 **QUICKSTATUS** web ページの URL のプレースホルダーがあります。 リボンボタンが**Quickstatus**アプリを起動すると、 **{standardtokens}** トークンは、 **sphosturl**、 **SPLanguage**、 **Sphosturl**、 **sphosturl**、および**SPAppWebUrl**を含む URL オプションに置き換えられます。
+    4. **CommandUIHandler 要素の属性を変更** します。 たとえば **、Command** 属性が **Button** 要素の **Command** 属性値と一致する必要があります。 **CommandAction 属性** の場合 `~appWebUrl` は **、QuickStatus** Web ページの URL のプレースホルダーです。 リボン ボタンが **QuickStatus** アプリを呼び出すと **、{StandardTokens}** トークンが SPHostUrl、SPLanguage、SPClientTag、SPProductNumber、および **SPAppWebUrl** を含む URL オプションに置き換えられる。    
     
         ```XML
             <CommandUIHandlers>
@@ -620,184 +620,184 @@ Project Web App では、[タスク] ページにさまざまなリボン定義�
             </CommandUIHandlers>
         ```
 
-6. **ソリューションエクスプローラー**で、 **Feature1**デザイナーを開き、[ソリューション] ウィンドウ**内の項目**から [機能] ウィンドウ内の**項目**に [ **ribbonquickstatusaction** ] アイテムを移動します。 その**後、パッケージデザイナーを**開くと、[パッケージ] ウィンドウの**項目**に [ **ribbonquickstatusaction** ] アイテムが表示されます。 
+6. ソリューション **エクスプローラーで****、Feature1.feature** デザイナーを開き **、RibbonQuickStatusAction** アイテムを[ソリューション] ウィンドウの [アイテム] から [機能] ウィンドウの [アイテム]**に移動** します。 その後 **、Package.package** デザイナーを開いた場合 **、RibbonQuickStatusAction** アイテムが [パッケージ] ウィンドウの **[アイテム] に表示** されます。 
     
-アプリの開発とリボンボタンの追加では、通常、アプリをテストし、デバッグのために JavaScript コードでブレークポイントを設定します。 **F5**キーを押してデバッグを開始すると、Visual Studio によってアプリがコンパイルされ、 **quickstatus**プロジェクトの [**サイト URL** ] プロパティで指定されたサイトに展開され、アプリを信頼するかどうかを確認するページが表示されます。 作業を続行して**Quickstatus**アプリを終了すると、Project Web app の [タスク] ページに戻ります。 
+アプリを開発し、リボン ボタンを追加すると、通常はアプリをテストし、デバッグ用の JavaScript コードにブレークポイントを設定します。 **F5** キーを押してデバッグを開始すると、Visual Studio はアプリをコンパイルし **、QuickStatus** プロジェクトの **Site URL** プロパティで指定されたサイトに展開し、アプリを信頼するかどうかを確認するページを表示します。 **QuickStatus** アプリを続行して終了すると、アプリの [タスク] ページにProject Web App。 
 
 > [!NOTE]
-> 図7は、リボンの [**タスク**] タブの [**クイック状態**] ボタンが無効になっていることを示しています。 Visual Studio を使用して多数のデバッグを展開した後、同じテストサーバーで発行済みアプリのデバッグまたは展開を続行するときに、カスタムリボンコントロールをブロックすることができます。 このボタンを有効にするには、Visual Studio の [ **Ribbonquickstatusaction アクション**アイテムを削除してから、名前と ID が異なる新しいリボンアクションを作成します。 それでも問題が解決しない場合は、Project Web App テストインスタンスからアプリを削除してから、別のアプリ ID を使用してアプリを再作成してみてください。 
+> 図 7 は、リボン **の [タスク** ] タブの [ **クイック** 状態] ボタンが無効になっている状態を示しています。 Visual Studioを使用して多くのデバッグ展開を行った後、発行済みアプリを同じテスト サーバーでデバッグまたは展開し続ける場合、カスタム リボン コントロールをブロックできます。 ボタンを有効にするには、Visual Studio で **RibbonQuickStatusAction** アイテムを削除し、別の名前と ID を持つ新しいリボン アクションを作成します。 それでも問題が解決しない場合は、Project Web App テスト インスタンスからアプリを削除し、別のアプリ ID でアプリを再作成してください。 
   
-**図7無効になっているクイック状態ボタンのツールヒントの表示**
+**図 7.無効にした [クイック状態] ボタンのヒントを表示する**
 
 ![無効化されているボタンのツールチップの表示](media/pj15_CreateStatusingApp_ButtonToolTipDisabled.gif "無効化されているボタンのツールチップの表示")
   
-手順5は、 **Quickstatus**アプリを展開してインストールする方法を示しています。 手順6は、アプリをインストールした後にテストするための追加の手順を示しています。 
+手順 5 は、QuickStatus アプリを展開して **インストールする方法を示** しています。 手順 6 では、アプリをインストールした後にアプリをテストする手順を示します。 
 
 <a name="pj15_StatusingApp_Deploying"> </a>
 
 ## <a name="deploying-the-quickstatus-app"></a>QuickStatus アプリの展開
 
-SharePoint web アプリケーション (Project Web App など) にアプリを展開するには、いくつかの方法があります。 どの展開を使用するかは、アプリをプライベート SharePoint カタログに発行するか、パブリック Office ストアに発行するか、または SharePoint がオンプレミスでインストールされるか、またはオンラインテナントであるかによって決まります。 手順5は、 **Quickstatus**アプリをプライベートアプリカタログの社内インストールに展開する方法を示しています。 詳細については、「 [Install and manage apps For sharepoint 2013](https://technet.microsoft.com/library/fp161232.aspx) 」および「 [sharepoint 用アプリを発行](https://msdn.microsoft.com/library/jj164070.aspx)する」を参照してください。
+アプリを web アプリケーションに展開する方法は、SharePointなど、いくつかの方法Project Web App。 使用する展開は、アプリをプライベート SharePoint カタログに発行するか、パブリック Office ストアに発行するか、SharePoint がオンプレミスにインストールされているのか、オンライン テナンシーなのかによって異なっています。 手順 5 は、プライベート アプリ カタログ内のオンプレミス インストールに **QuickStatus** アプリを展開する方法を示しています。 詳細については、「Install [and manage apps for SharePoint 2013」](https://technet.microsoft.com/library/fp161232.aspx)および[「Publish apps for SharePoint](https://msdn.microsoft.com/library/jj164070.aspx)
   
 > [!NOTE]
-> SharePoint カタログにアプリを追加するには、SharePoint 管理者権限が必要です。 
+> アプリをカタログに追加するには、SharePointアクセスSharePoint必要があります。 
   
 ### <a name="procedure-5-to-deploy-the-quickstatus-app"></a>手順 5. QuickStatus アプリを展開するには
 
-1. Visual Studio で、すべてのファイルを保存し、**ソリューションエクスプローラー**で**quickstatus**プロジェクトを右クリックして、[**発行**] を選択します。
+1. [Visual Studio、すべてのファイルを保存し、ソリューション エクスプローラーで **QuickStatus** プロジェクトを右クリックし、[**発行]** を **選択します**。
     
-2. **Quickstatus**アプリは SharePoint ホストされているため、発行に関するオプションはほとんどありません (図8を参照)。 [ **Office 用アプリと SharePoint 用アプリの発行**] ダイアログボックスで、[**完了**] を選択します。
+2. **QuickStatus アプリは** ホストSharePointので、発行のオプションは非常に少ない (図 8 を参照)。 [アプリの **公開とOfficeとSharePoint]** ダイアログ ボックスで、[完了] を **選択します**。
     
-   **図8QuickStatus アプリの発行**
+   **図 8.QuickStatus アプリの発行**
 
    ![公開ウィザードの使用](media/pj15_CreateStatusingApp_PublishWizard.gif "公開ウィザードの使用")
   
-3. QuickStatus. app ファイルを、 `~\QuickStatus\bin\Debug\app.publish\1.0.0.0`ディレクトリからローカルコンピューター上の便利なディレクトリ (またはオンプレミスのインストールの場合は SharePoint コンピューター) にコピーします。 
+3. ディレクトリから QuickStatus.app ファイルをローカル コンピューターの便利なディレクトリ (またはオンプレミス インストール用SharePointコンピューターに `~\QuickStatus\bin\Debug\app.publish\1.0.0.0` コピーします。 
     
-4. SharePoint サーバーの全体管理で、サイドリンクバーの [**アプリ**] を選択し、[**アプリカタログの管理**] を選択します。
+4. [SharePoint管理] で、[クイック 起動 **]** で [アプリ] を選択し、[アプリ カタログの管理 **] を選択します**。
     
-5. アプリカタログが存在しない場合は、「 [SharePoint 2013 でアプリカタログを管理](https://technet.microsoft.com/library/fp161234.aspx)する」の「 *Web アプリケーションのアプリカタログサイトを構成*する」セクションに従って、アプリカタログのサイトコレクションを作成します。
+5. アプリ カタログが存在しない場合は、「SharePoint [2013](https://technet.microsoft.com/library/fp161234.aspx)でアプリ カタログを管理する」の *「Web* アプリケーションのアプリ カタログ サイトを構成する」セクションに従って、アプリ カタログのサイト コレクションを作成します。
     
-   アプリカタログが存在する場合は、[アプリカタログの管理] ページでサイトの URL に移動します。 たとえば、次の手順では、アプリカタログサイトは`https://ServerName/sites/TestApps`です。
+   アプリ カタログが存在する場合は、[アプリ カタログの管理] ページのサイト URL に移動します。 たとえば、次の手順では、アプリ カタログ サイトは  `https://ServerName/sites/TestApps` です。
     
-6. [アプリカタログ] ページで、サイドリンクバーの [ **SharePoint 用アプリ**] を選択します。 [SharePoint 用アプリ] ページのリボンの [**ファイル**] タブで、[**ドキュメントのアップロード**] を選択します。
+6. アプリ カタログ ページで、[クイック起動] で [アプリ **SharePoint** を選択します。 [アプリの作成SharePoint] ページで、リボンの **[FILES]** タブで、[ドキュメント]**アップロードします**。
     
-7. [**ドキュメントの追加**] ダイアログボックスで、quickstatus. app ファイルを参照し、そのバージョンのコメントを追加して、[ **OK]** を選択します。
+7. [ドキュメント **の追加] ダイアログ** ボックスで、QuickStatus.app ファイルを参照し、バージョンのコメントを追加し **、[OK] を選択します**。
     
-8. アプリを追加するときに、アプリの説明、アイコン、およびその他の情報のローカル情報を追加することもできます。 [ **Sharepoint 用アプリ-QuickStatus. app** ] ダイアログボックスで、アプリに対して表示する情報を sharepoint サイトコレクションに追加します。 たとえば、次の情報を追加します。 
+8. アプリを追加するときに、アプリの説明、アイコン、その他の情報のローカル情報を追加することもできます。 [アプリ **のSharePoint -** QuickStatus.app] ダイアログ ボックスで、アプリに表示する情報をサイト コレクションのSharePointします。 たとえば、次の情報を追加します。 
     
-   1. **簡単な説明**フィールド: 「Quick Status test app」と入力します。
+   1. **[短い説明** ] フィールド: 「クイック 状態テスト アプリ」と入力します。
     
-   2. **説明**フィールド: 複数のプロジェクトのタスクの達成率を更新するには、「テストアプリ」と入力します。
+   2. **[説明** ] フィールド: 複数のプロジェクトのタスクの完了率を更新するテスト アプリと入力します。
     
-   3. **アイコンの URL**フィールド: アプリカタログのサイトアセットにアプリアイコン用の 96 x 96 ピクセルのイメージを追加します。 たとえば、に`https://ServerName/sites/TestApps`移動して、[**設定**] ドロップダウンメニューの [**サイトコンテンツ**] を選択し、[**サイトアセット**] を選択してから、quickstatusapp イメージを追加します。 **Quickstatusapp**アイテムを右クリックし、[**プロパティ**] を選択して、[**プロパティ**] ダイアログボックスで**アドレス (URL)** 値をコピーします。 たとえば、[アイコン`https://ServerName/sites/TestApps/SiteAssets/QuickStatusApp.png`の**URL**の web アドレス] フィールドに値をコピーして貼り付けます。 アイコンの説明を入力します (図9のように)、「簡易状態 app アイコン」と入力します。 URL が有効であることをテストします。
+   3. **アイコン URL** フィールド: アプリ カタログのサイト アセットにアプリ アイコンの 96 x 96 ピクセルの画像を追加します。 たとえば、[サイトのコンテンツ] ドロップダウン メニューで [サイトコンテンツ] 設定を選択し、[サイトアセット] を選択し、次にquickStatusApp.png `https://ServerName/sites/TestApps` します。    **quickStatusApp アイテムを右クリック** し、[プロパティ]**を選択し**、[プロパティ] ダイアログ ボックスでアドレス **(URL)** の値 **を** コピーします。 たとえば、アイコンの URL Web アドレス フィールドに値を `https://ServerName/sites/TestApps/SiteAssets/QuickStatusApp.png` コピーして貼り付けます。  アイコンの説明 (図 9 のように) を入力し、「QuickStatus アプリ アイコン」と入力します。 URL が有効なテストを行います。
     
-      **図9QuickStatus アプリのアイコン URL を追加する**
+      **図 9.QuickStatus アプリのアイコン URL の追加**
 
       ![SharePoint でのアプリのプロパティの設定](media/pj15_CreateStatusingApp_AddAppToSharePointSettings.gif "SharePoint でのアプリのプロパティの設定")
   
-   4. **Category**フィールド: 既存のカテゴリを選択するか、独自の値を指定します。 たとえば、「Statusing」と入力します。
+   4. **[カテゴリ** ] フィールド: 既存のカテゴリを選択するか、独自の値を指定します。 たとえば、「Statusing」と入力します。
     
       > [!NOTE]
-      > **Statusing**という名前のカテゴリは、テスト目的でのみ使用されます。 Project Server アプリの一般的なカテゴリは**プロジェクト管理**です。 
+      > Statusing という **名前のカテゴリ** は、テスト目的のためだけのカテゴリです。 サーバー アプリの一般的なProjectは、[管理 **Projectです**。 
   
-   5. [**発行元の名前**] フィールド: 発行元の名前を入力します。 この例では、「Project SDK」と入力します。
+   5. **Publisher名フィールド**: 発行元の名前を入力します。 この例では、「SDK」とProjectします。
     
-   6. **有効になっている**フィールド: アプリを Project Web app サイト管理者がインストールできるようにするには、[**有効**] チェックボックスをオンにします。 
+   6. **[有効**] フィールド: アプリをサイト管理者がインストールProject Web App表示するには、[有効] チェック **ボックスを** オンにします。 
     
-   7. その他のフィールドは省略可能です。 たとえば、[アプリの詳細] ページのサポート URL と複数のヘルプイメージを追加できます。 図9では、**画像 url 1**フィールドには、アプリのスクリーンショットの url とスクリーンショットの説明が含まれています。 
+   7. 追加のフィールドはオプションです。 たとえば、アプリの詳細ページにサポート URL と複数のヘルプ イメージを追加できます。 図 9 では、[ **画像 URL 1]** フィールドには、アプリのスクリーンショットの URL とスクリーンショットの説明が含まれています。 
     
-   8. [ **SharePoint 用アプリ-quickstatus** ] ダイアログボックスで、[**保存**] を選択します。 図9では、SharePoint 用アプリライブラリの**クイックステータス更新**アイテムが編集用にチェックアウトされているので、ダイアログボックスのリボンの [**編集**] タブで、[**チェックイン**] を選択してプロセスを完了します (図10を参照)。 
+   8. [アプリの **保存SharePoint - QuickStatus.app]** ダイアログ ボックスで、[保存] を **選択します**。 図 9 では、[SharePoint 用アプリ] ライブラリの [クイック状態更新] アイテムが編集用にチェックアウトされているので、ダイアログ ボックス リボンの[**編集**] タブで [チェックイン] を選択してプロセスを完了します (図 10 を参照)。 
     
-      **図10QuickStatus アプリが SharePoint 用アプリライブラリに追加されます。**
+      **図 10.QuickStatus アプリは、アプリ ライブラリ用アプリにSharePointされます。**
 
       ![SharePoint への QuickStatus アプリの追加](media/pj15_CreateStatusingApp_AddAppToSharePoint.gif "SharePoint への QuickStatus アプリの追加")
   
-9. Project Web App の [**設定**] ドロップダウンメニューで、[**アプリの追加**] を選択します。 [自分のアプリ] ページのサイドリンクバーで、[**組織から**] を選択し、**クイック進捗更新**アプリの [**アプリの詳細**] を選択します。 図11は、前の手順で追加したアプリアイコン、スクリーンショット、およびその他の情報を含む詳細ページを示しています。 
+9. [Project Web App] ドロップダウン **設定で**、[アプリの追加 **] を選択します**。 [アプリ] ページの [クイック起動]で、[組織から] を選択し、[クイック状態更新] アプリの [アプリの詳細 **] を選択** します。 図 11 は、前の手順で追加したアプリ アイコン、スクリーンショット、その他の情報を含む詳細ページを示しています。 
     
-   **図11Project Web App の [クイック進捗の更新の詳細] ページを使用する**
+   **図 11.クイック ステータス更新の詳細ページを使用Project Web App**
 
    ![Project Web App への QuickStatus アプリの追加](media/pj15_CreateStatusingApp_AddAppToPWA.gif "Project Web App への QuickStatus アプリの追加")
   
-10. [クイック進捗状況の更新の詳細] ページで、[**追加**] を選択します。 [Project Web App] QuickStatus アプリが実行できる操作の一覧を示すダイアログボックスが表示されます (図12を参照)。 操作の一覧は、Appmanifest.xml ファイルの**Apppermissionrequest**要素から派生します。 
+10. [クイック 状態の更新] 詳細ページで、[IT の追加 **] を選択します**。 Project Web App QuickStatus アプリで実行できる操作を一覧表示するダイアログ ボックスが表示されます (図 12 を参照)。 操作の一覧は、アプリケーション ファイル内の **AppPermissionRequest** 要素からAppManifest.xmlされます。 
     
-    **図12クイック進捗アプリを信頼するかどうかを確認する**
+    **図 12.クイック 状態アプリを信頼する確認**
 
     ![QuickStatus アプリへの信頼の検証](media/pj15_CreateStatusingApp_AddAppToPWA2Trust.gif "QuickStatus アプリへの信頼の検証")
   
-11. [**実行するクイック状態の更新**] ダイアログボックスで、[**信頼**する] を選択します。 [Project Web App サイトコンテンツ] ページにアプリが追加されます (図13を参照)。
+11. [クイック 状態 **の更新を信頼する** ] ダイアログ ボックスで、[信頼する] **を選択します**。 アプリが [サイト コンテンツ] ページProject Web App追加されます (図 13 を参照)。
     
-    **図13[サイトコンテンツ] ページでクイック進捗アプリを表示する**
+    **図 13.[サイト コンテンツ] ページでクイック 状態アプリを表示する**
 
     ![[サイト コンテンツ] に表示される QuickStatus アプリ](media/pj15_CreateStatusingApp_AddAppToPWA3.gif "[サイト コンテンツ] に表示される QuickStatus アプリ")
   
-[サイトコンテンツ] ページで、[**クイック進捗状況の更新**] アイコンを選択してアプリを実行できます。
+[サイト コンテンツ] ページで、[クイック状態更新] アイコンを **選択して** アプリを実行できます。
 
 > [!NOTE]
-> アプリに関する情報を提供するその他のコマンドについては、[サイトコンテンツ] ページで、**クイック進捗の更新**名と省略記号 (...) を含む地域を選択します。アプリの [概要] ページで、アプリのエラーに関する情報が含まれているアプリの詳細ページを表示したり、[アプリの権限] ページを確認したり、Project Web App からアプリを削除したりできます。 
+> アプリに関する情報を提供する追加のコマンドについては、[サイト コンテンツ] ページで、クイック状態更新名と省略記号 (...) を含む領域を選択します。アプリの [概要] ページを確認したり、アプリのエラーに関する情報を含む [アプリの詳細] ページを表示したり、アプリのアクセス許可ページを確認したり、アプリをアプリから削除Project Web App。 
   
-Project Web App の [タスク] ページ (図14を参照) で、リボンの [**クイック状態**] ボタンを有効にする必要があります。 [**クイック状態**] ボタンが無効になっている場合は、図7のメモに記載されている操作を試してみてください。 
+[タスク] ページProject Web App (図 14 を参照)、リボンで **[QuickStatus]** ボタンを有効にする必要があります。 [クイック **状態] ボタンが** 無効になっている場合は、図 7 のメモに記載されている操作を試してください。 
 
-**図14[タスク] タブから QuickStatus アプリを開始する**
+**図 14.[タスク] タブから QuickStatus アプリを起動する**
 
 ![[タスク] タブから QuickStatus アプリを起動](media/pj15_CreateStatusingApp_TasksRibbon.gif "[タスク] タブから QuickStatus アプリを起動")
   
-手順6は、QuickStatus アプリで実行するいくつかのテストを示しています。
+手順 6 は、QuickStatus アプリで行うテストを示しています。
 
 <a name="pj15_StatusingApp_Testing"> </a>
 
 ## <a name="testing-the-quickstatus-app"></a>QuickStatus アプリのテスト
 
-ユーザーが**Quickstatus**アプリで試行するすべての操作は、アプリケーションを運用サーバーに展開する前に、または project Online の運用テナントにテストする前に、project Server のテストインストールでテストする必要があります。 テストインストールでは、実際のプロジェクトに影響を与えずに、ユーザーの割り当てを変更および削除できます。 また、テストには、管理者、プロジェクトマネージャー、チームメンバーなど、さまざまなアクセス許可のセットを持つ複数のユーザーが関与する必要があります。 完全なテストでは、アプリで行わなければならない変更を確認することができます。これは、開発中にテストされていませんでした。 手順6では、 **Quickstatus**アプリのいくつかのテストを示していますが、一連のテストは含まれていません。 
+ユーザーが **QuickStatus** アプリで試す可能性があるすべての操作は、運用サーバーまたは Project Online の運用テナントにアプリを展開する前に、Project Server のテスト インストールでテストする必要があります。 テスト インストールを使用すると、実際のプロジェクトに影響を与えることなく、ユーザーの割り当てを変更および削除できます。 テストには、管理者、プロジェクト マネージャー、チーム メンバーなど、さまざまなアクセス許可セットを持つ複数のユーザーも含まれる必要があります。 完全なテストでは、開発中のテストでは明らかではない、アプリで行う必要がある変更を明らかにできます。 手順 6 では **、QuickStatus** アプリのいくつかのテストを示しますが、網羅的な一連のテストは含めではありません。 
   
 ### <a name="procedure-6-to-test-the-quickstatus-app"></a>手順 6. QuickStatus アプリをテストするには
 
-1. ユーザーに割り当てられていない**Quickstatus**アプリを実行します。 アプリは、ページの下部に青色のメッセージを表示する必要があります。たとえば、**ユーザー名には割り当て**られていません。
+1. ユーザーに **割り当てがない QuickStatus** アプリを実行します。 アプリは、ページの下部に青いメッセージを表示する必要があります 。たとえば、ユーザー名には割り当 **てはありません**。
     
-   [**更新**] を選択すると、緑色の割り当てに対するメッセージの変更**が更新されまし**た。
+   [ **更新] を** 選択し、緑色の割り当てに対する **メッセージの変更が更新されました**。
     
    > [!NOTE]
-   > 割り当てがない場合に [**更新**] ボタンが無効になるように、アプリの動作を変更する必要があります。 
+   > 割り当てがない場合は、[ **更新** ] ボタンが無効になっていない場合は、アプリの動作を変更する必要があります。 
   
-2. 複数の異なるプロジェクトにユーザーが複数の割り当てを行っていて、一部の割り当てが完了していない場合は、アプリを実行します。 アプリの外観を確認し、次のようにアクションを実行します (図15を参照)。
+2. ユーザーが複数の異なるプロジェクトに複数の割り当てを持ち、一部の割り当てが完了していないアプリを実行します。 アプリの外観に注意し、次のようにアクションを実行します (図 15 を参照)。
     
-   1. **OnGetAssignmentsSuccess**関数は、現在のユーザーの割り当てごとに、テーブルに行を作成します。 プロジェクト名には、各プロジェクトの最初の割り当てに対して1回だけ、太字のフォントで表示されます。 
+   1. **onGetAssignmentsSuccess 関数** は、現在のユーザーの割り当てごとにテーブル内に行を作成します。 プロジェクト名は、各プロジェクトの最初の割り当てに対して、太字のフォントで 1 回だけ表示されます。 
     
-   2. [**タスク名**] 列の見出しのチェックボックスをオフにします。 [テーブルヘッダー] click イベントハンドラーは、タスク行の他のすべてのチェックボックスをオフにします。 
+   2. [タスク名] 列ヘッダーの **チェック ボックスを** オフにします。 テーブル ヘッダークリック イベント ハンドラーは、タスク行の他のすべてのチェック ボックスをクリアします。 
     
-   3. すべてのタスクを選択します。 各行の click イベントハンドラーは、すべての行が選択されているかどうかを判断し、その場合は、[**タスク名**] 列見出しを選択します。 
+   3. すべてのタスクを選択します。 各行の click イベント ハンドラーは、すべての行を選択するかどうかを決定し、選択した場合は[タスク名] 列ヘッダー **を** 選択します。 
     
-   4. 再びすべてのチェックボックスをオフにし、残りの作業を行う1つの割り当てを選択します。 たとえば、図15は、T1 が20% の残りの作業を完了したことを示しています。
+   4. もう一度すべてのチェック ボックスをオフにし、残りの作業時間がある割り当てを 1 つ選択します。 たとえば、図 15 は、完了する残りの作業時間が 20% のトップ タスク T1 を示しています。
     
-   5. [**達成率の設定**] テキストボックスに「80」と入力し、[**更新**] を選択します。 ページの下部に緑色のメッセージが表示され、**割り当てが更新されて**います。
+   5. [完了 **率の設定] テキスト** ボックスに「80」と入力し、[更新] を **選択します**。 ページの下部に緑色のメッセージが表示されます。 **割り当てが更新されています**。
     
-      **図15QuickStatus アプリの割り当てを更新する**
+      **図 15.QuickStatus アプリでの割り当ての更新**
 
       ![QuickStatus アプリでの割り当ての更新](media/pj15_CreateStatusingApp_Testing1Update.gif "QuickStatus アプリでの割り当ての更新")
   
-3. [**更新**] を選択します (図16を参照)。 すべてのタスクが再度選択され、上部のタスクは80% の完了を示します。 
+3. [ **更新] を** 選択します (図 16 を参照)。 すべてのタスクが再度選択され、トップ タスクに 80% 完了が表示されます。 
     
-      **図16[クイック進捗状況の更新] ページの更新**
+      **図 16.[クイック 状態の更新] ページの更新**
 
       ![QuickStatus ページの更新](media/pj15_CreateStatusingApp_Testing2Refresh.gif "QuickStatus ページの更新")
   
-4. すべてのチェックボックスをオフにしてから、別のタスクを選択します。 たとえば、[新しいタスク] を [ **PWA から**] を選択します。 [達成**率の設定**] テキストボックスは空のままにし、選択したタスクの **[達成率] 列の**すべてのテキストを削除して、[**更新**] を選択します。 両方のテキストボックスが空であるため、アプリでは赤いエラーメッセージが表示されます (図17を参照)。
+4. すべてのチェック ボックスをオフにし、別のタスクを選択します。 たとえば、[タスク] から **[新しいタスク] をPWA。** [ **完了率の設定] テキスト** ボックスを空のままにし、選択したタスクの **[** 完了率] 列のすべてのテキストを削除し、[更新] を **選択します**。 両方のテキスト ボックスが空なので、アプリには赤いエラー メッセージが表示されます (図 17 を参照)。
     
-      **図17エラーメッセージのテスト**
+      **図 17.エラー メッセージのテスト**
 
       ![エラー メッセージのテスト](media/pj15_CreateStatusingApp_Testing3Error.gif "エラー メッセージのテスト")
   
-5. 前のタスクを80% 完了に更新してから、[**終了**] を選択します。 **Exittopwa**関数は、ブラウザーウィンドウの場所を SharePoint ホストアプリケーションの [タスク] ページに変更します (つまり、URL https://ServerName/pwa/Tasks.aspx)はに変更されます)。 図18は、[ **T1**タスク] と [PWA タスク] の**新しいタスク**がそれぞれ80% 完了したことを示しています。 
+5. 前のタスクを 80% 完了に更新し、[終了] を **選択します**。 **exitToPwa** 関数は、ブラウザー ウィンドウの場所を、SharePoint ホスト アプリケーションの [タスク] ページに変更します (つまり、URL はに変更されます https://ServerName/pwa/Tasks.aspx) )。 図 18 は **、T1** タスクと新しいタスクがそれぞれ 80%**完了** PWA示しています。 
     
-      **図18Project Web App でタスクが更新されたことを確認する**
+      **図 18.タスクが更新されるのを確認するには、Project Web App**
 
       ![Project Web App で更新されたタスクを確認](media/pj15_CreateStatusingApp_TasksUpdatedInPWA.gif "Project Web App で更新されたタスクを確認")
   
-6. 更新された状態が Project Professional 2013 に表示される前に、変更を承認のために提出し、プロジェクトマネージャーが承認する必要があります。
+6. 更新された状態が 2013 年 2013 年Project Professionalに表示される前に、変更を承認のために提出し、プロジェクト マネージャーによって承認する必要があります。
     
-テストでは、使いやすさを向上させるために**Quickstatus**アプリで行うべきその他のいくつかの変更が明らかになります。 例:
+テストでは、使いやすさを向上させる目的で **QuickStatus** アプリで行う必要がある他のいくつかの変更が明らかです。 以下に例を示します。
 
-- エラーチェックとテキストボックス値の検証が追加されている必要があります。 現時点では、ユーザーは、達成率に数値以外の値または負の値を入力することができます。これにより、問題のないエラーメッセージが表示されます。 たとえば、負の値を指定すると、エラーメッセージは割り当ての更新時にエラーになります。 **PJClientCallableException: StatusingSetDataValueInvalid**。
+- テキスト ボックス値の追加のエラー チェックと検証が必要です。 現在、ユーザーは完全率に対して数値以外の値または負の値を入力できます。その結果、エラー メッセージが表示されます。 たとえば、負の値を指定すると、エラー メッセージはエラー更新の割り当て **: PJClientCallableException: StatusingSetDataValueInvalid です**。
     
-- 空白のテキストボックスに対するエラーメッセージには、行番号に加えて、プロジェクトとタスクを一覧表示することができます。
+- 空白のテキスト ボックスのエラー メッセージには、行番号に加えて、プロジェクトとタスクが一覧表示される可能性があります。
     
-- 成功メッセージには、更新されたタスクのリストを含めることができます。または、 **Updateassignments**関数が成功した場合は、自動ページ更新を実行し、更新されたタスクまたはパーセンテージを別の色と太字のフォントで表示することができます。 
+- 成功メッセージには、更新されたタスクの一覧が含まれる場合があります。 **updateAssignments** 関数が成功した場合は、ページの自動更新を実行し、更新されたタスクまたはパーセンテージを別の色と太字のフォントで表示できます。 
     
-- 非常に大きなテーブルを使用しないようにするには、割り当てのテーブルを、達成率が100% 未満のタスクに制限する必要があります。 または、すべてのタスクを表示するオプションを追加します。 この問題は、テーブルではなく、jQuery ベースのグリッドを使用して解決することができます。この場合、フィルター処理とグリッドページングを簡単に実装できます。
+- 非常に大きなテーブルを回避するには、割り当てのテーブルを 100% 未満のタスクに制限する必要があります。 または、すべてのタスクを表示するオプションを追加します。 この問題は、テーブルの代わりに jQuery ベースのグリッドを使用して解決することもできます。これにより、フィルター処理とグリッド ページングを簡単に実装できます。
     
-- **Quickstatus**アプリは状態を送信しないため、リボンの [**タスク**] タブの [**クイック状態**] アイコンは、**送信**グループの最後のアイコンではなく、**タスク**グループの最初のアイコンになります。 
+- **QuickStatus** アプリは状態を送信しないので、リボンの [**タスク**] タブの [クイック状態] アイコンは、送信グループの最後のアイコンではなく、タスク グループの最初のアイコンになります。 
     
-- **OnGetAssignmentsSuccess**関数は**btnsubmitupdate**ボタンのテキストを初期化しますが、その他のボタンテキスト値は HTML で初期化されるので、 **getAssignments**関数が実行されている間、ページは部分的に初期化された状態のままになります。 HTML でテキスト値がすべて初期化されている場合、ページ上のボタンの一貫性が向上します。 
+- **onGetAssignmentsSuccess** 関数は **btnSubmitUpdate** ボタン テキストを初期化しますが、他のボタンテキスト値は HTML で初期化されます **。getAssignments** 関数の実行中、ページは部分的に初期化された状態で残ります。 テキスト値がすべて HTML で初期化されている場合、ページ上のボタンの一貫性が高く表示されます。 
     
-最も重要なことは、 **Quickstatus**アプリが使用するアプローチで、割り当ての達成率が変更された場合は、運用アプリで修正する必要があることです。 詳細については、「[次の手順](#pj15_StatusingApp_NextSteps)」セクションを参照してください。 
+最も重要なのは **、QuickStatus** アプリが使用するアプローチであり、割り当ての完了率が変更される場合は、実稼働アプリで修正する必要があります。 詳細については、「次の手順 [」セクションを参照](#pj15_StatusingApp_NextSteps) してください。 
 
 <a name="pj15_StatusingApp_Example"> </a>
 
 ## <a name="example-code-for-the-quickstatus-app"></a>QuickStatus アプリのコード例
 
-### <a name="defaultaspx-file"></a>Default.aspx ファイルの既定値
+### <a name="defaultaspx-file"></a>Default.aspx ファイル
 
-次のコードは、 `Pages\Default.aspx` **quickstatus**プロジェクトのファイルにあります。 
+次のコードは  `Pages\Default.aspx` **、QuickStatus プロジェクトのファイルに含** まれます。 
   
 ```HTML
     <%-- The following lines are ASP.NET directives needed when using SharePoint components --%>
@@ -861,9 +861,9 @@ Project Web App の [タスク] ページ (図14を参照) で、リボンの [*
 
 <br/>
 
-### <a name="appjs-file"></a>アプリケーション .js ファイル
+### <a name="appjs-file"></a>App.js ファイル
 
-次のコードは、 `Scripts\App.js` **quickstatus**プロジェクトのファイルにあります。 
+次のコードは  `Scripts\App.js` **、QuickStatus プロジェクトのファイルに含** まれます。 
   
 ```js
     var projContext;
@@ -1060,7 +1060,7 @@ Project Web App の [タスク] ページ (図14を参照) で、リボンの [*
 
 ### <a name="appcss-file"></a>App.css ファイル
 
-次の CSS コードは、 `Content\App.css` **quickstatus**プロジェクトのファイルにあります。 
+次の CSS コードは  `Content\App.css` **、QuickStatus プロジェクトのファイルに含** まれます。 
   
 ```css
     /* Custom styles for the QuickStatus app. */
@@ -1135,9 +1135,9 @@ Project Web App の [タスク] ページ (図14を参照) で、リボンの [*
 
 <br/>
 
-### <a name="elementsxml-file-for-the-ribbon"></a>リボンの要素 .xml ファイル
+### <a name="elementsxml-file-for-the-ribbon"></a>Elements.xmlのファイル
 
-次の XML 定義は、リボンの [**タスク**] タブの [追加] ボタンに対して`RibbonQuickStatusAction\Elements.xml` 、 **quickstatus**プロジェクトのファイル内にあります。 
+リボンの [タスク] タブの追加されたボタンの次の XML 定義は `RibbonQuickStatusAction\Elements.xml` **、QuickStatus プロジェクトのファイルにあります**。 
   
 ```XML
     <?xml version="1.0" encoding="utf-8"?>
@@ -1180,7 +1180,7 @@ Project Web App の [タスク] ページ (図14を参照) で、リボンの [*
 
 ### <a name="appmanifestxml-file"></a>AppManifest.xml ファイル
 
-次に示すのは、 **Quickstatus**プロジェクトのアプリマニフェスト用の XML で、これには、アプリユーザーの割り当て状態を複数のプロジェクトで更新するために必要な2つのアクセス許可要求スコープが含まれています。 
+**QuickStatus** プロジェクトのアプリ マニフェストの XML を次に示します。これには、複数のプロジェクトでアプリ ユーザーの割り当て状態を更新するために必要な 2 つのアクセス許可要求スコープが含まれます。 
   
 ```XML
     <?xml version="1.0" encoding="utf-8" ?>
@@ -1207,15 +1207,15 @@ Project Web App の [タスク] ページ (図14を参照) で、リボンの [*
 
 <br/>
 
-### <a name="appiconpng-file"></a>AppIcon ファイル
+### <a name="appiconpng-file"></a>AppIcon.png ファイル
 
-**Quickstatus**アプリの完全な Visual Studio ソリューションには、カスタムの AppIcon ファイルが含まれています。 ソリューションは、Project 2013 SDK のダウンロードに含まれます。 
+**QuickStatus** Visual Studioの完全なソリューションには、カスタム ファイルAppIcon.pngがあります。 ソリューションは、2013 SDK Projectに含まれます。 
 
 <a name="pj15_StatusingApp_NextSteps"> </a>
 
 ## <a name="next-steps"></a>次の手順
 
-**Quickstatus**アプリは、project Server 2013 および project Online にインストールできるアプリの作成方法を示す比較的簡単な例です。 「 [QuickStatus app のテスト](#pj15_StatusingApp_Testing)」セクションでは、利便性向上のために行うことができるいくつかの改良点を示します。 **Quickstatus**アプリは、JavaScript 関数を使用して Project Web app の割り当て状態を更新します。 しかし、割り当ての達成率を変更することは、推奨されるプロジェクト管理手法ではありません。 別の方法として、割り当てられたタスクの実績開始日と残存期間を更新することもできます。 この問題の詳細については、「MPUG ニュースレターの[更新プログラムの向上](https://www.mpug.com/articles/update-better)」を参照してください。 
+**QuickStatus アプリは**、サーバー 2013 およびサーバー 2013 にインストールできるアプリを作成する方法の比較的簡単なProject例Project Online。 [[QuickStatus アプリのテスト] セクション](#pj15_StatusingApp_Testing)には、使いやすさを向上できるいくつかの改善点が示されています。 **QuickStatus アプリは** JavaScript 関数を使用して、ユーザーの割り当て状態を更新Project Web App。 ただし、割り当ての完了率を変更する方法は、推奨されるプロジェクト管理プラクティスではありません。 もう 1 つの方法は、割り当てられたタスクの実際の開始日と残りの期間を更新する方法です。 問題の詳細については、MPUG ニュースレターの [「Update Better」](https://www.mpug.com/articles/update-better) を参照してください。 
 
 <a name="pj15_StatusingApp_AdditionalResources"> </a>
 
@@ -1224,6 +1224,6 @@ Project Web App の [タスク] ページ (図14を参照) で、リボンの [*
 - [Project Server のプログラミング タスク](project-programming-tasks.md)
 - [SharePoint アドイン](https://msdn.microsoft.com/library/jj163230.aspx)
 - [Project Web App でタスク更新を管理する](https://technet.microsoft.com/library/hh767481%28v=office.14%29.aspx)
-- [カスタム アクションを作成して SharePoint アドインで展開する](https://msdn.microsoft.com/library/jj163954.aspx)
+- [カスタム アクションを作成して、SharePoint アドインで展開する](https://msdn.microsoft.com/library/jj163954.aspx)
     
 

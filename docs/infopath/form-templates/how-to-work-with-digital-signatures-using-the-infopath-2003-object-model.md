@@ -7,7 +7,7 @@ keywords:
 - デジタル署名 [infopath 2007],infopath 2003 互換のフォーム テンプレート,InfoPath 2003 互換のフォーム テンプレート,デジタル署名
 localization_priority: Normal
 ms.assetid: d6318238-fd45-4854-a3c9-c27c5685bd6b
-description: InfoPath 2003 互換オブジェクト モデルは、デジタル署名をプログラムで操作する機能を提供します。
+description: InfoPath 2003 互換のオブジェクト モデルには、プログラムによってデジタル署名を操作する機能が用意されています。
 ms.openlocfilehash: 86e2c85c7515c896612df09b6186462480ceff61
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT

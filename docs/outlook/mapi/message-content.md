@@ -1,5 +1,5 @@
 ---
-title: メッセージコンテンツ
+title: メッセージ コンテンツ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,30 +15,30 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33435461"
 ---
-# <a name="message-content"></a>メッセージコンテンツ
+# <a name="message-content"></a>メッセージ コンテンツ
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージコンテンツには2つのエンコード方式があります。1つは MIME を使用し、もう1つは uuencode を使用します。 MIME は推奨されるエンコーディングです。 さらに、MAPI は、送信メッセージに TNEF 情報を含める必要があるかどうかを管理する、受信者ごとのプロパティである**PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)) を定義します。 そのため、メッセージコンテンツをエンコードする方法は合計4つあります。
+メッセージ コンテンツには、MIME を使用するエンコードと uuencode を使用するエンコードの 2 つがあります。 MIME が優先エンコードです。 さらに、MAPI は **、TNEF** 情報を送信メッセージに含めるかどうかを制御する受信者ごとのプロパティ PR_SEND_RICH_INFO ([PidTagSendRichInfo)](pidtagsendrichinfo-canonical-property.md)を定義します。 したがって、メッセージ コンテンツをエンコードする方法は合計 4 種類あります。
   
-- TNEF を使用した MIME
+- TNEF を含む MIME
     
 - TNEF なしの MIME
     
-- TNEF を使用した uuencode
+- TNEF を含む uuencode
     
-- TNEF なしの uuencode
+- TNEF のない uuencode
     
-送信メッセージに対して MIME または uuencode を選択する方法が指定されていません。
+送信メッセージに MIME または uuencode を選択する方法は指定されていません。
   
-次のプロパティは、TNEF から除外されます。 **\*PR_SENDER_**、 **PR_ATTACH_DATA_\***、 **PR_BODY**。 その他のすべての転送テーブルのメッセージプロパティは、TNEF ストリームに含まれています。
+次のプロパティは、TNEF から除外されます **\* 。PR_SENDER_、PR_ATTACH_DATA_、PR_BODY。** **\***  他のすべての送信可能なメッセージ プロパティは、TNEF ストリームに含まれます。
   
-次の推奨事項は、実装がサポートする方法を決定できるパラメーターの一覧を提供することを目的としています。
+次の提案は、実装がサポートする方法を決定できるパラメーターの一覧を提供することを目的としています。
   
-- 送信メッセージに MIME または uuencode を使用してエンコードするかどうか: boolean。
+- 送信メッセージに MIME または uuencode を使用してエンコードするかどうかを指定します。ブール型 (boolean) です。
     
-- 送信メッセージに使用する文字セット: string (charset パラメーターに直接コピーされる) または列挙 (内部的に文字セット文字列に変換されます)。
+- 送信メッセージに使用する文字セット: string (charset パラメーターに直接コピー) または列挙 (内部で文字セット文字列に変換)。
     
 

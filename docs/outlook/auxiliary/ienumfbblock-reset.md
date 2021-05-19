@@ -20,7 +20,7 @@ ms.locfileid: "33433634"
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IEnumFBBlock](ienumfbblock.md)を参照してください。
+[「IEnumFBBlock」を参照](ienumfbblock.md)してください。
   
 ```cpp
 HRESULT Reset();

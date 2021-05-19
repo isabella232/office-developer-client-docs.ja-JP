@@ -25,11 +25,11 @@ ms.locfileid: "33433914"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI 動詞を記述する[smapiverb](smapiverb.md)構造の配列が含まれています。 
+MAPI 動詞を記述 [する SMAPIVerb](smapiverb.md) 構造体の配列を格納します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
 |関連するマクロ:  <br/> |[CbMAPIVerbArray](cbmapiverbarray.md) <br/> |
    
 ```cpp
@@ -41,19 +41,19 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cforms**
+ **cForms**
   
 > 配列内の動詞の数。
     
- **aforminfo**
+ **aFormInfo**
   
 > MAPI 動詞の配列。
     
 ## <a name="remarks"></a>注釈
 
-**SMAPIVerbArray**構造体は、 [imapiforminfo:: CalcVerbSet](imapiforminfo-calcverbset.md)メソッドのパラメーターとして渡されます。 
+**SMAPIVerbArray** 構造体は [、IMAPIFormInfo::CalcVerbSet](imapiforminfo-calcverbset.md)メソッドでパラメーターとして渡されます。 
   
 ## <a name="see-also"></a>関連項目
 

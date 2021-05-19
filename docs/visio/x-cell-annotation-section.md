@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm1028735
 localization_priority: Normal
 ms.assetid: f9db8623-9fcf-7037-2d11-d509f463025d
-description: ページ座標内のコメントマーカーの x 座標です。
+description: ページ座標のコメント マーカーの x 座標。
 ms.openlocfilehash: fdd9e2850a3285a2fcf4cc05fa056accd71052a9
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,10 +18,10 @@ ms.locfileid: "33434481"
 ---
 # <a name="x-cell-annotation-section"></a>[X] セル ([Annotation] セクション)
 
-ページ座標内のコメントマーカーの*x*座標です。 
+ページ  *座標*  のコメント マーカーの x 座標。 
   
 > [!NOTE]
-> このセルは、Microsoft Visio 2013 で .vsd ファイルを開くとき、または .vsd ファイル形式で .vsdx ファイルを保存するときにのみ、コメントの追跡に使用されます。 これは、Visio 2013 の .vsdx ドキュメントでコメントを追跡するためには使用されません。 
+> このセルは、Microsoft Visio 2013 で .vsd ファイルを開く場合、または .vsd ファイル形式で .vsdx ファイルを保存する場合にのみ、コメントを追跡するために使用されます。 2013 年の .vsdx ドキュメントのコメントを追跡Visioされません。 
   
 ## <a name="remarks"></a>注釈
 
@@ -29,14 +29,14 @@ ms.locfileid: "33434481"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | <1> [ *i* ]: *i* =、2、3...  <br/> |
+| セル名:  <br/> | Annotation.X[  *i*  ]  *ここで、i*  = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [X] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionAnnotation** <br/> |
-| 行インデックス:  <br/> |**visRowAnnotation** +  *i* = ** 0、1、2...  <br/> |
+| 行インデックス:  <br/> |**visRowAnnotation**  +  *i* *=* 0, 1, 2...  <br/> |
 | セル インデックス:  <br/> |**visAnnotationX** <br/> |
    
 

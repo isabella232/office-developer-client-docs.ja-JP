@@ -25,18 +25,18 @@ ms.locfileid: "33433004"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このインターフェイスは、iostx インターフェイスを介してレプリケーションを実行するときに、ヘルパー機能を提供します。
+このインターフェイスは、IOSTX インターフェイスを介してレプリケーションを実行するときにヘルパー機能を提供します。
   
 |||
 |:-----|:-----|
-|提供元  <br/> |[IMsgStore](imsgstoreimapiprop.md)のクエリ <br/> |
+|提供者  <br/> |[IMsgStore でのクエリ](imsgstoreimapiprop.md) <br/> |
 |インターフェイス識別子:  <br/> |IID_IPSTX4  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-| *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません*。  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていないか、文書化されていません*  。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

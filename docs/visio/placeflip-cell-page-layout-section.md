@@ -22,7 +22,7 @@ ms.locfileid: "33434299"
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|&amp;H0  <br/> |既定値です。 反転しません。  <br/> |**visLOFlipDefault** <br/> |
+|&amp;H0  <br/> |既定値です。反転しません。  <br/> |**visLOFlipDefault** <br/> |
 |&amp;H1  <br/> |水平方向に反転します。  <br/> |**visLOFlipX** <br/> |
 |&amp;H2  <br/> |垂直方向に反転します。  <br/> |**visLOFlipY** <br/> |
 |&amp;H4  <br/> |90°単位で回転します。  <br/> |**visLOFlipRotate** <br/> |
@@ -38,7 +38,7 @@ ms.locfileid: "33434299"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[placeflip]  <br/> |
+|セル名:  <br/> |PlaceFlip  <br/> |
    
 プログラムから、インデックスによって [PlaceFlip] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

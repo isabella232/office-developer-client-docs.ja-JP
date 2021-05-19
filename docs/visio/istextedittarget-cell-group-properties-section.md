@@ -35,7 +35,7 @@ Visio 2000 より前のバージョンで作成したグループの場合、既
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[istextedittarget]  <br/> |
+|セル名:  <br/> |IsTextEditTarget  <br/> |
    
 プログラムから、インデックスによって [IsTextEditTarget] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

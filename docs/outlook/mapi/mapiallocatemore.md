@@ -25,13 +25,13 @@ ms.locfileid: "33435391"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[MAPIAllocateBuffer](mapiallocatebuffer.md)関数で以前に割り当てられた別のバッファーにリンクされているメモリバッファーを割り当てます。 
+[MAPIAllocateBuffer](mapiallocatebuffer.md)関数で以前に割り当てられた別のバッファーにリンクされているメモリ バッファーを割り当てる。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapix  <br/> |
+|ヘッダー ファイル:  <br/> |Mapix.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 SCODE MAPIAllocateMore(
@@ -45,26 +45,26 @@ SCODE MAPIAllocateMore(
 
  _cbSize_
   
-> 順番割り当てる新しいバッファーのサイズをバイト単位で指定します。 
+> [in]割り当てる新しいバッファーのサイズ (バイト単位)。 
     
  _lpObject_
   
-> 順番**MAPIAllocateBuffer**を使用して割り当てられた既存の MAPI バッファーへのポインター。
+> [in] **MAPIAllocateBuffer** を使用して割り当てられた既存の MAPI バッファーへのポインター。
     
- _lppbuffer_
+ _lppBuffer_
   
-> 読み上げ新しく割り当てられたバッファーへのポインター。
+> [out]返された、新しく割り当てられたバッファーへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 呼び出しが成功し、要求されたメモリへのポインターが返されました。
+> 呼び出しは成功し、要求されたメモリへのポインターを返しました。
     
 ## <a name="remarks"></a>注釈
 
-**MAPIAllocateMore**呼び出し処理の間、呼び出し側の実装はオペレーティングシステムからメモリブロックを取得します。 メモリバッファーは、偶数番号のバイトアドレスに割り当てられます。 長い整数アクセスがより効率的になるプラットフォームでは、オペレーティングシステムは、バイト数が4の倍数であるアドレスにバッファーを割り当てます。 
+**MAPIAllocateMore** 呼び出し処理中に、呼び出し元の実装はオペレーティング システムからメモリ ブロックを取得します。 メモリ バッファーは、番号が付くバイト アドレスに割り当てされます。 長整数アクセスの方が効率的なプラットフォームでは、オペレーティング システムは、バイト単位のサイズが 4 の倍数であるアドレスにバッファーを割り当てる。 
   
-**MAPIAllocateMore**で割り当てられたバッファーを解放する唯一の方法は、 _lpObject_パラメーターで指定したバッファーポインターを[MAPIFreeBuffer](mapifreebuffer.md)関数に渡すことです。 [MAPIAllocateBuffer](mapiallocatebuffer.md)および**MAPIAllocateMore**で割り当てられたメモリバッファー間のリンクによって、 **MAPIFreeBuffer**は両方のバッファーを1回の呼び出しで解放できます。 
+**MAPIAllocateMore** で割り当てられたバッファーを解放する唯一の方法は _、lpObject_ パラメーターで指定されたバッファー ポインターを [MAPIFreeBuffer](mapifreebuffer.md)関数に渡す方法です。 [MAPIAllocateBuffer](mapiallocatebuffer.md)と **MAPIAllocateMore** で割り当てられたメモリ バッファー間のリンクにより **、MAPIFreeBuffer** は 1 回の呼び出しで両方のバッファーを解放できます。 
   
 

@@ -33,13 +33,13 @@ ms.locfileid: "33433753"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | ジオメトリ*i*noline *i* = <1>、2、3...  <br/> |
+| セル名 :  <br/> | Geometry  *i*  .NoLine  *:i*  = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [NoLine] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   
 |||
 |:-----|:-----|
-| セクション インデックス:  <br/> |**visSectionFirstComponent** +  *i* = ** 0、1、2...  <br/> |
+| セクション インデックス:  <br/> |**visSectionFirstComponent**  +  *i* *=* 0, 1, 2...  <br/> |
 | 行インデックス :  <br/> |**visRowComponent** <br/> |
 | セル インデックス:  <br/> |**visCompNoLine** <br/> |
    

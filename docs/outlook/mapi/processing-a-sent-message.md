@@ -1,5 +1,5 @@
 ---
-title: 送信されたメッセージの処理
+title: 送信メッセージの処理
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,28 +15,28 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33434677"
 ---
-# <a name="processing-a-sent-message"></a>送信されたメッセージの処理
+# <a name="processing-a-sent-message"></a>送信メッセージの処理
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-送信メッセージは送信された後で、送信トレイフォルダーに残したり、送信メッセージを保持するように指定されたフォルダーに移動したり、削除したりできます。 処理の種類は、メッセージストアのプロパティが設定されているかどうかによって異なります。
+送信メッセージは、送信後に送信ボックス フォルダーに残したり、送信済みメッセージを保持するために指定されたフォルダーに移動したり、削除したりできます。 処理の種類は、メッセージ ストアのプロパティを設定したかどうかによって異なります。
   
-- **PR_DELETE_AFTER_SUBMIT**([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) 
+- **PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) 
     
-- **PR_SENTMAIL_ENTRYID**([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) 
+- **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) 
     
- **PR_DELETE_AFTER_SUBMIT**はブール型のプロパティで、送信後にメッセージを削除する場合は TRUE に設定し、それ以外の場合は FALSE に設定します。 **PR_SENTMAIL_ENTRYID**は、フォルダーのエントリ識別子です。 このプロパティが設定されている場合は、送信されたメッセージをこのエントリ識別子で表されるフォルダーに移動する必要があります。 保存されたメッセージには、通常、それらを送信するための最後のメッセージストアまたはトランスポートプロバイダーの id が設定されます。 
+ **PR_DELETE_AFTER_SUBMIT** はブール型 (Boolean) のプロパティで、メッセージが送信された後に削除する必要がある場合は TRUE に設定され、それ以外の場合は FALSE に設定されます。 **PR_SENTMAIL_ENTRYID** は、フォルダーのエントリ識別子です。 このプロパティを設定すると、送信されたメッセージをこのエントリ識別子で表されるフォルダーに移動する必要があります。 保存されたメッセージは、通常、最後に送信するメッセージ ストアまたはトランスポート プロバイダーの ID を持っています。 
   
-どちらか一方または両方のプロパティを設定する必要はありませんが、両方とも設定することはできません。 ただし、 **PR_SENTMAIL_ENTRYID**を設定する場合は、有効なエントリ識別子を含める必要があります。 
+どちらか一方または他のプロパティを設定するか、これらのプロパティのどちらも設定する必要がありますが、両方を設定する必要はありません。 ただし、この値を設定 **PR_SENTMAIL_ENTRYID、** 有効なエントリ識別子が含まれている必要があります。 
   
 次の表では、これらのプロパティが送信メッセージの処理に与える影響について説明します。
   
 |||
 |:-----|:-----|
-|どちらのプロパティも設定されていない場合:  <br/> |メッセージを送信元のフォルダー (通常は送信トレイ) に残します。  <br/> |
-|**PR_SENTMAIL_ENTRYID**が設定されている場合:  <br/> |メッセージを指示されたフォルダーに移動します。  <br/> |
-|**PR_DELETE_AFTER_SUBMIT**が設定されている場合:  <br/> |メッセージを削除します。  <br/> |
+|どちらのプロパティも設定しない場合:  <br/> |メッセージは、送信されたフォルダー (通常は送信箱) に残します。  <br/> |
+|この **PR_SENTMAIL_ENTRYID** 設定されている場合は、次の値を使用します。  <br/> |メッセージを指定したフォルダーに移動します。  <br/> |
+|この **PR_DELETE_AFTER_SUBMIT** 設定されている場合は、次の値を使用します。  <br/> |メッセージを削除する。  <br/> |
    
 

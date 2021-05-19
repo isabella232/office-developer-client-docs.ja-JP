@@ -21,7 +21,7 @@ ms.locfileid: "33433102"
 |**値**|**説明**|
 |:-----|:-----|
 |TRUE  <br/> |このページがアクティブなとき、[**図形の変更**] ボタンは灰色表示されます。  <br/> |
-|FALSE  <br/> |このページによって [**図形の変更**] ボタンが無効になることはありません。 **DocumentSheet** の **DocLockReplace** が **TRUE** に設定されている場合、または選択した図形の [**LockReplace**] セルが **TRUE** に設定されている場合は、このボタンが引き続き灰色表示される可能性があります。  <br/> |
+|FALSE  <br/> |このページによって [**図形の変更**] ボタンが無効になることはありません。**DocumentSheet** の **DocLockReplace** が **TRUE** に設定されている場合、または選択した図形の [**LockReplace**] セルが **TRUE** に設定されている場合は、このボタンが引き続き灰色表示される可能性があります。<br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -29,7 +29,7 @@ ms.locfileid: "33433102"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [pagelockreplace]  <br/> |
+| セル名:  <br/> | PageLockReplace  <br/> |
    
 プログラムから、インデックスによって [**PageLockReplace**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -37,6 +37,6 @@ ms.locfileid: "33433102"
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowPage** <br/> |
-| セル インデックス:  <br/> |**vispagelockreplace** <br/> |
+| セル インデックス:  <br/> |**visPageLockReplace** <br/> |
    
 
