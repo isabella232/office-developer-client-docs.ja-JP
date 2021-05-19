@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm140
 localization_priority: Normal
 ms.assetid: d51a1dd8-678a-a34d-658d-bd7a027dd379
-description: 各行に対応する情報を表示します。 次の表に、各行で [C] セルが示す内容を説明します。
+description: 各行に対応する情報を表示します。次の表に、各行で [C] セルが示す内容を説明します。
 ms.openlocfilehash: 0284fea02c7eb890b56b6c865a69eb36662d8ae6
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -18,14 +18,14 @@ ms.locfileid: "34541891"
 ---
 # <a name="c-cell-geometry-section"></a>[C] セル ([Geometry] セクション)
 
-各行に対応する情報を表示します。 次の表に、各行で [C] セルが示す内容を説明します。
+各行に対応する情報を表示します。次の表に、各行で [C] セルが示す内容を説明します。
   
-|Row|説明|
+|行|説明|
 |:-----|:-----|
-|[[Ellipticalarcto]](ellipticalarcto-row-geometry-section.md) <br/> | 親の*x*軸を基準にした円弧の主軸の角度。  <br/> |
-|[[Nurbsto]](nurbsto-row-geometry-section.md) <br/> | NURBS (nonuniform rational B-spline) の最初のノットです。  <br/> |
-|[[Splinestart]](splinestart-row-geometry-section.md) <br/> | スプラインの最後のノットです。  <br/> |
-|[もう](ellipse-row-geometry-section.md) <br/> | 楕円上の点の*x*座標です。対応する*y*座標は [ [D](d-cell-geometry-section.md)セルで表されます。  <br/> |
+|[楕円ArcTo](ellipticalarcto-row-geometry-section.md) <br/> | 親の x 軸に対する円弧の長軸の角度。  <br/> |
+|[NURBSTo](nurbsto-row-geometry-section.md) <br/> | NURBS (nonuniform rational B-spline) の最初のノットです。  <br/> |
+|[SplineStart](splinestart-row-geometry-section.md) <br/> | スプラインの最後のノットです。  <br/> |
+|[楕円](ellipse-row-geometry-section.md) <br/> | 楕  *円上*  の点の x 座標。D セルで  *表される y*  座標と組み [合](d-cell-geometry-section.md) わせ。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -33,15 +33,15 @@ ms.locfileid: "34541891"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | ジオメトリ*i*C *j* where *i*および*j* = <1>、2、3...  <br/> |
-|| ジオメトリ*i*C1 (楕円行)  <br/> |
+| セル名:  <br/> | Geometry  *i*  .c  *j*            *i と*  j =  *<*  1>、2、3...  <br/> |
+|| Geometry  *i*  .C1 (楕円行)  <br/> |
    
 プログラムから、インデックスによって [C] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
-| セクション インデックス:  <br/> |**visSectionFirstComponent** +  *i* = ** 0、1、2...  <br/> |
-| 行インデックス:  <br/> |**visRowVertex** +  *j* where *j* = 0、1、2...  <br/> |
+| セクション インデックス:  <br/> |**visSectionFirstComponent**  +  *i* *=* 0, 1, 2...  <br/> |
+| 行インデックス:  <br/> |**visRowVertex**  +  *j* は *j* = 0、1、2..です。  <br/> |
 ||**visRowVertex** ([Ellipse] 行)  <br/> |
 | セル インデックス:  <br/> |**visEccentricityAngle** ([EllipticalArcTo] 行)  <br/> |
 ||**visNURBSKnotPrev** ([NURBSTo] 行)  <br/> |

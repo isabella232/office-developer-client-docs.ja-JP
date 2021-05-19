@@ -44,7 +44,7 @@ S_OK
 E_OUTOFMEMORY
 >新しいオブジェクトを作成するのに十分なメモリがなかった
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 この API は、呼び出し元にインターフェイス (スレッド セーフ) を提供し、MAPI 初期化のブロック待機を開始できます。 これにより、コンシューマーはアプリケーションを待つ最も良い待ち時間を取りやめできます。   IMAPIWaitResult::End を呼び出す動作は、IMAPIInitMonitor::Wait の呼び出しと同じです。
 
 ## <a name="see-also"></a>関連項目

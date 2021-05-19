@@ -42,7 +42,7 @@ S_OK
 HRESULT_FROM_WIN32(ERROR_TIMEOUT)
 > 無限でないタイムアウトが与えられた場合、これは MAPI が初期化されていない期間を示します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
   
 ## <a name="see-also"></a>関連項目
 

@@ -31,7 +31,7 @@ LISTMEMBERCOUNT()
 
 整数
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 図形がリスト コンテナーではない場合、LISTMEMBERCOUNT 関数は 0 を返します。
   

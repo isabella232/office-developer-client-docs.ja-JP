@@ -1,5 +1,5 @@
 ---
-title: Connect 要素 (Connects_Type complexType) (Visio XML)
+title: Connect要素 (Connects_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,18 +14,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34541996"
 ---
-# <a name="connect-element-connectstype-complextype-visio-xml"></a>Connect 要素 (Connects_Type complexType) (Visio XML)
+# <a name="connect-element-connects_type-complextype-visio-xml"></a>Connect要素 (Connects_Type complexType) (Visio XML)
 
 組織図の線やボックスなど、図面内の 2 つの図形の接続を表します。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Connect_Type](connect_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
-|**文書パーツ** <br/> |ページ # .xml、マスター # .xml  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
+|**ドキュメント パーツ** <br/> |page#.xml, master#.xml  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -36,13 +36,13 @@ ms.locfileid: "34541996"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
+スキーマで **sequence**、**minOccurs**、**maxOccurs**、**choice** などの具体的な要件が定義されている場合は、定義のセクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[Connects](connects-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Connects_Type](connects_type-complextypevisio-xml.md) <br/> |図面内の2つの図形を接続するための**Connect**要素を含みます。  <br/> |
+|[Connects](connects-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Connects_Type](connects_type-complextypevisio-xml.md) <br/> |図面内の **2 Connect** 間の接続ごとに 1 つの要素を格納します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -52,11 +52,11 @@ ms.locfileid: "34541996"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|FromCell  <br/> |xsd: string  <br/> |省略可能  <br/> |接続元のセルを指定します。  <br/> |Xsd: string 型の値。  <br/> |
-|FromPart  <br/> |xsd: int  <br/> |省略可能  <br/> |接続元の図形の部分を指定します。  <br/> |Xsd: int 型の値。  <br/> |
-|FromSheet  <br/> |xsd: アン Signedint  <br/> |必須  <br/> |1つまたは複数の接続を開始する図形の ID を指定します。  <br/> |Xsd:/Signedint 型の値。  <br/> |
-|ToCell  <br/> |xsd: string  <br/> |省略可能  <br/> |接続を確立するセルを指定します。  <br/> |Xsd: string 型の値。  <br/> |
-|ToPart  <br/> |xsd: int  <br/> |省略可能  <br/> |図形の接続先となる部分を指定します。  <br/> |Xsd: Int 型の値。  <br/> |
-|ToSheet  <br/> |xsd: アン Signedint  <br/> |必須  <br/> |1つまたは複数の接続を確立する図形の ID を指定します。  <br/> |Xsd:/Signedint 型の値。  <br/> |
+|FromCell  <br/> |xsd:string  <br/> |省略可能  <br/> |接続の開始元のセル。  <br/> |xsd:string 型の値。  <br/> |
+|FromPart  <br/> |xsd:int  <br/> |省略可能  <br/> |接続の発生元となる図形の部分。  <br/> |xsd:int 型の値。  <br/> |
+|FromSheet  <br/> |xsd:unsignedInt  <br/> |必須  <br/> |接続または接続の発生元となる図形の ID。  <br/> |xsd:unsignedInt 型の値。  <br/> |
+|ToCell  <br/> |xsd:string  <br/> |省略可能  <br/> |接続が行われたセル。  <br/> |xsd:string 型の値。  <br/> |
+|ToPart  <br/> |xsd:int  <br/> |省略可能  <br/> |接続が行われた図形の部分。  <br/> |xsd:Int 型の値。  <br/> |
+|ToSheet  <br/> |xsd:unsignedInt  <br/> |必須  <br/> |1 つ以上の接続が作成される図形の ID。  <br/> |xsd:unsignedInt 型の値。  <br/> |
    
 

@@ -48,12 +48,12 @@ ms.locfileid: "34542640"
 <tr class="even">
 <td><p>本文のプロパティ ( <b>Body</b>、 <b>HTMLBody</b> など)、およびそれらのプロパティの名前空間表現 ( <b>PR_RTF_COMPRESSED</b> など)</p></td>
 <td><p><b>Body</b> プロパティは、値の先頭 255 バイトのみが <b>Table</b> オブジェクトに格納されるという制限付きで、サポートされます。 HTML または RTF 形式の本文のコンテンツを示すその他のプロパティはサポートされていません。 <b>Body</b> の先頭 255 バイトのみが返されることになるので、テキストまたは HTML でアイテムの本文全体のコンテンツを取得したい場合は、<b>GetItemFromID(文字列、オブジェクト)</b> メソッドでアイテムの <a href="https://msdn.microsoft.com/library/bb644121(v=office.15)">EntryID</a> を使用してアイテム オブジェクトを取得します。 <b>Body</b> の完全な値をアイテム オブジェクトを使って取得します。</p></td>
-<td><p>テキストで表される <b>Body</b> プロパティのみフィルターでサポートされています。 したがって、DAV Searching and Locating (DASL) フィルターでは、このプロパティは <em>urn:schemas:http-mail:textdescription</em> として参照される必要があり、本文内の HTML タグはフィルター処理できません。 パフォーマンスを向上させるには、本文内の文字列に一致するようにフィルター処理でコンテキスト インデクサー キーワードを使用します。</p></td>
+<td><p>フィルターでは、テキストで表現される <b>Body</b> プロパティのみサポートされます。したがって、DAV Searching and Locating (DASL) フィルターでは、このプロパティは <em>urn:schemas:http-mail:textdescription</em> として参照する必要があり、本文内の HTML タグはフィルター処理できません。パフォーマンスを向上させるには、本文内の文字列と照合するコンテキスト インデクサー キーワードをフィルターに使用します。</p></td>
 </tr>
 <tr class="odd">
 <td><p>計算されたプロパティ ( <b>AutoResolvedWinner</b>、 <b>BodyFormat</b> など)</p></td>
-<td><p>サポートされません。</p></td>
-<td><p>サポートされません。</p></td>
+<td><p>サポートされていません。</p></td>
+<td><p>サポートされていません。</p></td>
 </tr>
 <tr class="even">
 <td><p>複数値プロパティ ( <b>Categories</b>、 <b>Children</b>、 <b>Companies</b>、 <b>VotingOptions</b> など)</p></td>
@@ -122,7 +122,7 @@ ms.locfileid: "34542640"
 </table>
 
 
-一部の計算済みのプロパティは、テーブルの列セットに追加することはできませんが、次のコード例はこの制限を回避して動作します。 **表**に表示されるアイテムを制限するために GetToDoItems は、DASL クエリを使用します。 計算済みのプロパティが、名前空間を表現したものを持つ場合、その名前空間を表現したものは、計算済みのプロパティの指定された値の行に戻るため、**表**オブジェクトを表現する DASL クエリを作成するために使用されます。 GetToDoItems は、[IsMarkedAsTask](https://msdn.microsoft.com/library/bb623631\(v=office.15\)) プロパティが **true** と等しく、また [TaskSubject](https://msdn.microsoft.com/library/bb643880\(v=office.15\))、[TaskDueDate](https://msdn.microsoft.com/library/bb623035\(v=office.15\))、[TaskStartDate](https://msdn.microsoft.com/library/bb610832\(v=office.15\))、[TaskCompletedDate](https://msdn.microsoft.com/library/bb624055\(v=office.15\)) のような特定のタスク プロパティに値を割り当てる受信トレイにアイテムを取得します。 最後に、これらのプロパティを、[Listeners](https://msdn.microsoft.com/library/system.diagnostics.debug.listeners.aspx) コレクションのトレース リスナーに書き込みます。
+一部の計算済みのプロパティは、テーブルの列セットに追加することはできませんが、次のコード例はこの制限を回避して動作します。 **表** に表示されるアイテムを制限するために GetToDoItems は、DASL クエリを使用します。 計算済みのプロパティが、名前空間を表現したものを持つ場合、その名前空間を表現したものは、計算済みのプロパティの指定された値の行に戻るため、**表** オブジェクトを表現する DASL クエリを作成するために使用されます。 GetToDoItems は、[IsMarkedAsTask](https://msdn.microsoft.com/library/bb623631\(v=office.15\)) プロパティが **true** と等しく、また [TaskSubject](https://msdn.microsoft.com/library/bb643880\(v=office.15\))、[TaskDueDate](https://msdn.microsoft.com/library/bb623035\(v=office.15\))、[TaskStartDate](https://msdn.microsoft.com/library/bb610832\(v=office.15\))、[TaskCompletedDate](https://msdn.microsoft.com/library/bb624055\(v=office.15\)) のような特定のタスク プロパティに値を割り当てる受信トレイにアイテムを取得します。 最後に、これらのプロパティを、[Listeners](https://msdn.microsoft.com/library/system.diagnostics.debug.listeners.aspx) コレクションのトレース リスナーに書き込みます。
 
 Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
