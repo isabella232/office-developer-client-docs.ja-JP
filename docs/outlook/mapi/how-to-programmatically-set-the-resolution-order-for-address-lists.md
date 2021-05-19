@@ -5,7 +5,7 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: f9559afb-8db1-ce72-3e11-9b3d47bb80b6
-description: '最終更新日: 2012 年7月6日'
+description: '最終更新日: 2012 年 7 月 6 日'
 ms.openlocfilehash: 4ca3e9d11a3133236d38ef31b01ecded932e8013
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -13,45 +13,45 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32345963"
 ---
-# <a name="programmatically-set-the-resolution-order-for-address-lists"></a><span data-ttu-id="db02a-103">アドレス一覧の解決順序をプログラムにより設定する</span><span class="sxs-lookup"><span data-stu-id="db02a-103">Programmatically set the resolution order for address lists</span></span>
+# <a name="programmatically-set-the-resolution-order-for-address-lists"></a><span data-ttu-id="ef272-103">アドレス一覧の解決順序をプログラムにより設定する</span><span class="sxs-lookup"><span data-stu-id="ef272-103">Programmatically set the resolution order for address lists</span></span>
   
-<span data-ttu-id="db02a-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="db02a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="ef272-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ef272-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="db02a-105">このトピックには、C++ のコードサンプルが含まれており、プログラムによって、会議出席依頼の電子メールメッセージと出席者の受信者が解決されるアドレス一覧の順序を設定することができます。</span><span class="sxs-lookup"><span data-stu-id="db02a-105">This topic contains a code sample in C++ that programmatically sets the order of address lists by which recipients in email messages and attendees in meeting requests are resolved.</span></span>
+<span data-ttu-id="ef272-105">このトピックでは、C++ のコード サンプルを含み、電子メール メッセージの受信者と会議出席依頼の出席者が解決されるアドレス一覧の順序をプログラムで設定します。</span><span class="sxs-lookup"><span data-stu-id="ef272-105">This topic contains a code sample in C++ that programmatically sets the order of address lists by which recipients in email messages and attendees in meeting requests are resolved.</span></span>
   
-<span data-ttu-id="db02a-106">MAPI では、各プロファイルは複数のアドレス一覧をサポートでき、それぞれのアドレス一覧は独自のコンテナーに格納されます。</span><span class="sxs-lookup"><span data-stu-id="db02a-106">In MAPI, each profile can support multiple address lists and each address list resides in its own container.</span></span> <span data-ttu-id="db02a-107">MAPI は、名前解決に使用されるプロファイルに新しい検索パスを設定できるようにするインターフェイスの**[SetSearchPath](https://support.microsoft.com/kb/292590)** メソッドをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="db02a-107">MAPI supports the **[SetSearchPath](https://support.microsoft.com/kb/292590)** method in the interface that allows you to set a new search path in the profile that is used for name resolution.</span></span> <span data-ttu-id="db02a-108">**IAddrBook:: SetSearchPath**メソッドを使用するには、適切なアドレス帳のコンテナーを保持する**[srowset](srowset.md)** 配列で、必要な順序で解決順序を定義し、その配列を*lpSearchPath*として指定する必要があります。 parameter.</span><span class="sxs-lookup"><span data-stu-id="db02a-108">To use the **IAddrBook::SetSearchPath** method, you have to define the desired resolution order in a **[SRowSet](srowset.md)** array that holds the containers of the relevant address books in the desired order, and then specify the array as the  *lpSearchPath*  parameter.</span></span> <span data-ttu-id="db02a-109">**srowset**配列の各エントリの最初のプロパティは、対応するアドレス帳の**[PR_ENTRYID](pidtagentryid-canonical-property.md)** プロパティである必要があります。</span><span class="sxs-lookup"><span data-stu-id="db02a-109">The first property for each entry in the **SRowSet** array must be the **[PR_ENTRYID](pidtagentryid-canonical-property.md)** property of the corresponding address book.</span></span> 
+<span data-ttu-id="ef272-106">MAPI では、各プロファイルは複数のアドレス一覧をサポートし、各アドレス一覧は独自のコンテナーに存在します。</span><span class="sxs-lookup"><span data-stu-id="ef272-106">In MAPI, each profile can support multiple address lists and each address list resides in its own container.</span></span> <span data-ttu-id="ef272-107">MAPI では、名前解決に使用されるプロファイル内の新しい検索パスを設定できるインターフェイスの **[SetSearchPath](https://support.microsoft.com/kb/292590)** メソッドがサポートされています。</span><span class="sxs-lookup"><span data-stu-id="ef272-107">MAPI supports the **[SetSearchPath](https://support.microsoft.com/kb/292590)** method in the interface that allows you to set a new search path in the profile that is used for name resolution.</span></span> <span data-ttu-id="ef272-108">**IAddrBook::SetSearchPath** メソッドを使用するには、関連するアドレス帳のコンテナーを目的の順序で保持する **[SRowSet](srowset.md)** 配列で目的の解決順序を定義し、その配列を *lpSearchPath* パラメーターとして指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ef272-108">To use the **IAddrBook::SetSearchPath** method, you have to define the desired resolution order in a **[SRowSet](srowset.md)** array that holds the containers of the relevant address books in the desired order, and then specify the array as the  *lpSearchPath*  parameter.</span></span> <span data-ttu-id="ef272-109">**SRowSet** 配列内の各エントリの最初のプロパティは、対応 **[するアドレスPR_ENTRYID](pidtagentryid-canonical-property.md)** プロパティである必要があります。</span><span class="sxs-lookup"><span data-stu-id="ef272-109">The first property for each entry in the **SRowSet** array must be the **[PR_ENTRYID](pidtagentryid-canonical-property.md)** property of the corresponding address book.</span></span> 
   
-<span data-ttu-id="db02a-110">このコードサンプルでは、次の手順で解決順序を設定します。</span><span class="sxs-lookup"><span data-stu-id="db02a-110">The code sample sets the resolution order in the following steps:</span></span>
+<span data-ttu-id="ef272-110">このコード サンプルでは、次の手順で解決順序を設定します。</span><span class="sxs-lookup"><span data-stu-id="ef272-110">The code sample sets the resolution order in the following steps:</span></span>
   
-1. <span data-ttu-id="db02a-111">一致`numANR`するコンテナーの数に初期化し、 `ANROrder`配列内の目的のアドレス一覧の名前と解決順序を指定します。</span><span class="sxs-lookup"><span data-stu-id="db02a-111">Initializes  `numANR` to the number of containers to match, and specifies the names and resolution order of the desired address lists in an  `ANROrder` array.</span></span> 
+1. <span data-ttu-id="ef272-111">一致するコンテナーの数を初期化し、配列内の目的のアドレス一覧の名前と解決  `numANR` 順序を指定  `ANROrder` します。</span><span class="sxs-lookup"><span data-stu-id="ef272-111">Initializes  `numANR` to the number of containers to match, and specifies the names and resolution order of the desired address lists in an  `ANROrder` array.</span></span> 
     
-2. <span data-ttu-id="db02a-112">**MAPIInitialize**関数を使用して MAPI を初期化します。</span><span class="sxs-lookup"><span data-stu-id="db02a-112">Initializes MAPI by using the **MAPIInitialize** function.</span></span> 
+2. <span data-ttu-id="ef272-112">**MAPIInitialize** 関数を使用して MAPI を初期化します。</span><span class="sxs-lookup"><span data-stu-id="ef272-112">Initializes MAPI by using the **MAPIInitialize** function.</span></span> 
     
-3.  <span data-ttu-id="db02a-113">MAPI にログオンし、ユーザーがプロファイルを選択できるようにします。</span><span class="sxs-lookup"><span data-stu-id="db02a-113">Logs on to MAPI and allows the user to choose a profile.</span></span> 
+3.  <span data-ttu-id="ef272-113">MAPI にログオンし、ユーザーがプロファイルを選択できます。</span><span class="sxs-lookup"><span data-stu-id="ef272-113">Logs on to MAPI and allows the user to choose a profile.</span></span> 
     
-4.  <span data-ttu-id="db02a-114">現在のセッションからアドレス帳へのポインターを取得します。</span><span class="sxs-lookup"><span data-stu-id="db02a-114">Gets a pointer to the address book from the current session.</span></span> 
+4.  <span data-ttu-id="ef272-114">現在のセッションからアドレス帳へのポインターを取得します。</span><span class="sxs-lookup"><span data-stu-id="ef272-114">Gets a pointer to the address book from the current session.</span></span> 
     
-5. <span data-ttu-id="db02a-115">アドレス帳を開きます。</span><span class="sxs-lookup"><span data-stu-id="db02a-115">Opens the Address Book.</span></span>
+5. <span data-ttu-id="ef272-115">アドレス帳を開きます。</span><span class="sxs-lookup"><span data-stu-id="ef272-115">Opens the Address Book.</span></span>
     
-6. <span data-ttu-id="db02a-116">ルートアドレス帳のコンテナーを開きます。</span><span class="sxs-lookup"><span data-stu-id="db02a-116">Opens the container for the root Address Book.</span></span>
+6. <span data-ttu-id="ef272-116">ルート アドレス帳のコンテナーを開きます。</span><span class="sxs-lookup"><span data-stu-id="ef272-116">Opens the container for the root Address Book.</span></span>
     
-7. <span data-ttu-id="db02a-117">ルートアドレス帳コンテナーの階層テーブルを開きます。</span><span class="sxs-lookup"><span data-stu-id="db02a-117">Opens the hierarchy table of the root address book container.</span></span>
+7. <span data-ttu-id="ef272-117">ルート アドレス帳コンテナーの階層テーブルを開きます。</span><span class="sxs-lookup"><span data-stu-id="ef272-117">Opens the hierarchy table of the root address book container.</span></span>
     
-8. <span data-ttu-id="db02a-118">階層内のアドレス帳コンテナーのリストを取得します。</span><span class="sxs-lookup"><span data-stu-id="db02a-118">Gets the list of address book containers in the hierarchy.</span></span>
+8. <span data-ttu-id="ef272-118">階層内のアドレス帳コンテナーの一覧を取得します。</span><span class="sxs-lookup"><span data-stu-id="ef272-118">Gets the list of address book containers in the hierarchy.</span></span>
     
-9. <span data-ttu-id="db02a-119">目的のアドレス一覧の名前`ANROrder`をアドレス帳階層内の既存の名前と比較することによって、目的のアドレス一覧のエントリ id を検索します。</span><span class="sxs-lookup"><span data-stu-id="db02a-119">Looks for the entry IDs of the desired address lists by comparing the names of the desired address lists in  `ANROrder` to the existing names in the address book hierarchy.</span></span> 
+9. <span data-ttu-id="ef272-119">目的のアドレス一覧の名前とアドレス帳階層内の既存の名前を比較して、目的のアドレス一覧のエントリの IP を  `ANROrder` 探します。</span><span class="sxs-lookup"><span data-stu-id="ef272-119">Looks for the entry IDs of the desired address lists by comparing the names of the desired address lists in  `ANROrder` to the existing names in the address book hierarchy.</span></span> 
     
-10. <span data-ttu-id="db02a-120">適切なエントリ id を**srowset**配列に設定`pNewRows`します。</span><span class="sxs-lookup"><span data-stu-id="db02a-120">Sets the appropriate entry IDs to the **SRowSet** array,  `pNewRows`.</span></span>
+10. <span data-ttu-id="ef272-120">適切なエントリの ID を **SRowSet 配列に設定** します  `pNewRows` 。</span><span class="sxs-lookup"><span data-stu-id="ef272-120">Sets the appropriate entry IDs to the **SRowSet** array,  `pNewRows`.</span></span>
     
-11. <span data-ttu-id="db02a-121">*lpSearchPath*パラメーターを`pNewRows` **IAddrBook:: SetSearchPath**に呼び出して渡し、検索パスを設定します。</span><span class="sxs-lookup"><span data-stu-id="db02a-121">Calls and passes  `pNewRows` as the  *lpSearchPath*  parameter to **IAddrBook::SetSearchPath** to set the search path.</span></span> 
+11. <span data-ttu-id="ef272-121">`pNewRows` *lpSearchPath* パラメーターとして **IAddrBook::SetSearchPath** を呼び出して、検索パスを設定します。</span><span class="sxs-lookup"><span data-stu-id="ef272-121">Calls and passes  `pNewRows` as the  *lpSearchPath*  parameter to **IAddrBook::SetSearchPath** to set the search path.</span></span> 
     
-12. <span data-ttu-id="db02a-122">内部バッファーとポインターをクリーンアップします。</span><span class="sxs-lookup"><span data-stu-id="db02a-122">Cleans up internal buffers and pointers.</span></span>
+12. <span data-ttu-id="ef272-122">内部バッファーとポインターをクリーンアップします。</span><span class="sxs-lookup"><span data-stu-id="ef272-122">Cleans up internal buffers and pointers.</span></span>
     
-13. <span data-ttu-id="db02a-123">MAPI からログオフします。</span><span class="sxs-lookup"><span data-stu-id="db02a-123">Logs off from MAPI.</span></span>
+13. <span data-ttu-id="ef272-123">MAPI からログオフします。</span><span class="sxs-lookup"><span data-stu-id="ef272-123">Logs off from MAPI.</span></span>
     
-14. <span data-ttu-id="db02a-124">Uninitalizes MAPI。</span><span class="sxs-lookup"><span data-stu-id="db02a-124">Uninitalizes MAPI.</span></span>
+14. <span data-ttu-id="ef272-124">MAPI の初期化を解除します。</span><span class="sxs-lookup"><span data-stu-id="ef272-124">Uninitalizes MAPI.</span></span>
     
-<span data-ttu-id="db02a-125">このコードサンプルでは、Microsoft Office Outlook の既定のインストールで使用可能なアドレス一覧を使用します。**すべての連絡先**、**すべてのグループ**、**連絡先**。</span><span class="sxs-lookup"><span data-stu-id="db02a-125">This code sample uses address lists that are available in the default installation of Microsoft Office Outlook: **All Contacts**, **All Groups**, and **Contacts**.</span></span> <span data-ttu-id="db02a-126">Outlook を起動した後、初期化されたプロファイルで実行している場合は、このサンプルを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="db02a-126">You must run the sample after Outlook is started and is running on an initialized profile.</span></span> <span data-ttu-id="db02a-127">このサンプルは、1つの言語 (たとえば、すべての名前が英語) の名前で適切に動作します。</span><span class="sxs-lookup"><span data-stu-id="db02a-127">The sample works well with names that are in one language (for example, all names are in English).</span></span> <span data-ttu-id="db02a-128">これは、英語以外の Outlook ビルドを実行しているユーザー用にローカライズされた**連絡先**フォルダーなど、多言語展開で機能するようには設計されていません。</span><span class="sxs-lookup"><span data-stu-id="db02a-128">It is not designed to work in multi-lingual deployments, for example the **Contacts** folder localized for a user running a non-English Outlook build.</span></span> 
+<span data-ttu-id="ef272-125">このコード サンプルでは、すべての連絡先、すべてのグループ、連絡先の既定のインストール **Microsoft Office Outlookアドレス一\*\*\*\*覧を使用\*\*\*\*します**。</span><span class="sxs-lookup"><span data-stu-id="ef272-125">This code sample uses address lists that are available in the default installation of Microsoft Office Outlook: **All Contacts**, **All Groups**, and **Contacts**.</span></span> <span data-ttu-id="ef272-126">このサンプルは、初期化されたプロファイルOutlook開始して実行した後に実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="ef272-126">You must run the sample after Outlook is started and is running on an initialized profile.</span></span> <span data-ttu-id="ef272-127">このサンプルは、1 つの言語の名前でうまく機能します (たとえば、すべての名前は英語です)。</span><span class="sxs-lookup"><span data-stu-id="ef272-127">The sample works well with names that are in one language (for example, all names are in English).</span></span> <span data-ttu-id="ef272-128">多言語展開で動作するようには設計されていない。たとえば、英語以外のアプリケーション ビルドを実行しているユーザーにローカライズされた連絡先フォルダー Outlookです。</span><span class="sxs-lookup"><span data-stu-id="ef272-128">It is not designed to work in multi-lingual deployments, for example the **Contacts** folder localized for a user running a non-English Outlook build.</span></span> 
   
 ```cpp
 #include "stdafx.h" 
@@ -264,7 +264,7 @@ STDMETHODIMP CopySBinary(
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="db02a-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="db02a-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ef272-129">関連項目</span><span class="sxs-lookup"><span data-stu-id="ef272-129">See also</span></span>
 
-- [<span data-ttu-id="db02a-130">Outlook でのアドレス一覧の解決順序の設定について</span><span class="sxs-lookup"><span data-stu-id="db02a-130">About Setting the Resolution Order for Address Lists in Outlook</span></span>](about-setting-the-resolution-order-for-address-lists-in-outlook.md)
+- [<span data-ttu-id="ef272-130">概要 - アドレス一覧の解決順序を設定Outlook</span><span class="sxs-lookup"><span data-stu-id="ef272-130">About Setting the Resolution Order for Address Lists in Outlook</span></span>](about-setting-the-resolution-order-for-address-lists-in-outlook.md)
 

@@ -13,15 +13,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32346425"
 ---
-# <a name="use-the-mapi-crash-recovery-api"></a><span data-ttu-id="bce40-103">MAPI クラッシュ回復 API を使用する</span><span class="sxs-lookup"><span data-stu-id="bce40-103">Use the MAPI Crash Recovery API</span></span>
+# <a name="use-the-mapi-crash-recovery-api"></a><span data-ttu-id="8d6be-103">MAPI クラッシュ回復 API を使用する</span><span class="sxs-lookup"><span data-stu-id="8d6be-103">Use the MAPI Crash Recovery API</span></span>
 
-<span data-ttu-id="bce40-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="bce40-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="8d6be-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="8d6be-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="bce40-105">このトピックには、C++ のコードサンプルが含まれています。このコードは、[アン handledexceptionfilter](https://msdn.microsoft.com/library/ms681401%28VS.85%29.aspx)関数から[mapicrashrecovery](mapicrashrecovery.md)関数を呼び出す方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="bce40-105">This topic contains a code sample in C++ that shows how to call the [MAPICrashRecovery](mapicrashrecovery.md) function from the [UnhandledExceptionFilter](https://msdn.microsoft.com/library/ms681401%28VS.85%29.aspx) function.</span></span> <span data-ttu-id="bce40-106">[mapicrashrecovery](mapicrashrecovery.md)関数は、個人用フォルダーファイル (PST) またはオフラインフォルダーファイル (OST) の共有メモリの状態をチェックします。</span><span class="sxs-lookup"><span data-stu-id="bce40-106">The [MAPICrashRecovery](mapicrashrecovery.md) function checks the state of the Personal Folders file (PST) or Offline Folders file (OST) shared memory.</span></span> 
+<span data-ttu-id="8d6be-105">このトピックでは[、UnhandledExceptionFilter](https://msdn.microsoft.com/library/ms681401%28VS.85%29.aspx)関数から[MAPICrashRecovery](mapicrashrecovery.md)関数を呼び出す方法を示す C++ のコード サンプルを示します。</span><span class="sxs-lookup"><span data-stu-id="8d6be-105">This topic contains a code sample in C++ that shows how to call the [MAPICrashRecovery](mapicrashrecovery.md) function from the [UnhandledExceptionFilter](https://msdn.microsoft.com/library/ms681401%28VS.85%29.aspx) function.</span></span> <span data-ttu-id="8d6be-106">[MAPICrashRecovery 関数は](mapicrashrecovery.md)、個人用フォルダー ファイル (PST) またはオフライン フォルダー ファイル (OST) 共有メモリの状態をチェックします。</span><span class="sxs-lookup"><span data-stu-id="8d6be-106">The [MAPICrashRecovery](mapicrashrecovery.md) function checks the state of the Personal Folders file (PST) or Offline Folders file (OST) shared memory.</span></span> 
 
-<span data-ttu-id="bce40-107">メモリが一貫した状態にある場合、 [mapicrashrecovery](mapicrashrecovery.md)関数はデータをディスクに移動し、プロセスが終了するまで追加の読み取りまたは書き込みアクセスを禁止します。</span><span class="sxs-lookup"><span data-stu-id="bce40-107">If the memory is in a consistent state, the [MAPICrashRecovery](mapicrashrecovery.md) function moves the data to disk and prevents further read or write access until the process is terminated.</span></span> <span data-ttu-id="bce40-108">プロセスが終了する前に、pst または ost が一貫した状態になっていることを確認することにより、microsoft outlook 2010 または microsoft outlook 2013 が次のエラーメッセージを表示しないようにして、パフォーマンスの問題を回避することができます。</span><span class="sxs-lookup"><span data-stu-id="bce40-108">By ensuring that the PSTs or OSTs are in a consistent state before the process is terminated, you can prevent Microsoft Outlook 2010 or Microsoft Outlook 2013 from displaying the following error message and avoid performance problems:</span></span> 
+<span data-ttu-id="8d6be-107">メモリが一貫性のある状態にある場合 [、MAPICrashRecovery](mapicrashrecovery.md) 関数はデータをディスクに移動し、プロセスが終了するまで読み取りまたは書き込みアクセスを防止します。</span><span class="sxs-lookup"><span data-stu-id="8d6be-107">If the memory is in a consistent state, the [MAPICrashRecovery](mapicrashrecovery.md) function moves the data to disk and prevents further read or write access until the process is terminated.</span></span> <span data-ttu-id="8d6be-108">プロセスが終了する前に PST または OST が一貫性のある状態に保たれた場合、Microsoft Outlook 2010 または Microsoft Outlook 2013 が次のエラー メッセージを表示しないようにし、パフォーマンスの問題を回避できます。</span><span class="sxs-lookup"><span data-stu-id="8d6be-108">By ensuring that the PSTs or OSTs are in a consistent state before the process is terminated, you can prevent Microsoft Outlook 2010 or Microsoft Outlook 2013 from displaying the following error message and avoid performance problems:</span></span> 
   
-<span data-ttu-id="bce40-109">**データファイルが前回使用され、問題がないかチェックされているときに、データファイルが正常に閉じられませんでした。チェックが進行している間は、パフォーマンスが影響を受ける可能性があります。**</span><span class="sxs-lookup"><span data-stu-id="bce40-109">**A data file did not close properly the last time it was used and is being checked for problems. Performance might be affected while the check is in progress.**</span></span>
+<span data-ttu-id="8d6be-109">**前回使用したデータ ファイルが正しく閉じなかったので、問題がチェックされています。チェックの進行中にパフォーマンスが影響を受ける可能性があります。**</span><span class="sxs-lookup"><span data-stu-id="8d6be-109">**A data file did not close properly the last time it was used and is being checked for problems. Performance might be affected while the check is in progress.**</span></span>
   
 ```cpp
 LONG WINAPI UnhandledExceptionFilter(__in EXCEPTION_POINTERS* pep) 
@@ -50,8 +50,8 @@ LONG WINAPI UnhandledExceptionFilter(__in EXCEPTION_POINTERS* pep)
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="bce40-110">関連項目</span><span class="sxs-lookup"><span data-stu-id="bce40-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8d6be-110">関連項目</span><span class="sxs-lookup"><span data-stu-id="8d6be-110">See also</span></span>
 
-- [<span data-ttu-id="bce40-111">MAPI クラッシュ回復 API について</span><span class="sxs-lookup"><span data-stu-id="bce40-111">About the MAPI Crash Recovery API</span></span>](about-the-mapi-crash-recovery-api.md) 
-- [<span data-ttu-id="bce40-112">MAPICrashRecovery</span><span class="sxs-lookup"><span data-stu-id="bce40-112">MAPICrashRecovery</span></span>](mapicrashrecovery.md)
+- [<span data-ttu-id="8d6be-111">MAPI クラッシュ回復 API について</span><span class="sxs-lookup"><span data-stu-id="8d6be-111">About the MAPI Crash Recovery API</span></span>](about-the-mapi-crash-recovery-api.md) 
+- [<span data-ttu-id="8d6be-112">MAPICrashRecovery</span><span class="sxs-lookup"><span data-stu-id="8d6be-112">MAPICrashRecovery</span></span>](mapicrashrecovery.md)
 

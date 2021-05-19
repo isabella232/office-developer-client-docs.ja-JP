@@ -15,19 +15,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32346775"
 ---
-# <a name="implementing-iunknown-in-c"></a><span data-ttu-id="4c4a7-103">C での IUnknown の実装</span><span class="sxs-lookup"><span data-stu-id="4c4a7-103">Implementing IUnknown in C</span></span>
+# <a name="implementing-iunknown-in-c"></a><span data-ttu-id="87a87-103">C での IUnknown の実装</span><span class="sxs-lookup"><span data-stu-id="87a87-103">Implementing IUnknown in C</span></span>
 
-<span data-ttu-id="4c4a7-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="4c4a7-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="87a87-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="87a87-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="4c4a7-105">c での[IUnknown:: QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)メソッドの実装は、C++ 実装によく似ています。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-105">Implementations of the [IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) method in C are very similar to C++ implementations.</span></span> <span data-ttu-id="4c4a7-106">実装には、次の2つの基本的な手順があります。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-106">There are two basic steps to the implementation:</span></span> 
+<span data-ttu-id="87a87-105">C の [IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) メソッドの実装は、C++ の実装と非常に似ています。</span><span class="sxs-lookup"><span data-stu-id="87a87-105">Implementations of the [IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) method in C are very similar to C++ implementations.</span></span> <span data-ttu-id="87a87-106">実装には、次の 2 つの基本的な手順があります。</span><span class="sxs-lookup"><span data-stu-id="87a87-106">There are two basic steps to the implementation:</span></span> 
   
-1. <span data-ttu-id="4c4a7-107">パラメーターを検証します。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-107">Validating parameters.</span></span>
+1. <span data-ttu-id="87a87-107">パラメーターの検証。</span><span class="sxs-lookup"><span data-stu-id="87a87-107">Validating parameters.</span></span>
     
-2. <span data-ttu-id="4c4a7-108">オブジェクトでサポートされているインターフェイスのリストに対して要求されたインターフェイスの識別子をチェックし、E_NO_INTERFACE 値または有効なインターフェイスポインターを返します。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-108">Checking the identifier of the requested interface against the list of interfaces supported by the object and returning either the E_NO_INTERFACE value or a valid interface pointer.</span></span> <span data-ttu-id="4c4a7-109">インターフェイスポインターが返された場合は、参照カウントをインクリメントするために、実装で[IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)メソッドを呼び出す必要もあります。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-109">If an interface pointer is returned, the implementation should also call the [IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) method to increment the reference count.</span></span> 
+2. <span data-ttu-id="87a87-108">要求されたインターフェイスの識別子をオブジェクトでサポートされているインターフェイスの一覧に対してチェックし、E_NO_INTERFACE値または有効なインターフェイス ポインターを返します。</span><span class="sxs-lookup"><span data-stu-id="87a87-108">Checking the identifier of the requested interface against the list of interfaces supported by the object and returning either the E_NO_INTERFACE value or a valid interface pointer.</span></span> <span data-ttu-id="87a87-109">インターフェイス ポインターが返された場合、実装は [IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) メソッドを呼び出して参照カウントをインクリメントする必要があります。</span><span class="sxs-lookup"><span data-stu-id="87a87-109">If an interface pointer is returned, the implementation should also call the [IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) method to increment the reference count.</span></span> 
     
-<span data-ttu-id="4c4a7-110">c および C++ での**QueryInterface**の実装の主な違いは、c バージョンの最初のパラメーターの追加です。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-110">The main difference between an implementation of **QueryInterface** in C and C++ is the additional first parameter in the C version.</span></span> <span data-ttu-id="4c4a7-111">オブジェクトポインターがパラメータリストに追加されているため、 **QueryInterface**の C 実装は C++ 実装よりも多くのパラメータ検証を行う必要があります。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-111">Because the object pointer is added to the parameter list, a C implementation of **QueryInterface** must have more parameter validation than a C++ implementation.</span></span> <span data-ttu-id="4c4a7-112">インターフェイス識別子を確認し、参照カウントを増やして、オブジェクトポインターを返すロジックは、両方の言語で同一である必要があります。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-112">The logic for checking the interface identifier, incrementing the reference count, and returning an object pointer should be identical in both languages.</span></span> 
+<span data-ttu-id="87a87-110">C と C++ での **QueryInterface** の実装の主な違いは、C バージョンの追加の最初のパラメーターです。</span><span class="sxs-lookup"><span data-stu-id="87a87-110">The main difference between an implementation of **QueryInterface** in C and C++ is the additional first parameter in the C version.</span></span> <span data-ttu-id="87a87-111">オブジェクト ポインターがパラメーター リストに追加されるので **、QueryInterface** の C 実装では、C++ 実装よりも多くのパラメーター検証が必要です。</span><span class="sxs-lookup"><span data-stu-id="87a87-111">Because the object pointer is added to the parameter list, a C implementation of **QueryInterface** must have more parameter validation than a C++ implementation.</span></span> <span data-ttu-id="87a87-112">インターフェイス識別子を確認し、参照カウントを増やし、オブジェクト ポインターを返すロジックは、両方の言語で同一である必要があります。</span><span class="sxs-lookup"><span data-stu-id="87a87-112">The logic for checking the interface identifier, incrementing the reference count, and returning an object pointer should be identical in both languages.</span></span> 
   
-<span data-ttu-id="4c4a7-113">次のコード例は、ステータスオブジェクトの C で**QueryInterface**を実装する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-113">The following code example shows how to implement **QueryInterface** in C for a status object.</span></span> 
+<span data-ttu-id="87a87-113">次のコード例は、状態オブジェクトの **QueryInterface** を C で実装する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="87a87-113">The following code example shows how to implement **QueryInterface** in C for a status object.</span></span> 
   
 ```cpp
 STDMETHODIMP STATUS_QueryInterface(LPMYSTATUSOBJ lpMyObj, REFIID riid,
@@ -64,9 +64,9 @@ STDMETHODIMP STATUS_QueryInterface(LPMYSTATUSOBJ lpMyObj, REFIID riid,
 
 ```
 
-<span data-ttu-id="4c4a7-114">c での**AddRef**メソッドの実装は c++ 実装に似ていますが、 [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドの C 実装は、c++ のバージョンよりも凝ったものにすることができます。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-114">Whereas the implementation of the **AddRef** method in C is similar to a C++ implementation, a C implementation of the [IUnknown::Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) method can get more elaborate than a C++ version.</span></span> <span data-ttu-id="4c4a7-115">これは、オブジェクトを解放するための機能の多くが C++ のコンストラクタおよびデストラクターに組み込まれる可能性があるため、C にはそのような機構がありません。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-115">This is because much of the functionality involved with freeing an object can be incorporated into the C++ constructor and destructor, and C has no such mechanism.</span></span> <span data-ttu-id="4c4a7-116">この機能はすべて、 **Release**メソッドに含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-116">All of this functionality must be included in the **Release** method.</span></span> <span data-ttu-id="4c4a7-117">また、追加のパラメーターとその明示的な vtable があるため、より多くの検証が必要になります。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-117">Also, because of the additional parameter and its explicit vtable, more validation is required.</span></span> 
+<span data-ttu-id="87a87-114">C の **AddRef** メソッドの実装は C++ 実装に似ていますが [、IUnknown::Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) メソッドの C 実装は、C++ バージョンよりも複雑な場合があります。</span><span class="sxs-lookup"><span data-stu-id="87a87-114">Whereas the implementation of the **AddRef** method in C is similar to a C++ implementation, a C implementation of the [IUnknown::Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) method can get more elaborate than a C++ version.</span></span> <span data-ttu-id="87a87-115">これは、オブジェクトの解放に関連する機能の多くを C++ コンストラクターとデストラクタに組み込み、C にはそのようなメカニズムがないためです。</span><span class="sxs-lookup"><span data-stu-id="87a87-115">This is because much of the functionality involved with freeing an object can be incorporated into the C++ constructor and destructor, and C has no such mechanism.</span></span> <span data-ttu-id="87a87-116">この機能はすべて Release メソッドに含める **必要** があります。</span><span class="sxs-lookup"><span data-stu-id="87a87-116">All of this functionality must be included in the **Release** method.</span></span> <span data-ttu-id="87a87-117">また、追加のパラメーターとその明示的な vtable のために、より多くの検証が必要です。</span><span class="sxs-lookup"><span data-stu-id="87a87-117">Also, because of the additional parameter and its explicit vtable, more validation is required.</span></span> 
   
-<span data-ttu-id="4c4a7-118">次の**AddRef**メソッドの呼び出しは、status オブジェクトの一般的な C 実装を示しています。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-118">The following **AddRef** method call illustrates a typical C implementation for a status object.</span></span> 
+<span data-ttu-id="87a87-118">次の **AddRef メソッド** 呼び出しは、状態オブジェクトの一般的な C 実装を示しています。</span><span class="sxs-lookup"><span data-stu-id="87a87-118">The following **AddRef** method call illustrates a typical C implementation for a status object.</span></span> 
   
 ```cpp
 STDMETHODIMP_(ULONG) STATUS_AddRef(LPMYSTATUSOBJ lpMyObj)
@@ -90,13 +90,13 @@ STDMETHODIMP_(ULONG) STATUS_AddRef(LPMYSTATUSOBJ lpMyObj)
 
 ```
 
-<span data-ttu-id="4c4a7-119">次のコード例は、C status オブジェクトの**リリース**の一般的な実装を示しています。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-119">The following code example shows a typical implementation of **Release** for a C status object.</span></span> <span data-ttu-id="4c4a7-120">参照カウントがデクリメントされた後に0の場合、C status オブジェクトの実装では、次のタスクを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-120">If the reference count is 0 after it is decremented, a C status object implementation should perform the following tasks:</span></span> 
+<span data-ttu-id="87a87-119">次のコード例は、C 状態オブジェクトの **リリースの** 一般的な実装を示しています。</span><span class="sxs-lookup"><span data-stu-id="87a87-119">The following code example shows a typical implementation of **Release** for a C status object.</span></span> <span data-ttu-id="87a87-120">参照カウントがデクリメント後に 0 の場合、C 状態オブジェクトの実装は次のタスクを実行する必要があります。</span><span class="sxs-lookup"><span data-stu-id="87a87-120">If the reference count is 0 after it is decremented, a C status object implementation should perform the following tasks:</span></span> 
   
-- <span data-ttu-id="4c4a7-121">オブジェクトへのすべての保持ポインターを解放します。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-121">Release any held pointers to objects.</span></span> 
+- <span data-ttu-id="87a87-121">オブジェクトへの保持されているポインターを解放します。</span><span class="sxs-lookup"><span data-stu-id="87a87-121">Release any held pointers to objects.</span></span> 
     
-- <span data-ttu-id="4c4a7-122">vtable を NULL に設定して、オブジェクトのユーザーが**Release**という名前のオブジェクトを引き続き使用していた場合のデバッグを容易にします。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-122">Set the vtable to NULL, facilitating debugging in the case where an object's user called **Release** yet continued to try to use the object.</span></span> 
+- <span data-ttu-id="87a87-122">vtable を NULL に設定すると、Release という名前のオブジェクトのユーザーがまだオブジェクトの使用を試み続けた場合のデバッグが容易になります。</span><span class="sxs-lookup"><span data-stu-id="87a87-122">Set the vtable to NULL, facilitating debugging in the case where an object's user called **Release** yet continued to try to use the object.</span></span> 
     
-- <span data-ttu-id="4c4a7-123">**MAPIFreeBuffer**を呼び出して、オブジェクトを解放します。</span><span class="sxs-lookup"><span data-stu-id="4c4a7-123">Call **MAPIFreeBuffer** to free the object.</span></span> 
+- <span data-ttu-id="87a87-123">**MAPIFreeBuffer を呼び出** してオブジェクトを解放します。</span><span class="sxs-lookup"><span data-stu-id="87a87-123">Call **MAPIFreeBuffer** to free the object.</span></span> 
     
 ```cpp
 STDMETHODIMP_(ULONG) STATUS_Release(LPMYSTATUSOBJ lpMyObj)
@@ -130,8 +130,8 @@ STDMETHODIMP_(ULONG) STATUS_Release(LPMYSTATUSOBJ lpMyObj)
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="4c4a7-124">関連項目</span><span class="sxs-lookup"><span data-stu-id="4c4a7-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="87a87-124">関連項目</span><span class="sxs-lookup"><span data-stu-id="87a87-124">See also</span></span>
 
-- [<span data-ttu-id="4c4a7-125">MAPI オブジェクトの実装</span><span class="sxs-lookup"><span data-stu-id="4c4a7-125">Implementing MAPI Objects</span></span>](implementing-mapi-objects.md)
-- [<span data-ttu-id="4c4a7-126">IUnknown インターフェイスの実装</span><span class="sxs-lookup"><span data-stu-id="4c4a7-126">Implementing the IUnknown Interface</span></span>](implementing-the-iunknown-interface.md)
+- [<span data-ttu-id="87a87-125">MAPI オブジェクトの実装</span><span class="sxs-lookup"><span data-stu-id="87a87-125">Implementing MAPI Objects</span></span>](implementing-mapi-objects.md)
+- [<span data-ttu-id="87a87-126">IUnknown インターフェイスの実装</span><span class="sxs-lookup"><span data-stu-id="87a87-126">Implementing the IUnknown Interface</span></span>](implementing-the-iunknown-interface.md)
 
