@@ -18,27 +18,27 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420754"
 ---
-# <a name="initframework"></a><span data-ttu-id="9ebcb-104">InitFramework</span><span class="sxs-lookup"><span data-stu-id="9ebcb-104">InitFramework</span></span>
+# <a name="initframework"></a><span data-ttu-id="b9cba-104">InitFramework</span><span class="sxs-lookup"><span data-stu-id="b9cba-104">InitFramework</span></span>
 
- <span data-ttu-id="9ebcb-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="9ebcb-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
+ <span data-ttu-id="b9cba-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="b9cba-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
   
-<span data-ttu-id="9ebcb-106">フレームワーク ライブラリを初期化するフレームワーク ライブラリ関数。これは単に、既に割り当てられているメモリを解放して、一時 **XLOPER**/ **XLOPER12** のメモリ データ構造を初期化します。</span><span class="sxs-lookup"><span data-stu-id="9ebcb-106">Framework library function that initializes the Framework library, which simply initializes the temporary **XLOPER**/ **XLOPER12** memory data structures, freeing any memory that has already been allocated.</span></span> 
+<span data-ttu-id="b9cba-106">フレームワーク ライブラリを初期化するフレームワーク ライブラリ関数。これは単に、既に割り当てられているメモリを解放して、一時 **XLOPER**/ **XLOPER12** のメモリ データ構造を初期化します。</span><span class="sxs-lookup"><span data-stu-id="b9cba-106">Framework library function that initializes the Framework library, which simply initializes the temporary **XLOPER**/ **XLOPER12** memory data structures, freeing any memory that has already been allocated.</span></span> 
   
 ```cs
 short WINAPI InitFramework(void);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="9ebcb-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="9ebcb-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="b9cba-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="b9cba-107">Parameters</span></span>
 
-<span data-ttu-id="9ebcb-108">この関数に引数はありません。</span><span class="sxs-lookup"><span data-stu-id="9ebcb-108">This function takes no arguments.</span></span>
+<span data-ttu-id="b9cba-108">この関数に引数はありません。</span><span class="sxs-lookup"><span data-stu-id="b9cba-108">This function takes no arguments.</span></span>
   
-## <a name="return-value"></a><span data-ttu-id="9ebcb-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="9ebcb-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b9cba-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="b9cba-109">Return value</span></span>
 
-<span data-ttu-id="9ebcb-110">この関数は値を返しません。</span><span class="sxs-lookup"><span data-stu-id="9ebcb-110">This function does not return a value.</span></span>
+<span data-ttu-id="b9cba-110">この関数は値を返しません。</span><span class="sxs-lookup"><span data-stu-id="b9cba-110">This function does not return a value.</span></span>
   
-## <a name="example"></a><span data-ttu-id="9ebcb-111">例</span><span class="sxs-lookup"><span data-stu-id="9ebcb-111">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b9cba-111">例</span><span class="sxs-lookup"><span data-stu-id="b9cba-111">Example</span></span>
 
-<span data-ttu-id="9ebcb-112">この例では **InitFramework** 関数を使用して、すべての一時メモリを解放します。</span><span class="sxs-lookup"><span data-stu-id="9ebcb-112">This example uses the **InitFramework** function to free all temporary memory.</span></span> 
+<span data-ttu-id="b9cba-112">この例では **InitFramework** 関数を使用して、すべての一時メモリを解放します。</span><span class="sxs-lookup"><span data-stu-id="b9cba-112">This example uses the **InitFramework** function to free all temporary memory.</span></span> 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   
@@ -50,9 +50,9 @@ short WINAPI InitFrameworkExample(void)
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="9ebcb-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="9ebcb-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b9cba-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="b9cba-113">See also</span></span>
 
 
 
-[<span data-ttu-id="9ebcb-114">フレームワーク ライブラリの関数</span><span class="sxs-lookup"><span data-stu-id="9ebcb-114">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
+[<span data-ttu-id="b9cba-114">フレームワーク ライブラリの関数</span><span class="sxs-lookup"><span data-stu-id="b9cba-114">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
 

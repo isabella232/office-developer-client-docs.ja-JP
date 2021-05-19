@@ -1,5 +1,5 @@
 ---
-title: フィルターによるテーブルの位置設定
+title: フィルターを使用してテーブルの位置を設定する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,21 +15,21 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33425471"
 ---
-# <a name="setting-a-table-position-with-a-filter"></a><span data-ttu-id="02da6-103">フィルターによるテーブルの位置設定</span><span class="sxs-lookup"><span data-stu-id="02da6-103">Setting a Table Position with a Filter</span></span>
+# <a name="setting-a-table-position-with-a-filter"></a><span data-ttu-id="ddaba-103">フィルターを使用してテーブルの位置を設定する</span><span class="sxs-lookup"><span data-stu-id="ddaba-103">Setting a Table Position with a Filter</span></span>
 
   
   
-<span data-ttu-id="02da6-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="02da6-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="ddaba-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ddaba-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="02da6-105">Table ユーザーは、フィルタ条件のセットに一致する行にカーソルを移動することができます。</span><span class="sxs-lookup"><span data-stu-id="02da6-105">Table users can move the cursor to a row that matches a set of filter criteria.</span></span> <span data-ttu-id="02da6-106">フィルターは、列のプロパティ値、ビットマスク、サブオブジェクトなど、さまざまなガイドラインに基づいて行うことができます。</span><span class="sxs-lookup"><span data-stu-id="02da6-106">Filters can be based on a variety of guidelines such as column property values, bitmasks, or subobjects.</span></span> <span data-ttu-id="02da6-107">フィルターは、 [srestriction](srestriction.md)構造を使用して MAPI で指定されます。</span><span class="sxs-lookup"><span data-stu-id="02da6-107">Filters are specified in MAPI using an [SRestriction](srestriction.md) structure.</span></span> 
+<span data-ttu-id="ddaba-105">テーブル ユーザーは、一連のフィルター条件に一致する行にカーソルを移動できます。</span><span class="sxs-lookup"><span data-stu-id="ddaba-105">Table users can move the cursor to a row that matches a set of filter criteria.</span></span> <span data-ttu-id="ddaba-106">フィルターは、列のプロパティ値、ビットマスク、サブオブジェクトなど、さまざまなガイドラインに基づいて設定できます。</span><span class="sxs-lookup"><span data-stu-id="ddaba-106">Filters can be based on a variety of guidelines such as column property values, bitmasks, or subobjects.</span></span> <span data-ttu-id="ddaba-107">フィルターは [、SRestriction 構造を使用して MAPI で指定](srestriction.md) されます。</span><span class="sxs-lookup"><span data-stu-id="ddaba-107">Filters are specified in MAPI using an [SRestriction](srestriction.md) structure.</span></span> 
   
- <span data-ttu-id="02da6-108">**制限で設定された条件に一致する最初の行にテーブルを配置するには**</span><span class="sxs-lookup"><span data-stu-id="02da6-108">**To position a table to the first row that matches the criteria established in a restriction**</span></span>
+ <span data-ttu-id="ddaba-108">**制限で設定された条件に一致する最初の行にテーブルを配置するには**</span><span class="sxs-lookup"><span data-stu-id="ddaba-108">**To position a table to the first row that matches the criteria established in a restriction**</span></span>
   
-- <span data-ttu-id="02da6-109">[IMAPITable:: FindRow](imapitable-findrow.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="02da6-109">Call the [IMAPITable::FindRow](imapitable-findrow.md) method.</span></span> <span data-ttu-id="02da6-110">**FindRow**は、特定のブックマークで表される行から順に検索し、制限で指定された条件に一致する行を検索します。</span><span class="sxs-lookup"><span data-stu-id="02da6-110">Starting with the row represented by a particular bookmark, **FindRow** searches in either a forward or backward direction to locate a row that matches the criteria specified in the restriction.</span></span> <span data-ttu-id="02da6-111">**FindRow**は、小数点以下の値ではなく、文字列に基づくスクロールバーを実装するのに便利です。</span><span class="sxs-lookup"><span data-stu-id="02da6-111">**FindRow** can be useful for implementing a scroll bar that is based on character strings, instead of fractional values.</span></span> <span data-ttu-id="02da6-112">たとえば、クライアントは、統合されたアドレス帳を検索するときに、MAPI の**FindRow**の実装を呼び出すことができます。これにより、ユーザーは1つ以上の文字を入力して、指定した文字で始まる最初の名前を検索できます。</span><span class="sxs-lookup"><span data-stu-id="02da6-112">For example, a client can call MAPI's implementation of **FindRow** when searching through the integrated address book to enable a user, by entering one or more characters, to locate the first name that begins with the specified characters.</span></span> 
+- <span data-ttu-id="ddaba-109">[IMAPITable::FindRow メソッドを呼び出](imapitable-findrow.md)します。</span><span class="sxs-lookup"><span data-stu-id="ddaba-109">Call the [IMAPITable::FindRow](imapitable-findrow.md) method.</span></span> <span data-ttu-id="ddaba-110">FindRow は、特定のブックマークで表される行から順方向または後方方向に検索し、制限で指定された条件に一致する行を検索します。</span><span class="sxs-lookup"><span data-stu-id="ddaba-110">Starting with the row represented by a particular bookmark, **FindRow** searches in either a forward or backward direction to locate a row that matches the criteria specified in the restriction.</span></span> <span data-ttu-id="ddaba-111">**FindRow** は、小数部の値ではなく、文字列に基づくスクロール バーを実装する場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="ddaba-111">**FindRow** can be useful for implementing a scroll bar that is based on character strings, instead of fractional values.</span></span> <span data-ttu-id="ddaba-112">たとえば、クライアントは、統合アドレス帳を検索するときに MAPI の **FindRow** の実装を呼び出して、1 つ以上の文字を入力して、指定された文字で始まる最初の名前を見つけるために、ユーザーを有効にできます。</span><span class="sxs-lookup"><span data-stu-id="ddaba-112">For example, a client can call MAPI's implementation of **FindRow** when searching through the integrated address book to enable a user, by entering one or more characters, to locate the first name that begins with the specified characters.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="02da6-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="02da6-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ddaba-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="ddaba-113">See also</span></span>
 
 
 
-[<span data-ttu-id="02da6-114">MAPI テーブル</span><span class="sxs-lookup"><span data-stu-id="02da6-114">MAPI Tables</span></span>](mapi-tables.md)
+[<span data-ttu-id="ddaba-114">MAPI テーブル</span><span class="sxs-lookup"><span data-stu-id="ddaba-114">MAPI Tables</span></span>](mapi-tables.md)
 

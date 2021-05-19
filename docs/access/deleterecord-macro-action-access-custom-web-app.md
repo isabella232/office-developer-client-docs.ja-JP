@@ -1,5 +1,5 @@
 ---
-title: DeleteRecord マクロアクション (Access カスタム web アプリ)
+title: DeleteRecord マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,15 +13,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420991"
 ---
-# <a name="deleterecord-macro-action-access-custom-web-app"></a><span data-ttu-id="59c01-103">DeleteRecord マクロアクション (Access カスタム web アプリ)</span><span class="sxs-lookup"><span data-stu-id="59c01-103">DeleteRecord Macro action (Access custom web app)</span></span>
+# <a name="deleterecord-macro-action-access-custom-web-app"></a><span data-ttu-id="f93e0-103">DeleteRecord マクロ アクション (Access カスタム Web アプリ)</span><span class="sxs-lookup"><span data-stu-id="f93e0-103">DeleteRecord Macro action (Access custom web app)</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="59c01-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="59c01-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="f93e0-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="f93e0-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
-<span data-ttu-id="59c01-106">"**DeleteRecord/レコードの削除**" アクションを使用して、レコードを削除できます。</span><span class="sxs-lookup"><span data-stu-id="59c01-106">You can use the **DeleteRecord** action to delete a record.</span></span> 
+<span data-ttu-id="f93e0-106">"**DeleteRecord/レコードの削除**" アクションを使用して、レコードを削除できます。</span><span class="sxs-lookup"><span data-stu-id="f93e0-106">You can use the **DeleteRecord** action to delete a record.</span></span> 
   
-## <a name="setting"></a><span data-ttu-id="59c01-107">Setting</span><span class="sxs-lookup"><span data-stu-id="59c01-107">Setting</span></span>
+## <a name="setting"></a><span data-ttu-id="f93e0-107">Setting</span><span class="sxs-lookup"><span data-stu-id="f93e0-107">Setting</span></span>
 
-<span data-ttu-id="59c01-108">ユーザー インターフェイス (UI) マクロで使用されるとき、 **DeleteRecord** アクションには引数は含まれません。</span><span class="sxs-lookup"><span data-stu-id="59c01-108">The **DeleteRecord** action doesn't contain any arguments when used in a user interface (UI) macro.</span></span> 
+<span data-ttu-id="f93e0-108">ユーザー インターフェイス (UI) マクロで使用されるとき、 **DeleteRecord** アクションには引数は含まれません。</span><span class="sxs-lookup"><span data-stu-id="f93e0-108">The **DeleteRecord** action doesn't contain any arguments when used in a user interface (UI) macro.</span></span> 
   
 

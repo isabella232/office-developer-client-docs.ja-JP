@@ -16,12 +16,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424645"
 ---
-# <a name="reference-a-cell-in-a-formula"></a><span data-ttu-id="a521f-102">数式でセルを参照する</span><span class="sxs-lookup"><span data-stu-id="a521f-102">Reference a Cell in a Formula</span></span>
+# <a name="reference-a-cell-in-a-formula"></a><span data-ttu-id="539e6-102">数式でセルを参照する</span><span class="sxs-lookup"><span data-stu-id="539e6-102">Reference a Cell in a Formula</span></span>
 
-1. <span data-ttu-id="a521f-103">参照元となるセルをダブルクリックし、次に数式内で参照先のセルを挿入する位置にカーソルを置きます。</span><span class="sxs-lookup"><span data-stu-id="a521f-103">Double-click the cell in which you want to place the reference, and then place the insertion point at the location you want in the formula.</span></span>
+1. <span data-ttu-id="539e6-103">参照元となるセルをダブルクリックし、次に数式内で参照先のセルを挿入する位置にカーソルを置きます。</span><span class="sxs-lookup"><span data-stu-id="539e6-103">Double-click the cell in which you want to place the reference, and then place the insertion point at the location you want in the formula.</span></span>
     
-2. <span data-ttu-id="a521f-104">参照先となるセルをクリックします。</span><span class="sxs-lookup"><span data-stu-id="a521f-104">Click the cell you want to reference.</span></span>
+2. <span data-ttu-id="539e6-104">参照先となるセルをクリックします。</span><span class="sxs-lookup"><span data-stu-id="539e6-104">Click the cell you want to reference.</span></span>
     
-3. <span data-ttu-id="a521f-p101">数式を適用する場合は、Enter キーを押します。変更を取り消す場合は、Esc キーを押します。</span><span class="sxs-lookup"><span data-stu-id="a521f-p101">Press ENTER to accept the formula. Or press ESC to cancel the changes.</span></span>
+3. <span data-ttu-id="539e6-p101">数式を適用する場合は、Enter キーを押します。変更を取り消す場合は、Esc キーを押します。</span><span class="sxs-lookup"><span data-stu-id="539e6-p101">Press ENTER to accept the formula. Or press ESC to cancel the changes.</span></span>
     
 

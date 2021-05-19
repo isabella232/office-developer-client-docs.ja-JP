@@ -19,46 +19,46 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33423455"
 ---
-# <a name="pidtagconvertedeits-canonical-property"></a><span data-ttu-id="0b06b-103">PidTagConvertedEits 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="0b06b-103">PidTagConvertedEits Canonical Property</span></span>
+# <a name="pidtagconvertedeits-canonical-property"></a><span data-ttu-id="5b023-103">PidTagConvertedEits 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="5b023-103">PidTagConvertedEits Canonical Property</span></span>
 
   
   
-<span data-ttu-id="0b06b-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="0b06b-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="5b023-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="5b023-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="0b06b-105">変換後のメッセージ内のテキストの種類の識別子が含まれています。</span><span class="sxs-lookup"><span data-stu-id="0b06b-105">Contains an identifier for the types of text in a message after conversion.</span></span>
+<span data-ttu-id="5b023-105">変換後のメッセージ内のテキストの種類の識別子を格納します。</span><span class="sxs-lookup"><span data-stu-id="5b023-105">Contains an identifier for the types of text in a message after conversion.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="0b06b-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="0b06b-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="0b06b-107">PR_CONVERTED_EITS</span><span class="sxs-lookup"><span data-stu-id="0b06b-107">PR_CONVERTED_EITS</span></span>  <br/> |
-|<span data-ttu-id="0b06b-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="0b06b-108">Identifier:</span></span>  <br/> |<span data-ttu-id="0b06b-109">0x000e</span><span class="sxs-lookup"><span data-stu-id="0b06b-109">0x000E</span></span>  <br/> |
-|<span data-ttu-id="0b06b-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="0b06b-110">Data type:</span></span>  <br/> |<span data-ttu-id="0b06b-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="0b06b-111">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="0b06b-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="0b06b-112">Area:</span></span>  <br/> |<span data-ttu-id="0b06b-113">Exchange</span><span class="sxs-lookup"><span data-stu-id="0b06b-113">Exchange</span></span>  <br/> |
+|<span data-ttu-id="5b023-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="5b023-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="5b023-107">PR_CONVERTED_EITS</span><span class="sxs-lookup"><span data-stu-id="5b023-107">PR_CONVERTED_EITS</span></span>  <br/> |
+|<span data-ttu-id="5b023-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="5b023-108">Identifier:</span></span>  <br/> |<span data-ttu-id="5b023-109">0x000E</span><span class="sxs-lookup"><span data-stu-id="5b023-109">0x000E</span></span>  <br/> |
+|<span data-ttu-id="5b023-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="5b023-110">Data type:</span></span>  <br/> |<span data-ttu-id="5b023-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="5b023-111">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="5b023-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="5b023-112">Area:</span></span>  <br/> |<span data-ttu-id="5b023-113">Exchange</span><span class="sxs-lookup"><span data-stu-id="5b023-113">Exchange</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="0b06b-114">注釈</span><span class="sxs-lookup"><span data-stu-id="0b06b-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5b023-114">注釈</span><span class="sxs-lookup"><span data-stu-id="5b023-114">Remarks</span></span>
 
-<span data-ttu-id="0b06b-115">このプロパティは、エンコードされた情報の種類 (eits がメッセージのテキストコンポーネントを変換するために使用されたことを示します。</span><span class="sxs-lookup"><span data-stu-id="0b06b-115">This property indicates which encoded information types (EITs) were used to convert the text components of the message.</span></span>
+<span data-ttu-id="5b023-115">このプロパティは、メッセージのテキスト コンポーネントの変換に使用されたエンコードされた情報の種類 (EIT) を示します。</span><span class="sxs-lookup"><span data-stu-id="5b023-115">This property indicates which encoded information types (EITs) were used to convert the text components of the message.</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="0b06b-116">関連リソース</span><span class="sxs-lookup"><span data-stu-id="0b06b-116">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="5b023-116">関連リソース</span><span class="sxs-lookup"><span data-stu-id="5b023-116">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="0b06b-117">ヘッダーファイル</span><span class="sxs-lookup"><span data-stu-id="0b06b-117">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="5b023-117">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="5b023-117">Header files</span></span>
 
-<span data-ttu-id="0b06b-118">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="0b06b-118">Mapidefs.h</span></span>
+<span data-ttu-id="5b023-118">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="5b023-118">Mapidefs.h</span></span>
   
-> <span data-ttu-id="0b06b-119">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="0b06b-119">Provides data type definitions.</span></span>
+> <span data-ttu-id="5b023-119">データ型の定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="5b023-119">Provides data type definitions.</span></span>
     
-<span data-ttu-id="0b06b-120">Mapitags</span><span class="sxs-lookup"><span data-stu-id="0b06b-120">Mapitags.h</span></span>
+<span data-ttu-id="5b023-120">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="5b023-120">Mapitags.h</span></span>
   
-> <span data-ttu-id="0b06b-121">関連するプロパティとしてリストされているプロパティの定義が含まれます。</span><span class="sxs-lookup"><span data-stu-id="0b06b-121">Contains definitions of properties listed as associated properties.</span></span>
+> <span data-ttu-id="5b023-121">関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。</span><span class="sxs-lookup"><span data-stu-id="5b023-121">Contains definitions of properties listed as associated properties.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="0b06b-122">関連項目</span><span class="sxs-lookup"><span data-stu-id="0b06b-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5b023-122">関連項目</span><span class="sxs-lookup"><span data-stu-id="5b023-122">See also</span></span>
 
 
 
-[<span data-ttu-id="0b06b-123">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="0b06b-123">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="5b023-123">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="5b023-123">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="0b06b-124">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="0b06b-124">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="5b023-124">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="5b023-124">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="0b06b-125">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="0b06b-125">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="5b023-125">標準プロパティ名を MAPI 名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="5b023-125">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="0b06b-126">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="0b06b-126">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="5b023-126">MAPI 名を標準プロパティ名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="5b023-126">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

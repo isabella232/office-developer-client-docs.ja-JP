@@ -1,5 +1,5 @@
 ---
-title: フォーム構成ファイル [Extensions] セクション
+title: フォーム構成ファイル [拡張機能] セクション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,31 +15,31 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33423756"
 ---
-# <a name="form-configuration-file-extensions-section"></a><span data-ttu-id="64fa0-103">フォーム構成ファイル [Extensions] セクション</span><span class="sxs-lookup"><span data-stu-id="64fa0-103">Form Configuration File [Extensions] Section</span></span>
+# <a name="form-configuration-file-extensions-section"></a><span data-ttu-id="4054a-103">フォーム構成ファイル [拡張機能] セクション</span><span class="sxs-lookup"><span data-stu-id="4054a-103">Form Configuration File [Extensions] Section</span></span>
 
   
   
-<span data-ttu-id="64fa0-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="64fa0-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="4054a-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="4054a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="64fa0-105">**[Extensions]** セクションには、フォームの拡張属性 (通常は名前付きプロパティセット) が一覧表示されます。これは、フォーム構成ファイルの **[Description]** セクションに示されている基本の属性以外の属性でもあります。</span><span class="sxs-lookup"><span data-stu-id="64fa0-105">The **[Extensions]** section lists the extended attributes of the form, typically a named property set, which are any attributes beyond the basic ones listed in the **[Description]** section of the form configuration file.</span></span> <span data-ttu-id="64fa0-106">拡張属性は、プロパティタグで high bit が設定された**imapiforminfo**オブジェクトの**GetProps**メソッドへの呼び出しから返されるプロパティです。</span><span class="sxs-lookup"><span data-stu-id="64fa0-106">Extended attributes are properties returned from calls to the **GetProps** method of the **IMAPIFormInfo** object with the high bit set in the property tag.</span></span> <span data-ttu-id="64fa0-107">クライアントアプリケーションは、これらのタグを取得することによって、フォームの拡張属性を決定できます。</span><span class="sxs-lookup"><span data-stu-id="64fa0-107">Client applications can determine a form's extended attributes, if any, by retrieving these tags.</span></span> <span data-ttu-id="64fa0-108">そのためには、クライアントは[imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)メソッドを呼び出し、フォームのプロパティの名前を渡し、 [imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出してプロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="64fa0-108">To do so, clients call the [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) method, passing in the names of the form's properties and call the [IMAPIProp::GetProps](imapiprop-getprops.md) method to get the properties.</span></span> 
+<span data-ttu-id="4054a-105">**[Extensions]** セクションには、フォームの拡張属性 (通常は名前付きプロパティ セット) が一覧表示されます。これは、フォーム構成ファイルの **[Description]** セクションに記載されている基本的な属性を超える属性です。</span><span class="sxs-lookup"><span data-stu-id="4054a-105">The **[Extensions]** section lists the extended attributes of the form, typically a named property set, which are any attributes beyond the basic ones listed in the **[Description]** section of the form configuration file.</span></span> <span data-ttu-id="4054a-106">拡張属性は、プロパティ タグにハイ ビットが設定された **IMAPIFormInfo** オブジェクトの **GetProps** メソッドの呼び出しから返されるプロパティです。</span><span class="sxs-lookup"><span data-stu-id="4054a-106">Extended attributes are properties returned from calls to the **GetProps** method of the **IMAPIFormInfo** object with the high bit set in the property tag.</span></span> <span data-ttu-id="4054a-107">クライアント アプリケーションは、これらのタグを取得することで、フォームの拡張属性がある場合は、その属性を特定できます。</span><span class="sxs-lookup"><span data-stu-id="4054a-107">Client applications can determine a form's extended attributes, if any, by retrieving these tags.</span></span> <span data-ttu-id="4054a-108">これを行うには、クライアントは [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) メソッドを呼び出し、フォームのプロパティの名前を渡し [、IMAPIProp::GetProps](imapiprop-getprops.md) メソッドを呼び出してプロパティを取得します。</span><span class="sxs-lookup"><span data-stu-id="4054a-108">To do so, clients call the [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) method, passing in the names of the form's properties and call the [IMAPIProp::GetProps](imapiprop-getprops.md) method to get the properties.</span></span> 
   
- <span data-ttu-id="64fa0-109">**Extensions**</span><span class="sxs-lookup"><span data-stu-id="64fa0-109">**[Extensions]**</span></span>
+ <span data-ttu-id="4054a-109">**[拡張機能]**</span><span class="sxs-lookup"><span data-stu-id="4054a-109">**[Extensions]**</span></span>
   
- <span data-ttu-id="64fa0-110">**Extension.**</span><span class="sxs-lookup"><span data-stu-id="64fa0-110">**Extension.**</span></span> <span data-ttu-id="64fa0-111">_string1_ =  文字列 (_string2_ )</span><span class="sxs-lookup"><span data-stu-id="64fa0-111">_string1_ =  _string2_</span></span>
+ <span data-ttu-id="4054a-110">**拡張機能。**</span><span class="sxs-lookup"><span data-stu-id="4054a-110">**Extension.**</span></span> <span data-ttu-id="4054a-111">_string1_  =  _string2_</span><span class="sxs-lookup"><span data-stu-id="4054a-111">_string1_ =  _string2_</span></span>
   
-<span data-ttu-id="64fa0-112">各拡張プロパティセクションは、MAPI 名前付きプロパティの構文を使用して、1つの拡張属性を定義します。</span><span class="sxs-lookup"><span data-stu-id="64fa0-112">Each extension property section defines one extension attribute using the MAPI named property syntax.</span></span> <span data-ttu-id="64fa0-113">プロパティの種類は、PT_LONG または PT_STRING8 のいずれかである必要があります。</span><span class="sxs-lookup"><span data-stu-id="64fa0-113">The property type must be either PT_LONG or PT_STRING8.</span></span> <span data-ttu-id="64fa0-114">名前付き文字列を含むプロパティセットはサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="64fa0-114">Property sets that contains named strings are not supported.</span></span> <span data-ttu-id="64fa0-115">**[Extension]** セクションの形式は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="64fa0-115">The format of the **[Extension]** section is:</span></span> 
+<span data-ttu-id="4054a-112">各拡張プロパティ セクションでは、MAPI 名前付きプロパティ構文を使用して 1 つの拡張属性を定義します。</span><span class="sxs-lookup"><span data-stu-id="4054a-112">Each extension property section defines one extension attribute using the MAPI named property syntax.</span></span> <span data-ttu-id="4054a-113">プロパティの種類は、プロパティの種類PT_LONGまたはPT_STRING8。</span><span class="sxs-lookup"><span data-stu-id="4054a-113">The property type must be either PT_LONG or PT_STRING8.</span></span> <span data-ttu-id="4054a-114">名前付き文字列を含むプロパティ セットはサポートされていません。</span><span class="sxs-lookup"><span data-stu-id="4054a-114">Property sets that contains named strings are not supported.</span></span> <span data-ttu-id="4054a-115">[拡張] **セクションの形式は** 次の形式です。</span><span class="sxs-lookup"><span data-stu-id="4054a-115">The format of the **[Extension]** section is:</span></span> 
   
- <span data-ttu-id="64fa0-116">**Extension.**</span><span class="sxs-lookup"><span data-stu-id="64fa0-116">**[Extension.**</span></span> <span data-ttu-id="64fa0-117">_string2_**]**</span><span class="sxs-lookup"><span data-stu-id="64fa0-117">_string2_ **]**</span></span>
+ <span data-ttu-id="4054a-116">**[拡張機能]**</span><span class="sxs-lookup"><span data-stu-id="4054a-116">**[Extension.**</span></span> <span data-ttu-id="4054a-117">_string2_ **]**</span><span class="sxs-lookup"><span data-stu-id="4054a-117">_string2_ **]**</span></span>
   
- <span data-ttu-id="64fa0-118">\*\*\*\* =  _整数_型</span><span class="sxs-lookup"><span data-stu-id="64fa0-118">**Type** =  _integer_</span></span>
+ <span data-ttu-id="4054a-118">**型**  =  _integer_</span><span class="sxs-lookup"><span data-stu-id="4054a-118">**Type** =  _integer_</span></span>
   
- <span data-ttu-id="64fa0-119">**NmidPropset** =  _guid_</span><span class="sxs-lookup"><span data-stu-id="64fa0-119">**NmidPropset** =  _guid_</span></span>
+ <span data-ttu-id="4054a-119">**NmidPropset**  =  _guid_</span><span class="sxs-lookup"><span data-stu-id="4054a-119">**NmidPropset** =  _guid_</span></span>
   
- <span data-ttu-id="64fa0-120">**nmidinteger** =  _整数_</span><span class="sxs-lookup"><span data-stu-id="64fa0-120">**NmidInteger** =  _integer_</span></span>
+ <span data-ttu-id="4054a-120">**NmidInteger**  =  _integer_</span><span class="sxs-lookup"><span data-stu-id="4054a-120">**NmidInteger** =  _integer_</span></span>
   
- <span data-ttu-id="64fa0-121">**値** =  __ 文字列 |  _整数_</span><span class="sxs-lookup"><span data-stu-id="64fa0-121">**Value** =  _string_ |  _integer_</span></span>
+ <span data-ttu-id="4054a-121">**値**  =  _string_  |  _integer_</span><span class="sxs-lookup"><span data-stu-id="4054a-121">**Value** =  _string_ |  _integer_</span></span>
   
-<span data-ttu-id="64fa0-122">**[Extensions]** セクションの例と、それに続く関連セクションを次に示します。</span><span class="sxs-lookup"><span data-stu-id="64fa0-122">An example of an **[Extensions]** section and a subsequent related section is shown following.</span></span> 
+<span data-ttu-id="4054a-122">**[Extensions] セクションとそれに** 続く関連セクションの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4054a-122">An example of an **[Extensions]** section and a subsequent related section is shown following.</span></span> 
   
 ```
 [Extensions]

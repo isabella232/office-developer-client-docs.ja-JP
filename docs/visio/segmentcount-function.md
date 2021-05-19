@@ -14,26 +14,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424498"
 ---
-# <a name="segmentcount-function"></a><span data-ttu-id="330f5-103">SEGMENTCOUNT 関数</span><span class="sxs-lookup"><span data-stu-id="330f5-103">SEGMENTCOUNT Function</span></span>
+# <a name="segmentcount-function"></a><span data-ttu-id="94642-103">SEGMENTCOUNT 関数</span><span class="sxs-lookup"><span data-stu-id="94642-103">SEGMENTCOUNT Function</span></span>
 
-<span data-ttu-id="330f5-104">パスを形成する線分の数を返します。</span><span class="sxs-lookup"><span data-stu-id="330f5-104">Returns the number of line segments that make up the path.</span></span>
+<span data-ttu-id="94642-104">パスを形成する線分の数を返します。</span><span class="sxs-lookup"><span data-stu-id="94642-104">Returns the number of line segments that make up the path.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="330f5-105">構文</span><span class="sxs-lookup"><span data-stu-id="330f5-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="94642-105">構文</span><span class="sxs-lookup"><span data-stu-id="94642-105">Syntax</span></span>
 
-<span data-ttu-id="330f5-106">SEGMENTCOUNT (\* \* *pa f* \* \*)</span><span class="sxs-lookup"><span data-stu-id="330f5-106">SEGMENTCOUNT(\*\* *pathRef* \*\* )</span></span> 
+<span data-ttu-id="94642-106">SEGMENTCOUNT(\*\* *pathRef* \*\* )</span><span class="sxs-lookup"><span data-stu-id="94642-106">SEGMENTCOUNT(\*\* *pathRef* \*\* )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="330f5-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="330f5-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="94642-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="94642-107">Parameters</span></span>
 
-|<span data-ttu-id="330f5-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="330f5-108">**Name**</span></span>|<span data-ttu-id="330f5-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="330f5-109">**Required/Optional**</span></span>|<span data-ttu-id="330f5-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="330f5-110">**Data Type**</span></span>|<span data-ttu-id="330f5-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="330f5-111">**Description**</span></span>|
+|<span data-ttu-id="94642-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="94642-108">**Name**</span></span>|<span data-ttu-id="94642-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="94642-109">**Required/Optional**</span></span>|<span data-ttu-id="94642-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="94642-110">**Data Type**</span></span>|<span data-ttu-id="94642-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="94642-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="330f5-112">_paば f_</span><span class="sxs-lookup"><span data-stu-id="330f5-112">_pathRef_</span></span> <br/> |<span data-ttu-id="330f5-113">必須</span><span class="sxs-lookup"><span data-stu-id="330f5-113">Required</span></span>  <br/> |<span data-ttu-id="330f5-114">**整数型 (Integer)**</span><span class="sxs-lookup"><span data-stu-id="330f5-114">**Integer**</span></span> <br/> |<span data-ttu-id="330f5-115">パスを表す [Geometry] セクション。[Path] セルへの参照によって指定されます (Geometry1.Path など)。</span><span class="sxs-lookup"><span data-stu-id="330f5-115">The Geometry section that represents the path, specified by a reference to Path cell (for example, Geometry1.Path).</span></span>  <br/> |
+| <span data-ttu-id="94642-112">_pathRef_</span><span class="sxs-lookup"><span data-stu-id="94642-112">_pathRef_</span></span> <br/> |<span data-ttu-id="94642-113">必須</span><span class="sxs-lookup"><span data-stu-id="94642-113">Required</span></span>  <br/> |<span data-ttu-id="94642-114">**整数型 (Integer)**</span><span class="sxs-lookup"><span data-stu-id="94642-114">**Integer**</span></span> <br/> |<span data-ttu-id="94642-115">パスを表す [Geometry] セクション。[Path] セルへの参照によって指定されます (Geometry1.Path など)。</span><span class="sxs-lookup"><span data-stu-id="94642-115">The Geometry section that represents the path, specified by a reference to Path cell (for example, Geometry1.Path).</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="330f5-116">戻り値</span><span class="sxs-lookup"><span data-stu-id="330f5-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="94642-116">戻り値</span><span class="sxs-lookup"><span data-stu-id="94642-116">Return value</span></span>
 
-<span data-ttu-id="330f5-117">整数</span><span class="sxs-lookup"><span data-stu-id="330f5-117">Integer</span></span>
+<span data-ttu-id="94642-117">整数</span><span class="sxs-lookup"><span data-stu-id="94642-117">Integer</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="330f5-118">注釈</span><span class="sxs-lookup"><span data-stu-id="330f5-118">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="94642-118">注釈</span><span class="sxs-lookup"><span data-stu-id="94642-118">Remarks</span></span>
 
-<span data-ttu-id="330f5-119">飛び越し点は、返される線分の合計数には含まれません。</span><span class="sxs-lookup"><span data-stu-id="330f5-119">Line jumps are not included in the total number of segments returned.</span></span>
+<span data-ttu-id="94642-119">飛び越し点は、返される線分の合計数には含まれません。</span><span class="sxs-lookup"><span data-stu-id="94642-119">Line jumps are not included in the total number of segments returned.</span></span>
   
 

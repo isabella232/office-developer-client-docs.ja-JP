@@ -19,19 +19,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33423833"
 ---
-# <a name="pidtagautoconfigurationuserpassword-canonical-property"></a><span data-ttu-id="4d441-103">PidTagAutoConfigurationUserPassword 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="4d441-103">PidTagAutoConfigurationUserPassword Canonical Property</span></span>
+# <a name="pidtagautoconfigurationuserpassword-canonical-property"></a><span data-ttu-id="253da-103">PidTagAutoConfigurationUserPassword 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="253da-103">PidTagAutoConfigurationUserPassword Canonical Property</span></span>
 
   
   
-<span data-ttu-id="4d441-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="4d441-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="253da-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="253da-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="4d441-105">ユーザーのパスワードを表します。</span><span class="sxs-lookup"><span data-stu-id="4d441-105">Represents the user's password.</span></span>
+<span data-ttu-id="253da-105">ユーザーのパスワードを表します。</span><span class="sxs-lookup"><span data-stu-id="253da-105">Represents the user's password.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="4d441-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="4d441-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="4d441-107">PR_AUTOCFG_USER_PASSWORD_W</span><span class="sxs-lookup"><span data-stu-id="4d441-107">PR_AUTOCFG_USER_PASSWORD_W</span></span>  <br/> |
-|<span data-ttu-id="4d441-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="4d441-108">Identifier:</span></span>  <br/> |<span data-ttu-id="4d441-109">0x67FC</span><span class="sxs-lookup"><span data-stu-id="4d441-109">0x67FC</span></span>  <br/> |
-|<span data-ttu-id="4d441-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="4d441-110">Data type:</span></span>  <br/> |<span data-ttu-id="4d441-111">PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="4d441-111">PT_UNICODE</span></span>  <br/> |
-|<span data-ttu-id="4d441-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="4d441-112">Area:</span></span>  <br/> |<span data-ttu-id="4d441-113">メッセージの添付ファイル</span><span class="sxs-lookup"><span data-stu-id="4d441-113">Message attachment</span></span>  <br/> |
+|<span data-ttu-id="253da-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="253da-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="253da-107">PR_AUTOCFG_USER_PASSWORD_W</span><span class="sxs-lookup"><span data-stu-id="253da-107">PR_AUTOCFG_USER_PASSWORD_W</span></span>  <br/> |
+|<span data-ttu-id="253da-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="253da-108">Identifier:</span></span>  <br/> |<span data-ttu-id="253da-109">0x67FC</span><span class="sxs-lookup"><span data-stu-id="253da-109">0x67FC</span></span>  <br/> |
+|<span data-ttu-id="253da-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="253da-110">Data type:</span></span>  <br/> |<span data-ttu-id="253da-111">PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="253da-111">PT_UNICODE</span></span>  <br/> |
+|<span data-ttu-id="253da-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="253da-112">Area:</span></span>  <br/> |<span data-ttu-id="253da-113">メッセージの添付ファイル</span><span class="sxs-lookup"><span data-stu-id="253da-113">Message attachment</span></span>  <br/> |
    
 
