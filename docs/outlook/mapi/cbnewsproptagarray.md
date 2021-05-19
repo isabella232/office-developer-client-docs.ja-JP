@@ -19,35 +19,35 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417778"
 ---
-# <a name="cbnewsproptagarray"></a><span data-ttu-id="c4fe9-103">CbNewSPropTagArray</span><span class="sxs-lookup"><span data-stu-id="c4fe9-103">CbNewSPropTagArray</span></span>
+# <a name="cbnewsproptagarray"></a><span data-ttu-id="d1d4f-103">CbNewSPropTagArray</span><span class="sxs-lookup"><span data-stu-id="d1d4f-103">CbNewSPropTagArray</span></span>
 
   
   
-<span data-ttu-id="c4fe9-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="c4fe9-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="d1d4f-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="d1d4f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="c4fe9-105">指定した数のプロパティタグを含む新しい[SPropTagArray](sproptagarray.md)構造に割り当てるバイト数を計算します。</span><span class="sxs-lookup"><span data-stu-id="c4fe9-105">Computes the number of bytes to be allocated for a new [SPropTagArray](sproptagarray.md) structure that contains a specified number of property tags.</span></span> 
+<span data-ttu-id="d1d4f-105">指定した数のプロパティ タグを含む新しい [SPropTagArray](sproptagarray.md) 構造体に割り当てるバイト数を計算します。</span><span class="sxs-lookup"><span data-stu-id="d1d4f-105">Computes the number of bytes to be allocated for a new [SPropTagArray](sproptagarray.md) structure that contains a specified number of property tags.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="c4fe9-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="c4fe9-106">Header file:</span></span>  <br/> |<span data-ttu-id="c4fe9-107">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="c4fe9-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="c4fe9-108">関連する構造:</span><span class="sxs-lookup"><span data-stu-id="c4fe9-108">Related structure:</span></span>  <br/> |<span data-ttu-id="c4fe9-109">**SPropTagArray**</span><span class="sxs-lookup"><span data-stu-id="c4fe9-109">**SPropTagArray**</span></span> <br/> |
+|<span data-ttu-id="d1d4f-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="d1d4f-106">Header file:</span></span>  <br/> |<span data-ttu-id="d1d4f-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="d1d4f-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="d1d4f-108">関連する構造:</span><span class="sxs-lookup"><span data-stu-id="d1d4f-108">Related structure:</span></span>  <br/> |<span data-ttu-id="d1d4f-109">**SPropTagArray**</span><span class="sxs-lookup"><span data-stu-id="d1d4f-109">**SPropTagArray**</span></span> <br/> |
    
 ```cpp
 CbNewSPropTagArray (_ctag)
 ```
 
-## <a name="parameters"></a><span data-ttu-id="c4fe9-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="c4fe9-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="d1d4f-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d1d4f-110">Parameters</span></span>
 
- <span data-ttu-id="c4fe9-111">__ctag_</span><span class="sxs-lookup"><span data-stu-id="c4fe9-111">__ctag_</span></span>
+ <span data-ttu-id="d1d4f-111">_ _ctag_</span><span class="sxs-lookup"><span data-stu-id="d1d4f-111">_ _ctag_</span></span>
   
-> <span data-ttu-id="c4fe9-112">新しい**SPropTagArray**構造に含めるプロパティタグの数。</span><span class="sxs-lookup"><span data-stu-id="c4fe9-112">Count of property tags to be included in the new **SPropTagArray** structure.</span></span> 
+> <span data-ttu-id="d1d4f-112">新しい **SPropTagArray** 構造体に含めるプロパティ タグの数。</span><span class="sxs-lookup"><span data-stu-id="d1d4f-112">Count of property tags to be included in the new **SPropTagArray** structure.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="c4fe9-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="c4fe9-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d1d4f-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="d1d4f-113">See also</span></span>
 
 
 
-[<span data-ttu-id="c4fe9-114">SPropTagArray</span><span class="sxs-lookup"><span data-stu-id="c4fe9-114">SPropTagArray</span></span>](sproptagarray.md)
+[<span data-ttu-id="d1d4f-114">SPropTagArray</span><span class="sxs-lookup"><span data-stu-id="d1d4f-114">SPropTagArray</span></span>](sproptagarray.md)
 
 
-[<span data-ttu-id="c4fe9-115">構造に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="c4fe9-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
+[<span data-ttu-id="d1d4f-115">構造に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="d1d4f-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
 

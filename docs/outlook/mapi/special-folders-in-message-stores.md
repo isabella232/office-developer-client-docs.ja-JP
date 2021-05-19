@@ -15,17 +15,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33416763"
 ---
-# <a name="special-folders-in-message-stores"></a><span data-ttu-id="b3e0c-103">���[���̕ۑ��ꏊ�œ��ʂȃt�H���_�[</span><span class="sxs-lookup"><span data-stu-id="b3e0c-103">Special Folders in Message Stores</span></span>
+# <a name="special-folders-in-message-stores"></a><span data-ttu-id="ebdbb-103">���[���̕ۑ��ꏊ�œ��ʂȃt�H���_�[</span><span class="sxs-lookup"><span data-stu-id="ebdbb-103">Special Folders in Message Stores</span></span>
 
   
   
-<span data-ttu-id="b3e0c-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b3e0c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="ebdbb-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ebdbb-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="b3e0c-p101">Special folders such as the Inbox, Outbox, and search-results folder may be created in advance and protected by the message store provider. If the folders do not exist, MAPI will attempt to create them in the message store by calling the [HrValidateIPMSubtree](hrvalidateipmsubtree.md) function. For more information, see [MAPI Special Folders](mapi-special-folders.md).</span><span class="sxs-lookup"><span data-stu-id="b3e0c-p101">Special folders such as the Inbox, Outbox, and search-results folder may be created in advance and protected by the message store provider. If the folders do not exist, MAPI will attempt to create them in the message store by calling the [HrValidateIPMSubtree](hrvalidateipmsubtree.md) function. For more information, see [MAPI Special Folders](mapi-special-folders.md).</span></span>
+<span data-ttu-id="ebdbb-p101">Special folders such as the Inbox, Outbox, and search-results folder may be created in advance and protected by the message store provider. If the folders do not exist, MAPI will attempt to create them in the message store by calling the [HrValidateIPMSubtree](hrvalidateipmsubtree.md) function. For more information, see [MAPI Special Folders](mapi-special-folders.md).</span><span class="sxs-lookup"><span data-stu-id="ebdbb-p101">Special folders such as the Inbox, Outbox, and search-results folder may be created in advance and protected by the message store provider. If the folders do not exist, MAPI will attempt to create them in the message store by calling the [HrValidateIPMSubtree](hrvalidateipmsubtree.md) function. For more information, see [MAPI Special Folders](mapi-special-folders.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="b3e0c-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="b3e0c-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ebdbb-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="ebdbb-108">See also</span></span>
 
 
 
-[<span data-ttu-id="b3e0c-109">メッセージ ストアのフォルダーの実装</span><span class="sxs-lookup"><span data-stu-id="b3e0c-109">Implementing Folders in Message Stores</span></span>](implementing-folders-in-message-stores.md)
+[<span data-ttu-id="ebdbb-109">メッセージ ストアのフォルダーの実装</span><span class="sxs-lookup"><span data-stu-id="ebdbb-109">Implementing Folders in Message Stores</span></span>](implementing-folders-in-message-stores.md)
 

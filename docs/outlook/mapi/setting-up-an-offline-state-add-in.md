@@ -13,19 +13,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32339292"
 ---
-# <a name="setting-up-an-offline-state-add-in"></a><span data-ttu-id="316a9-103">オフライン状態アドインのセットアップ</span><span class="sxs-lookup"><span data-stu-id="316a9-103">Setting up an offline state add-in</span></span>
+# <a name="setting-up-an-offline-state-add-in"></a><span data-ttu-id="fb40f-103">オフライン状態アドインのセットアップ</span><span class="sxs-lookup"><span data-stu-id="fb40f-103">Setting up an offline state add-in</span></span>
 
-<span data-ttu-id="316a9-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="316a9-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="fb40f-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="fb40f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="316a9-105">オフライン状態アドインを実装するには、接続、初期化、その他のセットアップ機能を実装する必要があります。</span><span class="sxs-lookup"><span data-stu-id="316a9-105">To implement an offline state add-in, you must implement connection, initialization, and other setup functions.</span></span> <span data-ttu-id="316a9-106">このトピックでは、サンプルのオフライン状態アドインのコード例を使用して、これらの接続、初期化、およびセットアップ関数について説明します。</span><span class="sxs-lookup"><span data-stu-id="316a9-106">In this topic, these connection, initialization, and setup functions are demonstrated by using code examples from the Sample Offline State Add-in.</span></span> <span data-ttu-id="316a9-107">サンプルのオフライン状態アドインは、オフライン状態 API を使用して Outlook に**オフライン状態**メニューを追加する COM アドインです。</span><span class="sxs-lookup"><span data-stu-id="316a9-107">The Sample Offline State Add-in is a COM add-in that adds an **Offline State** menu to Outlook and uses the Offline State API.</span></span> <span data-ttu-id="316a9-108">**オフライン状態**メニューを使用して、状態監視を有効または無効にしたり、現在の状態を確認したり、現在の状態を変更したりすることができます。</span><span class="sxs-lookup"><span data-stu-id="316a9-108">Through the **Offline State** menu, you can enable or disable state monitoring, check the current state, and change the current state.</span></span> <span data-ttu-id="316a9-109">サンプルのオフライン状態アドインのダウンロードやインストールの詳細については、[サンプルのオフライン状態アドインのインストール](installing-the-sample-offline-state-add-in.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="316a9-109">For more information about downloading and installing the Sample Offline State Add-in, see [Installing the Sample Offline State Add-in](installing-the-sample-offline-state-add-in.md).</span></span> <span data-ttu-id="316a9-110">オフライン状態 API の詳細については、[オフライン状態 API について](about-the-offline-state-api.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="316a9-110">For more information about the Offline State API, see [About the Offline State API](about-the-offline-state-api.md).</span></span>
+<span data-ttu-id="fb40f-105">オフライン状態アドインを実装するには、接続、初期化、その他のセットアップ機能を実装する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fb40f-105">To implement an offline state add-in, you must implement connection, initialization, and other setup functions.</span></span> <span data-ttu-id="fb40f-106">このトピックでは、これらの接続、初期化、およびセットアップ関数について、サンプル オフライン状態アドインのコード例を使用して説明します。</span><span class="sxs-lookup"><span data-stu-id="fb40f-106">In this topic, these connection, initialization, and setup functions are demonstrated by using code examples from the Sample Offline State Add-in.</span></span> <span data-ttu-id="fb40f-107">サンプルのオフライン状態アドインは、オフライン状態 API を使用して Outlook に **オフライン状態** メニューを追加する COM アドインです。</span><span class="sxs-lookup"><span data-stu-id="fb40f-107">The Sample Offline State Add-in is a COM add-in that adds an **Offline State** menu to Outlook and uses the Offline State API.</span></span> <span data-ttu-id="fb40f-108">[オフライン状態 **] メニュー** を使用すると、状態の監視を有効または無効にし、現在の状態を確認し、現在の状態を変更できます。</span><span class="sxs-lookup"><span data-stu-id="fb40f-108">Through the **Offline State** menu, you can enable or disable state monitoring, check the current state, and change the current state.</span></span> <span data-ttu-id="fb40f-109">サンプルのオフライン状態アドインのダウンロードやインストールの詳細については、[サンプルのオフライン状態アドインのインストール](installing-the-sample-offline-state-add-in.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fb40f-109">For more information about downloading and installing the Sample Offline State Add-in, see [Installing the Sample Offline State Add-in](installing-the-sample-offline-state-add-in.md).</span></span> <span data-ttu-id="fb40f-110">オフライン状態 API の詳細については、[オフライン状態 API について](about-the-offline-state-api.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fb40f-110">For more information about the Offline State API, see [About the Offline State API](about-the-offline-state-api.md).</span></span>
   
-<span data-ttu-id="316a9-111">オフライン状態アドインをセットアップした後、接続状態の変更を監視および変更するための関数を実装する必要があります。</span><span class="sxs-lookup"><span data-stu-id="316a9-111">After you set up an offline state add-in, you must implement functions to monitor and modify connection state changes.</span></span> <span data-ttu-id="316a9-112">詳細については、「[オフライン状態アドインを使用して接続状態の変更を監視](monitoring-connection-state-changes-using-an-offline-state-add-in.md)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="316a9-112">For more information, see [Monitoring Connection State Changes Using an Offline State Add-in](monitoring-connection-state-changes-using-an-offline-state-add-in.md).</span></span>
+<span data-ttu-id="fb40f-111">オフライン状態アドインをセットアップした後、接続状態の変更を監視および変更する関数を実装する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fb40f-111">After you set up an offline state add-in, you must implement functions to monitor and modify connection state changes.</span></span> <span data-ttu-id="fb40f-112">詳細については、「オフライン状態アドイン [を使用した接続状態の変更の監視」を参照してください](monitoring-connection-state-changes-using-an-offline-state-add-in.md)。</span><span class="sxs-lookup"><span data-stu-id="fb40f-112">For more information, see [Monitoring Connection State Changes Using an Offline State Add-in](monitoring-connection-state-changes-using-an-offline-state-add-in.md).</span></span>
   
-## <a name="on-connection-routine"></a><span data-ttu-id="316a9-113">接続ルーチン</span><span class="sxs-lookup"><span data-stu-id="316a9-113">On Connection routine</span></span>
+## <a name="on-connection-routine"></a><span data-ttu-id="fb40f-113">On Connection ルーチン</span><span class="sxs-lookup"><span data-stu-id="fb40f-113">On Connection routine</span></span>
 
-<span data-ttu-id="316a9-114">**[IDTExtensibility2 メソッド](https://msdn.microsoft.com/library/extensibility.idtextensibility2.onconnection%28v=VS.80%29.aspx)** は、アドインが読み込まれるたびに呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="316a9-114">The **[IDTExtensibility2.OnConnection Method](https://msdn.microsoft.com/library/extensibility.idtextensibility2.onconnection%28v=VS.80%29.aspx)** is called every time an add-in is loaded.</span></span> <span data-ttu-id="316a9-115">これはアドインのエントリポイントなので、アドインの開始時に`OnConnection`関数に記述したコードが呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="316a9-115">It is the entry point for the add-in, so the code you put in the  `OnConnection` function will be called when the add-in starts.</span></span> <span data-ttu-id="316a9-116">次の例では、 `OnConnection`関数は`HrInitAddin`関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="316a9-116">In the following example, the  `OnConnection` function calls the  `HrInitAddin` function.</span></span> 
+<span data-ttu-id="fb40f-114">**[IDTExtensibility2.OnConnection メソッド](https://msdn.microsoft.com/library/extensibility.idtextensibility2.onconnection%28v=VS.80%29.aspx)** は、アドインが読み込まれるごとに呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="fb40f-114">The **[IDTExtensibility2.OnConnection Method](https://msdn.microsoft.com/library/extensibility.idtextensibility2.onconnection%28v=VS.80%29.aspx)** is called every time an add-in is loaded.</span></span> <span data-ttu-id="fb40f-115">アドインのエントリ ポイントなので、アドインの開始時に関数に入力したコード  `OnConnection` が呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="fb40f-115">It is the entry point for the add-in, so the code you put in the  `OnConnection` function will be called when the add-in starts.</span></span> <span data-ttu-id="fb40f-116">次の例では、関数  `OnConnection` は関数を呼び出  `HrInitAddin` します。</span><span class="sxs-lookup"><span data-stu-id="fb40f-116">In the following example, the  `OnConnection` function calls the  `HrInitAddin` function.</span></span> 
   
-### <a name="cmyaddinonconnection-example"></a><span data-ttu-id="316a9-117">CMyAddin:: OnConnection () の使用例</span><span class="sxs-lookup"><span data-stu-id="316a9-117">CMyAddin::OnConnection() example</span></span>
+### <a name="cmyaddinonconnection-example"></a><span data-ttu-id="fb40f-117">CMyAddin::OnConnection() の例</span><span class="sxs-lookup"><span data-stu-id="fb40f-117">CMyAddin::OnConnection() example</span></span>
 
 ```cpp
 STDMETHODIMP CMyAddin::OnConnection( 
@@ -44,11 +44,11 @@ STDMETHODIMP CMyAddin::OnConnection(
 }
 ```
 
-## <a name="initialize-add-in-routine"></a><span data-ttu-id="316a9-118">アドインルーチンを初期化する</span><span class="sxs-lookup"><span data-stu-id="316a9-118">Initialize Add-in routine</span></span>
+## <a name="initialize-add-in-routine"></a><span data-ttu-id="fb40f-118">アドイン ルーチンの初期化</span><span class="sxs-lookup"><span data-stu-id="fb40f-118">Initialize Add-in routine</span></span>
 
-<span data-ttu-id="316a9-119">`HrInitAddin`関数は、、 `LoadLibraries`、 `HrCacheProfileName`および`HrAddMenuItems`の関数を呼び出して、オフライン状態アドインの設定を完了します。</span><span class="sxs-lookup"><span data-stu-id="316a9-119">The  `HrInitAddin` function calls the  `LoadLibraries`,  `HrCacheProfileName`, and  `HrAddMenuItems` functions to finish setting up the offline state add-in.</span></span> 
+<span data-ttu-id="fb40f-119">この  `HrInitAddin` 関数は、  `LoadLibraries` 、  `HrCacheProfileName` および関数を  `HrAddMenuItems` 呼び出して、オフライン状態アドインのセットアップを完了します。</span><span class="sxs-lookup"><span data-stu-id="fb40f-119">The  `HrInitAddin` function calls the  `LoadLibraries`,  `HrCacheProfileName`, and  `HrAddMenuItems` functions to finish setting up the offline state add-in.</span></span> 
   
-### <a name="cmyaddinhrinitaddin-example"></a><span data-ttu-id="316a9-120">CMyAddin:: hrinitaddin () の例</span><span class="sxs-lookup"><span data-stu-id="316a9-120">CMyAddin::HrInitAddin() example</span></span>
+### <a name="cmyaddinhrinitaddin-example"></a><span data-ttu-id="fb40f-120">CMyAddin::HrInitAddin() の例</span><span class="sxs-lookup"><span data-stu-id="fb40f-120">CMyAddin::HrInitAddin() example</span></span>
 
 ```cpp
 HRESULT CMyAddin::HrInitAddin() 
@@ -63,11 +63,11 @@ HRESULT CMyAddin::HrInitAddin()
 }
 ```
 
-## <a name="load-libraries-routine"></a><span data-ttu-id="316a9-121">ライブラリルーチンを読み込む</span><span class="sxs-lookup"><span data-stu-id="316a9-121">Load Libraries routine</span></span>
+## <a name="load-libraries-routine"></a><span data-ttu-id="fb40f-121">ライブラリの読み込みルーチン</span><span class="sxs-lookup"><span data-stu-id="fb40f-121">Load Libraries routine</span></span>
 
-<span data-ttu-id="316a9-122">この`LoadLibraries`関数は、アドインが必要とするダイナミックリンクライブラリ (DLL) ファイルを読み込みます。</span><span class="sxs-lookup"><span data-stu-id="316a9-122">The  `LoadLibraries` function loads the dynamic-link library (DLL) files that the add-in requires.</span></span> 
+<span data-ttu-id="fb40f-122">この  `LoadLibraries` 関数は、アドインで必要なダイナミック リンク ライブラリ (DLL) ファイルを読み込む。</span><span class="sxs-lookup"><span data-stu-id="fb40f-122">The  `LoadLibraries` function loads the dynamic-link library (DLL) files that the add-in requires.</span></span> 
   
-### <a name="loadlibraries-example"></a><span data-ttu-id="316a9-123">loadlibraries () の例</span><span class="sxs-lookup"><span data-stu-id="316a9-123">LoadLibraries() example</span></span>
+### <a name="loadlibraries-example"></a><span data-ttu-id="fb40f-123">LoadLibraries() の例</span><span class="sxs-lookup"><span data-stu-id="fb40f-123">LoadLibraries() example</span></span>
 
 ```cpp
 void LoadLibraries() 
@@ -166,11 +166,11 @@ void LoadLibraries()
 }
 ```
 
-## <a name="cache-profile-name-routine"></a><span data-ttu-id="316a9-124">キャッシュプロファイル名ルーチン</span><span class="sxs-lookup"><span data-stu-id="316a9-124">Cache Profile Name routine</span></span>
+## <a name="cache-profile-name-routine"></a><span data-ttu-id="fb40f-124">キャッシュ プロファイル名ルーチン</span><span class="sxs-lookup"><span data-stu-id="fb40f-124">Cache Profile Name routine</span></span>
 
-<span data-ttu-id="316a9-125">関数`HrCacheProfileName`は、 **[imapisupport::](imapisupport-openprofilesection.md)** openprofilesection 関数を呼び出して現在のセッションのプロファイルセクションを開き、ボタンハンドラーのプロファイルを設定します。</span><span class="sxs-lookup"><span data-stu-id="316a9-125">The  `HrCacheProfileName` function calls the **[IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md)** function to open a profile section for the current session, and then sets the profile for the button handlers.</span></span> 
+<span data-ttu-id="fb40f-125">この  `HrCacheProfileName` 関数は **[IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md)** 関数を呼び出して、現在のセッションのプロファイル セクションを開き、ボタン ハンドラーのプロファイルを設定します。</span><span class="sxs-lookup"><span data-stu-id="fb40f-125">The  `HrCacheProfileName` function calls the **[IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md)** function to open a profile section for the current session, and then sets the profile for the button handlers.</span></span> 
   
-### <a name="cmyaddinhrcacheprofilename-example"></a><span data-ttu-id="316a9-126">CMyAddin:: hrcacheprofilename () の例</span><span class="sxs-lookup"><span data-stu-id="316a9-126">CMyAddin::HrCacheProfileName() example</span></span>
+### <a name="cmyaddinhrcacheprofilename-example"></a><span data-ttu-id="fb40f-126">CMyAddin::HrCacheProfileName() の例</span><span class="sxs-lookup"><span data-stu-id="fb40f-126">CMyAddin::HrCacheProfileName() example</span></span>
 
 ```cpp
 HRESULT CMyAddin::HrCacheProfileName() 
@@ -212,11 +212,11 @@ HRESULT CMyAddin::HrCacheProfileName()
 }
 ```
 
-## <a name="add-menu-items-routine"></a><span data-ttu-id="316a9-127">メニュー項目ルーチンを追加する</span><span class="sxs-lookup"><span data-stu-id="316a9-127">Add Menu Items routine</span></span>
+## <a name="add-menu-items-routine"></a><span data-ttu-id="fb40f-127">メニュー項目の追加ルーチン</span><span class="sxs-lookup"><span data-stu-id="fb40f-127">Add Menu Items routine</span></span>
 
-<span data-ttu-id="316a9-128">この`HrAddMenuItems`関数は、Outlook でアドインが読み込まれたときに作成される**オフライン状態**メニューの下に表示されるメニューオプションを`DispEventAdvise`定義し、各メニュー項目を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="316a9-128">The  `HrAddMenuItems` function defines the menu options that appear under the **Offline State** menu that is created when the add-in is loaded in Outlook, and then calls  `DispEventAdvise` for each menu item.</span></span> 
+<span data-ttu-id="fb40f-128">この関数は、アドインが Outlook に読み込まれ、各メニュー項目を呼び出すときに作成される [オフライン状態] メニューの下に表示されるメニュー オプションを `HrAddMenuItems`  `DispEventAdvise` 定義します。</span><span class="sxs-lookup"><span data-stu-id="fb40f-128">The  `HrAddMenuItems` function defines the menu options that appear under the **Offline State** menu that is created when the add-in is loaded in Outlook, and then calls  `DispEventAdvise` for each menu item.</span></span> 
   
-### <a name="cmyaddinhraddmenuitems-example"></a><span data-ttu-id="316a9-129">CMyAddin:: hraddmenuitems () の例</span><span class="sxs-lookup"><span data-stu-id="316a9-129">CMyAddin::HrAddMenuItems() example</span></span>
+### <a name="cmyaddinhraddmenuitems-example"></a><span data-ttu-id="fb40f-129">CMyAddin::HrAddMenuItems() の例</span><span class="sxs-lookup"><span data-stu-id="fb40f-129">CMyAddin::HrAddMenuItems() example</span></span>
 
 ```cpp
 HRESULT CMyAddin::HrAddMenuItems() 
@@ -287,11 +287,11 @@ HRESULT CMyAddin::HrAddMenuItems()
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="316a9-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="316a9-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fb40f-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="fb40f-130">See also</span></span>
 
-- [<span data-ttu-id="316a9-131">オフライン状態 API について</span><span class="sxs-lookup"><span data-stu-id="316a9-131">About the Offline State API</span></span>](about-the-offline-state-api.md) 
-- [<span data-ttu-id="316a9-132">サンプルのオフライン状態アドインのインストール</span><span class="sxs-lookup"><span data-stu-id="316a9-132">Installing the Sample Offline State Add-in</span></span>](installing-the-sample-offline-state-add-in.md)
-- [<span data-ttu-id="316a9-133">サンプルのオフライン状態アドインについて</span><span class="sxs-lookup"><span data-stu-id="316a9-133">About the Sample Offline State Add-in</span></span>](about-the-sample-offline-state-add-in.md)
-- [<span data-ttu-id="316a9-134">オフライン状態アドインを使用した接続状態変更の監視</span><span class="sxs-lookup"><span data-stu-id="316a9-134">Monitoring Connection State Changes Using an Offline State Add-in</span></span>](monitoring-connection-state-changes-using-an-offline-state-add-in.md)
-- [<span data-ttu-id="316a9-135">オフライン状態アドインの切断</span><span class="sxs-lookup"><span data-stu-id="316a9-135">Disconnecting an Offline State Add-in</span></span>](disconnecting-an-offline-state-add-in.md)
+- [<span data-ttu-id="fb40f-131">オフライン状態 API について</span><span class="sxs-lookup"><span data-stu-id="fb40f-131">About the Offline State API</span></span>](about-the-offline-state-api.md) 
+- [<span data-ttu-id="fb40f-132">サンプルのオフライン状態アドインのインストール</span><span class="sxs-lookup"><span data-stu-id="fb40f-132">Installing the Sample Offline State Add-in</span></span>](installing-the-sample-offline-state-add-in.md)
+- [<span data-ttu-id="fb40f-133">サンプルのオフライン状態アドインについて</span><span class="sxs-lookup"><span data-stu-id="fb40f-133">About the Sample Offline State Add-in</span></span>](about-the-sample-offline-state-add-in.md)
+- [<span data-ttu-id="fb40f-134">オフライン状態アドインを使用した接続状態変更の監視</span><span class="sxs-lookup"><span data-stu-id="fb40f-134">Monitoring Connection State Changes Using an Offline State Add-in</span></span>](monitoring-connection-state-changes-using-an-offline-state-add-in.md)
+- [<span data-ttu-id="fb40f-135">オフライン状態アドインの切断</span><span class="sxs-lookup"><span data-stu-id="fb40f-135">Disconnecting an Offline State Add-in</span></span>](disconnecting-an-offline-state-add-in.md)
 

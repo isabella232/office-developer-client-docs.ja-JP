@@ -1,5 +1,5 @@
 ---
-title: MAPI アプリケーションの開発
+title: MAPI アプリケーション開発
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,12 +15,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417610"
 ---
-# <a name="mapi-application-development"></a><span data-ttu-id="0ef8d-103">MAPI アプリケーションの開発</span><span class="sxs-lookup"><span data-stu-id="0ef8d-103">MAPI Application Development</span></span>
+# <a name="mapi-application-development"></a><span data-ttu-id="6bd1f-103">MAPI アプリケーション開発</span><span class="sxs-lookup"><span data-stu-id="6bd1f-103">MAPI Application Development</span></span>
 
   
   
-<span data-ttu-id="0ef8d-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="0ef8d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="6bd1f-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="6bd1f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="0ef8d-105">このセクションのトピックは、クライアントアプリケーションおよびサービスプロバイダーの開発者に適用されます。</span><span class="sxs-lookup"><span data-stu-id="0ef8d-105">The topics in this section apply to developers of client applications and service providers.</span></span> <span data-ttu-id="0ef8d-106">これらのトピックは重要度の順に並べられています。</span><span class="sxs-lookup"><span data-stu-id="0ef8d-106">These topics are arranged in order of importance.</span></span> <span data-ttu-id="0ef8d-107">つまり、すべてのプログラマにとって重要なトピックが最初に表示され、最も重要なトピックまたはすべてのプログラマに適用されないトピックが最後に表示されます。</span><span class="sxs-lookup"><span data-stu-id="0ef8d-107">That is, topics that are critical to all programmers appear first and topics that are either of minimal importance or do not apply to all programmers appear last.</span></span>
+<span data-ttu-id="6bd1f-105">このセクションのトピックは、クライアント アプリケーションとサービス プロバイダーの開発者に適用されます。</span><span class="sxs-lookup"><span data-stu-id="6bd1f-105">The topics in this section apply to developers of client applications and service providers.</span></span> <span data-ttu-id="6bd1f-106">これらのトピックは、重要度の順に並べ替えされています。</span><span class="sxs-lookup"><span data-stu-id="6bd1f-106">These topics are arranged in order of importance.</span></span> <span data-ttu-id="6bd1f-107">つまり、すべてのプログラマにとって重要なトピックが最初に表示され、重要度が最も低いトピック、またはすべてのプログラマに適用されないトピックが最後に表示されます。</span><span class="sxs-lookup"><span data-stu-id="6bd1f-107">That is, topics that are critical to all programmers appear first and topics that are either of minimal importance or do not apply to all programmers appear last.</span></span>
   
 

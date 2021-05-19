@@ -19,38 +19,38 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33418149"
 ---
-# <a name="imapiclientshutdownqueryfastshutdown"></a><span data-ttu-id="7fc98-103">IMAPIClientShutdown::QueryFastShutdown</span><span class="sxs-lookup"><span data-stu-id="7fc98-103">IMAPIClientShutdown::QueryFastShutdown</span></span>
+# <a name="imapiclientshutdownqueryfastshutdown"></a><span data-ttu-id="2512d-103">IMAPIClientShutdown::QueryFastShutdown</span><span class="sxs-lookup"><span data-stu-id="2512d-103">IMAPIClientShutdown::QueryFastShutdown</span></span>
 
   
   
-<span data-ttu-id="7fc98-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="7fc98-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="2512d-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="2512d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="7fc98-105">読み込み済みの mapi プロバイダーによって提供される高速シャットダウンのサポートを mapi サブシステムに対して照会します。</span><span class="sxs-lookup"><span data-stu-id="7fc98-105">Queries the MAPI subsystem for fast shutdown support that is provided by loaded MAPI providers.</span></span>
+<span data-ttu-id="2512d-105">読み込まれた MAPI プロバイダーによって提供される高速シャットダウンのサポートを MAPI サブシステムに照会します。</span><span class="sxs-lookup"><span data-stu-id="2512d-105">Queries the MAPI subsystem for fast shutdown support that is provided by loaded MAPI providers.</span></span>
   
 ```cpp
 HRESULT QueryFastShutdown ();
 ```
 
-## <a name="return-value"></a><span data-ttu-id="7fc98-106">戻り値</span><span class="sxs-lookup"><span data-stu-id="7fc98-106">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="2512d-106">戻り値</span><span class="sxs-lookup"><span data-stu-id="2512d-106">Return value</span></span>
 
-<span data-ttu-id="7fc98-107">S_OK</span><span class="sxs-lookup"><span data-stu-id="7fc98-107">S_OK</span></span>
+<span data-ttu-id="2512d-107">S_OK</span><span class="sxs-lookup"><span data-stu-id="2512d-107">S_OK</span></span>
   
-> <span data-ttu-id="7fc98-108">mapi サブシステムは、高速シャットダウンを実行するための mapi クライアントをサポートします。</span><span class="sxs-lookup"><span data-stu-id="7fc98-108">The MAPI subsystem supports the MAPI client to do fast shutdown.</span></span>
+> <span data-ttu-id="2512d-108">MAPI サブシステムは、高速シャットダウンを実行する MAPI クライアントをサポートします。</span><span class="sxs-lookup"><span data-stu-id="2512d-108">The MAPI subsystem supports the MAPI client to do fast shutdown.</span></span>
     
-<span data-ttu-id="7fc98-109">MAPI_E_NO_SUPPORT</span><span class="sxs-lookup"><span data-stu-id="7fc98-109">MAPI_E_NO_SUPPORT</span></span>
+<span data-ttu-id="2512d-109">MAPI_E_NO_SUPPORT</span><span class="sxs-lookup"><span data-stu-id="2512d-109">MAPI_E_NO_SUPPORT</span></span>
   
-> <span data-ttu-id="7fc98-110">mapi プロバイダーは、高速シャットダウンを実行するための mapi クライアントをサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="7fc98-110">The MAPI provider does not support the MAPI client to do fast shutdown.</span></span>
+> <span data-ttu-id="2512d-110">MAPI プロバイダーは、高速シャットダウンを実行する MAPI クライアントをサポートしていない。</span><span class="sxs-lookup"><span data-stu-id="2512d-110">The MAPI provider does not support the MAPI client to do fast shutdown.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="7fc98-111">注釈</span><span class="sxs-lookup"><span data-stu-id="7fc98-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2512d-111">注釈</span><span class="sxs-lookup"><span data-stu-id="2512d-111">Remarks</span></span>
 
-<span data-ttu-id="7fc98-112">mapi サブシステムで高速シャットダウンを実行するための mapi クライアントがサポートされているかどうかは、ユーザーの Windows レジストリ設定または mapi クライアントの高速シャットダウンの既定の動作によって異なります。</span><span class="sxs-lookup"><span data-stu-id="7fc98-112">Whether the MAPI subsystem supports the MAPI client to do fast shutdown depends on the user's Windows registry setting or the default behavior of the MAPI client for fast shutdown.</span></span> <span data-ttu-id="7fc98-113">また、読み込み済みの MAPI プロバイダーが高速シャットダウンをサポートする機能によっても異なります。</span><span class="sxs-lookup"><span data-stu-id="7fc98-113">It also depends on the ability of the loaded MAPI providers to support fast shutdown.</span></span> <span data-ttu-id="7fc98-114">詳細については、「 [Fast Shutdown User Options](fast-shutdown-user-options.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7fc98-114">For more information, see [Fast Shutdown User Options](fast-shutdown-user-options.md).</span></span>
+<span data-ttu-id="2512d-112">MAPI サブシステムが高速シャットダウンを実行するために MAPI クライアントをサポートするかどうかは、ユーザーの Windows レジストリ設定または高速シャットダウン用の MAPI クライアントの既定の動作によって異なります。</span><span class="sxs-lookup"><span data-stu-id="2512d-112">Whether the MAPI subsystem supports the MAPI client to do fast shutdown depends on the user's Windows registry setting or the default behavior of the MAPI client for fast shutdown.</span></span> <span data-ttu-id="2512d-113">また、読み込まれた MAPI プロバイダーが高速シャットダウンをサポートする機能にも依存します。</span><span class="sxs-lookup"><span data-stu-id="2512d-113">It also depends on the ability of the loaded MAPI providers to support fast shutdown.</span></span> <span data-ttu-id="2512d-114">詳細については、「Fast [Shutdown User Options」を参照してください](fast-shutdown-user-options.md)。</span><span class="sxs-lookup"><span data-stu-id="2512d-114">For more information, see [Fast Shutdown User Options](fast-shutdown-user-options.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="7fc98-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="7fc98-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2512d-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="2512d-115">See also</span></span>
 
 
 
-[<span data-ttu-id="7fc98-116">IMAPIClientShutdown : IUnknown</span><span class="sxs-lookup"><span data-stu-id="7fc98-116">IMAPIClientShutdown : IUnknown</span></span>](imapiclientshutdowniunknown.md)
+[<span data-ttu-id="2512d-116">IMAPIClientShutdown : IUnknown</span><span class="sxs-lookup"><span data-stu-id="2512d-116">IMAPIClientShutdown : IUnknown</span></span>](imapiclientshutdowniunknown.md)
 
 
-[<span data-ttu-id="7fc98-117">MAPI でのクライアント シャットダウン</span><span class="sxs-lookup"><span data-stu-id="7fc98-117">Client Shutdown in MAPI</span></span>](client-shutdown-in-mapi.md)
+[<span data-ttu-id="2512d-117">MAPI でのクライアント シャットダウン</span><span class="sxs-lookup"><span data-stu-id="2512d-117">Client Shutdown in MAPI</span></span>](client-shutdown-in-mapi.md)
 

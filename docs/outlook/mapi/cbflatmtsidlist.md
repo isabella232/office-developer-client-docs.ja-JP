@@ -19,35 +19,35 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33418394"
 ---
-# <a name="cbflatmtsidlist"></a><span data-ttu-id="271c3-103">CbFLATMTSIDLIST</span><span class="sxs-lookup"><span data-stu-id="271c3-103">CbFLATMTSIDLIST</span></span>
+# <a name="cbflatmtsidlist"></a><span data-ttu-id="f030c-103">CbFLATMTSIDLIST</span><span class="sxs-lookup"><span data-stu-id="f030c-103">CbFLATMTSIDLIST</span></span>
 
   
   
-<span data-ttu-id="271c3-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="271c3-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="f030c-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f030c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="271c3-105">既存の[FLATMTSIDLIST](flatmtsidlist.md)構造体のバイト数を計算します。</span><span class="sxs-lookup"><span data-stu-id="271c3-105">Computes the number of bytes in an existing [FLATMTSIDLIST](flatmtsidlist.md) structure.</span></span> 
+<span data-ttu-id="f030c-105">既存の [FLATMTSIDLIST](flatmtsidlist.md) 構造体のバイト数を計算します。</span><span class="sxs-lookup"><span data-stu-id="f030c-105">Computes the number of bytes in an existing [FLATMTSIDLIST](flatmtsidlist.md) structure.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="271c3-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="271c3-106">Header file:</span></span>  <br/> |<span data-ttu-id="271c3-107">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="271c3-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="271c3-108">関連する構造:</span><span class="sxs-lookup"><span data-stu-id="271c3-108">Related structure:</span></span>  <br/> |<span data-ttu-id="271c3-109">**FLATMTSIDLIST**</span><span class="sxs-lookup"><span data-stu-id="271c3-109">**FLATMTSIDLIST**</span></span> <br/> |
+|<span data-ttu-id="f030c-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="f030c-106">Header file:</span></span>  <br/> |<span data-ttu-id="f030c-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="f030c-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="f030c-108">関連する構造:</span><span class="sxs-lookup"><span data-stu-id="f030c-108">Related structure:</span></span>  <br/> |<span data-ttu-id="f030c-109">**FLATMTSIDLIST**</span><span class="sxs-lookup"><span data-stu-id="f030c-109">**FLATMTSIDLIST**</span></span> <br/> |
    
 ```cpp
 CbFLATMTSIDLIST (_lplist)
 ```
 
-## <a name="parameters"></a><span data-ttu-id="271c3-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="271c3-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="f030c-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f030c-110">Parameters</span></span>
 
- <span data-ttu-id="271c3-111">__lplist_</span><span class="sxs-lookup"><span data-stu-id="271c3-111">__lplist_</span></span>
+ <span data-ttu-id="f030c-111">_ _lplist_</span><span class="sxs-lookup"><span data-stu-id="f030c-111">_ _lplist_</span></span>
   
-> <span data-ttu-id="271c3-112">既存の**FLATMTSIDLIST**構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="271c3-112">Pointer to the existing **FLATMTSIDLIST** structure.</span></span> 
+> <span data-ttu-id="f030c-112">既存の **FLATMTSIDLIST** 構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="f030c-112">Pointer to the existing **FLATMTSIDLIST** structure.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="271c3-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="271c3-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f030c-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="f030c-113">See also</span></span>
 
 
 
-[<span data-ttu-id="271c3-114">FLATMTSIDLIST</span><span class="sxs-lookup"><span data-stu-id="271c3-114">FLATMTSIDLIST</span></span>](flatmtsidlist.md)
+[<span data-ttu-id="f030c-114">FLATMTSIDLIST</span><span class="sxs-lookup"><span data-stu-id="f030c-114">FLATMTSIDLIST</span></span>](flatmtsidlist.md)
 
 
-[<span data-ttu-id="271c3-115">構造に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="271c3-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
+[<span data-ttu-id="f030c-115">構造に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="f030c-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
 

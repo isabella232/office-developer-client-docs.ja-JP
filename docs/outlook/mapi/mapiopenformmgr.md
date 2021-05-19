@@ -19,19 +19,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33418051"
 ---
-# <a name="mapiopenformmgr"></a><span data-ttu-id="3b832-103">MAPIOpenFormMgr</span><span class="sxs-lookup"><span data-stu-id="3b832-103">MAPIOpenFormMgr</span></span>
+# <a name="mapiopenformmgr"></a><span data-ttu-id="48ba3-103">MAPIOpenFormMgr</span><span class="sxs-lookup"><span data-stu-id="48ba3-103">MAPIOpenFormMgr</span></span>
 
   
   
-<span data-ttu-id="3b832-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="3b832-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="48ba3-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="48ba3-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="3b832-105">既存のセッションのコンテキストで、フォームライブラリプロバイダオブジェクトの[imapiformmgr](imapiformmgriunknown.md)インターフェイスを開きます。</span><span class="sxs-lookup"><span data-stu-id="3b832-105">Opens an [IMAPIFormMgr](imapiformmgriunknown.md) interface on a form library provider object in the context of an existing session.</span></span> 
+<span data-ttu-id="48ba3-105">既存の [セッションのコンテキストで](imapiformmgriunknown.md) フォーム ライブラリ プロバイダー オブジェクトの IMAPIFormMgr インターフェイスを開きます。</span><span class="sxs-lookup"><span data-stu-id="48ba3-105">Opens an [IMAPIFormMgr](imapiformmgriunknown.md) interface on a form library provider object in the context of an existing session.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="3b832-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="3b832-106">Header file:</span></span>  <br/> |<span data-ttu-id="3b832-107">Mapiform</span><span class="sxs-lookup"><span data-stu-id="3b832-107">Mapiform.h</span></span>  <br/> |
-|<span data-ttu-id="3b832-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="3b832-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="3b832-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="3b832-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="3b832-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="3b832-110">Called by:</span></span>  <br/> |<span data-ttu-id="3b832-111">クライアント アプリケーション</span><span class="sxs-lookup"><span data-stu-id="3b832-111">Client applications</span></span>  <br/> |
+|<span data-ttu-id="48ba3-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="48ba3-106">Header file:</span></span>  <br/> |<span data-ttu-id="48ba3-107">Mapiform.h</span><span class="sxs-lookup"><span data-stu-id="48ba3-107">Mapiform.h</span></span>  <br/> |
+|<span data-ttu-id="48ba3-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="48ba3-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="48ba3-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="48ba3-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="48ba3-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="48ba3-110">Called by:</span></span>  <br/> |<span data-ttu-id="48ba3-111">クライアント アプリケーション</span><span class="sxs-lookup"><span data-stu-id="48ba3-111">Client applications</span></span>  <br/> |
    
 ```cpp
 MAPIOpenFormMgr(
@@ -40,35 +40,35 @@ MAPIOpenFormMgr(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="3b832-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="3b832-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="48ba3-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="48ba3-112">Parameters</span></span>
 
- <span data-ttu-id="3b832-113">_psession_</span><span class="sxs-lookup"><span data-stu-id="3b832-113">_pSession_</span></span>
+ <span data-ttu-id="48ba3-113">_pSession_</span><span class="sxs-lookup"><span data-stu-id="48ba3-113">_pSession_</span></span>
   
-> <span data-ttu-id="3b832-114">順番クライアントアプリケーションによって使用されているセッションへのポインター。</span><span class="sxs-lookup"><span data-stu-id="3b832-114">[in] Pointer to the session in use by the client application.</span></span>
+> <span data-ttu-id="48ba3-114">[in]クライアント アプリケーションで使用されているセッションへのポインター。</span><span class="sxs-lookup"><span data-stu-id="48ba3-114">[in] Pointer to the session in use by the client application.</span></span>
     
- <span data-ttu-id="3b832-115">_ppmgr_</span><span class="sxs-lookup"><span data-stu-id="3b832-115">_ppmgr_</span></span>
+ <span data-ttu-id="48ba3-115">_ppmgr_</span><span class="sxs-lookup"><span data-stu-id="48ba3-115">_ppmgr_</span></span>
   
-> <span data-ttu-id="3b832-116">読み上げ返された**imapiformmgr**インターフェイスへのポインター。</span><span class="sxs-lookup"><span data-stu-id="3b832-116">[out] Pointer to the returned **IMAPIFormMgr** interface.</span></span> 
+> <span data-ttu-id="48ba3-116">[out]返される **IMAPIFormMgr インターフェイスへの** ポインター。</span><span class="sxs-lookup"><span data-stu-id="48ba3-116">[out] Pointer to the returned **IMAPIFormMgr** interface.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="3b832-117">Return value</span><span class="sxs-lookup"><span data-stu-id="3b832-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="48ba3-117">Return value</span><span class="sxs-lookup"><span data-stu-id="48ba3-117">Return value</span></span>
 
-<span data-ttu-id="3b832-118">なし。</span><span class="sxs-lookup"><span data-stu-id="3b832-118">None.</span></span>
+<span data-ttu-id="48ba3-118">なし。</span><span class="sxs-lookup"><span data-stu-id="48ba3-118">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="3b832-119">注釈</span><span class="sxs-lookup"><span data-stu-id="3b832-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="48ba3-119">注釈</span><span class="sxs-lookup"><span data-stu-id="48ba3-119">Remarks</span></span>
 
-<span data-ttu-id="3b832-120">クライアントアプリケーションが**MAPIOpenFormMgr**関数を呼び出すと、その後のフォーム関連のやり取りは、フォームライブラリプロバイダまたはフォームライブラリプロバイダによって返されるインターフェイスを通じて行われます。</span><span class="sxs-lookup"><span data-stu-id="3b832-120">After a client application makes a call to the **MAPIOpenFormMgr** function, most subsequent forms-related interactions take place through the form library provider or an interface returned by the form library provider.</span></span> <span data-ttu-id="3b832-121">**imapiformmgr**インターフェイスを使用すると、クライアントはメッセージハンドラーを操作し、メッセージクラスとフォームライブラリの間で解決を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="3b832-121">The **IMAPIFormMgr** interface allows the client to work with message handlers and perform resolutions between message classes and form libraries.</span></span> 
+<span data-ttu-id="48ba3-120">クライアント アプリケーションが **MAPIOpenFormMgr** 関数を呼び出した後、フォーム ライブラリ プロバイダーまたはフォーム ライブラリ プロバイダーによって返されるインターフェイスを介して、フォーム関連のほとんどの操作が行います。</span><span class="sxs-lookup"><span data-stu-id="48ba3-120">After a client application makes a call to the **MAPIOpenFormMgr** function, most subsequent forms-related interactions take place through the form library provider or an interface returned by the form library provider.</span></span> <span data-ttu-id="48ba3-121">**IMAPIFormMgr** インターフェイスを使用すると、クライアントはメッセージ ハンドラーを操作し、メッセージ クラスとフォーム ライブラリの間で解決を実行できます。</span><span class="sxs-lookup"><span data-stu-id="48ba3-121">The **IMAPIFormMgr** interface allows the client to work with message handlers and perform resolutions between message classes and form libraries.</span></span> 
   
-## <a name="mfcmapi-reference"></a><span data-ttu-id="3b832-122">MFCMAPI リファレンス</span><span class="sxs-lookup"><span data-stu-id="3b832-122">MFCMAPI reference</span></span>
+## <a name="mfcmapi-reference"></a><span data-ttu-id="48ba3-122">MFCMAPI リファレンス</span><span class="sxs-lookup"><span data-stu-id="48ba3-122">MFCMAPI reference</span></span>
 
-<span data-ttu-id="3b832-123">MFCMAPI のサンプル コードについては、次の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3b832-123">For MFCMAPI sample code, see the following table.</span></span>
+<span data-ttu-id="48ba3-123">MFCMAPI のサンプル コードについては、次の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="48ba3-123">For MFCMAPI sample code, see the following table.</span></span>
   
-|<span data-ttu-id="3b832-124">**ファイル**</span><span class="sxs-lookup"><span data-stu-id="3b832-124">**File**</span></span>|<span data-ttu-id="3b832-125">**関数**</span><span class="sxs-lookup"><span data-stu-id="3b832-125">**Function**</span></span>|<span data-ttu-id="3b832-126">**コメント**</span><span class="sxs-lookup"><span data-stu-id="3b832-126">**Comment**</span></span>|
+|<span data-ttu-id="48ba3-124">**ファイル**</span><span class="sxs-lookup"><span data-stu-id="48ba3-124">**File**</span></span>|<span data-ttu-id="48ba3-125">**関数**</span><span class="sxs-lookup"><span data-stu-id="48ba3-125">**Function**</span></span>|<span data-ttu-id="48ba3-126">**コメント**</span><span class="sxs-lookup"><span data-stu-id="48ba3-126">**Comment**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="3b832-127">フォームマネージャーが開き、フォームを選択できるようになります。</span><span class="sxs-lookup"><span data-stu-id="3b832-127">MainDlg.cpp opens the form manager so a form can be selected.</span></span>  <br/> |<span data-ttu-id="3b832-128">CMainDlg:: onselectform</span><span class="sxs-lookup"><span data-stu-id="3b832-128">CMainDlg::OnSelectForm</span></span>  <br/> |<span data-ttu-id="3b832-129">mfcmapi は、 **MAPIOpenFormMgr**メソッドを使用してフォームマネージャーを開き、フォームを選択できるようにします。</span><span class="sxs-lookup"><span data-stu-id="3b832-129">MFCMAPI uses the **MAPIOpenFormMgr** method to open the form manager so a form can be selected.</span></span>  <br/> |
+|<span data-ttu-id="48ba3-127">MainDlg.cpp はフォーム マネージャーを開き、フォームを選択できます。</span><span class="sxs-lookup"><span data-stu-id="48ba3-127">MainDlg.cpp opens the form manager so a form can be selected.</span></span>  <br/> |<span data-ttu-id="48ba3-128">CMainDlg::OnSelectForm</span><span class="sxs-lookup"><span data-stu-id="48ba3-128">CMainDlg::OnSelectForm</span></span>  <br/> |<span data-ttu-id="48ba3-129">MFCMAPI は **MAPIOpenFormMgr** メソッドを使用してフォーム マネージャーを開き、フォームを選択できます。</span><span class="sxs-lookup"><span data-stu-id="48ba3-129">MFCMAPI uses the **MAPIOpenFormMgr** method to open the form manager so a form can be selected.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="3b832-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="3b832-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="48ba3-130">関連項目</span><span class="sxs-lookup"><span data-stu-id="48ba3-130">See also</span></span>
 
 
 
-<span data-ttu-id="3b832-131">[�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)</span><span class="sxs-lookup"><span data-stu-id="3b832-131">[MFCMAPI as a Code Sample](mfcmapi-as-a-code-sample.md)</span></span>
+<span data-ttu-id="48ba3-131">[�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)</span><span class="sxs-lookup"><span data-stu-id="48ba3-131">[MFCMAPI as a Code Sample](mfcmapi-as-a-code-sample.md)</span></span>
 

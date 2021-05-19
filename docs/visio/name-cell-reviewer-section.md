@@ -16,26 +16,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417687"
 ---
-# <a name="name-cell-reviewer-section"></a><span data-ttu-id="8d720-103">[Name] セル ([Reviewer] セクション)</span><span class="sxs-lookup"><span data-stu-id="8d720-103">Name Cell (Reviewer Section)</span></span>
+# <a name="name-cell-reviewer-section"></a><span data-ttu-id="1407c-103">[Name] セル ([Reviewer] セクション)</span><span class="sxs-lookup"><span data-stu-id="1407c-103">Name Cell (Reviewer Section)</span></span>
 
-<span data-ttu-id="8d720-104">図面校閲者の名前が含まれます。</span><span class="sxs-lookup"><span data-stu-id="8d720-104">Contains the name of a document reviewer.</span></span>
+<span data-ttu-id="1407c-104">図面校閲者の名前が含まれます。</span><span class="sxs-lookup"><span data-stu-id="1407c-104">Contains the name of a document reviewer.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="8d720-105">注釈</span><span class="sxs-lookup"><span data-stu-id="8d720-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1407c-105">注釈</span><span class="sxs-lookup"><span data-stu-id="1407c-105">Remarks</span></span>
 
- <span data-ttu-id="8d720-106">この値の既定値は、[ **Visio のオプション**] ダイアログボックス ([**ファイル**] タブをクリックし、[**オプション**] をクリックし、[**全般**] をクリック) の [**全般**] タブの [**ユーザー名**] ボックスにある名前です。</span><span class="sxs-lookup"><span data-stu-id="8d720-106">This value defaults to the name found in the **User name** box on the **General** tab of the **Visio Options** dialog box (click the **File** tab, click **Options**, and then click **General**).</span></span> 
+ <span data-ttu-id="1407c-106">この値の既定値は **、[Visio** のオプション] ダイアログ ボックスの [全般] タブの [ユーザー名] ボックスに表示される名前です ([ファイル] タブをクリックし、[オプション] をクリックし、[全般] をクリック **します**)。 </span><span class="sxs-lookup"><span data-stu-id="1407c-106">This value defaults to the name found in the **User name** box on the **General** tab of the **Visio Options** dialog box (click the **File** tab, click **Options**, and then click **General**).</span></span> 
   
-<span data-ttu-id="8d720-107">別の数式または**CellsU**プロパティを使用したプログラムから、名前によって [name] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="8d720-107">To get a reference to the Name cell by name from another formula, or from a program by using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="1407c-107">別の数式または **CellsU** プロパティを使用してプログラムから名前によって [名前] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="1407c-107">To get a reference to the Name cell by name from another formula, or from a program by using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="8d720-108">セル名:</span><span class="sxs-lookup"><span data-stu-id="8d720-108">Cell name:</span></span>  <br/> | <span data-ttu-id="8d720-109">Reviewer.Name [ *i* ] *i* = <1>、2、3...</span><span class="sxs-lookup"><span data-stu-id="8d720-109">Reviewer.Name [  *i*  ] where  *i*  = <1>, 2, 3...</span></span>  <br/> |
+| <span data-ttu-id="1407c-108">セル名:</span><span class="sxs-lookup"><span data-stu-id="1407c-108">Cell name:</span></span>  <br/> | <span data-ttu-id="1407c-109">Reviewer.Name [  *i*  ] ここで  *、i*  = <1>、2、3..</span><span class="sxs-lookup"><span data-stu-id="1407c-109">Reviewer.Name [  *i*  ] where  *i*  = <1>, 2, 3...</span></span>  <br/> |
    
-<span data-ttu-id="8d720-110">プログラムから、インデックスによって [Name] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="8d720-110">To get a reference to the Name cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="1407c-110">プログラムから、インデックスによって [Name] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="1407c-110">To get a reference to the Name cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="8d720-111">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="8d720-111">Section index:</span></span>  <br/> |<span data-ttu-id="8d720-112">**visSectionReviewer**</span><span class="sxs-lookup"><span data-stu-id="8d720-112">**visSectionReviewer**</span></span> <br/> |
-| <span data-ttu-id="8d720-113">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="8d720-113">Row index:</span></span>  <br/> |<span data-ttu-id="8d720-114">**visRowReviewer** +  *i* = \*\* 0、1、2...</span><span class="sxs-lookup"><span data-stu-id="8d720-114">**visRowReviewer** +  *i*  where  *i*  = 0, 1, 2...</span></span>  <br/> |
-| <span data-ttu-id="8d720-115">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="8d720-115">Cell index:</span></span>  <br/> |<span data-ttu-id="8d720-116">**visReviewerName**</span><span class="sxs-lookup"><span data-stu-id="8d720-116">**visReviewerName**</span></span> <br/> |
+| <span data-ttu-id="1407c-111">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="1407c-111">Section index:</span></span>  <br/> |<span data-ttu-id="1407c-112">**visSectionReviewer**</span><span class="sxs-lookup"><span data-stu-id="1407c-112">**visSectionReviewer**</span></span> <br/> |
+| <span data-ttu-id="1407c-113">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="1407c-113">Row index:</span></span>  <br/> |<span data-ttu-id="1407c-114">**visRowReviewer**  +  *i* *=* 0, 1, 2...</span><span class="sxs-lookup"><span data-stu-id="1407c-114">**visRowReviewer** +  *i*  where  *i*  = 0, 1, 2...</span></span>  <br/> |
+| <span data-ttu-id="1407c-115">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="1407c-115">Cell index:</span></span>  <br/> |<span data-ttu-id="1407c-116">**visReviewerName**</span><span class="sxs-lookup"><span data-stu-id="1407c-116">**visReviewerName**</span></span> <br/> |
    
 

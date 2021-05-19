@@ -1,5 +1,5 @@
 ---
-title: '[ygridspacing] セル&amp; ([ルーラーグリッド] セクション)'
+title: '[YGridSpacing] セル (Ruler &amp; Grid セクション)'
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -16,26 +16,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417463"
 ---
-# <a name="ygridspacing-cell-ruler-amp-grid-section"></a><span data-ttu-id="7b42a-103">[ygridspacing] セル&amp; ([ルーラーグリッド] セクション)</span><span class="sxs-lookup"><span data-stu-id="7b42a-103">YGridSpacing Cell (Ruler &amp; Grid Section)</span></span>
+# <a name="ygridspacing-cell-ruler-amp-grid-section"></a><span data-ttu-id="2f875-103">[YGridSpacing] セル (Ruler &amp; Grid セクション)</span><span class="sxs-lookup"><span data-stu-id="2f875-103">YGridSpacing Cell (Ruler &amp; Grid Section)</span></span>
 
-<span data-ttu-id="7b42a-104">固定グリッド (YGridDensity = 0) の垂直線の間隔を指定します。</span><span class="sxs-lookup"><span data-stu-id="7b42a-104">Specifies the distance between vertical lines in a fixed grid (YGridDensity = 0).</span></span>
+<span data-ttu-id="2f875-104">固定グリッド (YGridDensity = 0) の垂直線の間隔を指定します。</span><span class="sxs-lookup"><span data-stu-id="2f875-104">Specifies the distance between vertical lines in a fixed grid (YGridDensity = 0).</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="7b42a-105">注釈</span><span class="sxs-lookup"><span data-stu-id="7b42a-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2f875-105">注釈</span><span class="sxs-lookup"><span data-stu-id="2f875-105">Remarks</span></span>
 
-<span data-ttu-id="7b42a-106">[**ルーラー &amp;グリッド**] ダイアログボックスの [上下の**最小間隔**] オプションに対応します ([**表示**] タブで [**表示**] 矢印をクリックします)。</span><span class="sxs-lookup"><span data-stu-id="7b42a-106">Corresponds to the vertical **Minimum spacing** option in the **Ruler &amp; Grid** dialog box (on the **View** tab, click the **Show** arrow).</span></span> 
+<span data-ttu-id="2f875-106">[ルーラー グリッド **] ダイアログ** ボックスの [垂直方向の最小間隔] オプション **に対応します &amp;**([表示] タブの [表示] 矢印を **クリック** します)。</span><span class="sxs-lookup"><span data-stu-id="2f875-106">Corresponds to the vertical **Minimum spacing** option in the **Ruler &amp; Grid** dialog box (on the **View** tab, click the **Show** arrow).</span></span> 
   
-<span data-ttu-id="7b42a-107">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [YGridSpacing] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="7b42a-107">To get a reference to the YGridSpacing cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="2f875-107">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [YGridSpacing] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="2f875-107">To get a reference to the YGridSpacing cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="7b42a-108">セル名 :</span><span class="sxs-lookup"><span data-stu-id="7b42a-108">Cell name:</span></span>  <br/> |<span data-ttu-id="7b42a-109">[ygridspacing]</span><span class="sxs-lookup"><span data-stu-id="7b42a-109">YGridSpacing</span></span>  <br/> |
+|<span data-ttu-id="2f875-108">セル名 :</span><span class="sxs-lookup"><span data-stu-id="2f875-108">Cell name:</span></span>  <br/> |<span data-ttu-id="2f875-109">YGridSpacing</span><span class="sxs-lookup"><span data-stu-id="2f875-109">YGridSpacing</span></span>  <br/> |
    
-<span data-ttu-id="7b42a-110">プログラムから、インデックスによって [YGridSpacing] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="7b42a-110">To get a reference to the YGridSpacing cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="2f875-110">プログラムから、インデックスによって [YGridSpacing] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="2f875-110">To get a reference to the YGridSpacing cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="7b42a-111">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="7b42a-111">Section index:</span></span>  <br/> |<span data-ttu-id="7b42a-112">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="7b42a-112">**visSectionObject**</span></span> <br/> |
-|<span data-ttu-id="7b42a-113">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="7b42a-113">Row index:</span></span>  <br/> |<span data-ttu-id="7b42a-114">**visRowRulerGrid**</span><span class="sxs-lookup"><span data-stu-id="7b42a-114">**visRowRulerGrid**</span></span> <br/> |
-|<span data-ttu-id="7b42a-115">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="7b42a-115">Cell index:</span></span>  <br/> |<span data-ttu-id="7b42a-116">**visygridspacing**</span><span class="sxs-lookup"><span data-stu-id="7b42a-116">**visYGridSpacing**</span></span> <br/> |
+|<span data-ttu-id="2f875-111">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="2f875-111">Section index:</span></span>  <br/> |<span data-ttu-id="2f875-112">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="2f875-112">**visSectionObject**</span></span> <br/> |
+|<span data-ttu-id="2f875-113">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="2f875-113">Row index:</span></span>  <br/> |<span data-ttu-id="2f875-114">**visRowRulerGrid**</span><span class="sxs-lookup"><span data-stu-id="2f875-114">**visRowRulerGrid**</span></span> <br/> |
+|<span data-ttu-id="2f875-115">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="2f875-115">Cell index:</span></span>  <br/> |<span data-ttu-id="2f875-116">**visYGridSpacing**</span><span class="sxs-lookup"><span data-stu-id="2f875-116">**visYGridSpacing**</span></span> <br/> |
    
 

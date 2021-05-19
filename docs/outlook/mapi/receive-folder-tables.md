@@ -1,5 +1,5 @@
 ---
-title: 受信フォルダーの表
+title: フォルダー テーブルの受信
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,25 +15,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417351"
 ---
-# <a name="receive-folder-tables"></a><span data-ttu-id="762d9-103">受信フォルダーの表</span><span class="sxs-lookup"><span data-stu-id="762d9-103">Receive Folder Tables</span></span>
+# <a name="receive-folder-tables"></a><span data-ttu-id="e52b7-103">フォルダー テーブルの受信</span><span class="sxs-lookup"><span data-stu-id="e52b7-103">Receive Folder Tables</span></span>
 
   
   
-<span data-ttu-id="762d9-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="762d9-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="e52b7-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="e52b7-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="762d9-105">受信フォルダーの表には、メッセージストアの受信フォルダーとして指定されたすべてのフォルダーに関する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="762d9-105">A receive folder table contains information for all the folders designated as receive folders for a message store.</span></span> <span data-ttu-id="762d9-106">受信フォルダーは、特定のメッセージクラスの受信メッセージが配置されるフォルダーです。</span><span class="sxs-lookup"><span data-stu-id="762d9-106">A receive folder is a folder where incoming messages of a particular message class are placed.</span></span> <span data-ttu-id="762d9-107">メッセージストアプロバイダーは、受信フォルダーテーブルを実装し、クライアントアプリケーションは[IMsgStore:: getreceivefoldertable](imsgstore-getreceivefoldertable.md)メソッドを呼び出して使用します。</span><span class="sxs-lookup"><span data-stu-id="762d9-107">Message store providers implement receive folder tables and client applications use them by making a call to the [IMsgStore::GetReceiveFolderTable](imsgstore-getreceivefoldertable.md) method.</span></span> 
+<span data-ttu-id="e52b7-105">受信フォルダー テーブルには、メッセージ ストアの受信フォルダーとして指定されているすべてのフォルダーの情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="e52b7-105">A receive folder table contains information for all the folders designated as receive folders for a message store.</span></span> <span data-ttu-id="e52b7-106">受信フォルダーは、特定のメッセージ クラスの受信メッセージが配置されるフォルダーです。</span><span class="sxs-lookup"><span data-stu-id="e52b7-106">A receive folder is a folder where incoming messages of a particular message class are placed.</span></span> <span data-ttu-id="e52b7-107">メッセージ ストア プロバイダーは受信フォルダー テーブルを実装し、クライアント アプリケーションは [、IMsgStore::GetReceiveFolderTable](imsgstore-getreceivefoldertable.md) メソッドを呼び出して使用します。</span><span class="sxs-lookup"><span data-stu-id="e52b7-107">Message store providers implement receive folder tables and client applications use them by making a call to the [IMsgStore::GetReceiveFolderTable](imsgstore-getreceivefoldertable.md) method.</span></span> 
   
-<span data-ttu-id="762d9-108">次のプロパティは、受信フォルダーテーブルで必要な列セットを作成します。</span><span class="sxs-lookup"><span data-stu-id="762d9-108">The following properties make up the required column set in receive folder tables:</span></span>
+<span data-ttu-id="e52b7-108">次のプロパティは、受信フォルダー テーブルで必要な列セットを構成します。</span><span class="sxs-lookup"><span data-stu-id="e52b7-108">The following properties make up the required column set in receive folder tables:</span></span>
   
- <span data-ttu-id="762d9-109">**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="762d9-109">**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))</span></span> 
+ <span data-ttu-id="e52b7-109">**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="e52b7-109">**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))</span></span> 
   
- <span data-ttu-id="762d9-110">**PR_MESSAGE_CLASS**([PidTagMessageClass](pidtagmessageclass-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="762d9-110">**PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md))</span></span> 
+ <span data-ttu-id="e52b7-110">**PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="e52b7-110">**PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md))</span></span> 
   
- <span data-ttu-id="762d9-111">**PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="762d9-111">**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))</span></span> 
+ <span data-ttu-id="e52b7-111">**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))</span><span class="sxs-lookup"><span data-stu-id="e52b7-111">**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="762d9-112">関連項目</span><span class="sxs-lookup"><span data-stu-id="762d9-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e52b7-112">関連項目</span><span class="sxs-lookup"><span data-stu-id="e52b7-112">See also</span></span>
 
 
 
-[<span data-ttu-id="762d9-113">MAPI テーブル</span><span class="sxs-lookup"><span data-stu-id="762d9-113">MAPI Tables</span></span>](mapi-tables.md)
+[<span data-ttu-id="e52b7-113">MAPI テーブル</span><span class="sxs-lookup"><span data-stu-id="e52b7-113">MAPI Tables</span></span>](mapi-tables.md)
 

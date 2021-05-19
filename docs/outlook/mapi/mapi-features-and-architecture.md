@@ -15,17 +15,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33418282"
 ---
-# <a name="mapi-features-and-architecture"></a><span data-ttu-id="4ac91-103">MAPI の機能とアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="4ac91-103">MAPI Features and Architecture</span></span>
+# <a name="mapi-features-and-architecture"></a><span data-ttu-id="cf8d6-103">MAPI の機能とアーキテクチャ</span><span class="sxs-lookup"><span data-stu-id="cf8d6-103">MAPI Features and Architecture</span></span>
 
   
   
-<span data-ttu-id="4ac91-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="4ac91-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="cf8d6-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="cf8d6-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="4ac91-105">メッセージング API (MAPI) は、一般的なアプリケーションプログラミングインターフェイスのセットと、ダイナミックリンクライブラリ (DLL) コンポーネントで構成されています。</span><span class="sxs-lookup"><span data-stu-id="4ac91-105">Messaging API (MAPI) is composed of a set of common application programming interfaces and a dynamic-link library (DLL) component.</span></span> <span data-ttu-id="4ac91-106">このインターフェイスは、さまざまなメッセージングアプリケーションおよびメッセージングシステムを作成してアクセスし、開発および使用するための一様な環境を提供し、両方に対して真の独立性を提供するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="4ac91-106">The interfaces are used to create and access diverse messaging applications and messaging systems, offering a uniform environment for development and use, and providing true independence for both.</span></span> <span data-ttu-id="4ac91-107">DLL には MAPI サブシステムが含まれており、フロントエンドメッセージングアプリケーションとバックエンドメッセージングシステムの間の相互作用を管理し、頻繁にタスクを行うための共通のユーザーインターフェイスを提供します。</span><span class="sxs-lookup"><span data-stu-id="4ac91-107">The DLL contains the MAPI subsystem, which manages the interaction between front-end messaging applications and back-end messaging systems and provides a common user interface for frequent tasks.</span></span> <span data-ttu-id="4ac91-108">MAPI サブシステムは、さまざまなメッセージングシステムを統合し、それらの違いからクライアントをシールドするための中央クリアリングとして機能します。</span><span class="sxs-lookup"><span data-stu-id="4ac91-108">The MAPI subsystem acts as a central clearinghouse to unify the various messaging systems and shield clients from their differences.</span></span>
+<span data-ttu-id="cf8d6-105">メッセージング API (MAPI) は、一般的なアプリケーション プログラミング インターフェイスのセットと、ダイナミック リンク ライブラリ (DLL) コンポーネントで構成されます。</span><span class="sxs-lookup"><span data-stu-id="cf8d6-105">Messaging API (MAPI) is composed of a set of common application programming interfaces and a dynamic-link library (DLL) component.</span></span> <span data-ttu-id="cf8d6-106">インターフェイスは、多様なメッセージング アプリケーションとメッセージング システムの作成とアクセスに使用され、開発と使用のための均一な環境を提供し、両方に真の独立性を提供します。</span><span class="sxs-lookup"><span data-stu-id="cf8d6-106">The interfaces are used to create and access diverse messaging applications and messaging systems, offering a uniform environment for development and use, and providing true independence for both.</span></span> <span data-ttu-id="cf8d6-107">DLL には MAPI サブシステムが含まれています。このサブシステムは、フロントエンド メッセージング アプリケーションとバック エンド メッセージング システム間のやり取りを管理し、頻繁なタスクに共通のユーザー インターフェイスを提供します。</span><span class="sxs-lookup"><span data-stu-id="cf8d6-107">The DLL contains the MAPI subsystem, which manages the interaction between front-end messaging applications and back-end messaging systems and provides a common user interface for frequent tasks.</span></span> <span data-ttu-id="cf8d6-108">MAPI サブシステムは、さまざまなメッセージング システムを統合し、クライアントの違いを保護する中央クリアリングハウスとして機能します。</span><span class="sxs-lookup"><span data-stu-id="cf8d6-108">The MAPI subsystem acts as a central clearinghouse to unify the various messaging systems and shield clients from their differences.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="4ac91-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="4ac91-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cf8d6-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="cf8d6-109">See also</span></span>
 
 
 
-[<span data-ttu-id="4ac91-110">MAPI の概念</span><span class="sxs-lookup"><span data-stu-id="4ac91-110">MAPI Concepts</span></span>](mapi-concepts.md)
+[<span data-ttu-id="cf8d6-110">MAPI の概念</span><span class="sxs-lookup"><span data-stu-id="cf8d6-110">MAPI Concepts</span></span>](mapi-concepts.md)
 
