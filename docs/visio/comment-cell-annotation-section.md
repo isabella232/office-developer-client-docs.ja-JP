@@ -16,27 +16,27 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415531"
 ---
-# <a name="comment-cell-annotation-section"></a><span data-ttu-id="3e116-103">[Comment] セル ([Annotation] セクション)</span><span class="sxs-lookup"><span data-stu-id="3e116-103">Comment Cell (Annotation Section)</span></span>
+# <a name="comment-cell-annotation-section"></a><span data-ttu-id="11dc1-103">[Comment] セル ([Annotation] セクション)</span><span class="sxs-lookup"><span data-stu-id="11dc1-103">Comment Cell (Annotation Section)</span></span>
 
-<span data-ttu-id="3e116-104">コメント内に表示されるテキストが含まれます。</span><span class="sxs-lookup"><span data-stu-id="3e116-104">Contains the text that appears in a comment.</span></span>
+<span data-ttu-id="11dc1-104">コメント内に表示されるテキストが含まれます。</span><span class="sxs-lookup"><span data-stu-id="11dc1-104">Contains the text that appears in a comment.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="3e116-105">このセルは、Microsoft Visio 2013 で .vsd ファイルを開くとき、または .vsd ファイル形式で .vsdx ファイルを保存するときにのみ、コメントの追跡に使用されます。</span><span class="sxs-lookup"><span data-stu-id="3e116-105">This cell is used for tracking comments only when opening a .vsd file in Microsoft Visio 2013 or when saving a .vsdx file in the .vsd file format.</span></span> <span data-ttu-id="3e116-106">これは、Visio 2013 の .vsdx ドキュメントでコメントを追跡するためには使用されません。</span><span class="sxs-lookup"><span data-stu-id="3e116-106">It is not used for tracking comments in .vsdx documents in Visio 2013.</span></span> 
+> <span data-ttu-id="11dc1-105">このセルは、Microsoft Visio 2013 で .vsd ファイルを開く場合、または .vsd ファイル形式で .vsdx ファイルを保存する場合にのみ、コメントを追跡するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="11dc1-105">This cell is used for tracking comments only when opening a .vsd file in Microsoft Visio 2013 or when saving a .vsdx file in the .vsd file format.</span></span> <span data-ttu-id="11dc1-106">2013 年の .vsdx ドキュメントのコメントを追跡Visioされません。</span><span class="sxs-lookup"><span data-stu-id="11dc1-106">It is not used for tracking comments in .vsdx documents in Visio 2013.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="3e116-107">注釈</span><span class="sxs-lookup"><span data-stu-id="3e116-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="11dc1-107">注釈</span><span class="sxs-lookup"><span data-stu-id="11dc1-107">Remarks</span></span>
 
-<span data-ttu-id="3e116-108">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Comment] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="3e116-108">To get a reference to the Comment cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="11dc1-108">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [Comment] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="11dc1-108">To get a reference to the Comment cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="3e116-109">セル名:</span><span class="sxs-lookup"><span data-stu-id="3e116-109">Cell name:</span></span>  <br/> | <span data-ttu-id="3e116-110">コメント [ *i* ]: *i* = <1>、2、3...</span><span class="sxs-lookup"><span data-stu-id="3e116-110">Annotation.Comment[  *i*  ]            where  *i*  = <1>, 2, 3...</span></span>  <br/> |
+| <span data-ttu-id="11dc1-109">セル名:</span><span class="sxs-lookup"><span data-stu-id="11dc1-109">Cell name:</span></span>  <br/> | <span data-ttu-id="11dc1-110">Annotation.Comment[  *i*  ]  *ここで、i*  = <1>、2、3...</span><span class="sxs-lookup"><span data-stu-id="11dc1-110">Annotation.Comment[  *i*  ]            where  *i*  = <1>, 2, 3...</span></span>  <br/> |
    
-<span data-ttu-id="3e116-111">プログラムから、インデックスによって [Comment] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="3e116-111">To get a reference to the Comment cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="11dc1-111">プログラムから、インデックスによって [Comment] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="11dc1-111">To get a reference to the Comment cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="3e116-112">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="3e116-112">Section index:</span></span>  <br/> |<span data-ttu-id="3e116-113">**visSectionAnnotation**</span><span class="sxs-lookup"><span data-stu-id="3e116-113">**visSectionAnnotation**</span></span> <br/> |
-| <span data-ttu-id="3e116-114">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="3e116-114">Row index:</span></span>  <br/> |<span data-ttu-id="3e116-115">**visRowAnnotation** +  *i* = \*\* 0、1、2...</span><span class="sxs-lookup"><span data-stu-id="3e116-115">**visRowAnnotation** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
-| <span data-ttu-id="3e116-116">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="3e116-116">Cell index:</span></span>  <br/> |<span data-ttu-id="3e116-117">**visAnnotationComment**</span><span class="sxs-lookup"><span data-stu-id="3e116-117">**visAnnotationComment**</span></span> <br/> |
+| <span data-ttu-id="11dc1-112">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="11dc1-112">Section index:</span></span>  <br/> |<span data-ttu-id="11dc1-113">**visSectionAnnotation**</span><span class="sxs-lookup"><span data-stu-id="11dc1-113">**visSectionAnnotation**</span></span> <br/> |
+| <span data-ttu-id="11dc1-114">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="11dc1-114">Row index:</span></span>  <br/> |<span data-ttu-id="11dc1-115">**visRowAnnotation**  +  *i* *=* 0, 1, 2...</span><span class="sxs-lookup"><span data-stu-id="11dc1-115">**visRowAnnotation** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
+| <span data-ttu-id="11dc1-116">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="11dc1-116">Cell index:</span></span>  <br/> |<span data-ttu-id="11dc1-117">**visAnnotationComment**</span><span class="sxs-lookup"><span data-stu-id="11dc1-117">**visAnnotationComment**</span></span> <br/> |
    
 

@@ -14,18 +14,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415454"
 ---
-# <a name="line-gradient-section"></a><span data-ttu-id="6afd7-103">[線のグラデーション] セクション</span><span class="sxs-lookup"><span data-stu-id="6afd7-103">Line Gradient Section</span></span>
+# <a name="line-gradient-section"></a><span data-ttu-id="78f1f-103">[線のグラデーション] セクション</span><span class="sxs-lookup"><span data-stu-id="78f1f-103">Line Gradient Section</span></span>
 
-<span data-ttu-id="6afd7-104">図形に適用される線のグラデーションの色の値を表示します。</span><span class="sxs-lookup"><span data-stu-id="6afd7-104">Shows the color values for the line gradient applied to the shape.</span></span> 
+<span data-ttu-id="78f1f-104">図形に適用される線のグラデーションの色の値を表示します。</span><span class="sxs-lookup"><span data-stu-id="78f1f-104">Shows the color values for the line gradient applied to the shape.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="6afd7-105">注釈</span><span class="sxs-lookup"><span data-stu-id="6afd7-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="78f1f-105">注釈</span><span class="sxs-lookup"><span data-stu-id="78f1f-105">Remarks</span></span>
 
-<span data-ttu-id="6afd7-106">セクションの [[グラデーションの分岐点] 行 ([線のグラデーション] セクション)](gradient-stop-row-line-gradient-section.md)行は、線のグラデーションの分岐点を表します。</span><span class="sxs-lookup"><span data-stu-id="6afd7-106">Each [Gradient Stop Row (Line Gradient Section)](gradient-stop-row-line-gradient-section.md) row in the section represents a gradient stop in the line.</span></span> <span data-ttu-id="6afd7-107">このセクションは空にできます。</span><span class="sxs-lookup"><span data-stu-id="6afd7-107">This section can be empty.</span></span> 
+<span data-ttu-id="78f1f-106">セクション [の各グラデーションの停止行 (線](gradient-stop-row-line-gradient-section.md) のグラデーション セクション) 行は、線のグラデーションの停止を表します。</span><span class="sxs-lookup"><span data-stu-id="78f1f-106">Each [Gradient Stop Row (Line Gradient Section)](gradient-stop-row-line-gradient-section.md) row in the section represents a gradient stop in the line.</span></span> <span data-ttu-id="78f1f-107">このセクションは空にできます。</span><span class="sxs-lookup"><span data-stu-id="78f1f-107">This section can be empty.</span></span> 
   
-<span data-ttu-id="6afd7-108">グラデーションの設定では、セクションに格納された最初の 10 行のみが使用されます。</span><span class="sxs-lookup"><span data-stu-id="6afd7-108">Only the first 10 rows contained in the section are used by the gradient settings.</span></span> <span data-ttu-id="6afd7-109">10 行を超える [**Gradient Stop**] 行はすべて無視されます。</span><span class="sxs-lookup"><span data-stu-id="6afd7-109">All **Gradient Stop** rows beyond 10 are ignored.</span></span> 
+<span data-ttu-id="78f1f-p102">グラデーションの設定では、セクションに格納された最初の 10 行のみが使用されます。10 行を超える [**Gradient Stop**] 行はすべて無視されます。</span><span class="sxs-lookup"><span data-stu-id="78f1f-p102">Only the first 10 rows contained in the section are used by the gradient settings. All **Gradient Stop** rows beyond 10 are ignored.</span></span> 
   
-<span data-ttu-id="6afd7-110">[**図形の書式設定**] ウィンドウの [**線**] セクションでは、線グラデーションのプロパティを設定できます ([**ホーム**] タブの [**図形のスタイル**] グループで、[**線**] をクリックしてから [**線のオプション**] をクリック)。</span><span class="sxs-lookup"><span data-stu-id="6afd7-110">You can set the line gradient properties in the **Line** section of the **Format Shape** pane (on the **Home** tab, in the **Shape Styles** group, click **Line**, and then click **Line Options**).</span></span> 
+<span data-ttu-id="78f1f-110">[**図形の書式設定**] ウィンドウの [**線**] セクションでは、線グラデーションのプロパティを設定できます ([**ホーム**] タブの [**図形のスタイル**] グループで、[**線**] をクリックしてから [**線のオプション**] をクリック)。</span><span class="sxs-lookup"><span data-stu-id="78f1f-110">You can set the line gradient properties in the **Line** section of the **Format Shape** pane (on the **Home** tab, in the **Shape Styles** group, click **Line**, and then click **Line Options**).</span></span> 
   
-<span data-ttu-id="6afd7-111">図形のグラデーションの色を有効または無効にするには、 [[linegradientenabled] セル ([グラデーションのプロパティ] セクション)](linegradientenabled-cell-gradient-properties-section.md)セルの値を変更します。</span><span class="sxs-lookup"><span data-stu-id="6afd7-111">You can enable or disable a gradient line color for the shape by changing the value of the [LineGradientEnabled Cell (Gradient Properties Section)](linegradientenabled-cell-gradient-properties-section.md) cell.</span></span> 
+<span data-ttu-id="78f1f-111">[[LineGradientEnabled]](linegradientenabled-cell-gradient-properties-section.md)セル ([グラデーション プロパティ] セクション) セルの値を変更すると、図形のグラデーション 線の色を有効または無効にできます。</span><span class="sxs-lookup"><span data-stu-id="78f1f-111">You can enable or disable a gradient line color for the shape by changing the value of the [LineGradientEnabled Cell (Gradient Properties Section)](linegradientenabled-cell-gradient-properties-section.md) cell.</span></span> 
   
 

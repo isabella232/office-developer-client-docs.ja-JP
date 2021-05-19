@@ -15,15 +15,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33419437"
 ---
-# <a name="ltid"></a><span data-ttu-id="58e7e-103">LTID</span><span class="sxs-lookup"><span data-stu-id="58e7e-103">LTID</span></span>
+# <a name="ltid"></a><span data-ttu-id="f6859-103">LTID</span><span class="sxs-lookup"><span data-stu-id="f6859-103">LTID</span></span>
 
   
   
-<span data-ttu-id="58e7e-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="58e7e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="f6859-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f6859-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="58e7e-105">Outlook ストア内のオブジェクトの一般的な長い用語 ID。</span><span class="sxs-lookup"><span data-stu-id="58e7e-105">Generic Long Term ID of an object in an Outlook store.</span></span>
+<span data-ttu-id="f6859-105">オブジェクト ストア内のオブジェクトの汎用的なOutlook ID。</span><span class="sxs-lookup"><span data-stu-id="f6859-105">Generic Long Term ID of an object in an Outlook store.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="58e7e-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="58e7e-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="f6859-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="f6859-106">Quick info</span></span>
 
 ```cpp
 struct LTID 
@@ -34,27 +34,27 @@ struct LTID
 };
 ```
 
-## <a name="members"></a><span data-ttu-id="58e7e-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="58e7e-107">Members</span></span>
+## <a name="members"></a><span data-ttu-id="f6859-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="f6859-107">Members</span></span>
 
- <span data-ttu-id="58e7e-108">_guid_</span><span class="sxs-lookup"><span data-stu-id="58e7e-108">_guid_</span></span>
+ <span data-ttu-id="f6859-108">_guid_</span><span class="sxs-lookup"><span data-stu-id="f6859-108">_guid_</span></span>
   
-- <span data-ttu-id="58e7e-109">読み上げオブジェクトを作成したサーバーの GUID。</span><span class="sxs-lookup"><span data-stu-id="58e7e-109">[out] The GUID of the server that created the object.</span></span>
+- <span data-ttu-id="f6859-109">[out]オブジェクトを作成したサーバーの GUID。</span><span class="sxs-lookup"><span data-stu-id="f6859-109">[out] The GUID of the server that created the object.</span></span>
     
- <span data-ttu-id="58e7e-110">_globcnt_</span><span class="sxs-lookup"><span data-stu-id="58e7e-110">_globcnt_</span></span>
+ <span data-ttu-id="f6859-110">_globcnt_</span><span class="sxs-lookup"><span data-stu-id="f6859-110">_globcnt_</span></span>
   
-- <span data-ttu-id="58e7e-111">読み上げOutlook ストア内のオブジェクトを識別する6バイトの一意の番号。</span><span class="sxs-lookup"><span data-stu-id="58e7e-111">[out] A 6-byte unique number that identifies the object within the Outlook store.</span></span>
+- <span data-ttu-id="f6859-111">[out]オブジェクト ストア内のオブジェクトを識別する 6 バイトの一意Outlookします。</span><span class="sxs-lookup"><span data-stu-id="f6859-111">[out] A 6-byte unique number that identifies the object within the Outlook store.</span></span>
     
- <span data-ttu-id="58e7e-112">_wlevel_</span><span class="sxs-lookup"><span data-stu-id="58e7e-112">_wLevel_</span></span>
+ <span data-ttu-id="f6859-112">_wLevel_</span><span class="sxs-lookup"><span data-stu-id="f6859-112">_wLevel_</span></span>
   
-- <span data-ttu-id="58e7e-113">読み上げExchange お気に入りパブリックフォルダーのエントリ ID の階層レベル。</span><span class="sxs-lookup"><span data-stu-id="58e7e-113">[out] The hierarchy level of the entry ID for an Exchange Favorite Public folder.</span></span>
+- <span data-ttu-id="f6859-113">[out][お気に入りパブリック] フォルダーのエントリ ID のExchangeレベルです。</span><span class="sxs-lookup"><span data-stu-id="f6859-113">[out] The hierarchy level of the entry ID for an Exchange Favorite Public folder.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="58e7e-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="58e7e-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f6859-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="f6859-114">See also</span></span>
 
 
 
-[<span data-ttu-id="58e7e-115">レプリケーション API について</span><span class="sxs-lookup"><span data-stu-id="58e7e-115">About the Replication API</span></span>](about-the-replication-api.md)
+[<span data-ttu-id="f6859-115">レプリケーション API について</span><span class="sxs-lookup"><span data-stu-id="f6859-115">About the Replication API</span></span>](about-the-replication-api.md)
   
-[<span data-ttu-id="58e7e-116">レプリケーション状態のマシンについて</span><span class="sxs-lookup"><span data-stu-id="58e7e-116">About the Replication State Machine</span></span>](about-the-replication-state-machine.md)
+[<span data-ttu-id="f6859-116">レプリケーション状態のマシンについて</span><span class="sxs-lookup"><span data-stu-id="f6859-116">About the Replication State Machine</span></span>](about-the-replication-state-machine.md)
   
-[<span data-ttu-id="58e7e-117">FEID</span><span class="sxs-lookup"><span data-stu-id="58e7e-117">FEID</span></span>](feid.md)
+[<span data-ttu-id="f6859-117">FEID</span><span class="sxs-lookup"><span data-stu-id="f6859-117">FEID</span></span>](feid.md)
 

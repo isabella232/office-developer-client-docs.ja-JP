@@ -15,17 +15,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415447"
 ---
-# <a name="forms-and-mapi-client-applications"></a><span data-ttu-id="41918-103">フォームと MAPI クライアント アプリケーション</span><span class="sxs-lookup"><span data-stu-id="41918-103">Forms and MAPI client applications</span></span>
+# <a name="forms-and-mapi-client-applications"></a><span data-ttu-id="ec6ed-103">フォームと MAPI クライアント アプリケーション</span><span class="sxs-lookup"><span data-stu-id="ec6ed-103">Forms and MAPI client applications</span></span>
 
-<span data-ttu-id="41918-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="41918-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="ec6ed-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ec6ed-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="41918-105">すべての MAPI メッセージはフォームのインスタンスなので、クライアントアプリケーションは、他のメッセージオブジェクトの場合と同じように、フォームオブジェクトを表示して操作します。</span><span class="sxs-lookup"><span data-stu-id="41918-105">Because all MAPI messages are instances of forms, client applications display and interact with form objects just as they do with other message objects.</span></span>
+<span data-ttu-id="ec6ed-105">すべての MAPI メッセージはフォームのインスタンスなので、クライアント アプリケーションは他のメッセージ オブジェクトと同様にフォーム オブジェクトを表示および操作します。</span><span class="sxs-lookup"><span data-stu-id="ec6ed-105">Because all MAPI messages are instances of forms, client applications display and interact with form objects just as they do with other message objects.</span></span>
   
-<span data-ttu-id="41918-106">MAPI フォームインターフェイスを使用するクライアントアプリケーションは、フォームオブジェクトに対して追加の操作を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="41918-106">Client applications that use the MAPI form interfaces can provide additional interaction with form objects.</span></span> <span data-ttu-id="41918-107">クライアントアプリケーションは、フォームによって定義された特別な動詞を使用して、フォームのデザイナーが意図したすべての対話をユーザーに提供します。</span><span class="sxs-lookup"><span data-stu-id="41918-107">Client applications can use any special verbs defined by a form to provide users with the full range of interactions intended by the form's designer.</span></span> <span data-ttu-id="41918-108">クライアントは、フォームサーバーが公開するカスタムプロパティを使用して、ユーザーがクライアントのインターフェイスでフォームを並べ替えたり、プレビューしたり、その他の管理を行ったりするのを支援します。</span><span class="sxs-lookup"><span data-stu-id="41918-108">Clients can also use any custom properties that the form server exposes to help users sort, preview, or otherwise manage forms in the client's interface.</span></span>
+<span data-ttu-id="ec6ed-106">MAPI フォーム インターフェイスを使用するクライアント アプリケーションは、フォーム オブジェクトとの対話を追加できます。</span><span class="sxs-lookup"><span data-stu-id="ec6ed-106">Client applications that use the MAPI form interfaces can provide additional interaction with form objects.</span></span> <span data-ttu-id="ec6ed-107">クライアント アプリケーションは、フォームで定義された特別な動詞を使用して、フォームのデザイナーが意図する操作の全範囲をユーザーに提供できます。</span><span class="sxs-lookup"><span data-stu-id="ec6ed-107">Client applications can use any special verbs defined by a form to provide users with the full range of interactions intended by the form's designer.</span></span> <span data-ttu-id="ec6ed-108">クライアントは、フォーム サーバーが公開するカスタム プロパティを使用して、ユーザーがクライアントのインターフェイスでフォームの並べ替え、プレビュー、または管理を行うのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="ec6ed-108">Clients can also use any custom properties that the form server exposes to help users sort, preview, or otherwise manage forms in the client's interface.</span></span>
   
-<span data-ttu-id="41918-109">詳細については、「 [MAPI フォームの処理](handling-mapi-forms.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="41918-109">For more information, see [Handling MAPI Forms](handling-mapi-forms.md).</span></span>
+<span data-ttu-id="ec6ed-109">詳細については、「MAPI フォームの [処理」を参照してください](handling-mapi-forms.md)。</span><span class="sxs-lookup"><span data-stu-id="ec6ed-109">For more information, see [Handling MAPI Forms](handling-mapi-forms.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="41918-110">関連項目</span><span class="sxs-lookup"><span data-stu-id="41918-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ec6ed-110">関連項目</span><span class="sxs-lookup"><span data-stu-id="ec6ed-110">See also</span></span>
 
-- [<span data-ttu-id="41918-111">MAPI フォーム</span><span class="sxs-lookup"><span data-stu-id="41918-111">MAPI Forms</span></span>](mapi-forms.md)
+- [<span data-ttu-id="ec6ed-111">MAPI フォーム</span><span class="sxs-lookup"><span data-stu-id="ec6ed-111">MAPI Forms</span></span>](mapi-forms.md)
 

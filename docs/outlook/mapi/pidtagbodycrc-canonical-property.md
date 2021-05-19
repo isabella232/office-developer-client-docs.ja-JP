@@ -19,48 +19,48 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415181"
 ---
-# <a name="pidtagbodycrc-canonical-property"></a><span data-ttu-id="69c06-103">PidTagBodyCrc 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="69c06-103">PidTagBodyCrc Canonical Property</span></span>
+# <a name="pidtagbodycrc-canonical-property"></a><span data-ttu-id="c889d-103">PidTagBodyCrc 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="c889d-103">PidTagBodyCrc Canonical Property</span></span>
 
   
   
-<span data-ttu-id="69c06-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="69c06-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="c889d-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="c889d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="69c06-105">メッセージテキストの巡回冗長検査 (CRC) 値を含みます。</span><span class="sxs-lookup"><span data-stu-id="69c06-105">Contains a cyclic redundancy check (CRC) value on the message text.</span></span>
+<span data-ttu-id="c889d-105">メッセージ テキストの循環冗長チェック (CRC) 値を含む。</span><span class="sxs-lookup"><span data-stu-id="c889d-105">Contains a cyclic redundancy check (CRC) value on the message text.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="69c06-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="69c06-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="69c06-107">PR_BODY_CRC</span><span class="sxs-lookup"><span data-stu-id="69c06-107">PR_BODY_CRC</span></span>  <br/> |
-|<span data-ttu-id="69c06-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="69c06-108">Identifier:</span></span>  <br/> |<span data-ttu-id="69c06-109">0x0e1c</span><span class="sxs-lookup"><span data-stu-id="69c06-109">0x0E1C</span></span>  <br/> |
-|<span data-ttu-id="69c06-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="69c06-110">Data type:</span></span>  <br/> |<span data-ttu-id="69c06-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="69c06-111">PT_LONG</span></span>  <br/> |
-|<span data-ttu-id="69c06-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="69c06-112">Area:</span></span>  <br/> |<span data-ttu-id="69c06-113">Exchange</span><span class="sxs-lookup"><span data-stu-id="69c06-113">Exchange</span></span>  <br/> |
+|<span data-ttu-id="c889d-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="c889d-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="c889d-107">PR_BODY_CRC</span><span class="sxs-lookup"><span data-stu-id="c889d-107">PR_BODY_CRC</span></span>  <br/> |
+|<span data-ttu-id="c889d-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="c889d-108">Identifier:</span></span>  <br/> |<span data-ttu-id="c889d-109">0x0E1C</span><span class="sxs-lookup"><span data-stu-id="c889d-109">0x0E1C</span></span>  <br/> |
+|<span data-ttu-id="c889d-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="c889d-110">Data type:</span></span>  <br/> |<span data-ttu-id="c889d-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="c889d-111">PT_LONG</span></span>  <br/> |
+|<span data-ttu-id="c889d-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="c889d-112">Area:</span></span>  <br/> |<span data-ttu-id="c889d-113">Exchange</span><span class="sxs-lookup"><span data-stu-id="c889d-113">Exchange</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="69c06-114">注釈</span><span class="sxs-lookup"><span data-stu-id="69c06-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c889d-114">注釈</span><span class="sxs-lookup"><span data-stu-id="c889d-114">Remarks</span></span>
 
-<span data-ttu-id="69c06-115">メッセージストアは、PT_LONG 値を生成する任意の CRC アルゴリズムを使用できます。</span><span class="sxs-lookup"><span data-stu-id="69c06-115">The message store can use any CRC algorithm that generates a PT_LONG value.</span></span> <span data-ttu-id="69c06-116">このプロパティは、 **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) プロパティが初めて設定されたときとその後に変更されたときの[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドの一部として計算する必要があります。</span><span class="sxs-lookup"><span data-stu-id="69c06-116">It must compute this property as part of the [IMAPIProp::SaveChanges](imapiprop-savechanges.md) method when the **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) property has been set for the first time and whenever it has been subsequently modified.</span></span>
+<span data-ttu-id="c889d-115">メッセージ ストアでは、値を生成する任意の CRC アルゴリズムPT_LONGできます。</span><span class="sxs-lookup"><span data-stu-id="c889d-115">The message store can use any CRC algorithm that generates a PT_LONG value.</span></span> <span data-ttu-id="c889d-116">PR_BODY ([PidTagBody](pidtagbody-canonical-property.md)) プロパティが初めて設定され、その後変更されるたびに、**この** プロパティを [IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドの一部として計算する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c889d-116">It must compute this property as part of the [IMAPIProp::SaveChanges](imapiprop-savechanges.md) method when the **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) property has been set for the first time and whenever it has been subsequently modified.</span></span>
   
-<span data-ttu-id="69c06-117">クライアントアプリケーションは**PR_BODY_CRC**を使用して、 **PR_BODY**のプロパティまたはそのバリエーションに含まれるメッセージテキスト文字列の比較を支援します。</span><span class="sxs-lookup"><span data-stu-id="69c06-117">A client application uses **PR_BODY_CRC** to aid in comparing message text strings contained in **PR_BODY** properties or their variants.</span></span> <span data-ttu-id="69c06-118">このプロパティを使用すると、クライアントは、メッセージテキストが変更されたときにすばやく簡単に検出できます。</span><span class="sxs-lookup"><span data-stu-id="69c06-118">Using this property, the client can quickly and easily detect when the message text has changed.</span></span> <span data-ttu-id="69c06-119">**PR_BODY_CRC**を使用して、メッセージストアから**PR_BODY**を取得し、ローカルバージョンと比較するのではなく、パフォーマンスを大幅に向上させることができます。</span><span class="sxs-lookup"><span data-stu-id="69c06-119">It can realize significant performance gains by using **PR_BODY_CRC** instead of obtaining **PR_BODY** from the message store and comparing it with a local version.</span></span> 
+<span data-ttu-id="c889d-117">クライアント アプリケーションは **、PR_BODY_CRC** プロパティまたはバリアントに含まれるメッセージ テキスト文字列を比較 **PR_BODY使用します** 。</span><span class="sxs-lookup"><span data-stu-id="c889d-117">A client application uses **PR_BODY_CRC** to aid in comparing message text strings contained in **PR_BODY** properties or their variants.</span></span> <span data-ttu-id="c889d-118">このプロパティを使用すると、クライアントはメッセージ テキストが変更された時点を迅速かつ簡単に検出できます。</span><span class="sxs-lookup"><span data-stu-id="c889d-118">Using this property, the client can quickly and easily detect when the message text has changed.</span></span> <span data-ttu-id="c889d-119">メッセージ ストアから PR_BODY_CRC を取得しPR_BODYバージョンと比較する代わりに、パフォーマンスの大幅な向上を実現できます。</span><span class="sxs-lookup"><span data-stu-id="c889d-119">It can realize significant performance gains by using **PR_BODY_CRC** instead of obtaining **PR_BODY** from the message store and comparing it with a local version.</span></span> 
   
-## <a name="related-resources"></a><span data-ttu-id="69c06-120">関連リソース</span><span class="sxs-lookup"><span data-stu-id="69c06-120">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="c889d-120">関連リソース</span><span class="sxs-lookup"><span data-stu-id="c889d-120">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="69c06-121">ヘッダーファイル</span><span class="sxs-lookup"><span data-stu-id="69c06-121">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="c889d-121">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="c889d-121">Header files</span></span>
 
-<span data-ttu-id="69c06-122">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="69c06-122">Mapidefs.h</span></span>
+<span data-ttu-id="c889d-122">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="c889d-122">Mapidefs.h</span></span>
   
-> <span data-ttu-id="69c06-123">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="69c06-123">Provides data type definitions.</span></span>
+> <span data-ttu-id="c889d-123">データ型の定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="c889d-123">Provides data type definitions.</span></span>
     
-<span data-ttu-id="69c06-124">Mapitags</span><span class="sxs-lookup"><span data-stu-id="69c06-124">Mapitags.h</span></span>
+<span data-ttu-id="c889d-124">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="c889d-124">Mapitags.h</span></span>
   
-> <span data-ttu-id="69c06-125">関連するプロパティとしてリストされているプロパティの定義が含まれます。</span><span class="sxs-lookup"><span data-stu-id="69c06-125">Contains definitions of properties listed as associated properties.</span></span>
+> <span data-ttu-id="c889d-125">関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。</span><span class="sxs-lookup"><span data-stu-id="c889d-125">Contains definitions of properties listed as associated properties.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="69c06-126">関連項目</span><span class="sxs-lookup"><span data-stu-id="69c06-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c889d-126">関連項目</span><span class="sxs-lookup"><span data-stu-id="c889d-126">See also</span></span>
 
 
 
-[<span data-ttu-id="69c06-127">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="69c06-127">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="c889d-127">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="c889d-127">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="69c06-128">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="69c06-128">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="c889d-128">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="c889d-128">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="69c06-129">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="69c06-129">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="c889d-129">標準プロパティ名を MAPI 名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="c889d-129">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="69c06-130">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="69c06-130">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="c889d-130">MAPI 名を標準プロパティ名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="c889d-130">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

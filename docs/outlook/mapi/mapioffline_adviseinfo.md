@@ -15,15 +15,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420025"
 ---
-# <a name="mapiofflineadviseinfo"></a><span data-ttu-id="d867f-103">MAPIOFFLINE_ADVISEINFO</span><span class="sxs-lookup"><span data-stu-id="d867f-103">MAPIOFFLINE_ADVISEINFO</span></span>
+# <a name="mapioffline_adviseinfo"></a><span data-ttu-id="9f283-103">MAPIOFFLINE_ADVISEINFO</span><span class="sxs-lookup"><span data-stu-id="9f283-103">MAPIOFFLINE_ADVISEINFO</span></span>
  
-<span data-ttu-id="d867f-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="d867f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="9f283-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="9f283-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="d867f-105">**[IMAPIOfflineMgr::](imapiofflinemgr-advise.md)** 通知して、オフラインオブジェクトのコールバックを登録するようにアドバイスします。</span><span class="sxs-lookup"><span data-stu-id="d867f-105">Provides information to **[IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)** to register callback for an offline object.</span></span> 
+<span data-ttu-id="9f283-105">**[IMAPIOfflineMgr::Advise に](imapiofflinemgr-advise.md)** オフライン オブジェクトのコールバックを登録するための情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="9f283-105">Provides information to **[IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)** to register callback for an offline object.</span></span> 
   
-## <a name="quick-info"></a><span data-ttu-id="d867f-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="d867f-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="9f283-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="9f283-106">Quick info</span></span>
 
-<span data-ttu-id="d867f-107">「 **IMAPIOfflineMgr:: Advise**」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d867f-107">See **IMAPIOfflineMgr::Advise**.</span></span> 
+<span data-ttu-id="9f283-107">**「IMAPIOfflineMgr::Advise」を参照してください**。</span><span class="sxs-lookup"><span data-stu-id="9f283-107">See **IMAPIOfflineMgr::Advise**.</span></span> 
   
 ```cpp
 typedef struct 
@@ -37,28 +37,28 @@ typedef struct
 } MAPIOFFLINE_ADVISEINFO;
 ```
 
-## <a name="members"></a><span data-ttu-id="d867f-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="d867f-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="9f283-108">Members</span><span class="sxs-lookup"><span data-stu-id="9f283-108">Members</span></span>
 
-<span data-ttu-id="d867f-109">_ulsize_: **MAPIOFFLINE_ADVISEINFO**のサイズ。</span><span class="sxs-lookup"><span data-stu-id="d867f-109">_ulSize_: The size of **MAPIOFFLINE_ADVISEINFO**.</span></span> 
+<span data-ttu-id="9f283-109">_ulSize_: サイズ **は** MAPIOFFLINE_ADVISEINFO です。</span><span class="sxs-lookup"><span data-stu-id="9f283-109">_ulSize_: The size of **MAPIOFFLINE_ADVISEINFO**.</span></span> 
     
-<span data-ttu-id="d867f-110">_ulclienttoken_: クライアントによってコールバックに対して定義されたトークン。</span><span class="sxs-lookup"><span data-stu-id="d867f-110">_ulClientToken_: A token defined by the client about a callback.</span></span> <span data-ttu-id="d867f-111">これは、 **[IMAPIOfflineNotify:: NOTIFY](imapiofflinenotify-notify.md)** に渡される**[MAPIOFFLINE_NOTIFY](mapioffline_notify.md)** 構造の*ulclienttoken*メンバーです。</span><span class="sxs-lookup"><span data-stu-id="d867f-111">It is the *ulClientToken* member of the **[MAPIOFFLINE_NOTIFY](mapioffline_notify.md)** structure passed to **[IMAPIOfflineNotify::Notify](imapiofflinenotify-notify.md)**.</span></span> 
+<span data-ttu-id="9f283-110">_ulClientToken_: コールバックに関するクライアントによって定義されたトークン。</span><span class="sxs-lookup"><span data-stu-id="9f283-110">_ulClientToken_: A token defined by the client about a callback.</span></span> <span data-ttu-id="9f283-111">*IMAPIOfflineNotify::Notify* **[](mapioffline_notify.md)** に渡MAPIOFFLINE_NOTIFY構造の **[ulClientToken メンバーです](imapiofflinenotify-notify.md)**。</span><span class="sxs-lookup"><span data-stu-id="9f283-111">It is the *ulClientToken* member of the **[MAPIOFFLINE_NOTIFY](mapioffline_notify.md)** structure passed to **[IMAPIOfflineNotify::Notify](imapiofflinenotify-notify.md)**.</span></span> 
     
-<span data-ttu-id="d867f-112">/_テキスト_: 作成するコールバックの種類。</span><span class="sxs-lookup"><span data-stu-id="d867f-112">_CallbackType_: Type of callback to make.</span></span>
+<span data-ttu-id="9f283-112">_CallbackType_: 作成するコールバックの種類。</span><span class="sxs-lookup"><span data-stu-id="9f283-112">_CallbackType_: Type of callback to make.</span></span>
     
-   -  <span data-ttu-id="d867f-113">MAPIOFFLINE_CALLBACK_TYPE_NOTIFY</span><span class="sxs-lookup"><span data-stu-id="d867f-113">MAPIOFFLINE_CALLBACK_TYPE_NOTIFY</span></span> 
+   -  <span data-ttu-id="9f283-113">MAPIOFFLINE_CALLBACK_TYPE_NOTIFY</span><span class="sxs-lookup"><span data-stu-id="9f283-113">MAPIOFFLINE_CALLBACK_TYPE_NOTIFY</span></span> 
     
-   - <span data-ttu-id="d867f-114">コールバックの種類は、通知によって行います。</span><span class="sxs-lookup"><span data-stu-id="d867f-114">The type of callback is by notification.</span></span> <span data-ttu-id="d867f-115">これは、サポートされている唯一の種類のコールバックです。</span><span class="sxs-lookup"><span data-stu-id="d867f-115">This is the only supported type of callback.</span></span>  <span data-ttu-id="d867f-116">*pcallback*は、インターフェイス**[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** を示す必要があります。</span><span class="sxs-lookup"><span data-stu-id="d867f-116">*pCallback*  must indicate the interface **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)**.</span></span> 
+   - <span data-ttu-id="9f283-114">コールバックの種類は通知別です。</span><span class="sxs-lookup"><span data-stu-id="9f283-114">The type of callback is by notification.</span></span> <span data-ttu-id="9f283-115">これは、サポートされているコールバックの唯一の種類です。</span><span class="sxs-lookup"><span data-stu-id="9f283-115">This is the only supported type of callback.</span></span>  <span data-ttu-id="9f283-116">*pCallback は*  、インターフェイス **[IMAPIOfflineNotify を示す必要があります](imapiofflinenotifyiunknown.md)**。</span><span class="sxs-lookup"><span data-stu-id="9f283-116">*pCallback*  must indicate the interface **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)**.</span></span> 
     
-<span data-ttu-id="d867f-117">_pcallback_: コールバックに使用するインターフェイス。</span><span class="sxs-lookup"><span data-stu-id="d867f-117">_pCallback_: Interface to use for callback.</span></span> <span data-ttu-id="d867f-118">これは、クライアントによる**[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** の実装です。</span><span class="sxs-lookup"><span data-stu-id="d867f-118">This is the client's implementation of **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)**.</span></span> 
+<span data-ttu-id="9f283-117">_pCallback_: コールバックに使用するインターフェイス。</span><span class="sxs-lookup"><span data-stu-id="9f283-117">_pCallback_: Interface to use for callback.</span></span> <span data-ttu-id="9f283-118">これは **[、IMAPIOfflineNotify のクライアントの実装です](imapiofflinenotifyiunknown.md)**。</span><span class="sxs-lookup"><span data-stu-id="9f283-118">This is the client's implementation of **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)**.</span></span> 
     
-<span data-ttu-id="d867f-119">_ulAdviseTypes_: アドバイスの条件で識別される、アドバイスの種類。</span><span class="sxs-lookup"><span data-stu-id="d867f-119">_ulAdviseTypes_: The types of advise, as identified by the condition for advising.</span></span> <span data-ttu-id="d867f-120">サポートされている唯一の種類は MAPIOFFLINE_ADVISE_TYPE_STATECHANGE です。</span><span class="sxs-lookup"><span data-stu-id="d867f-120">The only supported type is MAPIOFFLINE_ADVISE_TYPE_STATECHANGE.</span></span>
+<span data-ttu-id="9f283-119">_ulAdviseTypes_: アドバイスの種類 。アドバイスの条件によって識別されます。</span><span class="sxs-lookup"><span data-stu-id="9f283-119">_ulAdviseTypes_: The types of advise, as identified by the condition for advising.</span></span> <span data-ttu-id="9f283-120">サポートされている唯一の型は、MAPIOFFLINE_ADVISE_TYPE_STATECHANGE。</span><span class="sxs-lookup"><span data-stu-id="9f283-120">The only supported type is MAPIOFFLINE_ADVISE_TYPE_STATECHANGE.</span></span>
     
-<span data-ttu-id="d867f-121">_ulStateMask_: サポートされている唯一の状態は、MAPIOFFLINE_STATE_ALL です。</span><span class="sxs-lookup"><span data-stu-id="d867f-121">_ulStateMask_: The only supported state is MAPIOFFLINE_STATE_ALL.</span></span>
+<span data-ttu-id="9f283-121">_ulStateMask_: サポートされている唯一の状態は、MAPIOFFLINE_STATE_ALL。</span><span class="sxs-lookup"><span data-stu-id="9f283-121">_ulStateMask_: The only supported state is MAPIOFFLINE_STATE_ALL.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="d867f-122">関連項目</span><span class="sxs-lookup"><span data-stu-id="d867f-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9f283-122">関連項目</span><span class="sxs-lookup"><span data-stu-id="9f283-122">See also</span></span>
 
-- [<span data-ttu-id="d867f-123">IMAPIOfflineMgr::Advise</span><span class="sxs-lookup"><span data-stu-id="d867f-123">IMAPIOfflineMgr::Advise</span></span>](imapiofflinemgr-advise.md)
-- [<span data-ttu-id="d867f-124">オフライン状態 API について</span><span class="sxs-lookup"><span data-stu-id="d867f-124">About the Offline State API</span></span>](about-the-offline-state-api.md) 
-- [<span data-ttu-id="d867f-125">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="d867f-125">MAPI Constants</span></span>](mapi-constants.md) 
-- [<span data-ttu-id="d867f-126">MAPIOFFLINE_CALLBACK_TYPE</span><span class="sxs-lookup"><span data-stu-id="d867f-126">MAPIOFFLINE_CALLBACK_TYPE</span></span>](mapioffline_callback_type.md)
+- [<span data-ttu-id="9f283-123">IMAPIOfflineMgr::Advise</span><span class="sxs-lookup"><span data-stu-id="9f283-123">IMAPIOfflineMgr::Advise</span></span>](imapiofflinemgr-advise.md)
+- [<span data-ttu-id="9f283-124">オフライン状態 API について</span><span class="sxs-lookup"><span data-stu-id="9f283-124">About the Offline State API</span></span>](about-the-offline-state-api.md) 
+- [<span data-ttu-id="9f283-125">MAPI �萔</span><span class="sxs-lookup"><span data-stu-id="9f283-125">MAPI Constants</span></span>](mapi-constants.md) 
+- [<span data-ttu-id="9f283-126">MAPIOFFLINE_CALLBACK_TYPE</span><span class="sxs-lookup"><span data-stu-id="9f283-126">MAPIOFFLINE_CALLBACK_TYPE</span></span>](mapioffline_callback_type.md)
 

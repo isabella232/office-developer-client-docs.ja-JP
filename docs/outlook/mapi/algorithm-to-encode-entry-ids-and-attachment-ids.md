@@ -1,5 +1,5 @@
 ---
-title: エントリ id と添付ファイル id をエンコードするためのアルゴリズム
+title: エントリの ID と添付ファイルの ID をエンコードするアルゴリズム
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,13 +13,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420137"
 ---
-# <a name="algorithm-to-encode-entry-ids-and-attachment-ids"></a><span data-ttu-id="5d932-103">エントリ id と添付ファイル id をエンコードするためのアルゴリズム</span><span class="sxs-lookup"><span data-stu-id="5d932-103">Algorithm to Encode Entry IDs and Attachment IDs</span></span>
+# <a name="algorithm-to-encode-entry-ids-and-attachment-ids"></a><span data-ttu-id="bbc12-103">エントリの ID と添付ファイルの ID をエンコードするアルゴリズム</span><span class="sxs-lookup"><span data-stu-id="bbc12-103">Algorithm to Encode Entry IDs and Attachment IDs</span></span>
 
   
   
-<span data-ttu-id="5d932-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="5d932-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="bbc12-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="bbc12-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="5d932-105">ストアプロバイダーは、mapi の Uniform resource Locator (URL) の一部として送信し、インデックス処理の準備ができているオブジェクトを識別するために、エントリ id と添付ファイル id を mapi プロトコルハンドラーに送信できます。</span><span class="sxs-lookup"><span data-stu-id="5d932-105">A store provider can send as part of a MAPI Uniform Resource Locator (URL) an entry ID and an attachment ID to the MAPI Protocol Handler to identify an object that is ready for indexing.</span></span> <span data-ttu-id="5d932-106">ストアプロバイダーは、エントリ id と添付ファイル id を Unicode 文字列としてエンコードします。</span><span class="sxs-lookup"><span data-stu-id="5d932-106">The store provider encodes the entry ID and attachment ID as Unicode strings.</span></span> <span data-ttu-id="5d932-107">このトピックでは、エントリ id または添付ファイル id のコンパクト表現を生成するアルゴリズムを示します。</span><span class="sxs-lookup"><span data-stu-id="5d932-107">This topic shows an algorithm that generates a compact representation of the entry ID or attachment ID.</span></span>
+<span data-ttu-id="bbc12-105">ストア プロバイダーは、MAPI Uniform Resource Locator (URL) の一部として、エントリ ID と添付ファイル ID を MAPI プロトコル ハンドラーに送信して、インデックス作成の準備ができているオブジェクトを識別できます。</span><span class="sxs-lookup"><span data-stu-id="bbc12-105">A store provider can send as part of a MAPI Uniform Resource Locator (URL) an entry ID and an attachment ID to the MAPI Protocol Handler to identify an object that is ready for indexing.</span></span> <span data-ttu-id="bbc12-106">ストア プロバイダーは、エントリ ID と添付ファイル ID を Unicode 文字列としてエンコードします。</span><span class="sxs-lookup"><span data-stu-id="bbc12-106">The store provider encodes the entry ID and attachment ID as Unicode strings.</span></span> <span data-ttu-id="bbc12-107">このトピックでは、エントリ ID または添付ファイル ID のコンパクトな表現を生成するアルゴリズムを示します。</span><span class="sxs-lookup"><span data-stu-id="bbc12-107">This topic shows an algorithm that generates a compact representation of the entry ID or attachment ID.</span></span>
   
 ```cpp
 const WORD kwBaseOffset = 0xAC00;  // Hangul char range (AC00-D7AF) 
@@ -52,11 +52,11 @@ LPWSTR EncodeID(ULONG cbEID, LPENTRYID rgbID)
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="5d932-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="5d932-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bbc12-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="bbc12-108">See also</span></span>
 
 
 
-[<span data-ttu-id="5d932-109">通知ベースのストアインデックス作成について</span><span class="sxs-lookup"><span data-stu-id="5d932-109">About Notification-Based Store Indexing</span></span>](about-notification-based-store-indexing.md)
+[<span data-ttu-id="bbc12-109">ストア インデックスNotification-Basedについて</span><span class="sxs-lookup"><span data-stu-id="bbc12-109">About Notification-Based Store Indexing</span></span>](about-notification-based-store-indexing.md)
   
-[<span data-ttu-id="5d932-110">通知ベースのインデックス作成の MAPI url について</span><span class="sxs-lookup"><span data-stu-id="5d932-110">About MAPI URLs for Notification-Based Indexing</span></span>](about-mapi-urls-for-notification-based-indexing.md)
+[<span data-ttu-id="bbc12-110">インデックス作成の MAPI URL Notification-Basedについて</span><span class="sxs-lookup"><span data-stu-id="bbc12-110">About MAPI URLs for Notification-Based Indexing</span></span>](about-mapi-urls-for-notification-based-indexing.md)
 

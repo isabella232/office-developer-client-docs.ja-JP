@@ -15,36 +15,36 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411093"
 ---
-# <a name="opening-a-message"></a><span data-ttu-id="32302-103">メッセージを開く</span><span class="sxs-lookup"><span data-stu-id="32302-103">Opening a message</span></span>
+# <a name="opening-a-message"></a><span data-ttu-id="e006f-103">メッセージを開く</span><span class="sxs-lookup"><span data-stu-id="e006f-103">Opening a message</span></span>
  
-<span data-ttu-id="32302-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="32302-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="e006f-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="e006f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-### <a name="to-open-a-message"></a><span data-ttu-id="32302-105">メッセージを開くには</span><span class="sxs-lookup"><span data-stu-id="32302-105">To open a message</span></span>
+### <a name="to-open-a-message"></a><span data-ttu-id="e006f-105">メッセージを開く方法</span><span class="sxs-lookup"><span data-stu-id="e006f-105">To open a message</span></span>
   
-1. <span data-ttu-id="32302-106">次のいずれかのソースからメッセージのエントリ id を取得します。</span><span class="sxs-lookup"><span data-stu-id="32302-106">Retrieve the message's entry identifier from one of the following sources:</span></span>
+1. <span data-ttu-id="e006f-106">次のいずれかのソースからメッセージのエントリ識別子を取得します。</span><span class="sxs-lookup"><span data-stu-id="e006f-106">Retrieve the message's entry identifier from one of the following sources:</span></span>
     
-   - <span data-ttu-id="32302-107">親フォルダーの contents テーブル内のメッセージを表す行。</span><span class="sxs-lookup"><span data-stu-id="32302-107">The row that represents the message in the contents table of its parent folder.</span></span> <span data-ttu-id="32302-108">folder contents テーブルを使用した作業の詳細については、「 [contents Tables](contents-tables.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="32302-108">For more information about working with a folder contents table, see [Contents Tables](contents-tables.md).</span></span>
+   - <span data-ttu-id="e006f-107">親フォルダーのコンテンツ テーブル内のメッセージを表す行。</span><span class="sxs-lookup"><span data-stu-id="e006f-107">The row that represents the message in the contents table of its parent folder.</span></span> <span data-ttu-id="e006f-108">フォルダー コンテンツ テーブルの操作の詳細については、「コンテンツ テーブル」 [を参照してください](contents-tables.md)。</span><span class="sxs-lookup"><span data-stu-id="e006f-108">For more information about working with a folder contents table, see [Contents Tables](contents-tables.md).</span></span>
     
-   - <span data-ttu-id="32302-109">新しいメール通知と共に送信される[NEWMAIL_NOTIFICATION](newmail_notification.md)構造の**lて tryid**メンバ。</span><span class="sxs-lookup"><span data-stu-id="32302-109">The **lpEntryID** member of the [NEWMAIL_NOTIFICATION](newmail_notification.md) structure that is sent with a new mail notification.</span></span> <span data-ttu-id="32302-110">通知の受信および処理の詳細については、「[通知の処理](handling-notifications.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="32302-110">For more information about receiving and handling notifications, see [Handling Notifications](handling-notifications.md).</span></span>
+   - <span data-ttu-id="e006f-109">新しいメール通知で送信 [NEWMAIL_NOTIFICATION構造体の](newmail_notification.md) **lpEntryID** メンバー。</span><span class="sxs-lookup"><span data-stu-id="e006f-109">The **lpEntryID** member of the [NEWMAIL_NOTIFICATION](newmail_notification.md) structure that is sent with a new mail notification.</span></span> <span data-ttu-id="e006f-110">通知の受信と処理の詳細については、「通知の処理」 [を参照してください](handling-notifications.md)。</span><span class="sxs-lookup"><span data-stu-id="e006f-110">For more information about receiving and handling notifications, see [Handling Notifications](handling-notifications.md).</span></span>
     
-   - <span data-ttu-id="32302-111">**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティを要求しているメッセージの[imapiprop:: GetProps](imapiprop-getprops.md)メソッドへの呼び出し。</span><span class="sxs-lookup"><span data-stu-id="32302-111">A call to the message's [IMAPIProp::GetProps](imapiprop-getprops.md) method requesting the **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) property.</span></span> 
+   - <span data-ttu-id="e006f-111">メッセージの [IMAPIProp::GetProps](imapiprop-getprops.md) メソッドへの呼び出しで、PR_ENTRYID **(** [PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティを要求します。</span><span class="sxs-lookup"><span data-stu-id="e006f-111">A call to the message's [IMAPIProp::GetProps](imapiprop-getprops.md) method requesting the **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) property.</span></span> 
     
-2. <span data-ttu-id="32302-112">メッセージを開くには、次のいずれかの**openentry**メソッドを呼び出します。メッセージのエントリ識別子に_lな tryid_を設定します。</span><span class="sxs-lookup"><span data-stu-id="32302-112">Call one of the following **OpenEntry** methods to open the message, setting  _lpEntryID_ to the message's entry identifier:</span></span> 
+2. <span data-ttu-id="e006f-112">次のいずれかの **OpenEntry** メソッドを呼び出してメッセージを開き  _、lpEntryID_ をメッセージのエントリ識別子に設定します。</span><span class="sxs-lookup"><span data-stu-id="e006f-112">Call one of the following **OpenEntry** methods to open the message, setting  _lpEntryID_ to the message's entry identifier:</span></span> 
     
-   - [<span data-ttu-id="32302-113">IMAPIContainer::OpenEntry</span><span class="sxs-lookup"><span data-stu-id="32302-113">IMAPIContainer::OpenEntry</span></span>](imapicontainer-openentry.md)
+   - [<span data-ttu-id="e006f-113">IMAPIContainer::OpenEntry</span><span class="sxs-lookup"><span data-stu-id="e006f-113">IMAPIContainer::OpenEntry</span></span>](imapicontainer-openentry.md)
     
-   - [<span data-ttu-id="32302-114">IMsgStore::OpenEntry</span><span class="sxs-lookup"><span data-stu-id="32302-114">IMsgStore::OpenEntry</span></span>](imsgstore-openentry.md)
+   - [<span data-ttu-id="e006f-114">IMsgStore::OpenEntry</span><span class="sxs-lookup"><span data-stu-id="e006f-114">IMsgStore::OpenEntry</span></span>](imsgstore-openentry.md)
     
-   - [<span data-ttu-id="32302-115">IMAPISession::OpenEntry</span><span class="sxs-lookup"><span data-stu-id="32302-115">IMAPISession::OpenEntry</span></span>](imapisession-openentry.md)
+   - [<span data-ttu-id="e006f-115">IMAPISession::OpenEntry</span><span class="sxs-lookup"><span data-stu-id="e006f-115">IMAPISession::OpenEntry</span></span>](imapisession-openentry.md)
     
-  <span data-ttu-id="32302-116">最も高速なメソッドは、受信メッセージに対してのみ使用できます。また、受信フォルダーの**imapifolder:: openentry**メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="32302-116">The fastest method is usable only for incoming messages and involves calling the receive folder's **IMAPIFolder::OpenEntry** method.</span></span> <span data-ttu-id="32302-117">次の最も高速な方法は、メッセージストアの**IMsgStore:: openentry**メソッドを呼び出すのと同じように、 **imapisession:: openentry**を呼び出すことにより、すべてのメッセージで使用できます。</span><span class="sxs-lookup"><span data-stu-id="32302-117">The next fastest method, calling the message store's **IMsgStore::OpenEntry** method, is usable for all messages as is the slowest method, calling **IMAPISession::OpenEntry**.</span></span>
+  <span data-ttu-id="e006f-116">最速のメソッドは受信メッセージでのみ使用できます。受信フォルダーの **IMAPIFolder::OpenEntry** メソッドを呼び出す必要があります。</span><span class="sxs-lookup"><span data-stu-id="e006f-116">The fastest method is usable only for incoming messages and involves calling the receive folder's **IMAPIFolder::OpenEntry** method.</span></span> <span data-ttu-id="e006f-117">メッセージ ストアの **IMsgStore::OpenEntry** メソッドを呼び出す次の最速のメソッドは **、IMAPISession::OpenEntry** を呼び出す最も遅いメソッドと同様に、すべてのメッセージで使用できます。</span><span class="sxs-lookup"><span data-stu-id="e006f-117">The next fastest method, calling the message store's **IMsgStore::OpenEntry** method, is usable for all messages as is the slowest method, calling **IMAPISession::OpenEntry**.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="32302-118">フォルダーとその内容テーブルは、いつでも、その中から開いたメッセージに悪影響を与えることなく閉じることができます。</span><span class="sxs-lookup"><span data-stu-id="32302-118">Folders and their contents tables can be closed at any time without adversely affecting any of the messages that were opened from within them.</span></span> 
+> <span data-ttu-id="e006f-118">フォルダーとそのコンテンツ テーブルは、その中から開いたメッセージに悪影響を及ぼさずに、いつでも閉じられます。</span><span class="sxs-lookup"><span data-stu-id="e006f-118">Folders and their contents tables can be closed at any time without adversely affecting any of the messages that were opened from within them.</span></span> 
   
-### <a name="to-open-a-message-that-has-been-saved-on-disk"></a><span data-ttu-id="32302-119">ディスクに保存されているメッセージを開くには</span><span class="sxs-lookup"><span data-stu-id="32302-119">To open a message that has been saved on disk</span></span>
+### <a name="to-open-a-message-that-has-been-saved-on-disk"></a><span data-ttu-id="e006f-119">ディスクに保存されているメッセージを開く方法</span><span class="sxs-lookup"><span data-stu-id="e006f-119">To open a message that has been saved on disk</span></span>
   
-1. <span data-ttu-id="32302-120">**StgOpenStorage**を呼び出して、 **IStorage**インターフェイスポインターを取得し、 _pwcsName_パラメーターのメッセージファイルの名前を渡します。</span><span class="sxs-lookup"><span data-stu-id="32302-120">Call **StgOpenStorage** to retrieve an **IStorage** interface pointer, passing the name of the message file for the  _pwcsName_ parameter.</span></span> 
+1. <span data-ttu-id="e006f-120">**StgOpenStorage を呼** び出して **IStorage** インターフェイス ポインターを取得し _、pwcsName_ パラメーターのメッセージ ファイルの名前を渡します。</span><span class="sxs-lookup"><span data-stu-id="e006f-120">Call **StgOpenStorage** to retrieve an **IStorage** interface pointer, passing the name of the message file for the  _pwcsName_ parameter.</span></span> 
     
    ```cpp
     LPSTORAGE pStorage = NULL;
@@ -56,7 +56,7 @@ ms.locfileid: "33411093"
     
    ```
 
-2. <span data-ttu-id="32302-121">**OpenIMsgOnIStg**を呼び出して、メッセージにアクセスするための**IMessage**インターフェイスポインターを取得します。</span><span class="sxs-lookup"><span data-stu-id="32302-121">Call **OpenIMsgOnIStg** to retrieve an **IMessage** interface pointer to access the message.</span></span> 
+2. <span data-ttu-id="e006f-121">**OpenIMsgOnIStg を呼** び出して **、メッセージ** にアクセスする IMessage インターフェイス ポインターを取得します。</span><span class="sxs-lookup"><span data-stu-id="e006f-121">Call **OpenIMsgOnIStg** to retrieve an **IMessage** interface pointer to access the message.</span></span> 
     
    ```cpp
     LPMESSAGE pMessage = NULL;

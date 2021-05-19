@@ -19,48 +19,48 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33409581"
 ---
-# <a name="pidtagoriginalauthorsearchkey-canonical-property"></a><span data-ttu-id="bc48b-103">PidTagOriginalAuthorSearchKey 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="bc48b-103">PidTagOriginalAuthorSearchKey Canonical Property</span></span>
+# <a name="pidtagoriginalauthorsearchkey-canonical-property"></a><span data-ttu-id="21bb1-103">PidTagOriginalAuthorSearchKey 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="21bb1-103">PidTagOriginalAuthorSearchKey Canonical Property</span></span>
 
   
   
-<span data-ttu-id="bc48b-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="bc48b-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="21bb1-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="21bb1-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="bc48b-105">最初のバージョンのメッセージ、つまり転送または返信する前のメッセージの作成者の検索キーが含まれています。</span><span class="sxs-lookup"><span data-stu-id="bc48b-105">Contains the search key of the author of the first version of a message, that is, the message before being forwarded or replied to.</span></span>
+<span data-ttu-id="21bb1-105">メッセージの最初のバージョンの作成者の検索キー(転送または返信前のメッセージ)が含まれる。</span><span class="sxs-lookup"><span data-stu-id="21bb1-105">Contains the search key of the author of the first version of a message, that is, the message before being forwarded or replied to.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="bc48b-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="bc48b-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="bc48b-107">PR_ORIGINAL_AUTHOR_SEARCH_KEY</span><span class="sxs-lookup"><span data-stu-id="bc48b-107">PR_ORIGINAL_AUTHOR_SEARCH_KEY</span></span>  <br/> |
-|<span data-ttu-id="bc48b-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="bc48b-108">Identifier:</span></span>  <br/> |<span data-ttu-id="bc48b-109">0x0056</span><span class="sxs-lookup"><span data-stu-id="bc48b-109">0x0056</span></span>  <br/> |
-|<span data-ttu-id="bc48b-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="bc48b-110">Data type:</span></span>  <br/> |<span data-ttu-id="bc48b-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="bc48b-111">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="bc48b-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="bc48b-112">Area:</span></span>  <br/> |<span data-ttu-id="bc48b-113">サーバー</span><span class="sxs-lookup"><span data-stu-id="bc48b-113">Server</span></span>  <br/> |
+|<span data-ttu-id="21bb1-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="21bb1-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="21bb1-107">PR_ORIGINAL_AUTHOR_SEARCH_KEY</span><span class="sxs-lookup"><span data-stu-id="21bb1-107">PR_ORIGINAL_AUTHOR_SEARCH_KEY</span></span>  <br/> |
+|<span data-ttu-id="21bb1-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="21bb1-108">Identifier:</span></span>  <br/> |<span data-ttu-id="21bb1-109">0x0056</span><span class="sxs-lookup"><span data-stu-id="21bb1-109">0x0056</span></span>  <br/> |
+|<span data-ttu-id="21bb1-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="21bb1-110">Data type:</span></span>  <br/> |<span data-ttu-id="21bb1-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="21bb1-111">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="21bb1-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="21bb1-112">Area:</span></span>  <br/> |<span data-ttu-id="21bb1-113">Server</span><span class="sxs-lookup"><span data-stu-id="21bb1-113">Server</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="bc48b-114">注釈</span><span class="sxs-lookup"><span data-stu-id="bc48b-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="21bb1-114">注釈</span><span class="sxs-lookup"><span data-stu-id="21bb1-114">Remarks</span></span>
 
-<span data-ttu-id="bc48b-115">このプロパティは、メッセージの作成者のアドレスプロパティの1つです。</span><span class="sxs-lookup"><span data-stu-id="bc48b-115">This property is one of the address properties for the author of a message.</span></span> <span data-ttu-id="bc48b-116">クライアントアプリケーションでは、最初にメッセージを送信するときに、このプロパティを**PR_SENDER_SEARCH_KEY**[PidTagSenderSearchKey](pidtagsendersearchkey-canonical-property.md)プロパティの値に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="bc48b-116">At first submission of the message, the client application should set this property to the value of the **PR_SENDER_SEARCH_KEY**[PidTagSenderSearchKey](pidtagsendersearchkey-canonical-property.md) property.</span></span> <span data-ttu-id="bc48b-117">メッセージが転送または返信されるときには変更されません。</span><span class="sxs-lookup"><span data-stu-id="bc48b-117">It is never changed when the message is forwarded or replied to.</span></span> 
+<span data-ttu-id="21bb1-115">このプロパティは、メッセージの作成者のアドレス プロパティの 1 つです。</span><span class="sxs-lookup"><span data-stu-id="21bb1-115">This property is one of the address properties for the author of a message.</span></span> <span data-ttu-id="21bb1-116">メッセージの最初の送信時に、クライアント アプリケーションは [PidTagSenderSearchKey](pidtagsendersearchkey-canonical-property.md)プロパティの値に **このプロパティPR_SENDER_SEARCH_KEY** 設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="21bb1-116">At first submission of the message, the client application should set this property to the value of the **PR_SENDER_SEARCH_KEY**[PidTagSenderSearchKey](pidtagsendersearchkey-canonical-property.md) property.</span></span> <span data-ttu-id="21bb1-117">メッセージが転送または返信された場合は、変更されません。</span><span class="sxs-lookup"><span data-stu-id="21bb1-117">It is never changed when the message is forwarded or replied to.</span></span> 
   
-<span data-ttu-id="bc48b-118">元の作成者のプロパティを使用すると、ローカルのメッセージングドメインの外部にある情報を保持できます。</span><span class="sxs-lookup"><span data-stu-id="bc48b-118">The original author properties allow for preservation of information from outside the local messaging domain.</span></span> <span data-ttu-id="bc48b-119">インターネットからなど、他のメッセージングドメインからメッセージが到着すると、これらのプロパティを使用して元の情報が失われないようにすることができます。</span><span class="sxs-lookup"><span data-stu-id="bc48b-119">When a message arrives from another messaging domain, such as from the Internet, these properties provide a way to ensure that original information is not lost.</span></span>
+<span data-ttu-id="21bb1-118">元の作成者プロパティを使用すると、ローカル メッセージング ドメイン外からの情報を保持できます。</span><span class="sxs-lookup"><span data-stu-id="21bb1-118">The original author properties allow for preservation of information from outside the local messaging domain.</span></span> <span data-ttu-id="21bb1-119">インターネットなどの別のメッセージング ドメインからメッセージが到着すると、これらのプロパティを使用して、元の情報が失われなかねない方法が提供されます。</span><span class="sxs-lookup"><span data-stu-id="21bb1-119">When a message arrives from another messaging domain, such as from the Internet, these properties provide a way to ensure that original information is not lost.</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="bc48b-120">関連リソース</span><span class="sxs-lookup"><span data-stu-id="bc48b-120">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="21bb1-120">関連リソース</span><span class="sxs-lookup"><span data-stu-id="21bb1-120">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="bc48b-121">ヘッダーファイル</span><span class="sxs-lookup"><span data-stu-id="bc48b-121">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="21bb1-121">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="21bb1-121">Header files</span></span>
 
-<span data-ttu-id="bc48b-122">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="bc48b-122">Mapidefs.h</span></span>
+<span data-ttu-id="21bb1-122">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="21bb1-122">Mapidefs.h</span></span>
   
-> <span data-ttu-id="bc48b-123">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="bc48b-123">Provides data type definitions.</span></span>
+> <span data-ttu-id="21bb1-123">データ型の定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="21bb1-123">Provides data type definitions.</span></span>
     
-<span data-ttu-id="bc48b-124">Mapitags</span><span class="sxs-lookup"><span data-stu-id="bc48b-124">Mapitags.h</span></span>
+<span data-ttu-id="21bb1-124">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="21bb1-124">Mapitags.h</span></span>
   
-> <span data-ttu-id="bc48b-125">関連するプロパティとしてリストされているプロパティの定義が含まれます。</span><span class="sxs-lookup"><span data-stu-id="bc48b-125">Contains definitions of properties listed as associated properties.</span></span>
+> <span data-ttu-id="21bb1-125">関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。</span><span class="sxs-lookup"><span data-stu-id="21bb1-125">Contains definitions of properties listed as associated properties.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="bc48b-126">関連項目</span><span class="sxs-lookup"><span data-stu-id="bc48b-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="21bb1-126">関連項目</span><span class="sxs-lookup"><span data-stu-id="21bb1-126">See also</span></span>
 
 
 
-[<span data-ttu-id="bc48b-127">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="bc48b-127">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="21bb1-127">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="21bb1-127">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="bc48b-128">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="bc48b-128">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="21bb1-128">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="21bb1-128">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="bc48b-129">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="bc48b-129">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="21bb1-129">標準プロパティ名を MAPI 名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="21bb1-129">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="bc48b-130">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="bc48b-130">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="21bb1-130">MAPI 名を標準プロパティ名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="21bb1-130">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

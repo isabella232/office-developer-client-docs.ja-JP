@@ -15,15 +15,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33410253"
 ---
-# <a name="hdrsync"></a><span data-ttu-id="34a80-103">HDRSYNC</span><span class="sxs-lookup"><span data-stu-id="34a80-103">HDRSYNC</span></span>
+# <a name="hdrsync"></a><span data-ttu-id="9e81c-103">HDRSYNC</span><span class="sxs-lookup"><span data-stu-id="9e81c-103">HDRSYNC</span></span>
 
   
   
-<span data-ttu-id="34a80-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="34a80-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="9e81c-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="9e81c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="34a80-105">メッセージヘッダー[状態のダウンロード](download-message-header-state.md)中にメッセージヘッダーを同期するための情報。</span><span class="sxs-lookup"><span data-stu-id="34a80-105">Information for synchronizing a message header during the [download message header state](download-message-header-state.md).</span></span>
+<span data-ttu-id="9e81c-105">ダウンロード メッセージ ヘッダーの状態中にメッセージ ヘッダーを [同期する情報](download-message-header-state.md)です。</span><span class="sxs-lookup"><span data-stu-id="9e81c-105">Information for synchronizing a message header during the [download message header state](download-message-header-state.md).</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="34a80-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="34a80-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="9e81c-106">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="9e81c-106">Quick info</span></span>
 
 ```cpp
 struct HDRSYNC 
@@ -36,49 +36,49 @@ struct HDRSYNC
 };
 ```
 
-## <a name="members"></a><span data-ttu-id="34a80-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="34a80-107">Members</span></span>
+## <a name="members"></a><span data-ttu-id="9e81c-107">メンバー</span><span class="sxs-lookup"><span data-stu-id="9e81c-107">Members</span></span>
 
- <span data-ttu-id="34a80-108">_pupmsg_</span><span class="sxs-lookup"><span data-stu-id="34a80-108">_pupmsg_</span></span>
+ <span data-ttu-id="9e81c-108">_pupmsg_</span><span class="sxs-lookup"><span data-stu-id="9e81c-108">_pupmsg_</span></span>
   
-- <span data-ttu-id="34a80-109">読み上げローカルストア内の現在のメッセージヘッダーに関する情報。</span><span class="sxs-lookup"><span data-stu-id="34a80-109">[out] Information for the current message header in the local store.</span></span>
+- <span data-ttu-id="9e81c-109">[out]ローカル ストア内の現在のメッセージ ヘッダーに関する情報。</span><span class="sxs-lookup"><span data-stu-id="9e81c-109">[out] Information for the current message header in the local store.</span></span>
     
- <span data-ttu-id="34a80-110">_feidpar_</span><span class="sxs-lookup"><span data-stu-id="34a80-110">_feidPar_</span></span>
+ <span data-ttu-id="9e81c-110">_feidPar_</span><span class="sxs-lookup"><span data-stu-id="9e81c-110">_feidPar_</span></span>
   
-- <span data-ttu-id="34a80-111">読み上げメッセージアイテムの親フォルダーのエントリ ID。</span><span class="sxs-lookup"><span data-stu-id="34a80-111">[out] Entry ID for the parent folder of the message item.</span></span>
+- <span data-ttu-id="9e81c-111">[out]メッセージ アイテムの親フォルダーのエントリ ID。</span><span class="sxs-lookup"><span data-stu-id="9e81c-111">[out] Entry ID for the parent folder of the message item.</span></span>
     
- <span data-ttu-id="34a80-112">_pstmReserved_</span><span class="sxs-lookup"><span data-stu-id="34a80-112">_pstmReserved_</span></span>
+ <span data-ttu-id="9e81c-112">_pstmReserved_</span><span class="sxs-lookup"><span data-stu-id="9e81c-112">_pstmReserved_</span></span>
   
-- <span data-ttu-id="34a80-113">[out] このメンバーは Outlook の内部使用のために予約されており、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="34a80-113">[out] This member is reserved for the internal use of Outlook and is not supported.</span></span> 
+- <span data-ttu-id="9e81c-113">[out] このメンバーは Outlook の内部使用のために予約されており、サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="9e81c-113">[out] This member is reserved for the internal use of Outlook and is not supported.</span></span> 
     
- <span data-ttu-id="34a80-114">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="34a80-114">_ulFlags_</span></span>
+ <span data-ttu-id="9e81c-114">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="9e81c-114">_ulFlags_</span></span>
   
-- <span data-ttu-id="34a80-115">順番動作を変更するフラグ:</span><span class="sxs-lookup"><span data-stu-id="34a80-115">[in] Flags to modify behavior:</span></span>
+- <span data-ttu-id="9e81c-115">[in]動作を変更するフラグ:</span><span class="sxs-lookup"><span data-stu-id="9e81c-115">[in] Flags to modify behavior:</span></span>
     
-- <span data-ttu-id="34a80-116">HSF_LOCAL</span><span class="sxs-lookup"><span data-stu-id="34a80-116">HSF_LOCAL</span></span>
+- <span data-ttu-id="9e81c-116">HSF_LOCAL</span><span class="sxs-lookup"><span data-stu-id="9e81c-116">HSF_LOCAL</span></span>
     
-  - <span data-ttu-id="34a80-117">順番すべてのアイテムは、ヘッダー項目と同じローカルストアに存在します。</span><span class="sxs-lookup"><span data-stu-id="34a80-117">[in] Full item resides in the same local store as the header item.</span></span>
+  - <span data-ttu-id="9e81c-117">[in]完全なアイテムは、ヘッダー アイテムと同じローカル ストアに存在します。</span><span class="sxs-lookup"><span data-stu-id="9e81c-117">[in] Full item resides in the same local store as the header item.</span></span>
     
-- <span data-ttu-id="34a80-118">HSF_COPYDESTRUCTIVE</span><span class="sxs-lookup"><span data-stu-id="34a80-118">HSF_COPYDESTRUCTIVE</span></span>
+- <span data-ttu-id="9e81c-118">HSF_COPYDESTRUCTIVE</span><span class="sxs-lookup"><span data-stu-id="9e81c-118">HSF_COPYDESTRUCTIVE</span></span>
     
-  -  <span data-ttu-id="34a80-119">順番内部コピー操作を最適化します。</span><span class="sxs-lookup"><span data-stu-id="34a80-119">[in] Optimize internal copy operations.</span></span> <span data-ttu-id="34a80-120">これにより、データが失われる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="34a80-120">This might cause data loss.</span></span> <span data-ttu-id="34a80-121">**HSF_LOCAL**を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="34a80-121">**HSF_LOCAL** must be set.</span></span> 
+  -  <span data-ttu-id="9e81c-119">[in]内部コピー操作を最適化します。</span><span class="sxs-lookup"><span data-stu-id="9e81c-119">[in] Optimize internal copy operations.</span></span> <span data-ttu-id="9e81c-120">これにより、データが失われる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="9e81c-120">This might cause data loss.</span></span> <span data-ttu-id="9e81c-121">**HSF_LOCAL** 設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9e81c-121">**HSF_LOCAL** must be set.</span></span> 
     
-- <span data-ttu-id="34a80-122">HSF_OK</span><span class="sxs-lookup"><span data-stu-id="34a80-122">HSF_OK</span></span>
+- <span data-ttu-id="9e81c-122">HSF_OK</span><span class="sxs-lookup"><span data-stu-id="9e81c-122">HSF_OK</span></span>
     
-  - <span data-ttu-id="34a80-123">順番ヘッダーの同期に成功しました。</span><span class="sxs-lookup"><span data-stu-id="34a80-123">[in] Header synchronization was successful.</span></span> <span data-ttu-id="34a80-124">クライアントは、サーバーから情報をダウンロードした後、これを設定します。</span><span class="sxs-lookup"><span data-stu-id="34a80-124">The client sets this after downloading information from the server.</span></span>
+  - <span data-ttu-id="9e81c-123">[in]ヘッダーの同期が成功しました。</span><span class="sxs-lookup"><span data-stu-id="9e81c-123">[in] Header synchronization was successful.</span></span> <span data-ttu-id="9e81c-124">クライアントは、サーバーから情報をダウンロードした後、これを設定します。</span><span class="sxs-lookup"><span data-stu-id="9e81c-124">The client sets this after downloading information from the server.</span></span>
     
-     <span data-ttu-id="34a80-125">_pmsgfull_</span><span class="sxs-lookup"><span data-stu-id="34a80-125">_pmsgFull_</span></span>
+     <span data-ttu-id="9e81c-125">_pmsgFull_</span><span class="sxs-lookup"><span data-stu-id="9e81c-125">_pmsgFull_</span></span>
     
-  - <span data-ttu-id="34a80-126">順番サーバーからダウンロードされたメッセージヘッダーを含む、完全なメッセージアイテム。</span><span class="sxs-lookup"><span data-stu-id="34a80-126">[in] The full message item including the message header downloaded from the server.</span></span> <span data-ttu-id="34a80-127">**lpmessage**の種類の定義については、「mapidefs.h」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="34a80-127">See mapidefs.h for the type definition of **LPMESSAGE**.</span></span> 
+  - <span data-ttu-id="9e81c-126">[in]サーバーからダウンロードされたメッセージ ヘッダーを含む完全なメッセージ アイテム。</span><span class="sxs-lookup"><span data-stu-id="9e81c-126">[in] The full message item including the message header downloaded from the server.</span></span> <span data-ttu-id="9e81c-127">LPMESSAGE の型定義については、mapidefs.h **を参照してください**。</span><span class="sxs-lookup"><span data-stu-id="9e81c-127">See mapidefs.h for the type definition of **LPMESSAGE**.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="34a80-128">関連項目</span><span class="sxs-lookup"><span data-stu-id="34a80-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9e81c-128">関連項目</span><span class="sxs-lookup"><span data-stu-id="9e81c-128">See also</span></span>
 
 
 
-[<span data-ttu-id="34a80-129">レプリケーション API について</span><span class="sxs-lookup"><span data-stu-id="34a80-129">About the Replication API</span></span>](about-the-replication-api.md)
+[<span data-ttu-id="9e81c-129">レプリケーション API について</span><span class="sxs-lookup"><span data-stu-id="9e81c-129">About the Replication API</span></span>](about-the-replication-api.md)
   
-[<span data-ttu-id="34a80-130">レプリケーション状態のマシンについて</span><span class="sxs-lookup"><span data-stu-id="34a80-130">About the Replication State Machine</span></span>](about-the-replication-state-machine.md)
+[<span data-ttu-id="9e81c-130">レプリケーション状態のマシンについて</span><span class="sxs-lookup"><span data-stu-id="9e81c-130">About the Replication State Machine</span></span>](about-the-replication-state-machine.md)
   
-[<span data-ttu-id="34a80-131">MAPI 定数</span><span class="sxs-lookup"><span data-stu-id="34a80-131">MAPI Constants</span></span>](mapi-constants.md)
+[<span data-ttu-id="9e81c-131">MAPI 定数</span><span class="sxs-lookup"><span data-stu-id="9e81c-131">MAPI Constants</span></span>](mapi-constants.md)
   
-[<span data-ttu-id="34a80-132">FEID</span><span class="sxs-lookup"><span data-stu-id="34a80-132">FEID</span></span>](feid.md)
+[<span data-ttu-id="9e81c-132">FEID</span><span class="sxs-lookup"><span data-stu-id="9e81c-132">FEID</span></span>](feid.md)
 

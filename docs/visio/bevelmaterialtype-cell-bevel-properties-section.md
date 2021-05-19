@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 30f50a94-88dc-41a3-bb46-45c92d6817a4
-description: ベベルを構成する素材の種類を指定します。
+description: ベベルが構成されるマテリアルの種類を指定します。
 ms.openlocfilehash: b8efaa1f84594c803c79be02cd88dda1a5346dc7
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -14,39 +14,39 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33414586"
 ---
-# <a name="bevelmaterialtype-cell-bevel-properties-section"></a><span data-ttu-id="b5b71-103">[BevelMaterialType] セル ([ベベルのプロパティ] セクション)</span><span class="sxs-lookup"><span data-stu-id="b5b71-103">BevelMaterialType Cell (Bevel Properties Section)</span></span>
+# <a name="bevelmaterialtype-cell-bevel-properties-section"></a><span data-ttu-id="d22d5-103">[BevelMaterialType] セル ([ベベルのプロパティ] セクション)</span><span class="sxs-lookup"><span data-stu-id="d22d5-103">BevelMaterialType Cell (Bevel Properties Section)</span></span>
 
-<span data-ttu-id="b5b71-104">ベベルを構成する素材の種類を指定します。</span><span class="sxs-lookup"><span data-stu-id="b5b71-104">Determines the type of material the bevel is composed of.</span></span> 
+<span data-ttu-id="d22d5-104">ベベルが構成されるマテリアルの種類を指定します。</span><span class="sxs-lookup"><span data-stu-id="d22d5-104">Determines the type of material the bevel is composed of.</span></span> 
   
-|<span data-ttu-id="b5b71-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="b5b71-105">**Description**</span></span>|<span data-ttu-id="b5b71-106">**値**</span><span class="sxs-lookup"><span data-stu-id="b5b71-106">**Value**</span></span>|
+|<span data-ttu-id="d22d5-105">**説明**</span><span class="sxs-lookup"><span data-stu-id="d22d5-105">**Description**</span></span>|<span data-ttu-id="d22d5-106">**値**</span><span class="sxs-lookup"><span data-stu-id="d22d5-106">**Value**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="b5b71-107">.0</span><span class="sxs-lookup"><span data-stu-id="b5b71-107">0</span></span>  <br/> |<span data-ttu-id="b5b71-108">特別な素材なし</span><span class="sxs-lookup"><span data-stu-id="b5b71-108">No special material</span></span>  <br/> |
-|<span data-ttu-id="b5b71-109">1 </span><span class="sxs-lookup"><span data-stu-id="b5b71-109">1</span></span>  <br/> |<span data-ttu-id="b5b71-110">つや消し</span><span class="sxs-lookup"><span data-stu-id="b5b71-110">Matte</span></span>  <br/> |
-|<span data-ttu-id="b5b71-111">2 </span><span class="sxs-lookup"><span data-stu-id="b5b71-111">2</span></span>  <br/> |<span data-ttu-id="b5b71-112">つや消し (明るめ)</span><span class="sxs-lookup"><span data-stu-id="b5b71-112">Warm Matte</span></span>  <br/> |
-|<span data-ttu-id="b5b71-113">3 </span><span class="sxs-lookup"><span data-stu-id="b5b71-113">3</span></span>  <br/> |<span data-ttu-id="b5b71-114">プラスチック</span><span class="sxs-lookup"><span data-stu-id="b5b71-114">Plastic</span></span>  <br/> |
-|<span data-ttu-id="b5b71-115">4 </span><span class="sxs-lookup"><span data-stu-id="b5b71-115">4</span></span>  <br/> |<span data-ttu-id="b5b71-116">メタル</span><span class="sxs-lookup"><span data-stu-id="b5b71-116">Metal</span></span>  <br/> |
-|<span data-ttu-id="b5b71-117">5 </span><span class="sxs-lookup"><span data-stu-id="b5b71-117">5</span></span>  <br/> |<span data-ttu-id="b5b71-118">ダークエッジ</span><span class="sxs-lookup"><span data-stu-id="b5b71-118">Dark Edge</span></span>  <br/> |
-|<span data-ttu-id="b5b71-119">6 </span><span class="sxs-lookup"><span data-stu-id="b5b71-119">6</span></span>  <br/> |<span data-ttu-id="b5b71-120">ぼかし</span><span class="sxs-lookup"><span data-stu-id="b5b71-120">Soft Edge</span></span>  <br/> |
-|<span data-ttu-id="b5b71-121">7 </span><span class="sxs-lookup"><span data-stu-id="b5b71-121">7</span></span>  <br/> |<span data-ttu-id="b5b71-122">[Flat/なし]</span><span class="sxs-lookup"><span data-stu-id="b5b71-122">Flat</span></span>  <br/> |
-|<span data-ttu-id="b5b71-123">8 </span><span class="sxs-lookup"><span data-stu-id="b5b71-123">8</span></span>  <br/> |<span data-ttu-id="b5b71-124">ワイヤーフレーム</span><span class="sxs-lookup"><span data-stu-id="b5b71-124">Wireframe</span></span>  <br/> |
-|<span data-ttu-id="b5b71-125">9 </span><span class="sxs-lookup"><span data-stu-id="b5b71-125">9</span></span>  <br/> |<span data-ttu-id="b5b71-126">パウダー</span><span class="sxs-lookup"><span data-stu-id="b5b71-126">Powder</span></span>  <br/> |
-|<span data-ttu-id="b5b71-127">10 </span><span class="sxs-lookup"><span data-stu-id="b5b71-127">10</span></span>  <br/> |<span data-ttu-id="b5b71-128">透明パウダー</span><span class="sxs-lookup"><span data-stu-id="b5b71-128">Translucent Powder</span></span>  <br/> |
-|<span data-ttu-id="b5b71-129">11 </span><span class="sxs-lookup"><span data-stu-id="b5b71-129">11</span></span>  <br/> |<span data-ttu-id="b5b71-130">Clear</span><span class="sxs-lookup"><span data-stu-id="b5b71-130">Clear</span></span>  <br/> |
+|<span data-ttu-id="d22d5-107">0</span><span class="sxs-lookup"><span data-stu-id="d22d5-107">0</span></span>  <br/> |<span data-ttu-id="d22d5-108">特別な材料なし</span><span class="sxs-lookup"><span data-stu-id="d22d5-108">No special material</span></span>  <br/> |
+|<span data-ttu-id="d22d5-109">1</span><span class="sxs-lookup"><span data-stu-id="d22d5-109">1</span></span>  <br/> |<span data-ttu-id="d22d5-110">つや消し</span><span class="sxs-lookup"><span data-stu-id="d22d5-110">Matte</span></span>  <br/> |
+|<span data-ttu-id="d22d5-111">2</span><span class="sxs-lookup"><span data-stu-id="d22d5-111">2</span></span>  <br/> |<span data-ttu-id="d22d5-112">つや消し (明るめ)</span><span class="sxs-lookup"><span data-stu-id="d22d5-112">Warm Matte</span></span>  <br/> |
+|<span data-ttu-id="d22d5-113">3</span><span class="sxs-lookup"><span data-stu-id="d22d5-113">3</span></span>  <br/> |<span data-ttu-id="d22d5-114">プラスチック</span><span class="sxs-lookup"><span data-stu-id="d22d5-114">Plastic</span></span>  <br/> |
+|<span data-ttu-id="d22d5-115">4</span><span class="sxs-lookup"><span data-stu-id="d22d5-115">4</span></span>  <br/> |<span data-ttu-id="d22d5-116">メタル</span><span class="sxs-lookup"><span data-stu-id="d22d5-116">Metal</span></span>  <br/> |
+|<span data-ttu-id="d22d5-117">5</span><span class="sxs-lookup"><span data-stu-id="d22d5-117">5</span></span>  <br/> |<span data-ttu-id="d22d5-118">濃いエッジ</span><span class="sxs-lookup"><span data-stu-id="d22d5-118">Dark Edge</span></span>  <br/> |
+|<span data-ttu-id="d22d5-119">6</span><span class="sxs-lookup"><span data-stu-id="d22d5-119">6</span></span>  <br/> |<span data-ttu-id="d22d5-120">ぼかし</span><span class="sxs-lookup"><span data-stu-id="d22d5-120">Soft Edge</span></span>  <br/> |
+|<span data-ttu-id="d22d5-121">7</span><span class="sxs-lookup"><span data-stu-id="d22d5-121">7</span></span>  <br/> |<span data-ttu-id="d22d5-122">[Flat/なし]</span><span class="sxs-lookup"><span data-stu-id="d22d5-122">Flat</span></span>  <br/> |
+|<span data-ttu-id="d22d5-123">8</span><span class="sxs-lookup"><span data-stu-id="d22d5-123">8</span></span>  <br/> |<span data-ttu-id="d22d5-124">ワイヤーフレーム</span><span class="sxs-lookup"><span data-stu-id="d22d5-124">Wireframe</span></span>  <br/> |
+|<span data-ttu-id="d22d5-125">9</span><span class="sxs-lookup"><span data-stu-id="d22d5-125">9</span></span>  <br/> |<span data-ttu-id="d22d5-126">パウダー</span><span class="sxs-lookup"><span data-stu-id="d22d5-126">Powder</span></span>  <br/> |
+|<span data-ttu-id="d22d5-127">10</span><span class="sxs-lookup"><span data-stu-id="d22d5-127">10</span></span>  <br/> |<span data-ttu-id="d22d5-128">透明パウダー</span><span class="sxs-lookup"><span data-stu-id="d22d5-128">Translucent Powder</span></span>  <br/> |
+|<span data-ttu-id="d22d5-129">11</span><span class="sxs-lookup"><span data-stu-id="d22d5-129">11</span></span>  <br/> |<span data-ttu-id="d22d5-130">Clear</span><span class="sxs-lookup"><span data-stu-id="d22d5-130">Clear</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="b5b71-131">注釈</span><span class="sxs-lookup"><span data-stu-id="b5b71-131">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d22d5-131">注釈</span><span class="sxs-lookup"><span data-stu-id="d22d5-131">Remarks</span></span>
 
-<span data-ttu-id="b5b71-132">別の数式から、 **cell**要素の**N**属性の値によって、または**CellsU**プロパティを使用したプログラムから、名前によって [ **[bevelmaterialtype]** ] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="b5b71-132">To get a reference to the **BevelMaterialType** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="d22d5-132">別の数式 **、Cell** 要素 **の N** 属性の値、または CellsU プロパティを使用するプログラムから、名前によって **[BevelMaterialType]** セルへの参照を取得するには、次の値を使用します。 </span><span class="sxs-lookup"><span data-stu-id="d22d5-132">To get a reference to the **BevelMaterialType** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="b5b71-133">セル名:</span><span class="sxs-lookup"><span data-stu-id="b5b71-133">Cell name:</span></span>  <br/> | <span data-ttu-id="b5b71-134">[bevelmaterialtype]</span><span class="sxs-lookup"><span data-stu-id="b5b71-134">BevelMaterialType</span></span>  <br/> |
+| <span data-ttu-id="d22d5-133">セル名:</span><span class="sxs-lookup"><span data-stu-id="d22d5-133">Cell name:</span></span>  <br/> | <span data-ttu-id="d22d5-134">BevelMaterialType</span><span class="sxs-lookup"><span data-stu-id="d22d5-134">BevelMaterialType</span></span>  <br/> |
    
-<span data-ttu-id="b5b71-135">プログラムから、インデックスによって [ **[bevelmaterialtype]** ] セルへの参照を取得するには、 **CellsSRC**プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="b5b71-135">To get a reference to the **BevelMaterialType** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="d22d5-135">プログラムからインデックスによって **[BevelMaterialType]** セルへの参照を取得するには **、CellsSRC** プロパティを使用して、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="d22d5-135">To get a reference to the **BevelMaterialType** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="b5b71-136">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="b5b71-136">Section index:</span></span>  <br/> |<span data-ttu-id="b5b71-137">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="b5b71-137">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="b5b71-138">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="b5b71-138">Row index:</span></span>  <br/> |<span data-ttu-id="b5b71-139">**visRowBevelProperties**</span><span class="sxs-lookup"><span data-stu-id="b5b71-139">**visRowBevelProperties**</span></span> <br/> |
-| <span data-ttu-id="b5b71-140">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="b5b71-140">Cell index:</span></span>  <br/> |<span data-ttu-id="b5b71-141">**visBevelMaterialType**</span><span class="sxs-lookup"><span data-stu-id="b5b71-141">**visBevelMaterialType**</span></span> <br/> |
+| <span data-ttu-id="d22d5-136">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="d22d5-136">Section index:</span></span>  <br/> |<span data-ttu-id="d22d5-137">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="d22d5-137">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="d22d5-138">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="d22d5-138">Row index:</span></span>  <br/> |<span data-ttu-id="d22d5-139">**visRowBevelProperties**</span><span class="sxs-lookup"><span data-stu-id="d22d5-139">**visRowBevelProperties**</span></span> <br/> |
+| <span data-ttu-id="d22d5-140">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="d22d5-140">Cell index:</span></span>  <br/> |<span data-ttu-id="d22d5-141">**visBevelMaterialType**</span><span class="sxs-lookup"><span data-stu-id="d22d5-141">**visBevelMaterialType**</span></span> <br/> |
    
 

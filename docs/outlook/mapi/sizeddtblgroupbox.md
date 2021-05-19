@@ -19,34 +19,34 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33419318"
 ---
-# <a name="sizeddtblgroupbox"></a><span data-ttu-id="55ef6-103">SizedDtblGroupBox</span><span class="sxs-lookup"><span data-stu-id="55ef6-103">SizedDtblGroupBox</span></span>
+# <a name="sizeddtblgroupbox"></a><span data-ttu-id="37221-103">SizedDtblGroupBox</span><span class="sxs-lookup"><span data-stu-id="37221-103">SizedDtblGroupBox</span></span>
 
-<span data-ttu-id="55ef6-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="55ef6-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="37221-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="37221-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="55ef6-105">グループボックスコントロールと指定された長さのラベルを表す[dtblgroupbox](dtblgroupbox.md)構造を含む名前付き構造を作成します。</span><span class="sxs-lookup"><span data-stu-id="55ef6-105">Creates a named structure that includes a [DTBLGROUPBOX](dtblgroupbox.md) structure for describing a group box control and a label of a specified length.</span></span> 
+<span data-ttu-id="37221-105">グループ ボックス コントロールと指定した長さのラベルを記述するための [DTBLGROUPBOX](dtblgroupbox.md) 構造体を含む名前付き構造を作成します。</span><span class="sxs-lookup"><span data-stu-id="37221-105">Creates a named structure that includes a [DTBLGROUPBOX](dtblgroupbox.md) structure for describing a group box control and a label of a specified length.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="55ef6-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="55ef6-106">Header file:</span></span>  <br/> |<span data-ttu-id="55ef6-107">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="55ef6-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="55ef6-108">関連する構造:</span><span class="sxs-lookup"><span data-stu-id="55ef6-108">Related structure:</span></span>  <br/> |<span data-ttu-id="55ef6-109">**DTBLGROUPBOX**</span><span class="sxs-lookup"><span data-stu-id="55ef6-109">**DTBLGROUPBOX**</span></span> <br/> |
+|<span data-ttu-id="37221-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="37221-106">Header file:</span></span>  <br/> |<span data-ttu-id="37221-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="37221-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="37221-108">関連する構造:</span><span class="sxs-lookup"><span data-stu-id="37221-108">Related structure:</span></span>  <br/> |<span data-ttu-id="37221-109">**DTBLGROUPBOX**</span><span class="sxs-lookup"><span data-stu-id="37221-109">**DTBLGROUPBOX**</span></span> <br/> |
    
 ```cpp
 SizedDtblGroupBox (n, u)
 ```
 
-## <a name="parameters"></a><span data-ttu-id="55ef6-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="55ef6-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="37221-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="37221-110">Parameters</span></span>
 
-<span data-ttu-id="55ef6-111">_n_</span><span class="sxs-lookup"><span data-stu-id="55ef6-111">_n_</span></span>
+<span data-ttu-id="37221-111">_n_</span><span class="sxs-lookup"><span data-stu-id="37221-111">_n_</span></span>
   
-> <span data-ttu-id="55ef6-112">グループボックスのラベルの長さ。</span><span class="sxs-lookup"><span data-stu-id="55ef6-112">Length of the group box's label.</span></span> 
+> <span data-ttu-id="37221-112">グループ ボックスのラベルの長さ。</span><span class="sxs-lookup"><span data-stu-id="37221-112">Length of the group box's label.</span></span> 
     
-<span data-ttu-id="55ef6-113">_u_</span><span class="sxs-lookup"><span data-stu-id="55ef6-113">_u_</span></span>
+<span data-ttu-id="37221-113">_u_</span><span class="sxs-lookup"><span data-stu-id="37221-113">_u_</span></span>
   
-> <span data-ttu-id="55ef6-114">新しい構造の名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="55ef6-114">Name for the new structure.</span></span>
+> <span data-ttu-id="37221-114">新しい構造の名前。</span><span class="sxs-lookup"><span data-stu-id="37221-114">Name for the new structure.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="55ef6-115">注釈</span><span class="sxs-lookup"><span data-stu-id="55ef6-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="37221-115">注釈</span><span class="sxs-lookup"><span data-stu-id="37221-115">Remarks</span></span>
 
-<span data-ttu-id="55ef6-116">**sizeddtblgroupbox**マクロを使用すると、ラベルの長さが既知の場合に、グループボックスコントロールを定義できます。</span><span class="sxs-lookup"><span data-stu-id="55ef6-116">The **SizedDtblGroupBox** macro lets you define a group box control when the length of the label is known.</span></span> <span data-ttu-id="55ef6-117">次のメンバーで新しい構造が作成されます。</span><span class="sxs-lookup"><span data-stu-id="55ef6-117">The new structure is created with the following members:</span></span> 
+<span data-ttu-id="37221-116">**SizedDtblGroupBox** マクロを使用すると、ラベルの長さが分かっているときにグループ ボックス コントロールを定義できます。</span><span class="sxs-lookup"><span data-stu-id="37221-116">The **SizedDtblGroupBox** macro lets you define a group box control when the length of the label is known.</span></span> <span data-ttu-id="37221-117">新しい構造は、次のメンバーで作成されます。</span><span class="sxs-lookup"><span data-stu-id="37221-117">The new structure is created with the following members:</span></span> 
   
 ```cpp
 DTBLGROUPBOX dtblgroupbox;
@@ -54,15 +54,15 @@ TCHAR lpszLabel[n];
 
 ```
 
-<span data-ttu-id="55ef6-118">**sizeddtblgroupbox**マクロの結果として得られる構造体へのポインターを**dtblgroupbox**構造のポインターとして使用するには、次のキャストを実行します。</span><span class="sxs-lookup"><span data-stu-id="55ef6-118">To use a pointer to the resulting structure from the **SizedDtblGroupBox** macro as a **DTBLGROUPBOX** structure pointer, perform the following cast:</span></span> 
+<span data-ttu-id="37221-118">**SizedDtblGroupBox** マクロから生成される構造へのポインターを **DTBLGROUPBOX** 構造ポインターとして使用するには、次のキャストを実行します。</span><span class="sxs-lookup"><span data-stu-id="37221-118">To use a pointer to the resulting structure from the **SizedDtblGroupBox** macro as a **DTBLGROUPBOX** structure pointer, perform the following cast:</span></span> 
   
 ```cpp
 lpDtblGroupBox = (LPDTBLGROUPBOX) &SizedDtblGroupBox;
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="55ef6-119">関連項目</span><span class="sxs-lookup"><span data-stu-id="55ef6-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="37221-119">関連項目</span><span class="sxs-lookup"><span data-stu-id="37221-119">See also</span></span>
 
-- [<span data-ttu-id="55ef6-120">DTBLGROUPBOX</span><span class="sxs-lookup"><span data-stu-id="55ef6-120">DTBLGROUPBOX</span></span>](dtblgroupbox.md)
-- [<span data-ttu-id="55ef6-121">構造に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="55ef6-121">Macros Related to Structures</span></span>](macros-related-to-structures.md)
+- [<span data-ttu-id="37221-120">DTBLGROUPBOX</span><span class="sxs-lookup"><span data-stu-id="37221-120">DTBLGROUPBOX</span></span>](dtblgroupbox.md)
+- [<span data-ttu-id="37221-121">構造に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="37221-121">Macros Related to Structures</span></span>](macros-related-to-structures.md)
 

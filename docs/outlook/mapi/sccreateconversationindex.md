@@ -19,19 +19,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415657"
 ---
-# <a name="sccreateconversationindex"></a><span data-ttu-id="cf03d-103">ScCreateConversationIndex</span><span class="sxs-lookup"><span data-stu-id="cf03d-103">ScCreateConversationIndex</span></span>
+# <a name="sccreateconversationindex"></a><span data-ttu-id="51cd4-103">ScCreateConversationIndex</span><span class="sxs-lookup"><span data-stu-id="51cd4-103">ScCreateConversationIndex</span></span>
 
   
   
-<span data-ttu-id="cf03d-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="cf03d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="51cd4-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="51cd4-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="cf03d-105">メッセージスレッドのメッセージが属する場所を示します。</span><span class="sxs-lookup"><span data-stu-id="cf03d-105">Indicates where in a message thread a message belongs.</span></span> 
+<span data-ttu-id="51cd4-105">メッセージ スレッド内のメッセージが属する場所を示します。</span><span class="sxs-lookup"><span data-stu-id="51cd4-105">Indicates where in a message thread a message belongs.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="cf03d-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="cf03d-106">Header file:</span></span>  <br/> |<span data-ttu-id="cf03d-107">Mapiutil</span><span class="sxs-lookup"><span data-stu-id="cf03d-107">Mapiutil.h</span></span>  <br/> |
-|<span data-ttu-id="cf03d-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="cf03d-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="cf03d-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="cf03d-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="cf03d-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="cf03d-110">Called by:</span></span>  <br/> |<span data-ttu-id="cf03d-111">クライアントアプリケーションとサービスプロバイダー</span><span class="sxs-lookup"><span data-stu-id="cf03d-111">Client applications and service providers</span></span>  <br/> |
+|<span data-ttu-id="51cd4-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="51cd4-106">Header file:</span></span>  <br/> |<span data-ttu-id="51cd4-107">Mapiutil.h</span><span class="sxs-lookup"><span data-stu-id="51cd4-107">Mapiutil.h</span></span>  <br/> |
+|<span data-ttu-id="51cd4-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="51cd4-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="51cd4-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="51cd4-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="51cd4-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="51cd4-110">Called by:</span></span>  <br/> |<span data-ttu-id="51cd4-111">クライアント アプリケーションとサービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="51cd4-111">Client applications and service providers</span></span>  <br/> |
    
 ```cpp
 SCODE ScCreateConversationIndex(
@@ -42,28 +42,28 @@ SCODE ScCreateConversationIndex(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="cf03d-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="cf03d-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="51cd4-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="51cd4-112">Parameters</span></span>
 
- <span data-ttu-id="cf03d-113">_cbparent_</span><span class="sxs-lookup"><span data-stu-id="cf03d-113">_cbParent_</span></span>
+ <span data-ttu-id="51cd4-113">_cbParent_</span><span class="sxs-lookup"><span data-stu-id="51cd4-113">_cbParent_</span></span>
   
-> <span data-ttu-id="cf03d-114">順番親の会話インデックスのバイト数。</span><span class="sxs-lookup"><span data-stu-id="cf03d-114">[in] Count of bytes in the parent conversation index.</span></span>
+> <span data-ttu-id="51cd4-114">[in]親会話インデックスのバイト数。</span><span class="sxs-lookup"><span data-stu-id="51cd4-114">[in] Count of bytes in the parent conversation index.</span></span>
     
- <span data-ttu-id="cf03d-115">_lpbparent_</span><span class="sxs-lookup"><span data-stu-id="cf03d-115">_lpbParent_</span></span>
+ <span data-ttu-id="51cd4-115">_lpbParent_</span><span class="sxs-lookup"><span data-stu-id="51cd4-115">_lpbParent_</span></span>
   
-> <span data-ttu-id="cf03d-116">順番親スレッドのインデックス内のバイトへのポインター。</span><span class="sxs-lookup"><span data-stu-id="cf03d-116">[in] Pointer to bytes in the parent conversation index.</span></span> <span data-ttu-id="cf03d-117">_cbparent_が0の場合、これは NULL になることがあります。</span><span class="sxs-lookup"><span data-stu-id="cf03d-117">This may be NULL if  _cbParent_ is zero.</span></span> 
+> <span data-ttu-id="51cd4-116">[in]親会話インデックス内のバイトへのポインター。</span><span class="sxs-lookup"><span data-stu-id="51cd4-116">[in] Pointer to bytes in the parent conversation index.</span></span> <span data-ttu-id="51cd4-117">cbParent が 0 の  _場合は_ NULL になります。</span><span class="sxs-lookup"><span data-stu-id="51cd4-117">This may be NULL if  _cbParent_ is zero.</span></span> 
     
- <span data-ttu-id="cf03d-118">_lpcbIndex_</span><span class="sxs-lookup"><span data-stu-id="cf03d-118">_lpcbIndex_</span></span>
+ <span data-ttu-id="51cd4-118">_lpcbIndex_</span><span class="sxs-lookup"><span data-stu-id="51cd4-118">_lpcbIndex_</span></span>
   
-> <span data-ttu-id="cf03d-119">読み上げ呼び出しによって返される新しい会話インデックス内のバイト数へのポインター。</span><span class="sxs-lookup"><span data-stu-id="cf03d-119">[out] Pointer to the count of bytes in the new conversation index returned by the call.</span></span> 
+> <span data-ttu-id="51cd4-119">[out]呼び出しによって返される新しい会話インデックス内のバイト数へのポインター。</span><span class="sxs-lookup"><span data-stu-id="51cd4-119">[out] Pointer to the count of bytes in the new conversation index returned by the call.</span></span> 
     
- <span data-ttu-id="cf03d-120">_lppbindex_</span><span class="sxs-lookup"><span data-stu-id="cf03d-120">_lppbIndex_</span></span>
+ <span data-ttu-id="51cd4-120">_lppbIndex_</span><span class="sxs-lookup"><span data-stu-id="51cd4-120">_lppbIndex_</span></span>
   
-> <span data-ttu-id="cf03d-121">読み上げ呼び出しによって返される新しい会話インデックスへのポインターへのポインター。</span><span class="sxs-lookup"><span data-stu-id="cf03d-121">[out] Pointer to a pointer to the new conversation index returned by the call.</span></span>
+> <span data-ttu-id="51cd4-121">[out]呼び出しによって返される新しい会話インデックスへのポインターへのポインター。</span><span class="sxs-lookup"><span data-stu-id="51cd4-121">[out] Pointer to a pointer to the new conversation index returned by the call.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="cf03d-122">戻り値</span><span class="sxs-lookup"><span data-stu-id="cf03d-122">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="51cd4-122">戻り値</span><span class="sxs-lookup"><span data-stu-id="51cd4-122">Return value</span></span>
 
-<span data-ttu-id="cf03d-123">S_OK</span><span class="sxs-lookup"><span data-stu-id="cf03d-123">S_OK</span></span> 
+<span data-ttu-id="51cd4-123">S_OK</span><span class="sxs-lookup"><span data-stu-id="51cd4-123">S_OK</span></span> 
   
-> <span data-ttu-id="cf03d-124">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="cf03d-124">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="51cd4-124">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="51cd4-124">The call succeeded and has returned the expected value or values.</span></span>
     
 

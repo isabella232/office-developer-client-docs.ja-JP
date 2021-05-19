@@ -19,46 +19,46 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33419157"
 ---
-# <a name="pidtagabdefaultpab-canonical-property"></a><span data-ttu-id="b7e6a-103">PidTagAbDefaultPab 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="b7e6a-103">PidTagAbDefaultPab Canonical Property</span></span>
+# <a name="pidtagabdefaultpab-canonical-property"></a><span data-ttu-id="2f83c-103">PidTagAbDefaultPab 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="2f83c-103">PidTagAbDefaultPab Canonical Property</span></span>
 
   
   
-<span data-ttu-id="b7e6a-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b7e6a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="2f83c-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="2f83c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="b7e6a-105">個人用アドレス帳 (PAB) として使用するアドレス帳コンテナーのエントリ識別子を含みます。</span><span class="sxs-lookup"><span data-stu-id="b7e6a-105">Contains the entry identifier of the address book container to use as the personal address book (PAB).</span></span> 
+<span data-ttu-id="2f83c-105">個人用アドレス帳 (PAB) として使用するアドレス帳コンテナーのエントリ識別子を格納します。</span><span class="sxs-lookup"><span data-stu-id="2f83c-105">Contains the entry identifier of the address book container to use as the personal address book (PAB).</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="b7e6a-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="b7e6a-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="b7e6a-107">PR_AB_DEFAULT_PAB</span><span class="sxs-lookup"><span data-stu-id="b7e6a-107">PR_AB_DEFAULT_PAB</span></span>  <br/> |
-|<span data-ttu-id="b7e6a-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="b7e6a-108">Identifier:</span></span>  <br/> |<span data-ttu-id="b7e6a-109">0x3d07</span><span class="sxs-lookup"><span data-stu-id="b7e6a-109">0x3D07</span></span>  <br/> |
-|<span data-ttu-id="b7e6a-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="b7e6a-110">Data type:</span></span>  <br/> |<span data-ttu-id="b7e6a-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="b7e6a-111">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="b7e6a-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="b7e6a-112">Area:</span></span>  <br/> |<span data-ttu-id="b7e6a-113">アドレス帳</span><span class="sxs-lookup"><span data-stu-id="b7e6a-113">Address book</span></span>  <br/> |
+|<span data-ttu-id="2f83c-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="2f83c-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="2f83c-107">PR_AB_DEFAULT_PAB</span><span class="sxs-lookup"><span data-stu-id="2f83c-107">PR_AB_DEFAULT_PAB</span></span>  <br/> |
+|<span data-ttu-id="2f83c-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="2f83c-108">Identifier:</span></span>  <br/> |<span data-ttu-id="2f83c-109">0x3D07</span><span class="sxs-lookup"><span data-stu-id="2f83c-109">0x3D07</span></span>  <br/> |
+|<span data-ttu-id="2f83c-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="2f83c-110">Data type:</span></span>  <br/> |<span data-ttu-id="2f83c-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="2f83c-111">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="2f83c-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="2f83c-112">Area:</span></span>  <br/> |<span data-ttu-id="2f83c-113">アドレス帳</span><span class="sxs-lookup"><span data-stu-id="2f83c-113">Address book</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="b7e6a-114">注釈</span><span class="sxs-lookup"><span data-stu-id="b7e6a-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2f83c-114">注釈</span><span class="sxs-lookup"><span data-stu-id="2f83c-114">Remarks</span></span>
 
-<span data-ttu-id="b7e6a-115">このプロパティを使用しません。</span><span class="sxs-lookup"><span data-stu-id="b7e6a-115">Do not use this property.</span></span> <span data-ttu-id="b7e6a-116">MAPI で使用するために予約されています。</span><span class="sxs-lookup"><span data-stu-id="b7e6a-116">It is reserved for use by MAPI.</span></span>
+<span data-ttu-id="2f83c-115">このプロパティを使用しません。</span><span class="sxs-lookup"><span data-stu-id="2f83c-115">Do not use this property.</span></span> <span data-ttu-id="2f83c-116">MAPI で使用するために予約されています。</span><span class="sxs-lookup"><span data-stu-id="2f83c-116">It is reserved for use by MAPI.</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="b7e6a-117">関連リソース</span><span class="sxs-lookup"><span data-stu-id="b7e6a-117">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="2f83c-117">関連リソース</span><span class="sxs-lookup"><span data-stu-id="2f83c-117">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="b7e6a-118">ヘッダーファイル</span><span class="sxs-lookup"><span data-stu-id="b7e6a-118">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="2f83c-118">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="2f83c-118">Header files</span></span>
 
-<span data-ttu-id="b7e6a-119">Mapitags</span><span class="sxs-lookup"><span data-stu-id="b7e6a-119">Mapitags.h</span></span>
+<span data-ttu-id="2f83c-119">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="2f83c-119">Mapitags.h</span></span>
   
-> <span data-ttu-id="b7e6a-120">関連するプロパティとしてリストされているプロパティの定義が含まれます。</span><span class="sxs-lookup"><span data-stu-id="b7e6a-120">Contains definitions of properties listed as associated properties.</span></span>
+> <span data-ttu-id="2f83c-120">関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。</span><span class="sxs-lookup"><span data-stu-id="2f83c-120">Contains definitions of properties listed as associated properties.</span></span>
     
-<span data-ttu-id="b7e6a-121">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="b7e6a-121">Mapidefs.h</span></span>
+<span data-ttu-id="2f83c-121">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="2f83c-121">Mapidefs.h</span></span>
   
-> <span data-ttu-id="b7e6a-122">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="b7e6a-122">Provides data type definitions.</span></span>
+> <span data-ttu-id="2f83c-122">データ型の定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="2f83c-122">Provides data type definitions.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="b7e6a-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="b7e6a-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2f83c-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="2f83c-123">See also</span></span>
 
 
 
-[<span data-ttu-id="b7e6a-124">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="b7e6a-124">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="2f83c-124">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="2f83c-124">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="b7e6a-125">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="b7e6a-125">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="2f83c-125">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="2f83c-125">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="b7e6a-126">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="b7e6a-126">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="2f83c-126">標準プロパティ名を MAPI 名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="2f83c-126">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="b7e6a-127">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="b7e6a-127">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="2f83c-127">MAPI 名を標準プロパティ名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="2f83c-127">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -19,35 +19,35 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33419409"
 ---
-# <a name="cbnewflatentry"></a><span data-ttu-id="7a703-103">CbNewFLATENTRY</span><span class="sxs-lookup"><span data-stu-id="7a703-103">CbNewFLATENTRY</span></span>
+# <a name="cbnewflatentry"></a><span data-ttu-id="5d364-103">CbNewFLATENTRY</span><span class="sxs-lookup"><span data-stu-id="5d364-103">CbNewFLATENTRY</span></span>
 
   
   
-<span data-ttu-id="7a703-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="7a703-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="5d364-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="5d364-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="7a703-105">指定したバイトサイズのエントリ id を含む新しい[FLATENTRY](flatentry.md)構造に割り当てる必要があるバイト数を計算します。</span><span class="sxs-lookup"><span data-stu-id="7a703-105">Computes the number of bytes that should be allocated for a new [FLATENTRY](flatentry.md) structure that contains an entry identifier of a specified byte size.</span></span> 
+<span data-ttu-id="5d364-105">指定したバイト サイズのエントリ識別子を含む新しい [FLATENTRY](flatentry.md) 構造体に割り当てるバイト数を計算します。</span><span class="sxs-lookup"><span data-stu-id="5d364-105">Computes the number of bytes that should be allocated for a new [FLATENTRY](flatentry.md) structure that contains an entry identifier of a specified byte size.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="7a703-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="7a703-106">Header file:</span></span>  <br/> |<span data-ttu-id="7a703-107">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="7a703-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="7a703-108">関連する構造:</span><span class="sxs-lookup"><span data-stu-id="7a703-108">Related structure:</span></span>  <br/> |<span data-ttu-id="7a703-109">**FLATENTRY**</span><span class="sxs-lookup"><span data-stu-id="7a703-109">**FLATENTRY**</span></span> <br/> |
+|<span data-ttu-id="5d364-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="5d364-106">Header file:</span></span>  <br/> |<span data-ttu-id="5d364-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="5d364-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="5d364-108">関連する構造:</span><span class="sxs-lookup"><span data-stu-id="5d364-108">Related structure:</span></span>  <br/> |<span data-ttu-id="5d364-109">**FLATENTRY**</span><span class="sxs-lookup"><span data-stu-id="5d364-109">**FLATENTRY**</span></span> <br/> |
    
 ```cpp
 CbNewFLATENTRY (_cb)
 ```
 
-## <a name="parameters"></a><span data-ttu-id="7a703-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7a703-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="5d364-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5d364-110">Parameters</span></span>
 
- <span data-ttu-id="7a703-111">__cb_</span><span class="sxs-lookup"><span data-stu-id="7a703-111">__cb_</span></span>
+ <span data-ttu-id="5d364-111">_ _cb_</span><span class="sxs-lookup"><span data-stu-id="5d364-111">_ _cb_</span></span>
   
-> <span data-ttu-id="7a703-112">新しい**FLATENTRY**構造に含めるエントリ識別子のバイト数。</span><span class="sxs-lookup"><span data-stu-id="7a703-112">Count of bytes in the entry identifier to be included in the new **FLATENTRY** structure.</span></span> 
+> <span data-ttu-id="5d364-112">新しい FLATENTRY 構造体に含めるエントリ識別子 **のバイト数** 。</span><span class="sxs-lookup"><span data-stu-id="5d364-112">Count of bytes in the entry identifier to be included in the new **FLATENTRY** structure.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="7a703-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="7a703-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5d364-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="5d364-113">See also</span></span>
 
 
 
-[<span data-ttu-id="7a703-114">FLATENTRY</span><span class="sxs-lookup"><span data-stu-id="7a703-114">FLATENTRY</span></span>](flatentry.md)
+[<span data-ttu-id="5d364-114">FLATENTRY</span><span class="sxs-lookup"><span data-stu-id="5d364-114">FLATENTRY</span></span>](flatentry.md)
 
 
-[<span data-ttu-id="7a703-115">構造に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="7a703-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
+[<span data-ttu-id="5d364-115">構造に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="5d364-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
 

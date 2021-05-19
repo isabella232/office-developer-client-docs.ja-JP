@@ -16,12 +16,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33414831"
 ---
-# <a name="document-properties-section"></a><span data-ttu-id="48f76-103">[Document Properties] セクション</span><span class="sxs-lookup"><span data-stu-id="48f76-103">Document Properties Section</span></span>
+# <a name="document-properties-section"></a><span data-ttu-id="2700c-103">[Document Properties] セクション</span><span class="sxs-lookup"><span data-stu-id="2700c-103">Document Properties Section</span></span>
 
-<span data-ttu-id="48f76-104">プレビューの品質、範囲、および出力形式を制御するための、図面のセルを格納します。</span><span class="sxs-lookup"><span data-stu-id="48f76-104">Contains cells for a document that control preview quality, scope, and output format.</span></span>
+<span data-ttu-id="2700c-104">プレビューの品質、範囲、および出力形式を制御するための、図面のセルを格納します。</span><span class="sxs-lookup"><span data-stu-id="2700c-104">Contains cells for a document that control preview quality, scope, and output format.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="48f76-105">注釈</span><span class="sxs-lookup"><span data-stu-id="48f76-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2700c-105">注釈</span><span class="sxs-lookup"><span data-stu-id="2700c-105">Remarks</span></span>
 
- <span data-ttu-id="48f76-106">これらの値は、[**プロパティ**] ダイアログボックス ([**ファイル**] タブをクリックし、[**情報**] をクリックし、[**プロパティ**] をクリックし、[**詳細プロパティ**] をクリック) を使用して設定することもできます。</span><span class="sxs-lookup"><span data-stu-id="48f76-106">You can also set these values by using the **Properties** dialog box (click the **File** tab, click **Info**, click **Properties**, and then click **Advanced Properties**).</span></span>
+ <span data-ttu-id="2700c-106">これらの値は、[プロパティ] ダイアログボックスを使用して設定することもできます([ファイル] タブをクリックし、[**情報**] をクリックし、[プロパティ] をクリックし、[高度なプロパティ]**をクリックします**)。</span><span class="sxs-lookup"><span data-stu-id="2700c-106">You can also set these values by using the **Properties** dialog box (click the **File** tab, click **Info**, click **Properties**, and then click **Advanced Properties**).</span></span>
   
 

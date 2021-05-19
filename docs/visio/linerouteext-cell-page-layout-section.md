@@ -16,30 +16,30 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33410624"
 ---
-# <a name="linerouteext-cell-page-layout-section"></a><span data-ttu-id="2bf03-103">[LineRouteExt] セル ([Page Layout] セクション)</span><span class="sxs-lookup"><span data-stu-id="2bf03-103">LineRouteExt Cell (Page Layout Section)</span></span>
+# <a name="linerouteext-cell-page-layout-section"></a><span data-ttu-id="85f83-103">[LineRouteExt] セル ([Page Layout] セクション)</span><span class="sxs-lookup"><span data-stu-id="85f83-103">LineRouteExt Cell (Page Layout Section)</span></span>
 
-<span data-ttu-id="2bf03-104">図面ページにあるすべてのコネクタの既定の外観を指定します。</span><span class="sxs-lookup"><span data-stu-id="2bf03-104">Determines the default appearance for all connectors on a drawing page.</span></span>
+<span data-ttu-id="85f83-104">図面ページにあるすべてのコネクタの既定の外観を指定します。</span><span class="sxs-lookup"><span data-stu-id="85f83-104">Determines the default appearance for all connectors on a drawing page.</span></span>
   
-|<span data-ttu-id="2bf03-105">**値**</span><span class="sxs-lookup"><span data-stu-id="2bf03-105">**Value**</span></span>|<span data-ttu-id="2bf03-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="2bf03-106">**Description**</span></span>|<span data-ttu-id="2bf03-107">**オートメーション定数**</span><span class="sxs-lookup"><span data-stu-id="2bf03-107">**Automation constant**</span></span>|
+|<span data-ttu-id="85f83-105">**値**</span><span class="sxs-lookup"><span data-stu-id="85f83-105">**Value**</span></span>|<span data-ttu-id="85f83-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="85f83-106">**Description**</span></span>|<span data-ttu-id="85f83-107">**オートメーション定数**</span><span class="sxs-lookup"><span data-stu-id="85f83-107">**Automation constant**</span></span>|
 |:-----|:-----|:-----|
-| <span data-ttu-id="2bf03-108">.0</span><span class="sxs-lookup"><span data-stu-id="2bf03-108">0</span></span>  <br/> | <span data-ttu-id="2bf03-109">既定値 (直線)</span><span class="sxs-lookup"><span data-stu-id="2bf03-109">Default (straight)</span></span>  <br/> |<span data-ttu-id="2bf03-110">**visLORouteExtDefault**</span><span class="sxs-lookup"><span data-stu-id="2bf03-110">**visLORouteExtDefault**</span></span> <br/> |
-| <span data-ttu-id="2bf03-111">1 </span><span class="sxs-lookup"><span data-stu-id="2bf03-111">1</span></span>  <br/> | <span data-ttu-id="2bf03-112">普通</span><span class="sxs-lookup"><span data-stu-id="2bf03-112">Straight</span></span>  <br/> |<span data-ttu-id="2bf03-113">**visLORouteExtStraight**</span><span class="sxs-lookup"><span data-stu-id="2bf03-113">**visLORouteExtStraight**</span></span> <br/> |
-| <span data-ttu-id="2bf03-114">2 </span><span class="sxs-lookup"><span data-stu-id="2bf03-114">2</span></span>  <br/> | <span data-ttu-id="2bf03-115">曲線</span><span class="sxs-lookup"><span data-stu-id="2bf03-115">Curved</span></span>  <br/> |<span data-ttu-id="2bf03-116">**visLORouteExtNURBS**</span><span class="sxs-lookup"><span data-stu-id="2bf03-116">**visLORouteExtNURBS**</span></span> <br/> |
+| <span data-ttu-id="85f83-108">0</span><span class="sxs-lookup"><span data-stu-id="85f83-108">0</span></span>  <br/> | <span data-ttu-id="85f83-109">既定値 (直線)</span><span class="sxs-lookup"><span data-stu-id="85f83-109">Default (straight)</span></span>  <br/> |<span data-ttu-id="85f83-110">**visLORouteExtDefault**</span><span class="sxs-lookup"><span data-stu-id="85f83-110">**visLORouteExtDefault**</span></span> <br/> |
+| <span data-ttu-id="85f83-111">1</span><span class="sxs-lookup"><span data-stu-id="85f83-111">1</span></span>  <br/> | <span data-ttu-id="85f83-112">ストレート</span><span class="sxs-lookup"><span data-stu-id="85f83-112">Straight</span></span>  <br/> |<span data-ttu-id="85f83-113">**visLORouteExtStraight**</span><span class="sxs-lookup"><span data-stu-id="85f83-113">**visLORouteExtStraight**</span></span> <br/> |
+| <span data-ttu-id="85f83-114">2</span><span class="sxs-lookup"><span data-stu-id="85f83-114">2</span></span>  <br/> | <span data-ttu-id="85f83-115">曲線</span><span class="sxs-lookup"><span data-stu-id="85f83-115">Curved</span></span>  <br/> |<span data-ttu-id="85f83-116">**visLORouteExtNURBS**</span><span class="sxs-lookup"><span data-stu-id="85f83-116">**visLORouteExtNURBS**</span></span> <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="2bf03-117">注釈</span><span class="sxs-lookup"><span data-stu-id="2bf03-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="85f83-117">注釈</span><span class="sxs-lookup"><span data-stu-id="85f83-117">Remarks</span></span>
 
-<span data-ttu-id="2bf03-118">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LineRouteExt] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="2bf03-118">To get a reference to the LineRouteExt cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="85f83-118">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [LineRouteExt] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="85f83-118">To get a reference to the LineRouteExt cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="2bf03-119">セル名:</span><span class="sxs-lookup"><span data-stu-id="2bf03-119">Cell name:</span></span>  <br/> | <span data-ttu-id="2bf03-120">[linerouteext]</span><span class="sxs-lookup"><span data-stu-id="2bf03-120">LineRouteExt</span></span>  <br/> |
+| <span data-ttu-id="85f83-119">セル名:</span><span class="sxs-lookup"><span data-stu-id="85f83-119">Cell name:</span></span>  <br/> | <span data-ttu-id="85f83-120">LineRouteExt</span><span class="sxs-lookup"><span data-stu-id="85f83-120">LineRouteExt</span></span>  <br/> |
    
-<span data-ttu-id="2bf03-121">プログラムから、インデックスによって [LineRouteExt] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="2bf03-121">To get a reference to the LineRouteExt cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="85f83-121">プログラムから、インデックスによって [LineRouteExt] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="85f83-121">To get a reference to the LineRouteExt cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="2bf03-122">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="2bf03-122">Section index:</span></span>  <br/> |<span data-ttu-id="2bf03-123">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="2bf03-123">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="2bf03-124">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="2bf03-124">Row index:</span></span>  <br/> |<span data-ttu-id="2bf03-125">**visRowPageLayout**</span><span class="sxs-lookup"><span data-stu-id="2bf03-125">**visRowPageLayout**</span></span> <br/> |
-| <span data-ttu-id="2bf03-126">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="2bf03-126">Cell index:</span></span>  <br/> |<span data-ttu-id="2bf03-127">**visPLOLineRouteExt**</span><span class="sxs-lookup"><span data-stu-id="2bf03-127">**visPLOLineRouteExt**</span></span> <br/> |
+| <span data-ttu-id="85f83-122">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="85f83-122">Section index:</span></span>  <br/> |<span data-ttu-id="85f83-123">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="85f83-123">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="85f83-124">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="85f83-124">Row index:</span></span>  <br/> |<span data-ttu-id="85f83-125">**visRowPageLayout**</span><span class="sxs-lookup"><span data-stu-id="85f83-125">**visRowPageLayout**</span></span> <br/> |
+| <span data-ttu-id="85f83-126">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="85f83-126">Cell index:</span></span>  <br/> |<span data-ttu-id="85f83-127">**visPLOLineRouteExt**</span><span class="sxs-lookup"><span data-stu-id="85f83-127">**visPLOLineRouteExt**</span></span> <br/> |
    
 

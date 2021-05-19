@@ -15,24 +15,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420088"
 ---
-# <a name="determining-a-tables-end"></a><span data-ttu-id="59e9b-103">テーブルの終了を決定する</span><span class="sxs-lookup"><span data-stu-id="59e9b-103">Determining a Table's End</span></span>
+# <a name="determining-a-tables-end"></a><span data-ttu-id="ce753-103">テーブルの終了を決定する</span><span class="sxs-lookup"><span data-stu-id="ce753-103">Determining a Table's End</span></span>
 
   
   
-<span data-ttu-id="59e9b-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="59e9b-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="ce753-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ce753-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
- <span data-ttu-id="59e9b-105">一般的なエラーは、次のような場合にテーブルの最後に到達したと仮定します。</span><span class="sxs-lookup"><span data-stu-id="59e9b-105">A common error is to assume that the end of the table has been reached when:</span></span> 
+ <span data-ttu-id="ce753-105">一般的なエラーは、次の場合にテーブルの末尾に達したと仮定します。</span><span class="sxs-lookup"><span data-stu-id="ce753-105">A common error is to assume that the end of the table has been reached when:</span></span> 
   
-- <span data-ttu-id="59e9b-106">[imapitable:: QueryRows](imapitable-queryrows.md)がループで呼び出され、 [IMAPITable:: getrowcount](imapitable-getrowcount.md)から返される行の数によってループの終わりが決定されます。</span><span class="sxs-lookup"><span data-stu-id="59e9b-106">[IMAPITable::QueryRows](imapitable-queryrows.md) has been called in a loop, with the end of the loop determined by the row count returned by [IMAPITable::GetRowCount](imapitable-getrowcount.md).</span></span> <span data-ttu-id="59e9b-107">**getrowcount**が返すカウントは、必ずしもテーブル内の行数の正確な数を表すわけではありません。これはおおよそのカウントです。</span><span class="sxs-lookup"><span data-stu-id="59e9b-107">The count that **GetRowCount** returns does not always represent the exact number of rows in the table; it is an approximate count.</span></span> 
+- <span data-ttu-id="ce753-106">[IMAPITable::QueryRows](imapitable-queryrows.md) はループ内で呼び出され、ループの終了は [IMAPITable::GetRowCount](imapitable-getrowcount.md)によって返される行数によって決まります。</span><span class="sxs-lookup"><span data-stu-id="ce753-106">[IMAPITable::QueryRows](imapitable-queryrows.md) has been called in a loop, with the end of the loop determined by the row count returned by [IMAPITable::GetRowCount](imapitable-getrowcount.md).</span></span> <span data-ttu-id="ce753-107">**GetRowCount が返す** 数は、必ずしもテーブル内の行の正確な数を表すとは限らない。概算数です。</span><span class="sxs-lookup"><span data-stu-id="ce753-107">The count that **GetRowCount** returns does not always represent the exact number of rows in the table; it is an approximate count.</span></span> 
     
-- <span data-ttu-id="59e9b-108">**QueryRows**は固定数の行で呼び出されており、返される行が少なくなっています。</span><span class="sxs-lookup"><span data-stu-id="59e9b-108">**QueryRows** has been called with a fixed number of rows and fewer rows are returned.</span></span> <span data-ttu-id="59e9b-109">**QueryRows**は、行数が0である行セットを返し、それ以上行を取得しないことを示します。</span><span class="sxs-lookup"><span data-stu-id="59e9b-109">It is not until **QueryRows** returns a row set with a row count equal to zero that there are no more rows to retrieve.</span></span> 
+- <span data-ttu-id="ce753-108">**QueryRows は** 固定数の行で呼び出され、返される行数は少なめになります。</span><span class="sxs-lookup"><span data-stu-id="ce753-108">**QueryRows** has been called with a fixed number of rows and fewer rows are returned.</span></span> <span data-ttu-id="ce753-109">**QueryRows** が 0 に等しい行数を持つ行セットを返すまで、取得する行がこれ以上ない。</span><span class="sxs-lookup"><span data-stu-id="ce753-109">It is not until **QueryRows** returns a row set with a row count equal to zero that there are no more rows to retrieve.</span></span> 
     
 > [!IMPORTANT]
-> <span data-ttu-id="59e9b-110">呼び出し元が、カーソルが正の行数の場合はテーブルの末尾に配置されていること、または負の行数に対してテーブルの先頭にある場合は、値 S_OK および0の行が返された場合のみ、そのことを前提とすることができます。</span><span class="sxs-lookup"><span data-stu-id="59e9b-110">The only time that a caller can assume that the cursor is positioned at the end of the table for a positive row count or at the beginning of the table for a negative row count is when the value S_OK and zero rows are returned.</span></span> <span data-ttu-id="59e9b-111">値 MAPI_E_NOT_FOUND は返されません。</span><span class="sxs-lookup"><span data-stu-id="59e9b-111">The value MAPI_E_NOT_FOUND is never returned.</span></span> 
+> <span data-ttu-id="ce753-110">呼び出し元が、正の行数の表の末尾、または負の行数の表の先頭にカーソルが配置されたと仮定できる唯一の時間は、値 S_OK とゼロ行が返される場合です。</span><span class="sxs-lookup"><span data-stu-id="ce753-110">The only time that a caller can assume that the cursor is positioned at the end of the table for a positive row count or at the beginning of the table for a negative row count is when the value S_OK and zero rows are returned.</span></span> <span data-ttu-id="ce753-111">この値MAPI_E_NOT_FOUND返されません。</span><span class="sxs-lookup"><span data-stu-id="ce753-111">The value MAPI_E_NOT_FOUND is never returned.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="59e9b-112">関連項目</span><span class="sxs-lookup"><span data-stu-id="59e9b-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ce753-112">関連項目</span><span class="sxs-lookup"><span data-stu-id="ce753-112">See also</span></span>
 
 
 
-[<span data-ttu-id="59e9b-113">MAPI テーブル</span><span class="sxs-lookup"><span data-stu-id="59e9b-113">MAPI Tables</span></span>](mapi-tables.md)
+[<span data-ttu-id="ce753-113">MAPI テーブル</span><span class="sxs-lookup"><span data-stu-id="ce753-113">MAPI Tables</span></span>](mapi-tables.md)
 

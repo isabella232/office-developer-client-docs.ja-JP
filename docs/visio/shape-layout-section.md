@@ -16,14 +16,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415384"
 ---
-# <a name="shape-layout-section"></a><span data-ttu-id="f498c-103">[Shape Layout] セクション</span><span class="sxs-lookup"><span data-stu-id="f498c-103">Shape Layout Section</span></span>
+# <a name="shape-layout-section"></a><span data-ttu-id="53748-103">[Shape Layout] セクション</span><span class="sxs-lookup"><span data-stu-id="53748-103">Shape Layout Section</span></span>
 
-<span data-ttu-id="f498c-104">図形の配置およびコネクタの迂回方法を制御するセルを格納します。</span><span class="sxs-lookup"><span data-stu-id="f498c-104">Contains cells that control shape placement and connector routing settings.</span></span>
+<span data-ttu-id="53748-104">図形の配置およびコネクタの迂回方法を制御するセルを格納します。</span><span class="sxs-lookup"><span data-stu-id="53748-104">Contains cells that control shape placement and connector routing settings.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="f498c-105">注釈</span><span class="sxs-lookup"><span data-stu-id="f498c-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="53748-105">注釈</span><span class="sxs-lookup"><span data-stu-id="53748-105">Remarks</span></span>
 
-<span data-ttu-id="f498c-p101">このセクションにある図形固有のセルの値は、[**基本動作**] ダイアログ ボックスの [**配置**] タブを使用して設定することもできます (このダイアログ ボックスを開くには、[[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] グループで、[**基本動作**] をクリックします)。このセクションにあるコネクタ固有のセルの値を設定するには、[**基本動作**] ダイアログ ボックスの [**コネクタ**] タブを使用します ([**コネクタ**] タブを開くには、図面ウィンドウでコネクタを選択してから、[**基本動作**] ダイアログ ボックスを表示します)。</span><span class="sxs-lookup"><span data-stu-id="f498c-p101">You can also set the values of the shape-specific cells in this section by using the **Placement** tab in the **Behavior** dialog box (on the [Developer](run-in-developer-mode-display-the-developer-tab.md) tab, in the **Shape Design** group, click **Behavior**). You can set the values of the connector-specific cells in this section using the **Connector** tab in the **Behavior** dialog box. (To see the **Connector** tab, select the connector in the drawing window, and then display the **Behavior** dialog box.)</span></span> 
+<span data-ttu-id="53748-p101">このセクションにある図形固有のセルの値は、[**基本動作**] ダイアログ ボックスの [**配置**] タブを使用して設定することもできます (このダイアログ ボックスを開くには、[[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] グループで、[**基本動作**] をクリックします)。このセクションにあるコネクタ固有のセルの値を設定するには、[**基本動作**] ダイアログ ボックスの [**コネクタ**] タブを使用します ([**コネクタ**] タブを開くには、図面ウィンドウでコネクタを選択してから、[**基本動作**] ダイアログ ボックスを表示します)。</span><span class="sxs-lookup"><span data-stu-id="53748-p101">You can also set the values of the shape-specific cells in this section by using the **Placement** tab in the **Behavior** dialog box (on the [Developer](run-in-developer-mode-display-the-developer-tab.md) tab, in the **Shape Design** group, click **Behavior**). You can set the values of the connector-specific cells in this section using the **Connector** tab in the **Behavior** dialog box. (To see the **Connector** tab, select the connector in the drawing window, and then display the **Behavior** dialog box.)</span></span> 
   
-<span data-ttu-id="f498c-109">[**図形レイアウト**] セクションの値を使用して、[**ページレイアウト**] セクションに含まれる既定値を上書きできます。</span><span class="sxs-lookup"><span data-stu-id="f498c-109">You can use values in the **Shape Layout** section to override default values contained in the **Page Layout** section.</span></span> 
+<span data-ttu-id="53748-109">[図形レイアウト] セクションの値 **を使用して** 、[ページ レイアウト] セクションに含まれる既定値 **を上書き** できます。</span><span class="sxs-lookup"><span data-stu-id="53748-109">You can use values in the **Shape Layout** section to override default values contained in the **Page Layout** section.</span></span> 
   
 

@@ -1,5 +1,5 @@
 ---
-title: ipstxgetlasterror
+title: IPSTXGetLastError
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33414978"
 ---
-# <a name="ipstxgetlasterror"></a><span data-ttu-id="ed563-103">IPSTX::GetLastError</span><span class="sxs-lookup"><span data-stu-id="ed563-103">IPSTX::GetLastError</span></span>
+# <a name="ipstxgetlasterror"></a><span data-ttu-id="9331e-103">IPSTX::GetLastError</span><span class="sxs-lookup"><span data-stu-id="9331e-103">IPSTX::GetLastError</span></span>
 
   
   
-<span data-ttu-id="ed563-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ed563-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="9331e-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="9331e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="ed563-105">最新のエラーに関する拡張情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="ed563-105">Gets extended information about the last error.</span></span>
+<span data-ttu-id="9331e-105">最後のエラーに関する拡張情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="9331e-105">Gets extended information about the last error.</span></span>
   
 ```cpp
 HRESULT GetLastError( 
@@ -35,25 +35,25 @@ HRESULT GetLastError(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="ed563-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="ed563-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="9331e-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="9331e-106">Parameters</span></span>
 
- <span data-ttu-id="ed563-107">_hResult_</span><span class="sxs-lookup"><span data-stu-id="ed563-107">_hResult_</span></span>
+ <span data-ttu-id="9331e-107">_hResult_</span><span class="sxs-lookup"><span data-stu-id="9331e-107">_hResult_</span></span>
   
->  <span data-ttu-id="ed563-108">順番エラーコード。</span><span class="sxs-lookup"><span data-stu-id="ed563-108">[in] Error code.</span></span> 
+>  <span data-ttu-id="9331e-108">[in]エラー コード。</span><span class="sxs-lookup"><span data-stu-id="9331e-108">[in] Error code.</span></span> 
     
- <span data-ttu-id="ed563-109">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="ed563-109">_ulFlags_</span></span>
+ <span data-ttu-id="9331e-109">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="9331e-109">_ulFlags_</span></span>
   
->  <span data-ttu-id="ed563-110">[in]動作を変更するフラグです。</span><span class="sxs-lookup"><span data-stu-id="ed563-110">[in] Flags to modify behavior.</span></span> <span data-ttu-id="ed563-111">これは0である必要があります。</span><span class="sxs-lookup"><span data-stu-id="ed563-111">This must be 0.</span></span> 
+>  <span data-ttu-id="9331e-110">[in]動作を変更するフラグです。</span><span class="sxs-lookup"><span data-stu-id="9331e-110">[in] Flags to modify behavior.</span></span> <span data-ttu-id="9331e-111">これは 0 である必要があります。</span><span class="sxs-lookup"><span data-stu-id="9331e-111">This must be 0.</span></span> 
     
- <span data-ttu-id="ed563-112">_lppMAPIError_</span><span class="sxs-lookup"><span data-stu-id="ed563-112">_lppMAPIError_</span></span>
+ <span data-ttu-id="9331e-112">_lppMAPIError_</span><span class="sxs-lookup"><span data-stu-id="9331e-112">_lppMAPIError_</span></span>
   
->  <span data-ttu-id="ed563-113">読み上げエラーの拡張情報を含む**MAPIERROR**構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="ed563-113">[out] Pointer to the **MAPIERROR** structure that contains the extended information for the error.</span></span> <span data-ttu-id="ed563-114">**LPMAPIERROR**の型定義については、「mapidefs.h」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ed563-114">See mapidefs.h for the type definition of **LPMAPIERROR**.</span></span> 
+>  <span data-ttu-id="9331e-113">[out]エラーの **拡張情報を** 含む MAPIERROR 構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="9331e-113">[out] Pointer to the **MAPIERROR** structure that contains the extended information for the error.</span></span> <span data-ttu-id="9331e-114">LPMAPIERROR の型定義については **、mapidefs.h を参照してください**。</span><span class="sxs-lookup"><span data-stu-id="9331e-114">See mapidefs.h for the type definition of **LPMAPIERROR**.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="ed563-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="ed563-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9331e-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="9331e-115">See also</span></span>
 
 
 
-[<span data-ttu-id="ed563-116">IPSTX::EmulateSpooler</span><span class="sxs-lookup"><span data-stu-id="ed563-116">IPSTX::EmulateSpooler</span></span>](ipstx-emulatespooler.md)
+[<span data-ttu-id="9331e-116">IPSTX::EmulateSpooler</span><span class="sxs-lookup"><span data-stu-id="9331e-116">IPSTX::EmulateSpooler</span></span>](ipstx-emulatespooler.md)
   
-[<span data-ttu-id="ed563-117">IPSTX::GetSyncObject</span><span class="sxs-lookup"><span data-stu-id="ed563-117">IPSTX::GetSyncObject</span></span>](ipstx-getsyncobject.md)
+[<span data-ttu-id="9331e-117">IPSTX::GetSyncObject</span><span class="sxs-lookup"><span data-stu-id="9331e-117">IPSTX::GetSyncObject</span></span>](ipstx-getsyncobject.md)
 

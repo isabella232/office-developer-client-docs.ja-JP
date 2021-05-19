@@ -16,30 +16,30 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415566"
 ---
-# <a name="fillforegnd-cell-fill-format-section"></a><span data-ttu-id="49fa3-103">[FillForegnd] セル ([Fill Format] セクション)</span><span class="sxs-lookup"><span data-stu-id="49fa3-103">FillForegnd Cell (Fill Format Section)</span></span>
+# <a name="fillforegnd-cell-fill-format-section"></a><span data-ttu-id="0b35a-103">[FillForegnd] セル ([Fill Format] セクション)</span><span class="sxs-lookup"><span data-stu-id="0b35a-103">FillForegnd Cell (Fill Format Section)</span></span>
 
-<span data-ttu-id="49fa3-104">図形の塗りつぶしのパターンで前景 (ストローク部分) に使用する色を指定します。</span><span class="sxs-lookup"><span data-stu-id="49fa3-104">Determines the color used for the foreground (stroke) of the shape's fill pattern.</span></span>
+<span data-ttu-id="0b35a-104">図形の塗りつぶしのパターンで前景 (ストローク部分) に使用する色を指定します。</span><span class="sxs-lookup"><span data-stu-id="0b35a-104">Determines the color used for the foreground (stroke) of the shape's fill pattern.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="49fa3-105">注釈</span><span class="sxs-lookup"><span data-stu-id="49fa3-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0b35a-105">注釈</span><span class="sxs-lookup"><span data-stu-id="0b35a-105">Remarks</span></span>
 
-<span data-ttu-id="49fa3-106">色を設定するには、0 ～ 23 の数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="49fa3-106">To set the color, enter a number from 0 to 23.</span></span>
+<span data-ttu-id="0b35a-106">色を設定するには、0 ～ 23 の数値を入力します。</span><span class="sxs-lookup"><span data-stu-id="0b35a-106">To set the color, enter a number from 0 to 23.</span></span>
   
-<span data-ttu-id="49fa3-107">ユーザー設定の色を入力するには、RGB または HSL 関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="49fa3-107">To enter a custom color, use the RGB or HSL function.</span></span> <span data-ttu-id="49fa3-108">ユーザー設定の色の値は rgb カラーで、数字ではなく rgb ( *r, g, b*) は [シェイプシート] ウィンドウに表示されます。</span><span class="sxs-lookup"><span data-stu-id="49fa3-108">The value of a custom color is its RGB color, and RGB( *r, g, b*), rather than a number, will be shown in the ShapeSheet window.</span></span> <span data-ttu-id="49fa3-109">ユーザー設定の色を数値演算で使用する場合は、24 以上の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="49fa3-109">When used in numeric operations, custom colors have values of 24 and above.</span></span> 
+<span data-ttu-id="0b35a-107">ユーザー設定の色を入力するには、RGB または HSL 関数を使用します。</span><span class="sxs-lookup"><span data-stu-id="0b35a-107">To enter a custom color, use the RGB or HSL function.</span></span> <span data-ttu-id="0b35a-108">カスタム色の値は RGB 色で、数値ではなく RGB( *r, g, b*) が ShapeSheet ウィンドウに表示されます。</span><span class="sxs-lookup"><span data-stu-id="0b35a-108">The value of a custom color is its RGB color, and RGB( *r, g, b*), rather than a number, will be shown in the ShapeSheet window.</span></span> <span data-ttu-id="0b35a-109">ユーザー設定の色を数値演算で使用する場合は、24 以上の値を指定します。</span><span class="sxs-lookup"><span data-stu-id="0b35a-109">When used in numeric operations, custom colors have values of 24 and above.</span></span> 
   
-<span data-ttu-id="49fa3-110">前景の塗りつぶしの色に関する透過性を設定するには、[FillForegndTrans] セルを使用します。</span><span class="sxs-lookup"><span data-stu-id="49fa3-110">You can set the transparency of the foreground fill in the FillForegndTrans cell.</span></span>
+<span data-ttu-id="0b35a-110">前景の塗りつぶしの色に関する透過性を設定するには、[FillForegndTrans] セルを使用します。</span><span class="sxs-lookup"><span data-stu-id="0b35a-110">You can set the transparency of the foreground fill in the FillForegndTrans cell.</span></span>
   
-<span data-ttu-id="49fa3-111">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [FillForegnd] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="49fa3-111">To get a reference to the FillForegnd cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="0b35a-111">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [FillForegnd] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="0b35a-111">To get a reference to the FillForegnd cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="49fa3-112">セル名:</span><span class="sxs-lookup"><span data-stu-id="49fa3-112">Cell name:</span></span>  <br/> |<span data-ttu-id="49fa3-113">[fillforegnd]</span><span class="sxs-lookup"><span data-stu-id="49fa3-113">FillForegnd</span></span>  <br/> |
+|<span data-ttu-id="0b35a-112">セル名:</span><span class="sxs-lookup"><span data-stu-id="0b35a-112">Cell name:</span></span>  <br/> |<span data-ttu-id="0b35a-113">FillForegnd</span><span class="sxs-lookup"><span data-stu-id="0b35a-113">FillForegnd</span></span>  <br/> |
    
-<span data-ttu-id="49fa3-114">プログラムから、インデックスによって [FillForegnd] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="49fa3-114">To get a reference to the FillForegnd cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="0b35a-114">プログラムから、インデックスによって [FillForegnd] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="0b35a-114">To get a reference to the FillForegnd cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="49fa3-115">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="49fa3-115">Section index:</span></span>  <br/> |<span data-ttu-id="49fa3-116">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="49fa3-116">**visSectionObject**</span></span> <br/> |
-|<span data-ttu-id="49fa3-117">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="49fa3-117">Row index:</span></span>  <br/> |<span data-ttu-id="49fa3-118">**visRowFill**</span><span class="sxs-lookup"><span data-stu-id="49fa3-118">**visRowFill**</span></span> <br/> |
-|<span data-ttu-id="49fa3-119">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="49fa3-119">Cell index:</span></span>  <br/> |<span data-ttu-id="49fa3-120">**visFillForegnd**</span><span class="sxs-lookup"><span data-stu-id="49fa3-120">**visFillForegnd**</span></span> <br/> |
+|<span data-ttu-id="0b35a-115">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="0b35a-115">Section index:</span></span>  <br/> |<span data-ttu-id="0b35a-116">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="0b35a-116">**visSectionObject**</span></span> <br/> |
+|<span data-ttu-id="0b35a-117">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="0b35a-117">Row index:</span></span>  <br/> |<span data-ttu-id="0b35a-118">**visRowFill**</span><span class="sxs-lookup"><span data-stu-id="0b35a-118">**visRowFill**</span></span> <br/> |
+|<span data-ttu-id="0b35a-119">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="0b35a-119">Cell index:</span></span>  <br/> |<span data-ttu-id="0b35a-120">**visFillForegnd**</span><span class="sxs-lookup"><span data-stu-id="0b35a-120">**visFillForegnd**</span></span> <br/> |
    
 

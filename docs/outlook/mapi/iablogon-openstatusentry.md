@@ -19,13 +19,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33410785"
 ---
-# <a name="iablogonopenstatusentry"></a><span data-ttu-id="936c5-103">IABLogon::OpenStatusEntry</span><span class="sxs-lookup"><span data-stu-id="936c5-103">IABLogon::OpenStatusEntry</span></span>
+# <a name="iablogonopenstatusentry"></a><span data-ttu-id="fe4f9-103">IABLogon::OpenStatusEntry</span><span class="sxs-lookup"><span data-stu-id="fe4f9-103">IABLogon::OpenStatusEntry</span></span>
 
   
   
-<span data-ttu-id="936c5-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="936c5-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="fe4f9-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="fe4f9-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="936c5-105">プロバイダーの状態オブジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="936c5-105">Opens the provider's status object.</span></span>
+<span data-ttu-id="fe4f9-105">プロバイダーの状態オブジェクトを開きます。</span><span class="sxs-lookup"><span data-stu-id="fe4f9-105">Opens the provider's status object.</span></span>
   
 ```cpp
 HRESULT OpenStatusEntry(
@@ -36,47 +36,47 @@ HRESULT OpenStatusEntry(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="936c5-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="936c5-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="fe4f9-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="fe4f9-106">Parameters</span></span>
 
- <span data-ttu-id="936c5-107">_lpinterface_</span><span class="sxs-lookup"><span data-stu-id="936c5-107">_lpInterface_</span></span>
+ <span data-ttu-id="fe4f9-107">_lpInterface_</span><span class="sxs-lookup"><span data-stu-id="fe4f9-107">_lpInterface_</span></span>
   
-> <span data-ttu-id="936c5-108">順番status オブジェクトへのアクセスに使用する必要があるインターフェイスを表すインターフェイス識別子 (IID) へのポインター。</span><span class="sxs-lookup"><span data-stu-id="936c5-108">[in] A pointer to the interface identifier (IID) that represents the interface that must be used to access the status object.</span></span> <span data-ttu-id="936c5-109">NULL を渡すと、オブジェクトの標準インターフェイス、 [imapistatus: imapistatus](imapistatusimapiprop.md)が返されます。</span><span class="sxs-lookup"><span data-stu-id="936c5-109">Passing NULL returns the object's standard interface, [IMAPIStatus : IMAPIProp](imapistatusimapiprop.md).</span></span>
+> <span data-ttu-id="fe4f9-108">[in]status オブジェクトへのアクセスに使用する必要があるインターフェイスを表すインターフェイス識別子 (IID) へのポインター。</span><span class="sxs-lookup"><span data-stu-id="fe4f9-108">[in] A pointer to the interface identifier (IID) that represents the interface that must be used to access the status object.</span></span> <span data-ttu-id="fe4f9-109">NULL を渡すと、オブジェクトの標準インターフェイス [IMAPIStatus : IMAPIProp が返されます](imapistatusimapiprop.md)。</span><span class="sxs-lookup"><span data-stu-id="fe4f9-109">Passing NULL returns the object's standard interface, [IMAPIStatus : IMAPIProp](imapistatusimapiprop.md).</span></span>
     
- <span data-ttu-id="936c5-110">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="936c5-110">_ulFlags_</span></span>
+ <span data-ttu-id="fe4f9-110">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="fe4f9-110">_ulFlags_</span></span>
   
-> <span data-ttu-id="936c5-111">順番status オブジェクトが開かれる方法を制御するフラグのビットマスク。</span><span class="sxs-lookup"><span data-stu-id="936c5-111">[in] A bitmask of flags that controls how the status object is opened.</span></span> <span data-ttu-id="936c5-112">次のフラグを設定できます。</span><span class="sxs-lookup"><span data-stu-id="936c5-112">The following flag can be set:</span></span>
+> <span data-ttu-id="fe4f9-111">[in]status オブジェクトの開き方を制御するフラグのビットマスク。</span><span class="sxs-lookup"><span data-stu-id="fe4f9-111">[in] A bitmask of flags that controls how the status object is opened.</span></span> <span data-ttu-id="fe4f9-112">次のフラグを設定できます。</span><span class="sxs-lookup"><span data-stu-id="fe4f9-112">The following flag can be set:</span></span>
     
-<span data-ttu-id="936c5-113">MAPI_MODIFY</span><span class="sxs-lookup"><span data-stu-id="936c5-113">MAPI_MODIFY</span></span> 
+<span data-ttu-id="fe4f9-113">MAPI_MODIFY</span><span class="sxs-lookup"><span data-stu-id="fe4f9-113">MAPI_MODIFY</span></span> 
   
-> <span data-ttu-id="936c5-114">読み取り/書き込みアクセス許可を要求します。</span><span class="sxs-lookup"><span data-stu-id="936c5-114">Requests read/write permission.</span></span> <span data-ttu-id="936c5-115">既定では、オブジェクトは読み取り専用アクセスで開かれ、呼び出し元は読み取り/書き込みアクセス許可が与えられていると想定することはできません。</span><span class="sxs-lookup"><span data-stu-id="936c5-115">By default, objects are opened with read-only access, and callers should not assume that read/write permission has been granted.</span></span>
+> <span data-ttu-id="fe4f9-114">読み取り/書き込みアクセス許可を要求します。</span><span class="sxs-lookup"><span data-stu-id="fe4f9-114">Requests read/write permission.</span></span> <span data-ttu-id="fe4f9-115">既定では、オブジェクトは読み取り専用アクセス権で開かれません。呼び出し元は、読み取り/書き込みアクセス許可が付与されたと見なす必要があります。</span><span class="sxs-lookup"><span data-stu-id="fe4f9-115">By default, objects are opened with read-only access, and callers should not assume that read/write permission has been granted.</span></span>
     
- <span data-ttu-id="936c5-116">_lpulobjtype_</span><span class="sxs-lookup"><span data-stu-id="936c5-116">_lpulObjType_</span></span>
+ <span data-ttu-id="fe4f9-116">_lpulObjType_</span><span class="sxs-lookup"><span data-stu-id="fe4f9-116">_lpulObjType_</span></span>
   
-> <span data-ttu-id="936c5-117">読み上げ開かれているオブジェクトの種類へのポインター。</span><span class="sxs-lookup"><span data-stu-id="936c5-117">[out] A pointer to the type of the opened object.</span></span>
+> <span data-ttu-id="fe4f9-117">[out]開いたオブジェクトの種類へのポインター。</span><span class="sxs-lookup"><span data-stu-id="fe4f9-117">[out] A pointer to the type of the opened object.</span></span>
     
- <span data-ttu-id="936c5-118">_lppentry_</span><span class="sxs-lookup"><span data-stu-id="936c5-118">_lppEntry_</span></span>
+ <span data-ttu-id="fe4f9-118">_lppEntry_</span><span class="sxs-lookup"><span data-stu-id="fe4f9-118">_lppEntry_</span></span>
   
-> <span data-ttu-id="936c5-119">読み上げ開かれているオブジェクトへのポインターへのポインター。</span><span class="sxs-lookup"><span data-stu-id="936c5-119">[out] A pointer to a pointer to the opened object.</span></span>
+> <span data-ttu-id="fe4f9-119">[out]開いたオブジェクトへのポインターへのポインター。</span><span class="sxs-lookup"><span data-stu-id="fe4f9-119">[out] A pointer to a pointer to the opened object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="936c5-120">戻り値</span><span class="sxs-lookup"><span data-stu-id="936c5-120">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="fe4f9-120">戻り値</span><span class="sxs-lookup"><span data-stu-id="fe4f9-120">Return value</span></span>
 
-<span data-ttu-id="936c5-121">S_OK</span><span class="sxs-lookup"><span data-stu-id="936c5-121">S_OK</span></span> 
+<span data-ttu-id="fe4f9-121">S_OK</span><span class="sxs-lookup"><span data-stu-id="fe4f9-121">S_OK</span></span> 
   
-> <span data-ttu-id="936c5-122">呼び出しが成功し、状態オブジェクトが開かれています。</span><span class="sxs-lookup"><span data-stu-id="936c5-122">The call succeeded and the status object has been opened.</span></span>
+> <span data-ttu-id="fe4f9-122">呼び出しが成功し、status オブジェクトが開かされました。</span><span class="sxs-lookup"><span data-stu-id="fe4f9-122">The call succeeded and the status object has been opened.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="936c5-123">注釈</span><span class="sxs-lookup"><span data-stu-id="936c5-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="fe4f9-123">注釈</span><span class="sxs-lookup"><span data-stu-id="fe4f9-123">Remarks</span></span>
 
-<span data-ttu-id="936c5-124">アドレス帳プロバイダーは、状態オブジェクトへのアクセスを許可するために**openstatusentry**メソッドを実装します。</span><span class="sxs-lookup"><span data-stu-id="936c5-124">Address book providers implement the **OpenStatusEntry** method to grant access to their status object.</span></span> <span data-ttu-id="936c5-125">少なくとも[imapistatus:: validatestate](imapistatus-validatestate.md)メソッドをサポートする状態オブジェクトを実装するには、すべてのアドレス帳プロバイダーが必要です。</span><span class="sxs-lookup"><span data-stu-id="936c5-125">All address book providers are required to implement a status object that supports, at a minimum, the [IMAPIStatus::ValidateState](imapistatus-validatestate.md) method.</span></span> <span data-ttu-id="936c5-126">詳細については、「 [Status オブジェクトの実装](status-object-implementation.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="936c5-126">For more information, see [Status Object Implementation](status-object-implementation.md).</span></span>
+<span data-ttu-id="fe4f9-124">アドレス帳プロバイダーは、 **状態オブジェクトへのアクセスを許可する OpenStatusEntry** メソッドを実装します。</span><span class="sxs-lookup"><span data-stu-id="fe4f9-124">Address book providers implement the **OpenStatusEntry** method to grant access to their status object.</span></span> <span data-ttu-id="fe4f9-125">すべてのアドレス帳プロバイダーは、少なくとも [IMAPIStatus::ValidateState](imapistatus-validatestate.md) メソッドをサポートする状態オブジェクトを実装する必要があります。</span><span class="sxs-lookup"><span data-stu-id="fe4f9-125">All address book providers are required to implement a status object that supports, at a minimum, the [IMAPIStatus::ValidateState](imapistatus-validatestate.md) method.</span></span> <span data-ttu-id="fe4f9-126">詳細については [、「Status Object Implementation」を参照してください](status-object-implementation.md)。</span><span class="sxs-lookup"><span data-stu-id="fe4f9-126">For more information, see [Status Object Implementation](status-object-implementation.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="936c5-127">関連項目</span><span class="sxs-lookup"><span data-stu-id="936c5-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fe4f9-127">関連項目</span><span class="sxs-lookup"><span data-stu-id="fe4f9-127">See also</span></span>
 
 
 
-[<span data-ttu-id="936c5-128">IMAPIStatus : IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="936c5-128">IMAPIStatus : IMAPIProp</span></span>](imapistatusimapiprop.md)
+[<span data-ttu-id="fe4f9-128">IMAPIStatus : IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="fe4f9-128">IMAPIStatus : IMAPIProp</span></span>](imapistatusimapiprop.md)
   
-[<span data-ttu-id="936c5-129">IMAPIStatus::SettingsDialog</span><span class="sxs-lookup"><span data-stu-id="936c5-129">IMAPIStatus::SettingsDialog</span></span>](imapistatus-settingsdialog.md)
+[<span data-ttu-id="fe4f9-129">IMAPIStatus::SettingsDialog</span><span class="sxs-lookup"><span data-stu-id="fe4f9-129">IMAPIStatus::SettingsDialog</span></span>](imapistatus-settingsdialog.md)
   
-[<span data-ttu-id="936c5-130">IMAPIStatus::ValidateState</span><span class="sxs-lookup"><span data-stu-id="936c5-130">IMAPIStatus::ValidateState</span></span>](imapistatus-validatestate.md)
+[<span data-ttu-id="fe4f9-130">IMAPIStatus::ValidateState</span><span class="sxs-lookup"><span data-stu-id="fe4f9-130">IMAPIStatus::ValidateState</span></span>](imapistatus-validatestate.md)
   
-[<span data-ttu-id="936c5-131">IABLogon : IUnknown</span><span class="sxs-lookup"><span data-stu-id="936c5-131">IABLogon : IUnknown</span></span>](iablogoniunknown.md)
+[<span data-ttu-id="fe4f9-131">IABLogon : IUnknown</span><span class="sxs-lookup"><span data-stu-id="fe4f9-131">IABLogon : IUnknown</span></span>](iablogoniunknown.md)
 

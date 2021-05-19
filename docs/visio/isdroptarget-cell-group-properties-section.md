@@ -16,33 +16,33 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33410792"
 ---
-# <a name="isdroptarget-cell-group-properties-section"></a><span data-ttu-id="85adb-103">[IsDropTarget] セル ([Group Properties] セクション)</span><span class="sxs-lookup"><span data-stu-id="85adb-103">IsDropTarget Cell (Group Properties Section)</span></span>
+# <a name="isdroptarget-cell-group-properties-section"></a><span data-ttu-id="ae696-103">[IsDropTarget] セル ([Group Properties] セクション)</span><span class="sxs-lookup"><span data-stu-id="ae696-103">IsDropTarget Cell (Group Properties Section)</span></span>
 
-<span data-ttu-id="85adb-104">グループにドロップされた図形を、そのグループが受け入れるかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="85adb-104">Determines whether the group allows you to add a shape to it by dropping it on the group.</span></span>
+<span data-ttu-id="ae696-104">グループにドロップされた図形を、そのグループが受け入れるかどうかを決定します。</span><span class="sxs-lookup"><span data-stu-id="ae696-104">Determines whether the group allows you to add a shape to it by dropping it on the group.</span></span>
   
-|<span data-ttu-id="85adb-105">**値**</span><span class="sxs-lookup"><span data-stu-id="85adb-105">**Value**</span></span>|<span data-ttu-id="85adb-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="85adb-106">**Description**</span></span>|
+|<span data-ttu-id="ae696-105">**値**</span><span class="sxs-lookup"><span data-stu-id="ae696-105">**Value**</span></span>|<span data-ttu-id="ae696-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="ae696-106">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="85adb-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="85adb-107">TRUE</span></span>  <br/> |<span data-ttu-id="85adb-108">グループは、ドロップされた図形を受け入れます。</span><span class="sxs-lookup"><span data-stu-id="85adb-108">Can add a shape to the group by dropping it onto the group.</span></span>  <br/> |
-|<span data-ttu-id="85adb-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="85adb-109">FALSE</span></span>  <br/> |<span data-ttu-id="85adb-110">グループは、ドロップされた図形を受け入れません。</span><span class="sxs-lookup"><span data-stu-id="85adb-110">Cannot drop shape onto the group.</span></span>  <br/> |
+|<span data-ttu-id="ae696-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="ae696-107">TRUE</span></span>  <br/> |<span data-ttu-id="ae696-108">グループは、ドロップされた図形を受け入れます。</span><span class="sxs-lookup"><span data-stu-id="ae696-108">Can add a shape to the group by dropping it onto the group.</span></span>  <br/> |
+|<span data-ttu-id="ae696-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="ae696-109">FALSE</span></span>  <br/> |<span data-ttu-id="ae696-110">グループは、ドロップされた図形を受け入れません。</span><span class="sxs-lookup"><span data-stu-id="ae696-110">Cannot drop shape onto the group.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="85adb-111">注釈</span><span class="sxs-lookup"><span data-stu-id="85adb-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ae696-111">注釈</span><span class="sxs-lookup"><span data-stu-id="ae696-111">Remarks</span></span>
 
-<span data-ttu-id="85adb-112">このセルの値は、グループを選択して、[[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**基本動作**] をクリックし、[**ドロップした図形を受け入れる**] チェック ボックスをオンにして設定することもできます。</span><span class="sxs-lookup"><span data-stu-id="85adb-112">You can also set this value by selecting the group, clicking **Behavior** on the [Developer](run-in-developer-mode-display-the-developer-tab.md) tab, and then selecting the **Accept dropped shapes** check box.</span></span> 
+<span data-ttu-id="ae696-112">このセルの値は、グループを選択して、[[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**基本動作**] をクリックし、[**ドロップした図形を受け入れる**] チェック ボックスをオンにして設定することもできます。</span><span class="sxs-lookup"><span data-stu-id="ae696-112">You can also set this value by selecting the group, clicking **Behavior** on the [Developer](run-in-developer-mode-display-the-developer-tab.md) tab, and then selecting the **Accept dropped shapes** check box.</span></span> 
   
-<span data-ttu-id="85adb-p101">図形をグループ上にドロップしてそのグループに追加するには、図形に対してもこの動作を有効にする必要があります。有効にするには、図形を選択して [[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**基本動作**] をクリックし、[**ドロップ時にグループに図形を追加**] チェック ボックスをオンにします。この値は、[Miscellaneous] セクションの [IsDropSource] セルに格納されます。</span><span class="sxs-lookup"><span data-stu-id="85adb-p101">To add a shape to a group by dropping it on the group, you must also enable similar shape behavior. You must select the shape, click **Behavior** on the [Developer](run-in-developer-mode-display-the-developer-tab.md) tab, and then select the **Add shape to groups on drop** check box. This value is stored in the IsDropSource cell in the Miscellaneous section.</span></span> 
+<span data-ttu-id="ae696-p101">図形をグループ上にドロップしてそのグループに追加するには、図形に対してもこの動作を有効にする必要があります。有効にするには、図形を選択して [[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**基本動作**] をクリックし、[**ドロップ時にグループに図形を追加**] チェック ボックスをオンにします。この値は、[Miscellaneous] セクションの [IsDropSource] セルに格納されます。</span><span class="sxs-lookup"><span data-stu-id="ae696-p101">To add a shape to a group by dropping it on the group, you must also enable similar shape behavior. You must select the shape, click **Behavior** on the [Developer](run-in-developer-mode-display-the-developer-tab.md) tab, and then select the **Add shape to groups on drop** check box. This value is stored in the IsDropSource cell in the Miscellaneous section.</span></span> 
   
-<span data-ttu-id="85adb-116">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [IsDropTarget] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="85adb-116">To get a reference to the IsDropTarget cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="ae696-116">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [IsDropTarget] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="ae696-116">To get a reference to the IsDropTarget cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="85adb-117">セル名:</span><span class="sxs-lookup"><span data-stu-id="85adb-117">Cell name:</span></span>  <br/> |<span data-ttu-id="85adb-118">[isdroptarget]</span><span class="sxs-lookup"><span data-stu-id="85adb-118">IsDropTarget</span></span>  <br/> |
+|<span data-ttu-id="ae696-117">セル名:</span><span class="sxs-lookup"><span data-stu-id="ae696-117">Cell name:</span></span>  <br/> |<span data-ttu-id="ae696-118">IsDropTarget</span><span class="sxs-lookup"><span data-stu-id="ae696-118">IsDropTarget</span></span>  <br/> |
    
-<span data-ttu-id="85adb-119">プログラムから、インデックスによって [IsDropTarget] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="85adb-119">To get a reference to the IsDropTarget cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="ae696-119">プログラムから、インデックスによって [IsDropTarget] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="ae696-119">To get a reference to the IsDropTarget cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="85adb-120">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="85adb-120">Section index:</span></span>  <br/> |<span data-ttu-id="85adb-121">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="85adb-121">**visSectionObject**</span></span> <br/> |
-|<span data-ttu-id="85adb-122">行インデックス :</span><span class="sxs-lookup"><span data-stu-id="85adb-122">Row index:</span></span>  <br/> |<span data-ttu-id="85adb-123">**visRowGroup**</span><span class="sxs-lookup"><span data-stu-id="85adb-123">**visRowGroup**</span></span> <br/> |
-|<span data-ttu-id="85adb-124">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="85adb-124">Cell index:</span></span>  <br/> |<span data-ttu-id="85adb-125">**visGroupIsDropTarget**</span><span class="sxs-lookup"><span data-stu-id="85adb-125">**visGroupIsDropTarget**</span></span> <br/> |
+|<span data-ttu-id="ae696-120">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="ae696-120">Section index:</span></span>  <br/> |<span data-ttu-id="ae696-121">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="ae696-121">**visSectionObject**</span></span> <br/> |
+|<span data-ttu-id="ae696-122">行インデックス :</span><span class="sxs-lookup"><span data-stu-id="ae696-122">Row index:</span></span>  <br/> |<span data-ttu-id="ae696-123">**visRowGroup**</span><span class="sxs-lookup"><span data-stu-id="ae696-123">**visRowGroup**</span></span> <br/> |
+|<span data-ttu-id="ae696-124">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="ae696-124">Cell index:</span></span>  <br/> |<span data-ttu-id="ae696-125">**visGroupIsDropTarget**</span><span class="sxs-lookup"><span data-stu-id="ae696-125">**visGroupIsDropTarget**</span></span> <br/> |
    
 

@@ -19,17 +19,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33409504"
 ---
-# <a name="filetime"></a><span data-ttu-id="707d9-103">FILETIME</span><span class="sxs-lookup"><span data-stu-id="707d9-103">FILETIME</span></span>
+# <a name="filetime"></a><span data-ttu-id="99297-103">FILETIME</span><span class="sxs-lookup"><span data-stu-id="99297-103">FILETIME</span></span>
 
   
   
-<span data-ttu-id="707d9-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="707d9-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="99297-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="99297-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="707d9-105">ファイルの、未署名の64ビットの日付と時刻の値を保持します。</span><span class="sxs-lookup"><span data-stu-id="707d9-105">Holds an unsigned 64-bit date and time value for a file.</span></span> <span data-ttu-id="707d9-106">この値は、1601年1月1日からの100ナノ秒単位の数を表します。</span><span class="sxs-lookup"><span data-stu-id="707d9-106">This value represents the number of 100-nanosecond units since the start of January 1, 1601.</span></span> 
+<span data-ttu-id="99297-105">ファイルの符号なし 64 ビットの日付と時刻の値を保持します。</span><span class="sxs-lookup"><span data-stu-id="99297-105">Holds an unsigned 64-bit date and time value for a file.</span></span> <span data-ttu-id="99297-106">この値は、1601 年 1 月 1 日の開始以降の 100 ナノ秒単位の数を表します。</span><span class="sxs-lookup"><span data-stu-id="99297-106">This value represents the number of 100-nanosecond units since the start of January 1, 1601.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="707d9-107">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="707d9-107">Header file:</span></span>  <br/> |<span data-ttu-id="707d9-108">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="707d9-108">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="99297-107">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="99297-107">Header file:</span></span>  <br/> |<span data-ttu-id="99297-108">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="99297-108">Mapidefs.h</span></span>  <br/> |
    
 ```cpp
 typedef struct _FILETIME
@@ -40,28 +40,28 @@ typedef struct _FILETIME
 
 ```
 
-## <a name="members"></a><span data-ttu-id="707d9-109">メンバー</span><span class="sxs-lookup"><span data-stu-id="707d9-109">Members</span></span>
+## <a name="members"></a><span data-ttu-id="99297-109">Members</span><span class="sxs-lookup"><span data-stu-id="99297-109">Members</span></span>
 
- <span data-ttu-id="707d9-110">**dwlowdatetime**</span><span class="sxs-lookup"><span data-stu-id="707d9-110">**dwLowDateTime**</span></span>
+ <span data-ttu-id="99297-110">**dwLowDateTime**</span><span class="sxs-lookup"><span data-stu-id="99297-110">**dwLowDateTime**</span></span>
   
-> <span data-ttu-id="707d9-111">file time 値の低順位32ビット。</span><span class="sxs-lookup"><span data-stu-id="707d9-111">Low-order 32 bits of the file time value.</span></span> 
+> <span data-ttu-id="99297-111">ファイル時間値の低次 32 ビット。</span><span class="sxs-lookup"><span data-stu-id="99297-111">Low-order 32 bits of the file time value.</span></span> 
     
- <span data-ttu-id="707d9-112">**dwHighDateTime**</span><span class="sxs-lookup"><span data-stu-id="707d9-112">**dwHighDateTime**</span></span>
+ <span data-ttu-id="99297-112">**dwHighDateTime**</span><span class="sxs-lookup"><span data-stu-id="99297-112">**dwHighDateTime**</span></span>
   
-> <span data-ttu-id="707d9-113">file time 値の上位32ビット。</span><span class="sxs-lookup"><span data-stu-id="707d9-113">High-order 32 bits of the file time value.</span></span>
+> <span data-ttu-id="99297-113">ファイル時間値の高次 32 ビット。</span><span class="sxs-lookup"><span data-stu-id="99297-113">High-order 32 bits of the file time value.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="707d9-114">注釈</span><span class="sxs-lookup"><span data-stu-id="707d9-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="99297-114">注釈</span><span class="sxs-lookup"><span data-stu-id="99297-114">Remarks</span></span>
 
-<span data-ttu-id="707d9-115">PT_SYSTIME 型のプロパティには、その値の**FILETIME**構造があります。</span><span class="sxs-lookup"><span data-stu-id="707d9-115">A property of type PT_SYSTIME has a **FILETIME** structure for its value.</span></span> <span data-ttu-id="707d9-116">このようなプロパティは、 [spropvalue](spropvalue.md)構造の定義において、**値**メンバーの**FILETIME**データ型を持っています。</span><span class="sxs-lookup"><span data-stu-id="707d9-116">Such a property has a **FILETIME** data type for the **Value** member in its definition in an [SPropValue](spropvalue.md) structure.</span></span> 
+<span data-ttu-id="99297-115">型のプロパティはPT_SYSTIME **の FILETIME** 構造を持っています。</span><span class="sxs-lookup"><span data-stu-id="99297-115">A property of type PT_SYSTIME has a **FILETIME** structure for its value.</span></span> <span data-ttu-id="99297-116">このようなプロパティには **、SPropValue** 構造体の定義内の **Value** メンバーの [FILETIME](spropvalue.md) データ型があります。</span><span class="sxs-lookup"><span data-stu-id="99297-116">Such a property has a **FILETIME** data type for the **Value** member in its definition in an [SPropValue](spropvalue.md) structure.</span></span> 
   
-<span data-ttu-id="707d9-117">**FILETIME**構造体の定義は、 _Win32 プログラマーズリファレンス_および MAPI ヘッダーファイル mapidefs.h にあります。</span><span class="sxs-lookup"><span data-stu-id="707d9-117">The definition of the **FILETIME** structure is in the  _Win32 Programmer's Reference_ and in the MAPI header file Mapidefs.h.</span></span> <span data-ttu-id="707d9-118">MAPI は、Win32 定義が使用できない場合に、その構造が定義されていることを確認するために、その構造を定義します。</span><span class="sxs-lookup"><span data-stu-id="707d9-118">MAPI defines the structure conditionally to make sure that it is defined when the Win32 definition is unavailable.</span></span> 
+<span data-ttu-id="99297-117">FILETIME 構造 **の定義** は  _、Win32 プログラマ_ リファレンスと MAPI ヘッダー ファイル Mapidefs.h に含まれています。</span><span class="sxs-lookup"><span data-stu-id="99297-117">The definition of the **FILETIME** structure is in the  _Win32 Programmer's Reference_ and in the MAPI header file Mapidefs.h.</span></span> <span data-ttu-id="99297-118">MAPI は、Win32 定義が使用できないときに定義されるように条件付きで構造を定義します。</span><span class="sxs-lookup"><span data-stu-id="99297-118">MAPI defines the structure conditionally to make sure that it is defined when the Win32 definition is unavailable.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="707d9-119">関連項目</span><span class="sxs-lookup"><span data-stu-id="707d9-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="99297-119">関連項目</span><span class="sxs-lookup"><span data-stu-id="99297-119">See also</span></span>
 
 
 
-[<span data-ttu-id="707d9-120">SPropValue</span><span class="sxs-lookup"><span data-stu-id="707d9-120">SPropValue</span></span>](spropvalue.md)
+[<span data-ttu-id="99297-120">SPropValue</span><span class="sxs-lookup"><span data-stu-id="99297-120">SPropValue</span></span>](spropvalue.md)
 
 
-[<span data-ttu-id="707d9-121">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="707d9-121">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="99297-121">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="99297-121">MAPI Structures</span></span>](mapi-structures.md)
 

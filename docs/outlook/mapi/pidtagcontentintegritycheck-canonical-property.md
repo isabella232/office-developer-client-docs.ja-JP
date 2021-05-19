@@ -19,46 +19,46 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415727"
 ---
-# <a name="pidtagcontentintegritycheck-canonical-property"></a><span data-ttu-id="e863f-103">PidTagContentIntegrityCheck 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="e863f-103">PidTagContentIntegrityCheck Canonical Property</span></span>
+# <a name="pidtagcontentintegritycheck-canonical-property"></a><span data-ttu-id="8872c-103">PidTagContentIntegrityCheck 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="8872c-103">PidTagContentIntegrityCheck Canonical Property</span></span>
 
   
   
-<span data-ttu-id="e863f-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="e863f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="8872c-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="8872c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="e863f-105">メッセージの送信者がメッセージの内容を漏洩から権限のない受信者に保護できるようにする、ASN. 1 コンテンツの整合性チェック値を格納します。</span><span class="sxs-lookup"><span data-stu-id="e863f-105">Contains an ASN.1 content integrity check value that allows a message sender to protect message content from disclosure to unauthorized recipients.</span></span>
+<span data-ttu-id="8872c-105">メッセージ送信者が未承認の受信者への開示からメッセージコンテンツを保護できる ASN.1 コンテンツ整合性チェック値を含む。</span><span class="sxs-lookup"><span data-stu-id="8872c-105">Contains an ASN.1 content integrity check value that allows a message sender to protect message content from disclosure to unauthorized recipients.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="e863f-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="e863f-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="e863f-107">PR_CONTENT_INTEGRITY_CHECK</span><span class="sxs-lookup"><span data-stu-id="e863f-107">PR_CONTENT_INTEGRITY_CHECK</span></span>  <br/> |
-|<span data-ttu-id="e863f-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="e863f-108">Identifier:</span></span>  <br/> |<span data-ttu-id="e863f-109">0x0c00</span><span class="sxs-lookup"><span data-stu-id="e863f-109">0x0C00</span></span>  <br/> |
-|<span data-ttu-id="e863f-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="e863f-110">Data type:</span></span>  <br/> |<span data-ttu-id="e863f-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="e863f-111">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="e863f-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="e863f-112">Area:</span></span>  <br/> |<span data-ttu-id="e863f-113">Exchange</span><span class="sxs-lookup"><span data-stu-id="e863f-113">Exchange</span></span>  <br/> |
+|<span data-ttu-id="8872c-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="8872c-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="8872c-107">PR_CONTENT_INTEGRITY_CHECK</span><span class="sxs-lookup"><span data-stu-id="8872c-107">PR_CONTENT_INTEGRITY_CHECK</span></span>  <br/> |
+|<span data-ttu-id="8872c-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="8872c-108">Identifier:</span></span>  <br/> |<span data-ttu-id="8872c-109">0x0C00</span><span class="sxs-lookup"><span data-stu-id="8872c-109">0x0C00</span></span>  <br/> |
+|<span data-ttu-id="8872c-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="8872c-110">Data type:</span></span>  <br/> |<span data-ttu-id="8872c-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="8872c-111">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="8872c-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="8872c-112">Area:</span></span>  <br/> |<span data-ttu-id="8872c-113">Exchange</span><span class="sxs-lookup"><span data-stu-id="8872c-113">Exchange</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="e863f-114">注釈</span><span class="sxs-lookup"><span data-stu-id="e863f-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="8872c-114">注釈</span><span class="sxs-lookup"><span data-stu-id="8872c-114">Remarks</span></span>
 
-<span data-ttu-id="e863f-115">このプロパティは、メッセージコンテンツの否認不可を提供します。</span><span class="sxs-lookup"><span data-stu-id="e863f-115">This property provides for non-repudiation of message content.</span></span> <span data-ttu-id="e863f-116">**PR_MESSAGE_TOKEN** ([PidTagMessageToken](pidtagmessagetoken-canonical-property.md)) と組み合わせて使用することにより、メッセージの内容がその宛先に変更されないようにします。</span><span class="sxs-lookup"><span data-stu-id="e863f-116">In conjunction with **PR_MESSAGE_TOKEN** ([PidTagMessageToken](pidtagmessagetoken-canonical-property.md)), it ensures that the content of a message arrives at its destination unchanged.</span></span>
+<span data-ttu-id="8872c-115">このプロパティは、メッセージ コンテンツの否認不可を提供します。</span><span class="sxs-lookup"><span data-stu-id="8872c-115">This property provides for non-repudiation of message content.</span></span> <span data-ttu-id="8872c-116">メッセージ **のPR_MESSAGE_TOKEN** [(PidTagMessageToken)](pidtagmessagetoken-canonical-property.md)と組み合わせて、メッセージの内容が変更されずに宛先に到着します。</span><span class="sxs-lookup"><span data-stu-id="8872c-116">In conjunction with **PR_MESSAGE_TOKEN** ([PidTagMessageToken](pidtagmessagetoken-canonical-property.md)), it ensures that the content of a message arrives at its destination unchanged.</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="e863f-117">関連リソース</span><span class="sxs-lookup"><span data-stu-id="e863f-117">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="8872c-117">関連リソース</span><span class="sxs-lookup"><span data-stu-id="8872c-117">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="e863f-118">ヘッダーファイル</span><span class="sxs-lookup"><span data-stu-id="e863f-118">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="8872c-118">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="8872c-118">Header files</span></span>
 
-<span data-ttu-id="e863f-119">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="e863f-119">Mapidefs.h</span></span>
+<span data-ttu-id="8872c-119">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="8872c-119">Mapidefs.h</span></span>
   
-> <span data-ttu-id="e863f-120">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="e863f-120">Provides data type definitions.</span></span>
+> <span data-ttu-id="8872c-120">データ型の定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="8872c-120">Provides data type definitions.</span></span>
     
-<span data-ttu-id="e863f-121">Mapitags</span><span class="sxs-lookup"><span data-stu-id="e863f-121">Mapitags.h</span></span>
+<span data-ttu-id="8872c-121">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="8872c-121">Mapitags.h</span></span>
   
-> <span data-ttu-id="e863f-122">関連するプロパティとしてリストされているプロパティの定義が含まれます。</span><span class="sxs-lookup"><span data-stu-id="e863f-122">Contains definitions of properties listed as associated properties.</span></span>
+> <span data-ttu-id="8872c-122">関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。</span><span class="sxs-lookup"><span data-stu-id="8872c-122">Contains definitions of properties listed as associated properties.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="e863f-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="e863f-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8872c-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="8872c-123">See also</span></span>
 
 
 
-[<span data-ttu-id="e863f-124">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="e863f-124">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="8872c-124">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="8872c-124">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="e863f-125">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="e863f-125">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="8872c-125">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="8872c-125">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="e863f-126">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="e863f-126">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="8872c-126">標準プロパティ名を MAPI 名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="8872c-126">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="e863f-127">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="e863f-127">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="8872c-127">MAPI 名を標準プロパティ名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="8872c-127">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

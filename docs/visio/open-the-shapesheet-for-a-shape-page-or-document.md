@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82253243
 localization_priority: Normal
 ms.assetid: 9b456a87-d990-7ab2-d8a1-e91dca78650f
-description: '[シェイプシート] ウィンドウは、Microsoft Visio では既定では非表示になっています。 シェイプシートにアクセスするには、Visio を開発モードで実行する必要があります ([開発] タブを表示)。'
+description: '[シェイプシート] ウィンドウは、Microsoft の既定では非表示Visio。 ShapeSheet にアクセスするには、開発者モードで Visioを実行する必要があります ([開発者] タブを表示します)。'
 ms.openlocfilehash: b18bca69f7acea29d3c43ff57b22b132baa9c6fe
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,28 +16,28 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33419423"
 ---
-# <a name="open-the-shapesheet-for-a-shape-page-or-document"></a><span data-ttu-id="66862-104">図形、ページ、またはドキュメントのシェイプシートを開く</span><span class="sxs-lookup"><span data-stu-id="66862-104">Open the ShapeSheet for a Shape, Page, or Document</span></span>
+# <a name="open-the-shapesheet-for-a-shape-page-or-document"></a><span data-ttu-id="f9315-104">図形、ページ、またはドキュメントのシェイプシートを開く</span><span class="sxs-lookup"><span data-stu-id="f9315-104">Open the ShapeSheet for a Shape, Page, or Document</span></span>
 
-<span data-ttu-id="66862-105">[シェイプシート] ウィンドウは、Microsoft Visio では既定では非表示になっています。</span><span class="sxs-lookup"><span data-stu-id="66862-105">The ShapeSheet window is hidden by default in Microsoft Visio.</span></span> <span data-ttu-id="66862-106">シェイプシートにアクセスするには、Visio を開発モードで実行する必要があります ([開発] タブを表示)。</span><span class="sxs-lookup"><span data-stu-id="66862-106">To access the ShapeSheet, you need to run Visio in developer mode (display the developer tab).</span></span>
+<span data-ttu-id="f9315-105">[シェイプシート] ウィンドウは、Microsoft の既定では非表示Visio。</span><span class="sxs-lookup"><span data-stu-id="f9315-105">The ShapeSheet window is hidden by default in Microsoft Visio.</span></span> <span data-ttu-id="f9315-106">ShapeSheet にアクセスするには、開発者モードで Visioを実行する必要があります ([開発者] タブを表示します)。</span><span class="sxs-lookup"><span data-stu-id="f9315-106">To access the ShapeSheet, you need to run Visio in developer mode (display the developer tab).</span></span>
   
-### <a name="to-run-visio-in-developer-mode"></a><span data-ttu-id="66862-107">Visio を開発モードで実行する</span><span class="sxs-lookup"><span data-stu-id="66862-107">To run Visio in developer mode</span></span>
+### <a name="to-run-visio-in-developer-mode"></a><span data-ttu-id="f9315-107">Visio を開発モードで実行する</span><span class="sxs-lookup"><span data-stu-id="f9315-107">To run Visio in developer mode</span></span>
 
-1. <span data-ttu-id="66862-108">[**ファイル**] タブをクリックし、[**オプション**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="66862-108">Click the **File** tab and then click **Options**.</span></span>
+1. <span data-ttu-id="f9315-108">[**ファイル**] タブをクリックし、[**オプション**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f9315-108">Click the **File** tab and then click **Options**.</span></span>
     
-2. <span data-ttu-id="66862-109">[**Visio のオプション**] ダイアログ ボックスで [**詳細設定**] をクリックし、[**一般**] の下で [**開発モードで実行する**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="66862-109">In the **Visio Options** dialog box, click **Advanced**, and then, under **General**, select **Run in developer mode**.</span></span>
+2. <span data-ttu-id="f9315-109">[**Visio のオプション**] ダイアログ ボックスで [**詳細設定**] をクリックし、[**一般**] の下で [**開発モードで実行する**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="f9315-109">In the **Visio Options** dialog box, click **Advanced**, and then, under **General**, select **Run in developer mode**.</span></span>
     
-### <a name="to-view-the-shapesheet-for-a-shape"></a><span data-ttu-id="66862-110">図形のシェイプシートを表示する</span><span class="sxs-lookup"><span data-stu-id="66862-110">To view the ShapeSheet for a shape</span></span>
+### <a name="to-view-the-shapesheet-for-a-shape"></a><span data-ttu-id="f9315-110">図形のシェイプシートを表示する</span><span class="sxs-lookup"><span data-stu-id="f9315-110">To view the ShapeSheet for a shape</span></span>
 
-- <span data-ttu-id="66862-111">描画キャンバスの図形を右クリックして、[**シェイプシートの表示**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="66862-111">Right-click the shape on the drawing canvas and click **Show ShapeSheet**.</span></span>
+- <span data-ttu-id="f9315-111">描画キャンバスの図形を右クリックして、[**シェイプシートの表示**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f9315-111">Right-click the shape on the drawing canvas and click **Show ShapeSheet**.</span></span>
     
-- <span data-ttu-id="66862-112">描画キャンバス上の図形を選択して、[**開発**] タブの [**図形のデザイン**] グループで、[**シェイプシートの表示**] をクリックして、[**図形**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="66862-112">Select the shape on the drawing canvas, and then on the **Developer** tab, in the **Shape Design** group, click **Show ShapeSheet**, and then click **Shape**.</span></span>
+- <span data-ttu-id="f9315-112">描画キャンバス上の図形を選択して、[**開発**] タブの [**図形のデザイン**] グループで、[**シェイプシートの表示**] をクリックして、[**図形**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f9315-112">Select the shape on the drawing canvas, and then on the **Developer** tab, in the **Shape Design** group, click **Show ShapeSheet**, and then click **Shape**.</span></span>
     
-### <a name="to-view-the-sheet-for-a-page"></a><span data-ttu-id="66862-113">ページのシートを表示する</span><span class="sxs-lookup"><span data-stu-id="66862-113">To view the sheet for a page</span></span>
+### <a name="to-view-the-sheet-for-a-page"></a><span data-ttu-id="f9315-113">ページのシートを表示する</span><span class="sxs-lookup"><span data-stu-id="f9315-113">To view the sheet for a page</span></span>
 
-- <span data-ttu-id="66862-114">[**開発**] タブの [**図形のデザイン**] グループで [**シェイプシートの表示**] をクリックし、[**ページ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="66862-114">On the **Developer** tab, in the **Shape Design** group, click **Show ShapeSheet**, and then click **Page**.</span></span>
+- <span data-ttu-id="f9315-114">[**開発**] タブの [**図形のデザイン**] グループで [**シェイプシートの表示**] をクリックし、[**ページ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f9315-114">On the **Developer** tab, in the **Shape Design** group, click **Show ShapeSheet**, and then click **Page**.</span></span>
     
-### <a name="to-view-the-sheet-for-a-document"></a><span data-ttu-id="66862-115">ドキュメントのシートを表示する</span><span class="sxs-lookup"><span data-stu-id="66862-115">To view the sheet for a document</span></span>
+### <a name="to-view-the-sheet-for-a-document"></a><span data-ttu-id="f9315-115">ドキュメントのシートを表示する</span><span class="sxs-lookup"><span data-stu-id="f9315-115">To view the sheet for a document</span></span>
 
-- <span data-ttu-id="66862-116">[**開発**] タブの [**図形のデザイン**] グループで [**シェイプシートの表示**] をクリックし、[**ドキュメント**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="66862-116">On the **Developer** tab, in the **Shape Design** group, click **Show ShapeSheet**, and then click **Document**.</span></span>
+- <span data-ttu-id="f9315-116">[**開発**] タブの [**図形のデザイン**] グループで [**シェイプシートの表示**] をクリックし、[**ドキュメント**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f9315-116">On the **Developer** tab, in the **Shape Design** group, click **Show ShapeSheet**, and then click **Document**.</span></span>
     
 
