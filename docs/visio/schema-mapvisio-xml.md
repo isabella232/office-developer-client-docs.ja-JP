@@ -1,12 +1,12 @@
 ---
-title: スキーママップ (Visio XML)
+title: スキーマ マップ (Visio XML)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3ff1f2e1-bdfe-2766-3c0f-0f299cc256e9
-description: このトピックでは、Visio 2013 ファイル形式の XML スキーマ定義について説明します。
+description: このトピックでは、2013 ファイル形式の XML スキーマVisio示します。
 ms.openlocfilehash: 1822134546b730ceecb2f30183b4a8c325f37906
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,9 +14,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34539083"
 ---
-# <a name="schema-map-visio-xml"></a><span data-ttu-id="440d4-103">スキーママップ (Visio XML)</span><span class="sxs-lookup"><span data-stu-id="440d4-103">Schema map (Visio XML)</span></span>
+# <a name="schema-map-visio-xml"></a><span data-ttu-id="7dd76-103">スキーマ マップ (Visio XML)</span><span class="sxs-lookup"><span data-stu-id="7dd76-103">Schema map (Visio XML)</span></span>
 
-<span data-ttu-id="440d4-104">このトピックでは、Visio 2013 ファイル形式の XML スキーマ定義について説明します。</span><span class="sxs-lookup"><span data-stu-id="440d4-104">This topic shows the XML schema definition for the Visio 2013 file format.</span></span>
+<span data-ttu-id="7dd76-104">このトピックでは、2013 ファイル形式の XML スキーマVisio示します。</span><span class="sxs-lookup"><span data-stu-id="7dd76-104">This topic shows the XML schema definition for the Visio 2013 file format.</span></span>
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

@@ -13,17 +13,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34542507"
 ---
-# <a name="connectiontype-complextype-visio-xml"></a><span data-ttu-id="c3b48-102">Connection_Type complexType (Visio XML)</span><span class="sxs-lookup"><span data-stu-id="c3b48-102">Connection_Type complexType (Visio XML)</span></span>
+# <a name="connection_type-complextype-visio-xml"></a><span data-ttu-id="e85ee-102">Connection_Type complexType (Visio XML)</span><span class="sxs-lookup"><span data-stu-id="e85ee-102">Connection_Type complexType (Visio XML)</span></span>
 
-## <a name="type-information"></a><span data-ttu-id="c3b48-103">型情報</span><span class="sxs-lookup"><span data-stu-id="c3b48-103">Type information</span></span>
+## <a name="type-information"></a><span data-ttu-id="e85ee-103">型情報</span><span class="sxs-lookup"><span data-stu-id="e85ee-103">Type information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="c3b48-104">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="c3b48-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|<span data-ttu-id="c3b48-105">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="c3b48-105">**Schema file**</span></span> <br/> |<span data-ttu-id="c3b48-106">VisioSchema15-06-05</span><span class="sxs-lookup"><span data-stu-id="c3b48-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
-|<span data-ttu-id="c3b48-107">**拡張ベース**</span><span class="sxs-lookup"><span data-stu-id="c3b48-107">**Extension base**</span></span> <br/> |<span data-ttu-id="c3b48-108">Section_Type</span><span class="sxs-lookup"><span data-stu-id="c3b48-108">Section_Type</span></span>  <br/> |
+|<span data-ttu-id="e85ee-104">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="e85ee-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|<span data-ttu-id="e85ee-105">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="e85ee-105">**Schema file**</span></span> <br/> |<span data-ttu-id="e85ee-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="e85ee-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
+|<span data-ttu-id="e85ee-107">**拡張ベース**</span><span class="sxs-lookup"><span data-stu-id="e85ee-107">**Extension base**</span></span> <br/> |<span data-ttu-id="e85ee-108">Section_Type</span><span class="sxs-lookup"><span data-stu-id="e85ee-108">Section_Type</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="c3b48-109">定義</span><span class="sxs-lookup"><span data-stu-id="c3b48-109">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="e85ee-109">定義</span><span class="sxs-lookup"><span data-stu-id="e85ee-109">Definition</span></span>
 
 ```XML
           <xs:complexType name="Connection_Type">
@@ -42,18 +42,18 @@ ms.locfileid: "34542507"
       
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="c3b48-110">要素と属性</span><span class="sxs-lookup"><span data-stu-id="c3b48-110">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="e85ee-110">要素と属性</span><span class="sxs-lookup"><span data-stu-id="e85ee-110">Elements and attributes</span></span>
 
-<span data-ttu-id="c3b48-111">スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="c3b48-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="e85ee-111">スキーマで **sequence**、**minOccurs**、**maxOccurs**、**choice** などの具体的な要件が定義されている場合は、定義のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e85ee-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="child-elements"></a><span data-ttu-id="c3b48-112">子要素</span><span class="sxs-lookup"><span data-stu-id="c3b48-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="e85ee-112">子要素</span><span class="sxs-lookup"><span data-stu-id="e85ee-112">Child elements</span></span>
 
-|<span data-ttu-id="c3b48-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="c3b48-113">**Element**</span></span>|<span data-ttu-id="c3b48-114">**型**</span><span class="sxs-lookup"><span data-stu-id="c3b48-114">**Type**</span></span>|<span data-ttu-id="c3b48-115">**説明**</span><span class="sxs-lookup"><span data-stu-id="c3b48-115">**Description**</span></span>|
+|<span data-ttu-id="e85ee-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="e85ee-113">**Element**</span></span>|<span data-ttu-id="e85ee-114">**型**</span><span class="sxs-lookup"><span data-stu-id="e85ee-114">**Type**</span></span>|<span data-ttu-id="e85ee-115">**説明**</span><span class="sxs-lookup"><span data-stu-id="e85ee-115">**Description**</span></span>|
 |:-----|:-----|:-----|
-|[<span data-ttu-id="c3b48-116">Row</span><span class="sxs-lookup"><span data-stu-id="c3b48-116">Row</span></span>](row-element-connection-sectionvisio-xml.md) <br/> |[<span data-ttu-id="c3b48-117">ConnectionRow_Type</span><span class="sxs-lookup"><span data-stu-id="c3b48-117">ConnectionRow_Type</span></span>](connectionrow_type-complextypevisio-xml.md) <br/> ||
+|[<span data-ttu-id="e85ee-116">Row</span><span class="sxs-lookup"><span data-stu-id="e85ee-116">Row</span></span>](row-element-connection-sectionvisio-xml.md) <br/> |[<span data-ttu-id="e85ee-117">ConnectionRow_Type</span><span class="sxs-lookup"><span data-stu-id="e85ee-117">ConnectionRow_Type</span></span>](connectionrow_type-complextypevisio-xml.md) <br/> ||
    
-### <a name="attributes"></a><span data-ttu-id="c3b48-118">属性</span><span class="sxs-lookup"><span data-stu-id="c3b48-118">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="e85ee-118">属性</span><span class="sxs-lookup"><span data-stu-id="e85ee-118">Attributes</span></span>
 
-<span data-ttu-id="c3b48-119">なし。</span><span class="sxs-lookup"><span data-stu-id="c3b48-119">None.</span></span>
+<span data-ttu-id="e85ee-119">なし。</span><span class="sxs-lookup"><span data-stu-id="e85ee-119">None.</span></span>
   
 
