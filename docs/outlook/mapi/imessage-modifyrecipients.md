@@ -50,7 +50,7 @@ MODRECIP_MODIFY
     
 MODRECIP_REMOVE 
   
-> 既存の受信者は、 _lpMods_パラメーターの各受信者エントリのプロパティ値の配列に含まれている**PR_ROWID** ([PidTagRowid](pidtagrowid-canonical-property.md)) プロパティのインデックスとしてを使用して、受信者リストから削除する必要があります。 
+> _lpMods_ パラメーター内の各受信者エントリのプロパティ値配列に含まれる **PR_ROWID** ([PidTagRowid](pidtagrowid-canonical-property.md)) プロパティをインデックスとして使用して、既存の受信者を受信者リストから削除する必要があります。 
     
  _lpMods_
   
@@ -68,7 +68,7 @@ S_OK
   
 **ADRLIST**�\���̊e��M�҂� 1 ��[ADRENTRY](adrentry.md)�\�����܂܂�Ă��邵�A�e **ADRENTRY**�\���ɂ́A��M�҂̃v���p�e�B��L�q����v���p�e�B�̒l�̔z�񂪊܂܂�Ă��܂��B 
   
-**adrlist**構造内の受信者を解決または未解決にすることができます。 違いは、含まれているプロパティの数と種類にあります。 解決されない受信者には、 **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) および**PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) プロパティのみが含まれています。解決された受信者には、これら2つのプロパティと PR_ADDRTYPE が含まれています。 ****([PidTagAddressType](pidtagaddresstype-canonical-property.md)) および**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))。 **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) を使用できる場合は、これも含めることができます。
+**ADRLIST 構造の受信者** は、解決または未解決にできます。 違いは、含まれるプロパティの数と種類です。 未解決の受信者には **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) プロパティと PR_RECIPIENT_TYPE ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) プロパティだけが含まれるのに対し、解決された受信者には **これらの 2** つのプロパティと PR_ADDRTYPE ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) と **PR_ENTRYID** ([PidTagEntryId)](pidtagentryid-canonical-property.md)が含まれる。  **[PR_EMAIL_ADDRESS** ] ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) を使用できる場合は、このアドレスも含めできます。
   
 ���b�Z�[�W�����M�����܂łɂ́A���̎�M�҈ꗗ�ŉ����M�҂݂̂ɕK�v������܂��B��M�҂ɂ́A�z�M�s�\���|�[�g��쐬���A���̃��b�Z�[�W�̑��M�҂ɑ��M���ꂽ���������܂��B�N���C�A���g�̊ϓ[���疼�O����v���Z�X�̏ڍׂɂ��ẮA[���O��������](resolving-a-recipient-name.md)��Q�Ƃ��Ă��������B�A�h���X���̃v���o�C�](resolving-a-recipient-name.md)�[�̊ϓ_����̏ڍׂɂ��ẮA[���O������������](implementing-name-resolution.md)��Q�Ƃ��Ă��������B
   
@@ -104,7 +104,7 @@ MODRECIP_MODIFY �t���O��ݒ肷��Ƃ��� **ModifyRecipients** 
     
 - ���b�Z�[�W�́A�Z���̂����܂����������Ŕz�M�s�\�錾����܂��B
     
-���惊�X�g�̃��������蓖��[ADRLIST �� SRowSet �\���̃�������Ǘ�����](managing-memory-for-adrlist-and-srowset-structures.md)�Ő�����Ă��銄�蓖�ă��[����g�p���܂��B **ADRLIST**�\����̃T�u�\���̂����ꂩ�� **ModifyRecipients**�������܂���B **ADRLIST**�\���Ɗe[SPropValue](spropvalue.md)�\���̂́A���ꂼ��ʂɉ�����邱�Ƃ��ł��܂����A [MAPIAllocateBuffer](mapiallocatebuffer.md)�֐���g�p���ČʂɊ��蓖�Ă���K�v������܂��B���@�ł́A�C�ӂ� **SPropValue**�\���̒ǉ��̗̈��K�v�Ƃ���ꍇ�A���Ƃ��ł��܂� **SPropValue**�\����Œu��������V����[MAPIFreeBuffer](mapifreebuffer.md)��g�p���Č�ŉ���ł��܂��B **MAPIFreeBuffer**��g�p���Ă�A���� **SPropValue**�\����������K�v������܂��B
+���惊�X�g�̃��������蓖��[ADRLIST �� SRowSet �\���̃�������Ǘ�����](managing-memory-for-adrlist-and-srowset-structures.md)�Ő�����Ă��銄�蓖�ă��[����g�p���܂��B **ADRLIST**�\����̃T�u�\���̂����ꂩ�� **ModifyRecipients**�������܂���B **ADRLIST**�\���Ɗe [SPropValue](spropvalue.md)�\���̂́A���ꂼ��ʂɉ�����邱�Ƃ��ł��܂����A [MAPIAllocateBuffer](mapiallocatebuffer.md)�֐���g�p���ČʂɊ��蓖�Ă���K�v������܂��B���@�ł́A�C�ӂ� **SPropValue**�\���̒ǉ��̗̈��K�v�Ƃ���ꍇ�A���Ƃ��ł��܂� **SPropValue**�\����Œu��������V����[MAPIFreeBuffer](mapifreebuffer.md)��g�p���Č�ŉ���ł��܂��B **MAPIFreeBuffer**��g�p���Ă�A���� **SPropValue**�\����������K�v������܂��B
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -112,7 +112,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**�R�����g**|
 |:-----|:-----|:-----|
-|MAPIABFunctions  <br/> |AddRecipient  <br/> |MFCMAPI �ł́A **IMessage::ModifyRecipients**���\�b�h��g�p���āA���b�Z�[�W�ɁA�V������M�҂�ǉ����܂��B  <br/> |
+|MAPIABFunctions.cpp  <br/> |AddRecipient  <br/> |MFCMAPI �ł́A **IMessage::ModifyRecipients**���\�b�h��g�p���āA���b�Z�[�W�ɁA�V������M�҂�ǉ����܂��B  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

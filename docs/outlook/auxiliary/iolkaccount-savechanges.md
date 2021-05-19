@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 8f1ab61e-7d1c-50d5-ae21-8cb4b08d729c
-description: レジストリストアに書き込むことによって、アカウントオブジェクトへの変更をコミットします。
+description: レジストリ ストアに書き込み、アカウント オブジェクトに対する変更をコミットします。
 ms.openlocfilehash: c23cefbbda62de9b7e159e500d95b8db5ff34ef4
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,11 +16,11 @@ ms.locfileid: "33425835"
 ---
 # <a name="iolkaccountsavechanges"></a>IOlkAccount::SaveChanges
 
-レジストリストアに書き込むことによって、アカウントオブジェクトへの変更をコミットします。
+レジストリ ストアに書き込み、アカウント オブジェクトに対する変更をコミットします。
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IOlkAccount](iolkaccount.md)を参照してください。
+[「IOlkAccount」を参照してください](iolkaccount.md)。
   
 ```cpp
 HRESULT IOlkAccount::SaveChanges (  
@@ -32,19 +32,19 @@ HRESULT IOlkAccount::SaveChanges (
 
 _dwFlags_
   
-> [in]動作を変更するフラグです。 OLK_ACCOUNT_NO_FLAGS は、唯一サポートされている値です。
+> [in]動作を変更するフラグです。 OLK_ACCOUNT_NO_FLAGSは、サポートされている唯一の値です。
     
 ## <a name="return-values"></a>戻り値
 
 |**HRESULT 型**|**Description**|
 |:-----|:-----|
-|S_OK  <br/> |メソッドが正常に終了しました。  <br/> |
-|E_ACCT_NOT_FOUND  <br/> |指定されたアカウントが見つかりません。  <br/> |
+|S_OK  <br/> |メソッドが成功しました。  <br/> |
+|E_ACCT_NOT_FOUND  <br/> |指定したアカウントが見当たらされません。  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |アカウント マネージャーが使用するために初期化されていません。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-[IOlkAccount:: setprop](iolkaccount-setprop.md)を使用して、account プロパティの値を変更した後、 **IOlkAccount:: SaveChanges**を使用してそのような変更を保存します。 
+[IOlkAccount::SetProp](iolkaccount-setprop.md)を使用してアカウント プロパティの値を変更した後 **、IOlkAccount::SaveChanges** を使用して、そのような変更を保存します。 
   
 ## <a name="see-also"></a>関連項目
 

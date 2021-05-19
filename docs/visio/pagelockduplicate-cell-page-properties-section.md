@@ -29,7 +29,7 @@ ms.locfileid: "33425982"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [pagelockduplicate]  <br/> |
+| セル名:  <br/> | PageLockDuplicate  <br/> |
    
 プログラムから、インデックスによって [**PageLockDuplicate**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -37,6 +37,6 @@ ms.locfileid: "33425982"
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowPage** <br/> |
-| セル インデックス:  <br/> |**vispagelockduplicate** <br/> |
+| セル インデックス:  <br/> |**visPageLockDuplicate** <br/> |
    
 

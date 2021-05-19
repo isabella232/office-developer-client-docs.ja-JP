@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251574
 localization_priority: Normal
 ms.assetid: 94c640d8-99e9-9d15-8ada-d9abeb3d66f7
-description: 図面のプロパティの [タイトル] フィールドからテキストを返します。
+description: ドキュメントのプロパティの [タイトル] フィールドのテキストを返します。
 ms.openlocfilehash: 395356fcffddfaf8d796708acc31db297ef01b35
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33424414"
 ---
 # <a name="title-function"></a>TITLE 関数
 
-図面のプロパティの [**タイトル**] フィールドからテキストを返します。 
+ドキュメントのプロパティの **[タイトル]** フィールドのテキストを返します。 
   
 ## <a name="syntax"></a>構文
 

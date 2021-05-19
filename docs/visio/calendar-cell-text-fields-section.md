@@ -8,7 +8,7 @@ f1_keywords:
 - vis_sdr.chm60029
 localization_priority: Normal
 ms.assetid: 0c3e275e-25f0-3681-03f4-257145c19690
-description: データ型が Date のときに、テキストフィールドに使用するカレンダーを指定します。
+description: データ型が Date の場合にテキスト フィールドに使用されるカレンダーを指定します。
 ms.openlocfilehash: e90f757fb176375c8f9e9d5744e09b67afaca527
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33424755"
 ---
 # <a name="calendar-cell-text-fields-section"></a>[Calendar] セル ([Text Fields] セクション)
 
-データ型が Date のときに、テキストフィールドに使用するカレンダーを指定します。
+データ型が Date の場合にテキスト フィールドに使用されるカレンダーを指定します。
   
 ## <a name="remarks"></a>注釈
 
@@ -28,14 +28,14 @@ ms.locfileid: "33424755"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | フィールド。 *i* = ** <1>、2、3...  <br/> |
+| セル名 :  <br/> | Fields.Calendar[  *i*  ] ここで  *、i*  = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [Calendar] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionTextField** <br/> |
-| 行インデックス:  <br/> |**visRowField** +  *i* = ** 0、1、2...  <br/> |
+| 行インデックス:  <br/> |**visRowField**  +  *i* *=* 0, 1, 2...  <br/> |
 | セル インデックス:  <br/> |**visFieldCalendar** <br/> |
    
 

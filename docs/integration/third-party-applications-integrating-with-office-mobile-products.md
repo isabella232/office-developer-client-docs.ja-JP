@@ -1,5 +1,5 @@
 ---
-title: Windows、Android、iOS の Office Mobile 製品と統合しているサードパーティ製のアプリケーション
+title: モバイル、Android、および iOS 上Officeモバイル製品と統合Windowsサードパーティ 製アプリケーション
 manager: soliver
 ms.date: 06/04/2015
 ms.audience: ITPro
@@ -13,10 +13,10 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33427508"
 ---
-# <a name="third-party-applications-integrating-with-office-mobile-products-on-windows-android-and-ios"></a>Windows、Android、iOS の Office Mobile 製品と統合しているサードパーティ製のアプリケーション
+# <a name="third-party-applications-integrating-with-office-mobile-products-on-windows-android-and-ios"></a>モバイル、Android、および iOS 上Officeモバイル製品と統合Windowsサードパーティ 製アプリケーション
  
 当社の代表者として、所有権の種類に関するファイルごとの正しい情報 (ファイルが business と personal/consumer のどちらと見なされるか) を、Windows 10 の Expando プロパティ、Android の Storage Access Framework、iOS の Document Picker によって Microsoft に渡すことに同意します。 ファイルの種類が  business の場合、そのファイルは企業を対象にしたストレージ オファリングに格納されます。 ファイルの種類が personal/consumer の場合、そのファイルは消費者 を対象にしたストレージ オファリングに格納されます。
   
-Microsoft Office 製品との統合が会社の能力を低下させる可能性があることを、(a) consumer またはビジネスによって、ドキュメントを適切に特定することができないことを確認してください。および (b) Microsoft は、このような条項を随時更新しています。また、onus は、その後のファイル情報を渡す前に、新しい用語が適用されているかどうかを確認し、新しい用語が適用されるかどうかを確認します Microsoft が用語を変更した場合、このコンテンツページの上部に表示される有効日によって、「月/年の間に更新されました」などの変更があることが示されます。
+さらに、(a) ドキュメントを消費者またはビジネスとして適切に識別しない場合、会社が製品と統合する能力がMicrosoft Officeします。(b) Microsoft は随時これらの条項を更新する場合があります。また、onus は、以降のファイル情報を渡す前に、新しい用語が適用されるのを確認して確認する能力を備えて、自分または他の代表者が担当します。 Microsoft が条項を変更した場合、このコンテンツ ページの上部にある有効日には、"月/年の時点で更新" などの変更が表示されます。
   
 

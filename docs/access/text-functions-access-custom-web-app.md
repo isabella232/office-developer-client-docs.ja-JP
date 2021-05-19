@@ -20,30 +20,30 @@ ms.locfileid: "33426990"
 > [!IMPORTANT]
 > マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
-- [CharIndex 関数 (Access カスタム web アプリ)](charindex-function-access-custom-web-app.md)
+- [CharIndex 関数 (Access カスタム Web アプリ)](charindex-function-access-custom-web-app.md)
     
-- [Concat 関数 (Access カスタム web アプリ)](concat-function-access-custom-web-app.md)
+- [Concat 関数 (Access カスタム Web アプリ)](concat-function-access-custom-web-app.md)
     
-- [Left 関数 (Access カスタム web アプリ)](left-function-access-custom-web-app.md)
+- [Left 関数 (Access カスタム Web アプリ)](left-function-access-custom-web-app.md)
     
-- [Len 関数 (Access カスタム web アプリ)](len-function-access-custom-web-app.md)
+- [Len 関数 (Access カスタム Web アプリ)](len-function-access-custom-web-app.md)
     
-- [Lower 関数 (Access カスタム web アプリ)](lower-function-access-custom-web-app.md)
+- [Lower Function (Access custom Web app)](lower-function-access-custom-web-app.md)
     
-- [LTrim 関数 (Access カスタム web アプリ)](ltrim-function-access-custom-web-app.md)
+- [LTrim 関数 (Access カスタム Web アプリ)](ltrim-function-access-custom-web-app.md)
     
-- [Replace 関数 (Access カスタム web アプリ)](replace-function-access-custom-web-app.md)
+- [Replace Function (Access custom Web app)](replace-function-access-custom-web-app.md)
     
-- [Replicate 関数 (Access カスタム web アプリ)](replicate-function-access-custom-web-app.md)
+- [レプリケート関数 (Access カスタム Web アプリ)](replicate-function-access-custom-web-app.md)
     
-- [Right 関数 (Access カスタム web アプリ)](right-function-access-custom-web-app.md)
+- [Right Function (Access custom Web app)](right-function-access-custom-web-app.md)
     
-- [RTrim 関数 (Access カスタム web アプリ)](rtrim-function-access-custom-web-app.md)
+- [RTrim 関数 (Access カスタム Web アプリ)](rtrim-function-access-custom-web-app.md)
     
-- [ユーザー関数 (Access カスタム web アプリ)](stuff-function-access-custom-web-app.md)
+- [Stuff 関数 (Access カスタム Web アプリ)](stuff-function-access-custom-web-app.md)
     
-- [SubString 関数 (Access カスタム web アプリ)](substring-function-access-custom-web-app.md)
+- [SubString 関数 (Access カスタム Web アプリ)](substring-function-access-custom-web-app.md)
     
-- [Upper 関数 (Access カスタム web アプリ)](upper-function-access-custom-web-app.md)
+- [Upper Function (Access custom Web app)](upper-function-access-custom-web-app.md)
     
 

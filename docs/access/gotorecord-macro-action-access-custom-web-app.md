@@ -1,5 +1,5 @@
 ---
-title: GoToRecord マクロアクション (Access カスタム web アプリ)
+title: GoToRecord マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424897"
 ---
-# <a name="gotorecord-macro-action-access-custom-web-app"></a>GoToRecord マクロアクション (Access カスタム web アプリ)
+# <a name="gotorecord-macro-action-access-custom-web-app"></a>GoToRecord マクロ アクション (Access カスタム Web アプリ)
 
 " **GoToRecord/レコードの移動** " アクションを使用すると、ビューで指定したレコードをカレント レコードにすることができます。 
   
@@ -27,6 +27,6 @@ ms.locfileid: "33424897"
   
 |**アクションの引数**|**説明**|
 |:-----|:-----|
-|**録音する** <br/> |カレント レコードにするレコードを指定します。 [**前のレコード**]、[**次のレコード**]、[**先頭のレコード**]、[**最後のレコード**] のいずれかを選択します。 既定値は [**次のレコード**] です。  <br/> |
+|**Record** <br/> |カレント レコードにするレコードを指定します。[**前のレコード**]、[**次のレコード**]、[**先頭のレコード**]、[**最後のレコード**] のいずれかを選択します。既定値は [**次のレコード**] です。<br/> |
    
 

@@ -21,6 +21,6 @@ ms.locfileid: "33427137"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**attAttachRenddata**属性は、添付ファイルがメッセージテキスト内でどのようにレンダリングされるかを示す、 **RENDDATA**構造体としてエンコードされます。 **RENDDATA**構造体は、単に TNEF ストリームで、 **RENDDATA**構造の最初のメンバーから始まる**sizeof (RENDDATA)** バイトでエンコードされます。 **RENDDATA**構造体の**dwFlags**メンバーの値が**MAC_BINARY**に設定されている場合、次の添付ファイルのデータは MacBinary 形式で格納されます。それ以外の場合、添付ファイルデータは通常どおりにエンコードされます。
+**attAttachRenddata** 属性は、メッセージ テキストで添付ファイルがレンダリングされる方法と場所を説明する **RENDDATA** 構造としてエンコードされます。 **RENDDATA** 構造体は、RENDDATA 構造体の最初のメンバーで始まる **sizeof(RENDDATA)** バイトとして **TNEF** ストリームでエンコードされます。 **RENDDATA** 構造体の **dwFlags** メンバーの値が **MAC_BINARY** に設定されている場合、次の添付ファイルのデータは MacBinary 形式で格納されます。それ以外の場合、添付ファイル データは通常どおりエンコードされます。
   
 

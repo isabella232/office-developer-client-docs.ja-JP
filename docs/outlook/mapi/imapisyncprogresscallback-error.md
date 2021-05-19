@@ -1,5 +1,5 @@
 ---
-title: imapisync進行 scallbackerror
+title: IMAPISyncProgressCallbackError
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33424932"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-送信/受信ダイアログに表示される詳細情報を提供します。 同期中にエラーが発生した場合、ストアプロバイダーはこの関数を呼び出します。
+[送受信] ダイアログに表示される詳細を示します。 同期中にエラーが発生した場合、ストア プロバイダーは、この関数を呼び出します。
   
 ```cpp
 HRESULT Error(
@@ -42,7 +42,7 @@ HRESULT Error(
     
  **pwcszErrorStr**
   
-> 表示されるエラーに関連付けられている文字列へのポインター。
+> 表示するエラーに関連付けられた文字列へのポインター。
     
 ## <a name="return-value"></a>戻り値
 

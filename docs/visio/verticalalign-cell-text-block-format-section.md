@@ -22,9 +22,9 @@ ms.locfileid: "33425793"
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| .0  <br/> | Top  <br/> |**visVertTop** <br/> |
-| 1   <br/> | 区分  <br/> |**visVertMiddle** <br/> |
-| 2   <br/> | 下  <br/> |**visVertBottom** <br/> |
+| 0  <br/> | Top  <br/> |**visVertTop** <br/> |
+| 1  <br/> | Middle  <br/> |**visVertMiddle** <br/> |
+| 2  <br/> | Bottom  <br/> |**visVertBottom** <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -32,7 +32,7 @@ ms.locfileid: "33425793"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [verticalalign]  <br/> |
+| セル名:  <br/> | VerticalAlign  <br/> |
    
 プログラムから、インデックスによって [VerticalAlign] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

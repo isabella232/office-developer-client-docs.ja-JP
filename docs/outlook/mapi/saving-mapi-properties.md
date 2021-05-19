@@ -21,17 +21,17 @@ ms.locfileid: "33425891"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-多くのオブジェクトは処理のトランザクションモデルをサポートしているため、プロパティへの変更は後でコミットされるまで永続的に行われません。 プロパティへの変更は[imapiprop:: setprops](imapiprop-setprops.md)メソッドと[imapiprop::D eleteprops](imapiprop-deleteprops.md)メソッドによって処理されますが、コミット手順は[imapiprop:: SaveChanges](imapiprop-savechanges.md)によって処理されます。 これは、オブジェクトのプロパティの最新バージョンにアクセスできるように**SaveChanges**を正常に呼び出した後には行われません。 
+多くのオブジェクトは処理のトランザクション モデルをサポートしています。その結果、プロパティに対する変更は、後でコミットされるまで永続化されません。 プロパティへの変更は [IMAPIProp::SetProps](imapiprop-setprops.md) メソッドと [IMAPIProp::D eleteProps](imapiprop-deleteprops.md) メソッドによって処理されるのに対し、コミット ステップは [IMAPIProp::SaveChanges](imapiprop-savechanges.md)によって処理されます。 **SaveChanges** の呼び出しが成功するまで、オブジェクトのプロパティの最新バージョンにアクセスできます。 
   
-**SaveChanges**がエラー値 MAPI_E_OBJECT_CHANGED を返す場合、これは、別のクライアントがオブジェクトへの変更を同時にコミットしていることを示す警告です。 オブジェクトを実装するプロバイダーによっては、MAPI_MODIFY フラグが設定された**openentry**メソッドを呼び出して読み取り/書き込みアクセス権を付与することによって、複数のクライアントがオブジェクトを正常に開くことができます。 このような**openentry**呼び出しから返されるオブジェクトは、ストレージデータのスナップショットです。 このデータを以降に変更しようとするたびに、以前の試行を上書きできます。 
+**SaveChanges が** エラー値を返MAPI_E_OBJECT_CHANGED、これは、別のクライアントがオブジェクトに対する変更を同時にコミットしているという警告です。 オブジェクトを実装するプロバイダーによっては、複数のクライアントが MAPI_MODIFY フラグ セットを使用して **OpenEntry** メソッドを呼び出してオブジェクトを正常に開き、読み取り/書き込みアクセス権を与えることも可能です。 このような **OpenEntry** 呼び出しから返されるオブジェクトは、ストレージ データのスナップショットです。 以降、このデータを変更しようとすると、以前の試行が上書きされる可能性があります。 
   
-MAPI_E_OBJECT_CHANGED を**SaveChanges**から受け取る際に、クライアントには次のオプションがあります。 
+**SaveChanges** MAPI_E_OBJECT_CHANGED受信すると、クライアントは次のオプションを使用できます。 
   
 - 変更を保持するオブジェクトのコピーを作成します。
     
-- FORCE_SAVE を指定して、再度、 **SaveChanges**を呼び出してください。 
+- SaveChanges に別の **呼び出しを行** い、名前をFORCE_SAVE。 
     
-FORCE_SAVE フラグを使用して**SaveChanges**を呼び出すと、以前の保存が上書きされ、クライアントの変更が永続的に行われます。 
+**SaveChanges を呼** び出して FORCE_SAVEフラグを指定すると、以前の保存が上書きされ、クライアントの変更が永続的になります。 
   
 ## <a name="see-also"></a>関連項目
 

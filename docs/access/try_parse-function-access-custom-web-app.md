@@ -1,5 +1,5 @@
 ---
-title: Try_Parse 関数 (Access カスタム web アプリ)
+title: Try_Parse関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33427529"
 ---
-# <a name="tryparse-function-access-custom-web-app"></a>Try_Parse 関数 (Access カスタム web アプリ)
+# <a name="try_parse-function-access-custom-web-app"></a>Try_Parse関数 (Access カスタム Web アプリ)
 
 指定したアプリケーションのカルチャのデータ型にテキスト値を解析します。変換が無効な場合は Null を返します。
   
@@ -23,14 +23,14 @@ ms.locfileid: "33427529"
   
 ## <a name="syntax"></a>構文
 
- **Try_Parse**(*textexpression*、 *DataType*) 
+ **Try_Parse** (*TextExpression*, *DataType*) 
   
 **Try_Parse** 関数の引数は次のとおりです。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
 | *TextExpression*  <br/> |指定したデータ型になっているか解析される対象の、書式設定された値を表すテキスト式。  <br/> |
-| *DataType*  <br/> |*textexpression*を解析するデータ型。  <br/> |
+| *DataType*  <br/> |*TextExpression* を解析するデータ型です。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

@@ -7,7 +7,7 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 22e3de8a-c4f2-41a4-a5b1-c5b1bf06f724
-description: Outlook Social Connector 2013 (.osc) プロバイダーを開発するときは、以下の手順に従う必要があります。
+description: ソーシャル コネクタ 2013 (OSC) プロバイダーを開発する場合は、次Outlookに従う必要があります。
 ms.openlocfilehash: 6a48a56d8065fb9a176ca6527340c99551cdb52a
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -17,26 +17,26 @@ ms.locfileid: "33425919"
 ---
 # <a name="best-practices-for-developing-a-provider"></a>プロバイダー開発のためのベスト プラクティス
 
-Outlook Social Connector 2013 (.osc) プロバイダーを開発するときは、以下の手順に従う必要があります。
+ソーシャル コネクタ 2013 (OSC) プロバイダーを開発する場合は、次Outlookに従う必要があります。
   
-- セキュリティ上の理由から、インターネットを介してサーバーと通信するプロバイダーは HTTPS (ハイパーテキスト転送プロトコル (HTTP) with Secure Socket Layer (SSL) プロトコル) を使用する必要があります。 そうしないと、送信中に電子メールアドレス、ソーシャルネットワークアクティビティ、およびその他のユーザーデータが傍受または公開される危険性があります。
+- セキュリティ上の理由から、インターネット経由でサーバーと通信するプロバイダーは、HTTPS (Hypertext Transfer Protocol (HTTP) with Secure Socket Layer (SSL)) プロトコルを使用する必要があります。 それ以外の場合、転送中に電子メール アドレス、ソーシャル ネットワークアクティビティ、その他のユーザー データが傍受または公開されるリスクがあります。
     
-- サードパーティのソーシャルネットワーク用の .osc プロバイダーを開発している場合は、プロバイダーがソーシャルネットワークのサービス利用規約に準拠している必要があります。
+- サードパーティのソーシャル ネットワーク用の OSC プロバイダーを開発する場合、プロバイダーはソーシャル ネットワークのサービス条件に従う必要があります。
     
-- プロバイダーダウンロードパッケージのサイズを最小にするには、C++ などのネイティブコンパイラ、または COM コンポーネントを構築できる他のツールを使用して、プロバイダーを構築します。
+- プロバイダーダウンロード パッケージのサイズを最小限に抑えるために、C++ などのネイティブ コンパイラや、COM コンポーネントを構築できるその他のツールを使用してプロバイダーをビルドします。
     
-- プロバイダーで、ソーシャルネットワークに送信される一意のユーザーエージェントを作成し、プロバイダーがソーシャルネットワークに対して行った呼び出しを追跡します。
+- プロバイダーで、ソーシャル ネットワークに送信される一意のユーザー エージェントを作成して、プロバイダーがソーシャル ネットワークに対して行った通話を追跡します。
     
-- [imethod alprovider:: getcapabilities](isocialprovider-getcapabilities.md)メソッドは、プロバイダーの機能を取得するためにインターネット経由でソーシャルネットワークを呼び出すことに依存しないようにしてください。 たとえば、ユーザーは Outlook をオフラインで起動できます。.osc が**getcapabilities**を呼び出し、ネットワーク接続がない場合、 **getcapabilities**呼び出しは有効な**機能**XML を返しません。 ベストプラクティスとして、プロバイダーのリソースとして**機能**XML を格納することをお勧めします。 
+- [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md)メソッドは、プロバイダーの機能を取得するためにインターネットを通してソーシャル ネットワークを呼び出す方法に依存しない必要があります。 たとえば、ユーザーはオフラインでOutlookできます。OSC が **GetCapabilities** を呼び出し、ネットワーク接続がない場合 **、GetCapabilities** 呼び出しは有効な機能 XML **を返しません**。 ベスト プラクティスは、機能 XML **を** プロバイダーにリソースとして格納する方法です。 
     
-- .osc プロバイダーは、ソーシャルネットワークへの大量の呼び出しを生成することができます。 ソーシャルネットワークのサービス条件によっては、友人を Outlook フォルダーにキャッシュして、.osc からプロバイダーへの呼び出し回数を減らし、プロバイダーからソーシャルネットワークに変換することを検討してください。
+- OSC プロバイダーは、ソーシャル ネットワークへの呼び出しを大幅に生成できます。 ソーシャル ネットワークのサービス条件に応じて、友人を Outlook フォルダーにキャッシュして、OSC からプロバイダーへの呼び出しの数を減らし、プロバイダーからソーシャル ネットワークに移動します。
     
-- Office 2013 は、32ビットと64ビットの両方のバージョンで利用できます。 office 2010 より前のバージョンの office は、32ビット版でのみ使用できます。 64ビット Windows 上の Office 2013 の既定のインストールは、32ビットです。 64ビットの Office 2013 でインストールされた64ビットバージョンの .osc をサポートする予定の場合は、プロバイダーの64ビットバージョンもリリースする必要があります。 
+- Office 2013 は、32 ビットバージョンと 64 ビット バージョンの両方で使用できます。 2010 Office以前Officeバージョンは、32 ビット バージョンでのみ使用できます。 64 ビット Office 2013 の既定のインストールWindows 32 ビットです。 64 ビット Office 2013 でインストールされている OSC の 64 ビット バージョンをサポートする場合は、64 ビット バージョンのプロバイダーもリリースする必要があります。 
     
 ## <a name="see-also"></a>関連項目
 
-- [通常の呼び出しシーケンスの .osc](osc-typical-calling-sequences.md)  
-- [.osc XML スキーマを使用してプロバイダーを開発する](developing-a-provider-with-the-osc-xml-schema.md)  
-- [プロバイダーを展開する](deploying-a-provider.md)  
+- [OSC の一般的な呼び出しシーケンス](osc-typical-calling-sequences.md)  
+- [OSC XML スキーマを使用したプロバイダーの開発](developing-a-provider-with-the-osc-xml-schema.md)  
+- [プロバイダーの展開](deploying-a-provider.md)  
 - [Outlook Social Connector プロバイダーの開発の概要 (英語)(機械翻訳)](getting-started-with-developing-an-outlook-social-connector-provider.md)
 

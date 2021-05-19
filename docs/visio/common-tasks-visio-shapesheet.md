@@ -18,31 +18,31 @@ ms.locfileid: "33426976"
 
 このナビゲーション ページには、Visio でのプログラミングの概要に関するトピックへのリンクが表示されています。次のリンクをクリックするか、または、目次を使用して次のトピックを表示してください。
   
-- [シェイプシートの行を追加、変更、または削除する](add-change-or-delete-rows-in-the-shapesheet.md)
+- [ShapeSheet の行の追加、変更、または削除](add-change-or-delete-rows-in-the-shapesheet.md)
     
 - [セクションの追加、表示、非表示、または削除](add-show-hide-or-delete-a-section.md)
     
-- [図形の名前を変更して ID を表示する](change-the-name-and-view-the-id-of-a-shape.md)
+- [名前を変更し、図形の ID を表示する](change-the-name-and-view-the-id-of-a-shape.md)
     
-- [1つのセルから別のセルに数式をコピーして貼り付ける](copy-and-paste-a-formula-from-one-cell-into-another.md)
+- [1 つのセルから別のセルに数式をコピーして貼り付ける](copy-and-paste-a-formula-from-one-cell-into-another.md)
     
-- [セルの数式または値を表示する](display-formulas-or-values-in-cells.md)
+- [セルに数式または値を表示する](display-formulas-or-values-in-cells.md)
     
-- [数式の一部を編集する](edit-a-part-of-a-formula.md)
+- [数式のパーツを編集する](edit-a-part-of-a-formula.md)
     
 - [空の数式を入力する](enter-an-empty-formula.md)
     
-- [シェイプシートウィンドウ内を移動する](move-around-a-shapesheet-window.md)
+- [シェイプシート ウィンドウの周囲を移動する](move-around-a-shapesheet-window.md)
     
 - [各シェイプシートを同じウィンドウ内で開く](open-each-shapesheet-in-the-same-window.md)
     
-- [図形、ページ、またはドキュメントのシェイプシートを開く](open-the-shapesheet-for-a-shape-page-or-document.md)
+- [図形、ページ、またはドキュメントの ShapeSheet を開く](open-the-shapesheet-for-a-shape-page-or-document.md)
     
-- [数式でセルを参照する](reference-a-cell-in-a-formula.md)
+- [数式のセルを参照する](reference-a-cell-in-a-formula.md)
     
-- [開発者モードで実行する ([開発] タブを表示する)](run-in-developer-mode-display-the-developer-tab.md)
+- [開発モードで実行する ([開発者] タブを表示する)](run-in-developer-mode-display-the-developer-tab.md)
     
-- [[シェイプシート] ウィンドウにオブジェクトを表示する](show-an-object-in-the-shapesheet-window.md)
+- [ShapeSheet ウィンドウにオブジェクトを表示する](show-an-object-in-the-shapesheet-window.md)
     
 - [セルの新しい数式を入力する](type-a-new-formula-for-a-cell.md)
     

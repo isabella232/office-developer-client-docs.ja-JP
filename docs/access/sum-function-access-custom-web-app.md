@@ -1,5 +1,5 @@
 ---
-title: Sum 関数 (Access カスタム web アプリ)
+title: Sum 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33427102"
 ---
-# <a name="sum-function-access-custom-web-app"></a>Sum 関数 (Access カスタム web アプリ)
+# <a name="sum-function-access-custom-web-app"></a>Sum 関数 (Access カスタム Web アプリ)
 
 式に含まれるすべての値の合計が返されます。
   
@@ -23,13 +23,13 @@ ms.locfileid: "33427102"
   
 ## <a name="syntax"></a>構文
 
- **合計**(*NumericExpression*) 
+ **Sum** (*NumericExpression*) 
   
 **Sum** 関数には次の引数があります。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *NumericExpression*  <br/> |追加する数値データを含むフィールドを識別する式、またはそのフィールドのデータを使用して計算を実行する式を指定します。 *NumericExpression*のオペランドには、テーブルフィールドの名前、定数、または関数を含めることができます (組み込みまたはユーザー定義であっても、他の SQL 集計関数は使用できません)。  <br/> |
+| *NumericExpression*  <br/> |追加する数値データを含むフィールドを識別する式、またはそのフィールドのデータを使用して計算を実行する式。 *NumericExpression* のオペランドには、テーブル フィールド、定数、または関数の名前を含めできます (組み込み関数またはユーザー定義関数を使用できますが、他の SQL 集計関数のいずれかではありません)。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

@@ -1,5 +1,5 @@
 ---
-title: imapifolder IMAPIContainer
+title: IMAPIFolder IMAPIContainer
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -29,40 +29,40 @@ ms.locfileid: "33424239"
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
-|公開者:  <br/> |Folder オブジェクト  <br/> |
-|実装元:  <br/> |メッセージストアプロバイダー  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションと MAPI  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |フォルダー オブジェクト  <br/> |
+|実装元:  <br/> |メッセージ ストア プロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションと MAPI  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMAPIFolder  <br/> |
 |ポインターの種類:  <br/> |LPMAPIFOLDER  <br/> |
-|トランザクションモデル:  <br/> |非トランザクション  <br/> |
+|トランザクション モデル:  <br/> |非トランザクション  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
 |[CreateMessage](imapifolder-createmessage.md) <br/> |新しいメッセージを作成します。  <br/> |
-|[copymessages](imapifolder-copymessages.md) <br/> |1つまたは複数のメッセージをコピーまたは移動します。  <br/> |
-|[DeleteMessages](imapifolder-deletemessages.md) <br/> |1つまたは複数のメッセージを削除します。  <br/> |
+|[CopyMessages](imapifolder-copymessages.md) <br/> |1 つ以上のメッセージをコピーまたは移動します。  <br/> |
+|[DeleteMessages](imapifolder-deletemessages.md) <br/> |1 つ以上のメッセージを削除します。  <br/> |
 |[CreateFolder](imapifolder-createfolder.md) <br/> |新しいサブフォルダーを作成します。  <br/> |
 |[CopyFolder](imapifolder-copyfolder.md) <br/> |サブフォルダーをコピーまたは移動します。  <br/> |
 |[DeleteFolder](imapifolder-deletefolder.md) <br/> |サブフォルダーを削除します。  <br/> |
-|[setreadflags](imapifolder-setreadflags.md) <br/> |1つ以上のフォルダーのメッセージの**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティの MSGFLAG_READ フラグを設定またはクリアし、閲覧レポートの送信を管理します。  <br/> |
-|[getmessagestatus](imapifolder-getmessagestatus.md) <br/> |特定のフォルダー内のメッセージに関連付けられている状態を取得します。  <br/> |
-|[setmessagestatus](imapifolder-setmessagestatus.md) <br/> |メッセージに関連付けられている状態を設定します。  <br/> |
-|[SaveContentsSort](imapifolder-savecontentssort.md) <br/> |フォルダーの contents テーブルの既定の並べ替え順序を設定します。  <br/> |
+|[SetReadFlags](imapifolder-setreadflags.md) <br/> |**1** つ以上のフォルダーのメッセージの PR_MESSAGE_FLAGS ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティの MSGFLAG_READ フラグを設定またはクリアし、読み取りレポートの送信を管理します。  <br/> |
+|[GetMessageStatus](imapifolder-getmessagestatus.md) <br/> |特定のフォルダー内のメッセージに関連付けられている状態を取得します。  <br/> |
+|[SetMessageStatus](imapifolder-setmessagestatus.md) <br/> |メッセージに関連付けられた状態を設定します。  <br/> |
+|[SaveContentsSort](imapifolder-savecontentssort.md) <br/> |フォルダーのコンテンツ テーブルの既定の並べ替え順序を設定します。  <br/> |
 |[EmptyFolder](imapifolder-emptyfolder.md) <br/> |フォルダー自体を削除せずに、フォルダーからすべてのメッセージとサブフォルダーを削除します。  <br/> |
    
 |**必須のプロパティ**|**Access**|
 |:-----|:-----|
-|**PR_DISPLAY_NAME**([PidTagDisplayNamePrefix](pidtagdisplaynameprefix-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
-|**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_FOLDER_TYPE**([PidTagFolderType](pidtagfoldertype-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
-|**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_PARENT_ENTRYID**([PidTagParentEntryId](pidtagparententryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_STORE_ENTRYID**([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_STORE_RECORD_KEY**([PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_DISPLAY_NAME** ([PidTagDisplayNamePrefix](pidtagdisplaynameprefix-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
+|**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_FOLDER_TYPE** ([PidTagFolderType](pidtagfoldertype-canonical-property.md))  <br/> |読み取り/書き込み  <br/> |
+|**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_STORE_RECORD_KEY** ([PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md))  <br/> |読み取り専用  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

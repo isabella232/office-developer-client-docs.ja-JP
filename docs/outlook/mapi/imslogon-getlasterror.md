@@ -25,7 +25,7 @@ ms.locfileid: "33425877"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージストアオブジェクトに対して発生した最後のエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。 
+メッセージ ストア オブジェクト [に対して](mapierror.md) 発生した最後のエラーに関する情報を含む MAPIERROR 構造体を返します。 
   
 ```cpp
 HRESULT GetLastError(
@@ -39,19 +39,19 @@ HRESULT GetLastError(
 
  _hResult_
   
-> 順番以前のメソッド呼び出しでメッセージストアオブジェクトに対して生成されたエラー値を含む HRESULT データ型。
+> [in]メッセージ ストア オブジェクトの前のメソッド呼び出しで生成されたエラー値を含む HRESULT データ型。
     
  _ulFlags_
   
-> 順番返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> _lppMAPIError_パラメーターで返される**MAPIERROR**構造体の文字列は、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。 
+> _lppMAPIError_ パラメーターで返される **MAPIERROR** 構造体の文字列は、Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列は ANSI 形式になります。 
     
  _lppMAPIError_
   
-> 読み上げエラーのバージョン、コンポーネント、およびコンテキスト情報を含む、返された**MAPIERROR**構造体へのポインターへのポインター。 返す**MAPIERROR**が存在しない場合は、 _lppMAPIError_パラメーターを NULL に設定できます。 
+> [out]エラーのバージョン、コンポーネント、コンテキスト情報を含む、返される **MAPIERROR** 構造体へのポインターへのポインター。 _戻す MAPIERROR がない場合は、lppMAPIError_ パラメーター **を NULL に** 設定できます。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -61,15 +61,15 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
+> このフラグMAPI_UNICODE設定され、実装が Unicode をサポートしていないか、または設定されていないMAPI_UNICODE実装が Unicode のみをサポートしています。
     
 ## <a name="remarks"></a>注釈
 
-**IMSLogon:: GetLastError**メソッドを使用すると、メッセージにメッセージとして表示される情報を取得するために、メッセージストアオブジェクトに対するメソッド呼び出しから返された最後のエラーに関する情報を取得します。 
+**IMSLogon::GetLastError** メソッドを使用して、メッセージ ストア オブジェクトのメソッド呼び出しから返された最後のエラーに関する情報をユーザーにメッセージで表示します。 
   
-返された**MAPIERROR**構造に対して MAPI によって割り当てられたすべてのメモリを解放するには、クライアントアプリケーションは[MAPIFreeBuffer](mapifreebuffer.md)関数のみを呼び出す必要があります。 
+返される **MAPIERROR** 構造に対して MAPI によって割り当てられたすべてのメモリを解放するには、クライアント アプリケーションが [MAPIFreeBuffer](mapifreebuffer.md) 関数のみを呼び出す必要があります。 
   
-アプリケーションが**MAPIERROR**を使用するには、 **GetLastError**の戻り値が S_OK である必要があります。 戻り値が S_OK の場合でも、 **MAPIERROR**は返されない可能性があります。 最後のエラーが発生したかどうかを実装が判断できない場合、またはそのエラーに対して**MAPIERROR**が使用できない場合、 **GetLastError**は_lppMAPIError_で NULL へのポインターを返します。 
+アプリケーションが MAPIERROR を使用するには **、GetLastError** S_OK戻り値を使用する **必要があります**。 戻り値が指定S_OK **MAPIERROR** が返されない場合があります。 実装で最後のエラーが何だったのか判断できない場合、または **MAPIERROR** がエラーに対して使用できない場合 **、GetLastError** は  _代わりに lppMAPIError_ で NULL へのポインターを返します。 
   
 ## <a name="see-also"></a>関連項目
 

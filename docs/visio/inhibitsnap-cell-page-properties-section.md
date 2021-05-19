@@ -31,7 +31,7 @@ ms.locfileid: "33426752"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [inhibitsnap]  <br/> |
+| セル名:  <br/> | InhibitSnap  <br/> |
    
 プログラムから、インデックスによって [InhibitSnap] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

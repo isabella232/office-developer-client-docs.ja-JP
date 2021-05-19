@@ -25,7 +25,7 @@ ms.locfileid: "33427088"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージストアプロバイダーが、送信されたメッセージに対して処理を実行できるようにします。 このメソッドは、MAPI スプーラーによってのみ呼び出されます。
+メッセージ ストア プロバイダーが送信されたメッセージに対して処理を実行できます。 このメソッドは、MAPI スプーラーによってのみ呼び出されます。
   
 ```cpp
 HRESULT FinishedMsg(
@@ -43,40 +43,40 @@ HRESULT FinishedMsg(
     
  _cbEntryID_
   
-> 順番_lな tryid_パラメーターで指定されたエントリ識別子のバイト数。 
+> [in]  _lpEntryID_ パラメーターが指すエントリ識別子のバイト数。 
     
- _lて tryid_
+ _lpEntryID_
   
-> 順番処理するメッセージのエントリ id へのポインター。
+> [in]処理するメッセージのエントリ識別子へのポインター。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 送信済みメッセージの処理に成功しました。
+> 送信されたメッセージの処理が成功しました。
     
 MAPI_E_NO_SUPPORT 
   
-> メッセージストアプロバイダーは送信メッセージ処理をサポートしていません。 このエラー値は、発信者が MAPI スプーラーではない場合に返されます。
+> メッセージ ストア プロバイダーは、送信されたメッセージ処理をサポートしていない。 呼び出し元が MAPI スプーラーではない場合、このエラー値が返されます。
     
 ## <a name="remarks"></a>注釈
 
-**IMsgStore:: FinishedMsg**メソッドは、送信されたメッセージに対して処理を実行します。 この処理には、メッセージの削除、別のフォルダーへの移動、またはその両方の操作が含まれます。 処理の種類は、 **PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) および**PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) の各プロパティが設定されているかどうかによって異なります。 
+**IMsgStore::FinishedMsg** メソッドは、送信されたメッセージに対して処理を実行します。 この処理には、メッセージの削除、別のフォルダーへの移動、または両方のアクションが含まれる場合があります。 処理の種類は **、PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) プロパティと **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) プロパティが設定されるかどうかによって異なります。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**FinishedMsg**の実装で、 _l tryid_で識別されたメッセージをロック解除し、適切な処理を実行します。 ターゲットメッセージは常にロックされます。MAPI スプーラーは、ロックされていないメッセージのエントリ識別子を**FinishedMsg**に渡しません。
+**FinishedMsg の実装で**_、lpEntryID_ によって識別されるメッセージのロックを解除し、適切な処理を実行します。 ターゲット メッセージは常にロックされます。MAPI スプーラーは、ロックされていないメッセージのエントリ識別子を **FinishedMsg に渡す必要があります**。
   
-**PR_DELETE_AFTER_SUBMIT**または**PR_SENTMAIL_ENTRYID**のどちらも設定されていないか、どちらかが設定されているか、どちらか一方が設定されている可能性があります。 次の表では、設定に基づいて実行する必要がある処理について説明します。 
+設定されているファイルまたは **PR_DELETE_AFTER_SUBMIT、PR_SENTMAIL_ENTRYID** 設定、または設定されている場合があります。 次の表では、設定に基づいて実行する必要があるアクションについて説明します。 
   
 |||
 |:-----|:-----|
-|どちらのプロパティも設定されていない場合:  <br/> |メッセージを送信元のフォルダー (通常は送信トレイ) に残します。  <br/> |
-|両方のプロパティが設定されている場合:  <br/> |指定したフォルダーにメッセージを移動し、必要に応じて削除します。  <br/> |
-|PR_SENTMAIL_ENTRYID が設定されている場合:  <br/> |メッセージを指示されたフォルダーに移動します。  <br/> |
-|PR_DELETE_AFTER_SUBMIT が設定されている場合:  <br/> |メッセージを削除します。  <br/> |
+|どちらのプロパティも設定しない場合:  <br/> |メッセージは、送信されたフォルダー (通常は送信箱) に残します。  <br/> |
+|両方のプロパティが設定されている場合:  <br/> |必要に応じて、メッセージを指定したフォルダーに移動し、削除します。  <br/> |
+|このPR_SENTMAIL_ENTRYID設定されている場合は、次の値を使用します。  <br/> |メッセージを指定したフォルダーに移動します。  <br/> |
+|このPR_DELETE_AFTER_SUBMIT設定されている場合は、次の値を使用します。  <br/> |メッセージを削除する。  <br/> |
    
-適切なアクションを実行した後、 [imapisupport::D o送信メール](imapisupport-dosentmail.md)メソッドを呼び出します。 
+適切な操作を実行した後 [、IMAPISupport::D oSentMail メソッドを呼び出](imapisupport-dosentmail.md) します。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -21,12 +21,12 @@ ms.locfileid: "33425954"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このプロパティを使用してステータスバーに表示する Unicode 文字列を指定します。
+このプロパティを持つステータス バーに表示する Unicode 文字列を指定します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_SERVER_TYPE_DISPLAY_NAME  <br/> |
-|識別子:  <br/> |0x341d  <br/> |
+|識別子:  <br/> |0x341D  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |共通  <br/> |
    
@@ -38,7 +38,7 @@ ms.locfileid: "33425954"
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

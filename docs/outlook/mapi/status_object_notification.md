@@ -19,17 +19,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426269"
 ---
-# <a name="statusobjectnotification"></a>STATUS_OBJECT_NOTIFICATION
+# <a name="status_object_notification"></a>STATUS_OBJECT_NOTIFICATION
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-変更によって影響を受けた状態オブジェクトを示します。 
+変更の影響を受けた状態オブジェクトについて説明します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct
@@ -42,35 +42,35 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
  **cbEntryID**
   
-> **lな tryid**メンバーによって指摘されたエントリ識別子のバイト数。 
+> **lpEntryID** メンバーが指すエントリ識別子のバイト数。 
     
- **lて tryid**
+ **lpEntryID**
   
 > 変更された状態オブジェクトのエントリ識別子へのポインター。
     
- **cvalues**
+ **cValues**
   
-> **lppropvals**メンバーによって参照されている、配列内の[spropvalue](spropvalue.md)構造体の数。 
+> [lpPropVals](spropvalue.md)メンバーが指す配列内の **SPropValue 構造体の** 数。 
     
- **lppropvals**
+ **lpPropVals**
   
-> 変更されたステータスオブジェクトのプロパティを記述する**spropvalue**構造体の配列へのポインター。 
+> 変更された状態オブジェクトの **プロパティを記述する SPropValue** 構造体の配列へのポインター。 
     
 ## <a name="remarks"></a>注釈
 
-**STATUS_OBJECT_NOTIFICATION**構造体は、[通知](notification.md)構造の**info**メンバに含まれている構造体の和集合のメンバーのいずれかです。 **STATUS_OBJECT_NOTIFICATION**構造体は、 _fnevStatusObjectModified_型のイベントに対するステータスオブジェクト通知に含まれています。 状態オブジェクト通知は MAPI の内部通知です。クライアントおよびサービスプロバイダーはそれを登録できず、サービスプロバイダーはそれを生成できません。
+このSTATUS_OBJECT_NOTIFICATIONは、NOTIFICATION 構造体の info メンバーに含まれる構造体の共用体 **のメンバー** の [1](notification.md)つです。  この **STATUS_OBJECT_NOTIFICATION** は  _、fnevStatusObjectModified_ 型のイベントの状態オブジェクト通知に含まれています。 Status オブジェクト通知は、内部 MAPI 通知です。クライアントとサービス プロバイダーは、クライアントとサービス プロバイダーに登録できません。また、サービス プロバイダーはクライアントを生成できません。
   
 通知の詳細については、次の表で説明するトピックを参照してください。
   
 |**トピック**|**説明**|
 |:-----|:-----|
 |[MAPI のイベント通知](event-notification-in-mapi.md) <br/> |通知イベントと通知イベントの一般的な概要。  <br/> |
-|[通知の処理](handling-notifications.md) <br/> |クライアントが通知を処理する方法についての説明。  <br/> |
-|[イベント通知のサポート](supporting-event-notification.md) <br/> |サービスプロバイダーが**imapisupport**メソッドを使用して通知を生成する方法についての説明。  <br/> |
+|[通知の処理](handling-notifications.md) <br/> |クライアントが通知を処理する方法について説明します。  <br/> |
+|[サポート イベント通知](supporting-event-notification.md) <br/> |サービス プロバイダーが **IMAPISupport** メソッドを使用して通知を生成する方法について説明します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

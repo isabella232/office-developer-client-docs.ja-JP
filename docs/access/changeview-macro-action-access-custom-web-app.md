@@ -1,5 +1,5 @@
 ---
-title: changeview マクロアクション (Access カスタム web アプリ)
+title: ChangeView マクロ アクション (カスタム Web アプリへのアクセス)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33425359"
 ---
-# <a name="changeview-macro-action-access-custom-web-app"></a>changeview マクロアクション (Access カスタム web アプリ)
+# <a name="changeview-macro-action-access-custom-web-app"></a>ChangeView マクロ アクション (カスタム Web アプリへのアクセス)
 
 " **ChangeView** /ビューの変更" アクションを使用して、ビュー間を移動できます。 
   
@@ -27,7 +27,7 @@ ms.locfileid: "33425359"
 |**アクションの引数**|**必須**|**説明**|
 |:-----|:-----|:-----|
 |Table  <br/> |はい  <br/> |開くテーブル名を指定します。  <br/> |
-|View  <br/> |はい  <br/> |開くビューの名前を指定します。  <br/> |
+|表示  <br/> |はい  <br/> |開くビューの名前を指定します。  <br/> |
 |ここで  <br/> |いいえ  <br/> |指定した場合は、オブジェクト レコード ソースの Where 条件式を置換します。  <br/> |
 |Order By  <br/> |いいえ  <br/> |レコードを並べ替えるフィールド (複数可) の名前を含む文字列の式です。必要に応じて ASC キーワードまたは DESC キーワードを含めることもできます。既定では、この引数は空白です。  <br/> |
    

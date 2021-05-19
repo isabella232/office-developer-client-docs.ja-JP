@@ -19,16 +19,16 @@ ms.locfileid: "33425261"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-コンテナーの[IABContainer::D eleteentries](iabcontainer-deleteentries.md)メソッドを呼び出して、1人または複数の受信者を削除します。 **deleteentries**には、削除する受信者と予約済みのフラグ値を表すエントリ識別子の配列という2つのパラメーターがあります。 受信者の削除は、コンテナーの contents テーブルに影響します。受信者を削除するだけでなく、コンテナーは、受信者を表すコンテンツテーブルの行を削除する必要があります。 行がテーブルから削除されている場合、コンテナーは登録された各クライアントに対してテーブル通知を発行する必要があります。 
+コンテナーの [IABContainer::D eleteEntries](iabcontainer-deleteentries.md) メソッドが呼び出され、1 つ以上の受信者が削除されます。 **DeleteEntries には** 、削除する受信者を表すエントリ識別子の配列と予約済みのフラグ値の 2 つのパラメーターがあります。 受信者を削除すると、コンテナーのコンテンツ テーブルに影響します。コンテナーは、受信者の削除に加えて、受信者を表す目次行を削除する必要があります。 行がテーブルから削除されると、コンテナーは登録されている各クライアントにテーブル通知を発行する必要があります。 
   
-### <a name="to-implement-iabcontainerdeleteentries"></a>IABContainer を実装するには::D eleteentries
+### <a name="to-implement-iabcontainerdeleteentries"></a>IABContainer::D eleteEntries を実装するには
   
-1. エントリ id で表される各受信者をコンテナーから削除します。
+1. エントリ識別子によって表される各受信者をコンテナーから削除します。
     
-2. コンテナーの contents テーブルが開いている場合は、次のようになります。
+2. コンテナーのコンテンツ テーブルが開いている場合:
     
-   - **ultableevent**メンバーを TABLE_ROW_DELETED に設定して、削除された各目次の表の行について、登録済みのクライアントに_fnevTableModified_通知を送信します。 プロバイダーが通知ユーティリティを使用している場合は、次のような通知を送信するように、 [imapisupport:: Notify](imapisupport-notify.md)を呼び出します。 
+   - 削除されたコンテンツテーブル行ごとに **、ulTableEvent** メンバーが登録TABLE_ROW_DELETEDに設定された _fnevTableModified_ 通知を送信します。 プロバイダーが通知ユーティリティを使用している場合は [、IMAPISupport::Notify](imapisupport-notify.md) を呼び出して、これらの通知を送信します。 
     
-   - プロバイダーがオブジェクト通知をサポートしている場合は、 _fnevObjectDeleted_通知も送信します。 
+   - プロバイダーがオブジェクト通知をサポートしている場合は  _、fnevObjectDeleted 通知も送信_ します。 
     
 

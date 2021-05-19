@@ -25,13 +25,13 @@ ms.locfileid: "33427480"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-既存の表の先頭に列を追加または移動します。 
+既存のテーブルの先頭に列を追加または移動します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 HRESULT HrAddColumnsEx(
@@ -48,27 +48,27 @@ HRESULT HrAddColumnsEx(
 
  _lptbl_
   
-> 順番影響を受ける MAPI テーブルへのポインター。 
+> [in]影響を受ける MAPI テーブルへのポインター。 
     
  _lpproptagColumnsNew_
   
-> 順番表の先頭に追加または移動するプロパティのプロパティタグの配列を含む[SPropTagArray](sproptagarray.md)構造体へのポインター。 
+> [in]テーブルの先頭に追加または移動するプロパティのプロパティ タグの配列を含む [SPropTagArray](sproptagarray.md) 構造体へのポインター。 
     
  _lpAllocateBuffer_
   
-> 順番メモリの割り当てに使用される[MAPIAllocateBuffer](mapiallocatebuffer.md)関数へのポインター。 
+> [in]メモリの割 [り当てに使用する MAPIAllocateBuffer](mapiallocatebuffer.md) 関数へのポインター。 
     
- _lpfreebuffer_
+ _lpFreeBuffer_
   
-> 順番メモリを解放するために使用される[MAPIFreeBuffer](mapifreebuffer.md)関数へのポインター。 
+> [in]メモリを解放するために使用する [MAPIFreeBuffer](mapifreebuffer.md) 関数へのポインター。 
     
  _lpfnFilterColumns_
   
-> 順番呼び出し元によって送信されたコールバック関数へのポインター。 _lpfnFilterColumns_パラメーターが NULL に設定されている場合は、コールバックは行われません。 
+> [in]呼び出し元によって提供されるコールバック関数へのポインター。 _lpfnFilterColumns パラメーター_ が NULL に設定されている場合、コールバックは実行できません。 
     
  _ptaga_
   
-> 順番プロパティを追加または先頭に移動する前に、テーブルに既に存在しているプロパティタグの配列を含む[SPropTagArray](sproptagarray.md)構造体へのポインター。 **hraddcolumnsex**は、 _lpfnFilterColumns_によって参照されるコールバック関数へのパラメーターとしてこのポインターを渡します。
+> [in]プロパティが先頭に追加または移動される前に、テーブルに既に存在するプロパティ タグの配列を含む [SPropTagArray](sproptagarray.md) 構造体へのポインター。 **HrAddColumnsEx** は、このポインターをパラメーターとして  _lpfnFilterColumns_ が指すコールバック関数に渡します。
     
 ## <a name="return-value"></a>戻り値
 
@@ -78,17 +78,17 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-_lpproptagColumnsNew_パラメーターを使用して**hraddcolumnsex**に渡されたプロパティは、次に[IMAPITable:: QueryRows](imapitable-queryrows.md)メソッドを呼び出したときに公開される最初のプロパティになります。 _lpproptagColumnsNew_パラメーターで指定されていないテーブル内のプロパティはすべて、追加されて移動されたプロパティの後に公開されます。 
+_lpproptagColumnsNew_ パラメーターを使用して **HrAddColumnsEx** に渡されるプロパティは [、IMAPITable::QueryRows](imapitable-queryrows.md)メソッドへの後続の呼び出しで公開される最初のプロパティになります。 _lpproptagColumnsNew_ パラメーターで指定されていないテーブル内のすべてのプロパティは、追加および移動されたプロパティの後で公開されます。 
   
-**QueryRows**が呼び出されたときにテーブルのプロパティが未定義の場合は、プロパティの種類 PT_NULL およびプロパティ識別子 PROP_ID_NULL を使用して返されます。 
+**QueryRows** が呼び出された場合、テーブル プロパティが未定義の場合は、プロパティの種類とプロパティPT_NULLプロパティ識別子を使用して返PROP_ID_NULL。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**hraddcolumnsex**関数を使用すると、呼び出し元は、テーブル内に既に存在している列をフィルター処理するためのコールバック関数を与えることができます。たとえば、文字列をプロパティ型 PT_UNICODE から PT_STRING8 に変換します。 **hraddcolumnsex**は、コールバック関数へのパラメーターとして既に存在する列セットへのポインターを渡します。 コールバック関数は、property タグ配列内のデータを変更できますが、新しいタグを追加することはできません。 
+**HrAddColumnsEx** 関数を使用すると、呼び出し元はコールバック関数を提供して、テーブル内に既に存在していた列をフィルター処理できます 。たとえば、文字列をプロパティ型 PT_UNICODE から PT_STRING8 に変換します。 **HrAddColumnsEx** は、パラメーターとして以前に既存の列セットへのポインターをコールバック関数に渡します。 コールバック関数は、プロパティ タグ配列のデータを変更できますが、新しいタグを追加することはできません。 
   
- **hraddcolumnsex**は、最初にコールバック関数を呼び出し、次に、指定された列を追加または移動して、最後に[IMAPITable:: SetColumns](imapitable-setcolumns.md)を呼び出します。 
+ **HrAddColumnsEx** は、最初にコールバック関数が指定されている場合にコールバック関数を呼び出し、指定した列を追加または移動し、最後に [IMAPITable::SetColumns を呼び出します](imapitable-setcolumns.md)。 
   
-_lpAllocateBuffer_および_lpfreebuffer_入力パラメーターは、それぞれ[MAPIAllocateBuffer](mapiallocatebuffer.md)関数と[MAPIFreeBuffer](mapifreebuffer.md)関数をポイントします。 **hraddcolumnsex**に渡されるポインターの正確な値は、呼び出し元がクライアントアプリケーションであるかサービスプロバイダーであるかによって異なります。 クライアントは、指定された名前を持つ MAPI 関数へのポインターを渡します。 サービスプロバイダーは、初期化呼び出しで受け取ったポインターまたは[imapisupport:: getmemallocroutines](imapisupport-getmemallocroutines.md)メソッドを呼び出して取得したポインターを渡します。 
+_lpAllocateBuffer_ および _lpFreeBuffer_ 入力パラメーターは [、MAPIAllocateBuffer](mapiallocatebuffer.md)関数と [MAPIFreeBuffer](mapifreebuffer.md)関数をそれぞれ指します。 **HrAddColumnsEx** に渡されるポインターの正確な値は、呼び出し元がクライアント アプリケーションかサービス プロバイダーかによって異なります。 クライアントは、指定された名前を持つ MAPI 関数へのポインターを渡します。 サービス プロバイダーは、初期化呼び出しで受信したポインターを渡したり [、IMAPISupport::GetMemAllocRoutines](imapisupport-getmemallocroutines.md) メソッドを呼び出して取得します。 
   
 ## <a name="see-also"></a>関連項目
 

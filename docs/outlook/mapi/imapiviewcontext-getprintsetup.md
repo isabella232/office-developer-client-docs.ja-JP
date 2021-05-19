@@ -1,5 +1,5 @@
 ---
-title: imapiviewcontextgetprintsetup
+title: IMAPIViewContextGetPrintSetup
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -38,15 +38,15 @@ LPFORMPRINTSETUP FAR * lppFormPrintSetup
 
  _ulFlags_
   
-> 順番返される文字列の型を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 返される文字列は、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
+> 返される文字列は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列は ANSI 形式になります。
     
- _lppformprintsetup_
+ _lppFormPrintSetup_
   
-> 読み上げ印刷情報を保持する構造体へのポインターへのポインター。
+> [out]印刷情報を保持する構造体へのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -56,17 +56,17 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-Form オブジェクトは、現在のメッセージを印刷する前に、プリンターの設定に関する情報を取得するために**imapiviewcontext:: getprintsetup**メソッドを呼び出します。 
+フォーム オブジェクトは **、IMAPIViewContext::GetPrintSetup** メソッドを呼び出して、現在のメッセージを印刷する前にプリンターのセットアップに関する情報を取得します。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-Win32 関数**GlobalAlloc**を使用して、 [formprintsetup](formprintsetup.md)構造の**hdevmode**および**hDevName**メンバーを割り当てます。
+Win32 関数 GlobalAlloc を使用して [、FORMPRINTSETUP](formprintsetup.md)構造体の **hDevMode** メンバーと **hDevName** メンバー **を割り当てる**。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-_lppformprintsetup_パラメーターで指定された**formprintsetup**構造の**hdevmode**および**hDevName**メンバーが Unicode 文字列であると想定される場合は、 _ulflags_を MAPI_UNICODE に設定します。 それ以外の場合、 **getprintsetup**は ANSI 形式の文字列を返します。 
+_lppFormPrintSetup_ パラメーターが指す **FORMPRINTSETUP** 構造体の **hDevMode** メンバーと **hDevName** メンバーが Unicode 文字列である場合は _、ulFlags_ を MAPI_UNICODE に設定します。 それ以外の場合 **、GetPrintSetup** は ANSI 形式でこれらの文字列を返します。 
   
-Win32 関数**GlobalFree**を呼び出すことにより、 **formprintsetup**構造の**hdevmode**および**hDevName**メンバーを解放します。 [MAPIFreeBuffer](mapifreebuffer.md)を呼び出すことで、 **formprintsetup**構造全体を解放します。 
+Win32 関数 GlobalFree を呼び出して **、FORMPRINTSETUP** 構造体の **hDevMode** メンバーと **hDevName** メンバーを **解放します**。 MAPIFreeBuffer **を呼び出して FORMPRINTSETUP** 構造 [全体を解放します](mapifreebuffer.md)。 
   
 ## <a name="see-also"></a>関連項目
 

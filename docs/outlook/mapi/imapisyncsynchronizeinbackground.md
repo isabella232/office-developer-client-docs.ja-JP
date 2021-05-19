@@ -1,5 +1,5 @@
 ---
-title: imapisync SynchronizeInBackground
+title: IMAPISyncSyncInBackground
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33426857"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
- 同期を開始します。 このメソッドは、microsoft outlook 2010 および microsoft outlook 2013 によって呼び出され、メッセージストアプロバイダーによって実装されます。 
+ 同期を開始します。 このメソッドは、メッセージ ストア プロバイダー Microsoft Outlook 2010、Microsoft Outlook 2013によって呼び出され、実装されます。 
   
 ```cpp
 HRESULT SynchronizeInBackground (
@@ -37,7 +37,7 @@ HRESULT SynchronizeInBackground (
 
  _psibpb_
   
-> 同期される対象をプロバイダーに通知し、同期中に使用できるインターフェイスへのアクセスを提供します。 [MAPISIB](mapisib.md)構造です。 
+> 同期される情報をプロバイダーに通知し、同期中に使用できるインターフェイスにアクセスできます。 [MAPISIB 構造](mapisib.md)です。 
     
 ## <a name="return-value"></a>戻り値
 

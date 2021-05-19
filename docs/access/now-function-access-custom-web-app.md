@@ -1,5 +1,5 @@
 ---
-title: Now 関数 (Access カスタム web アプリ)
+title: Now 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33425716"
 ---
-# <a name="now-function-access-custom-web-app"></a>Now 関数 (Access カスタム web アプリ)
+# <a name="now-function-access-custom-web-app"></a>Now 関数 (Access カスタム Web アプリ)
 
 アプリケーションで定義されたタイムゾーンに従って、現在の日付/時刻型の値を返します。
   

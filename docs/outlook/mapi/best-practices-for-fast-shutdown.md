@@ -1,5 +1,5 @@
 ---
-title: 高速シャットダウンのベストプラクティス
+title: 高速シャットダウンのベスト プラクティス
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,25 +15,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426969"
 ---
-# <a name="best-practices-for-fast-shutdown"></a>高速シャットダウンのベストプラクティス
+# <a name="best-practices-for-fast-shutdown"></a>高速シャットダウンのベスト プラクティス
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックでは、管理者、mapi クライアント、および mapi プロバイダーが Windows レジストリ設定と高速シャットダウンインターフェイスを使用してクライアントのシャットダウン時のデータ損失を最小限に抑えるためのベストプラクティスについて説明します。
+このトピックでは、管理者、MAPI クライアント、MAPI プロバイダーが Windows レジストリ設定と高速シャットダウン インターフェイスを使用して、クライアントのシャットダウン時のデータ損失を最小限に抑えるためのベスト プラクティスを推奨します。
   
-- mapi クライアントが高速シャットダウンを正常に実行するために、プロバイダープロセスがデータ損失を発生させないようにするには、まず、mapi クライアントは[IMAPIClientShutdown:: queryfastshutdown](imapiclientshutdown-queryfastshutdown.md)メソッドを呼び出す必要があります。 その後、クライアントは、MAPI サブシステムのサポートに基づいて、 [IMAPIClientShutdown:: notifyprocessshutdown](imapiclientshutdown-notifyprocessshutdown.md)および[IMAPIClientShutdown::D ofastshutdown](imapiclientshutdown-dofastshutdown.md)メソッドを実行する必要があります。の**戻り値によって示されています。IMAPIClientShutdown:: queryfastshutdown**。 MAPI クライアントとして、Microsoft Outlook は**IMAPIClientShutdown:: notifyprocessshutdown**または**IMAPIClientShutdown:** : **IMAPIClientShutdown:: queryfastshutdown**がエラーを返す場合は、次のように呼び出しを行いません。 管理者が Windows レジストリで高速シャットダウンを無効にした場合、MAPI サブシステムは**IMAPIClientShutdown:: queryfastshutdown**に MAPI_E_NO_SUPPORT を返します。 この場合、mapi サブシステムは、すぐにクライアントプロセスの終了の mapi プロバイダーに通知しません。 そのため、mapi クライアントがこのエラーを無視して、高速シャットダウンが行われ、すべての外部参照が切断されると、読み込まれたすべての mapi プロバイダーでデータが失われます。 
+- プロバイダー プロセスでデータ損失が発生しないので、MAPI クライアントが高速シャットダウンを正常に実行するには、MAPI クライアントが最初に [IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md) メソッドを呼び出す必要があります。 クライアントは [、IMAPIClientShutdown::NotifyProcessShutdown](imapiclientshutdown-notifyprocessshutdown.md) および [IMAPIClientShutdown::D oFastShutdown](imapiclientshutdown-dofastshutdown.md) メソッドを **、IMAPIClientShutdown::QueryFastShutdown** の戻り値で示される MAPI サブシステムの高速シャットダウンのサポートに基づいて続行する必要があります。 MAPI クライアントとして、Microsoft Outlook は **IMAPIClientShutdown::NotifyProcessShutdown** または **IMAPIClientShutdown::D oFastShutdown** を呼び出す必要はありません **。IMAPIClientShutdown::QueryFastShutdown** はエラーを返します。 管理者が Windows レジストリで高速シャットダウンを無効にした場合、MAPI サブシステムは **IMAPIClientShutdown::QueryFastShutdown** に MAPI_E_NO_SUPPORT を返します。 この場合、MAPI サブシステムは、MAPI プロバイダーに即時のクライアント プロセスの終了を通知しない。 したがって、MAPI クライアントがこのエラー戻りコードを無視し、高速シャットダウンを実行し、すべての外部参照を切断すると、読み込まれたすべての MAPI プロバイダーにデータ損失が発生します。 
     
-- MAPI プロバイダーは、クライアントが終了する前に、クライアントが外部参照を切断したことによるデータ損失を回避するために必要な手順を実行するために、 [imapiprovidershutdown: IUnknown](imapiprovidershutdowniunknown.md)インターフェイスを実装する必要があります。 プロバイダーは、プライマリデータストアにデータを保存するために必須ではないすべてのものを延期する必要があります。 たとえば、トランスポートプロバイダーは、新しいメールをチェックする不必要なバックグラウンド操作を延期する必要があります。アドレス帳プロバイダーは、サーバーからの最新の変更のダウンロードを延期する必要があります。また、ストアプロバイダーは、次のようなメンテナンスタスクを延期する必要があります。圧縮またはインデックス作成。 
+- MAPI プロバイダーは [、IMAPIProviderShutdown : IUnknown](imapiprovidershutdowniunknown.md) インターフェイスを実装して、クライアントがクライアントを終了する前に外部参照を切断した場合のデータ損失を回避するために、必要な手順を実行する必要があります。 プロバイダーは、データをプライマリ データ ストアに保存する必要がない他のすべてを延期する必要があります。 たとえば、トランスポート プロバイダーは、新しいメールをチェックする不要なバックグラウンド操作を延期し、アドレス帳プロバイダーはサーバーからの最近の変更のダウンロードを延期し、ストア プロバイダーは圧縮やインデックス作成などのメンテナンス タスクを延期する必要があります。 
     
-- MAPI クライアントを閉じるとすぐに終了するようにする場合は、プロバイダーが使用しない限り、高速シャットダウンを可能にする既定のレジストリ設定を使用する必要があります。
+- MAPI クライアントを閉じるとすぐに終了するユーザーは、プロバイダーがオプトアウトしない限り、高速シャットダウンを有効にする既定のレジストリ設定を使用する必要があります。
     
-- mapi クライアントが IMAPIClientShutdown を呼び出すと、 **:D ofastshutdown**は、 [MAPIUninitialize](mapiuninitialize.md)関数を含む mapi に対して追加の呼び出しを行うことはできません。 クライアントは、クライアントプロセスの残りの期間に MAPI を使用しないようにする必要があります。 
+- MAPI クライアントが **IMAPIClientShutdown::D oFastShutdown** を呼び出したら [、MAPIUninitialize](mapiuninitialize.md) 関数を含む MAPI への追加の呼び出しを行う必要はありません。 クライアントは、クライアント プロセスの残りの期間、MAPI を使用しなく必要があります。 
     
-- MAPI クライアントは、プロバイダーの**imapiprovidershutdown**インターフェイスを直接呼び出すことはできません。 MAPI クライアントは常に[IMAPIClientShutdown: IUnknown](imapiclientshutdowniunknown.md)インターフェイスを使用する必要があります。 
+- MAPI クライアントは、プロバイダーの **IMAPIProviderShutdown インターフェイスを直接呼び出す必要** があります。 MAPI クライアントは常に [IMAPIClientShutdown : IUnknown インターフェイスを使用する必要](imapiclientshutdowniunknown.md) があります。 
     
-- 読み込み時に高速シャットダウンが使用されないようにする必要がある場合は、MAPI プロバイダーが**imapiprovidershutdown**インターフェイスを実装し、 **imapiprovidershutdown:: queryfastshutdown**メソッドの MAPI_E_NO_SUPPORT を返す必要があります。 ただし、Outlook などの MAPI クライアントの場合、クライアントが高速シャットダウンを中止し、シャットダウンにかかる時間が長くなります。 
+- MAPI プロバイダーが読み込み中に高速シャットダウンが使用されない必要がある場合は **、IMAPIProviderShutdown インターフェイスを実装し、IMAPIProviderShutdown::QueryFastShutdown** メソッドの MAPI_E_NO_SUPPORT を返す必要があります。  ただし、MAPI クライアント (Outlookなど) の場合、クライアントは高速シャットダウンを放棄し、シャットダウンに時間がかかります。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -43,5 +43,5 @@ ms.locfileid: "33426969"
   
 [高速シャットダウンの概要](fast-shutdown-overview.md)
   
-[高速シャットダウンのユーザーオプション](fast-shutdown-user-options.md)
+[Fast Shutdown User Options](fast-shutdown-user-options.md)
 

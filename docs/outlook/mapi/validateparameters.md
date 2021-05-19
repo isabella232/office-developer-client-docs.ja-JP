@@ -25,7 +25,7 @@ ms.locfileid: "33425204"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-内部関数を呼び出して、クライアントアプリケーションがサービスプロバイダーに渡されたパラメーターを確認します。 
+内部関数を呼び出して、クライアント アプリケーションがサービス プロバイダーに渡したパラメーターを確認します。 
   
 |||
 |:-----|:-----|
@@ -44,11 +44,11 @@ HRESULT ValidateParameters(
 
  _eMethod_
   
-> 順番検証するメソッドを列挙で指定します。 
+> [in]列挙で検証するメソッドを指定します。 
     
  _First_
   
-> 順番スタック上の最初の引数へのポインター。
+> [in]スタックの最初の引数へのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -58,10 +58,10 @@ S_OK
     
 MAPI_E_CALL_FAILED 
   
-> 1つ以上のパラメーターが無効です。
+> 1 つ以上のパラメーターが無効です。
     
 ## <a name="remarks"></a>注釈
 
-**validateparameters**マクロは、 [validateparameters](validateparms.md)マクロによって置き換えられました。 **validateparameters**は RISC プラットフォームでは正しく動作せず、これでコンパイルができなくなりました。 これは依然として、Intel プラットフォームではコンパイルされ、正しく動作しますが、すべてのプラットフォームで**validateparms**が推奨されています。 
+**ValidateParameters マクロ** は [ValidateParms マクロに取ってかえ](validateparms.md)されています。 **ValidateParameters** は RISC プラットフォームで正しく動作し、コンパイルが行えなくなります。 Intel プラットフォームではコンパイルおよび正常に動作しますが **、ValidateParms は** すべてのプラットフォームで推奨されます。 
   
 

@@ -1,5 +1,5 @@
 ---
-title: Abs 関数 (Access カスタム web アプリ)
+title: Abs 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426318"
 ---
-# <a name="abs-function-access-custom-web-app"></a>Abs 関数 (Access カスタム web アプリ)
+# <a name="abs-function-access-custom-web-app"></a>Abs 関数 (Access カスタム Web アプリ)
 
 指定した数値式の絶対値 (正の値) を返します。
   
@@ -22,7 +22,7 @@ ms.locfileid: "33426318"
   
 ## <a name="syntax"></a>構文
 
- **Abs**(*NumericExpression*) 
+ **Abs** (*NumericExpression*) 
   
 **Abs** 関数には、以下の引数があります。 
   

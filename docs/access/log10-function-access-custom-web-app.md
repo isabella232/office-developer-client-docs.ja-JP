@@ -1,5 +1,5 @@
 ---
-title: Log10 関数 (Access カスタム web アプリ)
+title: Log10 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424869"
 ---
-# <a name="log10-function-access-custom-web-app"></a>Log10 関数 (Access カスタム web アプリ)
+# <a name="log10-function-access-custom-web-app"></a>Log10 関数 (Access カスタム Web アプリ)
 
 数値の底が 10 の対数を返します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "33424869"
   
 ## <a name="syntax"></a>構文
 
- **Log10**(*NumericExpression*) 
+ **Log10** (*NumericExpression*) 
   
 **Log10** 関数の引数は次のとおりです。 
   

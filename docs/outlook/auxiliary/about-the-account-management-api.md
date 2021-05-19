@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: eb6b921d-ecf8-3ce5-87ba-ac1632416b05
-description: アカウント管理 API は、アカウント情報へのアクセスを提供し、アカウント変更の通知をサポートします。 この API のクライアントとして、メールプロバイダーは次の処理を行います。
+description: アカウント管理 API は、アカウント情報へのアクセスを提供し、アカウント変更の通知をサポートします。 この API のクライアントとして、メール プロバイダーは次の操作を行います。
 ms.openlocfilehash: 76520b7cc7f28ede28257729e4e4fbe2d5096290
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,23 +16,23 @@ ms.locfileid: "33426250"
 ---
 # <a name="about-the-account-management-api"></a>アカウント管理 API について
 
-アカウント管理 API は、アカウント情報へのアクセスを提供し、アカウント変更の通知をサポートします。 この API のクライアントとして、メールプロバイダーは次の処理を行います。
+アカウント管理 API は、アカウント情報へのアクセスを提供し、アカウント変更の通知をサポートします。 この API のクライアントとして、メール プロバイダーは次の操作を行います。
   
-1. [IOlkAccountManager](iolkaccountmanager.md)を使用してアカウントへのアクセスを管理し、アカウントの変更に関する通知を設定します。 
+1. [IOlkAccountManager を使用](iolkaccountmanager.md)してアカウントへのアクセスを管理し、アカウントの変更に関する通知を設定します。 
     
-2. [IOlkAccountNotify](iolkaccountnotify.md)を実装して使用し、アカウントの変更に関する通知を送信します。 
+2. [IOlkAccountNotify](iolkaccountnotify.md)を実装して使用して、アカウントの変更に関する通知を送信します。 
     
-3. [IOlkEnum](iolkenum.md)を使用して、アカウントを列挙します。 
+3. [IOlkEnum を使用して](iolkenum.md)アカウントを列挙します。 
     
-4. [IOlkAccount](iolkaccount.md)を使用して、アカウントに関するプロパティやその他の情報を取得および設定します。 クライアントは、 [IOlkAccountManager:: findaccount](iolkaccountmanager-findaccount.md)または[IOlkEnum:: GetNext](iolkenum-getnext.md)を使用して、個々のアカウントにアクセスするこのインターフェイスを取得します。 
+4. [IOlkAccount を使用して](iolkaccount.md)、アカウントに関するプロパティや他の情報を取得および設定します。 クライアントは [、IOlkAccountManager::FindAccount](iolkaccountmanager-findaccount.md) または [IOlkEnum::GetNext](iolkenum-getnext.md) を使用してこのインターフェイスを取得して、個々のアカウントにアクセスします。 
     
-5. [IOlkAccountHelper](iolkaccounthelper.md)を実装して使用し、アカウントマネージャーヘルパー機能を提供します。これには、アカウントのプロファイル名と現在の MAPI セッションを含めることが含まれます。 
+5. [IOlkAccountHelper](iolkaccounthelper.md)を実装して使用して、アカウントのプロファイル名と現在の MAPI セッションを取得するなどのアカウント マネージャー ヘルパー機能を提供します。 
     
-6. [IOlkErrorUnknown](iolkerrorunknown.md)を実装して使用し、 **IOlkAccountManager**、 **IOlkAccountNotify**、および**IOlkAccount**のエラーに関するその他の情報を提供します。 
+6. [IOlkErrorUnknown](iolkerrorunknown.md)を実装して使用して **、IOlkAccountManager、IOlkAccountNotify、** および **IOlkAccount** のエラーに関する詳細な情報を **提供します**。 
 
 ##  <a name="account-management-api-components"></a>アカウント管理 API コンポーネント
 
-アカウント管理 API には、次の定義、データ型、インターフェイス、名前付きプロパティ、およびプロパティが用意されています。
+アカウント管理 API には、次の定義、データ型、インターフェイス、名前付きプロパティ、およびプロパティが含まれます。
   
 ### <a name="definitions"></a>定義
   

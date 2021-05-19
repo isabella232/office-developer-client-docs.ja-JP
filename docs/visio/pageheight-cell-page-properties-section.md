@@ -36,6 +36,6 @@ ms.locfileid: "33427081"
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionObject** <br/> |
 |行インデックス:  <br/> |**visRowPage** <br/> |
-|セル インデックス:  <br/> |**vispageheight** <br/> |
+|セル インデックス:  <br/> |**visPageHeight** <br/> |
    
 

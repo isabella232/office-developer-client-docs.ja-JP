@@ -1,5 +1,5 @@
 ---
-title: 状態テーブルと状態オブジェクト
+title: Status Table オブジェクトと Status オブジェクト
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,45 +15,45 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33425177"
 ---
-# <a name="status-table-and-status-objects"></a>状態テーブルと状態オブジェクト
+# <a name="status-table-and-status-objects"></a>Status Table オブジェクトと Status オブジェクト
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-mapi は、mapi サブシステム、mapi スプーラー、アドレス帳、または特定のサービスプロバイダーの状態に関する情報を表として提供します。 このテーブルにアクセスするには、 [imapisession:: getstatustable](imapisession-getstatustable.md)を呼び出します。
+MAPI は、MAPI サブシステム、MAPI スプーラー、アドレス帳、または特定のサービス プロバイダーの状態に関する情報を表に提供します。 このテーブルにアクセスするには [、IMAPISession::GetStatusTable を呼び出します](imapisession-getstatustable.md)。
   
-状態テーブルの各行は、MAPI またはサービスプロバイダーによって実装された状態オブジェクトを表します。 status オブジェクトを使用して、プロバイダーの構成プロパティシートを表示したり、プロバイダーパスワードを変更したり、メッセージをアップロードまたはダウンロードしたり、特定のトランスポートプロバイダーと通信したりすることができます。 
+状態テーブルの各行は、MAPI またはサービス プロバイダーによって実装された状態オブジェクトを表します。 status オブジェクトを使用して、プロバイダーの構成プロパティ シートを表示したり、プロバイダー のパスワードを変更したり、メッセージをアップロードまたはダウンロードしたり、特定のトランスポート プロバイダーと通信することができます。 
   
-status オブジェクトには、次の2つの方法でアクセスできます。
+状態オブジェクトにアクセスするには、次の 2 つの方法があります。
   
 - 状態テーブルを使用する
     
-- ログオンオブジェクトの**openstatusentry**メソッドを使用する 
+- ログオン オブジェクトの **OpenStatusEntry メソッドを使用** する 
     
-ログオンオブジェクトはクライアントで使用できないため、状態のオブジェクトにアクセスするには、状態テーブルを使用する必要があります。 状態テーブルの方法は間接的で、status オブジェクトが開かれる前にいくつかの呼び出しを必要とし、 **imapistatus**実装へのポインターが返されます。 
+ログオン オブジェクトはクライアントでは使用できないので、状態オブジェクトにアクセスするには、状態テーブルを使用する必要があります。 状態テーブルのアプローチは間接的であり、status オブジェクトを開く前にいくつかの呼び出しが必要であり **、IMAPIStatus** 実装へのポインターが返されます。 
   
- **状態テーブルを使用して status オブジェクトを開くには**
+ **状態テーブルを使用して状態オブジェクトを開く方法**
   
-1. Call **imapistatus:: getstatustable**が[IMAPITable](imapitableiunknown.md)ポインターを取得することができます。 
+1. **IMAPIStatus::GetStatusTable** を呼び出して [IMAPITable ポインターを取得](imapitableiunknown.md)します。 
     
-2. 状態テーブルの[IMAPITable:: SetColumns](imapitable-setcolumns.md)メソッドを呼び出して、列セットを**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))、 **PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md))、および**PR_DISPLAY_NAME** () に制限します ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
+2. 状態テーブルの [IMAPITable::SetColumns](imapitable-setcolumns.md)メソッドを呼び出して、列セットを **PR_ENTRYID** [(PidTagEntryId)、PR_RESOURCE_TYPE](pidtagentryid-canonical-property.md)[(PidTagResourceType)、](pidtagresourcetype-canonical-property.md)および **PR_DISPLAY_NAME** [(PidTagDisplayName)](pidtagdisplayname-canonical-property.md)に制限します。 
     
-3. テーブルビューを特定のステータスオブジェクトに制限します。 MAPI 実装の場合、クライアントは**PR_RESOURCE_TYPE**を使用してプロパティ制限を定義できます。 サービスプロバイダーの実装では、クライアントは**PR_PROVIDER_DISPLAY** ([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md))、プロバイダーの名前、または**PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md)) のプロバイダー DLL の名前を制限できます。拡張子.
+3. テーブル ビューを特定の状態オブジェクトに制限します。 MAPI の実装では、クライアントはプロパティの制限を使用して定義 **PR_RESOURCE_TYPE。** サービス プロバイダーの実装では、クライアントは **PR_PROVIDER_DISPLAY** ([PidTagProviderDisplay)](pidtagproviderdisplay-canonical-property.md)、プロバイダーの名前、または **PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName)](pidtagproviderdllname-canonical-property.md)、プロバイダー DLL ファイルの名前を制限できます。
     
-4. [IMAPITable:: Restrict](imapitable-restrict.md)を呼び出して制限を設定します。 
+4. [IMAPITable::Restrict を呼び出して](imapitable-restrict.md)制限を設定します。 
     
-5. プロバイダーの状態を表す行を取得するには、 [hrqueryallrows](hrqueryallrows.md)を呼び出し、 [spropertyrestriction](spropertyrestriction.md)構造を渡します。 
+5. [HrQueryAllRows](hrqueryallrows.md)を呼び出し[、SPropertyRestriction](spropertyrestriction.md)構造体を渡して、プロバイダーの状態を表す行を取得します。 
     
-6. open [imapisession:: openentry](imapisession-openentry.md)。状態テーブルの行からエントリ識別子を指定して、status オブジェクトを開いて**imapisession**ポインターを取得します。 
+6. STATUS オブジェクトを開き **、IMAPIStatus** ポインターを取得するには、状態テーブル行からエントリ識別子を指定して [、IMAPISession::OpenEntry](imapisession-openentry.md)を呼び出します。 
     
-プロパティシートを表示するには、対象プロバイダーの status オブジェクトの[imapistatus:: settingsdialog](imapistatus-settingsdialog.md)メソッドを呼び出します。 **settingsdialog**表示用のプロパティシートを表示します。場合によっては、プロバイダーの構成プロパティを変更します。 
+プロパティ シートを表示するには、ターゲット プロバイダーの [status オブジェクトの IMAPIStatus::SettingsDialog](imapistatus-settingsdialog.md) メソッドを呼び出します。 **SettingsDialog は** 、プロバイダーの構成プロパティを変更して表示するプロパティ シートを表示し、場合によっては表示します。 
   
-トランスポートプロバイダーと通信するには、状態オブジェクトの[imapistatus:: validatestate](imapistatus-validatestate.md)メソッドを呼び出します。 **validatestate**を使用すると、トランスポートプロバイダーを再構成し、プロバイダーがユーザーインターフェイスを表示できないようにしたり、渡されたフラグに応じてリモートサーバーからのメッセージヘッダーのダウンロードを伴うセッションを制御したりすることができます。 たとえば、リモートヘッダーのダウンロードを取り消すには、ABORT_XP_HEADER_OPERATION フラグを**validatestate**に渡します。 リモートサーバーとの接続または切断を行うには、FORCE_XP_CONNECT または FORCE_XP_DISCONNECT を渡します。 プロバイダーを再構成するには、CONFIG_CHANGED を渡します。 
+トランスポート プロバイダーと通信するには、その状態オブジェクトの [IMAPIStatus::ValidateState メソッドを呼び出](imapistatus-validatestate.md) します。 **ValidateState** では、トランスポート プロバイダーを再構成し、プロバイダーがユーザー インターフェイスを表示し、渡すフラグに応じて、リモート サーバーからメッセージ ヘッダーをダウンロードするセッションを制御できます。 たとえば、リモート ヘッダーのダウンロードを取り消す場合は、ABORT_XP_HEADER_OPERATION **ValidateState に渡します**。 リモート サーバーに接続または切断するには、リモート サーバー FORCE_XP_CONNECTまたはFORCE_XP_DISCONNECT。 プロバイダーを再構成するには、次のCONFIG_CHANGED。 
   
-オンデマンドでメッセージの送信または受信を実装するクライアントは、トランスポートプロバイダーまたは MAPI スプーラーの[imapistatus:: flushqueues](imapistatus-flushqueues.md)メソッドのいずれかを呼び出します。 FLUSH_UPLOAD、FLUSH_DOWNLOAD、および FLUSH_FORCE の3つのフラグをメソッドに渡すことができます。 FLUSH_UPLOAD は、プロバイダーまたは mapi スプーラーに対して、出力キューで待機しているメッセージを送信するように指示します。 FLUSH_DOWNLOAD は、受信メッセージを受信するようにプロバイダーまたは mapi スプーラーに指示します。 FLUSH_FORCE は他のフラグのいずれかを使用して設定することができます。この場合、状態オブジェクトは、タイミングに関係なく、フラッシュを実行します。 
+オンデマンドでメッセージの送受信を実装するクライアントは、トランスポート プロバイダーまたは MAPI スプーラーの [IMAPIStatus::FlushQueues](imapistatus-flushqueues.md) メソッドを呼び出します。 メソッドに 3 つのフラグを渡FLUSH_UPLOAD、FLUSH_DOWNLOAD、FLUSH_FORCE。 FLUSH_UPLOADは、プロバイダーまたは MAPI スプーラーに、FLUSH_DOWNLOAD がプロバイダーまたは MAPI スプーラーに受信メッセージを受信するように指示している間に、出力キューで待機しているメッセージを送信するように指示します。 FLUSH_FORCEフラグを設定すると、タイミングに関係なく status オブジェクトがフラッシュを実行します。 
   
-どの mapi サブシステム、mapi スプーラー、またはアドレス帳状態オブジェクトでも、 **settingsdialog**または[ChangePassword](imapistatus-changepassword.md)を呼び出すことはできません。 サブシステムとアドレス帳の状態オブジェクトの両方が、 **validatestate**のみをサポートしています。MAPI スプーラー status オブジェクトは、 **validatestate**に加えて**flushqueues**をサポートします。
+MAPI サブシステム、MAPI スプーラー、またはアドレス帳の状態オブジェクトで **SettingsDialog** または [ChangePassword](imapistatus-changepassword.md) を呼び出せない。 サブシステムとアドレス帳の状態オブジェクトはどちらも **ValidateState のみをサポートします**。MAPI スプーラー状態オブジェクトは **ValidateState に加えて FlushQueues** **をサポートします**。
   
 ## <a name="see-also"></a>関連項目
 

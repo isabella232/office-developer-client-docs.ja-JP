@@ -25,7 +25,7 @@ ms.locfileid: "33426710"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-form オブジェクトの前のエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。 
+フォーム オブジェクトの前のエラーに関する情報を含む [MAPIERROR](mapierror.md) 構造体を返します。 
   
 ```cpp
 HRESULT GetLastError(
@@ -39,19 +39,19 @@ HRESULT GetLastError(
 
  _hResult_
   
-> 順番前のメソッド呼び出しで生成されたエラー値を含む HRESULT データ型。
+> [in]前のメソッド呼び出しで生成されたエラー値を含む HRESULT データ型。
     
  _ulFlags_
   
-> 順番返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> _lppMAPIError_パラメーターで返される[MAPIERROR](mapierror.md)構造体の文字列は、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。 
+> _lppMAPIError_ パラメーターで返される [MAPIERROR](mapierror.md)構造体の文字列は、Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列は ANSI 形式になります。 
     
  _lppMAPIError_
   
-> 読み上げエラーのバージョン、コンポーネント、およびコンテキスト情報を含む**MAPIERROR**構造体へのポインターへのポインター。 フォームが**MAPIERROR**構造に適切な情報を提供できない場合は、 _lppMAPIError_パラメーターを NULL に設定できます。 
+> [out]エラーのバージョン、コンポーネント、コンテキスト情報を含む **MAPIERROR** 構造体へのポインターを指すポインター。 フォームが MAPIERROR 構造に適切な情報を提供できない場合は  _、lppMAPIError_ パラメーターを **NULL に設定** できます。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -61,19 +61,19 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> MAPI_UNICODE フラグが設定されていて、アドレス帳プロバイダーが unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、アドレス帳プロバイダーが unicode のみをサポートしています。
+> アドレス帳MAPI_UNICODEフラグが設定され、アドレス帳プロバイダーが Unicode をサポートしていないか、MAPI_UNICODE が設定されていないと、アドレス帳プロバイダーは Unicode のみをサポートします。
     
 ## <a name="remarks"></a>注釈
 
-Form オブジェクトは、失敗した前のメソッド呼び出しに関する情報を提供する**IPersistMessage:: GetLastError**メソッドを実装します。 フォームビューアーでは、 [MAPIERROR](mapierror.md)構造体のデータをダイアログボックスに含めることによって、エラーに関する詳細情報をユーザーに提供できます。 
+フォーム オブジェクトは **、IPersistMessage::GetLastError** メソッドを実装して、失敗した以前のメソッド呼び出しに関する情報を提供します。 フォーム ビューアーは、ダイアログ ボックスに [MAPIERROR](mapierror.md) 構造のデータを含め、エラーに関する詳細情報をユーザーに提供できます。 
   
-**GetLastError**を呼び出しても、フォームの状態には影響しません。 **GetLastError**が戻ると、フォームは呼び出しが行われる前の状態のままになります。 
+**GetLastError の呼び出しは**、フォームの状態には影響を与えかねない。 **GetLastError が** 返された場合、フォームは呼び出しが行われた前の状態のままです。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-フォームが S_OK を返す場合にのみ、 _lppMAPIError_パラメーターによってポイントされている場合は、 **MAPIERROR**構造体を使用できます。 **** 場合によっては、フォームで、エラーについてのレポートに最後のエラーがあったかどうかを判断できないこともあります。 このような状況では、フォームは代わりに_lppMAPIError_で NULL へのポインターを返します。 
+フォームが 1 つを提供する場合は **、GetLastError** が関数を返す場合にのみ _、lppMAPIError_ パラメーターによって指される **MAPIERROR** 構造をS_OK。 フォームで、最後のエラーが何だったのかを判断できない場合や、エラーについて報告する必要がなにもない場合があります。 この状況では、フォームは代わりに  _lppMAPIError_ で NULL へのポインターを返します。 
   
-**GetLastError**メソッドの詳細については、「 [MAPI 拡張エラー](mapi-extended-errors.md)」を参照してください。
+**GetLastError メソッドの詳細については、「MAPI** 拡張 [エラー」を参照してください](mapi-extended-errors.md)。
   
 ## <a name="see-also"></a>関連項目
 

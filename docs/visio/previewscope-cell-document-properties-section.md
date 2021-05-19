@@ -22,19 +22,19 @@ ms.locfileid: "33426507"
   
 |**値**|**プレビューの範囲**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| .0  <br/> | 最初のページ  <br/> |**visDocPreviewScope1stPage** <br/> |
-| 1   <br/> | なし  <br/> |**visDocPreviewScopeNone** <br/> |
-| 2   <br/> | すべてのページ  <br/> |**visDocPreviewScopeAllPages** <br/> |
+| 0  <br/> | 最初のページ  <br/> |**visDocPreviewScope1stPage** <br/> |
+| 1  <br/> | なし  <br/> |**visDocPreviewScopeNone** <br/> |
+| 2  <br/> | すべてのページ  <br/> |**visDocPreviewScopeAllPages** <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この値は、[**プロパティ**] ダイアログボックスの [**概要**] タブで設定することもできます ( **Office**ボタンをクリックし、[**情報**] タブをクリックし、[**ドキュメントのプロパティ**] をクリックし、[**詳細プロパティ**] をクリックします)。
+この値は、[プロパティ] ダイアログボックスの [概要] タブで設定することもできます **([Office]** ボタンをクリックし、[情報] タブをクリックし、[ドキュメントのプロパティ] をクリックし、[詳細プロパティ] をクリック **します**)。
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [PreviewScope] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [previewscope]  <br/> |
+| セル名:  <br/> | PreviewScope  <br/> |
    
 プログラムから、インデックスによって [PreviewScope] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

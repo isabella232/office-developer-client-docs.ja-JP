@@ -25,7 +25,7 @@ ms.locfileid: "33425597"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-1つ以上のエントリ (通常、メッセージングユーザー、配布リスト、またはその他のコンテナー) を削除します。
+1 つ以上のエントリ (通常はメッセージング ユーザー、配布リスト、その他のコンテナー) を削除します。
   
 ```cpp
 HRESULT DeleteEntries(
@@ -36,9 +36,9 @@ HRESULT DeleteEntries(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpentries_
+ _lpEntries_
   
-> 順番削除されるエントリを表すエントリ識別子を含む[entrylist](entrylist.md)構造体の配列へのポインター。 
+> [in]削除するエントリを表すエントリ識別子を含む [ENTRYLIST](entrylist.md) 構造体の配列へのポインター。 
     
  _ulFlags_
   
@@ -48,11 +48,11 @@ HRESULT DeleteEntries(
 
 S_OK 
   
-> 指定したエントリが正常に削除されました。 
+> 指定されたエントリが正常に削除されました。 
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> 呼び出しは成功しましたが、1つ以上のエントリを削除できませんでした。 この値が返されると、呼び出しが成功したとして処理されます。 この値をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
+> 呼び出しは成功しましたが、1 つ以上のエントリを削除する必要がありました。 この値が返されると、呼び出しは正常に処理されます。 この値をテストするには、次のマクロ **HR_FAILED** します。 詳細については、「Using [Macros for Error Handling 」を参照してください](using-macros-for-error-handling.md)。
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -60,7 +60,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|abdlg .cpp  <br/> |cabdlg:: OnDeleteSelectedItem  <br/> |mfcmapi は、 **deleteentries**メソッドを使用して、アドレス帳コンテナーから特定のエントリを削除します。  <br/> |
+|Abdlg.cpp  <br/> |CabDlg::OnDeleteSelectedItem  <br/> |MFCMAPI は **DeleteEntries メソッドを使用** して、アドレス帳コンテナーから特定のエントリを削除します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -19,15 +19,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33425884"
 ---
-# <a name="proptag"></a>PROP_TAG
+# <a name="prop_tag"></a>PROP_TAG
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定したプロパティの種類と識別子を結合して作成されたプロパティタグを返します。 
+指定したプロパティの種類と識別子を組み合わせて作成されたプロパティ タグを返します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |[SPropValue](spropvalue.md) <br/> |
    
 ```cpp
@@ -36,26 +36,26 @@ PROP_TAG (ulPropType, ulPropID)
 
 ## <a name="parameters"></a>パラメーター
 
-_ulproptype_
+_ulPropType_
   
-> 新しいプロパティタグのプロパティの種類。
+> 新しいプロパティ タグのプロパティの種類。
     
-_ulpropid_
+_ulPropID_
   
-> 新しいプロパティタグのプロパティ識別子。
+> 新しいプロパティ タグのプロパティ識別子。
     
 ## <a name="remarks"></a>注釈
 
-**PROP\_タグ**マクロは、 _ulproptype_型のプロパティと_ulpropid_で指定された識別子のプロパティタグを作成します。 たとえば、エントリ識別子のプロパティタグは、次のように**PROP_TAG**マクロを使用して作成できます。 
+**PROP \_ TAG マクロ** は、ulPropType 型のプロパティと _、ulPropID_ で指定された識別子のプロパティ タグ _を作成します_。 たとえば、エントリ識別子のプロパティ タグを作成するには、次のように、PROP_TAG **マクロを** 使用します。 
   
 ```cpp
 PROP_TAG( PT_BINARY, 0x0FFF)
 
 ```
 
-返される property タグの下位16ビットには、プロパティの型 PT_BINARY が含まれており、上位16ビットにはプロパティ識別子の0xffff が含まれています。
+返されるプロパティ タグの低次 16 ビットには、プロパティの種類 PT_BINARY、および高次 16 ビットにはプロパティ識別子 0xFFFF が含0xFFFF。
   
-プロパティタグの詳細については、「 [MAPI プロパティタグ](mapi-property-tags.md)」を参照してください。
+プロパティ タグの詳細については、「MAPI プロパティ タグ [」を参照してください](mapi-property-tags.md)。
   
 ## <a name="see-also"></a>関連項目
 

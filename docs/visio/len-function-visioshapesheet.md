@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm60104
 localization_priority: Normal
 ms.assetid: e7a62a86-36bf-31d3-a33b-2444f72d60fe
-description: 文字列の文字数を返します。
+description: テキスト文字列内の文字数を返します。
 ms.openlocfilehash: 5d0dd56014e1e9965359814fa4de35efd5f385ac
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33427039"
 ---
 # <a name="len-function-visioshapesheet"></a>LEN 関数 (VisioShapeSheet)
 
-文字列の文字数を返します。
+テキスト文字列内の文字数を返します。
   
 ## <a name="syntax"></a>構文
 
-LEN (* * *text* * *) 
+LEN (** *text* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -32,7 +32,7 @@ LEN (* * *text* * *)
    
 ### <a name="return-value"></a>戻り値
 
-数値
+数値型 (Numeric)
   
 ## <a name="example"></a>例
 

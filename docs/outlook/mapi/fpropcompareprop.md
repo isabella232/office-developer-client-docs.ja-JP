@@ -23,13 +23,13 @@ ms.locfileid: "33427158"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定した関係演算子を使用して、2つのプロパティの値を比較します。 
+指定した関係演算子を使用して 2 つのプロパティ値を比較します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 BOOL FPropCompareProp(
@@ -43,30 +43,30 @@ BOOL FPropCompareProp(
 
 _lpSPropValue1_
   
-> 順番比較のための最初のプロパティ値を定義する[spropvalue](spropvalue.md)構造体へのポインター。 
+> [in]比較の最初 [のプロパティ値](spropvalue.md) を定義する SPropValue 構造体へのポインター。 
     
-_ulrelop_
+_ulRelOp_
   
-> 順番比較で使用する関係演算子を示します。 許容値については、 [scomparepropsrestriction](scomparepropsrestriction.md)構造を参照してください。 
+> [in]比較で使用する関係演算子。 許容値については [、「SComparePropsRestriction 構造体」を参照](scomparepropsrestriction.md) してください。 
     
 _lpSPropValue2_
   
-> 順番比較の2番目のプロパティの値を定義する**spropvalue**構造体へのポインター。 
+> [in]比較用の **2 番目の** プロパティ値を定義する SPropValue 構造体へのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
 TRUE 
   
-> プロパティ値は、指定されたリレーションを満たします。 
+> プロパティの値は、指定された関係を満たします。 
     
 FALSE 
   
-> プロパティの値は、指定されたリレーションシップを満たしていません。
+> プロパティの値は、指定された関係を満たさない。
     
 ## <a name="remarks"></a>注釈
 
-比較方法は、 [spropvalue](spropvalue.md)プロパティの定義で指定されているプロパティの種類によって異なります。 **fpropcompareprop**および[fpropの prop](fpropcontainsprop.md)関数を使用して、テーブルの生成に関する制限を準備できます。 
+比較メソッドは [、SPropValue](spropvalue.md) プロパティ定義で指定されたプロパティの種類によって異なります。 **FPropCompareProp** 関数と [FPropContainsProp](fpropcontainsprop.md)関数を使用して、テーブルを生成するための制限を準備できます。 
   
-比較の順序は_lpSPropValue1_、_ ulrelop _、_ lpSPropValue2 _ です。 比較するプロパティ値のプロパティの種類が一致しない場合、 **fpropcompareprop**関数は FALSE を返します。 
+比較の順序は  _lpSPropValue1_、 _ ulRelOp _, _ lpSPropValue2 _です。 比較するプロパティ値のプロパティの種類が一致しない場合 **、FPropCompareProp** 関数は FALSE を返します。 
   
 

@@ -1,5 +1,5 @@
 ---
-title: Cast 関数 (Access カスタム web アプリ)
+title: キャスト関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33425296"
 ---
-# <a name="cast-function-access-custom-web-app"></a>Cast 関数 (Access カスタム web アプリ)
+# <a name="cast-function-access-custom-web-app"></a>キャスト関数 (Access カスタム Web アプリ)
 
 データ型の式を、ある形式から別の形式に変換します。
   
@@ -22,7 +22,7 @@ ms.locfileid: "33425296"
   
 ## <a name="syntax"></a>構文
 
-**Convert**(*式*、*データ型*) 
+**Convert** (*Expression*, *DataType*) 
   
 |**引数名**|**説明**|
 |:-----|:-----|

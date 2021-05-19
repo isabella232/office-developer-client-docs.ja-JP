@@ -1,5 +1,5 @@
 ---
-title: imapisessionsetdefaultstore
+title: IMAPISessionSetDefaultStore
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33426108"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-セッションの既定のメッセージストアとしてメッセージストアを確立します。
+セッションの既定のメッセージ ストアとしてメッセージ ストアを確立します。
   
 ```cpp
 HRESULT SetDefaultStore(
@@ -39,53 +39,53 @@ HRESULT SetDefaultStore(
 
  _ulFlags_
   
-> 順番既定のメッセージストアの設定を制御するフラグのビットマスク。 これらのフラグは相互に排他的です。設定できるのは、次に示すフラグのいずれか1つだけです。
+> [in]既定のメッセージ ストアの設定を制御するフラグのビットマスク。 これらのフラグは相互に排他的です。設定できるフラグは次の 1 つのみです。
     
 MAPI_DEFAULT_STORE
   
-> セッションの既定値としてメッセージストアを確立します。 **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) 列の STATUS_DEFAULT_STORE フラグを設定して、メッセージストアの状態テーブルの行を更新します。
+> セッションの既定値としてメッセージ ストアを確立します。 メッセージ ストアの状態テーブル行を更新するには、STATUS_DEFAULT_STORE **(** [PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) 列の PR_RESOURCE_FLAGS フラグを設定します。
     
 MAPI_PRIMARY_STORE
   
-> ログオン時に使用するストアとして、メッセージストアを確立します。 メッセージストアが既定のストアではない場合、クライアントは既定のストアにする必要があります。 **PR_RESOURCE_FLAGS**列の STATUS_PRIMARY_STORE フラグを設定して、メッセージストアの状態テーブルの行を更新します。 
+> ログオン時に使用するストアとしてメッセージ ストアを確立します。 メッセージ ストアが既定のストアではない場合、クライアントは既定のストアにする必要があります。 メッセージ ストアの状態テーブルの行を更新するには、STATUS_PRIMARY_STORE列の [PR_RESOURCE_FLAGS] **フラグをPR_RESOURCE_FLAGS** します。 
     
 MAPI_SECONDARY_STORE
   
-> プライマリメッセージストアが使用できない場合に、ログオン時に使用するストアとしてメッセージストアを確立します。 クライアントがプライマリストアを開くことができない場合は、セカンダリストアを開き、既定として設定する必要があります。 **PR_RESOURCE_FLAGS**列の STATUS_SECONDARY_STORE フラグを設定して、メッセージストアの状態テーブルの行を更新します。 
+> プライマリ メッセージ ストアが使用できない場合、ログオン時に使用するストアとしてメッセージ ストアを確立します。 クライアントがプライマリ ストアを開けできない場合は、セカンダリ ストアを開き、既定として設定する必要があります。 メッセージ ストアの状態テーブルの行を更新するには、STATUS_SECONDARY_STORE列の [PR_RESOURCE_FLAGS] **フラグをPR_RESOURCE_FLAGS** します。 
     
 MAPI_SIMPLE_STORE_PERMANENT
   
-> [状態] テーブル行、メッセージストアテーブル行、およびセッションプロファイルで、メッセージストアの**PR_RESOURCE_FLAGS**プロパティの STATUS_SIMPLE_STORE フラグを設定します。 
+> メッセージ ストアの STATUS_SIMPLE_STORE プロパティの状態テーブル行、メッセージ ストア **テーブル行、および** セッション プロファイルの PR_RESOURCE_FLAGS フラグを設定します。 
     
 MAPI_SIMPLE_STORE_TEMPORARY
   
-> STATUS_SIMPLE_STORE フラグを、状態テーブルの行とメッセージストアの表の行の**PR_RESOURCE_FLAGS**プロパティに設定します。 プロファイルは変更されません。 
+> メッセージ ストアのSTATUS_SIMPLE_STOREのステータス テーブル行とメッセージ ストア **テーブル行** PR_RESOURCE_FLAGSプロパティのプロパティのフラグを設定します。 プロファイルは変更されません。 
     
  _cbEntryID_
   
-> 順番_lな tryid_パラメーターで指定されたエントリ識別子のバイト数。 
+> [in]  _lpEntryID_ パラメーターが指すエントリ識別子のバイト数。 
     
- _lて tryid_
+ _lpEntryID_
   
-> 順番既定として使用するメッセージストアのエントリ識別子へのポインター。 クライアントが_lな tryid_で NULL を渡す場合、既定としてメッセージストアが選択されていません。
+> [in]既定のメッセージ ストアのエントリ識別子へのポインター。 クライアントが  _lpEntryID_ で NULL を渡した場合、既定ではメッセージ ストアは選択されません。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 呼び出しが成功し、予想される値または値が返されました。
+> 呼び出しは成功し、予期される値または値を返しました。
     
 ## <a name="remarks"></a>注釈
 
-**imapisession:: setdefaultstore**メソッドは、次のいずれかのようにメッセージストアを確立します。 
+**IMAPISession::SetDefaultStore** メソッドは、次のいずれかのメッセージ ストアを確立します。 
   
-- セッションの既定のメッセージストア。
+- セッションの既定のメッセージ ストア。
     
-- セッションのプライマリメッセージストア。
+- セッションのプライマリ メッセージ ストア。
     
-- セッションのセカンダリメッセージストア。
+- セッションのセカンダリ メッセージ ストア。
     
-メッセージストアを既定として設定するには、メッセージストアの**PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) プロパティに次のフラグが設定されている必要があります。
+メッセージ ストアを既定として確立するには、メッセージ ストアのポリシー [(PidTagStoreSupportMask)](pidtagstoresupportmask-canonical-property.md)プロパティに次のフラグ **PR_STORE_SUPPORT_MASK** 設定されている必要があります。
   
 - STORE_SUBMIT_OK
     
@@ -95,15 +95,15 @@ S_OK
     
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-[状態] テーブルを取得し、 **PR_RESOURCE_FLAGS**列の STATUS_DEFAULT_STORE フラグの設定を検索することによって、セッションの既定のメッセージストアを判別できます。 この設定の行は、セッションの既定値として指定されたメッセージストアを表します。 
+セッションの既定のメッセージ ストアを確認するには、状態テーブルを取得し、STATUS_DEFAULT_STORE 列の STATUS_DEFAULT_STORE フラグ **の設定をPR_RESOURCE_FLAGS** します。 この設定を持つ行は、セッションの既定値として指定されているメッセージ ストアを表します。 
   
-MAPI_DEFAULT_STORE または MAPI_SIMPLE_STORE_PERMANENT フラグが設定されている場合は、MAPI がプロファイル、メッセージストアテーブル、および状態テーブルを更新します。 
+[メッセージ ストア] MAPI_DEFAULT_STOREまたは MAPI_SIMPLE_STORE_PERMANENTフラグが設定されている場合、MAPI はプロファイル、メッセージ ストア テーブル、および状態テーブルを更新します。 
   
-メッセージストアの既定の設定が変更されるたびに、次の通知が生成されます。
+メッセージ ストアの既定の設定に変更が加わるたびに、次の通知が生成されます。
   
-- **fnevTableModified**イベント通知は、メッセージストアと状態テーブルの両方の影響を受ける各行に対して発行されます。 
+- **メッセージ ストアと状態テーブルの両方** の影響を受ける行ごとに、fnevTableModified イベント通知が発行されます。 
     
-- MAPI スプーラーに内部通知が発行されます。 進行中の操作は、変更されずに完了します。既定のメッセージストア (メッセージのダウンロードなど) に関連する新しい操作は、新しい既定のストアに対して処理されます。
+- 内部通知が MAPI スプーラーに発行されます。 既に進行中の操作は変更なしで完了します。メッセージのダウンロードなど、既定のメッセージ ストアを含む新しい操作が、新しい既定のストアに対して処理されます。
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -111,7 +111,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|maindlg .cpp  <br/> |CMainDlg:: OnSetDefaultStore  <br/> |mfcmapi は、 **imapisession:: setdefaultstore**メソッドを使用して、選択されたストアを既定のストアとして設定します。  <br/> |
+|MainDlg.cpp  <br/> |CMainDlg::OnSetDefaultStore  <br/> |MFCMAPI は **IMAPISession::SetDefaultStore** メソッドを使用して、選択したストアを既定のストアとして設定します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

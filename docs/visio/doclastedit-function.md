@@ -20,7 +20,7 @@ ms.locfileid: "33427718"
   
 ## <a name="syntax"></a>構文
 
-DOCLASTEDIT ()
+DOCLASTEDIT()
   
 ## <a name="remarks"></a>注釈
 

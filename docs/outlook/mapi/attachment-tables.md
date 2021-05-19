@@ -19,56 +19,56 @@ ms.locfileid: "33427444"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-添付ファイルテーブルには、送信されたメッセージまたは複合下のメッセージに関連付けられているすべての attachment オブジェクトに関する情報が含まれています。 
+添付ファイル テーブルには、送信済みメッセージまたは構成下のメッセージに関連付けられているすべての添付ファイル オブジェクトに関する情報が含まれています。 
   
-表には、メッセージの[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドへの呼び出しによって保存された添付ファイルのみが含まれています。 添付ファイルテーブルは、メッセージストアプロバイダーによって実装され、クライアントアプリケーションとトランスポートプロバイダーによって使用されます。 
+メッセージの [IMAPIProp::SaveChanges](imapiprop-savechanges.md) メソッドへの呼び出しによって保存された添付ファイルだけがテーブルに含まれます。 添付ファイル テーブルは、メッセージ ストア プロバイダーによって実装され、クライアント アプリケーションとトランスポート プロバイダーによって使用されます。 
   
-添付ファイルテーブルには、次のどちらかを呼び出すことによってアクセスできます。
+添付ファイル テーブルにアクセスするには、次のいずれかを呼び出します。
   
 - [IMessage::GetAttachmentTable](imessage-getattachmenttable.md)
     
-- [imapiprop:: openproperty](imapiprop-openproperty.md)。 **PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) プロパティを要求しています。
+- [IMAPIProp::OpenProperty](imapiprop-openproperty.md)、 プロパティ **(** [PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) PR_MESSAGE_ATTACHMENTSを要求します。
     
-添付ファイルテーブルは動的です。
+添付ファイル テーブルは動的です。
   
-メッセージストアプロバイダーは、添付ファイルテーブルでの並べ替えをサポートする必要はありません。 並べ替えがサポートされていない場合は、 **PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md)) プロパティを使用して、表を表示する順序を指定する必要があります。
+メッセージ ストア プロバイダーは、添付ファイル テーブルでの並べ替えをサポートする必要はありません。 並べ替えがサポートされていない場合は、テーブルをレンダリング位置 (PR_RENDERING_POSITION **(** [PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md)) プロパティで順番に表示する必要があります。
   
-メッセージストアプロバイダーは、添付ファイルテーブルの制限をサポートする必要もありません。 制限をサポートしないプロバイダーは、 [IMAPITable:: Restrict](imapitable-restrict.md)と[IMAPITable:: FindRow](imapitable-findrow.md)の実装から MAPI_E_NO_SUPPORT を返します。
+メッセージ ストア プロバイダーも、添付ファイル テーブルの制限をサポートする必要はありません。 制限をサポートしていないプロバイダーは [、IMAPITable::Restrict](imapitable-restrict.md) MAPI_E_NO_SUPPORT [IMAPITable::FindRow](imapitable-findrow.md)の実装から、この値を返します。
   
-添付ファイルテーブルは小規模にすることができます。必要な列セットには、次の4つの列のみがあります。
+添付ファイル テーブルは小さい場合があります。必須の列セットには 4 つの列しか含めありません。
   
-- **PR_ATTACH_NUM**([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) 
+- **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) 
     
-- **PR_INSTANCE_KEY**([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) 
+- **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) 
     
-- **PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) 
+- **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) 
     
 - **PR_RENDERING_POSITION**
     
- **PR_ATTACH_NUM**はノン、メッセージ内の添付ファイルを一意に識別する値を格納します。 このプロパティは、多くの場合、テーブルの行のインデックスとして使用されます。 **PR_ATTACH_NUM**の寿命は短くなります。添付ファイルを含むメッセージが開いている場合にのみ有効です。 このプロパティの値は、添付ファイルテーブルが開いている間は常に一定であることが保証されます。 
+ **PR_ATTACH_NUM** は非送信可能で、メッセージ内の添付ファイルを一意に識別するための値を含む。 このプロパティは、多くの場合、テーブルの行のインデックスとして使用されます。 **PR_ATTACH_NUM** の寿命が短い。添付ファイルを含むメッセージが開いている間のみ有効です。 添付ファイル テーブルが開いている限り、その値は一定に保たれ保証されます。 
   
- **PR_INSTANCE_KEY**は、ほぼすべてのテーブルで必要です。 このメソッドは、特定の行を一意に識別するために使用されます。 
+ **PR_INSTANCE_KEY、** ほぼすべてのテーブルで必要です。 特定の行を一意に識別するために使用されます。 
   
- **PR_RECORD_KEY**は、通常、比較目的でオブジェクトを一意に識別するために使用されます。 **PR_ATTACH_NUM**とは異なり、 **PR_RECORD_KEY**には長期間のエントリ id と同じスコープがあります。メッセージが閉じられてからもう一度開かれた後でも、利用可能な状態になります。 mapi でのレコードキーの使用の詳細については、「 [mapi レコードおよび検索キー](mapi-record-and-search-keys.md)」を参照してください。
+ **PR_RECORD_KEY** は、比較のためにオブジェクトを一意に識別するために一般的に使用されます。 PR_ATTACH_NUM **とは** 異 **PR_RECORD_KEYは、** 長期エントリ識別子と同じスコープを持つ必要があります。メッセージを閉じて再度開いた後でも、使用可能で有効なままです。 MAPI でのレコード キーの使用の詳細については、「MAPI レコードと [検索キー」を参照してください](mapi-record-and-search-keys.md)。
   
- **PR_RENDERING_POSITION**は、添付ファイルがリッチテキストメッセージでどのように表示されるかを示します。 **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) プロパティに格納されているメッセージの内容の最初の文字をオフセット0、または-1 (0xffffffff) に設定して、添付ファイルをメッセージ内にレンダリングしないことを示す、文字単位のオフセットに設定できます。文字列を入力します。 **PR_RENDERING_POSITION**を設定しないこともオプションです。 
+ **PR_RENDERING_POSITION** リッチ テキスト メッセージに添付ファイルを表示する方法を示します。 PR_BODY ([PidTagBody](pidtagbody-canonical-property.md)) プロパティに格納されているメッセージ コンテンツの最初の文字を **オフセット 0** または -1 (0xFFFFFFFF) に設定して、メッセージ テキスト内で添付ファイルを表示しなきことを示します。 また **、PR_RENDERING_POSITION** 設定しない場合もオプションです。 
   
-添付ファイルテーブルがレンダリング位置で並べ替えられている場合、メッセージストアプロバイダーはそれを符号付きの値 (PT_LONG) として扱います。 そのため、-1 のレンダリング位置の添付ファイルは、有効なオフセットを反映するレンダリング位置に添付される前に並べ替えられます。 
+添付ファイル テーブルをレンダリング位置で並べ替えた場合、メッセージ ストア プロバイダーは署名された値 (PT_LONG) として処理します。 したがって、レンダリング位置が -1 の添付ファイルは、有効なオフセットを反映するレンダリング位置を持つ添付ファイルの前に並べ替えされます。 
   
-テキスト形式の添付ファイルのレンダリングの詳細については、「[添付ファイルをテキスト形式でレンダリング](rendering-an-attachment-in-plain-text.md)する」を参照してください。 
+プレーン テキスト メッセージで添付ファイルをレンダリングする方法の詳細については、「プレーン テキストで [添付ファイルをレンダリングする」を参照してください](rendering-an-attachment-in-plain-text.md)。 
   
-リッチテキスト形式 (rtf) など、書式設定されたテキストで添付ファイルをレンダリングする方法については、「[添付ファイルを rtf テキスト形式でレンダリングする](rendering-an-attachment-in-rtf-text.md)」を参照してください。
+リッチ テキスト形式 (RTF) などの書式設定されたテキストで添付ファイルをレンダリングする方法については、「RTF テキストで添付ファイルをレンダリングする」 [を参照してください](rendering-an-attachment-in-rtf-text.md)。
   
-一部のプロパティメッセージストアプロバイダーは、次のように簡単に計算または取得できるため、添付ファイルテーブルに含まれています。
+メッセージ ストア プロバイダーの一般的なプロパティの中には、計算や取得が容易なので、添付ファイル テーブルに含まれるものがあります。
   
 |||
 |:-----|:-----|
-|**PR_ATTACH_ENCODING**([PidTagAttachEncoding](pidtagattachencoding-canonical-property.md))  <br/> |**PR_ATTACH_EXTENSION**([PidTagAttachExtension](pidtagattachextension-canonical-property.md))  <br/> |
-|**PR_ATTACH_FILENAME**([PidTagAttachFilename](pidtagattachfilename-canonical-property.md))  <br/> |**PR_ATTACH_LONG_FILENAME**([PidTagAttachLongFilename](pidtagattachlongfilename-canonical-property.md))  <br/> |
-|**PR_ATTACH_PATHNAME**([PidTagAttachPathname](pidtagattachpathname-canonical-property.md))  <br/> |**PR_ATTACH_LONG_PATHNAME**([PidTagAttachLongPathname](pidtagattachlongpathname-canonical-property.md))  <br/> |
-|**PR_ATTACH_METHOD**([PidTagAttachMethod](pidtagattachmethod-canonical-property.md))  <br/> |**PR_ATTACH_TAG**([PidTagAttachTag](pidtagattachtag-canonical-property.md))  <br/> |
-|**PR_CREATION_TIME**([PidTagCreationTime](pidtagcreationtime-canonical-property.md))  <br/> |**PR_ATTACH_TRANSPORT_NAME**([PidTagAttachTransportName](pidtagattachtransportname-canonical-property.md))  <br/> |
-|**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |**PR_LAST_MODIFICATION_TIME**([PidTagLastModificationTime](pidtaglastmodificationtime-canonical-property.md))  <br/> |
+|**PR_ATTACH_ENCODING** ([PidTagAttachEncoding](pidtagattachencoding-canonical-property.md))  <br/> |**PR_ATTACH_EXTENSION** ([PidTagAttachExtension](pidtagattachextension-canonical-property.md))  <br/> |
+|**PR_ATTACH_FILENAME** ([PidTagAttachFilename](pidtagattachfilename-canonical-property.md))  <br/> |**PR_ATTACH_LONG_FILENAME** ([PidTagAttachLongFilename](pidtagattachlongfilename-canonical-property.md))  <br/> |
+|**PR_ATTACH_PATHNAME** ([PidTagAttachPathname](pidtagattachpathname-canonical-property.md))  <br/> |**PR_ATTACH_LONG_PATHNAME** ([PidTagAttachLongPathname](pidtagattachlongpathname-canonical-property.md))  <br/> |
+|**PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md))  <br/> |**PR_ATTACH_TAG** ([PidTagAttachTag](pidtagattachtag-canonical-property.md))  <br/> |
+|**PR_CREATION_TIME** ([PidTagCreationTime](pidtagcreationtime-canonical-property.md))  <br/> |**PR_ATTACH_TRANSPORT_NAME** ([PidTagAttachTransportName](pidtagattachtransportname-canonical-property.md))  <br/> |
+|**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |**PR_LAST_MODIFICATION_TIME** ([PidTagLastModificationTime](pidtaglastmodificationtime-canonical-property.md))  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

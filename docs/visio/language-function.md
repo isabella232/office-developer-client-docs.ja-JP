@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: e372c670-e9a0-4352-b70a-3a054b036124
-description: 異なる言語表現間での比較操作を可能にします。 これは、インターネットエンジニアリングのタスクフォースの言語タグ (BCP 47) の値をロケール id (LCID) の値に変換するために最適です。
+description: 異なる言語表現間の比較操作を許可します。 インターネット エンジニアリング タスク フォース言語タグ (BCP 47) の値をロケール ID (LCID) 値に変換する場合に最適です。
 ms.openlocfilehash: 9c2dc96cefe7a1cfcd06947dcc54453dcef276fc
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33424754"
 ---
 # <a name="language-function"></a>LANGUAGE 関数
 
-異なる言語表現間での比較操作を可能にします。 これは、インターネットエンジニアリングのタスクフォースの言語タグ (BCP 47) の値をロケール id (LCID) の値に変換するために最適です。
+異なる言語表現間の比較操作を許可します。 インターネット エンジニアリング タスク フォース言語タグ (BCP 47) の値をロケール ID (LCID) 値に変換する場合に最適です。
   
 ## <a name="version-information"></a>バージョン情報
 
@@ -25,7 +25,7 @@ ms.locfileid: "33424754"
   
 ## <a name="syntax"></a>構文
 
- **言語**( _lcid_or_bcp47_)
+ **LANGUAGE** _(_ lcid_or_bcp47 )
   
 ### <a name="parameters"></a>パラメーター
 
@@ -41,10 +41,10 @@ ms.locfileid: "33424754"
 
  `LANGUAGE("en-us")`
   
-' 1033 ' の値を返します。
+'1033' の値を返します。
   
  `LANGUAGE("es-es")`
   
-' 3082 ' の値を返します。
+'3082' の値を返します。
   
 

@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: c88f087e-4ff4-0837-186d-b6e761468a4d
-description: アカウントマネージャーにクライアントを登録して、すべてのアカウントに関する通知を行います。
+description: クライアントをアカウント マネージャーに登録して、すべてのアカウントに関する通知を受け取る。
 ms.openlocfilehash: 5460d55d906d382ce40ecd3fd9277cf370295680
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33427711"
 ---
 # <a name="iolkaccountmanageradvise"></a>IOlkAccountManager::Advise
 
-アカウントマネージャーにクライアントを登録して、すべてのアカウントに関する通知を行います。
+クライアントをアカウント マネージャーに登録して、すべてのアカウントに関する通知を受け取る。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -31,13 +31,13 @@ HRESULT IOlkAccountManager::Advise (
 
 ## <a name="parameters"></a>パラメーター
 
-_pnotify_
+_pNotify_
   
-> 順番アカウントマネージャーがクライアントに通知を送信するために使用する[IOlkAccountNotify](iolkaccountnotify.md)インターフェイス。 
+> [in]アカウント マネージャーがクライアントに通知を送信するために使用する [IOlkAccountNotify](iolkaccountnotify.md) インターフェイス。 
     
 _pdwCookie_
   
-> 読み上げ[IOlkAccountManager:: アドバイズ](iolkaccountmanager-unadvise.md)中止は、アカウントの登録を削除するときに使用する cookie です。 
+> [out]アカウントの [登録を削除するときに IOlkAccountManager::Unadvise](iolkaccountmanager-unadvise.md) が使用する Cookie。 
     
 ## <a name="return-values"></a>戻り値
 

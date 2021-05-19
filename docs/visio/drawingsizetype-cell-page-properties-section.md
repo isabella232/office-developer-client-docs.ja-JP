@@ -22,14 +22,14 @@ ms.locfileid: "33425450"
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|.0  <br/> |プリンターの用紙サイズに合わせます。  <br/> |**visPrintSetup** <br/> |
-|1   <br/> |図面の内容に合わせてページの大きさを変更します。  <br/> |**visTight** <br/> |
-|2   <br/> |標準  <br/> |**visStandard** <br/> |
-|3   <br/> |ユーザー設定のページ サイズを使用します。  <br/> |**visCustom** <br/> |
-|4   <br/> |ユーザー設定の縮尺を使用します。  <br/> |**visLogical** <br/> |
-|5   <br/> |メートル法 (ISO) を使用します。  <br/> |**visDSMetric** <br/> |
-|6   <br/> |ANSI 工学系を使用します。  <br/> |**visDSEngr** <br/> |
-|7   <br/> |ANSI 建築系を使用します。  <br/> |**visDSArch** <br/> |
+|0  <br/> |プリンターの用紙サイズに合わせます。  <br/> |**visPrintSetup** <br/> |
+|1  <br/> |図面の内容に合わせてページの大きさを変更します。  <br/> |**visTight** <br/> |
+|2  <br/> |標準  <br/> |**visStandard** <br/> |
+|3  <br/> |ユーザー設定のページ サイズを使用します。  <br/> |**visCustom** <br/> |
+|4  <br/> |ユーザー設定の縮尺を使用します。  <br/> |**visLogical** <br/> |
+|5  <br/> |メートル法 (ISO) を使用します。  <br/> |**visDSMetric** <br/> |
+|6  <br/> |ANSI 工学系を使用します。  <br/> |**visDSEngr** <br/> |
+|7  <br/> |ANSI 建築系を使用します。  <br/> |**visDSArch** <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -39,7 +39,7 @@ ms.locfileid: "33425450"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[drawingsizetype]  <br/> |
+|セル名:  <br/> |DrawingSizeType  <br/> |
    
 プログラムから、インデックスによって [DrawingSizeType] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

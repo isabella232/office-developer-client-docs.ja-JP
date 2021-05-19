@@ -25,11 +25,11 @@ ms.locfileid: "33427347"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[ScInitMapiUtil](scinitmapiutil.md)関数または暗黙的に[MAPIInitialize](mapiinitialize.md)関数によって明示的に呼び出されたユーティリティ関数を解放します。 
+[ScInitMapiUtil](scinitmapiutil.md)関数によって明示的に、または[MAPIInitialize](mapiinitialize.md)関数によって暗黙的に呼び出されるユーティリティ関数を解放します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
 |呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
    
@@ -47,8 +47,8 @@ VOID DeinitMapiUtil( void );
   
 ## <a name="remarks"></a>注釈
 
-**DeinitMapiUtil**関数は、 [ScInitMapiUtil](scinitmapiutil.md)または[MAPIInitialize](mapiinitialize.md)を使用して初期化された関数を解放します。 
+**DeinitMapiUtil 関数は**[、ScInitMapiUtil](scinitmapiutil.md)または [MAPIInitialize で初期化された関数を解放します](mapiinitialize.md)。 
   
-**ScInitMapiUtil**によって呼び出される関数の使用が完了したら、 **DeinitMapiUtil**を明示的に呼び出して解放する必要があります。 これに対して、 [MAPIUninitialize](mapiuninitialize.md)は暗黙的に**DeinitMapiUtil**を呼び出します。 
+**ScInitMapiUtil** によって呼び出される関数の使用が完了したら **、DeinitMapiUtil** を明示的に呼び出して解放する必要があります。 これに対し [、MAPIUninitialize は](mapiuninitialize.md) **DeinitMapiUtil を暗黙的に呼び出します**。 
   
 

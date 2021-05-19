@@ -25,11 +25,11 @@ ms.locfileid: "33424925"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-PT_MV_CLSID 型のプロパティを記述するために使用される[GUID](guid.md)構造の配列を格納します。 
+型のプロパティを記述するために使用される [GUID](guid.md) 構造体の配列を格納PT_MV_CLSID。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SGuidArray
@@ -40,19 +40,19 @@ typedef struct _SGuidArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cvalues**
+ **cValues**
   
-> **lpguid**メンバーによってポイントされた配列内の値の数。 
+> lpguid メンバーが指す配列内 **の値の** 数。 
     
  **lpguid**
   
-> クラス識別子の値を含む**GUID**構造の配列へのポインター。 
+> クラス識別子の値を **含** む GUID 構造体の配列へのポインター。 
     
 ## <a name="remarks"></a>注釈
 
-PT_MV_CLSID の詳細については、「[プロパティの種類の一覧](property-types.md)」を参照してください。
+プロパティの詳細については、「PT_MV_CLSIDの [リスト」を参照してください](property-types.md)。
   
 ## <a name="see-also"></a>関連項目
 

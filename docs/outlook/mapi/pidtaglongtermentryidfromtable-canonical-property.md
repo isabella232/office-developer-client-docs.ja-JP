@@ -25,30 +25,30 @@ ms.locfileid: "33425667"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-アイテムの長期のエントリ id を取得します。
+アイテムの長期エントリ識別子を取得します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_LONGTERM_ENTRYID_FROM_TABLE  <br/> |
 |識別子:  <br/> |0x6670  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |表のプロパティ  <br/> |
+|エリア:  <br/> |Table プロパティ  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-このプロパティは、アイテムのエントリ識別子を短い用語のエントリ id ではなく、長期間のエントリ id として取得するために、contents テーブルで使用できます。 長期および短期の識別子については、「 **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))」を参照してください。
+このプロパティは、コンテンツ テーブルで使用して、短期的なエントリ識別子の代わりに、アイテムのエントリ識別子を長期エントリ識別子として取得できます。 長期識別子と短期識別子の詳細については、「PR_ENTRYID **(** [PidTagEntryId)」を参照してください](pidtagentryid-canonical-property.md)。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -61,7 +61,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

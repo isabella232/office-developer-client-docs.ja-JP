@@ -34,6 +34,6 @@ ms.locfileid: "33424792"
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowImage** <br/> |
-| セル インデックス:  <br/> |**viシム age輝度** <br/> |
+| セル インデックス:  <br/> |**visImageBrightness** <br/> |
    
 

@@ -22,25 +22,25 @@ ms.locfileid: "33425023"
   
 ## <a name="syntax"></a>構文
 
-SQRT (* **数値** *) 
+SQRT(** *number* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _number_ <br/> |必須  <br/> |**数値** <br/> |平方根を調べる数値を指定します。  <br/> |
+| _number_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |平方根を調べる数値を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
-数値
+数値型 (Numeric)
   
 ## <a name="remarks"></a>注釈
 
-数値が負の_数_である場合、SQRT 関数はエラー値 #NUM を返します。 
+数値  _が_ 負の場合、SQRT 関数はエラー値を返#NUM!。 
   
 ## <a name="example"></a>例
 
-SQRT (2) 
+SQRT(2) 
   
 1.4142 を返します。 
   

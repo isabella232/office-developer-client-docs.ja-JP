@@ -35,7 +35,7 @@ HRESULT HrSetObjAccess(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulaccess_
+ _ulAccess_
   
 > [����]�I�u�W�F�N�g�̃A�N�Z�X ���x����w�肷��t���O�̃r�b�g�}�b�v���܂��B�t���O����̂����ꂩ��ݒ肷�邱�Ƃ��ł��܂��B
     

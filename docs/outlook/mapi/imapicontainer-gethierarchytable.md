@@ -38,27 +38,27 @@ HRESULT GetHierarchyTable(
 
  _ulFlags_
   
-> 順番テーブルでの情報の返さ方法を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]テーブルで情報を返す方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 CONVENIENT_DEPTH 
   
-> 階層テーブルに複数のレベルのコンテナーを格納します。 CONVENIENT_DEPTH が設定されていない場合、階層テーブルにはコンテナーの直下の子コンテナーのみが含まれます。
+> 階層テーブルに複数のレベルのコンテナーを入力します。 このCONVENIENT_DEPTH設定されていない場合、階層テーブルにはコンテナーの直接の子コンテナーだけが含まれます。
     
 MAPI_DEFERRED_ERRORS 
   
-> **GetHierarchyTable**は、呼び出し元がテーブルを使用できるようになる前に、正常に返すことができます。 テーブルが使用できない場合は、次のテーブル呼び出しを行うとエラーが発生する可能性があります。 
+> **GetHierarchyTable は** 、呼び出し元がテーブルを使用できる前に、正常に返すことができます。 テーブルが使用できない場合は、後続のテーブル呼び出しでエラーが発生する可能性があります。 
     
 MAPI_UNICODE 
   
-> 文字列データを含む列を Unicode 形式で返すように要求します。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式で返されます。 
+> 文字列データを含む列を Unicode 形式で返す要求。 このフラグMAPI_UNICODE設定しない場合は、文字列を ANSI 形式で返す必要があります。 
     
 SHOW_SOFT_DELETES
   
-> 現在、削除済みアイテムの保存期間の段階にあるとマークされているアイテムを表示します。
+> 現在、削除済みアイテムとしてマークされているアイテム、つまり削除済みアイテムの保持時間フェーズにあるアイテムを表示します。
     
- _lpptable_
+ _lppTable_
   
-> 読み上げ階層テーブルへのポインターへのポインター。
+> [out]階層テーブルへのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -68,35 +68,35 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
+> このフラグMAPI_UNICODE設定され、実装が Unicode をサポートしていないか、または設定されていないMAPI_UNICODE実装が Unicode のみをサポートしています。
     
 MAPI_E_NO_SUPPORT 
   
-> コンテナーは子コンテナーを持たず、階層テーブルを提供できません。
+> コンテナーには子コンテナーが含まれていますが、階層テーブルを指定することはできません。
     
 ## <a name="remarks"></a>注釈
 
-**IMAPIContainer:: GetHierarchyTable**メソッドは、コンテナーの階層テーブルへのポインターを返します。 階層テーブルは、コンテナー内の子コンテナーに関する概要情報を保持します。 フォルダー階層テーブルは、サブフォルダーに関する情報を保持します。アドレス帳階層テーブルは、子アドレス帳コンテナーおよび配布リストに関する情報を保持します。 
+**IMAPIContainer::GetHierarchyTable** メソッドは、コンテナーの階層テーブルへのポインターを返します。 階層テーブルには、コンテナー内の子コンテナーに関する概要情報が格納されます。 フォルダー階層テーブルには、サブフォルダーに関する情報が格納されます。アドレス帳階層テーブルには、子アドレス帳コンテナーと配布リストに関する情報が格納されます。 
   
-一部のコンテナーに子コンテナーを持たせることはできません。 これらのコンテナーは、 **GetHierarchyTable**の実装から MAPI_E_NO_SUPPORT を返します。
+一部のコンテナーに子コンテナーがない場合があります。 これらのコンテナーは **、getHierarchyTable** MAPI_E_NO_SUPPORT実装からデータを返します。
   
-CONVENIENT_DEPTH フラグが設定されている場合、階層テーブル内の各行には、 **PR_DEPTH** ([PidTagDepth](pidtagdepth-canonical-property.md)) プロパティも列として含まれます。 **PR_DEPTH**は、テーブルを実装するコンテナーを基準とした、各コンテナーのレベルを示します。 実装するコンテナーの直下の子コンテナーは、深さ0、深さが0のコンテナー内の子コンテナーは深さ1というようになります。 **PR_DEPTH**の値は、deepens レベルの階層として順番に増加します。 
+このフラグCONVENIENT_DEPTH設定すると、階層テーブルの各行には、PR_DEPTH **(** [PidTagDepth](pidtagdepth-canonical-property.md)) プロパティも列として含まれます。 **PR_DEPTH** は、テーブルを実装するコンテナーに対する各コンテナーのレベルを示します。 実装するコンテナーの直接の子コンテナーは深度 0、深度 0 のコンテナーの子コンテナーは深度 1 などです。 レベルの階層 **が深PR_DEPTH、** 値は順次増加します。 
   
-階層テーブルで必須および省略可能な列の完全な一覧については、「 [hierarchy tables](hierarchy-tables.md)」を参照してください。
+階層テーブルの必須列とオプション列の完全な一覧については、「階層テーブル」 [を参照してください](hierarchy-tables.md)。
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-コンテナーの階層テーブルをサポートしている場合は、次の操作も実行する必要があります。
+コンテナーの階層テーブルをサポートする場合は、次の操作も行う必要があります。
   
-- コンテナーの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドの呼び出しをサポートして、 **PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) プロパティを開きます。
+- コンテナーの [IMAPIProp::OpenProperty](imapiprop-openproperty.md) メソッドの呼び出しをサポートして **、PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) プロパティを開きます。
     
-- コンテナーの[imapiprop:: getproplist](imapiprop-getproplist.md)または[imapiprop:: GetProps](imapiprop-getprops.md)メソッドへの呼び出しから**PR_CONTAINER_HIERARCHY**を返します。 
+- コンテナー **PR_CONTAINER_HIERARCHY** [IMAPIProp::GetPropList](imapiprop-getproplist.md) または [IMAPIProp::GetProps](imapiprop-getprops.md) メソッドへの呼び出しから返します。 
     
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-文字列およびバイナリコンテンツの表の列を切り捨てられます。 通常、プロバイダーは255文字を返します。 テーブルに切り捨てられた列が含まれているかどうかを事前に知ることはできないため、列の長さが255または510バイトの場合は、列が切り捨てられていると仮定します。 必要に応じて、エントリ id を使用して、切り捨てられた列の完全な値をオブジェクトから直接取得して、 [imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出すことができます。 
+文字列およびバイナリコンテンツテーブルの列は切り捨て可能です。 通常、プロバイダーは 255 文字を返します。 テーブルに切り捨てられた列が含まれるかどうかは事前に分からないので、列の長さが 255 バイトまたは 510 バイトの場合は、列が切り捨てられると仮定します。 必要に応じて、切り捨てられた列の完全な値をオブジェクトから直接取得するには、そのエントリ識別子を使用して開き [、IMAPIProp::GetProps](imapiprop-getprops.md) メソッドを呼び出します。 
   
-プロバイダーの実装に応じて、制限および並べ替え操作は、文字列全体またはその文字列の切り捨てられたバージョンに適用できます。 さらに、ストアプロバイダーは、階層テーブルに指定されたソート順序セット[ssortorderset](ssortorderset.md)を優先することは保証されません。 
+プロバイダーの実装に応じて、制限と並べ替え操作は、文字列全体またはその文字列の切り捨てられたバージョンに適用できます。 さらに、ストア プロバイダーは、階層テーブルに指定された並べ替え順序セット [SSortOrderSet を](ssortorderset.md) 受け入れ保証されません。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -104,7 +104,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|HierarchyTableTreeCtrl  <br/> |CHierarchyTableTreeCtrl:: GetHierarchyTable  <br/> |CHierarchyTableTreeCtrl クラスは、 **GetHierarchyTable**を使用して、ツリービューコントロールに表示する階層テーブルを取得します。  <br/> |
+|HierarchyTableTreeCtrl.cpp  <br/> |CHierarchyTableTreeCtrl::GetHierarchyTable  <br/> |CHierarchyTableTreeCtrl クラスは **GetHierarchyTable** を使用して、ツリー ビュー コントロールに表示する階層テーブルを取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

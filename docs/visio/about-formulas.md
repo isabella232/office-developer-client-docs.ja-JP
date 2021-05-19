@@ -36,7 +36,7 @@ Microsoft Visio の数式は、多くの点で一般的なスプレッドシー�
     
 - 演算子
     
-- 関数
+- Functions
     
 - 文字列
     

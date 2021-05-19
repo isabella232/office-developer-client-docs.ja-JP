@@ -1,5 +1,5 @@
 ---
-title: メッセージストアプロバイダーでの検索のサポート
+title: メッセージ ストア プロバイダーでの検索のサポート
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,17 +15,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33425387"
 ---
-# <a name="supporting-searches-in-message-store-providers"></a>メッセージストアプロバイダーでの検索のサポート
+# <a name="supporting-searches-in-message-store-providers"></a>メッセージ ストア プロバイダーでの検索のサポート
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-多くの場合、クライアントアプリケーションには、メッセージストア内のメッセージを検索するために使用されるユーザーインターフェイスコンポーネントがいくつかあります。 検索条件は、 [IMAPIContainer:: setsearchcriteria](imapicontainer-setsearchcriteria.md)メソッドと[IMAPIContainer:: getsearchcriteria](imapicontainer-getsearchcriteria.md)メソッドを使って、 [IMAPIContainer: imapiprop](imapicontainerimapiprop.md)インターフェイスで指定します。 
+クライアント アプリケーションには、多くの場合、メッセージ ストア内のメッセージの検索に専念するユーザー インターフェイス コンポーネントがいくつか含まれます。 検索基準は [、IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md) インターフェイスで [IMAPIContainer::SetSearchCriteria](imapicontainer-setsearchcriteria.md) メソッドと [IMAPIContainer::GetSearchCriteria](imapicontainer-getsearchcriteria.md) メソッドによって指定されます。 
   
-クライアントは、メッセージストアオブジェクトの**PR_FINDER_ENTRYID** ([PidTagFinderEntryId](pidtagfinderentryid-canonical-property.md)) プロパティを使用して、検索結果のフォルダーが格納されているメッセージストア内のルートフォルダーを特定します。 検索結果フォルダーは、多くの場合、メッセージストアの最上位レベルにあるフォルダーで、IPM フォルダーツリーには含まれていないため、非表示になります。
+クライアントは、メッセージ ストア オブジェクトの **PR_FINDER_ENTRYID** ([PidTagFinderEntryId)](pidtagfinderentryid-canonical-property.md)プロパティを使用して、検索結果のフォルダーを含むメッセージ ストア内のルート フォルダーを識別します。 検索結果フォルダーは、多くの場合、IPM フォルダー ツリーの一部ではなく、非表示のメッセージ ストアのトップ レベルにあるフォルダーです。
   
-メッセージストアプロバイダーが永続的な検索結果フォルダーを使用するか、クライアントが開くときに1つを作成するかどうかは、 **PR_FINDER_ENTRYID**プロパティに格納されているエントリ識別子が実装の詳細です。 メッセージストアプロバイダーでは、メッセージストアの作成時に作成されたパーマネントフォルダーを使用する方が簡単です。これにより、フォルダーが開かれるたびにエントリ識別子をチェックして、を作成するかどうかを確認するのが困難になります。検索結果フォルダー。 ただし、すべてのメッセージストアプロバイダーがこれを実行できるわけではありません。特に、従来のデータベースに MAPI インターフェイスを提供する読み取り専用のメッセージストアまたはストアは、基礎となるストレージメカニズムでは、通常は許可されていないか、または永続的な検索結果フォルダーを作成できません。 
+メッセージ ストア プロバイダーが永続的な検索結果フォルダーを使用するか、クライアントが PR_FINDER_ENTRYID プロパティに格納されているエントリ識別子を開く際 **に作成するかどうかは、実装** の詳細です。 メッセージ ストア プロバイダーは、メッセージ ストアの作成時に作成される永続的なフォルダーを使用する方がやや簡単です。そのため、フォルダーを開くたびにエントリ識別子を確認して検索結果フォルダーを作成するかどうかを確認する複雑な問題が回避されます。 ただし、すべてのメッセージ ストア プロバイダーがこれを実行できるわけではありません。特に、従来のデータベースに MAPI インターフェイスを提供する読み取り専用のメッセージ ストアまたはストアは、多くの場合、許可されないか、基になるストレージ メカニズムに永続的な検索結果フォルダーを作成できません。 
   
 ## <a name="see-also"></a>関連項目
 

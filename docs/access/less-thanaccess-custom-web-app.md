@@ -1,5 +1,5 @@
 ---
-title: 未満 (Access カスタム web アプリ)
+title: Less Than (Access custom Web app)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424288"
 ---
-# <a name="less-than-access-custom-web-app"></a>未満 (Access カスタム web アプリ)
+# <a name="less-than-access-custom-web-app"></a>Less Than (Access custom Web app)
 
 2 つの式を比較します。非 NULL の式を比較したとき、左オペランドが右オペランドより少ない値の場合は、結果は TRUE になります。それ以外の場合、結果は FALSE です。
   

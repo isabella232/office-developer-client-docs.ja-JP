@@ -1,5 +1,5 @@
 ---
-title: i社会 alprofile i入力者
+title: ISocialProfile ISocialPerson
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,21 +19,21 @@ ms.locfileid: "33425044"
 
 ログオンしているユーザーを表します。 
   
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
-次の表に、 **iare alprofile**インターフェイスで使用できるメンバーを示します。 
+次の表に **、ISocialProfile** インターフェイスで使用できるメンバーを示します。 
   
 |**名前**|**メンバーの種類**|**説明**|
 |:-----|:-----|:-----|
-|[arefriendsorcolleagues 仲間](isocialprofile-arefriendsorcolleagues.md) <br/> |メソッド  <br/> |指定したユーザーがフレンドであるかどうかを判断します。  <br/> |
-|[GetActivitiesOfFriendsAndColleagues](isocialprofile-getactivitiesoffriendsandcolleagues.md) <br/> |メソッド  <br/> |このメソッドは、Outlook Social Connector 2013 以降では廃止されました。  <br/> |
+|[AreFriendsOrColleagues](isocialprofile-arefriendsorcolleagues.md) <br/> |メソッド  <br/> |指定したユーザーがフレンドかどうかを指定します。  <br/> |
+|[GetActivitiesOfFriendsAndColleagues](isocialprofile-getactivitiesoffriendsandcolleagues.md) <br/> |メソッド  <br/> |このメソッドは、ソーシャル コネクタ 2013 Outlook廃止されました。  <br/> |
 |[SetStatus](isocialprofile-setstatus.md) <br/> |メソッド  <br/> |このメソッドは現在サポートされていません。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-Outlook Social Connector (.osc) プロバイダーは、このインターフェイスを実装して、.osc と通信します。
+ソーシャル Outlook (OSC) プロバイダーは、OSC と通信するためにこのインターフェイスを実装する必要があります。
   
 ## <a name="see-also"></a>関連項目
 
-- [Outlook Social Connector プロバイダーインターフェイス](outlook-social-connector-provider-interfaces.md)
+- [Outlookソーシャル コネクタ プロバイダー インターフェイス](outlook-social-connector-provider-interfaces.md)
 

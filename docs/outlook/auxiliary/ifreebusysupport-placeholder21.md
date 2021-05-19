@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: f4f3556c-54a1-af21-49f1-acd1b43e955e
-description: このメンバーはプレースホルダーで、サポートされていません。
+description: このメンバーはプレースホルダーであり、サポートされていません。
 ms.openlocfilehash: 7654a7adbe505ffa02515a5cd19aa7ce8d2dff6e
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,11 +16,11 @@ ms.locfileid: "33424358"
 ---
 # <a name="ifreebusysupportplaceholder21"></a>IFreeBusySupport::Placeholder21
 
-このメンバーはプレースホルダーで、サポートされていません。
+このメンバーはプレースホルダーであり、サポートされていません。
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IFreeBusySupport](ifreebusysupport.md)を参照してください。
+[「IFreeBusySupport」を参照してください](ifreebusysupport.md)。
   
 ```cpp
 HRESULT Placeholder21( 
@@ -32,11 +32,11 @@ HRESULT Placeholder21(
 
 ## <a name="return-values"></a>戻り値
 
-このメンバーはプレースホルダーで、サポートされていないため、常に S_OK。
+このS_OKプレースホルダーであり、サポートされていないので、常に使用してください。
   
 ## <a name="remarks"></a>注釈
 
-このメンバーは S_OK を返す必要があります。
+このメンバーは、この値をS_OK。
   
 ## <a name="see-also"></a>関連項目
 

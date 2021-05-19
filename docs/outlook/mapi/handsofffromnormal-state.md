@@ -1,5 +1,5 @@
 ---
-title: 標準の状態
+title: HandsOffFromNormal State
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,21 +15,21 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426472"
 ---
-# <a name="handsofffromnormal-state"></a>標準の状態
+# <a name="handsofffromnormal-state"></a>HandsOffFromNormal State
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-標準の状態は、[標準として[保存](handsoffaftersave-state.md)する (標準)。 これは、フォームの内容を永続的なストレージに保存するプロセスの一部です。 この状態では、フォームオブジェクトは、メッセージのプロパティの値のメモリ内コピーを変更しないようにする必要があります。これらの変更を保存する機会が他にはない可能性があるためです。 次の表では、標準状態からの使用可能な移行について説明します。 
+HandsOffFromNormal 状態は [、HandsOffAfterSave 状態と非常に似](handsoffaftersave-state.md) ています。 これは、フォームの内容を永続的な記憶域に保存するプロセスの一部です。 この状態の場合、フォーム オブジェクトは、メッセージのプロパティの値のメモリ内コピーに変更を加えるのを控える必要があります。これらの変更を保存する別の機会が存在しない可能性があります。 次の表では、HandsOffFromNormal 状態からの許可された移行について説明します。 
   
-|IPersistMessage * * メソッド * *|**操作**|**新しい状態**|
+|IPersistMessage** メソッド**|**Action**|**新しい状態**|
 |:-----|:-----|:-----|
-|[IPersistMessage:: SaveCompleted](ipersistmessage-savecompleted.md)(_pmessage! =_ NULL)  <br/> |メッセージオブジェクトのメッセージを_pmessage_に置き換えます。これは、前の呼び出しによって取り消されたメッセージの置換である[IPersistMessage::](ipersistmessage-handsoffmessage.md)[配布] [メッセージ] に置き換えられます。 新しいメッセージのデータは、失効したメッセージと同じであることが保証されます。 この呼び出しの後に、メッセージを clean としてマークしたり、 [IMAPIViewAdviseSink:: onsaved](imapiviewadvisesink-onsaved.md)を呼び出すことができないようにする必要があります。 **SaveCompleted**の呼び出しが成功した場合は、[通常](normal-state.md)の状態を入力します。 それ以外の場合は、[標準] をそのままにします。  <br/> |通常または標準の標準  <br/> |
-|**IPersistMessage:: SaveCompleted**(_pmessage = =_ NULL)  <br/> |最後のエラーを E_UNEXPECTED に設定します。  <br/> |HandsOffFromNormal  <br/> |
-|**** [IPersistMessage:: Save](ipersistmessage-save.md)、 [IPersistMessage:: InitNew](ipersistmessage-initnew.md)、または[IPersistMessage:: Load](ipersistmessage-load.md)を実行します。 <br/> |最後のエラーを E_UNEXPECTED に設定します。  <br/> |HandsOffFromNormal  <br/> |
-|[IPersistMessage::GetLastError](ipersistmessage-getlasterror.md) <br/> |直前のエラーを返します。  <br/> |HandsOffFromNormal  <br/> |
-|その他の[IPersistMessage: IUnknown](ipersistmessageiunknown.md)メソッドまたは他のインターフェイスからのメソッド  <br/> |最後のエラーを E_UNEXPECTED に設定します。  <br/> |HandsOffFromNormal  <br/> |
+|[IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md)(_pMessage !=_ NULL)  <br/> |メッセージ オブジェクトのメッセージを  _pMessage_ に置き換え [、IPersistMessage::HandsOffMessage](ipersistmessage-handsoffmessage.md)の前の呼び出しによって取り消されたメッセージの代わりに使用します。 新しいメッセージのデータは、取り消されたメッセージと同じになる必要があります。 メッセージをクリーンとしてマークしたり [、IMAPIViewAdviseSink::OnSaved](imapiviewadvisesink-onsaved.md) をこの呼び出し後に呼び出したりする必要もありません。 **SaveCompleted 呼び出しが** 成功した場合は、Normal 状態 [を入力](normal-state.md)します。 それ以外の場合は、HandsOffFromNormal 状態にとどまります。  <br/> |Normal または HandsOffFromNormal  <br/> |
+|**IPersistMessage::SaveCompleted**(_pMessage ==_ NULL)  <br/> |最後のエラーを [エラー] にE_UNEXPECTED。  <br/> |HandsOffFromNormal  <br/> |
+|**HandsOffMessage**、 [IPersistMessage::Save](ipersistmessage-save.md)、 [IPersistMessage::InitNew](ipersistmessage-initnew.md)、 [または IPersistMessage::Load](ipersistmessage-load.md) <br/> |最後のエラーを [エラー] にE_UNEXPECTED。  <br/> |HandsOffFromNormal  <br/> |
+|[IPersistMessage::GetLastError](ipersistmessage-getlasterror.md) <br/> |最後のエラーを返します。  <br/> |HandsOffFromNormal  <br/> |
+|その [他の IPersistMessage : 他のインターフェイスからの IUnknown](ipersistmessageiunknown.md) メソッドまたはメソッド  <br/> |最後のエラーを [エラー] にE_UNEXPECTED。  <br/> |HandsOffFromNormal  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

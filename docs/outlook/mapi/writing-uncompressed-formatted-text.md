@@ -1,5 +1,5 @@
 ---
-title: 圧縮されていない書式付きテキストの作成
+title: 圧縮されていない書式設定されたテキストの書き込み
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,22 +15,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426325"
 ---
-# <a name="writing-uncompressed-formatted-text"></a>圧縮されていない書式付きテキストの作成
+# <a name="writing-uncompressed-formatted-text"></a>圧縮されていない書式設定されたテキストの書き込み
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-書式設定されたテキストを使用してメッセージを送信する準備をするときは、メッセージの**PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) プロパティを圧縮または圧縮しないテキストに設定します。 **PR_RTF_COMPRESSED**プロパティに圧縮されたテキストを書き込むことは、CPU を集中的に使用する操作であり、パフォーマンスに大きく影響する可能性があります。 
+書式設定されたテキストを含むメッセージを送信する準備をする場合は、メッセージの **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) プロパティを圧縮テキストまたは非圧縮テキストに設定します。 PR_RTF_COMPRESSED プロパティに圧縮されたテキスト **を書き込** むのは、CPU の負荷が非常に高い操作であり、パフォーマンスに大きな影響を与える可能性があります。 
   
-書式設定されたメッセージの送信のパフォーマンスを向上させるには、次のいずれかを行います。
+書式設定されたメッセージの送信のパフォーマンスを向上するには、次のいずれかを実行します。
   
-- CPU をアップグレードします。これは、常に問題を解決するものではありません。
+- 必ずしももっともらしいとは限りないソリューションである CPU をアップグレードします。
     
-    - や
+    - Or -
     
-- **PR_RTF_COMPRESSED**プロパティに圧縮されていないテキストを書き込みます。 
+- 圧縮されていないテキストを PR_RTF_COMPRESSED プロパティ **に記述** します。 
     
-圧縮されていないテキストを使用して**PR_RTF_COMPRESSED**を設定する手順は、1つの例外を除き、圧縮テキストを設定する手順と同じです。 [WrapCompressedRTFStream](wrapcompressedrtfstream.md)を呼び出すときは、 _ulflags_パラメーターに STORE_UNCOMPRESSED_RTF フラグを設定します。 圧縮されていないテキストを設定すると、メッセージのサイズが大きくなるという欠点があります。 
+圧縮されていない **テキストPR_RTF_COMPRESSED設定** する手順は、1 つの例外を除き、圧縮されたテキストで設定する手順と同じです。 [WrapCompressedRTFStream](wrapcompressedrtfstream.md)を呼び出す場合は _、ulFlags_ パラメーター STORE_UNCOMPRESSED_RTFフラグを設定します。 圧縮されていないテキストを設定すると、メッセージのサイズが大きという欠点があります。 
   
 

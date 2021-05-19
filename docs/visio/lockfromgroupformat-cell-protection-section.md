@@ -15,7 +15,7 @@ ms.locfileid: "33426059"
 ---
 # <a name="lockfromgroupformat-cell-protection-section"></a>[LockFromGroupFormat] セル ([Protection] セクション)
 
-グループ図形の書式設定の変更がサブ図形に反映されないようにしながら、選択したサブ図形の書式を直接設定できるようにします。 
+グループ図形に対する変更がサブ図形に伝達されるのをブロックし、ユーザーは選択したサブ図形を直接書式設定できます。 
   
 [LockFromGroupFormat] セルの値は、[**保護**] ダイアログ ボックスにある [**グループ書式設定を適用不可にする**] チェック ボックスの設定に対応します。 
   
@@ -25,7 +25,7 @@ ms.locfileid: "33426059"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[lockfromgroupformat]  <br/> |
+|セル名:  <br/> |LockFromGroupFormat  <br/> |
    
 プログラムから、インデックスによって [LockFromGroupFormat] セルを参照するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

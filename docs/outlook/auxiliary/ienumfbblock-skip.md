@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 70fbdb41-46ea-d016-25a2-37e94962095d
-description: 空き時間情報データの指定した数のブロックをスキップします。
+description: 空き時間情報データの指定された数のブロックをスキップします。
 ms.openlocfilehash: cf8ae18b5ed2c24a48d44d9e8d461da7d95054d2
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,11 +16,11 @@ ms.locfileid: "33425723"
 ---
 # <a name="ienumfbblockskip"></a>IEnumFBBlock::Skip
 
-空き時間情報データの指定した数のブロックをスキップします。
+空き時間情報データの指定された数のブロックをスキップします。
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IEnumFBBlock](ienumfbblock.md)を参照してください。
+[「IEnumFBBlock」を参照](ienumfbblock.md)してください。
   
 ```cpp
 HRESULT Skip(  
@@ -30,9 +30,9 @@ HRESULT Skip(
 
 ## <a name="parameters"></a>パラメーター
 
-_が大き_
+_celt_
   
->  順番スキップする空き時間ブロックの数。 
+>  [in]スキップする空き時間情報ブロックの数。 
     
 ## <a name="return-values"></a>戻り値
 

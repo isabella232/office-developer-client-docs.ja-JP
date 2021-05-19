@@ -1,5 +1,5 @@
 ---
-title: iaddrbookdetails
+title: IAddrBookDetails
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33424680"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-特定のアドレス帳エントリの詳細を表示するダイアログボックスを表示します。
+特定のアドレス帳エントリに関する詳細を表示するダイアログ ボックスを表示します。
   
 ```cpp
 HRESULT Details(
@@ -43,69 +43,69 @@ HRESULT Details(
 
 ## <a name="parameters"></a>パラメーター
 
- _l出 uiparam_
+ _lpulUIParam_
   
-> 順番ダイアログボックスの親ウィンドウのハンドルへのポインター。
+> [in]ダイアログ ボックスの親ウィンドウのハンドルへのポインター。
     
  _lpfnDismiss_
   
-> 順番[DISMISSMODELESS](dismissmodeless.md)プロトタイプに基づく関数へのポインター、または NULL。 このメンバーは、DIALOG_SDI フラグが設定されている場合のように、ダイアログボックスのモードレスバージョンにのみ適用されます。 MAPI は、ユーザーがモードレスアドレスダイアログボックスを閉じたときに、そのダイアログボックスがアクティブでなくなったことを示す**詳細**を呼び出していることをクライアントに通知する**DISMISSMODELESS**関数を呼び出します。 
+> [in] [DISMISSMODELESS](dismissmodeless.md) プロトタイプまたは NULL に基づく関数へのポインター。 このメンバーは、設定されているオプション フラグで示されているモードレス DIALOG_SDIダイアログ ボックスにのみ適用されます。 MAPI は、ユーザーがモードレス アドレス ダイアログ ボックスを閉じ、ダイアログ ボックスがアクティブでなくなった詳細を呼び出しているクライアントに通知するときに **DISMISSMODELESS** 関数を呼び出します。 
     
  _lpvDismissContext_
   
-> 順番_lpfnDismiss_パラメーターが指す**DISMISSMODELESS**関数に渡すコンテキスト情報へのポインター。 このパラメーターは、DIALOG_SDI フラグを_ulflags_パラメーターに含めることによって、ダイアログボックスのモードレスバージョンにのみ適用されます。 
+> [in]_lpfnDismiss_ パラメーターが指す **DISMISSMODELESS** 関数に渡すコンテキスト情報へのポインター。 このパラメーターは  _、ulFlags_ パラメーターに DIALOG_SDIフラグを含めて、ダイアログ ボックスのモードレス バージョンにのみ適用されます。 
     
  _cbEntryID_
   
-> 順番_lな tryid_パラメーターで指定されたエントリ識別子のバイト数。 
+> [in]  _lpEntryID_ パラメーターが指すエントリ識別子のバイト数。 
     
- _lて tryid_
+ _lpEntryID_
   
-> 順番詳細が表示されるエントリのエントリ識別子へのポインター。
+> [in]詳細が表示されるエントリのエントリ識別子へのポインター。
     
- _lpfbuttoncallback_
+ _lpfButtonCallback_
   
-> 順番[LPFNBUTTON](lpfnbutton.md)関数プロトタイプに基づく関数へのポインター。 **LPFNBUTTON**関数は、[詳細] ダイアログボックスにボタンを追加します。 
+> [in] [LPFNBUTTON 関数プロトタイプに基づく関数への](lpfnbutton.md) ポインター。 **LPFNBUTTON 関数は**、詳細ダイアログ ボックスにボタンを追加します。 
     
- _lpvbuttoncontext_
+ _lpvButtonContext_
   
-> 順番_lpfbuttoncallback_パラメーターで指定された関数のパラメーターとして使用されたデータへのポインター。 
+> [in]  _lpfButtonCallback_ パラメーターで指定された関数のパラメーターとして使用されたデータへのポインター。 
     
- _lpszbuttontext_
+ _lpszButtonText_
   
-> 順番追加されたボタンに適用されるテキストを含む文字列へのポインター。ボタンが拡張可能な場合です。 拡張ボタンが必要ない場合は、 _lpszbuttontext_パラメーターを NULL に設定する必要があります。 
+> [in]追加されたボタンに適用するテキストを含む文字列へのポインター (そのボタンが拡張可能な場合)。 _拡張可能ボタンが必要ない場合、lpszButtonText_ パラメーターは NULL である必要があります。 
     
  _ulFlags_
   
-> 順番_lpszbuttontext_パラメーターのテキストの種類を制御するフラグのビットマスク。 次のフラグを設定できます。 
+> [in]  _lpszButtonText_ パラメーターのテキストの種類を制御するフラグのビットマスク。 次のフラグを設定できます。 
     
 AB_TELL_DETAILS_CHANGE
   
-> アドレスに変更が実際に加えられた場合に、**詳細**が S_OK を返すことを示します。それ以外の場合、**詳細**は S_FALSE を返します。 
+> Details が **アドレスに** 実際にS_OK変更された場合に、そのアドレスを返します。それ以外の場合 **、Details** はS_FALSE。 
     
 DIALOG_MODAL
   
-> [共通アドレス] ダイアログボックスのモーダルバージョンを表示します。これは、常に非 Outlook クライアントに表示されます。 このフラグは、DIALOG_SDI とは相互に排他的です。
+> [共通アドレス] ダイアログ ボックスのモーダル バージョンを表示します。これは、常にクライアント以外のクライアントOutlookされます。 このフラグは、このフラグと相互にDIALOG_SDI。
     
 DIALOG_SDI
   
->  [共通アドレス] ダイアログボックスのモードレスバージョンを表示します。 このフラグは、Outlook 以外のクライアントでは無視されます。 
+>  [共通アドレス] ダイアログ ボックスのモードレス バージョンを表示します。 このフラグは、クライアント以外のクライアントOutlookされます。 
     
 MAPI_UNICODE 
   
-> 渡された文字列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
+> 渡された文字列は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列は ANSI 形式になります。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> アドレス帳エントリに対して [詳細] ダイアログボックスが正常に表示されました。
+> アドレス帳エントリの詳細ダイアログ ボックスが正常に表示されました。
     
 ## <a name="remarks"></a>注釈
 
-クライアントアプリケーションは**Details**メソッドを呼び出して、アドレス帳の特定のエントリに関する詳細情報を提供するダイアログボックスを表示します。 _lpfbuttoncallback_、 _lpfbuttoncallback_、および_lpszbuttontext_パラメーターを使用して、クライアント定義ボタンをダイアログボックスに追加できます。 ボタンがクリックされると、MAPI は_lpfbuttoncallback_が指すコールバック関数を呼び出し、ボタンのエントリ識別子と_lpfbuttoncallback_のデータの両方を渡します。 拡張ボタンが必要ない場合は、 _lpszbuttontext_を NULL にする必要があります。 
+クライアント アプリケーションは Details メソッド **を呼び** 出して、アドレス帳内の特定のエントリに関する詳細を示すダイアログ ボックスを表示します。 _lpfButtonCallback_ パラメーター _、lpvButtonContext_ パラメーター、_および lpszButtonText_ パラメーターを使用して、クライアント定義ボタンをダイアログ ボックスに追加できます。 ボタンをクリックすると、MAPI は  _lpfButtonCallback_ が指すコールバック関数を呼び出し、ボタンのエントリ識別子と  _lpvButtonContext_ のデータの両方を渡します。 拡張可能ボタンが必要ない場合  _、lpszButtonText_ は NULL である必要があります。 
   
- **詳細**は、Unicode 文字列をサポートしています。Unicode 文字列は、マルチバイト文字文字列 (MBCS) 形式に変換されてから、[詳細] ダイアログボックスに表示されます。 
+ **詳細は** Unicode 文字文字列をサポートします。Unicode 文字列は、詳細ダイアログ ボックスに表示される前に、マルチバイト文字文字列 (MBCS) 形式に変換されます。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -113,7 +113,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|basedialog  <br/> |cbasedialog:: onopenentryid  <br/> |mfcmapi は、 **details**メソッドを使用して、アドレス帳エントリの詳細を表示するダイアログボックスを表示します。  <br/> |
+|BaseDialog.cpp  <br/> |CBaseDialog::OnOpenEntryID  <br/> |MFCMAPI は Details メソッド **を** 使用して、アドレス帳エントリの詳細を示すダイアログ ボックスを表示します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

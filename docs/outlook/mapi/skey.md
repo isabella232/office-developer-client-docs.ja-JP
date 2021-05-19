@@ -21,7 +21,7 @@ ms.locfileid: "33426808"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Outlook アイテムのソースキー。
+アイテムのソース キー Outlookします。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -37,7 +37,7 @@ struct SKEY
 
  _guid_
   
-> オブジェクトを作成しているサーバーの GUID。
+> オブジェクトを作成するサーバーの GUID。
     
 ## <a name="see-also"></a>関連項目
 
