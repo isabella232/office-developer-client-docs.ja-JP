@@ -31,14 +31,14 @@ ms.locfileid: "33419661"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |アクション. *名前*です。SortKeywhere アクション。  *name*は、Actions 行の名前です。  <br/> |
+|セル名:  <br/> |アクション。 *name*  .SortKeywhere アクション。  *name*  は [アクション] 行の名前です。  <br/> |
    
 プログラムから、インデックスによって [SortKey] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionAction** <br/> |
-|行インデックス:  <br/> |**visRowAction** +  *i* = ** 0、1、2...  <br/> |
+|行インデックス:  <br/> |**visRowAction**  +  *i* *=* 0, 1, 2...  <br/> |
 |セル インデックス:  <br/> |**visActionSortKey** <br/> |
    
 

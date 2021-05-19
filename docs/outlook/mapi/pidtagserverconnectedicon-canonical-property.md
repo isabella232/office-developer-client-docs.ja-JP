@@ -21,12 +21,12 @@ ms.locfileid: "33410463"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ステータスバーに表示されるアイコンを指定します。
+ステータス バーに表示されるアイコンを指定します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_SERVER_CONNECTED_ICON  <br/> |
-|識別子:  <br/> |0x341e  <br/> |
+|識別子:  <br/> |0x341E  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |共通  <br/> |
    
@@ -38,7 +38,7 @@ ms.locfileid: "33410463"
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

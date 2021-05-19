@@ -25,7 +25,7 @@ ms.locfileid: "33409819"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ローカルストアを切断します。
+ローカル ストアを切断します。
   
 ```cpp
 HRESULT DisconnectStore( 
@@ -37,7 +37,7 @@ HRESULT DisconnectStore(
 
  _ulFlags_
   
->  [in]動作を変更するフラグです。 このパラメーターは常に0に設定する必要があります。 
+>  [in]動作を変更するフラグです。 このパラメーターは常に 0 に設定する必要があります。 
     
 ## <a name="see-also"></a>関連項目
 

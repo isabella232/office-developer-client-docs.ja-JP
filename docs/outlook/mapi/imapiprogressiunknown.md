@@ -1,5 +1,5 @@
 ---
-title: imapiprogress IUnknown
+title: IMAPIProgress IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,30 +25,30 @@ ms.locfileid: "33419647"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアントアプリケーションに進行状況のインジケーターを提供する progress オブジェクトを実装します。 進行状況インジケーターは、メッセージストア間でフォルダーをコピーするなど、操作の完了の割合を示すユーザーインターフェイスの表示です。 MAPI およびクライアントアプリケーションは、進行状況オブジェクトを実装し、サービスプロバイダーはそれらを使用します。 
+進行状況インジケーターをクライアント アプリケーションに提供する進行状況オブジェクトを実装します。 進行状況インジケーターは、メッセージ ストア間のフォルダーのコピーなど、操作の完了率を示すユーザー インターフェイス表示です。 MAPI およびクライアント アプリケーションは進行状況オブジェクトを実装し、サービス プロバイダーはそれらを使用します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
-|公開者:  <br/> |進行状況オブジェクト  <br/> |
-|実装元:  <br/> |MAPI およびクライアントアプリケーション  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |進行状況オブジェクト  <br/> |
+|実装元:  <br/> |MAPI およびクライアント アプリケーション  <br/> |
 |呼び出し元:  <br/> |サービス プロバイダー  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMAPIProgress  <br/> |
 |ポインターの種類:  <br/> |LPMAPIPROGRESS  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[進行状況](imapiprogress-progress.md) <br/> |操作が完了した時点で進行状況のインジケーターを更新します。  <br/> |
-|[getflags](imapiprogress-getflags.md) <br/> |進行状況の情報を計算する操作のレベルについて、progress オブジェクトからフラグ設定を返します。  <br/> |
-|[getmax](imapiprogress-getmax.md) <br/> |進行状況の情報が表示される操作内のアイテムの最大数を返します。  <br/> |
-|[GetMin](imapiprogress-getmin.md) <br/> |プログレス情報が表示される[setlimits](imapiprogress-setlimits.md)メソッドの最小値を返します。  <br/> |
-|[SetLimits](imapiprogress-setlimits.md) <br/> |操作内の項目数の下限と上限を設定します。また、操作の進行状況に関する情報の計算方法を制御するフラグを設定します。  <br/> |
+|[進行状況](imapiprogress-progress.md) <br/> |進行状況インジケーターを更新し、操作の完了に向けて進行状況を表示します。  <br/> |
+|[GetFlags](imapiprogress-getflags.md) <br/> |進行状況の情報を計算する操作レベルの進行状況オブジェクトからフラグ設定を返します。  <br/> |
+|[GetMax](imapiprogress-getmax.md) <br/> |進行状況情報が表示される操作内のアイテムの最大数を返します。  <br/> |
+|[GetMin](imapiprogress-getmin.md) <br/> |進行状況情報が表示される [SetLimits](imapiprogress-setlimits.md) メソッドの最小値を返します。  <br/> |
+|[SetLimits](imapiprogress-setlimits.md) <br/> |操作のアイテム数の下限と上限、および操作の進行状況情報の計算方法を制御するフラグを設定します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-MAPI には、潜在的に長い時間がかかる操作を実行する多くのメソッドの_lpprogress_パラメーターが含まれています。  _lpprogress_は、progress オブジェクトのクライアント実装を指します。 **imapiprogress**インターフェイスを実装するクライアントは、その実装をポイントするようにこのパラメーターを設定します。**imapiprogress**を実装していないクライアントは、パラメーターを NULL に設定します。 操作の処理中に進行状況インジケーターを表示するために、サービスプロバイダーは、クライアントによって提供される進行状況オブジェクト (使用可能な場合) または MAPI 実装 ( _lpprogress_が NULL に設定されている場合) を使用します。 
+MAPI には、潜在的に長い操作を実行する多くのメソッドに  _lpProgress_ パラメーターが含まれています。  _lpProgress は_ 、進行状況オブジェクトのクライアント実装を示しています。 **IMAPIProgress インターフェイスを実装する** クライアントは、実装を指すこのパラメーターを設定します。**IMAPIProgress を実装しないクライアントは、** パラメーターを NULL に設定します。 操作の処理中に進行状況インジケーターを表示するには、サービス プロバイダーは、クライアントによって提供される進行状況オブジェクト (使用可能な場合)、または MAPI 実装  _(lpProgress が_ NULL に設定されている場合に示される) を使用します。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -56,7 +56,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**Files**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MapiProgress および MapiProgress  <br/> |該当しない  <br/> |imapiprogress 設定が有効になっている場合、mfcmapi は、すべての関数に**imapiprogress**実装を渡します。この実装は、mfcmapi が呼び出す実装を受け入れます。  <br/> |
+|MapiProgress.h と MapiProgress.cpp  <br/> |該当なし  <br/> |IMAPIProgresss 設定が有効になっている場合、MFCMAPI は、実装を受け入れる MFCMAPI が呼び出すすべての関数に **IMAPIProgress** 実装を渡します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

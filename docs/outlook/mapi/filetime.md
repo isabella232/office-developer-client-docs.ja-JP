@@ -25,11 +25,11 @@ ms.locfileid: "33409504"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ファイルの、未署名の64ビットの日付と時刻の値を保持します。 この値は、1601年1月1日からの100ナノ秒単位の数を表します。 
+ファイルの符号なし 64 ビットの日付と時刻の値を保持します。 この値は、1601 年 1 月 1 日の開始以降の 100 ナノ秒単位の数を表します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _FILETIME
@@ -40,21 +40,21 @@ typedef struct _FILETIME
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **dwlowdatetime**
+ **dwLowDateTime**
   
-> file time 値の低順位32ビット。 
+> ファイル時間値の低次 32 ビット。 
     
  **dwHighDateTime**
   
-> file time 値の上位32ビット。
+> ファイル時間値の高次 32 ビット。
     
 ## <a name="remarks"></a>注釈
 
-PT_SYSTIME 型のプロパティには、その値の**FILETIME**構造があります。 このようなプロパティは、 [spropvalue](spropvalue.md)構造の定義において、**値**メンバーの**FILETIME**データ型を持っています。 
+型のプロパティはPT_SYSTIME **の FILETIME** 構造を持っています。 このようなプロパティには **、SPropValue** 構造体の定義内の **Value** メンバーの [FILETIME](spropvalue.md) データ型があります。 
   
-**FILETIME**構造体の定義は、 _Win32 プログラマーズリファレンス_および MAPI ヘッダーファイル mapidefs.h にあります。 MAPI は、Win32 定義が使用できない場合に、その構造が定義されていることを確認するために、その構造を定義します。 
+FILETIME 構造 **の定義** は  _、Win32 プログラマ_ リファレンスと MAPI ヘッダー ファイル Mapidefs.h に含まれています。 MAPI は、Win32 定義が使用できないときに定義されるように条件付きで構造を定義します。 
   
 ## <a name="see-also"></a>関連項目
 

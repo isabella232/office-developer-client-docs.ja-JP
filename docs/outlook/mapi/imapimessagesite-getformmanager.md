@@ -25,7 +25,7 @@ ms.locfileid: "33419458"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームサーバーが別のフォームサーバーを開くために使用できるフォームマネージャーインターフェイスを返します。
+フォーム サーバーが別のフォーム サーバーを開くのに使用できるフォーム マネージャー インターフェイスを返します。
   
 ```cpp
 HRESULT GetFormManager(
@@ -35,9 +35,9 @@ HRESULT GetFormManager(
 
 ## <a name="parameters"></a>パラメーター
 
- _ppformmgr_
+ _ppFormMgr_
   
-> 読み上げ返されるフォームマネージャーインターフェイスへのポインターへのポインター。
+> [out]返されるフォーム マネージャー インターフェイスへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -47,7 +47,7 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-フォームサーバーに関連するインターフェイスの一覧については、「 [MAPI フォームインターフェイス](mapi-form-interfaces.md)」を参照してください。
+フォーム サーバーに関連するインターフェイスの一覧については [、「MAPI フォーム インターフェイス」を参照してください](mapi-form-interfaces.md)。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -55,7 +55,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer  <br/> |cmymapiformviewer:: getformmanager  <br/> |mfcmapi は、 **IMAPIMessageSite:: getformmanager**メソッドを使用して[MAPIOpenFormMgr](mapiopenformmgr.md)を呼び出し、その呼び出しの結果を返します。  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetFormManager  <br/> |MFCMAPI は **IMAPIMessageSite::GetFormManager** メソッドを使用して [MAPIOpenFormMgr](mapiopenformmgr.md) を呼び出し、その呼び出しの結果を返します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -68,5 +68,5 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォームインターフェイス](mapi-form-interfaces.md)
+[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
 

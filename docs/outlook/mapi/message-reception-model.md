@@ -21,23 +21,23 @@ ms.locfileid: "33415118"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-トランスポートプロバイダーは、mapi スプーラーが受信メール用にそれをポーリングする必要があるか、または新しいメールが到着したときに mapi スプーラーへのコールバックを実行するかどうかを制御します。 トランスポートプロバイダーは、 [ixpprovider:: transportlogon](ixpprovider-transportlogon.md)からポーリング要求に戻るときに、SP_LOGON_POLL フラグを設定します。 それ以外の場合、トランスポートプロバイダーは、受信メールが使用可能な場合は[imapisupport:: SpoolerNotify](imapisupport-spoolernotify.md)を使用します。 受信メールが利用可能であることを学習した後、MAPI スプーラーは新しいメッセージを開き、トランスポートプロバイダーに、受信したメッセージのプロパティをメッセージに保存するよう要求します。 
+トランスポート プロバイダーは、MAPI スプーラーが受信メールをポーリングする必要があるかどうか、または新しいメールが届いたときに MAPI スプーラーへの呼び出しを実行するかどうかを制御します。 トランスポート プロバイダーは [、IXPProvider::TransportLogon](ixpprovider-transportlogon.md) からポーリングを要求するときに、SP_LOGON_POLL フラグを設定します。 それ以外の場合、トランスポート プロバイダーは [受信メールが使用可能なときに IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md) を使用します。 受信メールが利用できると確認した後、MAPI スプーラーは新しいメッセージを開き、受信したメッセージのプロパティをメッセージに格納するトランスポート プロバイダーに依頼します。 
   
 このプロセスは次のように動作します。
   
-1. 使用可能なメッセージは、 **imapisupport:: SpoolerNotify**を呼び出すトランスポートプロバイダー、または[IXPLogon::P oll](ixplogon-poll.md)の MAPI スプーラーのいずれかによって示されます。
+1. 使用可能なメッセージは **、IMAPISupport::SpoolerNotify** を呼び出すトランスポート プロバイダー、または [IXPLogon::P oll](ixplogon-poll.md)を呼び出す MAPI スプーラーによって示されます。
     
-2. MAPI スプーラーは[IXPLogon:: startmessage](ixplogon-startmessage.md)を呼び出してプロセスを開始します。 
+2. MAPI スプーラーは [IXPLogon::StartMessage](ixplogon-startmessage.md) を呼び出してプロセスを開始します。 
     
-3. トランスポートプロバイダーは、 **startmessage**で参照される場所に参照値を配置します。 これらの参照値を使用すると、トランスポートプロバイダーと MAPI スプーラーは、配信するメッセージが複数ある場合にどのメッセージが処理されているかを追跡できます。
+3. トランスポート プロバイダーは、StartMessage で参照されている場所に参照値 **を設定します**。 これらの参照値を使用すると、トランスポート プロバイダーと MAPI スプーラーは、配信するメッセージが複数ある場合に処理されているメッセージを追跡できます。
     
-4. トランスポートプロバイダーは、渡された[IMessage: imapiprop](imessageimapiprop.md)インスタンスにメッセージデータを格納します。 
+4. トランスポート プロバイダーは、渡された [IMessage : IMAPIProp インスタンスにメッセージ データを格納](imessageimapiprop.md) します。 
     
-5. トランスポートプロバイダーは、 **IMessage**インスタンスに対して[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出し、 **startmessage**から値を返します。
+5. トランスポート プロバイダーは **、IMessage** インスタンスで [IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを呼び出し **、StartMessage から返します**。
     
-6. MAPI スプーラーは、メッセージ配信を停止する必要がある場合に[IXPLogon:: transportnotify](ixplogon-transportnotify.md)を呼び出します。 
+6. MAPI スプーラーは、メッセージ配信を停止する必要がある場合に [IXPLogon::TransportNotify](ixplogon-transportnotify.md) を呼び出します。 
     
 > [!NOTE]
-> トランスポートプロバイダーが大量のメッセージを配信する必要があり、トランスポートプロバイダーが**imapisupport::** oll ではなく SpoolerNotify を使用している場合は、 **IXPLogon::P**ではなく、 **SpoolerNotify**を呼び出さないように注意する必要があります。deprive の他のトランスポートプロバイダーを CPU 時間で提供します。 MAPI スプーラーには、この問題を回避するロジックがありますが、一般的には、 **SpoolerNotify**の呼び出し間隔は、トランスポートプロバイダーが1つのメッセージを処理するのにかかる時間より長くする必要があります。 > また、MAPI スプーラーで受信メッセージがすぐに処理されない場合もあります。 MAPI スプーラーは、受信メッセージを受信する前に、トランスポートプロバイダーに他のタスクを実行するように要求することができます。 
+> トランスポート プロバイダーが多数のメッセージを配信する必要がある場合に、トランスポート プロバイダーが **IXPLogon::P oll** の代わりに **IMAPISupport::SpoolerNotify** を使用している場合は、CPU 時間の他のトランスポート プロバイダーを奪い取らなくするために、スプーラー **Notify** を呼び出さなすぎに注意する必要があります。 MAPI スプーラーには、このような処理を防止するロジックがありますが、一般に、 **スプーラーNotify** 呼び出しの間隔は、トランスポート プロバイダーが 1 つのメッセージを処理するのにかかる時間よりも長くする必要があります。 > MAPI スプーラーは、受信メッセージを直ちに処理しない場合があります。 MAPI スプーラーは、受信メッセージを受信する前に、トランスポート プロバイダーに他のタスクの実行を求める場合があります。 
   
 

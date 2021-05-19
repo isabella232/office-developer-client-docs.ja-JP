@@ -23,7 +23,7 @@ ms.locfileid: "33410617"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-表示順序に従って、次または前のメッセージをアクティブにします。 
+ビューの順序で次または前のメッセージをアクティブ化します。 
   
 ```cpp
 HRESULT ActivateNext(
@@ -34,31 +34,31 @@ LPCRECT prcPosRect
 
 ## <a name="parameters"></a>パラメーター
 
-_uldir_
+_ulDir_
   
-> 順番アクティブ化するメッセージに関する情報を提供するステータスフラグ。 有効なフラグの設定は次のとおりです。
+> [in]アクティブ化するメッセージに関する情報を示す状態フラグ。 有効なフラグ設定は次のとおりです。
     
-  - VCDIR_CATEGORY: ビューアーでは、ビューの別のカテゴリにあるメッセージをアクティブ化する必要があります。 アクティブにするメッセージは次のとおりです。 
+  - VCDIR_CATEGORY: ビューアーは、ビューの別のカテゴリでメッセージをアクティブ化する必要があります。 アクティブ化するメッセージは次の場合です。 
         
-    - このフラグが VCDIR_NEXT の場合は、次のビューカテゴリ**** の最初のメッセージ。 
+    - このフラグが OR の場合は、次のビュー カテゴリの最初のVCDIR_NEXT。 
         
-    - このフラグが VCDIR_PREV で、前のカテゴリが展開さ**** れている場合、前のビューカテゴリの最後のメッセージ。 
+    - 前のビュー カテゴリの最後のメッセージ (このフラグが **OR** で、前のVCDIR_PREVが展開されている場合。 
         
-    - このフラグが VCDIR_PREV で、前のカテゴリが展開さ**** れていない場合、前のビューカテゴリの最初のメッセージ。 この場合、前のカテゴリは自動拡張を行います。 
+    - 前のビュー カテゴリの最初のメッセージ (このフラグが **OR** で、前のVCDIR_PREVが展開されていない場合。 この場合、前のカテゴリは自動的に展開されます。 
         
-  - VCDIR_DELETE: 現在のメッセージが削除されているため、閲覧者は次または前のメッセージをアクティブにする必要があります。 
+  - VCDIR_DELETE: 現在のメッセージが削除されたため、ビューアーは次または前のメッセージをアクティブにする必要があります。 
         
-  - VCDIR_MOVE: 現在のメッセージが移動されたため、閲覧者は次または前のメッセージをアクティブにする必要があります。 
+  - VCDIR_MOVE: 現在のメッセージが移動されたため、ビューアーは次または前のメッセージをアクティブにする必要があります。 
         
-  - VCDIR_NEXT: 閲覧者は、表示順序で次のメッセージをアクティブ化する必要があります。 
+  - VCDIR_NEXT: ビューアーは、ビューの順序で次のメッセージをアクティブにする必要があります。 
         
-  - VCDIR_PREV: 閲覧者は、表示順序で前のメッセージをアクティブ化する必要があります。 
+  - VCDIR_PREV: ビューアーは、ビューの順序で前のメッセージをアクティブにする必要があります。 
         
-  - VCDIR_UNREAD: 閲覧者は、表示順序で、次または前の未読メッセージをアクティブにする必要があります。 
+  - VCDIR_UNREAD: ビューアーは、ビューの順序で次または前の未読メッセージをアクティブにする必要があります。 
     
-_prcposrect_
+_prcPosRect_
   
-> 順番アクティブ化されたメッセージの表示に使用されるウィンドウのサイズと位置を含む Windows **RECT**構造体へのポインター。 
+> [in]アクティブ化されたWindows表示するウィンドウのサイズと位置を含む **RECT** 構造体へのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -68,21 +68,21 @@ S_OK
     
 S_FALSE 
   
-> メッセージは正常にアクティブ化されましたが、プロセスで別の種類のフォームが開かれました。
+> メッセージは正常にアクティブ化されましたが、プロセスで別の種類のフォームが開かされました。
     
 ## <a name="remarks"></a>注釈
 
-Form オブジェクトは、 **imapiviewcontext:: ActivateNext**メソッドを呼び出して、ユーザーに表示されるメッセージを変更します。 _uldir_パラメーターで渡される値は、アクティブ化する必要があるメッセージと、場合によっては理由を示します。 VCDIR_NEXT および VCDIR_PREVIOUS の各フラグは、ビュー内で**次**または**前**のコマンドを選択したユーザーにそれぞれ対応します。 通常、これらの操作は、フォームビューアーのメッセージの一覧で1つ上または下のメッセージを移動することに対応します。 
+フォーム オブジェクトは **IMAPIViewContext::ActivateNext** メソッドを呼び出して、ユーザーに表示されるメッセージを変更します。 _ulDir_ パラメーターで渡される値は、アクティブ化するメッセージと、場合によっては理由を示します。 このVCDIR_NEXTおよびVCDIR_PREVIOUSは、ビューで [**次** へ] または [前へ] コマンドをそれぞれ選択したユーザーに対応します。 通常、これらの操作は、フォーム ビューアーのメッセージの一覧で 1 つのメッセージを上下に移動する操作に対応します。 
   
-VCDIR_DELETE および VCDIR_MOVE フラグは、それぞれ[IMAPIMessageSite::D eletemessage](imapimessagesite-deletemessage.md)メソッドと[IMAPIMessageSite:: MoveMessage](imapimessagesite-movemessage.md)メソッドによって設定されます。 これらのメソッドの実装は、適切な方向で**ActivateNext**を呼び出し、 **ActivateNext**呼び出しが失敗しなかった場合にメッセージに対して要求された操作を実行します。 通常、フォームビューアーを使用すると、ユーザーはメッセージリスト内で移動する方向を指定できます。 
+このVCDIR_DELETEおよびVCDIR_MOVEフラグは [、IMAPIMessageSite::D eleteMessage](imapimessagesite-deletemessage.md) メソッドと [IMAPIMessageSite::MoveMessage](imapimessagesite-movemessage.md) メソッドによってそれぞれ設定されます。 これらのメソッドの実装では **、ActivateNext** を適切な方向に呼び出し **、ActivateNext** 呼び出しが失敗しなかった場合は、メッセージに対して要求された操作を実行します。 通常、フォーム ビューアーを使用すると、ユーザーはメッセージ リスト内を移動する方向を指定できます。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-[imapiviewcontext:: ActivateNext](imapiviewcontext-activatenext.md)の実装により、 _uldir_の値に応じて、フォルダー内の次のメッセージまたは前のメッセージが作成されます (現在のメッセージ)。 **ActivateNext**が戻ると、 [IMAPIMessageSite:: GetMessage](imapimessagesite-getmessage.md)を呼び出して、新しくアクティブ化されたメッセージへのポインターを取得します。 
+[IMAPIViewContext::ActivateNext](imapiviewcontext-activatenext.md)の実装では _、ulDir_ の値に応じて、フォルダー内の次または前のメッセージが現在のメッセージになります。 **ActivateNext が返** された後 [、IMAPIMessageSite::GetMessage](imapimessagesite-getmessage.md)を呼び出して、新しくアクティブ化されたメッセージへのポインターを取得します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**ActivateNext**が S_FALSE を返す場合、または現在のメッセージが存在しない場合は、通常のシャットダウン手順を実行します。これには、フォームの[imapiform:: shutdownform](imapiform-shutdownform.md)メソッドの呼び出しが含まれている必要があります。 次または前のメッセージが表示された場合は、 _prcposrect_パラメーターで渡されたウィンドウ四角形を使用して表示します。 
+**ActivateNext** が S_FALSE を返す場合、または現在のメッセージが存在しない場合は、フォームの [IMAPIForm::ShutdownForm](imapiform-shutdownform.md)メソッドの呼び出しを含む通常のシャットダウン手順を実行します。 次または前のメッセージが表示される場合は  _、prcPosRect_ パラメーターで渡されたウィンドウ四角形を使用して表示します。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -90,7 +90,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer  <br/> |cmymapiformviewer:: ActivateNext  <br/> |mfcmapi は、この関数に**imapiviewcontext:: ActivateNext**メソッドを実装します。  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::ActivateNext  <br/> |MFCMAPI は、 **この関数に IMAPIViewContext::ActivateNext メソッド** を実装します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -25,33 +25,33 @@ ms.locfileid: "33420914"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Microsoft Office Outlook で、連絡先、予定表、タスクフォルダーなどのストア内のフォルダーをスキャンして、ナビゲーションウィンドウに設定するかどうかを指定します。
+ナビゲーション ウィンドウにMicrosoft Office Outlook、連絡先、予定表、タスク フォルダーなど、ストア内のフォルダーを起動時にスキャンするかどうかを指定します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|公開:  <br/> |[IMsgStore: imapiprop](imsgstoreimapiprop.md)オブジェクト  <br/> |
-|作成者:  <br/> |ストアプロバイダー  <br/> |
-|アクセス先:  <br/> |Outlook およびその他のクライアント  <br/> |
+|次の場合に公開されます。  <br/> |[IMsgStore : IMAPIProp](imsgstoreimapiprop.md) オブジェクト  <br/> |
+|作成者:  <br/> |ストア プロバイダー  <br/> |
+|アクセス者:  <br/> |Outlookクライアント  <br/> |
 |プロパティの種類:  <br/> |PT_LONG  <br/> |
-|アクセスの種類:  <br/> |ストアプロバイダーに応じて読み取り専用または読み取り/書き込み  <br/> |
+|アクセスの種類:  <br/> |ストア プロバイダーに応じて読み取り専用または読み取り/書き込み  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-ストアの機能を提供するには、ストアプロバイダーが[imapiprop: IUnknown](imapipropiunknown.md)を実装し、 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)呼び出しに渡されるこれらのプロパティに対して有効なプロパティタグを返す必要があります。 これらのプロパティのいずれかのプロパティタグが[imapiprop:: GetProps](imapiprop-getprops.md)に渡されると、ストアプロバイダーは、適切なプロパティ値を返す必要があります。 ストアプロバイダーは、 [hrgetoneprop](hrgetoneprop.md)および[hrgetoneprop](hrsetoneprop.md)を呼び出して、これらのプロパティを取得または設定できます。 
+ストア機能を提供するには、ストア プロバイダーが [IMAPIProp : IUnknown](imapipropiunknown.md) を実装し [、IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) 呼び出しに渡されるこれらのプロパティの有効なプロパティ タグを返す必要があります。 これらのプロパティのプロパティ タグが [IMAPIProp::GetProps](imapiprop-getprops.md)に渡される場合、ストア プロバイダーは正しいプロパティ値も返す必要があります。 ストア プロバイダーは [、HrGetOneProp](hrgetoneprop.md) と [HrSetOneProp](hrsetoneprop.md) を呼び出して、これらのプロパティを取得または設定できます。 
   
-このプロパティの値を取得するには、クライアントはまず[imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)を使用してプロパティタグを取得し、次に[imapiprop:: GetProps](imapiprop-getprops.md)でこのプロパティタグを指定して値を取得する必要があります。 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)を呼び出す場合は、入力パラメーター _lpppropnames_でポイントされている[mapinameid](mapinameid.md)構造に次の値を指定します。
+このプロパティの値を取得するには、まず [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) を使用してプロパティ タグを取得し [、IMAPIProp::GetProps](imapiprop-getprops.md) でこのプロパティ タグを指定して値を取得する必要があります。 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)を呼び出す場合は、入力パラメーター _lppPropNames_ が指す [MAPINAMEID](mapinameid.md)構造体に次の値を指定します。
   
 |||
 |:-----|:-----|
-|lpguid:  <br/> |PSETID_Common  <br/> |
-|ulkind:  <br/> |MNID_STRING  <br/> |
-|種類が lpwstrname:  <br/> |L "CrawlSourceSupportMask"  <br/> |
+|lpGuid:  <br/> |PSETID_Common  <br/> |
+|ulKind:  <br/> |MNID_STRING  <br/> |
+|Kind.lpwstrName:  <br/> |L"CrawlSourceSupportMask"  <br/> |
    
-このプロパティは、Outlook がストア内のさまざまなフォルダーをスキャンする必要があるかどうかを、ストアプロバイダーが指定できるようにします。 これは、Outlook が開いている各ストアの既存のフォルダーをスキャンして**ナビゲーション**ウィンドウにデータを設定するときに使用されます。Outlook は、スキャンを開始する前に、ストアでこのプロパティのプレゼンスと値をチェックします。 
+このプロパティは、ストア プロバイダーがストア内のOutlookをスキャンするかどうかを指定する方法を提供します。 開いている各ストアの既存のOutlookをスキャンしてナビゲーション ウィンドウにデータを設定する場合、起動時に **使用** されます。Outlookを開始する前に、ストア上のこのプロパティの存在と値を確認します。 
   
-既定では、このプロパティはストアに公開されていないため、Outlook はストアのフォルダーをスキャンできます。 プロパティが公開されている場合は、次の値を指定できます。
+既定では、このプロパティはストアで公開されません。つまり、Outlookフォルダーをスキャンできます。 プロパティが公開されている場合は、次の値を使用できます。
   
 ```
 enum { 
@@ -63,14 +63,14 @@ enum {
 
 CSM_DEFAULT
   
-- Outlook は、ストア上のフォルダーをスキャンできます。
+- Outlookストア上のフォルダーをスキャンできます。
     
 CSM_DO_NOT_CRAWL
   
-- Outlook は、ストア上のフォルダーをスキャンしません。
+- Outlookフォルダーをスキャンしない必要があります。
     
 CSM_CLIENT_DO_NOT_CHANGE
   
-- クライアントがストアでこのプロパティを変更できないようにします。 定数**CSM_CLIENT_DO_NOT_CHANGE**は将来の参照用であり、現在は実装されていないことに注意してください。 この時点で、ストアは、このプロパティに対してストアが返す値をハードコーディングすることにより、クライアントがこのフラグを変更できないようにすることができます。 
+- クライアントがストアでこのプロパティを変更を許可しない。 定数の値は **CSM_CLIENT_DO_NOT_CHANGE** 参照用であり、現在実装されていません。 今のところ、ストアは、このプロパティに対してストアが返す値をハードコードすることで、クライアントがこのフラグを変更できません。 
     
 

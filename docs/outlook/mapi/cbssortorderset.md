@@ -25,11 +25,11 @@ ms.locfileid: "33415692"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-既存の[ssortorderset](ssortorderset.md)構造体のバイト数を計算します。 
+既存の [SSortOrderSet](ssortorderset.md) 構造体のバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |**SSortOrderSet** <br/> |
    
 ```cpp
@@ -38,9 +38,9 @@ CbSSortOrderSet (_lpset)
 
 ## <a name="parameters"></a>パラメーター
 
- __lpset_
+ _ _lpset_
   
-> 既存の**ssortorderset**構造体へのポインター。 
+> 既存の **SSortOrderSet 構造体への** ポインター。 
     
 ## <a name="see-also"></a>関連項目
 

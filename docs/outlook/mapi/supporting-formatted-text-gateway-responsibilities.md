@@ -1,5 +1,5 @@
 ---
-title: 書式設定されたテキストゲートウェイの役割をサポートする
+title: 書式設定されたテキスト ゲートウェイの責任のサポート
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,38 +15,38 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33419430"
 ---
-# <a name="supporting-formatted-text-gateway-responsibilities"></a>書式付きテキストのサポート: ゲートウェイの責任
+# <a name="supporting-formatted-text-gateway-responsibilities"></a>書式設定されたテキストのサポート: ゲートウェイの責任
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
- **送信メッセージのリッチテキスト形式を処理するには、ゲートウェイ**
+ **送信メッセージ、ゲートウェイのリッチ テキスト形式を処理するには**
   
-1. メッセージストアからメッセージの**PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) プロパティのみを取得します。 **PR_RTF_COMPRESSED**プロパティのみを取得する場合の主な利点は、ゲートウェイとメッセージストアが異なるコンピューター上に存在する場合に、メッセージテキストをコンピューター間で送信する必要がないことです。 
+1. メッセージ ストアから **メッセージのPR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) プロパティのみを取得します。 **PR_RTF_COMPRESSED** プロパティのみを取得する主な利点は、ゲートウェイとメッセージ ストアが異なるコンピューター上に存在する場合に、メッセージ テキストをコンピューター間で送信する必要がなされないという利点です。 
     
-2. RTF ライブラリ関数**hrtextfromcompressedrtfstream**を呼び出すか、メッセージがローカルに格納されている場合は**rtfsync**を呼び出して、書式設定されたテキストからメッセージテキストを生成します。 RTF_SYNC_RTF_CHANGED フラグは、 **rtfsync**への呼び出しで設定する必要があります。 詳細については、「 [rtfsync](rtfsync.md)」を参照してください。
+2. RTF ライブラリ関数 **HrTextFromCompressedRTFStream** を呼び出すことによって、または、メッセージがローカルに保存されている場合は RTFSync を呼び出して、書式設定されたテキストからメッセージ テキスト **を生成します**。 RTFSync RTF_SYNC_RTF_CHANGED呼び出しで、このフラグを **設定する必要があります**。 詳細については [、「RTFSync」を参照してください](rtfsync.md)。
     
-3. サポートされていない文字を削除するなど、メッセージテキストを変更せずに取り消すことができます。 
+3. サポートされていない文字の削除など、メッセージ テキストに不可逆的な変更を加えます。 
     
-4. **PR_RTF_IN_SYNC** ([PidTagRtfInSync](pidtagrtfinsync-canonical-property.md)) と RTF auxilliary のすべてのプロパティが設定されているか、存在しないことを確認してください。
+4. すべての RTF **補助PR_RTF_IN_SYNCプロパティ**[(PidTagRtfInSync)](pidtagrtfinsync-canonical-property.md)と両方が設定または不在であることを確認します。
     
-5. 変更が行われた場合は、RTF_SYNC_RTF_CHANGED と RTF_SYNC_BODY_CHANGED の両方のフラグが設定された**rtfsync**を呼び出します。 **rtfsync**は、変更されたテキストから RTF auxilliary プロパティを再計算します。 
+5. 変更が行われた場合は **、RTFSync** を呼び出し、RTF_SYNC_RTF_CHANGEDフラグRTF_SYNC_BODY_CHANGED設定します。 **RTFSync** は、変更されたテキストから RTF 補助プロパティを再計算します。 
     
-6. 添付ファイルのプレースホルダーの挿入や非破壊コードページ変換の実行など、メッセージテキストに対して reversable の変更を加えます。
+6. 添付ファイルのプレースホルダーの挿入や非破壊コード ページ変換の実行など、メッセージ テキストに対して不可逆的な変更を加えます。
     
 7. メッセージを送信します。
     
- **受信メッセージのリッチテキスト形式を処理するには、ゲートウェイ**
+ **受信メッセージ、ゲートウェイのリッチ テキスト形式を処理するには**
   
-1. メッセージが送信される前に、テキストによる変更を取り消します。 
+1. メッセージが送信される前に直接行われたメッセージ テキストの変更を取り消します。 
     
-2. メッセージに**PR_RTF_COMPRESSED**プロパティと**PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) プロパティの両方が含まれている場合は、 **rtfsync**を呼び出します。 
+2. メッセージ **に、メッセージ** のプロパティ [(PidTagBody)](pidtagbody-canonical-property.md)プロパティと **PR_RTF_COMPRESSEDプロパティPR_BODY****が含** まれている場合は、RTFSync を呼び出します。 
     
-3. メッセージに含まれている場合は、 **PR_RTF_COMPRESSED**プロパティを使用して、メッセージストア内のメッセージを更新します。**PR_RTF_COMPRESSED**が存在しない場合にのみ、 **PR_BODY**プロパティを使用して update を行います。 
+3. メッセージに含まれている場合は **、PR_RTF_COMPRESSED プロパティを使用して** メッセージ ストア内のメッセージを更新します。更新は **、PR_BODY** が存在しない場合 **PR_RTF_COMPRESSED** プロパティで更新します。 
     
-4. メッセージにこのプロパティと**PR_RTF_COMPRESSED**の両方が含まれている場合は、 **PR_BODY**を破棄します。
+4. メッセージ **にPR_BODY** プロパティとプロパティの両方が含まれている場合は、このプロパティ **を破棄** PR_RTF_COMPRESSED。
     
-ゲートウェイは**rtfsync**を呼び出して、メッセージのテキストと書式設定されたテキストの両方を送信しないようにします (メッセージストアが別のコンピューターにある場合)。 ゲートウェイがローカルの場合は、両方のプロパティを設定し、メッセージストアで同期を実行できるようにします。 
+ゲートウェイは **RTFSync を** 呼び出して、メッセージ ストアが別のコンピューター上にある場合、メッセージ テキストと書式設定されたテキストの両方を送信しないようにします。 ゲートウェイがローカルの場合は、両方のプロパティを設定し、メッセージ ストアで同期を実行できます。 
   
 

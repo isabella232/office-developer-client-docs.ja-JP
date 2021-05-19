@@ -21,7 +21,7 @@ ms.locfileid: "33419437"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Outlook ストア内のオブジェクトの一般的な長い用語 ID。
+オブジェクト ストア内のオブジェクトの汎用的なOutlook ID。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -38,15 +38,15 @@ struct LTID
 
  _guid_
   
-- 読み上げオブジェクトを作成したサーバーの GUID。
+- [out]オブジェクトを作成したサーバーの GUID。
     
  _globcnt_
   
-- 読み上げOutlook ストア内のオブジェクトを識別する6バイトの一意の番号。
+- [out]オブジェクト ストア内のオブジェクトを識別する 6 バイトの一意Outlookします。
     
- _wlevel_
+ _wLevel_
   
-- 読み上げExchange お気に入りパブリックフォルダーのエントリ ID の階層レベル。
+- [out][お気に入りパブリック] フォルダーのエントリ ID のExchangeレベルです。
     
 ## <a name="see-also"></a>関連項目
 

@@ -25,7 +25,7 @@ ms.locfileid: "33415167"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-折りたたまれたテーブルカテゴリを展開して、そのカテゴリに属するリーフまたは下位レベルの見出し行をテーブルビューに追加します。
+折りたたみテーブル カテゴリを展開し、そのカテゴリに属するリーフまたは下位レベルの見出し行をテーブル ビューに追加します。
   
 ```cpp
 HRESULT ExpandRow(
@@ -42,27 +42,27 @@ ULONG FAR * lpulMoreRows
 
  _cbInstanceKey_
   
-> 順番_pbInstanceKey_パラメーターが指す PR_INSTANCE_KEY プロパティのバイト数。 
+> [in]  _pbInstanceKey_ パラメーターがPR_INSTANCE_KEYするプロパティのバイト数。 
     
  _pbInstanceKey_
   
-> 順番カテゴリの見出し行を識別する**PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) プロパティへのポインター。 
+> [in]カテゴリの見出 **しPR_INSTANCE_KEY** を識別するプロパティ [(PidTagInstanceKey)](pidtaginstancekey-canonical-property.md)へのポインター。 
     
- _ulrowcount_
+ _ulRowCount_
   
-> 順番_lpprows_パラメーターで取得する行の最大数。 
+> [in]  _lppRows_ パラメーターで返される行の最大数。 
     
  _ulFlags_
   
-> 予約語0である必要があります。
+> 予約済み。は 0 である必要があります。
     
- _lpprows_
+ _lppRows_
   
-> 読み上げ拡張の結果としてテーブルビューに挿入された最初の (最大_ulrowcount_) 行を受信する[srowset](srowset.md)構造体へのポインター。 これらの行は、 _pbInstanceKey_パラメーターによって指定される見出し行の後に挿入されます。 _ulrowcount_パラメーターが0の場合は、 _lpprows_パラメーターを NULL にすることができます。 
+> [out]拡張の結果としてテーブル ビューに挿入された最初の _(ulRowCount_ まで) 行を受け取る [SRowSet](srowset.md)構造体へのポインター。 これらの行は  _、pbInstanceKey_ パラメーターで識別される見出し行の後に挿入されます。 _ulRowCount パラメーターが_ 0 の場合 _、lppRows_ パラメーターは NULL になります。 
     
  _lpulMoreRows_
   
-> 読み上げテーブルビューに追加された行の合計数へのポインター。
+> [out]テーブル ビューに追加された行の総数へのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -72,25 +72,25 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> _pbInstanceKey_パラメーターで指定された行が存在しません。 
+> _pbInstanceKey_ パラメーターで識別される行が存在しません。 
     
 ## <a name="remarks"></a>注釈
 
-**IMAPITable:: expandrow**メソッドは、折りたたまれたテーブルカテゴリを展開し、そのカテゴリに属するリーフまたは下位レベルの見出し行をテーブルビューに追加します。 _lpprows_パラメーターで返される行数の制限は、 _ulrowcount_パラメーターで指定できます。 _ulrowcount_が0より大きい値に設定されている場合に、 _lpprows_が指す行セットで1つ以上の行が返されると、bookmark BOOKMARK_CURRENT の位置は、行セットの最後の行の直後の行に移動します。
+**IMAPITable::ExpandRow** メソッドは、折りたたみテーブル カテゴリを展開し、そのカテゴリに属するリーフまたは下位レベルの見出し行をテーブル ビューに追加します。 _lppRows_ パラメーターで返される行数の制限は _、ulRowCount パラメーターで指定_ できます。 _ulRowCount_ が 0 より大きい値に設定され _、lppRows_ が指す行セットで 1 つ以上の行が返される場合、ブックマーク BOOKMARK_CURRENT の位置は、行セットの最後の行の直後の行に移動されます。
   
-_ulrowcount_が0に設定されている場合、0個のリーフまたは下位レベルの見出し行をカテゴリに追加することを要求するか、カテゴリにリーフまたは下位レベルの見出し行がないために0行が返される場合、BOOKMARK_CURRENT の位置は行に設定されます。_pbInstanceKey_によって識別される行の次のとおりです。 
+_ulRowCount_ を 0 に設定し、カテゴリにリーフまたは下位レベルの見出し行を追加するか、またはカテゴリにリーフまたは下位レベルの見出し行がないのでゼロ行が返される場合、BOOKMARK_CURRENT の位置は _pbInstanceKey_ で識別される行の後の行に設定されます。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-カテゴリの拡張によってテーブルビューに追加された行に対して通知を生成しません。
+カテゴリの展開によりテーブル ビューに追加される行に対して通知を生成しない。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-_lpprows_パラメーターによって指定された行セット内の行数が、そのカテゴリのリーフまたは下位レベルの見出し行のセット全体で、実際にテーブルに追加された行数と一致しない場合があります。 メモリが不足しているなどのエラー、または_ulrowcount_パラメーターで指定された数を超えるカテゴリ内の行の数が発生することがあります。 どちらの場合でも、BOOKMARK_CURRENT は返された最後の行に配置されます。 カテゴリ内の残りの行をすぐに取得するには、「 [IMAPITable:: QueryRows](imapitable-queryrows.md)」という呼び出しを行います。
+_lppRows_ パラメーターが指す行セット内の行数は、テーブルに実際に追加された行の数、カテゴリのリーフまたは下位レベルの見出し行のセット全体と等しくない場合があります。 メモリ不足や、ulRowCount パラメーターで指定された数を超えるカテゴリの行数など、エラー  _が発生する可能性_ があります。 どちらの場合も、BOOKMARK_CURRENT最後の行に配置されます。 カテゴリ内の残りの行をすぐに取得するには [、IMAPITable::QueryRows を呼び出します](imapitable-queryrows.md)。
   
-カテゴリの状態が変更されたときに、テーブル通知を受け取ることはありません。 すべての**expandrow**または**CollapseRow**呼び出しで更新できる行のローカルキャッシュを維持できます。 
+カテゴリの状態が変更された場合は、テーブル通知を受け取る必要があります。 すべての ExpandRow 呼び出しまたは **CollapseRow** 呼び出しで更新できる行のローカル キャッシュ **を維持** できます。 
   
-カテゴリ別テーブルの詳細については、「[並べ替えと分類](sorting-and-categorization.md)」を参照してください。
+分類テーブルの詳細については、「並べ替えと [分類」を参照してください](sorting-and-categorization.md)。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -98,7 +98,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl  <br/> |CContentsTableListCtrl::D oexpandcollapse  <br/> |mfcmapi は、 **IMAPITable:: expandrow**メソッドを使用して、折りたたまれたテーブルカテゴリを展開します。  <br/> |
+|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::D oExpandCollapse  <br/> |MFCMAPI は **IMAPITable::ExpandRow** メソッドを使用して、折りたたみテーブル カテゴリを展開します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

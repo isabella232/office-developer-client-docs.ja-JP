@@ -1,5 +1,5 @@
 ---
-title: imapistatuschangepassword
+title: IMAPIStatusChangePassword
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33410358"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ユーザーインターフェイスを表示せずに、サービスプロバイダーのパスワードを変更します。 このメソッドは、サービスプロバイダーが実装する status オブジェクトで必要に応じてサポートされます。
+ユーザー インターフェイスを表示せずにサービス プロバイダーのパスワードを変更します。 このメソッドは、サービス プロバイダーが実装する状態オブジェクトで必要に応じてサポートされます。
   
 ```cpp
 HRESULT ChangePassword(
@@ -39,43 +39,43 @@ HRESULT ChangePassword(
 
  _lpOldPass_
   
-> 順番古いパスワードへのポインター。
+> [in]古いパスワードへのポインター。
     
- _lpnewpass_
+ _lpNewPass_
   
-> 順番新しいパスワードへのポインター。
+> [in]新しいパスワードへのポインター。
     
  _ulFlags_
   
-> 順番パスワードの形式を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]パスワードの形式を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> パスワードは Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、パスワードは ANSI 形式になります。
+> パスワードは Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、パスワードは ANSI 形式になります。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> パスワードの変更に成功しました。
+> パスワードの変更が成功しました。
     
 MAPI_E_NO_ACCESS 
   
-> _lpOldPass_が指す古いパスワードが無効です。 
+> _lpOldPass_ が指す古いパスワードが無効です。 
     
 MAPI_E_NO_SUPPORT 
   
-> status オブジェクトの**PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) プロパティに STATUS_CHANGE_PASSWORD フラグが設定されていない場合、status オブジェクトはこの操作をサポートしていません。
+> status オブジェクトは、status オブジェクトの PR_RESOURCE_METHODS ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) プロパティに STATUS_CHANGE_PASSWORD フラグがない場合 **に** 示されるこの操作をサポートします。
     
 ## <a name="remarks"></a>注釈
 
-すべてのステータスオブジェクトが**imapistatus:: ChangePassword**メソッドをサポートするわけではありません。 クライアントがパスワードを入力する必要があるサービスプロバイダーのみがサポートしています。 MAPI で実装されているステータスオブジェクトは、パスワードの変更操作をサポートしていません。 
+すべての状態オブジェクトが **IMAPIStatus::ChangePassword メソッドをサポートしている** 場合ではありません。 これは、クライアントにパスワードの入力を要求するサービス プロバイダーでのみサポートされます。 MAPI が実装する状態オブジェクトのいずれも、パスワード変更操作をサポートしません。 
   
- **ChangePassword**ユーザーによる操作なしで、プログラムによってパスワードを変更します。 
+ **ChangePassword は** 、ユーザーの操作なしで、プログラムによってパスワードを変更します。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-リモートトランスポートプロバイダーは、ここで指定したように**ChangePassword**を実装します。 特別な考慮事項はありません。 
+リモート トランスポート プロバイダーは、ここで指定 **した ChangePassword** を実装します。 特別な考慮事項はありません。 
   
 ## <a name="see-also"></a>関連項目
 

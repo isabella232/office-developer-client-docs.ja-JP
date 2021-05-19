@@ -1,5 +1,5 @@
 ---
-title: imscapabilities IUnknown
+title: IMSCapabilities IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,22 +25,22 @@ ms.locfileid: "33414782"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ストアがサポートできる内容についての情報を提供します。
+ストアでサポートできる機能に関する情報を提供します。
   
 |||
 |:-----|:-----|
-|提供元:  <br/> |メッセージストアプロバイダー  <br/> |
+|提供元:  <br/> |メッセージ ストア プロバイダー  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMSCapabilities  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|**[GetCapabilities](imscapabilities-getcapabilities.md)** <br/> |指定された選択範囲に基づいて、ストアの機能を返します。  <br/> |
+|**[GetCapabilities](imscapabilities-getcapabilities.md)** <br/> |指定した選択に基づいてストアの機能を返します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
- **imscapabilities**ストアがこのインターフェイスをサポートする場合に、ストアがサポートできる内容についての情報を提供します。 
+ **IMSCapabilities は** 、ストアがこのインターフェイスをサポートしている場合に、ストアがサポートできる機能に関する情報を提供します。 
   
 ## <a name="see-also"></a>関連項目
 

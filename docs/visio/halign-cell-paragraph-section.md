@@ -22,11 +22,11 @@ ms.locfileid: "33414740"
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| .0  <br/> | 左揃え  <br/> |**visHorzLeft** <br/> |
-| 1   <br/> | 中央  <br/> |**visHorzCenter** <br/> |
-| 2   <br/> | 右揃え  <br/> |**visHorzRight** <br/> |
-| 3   <br/> | Justify  <br/> |**visHorzJustify** <br/> |
-| 4   <br/> | 均等割付  <br/> |**visHorzForce** <br/> |
+| 0  <br/> | 左揃え  <br/> |**visHorzLeft** <br/> |
+| 1  <br/> | 中央  <br/> |**visHorzCenter** <br/> |
+| 2  <br/> | 右揃え  <br/> |**visHorzRight** <br/> |
+| 3  <br/> | Justify  <br/> |**visHorzJustify** <br/> |
+| 4  <br/> | 均等割付  <br/> |**visHorzForce** <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -38,14 +38,14 @@ ms.locfileid: "33414740"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | HorzAlign [ *i* ] *i* = <1>、2、3...  <br/> |
+| セル名:  <br/> | Para.HorzAlign[ i ]*ここで**、i* = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [HAlign] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionParagraph** <br/> |
-| 行インデックス:  <br/> |**visRowParagraph** +  *i* = ** 0、1、2...  <br/> |
+| 行インデックス:  <br/> |**visRowParagraph**  +  *i* *=* 0, 1, 2...  <br/> |
 | セル インデックス:  <br/> |**visHorzAlign** <br/> |
    
 

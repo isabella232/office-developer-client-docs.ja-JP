@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420200"
 ---
-# <a name="sending-messages-mapi-spooler-tasks"></a>メッセージの送信: MAPI スプーラーのタスク
+# <a name="sending-messages-mapi-spooler-tasks"></a>メッセージの送信: MAPI スプーラー タスク
 
   
   
@@ -27,14 +27,14 @@ MAPI �X�v�[���[�Ɋւ��郁�b�Z�[�W�̓]���v��
   
 1. If the message is not locked, locks the message by using the [IMsgStore::SetLockState](imsgstore-setlockstate.md) method. 
     
-2. トランスポートプロバイダは、 **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) プロパティが FALSE に設定されているすべての受信者にメッセージを送信します。 
+2. トランスポート プロバイダーは、メッセージを FALSE に設定PR_RESPONSIBILITY  [(PidTagResponsibility)](pidtagresponsibility-canonical-property.md)プロパティを持つすべての受信者に送信します。 
     
-3. **PR_PREPROCESS** ([PidTagPreprocess](pidtagpreprocess-canonical-property.md)) プロパティが設定されている場合に、処理中にメッセージに追加された追加情報をクリーンアップするための適切な関数 ([removepreprocessinfo](removepreprocessinfo.md)) を呼び出します。 This function is specified when the transport provider registers its preprocessor function. 
+3. **PR_PREPROCESS** ([PidTagPreprocess](pidtagpreprocess-canonical-property.md)) プロパティが設定されている場合、前処理中に使用するためにメッセージに追加された追加情報をクリーンアップするために、適切な関数 [(RemovePreprocessInfo)](removepreprocessinfo.md)を呼び出します。 This function is specified when the transport provider registers its preprocessor function. 
     
 4. [IMsgStore::FinishedMsg](imsgstore-finishedmsg.md)���\�b�h��Ăяo���܂��B **FinishedMsg**���b�Z�[�W�́A�v���o�C�_�[��i�[���܂��B
     
   - ���b�Z�[�W�̃��b�N�������܂��B
     
-  - Calls the [IMAPISupport::DoSentMail](imapisupport-dosentmail.md) method to perform outbound hook processing if a messaging hook provider exists. 次に、 **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) プロパティでエントリ識別子によって識別されるフォルダーにメッセージをコピーします。これは、メッセージングフックプロバイダーの送信メッセージ処理によって置き換えられていない場合です。 最後に、 **PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) プロパティが TRUE に設定されている場合は、メッセージを削除します。 
+  - Calls the [IMAPISupport::DoSentMail](imapisupport-dosentmail.md) method to perform outbound hook processing if a messaging hook provider exists. 次に、メッセージング フック プロバイダーの送信メッセージ処理に取って代えされない場合は **、PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) プロパティのエントリ識別子によって識別されるフォルダーにメッセージをコピーします。 最後に、このメッセージは、PR_DELETE_AFTER_SUBMIT **(** [PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) プロパティが TRUE に設定されている場合にメッセージを削除します。 
     
 

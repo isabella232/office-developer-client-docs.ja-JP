@@ -21,7 +21,7 @@ ms.locfileid: "33419885"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[アップロードの読み取り](upload-read-status-state.md)状態の状態中にアイテムの読み取り状態をアップロードするための情報。
+アップロードの読み取り状態状態の間にアイテムの読み取り状態 [をアップロードする情報](upload-read-status-state.md)です。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -37,11 +37,11 @@ struct UPREAD
 
  _pupre_
   
->  読み上げ**[upreade](upreade.md)** エントリのベクトル。 
+>  [out] **[UPREADE エントリの](upreade.md)** ベクトル。 
     
- _fea-cent-logging-service_
+ _cEnt_
   
->  読み上げ**upreade**エントリの数。 
+>  [out] **UPREADE エントリ** の数。 
     
 ## <a name="see-also"></a>関連項目
 

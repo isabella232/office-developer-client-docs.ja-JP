@@ -31,7 +31,7 @@ ms.locfileid: "33419262"
   
 |||
 |:-----|:-----|
-|セル名 :  <br/> |[enabletextprops]  <br/> |
+|セル名 :  <br/> |EnableTextProps  <br/> |
    
 プログラムから、インデックスによって [EnableTextProps] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

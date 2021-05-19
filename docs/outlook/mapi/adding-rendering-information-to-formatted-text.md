@@ -21,12 +21,12 @@ ms.locfileid: "33420613"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-添付ファイルがレンダリングされる書式設定されたテキストの位置を指定するには、メッセージの**PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) プロパティにプレースホルダー文字のシーケンスを挿入する必要があります。 プレースホルダーのシーケンスは、次の文字で構成さ`\objattph`れています。
+添付ファイルがレンダリングされる書式設定されたテキスト内の場所を指定するには、メッセージの PR_RTF_COMPRESSED ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) プロパティに一 **連の** プレースホルダー文字を挿入する必要があります。 プレースホルダー シーケンスは、次の文字で構成されます  `\objattph` 。
   
- **書式設定されたメッセージテキストにレンダリング情報を追加するには**
+ **書式設定されたメッセージ テキストにレンダリング情報を追加するには**
   
-- テキストのストリームをメッセージの**PR_RTF_COMPRESSED**プロパティに書き込むときに、添付ファイルをレンダリングする位置にプレースホルダーシーケンスとスペース文字を挿入します。 
+- テキストのストリームをメッセージの **PR_RTF_COMPRESSED** プロパティに書き込む場合は、プレースホルダー シーケンスとスペース文字を添付ファイルをレンダリングする位置に挿入します。 
     
-- 各添付ファイルの**PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md)) プロパティを数値に設定します。 最初の添付ファイルの**PR_RENDERING_POSITION**プロパティに、書式設定されたテキストで表示される最小値を割り当てる必要があります。最後の添付ファイルの最大値を指定します。 
+- 各添付 **PR_RENDERING_POSITION** の [プロパティ (PidTagRenderingPosition)](pidtagrenderingposition-canonical-property.md)プロパティを数値に設定します。 書式設定されたテキストに表示する最初PR_RENDERING_POSITION **のプロパティ** に、最も低い値を割り当てる必要があります。最後の添付ファイルの最高値を指定します。 
     
 

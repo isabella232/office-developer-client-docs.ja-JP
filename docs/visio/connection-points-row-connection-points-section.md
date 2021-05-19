@@ -8,7 +8,7 @@ f1_keywords:
 - vis_sdr.chm3005
 localization_priority: Normal
 ms.assetid: eaac62a5-f516-9b81-587a-8e0e02de59ee
-description: 図形上の1つの接続ポイントに対する x 座標と y 座標、水平方向と垂直方向、および種類を格納します。 接続ポイントの座標は、図形の原点を基準に測定されます。 図形上の各接続ポイントに対して 1 つの [Connection Points] 行があります。
+description: x 座標と y 座標、水平方向と垂直方向を含み、図形上の 1 つの接続ポイントを入力します。 接続ポイントの座標は、図形の原点を基準に測定されます。 図形上の各接続ポイントに対して 1 つの [Connection Points] 行があります。
 ms.openlocfilehash: 301ea4fb446d9acafd4b59af388c3e7b2d419e20
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,22 +18,22 @@ ms.locfileid: "33415510"
 ---
 # <a name="connection-points-row-connection-points-section"></a>[Connection Points] 行 ([Connection Points] セクション)
 
-図形上の1つの接続ポイントに対する*x*座標と*y*座標、水平方向と垂直方向、および種類を格納します。 接続ポイントの座標は、図形の原点を基準に測定されます。 図形上の各接続ポイントに対して 1 つの [Connection Points] 行があります。 
+x 座標と *y* 座標、水平方向と垂直方向を含み、図形上の 1 つの接続ポイントを入力します。  接続ポイントの座標は、図形の原点を基準に測定されます。 図形上の各接続ポイントに対して 1 つの [Connection Points] 行があります。 
   
-[Connection Points] 行に名前が付けられると、それらの名前は [ShapeSheet] ウィンドウで Connections. [シェイプシート] ウィンドウで*名前*を指定します。 [Connection Points] 行には次のセルが含まれます。 詳細については、各セルに関連する項目を参照してください。 
+[Connection Points] 行に名前が付けられると、それらの名前は [ShapeSheet] ウィンドウで Connections. *[シェイプ*  シート] ウィンドウの名前を指定します。 [Connection Points] 行には次のセルが含まれます。 詳細については、各セルに関連する項目を参照してください。 
   
 |**Cell**|**説明**|
 |:-----|:-----|
-|[X](x-cell-connection-points-section.md) <br/> |ローカル座標での接続ポイントの*x*座標です。  <br/> |
-|[Y](y-cell-connection-points-section.md) <br/> |ローカル座標での接続ポイントの*y*座標です。  <br/> |
-|[[dirx/A](dirxa-cell-connection-points-section.md) <br/> |一致する接続ポイントの必要な配置ベクトルの*x*コンポーネント。 動的コネクタに付いている脚の向きを揃える場合にも使用されます。 このセルでは浮動小数値が使用されます。  <br/> |
-|[[diry/B](diryb-cell-connection-points-section.md) <br/> |一致する接続ポイントの必要な配置ベクトルの*y*コンポーネント。 動的コネクタに付いている脚の向きを揃える場合にも使用されます。 このセルでは浮動小数値が使用されます。  <br/> |
+|[X](x-cell-connection-points-section.md) <br/> |ローカル  *座標*  の接続ポイントの x 座標。  <br/> |
+|[Y](y-cell-connection-points-section.md) <br/> |ローカル  *座標の*  接続ポイントの y 座標。  <br/> |
+|[DirX/A](dirxa-cell-connection-points-section.md) <br/> |一  *致する*  接続ポイントの必要な配置ベクトルの x -component。 動的コネクタに付いている脚の向きを揃える場合にも使用されます。 このセルでは浮動小数値が使用されます。  <br/> |
+|[DirY/B](diryb-cell-connection-points-section.md) <br/> |一  *致する接続*  ポイントの必要な配置ベクトルの y -component。 動的コネクタに付いている脚の向きを揃える場合にも使用されます。 このセルでは浮動小数値が使用されます。  <br/> |
 |[Type/C](typec-cell-connection-points-section.md) <br/> |接続ポイントの種類 (0 = 内向き; 1 = 外向き; 2 = 内向き + 外向き) です。  <br/> |
 |[D](d-cell-connection-points-section.md) <br/> |数式を入力またはテストするために使用できる、スクラッチ セルです。このセルにアクセスするには、行を右クリックしてから、ショートカット メニューの **[図形要素の変更]** をクリックします。<br/> |
    
 ## <a name="remarks"></a>注釈
 
-接続のセル。 [*名前*] 行には、[dirx/A、[diry/B、および Type/C のラベルが付いています。これらの行は拡張または拡張されていない行でもかまいません。 
+Connections 内のセル。 *これらの*  行は拡張または拡張されていない行が可能なので、name 行には DirX/A、DirY/B、Type/C というラベルが付けされます。 
   
 ほとんどの接続ポイント (ユーザー インターフェイスから作成したすべての接続ポイント) は、拡張されていないものであり、DirX、DirY、および Type セルを持っています。行の種類は、**visTagCnnctPt** または **visTagCnnctNamed** になります。
   
@@ -47,11 +47,11 @@ ms.locfileid: "33415510"
     
 拡張された行には [A]、[B]、[C]、および [D] セルがあり、拡張されていない内向きの行が方向を持たなくなったように機能します。通常、拡張された行は使用しません。ただし、データを [A]、[B]、[C]、および [D] セルの接続ポイントに関連付ける場合に使用することがあります。行の種類は、**visTagCnnctPtABCD** または **visTagCnnctNamedABCD** になります。拡張された行は、[D] セルに数式があるかないかで、識別できます。 
   
- 必要に応じて [Connections.  必要に応じて行に*名前*を付け、わかりやすい名前を行に割り当て、セルの値を設定します。 既存の [Connection Points] セクションに接続ポイントを追加するには、行を右クリックして、ショートカット メニューの **[行の挿入]** をクリックします。 
+ 必要に応じて [Connections.  *必要に*  応じて行に名前を付け、行にわかりやすい名前を割り当て、セル値を設定します。 既存の [Connection Points] セクションに接続ポイントを追加するには、行を右クリックして、ショートカット メニューの **[行の挿入]** をクリックします。 
   
-接続ポイントの行のセルを行名で参照できます。これは、シェイプシートウィンドウで赤いテキストで表示されます。 行名を変更するには、その行名をクリックし、「*カスタム*」などの名前を入力します。たとえば、行名の接続を作成します。 その後、[x] セルを参照することができます。たとえば、またはを使用して、行番号を使用します。 
+[接続ポイント] 行のセルは、赤いテキストの [シェイプシート] ウィンドウに表示される行名で参照できます。 行名を変更するには、行名をクリックし、たとえば、行名Connections.Custom を作成する場合は、カスタムなどの名前を入力します。 行番号を使用する場合は、Connections.Custom.X を使用して[X] セルを参照できます。たとえば、Connections.X1 を使用します。 
   
-入力する行名は、セクション内で一意の名前にする必要があります。 [Connection Points] セクションで1つの行の名前を作成すると、Microsoft Office Visio によって、セクション内のすべての行の名前が既定の名前である Row_ *n*になります。 
+入力する行名は、セクション内で一意の名前にする必要があります。 [接続ポイント] セクションで 1 行の名前を作成するとMicrosoft Office Visioセクション内のすべての行に既定の名前 n を付Connections.Row_ *します*。 
   
 名前が付いた [Connection Points] 行は、5.0 より前のバージョンの Visio では使用できません。名前の付いた [Connection Points] 行を持つ Visio の図面ファイルを以前の形式で保存すると、名前の付いた [Connection Points] 行への参照がインデックス付きの参照に変換され、行名は失われます。
   

@@ -19,17 +19,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33410680"
 ---
-# <a name="mviprop"></a>MVI_PROP
+# <a name="mvi_prop"></a>MVI_PROP
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定したプロパティの MVI_FLAG を設定します。 
+指定したプロパティMVI_FLAGを設定します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |[SPropValue](spropvalue.md) <br/> |
    
 ```cpp
@@ -38,17 +38,17 @@ MVI_PROP (tag)
 
 ## <a name="parameters"></a>パラメーター
 
- _マーク_
+ _tag_
   
-> 変更するプロパティタグを指定します。
+> 変更するプロパティ タグ。
     
 ## <a name="remarks"></a>注釈
 
-MVI_FLAG は、MV_FLAG の設定を結合し、プロパティを複数値として識別し、MV_INSTANCE を複数の行のテーブルに複数値のプロパティを表示することを要求します。 影響を受けるプロパティのプロパティの種類は変更されますが、識別子は変更されません。 
+MVI_FLAGは、MV_FLAG の設定を組み合わせ、プロパティを複数値として識別し、MV_INSTANCE を組み合わせ、複数の値を持つプロパティを複数行のテーブルに表示します。 影響を受けるプロパティのプロパティの種類は変更されますが、識別子は変更されません。 
   
-たとえば、MVI_PROP マクロが PT_FLOAT 型のプロパティに適用されている場合、その型は PT_MV_FLOAT に変更されます。 テーブルに含まれている場合は、値ごとに1行のプロパティを表すために複数の行が使用されます。 その他の列のプロパティが繰り返されます。 
+たとえば、MVI_PROP マクロが PT_FLOAT 型のプロパティに適用されると、その型は PT_MV_FLOAT に変更PT_MV_FLOAT。 テーブルに含まれる場合は、値ごとに 1 行のプロパティを表す複数の行が使用されます。 他の列のプロパティが繰り返されます。 
   
-これらのフラグの詳細については、「 [MAPI プロパティの種類の概要](mapi-property-type-overview.md)」および「[複数値を持つ列の処理](working-with-multivalued-columns.md)」を参照してください。
+これらのフラグの詳細については [、「MAPI プロパティの種類](mapi-property-type-overview.md) の概要」および「複数値列の [操作」を参照してください](working-with-multivalued-columns.md)。
   
 ## <a name="see-also"></a>関連項目
 

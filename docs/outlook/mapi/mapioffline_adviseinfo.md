@@ -15,15 +15,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420025"
 ---
-# <a name="mapiofflineadviseinfo"></a>MAPIOFFLINE_ADVISEINFO
+# <a name="mapioffline_adviseinfo"></a>MAPIOFFLINE_ADVISEINFO
  
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**[IMAPIOfflineMgr::](imapiofflinemgr-advise.md)** 通知して、オフラインオブジェクトのコールバックを登録するようにアドバイスします。 
+**[IMAPIOfflineMgr::Advise に](imapiofflinemgr-advise.md)** オフライン オブジェクトのコールバックを登録するための情報を提供します。 
   
 ## <a name="quick-info"></a>クイック ヒント
 
-「 **IMAPIOfflineMgr:: Advise**」を参照してください。 
+**「IMAPIOfflineMgr::Advise」を参照してください**。 
   
 ```cpp
 typedef struct 
@@ -37,23 +37,23 @@ typedef struct
 } MAPIOFFLINE_ADVISEINFO;
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
-_ulsize_: **MAPIOFFLINE_ADVISEINFO**のサイズ。 
+_ulSize_: サイズ **は** MAPIOFFLINE_ADVISEINFO です。 
     
-_ulclienttoken_: クライアントによってコールバックに対して定義されたトークン。 これは、 **[IMAPIOfflineNotify:: NOTIFY](imapiofflinenotify-notify.md)** に渡される**[MAPIOFFLINE_NOTIFY](mapioffline_notify.md)** 構造の*ulclienttoken*メンバーです。 
+_ulClientToken_: コールバックに関するクライアントによって定義されたトークン。 *IMAPIOfflineNotify::Notify* **[](mapioffline_notify.md)** に渡MAPIOFFLINE_NOTIFY構造の **[ulClientToken メンバーです](imapiofflinenotify-notify.md)**。 
     
-/_テキスト_: 作成するコールバックの種類。
+_CallbackType_: 作成するコールバックの種類。
     
    -  MAPIOFFLINE_CALLBACK_TYPE_NOTIFY 
     
-   - コールバックの種類は、通知によって行います。 これは、サポートされている唯一の種類のコールバックです。  *pcallback*は、インターフェイス**[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** を示す必要があります。 
+   - コールバックの種類は通知別です。 これは、サポートされているコールバックの唯一の種類です。  *pCallback は*  、インターフェイス **[IMAPIOfflineNotify を示す必要があります](imapiofflinenotifyiunknown.md)**。 
     
-_pcallback_: コールバックに使用するインターフェイス。 これは、クライアントによる**[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** の実装です。 
+_pCallback_: コールバックに使用するインターフェイス。 これは **[、IMAPIOfflineNotify のクライアントの実装です](imapiofflinenotifyiunknown.md)**。 
     
-_ulAdviseTypes_: アドバイスの条件で識別される、アドバイスの種類。 サポートされている唯一の種類は MAPIOFFLINE_ADVISE_TYPE_STATECHANGE です。
+_ulAdviseTypes_: アドバイスの種類 。アドバイスの条件によって識別されます。 サポートされている唯一の型は、MAPIOFFLINE_ADVISE_TYPE_STATECHANGE。
     
-_ulStateMask_: サポートされている唯一の状態は、MAPIOFFLINE_STATE_ALL です。
+_ulStateMask_: サポートされている唯一の状態は、MAPIOFFLINE_STATE_ALL。
     
 ## <a name="see-also"></a>関連項目
 

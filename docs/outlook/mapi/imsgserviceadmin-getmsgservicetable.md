@@ -25,7 +25,7 @@ ms.locfileid: "33410477"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージサービステーブル (プロファイル内のメッセージサービスのリスト) へのアクセスを提供します。
+プロファイル内のメッセージ サービスの一覧であるメッセージ サービス テーブルへのアクセスを提供します。
   
 ```cpp
 HRESULT GetMsgServiceTable(
@@ -38,23 +38,23 @@ HRESULT GetMsgServiceTable(
 
  _ulFlags_
   
-> 順番常に NULL。
+> [in]常に NULL。
     
- _lpptable_
+ _lppTable_
   
-> 読み上げメッセージサービステーブルへのポインターへのポインター。
+> [out]メッセージ サービス テーブルへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> メッセージサービステーブルが正常に返されました。
+> メッセージ サービス テーブルが正常に返されました。
     
 ## <a name="remarks"></a>注釈
 
-**IMsgServiceAdmin:: getmsgservicetable**メソッドは、メッセージサービステーブルへのアクセスを提供します。これは、MAPI が管理するテーブルで、セッションプロファイルに現在インストールされているメッセージサービスを一覧表示します。 メッセージサービステーブルの列の完全な一覧については、「 [message service table](message-service-tables.md)」を参照してください。
+**IMsgServiceAdmin::GetMsgServiceTable** メソッドは、セッション プロファイルに現在インストールされているメッセージ サービスを一覧表示する MAPI が保持するテーブルであるメッセージ サービス テーブルへのアクセスを提供します。 メッセージ サービス テーブルの列の完全な一覧については [、「Message Service Table」を参照してください](message-service-tables.md)。
   
-メッセージサービステーブルは静的です。 クライアントがアクセス権を付与されると、それ以降のメッセージサービスの追加または削除によって影響を受けることはありません。 現在のプロファイルにメッセージサービスがない場合、 **getmsgservicetable**は0行のテーブルを返します。 
+メッセージ サービス テーブルは静的です。 クライアントにアクセス権が与えられた後、それ以降のメッセージ サービスの追加または削除は、そのクライアントに影響を与えかねない。 現在のプロファイルにメッセージ サービスがない場合 **、GetMsgServiceTable** は行が 0 のテーブルを返します。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -62,7 +62,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MsgServiceTableDlg  <br/> |CMsgServiceTableDlg:: onrefreshview  <br/> |mfcmapi は、 **IMsgServiceAdmin:: getmsgservicetable**メソッドを使用して、ビューに表示するサービスの表をプロファイルに読み込みます。  <br/> |
+|MsgServiceTableDlg.cpp  <br/> |CMsgServiceTableDlg::OnRefreshView  <br/> |MFCMAPI は **、IMsgServiceAdmin::GetMsgServiceTable** メソッドを使用して、ビューでレンダリングするプロファイル内のサービス テーブルを読み込む。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -1,11 +1,11 @@
 ---
-title: ラップされた PST ストアプロバイダーのシャットダウン
+title: ラップされた PST ストア プロバイダーのシャットダウン
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 0c9e5917-1b96-323d-bf8b-1d3aa1f677d0
-description: '最終更新日: 2012 年7月2日'
+description: '最終更新日: 2012 年 7 月 2 日'
 ms.openlocfilehash: fa918920213ee77c4d0c1d3ccc239ae7cffe81fc
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -13,23 +13,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33409945"
 ---
-# <a name="shutting-down-a-wrapped-pst-store-provider"></a>ラップされた PST ストアプロバイダーのシャットダウン
+# <a name="shutting-down-a-wrapped-pst-store-provider"></a>ラップされた PST ストア プロバイダーのシャットダウン
 
  
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ラップされた個人用フォルダーファイル (pst) ストアプロバイダーの使用が終了したら、ラップされた PST ストアプロバイダーを適切にシャットダウンする必要があります。 ラップされた pst ストアプロバイダーの使用の詳細については、「ラップされ[た pst ストアプロバイダーの使用](using-a-wrapped-pst-store-provider.md)」を参照してください。
+ラップされた個人用フォルダー ファイル (PST) ストア プロバイダーの使用が完了したら、ラップされた PST ストア プロバイダーを適切にシャットダウンする必要があります。 ラップされた PST ストア プロバイダーの使用の詳細については、「Wrapped PST ストア プロバイダーの使用 [」を参照してください](using-a-wrapped-pst-store-provider.md)。
   
-ラップされた PST ストアプロバイダーをシャットダウンするには、 **[IMSProvider:: Shutdown](imsprovider-shutdown.md)** 関数を呼び出す必要があります。 この関数は、ラップされた PST ストアプロバイダーを正しい順序で閉じます。 
+ラップされた PST ストア プロバイダーをシャットダウンするには **[、IMSProvider::Shutdown 関数を呼び出す必要](imsprovider-shutdown.md)** があります。 この関数は、ラップされた PST ストア プロバイダーを順番に閉じます。 
   
-このトピックでは、サンプルのラップされた PST ストアプロバイダーのコード例を使用して、 **IMSProvider:: Shutdown**関数をデモンストレーションします。 このサンプルでは、レプリケーション API と共に使用することを目的とした、ラップされた PST プロバイダーを実装しています。 サンプルのラップされた pst ストアプロバイダーのダウンロードとインストールの詳細については、「[サンプルのラップされた pst ストアプロバイダーのインストール](installing-the-sample-wrapped-pst-store-provider.md)」を参照してください。 レプリケーション api の詳細については、「[レプリケーション api につい](about-the-replication-api.md)て」を参照してください。
+このトピックでは、サンプル ラップされた PST ストア プロバイダーのコード例を使用して **、IMSProvider::Shutdown** 関数を示します。 このサンプルでは、レプリケーション API と組み合わせて使用することを目的としたラップされた PST プロバイダーを実装しています。 サンプル ラップ PST ストア プロバイダーのダウンロードとインストールの詳細については、「サンプル ラップされた PST ストア プロバイダーのインストール [」を参照してください](installing-the-sample-wrapped-pst-store-provider.md)。 レプリケーション API の詳細については、「レプリケーション [API について」を参照してください](about-the-replication-api.md)。
   
-## <a name="shut-down-routine"></a>ルーチンをシャットダウンする
+## <a name="shut-down-routine"></a>シャットダウン ルーチン
 
-MAPI スプーラーは、ラップされた pst ストアプロバイダーを適切にシャットダウンできるように、ラップされた pst ストアプロバイダーを解放する直前に、 **[IMSProvider:: Shutdown](imsprovider-shutdown.md)** 関数を呼び出します。 この関数は、ラップされた PST ストアプロバイダーに関連付けられているすべてのセッションオブジェクトを終了します。 
+MAPI スプーラーは、ラップされた PST ストア プロバイダーが適切にシャットダウンできるよう、ラップされた PST ストア プロバイダーを解放する直前に **[IMSProvider::Shutdown](imsprovider-shutdown.md)** 関数を呼び出します。 この関数は、ラップされた PST ストア プロバイダーに関連付けられているすべてのセッション オブジェクトを終了します。 
   
-## <a name="cmsprovidershutdown-example"></a>cmsprovider:: ShutDown () の例
+## <a name="cmsprovidershutdown-example"></a>CMSProvider::ShutDown() の例
 
 ```cpp
 STDMETHODIMP CMSProvider::Shutdown(ULONG * pulFlags) 
@@ -46,13 +46,13 @@ STDMETHODIMP CMSProvider::Shutdown(ULONG * pulFlags)
 
 
 
-[ラップされた PST ストアプロバイダーのサンプルについて](about-the-sample-wrapped-pst-store-provider.md)
+[ラップされた PST ストア プロバイダーのサンプルについて](about-the-sample-wrapped-pst-store-provider.md)
   
-[ラップされた PST ストアプロバイダーのサンプルのインストール](installing-the-sample-wrapped-pst-store-provider.md)
+[ラップされた PST ストア プロバイダーのサンプルのインストール](installing-the-sample-wrapped-pst-store-provider.md)
   
-[ラップされた PST ストアプロバイダーの初期化](initializing-a-wrapped-pst-store-provider.md)
+[ラップされた PST ストア プロバイダーの初期化](initializing-a-wrapped-pst-store-provider.md)
   
-[ラップされた PST ストアプロバイダーへのログオン](logging-on-to-a-wrapped-pst-store-provider.md)
+[ラップされた PST ストア プロバイダーへのログオン](logging-on-to-a-wrapped-pst-store-provider.md)
   
-[ラップされた PST ストアプロバイダーの使用](using-a-wrapped-pst-store-provider.md)
+[ラップされた PST ストア プロバイダーの使用](using-a-wrapped-pst-store-provider.md)
 

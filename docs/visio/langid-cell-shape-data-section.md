@@ -28,14 +28,14 @@ Microsoft Office system のアプリケーションがサポートしている�
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | 提案. *名前*です。LangID (Prop) *name*には、行の名前を指定します。  <br/> |
+| セル名:  <br/> | Prop。  *name*  .Prop の場所の LangID。  *name*  は行名です  <br/> |
    
 プログラムから、インデックスによって [LangID] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionProp** <br/> |
-| 行インデックス:  <br/> |**visRowProp** +  *i* = ** 0、1、2...  <br/> |
-| セル インデックス:  <br/> |**viscustpropslangid** <br/> |
+| 行インデックス:  <br/> |**visRowProp**  +  *i* *=* 0, 1, 2...  <br/> |
+| セル インデックス:  <br/> |**visCustPropsLangID** <br/> |
    
 

@@ -25,13 +25,13 @@ ms.locfileid: "33410554"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[MAPIAllocateBuffer](mapiallocatebuffer.md)関数または[MAPIAllocateMore](mapiallocatemore.md)関数の呼び出しで割り当てられたメモリバッファーを解放します。 
+[MAPIAllocateBuffer](mapiallocatebuffer.md)関数または[MAPIAllocateMore](mapiallocatemore.md)関数の呼び出しで割り当てられたメモリ バッファーを解放します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapix  <br/> |
+|ヘッダー ファイル:  <br/> |Mapix.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 ULONG MAPIFreeBuffer(
@@ -41,26 +41,26 @@ ULONG MAPIFreeBuffer(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpbuffer_
+ _lpBuffer_
   
-> 順番以前に割り当てられたメモリバッファーへのポインター。 _lpbuffer_パラメーターで NULL が渡された場合、 **MAPIFreeBuffer**は何も実行しません。 
+> [in]以前に割り当てられたメモリ バッファーへのポインター。 lpBuffer パラメーターで  _NULL が渡_ された場合 **、MAPIFreeBuffer は何** もしません。 
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 呼び出しが成功し、要求されたメモリが解放されました。 **MAPIFreeBuffer**は、既に解放されている場所にある S_OK を返すことも、 **MAPIAllocateBuffer**および**MAPIAllocateMore**を使用してメモリブロックが割り当てられていない場合もあります。
+> 呼び出しは成功し、要求されたメモリを解放しました。 **MAPIFreeBuffer** は、既に解放されたS_OKまたは **MAPIAllocateBuffer** と **MAPIAllocateMore** でメモリ ブロックが割り当てられていない場合に、この値を返す場合もあります。
     
 ## <a name="remarks"></a>注釈
 
-通常、クライアントアプリケーションまたはサービスプロバイダーが[MAPIAllocateBuffer](mapiallocatebuffer.md)または[MAPIAllocateMore](mapiallocatemore.md)を呼び出す場合、オペレーティングシステムは、複数のポインターレベルを持つ1つまたは複数の複雑な構造体に1つ以上の連続したメモリバッファーを構築します。 mapi 関数またはメソッドがこのような内容のバッファーを作成すると、クライアントは後でバッファーに格納されているすべての構造を解放して、バッファーを作成した mapi 関数によって返されるバッファーへのポインターを**MAPIFreeBuffer**に渡します。 **MAPIFreeBuffer**を使用してメモリバッファーを解放するサービスプロバイダーの場合は、プロバイダーのサポートオブジェクトで返されるバッファーにポインターを渡す必要があります。 
+通常、クライアント アプリケーションまたはサービス プロバイダーが [MAPIAllocateBuffer](mapiallocatebuffer.md) または [MAPIAllocateMore](mapiallocatemore.md)を呼び出す場合、オペレーティング システムは、複数のレベルのポインターを持つ 1 つ以上の複雑な構造を 1 つの連続したメモリ バッファーに構築します。 MAPI 関数またはメソッドがこのような内容のバッファーを作成すると、クライアントは、バッファーを作成した MAPI 関数によって返されるバッファーへのポインターを **MAPIFreeBuffer** に渡して、バッファーに含まれるすべての構造体を後で解放できます。 サービス プロバイダーが **MAPIFreeBuffer** を使用してメモリ バッファーを解放するには、プロバイダーのサポート オブジェクトで返されるバッファーへのポインターを渡す必要があります。 
   
-**MAPIFreeBuffer**の呼び出しは、クライアントまたはプロバイダーがこのバッファーを使用して終了した直後に、特定のバッファーを解放する必要があります。 MAPI セッションの終了時に[imapisession:: Logoff](imapisession-logoff.md)メソッドを呼び出すだけでは、メモリバッファーは自動的には解放されません。 
+特定のバッファーを **解放する MAPIFreeBuffer** の呼び出しは、クライアントまたはプロバイダーがこのバッファーの使用を終了するとすぐに行う必要があります。 MAPI セッションの [最後に IMAPISession::Logoff](imapisession-logoff.md) メソッドを呼び出すだけで、メモリ バッファーは自動的に解放されません。 
   
-クライアントまたはサービスプロバイダーは、 **MAPIFreeBuffer**から正常に復帰した後、 _lpbuffer_で渡されたポインターが無効であることを前提として動作する必要があります。 **MAPIAllocateBuffer**または**MAPIAllocateMore**を介して、メッセージングシステムによって割り当てられていないメモリブロックまたは空きメモリブロックのいずれかがポインターに示されている場合、 **MAPIFreeBuffer**の動作は未定義です。 
+クライアントまたはサービス プロバイダーは  _、MAPIFreeBuffer_ から正常に戻った後、lpBuffer で渡されたポインターが無効であるという前提で **動作する必要があります**。 **MAPIAllocateBuffer** または **MAPIAllocateMore** または空きメモリ ブロックを介してメッセージング システムによって割り当てられていないメモリ ブロックがポインターによって示されている場合 **、MAPIFreeBuffer** の動作は未定義です。 
   
 > [!NOTE]
-> **MAPIFreeBuffer**に null ポインターを渡すと、 **MAPIFreeBuffer**はポインターを null に初期化し、それを最初にテストしなくても、ポインターを null に初期化し、クリーンアップコード内でそれらを解放できるため、アプリケーションのクリーンアップコードがより簡単になります。 
+> **MAPIFreeBuffer** に null ポインターを渡すと **、MAPIFreeBuffer** は NULL へのポインターを初期化し、最初にテストすることなくクリーンアップ コードで解放できるので、アプリケーションのクリーンアップ コードを簡単かつ小さくできます。 
   
 ## <a name="see-also"></a>関連項目
 

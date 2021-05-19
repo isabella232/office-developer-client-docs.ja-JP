@@ -1,5 +1,5 @@
 ---
-title: �}���`�X���b�h�����ƃ������Ǘ�
+title: マルチスレッド処理とメモリ管理
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer

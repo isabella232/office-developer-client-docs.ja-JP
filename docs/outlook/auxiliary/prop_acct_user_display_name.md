@@ -14,24 +14,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33419472"
 ---
-# <a name="propacctuserdisplayname"></a>PROP_ACCT_USER_DISPLAY_NAME
+# <a name="prop_acct_user_display_name"></a>PROP_ACCT_USER_DISPLAY_NAME
 
 ユーザーの表示名を設定または返します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IOlkAccount](iolkaccount.md)を参照してください。
+[「IOlkAccount」を参照してください](iolkaccount.md)。
   
 |||
 |:-----|:-----|
 |識別子:  <br/> |0x000B  <br/> |
 |プロパティの種類:  <br/> |PT_UNICODE  <br/> |
-|プロパティタグ:  <br/> |0x000b001f  <br/> |
-|接続  <br/> |読み取り/書き込み  <br/> |
+|プロパティ タグ:  <br/> |0x000B001F  <br/> |
+|アクセス:  <br/> |読み取り/書き込み  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-[IOlkAccount:: getprop](iolkaccount-getprop.md)または[IOlkAccount:: setprop](iolkaccount-setprop.md)を使用して、このプロパティを取得または設定します。
+[IOlkAccount::GetProp](iolkaccount-getprop.md)または[IOlkAccount::SetProp](iolkaccount-setprop.md)をそれぞれ使用して、このプロパティを取得または設定します。
   
 ## <a name="see-also"></a>関連項目
 

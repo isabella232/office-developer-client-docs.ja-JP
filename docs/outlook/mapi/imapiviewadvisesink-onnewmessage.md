@@ -25,7 +25,7 @@ ms.locfileid: "33419605"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームビューアーに、新規または既存のメッセージがフォームにロードされたことを通知します。
+新しいメッセージまたは既存のメッセージがフォームに読み込まれたとフォーム ビューアーに通知します。
   
 ```cpp
 HRESULT OnNewMessage( void );
@@ -39,17 +39,17 @@ HRESULT OnNewMessage( void );
 
 S_OK 
   
-> 通知に成功しました。
+> 通知が成功しました。
     
 ## <a name="remarks"></a>注釈
 
-form オブジェクトは、 [IPersistMessage:: InitNew](ipersistmessage-initnew.md)または[IPersistMessage:: Load](ipersistmessage-load.md)メソッドのいずれかを使用して、フォームにメッセージが読み込まれるたびに**IMAPIViewAdviseSink:: onnewmessage**メソッドを呼び出します。 
+フォーム オブジェクトは [、IPersistMessage::InitNew](ipersistmessage-initnew.md)メソッドまたは [IPersistMessage::Load](ipersistmessage-load.md)メソッドを使用してフォームにメッセージが読み込まれるたびに **IMAPIViewAdviseSink::OnNewMessage** メソッドを呼び出します。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-閲覧者が以前に表示していたメッセージをポイントしていないため、アクティブポインターをフォームオブジェクトに解放します。 
+アクティブなポインターをフォーム オブジェクトに離すのは、ビューアーが以前表示したメッセージを指し示しなくなったためです。 
   
-フォーム通知の詳細については、「[フォーム通知の送信と受信](sending-and-receiving-form-notifications.md)」を参照してください。
+フォーム通知の詳細については、「フォーム通知の送受信 [」を参照してください](sending-and-receiving-form-notifications.md)。
   
 ## <a name="see-also"></a>関連項目
 

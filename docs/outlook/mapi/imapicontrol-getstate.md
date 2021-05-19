@@ -25,7 +25,7 @@ ms.locfileid: "33419010"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ボタンコントロールが有効であるか無効であるかを示す値を取得します。
+ボタン コントロールが有効か無効かを示す値を取得します。
   
 ```cpp
 HRESULT GetState(
@@ -40,29 +40,29 @@ HRESULT GetState(
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lアウト状態_
+ _lpulState_
   
-> 読み上げボタンコントロールの状態を示す値へのポインター。 次のいずれかの値を返すことができます。
+> [out]ボタン コントロールの状態を示す値へのポインター。 次のいずれかの値を返します。
     
 MAPI_DISABLED 
   
-> [ボタン] コントロールは無効になっていて、クリックできません。 
+> ボタン コントロールは無効になり、クリックできません。 
     
 MAPI_ENABLED 
   
-> [ボタン] コントロールが有効になり、クリックできるようになります。
+> ボタン コントロールが有効で、クリックできます。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> ボタンコントロールの状態が正常に取得されました。
+> ボタン コントロールの状態が正常に取得されました。
     
 ## <a name="remarks"></a>注釈
 
-サービスプロバイダーは、 **IMAPIControl:: GetState**メソッドを実装して、ボタンコントロールの状態を MAPI に提供します。 ボタンが有効になっている場合は、マウスのクリックまたはキーの押すに応答することができます。 無効にすると、ボタンは淡色表示になり、マウスクリックまたはキーを押しても反応しません。 
+サービス プロバイダーは **、IMAPIControl::GetState** メソッドを実装して、MAPI にボタン コントロールの状態を提供します。 ボタンが有効になっている場合は、マウスのクリックまたはキーを押す操作に応答できます。 無効にすると、ボタンが淡色表示になり、マウスのクリックやキーの押しに応答しません。 
   
-**GetState**およびその他の[IMAPIControl: IUnknown](imapicontroliunknown.md)メソッドを実装する方法の詳細については、「 [Control オブジェクトの実装](control-object-implementation.md)」を参照してください。
+**GetState** および他の [IMAPIControl : IUnknown](imapicontroliunknown.md)メソッドを実装する方法の詳細については [、「Control Object Implementation 」を参照してください](control-object-implementation.md)。
   
 ## <a name="see-also"></a>関連項目
 

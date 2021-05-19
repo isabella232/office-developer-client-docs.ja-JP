@@ -21,20 +21,20 @@ ms.locfileid: "33415153"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-microsoft exchange server 2010 または exchange server 2013 のメッセージストアのエントリ識別子の古いスタイル (microsoft Outlook 2002 以前のバージョン) が格納されています。
+Microsoft Exchange Server 2010 または Exchange Server 2013 メッセージ ストアのエントリ識別子の古いスタイル (Microsoft Outlook 2002 以前のバージョン) が含まれる。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_STORE_ENTRYID_EMSMDB_V1  <br/> |
-|識別子:  <br/> |0x65f60102  <br/> |
+|識別子:  <br/> |0x65F60102  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |ID プロパティ  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-Microsoft Outlook 2003 以降では、サーバー fqdn がエントリ id に統合されているため、参照用の rpc が追加されることはありません。 ただし、これによりエントリ id が長くなり、2つのエントリ id が等しいかどうかを判断するために**compareentryids**メソッドを使用する必要があるシナリオが増えます。 PR_STORE_ENTRYID_EMSMDB_V1 (PidTagStoreIdEmsbdbV1) プロパティは、microsoft Outlook 2002 (microsoft Office XP) および以前のバージョンで使用されていた Exchange Server エントリ ID の古い形式にアクセスします。 これにより、スペースを節約したり、エントリ id が等しいかどうかを判断するために必要な**compareentryids**呼び出しの数を減らしたりすることもできます。 古いエントリ id を使用してメールボックスを開くと、参照が必要な場合に追加の rpc が発生する可能性があることに注意してください。 
+Microsoft Outlook 2003 から、サーバー FQDN はエントリの ID に統合され、参照用の RPC が追加されるのを回避しました。 ただし、これによりエントリの ID が長くなり、2 つのエントリの ID が同等かどうかを判断するために **CompareEntryIDs** メソッドを使用する必要があるシナリオが多くなります。 PR_STORE_ENTRYID_EMSMDB_V1 (PidTagStoreIdEmsbdbV1) プロパティは、Microsoft Outlook 2002 (Microsoft Office XP) および以前のバージョンで使用されている Exchange Server エントリ ID の古い形式にアクセスします。 これにより、スペースを節約し、エントリの ID が等しいかどうかを判断するために必要な **CompareEntryIDs** 呼び出しの数も削減できます。 古いエントリの ID を使用してメールボックスを開く場合、参照が必要な場合は、追加の RPC が発生する場合があります。 
   
-キャッシュモードで PR_STORE_ENTRYID_EMSMDB_V1 プロパティにアクセスするには、MAPI_NO_CACHE フラグと[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを使用してキャッシュをバイパスする必要があります。 **PR_STORE_ENTRYID_EMSMDB_V1**が使用できない場合は、コードを PR_STORE_ENTRYID に戻す必要があります。 PR_STORE_ENTRYID_EMSMDB_V1 プロパティをサポートしているのは、outlook 2003 ~ Microsoft outlook 2013 のみです。 
+キャッシュ モードで PR_STORE_ENTRYID_EMSMDB_V1 プロパティにアクセスするには [、IMAPIProp::GetProps](imapiprop-getprops.md) メソッドで MAPI_NO_CACHE フラグを使用してキャッシュをバイパスする必要があります。 この **PR_STORE_ENTRYID_EMSMDB_V1** 使用できない場合は、コードは自動的にPR_STORE_ENTRYID。 2003 Outlook 2003 Microsoft Outlook 2013プロパティPR_STORE_ENTRYID_EMSMDB_V1します。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -47,7 +47,7 @@ Microsoft Outlook 2003 以降では、サーバー fqdn がエントリ id に�
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

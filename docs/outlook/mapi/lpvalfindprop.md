@@ -21,13 +21,13 @@ ms.locfileid: "33419640"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロパティセット内の指定されたプロパティを検索します。
+プロパティ セット内の指定されたプロパティを検索します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー。  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー。  <br/> |
    
 ```cpp
 LPSPropValue LpValFindProp(
@@ -41,23 +41,23 @@ LPSPropValue LpValFindProp(
 
  _ulPropTag_
   
-> 順番タグを指定します。このプロパティは、 _lpproparray_パラメーターで示されます。 
+> [in]  _lpPropArray_ パラメーターで示されるプロパティ セット内で検索するプロパティのタグ。 
     
- _cvalues_
+ _cValues_
   
-> 順番_lpproparray_パラメーターで示される、プロパティセット内のプロパティの数。 
+> [in]  _lpPropArray_ パラメーターで示されるプロパティ セット内のプロパティの数。 
     
- _lpproparray_
+ _lpPropArray_
   
-> 順番検索するプロパティを定義する**spropvalue**構造の配列です。 
+> [in]検索する **プロパティを定義する SPropValue** 構造体の配列。 
     
 ## <a name="return-value"></a>戻り値
 
-**lpvalfindprop**関数は、入力プロパティタグに一致するプロパティを定義する**spropvalue**構造体を返します。一致しない場合は NULL になります。 
+**LpValFindProp** 関数は、入力プロパティ タグに一致するプロパティを定義する **SPropValue** 構造体を返します。一致しない場合は NULL を返します。 
   
 ## <a name="remarks"></a>注釈
 
-**lpvalfindprop**関数は、 **ppropfindprop**と同じです。
+**LpValFindProp** 関数は **PpropFindProp と同じです**。
   
 ## <a name="see-also"></a>関連項目
 

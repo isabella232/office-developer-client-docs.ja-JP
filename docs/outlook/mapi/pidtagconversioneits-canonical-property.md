@@ -25,30 +25,30 @@ ms.locfileid: "33420004"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-変換を記述するために転送中のメッセージに適用される、エンコードされた情報の種類 (eits が含まれます。
+変換を記述するために転送中のメッセージに適用されるエンコードされた情報の種類 (EIT) を格納します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_CONVERSION_EITS  <br/> |
-|識別子:  <br/> |0x000c  <br/> |
+|識別子:  <br/> |0x000C  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |Exchange  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-このプロパティは、配信不能レポートと配信レポートの両方に使用されます。
+X.400 環境では、配信以外のレポートと配信レポートの両方にこのプロパティを使用します。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
+> 関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -58,7 +58,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

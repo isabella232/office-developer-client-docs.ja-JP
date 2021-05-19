@@ -1,5 +1,5 @@
 ---
-title: StDev 関数 (Access カスタム web アプリ)
+title: StDev 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33410190"
 ---
-# <a name="stdev-function-access-custom-web-app"></a>StDev 関数 (Access カスタム web アプリ)
+# <a name="stdev-function-access-custom-web-app"></a>StDev 関数 (Access カスタム Web アプリ)
 
 指定した式内のすべての値の統計標準偏差を返します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "33410190"
   
 ## <a name="syntax"></a>構文
 
- **StDev**(*NumericExpression*) 
+ **StDev** (*NumericExpression*) 
   
 **StDev** 関数には、以下の引数があります。 
   

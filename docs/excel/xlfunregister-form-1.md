@@ -1,5 +1,5 @@
 ---
-title: xlfUnregister (�`�� 1)
+title: xlfUnregister (形式 1)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer

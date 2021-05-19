@@ -25,7 +25,7 @@ ms.locfileid: "33419850"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームのメッセージクラスに基づいて新しいメッセージを作成するためのフォームを開きます。
+フォームを開き、フォームのメッセージ クラスに基づいて新しいメッセージを作成します。
   
 ```cpp
 HRESULT CreateForm(
@@ -39,29 +39,29 @@ HRESULT CreateForm(
 
 ## <a name="parameters"></a>パラメーター
 
- _uluiparam_
+ _ulUIParam_
   
-> 順番フォームが開かれている間に表示される進行状況インジケーターの親ウィンドウへのハンドル。 _uluiparam_パラメーターは、 _ulflags_パラメーターで MAPI_DIALOG フラグが設定されていない場合は無視されます。 
+> [in]フォームを開いている間に表示される進行状況インジケーターの親ウィンドウへのハンドル。 _ulUIParam_ パラメーターは _、ulFlags_ パラメーター MAPI_DIALOGフラグが設定されていない限り、無視されます。 
     
  _ulFlags_
   
-> 順番フォームを開く方法を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]フォームの開き方を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_DIALOG 
   
-> 状態を提供するユーザーインターフェイスを表示します。詳細については、ユーザーに確認します。 このフラグが設定されていない場合、ユーザーインターフェイスは表示されません。
+> ユーザー インターフェイスを表示して、状態を提供するか、ユーザーに詳細を求めるプロンプトを表示します。 このフラグが設定されていない場合、ユーザー インターフェイスは表示されません。
     
  _pfrminfoToActivate_
   
-> 順番フォームを開くために使用されるフォーム情報オブジェクトへのポインター。
+> [in]フォームを開くのに使用されるフォーム情報オブジェクトへのポインター。
     
- _refiidtoask_
+ _refiidToAsk_
   
-> 順番作成された form オブジェクトに対して返されるインターフェイスのインターフェイス識別子 (IID) へのポインター。 _refiidtoask_パラメーターを NULL にすることはできません。 
+> [in]作成されたフォーム オブジェクトに対して返されるインターフェイスのインターフェイス識別子 (IID) へのポインター。 _refiidToAsk_ パラメーターは NULL にすることはできません。 
     
  _ppvObj_
   
-> 読み上げ返されるインターフェイスへのポインターへのポインター。
+> [out]返されたインターフェイスへのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -71,15 +71,15 @@ S_OK
     
 MAPI_E_NO_INTERFACE 
   
-> 要求されたインターフェイスは、form オブジェクトでサポートされていません。
+> 要求されたインターフェイスは、フォーム オブジェクトではサポートされていません。
     
 ## <a name="remarks"></a>注釈
 
-フォーム閲覧者は、 **imapiformmgr:: CreateForm**メソッドを呼び出して、フォームのメッセージクラスに基づいて新しいメッセージを作成するためのフォームを開きます。 指定したフォーム情報オブジェクトで説明されているフォームのフォームサーバーのインスタンスを作成することによって、 **CreateForm**によってフォームが開きます。 必要に応じて、 **CreateForm**は[imapiformmgr::P repareform](imapiformmgr-prepareform.md)メソッドを呼び出して、フォームサーバーコードをユーザーのディスクにダウンロードします。 
+フォーム ビューアーは **IMAPIFormMgr::CreateForm** メソッドを呼び出してフォームを開き、フォームのメッセージ クラスに基づいて新しいメッセージを作成します。 **CreateForm** は、指定されたフォーム情報オブジェクトで説明したように、そのフォームのフォーム サーバーのインスタンスを作成してフォームを開きます。 必要に応じて **、CreateForm** は [IMAPIFormMgr::P repareForm](imapiformmgr-prepareform.md) メソッドを呼び出して、フォーム サーバー コードをユーザーのディスクにダウンロードします。 
   
-_pfrminfoToActivate_パラメーターは、正しく解決されたフォーム情報オブジェクトを指している必要があります。 
+_pfrminfoToActivate_ パラメーターは、正しく解決されたフォーム情報オブジェクトを指している必要があります。 
   
-フォームを開いた後、呼び出し元フォームビューアーでは、 [IPersistMessage](ipersistmessageiunknown.md)インターフェイスを使用してメッセージを設定し、必要に応じてフォームのビューコンテキストを設定できます。 詳細については、「[フォームサーバーの起動](launching-a-form-server.md)」を参照してください。 
+フォームを開いた後、呼び出し元のフォーム ビューアーは [、IPersistMessage](ipersistmessageiunknown.md) インターフェイスを使用してメッセージを設定する必要があります。必要に応じて、フォームのビュー コンテキストを設定できます。 詳細については、「フォーム サーバーの [起動」を参照してください](launching-a-form-server.md)。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -87,7 +87,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIFormFunctions  <br/> |createanddisplaynewmailinfolder  <br/> |mfcmapi は、 **imapiformmgr:: CreateForm**メソッドを使用して、表示する前にフォームを作成します。  <br/> |
+|MAPIFormFunctions.cpp  <br/> |CreateAndDisplayNewMailInFolder  <br/> |MFCMAPI は **、IMAPIFormMgr::CreateForm** メソッドを使用して、フォームを表示する前にフォームを作成します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -102,5 +102,5 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[フォームサーバーの起動](launching-a-form-server.md)
+[フォーム サーバーの起動](launching-a-form-server.md)
 

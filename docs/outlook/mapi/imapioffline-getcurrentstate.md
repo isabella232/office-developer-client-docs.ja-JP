@@ -1,5 +1,5 @@
 ---
-title: imapiofflinegetlevel
+title: IMAPIOfflineGetCurrentState
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33419871"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-オフラインオブジェクトの現在のオンライン状態またはオフライン状態を取得します。
+オフライン オブジェクトの現在のオンライン状態またはオフライン状態を取得します。
   
 ```cpp
 HRESULT GetCurrentState( 
@@ -35,9 +35,9 @@ HRESULT GetCurrentState(
 
 ## <a name="parameters"></a>パラメーター
 
- _/アウト状態_
+ _pulState_
   
-> 読み上げオフラインオブジェクトの現在のオンライン状態またはオフライン状態。 次の2つの値のいずれかである必要があります。
+> [out]オフライン オブジェクトの現在のオンライン状態またはオフライン状態。 この値は、次の 2 つの値の 1 つである必要があります。
     
 MAPIOFFLINE_STATE_ONLINE
   

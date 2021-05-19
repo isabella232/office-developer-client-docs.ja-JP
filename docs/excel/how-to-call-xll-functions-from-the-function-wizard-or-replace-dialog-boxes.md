@@ -24,7 +24,7 @@ ms.locfileid: "33410750"
   
 There are two circumstances where a function can be called from an Excel dialog box. One is the **Paste Function Arguments** dialog box, where users are able to construct a function call one argument at a time. The other is when formulas are being modified and reentered by Excel in the **Replace** dialog box. For the **Paste Function Arguments** dialog box, you might not want your function to execute normally. This may be because it takes a long time to execute and you do not want to slow down the use of the dialog box. 
   
-Both the **Paste Function** dialog box and the **Replace** dialog box have the Windows class name **bosa_sdm_XL**n, where n is a number. Windows provides an API function, **GetClassName**, that obtains this name from a Windows handle, an HWND variable type. It also provides another function, **EnumWindows**, that calls a supplied callback function (within your DLL) once for every top-level window that is currently open.
+Both the **Paste Function** dialog box and the **Replace** dialog box have the Windows class name **bosa_sdm_XL** n, where n is a number. Windows provides an API function, **GetClassName**, that obtains this name from a Windows handle, an HWND variable type. It also provides another function, **EnumWindows**, that calls a supplied callback function (within your DLL) once for every top-level window that is currently open.
   
 コールバック関数は、次の手順でのみ実行する必要があります。
   
@@ -32,7 +32,7 @@ Both the **Paste Function** dialog box and the **Replace** dialog box have the W
     
 2. Windows によって渡されたハンドルからクラス名を取得します。
     
-3. クラス名が **bosa_sdm_XL**n の形式であることを確認します。
+3. クラス名が **bosa_sdm_XL** n の形式であることを確認します。
     
 4. If you need to distinguish between the two dialog boxes, check if the dialog box title contains some identifying text. The window title is obtained using the Windows API call **GetWindowText**.
     

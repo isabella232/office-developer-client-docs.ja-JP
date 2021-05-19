@@ -25,7 +25,7 @@ ms.locfileid: "33419185"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[IExchangeModifyTable](iexchangemodifytableiunknown.md)インターフェイスを使用して、テーブル内のこれらの行に対して実行される行と操作を表す[rowentry](rowentry.md)構造の配列が含まれています。 
+行を表す [ROWENTRY](rowentry.md) 構造体の配列と [、IExchangeModifyTable](iexchangemodifytableiunknown.md) インターフェイスを介してテーブル内の行に対して実行される操作を格納します。 
   
 ```cpp
 typedef struct
@@ -36,15 +36,15 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **centries**
+ **cEntries**
   
-> **aentries**メンバーによって指定された配列内のエントリの数。 
+> **aEntries** メンバーで指定された配列内のエントリの数。 
     
- **aentries [MAPI_DIM]**
+ **aEntries[MAPI_DIM]**
   
-> 行と、テーブル内のそれらの行に対して実行される操作を含む**rowentry**構造の配列。 
+> 行と、テーブル内のそれらの行に対して実行される操作を含む **ROWENTRY** 構造体の配列。 
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -52,7 +52,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ルール  <br/> |crulesdlg:: GetSelectedItems  <br/> |以降の**modifytable**アクションに対して選択されたルールの一覧を作成するために使用されます。  <br/> |
+|RulesDlg.cpp  <br/> |CRulesDlg::GetSelectedItems  <br/> |後続の ModifyTable アクションで選択したルールの一覧を **作成するために使用** します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

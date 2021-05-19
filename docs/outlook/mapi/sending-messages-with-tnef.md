@@ -1,5 +1,5 @@
 ---
-title: TNEF を使用してメッセージを送信する
+title: TNEF を使用したメッセージの送信
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,16 +15,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420851"
 ---
-# <a name="sending-messages-with-tnef"></a>TNEF を使用してメッセージを送信する
+# <a name="sending-messages-with-tnef"></a>TNEF を使用したメッセージの送信
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-多くのトランスポートプロバイダーは、トランスポートニュートラルカプセル化形式 (TNEF) を使用して、すべての送信メッセージを自動的に送信します。 TNEF は、多くのクライアントやメッセージストアプロバイダーがメッセージでサポートしている書式付きテキスト、さまざまな種類の添付ファイル、およびカスタムメッセージクラスのカスタムプロパティを送信するために使用されます。 ほとんどのトランスポートプロバイダーの既定のモードは TNEF を使用して送信メッセージを送信するものですが、一部のトランスポートプロバイダーではサポートされていません。 TNEF がサポートされていない場合でも、IPM メッセージを送受信する標準のメッセージングクライアントには問題はありません。 ただし、カスタムプロパティを必要とするフォームベースのクライアントまたはクライアントの場合は、TNEF の使用が重要です。 フォームまたはカスタムプロパティに依存するクライアントの設計者は、使用するトランスポートプロバイダーの機能を認識する必要があります。
+多くのトランスポート プロバイダーは、トランスポート ニュートラル カプセル化形式 (TNEF) を使用してすべての送信メッセージを自動的に送信します。 TNEF は、多くのクライアントとメッセージ ストア プロバイダーがメッセージでサポートする書式設定されたテキスト、さまざまな種類の添付ファイル、カスタム メッセージ クラスのカスタム プロパティを送信するために使用されます。 ほとんどのトランスポート プロバイダーの既定のモードでは、TNEF を使用して送信メッセージを送信しますが、一部のトランスポート プロバイダーではサポートされていません。 TNEF のサポートが不足している場合は、IPM メッセージを送受信する標準的なメッセージング クライアントでは問題ではありません。 ただし、カスタム プロパティを必要とするフォーム ベースのクライアントまたはクライアントでは、TNEF の使用が不可欠です。 フォームまたはカスタム プロパティに依存するクライアントのデザイナーは、使用するトランスポート プロバイダーの機能を認識する必要があります。
   
-メッセージ受信者は、 **PR_SEND_RICH_INFO**プロパティを設定することで、トランスポートプロバイダーが TNEF でメッセージを送信するかどうかを制御できます。 詳細については、「 **PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md))」を参照してください。 受信者の**PR_SEND_RICH_INFO**プロパティが TRUE に設定されている場合、TNEF をサポートするトランスポートプロバイダーがメッセージと共にそれを送信します。 このプロパティを FALSE に設定すると、書式設定は破棄されます。 **PR_SEND_RICH_INFO**が存在しない場合は、トランスポートプロバイダーが既定のアクションを選択する必要があります。 
+メッセージ受信者は、トランスポート プロバイダーが TNEF でメッセージを送信するかどうかを制御するには、PR_SEND_RICH_INFOプロパティ **を設定** します。 詳細については、「PR_SEND_RICH_INFO **(** [PidTagSendRichInfo )」を参照してください](pidtagsendrichinfo-canonical-property.md)。 受信者のプロパティPR_SEND_RICH_INFO  TRUE に設定すると、TNEF をサポートするトランスポート プロバイダーがメッセージと一緒に送信します。 プロパティが FALSE に設定されている場合、書式設定は破棄されます。 この **PR_SEND_RICH_INFO** 存在しない場合は、既定のアクション コースを選択する必要があります。 
   
-クライアントとサービスプロバイダーはカスタム受信者を作成するときに、 _ulflags_パラメーターの**** MAPI_SEND_NO_RICH_INFO フラグを**IAddrBook:: createoneoff** **に渡すことによって、PR_SEND_RICH_INFO プロパティの値に影響を与える可能性があります。imapisupport:: createoneoff**呼び出し。 詳細については、「 [IAddrBook:: createoneoff](iaddrbook-createoneoff.md) 」および「 [imapisupport:: createoneoff](imapisupport-createoneoff.md)」を参照してください。 MAPI_SEND_NO_RICH_INFO を渡すと、MAPI はカスタム受信者の**PR_SEND_RICH_INFO**プロパティを FALSE に設定します。ほとんどの場合、フラグを渡さないと、MAPI によってプロパティが TRUE に設定されます。 1つの例外は、カスタム受信者のアドレスがインターネットアドレスとして解釈される場合です。 この1つの状況では、MAPI は**PR_SEND_RICH_INFO**を FALSE に設定します。 
+クライアントとサービス プロバイダーがカスタム受信者を作成すると _、ulFlags_ パラメーターの MAPI_SEND_NO_RICH_INFO フラグを **IAddrBook::CreateOneOff** または **IMAPISupport::CreateOneOff** 呼び出しに渡して、PR_SEND_RICH_INFO プロパティの値に影響を与える可能性があります。  詳細については [、「IAddrBook::CreateOneOff」](iaddrbook-createoneoff.md) および [「IMAPISupport::CreateOneOff」を参照してください](imapisupport-createoneoff.md)。 このMAPI_SEND_NO_RICH_INFOすると、MAPI はカスタム受信者のユーザー設定プロパティ **PR_SEND_RICH_INFO** FALSE に設定します。ほとんどの場合、フラグを渡していない場合、MAPI はプロパティを TRUE に設定します。 1 つの例外は、カスタム受信者のアドレスがインターネット アドレスと解釈される場合です。 この 1 つの状況では、MAPI は、エラー **PR_SEND_RICH_INFO** FALSE に設定します。 
   
 

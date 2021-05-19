@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251581
 localization_priority: Normal
 ms.assetid: 519d79d4-9178-2231-c26d-aa7f31a43412
-description: シートのマスターシェイプ名を文字列として返します。または、シートにマスターシェイプがない場合は、文字列 ' master ' を返します。
+description: シートのマスター名を文字列として返します。または、シートにマスターがない場合は文字列 'no master' を返します。
 ms.openlocfilehash: 7732cf9e8b23e2fd0fc2e3f2cc8d9ef4f39fd67f
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33414754"
 ---
 # <a name="mastername-function"></a>MASTERNAME 関数
 
-シートのマスターシェイプ名を文字列として返します。または\<、シート\>にマスターシェイプがない場合は、文字列 "master" を返します。
+シートのマスター名を文字列として返します。または、シートにマスター文字がない場合は文字列 "マスターなし \< \> " を返します。
   
 ## <a name="syntax"></a>構文
 
-mastername ([* * *langID_opt* * *]) 
+MASTERNAME ([ ** *langID_opt* ** ]) 
   
 ### <a name="parameters"></a>パラメーター
 

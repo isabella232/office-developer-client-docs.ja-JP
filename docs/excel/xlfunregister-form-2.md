@@ -1,5 +1,5 @@
 ---
-title: xlfUnregister (�`�� 2)
+title: xlfUnregister (形式 2)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -44,7 +44,7 @@ DLL の名前。
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-成功した場合、**TRUE** (**xltypeBool**) を返します。 失敗した場合は、**FALSE** を返します。
+成功した場合は、**TRUE** (**xltypeBool**) が返されます。失敗した場合は、**FALSE** が返されます。
   
 ## <a name="remarks"></a>注釈
 

@@ -25,11 +25,11 @@ ms.locfileid: "33420256"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定した数の[smapiformprop](smapiformprop.md)構造体を含む既存の[smapiformproparray](smapiformproparray.md)の構造体内のバイト数を計算します。 
+指定した数の[SMAPIFormProp](smapiformprop.md)構造体を含む既存の[SMAPIFormPropArray](smapiformproparray.md)構造体のバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
 |関連する構造:  <br/> |**SMAPIFormPropArray** <br/> |
    
 ```cpp
@@ -38,9 +38,9 @@ CbMAPIFormPropArray (_c)
 
 ## <a name="parameters"></a>パラメーター
 
- __c_
+ _ _c_
   
-> 問題の**smapiformpropar射線**の構造内の**smapiformprop**構造体の数。 
+> 問題の **SMAPIFormPropArray** 構造体内の **SMAPIFormProp** 構造体の数。 
     
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: セクション (Visio シェイプシートリファレンス)
+title: セクション (Visio シェイプシート リファレンス)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,27 +13,27 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33419227"
 ---
-# <a name="sections-visio-shapesheet-reference"></a>セクション (Visio シェイプシートリファレンス)
+# <a name="sections-visio-shapesheet-reference"></a>セクション (Visio シェイプシート リファレンス)
 
 ## <a name="in-this-section"></a>このセクションの内容
 
 - [[1-D Endpoints] セクション](1-d-endpoints-section.md)
     
-- [3-d 回転のプロパティセクション](3-d-rotation-properties-section.md)
+- [[3-D Rotation プロパティ] セクション](3-d-rotation-properties-section.md)
     
 - [[操作タグ] セクション](action-tag-section.md)
     
 - [[Actions] セクション](actions-section.md)
     
-- [その他の効果のプロパティセクション](additional-effect-properties-section.md)
+- [[その他の効果のプロパティ] セクション](additional-effect-properties-section.md)
     
 - [[Alignment] セクション](alignment-section.md)
     
 - [[Annotation] セクション](annotation-section.md)
     
-- [ベベルのプロパティセクション](bevel-properties-section.md)
+- [[ベベルのプロパティ] セクション](bevel-properties-section.md)
     
-- [図形の動作の変更セクション](change-shape-behavior-section.md)
+- [[図形の動作の変更] セクション](change-shape-behavior-section.md)
     
 - [[Character] セクション](character-section.md)
     
@@ -47,7 +47,7 @@ ms.locfileid: "33419227"
     
 - [[Fill Format] セクション](fill-format-section.md)
     
-- [塗りつぶしのグラデーションセクション](fill-gradient-section.md)
+- [[塗りつぶしのグラデーション] セクション](fill-gradient-section.md)
     
 - [[Foreign Image Info] セクション](foreign-image-info-section.md)
     
@@ -55,7 +55,7 @@ ms.locfileid: "33419227"
     
 - [[Glue Info] セクション](glue-info-section.md)
     
-- [グラデーションのプロパティセクション](gradient-properties-section.md)
+- [[グラデーションのプロパティ] セクション](gradient-properties-section.md)
     
 - [[Group Properties] セクション](group-properties-section.md)
     
@@ -69,7 +69,7 @@ ms.locfileid: "33419227"
     
 - [[Line Format] セクション](line-format-section.md)
     
-- [線のグラデーションセクション](line-gradient-section.md)
+- [[線のグラデーション] セクション](line-gradient-section.md)
     
 - [[Miscellaneous] セクション](miscellaneous-section.md)
     
@@ -83,11 +83,11 @@ ms.locfileid: "33419227"
     
 - [[Protection] セクション](protection-section.md)
     
-- [クイックスタイルセクション](quick-style-section.md)
+- [[クイック スタイル] セクション](quick-style-section.md)
     
 - [[Reviewer] セクション](reviewer-section.md)
     
-- [[ &amp;ルーラーのグリッド] セクション](rulergrid-section.md)
+- [Ruler &amp; Grid セクション](rulergrid-section.md)
     
 - [[Scratch] セクション](scratch-section.md)
     
@@ -107,7 +107,7 @@ ms.locfileid: "33419227"
     
 - [[Text Transform] セクション](text-transform-section.md)
     
-- [テーマのプロパティセクション](theme-properties-section.md)
+- [[テーマのプロパティ] セクション](theme-properties-section.md)
     
 - [[User-defined Cells] セクション](user-defined-cells-section.md)
     

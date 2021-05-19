@@ -26,14 +26,14 @@ ms.locfileid: "33415762"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | タグ.  *名前*です。SmartTags の説明。 *name*は、アクションタグ行の名前です。  <br/> |
+| セル名:  <br/> | SmartTags。  *name*  .SmartTags の説明。 *name*  はアクション タグ行の名前です。  <br/> |
    
 プログラムから、インデックスによって [Description] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionSmartTag** <br/> |
-| 行インデックス:  <br/> |**visRowSmartTag** +  *i* = ** 0、1、2...  <br/> |
+| 行インデックス:  <br/> |**visRowSmartTag**  +  *i* *=* 0, 1, 2...  <br/> |
 | セル インデックス:  <br/> |**visSmartTagDescription** <br/> |
    
 

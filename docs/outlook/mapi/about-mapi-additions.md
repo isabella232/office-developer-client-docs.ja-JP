@@ -17,7 +17,7 @@ ms.locfileid: "33415293"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-mapi 追加機能は、メッセージングアプリケーションプログラミングインターフェイス (mapi) に属する api (データ型、関数、プロパティなど) で、以前は公開されておらず、mapi プログラマーズリファレンスの一部として文書化されています。 これらには、次の定義とプロパティが含まれています。
+MAPI の追加は、以前は MAPI プログラマリファレンスの一部として公開および文書化されていないデータ型、関数、プロパティなど、メッセージング アプリケーション プログラミング インターフェイス (MAPI) に属する API です。 これらの定義には、次の定義とプロパティが含まれます。
   
 ## <a name="constant-definitions"></a>定数の定義
 
@@ -33,13 +33,13 @@ mapi 追加機能は、メッセージングアプリケーションプログラ
     
 - **[OlFlagIcon](olflagicon.md)**
     
-## <a name="functions"></a>関数
+## <a name="functions"></a>Functions
 
 - **[FixMAPI](fixmapi.md)**
     
 ## <a name="properties"></a>プロパティ
 
-通常、次のプロパティは message オブジェクトで公開されます。
+通常、次のプロパティはメッセージ オブジェクトによって公開されます。
   
 - **[PR_BODY_W](pidtagbody-canonical-property.md)**
     
@@ -79,11 +79,11 @@ mapi 追加機能は、メッセージングアプリケーションプログラ
     
 - **[PR_SUBJECT_W](pidtagsubject-canonical-property.md)**
     
-次のプロパティは、アドレス帳の contents table オブジェクトで公開されています。
+次のプロパティは、アドレス帳のコンテンツ テーブル オブジェクトによって公開されます。
   
 - **[PR_DISPLAY_TYPE_EX](pidtagdisplaytypeex-canonical-property.md)**
     
-アドレス帳のコンテナーオブジェクトでは、次のプロパティが公開されます。
+次のプロパティは、アドレス帳コンテナー オブジェクトによって公開されます。
   
 - **[PR_EMS_AB_SERVER](pidtagemsabserver-canonical-property.md)**
     
@@ -91,13 +91,13 @@ mapi 追加機能は、メッセージングアプリケーションプログラ
     
 - **[PR_EMS_AB_SERVER_W](pidtagemsabserver-canonical-property.md)**
     
-folder オブジェクトでは、次のプロパティが公開されます。
+次のプロパティは、フォルダー オブジェクトによって公開されます。
   
 - **[PR_AGING_GRANULARITY](pidtagaginggranularity-canonical-property.md)**
     
 - **[PR_AGING_PERIOD](pidtagagingperiod-canonical-property.md)**
     
-次のプロパティは、メッセージングユーザーオブジェクトによって公開されます。
+次のプロパティは、メッセージング ユーザー オブジェクトによって公開されます。
   
 - **[PR_ASSISTANT_TELEPHONE_NUMBER_W](pidtagassistanttelephonenumber-canonical-property.md)**
     
@@ -189,7 +189,7 @@ folder オブジェクトでは、次のプロパティが公開されます。
     
 - **[PR_WEDDING_ANNIVERSARY](pidtagweddinganniversary-canonical-property.md)**
     
-次のプロパティは、プロファイルセクションオブジェクトによって公開されます。
+次のプロパティは、プロファイル セクション オブジェクトによって公開されます。
   
 - **[PR_PROFILE_SERVER_FULL_VERSION](pidtagprofileserverfullversion-canonical-property.md)**
     
@@ -207,7 +207,7 @@ folder オブジェクトでは、次のプロパティが公開されます。
     
 - **[PR_ROH_PROXY_SERVER](pidtagrpcoverhttpproxyserver-canonical-property.md)**
     
-store オブジェクトでは、次のプロパティが公開されます。
+次のプロパティは、ストア オブジェクトによって公開されます。
   
 - **[PR_IPM_APPOINTMENT_ENTRYID](pidtagipmappointmententryid-canonical-property.md)**
     
@@ -221,7 +221,7 @@ store オブジェクトでは、次のプロパティが公開されます。
     
 - **[PR_IPM_TASK_ENTRYID](pidtagipmtaskentryid-canonical-property.md)**
     
-次のプロパティは、ストアオブジェクトによって公開され、ストア上の電子メールの特定の要素を検索するために使用されます。
+次のプロパティは、ストア オブジェクトによって公開され、ストア上の電子メールの特定の要素を検索する場合に使用されます。
   
 - **[PR_SEARCH_ATTACHMENTS_W](pidtagsearchattachments-canonical-property.md)**
     
@@ -234,7 +234,7 @@ store オブジェクトでは、次のプロパティが公開されます。
 ## <a name="see-also"></a>関連項目
 
 - [Outlook が Exchange キャッシュ モードの場合にリモート サーバーでストアにアクセスする](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)  
-- [Outlook プロファイルで Exchange Server のバージョンを検出する](how-to-detect-the-version-of-exchange-server-in-an-outlook-profile.md)
+- [プロファイル内のバージョンExchange Server検出Outlookする](how-to-detect-the-version-of-exchange-server-in-an-outlook-profile.md)
 - [Outlook が Exchange キャッシュ モードの場合にリモート サーバーでストアを開く](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
 - [Exchange キャッシュ モードで同期を呼び出すことなく OST でメッセージを管理する](how-to-manage-a-message-in-an-ost-without-invoking-a-synchronization.md)
 

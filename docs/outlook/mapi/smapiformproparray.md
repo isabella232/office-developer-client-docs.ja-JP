@@ -25,11 +25,11 @@ ms.locfileid: "33420067"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[smapiformprop](smapiformprop.md)構造体の配列を格納します。 
+[SMAPIFormProp 構造体の配列を格納](smapiformprop.md)します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
 |関連するマクロ:  <br/> |[CbMAPIFormPropArray](cbmapiformproparray.md) <br/> |
    
 ```cpp
@@ -42,23 +42,23 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cprops**
+ **cProps**
   
-> **aformprop**メンバーの配列内の名前付きプロパティの数。 
+> **aFormProp** メンバーの配列内の名前付きプロパティの数。 
     
- **ulpad**
+ **ulPad**
   
->  正しいアラインメントを保証するために使用する8バイトのパディング。 
+>  正しい配置を保証するために使用される 8 バイトのパディング。 
     
- **aformprop**
+ **aFormProp**
   
-> フォームプロパティの配列。
+> フォーム プロパティの配列。
     
 ## <a name="remarks"></a>注釈
 
-**smapiformproparray**の構造体は、次のメソッドにパラメーターとして渡されます。 
+**SMAPIFormPropArray** 構造体は、パラメーターとして次のメソッドに渡されます。 
   
 - [IMAPIFormInfo::CalcFormPropSet](imapiforminfo-calcformpropset.md)
     

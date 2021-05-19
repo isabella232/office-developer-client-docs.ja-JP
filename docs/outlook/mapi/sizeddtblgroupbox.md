@@ -23,11 +23,11 @@ ms.locfileid: "33419318"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-グループボックスコントロールと指定された長さのラベルを表す[dtblgroupbox](dtblgroupbox.md)構造を含む名前付き構造を作成します。 
+グループ ボックス コントロールと指定した長さのラベルを記述するための [DTBLGROUPBOX](dtblgroupbox.md) 構造体を含む名前付き構造を作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |**DTBLGROUPBOX** <br/> |
    
 ```cpp
@@ -38,15 +38,15 @@ SizedDtblGroupBox (n, u)
 
 _n_
   
-> グループボックスのラベルの長さ。 
+> グループ ボックスのラベルの長さ。 
     
 _u_
   
-> 新しい構造の名前を指定します。
+> 新しい構造の名前。
     
 ## <a name="remarks"></a>注釈
 
-**sizeddtblgroupbox**マクロを使用すると、ラベルの長さが既知の場合に、グループボックスコントロールを定義できます。 次のメンバーで新しい構造が作成されます。 
+**SizedDtblGroupBox** マクロを使用すると、ラベルの長さが分かっているときにグループ ボックス コントロールを定義できます。 新しい構造は、次のメンバーで作成されます。 
   
 ```cpp
 DTBLGROUPBOX dtblgroupbox;
@@ -54,7 +54,7 @@ TCHAR lpszLabel[n];
 
 ```
 
-**sizeddtblgroupbox**マクロの結果として得られる構造体へのポインターを**dtblgroupbox**構造のポインターとして使用するには、次のキャストを実行します。 
+**SizedDtblGroupBox** マクロから生成される構造へのポインターを **DTBLGROUPBOX** 構造ポインターとして使用するには、次のキャストを実行します。 
   
 ```cpp
 lpDtblGroupBox = (LPDTBLGROUPBOX) &SizedDtblGroupBox;

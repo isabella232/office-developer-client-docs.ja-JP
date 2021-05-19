@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251474
 localization_priority: Normal
 ms.assetid: b574a99d-08f4-29e4-c40a-eb0770580ed5
-description: 新しいウィンドウで [シェイプシート] ウィンドウを開きます。
+description: 新しいウィンドウで [ShapeSheet] ウィンドウを開きます。
 ms.openlocfilehash: c68ab1e0c9d52514dff16b7b1b4adbd8789d3e85
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33409889"
 ---
 # <a name="opensheetwin-function"></a>OPENSHEETWIN 関数
 
-新しいウィンドウで [シェイプシート] ウィンドウを開きます。
+新しいウィンドウで [ShapeSheet] ウィンドウを開きます。
   
 ## <a name="syntax"></a>構文
 

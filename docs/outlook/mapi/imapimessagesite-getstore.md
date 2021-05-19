@@ -25,7 +25,7 @@ ms.locfileid: "33410470"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-そのようなストアが存在する場合は、現在のメッセージが含まれているメッセージストアを返します。 このメソッドは、埋め込みメッセージの_ppstore_パラメーターで NULL を返します。これは、メッセージストア内ではなく別のメッセージに格納されます。 
+そのようなストアが存在する場合は、現在のメッセージを含むメッセージ ストアを返します。 このメソッドは、埋め込みメッセージの  _ppStore_ パラメーターに NULL を返します。これは、メッセージ ストアに直接ではなく、別のメッセージに格納されます。 
   
 ```cpp
 HRESULT GetStore(
@@ -35,9 +35,9 @@ HRESULT GetStore(
 
 ## <a name="parameters"></a>パラメーター
 
- _ppstore_
+ _ppStore_
   
-> 読み上げメッセージストアへのポインターへのポインター。
+> [out]メッセージ ストアへのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -47,11 +47,11 @@ S_OK
     
 S_FALSE 
   
-> メッセージを含むストアがありません。
+> メッセージを含むストアはありません。
     
 ## <a name="remarks"></a>注釈
 
-フォームサーバーに関連するインターフェイスの一覧については、「 [MAPI フォームインターフェイス](mapi-form-interfaces.md)」を参照してください。
+フォーム サーバーに関連するインターフェイスの一覧については [、「MAPI フォーム インターフェイス」を参照してください](mapi-form-interfaces.md)。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -59,7 +59,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer  <br/> |cmymapiformviewer:: GetStore  <br/> |mfcmapi は、 **IMAPIMessageSite:: GetStore**メソッドを使用して、現在キャッシュされているポインターを指定したストアに取得します (使用可能な場合)。  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetStore  <br/> |MFCMAPI は **IMAPIMessageSite::GetStore** メソッドを使用して、現在キャッシュされているポインターを指定されたストア (使用可能な場合) に取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -70,5 +70,5 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォームインターフェイス](mapi-form-interfaces.md)
+[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
 

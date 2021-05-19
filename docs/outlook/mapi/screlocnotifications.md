@@ -25,13 +25,13 @@ ms.locfileid: "33415202"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定されたイベント通知配列内のポインターを調整します。 
+指定したイベント通知配列内のポインターを調整します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 SCODE ScRelocNotifications(
@@ -47,23 +47,23 @@ SCODE ScRelocNotifications(
 
  _cntf_
   
-> 順番_rgntf_パラメーターで指定された、配列内の[通知](notification.md)構造の数。 
+> [in]_rgntf_[パラメーターで](notification.md)示される配列内の NOTIFICATION 構造体の数。 
     
  _rgntf_
   
-> 順番ポインターが調整される必要のあるイベント通知を定義する**通知**構造の配列へのポインター。 
+> [in]ポインターを調整するイベント **通知** を定義する NOTIFICATION 構造体の配列へのポインター。 
     
- _pvbaseold_
+ _pvBaseOld_
   
-> 順番_rgntf_パラメーターで指定された配列の元のベースアドレスへのポインター。 
+> [in]  _rgntf_ パラメーターで示される配列の元のベース アドレスへのポインター。 
     
  _pvBaseNew_
   
-> 順番**ScRelocNotifications**が_rgntf_パラメーターで指定された配列の新しいベースアドレスを書き込む場所。 
+> [in] **ScRelocNotifications** が  _rgntf_ パラメーターで示す配列の新しい基本アドレスを書き込む場所。 
     
- _設計_
+ _pcb_
   
-> 読み上げ_pvBaseNew_パラメーターで指定された配列のサイズ (バイト単位) へのポインター。 
+> [out]  _pvBaseNew_ パラメーターで示される配列のサイズ (バイト単位) へのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -77,7 +77,7 @@ MAPI_E_INVALID_PARAMETER
     
 ## <a name="remarks"></a>注釈
 
-**ScRelocNotifications**関数の_pcb_パラメーターは省略可能です。 
+**ScRelocNotifications** 関数の pcb パラメーターはオプションです。  
   
 ## <a name="see-also"></a>関連項目
 

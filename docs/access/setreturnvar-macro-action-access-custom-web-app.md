@@ -1,5 +1,5 @@
 ---
-title: setreturnvar マクロアクション (Access カスタム web アプリ)
+title: SetReturnVar マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33409595"
 ---
-# <a name="setreturnvar-macro-action-access-custom-web-app"></a>setreturnvar マクロアクション (Access カスタム web アプリ)
+# <a name="setreturnvar-macro-action-access-custom-web-app"></a>SetReturnVar マクロ アクション (Access カスタム Web アプリ)
 
 " **SetReturnVar/戻り変数の設定** " アクションは、戻り変数を作成し、それを特定の値に設定します。 
   
@@ -37,7 +37,7 @@ ms.locfileid: "33409595"
 
 "**SetReturnVar**/戻り変数の設定" アクションを使用して、変数の **ReturnVar** を作成できます。この変数を、"**RunDataMacro**/データマクロの実行" アクションを使用してデータ マクロを呼び出すマクロで使用できます。 
   
-**returnvar**は、 **setreturnvar**アクションによって作成された後、呼び出し元のマクロが式で使用できます。 たとえば、 **UpdateSuccess** という名前の **ReturnVar** を作成した場合は、次の構文を使用して変数を使用できます。
+**SetReturnVar** アクションによって **ReturnVar** が作成されると、呼び出し元のマクロは式で使用できます。 たとえば、 **UpdateSuccess** という名前の **ReturnVar** を作成した場合は、次の構文を使用して変数を使用できます。
   
 `=[ReturnVars]![UpdateSuccess]`
 

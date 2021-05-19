@@ -25,11 +25,11 @@ ms.locfileid: "33410960"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI の動詞を記述します。
+MAPI 動詞について説明します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
    
 ```cpp
 typedef struct
@@ -43,19 +43,19 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **lverb**
+ **lVerb**
   
-> imapiform に渡される動詞を表すコード[::D overb](imapiform-doverb.md) 標準動詞は、ヘッダーファイルの exchform .h で定義されています。
+> [IMAPIForm::D oVerb](imapiform-doverb.md)に渡される動詞を表すコードです。 標準動詞は、ヘッダー ファイル Exchform.h で定義されます。
     
  **szVerbname**
   
-> フォームメニューに表示される動詞の表示名。
+> フォーム メニューに表示される動詞の名前を表示します。
     
- **futex フラグ**
+ **fuFlags**
   
-> 動詞のフラグです。
+> 動詞のフラグ。
     
  **grfAttribs**
   
@@ -63,15 +63,15 @@ typedef struct
     
  **ulFlags**
   
-> 動詞の表示名の形式を示すフラグです。 次のフラグを設定できます。
+> 動詞の表示名の形式を示すフラグを設定します。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 表示名は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、表示名は ANSI 形式になります。
+> 表示名は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、表示名は ANSI 形式になります。
     
 ## <a name="remarks"></a>注釈
 
-**smapiverb**構造体は、次のメソッドのパラメーターとして渡されます。 
+**SMAPIVerb 構造体** は、次のメソッドでパラメーターとして渡されます。 
   
 - [IMAPIFormContainer::ResolveMultipleMessageClasses](imapiformcontainer-resolvemultiplemessageclasses.md)
     

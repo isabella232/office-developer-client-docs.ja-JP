@@ -21,25 +21,25 @@ ms.locfileid: "33410708"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアントに対して実行する操作の多くは、完了するまでに長い時間がかかることがあります。 時間のかかる操作の進行状況をクライアントに通知するために、操作の開始からその完了までの任意の時点で、操作の完了部分をグラフィカルに表示するインジケーターを表示することができます。 進行状況インジケーターは、完了する合計操作のパーセンテージを示しています。
+クライアントに対して実行する操作の多くは、完了に長い時間がかかる場合があります。 長い操作の進行状況をクライアントに通知するには、操作の開始から完了まで、任意の時点で操作の終了部分をグラフィカルに表示するインジケーターを表示できます。 進行状況インジケーターには、完了する操作全体の割合が表示されます。
   
-次のメソッドは、時間のかかる操作と進行状況インジケーターの表示をサポートしています。
+次のメソッドは、長い操作と進行状況インジケーターの表示をサポートします。
   
-- [imapifolder:: copymessages](imapifolder-copymessages.md)、 [imapifolder:: copymessages](imapifolder-copyfolder.md)、imapifolder: [:D eletemessages](imapifolder-deletemessages.md)、imapifolder:: [eletefolder](imapifolder-deletefolder.md)、imapifolder [:: emptyfolder](imapifolder-emptyfolder.md)、 [imapifolder:: setreadflags](imapifolder-setreadflags.md)。
+- [IMAPIFolder::CopyMessages](imapifolder-copymessages.md), [IMAPIFolder::CopyFolder](imapifolder-copyfolder.md), [IMAPIFolder::D eleteMessages](imapifolder-deletemessages.md), [IMAPIFolder::D eleteFolder](imapifolder-deletefolder.md), [IMAPIFolder::EmptyFolder](imapifolder-emptyfolder.md), and [IMAPIFolder::SetReadFlags](imapifolder-setreadflags.md).
     
-- [imapiprop:: copyprops](imapiprop-copyprops.md)および[imapiprop:: CopyTo](imapiprop-copyto.md)。
+- [IMAPIProp::CopyProps と](imapiprop-copyprops.md) [IMAPIProp::CopyTo](imapiprop-copyto.md).
     
-- [imapisupport::D ocopyprops](imapisupport-docopyprops.md)、 [imapisupport::D ocopyto](imapisupport-docopyto.md)、 [imapisupport:: copyfolder](imapisupport-copyfolder.md)、 [imapisupport:: copymessages](imapisupport-copymessages.md)。
+- [IMAPISupport::D oCopyProps](imapisupport-docopyprops.md), [IMAPISupport::D oCopyTo](imapisupport-docopyto.md), [IMAPISupport:::CopyFolder](imapisupport-copyfolder.md), and [IMAPISupport::CopyMessages](imapisupport-copymessages.md).
     
-- [IMessage::D eleteattach](imessage-deleteattach.md)。
+- [IMessage::D eleteAttach](imessage-deleteattach.md).
     
-- [IABContainer:: copyentries](iabcontainer-copyentries.md)。
+- [IABContainer::CopyEntries](iabcontainer-copyentries.md).
     
-進行状況インジケーターを表示するために、MAPI は progress オブジェクトを定義します。 Progress オブジェクトは、インジケーターの範囲を確立し、表示を作成するためのメソッドを含む[imapiprogress: IUnknown](imapiprogressiunknown.md)インターフェイスを実装します。 MAPI では、一部のクライアントと同様に、進行状況オブジェクトの実装が提供されます。 クライアントの実装 (指定されている場合) は、操作を実行するメソッドへの入力パラメーターとして使用する必要があります。 クライアントが progress オブジェクトへのポインターの代わりに NULL を渡す場合は、 [imapisupport::D oprogress dialog](imapisupport-doprogressdialog.md)メソッドを呼び出して MAPI の実装を使用します。 
+進行状況インジケーターを表示するために、MAPI は進行状況オブジェクトを定義します。 Progress オブジェクトは [、IMAPIProgress : IUnknown](imapiprogressiunknown.md) インターフェイス、インジケーターの範囲を確立し、ディスプレイを作成するためのメソッドを含むインターフェイスを実装します。 MAPI は、一部のクライアントと同様に進行状況オブジェクトの実装を提供します。 クライアントの実装が指定されている場合は、操作を実行するメソッドの入力パラメーターとして使用する必要があります。 クライアントが進行状況オブジェクトへのポインターではなく NULL を渡す場合は [、IMAPISupport::D oProgressDialog](imapisupport-doprogressdialog.md) メソッドを呼び出して MAPI の実装を使用します。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI サービスプロバイダー](mapi-service-providers.md)
+[MAPI サービス プロバイダー](mapi-service-providers.md)
 

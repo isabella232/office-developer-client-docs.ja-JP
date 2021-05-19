@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251487
 localization_priority: Normal
 ms.assetid: a95fd86d-ebc1-66b6-e7d9-9c8ea84d23ab
-description: 色の赤の要素を返します。
+description: 色の赤いコンポーネントを返します。
 ms.openlocfilehash: e8c6115ac0441b25ce8333485828e8ef0f615459
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33415524"
 ---
 # <a name="red-function"></a>RED 関数
 
-色の赤の要素を返します。 
+色の赤いコンポーネントを返します。 
   
 ## <a name="syntax"></a>構文
 
-赤 (* **式** *) 
+RED(** *式* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -32,21 +32,21 @@ ms.locfileid: "33415524"
    
 ### <a name="return-value"></a>戻り値
 
-数値
+番号
   
 ## <a name="remarks"></a>注釈
 
-戻り値は、0 ～ 255 の数値、またはインデックスを判別するセル参照になります。 _式_が無効な場合、この関数は 0 (黒) を返します。 
+戻り値は、0 ～ 255 の数値、またはインデックスを判別するセル参照になります。 式  _が_ 無効な場合、この関数は 0 (黒) を返します。 
   
 ## <a name="example-1"></a>例 1
 
-赤 (22)
+RED(22)
   
 図面が既定の Microsoft Office Visio カラー パレットを使用する場合、51 を返します。Visio カラー パレットでは、インデックス 22 は濃い灰色を示します。
   
 ## <a name="example-2"></a>例 2
 
-赤 (文字の色)
+RED(Char.Color)
   
 現在のフォントの色について、赤のコンポーネントの値を返します。
   

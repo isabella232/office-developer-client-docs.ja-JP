@@ -22,9 +22,9 @@ ms.locfileid: "33414677"
   
 |**値**|**飛び越し点の方向**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| .0  <br/> | 既定値です。上、またはページの設定に従います。  <br/> |**visLOJumpDirYDefault** <br/> |
-| 1   <br/> | 左  <br/> |**visLOJumpDirYLeft** <br/> |
-| 2   <br/> | 右  <br/> |**visLOJumpDirYRight** <br/> |
+| 0  <br/> | 既定値です。上、またはページの設定に従います。  <br/> |**visLOJumpDirYDefault** <br/> |
+| 1  <br/> | 左  <br/> |**visLOJumpDirYLeft** <br/> |
+| 2  <br/> | 右  <br/> |**visLOJumpDirYRight** <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -32,7 +32,7 @@ ms.locfileid: "33414677"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [pagelinejumpdiry]  <br/> |
+| セル名 :  <br/> | PageLineJumpDirY  <br/> |
    
 プログラムから、インデックスによる [PageLineJumpDirY] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   

@@ -25,7 +25,7 @@ ms.locfileid: "33415132"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-個人用フォルダー (.pst) ファイルの登録リストを取得します。
+個人用フォルダー (.pst) ファイルの登録の一覧を取得します。
   
 ```cpp
 HRESULT GetPersistedRegistration(SPropValue **ppmval);
@@ -35,7 +35,7 @@ HRESULT GetPersistedRegistration(SPropValue **ppmval);
 
  _ppmval_
   
-> 順番[spropvalue](spropvalue.md)構造体へのポインターへのポインター。 この構造体の ulPropTag メンバーの型は PT_MV_UNICODE で、MVszW value メンバーは、null で終了する UNICODE 文字列の配列になります。 これらの文字列は、登録が永続化されている dll へのパスです。 
+> [in] [SPropValue](spropvalue.md) 構造体へのポインターを指すポインター。 この構造体の ulPropTag メンバーは PT_MV_UNICODE 型であり、MVszW 値メンバーは null 終端 Unicode 文字列の配列になります。 これらの文字列は、登録が保持されている DLL へのパスです。 
     
 > [!NOTE]
 > ANSI の .pst サポートは実装されていません。 

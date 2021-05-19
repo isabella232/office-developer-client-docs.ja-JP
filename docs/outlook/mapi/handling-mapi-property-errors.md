@@ -23,13 +23,13 @@ ms.locfileid: "33419080"
   
 [GetProps](imapiprop-getprops.md)
   
-[setprops による](imapiprop-setprops.md)
+[SetProps](imapiprop-setprops.md)
   
-[deleteprops](imapiprop-deleteprops.md)
+[DeleteProps](imapiprop-deleteprops.md)
   
 [CopyTo](imapiprop-copyto.md)
   
-[copyprops](imapiprop-copyprops.md)
+[CopyProps](imapiprop-copyprops.md)
   
 **GetProps** reports partial success when it can retrieve at least one of the requested properties for an object. **GetProps** indicates partial success by returning the warning MAPI_W_ERRORS_RETURNED and placing information about the unavailable properties in the property value array pointed to by the **lppPropArray** parameter. An unavailable property's entry in this array contains PT_ERROR for the property type in the **ulPropTag** member and MAPI_E_NOT_FOUND or another appropriate error value for the **Value** member. For example, if a client calls a folder's **GetProps** method to retrieve three properties and the third is unavailable, the message store provider places PT_ERROR in the third property type in the property value array and MAPI_E_NOT_FOUND in the third property value. 
   

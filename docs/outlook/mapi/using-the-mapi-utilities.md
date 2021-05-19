@@ -21,10 +21,10 @@ ms.locfileid: "33409987"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI ユーティリティは、テーブルデータオブジェクトとプロパティデータオブジェクト、およびその他の機能をサポートするさまざまな機能で構成されています。 クライアントはこれらのユーティリティのみを必要とすることができ、サービスプロバイダーとの接続を確立するために MAPI サブシステムにログオンする必要はありません。 クライアントがこのカテゴリに適合する場合は、初期化時に[MAPIInitialize](mapiinitialize.md)関数ではなく[ScInitMapiUtil](scinitmapiutil.md) API 関数を呼び出します。 
+MAPI ユーティリティは、テーブル データとプロパティ データ オブジェクトと、その他の機能をサポートするさまざまな機能でででています。 クライアントがこれらのユーティリティのみを必要とし、MAPI サブシステムにログオンしてサービス プロバイダーとの接続を確立する必要が生じ得る可能性があります。 クライアントがこのカテゴリに適合する場合は、初期化時に[MAPIInitialize](mapiinitialize.md)関数ではなく API 関数[ScInitMapiUtil](scinitmapiutil.md)を呼び出します。 
   
- **ScInitMapiUtil**では、クライアントが MAPI allocators を必要とするユーティリティ関数を使用できますが、allocators は明示的には要求しません。 シャットダウンする時間がある場合は、 [DeinitMapiUtil](deinitmapiutil.md)を呼び出して、 [MAPIUninitialize](mapiuninitialize.md)ではなくリソースを解放します。 **MAPIInitialize**を呼び出さないクライアントは、 **MAPIUninitialize**を呼び出すことはできません。
+ **ScInitMapiUtil を使用** すると、クライアントは MAPI アロケーターを必要とするユーティリティ関数を使用できますが、割り当て子を明示的に要求することはできません。 シャットダウンする時間が近い場合は [、DEinitMapiUtil](deinitmapiutil.md) を呼び出して [、MAPIUninitialize ではなくリソースを解放します](mapiuninitialize.md)。 **MAPIInitialize を呼び出さないクライアントは****、MAPIUninitialize を呼び出す必要があります**。
   
-**MAPIInitialize**ではなく**ScInitMapiUtil**を呼び出し、 **IMAPITable**メソッドを使用するのではなく、 **itabledata**メソッドを使用してテーブルを使用している場合は、テーブル通知が機能しないことに注意してください。 通知には、MAPI ライブラリと[IMAPITable: IUnknown](imapitableiunknown.md)を使用する必要があります。
+**MAPIInitialize** ではなく **ScInitMapiUtil** を呼び出し **、IMAPITable** メソッドではなく **ITableData** メソッドを使用してテーブルを使用している場合は、テーブル通知は機能しません。 通知には、MAPI ライブラリと [IMAPITable : IUnknown の使用が必要です](imapitableiunknown.md)。
   
 

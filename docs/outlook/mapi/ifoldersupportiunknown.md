@@ -1,5 +1,5 @@
 ---
-title: ifoldersupport IUnknown
+title: IFolderSupport IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -29,10 +29,10 @@ ms.locfileid: "33415776"
   
 |||
 |:-----|:-----|
-|提供元:  <br/> |メッセージストアプロバイダー  <br/> |
+|提供元:  <br/> |メッセージ ストア プロバイダー  <br/> |
 |インターフェイス識別子:  <br/> |IID_IFolderSupport  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
@@ -40,8 +40,8 @@ ms.locfileid: "33415776"
    
 ## <a name="remarks"></a>注釈
 
-通常、プロバイダーがフォルダーを共有する場合、Microsoft Office Outlook では、このインターフェイスを実装するために MAPI ストアプロバイダーが必要です。 例外は、このインターフェイスを実装せずにフォルダーを共有できる Exchange サーバーストアプロバイダーです。
+通常、Microsoft Office Outlookを共有する場合は、MAPI ストア プロバイダーがこのインターフェイスを実装する必要があります。 例外は、このExchange Server実装せずにフォルダーを共有できるストア プロバイダーの例外です。
   
-クライアントは、 **ifoldersupport**の**[imapifolder](imapifolderimapicontainer.md)** に対してクエリを実行できます。 成功した場合は、 **ifoldersupport:: getsupportmask**を呼び出し、 **FS_SUPPORTS_SHARING**ビットが設定されているかどうかを確認します。 
+クライアントは **[、IFolderSupport の IMAPIFolder](imapifolderimapicontainer.md)** **を照会できます**。 これが成功した場合は **、IFolderSupport::GetSupportMask** を呼び出し、FS_SUPPORTS_SHARING **を確認** します。 
   
 

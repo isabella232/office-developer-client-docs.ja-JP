@@ -23,11 +23,11 @@ ms.locfileid: "33410932"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定した数の行を含む、名前付きの行[セット](srowset.md)構造を作成します。 
+指定した行数 [を含む名前付き SRowSet](srowset.md) 構造体を作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |**SRowSet** <br/> |
    
 ```cpp
@@ -36,17 +36,17 @@ SizedSRowSet (_crow, _name)
 
 ## <a name="parameters"></a>パラメーター
 
-__クロウズ_
+_ _crow_
   
-> 新しい構造に含める行の数を指定します。
+> 新しい構造に含める行の数。
     
-__名前_
+_ _name_
   
-> 新しい構造の名前を指定します。
+> 新しい構造の名前。
     
 ## <a name="remarks"></a>注釈
 
-**sizedsrowset**マクロの結果として得られる新しい構造を、 **srowset**構造体へのポインターとして使用するには、次のキャストを実行します。 
+**SizedSRowSet** マクロから得られた新しい構造を **SRowSet** 構造体へのポインターとして使用するには、次のキャストを実行します。 
   
 ```cpp
 lpSRowSet = (LPSRowSet) &SizedSRowSet;

@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: e7470417-0d70-433e-9496-604ca2eafee6
-description: 図形が継承するクイックスタイルの種類 (2 次元、1次元、またはコネクタ) を指定します。
+description: 図形が継承するクイック スタイル (2 次元、1 次元、またはコネクタ) の種類を決定します。
 ms.openlocfilehash: 95aced62c6397fc3229de29b98d3f18e5f69d05b
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,24 +16,24 @@ ms.locfileid: "33410505"
 ---
 # <a name="quickstyletype-cell-quick-style-section"></a>[QuickStyleType] セル ([クイック スタイル] セクション)
 
-図形が継承するクイックスタイルの種類 (2 次元、1次元、またはコネクタ) を指定します。 
+図形が継承するクイック スタイル (2 次元、1 次元、またはコネクタ) の種類を決定します。 
   
 |**値**|**説明**|
 |:-----|:-----|
-|.0  <br/> |Visio が自動的に選択する  <br/> |
-|1   <br/> |1次元  <br/> |
-|2   <br/> |2次元  <br/> |
-|3   <br/> |Connector  <br/> |
+|0  <br/> |Visio自動的に選択する  <br/> |
+|1  <br/> |1 次元  <br/> |
+|2  <br/> |2 次元  <br/> |
+|3  <br/> |コネクタ  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-別の数式から、 **cell**要素の**N**属性の値によって、または**CellsU**プロパティを使用したプログラムから、名前によって [**クイックスタイルの種類**] セルへの参照を取得するには、次の値を使用します。 
+別の数式 **、Cell** 要素 **の N** 属性の値、または CellsU プロパティを使用したプログラムから、名前によって **[QuickStyleType]** セルへの参照を取得するには、次の値を使用します。  
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [quickstyletype]  <br/> |
+| セル名:  <br/> | QuickStyleType  <br/> |
    
-プログラムから、インデックスによって [**クイックスタイルの種類**] セルへの参照を取得するには、 **CellsSRC**プロパティを使用し、次の引数を指定します。 
+プログラムからインデックスによって **[QuickStyleType]** セルへの参照を取得するには **、CellsSRC** プロパティを使用して、次の引数を指定します。 
   
 |||
 |:-----|:-----|

@@ -5,7 +5,7 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 98f08432-e86c-cba6-45fd-5a6c94d50aaf
-description: '最終更新日: 2012 年7月3日'
+description: '最終更新日: 2012 年 7 月 3 日'
 ms.openlocfilehash: b7c651044ab7f4cad7032db69e157c9a3589bde9
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -17,19 +17,19 @@ ms.locfileid: "33420823"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ラップされた個人用フォルダーファイル (PST) ストアプロバイダーを使用する前に、ラップされた PST ストアプロバイダーを初期化して構成する必要があります。 ラップされた PST ストアプロバイダーを構成した後、mapi および mapi スプーラーがメッセージストアプロバイダーにログオンできるように、関数を実装する必要があります。 ラップされた pst ストアプロバイダーの初期化とログオンの詳細については、「ラップされた pst ストア[プロバイダーの初期化](initializing-a-wrapped-pst-store-provider.md)と、ラップされた[pst ストアプロバイダーへのログオン](logging-on-to-a-wrapped-pst-store-provider.md)」を参照してください。
+ラップされた個人用フォルダー ファイル (PST) ストア プロバイダーを使用する前に、ラップされた PST ストア プロバイダーを初期化して構成する必要があります。 ラップされた PST ストア プロバイダーを構成した後、MAPI と MAPI スプーラーがメッセージ ストア プロバイダーにログオンできるよう、関数を実装する必要があります。 ラップされた PST ストア プロバイダーへの初期化とログオンの詳細については、「ラップされた PST ストア プロバイダーの初期化とラップ [された PST](initializing-a-wrapped-pst-store-provider.md) ストア プロバイダーへのログオン」を [参照してください](logging-on-to-a-wrapped-pst-store-provider.md)。
   
-**[imapisupport:: IUnknown](imapisupportiunknown.md)** インターフェイスは、メッセージストアプロバイダーが一般的に実行するタスクの実装を提供します。 このインターフェイスは、サンプルのラップされた PST ストアプロバイダーが機能するようにラップする必要があります。 **[imapisupport:: openプロファイル](imapisupport-openprofilesection.md)** の各関数には、特別な実装が必要です。 他のすべての関数は、パラメーターを基になるラップされたオブジェクトに渡すことができます。 
+**[IMAPISupport::IUnknown](imapisupportiunknown.md)** インターフェイスは、メッセージ ストア プロバイダーによって一般的に実行されるタスクの実装を提供します。 このインターフェイスは、サンプル ラップされた PST ストア プロバイダーが動作するためにラップする必要があります。 **[IMAPISupport::OpenProfileSection 関数には](imapisupport-openprofilesection.md)** 特別な実装が必要です。 他のすべての関数は、基になるラップされたオブジェクトにパラメーターを渡す可能性があります。 
   
-このトピックでは、サンプルのラップされた PST ストアプロバイダーのコード例を使用して、 **imapisupport:: openプロファイル**の使い方を示します。 このサンプルでは、レプリケーション API と共に使用することを目的とした、ラップされた PST プロバイダーを実装しています。 サンプルのラップされた pst ストアプロバイダーのダウンロードとインストールの詳細については、「[サンプルのラップされた pst ストアプロバイダーのインストール](installing-the-sample-wrapped-pst-store-provider.md)」を参照してください。 レプリケーション api の詳細については、「[レプリケーション api につい](about-the-replication-api.md)て」を参照してください。
+このトピックでは **、IMAPISupport::OpenProfileSection** 関数について、サンプル ラップ PST ストア プロバイダーのコード例を使用して説明します。 このサンプルでは、レプリケーション API と組み合わせて使用することを目的としたラップされた PST プロバイダーを実装しています。 サンプル ラップ PST ストア プロバイダーのダウンロードとインストールの詳細については、「サンプル ラップされた PST ストア プロバイダーのインストール [」を参照してください](installing-the-sample-wrapped-pst-store-provider.md)。 レプリケーション API の詳細については、「レプリケーション [API について」を参照してください](about-the-replication-api.md)。
   
-ラップされた pst ストアプロバイダーの使用が終了したら、ラップされた pst ストアプロバイダーを適切にシャットダウンする必要があります。 詳細については、「ラップされ[た PST ストアプロバイダーのシャットダウン](shutting-down-a-wrapped-pst-store-provider.md)」を参照してください。
+ラップされた PST ストア プロバイダーの使用が完了したら、ラップされた PST ストア プロバイダーを適切にシャットダウンする必要があります。 詳細については、「ラップされた PST ストア プロバイダー [をシャットダウンする」を参照してください](shutting-down-a-wrapped-pst-store-provider.md)。
   
-## <a name="open-profile-section-routine"></a>プロファイルセクションルーチンを開く
+## <a name="open-profile-section-routine"></a>Open Profile Section ルーチン
 
-**[imapisupport:: openプロファイル](imapisupport-openprofilesection.md)** のセクションは、現在のプロファイルのセクションを開きます。 この関数では、ラップされた PST ストアプロバイダーの実装で、特別な処理を行う必要があります。 `pgNSTGlobalProfileSectionGuid`が要求されると、関数はキャッシュされたプロファイルセクションを返します。 
+**[IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md)** 関数は、現在のプロファイルのセクションを開きます。 この関数では、ラップされた PST ストア プロバイダーの実装で特別な処理が必要です。 要求された  `pgNSTGlobalProfileSectionGuid` 場合、関数はキャッシュされるプロファイル セクションを返します。 
   
-### <a name="csupportopenprofilesection-example"></a>csupport:: openプロファイルの例 () の例
+### <a name="csupportopenprofilesection-example"></a>CSupport::OpenProfileSection() の例
 
 ```cpp
 STDMETHODIMP CSupport::OpenProfileSection( 
@@ -56,9 +56,9 @@ STDMETHODIMP CSupport::OpenProfileSection(
 
 ## <a name="see-also"></a>関連項目
 
-- [ラップされた PST ストアプロバイダーのサンプルについて](about-the-sample-wrapped-pst-store-provider.md)
-- [ラップされた PST ストアプロバイダーのサンプルのインストール](installing-the-sample-wrapped-pst-store-provider.md)
-- [ラップされた PST ストアプロバイダーの初期化](initializing-a-wrapped-pst-store-provider.md)
-- [ラップされた PST ストアプロバイダーへのログオン](logging-on-to-a-wrapped-pst-store-provider.md)
-- [ラップされた PST ストアプロバイダーのシャットダウン](shutting-down-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーのサンプルについて](about-the-sample-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーのサンプルのインストール](installing-the-sample-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーの初期化](initializing-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーへのログオン](logging-on-to-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーのシャットダウン](shutting-down-a-wrapped-pst-store-provider.md)
 

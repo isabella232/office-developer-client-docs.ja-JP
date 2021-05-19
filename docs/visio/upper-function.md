@@ -22,7 +22,7 @@ ms.locfileid: "33415146"
   
 ## <a name="syntax"></a>構文
 
-UPPER (* * *expression* * *) 
+UPPER(** *expression* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 

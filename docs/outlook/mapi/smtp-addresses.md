@@ -21,28 +21,28 @@ ms.locfileid: "33419626"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-SMTP 電子メールアドレスの形式は、RFC 822 で定義されています。 MAPI コンポーネントは、その標準に準拠する任意のアドレスを処理する必要があります。 ただし、次のような特定の形式の RFC 822 アドレスは、MAPI アドレスを最適にエンコードします。
+SMTP 電子メール アドレスの形式は RFC 822 で定義されています。 MAPI コンポーネントは、その標準に準拠するアドレスを処理する必要があります。 ただし、MAPI アドレスを最適にエンコードする RFC 822 アドレスの特定の形式があります。
   
- _表示名_**\<** _電子メールアドレス_**\>**
+ _表示名_ **\<**_電子メール アドレス_**\>**
   
-山かっこは、リテラルとして含まれています。 空白は表示名によく見られます。引用符で囲む必要はありません。 一般的な住所は、RFC 1521 の coauthors のいずれかに属している次のようになります。
+角かっこはリテラルとして含まれます。 空白は、表示名で一般的です。引用符で囲む必要はない。 一般的なアドレスは、RFC 1521 の共同編集者の 1 つに属する次のように見える場合があります。
   
-Nathaniel Borenstein \<nsb@bellcore.com\>
+ナサニエル・ボレンシュタイン nsb@bellcore.com \<\>
   
-\<または @ などの SMTP アドレスで特別な意味を持つ文字が表示名に含まれている場合は、表示名全体を二重引用符で囲む必要があります。 送信メールで、電子メールアドレスと表示名の長さの合計が255文字を超えている場合は、表示名を削除する必要があります。
+表示名に SMTP アドレス (@など) に特別な意味を持つ文字が含まれている場合は、表示名全体を二重引用符 \< で囲む必要があります。 送信メールでは、電子メール アドレスと表示名の合計長が 255 文字を超える場合は、表示名を削除する必要があります。
   
-次に示すように、SMTP アドレスを MAPI プロパティにマップします。
+SMTP アドレスの各部分は、次のように MAPI プロパティにマップされます。
   
-|**SMTP アドレスコンポーネント**|**MAPI プロパティ**|
+|**SMTP アドレス コンポーネント**|**MAPI プロパティ**|
 |:-----|:-----|
-| すべての受信者の_表示名_  <br/> |**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |
-| From フィールドの_表示名_  <br/> |**PR_SENDER_NAME**([PidTagSenderName](pidtagsendername-canonical-property.md))  <br/> |
-| 送信者フィールドの_表示名_  <br/> |**PR_SENT_REPRESENTING_NAME**([PidTagSentRepresentingName](pidtagsentrepresentingname-canonical-property.md))  <br/> |
-| _電子メールアドレス_ <br/> |**PR_EMAIL_ADDRESS**([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |
-|暗黙的、常に "SMTP"  <br/> |**PR_ADDRTYPE**([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |
+| _すべての受信者の_ 表示名  <br/> |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |
+| _[From] フィールド_ の表示名  <br/> |**PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md))  <br/> |
+| _送信者フィールドの_ 表示名  <br/> |**PR_SENT_REPRESENTING_NAME** ([PidTagSentRepresentingName](pidtagsentrepresentingname-canonical-property.md))  <br/> |
+| _電子メール アドレス_ <br/> |**PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |
+|暗黙的、常に "SMTP"  <br/> |**PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |
    
-受信メールのアドレスの表示名がない場合は、代わりにメールアドレス全体を使用する必要があります。 アドレスの種類は、常に SMTP です。
+受信メールにアドレスの表示名がない場合は、代わりに電子メール アドレス全体を使用する必要があります。 アドレスの種類は常に SMTP です。
   
-受信者のプロパティは、MAPI メッセージの受信者テーブルから取得されます。sender プロパティは、メッセージ自体から取得されます。
+受信者のプロパティは、MAPI メッセージの受信者テーブルから取られます。sender プロパティは、メッセージ自体から取られます。
   
 

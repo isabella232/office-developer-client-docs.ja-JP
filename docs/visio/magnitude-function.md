@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251461
 localization_priority: Normal
 ms.assetid: 9f443687-9861-5f51-94c4-f056805f736b
-description: constantA と constantB のそれぞれの定数によって、x がで、その実行が B であるベクトルの大きさを返します。
+description: 立ち上がりが A で、実行が B のベクトルの大きさを、それぞれの定数定数A と定数B を乗算して返します。
 ms.openlocfilehash: 6393c7827e2553ca4948c8b9c51075ca8e4783bd
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33420459"
 ---
 # <a name="magnitude-function"></a>MAGNITUDE 関数
 
-_constantA_と_constantB_のそれぞれの定数によっ__ て、x がで、その実行が_B_であるベクトルの大きさを返します。 
+立ち上がりが  _A_ で、実行が  _B_ のベクトルの大きさを、それぞれの定数  _定数A_ と定数B を掛けた値を  _返します_。 
   
 ## <a name="syntax"></a>構文
 
-マグニチュード (* * *constantA* * *、* * *A* * *、* * *constantB* * *、* * *B* * *) 
+MAGNITUDE(** *constantA* **, ** *A* **, ** *constantB* **, ** *B* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -37,7 +37,7 @@ _constantA_と_constantB_のそれぞれの定数によっ__ て、x がで、�
 
 MAGNITUDE は次の数式に従って計算されます。
   
-SQRT ((constantA \* A) ^ 2 + (constantB \* B) ^ 2)
+SQRT((constantA \* A)^2 + (constantB \* B)^2)
   
 ## <a name="example"></a>例
 

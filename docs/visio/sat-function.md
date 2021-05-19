@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251494
 localization_priority: Normal
 ms.assetid: 407817fb-9e4a-d2ca-6125-2440d2a417c6
-description: 色の鮮やかさコンポーネントの値を返します。
+description: 色の彩度コンポーネントの値を返します。
 ms.openlocfilehash: 3b3fd8e13ca9af4f0aea00d2f78c7b5c27be1932
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33415006"
 ---
 # <a name="sat-function"></a>SAT 関数
 
-色の鮮やかさコンポーネントの値を返します。 
+色の彩度コンポーネントの値を返します。 
   
 ## <a name="syntax"></a>構文
 
-SAT (* * *expression* * *) 
+SAT(** *式* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -32,7 +32,7 @@ SAT (* * *expression* * *)
    
 ### <a name="return-value"></a>戻り値
 
-数値
+数値型 (Numeric)
   
 ## <a name="remarks"></a>注釈
 
@@ -40,13 +40,13 @@ SAT (* * *expression* * *)
   
 ## <a name="example-1"></a>例 1
 
-SAT (4 枚[fillforegnd]
+SAT(Sheet.4!FillForegnd)
   
 Sheet.4 について、前景の塗りつぶしの色に関する彩度を返します。
   
 ## <a name="example-2"></a>例 2
 
-SAT (8)
+SAT(8)
   
 図面が既定の Visio カラー パレットを使用する場合、240 を返します。Visio カラー パレットでは、インデックス 8 は濃い赤を示します。
   

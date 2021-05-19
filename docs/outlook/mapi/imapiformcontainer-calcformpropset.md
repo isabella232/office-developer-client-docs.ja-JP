@@ -25,7 +25,7 @@ ms.locfileid: "33414915"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームコンテナーにインストールされているすべてのフォームで使用されるプロパティの配列を返します。
+フォーム コンテナーにインストールされているすべてのフォームで使用されるプロパティの配列を返します。
   
 ```cpp
 HRESULT CalcFormPropSet(
@@ -38,23 +38,23 @@ HRESULT CalcFormPropSet(
 
  _ulFlags_
   
-> 順番_ppResults_パラメーターのプロパティ配列を返す方法を制御するフラグのビットマスク。 次のフラグを設定できます。 
+> [in]  _ppResults_ パラメーターのプロパティ配列がどのように返されるのか制御するフラグのビットマスク。 次のフラグを設定できます。 
     
 FORMPROPSET_INTERSECTION 
   
-> 返される配列には、フォームのプロパティの共通部分が含まれています。
+> 返される配列には、フォームのプロパティの交差部分が含まれる。
     
 FORMPROPSET_UNION 
   
-> 返される配列には、フォームのプロパティの和集合が含まれています。
+> 返される配列には、フォームのプロパティの共用体が含まれる。
     
 MAPI_UNICODE 
   
-> 配列で返される文字列は、Unicode 形式になっています。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
+> 配列で返される文字列は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列は ANSI 形式になります。
     
  _ppResults_
   
-> 読み上げ返された[smapiformproparray](smapiformproparray.md)の構造体へのポインターへのポインター。 この構造体には、インストールされているフォームで使用されるすべてのプロパティが含まれます。 
+> [out]返される [SMAPIFormPropArray](smapiformproparray.md) 構造体へのポインターを指すポインター。 この構造には、インストールされているフォームで使用されるプロパティすべてが含まれる。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -64,21 +64,21 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
+> このフラグMAPI_UNICODE設定され、実装が Unicode をサポートしていないか、または設定されていないMAPI_UNICODE実装が Unicode のみをサポートしています。
     
 ## <a name="remarks"></a>注釈
 
-クライアントアプリケーションは、 **imapiformcontainer:: CalcFormPropSet**メソッドを呼び出して、フォームコンテナーにインストールされているすべてのフォームで使用されるプロパティの配列を取得します。 **imapiformcontainer:: CalcFormPropSet**は、 [imapiformcontainer:: CalcFormPropSet](imapiformmgr-calcformpropset.md)メソッドに似ていますが、特定のコンテナーに登録されているすべてのフォーム上で動作する点が異なります。 
+クライアント アプリケーションは **IMAPIFormContainer::CalcFormPropSet** メソッドを呼び出して、フォーム コンテナーにインストールされているすべてのフォームで使用されるプロパティの配列を取得します。 **IMAPIFormContainer::CalcFormPropSet** は [IMAPIFormMgr::CalcFormPropSet](imapiformmgr-calcformpropset.md) メソッドと同様に動作しますが、特定のコンテナーに登録されているフォームごとに動作します。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-Unicode 文字列をサポートしていないフォームライブラリプロバイダーは、MAPI_UNICODE が渡された場合は MAPI_E_BAD_CHARWIDTH を返します。
+Unicode 文字列をサポートしないフォーム ライブラリ プロバイダーは、渡された場合MAPI_E_BAD_CHARWIDTHをMAPI_UNICODEする必要があります。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
- **imapiformcontainer:: CalcFormPropSet**は、 _ulflags_パラメーターで設定されているフラグに応じて、フォームのプロパティセットの積集合またはユニオンを取得します。この構造体は、次の式を含む**smapiformproparray**結果のプロパティグループ。 
+ **IMAPIFormContainer::CalcFormPropSet** は  _、ulFlags_ パラメーターで設定されたフラグに応じて、フォームのプロパティ セットの交差または共用体を取得し、結果のプロパティ グループを含む **SMAPIFormPropArray** 構造体を返します。 
   
-クライアントが_ulflags_に MAPI_UNICODE フラグを渡すと、返されるすべての文字列は UNICODE になります。
+クライアントが  _ulFlags_ で MAPI_UNICODEフラグを渡す場合、返される文字列はすべて Unicode です。
   
 ## <a name="see-also"></a>関連項目
 

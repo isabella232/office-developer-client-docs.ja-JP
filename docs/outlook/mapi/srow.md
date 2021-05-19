@@ -23,11 +23,11 @@ ms.locfileid: "33410435"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-特定のオブジェクトに対して選択されたプロパティを含むテーブルの行を記述します。 
+特定のオブジェクトの選択したプロパティを含むテーブルの行について説明します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SRow
@@ -39,25 +39,25 @@ typedef struct _SRow
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 **ulAdrEntryPad**
   
-> **lpprops**メンバーが指すプロパティ値を適切に配置するためのパディングバイト。 
+> lpProps メンバーが指すプロパティ値を適切に揃える埋 **め込みバイト** 。 
     
-**cvalues**
+**cValues**
   
-> **lpprops**が指すプロパティ値の数。 
+> lpProps が指すプロパティ **値の数** です。 
     
-**lpprops**
+**lpProps**
   
-> 行の列のプロパティ値を記述する[spropvalue](spropvalue.md)構造体の配列へのポインター。 
+> 行内の列のプロパティ値を記述する [SPropValue](spropvalue.md) 構造体の配列へのポインター。 
     
 ## <a name="remarks"></a>注釈
 
-**srow**構造は、テーブル内の行について記述します。 これは、テーブル通知に付随する[TABLE_NOTIFICATION](table_notification.md)構造に含まれています。 
+**SRow 構造体は**、テーブル内の行を表します。 これは、テーブル通知に [TABLE_NOTIFICATION](table_notification.md) の構造に含まれています。 
   
-**srow**構造体は、次のメソッドで使用されます。 
+**SRow** 構造体は、次のメソッドで使用されます。 
   
 - [IAddrBook::GetSearchPath](iaddrbook-getsearchpath.md)
     
@@ -67,7 +67,7 @@ typedef struct _SRow
     
 - [IMAPITable::ExpandRow](imapitable-expandrow.md)
     
-- [itabledata: IUnknown](itabledataiunknown.md)(多くのメソッド) 
+- [ITableData : IUnknown](itabledataiunknown.md) (多くのメソッド) 
     
 - [FBadRowSet](fbadrowset.md)
     
@@ -75,17 +75,17 @@ typedef struct _SRow
     
 - [HrQueryAllRows](hrqueryallrows.md)
     
-複数の行を記述する必要がある場合は、 [srowset](srowset.md)構造体を使用します。 **srowset**構造体には、 **srowset**構造の配列と、配列内の構造体の数が含まれています。 
+複数の行を記述する必要がある場合は [、SRowSet](srowset.md) 構造体が使用されます。 **SRowSet 構造体** には **、SRow** 構造体の配列と配列内の構造体の数が含まれています。 
   
-次の図は、 **srow**と**srow**データ構造の関係を示しています。 
+次の図は **、SRow** と **SRowSet データ構造の関係を** 示しています。 
   
 **SRow と SRowSet の関係**
   
-![srow と srow の関係](media/amapi_17.gif "srow と srow の関係")
+![SRow と SRowSet の SRow と SRowSet](media/amapi_17.gif "")のリレーションシップ
   
-**srow**構造体は、 [adrentry](adrentry.md)構造と同じように定義されています。 したがって、受信者テーブルの行とアドレス一覧のエントリは同じ処理を行うことができます。 
+**SRow** 構造体は [ADRENTRY 構造体と同じ定義](adrentry.md) です。 したがって、受信者テーブルの行とアドレス一覧内のエントリを同じように処理できます。 
   
-**srow**構造のメモリを割り当てる方法については、「 [adrlist および srow 構造体のメモリの管理](managing-memory-for-adrlist-and-srowset-structures.md)」を参照してください。
+**SRow** 構造体のメモリを割り当てる方法については [、「ADRLIST および SRowSet](managing-memory-for-adrlist-and-srowset-structures.md)構造体のメモリの管理」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 
@@ -94,5 +94,5 @@ typedef struct _SRow
 - [SRowSet](srowset.md)
 - [TABLE_NOTIFICATION](table_notification.md)
 - [MAPI の構造](mapi-structures.md)
-- [adrlist および srowset 構造のためのメモリの管理](managing-memory-for-adrlist-and-srowset-structures.md)
+- [ADRLIST および SRowSet 構造体のメモリの管理](managing-memory-for-adrlist-and-srowset-structures.md)
 

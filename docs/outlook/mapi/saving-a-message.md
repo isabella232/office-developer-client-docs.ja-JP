@@ -1,5 +1,5 @@
 ---
-title: メッセージを保存する
+title: メッセージの保存
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,44 +15,44 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420933"
 ---
-# <a name="saving-a-message"></a>メッセージを保存する
+# <a name="saving-a-message"></a>メッセージの保存
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージを保存する前に、クライアントは通常、メッセージの[imapiprop:: setprops](imapiprop-setprops.md)メソッドを呼び出して、メッセージテキストのプロパティ、attachment プロパティ、 **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md))、およびプロパティに加えて、いくつかのプロパティを設定します。宛先リストに関連付けられています。
+メッセージを保存する前に、クライアントは通常、メッセージの[IMAPIProp::SetProps](imapiprop-setprops.md)メソッドを呼び出して、メッセージ テキストプロパティ、添付ファイルプロパティ、PR_SUBJECT[(PidTagSubject)、](pidtagsubject-canonical-property.md)および受信者リストに関連付けられたプロパティに加えていくつかのプロパティを設定します。 
   
-**PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) プロパティを、IPM などの文字列に設定します。送信メッセージのクラスについての説明が記載されています。 クライアントはすべての送信メッセージに**PR_MESSAGE_CLASS**を設定する必要がありますが、設定しないと、メッセージストアプロバイダーによって既定値が提供されます。 送信メッセージの既定のメッセージクラスは IPM です。 
+プロパティ **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) プロパティを IPM などの文字列に設定します。送信メッセージのクラスについて説明します。 クライアントは、すべての送信 **メッセージPR_MESSAGE_CLASS** を設定する必要があります。設定しない場合、既定値はメッセージ ストア プロバイダーによって提供されます。 送信メッセージの既定のメッセージ クラスは IPM です。 
   
-**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティで MSGFLAG_UNSENT フラグを設定します。 必要に応じて、MSGFLAG_READ および MSGFLAG_UNMODIFIED フラグも設定します。 MSGFLAG_UNMODIFIED を設定すると、[合成] の下にメッセージが表示され、配信されたメッセージをシミュレートできます。 MSGFLAG_UNMODIFIED は、メッセージが初めて保存される前に、クライアントによってのみ設定できます。 
+プロパティ ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md) **)** MSGFLAG_UNSENTで、PR_MESSAGE_FLAGSフラグを設定します。 必要に応じて、MSGFLAG_READフラグMSGFLAG_UNMODIFIEDします。 メッセージを設定MSGFLAG_UNMODIFIED構成下のメッセージが配信されたメッセージをシミュレートできます。 MSGFLAG_UNMODIFIEDは、メッセージが初めて保存される前にクライアントによってのみ設定できます。 
   
-未送信メッセージの永続的コピーを作成する準備ができたら、メッセージとそのすべての添付ファイルに対して、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)を呼び出します。 すぐにメッセージを送信する場合は、 **SaveChanges**を呼び出す必要はありません。 **submitmessage**を呼び出すと、メッセージは内部的に処理の一部として保存されます。 
+送信されていないメッセージの永続的なコピーを作成する準備ができたら、メッセージとその添付ファイルの [IMAPIProp::SaveChanges](imapiprop-savechanges.md) を呼び出します。 メッセージをすぐ送信する場合は **、SaveChanges** を呼び出す必要があります。 **SubmitMessage の呼び出しは**、メッセージを処理の一部として内部的に保存します。 
   
-**SaveChanges**を呼び出すときは、KEEP_OPEN_READWRITE フラグを指定することをお勧めします。これにより、後でメッセージを変更できるようになります。 その他の設定可能フラグには FORCE_SAVE が含まれています。これは、変更がコミットされた後に、メッセージまたは添付ファイルを閉じる必要があることを示します。 KEEP_OPEN_READONLY は、変更が行われていないことを示し、メッセージストアプロバイダーに許可するフラグバッチクライアント要求、MAPI_DEFERRED_ERRORS。
+**SaveChanges** を呼び出す場合は、メッセージを後で変更できる KEEP_OPEN_READWRITE フラグを指定すると良い考えです。 その他の設定可能なフラグには、FORCE_SAVE が含まれます。これは、変更がコミットされた後にメッセージまたは添付ファイルを閉じるべきであり、KEEP_OPEN_READONLY は、これ以上変更を加えなくる必要がない、およびメッセージ ストア プロバイダーがクライアント要求をバッチ処理できるフラグ MAPI_DEFERRED_ERRORS です。
   
-メッセージに対して**savechanges**を呼び出す前に、メッセージのすべての添付ファイルに対して**savechanges**を呼び出すことが重要です。 添付ファイルの保存に失敗した場合、添付ファイルは送信時にメッセージに含まれず、メッセージの添付ファイルテーブルに表示されません。 すべての添付ファイルを保存した後にメッセージを保存できない場合は、メッセージと添付ファイルの両方が失われます。 
+メッセージの **SaveChanges** を呼び出す前に、メッセージ内のすべての添付ファイルに対して **SaveChanges** を呼び出す必要があります。 添付ファイルを保存できない場合、添付ファイルは送信時にメッセージに含まれません。メッセージの添付ファイルテーブルには表示されません。 すべての添付ファイルを保存した後にメッセージを保存できなかった場合、メッセージと添付ファイルの両方が失われます。 
   
-**SaveChanges**が呼び出されると、メッセージストアプロバイダーは次のプロパティを更新します。 
+**SaveChanges が呼** び出された場合、メッセージ ストア プロバイダーは次のプロパティを更新します。 
   
-- **PR_DISPLAY_TO**([PidTagDisplayTo](pidtagdisplayto-canonical-property.md)) すべてのプライマリ受信者を一覧表示します。
+- **PR_DISPLAY_TO** ([PidTagDisplayTo](pidtagdisplayto-canonical-property.md)) は、すべてのプライマリ受信者を一覧表示します。
     
-- **PR_DISPLAY_TO**カーボンコピーのすべての受信者を一覧表示します。 
+- **PR_DISPLAY_TO** カーボン コピー受信者の一覧を表示します。 
     
-- **PR_DISPLAY_BCC**([PidTagDisplayBcc](pidtagdisplaybcc-canonical-property.md)) すべてのブラインドカーボンコピー受信者を一覧表示します。
+- **PR_DISPLAY_BCC** ([PidTagDisplayBcc](pidtagdisplaybcc-canonical-property.md)) には、すべてのブラインド カーボン コピー受信者が一覧表示されます。
     
-- **PR_LAST_MODIFICATION_TIME**([PidTagLastModificationTime](pidtaglastmodificationtime-canonical-property.md))
+- **PR_LAST_MODIFICATION_TIME** ([PidTagLastModificationTime](pidtaglastmodificationtime-canonical-property.md))
     
-- **PR_MESSAGE_FLAGS**は、1つ以上の添付ファイルが保存されている場合は MSGFLAG_HASATTACH を設定し、メッセージが変更されたことを示すために MSGFLAG_UNMODIFIED をクリアします。 
+- **PR_MESSAGE_FLAGS** 1 つMSGFLAG_HASATTACH添付ファイルが保存されている場合に、メッセージが変更されたMSGFLAG_UNMODIFIEDをクリアする場合に設定します。 
     
-- **PR_MESSAGE_SIZE**([PidTagMessageSize](pidtagmessagesize-canonical-property.md)) には、メッセージの最新サイズが含まれています。
+- **PR_MESSAGE_SIZE** ([PidTagMessageSize](pidtagmessagesize-canonical-property.md)) には、メッセージの最新サイズが含まれる。
     
-- **PR_MESSAGE_ATTACHMENTS**([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) 添付ファイルテーブルへのアクセスを提供します。
+- **PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) は、添付ファイル テーブルへのアクセスを提供します。
     
-- **PR_MESSAGE_RECIPIENTS**([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) 受信者テーブルへのアクセスを提供します。
+- **PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) は、受信者テーブルへのアクセスを提供します。
     
-通常、一部のメッセージプロパティは、メッセージの作成時にクライアントまたはサービスプロバイダーによって提供されます。 クライアントが戻さを設定する場合は、 **SaveChanges**が呼び出されたときに更新されるメッセージストアプロバイダーになります。 たとえば、メッセージの作成時にメッセージの**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) および**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) プロパティを設定した場合、保存時に変更する必要はありません。 ただし、メッセージの作成時に設定されていないメッセージストアプロバイダーは、 **SaveChanges**が初めて呼び出されるときに設定する必要があります。 
+一部のメッセージ プロパティは、通常、メッセージの作成時にクライアントまたはサービス プロバイダーによって提供されます。 クライアントが設定を無視した場合 **、SaveChanges** が呼び出された時点でメッセージ ストア プロバイダーが更新を行う必要があります。 たとえば、メッセージの作成時にメッセージの **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティと **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) プロパティが設定されている場合、保存時に変更する必要があります。 ただし、メッセージの作成時に設定を無視するメッセージ ストア プロバイダーは **、SaveChanges** が初めて呼び出された時点で設定する必要があります。 
   
-**SaveChanges**が MAPI_E_CORRUPT_DATA を返す場合は、保存されているデータが失われたと仮定します。 実装にクライアントサーバーモデルを使用するメッセージストアプロバイダーは、ネットワーク接続が失われたとき、またはサーバーが実行されていないときにこの値を返すことがあります。 ユーザーにエラーを返す前に、 **setprops**への呼び出しの後に**SaveChanges**の別の呼び出しを行って、データの書き込みと保存をもう一度実行してください。 データがローカルにキャッシュされている場合は、このような問題はありません。 ただし、ローカルキャッシュがない場合、または2番目の**SaveChanges**呼び出しが失敗した場合は、エラーを表示して問題をユーザーに警告します。 
+**SaveChanges が** データ を返MAPI_E_CORRUPT_DATA、保存されているデータが失われたと仮定します。 クライアント サーバー モデルを実装に使用するメッセージ ストア プロバイダーは、ネットワーク接続が失われたり、サーバーが実行されていない場合に、この値を返す可能性があります。 ユーザーにエラーを返す前に **、SetProps** を呼び出し、続いて **SaveChanges** を別の呼び出しでデータを書き込み、もう一度保存してみてください。 データがローカルにキャッシュされている場合、これは問題ではありません。 ただし、ローカル キャッシュがない場合、または 2 番目の **SaveChanges** 呼び出しが失敗した場合は、エラーを表示してユーザーに問題を通知します。 
   
 

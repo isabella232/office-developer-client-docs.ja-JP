@@ -25,13 +25,13 @@ ms.locfileid: "33415846"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-OLE メソッド**IUnknown:: Release**を呼び出す別の方法を提供します。 
+OLE メソッド **IUnknown::Release を呼び出す別の方法を提供します**。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 ULONG UlRelease(
@@ -41,9 +41,9 @@ ULONG UlRelease(
 
 ## <a name="parameters"></a>パラメーター
 
- _パンク_
+ _punk_
   
-> 順番**IUnknown**インターフェイスから派生したインターフェイスへのポインター、つまり任意の MAPI インターフェイス。 
+> [in] **IUnknown** インターフェイスから派生したインターフェイスへのポインター、つまり任意の MAPI インターフェイス。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -53,16 +53,16 @@ S_OK
     
 MAPI_E_CALL_FAILED 
   
-> 予期しないまたは不明な配信元のエラーにより、操作が完了しませんでした。
+> 予期しない、または不明な発生源のエラーにより、操作が完了しなかっていません。
     
 ## <a name="remarks"></a>注釈
 
-参照カウントは、解放されるオブジェクトへの既存のポインターの数です。 
+参照カウントは、解放するオブジェクトへの既存のポインターの数です。 
   
-_punk_パラメーターが NULL の場合、この関数は**IUnknown:: Release**を呼び出すことなく、すぐに戻ります。
+punk _パラメーターが_ NULL の場合、関数は **IUnknown::Release** を呼び出さずに直ちに返します。
   
- **ulrelease**は、 **IUnknown:: Release**メソッドによって返された値を返します。これは、解放されるオブジェクトの参照カウントと同じにすることができます。 
+ **UlRelease** は **、IUnknown::Release** メソッドによって返される値を返します。これは、解放するオブジェクトの参照カウントと等しい場合があります。 
   
-**iunknown:: Release**の詳細については、「 [iunknown インターフェイスを実装する](implementing-the-iunknown-interface.md)」を参照してください。 
+**IUnknown::Release** の詳細については [、「IUnknown インターフェイスの実装」を参照してください](implementing-the-iunknown-interface.md)。 
   
 

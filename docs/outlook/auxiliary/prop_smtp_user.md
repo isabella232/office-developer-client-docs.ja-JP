@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420319"
 ---
-# <a name="propsmtpuser"></a>PROP_SMTP_USER
+# <a name="prop_smtp_user"></a>PROP_SMTP_USER
 
 SMTP アカウントのユーザー名を表します。
   
@@ -24,8 +24,8 @@ SMTP アカウントのユーザー名を表します。
 |:-----|:-----|
 |識別子:  <br/> |0x0204  <br/> |
 |プロパティの種類:  <br/> |PT_UNICODE  <br/> |
-|プロパティタグ:  <br/> |0x0204001f  <br/> |
-|接続  <br/> |読み取り専用  <br/> |
+|プロパティ タグ:  <br/> |0x0204001F  <br/> |
+|アクセス:  <br/> |読み取り専用  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

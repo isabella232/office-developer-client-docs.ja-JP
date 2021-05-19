@@ -25,12 +25,12 @@ ms.locfileid: "33419787"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-現在のプロファイル内のアドレス帳プロバイダーの識別子の一覧が含まれています。 
+現在のプロファイルのアドレス帳プロバイダーの識別子の一覧を含む。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_AB_PROVIDERS  <br/> |
-|識別子:  <br/> |0x3d01  <br/> |
+|識別子:  <br/> |0x3D01  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |アドレス帳  <br/> |
    
@@ -40,15 +40,15 @@ ms.locfileid: "33419787"
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-Mapitags
+Mapitags.h
   
-> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
+> 関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。
     
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
 ## <a name="see-also"></a>関連項目
 
@@ -56,7 +56,7 @@ mapidefs.h
 
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

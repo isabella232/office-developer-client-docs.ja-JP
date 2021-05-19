@@ -21,14 +21,14 @@ ms.locfileid: "33409882"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-並べ替えられたテーブルの表示を制限する必要がある場合は、常に次の順序で**IMAPITable**呼び出しを行います。 
+並べ替えたテーブルのビューを制限する必要がある場合は、常に次の **IMAPITable** 呼び出しを次の順序で行います。 
   
-1. [IMAPITable:: SetColumns](imapitable-setcolumns.md)列セットを定義します。 
+1. [列セットを定義する IMAPITable::SetColumns。](imapitable-setcolumns.md) 
     
-2. [IMAPITable::](imapitable-restrict.md)制限を課すことができます。 
+2. [IMAPITable::制限を適用](imapitable-restrict.md) します。 
     
-3. [IMAPITable::](imapitable-sorttable.md)並べ替えを実行するための sorttable。 
+3. [IMAPITable::SortTable を使用して](imapitable-sorttable.md) 並べ替えを実行します。 
     
-並べ替えられたテーブルが分類されている場合は、必要に応じて**sorttable**の呼び出しの後に、 [IMAPITable:: SetCollapseState](imapitable-setcollapsestate.md)を呼び出します。 ほとんどのサービスプロバイダーは、最高のパフォーマンスを実現するために最後のタスクとしてテーブルを並べ替えるので、この呼び出しの順序は重要です。 たとえば、メッセージストアプロバイダーが、制限を設定する前にフォルダーの内容テーブルを分類する必要がある場合、この分類は制限の処理中に削除されます。 2番目の分類が必要になります。 
+並べ替えたテーブルが分類されている場合は、SortTable 呼び出しの後、必要に応じて [IMAPITable::SetCollapseState](imapitable-setcollapsestate.md)を **呼び出** します。 ほとんどのサービス プロバイダーは、最高のパフォーマンスを得る最後のタスクとしてテーブルを並べ替えるので、この呼び出しの順序付けは重要です。 たとえば、メッセージ ストア プロバイダーが制限を適用する前にフォルダーコンテンツ テーブルを分類する必要がある場合、この分類は制限の処理中に削除されます。 2 番目の分類が必要になります。 
   
 

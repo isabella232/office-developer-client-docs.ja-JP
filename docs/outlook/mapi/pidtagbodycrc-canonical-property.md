@@ -25,32 +25,32 @@ ms.locfileid: "33415181"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージテキストの巡回冗長検査 (CRC) 値を含みます。
+メッセージ テキストの循環冗長チェック (CRC) 値を含む。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_BODY_CRC  <br/> |
-|識別子:  <br/> |0x0e1c  <br/> |
+|識別子:  <br/> |0x0E1C  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |Exchange  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-メッセージストアは、PT_LONG 値を生成する任意の CRC アルゴリズムを使用できます。 このプロパティは、 **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) プロパティが初めて設定されたときとその後に変更されたときの[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドの一部として計算する必要があります。
+メッセージ ストアでは、値を生成する任意の CRC アルゴリズムPT_LONGできます。 PR_BODY ([PidTagBody](pidtagbody-canonical-property.md)) プロパティが初めて設定され、その後変更されるたびに、**この** プロパティを [IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドの一部として計算する必要があります。
   
-クライアントアプリケーションは**PR_BODY_CRC**を使用して、 **PR_BODY**のプロパティまたはそのバリエーションに含まれるメッセージテキスト文字列の比較を支援します。 このプロパティを使用すると、クライアントは、メッセージテキストが変更されたときにすばやく簡単に検出できます。 **PR_BODY_CRC**を使用して、メッセージストアから**PR_BODY**を取得し、ローカルバージョンと比較するのではなく、パフォーマンスを大幅に向上させることができます。 
+クライアント アプリケーションは **、PR_BODY_CRC** プロパティまたはバリアントに含まれるメッセージ テキスト文字列を比較 **PR_BODY使用します** 。 このプロパティを使用すると、クライアントはメッセージ テキストが変更された時点を迅速かつ簡単に検出できます。 メッセージ ストアから PR_BODY_CRC を取得しPR_BODYバージョンと比較する代わりに、パフォーマンスの大幅な向上を実現できます。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
+> 関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -60,7 +60,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

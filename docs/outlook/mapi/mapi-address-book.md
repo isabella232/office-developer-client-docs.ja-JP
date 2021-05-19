@@ -45,11 +45,11 @@ To achieve the address book's integrated appearance, address book providers expo
   
 |**��{ address �v���p�e�B**|**���**|
 |:-----|:-----|
-|**PR_ADDRTYPE**([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |受信者のアドレスの種類。 各アドレスの種類は特定の形式に従い、特定のメッセージングシステムで使用されます。  <br/> |
-|**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |��M�҂̖��O��\���\�Ȃł��B  <br/> |
-|**PR_EMAIL_ADDRESS**([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |��M�҂̃A�h���X�ł��B  <br/> |
-|**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |�G���g�����ʎq����M�҂ɃA�N�Z�X���邽�߂Ɏg�p���܂��B  <br/> |
-|**PR_SEARCH_KEY**([PidTagSearchKey](pidtagsearchkey-canonical-property.md))  <br/> |�o�C�i�������L�[����M�҂���ʂ��邽�߂Ɏg�p���܂��B  <br/> |
+|**PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |��M�҂̃A�h���X����͂��܂��B�e�A�h���X�̎�ނł́A����̌`���Ɉˑ����āA����̃��b�Z�[�W���O �V�X�e�����g���Ă��܂��B  <br/> |
+|**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |��M�҂̖��O��\���\�Ȃł��B  <br/> |
+|**PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |��M�҂̃A�h���X�ł��B  <br/> |
+|**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |�G���g�����ʎq����M�҂ɃA�N�Z�X���邽�߂Ɏg�p���܂��B  <br/> |
+|**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))  <br/> |�o�C�i�������L�[����M�҂���ʂ��邽�߂Ɏg�p���܂��B  <br/> |
    
 MAPI �ł́A�����̃O���[�v�̃x�[�X �A�h���X�̃v���p�e�B�̃o���G�[�V�����̃v���p�e�B���`���܂��B�����̑��̃O���[�v�́A���b�Z�[�W�̃��[�U�[�Ƃ��܂��܂ȏ󋵂ł̔z�z���X�g�ɂ��Đ�����܂��B���Ƃ��΁A�v���p�e�B�� 1 �̃O���[�v�ɂ́A���b�Z�[�W�⑼�̃O���[�v�̑㗝�l�̎�M�҂̑㗝�l�̑��M�҂��ɂ��Đ�����܂��B
   

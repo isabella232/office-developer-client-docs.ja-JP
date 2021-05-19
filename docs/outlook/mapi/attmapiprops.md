@@ -21,40 +21,40 @@ ms.locfileid: "33410456"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**attMAPIProps**属性は特別で、既存の TNEF 定義属性のセットに対応するものがない MAPI プロパティをエンコードするために使用できます。 属性データは、エンドツーエンドで配置された MAPI プロパティのカウントセットです。 このエンコードの形式は、どの MAPI プロパティでも使用できます。次のようになります。  
+**attMAPIProps** 属性は、既存の TNEF 定義属性のセットに対応していない MAPI プロパティをエンコードするために使用できる特別な属性です。 属性データは、エンドツーエンドに配置された MAPI プロパティのカウントセットです。 MAPI プロパティの任意のセットを許可するこのエンコードの形式は次のとおりです。  
   
  _Property_Seq:_
   
-> _Property_Value,..._ のプロパティ数
+> property-count  _Property_Value,..._
     
-プロパティ数の値が示すように、 _Property_Value_の項目数は多くなければなりません。 
+プロパティカウント値が  _示Property_Value_ 数のアイテムが必要です。 
   
  _Property_Value:_
   
-> プロパティ-tag _ プロパティ-tag _Proptag_Name プロパティ_
+> property-tag _Property_property-tag Proptag_Name  _プロパティ_
     
-プロパティのタグは、単にプロパティ識別子に関連付けられている値です。たとえば、 **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) の0x0037001f などです。
+プロパティ タグは、プロパティ識別子 [(PidTagSubject)](pidtagsubject-canonical-property.md)の0x0037001Fなど **PR_SUBJECT値** です。
   
- _プロパティ_
+ _プロパティ:_
   
->  __ 値の値-count の値 _,..._
+>  _Value_ value-count  _Value,..._
     
  _Value:_
   
-> 値-データの値-サイズ値-データパディング値-サイズ値-IID 値-データパディング
+> value-data value-size value-size value-data padding value-size value-IID value-data padding
     
  _Proptag_Name:_
   
-> name-guid 名-種類 name-id name-guid name-kind name-string-length name-文字列のパディング
+> name-guid name-kind name-id name-guid name-kind name-string-length name-string padding
     
-各プロパティのカプセル化は、プロパティの識別子とプロパティの種類によって異なります。 プロパティタグ、識別子、および型は、Mapitags および mapidefs.h ヘッダーファイルで定義されています。
+各プロパティのカプセル化は、プロパティ識別子とプロパティの種類によって異なります。 プロパティ タグ、識別子、および型は、Mapitags.h ヘッダー ファイルと Mapidefs.h ヘッダー ファイルで定義されます。
   
-プロパティが名前付きプロパティの場合、プロパティタグの直後には、グローバル一意識別子 (GUID)、型、識別子または Unicode 文字列で構成される MAPI プロパティ名が付けられます。
+プロパティが名前付きプロパティの場合、プロパティ タグの直後に MAPI プロパティ名が続き、グローバル一意識別子 (GUID)、型、識別子または Unicode 文字列で構成されます。
   
-PT_BINARY、PT_STRING8、PT_UNICODE、PT_OBJECT のプロパティの種類など、可変長の値を持つ複数値プロパティとプロパティは、次のように処理されます。 最初に、32ビットの符号なし長としてエンコードされた値の数が TNEF ストリームに配置され、その後に個々の値が続きます。 各プロパティの値は、バイト単位のサイズとして、値データそのものでエンコードされます。 値データは、4バイト境界に埋め込まれます。ただし、値のサイズには埋め込まれている量は含まれません。
+PT_BINARY、PT_STRING8、PT_UNICODE、PT_OBJECT などの可変長の値を持つ複数値のプロパティとプロパティは、次のように扱います。 最初に、32 ビット符号なし long としてエンコードされた値の数が TNEF ストリームに配置され、その後に個々の値が続きます。 各プロパティの値データは、バイト単位のサイズとしてエンコードされ、その後に値データ自体が続きます。 値データは 4 バイト境界に埋め込まれますが、埋め込み量は値サイズには含まれません。
   
-プロパティの型が PT_OBJECT の場合は、値の後にオブジェクトのインターフェイス識別子が続きます。 現在の TNEF の実装では、IID_IMessage、IID_IStorage、および IID_Istream のインターフェイス識別子のみがサポートされています。 インターフェイス識別子のサイズは、値のサイズに含まれています。
+プロパティがオブジェクトの種類PT_OBJECT、値のサイズの後にオブジェクトのインターフェイス識別子が続きます。 TNEF の現在の実装では、インターフェイスIID_IMessage、IID_IStorage、IID_Istreamのみをサポートしています。 インターフェイス識別子のサイズは、値サイズに含まれます。
   
-オブジェクトが埋め込みメッセージの場合 (つまり、プロパティの種類が PT_OBJECT で、インターフェイス識別子が IID_Imessage の場合)、値データは埋め込み TNEF ストリームとしてエンコードされます。 TNEF を実装する埋め込みメッセージの実際のエンコーディングは、元のストリームの2番目の TNEF オブジェクトを開いて、ストリームをインラインで処理することによって実行されます。
+オブジェクトが埋め込みメッセージ (つまり、プロパティの種類が PT_OBJECT、インターフェイス識別子が IID_Imessage) の場合、値データは埋め込み TNEF ストリームとしてエンコードされます。 TNEF 実装での埋め込みメッセージの実際のエンコードは、元のストリームの 2 番目の TNEF オブジェクトを開き、ストリームをインラインで処理することで行われます。
   
 

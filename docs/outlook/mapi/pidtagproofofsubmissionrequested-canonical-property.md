@@ -25,30 +25,30 @@ ms.locfileid: "33420291"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-送信値の ASN を含む1つの証明を含みます。
+提出の証明値として ASN.1 が含まれる。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_PROOF_OF_SUBMISSION_REQUESTED  <br/> |
 |識別子:  <br/> |0x0028  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|エリア:  <br/> |MAPI エンベロープ  <br/> |
+|エリア:  <br/> |MAPI 封筒  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-このプロパティは、メッセージごとの400送信エンベロープ属性に対応します。
+このプロパティは、X.400 送信エンベロープのメッセージごとの属性に対応します。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -58,7 +58,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

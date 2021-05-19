@@ -1,5 +1,5 @@
 ---
-title: Len 関数 (Access カスタム web アプリ)
+title: Len 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33410757"
 ---
-# <a name="len-function-access-custom-web-app"></a>Len 関数 (Access カスタム web アプリ)
+# <a name="len-function-access-custom-web-app"></a>Len 関数 (Access カスタム Web アプリ)
 
 指定された文字列式の文字数 (ただし、末尾の空白を除く) を返します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "33410757"
   
 ## <a name="syntax"></a>構文
 
- **Len**(*textexpression*) 
+ **Len** (*TextExpression*) 
   
 **Len** 関数の引数は次のとおりです。 
   

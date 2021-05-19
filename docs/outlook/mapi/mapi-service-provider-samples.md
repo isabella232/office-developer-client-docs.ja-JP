@@ -1,5 +1,5 @@
 ---
-title: MAPI サービスプロバイダーのサンプル
+title: MAPI サービス プロバイダーのサンプル
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,30 +15,30 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420298"
 ---
-# <a name="mapi-service-provider-samples"></a>MAPI サービスプロバイダーのサンプル
+# <a name="mapi-service-provider-samples"></a>MAPI サービス プロバイダーのサンプル
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このセクションには、3つの MAPI サービスプロバイダーのコードサンプルが含まれています。
+このセクションには、3 つの MAPI サービス プロバイダーのコード サンプルが含まれています。
   
-- [Outlook MAPI サンプルのダウンロード](downloading-the-outlook-mapi-samples.md)
+- [MAPI サンプルOutlookダウンロードする](downloading-the-outlook-mapi-samples.md)
     
     このトピックでは、サンプルをダウンロードする方法について説明します。
     
 - [アドレス帳プロバイダーのサンプル](address-book-provider-sample.md)
     
-    このサンプルでは、表示名と電子メールアドレス用の単一の読み取り専用コンテナーをサポートしています。これは、フラットなバイナリファイルから読み取られます。
+    このサンプルでは、フラット バイナリ ファイルから読み取る表示名と電子メール アドレスの読み取り専用コンテナーが 1 つサポートされています。
     
-- [メッセージストアプロバイダーのサンプル](message-store-provider-sample.md)
+- [メッセージ ストア プロバイダーのサンプル](message-store-provider-sample.md)
     
-    この例では、ディレクトリをフォルダーとして使用し、OLE 2.0 ドキュメントファイルをメッセージとして使用します。 このサンプルでは、既定のメッセージストアに必要なすべての機能がサポートされています。
+    このサンプルでは、フォルダーとしてディレクトリを使用し、OLE 2.0 ドキュメント ファイルをメッセージとして使用します。 このサンプルでは、既定のメッセージ ストアに必要なすべての機能がサポートされています。
     
-- [トランスポートプロバイダーのサンプル](transport-provider-sample.md)
+- [トランスポート プロバイダーのサンプル](transport-provider-sample.md)
     
-    この例では、ファイルとディレクトリを使用して、メッセージの送受信を行います。
+    このサンプルでは、ファイルとディレクトリを使用してメッセージの送受信を行います。
     
-これらのサンプルのいずれかを windows 7、windows Vista、windows server 2008、windows XP、または windows server 2003 のオペレーティングシステムで実行するには、最初に MAPI ランタイムシステムをセットアップする必要があります。 詳細については、「[MAPI プログラミングの概要](mapi-programming-overview.md)」を参照してください。
+Windows 7、Windows Vista、Windows Server 2008、Windows XP、または Windows Server 2003 オペレーティング システムでこれらのサンプルを実行するには、まず MAPI ランタイム システムをセットアップする必要があります。 詳細については、「[MAPI プログラミングの概要](mapi-programming-overview.md)」を参照してください。
   
 

@@ -1,5 +1,5 @@
 ---
-title: Max 関数 (Access カスタム web アプリ)
+title: Max 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33419738"
 ---
-# <a name="max-function-access-custom-web-app"></a>Max 関数 (Access カスタム web アプリ)
+# <a name="max-function-access-custom-web-app"></a>Max 関数 (Access カスタム Web アプリ)
 
 クエリまたはテーブルの式の最大値を返します。
   
@@ -23,12 +23,12 @@ ms.locfileid: "33419738"
   
 ## <a name="syntax"></a>構文
 
- **最大**(*式*) 
+ **Max** (*式*) 
   
 **Max** 関数には、以下の引数があります。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *Expression*  <br/> |評価するデータを含むフィールドを識別する文字列式、またはそのフィールドのデータを使用して計算を実行する式を指定します。 *Expression*のオペランドには、テーブルのフィールドの名前、定数、または関数を含めることができます。これは、組み込みまたはユーザー定義のいずれの SQL 集計関数であってもかまいません。  <br/> |
+| *Expression*  <br/> |評価するデータを含むフィールド、またはそのフィールドのデータを使用して計算を実行する式を示す文字列式。 *式のオペランド* には、テーブル フィールド、定数、または関数の名前を含めできます (組み込み関数またはユーザー定義関数のいずれかですが、他の集計関数の 1 つSQLできません)。  <br/> |
    
 

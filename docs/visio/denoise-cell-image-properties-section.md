@@ -8,7 +8,7 @@ f1_keywords:
 - vis_sdr.chm225
 localization_priority: Normal
 ms.assetid: e305585f-f0d8-0494-91d4-0c76929dc170
-description: ビットマップイメージからノイズ (ランダムに分散した色レベルのピクセル) を削除します。 既定値は 0% です。
+description: ビットマップ画像からノイズを除去します。ノイズとは、カラー レベルが不規則に分散したピクセルのことです。既定値は 0% です。
 ms.openlocfilehash: f970fde22e864239ea3f3f9bcb704e7f4692e9cc
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -26,7 +26,7 @@ ms.locfileid: "33415805"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [denoise]  <br/> |
+| セル名:  <br/> | Denoise  <br/> |
    
 プログラムから、インデックスによって [Denoise] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -34,6 +34,6 @@ ms.locfileid: "33415805"
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowImage** <br/> |
-| セル インデックス:  <br/> |**visimagedenoise** <br/> |
+| セル インデックス:  <br/> |**visImageDenoise** <br/> |
    
 

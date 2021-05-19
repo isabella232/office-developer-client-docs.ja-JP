@@ -5,7 +5,7 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 2dd5d24d-0fbb-43bd-bc41-93c29536e342
-description: 最終更新日:05 年10月2012日
+description: '最終更新日: 2012 年 10 月 5 日'
 ms.openlocfilehash: 262955c0c2753dd69e874ab60246b3ed50500dbc
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "33409994"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-表示しようとしたコンテンツは現在使用できません。 削除されたか、新しいバージョンに置き換えられた可能性があります。 この一連のリンクを参照して、速度を向上させることができます。
+表示しようとしたコンテンツは現在使用できません。 削除されたか、新しいバージョンに置き換えられた可能性があります。 この一連のリンクを見て、速度を上げろ。
   
 ## <a name="microsoft-outlook-2013-messaging-api-mapi-reference"></a>Microsoft Outlook 2013 メッセージ API (MAPI) リファレンス
 

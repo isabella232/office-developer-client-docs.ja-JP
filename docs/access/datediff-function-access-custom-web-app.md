@@ -1,5 +1,5 @@
 ---
-title: DateDiff 関数 (Access カスタム web アプリ)
+title: DateDiff 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415615"
 ---
-# <a name="datediff-function-access-custom-web-app"></a>DateDiff 関数 (Access カスタム web アプリ)
+# <a name="datediff-function-access-custom-web-app"></a>DateDiff 関数 (Access カスタム Web アプリ)
 
 指定した開始日と終了日間で超えられた、指定した日付部分境界のカウントを戻します。
   
@@ -22,15 +22,15 @@ ms.locfileid: "33415615"
   
 ## <a name="syntax"></a>構文
 
-**DateDiff**(*DatePart*、 *StartDate*、 *EndDate*) 
+**DateDiff** (*DatePart*, *StartDate*, *EndDate*) 
   
 **DateDiff** 関数には、以下の引数があります。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *DatePart*  <br/> |は、開始日** と終了** 日のうちで境界の種類を指定する部分です。 有効な設定のリストについては、注釈のセクションを参照してください。  <br/> |
-| *StartDate*  <br/> |Date/Time 値に解決できる式。 *Date*引数 expression、column 式、ユーザー定義の変数または文字列リテラル。  <br/> |
-| *EndDate*  <br/> |Date/Time 値に解決できる式。 *Date*引数 expression、column 式、ユーザー定義の変数または文字列リテラル。  <br/> |
+| *DatePart*  <br/> |交差する境界  *の種類を*  指定する StartDate と  *EndDate*  の一部です。 有効な設定のリストについては、注釈のセクションを参照してください。  <br/> |
+| *StartDate*  <br/> |Date/Time 値に解決できる式。 *Date 引数* 式、列式、ユーザー定義変数、または文字列リテラル。  <br/> |
+| *EndDate*  <br/> |Date/Time 値に解決できる式。 *Date 引数* 式、列式、ユーザー定義変数、または文字列リテラル。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -39,14 +39,14 @@ The following table lists all valid  *DatePart*  arguments.
 |***DatePart***|
 |:-----|
 |**year** <br/> |
-|**現** <br/> |
+|**四半期** <br/> |
 |**month** <br/> |
 |**dayofyear** <br/> |
 |**day** <br/> |
-|**回** <br/> |
+|**週** <br/> |
 |**hour** <br/> |
 |**minute** <br/> |
 |**second** <br/> |
-|**ミリ** <br/> |
+|**ミリ秒** <br/> |
    
 

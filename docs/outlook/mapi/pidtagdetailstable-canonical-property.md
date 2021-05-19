@@ -25,7 +25,7 @@ ms.locfileid: "33419255"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-埋め込みの表示テーブルオブジェクトを格納します。
+埋め込み表示テーブル オブジェクトが含まれる。
   
 |||
 |:-----|:-----|
@@ -36,19 +36,19 @@ ms.locfileid: "33419255"
    
 ## <a name="remarks"></a>注釈
 
-このプロパティを、オブジェクトの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドに渡すと、表示テーブルを作成できる[IMAPITable](imapitableiunknown.md)インターフェイスが返されます。 MAPI では、このテーブルを使用して、 [IAddrBook::D etails](iaddrbook-details.md)呼び出しへの応答として、アドレス帳オブジェクトのプロパティシートを表示します。 
+このプロパティを [オブジェクトの IMAPIProp::OpenProperty](imapiprop-openproperty.md) メソッドに渡す場合、表示テーブルの作成を可能にする [IMAPITable](imapitableiunknown.md) インターフェイスが返されます。 MAPI では、このテーブルを使用して [、IAddrBook::D](iaddrbook-details.md) 呼び出しに応答してアドレス帳オブジェクトのプロパティ シートを表示します。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -63,7 +63,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

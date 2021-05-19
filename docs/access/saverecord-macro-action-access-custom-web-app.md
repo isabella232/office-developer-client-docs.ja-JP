@@ -1,5 +1,5 @@
 ---
-title: SaveRecord マクロアクション (Access カスタム web アプリ)
+title: SaveRecord マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415559"
 ---
-# <a name="saverecord-macro-action-access-custom-web-app"></a>SaveRecord マクロアクション (Access カスタム web アプリ)
+# <a name="saverecord-macro-action-access-custom-web-app"></a>SaveRecord マクロ アクション (Access カスタム Web アプリ)
 
 現在のレコードを保存します。
   

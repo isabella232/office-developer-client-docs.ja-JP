@@ -38,10 +38,10 @@ LPXLOPER12 TempErr12(BOOL err);
   
 |**エラー**|**XLCALL.H で定義されたエラー コード**|**同等の 10 進数**|
 |:-----|:-----|:-----|
-|#NULL  <br/> |**xlerrNull** <br/> |.0  <br/> |
-|#DIV/0!  <br/> |**xlerrDiv0** <br/> |7   <br/> |
+|#NULL  <br/> |**xlerrNull** <br/> |0  <br/> |
+|#DIV/0!  <br/> |**xlerrDiv0** <br/> |7  <br/> |
 |#VALUE!  <br/> |**xlerrValue** <br/> |15   <br/> |
-|#REF!  <br/> |**xlerrRef** <br/> |最高  <br/> |
+|#REF!  <br/> |**xlerrRef** <br/> |23  <br/> |
 |#NAME?  <br/> |**xlerrName** <br/> |29  <br/> |
 |#NUM!  <br/> |**xlerrNum** <br/> |36  <br/> |
 |#N/A  <br/> |**xlerrNA** <br/> |42  <br/> |

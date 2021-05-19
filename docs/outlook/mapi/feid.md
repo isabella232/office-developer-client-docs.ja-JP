@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2dde7eec-df3d-723c-db08-7ff0b6107a0b
-description: '最終更新日: 2012 年7月2日'
+description: '最終更新日: 2012 年 7 月 2 日'
 ms.openlocfilehash: 88716719857cfd623d30a3684fc997ea8019455e
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "33409812"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォルダーの識別子。 エントリ id とその他の関連情報が含まれています。
+フォルダーの識別子。 エントリ識別子と他の関連情報が含まれる。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -37,17 +37,17 @@ struct FEID
 
 ## <a name="members"></a>メンバー
 
- _abflags_
+ _abFlags_
   
-> フォルダーの4バイトのエントリ id。 MAPI エントリ識別子の詳細については、「 **[ENTRYID](entryid.md)**」を参照してください。 
+> フォルダーの 4 バイトのエントリ識別子。 MAPI エントリ識別子の詳細については **[、「ENTRYID」を参照してください](entryid.md)**。 
     
  _muid_
   
-> ストアプロバイダーを識別する GUID。 **MAPIUID**の型定義については、「mapidefs.h」を参照してください。 
+> ストア プロバイダーを識別する GUID。 MAPIUID の型定義については、mapidefs.h **を参照してください**。 
     
  _プレースホルダー_
   
-> このメンバーは、Outlook の内部使用のために予約されており、サポートされていません。
+> このメンバーは、ユーザーの内部使用Outlook予約され、サポートされていません。
     
  _ltid_
   

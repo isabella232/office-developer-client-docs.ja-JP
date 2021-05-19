@@ -25,13 +25,13 @@ ms.locfileid: "33414537"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定したローカルパスに相当する汎用名前付け規則 (UNC) パスを検索します。
+指定されたローカル パスに対応する汎用名前付け規則 (UNC) パスを検索します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 SCODE ScUNCFromLocalPath(
@@ -43,23 +43,23 @@ SCODE ScUNCFromLocalPath(
 
 ## <a name="parameters"></a>パラメーター
 
- _szlocal_
+ _szLocal_
   
-> 順番ファイルまたはディレクトリの形式 [ _drive:_]\[ _path_のパス。
+> [in]ファイルまたはディレクトリの形式 [ _drive:_] \[ _path_] のパス。
     
- _szunc_
+ _szUNC_
   
-> 読み上げ_szlocal_パラメーターと同じ\\ファイルまたはディレクトリの形式 [ _server_]\[ _share_]\[ _path_] のパス。 
+> [out]szLocal パラメーターと同じファイルまたはディレクトリの [サーバー ] 共有 ] パス \\ の形式 \[  \[ _のパス_。 
     
- _cchunc_
+ _cchUNC_
   
-> 順番出力文字列のバッファーのサイズ。
+> [in]出力文字列のバッファーのサイズ。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK
   
-> 対応する UNC パスが正常に配置されている。
+> UNC パスの対応するパスが正常に見つからされました。
     
 MAPI_E_INVALID_PARAMETER
   
@@ -67,11 +67,11 @@ MAPI_E_INVALID_PARAMETER
     
 MAPI_E_TOO_BIG
   
->  _szunc_は、結果を保持するのに十分な大きさがありませんでした。 
+>  _szUNC_ は、結果を保持するのに十分な大きさではなかった。 
     
 S_FALSE
   
-> ローカルパスは、既に UNC 文字列です。
+> ローカル パスは既に UNC 文字列でした。
     
 ## <a name="see-also"></a>関連項目
 

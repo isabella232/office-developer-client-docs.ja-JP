@@ -21,10 +21,10 @@ ms.locfileid: "33420949"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-使用する必要がある mapi の部分が、mapi の MAPIUTIL で宣言されているインターフェイスと関数である場合があります。H ヘッダーファイル ( **ipropdata**や**itabledata**など) — **MAPIInitialize**を呼び出して初期化する必要はありません。 詳細については、「 [ipropdata: imapiprop](ipropdataimapiprop.md)」、「 [itabledata: IUnknown](itabledataiunknown.md)」、および「 [MAPIInitialize](mapiinitialize.md)」を参照してください。 代わりに、 **ScInitMapiUtil**関数を呼び出します。 詳細については、「 [ScInitMapiUtil](scinitmapiutil.md)」を参照してください。 **ScInitMapiUtil**では、クライアントアプリケーションが MAPI allocators を必要とするユーティリティ関数およびメソッドを使用できますが、それらを明示的には要求しません。 
+使用する必要がある MAPI の唯一の部分がユーティリティである場合は、MAPI の MAPIUTIL で宣言されているインターフェイスと関数です。IPropData や **ITableData** などの **H** ヘッダー ファイルは、初期化のために **MAPIInitialize を** 呼び出す必要があります。 詳細については [、「IPropData : IMAPIProp](ipropdataimapiprop.md) [、ITableData :](itabledataiunknown.md)IUnknown、MAPIInitialize」 [を参照してください](mapiinitialize.md)。 代わりに **、ScInitMapiUtil 関数を呼び出** します。 詳細については [、「ScInitMapiUtil」を参照してください](scinitmapiutil.md)。 **ScInitMapiUtil** を使用すると、クライアント アプリケーションは、MAPI アロケーターを必要とするが、明示的に要求しないユーティリティ関数とメソッドを使用できます。 
   
-シャットダウン時に、 **DeinitMapiUtil**を呼び出して、ユーティリティに接続されているリソースを解放します。 **MAPIUninitialize**は呼び出さないでください。 詳細については、「 [DeinitMapiUtil](deinitmapiutil.md) 」と「 [MAPIUninitialize](mapiuninitialize.md)」を参照してください。
+シャットダウン時に **DeinitMapiUtil** を呼び出して、ユーティリティに接続されているリソースを解放します。 **MAPIUninitialize を呼び出さない**。 詳細については[、「DeinitMapiUtil」および](deinitmapiutil.md)[「MAPIUninitialize」を参照してください](mapiuninitialize.md)。
   
-**itabledata**インターフェイスは、 **MAPIInitialize**ではなく**ScInitMapiUtil**を呼び出したクライアントのテーブル通知をサポートしていないことに注意してください。 
+ITableData インターフェイスは **、MAPIInitialize** ではなく **ScInitMapiUtil** を呼び出したクライアントのテーブル通知をサポートしません。  
   
 

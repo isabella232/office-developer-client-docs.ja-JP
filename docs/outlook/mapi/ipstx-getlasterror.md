@@ -1,5 +1,5 @@
 ---
-title: ipstxgetlasterror
+title: IPSTXGetLastError
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33414978"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-最新のエラーに関する拡張情報を取得します。
+最後のエラーに関する拡張情報を取得します。
   
 ```cpp
 HRESULT GetLastError( 
@@ -39,15 +39,15 @@ HRESULT GetLastError(
 
  _hResult_
   
->  順番エラーコード。 
+>  [in]エラー コード。 
     
  _ulFlags_
   
->  [in]動作を変更するフラグです。 これは0である必要があります。 
+>  [in]動作を変更するフラグです。 これは 0 である必要があります。 
     
  _lppMAPIError_
   
->  読み上げエラーの拡張情報を含む**MAPIERROR**構造体へのポインター。 **LPMAPIERROR**の型定義については、「mapidefs.h」を参照してください。 
+>  [out]エラーの **拡張情報を** 含む MAPIERROR 構造体へのポインター。 LPMAPIERROR の型定義については **、mapidefs.h を参照してください**。 
     
 ## <a name="see-also"></a>関連項目
 

@@ -21,9 +21,9 @@ ms.locfileid: "33419304"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-mapi クライアントは、暗黙的に、または Windows 関数**LoadLibrary**と**GetProcAddress**を使用して明示的に mapi dll にリンクできます。 mapi dll を明示的にリンクする方法については、「 [mapi 関数へのリンク](how-to-link-to-mapi-functions.md)」を参照してください。
+MAPI クライアントは **、LoadLibrary** 関数と **GetProcAddress** 関数を使用して、暗黙的に、または明示的Windows MAPI DLL にリンクできます。 MAPI DLL を明示的にリンクする方法については、「MAPI 関数への [リンク」を参照してください](how-to-link-to-mapi-functions.md)。
   
-MAPI では、mapix に type definition ステートメントが用意されています。H ヘッダーファイルを次の各関数に対して使用します。
+MAPI は、MAPIX に型定義ステートメントを提供します。次の各関数の H ヘッダー ファイル。
   
 [MAPILogonEx](mapilogonex.md)
   
@@ -39,8 +39,8 @@ MAPI では、mapix に type definition ステートメントが用意されて�
   
 [MAPIAdminProfiles](mapiadminprofiles.md)
   
-これらの型定義を使用して、MAPI dll に明示的にリンクされている場合に、対応するエントリポイントを正しく呼び出します。
+MAPI DLL に明示的にリンクする場合は、これらの型定義を使用して、対応するエントリ ポイントを正しく呼び出します。
   
-サービスプロバイダーには、DLL で mapi 以外の機能 (mapi に完全に関連しない機能) を含めることができます。 これらの機能を使用する必要がある場合は、dll と**FreeLibrary**を使用する前に**LoadLibrary**を呼び出して、使用した dll をメモリから削除します。 mapi は、サービスプロバイダー dll の非 mapi の使用を認識していないため、必要な場合に DLL が利用できるという保証はありません。 MAPI は、サービスを必要とするアクティブなセッションを持つクライアントがなくなったときに、サービスプロバイダー DLL を解放します。 
+サービス プロバイダーは、MAPI 以外の機能 (MAPI とは完全に関連しない機能) を DLL に含めできます。 これらの機能を使用する必要がある場合は **、DLL** と FreeLibrary を使用する前に **LoadLibrary** を呼び出して、使用後に DLL をメモリから削除します。 MAPI はサービス プロバイダー DLL の MAPI 以外の使用を知らないため、必要なときに DLL を使用できる保証はありません。 MAPI は、サービスを必要とするアクティブ なセッションを持つクライアントが存在しなくなった場合に、サービス プロバイダー DLL を解放します。 
   
 

@@ -22,19 +22,19 @@ ms.locfileid: "33415041"
   
 |**値**|**飛び越し点の方向**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| .0  <br/> | ページの既定値  <br/> |**visLOJumpDirXDefault** <br/> |
-| 1   <br/> | 上  <br/> |**visLOJumpDirXUp** <br/> |
-| 2   <br/> | 下へ  <br/> |**visLOJumpDirXDown** <br/> |
+| 0  <br/> | ページの既定値  <br/> |**visLOJumpDirXDefault** <br/> |
+| 1  <br/> | 上  <br/> |**visLOJumpDirXUp** <br/> |
+| 2  <br/> | 下へ  <br/> |**visLOJumpDirXDown** <br/> |
    
 ## <a name="remarks"></a>注釈
 
-ページ上の*すべて*のコネクタジャンプの既定の水平方向を設定するには、[ページレイアウト] セクションの [[pagelinejumpdirx]] セルを使用します。 
+ページ上のすべてのコネクタ ジャンプの既定の水平方向を設定するには、[ページ レイアウト] セクションの [PageLineJumpDirX] セルを使用します。 
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ConLineJumpDirX] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [conlinejumpdirx]  <br/> |
+| セル名:  <br/> | ConLineJumpDirX  <br/> |
    
 プログラムから、インデックスによって [ConLineJumpDirX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

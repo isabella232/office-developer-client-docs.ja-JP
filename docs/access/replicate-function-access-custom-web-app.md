@@ -1,5 +1,5 @@
 ---
-title: Replicate 関数 (Access カスタム web アプリ)
+title: レプリケート関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411065"
 ---
-# <a name="replicate-function-access-custom-web-app"></a>Replicate 関数 (Access カスタム web アプリ)
+# <a name="replicate-function-access-custom-web-app"></a>レプリケート関数 (Access カスタム Web アプリ)
 
 テキスト値を、指定された回数だけ繰り返します。
   
@@ -23,13 +23,13 @@ ms.locfileid: "33411065"
   
 ## <a name="syntax"></a>構文
 
- **Replicate** (TextExpression**, NumberOfTimes**) 
+ **Replicate** (TextExpression **, NumberOfTimes **) 
   
 **Replicate** 関数の引数は次のとおりです。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
 | *TextExpression*  <br/> |文字列式。  <br/> |
-| *numberoftimes*  <br/> |*textexpression*を繰り返す回数を指定する整数型 (integer) の値です。  <br/> |
+| *NumberOfTimes*  <br/> |*TextExpression* を繰り返す回数を指定する整数です。  <br/> |
    
 

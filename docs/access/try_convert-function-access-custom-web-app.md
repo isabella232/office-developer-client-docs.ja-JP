@@ -1,5 +1,5 @@
 ---
-title: Try_Convert 関数 (Access カスタム web アプリ)
+title: Try_Convert関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33410897"
 ---
-# <a name="tryconvert-function-access-custom-web-app"></a>Try_Convert 関数 (Access カスタム web アプリ)
+# <a name="try_convert-function-access-custom-web-app"></a>Try_Convert関数 (Access カスタム Web アプリ)
 
 指定したデータ型に値を変換します。変換が無効な場合は Null を返します。
   
@@ -29,7 +29,7 @@ ms.locfileid: "33410897"
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *DataType*  <br/> |変換する*式*のデータ型を指定します。  <br/> |
+| *DataType*  <br/> |式 を変換するデータ  *型*  です。  <br/> |
 | *Expression*  <br/> |変換する値を指定します。  <br/> |
    
 ## <a name="remarks"></a>注釈

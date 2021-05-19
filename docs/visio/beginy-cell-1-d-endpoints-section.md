@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm95
 localization_priority: Normal
 ms.assetid: b2518a70-5755-a15a-a238-bac2ae64a75a
-description: 親図形の原点を基準としたときの、1-d 図形の始点の y 座標を表します。
+description: 親図形の原点との関係で、1-D 図形の開始点の y 座標を表します。
 ms.openlocfilehash: dbe1cca3a3b969b14b62cb613359d014c7933bd9
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33419213"
 ---
 # <a name="beginy-cell-1-d-endpoints-section"></a>[BeginY] セル ([1-D Endpoints] セクション)
 
-親図形の原点を基準としたときの、1-d 図形の始点の*y*座標を表します。 
+親図形  *の原点との*  関係で、1-D 図形の開始点の y 座標を表します。 
   
 ## <a name="remarks"></a>注釈
 

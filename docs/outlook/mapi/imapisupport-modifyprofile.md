@@ -1,5 +1,5 @@
 ---
-title: imapisupportmodifyprofile
+title: IMAPISupportModifyProfile
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33419990"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージストアプロファイルセクションの変更を永続的に行います。
+メッセージ ストア のプロファイル セクションを永続的に変更します。
   
 ```cpp
 HRESULT ModifyProfile(
@@ -37,25 +37,25 @@ ULONG ulFlags
 
  _ulFlags_
   
-> 順番メッセージストアの種類を示すフラグのビットマスク。 次のフラグを設定できます。
+> [in]メッセージ ストアの種類を示すフラグのビットマスク。 次のフラグを設定できます。
     
 MDB_TEMPORARY 
   
-> メッセージストアは一時的なものであり、メッセージストアテーブルに追加することはできません。 MDB_TEMPORARY が設定されている場合、 **modifyprofile**はすぐに S_OK を返します。 
+> メッセージ ストアは一時的なもので、メッセージ ストア テーブルに追加する必要があります。 このMDB_TEMPORARY設定すると **、ModifyProfile は** 直ちにS_OK返します。 
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> プロファイルセクションの変更が成功しました。
+> プロファイル セクションの変更が成功しました。
     
 ## <a name="remarks"></a>注釈
 
-**imapisupport:: modifyprofile**メソッドは、メッセージストアプロバイダーサポートオブジェクトに対して実装されています。 メッセージストアプロバイダーは、「 **modifyprofile** 」を呼び出して、プロファイル情報の変更を MAPI に要求します。 
+**IMAPISupport::ModifyProfile** メソッドは、メッセージ ストア プロバイダーのサポート オブジェクトに実装されます。 メッセージ ストア プロバイダーは **ModifyProfile を呼び出** して、MAPI にプロファイル情報の変更を求めるプロンプトを表示します。 
   
- **modifyprofile**は、呼び出し元プロバイダーに関連付けられているプロファイルセクションを、インストール済みのメッセージストアプロバイダーリソースの一覧に追加します。 これにより、メッセージストアがメッセージストアテーブルにリストされます。これは、クライアントが[imapisession:: getmsgstorestable](imapisession-getmsgstorestable.md)メソッドを使用して利用でき、ダイアログボックスを表示せずに開くことができます。 
+ **ModifyProfile は** 、呼び出し元プロバイダーに関連付けられているプロファイル セクションを、インストールされているメッセージ ストア プロバイダー リソースの一覧に追加します。 これにより [、IMAPISession::GetMsgStoresTable](imapisession-getmsgstorestable.md) メソッドを使用してクライアントが使用できるメッセージ ストア テーブルにメッセージ ストアが一覧表示され、ダイアログ ボックスが表示されることなく開きます。 
   
-MDB_TEMPORARY フラグが設定されている場合、MAPI は nothing を返し、メソッドはすぐに S_OK で戻ります。
+このフラグMDB_TEMPORARY設定されている場合、MAPI は何も実行しません。メソッドは、このフラグを使用してすぐにS_OK。
   
 ## <a name="see-also"></a>関連項目
 

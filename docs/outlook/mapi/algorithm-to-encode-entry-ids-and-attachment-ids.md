@@ -1,5 +1,5 @@
 ---
-title: エントリ id と添付ファイル id をエンコードするためのアルゴリズム
+title: エントリの ID と添付ファイルの ID をエンコードするアルゴリズム
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,13 +13,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420137"
 ---
-# <a name="algorithm-to-encode-entry-ids-and-attachment-ids"></a>エントリ id と添付ファイル id をエンコードするためのアルゴリズム
+# <a name="algorithm-to-encode-entry-ids-and-attachment-ids"></a>エントリの ID と添付ファイルの ID をエンコードするアルゴリズム
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ストアプロバイダーは、mapi の Uniform resource Locator (URL) の一部として送信し、インデックス処理の準備ができているオブジェクトを識別するために、エントリ id と添付ファイル id を mapi プロトコルハンドラーに送信できます。 ストアプロバイダーは、エントリ id と添付ファイル id を Unicode 文字列としてエンコードします。 このトピックでは、エントリ id または添付ファイル id のコンパクト表現を生成するアルゴリズムを示します。
+ストア プロバイダーは、MAPI Uniform Resource Locator (URL) の一部として、エントリ ID と添付ファイル ID を MAPI プロトコル ハンドラーに送信して、インデックス作成の準備ができているオブジェクトを識別できます。 ストア プロバイダーは、エントリ ID と添付ファイル ID を Unicode 文字列としてエンコードします。 このトピックでは、エントリ ID または添付ファイル ID のコンパクトな表現を生成するアルゴリズムを示します。
   
 ```cpp
 const WORD kwBaseOffset = 0xAC00;  // Hangul char range (AC00-D7AF) 
@@ -56,7 +56,7 @@ LPWSTR EncodeID(ULONG cbEID, LPENTRYID rgbID)
 
 
 
-[通知ベースのストアインデックス作成について](about-notification-based-store-indexing.md)
+[ストア インデックスNotification-Basedについて](about-notification-based-store-indexing.md)
   
-[通知ベースのインデックス作成の MAPI url について](about-mapi-urls-for-notification-based-indexing.md)
+[インデックス作成の MAPI URL Notification-Basedについて](about-mapi-urls-for-notification-based-indexing.md)
 

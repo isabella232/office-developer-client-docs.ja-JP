@@ -25,11 +25,11 @@ ms.locfileid: "33419409"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定したバイトサイズのエントリ id を含む新しい[FLATENTRY](flatentry.md)構造に割り当てる必要があるバイト数を計算します。 
+指定したバイト サイズのエントリ識別子を含む新しい [FLATENTRY](flatentry.md) 構造体に割り当てるバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |**FLATENTRY** <br/> |
    
 ```cpp
@@ -38,9 +38,9 @@ CbNewFLATENTRY (_cb)
 
 ## <a name="parameters"></a>パラメーター
 
- __cb_
+ _ _cb_
   
-> 新しい**FLATENTRY**構造に含めるエントリ識別子のバイト数。 
+> 新しい FLATENTRY 構造体に含めるエントリ識別子 **のバイト数** 。 
     
 ## <a name="see-also"></a>関連項目
 

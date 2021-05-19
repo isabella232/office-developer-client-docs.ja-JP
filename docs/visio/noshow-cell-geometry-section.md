@@ -31,13 +31,13 @@ ms.locfileid: "33410351"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | ジオメトリ*i*[noshow] where *i* = <1>、2、3...  <br/> |
+| セル名 :  <br/> | Geometry  *i*  .NoShow where i =  *<*  1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [NoShow] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   
 |||
 |:-----|:-----|
-| セクション インデックス:  <br/> |**visSectionFirstComponent** +  *i* = ** 0、1、2...  <br/> |
+| セクション インデックス:  <br/> |**visSectionFirstComponent**  +  *i* *=* 0, 1, 2...  <br/> |
 | 行インデックス :  <br/> |**visRowComponent** <br/> |
 | セル インデックス:  <br/> |**visCompNoShow** <br/> |
    

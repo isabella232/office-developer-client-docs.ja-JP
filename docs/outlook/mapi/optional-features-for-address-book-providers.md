@@ -21,32 +21,32 @@ ms.locfileid: "33414572"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-アドレス帳プロバイダーには、多くのオプション機能があります。 一般的に実装されている機能には、次のようなものがあります。
+アドレス帳プロバイダーには、多くのオプション機能があります。 より一般的に実装される機能のいくつかは次のとおりです。
   
-- コンテナーの1つのエントリを別のプロバイダーのコンテナーに追加できるようにすることで、外部プロバイダーとして機能します。
+- あるコンテナーからのエントリを別のプロバイダーのコンテナーに追加できるようにして、外部プロバイダーとして機能します。
     
-- 別のプロバイダーからコンテナーの1つにエントリを追加することによって、ホストプロバイダーとして機能します。
+- 別のプロバイダーのエントリをコンテナーの 1 つに追加して、ホスト プロバイダーとして機能します。
     
 - 高度な検索。
     
-- 目次テーブルをスクロールするプレフィックス。
+- コンテンツ テーブルをスクロールするプレフィックス。
     
 - 配布リストのサポート。
     
 - イベント通知のサポート。
     
-次の表に、これらのオプション機能とその実装方法を簡単に説明します。
+次の表では、これらのオプション機能とそれらを実装する方法について簡単に説明します。
   
 |**機能**|**実装方法**|
 |:-----|:-----|
-|メッセージ受信者リストのエントリを作成するためのテンプレートを提供する  <br/> |[IABLogon:: getoneofftable](iablogon-getoneofftable.md)メソッドを実装します。 詳細については、「one-off[テーブル](one-off-tables.md)」と「 [1 回限りのテーブルの実装](implementing-one-off-tables.md)」を参照してください。  <br/> |
-|受信者を指定の単位にグループ化する  <br/> |[idistlist: IMAPIContainer](idistlistimapicontainer.md)インターフェイスを実装することによって、配布リストのプロパティをサポートします。  <br/> |
-|別のプロバイダーのコンテナーにエントリを追加できるようにすることにより、外部アドレス帳プロバイダーとして機能します。  <br/> | 次の方法でホストプロバイダーのデータへのバインドコードをサポートします。  <br/>  メッセージングユーザーおよび配布リストに対して**PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) プロパティをサポートします。 詳細については、「[アドレス帳の識別子](address-book-identifiers.md)」を参照してください。  <br/>  [IABLogon:: OpenTemplateID](iablogon-opentemplateid.md)メソッドを実装します。 詳細については、「[外部アドレス帳プロバイダーとして機能する](acting-as-a-foreign-address-book-provider.md)」を参照してください。  <br/> |
-|別のプロバイダーからエントリを挿入してホストアドレス帳プロバイダーとして機能する  <br/> |[imapisupport:: OpenTemplateID](imapisupport-opentemplateid.md)メソッドを呼び出して、外部プロバイダーからのコードへのデータのバインドをサポートします。 詳細については、「[ホストアドレス帳プロバイダーとして機能する](acting-as-a-host-address-book-provider.md)」を参照してください。  <br/> |
-|プレフィックスのスクロール  <br/> |コンテナーコンテンツテーブルの制限をサポートします。 詳細については、「[制限につい](about-restrictions.md)て」を参照してください。  <br/> |
-|コンテナー内での高度な検索  <br/> |コンテナーの**PR_SEARCH** ([PidTagSearch](pidtagsearch-canonical-property.md)) プロパティをサポートします。 詳細については、「[高度な検索の実装](implementing-advanced-searching.md)」を参照してください。  <br/> |
-|イベント通知  <br/> |[IABLogon::](iablogon-advise.md)アドバイズおよび[IABLogon:: アドバイズ](iablogon-unadvise.md)中止メソッドを実装します。 詳細については、「 [MAPI でのイベント通知](event-notification-in-mapi.md)」および「[サポートイベントの通知](supporting-event-notification.md)」を参照してください。  <br/> |
+|メッセージ受信者リストのエントリを作成するためのテンプレートを指定する  <br/> |[IABLogon::GetOneOffTable メソッドを実装](iablogon-getoneofftable.md)します。 詳細については [、「One-Off Tables」](one-off-tables.md) および [「Implementing One-Off参照してください](implementing-one-off-tables.md)。  <br/> |
+|受信者を名前付きユニットにグループ化する  <br/> |[IDistList : IMAPIContainer インターフェイスを実装して、配布リストのプロパティをサポート](idistlistimapicontainer.md)します。  <br/> |
+|別のプロバイダーのコンテナーにエントリを追加できるようにして、外部アドレス帳プロバイダーとして機能する  <br/> | 次の方法で、ホスト プロバイダーのデータへのバインド コードをサポートします。  <br/>  メッセージング ユーザー **PR_TEMPLATEID** 配布リストの [プロパティ (PidTagTemplateid)](pidtagtemplateid-canonical-property.md)プロパティをサポートします。 詳細については、「アドレス帳 [識別子」を参照してください](address-book-identifiers.md)。  <br/>  [IABLogon::OpenTemplateID メソッドを実装](iablogon-opentemplateid.md)します。 詳細については、「外部アドレス [帳プロバイダーとして機能する」を参照してください](acting-as-a-foreign-address-book-provider.md)。  <br/> |
+|別のプロバイダーからのエントリを挿入してホスト アドレス帳プロバイダーとして機能する  <br/> |[IMAPISupport::OpenTemplateID](imapisupport-opentemplateid.md)メソッドを呼び出して、外部プロバイダーからのコードへのデータのバインドをサポートします。 詳細については、「ホスト アドレス [帳プロバイダーとして機能する」を参照してください](acting-as-a-host-address-book-provider.md)。  <br/> |
+|プレフィックスのスクロール  <br/> |コンテナー コンテンツ テーブルの制限をサポートします。 詳細については、「制限について [」を参照してください](about-restrictions.md)。  <br/> |
+|コンテナー内の高度な検索  <br/> |コンテナーの **PR_SEARCH** ([PidTagSearch](pidtagsearch-canonical-property.md)) プロパティをサポートします。 詳細については、「高度な [検索の実装」を参照してください](implementing-advanced-searching.md)。  <br/> |
+|イベント通知  <br/> |[IABLogon::Advise メソッドと](iablogon-advise.md) [IABLogon::Unadvise メソッドを](iablogon-unadvise.md)実装します。 詳細については [、「MAPI でのイベント通知」および「サポート](event-notification-in-mapi.md) イベント通知 [」を参照してください](supporting-event-notification.md)。  <br/> |
    
-イベント通知の場合、クライアントが**IAddrBook:: アドバイズ**を呼び出して、コンテナー、メッセージングユーザー、または配布リストのいずれかに通知を登録するときに、 **IABLogon:: アドバイズ**メソッドが MAPI によって呼び出されます。 ただし、イベント通知のサポートはオプションなので、これらのメソッドから MAPI_E_NO_SUPPORT を返すことができます。 ただし、MAPI では、少なくともコンテンツテーブルに対する通知をサポートしており、 _fnevSearchComplete_以外のすべての種類のオブジェクト通知と、値を追加する_fnevCriticalError_イベントをサポートすることをお勧めします。 
+イベント通知の場合 **、IABLogon::Advise** メソッドは、クライアントが **IAddrBook::Advise** を呼び出して、コンテナー、メッセージング ユーザー、または配布リストのいずれかの通知に登録するときに MAPI によって呼び出されます。 ただし、サポート イベント通知はオプションなので、これらのメソッドからMAPI_E_NO_SUPPORT返します。 ただし、MAPI では、少なくともコンテンツ テーブルの通知をサポートすることをお勧めします。  _また、fnevSearchComplete_ および  _fnevCriticalError_ イベントを除くすべての種類のオブジェクト通知をサポートして値を追加することをお勧めします。 
   
 

@@ -22,9 +22,9 @@ ms.locfileid: "33410624"
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| .0  <br/> | 既定値 (直線)  <br/> |**visLORouteExtDefault** <br/> |
-| 1   <br/> | 普通  <br/> |**visLORouteExtStraight** <br/> |
-| 2   <br/> | 曲線  <br/> |**visLORouteExtNURBS** <br/> |
+| 0  <br/> | 既定値 (直線)  <br/> |**visLORouteExtDefault** <br/> |
+| 1  <br/> | ストレート  <br/> |**visLORouteExtStraight** <br/> |
+| 2  <br/> | 曲線  <br/> |**visLORouteExtNURBS** <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -32,7 +32,7 @@ ms.locfileid: "33410624"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [linerouteext]  <br/> |
+| セル名:  <br/> | LineRouteExt  <br/> |
    
 プログラムから、インデックスによって [LineRouteExt] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

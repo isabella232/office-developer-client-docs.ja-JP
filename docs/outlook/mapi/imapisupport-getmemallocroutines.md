@@ -1,5 +1,5 @@
 ---
-title: imapisupportgetmemallocroutines
+title: IMAPISupportGetMemAllocRoutines
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33415538"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI メモリ割り当て関数および割り当て解除関数 ([MAPIAllocateBuffer](mapiallocatebuffer.md)、 [MAPIAllocateMore](mapiallocatemore.md)、および[MAPIFreeBuffer](mapifreebuffer.md)) のアドレスを取得します。
+MAPI メモリ割り当ておよび割り当て解除関数[(MAPIAllocateBuffer、MAPIAllocateMore、および](mapiallocatemore.md) [MAPIFreeBuffer)](mapifreebuffer.md)のアドレスを取得します。[](mapiallocatebuffer.md)
   
 ```cpp
 HRESULT GetMemAllocRoutines(
@@ -37,17 +37,17 @@ HRESULT GetMemAllocRoutines(
 
 ## <a name="parameters"></a>パラメーター
 
- _lppallocatebuffer_
+ _lppAllocateBuffer_
   
-> 読み上げ**MAPIAllocateBuffer**関数へのポインターへのポインター。 **MAPIAllocateBuffer**はメモリを割り当てます。 
+> [out] **MAPIAllocateBuffer** 関数へのポインターへのポインター。 **MAPIAllocateBuffer はメモリ** を割り当てる。 
     
  _lppAllocateMore_
   
-> 読み上げ**MAPIAllocateMore**関数へのポインターへのポインター。 **MAPIAllocateMore**は、 **MAPIAllocateBuffer**を使用して最初に割り当てられたメモリの追加メモリを割り当てます。
+> [out] **MAPIAllocateMore 関数へのポインターへの** ポインター。 **MAPIAllocateMore は****、MAPIAllocateBuffer** を使用して最初に割り当てられたメモリに追加のメモリを割り当てします。
     
- _lppfreebuffer_
+ _lppFreeBuffer_
   
-> 読み上げ**MAPIFreeBuffer**関数へのポインターへのポインター。 **MAPIFreeBuffer**はメモリを解放します。 
+> [out] **MAPIFreeBuffer** 関数へのポインターへのポインター。 **MAPIFreeBuffer はメモリ** を解放します。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -57,7 +57,7 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-**imapisupport:: getmemallocroutines**メソッドは、すべてのサポートオブジェクトに実装されています。 サービスプロバイダーは、 **getmemallocroutines**を呼び出して、初期化関数 ( [abproviderinit](abproviderinit.md)、 [msproviderinit](msproviderinit.md)、または[xps プロバイダー init](xpproviderinit.md)) に渡される3つのメモリ割り当て関数のアドレスを取得します。 
+**IMAPISupport::GetMemAllocRoutines** メソッドは、すべてのサポート オブジェクトに実装されます。 サービス プロバイダーは **GetMemAllocRoutines** を呼び出して、初期化関数 [(ABProviderInit、MSProviderInit、](abproviderinit.md)[または XPProviderInit)](xpproviderinit.md)に渡される 3 つのメモリ割り当て関数のアドレスを取得します。 [](msproviderinit.md) 
   
 ## <a name="see-also"></a>関連項目
 

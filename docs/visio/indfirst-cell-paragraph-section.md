@@ -26,14 +26,14 @@ ms.locfileid: "33410323"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | <1>、2、3のように** 、最初に [ *i* ] を指定します。  <br/> |
+| セル名:  <br/> | Para.IndFirst[ i ]*ここで**、i* = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [IndFirst] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionParagraph** <br/> |
-| 行インデックス:  <br/> |**visRowParagraph** +  *i* = ** 0、1、2...  <br/> |
-| セル インデックス:  <br/> |**visindentfirst** <br/> |
+| 行インデックス:  <br/> |**visRowParagraph**  +  *i* *=* 0, 1, 2...  <br/> |
+| セル インデックス:  <br/> |**visIndentFirst** <br/> |
    
 

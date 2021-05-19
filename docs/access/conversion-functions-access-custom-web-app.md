@@ -18,18 +18,18 @@ ms.locfileid: "33415881"
 > [!IMPORTANT]
 > マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
 
-- [Cast 関数 (Access カスタム web アプリ)](cast-function-access-custom-web-app.md)
+- [キャスト関数 (Access カスタム Web アプリ)](cast-function-access-custom-web-app.md)
     
-- [合体関数 (Access カスタム web アプリ)](coalesce-function-access-custom-web-app.md)
+- [Coalesce 関数 (Access カスタム Web アプリ)](coalesce-function-access-custom-web-app.md)
     
-- [datewithtimefromparts 関数 (Access カスタム web アプリ)](datewithtimefromparts-function-access-custom-web-app.md)
+- [DateWithTimeFromParts 関数 (Access カスタム Web アプリ)](datewithtimefromparts-function-access-custom-web-app.md)
     
 - [Format 関数 (Access カスタム Web アプリ)](format-function-access-custom-web-app.md)
     
-- [Parse 関数 (Access カスタム web アプリ)](parse-function-access-custom-web-app.md)
+- [Parse 関数 (Access カスタム Web アプリ)](parse-function-access-custom-web-app.md)
     
-- [timefromparts 関数 (Access カスタム web アプリ)](timefromparts-functionaccess-custom-web-app.md)
+- [TimeFromParts 関数 (Access カスタム Web アプリ)](timefromparts-functionaccess-custom-web-app.md)
     
-- [Try_Parse 関数 (Access カスタム web アプリ)](try_parse-function-access-custom-web-app.md)
+- [Try_Parse関数 (Access カスタム Web アプリ)](try_parse-function-access-custom-web-app.md)
     
 

@@ -25,13 +25,13 @@ ms.locfileid: "33414614"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-2つのプロパティ値が等しいかどうかを比較します。 
+2 つのプロパティ値を比較して、等しいかどうかを判断します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 LONG LPropCompareProp(
@@ -42,32 +42,32 @@ LONG LPropCompareProp(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpspropvaluea_
+ _lpSPropValueA_
   
-> 順番比較する最初のプロパティ値を定義する[spropvalue](spropvalue.md)構造体へのポインター。 
+> [in]比較する最初 [のプロパティ値](spropvalue.md) を定義する SPropValue 構造体へのポインター。 
     
- _lpspropvalueb_
+ _lpSPropValueB_
   
-> 順番比較する2番目のプロパティ値を定義する**spropvalue**構造体へのポインター。 
+> [in]比較する **2 番目の** プロパティ値を定義する SPropValue 構造体へのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
- **lpropcompareprop**は、ほとんどのプロパティの種類について、次のいずれかの値を返します。 
+ **LPropCompareProp** は、ほとんどのプロパティ型に対して次のいずれかの値を返します。 
   
-- _lpspropvaluea_パラメーターによって指定された値が_lpspropvaluea_パラメーターによって示される値よりも小さい場合は、0未満です。 
+- _lpSPropValueA_ パラメーターで示される値が _lpSPropValueB_ パラメーターで示される値より小さい場合は、0 未満です。 
     
-- _lpspropvaluea_で指定された値が_lpspropvaluea_で示される値よりも大きい場合は、0より大きい値を指定します。
+- _lpSPropValueA_ で示される値が _lpSPropValueB_ で示される値より大きい場合は、0 より大きい。
     
-- _lpspropvaluea_で指定された値が_lpspropvaluea_によって示される値と等しい場合は0。 
+- _lpSPropValueA_ で示される値が _lpSPropValueB_ で示される値と等しい場合は 0 です。 
     
-ブール型 (Boolean) やエラーの種類など、組み込みの順序付けを持たないプロパティの種類の場合、 **lpropcompareprop**関数は、2つのプロパティの値が等しくない場合に未定義の値を返します。 この未定義の値は、0以外の呼び出しで一貫しています。 
+ブール型やエラー型など、組み込みの順序付けがないプロパティ型の場合、2 つのプロパティ値が等しくない場合 **、LPropCompareProp** 関数は未定義の値を返します。 この未定義の値は 0 以外で、呼び出し間で一貫性があります。 
   
 ## <a name="remarks"></a>注釈
 
-2つのプロパティの比較対象の型が同じ場合にのみ、 **lpropcompareprop**関数を使用してください。 
+**LPropCompareProp** 関数は、比較する 2 つのプロパティの種類が同じ場合にのみ使用します。 
   
-**lpropcompareprop**を呼び出す前に、クライアントアプリケーションまたはサービスプロバイダーは、 [imapiprop:: GetProps](imapiprop-getprops.md)メソッドの呼び出しと比較するプロパティを最初に取得する必要があります。 クライアントまたはプロバイダーが**lpropcompareprop**を呼び出すと、まず、プロパティの値の比較が有効であることを確認するために、最初にプロパティタグを調べます。 次に、プロパティの値を比較し、適切な値を返します。 
+**LPropCompareProp** を呼び出す前に、クライアント アプリケーションまたはサービス プロバイダーは、[まず IMAPIProp::GetProps](imapiprop-getprops.md)メソッドの呼び出しとの比較のためにプロパティを取得する必要があります。 クライアントまたはプロバイダーが **LPropCompareProp** を呼び出す場合、関数は最初にプロパティ タグを調べて、プロパティ値の比較が有効か確認します。 次に、関数はプロパティ値を比較し、適切な値を返します。 
   
-プロパティの値が等しくない場合は、 **lpropcompareprop**によって、どちらが大きくなるかが決まります。 **lpropcompareprop**と比較するプロパティは、同じオブジェクトに属している必要はありません。 
+プロパティの値が等しくない場合 **、LPropCompareProp は** 、どちらが大きいのか判断します。 **LPropCompareProp が** 比較するプロパティは、同じオブジェクトに属している必要があります。 
   
 

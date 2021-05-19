@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6f2095c9-ce09-48f7-b160-c9822d96a96c
-description: microsoft SharePoint 2013 サーバーまたは microsoft OneDrive に保存されているドキュメントを共同編集セッションで同時に複数の作成者が編集できるようにするかどうかを設定します。
+description: Microsoft SharePoint 2013 サーバーまたは Microsoft OneDrive に保存されているドキュメントを、共同編集セッションで複数の作成者が同時に編集できるかどうかを設定します。
 ms.openlocfilehash: a76e2d3b2c3cf6e99e37596b016f448b0be56fd3
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33420515"
 ---
 # <a name="nocoauth-cell-document-properties-section"></a>[NoCoauth] セル ([ドキュメントのプロパティ] セクション)
 
-microsoft SharePoint 2013 サーバーまたは microsoft OneDrive に保存されているドキュメントを共同編集セッションで同時に複数の作成者が編集できるようにするかどうかを設定します。
+Microsoft SharePoint 2013 サーバーまたは Microsoft OneDrive に保存されているドキュメントを、共同編集セッションで複数の作成者が同時に編集できるかどうかを設定します。
   
 |**値**|**説明**|
 |:-----|:-----|
@@ -29,7 +29,7 @@ microsoft SharePoint 2013 サーバーまたは microsoft OneDrive に保存さ�
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [nocoauth]  <br/> |
+| セル名:  <br/> | NoCoauth  <br/> |
    
 プログラムから、インデックスによって [**NoCoauth**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

@@ -1,5 +1,5 @@
 ---
-title: ixpprovidershutdown
+title: IXPProviderShutdown
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33409693"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-トランスポートプロバイダーを正しい順序で閉じます。
+トランスポート プロバイダーを順番に閉じます。
   
 ```cpp
 HRESULT Shutdown (
@@ -35,7 +35,7 @@ HRESULT Shutdown (
 
 ## <a name="parameters"></a>パラメーター
 
- _lアウトフラグ_
+ _lpulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
@@ -43,11 +43,11 @@ HRESULT Shutdown (
 
 S_OK 
   
-> 呼び出しがトランスポートプロバイダーのシャットダウンに成功しました。
+> 呼び出しは、トランスポート プロバイダーのシャットダウンに成功しました。
     
 ## <a name="remarks"></a>注釈
 
-MAPI スプーラーは、トランスポートプロバイダーオブジェクトを解放する直前に、 **ixpprovider:: Shutdown**メソッドを呼び出します。 **シャットダウン**を呼び出す前に、MAPI はプロバイダーのすべてのログオンオブジェクトを解放します。
+MAPI スプーラーは、トランスポート プロバイダー オブジェクトを解放する前に **IXPProvider::Shutdown** メソッドを呼び出します。 Shutdown を **呼び出す** 前に、MAPI はプロバイダーのすべてのログオン オブジェクトを解放します。
   
 ## <a name="see-also"></a>関連項目
 

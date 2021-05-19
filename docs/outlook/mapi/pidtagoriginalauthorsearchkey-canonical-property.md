@@ -25,32 +25,32 @@ ms.locfileid: "33409581"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-最初のバージョンのメッセージ、つまり転送または返信する前のメッセージの作成者の検索キーが含まれています。
+メッセージの最初のバージョンの作成者の検索キー(転送または返信前のメッセージ)が含まれる。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_ORIGINAL_AUTHOR_SEARCH_KEY  <br/> |
 |識別子:  <br/> |0x0056  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |サーバー  <br/> |
+|エリア:  <br/> |Server  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-このプロパティは、メッセージの作成者のアドレスプロパティの1つです。 クライアントアプリケーションでは、最初にメッセージを送信するときに、このプロパティを**PR_SENDER_SEARCH_KEY**[PidTagSenderSearchKey](pidtagsendersearchkey-canonical-property.md)プロパティの値に設定する必要があります。 メッセージが転送または返信されるときには変更されません。 
+このプロパティは、メッセージの作成者のアドレス プロパティの 1 つです。 メッセージの最初の送信時に、クライアント アプリケーションは [PidTagSenderSearchKey](pidtagsendersearchkey-canonical-property.md)プロパティの値に **このプロパティPR_SENDER_SEARCH_KEY** 設定する必要があります。 メッセージが転送または返信された場合は、変更されません。 
   
-元の作成者のプロパティを使用すると、ローカルのメッセージングドメインの外部にある情報を保持できます。 インターネットからなど、他のメッセージングドメインからメッセージが到着すると、これらのプロパティを使用して元の情報が失われないようにすることができます。
+元の作成者プロパティを使用すると、ローカル メッセージング ドメイン外からの情報を保持できます。 インターネットなどの別のメッセージング ドメインからメッセージが到着すると、これらのプロパティを使用して、元の情報が失われなかねない方法が提供されます。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
+> 関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -60,7 +60,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

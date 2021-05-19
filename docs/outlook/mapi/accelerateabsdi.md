@@ -23,13 +23,13 @@ ms.locfileid: "33420375"
  
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[モードレスアドレス帳] ダイアログボックスで、アクセラレータキーを処理するためのコールバック関数を定義します。 
+モードレス アドレス帳ダイアログ ボックスでアクセラレータ キーを処理するコールバック関数を定義します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
-|定義された関数の実装:  <br/> |MAPI  <br/> |
-|によって呼び出された定義済み関数:  <br/> |クライアント アプリケーション  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|定義された関数は、次の方法で実装されます。  <br/> |MAPI  <br/> |
+|によって呼び出される定義済み関数:  <br/> |クライアント アプリケーション  <br/> |
    
 ```cpp
 BOOL (STDMETHODCALLTYPE ACCELERATEABSDI)( 
@@ -40,24 +40,24 @@ BOOL (STDMETHODCALLTYPE ACCELERATEABSDI)(
 
 ## <a name="parameters"></a>パラメーター
 
- _uluiparam_
+ _ulUIParam_
   
-> 順番ユーザーインターフェイス情報を関数に渡すために使用される実装固有の値。 Microsoft Windows 上で実行されているアプリケーションでは、 _uluiparam_はダイアログボックスの親ウィンドウハンドルで、 **ULONG_PTR**にキャストする型 HWND です。 値が0の場合は、親ウィンドウがないことを示します。 
+> [in]ユーザー インターフェイス情報を関数に渡す場合に使用される実装固有の値。 Microsoft Windows で実行されているアプリケーションでは _、ulUIParam_ はダイアログ ボックスの親ウィンドウ ハンドルであり、HWND 型で、ULONG_PTR に **キャストされます**。 値が 0 の場合は、親ウィンドウが表示されません。 
     
  _lpvmsg_
   
-> 順番Windows メッセージへのポインター。
+> [in]メッセージへのポインター Windowsします。
     
 ## <a name="return-value"></a>戻り値
 
-**ACCELERATEABSDI**プロトタイプを使用している関数は、メッセージを処理する場合は TRUE を返します。 
+**ACCELERATEABSDI プロトタイプを持つ** 関数は、メッセージを処理する場合は TRUE を返します。 
   
 ## <a name="remarks"></a>注釈
 
-**ACCELERATEABSDI**プロトタイプに基づく関数は、モードレスダイアログでのみ使用されます。つまり、クライアントアプリケーションが[ADRPARM](adrparm.md)構造の_ulflags_メンバーで DIALOG_SDI フラグを設定している場合に限られます。 
+**ACCELERATEABSDI** プロトタイプに基づく関数は、モードレス ダイアログでのみ使用されます。つまり、クライアント アプリケーションが [ADRPARM](adrparm.md)構造体の _ulFlags_ メンバーで DIALOG_SDI フラグを設定している場合のみです。 
   
-モードレスダイアログは、独自のループを持たずに、クライアントアプリケーションの Windows メッセージループを共有します。 メッセージループを制御するアプリケーションでは、ダイアログで使用されるアクセラレータキーがわからないため、 **ACCELERATEABSDI**ベースの関数を呼び出して、CTRL + P などのアクセラレータキーをテストし、操作することができます。 
+モードレス ダイアログは、独自のループをWindows、クライアント アプリケーションのメッセージ ループを共有します。 メッセージ ループを制御するアプリケーションは、ダイアログで使用するアクセラレータ キーを知らないので **、ACCELERATEABSDI** ベースの関数を呼び出して、印刷用の Ctrl + P などのアクセラレータ キーをテストして処理します。 
   
-クライアントのメッセージループは、 [IAddrBook:: address](iaddrbook-address.md)メソッドを使用して、モードレスアドレス帳ダイアログボックスを呼び出したときに**ACCELERATEABSDI**ベースの関数を呼び出します。 この呼び出しは、MAPI が[DISMISSMODELESS](dismissmodeless.md)関数プロトタイプに基づいて関数を呼び出したときに終了します。 
+クライアントのメッセージ ループは、クライアントが [IAddrBook::Address](iaddrbook-address.md)メソッドを使用してモードレス アドレス帳ダイアログ ボックスを呼び出すと **、ACCELERATEABSDI** ベースの関数を呼び出します。 この呼び出しは、MAPI が DISMISSMODELESS 関数プロトタイプに基づいて関数 [を呼び出す場合に](dismissmodeless.md) 終了します。 
   
 

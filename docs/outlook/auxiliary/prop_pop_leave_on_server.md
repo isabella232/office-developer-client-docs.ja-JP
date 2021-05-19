@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 22d7c1e8-48b9-4768-b4de-9a9f32a3aabb
-description: POP アカウントのサーバーにメッセージのコピーを残すことを指定します。
+description: POP アカウントのサーバーにメッセージのコピーを残す方法を指定します。
 ms.openlocfilehash: e1bbddea0f10c07d630676960d1b330f6055e137
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -14,9 +14,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33410946"
 ---
-# <a name="proppopleaveonserver"></a>PROP_POP_LEAVE_ON_SERVER
+# <a name="prop_pop_leave_on_server"></a>PROP_POP_LEAVE_ON_SERVER
 
-POP アカウントのサーバーにメッセージのコピーを残すことを指定します。
+POP アカウントのサーバーにメッセージのコピーを残す方法を指定します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -24,20 +24,20 @@ POP アカウントのサーバーにメッセージのコピーを残すこと�
 |:-----|:-----|
 |識別子:  <br/> |0x1000  <br/> |
 |プロパティの種類:  <br/> |PT_DWORD  <br/> |
-|プロパティタグ:  <br/> |0x10000003  <br/> |
-|接続  <br/> |読み取り専用  <br/> |
+|プロパティ タグ:  <br/> |0x10000003  <br/> |
+|アクセス:  <br/> |読み取り専用  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-次の表に、使用可能な値を示します。 定数の詳細については、「 [constants (Account management API)](constants-account-management-api.md) 」を参照してください。 
+次の表に、使用可能な値を示します。 定数 [の詳細については、「定数 (アカウント管理 API)」](constants-account-management-api.md) を参照してください。 
   
 |**可能な値**|**説明**|
 |:-----|:-----|
-|**LEAVE_ON_SERVER** <br/> |メッセージをデバイスにダウンロードした後、メッセージのコピーを POP サーバーに残します。  <br/> |
-|**REMOVE_AFTER** <br/> |メッセージをデバイスにダウンロードした後、POP サーバーから削除します。  <br/> |
-|**REMOVE_ON_NUKE** <br/> |ユーザーが [削除済みアイテム] フォルダーからメッセージを削除した後にのみ、POP サーバーからメッセージを削除します。  <br/> |
-|**GET_REMOVE_AFTER_DAYS**( _ul_)  <br/> |メッセージが POP サーバーから削除されるまでの日数を取得します。  <br/> |
-|**SET_REMOVE_AFTER_DAYS**(_日数_)  <br/> |メッセージが POP サーバーから削除されるまでの日数を設定します。  <br/> |
+|**LEAVE_ON_SERVER** <br/> |デバイスにメッセージをダウンロードした後、POP サーバーにメッセージのコピーを残します。  <br/> |
+|**REMOVE_AFTER** <br/> |デバイスにダウンロードした後、POP サーバーからメッセージを削除します。  <br/> |
+|**REMOVE_ON_NUKE** <br/> |ユーザーが削除済みアイテム フォルダーからメッセージを削除した後にのみ、POP サーバーからメッセージを削除します。  <br/> |
+|**GET_REMOVE_AFTER_DAYS**( _ul_)  <br/> |メッセージが POP サーバーから削除される日数を取得します。  <br/> |
+|**SET_REMOVE_AFTER_DAYS**( _日_)  <br/> |メッセージが POP サーバーから削除される日数を設定します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: imapisync IUnknown
+title: IMAPISync IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,22 +25,22 @@ ms.locfileid: "33405593"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-トランスポート API を使用する代わりに、電子メールを同期するためのメカニズムを提供します。 このインターフェイスは、store オブジェクトに公開されます。 このインターフェイスと[IMAPISyncProgressCallback: IUnknown](imapisyncprogresscallbackiunknown.md)を使用することにより、トランスポートプロバイダーは、Microsoft Outlook の送受信ダイアログに表示されるのとは異なる進行状況およびエラーメッセージを提供できます。
+トランスポート API を使用する代わりに電子メールを同期するためのメカニズムを提供します。 このインターフェイスは、ストア オブジェクトで公開されます。 このインターフェイスと [IMAPISyncProgressCallback : IUnknown](imapisyncprogresscallbackiunknown.md)を使用すると、トランスポート プロバイダーは、Microsoft Outlook の [送受信] ダイアログに表示されるメッセージよりも優れた進行状況とエラー メッセージを提供できます。
   
-送信トレイはまだ既定のストアにあります。 送信メッセージが外部ストアに存在できないため、Outlook は引き続きトランスポート api を使用してメールを送信します。
+送信ボックスは既定のストアに残されています。 送信メッセージを外部ストアに保存できないので、Outlook はトランスポート API を使用してメールを送信し続ける。
   
 |||
 |:-----|:-----|
-|公開者:  <br/> |ストアとトランスポートプロバイダー  <br/> |
+|次のユーザーによって公開されます。  <br/> |ストア プロバイダーとトランスポート プロバイダー  <br/> |
 |実装元:  <br/> |Outlook  <br/> |
-|呼び出し元:  <br/> |ストアとトランスポートプロバイダー  <br/> |
+|呼び出し元:  <br/> |ストア プロバイダーとトランスポート プロバイダー  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMAPISync  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[SynchronizeInBackground](imapisyncsynchronizeinbackground.md) <br/> |メッセージストアプロバイダーによって実装されます。 このメソッドは、outlook 2010 および outlook 2013 によって呼び出され、同期を開始します。  <br/> |
+|[SynchronizeInBackground](imapisyncsynchronizeinbackground.md) <br/> |メッセージ ストア プロバイダーによって実装されます。 このメソッドは、同期を開始するために Outlook 2010 と Outlook 2013 によって呼び出されます。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

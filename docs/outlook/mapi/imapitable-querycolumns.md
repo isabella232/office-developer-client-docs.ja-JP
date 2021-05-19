@@ -25,7 +25,7 @@ ms.locfileid: "33410106"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルの列のリストを返します。
+テーブルの列の一覧を返します。
   
 ```cpp
 HRESULT QueryColumns(
@@ -38,15 +38,15 @@ LPSPropTagArray FAR * lpPropTagArray
 
  _ulFlags_
   
-> 順番返される列セットを示すフラグのビットマスク。 次のフラグを設定できます。
+> [in]返す列セットを示すフラグのビットマスク。 次のフラグを設定できます。
     
 TBL_ALL_COLUMNS 
   
-> テーブルは使用可能なすべての列を返します。
+> テーブルは、使用可能なすべての列を返す必要があります。
     
  _lpPropTagArray_
   
-> 読み上げ列セットのプロパティタグを含む[SPropTagArray](sproptagarray.md)構造体へのポインター。 
+> [out]列セットの [プロパティ タグを含む SPropTagArray](sproptagarray.md) 構造体へのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -56,25 +56,25 @@ S_OK
     
 MAPI_E_BUSY 
   
-> 別の操作が進行中であるため、列セットの取得操作を開始できません。 進行中の操作が完了することを許可するか、停止する必要があります。
+> 列セットの取得操作が開始されるのを防ぐ別の操作が進行中です。 進行中の操作の完了を許可するか、停止する必要があります。
     
 ## <a name="remarks"></a>注釈
 
-**IMAPITable:: querycolumns**メソッドを呼び出すと、次のものを取得できます。 
+**IMAPITable::QueryColumns** メソッドを呼び出して取得できます。 
   
 - テーブルの既定の列セット。
     
-- [IMAPITable:: SetColumns](imapitable-setcolumns.md)メソッドの呼び出しによって確立された、テーブルの現在の列セット。 
+- [IMAPITable::SetColumns](imapitable-setcolumns.md)メソッドの呼び出しによって確立される、テーブルの現在の列セット。 
     
-- テーブルの完全な列セット。使用可能な列ですが、現在のセットの一部ではありません。
+- テーブルの完全な列セット、使用可能な列ですが、必ずしも現在のセットの一部ではありません。
     
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-TBL_ALL_COLUMNS フラグを設定しない場合、 **imapitable:: querycolumns**は、テーブルの既定または現在の列セットを返します。これは、テーブルが**IMAPITable:: SetColumns**の呼び出しの影響を受けたかどうかによって決まります。 **SetColumns**は、テーブルの列セット内の列の順序と選択範囲を変更します。 
+TBL_ALL_COLUMNS フラグを設定しない場合 **、IMAPITable::QueryColumns** は、テーブルが **IMAPITable::SetColumns** の呼び出しの影響を受けたかどうかに応じて、テーブルの既定または現在の列セットを返します。 **SetColumns は** 、テーブルの列セット内の列の順序と選択を変更します。 
   
-TBL_ALL_COLUMNS フラグを設定した場合、 **querycolumns**は、テーブルの列セットに設定可能なすべての列を返します。 
+TBL_ALL_COLUMNS フラグを設定すると **、QueryColumns** は、テーブルの列セットに含め得るすべての列を返します。 
   
-[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して、 _lpPropTagArray_パラメーターによって示されるプロパティタグ配列のメモリを解放します。 
+[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して _、lpPropTagArray_ パラメーターが指すプロパティ タグ配列のメモリを解放します。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -82,7 +82,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl  <br/> |CContentsTableListCtrl::D osetcolumns  <br/> |mfcmapi は、 **IMAPITable:: querycolumns**メソッドを使用して、テーブルの現在の列セットを取得し、ユーザーが編集できるようにします。  <br/> |
+|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::D oSetColumns  <br/> |MFCMAPI では **、IMAPITable::QueryColumns** メソッドを使用して、テーブルの現在の列セットを取得し、ユーザーがテーブルを編集できます。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

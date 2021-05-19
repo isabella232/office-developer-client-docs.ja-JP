@@ -20,11 +20,11 @@ ms.locfileid: "33420130"
   
 ## <a name="remarks"></a>注釈
 
-別の数式から、**Cell** エレメントの**N** 属性の値によって、または **CellsU** プロパティを使用したプログラムから、名前によって [**QuickStyleEffectsMatrix** ] セルへの参照を取得するには、次の値を使用します。 
+別の数式から、**Cell** エレメントの **N** 属性の値によって、または **CellsU** プロパティを使用したプログラムから、名前によって [**QuickStyleEffectsMatrix** ] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [quickstyleeffectsmatrix]  <br/> |
+| セル名:  <br/> | QuickStyleEffectsMatrix  <br/> |
    
 プログラムから、インデックスによって [**QuickStyleEffectsMatrix**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

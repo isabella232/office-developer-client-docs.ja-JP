@@ -25,34 +25,34 @@ ms.locfileid: "33415055"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージストアの受信フォルダー設定のテーブルが保存されています。
+メッセージ ストアの受信フォルダー設定のテーブルが含まれる。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_RECEIVE_FOLDER_SETTINGS  <br/> |
 |識別子:  <br/> |0x3415  <br/> |
 |データの種類 :   <br/> |PT_OBJECT  <br/> |
-|エリア:  <br/> |MAPI メッセージストア  <br/> |
+|エリア:  <br/> |MAPI メッセージ ストア  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-このプロパティは、 [imapiprop:: CopyTo](imapiprop-copyto.md)操作で除外することも、 [imapiprop:: copyprops](imapiprop-copyprops.md)操作に含めることもできます。 PT_OBJECT 型のプロパティとして、 [imapiprop:: GetProps](imapiprop-getprops.md)メソッドによって正常に取得することはできません。このコンテンツには、IID_IMAPITable という識別子を持つインターフェイスを要求する[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドによってアクセスされる必要があります。 サービスプロバイダーは、設定されている場合は[imapiprop:: getproplist](imapiprop-getproplist.md)メソッドに報告する必要がありますが、設定されていない場合はレポートすることができます。 
+このプロパティは [、IMAPIProp::CopyTo](imapiprop-copyto.md) 操作で除外するか [、IMAPIProp::CopyProps 操作に含](imapiprop-copyprops.md) めできます。 型のプロパティPT_OBJECT [IMAPIProp::GetProps メソッドでは正常に取得](imapiprop-getprops.md) できません。その内容にアクセスするには [、IMAPIProp::OpenProperty](imapiprop-openproperty.md) メソッドを使用して、識別子を持つインターフェイスを要求IID_IMAPITable。 サービス プロバイダーは [、IMAPIProp::GetPropList](imapiprop-getproplist.md) メソッドが設定されている場合は、それを報告する必要がありますが、設定されていない場合はオプションで報告できます。 
   
-表の内容を取得するには、クライアントアプリケーションは[IMsgStore:: getreceivefoldertable](imsgstore-getreceivefoldertable.md)メソッドを呼び出す必要があります。 詳細については、「[受信フォルダーテーブル](receive-folder-tables.md)」を参照してください。
+表の内容を取得するには、クライアント アプリケーションが [IMsgStore::GetReceiveFolderTable メソッドを呼び出す必要](imsgstore-getreceivefoldertable.md) があります。 詳細については、「受信フォルダー テーブル [」を参照してください](receive-folder-tables.md)。
   
-このプロパティには、メッセージストアの受信フォルダーのマッピングの表が含まれています。 このプロパティで**openproperty**を呼び出すことは、メッセージストアで**getreceivefoldertable**を呼び出すことと同じです。 
+このプロパティには、メッセージ ストアの受信フォルダーのマッピングのテーブルが含まれています。 この **プロパティで OpenProperty** を呼び出すのは、メッセージ ストアで **GetReceiveFolderTable** を呼び出すのと同じです。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -62,7 +62,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

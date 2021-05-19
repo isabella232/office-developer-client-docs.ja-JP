@@ -19,17 +19,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415720"
 ---
-# <a name="extendednotification"></a>EXTENDED_NOTIFICATION
+# <a name="extended_notification"></a>EXTENDED_NOTIFICATION
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-サービスプロバイダー固有のイベントに関連する情報について説明します。 
+サービス プロバイダー固有のイベントに関連する情報を説明します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _EXTENDED_NOTIFICATION
@@ -41,35 +41,35 @@ typedef struct _EXTENDED_NOTIFICATION
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **ulevent**
+ **ulEvent**
   
-> プロバイダーによって定義された拡張イベントコード。
+> プロバイダーによって定義される拡張イベント コード。
     
  **cb**
   
-> **p傾斜 entparameters**で示されるイベント固有のパラメーターのバイト数。 
+> **pbEventParameters** が指すイベント固有のパラメーターのバイト数です。 
     
- **p斜め entparameters**
+ **pbEventParameters**
   
-> イベント固有のパラメーターへのポインター。 使用されるパラメーターの型は**ulevent**メンバーの値に依存します。これらのパラメーターは、イベントを発行したプロバイダーによってドキュメント化されます。 
+> イベント固有のパラメーターへのポインター。 使用されるパラメーターの種類は **、ulEvent メンバーの値によって異** なります。これらのパラメーターは、イベントを発行したプロバイダーによって文書化されます。 
     
 ## <a name="remarks"></a>注釈
 
-**EXTENDED_NOTIFICATION**構造体は、[通知](notification.md)構造の**info**メンバに含まれている構造体の和集合のメンバーのいずれかです。 **通知**構造の**info**メンバーに**EXTENDED_NOTIFICATION**構造体が含まれている場合、**通知**構造の**uleventtype**メンバーは_fnevExtended_に設定されます。
+この **EXTENDED_NOTIFICATION** は、NOTIFICATION 構造体の info メンバーに含まれる構造体の共用体 **のメンバー** の [1](notification.md) つです。 **NOTIFICATION** 構造体 **の info** メンバーに EXTENDED_NOTIFICATION構造が含まれている場合 **、NOTIFICATION** 構造体の **ulEventType** メンバーは _fnevExtended に設定されます_。
   
-拡張イベントは、サービスプロバイダーによって定義され、他のどの定義済みイベントによってもカバーできない変更の種類を表します。 サービスプロバイダーが拡張イベントをサポートすることを登録する前に知っているクライアントのみが、そのイベントの登録を行うことができます。 サービスプロバイダーが拡張イベントをサポートしている場合、クライアントは高度な知識がなくても判断できません。 サービスプロバイダーが拡張イベントをサポートしている場合は、受信時にこのようなイベントを処理する方法を示しています。
+拡張イベントは、他の定義済みイベントではカバーできない変更の種類を表すサービス プロバイダーによって定義されます。 サービス プロバイダーが拡張イベントをサポートすると登録する前に知っているクライアントだけが、そのイベントに登録できます。 サービス プロバイダーが拡張イベントをサポートしている場合、クライアントは高度な知識なしに判断できない。 サービス プロバイダーが拡張イベントをサポートしている場合は、受信時にそのようなイベントを処理する方法を示します。
   
-クライアントがログオフすると、セッションによって拡張通知が送信されます。 この通知を登録するには、 _lpentryid_パラメーターを NULL に設定し、 _cbEntryID_パラメーターを0に設定して、 [imapitryid](imapisession-advise.md)パラメーターを呼び出します。 
+クライアントがログオフすると、セッションによって拡張通知が送信されます。 [IMAPISession::Advise](imapisession-advise.md)を呼び出して、この通知に登録し _、lpEntryID_ パラメーターを NULL に設定し _、cbEntryID_ パラメーターを 0 に設定します。 
   
 通知の詳細については、次の表で説明するトピックを参照してください。
   
 |**トピック**|**説明**|
 |:-----|:-----|
 |[MAPI のイベント通知](event-notification-in-mapi.md) <br/> |通知イベントと通知イベントの一般的な概要。  <br/> |
-|[通知の処理](handling-notifications.md) <br/> |クライアントが通知を処理する方法についての説明。  <br/> |
-|[イベント通知のサポート](supporting-event-notification.md) <br/> |サービスプロバイダーが[imapisupport](imapisupportiunknown.md)方法を使用して通知を生成する方法についての説明。  <br/> |
+|[通知の処理](handling-notifications.md) <br/> |クライアントが通知を処理する方法について説明します。  <br/> |
+|[サポート イベント通知](supporting-event-notification.md) <br/> |サービス プロバイダーが [IMAPISupport](imapisupportiunknown.md) メソッドを使用して通知を生成する方法について説明します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

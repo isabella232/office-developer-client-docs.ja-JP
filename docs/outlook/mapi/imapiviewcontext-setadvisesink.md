@@ -25,7 +25,7 @@ ms.locfileid: "33419395"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームの登録を管理して、閲覧者の変更に関する通知を受信します。 
+フォームの登録を管理して、ビューアーの変更に関する通知を受信します。 
   
 ```cpp
 HRESULT SetAdviseSink(
@@ -37,23 +37,23 @@ LPMAPIFORMADVISESINK pmvns
 
  _pmvns_
   
-> 順番フォームアドバイズシンクオブジェクトまたは NULL へのポインター。
+> [in]フォームへのポインターは、シンク オブジェクトまたは NULL をアドバイスします。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> フォーム通知の登録または取り消しに成功しました。
+> フォーム通知の登録または取り消しが成功しました。
     
 ## <a name="remarks"></a>注釈
 
-form オブジェクトは**imapiviewcontext:: SetAdviseSink**メソッドを呼び出して、フォームビューアーの変更について学習するか、前に登録を取り消します。 _pmvns_が NULL に設定されている場合、フォームは登録をキャンセルする必要があります。 _pmvns_が有効な form アドバイズシンクを指している場合、フォームは将来の通知の登録を希望します。 
+フォーム オブジェクトは **IMAPIViewContext::SetAdviseSink** メソッドを呼び出して、フォーム ビューアーの変更を確認するために登録するか、以前の登録をキャンセルします。 _pmvns が_ NULL に設定されている場合、フォームは登録を取り消します。 _pmvns が有効_ なフォームアドバイス シンクをポイントする場合、フォームは将来の通知に登録する必要があります。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**SetAdviseSink**にフォームアドバイズシンクポインターが含まれている場合は、別の**SetAdviseSink**呼び出しが行われてから、通知が取り消されるまで、そのポインターへの参照を保持します。 viewer で変更が発生したとき、および新しいメッセージを読み込むときに通知を送信します。 
+**SetAdviseSink** にフォームアドバイス シンク ポインターが含まれる場合は、通知を取り消す別の **SetAdviseSink** 呼び出しが行われたまで参照を保持します。 ビューアーで変更が発生し、新しいメッセージを読み込むときに通知を送信します。 
   
-詳細については、「[フォーム通知の送信と受信](sending-and-receiving-form-notifications.md)」を参照してください。
+詳細については、「フォーム通知の [送受信」を参照してください](sending-and-receiving-form-notifications.md)。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -61,7 +61,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer  <br/> |cmymapiformviewer:: SetAdviseSink  <br/> |mfcmapi は、この関数に**imapiviewcontext:: SetAdviseSink**メソッドを実装します。  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::SetAdviseSink  <br/> |MFCMAPI は、 **この関数に IMAPIViewContext::SetAdviseSink** メソッドを実装します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

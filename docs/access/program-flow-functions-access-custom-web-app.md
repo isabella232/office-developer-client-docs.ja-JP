@@ -21,8 +21,8 @@ ms.locfileid: "33410442"
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [Choose Function (Access カスタム web アプリ)](choose-function-access-custom-web-app.md)
+- [[関数の選択] (カスタム Web アプリへのアクセス)](choose-function-access-custom-web-app.md)
     
-- [IIf 関数 (Access カスタム web アプリ)](iif-function-access-custom-web-app.md)
+- [IIf 関数 (Access カスタム Web アプリ)](iif-function-access-custom-web-app.md)
     
 

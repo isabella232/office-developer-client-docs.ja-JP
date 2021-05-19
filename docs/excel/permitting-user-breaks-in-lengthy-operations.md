@@ -1,5 +1,5 @@
 ---
-title: "���Ԃ̂����鑀��Ń��[�U�[�ɂ�钆�f����\x82���"
+title: 時間のかかる操作でユーザーによる中断を許可する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer

@@ -19,26 +19,26 @@ ms.locfileid: "33410484"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-オフライン状態 API は、microsoft outlook 2013 および microsoft outlook 2010 でユーザーの接続状態が変更されたことを示すコールバックをサポートします (たとえば、outlook 2013 または outlook 2010 でオフラインになっている場合)。 この API は、outlook 2013 または outlook 2010 のグローバルオフラインオブジェクトを使用して、特定のユーザーアカウントプロファイルに対する変更を追跡します。 通知は、サポートされているコールバックの唯一の形式です。 この API のクライアントとして、このような接続状態の変更を通知するメールプロバイダーは、次の操作を行います。
+オフライン状態 API は、Microsoft Outlook 2013 および Microsoft Outlook 2010 でのユーザーの接続状態の変更を示すコールバックをサポートしています 。たとえば、Outlook 2013 または Outlook 2010 のオンライン状態からオフライン状態に変わるなどです。 API は、2013 年または Outlook 2010 年Outlookにグローバル オフライン オブジェクトを使用して、特定のユーザー アカウント プロファイルに対するこのような変更を追跡します。 通知は、サポートされているコールバックの唯一の形式です。 この API のクライアントとして、このような接続状態の変更を通知するメール プロバイダーは次の操作を行います。
   
-1. **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** を実装します。 
+1. **[IMAPIOfflineNotify を実装します](imapiofflinenotifyiunknown.md)**。 
     
-2. **[hro・ offlineofflineobj](hropenofflineobj.md)** を使用して、特定のプロファイルの既存のオフラインオブジェクトを開きます。 
+2. **[HrOpenOfflineObj](hropenofflineobj.md)** を使用して、特定のプロファイルの既存のオフライン オブジェクトを開きます。 
     
-3. オブジェクトに、 **[imapioffline:: getcapabilities](imapioffline-getcapabilities.md)** を使用してオンラインまたはオフライン通知を提供する機能があるかどうかを判断します。 
+3. オブジェクトが **[IMAPIOffline::GetCapabilities](imapioffline-getcapabilities.md)** を使用してオンライン通知またはオフライン通知を提供できるかどうかを判断します。 
     
-4. **[IMAPIOfflineMgr:: Advise](imapiofflinemgr-advise.md)** を使用して、オブジェクトをオンライン通知またはオフライン通知用に登録します。 メールプロバイダーは、outlook 2013 または outlook 2010 で**IMAPIOfflineNotify**を使用して送信された通知を受信できるようになります。 
+4. **[IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)** を使用して、オンラインまたはオフラインの通知のオブジェクトを登録します。 メール プロバイダーは **、IMAPIOfflineNotify** を使用して 2013 Outlook 2010 Outlook通知を受信できます。 
     
-5. シャットダウン時に、 **[IMAPIOfflineMgr:: アドバイズ](imapiofflinemgr-unadvise.md)** 中止を使用してオンラインおよびオフライン通知の登録を削除します。 
+5. シャットダウン時に **[、IMAPIOfflineMgr::Unadvise](imapiofflinemgr-unadvise.md)** を使用してオンライン通知とオフライン通知の登録を削除します。 
     
 > [!NOTE]
-> 一般に、outlook 2013 および outlook 2010 は、オンライン/オフライン変更のクライアントに加えて、他の変更を通知することができますが、オフライン状態 API はオンライン/オフラインの変更に関する通知のみをサポートしています。 クライアントは、他のすべての通知を無視する必要があります。 詳細については、「 **[IMAPIOfflineNotify:: Notify](imapiofflinenotify-notify.md)** and **[MAPIOFFLINE_NOTIFY](mapioffline_notify.md)**」を参照してください。 
+> 一般に、Outlook 2013 および Outlook 2010 は、オンライン/オフラインの変更と他の変更をクライアントに通知できますが、オフライン状態 API では、オンライン/オフラインの変更に関する通知のみをサポートしています。 クライアントは、他のすべての通知を無視する必要があります。 詳細については **[、「IMAPIOfflineNotify::Notify and MAPIOFFLINE_NOTIFY」](imapiofflinenotify-notify.md)** **[を参照してください](mapioffline_notify.md)**。 
   
- オフライン状態 API を使用するクライアントの例については、「[サンプルのオフライン状態アドインについ](about-the-sample-offline-state-add-in.md)て」を参照してください。 サンプルのオフライン状態アドインは、オフライン状態 API を使用して接続状態を監視および変更する COM アドインです。
+ オフライン状態 API を使用するクライアントの例については、「サンプル オフライン状態アドインについて」 [を参照してください](about-the-sample-offline-state-add-in.md)。 サンプル オフライン状態アドインは、オフライン状態 API を使用して接続状態を監視および変更する COM アドインです。
   
 この API は、次の機能を提供します。
   
-定義
+定義:
   
 - [MAPI �萔](mapi-constants.md)
     
@@ -56,7 +56,7 @@ ms.locfileid: "33410484"
     
 インターフェイス
   
-- **[imapioffline](imapiofflineiunknown.md)**
+- **[IMAPIOffline](imapiofflineiunknown.md)**
     
 - **[IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)**
     

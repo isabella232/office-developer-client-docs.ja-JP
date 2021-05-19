@@ -25,11 +25,11 @@ ms.locfileid: "33414530"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-PT_MV_LONG 型のプロパティを記述するために使用される LONG 値型の配列を格納します。 
+型のプロパティを記述するために使用される LONG 値型の配列を格納PT_MV_LONG。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SLongArray
@@ -40,19 +40,19 @@ typedef struct _SLongArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cvalues**
+ **cValues**
   
-> **lpl**メンバによって示された配列内の値の数。 
+> lpl メンバーが指す配列内の **値の** 数。 
     
  **lpl**
   
-> 長整数型 (LONG) の値の配列へのポインター。
+> LONG 値の配列へのポインター。
     
 ## <a name="remarks"></a>注釈
 
-PT_MV_LONG の詳細については、「[プロパティの種類の一覧](property-types.md)」を参照してください。
+プロパティの詳細については、「プロパティPT_MV_LONG [リスト」を参照してください](property-types.md)。
   
 ## <a name="see-also"></a>関連項目
 

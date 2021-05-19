@@ -37,7 +37,7 @@ BOOKMARK bkPosition
 
  _bkPosition_
   
-> 順番、 [IMAPITable:: createbookmark](imapitable-createbookmark.md)メソッドを呼び出すことによって作成された、解放されるブックマーク。 
+> [in] [IMAPITable::CreateBookmark](imapitable-createbookmark.md) メソッドを呼び出して作成される、解放するブックマーク。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -51,11 +51,11 @@ MAPI_E_INVALID_BOOKMARK
     
 ## <a name="remarks"></a>注釈
 
-**IMAPITable:: freebookmark**メソッドは、不要になったブックマークを解放します。 この呼び出しの後、ブックマークは無効になりました。 テーブルがメモリから解放されると、それに関連付けられているすべてのブックマークも解放されます。 
+**IMAPITable::FreeBookmark** メソッドは、不要になったブックマークを解放します。 ブックマークは、この呼び出し後に無効になります。 テーブルがメモリから解放されると、関連付けられたブックマークもすべて解放されます。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-発信者が3つの定義済みブックマークのいずれかを_bkPosition_パラメーターに渡した場合は、要求を無視し、S_OK を返します。 
+呼び出し元が  _bkPosition_ パラメーターで 3 つの定義済みのブックマークのいずれかを渡した場合は、要求を無視して、S_OK。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251460
 localization_priority: Normal
 ms.assetid: 38e6bba7-1bf2-3d31-0912-707002454f5d
-description: 色の明度コンポーネントの値を返します。
+description: 色の光度コンポーネントの値を返します。
 ms.openlocfilehash: 17fa43f8e2cd7422428f92724e351436233c2d62
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,21 +18,21 @@ ms.locfileid: "33419339"
 ---
 # <a name="lum-function"></a>LUM 関数
 
-色の明度コンポーネントの値を返します。
+色の光度コンポーネントの値を返します。
   
 ## <a name="syntax"></a>構文
 
-LUM (* **式** *) 
+LUM(** *expression* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _expression_ <br/> |必須  <br/> |**数値** <br/> |図面のカラー テーブルにある色のインデックス、またはカラー インデックスを含むセルに対する参照を指定します。  <br/> |
+| _expression_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |図面のカラー テーブルにある色のインデックス、またはカラー インデックスを含むセルに対する参照を指定します。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
-数値
+番号
   
 ## <a name="remarks"></a>注釈
 
@@ -40,13 +40,13 @@ LUM (* **式** *)
   
 ## <a name="example-1"></a>例 1
 
-LUM (シート4[fillforegnd]
+LUM(Sheet.4!FillForegnd)
   
 Sheet.4 について、前景の塗りつぶしの色に関する明度を返します。
   
 ## <a name="example-2"></a>例 2
 
-LUM (6)
+LUM(6)
   
 図面が既定の Visio カラー パレットを使用する場合、120 を返します。Visio カラー パレットでは、インデックス 6 はマゼンタを示します。
   

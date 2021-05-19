@@ -1,5 +1,5 @@
 ---
-title: iaddrbookgetpab
+title: IAddrBookGetPAB
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -38,11 +38,11 @@ HRESULT GetPAB(
 
  _lpcbEntryID_
   
-> 読み上げ_lppentryid_パラメーターによって指定されたエントリ識別子のバイト数へのポインター。 
+> [out]  _lppEntryID_ パラメーターが指すエントリ識別子内のバイト 数へのポインター。 
     
- _lppentryid_
+ _lppEntryID_
   
-> 読み上げPAB のエントリ識別子へのポインターへのポインター。 PAB として指定されているコンテナーがない場合、 _lppentryid_パラメーターには0が格納されます。 
+> [out]PAB のエントリ識別子へのポインター。 コンテナーが PAB として指定されていない場合  _、lppEntryID_ パラメーターには 0 が含まれる。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -52,7 +52,7 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-クライアントは、 **getpab**メソッドを呼び出して、pab として指定されたコンテナーのエントリ識別子を取得します。 pab がプロファイルで確立されていない場合、MAPI は、変更を許可するアドレス帳階層の最初のコンテナーを pab として選択します。 
+クライアントは **GetPAB メソッドを呼** び出して、PAB として指定されたコンテナーのエントリ識別子を取得します。 PAB がプロファイルに確立されていない場合、MAPI は変更を許可するアドレス帳階層の最初のコンテナーとして PAB として選択します。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -60,7 +60,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|maindlg .cpp  <br/> |CMainDlg:: onopenpab  <br/> |mfcmapi は、 **getpab**メソッドを使用して、ユーザーの個人用アドレス帳の ID を取得します。  <br/> |
+|MainDlg.cpp  <br/> |CMainDlg::OnOpenPAB  <br/> |MFCMAPI は **GetPAB** メソッドを使用して、ユーザーの個人用アドレス帳の ID を取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

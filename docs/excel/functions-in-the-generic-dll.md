@@ -1,5 +1,5 @@
 ---
-title: �ėp DLL �̊֐�
+title: 汎用 DLL の関数
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer

@@ -19,43 +19,43 @@ ms.locfileid: "33411044"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**IAddrBook:: createoneoff**メソッドと、ゲートウェイコンポーネントなどの mapi サブシステムにアクセスできないコンポーネントによって、1回限りのエントリ識別子が mapi によって作成されます。 �ڍׂɂ��ẮA [IAddrBook::CreateOneOff](iaddrbook-createoneoff.md)��Q�Ƃ��Ă��������B 次の図は、1回限りのエントリ識別子の形式を示しています。
+1 回限りエントリ識別子は **、IAddrBook::CreateOneOff** メソッドで MAPI によって作成され、ゲートウェイ コンポーネントなどの MAPI サブシステムにアクセスできないコンポーネントによって作成されます。 �ڍׂɂ��ẮA [IAddrBook::CreateOneOff](iaddrbook-createoneoff.md)��Q�Ƃ��Ă��������B 次の図は、一時エントリ識別子の形式を示しています。
   
 **一時エントリ識別子の形式**
   
-![1 回限りのエントリ識別子形式](media/amapi_69.gif "1 回限りのエントリ識別子形式")
+![1 回のエントリ識別子の形式](media/amapi_69.gif "1 回のエントリ識別子の形式")
   
-最初のフィールドは、カスタム受信者を表すエントリ id を識別する特別な[MAPIUID](mapiuid.md)構造です。 この**MAPIUID**構造は、定数 MAPI_ONE_OFF_UID に設定する必要があります。 MAPI_ONE_OFF_UID は、ヘッダーファイル mapidefs.h で定義されています。H. 
+最初のフィールドは、カスタム受信者を表すエントリ識別子を識別する特別な [MAPIUID](mapiuid.md) 構造です。 この **MAPIUID** 構造体は、定数に設定する必要MAPI_ONE_OFF_UID。 MAPI_ONE_OFF_UIDは、ヘッダー ファイル MAPIDEFS.H で定義されます。 
   
-version および flags フィールドは、Intel バイトオーダーでの16ビットの単語です。 バージョンフィールドは0に設定する必要があります。 flags フィールドには、次の値を設定できます。
+バージョンとフラグのフィールドは、Intel のバイト順で 16 ビットの単語です。 バージョン フィールドは 0 に設定する必要があります。 flags フィールドは、次の値に設定できます。
   
 MAPI_ONE_OFF_NO_RICH_INFO
   
 MAPI_ONE_OFF_UNICODE
   
-MAPI_ONE_OFF_NO_RICH_INFO フラグは、受信者がトランスポートニュートラルカプセル化形式 (TNEF) でメッセージコンテンツを受信できないように設定されています。 このフラグは、MAPI_SEND_NO_RICH_INFO が[IAddrBook:: createoneoff](iaddrbook-createoneoff.md)メソッドに渡されたときに設定されます。 
+受信者MAPI_ONE_OFF_NO_RICH_INFOトランスポート ニュートラル カプセル化形式 (TNEF) でメッセージ コンテンツを受信しない場合は、このフラグが設定されます。 このフラグは [、IAddrBook::CreateOneOff](iaddrbook-createoneoff.md) MAPI_SEND_NO_RICH_INFOに渡される場合に設定されます。 
   
-表示名と電子メールアドレスが UNICODE 文字列の場合は、MAPI_ONE_OFF_UNICODE フラグが設定されます。 このフラグは、MAPI_UNICODE が**IAddrBook:: createoneoff**に渡されたときに設定されます。 MAPI_UNICODE フラグが**createoneoff**に渡されていない場合、MAPI では、表示名と電子メールアドレスの文字列がワークステーションの現在の ANSI 文字セットに含まれていると見なされます。 ANSI 文字列は、コードページがエントリ識別子でエンコードされていないために、異なる文字セットを使用してプラットフォーム間で送信されるメッセージでは、通常は適切に機能しません。 このような非互換性の問題から保護するために、多くのアドレスの種類は、複数の文字セットで共通の文字に制限されています。 ただし、文字セットとプラットフォームの互換性を確保するために、クライアントはメッセージ内の文字列に Unicode を使用する必要があります。
+表示MAPI_ONE_OFF_UNICODE、電子メール アドレスが Unicode 文字列の場合は、このフラグが設定されます。 このフラグは **、IAddrBook::CreateOneOff にMAPI_UNICODEが渡される場合に設定されます**。 **CreateOneOff** に MAPI_UNICODEフラグが渡されない場合、MAPI は表示名と電子メール アドレス文字列がワークステーションの現在の ANSI 文字セットにあると見なします。 ANSI 文字列は、通常、コード ページがエントリ識別子にエンコードされないので、異なる文字セットを使用してプラットフォーム間で送信されるメッセージではうまく動作しません。 この潜在的な非互換性から保護するために、多くのアドレスの種類は、複数の文字セットで一般的な文字にのみ制限されます。 ただし、文字セットとプラットフォームの互換性を確保するために、クライアントはメッセージ内の文字列に Unicode を使用する必要があります。
   
-表示名は、受信者の**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) プロパティ、および**IAddrBook:: createoneoff**に渡された_lpszname_パラメーターに対応する、null で終わる文字列です。 MAPI_ONE_OFF_UNICODE フラグが設定されている場合、文字セットが Unicode で、クリアされている場合は ANSI になります。 
+表示名は、受信者の **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) プロパティおよび **IAddrBook::CreateOneOff** に渡される _lpszName_ パラメーターに対応する null で終わる文字列です。 文字セットが Unicode の場合MAPI_ONE_OFF_UNICODEフラグが設定されている場合、ANSI はクリアです。 
   
-アドレスの種類は、受信者の**PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) プロパティ、および**IAddrBook:: createoneoff**に渡された_lpszadrtype_パラメーターに対応する、null で終わる文字列です。 
+アドレスの種類は、受信者の **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) プロパティおよび **IAddrBook::CreateOneOff** に渡される _lpszAdrType_ パラメーターに対応する null 終端文字列です。 
   
-電子メールアドレスは、受信者の**PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) プロパティ、および**IAddrBook:: createoneoff**に渡された_lpszaddress_パラメーターに対応する、null で終了する文字列です。 
+電子メール アドレスは、受信者の PR_EMAIL_ADDRESS ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) プロパティおよび **IAddrBook::CreateOneOff** に渡される _lpszAddress_ パラメーターに対応する null で終わる文字列です。  
   
 > [!NOTE]
-> 1回限りのエントリ識別子の構造には、パディングはありません。バイトは上記で示したとおりにパックされ、エントリ識別子の長さには、電子メールアドレスの終端の null 文字を超えるバイトを含めることはできません。 
+> 1 回のエントリ識別子構造にパディングはありません。バイトは上で示したとおりにパックされ、エントリ識別子の長さは、電子メール アドレスの終端の null 文字を超えるバイトを含めることはできません。 
   
-**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) および**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) プロパティの値を生成する必要があるのは、1回限りのエントリ識別子を手動で作成するクライアントとアドレス帳プロバイダーです。 record キーは、エントリ識別子と同じです。 検索キーは、次の順序で各フィールドを連結することによって形成する必要があります。
+一時エントリ識別子を手動で作成するクライアントおよびアドレス帳プロバイダーは **、PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) プロパティと PR_SEARCH_KEY ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) プロパティの値を生成する必要があります。  レコード キーはエントリ識別子と同じです。 検索キーは、次のフィールドを次の順序で連結して形成する必要があります。
   
-1. 住所の種類を大文字に変換します。
+1. 大文字に変換されたアドレスの種類。
     
-2. コロン (:)
+2. コロン (:)。
     
-3. 電子メールアドレス。大文字に変換されます。
+3. 大文字に変換された電子メール アドレス。
     
 4. 終端の null 文字。
     
-検索キーを生成するときに、文字セット変換を行わないでください。
+検索キーを生成するときに、文字セット変換を実行する必要はありません。
   
 

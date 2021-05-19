@@ -36,13 +36,13 @@ HRESULT DeleteProfile(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpszprofilename_
+ _lpszProfileName_
   
-> 順番削除するプロファイルの名前へのポインター。
+> [in]削除するプロファイルの名前へのポインター。
     
  _ulFlags_
   
-> 順番常に NULL。 
+> [in]常に NULL。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -52,15 +52,15 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> 指定されたプロファイルが存在しません。
+> 指定したプロファイルが存在しません。
     
 ## <a name="remarks"></a>注釈
 
-**IProfAdmin::D eleteprofile**メソッドは、プロファイルを削除します。 **deleteprofile**を呼び出したときに削除するプロファイルが使用されている場合、 **deleteprofile**は S_OK を返しますが、プロファイルはすぐには削除されません。 代わりに、 **deleteprofile**はプロファイルを削除対象としてマークし、使用されなくなった後に、すべてのアクティブなセッションが終了した時点で削除します。 
+**IProfAdmin::D eleteProfile** メソッドはプロファイルを削除します。 DeleteProfile の呼び出し時に削除するプロファイルが使用されている場合 **、DeleteProfile** は S_OKを返しますが、プロファイルはすぐには削除されません。  代わりに **、DeleteProfile は** プロファイルに削除のマークを付け、すべてのアクティブ なセッションが終了すると、使用されなくなった後にプロファイルを削除します。 
   
-プロファイル内の各メッセージサービスのエントリポイント関数は、 _ulcontext_パラメーターで設定された MSG_SERVICE_DELETE 値を使用して呼び出されます。 最初に、この関数はサービスを削除してから、サービスの [プロファイル] セクションを削除します。 サービスが削除された後に、メッセージサービスエントリポイント関数が再度呼び出されることはありません。 
+プロファイル内の各メッセージ サービスのエントリ ポイント関数は、ulContext パラメーターに設定MSG_SERVICE_DELETEを使用して  _呼び出_ されます。 最初に、関数はサービスを削除し、次にサービスのプロファイル セクションを削除します。 サービスが削除された後、メッセージ サービスエントリ ポイント関数は再度呼び出されません。 
   
-プロファイルを削除するためにパスワードは必要ありません。
+プロファイルを削除するには、パスワードは必要ありません。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -68,7 +68,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIProfileFunctions  <br/> |hrremoveprofile  <br/> |mfcmapi は、 **IProfAdmin::D eleteprofile**メソッドを使用して、選択されているプロファイルを削除します。  <br/> |
+|MAPIProfileFunctions.cpp  <br/> |HrRemoveProfile  <br/> |MFCMAPI は **、IProfAdmin::D eleteProfile** メソッドを使用して、選択したプロファイルを削除します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

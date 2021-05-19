@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm1033806
 localization_priority: Normal
 ms.assetid: 3d4f82d3-fcd0-536a-c4e1-94c362cde7c4
-description: 参照先セルに数式が含まれているかどうかを示します。
+description: 参照先のセルに数式が含まれているかどうかを示します。
 ms.openlocfilehash: 1f28d429516d4f8b2357f1c2ab589700e38ff40a
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33420277"
 ---
 # <a name="formulaexists-function"></a>FORMULAEXISTS 関数
 
-参照先セルに数式が含まれているかどうかを示します。 
+参照先のセルに数式が含まれているかどうかを示します。 
   
 ## <a name="syntax"></a>構文
 
-FORMULAEXISTS (* * *cellref* * *) 
+FORMULAEXISTS (** *cellref* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -32,6 +32,6 @@ FORMULAEXISTS (* * *cellref* * *)
    
 ## <a name="remarks"></a>注釈
 
-FORMULAEXISTS 関数は、セルに数式が含まれている場合は1を返します。数式が含まれていない場合は、0 (ゼロ) を返します。 
+セルに数式が含まれている場合、FORMULAEXISTS 関数は 1 を返します。数式を含めない場合は、ゼロ (0) を返します。 
   
 

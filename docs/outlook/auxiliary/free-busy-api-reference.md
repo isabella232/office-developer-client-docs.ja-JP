@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 6ec65a5a-23ad-4e50-a27f-648902ebb5a0
-description: このセクションでは、空き時間情報 API のリファレンスコンテンツを提供します。これにより、指定された時間範囲内に、指定されたユーザーアカウントの空き時間情報をメールプロバイダーが提供できるようになります。
+description: このセクションでは、指定した時間範囲内の指定したユーザー アカウントの空き時間情報をメール プロバイダーが提供できる、空き時間情報 API の参照コンテンツを提供します。
 ms.openlocfilehash: e69d97fb86cffc1830ae46aa917f5a8e35cabafb
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33410736"
 ---
 # <a name="freebusy-api-reference"></a>空き時間情報 API リファレンス
 
-このセクションでは、空き時間情報 API のリファレンスコンテンツを提供します。これにより、指定された時間範囲内に、指定されたユーザーアカウントの空き時間情報をメールプロバイダーが提供できるようになります。
+このセクションでは、指定した時間範囲内の指定したユーザー アカウントの空き時間情報をメール プロバイダーが提供できる、空き時間情報 API の参照コンテンツを提供します。
 
 - [Constants](constants-free-busy-api.md)
     

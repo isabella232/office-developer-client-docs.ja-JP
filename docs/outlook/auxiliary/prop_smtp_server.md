@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415706"
 ---
-# <a name="propsmtpserver"></a>PROP_SMTP_SERVER
+# <a name="prop_smtp_server"></a>PROP_SMTP_SERVER
 
 SMTP アカウントのサーバー名を表します。
   
@@ -24,8 +24,8 @@ SMTP アカウントのサーバー名を表します。
 |:-----|:-----|
 |識別子:  <br/> |0x0200  <br/> |
 |プロパティの種類:  <br/> |PT_UNICODE  <br/> |
-|プロパティタグ:  <br/> |0x0200001f  <br/> |
-|接続  <br/> |読み取り専用  <br/> |
+|プロパティ タグ:  <br/> |0x0200001F  <br/> |
+|アクセス:  <br/> |読み取り専用  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

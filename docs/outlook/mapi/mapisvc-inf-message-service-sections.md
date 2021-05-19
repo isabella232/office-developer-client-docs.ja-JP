@@ -1,5 +1,5 @@
 ---
-title: mapisvc.inf メッセージサービスセクション
+title: MapiSvc.inf メッセージ サービスのセクション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,12 +15,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415370"
 ---
-# <a name="mapisvcinf-message-service-sections"></a>mapisvc.inf メッセージサービスセクション
+# <a name="mapisvcinf-message-service-sections"></a>MapiSvc.inf メッセージ サービスのセクション
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-mapisvc.inf には、 **[Services]** セクションに一覧表示される各エントリに対して、1つのメッセージサービスセクションが含まれています。 これらのセクションには、次の2種類のエントリがあります。1つは特定のプロパティを設定し、もう1つは構成中のメッセージサービスに関連するセクションの名前を一覧表示するためのものです。 
+mapisvc.inf には、[サービス] セクションに記載されている各エントリに対して 1 つのメッセージ サービス **セクションが含** まれます。 これらのセクションには、特定のプロパティを設定するエントリと、構成するメッセージ サービスに関連するセクションの名前を一覧するエントリの 2 種類があります。 
   
 

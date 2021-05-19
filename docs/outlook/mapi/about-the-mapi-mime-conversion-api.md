@@ -19,6 +19,6 @@ ms.locfileid: "33420438"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-mapi-mime 変換 API を使用すると、メールプロバイダーは MIME オブジェクトと MAPI メッセージ間で変換することができます。 このメソッドは、 [MAPI 定数](mapi-constants.md)に示されているように、定数定義、クラス識別子、およびインターフェイス識別子を提供します。 メールプロバイダーは、 **CoCreateInstance**関数を呼び出すことによって、 **[iconvertersession](iconvertersessioniunknown.md)** のインスタンスを cocreate する必要があります。 
+MAPI-MIME 変換 API を使用すると、メール プロバイダーは MIME オブジェクトと MAPI メッセージの間で変換できます。 MAPI 定数に示すように、定数定義、クラス識別子、およびインターフェイス [識別子を提供します](mapi-constants.md)。 メール プロバイダーは **、CoCreateInstance** 関数を呼び出して **[IConverterSession](iconvertersessioniunknown.md)** のインスタンスを共同作成する必要があります。 
   
 

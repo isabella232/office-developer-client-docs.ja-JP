@@ -20,12 +20,12 @@ ms.locfileid: "33415188"
 
 複数の動的コネクタが迂回する場合に、線を分離するコネクタを指定します。
   
-|**値**|**セレクター**|**オートメーション定数**|
+|**値**|**調整**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|.0  <br/> |関連付けられていない線  <br/> |**visPLOLineAdjustFromNotRelated** <br/> |
-|1   <br/> |すべての線  <br/> |**visPLOLineAdjustFromAll** <br/> |
-|2   <br/> |なし  <br/> |**visPLOLineAdjustFromNone** <br/> |
-|3   <br/> |迂回方法の既定値に合わせる  <br/> |**visPLOLineAdjustFromRoutingDefault** <br/> |
+|0  <br/> |関連付けられていない線  <br/> |**visPLOLineAdjustFromNotRelated** <br/> |
+|1  <br/> |すべての線  <br/> |**visPLOLineAdjustFromAll** <br/> |
+|2  <br/> |なし  <br/> |**visPLOLineAdjustFromNone** <br/> |
+|3  <br/> |迂回方法の既定値に合わせる  <br/> |**visPLOLineAdjustFromRoutingDefault** <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -35,7 +35,7 @@ ms.locfileid: "33415188"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[lineadjustfrom]  <br/> |
+|セル名:  <br/> |LineAdjustFrom  <br/> |
    
 プログラムから、インデックスによって [LineAdjustFrom] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

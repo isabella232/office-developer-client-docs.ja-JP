@@ -38,35 +38,35 @@ HRESULT OpenStatusEntry(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpinterface_
+ _lpInterface_
   
-> 順番status オブジェクトへのアクセスに使用する必要があるインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 NULL を渡すと、オブジェクトの標準インターフェイス、 [imapistatus: imapistatus](imapistatusimapiprop.md)が返されます。
+> [in]status オブジェクトへのアクセスに使用する必要があるインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 NULL を渡すと、オブジェクトの標準インターフェイス [IMAPIStatus : IMAPIProp が返されます](imapistatusimapiprop.md)。
     
  _ulFlags_
   
-> 順番status オブジェクトが開かれる方法を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]status オブジェクトの開き方を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_MODIFY 
   
-> 読み取り/書き込みアクセス許可を要求します。 既定では、オブジェクトは読み取り専用アクセスで開かれ、呼び出し元は読み取り/書き込みアクセス許可が与えられていると想定することはできません。
+> 読み取り/書き込みアクセス許可を要求します。 既定では、オブジェクトは読み取り専用アクセス権で開かれません。呼び出し元は、読み取り/書き込みアクセス許可が付与されたと見なす必要があります。
     
- _lpulobjtype_
+ _lpulObjType_
   
-> 読み上げ開かれているオブジェクトの種類へのポインター。
+> [out]開いたオブジェクトの種類へのポインター。
     
- _lppentry_
+ _lppEntry_
   
-> 読み上げ開かれているオブジェクトへのポインターへのポインター。
+> [out]開いたオブジェクトへのポインターへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 呼び出しが成功し、状態オブジェクトが開かれています。
+> 呼び出しが成功し、status オブジェクトが開かされました。
     
 ## <a name="remarks"></a>注釈
 
-アドレス帳プロバイダーは、状態オブジェクトへのアクセスを許可するために**openstatusentry**メソッドを実装します。 少なくとも[imapistatus:: validatestate](imapistatus-validatestate.md)メソッドをサポートする状態オブジェクトを実装するには、すべてのアドレス帳プロバイダーが必要です。 詳細については、「 [Status オブジェクトの実装](status-object-implementation.md)」を参照してください。
+アドレス帳プロバイダーは、 **状態オブジェクトへのアクセスを許可する OpenStatusEntry** メソッドを実装します。 すべてのアドレス帳プロバイダーは、少なくとも [IMAPIStatus::ValidateState](imapistatus-validatestate.md) メソッドをサポートする状態オブジェクトを実装する必要があります。 詳細については [、「Status Object Implementation」を参照してください](status-object-implementation.md)。
   
 ## <a name="see-also"></a>関連項目
 

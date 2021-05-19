@@ -43,17 +43,17 @@ ULONG FBadRow(
 
  _lprow_
   
-> 順番検証する行を識別する[srow](srow.md)構造体へのポインター。 
+> [in]検証する行を識別する [SRow](srow.md) 構造体へのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
 TRUE 
   
-> 指定した行は無効です。
+> 指定した行が無効です。
     
 FALSE 
   
-> 指定した行は有効です。
+> 指定した行が有効です。
     
 ## <a name="see-also"></a>関連項目
 

@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251194
 localization_priority: Normal
 ms.assetid: 992ae9d8-ea15-0f5c-ccd6-e4c536099692
-description: 選択した図形の幅を図面の単位で表した値が表示されます。 1-D 図形の幅を決定する既定の数式は次のとおりです。
+description: 選択した図形の幅を図面の単位で表した値が表示されます。1-D 図形の幅を決定する既定の数式は次のとおりです。
 ms.openlocfilehash: c99f4669f3b27390a5b8e9062d6085a5a9db54e1
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33415195"
 ---
 # <a name="width-cell-shape-transform-section"></a>[Width] セル ([Shape Transform] セクション)
 
-選択した図形の幅を図面の単位で表した値が表示されます。 1-D 図形の幅を決定する既定の数式は次のとおりです。
+選択した図形の幅を図面の単位で表した値が表示されます。1-D 図形の幅を決定する既定の数式は次のとおりです。
   
 = SQRT((EndX - BeginX) ^ 2 + (EndY - BeginY) ^ 2)
   

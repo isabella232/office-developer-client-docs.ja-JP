@@ -25,7 +25,7 @@ ms.locfileid: "33420095"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージを配信するためにトランスポートプロバイダーが呼び出される順序を設定します。
+メッセージを配信するためにトランスポート プロバイダーが呼び出される順序を設定します。
   
 ```cpp
 HRESULT MsgServiceTransportOrder(
@@ -37,13 +37,13 @@ HRESULT MsgServiceTransportOrder(
 
 ## <a name="parameters"></a>パラメーター
 
- _cuid_
+ _cUID_
   
-> 順番_lpuidlist_パラメーターの一意の識別子の数。 
+> [in]lpUIDList パラメーター内の一  _意の識別子の_ 数。 
     
- _lpuidlist_
+ _lpUIDList_
   
-> 順番トランスポートプロバイダーを表す一意の識別子の配列へのポインター。 配列には、現在のプロファイルで構成されている各トランスポートプロバイダーの識別子が1つ含まれています。
+> [in]トランスポート プロバイダーを表す一意の識別子の配列へのポインター。 配列には、現在のプロファイルで構成されているトランスポート プロバイダーごとに 1 つの識別子が含まれています。
     
  _ulFlags_
   
@@ -53,21 +53,21 @@ HRESULT MsgServiceTransportOrder(
 
 S_OK 
   
-> トランスポートオーダーが正常に設定されました。
+> トランスポートの順序が正常に設定されました。
     
 MAPI_E_BUSY 
   
-> _cuid_パラメーターの値は、プロファイルに実際に含まれるトランスポートプロバイダーの数とは異なります。 
+> _cUID パラメーターの値_ は、プロファイル内の実際のトランスポート プロバイダーの数と異なります。 
     
 MAPI_E_NOT_FOUND 
   
-> _lpuidlist_パラメーターに渡された1つ以上の[MAPIUID](mapiuid.md)構造体が、プロファイルに現在含まれているトランスポートプロバイダーを参照していません。 
+> _lpUIDList_ パラメーターで渡される 1 つ以上の [MAPIUID](mapiuid.md)構造体は、プロファイル内の現在のトランスポート プロバイダーを参照していない。 
     
 ## <a name="remarks"></a>注釈
 
-**IMsgServiceAdmin:: msgservicetransportorder**メソッドは、プロファイル内のトランスポートプロバイダーの配信順序を設定します。 _lpuidlist_パラメーターには、IMsgServiceAdmin から返されるテーブルの**PR_PROVIDER_UID** ([PidTagProviderUid](pidtagprovideruid-canonical-property.md)) プロパティから取得した、トランスポートプロバイダーのエントリ識別子の並べ替えられたリストを含める必要があります[。getprovidertable](imsgserviceadmin-getprovidertable.md)メソッド。 クライアントアプリケーションは、完全なリストを_lpuidlist_に渡す必要があります。
+**IMsgServiceAdmin::MsgServiceTransportOrder** メソッドは、プロファイル内のトランスポート プロバイダーの配信順序を設定します。 _lpUIDList_ パラメーターには [、IMsgServiceAdmin::GetProviderTable](imsgserviceadmin-getprovidertable.md)メソッドから返されるテーブルの **PR_PROVIDER_UID** ([PidTagProviderUid](pidtagprovideruid-canonical-property.md)) プロパティから取得したトランスポート プロバイダーエントリ識別子の並べ替えリストが含まれている必要があります。 クライアント アプリケーションは、lpUIDList の完全なリスト  _を渡す必要があります_。
   
- **settransportorder**は、 **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) プロパティで設定された STATUS_XP_PREFER_LAST フラグなど、トランスポートプロバイダーの設定より優先されます。 
+ **SetTransportOrder** は、STATUS_XP_PREFER_LAST **(** [PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) プロパティで設定された PR_RESOURCE_FLAGS フラグなどのトランスポート プロバイダーの基本設定を上書きします。 
   
 ## <a name="see-also"></a>関連項目
 

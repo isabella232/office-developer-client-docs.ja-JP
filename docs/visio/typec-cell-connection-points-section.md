@@ -22,9 +22,9 @@ ms.locfileid: "33415237"
   
 |**値**|**型**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|.0  <br/> |向き  <br/> |**viscnncttypeinward** <br/> |
-|1   <br/> |ふき  <br/> |**viscnncttypeoutward** <br/> |
-|2   <br/> |内側&amp;外側  <br/> |**visCnnctTypeInwardOutward** <br/> |
+|0  <br/> |Inward  <br/> |**visCnnctTypeInward** <br/> |
+|1  <br/> |外向き  <br/> |**visCnnctTypeOutward** <br/> |
+|2  <br/> |内側外側 &amp;  <br/> |**visCnnctTypeInwardOutward** <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -34,15 +34,15 @@ ms.locfileid: "33415237"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |接続を指定し** ます。ここで、 *i* = <1>, 2, 3...  <br/> |
+|セル名:  <br/> |Connections.Type[  *i*  ] where i =  *<*  1> 2, 3...  <br/> |
    
 プログラムから、インデックスによって [Type / C] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
-|セクション インデックス:  <br/> |**持つ vissectionconnectionpts** <br/> |
-|行インデックス:  <br/> |**visRowConnectionPts** +  *i* = ** 0、1、2...  <br/> |
-|セル インデックス:  <br/> |**viscnncttype**(非拡張行)**viscnnctc**(拡張行)  <br/> |
+|セクション インデックス:  <br/> |**visSectionConnectionPts** <br/> |
+|行インデックス:  <br/> |**visRowConnectionPts**  +  *i* *=* 0, 1, 2...  <br/> |
+|セル インデックス:  <br/> |**visCnnctType** (拡張されていない行) **visCnnctC** (拡張行)  <br/> |
    
 拡張されていない行および拡張された行の詳細については、[Connection Points] 行を参照してください。
   

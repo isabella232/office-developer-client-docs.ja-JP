@@ -1,5 +1,5 @@
 ---
-title: テキスト形式での添付ファイルのレンダリング
+title: プレーン テキストで添付ファイルをレンダリングする
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,28 +15,28 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33410876"
 ---
-# <a name="rendering-an-attachment-in-plain-text"></a>テキスト形式での添付ファイルのレンダリング
+# <a name="rendering-an-attachment-in-plain-text"></a>プレーン テキストで添付ファイルをレンダリングする
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-テキスト形式のメッセージに添付ファイルを表示するには、添付ファイルの**PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md)) プロパティを取得し、 **PR_ATTACH_RENDERING**のデータに適用します ([PidTagAttachRendering](pidtagattachrendering-canonical-property.md))。プロパティ. **PR_RENDERING_POSITION**を取得するには、次の2つの方法があります。
+テキスト形式でメッセージ内の添付ファイルをレンダリングするには、添付ファイルの **PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md)) プロパティを取得し **、PR_ATTACH_RENDERING** ([PidTagAttachRendering](pidtagattachrendering-canonical-property.md)) プロパティのデータに適用します。 データを取得するには、次の **2 PR_RENDERING_POSITION。**
   
-- メッセージの**IMessage:: openattach**メソッドを呼び出して添付ファイルを開き、添付ファイルの**imapiprop:: GetProps**メソッドを呼び出して**PR_RENDERING_POSITION**プロパティを要求します。 詳細については、「 [IMessage:: openattach](imessage-openattach.md) and [imapiprop:: GetProps](imapiprop-getprops.md)」を参照してください。
+- メッセージの **IMessage::OpenAttach** メソッドを呼び出して添付ファイルを開き、添付ファイルの **IMAPIProp::GetProps** メソッドを呼び出して **PR_RENDERING_POSITION** プロパティを求める。 詳細については [、「IMessage::OpenAttach」](imessage-openattach.md) および [「IMAPIProp::GetProps」を参照してください](imapiprop-getprops.md)。
     
-- メッセージの**IMessage:: getattachmenttable**メソッドを呼び出して、その添付ファイルテーブルにアクセスし、 **PR_RENDERING_POSITION**プロパティを保持する列を取得します。 この方法は常に推奨されます。 詳細については、「 [IMessage:: getattachmenttable](imessage-getattachmenttable.md)」を参照してください。
+- メッセージの **IMessage::GetAttachmentTable** メソッドを呼び出して、添付ファイル テーブルにアクセスし、PR_RENDERING_POSITION プロパティ **を保持する列を取得** します。 この方法は常に望ましい方法です。 詳細については [、「IMessage::GetAttachmentTable」を参照してください](imessage-getattachmenttable.md)。
     
-RTF 対応メッセージストアの多くは、クライアントがメッセージの**PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) プロパティを要求するまで**PR_RENDERING_POSITION**を計算しないことに注意してください。 その時点まで、 **PR_RENDERING_POSITION**は通常近似値を表します。 メッセージストアプロバイダーは、パフォーマンスを向上させるために概数値をクライアントに提供できます。 
+多くの RTF 対応メッセージ ストアは、クライアントがメッセージの **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) プロパティを要求するまで、PR_RENDERING_POSITION を計算しない点に注意してください。 この時間 **まで、PR_RENDERING_POSITION** は概算値を表します。 メッセージ ストア プロバイダーは、パフォーマンスを向上させる近似値をクライアントに提供できます。 
   
-ファイルまたはバイナリ添付ファイルのレンダリングは、 **PR_ATTACH_RENDERING**プロパティに格納されます。 **PR_RENDERING_POSITION**を取得した場合と同じ方法で**PR_ATTACH_RENDERING**を取得する方法として、添付ファイルまたは添付ファイルテーブルから直接取得する方法があります。 **PR_ATTACH_RENDERING**の場合、最初の戦略は時間がかかることもありますが、より安全です。 一部のメッセージストアプロバイダーでは、表の列が255バイトに切り捨てられるか、場合によっては510バイトで切り捨てられることがあるため、 **PR_ATTACH_RENDERING**列に完全なレンダリングが含まれていることを確認するのは困難です。 添付ファイルから直接プロパティを取得する場合は、常に完了します。 
+ファイルまたはバイナリ添付ファイルのレンダリングは、そのプロパティに **PR_ATTACH_RENDERING** されます。 添付ファイルから直接、または添付PR_ATTACH_RENDERINGファイルを取得した場合と同じ方法で、PR_RENDERING_POSITIONを取得することもできます。 この **PR_ATTACH_RENDERING、** 時間がかかりますが、最初の戦略の方が安全です。 一部のメッセージ ストア プロバイダーはテーブル列を 255 バイトに切り捨てるか、場合によっては 510 バイトに切り捨てるので **、PR_ATTACH_RENDERING** 列に完全なレンダリングが含まれているのを確認することは困難です。 添付ファイルから直接プロパティを取得すると、常に完了します。 
   
-OLE もメッセージ添付ファイルも**PR_ATTACH_RENDERING**に設定することはできません。 代わりに、OLE 1 添付ファイルのレンダリング情報は、メッセージテキストストリームに格納されます。 OLE 2 の添付ファイルの場合は、ストレージオブジェクトの特別な子ストリームに格納されます。 メッセージの添付ファイルのレンダリング情報は、フォームマネージャーから使用できます。 
+OLE 添付ファイルもメッセージ添付 **ファイルも設定** PR_ATTACH_RENDERING。 代わりに、OLE 1 添付ファイルのレンダリング情報がメッセージ テキスト ストリームに格納されます。 OLE 2 添付ファイルの場合は、ストレージ オブジェクトの特別な子ストリームに格納されます。 メッセージ添付ファイルのレンダリング情報は、フォーム マネージャーから利用できます。 
   
- **メッセージの添付ファイルのレンダリングを取得するには**
+ **メッセージ添付ファイルのレンダリングを取得するには**
   
-1. フォームマネージャーにアクセスするには、メッセージのメッセージクラスを使用します。
+1. メッセージのメッセージ クラスを使用して、フォーム マネージャーにアクセスします。
     
-2. フォームマネージャーの**PR_MINI_ICON**プロパティにアクセスします。 詳細については、「 **PR_MINI_ICON** ([PidTagMiniIcon](pidtagminiicon-canonical-property.md))」を参照してください。
+2. フォーム マネージャーのプロパティに **PR_MINI_ICON** します。 詳細については、「PR_MINI_ICON **(** [PidTagMiniIcon )」を参照してください](pidtagminiicon-canonical-property.md)。
     
 

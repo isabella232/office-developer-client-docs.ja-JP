@@ -21,14 +21,14 @@ ms.locfileid: "33420088"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
- 一般的なエラーは、次のような場合にテーブルの最後に到達したと仮定します。 
+ 一般的なエラーは、次の場合にテーブルの末尾に達したと仮定します。 
   
-- [imapitable:: QueryRows](imapitable-queryrows.md)がループで呼び出され、 [IMAPITable:: getrowcount](imapitable-getrowcount.md)から返される行の数によってループの終わりが決定されます。 **getrowcount**が返すカウントは、必ずしもテーブル内の行数の正確な数を表すわけではありません。これはおおよそのカウントです。 
+- [IMAPITable::QueryRows](imapitable-queryrows.md) はループ内で呼び出され、ループの終了は [IMAPITable::GetRowCount](imapitable-getrowcount.md)によって返される行数によって決まります。 **GetRowCount が返す** 数は、必ずしもテーブル内の行の正確な数を表すとは限らない。概算数です。 
     
-- **QueryRows**は固定数の行で呼び出されており、返される行が少なくなっています。 **QueryRows**は、行数が0である行セットを返し、それ以上行を取得しないことを示します。 
+- **QueryRows は** 固定数の行で呼び出され、返される行数は少なめになります。 **QueryRows** が 0 に等しい行数を持つ行セットを返すまで、取得する行がこれ以上ない。 
     
 > [!IMPORTANT]
-> 呼び出し元が、カーソルが正の行数の場合はテーブルの末尾に配置されていること、または負の行数に対してテーブルの先頭にある場合は、値 S_OK および0の行が返された場合のみ、そのことを前提とすることができます。 値 MAPI_E_NOT_FOUND は返されません。 
+> 呼び出し元が、正の行数の表の末尾、または負の行数の表の先頭にカーソルが配置されたと仮定できる唯一の時間は、値 S_OK とゼロ行が返される場合です。 この値MAPI_E_NOT_FOUND返されません。 
   
 ## <a name="see-also"></a>関連項目
 
