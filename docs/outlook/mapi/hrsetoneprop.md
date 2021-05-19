@@ -25,13 +25,13 @@ ms.locfileid: "33417659"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロパティインターフェイスの1つのプロパティの値を設定または変更します。つまり、 [imapiprop](imapipropiunknown.md)から派生したインターフェイスです。 
+プロパティ インターフェイス [(IMAPIProp](imapipropiunknown.md)から派生したインターフェイス) の 1 つのプロパティの値を設定または変更します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 HrSetOneProp(
@@ -44,11 +44,11 @@ HrSetOneProp(
 
  _pmp_
   
-> 順番プロパティ値を設定または変更する[imapiprop](imapipropiunknown.md)インターフェイスへのポインター。 
+> [in]プロパティ値 [を設定または変更する IMAPIProp](imapipropiunknown.md) インターフェイスへのポインター。 
     
  _pprop_
   
-> 順番_pmp_プロパティに設定する値を定義する[spropvalue](spropvalue.md)構造体へのポインター。 
+> [in]_pmp_ プロパティに設定する値を定義する [SPropValue](spropvalue.md)構造体へのポインター。 
     
 ## <a name="return-value"></a>Return value
 
@@ -56,8 +56,8 @@ HrSetOneProp(
   
 ## <a name="remarks"></a>注釈
 
-[imapiprop:: setprops](imapiprop-setprops.md)メソッドとは異なり、 **hrsetoneprop**関数は警告を返しません。 1つのプロパティしか設定しないため、成功または失敗のどちらかです。 複数のプロパティを設定または変更する場合は、 **setprops**の方が高速です。 
+[IMAPIProp::SetProps](imapiprop-setprops.md)メソッドとは異なり **、HrSetOneProp** 関数は警告を返しません。 プロパティは 1 つしか設定しないので、単に成功または失敗します。 複数のプロパティを設定または変更する場合 **、SetProps の方が** 高速です。 
   
-[hrgetoneprop](hrgetoneprop.md)関数を使用して、1つのプロパティを取得できます。 
+HrGetOneProp 関数を使用して [1 つのプロパティを取得](hrgetoneprop.md) できます。 
   
 

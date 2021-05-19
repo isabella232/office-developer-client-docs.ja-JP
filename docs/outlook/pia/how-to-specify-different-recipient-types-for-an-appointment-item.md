@@ -27,7 +27,7 @@ ms.locfileid: "32335414"
 
 次のコード例の SetRecipientTypeForAppt では、**AppointmentItem** オブジェクトを作成し、そのオブジェクトにプロパティを設定して、必須および任意の出席者を追加します。 また、会議用の会議室も追加します。 [MeetingStatus](https://msdn.microsoft.com/library/bb611417\(v=office.15\)) プロパティを [olMeeting](https://msdn.microsoft.com/library/bb644590\(v=office.15\)) に設定し、予定が会議出席依頼であることを示します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

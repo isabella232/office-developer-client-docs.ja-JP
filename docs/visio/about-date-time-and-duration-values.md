@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: b6951a92-f32a-5829-5e07-b277b7934df3
 description: 日付、時刻、期間の値を使用して数式の操作を行うことができます。 Microsoft Visio では、日付と時刻の式を 1 つの値として評価できます。 日付と時刻の式とは、日付や時刻、または日付や時刻を含むセルへの参照として一般的に認識されるすべての式を指します。 この式には、日付および時刻として判断される文字列や数値、および関数から返される日付と時刻の値も含まれます。
-ms.openlocfilehash: 936055ed6d13b75bd0c42c95564046a76082ec0d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 56de919fa713c0948bb87f794d1c6e0a5d727aef
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19804744"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416728"
 ---
 # <a name="about-date-time-and-duration-values"></a>日付、時刻、期間の値について
 

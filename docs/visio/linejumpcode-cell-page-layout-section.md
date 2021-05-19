@@ -22,12 +22,12 @@ ms.locfileid: "33416252"
   
 |**値**|**飛び越し点を表示するコネクタ**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|.0  <br/> |None  <br/> |**visPLOJumpNone** <br/> |
-|1   <br/> |横の線  <br/> |**visPLOJumpHorizontal** <br/> |
-|2   <br/> |縦の線  <br/> |**visPLOJumpVertical** <br/> |
-|3   <br/> |最後の経路  <br/> |**visPLOJumpLastRouted** <br/> |
-|4   <br/> |最後に表示された線 ( *z*オーダーの最上位の図形)  <br/> |**visPLOJumpDisplayOrder** <br/> |
-|5   <br/> |最初に表示された行 ( *z*オーダーの一番下にある図形)  <br/> |**visPLOJumpReverseDisplayOrder** <br/> |
+|0  <br/> |None  <br/> |**visPLOJumpNone** <br/> |
+|1  <br/> |横の線  <br/> |**visPLOJumpHorizontal** <br/> |
+|2  <br/> |縦の線  <br/> |**visPLOJumpVertical** <br/> |
+|3  <br/> |最後の経路  <br/> |**visPLOJumpLastRouted** <br/> |
+|4  <br/> |最後に表示された線  *(z*  オーダーの上の図形)  <br/> |**visPLOJumpDisplayOrder** <br/> |
+|5  <br/> |最初に表示される線  *(z*  オーダーの下部の図形)  <br/> |**visPLOJumpReverseDisplayOrder** <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -37,7 +37,7 @@ ms.locfileid: "33416252"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[linejumpcode]  <br/> |
+|セル名:  <br/> |LineJumpCode  <br/> |
    
 プログラムから、インデックスによって [LineJumpCode] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

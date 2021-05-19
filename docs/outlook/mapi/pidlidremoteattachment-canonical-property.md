@@ -25,29 +25,29 @@ ms.locfileid: "33417113"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-リモートアイテムに関連付けられた添付ファイルがあるかどうかを示します。
+リモート アイテムに添付ファイルが関連付けられているかどうかを示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidremoteattachment  <br/> |
-|プロパティセット:  <br/> |PSETID_Remote  <br/> |
-|ロング ID (LID):  <br/> |0x00008f07  <br/> |
+|関連するプロパティ:  <br/> |dispidRemoteAttachment  <br/> |
+|プロパティ セット:  <br/> |PSETID_Remote  <br/> |
+|長い ID (LID):  <br/> |0x00008F07  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|エリア:  <br/> |リモートメッセージ  <br/> |
+|エリア:  <br/> |リモート メッセージ  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]] 
+[[MS-OXPROPS]] 
   
-> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
 ## <a name="see-also"></a>関連項目
 
@@ -57,7 +57,7 @@ mapidefs.h
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

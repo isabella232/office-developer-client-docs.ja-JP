@@ -25,7 +25,7 @@ ms.locfileid: "32335386"
 
 次のコード例の DemoGetArrayForTable では、[GetTable(Object, Object)](https://msdn.microsoft.com/library/bb612592\(v=office.15\)) メソッドを使用して、**Folder** オブジェクトから [Table](https://msdn.microsoft.com/library/bb652856\(v=office.15\)) オブジェクトを取得します。 DemoGetArrayForTable は次に、**GetArray** メソッドを使用して、テーブルの各行の要素を含む [Array](https://msdn.microsoft.com/library/system.array.aspx) オブジェクトを返します。 返される **Array** オブジェクトは、**Table** の行の値と列の値の組み合わせを表す 2 次元配列です。 配列は、1 から始める Outlook コレクションの場合とは違い、0 から始まります。 **Array** オブジェクトを取得したら、このコードは for ループを使用してテーブルを列挙します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

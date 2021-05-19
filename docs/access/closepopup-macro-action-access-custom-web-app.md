@@ -1,5 +1,5 @@
 ---
-title: closepopup マクロアクション (Access カスタム web アプリ)
+title: ClosePopup マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417568"
 ---
-# <a name="closepopup-macro-action-access-custom-web-app"></a>closepopup マクロアクション (Access カスタム web アプリ)
+# <a name="closepopup-macro-action-access-custom-web-app"></a>ClosePopup マクロ アクション (Access カスタム Web アプリ)
 
 " **ClosePopup** /ポップアップを閉じる" アクションを使用すると、アクティブ ドキュメントのポップアップ ビューを閉じることができます。 
   

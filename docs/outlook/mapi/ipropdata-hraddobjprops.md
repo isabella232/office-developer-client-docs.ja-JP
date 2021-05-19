@@ -1,5 +1,5 @@
 ---
-title: ipropdatahraddobjprops
+title: IPropDataHrAddObjProps
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33416385"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-オブジェクトに PT_OBJECT 型の1つ以上のプロパティを追加します。
+オブジェクトの種類のプロパティを 1 つ以上PT_OBJECTオブジェクトに追加します。
   
 ```cpp
 HRESULT HrAddObjProps(
@@ -38,11 +38,11 @@ HRESULT HrAddObjProps(
 
  _lpPropTagArray_
   
-> 順番追加するプロパティを示すプロパティタグの配列へのポインター。
+> [in]追加するプロパティを示すプロパティ タグの配列へのポインター。
     
- _lppproblems 問題_
+ _lppProblems_
   
-> [入力]入力時、 [spropの配列](spropproblemarray.md)構造体への有効なポインター、または NULL。 出力時に、追加できなかったプロパティに関する情報を含む構造体へのポインター、または NULL。 プロパティ問題の配列構造体へのポインターは、有効なポインターが渡された場合にのみ返されます。 
+> [in, out]入力時に [、SPropProblemArray](spropproblemarray.md) 構造体または NULL への有効なポインター。 出力時に、追加できないプロパティまたは NULL に関する情報を含む構造体へのポインターを指すポインター。 プロパティの問題配列構造へのポインターは、有効なポインターが渡された場合にのみ返されます。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -52,25 +52,25 @@ S_OK
     
 MAPI_E_INVALID_TYPE 
   
-> PT_OBJECT 以外のプロパティの種類が、 _lpPropTagArray_パラメーターが指す配列に渡されました。 
+> _lpPropTagArray_ パラメーター PT_OBJECT示す配列に渡されたプロパティ以外のプロパティの種類。 
     
 MAPI_E_NO_ACCESS 
   
-> オブジェクトには、読み取り/書き込みアクセス許可が設定されていません。
+> オブジェクトは、読み取り/書き込みアクセス許可を許可しない設定されています。
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> プロパティのいくつかは追加されていますが、全部ではありません。
+> プロパティの一部が追加されましたが、すべてではありません。
     
 ## <a name="remarks"></a>注釈
 
-**ipropdata:: hraddobjprops**メソッドは、オブジェクトに PT_OBJECT 型の1つ以上のプロパティを追加します。 **hraddobjprops**は、オブジェクトプロパティの[imapiprop:: setprops](imapiprop-setprops.md)メソッドに代わる方法を提供します。これは、 **setprops**を呼び出すことでオブジェクトのプロパティを作成できないためです。 [imapiprop:: getproplist](imapiprop-getproplist.md)メソッドによって返される property タグのリストに含まれる property タグに、オブジェクトプロパティの結果が追加されました。 
+**IPropData::HrAddObjProps** メソッドは、オブジェクトの種類のプロパティを 1 つ以上PT_OBJECTオブジェクトに追加します。 **HrAddObjProps** は **、SetProps** を呼び出してオブジェクト プロパティを作成できないので、オブジェクト プロパティの [IMAPIProp::SetProps](imapiprop-setprops.md)メソッドの代わりに使用できます。 オブジェクト プロパティを追加すると [、IMAPIProp::GetPropList](imapiprop-getproplist.md) メソッドが返すプロパティ タグの一覧にプロパティ タグが含まれます。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**hraddobjprops**が MAPI_W_PARTIAL_COMPLETION を返し、 _lppproblems 問題_を有効なポインターに設定している場合は、返された[spropprops 配列](spropproblemarray.md)構造を調べて、追加されなかったプロパティを確認します。 通常、発生する問題はメモリが不足していることだけです。 完了したら、 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して、 **spropの配列**構造を解放します。 
+**HrAddObjProps** が MAPI_W_PARTIAL_COMPLETION を返し _、lppProblems_ を有効なポインターに設定している場合は、返された [SPropProblemArray](spropproblemarray.md)構造体を確認して、追加されていないプロパティを確認します。 通常、発生する唯一の問題はメモリ不足です。 終わったら、MAPIFreeBuffer 関数を呼び出して **SPropProblemArray** 構造体を解放します。 [](mapifreebuffer.md) 
   
-プロパティを追加するには、ターゲットオブジェクトが読み取り/書き込みアクセス許可を持っている必要があります。 **hraddobjprops**が MAPI_E_NO_ACCESS を返す場合は、変更が許可されていないため、オブジェクトにプロパティを追加することはできません。 **hraddobjprops**を呼び出す前に、オブジェクトへの読み取り/書き込みアクセス許可を取得するには、 [ipropdata:: HrSetObjAccess](ipropdata-hrsetobjaccess.md)を呼び出し、 _ulaccess_パラメーターを IPROP_READWRITE に設定します。 
+プロパティを追加するには、ターゲット オブジェクトに読み取り/書き込みアクセス許可が必要です。 **HrAddObjProps** がオブジェクトをMAPI_E_NO_ACCESS場合は、変更を許可しないので、オブジェクトにプロパティを追加できません。 **HrAddObjProps** を呼び出す前にオブジェクトに対する読み取り/書き込みアクセス許可を取得するには [、IPropData::HrSetObjAccess](ipropdata-hrsetobjaccess.md)を呼び出し _、ulAccess_ パラメーターを IPROP_READWRITE に設定します。 
   
 ## <a name="see-also"></a>関連項目
 

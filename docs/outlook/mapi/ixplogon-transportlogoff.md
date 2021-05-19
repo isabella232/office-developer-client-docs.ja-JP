@@ -25,7 +25,7 @@ ms.locfileid: "33417862"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ログオフプロセスを開始します。 
+ログオフ プロセスを開始します。 
   
 ```cpp
 HRESULT TransportLogoff(
@@ -43,19 +43,19 @@ HRESULT TransportLogoff(
 
 S_OK 
   
-> 呼び出しが成功し、予想される値または値が返されました。 S_OK 以外のものが返された場合、プロバイダーはログオフされます。
+> 呼び出しは成功し、予期される値または値を返しました。 ユーザー以外のS_OK返された場合、プロバイダーはログオフされます。
     
 ## <a name="remarks"></a>注釈
 
-MAPI スプーラーは**IXPLogon:: transportlogoff**メソッドを呼び出して、特定のユーザーのトランスポートプロバイダセッションを終了します。 **transportlogoff**を呼び出す前に、MAPI スプーラーは、 [IXPLogon:: AddressTypes](ixplogon-addresstypes.md)メソッドで渡されたこのセッションについて、サポートされているメッセージアドレスの種類に関するデータをすべて破棄します。 
+MAPI スプーラーは **、IXPLogon::TransportLogoff** メソッドを呼び出して、特定のユーザーのトランスポート プロバイダー セッションを終了します。 **TransportLogoff** を呼び出す前に、MAPI スプーラーは [、IXPLogon::AddressTypes](ixplogon-addresstypes.md)メソッドで渡されたこのセッションでサポートされているメッセージング アドレスの種類に関するデータを破棄します。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-トランスポートプロバイダーは、いつでも**transportlogoff**への通話を承諾するように準備する必要があります。 メッセージが処理中の場合、プロバイダーは送信プロセスを停止する必要があります。 
+トランスポート プロバイダーは、いつでも **TransportLogoff** への呼び出しを受け入れる準備をする必要があります。 メッセージが処理されている場合、プロバイダーは送信プロセスを停止する必要があります。 
   
-トランスポートプロバイダーは、現在のセッションに割り当てられているすべてのリソースを解放する必要があります。 [MAPIAllocateBuffer](mapiallocatebuffer.md)関数を使用してこのセッションのメモリを割り当てている場合は、 [MAPIFreeBuffer](mapifreebuffer.md)関数を使用してメモリを解放する必要があります。 [IXPLogon:: AddressTypes](ixplogon-addresstypes.md)メソッドへの呼び出しを満たすためにトランスポートプロバイダーによって割り当てられたメモリは、この時点では安全にリリースできます。 
+トランスポート プロバイダーは、現在のセッションに割り当てられているすべてのリソースを解放する必要があります。 [MAPIAllocateBuffer](mapiallocatebuffer.md)関数でこのセッションにメモリが割り当てられている場合は[、MAPIFreeBuffer](mapifreebuffer.md)関数を使用してメモリを解放する必要があります。 [IXPLogon::AddressTypes](ixplogon-addresstypes.md)メソッドの呼び出しを満たすためにトランスポート プロバイダーによって割り当てられたメモリは、この時点で安全に解放できます。 
   
-通常、 **transportlogoff**呼び出しの完了時に、プロバイダーは、 [imapisupport:: makeinvalid](imapisupport-makeinvalid.md)メソッドを呼び出して、そのサポートオブジェクトを解放することによって、最初にログオンオブジェクトを無効にする必要があります。 サポートオブジェクトが解放されると、MAPI スプーラーはプロバイダーオブジェクト自体を解放することができるため、プロバイダーの**transportlogoff**の実装では、support オブジェクトを最後に解放する必要があります。 
+通常 **、TransportLogoff** 呼び出しを完了すると、 [プロバイダーはまず IMAPISupport::MakeInvalid](imapisupport-makeinvalid.md) メソッドを呼び出してログオン オブジェクトを無効にしてから、そのサポート オブジェクトを解放する必要があります。 サポート オブジェクトが解放されると、MAPI スプーラーはプロバイダー オブジェクト自体を解放できるので、プロバイダーの **TransportLogoff** の実装は、サポート オブジェクトを最後に解放する必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

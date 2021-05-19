@@ -19,7 +19,7 @@ ms.locfileid: "33416476"
 
 InfoPath フォームの機能を拡張しようと思うと、多くの場合、フォームの基になる XML ドキュメントに関する情報へのアクセス、XML ドキュメントに記述されているデータへのアクセス、XML ドキュメントに対する何らかの操作の実行などの処理をプログラムで行う必要が出てきます。InfoPath オブジェクト モデルでは、[XDocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx) インターフェイスと [XDocumentsCollection](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocumentsCollection.aspx) インターフェイスを関連させて使用することにより、フォームの基になる XML ドキュメントにアクセスしたり、その XML ドキュメントを操作したりすることができます。 
   
-**XDocument** インターフェイスには、実にさまざまなプロパティ、メソッド、およびイベントが用意されており、フォームの基になる XML ドキュメントを扱えるだけではなく、InfoPath のユーザー インターフェイスで行える多数の操作を実行することもできるため、このインターフェイスは InfoPath オブジェクト モデルの中では最も便利な型の 1 つと言えます。InfoPath 2003 互換オブジェクト モデルを使用して作成されたマネージ コード プロジェクトでは、プロジェクトのフォーム コード内にイベント ハンドラーを含む  **** という名前の `thisXDocument` 型の変数が、クラスの  `_StartUp` メソッドの中で自動的に定義されます。フォームのコード内で  `thisXDocument` 変数を使用すると、 **XDocument** インターフェイスとそのメンバーにアクセスできます。 
+**XDocument** インターフェイスには、実にさまざまなプロパティ、メソッド、およびイベントが用意されており、フォームの基になる XML ドキュメントを扱えるだけではなく、InfoPath のユーザー インターフェイスで行える多数の操作を実行することもできるため、このインターフェイスは InfoPath オブジェクト モデルの中では最も便利な型の 1 つと言えます。InfoPath 2003 互換オブジェクト モデルを使用して作成されたマネージ コード プロジェクトでは、プロジェクトのフォーム コード内にイベント ハンドラーを含む   という名前の `thisXDocument` 型の変数が、クラスの  `_StartUp` メソッドの中で自動的に定義されます。フォームのコード内で  `thisXDocument` 変数を使用すると、 **XDocument** インターフェイスとそのメンバーにアクセスできます。 
   
 ## <a name="overview-of-the-xdocumentscollection-interface"></a>XDocumentsCollection インターフェイスの概要
 
@@ -69,7 +69,7 @@ InfoPath フォームの機能を拡張しようと思うと、多くの場合�
    
 ## <a name="using-the-xdocuments-collection-and-the-xdocument-interfaces"></a>XDocuments コレクションと XDocument インターフェイスを使用する
 
-**XDocumentsCollection** インターフェイスには、 [Application](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._Application2.XDocuments.aspx) インターフェイスの [XDocuments](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Application.aspx) プロパティを通じてアクセスできます。InfoPath 2003 互換オブジェクト モデルを使用して作成されたマネージ コード プロジェクトでは、プロジェクトのフォーム コードの  **** メソッド内でインスタンス化される  `thisApplication` 変数を使用して `_StartUp` インターフェイスにアクセスできます。次に示すコードは、現在のプロジェクトの **XDocumentsCollection** インターフェイスを参照する変数を作成します。 
+**XDocumentsCollection** インターフェイスには、 [Application](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._Application2.XDocuments.aspx) インターフェイスの [XDocuments](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Application.aspx) プロパティを通じてアクセスできます。InfoPath 2003 互換オブジェクト モデルを使用して作成されたマネージ コード プロジェクトでは、プロジェクトのフォーム コードの   メソッド内でインスタンス化される  `thisApplication` 変数を使用して `_StartUp` インターフェイスにアクセスできます。次に示すコードは、現在のプロジェクトの **XDocumentsCollection** インターフェイスを参照する変数を作成します。 
   
 ```cs
 XDocumentsCollection xdocs;
@@ -83,7 +83,7 @@ xdocs = thisApplication.XDocuments
 ' Write code here to work with the XDocumentsCollection.
 ```
 
-InfoPath 2003 互換オブジェクト モデルを使用して作成されたマネージ コード プロジェクトでは、プロジェクトのフォーム コードの  **** メソッド内でインスタンス化される  `thisXDocument` 変数を使用して `StartUp` インターフェイスにアクセスできます。次に示すコードは、  `thisXDocument` 変数を使用して現在のプロジェクトの **XDocument** インターフェイスにアクセスし、現在開いているフォームの URI を通知メッセージで表示します。 
+InfoPath 2003 互換オブジェクト モデルを使用して作成されたマネージ コード プロジェクトでは、プロジェクトのフォーム コードの   メソッド内でインスタンス化される  `thisXDocument` 変数を使用して `StartUp` インターフェイスにアクセスできます。次に示すコードは、  `thisXDocument` 変数を使用して現在のプロジェクトの **XDocument** インターフェイスにアクセスし、現在開いているフォームの URI を通知メッセージで表示します。 
   
 ```cs
 thisXDocument.UI.Alert(thisXDocument.URI);

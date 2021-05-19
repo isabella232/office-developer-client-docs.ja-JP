@@ -25,7 +25,7 @@ ms.locfileid: "33416294"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-現在のカーソル位置から、1つまたは複数の行をテーブルから返します。
+現在のカーソル位置から始まる、テーブルから 1 つ以上の行を返します。
   
 ```cpp
 HRESULT QueryRows(
@@ -37,21 +37,21 @@ LPSRowSet FAR * lppRows
 
 ## <a name="parameters"></a>パラメーター
 
- _lrowcount_
+ _lRowCount_
   
-> 順番返される行の最大数。
+> [in]返される行の最大数。
     
  _ulFlags_
   
-> 順番行が返される方法を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]行の返し方を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 TBL_NOADVANCE 
   
-> 行の取得の結果として、カーソルが昇格しないようにします。 TBL_NOADVANCE フラグが設定されている場合、カーソルは返される最初の行を指します。 TBL_NOADVANCE フラグが設定されていない場合、カーソルは、返される最後の行の次の行を指します。
+> 行の取得の結果としてカーソルが進むのを防ぐ。 このフラグTBL_NOADVANCE設定すると、カーソルは返される最初の行をポイントします。 このフラグTBL_NOADVANCE設定されていない場合、カーソルは最後に返された行の後の行をポイントします。
     
- _lpprows_
+ _lppRows_
   
-> 読み上げテーブルの行を保持する[srowset](srowset.md)構造体へのポインターへのポインター。 
+> [out]テーブルの行を保持する [SRowSet](srowset.md) 構造体へのポインターを指すポインター。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -61,55 +61,55 @@ S_OK
     
 MAPI_E_BUSY 
   
-> 別の操作が進行中なので、行取得操作を開始できません。 進行中の操作が完了することを許可するか、停止する必要があります。
+> 行の取得操作が開始されるのを防ぐ別の操作が進行中です。 進行中の操作の完了を許可するか、停止する必要があります。
     
 MAPI_E_INVALID_PARAMETER 
   
-> _irowcount_パラメーターは0に設定されています。 
+> _IRowCount パラメーター_ は 0 に設定されます。 
     
 ## <a name="remarks"></a>注釈
 
-**IMAPITable:: QueryRows**メソッドは、テーブルから1つまたは複数のデータ行を取得します。 _irowcount_パラメーターの値は、取得の開始点に影響します。 _irowcount_が正の場合は、現在の位置から順に行が読み取られます。 _irowcount_が負の場合、 **QueryRows**は指定された行数だけ後方に移動して開始点をリセットします。 カーソルがリセットされると、行は前方に読み上げられます。 
+**IMAPITable::QueryRows** メソッドは、テーブルから 1 行以上のデータを取得します。 _IRowCount パラメーターの値_ は、取得の開始点に影響します。 _IRowCount が正_ の場合、行は現在の位置から順方向に読み取ります。 _IRowCount が_ 負の場合 **、QueryRows は** 指定された行数を後方に移動して開始点をリセットします。 カーソルがリセットされた後、行は順方向に読み取りされます。 
   
-_lpprows_パラメーターが指す[srowset](srowset.md)構造の**cRows**メンバは、返される行数を示しています。 0行が返される場合: 
+**lppRows** パラメーターが指す [SRowSet](srowset.md)構造体の _cRows_ メンバーは、返される行数を示します。 0 行が返される場合は、次の処理を行います。 
   
-- カーソルは既にテーブルの先頭に配置されており、 _irowcount_の値が負になります。 や 
+- カーソルはテーブルの先頭に既に配置され  _、IRowCount_ の値は負の値です。 -Or- 
     
-- カーソルは既にテーブルの最後に配置されており、 _irowcount_の値は正です。 
+- カーソルはテーブルの末尾に既に配置され  _、IRowCount_ の値は正の値です。 
     
-列の数とその順序は、各行で同じです。 行のプロパティが存在しない場合、またはプロパティの読み取りエラーが発生した場合、行内のプロパティの**spropvalue**構造体には次の値が含まれています。 
+列の数とその順序は、各行で同じです。 行に対してプロパティが存在しない場合、またはプロパティの読み取りエラーが発生した場合、行のプロパティ **の SPropValue** 構造体には、次の値が含まれます。 
   
-- **ulPropTag**メンバーのプロパティの種類の PT_ERROR。 
+- PT_ERRORのプロパティの種類を **指定** します。 
     
-- **Value**メンバーの MAPI_E_NOT_FOUND。 
+- MAPI_E_NOT_FOUNDメンバー **の値を指定** します。 
     
-_lpprows_パラメーターによって指定された行セットの[spropvalue](spropvalue.md)構造体に使用されるメモリは、各行に対して個別に割り当てて解放する必要があります。 [MAPIFreeBuffer](mapifreebuffer.md)を使用して、プロパティの値構造を解放し、行セットを解放します。 **QueryRows**の呼び出しによって0が返されますが、テーブルの先頭または末尾を示している場合は、 **srowset**構造自体のみを解放する必要があります。 **srowset**構造のメモリを割り当てて解放する方法の詳細については、「 [adrlist および srowset 構造体のメモリの管理](managing-memory-for-adrlist-and-srowset-structures.md)」を参照してください。
+_lppRows_ パラメーターが指す行セット内の [SPropValue](spropvalue.md)構造体に使用されるメモリは、行ごとに個別に割り当て、解放する必要があります。 [MAPIFreeBuffer を使用して](mapifreebuffer.md)、プロパティ値構造を解放し、行セットを解放します。 **ただし、QueryRows** の呼び出しが 0 を返す場合、テーブルの先頭または末尾を示す場合は **、SRowSet** 構造体自体のみを解放する必要があります。 SRowSet 構造体でメモリを割り当て、解放する方法の詳細については [、「ADRLIST](managing-memory-for-adrlist-and-srowset-structures.md)および **SRowSet** 構造体のメモリの管理」を参照してください。
   
-返される行と、返される順序は、 [IMAPITable:: Restrict](imapitable-restrict.md)と[imapitable:: sorttable](imapitable-sorttable.md)に成功したかどうかによって異なります。 ビューからフィルター行を**制限**します。これにより、 **QueryRows**は、制限で指定された条件に一致する行のみを返します。 **sorttable**は、標準または分類された並べ替え順序を確立し、 **QueryRows**によって返される一連の行に影響します。 返される行は、 [ssortorderset](ssortorderset.md)構造で指定された順序で**sorttable**に渡されます。
+返される行と、返される順序は [、IMAPITable::Restrict](imapitable-restrict.md) と [IMAPITable::SortTable](imapitable-sorttable.md)に対して正常に呼び出されたかどうかによって異なされます。 **ビュー** からフィルター行を制限すると **、QueryRows** は制限で指定された条件に一致する行のみを返します。 **SortTable は** 、標準または分類された並べ替え順序を確立し **、QueryRows** によって返される行のシーケンスに影響します。 返される行は **、SortTable** に渡される [SSortOrderSet](ssortorderset.md)構造体で指定された順序です。
   
-各行に返される列と返される順序は、 [IMAPITable:: SetColumns](imapitable-setcolumns.md)に正常に呼び出しが行われたかどうかによって異なります。 **SetColumns**は列セットを確立し、テーブルの列に含めるプロパティと、それらを含める順序を指定します。 **SetColumns**呼び出しが行われている場合、各行の特定の列とそれらの列の順序は、呼び出しで指定された列セットと一致します。 **SetColumns**呼び出しが行われていない場合、テーブルは既定の列セットを返します。 
+各行に対して返される列と、返される順序は [、IMAPITable::SetColumns](imapitable-setcolumns.md)に対して正常に呼び出されたかどうかによって異なる。 **SetColumns は** 列セットを確立し、テーブル内の列に含めるプロパティと、その列を含める順序を指定します。 **SetColumns 呼** び出しが行われた場合、各行の特定の列とそれらの列の順序は、呼び出しで指定された列セットと一致します。 **SetColumns 呼び出し** が行われた場合、テーブルは既定の列セットを返します。 
   
-これらの呼び出しが行われていない場合、 **QueryRows**はテーブル内のすべての行を返します。 各行には、既定の順序で設定された既定の列が含まれています。 
+これらの呼び出しが行われた場合 **、QueryRows は** テーブル内のすべての行を返します。 各行には、既定の列セットが既定の順序で含まれる。 
   
-[IMAPITable:: SetColumns](imapitable-setcolumns.md)の呼び出しで設定された列セットが PR_NULL に設定されている場合、 _lpprows_で返される行セット内の[spropvalue](spropvalue.md)配列には空のスロットが含まれます。 
+[IMAPITable::SetColumns](imapitable-setcolumns.md)への呼び出しで確立された列セットに PR_NULL に設定された列が含まれている場合 _、lppRows_ で返される行セット内の [SPropValue](spropvalue.md)配列には空のスロットが含まれます。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-発信者は、サポートされていない列を列セットに含めることを要求できます。 この場合、PT_ERROR をプロパティタグのプロパティの種類部分に配置し、サポートされていない列のプロパティ値に MAPI_E_NOT_FOUND を設定します。 
+呼び出し元が、サポートされていない列を列セットに含める要求を許可できます。 この場合は、プロパティ PT_ERRORのプロパティの種類の部分に配置し、サポートされていない列MAPI_E_NOT_FOUNDプロパティ値に配置します。 
   
-行カウントは、要件ではなく要求として処理します。 クエリの方向に行がない場合は、要求された数になるまで、0行から任意の値を返すことができます。 
+行数は、要件ではなく要求として扱います。 クエリの方向に行がない場合は、ゼロ行から要求された数まで任意の場所を返します。 
   
-カテゴリ別のテーブルビューから行が要求されたときにユーザーに表示される行のみを返します。これにより、呼び出し元は、データの範囲に関する有効な前提条件を作成し、余分な作業を避けることができます。 
+分類されたテーブル ビューから行が要求された場合に表示される行のみを返し、呼び出し元はデータの範囲に関する有効な仮定を行い、余分な作業を回避できます。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-通常は、 _lrowcount_パラメーターで指定した行数だけ行が入力されます。 ただし、メモリまたは実装の制限が問題になる場合や、処理がテーブルの先頭または末尾に達した後に発生した場合、 **QueryRows**は要求されたよりも少ない行数を返します。 
+通常  _、lRowCount_ パラメーターで指定した数の行が表示されます。 ただし、メモリまたは実装の制限が問題である場合、または操作がテーブルの開始または終了に途中で達すると **、QueryRows** は要求された行よりも少ない行を返します。 
   
-**QueryRows**が MAPI_E_BUSY を返す場合は、 [IMAPITable:: waitforcompletion](imapitable-waitforcompletion.md)メソッドを呼び出して、非同期操作が完了したときに**QueryRows**の呼び出しを再試行します。 
+**QueryRows が** MAPI_E_BUSYを返す場合は [、IMAPITable::WaitForCompletion](imapitable-waitforcompletion.md)メソッドを呼び出し、非同期操作が完了したら **QueryRows** への呼び出しを再試行します。 
   
-**QueryRows**を呼び出すときは、非同期通知のタイミングが原因で、 **QueryRows**から返される行セットが、基になるデータを正確に表示しない可能性があることに注意してください。 たとえば、メッセージを削除した後、それに対応する通知を受信する前に、フォルダーの contents テーブルに**QueryRows**を呼び出すと、削除された行が行セットに返されることになります。 ユーザーのデータの表示を更新する前に通知が到着するのを常に待機します。 
+**QueryRows** を呼び出す場合、非同期通知のタイミングによって **、QueryRows** から取得した行セットが基になるデータを正確に表していない可能性があります。 たとえば、メッセージを削除した後で、対応する通知を受信する前にフォルダーのコンテンツ テーブルに **QueryRows** を呼び出した場合、削除された行が行セットで返されます。 ユーザーのデータビューを更新する前に、通知が届くのを常に待ちます。 
   
-テーブルから行を取得する方法の詳細については、「[テーブルの行からデータを取得](retrieving-data-from-table-rows.md)する」を参照してください。
+テーブルから行を取得する方法の詳細については、「 [テーブルの行からデータを取得する」を参照してください](retrieving-data-from-table-rows.md)。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -117,7 +117,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl  <br/> |dwthreadの loadtable  <br/> |mfcmapi は、 **IMAPITable:: QueryRows**メソッドを使用して、ビューに読み込むテーブル内の行を取得します。  <br/> |
+|ContentsTableListCtrl.cpp  <br/> |DwThreadFuncLoadTable  <br/> |MFCMAPI は **IMAPITable::QueryRows** メソッドを使用して、ビューに読み込むテーブル内の行を取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

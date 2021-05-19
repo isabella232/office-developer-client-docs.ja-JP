@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 98c0eab1-fd7e-46c3-8619-ccd6dc7cf8f7
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3d8b1901123743b25b5bb9df174b297398c953b8
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32335766"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[imapisession:: showform](imapisession-showform.md)メソッドがメッセージにアクセスするために使用する数値トークンを作成します。 
+[IMAPISession::ShowForm](imapisession-showform.md)メソッドがメッセージにアクセスするために使用する数値トークンを作成します。 
   
 ```cpp
 HRESULT PrepareForm(
@@ -37,31 +37,31 @@ HRESULT PrepareForm(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpinterface_
+ _lpInterface_
   
-> 順番メッセージへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 標準インターフェイスまたは[IMessage](imessageimapiprop.md)で**null**結果が渡されています。 _lpinterface_パラメーターは、 **null**または IID_IMessage である必要があります。 
+> [in]メッセージへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 **null を渡** す場合、標準インターフェイス [(IMessage)](imessageimapiprop.md)が使用されます。 _lpInterface パラメーターは_ null または **IID_IMessage。** 
     
- _lpmessage_
+ _lpMessage_
   
-> 順番フォームに表示されるメッセージへのポインター。
+> [in]フォームに表示するメッセージへのポインター。
     
- _lアウト messagetoken_
+ _lpulMessageToken_
   
-> 読み上げ_lpmessage_によって参照されるメッセージにアクセスするために**imapisession:: showform**メソッドによって使用されるメッセージトークンへのポインター。
+> [out]メッセージ トークンへのポインター。 **これは、IMAPISession::ShowForm** メソッドが  _lpMessage_ で指すメッセージにアクセスするために使用されます。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> フォームの準備が正常に完了しました。
+> フォームの準備が成功しました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**imapisession::P repareform**メソッドは、 _lpmessage_パラメーターによって示されるメッセージのメッセージトークンを作成し、メッセージの[IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)メソッドを呼び出します。 このトークンは、 _ulmessagetoken_パラメーターで**imapisession:: showform**に渡されます。 
+**IMAPISession::P repareForm** メソッドは _、lpMessage_ パラメーターが指すメッセージのメッセージ トークンを作成し、メッセージの [IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)メソッドを呼び出します。 このトークンは  _ulMessageToken_ パラメーターで **IMAPISession::ShowForm に渡されます**。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**PrepareForm**の呼び出しが成功した場合は、 **showform**を呼び出す前に[IUnknown:: release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドを呼び出して、 _lpmessage_に示されているメッセージを解放します。 **showform**を呼び出す前にメッセージを解放しないと、メモリリークが発生する可能性があります。 
+**PrepareForm** の呼び出しが成功した場合は **、ShowForm** を呼び出す前に [、その IUnknown::Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドを呼び出して _lpMessage_ が指すメッセージを解放します。 ShowForm を呼び出す前にメッセージを解放 **すると、** メモリ リークが発生する可能性があります。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -69,7 +69,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIFormFunctions  <br/> |openmessagemodal  <br/> |mfcmapi は、imapisession: **:P repareform**メソッドを**imapisession:: showform**と共に使用して、モーダルフォームにメッセージを表示します。  <br/> |
+|MAPIFormFunctions.cpp  <br/> |OpenMessageModal  <br/> |MFCMAPI は **IMAPISession::P repareForm** メソッドを **IMAPISession::ShowForm** と共に使用して、モーダル フォームでメッセージを表示します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -21,21 +21,21 @@ ms.locfileid: "33417344"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-次の3つのプロパティを設定して、アドレス帳を使用するためのオプションを記述できます。
+アドレス帳を使用するためのオプションを説明する 3 つのプロパティを設定できます。
   
-- **PR_AB_SEARCH_PATH**([PidTagAbSearchPath](pidtagabsearchpath-canonical-property.md))
+- **PR_AB_SEARCH_PATH** ([PidTagAbSearchPath](pidtagabsearchpath-canonical-property.md))
     
-    **PR_AB_SEARCH_PATH**プロパティは[IAddrBook:: ResolveName](iaddrbook-resolvename.md)によって使用され、名前の解決に関係するコンテナーと、それらが関与する必要のある順序を決定します。 **PR_AB_SEARCH_PATH**の各コンテナーで、 **IAddrBook:: ResolveName**は[IABContainer:: ResolveNames](iabcontainer-resolvenames.md)メソッドを呼び出します。 **PR_AB_SEARCH_PATH**の先頭にあるコンテナーは、 **PR_AB_SEARCH_PATH**の末尾にあるコンテナーの前に検索されます。 
+    PR_AB_SEARCH_PATH **プロパティ** は [、IAddrBook::ResolveName](iaddrbook-resolvename.md) を使用して、名前解決に関与するコンテナーと、それに関係する順序を決定します。 **IAddrBook::ResolveName** **は**、PR_AB_SEARCH_PATH内の各コンテナーについて [、IABContainer::ResolveNames メソッドを呼び出](iabcontainer-resolvenames.md)します。 コンテナーは、PR_AB_SEARCH_PATHの **末尾** にあるコンテナーの前に検索 **PR_AB_SEARCH_PATH。** 
     
-    **PR_AB_SEARCH_PATH**の検索順序は、テーブル内の行を表すために使用されるものと同じ構造を使用して、 [srowset](srowset.md)構造を使用して指定されます。 現在の検索パスを表示するには、 [IAddrBook:: GetSearchPath](iaddrbook-getsearchpath.md)メソッドを呼び出し、 [IAddrBook:: SetSearchPath](iaddrbook-setsearchpath.md)メソッドを呼び出して変更します。 
+    テーブル内 **の行PR_AB_SEARCH_PATH** 表すのと同じ構造である [SRowSet](srowset.md) 構造体を使用して、検索順序を指定します。 現在の検索パスを表示するには [、IAddrBook::GetSearchPath](iaddrbook-getsearchpath.md) メソッドを呼び出し [、IAddrBook::SetSearchPath](iaddrbook-setsearchpath.md) メソッドを呼び出して変更します。 
     
-- **PR_AB_DEFAULT_DIR**([PidTagAbDefaultDir](pidtagabdefaultdir-canonical-property.md))
+- **PR_AB_DEFAULT_DIR** ([PidTagAbDefaultDir](pidtagabdefaultdir-canonical-property.md))
     
-    **PR_AB_DEFAULT_DIR**プロパティは、アドレス帳が表示されるときに最初に表示されるアドレス帳コンテナーのエントリ識別子です。 既定のディレクトリ設定は、 [IAddrBook:: SetDefaultDir](iaddrbook-setdefaultdir.md)メソッドを呼び出して変更するまで有効です。 [IAddrBook:: GetDefaultDir](iaddrbook-getdefaultdir.md)メソッドを呼び出すことで、既定のディレクトリを表示できます。 
+    PR_AB_DEFAULT_DIR **プロパティ** は、アドレス帳の表示時に最初に表示されるアドレス帳コンテナーのエントリ識別子です。 既定のディレクトリ設定は [、IAddrBook::SetDefaultDir](iaddrbook-setdefaultdir.md) メソッドを呼び出して変更するまで有効です。 既定のディレクトリを表示するには [、IAddrBook::GetDefaultDir メソッドを呼び出](iaddrbook-getdefaultdir.md) します。 
     
-- **PR_AB_DEFAULT_PAB**([PidTagAbDefaultPab](pidtagabdefaultpab-canonical-property.md))
+- **PR_AB_DEFAULT_PAB** ([PidTagAbDefaultPab](pidtagabdefaultpab-canonical-property.md))
     
-これら3つのプロパティは、標準の**imapiprop**メソッドを使用して操作できないため、特別なものになります。 代わりに、 **IAddrBook**メソッドを使用する必要があります。 これらのプロパティは、 **imapiprop:: setprops**で変更できないため、変更を永続的にするために**imapiprop:: SaveChanges**を呼び出す必要はありません。 **IAddrBook**メソッドを使用して加えた変更は、直ちに有効になります。 
+これらの 3 つのプロパティは、標準の **IMAPIProp** メソッドを使用して処理できないので特別です。 代わりに **、IAddrBook メソッドを使用する** 必要があります。 **IMAPIProp::SetProps** を使用してこれらのプロパティを変更することはできませんので、変更を永続的に行うために **IMAPIProp::SaveChanges** を呼び出す必要はありません。 **IAddrBook メソッドを使用して行われた** 変更は、直ちに有効になります。 
   
 ## <a name="see-also"></a>関連項目
 

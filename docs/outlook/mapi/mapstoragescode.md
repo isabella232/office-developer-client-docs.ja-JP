@@ -25,13 +25,13 @@ ms.locfileid: "33416525"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-SCODE 戻り値を OLE ストレージオブジェクトから HRESULT 型にマップします。 
+マップ OLE ストレージ オブジェクトから HRESULT 型に SCODE 戻り値を取得します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Imessage  <br/> |
+|ヘッダー ファイル:  <br/> |Imessage.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 SCODE MapStorageSCode(
@@ -43,22 +43,22 @@ SCODE MapStorageSCode(
 
  _StgSCode_
   
-> 順番MAPI の HRESULT 値にマップされる OLE ストレージオブジェクトからの戻り値。
+> [in]HRESULT 値にマップする OLE ストレージ オブジェクトからの MAPI SCODE 戻り値。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 呼び出しが成功し、予期される値が返されました。
+> 呼び出しは成功し、予期される値を返しました。
     
 MAPI_E_CALL_FAILED 
   
-> 関数は、一致する値を見つけることができません。
+> 関数は一致する値を見つけ出しません。
     
 ## <a name="remarks"></a>注釈
 
-mapi では、メッセージ DLL のメッセージの実装に基づいて mapi コンポーネントを内部で使用するための**mapstoragescode**関数が提供されます。 これらのコンポーネントは ole ストレージ自体を開くため、ole 記憶域に関する問題に返されるエラー値を HRESULT 値にマップできる必要があります。 
+MAPI は、メッセージの実装をメッセージ DLL に基付け、MAPI コンポーネントを内部的に使用する **MapStorageSCode** 関数を提供します。 これらのコンポーネントは OLE ストレージ自体を開いているため、OLE ストレージの問題で返されるエラー値を HRESULT 値にマップできる必要があります。 
   
-詳細については、「[構造化ストレージ](structured-storage-in-mapi.md)」を参照してください。 
+詳細については[、「Structured Storage」 を参照してください](structured-storage-in-mapi.md)。 
   
 

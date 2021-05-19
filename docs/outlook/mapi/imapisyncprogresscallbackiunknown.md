@@ -25,23 +25,23 @@ ms.locfileid: "33418338"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[imapisync: SynchronizeInBackground](imapisyncsynchronizeinbackground.md)の呼び出し中に、ストアプロバイダーを MAPISIB 構造体のフィールドとして渡します。 ストアプロバイダーは、このインターフェイスを使用して、同期の状態に関する Microsoft Outlook へのフィードバックを提供します。
+[IMAPISync :SyncInBackground](imapisyncsynchronizeinbackground.md)の呼び出し中に、MAPISIB 構造体のフィールドとしてストア プロバイダーを渡します。 ストア プロバイダーは、このインターフェイスを使用して、同期Outlookに関するフィードバックを Microsoft に提供します。
   
 |||
 |:-----|:-----|
 |ヘッダー ファイル:  <br/> ||
-|公開者:  <br/> |Outlook  <br/> |
+|次のユーザーによって公開されます。  <br/> |Outlook  <br/> |
 |実装元:  <br/> |Outlook  <br/> |
-|呼び出し元:  <br/> |ストアプロバイダー  <br/> |
+|呼び出し元:  <br/> |ストア プロバイダー  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMAPISyncProgressCallback  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[進行状況](imapisyncprogresscallback-progress.md) <br/> |ストアプロバイダーは、この関数を定期的に呼び出して、送信/受信ダイアログの状態を更新します。  <br/> |
-|[Error](imapisyncprogresscallback-error.md) <br/> |同期中にエラーが発生した場合、ストアプロバイダーはこの関数を呼び出して、送受信ダイアログに表示される詳細情報を提供します。  <br/> |
-|[終了](imapisyncprogresscallback-done.md) <br/> |ストアプロバイダーはこの関数を呼び出して、同期が完了したことを Outlook に通知します。  <br/> |
+|[進行状況](imapisyncprogresscallback-progress.md) <br/> |ストア プロバイダーは定期的にこの関数を呼び出して、[送受信] ダイアログの状態を更新します。  <br/> |
+|[エラー](imapisyncprogresscallback-error.md) <br/> |同期中にエラーが発生した場合、ストア プロバイダーはこの関数を呼び出して、[送受信] ダイアログに表示される詳細を提供します。  <br/> |
+|[終了](imapisyncprogresscallback-done.md) <br/> |ストア プロバイダーは、この関数を呼び出して、Outlook完了したと通知します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

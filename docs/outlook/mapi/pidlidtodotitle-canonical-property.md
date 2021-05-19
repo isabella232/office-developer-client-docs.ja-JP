@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 94cf031f-4c78-441d-9c01-55905b4974e0
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7ed69d9bab84a5c572026bb9480249c1212e3376
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,43 +25,43 @@ ms.locfileid: "32339943"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-統合されたタスク一覧でこのメッセージオブジェクトを識別するためのユーザー specifiable テキストを含みます。
+統合された to-do リストでこのメッセージ オブジェクトを識別するためのユーザー指定可能なテキストが含まれる。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |dispidToDoTitle  <br/> |
-|プロパティセット:  <br/> |PSETID_Common  <br/> |
-|ロング ID (LID):  <br/> |0x000085a4  <br/> |
+|プロパティ セット:  <br/> |PSETID_Common  <br/> |
+|長い ID (LID):  <br/> |0x000085A4  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
 |エリア:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このプロパティは、タスクに設定してはなりません。 空のプロパティを指定する場合は、このプロパティを長さ0の文字列に設定しないで、削除します。 
+このプロパティは、タスクで設定する必要があります。 空のプロパティを指定するには、このプロパティを長さ 0 の文字列に設定するのではなく、削除します。 
   
-message オブジェクトのフラグを設定したときに、そのプロパティが存在しない場合、クライアントはこのプロパティに**PR_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md)) の値を書き込む必要があります。
+メッセージ オブジェクトにフラグを設定し、プロパティが存在しない場合、クライアントは **PR_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md)) の値をこのプロパティに書き込む必要があります。
   
-統合されたタスク一覧でこのプロパティが存在しない場合は、このプロパティをタスク一覧に表示するときに、クライアントは**PR_NORMALIZED_SUBJECT**プロパティの値を置換する必要があります。 
+統合 To Do リストで、このプロパティが存在しない場合、クライアントは、このプロパティを to-do リストに表示 **するときに PR_NORMALIZED_SUBJECT** プロパティの値を置き換える必要があります。 
   
-下書きのメッセージオブジェクトで、クライアントが sender フラグを実装している場合、このプロパティは**dispidrequest** ([PidLidFlagRequest](pidlidflagrequest-canonical-property.md)) と同じ値に設定する必要があります。
+下書きメッセージ オブジェクトで、クライアントが送信者フラグを実装する場合、このプロパティは **dispidRequest** ([PidLidFlagRequest)](pidlidflagrequest-canonical-property.md)と同じ値に設定する必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
+> 関連するプロトコル仕様に対するプロパティ セットの定義Exchange Serverを提供します。
     
-[[OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
+[[MS-OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
   
 > フラグに関連するプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
 ## <a name="see-also"></a>関連項目
 
@@ -76,7 +76,7 @@ mapidefs.h
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

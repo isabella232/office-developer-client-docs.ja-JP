@@ -38,25 +38,25 @@ LPATTACH FAR * lppAttach
 
 ## <a name="parameters"></a>パラメーター
 
- _lpinterface_
+ _lpInterface_
   
-> 順番メッセージへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 NULL 結果をメッセージの標準インターフェイスまたは**IMessage**に渡すと、返されます。 
+> [in]メッセージへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 NULL を渡すと、メッセージの標準インターフェイス **(IMessage)** が返されます。 
     
  _ulFlags_
   
-> 順番添付ファイルの作成方法を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]添付ファイルの作成方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_DEFERRED_ERRORS 
   
-> 添付ファイルが呼び出し元クライアントに完全にアクセス可能になる前に、 **createattach**が正常に戻ることができるようにします。 添付ファイルにアクセスできない場合は、その後の呼び出しを行うとエラーが発生する可能性があります。 
+> **CreateAttach を** 正常に返す (おそらく、呼び出し元のクライアントが添付ファイルに完全にアクセスできる前に) 許可します。 添付ファイルにアクセスできない場合は、後続の呼び出しでエラーが発生する可能性があります。 
     
- _lアウト attachmentnum_
+ _lpulAttachmentNum_
   
-> 読み上げ新しく作成された添付ファイルを識別するインデックス番号へのポインター。 この番号は、メッセージが開いていて、添付ファイルの**PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) プロパティの基になっている場合にのみ有効です。
+> [out]新しく作成された添付ファイルを識別するインデックス番号へのポインター。 この番号は、メッセージが開いている場合にのみ有効で、添付ファイルのプロパティ **(** [PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) プロパティPR_ATTACH_NUM基になります。
     
- _lppattach_
+ _lppAttach_
   
-> 読み上げ開かれた attachment オブジェクトへのポインターへのポインター。
+> [out]開いている添付ファイル オブジェクトへのポインターへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -66,9 +66,9 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-**IMessage:: createattach**メソッドは、メッセージに新しい添付ファイルを作成します。 新しい添付ファイルと、そのオブジェクトに設定されているすべてのプロパティは、クライアントが添付ファイルの[imapiprop:: savechanges](imapiprop-savechanges.md)メソッドと、メッセージの**imapiprop:: savechanges**メソッドの両方を呼び出すまでは使用できません。 
+**IMessage::CreateAttach メソッドは**、メッセージに新しい添付ファイルを作成します。 新しい添付ファイルと設定されているプロパティは、クライアントが添付ファイルの [IMAPIProp::SaveChanges](imapiprop-savechanges.md) メソッドとメッセージの **IMAPIProp::SaveChanges** メソッドの両方を呼び出すまで使用できません。 
   
-_lアウト attachmentnum_が指す添付ファイルの番号は一意で、メッセージのコンテキスト内でのみ有効です。 つまり、同じメッセージ内の2つの添付ファイルでは、2つの異なるメッセージの2つの添付ファイルを同じ数にすることができます。 
+_lpulAttachmentNum_ が指す添付ファイル番号は一意であり、メッセージのコンテキスト内でのみ有効です。 つまり、2 つの異なるメッセージ内の 2 つの添付ファイルは同じ番号を持ち、同じメッセージ内の 2 つの添付ファイルは使用できません。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -20,18 +20,18 @@ ms.locfileid: "33415993"
 
 動的コネクタの飛び越し点のスタイルを指定します。
   
-|**値**|**飛び越し点のスタイル**|**オートメーション定数**|
+|**値**|**[線のジャンプ スタイル]**|**オートメーション定数**|
 |:-----|:-----|:-----|
-|.0  <br/> |ページの既定値  <br/> |**visLOJumpStyleDefault** <br/> |
-|1   <br/> |円弧  <br/> |**visLOJumpStyleArc** <br/> |
-|2   <br/> |Gap  <br/> |**visLOJumpStyleGap** <br/> |
-|3   <br/> |四角  <br/> |**visLOJumpStyleSquare** <br/> |
-|4   <br/> |三角形  <br/> |**visLOJumpStyleTriangle** <br/> |
-|5   <br/> |台形  <br/> |**visLOJumpStyle2Point** <br/> |
-|6   <br/> |4 辺  <br/> |**visLOJumpStyle3Point** <br/> |
-|7   <br/> |5 辺  <br/> |**visLOJumpStyle4Point** <br/> |
-|8   <br/> |6 辺  <br/> |**visLOJumpStyle5Point** <br/> |
-|9   <br/> |7 辺  <br/> |**visLOJumpStyle6Point** <br/> |
+|0  <br/> |ページの既定値  <br/> |**visLOJumpStyleDefault** <br/> |
+|1  <br/> |Arc  <br/> |**visLOJumpStyleArc** <br/> |
+|2  <br/> |Gap  <br/> |**visLOJumpStyleGap** <br/> |
+|3  <br/> |四角  <br/> |**visLOJumpStyleSquare** <br/> |
+|4  <br/> |三角形  <br/> |**visLOJumpStyleTriangle** <br/> |
+|5  <br/> |台形  <br/> |**visLOJumpStyle2Point** <br/> |
+|6  <br/> |4 辺  <br/> |**visLOJumpStyle3Point** <br/> |
+|7  <br/> |5 辺  <br/> |**visLOJumpStyle4Point** <br/> |
+|8  <br/> |6 辺  <br/> |**visLOJumpStyle5Point** <br/> |
+|9  <br/> |7 辺  <br/> |**visLOJumpStyle6Point** <br/> |
    
 |||
 |:-----|:-----|
@@ -41,13 +41,13 @@ ms.locfileid: "33415993"
    
 ## <a name="remarks"></a>注釈
 
-このセルの値は、動的コネクタを選択し、[[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] で [**基本動作**] をクリックし、[**コネクタ**] タブをクリックして設定することもできます。 
+このセルの値を設定するには、動的コネクタを選択し、[開発] タブの [図形デザイン] グループ [](run-in-developer-mode-display-the-developer-tab.md)の [動作] をクリックし、[コネクタ] タブ **をクリック** します。  
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ConLineJumpStyle] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[conlinejumpstyle]  <br/> |
+|セル名:  <br/> |ConLineJumpStyle  <br/> |
    
 プログラムから、インデックスによって [ConLineJumpStyle] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

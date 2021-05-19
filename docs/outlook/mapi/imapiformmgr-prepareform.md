@@ -37,21 +37,21 @@ HRESULT PrepareForm(
 
 ## <a name="parameters"></a>パラメーター
 
- _uluiparam_
+ _ulUIParam_
   
-> 順番フォームのダウンロード中に表示される進行状況インジケーターの親ウィンドウへのハンドル。 _uluiparam_パラメーターは、 _ulflags_パラメーターで MAPI_DIALOG フラグが設定されていない場合は無視されます。 
+> [in]フォームのダウンロード中に表示される進行状況インジケーターの親ウィンドウへのハンドル。 _ulUIParam_ パラメーターは _、ulFlags_ パラメーター MAPI_DIALOGフラグが設定されていない限り、無視されます。 
     
  _ulFlags_
   
-> 順番フォームのダウンロード方法を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]フォームのダウンロード方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_DIALOG 
   
-> 状態を提供するユーザーインターフェイスを表示します。詳細については、ユーザーに確認します。 このフラグが設定されていない場合、ユーザーインターフェイスは表示されません。
+> ユーザー インターフェイスを表示して、状態を提供するか、ユーザーに詳細を求めるプロンプトを表示します。 このフラグが設定されていない場合、ユーザー インターフェイスは表示されません。
     
- _pfrmiinfo_
+ _pfrmiInfo_
   
-> 順番フォームをダウンロードするためのフォーム情報オブジェクトへのポインター。
+> [in]ダウンロードするフォームのフォーム情報オブジェクトへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -61,9 +61,9 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-フォームビューアーは、 **imapiformmgr::P repareform**メソッドを呼び出して、フォームを開いてフォームコンテナーからダウンロードします。 ほとんどのフォーム閲覧者は**PrepareForm**を呼び出す必要はありません。このため、必要に応じて、 [imapiformmgr:: CreateForm](imapiformmgr-createform.md)メソッドと[imapiformmgr:: loadform](imapiformmgr-loadform.md)メソッドが**PrepareForm**を呼び出します。 
+フォーム ビューアーは **IMAPIFormMgr::P repareForm** メソッドを呼び出して、開くフォーム コンテナーからフォームをダウンロードします。 [IMAPIFormMgr::CreateForm](imapiformmgr-createform.md)メソッドと [IMAPIFormMgr::LoadForm](imapiformmgr-loadform.md)メソッドの両方が必要に応じて **PrepareForm** を呼び出すので、ほとんどのフォーム ビューアーは **PrepareForm** を呼び出す必要はありません。 
   
-**PrepareForm**を使用して、ダイナミックリンクライブラリ (dll) およびフォームに関連付けられているその他のファイルを取得して、それらを変更できます。 変更されたフォームがフォームコンテナーに再び読み込まれる場合は、再インストールする必要があります。 
+**PrepareForm を使用して**、フォームに関連付けられた動的リンク ライブラリ (DLL) および他のファイルを取得して、それらを変更できます。 変更されたフォームがフォーム コンテナーに読み込まれた場合は、再インストールする必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

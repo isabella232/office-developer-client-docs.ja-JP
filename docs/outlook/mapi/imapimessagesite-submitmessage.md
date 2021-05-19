@@ -25,7 +25,7 @@ ms.locfileid: "33417029"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-現在のメッセージが配信のためにキューに入れられるように要求します。
+現在のメッセージを配信キューに入れろという要求。
   
 ```cpp
 HRESULT SubmitMessage(
@@ -37,11 +37,11 @@ HRESULT SubmitMessage(
 
  _ulFlags_
   
-> 順番メッセージの送信方法を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]メッセージの送信方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 FORCE_SUBMIT 
   
-> MAPI は、メッセージがすぐに送信されない可能性がある場合でも、メッセージを送信する必要があります。
+> MAPI は、すぐに送信されない可能性がある場合でも、メッセージを送信する必要があります。
     
 ## <a name="return-value"></a>戻り値
 
@@ -51,9 +51,9 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-Form オブジェクトは**IMAPIMessageSite:: submitmessage**メソッドを呼び出して、メッセージが配信のためにキューに入れられるよう要求します。 メッセージサイトは、メッセージを送信する前に、 [IPersistMessage::](ipersistmessage-handsoffmessage.md)配布用のメッセージメソッドを呼び出す必要があります。 メッセージが変更された場合、 **submitmessage**によってメッセージが保存されるため、メッセージを以前に保存しておく必要はありません。 **submitmessage**を戻すと、フォームは現在のメッセージを確認し、存在しない場合は自分自身を破棄する必要があります。 
+フォーム オブジェクトは **IMAPIMessageSite::SubmitMessage** メソッドを呼び出して、メッセージの配信キューに入れられます。 メッセージ サイトは、メッセージを送信する前に [IPersistMessage::HandsOffMessage](ipersistmessage-handsoffmessage.md) メソッドを呼び出す必要があります。 メッセージが変更された場合 **、SubmitMessage** によってメッセージが保存される必要があるため、メッセージを以前に保存する必要はなされません。 SubmitMessage が返 **された後**、フォームは現在のメッセージをチェックし、存在しない場合は自分自身を閉じなければならない。 
   
-フォームサーバーに関連するインターフェイスの一覧については、「 [MAPI フォームインターフェイス](mapi-form-interfaces.md)」を参照してください。
+フォーム サーバーに関連するインターフェイスの一覧については [、「MAPI フォーム インターフェイス」を参照してください](mapi-form-interfaces.md)。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -61,7 +61,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer  <br/> |cmymapiformviewer:: submitmessage  <br/> |mfcmapi は、 **IMAPIMessageSite:: submitmessage**メソッドを使用して、メッセージを保存します。 最初に、 **IPersistMessage:: handsoffmessage**メソッドを呼び出して、 **submitmessage**を呼び出します。  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::SubmitMessage  <br/> |MFCMAPI は **IMAPIMessageSite::SubmitMessage** メソッドを使用してメッセージを保存します。 まず **、IPersistMessage::HandsOffMessage** メソッドを呼び出し、次に **SubmitMessage を呼び出します**。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -74,5 +74,5 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォームインターフェイス](mapi-form-interfaces.md)
+[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
 

@@ -25,13 +25,13 @@ ms.locfileid: "33416903"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-1つのプロパティ値のサイズを返します。 
+1 つのプロパティ値のサイズを返します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 ULONG UlPropSize(
@@ -41,9 +41,9 @@ ULONG UlPropSize(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpspropvalue_
+ _lpSPropValue_
   
-> 順番測定するプロパティを定義する[spropvalue](spropvalue.md)構造体へのポインター。 
+> [in]測定するプロパティを定義する [SPropValue](spropvalue.md) 構造体へのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -53,10 +53,10 @@ S_OK
     
 MAPI_E_CALL_FAILED 
   
-> 予期しないまたは不明な配信元のエラーにより、操作が完了しませんでした。
+> 予期しない、または不明な発生源のエラーにより、操作が完了しなかっていません。
     
 ## <a name="remarks"></a>注釈
 
-**ulpropsize**関数は、指定されたプロパティのプロパティ値のサイズをバイト単位で返します。 **spropvalue**構造の残りの部分のサイズは無視されます。 
+**UlPropSize** 関数は、指定したプロパティのプロパティ値のサイズをバイト単位で返します。 SPropValue 構造体の残りのサイズ **は無視** されます。 
   
 

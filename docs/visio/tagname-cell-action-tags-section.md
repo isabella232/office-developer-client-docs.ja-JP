@@ -25,20 +25,20 @@ ms.locfileid: "33417911"
   
 ## <a name="remarks"></a>注釈
 
- [Action Tags] セクションの [TagName] セルは、[Actions] セクションの [TagName] セルと一緒に、アクション タグとそのアクションを関連付ける働きをします。 [Actions] セクションの行には、[tagname] セルがあり、このセルと同じ tagname セル値が指定されている行には、このアクションタグに対して実行するアクションが定義されています。 
+ [Action Tags] セクションの [TagName] セルは、[Actions] セクションの [TagName] セルと一緒に、アクション タグとそのアクションを関連付ける働きをします。 [アクション] セクションの行には [TagName] セルも含まれます。また、このセルと同じ TagName セル値を持つ行は、このアクション タグに対して実行するアクションを定義します。 
   
 別の数式から、または **CellsU** プロパティを使用してプログラムから、名前によって [TagName] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | タグ.  *名前*です。TagName。 SmartTags *name*は、アクションタグ行の名前です。  <br/> |
+| セル名:  <br/> | SmartTags。  *name*  .SmartTags の TagName。 *name*  はアクション タグ行の名前です。  <br/> |
    
 プログラムから、インデックスによって [TagName] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionSmartTag** <br/> |
-| 行インデックス:  <br/> |**visRowSmartTag** +  *i* = ** 0、1、2...  <br/> |
+| 行インデックス:  <br/> |**visRowSmartTag**  +  *i* *=* 0, 1, 2...  <br/> |
 | セル インデックス:  <br/> |**visSmartTagName** <br/> |
    
 

@@ -7,7 +7,7 @@ keywords:
 - infopath 2003 互換のフォーム テンプレート,フォーム テンプレート [InfoPath 2007], 作成する,InfoPath 2003 互換,InfoPath 2007,InfoPath 2003 互換のフォーム テンプレートを作成する
 localization_priority: Normal
 ms.assetid: c746aeb1-902c-440e-830b-5b9efad0ca04
-description: このトピックの手順では、InfoPath 2003 互換オブジェクト モデルを操作するフォーム テンプレートの作成方法を説明します。
+description: このトピックの手順で、InfoPath 2003 と互換性のあるオブジェクト モデルで動作するフォーム テンプレートを作成する方法について説明します。
 ms.openlocfilehash: 35a9fcfbb0d93a19e013bde6980bc94af3bb5dd9
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT

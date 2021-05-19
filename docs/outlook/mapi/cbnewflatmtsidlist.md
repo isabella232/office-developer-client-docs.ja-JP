@@ -25,11 +25,11 @@ ms.locfileid: "33416679"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定したサイズの複数の[MTSID](mtsid.md)構造を含む新しい[FLATMTSIDLIST](flatmtsidlist.md)構造に割り当てる必要があるバイト数を計算します。 
+指定したサイズのいくつかの[MTSID](mtsid.md)構造体を含む新しい[FLATMTSIDLIST](flatmtsidlist.md)構造体に割り当てるバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |**FLATMTSIDLIST** <br/> |
    
 ```cpp
@@ -38,9 +38,9 @@ CbNewFLATMTSIDIDLIST (_cb)
 
 ## <a name="parameters"></a>パラメーター
 
- __cb_
+ _ _cb_
   
-> 新しい**FLATMTSIDLIST**構造に含める、 **MTSID**構造体のバイト数。 
+> 新しい **FLATMTSIDLIST** 構造体に含める **MTSID** 構造体のバイト数。 
     
 ## <a name="see-also"></a>関連項目
 

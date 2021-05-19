@@ -21,34 +21,34 @@ ms.locfileid: "32339698"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ送信時に添付ファイルの処理をカスタマイズするには、次のようにします。
+メッセージを送信するときに添付ファイル処理をカスタマイズするには、次の方法を実行します。
   
-1. **IStream**インターフェイスとメッセージを[OpenTnefStreamEx](opentnefstreamex.md)関数に渡すことによって、TNEF オブジェクトを取得します。 
+1. **IStream** インターフェイスとメッセージを [OpenTnefStreamEx](opentnefstreamex.md)関数に渡して TNEF オブジェクトを取得します。 
     
-2. [imapiprop:: getproplist](imapiprop-getproplist.md)メソッドを呼び出して、メッセージに対して定義されているすべてのプロパティの一覧を取得します。 
+2. [IMAPIProp::GetPropList](imapiprop-getproplist.md)メソッドを呼び出して、メッセージのすべての定義済みプロパティの一覧を取得します。 
     
-3. メッセージシステムでサポートされているすべてのプロパティを除外するには、 [imapiprop](imapipropiunknown.md)メソッドを使用します。 適切なタイミングで、メッセージングシステムが必要とする形式でメッセージングシステムにこれらのプロパティを書き込みます。 
+3. [IMAPIProp メソッドを](imapipropiunknown.md)使用して、メッセージング システムでサポートされているすべてのプロパティを除外します。 適切な時点で、メッセージング システムに必要な形式でこれらのプロパティをメッセージング システムに書き込む。 
     
-4. [ITnef:: addprops](itnef-addprops.md)メソッドを呼び出して、TNEF_PROP_MESSAGE_ONLY フラグを設定することによって、添付ファイルのすべてのプロパティではなく、メッセージにプロパティのみを追加します。 
+4. [ITnef::AddProps](itnef-addprops.md)メソッドを呼び出して、TNEF_PROP_MESSAGE_ONLY フラグを設定して、メッセージのプロパティのみを追加します。つまり、添付ファイルのプロパティはTNEF_PROP_MESSAGE_ONLYします。 
     
-5. 次の項目を使用して[ITnef:: addprops](itnef-addprops.md)を呼び出します。 TNEF_PROP_EXCLUDE フラグは、 **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) または**PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) を含むプロパティタグ配列です。プロパティ、および処理する添付ファイルを指定する添付ファイル識別子です。
+5. TNEF_PROP_EXCLUDE フラグ **、PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) または **PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) プロパティを含むプロパティ タグ配列、および処理する添付ファイルを指定する添付ファイル識別子を含む [ITnef::AddProps](itnef-addprops.md)を呼び出します。
     
-6. [ITnef:: setprops](itnef-setprops.md)メソッドを使用して、添付ファイルにファイル名が含まれている場合にメッセージングシステムへの添付ファイルを識別する一意の文字列を持つ**PR_ATTACH_TRANSPORT_NAME** ([PidTagAttachTransportName](pidtagattachtransportname-canonical-property.md)) プロパティタグを追加します。メッセージングシステムはサポートできません。 たとえば、同じ元のファイル名を持つ複数の添付ファイル、またはメッセージングシステムの有効なファイル名ではないファイル名。 この文字列は、タグ付きメッセージテキストに添付ファイルタグを書き込み、添付ファイルをそのデータに関連付けるときに、キー番号と共に使用されます。 詳細については、「 [TNEF のタグ付きメッセージテキスト](tnef-tagged-message-text.md)」を参照してください。
+6. [ITnef::SetProps](itnef-setprops.md)メソッドを使用して、メッセージング システムでサポートできないファイル名が添付ファイルにある場合に、メッセージング システムへの添付ファイルを識別する一意の文字列を持つ **PR_ATTACH_TRANSPORT_NAME** ([PidTagAttachTransportName](pidtagattachtransportname-canonical-property.md)) プロパティ タグを追加します。 たとえば、元のファイル名が同じ複数の添付ファイルや、メッセージング システムの有効なファイル名ではないファイル名などです。 この文字列は、タグ付きメッセージ テキストに添付ファイル タグを書き込み、添付ファイルをそのデータに関連付けるときにキー番号と一緒に使用されます。 詳細については [、「TNEF-Tagged Message Text」を参照してください](tnef-tagged-message-text.md)。
     
-7. 添付ファイルごとに**addprops**と**setprops**呼び出しを繰り返します。 
+7. 添付ファイル **ごとに AddProps** 呼び出し **と SetProps** 呼び出しを繰り返します。 
     
-8. 要求されたすべてのプロパティが追加された後に、メッセージを TNEF ストリームにエンコードするには、 [ITnef:: Finish](itnef-finish.md)メソッドを呼び出します。 
+8. 要求された [プロパティが追加された後、ITnef::Finish](itnef-finish.md) メソッドを呼び出して、メッセージを TNEF ストリームにエンコードします。 
     
-9. タグ付きメッセージテキストを取得するには、 [ITnef:: OpenTaggedBody](itnef-opentaggedbody.md)メソッドを呼び出します。 このタグ付きテキストは、メッセージシステムの添付モデルを使用してエンコードされた**IStream**インターフェイスからのメソッドを使用して読み取られ、メッセージングシステムに書き出されます。 
+9. [ITnef::OpenTaggedBody メソッドを呼び出して、タグ付きメッセージ テキストを取得](itnef-opentaggedbody.md)します。 このタグ付きテキストは **、IStream** インターフェイスのメソッドを使用して読み取り、メッセージング システムの添付ファイル モデルを使用してエンコードされ、メッセージング システムに書き込まれます。 
     
-10. [IUnknown:: release](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx)メソッドを呼び出して、 [ITnef](itnefiunknown.md)オブジェクトを解放します。 
+10. [IUnknown::Release メソッドを呼び](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx)出して[、ITnef オブジェクトを解放](itnefiunknown.md)します。 
     
-11. メッセージングシステムの添付モデルを使用して、残りの添付ファイルをメッセージングシステムに書き込みます。
+11. メッセージング システムの添付ファイル モデルを使用して、メッセージング システムに残りの添付ファイルを書き込む。
     
-トランスポートプロバイダーは、前述の手順を使用して添付ファイルを処理する必要があります。 これができない場合、トランスポートプロバイダーは、カスタマイズされた添付ファイル処理のために次の手順を使用する必要があります。
+トランスポート プロバイダーは、前述の手順を使用して添付ファイルを処理する必要があります。 これができない場合、トランスポート プロバイダーは、カスタマイズされた添付ファイル処理に次の手順を使用する必要があります。
   
-1. トランスポートプロバイダーによって、すべての添付ファイルの**PR_ATTACH_TRANSPORT_NAME**プロパティに、メッセージングシステムの有効な添付ファイル識別子である一意の値が含まれていることが確認されます。 
+1. トランスポート プロバイダーは、すべての添付ファイル **PR_ATTACH_TRANSPORT_NAMEのプロパティ** に、メッセージング システムの有効な添付ファイル識別子である一意の値が含まれる必要があります。 
     
-2. トランスポートプロバイダーは、各添付ファイルに対して**ITnef:: addprops**に対して単一の呼び出しを使用し、TNEF_PROP_CONTAINED フラグを渡します。 
+2. 次に、トランスポート プロバイダーは、各添付ファイルに対して **ITnef::AddProps** への 1 回の呼び出しをTNEF_PROP_CONTAINEDします。 
     
 

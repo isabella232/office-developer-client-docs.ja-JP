@@ -1,5 +1,5 @@
 ---
-title: imapifoldergetmessagestatus
+title: IMAPIFolderGetMessageStatus
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33418639"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-特定のフォルダー内のメッセージに関連付けられている状態を取得します (たとえば、そのメッセージに削除のマークが付いているかどうか)。
+特定のフォルダー内のメッセージに関連付けられている状態を取得します (たとえば、そのメッセージが削除のマークが付けられているかどうかなど)。
   
 ```cpp
 HRESULT GetMessageStatus(
@@ -40,23 +40,23 @@ HRESULT GetMessageStatus(
 
  _cbEntryID_
   
-> 順番_lな tryid_パラメーターで指定されたエントリ識別子のバイト数。 
+> [in]  _lpEntryID_ パラメーターが指すエントリ識別子のバイト数。 
     
- _lて tryid_
+ _lpEntryID_
   
-> 順番状態が取得されるメッセージのエントリ id へのポインター。
+> [in]状態が取得されたメッセージのエントリ識別子へのポインター。
     
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lアウト messagestatus_
+ _lpulMessageStatus_
   
-> 読み上げメッセージの状態を示すフラグのビットマスクへのポインターへのポインター。 ビット 0 ~ 15 は予約されており、0である必要があります。bits 16 ~ 31 は実装固有の用途に使用できます。 次のフラグを設定できます。
+> [out]メッセージの状態を示すフラグのビットマスクへのポインター。 ビット 0 ~ 15 は予約済みで、ゼロである必要があります。ビット 16 ~ 31 は、実装固有の使用に使用できます。 次のフラグを設定できます。
     
 MSGSTATUS_DELMARKED 
   
-> メッセージは削除対象としてマークされています。
+> メッセージが削除のマークが付いている。
     
 MSGSTATUS_HIDDEN 
   
@@ -64,19 +64,19 @@ MSGSTATUS_HIDDEN
     
 MSGSTATUS_HIGHLIGHTED 
   
-> メッセージは強調表示されます。
+> メッセージが強調表示されます。
     
 MSGSTATUS_REMOTE_DELETE 
   
-> メッセージがリモートメッセージストアで削除対象としてマークされ、ローカルクライアントにダウンロードされていません。
+> メッセージは、ローカル クライアントにダウンロードせずにリモート メッセージ ストアで削除のマークが付けされています。
     
 MSGSTATUS_REMOTE_DOWNLOAD 
   
-> メッセージは、リモートメッセージストアからローカルクライアントにダウンロードするようにマークされています。
+> メッセージは、リモート メッセージ ストアからローカル クライアントにダウンロードするマークが付けされています。
     
 MSGSTATUS_TAGGED 
   
-> メッセージには、クライアント定義の目的のタグが付けられています。
+> メッセージは、クライアント定義の目的でタグ付けされています。
     
 ## <a name="return-value"></a>戻り値
 
@@ -86,11 +86,11 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-**imapifolder:: getmessagestatus**メソッドは、メッセージの状態を返します。 メッセージの状態は、メッセージの**PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) プロパティに格納されます。 
+**IMAPIFolder::GetMessageStatus** メソッドは、メッセージの状態を返します。 メッセージの状態は、メッセージのプロパティ ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md) **)** PR_MSG_STATUSに格納されます。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-メッセージ状態のビットがどのように設定、クリア、使用されるかは、実装に完全に依存します。ただし、ビット 0 ~ 15 は予約されており、0である必要があります。 メッセージを ipm サブツリーに格納する場合、MAPI は、ipm クライアントによって使用されるビット 16 ~ 31 を予約します。 他のサブツリーにメッセージを格納する場合は、独自の用途にビット16から31を使用できます。
+メッセージの状態ビットの設定方法、クリア方法、および使用方法は、実装によって完全に異なりますが、ビット 0 ~ 15 は予約済みで、ゼロである必要があります。 IPM サブツリーにメッセージを格納する場合、MAPI は IPM クライアントで使用するためにビット 16 ~ 31 を予約します。 他のサブツリーにメッセージを格納する場合は、ビット 16 ~ 31 を独自の目的で使用できます。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -98,8 +98,8 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer  <br/> |cmymapiformviewer:: GetNextMessage  <br/> |mfcmapi は、 **imapifolder:: getmessagestatus**メソッドを使用して、次に表示されるメッセージの状態を取得します。  <br/> |
-|MAPIFormFunctions  <br/> |openmessagenonmodal および openmessagemodal  <br/> |mfcmapi は、 **imapifolder:: getmessagestatus**メソッドを使用して、フォームビューアーに渡すために表示されるメッセージの状態を取得します。これは、cmymapiformviewer または[imapifolder:: showform](imapisession-showform.md)のいずれかです。  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetNextMessage  <br/> |MFCMAPI は **IMAPIFolder::GetMessageStatus** メソッドを使用して、表示する次のメッセージの状態を取得します。  <br/> |
+|MAPIFormFunctions.cpp  <br/> |OpenMessageNonModal と OpenMessageModal  <br/> |MFCMAPI は **IMAPIFolder::GetMessageStatus** メソッドを使用して、表示するメッセージの状態を取得してフォーム ビューアーに渡します。これは CMyMAPIFormViewer または [IMAPISession::ShowForm](imapisession-showform.md)です。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

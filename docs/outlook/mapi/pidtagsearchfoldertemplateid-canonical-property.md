@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 56288f55-b3ba-42df-9c90-f9b5857f19a1
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: bee22a7a435b99f4b94473a3f6eb4b7f32517128
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,42 +25,42 @@ ms.locfileid: "32336625"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-検索に使用されているテンプレートの ID が含まれます。
+検索に使用されているテンプレートの ID を格納します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_WB_SF_TEMPLATE_ID  <br/> |
-|識別子:  <br/> |0x684 1  <br/> |
+|識別子:  <br/> |0x6841  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |検索  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-検索フォルダーの条件は、テンプレートによって指定されます。 検索フォルダーを定義するメッセージのこのプロパティは、対応するテンプレートを識別します。 検索条件を定義するだけでなく、テンプレートは検索から除外するフォルダーを定義し、検索から除外するアイテムを定義し、 **PR_WB_SF_STORAGE_TYPE** ([PidTagSearchFolderStorageType](pidtagsearchfolderstoragetype-canonical-property.md)) の値を指定します。
+検索フォルダーの条件は、テンプレートによって指定されます。 検索フォルダーを定義するメッセージのこのプロパティは、対応するテンプレートを識別します。 テンプレートは、検索条件の定義に加えて、検索から除外するフォルダーを定義し、検索から除外するアイテムを定義し **、PR_WB_SF_STORAGE_TYPE** ([PidTagSearchFolderStorageType)](pidtagsearchfolderstoragetype-canonical-property.md)の値を指定します。
   
-検索フォルダーテンプレートの詳細については[、[OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)を参照してください。 
+検索フォルダー テンプレートの詳細については [、「[MS-OXOSRCH] 」を参照してください](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx) 。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
+[[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
   
-> 検索フォルダーリストの構成を操作するためのプロパティと操作を指定します。
+> 検索フォルダー 一覧の構成を操作するためのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -70,7 +70,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -29,7 +29,7 @@ ms.locfileid: "33416973"
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
 |関連するマクロ:  <br/> |[CbMAPIFormInfoArray](cbmapiforminfoarray.md) <br/> |
    
 ```cpp
@@ -41,19 +41,19 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cforms**
+ **cForms**
   
-> **aforminfo**メンバーによって示される配列内のポインターの数。 
+> **aFormInfo** メンバーが指す配列内のポインターの数。 
     
- **aforminfo**
+ **aFormInfo**
   
 > フォーム情報オブジェクトへのポインターの配列へのポインター。
     
 ## <a name="remarks"></a>注釈
 
-**smapiforminfoarray**構造体は、次のメソッドのパラメーターとして渡されます。 
+**SMAPIFormInfoArray** 構造体は、次のメソッドでパラメーターとして渡されます。 
   
 - [IMAPIFormMgr::ResolveMultipleMessageClasses](imapiformmgr-resolvemultiplemessageclasses.md)
     

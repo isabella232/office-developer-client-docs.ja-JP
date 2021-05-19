@@ -1,5 +1,5 @@
 ---
-title: Outlook MAPI サンプルのダウンロード
+title: MAPI サンプルOutlookダウンロードする
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,25 +15,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32338361"
 ---
-# <a name="downloading-the-outlook-mapi-samples"></a>Outlook MAPI サンプルのダウンロード
+# <a name="downloading-the-outlook-mapi-samples"></a>MAPI サンプルOutlookダウンロードする
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Microsoft Outlook MAPI のサンプルには、アドレス帳プロバイダー、メッセージストアプロバイダー、トランスポートプロバイダーが含まれています。
+Microsoft の MAPI Outlookには、アドレス帳プロバイダー、メッセージ ストア プロバイダー、およびトランスポート プロバイダーが含まれます。
   
- **サンプルアドレス帳プロバイダーをダウンロードするには**
+ **サンプル アドレス帳プロバイダーをダウンロードするには**
   
-1. outlook mapi のサンプルをダウンロードするには、[ [outlook Messaging API (MAPI) のコードサンプル](https://ol2010mapisamples.codeplex.com/)] ページの [**ホーム**] タブをクリックします。 
+1. MAPI サンプルをOutlookするには、[メッセージング[API (MAPI)](https://ol2010mapisamples.codeplex.com/)コード サンプル] ページの [Outlook] タブをクリックします。  
     
-2. [**ホーム**] タブで、[ここをクリックして**Outlook 2010 MAPI サンプルのソースをダウンロード**します] をクリックします。
+2. [ホーム **] タブで****、[2010 MAPI サンプル**] のソースをダウンロードするにはOutlookクリックします。
     
-3. 使用許諾契約書を読み、同意する場合は [**同意**します] をクリックします。
+3. ライセンス契約を読み、同意する場合は [同意する] **をクリックします**。
     
-4. [**ファイルのダウンロード**] ダイアログボックスで、[**保存**] をクリックします。 [名前を付け**て保存**] ダイアログボックスで、ソースファイルを保存するフォルダーを見つけ、[**保存**] をクリックします。
+4. [ファイルの **ダウンロード] ダイアログ ボックス** で、[保存] を **クリックします**。 [名前を **付けて保存** ] ダイアログ ボックスで、ソース ファイルを保存するフォルダーを見つけて、[保存] を **クリックします**。
     
-5. [**ダウンロードの完了**] ダイアログボックスで、[**閉じる**] をクリックしてダイアログボックスを閉じます。 
+5. [ダウンロードの **完了] ダイアログ** ボックスで、[閉じる] **をクリックして** ダイアログ ボックスを閉じます。 
     
 ## <a name="see-also"></a>関連項目
 
@@ -41,7 +41,7 @@ Microsoft Outlook MAPI のサンプルには、アドレス帳プロバイダー
 
 [アドレス帳プロバイダーのサンプル](address-book-provider-sample.md)
   
-[メッセージストアプロバイダーのサンプル](message-store-provider-sample.md)
+[メッセージ ストア プロバイダーのサンプル](message-store-provider-sample.md)
   
-[トランスポートプロバイダーのサンプル](transport-provider-sample.md)
+[トランスポート プロバイダーのサンプル](transport-provider-sample.md)
 

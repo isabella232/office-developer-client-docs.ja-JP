@@ -19,7 +19,7 @@ ms.locfileid: "32339187"
  
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-移動されたアイテムをアップロードするための情報。 この情報は、削除の状態を[アップロード](upload-delete-status-state.md)し、[テーブルの状態](upload-table-state.md)をアップロードするときに使用されます。
+移動されたアイテムをアップロードする情報。 この情報は、アップロードの削除状態とアップロード[テーブルの状態](upload-delete-status-state.md)[の間に使用されます](upload-table-state.md)。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -43,21 +43,21 @@ struct UPMOV
 
 _ulFlags_
   
-> 順番アップロード中の適切な動作を決定するフラグ。
+> [in]アップロード中の適切な動作を決定するフラグ。
     
   - UPV_ERROR
     
-    - 順番サーバーフォルダーを開くときに問題が発生します。
+    - [in]サーバー フォルダーを開く際に問題が発生しました。
     
   - UPV_DIRTY
     
-    - 順番アップロード状態が変更されました。 これは、クライアントがローカルストアの状態の変更を追跡するために使用されます。
+    - [in]アップロードの状態が変更されました。 これは、クライアントがローカル ストアの状態の変更を追跡するために使用します。
     
   - UPV_COMMIT
     
-    - 順番アップロード状態をコミットします。
+    - [in]アップロード状態のコミット。
     
-_保持され_
+_pReserved_
   
 >  [out] このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
     
@@ -67,34 +67,34 @@ _pstmReserved_
     
 _pszName_
   
->  読み上げ宛先フォルダーの名前。 
+>  [out]移動先フォルダーの名前。 
     
   > [!NOTE]
-  > このメンバーは UNICODE をサポートしていません。 
+  > このメンバーは UNICODE をサポートしていない。 
   
 _feid_
   
->  読み上げ宛先フォルダーのエントリ ID。 
+>  [out]移動先フォルダーのエントリ ID。 
     
 _pfld_
   
->  順番サーバーフォルダーへのポインター。 
+>  [in]サーバー フォルダーへのポインター。 
     
 _pxicc_
   
->  順番増分変更の同期 (ICS) を使用した場合のコンテンツの変更のアップロードをサポートする、 **iexchangeimportcontents changes**コンテンツインターフェイスへのポインター。 **iexchangeimportの内容の変更**および ics の詳細については、「 [ics の評価基準](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)」を参照してください。
+>  [in]増分変更同期 (ICS) を使用する場合のコンテンツ変更のアップロードをサポートする **IExchangeImportContentsChanges** コンテンツ インターフェイスへのポインター。 **IExchangeImportContentsChanges** および ICS の詳細については [、「ICS 評価基準」を参照してください](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx)。
     
-_dwreserved_
+_dwReserved_
   
 >  [out] このメンバーは Outlook の内部使用のために予約されており、サポートされていません。 
     
 _pupmovNext_
   
->  読み上げ次の移動コンテキスト。 
+>  [out]次の移動コンテキスト。 
     
 _cEntMov_
   
->  順番ここで移動したアイテムの数。 
+>  [in]ここに移動したアイテムの数。 
     
 ## <a name="see-also"></a>関連項目
 

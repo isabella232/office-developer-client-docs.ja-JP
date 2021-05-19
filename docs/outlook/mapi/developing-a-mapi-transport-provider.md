@@ -1,5 +1,5 @@
 ---
-title: MAPI トランスポートプロバイダーの開発
+title: MAPI トランスポート プロバイダーの開発
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,12 +15,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33416910"
 ---
-# <a name="developing-a-mapi-transport-provider"></a>MAPI トランスポートプロバイダーの開発
+# <a name="developing-a-mapi-transport-provider"></a>MAPI トランスポート プロバイダーの開発
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-トランスポートプロバイダーを開発する前に、MAPI サブシステムのアーキテクチャ、C++ 言語、およびさまざまな Windows プラットフォーム用のダイナミックリンクライブラリ (dll) を作成する方法について理解しておく必要があります。
+トランスポート プロバイダーを開発する前に、MAPI サブシステム アーキテクチャ、C++ 言語、およびさまざまな Windows プラットフォーム用の動的リンク ライブラリ (DLL) の記述について理解している必要があります。
   
 

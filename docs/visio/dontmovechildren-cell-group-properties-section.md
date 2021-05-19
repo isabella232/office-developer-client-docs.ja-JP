@@ -35,7 +35,7 @@ Visio 2000 より前のバージョンの Visio で作成されたマスター �
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [dontmovechildren]  <br/> |
+| セル名 :  <br/> | DontMoveChildren  <br/> |
    
 プログラムから、インデックスによって [DontMoveChildren] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

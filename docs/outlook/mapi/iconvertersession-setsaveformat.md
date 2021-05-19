@@ -1,5 +1,5 @@
 ---
-title: iconvertersessionsetsaveformat
+title: IConverterSessionSetSaveFormat
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e5308a94-5191-2109-a881-b4f4a7ff1c61
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: b528d6ef45c02b27f8e07d151793fc338f9af7b1
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "32336639"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[iconvertersession:: MAPIToMIMEStm](iconvertersession-mapitomimestm.md)で、コンバータが MIME ストリームを返す形式を設定します。
+コンバーターが [IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md)で MIME ストリームを返す形式を設定します。
   
 ```cpp
 HRESULT IConverterSession::SetSaveFormat ( 
@@ -35,7 +35,7 @@ HRESULT IConverterSession::SetSaveFormat (
 
 _mstSaveFormat_
   
-> 順番MIME ストリームに使用される保存形式。 詳細については、「 [MIMESAVETYPE](https://msdn.microsoft.com/library/ms715128%28VS.85%29.aspx)」という列挙型を参照してください。
+> [in]MIME ストリームに使用する保存形式。 詳細については、列挙型 [MIMESAVETYPE を参照してください](https://msdn.microsoft.com/library/ms715128%28VS.85%29.aspx)。
     
   - **SAVE_RFC1521**: 既定の MIME を使用します。      
   - **SAVE_RFC822**: uuencode を使用します。
@@ -52,8 +52,8 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|mapimime .cpp  <br/> |ImportEMLToIMessage  <br/> |mfcmapi は MimeToMAPI を使用して、EML ファイルを MAPI メッセージに変換します。  <br/> |
-|mapimime .cpp  <br/> |ExportIMessageToEML  <br/> |mfcmapi は、MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。  <br/> |
+|MapiMime.cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI は MimeToMAPI を使用して EML ファイルを MAPI メッセージに変換します。  <br/> |
+|MapiMime.cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI は MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

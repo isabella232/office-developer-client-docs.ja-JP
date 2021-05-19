@@ -1,5 +1,5 @@
 ---
-title: Day 関数 (Access カスタム web アプリ)
+title: Day 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417470"
 ---
-# <a name="day-function-access-custom-web-app"></a>Day 関数 (Access カスタム web アプリ)
+# <a name="day-function-access-custom-web-app"></a>Day 関数 (Access カスタム Web アプリ)
 
 グレゴリオ暦で指定した日付のうち、日 (日にち) に相当する部分の整数を返します。
   
@@ -22,13 +22,13 @@ ms.locfileid: "33417470"
   
 ## <a name="syntax"></a>構文
 
-**日**(*Date*) 
+**Day** (*Date*) 
   
 **Day** 関数の引数は次のとおりです。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *Date*  <br/> |日付/時刻の値に解決可能な式。 *Date*引数 expression、column 式、ユーザー定義の変数または文字列リテラル。  <br/> |
+| *Date*  <br/> |日付/時刻の値に解決可能な式。 *Date 引数* 式、列式、ユーザー定義変数、または文字列リテラル。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

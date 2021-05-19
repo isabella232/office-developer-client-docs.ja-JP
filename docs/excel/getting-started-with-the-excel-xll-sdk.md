@@ -1,5 +1,5 @@
 ---
-title: Excel XLL SDK �̊T�v
+title: Excel XLL SDK の概要
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer

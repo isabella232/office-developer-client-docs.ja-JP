@@ -1,5 +1,5 @@
 ---
-title: ifoldersupportgetsupportmask
+title: IFolderSupportGetSupportMask
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -37,15 +37,15 @@ HRESULT GetSupportMask(
 
  _pdwSupportMask_
   
-> 読み上げフォルダーが共有をサポートしているかどうかを示すビットマスク。
+> [out]フォルダーが共有をサポートするかどうかを示すビットマスク。
     
  **FS_NONE**
   
-> フォルダーが共有をサポートしていないことを示します。
+> フォルダーが共有をサポートしていないかどうかを示します。
     
  **FS_SUPPORTS_SHARING**
   
-> フォルダーが共有をサポートしていることを示します。
+> フォルダーが共有をサポートしています。
     
 ## <a name="return-value"></a>戻り値
 

@@ -15,13 +15,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417204"
 ---
-# <a name="mscapselector"></a>MSCAP_SELECTOR
+# <a name="mscap_selector"></a>MSCAP_SELECTOR
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ストアに対して返す機能を指定します。
+ストアに返す機能を指定します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -40,22 +40,22 @@ typedef enum
 
  *MSCAP_SEL_RESERVED1* 
   
-> このメンバーは、Outlook の内部使用のために予約されており、サポートされていません。 
+> このメンバーは、ユーザーの内部使用Outlook予約され、サポートされていません。 
     
  *MSCAP_SEL_RESERVED2* 
   
-> このメンバーは、Outlook の内部使用のために予約されており、サポートされていません。 
+> このメンバーは、ユーザーの内部使用Outlook予約され、サポートされていません。 
     
  *MSCAP_SEL_FOLDER* 
   
-> ストア上のフォルダーのサポートに関する機能。
+> ストア上のサポート フォルダーに関する機能。
     
  *MSCAP_SEL_RESERVED3* 
   
-> このメンバーは、Outlook の内部使用のために予約されており、サポートされていません。 
+> このメンバーは、ユーザーの内部使用Outlook予約され、サポートされていません。 
     
  *MSCAP_SEL_RESTRICTION* 
   
-> ストアに対する制限のサポートに関する機能。
+> ストアの制限をサポートする機能。
     
 

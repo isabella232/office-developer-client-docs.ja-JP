@@ -14,26 +14,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33418898"
 ---
-# <a name="propacctdeliverystore"></a>PROP_ACCT_DELIVERY_STORE
+# <a name="prop_acct_delivery_store"></a>PROP_ACCT_DELIVERY_STORE
 
 アカウントの既定の配信ストアのエントリ ID を表します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IOlkAccount](iolkaccount.md)を参照してください。
+[「IOlkAccount」を参照してください](iolkaccount.md)。
   
 |||
 |:-----|:-----|
 |識別子:  <br/> |0x0018  <br/> |
 |プロパティの種類:  <br/> |PT_BINARY  <br/> |
-|プロパティタグ:  <br/> |0x00180102  <br/> |
-|接続  <br/> |読み取り/書き込み  <br/> |
+|プロパティ タグ:  <br/> |0x00180102  <br/> |
+|アクセス:  <br/> |読み取り/書き込み  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-[IOlkAccount:: getprop](iolkaccount-getprop.md)または[IOlkAccount:: setprop](iolkaccount-setprop.md)を使用して、このプロパティを取得または設定します。
+[IOlkAccount::GetProp](iolkaccount-getprop.md)または[IOlkAccount::SetProp](iolkaccount-setprop.md)をそれぞれ使用して、このプロパティを取得または設定します。
   
-アカウントの既定の配信ストアとしてストアを設定する場合の副次的な影響の1つは、outlook を起動したときに、そのストアの検索フォルダーがまだ存在しない場合はそのストアの検索フォルダーを作成し、そのストアを To do バーに表示することです。
+アカウントの既定の配信ストアとしてストアを設定する場合の副作用の 1 つは、Outlook を開始すると、Outlook が存在しない場合、そのストアの検索フォルダーを作成し、To-Do バーにストアを一覧表示する場合です。
   
 ## <a name="see-also"></a>関連項目
 

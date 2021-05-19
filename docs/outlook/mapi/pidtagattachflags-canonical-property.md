@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 47e01131-f399-43cb-9815-aba69638c3fb
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: efccd75cce04e4e392a7fbd9feecc7c8b49ab57e
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32339334"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-添付ファイルのフラグのビットマスクを含みます。 
+添付ファイルのフラグのビットマスクが含まれる。 
   
 |||
 |:-----|:-----|
@@ -34,39 +34,39 @@ ms.locfileid: "32339334"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このプロパティは、MHTML サポートに使用されます。 
+このプロパティは、MHTML のサポートに使用されます。 
   
-**PR_ATTACH_FLAGS**ビットマスクには、次の1つ以上のフラグを設定できます。 
+次のフラグの 1 つ以上を、ビットマスクに **PR_ATTACH_FLAGS** できます。 
   
 ATT_INVISIBLE_IN_HTML 
   
-> この添付ファイルは、HTML レンダリングアプリケーションでは使用できず、多目的インターネットメール Extensions (MIME) 処理で無視する必要があることを示します。 
+> この添付ファイルは HTML レンダリング アプリケーションでは使用できないので、多目的インターネット メール拡張機能 (MIME) 処理では無視する必要があります。 
     
 ATT_INVISIBLE_IN_RTF 
   
-> この添付ファイルは、リッチテキスト形式 (RTF) のアプリケーションでは使用できず、MAPI で無視する必要があることを示します。
+> リッチ テキスト形式 (RTF) でレンダリングするアプリケーションではこの添付ファイルを使用できないので、MAPI では無視する必要があります。
     
-**PR_ATTACH_FLAGS**プロパティが0に設定されているか、存在しない場合、添付ファイルはすべてのアプリケーションによって処理されます。 
+PR_ATTACH_FLAGS **プロパティが** 0 または不在の場合、添付ファイルは、すべてのアプリケーションによって処理されます。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルオブジェクトを処理します。
+> メッセージ オブジェクトと添付ファイル オブジェクトを処理します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -76,7 +76,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

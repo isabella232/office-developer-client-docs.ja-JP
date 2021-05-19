@@ -21,13 +21,13 @@ ms.locfileid: "33417645"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-この関数は使用しないでください。
+この関数は使用しません。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |abhelp .h  <br/> |
+|ヘッダー ファイル:  <br/> |abhelp.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 HRESULT HrOpenABEntryWithSupport(
@@ -43,48 +43,48 @@ HRESULT HrOpenABEntryWithSupport(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpsup_
+ _lpSup_
   
 > 
     
  _cbEntryID_
   
-> 順番_lな tryid_パラメーターで指定されたエントリ id のバイト数。 
+> [in]  _lpEntryID_ パラメーターで指定されたエントリ識別子のバイト 数。 
     
- _lて tryid_
+ _lpEntryID_
   
-> 順番開くアドレス帳のエントリを表すエントリ識別子へのポインター。
+> [in]開くアドレス帳エントリを表すエントリ識別子へのポインター。
     
- _lpinterface_
+ _lpInterface_
   
->  順番開いているエントリへのアクセスに使用するインターフェイスのインターフェイス識別子 (IID) へのポインター。 NULL を渡すと、オブジェクトの標準インターフェイスが返されます。 メッセージングユーザーの場合、標準インターフェイスは[imailuser: imapiprop](imailuserimapiprop.md)です。 配布リストの場合、 [idistlist: IMAPIContainer](idistlistimapicontainer.md)、およびコンテナーの場合は、 [IABContainer: IMAPIContainer](iabcontainerimapicontainer.md)になります。 呼び出し元は、 _lpinterface_を適切な標準インターフェイスまたは継承階層内のインターフェイスに設定できます。 
+>  [in]開いているエントリへのアクセスに使用するインターフェイスのインターフェイス識別子 (IID) へのポインター。 NULL を渡す場合は、オブジェクトの標準インターフェイスを返します。 メッセージング ユーザーの場合、標準インターフェイスは [IMailUser : IMAPIProp です](imailuserimapiprop.md)。 配布リストの場合 [、IDistList : IMAPIContainer](idistlistimapicontainer.md)であり、コンテナーの場合は [IABContainer : IMAPIContainer です](iabcontainerimapicontainer.md)。 呼び出し元は  _、lpInterface を_ 適切な標準インターフェイスまたは継承階層内のインターフェイスに設定できます。 
     
  _ulFlags_
   
-> 順番_lpszbuttontext_パラメーターのテキストの種類を制御するフラグのビットマスク。 次のフラグを設定できます。 
+> [in]  _lpszButtonText_ パラメーターのテキストの種類を制御するフラグのビットマスク。 次のフラグを設定できます。 
     
 AB_TELL_DETAILS_CHANGE
   
-> 住所に変更が実際に加えられた場合に、詳細が TRUE を返すことを示します。それ以外の場合、詳細は FALSE を返します。
+> アドレスに実際に変更が加えた場合、Details は TRUE を返します。それ以外の場合、Details は FALSE を返します。
     
 DIALOG_MODAL
   
-> [共通アドレス] ダイアログボックスのモーダルバージョンが表示されます。 このフラグは、DIALOG_SDI とは相互に排他的です。
+> [共通アドレス] ダイアログ ボックスのモーダル バージョンを表示します。 このフラグは、このフラグと相互にDIALOG_SDI。
     
 DIALOG_SDI
   
-> [共通アドレス] ダイアログボックスのモードレスバージョンが表示されます。 このフラグは、DIALOG_MODAL とは相互に排他的です。
+> [共通アドレス] ダイアログ ボックスのモードレス バージョンを表示します。 このフラグは、他のフラグと相互DIALOG_MODAL。
     
 MAPI_UNICODE
   
-> 渡された文字列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
+> 渡された文字列は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列は ANSI 形式になります。
     
- _lpulobjtype_
+ _lpulObjType_
   
-> 読み上げ開かれた項目の種類へのポインター。
+> [out]開いたエントリの種類へのポインター。
     
- _lppunk_
+ _lppUnk_
   
-> 読み上げ開かれたエントリのポインターへのポインター。
+> [out]開いたエントリのポインターへのポインター。
     
 

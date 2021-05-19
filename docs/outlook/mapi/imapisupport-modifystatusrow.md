@@ -1,5 +1,5 @@
 ---
-title: imapisupportmodifystatusrow
+title: IMAPISupportModifyStatusRow
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33417162"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-新しい行を追加するか、または既存の行を変更して、状態テーブルを変更します。
+新しい行を追加するか、既存の行を変更して、状態テーブルを変更します。
   
 ```cpp
 HRESULT ModifyStatusRow(
@@ -37,21 +37,21 @@ ULONG ulFlags
 
 ## <a name="parameters"></a>パラメーター
 
- _cvalues_
+ _cValues_
   
-> 順番新規または変更された状態テーブルの行に含まれるプロパティの数。 
+> [in]新しいまたは変更された状態テーブル行に含めるプロパティの数。 
     
- _lpcolumnvals_
+ _lpColumnVals_
   
-> 順番新規または変更された状態テーブルの行に列として含まれるプロパティを示すプロパティ値の配列へのポインター。
+> [in]新しいまたは変更された状態テーブル行に列として含めるプロパティを記述するプロパティ値の配列へのポインター。
     
  _ulFlags_
   
-> 順番状態テーブルの行を定義する情報を処理する方法を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]状態テーブル行を定義する情報の処理方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 STATUSROW_UPDATE 
   
-> _lpcolumnvals_で参照されている配列に含まれるプロパティを、新しい行ではなく既存の状態テーブルの行で結合するように MAPI に指示します。 
+> 新しい行ではなく  _、lpColumnVals_ が指す配列に含まれるプロパティを既存の状態テーブル行と結合する MAPI を指示します。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -61,15 +61,15 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-**imapisupport:: modifystatusrow**メソッドは、すべてのサービスプロバイダーサポートオブジェクトに実装されています。 サービスプロバイダーは、ログオン時に**modifystatusrow**を呼び出して、状態テーブルに行を追加します。また、その他の場合は、セッション中に行を更新します。 **modifystatusrow**は、状態テーブルを構築するために必要な情報を MAPI に提供します。 
+**IMAPISupport::ModifyStatusRow** メソッドは、すべてのサービス プロバイダー サポート オブジェクトに実装されます。 サービス プロバイダーは、 **ログオン時に ModifyStatusRow** を呼び出して、状態テーブルに行を追加し、セッション中に行を更新します。 **ModifyStatusRow は** 、状態テーブルの構築に必要な情報を MAPI に提供します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**modifystatusrow**を呼び出して、既存の [状態] テーブル行のプロパティを変更する場合は、STATUSROW_UPDATE フラグを設定します。 これにより、変更された列だけが_lpcolumnvals_パラメーターに渡されることが MAPI に通知されます。 
+**ModifyStatusRow** STATUSROW_UPDATEを呼び出して、既存の状態テーブル行のプロパティを変更するときに、このフラグを設定します。 これにより、変更される列だけが  _lpColumnVals_ パラメーターに渡されるという MAPI が通知されます。 
   
-クライアントは、状態の表の情報を使用して、状態オブジェクトにアクセスできます。 
+クライアントは、状態テーブルの情報を使用して、status オブジェクトにアクセスできます。 
   
-[状態テーブル] 行に含める必要のある列の完全な一覧については、「 [status Tables](status-tables.md)」を参照してください。
+状態テーブルの行に含める必要がある列の完全な一覧については、「Status [Tables」を参照してください](status-tables.md)。
   
 ## <a name="see-also"></a>関連項目
 

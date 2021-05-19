@@ -22,7 +22,7 @@ ms.locfileid: "33417582"
   
 ## <a name="syntax"></a>構文
 
-ユニケース har (* * *number* * *) 
+UNICHAR (** *number* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -36,8 +36,8 @@ ms.locfileid: "33417582"
   
 ## <a name="example"></a>例
 
-ユニケース har (65) 
+UNICHAR(65) 
   
-a (英大文字 a) を返します。 
+A (ラテン大文字 A) を返します。 
   
 

@@ -1,5 +1,5 @@
 ---
-title: timefromparts 関数 (Access カスタム web アプリ)
+title: TimeFromParts 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417995"
 ---
-# <a name="timefromparts-function-access-custom-web-app"></a>timefromparts 関数 (Access カスタム web アプリ)
+# <a name="timefromparts-function-access-custom-web-app"></a>TimeFromParts 関数 (Access カスタム Web アプリ)
 
 指定された部分に基づいて時刻値を返します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "33417995"
   
 ## <a name="syntax"></a>構文
 
- **TimeFromParts** (Hour**, Minute**, Second**) 
+ **TimeFromParts** (Hour **, Minute **, Second **) 
   
 **TimeFromParts** 関数の引数は次のとおりです。 
   

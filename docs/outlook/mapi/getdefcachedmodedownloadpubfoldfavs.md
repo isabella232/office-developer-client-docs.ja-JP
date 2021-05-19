@@ -21,13 +21,13 @@ ms.locfileid: "33417708"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**パブリックフォルダー Favorites**フォルダーの Exchange キャッシュモードを有効にするかどうか、およびポリシーによってこれを強制するかどうかを示します。 
+パブリック フォルダーのお気に入りフォルダーのExchange キャッシュ モードを有効にするかどうか、およびこれがポリシーによって適用されるかどうかを示します。 
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|エクスポート対象:  <br/> |msmapi32  <br/> |
+|次の方法でエクスポートされます。  <br/> |msmapi32.dll  <br/> |
 |呼び出し元:  <br/> |クライアント  <br/> |
 |実装元:  <br/> |Outlook  <br/> |
    
@@ -38,19 +38,19 @@ BOOL GetDefCachedModeDownloadPubFoldFavs(BOOL *pfPolicy);
 
 ## <a name="parameters"></a>パラメーター
 
- _pfpolicy_
+ _pfPolicy_
   
-> 読み上げ戻り値がポリシーによって適用される場合は**true** 、それ以外の場合は**false** 。 
+> [out] **戻** り値がポリシーによって適用される場合は **true、適用** されていない場合は false。 
     
 ## <a name="return-values"></a>戻り値
 
- **false**
+ **true**
   
-- キャッシュが有効になります。
+- キャッシュが有効です。
     
  **false**
   
-- キャッシュが無効になります。
+- キャッシュは無効です。
     
 ## <a name="see-also"></a>関連項目
 

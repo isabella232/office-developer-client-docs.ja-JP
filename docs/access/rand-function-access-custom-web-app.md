@@ -1,5 +1,5 @@
 ---
-title: Rand 関数 (Access カスタム web アプリ)
+title: Rand 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33416609"
 ---
-# <a name="rand-function-access-custom-web-app"></a>Rand 関数 (Access カスタム web アプリ)
+# <a name="rand-function-access-custom-web-app"></a>Rand 関数 (Access カスタム Web アプリ)
 
 0 ～ 1 の擬似ランダム数を返します。
   
@@ -29,7 +29,7 @@ ms.locfileid: "33416609"
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *Seed*  <br/> |シード値を提供する整数式。 *seed*が指定されていない場合は、シード値がランダムに割り当てられます。  <br/> |
+| *Seed*  <br/> |シード値を提供する整数式。 *Seed を* 指定しない場合、シード値はランダムに割り当てられます。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

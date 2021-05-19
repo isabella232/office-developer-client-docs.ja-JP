@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8668ba4f-3236-4a87-a5aa-9cf7eea3d87b
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: de957c33165cc96eec82bf95c8f292c5b323676a
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32331144"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージに関するレポートで使用する、元のメッセージの件名を含みます。
+メッセージに関するレポートで使用する元のメッセージの件名を格納します。
   
 |||
 |:-----|:-----|
@@ -34,37 +34,37 @@ ms.locfileid: "32331144"
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |一般的なメッセージング  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-これらのプロパティは、最初は**PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) プロパティと同じ値に設定されています。
+これらのプロパティは、元のプロパティ ([PidTagSubject](pidtagsubject-canonical-property.md) **)** プロパティPR_SUBJECT同じ値に設定されています。
   
-件名のプロパティは通常、256文字未満の小さな文字列で、メッセージストアプロバイダーは、オブジェクトのリンクと埋め込み (OLE) **IStream**インターフェイスをサポートする義務を持ちません。 クライアントは、常に**imapiprop**インターフェイスを使用してアクセスを試行し、 **MAPI_E_NOT_ENOUGH_MEMORY**が返された場合にのみ**IStream**に頼る必要があります。 
+件名プロパティは、通常、256 文字未満の小さな文字列であり、メッセージ ストア プロバイダーは、オブジェクト リンクおよび埋め込み (OLE) **IStream** インターフェイスをサポートする義務はありません。 クライアントは、必ず最初に **IMAPIProp** インターフェイスを介してアクセスを試行し、IStream にアクセスMAPI_E_NOT_ENOUGH_MEMORY必要があります。   
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[MS-OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
-> サーバーとクライアントの間でメッセージオブジェクトデータの同期を処理します。
+> サーバーとクライアント間のメッセージング オブジェクト データの同期を処理します。
     
-[[OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
-> 電子メールメッセージオブジェクトで許容されるプロパティと操作を指定します。
+> 電子メール メッセージ オブジェクトで許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -74,7 +74,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

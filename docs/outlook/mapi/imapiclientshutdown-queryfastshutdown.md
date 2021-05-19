@@ -25,7 +25,7 @@ ms.locfileid: "33418149"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-読み込み済みの mapi プロバイダーによって提供される高速シャットダウンのサポートを mapi サブシステムに対して照会します。
+読み込まれた MAPI プロバイダーによって提供される高速シャットダウンのサポートを MAPI サブシステムに照会します。
   
 ```cpp
 HRESULT QueryFastShutdown ();
@@ -35,15 +35,15 @@ HRESULT QueryFastShutdown ();
 
 S_OK
   
-> mapi サブシステムは、高速シャットダウンを実行するための mapi クライアントをサポートします。
+> MAPI サブシステムは、高速シャットダウンを実行する MAPI クライアントをサポートします。
     
 MAPI_E_NO_SUPPORT
   
-> mapi プロバイダーは、高速シャットダウンを実行するための mapi クライアントをサポートしていません。
+> MAPI プロバイダーは、高速シャットダウンを実行する MAPI クライアントをサポートしていない。
     
 ## <a name="remarks"></a>注釈
 
-mapi サブシステムで高速シャットダウンを実行するための mapi クライアントがサポートされているかどうかは、ユーザーの Windows レジストリ設定または mapi クライアントの高速シャットダウンの既定の動作によって異なります。 また、読み込み済みの MAPI プロバイダーが高速シャットダウンをサポートする機能によっても異なります。 詳細については、「 [Fast Shutdown User Options](fast-shutdown-user-options.md)」を参照してください。
+MAPI サブシステムが高速シャットダウンを実行するために MAPI クライアントをサポートするかどうかは、ユーザーの Windows レジストリ設定または高速シャットダウン用の MAPI クライアントの既定の動作によって異なります。 また、読み込まれた MAPI プロバイダーが高速シャットダウンをサポートする機能にも依存します。 詳細については、「Fast [Shutdown User Options」を参照してください](fast-shutdown-user-options.md)。
   
 ## <a name="see-also"></a>関連項目
 

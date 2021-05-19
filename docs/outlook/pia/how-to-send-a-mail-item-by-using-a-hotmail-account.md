@@ -27,7 +27,7 @@ ms.locfileid: "32331165"
 
 次のコード例では、旅程表が添付されたメッセージを作成してから、Windows Live Hotmail アカウントを使用して送信します。 この Hotmail 電子メール アカウントは、ユーザーのプロファイルに含まれる **Account** オブジェクトとして使用されます。 その後、SendUsingAccount プロパティをそのアカウントに設定して、[MailItem](https://msdn.microsoft.com/library/bb643865\(v=office.15\)) オブジェクトの [Send()](https://msdn.microsoft.com/library/bb644139\(v=office.15\)) メソッドを呼び出します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

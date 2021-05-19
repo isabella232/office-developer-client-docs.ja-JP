@@ -1,5 +1,5 @@
 ---
-title: 'title: "DLL �܂��� XLL �t�@�C���̒�����_�C�A���O �{�b�N�X��\������" ms.author: mroberts author: mroberts manager: soliver ms.date: 11/16/2014 ms.audience: Developer ms.topic: overview keywords:'
+title: DLL または XLL ファイルの中からダイアログ ボックスを表示する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer

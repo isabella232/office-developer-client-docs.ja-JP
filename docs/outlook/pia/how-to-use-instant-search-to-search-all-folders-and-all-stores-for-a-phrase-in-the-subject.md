@@ -55,7 +55,7 @@ ms.locfileid: "32335372"
 
 次のコード例では、DemoInstantSearch は、[Store](https://msdn.microsoft.com/library/bb609139\(v=office.15\)) オブジェクトの [IsInstantSearchEnabled](https://msdn.microsoft.com/library/bb609793\(v=office.15\)) プロパティを使用してインデックス作成が有効化されているすべてのストア内にあるメール フォルダーをすべて取得します。 その後で、**Explorer** オブジェクトの **Search** メソッドを使用して、件名内に "Office 2007" と完全一致する語句が含まれている、先月受信したアイテムのすべてを抽出します。 検索の結果は、最終的に別のエクスプローラー ウィンドウに表示されます。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

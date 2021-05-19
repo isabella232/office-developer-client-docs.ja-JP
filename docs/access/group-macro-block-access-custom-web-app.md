@@ -1,5 +1,5 @@
 ---
-title: Group マクロブロック (Access カスタム web アプリ)
+title: グループ マクロ ブロック (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33418779"
 ---
-# <a name="group-macro-block-access-custom-web-app"></a>Group マクロブロック (Access カスタム web アプリ)
+# <a name="group-macro-block-access-custom-web-app"></a>グループ マクロ ブロック (Access カスタム Web アプリ)
 
 **Group** ステートメントでは、マクロ内で展開または折りたたみできるアクションのブロックを指定できます。 
   

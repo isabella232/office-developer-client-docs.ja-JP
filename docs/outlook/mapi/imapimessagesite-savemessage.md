@@ -25,7 +25,7 @@ ms.locfileid: "33417106"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-現在のメッセージを保存するよう要求します。
+現在のメッセージを保存する要求。
   
 ```cpp
 HRESULT SaveMessage( void );
@@ -43,9 +43,9 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-フォームは**IMAPIMessageSite:: SaveMessage**メソッドを呼び出して、メッセージの保存を要求します。 
+フォームは **IMAPIMessageSite::SaveMessage** メソッドを呼び出して、メッセージの保存を要求します。 
   
-フォームサーバーに関連するインターフェイスの一覧については、「 [MAPI フォームインターフェイス](mapi-form-interfaces.md)」を参照してください。
+フォーム サーバーに関連するインターフェイスの一覧については [、「MAPI フォーム インターフェイス」を参照してください](mapi-form-interfaces.md)。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -53,7 +53,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer  <br/> |cmymapiformviewer:: SaveMessage  <br/> |mfcmapi は、 **IMAPIMessageSite:: SaveMessage**メソッドを使用してメッセージを保存します。  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::SaveMessage  <br/> |MFCMAPI は **IMAPIMessageSite::SaveMessage** メソッドを使用してメッセージを保存します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -64,5 +64,5 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォームインターフェイス](mapi-form-interfaces.md)
+[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
 

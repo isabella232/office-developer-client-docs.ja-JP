@@ -25,7 +25,7 @@ ms.locfileid: "33418177"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI テーブルオブジェクトを更新します。
+MAPI テーブル オブジェクトを更新します。
   
 ```cpp
 HRESULT ModifyTable( 
@@ -39,11 +39,11 @@ HRESULT ModifyTable(
 
  _ulFlags_
   
-> 順番次のいずれかの値を使用します。 
+> [in]次のいずれかの値を使用します。 
     
 0 (ゼロ)
   
-> [rowentry](rowentry.md)構造の**ulrowflags**メンバーの値を使用します。 
+> ROWENTRY 構造体の **ulRowFlags** メンバー [の値を使用](rowentry.md) します。 
     
 ACLTABLE_FREEBUSY
   
@@ -51,19 +51,19 @@ ACLTABLE_FREEBUSY
     
 frightsFreeBusyDetailed
   
-> ACLTABLE_FREEBUSY が渡されると、新しい空き時間情報の詳細が表示されます。
+> このACLTABLE_FREEBUSY、新しい空き時間情報の権限の詳細な表示を提供します。
     
 frightsFreeBusySimple
   
-> ACLTABLE_FREEBUSY が渡されると、新しい空き時間情報が簡単に表示されます。
+> このACLTABLE_FREEBUSY、新しい空き時間情報の権限を簡単に表示します。
     
 ROWLIST_REPLACE
   
-> 表のすべての行を置き換えます。
+> テーブル内のすべての行を置き換える。
     
  _lpMods_
   
-> 順番table オブジェクトのプロパティを含む[rowlist](rowlist.md)構造体を指します。 
+> [in]テーブル オブジェクトのプロパティを含む [ROWLIST](rowlist.md) 構造体をポイントします。 
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -71,7 +71,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ルール  <br/> |crulesdlg:: OnModifySelectedItem  <br/> |mfcmapi は、 **IExchangeModifyTable:: modifytable**メソッドを使用して、変更されたルールをルールのテーブルに書き戻します。  <br/> |
+|RulesDlg.cpp  <br/> |CRulesDlg::OnModifySelectedItem  <br/> |MFCMAPI は **、IExchangeModifyTable::ModifyTable** メソッドを使用して、変更されたルールをルールのテーブルに書き戻します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

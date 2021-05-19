@@ -23,11 +23,11 @@ ms.locfileid: "33416266"
  
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-コンボボックスコントロールを記述するための[dtblcombobox](dtblcombobox.md)構造体と、関連する編集コントロールに入力できる最大文字数を含む名前付き構造を作成します。 
+コンボ ボックス コントロールを記述するための [DTBLCOMBOBOX](dtblcombobox.md) 構造と、関連付けられた編集コントロールに入力できる最大文字数を含む名前付き構造を作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |**DTBLCOMBOBOX** <br/> |
    
 ```cpp
@@ -38,15 +38,15 @@ SizedDtblComboBox (n, u)
 
 _n_
   
-> コンボボックスの [編集] コントロールに入力できる文字数を指定します。 
+> コンボ ボックスの編集コントロールに入力できる文字数。 
     
 _u_
   
-> 新しい構造の名前を指定します。
+> 新しい構造の名前。
     
 ## <a name="remarks"></a>注釈
 
-**sizeddtblcombobox**マクロを使用すると、有効な文字列の長さが既知の場合にコンボボックスを定義できます。 次のメンバーで新しい構造が作成されます。 
+**SizedDtblComboBox** マクロを使用すると、有効な文字列の長さが分かっているときにコンボ ボックスを定義できます。 新しい構造は、次のメンバーで作成されます。 
   
 ```cpp
 DTBLCOMBOBOX dtblcombobox;
@@ -54,7 +54,7 @@ TCHAR lpszCharsAllowed[n];
 
 ```
 
-**sizeddtblcombobox**マクロの結果として得られる構造体へのポインターを**dtblcombobox**構造体のポインターとして使用するには、次のキャストを実行します。 
+**SizedDtblComboBox** マクロから生成される構造体へのポインターを **DTBLCOMBOBOX** 構造体ポインターとして使用するには、次のキャストを実行します。 
   
 ```cpp
 lpDtblComboBox = (LPDTBLCOMBOBOX) &SizedDtblComboBox;

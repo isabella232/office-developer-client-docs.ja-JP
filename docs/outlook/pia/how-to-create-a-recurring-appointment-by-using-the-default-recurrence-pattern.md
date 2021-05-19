@@ -34,7 +34,7 @@ Outlook で予定を作成するときには、[AppointmentItem](https://msdn.mi
 
 次の例の CreateRecurringAppointment では、**AppointmentItem** オブジェクトを作成します。 その後で、GetRecurrencePattern を呼び出します。 GetRecurrencePattern から RecurrencePattern オブジェクトが返され、AppointmentItem オブジェクトが保存されます。 これにより、既定の定期的なパターンを使用する定期的な予定が作成されます。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

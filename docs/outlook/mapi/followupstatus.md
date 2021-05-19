@@ -36,21 +36,21 @@ enum FollowUpStatus {
 
 ## <a name="members"></a>メンバー
 
- _flwupnone_
+ _flwupNone_
   
-> フォローアップは指定されていません。
+> フォローアップが指定されていません。
     
- _flwupcomplete_
+ _flwupComplete_
   
-> メッセージが完成しました。
+> メッセージが完了しました。
     
- _flwupmarked_
+ _flwupMarked_
   
-> メッセージには、フォローアップのマークが付けられます。
+> メッセージにはフォローアップのマークが付きます。
     
- _flwupmax_
+ _flwupMAX_
   
-> フォローアップに対してサポートされているさまざまな状態の数。
+> フォローアップでサポートされるさまざまな状態の数。
     
 ## <a name="see-also"></a>関連項目
 

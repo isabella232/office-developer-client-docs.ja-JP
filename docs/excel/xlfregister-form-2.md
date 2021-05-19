@@ -1,5 +1,5 @@
 ---
-title: xlfRegister (�`�� 2)
+title: xlfRegister (形式 2)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -44,7 +44,7 @@ Excel12(xlfRegister, LPXLOPER12 pxRes, 1, LPXLOPER12 pxModuleText);
   
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
 
-成功すると、DLL 名 (**xltypeStr**) を返します。 それ以外の場合は、#VALUE!  エラーを返します。
+成功すると、DLL 名 (**xltypeStr**) を返します。それ以外の場合は、#VALUE! エラーを返します。
   
 ## <a name="see-also"></a>関連項目
 

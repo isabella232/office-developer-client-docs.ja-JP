@@ -21,7 +21,7 @@ ms.locfileid: "33418709"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-この構造体は、 [imapisync:: SynchronizeInBackground](imapisyncsynchronizeinbackground.md)で使用されます。
+この構造は [IMAPISync::SyncInBackground と一緒に使用されます](imapisyncsynchronizeinbackground.md)。
   
 ```cpp
 typedef struct _MAPISIB
@@ -34,37 +34,37 @@ HANDLE          *phSyncDoneEvent;
 } MAPISIB, *PMAPISIB
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **ulsize**
+ **ulSize**
   
 > 構造体のサイズ。
     
  **ulFlags**
   
-> 同期の種類を示すフラグ。次のいずれかの値であることが必要です。
+> 同期の種類を示すフラグ。これは、次のいずれかの値である必要があります。
     
 ||||
 |:-----|:-----|:-----|
-|SYNC_OUTGOING_MAIL  <br/> |0x00000200  <br/> |メッセージをサーバーに送信します (現在は使用されていません)。  <br/> |
-|SYNC_UPLOAD_HIERARCHY  <br/> |0x00000001  <br/> |サーバーに対して階層の変更を行います。  <br/> |
-|SYNC_DOWNLOAD_HIERARCHY  <br/> |0x00000002  <br/> |サーバーから階層の変更を取得します。  <br/> |
+|SYNC_OUTGOING_MAIL  <br/> |0x00000200  <br/> |(現在使用されていない) サーバーにメッセージを送信します。  <br/> |
+|SYNC_UPLOAD_HIERARCHY  <br/> |0x00000001  <br/> |階層の変更をサーバーにプッシュします。  <br/> |
+|SYNC_DOWNLOAD_HIERARCHY  <br/> |0x00000002  <br/> |階層の変更をサーバーからプルします。  <br/> |
 |SYNC_UPLOAD_CONTENTS  <br/> |0x00000040  <br/> |メッセージの変更をサーバーにプッシュします。  <br/> |
-|SYNC_DOWNLOAD_CONTENTS  <br/> |0x00000080  <br/> |サーバーからメッセージの変更を取得します。  <br/> |
-|SYNC_ON_DEMAND  <br/> |0x20000000  <br/> |同期はユーザーによって開始され、より高い優先度である必要があります。  <br/> |
-|SYNC_GLOBAL_HEADERS  <br/> |0x02000000  <br/> |完全な本文ではなく、ヘッダーのみを同期する必要があります。  <br/> |
+|SYNC_DOWNLOAD_CONTENTS  <br/> |0x00000080  <br/> |サーバーからメッセージの変更をプルします。  <br/> |
+|SYNC_ON_DEMAND  <br/> |0x20000000  <br/> |同期はユーザーによって開始され、優先度が高い必要があります。  <br/> |
+|SYNC_GLOBAL_HEADERS  <br/> |0x02000000  <br/> |ヘッダーのみを同期し、完全なボディを同期しない必要があります。  <br/> |
    
- **p' sync**
+ **psesSync**
   
-> 順番MAPI セッションへのポインター。
+> [IN]MAPI セッションへのポインター。
     
  **punkCallBack**
   
-> 順番進行状況を提供するインターフェイスへのポインター。 [IMAPISyncProgressCallback: IUnknown](imapisyncprogresscallbackiunknown.md)のインターフェイスを照会するために使用できます。
+> [IN]進行状況を提供するインターフェイスへのポインター。 [IMAPISyncProgressCallback : IUnknown のインターフェイスを照会するために使用できます](imapisyncprogresscallbackiunknown.md)。
     
- **\*phsyncdoneevent**
+ **\*phSyncDoneEvent**
   
-> 読み上げ作成されたスレッドが完了したときに発生するイベント。 このポインターは、イベントが含まれるため、有効である必要があります。
+> [OUT]作成されたスレッドが完了した場合に発生するイベント。 ポインターはイベントを含むので有効である必要があります。
     
 ## <a name="see-also"></a>関連項目
 

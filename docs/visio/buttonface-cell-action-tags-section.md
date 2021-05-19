@@ -23,24 +23,24 @@ ms.locfileid: "32337540"
 > [!NOTE]
 > Microsoft Visio の以前のバージョンでは、アクション タグは、スマート タグと呼ばれていました。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-[ButtonFace] セル内の文字列は Microsoft Office のボタン イメージの ID を示します。 値 0 (ゼロ) または空白は、標準のアクションタグ "i" [情報] ボタンに既定で設定されます。 ![標準アクションタグ "i" [情報] ボタン](media/InfoPS_ZA10180114.gif).
+[ButtonFace] セル内の文字列は Microsoft Office のボタン イメージの ID を示します。 値が 0 (ゼロ) または空白の既定値は、標準アクション タグ "i" info ボタン ![標準アクション タグ "i" info ボタン](media/InfoPS_ZA10180114.gif).
   
-[ButtonFace] セルに使用される ID は、 **CommandBarButton ** オブジェクトの  **FaceID ** プロパティで使用される ID と同じです。 これらの id の詳細については、MSDN の「コマンドバーボタンイメージを使用する」を検索してください。 
+[ButtonFace] セルに使用される ID は、 **CommandBarButton** オブジェクトの  **FaceID** プロパティで使用される ID と同じです。 これらの ID の詳細については、MSDN で "コマンド バー ボタンイメージを操作する" を検索します。 
   
 別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ButtonFace] セルへの参照を取得するには、次の値を使用します。 
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | タグ.  *名前*です。SmartTags を指定します。 *name*は、アクションタグ行の名前です。  <br/> |
+| セル名:  <br/> | SmartTags。  *name*  .ButtonFace where SmartTags. *name*  はアクション タグ行の名前です。  <br/> |
    
 プログラムから、インデックスによって [ButtonFace] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス :  <br/> |**visSectionSmartTag** <br/> |
-| 行インデックス:  <br/> |**visRowSmartTag** +  *i* = ** 0、1、2...  <br/> |
+| 行インデックス:  <br/> |**visRowSmartTag**  +  *i* *=* 0, 1, 2...  <br/> |
 | セル インデックス :  <br/> |**visSmartTagButtonFace** <br/> |
    
 

@@ -28,7 +28,7 @@ ms.locfileid: "33416581"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [pagetopmargin]  <br/> |
+| セル名:  <br/> | PageTopMargin  <br/> |
    
 プログラムから、インデックスによって [PageTopMargin] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

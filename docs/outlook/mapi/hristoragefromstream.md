@@ -25,13 +25,13 @@ ms.locfileid: "33416833"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**IStream**オブジェクトに**IStorage**インターフェイスを階層的に配置します。 
+**IStorage インターフェイスを** **IStream オブジェクトにレイヤー** します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 HRESULT HrIStorageFromStream(
@@ -46,35 +46,35 @@ HRESULT HrIStorageFromStream(
 
  _lpUnkIn_
   
-> 順番**IStream**を実装している**IUnknown**オブジェクトへのポインター。 
+> [in] **IStream を実装する IUnknown** オブジェクト **へのポインター**。 
     
- _lpinterface_
+ _lpInterface_
   
-> 順番stream オブジェクトのインターフェイス識別子 (IID) へのポインター。 _lpinterface_パラメーターには、次のいずれかの値を渡すことができます。 NULL、IID_IStream、または IID_ILockBytes。 _lpinterface_で NULL を渡すことは、IID_IStream を渡すことと同じです。 
+> [in]ストリーム オブジェクトのインターフェイス識別子 (IID) へのポインター。 _lpInterface_ パラメーターには、NULL、IID_IStream、またはIID_ILockBytes。 _lpInterface で NULL を渡す_ のは、引数を渡すのとIID_IStream。 
     
  _ulFlags_
   
-> 順番ストリームに対するストレージオブジェクトの作成方法を制御するフラグのビットマスク。 既定の設定は STGSTRM_RESET です。これにより、ストレージオブジェクトの読み取り専用アクセスが可能になり、ストリームの0の位置で開始されます。 次のフラグを任意の組み合わせで設定できます (記載されている場合を除く)。
+> [in]ストリームを基準にストレージ オブジェクトを作成する方法を制御するフラグのビットマスク。 既定の設定は、STGSTRM_RESETオブジェクトに読み取り専用アクセス権を与え、ストリームの位置 0 から開始します。 以下のフラグは、以下に示す以外の任意の組み合わせで設定できます。
     
 STGSTRM_CREATE 
   
-> stream オブジェクトの新しいストレージオブジェクトを作成します。 STGSTRM_RESET フラグが設定されている場合、このフラグは設定できません。 
+> ストリーム オブジェクトの新しいストレージ オブジェクトを作成します。 このフラグは、このフラグがSTGSTRM_RESET設定されている場合は設定できません。 
     
 STGSTRM_CURRENT 
   
-> ストリームの現在の位置でストレージを開始します。 STGSTRM_RESET フラグが設定されている場合、このフラグは設定できません。 
+> ストリームの現在の位置で記憶域を開始します。 このフラグは、このフラグがSTGSTRM_RESET設定されている場合は設定できません。 
     
 STGSTRM_MODIFY 
   
-> 呼び出し元のサービスプロバイダーが、返されたストレージに書き込むことができるようにします。 STGSTRM_RESET フラグが設定されている場合、このフラグは設定できません。 
+> 呼び出し元のサービス プロバイダーが返された記憶域に書き込みを許可します。 このフラグは、このフラグがSTGSTRM_RESET設定されている場合は設定できません。 
     
 STGSTRM_RESET 
   
-> 位置0でストレージを開始します。 他のフラグが設定されている場合、このフラグを設定することはできません。 
+> 位置 0 で記憶域を開始します。 他のフラグが設定されている場合は、このフラグを設定できません。 
     
- _lppstorageout_
+ _lppStorageOut_
   
-> 読み上げ返された**IStorage**オブジェクトへのポインターへのポインター。 
+> [out]返される **IStorage オブジェクトへのポインターへの** ポインター。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -84,6 +84,6 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-メッセージストアプロバイダーは、添付ファイル用の**IStorage**インターフェイスを使用して、 **hristoragefromstream**関数をサポートします。 ストアプロバイダーは、 **IStream**インターフェイスを実装する必要があります。 **hristoragefromstream**は、 **IStream**オブジェクトの**IStorage**インターフェイスを提供します。 _lpUnkIn_では、 **ILockBytes**または**IStream**インターフェイスのいずれかを渡すことができます。 
+メッセージ ストア プロバイダーは、添付ファイルの IStorage インターフェイスを使用して **HrIStorageFromStream** **関数** をサポートします。 ストア プロバイダーは **、IStream インターフェイスを実装する必要** があります。 **HrIStorageFromStream** は **、IStream オブジェクトの IStorage** インターフェイス **を提供** します。 lpUnkIn で **ILockBytes** または **IStream** インターフェイスを渡  _す可能性があります_。 
   
 

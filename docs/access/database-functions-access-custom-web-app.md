@@ -19,10 +19,10 @@ ms.locfileid: "33418912"
 > マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 
-- [userdisplayname 関数 (Access カスタム web アプリ)](userdisplayname-function-access-custom-web-app.md)
+- [UserDisplayName 関数 (Access カスタム Web アプリ)](userdisplayname-function-access-custom-web-app.md)
     
-- [UserEmailAddress 関数 (Access カスタム web アプリ)](useremailaddress-function-access-custom-web-app.md)
+- [UserEmailAddress 関数 (Access カスタム Web アプリ)](useremailaddress-function-access-custom-web-app.md)
     
-- [Update 関数 (Access カスタム web アプリ)](update-function-access-custom-web-app.md)
+- [Update 関数 (Access カスタム Web アプリ)](update-function-access-custom-web-app.md)
     
 

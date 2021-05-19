@@ -25,32 +25,32 @@ ms.locfileid: "33417043"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージサービスに属するファイルの一覧が含まれています。
+メッセージ サービスに属するファイルの一覧を格納します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_SERVICE_SUPPORT_FILES、PR_SERVICE_SUPPORT_FILES_A、PR_SERVICE_SUPPORT_FILES_W  <br/> |
-|識別子:  <br/> |0x3d0f  <br/> |
+|識別子:  <br/> |0x3D0F  <br/> |
 |データの種類 :   <br/> |PT_MV_STRING8、PT_MV_UNICODE  <br/> |
 |エリア:  <br/> |MAPI プロファイル  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-コントロールパネルアプレットのダイアログボックスを使用して、ユーザーはメッセージサービスに属するファイルの一覧を取得できます。 たとえば、ユーザーは、サービスに属しているすべてのダイナミックリンクライブラリ (dll) の名前を取得できます。 ユーザーは、指定されたファイル (すべての dll の名前とバージョン番号など) に関する追加の詳細を検索できます。 MAPI では、これらのプロパティを使用して、メッセージングユーザーの選択に対応するダイアログボックスにサポートファイルリストを作成します。
+コントロール パネルアプレットのダイアログ ボックスを使用して、ユーザーはメッセージ サービスに属するファイルの一覧を取得できます。 たとえば、ユーザーは、サービスに属しているすべてのダイナミック リンク ライブラリ (DLL) の名前を取得できます。 その後、指定したファイルに関する詳細情報 (すべての DLL の名前やバージョン番号など) を検索できます。 MAPI では、これらのプロパティを使用して、メッセージング ユーザーの選択用のダイアログ ボックスにサポート ファイルの一覧を作成します。
   
-MAPI は、Active Directory サービスインターフェイス (ANSI) 文字セットでファイル名とその他の文字列が渡された場合にのみ機能します。 OEM (相手先ブランド供給) 文字セットでファイル名を使用するクライアントアプリケーションは、MAPI を呼び出す前に、それらを ANSI に変換する必要があります。
+MAPI は、Active Directory Service Interfaces (ANSI) 文字セット内のファイル名と、そのファイルに渡される他の文字列でのみ動作します。 元の機器メーカー (OEM) の文字セットでファイル名を使用するクライアント アプリケーションは、MAPI を呼び出す前に ANSI に変換する必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -60,7 +60,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

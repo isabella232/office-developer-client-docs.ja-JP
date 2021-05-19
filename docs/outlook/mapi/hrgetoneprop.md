@@ -25,13 +25,13 @@ ms.locfileid: "33416056"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロパティインターフェイス ( [imapiprop](imapipropiunknown.md)から派生したインターフェイス) から1つのプロパティの値を取得します。 
+プロパティ インターフェイス 、つまり [IMAPIProp](imapipropiunknown.md)から派生したインターフェイスから 1 つのプロパティの値を取得します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 HrGetOneProp(
@@ -45,27 +45,27 @@ HrGetOneProp(
 
  _pmp_
   
-> 順番プロパティ値を取得する[imapiprop](imapipropiunknown.md)インターフェイスへのポインター。 
+> [in]プロパティ値 [を取得する IMAPIProp](imapipropiunknown.md) インターフェイスへのポインター。 
     
  _ulPropTag_
   
-> 順番取得するプロパティのプロパティタグ。 
+> [in]取得するプロパティのプロパティ タグ。 
     
  _ppprop_
   
-> 読み上げ取得したプロパティ値を定義する、返された[spropvalue](spropvalue.md)構造体へのポインターへのポインター。 
+> [out]取得したプロパティ値を定義する、返される [SPropValue](spropvalue.md) 構造体へのポインターを指すポインター。 
     
 ## <a name="return-value"></a>戻り値
 
 MAPI_E_NOT_FOUND 
   
-> 要求されたプロパティは、指定したインターフェイスからは使用できません。
+> 要求されたプロパティは、指定したインターフェイスから使用できません。
     
 ## <a name="remarks"></a>注釈
 
-[imapiprop:: GetProps](imapiprop-getprops.md)メソッドとは異なり、 **hrgetoneprop**関数は警告を返しません。 プロパティを1つだけ取得するので、成功または失敗のどちらかです。 複数のプロパティを取得する場合、 **GetProps**の方が高速です。 
+[IMAPIProp::GetProps](imapiprop-getprops.md)メソッドとは異なり **、HrGetOneProp** 関数は警告を返しません。 プロパティは 1 つしか取得しないので、単に成功または失敗します。 複数のプロパティを取得する場合 **、GetProps の方が** 高速です。 
   
-[hrsetoneprop](hrsetoneprop.md)関数を使用して、1つのプロパティを設定または変更できます。 
+[HrSetOneProp](hrsetoneprop.md)関数を使用して、1 つのプロパティを設定または変更できます。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -73,7 +73,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIFunctions  <br/> |GetMAPIObjectType  <br/> |mfcmapi は、 **hrgetoneprop**メソッドを使用して、オブジェクトの種類を取得します。  <br/> |
+|MAPIFunctions.cpp  <br/> |GetMAPIObjectType  <br/> |MFCMAPI は **、HrGetOneProp** メソッドを使用してオブジェクトの種類を取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

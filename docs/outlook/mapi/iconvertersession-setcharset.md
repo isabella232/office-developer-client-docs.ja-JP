@@ -1,5 +1,5 @@
 ---
-title: iconvertersessionsetcharset
+title: IConverterSessionSetCharSet
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 25af3683-3a65-2d39-6f6e-76c8d36f866d
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 14b2904e57852c564395f4b27c9d5270afd1454a
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32336660"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-mapi メッセージを mime ストリームに変換するときに mapi から mime コンバータが使用するオプションの文字セットを指定します。
+MAPI メッセージを MIME ストリームに変換するときに MAPI から MIME コンバータに使用するオプションの文字セットを指定します。
   
 ```cpp
 HRESULT SetCharset( 
@@ -36,17 +36,17 @@ HRESULT SetCharset(
 
 ## <a name="parameters"></a>パラメーター
 
- _fapply_
+ _fApply_
   
-> 順番変換に特定の文字セットを使用するかどうかを示します。 このパラメーターを**true**に設定すると、その後の変換で文字セットが適用されます。 特定の文字セットを適用しない場合は、このパラメーターを**false**に設定し、以降のメッセージの既定値に戻します。 
+> [in]変換に特定の文字セットを使用するかどうかを示します。 以降の変換で **文字セットを** 適用するには、このパラメーターを true に設定します。 特定の **文字セットを** 適用し、後続のメッセージの既定値に戻す場合は、このパラメーターを false に設定します。 
     
  _hcharset_
   
-> 順番Windows メールの mimeole で定義されている文字セットへのハンドル。 特定の文字セットを適用しないように指定するには、 **null**を指定します。 **null**以外の値の場合は、 [MimeOleGetCodePageCharset](https://msdn.microsoft.com/library/ms714746%28VS.85%29.aspx)などの関数を使用して、文字セットのハンドルを取得します。 
+> [in]文字列の mimeole.h で定義されている文字セットWindows メール。 特定 **の文字** セットを適用しない場合は null を指定します。 null 以外の **値の** 場合は [、MimeOleGetCodePageCharset](https://msdn.microsoft.com/library/ms714746%28VS.85%29.aspx) などの関数を使用して、文字セットのハンドルを取得します。 
     
  _csetapplytype_
   
-> 順番Windows メールの mimeole で定義されているように、文字セットを適用してメッセージを変換する方法を指定します。
+> [in]mimeole.h で定義されているメッセージを変換する文字セットを適用する方法をWindows メール。
     
 ## <a name="return-value"></a>戻り値
 
@@ -60,8 +60,8 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|mapimime .cpp  <br/> |ImportEMLToIMessage  <br/> |mfcmapi は MimeToMAPI を使用して、EML ファイルを MAPI メッセージに変換します。  <br/> |
-|mapimime .cpp  <br/> |ExportIMessageToEML  <br/> |mfcmapi は、MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。  <br/> |
+|MapiMime.cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI は MimeToMAPI を使用して EML ファイルを MAPI メッセージに変換します。  <br/> |
+|MapiMime.cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI は MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

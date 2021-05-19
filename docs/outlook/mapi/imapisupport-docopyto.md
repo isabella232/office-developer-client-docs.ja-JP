@@ -1,5 +1,5 @@
 ---
-title: imapisupportdocopyto
+title: IMAPISupportDoCopyTo
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "32331809"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-明示的に除外されたプロパティを除き、1つのオブジェクトのすべてのプロパティを別のオブジェクトにコピーまたは移動します。
+特定の除外プロパティを除く、1 つのオブジェクトのすべてのプロパティを別のオブジェクトにコピーまたは移動します。
   
 ```cpp
 HRESULT DoCopyTo(
@@ -45,45 +45,45 @@ HRESULT DoCopyTo(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpsrcinterface_
+ _lpSrcInterface_
   
-> 順番コピーまたは移動するプロパティを持つオブジェクトへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。
+> [in]コピーまたは移動するプロパティを持つオブジェクトにアクセスするために使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。
     
- _lpsrcobj_
+ _lpSrcObj_
   
-> 順番コピーまたは移動するプロパティを持つオブジェクトへのポインター。
+> [in]コピーまたは移動するプロパティを持つオブジェクトへのポインター。
     
  _ciidExclude_
   
-> 順番プロパティをコピーまたは移動するときに除外するインターフェイスの数。
+> [in]プロパティをコピーまたは移動するときに除外するインターフェイスの数。
     
  _rgiidExclude_
   
-> 順番ターゲットオブジェクトに補足情報をコピーまたは移動するときに使用しないインターフェイスを示すインターフェイス識別子の配列。
+> [in]補足情報をコピーまたは移動先オブジェクトに移動するときに使用しないインターフェイスを示すインターフェイス識別子の配列。
     
- _lpexcludeprops_
+ _lpExcludeProps_
   
-> 順番コピー操作または移動操作から除外する必要があるプロパティタグを識別するプロパティタグ配列へのポインター。 _lpexcludeprops_パラメーターで NULL を渡すことは、オブジェクトのすべてのプロパティをコピーまたは移動する必要があることを示します。 _lpexcludeprops_によって参照される[SPropTagArray](sproptagarray.md)構造の**cvalues**メンバが0に設定されている場合、 **docopyto**は MAPI_E_INVALID_PARAMETER を返します。 
+> [in]コピーまたは移動操作から除外する必要があるプロパティ タグを識別するプロパティ タグ配列へのポインター。 _lpExcludeProps_ パラメーターに NULL を渡す場合は、オブジェクトのすべてのプロパティをコピーまたは移動する必要があります。 **DoCopyTo** は **、lpExcludeProps** MAPI_E_INVALID_PARAMETER示す [SPropTagArray](sproptagarray.md) 構造体の  _cValues_ メンバーが 0 に設定されている場合に、この値を返します。 
     
- _uluiparam_
+ _ulUIParam_
   
-> 順番進行状況インジケーターの親ウィンドウへのハンドル。 
+> [in]進行状況インジケーターの親ウィンドウへのハンドル。 
     
- _lpprogress_
+ _lpProgress_
   
-> 順番進行状況インジケーターの実装へのポインター。 _lpprogress_パラメーターで NULL が渡された場合、MAPI は進行状況の実装を提供します。 MAPI_DIALOG フラグが_ulflags_パラメーターで設定されていない場合、 _lpprogress_パラメーターは無視されます。 
+> [in]進行状況インジケーターの実装へのポインター。 _lpProgress_ パラメーターで NULL が渡された場合、MAPI は進行状況の実装を提供します。 _lpProgress パラメーター_ は _、ulFlags_ パラメーター MAPI_DIALOGフラグが設定されていない限り、無視されます。 
     
- _lpdestinterface_
+ _lpDestInterface_
   
-> 順番コピーまたは移動したプロパティを受け取るためのオブジェクトへのアクセスに使用するインターフェイスを表すインターフェイス識別子へのポインター。
+> [in]コピーまたは移動されたプロパティを受け取るオブジェクトにアクセスするために使用するインターフェイスを表すインターフェイス識別子へのポインター。
     
- _lpdestobj_
+ _lpDestObj_
   
-> 順番コピーまたは移動したプロパティを受け取るオブジェクトへのポインター。
+> [in]コピーまたは移動されたプロパティを受け取るオブジェクトへのポインター。
     
  _ulFlags_
   
-> 順番コピー操作または移動操作を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]コピーまたは移動操作を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_DIALOG 
   
@@ -91,15 +91,15 @@ MAPI_DIALOG
     
 MAPI_MOVE 
   
-> **docopyto**はコピー操作ではなく移動操作を実行する必要があります。 このフラグが設定されて**** いない場合は、コピー操作が実行されます。 
+> **DoCopyTo は** 、コピー操作の代わりに移動操作を実行する必要があります。 このフラグが設定されていない場合 **、DoCopyTo は** コピー操作を実行します。 
     
 MAPI_NOREPLACE 
   
-> 対象のオブジェクト内の既存のプロパティは、上書きしないようにしてください。 このフラグが設定されていない場合、 **docopyto**は既存のプロパティを上書きします。 
+> 移動先オブジェクト内の既存のプロパティは上書きしないでください。 このフラグを設定しない場合 **、DoCopyTo は** 既存のプロパティを上書きします。 
     
- _lppproblems 問題_
+ _lppProblems_
   
-> 読み上げinput の場合は、 [spropの配列](spropproblemarray.md)構造体へのポインターへのポインターを返します。それ以外の場合は、エラー情報を必要としないことを示す NULL。 _lppproblems_が入力の有効なポインターである場合、 **docopyto**は、1つ以上のプロパティをコピーする際のエラーに関する詳細情報を返します。 
+> [out]入力時に [、SPropProblemArray](spropproblemarray.md) 構造体へのポインターを指すポインター。それ以外の場合は、エラー情報を必要としない NULL を指定します。 _lppProblems が_ 入力の有効なポインターである場合 **、DoCopyTo** は 1 つ以上のプロパティをコピーするエラーに関する詳細情報を返します。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -109,33 +109,33 @@ S_OK
     
 MAPI_E_COLLISION 
   
-> コピーまたは移動されるプロパティは、対象オブジェクトに既に存在し、MAPI_NOREPLACE フラグが設定されています。 
+> コピーまたは移動するプロパティは、コピー先オブジェクトに既に存在し、MAPI_NOREPLACEフラグが設定されます。 
     
 MAPI_E_FOLDER_CYCLE 
   
-> source オブジェクトは、直接または間接的に対象のオブジェクトを含みます。 この条件が検出される前に、重要な作業が実行されている可能性があるので、移行元と移行先のオブジェクトの一部が変更されている可能性があります。 
+> ソース オブジェクトには、直接または間接的に移動先オブジェクトが含まれる。 この条件が検出される前に重要な作業が実行された可能性があります。そのため、ソース オブジェクトと移動先オブジェクトが部分的に変更される可能性があります。 
     
 MAPI_E_INTERFACE_NOT_SUPPORTED 
   
-> _lpsrcinterface_パラメーターで指定されたインターフェイスは、 _lpsrcobj_が指すオブジェクトではサポートされていません。 __ lpsrcinterface パラメーターによって識別されるインターフェイスは、lpsrcinterface が指すオブジェクトではサポートされていません。 __. 
+> _lpSrcInterface_ パラメーターで識別されるインターフェイスは _、lpSrcObj_ によって指されるオブジェクトではサポートされていません。または _lpDestInterface_ パラメーターで識別されるインターフェイスは _、lpDestObj_ によって指されるオブジェクトではサポートされていません。 
     
 MAPI_E_NO_ACCESS 
   
-> 発信者が十分なアクセス許可を持っていないオブジェクトにアクセスしようとしました。 destination オブジェクトがソースオブジェクトと同じ場合、このエラーが返されます。
+> 呼び出し元のアクセス許可が不十分なオブジェクトにアクセスしようとした。 このエラーは、移動先オブジェクトがソース オブジェクトと同じ場合に返されます。
     
 MAPI_E_INVALID_PARAMETER 
   
-> _lpsrcinterface_パラメーターが NULL です。 
+> _lpSrcInterface パラメーター_ は NULL です。 
     
-次の値は、 **spropの配列**構造で返すことができますが、 **docopyto**の戻り値として返すことはできません。 これらのエラーは、1つのプロパティに適用されます。
+次の値は **、SPropProblemArray** 構造体で返されますが、DoCopyTo の戻り値 **として返す値として返す必要があります**。 これらのエラーは、1 つのプロパティに適用されます。
   
 MAPI_E_BAD_CHARWIDTH 
   
-> MAPI_UNICODE フラグが設定されており、 **docopyto**が unicode をサポートしていないか、MAPI_UNICODE が設定されておらず、 **docopyto**で unicode のみがサポートされています。 
+> このフラグMAPI_UNICODE設定され **、DoCopyTo** が Unicode をサポートしていないか、または設定されていない場合MAPI_UNICODE **DoCopyTo** は Unicode のみをサポートします。 
     
 MAPI_E_COMPUTED 
   
-> このプロパティは読み取り専用プロパティであるため、呼び出し元が変更することはできません。これは、対象オブジェクトの所有者によって計算されます。 このエラーは重大ではありません。呼び出し元がコピー操作を続行できるようにする必要があります。
+> プロパティは、読み取り専用プロパティなので、呼び出し元が変更することはできません。これは、移動先オブジェクトの所有者によって計算されます。 このエラーは重大ではありません。呼び出し元は、コピー操作の続行を許可する必要があります。
     
 MAPI_E_INVALID_TYPE 
   
@@ -143,43 +143,43 @@ MAPI_E_INVALID_TYPE
     
 MAPI_E_UNEXPECTED_TYPE 
   
-> プロパティの型は、呼び出し元が想定した型ではありません。
+> プロパティの種類は、呼び出し元が予期する型ではありません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**imapisupport::D ocopyto**メソッドは、メッセージストアプロバイダーサポートオブジェクトに実装されています。 メッセージストアプロバイダーは、 **docopyto**を呼び出して、フォルダーとメッセージに[imapiprop:: CopyTo](imapiprop-copyto.md)メソッドを実装できます。 
+**IMAPISupport::D oCopyTo** メソッドは、メッセージ ストア プロバイダーのサポート オブジェクトに実装されます。 メッセージ ストア プロバイダーは **、DoCopyTo** を呼び出して、フォルダーとメッセージ [の IMAPIProp::CopyTo](imapiprop-copyto.md) メソッドを実装できます。 
   
-既定では、 **docopyto**は、1つのオブジェクトのすべてのプロパティを別のオブジェクトにコピーまたは移動します。 source オブジェクト内のすべてのサブオブジェクトは、自動的に操作に含まれ、全体でコピーまたは移動されます。 
+既定では **、DoCopyTo は** 1 つのオブジェクトのすべてのプロパティを別のオブジェクトにコピーまたは移動します。 ソース オブジェクト内のサブオブジェクトは、自動的に操作に含まれてコピーまたは移動されます。 
   
-コピーまたは移動されたプロパティのいずれかがコピー先オブジェクトに既に存在する場合、MAPI_NOREPLACE フラグが_ulflags_パラメーターで設定されていない限り、既存のプロパティは新しいプロパティによって上書きされます。 上書きされていない対象のオブジェクト内の既存の情報は、そのまま残ります。 
+コピーまたは移動されたプロパティがコピー先オブジェクトに既に存在する場合、MAPI_NOREPLACE フラグが  _ulFlags_ パラメーターに設定されていない限り、既存のプロパティは新しいプロパティによって上書きされます。 上書きされない移動先オブジェクト内の既存の情報はそのまま残ります。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-コピー操作または移動操作からプロパティを除外するには、そのプロパティタグを_lpexcludeprops_パラメーターに含めます。 [PROP_TAG](prop_tag.md)マクロを使用した結果を渡して、プロパティタグ配列の特定の識別子からプロパティタグを作成すると、その識別子を持つすべてのプロパティが除外されます。 たとえば、次のエントリをプロパティタグ配列に配置すると、型に関係なく、0x8002 の識別子が含まれるすべてのプロパティが除外されます。 
+コピーまたは移動操作からプロパティを除外するには、プロパティ タグを  _lpExcludeProps パラメーターに含_ める必要があります。 [PROP_TAG](prop_tag.md)マクロを使用してプロパティ タグ配列内の特定の識別子からプロパティ タグを作成した結果を渡した場合、その識別子を持つすべてのプロパティは除外されます。 たとえば、プロパティ タグ配列の次のエントリでは、型に関係なく、識別子を持つすべてのプロパティ0x8002除外されます。 
   
  `PROP_TAG(PT_LONG, 0x8002)`
   
-メッセージを別のフォルダーにコピーしたときにメッセージの配信時刻がコピーされないようにするには、property タグの除外配列で**PR_MESSAGE_DELIVERY_TIME** ([PidTagMessageDeliveryTime](pidtagmessagedeliverytime-canonical-property.md)) を指定します。 メッセージの宛先リストを除外するには、 **PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) プロパティを exclude 配列に追加します。 メッセージの添付ファイルを除外するには、 **PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) プロパティを配列に追加します。
+メッセージを別のフォルダーにコピーするときにメッセージの配信時間をコピーしないようにするには、プロパティ タグ exclude 配列に **PR_MESSAGE_DELIVERY_TIME** ([PidTagMessageDeliveryTime](pidtagmessagedeliverytime-canonical-property.md)) を指定します。 メッセージの受信者リストを除外するには、PR_MESSAGE_RECIPIENTS **(** [PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) プロパティを exclude 配列に追加します。 メッセージの添付ファイルを除外するには、PR_MESSAGE_ATTACHMENTS **(** [PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) プロパティを配列に追加します。
   
-同様に、フォルダーまたはアドレス帳コンテナーの階層またはコンテンツテーブルをコピーまたは移動できないようにするには、 **PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) または**PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)) プロパティタグの除外配列。
+同様に、フォルダーまたはアドレス帳コンテナーの階層またはコンテンツ テーブルのコピーまたは移動を防止するには、プロパティ タグの除外配列に **PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) または **PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)) を含める必要があります。
   
-_lppproblems_パラメーターの**sprop問題の配列**構造で返された MAPI_E_COMPUTED エラーを無視します。 
+_lppProblems_ パラメーター MAPI_E_COMPUTED **SPropProblemArray** 構造体で返されるエラーを無視します。 
   
-_lpsrcinterface_が指すインターフェイス識別子は、通常、 _lpsrcinterface_が指すインターフェイス識別子と同じです。 
+_lpSrcInterface_ がポイントするインターフェイス識別子は、通常 _、lpDestInterface_ がポイントするインターフェイス識別子と同じです。 
   
-_lpdestinterface_で受け入れ可能なインターフェイス識別子が渡され、 _lpdestinterface_に無効なポインターが渡された場合、結果は予測できません。 ほとんどの場合、プロバイダーが失敗する可能性があります。 
+_lpDestInterface_ で許容可能なインターフェイス識別子を渡し _、lpDestObj_ で無効なポインターを渡した場合、結果は予測できません。 ほとんどの場合、これはプロバイダーが失敗する原因になります。 
   
-反対に、コピーまたは移動してはならない補足情報を認識している場合は、 _rgiidExclude_パラメーターで渡された配列で除外されるインターフェイスのインターフェイス識別子を追加します。 たとえば、メッセージをコピーするが、メッセージの添付ファイルをコピーしない場合は、 _rgiidExclude_配列に IID_IMessage を渡します。 **** _rgiidExclude_に一覧表示されているインターフェイスは無視されます。 
+逆に、コピーまたは移動しない補足情報を認識している場合は  _、rgiidExclude_ パラメーターで渡された配列で除外するインターフェイスのインターフェイス識別子を追加します。 たとえば、メッセージをコピーするが、メッセージ添付ファイルをコピーしない場合は  _、rgiidExclude_ 配列IID_IMessageを渡します。 **DoCopyTo** は  _、rgiidExclude_ で認識されないインターフェイスを無視します。 
   
-_rgiidExclude_パラメーターを使用してインターフェイスを除外すると、そのインターフェイスから派生したすべてのインターフェイスも除外されます。 たとえば、 [IMAPIContainer](imapicontainerimapiprop.md)インターフェイスを除外すると、プロバイダーの種類に応じてフォルダーまたはアドレス帳コンテナーが除外されます。 [imapiprop](imapipropiunknown.md)または[IUnknown](https://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx)から派生しているインターフェイスが多いため、これを除外しないでください。 
+_rgiidExclude_ パラメーターを使用してインターフェイスを除外すると、そのインターフェイスから派生したインターフェイスもすべて除外されます。 たとえば [、IMAPIContainer](imapicontainerimapiprop.md) インターフェイスを除外すると、プロバイダーの種類に応じてフォルダーまたはアドレス帳コンテナーが除外されます。 [IMAPIProp](imapipropiunknown.md)または[IUnknown](https://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx)は、多くのインターフェイスから派生しますので、除外しません。 
   
- **docopyto**は、操作全体に適用されるグローバルエラーと、個々のプロパティに適用される個々のエラーを報告します。 これらの個々のエラーは、 **sprop問題の配列**構造に配置されます。 プロパティ問題の array 構造パラメーターに対して、有効なポインターではなく NULL を渡すことにより、プロパティレベルでエラー報告を抑制することができます。 
+ **DoCopyTo は** 、操作全体に適用されるグローバル エラーと、個々のプロパティに適用される個々のエラーを報告します。 これらの個々のエラーは **、SPropProblemArray 構造体に入** れ込まれています。 プロパティの問題配列構造パラメーターに対して、有効なポインターではなく NULL を渡して、プロパティ レベルでエラー報告を抑制できます。 
   
-エラーに関する情報を受信する必要がある場合は、 _lppproblems_パラメーターに有効な**sprop問題の配列**構造ポインターを渡します。 **docopyto**が S_OK を返す場合、構造内の個々のプロパティにエラーがあるかどうかを確認します。 **docopyto**がエラーを返す場合、 **sprop問題の配列**構造に情報は返されません。 代わりに、 [imapisupport:: GetLastError](imapisupport-getlasterror.md)メソッドを呼び出して詳細なエラー情報を取得します。 
+エラーに関する情報を受け取る場合は _、lppProblems_ パラメーターに有効な **SPropProblemArray** 構造体ポインターを渡します。 **DoCopyTo が** プロパティを返S_OK、構造内の個々のプロパティで発生する可能性のあるエラーを確認します。 **DoCopyTo が** エラーを返す場合 **、SPropProblemArray 構造体には情報は返** されません。 代わりに [、IMAPISupport::GetLastError](imapisupport-getlasterror.md) メソッドを呼び出して、詳細なエラー情報を取得します。 
   
-**docopyto**が S_OK を返す場合は、 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出すことによって返された**spropの配列**構造を解放します。 
+**DoCopyTo が** 関数を返S_OK [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して、返される **SPropProblemArray** 構造体を解放します。 
   
-**docopyto**呼び出しでグローバルエラーが発生した場合は、sprop問題の**配列**構造を使用または解放しないでください。 プロバイダーは、 **docopyto**によって返される**spropの配列**構造で_ulindex_メンバーを無視する必要があります。
+**DoCopyTo** 呼び出しでグローバル エラーが発生した場合は **、SPropProblemArray** 構造体を使用したり解放したりしません。 プロバイダーは  _、DoCopyTo_ によって返される **SPropProblemArray** 構造体の **ulIndex メンバーを無視する必要があります**。
   
 ## <a name="see-also"></a>関連項目
 

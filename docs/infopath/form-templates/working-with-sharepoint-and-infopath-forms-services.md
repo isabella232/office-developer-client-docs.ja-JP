@@ -1,5 +1,5 @@
 ---
-title: SharePoint と InfoPath Forms Services を操作する
+title: SharePoint Form Services および InfoPath Forms Services を操作する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer

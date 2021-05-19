@@ -1,5 +1,5 @@
 ---
-title: imapifolderdeletefolder
+title: IMAPIFolderDeleteFolder
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -41,35 +41,35 @@ HRESULT DeleteFolder(
 
  _cbEntryID_
   
-> 順番_lな tryid_パラメーターで指定されたエントリ識別子のバイト数。 
+> [in]  _lpEntryID_ パラメーターが指すエントリ識別子のバイト数。 
     
- _lて tryid_
+ _lpEntryID_
   
-> 順番削除するサブフォルダーのエントリ識別子へのポインター。
+> [in]削除するサブフォルダーのエントリ識別子へのポインター。
     
- _uluiparam_
+ _ulUIParam_
   
-> 順番進行状況インジケーターの親ウィンドウへのハンドル。 _uluiparam_パラメーターは、 _ulflags_パラメーターで FOLDER_DIALOG フラグが設定されていない場合は無視されます。 
+> [in]進行状況インジケーターの親ウィンドウへのハンドル。 _ulUIParam_ パラメーターは _、ulFlags_ パラメーター FOLDER_DIALOGフラグが設定されていない限り、無視されます。 
     
- _lpprogress_
+ _lpProgress_
   
-> 順番進行状況インジケーターを表示する progress オブジェクトへのポインター。 _lpprogress_で NULL が渡された場合、メッセージストアプロバイダーは MAPI 進行状況オブジェクトの実装を使用して進行状況インジケーターを表示します。 FOLDER_DIALOG フラグが_ulflags_で設定されていない場合、 _lpprogress_パラメーターは無視されます。
+> [in]進行状況インジケーターを表示する進行状況オブジェクトへのポインター。 _lpProgress_ で NULL が渡された場合、メッセージ ストア プロバイダーは MAPI 進行状況オブジェクトの実装を使用して進行状況インジケーターを表示します。 _lpProgress パラメーター_ は _、ulFlags_ で FOLDER_DIALOGフラグが設定されていない限り無視されます。
     
  _ulFlags_
   
-> 順番サブフォルダーの削除を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]サブフォルダーの削除を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 DEL_FOLDERS 
   
-> _lな tryid_によって参照されるサブフォルダーのすべてのサブフォルダーを削除する必要があります。 
+> _lpEntryID_ が指すサブフォルダーのすべてのサブフォルダーを削除する必要があります。 
     
 DEL_MESSAGES 
   
-> _lな tryid_が指すサブフォルダー内のすべてのメッセージを削除する必要があります。 
+> _lpEntryID_ が指すサブフォルダー内のすべてのメッセージを削除する必要があります。 
     
 FOLDER_DIALOG 
   
-> 操作の進行中に、進行状況のインジケーターが表示されます。
+> 操作の進行中に進行状況インジケーターが表示されます。
     
 ## <a name="return-value"></a>戻り値
 
@@ -79,37 +79,37 @@ S_OK
     
 MAPI_E_HAS_FOLDERS 
   
-> 削除されるサブフォルダーにサブフォルダーが含まれており、DEL_FOLDERS フラグが設定されていません。 サブフォルダーは削除されませんでした。
+> 削除されるサブフォルダーにはサブフォルダーが含まれているので、DEL_FOLDERSフラグは設定されません。 サブフォルダーは削除されません。
     
 MAPI_E_HAS_MESSAGES 
   
-> 削除されるサブフォルダーにメッセージが含まれており、DEL_MESSAGES フラグが設定されていませんでした。 サブフォルダーは削除されませんでした。
+> 削除されるサブフォルダーにはメッセージが含まれますが、DEL_MESSAGESフラグは設定されません。 サブフォルダーは削除されません。
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> 呼び出しは成功しましたが、すべてのエントリが正常に削除されませんでした。 この警告が返された場合、呼び出しは正常に処理されます。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
+> 呼び出しは成功しましたが、すべてのエントリが正常に削除されたという訳ではありません。 この警告が返されると、呼び出しは正常に処理されます。 この警告をテストするには、次のマクロ **HR_FAILED** します。 詳細については、「Using [Macros for Error Handling 」を参照してください](using-macros-for-error-handling.md)。
     
 ## <a name="remarks"></a>注釈
 
-**imapifolder::D eletefolder**メソッドは、サブフォルダーを削除します。 既定では、 **deletefolder**は空のフォルダーでのみ動作しますが、DEL_FOLDERS と DEL_MESSAGES の2つのフラグを設定することにより、空ではないフォルダーで正常に使用できます。 **deletefolder**呼び出しで DEL_FOLDERS と DEL_MESSAGES の両方のフラグを設定する、空のフォルダーまたはフォルダーのみを削除できます。 DEL_FOLDERS を使用すると、すべてのフォルダーのサブフォルダーを削除できます。DEL_MESSAGES を使用すると、フォルダーのすべてのメッセージを削除できます。 
+**IMAPIFolder::D eleteFolder メソッドは** サブフォルダーを削除します。 既定では **、DeleteFolder** は空のフォルダーでのみ動作しますが、空でないフォルダーでは、DEL_FOLDERS と DEL_MESSAGES の 2 つのフラグを設定することで、このフォルダーを正常に使用できます。 **DeleteFolder** 呼び出しでDEL_FOLDERSとDEL_MESSAGES両方を設定する空のフォルダーまたはフォルダーのみを削除できます。 DEL_FOLDERSフォルダーのすべてのサブフォルダーを削除できます。DEL_MESSAGESフォルダーのすべてのメッセージを削除できます。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-削除操作に複数のフォルダーが含まれている場合は、各フォルダーで可能な限り完全に操作を実行してください。 削除するフォルダーの1つが存在しない場合や、他の場所に移動またはコピーされている場合があります。 メモリが不足している、ディスクの空き領域が不足している、メッセージストアが破損しているなど、操作を途中で停止しないようにしてください。
+削除操作に複数のフォルダーが含まれる場合は、フォルダーごとに可能な限り完全に操作を実行します。 削除するフォルダーの 1 つが存在しないか、他の場所に移動またはコピーされている場合があります。 メモリの使い切れ、ディスク領域の使い切れ、メッセージ ストアの破損など、制御できないエラーが発生しない限り、操作を途中で停止しません。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-これらの戻り値は、次の条件に当てはまることが予想されます。
+これらの戻り値は、次の条件下で期待してください。
   
 |**Condition**|**戻り値**|
 |:-----|:-----|
-|**deletefolder**がすべてのメッセージとサブフォルダを正常に削除しました。  <br/> |S_OK  <br/> |
-|**deletefolder**は、すべてのメッセージとサブフォルダを正常に削除できませんでした。  <br/> |MAPI_W_PARTIAL_COMPLETION または MAPI_E_NOT_FOUND  <br/> |
-|**deletefolder**を完了できませんでした。  <br/> |MAPI_E_NOT_FOUND を除くすべてのエラー値  <br/> |
+|**DeleteFolder は** 、すべてのメッセージとサブフォルダーを正常に削除しました。  <br/> |S_OK  <br/> |
+|**DeleteFolder** は、すべてのメッセージとサブフォルダーを正常に削除できなかった。  <br/> |MAPI_W_PARTIAL_COMPLETIONまたはMAPI_E_NOT_FOUND  <br/> |
+|**DeleteFolder** を完了できなかった。  <br/> |エラー以外のエラー MAPI_E_NOT_FOUND  <br/> |
    
-**deletefolder**を完了できない場合でも、作業が行われていないとは限りません。 **deletefolder**がエラーが発生する前に、1つ以上のメッセージとサブフォルダーを削除できた可能性があります。 
+**DeleteFolder を** 完了できない場合は、作業が完了していないと見なす必要はありません。 **DeleteFolder は** 、エラーが発生する前に 1 つ以上のメッセージとサブフォルダーを削除できた可能性があります。 
   
-1つまたは複数のサブフォルダーを削除できない場合、 **deletefolder**は、メッセージストアプロバイダーの実装に応じて MAPI_W_PARTIAL_COMPLETION または MAPI_E_NOT_FOUND を返します。 
+1 つ以上のサブフォルダーを削除できない場合 **、DeleteFolder** はメッセージ ストア プロバイダーの実装に応じて、MAPI_W_PARTIAL_COMPLETION または MAPI_E_NOT_FOUND を返します。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -117,7 +117,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MsgStoreDlg  <br/> |CMsgStoreDlg:: OnDeleteSelectedItem  <br/> |mfcmapi は、 **imapifolder::D eletefolder**メソッドを使用してフォルダーを削除します。  <br/> |
+|MsgStoreDlg.cpp  <br/> |CMsgStoreDlg::OnDeleteSelectedItem  <br/> |MFCMAPI は **IMAPIFolder::D eleteFolder** メソッドを使用してフォルダーを削除します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

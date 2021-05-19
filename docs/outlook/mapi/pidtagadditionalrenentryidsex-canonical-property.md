@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b5e896e7-c0c6-4ad1-bf91-9daba3a1e4d4
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 57ab68d4c53693c769a4aadf8737f57ef5e73fcd
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,91 +25,91 @@ ms.locfileid: "32335204"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-store オブジェクトの特別なフォルダーエントリ id が格納されています。 この複数値を持つプロパティの各エントリは、1つまたは複数のエントリ id にマップできます。つまり、エントリとそれに関連付けられたエントリ id との間に一対多の関係があります。
+ストア オブジェクトの特別なフォルダー エントリの ID を格納します。 この複数値プロパティの各エントリは、1 つ以上のエントリ ID にマップできます。つまり、エントリと関連するエントリ ID の間には 1 対多の関係があります。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_ADDITIONAL_REN_ENTRYIDS_EX  <br/> |
 |識別子:  <br/> |0x36D9  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |Outlook アプリケーション  <br/> |
+|エリア:  <br/> |Outlookアプリケーション  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このプロパティを使用すると、フォルダーのエントリ id を指定するブロックの配列が含まれます。 ブロックは、次の4つの表で指定された形式に従います。
+このプロパティを使用する場合は、フォルダーのエントリの ID を指定するブロックの配列が含まれます。 ブロックは、次の 4 つの表で指定された形式に従います。
   
-**persistdata ブロック**
+**PersistData ブロック**
 
-|**名前**|**Type**|**Size**|**説明**|
+|**名前**|**Type**|**[サイズ]**|**説明**|
 |:-----|:-----|:-----|:-----|
-|**persistid** <br/> |WORD  <br/> |pbm-2  <br/> |この**persistdata**エントリの型識別子の値。 有効な値の一覧については、「persistblocktype Values」テーブルを参照してください。  <br/> |
-|**data要素サイズ** <br/> |WORD  <br/> |pbm-2  <br/> |**dataelements**フィールドのサイズ (バイト単位)。  <br/> |
-|**dataelements** <br/> |**persistelement**ブロックの配列  <br/> |変数  <br/> |ストアに存在する**persistelement**エントリの数を示します。 この構造体の形式については、「persistelement Block」の表を参照してください。  <br/> |
+|**PersistID** <br/> |WORD  <br/> |2  <br/> |この PersistData エントリの識別子 **の値を入力** します。 有効な値の一覧については、「PersistBlockType Values」テーブルを参照してください。  <br/> |
+|**DataElementsSize** <br/> |WORD  <br/> |2  <br/> |**DataElements** フィールドのサイズ (バイト単位)。  <br/> |
+|**DataElements** <br/> |**PersistElement ブロックの** 配列  <br/> |変数  <br/> |ストアに存在 **する PersistElement** エントリの数を示します。 この構造の形式については、「PersistElement Block」テーブルを参照してください。  <br/> |
    
-**persistblocktype の値**
+**PersistBlockType 値**
 
-|**Name**|**値**|**説明**|
+|**名前**|**値**|**説明**|
 |:-----|:-----|:-----|
-|PERSIST_SENTINEL  <br/> |0x0000  <br/> |これ以上の**persistdata**ブロックは処理されないことを示します。  <br/> |
-|RSF_PID_RSS_SUBSCRIPTION  <br/> |0x8001  <br/> |このブロックには、RSS 購読フォルダーのデータが含まれていることを示します。  <br/> |
-|RSF_PID_SEND_AND_TRACK  <br/> |0x8002  <br/> |このブロックには、追跡対象メール処理フォルダーのデータが含まれていることを示します。  <br/> |
-|RSF_PID_TODO_SEARCH  <br/> |0x8004  <br/> |このブロックに、To do 検索フォルダーのデータが含まれていることを示します。  <br/> |
-|RSF_PID_CONV_ACTIONS  <br/> |0x8006  <br/> |このブロックに、会話アクション設定フォルダーのデータが含まれていることを示します。  <br/> |
-|RSF_PID_COMBINED_ACTIONS  <br/> |0x8007  <br/> |この値は予約されています。  <br/> |
-|RSF_PID_SUGGESTED_CONTACTS  <br/> |0x8008  <br/> |このブロックには、推奨される連絡先フォルダーのデータが含まれていることを示します。  <br/> |
-|RSF_PID_CONTACT_SEARCH  <br/> |0x8009  <br/> |このブロックに、連絡先検索フォルダーのデータが含まれていることを示します。  <br/> Outlook でのみ使用されます。  <br/> |
-|RSF_PID_BUDDYLIST_PDLS  <br/> |0x800a  <br/> |このブロックに、インスタントメッセージング (IM) 連絡先リストフォルダーのデータが含まれていることを示します。 参照フォルダーには、IM 連絡先リスト内の各グループを表す個人用配布リスト (pdls) が含まれています。  <br/> Outlook と Exchange の両方で使用されます。  <br/> |
-|RSF_PID_BUDDYLIST_CONTACTS  <br/> |0x800b  <br/> |このブロックには、IM 連絡先フォルダーのデータが含まれていることを示します。 参照フォルダーには、IM 連絡先リストグループによって参照される個々の連絡先が含まれています。  <br/> Outlook と Exchange の両方で使用されます。  <br/> |
+|PERSIST_SENTINEL  <br/> |0x0000  <br/> |PersistData ブロックが **処理され** なきを示します。  <br/> |
+|RSF_PID_RSS_SUBSCRIPTION  <br/> |0x8001  <br/> |このブロックに RSS サブスクリプション フォルダーのデータが含まれているかどうかを示します。  <br/> |
+|RSF_PID_SEND_AND_TRACK  <br/> |0x8002  <br/> |このブロックに、追跡メール処理フォルダーのデータが含まれているかどうかを示します。  <br/> |
+|RSF_PID_TODO_SEARCH  <br/> |0x8004  <br/> |このブロックに、検索フォルダーのデータTo-Do示します。  <br/> |
+|RSF_PID_CONV_ACTIONS  <br/> |0x8006  <br/> |このブロックに、スレッド アクション フォルダーのデータが含設定します。  <br/> |
+|RSF_PID_COMBINED_ACTIONS  <br/> |0x8007  <br/> |この値は予約済みです。  <br/> |
+|RSF_PID_SUGGESTED_CONTACTS  <br/> |0x8008  <br/> |このブロックに[推奨連絡先] フォルダーのデータが含まれていることを示します。  <br/> |
+|RSF_PID_CONTACT_SEARCH  <br/> |0x8009  <br/> |このブロックに連絡先検索フォルダーのデータが含まれているかどうかを示します。  <br/> ユーザーが使用するOutlook。  <br/> |
+|RSF_PID_BUDDYLIST_PDLS  <br/> |0x800A  <br/> |このブロックにインスタント メッセージング (IM) 連絡先リスト フォルダーのデータが含まれているかどうかを示します。 参照先のフォルダーには、IM 連絡先リスト内の各グループを表す個人用配布リスト (PDL) が含まれる。  <br/> この値は、OutlookとExchange。  <br/> |
+|RSF_PID_BUDDYLIST_CONTACTS  <br/> |0x800B  <br/> |このブロックに IM 連絡先フォルダーのデータが含まれているかどうかを示します。 参照先フォルダーには、IM 連絡先一覧グループによって参照される個々の連絡先が含まれる。  <br/> この値は、OutlookとExchange。  <br/> |
    
-**persistblocktype**値がここで定義されていない場合、 **persistdata**ブロックは無視され、PERSIST_SENTINEL **persistid**が処理されるか、またはストリームの終わりに達するまで、処理は続行されます。 
+**PersistBlockType** 値がここで定義されている値の 1 つではない場合 **、PersistData** ブロックは無視され、PERSIST_SENTINEL **PersistID** が処理されるまで、またはストリームの末尾に達するまで処理が継続されます。 
   
-**persistelementblock**
+**PersistElementBlock**
 
-|**名前**|**Type**|**Size**|**説明**|
+|**名前**|**Type**|**[サイズ]**|**説明**|
 |:-----|:-----|:-----|:-----|
-|**ElementID** <br/> |WORD  <br/> |pbm-2  <br/> |この**persistelement**ブロックの型識別子の値を指定します。 有効な値の一覧については、「persistelementtype Values」テーブルを参照してください。  <br/> |
-|**elementdatasize** <br/> |WORD  <br/> |pbm-2  <br/> |**elementdata**フィールドのサイズをバイト単位で指定します。  <br/> |
-|**elementdata** <br/> |バイナリデータの配列  <br/> |変数  <br/> |この**persistid** + の**ElementID**ペアのデータを格納します。  <br/> |
+|**ElementID** <br/> |WORD  <br/> |2  <br/> |この PersistElement ブロックの型識別子 **の値を指定** します。 有効な値の一覧については、「PersistElementType Values」の表を参照してください。  <br/> |
+|**ElementDataSize** <br/> |WORD  <br/> |2  <br/> |ElementData フィールドのサイズをバイト単位 **で指定** します。  <br/> |
+|**ElementData** <br/> |バイナリ データの配列  <br/> |変数  <br/> |この **PersistID ElementID ペアの**  +  **データを格納** します。  <br/> |
    
-**persistelementtype の値**
+**PersistElementType 値**
 
-|**Name**|**Value**|**elementdatasize の値**|**説明**|
+|**名前**|**Value**|**ElementDataSize の値**|**説明**|
 |:-----|:-----|:-----|:-----|
-|RSF_ELID_HEADER  <br/> |0x0002  <br/> |0x0004  <br/> |このブロックの**elementdata**フィールドに DWORD ヘッダーの値が含まれていることを示します。 この値がどのように解釈されるかは、ブロックの**persistid**型によって異なります。  <br/> [[OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb.aspx)で指定されているすべての**persistid**型の場合、この値は0です。  <br/> |
-|RSF_ELID_ENTRYID  <br/> |0x0001  <br/> |変数  <br/> |このブロックには、 **persistid**で指定されたフォルダーの**EntryID**が含まれていることを示します。  <br/> |
-|ELEMENT_SENTINEL  <br/> |0x0000  <br/> |0x0000  <br/> |これ以上、 **persistelement**ブロックが処理されないことを示します。  <br/> |
+|RSF_ELID_HEADER  <br/> |0x0002  <br/> |0x0004  <br/> |このブロックの **ElementData** フィールドに DWORD ヘッダー値が含まれているかどうかを示します。 この値の解釈方法は、ブロックの **PersistID 型によって異** なります。  <br/> [[MS-OXOSFLD] で](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb.aspx)指定された **PersistID** 型の場合、この値は 0 です。  <br/> |
+|RSF_ELID_ENTRYID  <br/> |0x0001  <br/> |変数  <br/> |このブロックに **、PersistID** で指定されたフォルダーの **EntryID が含まれるかどうかを示します**。  <br/> |
+|ELEMENT_SENTINEL  <br/> |0x0000  <br/> |0x0000  <br/> |**PersistElement** ブロックが処理されなきを示します。  <br/> |
    
-**persistelementtype**の値がここで定義されている値ではない場合、 **persistelementtype**ブロックは無視され、ELEMENT_SENTINEL **ElementID**が処理されるか、またはストリームの終わりに達するまで、処理は続行されます。 
+**PersistElementType** 値がここで定義されている値の 1 つではない場合 **、PersistElement** ブロックは無視され、ELEMENT_SENTINEL **ElementID** が処理されるまで、またはストリームの末尾に達するまで処理が継続されます。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
+[[MS-OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
   
-> 許可/ブロックリストの処理と、迷惑メールメッセージの決定を有効にします。
+> 許可/ブロック リストの処理と迷惑メール メッセージの決定を有効にできます。
     
-[[OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
+[[MS-OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
   
 > メールボックス内の特別なフォルダーを作成および検索するためのプロパティと操作を指定します。
     
-[[OXPHISH]](https://msdn.microsoft.com/library/ed49ab26-ba13-4d4c-8a94-98d4ceecd4b7%28Office.15%29.aspx)
+[[MS-OXPHISH]](https://msdn.microsoft.com/library/ed49ab26-ba13-4d4c-8a94-98d4ceecd4b7%28Office.15%29.aspx)
   
-> 受信者を漏洩機密情報 (パスワードやその他の個人情報など) に信頼できないソースに誘導するように設計された電子メールメッセージを識別してマークします。
+> 受信者を騙して機密情報 (パスワードや他の個人情報など) を信頼できないソースに開示するように設計された電子メール メッセージを識別およびマークします。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-Mapitags
+Mapitags.h
   
-> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
+> 関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。
     
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
 ## <a name="see-also"></a>関連項目
 
@@ -119,7 +119,7 @@ mapidefs.h
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

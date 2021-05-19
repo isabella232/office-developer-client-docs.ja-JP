@@ -29,7 +29,7 @@ ms.locfileid: "33416700"
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
    
 ```cpp
 typedef struct _SMAPIFormProp
@@ -56,55 +56,55 @@ typedef struct _SMAPIFormProp
 
  **ulFlags**
   
-> **smapiformprop**構造体の文字列の書式を識別するために使用されるフラグです。 次のフラグを設定できます。 
+> **SMAPIFormProp** 構造体の文字列の形式を区別するために使用されるフラグ。 次のフラグを設定できます。 
     
 MAPI_UNICODE 
   
-> 返される文字列は、Unicode 形式です。 MAPI_UNICODE が設定されていない場合、文字列は ANSI 形式になります。
+> 返される文字列は Unicode 形式です。 このMAPI_UNICODE設定されていない場合、文字列は ANSI 形式です。
     
- **nproptype**
+ **nPropType**
   
-> 最も重要な単語が0に設定されている、名前付きプロパティの型。 
+> 最も重要な単語が 0 に設定された名前付きプロパティの種類。 
     
  **nmid**
   
-> 名前付きプロパティの名前。プロパティセットを識別する**GUID**構造、およびインターフェイス識別子とフォーム名を表す数値または文字列値のいずれかが含まれます。 
+> プロパティ セットを識別する **GUID** 構造と、インターフェイス識別子とフォーム名を表す数値または文字列値を含む、名前付きプロパティの名前。 
     
- **pszdisplayname**
+ **pszDisplayName**
   
 > 名前付きプロパティの表示名へのポインター。
     
- **nの種類**
+ **nSpecialType**
   
-> **u**メンバに含まれるデータの種類を示す値。 可能な値は次のとおりです。 
+> u メンバーに含まれるデータの種類を表す **値** 。 指定できる値は次のとおりです。 
     
 FPST_VANILLA 
   
-> **u**メンバに列挙が含まれていません。 
+> **u メンバー** には列挙体が含めではありません。 
     
 FPST_ENUM_PROP 
   
-> **u**メンバーには、列挙を記述する構造体が含まれています。 
+> **u メンバー** には、列挙を記述する構造が含まれる。 
     
  **u**
   
-> 名前と名前付きプロパティの番号の関連付けを説明する共用体。 一部のプロパティを使用すると、 **u**メンバーが空になります。 その他のプロパティの場合は、次のメンバーで構成される構造で表されます。 
+> 名前付きプロパティの名前と番号の関連付けを表す共用体。 一部のプロパティを使用すると **、u** メンバーは空になります。 他のプロパティでは、次のメンバーで構成される構造で表されます。 
     
  **nmidIdx**
   
-> 名前付きプロパティのプロパティセットと識別子を含む[mapinameid](mapinameid.md)構造。 
+> 名前付 [きプロパティの](mapinameid.md) プロパティ セットと識別子を含む MAPINAMEID 構造体。 
     
- **cfpevavailable**
+ **cfpevAvailable**
   
-> **pfpevavailable**メンバーによって示されている配列内の[smapiformpropenumval](smapiformpropenumval.md)構造体の数。 
+> pfpevAvailable メンバーが指す配列内の [SMAPIFormPropEnumVal](smapiformpropenumval.md) **構造体の** 数。 
     
- **pfpevavailable**
+ **pfpevAvailable**
   
-> **smapiformpropenumval**構造体の配列へのポインター。それぞれには、名前付きプロパティの値が格納されています。 
+> **SMAPIFormPropEnumVal** 構造体の配列へのポインターで、それぞれ名前付きプロパティの値を保持します。 
     
 ## <a name="remarks"></a>注釈
 
-**smapiformprop**構造体には、 [imapiforminfo](imapiforminfoimapiprop.md)インターフェイスの定義の一部として使用されるフォームプロパティに関する情報が含まれています。**nの種類**には、 **smapiformprop**の一部である**u**共用体に適用されるタグが含まれています。
+**SMAPIFormProp** 構造体には [、IMAPIFormInfo](imapiforminfoimapiprop.md)インターフェイスの定義の一部として使用されるフォーム プロパティに関する情報が含まれる。**nSpecialType** には **、SMAPIFormProp** の一部である **u** 共用体に適用されるタグが含まれる。
   
 ## <a name="see-also"></a>関連項目
 

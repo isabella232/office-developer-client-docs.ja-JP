@@ -21,8 +21,8 @@ ms.locfileid: "33418611"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームオブジェクトからの通知の登録と処理は、他の MAPI オブジェクトの処理とは異なります。 フォーム通知のアドバイズシンクは、 **IMAPIAdviseSink**ではなく、 **IMAPIViewAdviseSink**または**IMAPIFormAdviseSink**のいずれかのインターフェイスを実装します。 [IMAPIViewAdviseSink: iunknown](imapiviewadvisesinkiunknown.md)および[IMAPIFormAdviseSink: iunknown](imapiformadvisesinkiunknown.md)には、複数のメソッドがあります。これには、対応するアドバイズソースが生成できるイベントのそれぞれについて1つのメソッドがあります。 たとえば、 **IMAPIFormAdviseSink**には次の2つのメソッドがあります。 [IMAPIFormAdviseSink:: OnChange](imapiformadvisesink-onchange.md)を使用して、フォームビューアーの状態と[IMAPIFormAdviseSink:: OnActivateNext](imapiformadvisesink-onactivatenext.md)の変更を処理し、新しいメッセージを正しいフォームで表示します。 
+フォーム オブジェクトからの通知の登録と処理は、他の MAPI オブジェクトとは異なるプロセスです。 フォーム通知のシンクに対するアドバイスは **、IMAPIAdviseSink** インターフェイスまたは **IMAPIFormAdviseSink** インターフェイスを **IMAPIAdviseSink** インターフェイスではなく実装します。 [IMAPIViewAdviseSink : IUnknown](imapiviewadvisesinkiunknown.md) および [IMAPIFormAdviseSink : IUnknown](imapiformadvisesinkiunknown.md) には、対応するアアドバイス ソースが生成できる可能性のあるイベントごとに 1 つ、複数のメソッドがあります。 たとえば **、IMAPIFormAdviseSink** には、フォーム ビューアーの状態の変更を処理する [IMAPIFormAdviseSink::OnChange](imapiformadvisesink-onchange.md) と、正しいフォームで新しいメッセージを表示する [IMAPIFormAdviseSink::OnActivateNext](imapiformadvisesink-onactivatenext.md) の 2 つのメソッドがあります。 
   
-フォームのイベント処理戦略は、OLE で実装されているイベント処理戦略に似ています。 クライアントは、ほとんどの MAPI オブジェクトの場合とは異なり、特定のイベントの種類に対して登録されません。 通知を登録すると、特定のアドバイズソースによって生成されるあらゆる種類のイベントを受け取ることが想定されます。 登録されているすべてのイベントを処理するには、 **IMAPIAdviseSink:: onnotify**を記述する必要があるため、これを実装するには、多数の異なるイベントに登録するクライアントにとっては複雑な場合があります。 form アドバイズシンクオブジェクトのメソッドは1つのイベントを対象としているため、これらのメソッドを実装する方が簡単です。 
+フォームのイベント処理戦略は、OLE で実装されたイベント処理戦略に似ています。 クライアントは、ほとんどの MAPI オブジェクトの場合と同様に、特定のイベントの種類に登録しません。 通知に登録すると、特定のアドバイス ソースによって生成できる任意の種類のイベントを受信できるという前提があります。 すべての登録済みイベントを処理するために **IMAPIAdviseSink::OnNotify** を記述する必要があります。 フォーム内のメソッドはシンク オブジェクトが 1 つのイベントを対象とするとアドバイスしますので、これらのメソッドを実装する方が簡単です。 
   
 

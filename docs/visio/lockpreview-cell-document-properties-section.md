@@ -31,7 +31,7 @@ ms.locfileid: "33418863"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [lockpreview]  <br/> |
+| セル名:  <br/> | LockPreview  <br/> |
    
 プログラムから、インデックスによって [LockPreview] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

@@ -24,7 +24,7 @@ ms.locfileid: "33417890"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [quickstylefillmatrix]  <br/> |
+| セル名:  <br/> | QuickStyleFillMatrix  <br/> |
    
 プログラムから、インデックスによって [**QuickStyleFillMatrix**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

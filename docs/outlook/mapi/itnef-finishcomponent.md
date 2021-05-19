@@ -25,7 +25,7 @@ ms.locfileid: "33416441"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージから1つずつ、トランスポートに依存しないカプセル化形式 (TNEF) ストリームに個々のコンポーネントを処理します。
+メッセージの個々のコンポーネントを一度に 1 つ処理して、Transport-Neutralカプセル化形式 (TNEF) ストリームに処理します。
   
 ```cpp
 HRESULT FinishComponent(
@@ -42,35 +42,35 @@ HRESULT FinishComponent(
 
  _ulFlags_
   
-> 順番終了するコンポーネントを制御するフラグのビットマスク。 次のフラグのいずれかまたは両方を設定する必要があります。
+> [in]終了するコンポーネントを制御するフラグのビットマスク。 次のいずれかのフラグを設定する必要があります。
     
 TNEF_COMPONENT_ATTACHMENT 
   
-> attachment オブジェクトの処理が完了します。_ulComponentID_パラメーターには、添付ファイルの**PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) プロパティが含まれています。 
+> 添付ファイル オブジェクトの処理が完了します。  _ulComponentID_ パラメーターには、添付 **ファイルPR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) プロパティが含まれる。 
     
 TNEF_COMPONENT_MESSAGE 
   
-> メッセージオブジェクトの処理が完了します。 
+> メッセージ オブジェクトの処理が完了します。 
     
  _ulComponentID_
   
-> [in] 0 は、メッセージの処理を示します。または、処理される添付ファイルの**PR_ATTACH_NUM**プロパティです。 TNEF_COMPONENT_MESSAGE フラグが_ulflags_パラメーターで設定されている場合、 _ulComponentID_は0である必要があります。 
+> [in] 0 メッセージの処理を示す場合、 **または** PR_ATTACH_NUM添付ファイルのプロパティを指定します。 _ulFlags_ パラメーター TNEF_COMPONENT_MESSAGEフラグが設定されている場合 _、ulComponentID_ は 0 である必要があります。 
     
- _lpcustomproplist_
+ _lpCustomPropList_
   
-> 順番_lpcustomprops_パラメーターに渡されたプロパティを識別するプロパティタグを含む[SPropTagArray](sproptagarray.md)構造体へのポインター。 lpcustomproplist パラメーターの_lpcustomprops_および property タグの各プロパティ値には、1対1で対応__ する必要があります。 
+> [in]_lpCustomProps_ パラメーターで渡されるプロパティを識別するプロパティ タグを含む [SPropTagArray](sproptagarray.md)構造体へのポインター。 _lpCustomProps_ の各プロパティ値と _lpCustomPropList_ パラメーターのプロパティ タグの間には、1 対 1 の対応が必要です。 
     
- _lpcustomprops_
+ _lpCustomProps_
   
-> 順番エンコードするプロパティのプロパティ値を含む[spropvalue](spropvalue.md)構造体へのポインター。 
+> [in]エンコードするプロパティのプロパティ値を含む [SPropValue](spropvalue.md) 構造体へのポインター。 
     
- _lpproplist_
+ _lpPropList_
   
-> 順番エンコードするプロパティのプロパティタグを含む**SPropTagArray**構造体へのポインター。 
+> [in]エンコードするプロパティのプロパティ タグを含む **SPropTagArray** 構造体へのポインター。 
     
- _lppproblems 問題_
+ _lppProblems_
   
-> 読み上げ返された[STnefProblemArray](stnefproblemarray.md)構造体へのポインターへのポインター。 **STnefProblemArray**構造体は、どのプロパティが適切にエンコードされなかったかを示します。 _lppproblems_パラメーターで NULL が渡された場合、プロパティ問題の配列は返されません。 
+> [out]返される [STnefProblemArray 構造体へのポインターを指すポインター](stnefproblemarray.md) 。 **STnefProblemArray** 構造体は、適切にエンコードされていないプロパティがある場合は、どのプロパティを示します。 _lppProblems_ パラメーターに NULL が渡された場合、プロパティの問題の配列は返されません。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -80,17 +80,17 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-トランスポートプロバイダー、メッセージストアプロバイダー、ゲートウェイは、 **ITnef:: finish コンポーネント**メソッドを呼び出して、1つのコンポーネント (メッセージまたは添付ファイル) に対して TNEF 処理を実行します。これは、 _ulflags_パラメーターに設定されているフラグによって示されます。 
+トランスポート プロバイダー、メッセージ ストア プロバイダー、ゲートウェイは **ITnef::FinishComponent** メソッドを呼び出して  _、ulFlags_ パラメーターで設定されたフラグで示されているメッセージまたは添付ファイルのどちらかの 1 つのコンポーネントに対して TNEF 処理を実行します。 
   
-コンポーネント処理を有効にするために、呼び出しプロバイダーまたはゲートウェイは、オブジェクトを開いてエンコードを受け取る[OpenTnefStream](opentnefstream.md)または[OpenTnefStreamEx](opentnefstreamex.md)関数の_ulflags_の TNEF_COMPONENT_ENCODING フラグを渡します。 
+コンポーネント処理を有効にする場合、呼び出し元プロバイダーまたはゲートウェイは、エンコードを受け取るオブジェクトを開いた [OpenTnefStream](opentnefstream.md)または [OpenTnefStreamEx](opentnefstreamex.md)関数の _ulFlags_ で TNEF_COMPONENT_ENCODING フラグを渡します。 
   
-_lpcustomproplist_パラメーターと_lpcustomprops_パラメーターの値を渡すと、 [ITnef:: setprops](itnef-setprops.md)メソッドによって実行されたコンポーネントエンコードは同じになります。 _lpproplist_パラメーターで値を渡すと、 [ITnef:: addprops](itnef-addprops.md)メソッドによって実行されるコンポーネントエンコードは、 _ulflags_で TNEF_PROP_INCLUDE フラグが設定された状態で実行されます。 これらの値を渡すと、複数の呼び出しではなく、1回の呼び出しでエンコードを実行できます。
+_lpCustomPropList_ パラメーターと _lpCustomProps_ パラメーターで値を渡す場合 [、ITnef::SetProps](itnef-setprops.md)メソッドで行われるコンポーネント エンコードと同等のコンポーネント エンコードが実行されます。 _lpPropList_ パラメーターに値を渡す場合 _、ulFlags_ で TNEF_PROP_INCLUDE フラグが設定された [ITnef::AddProps](itnef-addprops.md)メソッドで行われるのと同等のコンポーネント エンコードが実行されます。 これらの値を渡すと、複数の呼び出しではなく、1 回の呼び出しでエンコードを実行できます。
   
-tnef 実装は、終了**コンポーネント**プロセスを停止することなく、tnef ストリームエンコードの問題を報告します。 _lppproblems_で返される**STnefProblemArray**構造は、どの TNEF 属性または MAPI プロパティ (存在する場合) を処理できなかったかを示します。 **STnefProblemArray**に含まれている**STnefProblem**構造体の**scode**メンバーで返される値は、特定の問題を示します。 プロバイダーまたはゲートウェイは、終了**コンポーネント**が問題レポートを返さないすべてのプロパティまたは属性が正常に処理されたことを前提として機能します。 
+TNEF 実装では **、FinishComponent** プロセスを停止せずに TNEF ストリーム エンコードの問題を報告します。 _lppProblems_ で返される **STnefProblemArray** 構造体は、処理できない TNEF 属性または MAPI プロパティを示します(指定されている場合)。 **STnefProblemArray** に含まれる **STnefProblem** 構造体の scode メンバーで返される値は、特定の問題を示します。  プロバイダーまたはゲートウェイは **、FinishComponent** が問題レポートを返さないすべてのプロパティまたは属性が正常に処理されたという前提で動作できます。 
   
-プロバイダーまたはゲートウェイが問題のある配列で機能しない場合は、 _lppproblems_で NULL を渡すことができます。この場合、問題の配列は返されません。
+プロバイダーまたはゲートウェイが問題の配列で動作しない場合は  _、lppProblems で NULL を渡す可能性があります_。この場合、問題のある配列は返されません。
   
-_lppproblems_で返される値は、呼び出しが S_OK を返す場合にのみ有効です。 S_OK が返された場合、プロバイダーまたはゲートウェイは、 [STnefProblemArray](stnefproblemarray.md)構造体で返される値をチェックする必要があります。 呼び出しでエラーが発生した場合、 **STnefProblemArray**構造体は入力されず、呼び出しプロバイダーまたはゲートウェイは構造を使用したり、解放したりすることはできません。 呼び出しでエラーが発生しない場合は、 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して、呼び出しプロバイダーまたはゲートウェイが**STnefProblemArray**のメモリを解放する必要があります。 
+_lppProblems_ で返される値は、呼び出しが無効な値を返すS_OK。 このS_OK返される場合、プロバイダーまたはゲートウェイは [、STnefProblemArray](stnefproblemarray.md) 構造体で返される値を確認する必要があります。 呼び出しでエラーが発生した場合 **、STnefProblemArray** 構造体は入力されないので、呼び出し元プロバイダーまたはゲートウェイは構造体を使用または解放しません。 呼び出しでエラーが発生しない場合、呼び出し元プロバイダーまたはゲートウェイは [、MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出すことによって **STnefProblemArray** のメモリを解放する必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2a587d8c-f28b-45a6-a3da-cc33052988dc
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 1a8de27358e0987e8f686cc11ab4b02a0bd07f6c
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,12 +25,12 @@ ms.locfileid: "32336492"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-検索フォルダーを識別するグローバル一意識別子 (GUID) を格納します。
+検索フォルダーを識別するグローバル一意識別子 (GUID) が含まれる。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_WB_SF_ID  <br/> |
-|識別子:  <br/> |0x684 2  <br/> |
+|識別子:  <br/> |0x6842  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |検索  <br/> |
    
@@ -38,23 +38,23 @@ ms.locfileid: "32336492"
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
+[[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
   
-> 検索フォルダーリストの構成を操作するためのプロパティと操作を指定します。
+> 検索フォルダー 一覧の構成を操作するためのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -64,7 +64,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

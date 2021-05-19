@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3174d931-e045-44db-a203-a27c9c00f4fc
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: a407c065a51870ba9908fbd9b626d7f287a1df4e
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,37 +25,37 @@ ms.locfileid: "32336947"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ジャーナルに関するメタデータを格納します。
+ジャーナルに関するメタデータが含まれます。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidlogflags  <br/> |
-|プロパティセット:  <br/> |PSETID_Log  <br/> |
-|ロング ID (LID):  <br/> |0x0000870c  <br/> |
+|関連するプロパティ:  <br/> |dispidLogFlags  <br/> |
+|プロパティ セット:  <br/> |PSETID_Log  <br/> |
+|長い ID (LID):  <br/> |0x0000870C  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |仕訳帳  <br/> |
+|エリア:  <br/> |ジャーナル  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-ジャーナルに関するメタデータを含むビットフィールドは、0または "0x40000000" である必要があります。
+ジャーナルに関するメタデータを含むビット フィールドは、ゼロまたは "0x40000000" である必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
-[[OXOJRNL]](https://msdn.microsoft.com/library/2aa04fd2-0f36-4ce4-9178-c0fc70aa8d43%28Office.15%29.aspx)
+[[MS-OXOJRNL]](https://msdn.microsoft.com/library/2aa04fd2-0f36-4ce4-9178-c0fc70aa8d43%28Office.15%29.aspx)
   
-> 仕訳帳に対して許容されるプロパティと操作を指定します。
+> ジャーナルに対して許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
 ## <a name="see-also"></a>関連項目
 
@@ -65,7 +65,7 @@ mapidefs.h
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -1,5 +1,5 @@
 ---
-title: imapiprovidershutdownqueryfastshutdown
+title: IMAPIProviderShutdownQueryFastShutdown
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33418219"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI プロバイダーに対して、高速シャットダウンのサポートを照会します。 
+MAPI プロバイダーに高速シャットダウンのサポートを照会します。 
   
 ```cpp
 HRESULT QueryFastShutdown ();
@@ -35,17 +35,17 @@ HRESULT QueryFastShutdown ();
 
 S_OK
   
-> mapi プロバイダーは、高速シャットダウンを実行するための mapi クライアントをサポートします。
+> MAPI プロバイダーは、高速シャットダウンを実行する MAPI クライアントをサポートしています。
     
 MAPI_E_NO_SUPPORT
   
-> mapi プロバイダーは、高速シャットダウンを実行するための mapi クライアントをサポートしていません。
+> MAPI プロバイダーは、高速シャットダウンを実行する MAPI クライアントをサポートしていない。
     
 ## <a name="remarks"></a>注釈
 
-クライアントの高速シャットダウンをサポートする必要がない MAPI プロバイダーは、まだ[imapiprovidershutdown](imapiprovidershutdowniunknown.md)インターフェイスを実装していて、 **imapiprovidershutdown:: queryfastshutdown**メソッドが MAPI_E_NO_SUPPORT を返すようにしてください。 outlook を MAPI クライアントとして使用する場合、outlook は、すべての外部参照が終了するまで待機します。 
+クライアントの高速シャットダウンをサポートする必要のない MAPI プロバイダーは [、IMAPIProviderShutdown](imapiprovidershutdowniunknown.md) インターフェイスを実装し **、IMAPIProviderShutdown::QueryFastShutdown** メソッドが MAPI_E_NO_SUPPORT を返す必要があります。 MAPI Outlookとして使用すると、Outlook前にすべての外部参照が解放されるのを待つ必要があります。 
   
-高速シャットダウンのためのユーザーの Windows レジストリ設定によっては、 **imapiprovidershutdown**インターフェイスを実装していないと、クライアントの高速シャットダウンが必ずしも妨げられるわけではありません。 
+高速シャットダウン用のユーザーの Windows レジストリ設定によっては **、IMAPIProviderShutdown** インターフェイスを実装しない場合でも、クライアントの高速シャットダウンが必ずしも妨げであるとは限りません。 
   
 ## <a name="see-also"></a>関連項目
 

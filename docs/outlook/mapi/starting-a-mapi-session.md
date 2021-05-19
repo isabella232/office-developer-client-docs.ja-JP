@@ -21,17 +21,17 @@ ms.locfileid: "32336345"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-セッションの起動時に大量の作業が実行されますが、必要なタスクは最小限で済みます。 この作業の多くは、 [MAPIInitialize](mapiinitialize.md)および[MAPILogonEx](mapilogonex.md)呼び出しの MAPI 処理で行われます。 どちらの関数も、通知処理やユーザーインターフェイスなどのセッションの側面を制御するための入力パラメーターとしてフラグを受け入れます。 **MAPIInitialize**を呼び出して mapi ライブラリと**MAPILogonEx**を初期化し、mapi サブシステムにログオンするときに、これらの各フラグを設定した場合の影響を理解しておくことが重要です。 
+セッションの起動中に実行される作業量は非常に多く、必要なタスクは最小限です。 この作業の多くは [、MAPIInitialize](mapiinitialize.md) 呼び出しと [MAPILogonEx](mapilogonex.md) 呼び出しの MAPI 処理で行われます。 どちらの関数も、通知処理やユーザー インターフェイスなどのセッションの側面を制御するための入力パラメーターとしてフラグを受け入れる。 **MAPIInitialize** を呼び出して MAPI ライブラリを初期化し、MAPI サブシステムにログオンする **MAPILogonEx** を呼び出す場合、これらの各フラグを設定した結果を理解することが重要です。 
   
  **MAPI セッションを開始するには**
   
-1. **MAPIInitialize**を呼び出して、MAPI ライブラリの標準セットを初期化します。 
+1. **MAPIInitialize を呼び** 出して、MAPI ライブラリの標準セットを初期化します。 
     
-2. ole ライブラリを使用する必要がある場合は、ole 関数[oleinitialize](https://msdn.microsoft.com/library/9a13e7a0-f2e2-466b-98f5-38d5972fa391%28Office.15%29.aspx)を呼び出します。
+2. OLE ライブラリを使用する必要がある場合は、OLE 関数 [OleInitialize を呼び出します](https://msdn.microsoft.com/library/9a13e7a0-f2e2-466b-98f5-38d5972fa391%28Office.15%29.aspx)。
     
-3. MAPI ユーティリティライブラリを使用する必要がある場合は、 [ScInitMapiUtil](scinitmapiutil.md)を呼び出してください。
+3. MAPI ユーティリティ ライブラリを使用する必要がある場合は [、ScInitMapiUtil を呼び出します](scinitmapiutil.md)。
     
-4. 有効なプロファイルを使用して**MAPILogonEx**を呼び出して、MAPI サブシステムにログオンします。 **MAPILogonEx**は、プロファイルに含まれているメッセージサービスの各サービスプロバイダーの構成を確認し、必要に応じて、ユーザーに追加情報を要求します。 **MAPILogonEx**が完了すると、構成されたサービスプロバイダーがサービスの準備が整います。 
+4. **MAPI サブシステムにログオンする** 有効なプロファイルを使用して MAPILogonEx を呼び出します。 **MAPILogonEx** は、プロファイルに含まれるメッセージ サービス内の各サービス プロバイダーの構成を確認し、必要に応じて、可能な場合は追加情報をユーザーに求めるプロンプトを表示します。 **MAPILogonEx が** 完了すると、構成済みのサービス プロバイダーはサービスの準備が整います。 
     
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -41,7 +41,7 @@ ms.locfileid: "32336345"
     
 [OLE for MAPI の初期化](initializing-ole-for-mapi.md)
   
-> MAPI で使用するために OLE を初期化するために必要な呼び出しについて説明します。
+> MAPI で使用するために OLE を初期化する呼び出しについて説明します。
     
 [MAPI ユーティリティの初期化](initializing-the-mapi-utilities.md)
   
@@ -49,6 +49,6 @@ ms.locfileid: "32336345"
     
 [MAPI へのログオン](logging-on-to-mapi.md)
   
-> クライアントアプリケーションが MAPI サブシステムにログオンする方法について説明します。
+> クライアント アプリケーションが MAPI サブシステムにログオンする方法について説明します。
     
 

@@ -1,5 +1,5 @@
 ---
-title: サービスプロバイダーのシャットダウン
+title: サービス プロバイダーのシャットダウン
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -15,61 +15,61 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32339208"
 ---
-# <a name="shutting-down-a-service-provider"></a>サービスプロバイダーのシャットダウン
+# <a name="shutting-down-a-service-provider"></a>サービス プロバイダーのシャットダウン
 
  
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアントが[imapisession:: Logoff](imapisession-logoff.md)メソッドを呼び出してセッションを終了し、すべてのアクティブなサービスプロバイダーをシャットダウンすると、次のメソッドが呼び出されます。 
+クライアントが [IMAPISession::Logoff](imapisession-logoff.md) メソッドを呼び出してセッションを終了し、すべてのアクティブなサービス プロバイダーをシャットダウンすると、MAPI は次のメソッドを呼び出します。 
   
-- [IABLogon:: ログオフ](iablogon-logoff.md)アドレス帳プロバイダー。 
+- [アドレス帳プロバイダーの IABLogon::Logoff。](iablogon-logoff.md) 
     
-- [IMSLogon:: ログオフ](imslogon-logoff.md)するメッセージストアプロバイダー。 
+- [メッセージ ストア プロバイダーの IMSLogon::Logoff。](imslogon-logoff.md) 
     
-- [IXPLogon::](ixplogon-transportlogoff.md)トランスポートプロバイダーの transportlogoff。 
+- [IXPLogon::TransportLogoff for](ixplogon-transportlogoff.md) transport providers. 
     
-これらのメソッドには、同様の実装があります。 logoff メソッドが実行する主要なタスクは次のとおりです。
+これらのメソッドは、同様の実装を持っています。 ログオフ メソッドが実行する主なタスクは次のとおりです。
   
-- サブオブジェクトおよびステータスオブジェクトを含む、開いているオブジェクトをすべて解放します。
+- サブオブジェクトや状態オブジェクトを含む、開いているすべてのオブジェクトを解放します。
     
-- サポートオブジェクトの[IUnknown:: Release](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx)メソッドを呼び出して、参照カウントをデクリメントします。 
+- サポート オブジェクトの [IUnknown::Release](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) メソッドを呼び出して、参照カウントをデクレメントします。 
     
-- プロバイダーの登録済みの[MAPIUID](mapiuid.md)構造体をすべて削除します。 
+- プロバイダーの登録済み [MAPIUID 構造体をすべて削除](mapiuid.md) します。 
     
-- 状態テーブルのプロバイダーの行を削除します。
+- 状態テーブル内のプロバイダーの行を削除します。
     
-- リソースのクリーンアップに関連するすべてのタスクを実行します。たとえば、次のようになります。
+- 次のようなリソースのクリーンアップに関連するタスクを実行します。
     
-  - リモートサーバーとの接続を終了します。
+  - リモート サーバーとの接続を終了する。
     
-  - ログオンオブジェクトの参照カウントをデクリメントします。
+  - ログオン オブジェクトの参照カウントをデクレメントします。
     
-  - プロバイダーが格納するログオンオブジェクトの一覧から、ログオンオブジェクトを削除します。
+  - プロバイダーが格納するログオン オブジェクトの一覧からログオン オブジェクトを削除する。
     
-  - デバッグモードで、リークしたメモリがあるオブジェクトを検索するためのトレースを発行します。
+  - デバッグ モードでは、メモリがリークしたオブジェクトを検索するトレースを発行します。
     
-logoff メソッドが戻ると、MAPI は次のように呼び出します。
+logoff メソッドが返された場合、MAPI は次を呼び出します。
   
-- ログオンオブジェクトの**IUnknown:: Release**メソッド。 
+- ログオン オブジェクトの **IUnknown::Release** メソッド。 
     
-- 最終的なクリーンアップタスクを実行するには、プロバイダーオブジェクトの**Shutdown**メソッドを使用します。 プロバイダーの種類に応じて、次のいずれかのメソッドが呼び出されます。 
+- プロバイダー オブジェクトの **Shutdown** メソッドを使用して、最終的なクリーンアップ タスクを実行します。 プロバイダーの種類に応じて、次のいずれかのメソッドが呼び出されます。 
     
-  - [IABProvider::](iabprovider-shutdown.md)アドレス帳プロバイダーのシャットダウン 
+  - [IABProvider::アドレス帳](iabprovider-shutdown.md) プロバイダーのシャットダウン 
     
-  - [IMSProvider::](imsprovider-shutdown.md)メッセージストアプロバイダーのシャットダウン 
+  - [IMSProvider::メッセージ ストア](imsprovider-shutdown.md) プロバイダーのシャットダウン 
     
-  - [ixpprovider:: Shutdown](ixpprovider-shutdown.md) for transport providers 
+  - [IXPProvider::トランスポート](ixpprovider-shutdown.md) プロバイダーのシャットダウン 
     
-- プロバイダーオブジェクトの**IUnknown:: Release**メソッド。 
+- プロバイダー オブジェクトの **IUnknown::Release** メソッド。 
     
-プロバイダーがメッセージストアの場合、 [IMsgStore:: storelogoff](imsgstore-storelogoff.md)へのクライアント呼び出しでも、シャットダウンプロセスが開始されます。 **storelogoff**は、1つの特定のメッセージストアプロバイダーをシャットダウンし、セッションには影響を与えません。 このメソッドを使用すると、メッセージストアプロバイダーのみをシャットダウンできます。特定のアドレス帳またはトランスポートプロバイダーをシャットダウンする明示的な方法はありません。 **storelogoff**呼び出しに応答する方法については、「[メッセージストアプロバイダーのシャットダウン](shutting-down-a-message-store-provider.md)」を参照してください。
+プロバイダーがメッセージ ストアの場合は [、IMsgStore::StoreLogoff](imsgstore-storelogoff.md) へのクライアント呼び出しでもシャットダウン プロセスが開始されます。 **StoreLogoff は** 、1 つの特定のメッセージ ストア プロバイダーをシャットダウンし、セッションには影響しません。 このメソッドを使用してシャットダウンできるのは、メッセージ ストア プロバイダーのみです。特定のアドレス帳またはトランスポート プロバイダーをシャットダウンする明示的な方法はありません。 **StoreLogoff** 呼び出しに応答する方法の詳細については、「メッセージ ストア プロバイダーのシャットダウン [」を参照してください](shutting-down-a-message-store-provider.md)。
   
-MAPI が Win32 API 関数**FreeLibrary**を呼び出すときに、プロバイダーの DLL がアンロードされます。最後にアクティブなクライアントが[MAPIUninitialize](mapiuninitialize.md)を呼び出した後で行われます。 この時点で、サービスプロバイダーはシャットダウンを終了しています。 
+MAPI が Win32 API 関数 **FreeLibrary** を呼び出す場合、プロバイダーの DLL はアンロードされます。最後のアクティブなクライアントが [MAPIUninitialize](mapiuninitialize.md)を呼び出した後に行われた呼び出しです。 この時点で、サービス プロバイダーはシャットダウンを終了します。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[MAPI サービスプロバイダー](mapi-service-providers.md)
+[MAPI サービス プロバイダー](mapi-service-providers.md)
 

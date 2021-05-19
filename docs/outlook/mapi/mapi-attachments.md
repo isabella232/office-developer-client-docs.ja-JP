@@ -21,7 +21,7 @@ ms.locfileid: "33417834"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-一部のメッセージストアプロバイダーを使用すると、クライアントは、追加された情報をファイル、OLE オブジェクト、メッセージ、またはバイナリデータ形式でメッセージに関連付けることができます。 この追加情報は、メッセージの添付ファイルと呼ばれます。 添付ファイルは、メッセージによってのみ作成、管理、およびアクセスされるので、メッセージサブオブジェクトと見なされます。 添付ファイルには、access のエントリ識別子を指定しなくても、添付ファイル番号と呼ばれる連続番号が付けられます。 この番号は、メッセージ内の添付ファイルを一意に識別しますが、メッセージストア内にあるとは限りません。 2つの異なるメッセージは、同じ添付ファイル番号を持つ複数の添付ファイルを持つことができます。 添付ファイルの番号は、メッセージが開かれていて、 **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) プロパティに格納されている場合に限り有効です。
+一部のメッセージ ストア プロバイダーでは、クライアントが追加された情報をファイル、OLE オブジェクト、メッセージ、またはバイナリ データの形式でメッセージに関連付けできます。 この追加された情報は、メッセージの添付ファイルと呼ばれる。 添付ファイルはメッセージを通じてのみ作成、管理、およびアクセスされるので、メッセージ サブオブジェクトと見なされます。 添付ファイルは、アクセス用のエントリ識別子を持つのではなく、添付ファイル番号と呼ばれる連続した番号を持つ。 この番号は、メッセージ内の添付ファイルを一意に識別しますが、必ずしもメッセージ ストア内ではありません。 2 つの異なるメッセージには、同じ添付ファイル番号を持つ異なる添付ファイルを含めできます。 添付ファイル番号は、メッセージが開いている限り有効で、PR_ATTACH_NUM **(** [PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) プロパティに格納されます。
   
 ���ׂẴ��b�Z�[�W�̓Y�t�t�@�C���ɂ��Ă̊T�v���ɃA�N�Z�X����ɂ́A�N���C�A���g�́A���̓Y�t�t�@�C���̃e�[�u����擾���܂��B�Y�t�t�@�C���̃e�[�u���ɂ́A�Y�t�t�@�C����Y�t�t�@�C���̐��A���R�[�h �L�[�Ȃǂɒ��ڃA�N�Z�X �N���C�A���g��g�p���Ă����񂪊܂܂�܂��B�N���C�A���g�ł̓Y�t�t�@�C���̃e�[�u����擾�ł��܂��B
   
@@ -29,7 +29,7 @@ ms.locfileid: "33417834"
     
 - **IMAPIProp::OpenProperty** �𔭐M���܂��B�ڍׂɂ��ẮA [IMAPIProp::OpenProperty](imapiprop-openproperty.md)��Q�Ƃ��Ă��������B
     
-Message store providers are expected to support both of these approaches. **openproperty**アプローチでは、呼び出し元が IID_IMAPITable をインターフェイス識別子として指定し、 **PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) をプロパティタグとして指定する必要があります。 **PR_MESSAGE_ATTACHMENTS**は、メッセージの添付ファイルテーブルを表す table オブジェクトプロパティです。 メッセージストアプロバイダーは、メッセージごとに**PR_MESSAGE_ATTACHMENTS**を設定し、 **imapiprop:: getproplist**メソッドから返されたプロパティタグの配列に含める必要があります。 For more information, see [IMAPIProp::GetPropList](imapiprop-getproplist.md).
+Message store providers are expected to support both of these approaches. **OpenProperty** アプローチでは、呼び出し元が IID_IMAPITable をインターフェイス識別子として **、PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) をプロパティ タグとして指定する必要があります。 **PR_MESSAGE_ATTACHMENTS** は、メッセージの添付ファイル テーブルを表すテーブル オブジェクト プロパティです。 メッセージ ストア プロバイダーは、各メッセージPR_MESSAGE_ATTACHMENTSを設定し **、IMAPIProp::GetPropList** メソッドから返されるプロパティ タグの配列に含める必要があります。 For more information, see [IMAPIProp::GetPropList](imapiprop-getproplist.md).
   
  **PR_MESSAGE_ATTACHMENTS**��g�p�ł��܂��B 
   

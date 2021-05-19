@@ -1,5 +1,5 @@
 ---
-title: Comment マクロブロック (Access カスタム web アプリ)
+title: コメント マクロ ブロック (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33418926"
 ---
-# <a name="comment-macro-block-access-custom-web-app"></a>Comment マクロブロック (Access カスタム web アプリ)
+# <a name="comment-macro-block-access-custom-web-app"></a>コメント マクロ ブロック (Access カスタム Web アプリ)
 
 The **Comment** statement can be used to provide explanatory remarks in a macro. 
   

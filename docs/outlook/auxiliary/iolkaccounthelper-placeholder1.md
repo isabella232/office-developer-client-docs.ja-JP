@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: c472ce02-4ef4-40a9-51de-12b37f092342
-description: このメンバーはプレースホルダーで、サポートされていません。 常に E_NOTIMPL を返す必要があります。
+description: このメンバーはプレースホルダーであり、サポートされていません。 常に値を返E_NOTIMPL。
 ms.openlocfilehash: 0c263039ed562763cef2ab5e5e3f3a3e5ca90ab2
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33418891"
 ---
 # <a name="iolkaccounthelperplaceholder1"></a>IOlkAccountHelper::Placeholder1
 
-このメンバーはプレースホルダーで、サポートされていません。 常に E_NOTIMPL を返す必要があります。
+このメンバーはプレースホルダーであり、サポートされていません。 常に値を返E_NOTIMPL。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -28,11 +28,11 @@ HRESULT IOlkAccountHelper::Placeholder1 (
 
 ## <a name="return-values"></a>戻り値
 
-このメンバーは[IOlkAccountHelper](iolkaccounthelper.md)のプレースホルダーであり、サポートされていないため、常に E_NOTIMPL。 
+このメンバー E_NOTIMPL [IOlkAccountHelper](iolkaccounthelper.md) のプレースホルダーであり、サポートされていないので、常に使用してください。 
   
 ## <a name="remarks"></a>注釈
 
-このメンバーは常に E_NOTIMPL を返す必要があります。
+このメンバーは、常に値を返E_NOTIMPL。
   
 ## <a name="see-also"></a>関連項目
 

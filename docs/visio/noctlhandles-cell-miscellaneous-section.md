@@ -31,7 +31,7 @@ ms.locfileid: "33416126"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [noctlhandles]  <br/> |
+| セル名:  <br/> | NoCtlHandles  <br/> |
    
 プログラムから、インデックスによる [NoCtlHandles] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   

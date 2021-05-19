@@ -31,7 +31,7 @@ Outlook オブジェクト モデルでは、インターネット予定表、RS
 > [!NOTE]
 > RSS フィードを購読するには、**OpenSharedFolder** メソッドのフォルダー URL に正しいプロトコル ハンドラーを指定する必要があります。 たとえば、`https://` ではなく `feed://` で始まる URL を使用する必要があります。 Outlook では、Windows NT LAN Manager (NTLM) 認証を使用できないと認証の必要な RSS フィードを開けず、また、Secure Sockets Layer (SSL) の場所にある RSS フィードは読み込めません。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

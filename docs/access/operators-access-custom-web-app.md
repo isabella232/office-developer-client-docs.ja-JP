@@ -21,12 +21,12 @@ ms.locfileid: "33417065"
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [算術演算子 (Access カスタム web アプリ)](arithmetic-operators-access-custom-web-app.md)
+- [算術演算子 (Access カスタム Web アプリ)](arithmetic-operators-access-custom-web-app.md)
     
-- [比較演算子 (Access カスタム web アプリ)](comparison-operators-access-custom-web-app.md)
+- [比較演算子 (Access カスタム Web アプリ)](comparison-operators-access-custom-web-app.md)
     
-- [論理演算子 (Access カスタム web アプリ)](logical-operators-access-custom-web-app.md)
+- [論理演算子 (Access カスタム Web アプリ)](logical-operators-access-custom-web-app.md)
     
-- [文字列演算子 (Access カスタム web アプリ)](string-operators-access-custom-web-app.md)
+- [文字列演算子 (Access カスタム Web アプリ)](string-operators-access-custom-web-app.md)
     
 

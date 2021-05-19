@@ -17,15 +17,15 @@ ms.locfileid: "32339292"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-オフライン状態アドインを実装するには、接続、初期化、その他のセットアップ機能を実装する必要があります。 このトピックでは、サンプルのオフライン状態アドインのコード例を使用して、これらの接続、初期化、およびセットアップ関数について説明します。 サンプルのオフライン状態アドインは、オフライン状態 API を使用して Outlook に**オフライン状態**メニューを追加する COM アドインです。 **オフライン状態**メニューを使用して、状態監視を有効または無効にしたり、現在の状態を確認したり、現在の状態を変更したりすることができます。 サンプルのオフライン状態アドインのダウンロードやインストールの詳細については、[サンプルのオフライン状態アドインのインストール](installing-the-sample-offline-state-add-in.md)を参照してください。 オフライン状態 API の詳細については、[オフライン状態 API について](about-the-offline-state-api.md)を参照してください。
+オフライン状態アドインを実装するには、接続、初期化、その他のセットアップ機能を実装する必要があります。 このトピックでは、これらの接続、初期化、およびセットアップ関数について、サンプル オフライン状態アドインのコード例を使用して説明します。 サンプルのオフライン状態アドインは、オフライン状態 API を使用して Outlook に **オフライン状態** メニューを追加する COM アドインです。 [オフライン状態 **] メニュー** を使用すると、状態の監視を有効または無効にし、現在の状態を確認し、現在の状態を変更できます。 サンプルのオフライン状態アドインのダウンロードやインストールの詳細については、[サンプルのオフライン状態アドインのインストール](installing-the-sample-offline-state-add-in.md)を参照してください。 オフライン状態 API の詳細については、[オフライン状態 API について](about-the-offline-state-api.md)を参照してください。
   
-オフライン状態アドインをセットアップした後、接続状態の変更を監視および変更するための関数を実装する必要があります。 詳細については、「[オフライン状態アドインを使用して接続状態の変更を監視](monitoring-connection-state-changes-using-an-offline-state-add-in.md)する」を参照してください。
+オフライン状態アドインをセットアップした後、接続状態の変更を監視および変更する関数を実装する必要があります。 詳細については、「オフライン状態アドイン [を使用した接続状態の変更の監視」を参照してください](monitoring-connection-state-changes-using-an-offline-state-add-in.md)。
   
-## <a name="on-connection-routine"></a>接続ルーチン
+## <a name="on-connection-routine"></a>On Connection ルーチン
 
-**[IDTExtensibility2 メソッド](https://msdn.microsoft.com/library/extensibility.idtextensibility2.onconnection%28v=VS.80%29.aspx)** は、アドインが読み込まれるたびに呼び出されます。 これはアドインのエントリポイントなので、アドインの開始時に`OnConnection`関数に記述したコードが呼び出されます。 次の例では、 `OnConnection`関数は`HrInitAddin`関数を呼び出します。 
+**[IDTExtensibility2.OnConnection メソッド](https://msdn.microsoft.com/library/extensibility.idtextensibility2.onconnection%28v=VS.80%29.aspx)** は、アドインが読み込まれるごとに呼び出されます。 アドインのエントリ ポイントなので、アドインの開始時に関数に入力したコード  `OnConnection` が呼び出されます。 次の例では、関数  `OnConnection` は関数を呼び出  `HrInitAddin` します。 
   
-### <a name="cmyaddinonconnection-example"></a>CMyAddin:: OnConnection () の使用例
+### <a name="cmyaddinonconnection-example"></a>CMyAddin::OnConnection() の例
 
 ```cpp
 STDMETHODIMP CMyAddin::OnConnection( 
@@ -44,11 +44,11 @@ STDMETHODIMP CMyAddin::OnConnection(
 }
 ```
 
-## <a name="initialize-add-in-routine"></a>アドインルーチンを初期化する
+## <a name="initialize-add-in-routine"></a>アドイン ルーチンの初期化
 
-`HrInitAddin`関数は、、 `LoadLibraries`、 `HrCacheProfileName`および`HrAddMenuItems`の関数を呼び出して、オフライン状態アドインの設定を完了します。 
+この  `HrInitAddin` 関数は、  `LoadLibraries` 、  `HrCacheProfileName` および関数を  `HrAddMenuItems` 呼び出して、オフライン状態アドインのセットアップを完了します。 
   
-### <a name="cmyaddinhrinitaddin-example"></a>CMyAddin:: hrinitaddin () の例
+### <a name="cmyaddinhrinitaddin-example"></a>CMyAddin::HrInitAddin() の例
 
 ```cpp
 HRESULT CMyAddin::HrInitAddin() 
@@ -63,11 +63,11 @@ HRESULT CMyAddin::HrInitAddin()
 }
 ```
 
-## <a name="load-libraries-routine"></a>ライブラリルーチンを読み込む
+## <a name="load-libraries-routine"></a>ライブラリの読み込みルーチン
 
-この`LoadLibraries`関数は、アドインが必要とするダイナミックリンクライブラリ (DLL) ファイルを読み込みます。 
+この  `LoadLibraries` 関数は、アドインで必要なダイナミック リンク ライブラリ (DLL) ファイルを読み込む。 
   
-### <a name="loadlibraries-example"></a>loadlibraries () の例
+### <a name="loadlibraries-example"></a>LoadLibraries() の例
 
 ```cpp
 void LoadLibraries() 
@@ -166,11 +166,11 @@ void LoadLibraries()
 }
 ```
 
-## <a name="cache-profile-name-routine"></a>キャッシュプロファイル名ルーチン
+## <a name="cache-profile-name-routine"></a>キャッシュ プロファイル名ルーチン
 
-関数`HrCacheProfileName`は、 **[imapisupport::](imapisupport-openprofilesection.md)** openprofilesection 関数を呼び出して現在のセッションのプロファイルセクションを開き、ボタンハンドラーのプロファイルを設定します。 
+この  `HrCacheProfileName` 関数は **[IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md)** 関数を呼び出して、現在のセッションのプロファイル セクションを開き、ボタン ハンドラーのプロファイルを設定します。 
   
-### <a name="cmyaddinhrcacheprofilename-example"></a>CMyAddin:: hrcacheprofilename () の例
+### <a name="cmyaddinhrcacheprofilename-example"></a>CMyAddin::HrCacheProfileName() の例
 
 ```cpp
 HRESULT CMyAddin::HrCacheProfileName() 
@@ -212,11 +212,11 @@ HRESULT CMyAddin::HrCacheProfileName()
 }
 ```
 
-## <a name="add-menu-items-routine"></a>メニュー項目ルーチンを追加する
+## <a name="add-menu-items-routine"></a>メニュー項目の追加ルーチン
 
-この`HrAddMenuItems`関数は、Outlook でアドインが読み込まれたときに作成される**オフライン状態**メニューの下に表示されるメニューオプションを`DispEventAdvise`定義し、各メニュー項目を呼び出します。 
+この関数は、アドインが Outlook に読み込まれ、各メニュー項目を呼び出すときに作成される [オフライン状態] メニューの下に表示されるメニュー オプションを `HrAddMenuItems`  `DispEventAdvise` 定義します。 
   
-### <a name="cmyaddinhraddmenuitems-example"></a>CMyAddin:: hraddmenuitems () の例
+### <a name="cmyaddinhraddmenuitems-example"></a>CMyAddin::HrAddMenuItems() の例
 
 ```cpp
 HRESULT CMyAddin::HrAddMenuItems() 

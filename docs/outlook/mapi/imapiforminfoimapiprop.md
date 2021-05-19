@@ -1,5 +1,5 @@
 ---
-title: imapiforminfo imapiprop
+title: IMAPIFormInfo IMAPIProp
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,31 +25,31 @@ ms.locfileid: "33417365"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアントアプリケーションに、フォーム定義に特したプロパティへのアクセス権を付与します。 フォームの情報を別のオブジェクトに保持することにより、フォームライブラリプロバイダーは、フォームをアクティブ化せずに、フォームをクライアントに対して記述することができます。
+クライアント アプリケーションに、フォーム定義に特定のプロパティへのアクセス権を与えます。 フォーム情報を別のオブジェクトに保持することで、フォーム ライブラリ プロバイダーは、フォームをアクティブ化せずに、クライアントにフォームを記述できます。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
-|公開者:  <br/> |フォーム情報オブジェクト  <br/> |
-|実装元:  <br/> |フォームライブラリプロバイダー  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |フォーム情報オブジェクト  <br/> |
+|実装元:  <br/> |フォーム ライブラリ プロバイダー  <br/> |
 |呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMAPIFormInfo  <br/> |
 |ポインターの種類:  <br/> |LPMAPIFORMINFO  <br/> |
-|トランザクションモデル:  <br/> |非トランザクション  <br/> |
+|トランザクション モデル:  <br/> |非トランザクション  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[CalcFormPropSet](imapiforminfo-calcformpropset.md) <br/> |フォームが使用するプロパティの完全なセットへのポインターを返します。  <br/> |
-|[CalcVerbSet](imapiforminfo-calcverbset.md) <br/> |フォームが使用する動詞の完全なセットへのポインターを返します。  <br/> |
-|[makeiconfrombinary](imapiforminfo-makeiconfrombinary.md) <br/> |フォームの icon プロパティからアイコンを作成します。  <br/> |
-|[saveform](imapiforminfo-saveform.md) <br/> |構成ファイルに特定のフォームの説明を保存します。  <br/> |
-|[openformcontainer](imapiforminfo-openformcontainer.md) <br/> |特定のフォームがインストールされているフォームコンテナーへのポインターを返します。  <br/> |
+|[CalcFormPropSet](imapiforminfo-calcformpropset.md) <br/> |フォームで使用されるプロパティの完全なセットへのポインターを返します。  <br/> |
+|[CalcVerbSet](imapiforminfo-calcverbset.md) <br/> |フォームで使用される動詞の完全なセットへのポインターを返します。  <br/> |
+|[MakeIconFromBinary](imapiforminfo-makeiconfrombinary.md) <br/> |フォームのアイコン プロパティからアイコンを作成します。  <br/> |
+|[SaveForm](imapiforminfo-saveform.md) <br/> |特定のフォームの説明を構成ファイルに保存します。  <br/> |
+|[OpenFormContainer](imapiforminfo-openformcontainer.md) <br/> |特定のフォームがインストールされているフォーム コンテナーへのポインターを返します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-MapiForm ヘッダーファイルで定義されているほとんどのインターフェイスとは異なり、 **imapiforminfo**は imapiprop [:: GetProps](imapiprop-getprops.md)メソッドへの呼び出しを使用してほとんどのフォーム情報をエクスポートするため、imapiprop インターフェイスから継承します。 [](imapipropiunknown.md) 
+MapiForm.h ヘッダー ファイルで定義されているほとんどのインターフェイスとは異なり **、IMAPIFormInfo は IMAPIProp** インターフェイスから継承します。ほとんどのフォーム情報は [IMAPIProp::GetProps](imapiprop-getprops.md)メソッドへの呼び出しによってエクスポートされます。 [](imapipropiunknown.md) 
   
 ## <a name="see-also"></a>関連項目
 

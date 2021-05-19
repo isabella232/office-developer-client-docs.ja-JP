@@ -29,7 +29,7 @@ ms.locfileid: "33416378"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [linegradientenabled]  <br/> |
+| セル名:  <br/> | LineGradientEnabled  <br/> |
    
 プログラムから、インデックスによって [**LineGradientEnabled**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

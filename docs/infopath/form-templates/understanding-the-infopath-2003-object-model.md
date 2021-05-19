@@ -1,5 +1,5 @@
 ---
-title: InfoPath 2003 オブジェクト モデルについて
+title: InfoPath 2003 オブジェクト モデルを理解する
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer

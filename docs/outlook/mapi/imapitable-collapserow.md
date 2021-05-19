@@ -25,7 +25,7 @@ ms.locfileid: "33416175"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-拡張されたテーブルカテゴリを折りたたみ、テーブルビューからそのカテゴリに属する下位レベルの見出しとリーフ行をすべて削除します。
+展開されたテーブル カテゴリを折りたたみ、そのカテゴリに属する下位レベルの見出しとリーフ行をテーブル ビューから削除します。
   
 ```cpp
 HRESULT CollapseRow(
@@ -40,19 +40,19 @@ ULONG FAR * lpulRowCount
 
  _cbInstanceKey_
   
-> 順番_pbInstanceKey_パラメーターが指す PR_INSTANCE_KEY プロパティのバイト数。 
+> [in]  _pbInstanceKey_ パラメーターがPR_INSTANCE_KEYするプロパティのバイト数。 
     
  _pbInstanceKey_
   
-> 順番カテゴリの見出し行を識別する**PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) プロパティへのポインター。 
+> [in]カテゴリの見出 **しPR_INSTANCE_KEY** を識別するプロパティ [(PidTagInstanceKey)](pidtaginstancekey-canonical-property.md)へのポインター。 
     
  _ulFlags_
   
-> 予約語0である必要があります。
+> 予約済み。は 0 である必要があります。
     
- _lアウト rowcount_
+ _lpulRowCount_
   
-> 読み上げテーブルビューから削除されている行の合計数へのポインター。
+> [out]テーブル ビューから削除される行の総数へのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -62,21 +62,21 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> _pbInstanceKey_パラメーターで指定された行が存在しません。 
+> _pbInstanceKey_ パラメーターで識別される行が存在しません。 
     
 MAPI_E_INVALID_ENTRYID 
   
-> _pbInstanceKey_パラメーターで指定された行が存在しません。 このエラーは MAPI_E_NOT_FOUND の代わりになります。サービスプロバイダーはどちらかを返すことができます。 
+> _pbInstanceKey_ パラメーターで識別される行が存在しません。 このエラーは、このエラーの代わりにMAPI_E_NOT_FOUND。サービス プロバイダーは、どちらか 1 つを返す場合があります。 
     
 ## <a name="remarks"></a>注釈
 
-**IMAPITable:: CollapseRow**メソッドは、テーブルのカテゴリを折りたたんで、テーブルビューから削除します。 行は、 _pbInstanceKey_パラメーターによって示される**PR_INSTANCE_KEY**プロパティによって識別される行から折りたたまれます。 ビューから削除された行の数は、 _lルー rowcount_パラメーターの内容で返されます。 
+**IMAPITable::CollapseRow** メソッドは、テーブル カテゴリを折りたたみ、テーブル ビューから削除します。 行は _、pbInstanceKey_ パラメーターが指す **PR_INSTANCE_KEYプロパティで** 識別される行から折りたたまれます。 ビューから削除された行の数は  _、lpulRowCount_ パラメーターの内容で返されます。 
   
-折りたたみ操作の結果としてビューから削除されたテーブルの行に対して通知が生成されることはありません。 
+折りたたみ操作の結果としてビューから削除されたテーブル行に対する通知は生成されません。 
   
-ブックマークによって定義された行が非表示になっている場合、ブックマークは次の表示される行を指すように移動されます。 
+ブックマークによって定義された行が表示されない状態で折りたたむ場合、ブックマークは次に表示される行を指す位置に移動されます。 
   
-カテゴリ別テーブルの詳細については、「[並べ替えと分類](sorting-and-categorization.md)」を参照してください。
+分類テーブルの詳細については、「並べ替えと [分類」を参照してください](sorting-and-categorization.md)。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -84,7 +84,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl  <br/> |CContentsTableListCtrl::D oexpandcollapse  <br/> |mfcmapi は、 **IMAPITable:: CollapseRow**メソッドを使用して、テーブルカテゴリを折りたたみます。  <br/> |
+|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::D oExpandCollapse  <br/> |MFCMAPI では **、IMAPITable::CollapseRow** メソッドを使用してテーブル カテゴリを折りたたむ。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: コンテナーの1回限りのテーブルの実装
+title: コンテナー テーブルのOne-Offする
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,14 +15,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417421"
 ---
-# <a name="implementing-a-container-one-off-table"></a>コンテナーの1回限りのテーブルの実装
+# <a name="implementing-a-container-one-off-table"></a>コンテナー テーブルのOne-Offする
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-コンテナーの1つに属する1回限りのテーブルにアクセスするために、MAPI はコンテナーの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出して、 **IMAPITable**で**PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) プロパティを開きます。インターフェイス. クライアントアプリケーションがコンテナーに受信者を追加しようとしているときに、コンテナーは、1回限りのテーブルを返すように求められます。 コンテナーで受信者が許可されている場合、プロバイダーは、独自のテーブル実装を返すか、または[imapisupport:: getoneofftable](imapisupport-getoneofftable.md)を呼び出して MAPI 実装を取得できます。 
+コンテナーの 1 つに属する 1 回のテーブルにアクセスするには、MAPI はコンテナーの [IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを呼び出して **、IMAPITable** インターフェイスを使用して **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) プロパティを開きます。 クライアント アプリケーションがコンテナーに受信者を追加しようとしている場合、コンテナーは 1 回きりテーブルを返す必要があります。 コンテナーで受信者が許可されている場合、プロバイダーは独自のテーブル実装を返すか [、IMAPISupport::GetOneOffTable](imapisupport-getoneofftable.md) を呼び出して MAPI 実装を返します。 
   
-コンテナーの1回限りのテーブル内の一連のテンプレートは、特定のコンテナーが保持できる受信者の種類を反映している必要があります。 通常、これには1つまたは2つのテンプレート (個々のメッセージングユーザーまたは配布リストを作成するためのテンプレート) が含まれます。 これらのテンプレートのエントリ識別子は、 **PR_DEF_CREATE_MAILUSER** ([PidTagDefCreateMailuser](pidtagdefcreatemailuser-canonical-property.md)) および**PR_DEF_CREATE_DL** ([PidTagDefCreateDl](pidtagdefcreatedl-canonical-property.md)) プロパティに格納されています。 ただし、コンテナーはこれらの種類のエントリに制限されることはありません。 他の種類の受信者またはディレクトリなどの受信者以外のエントリを保持できます。 
+コンテナーの一時テーブル内のテンプレートのセットは、特定のコンテナーが保持できる受信者の種類を反映する必要があります。 通常、これには 1 つまたは 2 つのテンプレート、個々のメッセージング ユーザーまたは配布リストを作成するためのテンプレートが含まれます。 これらのテンプレートのエントリ識別子は **、PR_DEF_CREATE_MAILUSER** ([PidTagDefCreateMailuser](pidtagdefcreatemailuser-canonical-property.md)) および PR_DEF_CREATE_DL **(** [PidTagDefCreateDl](pidtagdefcreatedl-canonical-property.md)) プロパティに保持されます。 ただし、コンテナーは、これらの種類のエントリに限定されるわけではありません。 他の種類の受信者や、ディレクトリなどの受信者以外のエントリを保持できます。 
   
 

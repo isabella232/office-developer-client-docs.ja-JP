@@ -1,5 +1,5 @@
 ---
-title: 受信フォルダーの表
+title: フォルダー テーブルの受信
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,21 +15,21 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417351"
 ---
-# <a name="receive-folder-tables"></a>受信フォルダーの表
+# <a name="receive-folder-tables"></a>フォルダー テーブルの受信
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-受信フォルダーの表には、メッセージストアの受信フォルダーとして指定されたすべてのフォルダーに関する情報が含まれています。 受信フォルダーは、特定のメッセージクラスの受信メッセージが配置されるフォルダーです。 メッセージストアプロバイダーは、受信フォルダーテーブルを実装し、クライアントアプリケーションは[IMsgStore:: getreceivefoldertable](imsgstore-getreceivefoldertable.md)メソッドを呼び出して使用します。 
+受信フォルダー テーブルには、メッセージ ストアの受信フォルダーとして指定されているすべてのフォルダーの情報が含まれています。 受信フォルダーは、特定のメッセージ クラスの受信メッセージが配置されるフォルダーです。 メッセージ ストア プロバイダーは受信フォルダー テーブルを実装し、クライアント アプリケーションは [、IMsgStore::GetReceiveFolderTable](imsgstore-getreceivefoldertable.md) メソッドを呼び出して使用します。 
   
-次のプロパティは、受信フォルダーテーブルで必要な列セットを作成します。
+次のプロパティは、受信フォルダー テーブルで必要な列セットを構成します。
   
- **PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md)) 
+ **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) 
   
- **PR_MESSAGE_CLASS**([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) 
+ **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) 
   
- **PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) 
+ **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) 
   
 ## <a name="see-also"></a>関連項目
 

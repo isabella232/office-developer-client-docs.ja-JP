@@ -19,61 +19,61 @@ ms.locfileid: "32336338"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-すべてのサービスプロバイダーは、status オブジェクトを実装して、そのオブジェクトからのプロパティをセッション状態テーブルに提供する必要があります。 管理するリソースの数に応じて、[状態] テーブルに1つ以上の行を含めることができます。 たとえば、トランスポートプロバイダーは、管理する各メッセージキューの状態テーブルに行を作成する必要があります。 変更が発生した場合は、適切な状態テーブル行を更新する必要があります。 status オブジェクトは、状態テーブルに含まれている情報と、テーブルに含まれていない追加情報の両方にアクセスできるように実装されています。
+すべてのサービス プロバイダーは、状態オブジェクトを実装し、そこからセッション状態テーブルにプロパティを提供する必要があります。 制御するリソースの数に応じて、状態テーブルに 1 つ以上の行を含めできます。 たとえば、トランスポート プロバイダーは、管理する各メッセージ キューの状態テーブルに行を作成する必要があります。 変更が発生した場合は、適切な状態テーブル行を更新する必要があります。 Status オブジェクトは、状態テーブルに含まれる情報と、テーブルに含まれていない追加情報へのアクセスを提供するために実装されます。
   
-### <a name="to-implement-a-status-object"></a>status オブジェクトを実装するには
+### <a name="to-implement-a-status-object"></a>状態オブジェクトを実装するには
 
-1. ログオンオブジェクトの**openstatusentry**メソッドを実装します。 クライアントは、状態オブジェクトを開こうとすると、 [imapisession:: openentry](imapisession-openentry.md)を呼び出します。 MAPI はプロバイダーの**openstatusentry**メソッドを呼び出して open 要求を処理します。これにより、プロバイダーはその状態オブジェクトを開き、 **imapistatus**実装へのポインターをクライアントに返します。 **openstatusentry**実装で、次の手順を実行します。 
+1. ログオン オブジェクト **の OpenStatusEntry** メソッドを実装します。 クライアントが status オブジェクトを開く場合は [、IMAPISession::OpenEntry を呼び出します](imapisession-openentry.md)。 MAPI は、プロバイダーの **OpenStatusEntry** メソッドを呼び出して開いている要求を満たし、プロバイダーが状態オブジェクトを開き **、IMAPIStatus** 実装へのポインターをクライアントに返します。 **OpenStatusEntry 実装で**、次の手順を実行します。 
     
-   1. ログオンオブジェクトがステータスオブジェクトをまだ作成していない場合は、次のタスクを実行します。
+   1. ログオン オブジェクトがまだ状態オブジェクトを作成していない場合は、次のタスクを実行します。
     
-      1. サポートオブジェクトの[imapisupport:: openprofilesection](imapisupport-openprofilesection.md)メソッドを呼び出して、プロバイダーのプロファイルセクションにアクセスします。 
+      1. サポート オブジェクトの [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md) メソッドを呼び出して、プロバイダーのプロファイル セクションにアクセスします。 
           
-      2. 新しい status オブジェクトを作成します。
+      2. 新しい状態オブジェクトを作成します。
           
-      3. プロバイダーの状態オブジェクトのプロファイルセクションへの参照を格納し、プロファイルセクションの[IUnknown:: AddRef](https://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx)メソッドを呼び出して、参照カウントをインクリメントします。 
+      3. プロバイダーの状態オブジェクトにプロファイル セクションへの参照を格納し、プロファイル セクションの [IUnknown::AddRef](https://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx) メソッドを呼び出して、参照カウントを増やします。 
           
-      4. プロバイダーの status オブジェクトにログオンオブジェクトへの参照を格納し、ログオンオブジェクトの**IUnknown:: AddRef**メソッドを呼び出して、参照カウントをインクリメントします。 
+      4. プロバイダーの状態オブジェクトにログオン オブジェクトへの参照を格納し、ログオン オブジェクトの **IUnknown::AddRef** メソッドを呼び出して参照カウントを増やします。 
           
-      5. プロバイダーのログオンオブジェクトに状態オブジェクトへの参照を格納します。
+      5. プロバイダーのログオン オブジェクトに status オブジェクトへの参照を格納します。
     
-   2. 状態オブジェクトの**IUnknown:: AddRef**メソッドを呼び出して、ログオンオブジェクトの参照カウントをインクリメントします。 
+   2. status オブジェクトの **IUnknown::AddRef** メソッドを呼び出して、ログオン オブジェクトの参照カウントを増やします。 
     
-   3. status オブジェクトの**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md)) プロパティを MAPI_STATUS に設定します。
+   3. status オブジェクトのプロパティ ([PidTagObjectType](pidtagobjecttype-canonical-property.md) **)** プロパティを PR_OBJECT_TYPE に設定MAPI_STATUS。
     
-   4. _lppMAPIStatus_ output パラメーターを status オブジェクトを指すように設定し、を返します。 
+   4. _lppMAPIStatus 出力_ パラメーターを status オブジェクトをポイントして返す値を設定します。 
     
-   5. _ulflags_入力パラメーターを確認します。 MAPI_MODIFY に設定されており、プロバイダーがその状態オブジェクトへの読み取り/書き込みアクセスをサポートしている場合は、書き込み可能なオブジェクトを返します。 ただし、プロバイダーが status オブジェクトへの読み取り/書き込みアクセスをサポートしていない場合は、失敗しません。 読み取り専用の status オブジェクトを取得します。 読み取り/書き込み状態のオブジェクトを受信すると予想されるクライアントは、変更を行う前に読み取り/書き込みアクセス許可が付与されていることを確認する必要があります。 
+   5. _ulFlags 入力パラメーターを_ 確認します。 このオブジェクトが MAPI_MODIFYに設定され、プロバイダーが status オブジェクトへの読み取り/書き込みアクセスをサポートしている場合は、書き込み可能なオブジェクトを返します。 ただし、プロバイダーが status オブジェクトへの読み取り/書き込みアクセスをサポートしていない場合は、失敗しない。 読み取り専用の状態オブジェクトを返します。 読み取り/書き込み状態オブジェクトを受け取る必要があるクライアントは、変更を行う前に、読み取り/書き込みアクセス許可が付与されたことを確認する必要があります。 
     
-2. 必要なすべての status オブジェクトおよび status テーブルのプロパティを設定します。 状態テーブルの行に含めるプロパティは、MAPI によって計算されたプロパティを除き、状態オブジェクトで使用できます。 必要なプロパティは次のとおりです。
+2. 必要なすべての状態オブジェクトと状態テーブルのプロパティを設定します。 状態テーブルの行に含めるプロパティは、MAPI によって計算されるプロパティを除き、status オブジェクトで使用できる必要があります。 必要なプロパティは次のとおりです。
     
-   - **PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
+   - **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
     
-   - **PR_PROVIDER_DLL_NAME**([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md))
+   - **PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md))
     
-   - **PR_PROVIDER_DISPLAY**([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md))
+   - **PR_PROVIDER_DISPLAY** ([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md))
     
-   - **PR_RESOURCE_TYPE**([PidTagResourceType](pidtagresourcetype-canonical-property.md))
+   - **PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md))
     
-   - **PR_RESOURCE_METHODS**([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md))
+   - **PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md))
     
-   - **PR_RESOURCE_FLAGS**([PidTagResourceFlags](pidtagresourceflags-canonical-property.md))
+   - **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md))
     
-   - **PR_STATUS_CODE**([PidTagStatusCode](pidtagstatuscode-canonical-property.md))
+   - **PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md))
     
-3. プロバイダーに適した[imapistatus: imapistatus](imapistatusimapiprop.md)メソッドを実装します。 プロバイダーによっては、 **imapistatus**にすべての4つのメソッドを実装する必要はありません。 すべてのプロバイダーは、 [imapiprop: IUnknown](imapipropiunknown.md)インターフェイスおよび[imapiprop:: validatestate](imapistatus-validatestate.md)メソッドの読み取り専用バージョンを実装する必要があります。 
+3. プロバイダーに [適した IMAPIStatus : IMAPIProp](imapistatusimapiprop.md) メソッドを実装します。 プロバイダーによっては、IMAPIStatus で 4 つのメソッドのすべてが実装 **されている必要はなさそう**。 すべてのプロバイダーは [、IMAPIProp : IUnknown](imapipropiunknown.md) インターフェイスと [IMAPIStatus::ValidateState](imapistatus-validatestate.md) メソッドのメソッドの読み取り専用バージョンを実装する必要があります。 
 
-   また、トランスポートプロバイダーは[imapistatus:: flushqueues](imapistatus-flushqueues.md)を実装する必要があります。また、すべてのプロバイダーは[imapistatus:: settingsdialog](imapistatus-settingsdialog.md)をサポートする必要があります。 ただし、 [imapistatus:: ChangePassword](imapistatus-changepassword.md)のサポートはオプションです。 パスワードを必要とし、ユーザーがプログラムによって変更できるようにするサービスプロバイダーのみが、このメソッドを実装する必要があります。 サポートしているすべてのメソッドについて、 **PR_RESOURCE_METHODS**プロパティに対応するビットを設定します。 たとえば、 **validatestate**と**settingsdialog**のみをサポートする場合は、 **PR_RESOURCE_METHODS**を次のように設定します。 
+   トランスポート プロバイダーは [IMAPIStatus::FlushQueues](imapistatus-flushqueues.md)も実装する必要があります。すべてのプロバイダーは [IMAPIStatus::SettingsDialog をサポートする必要があります](imapistatus-settingsdialog.md)。 ただし [、IMAPIStatus::ChangePassword のサポートは](imapistatus-changepassword.md) オプションです。 パスワードが必要で、ユーザーがパスワードを変更できるサービス プロバイダーだけが、このメソッドを実装する必要があります。 サポートするメソッドごとに、対応するビットを **PR_RESOURCE_METHODSします。** たとえば **、ValidateState** と **SettingsDialog** のみをサポートしている場合は **、次PR_RESOURCE_METHODS** 設定します。 
     
    `STATUS_VALIDATE_STATE | STATUS_SETTINGS_DIALOG`
     
-   クライアントは、status オブジェクトの呼び出しを試行する前に、 **PR_RESOURCE_METHODS**の値を確認する必要があります。 MAPI_E_NO_SUPPORT を返すことで、サポートされていないメソッドの呼び出しを処理します。 
+   クライアントは、status オブジェクトを呼び **出す前PR_RESOURCE_METHODS** の値を確認する必要があります。 サポートされていないメソッドの呼び出しを処理するには、サポートされていないメソッドを返MAPI_E_NO_SUPPORT。 
     
-4. 状態テーブルに行または行を追加するには、ログオン時に[imapisupport:: modifystatusrow](imapisupport-modifystatusrow.md)を呼び出します。 行の列情報を含むプロパティ値の配列、および_ulflags_パラメーターに0を渡します。 セッションの後の方の時点で、プロバイダーの状態が変化し、列情報を更新する必要が生じた場合は、STATUSROW_UPDATE フラグセットを使用して、再度**modifystatusrow**を呼び出します。 
+4. ログオン [中に IMAPISupport::ModifyStatusRow](imapisupport-modifystatusrow.md) を呼び出して、行または行を状態テーブルに追加します。 行の列情報と  _ulFlags_ パラメーターの 0 を含むプロパティ値配列を渡します。 セッションの後でプロバイダーの状態が変更され、列情報を更新する必要がある場合は、STATUSROW_UPDATE フラグを設定して **ModifyStatusRow** を再度呼び出します。 
     
-状態オブジェクトの詳細については、「 [MAPI status objects](mapi-status-objects.md)」を参照してください。
+状態オブジェクトの詳細については、「MAPI Status [Objects」を参照してください](mapi-status-objects.md)。
   
 ## <a name="see-also"></a>関連項目
 
-- [MAPI サービスプロバイダー](mapi-service-providers.md)
+- [MAPI サービス プロバイダー](mapi-service-providers.md)
 

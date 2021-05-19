@@ -1,5 +1,5 @@
 ---
-title: メッセージの件名の作成
+title: メッセージ件名の作成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,16 +15,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32332964"
 ---
-# <a name="creating-a-message-subject"></a>メッセージの件名の作成
+# <a name="creating-a-message-subject"></a>メッセージ件名の作成
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージの件名 ([PidTagSubject](pidtagsubject-canonical-property.md)) **** はオプションのプロパティで、メッセージの目的を要約するために使用されます。 この設定を選択した場合は、文字列128バイト以下にしてください。 128バイト制限は、MAPI の制限ではありません。一部のメッセージストアプロバイダーによって課される制限です。 適用されるプロバイダーとの相互運用性を確保するには、件名を128バイトに制限します。 
+メッセージの件名である PR_SUBJECT **(** [PidTagSubject)](pidtagsubject-canonical-property.md)は、メッセージの意図を要約するために使用されるオプションのプロパティです。 設定する場合は、文字列を 128 バイト以下にしてください。 128 バイトの制限は、MAPI によって課される制限ではありません。これは、一部のメッセージ ストア プロバイダーによって課される制限です。 これを行うプロバイダーとの相互運用性を確保するには、サブジェクトを 128 バイトに制限します。 
   
-一部のメッセージストアプロバイダーでは、 **PR_SUBJECT**を[IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)インターフェイスを使用した stream に書き込むことが許可されていないことに注意してください。 
+一部のメッセージ ストア プロバイダーでは、IStream インターフェイスPR_SUBJECTストリームへの書き込みが許可されていない[場合](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)があります。  
   
-**PR_SUBJECT_PREFIX** ([PidTagSubjectPrefix](pidtagsubjectprefix-canonical-property.md)) を設定しません。このプロパティは、返信メッセージと転送メッセージに対してのみ設定されます。 
+[設定しない **] PR_SUBJECT_PREFIX** ([PidTagSubjectPrefix](pidtagsubjectprefix-canonical-property.md));このプロパティは、返信と転送されたメッセージにのみ設定されます。 
   
 

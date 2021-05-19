@@ -25,12 +25,12 @@ ms.locfileid: "33418135"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブル内の位置を記憶するためのブックマークデータを定義します。 
+テーブル内の位置を記憶するブックマーク データを定義します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
-|関連するメソッド:  <br/> |[IMAPITable:: createbookmark](imapitable-createbookmark.md)[IMAPITable:: freebookmark](imapitable-freebookmark.md) <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|関連するメソッド:  <br/> |[IMAPITable::CreateBookmark](imapitable-createbookmark.md)[IMAPITable::FreeBookmark](imapitable-freebookmark.md) <br/> |
    
 ```cpp
 typedef ULONG_PTR BOOKMARK;
@@ -38,21 +38,21 @@ typedef ULONG_PTR BOOKMARK;
 
 ## <a name="remarks"></a>注釈
 
-MAPI では、次のように3つのブックマークが定義されています。
+MAPI では、次に示す 3 つのブックマークを定義します。
   
 BOOKMARK_BEGINNING 
   
-> 表の開始位置を記憶します。 
+> テーブルの開始位置を記憶します。 
     
 BOOKMARK_CURRENT 
   
-> 表の現在の位置を記憶します。
+> テーブルの現在の位置を記憶します。
     
 BOOKMARK_END 
   
-> 表の終了位置を記憶します。
+> テーブルの終了位置を記憶します。
     
-クライアントは、他のテーブルの位置を記憶するためのブックマークを作成できます。 ブックマークは、テーブルを開いている場合にのみ有効です。 クライアントは、関連付けられたテーブルを閉じる前に、作成したすべてのブックマークを解放する必要があります。 
+クライアントは、他のテーブル位置を記憶するために他のブックマークを作成できます。 ブックマークは、テーブルが開いている場合にのみ有効です。 クライアントは、関連付けられたテーブルを閉じる前に、作成したブックマークを解放する必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

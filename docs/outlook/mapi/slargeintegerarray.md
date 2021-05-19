@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9ec9a674-c1a2-4137-856f-6cabe6f0eb9f
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: ab82fff2645a5e1861523eb3f1866e0ddc7d13a5
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,11 +25,11 @@ ms.locfileid: "32331389"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-PT_MV_I8 型のプロパティを記述するために使用される[LARGE_INTEGER](https://go.microsoft.com/fwlink/?LinkId=132130)構造体の配列を格納します。 
+型のプロパティ [をLARGE_INTEGERする](https://go.microsoft.com/fwlink/?LinkId=132130) 構造体の配列をPT_MV_I8。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SLargeIntegerArray
@@ -42,17 +42,17 @@ typedef struct _SLargeIntegerArray
 
 ## <a name="members"></a>Members
 
- **cvalues**
+ **cValues**
   
-> **lpli**メンバーが指す配列内の値の数。 
+> lpli メンバーが指す配列内の **値の** 数。 
     
  **lpli**
   
-> 整数値を保持している**LARGE_INTEGER**構造体の配列へのポインター。 
+> 整数値を **保持するLARGE_INTEGER** 配列へのポインター。 
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-PT_MV_18 の詳細については、「[プロパティの種類の一覧](property-types.md)」を参照してください。
+プロパティの詳細については、「PT_MV_18 [の種類」を参照してください](property-types.md)。
   
 ## <a name="see-also"></a>関連項目
 

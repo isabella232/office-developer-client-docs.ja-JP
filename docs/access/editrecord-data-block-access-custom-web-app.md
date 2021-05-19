@@ -1,5 +1,5 @@
 ---
-title: '[データの制限] ブロック (Access カスタム web アプリ)'
+title: EditRecord Data Block (Access custom Web app)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33418345"
 ---
-# <a name="editrecord-data-block-access-custom-web-app"></a>[データの制限] ブロック (Access カスタム web アプリ)
+# <a name="editrecord-data-block-access-custom-web-app"></a>EditRecord Data Block (Access custom Web app)
 
 You can use the **EditRecord** data block to change the values contained in an existing record. 
   
@@ -29,7 +29,7 @@ You can use the **EditRecord** data block to change the values contained in an e
   
 |**Arg1 と Arg2 の値**|**説明**|
 |:-----|:-----|
-|**Alias** <br/> |編集するレコードを識別する文字列。 *Alias*引数が指定されていない場合は、カレントレコードが編集されます。  <br/> |
+|**Alias** <br/> |編集するレコードを識別する文字列。 引数  *Alias を指定*  しない場合は、現在のレコードが編集されます。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

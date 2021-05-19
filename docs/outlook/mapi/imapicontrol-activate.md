@@ -25,7 +25,7 @@ ms.locfileid: "33418016"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアントアプリケーションユーザーが [ボタン] コントロールをクリックしたときに、ダイアログボックスを表示したり、プログラムによる操作を開始したりするなどのタスクを実行します。
+クライアント アプリケーション のユーザーがボタン コントロールをクリックすると、ダイアログ ボックスの表示やプログラムによる操作の開始などのタスクを実行します。
   
 ```cpp
 HRESULT Activate(
@@ -40,21 +40,21 @@ HRESULT Activate(
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _uluiparam_
+ _ulUIParam_
   
-> 順番ボタンコントロールが表示されるダイアログボックスの親ウィンドウへのハンドル。
+> [in]ボタン コントロールが表示されるダイアログ ボックスの親ウィンドウへのハンドル。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> [ボタン] コントロールが正常にアクティブ化されました。
+> ボタン コントロールが正常にアクティブ化されました。
     
 ## <a name="remarks"></a>注釈
 
-**IMAPIControl:: Activate**メソッドは、ユーザーがボタンコントロールをクリックした後にタスクを実行します。 表示テーブルの処理の一部としてクリックが行われた後、MAPI は、 [IMAPIControl:: GetState](imapicontrol-getstate.md)を最初に呼び出した後に**アクティブ化**を呼び出して、ボタンが有効になっているかどうかを判断します。 
+**IMAPIControl::Activate** メソッドは、ユーザーがボタン コントロールをクリックした後にタスクを実行します。 クリックが発生した後、表示テーブルの処理の一環として、MAPI は[IMAPIControl::GetState](imapicontrol-getstate.md)を最初に呼び出した後に Activate を呼び出し、ボタンが有効になっているかどうかを判断します。  
   
-**Activate**メソッドおよびその他の[IMAPIControl](imapicontroliunknown.md)メソッドを実装する方法の詳細については、「 [Control オブジェクトの実装](control-object-implementation.md)」を参照してください。
+**Activate** および他の [IMAPIControl : IUnknown](imapicontroliunknown.md)メソッドを実装する方法の詳細については [、「Control Object Implementation」を参照してください](control-object-implementation.md)。
   
 ## <a name="see-also"></a>関連項目
 

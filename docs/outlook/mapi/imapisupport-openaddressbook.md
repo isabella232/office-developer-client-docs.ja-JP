@@ -37,37 +37,37 @@ LPADRBOOK FAR * lppAdrBook
 
 ## <a name="parameters"></a>パラメーター
 
- _lpinterface_
+ _lpInterface_
   
-> 順番アドレス帳へのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 有効な値は NULL で、標準のアドレス帳インターフェイス[IAddrBook](iaddrbookimapiprop.md)および IID_IAddrBook を示します。
+> [in]アドレス帳へのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 有効な値は NULL で、標準のアドレス帳インターフェイス [IAddrBook](iaddrbookimapiprop.md)を示し、IID_IAddrBook。
     
  _ulFlags_
   
-> 予約語0である必要があります。
+> 予約済み。は 0 である必要があります。
     
- _lppadrbook_
+ _lppAdrBook_
   
-> 読み上げアドレス帳へのポインターへのポインター。
+> [out]アドレス帳へのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> アドレス帳へのアクセスが提供されました。
+> アドレス帳へのアクセスが提供された。
     
 MAPI_W_ERRORS_RETURNED 
   
-> 呼び出しは成功しましたが、1つ以上のアドレス帳プロバイダーを読み込めませんでした。 この警告が返された場合、呼び出しは正常に処理されます。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
+> 呼び出しは成功しましたが、1 つ以上のアドレス帳プロバイダーを読み込む必要がありました。 この警告が返されると、呼び出しは正常に処理されます。 この警告をテストするには、次のマクロ **HR_FAILED** します。 詳細については、「Using [Macros for Error Handling 」を参照してください](using-macros-for-error-handling.md)。
     
 ## <a name="remarks"></a>注釈
 
-**imapisupport:: OpenAddressBook**メソッドは、すべてのサービスプロバイダーサポートオブジェクトに実装されています。 サービスプロバイダは通常、メッセージストアとトランスポートプロバイダーを密結合し、 **OpenAddressBook**を呼び出してアドレス帳へのアクセス権を取得します。 返される**IAddrBook**ポインターは、アドレス帳コンテナーを開く、メッセージングユーザーを検索する、アドレスダイアログボックスを表示するなど、さまざまなアドレス帳タスクに使用できます。 
+**IMAPISupport::OpenAddressBook** メソッドは、すべてのサービス プロバイダー サポート オブジェクトに実装されます。 サービス プロバイダー (通常は緊密に結合されたメッセージ ストアとトランスポート プロバイダー) は、アドレス帳へのアクセスを取得するために **OpenAddressBook** を呼び出します。 返される **IAddrBook** ポインターは、アドレス帳コンテナーの開き方、メッセージング ユーザーの検索、アドレスダイアログ ボックスの表示など、さまざまなアドレス帳タスクに使用できます。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
- **OpenAddressBook**は、現在のプロファイルにアドレス帳プロバイダーの1つ以上を読み込むことができない場合、MAPI_W_ERRORS_RETURNED を返すことができます。 この値は警告で、呼び出しを成功として扱う必要があります。 すべてのアドレス帳プロバイダーが読み込まれなかった場合でも、 **OpenAddressBook**は成功し、 _lppadrbook_パラメーターで MAPI_W_ERRORS_RETURNED と**IAddrBook**ポインターを返します。 **OpenAddressBook**は常に有効な**IAddrBook**ポインターを返すため、これを使用し終えたら解放する必要があります。 
+ **OpenAddressBook** は、現在MAPI_W_ERRORS_RETURNED 1 つ以上のアドレス帳プロバイダーを読み込めない場合に、そのアドレス帳を返します。 この値は警告であり、呼び出しは成功として扱う必要があります。 すべてのアドレス帳プロバイダーが読み込めなくても **、OpenAddressBook** は引き続き成功し _、lppAdrBook_ パラメーターに MAPI_W_ERRORS_RETURNED と **IAddrBook** ポインターを返します。 **OpenAddressBook は** 常に有効な **IAddrBook** ポインターを返すので、使用が終了したら解放する必要があります。 
   
-1つ以上のアドレス帳プロバイダーが読み込みに失敗した場合は、 [imapisupport:: GetLastError](imapisupport-getlasterror.md)を呼び出して、読み込まれていないプロバイダーに関する情報を含む[MAPIERROR](mapierror.md)構造を取得します。 
+1 つ以上のアドレス帳プロバイダーの読み込みに失敗した場合は [、IMAPISupport::GetLastError](imapisupport-getlasterror.md) を呼び出して、読み込みなかったプロバイダーに関する情報を含む [MAPIERROR](mapierror.md) 構造を取得します。 
   
 ## <a name="see-also"></a>関連項目
 

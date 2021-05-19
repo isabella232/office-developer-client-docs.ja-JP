@@ -25,7 +25,7 @@ ms.locfileid: "32335211"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プライベート Mapi32 へのパスを返します。
+プライベート ファイルへのパスを返Mapi32.dll。
   
 ```cpp
 BOOL FGetComponentPath(
@@ -39,29 +39,29 @@ BOOL FGetComponentPath(
 
 ## <a name="parameters"></a>パラメーター
 
- _szcomponent_
+ _szComponent_
   
-> 順番[Mapi32 スタブレジストリ設定](https://msdn.microsoft.com/library/dd162409.aspx)に記述されている MSIComponentID reg キー。
+> [in]MSIComponentID reg キーは、スタブ レジストリMapi32.dll[で説明](https://msdn.microsoft.com/library/dd162409.aspx)設定。
     
- _szqualifier_
+ _szQualifier_
   
-> 順番「[読み込む特定のバージョンの MAPI を選択する](how-to-choose-a-specific-version-of-mapi-to-load.md)」で説明されている msiapplicationlcid または msiofficeelcid サブキー。 修飾子がない場合、発信者は**null**を渡すことができます。 
+> [in]「読み込む MAPI の特定のバージョンを選択する」で説明されている MSIApplicationLCID または MSIOfficeLCID [サブキー](how-to-choose-a-specific-version-of-mapi-to-load.md)。 修飾子がない場合、 **呼** び出し元は null を渡すことができます。 
     
- _szdllpath_
+ _szDllPath_
   
-> 順番完全な MAPI 機能 (Mapi32 と同じエクスポート) を持つ、プライベート Mapi32 へのパスです。
+> [in]MAPI の完全な機能をMapi32.dllプライベート インターフェイスへのパス (エクスポートと同じ) Mapi32.dll。
     
- _cchbuffersize_
+ _cchBufferSize_
   
-> 順番_szdllpath_のサイズ (文字数)。
+> [in]  _szDllPath のサイズ_(文字)。
     
- _finstall_
+ _fInstall_
   
-> 順番プライベートの Mapi32 コンポーネントが存在しない場合は、そのコンポーネントをインストールするように MAPI に指示します。
+> [in]プライベート コンポーネントが存在しない場合Mapi32.dll MAPI にインストールを指示します。
     
 ## <a name="return-value"></a>戻り値
 
- **false**
+ **true**
   
 > パスが見つかりました。
     
@@ -69,9 +69,9 @@ BOOL FGetComponentPath(
   
 > パスが見つかりませんでした。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**FGetComponentPath**関数は、プライベート Mapi32 へのパスを取得する必要がある場合に使用します。 
+プライベート コンポーネントへのパスを取得する必要がある場合は **、FGetComponentPath** 関数を使用Mapi32.dll。 
   
 ## <a name="see-also"></a>関連項目
 
@@ -80,5 +80,5 @@ BOOL FGetComponentPath(
 [読み込む MAPI の特定のバージョンを選択する](how-to-choose-a-specific-version-of-mapi-to-load.md)
 
 
-[Mapi32 スタブのレジストリ設定](https://msdn.microsoft.com/library/dd162409.aspx)
+[Mapi32.dllスタブ レジストリ 設定](https://msdn.microsoft.com/library/dd162409.aspx)
 

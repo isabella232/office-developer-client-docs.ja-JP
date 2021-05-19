@@ -25,7 +25,7 @@ ms.locfileid: "33418982"
   
 ## <a name="syntax"></a>構文
 
-CALLOUTCOUNT ()
+CALLOUTCOUNT()
   
 ### <a name="return-value"></a>戻り値
 

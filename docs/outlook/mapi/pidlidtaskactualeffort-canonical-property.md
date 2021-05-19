@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8e9a9432-bf50-4333-82ec-fba19dff8006
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 7eb51396f4575a8f8f9ce15aff84eb894773e979
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,37 +25,37 @@ ms.locfileid: "32331172"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ユーザーがタスクを実行した時間 (分単位) を示します。
+ユーザーがタスクを実行した分数を示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidtaskactualeffort  <br/> |
-|プロパティセット:  <br/> |PSETID_Task  <br/> |
-|ロング ID (LID):  <br/> |0x00008110  <br/> |
+|関連するプロパティ:  <br/> |dispidTaskActualEffort  <br/> |
+|プロパティ セット:  <br/> |PSETID_Task  <br/> |
+|長い ID (LID):  <br/> |0x00008110  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |タスク  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-この値は、0以上で、0x5AE980DF (1525252319) 未満である必要があります。480分は1日、2400分は1週間 (稼働日は8時間、稼働日は5日間) に相当します。
+値は 0 以上 0x5AE980DF (1,525,252,319) 以下である必要があります。480 分は 1 日に等しく、2400 分は 1 週間 (1 日に 8 時間、1 週間で 5 日間)。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
-[[OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
-> 連絡先および個人用配布リストオブジェクトに対して許容されるプロパティと操作を指定します。
+> 連絡先および個人用配布リスト オブジェクトに対して許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
 ## <a name="see-also"></a>関連項目
 
@@ -65,7 +65,7 @@ mapidefs.h
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

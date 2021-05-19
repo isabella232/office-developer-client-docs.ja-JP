@@ -1,5 +1,5 @@
 ---
-title: imapisessionunadvise
+title: IMAPISessionUnadvise
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "32335703"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[imapisession:: Advise](imapisession-advise.md)メソッドへの呼び出しを使用して、以前に設定した通知の送信をキャンセルします。 
+[IMAPISession::Advise](imapisession-advise.md)メソッドへの呼び出しで以前に設定された通知の送信をキャンセルします。 
   
 ```cpp
 HRESULT Unadvise(
@@ -35,21 +35,21 @@ HRESULT Unadvise(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulconnection_
+ _ulConnection_
   
-> 順番アクティブな通知登録に関連付けられている接続番号。 _ulconnection_の値は、以前の**imapisession:: Advise**の呼び出しによって返されたものである必要があります。
+> [in]アクティブな通知登録に関連付けられている接続番号。 _ulConnection の値は_**、IMAPISession::Advise** への以前の呼び出しによって返されている必要があります。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 登録が正常にキャンセルされました。
+> 登録が正常に取り消されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**imapisession:: アドバイズ**中止メソッドは、通知の登録を取り消します。 **アドバイズ**中止は、登録に使用された**アドバイズ**呼び出しで受け取った発信者のアドバイズシンクへのポインターを解放します。 
+**IMAPISession::Unadvise** メソッドは、通知の登録を取り消します。 **Unadvise は**、登録に使用される Advise 呼び出しで受け取った呼び出し元のアアドバイス シンクへのポインターを解放します。 
   
-通常、 **** アドバイズ中止呼び出し中にアドバイズシンクの[IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッド**** を呼び出します。 ただし、アドバイズシンクの[IMAPIAdviseSink:: onnotify](imapiadvisesink-onnotify.md)メソッドを呼び出しているプロセスに別のスレッドがある場合は、 **onnotify**メソッドが戻るまで**リリース**呼び出しが遅延します。 
+一般に **、Unadvise は Unadvise** 呼び出し中に、アアドバイス シンクの [IUnknown::Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) **メソッドを呼び出** します。 ただし、別のスレッドがアアドバイス シンクの [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドを呼び出す過程にある場合 **、OnNotify** メソッドが返されるまで、Release 呼び出しは遅延されます。 
   
 ## <a name="see-also"></a>関連項目
 

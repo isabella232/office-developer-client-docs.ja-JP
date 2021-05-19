@@ -27,7 +27,7 @@ ms.locfileid: "32335379"
 
 次のコード例の DemoSelectNamesDialogRecipients では、[AppointmentItem](https://msdn.microsoft.com/library/bb645611\(v=office.15\)) オブジェクトを作成し、いくつかのプロパティを設定します。 その後、 **SelectNamesDialog** を作成し、 [SetDefaultDisplayMode(OlDefaultSelectNamesDisplayMode)](https://msdn.microsoft.com/library/bb623783\(v=office.15\)) メソッドを使用して、[ **名前の選択**] ダイアログ ボックスの会議表示モードを設定します。 この例では、 **Resource** 受信者セレクターに "Conf Room 36/2739" という文字列を設定します。 ダイアログ ボックスをユーザーに表示した後、コードでは **SelectNamesDialog** のこのインスタンスと関連付けられている **Recipients** コレクションを列挙し、これらの受信者を作成された予定に追加します。 最後に、会議出席依頼をユーザーに表示します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

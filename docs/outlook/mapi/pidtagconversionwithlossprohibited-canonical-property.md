@@ -25,30 +25,30 @@ ms.locfileid: "33417127"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージ転送エージェント (MTA) が、情報を失うメッセージテキスト変換を禁止する場合は、TRUE が含まれます。 
+メッセージ転送エージェント (MTA) が情報を失うメッセージ テキスト変換を禁止されている場合は TRUE を含む。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_CONVERSION_WITH_LOSS_PROHIBITED  <br/> |
-|識別子:  <br/> |0x000d  <br/> |
+|識別子:  <br/> |0x000D  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|エリア:  <br/> |全般構成  <br/> |
+|エリア:  <br/> |一般的な構成  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-禁止されている変換の種類の例としては、Unicode (文字ごとに2バイト) から1バイト文字セットへの "可逆" マッピングがあります。 
+禁止されている変換の種類の例は、Unicode (1 文字あたり 2 バイト) から 1 バイト文字セットへの "損失" マッピングです。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -58,7 +58,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

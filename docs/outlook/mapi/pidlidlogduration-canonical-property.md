@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 012a3f6e-fd16-4dc9-845d-2bf4cebeaa42
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6f25c1a72882f9236d56532b7259f51512734945
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,37 +25,37 @@ ms.locfileid: "32336919"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ジャーナルメッセージの期間 (分単位) を表します。
+ジャーナル メッセージの期間 (分単位) を表します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidlogduration  <br/> |
-|プロパティセット:  <br/> |PSETID_Log  <br/> |
-|ロング ID (LID):  <br/> |0x00008707  <br/> |
+|関連するプロパティ:  <br/> |dispidLogDuration  <br/> |
+|プロパティ セット:  <br/> |PSETID_Log  <br/> |
+|長い ID (LID):  <br/> |0x00008707  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |仕訳帳  <br/> |
+|エリア:  <br/> |ジャーナル  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**dispidlogend** ([PidLidLogEnd](pidlidlogend-canonical-property.md)) プロパティと**dispidlogend** ([PidLidLogStart](pidlidlogstart-canonical-property.md)) プロパティの間の差になる必要があるアクティビティの期間 (分単位)。
+**dispidLogEnd** ([PidLidLogEnd](pidlidlogend-canonical-property.md)) プロパティと **dispidLogStart** ([PidLidLogStart](pidlidlogstart-canonical-property.md)) プロパティの違いである必要があるアクティビティの期間 (分単位)。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
-[[OXOJRNL]](https://msdn.microsoft.com/library/2aa04fd2-0f36-4ce4-9178-c0fc70aa8d43%28Office.15%29.aspx)
+[[MS-OXOJRNL]](https://msdn.microsoft.com/library/2aa04fd2-0f36-4ce4-9178-c0fc70aa8d43%28Office.15%29.aspx)
   
-> 仕訳帳に対して許容されるプロパティと操作を指定します。
+> ジャーナルに対して許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
 ## <a name="see-also"></a>関連項目
 
@@ -65,7 +65,7 @@ mapidefs.h
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

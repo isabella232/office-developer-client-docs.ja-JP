@@ -27,7 +27,7 @@ ms.locfileid: "33416406"
    
 ## <a name="remarks"></a>注釈
 
- マークアップ追跡が有効になっている ([addmarkup] セルが true の場合)、[viewmarkup] セルは自動的に true に設定され、マークアップの追跡がオフになっても true のままとなります ([addmarkup] セルは FALSE です)。 [AddMarkup] セルが TRUE の場合、[ViewMarkup] セル内の値は無視されます。 
+ マークアップ追跡が有効になっている場合 (AddMarkup セルが TRUE の場合)、ViewMarkup セルは自動的に TRUE に設定され、マークアップ追跡がオフになっても TRUE のままです (AddMarkup セルは FALSE です)。 [AddMarkup] セルが TRUE の場合、[ViewMarkup] セル内の値は無視されます。 
   
 図面にコメントを挿入した場合、校正履歴の記録機能がオンかどうかに関わらず、[ViewMarkup] セルは TRUE に設定されます。[ViewMarkup] セルが TRUE でなければ、図面内にコメントが表示されません。
   
@@ -37,7 +37,7 @@ ms.locfileid: "33416406"
   
 |||
 |:-----|:-----|
-|セル名 :  <br/> |[viewmarkup]  <br/> |
+|セル名 :  <br/> |ViewMarkup  <br/> |
    
 プログラムから、インデックスによって [ViewMarkup] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

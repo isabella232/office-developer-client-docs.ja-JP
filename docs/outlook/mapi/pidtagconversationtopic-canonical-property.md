@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: db852b99-ce04-49bf-a714-7549571502e2
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: dfd437fac3a784212807c495f6e8f1adbe759cb0
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32334686"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-会話スレッドの最初のメッセージのトピックが含まれています。 
+会話スレッドの最初のメッセージのトピックを含む。 
   
 |||
 |:-----|:-----|
@@ -34,35 +34,35 @@ ms.locfileid: "32334686"
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |一般的なメッセージング  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-会話スレッドは、一連のメッセージと返信を表します。 これらのプロパティは、スレッドの最初のメッセージ (通常は**PR_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md)) プロパティ) に対して設定されます。 スレッド内の後続のメッセージでは、変更せずに同じトピックを使用する必要があります。 
+会話スレッドは、一連のメッセージと返信を表します。 これらのプロパティは、スレッド内の最初のメッセージに対して設定され、通常は PR_NORMALIZED_SUBJECT **(** [PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md)) プロパティに設定されます。 スレッド内の後続のメッセージでは、変更せずに同じトピックを使用する必要があります。 
   
-**PR_CONVERSATION_INDEX** ([PidTagConversationIndex](pidtagconversationindex-canonical-property.md)) プロパティは、後続のメッセージと返信の間の順序関係を示します。 このプロパティが設定されている場合でも、その使用はオプションです。 
+プロパティ **PR_CONVERSATION_INDEX** ([PidTagConversationIndex](pidtagconversationindex-canonical-property.md)) プロパティは、後続のメッセージと返信の順序関係を示します。 これらのプロパティが設定されている場合でも、その使用はオプションです。 
   
-メッセージストアプロバイダーには、これらのプロパティを受信または送信メッセージで常に設定できるようにするオプションがあります。 これらのプロパティが既に設定されている場合は、それらを変更しないようにしてください。 指定しない場合は、 **PR_NORMALIZED_SUBJECT**に設定できます。 [imapiprop:: SaveChanges](imapiprop-savechanges.md)が呼び出される前に、任意のアクションを実行する必要があります。 
+メッセージ ストア プロバイダーには、これらのプロパティが常に受信メッセージまたは送信メッセージに設定されるのを保証するオプションがあります。 これらのプロパティが既に設定されている場合は、変更する必要があります。 指定しない場合は、これらの値を [PR_NORMALIZED_SUBJECT] **に設定できます**。 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)が呼び出される前に、すべてのアクションを実行する必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
-> 電子メールメッセージオブジェクトで許容されるプロパティと操作を指定します。
+> 電子メール メッセージ オブジェクトで許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -72,7 +72,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

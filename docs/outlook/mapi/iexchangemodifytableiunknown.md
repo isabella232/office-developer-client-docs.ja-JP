@@ -25,48 +25,48 @@ ms.locfileid: "33418107"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-microsoft exchange server table オブジェクトへのアクセスをサポートします。特に、システムアクセス制御リスト (SACL) テーブルオブジェクトと、microsoft exchange server フォルダー上のルールテーブルオブジェクトへのアクセスをサポートします。 このインターフェイスは、 [IMAPITable: IUnknown](imapitableiunknown.md)インターフェイスに似ていますが、sacl とルールを制御するために使用される Microsoft Exchange Server 固有の構造のサポートが追加されています。 
+システム アクセス制御Microsoft Exchange Server(SACL) テーブル オブジェクトおよびルール テーブル オブジェクトへのアクセスをサポートします。Microsoft Exchange Serverします。 このインターフェイスは[IMAPITable : IUnknown](imapitableiunknown.md)インターフェイスに似ているが、SACL とルールを制御するために使用される Microsoft Exchange Server 固有の構造のサポートを追加します。 
   
 |||
 |:-----|:-----|
-|公開者:  <br/> |なし  <br/> |
-|実装元:  <br/> |サーバーテーブルオブジェクト  <br/> |
-|呼び出し元:  <br/> |MAPI およびクライアントアプリケーション  <br/> |
+|次のユーザーによって公開されます。  <br/> |なし  <br/> |
+|実装元:  <br/> |サーバー テーブル オブジェクト  <br/> |
+|呼び出し元:  <br/> |MAPI およびクライアント アプリケーション  <br/> |
 |インターフェイス識別子:  <br/> |IID_IExchangeModifyTable  <br/> |
 |ポインターの種類:  <br/> |LPEXCHANGEMODIFYTABLE  <br/> |
-|トランザクションモデル:  <br/> |一括  <br/> |
+|トランザクション モデル:  <br/> |Transacted  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[GetLastError](iexchangemodifytable-getlasterror.md) <br/> |table オブジェクトで発生した最後のエラーについての情報を返します。  <br/> |
-|[GetTable](iexchangemodifytable-gettable.md) <br/> |MAPI table オブジェクトのインターフェイスへのポインターを返します。  <br/> |
-|[modifytable](iexchangemodifytable-modifytable.md) <br/> |MAPI テーブルオブジェクトを更新します。  <br/> |
+|[GetLastError](iexchangemodifytable-getlasterror.md) <br/> |テーブル オブジェクトで発生した最後のエラーに関する情報を返します。  <br/> |
+|[GetTable](iexchangemodifytable-gettable.md) <br/> |MAPI テーブル オブジェクトのインターフェイスへのポインターを返します。  <br/> |
+|[ModifyTable](iexchangemodifytable-modifytable.md) <br/> |MAPI テーブル オブジェクトを更新します。  <br/> |
    
-|**ルールテーブルを変更するために使用されるプロパティ**|**Access**|
+|**ルール テーブルの変更に使用されるプロパティ**|**Access**|
 |:-----|:-----|
-|**PR_RULE_ACTIONS**([PidTagRuleActions](pidtagruleactions-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_RULE_CONDITION**([PidTagRuleCondition](pidtagrulecondition-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_RULE_ID**([PidTagRuleId](pidtagruleid-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_RULE_LEVEL**([PidTagRuleLevel](pidtagrulelevel-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_RULE_NAME**([PidTagRuleName](pidtagrulename-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_RULE_PROVIDER**([PidTagRuleProvider](pidtagruleprovider-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_RULE_PROVIDER_DATA**([PidTagRuleProviderData](pidtagruleproviderdata-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_RULE_SEQUENCE**([PidTagRuleSequence](pidtagrulesequence-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_RULE_STATE**([PidTagRuleState](pidtagrulestate-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_RULE_USER_FLAGS**([PidTagRuleUserFlags](pidtagruleuserflags-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_RULE_ACTIONS** ([PidTagRuleActions](pidtagruleactions-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_RULE_CONDITION** ([PidTagRuleCondition](pidtagrulecondition-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_RULE_ID** ([PidTagRuleId](pidtagruleid-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_RULE_LEVEL** ([PidTagRuleLevel](pidtagrulelevel-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_RULE_NAME** ([PidTagRuleName](pidtagrulename-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_RULE_PROVIDER** ([PidTagRuleProvider](pidtagruleprovider-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_RULE_PROVIDER_DATA** ([PidTagRuleProviderData](pidtagruleproviderdata-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_RULE_SEQUENCE** ([PidTagRuleSequence](pidtagrulesequence-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_RULE_STATE** ([PidTagRuleState](pidtagrulestate-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_RULE_USER_FLAGS** ([PidTagRuleUserFlags](pidtagruleuserflags-canonical-property.md))  <br/> |読み取り専用  <br/> |
    
-|**SACL テーブルを変更するために使用されるプロパティ**|**Access**|
+|**SACL テーブルの変更に使用されるプロパティ**|**Access**|
 |:-----|:-----|
-|**PR_MEMBER_ENTRYID**([PidTagMemberEntryId](pidtagmemberentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_MEMBER_ID**([PidTagMemberId](pidtagmemberid-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_MEMBER_NAME**([PidTagMemberName](pidtagmembername-canonical-property.md))  <br/> |読み取り専用  <br/> |
-|**PR_MEMBER_RIGHTS**([PidTagMemberRights](pidtagmemberrights-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_MEMBER_ENTRYID** ([PidTagMemberEntryId](pidtagmemberentryid-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_MEMBER_ID** ([PidTagMemberId](pidtagmemberid-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_MEMBER_NAME** ([PidTagMemberName](pidtagmembername-canonical-property.md))  <br/> |読み取り専用  <br/> |
+|**PR_MEMBER_RIGHTS** ([PidTagMemberRights](pidtagmemberrights-canonical-property.md))  <br/> |読み取り専用  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-**IExchangeModifyTable**インターフェイスを取得するには、folder オブジェクトの PT_OBJECT 型のプロパティに対して MAPI [imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出します。 **openproperty**メソッドを呼び出すときに、 _lpiid_パラメーターの値**IID_IExchangeModifyTable**を渡します。 
+**IExchangeModifyTable** インターフェイスを取得するには、フォルダー オブジェクトの種類 PT_OBJECT のプロパティで [MAPI IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを呼び出します。 **OpenProperty メソッドを呼び出す** 場合は、lpiid パラメーター **IID_IExchangeModifyTable値**_を渡_ します。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -28,7 +28,7 @@ ms.locfileid: "33418583"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [endtrigger]  <br/> |
+| セル名 :  <br/> | EndTrigger  <br/> |
    
 プログラムから、インデックスによって [EndTrigger] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
@@ -36,6 +36,6 @@ ms.locfileid: "33418583"
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowMisc** <br/> |
-| セル インデックス:  <br/> |**visendtrigger** <br/> |
+| セル インデックス:  <br/> |**visEndTrigger** <br/> |
    
 

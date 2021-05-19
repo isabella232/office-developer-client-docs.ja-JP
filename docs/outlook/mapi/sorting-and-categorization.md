@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 853c48e4-ef5b-49da-b281-f72784c598ce
-description: '最終更新日: 2011 年11月8日'
+description: '最終更新日: 2011 年 11 月 08 日'
 ms.openlocfilehash: 8a5a07cdeb7f000c9a7da24dbea1a42a6f9fc185
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -21,39 +21,39 @@ ms.locfileid: "33418485"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルを並べ替えると、表示されるのがわかりやすい順序で行が配置されます。 たとえば、ある閲覧者は、メッセージの件名で並べ替えたフォルダーの内容テーブルを表示して、会話のすべてのスレッドが一緒に表示されるようにしたり、別の閲覧者が送信者の名前で並べ替えられたメッセージを表示したりできるようにしたい場合があります。 新たにインスタンス化されたテーブルは、必ずしも特定の順序で並べ替えられるとは限りません。 
+テーブルを並べ替えると、ビューワーに合った順序で行が表示されます。 たとえば、ある閲覧者がメッセージの件名で並べ替えたフォルダーのコンテンツ テーブルを表示して、会話のすべてのスレッドが一緒に表示され、別のビューアーがメッセージを送信者の名前で並べ替えたい場合があります。 新しくインスタンス化されたテーブルは、必ずしも特定の順序で並べ替える必要があります。 
   
-並べ替えには、次の2種類があります。
+並べ替えには次の 2 種類があります。
   
 - 標準の並べ替え
     
 - 分類された並べ替え 
     
-標準の並べ替えでは、1つまたは複数の列を並べ替えキーとして使用して、すべての行がフラットリストに表示されます。 分類された並べ替えの場合、行は、並べ替えキーとして1つまたは複数の列と共に階層的に表示されます。 各カテゴリ内には、次の列を含む特別な見出し行があります。
+標準の並べ替えでは、1 つ以上の列を並べ替えキーとして使用して、すべての行がフラット リストに表示されます。 分類された並べ替えでは、1 つ以上の列を並べ替えキーとして階層的に表示します。 各カテゴリ内には、次の列を含む特別な見出し行があります。
   
-- 並べ替えキーを構成する列 (複数の場合があります)
+- 並べ替えキーを作成する列または列
     
-- **PR_CONTENT_COUNT**([PidTagContentCount](pidtagcontentcount-canonical-property.md))
+- **PR_CONTENT_COUNT** ([PidTagContentCount](pidtagcontentcount-canonical-property.md))
     
-- **PR_CONTENT_UNREAD**([PidTagContentUnreadCount](pidtagcontentunreadcount-canonical-property.md))
+- **PR_CONTENT_UNREAD** ([PidTagContentUnreadCount](pidtagcontentunreadcount-canonical-property.md))
     
-- **PR_INSTANCE_KEY**([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))
+- **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))
     
-- **PR_DEPTH**([PidTagDepth](pidtagdepth-canonical-property.md))
+- **PR_DEPTH** ([PidTagDepth](pidtagdepth-canonical-property.md))
     
-- **PR_ROW_TYPE**([PidTagRowType](pidtagrowtype-canonical-property.md)) 
+- **PR_ROW_TYPE** ([PidTagRowType](pidtagrowtype-canonical-property.md)) 
     
-見出し行の下のインデントは、並べ替えキーと一致する値を持つ列を含むテーブルのすべての行です。 これらの行はリーフ行と呼ばれます。 リーフ行には、列セットのすべての列と並べ替えキー列が含まれています。 
+見出し行の下にインデントは、並べ替えキーに一致する値を持つ列を含むテーブルのすべての行です。 これらの行はリーフ行と呼ばれる。 リーフ行には、列セット内のすべての列から並べ替えキー列を差し引いた列が含まれます。 
   
-フォルダーの内容の表は、通常、標準の並べ替えに加えて、分類された並べ替えをサポートします。 通常、アドレス帳コンテナーのコンテンツテーブルは標準の並べ替えのみをサポートします。 
+多くの場合、フォルダーのコンテンツ テーブルでは、標準の並べ替えに加えて分類された並べ替えをサポートしています。 アドレス帳コンテナーのコンテンツ テーブルは、通常、標準の並べ替えのみをサポートします。 
   
-カテゴリには、折りたたまれて展開される2つの状態があります。 カテゴリが折りたたまれた状態の場合は、見出し行のみが[IMAPITable:: QueryRows](imapitable-queryrows.md)から返されます。 カテゴリが展開された状態になると、そのカテゴリに関連するすべての行が返されます。 これには、見出し行とリーフ行が含まれます。 
+カテゴリには、折りたたみと展開の 2 つの状態を指定できます。 カテゴリが折りたたみ状態の場合 [、IMAPITable::QueryRows](imapitable-queryrows.md)から見出し行だけが返されます。 カテゴリが展開状態の場合、そのカテゴリに関連する行すべてが返されます。 これには、見出し行とリーフ行が含まれます。 
   
-テーブルビューの各カテゴリは個別に展開または折りたたむことができます。 つまり、すべてのカテゴリが同時に同じ状態である必要はありません。一部のカテゴリは折りたたむことができ、他のカテゴリは展開されます。 
+テーブル ビュー内の各カテゴリは、個別に展開または折りたたみできます。 つまり、すべてのカテゴリが同時に同じ状態である必要があります。一部のカテゴリは折りたたむ可能性があります。他のカテゴリは展開されます。 
   
-分類されたテーブルのユーザーが、表示方法を決定します。 1つの一般的なオプションは、treeview コントロールと呼ばれる Windows SDK で提供されるコントロールを使用することです。 Treeview コントロールは、ツリーに似た構造の情報をサポートするリストボックスです。 展開された状態のカテゴリの見出し行には、マイナス記号が付いています。折りたたまれた状態のカテゴリの見出し行には、プラス記号が付いています。 展開されたカテゴリは、列見出しの下にあるリーフ行と共に表示されます。 
+分類されたテーブルのユーザーは、表示方法を決定します。 一般的なオプションの 1 つは、ツリー ビュー コントロールと呼Windows SDK で提供されるコントロールを使用する方法です。 Treeview コントロールは、ツリーのような構造の情報をサポートするリスト ボックスです。 展開された状態のカテゴリの見出し行にはマイナス記号が付き、折りたたみ状態のカテゴリの見出し行にはプラス記号が付けられます。 展開されたカテゴリは、見出し行の下にインデントされたリーフ行で表示されます。 
   
-カテゴリを折りたたむと展開するために、クライアントアプリケーションまたはサービスプロバイダーは、次の[IMAPITable: IUnknown](imapitableiunknown.md)メソッドを使用します。 
+カテゴリを折りたたみ、展開するには、クライアント アプリケーションまたはサービス プロバイダーが次の [IMAPITable : IUnknown](imapitableiunknown.md) メソッドを使用します。 
   
 - [IMAPITable::GetCollapseState](imapitable-getcollapsestate.md)
     
@@ -63,7 +63,7 @@ ms.locfileid: "33418485"
     
 - [IMAPITable::CollapseRow](imapitable-collapserow.md)
     
-会話のスレッドの並べ替えの詳細については、以下のトピックを参照してください。
+スレッドのスレッドの並べ替えの詳細については、次のトピックを参照してください。
   
 - [SSortOrder](ssortorder.md)
     

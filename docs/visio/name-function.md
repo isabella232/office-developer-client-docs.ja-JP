@@ -22,7 +22,7 @@ ms.locfileid: "33416798"
   
 ## <a name="syntax"></a>構文
 
-NAME (* * *langID_opt* * *) 
+NAME (** *langID_opt* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 

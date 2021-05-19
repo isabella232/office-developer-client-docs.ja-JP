@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 32676003-ba32-886f-1185-4760cb0e30e3
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 2aeca1a65a859ac9502995a463bc4869609bcd15
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -21,13 +21,13 @@ ms.locfileid: "32334962"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアントコンピューターに mapi32 の現在のコピーのバックアップコピーを作成し、mapi32 を MAPI スタブライブラリ mapistub に復元して復元します。
+クライアント コンピューター上の現在のコピーのmapi32.dllコピーを作成し、MAPI スタブ ライブラリを使用mapi32.dllを復元します。mapistub.dll。
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|エクスポート対象:  <br/> |mapistub  <br/> |
+|次の方法でエクスポートされます。  <br/> |mapistub.dll  <br/> |
 |呼び出し元:  <br/> |クライアント  <br/> |
 |実装元:  <br/> |Windows  <br/> |
    
@@ -37,23 +37,23 @@ DWORD STDAPICALLTYPE FixMAPI(void);
 
 ## <a name="return-values"></a>戻り値
 
-関数が正常に終了した場合、戻り値は0以外の値になります。
+関数が成功した場合、戻り値は 0 以外の値になります。
   
-関数が失敗した場合、戻り値は0になります。 拡張エラー情報を取得するには、Microsoft Windows Software Development Kit (SDK) 関数 ( **[GetLastError](https://msdn.microsoft.com/library/ms679360.aspx)**) を呼び出します。 
+関数が失敗した場合、戻り値は 0 です。 拡張エラー情報を取得するには、Microsoft Windows ソフトウェア開発キット (SDK) 関数 **[GetLastError を呼び出します](https://msdn.microsoft.com/library/ms679360.aspx)**。 
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
- **FixMAPI**は、ファイルが読み取り専用としてマークされている場合は、現在の mapi32 ファイルを置き換えません。 
+ **ファイルが読み** 取り専用としてマークされている場合、FixMAPI は現在mapi32.dllファイルを置き換える必要があります。 
   
- **FixMAPI**は、Microsoft Exchange Server がコンピューターにインストールされている場合は、現在の mapi32 を置き換えません。 
+ **FixMAPI** は、コンピューターにインストールされているmapi32.dll現在Microsoft Exchange Server置き換えるわけではありません。 
   
-**FixMAPI**がコンピューターに mapi32 の現在のコピーのバックアップコピーを作成すると、"mapi32" とは異なる名前がバックアップコピーに割り当てられます。 その後、そのアセンブリに対する後続の呼び出しがバックアップコピーに送られます。 
+**FixMAPI** がコンピューター上の mapi32.dll の現在のコピーのバックアップ コピーを作成すると、バックアップ コピーに "mapi32.dll" とは異なる名前が割り当mapi32.dll。 その後、そのアセンブリを対象とした後続の呼び出しをバックアップ コピーに指示します。 
   
 ## <a name="see-also"></a>関連項目
 
 
 
-[KB 256946: Outlook 2000 の起動時にプログラムの競合エラーメッセージが表示される](https://support.microsoft.com/kb/256946)
+[KB 256946: 2000 から開始すると、プログラムの競合Outlookされます。](https://support.microsoft.com/kb/256946)
   
-[KB 228457: Internet Explorer 5 に含まれる Fixmapi ツールについて説明します。](https://support.microsoft.com/kb/228457)
+[KB 228457: 5 に付属Fixmapi.exeツールのInternet Explorer説明](https://support.microsoft.com/kb/228457)
 

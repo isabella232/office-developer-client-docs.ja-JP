@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 83b69e8f-0b5a-4992-b5b8-160d3bdfa22a
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 45b6b3fb0c67d854fddf3773c06cef7b36f54992
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32339327"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-添付ファイルの長いファイル名と拡張子を含みます (パスを除く)。 
+パスを除く添付ファイルの長いファイル名と拡張子を含む。 
   
 |||
 |:-----|:-----|
@@ -34,45 +34,45 @@ ms.locfileid: "32339327"
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |メッセージの添付ファイル  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-これらのプロパティは、 **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) プロパティの ATTACH_BY_VALUE、ATTACH_BY_REFERENCE、ATTACH_BY_REF_RESOLVE、および ATTACH_BY_REF_ONLY の各値に関連しています。 長いファイル名をサポートするプラットフォームは、送信時に**PR_ATTACH_LONG_FILENAME**プロパティと**PR_ATTACH_FILENAME** ([PidTagAttachFilename](pidtagattachfilename-canonical-property.md)) プロパティの両方を設定する必要があります。また、 **PR_ATTACH_LONG_FILENAME** first when をチェックする必要があります。いう. 
+これらのプロパティは、ATTACH_BY_VALUE(PidTagAttachMethod) プロパティの ATTACH_BY_VALUE、ATTACH_BY_REFERENCE、ATTACH_BY_REF_RESOLVE、ATTACH_BY_REF_ONLY **PR_ATTACH_METHOD** の値に関連 [](pidtagattachmethod-canonical-property.md)します。 長いファイル **名** をサポートするプラットフォームでは、送信時に **PR_ATTACH_LONG_FILENAME** プロパティと **PR_ATTACH_FILENAME** ([PidTagAttachFilename](pidtagattachfilename-canonical-property.md)) プロパティの両方を設定し、受信時に最初に PR_ATTACH_LONG_FILENAME を確認する必要があります。 
   
-クライアントアプリケーションは、メッセージを受信するホストコンピューターが長いファイル名をサポートしている場合に、このプロパティに推奨される長いファイル名を設定する必要があります。 **PR_ATTACH_LONG_FILENAME**は、添付ファイルを保存するためのファイル名として使用でき、 **PR_ATTACH_EXTENSION** ([PidTagAttachExtension](pidtagattachextension-canonical-property.md)) プロパティが指定されていない場合は、ファイル拡張子を指定します。 
+クライアント アプリケーションは、メッセージを受信するホスト コンピューターが長いファイル名をサポートしている場合に使用する推奨される長いファイル名にこのプロパティを設定する必要があります。 **PR_ATTACH_LONG_FILENAME** を保存するファイル名として使用し **、PR_ATTACH_EXTENSION** ([PidTagAttachExtension](pidtagattachextension-canonical-property.md)) プロパティが指定されていない場合は、ファイル名の拡張子を指定できます。 
   
-**PR_ATTACH_FILENAME**によって提供されるファイル名とは異なり、この名前は8文字のファイル名に加えて、3文字の拡張子に制限されません。 その代わりに、ファイル名、内線番号、区切り期間など、最大256文字の長さを指定できます。 
+PR_ATTACH_FILENAME によって提供 **されるファイル名** とは異なり、この名前は 8 文字のファイル名と 3 文字の拡張子に制限されません。 その代わりに、ファイル名、拡張子、区切り記号のピリオドを含む最大 256 文字の長い文字を指定できます。 
   
-MAPI は、ANSI 文字セットのファイル名に対してのみ機能します。 OEM 文字セットでファイル名を使用するクライアントアプリケーションは、MAPI を呼び出す前に、それらを ANSI に変換する必要があります。 
+MAPI は、ANSI 文字セット内のファイル名でのみ動作します。 OEM 文字セットでファイル名を使用するクライアント アプリケーションは、MAPI を呼び出す前に ANSI に変換する必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルオブジェクトを処理します。
+> メッセージ オブジェクトと添付ファイル オブジェクトを処理します。
     
-[[OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS-OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
-> インターネット標準の電子メールの規則からメッセージオブジェクトに変換します。
+> インターネット標準の電子メール規則からメッセージ オブジェクトに変換します。
     
-[[OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
+[[MS-OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
   
-> 権限が管理されたエンコード済みメッセージのプロパティを指定します。
+> 権限で管理されたエンコードされたメッセージのプロパティを指定します。
     
-[[OXOUM]](https://msdn.microsoft.com/library/2a0696c5-2caf-4f20-87fb-085db430afec%28Office.15%29.aspx)
+[[MS-OXOUM]](https://msdn.microsoft.com/library/2a0696c5-2caf-4f20-87fb-085db430afec%28Office.15%29.aspx)
   
-> ボイスメールおよび fax メッセージを表すために許容されるプロパティと操作を指定します。
+> ボイス メールおよび FAX メッセージを表す場合に許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mmapitags
+Mmapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -82,7 +82,7 @@ Mmapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

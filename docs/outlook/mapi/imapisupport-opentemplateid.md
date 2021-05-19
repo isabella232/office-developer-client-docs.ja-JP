@@ -25,7 +25,7 @@ ms.locfileid: "33418506"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-外部アドレス帳プロバイダーの受信者エントリを開きます。
+外部アドレス帳プロバイダーで受信者エントリを開きます。
   
 ```cpp
 HRESULT OpenTemplateID(
@@ -43,41 +43,41 @@ LPMAPIPROP lpMAPIPropSibling
 
  _cbTemplateID_
   
-> 順番_lpTemplateID_によって示されるテンプレート識別子のバイト数。 
+> [in]  _lpTemplateID_ が指すテンプレート識別子のバイト数です。 
     
  _lpTemplateID_
   
-> 順番開く受信者エントリのテンプレート識別子**PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) プロパティへのポインター。
+> [in]開く受信者エントリの **テンプレート** PR_TEMPLATEID ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) プロパティへのポインター。
     
- _ultemplateflags_
+ _ulTemplateFlags_
   
-> 順番エントリを開く方法を示すために使用されるフラグのビットマスク。 次のフラグを設定できます。
+> [in]エントリを開く方法を説明するために使用されるフラグのビットマスク。 次のフラグを設定できます。
     
 FILL_ENTRY 
   
-> 新しいエントリが作成されています。 外部プロバイダーは、MAPI から[IABLogon:: OpenTemplateID](iablogon-opentemplateid.md)呼び出しを受け取ると、 _lpMAPIPropData_パラメーターで指定されたプロパティを変更するか、特定のインターフェイスを返すことにより、エントリの作成方法を制御できます。_lppMAPIPropNew_での実装。新しいエントリのプロパティを設定する方法を制御します。 
+> 新しいエントリが作成されています。 外部プロバイダーは、後続の [IABLogon::OpenTemplateID](iablogon-opentemplateid.md) 呼び出しを MAPI から受信すると  _、lpMAPIPropData_ パラメーターが指すプロパティを変更するか  _、lppMAPIPropNew_ で特定のインターフェイス実装を返して、新しいエントリのプロパティを設定する方法を制御することで、エントリの作成方法を制御できます。 
     
  _lpMAPIPropData_
   
-> 順番発信者がエントリにアクセスするために使用するインターフェイスの実装へのポインター。 これは、外部プロバイダーが独自の実装でラップして、 _lppMAPIPropNew_パラメーターで返す実装です。 _lpMAPIPropData_パラメーターは、 [imapiprop: IUnknown](imapipropiunknown.md)から派生した読み取り/書き込みインターフェイスの実装を指している必要があり、 _lpinterface_パラメーターで要求されているインターフェイスをサポートしていなければなりません。 
+> [in]呼び出し元がエントリへのアクセスに使用するインターフェイス実装へのポインター。 これは、外部プロバイダーが独自の実装でラップし  _、lppMAPIPropNew_ パラメーターに戻す実装です。 _lpMAPIPropData_ パラメーターは [、IMAPIProp : IUnknown](imapipropiunknown.md)から派生し _、lpInterface_ パラメーターで要求されるインターフェイスをサポートする読み取り/書き込みインターフェイス実装を指している必要があります。 
     
- _lpinterface_
+ _lpInterface_
   
-> 順番エントリへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 _lppMAPIPropNew_パラメーターは、 _lpinterface_で指定された型のインターフェイスを指します。 NULL を渡すと、メッセージングユーザー IID_IMailUser の標準インターフェイスが返されます。 
+> [in]エントリへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 _lppMAPIPropNew_ パラメーターは _、lpInterface_ で指定された型のインターフェイスをポイントします。 NULL を渡すと、メッセージング ユーザーの標準インターフェイスが返IID_IMailUser。 
     
  _lppMAPIPropNew_
   
-> 読み上げ外部プロバイダーがエントリにアクセスするために提供するインターフェイスの実装へのポインター。
+> [out]外部プロバイダーがエントリにアクセスするために提供するインターフェイス実装へのポインター。
     
  _lpMAPIPropSibling_
   
-> 予約語NULL である必要があります。
+> 予約済み。NULL である必要があります。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> バインドプロセスが正常に完了しました。
+> バインド プロセスが成功しました。
     
 MAPI_E_UNKNOWN_ENTRYID 
   
@@ -85,15 +85,15 @@ MAPI_E_UNKNOWN_ENTRYID
     
 ## <a name="remarks"></a>注釈
 
-**imapisupport:: OpenTemplateID**メソッドは、アドレス帳プロバイダーサポートオブジェクトに対してのみ実装されています。 **OpenTemplateID**は、他のアドレス帳プロバイダー (外部プロバイダーとも呼ばれる) に属するエントリに対してホストとして動作するアドレス帳プロバイダーによってのみ呼び出されます。 ホストプロバイダーは、 **OpenTemplateID**を呼び出して外部エントリを開きます。これは、ホストプロバイダーのデータが外部プロバイダーのコードにバインドされるときに発生します。 
+**IMAPISupport::OpenTemplateID** メソッドは、アドレス帳プロバイダーのサポート オブジェクトにのみ実装されます。 **OpenTemplateID** は、他のアドレス帳プロバイダー (外部プロバイダーとも呼ばれる) に属するエントリのホストとして機能できるアドレス帳プロバイダーによってのみ呼び出されます。 ホスト プロバイダーは **OpenTemplateID** を呼び出して外部エントリを開きます。これは、ホスト プロバイダーのデータが外部プロバイダーのコードにバインドされている場合に発生します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**OpenTemplateID**の呼び出しは、外部アドレス帳プロバイダーからのテンプレート識別子を持つエントリの格納をサポートしている場合にのみ行います。 このようなサポートでは、 [IABContainer:: createentry](iabcontainer-createentry.md)および[IABLogon:: openentry](iablogon-openentry.md)実装に追加の要件があります。 詳細については、これらのメソッドの説明を参照し、[ホストアドレス帳プロバイダーとして機能](acting-as-a-host-address-book-provider.md)します。
+**OpenTemplateID を呼** び出すのは、外部アドレス帳プロバイダーからのテンプレート識別子を持つエントリの格納をサポートしている場合のみです。 このようなサポートは [、IABContainer::CreateEntry](iabcontainer-createentry.md) および [IABLogon::OpenEntry 実装](iablogon-openentry.md) に追加の要件を設定します。 詳細については、これらのメソッドの説明とホスト アドレス帳プロバイダーとしての機能を [参照してください](acting-as-a-host-address-book-provider.md)。
   
-**OpenTemplateID**呼び出しが、渡されたのと同じ property オブジェクトの実装で、バインドされたインターフェイスとして返される場合は、property オブジェクトへの参照を解放することができます。 これは、外部プロバイダーがオブジェクトの**AddRef**メソッドを呼び出して、独自の参照を保持しているためです。 外部プロバイダーが property オブジェクトへの参照を保持する必要がない場合、 **OpenTemplateID**は、非連結プロパティオブジェクトを返します。 
+**OpenTemplateID 呼** び出しがバインド インターフェイスとして返される場合は、渡したのと同じプロパティ オブジェクト実装を使用して、プロパティ オブジェクトへの参照を解放できます。 これは、外部プロバイダーが独自の参照を保持するためにオブジェクトの **AddRef** メソッドを呼び出したためです。 外部プロバイダーがプロパティ オブジェクトへの参照を保持する必要が無い場合 **、OpenTemplateID** はアンバウンド プロパティ オブジェクトを返します。 
   
-**OpenTemplateID**が MAPI_E_UNKNOWN_ENTRYID で失敗する場合は、エントリを読み取り専用として処理することによって続行します。 
+**OpenTemplateID に** エラーがMAPI_E_UNKNOWN_ENTRYID場合は、エントリを読み取り専用として扱って続行してください。 
   
 ## <a name="see-also"></a>関連項目
 

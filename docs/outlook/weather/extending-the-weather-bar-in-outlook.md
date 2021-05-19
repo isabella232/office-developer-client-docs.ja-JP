@@ -80,9 +80,9 @@ Outlook の天気予報バーには、地理上の場所における気象情報
   
 |||
 |:-----|:-----|
-|**Key** <br/> |HKCU\Software\Microsoft\Office\15.0\Outlook\Options\Calendar  <br/> |
+|**キー** <br/> |HKCU\Software\Microsoft\Office\15.0\Outlook\Options\Calendar  <br/> |
 |**値の名前** <br/> |**WeatherServiceUrl** <br/> |
-|**値の種類** <br/> |REG_SZ  <br/> |
+|**値の型** <br/> |REG_SZ  <br/> |
 |**既定値** <br/> |EMPTY_STRING  <br/> |
 |**説明** <br/> |天気予報データ サービスの URL  <br/> |
    
@@ -99,10 +99,10 @@ Outlook の天気予報バーには、地理上の場所における気象情報
   
 |||
 |:-----|:-----|
-|**Key** <br/> |HKCU\Software\Microsoft\Office\15.0\Outlook\Options\Calendar  <br/> |
+|**キー** <br/> |HKCU\Software\Microsoft\Office\15.0\Outlook\Options\Calendar  <br/> |
 |**値の名前** <br/> |**DisableWeather** <br/> |
 |**値の型** <br/> |REG_DWORD  <br/> |
-|**既定値** <br/> |.0  <br/> |
+|**既定値** <br/> |0  <br/> |
 |**説明** <br/> |値 0 の場合、天気予報バーが有効になります。それ以外の値の場合、天気予報バーは無効になります。  <br/> |
    
 天気予報バー機能がグループ ポリシーによってオフにされている場合、[ **予定表**] タブに [ **予定表に天気予報を表示する**] チェック ボックスは表示されません。この機能を再びオンにする場合は、管理者にお問い合わせください。 
@@ -120,7 +120,7 @@ Office がインターネットに接続可能であることを確認してく�
 |**キー** <br/> |HKCU\Software\Microsoft\Office\15.0\Common\Internet  <br/> |
 |**値の名前** <br/> |**UseOnlineContent** <br/> |
 |**値の型** <br/> |REG_DWORD  <br/> |
-|**既定値** <br/> |pbm-2  <br/> |
+|**既定値** <br/> |2  <br/> |
 |**説明** <br/> |値 2 の場合、天気予報バーが有効になります。それ以外の値の場合、天気予報バーは無効になります。  <br/> |
    
 天気予報バー機能がグループ ポリシーによってオフにされている場合、[ **予定表**] タブに [ **予定表に天気予報を表示する**] チェック ボックスは表示されません。この機能を再びオンにする場合は、管理者にお問い合わせください。 

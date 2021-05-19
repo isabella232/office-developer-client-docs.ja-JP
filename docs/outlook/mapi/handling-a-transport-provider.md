@@ -19,13 +19,13 @@ ms.locfileid: "33416539"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-クライアントは、トランスポートプロバイダーと MAPI スプーラーで提供される状態オブジェクトを通じて、トランスポートプロバイダーと通信します。 クライアントは、 [imapisession:: getstatustable](imapisession-getstatustable.md)を呼び出してステータスオブジェクトにアクセスし、状態テーブルを取得します。 Status オブジェクトは、プロバイダーを構成し、受信および送信メッセージキューをフラッシュする、パスワードを設定する、および状態を検証するための[imapistatus: imapistatus](imapistatusimapiprop.md)インターフェイスを実装しています。 状態オブジェクトの詳細については、「 [status Table and status objects](status-table-and-status-objects.md)」を参照してください。
+クライアントは、トランスポート プロバイダーと MAPI スプーラーによって提供される状態オブジェクトを介してトランスポート プロバイダーと通信します。 クライアントは [IMAPISession::GetStatusTable](imapisession-getstatustable.md) を呼び出して状態オブジェクトにアクセスし、状態テーブルを取得します。 Status オブジェクトは [IMAPIStatus : IMAPIProp](imapistatusimapiprop.md) インターフェイスを実装します。このインターフェイスには、プロバイダーの構成、受信メッセージ キューと送信メッセージ キューのフラッシュ、パスワードの設定、および状態の検証のためのメソッドがあります。 状態オブジェクトの詳細については、「Status [Table and Status Objects」を参照してください](status-table-and-status-objects.md)。
 
 
-- [必要に応じてメッセージを送信または受信](sending-or-receiving-a-message-on-demand.md)する: 必要に応じてメッセージを送信または受信する方法について説明します。
+- [メッセージをオンデマンドで送受信する](sending-or-receiving-a-message-on-demand.md): オンデマンドでメッセージを送受信する方法について説明します。
     
-- [トランスポートオーダーの設定](setting-transport-order.md): トランスポート順序を設定する方法について説明します。
+- [トランスポートの順序の設定](setting-transport-order.md): トランスポートの順序を設定する方法について説明します。
     
-- [トランスポートプロバイダーの再構成](reconfiguring-a-transport-provider.md): トランスポートプロバイダーを再構成する方法と、設定できるプロパティについて説明します。
+- [トランスポート プロバイダーの再構成](reconfiguring-a-transport-provider.md): トランスポート プロバイダーを再構成する方法と、設定できるプロパティについて説明します。
     
 

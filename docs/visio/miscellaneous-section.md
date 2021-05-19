@@ -24,8 +24,8 @@ ms.locfileid: "33418800"
 
 [シェイプシート] ウィンドウ、または図面ウィンドウから [**基本動作**] ダイアログ ボックス ([[開発者用](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] グループで、[**基本動作**] をクリック) の [**基本動作**] タブで、このセクションの多くのセルに値を設定できます。[Group Properties] セクションのセルを使用して、その他のグループのプロパティを設定できます。 
   
-Visio バージョン5.0 の製品では、このセクションには**objinteract**および**objinteract**というセルが含まれていました。 [図形のレイアウト] セクションの次のセルに、 **objinteract 相互作用**] セルの動作がマップされるようになりました。 Shape **fixedcode**、 **[shapepermeablex]**、 **[shapepermeabley]**、および **[shapepermeableplace]**。 [objbehavior] セルの動作は、[# **xedcode** ] および [ **[shaperoutestyle]** ] セルにマップされるようになりました。 
+バージョン 5.0 Visioでは、このセクションには **ObjInteract** セルと **ObjBehavior セルが含** まれていました。 **ObjInteract** セル内の動作は、Shape Layout セクションの次のセルにマップされます。ShapeFixedCode、ShapePermeableX、ShapePermeableY、および **ShapePermeablePlace** です。  ObjBehavior セルの動作が **ConFixedCode** セルと **ShapeRouteStyle セルにマップ** されます。 
   
-Visio バージョン5.0 日本語の製品では、このセクションには**垂直のテキスト**セルが含まれていました。 Visio バージョン2000製品以降では、このセルの値は、[ **Text Block Format** ] セクションの [ **textdirection** ] セルに格納されます。 
+バージョン 5.0 Visioでは、このセクションには **VerticalText セルが含** まれていました。 バージョン 2000 Visio以降では、このセルの値は[テキスト ブロック形式] セクションの **[TextDirection]** セル **に格納** されます。 
   
 

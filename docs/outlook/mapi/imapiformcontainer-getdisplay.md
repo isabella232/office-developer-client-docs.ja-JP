@@ -25,7 +25,7 @@ ms.locfileid: "33416133"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームコンテナーの表示名を返します。
+フォーム コンテナーの表示名を返します。
   
 ```cpp
 HRESULT GetDisplay(
@@ -38,15 +38,15 @@ HRESULT GetDisplay(
 
  _ulFlags_
   
-> 順番返される文字列の型を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 返される文字列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
+> 返される文字列は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列は ANSI 形式です。
     
- _pszdisplayname_
+ _pszDisplayName_
   
-> 読み上げフォームコンテナーの表示名を含む文字列へのポインター。
+> [out]フォーム コンテナーの表示名を含む文字列へのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -60,7 +60,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|FormContainerDlg  <br/> |CFormContainerDlg:: CFormContainerDlg  <br/> |mfcmapi は、 **imapiformcontainer:: getdisplay**メソッドを使用して、CFormContainerDlg をレンダリングするときにフォームコンテナーの名前を取得します。  <br/> |
+|FormContainerDlg.cpp  <br/> |CFormContainerDlg::CFormContainerDlg  <br/> |MFCMAPI は **IMAPIFormContainer::GetDisplay** メソッドを使用して、CFormContainerDlg をレンダリングするときにフォーム コンテナーの名前を取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
