@@ -21,18 +21,18 @@ ms.locfileid: "33424729"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロファイルを作成する方法の1つは、既存のプロファイルからコピーして、必要なメッセージサービスおよびサービスプロバイダーを変更することです。 プロファイルのコピーには、 [MAPIAdminProfiles](mapiadminprofiles.md)関数を使用して MAPI で提供されるプロファイル管理オブジェクトを使用します。 
+プロファイルを作成する 1 つの方法は、既存のプロファイルからコピーし、必要なメッセージ サービスとサービス プロバイダーを変更する方法です。 プロファイルのコピーには [、MAPIAdminProfiles](mapiadminprofiles.md) 関数を介して MAPI によって提供されるプロファイル管理オブジェクトを使用する必要があります。 
   
  **プロファイルをコピーするには**
   
-1. **MAPIAdminProfiles**を呼び出して、 **IProfAdmin**インターフェイスポインターを取得します。 
+1. **MAPIAdminProfiles を呼び出** して **、IProfAdmin インターフェイス ポインターを** 取得します。 
     
-2. プロファイルテーブルにアクセスするには、 [IProfAdmin:: getprofiletable](iprofadmin-getprofiletable.md)を呼び出します。 
+2. [IProfAdmin::GetProfileTable](iprofadmin-getprofiletable.md)を呼び出して、プロファイル テーブルにアクセスします。 
     
-3. **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) をコピーするプロファイルの名前と一致させるために、 [spropertyrestriction](spropertyrestriction.md)構造のプロパティ制限を構築します。 
+3. [SPropertyRestriction](spropertyrestriction.md)構造体を使用してプロパティ制限を作成し **、PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) とコピーするプロファイルの名前を一致します。 
     
-4. [IMAPITable:: FindRow](imapitable-findrow.md)を呼び出して、プロファイルテーブルで該当する行を見つけます。 
+4. [IMAPITable::FindRow を呼び出](imapitable-findrow.md)して、プロファイル テーブル内の適切な行を探します。 
     
-5. [IProfAdmin:: copyprofile](iprofadmin-copyprofile.md)を呼び出し、 **PR_DISPLAY_NAME**列の値を_lpszoldprofilename_パラメーターとして渡します。 
+5. [IProfAdmin::CopyProfile](iprofadmin-copyprofile.md)を呼び出し、PR_DISPLAY_NAMEの値を _lpszOldProfileName パラメーターとして渡_ します。  
     
 

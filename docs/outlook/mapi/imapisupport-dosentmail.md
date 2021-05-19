@@ -1,5 +1,5 @@
 ---
-title: imapisupportdo送信メール
+title: IMAPISupportDoSentMail
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -40,7 +40,7 @@ HRESULT DoSentMail(
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lpmessage_
+ _lpMessage_
   
 > [����]�|�C���^�[��J���Ă��郁�b�Z�[�W�𑗐M�ς݃A�C�e����ۗ��Ɏw�肳��Ă���t�H���_�[�Ƀ��b�Z�[�W�𐶐�����K�v������܂��B
     
@@ -52,11 +52,11 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-**imapisupport::D o送信メール**メソッドは、メッセージストアプロバイダーサポートオブジェクトに実装されています。 メッセージストアプロバイダーは、メッセージの処理が完了したときに MAPI スプーラーによって呼び出される[IMsgStore:: FinishedMsg](imsgstore-finishedmsg.md)メソッドの実装から、**メール**を呼び出します。 **FinishedMsg**は、メッセージのロックを解除し、メッセージの参照カウントが1であることを確認し、 **dosentmail**を呼び出します。
+**IMAPISupport::D oSentMail** メソッドは、メッセージ ストア プロバイダーのサポート オブジェクトに実装されます。 メッセージ ストア プロバイダーは、メッセージの処理が完了すると MAPI スプーラーによって呼び出される [IMsgStore::FinishedMsg](imsgstore-finishedmsg.md)メソッドの実装から **DoSentMail** を呼び出します。 **FinishedMsg は** メッセージのロックを解除し、メッセージの参照カウントが 1 で **、DoSentMail を呼び出します**。
   
  **DoSentMail**�ł́A���̃^�X�N����s���܂��B 
   
-- **PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) プロパティのメッセージをチェックして、送信後にメッセージを削除する必要があるかどうかを判断します。
+- 送信後にメッセージを **PR_DELETE_AFTER_SUBMITする必要** があるかどうかを確認するメッセージ ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) プロパティをチェックします。
     
 - ���M�ς݃A�C�e�� �t�H���_�[�̏ꏊ����肵�܂��B
     

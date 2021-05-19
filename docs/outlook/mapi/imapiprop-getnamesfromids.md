@@ -25,7 +25,7 @@ ms.locfileid: "33423574"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-1つまたは複数のプロパティ識別子に対応するプロパティ名を提供します。
+1 つ以上のプロパティ識別子に対応するプロパティ名を指定します。
   
 ```cpp
 HRESULT GetNamesFromIDs(
@@ -39,33 +39,33 @@ HRESULT GetNamesFromIDs(
 
 ## <a name="parameters"></a>パラメーター
 
- _lppproptags_
+ _lppPropTags_
   
-> [入力]入力時に、プロパティタグの配列を含む[SPropTagArray](sproptagarray.md)構造体へのポインター。それ以外の場合は NULL。すべての名前を返す必要があることを示します。 プロパティタグ配列の**cvalues**メンバーを0にすることはできません。 _lppproptags_が入力に有効なポインターである場合、 **GetNamesFromIDs**は、配列に含まれる各プロパティ識別子の名前を返します。 
+> [in, out]入力時に、プロパティ タグの配列を含む [SPropTagArray](sproptagarray.md) 構造体へのポインター。それ以外の場合は NULL で、すべての名前を返す必要があります。 プロパティ **タグ配列の cValues** メンバーは 0 にすることはできません。 _lppPropTags が_ 入力の有効なポインターである場合 **、GetNamesFromIDs は** 配列に含まれる各プロパティ識別子の名前を返します。 
     
- _lppropsetguid_
+ _lpPropSetGuid_
   
-> 順番プロパティセットを識別する guid または[guid](guid.md)構造体へのポインター。 _lppropsetguid_パラメーターは、有効なプロパティセットを指すことも、NULL にすることもできます。 
+> [in]プロパティ セットを識別する [GUID (GUID](guid.md) 構造) へのポインター。 _lpPropSetGuid_ パラメーターは、有効なプロパティ セットをポイントするか、NULL を指定できます。 
     
  _ulFlags_
   
-> 順番返される名前の種類を示すフラグのビットマスク。 次のフラグを使用できます (両方のフラグが設定されている場合、名前は返されません)。
+> [in]返される名前の種類を示すフラグのビットマスク。 次のフラグを使用できます (両方のフラグが設定されている場合、名前は返されません)。
     
 MAPI_NO_IDS 
   
-> Unicode 文字列として格納されている名前のみを返すように要求します。 
+> Unicode 文字列として格納されている名前のみを返す要求。 
     
 MAPI_NO_STRINGS 
   
-> 数値識別子として格納されている名前のみを返すように要求します。 
+> 数値識別子として格納された名前のみを返す要求。 
     
  _lpcPropNames_
   
-> 読み上げ_lpppropnames_パラメーターによって指定された配列内のプロパティ名ポインターの数へのポインター。 
+> [out]  _lppPropNames_ パラメーターが指す配列内のプロパティ名ポインターの数を指すポインター。 
     
  _lpppPropNames_
   
-> 読み上げプロパティ名を含む[mapinameid](mapinameid.md)構造体へのポインターの配列へのポインター。 
+> [out]プロパティ名を含む [MAPINAMEID](mapinameid.md) 構造体へのポインターの配列へのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -75,63 +75,63 @@ S_OK
     
 MAPI_E_NO_SUPPORT 
   
-> オブジェクトは、名前付きプロパティをサポートしていません。 
+> オブジェクトは名前付きプロパティをサポートしていない。 
     
 MAPI_W_ERRORS_RETURNED 
   
-> 呼び出しは全体的に成功しましたが、1つ以上のプロパティの名前を返すことができませんでした。 失敗したプロパティのプロパティタグには、 **PT_ERROR**というプロパティの種類があります。 この警告が返された場合、呼び出しは正常に処理されます。 この警告をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。 
+> 呼び出しは全体的に成功しましたが、1 つ以上のプロパティの名前を返す必要がありました。 失敗したプロパティのプロパティ タグには、プロパティの種類が **PT_ERROR。** この警告が返されると、呼び出しは正常に処理されます。 この警告をテストするには、次のマクロ **HR_FAILED** します。 詳細については、「Using [Macros for Error Handling 」を参照してください](using-macros-for-error-handling.md)。 
     
 MAPI_E_INVALID_PARAMETER 
   
-> _lppproptags_によって示されるプロパティタグ配列内の1つ以上のエントリの**cvalues**メンバーが0に設定されています。 
+> **lppPropTags** が指すプロパティ タグ配列内の 1 つ以上のエントリの _cValues_ メンバーは 0 に設定されます。 
     
 ## <a name="remarks"></a>注釈
 
-ほとんどのプロパティはプロパティ識別子によってアクセスできますが、名前によってアクセスできるプロパティもあります。 **imapiprop:: GetNamesFromIDs**メソッドを呼び出すと、次の操作を実行できます。 
+ほとんどのプロパティへのアクセスはプロパティ識別子によって行いますが、一部のプロパティには名前でアクセスできます。 **IMAPIProp::GetNamesFromIDs** メソッドを呼び出して、次の操作を実行できます。 
   
-- 特定のプロパティセット内の特定のプロパティ識別子の名前を取得します。
+- 特定のプロパティ セット内の特定のプロパティ識別子の名前を取得します。
     
-- 任意のプロパティセット内の特定のプロパティ識別子の名前を取得します。
+- 任意のプロパティ セット内の特定のプロパティ識別子の名前を取得します。
     
-- オブジェクトのマッピングに含まれているすべての名前付きプロパティの名前を取得します。
+- オブジェクトのマッピングに含まれるすべての名前付きプロパティの名前を取得します。
     
-_lppproptags_が1つまたは複数のプロパティ識別子を持つ有効なプロパティタグ配列を指しており、 _lppropsetguid_が有効なプロパティセットをポイントしている場合、 **GetNamesFromIDs**はプロパティセットとプロパティの型を無視し、すべての名前を返します。指定した識別子にマップされます。 
+_lppPropTags_ が 1 つ以上のプロパティ識別子を持つ有効なプロパティ タグ配列をポイントし _、lpPropSetGuid_ が有効なプロパティ セットをポイントする場合 **、GetNamesFromIDs** はプロパティ セットとプロパティの種類を無視し、指定された識別子にマップされる名前をすべて返します。 
   
-_lppproptags_が、1つまたは複数のプロパティ識別子を持つ有効なプロパティタグ配列を指しており、 _lppropsetguid_が NULL の場合、 **GetNamesFromIDs**は指定された識別子にマップされているすべての名前を返します。 
+_lppPropTags_ が 1 つ以上のプロパティ識別子を持つ有効なプロパティ タグ配列をポイントし _、lpPropSetGuid_ が NULL の場合 **、GetNamesFromIDs** は、指定された識別子にマップされる名前をすべて返します。 
   
-指定した識別子に名前が含まれていない場合、 **GetNamesFromIDs**はその識別子が_lpppPropNames_で返される構造内で NULL を返し、MAPI_W_ERRORS_RETURNED も返します。 
+指定した識別子に名前がない場合 **、GetNamesFromIDs** は  _、lpppPropNames_ で返される構造体内のその識別子の場所で NULL を返し、また、その識別子をMAPI_W_ERRORS_RETURNED。 
   
-_lppropsetguid_と_lppproptags_の両方が NULL の場合、 **GetNamesFromIDs**は新しいプロパティタグ配列を割り当て、オブジェクトのすべての名前付きプロパティの名前を返します。 
+_lpPropSetGuid_ と _lppPropTags_ の両方が NULL の場合 **、GetNamesFromIDs** は新しいプロパティ タグ配列を割り当て、オブジェクトのすべての名前付きプロパティの名前を返します。 
   
-返される名前がない場合は、要求されたプロパティセットにプロパティが存在しないか、またはすべてのプロパティがフラグによって除外される型であるため、 **GetNamesFromIDs**は次の処理を実行します。 
+要求されたプロパティ セットにプロパティが存在しないか、すべてのプロパティがフラグによって除外された型である場合など、返される名前がない場合 **、GetNamesFromIDs** は次の操作を実行します。 
   
-- S_OK を返します。
+- 値をS_OKします。
     
-- **cvalues**メンバーを0に設定して、新しい**SPropTagArray**構造を割り当てます。 
+- 新しい **SPropTagArray** 構造体を割り当て **、cValues** メンバーを 0 に設定します。 
     
-- _lpcPropNames_の内容を0に設定します。 
+- _lpcPropNames の内容を_ 0 に設定します。 
     
-- _lpppPropNames_の内容を NULL に設定します。 
+- _lpppPropNames の内容を NULL に_ 設定します。 
     
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-_lppropsetguid_が有効なプロパティセットを指しており、 _lppproptags_が NULL の場合、結果は未定義となります。 次のいずれかの方法を使用できます。 
+_lpPropSetGuid が有効_ なプロパティ セットをポイントし _、lppPropTags_ が NULL の場合、結果は未定義です。 次のいずれかの方法を使用できます。 
   
-- プロパティセットを無視し、プロパティタグ配列の識別子の名前を返します。
+- プロパティ セットを無視し、プロパティ タグ配列内の識別子の名前を返します。
     
-- 指定したプロパティセットに属するプロパティタグ配列内の識別子の名前のみを返します。
+- 指定したプロパティ セットに属するプロパティ タグ配列内の識別子の名前のみを返します。
     
-- 呼び出しを失敗させ、MAPI_E_INVALID_PARAMETER を返します。 
+- 呼び出しに失敗し、MAPI_E_INVALID_PARAMETER。 
     
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-オブジェクトのすべての名前付きプロパティを取得するには、最初にオブジェクトの[imapiprop:: getproplist](imapiprop-getproplist.md)メソッドを呼び出してから、0x8000 の範囲の上にある返された識別子を**GetNamesFromIDs**に渡します。
+オブジェクトのすべての名前付きプロパティを取得するには、まずオブジェクトの [IMAPIProp::GetPropList](imapiprop-getproplist.md) メソッドを呼び出してから、0x8000 の範囲を超える返された識別子を **GetNamesFromIDs** に渡す必要があります。
   
-有効なプロパティセットを渡すが、有効なプロパティタグ配列を渡さない場合は、予期しない結果を得るために準備してください。 **GetNamesFromIDs**の一部の実装では、プロパティセットを無視して、プロパティタグの配列内の識別子の名前を返します。 一部の実装は MAPI_E_INVALID_PARAMETER を返します。 その他の実装では、プロパティセット内のすべてのプロパティの識別子の名前を返します。 プロパティセットが PS_PUBLIC_STRINGS の場合、 **GetNamesFromIDs**は作成されたすべての名前を返すことができます。 パブリック文字列に関連付けられた識別子の下に、サービスプロバイダーがプロパティを格納するかどうかは、immaterial になります。 
+有効なプロパティ セットを渡すが、有効なプロパティ タグ配列を渡さない場合は、予期しない結果を得る準備をしてください。 **GetNamesFromIDs** の一部の実装では、プロパティ セットが無視され、プロパティ タグ配列内の識別子の名前が返されます。 一部の実装では、MAPI_E_INVALID_PARAMETER。 それ以外の実装では、プロパティ セット内のすべてのプロパティの識別子の名前が返されます。 プロパティ セットが指定されているPS_PUBLIC_STRINGS **GetNamesFromIDs** は、これまでに作成された名前を返します。 サービス プロバイダーがパブリック文字列に関連付けられた識別子の下にプロパティを格納するかどうかは重要ではありません。 
   
-プロパティ名の指定が終了したら、 _lpcPropNames_パラメーターの内容を確認して、名前が返されたかどうかを確認します。 その場合は、 [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して、正常な結果が返されたときに、 _lppproptags_および_lpppPropNames_が指すメモリを解放します。 **MAPIFreeBuffer**の1回の呼び出しでは、各パラメーターに対して十分です。ポインターの配列をスキャンして、各**mapinameid**構造を個別に解放する必要はありません。 
+プロパティ名が完成したら  _、lpcPropNames_ パラメーターの内容を確認して、名前が返されたかどうかを確認します。 その場合は [、MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して、成功した結果が返された場合に _lppPropTags と lpppPropNames_ が指すメモリを解放します。  **MAPIFreeBuffer の呼び出しは、パラメーター** ごとに 1 回で十分です。ポインターの配列を走査し、各 **MAPINAMEID** 構造体を個別に解放する必要はない。 
   
-名前付きプロパティの詳細については、「 [MAPI の名前付きプロパティ](mapi-named-properties.md)」を参照してください。 
+名前付きプロパティの詳細については、「MAPI 名前付き [プロパティ」を参照してください](mapi-named-properties.md)。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -139,7 +139,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|SingleMAPIPropListCtrl  <br/> |CSingleMAPIPropListCtrl:: findallnamedprops  <br/> |mfcmapi は、 **imapiprop:: GetNamesFromIDs**メソッドを使用して、以前にマップされていた名前付きプロパティを検索します。  <br/> |
+|SingleMAPIPropListCtrl.cpp  <br/> |CSingleMAPIPropListCtrl::FindAllNamedProps  <br/> |MFCMAPI は **IMAPIProp::GetNamesFromIDs** メソッドを使用して、以前にマップされた名前付きプロパティを検索します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

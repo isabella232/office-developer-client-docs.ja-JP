@@ -1,5 +1,5 @@
 ---
-title: imapisessioncompareentryids
+title: IMAPISessionCompareEntryIDs
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33427816"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-2つのエントリ識別子を比較して、同じオブジェクトを参照しているかどうかを判断します。 
+2 つのエントリ識別子を比較して、同じオブジェクトを参照するかどうかを判断します。 
   
 ```cpp
 HRESULT CompareEntryIDs(
@@ -42,47 +42,47 @@ HRESULT CompareEntryIDs(
 
  _cbEntryID1_
   
-> 順番_lpEntryID1_パラメーターによって指定されたエントリ識別子のバイト数。 
+> [in]  _lpEntryID1_ パラメーターが指すエントリ識別子のバイト 数。 
     
  _lpEntryID1_
   
-> 順番比較する最初のエントリ識別子へのポインター。
+> [in]比較する最初のエントリ識別子へのポインター。
     
  _cbEntryID2_
   
-> 順番_lpEntryID2_パラメーターによって指定されたエントリ識別子のバイト数。 
+> [in]  _lpEntryID2_ パラメーターが指すエントリ識別子のバイト 数。 
     
  _lpEntryID2_
   
-> 順番比較する2番目のエントリ id へのポインター。
+> [in]比較する 2 番目のエントリ識別子へのポインター。
     
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lルー result_
+ _lpulResult_
   
-> 読み上げ比較結果へのポインター。 2つのエントリ識別子が同じオブジェクトを参照している場合は TRUE。それ以外の場合は FALSE。
+> [out]比較の結果へのポインター。 2 つのエントリ識別子が同じオブジェクトを参照する場合は TRUE。それ以外の場合は FALSE。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 比較に成功しました。
+> 比較は成功しました。
     
 MAPI_E_UNKNOWN_ENTRYID 
   
-> パラメーターとして指定されたいずれかまたは両方のエントリ識別子がオブジェクトを参照していない可能性があります。これらのオブジェクトは現在開かれていないため、使用できない可能性があります。
+> パラメーターとして指定されたエントリ識別子の 1 つまたは両方は、オブジェクトを参照しません。これらのオブジェクトは現在開かないので、使用できません。
     
 ## <a name="remarks"></a>注釈
 
-**imapisession:: compareentryids**メソッドは、1つのサービスプロバイダーに属する2つのエントリ識別子を比較して、同じオブジェクトを参照するかどうかを判断します。 MAPI は、エントリ識別子から[MAPIUID](mapiuid.md)部分を抽出して、オブジェクトを処理するサービスプロバイダーを決定し、そのログオンオブジェクトの**compareentryids**メソッドを呼び出して比較を実行します。 
+**IMAPISession::CompareEntryIDs** メソッドは、単一のサービス プロバイダーに属する 2 つのエントリ識別子を比較して、同じオブジェクトを参照するかどうかを判断します。 MAPI は [、MAPIUID](mapiuid.md) 部分をエントリ識別子から抽出して、オブジェクトを担当するサービス プロバイダーを特定し、そのログオン オブジェクトの **CompareEntryIDs** メソッドを呼び出して比較を実行します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**compareentryids**メソッドは、1つのオブジェクトが複数の有効なエントリ識別子を持つことができるので便利です。 このような状況は、サービスプロバイダーの新しいバージョンがインストールされた後などに発生します。 
+**CompareEntryIDs** メソッドは、オブジェクトが複数の有効なエントリ識別子を持つ可能性がある場合に便利です。 この状況は、たとえば、サービス プロバイダーの新しいバージョンがインストールされた後に発生する可能性があります。 
   
-**compareentryids**がエラーを返す場合は、比較の結果に基づいてアクションを実行しないでください。 その代わりに、可能な限り最も厳しい方法を採用します。 たとえば、エントリ識別子の一方または両方に無効な**MAPIUID**が含まれている場合、 **compareentryids**は失敗する可能性があります。 
+**CompareEntryIDs が** エラーを返す場合は、比較の結果に基づいてアクションを実行しない。 代わりに、可能な限り最も保守的なアプローチを取ってください。 たとえば、エントリ識別子の一方または両方に無効な MAPIUID が含まれている場合 **、CompareEntryIDs** が **失敗する可能性があります**。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -90,7 +90,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|basedialog  <br/> |cbasedialog:: oncompareentryids  <br/> |mfcmapi は、 **imapisession:: compareentryids**メソッドを使用して、ユーザーが入力する2つのエントリ id を比較します。  <br/> |
+|BaseDialog.cpp  <br/> |CbaseDialog::OnCompareEntryIDs  <br/> |MFCMAPI は **IMAPISession::CompareEntryIDs** メソッドを使用して、ユーザーが入力した 2 つのエントリ ID を比較します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

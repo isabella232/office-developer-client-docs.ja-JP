@@ -25,32 +25,32 @@ ms.locfileid: "33424225"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-リモートビューアーが[imapistatus:: validatestate](imapistatus-validatestate.md)メソッドを呼び出すことができる場合、このプロパティには TRUE が含まれます。 
+リモート ビューアーが [IMAPIStatus::ValidateState](imapistatus-validatestate.md) メソッドの呼び出しを許可されている場合、このプロパティには TRUE が含まれる。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_REMOTE_VALIDATE_OK  <br/> |
-|識別子:  <br/> |0x3e0d  <br/> |
+|識別子:  <br/> |0x3E0D  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |エリア:  <br/> |MAPI の状態  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-このプロパティは、状態テーブルに表示され、トランスポートパフォーマンスを制御できます。 リモート閲覧者をアイドル状態にする別の方法として考慮することができます。 TRUE に設定されている場合、リモートビューアーは**imapistatus:: validatestate**を必要な回数だけ呼び出すことができます。 値が FALSE の場合は、リモート閲覧者がこれ以上呼び出しを行うことができないことを示します。 
+このプロパティは状態テーブルに表示され、トランスポートのパフォーマンスを制御できます。 これは、リモート ビューアーをアイドル状態にするための別の方法と見なされます。 TRUE に設定すると、リモート ビューアーは **IMAPIStatus::ValidateState** を必要な頻度で呼び出します。 FALSE の値は、リモート ビューアーがそれ以上呼び出しを実行できないことを示します。 
   
-通常、トランスポートプロバイダーは、このプロパティを FALSE に設定して、トランスポートプロバイダーが実行する処理の量が十分である場合に、追加の呼び出しを無効にします。 トランスポートプロバイダーが実行されたら、次に値を TRUE に設定して、クライアントアプリケーションがさらに**imapistatus:: validatestate** calls を行えるようにします。 
+トランスポート プロバイダーは通常、このプロパティを動的に設定します。この値を FALSE に設定すると、トランスポート プロバイダーが十分な量の処理を実行する場合に追加の呼び出しが無効になります。 トランスポート プロバイダーが完了すると、クライアント アプリケーションが **IMAPIStatus::ValidateState** 呼び出しをさらに実行できる値を TRUE に設定します。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
+> 関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -60,7 +60,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

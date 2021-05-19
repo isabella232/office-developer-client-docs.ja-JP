@@ -25,7 +25,7 @@ ms.locfileid: "33421152"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-前のボタンコントロールのエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。 
+前のボタン コントロール エラーに関する情報を含む [MAPIERROR](mapierror.md) 構造体を返します。 
   
 ```cpp
 HRESULT GetLastError(
@@ -39,19 +39,19 @@ HRESULT GetLastError(
 
  _hResult_
   
-> 順番前のメソッド呼び出しで生成されたエラー値へのハンドル。
+> [in]前のメソッド呼び出しで生成されたエラー値のハンドル。
     
  _ulFlags_
   
-> 順番返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> _lppMAPIError_パラメーターで返される**MAPIERROR**構造体の文字列は、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。 
+> _lppMAPIError_ パラメーターで返される **MAPIERROR** 構造体の文字列は、Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列は ANSI 形式になります。 
     
  _lppMAPIError_
   
-> 読み上げエラーのバージョン、コンポーネント、およびコンテキスト情報を含む**MAPIERROR**構造体へのポインターへのポインター。 プロバイダーが適切な情報を使用して**MAPIERROR**構造を提供できない場合は、 _lppMAPIError_パラメーターを NULL に設定できます。 
+> [out]エラーのバージョン、コンポーネント、コンテキスト情報を含む **MAPIERROR** 構造体へのポインターを指すポインター。 プロバイダーが適切な情報を MAPIERROR 構造体に指定できない場合は  _、lppMAPIError_ パラメーターを **NULL** に設定できます。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -61,17 +61,17 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
+> このフラグMAPI_UNICODE設定され、実装が Unicode をサポートしていないか、または設定されていないMAPI_UNICODE実装が Unicode のみをサポートしています。
     
 ## <a name="remarks"></a>注釈
 
-サービスプロバイダーは、失敗した前のメソッド呼び出しに関する情報を提供する**IMAPIControl:: GetLastError**メソッドを実装します。 MAPI では、メッセージまたはダイアログボックスに**MAPIERROR**構造のデータを表示することにより、エラーに関する詳細情報をユーザーに提供できます。 
+サービス プロバイダーは **、IMAPIControl::GetLastError** メソッドを実装して、失敗した以前のメソッド呼び出しに関する情報を提供します。 MAPI は、メッセージまたはダイアログ ボックスに **MAPIERROR** 構造のデータを表示することで、エラーに関する詳細情報をユーザーに提供できます。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-すべてのエラーについて、 **MAPIERROR**構造体に情報を含める必要はありません。 以前のエラーの原因を特定できない場合があります。 情報がある場合は、 **MAPIERROR**構造体の S_OK および適切なデータを返します。 情報を使用できない場合は、 _lppMAPIError_パラメーターの S_OK および NULL へのポインターを返します。 
+エラーごとに **MAPIERROR** 構造に含める情報を持つ必要はない。 以前のエラーが何だったかを判断できない場合があります。 情報がある場合は **、MAPIERROR** S_OK適切なデータを返します。 情報が使用できない場合は  _、lppMAPIError_ パラメーター S_OK NULL へのポインターを返します。 
   
-**GetLastError**メソッドの詳細については、「 [MAPI 拡張エラー](mapi-extended-errors.md)」を参照してください。
+**GetLastError メソッドの詳細については、「MAPI** 拡張 [エラー」を参照してください](mapi-extended-errors.md)。
   
 ## <a name="see-also"></a>関連項目
 

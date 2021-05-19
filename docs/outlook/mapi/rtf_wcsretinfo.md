@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426171"
 ---
-# <a name="rtfwcsretinfo"></a>RTF_WCSRETINFO
+# <a name="rtf_wcsretinfo"></a>RTF_WCSRETINFO
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-この構造体は、圧縮リッチテキスト形式 (RTF) でカプセル化されたメッセージの本文を解凍することによって返されるネイティブ形式のストリームに関する情報を提供します。
+この構造体は、圧縮リッチ テキスト形式 (RTF) でカプセル化されたメッセージの本文を圧縮解除して返されるネイティブ形式のストリームに関する情報を提供します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -34,17 +34,17 @@ typedef struct {
 
 _size_
   
-> **RTF_WCSRETINFO**構造体のサイズ (バイト数)。 
+> バイト **数RTF_WCSRETINFO構造体** のサイズです。 
     
-_ulstreamflags_
+_ulStreamFlags_
   
-> これは、ネイティブ本文の形式を示す値です。 この値は、 [WrapCompressedRTFStreamEx](wrapcompressedrtfstreamex.md)関数に渡される[RTF_WCSINFO](rtf_wcsinfo.md)構造の_ulflags_パラメーターで**MAPI_NATIVE_BODY**フラグが渡された場合にのみ有効です。 次のいずれかの値を指定できます。 
+> これは、ネイティブ本文の形式を示す値です。 この値は [、wrapCompressedRTFStreamEx](wrapcompressedrtfstreamex.md)関数に渡される **RTF_WCSINFO** 構造体の _ulFlags_ パラメーターに [MAPI_NATIVE_BODY](rtf_wcsinfo.md)フラグが渡された場合にのみ有効です。 これには、次のいずれかの値を指定できます。 
     
 |||
 |:-----|:-----|
-|MAPI_NATIVE_BODY_TYPE_RTF  <br/> |この値は、 _ulflags_に**MAPI_NATIVE_BODY**フラグが含まれ、本文が RTF の場合にのみ使用されます。  <br/> |
-|MAPI_NATIVE_BODY_TYPE_PLAIN_TEXT  <br/> |この値は、 _ulflags_に**MAPI_NATIVE_BODY**フラグが含まれ、本文がプレーンテキスト形式の場合にのみ使用されます。  <br/> |
-|MAPI_NATIVE_BODY_TYPE_HTML  <br/> |この値は、 _ulflags_に**MAPI_NATIVE_BODY**フラグが含まれ、本文がハイパーテキストマークアップ言語 (HTML) 形式である場合にのみ使用されます。  <br/> |
+|MAPI_NATIVE_BODY_TYPE_RTF  <br/> |この値は _、ulFlags_ にパラメーターフラグが含MAPI_NATIVE_BODY、本文が RTF の場合にのみ使用されます。  <br/> |
+|MAPI_NATIVE_BODY_TYPE_PLAIN_TEXT  <br/> |この値は _、ulFlags_ に MAPI_NATIVE_BODYフラグが含まれる場合にのみ使用され、本文はプレーン テキスト形式です。  <br/> |
+|MAPI_NATIVE_BODY_TYPE_HTML  <br/> |この値は _、ulFlags_ に MAPI_NATIVE_BODYフラグが含まれる場合にのみ使用され、本文はハイパーテキスト マークアップ言語 (HTML) 形式です。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

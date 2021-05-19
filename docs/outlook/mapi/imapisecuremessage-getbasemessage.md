@@ -25,7 +25,7 @@ ms.locfileid: "33428579"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-この[imapisecuremessage: IUnknown](imapisecuremessageiunknown.md)がカプセル化されている、基になる[IMessage: imapiprop](imessageimapiprop.md)を取得します。 
+この[IMAPISecureMessage : IUnknown](imapisecuremessageiunknown.md)がカプセル化している基になる IMessage : [IMAPIProp](imessageimapiprop.md)を取得します。 
   
 ```cpp
 HRESULT GetBaseMessage(
@@ -37,7 +37,7 @@ HRESULT GetBaseMessage(
 
  _ppmsg_
   
-> 読み上げセキュリティで保護されたメッセージオブジェクト。
+> [out]セキュリティで保護されたメッセージ オブジェクト。
     
 ## <a name="return-value"></a>戻り値
 

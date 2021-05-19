@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 55ffcfa8-57fd-dbce-e551-8584660e33fa
-description: リスト内の図形の1から始まる位置を返します。
+description: リスト内の図形の 1 からベースの位置を返します。
 ms.openlocfilehash: 21f2057c4027735902a127ef16f94d6ed3f69568
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33423931"
 ---
 # <a name="listorder-function"></a>LISTORDER 関数
 
-リスト内の図形の1から始まる位置を返します。
+リスト内の図形の 1 からベースの位置を返します。
   
 ## <a name="version-information"></a>バージョン情報
 
@@ -25,7 +25,7 @@ ms.locfileid: "33423931"
   
 ## <a name="syntax"></a>構文
 
-listorder ()
+LISTORDER()
   
 ### <a name="return-value"></a>戻り値
 

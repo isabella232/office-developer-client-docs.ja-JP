@@ -22,11 +22,11 @@ ms.locfileid: "33425541"
   
 |**値**|**Alignment**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| .0  <br/> | Left  <br/> |**visTabStopLeft** <br/> |
-| 1   <br/> | 中央  <br/> |**visTabStopCenter** <br/> |
-| 2   <br/> | 右  <br/> |**visTabStopRight** <br/> |
-| 3   <br/> | Decimal  <br/> |**visTabStopDecimal** <br/> |
-| 4   <br/> | カンマ  <br/> |**visTabStopComma** <br/> |
+| 0  <br/> | Left  <br/> |**visTabStopLeft** <br/> |
+| 1  <br/> | 中央  <br/> |**visTabStopCenter** <br/> |
+| 2  <br/> | 右  <br/> |**visTabStopRight** <br/> |
+| 3  <br/> | 10 進数  <br/> |**visTabStopDecimal** <br/> |
+| 4  <br/> | カンマ  <br/> |**visTabStopComma** <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -34,14 +34,14 @@ ms.locfileid: "33425541"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | タブ.  *ij* where *i および j =* <1>、2、3  <br/> |
+| セル名 :  <br/> | タブ。  *ij*            は  *i と j = <*  1>、2、3  <br/> |
    
 プログラムから、インデックスによって [Alignment] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionTab** <br/> |
-| 行インデックス:  <br/> |**visRowTab +**** i = ** 0、1、2...  <br/> |
-| セル インデックス:  <br/> | (*j* * 3) **+ visTabAlign** <br/> |
+| 行インデックス:  <br/> |**visRowTab +** *i*            *=*  0, 1, 2...  <br/> |
+| セル インデックス:  <br/> | (*j*  *3) **+ visTabAlign** <br/> |
    
 

@@ -25,37 +25,37 @@ ms.locfileid: "33426136"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロファイル内のメッセージサービスの変更を行います。
+プロファイル内のメッセージ サービスに変更を加えます。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapix  <br/> |
-|公開者:  <br/> |メッセージサービスの管理オブジェクト  <br/> |
+|ヘッダー ファイル:  <br/> |MapiX.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |メッセージ サービス管理オブジェクト  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
 |呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMsgServiceAdmin  <br/> |
-|ポインターの種類:  <br/> |lpserviceadmin  <br/> |
+|ポインターの種類:  <br/> |LPSERVICEADMIN  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[GetLastError](imsgserviceadmin-getlasterror.md) <br/> |メッセージサービス管理オブジェクトによって生成された最後のエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
-|[getmsgservicetable](imsgserviceadmin-getmsgservicetable.md) <br/> |メッセージサービステーブル (プロファイル内のメッセージサービスのリスト) へのアクセスを提供します。  <br/> |
-|[CreateMsgService](imsgserviceadmin-createmsgservice.md) <br/> |現在のプロファイルにメッセージサービスを追加します。  <br/> <br/>**メモ**: このメソッドは推奨されていません。 代わりに[IMsgServiceAdmin2:: CreateMsgServiceEx](imsgserviceadmin2-createmsgserviceex.md)を使用します。           |
-|[DeleteMsgService](imsgserviceadmin-deletemsgservice.md) <br/> |メッセージサービスをプロファイルから削除します。  <br/> |
-|[copymsgservice](imsgserviceadmin-copymsgservice.md) <br/> |メッセージサービスをプロファイルにコピーします。  <br/> |
-|[RenameMsgService](imsgserviceadmin-renamemsgservice.md) <br/> |現在は廃止されています。 メッセージサービスに新しい名前を割り当てます。  <br/> |
-|[ConfigureMsgService](imsgserviceadmin-configuremsgservice.md) <br/> |メッセージサービスを再構成します。  <br/> |
-|[openプロファイル '](imsgserviceadmin-openprofilesection.md) <br/> |現在のプロファイルのセクションを開き、さらにアクセスできるように[IProfSect](iprofsectimapiprop.md)ポインターを返します。  <br/> |
-|[msgservicetransportorder](imsgserviceadmin-msgservicetransportorder.md) <br/> |メッセージを配信するためにトランスポートプロバイダーが呼び出される順序を設定します。  <br/> |
-|[adminproviders](imsgserviceadmin-adminproviders.md) <br/> |プロバイダー管理オブジェクトへのアクセスを提供するポインターを返します。  <br/> |
-|[setprimaryidentity](imsgserviceadmin-setprimaryidentity.md) <br/> |メッセージサービスがプロファイルのプライマリ id のサプライヤーであることを指定します。  <br/> |
-|[getprovidertable](imsgserviceadmin-getprovidertable.md) <br/> |プロバイダーテーブルへのアクセスを提供します。これは、プロファイル内のサービスプロバイダーの一覧です。  <br/> |
+|[GetLastError](imsgserviceadmin-getlasterror.md) <br/> |メッセージ サービス管理オブジェクトによって生成された最後のエラーに関する情報を含む [MAPIERROR](mapierror.md) 構造体を返します。  <br/> |
+|[GetMsgServiceTable](imsgserviceadmin-getmsgservicetable.md) <br/> |プロファイル内のメッセージ サービスの一覧であるメッセージ サービス テーブルへのアクセスを提供します。  <br/> |
+|[CreateMsgService](imsgserviceadmin-createmsgservice.md) <br/> |現在のプロファイルにメッセージ サービスを追加します。  <br/> <br/>**メモ**: このメソッドは非推奨です。 代 [わりに、IMsgServiceAdmin2::CreateMsgServiceEx を](imsgserviceadmin2-createmsgserviceex.md) 使用します。           |
+|[DeleteMsgService](imsgserviceadmin-deletemsgservice.md) <br/> |プロファイルからメッセージ サービスを削除します。  <br/> |
+|[CopyMsgService](imsgserviceadmin-copymsgservice.md) <br/> |メッセージ サービスをプロファイルにコピーします。  <br/> |
+|[RenameMsgService](imsgserviceadmin-renamemsgservice.md) <br/> |非推奨。 メッセージ サービスに新しい名前を割り当てる。  <br/> |
+|[ConfigureMsgService](imsgserviceadmin-configuremsgservice.md) <br/> |メッセージ サービスを再構成します。  <br/> |
+|[OpenProfileSection](imsgserviceadmin-openprofilesection.md) <br/> |現在のプロファイルのセクションを開き、さらにアクセスする [IProfSect](iprofsectimapiprop.md) ポインターを返します。  <br/> |
+|[MsgServiceTransportOrder](imsgserviceadmin-msgservicetransportorder.md) <br/> |メッセージを配信するためにトランスポート プロバイダーが呼び出される順序を設定します。  <br/> |
+|[AdminProviders](imsgserviceadmin-adminproviders.md) <br/> |プロバイダー管理オブジェクトへのアクセスを提供するポインターを返します。  <br/> |
+|[SetPrimaryIdentity](imsgserviceadmin-setprimaryidentity.md) <br/> |メッセージ サービスをプロファイルのプライマリ ID のサプライヤーに指定します。  <br/> |
+|[GetProviderTable](imsgserviceadmin-getprovidertable.md) <br/> |プロファイル内のサービス プロバイダーの一覧であるプロバイダー テーブルへのアクセスを提供します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-実装では、次の2つの方法で**IMsgServiceAdmin**インターフェイスへのポインターを取得できます。これには、 [imapisession:: adminservices](imapisession-adminservices.md)メソッドを呼び出すか、 [IProfAdmin:: adminservices](iprofadmin-adminservices.md)メソッドを呼び出します。 主にプロファイルの構成を考慮しているクライアントの場合は、 **IProfAdmin:: adminservices**を使用することをお勧めします。この方法では、 **IMsgServiceAdmin**インターフェイスを取得することをお勧めします。 クライアントでアクティブなプロファイルを変更する機能が必要な場合は、 **IMsgServiceAdmin**ポインターを取得するために**imapisession:: adminservices**を呼び出す必要があります。 MAPI では、使用中のプロファイルを削除することはできませんが、クライアントがプロファイル内のすべてのメッセージサービスを削除できないようにするためのセーフガードはありません。 
+実装では [、IMAPISession::AdminServices](imapisession-adminservices.md)メソッドを呼び出すことによって、[または IProfAdmin::AdminServices](iprofadmin-adminservices.md)メソッドを呼び出すことによって **、IMsgServiceAdmin** インターフェイスへのポインターを取得できます。 主にプロファイル構成に関するクライアントの場合 **、IProfAdmin::AdminServices** は、プロバイダーを MAPI セッションにログオンしないので **、IMsgServiceAdmin** インターフェイスを取得するための推奨方法です。 クライアントでアクティブ なプロファイルを変更する機能が必要な場合は **、IMsgServiceAdmin** ポインターを取得するために **IMAPISession::AdminServices** を呼び出す必要があります。 MAPI では、使用されているプロファイルの削除は許可されませんが、クライアントがプロファイル内のすべてのメッセージ サービスを削除しないセーフガードはありません。 
   
 ## <a name="see-also"></a>関連項目
 

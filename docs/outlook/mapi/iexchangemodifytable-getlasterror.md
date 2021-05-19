@@ -25,7 +25,7 @@ ms.locfileid: "33424512"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-table オブジェクトで発生した最後のエラーについての情報を返します。
+テーブル オブジェクトで発生した最後のエラーに関する情報を返します。
   
 ```cpp
 HRESULT GetLastError( 
@@ -39,15 +39,15 @@ HRESULT GetLastError(
 
  _hResult_
   
-> 順番エラーが発生したメソッドからの戻り値。
+> [in]失敗したメソッドからの戻り値。
     
  _ulFlags_
   
-> 順番使用しない場合は 0 (ゼロ) に設定します。
+> [in]使用しない、0 (ゼロ) に設定します。
     
  _lppMAPIError_
   
-> 読み上げtable オブジェクトで発生した最後のエラーについての情報が含まれている MAPI の[MAPIERROR](mapierror.md)構造体を指します。 
+> [out]テーブル オブジェクトに対して発生した最後のエラーに関する情報を含む [MAPI MAPIERROR](mapierror.md) 構造体をポイントします。 
     
 ## <a name="see-also"></a>関連項目
 

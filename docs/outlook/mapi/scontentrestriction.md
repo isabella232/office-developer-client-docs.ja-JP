@@ -23,11 +23,11 @@ ms.locfileid: "33423665"
  
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-コンテンツ制限について説明します。これは、テーブルビューを、検索文字列と一致するコンテンツを持つ列を含む行だけに制限するために使用されます。 
+テーブル ビューを、検索文字列に一致するコンテンツを含む列を含む行にのみ制限するために使用されるコンテンツ制限について説明します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SContentRestriction
@@ -39,47 +39,47 @@ typedef struct _SContentRestriction
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 **ulFuzzyLevel**
   
-> 一致するかどうかを確認するときにコンテンツ制限に適用する preciseness レベルを定義するオプション設定。
+> 一致を確認するときにコンテンツ制限が適用する精度のレベルを定義するオプション設定。
     
-   **ulFuzzyLevel**メンバーの**下位16ビット**は、PT_BINARY および PT_STRING8 型のプロパティに適用され、次のいずれかの値に設定する必要があります。 
+   **ulFuzzyLevel** メンバーの下位 **16** ビットは、PT_BINARY および PT_STRING8 型のプロパティに適用され、次のいずれかの値に設定する必要があります。 
     
-   - FL_FULLSTRING: 一致するには、 **lpprop**検索文字列が**ulPropTag**で識別されるプロパティに含まれている必要があります。
+   - FL_FULLSTRING: 一致するには **、lpProp** 検索文字列が ulPropTag で識別されるプロパティに含 **まれている必要があります**。
         
-   - FL_PREFIX: 一致するには、 **ulPropTag**で識別されるプロパティの先頭に**lpprop**検索文字列を指定する必要があります。 2つの文字列は、 **lpprop**で示される検索文字列の長さまで比較する必要があります。 
+   - FL_PREFIX : 一致するには **、ulPropTag** で識別されるプロパティの最初に lpProp 検索文字列が **表示されている必要があります**。 2 つの文字列は、lpProp で示される検索文字列の長さまでのみ比較 **する必要があります**。 
         
-   - FL_SUBSTRING: 一致するには、 **lpprop**検索文字列が**ulPropTag**で識別されるプロパティの任意の場所に含まれている必要があります。 
+   - FL_SUBSTRING: 一致するには **、lpProp** 検索文字列が ulPropTag で識別されるプロパティの任意の場所に **含まれている必要があります**。 
         
-   **ulFuzzyLevel**メンバーの**上位16ビット**は、PT_STRING8 型のプロパティにのみ適用され、任意の組み合わせで次の値に設定できます。 
+   **ulFuzzyLevel** メンバーの上位 **16** ビットは、PT_STRING8 型のプロパティにのみ適用され、任意の組み合わせで次の値に設定できます。 
         
-   - FL_IGNORECASE: 比較は、大文字と小文字を区別せずに行う必要があります。 
+   - FL_IGNORECASE: ケースを考慮せずに比較を行う必要があります。 
         
-   - FL_IGNORENONSPACE: 比較では、Unicode で定義されたスペース以外の文字 (分音記号など) を無視する必要があります。 
+   - FL_IGNORENONSPACE: この比較では、二等分記号などの Unicode で定義された非間隔文字は無視する必要があります。 
         
-   - FL_LOOSE: 比較によって、大文字と小文字を区別せずに、可能な限り一致が得られます。 
+   - FL_LOOSE: 大文字と小文字を無視して、可能な限り一致する比較を行う必要があります。 
     
 **ulPropTag**
   
-> 検索文字列の出現をチェックする文字列プロパティを識別するプロパティタグ。 
+> 検索文字列の出現をチェックする文字列プロパティを識別するプロパティ タグ。 
     
-**lpprop**
+**lpProp**
   
 > 検索文字列として使用する文字列値を含むプロパティ値構造体へのポインター。
     
 ## <a name="remarks"></a>注釈
 
-**scontentrestriction**構造体には、 **ulPropTag**メンバーと、 **lpprop**でポイントされている**scontentrestriction**構造の**ulPropTag**メンバー内の2つのプロパティタグがあります。 両方のタグで、MAPI は property type フィールドのみを必要とし、[プロパティ識別子] フィールドは無視されます。 ただし、2つのプロパティの型が一致している必要があります。または、制限が[imapitable:: Restrict](imapitable-restrict.md)または[imapitable:: FindRow](imapitable-findrow.md)の呼び出しで使用されている場合は、エラー値 MAPI_E_TOO_COMPLEX が返されます。 
+**SContentRestriction** 構造体には **、1 つは ulPropTag** メンバー、もう 1 つは **lpProp** によって指される **SPropValue** 構造体の **ulPropTag** メンバーの 2 つのプロパティ タグがあります。 どちらのタグでも、MAPI はプロパティの種類フィールドのみを必要とし、プロパティ識別子フィールドを無視します。 ただし、2 つのプロパティの種類が一致する必要があります。それ以外の場合は [、IMAPITable::Restrict](imapitable-restrict.md) または [IMAPITable::FindRow](imapitable-findrow.md)の呼び出しで制限が使用される場合、エラー値 MAPI_E_TOO_COMPLEX が返されます。 
   
-FL_FULLSTRING、FL_PREFIX、および FL_SUBSTRING の値は相互に排他的です。 設定できるのは1つだけで、そのうちの1つを設定する必要があります。 これらの意味は固定されており、プロバイダーは定義されたとおりに実装する必要があります。 プロバイダーは、これらの値をサポートできない場合は MAPI_E_TOO_COMPLEX を返します。 
+値はFL_FULLSTRING、FL_PREFIX、およびFL_SUBSTRING排他的です。 設定できるのは 1 つのみであり、そのうちの 1 つを設定する必要があります。 その意味は固定され、プロバイダーは定義されたとおりに実装する必要があります。 プロバイダーは、これらの値MAPI_E_TOO_COMPLEXサポートできない場合は、この値を返す必要があります。 
   
-FL_IGNORECASE、FL_IGNORENONSPACE、および FL_LOOSE の値は独立しています。 ゼロから3つまでのすべての場所を設定できます。 これらの定義はガイドラインとしてのみ提供されており、プロバイダーは各フラグの固有の意味を自由に実装することができます。 プロバイダーは、指定されたフラグの実装がない場合は、エラー表示を返さないようにする必要があります。 
+値はFL_IGNORECASE、FL_IGNORENONSPACE、およびFL_LOOSE独立しています。 ゼロから 3 つすべての任意の場所に設定できます。 これらの定義はガイドラインとしてのみ提供され、プロバイダーは各フラグの固有の意味を自由に実装できます。 指定したフラグが実装されていない場合、プロバイダーはエラーの表示を返す必要はありません。 
   
-プロパティが存在しない場合、プロパティに対して適用されるコンテンツ制限の結果は未定義です。 クライアントでこのような制限に対して適切に定義された動作が必要であり、そのプロパティが存在するかどうかが不明な場合は、そのプロパティが存在するかどうかは、テーブルの必須列ではないので、コンテンツ制限を既存の制限で結合するための**と**制限を作成する必要があります。 [sexistrestriction](sexistrestriction.md)構造を使用して、**と**制限を定義するための、存在制限と[SAndRestriction](sandrestriction.md)構造を定義します。 
+プロパティに対してコンテンツ制限が適用された結果は、プロパティが存在しない場合は未定義です。 クライアントがこのような制限に対して十分に定義された動作を必要とし、プロパティが存在するかどうかが分からない場合、プロパティがテーブルの必須列ではない場合は、存在制限を使用してコンテンツ制限に参加する **AND** 制限を作成する必要があります。 [SExistRestriction](sexistrestriction.md)構造体を使用して、存在制限と [SAndRestriction](sandrestriction.md)構造体を定義して AND 制限 **を定義** します。 
   
-**scontentrestriction**構造と一般的な制限の詳細については、「[制限につい](about-restrictions.md)て」を参照してください。
+**SContentRestriction** 構造と制限全般の詳細については、「制限について」[を参照してください](about-restrictions.md)。
   
 ## <a name="see-also"></a>関連項目
 

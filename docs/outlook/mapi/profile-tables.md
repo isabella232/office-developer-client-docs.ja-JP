@@ -1,5 +1,5 @@
 ---
-title: プロファイルテーブル
+title: プロファイル テーブル
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,25 +15,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424351"
 ---
-# <a name="profile-tables"></a>プロファイルテーブル
+# <a name="profile-tables"></a>プロファイル テーブル
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロファイルテーブルには、特定のクライアントアプリケーションに関連付けられているすべてのプロファイルに関する情報が表示されます。 クライアントが使用するために MAPI によって実装された、すべてのセッションに対して1つのプロファイルテーブルがあります。 
+プロファイル テーブルには、特定のクライアント アプリケーションに関連付けられているすべてのプロファイルに関する情報が一覧表示されます。 クライアントで使用するために MAPI によって実装される、すべてのセッションに 1 つのプロファイル テーブルがあります。 
   
-クライアントは、 [IProfAdmin:: getprofiletable](iprofadmin-getprofiletable.md)メソッドを呼び出して、プロファイルテーブルにアクセスします。 
+クライアントは [、IProfAdmin::GetProfileTable メソッド](iprofadmin-getprofiletable.md) を呼び出してプロファイル テーブルにアクセスします。 
   
-プロファイルテーブルは、静的なテーブルです。 削除対象としてマークされているプロファイルは、プロファイルテーブルに含まれていません。
+プロファイル テーブルは静的テーブルです。 削除のマークが付いているプロファイルは、プロファイル テーブルには含まれません。
   
-ほとんどのテーブル実装と同様に、 **getprofiletable**が呼び出され、クライアントが使用できるプロファイルがない場合、テーブルは0行で作成されます。 
+ほとんどのテーブル実装と同様に **、GetProfileTable** が呼び出され、クライアントで使用できるプロファイルがない場合、テーブルはゼロ行で作成されます。 
   
-次のプロパティを使用して、プロファイルテーブルで必要な列セットを作成します。
+次のプロパティは、プロファイル テーブルで必要な列セットを構成します。
   
- **PR_DEFAULT_PROFILE**([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md)) 
+ **PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md)) 
   
- **PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) 
+ **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) 
   
 ## <a name="see-also"></a>関連項目
 

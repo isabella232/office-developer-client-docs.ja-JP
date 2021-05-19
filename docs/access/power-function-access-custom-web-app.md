@@ -1,5 +1,5 @@
 ---
-title: Power 関数 (Access カスタム web アプリ)
+title: Power 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33423994"
 ---
-# <a name="power-function-access-custom-web-app"></a>Power 関数 (Access カスタム web アプリ)
+# <a name="power-function-access-custom-web-app"></a>Power 関数 (Access カスタム Web アプリ)
 
 指定した式を指定した値でべき乗した値を戻します。
   
@@ -23,13 +23,13 @@ ms.locfileid: "33423994"
   
 ## <a name="syntax"></a>構文
 
- **電力**(*NumericExpression*、 *Power*) 
+ **Power** (*NumericExpression*, *Power*) 
   
 **Power** 関数には、以下の引数があります。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
 | *NumericExpression*  <br/> |数値式。  <br/> |
-| *電源*  <br/> |*NumericExpression*を発生させるべき乗。  <br/> |
+| *電源*  <br/> |*NumericExpression* を発生する電源です。  <br/> |
    
 

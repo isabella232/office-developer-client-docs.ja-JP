@@ -1,5 +1,5 @@
 ---
-title: CreateRecord データブロック (Access カスタム web アプリ)
+title: CreateRecord Data Block (Access custom Web app)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421376"
 ---
-# <a name="createrecord-data-block-access-custom-web-app"></a>CreateRecord データブロック (Access カスタム web アプリ)
+# <a name="createrecord-data-block-access-custom-web-app"></a>CreateRecord Data Block (Access custom Web app)
 
 You can use the **CreateRecord** data block to create a new record in the specified table. 
   

@@ -1,5 +1,5 @@
 ---
-title: フォーム構成ファイル [Extensions] セクション
+title: フォーム構成ファイル [拡張機能] セクション
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,31 +15,31 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33423756"
 ---
-# <a name="form-configuration-file-extensions-section"></a>フォーム構成ファイル [Extensions] セクション
+# <a name="form-configuration-file-extensions-section"></a>フォーム構成ファイル [拡張機能] セクション
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**[Extensions]** セクションには、フォームの拡張属性 (通常は名前付きプロパティセット) が一覧表示されます。これは、フォーム構成ファイルの **[Description]** セクションに示されている基本の属性以外の属性でもあります。 拡張属性は、プロパティタグで high bit が設定された**imapiforminfo**オブジェクトの**GetProps**メソッドへの呼び出しから返されるプロパティです。 クライアントアプリケーションは、これらのタグを取得することによって、フォームの拡張属性を決定できます。 そのためには、クライアントは[imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)メソッドを呼び出し、フォームのプロパティの名前を渡し、 [imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出してプロパティを取得します。 
+**[Extensions]** セクションには、フォームの拡張属性 (通常は名前付きプロパティ セット) が一覧表示されます。これは、フォーム構成ファイルの **[Description]** セクションに記載されている基本的な属性を超える属性です。 拡張属性は、プロパティ タグにハイ ビットが設定された **IMAPIFormInfo** オブジェクトの **GetProps** メソッドの呼び出しから返されるプロパティです。 クライアント アプリケーションは、これらのタグを取得することで、フォームの拡張属性がある場合は、その属性を特定できます。 これを行うには、クライアントは [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) メソッドを呼び出し、フォームのプロパティの名前を渡し [、IMAPIProp::GetProps](imapiprop-getprops.md) メソッドを呼び出してプロパティを取得します。 
   
- **Extensions**
+ **[拡張機能]**
   
- **Extension.** _string1_ =  文字列 (_string2_ )
+ **拡張機能。** _string1_  =  _string2_
   
-各拡張プロパティセクションは、MAPI 名前付きプロパティの構文を使用して、1つの拡張属性を定義します。 プロパティの種類は、PT_LONG または PT_STRING8 のいずれかである必要があります。 名前付き文字列を含むプロパティセットはサポートされていません。 **[Extension]** セクションの形式は次のとおりです。 
+各拡張プロパティ セクションでは、MAPI 名前付きプロパティ構文を使用して 1 つの拡張属性を定義します。 プロパティの種類は、プロパティの種類PT_LONGまたはPT_STRING8。 名前付き文字列を含むプロパティ セットはサポートされていません。 [拡張] **セクションの形式は** 次の形式です。 
   
- **Extension.** _string2_**]**
+ **[拡張機能]** _string2_ **]**
   
- **** =  _整数_型
+ **型**  =  _integer_
   
- **NmidPropset** =  _guid_
+ **NmidPropset**  =  _guid_
   
- **nmidinteger** =  _整数_
+ **NmidInteger**  =  _integer_
   
- **値** =  __ 文字列 |  _整数_
+ **値**  =  _string_  |  _integer_
   
-**[Extensions]** セクションの例と、それに続く関連セクションを次に示します。 
+**[Extensions] セクションとそれに** 続く関連セクションの例を次に示します。 
   
 ```
 [Extensions]

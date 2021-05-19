@@ -21,18 +21,18 @@ ms.locfileid: "33421124"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージの送信は、MAPI スプーラーからトランスポートプロバイダーへの一連の呼び出しによって行われます。 呼び出しは次のように順序付けられます。
+メッセージの送信は、MAPI スプーラーからトランスポート プロバイダーへの一連の呼び出しによって実行されます。 呼び出しは次のように順序付けされます。
   
-1. MAPI スプーラーは[IXPLogon:: submitmessage](ixplogon-submitmessage.md)を呼び出して、 [IMessage: imapiprop](imessageimapiprop.md)インスタンスを渡し、プロセスを開始します。 
+1. MAPI スプーラーは [IXPLogon::SubmitMessage](ixplogon-submitmessage.md)を呼び出し [、IMessage : IMAPIProp](imessageimapiprop.md) インスタンスを渡してプロセスを開始します。 
     
-2. その後、トランスポートプロバイダーは、" **submitmessage**" で参照されている場所で、参照値 (このメッセージへの今後の参照で使用されるトランスポート定義識別子) を配置します。
+2. 次に、トランスポート プロバイダーは、SubmitMessage で参照される場所に、このメッセージへの将来の参照で使用されるトランスポート定義の識別子である参照値 **を設定します**。
     
-3. トランスポートプロバイダーは、渡された**IMessage**インスタンスを使用して、メッセージデータにアクセスします。 渡される**IMessage**の各受信者について、トランスポートプロバイダーは**PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) プロパティを設定し、を返します。
+3. トランスポート プロバイダーは、渡された IMessage インスタンスを使用してメッセージ **データにアクセス** します。 渡された **IMessage** の受信者が責任を受け入れるごとに、トランスポート プロバイダーは **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) プロパティを設定し、次に返します。
     
-4. トランスポートプロバイダーは、 [imapisupport:: StatusRecips](imapisupport-statusrecips.md)メソッドを使用して、配信できない受信者を認識するか、または標準的な配信レポートを作成するかを指定できます。 **StatusRecips**は、一部の受信者が配信できないこと、またはユーザーまたはクライアントアプリケーションが基盤としているメッセージングシステムからの配信情報を受信したことが確認されたトランスポートプロバイダーの便宜的な方法です。役に立つでしょう。 
+4. トランスポート プロバイダーは [、IMAPISupport::StatusRecips](imapisupport-statusrecips.md) メソッドを使用して、配信できない受信者を認識するか、標準の配信レポートを作成することができます。 **StatusRecips** は、受信者の一部を配信できないと判断したトランスポート プロバイダーや、ユーザーまたはクライアント アプリケーションが役に立つ可能性がある基になるメッセージング システムから配信情報を受け取ったトランスポート プロバイダーにとって便利です。 
     
-5. mapi スプーラーの[IXPLogon:: endmessage](ixplogon-endmessage.md)への呼び出しは、mapi スプーラーからトランスポートプロバイダーへのメッセージの最終責任です。 
+5. [IXPLogon::EndMessage](ixplogon-endmessage.md)への MAPI スプーラーの呼び出しは、MAPI スプーラーからトランスポート プロバイダーへのメッセージの最終的な責任ハンドオフです。 
     
-6. MAPI スプーラーは、 [IXPLogon:: transportnotify](ixplogon-transportnotify.md)を使用して、 **submitmessage**または**endmessage**呼び出し中のメッセージ処理をキャンセルできます。 
+6. MAPI スプーラーは [、IXPLogon::TransportNotify](ixplogon-transportnotify.md) を使用して **、SubmitMessage** 呼び出しまたは **EndMessage** 呼び出し中にメッセージ処理をキャンセルできます。 
     
 

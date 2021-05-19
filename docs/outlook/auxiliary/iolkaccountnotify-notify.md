@@ -20,7 +20,7 @@ ms.locfileid: "33424568"
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IOlkAccountNotify](iolkaccountnotify.md)を参照してください。
+[「IOlkAccountNotify」を参照してください](iolkaccountnotify.md)。
   
 ```cpp
 HRESULT IOlkAccount::Notify(  
@@ -33,9 +33,9 @@ HRESULT IOlkAccount::Notify(
 
 ## <a name="parameters"></a>パラメーター
 
-_dwnotify_
+_dwNotify_
   
-> 順番通知の種類。 この値は、次のいずれかである必要があります。
+> [in]通知の種類。 この値は、次のいずれかである必要があります。
     
    - NOTIFY_ACCT_CHANGED 
     
@@ -47,13 +47,13 @@ _dwnotify_
     
    - NOTIFY_ACCT_PREDELETED 
     
- _dwて tid_
+ _dwAcctID_
   
-> 順番作成、変更、削除、または事前削除されたアカウントのアカウント ID。
+> [in]作成、変更、削除、または事前削除されたアカウントのアカウント ID。
     
  _dwFlags_
   
->  順番使用されません。 OLK_ACCOUNT_NO_FLAGS は、唯一サポートされている値です。 
+>  [in]使用されません。 OLK_ACCOUNT_NO_FLAGSは、サポートされている唯一の値です。 
     
 ## <a name="return-values"></a>戻り値
 

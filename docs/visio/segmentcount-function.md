@@ -20,13 +20,13 @@ ms.locfileid: "33424498"
   
 ## <a name="syntax"></a>構文
 
-SEGMENTCOUNT (* * *pa f* * *) 
+SEGMENTCOUNT(** *pathRef* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
-| _paば f_ <br/> |必須  <br/> |**整数型 (Integer)** <br/> |パスを表す [Geometry] セクション。[Path] セルへの参照によって指定されます (Geometry1.Path など)。  <br/> |
+| _pathRef_ <br/> |必須  <br/> |**整数型 (Integer)** <br/> |パスを表す [Geometry] セクション。[Path] セルへの参照によって指定されます (Geometry1.Path など)。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 

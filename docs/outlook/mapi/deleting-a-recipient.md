@@ -21,10 +21,10 @@ ms.locfileid: "33421047"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
- **変更可能なコンテナーから1つまたは複数のアドレス帳のエントリを削除するには**
+ **変更可能なコンテナーから 1 つ以上のアドレス帳エントリを削除するには**
   
-- [IABContainer::D eleteentries](iabcontainer-deleteentries.md)メソッドを呼び出して、削除するアドレス帳のエントリを表すエントリ識別子の配列を渡します。 **deleteentries**は、1つまたは複数のエントリを削除できなかったことを示すために、MAPI_W_PARTIAL_COMPLETION という警告を返すことができます。 **HR_FAILED**マクロを使用してこの戻り値をテストし、問題に関する詳細情報が必要な場合は、コンテナーの[imapiprop:: GetLastError](imapiprop-getlasterror.md)メソッドを呼び出します。 
+- [IABContainer::D eleteEntries](iabcontainer-deleteentries.md)メソッドを呼び出し、削除するアドレス帳エントリを表すエントリ識別子の配列を渡します。 **DeleteEntries は** 、1 つ以上のMAPI_W_PARTIAL_COMPLETION削除できなかったという警告を返すメッセージを返す場合があります。 **HR_FAILED** マクロを使用してこの戻り値をテストし、問題の詳細が必要な場合は、コンテナーの [IMAPIProp::GetLastError](imapiprop-getlasterror.md)メソッドを呼び出します。 
     
-キャッシュ内の削除されたエントリの[adrentry](adrentry.md)構造体へのポインターを保持する場合でも、そのエントリ識別子を使用してプロパティを取得できます。 これは、エントリが削除対象としてマークされているためです。 MAPI では、これらのマークされたエントリに対して、設計によるレベルのアクセスが維持されます。 
+削除されたエントリの [ADRENTRY](adrentry.md) 構造へのポインターをキャッシュに保持すると、そのエントリ識別子を使用してプロパティを取得できます。 これは、エントリが削除のマークのみ付いているためです。 MAPI は、デザインによってこれらのマークされたエントリへのアクセスレベルを維持します。 
   
 

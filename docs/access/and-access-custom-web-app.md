@@ -1,5 +1,5 @@
 ---
-title: および (Access カスタム web アプリ)
+title: AND (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426283"
 ---
-# <a name="and-access-custom-web-app"></a>および (Access カスタム web アプリ)
+# <a name="and-access-custom-web-app"></a>AND (Access カスタム Web アプリ)
 
 ブール型の 2 つの式を結合し、両方の式が TRUE の場合、TRUE を返します。 
   

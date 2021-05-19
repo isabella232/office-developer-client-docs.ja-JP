@@ -26,14 +26,14 @@ NURBS (nonuniform rational B-spline) の数式が格納されます。
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | ジオメトリ*i*E *j* where *i*および*j* = <1>、2、3...  <br/> |
+| セル名 :  <br/> | Geometry  *i*  .E  *j*            *ここで、i*  と  *j*  = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [E] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
-| セクション インデックス:  <br/> |**visSectionFirstComponent** +  *i* = ** 0、1、2...  <br/> |
-| 行インデックス:  <br/> |**visRowVertex** +  *j* where *j* = 0、1、2...  <br/> |
-| セル インデックス:  <br/> |**visnurbsdata** <br/> |
+| セクション インデックス:  <br/> |**visSectionFirstComponent**  +  *i* *=* 0, 1, 2...  <br/> |
+| 行インデックス:  <br/> |**visRowVertex**  +  *j* は *j* = 0、1、2..です。  <br/> |
+| セル インデックス:  <br/> |**visNURBSData** <br/> |
    
 

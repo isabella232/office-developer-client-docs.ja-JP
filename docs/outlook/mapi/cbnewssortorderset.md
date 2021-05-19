@@ -25,11 +25,11 @@ ms.locfileid: "33423714"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-sorderstructure で表される、指定された数の並べ替え順序を含む新しい[sizedssortorderset](sizedssortorderset.md)構造体に割り当てる[](ssortorder.md)バイト数を計算します。 
+[SSortOrder](ssortorder.md)構造体で表される指定された数の並べ替え順序を含む、新しい[SizedSSortOrderSet](sizedssortorderset.md)構造体に割り当てられるバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |**SSortOrderSet** <br/> |
    
 ```cpp
@@ -38,9 +38,9 @@ CbNewSSortOrderSet (_csort)
 
 ## <a name="parameters"></a>パラメーター
 
- __csort_
+ _ _csort_
   
-> **ssortorderset**構造に含める、sorderstructure の数。 **** 
+> **SSortOrderSet** 構造体に含める **SSortOrder** 構造体の数。 
     
 ## <a name="see-also"></a>関連項目
 

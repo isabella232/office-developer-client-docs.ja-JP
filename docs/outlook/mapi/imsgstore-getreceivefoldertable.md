@@ -25,7 +25,7 @@ ms.locfileid: "33421355"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-受信フォルダーテーブル (メッセージストアのすべての受信フォルダーに関する情報を含むテーブル) へのアクセスを提供します。
+メッセージ ストアのすべての受信フォルダーに関する情報を含む、受信フォルダー テーブルへのアクセスを提供します。
   
 ```cpp
 HRESULT GetReceiveFolderTable(
@@ -37,39 +37,39 @@ HRESULT GetReceiveFolderTable(
 
  _ulFlags_
   
-> 順番テーブルアクセスを制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]テーブル アクセスを制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_DEFERRED_ERRORS 
   
-> 呼び出し元がテーブルを完全に使用できるようになる前に、 **getreceivefoldertable**を正常に返すことができるようにします。 テーブルが完全に使用できない場合は、次のテーブル呼び出しを行うとエラーが発生する可能性があります。 
+> **GetReceiveFolderTable** は、テーブルが呼び出し元で完全に使用できる前に、正常に戻ります。 テーブルが完全に使用できない場合は、後続のテーブル呼び出しでエラーが発生する可能性があります。 
     
 MAPI_UNICODE 
   
-> 返される文字列は、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
+> 返される文字列は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列は ANSI 形式になります。
     
- _lpptable_
+ _lppTable_
   
-> 読み上げ受信フォルダーテーブルへのポインターへのポインター。
+> [out]受信フォルダー テーブルへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 受信フォルダーテーブルが正常に返されました。
+> 受信フォルダー テーブルが正常に返されました。
     
 ## <a name="remarks"></a>注釈
 
-**IMsgStore:: getreceivefoldertable**メソッドは、すべてのメッセージストアの受信フォルダーのプロパティ設定を示すテーブルへのアクセスを提供します。 
+**IMsgStore::GetReceiveFolderTable** メソッドは、メッセージ ストアのすべての受信フォルダーのプロパティ設定を示すテーブルへのアクセスを提供します。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-受信フォルダーテーブルに必要な列の一覧については、「[受信フォルダーテーブル](receive-folder-tables.md)」を参照してください。 
+受信フォルダー テーブルで必要な列の一覧については、「受信フォルダー テーブル [」を参照してください](receive-folder-tables.md)。 
   
-受信フォルダーテーブルを実装して、 **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) プロパティのプロパティ制限の設定をサポートします。 これにより、特定の受信フォルダーへのアクセスが容易になります。
+受信フォルダー テーブルを実装して、プロパティ制限 [(PidTagRecordKey)](pidtagrecordkey-canonical-property.md)プロパティ **PR_RECORD_KEY設定を** サポートします。 これにより、特定の受信フォルダーに簡単にアクセスできます。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-_ulflags_パラメーターの MAPI_UNICODE フラグを設定すると、 [imapitable:: querycolumns](imapitable-querycolumns.md)および[imapitable:: QueryRows](imapitable-queryrows.md)メソッドから返される列の形式に影響します。 このフラグは、 [IMAPITable:: querysortorder](imapitable-querysortorder.md)メソッドによって返される並べ替え順序で、プロパティの種類を制御することもできます。 
+_ulFlags_ パラメーター MAPI_UNICODEフラグを設定すると [、IMAPITable::QueryColumns](imapitable-querycolumns.md)および [IMAPITable::QueryRows](imapitable-queryrows.md)メソッドから返される列の形式に影響します。 このフラグは [、IMAPITable::QuerySortOrder](imapitable-querysortorder.md) メソッドによって返される並べ替え順序のプロパティの種類も制御します。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -77,7 +77,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MsgStoreDlg  <br/> |CMsgStoreDlg:: ondisplayreceivefoldertable  <br/> |mfcmapi は、 **IMsgStore:: getreceivefoldertable**メソッドを使用して、表示する受信フォルダーテーブルを取得します。  <br/> |
+|MsgStoreDlg.cpp  <br/> |CMsgStoreDlg::OnDisplayReceiveFolderTable  <br/> |MFCMAPI は **、IMsgStore::GetReceiveFolderTable** メソッドを使用して、表示する受信フォルダー テーブルを取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

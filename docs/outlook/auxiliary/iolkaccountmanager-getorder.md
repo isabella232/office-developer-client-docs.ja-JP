@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: bd22026c-e4f7-2f25-0ef2-5d9539fd7eee
-description: 指定されたアカウントのカテゴリの順序を取得します。
+description: 指定したカテゴリのアカウントの順序を取得します。
 ms.openlocfilehash: 3eb6dd96caa43f81eba86a389c938ef90c9533b2
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,11 +16,11 @@ ms.locfileid: "33424624"
 ---
 # <a name="iolkaccountmanagergetorder"></a>IOlkAccountManager::GetOrder
 
-指定されたアカウントのカテゴリの順序を取得します。
+指定したカテゴリのアカウントの順序を取得します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
-[IOlkAccountManager](iolkaccountmanager.md)を参照してください。
+[「IOlkAccountManager」を参照してください。](iolkaccountmanager.md)
   
 ```cpp
 HRESULT IOlkAccountManager::GetOrder (  
@@ -32,9 +32,9 @@ HRESULT IOlkAccountManager::GetOrder (
 
 ## <a name="parameters"></a>パラメーター
 
-_pclsidcategory_
+_pclsidCategory_
   
-> 順番注文を取得するカテゴリクラス ID。 値は、次のいずれかする必要があります。
+> [in]注文を取得するカテゴリ クラス ID。 値は、次のいずれかする必要があります。
     
    - CLSID_OlkMail
     
@@ -44,23 +44,23 @@ _pclsidcategory_
     
 _pcAccts_
   
->  読み上げアカウントの数。 
+>  [out]アカウントの数。 
     
 _prgAccts_
   
-> 読み上げアカウントの配列へのポインター。
+> [out]アカウントの配列へのポインター。
     
 ## <a name="return-values"></a>戻り値
 
 |**HRESULT 型**|**Description**|
 |:-----|:-----|
-|S_OK  <br/> |呼び出しが成功した  <br/> |
+|S_OK  <br/> |呼び出しが成功しました  <br/> |
 |E_INVALIDARG  <br/> |いくつかの引数は無効です。  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |アカウント マネージャーが使用するために初期化されていません。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-このメソッドを呼び出す前に、呼び出し元は配列ポインターのみを割り当てますが、 *prgAccts*は*prgAccts*ポイントの配列のメモリを割り当てません。 このメソッドが返された後、呼び出し元は[IOlkAccountManager:: FreeMemory](iolkaccountmanager-freememory.md)を使用して、 *prgAccts*に割り当てられているメモリを解放する必要があります。 
+このメソッドを呼び出す前に、呼び出し元は配列ポインター  *prgAccts*  のみを割り当て  *、prgAccts*  が指す配列にはメモリを割り当てない。 このメソッドが返された後、呼び出し元は [IOlkAccountManager::FreeMemory](iolkaccountmanager-freememory.md) を使用して  *prgAccts*  に割り当てられたメモリを解放する必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

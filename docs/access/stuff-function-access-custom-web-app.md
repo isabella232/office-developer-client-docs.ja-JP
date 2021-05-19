@@ -1,5 +1,5 @@
 ---
-title: ユーザー関数 (Access カスタム web アプリ)
+title: Stuff 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33427676"
 ---
-# <a name="stuff-function-access-custom-web-app"></a>ユーザー関数 (Access カスタム web アプリ)
+# <a name="stuff-function-access-custom-web-app"></a>Stuff 関数 (Access カスタム Web アプリ)
 
 テキスト文字列を別のテキスト文字列に挿入します。1 番目の文字列の開始位置から、指定された長さの文字が削除され、1 番目の文字列の開始位置に 2 番目の文字列が挿入されます。
   
@@ -23,16 +23,16 @@ ms.locfileid: "33427676"
   
 ## <a name="syntax"></a>構文
 
- **Stuff** (IntoTextExpression**, Start**, Length**, ThisTextExpression**) 
+ **Stuff** (IntoTextExpression **, Start **, Length **, ThisTextExpression **) 
   
 **Stuff** 関数の引数は次のとおりです。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *in-extexpression*  <br/> |*ThisTextExpression*によって指定されたテキストを挿入するテキストを指定するテキスト式を指定します。  <br/> |
-| *Start*  <br/> |削除および挿入の開始位置を指定する整数値。 開始位置または長さが負の値の場合、null 文字列が返されます。 start が最初の inを超える** 場合は、null 文字列が返されます。  <br/> |
-| *Length*  <br/> |削除する文字数を指定する整数。 length が最初の*inの inext式*よりも長い場合、削除は最後の*in、式*の最後の文字まで行われます。  <br/> |
-| *ThisTextExpression*  <br/> |テキスト式 hat は、inに挿入するテキスト** を指定します。 この式は、*開始*時から始まる*inserviceprovider extexpression*の長さ文字を置き換えます。  <br/> |
+| *IntoTextExpression*  <br/> |*ThisTextExpression* で指定されたテキストを挿入するテキストを指定するテキスト式。  <br/> |
+| *Start*  <br/> |削除および挿入の開始位置を指定する整数値。 開始位置または長さが負の値の場合、null 文字列が返されます。 start が最初の  *IntoTextExpression*  より長い場合は、null 文字列が返されます。  <br/> |
+| *Length*  <br/> |削除する文字数を指定する整数。 長さが最初の  *IntoTextExpression*  より長い場合、最後の  *IntoTextExpression*  の最後の文字まで削除が行われます。  <br/> |
+| *ThisTextExpression*  <br/> |テキスト式のハットは  *、IntoTextExpression に挿入するテキストを指定します*  。 この式は、Start で始まる *IntoTextExpression の* 長さ文字を置き換 *える。*  <br/> |
    
 ## <a name="remarks"></a>注釈
 

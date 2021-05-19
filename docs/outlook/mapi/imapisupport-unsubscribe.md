@@ -25,7 +25,7 @@ ms.locfileid: "33421215"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[imapisupport:: Subscribe](imapisupport-subscribe.md)メソッドの呼び出しによって、以前に確立された通知を送信する責任を取り消します。 
+[IMAPISupport::Subscribe](imapisupport-subscribe.md)メソッドへの呼び出しで以前に確立された通知の送信の責任を取り消します。 
   
 ```cpp
 HRESULT Unsubscribe(
@@ -35,9 +35,9 @@ ULONG ulConnection
 
 ## <a name="parameters"></a>パラメーター
 
- _ulconnection_
+ _ulConnection_
   
-> 順番**imapisupport:: Subscribe**によって既に確立された通知登録を表す0以外の接続番号。
+> [in] **IMAPISupport::Subscribe** を介して以前に確立された通知登録を表す 0 以外の接続番号。
     
 ## <a name="return-value"></a>戻り値
 
@@ -47,13 +47,13 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> _ulconnection_パラメーターで渡された接続番号が存在しません。 
+> _ulConnection_ パラメーターで渡された接続番号が存在しません。 
     
 ## <a name="remarks"></a>注釈
 
-**imapisupport:: 講読解除**メソッドは、すべてのサービスプロバイダサポートオブジェクトに実装されています。 サービスプロバイダーは**** 、**サブスクライブ**を呼び出して、以前に設定した通知登録を取り消します。 登録**解除****サブスクライブ**呼び出しで渡されたアドバイズシンクポインターを解放することによって、登録を取り消します。 
+**IMAPISupport::Unsubscribe** メソッドは、すべてのサービス プロバイダー サポート オブジェクトに実装されます。 サービス プロバイダーは Unsubscribe **を呼び** 出して、サブスクライブによって以前に設定された通知登録を **取り消します**。 **Unsubscribe** は、Subscribe 呼び出しで渡されたアアドバイス シンク ポインターを解放して、登録を **取り消** します。 
   
-通常、アドバイズシンクの**IUnknown:: Release**メソッドは、登録**解除**通話中に呼び出されます。 ただし、別のスレッドがアドバイズシンクオブジェクトの[IMAPIAdviseSink:: onnotify](imapiadvisesink-onnotify.md)メソッドを呼び出している場合、 **Release**呼び出しは**onnotify**メソッドが戻るまで遅延します。 
+通常、アアドバイス シンクの **IUnknown::Release** メソッドは、Unsubscribe 呼び出し中に **呼び出** されます。 ただし、別のスレッドが、アドバイス シンク オブジェクト [の IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)メソッドを呼び出す過程にある場合 **、OnNotify** メソッドが返されるまで、Release 呼び出しは遅延されます。 
   
 ## <a name="see-also"></a>関連項目
 

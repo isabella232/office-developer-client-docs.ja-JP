@@ -1,5 +1,5 @@
 ---
-title: フォルダーに関連付けられた情報テーブル
+title: Folder-Associated情報テーブル
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,31 +15,31 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426416"
 ---
-# <a name="folder-associated-information-tables"></a>フォルダーに関連付けられた情報テーブル
+# <a name="folder-associated-information-tables"></a>Folder-Associated情報テーブル
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-mapi は、関連する情報テーブルの処理に使用するさまざまな mapi コンポーネントの MAPI_ASSOCIATED フラグを定義します。 メッセージストア内の各フォルダーには、その標準コンテンツテーブルと共に、関連付けられた contents テーブルが含まれている必要があります。 クライアントアプリケーションは、フォームとビューを保持するために、フォルダーに関連付けられた contents テーブルに特別なメッセージを格納します。 実際に、フォームとビューをサポートするには、メッセージストアプロバイダーが関連するコンテンツテーブルを実装する必要があります。
+MAPI では、関連する情報MAPI_ASSOCIATED処理するときに使用するさまざまな MAPI コンポーネントのフラグを定義します。 メッセージ ストア内の各フォルダーには、標準コンテンツ テーブルと共に関連付けられたコンテンツ テーブルが必要です。 クライアント アプリケーションは、フォームとビューを保持するために、フォルダーに関連付けられたコンテンツ テーブルに特別なメッセージを格納します。 実際、フォームとビューをサポートするには、メッセージ ストア プロバイダーが関連付けられたコンテンツ テーブルを実装する必要があります。
   
-関連するコンテンツテーブルを実装するには、ストアプロバイダーが次のことを行う必要があります。
+関連付けられたコンテンツ テーブルを実装するには、ストア プロバイダーが次の操作を行う必要があります。
   
-- [IMAPIContainer:: getcontentstable](imapicontainer-getcontentstable.md)メソッドの MAPI_ASSOCIATED フラグをサポートすることにより、クライアントアプリケーションが、標準の contents テーブルではなく、フォルダーに関連付けられたコンテンツテーブルを取得できるようにします。 
+- [IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md)メソッドで MAPI_ASSOCIATED フラグをサポートし、クライアント アプリケーションが標準コンテンツ テーブルの代わりにフォルダーの関連コンテンツ テーブルを取得できます。 
     
-- [imapifolder:: CreateMessage](imapifolder-createmessage.md)メソッドの MAPI_ASSOCIATED フラグをサポートすることにより、クライアントアプリケーションがフォルダーに関連付けられたコンテンツテーブルにメッセージを追加できるようにします。 
+- [IMAPIFolder::CreateMessage](imapifolder-createmessage.md)メソッドで MAPI_ASSOCIATED フラグをサポートし、クライアント アプリケーションがフォルダーの関連付けられたコンテンツ テーブルにメッセージを追加できます。 
     
-- folder オブジェクトの**PR_ACCESS** ([PidTagAccess](pidtagaccess-canonical-property.md)) プロパティで MAPI_ACCESS_CREATE_ASSOCIATED ビットを設定します。
+- フォルダー オブジェクトの MAPI_ACCESS_CREATE_ASSOCIATED **(** [PidTagAccess](pidtagaccess-canonical-property.md)) プロパティPR_ACCESSビットを設定します。
     
-- [imapifolder:: emptyfolder](imapifolder-emptyfolder.md)メソッドで DEL_ASSOCIATED フラグをサポートします。 
+- [IMAPIFolder::EmptyFolder](imapifolder-emptyfolder.md)メソッドでDEL_ASSOCIATEDフラグをサポートします。 
     
-- **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティの MSGFLAG_ASSOCIATED ビットを、関連付けられている contents テーブル内のメッセージに設定します。
+- 関連付けられたMSGFLAG_ASSOCIATED内のメッセージの PR_MESSAGE_FLAGS **(** [PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) プロパティのビットを設定します。
     
-- フォルダーの**PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md)) プロパティを公開して応答します。
+- フォルダーのプロパティ **PR_FOLDER_ASSOCIATED_CONTENTS** [(PidTagFolderAssociatedContents) プロパティ (PidTagFolderAssociatedContents)](pidtagfolderassociatedcontents-canonical-property.md)を公開し、そのプロパティに応答します。
     
-- フォルダーの**PR_ASSOC_CONTENT_COUNT** ([PidTagAssociatedContentCount](pidtagassociatedcontentcount-canonical-property.md)) プロパティを維持します。
+- フォルダーの PR_ASSOC_CONTENT_COUNT ([PidTagAssociatedContentCount](pidtagassociatedcontentcount-canonical-property.md)) プロパティを維持します。
     
-**PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) プロパティには、メッセージストアプロバイダーが関連付けられたコンテンツテーブルをサポートしているかどうかを示すビットはありません。 メッセージストアプロバイダーがサポートしていない場合は、クライアントアプリケーションが MAPI_ASSOCIATED フラグを使用して上記のいずれかのメソッドを呼び出すと、MAPI_E_NO_SUPPORT が返されます。
+メッセージ ストア プロバイダーが関連付けられたコンテンツ **テーブルを** サポートするかどうかをPR_STORE_SUPPORT_MASK ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) プロパティにビットはありません。 メッセージ ストア プロバイダーがそれらをサポートしていない場合は、クライアント アプリケーションが MAPI_E_NO_SUPPORT フラグを指定して上記のメソッドを呼び出した場合に、MAPI_ASSOCIATED を返す必要があります。
   
 ## <a name="see-also"></a>関連項目
 

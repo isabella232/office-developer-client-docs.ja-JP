@@ -22,7 +22,7 @@ ms.locfileid: "33421243"
   
 ## <a name="syntax"></a>構文
 
-小 (* **式** *) 
+LOWER(** *expression* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 

@@ -1,5 +1,5 @@
 ---
-title: + (文字列連結演算子)(Access カスタム web アプリ)
+title: + (文字列連結演算子)(カスタム Web アプリにアクセスする)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424652"
 ---
-# <a name="-string-concatenation-operator-access-custom-web-app"></a>+ (文字列連結演算子) (Access カスタム web アプリ)
+# <a name="-string-concatenation-operator-access-custom-web-app"></a>+ (文字列連結演算子) (Access カスタム Web アプリ)
 
 プラス記号 (+) は、文字列連結を行う文字列連結演算子です。その他のすべての文字列操作は、 **Substring** のような文字列関数を使用して処理されます。 
   
@@ -23,7 +23,7 @@ ms.locfileid: "33424652"
   
 ## <a name="syntax"></a>構文
 
- *textexpression***+** *textexpression* 
+ *TextExpression* **+***TextExpression* 
   
  *TextExpression*  Any valid text expression. 
   

@@ -25,19 +25,19 @@ ms.locfileid: "33423693"
   
 �N���C�A���g�ł́A���̎�M�҂̃e�[�u������A���b�Z�[�W�̎�M�҂��A�N�Z�X���܂��B���ׂẴ��b�Z�[�W�ɂ́A��M�҂��M�҂̂��ꂼ��ɂ��Ă̊T�v����܂ރe�[�u��������܂��B�e�[�u���Ɋ܂܂�Ă����́A���b�Z�[�W�̏�Ԃɂ���ĈقȂ�܂��B���b�Z�[�W�́A[�\�����A���̎�M�҂́A�\��� 3 ��݂̂�����܂��B
   
-- 表示名、または**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
+- 表示名、または **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
     
-- 受信者の種類、または**PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md))
+- 受信者の種類、 **または PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md))
     
-- 行識別子、または**PR_ROWID** ([PidTagRowid](pidtagrowid-canonical-property.md))
+- 行識別子 **、または** PR_ROWID ([PidTagRowid](pidtagrowid-canonical-property.md))
     
-メッセージが名前解決プロセスに切り替えられた後、各受信者には、エントリ識別子または**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) 列もあります。 And when the message has been submitted, the rows in the recipient table will add two more columns:
+メッセージが名前解決プロセスを受けた後、各受信者には、エントリ識別子 [(PidTagEntryId)](pidtagentryid-canonical-property.md)**列PR_ENTRYIDも** 含む必要があります。 And when the message has been submitted, the rows in the recipient table will add two more columns:
   
-- アドレスの種類、または**PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))
+- アドレスの種類、または **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))
     
-- トランスポート責任、または**PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md))
+- トランスポートの責任、 **またはPR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md))
     
-Clients can retrieve a message's recipient table by calling its **IMessage::GetRecipientTable** method or its **IMAPIProp::OpenProperty** method. For more information, see [IMessage::GetRecipientTable](imessage-getrecipienttable.md) and [IMAPIProp::OpenProperty](imapiprop-openproperty.md). Message store providers are expected to support both of these approaches. The **OpenProperty** approach requires that the client specify IID_IMAPITable as the interface identifier and **PR_MESSAGE_RECIPIENTS** as the property tag. **PR_MESSAGE_RECIPIENTS**([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) は、メッセージの受信者テーブルを表す table オブジェクトプロパティです。 Message store providers are required to set **PR_MESSAGE_RECIPIENTS** for each message and include it in the array of property tags returned from the **IMAPIProp::GetPropList** method. For more information, see [IMAPIProp::GetPropList](imapiprop-getproplist.md).
+Clients can retrieve a message's recipient table by calling its **IMessage::GetRecipientTable** method or its **IMAPIProp::OpenProperty** method. For more information, see [IMessage::GetRecipientTable](imessage-getrecipienttable.md) and [IMAPIProp::OpenProperty](imapiprop-openproperty.md). Message store providers are expected to support both of these approaches. The **OpenProperty** approach requires that the client specify IID_IMAPITable as the interface identifier and **PR_MESSAGE_RECIPIENTS** as the property tag. **PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) は、メッセージの受信者テーブルを表すテーブル オブジェクト プロパティです。 Message store providers are required to set **PR_MESSAGE_RECIPIENTS** for each message and include it in the array of property tags returned from the **IMAPIProp::GetPropList** method. For more information, see [IMAPIProp::GetPropList](imapiprop-getproplist.md).
   
 ��M�҂̃e�[�u���𑀍삷����@�̏ڍׂɂ��ẮA [��M�҂̃e�[�u��](recipient-tables.md)��Q�Ƃ��Ă��������B
   

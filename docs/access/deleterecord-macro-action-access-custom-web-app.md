@@ -1,5 +1,5 @@
 ---
-title: DeleteRecord マクロアクション (Access カスタム web アプリ)
+title: DeleteRecord マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420991"
 ---
-# <a name="deleterecord-macro-action-access-custom-web-app"></a>DeleteRecord マクロアクション (Access カスタム web アプリ)
+# <a name="deleterecord-macro-action-access-custom-web-app"></a>DeleteRecord マクロ アクション (Access カスタム Web アプリ)
 
 > [!IMPORTANT]
 > マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 

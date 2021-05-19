@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251275
 localization_priority: Normal
 ms.assetid: cbfc4e91-10d1-d50e-3e8a-f269f7123276
-description: テキストブロックの回転中心の x 座標を、テキストブロックの原点を基準にして指定します。 既定の数式は次のとおりです。
+description: テキスト ブロックの回転中心の x 座標を、テキスト ブロックの原点に関連付けます。 既定の数式は次のとおりです。
 ms.openlocfilehash: 390f8129e8000a043969eda0ab1c8e4ef62515ef
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,9 +18,9 @@ ms.locfileid: "33425856"
 ---
 # <a name="txtlocpinx-cell-text-transform-section"></a>[TxtLocPinX] セル ([Text Transform] セクション)
 
-テキストブロックの回転中心の*x*座標を、テキストブロックの原点を基準にして指定します。 既定の数式は次のとおりです。 
+テキスト ブロック  *の回転*  中心の x 座標を、テキスト ブロックの原点に関連付けます。 既定の数式は次のとおりです。 
   
-= txtwidth \* 0.5
+= TxtWidth \* 0.5
   
 この数式では、テキスト ブロックの水平方向の中心が回転の中心になります。
   
@@ -30,7 +30,7 @@ ms.locfileid: "33425856"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [txtlocpinx]  <br/> |
+| セル名 :  <br/> | TxtLocPinX  <br/> |
    
 プログラムから、インデックスによって [TxtLocPinX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

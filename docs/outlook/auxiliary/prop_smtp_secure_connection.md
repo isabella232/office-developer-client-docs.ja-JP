@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421285"
 ---
-# <a name="propsmtpsecureconnection"></a>PROP_SMTP_SECURE_CONNECTION
+# <a name="prop_smtp_secure_connection"></a>PROP_SMTP_SECURE_CONNECTION
 
 SMTP アカウントに使用する暗号化された接続の種類を指定します。
   
@@ -22,21 +22,21 @@ SMTP アカウントに使用する暗号化された接続の種類を指定し
 
 |||
 |:-----|:-----|
-|識別子:  <br/> |0x020a  <br/> |
+|識別子:  <br/> |0x020A  <br/> |
 |プロパティの種類:  <br/> |PT_DWORD  <br/> |
-|プロパティタグ:  <br/> |0x020A0003  <br/> |
-|接続  <br/> |読み取り専用  <br/> |
+|プロパティ タグ:  <br/> |0x020A0003  <br/> |
+|アクセス:  <br/> |読み取り専用  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-この値には、次の定数のいずれかを指定できます。 値については、「 [Constants (Account management API)](constants-account-management-api.md) 」を参照してください。 
+値には、次のいずれかの定数を指定できます。 値 [については、「定数 (アカウント管理 API)」](constants-account-management-api.md) を参照してください。 
   
 |**Constants**|**説明**|
 |:-----|:-----|
-|**ENCRYPT_CONN_NO_SECURITY** <br/> |暗号化は使用しないでください。  <br/> |
+|**ENCRYPT_CONN_NO_SECURITY** <br/> |暗号化は使用しません。  <br/> |
 |**ENCRYPT_CONN_SSL** <br/> |Secure Socket Layer (SSL) 暗号化を使用します。  <br/> |
-|**ENCRYPT_CONN_TLS** <br/> |TLS (Transport Layer Security) 暗号化と認証プロトコルを使用します。  <br/> |
-|**ENCRYPT_CONN_AUTO** <br/> |メールサーバーでサポートされている暗号化方法を自動的に検出して使用します。  <br/> |
+|**ENCRYPT_CONN_TLS** <br/> |トランスポート層セキュリティ (TLS) 暗号化および認証プロトコルを使用します。  <br/> |
+|**ENCRYPT_CONN_AUTO** <br/> |メール サーバーでサポートされている暗号化方法を自動的に検出して使用します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

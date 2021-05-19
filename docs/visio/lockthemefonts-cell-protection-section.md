@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1ce8b52c-b6c1-4764-b4ec-00c7efb8929d
-description: 新しいテーマを適用することで、[Theme Properties] 行の [FontIndex] セルが変更されないようにします。 ユーザーがシェイプシートのこの値を手動で変更することは防げません。
+description: 新しいテーマを適用することで、[Theme Properties] 行の [FontIndex] セルが変更されないようにします。ユーザーが手動でシェイプシートのこの値を編集することは防げません。
 ms.openlocfilehash: b3bd21c1dcd8c8c13d843c50cb29edcc5b8c4999
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33421229"
 ---
 # <a name="lockthemefonts-cell-protection-section"></a>[LockThemeFonts] セル ([保護] セクション)
 
-新しいテーマを適用することで、[**Theme Properties**] 行の [**FontIndex**] セルが変更されないようにします。 ユーザーがシェイプシートのこの値を手動で変更することは防げません。 
+新しいテーマを適用することで、[**Theme Properties**] 行の [**FontIndex**] セルが変更されないようにします。ユーザーが手動でシェイプシートのこの値を編集することは防げません。 
   
 |**値**|**説明**|
 |:-----|:-----|
@@ -29,7 +29,7 @@ ms.locfileid: "33421229"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [lockthemefonts]  <br/> |
+| セル名:  <br/> | LockThemeFonts  <br/> |
    
 プログラムから、インデックスによって [**LockThemeFonts**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

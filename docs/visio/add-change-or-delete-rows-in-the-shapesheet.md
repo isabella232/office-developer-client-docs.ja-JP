@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82253110
 localization_priority: Normal
 ms.assetid: 47aa9737-363b-b57f-14cf-c007f6dbb8be
-description: Microsoft Visio では、新しい行を追加したり、既存の行の種類を変更したり、シェイプシートの行を削除したりできます。
+description: 新しい行の追加、既存の行の種類の変更、または Microsoft Visio の ShapeSheet の行の削除を行Visio。
 ms.openlocfilehash: 385d1040527f8c4322fb1f158c1de2deb0e6f59c
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33425086"
 ---
 # <a name="add-change-or-delete-rows-in-the-shapesheet"></a>シェイプシートの行の追加、変更、または削除
 
-Microsoft Visio では、新しい行を追加したり、既存の行の種類を変更したり、シェイプシートの行を削除したりできます。
+新しい行の追加、既存の行の種類の変更、または Microsoft Visio の ShapeSheet の行の削除を行Visio。
   
 ### <a name="to-add-a-new-row-to-a-section-in-the-shapesheet"></a>シェイプシートのセクションに新しい行を追加する
 
@@ -26,9 +26,9 @@ Microsoft Visio では、新しい行を追加したり、既存の行の種類�
     
 2. [**シェイプシート ツール**] の下、[**デザイン**] タブの [**行**] グループで、[**挿入**] をクリックして、既存の行の後に行を挿入します。 
     
-    またはセルを右クリックし、ショートカットメニューの [**行の挿入**] [](geometry-section.md)または [後ろに**行を挿入**] をクリックします。 
+    または、セルを右クリックし、ショートカットメニューの [行の挿入] または [行の後 **に挿入]** [([](geometry-section.md)ジオメトリ] セクションのみ) をクリックします。 
     
-### <a name="to-change-a-rows-type-in-the-shapesheet"></a>シェイプシートで行の種類を変更するには
+### <a name="to-change-a-rows-type-in-the-shapesheet"></a>ShapeSheet で行の種類を変更するには
 
 - 行のラベルかセルを右クリックして、ショートカット メニューの [**図形要素の変更**] をクリックします。 
     

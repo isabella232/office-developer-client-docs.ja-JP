@@ -21,13 +21,13 @@ ms.locfileid: "33426682"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-必要な Exchange アドレス帳プロバイダーが**openentry**メソッドを開いていることを確認します。 この関数は[IAddrBook::D etails](iaddrbook-details.md)と同様に動作しますが、 _pEmsabpUID_で識別される Exchange アドレス帳を使用して**entryID**を開きます。
+**OpenEntry** メソッドが、予想されるアドレス帳プロバイダーによって開Exchange確認します。 この関数は [IAddrBook::D etails](iaddrbook-details.md)と同様に動作しますが _、pEmsabpUID_ で識別される Exchange アドレス帳を使用して **entryID** を開きます。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |abhelp .h  <br/> |
+|ヘッダー ファイル:  <br/> |abhelp.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 HRESULT HrDoABDetailsWithProviderUID(
@@ -49,62 +49,62 @@ HRESULT HrDoABDetailsWithProviderUID(
 
  _pEmsabpUID_
   
-> 順番この関数がエントリ識別子の詳細を表示するために使用する Exchange アドレス帳プロバイダーを識別する_emsabpUID_へのポインター。 入力されたエントリ識別子が Exchange アドレス帳プロバイダーのエントリ識別子ではない場合、このパラメーターは無視され、関数呼び出しは[IAddrBook::D etails](iaddrbook-details.md)と同じように動作します。 このパラメーターが NULL またはゼロ MAPIUID の場合は、この関数も[IAddrBook::D etails](iaddrbook-details.md)と同じように動作します。
+> [in]この関数は、エントリ識別子の詳細を表示するためにExchangeアドレス帳プロバイダーを識別する _emsabpUID_ へのポインターです。 受信エントリ識別子が Exchange アドレス帳プロバイダーエントリ識別子ではない場合、このパラメーターは無視され、関数呼び出しは[IAddrBook::D](iaddrbook-details.md)とまったく同じ動作をします。 このパラメーターが NULL または 0 の MAPIUID の場合、この関数は [IAddrBook::D同様に動作します](iaddrbook-details.md)。
     
  _pAddrBook_
   
-> 順番エントリ識別子を開くために使用されるアドレス帳。 NULL にすることはできません。
+> [in]エントリ識別子を開くのに使用するアドレス帳。 NULL にすることはできません。
     
- _l出 uiparam_
+ _lpulUIParam_
   
-> 読み上げダイアログボックスの親ウィンドウへのハンドル。
+> [out]ダイアログ ボックスの親ウィンドウへのハンドル。
     
  _lpfnDismiss_
   
-> 順番**DISMISSMODELESS**プロトタイプに基づく関数へのポインター、または NULL。 このメンバーは、DIALOG_SDI フラグが設定されている場合のように、ダイアログボックスのモードレスバージョンにのみ適用されます。 MAPI は、ユーザーがモードレスアドレスダイアログボックスを閉じたときに、そのダイアログボックスがアクティブでなくなったことを示す詳細を呼び出していることをクライアントに通知する**DISMISSMODELESS**関数を呼び出します。 
+> [in] **DISMISSMODELESS** プロトタイプまたは NULL に基づく関数へのポインター。 このメンバーは、設定されているオプション フラグで示されているモードレス DIALOG_SDIダイアログ ボックスにのみ適用されます。 MAPI は、ユーザーがモードレス アドレス ダイアログ ボックスを閉じ、ダイアログ ボックスがアクティブでなくなった詳細を呼び出しているクライアントに通知するときに **DISMISSMODELESS** 関数を呼び出します。 
     
  _lpvDismissContext_
   
-> 順番_lpfnDismiss_パラメーターが指す**DISMISSMODELESS**関数に渡すコンテキスト情報へのポインター。 このパラメーターは、 **DIALOG_SDI**フラグを_ulflags_パラメーターに含めることによって、ダイアログボックスのモードレスバージョンにのみ適用されます。 
+> [in]_lpfnDismiss_ パラメーターが指す **DISMISSMODELESS** 関数に渡すコンテキスト情報へのポインター。 このパラメーターは _、ulFlags_ パラメーターに DIALOG_SDIを含めて、ダイアログ ボックス **のモードレス** バージョンにのみ適用されます。 
     
  _cbEntryID_
   
-> 順番_lな tryid_パラメーターで指定されたエントリ id のバイト数。 
+> [in]  _lpEntryID_ パラメーターで指定されたエントリ識別子のバイト 数。 
     
- _lて tryid_
+ _lpEntryID_
   
-> 順番開くアドレス帳のエントリを表すエントリ識別子へのポインター。
+> [in]開くアドレス帳エントリを表すエントリ識別子へのポインター。
     
- _lpfbuttoncallback_
+ _lpfButtonCallback_
   
-> 順番**LPFNBUTTON**関数プロトタイプに基づく関数へのポインター。 **LPFNBUTTON**関数は、[詳細] ダイアログボックスにボタンを追加します。 
+> [in] **LPFNBUTTON 関数プロトタイプに基づく関数への** ポインター。 **LPFNBUTTON 関数は**、詳細ダイアログ ボックスにボタンを追加します。 
     
- _lpvbuttoncontext_
+ _lpvButtonContext_
   
-> 順番_lpfbuttoncallback_パラメーターで指定された関数のパラメーターとして使用されたデータへのポインター。 
+> [in]  _lpfButtonCallback_ パラメーターで指定された関数のパラメーターとして使用されたデータへのポインター。 
     
- _lpszbuttontext_
+ _lpszButtonText_
   
-> 順番追加されたボタンに適用されるテキストを含む文字列へのポインター。ボタンが拡張可能な場合です。 拡張ボタンを必要としない場合は、 _lpszbuttontext_パラメーターを NULL に設定する必要があります。 
+> [in]追加されたボタンに適用するテキストを含む文字列へのポインター (そのボタンが拡張可能な場合)。 _拡張可能ボタンが不要な場合、lpszButtonText_ パラメーターは NULL である必要があります。 
     
  _ulFlags_
   
-> 順番_lpszbuttontext_パラメーターのテキストの種類を制御するフラグのビットマスク。 次のフラグを設定できます。 
+> [in]  _lpszButtonText_ パラメーターのテキストの種類を制御するフラグのビットマスク。 次のフラグを設定できます。 
     
 AB_TELL_DETAILS_CHANGE
   
-> 住所に変更が実際に加えられた場合に、詳細が TRUE を返すことを示します。それ以外の場合、詳細は FALSE を返します。
+> アドレスに実際に変更が加えた場合、Details は TRUE を返します。それ以外の場合、Details は FALSE を返します。
     
 DIALOG_MODAL
   
-> [共通アドレス] ダイアログボックスのモーダルバージョンが表示されます。 このフラグは、DIALOG_SDI とは相互に排他的です。
+> [共通アドレス] ダイアログ ボックスのモーダル バージョンを表示します。 このフラグは、このフラグと相互にDIALOG_SDI。
     
 DIALOG_SDI
   
-> [共通アドレス] ダイアログボックスのモードレスバージョンが表示されます。 このフラグは、DIALOG_MODAL とは相互に排他的です。
+> [共通アドレス] ダイアログ ボックスのモードレス バージョンを表示します。 このフラグは、他のフラグと相互DIALOG_MODAL。
     
 MAPI_UNICODE
   
-> 渡された文字列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
+> 渡された文字列は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列は ANSI 形式になります。
     
 

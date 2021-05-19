@@ -19,14 +19,14 @@ ms.locfileid: "33426675"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-### <a name="to-access-one-or-more-properties-of-an-address-book-entry"></a>アドレス帳エントリの1つまたは複数のプロパティにアクセスするには
+### <a name="to-access-one-or-more-properties-of-an-address-book-entry"></a>アドレス帳エントリの 1 つ以上のプロパティにアクセスするには
   
-1. 対象のアドレス帳のエントリごとに、 [IAddrBook:: openentry](iaddrbook-openentry.md)を呼び出して、対象のメッセージングユーザーまたは配布リストのエントリ識別子を渡します。
+1. 対象のアドレス帳エントリごとに [、IAddrBook::OpenEntry](iaddrbook-openentry.md)を呼び出し、ターゲット メッセージング ユーザーまたは配布リストのエントリ識別子を渡します。
     
-2. その後、次のいずれかの操作を行います。
+2. 次に、次のいずれかを実行します。
     
-   - 対象のアドレス帳エントリごとに、メッセージユーザーまたは配布リストの[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出して、取得する1つまたは複数のプロパティの一覧を指定します。 
+   - メッセージング ユーザーまたは配布リストの [IMAPIProp::GetProps](imapiprop-getprops.md) メソッドを、取得する 1 つ以上のプロパティの一覧で、関心のあるアドレス帳エントリごとに呼び出します。 
     
-   - [IAddrBook::P reparerecips](iaddrbook-preparerecips.md)を呼び出し、必要なすべてのアドレス帳エントリのすべてのプロパティを保持する[adrlist](adrlist.md)構造体を渡します。 **PrepareRecips**の1回の呼び出しで複数のアドレス帳エントリの情報が返される可能性があるため、複数の受信者に関心がある場合は、この方法をお勧めします。 
+   - [IAddrBook::P repareRecips](iaddrbook-preparerecips.md)を呼び出し、必要なすべてのアドレス帳エントリのすべてのプロパティを保持する[ADRLIST](adrlist.md)構造体を渡します。 **PrepareRecips** を呼び出す 1 つの呼び出しは、複数のアドレス帳エントリの情報を返す可能性があるから、複数の受信者に関心がある場合に、この方法が望ましい戦略です。 
     
 

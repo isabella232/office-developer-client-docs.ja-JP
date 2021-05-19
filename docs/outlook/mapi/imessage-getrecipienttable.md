@@ -25,7 +25,7 @@ ms.locfileid: "33424610"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージの recipient テーブルを返します。
+メッセージの受信者テーブルを返します。
   
 ```cpp
 HRESULT GetRecipientTable(
@@ -38,19 +38,19 @@ HRESULT GetRecipientTable(
 
  _ulFlags_
   
-> 順番テーブルの戻り値を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]テーブルの戻り値を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_DEFERRED_ERRORS 
   
-> 呼び出し元のクライアントがテーブルを完全に使用できるようになる前に、 **getrecipienttable**を正常に返すことができるようにします。 テーブルを使用できない場合は、その後の呼び出しを行うとエラーが発生する可能性があります。 
+> **テーブルが呼び出** し元のクライアントで完全に使用できる前に、GetRecipientTable が正常に返されるのを許可します。 テーブルが使用できない場合は、後続の呼び出しでエラーが発生する可能性があります。 
     
 MAPI_UNICODE 
   
-> 文字列列は、Unicode 形式である必要があります。 MAPI_UNICODE フラグが設定されていない場合、文字列列は ANSI 形式である必要があります。
+> 文字列列は Unicode 形式である必要があります。 このフラグMAPI_UNICODE設定しない場合、文字列列は ANSI 形式である必要があります。
     
- _lpptable_
+ _lppTable_
   
-> 読み上げ受信者テーブルへのポインターへのポインター。
+> [out]受信者テーブルへのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -60,25 +60,25 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-**IMessage:: get table**メソッドは、メッセージの受信者テーブルへのポインターを返します。これには、メッセージのすべての受信者に関する情報が含まれています。 すべての受信者に1つの行があります。 
+**IMessage::GetRecipientTable** メソッドは、メッセージのすべての受信者に関する情報を含む、メッセージの受信者テーブルへのポインターを返します。 受信者ごとに 1 行があります。 
   
-受信者テーブルは、メッセージが送信されたかどうかに応じて異なる列セットを持ちます。 受信者テーブルの列の完全な一覧については、「 [recipient Tables](recipient-tables.md)」を参照してください。
+受信者テーブルの列セットは、メッセージが送信されたかどうかによって異なります。 受信者テーブル内の列の完全な一覧については、「受信者テーブル」 [を参照してください](recipient-tables.md)。
   
-一部の受信者テーブルでは、さまざまな制限がサポートしています。それ以外の場合は含まれません。 制限のサポートは、メッセージストアプロバイダーの実装によって異なります。 
+一部の受信者テーブルでは、さまざまな制限がサポートされています。他のユーザーはそうではありません。 制限のサポートは、メッセージ ストア プロバイダーの実装によって異なります。 
   
-_ulflags_パラメーターの MAPI_UNICODE フラグを設定すると、受信者テーブルへの次の呼び出しに影響します。 
+_ulFlags_ パラメーター MAPI_UNICODEフラグを設定すると、受信者テーブルへの次の呼び出しに影響します。 
   
-- [IMAPITable:: querycolumns](imapitable-querycolumns.md)は、列セットを取得します。 
+- [列セットを取得する IMAPITable::QueryColumns。](imapitable-querycolumns.md) 
     
-- [IMAPITable:: QueryRows](imapitable-queryrows.md)が行を取得します。 
+- [IMAPITable::QueryRows を使用して行](imapitable-queryrows.md) を取得します。 
     
-- [IMAPITable:: querysortorder](imapitable-querysortorder.md)は、並べ替えの順序を取得します。 
+- [並べ替え順序を取得する IMAPITable::QuerySortOrder。](imapitable-querysortorder.md) 
     
-unicode フラグを設定すると、これらの呼び出しから返される文字列列の情報は unicode 形式になります。 ただし、すべてのメッセージストアプロバイダーが Unicode をサポートしているわけではないため、このフラグの設定は要求だけになります。
+Unicode フラグを設定すると、これらの呼び出しから返される文字列列の情報を Unicode 形式で指定する必要があります。 ただし、すべてのメッセージ ストア プロバイダーが Unicode をサポートしているわけではありませんので、このフラグの設定は要求のみです。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-[IMessage:: modifyrecipients](imessage-modifyrecipients.md)メソッドを呼び出すことによって、受信者テーブルを開いたまま変更することができます。 **modifyrecipients**受信者の追加、受信者の削除、または受信者のプロパティの変更を行います。 
+[IMessage::ModifyRecipients](imessage-modifyrecipients.md)メソッドを呼び出すことによって、受信者テーブルを開いている間に変更できます。 **ModifyRecipients は** 、受信者の追加、受信者の削除、または受信者のプロパティの変更を行います。 
   
 ## <a name="see-also"></a>関連項目
 

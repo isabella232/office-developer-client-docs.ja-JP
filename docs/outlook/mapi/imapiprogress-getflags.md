@@ -1,5 +1,5 @@
 ---
-title: imapi進捗 getflags
+title: IMAPIProgressGetFlags
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33423644"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-進行状況の情報を計算する操作のレベルについて、progress オブジェクトからフラグ設定を返します。
+進行状況の情報を計算する操作レベルの進行状況オブジェクトからフラグ設定を返します。
   
 ```cpp
 HRESULT GetFlags(
@@ -35,33 +35,33 @@ HRESULT GetFlags(
 
 ## <a name="parameters"></a>パラメーター
 
- _lアウトフラグ_
+ _lpulFlags_
   
-> 読み上げ進行状況情報を計算する操作のレベルを制御するフラグのビットマスク。 次のフラグを返すことができます。
+> [out]進行状況情報を計算する操作のレベルを制御するフラグのビットマスク。 次のフラグを返します。
     
 MAPI_TOP_LEVEL 
   
-> 処理を開始するためにクライアントによって呼び出されるオブジェクトの最上位レベルのオブジェクトの進行状況が計算されています。 たとえば、フォルダーコピー操作の最上位のオブジェクトは、コピーされているフォルダーです。 MAPI_TOP_LEVEL が設定されていない場合は、下位レベルのオブジェクトまたはサブオブジェクトの進行状況が計算されます。 フォルダーのコピー操作では、下位レベルのオブジェクトは、コピーされているフォルダー内のサブフォルダーの1つです。
+> 処理を開始するためにクライアントによって呼び出されるオブジェクトである、トップ レベル のオブジェクトの進行状況が計算されています。 たとえば、フォルダー コピー操作のトップ レベル のオブジェクトは、コピーするフォルダーです。 このMAPI_TOP_LEVEL設定されていない場合、下位レベルのオブジェクトまたはサブオブジェクトの進行状況が計算されます。 フォルダー コピー操作では、下位レベルのオブジェクトは、コピーするフォルダー内のサブフォルダーの 1 つになります。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> フラグの値が正常に返されました。
+> flags 値が正常に返されました。
     
 ## <a name="remarks"></a>注釈
 
-MAPI を使用すると、MAPI_TOP_LEVEL フラグを使用して、処理に関与するすべてのオブジェクトが同じ[imapiprogress](imapiprogressiunknown.md)実装を使用して進行状況を示すことができるように、サービスプロバイダーがトップレベルのオブジェクトとサブオブジェクトを区別できるようになります。 これにより、インジケーター表示が単一の正方向にスムーズに進みます。 MAPI_TOP_LEVEL フラグが設定されているかどうかによって、サービスプロバイダーが以降の呼び出しで progress オブジェクトに対して他のパラメーターを設定する方法が決まります。 
+MAPI を使用すると、サービス プロバイダーは、MAPI_TOP_LEVEL フラグを使用してトップ レベル のオブジェクトとサブオブジェクトを区別し、操作に関係するすべてのオブジェクトが同じ [IMAPIProgress](imapiprogressiunknown.md) 実装を使用して進行状況を表示できます。 これにより、インジケーターの表示が 1 つの正の方向にスムーズに進みます。 MAPI_TOP_LEVEL フラグを設定するかどうかは、サービス プロバイダーが後続の progress オブジェクトへの呼び出しで他のパラメーターを設定する方法を決定します。 
   
-**getflags**によって返される値は、最初は実装者によって設定され、その後、 [imapiprogress:: setlimits](imapiprogress-setlimits.md)メソッドを呼び出してサービスプロバイダーによって設定されます。 
+**GetFlags** によって返される値は、最初は実装者によって設定され、その後 [、IMAPIProgress::SetLimits](imapiprogress-setlimits.md)メソッドへの呼び出しを通じてサービス プロバイダーによって設定されます。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-常にフラグを MAPI_TOP_LEVEL に初期化してから、必要に応じてサービスプロバイダーにクリアするようにします。 サービスプロバイダーは、 **imapiprogress:: setlimits**メソッドを呼び出して、フラグをクリアおよびリセットできます。 **getflags**およびその他の**imapiprogress**メソッドを実装する方法の詳細については、「[進行状況インジケーターの実装](implementing-a-progress-indicator.md)」を参照してください。
+常にフラグを初期化してMAPI_TOP_LEVEL、必要に応じてクリアするためにサービス プロバイダーに依存します。 サービス プロバイダーは **、IMAPIProgress::SetLimits** メソッドを呼び出すことによってフラグをクリアおよびリセットできます。 **GetFlags** および他の **IMAPIProgress** メソッドを実装する方法の詳細については、「Progress Indicator の実装 [」を参照してください](implementing-a-progress-indicator.md)。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-進行状況インジケーターを表示する場合は、最初に**imapiprogress:: getflags**への呼び出しを呼び出します。 すべての実装は、 _lMAPI_TOP_LEVEL flags_パラメーターの内容をこの値に初期化するため、戻り値はである必要があります。 progress オブジェクトへの一連の呼び出しの詳細については、「[進行状況インジケーターを表示する](how-to-display-a-progress-indicator.md)」を参照してください。
+進行状況インジケーターを表示するときに、最初に **IMAPIProgress::GetFlags** を呼び出します。 すべての実装が  _lpulFlags_ パラメーターの内容をこの値に初期化MAPI_TOP_LEVEL、返される値を使用する必要があります。 progress オブジェクトへの呼び出しのシーケンスの詳細については、「進捗インジケーターを表示 [する」を参照してください](how-to-display-a-progress-indicator.md)。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -69,7 +69,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIProgress.cpp  <br/> |cmapiprogress 進行状況:: getflags  <br/> |mfcmapi は、 **imapiprogress:: getflags**メソッドを使用して、どのフラグが設定されているかを判別します。 **imapiprogress:: setlimits**メソッドを使用してフラグが設定されていない限り、MAPI_TOP_LEVEL を返します。  <br/> |
+|MAPIProgress.cpp  <br/> |CMAPIProgress::GetFlags  <br/> |MFCMAPI は **IMAPIProgress::GetFlags** メソッドを使用して、設定されているフラグを決定します。 **IMAPIProgress::SetLimits** メソッドを使用してフラグが設定されていないMAPI_TOP_LEVELを返します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

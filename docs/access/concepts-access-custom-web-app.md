@@ -19,7 +19,7 @@ ms.locfileid: "33420984"
 > [!IMPORTANT]
 > マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
-- [予約語 (Access カスタム web アプリ)](reserved-words-access-custom-web-app.md)
+- [予約語 (Access カスタム Web アプリ)](reserved-words-access-custom-web-app.md)
     
 - [Access で Web アプリを作成してカスタマイズする](how-to-create-and-customize-a-web-app-in-access.md)
     

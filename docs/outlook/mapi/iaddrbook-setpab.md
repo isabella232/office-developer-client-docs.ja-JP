@@ -1,5 +1,5 @@
 ---
-title: iaddrbooksetpab
+title: IAddrBookSetPAB
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -38,25 +38,25 @@ HRESULT SetPAB(
 
  _cbEntryID_
   
-> 順番_lな tryid_パラメーターで指定されたエントリ識別子のバイト数。 
+> [in]  _lpEntryID_ パラメーターが指すエントリ識別子のバイト数。 
     
- _lて tryid_
+ _lpEntryID_
   
-> 順番PAB として指定するコンテナーのエントリ id へのポインター。 _lな tryid_パラメーターを NULL にすることはできません。 
+> [in]PAB として指定するコンテナーのエントリ識別子へのポインター。 _lpEntryID_ パラメーターは NULL にすることはできません。 
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 指定したコンテナーは PAB として確立されています。
+> 指定したコンテナーが PAB として確立されています。
     
 ## <a name="remarks"></a>注釈
 
-クライアントおよびサービスプロバイダーは、 **setpab**メソッドを呼び出して、特定のコンテナーを PAB として指定します。 PAB は、他のコンテナーからコピーしたエントリと、新しいエントリで構成されるコンテナーです。 
+クライアントとサービス プロバイダーは **SetPAB** メソッドを呼び出して、特定のコンテナーを PAB として指定します。 PAB は、他のコンテナーからコピーされたエントリと新しいエントリで構成されるコンテナーです。 
   
-**setpab**の呼び出しによって、コンテナーが pab として設定され、そのコンテナーが使用できなくなるか、またはその後の**setpab**への呼び出しによって新しいコンテナーが pab になります。 
+**SetPAB** の呼び出しは、そのコンテナーが使用不能になるまで、または **SetPAB** への後続の呼び出しを通じて新しいコンテナーが PAB になるまで、コンテナーを PAB として確立します。 
   
-クライアントとプロバイダーは、PAB を永続的に変更するために[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出す必要はありません。 
+クライアントとプロバイダーは、PAB の変更を永続的に行うために [IMAPIProp::SaveChanges](imapiprop-savechanges.md) メソッドを呼び出す必要があります。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -64,7 +64,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|abdlg  <br/> |cabコンテ dlg:: OnSetPAB  <br/> |mfcmapi は、 **setpab**メソッドを使用して、指定されたコンテナーを PAB に設定します。  <br/> |
+|AbContDlg.cpp  <br/> |CAbContDlg::OnSetPAB  <br/> |MFCMAPI は **SetPAB** メソッドを使用して、指定したコンテナーを PAB にします。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

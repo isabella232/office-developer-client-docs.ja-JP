@@ -25,7 +25,7 @@ ms.locfileid: "33423588"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[iconvertersession:: MAPIToMIMEStm](iconvertersession-mapitomimestm.md)でコンバータが返す MIME ストリームのテキストの折り返し幅を設定します。
+コンバーターが [IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md)で返す MIME ストリームのテキストの折り返し幅を設定します。
   
 ```cpp
 HRESULT IConverterSession::SetTextWrapping ( 
@@ -38,11 +38,11 @@ HRESULT IConverterSession::SetTextWrapping (
 
  *fWrapText* 
   
-> 順番テキストを折り返すかどうかを指定します。
+> [in]テキストを折り返すかどうか。
     
  *ulWrapWidth* 
   
-> 順番文字列の折り返し幅を使用します。
+> [in]使用するテキストの折り返しの幅。
     
 ## <a name="return-value"></a>戻り値
 
@@ -56,8 +56,8 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|mapimime .cpp  <br/> |ImportEMLToIMessage  <br/> |mfcmapi は MimeToMAPI を使用して、EML ファイルを MAPI メッセージに変換します。  <br/> |
-|mapimime .cpp  <br/> |ExportIMessageToEML  <br/> |mfcmapi は、MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。  <br/> |
+|MapiMime.cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI は MimeToMAPI を使用して EML ファイルを MAPI メッセージに変換します。  <br/> |
+|MapiMime.cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI は MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

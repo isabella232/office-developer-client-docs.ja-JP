@@ -1,5 +1,5 @@
 ---
-title: Replace 関数 (Access カスタム web アプリ)
+title: Replace Function (Access custom Web app)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421033"
 ---
-# <a name="replace-function-access-custom-web-app"></a>Replace 関数 (Access カスタム web アプリ)
+# <a name="replace-function-access-custom-web-app"></a>Replace Function (Access custom Web app)
 
 指定した文字列値のすべての一致箇所を別の文字列値に置換します。
   
@@ -23,14 +23,14 @@ ms.locfileid: "33421033"
   
 ## <a name="syntax"></a>構文
 
- **Replace**(*textexpression*, *Pattern*, *Replacement*) 
+ **Replace** (*TextExpression*, *Pattern*, *Replace*) 
   
 **Replace** 関数の引数は次のとおりです。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
 | *TextExpression*  <br/> |検索する文字列式を指定します。  <br/> |
-| *Pattern*  <br/> |検出する部分文字列を指定します。  *パターン*を空の文字列 ("") にすることはできません。  <br/> |
+| *Pattern*  <br/> |検出する部分文字列を指定します。  *パターン*  は空の文字列 ("") にすることはできません。  <br/> |
 | *Replacement*  <br/> |置き換える文字列を指定します。  <br/> |
    
 

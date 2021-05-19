@@ -1,5 +1,5 @@
 ---
-title: NewRecord マクロアクション (Access カスタム web アプリ)
+title: NewRecord マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424596"
 ---
-# <a name="newrecord-macro-action-access-custom-web-app"></a>NewRecord マクロアクション (Access カスタム web アプリ)
+# <a name="newrecord-macro-action-access-custom-web-app"></a>NewRecord マクロ アクション (Access カスタム Web アプリ)
 
 現在のビューに新しい空のレコードを作成します。
   

@@ -21,38 +21,38 @@ ms.locfileid: "33421341"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージングユーザーまたは配布リストをコンテナーに追加するために、クライアントは[IAddrBook:: newentry](iaddrbook-newentry.md)またはプロバイダーから[imapisupport:: newentry](imapisupport-newentry.md)を呼び出します。 _lpeidcontainer_パラメーターには、ターゲットコンテナーのエントリ id を指定します。 次に、MAPI は、1回限りのテーブルから1回限りのテンプレートを使用してエントリを作成するために、コンテナーの[IABContainer:: createentry](iabcontainer-createentry.md)メソッドを呼び出します。 1回限りのテンプレートでは、クライアントは特定の種類の新しい受信者を作成できます。 ほとんどのフィールドは編集できます。 _lな tryid_パラメーターで指定されているテンプレートは、プロバイダーが外部テンプレートをサポートしている場合に、プロバイダーが提供するか、外部プロバイダーからのテンプレートである可能性があります。 外部テンプレートから受信者を作成できるプロバイダーの**createentry**の実装は、常に、できないプロバイダーの実装よりも複雑です。 
+メッセージング ユーザーまたは配布リストをコンテナーに追加するには、クライアントが [IAddrBook::NewEntry](iaddrbook-newentry.md)を呼び出すか、プロバイダーが _lpEIDContainer_ パラメーターのターゲット コンテナーのエントリ識別子を使用して [IMAPISupport::NewEntry](imapisupport-newentry.md)を呼び出します。 MAPI は、コンテナーの [IABContainer::CreateEntry](iabcontainer-createentry.md) メソッドを呼び出して、1 回きりテーブルから 1 回のテンプレートを使用してエントリを作成します。 1 回限定のテンプレートを使用すると、クライアントは特定の種類の新しい受信者を作成できます。 ほとんどのフィールドは編集可能です。 _lpEntryID_ パラメーターが示すテンプレートは、プロバイダーが提供するテンプレートか、プロバイダーが外部テンプレートをサポートしている場合は、外部プロバイダーのテンプレートである可能性があります。 外部テンプレートから受信者を作成できるプロバイダーの **CreateEntry** の実装は、できないプロバイダーの実装よりも常に複雑です。 
   
- **IABContainer:: createentry を実装するには**
+ **IABContainer を実装するには::CreateEntry**
   
-1. _lpentryid_パラメーターで指定されたエントリ id の種類を決定します。 
+1. lpEntryID パラメーターで指定されたエントリ識別子  _の種類を決定_ します。 
     
-2. 入力識別子が、プロバイダーが所有するメッセージングユーザー、配布リスト、またはアドレス帳コンテナーのテンプレートを表している場合:
+2. エントリ識別子が、プロバイダーが所有するメッセージング ユーザー、配布リスト、またはアドレス帳コンテナーのテンプレートを表す場合:
     
-1. 適切なオブジェクトを作成し、初期化します。 プロバイダーは、必要に応じて、いくつかの初期プロパティを設定できます。 これらのプロパティは、作成される受信者の種類によって異なります。 
+1. 適切なオブジェクトを作成して初期化します。 プロバイダーは、必要に応じていくつかの初期プロパティを設定できます。 これらのプロパティは、作成する受信者の種類によって異なります。 
     
-2. _lppMAPIPropEntry_パラメーターの内容で、オブジェクトの実装へのポインターを返します。 
+2. _lppMAPIPropEntry_ パラメーターの内容でオブジェクトの実装へのポインターを返します。 
     
 3. エントリ識別子が外部プロバイダーのテンプレートを表す場合:
     
-1. open [imapisupport:: openentry](imapisupport-openentry.md)を呼び出して、外部オブジェクトを開きます。 
+1. [IMAPISupport::OpenEntry を呼び出して](imapisupport-openentry.md)、外部オブジェクトを開きます。 
     
-2. プロパティタグ配列に NULL を渡すオブジェクトの[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出して、プロパティを取得します。 
+2. オブジェクトの [IMAPIProp::GetProps](imapiprop-getprops.md) メソッドを呼び出し、プロパティ タグ配列に NULL を渡してプロパティを取得します。 
     
-3. 新しいオブジェクトに適用されず、転送されないすべてのプロパティのプロパティタグを PR_NULL に変更することによって、 **GetProps**から返されたプロパティ値の配列を編集します。 
+3. **GetProps** から返されるプロパティ値配列を編集するには、新しいオブジェクトに適用されないすべてのプロパティのプロパティ タグを PR_NULL に変更し、転送する必要があります。 
     
 4. 新しいオブジェクトのエントリ識別子を作成します。 
     
-5. メッセージユーザーまたは配布リストのいずれかで、適切な種類の新しいオブジェクトを作成します。
+5. メッセージング ユーザーまたは配布リストのいずれかの適切な種類の新しいオブジェクトを作成します。
     
 6. 既定のプロパティを設定して、新しいオブジェクトを初期化します。
     
-7. 外部オブジェクトが**PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) プロパティをサポートしているかどうかを確認します。 
+7. 外部オブジェクトがプロパティ ([PidTagTemplateid](pidtagtemplateid-canonical-property.md) **)** プロパティPR_TEMPLATEIDサポートするかどうかを確認します。 
     
-8. 外部オブジェクトが**PR_TEMPLATEID**をサポートしている場合は、 [imapisupport:: OpenTemplateID](imapisupport-opentemplateid.md)を呼び出して、外部プロバイダーから property オブジェクトインターフェイスを取得し、 _lppMAPIPropEntry_パラメーターの内容を foreign プロパティに設定します。オブジェクトの実装。 
+8. 外部オブジェクトが **PR_TEMPLATEID** をサポートしている場合は [、IMAPISupport::OpenTemplateID](imapisupport-opentemplateid.md) を呼び出して、外部プロバイダーからプロパティ オブジェクト インターフェイスを取得し  _、lppMAPIPropEntry_ パラメーターの内容を外部プロパティ オブジェクトの実装に設定します。 
     
-9. 外部オブジェクトが**PR_TEMPLATEID**をサポートしていない場合は、 _lppMAPIPropEntry_パラメーターの内容をプロバイダーの新しいオブジェクトの実装に設定します。 
+9. 外部オブジェクトが **PR_TEMPLATEIDをサポート** していない場合は  _、lppMAPIPropEntry_ パラメーターの内容を、プロバイダーの新しいオブジェクトの実装に設定します。 
     
-10. _lppMAPIPropEntry_パラメーターによって指定されるオブジェクトの[imapiprop:: setprops](imapiprop-setprops.md)メソッドを呼び出して、外部オブジェクトから適切なプロパティを設定します。 
+10. _lppMAPIPropEntry_ パラメーターが指すオブジェクトの [IMAPIProp::SetProps](imapiprop-setprops.md)メソッドを呼び出して、外部オブジェクトから適切なプロパティを設定します。 
     
 

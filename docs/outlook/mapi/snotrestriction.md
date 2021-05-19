@@ -25,11 +25,11 @@ ms.locfileid: "33426654"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-制限に制限を適用するのでは**なく**、制限に対して論理**not**演算を適用する場合に使用します。 
+論理 NOT **操作を** 制限に適用するために使用される **NOT** 制限について説明します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SNotRestriction
@@ -40,19 +40,19 @@ typedef struct _SNotRestriction
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **ulreserved**
+ **ulReserved**
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- **lpres**
+ **lpRes**
   
-> 論理**not**演算子に結合する制限を説明する[srestriction](srestriction.md)構造体へのポインター。 
+> 論理 NOT 演算子に結合する制限を記述する [SRestriction](srestriction.md) 構造体 **への** ポインター。 
     
 ## <a name="remarks"></a>注釈
 
-**snotrestriction**構造の詳細については、「[制限につい](about-restrictions.md)て」を参照してください。 
+**SNotRestriction 構造の詳細については、「** 制限について [」を参照してください](about-restrictions.md)。 
   
 ## <a name="see-also"></a>関連項目
 

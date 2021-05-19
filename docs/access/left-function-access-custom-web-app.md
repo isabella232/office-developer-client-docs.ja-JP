@@ -1,5 +1,5 @@
 ---
-title: Left 関数 (Access カスタム web アプリ)
+title: Left 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424169"
 ---
-# <a name="left-function-access-custom-web-app"></a>Left 関数 (Access カスタム web アプリ)
+# <a name="left-function-access-custom-web-app"></a>Left 関数 (Access カスタム Web アプリ)
 
 .文字列の左端から指定した数の文字が返されます。
   
@@ -23,13 +23,13 @@ ms.locfileid: "33424169"
   
 ## <a name="syntax"></a>構文
 
- **左**(*textexpression*、 *Length*) 
+ **Left** (*TextExpression*, *Length*) 
   
 **Left** 関数には次の引数があります。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
 | *TextExpression*  <br/> |文字列式。  <br/> |
-| *Length*  <br/> |は、返される*textexpression*の文字の数を指定する正の整数です。  <br/> |
+| *Length*  <br/> |*TextExpression* の文字数を指定する正の整数です。  <br/> |
    
 

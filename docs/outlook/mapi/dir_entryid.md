@@ -15,17 +15,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421236"
 ---
-# <a name="direntryid"></a>DIR_ENTRYID
+# <a name="dir_entryid"></a>DIR_ENTRYID
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ディレクトリエントリ id のプロパティについて説明します。
+ディレクトリ エントリ ID のプロパティについて説明します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |entryid  <br/> |
+|ヘッダー ファイル:  <br/> |entryid.h  <br/> |
    
 ```cpp
 #pragma pack(4)
@@ -40,37 +40,37 @@ typedef struct _dir_entryid
 #pragma pack()
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **abflags**
+ **abFlags**
   
-> オブジェクトについての情報を提供するフラグのビットマスク。 詳細については、 [ENTRYID](entryid.md)構造の**abflags**フィールドの説明を参照してください。 
+> オブジェクトを説明する情報を提供するフラグのビットマスク。 詳細については [、ENTRYID](entryid.md)構造体の **abFlags** フィールドの説明を参照してください。 
     
  **muid**
   
-> ストアプロバイダーを識別する GUID。
+> ストア プロバイダーを識別する GUID。
     
- **ulversion**
+ **ulVersion**
   
-> **DIR_ENTRYID**構造体のバージョン番号。 CONTAB_VERSION に設定する必要があります。 
+> この構造体の **バージョンDIR_ENTRYID** します。 この設定は、CONTAB_VERSION。 
     
- **ultype**
+ **ulType**
   
-> ディレクトリエントリ ID の種類を表す整数。 次のいずれかの値であることが必要です。
+> ディレクトリ エントリ ID の種類を表す整数。 これは、次のいずれかの値である必要があります。
     
 |**名前**|**説明**|
 |:-----|:-----|
-|CONTAB_ROOT  <br/> |MAPI アドレス帳のルートフォルダー。  <br/> |
+|CONTAB_ROOT  <br/> |MAPI アドレス帳のルート フォルダー。  <br/> |
 |CONTAB_SUBROOT  <br/> |MAPI アドレス帳のオブジェクトのルート フォルダー内に含まれるサブフォルダーです。  <br/> |
 |CONTAB_CONTAINER  <br/> |�A�h���X���̃R���e�i�[ �I�u�W�F�N�g�ł��B  <br/> |
    
  **muidID**
   
-> ログオンオブジェクトを識別する GUID。
+> ログオン オブジェクトを識別する GUID。
     
 ## <a name="remarks"></a>注釈
 
-**DIR_ENTRYID**と[CONTAB_ENTRYID](contab_entryid.md)の構造は同じですが、 **ultype**メンバーを除きます。 **ultype**メンバーの内容は、残りのフィールドに適した構造を決定します。 
+ulType **DIR_ENTRYID**[を](contab_entryid.md)CONTAB_ENTRYID、同じ構造を使用します。  ulType メンバーの **内容は** 、残りのフィールドに適した構造を決定します。 
   
 ## <a name="see-also"></a>関連項目
 

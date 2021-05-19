@@ -22,7 +22,7 @@ ms.locfileid: "33423469"
   
 ## <a name="syntax"></a>構文
 
-DEPENDSON (* * *cellref* * * [, * * *cellref2* * *,...]) 
+DEPENDSON(** *cellref* ** [, ** *cellref2 **,...])* 
   
 ### <a name="parameters"></a>パラメーター
 

@@ -1,5 +1,5 @@
 ---
-title: アドレス帳プロバイダーの必須機能
+title: アドレス帳プロバイダーに必要な機能
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,25 +15,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421397"
 ---
-# <a name="required-features-for-address-book-providers"></a>アドレス帳プロバイダーの必須機能
+# <a name="required-features-for-address-book-providers"></a>アドレス帳プロバイダーに必要な機能
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-アドレス帳プロバイダーは、一時または恒久、ローカルまたはリモートの、1つまたは複数のメッセージングシステムによって認識され、ディスクファイルまたはデータベーステーブル用にフォーマットされた受信者情報を処理できます。 アドレス帳プロバイダーが実装できるさまざまな機能があり、それにより、クライアントやその他のプロバイダーとの相互運用性が向上します。 ただし、いくつかの機能が必要です。
+アドレス帳プロバイダーは、一時的または永続的な、ローカルまたはリモートの受信者情報を操作し、1 つ以上のメッセージング システムで理解し、ディスク ファイルまたはデータベース テーブル用に書式設定できます。 アドレス帳プロバイダーが実装できるさまざまな機能があります。これにより、クライアントや他のプロバイダーとの相互運用性を向上させ、価値を高め、相互運用性を向上できます。 ただし、いくつかの機能が必要です。
   
 次の表では、すべてのアドレス帳プロバイダーに必要な機能と、それらを実装するために必要な手順について説明します。
   
 |**機能**|**実装方法**|
 |:-----|:-----|
-|セッションログオン  <br/> | エントリポイント関数を実装します。 詳細については、「[アドレス帳プロバイダーエントリポイント関数の実装](implementing-an-address-book-provider-entry-point-function.md)」を参照してください。  <br/>  [IABProvider:: Logon](iabprovider-logon.md)メソッドを実装します。 詳細については、「[アドレス帳プロバイダーのログオンとログオフの実装](implementing-address-book-provider-logon-and-logoff.md)」を参照してください。  <br/> |
-|セッションログオフ  <br/> |[IABProvider:: Shutdown](iabprovider-shutdown.md)メソッドを実装します。 詳細については、「[アドレス帳プロバイダーのログオンとログオフの実装](implementing-address-book-provider-logon-and-logoff.md)」を参照してください。  <br/> |
-|エントリ識別子を作成する  <br/> |**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティのサポートを提供します。 詳細については、「 [MAPI エントリ識別子](mapi-entry-identifiers.md)と[アドレス帳識別子](address-book-identifiers.md)」を参照してください。  <br/> |
-|状態テーブルに投稿する  <br/> | [imapistatus: imapistatus](imapistatusimapiprop.md)インターフェイスの適切なメソッドを実装します。 詳細については、「 [Status オブジェクトの実装](status-object-implementation.md)」を参照してください。  <br/>  必要な状態テーブルのプロパティをサポートします。 詳細については、「 [Status Tables](status-tables.md)」を参照してください。  <br/>  Call [imapisupport:: modifystatusrow](imapisupport-modifystatusrow.md)。  <br/> |
-|限定的な状態オブジェクトのサポートを提供する  <br/> | [imapistatus:: validatestate](imapistatus-validatestate.md)メソッドを実装します。  <br/>  他の**imapistatus**メソッドから MAPI_E_NO_SUPPORT を返します。  <br/> |
-|対話型およびプログラムによる構成のサポート  <br/> | メッセージサービスエントリポイント関数を実装します。  <br/>  表示テーブルを実装します。 詳細については、「表と[表示テーブルの実装](display-table-implementation.md)を[表示](display-tables.md)する」を参照してください。  <br/>  プロパティシートを実装するか、 [imapisupport::D oconfigpropsheet](imapisupport-doconfigpropsheet.md)メソッドを呼び出します。 詳細については、「[プロパティシートの実装](property-sheet-implementation.md)」を参照してください。  <br/> |
+|セッション ログオン  <br/> | エントリ ポイント関数を実装します。 詳細については、「アドレス帳 [プロバイダーエントリ ポイント関数の実装」を参照してください](implementing-an-address-book-provider-entry-point-function.md)。  <br/>  [IABProvider::Logon メソッドを実装](iabprovider-logon.md)します。 詳細については、「アドレス帳プロバイダー [のログオンとログオフの実装」を参照してください](implementing-address-book-provider-logon-and-logoff.md)。  <br/> |
+|セッション ログオフ  <br/> |[IABProvider::Shutdown メソッドを実装](iabprovider-shutdown.md)します。 詳細については、「アドレス帳プロバイダー [のログオンとログオフの実装」を参照してください](implementing-address-book-provider-logon-and-logoff.md)。  <br/> |
+|エントリ識別子の作成  <br/> |プロパティ ([PidTagEntryId](pidtagentryid-canonical-property.md) **)** PR_ENTRYIDサポートを提供します。 詳細については [、「MAPI エントリ識別子と](mapi-entry-identifiers.md) アドレス [帳識別子」を参照してください](address-book-identifiers.md)。  <br/> |
+|状態テーブルに投稿する  <br/> | [IMAPIStatus : IMAPIProp インターフェイスの適切なメソッドを実装](imapistatusimapiprop.md)します。 詳細については [、「Status Object Implementation」を参照してください](status-object-implementation.md)。  <br/>  必要な状態テーブルのプロパティをサポートします。 詳細については、「Status [Tables」を参照してください](status-tables.md)。  <br/>  [IMAPISupport::ModifyStatusRow を呼び出します](imapisupport-modifystatusrow.md)。  <br/> |
+|制限付き状態オブジェクトのサポートを提供する  <br/> | [IMAPIStatus::ValidateState メソッドを実装](imapistatus-validatestate.md)します。  <br/>  他MAPI_E_NO_SUPPORT **IMAPIStatus メソッドから値を** 返します。  <br/> |
+|対話型およびプログラムによる構成をサポートする  <br/> | メッセージ サービスエントリ ポイント関数を実装します。  <br/>  表示テーブルを実装します。 詳細については、「Display [Tables and Display Table](display-tables.md) [Implementation」を参照してください](display-table-implementation.md)。  <br/>  プロパティ シートを実装するか [、IMAPISupport::D oConfigPropsheet メソッドを呼び出](imapisupport-doconfigpropsheet.md) します。 詳細については、「プロパティ シートの [実装」を参照してください](property-sheet-implementation.md)。  <br/> |
    
-また、プロバイダーが受信者の作成をサポートしている場合は、作成テンプレートの一覧を指定する必要があります。 この一覧を提供するには、 [IABLogon:: getoneofftable](iablogon-getoneofftable.md)メソッドを実装して、プロバイダーがサポートするすべてのテンプレートと、各コンテナーの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを使用して、 **PR_CREATE_TEMPLATES** [を開きます。PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) プロパティと、コンテナーでサポートされているすべてのテンプレートを含みます。 詳細については、「 [1 回限りのテーブルの実装](implementing-one-off-tables.md)」を参照してください。
+また、プロバイダーが受信者の作成をサポートしている場合は、作成テンプレートの一覧を指定する必要があります。 [IABLogon::GetOneOffTable](iablogon-getoneofftable.md)メソッドを実装して、プロバイダーでサポートされているテンプレートと、各コンテナーの [IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを実装して **、PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) プロパティを開き、コンテナーでサポートされているテンプレートを含め、このリストを指定します。 詳細については、「テーブルの実装 [」をOne-Offしてください](implementing-one-off-tables.md)。
   
 

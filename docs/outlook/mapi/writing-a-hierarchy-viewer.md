@@ -21,34 +21,34 @@ ms.locfileid: "33421131"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-階層ビューアーは、フォルダーとアドレス帳のコンテナー階層テーブルを表示するために使用されるユーザーインターフェイスコンポーネントです。 階層の閲覧者は、さまざまなレベルで階層のメンバーを表示したり、必要に応じて各レベルを拡張して縮小したりできます。
+階層ビューアーは、フォルダーおよびアドレス帳コンテナー階層テーブルの表示に使用されるユーザー インターフェイス コンポーネントです。 階層ビューアーは、階層のメンバーを異なるレベルで表示し、各レベルをオンデマンドで拡張および契約できます。
   
-container プロパティ**PR_DEPTH** ([PidTagDepth](pidtagdepth-canonical-property.md)) は、階層のメンバーが表示されるレベルを制御します。 トップレベルのアドレス帳のコンテナーまたはフォルダーを表すエントリは、 **PR_DEPTH**プロパティが0に設定されています。 このプロパティの値は、シーケンシャルレベルのエントリに対して順次インクリメントされます。 つまり、ユーザーが最上位のコンテナーを選択して展開するときに、 **PR_DEPTH**が1に設定されているすべてのコンテナーを表示します。 ユーザーがこれらのサブコンテナーの1つを展開すると、 **PR_DEPTH**が2に設定されているコンテナーが表示されます。 
+container プロパティ **(PR_DEPTH** ([PidTagDepth)](pidtagdepth-canonical-property.md)は、階層メンバーが表示されるレベルを制御します。 トップ レベルのアドレス帳コンテナーまたはフォルダーを表すエントリのプロパティPR_DEPTH **0** に設定されます。 このプロパティの値は、順次レベルのエントリに対して順次増分されます。 つまり、ユーザーが展開するトップ レベル のコンテナーを選択すると、すべてのコンテナーが1 に設定PR_DEPTH表示されます。 ユーザーがこれらのサブコンテナーの 1 **つ** を展開すると、コンテナーを 2 PR_DEPTHに設定して表示します。 
   
-階層ビューアーでは、異なる深さの範囲がサポートしています。 ビューアーを1つまたは2つのレベルのみに制限することも、複数のレベルをサポートすることもできます。拡張性の高い階層を表示する場合は、優先度を設定することができます。 
+階層ビューアーは、さまざまな範囲の深度をサポートします。 閲覧者を 1 つまたは 2 つのレベルに制限するか、階層の拡大が優先される場合は複数のレベルをサポートできます。 
   
-アドレス帳には、アドレス帳の最上位のコンテナーの階層ビューアーがあります。 
+アドレス帳は、アドレス帳内のトップ レベル コンテナーの階層ビューアーを提供します。 
   
  **アドレス帳階層テーブルにアクセスするには**
   
-1. [IAddrBook:: openentry](iaddrbook-openentry.md)を呼び出し、null エントリ識別子を渡して、アドレス帳のルートコンテナーを開きます。
+1. [IAddrBook::OpenEntry](iaddrbook-openentry.md)を呼び出し、null エントリ識別子を渡して、アドレス帳のルート コンテナーを開きます。
     
-2. ルートコンテナーの[IMAPIContainer:: GetHierarchyTable](imapicontainer-gethierarchytable.md)メソッドを呼び出して、MAPI アドレス帳の階層テーブルにアクセスします。 
+2. MAPI アドレス帳の階層テーブルにアクセスするには、ルート コンテナーの [IMAPIContainer::GetHierarchyTable](imapicontainer-gethierarchytable.md) メソッドを呼び出します。 
     
- **既定のメッセージストアの階層テーブルにアクセスするには**
+ **既定のメッセージ ストアの階層テーブルにアクセスするには**
   
-1. 呼び出し[imapisession:: getmsgstorestable](imapisession-getmsgstorestable.md)メッセージストアテーブルにアクセスできます。 
+1. [IMAPISession::GetMsgStoresTable](imapisession-getmsgstorestable.md)を呼び出して、メッセージ ストア テーブルにアクセスします。 
     
-2. [spropertyrestriction](spropertyrestriction.md)構造を使用して制限を構築し、 **PR_DEFAULT_STORE** ([PidTagDefaultStore](pidtagdefaultstore-canonical-property.md)) プロパティが TRUE に設定されている行だけにテーブルを制限します。 
+2. [SPropertyRestriction](spropertyrestriction.md)構造体を使用して制限を作成し、テーブルを PR_DEFAULT_STORE ([PidTagDefaultStore](pidtagdefaultstore-canonical-property.md)) プロパティが **TRUE** に設定されている行にのみ制限します。 
     
-3. [IMAPITable:: FindRow](imapitable-findrow.md)を呼び出し、 **spropertyrestriction**を渡して、既定のメッセージストアを表す行を見つけます。 
+3. [IMAPITable::FindRow](imapitable-findrow.md)を呼び出し **、SPropertyRestriction** を渡して、既定のメッセージ ストアを表す行を探します。 
     
-4. メッセージストアテーブルの既定のメッセージストアの行から**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティを渡して、 [imapisession:: openentry](imapisession-openentry.md)を呼び出します。
+4. [IMAPISession::OpenEntry](imapisession-openentry.md)を呼び出し **、PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティをメッセージ ストア テーブルの既定のメッセージ ストアの行から渡します。
     
-5. メッセージストアの[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出して、 **PR_IPM_SUBTREE_ENTRYID** ([PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md)) プロパティを取得します。
+5. メッセージ ストアの [IMAPIProp::GetProps](imapiprop-getprops.md) メソッドを呼び出して、PR_IPM_SUBTREE_ENTRYID **(** [PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md)) プロパティを取得します。
     
-6. メッセージストアの[IMsgStore:: openentry](imsgstore-openentry.md)メソッドを呼び出して、 **PR_IPM_SUBTREE_ENTRYID**プロパティを渡し、メッセージストアの IPM サブツリーのルートフォルダーを開きます。 
+6. メッセージ ストアの [IMsgStore::OpenEntry](imsgstore-openentry.md) メソッドを呼び出し **、PR_IPM_SUBTREE_ENTRYID** プロパティを渡して、メッセージ ストアの IPM サブツリーのルート フォルダーを開きます。 
     
-7. IPM ルートフォルダーの[IMAPIContainer:: GetHierarchyTable](imapicontainer-gethierarchytable.md)メソッドを呼び出して、その階層テーブルにアクセスします。 
+7. IPM ルート フォルダーの [IMAPIContainer::GetHierarchyTable](imapicontainer-gethierarchytable.md) メソッドを呼び出して、その階層テーブルにアクセスします。 
     
 

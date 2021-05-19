@@ -20,20 +20,20 @@ ms.locfileid: "33426381"
 > [!IMPORTANT]
 > マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
-- [データブロック (Access カスタム web アプリ)](data-blocksaccess-custom-web-app.md)
+- [データ ブロック (Access カスタム Web アプリ)](data-blocksaccess-custom-web-app.md)
     
-- [データアクション (Access カスタム web アプリ)](data-actions-access-custom-web-app.md)
+- [データ アクション (Access カスタム Web アプリ)](data-actions-access-custom-web-app.md)
     
-- [データ入力操作 (Access カスタム web アプリ)](data-entry-operations-access-custom-web-app.md)
+- [データ入力操作 (Access カスタム Web アプリ)](data-entry-operations-access-custom-web-app.md)
     
-- [Database オブジェクト (Access カスタム web アプリ)](database-objects-access-custom-web-app.md)
+- [データベース オブジェクト (Access カスタム Web アプリ)](database-objects-access-custom-web-app.md)
     
-- [Filter/query/search (Access カスタム web アプリ)](filter-query-search-access-custom-web-app.md)
+- [フィルター/クエリ/検索 (Access カスタム Web アプリ)](filter-query-search-access-custom-web-app.md)
     
-- [マクロコマンド (Access カスタム web アプリ)](macro-commands-access-custom-web-app.md)
+- [マクロ コマンド (Access カスタム Web アプリ)](macro-commands-access-custom-web-app.md)
     
-- [プログラムフロー (Access カスタム web アプリ)](program-flow-access-custom-web-app.md)
+- [プログラム フロー (Access カスタム Web アプリ)](program-flow-access-custom-web-app.md)
     
-- [ユーザーインターフェイスコマンド (Access カスタム web アプリ)](user-interface-commands-access-custom-web-app.md)
+- [ユーザー インターフェイス コマンド (Access カスタム Web アプリ)](user-interface-commands-access-custom-web-app.md)
     
 

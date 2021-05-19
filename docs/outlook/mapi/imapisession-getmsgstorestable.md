@@ -1,5 +1,5 @@
 ---
-title: imapisessiongetmsgstorestable
+title: IMAPISessionGetMsgStoresTable
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33428138"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-セッションプロファイル内のすべてのメッセージストアに関する情報を含むメッセージストアテーブルへのアクセスを提供します。
+セッション プロファイル内のすべてのメッセージ ストアに関する情報を含むメッセージ ストア テーブルへのアクセスを提供します。
   
 ```cpp
 HRESULT GetMsgStoresTable(
@@ -38,15 +38,15 @@ HRESULT GetMsgStoresTable(
 
  _ulFlags_
   
-> 順番文字列の列の形式を決定するフラグのビットマスク。 次のフラグを設定できます。
+> [in]文字列である列の形式を決定するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 文字列列は Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列列は ANSI 形式になります。
+> 文字列列は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列列は ANSI 形式になります。
     
- _lpptable_
+ _lppTable_
   
-> 読み上げメッセージストアテーブルへのポインターへのポインター。
+> [out]メッセージ ストア テーブルへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -56,19 +56,19 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> MAPI_UNICODE フラグが設定されていて、セッションは UNICODE をサポートしていません。
+> このMAPI_UNICODEが設定され、セッションは Unicode をサポートしていない。
     
 ## <a name="remarks"></a>注釈
 
-**imapisession:: getmsgstorestable**メソッドは、メッセージストアテーブルへのポインターを取得します。このテーブルは、プロファイル内の開いている各メッセージストアに関する情報を含む MAPI によって保持されます。 
+**IMAPISession::GetMsgStoresTable** メソッドは、プロファイル内の開いている各メッセージ ストアに関する情報を含む MAPI によって管理されるテーブルであるメッセージ ストア テーブルへのポインターを取得します。 
   
-メッセージストアテーブルの必須およびオプションの列の完全な一覧については、「 [message store Tables](message-store-tables.md)」を参照してください。 
+メッセージ ストア テーブルの必須列と省略可能列の完全な一覧については、「メッセージ ストア テーブル」 [を参照してください](message-store-tables.md)。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-MAPI は、セッション中に変更が発生するたびにメッセージストアテーブルを更新するので、メッセージストアテーブルの**Advise**メソッドを呼び出して、これらの変更について通知されるように登録します。 変更できるのは、新しいメッセージストアの追加、既存のストアの削除、および既定のストアに対する変更です。 
+MAPI は、変更が発生するたびにセッション中にメッセージ ストア テーブルを更新しますので、メッセージ ストア テーブルの **Advise** メソッドを呼び出して、これらの変更の通知を受け取る登録を行います。 可能な変更には、新しいメッセージ ストアの追加、既存のストアの削除、既定のストアへの変更が含まれます。 
   
-_ulflags_パラメーターの MAPI_UNICODE フラグを設定すると、 [imapitable:: querycolumns](imapitable-querycolumns.md)および[imapitable:: QueryRows](imapitable-queryrows.md)メソッドから返される列の形式に影響します。 このフラグは、 [IMAPITable:: querysortorder](imapitable-querysortorder.md)メソッドによって返される並べ替え順序で、プロパティの種類を制御することもできます。 
+_ulFlags_ パラメーター MAPI_UNICODEフラグを設定すると [、IMAPITable::QueryColumns](imapitable-querycolumns.md)および [IMAPITable::QueryRows](imapitable-queryrows.md)メソッドから返される列の形式に影響します。 このフラグは [、IMAPITable::QuerySortOrder](imapitable-querysortorder.md) メソッドによって返される並べ替え順序のプロパティの種類も制御します。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -76,7 +76,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|maindlg .cpp  <br/> |CMainDlg:: onopenmessagestoretable  <br/> |mfcmapi は、 **imapisession:: getmsgstorestable**メソッドを使用して、メッセージストアテーブルを取得して、mfcmapi のメインダイアログボックスに表示できるようにします。  <br/> |
+|MainDlg.cpp  <br/> |CMainDlg::OnOpenMessageStoreTable  <br/> |MFCMAPI は **IMAPISession::GetMsgStoresTable** メソッドを使用してメッセージ ストア テーブルを取得し、MFCMAPI のメイン ダイアログ ボックスで表示できます。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -101,5 +101,5 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[メッセージストアテーブル](message-store-tables.md)
+[メッセージ ストア テーブル](message-store-tables.md)
 

@@ -36,21 +36,21 @@ HRESULT SetLockState(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpmessage_
+ _lpMessage_
   
-> 順番ロックまたはロック解除するメッセージへのポインター。
+> [in]ロックまたはロック解除を行うメッセージへのポインター。
     
  _ulLockState_
   
-> 順番メッセージをロックまたはロック解除する必要があるかどうかを示す値。 次のいずれかの値が有効です。
+> [in]メッセージをロックまたはロック解除するかどうかを示す値。 次のいずれかの値が有効です。
     
 MSG_LOCKED 
   
-> メッセージをロックする必要があります。 
+> メッセージはロックされている必要があります。 
     
 MSG_UNLOCKED 
   
-> メッセージをロック解除する必要があります。
+> メッセージのロックを解除する必要があります。
     
 ## <a name="return-value"></a>戻り値
 
@@ -60,15 +60,15 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-**IMsgStore:: SetLockState**メソッドは、メッセージのロックまたはロック解除を行います。 **SetLockState**は、メッセージの送信中に MAPI スプーラーによってのみ呼び出すことができます。 
+**IMsgStore::SetLockState** メソッドは、メッセージをロックまたはロック解除します。 **SetLockState** は、メッセージの送信中に MAPI スプーラーによってのみ呼び出されます。 
   
-通常、mapi スプーラーは、メッセージをロックするために**SetLockState**を呼び出した場合、最も古いメッセージのみをロックします (つまり、送信する MAPI スプーラーの次のメッセージがキューに入れられます)。 キュー内の最も古いメッセージが一時的に使用できないトランスポートプロバイダーを待機していて、キュー内の次のメッセージが別のトランスポートプロバイダーを使用している場合、MAPI スプーラーは後のメッセージの処理を開始できます。 **SetLockState**を使用してメッセージをロックすることで、処理が開始されます。
+通常、MAPI スプーラーが **SetLockState** を呼び出してメッセージをロックすると、最も古いメッセージ (つまり、MAPI スプーラーが送信するためにキューに入っている次のメッセージ) だけがロックされます。 キュー内の最も古いメッセージが一時的に使用できないトランスポート プロバイダーを待機し、キュー内の次のメッセージが別のトランスポート プロバイダーを使用している場合、MAPI スプーラーは後のメッセージの処理を開始できます。 SetLockState を使用して、そのメッセージをロックして処理 **を開始します**。
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-_ulLockState_パラメーターを MSG_LOCKED に設定して MAPI スプーラーが**SetLockState**を呼び出した後、メッセージの送信を取り消すには、 [IMsgStore:: abortsubmit](imsgstore-abortsubmit.md)メソッドの呼び出しは失敗する必要があります。 
+mapi スプーラーが **setLockState** パラメーターを MSG_LOCKED に設定して  _SetLockState_ を呼び出した後、メッセージの送信を取り消す [IMsgStore::AbortSubmit](imsgstore-abortsubmit.md) メソッドを呼び出して失敗する必要があります。 
   
-**SetLockState**の実装でメッセージの[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出して、 **SetLockState**呼び出しを受信する前にメッセージに加えられた変更が保存されるようにします。 
+SetLockState の実装でメッセージの [IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドを呼び出して **、SetLockState** 呼び出しが受信される前にメッセージに加えた変更が保存されます。 
   
 ## <a name="see-also"></a>関連項目
 

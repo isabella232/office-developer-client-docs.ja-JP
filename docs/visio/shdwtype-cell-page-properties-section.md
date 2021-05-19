@@ -22,13 +22,13 @@ ms.locfileid: "33424099"
   
 |**値**|**説明**|**オートメーション定数**|
 |:-----|:-----|:-----|
-| 1   <br/> | 単純  <br/> |**visFSTSimple** <br/> |
-| 2   <br/> | 斜体  <br/> |**visFSTOblique** <br/> |
-|3   <br/> |内側  <br/> |**visFSTInner** <br/> |
+| 1  <br/> | シンプル  <br/> |**visFSTSimple** <br/> |
+| 2  <br/> | 斜め  <br/> |**visFSTOblique** <br/> |
+|3  <br/> |Inner  <br/> |**visFSTInner** <br/> |
    
 ## <a name="remarks"></a>注釈
 
- このセルに記述されている影の種類は、[shapeshdwtype] セル (ページ上の個々の図形の影の種類) が [ページの既定値 (**visFSTPageDefault** )] に設定されている場合に使用します。 
+ このセルで説明するシャドウの種類は、ShapeShdwType セル (ページ上の個々の図形のシャドウ の種類) が Page Default **(visFSTPageDefault)** に設定されている場合に使用されます。 
   
 シンプルな影は、ユーザー インターフェイス (UI) 内では "オフセット" と表示されます。 シンプルな影は、その図形の下の平面に影を落としているように見えます。 斜体の影は UI で "斜体" と表示され、図形が直立している平面に影を落としているように見えます。 
   
@@ -38,7 +38,7 @@ ms.locfileid: "33424099"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [shdwtype]  <br/> |
+| セル名 :  <br/> | ShdwType  <br/> |
    
 プログラムから、インデックスによって [ShapeShdwOffsetX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

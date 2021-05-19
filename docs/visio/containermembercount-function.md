@@ -25,7 +25,7 @@ ms.locfileid: "33426668"
   
 ## <a name="syntax"></a>構文
 
-CONTAINERMEMBERCOUNT ()
+CONTAINERMEMBERCOUNT()
   
 ### <a name="return-value"></a>戻り値
 

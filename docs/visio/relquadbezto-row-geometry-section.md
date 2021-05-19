@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5ae57707-5a50-43f0-8c78-516790b5034e
-description: 図形の幅と高さに相対する2次ベジエ曲線の x 座標と y 座標、および図形の幅と高さに相対する曲線のコントロールポイントの x 座標と y 座標を格納します。
+description: 図形の幅と高さに対する 2 次ベジエ曲線の端点の x 座標と y 座標、および図形の幅と高さを基準にした曲線のコントロール ポイントの x 座標と y 座標を格納します。
 ms.openlocfilehash: f517fa006c6630a26e9162adfbb1be2139487e63
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,18 +16,18 @@ ms.locfileid: "33423357"
 ---
 # <a name="relquadbezto-row-geometry-section"></a>[RelQuadBezTo] 行 ([図形座標] セクション)
 
-図形の幅と高さに相対する2次ベジエ曲線の*x*座標と*y*座標、および図形の幅と高さに相対する曲線のコントロールポイントの*x*座標と*y*座標を格納します。 
+図形の幅と高さに対する 2 次ベジエ曲線の端点の x 座標と *y* 座標、および図形の幅と高さを基準にした曲線のコントロール ポイントの *x* 座標と *y* 座標を格納します。 
   
 > [!NOTE]
-> [**RelQuadBezTo**] 行は、.vsdx、.vsdm、.vstx、.vstm、.vssx、および .vssm のファイル形式でのみ保存できます。 Visio 2003-2010 形式でファイルを保存すると、 **[relquadbezto]** 行は[[nurbsto]](nurbsto-row-geometry-section.md)の行に変換されます。 
+> [**RelQuadBezTo**] 行は、.vsdx、.vsdm、.vstx、.vstm、.vssx、および .vssm のファイル形式でのみ保存できます。 ファイルを 2003 から 2010 の Visio 形式に保存すると **、RelQuadBezTo** 行は [NURBSTo](nurbsto-row-geometry-section.md)行に変換されます。 
   
 [**RelQuadBezTo**] 行には次のセルが含まれます。 
   
 |**Cell**|**説明**|
 |:-----|:-----|
-|[X](x-cell-geometry-section.md) <br/> |図形の幅を基準にして、2次ベジエ曲線の最後の頂点に対する*x*座標です。  <br/> |
-|[Y](y-cell-geometry-section.md) <br/> |図形の高さを基準にした、2次ベジエ曲線の最後の頂点に対する*y*座標です。  <br/> |
-|[A](a-cell-geometry-section.md) <br/> |図形の幅を基準にして、曲線のコントロールポイントの*x*座標を指定します。弧の点を指定します。コントロールポイントは、円弧の始点と終点の間の中間点を中心に配置されます。  <br/> |
-|[B](b-cell-geometry-section.md) <br/> |図形の高さを基準にして、曲線のコントロールポイントの*y*座標です。  <br/> |
+|[X](x-cell-geometry-section.md) <br/> |図形  *の*  幅に対する 2 次ベジエ曲線の終了頂点の x 座標。  <br/> |
+|[Y](y-cell-geometry-section.md) <br/> |図形  *の高*  さを基準にした 2 次ベジエ曲線の終了頂点の y 座標。  <br/> |
+|[A](a-cell-geometry-section.md) <br/> |図形  *の*  幅を基準にした曲線のコントロール ポイントの x 座標。円弧上のポイント。コントロール ポイントは、円弧の開始頂点と終了頂点の約半分の位置に最適です。  <br/> |
+|[B](b-cell-geometry-section.md) <br/> |図形  *の高*  さを基準にした曲線のコントロール ポイントの y 座標。  <br/> |
    
 

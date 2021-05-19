@@ -25,11 +25,11 @@ ms.locfileid: "33426934"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-2つの[MAPIUID](mapiuid.md)構造体をテストして、同じ識別子を含んでいるかどうかを確認します。 
+2 [つの MAPIUID](mapiuid.md) 構造体をテストして、同じ識別子が含まれているかどうかを判断します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |**MAPIUID** <br/> |
    
 ```cpp
@@ -40,17 +40,17 @@ IsEqualMAPIUID(lpuid1, lpuid2)
 
  _lpuid1_
   
-> テストする最初の**MAPIUID**構造体へのポインター。 
+> テストする最初 **の MAPIUID** 構造体へのポインター。 
     
  _lpuid2_
   
-> テストする2番目の**MAPIUID**構造体へのポインター。 
+> テストする **2 番目の MAPIUID** 構造体へのポインター。 
     
 ## <a name="remarks"></a>注釈
 
-**IsEqualMAPIUID**マクロは、2つの**MAPIUID**構造体に同じ識別子が含まれている場合は TRUE を返し、そうでない場合は FALSE を返します。 
+**IsEqualMAPIUID** マクロは、2 つの **MAPIUID** 構造体に同じ識別子が含まれている場合は TRUE を返し、指定しない場合は FALSE を返します。 
   
-**IsEqualMAPIUID**マクロを使用するには、ヘッダーファイルのメモリを含める必要があります。 
+**IsEqualMAPIUID** マクロでは、ヘッダー ファイル Memory.h を含める必要があります。 
   
 ## <a name="see-also"></a>関連項目
 
