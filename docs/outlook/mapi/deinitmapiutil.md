@@ -19,36 +19,36 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33427347"
 ---
-# <a name="deinitmapiutil"></a><span data-ttu-id="9877a-103">DeinitMapiUtil</span><span class="sxs-lookup"><span data-stu-id="9877a-103">DeinitMapiUtil</span></span>
+# <a name="deinitmapiutil"></a><span data-ttu-id="192cf-103">DeinitMapiUtil</span><span class="sxs-lookup"><span data-stu-id="192cf-103">DeinitMapiUtil</span></span>
 
   
   
-<span data-ttu-id="9877a-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="9877a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="192cf-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="192cf-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="9877a-105">[ScInitMapiUtil](scinitmapiutil.md)関数または暗黙的に[MAPIInitialize](mapiinitialize.md)関数によって明示的に呼び出されたユーティリティ関数を解放します。</span><span class="sxs-lookup"><span data-stu-id="9877a-105">Releases utility functions called explicitly by the [ScInitMapiUtil](scinitmapiutil.md) function or implicitly by the [MAPIInitialize](mapiinitialize.md) function.</span></span> 
+<span data-ttu-id="192cf-105">[ScInitMapiUtil](scinitmapiutil.md)関数によって明示的に、または[MAPIInitialize](mapiinitialize.md)関数によって暗黙的に呼び出されるユーティリティ関数を解放します。</span><span class="sxs-lookup"><span data-stu-id="192cf-105">Releases utility functions called explicitly by the [ScInitMapiUtil](scinitmapiutil.md) function or implicitly by the [MAPIInitialize](mapiinitialize.md) function.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="9877a-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="9877a-106">Header file:</span></span>  <br/> |<span data-ttu-id="9877a-107">Mapiutil</span><span class="sxs-lookup"><span data-stu-id="9877a-107">Mapiutil.h</span></span>  <br/> |
-|<span data-ttu-id="9877a-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="9877a-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="9877a-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="9877a-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="9877a-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="9877a-110">Called by:</span></span>  <br/> |<span data-ttu-id="9877a-111">クライアント アプリケーション</span><span class="sxs-lookup"><span data-stu-id="9877a-111">Client applications</span></span>  <br/> |
+|<span data-ttu-id="192cf-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="192cf-106">Header file:</span></span>  <br/> |<span data-ttu-id="192cf-107">Mapiutil.h</span><span class="sxs-lookup"><span data-stu-id="192cf-107">Mapiutil.h</span></span>  <br/> |
+|<span data-ttu-id="192cf-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="192cf-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="192cf-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="192cf-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="192cf-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="192cf-110">Called by:</span></span>  <br/> |<span data-ttu-id="192cf-111">クライアント アプリケーション</span><span class="sxs-lookup"><span data-stu-id="192cf-111">Client applications</span></span>  <br/> |
    
 ```cpp
 VOID DeinitMapiUtil( void );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="9877a-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="9877a-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="192cf-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="192cf-112">Parameters</span></span>
 
-<span data-ttu-id="9877a-113">なし</span><span class="sxs-lookup"><span data-stu-id="9877a-113">None</span></span> 
+<span data-ttu-id="192cf-113">なし</span><span class="sxs-lookup"><span data-stu-id="192cf-113">None</span></span> 
   
-## <a name="return-value"></a><span data-ttu-id="9877a-114">戻り値</span><span class="sxs-lookup"><span data-stu-id="9877a-114">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="192cf-114">戻り値</span><span class="sxs-lookup"><span data-stu-id="192cf-114">Return value</span></span>
 
-<span data-ttu-id="9877a-115">なし</span><span class="sxs-lookup"><span data-stu-id="9877a-115">None</span></span> 
+<span data-ttu-id="192cf-115">なし</span><span class="sxs-lookup"><span data-stu-id="192cf-115">None</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="9877a-116">注釈</span><span class="sxs-lookup"><span data-stu-id="9877a-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="192cf-116">注釈</span><span class="sxs-lookup"><span data-stu-id="192cf-116">Remarks</span></span>
 
-<span data-ttu-id="9877a-117">**DeinitMapiUtil**関数は、 [ScInitMapiUtil](scinitmapiutil.md)または[MAPIInitialize](mapiinitialize.md)を使用して初期化された関数を解放します。</span><span class="sxs-lookup"><span data-stu-id="9877a-117">The **DeinitMapiUtil** function release functions initialized with [ScInitMapiUtil](scinitmapiutil.md) or [MAPIInitialize](mapiinitialize.md).</span></span> 
+<span data-ttu-id="192cf-117">**DeinitMapiUtil 関数は**[、ScInitMapiUtil](scinitmapiutil.md)または [MAPIInitialize で初期化された関数を解放します](mapiinitialize.md)。</span><span class="sxs-lookup"><span data-stu-id="192cf-117">The **DeinitMapiUtil** function release functions initialized with [ScInitMapiUtil](scinitmapiutil.md) or [MAPIInitialize](mapiinitialize.md).</span></span> 
   
-<span data-ttu-id="9877a-118">**ScInitMapiUtil**によって呼び出される関数の使用が完了したら、 **DeinitMapiUtil**を明示的に呼び出して解放する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9877a-118">When use of the functions called by **ScInitMapiUtil** is complete, **DeinitMapiUtil** must be explicitly called to release them.</span></span> <span data-ttu-id="9877a-119">これに対して、 [MAPIUninitialize](mapiuninitialize.md)は暗黙的に**DeinitMapiUtil**を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="9877a-119">In contrast, [MAPIUninitialize](mapiuninitialize.md) implicitly calls **DeinitMapiUtil**.</span></span> 
+<span data-ttu-id="192cf-118">**ScInitMapiUtil** によって呼び出される関数の使用が完了したら **、DeinitMapiUtil** を明示的に呼び出して解放する必要があります。</span><span class="sxs-lookup"><span data-stu-id="192cf-118">When use of the functions called by **ScInitMapiUtil** is complete, **DeinitMapiUtil** must be explicitly called to release them.</span></span> <span data-ttu-id="192cf-119">これに対し [、MAPIUninitialize は](mapiuninitialize.md) **DeinitMapiUtil を暗黙的に呼び出します**。</span><span class="sxs-lookup"><span data-stu-id="192cf-119">In contrast, [MAPIUninitialize](mapiuninitialize.md) implicitly calls **DeinitMapiUtil**.</span></span> 
   
 

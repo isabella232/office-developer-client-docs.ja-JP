@@ -15,17 +15,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424911"
 ---
-# <a name="implementing-folders-in-message-stores"></a><span data-ttu-id="e57c8-103">���[���̕ۑ��ꏊ�Ńt�H���_�[��������܂��B</span><span class="sxs-lookup"><span data-stu-id="e57c8-103">Implementing Folders in Message Stores</span></span>
+# <a name="implementing-folders-in-message-stores"></a><span data-ttu-id="99b36-103">���[���̕ۑ��ꏊ�Ńt�H���_�[��������܂��B</span><span class="sxs-lookup"><span data-stu-id="99b36-103">Implementing Folders in Message Stores</span></span>
 
   
   
-<span data-ttu-id="e57c8-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="e57c8-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="99b36-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="99b36-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="e57c8-p101">A great deal of the information that relates to message store provider support for folders is covered in [MAPI Folders](mapi-folders.md). You should be familiar with that information before attempting to implement a message store provider. The [MAPI Folders](mapi-folders.md) section is heavily oriented to the MAPI client's perspective; this topic covers additional information that is important from the message store provider's point of view.</span><span class="sxs-lookup"><span data-stu-id="e57c8-p101">A great deal of the information that relates to message store provider support for folders is covered in [MAPI Folders](mapi-folders.md). You should be familiar with that information before attempting to implement a message store provider. The [MAPI Folders](mapi-folders.md) section is heavily oriented to the MAPI client's perspective; this topic covers additional information that is important from the message store provider's point of view.</span></span> 
+<span data-ttu-id="99b36-p101">A great deal of the information that relates to message store provider support for folders is covered in [MAPI Folders](mapi-folders.md). You should be familiar with that information before attempting to implement a message store provider. The [MAPI Folders](mapi-folders.md) section is heavily oriented to the MAPI client's perspective; this topic covers additional information that is important from the message store provider's point of view.</span><span class="sxs-lookup"><span data-stu-id="99b36-p101">A great deal of the information that relates to message store provider support for folders is covered in [MAPI Folders](mapi-folders.md). You should be familiar with that information before attempting to implement a message store provider. The [MAPI Folders](mapi-folders.md) section is heavily oriented to the MAPI client's perspective; this topic covers additional information that is important from the message store provider's point of view.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="e57c8-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="e57c8-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="99b36-108">関連項目</span><span class="sxs-lookup"><span data-stu-id="99b36-108">See also</span></span>
 
 
 
-<span data-ttu-id="e57c8-109">[���b�Z�[�W�̃X�g�A�̋@�[](message-store-features.md)(message-store-features.md)</span><span class="sxs-lookup"><span data-stu-id="e57c8-109">[Message Store Features](message-store-features.md)</span></span>
+<span data-ttu-id="99b36-109">[���b�Z�[�W�̃X�g�A�̋@�[](message-store-features.md)(message-store-features.md)</span><span class="sxs-lookup"><span data-stu-id="99b36-109">[Message Store Features](message-store-features.md)</span></span>
 

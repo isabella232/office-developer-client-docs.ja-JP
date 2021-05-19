@@ -19,13 +19,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33425604"
 ---
-# <a name="imapitablegetrowcount"></a><span data-ttu-id="bb39c-103">IMAPITable::GetRowCount</span><span class="sxs-lookup"><span data-stu-id="bb39c-103">IMAPITable::GetRowCount</span></span>
+# <a name="imapitablegetrowcount"></a><span data-ttu-id="f1f6b-103">IMAPITable::GetRowCount</span><span class="sxs-lookup"><span data-stu-id="f1f6b-103">IMAPITable::GetRowCount</span></span>
 
   
   
-<span data-ttu-id="bb39c-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="bb39c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="f1f6b-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f1f6b-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="bb39c-105">テーブル内の行の総数を返します。</span><span class="sxs-lookup"><span data-stu-id="bb39c-105">Returns the total number of rows in the table.</span></span> 
+<span data-ttu-id="f1f6b-105">テーブル内の行の総数を返します。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-105">Returns the total number of rows in the table.</span></span> 
   
 ```cpp
 HRESULT GetRowCount(
@@ -34,72 +34,72 @@ ULONG FAR * lpulCount
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="bb39c-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="bb39c-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="f1f6b-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f1f6b-106">Parameters</span></span>
 
- <span data-ttu-id="bb39c-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="bb39c-107">_ulFlags_</span></span>
+ <span data-ttu-id="f1f6b-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="f1f6b-107">_ulFlags_</span></span>
   
-> <span data-ttu-id="bb39c-108">予約語0である必要があります。</span><span class="sxs-lookup"><span data-stu-id="bb39c-108">Reserved; must be zero.</span></span>
+> <span data-ttu-id="f1f6b-108">予約済み。は 0 である必要があります。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-108">Reserved; must be zero.</span></span>
     
- <span data-ttu-id="bb39c-109">_lルー count_</span><span class="sxs-lookup"><span data-stu-id="bb39c-109">_lpulCount_</span></span>
+ <span data-ttu-id="f1f6b-109">_lpulCount_</span><span class="sxs-lookup"><span data-stu-id="f1f6b-109">_lpulCount_</span></span>
   
-> <span data-ttu-id="bb39c-110">読み上げ表の行数へのポインターを指定します。</span><span class="sxs-lookup"><span data-stu-id="bb39c-110">[out] Pointer to the number of rows in the table.</span></span>
+> <span data-ttu-id="f1f6b-110">[out]テーブル内の行数へのポインター。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-110">[out] Pointer to the number of rows in the table.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="bb39c-111">戻り値</span><span class="sxs-lookup"><span data-stu-id="bb39c-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="f1f6b-111">戻り値</span><span class="sxs-lookup"><span data-stu-id="f1f6b-111">Return value</span></span>
 
-<span data-ttu-id="bb39c-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="bb39c-112">S_OK</span></span> 
+<span data-ttu-id="f1f6b-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="f1f6b-112">S_OK</span></span> 
   
-> <span data-ttu-id="bb39c-113">行数が正常に返されました。</span><span class="sxs-lookup"><span data-stu-id="bb39c-113">The row count was successfully returned.</span></span>
+> <span data-ttu-id="f1f6b-113">行数が正常に返されました。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-113">The row count was successfully returned.</span></span>
     
-<span data-ttu-id="bb39c-114">MAPI_E_BUSY</span><span class="sxs-lookup"><span data-stu-id="bb39c-114">MAPI_E_BUSY</span></span> 
+<span data-ttu-id="f1f6b-114">MAPI_E_BUSY</span><span class="sxs-lookup"><span data-stu-id="f1f6b-114">MAPI_E_BUSY</span></span> 
   
-> <span data-ttu-id="bb39c-115">別の操作が進行中であるため、行カウントの取得操作を開始できません。</span><span class="sxs-lookup"><span data-stu-id="bb39c-115">Another operation is in progress that prevents the row count retrieval operation from starting.</span></span> <span data-ttu-id="bb39c-116">進行中の操作が完了することを許可するか、停止する必要があります。</span><span class="sxs-lookup"><span data-stu-id="bb39c-116">Either the operation in progress should be allowed to complete or it should be stopped.</span></span>
+> <span data-ttu-id="f1f6b-115">別の操作が進行中で、行数の取得操作が開始されません。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-115">Another operation is in progress that prevents the row count retrieval operation from starting.</span></span> <span data-ttu-id="f1f6b-116">進行中の操作の完了を許可するか、停止する必要があります。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-116">Either the operation in progress should be allowed to complete or it should be stopped.</span></span>
     
-<span data-ttu-id="bb39c-117">MAPI_E_NO_SUPPORT</span><span class="sxs-lookup"><span data-stu-id="bb39c-117">MAPI_E_NO_SUPPORT</span></span> 
+<span data-ttu-id="f1f6b-117">MAPI_E_NO_SUPPORT</span><span class="sxs-lookup"><span data-stu-id="f1f6b-117">MAPI_E_NO_SUPPORT</span></span> 
   
-> <span data-ttu-id="bb39c-118">テーブルで行数を計算できません。</span><span class="sxs-lookup"><span data-stu-id="bb39c-118">The table cannot calculate the number of rows.</span></span>
+> <span data-ttu-id="f1f6b-118">テーブルは行数を計算できません。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-118">The table cannot calculate the number of rows.</span></span>
     
-<span data-ttu-id="bb39c-119">MAPI_W_APPROX_COUNT</span><span class="sxs-lookup"><span data-stu-id="bb39c-119">MAPI_W_APPROX_COUNT</span></span> 
+<span data-ttu-id="f1f6b-119">MAPI_W_APPROX_COUNT</span><span class="sxs-lookup"><span data-stu-id="f1f6b-119">MAPI_W_APPROX_COUNT</span></span> 
   
-> <span data-ttu-id="bb39c-120">呼び出しは成功しましたが、メモリの制約によって正確な行の数を特定できなかったため、おおよその行数が返されました。</span><span class="sxs-lookup"><span data-stu-id="bb39c-120">The call succeeded, but an approximate row count was returned because the exact row count could not be determined possibly due to memory constraints.</span></span> <span data-ttu-id="bb39c-121">この警告をテストするには、 **HR_FAILED**マクロを使用します。</span><span class="sxs-lookup"><span data-stu-id="bb39c-121">To test for this warning, use the **HR_FAILED** macro.</span></span> <span data-ttu-id="bb39c-122">「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bb39c-122">See [Using Macros for Error Handling](using-macros-for-error-handling.md).</span></span>
+> <span data-ttu-id="f1f6b-120">呼び出しは成功しましたが、メモリの制約により正確な行数を決定できない可能性が高いので、おおよその行数が返されました。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-120">The call succeeded, but an approximate row count was returned because the exact row count could not be determined possibly due to memory constraints.</span></span> <span data-ttu-id="f1f6b-121">この警告をテストするには、次のマクロ **HR_FAILED** します。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-121">To test for this warning, use the **HR_FAILED** macro.</span></span> <span data-ttu-id="f1f6b-122">「エラー [処理のためのマクロの使用」を参照してください](using-macros-for-error-handling.md)。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-122">See [Using Macros for Error Handling](using-macros-for-error-handling.md).</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="bb39c-123">注釈</span><span class="sxs-lookup"><span data-stu-id="bb39c-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f1f6b-123">注釈</span><span class="sxs-lookup"><span data-stu-id="f1f6b-123">Remarks</span></span>
 
-<span data-ttu-id="bb39c-124">**IMAPITable:: getrowcount**メソッドは、テーブル内の行の合計数を取得します。</span><span class="sxs-lookup"><span data-stu-id="bb39c-124">The **IMAPITable::GetRowCount** method retrieves the total number of rows in a table.</span></span> 
+<span data-ttu-id="f1f6b-124">**IMAPITable::GetRowCount** メソッドは、テーブル内の行の総数を取得します。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-124">The **IMAPITable::GetRowCount** method retrieves the total number of rows in a table.</span></span> 
   
-## <a name="notes-to-implementers"></a><span data-ttu-id="bb39c-125">実装に関するメモ</span><span class="sxs-lookup"><span data-stu-id="bb39c-125">Notes to implementers</span></span>
+## <a name="notes-to-implementers"></a><span data-ttu-id="f1f6b-125">実装に関するメモ</span><span class="sxs-lookup"><span data-stu-id="f1f6b-125">Notes to implementers</span></span>
 
-<span data-ttu-id="bb39c-126">テーブルの正確な行数を特定できない場合は、 _lMAPI_W_APPROX_COUNT count_パラメーターの内容で、および近似値の行数を返します。</span><span class="sxs-lookup"><span data-stu-id="bb39c-126">If you cannot determine the table's exact row count, return MAPI_W_APPROX_COUNT and an approximate row count in the contents of the  _lpulCount_ parameter.</span></span> 
+<span data-ttu-id="f1f6b-126">テーブルの正確な行数を確認できない場合は  _、lpulCount_ パラメーター MAPI_W_APPROX_COUNTの値と近似行数を返します。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-126">If you cannot determine the table's exact row count, return MAPI_W_APPROX_COUNT and an approximate row count in the contents of the  _lpulCount_ parameter.</span></span> 
   
-## <a name="notes-to-callers"></a><span data-ttu-id="bb39c-127">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="bb39c-127">Notes to callers</span></span>
+## <a name="notes-to-callers"></a><span data-ttu-id="f1f6b-127">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="f1f6b-127">Notes to callers</span></span>
 
-<span data-ttu-id="bb39c-128">データを取得するために[IMAPITable:: QueryRows](imapitable-queryrows.md)メソッドを呼び出す前に、 **getrowcount**を使用して、テーブルに保持されている行の数を調べます。</span><span class="sxs-lookup"><span data-stu-id="bb39c-128">Use **GetRowCount** to find out how many rows a table holds before making a call to the [IMAPITable::QueryRows](imapitable-queryrows.md) method to retrieve the data.</span></span> <span data-ttu-id="bb39c-129">テーブルに20行未満の行がある場合は、 **queryposition**を呼び出してテーブル全体を取得するのが安全です。</span><span class="sxs-lookup"><span data-stu-id="bb39c-129">If there are less than twenty rows in the table, it is safe to call **QueryPosition** to retrieve the whole table.</span></span> <span data-ttu-id="bb39c-130">テーブルに20行を超える行がある場合は、複数の呼び出しを**queryposition**に設定し、呼び出しごとに取得する行数を制限することを検討してください。</span><span class="sxs-lookup"><span data-stu-id="bb39c-130">If there are more than twenty rows in the table, consider making multiple calls to **QueryPosition** and limit the number of rows retrieved in each call.</span></span> 
+<span data-ttu-id="f1f6b-128">**GetRowCount を使用** して、データを取得するために [IMAPITable::QueryRows](imapitable-queryrows.md)メソッドを呼び出す前に、テーブルが保持する行の数を確認します。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-128">Use **GetRowCount** to find out how many rows a table holds before making a call to the [IMAPITable::QueryRows](imapitable-queryrows.md) method to retrieve the data.</span></span> <span data-ttu-id="f1f6b-129">テーブルに 20 行未満の行がある場合は **、QueryPosition** を呼び出してテーブル全体を取得しても安全です。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-129">If there are less than twenty rows in the table, it is safe to call **QueryPosition** to retrieve the whole table.</span></span> <span data-ttu-id="f1f6b-130">テーブル内に 20 行を超える行がある場合は **、QueryPosition** に対して複数の呼び出しを行い、各呼び出しで取得される行数を制限します。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-130">If there are more than twenty rows in the table, consider making multiple calls to **QueryPosition** and limit the number of rows retrieved in each call.</span></span> 
   
-<span data-ttu-id="bb39c-131">一部のテーブルは、 **getrowcount**をサポートせず、MAPI_E_NO_SUPPORT を返します。</span><span class="sxs-lookup"><span data-stu-id="bb39c-131">Some tables do not support **GetRowCount** and return MAPI_E_NO_SUPPORT.</span></span> <span data-ttu-id="bb39c-132">**getrowcount**がサポートされていない場合、次の方法で[IMAPITable:: queryposition](imapitable-queryposition.md)を呼び出すことができます。</span><span class="sxs-lookup"><span data-stu-id="bb39c-132">If **GetRowCount** is not supported, an alternative might be to call [IMAPITable::QueryPosition](imapitable-queryposition.md).</span></span> <span data-ttu-id="bb39c-133">**queryposition**からの結果を使用して、現在の行と最後の行の間の関係を判断できます。</span><span class="sxs-lookup"><span data-stu-id="bb39c-133">With the results from **QueryPosition**, you can determine the relationship between the current row and last row.</span></span> 
+<span data-ttu-id="f1f6b-131">一部のテーブルは **GetRowCount をサポートしていないの** で、この値MAPI_E_NO_SUPPORT。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-131">Some tables do not support **GetRowCount** and return MAPI_E_NO_SUPPORT.</span></span> <span data-ttu-id="f1f6b-132">**GetRowCount が** サポートされていない場合は [、IMAPITable::QueryPosition](imapitable-queryposition.md)を呼び出す方法があります。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-132">If **GetRowCount** is not supported, an alternative might be to call [IMAPITable::QueryPosition](imapitable-queryposition.md).</span></span> <span data-ttu-id="f1f6b-133">QueryPosition の結果 **を使用** して、現在の行と最後の行の関係を決定できます。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-133">With the results from **QueryPosition**, you can determine the relationship between the current row and last row.</span></span> 
   
-<span data-ttu-id="bb39c-134">一時的に行数を取得できないために**getrowcount**が MAPI_E_BUSY を返す場合は、 [IMAPITable:: waitforcompletion](imapitable-waitforcompletion.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="bb39c-134">When **GetRowCount** returns MAPI_E_BUSY because it is temporarily unable to retrieve a row count, call the [IMAPITable::WaitForCompletion](imapitable-waitforcompletion.md) method.</span></span> <span data-ttu-id="bb39c-135">**waitforcompletion**が戻るときに、 **getrowcount**への呼び出しを再試行します。</span><span class="sxs-lookup"><span data-stu-id="bb39c-135">When **WaitForCompletion** returns, retry the call to **GetRowCount**.</span></span> <span data-ttu-id="bb39c-136">非同期操作が進行中かどうかを検出する別の方法として、 [IMAPITable:: GetStatus](imapitable-getstatus.md)メソッドを呼び出し、 _lpultablestate_パラメーターの内容を確認する方法があります。</span><span class="sxs-lookup"><span data-stu-id="bb39c-136">Another way to detect whether an asynchronous operation is in progress is to call the [IMAPITable::GetStatus](imapitable-getstatus.md) method and check the contents of the  _lpulTableState_ parameter.</span></span> 
+<span data-ttu-id="f1f6b-134">**GetRowCount** が一MAPI_E_BUSY行数を取得することができないため、この値を返す場合は [、IMAPITable::WaitForCompletion](imapitable-waitforcompletion.md)メソッドを呼び出します。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-134">When **GetRowCount** returns MAPI_E_BUSY because it is temporarily unable to retrieve a row count, call the [IMAPITable::WaitForCompletion](imapitable-waitforcompletion.md) method.</span></span> <span data-ttu-id="f1f6b-135">**WaitForCompletion が返** された場合は **、GetRowCount の呼び出しを再試行します**。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-135">When **WaitForCompletion** returns, retry the call to **GetRowCount**.</span></span> <span data-ttu-id="f1f6b-136">非同期操作が進行中かどうかを検出するもう 1 つの方法は [、IMAPITable::GetStatus](imapitable-getstatus.md) メソッドを呼び出し  _、lpulTableState_ パラメーターの内容を確認する方法です。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-136">Another way to detect whether an asynchronous operation is in progress is to call the [IMAPITable::GetStatus](imapitable-getstatus.md) method and check the contents of the  _lpulTableState_ parameter.</span></span> 
   
-## <a name="mfcmapi-reference"></a><span data-ttu-id="bb39c-137">MFCMAPI リファレンス</span><span class="sxs-lookup"><span data-stu-id="bb39c-137">MFCMAPI reference</span></span>
+## <a name="mfcmapi-reference"></a><span data-ttu-id="f1f6b-137">MFCMAPI リファレンス</span><span class="sxs-lookup"><span data-stu-id="f1f6b-137">MFCMAPI reference</span></span>
 
-<span data-ttu-id="bb39c-138">MFCMAPI のサンプル コードについては、次の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bb39c-138">For MFCMAPI sample code, see the following table.</span></span>
+<span data-ttu-id="f1f6b-138">MFCMAPI のサンプル コードについては、次の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-138">For MFCMAPI sample code, see the following table.</span></span>
   
-|<span data-ttu-id="bb39c-139">**ファイル**</span><span class="sxs-lookup"><span data-stu-id="bb39c-139">**File**</span></span>|<span data-ttu-id="bb39c-140">**関数**</span><span class="sxs-lookup"><span data-stu-id="bb39c-140">**Function**</span></span>|<span data-ttu-id="bb39c-141">**コメント**</span><span class="sxs-lookup"><span data-stu-id="bb39c-141">**Comment**</span></span>|
+|<span data-ttu-id="f1f6b-139">**ファイル**</span><span class="sxs-lookup"><span data-stu-id="f1f6b-139">**File**</span></span>|<span data-ttu-id="f1f6b-140">**関数**</span><span class="sxs-lookup"><span data-stu-id="f1f6b-140">**Function**</span></span>|<span data-ttu-id="f1f6b-141">**コメント**</span><span class="sxs-lookup"><span data-stu-id="f1f6b-141">**Comment**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="bb39c-142">MAPIFunctions</span><span class="sxs-lookup"><span data-stu-id="bb39c-142">MAPIFunctions.cpp</span></span>  <br/> |<span data-ttu-id="bb39c-143">copyfoldercontents</span><span class="sxs-lookup"><span data-stu-id="bb39c-143">CopyFolderContents</span></span>  <br/> |<span data-ttu-id="bb39c-144">mfcmapi は、 **IMAPITable:: getrowcount**メソッドを使用して、ソーステーブルにある行数を調べて、コピーを実行するためのメモリを割り当てることができるようにします。</span><span class="sxs-lookup"><span data-stu-id="bb39c-144">MFCMAPI uses the **IMAPITable::GetRowCount** method to determine how many rows are in the source table so memory can be allocated to perform the copy.</span></span>  <br/> |
+|<span data-ttu-id="f1f6b-142">MAPIFunctions.cpp</span><span class="sxs-lookup"><span data-stu-id="f1f6b-142">MAPIFunctions.cpp</span></span>  <br/> |<span data-ttu-id="f1f6b-143">CopyFolderContents</span><span class="sxs-lookup"><span data-stu-id="f1f6b-143">CopyFolderContents</span></span>  <br/> |<span data-ttu-id="f1f6b-144">MFCMAPI は **IMAPITable::GetRowCount** メソッドを使用して、コピーを実行するためにメモリを割り当て可能なソース テーブル内の行数を決定します。</span><span class="sxs-lookup"><span data-stu-id="f1f6b-144">MFCMAPI uses the **IMAPITable::GetRowCount** method to determine how many rows are in the source table so memory can be allocated to perform the copy.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="bb39c-145">関連項目</span><span class="sxs-lookup"><span data-stu-id="bb39c-145">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f1f6b-145">関連項目</span><span class="sxs-lookup"><span data-stu-id="f1f6b-145">See also</span></span>
 
 
 
-[<span data-ttu-id="bb39c-146">IMAPITable::GetStatus</span><span class="sxs-lookup"><span data-stu-id="bb39c-146">IMAPITable::GetStatus</span></span>](imapitable-getstatus.md)
+[<span data-ttu-id="f1f6b-146">IMAPITable::GetStatus</span><span class="sxs-lookup"><span data-stu-id="f1f6b-146">IMAPITable::GetStatus</span></span>](imapitable-getstatus.md)
   
-[<span data-ttu-id="bb39c-147">IMAPITable::QueryPosition</span><span class="sxs-lookup"><span data-stu-id="bb39c-147">IMAPITable::QueryPosition</span></span>](imapitable-queryposition.md)
+[<span data-ttu-id="f1f6b-147">IMAPITable::QueryPosition</span><span class="sxs-lookup"><span data-stu-id="f1f6b-147">IMAPITable::QueryPosition</span></span>](imapitable-queryposition.md)
   
-[<span data-ttu-id="bb39c-148">IMAPITable::QueryRows</span><span class="sxs-lookup"><span data-stu-id="bb39c-148">IMAPITable::QueryRows</span></span>](imapitable-queryrows.md)
+[<span data-ttu-id="f1f6b-148">IMAPITable::QueryRows</span><span class="sxs-lookup"><span data-stu-id="f1f6b-148">IMAPITable::QueryRows</span></span>](imapitable-queryrows.md)
   
-[<span data-ttu-id="bb39c-149">IMAPITable::WaitForCompletion</span><span class="sxs-lookup"><span data-stu-id="bb39c-149">IMAPITable::WaitForCompletion</span></span>](imapitable-waitforcompletion.md)
+[<span data-ttu-id="f1f6b-149">IMAPITable::WaitForCompletion</span><span class="sxs-lookup"><span data-stu-id="f1f6b-149">IMAPITable::WaitForCompletion</span></span>](imapitable-waitforcompletion.md)
   
-[<span data-ttu-id="bb39c-150">IMAPITable : IUnknown</span><span class="sxs-lookup"><span data-stu-id="bb39c-150">IMAPITable : IUnknown</span></span>](imapitableiunknown.md)
+[<span data-ttu-id="f1f6b-150">IMAPITable : IUnknown</span><span class="sxs-lookup"><span data-stu-id="f1f6b-150">IMAPITable : IUnknown</span></span>](imapitableiunknown.md)
 
 
-<span data-ttu-id="bb39c-151">[�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)</span><span class="sxs-lookup"><span data-stu-id="bb39c-151">[MFCMAPI as a Code Sample](mfcmapi-as-a-code-sample.md)</span></span>
+<span data-ttu-id="f1f6b-151">[�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)</span><span class="sxs-lookup"><span data-stu-id="f1f6b-151">[MFCMAPI as a Code Sample](mfcmapi-as-a-code-sample.md)</span></span>
 

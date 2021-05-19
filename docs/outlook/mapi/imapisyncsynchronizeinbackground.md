@@ -1,5 +1,5 @@
 ---
-title: imapisync SynchronizeInBackground
+title: IMAPISyncSyncInBackground
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426857"
 ---
-# <a name="imapisync--synchronizeinbackground"></a><span data-ttu-id="68bd8-103">IMAPISync : SynchronizeInBackground</span><span class="sxs-lookup"><span data-stu-id="68bd8-103">IMAPISync : SynchronizeInBackground</span></span>
+# <a name="imapisync--synchronizeinbackground"></a><span data-ttu-id="1cdb7-103">IMAPISync : SynchronizeInBackground</span><span class="sxs-lookup"><span data-stu-id="1cdb7-103">IMAPISync : SynchronizeInBackground</span></span>
 
  
   
-<span data-ttu-id="68bd8-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="68bd8-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="1cdb7-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="1cdb7-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
- <span data-ttu-id="68bd8-105">同期を開始します。</span><span class="sxs-lookup"><span data-stu-id="68bd8-105">Initiates a synchronization.</span></span> <span data-ttu-id="68bd8-106">このメソッドは、microsoft outlook 2010 および microsoft outlook 2013 によって呼び出され、メッセージストアプロバイダーによって実装されます。</span><span class="sxs-lookup"><span data-stu-id="68bd8-106">This method is called by Microsoft Outlook 2010 and Microsoft Outlook 2013 and implemented by message store providers.</span></span> 
+ <span data-ttu-id="1cdb7-105">同期を開始します。</span><span class="sxs-lookup"><span data-stu-id="1cdb7-105">Initiates a synchronization.</span></span> <span data-ttu-id="1cdb7-106">このメソッドは、メッセージ ストア プロバイダー Microsoft Outlook 2010、Microsoft Outlook 2013によって呼び出され、実装されます。</span><span class="sxs-lookup"><span data-stu-id="1cdb7-106">This method is called by Microsoft Outlook 2010 and Microsoft Outlook 2013 and implemented by message store providers.</span></span> 
   
 ```cpp
 HRESULT SynchronizeInBackground (
@@ -33,23 +33,23 @@ HRESULT SynchronizeInBackground (
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="68bd8-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="68bd8-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="1cdb7-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="1cdb7-107">Parameters</span></span>
 
- <span data-ttu-id="68bd8-108">_psibpb_</span><span class="sxs-lookup"><span data-stu-id="68bd8-108">_psibpb_</span></span>
+ <span data-ttu-id="1cdb7-108">_psibpb_</span><span class="sxs-lookup"><span data-stu-id="1cdb7-108">_psibpb_</span></span>
   
-> <span data-ttu-id="68bd8-109">同期される対象をプロバイダーに通知し、同期中に使用できるインターフェイスへのアクセスを提供します。</span><span class="sxs-lookup"><span data-stu-id="68bd8-109">Informs the provider of what will be synchronized and gives access to interfaces that can be used during the synchronization.</span></span> <span data-ttu-id="68bd8-110">[MAPISIB](mapisib.md)構造です。</span><span class="sxs-lookup"><span data-stu-id="68bd8-110">It is a [MAPISIB](mapisib.md) structure.</span></span> 
+> <span data-ttu-id="1cdb7-109">同期される情報をプロバイダーに通知し、同期中に使用できるインターフェイスにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="1cdb7-109">Informs the provider of what will be synchronized and gives access to interfaces that can be used during the synchronization.</span></span> <span data-ttu-id="1cdb7-110">[MAPISIB 構造](mapisib.md)です。</span><span class="sxs-lookup"><span data-stu-id="1cdb7-110">It is a [MAPISIB](mapisib.md) structure.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="68bd8-111">戻り値</span><span class="sxs-lookup"><span data-stu-id="68bd8-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="1cdb7-111">戻り値</span><span class="sxs-lookup"><span data-stu-id="1cdb7-111">Return value</span></span>
 
-<span data-ttu-id="68bd8-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="68bd8-112">S_OK</span></span> 
+<span data-ttu-id="1cdb7-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="1cdb7-112">S_OK</span></span> 
   
-> <span data-ttu-id="68bd8-113">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="68bd8-113">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="1cdb7-113">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="1cdb7-113">The call succeeded and has returned the expected value or values.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="68bd8-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="68bd8-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1cdb7-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="1cdb7-114">See also</span></span>
 
 
 
-[<span data-ttu-id="68bd8-115">IMAPISync : IUnknown</span><span class="sxs-lookup"><span data-stu-id="68bd8-115">IMAPISync : IUnknown</span></span>](imapisynciunknown.md)
+[<span data-ttu-id="1cdb7-115">IMAPISync : IUnknown</span><span class="sxs-lookup"><span data-stu-id="1cdb7-115">IMAPISync : IUnknown</span></span>](imapisynciunknown.md)
   
-[<span data-ttu-id="68bd8-116">MAPISIB</span><span class="sxs-lookup"><span data-stu-id="68bd8-116">MAPISIB</span></span>](mapisib.md)
+[<span data-ttu-id="1cdb7-116">MAPISIB</span><span class="sxs-lookup"><span data-stu-id="1cdb7-116">MAPISIB</span></span>](mapisib.md)
 

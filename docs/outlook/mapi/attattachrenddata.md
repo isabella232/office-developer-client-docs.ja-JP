@@ -15,12 +15,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33427137"
 ---
-# <a name="attattachrenddata"></a><span data-ttu-id="e2aba-103">attAttachRenddata</span><span class="sxs-lookup"><span data-stu-id="e2aba-103">attAttachRenddata</span></span>
+# <a name="attattachrenddata"></a><span data-ttu-id="bf40f-103">attAttachRenddata</span><span class="sxs-lookup"><span data-stu-id="bf40f-103">attAttachRenddata</span></span>
 
   
   
-<span data-ttu-id="e2aba-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="e2aba-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="bf40f-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="bf40f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="e2aba-105">**attAttachRenddata**属性は、添付ファイルがメッセージテキスト内でどのようにレンダリングされるかを示す、 **RENDDATA**構造体としてエンコードされます。</span><span class="sxs-lookup"><span data-stu-id="e2aba-105">The **attAttachRenddata** attribute is encoded as a **RENDDATA** structure that describes how and where the attachment is rendered in the message text.</span></span> <span data-ttu-id="e2aba-106">**RENDDATA**構造体は、単に TNEF ストリームで、 **RENDDATA**構造の最初のメンバーから始まる**sizeof (RENDDATA)** バイトでエンコードされます。</span><span class="sxs-lookup"><span data-stu-id="e2aba-106">The **RENDDATA** structure is simply encoded in the TNEF stream as **sizeof(RENDDATA)** bytes beginning with the first member of the **RENDDATA** structure.</span></span> <span data-ttu-id="e2aba-107">**RENDDATA**構造体の**dwFlags**メンバーの値が**MAC_BINARY**に設定されている場合、次の添付ファイルのデータは MacBinary 形式で格納されます。それ以外の場合、添付ファイルデータは通常どおりにエンコードされます。</span><span class="sxs-lookup"><span data-stu-id="e2aba-107">If the value of the **RENDDATA** structure's **dwFlags** member is set to **MAC_BINARY**, then the data for the following attachment is stored in MacBinary format; otherwise, the attachment data is encoded as usual.</span></span>
+<span data-ttu-id="bf40f-105">**attAttachRenddata** 属性は、メッセージ テキストで添付ファイルがレンダリングされる方法と場所を説明する **RENDDATA** 構造としてエンコードされます。</span><span class="sxs-lookup"><span data-stu-id="bf40f-105">The **attAttachRenddata** attribute is encoded as a **RENDDATA** structure that describes how and where the attachment is rendered in the message text.</span></span> <span data-ttu-id="bf40f-106">**RENDDATA** 構造体は、RENDDATA 構造体の最初のメンバーで始まる **sizeof(RENDDATA)** バイトとして **TNEF** ストリームでエンコードされます。</span><span class="sxs-lookup"><span data-stu-id="bf40f-106">The **RENDDATA** structure is simply encoded in the TNEF stream as **sizeof(RENDDATA)** bytes beginning with the first member of the **RENDDATA** structure.</span></span> <span data-ttu-id="bf40f-107">**RENDDATA** 構造体の **dwFlags** メンバーの値が **MAC_BINARY** に設定されている場合、次の添付ファイルのデータは MacBinary 形式で格納されます。それ以外の場合、添付ファイル データは通常どおりエンコードされます。</span><span class="sxs-lookup"><span data-stu-id="bf40f-107">If the value of the **RENDDATA** structure's **dwFlags** member is set to **MAC_BINARY**, then the data for the following attachment is stored in MacBinary format; otherwise, the attachment data is encoded as usual.</span></span>
   
 

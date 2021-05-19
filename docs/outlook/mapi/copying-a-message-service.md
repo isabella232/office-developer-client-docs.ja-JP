@@ -1,5 +1,5 @@
 ---
-title: メッセージサービスのコピー
+title: メッセージ サービスのコピー
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,16 +15,16 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33425394"
 ---
-# <a name="copying-a-message-service"></a><span data-ttu-id="6660c-103">メッセージサービスのコピー</span><span class="sxs-lookup"><span data-stu-id="6660c-103">Copying a Message Service</span></span>
+# <a name="copying-a-message-service"></a><span data-ttu-id="048d9-103">メッセージ サービスのコピー</span><span class="sxs-lookup"><span data-stu-id="048d9-103">Copying a Message Service</span></span>
 
   
   
-<span data-ttu-id="6660c-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="6660c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="048d9-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="048d9-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
- <span data-ttu-id="6660c-105">**メッセージサービスをプロファイルにコピーするには**</span><span class="sxs-lookup"><span data-stu-id="6660c-105">**To copy a message service to a profile**</span></span>
+ <span data-ttu-id="048d9-105">**メッセージ サービスをプロファイルにコピーするには**</span><span class="sxs-lookup"><span data-stu-id="048d9-105">**To copy a message service to a profile**</span></span>
   
-- <span data-ttu-id="6660c-106">Call [IMsgServiceAdmin:: copymsgservice](imsgserviceadmin-copymsgservice.md)。</span><span class="sxs-lookup"><span data-stu-id="6660c-106">Call [IMsgServiceAdmin::CopyMsgService](imsgserviceadmin-copymsgservice.md).</span></span>
+- <span data-ttu-id="048d9-106">[IMsgServiceAdmin::CopyMsgService を呼び出します](imsgserviceadmin-copymsgservice.md)。</span><span class="sxs-lookup"><span data-stu-id="048d9-106">Call [IMsgServiceAdmin::CopyMsgService](imsgserviceadmin-copymsgservice.md).</span></span>
     
-<span data-ttu-id="6660c-107">メッセージサービスがコピーされると、サービスの新しいインスタンスは元のインスタンスとまったく同じ方法で構成されます。</span><span class="sxs-lookup"><span data-stu-id="6660c-107">When a message service is copied, the new instance of the service is configured in exactly the same way as the original.</span></span> <span data-ttu-id="6660c-108">**copymsgservice**がエラー MAPI_E_ACCESS_DENIED を返す場合があります。</span><span class="sxs-lookup"><span data-stu-id="6660c-108">Sometimes **CopyMsgService** returns the error MAPI_E_ACCESS_DENIED.</span></span> <span data-ttu-id="6660c-109">このエラーが返される最も一般的な原因は、メッセージサービスが重複して複製されないようにすることです。</span><span class="sxs-lookup"><span data-stu-id="6660c-109">The most common cause of this error return is a message service that does not allow itself to be duplicated.</span></span> 
+<span data-ttu-id="048d9-107">メッセージ サービスをコピーすると、サービスの新しいインスタンスは元のインスタンスとまったく同じ方法で構成されます。</span><span class="sxs-lookup"><span data-stu-id="048d9-107">When a message service is copied, the new instance of the service is configured in exactly the same way as the original.</span></span> <span data-ttu-id="048d9-108">**CopyMsgService がエラー** メッセージを返MAPI_E_ACCESS_DENIED。</span><span class="sxs-lookup"><span data-stu-id="048d9-108">Sometimes **CopyMsgService** returns the error MAPI_E_ACCESS_DENIED.</span></span> <span data-ttu-id="048d9-109">このエラーの戻り値の最も一般的な原因は、それ自体を複製できないメッセージ サービスです。</span><span class="sxs-lookup"><span data-stu-id="048d9-109">The most common cause of this error return is a message service that does not allow itself to be duplicated.</span></span> 
   
 

@@ -16,20 +16,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424211"
 ---
-# <a name="pagenumber-function"></a><span data-ttu-id="aba37-103">PAGENUMBER 関数</span><span class="sxs-lookup"><span data-stu-id="aba37-103">PAGENUMBER Function</span></span>
+# <a name="pagenumber-function"></a><span data-ttu-id="411f3-103">PAGENUMBER 関数</span><span class="sxs-lookup"><span data-stu-id="411f3-103">PAGENUMBER Function</span></span>
 
-<span data-ttu-id="aba37-104">図形を含むページの番号を返します。</span><span class="sxs-lookup"><span data-stu-id="aba37-104">Returns the number of the page that contains the shape.</span></span> 
+<span data-ttu-id="411f3-104">図形を含むページの番号を返します。</span><span class="sxs-lookup"><span data-stu-id="411f3-104">Returns the number of the page that contains the shape.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="aba37-105">構文</span><span class="sxs-lookup"><span data-stu-id="aba37-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="411f3-105">構文</span><span class="sxs-lookup"><span data-stu-id="411f3-105">Syntax</span></span>
 
-<span data-ttu-id="aba37-106">PAGENUMBER ()</span><span class="sxs-lookup"><span data-stu-id="aba37-106">PAGENUMBER()</span></span>
+<span data-ttu-id="411f3-106">PAGENUMBER()</span><span class="sxs-lookup"><span data-stu-id="411f3-106">PAGENUMBER()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="aba37-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="aba37-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="411f3-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="411f3-107">Return value</span></span>
 
-<span data-ttu-id="aba37-108">数値</span><span class="sxs-lookup"><span data-stu-id="aba37-108">Number</span></span>
+<span data-ttu-id="411f3-108">番号</span><span class="sxs-lookup"><span data-stu-id="411f3-108">Number</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="aba37-109">注釈</span><span class="sxs-lookup"><span data-stu-id="aba37-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="411f3-109">注釈</span><span class="sxs-lookup"><span data-stu-id="411f3-109">Remarks</span></span>
 
-<span data-ttu-id="aba37-110">現在のページが背景ページ (ページ番号なし) の場合、またはエラーが発生した場合は、PAGENUMBER 関数はゼロを返します。</span><span class="sxs-lookup"><span data-stu-id="aba37-110">If the current page is a background page (unnumbered), or if an error occurs, the PAGENUMBER function returns zero.</span></span>
+<span data-ttu-id="411f3-110">現在のページが背景ページ (ページ番号なし) の場合、またはエラーが発生した場合は、PAGENUMBER 関数はゼロを返します。</span><span class="sxs-lookup"><span data-stu-id="411f3-110">If the current page is a background page (unnumbered), or if an error occurs, the PAGENUMBER function returns zero.</span></span>
   
 
