@@ -19,34 +19,34 @@ ms.locfileid: "32345194"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI を使用して、開封確認を要求するメッセージを作成して送信することができます。 開封確認が要求されると、メッセージングシステムは、受信者がメッセージを開いたときに送信者に開封レポートを生成して返します。
+MAPI を使用して、受信確認を要求するメッセージを作成して送信できます。 受信確認が要求された場合、メッセージング システムは、受信者がメッセージを開くと、送信者に読み取りレポートを生成して返します。
   
-このトピックで参照されている mfcmapi アプリケーションおよび createoutlookitemsaddin プロジェクトからコードをダウンロード、表示、および実行する方法については、[このセクションで使用しているサンプルをインストール](how-to-install-the-samples-used-in-this-section.md)するを参照してください。
+このトピックで参照されている MFCMAPI アプリケーションおよび CreateOutlookItemsAddin プロジェクトからコードをダウンロード、表示、実行する方法については、「このセクションで使用されるサンプルのインストール」を参照 [してください](how-to-install-the-samples-used-in-this-section.md)。
 
 
-### <a name="to-create-and-send-a-message-requesting-a-read-receipt"></a>開封確認メッセージを要求するメッセージを作成して送信するには
+### <a name="to-create-and-send-a-message-requesting-a-read-receipt"></a>受信確認を要求するメッセージを作成して送信するには
 
-1. 送信メッセージを作成します。 送信メッセージを作成する方法については、「[送信メッセージの処理](handling-an-outgoing-message.md)」を参照してください。
+1. 送信メッセージを作成します。 送信メッセージを作成する方法については、「送信メッセージの処理 [」を参照してください](handling-an-outgoing-message.md)。
     
-2. **PR_READ_RECEIPT_REQUESTED** ([PidTagReadReceiptRequested](pidtagreadreceiptrequested-canonical-property.md)) プロパティを追加し、 **true**に設定します。
+2. プロパティを **PR_READ_RECEIPT_REQUESTED** ([PidTagReadReceiptRequested](pidtagreadreceiptrequested-canonical-property.md)) プロパティを追加し、true に設定 **します**。
     
-3. **PR_CONVERSATION_INDEX** ([PidTagConversationIndex](pidtagconversationindex-canonical-property.md)) プロパティを追加します。
+3. [プロパティ] **PR_CONVERSATION_INDEX** ([PidTagConversationIndex](pidtagconversationindex-canonical-property.md)) プロパティを追加します。
     
-4. **PR_REPORT_TAG** ([PidTagReportTag](pidtagreporttag-canonical-property.md)) プロパティを追加します。
+4. [プロパティ] **PR_REPORT_TAG** ([PidTagReportTag](pidtagreporttag-canonical-property.md)) プロパティを追加します。
     
-5. [IMessage:: submitmessage](imessage-submitmessage.md)メソッドを呼び出して、メッセージを送信します。 
+5. [IMessage::SubmitMessage メソッドを呼び出してメッセージを送信](imessage-submitmessage.md)します。 
     
-createoutlookitemsaddin プロジェクトのメール .cpp ソースファイルの関数は、 `AddMail`これらの手順を示しています。 この`AddMail`関数は、mfcmapi サンプルアプリケーションの [ **Addins** ] メニューの [**メールの追加**] コマンドをクリックしたときに表示される [**メールの追加**] ダイアログボックスのパラメーターを受け取ります。 メール`DisplayAddMailDialog`ボックスの関数は、ダイアログボックスを表示して、ダイアログボックスの値を`AddMail`関数に渡します。 この`DisplayAddMailDialog`関数は MAPI を使用したメールアイテムの作成に直接関連付けられていないため、ここには記載されていません。 `AddMail`関数は以下のとおりです。 
+`AddMail`CreateOutlookItemsAddin プロジェクトの Mails.cpp ソース ファイルの関数は、次の手順を示しています。 この関数は、MFCMAPI サンプル アプリケーションの [Addins] メニューの [メールの追加] コマンドをクリックすると表示される [メールの追加] ダイアログ ボックスからパラメーター `AddMail` を受け取ります。    `DisplayAddMailDialog`Mails.cpp の関数はダイアログ ボックスを表示し、ダイアログ ボックスから関数に値を渡 `AddMail` します。 この関数は、MAPI を使用したメール アイテムの作成とは直接関係ないので、ここに  `DisplayAddMailDialog` は表示されません。 関数  `AddMail` の一覧を以下に示します。 
   
-メソッドに渡される_lpfolder_パラメーターは、新しいメッセージが作成されるフォルダーを表す[imapifolder](imapifolderimapicontainer.md)インターフェイスへのポインターであることに注意してください。 `AddMail` **imapifolder**インターフェイスを表す_lpfolder_パラメーターを指定すると、コードは[imapifolder:: CreateMessage](imapifolder-createmessage.md)メソッドを呼び出します。 **CreateMessage**メソッドは、成功コードと、 [IMessage: imapiprop](imessageimapiprop.md)インターフェイスへのポインターへのポインターを返します。 
+メソッドに  _渡される lpFolder_ パラメーターは、新しいメッセージが作成されるフォルダーを表す  `AddMail` [IMAPIFolder](imapifolderimapicontainer.md) インターフェイスへのポインターです。 _IMAPIFolder インターフェイスを_ 表す **lpFolder** パラメーターを指定すると、このコードは [IMAPIFolder::CreateMessage メソッドを呼び出](imapifolder-createmessage.md)します。 **CreateMessage メソッド** は、成功コードと [IMessage : IMAPIProp](imessageimapiprop.md)インターフェイスへのポインターを返します。 
 
-ほとんどの`AddMail`関数コードは、 [imapiprop:: setprops](imapiprop-setprops.md)メソッドを呼び出すための準備として、プロパティを設定する作業を処理します。 **setprops**メソッドの呼び出しが成功した場合、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出すと、変更内容がストアにコミットされ、新しいメールアイテムが作成されます。 その後、要求された場合、メッセージを送信するために[IMessage:: submitmessage](imessage-submitmessage.md)メソッドが呼び出されます。 
+ほとんどの関数コード  `AddMail` は [、IMAPIProp::SetProps](imapiprop-setprops.md) メソッドを呼び出す準備としてプロパティを設定する作業を処理します。 **SetProps** メソッドの呼び出しが成功すると [、IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドへの呼び出しがストアに対する変更をコミットし、新しいメール アイテムを作成します。 次に、要求された場合は、メッセージを送信するために [IMessage::SubmitMessage](imessage-submitmessage.md) メソッドが呼び出されます。 
   
-`AddMail`関数は、 `BuildConversationIndex` 2 つのヘルパー関数を使用して、 **PR_CONVERSATION_INDEX**プロパティと**PR_REPORT_TAG**プロパティ`AddReportTag`の値 (および関数) を作成します。 createoutlookitemsaddin .cpp にある`BuildConversationIndex`関数は、親の会話インデックスが渡されない場合に、組み込みの MAPI の[ScCreateConversationIndex](sccreateconversationindex.md)関数が実行するのと同じ動作をします。 これらの関数が生成する会話インデックスバッファーの形式については、 [PidTagConversationIndex 標準プロパティ](pidtagconversationindex-canonical-property.md)で説明されています。 
+この `AddMail` 関数は、2 つのヘルパー関数を使用して、PR_CONVERSATION_INDEXプロパティとPR_REPORT_TAGプロパティの **値** `BuildConversationIndex` を作成 `AddReportTag` します。 `BuildConversationIndex`CreateOutlookItemsAddin.cpp にある関数は、組み込みの MAPI [ScCreateConversationIndex](sccreateconversationindex.md)関数が親会話インデックスが渡されない場合と同じ作業を行います。 これらの関数が生成する会話インデックス バッファーの形式は [、PidTagConversationIndex 標準プロパティに記載されています](pidtagconversationindex-canonical-property.md)。 
 
-PR_REPORT_TAG `AddReportTag`プロパティの構造を構築するために、メール .cpp に`BuildReportTag`ある関数が呼び出されます。 **** `BuildReportTag`関数によって構築される構造の詳細については、「 [PidTagReportTag 標準プロパティ](pidtagreporttag-canonical-property.md)」を参照してください。
+Mails.cpp にある関数は、関数を呼び出して、PR_REPORT_TAG  `AddReportTag`  `BuildReportTag` プロパティ **の構造を構築** します。 関数が構築する構造の詳細については  `BuildReportTag` [、「PidTagReportTag 標準プロパティ」を参照してください](pidtagreporttag-canonical-property.md)。
   
-次に、 `AddMail`関数の完全な一覧を示します。 
+関数の完全な一覧を次に示  `AddMail` します。 
   
 ```cpp
 HRESULT AddMail(LPMAPISESSION lpMAPISession,

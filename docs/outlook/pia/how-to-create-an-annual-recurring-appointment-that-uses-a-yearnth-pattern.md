@@ -31,7 +31,7 @@ ms.locfileid: "32349505"
 
 次のコード例の RecurringYearNthAppointment では、YearNth の定期的なパターンを持つ予定を作成します。 RecurringYearNthAppointment では、まず、[AppointmentItem](https://msdn.microsoft.com/library/bb645611\(v=office.15\)) オブジェクトを作成することで定期的な予定を作成します。 次に、[GetRecurrencePattern()](https://msdn.microsoft.com/library/bb652582\(v=office.15\)) メソッドを使用して、予定の定期的なパターンを取得します。 その後、RecurrencePattern のプロパティ RecurrenceType、DayOfWeekMask、[MonthOfYear](https://msdn.microsoft.com/library/bb610515\(v=office.15\))、[Instance](https://msdn.microsoft.com/library/bb645269\(v=office.15\))、[Occurrences](https://msdn.microsoft.com/library/bb611303\(v=office.15\))、[Duration](https://msdn.microsoft.com/library/bb644889\(v=office.15\))、[PatternStartDate](https://msdn.microsoft.com/library/bb624492\(v=office.15\))、[StartTime](https://msdn.microsoft.com/library/bb646324\(v=office.15\))、および [EndTime](https://msdn.microsoft.com/library/bb644544\(v=office.15\)) を設定します。 MonthOfYear プロパティは、1 から 12 の数値を受け入れます。それぞれの数値が、対応する月を表します。 プロパティの設定後、RecurringYearNthAppointment では、予定を保存して、その予定を「6 月の最初の月曜日に発生、2007 年 6 月 1 日から 2016 年 6 月 6 日まで有効、午後 2 時 00 分から午後 5 時 00 分まで」のパターンで表示します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

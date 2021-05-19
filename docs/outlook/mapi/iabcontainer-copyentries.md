@@ -25,7 +25,7 @@ ms.locfileid: "32346397"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-1つまたは複数のエントリ (通常はメッセージングユーザーまたは配布リスト) をコピーします。
+1 つ以上のエントリ (通常はメッセージング ユーザーまたは配布リスト) をコピーします。
   
 ```cpp
 HRESULT CopyEntries(
@@ -38,79 +38,79 @@ HRESULT CopyEntries(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpentries_
+ _lpEntries_
   
-> 順番コピーするエントリのエントリ識別子を含む[entrylist](entrylist.md)構造体の配列へのポインター。 
+> [in]コピーするエントリのエントリ識別子を含む [ENTRYLIST](entrylist.md) 構造体の配列へのポインター。 
     
- _uluiparam_
+ _ulUIParam_
   
-> 順番このメソッドが表示するダイアログボックスまたはウィンドウの親ウィンドウへのハンドル。 _ulflags_パラメーターに AB_NO_DIALOG フラグが設定されている場合、 _uluiparam_パラメーターは0である必要があります。 
+> [in]このメソッドが表示するダイアログ ボックスまたはウィンドウの親ウィンドウへのハンドル。 _ulUIParam_ パラメーターは、ulFlags パラメーターで AB_NO_DIALOGフラグが設定されている場合は _0 である必要_ があります。 
     
- _lpprogress_
+ _lpProgress_
   
-> 順番進行状況インジケーターを表示する progress オブジェクトへのポインター、または NULL。 _lpprogress_が NULL の場合、 [imapisupport::D oprogress dialog](imapisupport-doprogressdialog.md)メソッドによって、MAPI によって提供される progress オブジェクトを使用して進行状況インジケーターを表示する必要があります。 AB_NO_DIALOG フラグが_ulflags_で設定されている場合、 _lpprogress_パラメーターは無視されます。
+> [in]進行状況インジケーター (NULL) を表示する進行状況オブジェクトへのポインター。 _lpProgress が_ NULL の場合は [、IMAPISupport::D oProgressDialog](imapisupport-doprogressdialog.md)メソッドを介して MAPI によって提供される進行状況オブジェクトを使用して進行状況インジケーターを表示する必要があります。 _lpProgress パラメーター_ は _、ulFlags_ で AB_NO_DIALOGフラグが設定されている場合は無視されます。
     
  _ulFlags_
   
-> 順番コピー操作の実行方法を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]コピー操作の実行方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 AB_NO_DIALOG 
   
-> 進行状況インジケーターの表示を抑制します。 このフラグが設定されていない場合は、進行状況のインジケーターが表示されます。
+> 進行状況インジケーターの表示を抑制します。 このフラグが設定されていない場合は、進行状況インジケーターが表示されます。
     
 CREATE_CHECK_DUP_LOOSE 
   
-> 重複したエントリのチェックを緩やかに実行する必要があることを示します。 重複していない重複するエントリのチェックは、プロバイダーに固有のものです。 たとえば、プロバイダーは、同じ表示名を持つ2つのエントリとして緩やかな一致を定義できます。
+> 重複するエントリチェックの緩いレベルを実行する必要があります。 緩やかな重複エントリチェックの実装は、プロバイダー固有です。 たとえば、プロバイダーは、同じ表示名を持つ任意の 2 つのエントリとして緩やかな一致を定義できます。
     
 CREATE_CHECK_DUP_STRICT 
   
-> 重複するエントリの厳密なチェックを実行する必要があることを示します。 厳密に重複したエントリチェックの実装は、プロバイダーに固有のものです。 たとえば、プロバイダーは、同じ表示名とメッセージアドレスの両方を持つ2つのエントリとして厳密な一致を定義できます。
+> 厳密なレベルの重複エントリチェックを実行する必要があります。 厳密な重複エントリチェックの実装は、プロバイダー固有です。 たとえば、プロバイダーは、同じ表示名とメッセージング アドレスの両方を持つ任意の 2 つのエントリとして厳密な一致を定義できます。
     
 CREATE_REPLACE 
   
-> 2つのレコードが重複していると判断された場合は、新しいエントリで既存のエントリを置き換える必要があることを示します。
+> 2 つのエントリが重複すると判断された場合は、新しいエントリで既存のエントリを置き換える必要があります。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> コピー操作が正常に完了しました。
+> コピー操作が成功しました。
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> 全体のコピー操作に成功しましたが、1つ以上のエントリをコピーできませんでした。 この値が返されると、呼び出しが成功したとして処理されます。 この値をテストするには、 **HR_FAILED**マクロを使用します。 詳細については、「[エラー処理にマクロを使用する](using-macros-for-error-handling.md)」を参照してください。
+> コピー操作は全体的に成功しましたが、1 つ以上のエントリをコピーする必要がありました。 この値が返されると、呼び出しは正常に処理されます。 この値をテストするには、次のマクロ **HR_FAILED** します。 詳細については、「Using [Macros for Error Handling 」を参照してください](using-macros-for-error-handling.md)。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**IABContainer:: copyentries**メソッドは、同じコンテナーまたは別のコンテナーからエントリをコピーします。 **copyentries**の呼び出しは、各エントリのコピーに対して次の呼び出しを行うことと機能的には同じです。 
+**IABContainer::CopyEntries メソッドは**、同じコンテナーまたは別のコンテナーからエントリをコピーします。 **CopyEntries の呼び出し** は、コピーするエントリごとに次の呼び出しを行うのと機能的に同等です。 
   
-1. [IABContainer:: createentry](iabcontainer-createentry.md)メソッドを実行して、新しいエントリを作成します。 
+1. [新しいエントリを作成する IABContainer::CreateEntry](iabcontainer-createentry.md)メソッド。 
     
-2. コピーするエントリからプロパティを読み取るための[imapiprop:: GetProps](imapiprop-getprops.md)メソッド。 
+2. コピーするエントリからプロパティを読み取る [IMAPIProp::GetProps](imapiprop-getprops.md) メソッド。 
     
-3. [imapiprop:: setprops](imapiprop-setprops.md)メソッドを実行して、新しいエントリにプロパティを書き込みます。 
+3. 新 [しいエントリにプロパティを書き込む IMAPIProp::SetProps](imapiprop-setprops.md) メソッド。 
     
-4. 保存を実行するための、新しいエントリの[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッド。 
+4. 保存を実行する新 [しいエントリの IMAPIProp::SaveChanges](imapiprop-savechanges.md) メソッド。 
     
-5. コンテナーの参照を解放するための、新しいエントリの[IUnknown:: release](https://msdn.microsoft.com/library/ms682317%28VS.85%29.aspx)メソッド。 
+5. コンテナーの参照を解放する新しいエントリの [IUnknown::Release](https://msdn.microsoft.com/library/ms682317%28VS.85%29.aspx) メソッド。 
     
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**IABContainer:: copyentries**メソッドをサポートするすべてのコンテナーを変更可能にする必要があります。 コンテナーの AB_MODIFIABLE フラグを**PR_CONTAINER_FLAGS** ([PidTagContainerFlags](pidtagcontainerflags-canonical-property.md)) プロパティに設定して、それが変更可能であることを示します。 
+**IABContainer::CopyEntries** メソッドをサポートするコンテナーはすべて、変更可能である必要があります。 コンテナーの AB_MODIFIABLE **フラグを** PR_CONTAINER_FLAGS ([PidTagContainerFlags](pidtagcontainerflags-canonical-property.md)) プロパティに設定して、変更可能であることを示します。 
   
-すべてのフラグをサポートする必要があります。ただし、これらのフラグの解釈と使用は実装に固有です。つまり、実装のコンテキストで CREATE_CHECK_DUP_LOOSE と CREATE_CHECK_DUP_STRICT のフラグの意味を判断できます。 エントリが重複しているかどうかを判断できない場合、または指定しない場合は、常にエントリのコピーが許可されます。 
+すべてのフラグをサポートする必要があります。ただし、これらのフラグの解釈と使用は実装固有です。つまり、CREATE_CHECK_DUP_LOOSE フラグと CREATE_CHECK_DUP_STRICT フラグのセマンティクスが実装のコンテキストで何を意味するのかを判断できます。 エントリが重複するかどうかを判断できない場合、または判断できない場合は、常にエントリのコピーを許可します。 
   
-CREATE_REPLACE フラグが設定されている場合は、CREATE_CHECK_DUP_LOOSE または CREATE_CHECK_DUP_STRICT が設定されているかどうかと、エントリが重複しているかどうかに関係なく、常にエントリをコピーします。 
+CREATE_REPLACE フラグが設定されている場合は、CREATE_CHECK_DUP_LOOSE または CREATE_CHECK_DUP_STRICT が設定されているかどうか、およびエントリが重複するかどうかに関係なく、常にエントリをコピーします。 
   
-CREATE_REPLACE が設定されておらず、CREATE_CHECK_DUP_STRICT が設定されている場合は、重複をチェックします。 エントリが重複していると判断された場合は、エントリをコピーしないでください。 
+設定CREATE_REPLACE設定されていない場合は、CREATE_CHECK_DUP_STRICT重複を確認します。 エントリが重複と判断された場合は、そのエントリをコピーしない。 
   
-CREATE_REPLACE をサポートする必要はありません。CREATE_REPLACE をサポートしていない場合は、無視して安全にコピーを実行できることを意味します。 
+サポートする必要CREATE_REPLACE。サポートされていないCREATE_REPLACE、安全に無視して、常にコピーを実行できます。 
   
-重複していないエントリをコピーできない場合にのみ、警告 MAPI_W_PARTIAL_COMPLETION を返します。 
+重複しないエントリMAPI_W_PARTIAL_COMPLETIONコピーできない場合にのみ、警告メッセージを返します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-CREATE_CHECK_DUP_LOOSE および CREATE_CHECK_DUP_STRICT フラグを使用して、コンテナーが複製入力チェックを実行する方法をプロバイダーに示します。 重複しているかどうかにかかわらずエントリを追加する必要がある場合は、これらのフラグのどちらも設定しないか、CREATE_REPLACE フラグを設定します。 CREATE_REPLACE は、エントリが重複していてもかまわないことを示します。常に、元のエントリを置換することをお勧めします。 
+コンテナーで重複CREATE_CHECK_DUP_LOOSEチェックCREATE_CHECK_DUP_STRICTする方法をプロバイダーに示すフラグを使用します。 重複するかどうかに関係なく、エントリを追加する必要がある場合は、これらのフラグを設定したり、CREATE_REPLACE フラグを設定したりしません。 CREATE_REPLACEは、エントリが重複している場合は気にしないかどうかを示します。常に元のエントリを置き換える必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

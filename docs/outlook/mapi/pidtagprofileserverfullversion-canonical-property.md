@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8c88a625-da57-3b1d-9887-0a898b722766
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 9456178e9426d7a5fe17382d876f507daa0251f4
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -21,46 +21,46 @@ ms.locfileid: "32341602"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロファイル内のアカウントが接続されている Microsoft Exchange Server の完全なバージョンとビルド情報を指定します。
+プロファイル内のアカウントが接続されているMicrosoft Exchange Server完全なバージョンとビルド情報を指定します。
   
 ## 
 
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_PROFILE_SERVER_FULL_VERSION  <br/> |
-|識別子:  <br/> |0x663b  <br/> |
+|識別子:  <br/> |0x663B  <br/> |
 |プロパティの種類:  <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |MAPI プロファイルの構成  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-プロファイルは、exchange サーバーに接続する1つ以上のアカウントを指定できますが、それらは同じ exchange サーバーに接続されている必要があります。
+プロファイルは、1 つのアカウントに接続する 1 つ以上のアカウントをExchange Server、同じアカウントに接続する必要Exchange Server。
   
-Microsoft Office outlook 2007 より前のバージョンの outlook では、このプロパティはサポートされていません。 これらのバージョンの Outlook では、プロファイルに**[PR_PROFILE_SERVER_VERSION](pidtagprofileserverversion-canonical-property.md)** が存在するかどうかを確認します。 
+2007 Outlook以前Microsoft Office Outlookバージョンでは、このプロパティはサポートされていません。 これらのバージョンのプロファイルOutlookプロファイル **[内にPR_PROFILE_SERVER_VERSION](pidtagprofileserverversion-canonical-property.md)** を確認します。 
   
-通常、アクティブなメールボックスが exchange サーバーに接続されている場合、Outlook 2007 は、アクティブなプロファイルの**PR_PROFILE_SERVER_FULL_VERSION**プロパティに、exchange server の完全なバージョン情報を格納します。 Outlook は、メジャーとマイナーのバージョン番号とメジャーおよびマイナーのビルド番号を含む**EXCHANGE_STORE_VERSION_NUM**構造体に情報を格納します。 たとえば、 **8.0.685.24**の Exchange Server バージョン識別子を格納するために、メジャーバージョン番号は8、マイナーバージョン番号は0、メジャービルド番号は685、マイナービルド番号は24です。
+通常、アクティブなメールボックスが Exchange Server に接続されている場合、Outlook 2007 は、Exchange Server バージョン情報をアクティブ プロファイルの **PR_PROFILE_SERVER_FULL_VERSION** プロパティに保存します。 Outlookは、メジャー バージョン番号とマイナー **バージョン番号EXCHANGE_STORE_VERSION_NUM** メジャービルド番号とマイナー ビルド番号を含むデータ構造に情報を格納します。 たとえば、Exchange Server バージョン識別子 **8.0.685.24** を格納するには、メジャー バージョン番号は 8、マイナー バージョン番号は 0、メジャー ビルド番号は 685、マイナー ビルド番号は 24 です。
   
-**PR_PROFILE_SERVER_VERSION**または**PR_PROFILE_SERVER_FULL_VERSION**のいずれか1つだけがプロファイルに存在する可能性がありますが、プロファイルに常に存在する保証はありません。 Outlook は、Exchange サーバーに正常に接続されるまでは、どちらのプロパティにも書き込みを行いません。 
+プロファイル **にPR_PROFILE_SERVER_VERSIONまたは** PR_PROFILE_SERVER_FULL_VERSIONの1 つだけが存在する可能性がありますが、プロファイルに常に存在する保証はありません。 Outlookに正常に接続するまで、どちらのプロパティにも書き込Exchange Server。 
   
-Outlook オブジェクトモデルでは、 **NameSpace**オブジェクトの**ExchangeMailboxServerVersion**プロパティを使用して、アクティブなメールボックスがホストされている Exchange サーバーのバージョンを検索できます。 
+Outlook オブジェクト モデルでは **、NameSpace** オブジェクトの **ExchangeMailboxServerVersion** プロパティを使用して、アクティブなメールボックスがホストされている Exchange Server のバージョンを検索できます。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティセットの定義を提供します。
+> プロパティ セットの定義を提供します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -70,7 +70,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

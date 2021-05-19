@@ -26,7 +26,7 @@ ms.locfileid: "32349470"
 
 次のコード例の CreateToDoItemExample は、アイテム上で **MarkAsTask** メソッドを呼び出してアイテムを保存することで、To Do アイテムを作成します。 このアイテムには、 [ReminderSet](https://msdn.microsoft.com/library/bb622600\(v=office.15\)) プロパティと [ReminderTime](https://msdn.microsoft.com/library/bb622803\(v=office.15\)) プロパティを使用して、翌日の処理対象を示すマークと翌日の午前 10 時のアラームが設定されます。 その後、[Save()](https://msdn.microsoft.com/library/bb645518\(v=office.15\)) メソッドを使用してアイテムが保存されます。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

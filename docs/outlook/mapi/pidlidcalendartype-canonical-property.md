@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 06e066f1-2b7d-4a6b-b88c-85a9bfa83bd3
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6a33559a3e047890153f6a8e0ab40e49c2bf80cb
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,37 +25,37 @@ ms.locfileid: "32341994"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**dispidapptrecur** ([PidLidAppointmentRecur](pidlidappointmentrecur-canonical-property.md)) プロパティから、calendartype フィールドの値を指定します。
+**dispidApptRecur** ([PidLidAppointmentRecur](pidlidappointmentrecur-canonical-property.md)) プロパティの CalendarType フィールドの値を指定します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |LID_CALENDAR_TYPE  <br/> |
-|プロパティセット:  <br/> |PSETID_Meeting  <br/> |
-|ロング ID (LID):  <br/> |0x0000001c  <br/> |
+|プロパティ セット:  <br/> |PSETID_Meeting  <br/> |
+|長い ID (LID):  <br/> |0x0000001C  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
-|エリア:  <br/> |Meetings  <br/> |
+|エリア:  <br/> |会議  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-会議出席依頼が定期的なアイテムまたは例外を表している場合、これは**dispidapptrecur**プロパティの calendartype フィールドの値です。 それ以外の場合、このプロパティは設定されず、0と見なされます。 
+会議出席依頼が定期的な系列または例外を表す場合、 **これは dispidApptRecur** プロパティの CalendarType フィールドの値です。 それ以外の場合、このプロパティは設定され、0 と見なされます。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティ セットの定義と関連するプロトコル仕様への参照Exchange Server提供します。
     
-[[OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > 予定、会議出席依頼、および応答メッセージのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
 ## <a name="see-also"></a>関連項目
 
@@ -65,7 +65,7 @@ mapidefs.h
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

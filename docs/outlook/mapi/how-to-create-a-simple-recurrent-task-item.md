@@ -19,36 +19,36 @@ ms.locfileid: "32345473"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI を使用して、タスクアイテムを作成することができます。 このトピックでは、単純な定期的なタスクアイテムを作成する方法について説明します。
+MAPI を使用して、タスク アイテムを作成するために作成できます。 このトピックでは、単純な繰り返しタスク アイテムを作成する方法について説明します。
   
-このトピックで参照されている mfcmapi アプリケーションおよび createoutlookitemsaddin プロジェクトからコードをダウンロード、表示、および実行する方法については、[このセクションで使用しているサンプルをインストール](how-to-install-the-samples-used-in-this-section.md)するを参照してください。
+このトピックで参照されている MFCMAPI アプリケーションおよび CreateOutlookItemsAddin プロジェクトからコードをダウンロード、表示、実行する方法については、「このセクションで使用されるサンプルのインストール」を参照 [してください](how-to-install-the-samples-used-in-this-section.md)。
 
-### <a name="to-create-a-task-item"></a>タスクアイテムを作成するには
+### <a name="to-create-a-task-item"></a>タスク アイテムを作成するには
 
-1. メッセージストアを開きます。 メッセージストアを開く方法については、「[メッセージストアを開く](opening-a-message-store.md)」を参照してください。
+1. メッセージ ストアを開きます。 メッセージ ストアを開く方法については、「メッセージ ストアを開 [く」を参照してください](opening-a-message-store.md)。
     
-2. メッセージストアの [タスク] フォルダーを開きます。 詳細については、「 **PR_IPM_TASK_ENTRYID** ([PidTagIpmTaskEntryId](pidtagipmtaskentryid-canonical-property.md))」を参照してください。
+2. メッセージ ストアの [タスク] フォルダーを開きます。 詳細については、「PR_IPM_TASK_ENTRYID **(** [PidTagIpmTaskEntryId)」を参照してください](pidtagipmtaskentryid-canonical-property.md)。
     
-3. 新しいタスクアイテムを作成するには、[タスク] フォルダーの[imapifolder:: CreateMessage](imapifolder-createmessage.md)メソッドを呼び出します。 
+3. タスク フォルダー [の IMAPIFolder::CreateMessage](imapifolder-createmessage.md) メソッドを呼び出して、新しいタスク アイテムを作成します。 
     
-4. タスクを繰り返し作成するために必要な、 **dispidtaskrecur** ([PidLidTaskRecurrence](pidlidtaskrecurrence-canonical-property.md)) プロパティおよびその他のタスク関連のプロパティを設定します。
+4. **dispidTaskRecur** ([PidLidTaskRecurrence](pidlidtaskrecurrence-canonical-property.md)) プロパティと、繰り返しタスクを作成するために必要なその他のタスク関連のプロパティを設定します。
     
-5. 新しいタスクアイテムを保存します。
+5. 新しいタスク アイテムを保存します。
     
-createoutlookitemsaddin プロジェクトの Tasks ソースファイルの関数は、 `AddTask`これらの手順を示しています。 この`AddTask`関数は、mfcmapi サンプルアプリケーションの [ **Addins** ] メニューの [**タスクの追加**] をクリックしたときに表示される [**タスクの追加**] ダイアログボックスのパラメーターを受け取ります。 タスク`DisplayAddTaskDialog` .cpp の関数は、ダイアログボックスを表示し、ダイアログボックスの値を`AddTask`関数に渡します。 この`DisplayAddTaskDialog`関数は MAPI を使用したタスクアイテムの作成に直接関連付けられていないため、ここには記載されていません。 
+`AddTask`CreateOutlookItemsAddin プロジェクトの Tasks.cpp ソース ファイル内の関数は、次の手順を示しています。 この関数は、MFCMAPI サンプル アプリケーションの [Addins] メニューの [タスクの追加] をクリックすると表示される [タスクの追加] ダイアログ ボックスからパラメーター `AddTask` を受け取ります。    `DisplayAddTaskDialog`Tasks.cpp の関数はダイアログ ボックスを表示し、ダイアログ ボックスから関数に値を渡 `AddTask` します。 この関数は、MAPI を使用したタスク アイテムの作成には直接関係しないので、ここに  `DisplayAddTaskDialog` は表示されません。 
   
 > [!IMPORTANT]
-> mfcmapi アプリケーションのコードでは、 **Addins**メニューの [**タスクの追加**] コマンドをクリックしたときに、 **Tasks**フォルダーが選択されているかどうかは確認されません。 タスクフォルダー以外のフォルダーにタスクアイテムを**** 作成すると、未定義の動作が発生することがあります。 mfcmapi アプリケーションの [**タスクの追加**] コマンドを使用する前に、 **Tasks**フォルダーが選択されていることを確認してください。 
+> MFCMAPI アプリケーションのコードでは、[Addins]メニューの [タスクの追加]コマンドをクリックしても、タスク フォルダーが選択された **という保証はありません**。 タスク フォルダー以外のフォルダーにタスク アイテムを作成 **すると、未定義** の動作が発生する可能性があります。 MFCMAPI アプリケーションでタスクの追加コマンドを使用する前に、タスク フォルダーを選択してください。 
   
-`AddTask`関数は以下のとおりです。 関数に渡される_lpfolder_パラメーターは、新しいタスクが作成されるフォルダーを表す[imapifolder](imapifolderimapicontainer.md)インターフェイスへのポインターであることに注意してください。 `AddTask` **imapifolder**インターフェイスを表す_lpfolder_を指定すると、コードは[imapifolder:: CreateMessage](imapifolder-createmessage.md)メソッドを呼び出します。 **CreateMessage**メソッドは、成功コードと、 **IMessage**インターフェイスへのポインターへのポインターを返します。 ほとんどの`AddTask`関数コードは、 [imapiprop:: setprops](imapiprop-setprops.md)メソッドを呼び出すための準備として、プロパティを指定する作業を処理します。 **setprops**メソッドの呼び出しが成功すると、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドが呼び出され、変更をストアにコミットし、新しいタスクアイテムを作成します。 
+関数  `AddTask` の一覧を以下に示します。 関数に  _渡される lpFolder_ パラメーターは、新しいタスクが作成されるフォルダーを表す  `AddTask` [IMAPIFolder](imapifolderimapicontainer.md) インターフェイスへのポインターです。 _IMAPIFolder インターフェイス_ を表す **lpFolder** を指定すると、このコードは [IMAPIFolder::CreateMessage メソッドを呼び出](imapifolder-createmessage.md)します。 **CreateMessage メソッド** は、成功コードと IMessage インターフェイスへのポインター **を返** します。 ほとんどの関数コード  `AddTask` は [、IMAPIProp::SetProps](imapiprop-setprops.md) メソッドを呼び出す準備としてプロパティを指定する作業を処理します。 **SetProps** メソッドの呼び出しが成功すると [、IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドが呼び出され、変更をストアにコミットし、新しいタスク アイテムを作成します。 
   
-関数`AddTask`は、いくつかの名前付きプロパティを設定します。 名前付きプロパティとその作成方法の詳細については、「 [MAPI を使用して Outlook 2007 アイテムを作成する](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)」を参照してください。 タスクアイテムに使用される名前付きプロパティは複数のプロパティセットを使用するため、 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)メソッドに渡すパラメーターを構築するときは、注意を払う必要があります。 
+関数  `AddTask` は、名前付きプロパティの数を設定します。 名前付きプロパティの詳細と作成方法については [、「USING MAPI to Create Outlook 2007 Items」を参照してください](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)。 タスク アイテムに使用される名前付きプロパティは複数のプロパティ セットを占めるので [、IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) メソッドに渡すパラメーターを構築する場合は注意が必要です。 
   
-この`AddTask`関数は、 `BuildWeeklyTaskRecurrencePattern` **dispidtaskrecur**プロパティを設定するためのタスクの繰り返しを表す構造を作成するために、ヘルパー関数を使用します。 関数によっ`BuildWeeklyTaskRecurrencePattern`て作成されるタスクの繰り返し構造の詳細については、「 [PidLidTaskRecurrence 標準プロパティ](pidlidtaskrecurrence-canonical-property.md)と[PidLidRecurrencePattern 標準プロパティ](pidlidrecurrencepattern-canonical-property.md)」を参照してください。 
+この  `AddTask` 関数はヘルパー  `BuildWeeklyTaskRecurrencePattern` 関数を使用して **、dispidTaskRecur** プロパティを設定するためのタスクの定期的な構造を構築します。 関数がビルドするタスクの繰り返し構造の詳細については  `BuildWeeklyTaskRecurrencePattern` [、「PidLidTaskRecurrence 標準プロパティ](pidlidtaskrecurrence-canonical-property.md) 」および [「PidLidRecurrencePattern 標準プロパティ」を参照してください](pidlidrecurrencepattern-canonical-property.md)。 
 
-さまざまな定期的なパターンが可能ですが、関数は`BuildWeeklyTaskRecurrencePattern`週単位の定期的なパターンを作成するだけです。 また、予定表の種類 (グレゴリオ暦)、週の最初の曜日 (日曜日)、変更または削除されたインスタンスの数 (none) など、さまざまな前提条件に対してハードコーディングされています。 一般的な目的パターン作成関数では、これらの種類の変数をパラメーターとして受け入れる必要があります。 
+さまざまな繰り返しパターンが可能ですが、この関数は毎週の定期的なパターン  `BuildWeeklyTaskRecurrencePattern` のみを作成します。 また、カレンダーの種類 (グレゴリオ暦)、週の最初の日 (日曜日)、変更または削除されたインスタンスの数 (なし) など、多くの前提に対してハードコードされています。 より一般的な目的の定期的なパターン作成関数は、これらの種類の変数をパラメーターとして受け入れる必要があります。 
   
-次に、 `AddTask`関数の完全な一覧を示します。 
+関数の完全な一覧を次に示  `AddTask` します。 
   
 ```cpp
 HRESULT AddTask(LPMAPIFOLDER lpFolder,

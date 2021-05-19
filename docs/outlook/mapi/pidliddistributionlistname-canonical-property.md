@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 06fe4d20-c3f5-4f4f-b7b7-5a4f5257079b
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: d3a1229f4d29bae36b90eb1daf0b6426f358b598
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -29,33 +29,33 @@ ms.locfileid: "32341966"
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispiddlname  <br/> |
-|プロパティセット:  <br/> |PSETID_Address  <br/> |
-|ロング ID (LID):  <br/> |0x00008053  <br/> |
+|関連するプロパティ:  <br/> |dispidDLName  <br/> |
+|プロパティ セット:  <br/> |PSETID_Address  <br/> |
+|長い ID (LID):  <br/> |0x00008053  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
-|エリア:  <br/> |連絡先  <br/> |
+|エリア:  <br/> |Contact  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このプロパティの値は、 **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) プロパティの値と同じである必要があります。
+このプロパティの値は、プロパティ ([PidTagDisplayName](pidtagdisplayname-canonical-property.md) **)** プロパティPR_DISPLAY_NAME値と同じにしてください。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
-[[OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
-> 連絡先および個人用配布リストに対して許容されるプロパティと操作を指定します。
+> 連絡先と個人用配布リストで許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
 ## <a name="see-also"></a>関連項目
 
@@ -65,7 +65,7 @@ mapidefs.h
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

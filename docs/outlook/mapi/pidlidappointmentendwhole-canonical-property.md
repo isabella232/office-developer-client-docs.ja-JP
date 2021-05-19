@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f6fd33d6-04fb-4801-a004-fb80a14ca79d
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: eaff90de919c1bdc04983bce32a2aa808ae56013
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -30,34 +30,34 @@ ms.locfileid: "32358899"
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |dispidApptEndWhole  <br/> |
-|プロパティセット:  <br/> |PSETID_Appointment  <br/> |
-|ロング ID (LID):  <br/> |0x0000820E  <br/> |
+|プロパティ セット:  <br/> |PSETID_Appointment  <br/> |
+|長い ID (LID):  <br/> |0x0000820E  <br/> |
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
 |エリア:  <br/> |カレンダー  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このプロパティは、Microsoft Office Outlook オブジェクトモデルの予定の**dispidApptEndWhole**プロパティに対応しています。 
+このプロパティは、オブジェクト モデル内の予定の **dispidApptEndWhole** プロパティMicrosoft Office Outlook対応します。 
   
-これにより、イベントの終了日時が指定されます。協定世界時 (UTC) で、 **dispidapptstartwhole** ([](pidlidappointmentstartwhole-canonical-property.md)) プロパティの値より大きい必要があります。 定期的なアイテムの場合、 **dispidApptEndWhole**プロパティは、定期的なパターンに従って最初のインスタンスの終了日時です。 
+これは、イベントの終了日時を指定します。協定世界時 (UTC) で **、dispidApptStartWhole** ([PidLidAppointmentStartWhole](pidlidappointmentstartwhole-canonical-property.md)) プロパティの値より大きくする必要があります。 定期的な系列の場合 **、dispidApptEndWhole** プロパティは、定期的なパターンに従って最初のインスタンスの終了日時です。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
-[[OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > 予定、会議出席依頼、および応答メッセージのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
 ## <a name="see-also"></a>関連項目
 
@@ -67,7 +67,7 @@ mapidefs.h
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

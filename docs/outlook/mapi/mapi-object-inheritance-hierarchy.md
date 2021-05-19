@@ -19,7 +19,7 @@ ms.locfileid: "32345842"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI オブジェクトによって実装されるすべてのインターフェイスは、オブジェクトの通信を可能にする OLE インターフェイスである[IUnknown](https://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx)から継承されます。 ほとんどのインターフェイスは**IUnknown**から直接継承しますが、他の2つの基本インターフェイスのいずれかを継承します。 [imapiprop: IUnknown](imapipropiunknown.md)または[IMAPIContainer: imapiprop](imapicontainerimapiprop.md)。 次の図は、MAPI の完全な継承階層を示しています。
+MAPI オブジェクトによって実装されたインターフェイスはすべて、最終的に [IUnknown](https://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx)(オブジェクトの通信を可能にする OLE インターフェイス) から継承されます。 ほとんどのインターフェイスは **IUnknown** から直接継承しますが [、IMAPIProp : IUnknown](imapipropiunknown.md) または [IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md). 次の図は、MAPI の完全な継承階層を示しています。
   
 **MAPI 継承階層**
   
@@ -29,5 +29,5 @@ MAPI オブジェクトによって実装されるすべてのインターフェ
 
 - [IMAPIProp : IUnknown](imapipropiunknown.md) 
 - [IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
-- [MAPI のオブジェクトとインターフェイスの概要](mapi-object-and-interface-overview.md)
+- [MAPI オブジェクトとインターフェイスの概要](mapi-object-and-interface-overview.md)
 

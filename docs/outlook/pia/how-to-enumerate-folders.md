@@ -25,7 +25,7 @@ ms.locfileid: "32357401"
 
 次のコード例では、まず EnumerateFoldersInDefaultStore メソッドが [GetRootFolder()](https://msdn.microsoft.com/library/bb645807\(v=office.15\)) メソッドを使用して、既定のストアのルート フォルダーを取得します。 次に、ルート フォルダーで EnumerateFolders メソッドを呼び出します。 EnumerateFolders はルート フォルダーを取得し、ルート フォルダーが表している既定のストアのフォルダーをウォークスルーします。 EnumerateFolders は、まず [Folders](https://msdn.microsoft.com/library/bb646854\(v=office.15\)) プロパティを使用してルートの [Folder](https://msdn.microsoft.com/library/bb645774\(v=office.15\)) オブジェクトのサブフォルダーを取得します。 次に、階層内のすべてのフォルダーを列挙するために、EnumerateFolders が繰り返し呼び出されます。 最後に、EnumerateFolders は各 **Folder** の [FolderPath](https://msdn.microsoft.com/library/bb647409\(v=office.15\)) プロパティを [Listeners](https://msdn.microsoft.com/library/system.diagnostics.debug.listeners.aspx) コレクション内のトレース リスナーに書き込みます。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

@@ -1,5 +1,5 @@
 ---
-title: imapiformsetviewcontext
+title: IMAPIFormSetViewContext
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a7b10007-42d8-4755-8362-f8ad9a8dad68
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 81d99b2bbe6ef7914a4b7d253a3472026872260d
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32350947"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームのビューコンテキストを確立します。 
+フォームのビュー コンテキストを確立します。 
   
 ```cpp
 HRESULT SetViewContext(
@@ -35,35 +35,35 @@ HRESULT SetViewContext(
 
 ## <a name="parameters"></a>パラメーター
 
- _pviewcontext_
+ _pViewContext_
   
-> 順番フォームの新しいビューコンテキストへのポインター。
+> [in]フォームの新しいビュー コンテキストへのポインター。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> ビューコンテキストが正常に設定されました。
+> ビュー コンテキストが正常に設定されました。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-フォームビューアーは、 **imapiform:: setviewcontext**メソッドを呼び出して、特定のフォームビューコンテキストを current として設定します。 フォームは、一度に1つのビューコンテキストのみを持つことができます。 
+フォーム ビューアーは **IMAPIForm::SetViewContext** メソッドを呼び出して、特定のフォーム ビュー コンテキストを現在の形式として確立します。 フォームには、一度に 1 つのビュー コンテキストのみを含めできます。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-ほとんどのフォームサーバーは、次のアルゴリズムを使用して**setviewcontext**を実装します。 
+ほとんどのフォーム サーバーは、 **次のアルゴリズムを使用して SetViewContext** を実装します。 
   
-- フォームのビューコンテキストが既に存在する場合は、 _pmnvs_パラメーターに**null**を指定して[imapiviewcontext:: SetAdviseSink](imapiviewcontext-setadvisesink.md)メソッドを呼び出して、フォームの登録をキャンセルし、ビューコンテキストの[IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)を呼び出します。メソッドは、その参照カウントをデクリメントします。 
+- フォームのビュー コンテキストが既に存在する場合は _、pmnvs_ パラメーターで [IMAPIViewContext::SetAdviseSink](imapiviewcontext-setadvisesink.md) メソッドを null で呼び出してフォームの登録を取り消し、ビュー コンテキストの [IUnknown::Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドを呼び出して参照カウントをデクメントします。 
     
-- 新しいビューコンテキストが**null**でない場合は、 _pviewcontext_パラメーターを使用して**imapiviewcontext:: SetAdviseSink**を呼び出し、新しいビューアドバイズシンクを設定します。 
+- 新しいビュー コンテキストがnull ではない場合は _、pViewContext_ パラメーターを使用して **IMAPIViewContext::SetAdviseSink** を呼び出して、新しいビューアアドバイス シンクを設定します。 
     
-- 新しいビューコンテキストが**null**でない場合は、 [imapiviewcontext:: getviewstatus](imapiviewcontext-getviewstatus.md)メソッドを呼び出して、どの状態フラグが設定されているかを確認します。 
+- 新しいビュー コンテキストが **null** ではない場合は [、IMAPIViewContext::GetViewStatus](imapiviewcontext-getviewstatus.md) メソッドを呼び出して、設定されている状態フラグを決定します。 
     
-- 新しいビューコンテキストが**null**でない場合は、それを格納して、その参照カウントをインクリメントするように[IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx)メソッドを呼び出します。 
+- 新しいビュー コンテキストが **null** ではない場合は、それを格納し、 [その IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx) メソッドを呼び出して参照カウントを増やします。 
     
-- ビューコンテキストに依存するユーザーインターフェイス要素を更新します。 
+- ビュー コンテキストに依存するユーザー インターフェイス要素を更新します。 
     
-**imapiviewcontext:: getviewstatus**から返されるステータスフラグによっては、 **setviewcontext**で他のアクションを実行することもできます。 たとえば、VCSTATUS_NEXT と VCSTATUS_PREV のフラグが返された場合、 **setviewcontext**は新しいビューコンテキストに対して**次**のボタンと**前**のボタンを有効にすることができます。 
+**IMAPIViewContext::GetViewStatus** から返される状態フラグに応じて **、SetViewContext** は他のアクションも実行できます。 たとえば、VCSTATUS_NEXTフラグVCSTATUS_PREV場合 **、SetViewContext** は新しいビュー コンテキストの [次へ] ボタンと[前へ] ボタンを有効にできます。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -71,7 +71,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MAPIFormFunctions  <br/> |createanddisplaynewmailinfolder  <br/> |mfcmapi は、 **imapiform:: setviewcontext**メソッドを使用して、フォームが表示される前にフォーム上に mfcmapi のビューコンテキストを設定します。  <br/> |
+|MAPIFormFunctions.cpp  <br/> |CreateAndDisplayNewMailInFolder  <br/> |MFCMAPI は **IMAPIForm::SetViewContext** メソッドを使用して、フォームが表示される前にフォームに MFCMAPI のビュー コンテキストを設定します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

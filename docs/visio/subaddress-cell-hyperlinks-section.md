@@ -20,9 +20,9 @@ ms.locfileid: "32349323"
 
 リンク先のターゲット図面内での位置を指定します。
   
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-たとえば、アドレスセルが "Drawing1" の場合、サブアドレスセルは "ページ-3" などのページ名を指定できます。 [Address] セルが Microsoft Excel ファイル "Samples" の場合、このセルの値は、ワークシート内のワークシートまたはセル範囲 ("worksheet 関数"、"Sheet1!" など) にすることができます。A1: D10 [Address] セルが "https://www.microsoft.com/office/" の場合、このセルの値は、"solutions" など、ドキュメント内の名前付きアンカーにすることができます。
+たとえば、[アドレス] セルが "Drawing1.vsdx" の場合、[SubAddress] セルは"Page-3" などのページ名を指定できます。 [アドレス] セルが Microsoft Excel ファイル "Samples.xlsx" の場合、このセルの値は、ワークシート内のワークシートまたは範囲 ("Worksheet Functions" や "Sheet1!A1:D10". [アドレス] セルが ""の場合、このセルの値は、"ソリューション" など、ドキュメント内の名前付きアンカー https://www.microsoft.com/office/ になります。
   
 このセルの値は、[**ハイパーリンク**] ダイアログ ボックスで設定することもできます (このダイアログ ボックスを開くには、[**挿入**] タブの [**リンク**] グループで、[**ハイパーリンク**] をクリックします)。
   
@@ -30,14 +30,14 @@ ms.locfileid: "32349323"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | ハイパーリンク  *名前*です。サブアドレスハイパーリンクの名前は、行名です *。*  <br/> |
+| セル名:  <br/> | ハイパーリンク  *name*  .SubAddress where Hyperlink  *.name is the row*  name  <br/> |
    
-プログラムから、インデックスによって [サブ**アドレス**] セルへの参照を取得するには、 **CellsSRC**プロパティを使用し、次の引数を指定します。 
+プログラムからインデックスによって **[SubAddress]** セルへの参照を取得するには **、CellsSRC** プロパティを使用して、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionHyperlink** <br/> |
-| 行インデックス:  <br/> |**visRow1stHyperlink** +  *i* = ** 0、1、2...  <br/> |
-| セル インデックス:  <br/> |**vishlinksubaddress アドレス** <br/> |
+| 行インデックス:  <br/> |**visRow1stHyperlink**  +  *i* *=* 0, 1, 2...  <br/> |
+| セル インデックス:  <br/> |**visHLinkSubAddress** <br/> |
    
 

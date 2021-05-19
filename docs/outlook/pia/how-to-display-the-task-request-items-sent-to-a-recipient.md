@@ -25,7 +25,7 @@ ms.locfileid: "32357422"
 
 [TaskRequestItem](https://msdn.microsoft.com/library/bb610737\(v=office.15\)) オブジェクトは、タスクを別のユーザーに割り当てる依頼を表します。 **TaskRequestItem** は、受信者の受信トレイにアイテムを受信した時点で作成されます。 次のコード例の ShowTaskRequests では、受信者の受信トレイをフィルター処理して [Table](https://msdn.microsoft.com/library/bb652856\(v=office.15\)) オブジェクトを作成し、[MessageClass](https://msdn.microsoft.com/library/bb610592\(v=office.15\)) プロパティの値が **IPM.TaskRequest** と等しい各アイテムの行を挿入します。 受信者の受信トレイ フォルダーの各タスクの件名が、[Listeners](https://msdn.microsoft.com/library/system.diagnostics.debug.listeners.aspx) コレクションのトレース リスナーに書き込まれます。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

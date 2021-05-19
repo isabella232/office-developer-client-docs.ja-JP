@@ -25,7 +25,7 @@ ms.locfileid: "32348875"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージストアプロバイダーからログオフします。 
+メッセージ ストア プロバイダーをログオフします。 
   
 ```cpp
 HRESULT Logoff(
@@ -35,9 +35,9 @@ HRESULT Logoff(
 
 ## <a name="parameters"></a>パラメーター
 
- _lアウトフラグ_
+ _lpulFlags_
   
-> 順番予約語0へのポインターである必要があります。
+> [in]予約済み。はゼロへのポインターである必要があります。
     
 ## <a name="return-value"></a>戻り値
 
@@ -45,13 +45,13 @@ S_OK
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-メッセージストアプロバイダーは、メッセージストアプロバイダーを強制的にシャットダウンする**IMSLogon:: Logoff**メソッドを実装します。 **IMSLogon:: Logoff**は、次の状況で呼び出されます。 
+メッセージ ストア プロバイダーは、メッセージ ストア プロバイダーを強制的にシャットダウンする **IMSLogon::Logoff** メソッドを実装します。 **IMSLogon::Logoff は** 、次の状況で呼び出されます。 
   
-- MAPI は、 [imapisession:: Logoff](imapisession-logoff.md)メソッドを呼び出した後、クライアントからログオフしています。 
+- [IMAPISession::Logoff](imapisession-logoff.md)メソッドの呼び出し後に MAPI がクライアントからログオフしている間。 
     
-- MAPI はメッセージストアプロバイダーからログオフしています。 この場合、 **IMSLogon:: Logoff**は MAPI 処理の一部として呼び出されます。メッセージストアプロバイダーが[IMsgStore:: storelogoff](imsgstore-storelogoff.md)または iunknown を処理しているときに作成する support オブジェクトの[IUnknown:](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) :: **** メッセージストアオブジェクトに対する Release メソッドの呼び出し。 
+- MAPI がメッセージ ストア プロバイダーからログオフしている間。 この場合 **、IMSLogon::Logoff** は、メッセージ ストア オブジェクトの [IMsgStore::StoreLogoff](imsgstore-storelogoff.md)または **IUnknown::Release** メソッド呼び出しの処理中にメッセージ ストア プロバイダーが作成するサポート オブジェクトの [IUnknown::Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドを処理する MAPI の一部として呼び出されます。 
     
 ## <a name="see-also"></a>関連項目
 

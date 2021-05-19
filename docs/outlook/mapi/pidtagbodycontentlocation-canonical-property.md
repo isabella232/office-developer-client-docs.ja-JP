@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: a66d1c64-5c5a-4980-9acd-72448108fd2c
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 90a873174b5b990f165d0b2173efa38fc7df2d9d
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32350940"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MIME コンテンツの場所のヘッダーフィールドの値を格納します。
+MIME Content-Location ヘッダー フィールドの値を格納します。
   
 |||
 |:-----|:-----|
@@ -34,33 +34,33 @@ MIME コンテンツの場所のヘッダーフィールドの値を格納しま
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-これらのプロパティの値を設定するには、mime クライアントは、メッセージ本文にマッピングされている mime エンティティのコンテンツの場所ヘッダーフィールドに必要な値を書き込む必要があります。
+これらのプロパティの値を設定するには、MIME クライアントは、メッセージ本文にマップされる MIME エンティティの Content-Location ヘッダー フィールドに目的の値を書き込む必要があります。
   
-mime リーダーは、このような mime エンティティのコンテンツの場所ヘッダーフィールドの値をこれらのプロパティの値にコピーする必要があります。
+MIME リーダーは、このような MIME エンティティの Content-Location ヘッダー フィールドの値をこれらのプロパティの値にコピーする必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS-OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
-> インターネット標準の電子メールの規則からメッセージオブジェクトに変換します。
+> インターネット標準の電子メール規則からメッセージ オブジェクトに変換します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -70,7 +70,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

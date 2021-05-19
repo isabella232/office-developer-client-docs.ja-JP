@@ -31,7 +31,7 @@ Outlook では、編成と表示を簡単にするためにアイテムを項目
 
 次の例の CreateTextAndCategoryRule では、CategoryExists を使用して、**Categories** コレクション内の "Office" または "Outlook" という名前の分類項目についてユーザーのメール アイテムをチェックします。 分類項目が見つからない場合は、その分類項目が追加されます。 その後、この例では "Office"、"Outlook"、および "2007" を含む文字列の配列を作成します。 この文字列は、評価される条件を表します。 さらに、CreateTextAndCategoryRule では、**TextRuleCondition** オブジェクトの **Text** プロパティと [RuleConditions](https://msdn.microsoft.com/library/bb610965\(v=office.15\)) コレクションの [BodyOrSubject](https://msdn.microsoft.com/library/bb612744\(v=office.15\)) プロパティを使用して、配列内の条件について件名を調べることで分類項目を割り当てるルールを作成します。 条件が一致した場合には、 [RuleActions](https://msdn.microsoft.com/library/bb623146\(v=office.15\)) オブジェクトの [AssignToCategory](https://msdn.microsoft.com/library/bb610113\(v=office.15\)) メソッドを使用して、Office および Outlook の分類項目をアイテムに割り当てます。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

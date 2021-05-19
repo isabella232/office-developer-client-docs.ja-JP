@@ -33,7 +33,7 @@ ms.locfileid: "32356435"
 
 次のコード例の CreateExceptionExample では、定期的な予定の件名を変更します。この予定は、トピック「[定期的な一連の予定から特定の予定を検索する](how-to-find-a-specific-appointment-in-a-recurring-appointment-series.md)」で作成したものです。その後、結果の Exception オブジェクトの AppointmentItem プロパティを使用して、予定の例外に対応する AppointmentItem を取得します。 さらに、CreateExceptionExample では、予定の例外の開始時刻と終了時刻を変更します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

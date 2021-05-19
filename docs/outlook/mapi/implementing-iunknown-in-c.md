@@ -19,15 +19,15 @@ ms.locfileid: "32346775"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-c での[IUnknown:: QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)メソッドの実装は、C++ 実装によく似ています。 実装には、次の2つの基本的な手順があります。 
+C の [IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) メソッドの実装は、C++ の実装と非常に似ています。 実装には、次の 2 つの基本的な手順があります。 
   
-1. パラメーターを検証します。
+1. パラメーターの検証。
     
-2. オブジェクトでサポートされているインターフェイスのリストに対して要求されたインターフェイスの識別子をチェックし、E_NO_INTERFACE 値または有効なインターフェイスポインターを返します。 インターフェイスポインターが返された場合は、参照カウントをインクリメントするために、実装で[IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)メソッドを呼び出す必要もあります。 
+2. 要求されたインターフェイスの識別子をオブジェクトでサポートされているインターフェイスの一覧に対してチェックし、E_NO_INTERFACE値または有効なインターフェイス ポインターを返します。 インターフェイス ポインターが返された場合、実装は [IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) メソッドを呼び出して参照カウントをインクリメントする必要があります。 
     
-c および C++ での**QueryInterface**の実装の主な違いは、c バージョンの最初のパラメーターの追加です。 オブジェクトポインターがパラメータリストに追加されているため、 **QueryInterface**の C 実装は C++ 実装よりも多くのパラメータ検証を行う必要があります。 インターフェイス識別子を確認し、参照カウントを増やして、オブジェクトポインターを返すロジックは、両方の言語で同一である必要があります。 
+C と C++ での **QueryInterface** の実装の主な違いは、C バージョンの追加の最初のパラメーターです。 オブジェクト ポインターがパラメーター リストに追加されるので **、QueryInterface** の C 実装では、C++ 実装よりも多くのパラメーター検証が必要です。 インターフェイス識別子を確認し、参照カウントを増やし、オブジェクト ポインターを返すロジックは、両方の言語で同一である必要があります。 
   
-次のコード例は、ステータスオブジェクトの C で**QueryInterface**を実装する方法を示しています。 
+次のコード例は、状態オブジェクトの **QueryInterface** を C で実装する方法を示しています。 
   
 ```cpp
 STDMETHODIMP STATUS_QueryInterface(LPMYSTATUSOBJ lpMyObj, REFIID riid,
@@ -64,9 +64,9 @@ STDMETHODIMP STATUS_QueryInterface(LPMYSTATUSOBJ lpMyObj, REFIID riid,
 
 ```
 
-c での**AddRef**メソッドの実装は c++ 実装に似ていますが、 [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx)メソッドの C 実装は、c++ のバージョンよりも凝ったものにすることができます。 これは、オブジェクトを解放するための機能の多くが C++ のコンストラクタおよびデストラクターに組み込まれる可能性があるため、C にはそのような機構がありません。 この機能はすべて、 **Release**メソッドに含める必要があります。 また、追加のパラメーターとその明示的な vtable があるため、より多くの検証が必要になります。 
+C の **AddRef** メソッドの実装は C++ 実装に似ていますが [、IUnknown::Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) メソッドの C 実装は、C++ バージョンよりも複雑な場合があります。 これは、オブジェクトの解放に関連する機能の多くを C++ コンストラクターとデストラクタに組み込み、C にはそのようなメカニズムがないためです。 この機能はすべて Release メソッドに含める **必要** があります。 また、追加のパラメーターとその明示的な vtable のために、より多くの検証が必要です。 
   
-次の**AddRef**メソッドの呼び出しは、status オブジェクトの一般的な C 実装を示しています。 
+次の **AddRef メソッド** 呼び出しは、状態オブジェクトの一般的な C 実装を示しています。 
   
 ```cpp
 STDMETHODIMP_(ULONG) STATUS_AddRef(LPMYSTATUSOBJ lpMyObj)
@@ -90,13 +90,13 @@ STDMETHODIMP_(ULONG) STATUS_AddRef(LPMYSTATUSOBJ lpMyObj)
 
 ```
 
-次のコード例は、C status オブジェクトの**リリース**の一般的な実装を示しています。 参照カウントがデクリメントされた後に0の場合、C status オブジェクトの実装では、次のタスクを実行する必要があります。 
+次のコード例は、C 状態オブジェクトの **リリースの** 一般的な実装を示しています。 参照カウントがデクリメント後に 0 の場合、C 状態オブジェクトの実装は次のタスクを実行する必要があります。 
   
-- オブジェクトへのすべての保持ポインターを解放します。 
+- オブジェクトへの保持されているポインターを解放します。 
     
-- vtable を NULL に設定して、オブジェクトのユーザーが**Release**という名前のオブジェクトを引き続き使用していた場合のデバッグを容易にします。 
+- vtable を NULL に設定すると、Release という名前のオブジェクトのユーザーがまだオブジェクトの使用を試み続けた場合のデバッグが容易になります。 
     
-- **MAPIFreeBuffer**を呼び出して、オブジェクトを解放します。 
+- **MAPIFreeBuffer を呼び出** してオブジェクトを解放します。 
     
 ```cpp
 STDMETHODIMP_(ULONG) STATUS_Release(LPMYSTATUSOBJ lpMyObj)

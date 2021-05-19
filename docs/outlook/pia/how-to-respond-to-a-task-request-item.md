@@ -25,7 +25,7 @@ ms.locfileid: "32357394"
 
 次のコード サンプルでは、AcceptTaskRequest は [TaskRequestItem](https://msdn.microsoft.com/library/bb610737\(v=office.15\)) オブジェクトの [GetAssociatedTask(Boolean)](https://msdn.microsoft.com/library/bb645779\(v=office.15\)) メソッドを使用して [TaskItem](https://msdn.microsoft.com/library/bb624227\(v=office.15\)) オブジェクトを取得します。 次に、パラメーターを [olTaskAccept](https://msdn.microsoft.com/library/bb624484\(v=office.15\)) に設定した [Respond(OlTaskResponse, Object, Object)](https://msdn.microsoft.com/library/bb644188\(v=office.15\)) メソッドを呼び出して、タスクの依頼を承諾します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

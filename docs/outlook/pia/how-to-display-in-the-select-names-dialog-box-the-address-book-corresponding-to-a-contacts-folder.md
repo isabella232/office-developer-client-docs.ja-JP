@@ -1,5 +1,5 @@
 ---
-title: 連絡先フォルダーに対応するアドレス帳を [名前の選択] ダイアログ ボックスに表示する
+title: Contacts フォルダーに対応するアドレス帳を [名前の選択] ダイアログ ボックスに表示する
 TOCTitle: Display in the Select Names dialog box the address book corresponding to a Contacts folder
 ms:assetid: 6cbfc843-51b5-4841-bbb1-14b93a35ba78
 ms:mtpsurl: https://msdn.microsoft.com/library/Bb610437(v=office.15)

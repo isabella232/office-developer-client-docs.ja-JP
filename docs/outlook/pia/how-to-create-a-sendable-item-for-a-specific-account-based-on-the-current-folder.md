@@ -25,7 +25,7 @@ ms.locfileid: "32349533"
 
 このトピックでは、プログラムを使用して送信可能なアイテムを特定の送信元アカウントで作成する方法を説明します。 このトピックには、アクティブなエクスプローラー内の現在のフォルダーによって判別される特定のアカウントに対する [MailItem](https://msdn.microsoft.com/library/bb643865\(v=office.15\)) と [AppointmentItem](https://msdn.microsoft.com/library/bb645611\(v=office.15\)) を作成する方法を示す 2 つのコード例があります。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;
@@ -33,7 +33,7 @@ using Outlook = Microsoft.Office.Interop.Outlook;
 
 1 番目の方法では、CreateMailItemFromAccount はまず、現在のフォルダーのストア ([Store](https://msdn.microsoft.com/library/bb612742\(v=office.15\)) プロパティから取得) をセッションの [Accounts](https://msdn.microsoft.com/library/bb646328\(v=office.15\)) コレクションで定義されている各アカウントの既定の配信ストア ([DeliveryStore](https://msdn.microsoft.com/library/ff185090\(v=office.15\)) プロパティで取得) と照合して、適切なアカウントを識別します。 CreateMailItemFromAccount は **MailItem** を作成します。 
 
-アイテムをアカウントに関連付けるために、CreateMailItemFromAccount は account.CurrentUser.AddressEntry のプロパティを**MailItem**の[Sender](https://msdn.microsoft.com/library/ff184720\(v=office.15\)) プロパティとして設定してアカウントのユーザーをアイテムの送信者として割り当てます。 Sender プロパティの割り当て作業は大事なステップです。送信者を指定しない場合、既定でプライマリ アカウントに **MailItem** が作成されます。 メソッドの最後で、CreateMailItemFromAccount は **MailItem** を表示します。 なお、現在のフォルダーが配信ストアにない場合は、CreateMailItemFromAccount は現在のセッションのプライマリ アカウントに **MailItem** を作成します。
+アイテムをアカウントに関連付けるために、CreateMailItemFromAccount は account.CurrentUser.AddressEntry のプロパティを **MailItem** の [Sender](https://msdn.microsoft.com/library/ff184720\(v=office.15\)) プロパティとして設定してアカウントのユーザーをアイテムの送信者として割り当てます。 Sender プロパティの割り当て作業は大事なステップです。送信者を指定しない場合、既定でプライマリ アカウントに **MailItem** が作成されます。 メソッドの最後で、CreateMailItemFromAccount は **MailItem** を表示します。 なお、現在のフォルダーが配信ストアにない場合は、CreateMailItemFromAccount は現在のセッションのプライマリ アカウントに **MailItem** を作成します。
 
 ```csharp
 private void CreateMailItemFromAccount()

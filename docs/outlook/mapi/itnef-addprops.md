@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e85641fb-6d3c-494a-981c-01781c7bf5bb
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 6a7bb7265d29d2acfce17a1a09c95f7f7b539064
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32348623"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-呼び出し元のサービスプロバイダーまたはゲートウェイが、メッセージまたは添付ファイルのカプセル化にプロパティを追加できるようにします。 
+呼び出し元のサービス プロバイダーまたはゲートウェイが、メッセージまたは添付ファイルのカプセル化にプロパティを追加できます。 
   
 ```cpp
 HRESULT AddProps(
@@ -40,43 +40,43 @@ HRESULT AddProps(
 
  _ulFlags_
   
-> 順番カプセル化に対してプロパティを含めるか除外するかを制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]カプセル化にプロパティを含めるか、カプセル化から除外する方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 TNEF_PROP_ATTACHMENTS_ONLY 
   
-> メッセージ内の添付ファイルの一部である_lpproplist_パラメーターのプロパティのみをエンコードします。 
+> メッセージの添付ファイルの一部である  _lpPropList_ パラメーターのプロパティのみをエンコードします。 
     
 TNEF_PROP_CONTAINED 
   
-> _ulの id_パラメーターで指定された添付ファイルからのみ、プロパティをエンコードします。 _lpvdata_パラメーターが NULL でない場合、指定されたデータは、 **PR_ATTACH_TRANSPORT_NAME** ([PidTagAttachTransportName](pidtagattachtransportname-canonical-property.md)) プロパティによって示されるファイルの添付ファイルのカプセル化に書き込まれます。
+> _ulElemID_ パラメーターで指定された添付ファイルのプロパティのみをエンコードします。 _lpvData_ パラメーターが NULL ではない場合、指すデータは **、PR_ATTACH_TRANSPORT_NAME** ([PidTagAttachTransportName](pidtagattachtransportname-canonical-property.md)) プロパティで示されるファイル内の添付ファイルのカプセル化に書き込まれます。
     
 TNEF_PROP_CONTAINED_TNEF 
   
-> _ulの id_パラメーターで指定されたメッセージまたは添付ファイルからのプロパティのみをエンコードします。 このフラグが設定されている場合、 _lpvdata_の値は[IStream](https://docs.microsoft.com/windows/desktop/api/objidl/nn-objidl-istream)ポインターである必要があります。 
+> _ulElemID_ パラメーターで指定されたメッセージまたは添付ファイルのプロパティのみをエンコードします。 このフラグが設定されている場合  _、lpvData の値は_ [IStream ポインターである必要](https://docs.microsoft.com/windows/desktop/api/objidl/nn-objidl-istream) があります。 
     
 TNEF_PROP_EXCLUDE 
   
-> _lpproplist_パラメーターで指定されていないすべてのプロパティをエンコードします。 
+> lpPropList パラメーターで指定されていないすべての  _プロパティをエンコード_ します。 
     
 TNEF_PROP_INCLUDE 
   
-> _lpproplist_で指定されたすべてのプロパティをエンコードします。 
+> lpPropList で指定されたプロパティ  _をエンコードします_。 
     
 TNEF_PROP_MESSAGE_ONLY 
   
-> メッセージ自体の一部である_lpproplist_で指定されたプロパティのみをエンコードします。 
+> メッセージ自体の一部である  _lpPropList_ で指定されたプロパティのみをエンコードします。 
     
- _ulの id_
+ _ulElemID_
   
-> 順番添付ファイルの**PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) プロパティ。親メッセージの添付ファイルを一意に識別する番号を含みます。 _ulの id_パラメーターは、添付ファイルに対して特別な処理が要求された場合に使用されます。 ulflags パラメーターに TNEF_PROP_CONTAINED または TNEF_PROP_CONTAINED_TNEF フラグが設定されていない場合、 __ _ulの id_パラメーターは0である必要があります。 
+> [in]添付ファイル **のPR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) プロパティで、親メッセージ内の添付ファイルを一意に識別する番号が含まれる。 _ulElemID パラメーター_ は、添付ファイルに対して特別な処理が要求される場合に使用されます。 _ulElemID_ パラメーターは _、ulFlags_ パラメーターで TNEF_PROP_CONTAINEDまたはTNEF_PROP_CONTAINED_TNEFフラグが設定されていない限り、0 である必要があります。 
     
- _lpvdata_
+ _lpvData_
   
-> 順番_ulの id_で指定された添付ファイルのデータの置換に使用される添付ファイルデータへのポインター。 _lpvdata_パラメーターは、TNEF_PROP_CONTAINED または TNEF_PROP_CONTAINED_TNEF が_ulflags_で設定されていない限り、NULL である必要があります。
+> [in]  _ulElemID_ で指定された添付ファイルのデータを置き換えるのに使用される添付ファイル データへのポインター。 _lpvData パラメーター_ は _、ulFlags_ でTNEF_PROP_CONTAINEDまたはTNEF_PROP_CONTAINED_TNEF場合をTNEF_PROP_CONTAINED_TNEF NULL である必要があります。
     
- _lpproplist_
+ _lpPropList_
   
-> 順番カプセル化に含める、またはカプセル化から除外するプロパティのリストへのポインター。
+> [in]カプセル化に含める、またはカプセル化から除外するプロパティの一覧へのポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -84,13 +84,13 @@ S_OK
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-トランスポートプロバイダー、メッセージストアプロバイダー、ゲートウェイは、 **ITnef:: addprops**メソッドを呼び出して、メッセージまたは添付ファイルのトランスポートニュートラルカプセル化形式 (TNEF) の処理に含めるか、除外するプロパティを一覧表示します。 連続呼び出しを使用することにより、プロバイダーまたはゲートウェイは、追加およびエンコードするプロパティのリストを指定したり、エンコードから除外したりすることができます。 プロバイダーとゲートウェイでは、 **addprops**を使用して、特別な処理添付ファイルに関する情報を指定することもできます。 
+トランスポート プロバイダー、メッセージ ストア プロバイダー、およびゲートウェイは **、ITnef::AddProps** メソッドを呼び出して、メッセージまたは添付ファイルの Transport-Neutral カプセル化形式 (TNEF) 処理に含まれるプロパティまたは除外されるプロパティを一覧表示します。 プロバイダーまたはゲートウェイは、連続した呼び出しを使用して、追加およびエンコードまたはエンコードから除外するプロパティの一覧を指定できます。 プロバイダーとゲートウェイは **、AddProps** を使用して、特別な処理添付ファイルに関する情報を提供することもできます。 
   
- **addprops**は、 [OpenTnefStream](opentnefstream.md)または[OpenTnefStreamEx](opentnefstreamex.md)関数の TNEF_ENCODE フラグを使用して開かれた TNEF オブジェクトに対してのみサポートされます。 
+ **AddProps** は [、OpenTnefStream または OpenTnefStreamEx](opentnefstream.md) 関数の TNEF_ENCODE フラグで開いた TNEF オブジェクト [でのみサポート](opentnefstreamex.md) されます。 
   
-[ITnef:: Finish](itnef-finish.md)メソッドが呼び出されるまで、 **addprops**では実際の TNEF エンコードは行われません。 この機能は、 **addprops**に渡されるポインターが、呼び出しが**完了**するまで有効なままである必要があることを意味します。 この時点で、 **addprops**呼び出しを使用して渡されたすべてのオブジェクトとデータを解放または解放することができます。 
+[ITnef::Finish](itnef-finish.md)メソッドが呼び出されるまで **、AddProps** の実際の TNEF エンコードは発生しない点に注意してください。 この機能は **、AddProps** に渡されるポインターは、Finish の呼び出しが行われた後まで有効なまま **である必要があります** 。 その時点で **、AddProps** 呼び出しで渡されたオブジェクトとデータはすべて解放または解放できます。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -98,7 +98,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ファイル .cpp  <br/> |SaveToTNEF  <br/> |mfcmapi は、 **ITnef:: addprops**メソッドを使用して、メッセージから TNEF ストリームにプロパティをコピーします。  <br/> |
+|File.cpp  <br/> |SaveToTNEF  <br/> |MFCMAPI は **、ITnef::AddProps** メソッドを使用して、メッセージから TNEF ストリームにプロパティをコピーします。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

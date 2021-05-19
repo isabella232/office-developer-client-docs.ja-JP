@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ca1ea5ec-20d5-4b70-95de-c2246a10beae
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3c2ddb5da9202e9cf0d1c78da1c1ad085ef9687c
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,37 +25,37 @@ ms.locfileid: "32357800"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-この会議が表す会議の招待状が送信されているかどうかを示します。
+この会議が表す会議の招待が送信されたかどうかを示します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidfinvited  <br/> |
-|プロパティセット:  <br/> |PSETID_Appointment  <br/> |
-|ロング ID (LID):  <br/> |0x00008229  <br/> |
+|関連するプロパティ:  <br/> |dispidFInvited  <br/> |
+|プロパティ セット:  <br/> |PSETID_Appointment  <br/> |
+|長い ID (LID):  <br/> |0x00008229  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|エリア:  <br/> |Meetings  <br/> |
+|エリア:  <br/> |会議  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-値が FALSE の場合、またはこのプロパティが存在しない場合は、会議出席依頼が送信されていないことを示します。 TRUE の値は、会議出席依頼が送信されたことを示します。 会議でこの値を TRUE に設定すると、変更する必要はありません。
+FALSE の値、またはこのプロパティがない場合は、会議出席依頼が送信されたことがないことを示します。 TRUE の値は、会議出席依頼が送信されたかどうかを示します。 会議でこの値を TRUE に設定した後は、変更できません。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
-[[OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > 予定、会議出席依頼、および応答メッセージのプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
 ## <a name="see-also"></a>関連項目
 
@@ -65,7 +65,7 @@ mapidefs.h
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

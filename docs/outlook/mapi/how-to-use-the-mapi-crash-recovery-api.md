@@ -17,11 +17,11 @@ ms.locfileid: "32346425"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックには、C++ のコードサンプルが含まれています。このコードは、[アン handledexceptionfilter](https://msdn.microsoft.com/library/ms681401%28VS.85%29.aspx)関数から[mapicrashrecovery](mapicrashrecovery.md)関数を呼び出す方法を示しています。 [mapicrashrecovery](mapicrashrecovery.md)関数は、個人用フォルダーファイル (PST) またはオフラインフォルダーファイル (OST) の共有メモリの状態をチェックします。 
+このトピックでは[、UnhandledExceptionFilter](https://msdn.microsoft.com/library/ms681401%28VS.85%29.aspx)関数から[MAPICrashRecovery](mapicrashrecovery.md)関数を呼び出す方法を示す C++ のコード サンプルを示します。 [MAPICrashRecovery 関数は](mapicrashrecovery.md)、個人用フォルダー ファイル (PST) またはオフライン フォルダー ファイル (OST) 共有メモリの状態をチェックします。 
 
-メモリが一貫した状態にある場合、 [mapicrashrecovery](mapicrashrecovery.md)関数はデータをディスクに移動し、プロセスが終了するまで追加の読み取りまたは書き込みアクセスを禁止します。 プロセスが終了する前に、pst または ost が一貫した状態になっていることを確認することにより、microsoft outlook 2010 または microsoft outlook 2013 が次のエラーメッセージを表示しないようにして、パフォーマンスの問題を回避することができます。 
+メモリが一貫性のある状態にある場合 [、MAPICrashRecovery](mapicrashrecovery.md) 関数はデータをディスクに移動し、プロセスが終了するまで読み取りまたは書き込みアクセスを防止します。 プロセスが終了する前に PST または OST が一貫性のある状態に保たれた場合、Microsoft Outlook 2010 または Microsoft Outlook 2013 が次のエラー メッセージを表示しないようにし、パフォーマンスの問題を回避できます。 
   
-**データファイルが前回使用され、問題がないかチェックされているときに、データファイルが正常に閉じられませんでした。チェックが進行している間は、パフォーマンスが影響を受ける可能性があります。**
+**前回使用したデータ ファイルが正しく閉じなかったので、問題がチェックされています。チェックの進行中にパフォーマンスが影響を受ける可能性があります。**
   
 ```cpp
 LONG WINAPI UnhandledExceptionFilter(__in EXCEPTION_POINTERS* pep) 

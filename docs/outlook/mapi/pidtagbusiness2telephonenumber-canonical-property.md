@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 53d94bdb-b95b-48de-bbad-1263ff53e379
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 3fdfd8b4c2b1b71b3f3e8f6584b71d9d6b0cf424
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,44 +25,44 @@ ms.locfileid: "32345732"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-受信者の勤務先のセカンダリ電話番号が含まれています。 
+受信者のビジネスの場所にセカンダリ電話番号が含まれる。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_BUSINESS2_TELEPHONE_NUMBER、PR_BUSINESS2_TELEPHONE_NUMBER_A、PR_BUSINESS2_TELEPHONE_NUMBER_W、PR_OFFICE2_TELEPHONE_NUMBER、PR_OFFICE2_TELEPHONE_NUMBER_A、PR_OFFICE2_TELEPHONE_NUMBER_W  <br/> |
-|識別子:  <br/> |0x3a1b  <br/> |
+|識別子:  <br/> |0x3A1B  <br/> |
 |データの種類 :   <br/> |PT_UNICODE、PT_STRING8  <br/> |
-|エリア:  <br/> |連絡先  <br/> |
+|エリア:  <br/> |Contact  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-これらのプロパティは、受信者に関する id とアクセス情報を提供するプロパティの例です。 これらのプロパティは、受信者と受信者の組織によって定義されます。 
+これらのプロパティは、受信者に関する識別情報とアクセス情報を提供するプロパティの例です。 これらのプロパティは、受信者と受信者の組織によって定義されます。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
-> 連絡先および個人用配布リストオブジェクトに対して許容されるプロパティと操作を指定します。
+> 連絡先および個人用配布リスト オブジェクトに対して許容されるプロパティと操作を指定します。
     
-[[OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
-> ユーザー、連絡先、グループ、およびリソースのリストのプロパティと操作を指定します。
+> ユーザー、連絡先、グループ、およびリソースの一覧のプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
+> 関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -75,7 +75,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -25,7 +25,7 @@ ms.locfileid: "32356386"
 
 [Selection](https://msdn.microsoft.com/library/bb612099\(v=office.15\)) オブジェクトには、アクティブな Outlook エクスプローラーで現在選択されている Outlook アイテムのセットが含まれています。 [ActiveExplorer()](https://msdn.microsoft.com/library/bb647410\(v=office.15\)) で表されるアクティブなエクスプローラーも、選択されたアイテムのセットも、選択されているアイテムの種類を示しません。 通常、最初にアイテムの種類を識別して、その種類に応じた固有の **Display** メソッドを呼び出す必要があります。 **Display** メソッドはすべての Outlook アイテム オブジェクトに共通していて、このメソッドは OutlookItem ヘルパー クラスに含まれているため、このヘルパー クラスを利用して、OutlookItem オブジェクトのインスタンスである myItem を宣言すると、myItem.Display を使用して選択された各アイテムを表示できます。 OutlookItem ヘルパー クラスの実装方法は、「[ヘルパー クラスを作成し、Outlook アイテムの共通メンバーにアクセスする](how-to-create-a-helper-class-to-access-common-outlook-item-members.md)」を参照してください。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

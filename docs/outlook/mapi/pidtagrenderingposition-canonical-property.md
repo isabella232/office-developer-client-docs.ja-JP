@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: bce46687-17dc-4a3f-96be-303d8755158e
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: d463be4a14ecf478bdcbddc50b4ad9360829befc
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,46 +25,46 @@ ms.locfileid: "32355154"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メインメッセージテキスト内で添付ファイルをレンダリングするときに使用するオフセット (文字数) を含みます。
+メイン メッセージ テキスト内の添付ファイルのレンダリングに使用するオフセットを文字で含む。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_RENDERING_POSITION  <br/> |
-|識別子:  <br/> |0x370b  <br/> |
+|識別子:  <br/> |0x370B  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |MAPI 添付ファイル  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-指定したオフセットが-1 (0xffffffff) の場合、添付ファイルはこのプロパティを使用してレンダリングされません。 -1 以外のすべての値は、添付ファイルがレンダリングされる**PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) プロパティ内の位置を示します。
+指定されたオフセットが -1 (0xFFFFFFFF) の場合、添付ファイルは、このプロパティを使用してレンダリングされません。 -1 以外のすべての値は、添付 **ファイルを** レンダリングする PR_BODY ([PidTagBody](pidtagbody-canonical-property.md)) プロパティ内の位置を示します。
   
- **メモ****PR_BODY**でこのプロパティによって示される文字は、添付ファイルに置き換えられます。 通常、この文字はスペースですが、特別なプレースホルダー文字を使用することもできます。 
+ **メモ** ファイル内のこのプロパティで示 **PR_BODY** は添付ファイルに置き換えられる。 通常、この文字はスペースですが、特別なプレースホルダー文字も使用できます。 
   
-このプロパティは、文字で表されます。 一部の文字セットでは、これはバイト数と同じではありません。 Unicode アプリケーションは、2バイト文字に基づいて位置を計算できます。 2バイト文字セット (DBCS) アプリケーションがこのプロパティ値までテキストをスキャンする必要があるのは、文字ごとに1文字と2バイトの文字表現が異なるためです。
+このプロパティは文字で表されます。 一部の文字セットでは、これはバイトと同等ではありません。 Unicode アプリケーションは、2 バイト文字に基づいて位置を計算できます。 Double-Byte文字セット (DBCS) アプリケーションは、文字表現が 1 文字あたり 1 バイトから 2 バイトの間で異なっているので、このプロパティ値までテキストをスキャンする必要があります。
   
-このプロパティは、リッチテキスト形式 (RTF) テキストには使用しないでください。 レンダリング位置は、RTF では、オブジェクトの添付ファイルプレースホルダーと呼ばれるエスケープシーケンスによって示されます。 このシーケンスは、文字列`\objattph`の後に1つの文字 (通常はスペース) で構成され、添付ファイルのレンダリングによって置き換えられます。 
+このプロパティは、リッチ テキスト形式 (RTF) テキストと一緒に使用する必要があります。 レンダリング位置は、オブジェクト添付ファイルプレースホルダーと呼ばれるエスケープ シーケンスによって RTF で示されます。 このシーケンスは、文字列の後に単一の文字 (通常はスペース) が続き、添付ファイルのレンダリングに置き  `\objattph` 換えられる文字列で構成されます。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> メッセージと添付ファイルオブジェクトを処理します。
+> メッセージ オブジェクトと添付ファイル オブジェクトを処理します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -74,7 +74,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

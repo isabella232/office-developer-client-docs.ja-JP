@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: bde195cd-ca24-4715-8db7-04ab83ba8a3c
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: d12a3b7a4cf8ebed610d9326fb878059595d4d1e
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32356750"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-HTML 形式のメッセージ本文のテキストが含まれています。
+メッセージ本文のテキストを HTML 形式で格納します。
   
 |||
 |:-----|:-----|
@@ -38,39 +38,39 @@ HTML 形式のメッセージ本文のテキストが含まれています。
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> OXO プリフィックス付きのドキュメントで記述されているオブジェクトで使用される各プロパティを定義します。
+> MS-OXO プレフィックス付きドキュメントで記述されているオブジェクトで使用される各プロパティを定義します。
     
-[[MS OXBBODY]](https://msdn.microsoft.com/library/98296160-746e-4b25-8d45-676dabebb57d%28Office.15%29.aspx)
+[[MS-OXBBODY]](https://msdn.microsoft.com/library/98296160-746e-4b25-8d45-676dabebb57d%28Office.15%29.aspx)
   
 > メッセージ本文に関連するプロパティを定義します。
     
-[[OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS-OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
-> インターネット標準の電子メールの規則からメッセージオブジェクトに変換します。
+> インターネット標準の電子メール規則からメッセージ オブジェクトに変換します。
     
-[[OXOPOST]](https://msdn.microsoft.com/library/9b18fdab-aacd-4d73-9534-be9b6ba2f115%28Office.15%29.aspx)
+[[MS-OXOPOST]](https://msdn.microsoft.com/library/9b18fdab-aacd-4d73-9534-be9b6ba2f115%28Office.15%29.aspx)
   
-> post オブジェクトで許容されるプロパティと操作を指定します。
+> ポスト オブジェクトで許容されるプロパティと操作を指定します。
     
-[[OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
+[[MS-OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
   
-> 権限が管理されたエンコード済みメッセージのプロパティを指定します。
+> 権限で管理されたエンコードされたメッセージのプロパティを指定します。
     
-[[OXORSS]](https://msdn.microsoft.com/library/53bc9634-0040-4b5a-aecd-29781d826009%28Office.15%29.aspx)
+[[MS-OXORSS]](https://msdn.microsoft.com/library/53bc9634-0040-4b5a-aecd-29781d826009%28Office.15%29.aspx)
   
 > RSS アイテムを表すプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -80,7 +80,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

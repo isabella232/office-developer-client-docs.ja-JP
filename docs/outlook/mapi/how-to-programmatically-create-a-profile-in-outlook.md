@@ -15,7 +15,7 @@ ms.locfileid: "32345942"
 ---
 # <a name="programmatically-create-a-profile-in-outlook"></a>Outlook でプログラムによりプロファイルを作成する
 
-**適用**対象: Office 365 |Outlook |Outlook 2016 
+**適用対象**: Office 365 |Outlook |Outlook 2016 
 
 ���̃g�s�b�N�ł́A�v���O������g�p���āA�v���t�@�C�� �I�u�W�F�N�g�� **emsuid** ] �Z�N�V������ MAPI �v���p�e�B��ǉ����� Outlook 2016 �Ńv���t�@�C����X�V������@�ɂ��Đ�����܂��B 
 

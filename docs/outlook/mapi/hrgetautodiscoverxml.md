@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 03691187-7c65-620b-576f-6ebe62a80830
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 77f28654ffe0f6f459fde229bb7428f2c39e96c0
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,13 +25,13 @@ ms.locfileid: "32347804"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Microsoft Exchange 2007 サーバーの自動検出サービスから取得された情報を表す、拡張マークアップ言語 (XML) ストリームを返します。
+Microsoft Exchange 2007 サーバーの自動検出サービスから取得された情報を表す拡張可能マークアップ言語 (XML) ストリームを返します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|エクスポート対象:  <br/> |olmapi32  <br/> |
+|次の方法でエクスポートされます。  <br/> |olmapi32.dll  <br/> |
 |呼び出し元:  <br/> |クライアント  <br/> |
 |実装元:  <br/> |Outlook  <br/> |
    
@@ -49,23 +49,23 @@ HRESULT HrGetAutoDiscoverXML(
 
  _pwzAddress_
   
-> 順番自動検出情報を取得するアカウントの、null で終了する簡易メール転送プロトコル (SMTP) 電子メールアドレス。
+> [in]自動検出情報を取得するアカウントの NULL 終端の簡易メール転送プロトコル (SMTP) 電子メール アドレス。
     
  _pwzPassword_
   
-> 順番_pwzAddress_によって指定されたアカウントのパスワード (省略可能)。 _pwzAddress_で指定されたアカウントがパスワードを必要としない場合、任意のパスワードを渡しても効果はありません。 
+> [in]  _pwzAddress_ で指定されたアカウントのオプションのパスワードです。 _pwzAddress_ で指定されたアカウントにパスワードが必要ない場合、パスワードを渡しても効果はありません。 
     
- _hcancelevent_
+ _hCancelEvent_
   
-> 順番省略可能で、操作を取り消すために使用できる、未設定の Win32 イベントハンドル。 操作を取り消すには、イベントを設定し、イベントハンドルを_hcancelevent_として渡します。操作をキャンセルしない場合は、 **null**を渡します。 イベントハンドルを表さない値を渡すと、無効になり、関数は無視されます。 
+> [in]オプションであり、操作をキャンセルするために使用できる、設定されていない Win32 イベント ハンドル。 操作をキャンセルするには、イベントを設定し、イベント ハンドルを  _hCancelEvent として渡します_。操作 **をキャンセル** しない場合は null を渡します。 イベント ハンドルを表す値を渡しても効果が無く、関数によって無視されます。 
     
  _ulFlags_
   
-> 順番このパラメーターは使用されません。 0である必要があります。
+> [in]このパラメーターは使用されません。 0 である必要があります。
     
- _ppxmlstream_
+ _ppXmlStream_
   
-> 読み上げautodiscovery XML を含む[IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)オブジェクトへのポインター。 autodiscovery 操作が失敗した場合は**null**を返します。 [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)オブジェクトの使用が終了したら解放する必要があります。 
+> [out]自動検出 XML を含む [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) オブジェクトへのポインター。 自動検出 **操作が失敗** した場合は null を返します。 [終了したら、IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)オブジェクトを解放する必要があります。 
     
 ## <a name="return-values"></a>戻り値
 
@@ -75,18 +75,18 @@ S_OK
     
 E_INVALIDARG 
   
--  _pwzAddress_が**null**であるか、有効な SMTP アドレスではありません。または、 _ppxmlstream_は[IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)オブジェクトへの**null**ポインターです。 
+-  _pwzAddress は_ **null** か、有効な SMTP アドレスではないか _、ppXmlStream_ は [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)オブジェクトへの **null** ポインターです。 
     
 MAPI_E_NOT_FOUND 
   
-- クライアントコンピューターがネットワークに接続されていない、クライアントコンピューターが Microsoft exchange 2007 サーバーに接続されていない、 _pwzAddress_が exchange 2007 サーバーのアカウントではない、または exchange をサポートしていないアカウントである_pwzAddress_自動検出サービス。 
+- クライアント コンピューターがネットワークに接続されていない、クライアント コンピューターが Microsoft Exchange 2007 サーバーに接続されていない _、pwzAddress_ が Exchange 2007 サーバー上のアカウントではない、または _pwzAddress_ が Exchange 自動検出サービスをサポートしていないアカウントです。 
     
 MAPI_E_USER_CANCEL 
   
-- 操作をキャンセルするため、 _hcancelevent_にイベントハンドルが渡されました。 
+- 操作を取り消すイベント ハンドルが  _hCancelEvent_ に渡されています。 
     
 STRSAFE_E_INSUFFICIENT_BUFFER
   
-- _pwzAddress_または_pwzPassword_に渡された値が長すぎるため、サイズ256バイトの内部バッファーがオーバーフローしています。 
+- _pwzAddress_ または _pwzPassword_ に渡される値が長すぎるので、サイズ 256 バイトの内部バッファーがオーバーフローします。 
     
 

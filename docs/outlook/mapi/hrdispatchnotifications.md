@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 42ec4266-67b9-416e-8b9b-163c95011626
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: f4af3f2fd094942c48e02849c60f3e46acb1a5f7
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -29,9 +29,9 @@ ms.locfileid: "32348098"
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 HRESULT HrDispatchNotifications(
@@ -49,22 +49,22 @@ HRESULT HrDispatchNotifications(
 
 S_OK
   
-> キューに入っているすべての通知がディスパッチされました。
+> キューに登録された通知はすべてディスパッチされています。
     
 MAPI_E_USER_CANCEL
   
-> WM_QUIT、WM_QUERYENDSESSION、または WM_ENDSESSION を受信しました。
+> WM_QUIT、WM_QUERYENDSESSION、またはWM_ENDSESSION受信しました。
     
 MAPI_E_NOT_INITIALIZED
   
 > MAPI が初期化されていません。
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-**HrDispatchNotifications**関数を使用すると、mapi は、メッセージのディスパッチを待つことなく、現在 mapi 通知エンジンでキューに入れられているすべての通知をディスパッチします。 これにより、メモリ使用率に対する効果が向上します。 詳細については、「[強制的な通知](forcing-a-notification.md)」を参照してください。 
+**HrDispatchNotifications** 関数を使用すると、MAPI は、メッセージのディスパッチを待たずに、MAPI 通知エンジンに現在キューに入っているすべての通知をディスパッチします。 これは、メモリ使用率に有益な影響を与える可能性があります。 詳細については、「通知の [送信」を参照してください](forcing-a-notification.md)。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-一部のアプリケーションは、Windows の[PeekMessage](https://msdn.microsoft.com/library/ms644943.aspx)関数と[DispatchMessage](https://msdn.microsoft.com/library/ms644934.aspx)関数を使用して、タイムアウトループで通知メッセージを待機します。 最速のプラットフォームを除くすべてのプラットフォームで、このようなアプリケーションでは、パフォーマンスが低下したり、通知がブロックされることもあります。 **HrDispatchNotifications**を使用すると、コードが減少するだけでなく、パフォーマンスが向上します。 
+一部のアプリケーションは、PeekMessage 関数と[DispatchMessage](https://msdn.microsoft.com/library/ms644943.aspx)関数を使用して、タイムアウト ループWindows[を待機](https://msdn.microsoft.com/library/ms644934.aspx)します。 最も高速なプラットフォームを含むすべてのプラットフォームでは、このようなアプリケーションのパフォーマンスが低下したり、通知がブロックされる可能性があります。 **HrDispatchNotifications を使用すると、コード** が減少するだけでなく、パフォーマンスが向上します。 
   
 

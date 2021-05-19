@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2dcd9ff3-f380-48c7-ae9e-d4c717a9e41f
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 8f7f41ed0d47efcedf7f32e0ecb19c184bb4fc91
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,36 +25,36 @@ ms.locfileid: "32356513"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-テーブルの行が読み込まれているかどうかを示します。
+テーブル行が読み取りされたかどうかを示します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_READ  <br/> |
-|識別子:  <br/> |0x0e69  <br/> |
+|識別子:  <br/> |0x0E69  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
-|エリア:  <br/> |MAPI ノンノンアウトテーブル  <br/> |
+|エリア:  <br/> |MAPI 送信不可  <br/> |
    
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXCTABL]](https://msdn.microsoft.com/library/d33612dc-36a8-4623-8a26-c156cf8aae4b%28Office.15%29.aspx)
+[[MS-OXCTABL]](https://msdn.microsoft.com/library/d33612dc-36a8-4623-8a26-c156cf8aae4b%28Office.15%29.aspx)
   
-> コアテーブルオブジェクトの許容可能な操作が含まれています。
+> コア テーブル オブジェクトに対して許容される操作が含まれます。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -64,7 +64,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

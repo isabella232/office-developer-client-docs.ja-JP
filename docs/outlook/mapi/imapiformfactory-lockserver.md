@@ -25,7 +25,7 @@ ms.locfileid: "32342141"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-開いているフォームサーバーをメモリに保持します。
+開いているフォーム サーバーをメモリに保持します。
   
 ```cpp
 HRESULT LockServer(
@@ -40,9 +40,9 @@ HRESULT LockServer(
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _flockserver_
+ _fLockServer_
   
-> 順番ロックカウントを増分する場合は true、それ以外の**場合は true** 。それ以外の場合は**false**。
+> [in] **ロック数** を増やす場合は true。それ以外の場合は **false です**。
     
 ## <a name="return-value"></a>戻り値
 
@@ -50,13 +50,13 @@ S_OK
   
 > �ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B
     
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-フォームビューアーは、open form サーバーアプリケーションをメモリに保持する**imapiformfactory:: lockserver**メソッドを呼び出します。 フォームサーバーをメモリに保持すると、フォームが頻繁に作成およびリリースされるときのパフォーマンスが向上します。 
+フォーム ビューアーは **IMAPIFormFactory::LockServer** メソッドを呼び出して、開いているフォーム サーバー アプリケーションをメモリに保持します。 フォーム サーバーをメモリに保持すると、フォームが頻繁に作成およびリリースされる場合のパフォーマンスが向上します。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-**imapiformfactory:: lockserver**メソッドは、 [IClassFactory:: lockserver](https://msdn.microsoft.com/library/ms682332%28v=VS.85%29.aspx)メソッドによく似ています。 基本的に、 **imapiformfactory:: lockserver**メソッドは、呼び出し回数のカウントを保持します。このカウントが0より大きい限り、このメソッドは、フォームサーバーがメモリからアンロードされないようにします。 [colockobjectexternal](https://msdn.microsoft.com/library/ms680592%28VS.85%29.aspx)関数を使用して、これを実装できます。 
+**IMAPIFormFactory::LockServer** メソッドは [、IClassFactory::LockServer メソッドと非常に似](https://msdn.microsoft.com/library/ms682332%28v=VS.85%29.aspx)ています。 基本的に **、IMAPIFormFactory::LockServer** メソッドは、呼び出された回数のカウントを保持します。この数が 0 より大きい限り、フォーム サーバーはメモリからアンロードされません。 これを実装するには [、CoLockObjectExternal](https://msdn.microsoft.com/library/ms680592%28VS.85%29.aspx) 関数を使用できます。 
   
 ## <a name="see-also"></a>関連項目
 

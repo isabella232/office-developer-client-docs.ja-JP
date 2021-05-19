@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: e19129bf-d07c-4d2e-9d4d-edbfda088ea7
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: a119cf1446600153e433c4aae99037d9810015c0
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32342484"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-アクセス制御リスト (ACL) テーブルのメンバの表示名を含みます。
+アクセス制御リスト (ACL) テーブルのメンバーの表示名を格納します。
   
 |||
 |:-----|:-----|
@@ -34,31 +34,31 @@ ms.locfileid: "32342484"
 |データの種類 :   <br/> |PT_STRING8  <br/> |
 |エリア:  <br/> |アクセス制御  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-[IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md)インターフェイスでは、これらのプロパティを使用して、フォルダーまたはメールボックスに対する明示的な権限を持つ個人または役割である ACL テーブルのメンバーの名前を表示します。 
+これらのプロパティは [、IExchangeModifyTable : IUnknown](iexchangemodifytableiunknown.md) インターフェイスで使用され、フォルダーまたはメールボックスに対する明示的な権限を持つユーザーまたはロールである ACL テーブルのメンバーの名前を表示します。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXCPERM]](https://msdn.microsoft.com/library/944ddb65-6249-4c34-a46e-363fcd37195e%28Office.15%29.aspx)
+[[MS-OXCPERM]](https://msdn.microsoft.com/library/944ddb65-6249-4c34-a46e-363fcd37195e%28Office.15%29.aspx)
   
-> サーバーに格納されているフォルダーのアクセス許可リストの取得を処理します。
+> サーバーに保存されているフォルダーのアクセス許可リストの取得を処理します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
+> 関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -71,7 +71,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

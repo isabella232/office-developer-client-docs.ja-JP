@@ -19,67 +19,67 @@ ms.locfileid: "32345550"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-mfcmapi アプリケーションと createoutlookitemsaddin プロジェクトをインストールするには、「 [MAPI を使用した Outlook アイテムの作成](creating-outlook-items-by-using-mapi.md)」セクションのトピックで参照されているサンプルコードを表示して実行するには、次の手順を実行します。 
+MFCMAPI アプリケーションと CreateOutlookItemsAddin プロジェクトをインストールして[、「MAPI](creating-outlook-items-by-using-mapi.md)を使用して Outlook アイテムを作成する」セクションのトピックで参照されているサンプル コードを表示および実行するには、次の手順を実行します。 
 
-「MAPI を使用して Outlook アイテムを作成する」セクションで使用されている例をダウンロードしてインストールするには、次の手順を実行します。
+「MAPI を使用してアイテムを作成する」セクションで使用する例をダウンロードOutlook手順に従います。
 
-### <a name="to-download-and-install-the-mfcmapi-application-and-open-createoutlookitemsaddin-project"></a>mfcmapi アプリケーションをダウンロードしてインストールし、createoutlookitemsaddin プロジェクトを開くには
+### <a name="to-download-and-install-the-mfcmapi-application-and-open-createoutlookitemsaddin-project"></a>MFCMAPI アプリケーションをダウンロードしてインストールし、CreateOutlookItemsAddin プロジェクトを開く方法
 
-1. 現在のバージョンの[mfcmapi](https://go.microsoft.com/fwlink/?LinkID=124154)実行可能ファイルを、システム上のフォルダーにダウンロードします。 
+1. MFCMAPI 実行可能ファイルの現在 [のバージョンを](https://go.microsoft.com/fwlink/?LinkID=124154) システム上のフォルダーにダウンロードします。 
     
-2. mfcmapi の mfcmapi .exe ファイルを抽出します。 __ ハードドライブの空のフォルダーに .zip を圧縮します。
+2. ファイル内のMFCMapi.exeファイルをMFCMapi.exe。 _バージョン_.zip、ハード ドライブ上の空のフォルダーに移動します。
     
-3. [createoutlookitemsaddin](https://go.microsoft.com/fwlink/?LinkID=127828)プロジェクトの現在のバージョンをダウンロードします。 
+3. [CreateOutlookItemsAddin プロジェクトの現在のバージョンをダウンロード](https://go.microsoft.com/fwlink/?LinkID=127828)します。 
     
-4. 手順2で mfcmapi の .exe ファイルを抽出したフォルダーに、createoutlookitemsaddin .zip ファイル内のすべてのファイルを抽出します。
+4. 手順 2 で CreateOutlookItemsAddin.zip MFCMapi.exeファイルを抽出したフォルダーに、CreateOutlookItemsAddin.zipファイル内のすべてのファイルを抽出します。
     
-5. 手順2で使用したフォルダーから、createoutlookitemsaddin プロジェクト (\CreateOutlookItemsAddin\Debug) のビルドディレクトリに mfcmapi をコピーします。
+5. 手順 2 でMFCMapi.exeフォルダーから CreateOutlookItemsAddin プロジェクトのビルド ディレクトリにコピーします (\CreateOutlookItemsAddin\Debug)。
     
-6. Visual Studio で createoutlookitemsaddin プロジェクト (\ createoutlookitemsaddin¥ createoutlookitemsaddin¥ .vcproj) を開き、ソースコードを調べます。 開くソースファイルを確認するには、「 [MAPI を使用して Outlook アイテムを作成](creating-outlook-items-by-using-mapi.md)する」セクションのトピックを参照してください。 
+6. Visual Studio で CreateOutlookItemsAddin プロジェクト (\CreateOutlookItemsAddin\CreateOutlookItemsAddin.vcproj) を開き、ソース コードを確認します。 開くソース ファイルを決定するにはOutlook [MAPI](creating-outlook-items-by-using-mapi.md)を使用してアイテムを作成するセクションのトピックを参照してください。 
     
-## <a name="run-mfcmapi-and-the-createoutlookitemsaddin-project"></a>mfcmapi および createoutlookitemsaddin プロジェクトを実行する
+## <a name="run-mfcmapi-and-the-createoutlookitemsaddin-project"></a>MFCMAPI と CreateOutlookItemsAddin プロジェクトを実行する
 
-次の手順では、前の手順で説明したように、現在のバージョンの mfcmapi 実行可能ファイルおよび createoutlookitemsaddin プロジェクトをダウンロードしてインストールしていることを前提としています。 次の手順では、mfcmapi アプリケーションと createoutlookitemsaddin プロジェクトを使用して Outlook アイテムを作成できる**Addins**メニューの項目について説明します。 
+次の手順では、前の手順で説明したように、MFCMAPI 実行可能ファイルと CreateOutlookItemsAddin プロジェクトの現在のバージョンをダウンロードしてインストールしたと仮定します。 次の手順では、MFCMAPI アプリケーションと CreateOutlookItemsAddin プロジェクトを使用して Outlook アイテムを作成できるアドイン メニュー項目について説明します。  
   
 > [!NOTE]
-> 手順8で選択するフォルダーと手順9で選択するコマンドは、「 [MAPI を使用した Outlook アイテムの作成](creating-outlook-items-by-using-mapi.md)」セクションに記載されているアイテムの種類によって異なります。 
+> 手順 8 で選択したフォルダーと、手順 9 で選択するコマンドは[、[MAPI](creating-outlook-items-by-using-mapi.md)を使用して Outlook アイテムを作成する] セクションのいずれかのトピックで説明されている項目の種類によって異なります。 
 
-### <a name="to-run-the-mfcmapi-application-and-addins-menu-commands"></a>mfcmapi アプリケーションと Addins メニューコマンドを実行するには
+### <a name="to-run-the-mfcmapi-application-and-addins-menu-commands"></a>MFCMAPI アプリケーションと Addins メニュー コマンドを実行するには
 
-1. インストール手順に従って作成された CreateOutlookItemsAddin\Debug フォルダーで、mfcmapi を起動します。
+1. インストールMfcmapi.exeに従って作成される CreateOutlookItemsAddin\Debug フォルダーから開始します。
     
-2. [ **OK]** をクリックして、mfcmapi のスプラッシュ画面を閉じます。 
+2. **[OK] を** クリックして、MFCMAPI スプラッシュ画面を閉じします。 
     
-3. [**セッション**] メニューの [**ログオンおよび表示ストアテーブル**] をクリックします。
+3. [セッション] **メニューの** [ログオンと **ストアテーブルの表示] をクリックします**。
     
-4. [**プロファイルの選択**] ダイアログボックスで、適切なプロファイルを選択し、[ **OK]** をクリックします。 
+4. [プロファイルの **選択] ダイアログ** ボックスで、正しいプロファイルを選択し **、[OK] をクリックします**。 
     
-5. [store table] リストビューで、[**メールボックス- _[ユーザー名]_ **をダブルクリックします。 
+5. [メールボックス] **-  _[ユーザー名] を_** ストア テーブルの一覧ビューでダブルクリックします。 
     
-6. フォルダーツリービューで、ルートノードを展開します。 ルートノードに表示される名前は、選択されているプロファイルの種類によって異なります。 通常、このノードは**ルートメールボックス**として表示されます。
+6. フォルダー ツリー ビューで、ルート ノードを展開します。 ルート ノードに表示される名前は、選択したプロファイルの種類によって異なります。 通常、このノードはルート **- メールボックスとして表示されます**。
     
-7. フォルダーツリービューで、インフォメーションストアが格納されているノードを展開します。 このノードに表示される名前は、選択されているプロファイルの種類によって異なります。 通常、このノードは**IPM_SUBTREE**または**インフォメーションストアのトップ**として表示されます。
+7. フォルダー ツリー ビューで、情報ストアを含むノードを展開します。 このノードに表示される名前は、選択したプロファイルの種類によって異なります。 通常、このノードは **、IPM_SUBTREEまたは** Top of Information **Store として表示されます**。
     
-8. 作成するアイテムの種類のフォルダーをダブルクリックします。 たとえば、予定を作成するには、[**予定**] フォルダーをクリックします。 
+8. 作成するアイテムの種類のフォルダーをダブルクリックします。 たとえば、予定を作成するには、[予定] **フォルダーをクリック** します。 
     
-9. [ **Addins** ] メニューで、作成するアイテムに適したコマンドをクリックします。 
+9. [アドイン **] メニューで** 、作成するアイテムの適切なコマンドをクリックします。 
     
-## <a name="download-and-view-code-from-the-mfcmapi-application"></a>mfcmapi アプリケーションからコードをダウンロードして表示する
+## <a name="download-and-view-code-from-the-mfcmapi-application"></a>MFCMAPI アプリケーションからコードをダウンロードして表示する
 
-一部のトピックでは、mfcmapi アプリケーション自体のソースコードを参照しています。 次の手順では、mfcmapi ソースコードをダウンロードして Visual Studio で表示する方法について説明します。 
+一部のトピックでは、MFCMAPI アプリケーション自体のソース コードを参照します。 次の手順では、MFCMAPI ソース コードをダウンロードし、そのソース コードを表示する方法Visual Studio。 
 
-### <a name="to-download-and-view-the-mfcmapi-application-source-code"></a>mfcmapi アプリケーションのソースコードをダウンロードして表示するには
+### <a name="to-download-and-view-the-mfcmapi-application-source-code"></a>MFCMAPI アプリケーションのソース コードをダウンロードして表示するには
 
-1. 現在のバージョンの[mfcmapi](https://go.microsoft.com/fwlink/?LinkID=124154)アプリケーションのソースコードを、システム上のフォルダーにダウンロードします。 
+1. [MFCMAPI](https://go.microsoft.com/fwlink/?LinkID=124154)アプリケーションの現在のバージョンのソース コードをシステム上のフォルダーにダウンロードします。 
     
-2. mfcmapi-_変更セット_.zip 内のファイルを、ハードドライブ上の空のフォルダーに抽出します。
+2. MFCMAPI- 変更セット内の.zip、ハード ドライブ上の空のフォルダーに展開します。
     
-3. Visual Studio で mfcmapi プロジェクト (\ _foldername_/mfcmapi .vcproj) を開き、ソースコードを調べます。
+3. ソース コードを調べるには、MFCMapi プロジェクト (\ _foldername_\ MFCMapi.vcproj) をVisual Studioで開きます。
     
 ## <a name="see-also"></a>関連項目
 
-- [簡単なメールアイテムを作成する](how-to-create-a-simple-mail-item.md)
-- [単純な定期的なタスクアイテムを作成する](how-to-create-a-simple-recurrent-task-item.md)
-- [複雑な定期的な予定アイテムを作成する](how-to-create-a-complex-recurrent-appointment-item.md)
+- [簡易メール アイテムの作成](how-to-create-a-simple-mail-item.md)
+- [単純な繰り返しタスク アイテムの作成](how-to-create-a-simple-recurrent-task-item.md)
+- [複雑な繰り返し予定アイテムの作成](how-to-create-a-complex-recurrent-appointment-item.md)
 - [定期的なパターンの読み取りと解析](how-to-read-and-parse-a-recurrence-pattern.md)
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6f623345-b30e-452f-a822-9308b455697a
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 51788a49d1c0d01ef7ff5daca853000a8f1e34a0
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,41 +25,41 @@ ms.locfileid: "32356351"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[RFC3282] content-type ヘッダーフィールド値が含まれています。
+[RFC3282] Content-Class ヘッダー フィールドの値を含む。
   
 |||
 |:-----|:-----|
-|フレンドリ名:  <br/> |なし  <br/> |
-|プロパティセット:  <br/> |PS_INTERNET_HEADERS  <br/> |
-|プロパティ名:  <br/> |コンテンツクラス  <br/> |
+|分名:  <br/> |なし  <br/> |
+|プロパティ セット:  <br/> |PS_INTERNET_HEADERS  <br/> |
+|プロパティ名:  <br/> |Content-Class  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
-|エリア:  <br/> |電子メール  <br/> |
+|エリア:  <br/> |メール  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このプロパティの値を設定するには、多目的インターネットメッセージ拡張機能 (MIME) クライアントで、必要な値を持つコンテンツクラスのヘッダーフィールドを記述する必要があります。 MIME リーダーは、コンテンツクラスのヘッダーフィールドの値をこのプロパティの値にコピーする必要があります。 
+このプロパティの値を設定するには、Multipurpose Internet Message Extensions (MIME) クライアントが目的の値を持つ Content-Class ヘッダー フィールドを記述する必要があります。 MIME リーダーは、Content-Class ヘッダー フィールドの値をこのプロパティの値にコピーする必要があります。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
-[[OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS-OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
-> インターネット標準の電子メールの規則からメッセージオブジェクトに変換します。
+> インターネット標準の電子メール規則からメッセージ オブジェクトに変換します。
     
-[[OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
+[[MS-OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
   
-> 権限が管理されたエンコード済みメッセージのプロパティを指定します。
+> 権限で管理されたエンコードされたメッセージのプロパティを指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
 ## <a name="see-also"></a>関連項目
 
@@ -69,7 +69,7 @@ mapidefs.h
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

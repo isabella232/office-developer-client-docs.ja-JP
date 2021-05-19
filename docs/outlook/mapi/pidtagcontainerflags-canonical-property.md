@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 66b8d333-227e-464d-8cf9-cd8a5ff15efb
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: c9c446097213e5b743a47ec32db17ec0afe63b78
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32357548"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-アドレス帳コンテナーの機能を説明するフラグのビットマスクを含みます。 
+アドレス帳コンテナーの機能を説明するフラグのビットマスクが含まれる。 
   
 |||
 |:-----|:-----|
@@ -34,61 +34,61 @@ ms.locfileid: "32357548"
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |アドレス帳  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-ビットマスクには、次の1つ以上のフラグを設定できます。
+ビットマスクには、次のフラグを 1 つ以上設定できます。
   
 AB_FIND_ON_OPEN 
   
-> コンテナーの内容を表示する前に制限を要求するダイアログボックスを表示します。 
+> コンテナーの内容を表示する前に、制限を要求するダイアログ ボックスを表示します。 
     
 AB_MODIFIABLE 
   
-> エントリをコンテナーに追加したり、コンテナーから削除したりできます。 このフラグは、コンテナー内のエントリを変更できるかどうかを示すものではありません。
+> エントリはコンテナーに追加および削除できます。 このフラグは、コンテナー内のエントリを変更できるかどうかを示す値ではありません。
     
 AB_RECIPIENTS 
   
-> コンテナーは受信者を保持できます。 このフラグは、受信者がコンテナーに実際に存在するかどうか、またはそれらを追加または削除できるかどうかを示すものではありません。 
+> コンテナーは受信者を保持できます。 このフラグは、コンテナー内に受信者が実際に存在するかどうか、または受信者を追加または削除できるかどうかを示すのではありません。 
     
 AB_SUBCONTAINERS 
   
-> コンテナーは子コンテナーを保持できます。 このフラグは、コンテナー内にサブコンテナーが実際に存在するかどうか、または、それらを追加または削除できるかどうかを示すものではありません。 [IMAPIContainer:: GetHierarchyTable](imapicontainer-gethierarchytable.md)をサポートするには、コンテナーに AB_SUBCONTAINERS を設定する必要があります。 
+> コンテナーは子コンテナーを保持できます。 このフラグは、どのサブコンテナーが実際にコンテナーに存在するか、追加または削除できるかどうかを示すのではありません。 AB_SUBCONTAINERS [IMAPIContainer::GetHierarchyTable](imapicontainer-gethierarchytable.md)をサポートするには、コンテナーに設定する必要があります。 
     
 AB_UNMODIFIABLE 
   
-> コンテナーにエントリを追加または削除することはできません。 このフラグは、コンテナー内のエントリを変更できるかどうかを示すものではありません。 
+> コンテナーにエントリを追加したり、コンテナーから削除したりすることはできません。 このフラグは、コンテナー内のエントリを変更できるかどうかを示す値ではありません。 
     
-AB_FIND_ON_OPEN フラグは、オンラインサービスで使用するコンテナー、またはサーバーへの接続速度が遅いコンテナーに対して強くお勧めします。 AB_FIND_ON_OPEN が設定されたコンテナーが開かれると、表示されるメッセージングユーザーを制限する [**検索**] ダイアログボックスがユーザーに表示されます。 一部の仕様では、メッセージングユーザーを制限することで、コンテンツの表示を飛躍的に向上させることができます。 
+オンライン サービスAB_FIND_ON_OPENサーバーへの低速接続で使用されるコンテナーには、このフラグを使用することを強くお勧めします。 設定されているコンテナーを開AB_FIND_ON_OPEN、表示されるメッセージング ユーザーを制限する[検索] ダイアログ ボックスがユーザーに表示されます。 メッセージング ユーザーを制限する部分的な仕様でも、コンテンツの表示を大幅に高速化できます。 
   
-AB_MODIFIABLE または AB_UNMODIFIABLE フラグを設定する必要があります。 両方のフラグを設定することにより、変更できるかどうかをコンテナーが認識しないこと、たとえば、変更がユーザーのアクセス権に依存しているかどうかを示すことができます。 この場合、クライアントアプリケーションは、呼び出しを試行し、リターンコードを調べて、コンテナーの機能を判別する必要があります。 通常、クライアントは AB_MODIFIABLE を調べることによって開始されます。 設定されている場合、クライアントは、コンテナーを変更し、戻り値を確認する呼び出しを行います。 
+AB_MODIFIABLEまたはAB_UNMODIFIABLEフラグを設定する必要があります。 両方のフラグを設定すると、変更がユーザーのアクセス権に依存する場合など、コンテナーが変更できるかどうかがわかりません。 この場合、クライアント アプリケーションは呼び出しを試み、戻りコードを調べてコンテナーの機能を判断する必要があります。 通常、クライアントは、クライアントの検証からAB_MODIFIABLE。 設定されている場合、クライアントはコンテナーの変更を試み、戻り値を確認する呼び出しを行います。 
   
-AB_MODIFIABLE フラグは、コンテナーに追加できるエントリの種類を示していません。 このことを確認するには、クライアントは適切な[openproperty](imapiprop-openproperty.md)メソッドを使用してコンテナーの**PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) プロパティを開く必要があります。 **PR_CREATE_TEMPLATES**を開くと、コンテナーの1回限りのテーブルが返され、コンテナーに作成できるエントリの種類が一覧表示されます。 
+このAB_MODIFIABLEは、コンテナーに追加できるエントリの種類を示す値ではありません。 これを確認するには、クライアントは適切な [OpenProperty](imapiprop-openproperty.md)メソッドを使用してコンテナーのプロパティ [(PidTagCreateTemplates)](pidtagcreatetemplates-canonical-property.md)**プロパティを開** PR_CREATE_TEMPLATESする必要があります。 この **PR_CREATE_TEMPLATES** すると、コンテナーの 1 回のテーブルが返され、コンテナーに作成できるエントリの種類が一覧に表示されます。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
-> ユーザー、連絡先、グループ、およびリソースのリストのプロパティと操作を指定します。
+> ユーザー、連絡先、グループ、およびリソースの一覧のプロパティと操作を指定します。
     
-[[MS-CHAP]](https://msdn.microsoft.com/library/6dd0a3ea-b4d4-4a73-a857-add03a89a543%28Office.15%29.aspx)
+[[MS-NSPI]](https://msdn.microsoft.com/library/6dd0a3ea-b4d4-4a73-a857-add03a89a543%28Office.15%29.aspx)
   
-> ネームサービスプロバイダインターフェイス (NSPI) サーバーとのクライアントの通信を処理します。
+> ネーム サービス プロバイダー インターフェイス (NSPI) サーバーとのクライアントの通信を処理します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
+> 関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -98,7 +98,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

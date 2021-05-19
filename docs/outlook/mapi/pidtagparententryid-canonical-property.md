@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 55e08ace-493c-4246-8ebf-c304f4abc56a
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 65f5e6c5da88267ec2e63d0acf3ef6f8e10c893b
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,64 +25,64 @@ ms.locfileid: "32348231"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォルダーまたはメッセージを含むフォルダーのエントリ識別子を含みます。
+フォルダーまたはメッセージを含むフォルダーのエントリ識別子を格納します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_PARENT_ENTRYID  <br/> |
-|識別子:  <br/> |0x0e09  <br/> |
+|識別子:  <br/> |0x0E09  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
 |エリア:  <br/> |ID プロパティ  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このプロパティは、すべてのフォルダーとメッセージのメッセージストアによって計算されます。
+このプロパティは、すべてのフォルダーとメッセージのメッセージ ストアによって計算されます。
   
-メッセージストアのルートフォルダーの場合、このプロパティにはフォルダーの独自のエントリ識別子が格納されます。
+メッセージ ストアのルート フォルダーの場合、このプロパティにはフォルダーの独自のエントリ識別子が含まれる。
   
- **PR_PARENT_DISPLAY**([PidTagParentDisplay](pidtagparentdisplay-canonical-property.md)) およびこのプロパティは相互に関連していません。 これらは完全に異なるコンテキストに属します。
+ **PR_PARENT_DISPLAY** ([PidTagParentDisplay](pidtagparentdisplay-canonical-property.md)) と、このプロパティは互いに関連付けではありません。 これらは、完全に異なるコンテキストに属します。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXCDATA]](https://msdn.microsoft.com/library/ 1afa0cd9-b1a0-4520-b623-bf15030af5d8%28Office.15%29.aspx)
+[[MS-OXCDATA]](https://msdn.microsoft.com/library/ 1afa0cd9-b1a0-4520-b623-bf15030af5d8%28Office.15%29.aspx)
   
-> リモート操作で使用される基本データ構造を定義します。
+> リモート操作で使用される基本的なデータ構造を定義します。
     
-[[OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
+[[MS-OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
   
 > フォルダー操作を処理します。
     
-[[OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
+[[MS-OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
   
-> IETF RFC2445、RFC2446、RFC2447、予定および会議の各オブジェクトを変換します。
+> IETF RFC2445、RFC2446、RFC2447、および予定オブジェクトと会議オブジェクトの間で変換します。
     
-[[OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
+[[MS-OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
   
-> 許可/ブロックリストの処理と、迷惑メールメッセージの決定を有効にします。
+> 許可/ブロック リストの処理と迷惑メール メッセージの決定を有効にできます。
     
-[[OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
+[[MS-OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
   
 > メールボックス内の特別なフォルダーを作成および検索するためのプロパティと操作を指定します。
     
-[[OXPFOAB]](https://msdn.microsoft.com/library/258a07a7-34a7-4373-87c1-cddf51447d00%28Office.15%29.aspx)
+[[MS-OXPFOAB]](https://msdn.microsoft.com/library/258a07a7-34a7-4373-87c1-cddf51447d00%28Office.15%29.aspx)
   
-> オフラインアドレス帳 (OAB) のデータをサーバーからクライアントに配信する方法を指定します。
+> サーバーからクライアントにオフライン アドレス帳 (OAB) データを配信する方法を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -95,7 +95,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

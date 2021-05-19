@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 64faef3c-27b2-49d2-9d0c-8b9d33f1cb71
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: b5d1d4456856f1640bbed8589fc0583060cd2520
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32342638"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Microsoft Exchange Server フォルダーまたはメールボックスについて、説明されている権限を持つテーブルメンバの識別子を含みます。
+特定のフォルダーまたはメールボックスに対する記述された権限を持つテーブル メンバー Microsoft Exchange Server格納します。
   
 |||
 |:-----|:-----|
@@ -34,31 +34,31 @@ Microsoft Exchange Server フォルダーまたはメールボックスについ
 |データの種類 :   <br/> |PT_I8  <br/> |
 |エリア:  <br/> |アクセス制御  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このプロパティは、テーブルに固有の識別子を返します。 ディレクトリのユーザー識別子は各メンバー識別子に関連付けられ、このプロパティによって指定されます。 このプロパティは、フォルダーの明示的な権限を持つメンバーのディレクトリエントリ識別子を取得するために[IExchangeModifyTable](iexchangemodifytableiunknown.md)インターフェイスで使用されます。 
+このプロパティは、テーブルに固有の識別子を返します。 ディレクトリ ユーザー識別子は、各メンバー識別子に関連付け、このプロパティによって指定されます。 このプロパティは [、IExchangeModifyTable](iexchangemodifytableiunknown.md) インターフェイスで使用して、フォルダーに対する明示的な権限を持つメンバーのディレクトリ エントリ識別子を取得します。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXCPERM]](https://msdn.microsoft.com/library/944ddb65-6249-4c34-a46e-363fcd37195e%28Office.15%29.aspx)
+[[MS-OXCPERM]](https://msdn.microsoft.com/library/944ddb65-6249-4c34-a46e-363fcd37195e%28Office.15%29.aspx)
   
-> サーバーに格納されているフォルダーのアクセス許可リストの取得を処理します。
+> サーバーに保存されているフォルダーのアクセス許可リストの取得を処理します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -71,7 +71,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

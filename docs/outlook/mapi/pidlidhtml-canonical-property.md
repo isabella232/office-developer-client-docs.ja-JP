@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5598cbaf-cb9a-4d3a-b123-9108a7aa7c1c
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: dd80c969c3ef7af280248d9570e684cd7278e9e1
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,37 +25,37 @@ ms.locfileid: "32357576"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-連絡先のビジネス Web ページの URL を指定します。
+連絡先のビジネス Web ページ URL を指定します。
   
 |||
 |:-----|:-----|
-|関連するプロパティ:  <br/> |dispidhtml  <br/> |
-|プロパティセット:  <br/> |PSETID_Address  <br/> |
-|ロング ID (LID):  <br/> |0x0000802b  <br/> |
+|関連するプロパティ:  <br/> |dispidHTML  <br/> |
+|プロパティ セット:  <br/> |PSETID_Address  <br/> |
+|長い ID (LID):  <br/> |0x0000802B  <br/> |
 |データの種類 :   <br/> |PT_UNICODE  <br/> |
-|エリア:  <br/> |連絡先  <br/> |
+|エリア:  <br/> |Contact  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-このプロパティの値が存在する場合は、 **PR_BUSINESS_HOME_PAGE** ([PidTagBusinessHomePage](pidtagbusinesshomepage-canonical-property.md)) プロパティの値と同じである必要があります。
+このプロパティの値が存在する場合は、プロパティ ([PidTagBusinessHomePage](pidtagbusinesshomepage-canonical-property.md) **)** プロパティのPR_BUSINESS_HOME_PAGEと同じ値を指定する必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
-[[OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
-> 連絡先および個人用配布リストに対して許容されるプロパティと操作を指定します。
+> 連絡先と個人用配布リストで許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
 ## <a name="see-also"></a>関連項目
 
@@ -65,7 +65,7 @@ mapidefs.h
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -19,27 +19,27 @@ ms.locfileid: "32345928"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI を使用すると、予定の定期的なパターンを読み取って解析できます。
+MAPI を使用して、予定の定期的なパターンを読み取り、解析できます。
   
-このトピックで参照されている mfcmapi アプリケーションプロジェクトからコードをダウンロード、表示、および実行する方法については、[このセクションで使用しているサンプルをインストール](how-to-install-the-samples-used-in-this-section.md)するを参照してください。
+このトピックで参照されている MFCMAPI アプリケーション プロジェクトからコードをダウンロード、表示、実行する方法については、「このセクションで使用されるサンプルのインストール」 [を参照してください](how-to-install-the-samples-used-in-this-section.md)。
 
-### <a name="to-parse-a-recurrence-blob"></a>定期的なアイテムの blob を解析するには
+### <a name="to-parse-a-recurrence-blob"></a>定期的な BLOB を解析するには
 
-1. 予定アイテムを開きます。 メッセージを開く方法については、「[メッセージを開く](opening-a-message.md)」を参照してください。
+1. 予定アイテムを開きます。 メッセージを開く方法については、「メッセージを開 [く」を参照してください](opening-a-message.md)。
     
-2. 名前付きプロパティ**dispidapptrecur** ([PidLidAppointmentRecur 標準プロパティ](pidlidappointmentrecur-canonical-property.md)) を取得します。 名前付きプロパティの取得の詳細については、「 [MAPI の名前付きプロパティ](mapi-named-properties.md)」を参照してください。
+2. 名前付きプロパティ **dispidApptRecur** ([PidLidAppointmentRecur 標準プロパティ) を取得します](pidlidappointmentrecur-canonical-property.md)。 名前付きプロパティの取得の詳細については、「MAPI 名前付きプロパティ [」を参照してください](mapi-named-properties.md)。
     
-3. [[OXOCAL]](https://msdn.microsoft.com/library/cc425490%28EXCHG.80%29.aspx)のガイダンスに従って、予定の定期的なパターン構造を確認します。 
+3. [[MS-OXOCAL] のガイダンスに従って](https://msdn.microsoft.com/library/cc425490%28EXCHG.80%29.aspx)、予定の定期的なパターン構造を読み取ります。 
     
-mfcmapi リファレンスアプリケーションは、mfcmapi プロジェクトの`BinToAppointmentRecurrencePatternStruct` InterpretProp2 ソースファイルにある関数の最後の手順を示しています。 この`BinToAppointmentRecurrencePatternStruct`関数は、パラメーターとしてメモリ内のバッファーへのポインターを受け取ります。 mfcmapi アプリケーションは、まず、 **dispidapptrecur**という名前のプロパティをプロパティタグにマッピングし、次に[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを使用してプロパティの値を要求することによって、このバッファーを取得します。 **GetProps**メソッドを使用して取得するプロパティが大きすぎる場合、mfcmapi は、 [imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを使用してプロパティを取得する stream インターフェイスを開きます。 次に、mfcmapi アプリケーションは、バッファーを構築するためにストリームからデータを読み取ります。 
+MFCMAPI 参照アプリケーションは、MFCMapi プロジェクトの InterpretProp2.cpp ソース ファイル内の関数の最後の手順  `BinToAppointmentRecurrencePatternStruct` を示します。 この  `BinToAppointmentRecurrencePatternStruct` 関数は、メモリ内のバッファーへのポインターをパラメーターとして受け取ります。 MFCMAPI アプリケーションは、最初に **dispidApptRecur** 名前付きプロパティをプロパティ タグにマッピングし、次に [IMAPIProp::GetProps](imapiprop-getprops.md) メソッドを使用してプロパティの値を要求することで、このバッファーを取得します。 **GetProps** メソッドを使用してプロパティを取得するには大きすぎる場合、MFCMAPI はストリーム インターフェイスを開き [、IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドを使用してプロパティを取得します。 その後、MFCMAPI アプリケーションはストリームからデータを読み取り、バッファーを構築します。 
   
-バッファーの形式の詳細については、 [PidLidAppointmentRecur 標準プロパティ](pidlidappointmentrecur-canonical-property.md)を参照してください。 バッファー内のデータの大部分は固定数のフィールドで構成されています。これは、別のバイトを読み取る必要があります。 他のフィールドに特定の値が含まれている場合にのみ表示されるフィールドもあれば、フィールドのサイズが他のフィールドの値に依存している場合もあります。 さまざまなフィールドを読み取るためのバッファーの解析は、多数のブックキーピングを伴います。 mfcmapi は、この簿記をカプセル`CBinaryParser`化するためにという内部ヘルパークラスを使用します。 たとえば`CBinaryParser::GetDWORD` 、DWORD を読み取るためにバッファーに十分なバイトが残っているかどうかを調べ、その値を読み取り、ポインターを更新します。 
+バッファーの形式については [、「PidLidAppointmentRecur 標準プロパティ」を参照してください](pidlidappointmentrecur-canonical-property.md)。 バッファー内のデータの大部分は、固定バイト数のフィールドで構成され、続々と読み取る必要があります。 一部のフィールドは、他のフィールドに特定の値が含まれている場合にのみ存在し、一部のフィールドのサイズは他のフィールドの値に依存する場合があります。 バッファーを解析してさまざまなフィールドを読み取るには、多くの簿記が必要です。 MFCMAPI は、このブックキーピングをカプセル化  `CBinaryParser` するために、という名前の内部ヘルパー クラスを使用します。 たとえば、関数は、DWORD を読み取るのに十分なバイトがバッファー内に残っているかどうかをチェックし、値を読み取り、ポインター  `CBinaryParser::GetDWORD` を更新します。 
   
-バッファーが構造に解析された後、mfcmapi アプリケーションは`AppointmentRecurrencePatternStructToString`関数を使用して、ユーザーに表示する構造体を文字列に変換します。 これは、outlook に表示されるのと同じ文字列ではなく、outlook がロジックを構築するときの生データの未加工のビューです。 
+バッファーが構造体に解析された後、MFCMAPI アプリケーションは関数を使用して、構造体を文字列に変換してユーザー  `AppointmentRecurrencePatternStructToString` に表示します。 これは、表示される文字列と同Outlookではなく、ロジックを構築するデータの生Outlookです。 
   
-定期的なパターンをエンコードするために必要なデータまたはデータが破損していると、バッファーに問題が発生する可能性があります。 これらのシナリオを特定するために、mfcmapi アプリケーションは、正常に解析されたデータ量とバッファーに残っている量を追跡します。 解析が完了した後、データがバッファーに残っている場合、mfcmapi はこの "迷惑データ" を構造に含めて、検証できるようにします。
+定期的なパターンをエンコードするために必要なデータよりも、破損したデータまたはより多くのデータを含むバッファーが発生する可能性があります。 これらのシナリオを特定するために、MFCMAPI アプリケーションは、正常に解析されたデータの量とバッファー内の残りの量を追跡します。 解析が完了した後にデータがバッファー内に残っている場合、MFCMAPI にはこの "迷惑データ" が構造に含まれるので、確認できます。
   
-次に、 `BinToAppointmentRecurrencePatternStruct`関数の完全な一覧を示します。 
+関数の完全な一覧を次に示  `BinToAppointmentRecurrencePatternStruct` します。 
   
 ```cpp
 AppointmentRecurrencePatternStruct* BinToAppointmentRecurrencePatternStruct(ULONG cbBin, LPBYTE lpBin)
@@ -212,5 +212,5 @@ AppointmentRecurrencePatternStruct* BinToAppointmentRecurrencePatternStruct(ULON
 
 ## <a name="see-also"></a>関連項目
 
-- [MAPI を使用して Outlook 2007 アイテムを作成する](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)
+- [MAPI を使用して 2007 Outlookアイテムを作成する](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)
 

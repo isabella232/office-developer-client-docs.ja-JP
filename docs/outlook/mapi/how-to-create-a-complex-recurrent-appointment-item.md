@@ -21,36 +21,36 @@ ms.locfileid: "32344535"
   
 MAPI を使用して定期的な予定アイテムを作成できます。
   
-このトピックで参照されている mfcmapi アプリケーションおよび createoutlookitemsaddin プロジェクトからコードをダウンロード、表示、および実行する方法については、[このセクションで使用しているサンプルをインストール](how-to-install-the-samples-used-in-this-section.md)するを参照してください。
+このトピックで参照されている MFCMAPI アプリケーションおよび CreateOutlookItemsAddin プロジェクトからコードをダウンロード、表示、実行する方法については、「このセクションで使用されるサンプルのインストール」を参照 [してください](how-to-install-the-samples-used-in-this-section.md)。
 
 ### <a name="to-create-an-appointment-item"></a>予定アイテムを作成するには
 
-1. メッセージストアを開きます。 メッセージストアを開く方法については、「[メッセージストアを開く](opening-a-message-store.md)」を参照してください。
+1. メッセージ ストアを開きます。 メッセージ ストアを開く方法については、「メッセージ ストアを開 [く」を参照してください](opening-a-message-store.md)。
     
-2. メッセージストア内の予定表フォルダーを開きます。 **PR_IPM_APPOINTMENT_ENTRYID** ([PidTagIpmAppointmentEntryId](pidtagipmappointmententryid-canonical-property.md)) を参照してください。
+2. メッセージ ストアで予定表フォルダーを開きます。 **「PR_IPM_APPOINTMENT_ENTRYID** ([PidTagIpmAppointmentEntryId)」を参照してください](pidtagipmappointmententryid-canonical-property.md)。
     
-3. 予定表フォルダーの[imapifolder:: CreateMessage](imapifolder-createmessage.md)メソッドを呼び出して、新しい予定アイテムを作成します。 
+3. 予定表フォルダー [の IMAPIFolder::CreateMessage](imapifolder-createmessage.md) メソッドを呼び出して、新しい予定アイテムを作成します。 
     
-4. [PidLidAppointmentRecur](pidlidappointmentrecur-canonical-property.md)( **** 定期的な予定を作成するために必要な) プロパティとその他のプロパティを設定します。
+4. **dispidApptRecur** ([PidLidAppointmentRecur](pidlidappointmentrecur-canonical-property.md)) プロパティと、繰り返し予定を作成するために必要なその他のプロパティを設定します。
     
 5. 新しい予定アイテムを保存します。
     
-createoutlookitemsaddin プロジェクトの、アポイントソースファイルの関数は、 `AddAppointment`これらの手順を示します。 この`AddAppointment`関数は、mfcmapi サンプルアプリケーションの [ **Addins** ] メニューの [**予定の追加**] をクリックしたときに表示される [**予定の追加**] ダイアログボックスのパラメーターを受け取ります。 この`DisplayAddAppointmentDialog`関数は、このダイアログボックスを表示して、ダイアログボックスの値を`AddAppointment`関数に渡します。 この`DisplayAddAppointmentDialog`関数は MAPI を使用して予定アイテムを作成するには直接関連付けられていないため、ここには記載されていません。 
+`AddAppointment`CreateOutlookItemsAddin プロジェクトの Appointments.cpp ソース ファイルの関数は、次の手順を示しています。 関数は、MFCMAPI サンプル アプリケーションの [アドイン] メニューの [予定の追加] をクリックすると表示される [予定の追加] ダイアログ ボックスからパラメーター `AddAppointment` を受け取ります。    `DisplayAddAppointmentDialog`Appointments.cpp の関数はダイアログ ボックスを表示し、ダイアログ ボックスから関数に値を渡 `AddAppointment` します。 この関数は、MAPI を使用した予定アイテムの作成とは直接関係ないので、ここに  `DisplayAddAppointmentDialog` は表示されません。 
   
 > [!IMPORTANT]
-> mfcmapi アプリケーションのコードでは、 **Addins**メニューの [**予定の追加**] コマンドをクリックしたときに**予定表**フォルダーが選択されているかどうかは確認されません。 予定**表**フォルダー以外のフォルダーに予定アイテムを作成すると、未定義の動作が発生することがあります。 mfcmapi アプリケーションで [**予定の追加**] コマンドを使用する前に、**予定表**フォルダーが選択されていることを確認してください。 
+> MFCMAPI アプリケーションのコードでは、[アドイン] メニューの [予定の追加] コマンドをクリックしても、予定表フォルダー **が選択されたという保証はありません**。 予定表フォルダー以外のフォルダーに予定アイテムを作成 **すると、未定義** の動作が発生する可能性があります。 MFCMAPI アプリケーションで [**予定** の追加]コマンドを使用する前に、予定表フォルダーが選択されている必要があります。 
   
-`AddAppointment`メソッドを次に示します。 メソッドに渡される_lpfolder_パラメーターは、定期的な予定が作成されたフォルダーを表す[imapifolder](imapifolderimapicontainer.md)インターフェイスへのポインターであることに注意してください。 `AddAppointment` **imapifolder**インターフェイスを表す_lpfolder_パラメーターを指定すると、コードは[imapifolder:: CreateMessage](imapifolder-createmessage.md)メソッドを呼び出します。 **CreateMessage**メソッドは、成功コードと、 **IMessage**インターフェイスへのポインターへのポインターを返します。 ほとんどの`AddAppointment`関数コードは、 [imapiprop:: setprops](imapiprop-setprops.md)メソッドを呼び出すための準備として、プロパティを指定する作業を処理します。 **setprops**メソッドの呼び出しが成功すると、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドが呼び出され、変更をストアにコミットし、新しい予定表アイテムを作成します。 
+メソッド  `AddAppointment` の一覧を以下に示します。 メソッドに  _渡される lpFolder_ パラメーターは、繰り返し予定が作成されるフォルダーを表す  `AddAppointment` [IMAPIFolder](imapifolderimapicontainer.md) インターフェイスへのポインターです。 _IMAPIFolder インターフェイスを_ 表す **lpFolder** パラメーターを指定すると、このコードは [IMAPIFolder::CreateMessage メソッドを呼び出](imapifolder-createmessage.md)します。 **CreateMessage メソッド** は、成功コードと IMessage インターフェイスへのポインター **を返** します。 ほとんどの関数コード  `AddAppointment` は [、IMAPIProp::SetProps](imapiprop-setprops.md) メソッドを呼び出す準備としてプロパティを指定する作業を処理します。 **SetProps** メソッドの呼び出しが成功すると [、IMAPIProp::SaveChanges](imapiprop-savechanges.md)メソッドが呼び出され、変更をストアにコミットし、新しい予定表アイテムを作成します。 
   
-関数`AddAppointment`は、いくつかの名前付きプロパティを設定します。 名前付きプロパティとその作成方法の詳細については、「 [MAPI を使用して Outlook 2007 アイテムを作成する](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)」を参照してください。 予定アイテムに使用される名前付きプロパティは複数のプロパティセットを使用するため、 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)メソッドに渡すパラメーターを構築する場合は、注意を払う必要があります。 
+関数  `AddAppointment` は、名前付きプロパティの数を設定します。 名前付きプロパティの詳細と作成方法については[、「Using MAPI to Create to Create Outlook 2007 Items](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)」を参照してください。 予定アイテムに使用される名前付きプロパティは複数のプロパティ セットを占めるので [、IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) メソッドに渡すパラメーターを構築する場合は注意が必要です。 
   
-関数`AddAppointment`はいくつかのヘルパー関数を使用して、さまざまな予定関連プロパティの構造を構築します。 `BuildTimeZoneStruct`および`BuildTimeZoneDefinition`ヘルパー関数を使用して、タイムゾーンに関連するプロパティを指定する構造を作成します。 タイムゾーンに関連するプロパティは、 **dispidTimeZoneStruct** ([PidLidTimeZoneStruct](pidlidtimezonestruct-canonical-property.md))、 **dispidTimeZoneDesc** ([PidLidTimeZoneDescription](pidlidtimezonedescription-canonical-property.md))、 **dispidApptTZDefRecur** ([PidLidAppointmentTimeZoneDefinitionRecur](pidlidappointmenttimezonedefinitionrecur-canonical-property.md))、 **dispidApptTZDefStartDisplay** ([PidLidAppointmentTimeZoneDefinitionStartDisplay](pidlidappointmenttimezonedefinitionstartdisplay-canonical-property.md))、および**dispidApptTZDefEndDisplay** ([PidLidAppointmentTimeZoneDefinitionEndDisplay](pidlidappointmenttimezonedefinitionenddisplay-canonical-property.md)) については、「 [OXOCAL](https://msdn.microsoft.com/library/cc425490%28v=EXCHG.80%29.aspx)」の対応するセクションに記載されています。 
+この  `AddAppointment` 関数は、いくつかのヘルパー関数を使用して、さまざまな予定関連のプロパティの構造を構築します。 ヘルパー  `BuildTimeZoneStruct` 関数  `BuildTimeZoneDefinition` とヘルパー関数は、タイム ゾーン関連のプロパティを指定する構造を構築するために使用されます。 タイム ゾーン関連のプロパティは **、dispidTimeZoneStruct** ([PidLidTimeZoneStruct](pidlidtimezonestruct-canonical-property.md)) **、dispidTimeZoneDesc** ([PidLidTimeZoneDescription](pidlidtimezonedescription-canonical-property.md)) **、dispidApptTZDefRecur** ([PidLidAppointmentTimeZoneDefinitionRecur](pidlidappointmenttimezonedefinitionrecur-canonical-property.md)) **、dispidApptTZDefStartDisplay** ([PidLidAppointmentTimeZoneDefinitionStartDisplay](pidlidappointmenttimezonedefinitionstartdisplay-canonical-property.md)) 、 **および dispidApptTZDefEndDisplay** ([PidLidAppointmentTimeZoneDefinitionEndDisplay](pidlidappointmenttimezonedefinitionenddisplay-canonical-property.md)) と、それらは [[MS-OXOCAL]](https://msdn.microsoft.com/library/cc425490%28v=EXCHG.80%29.aspx)の対応するセクションで説明されています。 
 
-この`BuildGlobalObjectID`関数は、 **LID_GLOBAL_OBJID** ([PidLidGlobalObjectId](pidlidglobalobjectid-canonical-property.md)) および**dispidCleanGlobalObjId** ([PidLidCleanGlobalObjectId](pidlidcleanglobalobjectid-canonical-property.md)) プロパティを指定する構造を構築するために使用されます。これについては、対応する[[OXOCAL]](https://msdn.microsoft.com/library/cc425490%28v=EXCHG.80%29.aspx)のセクション。 **dispidapptrecur**プロパティを指定する構造体は、 `BuildWeeklyAppointmentRecurrencePattern`関数を使用して作成されます。 
+`BuildGlobalObjectID`この関数は **、LID_GLOBAL_OBJID** ([PidLidGlobalObjectId](pidlidglobalobjectid-canonical-property.md)) プロパティと **dispidCleanGlobalObjId** ([PidLidCleanGlobalObjectId](pidlidcleanglobalobjectid-canonical-property.md)) プロパティを指定する構造を構築するために使用されます。これは [、[MS-OXOCAL]](https://msdn.microsoft.com/library/cc425490%28v=EXCHG.80%29.aspx)の対応するセクションで説明されています。 **dispidApptRecur プロパティを** 指定する構造体は、関数を使用して構築 `BuildWeeklyAppointmentRecurrencePattern` されます。 
 
-`BuildWeeklyAppointmentRecurrencePattern`関数によって構築される構造の詳細については、「 [PidLidAppointmentRecur 標準プロパティ](pidlidappointmentrecur-canonical-property.md)」を参照してください。 さまざまな予定の繰り返しパターンが可能ですが、関数は`BuildWeeklyAppointmentRecurrencePattern`週単位の予定の定期的なパターンを作成するだけです。 また、カレンダーの種類 (グレゴリオ暦)、週の最初の曜日 (日曜日)、変更または削除されたインスタンスの数 (none) など、ハードコーディングされた値をいくつか使用します。 一般的な目的の予定の定期的なパターン作成関数では、これらの種類の変数をパラメーターとして受け入れる必要があります。 
+関数によって構築された構造の詳細については  `BuildWeeklyAppointmentRecurrencePattern` [、「PidLidAppointmentRecur 標準プロパティ」を参照してください](pidlidappointmentrecur-canonical-property.md)。 さまざまな予定の定期的なパターンを使用できる一方で、関数は週 1 回の予定の定期的なパターン  `BuildWeeklyAppointmentRecurrencePattern` のみを作成します。 また、予定表の種類 (グレゴリオ暦)、週の最初の日 (日曜日)、変更または削除されたインスタンスの数 (なし) など、いくつかのハードコードされた値を使用します。 より汎用的な予定の定期的なパターン作成関数では、これらの種類の変数をパラメーターとして受け入れる必要があります。 
   
-次に、 `AddAppointment`関数の完全な一覧を示します。 
+関数の完全な一覧を次に示  `AddAppointment` します。 
   
 ```cpp
 HRESULT AddAppointment(LPMAPIFOLDER lpFolder,
@@ -292,5 +292,5 @@ HRESULT AddAppointment(LPMAPIFOLDER lpFolder,
 
 ## <a name="see-also"></a>関連項目
 
-- [MAPI を使用して Outlook 2007 アイテムを作成する](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)
+- [MAPI を使用して 2007 Outlookアイテムを作成する](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)
 

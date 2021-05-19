@@ -30,11 +30,11 @@ ms.locfileid: "32356428"
 
 > [!NOTE]
 > **Namespace** オブジェクトの **CreateRecipient** メソッド、または **Recipients** コレクションの [Add(String)](https://msdn.microsoft.com/library/bb612668(v=office.15)) メソッドを使用して **Recipient** オブジェクトを作成する場合は、受信者の名前を提供する必要があります。 **Recipient** は、この名前に対して解決されます。 受信者の名前は、次のいずれかの形式をにすることができます。
-> - 名前
+> - 表示名
 > - エイリアス
 > - 簡易メール転送プロトコル (SMTP) アドレス
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

@@ -25,7 +25,7 @@ ms.locfileid: "32357408"
 
 フォルダー内のアイテム セットを表す [Table](https://msdn.microsoft.com/library/bb652856\(v=office.15\)) オブジェクトの機能の 1 つに、非表示のアイテムを持つ機能があります。 フォルダー内の非表示のアイテムを返すには、[MAPIFolder](https://msdn.microsoft.com/library/bb624369\(v=office.15\)) オブジェクトの [GetTable(Object, Object)](https://msdn.microsoft.com/library/bb612592\(v=office.15\)) メソッドの *TableContents* パラメーターを [olHiddenItems](https://msdn.microsoft.com/library/bb622801\(v=office.15\)) に設定します。 次のコード例の TableForInboxHiddenItems は、受信トレイ フォルダー内の非表示のアイテムを取得し、非表示の各アイテムの [Subject](https://msdn.microsoft.com/library/bb611353\(v=office.15\)) プロパティと [MessageClass](https://msdn.microsoft.com/library/bb645845\(v=office.15\)) プロパティの値を [Listeners](https://msdn.microsoft.com/library/system.diagnostics.debug.listeners.aspx) コレクションのトレース リスナーに出力します。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

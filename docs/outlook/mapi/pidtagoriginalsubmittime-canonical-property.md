@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2e027c0c-2370-437a-ad98-2bbb5e41e525
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: 07aea33f54a29d497646b62f1f8bd96a383cbd7b
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32341049"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-レポート内のメッセージの元の送信日時が含まれます。
+レポート内のメッセージの元の提出日時を含む。
   
 |||
 |:-----|:-----|
@@ -34,31 +34,31 @@ ms.locfileid: "32341049"
 |データの種類 :   <br/> |PT_SYSTIME  <br/> |
 |エリア:  <br/> |一般的なメッセージング  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-クライアントアプリケーションでは、最初にメッセージを送信するときに、このプロパティを**PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md)) プロパティの値に設定する必要があります。 メッセージが転送されるときには変更されません。 これはレポートでのみ使用されます。
+メッセージの最初の送信時に、クライアント アプリケーションは、このプロパティを PR_CLIENT_SUBMIT_TIME **(** [PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md)) プロパティの値に設定する必要があります。 メッセージが転送された場合は変更されません。 これはレポートでのみ使用されます。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
-> 電子メールメッセージオブジェクトで許容されるプロパティと操作を指定します。
+> 電子メール メッセージ オブジェクトで許容されるプロパティと操作を指定します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -68,7 +68,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

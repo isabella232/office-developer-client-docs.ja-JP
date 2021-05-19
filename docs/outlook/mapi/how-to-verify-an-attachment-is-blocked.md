@@ -17,9 +17,9 @@ ms.locfileid: "32345886"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このコードサンプルでは、 [iattachmentsecurity: IUnknown](iattachmentsecurityiunknown.md)インターフェイスを使用して、microsoft outlook 2010 または microsoft outlook 2013 によって表示およびインデックス作成のために添付ファイルがブロックされているかどうかを確認する方法を示します。 
+C++ のこのコード サンプルは[、IAttachmentSecurity : IUnknown](iattachmentsecurityiunknown.md)インターフェイスを使用して、Microsoft Outlook 2010 または Microsoft Outlook 2013 が表示およびインデックス作成のために添付ファイルをブロックするかどうかを確認する方法を示しています。 
   
-[iattachmentsecurity: iunknown](iattachmentsecurityiunknown.md)は[iunknown](https://msdn.microsoft.com/library/ms680509%28VS.85%29.aspx)インターフェイスから派生しています。 **IID_IAttachmentSecurity**を要求して、MAPI セッションオブジェクトで[iunknown:: QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)を呼び出すことによって、 [iattachmentsecurity: iunknown](iattachmentsecurityiunknown.md)インターフェイスを取得することができます。 [iattachmentsecurity::](iattachmentsecurity-isattachmentblocked.md) outlook 2010 または outlook 2013 __ で添付ファイルが安全でないと見なされ、outlook 2010 または outlook 2013 での表示とインデックス作成がブロックされている場合に、isattachmentblocked で**true**が返されます。 
+[IAttachmentSecurity : IUnknown](iattachmentsecurityiunknown.md) は [IUnknown インターフェイスから派生](https://msdn.microsoft.com/library/ms680509%28VS.85%29.aspx) します。 [IAttachmentSecurity : IUnknown](iattachmentsecurityiunknown.md)インターフェイスを取得するには、MAPI セッション オブジェクトで [IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)を呼び出し、そのインターフェイスを要求 **IID_IAttachmentSecurity。** [IAttachmentSecurity::IsAttachmentBlocked](iattachmentsecurity-isattachmentblocked.md)は、添付ファイルが Outlook 2010 または Outlook 2013 によって安全でないと見なされ、Outlook 2010 または Outlook 2013 で表示およびインデックス作成がブロックされている場合 _、pfBlocked_ で true を返します。 
   
 ```cpp
 HRESULT IsAttachmentBlocked(LPMAPISESSION lpMAPISession, LPCWSTR pwszFileName, BOOL* pfBlocked) 

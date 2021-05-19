@@ -16,11 +16,11 @@ ms.locfileid: "32357471"
 ---
 # <a name="using-late-binding-if-depending-on-multiple-versions-of-outlook"></a>複数のバージョンの Outlook を使用する場合の遅延バインディングの使用
 
-Outlook プライマリ相互運用機能アセンブリ (PIA) を使用するマネージ Outlook アドインは、PIA が提供する型情報でコンパイルされます。 このメソッドとプロパティに関する型情報の**事前バインド**により、コンパイラで型と構文のチェックを実行できるようになり、メソッドやプロパティに渡されるパラメーターの数と型に間違いがないことと、期待された型の値が返されることが保証されます。 
+Outlook プライマリ相互運用機能アセンブリ (PIA) を使用するマネージ Outlook アドインは、PIA が提供する型情報でコンパイルされます。 このメソッドとプロパティに関する型情報の **事前バインド** により、コンパイラで型と構文のチェックを実行できるようになり、メソッドやプロパティに渡されるパラメーターの数と型に間違いがないことと、期待された型の値が返されることが保証されます。 
 
 ただし、事前バインディングには、アドインが呼び出すメソッドまたはプロパティが、以前のバージョンの異なる宣言を持っている場合、バージョン間の互換性がないという欠点があります。 たとえば、新しいメソッドおよびプロパティを追加する、または既存のオブジェクトのメンバーを変更すると、オブジェクトのバイナリ レイアウトが変更され、より新しい型情報を使用して以前のバージョンの Outlook を自動化するマネージ アドインで問題が発生する場合があります。 
 
-そのような場合、**遅延バインド**では、実行時まで待機してからオブジェクトにプロパティとメソッドの呼出しをバインドします。 遅延バインディングは、Outlook のさまざまなバージョンで異なる型による混乱を防ぐことができ、複数のバージョンの Outlook を使用するアドインを記述するときに特に役立ちます。
+そのような場合、**遅延バインド** では、実行時まで待機してからオブジェクトにプロパティとメソッドの呼出しをバインドします。 遅延バインディングは、Outlook のさまざまなバージョンで異なる型による混乱を防ぐことができ、複数のバージョンの Outlook を使用するアドインを記述するときに特に役立ちます。
 
 遅延バインドには、Outlook によって実装される [IDispatch](https://docs.microsoft.com/windows/desktop/api/oaidl/nn-oaidl-idispatch) インターフェイスを呼び出すアドインが必要になります。 Visual C\# で遅延バインドを使用する場合は、[System.Type.InvokeMember](https://docs.microsoft.com/dotnet/api/system.type.invokemember?view=netframework-4.7.2) メソッドを使用します。 このメソッドは、[IDispatch::GetIDsOfNames](https://docs.microsoft.com/windows/desktop/api/oaidl/nf-oaidl-idispatch-getidsofnames) と [IDispatch::Invoke](https://docs.microsoft.com/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) を呼び出して、Outlook のメソッドとプロパティをバインドします。 IDispatch::GetIDsOfNames メソッドを使用すると、Visual C\# で、オブジェクトがサポートしているメソッドとプロパティについてオブジェクトを照会できます。それらのメソッドとプロパティは、IDispatch::Invoke メソッドを使用すると Visual C\# で呼び出すことができます。 
 

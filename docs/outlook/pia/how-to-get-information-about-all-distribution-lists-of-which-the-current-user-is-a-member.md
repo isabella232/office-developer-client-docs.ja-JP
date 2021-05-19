@@ -25,7 +25,7 @@ ms.locfileid: "32349428"
 
 次の例では、GetCurrentUserMembership で **GetMemberOfList** メソッドを呼び出して、Exchange ユーザーがメンバーになっているすべての配布リストの [AddressEntries](https://msdn.microsoft.com/library/bb647650\(v=office.15\)) コレクションを取得します。 このユーザーがどの配布リストのメンバーでもない場合、**GetMemberOfList** はカウントが 0 の **AddressEntries** コレクションを返します。 ユーザーがオンラインの場合にのみ **GetMemberOfList** は **AddressEntries** コレクションを返します。それ以外の場合、**GetMemberOfList** は null 参照を返します。 GetCurrentUserMembership では、現在の [ExchangeUser](https://msdn.microsoft.com/library/bb609574\(v=office.15\)) オブジェクトを返す [GetExchangeUser()](https://msdn.microsoft.com/library/bb645260\(v=office.15\)) メソッドを使用して、ユーザーがオンラインかどうかをテストしています。 この例では、アドレス エントリの取得後に、ユーザーの各配布リストに関する情報を [Listeners](https://msdn.microsoft.com/library/system.diagnostics.debug.listeners.aspx) コレクションのトレース リスナーに書き込みます。
 
-Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリック Class 宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
+Visual Studio を使用してこのコード例をテストする場合、**Microsoft.Office.Interop.Outlook** 名前空間をインポートするときに、まず Microsoft Outlook 15.0 オブジェクト ライブラリ コンポーネントへの参照を追加し、Outlook 変数を指定します。 **using** ステートメントは、コード例の関数の前に直接置くことはできません。パブリッククラス宣言の前に追加する必要があります。 次のコード行は、C\# でインポートおよび割り当てを行う方法を示しています。
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

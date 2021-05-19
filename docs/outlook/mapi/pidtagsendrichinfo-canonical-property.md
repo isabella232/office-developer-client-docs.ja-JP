@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e85fc766-197a-484f-b600-68cd28a052a2
-description: '最終更新日時: 2015 年 3 月 9 日'
+description: '最終更新日: 2015 年 3 月 9 日'
 ms.openlocfilehash: a7ad27d757d4ed6df58c597bf17d9e5412f83457
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,65 +25,65 @@ ms.locfileid: "32342519"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-受信者がリッチテキスト形式 (RTF) およびオブジェクトのリンクと埋め込み (OLE) オブジェクトを含む、すべてのメッセージのコンテンツを受信できる場合は、TRUE が含まれます。 
+受信者がリッチ テキスト形式 (RTF) やオブジェクト リンクおよび埋め込み (OLE) オブジェクトを含むすべてのメッセージ コンテンツを受信できる場合は TRUE を含む。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_SEND_RICH_INFO  <br/> |
-|識別子:  <br/> |0x3a40  <br/> |
+|識別子:  <br/> |0x3A40  <br/> |
 |データの種類 :   <br/> |PT_BOOLEAN  <br/> |
 |エリア:  <br/> |Address  <br/> |
    
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-配布リストとメッセージングユーザーオブジェクトがこのプロパティを公開することをお勧めします。 
+配布リストとメッセージング ユーザー オブジェクトでこのプロパティを公開する必要があります。 
   
-このプロパティは、送信者が受信者の MAPI が有効であると判断するかどうかを示します。 
+このプロパティは、送信者が受信者を MAPI が有効と見なすかどうかを示します。 
   
-このプロパティが TRUE に設定されている場合、トランスポートとゲートウェイは RTF および OLE オブジェクトを含む、メッセージの完全なコンテンツを送信できます。 トランスポートプロバイダーとゲートウェイは、トランスポートニュートラルカプセル化形式 (TNEF) を使用して、関連するすべてのメッセージングシステムにネイティブではないすべてのプロパティをカプセル化する必要があります。 
+このプロパティを TRUE に設定すると、トランスポートとゲートウェイは RTF オブジェクトや OLE オブジェクトを含むメッセージの完全なコンテンツを送信できます。 トランスポート プロバイダーとゲートウェイは、トランスポート ニュートラル カプセル化形式 (TNEF) を使用して、関連するすべてのメッセージング システムにネイティブではないプロパティをカプセル化する必要があります。 
   
-このプロパティが FALSE に設定されている場合、トランスポートプロバイダーとゲートウェイは、ネイティブクライアントが使用できないメッセージの内容を自由に破棄できます。 たとえば、クライアントが RTF をサポートしていない場合、トランスポートプロバイダーはプレーンテキストのみを送信できます。 
+このプロパティを FALSE に設定すると、トランスポート プロバイダーとゲートウェイは、ネイティブ クライアントが使用できないメッセージ コンテンツを自由に破棄できます。 たとえば、クライアントが RTF をサポートしていない場合、トランスポート プロバイダーはプレーン テキストのみを送信できます。 
   
-このプロパティが設定されていない場合、既定の動作は、トランスポートプロバイダー、メッセージ転送エージェント (MTA)、またはゲートウェイの実装によって決まります。 アドレス帳プロバイダーは、このプロパティをサポートする必要はありません。 たとえば、密結合のアドレス帳とトランスポートプロバイダーは、TNEF を送信することはできますが、RTF は使用しません。 
+このプロパティを設定しない場合、既定の動作は、トランスポート プロバイダー、メッセージ転送エージェント (MTA)、またはゲートウェイの実装によって決まります。 アドレス帳プロバイダーは、このプロパティをサポートする必要はありません。 たとえば、緊密に結合されたアドレス帳とトランスポート プロバイダーは、TNEF の送信を選択できますが、RTF は使用されません。 
   
-クライアントは、トランスポートプロバイダーとゲートウェイが独自のイニシアチブで TNEF を使用することを想定してはなりません。 tnef をサポートする一部のトランスポートプロバイダーおよびゲートウェイは、このプロパティの値を考慮せずにメッセージを送信しますが、TRUE に設定されていない場合は、tnef の作成や送信を拒否します。 
+クライアントは、トランスポート プロバイダーとゲートウェイが独自のイニシアチブで TNEF を使用すると想定すべきではありません。 TNEF をサポートする一部のトランスポート プロバイダーとゲートウェイは、このプロパティの値に関係なく送信しますが、TNEF が TRUE に設定されていない場合は、TNEF の作成や送信を拒否する場合があります。 
   
 > [!NOTE]
-> このプロパティの設定とその値に基づいた決定は、受信者ごとに行われます。 
+> このプロパティの設定と、その値に基づく決定は、受信者ごとに行われます。 
   
-既定では、MAPI は値を TRUE に設定します。 [IAddrBook:: createoneoff](iaddrbook-createoneoff.md)または[imapisupport:: createoneoff](imapisupport-createoneoff.md)を呼び出しているクライアントは、 _ulflags_パラメーターで**MAPI_SEND_NO_RICH_INFO**ビットを設定することができます。これにより、MAPI でこのプロパティが FALSE に設定されます。 ユーザーインターフェイスによって作成された1回目の一時は、作成するテンプレートで指定された値を使用します。 
+既定では、MAPI は値を TRUE に設定します。 [IAddrBook::CreateOneOff](iaddrbook-createoneoff.md)を呼び出すクライアントまたは [IMAPISupport::CreateOneOff](imapisupport-createoneoff.md)を呼び出すプロバイダーは _、ulFlags_ パラメーターで **MAPI_SEND_NO_RICH_INFO** ビットを設定できます。これにより、MAPI は、このプロパティを FALSE に設定します。 ユーザー インターフェイスによって作成された 1 回のオフは、作成テンプレートで指定された値を使用します。 
   
-[IAddrBook:: ResolveName](iaddrbook-resolvename.md)メソッドへの呼び出しでは、名前を解決できないにもかかわらず、インターネットアドレス (SMTP) として解釈される場合、このプロパティは FALSE に設定されます。 インターネットアドレスとして解釈されるようにするには、未解決のエントリの表示名を X @ Y の形式にする必要があります。Z ("pete@pinecone.com" など)。 
+名前を解決できないが、インターネット アドレス (SMTP) として解釈できる場合に [IAddrBook::ResolveName](iaddrbook-resolvename.md) メソッドを呼び出す場合、このプロパティは FALSE に設定されます。 インターネット アドレスとして解釈するには、未解決のエントリの表示名は、次の形式X@Y。Z ("pete@pinecone.com" など)。 
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> 関連する Exchange Server プロトコル仕様への参照を提供します。
+> 関連するプロトコル仕様へのExchange Server提供します。
     
-[[OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
-> ユーザー、連絡先、グループ、およびリソースのリストのプロパティと操作を指定します。
+> ユーザー、連絡先、グループ、およびリソースの一覧のプロパティと操作を指定します。
     
-[[OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
-> 電子メールメッセージオブジェクトに対して許容されるプロパティと操作を指定します。
+> 電子メール メッセージ オブジェクトで許容されるプロパティと操作を指定します。
     
-[[OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS-OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
-> インターネット標準の電子メールの規則からメッセージオブジェクトへ。
+> インターネット標準の電子メール規則からメッセージ オブジェクトまで。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
+> 関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -96,7 +96,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 
