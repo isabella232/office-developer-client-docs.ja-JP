@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 039b3a45-bd57-51f5-1485-a3f6d1bde85a
-description: このトピックでは、バイナリプロパティに格納されている永続的な形式から TZDEFINITION 構造体を読み取る方法について説明します。
+description: このトピックでは、バイナリ プロパティに格納されている永続化された形式から TZDEFINITION 構造を読み取る方法を示します。
 ms.openlocfilehash: a685fbfcf918e13aa82ac32799997bb05730184e
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -14,9 +14,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33434208"
 ---
-# <a name="parse-a-stream-from-a-binary-property-to-read-the-tzdefinition-structure"></a><span data-ttu-id="6a34e-103">バイナリ プロパティからのストリームを解析し、TZDEFINITION 構造体を読み取る</span><span class="sxs-lookup"><span data-stu-id="6a34e-103">Parse a stream from a binary property to read the TZDEFINITION structure</span></span>
+# <a name="parse-a-stream-from-a-binary-property-to-read-the-tzdefinition-structure"></a><span data-ttu-id="c57e9-103">バイナリ プロパティからのストリームを解析し、TZDEFINITION 構造体を読み取る</span><span class="sxs-lookup"><span data-stu-id="c57e9-103">Parse a stream from a binary property to read the TZDEFINITION structure</span></span>
 
-<span data-ttu-id="6a34e-104">このトピックでは、バイナリプロパティに格納されている永続的な形式から[TZDEFINITION](tzdefinition.md)構造体を読み取る方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="6a34e-104">This topic shows how to read the [TZDEFINITION](tzdefinition.md) structure from the persisted format stored in a binary property.</span></span> 
+<span data-ttu-id="c57e9-104">このトピックでは、バイナリ プロパティに格納されている永続化された形式から [TZDEFINITION](tzdefinition.md) 構造を読み取る方法を示します。</span><span class="sxs-lookup"><span data-stu-id="c57e9-104">This topic shows how to read the [TZDEFINITION](tzdefinition.md) structure from the persisted format stored in a binary property.</span></span> 
   
 ```cpp
 TZDEFINITION* BinToTZDEFINITION(ULONG cbDef, LPBYTE lpbDef) 
@@ -83,8 +83,8 @@ TZDEFINITION* BinToTZDEFINITION(ULONG cbDef, LPBYTE lpbDef)
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="6a34e-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="6a34e-105">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c57e9-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="c57e9-105">See also</span></span>
 
-- [<span data-ttu-id="6a34e-106">バイナリ プロパティにコミットするためにストリームに TZDEFINITION を保持することについて</span><span class="sxs-lookup"><span data-stu-id="6a34e-106">About persisting TZDEFINITION to a stream to commit to a binary property</span></span>](about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
-- [<span data-ttu-id="6a34e-107">予定からタイム ゾーンのプロパティを読み取る</span><span class="sxs-lookup"><span data-stu-id="6a34e-107">Read time zone properties from an appointment</span></span>](how-to-read-time-zone-properties-from-an-appointment.md)
+- [<span data-ttu-id="c57e9-106">バイナリ プロパティにコミットするためにストリームに TZDEFINITION を保持することについて</span><span class="sxs-lookup"><span data-stu-id="c57e9-106">About persisting TZDEFINITION to a stream to commit to a binary property</span></span>](about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
+- [<span data-ttu-id="c57e9-107">予定からタイム ゾーンのプロパティを読み取る</span><span class="sxs-lookup"><span data-stu-id="c57e9-107">Read time zone properties from an appointment</span></span>](how-to-read-time-zone-properties-from-an-appointment.md)
 

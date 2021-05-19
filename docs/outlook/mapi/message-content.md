@@ -1,5 +1,5 @@
 ---
-title: メッセージコンテンツ
+title: メッセージ コンテンツ
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,30 +15,30 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33435461"
 ---
-# <a name="message-content"></a><span data-ttu-id="cab20-103">メッセージコンテンツ</span><span class="sxs-lookup"><span data-stu-id="cab20-103">Message Content</span></span>
+# <a name="message-content"></a><span data-ttu-id="6966f-103">メッセージ コンテンツ</span><span class="sxs-lookup"><span data-stu-id="6966f-103">Message Content</span></span>
 
   
   
-<span data-ttu-id="cab20-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="cab20-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="6966f-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="6966f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="cab20-105">メッセージコンテンツには2つのエンコード方式があります。1つは MIME を使用し、もう1つは uuencode を使用します。</span><span class="sxs-lookup"><span data-stu-id="cab20-105">There are two possible encodings for the message content: one using MIME, the other using uuencode.</span></span> <span data-ttu-id="cab20-106">MIME は推奨されるエンコーディングです。</span><span class="sxs-lookup"><span data-stu-id="cab20-106">MIME is the preferred encoding.</span></span> <span data-ttu-id="cab20-107">さらに、MAPI は、送信メッセージに TNEF 情報を含める必要があるかどうかを管理する、受信者ごとのプロパティである**PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)) を定義します。</span><span class="sxs-lookup"><span data-stu-id="cab20-107">In addition, MAPI defines a per-recipient property, **PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)), which governs whether or not TNEF information should be included in an outgoing message.</span></span> <span data-ttu-id="cab20-108">そのため、メッセージコンテンツをエンコードする方法は合計4つあります。</span><span class="sxs-lookup"><span data-stu-id="cab20-108">So there are a total of four ways of encoding message content:</span></span>
+<span data-ttu-id="6966f-105">メッセージ コンテンツには、MIME を使用するエンコードと uuencode を使用するエンコードの 2 つがあります。</span><span class="sxs-lookup"><span data-stu-id="6966f-105">There are two possible encodings for the message content: one using MIME, the other using uuencode.</span></span> <span data-ttu-id="6966f-106">MIME が優先エンコードです。</span><span class="sxs-lookup"><span data-stu-id="6966f-106">MIME is the preferred encoding.</span></span> <span data-ttu-id="6966f-107">さらに、MAPI は **、TNEF** 情報を送信メッセージに含めるかどうかを制御する受信者ごとのプロパティ PR_SEND_RICH_INFO ([PidTagSendRichInfo)](pidtagsendrichinfo-canonical-property.md)を定義します。</span><span class="sxs-lookup"><span data-stu-id="6966f-107">In addition, MAPI defines a per-recipient property, **PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)), which governs whether or not TNEF information should be included in an outgoing message.</span></span> <span data-ttu-id="6966f-108">したがって、メッセージ コンテンツをエンコードする方法は合計 4 種類あります。</span><span class="sxs-lookup"><span data-stu-id="6966f-108">So there are a total of four ways of encoding message content:</span></span>
   
-- <span data-ttu-id="cab20-109">TNEF を使用した MIME</span><span class="sxs-lookup"><span data-stu-id="cab20-109">MIME with TNEF</span></span>
+- <span data-ttu-id="6966f-109">TNEF を含む MIME</span><span class="sxs-lookup"><span data-stu-id="6966f-109">MIME with TNEF</span></span>
     
-- <span data-ttu-id="cab20-110">TNEF なしの MIME</span><span class="sxs-lookup"><span data-stu-id="cab20-110">MIME without TNEF</span></span>
+- <span data-ttu-id="6966f-110">TNEF なしの MIME</span><span class="sxs-lookup"><span data-stu-id="6966f-110">MIME without TNEF</span></span>
     
-- <span data-ttu-id="cab20-111">TNEF を使用した uuencode</span><span class="sxs-lookup"><span data-stu-id="cab20-111">uuencode with TNEF</span></span>
+- <span data-ttu-id="6966f-111">TNEF を含む uuencode</span><span class="sxs-lookup"><span data-stu-id="6966f-111">uuencode with TNEF</span></span>
     
-- <span data-ttu-id="cab20-112">TNEF なしの uuencode</span><span class="sxs-lookup"><span data-stu-id="cab20-112">uuencode without TNEF</span></span>
+- <span data-ttu-id="6966f-112">TNEF のない uuencode</span><span class="sxs-lookup"><span data-stu-id="6966f-112">uuencode without TNEF</span></span>
     
-<span data-ttu-id="cab20-113">送信メッセージに対して MIME または uuencode を選択する方法が指定されていません。</span><span class="sxs-lookup"><span data-stu-id="cab20-113">How to choose MIME or uuencode for outbound messages is not specified.</span></span>
+<span data-ttu-id="6966f-113">送信メッセージに MIME または uuencode を選択する方法は指定されていません。</span><span class="sxs-lookup"><span data-stu-id="6966f-113">How to choose MIME or uuencode for outbound messages is not specified.</span></span>
   
-<span data-ttu-id="cab20-114">次のプロパティは、TNEF から除外されます。 **\*PR_SENDER_**、 **PR_ATTACH_DATA_\***、 **PR_BODY**。</span><span class="sxs-lookup"><span data-stu-id="cab20-114">The following properties are excluded from TNEF: **PR_SENDER_\***, **PR_ATTACH_DATA_\***, **PR_BODY**.</span></span> <span data-ttu-id="cab20-115">その他のすべての転送テーブルのメッセージプロパティは、TNEF ストリームに含まれています。</span><span class="sxs-lookup"><span data-stu-id="cab20-115">All other transmittable message properties are included in the TNEF stream.</span></span>
+<span data-ttu-id="6966f-114">次のプロパティは、TNEF から除外されます **\* 。PR_SENDER_、PR_ATTACH_DATA_、PR_BODY。** **\*** </span><span class="sxs-lookup"><span data-stu-id="6966f-114">The following properties are excluded from TNEF: **PR_SENDER_\***, **PR_ATTACH_DATA_\***, **PR_BODY**.</span></span> <span data-ttu-id="6966f-115">他のすべての送信可能なメッセージ プロパティは、TNEF ストリームに含まれます。</span><span class="sxs-lookup"><span data-stu-id="6966f-115">All other transmittable message properties are included in the TNEF stream.</span></span>
   
-<span data-ttu-id="cab20-116">次の推奨事項は、実装がサポートする方法を決定できるパラメーターの一覧を提供することを目的としています。</span><span class="sxs-lookup"><span data-stu-id="cab20-116">The following suggestions are intended to provide a list of parameters that the implementation can decide how to support:</span></span>
+<span data-ttu-id="6966f-116">次の提案は、実装がサポートする方法を決定できるパラメーターの一覧を提供することを目的としています。</span><span class="sxs-lookup"><span data-stu-id="6966f-116">The following suggestions are intended to provide a list of parameters that the implementation can decide how to support:</span></span>
   
-- <span data-ttu-id="cab20-117">送信メッセージに MIME または uuencode を使用してエンコードするかどうか: boolean。</span><span class="sxs-lookup"><span data-stu-id="cab20-117">Whether to encode using MIME or uuencode for outbound messages: boolean.</span></span>
+- <span data-ttu-id="6966f-117">送信メッセージに MIME または uuencode を使用してエンコードするかどうかを指定します。ブール型 (boolean) です。</span><span class="sxs-lookup"><span data-stu-id="6966f-117">Whether to encode using MIME or uuencode for outbound messages: boolean.</span></span>
     
-- <span data-ttu-id="cab20-118">送信メッセージに使用する文字セット: string (charset パラメーターに直接コピーされる) または列挙 (内部的に文字セット文字列に変換されます)。</span><span class="sxs-lookup"><span data-stu-id="cab20-118">Character set to use for outbound messages: string (copied directly to charset parameter) or enumeration (translated internally to charset string).</span></span>
+- <span data-ttu-id="6966f-118">送信メッセージに使用する文字セット: string (charset パラメーターに直接コピー) または列挙 (内部で文字セット文字列に変換)。</span><span class="sxs-lookup"><span data-stu-id="6966f-118">Character set to use for outbound messages: string (copied directly to charset parameter) or enumeration (translated internally to charset string).</span></span>
     
 

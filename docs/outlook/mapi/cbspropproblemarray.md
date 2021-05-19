@@ -19,35 +19,35 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33434908"
 ---
-# <a name="cbspropproblemarray"></a><span data-ttu-id="89f93-103">CbSPropProblemArray</span><span class="sxs-lookup"><span data-stu-id="89f93-103">CbSPropProblemArray</span></span>
+# <a name="cbspropproblemarray"></a><span data-ttu-id="888ce-103">CbSPropProblemArray</span><span class="sxs-lookup"><span data-stu-id="888ce-103">CbSPropProblemArray</span></span>
 
   
   
-<span data-ttu-id="89f93-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="89f93-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="888ce-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="888ce-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="89f93-105">既存の[spropの配列](spropproblemarray.md)構造のバイト数を計算します。</span><span class="sxs-lookup"><span data-stu-id="89f93-105">Computes the number of bytes in an existing [SPropProblemArray](spropproblemarray.md) structure.</span></span> 
+<span data-ttu-id="888ce-105">既存の [SPropProblemArray](spropproblemarray.md) 構造体のバイト数を計算します。</span><span class="sxs-lookup"><span data-stu-id="888ce-105">Computes the number of bytes in an existing [SPropProblemArray](spropproblemarray.md) structure.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="89f93-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="89f93-106">Header file:</span></span>  <br/> |<span data-ttu-id="89f93-107">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="89f93-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="89f93-108">関連する構造:</span><span class="sxs-lookup"><span data-stu-id="89f93-108">Related structure:</span></span>  <br/> |<span data-ttu-id="89f93-109">**SPropProblemArray**</span><span class="sxs-lookup"><span data-stu-id="89f93-109">**SPropProblemArray**</span></span> <br/> |
+|<span data-ttu-id="888ce-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="888ce-106">Header file:</span></span>  <br/> |<span data-ttu-id="888ce-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="888ce-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="888ce-108">関連する構造:</span><span class="sxs-lookup"><span data-stu-id="888ce-108">Related structure:</span></span>  <br/> |<span data-ttu-id="888ce-109">**SPropProblemArray**</span><span class="sxs-lookup"><span data-stu-id="888ce-109">**SPropProblemArray**</span></span> <br/> |
    
 ```cpp
 CbSPropProblemArray (_lparray)
 ```
 
-## <a name="parameters"></a><span data-ttu-id="89f93-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="89f93-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="888ce-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="888ce-110">Parameters</span></span>
 
- <span data-ttu-id="89f93-111">__lparray_</span><span class="sxs-lookup"><span data-stu-id="89f93-111">__lparray_</span></span>
+ <span data-ttu-id="888ce-111">_ _lparray_</span><span class="sxs-lookup"><span data-stu-id="888ce-111">_ _lparray_</span></span>
   
-> <span data-ttu-id="89f93-112">既存の**spropの配列**構造体へのポインター。</span><span class="sxs-lookup"><span data-stu-id="89f93-112">Pointer to the existing **SPropProblemArray** structure.</span></span> 
+> <span data-ttu-id="888ce-112">既存の **SPropProblemArray 構造体へのポインター** 。</span><span class="sxs-lookup"><span data-stu-id="888ce-112">Pointer to the existing **SPropProblemArray** structure.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="89f93-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="89f93-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="888ce-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="888ce-113">See also</span></span>
 
 
 
-[<span data-ttu-id="89f93-114">SPropProblemArray</span><span class="sxs-lookup"><span data-stu-id="89f93-114">SPropProblemArray</span></span>](spropproblemarray.md)
+[<span data-ttu-id="888ce-114">SPropProblemArray</span><span class="sxs-lookup"><span data-stu-id="888ce-114">SPropProblemArray</span></span>](spropproblemarray.md)
 
 
-[<span data-ttu-id="89f93-115">構造に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="89f93-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
+[<span data-ttu-id="888ce-115">構造に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="888ce-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
 

@@ -19,18 +19,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433914"
 ---
-# <a name="smapiverbarray"></a><span data-ttu-id="4abde-103">SMAPIVerbArray</span><span class="sxs-lookup"><span data-stu-id="4abde-103">SMAPIVerbArray</span></span>
+# <a name="smapiverbarray"></a><span data-ttu-id="49bb0-103">SMAPIVerbArray</span><span class="sxs-lookup"><span data-stu-id="49bb0-103">SMAPIVerbArray</span></span>
 
   
   
-<span data-ttu-id="4abde-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="4abde-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="49bb0-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="49bb0-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="4abde-105">MAPI 動詞を記述する[smapiverb](smapiverb.md)構造の配列が含まれています。</span><span class="sxs-lookup"><span data-stu-id="4abde-105">Contains an array of [SMAPIVerb](smapiverb.md) structures that describe MAPI verbs.</span></span> 
+<span data-ttu-id="49bb0-105">MAPI 動詞を記述 [する SMAPIVerb](smapiverb.md) 構造体の配列を格納します。</span><span class="sxs-lookup"><span data-stu-id="49bb0-105">Contains an array of [SMAPIVerb](smapiverb.md) structures that describe MAPI verbs.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="4abde-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="4abde-106">Header file:</span></span>  <br/> |<span data-ttu-id="4abde-107">Mapiform</span><span class="sxs-lookup"><span data-stu-id="4abde-107">Mapiform.h</span></span>  <br/> |
-|<span data-ttu-id="4abde-108">関連するマクロ:</span><span class="sxs-lookup"><span data-stu-id="4abde-108">Related macro:</span></span>  <br/> |[<span data-ttu-id="4abde-109">CbMAPIVerbArray</span><span class="sxs-lookup"><span data-stu-id="4abde-109">CbMAPIVerbArray</span></span>](cbmapiverbarray.md) <br/> |
+|<span data-ttu-id="49bb0-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="49bb0-106">Header file:</span></span>  <br/> |<span data-ttu-id="49bb0-107">Mapiform.h</span><span class="sxs-lookup"><span data-stu-id="49bb0-107">Mapiform.h</span></span>  <br/> |
+|<span data-ttu-id="49bb0-108">関連するマクロ:</span><span class="sxs-lookup"><span data-stu-id="49bb0-108">Related macro:</span></span>  <br/> |[<span data-ttu-id="49bb0-109">CbMAPIVerbArray</span><span class="sxs-lookup"><span data-stu-id="49bb0-109">CbMAPIVerbArray</span></span>](cbmapiverbarray.md) <br/> |
    
 ```cpp
 typedef struct
@@ -41,26 +41,26 @@ typedef struct
 
 ```
 
-## <a name="members"></a><span data-ttu-id="4abde-110">メンバー</span><span class="sxs-lookup"><span data-stu-id="4abde-110">Members</span></span>
+## <a name="members"></a><span data-ttu-id="49bb0-110">Members</span><span class="sxs-lookup"><span data-stu-id="49bb0-110">Members</span></span>
 
- <span data-ttu-id="4abde-111">**cforms**</span><span class="sxs-lookup"><span data-stu-id="4abde-111">**cForms**</span></span>
+ <span data-ttu-id="49bb0-111">**cForms**</span><span class="sxs-lookup"><span data-stu-id="49bb0-111">**cForms**</span></span>
   
-> <span data-ttu-id="4abde-112">配列内の動詞の数。</span><span class="sxs-lookup"><span data-stu-id="4abde-112">Count of verbs in the array.</span></span>
+> <span data-ttu-id="49bb0-112">配列内の動詞の数。</span><span class="sxs-lookup"><span data-stu-id="49bb0-112">Count of verbs in the array.</span></span>
     
- <span data-ttu-id="4abde-113">**aforminfo**</span><span class="sxs-lookup"><span data-stu-id="4abde-113">**aFormInfo**</span></span>
+ <span data-ttu-id="49bb0-113">**aFormInfo**</span><span class="sxs-lookup"><span data-stu-id="49bb0-113">**aFormInfo**</span></span>
   
-> <span data-ttu-id="4abde-114">MAPI 動詞の配列。</span><span class="sxs-lookup"><span data-stu-id="4abde-114">Array of MAPI verbs.</span></span>
+> <span data-ttu-id="49bb0-114">MAPI 動詞の配列。</span><span class="sxs-lookup"><span data-stu-id="49bb0-114">Array of MAPI verbs.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="4abde-115">注釈</span><span class="sxs-lookup"><span data-stu-id="4abde-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="49bb0-115">注釈</span><span class="sxs-lookup"><span data-stu-id="49bb0-115">Remarks</span></span>
 
-<span data-ttu-id="4abde-116">**SMAPIVerbArray**構造体は、 [imapiforminfo:: CalcVerbSet](imapiforminfo-calcverbset.md)メソッドのパラメーターとして渡されます。</span><span class="sxs-lookup"><span data-stu-id="4abde-116">The **SMAPIVerbArray** structure is passed as a parameter in the [IMAPIFormInfo::CalcVerbSet](imapiforminfo-calcverbset.md) method.</span></span> 
+<span data-ttu-id="49bb0-116">**SMAPIVerbArray** 構造体は [、IMAPIFormInfo::CalcVerbSet](imapiforminfo-calcverbset.md)メソッドでパラメーターとして渡されます。</span><span class="sxs-lookup"><span data-stu-id="49bb0-116">The **SMAPIVerbArray** structure is passed as a parameter in the [IMAPIFormInfo::CalcVerbSet](imapiforminfo-calcverbset.md) method.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="4abde-117">関連項目</span><span class="sxs-lookup"><span data-stu-id="4abde-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="49bb0-117">関連項目</span><span class="sxs-lookup"><span data-stu-id="49bb0-117">See also</span></span>
 
 
 
-[<span data-ttu-id="4abde-118">SMAPIVerb</span><span class="sxs-lookup"><span data-stu-id="4abde-118">SMAPIVerb</span></span>](smapiverb.md)
+[<span data-ttu-id="49bb0-118">SMAPIVerb</span><span class="sxs-lookup"><span data-stu-id="49bb0-118">SMAPIVerb</span></span>](smapiverb.md)
 
 
-[<span data-ttu-id="4abde-119">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="4abde-119">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="49bb0-119">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="49bb0-119">MAPI Structures</span></span>](mapi-structures.md)
 

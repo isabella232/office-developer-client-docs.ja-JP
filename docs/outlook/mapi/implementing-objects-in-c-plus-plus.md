@@ -15,13 +15,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33432955"
 ---
-# <a name="implementing-objects-in-c"></a><span data-ttu-id="8623a-103">C++ でのオブジェクトの実装</span><span class="sxs-lookup"><span data-stu-id="8623a-103">Implementing objects in C++</span></span>
+# <a name="implementing-objects-in-c"></a><span data-ttu-id="4ead8-103">C++ でのオブジェクトの実装</span><span class="sxs-lookup"><span data-stu-id="4ead8-103">Implementing objects in C++</span></span>
 
-<span data-ttu-id="8623a-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="8623a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="4ead8-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="4ead8-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="8623a-105">C++ クライアントおよびサービスプロバイダーは、実装するインターフェイスから継承するクラスを作成することによって、MAPI オブジェクトを定義します。</span><span class="sxs-lookup"><span data-stu-id="8623a-105">C++ clients and service providers define MAPI objects by creating classes that inherit from the interfaces they are implementing.</span></span> <span data-ttu-id="8623a-106">各インターフェイスメソッドは、クラスのコンストラクターおよびデストラクターとして、public になります。</span><span class="sxs-lookup"><span data-stu-id="8623a-106">Each of the interface methods is public, as are the constructor and destructor for the class.</span></span> <span data-ttu-id="8623a-107">クラスに追加のメソッドがある場合は、実装に応じてパブリックまたはプライベートにすることができます。</span><span class="sxs-lookup"><span data-stu-id="8623a-107">If the class has additional methods, they can be public or private, depending on the implementation.</span></span> <span data-ttu-id="8623a-108">すべてのデータメンバーがプライベートである。</span><span class="sxs-lookup"><span data-stu-id="8623a-108">All data members are private.</span></span> 
+<span data-ttu-id="4ead8-105">C++ クライアントとサービス プロバイダーは、実装しているインターフェイスから継承するクラスを作成して MAPI オブジェクトを定義します。</span><span class="sxs-lookup"><span data-stu-id="4ead8-105">C++ clients and service providers define MAPI objects by creating classes that inherit from the interfaces they are implementing.</span></span> <span data-ttu-id="4ead8-106">各インターフェイス メソッドは、クラスのコンストラクターとデストラクタと同様にパブリックです。</span><span class="sxs-lookup"><span data-stu-id="4ead8-106">Each of the interface methods is public, as are the constructor and destructor for the class.</span></span> <span data-ttu-id="4ead8-107">クラスに追加のメソッドがある場合は、実装に応じてパブリックまたはプライベートにできます。</span><span class="sxs-lookup"><span data-stu-id="4ead8-107">If the class has additional methods, they can be public or private, depending on the implementation.</span></span> <span data-ttu-id="4ead8-108">すべてのデータ メンバーはプライベートです。</span><span class="sxs-lookup"><span data-stu-id="4ead8-108">All data members are private.</span></span> 
   
-<span data-ttu-id="8623a-109">次のコード例は、C++ status オブジェクトを定義する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="8623a-109">The following example code shows how to define a C++ status object.</span></span> <span data-ttu-id="8623a-110">クラス`CMyMAPIObject`は[imapistatus: imapistatus](imapistatusimapiprop.md)インターフェイスから継承します。</span><span class="sxs-lookup"><span data-stu-id="8623a-110">The  `CMyMAPIObject` class inherits from the [IMAPIStatus : IMAPIProp](imapistatusimapiprop.md) interface.</span></span> <span data-ttu-id="8623a-111">この例で使用されているマクロの多くは、OLE ヘッダーファイル compobj で定義されています。</span><span class="sxs-lookup"><span data-stu-id="8623a-111">Many of the macros used in this example are defined in the OLE header file Compobj.h.</span></span> <span data-ttu-id="8623a-112">クラスの最初のメンバーは、基本インターフェイスのメソッドです。その後に、継承されたインターフェイスのメソッドが継承順に続きます。</span><span class="sxs-lookup"><span data-stu-id="8623a-112">The first members of the class are the methods of the base interface, followed by the methods of the inherited interfaces in order of inheritance.</span></span> <span data-ttu-id="8623a-113">インターフェイス定義の後には、追加のメソッド、コンストラクターとデストラクター、データメンバーがあります。</span><span class="sxs-lookup"><span data-stu-id="8623a-113">Following the interface definitions are any additional methods, the constructor and destructor, and the data members.</span></span> 
+<span data-ttu-id="4ead8-109">次のコード例は、C++ 状態オブジェクトを定義する方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="4ead8-109">The following example code shows how to define a C++ status object.</span></span> <span data-ttu-id="4ead8-110">クラス  `CMyMAPIObject` は [IMAPIStatus : IMAPIProp インターフェイスから継承](imapistatusimapiprop.md) します。</span><span class="sxs-lookup"><span data-stu-id="4ead8-110">The  `CMyMAPIObject` class inherits from the [IMAPIStatus : IMAPIProp](imapistatusimapiprop.md) interface.</span></span> <span data-ttu-id="4ead8-111">この例で使用されるマクロの多くは、OLE ヘッダー ファイル Compobj.h で定義されています。</span><span class="sxs-lookup"><span data-stu-id="4ead8-111">Many of the macros used in this example are defined in the OLE header file Compobj.h.</span></span> <span data-ttu-id="4ead8-112">クラスの最初のメンバーは、基本インターフェイスのメソッドで、継承順に継承されたインターフェイスのメソッドが続きます。</span><span class="sxs-lookup"><span data-stu-id="4ead8-112">The first members of the class are the methods of the base interface, followed by the methods of the inherited interfaces in order of inheritance.</span></span> <span data-ttu-id="4ead8-113">インターフェイス定義の後には、追加のメソッド、コンストラクターとデストラクタ、およびデータ メンバーが含まれます。</span><span class="sxs-lookup"><span data-stu-id="4ead8-113">Following the interface definitions are any additional methods, the constructor and destructor, and the data members.</span></span> 
   
 ```cpp
 class  CMyMAPIObject : public IMAPIStatus
@@ -48,14 +48,14 @@ private :
  
 ```
 
-<span data-ttu-id="8623a-114">`CMyMAPIObject`クラスのインスタンスを使用するために、C++ クライアントまたはサービスプロバイダーは、次のように、そのメソッドのいずれかに呼び出しを行います。</span><span class="sxs-lookup"><span data-stu-id="8623a-114">To use an instance of the  `CMyMAPIObject` class, C++ clients or service providers make a call to one of its methods as follows:</span></span> 
+<span data-ttu-id="4ead8-114">クラスのインスタンスを使用するには、C++ クライアントまたはサービス プロバイダーが次のようにそのメソッドの 1 つを  `CMyMAPIObject` 呼び出します。</span><span class="sxs-lookup"><span data-stu-id="4ead8-114">To use an instance of the  `CMyMAPIObject` class, C++ clients or service providers make a call to one of its methods as follows:</span></span> 
   
 ```cpp
 lpMyObj->ValidateState(ulUIParam, ulFlags);
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="8623a-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="8623a-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4ead8-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="4ead8-115">See also</span></span>
 
-- [<span data-ttu-id="8623a-116">MAPI オブジェクトの実装</span><span class="sxs-lookup"><span data-stu-id="8623a-116">Implementing MAPI Objects</span></span>](implementing-mapi-objects.md)
+- [<span data-ttu-id="4ead8-116">MAPI オブジェクトの実装</span><span class="sxs-lookup"><span data-stu-id="4ead8-116">Implementing MAPI Objects</span></span>](implementing-mapi-objects.md)
 

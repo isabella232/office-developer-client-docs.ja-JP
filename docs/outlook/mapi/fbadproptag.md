@@ -19,19 +19,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433648"
 ---
-# <a name="fbadproptag"></a><span data-ttu-id="533e9-103">FBadPropTag</span><span class="sxs-lookup"><span data-stu-id="533e9-103">FBadPropTag</span></span>
+# <a name="fbadproptag"></a><span data-ttu-id="c0cfb-103">FBadPropTag</span><span class="sxs-lookup"><span data-stu-id="c0cfb-103">FBadPropTag</span></span>
 
   
   
-<span data-ttu-id="533e9-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="533e9-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="c0cfb-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="c0cfb-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="533e9-105">指定されたプロパティタグを検証します。</span><span class="sxs-lookup"><span data-stu-id="533e9-105">Validates a specified property tag.</span></span> 
+<span data-ttu-id="c0cfb-105">指定したプロパティ タグを検証します。</span><span class="sxs-lookup"><span data-stu-id="c0cfb-105">Validates a specified property tag.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="533e9-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="533e9-106">Header file:</span></span>  <br/> |<span data-ttu-id="533e9-107">Mapival.h</span><span class="sxs-lookup"><span data-stu-id="533e9-107">Mapival.h</span></span>  <br/> |
-|<span data-ttu-id="533e9-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="533e9-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="533e9-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="533e9-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="533e9-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="533e9-110">Called by:</span></span>  <br/> |<span data-ttu-id="533e9-111">サービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="533e9-111">Service providers</span></span>  <br/> |
+|<span data-ttu-id="c0cfb-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="c0cfb-106">Header file:</span></span>  <br/> |<span data-ttu-id="c0cfb-107">Mapival.h</span><span class="sxs-lookup"><span data-stu-id="c0cfb-107">Mapival.h</span></span>  <br/> |
+|<span data-ttu-id="c0cfb-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="c0cfb-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="c0cfb-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="c0cfb-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="c0cfb-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="c0cfb-110">Called by:</span></span>  <br/> |<span data-ttu-id="c0cfb-111">サービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="c0cfb-111">Service providers</span></span>  <br/> |
    
 ```cpp
 ULONG FBadPropTag(
@@ -39,29 +39,29 @@ ULONG FBadPropTag(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="533e9-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="533e9-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="c0cfb-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="c0cfb-112">Parameters</span></span>
 
- <span data-ttu-id="533e9-113">_ulPropTag_</span><span class="sxs-lookup"><span data-stu-id="533e9-113">_ulPropTag_</span></span>
+ <span data-ttu-id="c0cfb-113">_ulPropTag_</span><span class="sxs-lookup"><span data-stu-id="c0cfb-113">_ulPropTag_</span></span>
   
-> <span data-ttu-id="533e9-114">順番検証するプロパティタグ。</span><span class="sxs-lookup"><span data-stu-id="533e9-114">[in] The property tag to be validated.</span></span>
+> <span data-ttu-id="c0cfb-114">[in]検証するプロパティ タグ。</span><span class="sxs-lookup"><span data-stu-id="c0cfb-114">[in] The property tag to be validated.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="533e9-115">戻り値</span><span class="sxs-lookup"><span data-stu-id="533e9-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c0cfb-115">戻り値</span><span class="sxs-lookup"><span data-stu-id="c0cfb-115">Return value</span></span>
 
-<span data-ttu-id="533e9-116">TRUE</span><span class="sxs-lookup"><span data-stu-id="533e9-116">TRUE</span></span> 
+<span data-ttu-id="c0cfb-116">TRUE</span><span class="sxs-lookup"><span data-stu-id="c0cfb-116">TRUE</span></span> 
   
-> <span data-ttu-id="533e9-117">指定されたプロパティタグは、有効な MAPI プロパティタグではありません。</span><span class="sxs-lookup"><span data-stu-id="533e9-117">The specified property tag is not a valid MAPI property tag.</span></span> 
+> <span data-ttu-id="c0cfb-117">指定したプロパティ タグが有効な MAPI プロパティ タグではありません。</span><span class="sxs-lookup"><span data-stu-id="c0cfb-117">The specified property tag is not a valid MAPI property tag.</span></span> 
     
-<span data-ttu-id="533e9-118">FALSE</span><span class="sxs-lookup"><span data-stu-id="533e9-118">FALSE</span></span> 
+<span data-ttu-id="c0cfb-118">FALSE</span><span class="sxs-lookup"><span data-stu-id="c0cfb-118">FALSE</span></span> 
   
-> <span data-ttu-id="533e9-119">指定されたプロパティタグは、有効な MAPI プロパティタグです。</span><span class="sxs-lookup"><span data-stu-id="533e9-119">The specified property tag is a valid MAPI property tag.</span></span>
+> <span data-ttu-id="c0cfb-119">指定したプロパティ タグは、有効な MAPI プロパティ タグです。</span><span class="sxs-lookup"><span data-stu-id="c0cfb-119">The specified property tag is a valid MAPI property tag.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="533e9-120">注釈</span><span class="sxs-lookup"><span data-stu-id="533e9-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c0cfb-120">注釈</span><span class="sxs-lookup"><span data-stu-id="c0cfb-120">Remarks</span></span>
 
-<span data-ttu-id="533e9-121">**FBadPropTag**関数は、MAPI 定義に基づいて指定されたプロパティタグを検証します。</span><span class="sxs-lookup"><span data-stu-id="533e9-121">The **FBadPropTag** function validates the specified property tag based on MAPI definitions.</span></span> <span data-ttu-id="533e9-122">プロパティの型が MAPI で定義されている型の1つであり、プロパティ識別子がその型に定義されていることを sures にします。</span><span class="sxs-lookup"><span data-stu-id="533e9-122">It make sures that the property type is one of the types defined by MAPI and that the property identifier is defined to be of that type.</span></span> 
+<span data-ttu-id="c0cfb-121">**FBadPropTag** 関数は、MAPI 定義に基づいて指定されたプロパティ タグを検証します。</span><span class="sxs-lookup"><span data-stu-id="c0cfb-121">The **FBadPropTag** function validates the specified property tag based on MAPI definitions.</span></span> <span data-ttu-id="c0cfb-122">プロパティの種類が MAPI で定義された型の 1 つであり、プロパティ識別子がその型として定義されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="c0cfb-122">It make sures that the property type is one of the types defined by MAPI and that the property identifier is defined to be of that type.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="533e9-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="533e9-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c0cfb-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="c0cfb-123">See also</span></span>
 
 
 
-[<span data-ttu-id="533e9-124">FBadProp</span><span class="sxs-lookup"><span data-stu-id="533e9-124">FBadProp</span></span>](fbadprop.md)
+[<span data-ttu-id="c0cfb-124">FBadProp</span><span class="sxs-lookup"><span data-stu-id="c0cfb-124">FBadProp</span></span>](fbadprop.md)
 

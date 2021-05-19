@@ -14,26 +14,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433634"
 ---
-# <a name="ienumfbblockreset"></a><span data-ttu-id="72abe-103">IEnumFBBlock::Reset</span><span class="sxs-lookup"><span data-stu-id="72abe-103">IEnumFBBlock::Reset</span></span>
+# <a name="ienumfbblockreset"></a><span data-ttu-id="88ad7-103">IEnumFBBlock::Reset</span><span class="sxs-lookup"><span data-stu-id="88ad7-103">IEnumFBBlock::Reset</span></span>
 
-<span data-ttu-id="72abe-104">カーソルを先頭に設定して、列挙子をリセットします。</span><span class="sxs-lookup"><span data-stu-id="72abe-104">Resets the enumerator by setting the cursor to the beginning.</span></span>
+<span data-ttu-id="88ad7-104">カーソルを先頭に設定して、列挙子をリセットします。</span><span class="sxs-lookup"><span data-stu-id="88ad7-104">Resets the enumerator by setting the cursor to the beginning.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="72abe-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="72abe-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="88ad7-105">クイック ヒント</span><span class="sxs-lookup"><span data-stu-id="88ad7-105">Quick info</span></span>
 
-<span data-ttu-id="72abe-106">[IEnumFBBlock](ienumfbblock.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="72abe-106">See [IEnumFBBlock](ienumfbblock.md).</span></span>
+<span data-ttu-id="88ad7-106">[「IEnumFBBlock」を参照](ienumfbblock.md)してください。</span><span class="sxs-lookup"><span data-stu-id="88ad7-106">See [IEnumFBBlock](ienumfbblock.md).</span></span>
   
 ```cpp
 HRESULT Reset();
 ```
 
-## <a name="return-values"></a><span data-ttu-id="72abe-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="72abe-107">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="88ad7-107">戻り値</span><span class="sxs-lookup"><span data-stu-id="88ad7-107">Return values</span></span>
 
-<span data-ttu-id="72abe-108">呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。</span><span class="sxs-lookup"><span data-stu-id="72abe-108">S_OK if the call succeeded; otherwise, an error code.</span></span>
+<span data-ttu-id="88ad7-108">呼び出しが成功した場合は S_OKそれ以外の場合はエラー コードです。</span><span class="sxs-lookup"><span data-stu-id="88ad7-108">S_OK if the call succeeded; otherwise, an error code.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="72abe-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="72abe-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="88ad7-109">関連項目</span><span class="sxs-lookup"><span data-stu-id="88ad7-109">See also</span></span>
 
-- [<span data-ttu-id="72abe-110">IEnumFBBlock::Clone</span><span class="sxs-lookup"><span data-stu-id="72abe-110">IEnumFBBlock::Clone</span></span>](ienumfbblock-clone.md)  
-- [<span data-ttu-id="72abe-111">IEnumFBBlock::Next</span><span class="sxs-lookup"><span data-stu-id="72abe-111">IEnumFBBlock::Next</span></span>](ienumfbblock-next.md)  
-- [<span data-ttu-id="72abe-112">IEnumFBBlock::Restrict</span><span class="sxs-lookup"><span data-stu-id="72abe-112">IEnumFBBlock::Restrict</span></span>](ienumfbblock-restrict.md)  
-- [<span data-ttu-id="72abe-113">IEnumFBBlock::Skip</span><span class="sxs-lookup"><span data-stu-id="72abe-113">IEnumFBBlock::Skip</span></span>](ienumfbblock-skip.md)
+- [<span data-ttu-id="88ad7-110">IEnumFBBlock::Clone</span><span class="sxs-lookup"><span data-stu-id="88ad7-110">IEnumFBBlock::Clone</span></span>](ienumfbblock-clone.md)  
+- [<span data-ttu-id="88ad7-111">IEnumFBBlock::Next</span><span class="sxs-lookup"><span data-stu-id="88ad7-111">IEnumFBBlock::Next</span></span>](ienumfbblock-next.md)  
+- [<span data-ttu-id="88ad7-112">IEnumFBBlock::Restrict</span><span class="sxs-lookup"><span data-stu-id="88ad7-112">IEnumFBBlock::Restrict</span></span>](ienumfbblock-restrict.md)  
+- [<span data-ttu-id="88ad7-113">IEnumFBBlock::Skip</span><span class="sxs-lookup"><span data-stu-id="88ad7-113">IEnumFBBlock::Skip</span></span>](ienumfbblock-skip.md)
 

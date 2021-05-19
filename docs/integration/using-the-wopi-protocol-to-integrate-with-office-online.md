@@ -13,8 +13,8 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433088"
 ---
-# <a name="using-the-wopi-protocol-to-integrate-with-office-online"></a><span data-ttu-id="12456-104">WOPI プロトコルを使用した Office Online との統合</span><span class="sxs-lookup"><span data-stu-id="12456-104">Using the WOPI protocol to integrate with Office Online</span></span>
+# <a name="using-the-wopi-protocol-to-integrate-with-office-online"></a><span data-ttu-id="6c013-104">WOPI プロトコルを使用した Office Online との統合</span><span class="sxs-lookup"><span data-stu-id="6c013-104">Using the WOPI protocol to integrate with Office Online</span></span>
 
-<span data-ttu-id="12456-p102">このコンテンツは、この場所では使用できなくなりました。続行するには、GitHub 上の「[WOPI プロトコルを使用した Office Online との統合](https://wopi.readthedocs.org/en/latest/intro.html)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="12456-p102">This content is no longer available at this location. To continue, see [Using the WOPI protocol to integrate with Office Online](https://wopi.readthedocs.org/en/latest/intro.html) on GitHub.</span></span> 
+<span data-ttu-id="6c013-p102">このコンテンツは、この場所では使用できなくなりました。続行するには、GitHub 上の「[WOPI プロトコルを使用した Office Online との統合](https://wopi.readthedocs.org/en/latest/intro.html)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6c013-p102">This content is no longer available at this location. To continue, see [Using the WOPI protocol to integrate with Office Online](https://wopi.readthedocs.org/en/latest/intro.html) on GitHub.</span></span> 
   
 

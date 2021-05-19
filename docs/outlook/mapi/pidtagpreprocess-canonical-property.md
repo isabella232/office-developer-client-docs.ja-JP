@@ -19,50 +19,50 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33435384"
 ---
-# <a name="pidtagpreprocess-canonical-property"></a><span data-ttu-id="d3796-103">PidTagPreprocess 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="d3796-103">PidTagPreprocess Canonical Property</span></span>
+# <a name="pidtagpreprocess-canonical-property"></a><span data-ttu-id="93a72-103">PidTagPreprocess 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="93a72-103">PidTagPreprocess Canonical Property</span></span>
 
   
   
-<span data-ttu-id="d3796-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="d3796-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="93a72-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="93a72-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="d3796-105">メッセージが前処理を必要とする場合は TRUE が含まれます。</span><span class="sxs-lookup"><span data-stu-id="d3796-105">Contains TRUE if the message requires preprocessing.</span></span>
+<span data-ttu-id="93a72-105">メッセージに前処理が必要な場合は TRUE を含む。</span><span class="sxs-lookup"><span data-stu-id="93a72-105">Contains TRUE if the message requires preprocessing.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="d3796-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="d3796-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="d3796-107">PR_PREPROCESS</span><span class="sxs-lookup"><span data-stu-id="d3796-107">PR_PREPROCESS</span></span>  <br/> |
-|<span data-ttu-id="d3796-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="d3796-108">Identifier:</span></span>  <br/> |<span data-ttu-id="d3796-109">0x0e22</span><span class="sxs-lookup"><span data-stu-id="d3796-109">0x0E22</span></span>  <br/> |
-|<span data-ttu-id="d3796-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="d3796-110">Data type:</span></span>  <br/> |<span data-ttu-id="d3796-111">PT_BOOLEAN</span><span class="sxs-lookup"><span data-stu-id="d3796-111">PT_BOOLEAN</span></span>  <br/> |
-|<span data-ttu-id="d3796-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="d3796-112">Area:</span></span>  <br/> |<span data-ttu-id="d3796-113">MAPI ノンノンアウトテーブル</span><span class="sxs-lookup"><span data-stu-id="d3796-113">MAPI non-transmittable</span></span>  <br/> |
+|<span data-ttu-id="93a72-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="93a72-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="93a72-107">PR_PREPROCESS</span><span class="sxs-lookup"><span data-stu-id="93a72-107">PR_PREPROCESS</span></span>  <br/> |
+|<span data-ttu-id="93a72-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="93a72-108">Identifier:</span></span>  <br/> |<span data-ttu-id="93a72-109">0x0E22</span><span class="sxs-lookup"><span data-stu-id="93a72-109">0x0E22</span></span>  <br/> |
+|<span data-ttu-id="93a72-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="93a72-110">Data type:</span></span>  <br/> |<span data-ttu-id="93a72-111">PT_BOOLEAN</span><span class="sxs-lookup"><span data-stu-id="93a72-111">PT_BOOLEAN</span></span>  <br/> |
+|<span data-ttu-id="93a72-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="93a72-112">Area:</span></span>  <br/> |<span data-ttu-id="93a72-113">MAPI 送信不可</span><span class="sxs-lookup"><span data-stu-id="93a72-113">MAPI non-transmittable</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="d3796-114">注釈</span><span class="sxs-lookup"><span data-stu-id="d3796-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="93a72-114">注釈</span><span class="sxs-lookup"><span data-stu-id="93a72-114">Remarks</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="d3796-115">このプロパティを使用しません。</span><span class="sxs-lookup"><span data-stu-id="d3796-115">Do not use this property.</span></span> <span data-ttu-id="d3796-116">MAPI で使用するために予約されています。</span><span class="sxs-lookup"><span data-stu-id="d3796-116">It is reserved for use by MAPI.</span></span> 
+> <span data-ttu-id="93a72-115">このプロパティを使用しません。</span><span class="sxs-lookup"><span data-stu-id="93a72-115">Do not use this property.</span></span> <span data-ttu-id="93a72-116">MAPI で使用するために予約されています。</span><span class="sxs-lookup"><span data-stu-id="93a72-116">It is reserved for use by MAPI.</span></span> 
   
-## <a name="related-resources"></a><span data-ttu-id="d3796-117">関連リソース</span><span class="sxs-lookup"><span data-stu-id="d3796-117">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="93a72-117">関連リソース</span><span class="sxs-lookup"><span data-stu-id="93a72-117">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="d3796-118">ヘッダーファイル</span><span class="sxs-lookup"><span data-stu-id="d3796-118">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="93a72-118">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="93a72-118">Header files</span></span>
 
-<span data-ttu-id="d3796-119">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="d3796-119">Mapidefs.h</span></span>
+<span data-ttu-id="93a72-119">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="93a72-119">Mapidefs.h</span></span>
   
-> <span data-ttu-id="d3796-120">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="d3796-120">Provides data type definitions.</span></span>
+> <span data-ttu-id="93a72-120">データ型の定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="93a72-120">Provides data type definitions.</span></span>
     
-<span data-ttu-id="d3796-121">Mapitags</span><span class="sxs-lookup"><span data-stu-id="d3796-121">Mapitags.h</span></span>
+<span data-ttu-id="93a72-121">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="93a72-121">Mapitags.h</span></span>
   
-> <span data-ttu-id="d3796-122">代替名としてリストされているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="d3796-122">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="93a72-122">代替名として一覧表示されるプロパティの定義が含まれる。</span><span class="sxs-lookup"><span data-stu-id="93a72-122">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="d3796-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="d3796-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="93a72-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="93a72-123">See also</span></span>
 
 
 
-[<span data-ttu-id="d3796-124">PidTagSubmitFlags 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="d3796-124">PidTagSubmitFlags Canonical Property</span></span>](pidtagsubmitflags-canonical-property.md)
+[<span data-ttu-id="93a72-124">PidTagSubmitFlags 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="93a72-124">PidTagSubmitFlags Canonical Property</span></span>](pidtagsubmitflags-canonical-property.md)
 
 
-[<span data-ttu-id="d3796-125">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="d3796-125">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="93a72-125">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="93a72-125">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="d3796-126">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="d3796-126">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="93a72-126">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="93a72-126">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="d3796-127">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="d3796-127">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="93a72-127">標準プロパティ名を MAPI 名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="93a72-127">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="d3796-128">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="d3796-128">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="93a72-128">MAPI 名を標準プロパティ名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="93a72-128">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

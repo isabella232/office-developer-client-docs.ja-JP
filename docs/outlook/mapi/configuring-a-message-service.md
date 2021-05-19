@@ -1,5 +1,5 @@
 ---
-title: メッセージサービスの構成
+title: メッセージ サービスの構成
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,22 +15,22 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33434509"
 ---
-# <a name="configuring-a-message-service"></a><span data-ttu-id="f60f8-103">メッセージサービスの構成</span><span class="sxs-lookup"><span data-stu-id="f60f8-103">Configuring a Message Service</span></span>
+# <a name="configuring-a-message-service"></a><span data-ttu-id="5f2fe-103">メッセージ サービスの構成</span><span class="sxs-lookup"><span data-stu-id="5f2fe-103">Configuring a Message Service</span></span>
 
   
   
-<span data-ttu-id="f60f8-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f60f8-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="5f2fe-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="5f2fe-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
- <span data-ttu-id="f60f8-105">**メッセージサービスのすべてのサービスプロバイダーを構成するには**</span><span class="sxs-lookup"><span data-stu-id="f60f8-105">**To configure all the service providers in a message service**</span></span>
+ <span data-ttu-id="5f2fe-105">**メッセージ サービス内のすべてのサービス プロバイダーを構成するには**</span><span class="sxs-lookup"><span data-stu-id="5f2fe-105">**To configure all the service providers in a message service**</span></span>
   
-- <span data-ttu-id="f60f8-106">[IMsgServiceAdmin:: ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="f60f8-106">Call [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md).</span></span> <span data-ttu-id="f60f8-107">構成に必要なすべてのデータがプログラムで利用できる場合は、ユーザーインターフェイスを表示するかどうかを選択できます。</span><span class="sxs-lookup"><span data-stu-id="f60f8-107">If all of the data necessary for configuration is available programmatically, you can choose whether or not to display a user interface.</span></span> <span data-ttu-id="f60f8-108">ただし、1つまたは複数のプロバイダーの情報の一部を使用できない場合は、SERVICE_UI_ALLOWED または SERVICE_UI_ALWAYS フラグを設定してください。</span><span class="sxs-lookup"><span data-stu-id="f60f8-108">However, if some of the information for one or more providers is not available, make sure that you set the SERVICE_UI_ALLOWED or SERVICE_UI_ALWAYS flag.</span></span> <span data-ttu-id="f60f8-109">必要な構成データが利用できない場合にユーザーインターフェイスを非表示にすると、メッセージサービスは未構成の状態になります。</span><span class="sxs-lookup"><span data-stu-id="f60f8-109">Suppressing a user interface when required configuration data is unavailable results in an unconfigured message service.</span></span>
+- <span data-ttu-id="5f2fe-106">[IMsgServiceAdmin::ConfigureMsgService を呼び出します](imsgserviceadmin-configuremsgservice.md)。</span><span class="sxs-lookup"><span data-stu-id="5f2fe-106">Call [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md).</span></span> <span data-ttu-id="5f2fe-107">構成に必要なすべてのデータをプログラムで使用できる場合は、ユーザー インターフェイスを表示するかどうかを選択できます。</span><span class="sxs-lookup"><span data-stu-id="5f2fe-107">If all of the data necessary for configuration is available programmatically, you can choose whether or not to display a user interface.</span></span> <span data-ttu-id="5f2fe-108">ただし、1 つ以上のプロバイダーの情報の一部が使用できない場合は、SERVICE_UI_ALLOWEDまたはSERVICE_UI_ALWAYSしてください。</span><span class="sxs-lookup"><span data-stu-id="5f2fe-108">However, if some of the information for one or more providers is not available, make sure that you set the SERVICE_UI_ALLOWED or SERVICE_UI_ALWAYS flag.</span></span> <span data-ttu-id="5f2fe-109">必要な構成データが使用できない場合にユーザー インターフェイスを抑制すると、構成されていないメッセージ サービスが発生します。</span><span class="sxs-lookup"><span data-stu-id="5f2fe-109">Suppressing a user interface when required configuration data is unavailable results in an unconfigured message service.</span></span>
     
- <span data-ttu-id="f60f8-110">**メッセージサービスで1つのサービスプロバイダーを構成するには**</span><span class="sxs-lookup"><span data-stu-id="f60f8-110">**To configure a single service provider in a message service**</span></span>
+ <span data-ttu-id="5f2fe-110">**メッセージ サービスで 1 つのサービス プロバイダーを構成するには**</span><span class="sxs-lookup"><span data-stu-id="5f2fe-110">**To configure a single service provider in a message service**</span></span>
   
-1. <span data-ttu-id="f60f8-111">呼び出し[imapisession:: getstatustable](imapisession-getstatustable.md)は、サービスプロバイダーの status オブジェクトにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="f60f8-111">Call [IMAPISession::GetStatusTable](imapisession-getstatustable.md) to access the service provider's status object.</span></span> 
+1. <span data-ttu-id="5f2fe-111">[IMAPISession::GetStatusTable](imapisession-getstatustable.md)を呼び出して、サービス プロバイダーの状態オブジェクトにアクセスします。</span><span class="sxs-lookup"><span data-stu-id="5f2fe-111">Call [IMAPISession::GetStatusTable](imapisession-getstatustable.md) to access the service provider's status object.</span></span> 
     
-2. <span data-ttu-id="f60f8-112">呼び出し[imapistatus:: settingsdialog](imapistatus-settingsdialog.md)を呼び出して、サービスプロバイダーのプロパティシートを表示します。</span><span class="sxs-lookup"><span data-stu-id="f60f8-112">Call [IMAPIStatus::SettingsDialog](imapistatus-settingsdialog.md) to display the service provider's property sheet.</span></span> 
+2. <span data-ttu-id="5f2fe-112">[IMAPIStatus::SettingsDialog](imapistatus-settingsdialog.md)を呼び出して、サービス プロバイダーのプロパティ シートを表示します。</span><span class="sxs-lookup"><span data-stu-id="5f2fe-112">Call [IMAPIStatus::SettingsDialog](imapistatus-settingsdialog.md) to display the service provider's property sheet.</span></span> 
     
-<span data-ttu-id="f60f8-113">状態オブジェクトの使用の詳細については、「 [status Table and status objects](status-table-and-status-objects.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f60f8-113">For more information about using status objects, see [Status Table and Status Objects](status-table-and-status-objects.md).</span></span>
+<span data-ttu-id="5f2fe-113">状態オブジェクトの使用の詳細については、「Status [Table and Status Objects」を参照してください](status-table-and-status-objects.md)。</span><span class="sxs-lookup"><span data-stu-id="5f2fe-113">For more information about using status objects, see [Status Table and Status Objects](status-table-and-status-objects.md).</span></span>
   
 

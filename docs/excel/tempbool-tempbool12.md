@@ -19,30 +19,30 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433718"
 ---
-# <a name="tempbooltempbool12"></a><span data-ttu-id="c34b9-104">TempBool/TempBool12</span><span class="sxs-lookup"><span data-stu-id="c34b9-104">TempBool/TempBool12</span></span>
+# <a name="tempbooltempbool12"></a><span data-ttu-id="d6ac0-104">TempBool/TempBool12</span><span class="sxs-lookup"><span data-stu-id="d6ac0-104">TempBool/TempBool12</span></span>
 
- <span data-ttu-id="c34b9-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="c34b9-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
+ <span data-ttu-id="d6ac0-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="d6ac0-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
   
-<span data-ttu-id="c34b9-106">**ブール値** **TRUE** または **FALSE** を含む一時 **XLOPER**/ **XLOPER12** を作成するフレームワーク ライブラリ関数。</span><span class="sxs-lookup"><span data-stu-id="c34b9-106">Framework library function that creates a temporary **XLOPER**/ **XLOPER12** containing **Boolean** **TRUE** or **FALSE**.</span></span>
+<span data-ttu-id="d6ac0-106">**ブール値** **TRUE** または **FALSE** を含む一時 **XLOPER**/ **XLOPER12** を作成するフレームワーク ライブラリ関数。</span><span class="sxs-lookup"><span data-stu-id="d6ac0-106">Framework library function that creates a temporary **XLOPER**/ **XLOPER12** containing **Boolean** **TRUE** or **FALSE**.</span></span>
   
 ```cs
 LPXLOPER TempBool(int b);
 LPXLOPER12 TempBool12(int b);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="c34b9-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="c34b9-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="d6ac0-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="d6ac0-107">Parameters</span></span>
 
- <span data-ttu-id="c34b9-108">_b_ (**int**)</span><span class="sxs-lookup"><span data-stu-id="c34b9-108">_b_ (**int**)</span></span>
+ <span data-ttu-id="d6ac0-108">_b_ (**int**)</span><span class="sxs-lookup"><span data-stu-id="d6ac0-108">_b_ (**int**)</span></span>
   
-<span data-ttu-id="c34b9-109">**FALSE** を返すには 0 を使用します。**TRUE** を返すには 0 以外の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="c34b9-109">Use 0 to return **FALSE**; use any other value to return **TRUE**.</span></span>
+<span data-ttu-id="d6ac0-109">**FALSE** を返すには 0 を使用します。**TRUE** を返すには 0 以外の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="d6ac0-109">Use 0 to return **FALSE**; use any other value to return **TRUE**.</span></span>
   
-## <a name="property-valuereturn-value"></a><span data-ttu-id="c34b9-110">プロパティ値/戻り値</span><span class="sxs-lookup"><span data-stu-id="c34b9-110">Property value/Return value</span></span>
+## <a name="property-valuereturn-value"></a><span data-ttu-id="d6ac0-110">プロパティ値/戻り値</span><span class="sxs-lookup"><span data-stu-id="d6ac0-110">Property value/Return value</span></span>
 
-<span data-ttu-id="c34b9-111">渡された論理値を含む **xltypeBool** **ブール値** を返します。</span><span class="sxs-lookup"><span data-stu-id="c34b9-111">Returns an **xltypeBool** **Boolean** containing the logical value passed in.</span></span> 
+<span data-ttu-id="d6ac0-111">渡された論理値を含む **xltypeBool** **ブール値** を返します。</span><span class="sxs-lookup"><span data-stu-id="d6ac0-111">Returns an **xltypeBool** **Boolean** containing the logical value passed in.</span></span> 
   
-## <a name="example"></a><span data-ttu-id="c34b9-112">例</span><span class="sxs-lookup"><span data-stu-id="c34b9-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d6ac0-112">例</span><span class="sxs-lookup"><span data-stu-id="d6ac0-112">Example</span></span>
 
-<span data-ttu-id="c34b9-p101">次の例では、**TempBool12** 関数を使用して、ステータス バーをクリアにします。[Excel/Excel12f](excel-excel12f.md) 関数が呼び出されると、一時メモリが解放されます。</span><span class="sxs-lookup"><span data-stu-id="c34b9-p101">The following example uses the **TempBool12** function to clear the status bar. Temporary memory is freed when the [Excel/Excel12f](excel-excel12f.md) function is called.</span></span> 
+<span data-ttu-id="d6ac0-p101">次の例では、**TempBool12** 関数を使用して、ステータス バーをクリアにします。[Excel/Excel12f](excel-excel12f.md) 関数が呼び出されると、一時メモリが解放されます。</span><span class="sxs-lookup"><span data-stu-id="d6ac0-p101">The following example uses the **TempBool12** function to clear the status bar. Temporary memory is freed when the [Excel/Excel12f](excel-excel12f.md) function is called.</span></span> 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   
@@ -54,9 +54,9 @@ short int WINAPI TempBoolExample(void)
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="c34b9-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="c34b9-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d6ac0-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="d6ac0-115">See also</span></span>
 
 
 
-[<span data-ttu-id="c34b9-116">フレームワーク ライブラリの関数</span><span class="sxs-lookup"><span data-stu-id="c34b9-116">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
+[<span data-ttu-id="d6ac0-116">フレームワーク ライブラリの関数</span><span class="sxs-lookup"><span data-stu-id="d6ac0-116">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
 
