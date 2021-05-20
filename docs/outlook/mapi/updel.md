@@ -21,7 +21,7 @@ ms.locfileid: "33436801"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ローカルストアで削除されたアイテムに関する情報。 この情報は、削除の状態の[アップロード](upload-delete-status-state.md)中に使用されます。
+ローカル ストアで削除されたアイテムの情報。 この情報は、アップロードの削除状態 [の間に使用されます](upload-delete-status-state.md)。
   
 ## <a name="quick-info"></a>クイック ヒント
 
@@ -37,11 +37,11 @@ struct UPDEL
 
  _pupde_
   
->  読み上げ[updele](updele.md)エントリのベクトル。 
+>  [out] [UPDELE エントリの](updele.md) ベクトル。 
     
- _fea-cent-logging-service_
+ _cEnt_
   
-> 読み上げ*pupde*のエントリ数。 
+> [out]pupde の  *エントリの数*  。 
     
 ## <a name="see-also"></a>関連項目
 

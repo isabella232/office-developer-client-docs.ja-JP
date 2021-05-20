@@ -40,9 +40,9 @@ HRESULT CreateFolder(
 
 ## <a name="parameters"></a>パラメーター
 
- _ulfoldertype_
+ _ulFolderType_
   
-> 順番作成するフォルダーの種類を示します。 次のフラグを設定できます。
+> [in]作成するフォルダーの種類。 次のフラグを設定できます。
     
 FOLDER_GENERIC 
   
@@ -52,65 +52,65 @@ FOLDER_SEARCH
   
 > 検索結果フォルダーを作成する必要があります。
     
- _lpszfoldername_
+ _lpszFolderName_
   
-> 順番新しいフォルダーの名前を含む文字列へのポインター。 この名前は、新しいフォルダーの**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) プロパティの基礎となります。
+> [in]新しいフォルダーの名前を含む文字列へのポインター。 この名前は、新しいフォルダーのプロパティ [(PidTagDisplayName)](pidtagdisplayname-canonical-property.md)**プロパティPR_DISPLAY_NAME基** になります。
     
- _lpszfoldercomment_
+ _lpszFolderComment_
   
-> 順番新しいフォルダーに関連付けられているコメントを含む文字列へのポインター。 この文字列は、新しいフォルダーの**PR_COMMENT** ([PidTagComment](pidtagcomment-canonical-property.md)) プロパティの値になります。 NULL が渡された場合、フォルダーには最初のコメントがありません。
+> [in]新しいフォルダーに関連付けられたコメントを含む文字列へのポインター。 この文字列は、新しいフォルダーのプロパティ ([PidTagComment](pidtagcomment-canonical-property.md)) **PR_COMMENT** の値になります。 NULL が渡された場合、フォルダーには最初のコメントはありません。
     
- _lpinterface_
+ _lpInterface_
   
-> 順番新しいフォルダーへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 NULL を渡すと、メッセージストアプロバイダーは標準のフォルダーインターフェイス、 [imapifolder: IMAPIContainer](imapifolderimapicontainer.md)を返します。 クライアントは、NULL を渡す必要があります。 他の呼び出し元が_lpinterface_パラメーターを IID_IUnknown、IID_IMAPIProp、IID_IMAPIContainer、または IID_IMAPIFolder に設定できます。 
+> [in]新しいフォルダーへのアクセスに使用するインターフェイスを表すインターフェイス識別子 (IID) へのポインター。 NULL を渡すと、メッセージ ストア プロバイダーは標準のフォルダー インターフェイス [IMAPIFolder : IMAPIContainer を返します](imapifolderimapicontainer.md)。 クライアントは NULL を渡す必要があります。 他の呼び出し元は  _、lpInterface_ パラメーターを、IID_IUnknown、IID_IMAPIProp、IID_IMAPIContainer、またはIID_IMAPIFolder。 
     
  _ulFlags_
   
-> 順番フォルダーの作成方法を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]フォルダーの作成方法を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_DEFERRED_ERRORS 
   
-> 呼び出し元クライアントが新しいフォルダーを完全に使用できるようになるまで、 **CreateFolder**が正常に戻ることができるようにします。 新しいフォルダーを使用できない場合は、それ以降の呼び出しを行うとエラーが発生する可能性があります。 
+> 新しいフォルダーが呼び出し元のクライアントで完全に使用できる前に **、CreateFolder** を正常に返します。 新しいフォルダーを使用できない場合は、そのフォルダーを後続の呼び出しで呼び出した場合、エラーが発生する可能性があります。 
     
 MAPI_UNICODE 
   
-> フォルダーの名前は、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、フォルダー名は ANSI 形式になります。
+> フォルダーの名前は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、フォルダー名は ANSI 形式です。
     
 OPEN_IF_EXISTS 
   
-> 指定した名前の既存のフォルダーを開いて、 _lpszfoldername_パラメーターで指定されたフォルダーが既に存在する場合でも、メソッドを正常に実行できるようにします。 兄弟フォルダーに同じ名前を付けることができるメッセージストアプロバイダーは、指定された名前で複数のフォルダーが存在する場合は、既存のフォルダーを開かないことに注意してください。 
+> _lpszFolderName_ パラメーターで指定されたフォルダーが既に存在する場合でも、その名前を持つ既存のフォルダーを開いて、メソッドを成功できます。 同じ名前の兄弟フォルダーを許可するメッセージ ストア プロバイダーは、指定された名前で複数のフォルダーが存在する場合、既存のフォルダーを開かない場合があります。 
     
- _lppfolder_
+ _lppFolder_
   
-> 読み上げ新しく作成されたフォルダーへのポインターへのポインター。
+> [out]新しく作成されたフォルダーへのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> OPEN_IF_EXISTS フラグが設定されている場合、新しいフォルダーが正常に作成または開きます。
+> 新しいフォルダーが正常に作成または開かされました (OPEN_IF_EXISTSが設定されている場合)。
     
 MAPI_E_BAD_CHARWIDTH 
   
-> MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
+> このフラグMAPI_UNICODE設定され、実装が Unicode をサポートしていないか、または設定されていないMAPI_UNICODE実装が Unicode のみをサポートしています。
     
 MAPI_E_COLLISION 
   
-> _lpszfoldername_パラメーターに指定した名前のフォルダーが既に存在します。 フォルダー名は一意である必要があります。 
+> _lpszFolderName_ パラメーターに指定された名前を持つフォルダーが既に存在します。 フォルダー名は一意である必要があります。 
     
 ## <a name="remarks"></a>注釈
 
-**imapifolder:: CreateFolder**メソッドを実行すると、現在のフォルダーにサブフォルダーが作成され、新しいフォルダーにエントリ識別子が割り当てられます。 
+**IMAPIFolder::CreateFolder** メソッドは、現在のフォルダーにサブフォルダーを作成し、新しいフォルダーにエントリ識別子を割り当てる。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**CreateFolder**が返された場合は、新しいフォルダーのエントリ識別子が使用できない可能性があることに注意してください。 メッセージストアプロバイダーによっては、完全に保存するために、新しいフォルダーの[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出した後に、エントリ識別子を使用できないことがあります。 これは、MAPI_DEFERRED_ERRORS フラグが設定されている場合に特に当てはまります。 
+**CreateFolder が返** される場合は、新しいフォルダーのエントリ識別子が使用できない可能性があります。 一部のメッセージ ストア プロバイダーは、新しいフォルダーの [IMAPIProp::SaveChanges](imapiprop-savechanges.md) メソッドを呼び出して完全に保存するまで、エントリ識別子を使用できません。 これは、このフラグを設定している場合は特にMAPI_DEFERRED_ERRORSです。 
   
-一部のメッセージストアプロバイダーは、 _lpinterface_パラメーターに渡す値に関係なく、常に_lppfolder_パラメーターをフォルダーの標準インターフェイスにポイントすることに注意してください。 返されるインターフェイスポインターが予期した型ではない場合があるため、新しいフォルダーの[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出して、 **PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md)) プロパティを取得します。 必要に応じて、他の呼び出しを行う前に、適切な型にポインターをキャストしてください。
+一部のメッセージ ストア プロバイダーは _、lpInterface_ パラメーターに渡す値に関係なく、常に _lppFolder_ パラメーターをフォルダーの標準インターフェイスにポイントします。 返されるインターフェイス ポインターは、必要な種類ではない可能性があります。ため、新しいフォルダーの [IMAPIProp::GetProps](imapiprop-getprops.md) メソッドを呼び出して **、PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md)) プロパティを取得します。 必要に応じて、他の呼び出しを行う前に、ポインターをより適切な型にキャストします。
   
-ほとんどのメッセージストアプロバイダーでは、兄弟フォルダーの名前に対して一意の新しいフォルダー名が必要です。 このルールに従っていない場合に返される MAPI_E_COLLISION エラー値を処理できるようにします。 
+ほとんどのメッセージ ストア プロバイダーでは、新しいフォルダーの名前が兄弟フォルダーの名前に対して一意である必要があります。 このルールに従MAPI_E_COLLISION返されるエラー値を処理できます。 
   
-新しく作成されたフォルダーのエントリ識別子を特定するには、新しいフォルダーの**imapiprop:: GetProps**メソッドを呼び出して、そのフォルダーの**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティを取得します。
+新しく作成したフォルダーのエントリ識別子を確認するには、新しいフォルダーの **IMAPIProp::GetProps** メソッドを呼び出して、PR_ENTRYID **(** [PidTagEntryId](pidtagentryid-canonical-property.md)) プロパティを取得します。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -118,7 +118,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MsgStoreDlg  <br/> |CMsgStoreDlg:: OnCreateSubFolder  <br/> |mfcmapi は、 **CMsgStoreDlg:: OnCreateSubFolder**メソッドを使用して、mfcmapi に新しいフォルダーを作成します。  <br/> |
+|MsgStoreDlg.cpp  <br/> |CMsgStoreDlg::OnCreateSubFolder  <br/> |MFCMAPI は **、CMsgStoreDlg::OnCreateSubFolder** メソッドを使用して、MFCMAPI で新しいフォルダーを作成します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

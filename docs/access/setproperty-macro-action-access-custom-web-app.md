@@ -1,5 +1,5 @@
 ---
-title: SetProperty マクロアクション (Access カスタム web アプリ)
+title: SetProperty マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438030"
 ---
-# <a name="setproperty-macro-action-access-custom-web-app"></a>SetProperty マクロアクション (Access カスタム web アプリ)
+# <a name="setproperty-macro-action-access-custom-web-app"></a>SetProperty マクロ アクション (Access カスタム Web アプリ)
 
 " **SetProperty/プロパティの設定** " アクションを使用して、ビュー上のコントロールのプロパティを設定できます。 
   

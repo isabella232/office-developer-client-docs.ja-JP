@@ -1,5 +1,5 @@
 ---
-title: propertydefinition ストリームの構造
+title: PropertyDefinition ストリーム構造
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,33 +13,33 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438590"
 ---
-# <a name="propertydefinition-stream-structure"></a>propertydefinition ストリームの構造
+# <a name="propertydefinition-stream-structure"></a>PropertyDefinition ストリーム構造
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-propertydefinition ストリーム構造は、Microsoft Outlook アイテムのすべてのユーザー定義フィールドの定義と、いくつかの組み込みフィールドのデータバインド設定を含む[fielddefinition](fielddefinition-stream-structure.md) stream 構造の配列です。 
+PropertyDefinition ストリーム構造は、Microsoft Outlook アイテム内のすべてのユーザー定義フィールドの定義と、一部の組み込みフィールドのデータ バインド設定を含む[FieldDefinition](fielddefinition-stream-structure.md)ストリーム構造の配列です。 
   
-プログラムを使用して、propertydefinition ストリームの構造を操作できます。 ただし、Outlook フォームデザイナーおよび特に、データ連結コントロールの [**プロパティ**] ダイアログボックスを使用して、同様の結果を得ることができます。 
+PropertyDefinition ストリーム構造をプログラムで操作できます。 ただし、データ バインド コントロールの Outlookフォーム デザイナー、特に [プロパティ] ダイアログボックスを使用すると、同様の結果を得ることができます。 
   
-propertydefinition stream 構造のフィールド定義は、PropDefV1 と PropDefV2 の2つの形式のいずれかにすることができます。 Outlook では、PropDefV1 と PropDefV2 の両方をサポートしています。 単一の propertydefinition stream 構造のすべてのフィールド定義は、同じ形式でなければなりません。 PropDefV1 と PropDefV2 の相違点の詳細については、「 [fielddefinition Stream Structure](fielddefinition-stream-structure.md)」を参照してください。
+PropertyDefinition ストリーム構造のフィールド定義には、PropDefV1 と PropDefV2 の 2 つの形式のいずれかを指定できます。 Outlook PropDefV1 と PropDefV2 の両方をサポートしています。 単一の PropertyDefinition ストリーム構造内のすべてのフィールド定義は、同じ形式である必要があります。 PropDefV1 と PropDefV2 の違いについて詳しくは [、「FieldDefinition ストリーム構造」をご覧ください](fielddefinition-stream-structure.md)。
   
-このストリームの Data 要素は、次に示す順序で互いに続けて、リトルエンディアンバイト順に格納されます。
+このストリーム内のデータ要素は、リトル エンディアン バイト順に格納され、次に示す順序で互いに直後に格納されます。
   
-- バージョン: WORD (2 バイト)。 propertydefinition stream 構造のフィールド定義の形式です。 以下の表に使用できる値を示します。
+- バージョン: WORD (2 バイト)、PropertyDefinition ストリーム構造内のフィールド定義の形式。 以下の表に使用できる値を示します。
     
     |**値**|**説明**|
     |:-----|:-----|
     |0x0102  <br/> |形式は PropDefV1 です。  <br/> |
     |0x0103  <br/> |形式は PropDefV2 です。  <br/> |
    
-- fielddefinitioncount: このストリーム内のフィールド定義の数である DWORD (4 バイト)。 fielddefinitions data 要素の配列要素の数を示します。
+- FieldDefinitionCount: DWORD (4 バイト)、このストリーム内のフィールド定義の数。 これは、FieldDefinitions データ要素内の配列要素の数です。
     
-- fielddefinitions: fielddefinitions ストリーム構造の配列。 この配列の数は、fielddefinitioncount data 要素と同じです。
+- FieldDefinitions: FieldDefinition ストリーム構造の配列。 この配列の数は、FieldDefinitionCount データ要素と等しくなります。
     
 ## <a name="see-also"></a>関連項目
 
-- [Outlook のアイテムとフィールド](outlook-items-and-fields.md)
-- [新しいユーザー定義フィールドの定義を追加する](how-to-add-a-definition-for-a-new-user-defined-field.md)
-- [propertydefinition ストリームのサンプル](propertydefinition-stream-sample.md)
-- [Stream 構造体](stream-structures.md)
+- [Outlookアイテムとフィールド](outlook-items-and-fields.md)
+- [新しいフィールドの定義をUser-Definedする](how-to-add-a-definition-for-a-new-user-defined-field.md)
+- [PropertyDefinition ストリームのサンプル](propertydefinition-stream-sample.md)
+- [Stream 構造](stream-structures.md)
 

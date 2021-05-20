@@ -13,15 +13,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34541072"
 ---
-# <a name="headerfooterfonttype-complextype-visio-xml"></a>HeaderFooterFont_Type complexType (Visio XML)
+# <a name="headerfooterfont_type-complextype-visio-xml"></a>HeaderFooterFont_Type complexType (Visio XML)
 
 ## <a name="type-information"></a>型情報
 
 |||
 |:-----|:-----|
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15-06-05  <br/> |
-|**拡張ベース** <br/> |None  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
+|**拡張ベース** <br/> |なし  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -75,7 +75,7 @@ ms.locfileid: "34541072"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
+スキーマで **sequence**、**minOccurs**、**maxOccurs**、**choice** などの具体的な要件が定義されている場合は、定義のセクションを参照してください。 
   
 ### <a name="child-elements"></a>子要素
 
@@ -85,19 +85,19 @@ ms.locfileid: "34541072"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|CharSet  <br/> |xsd: アン Signedbyte  <br/> |省略可能  <br/> ||Xsd:/Signedbyte 型の値。  <br/> |
-|ClipPrecision  <br/> |xsd: アン Signedbyte  <br/> |省略可能  <br/> ||Xsd:/Signedbyte 型の値。  <br/> |
-|実際  <br/> |xsd: int  <br/> |省略可能  <br/> ||Xsd: int 型の値。  <br/> |
-|FaceName  <br/> |xsd: string  <br/> |省略可能  <br/> ||Xsd: string 型の値。  <br/> |
-|Height  <br/> |xsd: int  <br/> |省略可能  <br/> ||Xsd: int 型の値。  <br/> |
-|斜体  <br/> |xsd: アン Signedbyte  <br/> |省略可能  <br/> ||Xsd:/Signedbyte 型の値。  <br/> |
-|Orientation  <br/> |xsd: int  <br/> |省略可能  <br/> ||Xsd: int 型の値。  <br/> |
-|アウト精度  <br/> |xsd: アン Signedbyte  <br/> |省略可能  <br/> ||Xsd:/Signedbyte 型の値。  <br/> |
-|PitchAndFamily  <br/> |xsd: アン Signedbyte  <br/> |省略可能  <br/> ||Xsd:/Signedbyte 型の値。  <br/> |
-|Quality  <br/> |xsd: アン Signedbyte  <br/> |省略可能  <br/> ||Xsd:/Signedbyte 型の値。  <br/> |
-|線  <br/> |xsd: アン Signedbyte  <br/> |省略可能  <br/> ||Xsd:/Signedbyte 型の値。  <br/> |
-|下線  <br/> |xsd: アン Signedbyte  <br/> |省略可能  <br/> ||Xsd:/Signedbyte 型の値。  <br/> |
-|太さ  <br/> |xsd: int  <br/> |省略可能  <br/> ||Xsd: int 型の値。  <br/> |
-|Width  <br/> |xsd: int  <br/> |省略可能  <br/> ||Xsd: int 型の値。  <br/> |
+|CharSet  <br/> |xsd:unsignedByte  <br/> |省略可能  <br/> ||xsd:unsignedByte 型の値。  <br/> |
+|ClipPrecision  <br/> |xsd:unsignedByte  <br/> |省略可能  <br/> ||xsd:unsignedByte 型の値。  <br/> |
+|Escapement  <br/> |xsd:int  <br/> |省略可能  <br/> ||xsd:int 型の値。  <br/> |
+|FaceName  <br/> |xsd:string  <br/> |省略可能  <br/> ||xsd:string 型の値。  <br/> |
+|Height  <br/> |xsd:int  <br/> |省略可能  <br/> ||xsd:int 型の値。  <br/> |
+|斜体  <br/> |xsd:unsignedByte  <br/> |省略可能  <br/> ||xsd:unsignedByte 型の値。  <br/> |
+|Orientation  <br/> |xsd:int  <br/> |省略可能  <br/> ||xsd:int 型の値。  <br/> |
+|OutPrecision  <br/> |xsd:unsignedByte  <br/> |省略可能  <br/> ||xsd:unsignedByte 型の値。  <br/> |
+|PitchAndFamily  <br/> |xsd:unsignedByte  <br/> |省略可能  <br/> ||xsd:unsignedByte 型の値。  <br/> |
+|品質  <br/> |xsd:unsignedByte  <br/> |省略可能  <br/> ||xsd:unsignedByte 型の値。  <br/> |
+|StrikeOut  <br/> |xsd:unsignedByte  <br/> |省略可能  <br/> ||xsd:unsignedByte 型の値。  <br/> |
+|下線  <br/> |xsd:unsignedByte  <br/> |省略可能  <br/> ||xsd:unsignedByte 型の値。  <br/> |
+|太さ  <br/> |xsd:int  <br/> |省略可能  <br/> ||xsd:int 型の値。  <br/> |
+|Width  <br/> |xsd:int  <br/> |省略可能  <br/> ||xsd:int 型の値。  <br/> |
    
 

@@ -1,5 +1,5 @@
 ---
-title: IIf 関数 (Access カスタム web アプリ)
+title: IIf 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439080"
 ---
-# <a name="iif-function-access-custom-web-app"></a>IIf 関数 (Access カスタム web アプリ)
+# <a name="iif-function-access-custom-web-app"></a>IIf 関数 (Access カスタム Web アプリ)
 
 条件が満たされているかどうかを確認し、TRUE の場合は 1 つの値を返し、FALS の場合は別の値を返します。
   
@@ -23,19 +23,19 @@ ms.locfileid: "33439080"
   
 ## <a name="syntax"></a>構文
 
-**IIf**(*Condition*、 *TrueValue*、 *false 値*) 
+**IIf** (*Condition*, *TrueValue*, *FalseValue*) 
   
 **IIf** 関数の引数は次のとおりです。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
 | *Condition*  <br/> |評価する式。  <br/> |
-| *TrueValue*  <br/> |*Condition*が True の場合に返される値または式。  <br/> |
-| *false 値*  <br/> |*Condition*が False の場合に返される値または式。  <br/> |
+| *TrueValue*  <br/> |Condition が True の場合に返  *される値*  または式。  <br/> |
+| *FalseValue*  <br/> |Condition が False の場合に返  *される値*  または式。  <br/> |
    
 ## <a name="example"></a>例
 
-テーブルに FirstName、MiddleInitial、および LastName の各フィールドが含まれる場合、次の式を使用して人のフル ネームを表示できます。 MiddleInitial フィールドが空白の場合は、姓と名のフィールドだけが組み合わせられ、氏名が表示されます。
+テーブルに FirstName、MiddleInitial、および LastName の各フィールドが含まれる場合、次の式を使用して人のフル ネームを表示できます。 MiddleInitial フィールドが空白の場合、完全な名前を表示するには、FirstName フィールドと LastName フィールドだけが結合されます。
   
 `IIf([MiddleInitial] Is Null,Concat([FirstName]," ",[LastName]),Concat([FirstName]," ",[MiddleInitial]," ",[LastName]))`
 

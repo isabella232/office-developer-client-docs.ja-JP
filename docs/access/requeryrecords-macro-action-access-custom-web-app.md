@@ -1,5 +1,5 @@
 ---
-title: RequeryRecords マクロアクション (Access カスタム web アプリ)
+title: RequeryRecords マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439248"
 ---
-# <a name="requeryrecords-macro-action-access-custom-web-app"></a>RequeryRecords マクロアクション (Access カスタム web アプリ)
+# <a name="requeryrecords-macro-action-access-custom-web-app"></a>RequeryRecords マクロ アクション (Access カスタム Web アプリ)
 
 **RequeryRecords** アクションを使用してビューのソースに、再度、クエリを実行することで、アクティブなビュー内のデータを更新、並べ替え、およびフィルター処理できます。 
   
@@ -27,7 +27,7 @@ ms.locfileid: "33439248"
   
 |**パラメーター**|**必須**|**説明**|
 |:-----|:-----|:-----|
-|**Where =** <br/> |いいえ  <br/> |ビュー内のレコードを制限する SQL WHERE 句。既定では、この引数は空白です。  <br/> |
+|**Where=** <br/> |いいえ  <br/> |ビュー内のレコードを制限する SQL WHERE 句。既定では、この引数は空白です。  <br/> |
 |**OrderBy** <br/> |いいえ  <br/> |レコードを並べ替えるフィールド (複数可) の名前を含む文字列の式です。必要に応じて ASC キーワードまたは DESC キーワードを含めることもできます。既定では、この引数は空白です。  <br/> |
    
 ## <a name="remarks"></a>注釈

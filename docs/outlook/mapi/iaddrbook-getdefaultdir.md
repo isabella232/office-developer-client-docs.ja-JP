@@ -38,11 +38,11 @@ HRESULT GetDefaultDir(
 
  _lpcbEntryID_
   
-> 読み上げ_lppentryid_パラメーターによって指定されたエントリ識別子のバイト数へのポインター。 
+> [out]  _lppEntryID_ パラメーターが指すエントリ識別子内のバイト 数へのポインター。 
     
- _lppentryid_
+ _lppEntryID_
   
-> 読み上げ既定のコンテナーのエントリ識別子へのポインターへのポインター。
+> [out]既定のコンテナーのエントリ識別子へのポインターを指すポインター。
     
 ## <a name="return-value"></a>戻り値
 
@@ -52,9 +52,9 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-クライアントアプリケーションおよびサービスプロバイダーは、 **GetDefaultDir**メソッドを呼び出して、既定のアドレス帳コンテナーのエントリ識別子を取得します。 既定のコンテナーは、アドレス帳が最初に開かれたときに、ユーザーにアドレス帳で表示されることを示します。 [IAddrBook:: SetDefaultDir](iaddrbook-setdefaultdir.md)メソッドの呼び出しによって既定のコンテナーが設定されていない場合、MAPI は、個人用アドレス帳 (PAB) ではない名前の最初のコンテナーを既定のコンテナーとして割り当てます。 このようなコンテナーが見つからない場合、PAB は既定のコンテナーになります。 
+クライアント アプリケーションとサービス プロバイダーは **、GetDefaultDir** メソッドを呼び出して、既定のアドレス帳コンテナーのエントリ識別子を取得します。 既定のコンテナーは、ユーザーがアドレス帳を最初に開いたときにアドレス帳に表示されるコンテナーです。 [IAddrBook::SetDefaultDir](iaddrbook-setdefaultdir.md)メソッドの呼び出しによって既定のコンテナーが設定されていない場合、MAPI は、個人アドレス帳 (PAB) ではない名前を持つ最初のコンテナーを既定のコンテナーとして割り当てる。 そのようなコンテナーが見つからない場合、PAB は既定のコンテナーになります。 
   
-既定のディレクトリを設定するために、クライアントまたはプロバイダーは**SetDefaultDir**メソッドを呼び出します。 クライアントとプロバイダーは、 [imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出す必要はありません。アドレス帳への変更は処理されないため、変更はすぐに永続的に加えられます。 
+既定のディレクトリを設定するには、クライアントまたはプロバイダーが **SetDefaultDir メソッドを呼び出** します。 クライアントとプロバイダーは [、IMAPIProp::SaveChanges メソッドを呼び出す必要](imapiprop-savechanges.md) があります。アドレス帳に対する変更は処理されないので、変更は直ちに永続的に行います。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -62,7 +62,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|maindlg .cpp  <br/> |CMainDlg:: OnOpenDefaultDir  <br/> |mfcmapi は、 **GetDefaultDir**メソッドを使用して、既定のアドレス帳コンテナーの ID を取得します。  <br/> |
+|MainDlg.cpp  <br/> |CMainDlg::OnOpenDefaultDir  <br/> |MFCMAPI は **GetDefaultDir** メソッドを使用して、既定のアドレス帳コンテナーの ID を取得します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

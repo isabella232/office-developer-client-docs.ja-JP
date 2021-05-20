@@ -22,7 +22,7 @@ base64 文字列をデコードし、それをバイナリ データとして格
   
 ## <a name="syntax"></a>構文
 
-BLOB (* * *bintext* * *) 
+BLOB (** *bintext* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 

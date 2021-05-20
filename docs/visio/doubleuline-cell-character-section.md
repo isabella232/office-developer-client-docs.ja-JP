@@ -35,14 +35,14 @@ ms.locfileid: "33438842"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |文字 dblunderline [ *i* ] ( *i* = <1>、2、3...  <br/> |
+|セル名:  <br/> |Char.DblUnderline[ *i*  ]  *ここで、i*  = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [DoubleULine] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 |セクション インデックス:  <br/> |**visSectionCharacter** <br/> |
-|行インデックス:  <br/> |**visRowCharacter** +  *i* = ** 0、1、2...  <br/> |
+|行インデックス:  <br/> |**visRowCharacter**  +  *i* *=* 0, 1, 2...  <br/> |
 |セル インデックス:  <br/> |**visCharacterDblUnderline** <br/> |
    
 

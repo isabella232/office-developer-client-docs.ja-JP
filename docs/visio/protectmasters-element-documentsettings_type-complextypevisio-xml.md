@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: edc46630-c320-6b4e-4747-961075dd5fd7
-description: ユーザーがマスターシェイプの作成、編集、または削除をできないようにするかどうかを指定します。 ユーザーは、この設定に関係なく、マスターシェイプから新しい図形を作成することができます。
+description: ユーザーがマスター 図形の作成、編集、または削除を防止するかどうかを指定します。 ユーザーは、この設定に関係なく、マスター図形から新しい図形を作成できます。
 ms.openlocfilehash: 34ace8c873b133f44ea7bd7c9c2e4127a103a760
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,20 +14,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34540694"
 ---
-# <a name="protectmasters-element-documentsettingstype-complextype-visio-xml"></a>ProtectMasters 要素 (DocumentSettings_Type complexType) (Visio XML)
+# <a name="protectmasters-element-documentsettings_type-complextype-visio-xml"></a>ProtectMasters 要素 (DocumentSettings_Type complexType) (Visio XML)
 
-ユーザーがマスターシェイプの作成、編集、または削除をできないようにするかどうかを指定します。 ユーザーは、この設定に関係なく、マスターシェイプから新しい図形を作成することができます。 
+ユーザーがマスター 図形の作成、編集、または削除を防止するかどうかを指定します。 ユーザーは、この設定に関係なく、マスター図形から新しい図形を作成できます。 
   
-この要素で使用できる値の範囲は、' 0 ' または ' 1 ' のいずれかです。 値 ' 0 ' は、ユーザーがマスターシェイプを作成、編集、または削除できることを示します。 値 ' 1 ' は、ユーザーがマスターシェイプを作成、編集、または削除できないことを示します。
+この要素で使用できる値の範囲は、'0' または '1' です。 値 '0' は、ユーザーがマスター シェイプを作成、編集、または削除できる状態を示します。 値 '1' は、ユーザーがマスター 図形を作成、編集、または削除できないことを示します。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[ProtectMasters_Type](protectmasters_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
-|**文書パーツ** <br/> |文書の xml  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
+|**ドキュメント パーツ** <br/> |document.xml  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -38,13 +38,13 @@ ms.locfileid: "34540694"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
+スキーマで **sequence**、**minOccurs**、**maxOccurs**、**choice** などの具体的な要件が定義されている場合は、定義のセクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[DocumentSettings](documentsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[DocumentSettings_Type](documentsettings_type-complextypevisio-xml.md) <br/> |ドキュメントの設定を指定する要素を格納します。  <br/> |
+|[DocumentSettings](documentsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[DocumentSettings_Type](documentsettings_type-complextypevisio-xml.md) <br/> |ドキュメント設定を指定する要素が含まれます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 

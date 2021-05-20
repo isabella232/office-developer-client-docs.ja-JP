@@ -8,7 +8,7 @@ f1_keywords:
 - vis_sdr.chm680
 localization_priority: Normal
 ms.assetid: b82feade-5793-8a6e-3ff4-69a4cbdd2cf9
-description: 図形の原点を基準としたときの、図形の pin (回転の中心) の x 座標を表します。 [LocPinX] を決定する既定の数式は次のとおりです。
+description: 図形の原点に対する図形のピン (回転の中心) の x 座標を表します。 [LocPinX] を決定する既定の数式は次のとおりです。
 ms.openlocfilehash: 2eb5c328eed3c97652173670c426b83b8c358833
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,9 +18,9 @@ ms.locfileid: "33439241"
 ---
 # <a name="locpinx-cell-shape-transform-section"></a>[LocPinX] セル ([Shape Transform] セクション)
 
-図形の原点を基準としたときの、図形の pin (回転の中心) の*x*座標を表します。 [LocPinX] を決定する既定の数式は次のとおりです。 
+図形の  *原点に*  対する図形のピン (回転の中心) の x 座標を表します。 [LocPinX] を決定する既定の数式は次のとおりです。 
   
-= 幅\* 0.5
+= 幅 \* 0.5
   
 ## <a name="remarks"></a>注釈
 
@@ -28,7 +28,7 @@ ms.locfileid: "33439241"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [locpinx]  <br/> |
+| セル名:  <br/> | LocPinX  <br/> |
    
 プログラムから、インデックスによって [LocPinX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

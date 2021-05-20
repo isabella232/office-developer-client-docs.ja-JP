@@ -25,11 +25,11 @@ ms.locfileid: "33439220"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-には、 [MTSID](mtsid.md)構造体の配列が格納されています。それぞれには、1つのメッセージトランスポートシステム (MTS) エントリ識別子が含まれています。 
+[MTSID 構造体の配列を含](mtsid.md)み、それぞれ X.400 メッセージ トランスポート システム (MTS) エントリ識別子が含まれています。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連するマクロ:  <br/> |[CbFLATMTSIDLIST](cbflatmtsidlist.md)、 [CbNewFLATMTSIDLIST](cbnewflatmtsidlist.md) <br/> |
    
 ```cpp
@@ -42,25 +42,25 @@ typedef struct
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cmtsids**
+ **cMTSIDs**
   
-> **abmtsids**メンバーによって記述された、配列内の**MTSID**構造体の数。 
+> **abMTSIDs** メンバーによって記述された配列内の **MTSID** 構造体の数。 
     
- **cbmtsids**
+ **cbMTSIDs**
   
-> **abmtsids**で記述された配列のバイト数。
+> **abMTSIDs** で記述された配列内のバイト数です。
     
- **abmtsids**
+ **abMTSIDs**
   
-> 1つまたは複数の**MTSID**構造体を含むバイト配列。 
+> 1 つ以上の **MTSID 構造体を含むバイト** 配列。 
     
 ## <a name="remarks"></a>注釈
 
-**FLATMTSIDLIST**におけるこの構造体の使用は、MAPI メッセージングでの[FLATENTRYLIST](flatentrylist.md)構造の使用に対応しています。 MAPI では、 **FLATMTSIDLIST**構造を使用して、メッセージ処理時に x. プロパティを維持します。 サービスプロバイダーは、受信および送信の X. 400 メッセージを処理するときに、 **FLATMTSIDLIST**構造体を使用します。 
+X.400 メッセージングでの **FLATMTSIDLIST** 構造体の使用は、MAPI メッセージングでの [FLATENTRYLIST](flatentrylist.md) 構造体の使用に対応します。 MAPI では **、FLATMTSIDLIST** 構造体を使用して、メッセージの処理中に X.400 プロパティを維持します。 サービス プロバイダーは、受信メッセージと送信 X.400 メッセージを処理するときに **FLATMTSIDLIST** 構造体を使用します。 
   
-**abmtsids**配列では、各**MTSID**構造は、自然に配置された境界に沿って配置されます。 2つの**MTSID**構造体間で自然な配置が行われるように、パディングとして追加のバイトが含まれています。 **abmtsids**メンバのオフセットは8であるため、配列内の最初の**MTSID**構造体は常に正確に調整されます。 次の構造体のオフセットを計算するには、最初のエントリのサイズを、次の4つの倍数まで切り上げて使用します。 [CbNewMTSID](cbnewmtsid.md)マクロを使用して、 **MTSID**構造体のサイズを計算します。 
+**abMTSIDs 配列では**、**各 MTSID** 構造体は自然に整列された境界に配置されます。 余分なバイトは、任意の 2 つの MTSID 構造体間の自然な配置を確認するために埋め **込みとして含** まれます。 配列内 **の最初の MTSID** 構造体は **、abMTSIDs** メンバーのオフセットが 8 なので、常に正しく配置されます。 次の構造体のオフセットを計算するには、4 の次の倍数に切り上げ、最初のエントリのサイズを使用します。 [CbNewMTSID マクロを使用](cbnewmtsid.md)して **、MTSID** 構造のサイズを計算します。 
   
 ## <a name="see-also"></a>関連項目
 

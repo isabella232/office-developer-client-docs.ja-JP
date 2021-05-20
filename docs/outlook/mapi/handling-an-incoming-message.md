@@ -19,46 +19,46 @@ ms.locfileid: "33438982"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-受信メッセージは、1つまたは複数のメッセージングシステム間で送信されたメッセージです。 自分または他の多くの受信者にのみ送信されている可能性があります。 受信メッセージは、特定のクラスのメッセージを保持するように指定された受信フォルダーに配置されます。 処理する各メッセージクラスに対して異なる受信フォルダーを設定するか、すべてのクラスに対して1つのフォルダーを使用することができます。
+受信メッセージは、1 つ以上のメッセージング システムで送信されたメッセージです。 ユーザーまたは他の多くの受信者にのみ送信されている可能性があります。 受信メッセージは、特定のクラスのメッセージを保持するために指定された受信フォルダーに配置されます。 処理するメッセージ クラスごとに異なる受信フォルダーを設定するか、すべてのクラスに 1 つのフォルダーを使用できます。
   
-メッセージストアでメール通知が新規に登録されている場合は、受信フォルダーにメッセージが配置されるたびに通知されます。 新しいメール通知をまだ登録していない場合は、新しいメッセージが到着したかどうかを手動で確認するために、適切な受信フォルダーを定期的に開く必要があります。
+メッセージ ストアに新しいメール通知を登録している場合は、メッセージが受信フォルダーに配置されるたびに通知されます。 新しいメール通知に登録していない場合は、適切な受信フォルダーを定期的に開き、新しいメッセージの到着を手動で確認する必要があります。
   
-クライアントは、 [IMsgStore:: アドバイス](imsgstore-advise.md)を次のように設定して、新しいメール通知を登録します。 
+クライアントは、パラメーターを [IMsgStore::Advise](imsgstore-advise.md) に次のように設定して、新しいメール通知に登録します。 
   
-- _cbEntryID_を0に設定します。 
+- _cbEntryID を_ 0 に設定します。 
     
-- _lて tryid_を NULL に設定します。 
+- _lpEntryID を_ NULL に設定します。 
     
-- _uleventmask_を fnevNewMail に設定します。 
+- _ulEventMask を_ fnevNewMail に設定します。 
     
-**IMAPIAdviseSink:: onnotify**メソッドへの呼び出しの_lpnotifications_パラメーターは、受信メッセージに関する情報 (メッセージクラス、そのエントリなど) を含む**\_NEWMAIL 通知**構造を指します。識別子、親フォルダーのエントリ識別子、およびその**PR_MESSAGE_FLAGS**プロパティの内容。 通知の登録と処理の詳細については、「 [IMAPIAdviseSink:: onnotify](imapiadvisesink-onnotify.md), [NEWMAIL_NOTIFICATION](newmail_notification.md), **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))」および「処理」の[通知](handling-notifications.md)を参照してください。 
+**IMAPIAdviseSink::OnNotify** メソッドの呼び出しの _lpNotifications_ パラメーターは、メッセージ クラス、エントリ識別子、親フォルダーのエントリ識別子、および PR_MESSAGE_FLAGS プロパティの内容など、受信メッセージに関する情報を含む **NEWMAIL** **\_ NOTIFICATION** 構造体をポイントします。 通知の登録と処理の詳細[](handling-notifications.md)については[、「IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)」、NEWMAIL_NOTIFICATION [、PR_MESSAGE_FLAGS](newmail_notification.md)[(PidTagMessageFlags)、](pidtagmessageflags-canonical-property.md)および通知の処理を参照してください。  
   
-受信メッセージをユーザーに表示する前に、そのメッセージクラスがクライアントがサポートするクラスであるかどうかを確認します。 表示されない場合は、メッセージを無視します。 クラスがサポートしている場合、メッセージを開いて表示し、メッセージのメッセージクラスに適したフォームを表示することができます。 フォームの選択は、メッセージクラスに基づいています。 IPM クラスに属するメッセージは、MAPI で実装されている既定のフォームを使用します。 クライアントによって定義されたカスタムクラスに属するメッセージは、クライアントで定義された特殊なフォームまたは MAPI の既定のフォームのいずれかを使用できます。
+ユーザーに受信メッセージを表示する前に、そのメッセージ クラスがクライアントがサポートするクラスかどうかを確認します。 メッセージが表示されない場合は、メッセージを無視します。 クラスがサポートするクラスの場合は、メッセージのメッセージ クラスに適したフォームでメッセージを開いて表示できます。 フォームの選択は、メッセージ クラスに基づいて行います。 IPM クラスに属するメッセージは、MAPI によって実装された既定のフォームを使用します。 クライアントによって定義されたカスタム クラスに属するメッセージは、クライアント定義の特殊なフォームまたは MAPI 既定のフォームを使用できます。
   
 ## <a name="open-and-display-an-incoming-message"></a>受信メッセージを開いて表示する
   
-1. **IMsgStore:: getreceivefolder**を呼び出して、メッセージのメッセージクラスの受信フォルダーのエントリ識別子を取得し、このエントリ識別子を**IMsgStore:: openentry**に渡してフォルダーを開きます。 詳細については、「 [IMsgStore:: getreceivefolder](imsgstore-getreceivefolder.md)」、「 [IMsgStore:: openentry](imsgstore-openentry.md)」、および「[メッセージストアフォルダーを開く](opening-a-message-store-folder.md)」を参照してください。
+1. **IMsgStore::GetReceiveFolder** を呼び出して、メッセージのメッセージ クラスの受信フォルダーのエントリ識別子を取得し、このエントリ識別子を **IMsgStore::OpenEntry** に渡してフォルダーを開きます。 詳細については [、「IMsgStore::GetReceiveFolder](imsgstore-getreceivefolder.md) [、IMsgStore::OpenEntry」、](imsgstore-openentry.md)および「メッセージ ストア フォルダーを開く」 [を参照してください](opening-a-message-store-folder.md)。
     
-2. 受信フォルダーの**IMAPIContainer:: getcontentstable**メソッドを呼び出して、そのコンテンツテーブルを取得します。 詳細については、「 [IMAPIContainer:: getcontentstable](imapicontainer-getcontentstable.md)」を参照してください。 テーブルの**IMAPITable:: QueryRows**メソッドを呼び出して、テーブル内のすべての行を取得します。 詳細については、「 [IMAPITable:: QueryRows](imapitable-queryrows.md) and [Contents Tables](contents-tables.md)」を参照してください。 コンテンツテーブルの表示の詳細については、「[フォルダーコンテンツの表を表示する](displaying-a-folder-contents-table.md)」を参照してください。
+2. 受信フォルダーの **IMAPIContainer::GetContentsTable** メソッドを呼び出して、そのコンテンツ テーブルを取得します。 詳細については [、「IMAPIContainer::GetContentsTable」を参照してください](imapicontainer-getcontentstable.md)。 テーブルのすべての行を取得するには、テーブル **の IMAPITable::QueryRows** メソッドを呼び出します。 詳細については [、「IMAPITable::QueryRows and Contents](imapitable-queryrows.md) [Tables」を参照してください](contents-tables.md)。 コンテンツ テーブルの表示の詳細については、「フォルダー [コンテンツ テーブルの表示」を参照してください](displaying-a-folder-contents-table.md)。
     
-3. クライアントが対話型の場合は、ユーザーがテーブルからメッセージを選択できるようにして、そのメッセージの表示に使用するフォームを指定します。 クライアントは、MAPI またはカスタムフォームによって提供される既定のフォームを使用できます。 詳細については、「 [MAPI フォームの処理](handling-mapi-forms.md)」を参照してください。
+3. クライアントが対話型の場合は、ユーザーがテーブルからメッセージを選択し、そのメッセージの表示に使用するフォームを決定できます。 クライアントは、MAPI またはカスタム フォームによって提供される既定のフォームを使用できます。 詳細については、「MAPI フォームの [処理」を参照してください](handling-mapi-forms.md)。
     
-4. **IMsgStore:: openentry**を呼び出して、メッセージを開きます。 詳細については、「[メッセージを開く](opening-a-message.md)」を参照してください。
+4. **メッセージを開く IMsgStore::OpenEntry** を呼び出します。 詳細については、「メッセージを開 [く」を参照してください](opening-a-message.md)。
     
-5. メッセージテキストを処理します。 詳細については、「[メッセージテキストを開く](opening-message-text.md)」を参照してください。
+5. メッセージ テキストを処理します。 詳細については、「メッセージ テキストを開 [く」を参照してください](opening-message-text.md)。
     
-6. 各メッセージの添付ファイルをレンダリングします。 詳細については、「[添付ファイルをプレーンテキストでレンダリングする](rendering-an-attachment-in-plain-text.md)」または「 [RTF テキスト形式の添付ファイルをレンダリング](rendering-an-attachment-in-rtf-text.md)する」を参照してください。
+6. 各メッセージ添付ファイルをレンダリングします。 詳細については、「プレーン テキストで [添付ファイルをレンダリング](rendering-an-attachment-in-plain-text.md) する」または [「RTF テキストで添付ファイルをレンダリングする」を参照してください](rendering-an-attachment-in-rtf-text.md)。
     
-7. 必要に応じて添付ファイルを開きます。 詳細について[は、「添付ファイルを開く](opening-an-attachment.md)」を参照してください。
+7. 必要に応じて添付ファイルを開きます。 詳細については、「添付ファイルを [開く」を参照してください](opening-an-attachment.md)。
     
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [メッセージテキスト](opening-message-text.md)を開く: メッセージテキストを開く方法について説明します。
+- [メッセージ テキストを開](opening-message-text.md)く : メッセージ テキストを開く方法について説明します。
     
-- [添付ファイルをテキスト形式でレンダリング](rendering-an-attachment-in-plain-text.md)する: 添付ファイルをテキスト形式でレンダリングする方法について説明します。
+- [プレーン テキストで添付ファイルをレンダリング](rendering-an-attachment-in-plain-text.md)する : プレーン テキストで添付ファイルをレンダリングする方法について説明します。
     
-- [RTF テキスト形式での添付ファイルのレンダリング](rendering-an-attachment-in-rtf-text.md): 書式設定されたテキストで添付物をレンダリングする方法について説明します。
+- [RTF テキストで添付ファイルをレンダリング](rendering-an-attachment-in-rtf-text.md)する : 書式設定されたテキストで添付ファイルをレンダリングする方法について説明します。
     
-- [添付ファイル](opening-an-attachment.md)を開く方法: 添付ファイルを開く方法について説明します。
+- [添付ファイルを開く](opening-an-attachment.md): 添付ファイルを開く方法について説明します。
     
 

@@ -25,32 +25,32 @@ ms.locfileid: "33437344"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-定義済みの共通ビューフォルダーのエントリ識別子を含みます。 
+定義済みの共通ビュー フォルダーのエントリ識別子を格納します。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_COMMON_VIEWS_ENTRYID  <br/> |
-|識別子:  <br/> |0x35e6  <br/> |
+|識別子:  <br/> |0x35E6  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |Outlook アプリケーション  <br/> |
+|エリア:  <br/> |Outlookアプリケーション  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-common view フォルダーには、あらかじめ定義されている標準ビュー指定セットが含まれています。ビューフォルダーには、メッセージングユーザーによって定義された指定子が含まれています。 これらのフォルダーは、個人間メッセージ (IPM) 階層では表示されず、メッセージとして格納されている複数のビュー指定子を保持できます。 クライアントアプリケーションは、2つの指定子のセットをマージすることを選択し、両方を使用できるようにします。 
+共通ビュー フォルダーには定義済みの標準ビュー指定子のセットが含まれる一方、ビュー フォルダーにはメッセージング ユーザーによって定義された指定子が含まれる。 これらのフォルダーは、対人間メッセージ (IPM) 階層には表示されませんが、多くのビュー指定子を保持できます。各フォルダーはメッセージとして保存されます。 クライアント アプリケーションは、2 つの指定子セットを結合し、両方を使用できます。 
   
-ビューの詳細については、「 [View Folders](mapi-view-folders.md)」を参照してください。
+ビューの詳細については、「フォルダーの表示」 [を参照してください](mapi-view-folders.md)。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -65,7 +65,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

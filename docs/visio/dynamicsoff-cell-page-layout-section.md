@@ -33,7 +33,7 @@ ms.locfileid: "33437477"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [dynamicsoff]  <br/> |
+| セル名 :  <br/> | DynamicsOff  <br/> |
    
 プログラムから、インデックスによって [DynamicsOff] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

@@ -39,45 +39,45 @@ HRESULT CalcFormPropSet(
 
  _pfrminfoarray_
   
-> 順番プロパティを返すフォームを識別するフォーム情報オブジェクトの配列へのポインター。
+> [in]プロパティを返すフォームを識別するフォーム情報オブジェクトの配列へのポインター。
     
  _ulFlags_
   
-> 順番_ppResults_パラメーターのプロパティ配列を返す方法を制御するフラグのビットマスク。 次のフラグを設定できます。 
+> [in]  _ppResults_ パラメーターのプロパティ配列がどのように返されるのか制御するフラグのビットマスク。 次のフラグを設定できます。 
     
 FORMPROPSET_INTERSECTION 
   
-> 返される配列には、フォームのプロパティの共通部分が含まれています。
+> 返される配列には、フォームのプロパティの交差部分が含まれる。
     
 FORMPROPSET_UNION 
   
-> 返される配列には、フォームのプロパティの和集合が含まれています。
+> 返される配列には、フォームのプロパティの共用体が含まれる。
     
 MAPI_UNICODE 
   
-> 配列で返される文字列は、Unicode 形式になっています。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
+> 配列で返される文字列は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列は ANSI 形式になります。
     
  _ppResults_
   
-> 読み上げ返された[smapiformproparray](smapiformproparray.md)の構造体へのポインターへのポインター。これには、フォームで使用するプロパティが含まれています。 
+> [out]フォームが使用するプロパティを含む [、返される SMAPIFormPropArray](smapiformproparray.md) 構造体へのポインターへのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 呼び出しが成功し、予想される値または値が返されました。
+> 呼び出しは成功し、予期される値または値を返しました。
     
 MAPI_E_BAD_CHARWIDTH 
   
-> MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
+> このフラグMAPI_UNICODE設定され、実装が Unicode をサポートしていないか、または設定されていないMAPI_UNICODE実装が Unicode のみをサポートしています。
     
 ## <a name="remarks"></a>注釈
 
-フォーム閲覧者は、 **imapiformmgr:: CalcFormPropSet**メソッドを呼び出して、フォームのグループが使用するプロパティの配列を取得します。 **CalcFormPropSet**は、 _ulflags_パラメーターで設定されているフラグに応じて、これらのフォームのプロパティセットの積集合または和集合を受け取り、結果として得られるグループを含む**smapiformproparray**の構造を返します。プロパティ. 
+フォーム ビューアーは **IMAPIFormMgr::CalcFormPropSet** メソッドを呼び出して、フォームのグループが使用するプロパティの配列を取得します。 **CalcFormPropSet** は  _、ulFlags_ パラメーターで設定されたフラグに応じて、これらのフォームのプロパティ セットの交差または共用体を取得し、結果のプロパティ グループを含む **SMAPIFormPropArray** 構造体を返します。 
   
 ## <a name="notes-to-implementers"></a>実装に関するメモ
 
-フォームビューアーが_ulflags_パラメーターの MAPI_UNICODE フラグを渡す場合は、すべての文字列が UNICODE 文字列として返されます。 Unicode 文字列をサポートしていないフォームライブラリプロバイダーは、MAPI_UNICODE が渡された場合は MAPI_E_BAD_CHARWIDTH を返します。 
+フォーム ビューアーが  _ulFlags_ パラメーター MAPI_UNICODEフラグを渡す場合、すべての文字列を Unicode 文字列として返す必要があります。 Unicode 文字列をサポートしないフォーム ライブラリ プロバイダーは、渡された場合MAPI_E_BAD_CHARWIDTHをMAPI_UNICODEする必要があります。 
   
 ## <a name="see-also"></a>関連項目
 

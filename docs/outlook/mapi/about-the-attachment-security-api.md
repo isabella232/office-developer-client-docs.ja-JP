@@ -19,7 +19,7 @@ ms.locfileid: "33438877"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-添付ファイルセキュリティ API を使用すると、outlook ソリューションで添付ファイルが outlook によって安全でないと見なされ、表示およびインデックス処理がブロックされているかどうかを検出できます。 これにより、次の定義とインターフェイスが提供されます。
+Attachment Security API を使用すると、Outlookソリューションは、添付ファイルが安全でないと見なされ、Outlook表示およびインデックス作成がブロックされているかどうかを検出できます。 次の定義とインターフェイスを提供します。
   
 定義
   
@@ -27,6 +27,6 @@ ms.locfileid: "33438877"
     
 インターフェイス
   
-- **[iattachmentsecurity](iattachmentsecurityiunknown.md)**
+- **[IAttachmentSecurity](iattachmentsecurityiunknown.md)**
     
 

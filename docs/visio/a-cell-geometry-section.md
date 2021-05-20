@@ -8,7 +8,7 @@ f1_keywords:
 - vis_sdr.chm51215
 localization_priority: Normal
 ms.assetid: 6853df0f-d22e-89ca-7d34-342b9c0bea23
-description: 各行に対応する情報を表示します。 次の表に、各行で [A] セルが示す内容を説明します。
+description: 各行に対応する情報を表示します。次の表に、各行で [A] セルが示す内容を説明します。
 ms.openlocfilehash: 7009658c7a6844a5c6071f502c05114a4accd7b7
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -18,18 +18,18 @@ ms.locfileid: "34541303"
 ---
 # <a name="a-cell-geometry-section"></a>[A] セル ([Geometry] セクション)
 
-各行に対応する情報を表示します。 次の表に、各行で [A] セルが示す内容を説明します。
+各行に対応する情報を表示します。次の表に、各行で [A] セルが示す内容を説明します。
   
-|Row|説明|
+|行|説明|
 |:-----|:-----|
-|[[Arcto]](arcto-row-geometry-section.md) <br/> | 円弧の中点から弦の中点までの距離です。  <br/> |
-|[[Ellipticalarcto]](ellipticalarcto-row-geometry-section.md) <br/> | 円弧のコントロールポイントの*x*座標 (円弧上の点)。コントロールポイントは、円弧の始点と終点の間の中間点を中心に配置されます。それ以外の場合、円弧はコントロールポイントを通過するために極端なサイズまで拡大することがあり、予期しない結果が発生することがあります。  <br/> |
-|[[Polylineto]](polylineto-row-geometry-section.md) <br/> | ポリラインの数式です。  <br/> |
-|[[Nurbsto]](nurbsto-row-geometry-section.md) <br/> | NURBS (nonuniform rational B-spline) の最後から 2 番目のノットです。  <br/> |
-|[[Splinestart]](splinestart-row-geometry-section.md) <br/> | スプラインの 2 番目のノットです。  <br/> |
-|[[Splineknot]](splineknot-row-geometry-section.md) <br/> | スプラインのノットのいずれか 1 つです (最後のノットと最初の 2 つのノットは除く)。  <br/> |
-|[[Infiniteline]](infiniteline-row-geometry-section.md) <br/> | 無限線上の点の*x*座標です。対応する*y*座標は [ [B](b-cell-geometry-section.md)セルで表されます。  <br/> |
-|[もう](ellipse-row-geometry-section.md) <br/> | 楕円上の点の*x*座標です。対応する*y*座標は [ [B](b-cell-geometry-section.md)セルで表されます。  <br/> |
+|[ArcTo](arcto-row-geometry-section.md) <br/> | 円弧の中点から弦の中点までの距離です。  <br/> |
+|[楕円ArcTo](ellipticalarcto-row-geometry-section.md) <br/> | 円弧  *の*  コントロール ポイントの x 座標、円弧上の点。コントロール ポイントは、円弧の開始頂点と終了頂点の約半分の位置に最適です。それ以外の場合、コントロール ポイントを通過するために極端なサイズにアークが大きくなる可能性があります。予期しない結果が得られます。  <br/> |
+|[ポリラインTo](polylineto-row-geometry-section.md) <br/> | ポリラインの数式です。  <br/> |
+|[NURBSTo](nurbsto-row-geometry-section.md) <br/> | NURBS (nonuniform rational B-spline) の最後から 2 番目のノットです。  <br/> |
+|[SplineStart](splinestart-row-geometry-section.md) <br/> | スプラインの 2 番目のノットです。  <br/> |
+|[SplineKnot](splineknot-row-geometry-section.md) <br/> | スプラインのノットのいずれか 1 つです (最後のノットと最初の 2 つのノットは除く)。  <br/> |
+|[InfiniteLine](infiniteline-row-geometry-section.md) <br/> | 無限  *線*  上の点の x 座標。B セルで  *表される y*  座標と組み [合](b-cell-geometry-section.md) わせ。  <br/> |
+|[楕円](ellipse-row-geometry-section.md) <br/> | 楕  *円上*  の点の x 座標。B セルで  *表される y*  座標と組み [合](b-cell-geometry-section.md) わせ。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -37,15 +37,15 @@ ms.locfileid: "34541303"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | ジオメトリ*i**J* 、 *i*および*j* = <1>、2、3...  <br/> |
-|| ジオメトリ*i*A1 ([Infiniteline] および楕円の行) *i* = <1>、2、3...  <br/> |
+| セル名:  <br/> | Geometry  *i*  .i  *と*            *j*  =  *<*  1>、2、3...  <br/> |
+|| Geometry  *i*  .A1 (InfiniteLine 行と楕円行) i  *=*  <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [A] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
-| セクション インデックス:  <br/> |**visSectionFirstComponent** +  *i* = ** 0、1、2...  <br/> |
-| 行インデックス:  <br/> |**visRowVertex** +  *j* where *j* = 0、1、2...  <br/> |
+| セクション インデックス:  <br/> |**visSectionFirstComponent**  +  *i* *=* 0, 1, 2...  <br/> |
+| 行インデックス:  <br/> |**visRowVertex**  +  *j* は *j* = 0、1、2..です。  <br/> |
 ||**visRowVertex** ([InfiniteLine] 行および [Ellipse] 行)  <br/> |
 | セル インデックス:  <br/> |**visBow** ([ArcTo] 行)  <br/> |
 ||**visControlX** ([EllipticalArcTo] 行)  <br/> |

@@ -25,32 +25,32 @@ ms.locfileid: "33438961"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-mapisvc.inf ファイル内のユーザーによって設定されたメッセージサービスの名前を格納します。
+MapiSvc.inf ファイル内のユーザーが設定したメッセージ サービスの名前を含みます。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_SERVICE_NAME、PR_SERVICE_NAME_A、PR_SERVICE_NAME_W  <br/> |
-|識別子:  <br/> |0x3d09  <br/> |
+|識別子:  <br/> |0x3D09  <br/> |
 |データの種類 :   <br/> |PT_STRING8、PT_UNICODE  <br/> |
 |エリア:  <br/> |MAPI プロファイル  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-これらのプロパティに含まれる名前は、メッセージサービスに固有のものです。 これは、mapisvc.inf の [サービス] セクションから取得されます。
+これらのプロパティに含まれる名前は、メッセージ サービスに固有です。 MapiSvc.inf の [サービス] セクションから取得されます。
   
-これらのプロパティは、メッセージサービステーブルの列として表示され、サービスのフィルター処理に使用できます。 サービスを識別してフィルター処理するために使用されるため、この値はローカライズしないでください。
+これらのプロパティは、メッセージ サービス テーブルの列として表示され、サービスのフィルター処理に使用できます。 サービスを識別してフィルター処理するために使用されますので、値をローカライズする必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -60,7 +60,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

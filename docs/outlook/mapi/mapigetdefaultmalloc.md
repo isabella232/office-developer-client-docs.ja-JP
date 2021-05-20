@@ -29,9 +29,9 @@ ms.locfileid: "33438205"
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 LPMALLOC MAPIGetDefaultMalloc( );
@@ -43,6 +43,6 @@ LPMALLOC MAPIGetDefaultMalloc( );
   
 ## <a name="return-value"></a>Return value
 
-**mapigetdefaultmalloc**関数は、既定の MAPI メモリ割り当て関数へのポインターを返します。 
+**MAPIGetDefaultMalloc 関数は**、既定の MAPI メモリ割り当て関数へのポインターを返します。 
   
 

@@ -19,35 +19,35 @@ ms.locfileid: "33436539"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォルダーを開く前に、そのエントリ識別子を使用できるようにする必要があります。 ほとんどのフォルダーについては、 **PR_ENTRYID**のプロパティを取得することを意味します。 一部の IPM サブツリーフォルダーやその他のルートフォルダーなどの特別なフォルダーの場合、MAPI は、メッセージストアの**imapiprop:: GetProps**メソッドを呼び出すことによってアクセスできる特殊なエントリ識別子プロパティを定義します。 これらのエントリ識別子は常に長期間で、次のように名前が付けられます。 
+フォルダーを開く前に、そのエントリ識別子を使用できる必要があります。 ほとんどのフォルダーでは、このプロパティを **取得PR_ENTRYID意味** します。 IPM サブツリー フォルダーの一部や他のルート フォルダーなどの特別なフォルダーの場合、MAPI はメッセージ ストアの **IMAPIProp::GetProps** メソッドを呼び出すことによってアクセスできる特別なエントリ識別子プロパティを定義します。 これらのエントリ識別子は常に長期であり、次のように名前が付きます。 
   
-|**Folder**|**エントリ id プロパティ**|
+|**Folder**|**エントリ識別子プロパティ**|
 |:-----|:-----|
-|���M�g���C] �̃t�H���_�[  <br/> |**PR_IPM_OUTBOX_ENTRYID**([PidTagIpmOutboxEntryId](pidtagipmoutboxentryid-canonical-property.md))(IPM メッセージクラスのみ)  <br/> |
-|削除済みアイテム フォルダー  <br/> |**PR_IPM_WASTEBASKET_ENTRYID**([PidTagIpmWastebasketEntryId](pidtagipmwastebasketentryid-canonical-property.md))  <br/> |
-|���M�ς݃A�C�e��] �t�H���_�[  <br/> |**PR_IPM_SENTMAIL_ENTRYID**([PidTagIpmSentMailEntryId](pidtagipmsentmailentryid-canonical-property.md))  <br/> |
-|IPM ���[�g �t�H���_�[  <br/> |**PR_IPM_SUBTREE_ENTRYID**([PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md))  <br/> |
-|�������ʂ̃��[�g �t�H���_�[  <br/> |**PR_FINDER_ENTRYID**([PidTagFinderEntryId](pidtagfinderentryid-canonical-property.md))  <br/> |
-|共通ビューのルートフォルダー  <br/> |**PR_COMMON_VIEWS_ENTRYID**([PidTagCommonViewsEntryId](pidtagcommonviewsentryid-canonical-property.md))  <br/> |
-|個人用ビューのルートフォルダー  <br/> |**PR_VIEWS_ENTRYID**([PidTagViewsEntryId](pidtagviewsentryid-canonical-property.md))  <br/> |
-|連絡先のルートフォルダー  <br/> |**PR_IPM_CONTACT_ENTRYID**([PidTagIpmContactEntryId](pidtagipmcontactentryid-canonical-property.md))  <br/> |
-|下書きルートフォルダー  <br/> |**PR_IPM_DRAFTS_ENTRYID**([PidTagIpmDraftsEntryId](pidtagipmdraftsentryid-canonical-property.md))  <br/> |
-|ジャーナルルートフォルダー  <br/> |**PR_IPM_JOURNAL_ENTRYID**([PidTagIpmJournalEntryId](pidtagipmjournalentryid-canonical-property.md))  <br/> |
-|予定表のルートフォルダー  <br/> |**PR_IPM_APPOINTMENT_ENTRYID**([PidTagIpmAppointmentEntryId](pidtagipmappointmententryid-canonical-property.md))  <br/> |
-|メモルートフォルダー  <br/> |**PR_IPM_NOTE_ENTRYID**([PidTagIpmNoteEntryId](pidtagipmnoteentryid-canonical-property.md))  <br/> |
-|タスクルートフォルダー  <br/> |**PR_IPM_TASK_ENTRYID**([PidTagIpmTaskEntryId](pidtagipmtaskentryid-canonical-property.md))  <br/> |
+|���M�g���C] �̃t�H���_�[  <br/> |**PR_IPM_OUTBOX_ENTRYID** ([PidTagIpmOutboxEntryId](pidtagipmoutboxentryid-canonical-property.md)) (IPM メッセージ クラスのみ)  <br/> |
+|削除済みアイテム フォルダー  <br/> |**PR_IPM_WASTEBASKET_ENTRYID** ([PidTagIpmWastebasketEntryId](pidtagipmwastebasketentryid-canonical-property.md))  <br/> |
+|���M�ς݃A�C�e��] �t�H���_�[  <br/> |**PR_IPM_SENTMAIL_ENTRYID** ([PidTagIpmSentMailEntryId](pidtagipmsentmailentryid-canonical-property.md))  <br/> |
+|IPM ���[�g �t�H���_�[  <br/> |**PR_IPM_SUBTREE_ENTRYID** ([PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md))  <br/> |
+|�������ʂ̃��[�g �t�H���_�[  <br/> |**PR_FINDER_ENTRYID** ([PidTagFinderEntryId](pidtagfinderentryid-canonical-property.md))  <br/> |
+|共通ビューのルート フォルダー  <br/> |**PR_COMMON_VIEWS_ENTRYID** ([PidTagCommonViewsEntryId](pidtagcommonviewsentryid-canonical-property.md))  <br/> |
+|個人用ビューのルート フォルダー  <br/> |**PR_VIEWS_ENTRYID** ([PidTagViewsEntryId](pidtagviewsentryid-canonical-property.md))  <br/> |
+|連絡先のルート フォルダー  <br/> |**PR_IPM_CONTACT_ENTRYID** ([PidTagIpmContactEntryId](pidtagipmcontactentryid-canonical-property.md))  <br/> |
+|下書きルート フォルダー  <br/> |**PR_IPM_DRAFTS_ENTRYID** ([PidTagIpmDraftsEntryId](pidtagipmdraftsentryid-canonical-property.md))  <br/> |
+|ジャーナル ルート フォルダー  <br/> |**PR_IPM_JOURNAL_ENTRYID** ([PidTagIpmJournalEntryId](pidtagipmjournalentryid-canonical-property.md))  <br/> |
+|予定表のルート フォルダー  <br/> |**PR_IPM_APPOINTMENT_ENTRYID** ([PidTagIpmAppointmentEntryId](pidtagipmappointmententryid-canonical-property.md))  <br/> |
+|Notes ルート フォルダー  <br/> |**PR_IPM_NOTE_ENTRYID** ([PidTagIpmNoteEntryId](pidtagipmnoteentryid-canonical-property.md))  <br/> |
+|タスクのルート フォルダー  <br/> |**PR_IPM_TASK_ENTRYID** ([PidTagIpmTaskEntryId](pidtagipmtaskentryid-canonical-property.md))  <br/> |
    
-これらの特殊なエントリ識別子のいずれかを取得しようとする前に、メッセージストアの**\_PR VALID_FOLDER_MASK** ([PidTagValidFolderMask](pidtagvalidfoldermask-canonical-property.md)) プロパティを取得します。 **PR\_VALID_FOLDER_MASK**は、どの特別なエントリ識別子が存在するかを識別するビットマスクです。 特別なフォルダーには1ビットがあります。 ビットが設定されている場合は、対応するフォルダーがサポートされ、有効なエントリ識別子があることを示します。 たとえば、削除済みアイテムフォルダーが存在し、有効なエントリ識別子がある場合、\_フォルダー IPM_WASTEBASKET_VALID ビットが**PR_VALID_FOLDER_MASK**に設定されます。 
+これらの特別なエントリ識別子のいずれかを取得する前に、メッセージ ストアの **\_ PR** VALID_FOLDER_MASK ([PidTagValidFolderMask](pidtagvalidfoldermask-canonical-property.md)) プロパティを取得します。 **PR \_VALID_FOLDER_MASK** は、存在する特別なエントリ識別子を識別するビットマスクです。 特別なフォルダーごとに 1 ビットがあります。 ビットが設定されている場合は、対応するフォルダーがサポートされ、有効なエントリ識別子を持つかどうかを示します。 たとえば、[削除済みアイテム] フォルダーが存在し、有効なエントリ識別子を持つ場合、FOLDER IPM_WASTEBASKET_VALID ビットは 、 に \_ **設定PR_VALID_FOLDER_MASK。** 
   
-## <a name="open-the-folder-where-all-incoming-messages-of-a-particular-class-are-placed"></a>特定のクラスのすべての受信メッセージが配置されているフォルダーを開きます。
+## <a name="open-the-folder-where-all-incoming-messages-of-a-particular-class-are-placed"></a>特定のクラスのすべての受信メッセージが配置されているフォルダーを開きます
   
-1. [IMsgStore:: getreceivefolder](imsgstore-getreceivefolder.md)を呼び出して、そのエントリ id を取得し、 _lpszmessageclass_パラメーターを設定して、メッセージクラスを識別する文字列を指すようにします。 たとえば、ipm サブツリーの受信トレイを開く場合は、[ipm _messageclass_ ] を [ipm] に指定します。 ipc メッセージの受信フォルダーを開く必要がある場合は、ipc をポイントするように設定します。 
+1. [IMsgStore::GetReceiveFolder](imsgstore-getreceivefolder.md)を呼び出して、そのエントリ識別子を取得し _、lpszMessageClass_ パラメーターがメッセージ クラスを識別する文字列を指す設定を行います。 たとえば、IPM サブツリーの受信トレイを開く場合は  _、lpszMessageClass を_ IPM にポイントします。 IPC メッセージの受信フォルダーを開く場合は、IPC をポイントに設定します。 
 
-   メッセージクラスの受信フォルダーが登録されていない場合、 **getreceivefolder**は、渡されたメッセージクラスの最長有効なプレフィックスに一致するメッセージクラスを持つ受信フォルダーを選択します。 詳細については、「 [MAPI 受信フォルダー](mapi-receive-folders.md)」を参照してください。 
+   メッセージ クラスに登録済みの受信フォルダーがない場合 **、GetReceiveFolder** は、関連付けられたメッセージ クラスが渡されたメッセージ クラスの最長プレフィックスと一致する受信フォルダーを選択します。 詳細については [、「MAPI 受信フォルダー」を参照してください](mapi-receive-folders.md)。 
    
-   **PR_IPM_OUTBOX_ENTRYID**プロパティを使用して、IPM メッセージに対してのみ送信トレイフォルダーが開かれることに注意してください。 IPC メッセージの送信トレイを開いている場合は、代わりにその受信フォルダーのエントリ識別子を使用します。 受信および送信 IPC メッセージは両方とも、受信フォルダーに配置されます。 
+   **PR_IPM_OUTBOX_ENTRYIDプロパティは、IPM** メッセージの送信ボックス フォルダーを開くのに使用されます。 IPC メッセージの送信ボックスを開く場合は、受信フォルダーのエントリ識別子を代わりに使用します。 受信 IPC メッセージと送信 IPC メッセージの両方が受信フォルダーに配置されます。 
     
-2. 4つの**openentry**メソッドの1つを呼び出して、フォルダーを開き、それにアクセスするために使用できるインターフェイスポインターを返します。 フォルダーを開くには、次のいずれかのメソッドを呼び出すことができます。 
+2. 4 つの **OpenEntry** メソッドのいずれかを呼び出してフォルダーを開き、アクセスに使用できるインターフェイス ポインターを返します。 次のいずれかのメソッドを呼び出して、フォルダーを開きます。 
     
    - [IMAPISession::OpenEntry](imapisession-openentry.md)
     
@@ -57,15 +57,15 @@ ms.locfileid: "33436539"
     
    - [IMAPIContainer::OpenEntry](imapicontainer-openentry.md)
     
-   選択する具体的な方法は、開かれるフォルダーと、その時点で使用可能なオブジェクトによって異なります。 **imapisession**メソッドは、現在のプロファイルにある任意のメッセージストアの任意のフォルダーを開くことができるので、開くフォルダーに関する情報がわからない場合にこの**openentry**を呼び出します。 フォルダーを所有しているメッセージストアと、メッセージストアへのポインターがあることがわかっている場合は、 **IMsgStore:: openentry**を呼び出します。 
+   選択する特定の方法は、開くフォルダーと、その時点で使用可能なオブジェクトによって異なります。 **IMAPISession** メソッドは、現在のプロファイル内の任意のメッセージ ストアの任意のフォルダーを開くことができるので、開くフォルダーについて何も知らない場合は、**この OpenEntry** を呼び出します。 どのメッセージ ストアがフォルダーを所有し、メッセージ ストアへのポインターを持っている場合は **、IMsgStore::OpenEntry を呼び出します**。 
     
-   たとえば、受信フォルダーを開くには、 **IMsgStore**メソッドを使用します。 メッセージストアプロバイダーのログオンオブジェクトへのポインターがある場合は、 **IMSLogon:: openentry**を呼び出します。 これらの呼び出しは MAPI ではなくメッセージストアプロバイダーに直接移動するので、処理が速くなります。 開こうとしているフォルダーが既に開いているフォルダーのサブフォルダーである場合は、開いているフォルダーの**IMAPIContainer:: openentry**メソッドを呼び出します。 **IMAPIContainer**メソッドは、現在開かれているフォルダーのサブフォルダーのみを開き、短い用語のエントリ識別子に対応することを保証する唯一の方法です。 
+   たとえば **、IMsgStore メソッドを使用して** 受信フォルダーを開きます。 メッセージ ストア プロバイダーのログオン オブジェクトへのポインターがある場合は **、IMSLogon::OpenEntry を呼び出します**。 これらの呼び出しは、MAPI 経由ではなくメッセージ ストア プロバイダーに直接送信されるので、処理が高速になります。 開いているフォルダーが既に開いているフォルダーのサブフォルダーである場合は、開いているフォルダーの **IMAPIContainer::OpenEntry メソッドを呼び出** します。 **IMAPIContainer** メソッドは、現在開いているフォルダーのサブフォルダーのみを開き、短期的なエントリ識別子で動作する唯一のメソッドです。 
     
-3. 開くフォルダーを変更できるようにするには\_、 **openentry**呼び出しで mapi の BEST\_access または mapi\_の変更フラグを設定して、アクセスレベルを指定します。 これらのフラグは、フォルダーを開くときに、mapi での\_最高\_のアクセス許可、または読み取り/書き込みアクセス権\_の最高レベルのアクセスを付与するために、メッセージストアプロバイダーに推奨されています。 
+3. 開くフォルダーを変更できる場合は \_ \_ \_ **、OpenEntry** 呼び出しで MAPI BEST ACCESS フラグまたは MAPI MODIFY フラグを設定してアクセス レベルを指定します。 これらのフラグは、MAPI BEST ACCESS または読み取り/書き込みアクセスを MAPI MODIFY でフォルダーを開く際に、最高レベルのアクセスを許可するメッセージ ストア プロバイダーへの提案 \_ \_ \_ です。 
 
-   これらのフラグは候補に限定されるので、必要なアクセスレベルでフォルダーが開かれる場合と、開かない場合があります。 **PR_ACCESS** ([PidTagAccess](pidtagaccess-canonical-property.md)) プロパティを取得することにより、開いているフォルダーに対して実行できる操作の範囲を決定できます。 
+   これらのフラグは候補にしか含めないので、フォルダーは期待するアクセス レベルで開く場合と開かない場合があります。 プロパティ (  [PidTagAccess](pidtagaccess-canonical-property.md)) PR_ACCESSを取得することで、開いているフォルダーで実行できる操作の範囲を決定できます。 
     
-   ただし、多くのメッセージストアプロバイダーは、フォルダープロパティとして、または階層テーブル内の列としてサポートするのではなく、必要に応じてこのプロパティの値を計算するので、取得に時間がかかることがあります。 別の方法として、実行する必要がある任意の操作を試行し、必要に応じてエラーを返すようにすることができます。
+   ただし、多くのメッセージ ストア プロバイダーは、フォルダー プロパティとして、または階層テーブル内の列としてサポートするのではなく、このプロパティの値をオンデマンドで計算しますので、取得には時間がかかる場合があります。 別の方法は、実行する必要がある操作を試み、必要に応じてエラーを返す方法です。
     
 ## <a name="see-also"></a>関連項目
 

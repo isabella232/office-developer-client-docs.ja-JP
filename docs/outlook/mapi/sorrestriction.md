@@ -25,11 +25,11 @@ ms.locfileid: "33437932"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-制限に論理**or**演算を適用するために使用される**or**制限について説明します。 
+論理 OR 操作 **を** 制限に適用するために使用される **OR** 制限について説明します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SOrRestriction
@@ -40,19 +40,19 @@ typedef struct _SOrRestriction
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cres**
+ **cRes**
   
-> **lpres**メンバによって参照されている配列内の構造体の数。 
+> lpRes メンバーが指す配列内の **構造体の** 数。 
     
- **lpres**
+ **lpRes**
   
-> 論理**OR**演算を使用して結合する制限について説明する[srestriction](srestriction.md)構造体へのポインター。 
+> 論理 OR 操作を使用して参加する制限を記述する [SRestriction](srestriction.md) 構造体 **への** ポインター。 
     
 ## <a name="remarks"></a>注釈
 
-**sorrestriction**構造の詳細については、「[制限につい](about-restrictions.md)て」を参照してください。 
+**SOrRestriction** 構造の詳細については、「制限について [」を参照してください](about-restrictions.md)。 
   
 ## <a name="see-also"></a>関連項目
 

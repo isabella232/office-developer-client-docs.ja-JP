@@ -25,11 +25,11 @@ ms.locfileid: "33438884"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-論理**and**演算を使用して制限のグループに参加するために使用される**and**制限について説明します。 
+論理 AND 操作 **を使用** して制限のグループに参加するために使用される AND 制限について **説明** します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SAndRestriction
@@ -40,21 +40,21 @@ typedef struct _SAndRestriction
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cres**
+ **cRes**
   
-> **lpres**メンバが指す、配列内の検索制限の数。 
+> **lpRes** メンバーが指す配列内の検索制限の数。 
     
- **lpres**
+ **lpRes**
   
-> 論理**AND**演算と組み合わせて使用される[srestriction](srestriction.md)構造体の配列へのポインター。 
+> 論理 **AND** 操作と組み合わせる [SRestriction](srestriction.md)構造体の配列へのポインター。 
     
 ## <a name="remarks"></a>注釈
 
-**SAndRestriction**の結果は、そのすべての子制限が true に評価された場合に true となります。 false と評価される子の制限がある場合は false です。 
+すべての子制限が TRUE に評価される場合 **、SAndRestriction** の結果は TRUE です。 子制限が FALSE と評価される場合は FALSE です。 
   
-制限の種類、それらを構築する方法、およびサンプルコードの詳細については、「[制限について](about-restrictions.md)」を参照してください。
+制限の種類、それらをビルドする方法、およびサンプル コードの説明については、「制限について [」を参照してください](about-restrictions.md)。
   
 ## <a name="see-also"></a>関連項目
 

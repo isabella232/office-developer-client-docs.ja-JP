@@ -15,13 +15,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438163"
 ---
-# <a name="mapiofflineaggregateinfo"></a>MAPIOFFLINE_AGGREGATEINFO
+# <a name="mapioffline_aggregateinfo"></a>MAPIOFFLINE_AGGREGATEINFO
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-この構造体は、 [hrcreateofflineobj](hrcreateofflineobj.md)と共に使用されます。 
+構造は [HrCreateOfflineObj で使用されます](hrcreateofflineobj.md)。 
   
 ```cpp
 typedef struct
@@ -32,15 +32,15 @@ typedef struct
 } MAPIOFFLINE_AGGREGATEINFO;
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **ulsize**
+ **ulSize**
   
 > 構造体のサイズ。
     
- **pouterobj**
+ **pOuterObj**
   
-> このオブジェクトの集約先の IUnknown オブジェクトへのポインター。 これにより、作成されたオブジェクトに QueryInterface 呼び出しをパススルーすることができます。
+> このオブジェクトが集計される IUnknown オブジェクトへのポインター。 これにより、QueryInterface 呼び出しが作成されたオブジェクトに渡されます。
     
  **pRefTrackRoot**
   

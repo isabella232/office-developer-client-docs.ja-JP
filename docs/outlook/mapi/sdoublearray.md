@@ -25,11 +25,11 @@ ms.locfileid: "33439269"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-PT_MV_DOUBLE 型のプロパティを記述するために使用される倍精度浮動小数点数の配列を格納します。
+型のプロパティを記述するために使用される倍数の配列が含PT_MV_DOUBLE。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SDoubleArray
@@ -40,19 +40,19 @@ typedef struct _SDoubleArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cvalues**
+ **cValues**
   
-> lpsingleメンバーが指す配列内の値の**** 数。 
+> **lpdbl** メンバーが指す配列内の値の数。 
     
  **lpdbl**
   
-> 倍精度浮動小数点型の値の配列へのポインターを指定します。
+> 倍数の値の配列へのポインター。
     
 ## <a name="remarks"></a>注釈
 
-PT_MV_DOUBLE の詳細については、「[プロパティの種類の一覧](property-types.md)」を参照してください。
+プロパティの詳細については、「PT_MV_DOUBLEプロパティ [の種類の一覧」を参照してください](property-types.md)。
   
 ## <a name="see-also"></a>関連項目
 

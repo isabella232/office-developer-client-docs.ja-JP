@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251402
 localization_priority: Normal
 ms.assetid: da9fb933-4e2c-3e2a-1879-6e70db0cd830
-description: 色の青要素を返します。 戻り値は、0 ~ 255 の範囲の整数です。 入力した引数が無効な場合は、0 を返します。
+description: 色の青いコンポーネントを返します。 戻り値は、0 ~ 255 の範囲の整数です。含まれています。 入力した引数が無効な場合は、0 を返します。
 ms.openlocfilehash: adefbe0f8c2df0ead0f3e50cd5d4945501972865
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33439038"
 ---
 # <a name="blue-function"></a>BLUE 関数
 
-色の青要素を返します。 戻り値は、0 ~ 255 の範囲の整数です。 入力した引数が無効な場合は、0 を返します。
+色の青いコンポーネントを返します。 戻り値は、0 ~ 255 の範囲の整数です。含まれています。 入力した引数が無効な場合は、0 を返します。
   
 ## <a name="syntax"></a>構文
 
-青 (* **式** *) 
+BLUE(** *expression* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -36,13 +36,13 @@ ms.locfileid: "33439038"
   
 ## <a name="example-1"></a>例 1
 
-青 (4 枚[fillforegnd]
+BLUE(Sheet.4!FillForegnd)
   
 Sheet.4 の前景の塗りつぶしの色に対する青のコンポーネントを返します。
   
 ## <a name="example-2"></a>例 2
 
-青 (13)
+BLUE(13)
   
 図面で既定の Visio カラー パレットを使用する場合、128 を返します。Visio カラー パレットでは、シアンのインデックスは 13 です。
   

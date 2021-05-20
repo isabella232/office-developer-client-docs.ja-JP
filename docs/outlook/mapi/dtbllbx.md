@@ -25,11 +25,11 @@ ms.locfileid: "33438569"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-表示テーブルから構築されたダイアログボックスで使用されるリストを表します。
+表示テーブルから作成されたダイアログ ボックスで使用されるリストについて説明します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _DTBLLBX
@@ -45,47 +45,47 @@ typedef struct _DTBLLBX
 
  **ulFlags**
   
-> リストから水平または垂直スクロールバーを削除するために使用されるフラグのビットマスク。 次のフラグを設定できます。
+> リストから水平または垂直のスクロール バーを削除するために使用されるフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_NO_HBAR 
   
-> リストに水平スクロールバーを表示する必要はありません。
+> リストに水平スクロール バーを表示する必要はありません。
     
 MAPI_NO_VBAR 
   
-> リストに垂直スクロールバーを表示する必要はありません。
+> リストに垂直スクロール バーを表示する必要はありません。
     
- **ulprsetproperty**
+ **ulPRSetProperty**
   
-> 任意の型のプロパティのプロパティタグ。 このプロパティは、 **ulprtabletable**メンバーで識別されるテーブルの列の1つです。 
+> 任意の種類のプロパティのプロパティ タグ。 このプロパティは、ulPRTableTable メンバーによって識別されるテーブル **内の列の 1** つです。 
     
- **ulprtablename**
+ **ulPRTableName**
   
-> **openproperty**呼び出しを使用して開くことができる PT_OBJECT 型のテーブルプロパティのプロパティタグ。 表に含める必要のある列の数は、リストが単一または複数の選択リストであるかによって決まります。 **ulprsetproperty**メンバーが**PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) に設定されている場合、リストは複数の項目を選択できます。
+> **OpenProperty** 呼び出しを使用して開くことができるPT_OBJECTのテーブル プロパティのプロパティ タグ。 テーブルに含む列の数は、リストが 1 つの選択リストか複数選択リストかによって異なります。 **ulPRSetProperty** メンバーが PR_NULL **(** [PidTagNull)](pidtagnull-canonical-property.md)に設定されている場合、リストでは複数の選択が可能です。
     
 ## <a name="remarks"></a>注釈
 
-**dtbllbx**構造体は、複数のアイテムを表示するために使用されるコントロールのリストを記述し、ユーザーが1つ以上のアイテムを選択できるようにします。 
+**DTBLLBX** 構造は、複数のアイテムを表示し、ユーザーが 1 つ以上のアイテムを選択するために使用するコントロールをリストに記述します。 
   
-**ulprsetproperty**メンバーと**ulprsetproperty**メンバーは連携して動作します。テーブルから1つの値が選択されている場合、ダイアログボックスが閉じられたときに**ulprsetproperty**に書き戻されます。 
+**ulPRSetProperty メンバーと** **ulPRTableName** メンバーが一緒に動作します。テーブルから 1 つの値を選択すると、ダイアログ ボックスが閉じらば **ulPRSetProperty** に書き戻されます。 
   
-flags 値は、水平または垂直のスクロールバーを一覧と共に表示するかどうかを示します。 既定では、必要に応じてスクロールバーの種類を表示します。 サービスプロバイダーは、MAPI_NO_HBAR を設定して、水平スクロールバーと MAPI_NO_VBAR を非表示にし、垂直スクロールバーを非表示にすることができます。 
+flags 値は、水平スクロール バーと垂直スクロール バーをリストと一緒に表示するかどうかを示します。 既定では、必要に応じてスクロール バーの種類が表示されます。 サービス プロバイダーは、水平方向MAPI_NO_HBARを抑制し、垂直スクロール バーを非表示MAPI_NO_VBARを設定できます。 
   
-2つのプロパティタグメンバーは連携してリスト内の値を表示し、リスト内の項目が選択されたときに対応するプロパティを設定します。 MAPI が最初にリストを表示するときは、 **imapiprop**実装の**openproperty**メソッドを呼び出して、 **ulprtablename**メンバーで識別されたテーブルを取得します。 テーブル内の列数は、 **ulprsetproperty**メンバーの値に応じて異なります。 **ulprsetproperty**が**PR_NULL**に設定されている場合、リストは、アドレス帳コンテナー、メッセージの受信者テーブル、配布リストのコンテンツテーブルなど、受信者を含むオブジェクトに基づいて複数の選択リストになります。 
+2 つのプロパティ タグ メンバーが連携して、リスト内の値を表示し、リスト内のアイテムが選択されている場合に対応するプロパティを設定します。 MAPI が最初にリストを表示すると **、IMAPIProp 実装** の **OpenProperty** メソッドを呼び出して **、ulPRTableName** メンバーで識別されたテーブルを取得します。 表内の列数は **、ulPRSetProperty** メンバーの値によって異なります。 **ulPRSetProperty** が **PR_NULL** に設定されている場合、リストは、アドレス帳コンテナー、メッセージの受信者テーブル、配布リストのコンテンツ テーブルなど、受信者を含むオブジェクトに基づく複数の選択リストです。 
   
-複数選択リストのテーブルには、次の列が含まれている必要があります。
+複数の選択リストのテーブルには、次の列が含まれる必要があります。
   
- **PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
+ **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
   
- **PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))
+ **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))
   
- **PR_INSTANCE_KEY**([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))
+ **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))
   
- **PR_DISPLAY_TYPE**([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) およびその他の最大5つの複数値文字列プロパティを、3つの必須列と共に表示することもできます。 
+ **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) および最大 5 つの他の複数値文字列プロパティを、必要な 3 つの列と一緒に表示することもできます。 
   
-**ulprsetproperty**メンバーが**PR_NULL**に設定されていない場合、リストは単一の選択一覧になります。 **ulprsetproperty**の初期値は、最初に選択された行を決定します。 ユーザーがいずれかの行を選択すると、 **ulprsetproperty**メンバーが選択された値に設定され、この値は、 [imapiprop:: setprops](imapiprop-setprops.md)を呼び出すことでプロパティインターフェイスの実装に書き戻されます。 
+**ulPRSetProperty** メンバーが設定されていない場合PR_NULLリストは 1 つの選択リストです。 **ulPRSetProperty の初期値は**、最初に選択した行を決定します。 ユーザーが行のいずれかを選択すると **、ulPRSetProperty** メンバーが選択した値に設定され、この値は [IMAPIProp::SetProps](imapiprop-setprops.md)を呼び出してプロパティ インターフェイスの実装に書き戻されます。 
   
-表示テーブルの概要については、「[テーブルの表示](display-tables.md)」を参照してください。 表示テーブルを実装する方法については、「[表示テーブルを実装](display-table-implementation.md)する」を参照してください。
+表示テーブルの概要については、「表示テーブル」 [を参照してください](display-tables.md)。 表示テーブルを実装する方法の詳細については、「表示テーブルの [実装」を参照してください](display-table-implementation.md)。
   
 ## <a name="see-also"></a>関連項目
 

@@ -42,22 +42,22 @@ BOOL FBadRglpszW(
 
 ## <a name="parameters"></a>パラメーター
 
- _lppszw_
+ _lppszW_
   
-> 順番null で終わる Unicode 文字列の配列へのポインター。 
+> [in]Null 終端 Unicode 文字列の配列へのポインター。 
     
- _cstrings_
+ _cStrings_
   
-> 順番_lppszw_パラメーターによって示される配列内の文字列の数。 
+> [in]lppszW パラメーターが指す配列  _内の文字列の_ 数。 
     
 ## <a name="return-value"></a>戻り値
 
 TRUE 
   
-> 指定された配列の1つ以上の文字列が無効です。 
+> 指定した配列内の 1 つ以上の文字列が無効です。 
     
 FALSE 
   
-> 指定した配列の文字列は有効です。
+> 指定した配列内の文字列が有効です。
     
 

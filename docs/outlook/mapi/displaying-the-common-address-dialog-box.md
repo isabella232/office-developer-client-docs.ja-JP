@@ -1,5 +1,5 @@
 ---
-title: '[共通アドレス] ダイアログボックスを表示する'
+title: '[共通アドレス] ダイアログ ボックスの表示'
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,20 +15,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33436904"
 ---
-# <a name="displaying-the-common-address-dialog-box"></a>[共通アドレス] ダイアログボックスを表示する
+# <a name="displaying-the-common-address-dialog-box"></a>[共通アドレス] ダイアログ ボックスの表示
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[MAPI 共通アドレス] ダイアログボックスは、受信者リストの作成など、さまざまなアドレス指定タスクに使用できます。 このダイアログボックスを表示するには、 **IAddrBook:: Address**を呼び出します。 設定されているパラメーターの種類およびそれらの設定方法に応じて、特定のコンテナーから特定の種類のエントリへの表示を制限することができます。
+[MAPI 共通アドレス] ダイアログ ボックスは、受信者リストの作成など、さまざまなアドレス指定タスクに使用できます。 このダイアログ ボックスを表示するには **、IAddrBook::Address を呼び出します**。 設定する多くのパラメーターの種類と設定方法に応じて、特定のコンテナーの特定の種類のエントリに表示を制限できます。
   
- **[アドレス] ダイアログボックスで個人用アドレス帳 (PAB) エントリのみを表示するように制限するには**
+ **[アドレス] ダイアログ ボックスに個人用アドレス帳 (PAB) エントリのみを表示するには**
   
-1. [IAddrBook:: getpab](iaddrbook-getpab.md)を呼び出して、pab のエントリ識別子を取得します。 
+1. [IAddrBook::GetPAB](iaddrbook-getpab.md)を呼び出して、PAB のエントリ識別子を取得します。 
     
-2. [spropertyrestriction](spropertyrestriction.md)構造の**relop**メンバに対して RELOP_EQ を使用し、 **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) または**PR_AB_PROVIDER_ID** ([PidTagAbProviderId](pidtagabproviderid-canonical-property.md)) のどちらかとしてのプロパティ制限を作成します。**ulPropTag**メンバー。 **PR_ENTRYID**を使用する場合は、 **getpab**から取得したエントリ識別子を渡します。 **PR_AB_PROVIDER_ID**を使用する場合は、mspab に含まれる値を渡します。H ヘッダーファイル。 **PR_AB_PROVIDER_ID**は、MAPI によって設計された PAB の一意の識別子です。 
+2. [SPropertyRestriction](spropertyrestriction.md)構造体の relop メンバーに RELOP_EQを使用し **、ulPropTag** メンバーとして PR_ENTRYID ([PidTagEntryId](pidtagentryid-canonical-property.md)) または **PR_AB_PROVIDER_ID** ([PidTagAbProviderId](pidtagabproviderid-canonical-property.md)) を使用するプロパティ制限を作成します。  このプロパティを **使用PR_ENTRYID** GetPAB から取得したエントリ識別子 **を渡します**。 この値を使用 **PR_AB_PROVIDER_ID** MSPAB に含まれる値を渡します。H ヘッダー ファイル。 **PR_AB_PROVIDER_ID** は、MAPI によって設計された PAB の一意の識別子です。 
     
-3. プロパティ制限を指す_lpHierRestriction_パラメーターを使用して、 [IAddrBook:: Address](iaddrbook-address.md)を呼び出します。 
+3. プロパティ制限を指す _lpHierRestriction_ パラメーターを使用して [IAddrBook::Address](iaddrbook-address.md)を呼び出します。 
     
 

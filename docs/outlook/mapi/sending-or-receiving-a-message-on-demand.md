@@ -19,46 +19,46 @@ ms.locfileid: "33436371"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-通常、クライアントは mapi サブシステム (mapi スプーラーおよびサービスプロバイダー) に依存して、メッセージの送信と受信のタイミングを処理します。 ただし、このタイミングは、MAPI スプーラーまたはトランスポートプロバイダーの status オブジェクトを使用して変更できます。
+クライアントは通常、MAPI サブシステム (MAPI スプーラーとサービス プロバイダー) を使用して、メッセージの送受信のタイミングを処理します。 ただし、MAPI スプーラーまたはトランスポート プロバイダーの status オブジェクトを使用して、このタイミングを変更できます。
   
-[imapistatus:: flushqueues](imapistatus-flushqueues.md)メソッドは、1つ以上のトランスポートプロバイダーの受信キューまたは送信キューからすべてのメッセージを削除します。 次の手順では、オンデマンドでメッセージを送受信する2つの方法について説明します。 最初の手順では、MAPI スプーラーの status オブジェクトを使用して、プロファイル内のすべてのトランスポートプロバイダーのキューをフラッシュします。2番目のプロシージャは、1つのトランスポートプロバイダーのキューをフラッシュします。 
+[IMAPIStatus::FlushQueues](imapistatus-flushqueues.md)メソッドは、1 つ以上のトランスポート プロバイダーの受信キューまたは送信キューからすべてのメッセージを削除します。 次の手順では、オンデマンドでメッセージを送受信する 2 つの手法について説明します。 最初の手順では、MAPI スプーラーの status オブジェクトを使用して、プロファイル内のすべてのトランスポート プロバイダーのキューをフラッシュします。2 番目の手順では、1 つのトランスポート プロバイダーのキューをフラッシュします。 
   
-### <a name="to-flush-all-incoming-or-outgoing-queues-in-a-single-operation"></a>1回の操作ですべての着信または発信キューをフラッシュするには
+### <a name="to-flush-all-incoming-or-outgoing-queues-in-a-single-operation"></a>1 回の操作ですべての受信キューまたは送信キューをフラッシュするには
   
-1. 呼び出し[imapisession:: getstatustable](imapisession-getstatustable.md)は状態テーブルにアクセスできます。 
+1. [IMAPISession::GetStatusTable](imapisession-getstatustable.md)を呼び出して、状態テーブルにアクセスします。 
     
-2. 状態テーブルの[IMAPITable:: SetColumns](imapitable-setcolumns.md)メソッドを呼び出して、列セットを**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) および**PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md)) に制限します。
+2. 状態テーブルの [IMAPITable::SetColumns](imapitable-setcolumns.md)メソッドを呼び出して、列セットを PR_ENTRYID ([PidTagEntryId](pidtagentryid-canonical-property.md)) および **PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md))**に** 制限します。
     
-3. **PR_RESOURCE_TYPE**と MAPI_SPOOLER を一致させるために、 [spropertyrestriction](spropertyrestriction.md)構造を使用してプロパティ制限を構築します。 
+3. [SPropertyRestriction](spropertyrestriction.md)構造体を使用してプロパティ制限を構築し、プロパティと **PR_RESOURCE_TYPE一致** MAPI_SPOOLER。 
     
-4. MAPI スプーラーの状態を表す行を取得するには、 [hrqueryallrows](hrqueryallrows.md)を呼び出し、 **spropertyrestriction**構造を渡します。 
+4. [HrQueryAllRows](hrqueryallrows.md)を呼び出し **、SPropertyRestriction** 構造体を渡して、MAPI スプーラーの状態を表す行を取得します。 
     
-5. **PR_ENTRYID**列を[imapisession:: openentry](imapisession-openentry.md)に渡して、MAPI スプーラーの status オブジェクトを開きます。 
+5. MAPI ス **プー PR_ENTRYID** の状態オブジェクトを開く場合は、この列を [IMAPISession::OpenEntry](imapisession-openentry.md) に渡します。 
     
-6. MAPI スプーラーの[imapistatus:: flushqueues](imapistatus-flushqueues.md)メソッドを呼び出し、FLUSH_NO_UI フラグを渡してユーザーインターフェイスを非表示にし、送信または受信キューをフラッシュする FLUSH_DOWNLOAD または FLUSH_UPLOAD フラグを渡します。 
+6. MAPI スプーラーの [IMAPIStatus::FlushQueues](imapistatus-flushqueues.md) メソッドを呼び出し、FLUSH_NO_UI フラグを渡してユーザー インターフェイスを抑制し、FLUSH_DOWNLOAD または FLUSH_UPLOAD フラグを使用して送信キューまたは着信キューをフラッシュします。 
     
-7. status オブジェクトと状態テーブルを解放します。また、テーブルに割り当てられている[srowset](srowset.md)構造も解放します。 
+7. status オブジェクトと状態テーブル、およびテーブルに割り当てられている [SRowSet](srowset.md) 構造を解放します。 
     
-### <a name="to-flush-incoming-or-outgoing-queues-individually-by-transport-provider"></a>着信または発信キューをトランスポートプロバイダーによって個別にフラッシュするには
+### <a name="to-flush-incoming-or-outgoing-queues-individually-by-transport-provider"></a>トランスポート プロバイダーによって受信キューまたは送信キューを個別にフラッシュするには
   
-1. 呼び出し[imapisession:: getstatustable](imapisession-getstatustable.md)は状態テーブルにアクセスできます。 
+1. [IMAPISession::GetStatusTable](imapisession-getstatustable.md)を呼び出して、状態テーブルにアクセスします。 
     
-2. 状態テーブルの[IMAPITable:: SetColumns](imapitable-setcolumns.md)メソッドを呼び出して、列が**PR_ENTRYID**と**PR_RESOURCE_TYPE**に設定されるように制限します。
+2. 状態テーブルの [IMAPITable::SetColumns](imapitable-setcolumns.md)メソッドを呼び出して、列セットを列セットの値 **PR_ENTRYIDおよび** PR_RESOURCE_TYPE。
     
-3. **PR_RESOURCE_TYPE**と MAPI_TRANSPORT_PROVIDER を一致させるために、 [spropertyrestriction](spropertyrestriction.md)構造を使用してプロパティ制限を構築します。 
+3. [SPropertyRestriction](spropertyrestriction.md)構造体を使用してプロパティ制限を構築し、プロパティと **PR_RESOURCE_TYPE一致** MAPI_TRANSPORT_PROVIDER。 
     
-4. トランスポートプロバイダーによって提供される行を取得するには、 [hrqueryallrows](hrqueryallrows.md)を呼び出し、 **spropertyrestriction**構造を渡します。 
+4. [HrQueryAllRows](hrqueryallrows.md)を呼び出し **、SPropertyRestriction** 構造体を渡して、トランスポート プロバイダーによって提供される行を取得します。 
     
-5. **hrqueryallrows**から返される各行ごとに、次のようにします。
+5. **HrQueryAllRows** から返される各行について、
     
-    1. **PR_ENTRYID**列を[imapisession:: openentry](imapisession-openentry.md)に渡して、トランスポートプロバイダーの status オブジェクトを開きます。 
+    1. **[PR_ENTRYID]** 列を [IMAPISession::OpenEntry](imapisession-openentry.md)に渡して、トランスポート プロバイダーの状態オブジェクトを開きます。 
         
-    2. トランスポート状態オブジェクトが、 **PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) プロパティに STATUS_FLUSH_QUEUES フラグが設定されていることを確認して、 **flushqueues**メソッドをサポートしていることを確認してください。 
+    2. トランスポート状態オブジェクトが **FlushQueues** メソッドをサポートしている場合は **、PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) プロパティに STATUS_FLUSH_QUEUES フラグが設定STATUS_FLUSH_QUEUES確認します。 
         
-    3. サポートされている場合は、 [imapistatus:: flushqueues](imapistatus-flushqueues.md)を呼び出します。 サポートされていない場合は、MAPI スプーラーの**imapistatus:: flushqueues**メソッドを呼び出して、 _lptargettransport_パラメーターでトランスポートのエントリ識別子を渡します。 MAPI スプーラーの状態オブジェクトにアクセスする手順については、前の手順を参照してください。 送信キューまたは FLUSH_UPLOAD フラグをフラッシュして、受信キューをフラッシュするように FLUSH_DOWNLOAD フラグを設定します。 
+    3. サポートされている場合は [、IMAPIStatus::FlushQueues を呼び出します](imapistatus-flushqueues.md)。 サポートされていない場合は、MAPI スプーラーの **IMAPIStatus::FlushQueues** メソッドを呼び出し  _、lpTargetTransport_ パラメーターでトランスポートのエントリ識別子を渡します。 MAPI スプーラーの状態オブジェクトにアクセスする手順については、前の手順を参照してください。 送信キュー FLUSH_DOWNLOADフラッシュする場合は FLUSH_UPLOADフラグを設定して、受信キューをフラッシュします。 
         
-    4. status オブジェクトと状態テーブルを解放します。また、テーブルに割り当てられている[srowset](srowset.md)構造も解放します。 
+    4. status オブジェクトと状態テーブル、およびテーブルに割り当てられている [SRowSet](srowset.md) 構造を解放します。 
     
-MAPI スプーラーは、ほとんどの LAN トランスポートプロバイダーと同様に FLUSH_NO_UI フラグを受け入れます。 ただし、すべてのトランスポートプロバイダーがこのフラグを使用するわけではありません。特に、モデムを明示的に使用するものやリモートアクセスサービス (RAS) を使用するものもあります。 RAS は、クライアントがユーザーインターフェイスを抑制することを許可するようには設計されていません。 クライアントがユーザーの操作を必要とせずに接続できるように、クライアントを構成することは可能ですが、これは困難で、クライアントのメッセージサービスを熟知している必要があります。
+MAPI スプーラーは、ほとんどの LAN FLUSH_NO_UIと同様に、このフラグを使用します。 ただし、すべてのトランスポート プロバイダーが、特に明示的にモデムとリモート アクセス サービス (RAS) を使用する場合は、このフラグを受け入れるわけではありません。 RAS は、クライアントがユーザー インターフェイスを抑制するように設計されていない。 ユーザーの操作を必要とせずに接続できるようクライアントを構成することは可能ですが、難しく、クライアントのメッセージ サービスに関する深い知識が必要です。
   
 

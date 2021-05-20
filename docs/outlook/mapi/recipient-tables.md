@@ -21,39 +21,39 @@ ms.locfileid: "33437288"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-recipient テーブルには、メッセージのすべての受信者に関する情報が含まれています。 メッセージストアプロバイダーは受信者テーブルを実装し、クライアントアプリケーションはそれらを使用します。 クライアントは、 [IMessage:: get table](imessage-getrecipienttable.md)メソッドを呼び出して、またはメッセージストアプロバイダーが[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドに対してサポートしている場合に、受信者テーブルにアクセスします。 クライアントは、プロパティタグおよび IID_IMAPITable のインターフェイス識別子に対して**PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) を指定することによって、 **openproperty**を使用して受信者テーブルにアクセスします。 受信者テーブルへの変更は、 [IMessage:: modifyrecipients](imessage-modifyrecipients.md)メソッドを呼び出すことで行うことができます。 
+受信者テーブルには、メッセージのすべての受信者に関する情報が含まれる。 メッセージ ストア プロバイダーは受信者テーブルを実装し、クライアント アプリケーションはそれらを使用します。 [クライアントは、IMessage::GetRecipientTable](imessage-getrecipienttable.md)メソッドを呼び出して受信者テーブルにアクセスするか、メッセージ ストア プロバイダーがそれをサポートしている場合は[IMAPIProp::OpenProperty](imapiprop-openproperty.md)メソッドにアクセスします。 クライアントは、プロパティ タグに **PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) を指定し、インターフェイス識別子に IID_IMAPITable を指定して **、OpenProperty** を使用して受信者テーブルにアクセスします。 受信者テーブルに対する変更は [、IMessage::ModifyRecipients](imessage-modifyrecipients.md) メソッドを呼び出すことによって行えます。 
   
-受信者テーブルは、メッセージが送信されたかどうかに応じて異なる列セットを持ちます。 次のプロパティを使用して、受信者テーブルで必要な列セットを作成します。
+受信者テーブルの列セットは、メッセージが送信されたかどうかによって異なります。 次のプロパティは、受信者テーブルで必要な列セットを構成します。
   
-- **PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
+- **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
     
-- **PR_RECIPIENT_TYPE**([PidTagRecipientType](pidtagrecipienttype-canonical-property.md))
+- **PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md))
     
-- **PR_ROWID**([PidTagRowid](pidtagrowid-canonical-property.md))
+- **PR_ROWID** ([PidTagRowid](pidtagrowid-canonical-property.md))
     
 オプションのプロパティは次のとおりです。
   
-- **PR_DISPLAY_TYPE**([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))
+- **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))
     
-- **PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))
+- **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))
     
-- **PR_SPOOLER_STATUS**([PidTagSpoolerStatus](pidtagspoolerstatus-canonical-property.md))
+- **PR_SPOOLER_STATUS** ([PidTagSpoolerStatus](pidtagspoolerstatus-canonical-property.md))
     
-- **PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))
+- **PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))
     
-送信されたメッセージには、必要な列セットにこれらの追加プロパティが含まれている必要があります。
+送信されたメッセージには、次の追加プロパティを必須の列セットに含める必要があります。
   
-- **PR_ADDRTYPE**([PidTagAddressType](pidtagaddresstype-canonical-property.md))
+- **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))
     
-- **PR_RESPONSIBILITY**([PidTagResponsibility](pidtagresponsibility-canonical-property.md))
+- **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md))
     
-プロバイダーの実装によっては、 **PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md)) や[ENTRYID](entryid.md)などの追加の列がテーブルに含まれることがあります。
+プロバイダーの実装によっては、PR_SENDER_NAME **(** [PidTagSenderName](pidtagsendername-canonical-property.md)) や [ENTRYID](entryid.md)などの追加の列が表に含まれます。
   
-プロバイダーの**PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) プロパティで設定されている STORE_SUBMIT_OK ビットによって示されるように、メッセージ転送をサポートするメッセージストアプロバイダーは、特定のセットののサポートを提供する必要があります。受信者テーブルの実装での制限。 **and**、 **OR**、exist、およびプロパティの制限は、受信者テーブルのユーザーが使用できるようにする制限の種類の中にあります。 プロパティ制限で同等および等しくない演算子のみをサポートする必要があります。 これらの制限は、次のプロパティで機能する必要があります。
+プロバイダー **の PR_STORE_SUPPORT_MASK** [(PidTagStoreSupportMask)](pidtagstoresupportmask-canonical-property.md)プロパティで設定されている STORE_SUBMIT_OK ビットによって示されるメッセージ送信をサポートするメッセージ ストア プロバイダーは、受信者テーブルの実装における特定の制限セットをサポートする必要があります。 **AND** **、OR、** およびプロパティの制限は、受信者テーブルのユーザーが使用できる制限の種類の中にあります。 プロパティの制限では、等しい演算子と等しくない演算子のみをサポートする必要があります。 これらの制限は、次のプロパティで動作する必要があります。
   
 - **PR_ADDRTYPE**
     
-- **PR_EMAIL_ADDRESS**([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) 
+- **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) 
     
 - **PR_RECIPIENT_TYPE**
     

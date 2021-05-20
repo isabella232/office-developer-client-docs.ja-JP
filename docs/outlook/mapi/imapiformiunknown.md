@@ -1,5 +1,5 @@
 ---
-title: imapiform IUnknown
+title: IMAPIForm IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,28 +25,28 @@ ms.locfileid: "33436385"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームビューアーがフォームビューのコンテキストとフォームの通知を操作したり、フォームの動詞を実行したり、フォームをシャットダウンしたりできるようにします。
+フォーム ビューアーがフォーム ビューのコンテキストとフォーム通知を操作したり、フォーム動詞を実行したり、フォームをシャットダウンしたりできます。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiform  <br/> |
-|公開者:  <br/> |フォーム オブジェクト  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiform.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |フォーム オブジェクト  <br/> |
 |実装元:  <br/> |フォーム サーバー  <br/> |
-|呼び出し元:  <br/> |フォームビューアー  <br/> |
+|呼び出し元:  <br/> |フォーム ビューアー  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMAPIForm  <br/> |
 |ポインターの種類:  <br/> |LPMAPIFORM  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[setviewcontext](imapiform-setviewcontext.md) <br/> |フォームのビューコンテキストを確立します。  <br/> |
-|[getviewcontext](imapiform-getviewcontext.md) <br/> |フォームの現在のビューコンテキストを返します。  <br/> |
-|[shutdownform](imapiform-shutdownform.md) <br/> |フォームを閉じます。  <br/> |
-|[DoVerb](imapiform-doverb.md) <br/> |フォームが特定の動詞に関連付けられている任意のタスクを実行するよう要求します。  <br/> |
-|[助言](imapiform-advise.md) <br/> |フォームに影響を与えるイベントに関する通知に対してフォームビューアーを登録します。  <br/> |
-|[アドバイズ](imapiform-unadvise.md) <br/> |以前に呼び出し先の**アドバイズ**によって設定されたフォームビューアーでの通知の登録を取り消します。  <br/> |
-|[GetLastError](imapiform-getlasterror.md) <br/> |form オブジェクトの前に発生したエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
+|[SetViewContext](imapiform-setviewcontext.md) <br/> |フォームのビュー コンテキストを確立します。  <br/> |
+|[GetViewContext](imapiform-getviewcontext.md) <br/> |フォームの現在のビュー コンテキストを返します。  <br/> |
+|[ShutdownForm](imapiform-shutdownform.md) <br/> |フォームを閉じます。  <br/> |
+|[DoVerb](imapiform-doverb.md) <br/> |フォームが特定の動詞に関連付けるタスクを実行する要求。  <br/> |
+|[アドバイス](imapiform-advise.md) <br/> |フォームに影響を与えるイベントに関する通知用にフォーム ビューアーを登録します。  <br/> |
+|[Unadvise](imapiform-unadvise.md) <br/> |Advise を呼び出して以前に確立されたフォーム ビューアーを使用して通知の登録を **取り消します**。  <br/> |
+|[GetLastError](imapiform-getlasterror.md) <br/> |フォーム オブジェクトに発生した以前のエラーに関する情報を含む [MAPIERROR](mapierror.md) 構造体を返します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: ExitForEachRecord マクロアクション (Access カスタム web アプリ)
+title: ExitForEachRecord マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438045"
 ---
-# <a name="exitforeachrecord-macro-action-access-custom-web-app"></a>ExitForEachRecord マクロアクション (Access カスタム web アプリ)
+# <a name="exitforeachrecord-macro-action-access-custom-web-app"></a>ExitForEachRecord マクロ アクション (Access カスタム Web アプリ)
 
 Use the **ExitForEachRecord** action to immediately exit a **[ForEachRecord](foreachrecord-data-block-access-custom-web-app.md)** data block. 
   

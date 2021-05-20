@@ -25,7 +25,7 @@ ms.locfileid: "33438184"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ダイアログボックステンプレートエントリ識別子を含む埋め込み table オブジェクトが格納されています。 
+ダイアログ ボックス テンプレートエントリ識別子を含む埋め込みテーブル オブジェクトが含まれる。 
   
 |||
 |:-----|:-----|
@@ -36,21 +36,21 @@ ms.locfileid: "33438184"
    
 ## <a name="remarks"></a>注釈
 
-コンテナー内で作成できるテンプレートオブジェクトの詳細については、このプロパティの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出してください。 結果のオブジェクトは、コンテナー内に作成できるすべてのテンプレートのエントリ識別子を付与する1回限りのテーブルです。 
+コンテナー内に作成できるテンプレート オブジェクトを確認するには、このプロパティの [IMAPIProp::OpenProperty](imapiprop-openproperty.md) メソッドを呼び出します。 結果のオブジェクトは、コンテナー内に作成できるすべてのテンプレートのエントリ識別子を与える 1 回きりテーブルです。 
   
-template オブジェクトを作成するには、1回限りのテーブルから**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) 列の値に対して、container オブジェクトの**createentry**メソッドを呼び出します。
+テンプレート オブジェクトを作成するには、コンテナー オブジェクトの **CreateEntry** メソッド **を PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) 列の値を 1 回のテーブルから呼び出します。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
+> 関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -63,7 +63,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

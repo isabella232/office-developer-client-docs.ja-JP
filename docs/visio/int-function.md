@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251447
 localization_priority: Normal
 ms.assetid: d51120f7-df80-f0bb-8af9-751d3c59f045
-description: 数値を切り捨てて次の整数にします。
+description: 数値を次の整数に切り上します。
 ms.openlocfilehash: 6acc150e5291093bc7436c1d8e915b28e4840ca3
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33436952"
 ---
 # <a name="int-function"></a>INT 関数
 
-数値を切り捨てて次の整数にします。
+数値を次の整数に切り上します。
   
 ## <a name="syntax"></a>構文
 
-INT (* * *number* * *) 
+INT(** *number* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -32,13 +32,13 @@ INT (* * *number* * *)
    
 ## <a name="example-1"></a>例 1
 
-INT (7.2)
+INT(7.2)
   
 7 を返します。
   
 ## <a name="example-2"></a>例 2
 
-INT (-7.2)
+INT(-7.2)
   
 -8 を返します。
   

@@ -35,11 +35,11 @@ HRESULT NotifyProcessShutdown ();
 
 S_OK
   
-> mapi サブシステムは、読み込み済みの mapi プロバイダーに、mapi クライアントが高速シャットダウンを行うことになることを通知しようとしました。
+> MAPI サブシステムは、読み込まれた MAPI プロバイダーに対して、MAPI クライアントが高速シャットダウンを実行する場合に通知を試みた。
     
 ## <a name="remarks"></a>注釈
 
-mapi クライアントの高速シャットダウンからのデータ損失を回避するために、mapi クライアントは、 **IMAPIClientShutdown:: notifyprocessshutdown**および[IMAPIClientShutdown::D ofastshutdown](imapiclientshutdown-dofastshutdown.md)メソッドを呼び出す必要があります。これは、次の mapi サブシステムによって返される S_OK 結果に基づいています。[IMAPIClientShutdown:: queryfastshutdown](imapiclientshutdown-queryfastshutdown.md)メソッド。 詳細については、「[ファストシャットダウンのベストプラクティス](best-practices-for-fast-shutdown.md)」を参照してください。
+MAPI クライアントの高速シャットダウンによるデータ損失を回避するために、MAPI クライアントは **IMAPIClientShutdown::NotifyProcessShutdown** メソッドと IMAPIClientShutdown::D oFastShutdown メソッドを [IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md)メソッドの MAPI サブシステムによって返される S_OK 結果に基づいて呼び出す必要があります。 [](imapiclientshutdown-dofastshutdown.md) 詳細については、「高速シャットダウン [のベスト プラクティス」を参照してください](best-practices-for-fast-shutdown.md)。
   
 ## <a name="see-also"></a>関連項目
 

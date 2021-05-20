@@ -21,36 +21,36 @@ ms.locfileid: "33436812"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-Microsoft Office Outlook がストアの連絡先フォルダーをスキャンする必要があるかどうかを指定します。
+ストアの連絡先Microsoft Office Outlookスキャンするかどうかを指定します。
   
 ## <a name="quick-info"></a>クイック ヒント
 
 |||
 |:-----|:-----|
-|公開:  <br/> |[IMsgStore: imapiprop](imsgstoreimapiprop.md)オブジェクト  <br/> |
-|作成者:  <br/> |ストアプロバイダー  <br/> |
-|アクセス先:  <br/> |Outlook およびその他のクライアント  <br/> |
+|次の場合に公開されます。  <br/> |[IMsgStore : IMAPIProp](imsgstoreimapiprop.md) オブジェクト  <br/> |
+|作成者:  <br/> |ストア プロバイダー  <br/> |
+|アクセス者:  <br/> |Outlookクライアント  <br/> |
 |プロパティの種類:  <br/> |PT_LONG  <br/> |
-|アクセスの種類:  <br/> |ストアプロバイダーに応じて読み取り専用または読み取り/書き込み  <br/> |
+|アクセスの種類:  <br/> |ストア プロバイダーに応じて読み取り専用または読み取り/書き込み  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-ストアの機能を提供するには、ストアプロバイダーが[imapiprop: IUnknown](imapipropiunknown.md)を実装し、 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)呼び出しに渡されるこれらのプロパティに対して有効なプロパティタグを返す必要があります。 これらのプロパティのいずれかのプロパティタグが[imapiprop:: GetProps](imapiprop-getprops.md)に渡されると、ストアプロバイダーは、適切なプロパティ値を返す必要があります。 ストアプロバイダーは、 [hrgetoneprop](hrgetoneprop.md)および[hrgetoneprop](hrsetoneprop.md)を呼び出して、これらのプロパティを取得または設定できます。 
+ストア機能を提供するには、ストア プロバイダーが [IMAPIProp : IUnknown](imapipropiunknown.md) を実装し [、IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) 呼び出しに渡されるこれらのプロパティの有効なプロパティ タグを返す必要があります。 これらのプロパティのプロパティ タグが [IMAPIProp::GetProps](imapiprop-getprops.md)に渡される場合、ストア プロバイダーは正しいプロパティ値も返す必要があります。 ストア プロバイダーは [、HrGetOneProp](hrgetoneprop.md) と [HrSetOneProp](hrsetoneprop.md) を呼び出して、これらのプロパティを取得または設定できます。 
   
-このプロパティの値を取得するには、クライアントはまず[imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)を使用してプロパティタグを取得し、次に[imapiprop:: GetProps](imapiprop-getprops.md)でこのプロパティタグを指定して値を取得する必要があります。 [imapiprop:: getidsfromnames](imapiprop-getidsfromnames.md)を呼び出す場合は、入力パラメーター _lpppropnames_でポイントされている[mapinameid](mapinameid.md)構造に次の値を指定します。
+このプロパティの値を取得するには、まず [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) を使用してプロパティ タグを取得し [、IMAPIProp::GetProps](imapiprop-getprops.md) でこのプロパティ タグを指定して値を取得する必要があります。 [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)を呼び出す場合は、入力パラメーター _lppPropNames_ が指す [MAPINAMEID](mapinameid.md)構造体に次の値を指定します。
   
 |||
 |:-----|:-----|
-|lpguid:  <br/> |PSETID_Common  <br/> |
-|ulkind:  <br/> |MNID_STRING  <br/> |
-|種類が lpwstrname:  <br/> |L "nofolderscan"  <br/> |
+|lpGuid:  <br/> |PSETID_Common  <br/> |
+|ulKind:  <br/> |MNID_STRING  <br/> |
+|Kind.lpwstrName:  <br/> |L"NoFolderScan"  <br/> |
    
-このプロパティは、ストアプロバイダーが、パフォーマンスの低下を回避するためにストア内の連絡先フォルダーをスキャンしないように指定する方法を提供します。 これは、Outlook がスキャンを開始する前に、このプロパティのプレゼンスと値をチェックする差し込み印刷操作で使用されます。
+このプロパティを使用すると、ストア プロバイダーは、パフォーマンスの低下を避けるために、Outlook連絡先フォルダーをスキャンしないように指定できます。 これは、スキャンを開始する前に、Outlookプロパティの存在と値をチェックする差し込み印刷操作で使用されます。
   
-既定では、このプロパティはストアに公開されていないため、Outlook はストアの連絡先フォルダーをスキャンできます。 プロパティが公開されている場合は、次の値を指定できます。
+既定では、このプロパティはストアで公開されません。つまり、Outlook連絡先フォルダーをスキャンできます。 プロパティが公開されている場合は、次の値を使用できます。
   
-- ゼロ (0): Outlook はスキャンを実行できます。
+- ゼロ (0): Outlookを実行できます。
     
-- 0以外の値: Outlook は、ストア上の連絡先フォルダーをスキャンしません。
+- ゼロ以外の値: ストアOutlook連絡先フォルダーをスキャンしない必要があります。
     
 

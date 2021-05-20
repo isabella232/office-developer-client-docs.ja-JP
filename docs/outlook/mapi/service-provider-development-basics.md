@@ -1,5 +1,5 @@
 ---
-title: サービスプロバイダー開発の基本事項
+title: サービス プロバイダー開発の基本
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,13 +15,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33437806"
 ---
-# <a name="service-provider-development-basics"></a>サービスプロバイダー開発の基本事項
+# <a name="service-provider-development-basics"></a>サービス プロバイダー開発の基本
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このセクションには、独自の MAPI サービスプロバイダーを作成する前に確認する必要がある概要情報が記載されています。
+このセクションには、独自の MAPI サービス プロバイダーを作成する前に確認する必要がある概要情報が含まれている。
   
 ## <a name="see-also"></a>関連項目
 
@@ -29,11 +29,11 @@ ms.locfileid: "33437806"
 
 [MAPI アドレス帳プロバイダーの開発](developing-a-mapi-address-book-provider.md)
   
-[MAPI トランスポートプロバイダーの開発](developing-a-mapi-transport-provider.md)
+[MAPI トランスポート プロバイダーの開発](developing-a-mapi-transport-provider.md)
   
 [MAPI ���b�Z�[�W �X�g�A �v���o�C�_�[�̊J��](developing-a-mapi-message-store-provider.md)
   
-[MAPI サービスプロバイダー](mapi-service-providers.md)
+[MAPI サービス プロバイダー](mapi-service-providers.md)
   
-[MAPI サービスプロバイダーの概要](mapi-service-provider-overview.md)
+[MAPI サービス プロバイダーの概要](mapi-service-provider-overview.md)
 

@@ -25,30 +25,30 @@ ms.locfileid: "33437533"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージサービスのサービスプロバイダーと連携します。 
+メッセージ サービスのサービス プロバイダーと動作します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
-|公開者:  <br/> |プロバイダー管理オブジェクト  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
+|次のユーザーによって公開されます。  <br/> |プロバイダー管理オブジェクト  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
 |インターフェイス識別子:  <br/> |IID_IProviderAdmin  <br/> |
-|ポインターの種類:  <br/> |lpprovideradmin  <br/> |
+|ポインターの種類:  <br/> |LPPROVIDERADMIN  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[GetLastError](iprovideradmin-getlasterror.md) <br/> |プロバイダー管理オブジェクトに発生した前のエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。  <br/> |
-|[getprovidertable](iprovideradmin-getprovidertable.md) <br/> |メッセージサービスのプロバイダーテーブルへのアクセスを提供します。これには、メッセージサービスのサービスプロバイダーの一覧が含まれます。  <br/> |
-|[createprovider](iprovideradmin-createprovider.md) <br/> |メッセージサービスにサービスプロバイダーを追加します。  <br/> |
-|[deleteprovider](iprovideradmin-deleteprovider.md) <br/> |メッセージサービスからサービスプロバイダーを削除します。  <br/> |
-|[openプロファイル '](iprovideradmin-openprofilesection.md) <br/> |現在のプロファイルからプロファイルセクションを開き、さらにアクセスできるように[IProfSect](iprofsectimapiprop.md)ポインターを返します。  <br/> |
+|[GetLastError](iprovideradmin-getlasterror.md) <br/> |プロバイダー管理オブジェクト [に発生](mapierror.md) した以前のエラーに関する情報を含む MAPIERROR 構造体を返します。  <br/> |
+|[GetProviderTable](iprovideradmin-getprovidertable.md) <br/> |メッセージ サービスのプロバイダー テーブル 、メッセージ サービス内のサービス プロバイダーの一覧へのアクセスを提供します。  <br/> |
+|[CreateProvider](iprovideradmin-createprovider.md) <br/> |サービス プロバイダーをメッセージ サービスに追加します。  <br/> |
+|[DeleteProvider](iprovideradmin-deleteprovider.md) <br/> |メッセージ サービスからサービス プロバイダーを削除します。  <br/> |
+|[OpenProfileSection](iprovideradmin-openprofilesection.md) <br/> |現在のプロファイルからプロファイル セクションを開き、さらにアクセスする [IProfSect](iprofsectimapiprop.md) ポインターを返します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-クライアントは、 [IMsgServiceAdmin:: adminproviders](imsgserviceadmin-adminproviders.md)メソッドを呼び出して、 **IProviderAdmin**インターフェイスへのポインターを取得できます。サービスプロバイダーのメッセージサービスのエントリポイント関数が呼び出されると、 **IProviderAdmin**ポインターが渡されます。 
+クライアントは [、IMsgServiceAdmin::AdminProviders](imsgserviceadmin-adminproviders.md)メソッドを呼び出すことによって **、IProviderAdmin** インターフェイスへのポインターを取得できます。メッセージ サービスのエントリ ポイント関数が呼び出された場合、サービス プロバイダーは **IProviderAdmin** ポインターを渡されます。 
   
 ## <a name="see-also"></a>関連項目
 

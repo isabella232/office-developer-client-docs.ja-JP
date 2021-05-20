@@ -25,11 +25,11 @@ ms.locfileid: "33436833"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-表示テーブルから構築されたダイアログボックスで使用されるチェックボックスに関する情報を格納します。 
+表示テーブルから作成されたダイアログ ボックスで使用されるチェック ボックスに関する情報が含まれる。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連するマクロ:  <br/> |[SizedDtblCheckBox](sizeddtblcheckbox.md) <br/> |
    
 ```cpp
@@ -42,35 +42,35 @@ typedef struct _DTBLCHECKBOX
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **ulblpszlabel**
+ **ulbLpszLabel**
   
-> チェックボックスと共に表示される文字列のメモリ内での位置を指定します。 
+> チェック ボックスと一緒に表示される文字列のメモリ内の位置。 
     
  **ulFlags**
   
-> チェックボックスラベルの書式を指定するために使用されるフラグのビットマスク。 次のフラグを設定できます。
+> チェック ボックス ラベルの形式を指定するために使用されるフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> ラベルは Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、ラベルは ANSI 形式になります。
+> ラベルは Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、ラベルは ANSI 形式になります。
     
- **ulprpropertyname**
+ **ulPRPropertyName**
   
-> PT_BOOLEAN 型のプロパティのプロパティタグ。 このプロパティの値は、チェックボックスの状態によって影響を受けます。
+> 型のプロパティのプロパティ タグPT_BOOLEAN。 このプロパティの値は、チェック ボックスの状態の影響を受けます。
     
 ## <a name="remarks"></a>注釈
 
-**dtblcheckbox**構造体は、2つの状態 (オンボックス) または無効 (空のボックス) のいずれかを反映するコントロールのチェックボックスを記述します。 
+**DTBLCHECKBOX** 構造体は、有効 (チェック ボックス) または無効 (空のボックス) の 2 つの状態のいずれかを反映するコントロールのチェック ボックスを表します。 
   
-**ulprpropertyname**メンバーは、チェックボックスの状態を変更することによって値を操作する Boolean プロパティを記述します。 チェックボックスが最初に表示されると、MAPI は、表示テーブルに関連付けられている**imapiprop**実装の**GetProps**メソッドを呼び出して、一連の既定のプロパティを取得します。 プロパティのいずれかが**dtblcheckbox**構造体の property タグにマップされている場合、そのプロパティの値はチェックボックスの初期値として表示されます。 
+**ulPRPropertyName** メンバーは、チェック ボックスの状態を変更することによって値が操作されるブール型 (Boolean) のプロパティを表します。 チェック ボックスが最初に表示される場合、MAPI は、表示テーブルに関連付けられている **IMAPIProp** 実装の **GetProps** メソッドを呼び出して、一連の既定のプロパティを取得します。 プロパティの 1 つが **DTBLCHECKBOX** 構造体のプロパティ タグにマップされている場合、そのプロパティの値がチェック ボックスの初期値として表示されます。 
   
-チェックボックスコントロールを変更できます。 これにより、ユーザーは自分の状態を変更できます。 変更可能なチェックボックスでは、 [DTCTL](dtctl.md)構造の**ulCtlFlags**メンバーおよび**PR_CONTROL_FLAGS** ([PidTagControlFlags](pidtagcontrolflags-canonical-property.md)) プロパティに DT_EDITABLE フラグを設定します。 チェックボックスの状態が変化すると、MAPI は[imapiprop:: setprops](imapiprop-setprops.md)を呼び出して、 **dtblcheckbox**構造のプロパティタグメンバーで識別されたプロパティを新しい状態に設定します。 
+チェック ボックス コントロールは変更可能です。 これにより、ユーザーは状態を変更できます。 変更可能なチェック ボックスは [、DTCTL](dtctl.md)構造の **ulCtlFlags** メンバーおよび PR_CONTROL_FLAGS ([PidTagControlFlags](pidtagcontrolflags-canonical-property.md)) プロパティに **DT_EDITABLE** フラグを設定します。 チェック ボックスの状態が変更されると、MAPI は [IMAPIProp::SetProps](imapiprop-setprops.md) を呼び出して **、DTBLCHECKBOX** 構造体のプロパティ タグ メンバーで識別されるプロパティを新しい状態に設定します。 
   
-たとえば、アドレス帳プロバイダーでは、受信者の**PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)) プロパティの設定を調整するために、変更可能なチェックボックスコントロールを構成ダイアログボックスに含めることができます。 ユーザーがチェックボックスをオンにすると、MAPI はこのプロパティを TRUE に設定します。 チェックボックスが選択されていない場合、このプロパティは FALSE に設定されます。
+**たとえば、アドレス** 帳プロバイダーの構成ダイアログ ボックスに変更可能なチェック ボックス コントロールを含め、受信者の PR_SEND_RICH_INFO ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)) プロパティの設定を調整できます。 ユーザーがチェック ボックスをオンにすると、MAPI は、このプロパティを TRUE に設定します。 チェック ボックスがオフの場合、プロパティは FALSE に設定されます。
   
-表示テーブルの概要については、「[テーブルの表示](display-tables.md)」を参照してください。 表示テーブルを実装する方法については、「[表示テーブルを実装](display-table-implementation.md)する」を参照してください。 プロパティの種類の詳細については、「 [MAPI プロパティの種類の概要](mapi-property-type-overview.md)」を参照してください。
+表示テーブルの概要については、「表示テーブル」 [を参照してください](display-tables.md)。 表示テーブルを実装する方法の詳細については、「表示テーブルの [実装」を参照してください](display-table-implementation.md)。 プロパティの種類の詳細については [、「MAPI プロパティの種類の概要」を参照してください](mapi-property-type-overview.md)。
   
 ## <a name="see-also"></a>関連項目
 

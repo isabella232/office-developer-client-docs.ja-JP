@@ -1,5 +1,5 @@
 ---
-title: フォームインターフェイスの宣言
+title: フォーム インターフェイスの宣言
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,13 +15,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33437512"
 ---
-# <a name="declaring-form-interfaces"></a>フォームインターフェイスの宣言
+# <a name="declaring-form-interfaces"></a>フォーム インターフェイスの宣言
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-MAPI_ _ interface__ メソッドマクロを使用することにより、MAPI フォームインターフェイスの実装の宣言を簡略化できます。この_インターフェイス_は、Mapiform ヘッダーファイルで定義されているフォームインターフェイスです。 これらのマクロを使用する必要はありませんが、指定しない場合は、宣言が Mapiform ヘッダーファイルの宣言に準拠していることに特に注意する必要があります。 たとえば、フォームサーバーの form オブジェクトクラスを次のように宣言できます。 
+mapiform.h ヘッダー ファイルで定義されているフォーム インターフェイスである MAPI_ _interface__METHOD マクロを使用すると、MAPIフォーム インターフェイスの実装の宣言を簡略化できます。 これらのマクロを使用する必要はありません。ただし、使用しない場合は、宣言が Mapiform.h ヘッダー ファイルの宣言に準拠している場合は特に注意する必要があります。 たとえば、フォーム サーバーのフォーム オブジェクト クラスを次のように宣言できます。 
   
 ```cpp
 class CMyForm : public IPersistMessage, public IMAPIForm,
@@ -45,5 +45,5 @@ public:
 
 
 
-[フォームサーバーコードの記述](writing-form-server-code.md)
+[フォーム サーバー コードの作成](writing-form-server-code.md)
 

@@ -25,7 +25,7 @@ ms.locfileid: "33436651"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-サポートオブジェクトに関連付けられている現在の MAPI セッションへのアクセスを提供します。 mapi プロバイダーは、このインターフェイスの mapi サポートオブジェクトを照会できます。 サポートオブジェクトの詳細については、「[サポートオブジェクトの概要](support-object-overview.md)」を参照してください。
+サポート オブジェクトに関連付けられている現在の MAPI セッションへのアクセスを提供します。 MAPI プロバイダーは、このインターフェイスの MAPI サポート オブジェクトを照会できます。 サポート オブジェクトの詳細については、「サポート オブジェクトの [概要」を参照してください](support-object-overview.md)。
   
 |||
 |:-----|:-----|
@@ -33,7 +33,7 @@ ms.locfileid: "33436651"
 |呼び出し元:  <br/> |MAPI プロバイダー  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMAPIGetSession  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
@@ -50,5 +50,5 @@ ms.locfileid: "33436651"
 
 [MAPI のインターフェイス](mapi-interfaces.md)
   
-[サポートオブジェクトの概要](support-object-overview.md)
+[サポート オブジェクトの概要](support-object-overview.md)
 

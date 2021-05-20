@@ -28,7 +28,7 @@ ms.locfileid: "33438142"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [shdwoffsety]  <br/> |
+| セル名 :  <br/> | ShdwOffsetY  <br/> |
    
 プログラムから、インデックスによって [ShdwOffsetY] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

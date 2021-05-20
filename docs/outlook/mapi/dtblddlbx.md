@@ -25,11 +25,11 @@ ms.locfileid: "33438849"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-表示テーブルから構築されたダイアログボックスで使用されるドロップダウンリストコントロールについて説明します。
+表示テーブルから作成されたダイアログ ボックスで使用されるドロップダウン リスト コントロールについて説明します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _DTBLDDLBX
@@ -46,31 +46,31 @@ typedef struct _DTBLDDLBX
 
  **ulFlags**
   
-> 予約済み。0である必要があります。 
+> 予約済みで、ゼロである必要があります。 
     
- **ulprdisplayproperty**
+ **ulPRDisplayProperty**
   
-> PT_TSTRING 型のプロパティのプロパティタグ。 このプロパティは、 **ulprtablename**メンバーによって識別されるテーブルの列の1つです。 このプロパティの値は、一覧に表示されます。 
+> 型のプロパティのプロパティ タグPT_TSTRING。 このプロパティは、ulPRTableName メンバーによって識別されるテーブル **内の列の 1** つです。 このプロパティの値が一覧に表示されます。 
     
- **ulprsetproperty**
+ **ulPRSetProperty**
   
-> 任意の型のプロパティのプロパティタグ。 このプロパティは、 **ulprtablename**メンバーによって識別されるテーブルの列の1つです。 リストのユーザーが ulprtablename メンバーによって識別されるテーブルの行から**ulprdisplayproperty**メンバーのプロパティ値**** を選択すると、対応する**ulprsetproperty**メンバーが設定されます。 
+> 任意の種類のプロパティのプロパティ タグ。 このプロパティは、ulPRTableName メンバーによって識別されるテーブル **内の列の 1** つです。 リストのユーザーが **ulPRTableName** メンバーによって識別される表の行から **ulPRDisplayProperty** メンバーのプロパティ値を選択すると、対応する **ulPRSetProperty** メンバーが設定されます。 
     
- **ulprtablename**
+ **ulPRTableName**
   
-> **openproperty**呼び出しを使用して開くことができる PT_OBJECT 型のテーブルプロパティのプロパティタグ。 このテーブルには2つの列を指定する必要があります。 **ulprdisplayproperty**および**ulprsetproperty**。 表の行は、リスト内の項目に対応している必要があります。
+> **OpenProperty** 呼び出しを使用して開くことができるPT_OBJECTのテーブル プロパティのプロパティ タグ。 表には **、ulPRDisplayProperty** と **ulPRSetProperty の 2 つの列が必要です**。 テーブルの行は、リスト内のアイテムに対応する必要があります。
     
 ## <a name="remarks"></a>注釈
 
-**dtblddlbx**構造体は、ユーザーがそれを展開することになるまで、1つのアイテムとして表示されるドロップダウンリストコントロールについて説明します。 
+**DTBLDDLBX** 構造体は、ユーザーが展開を選択するまで、1 つのアイテムとして表示されるドロップダウン リスト コントロールを表します。 
   
-プロパティタグによって識別される3つのプロパティが連携して、リスト内の情報を表示し、関連するプロパティを設定します。 **ulprtablename**メンバーは、 [imapiprop:: openproperty](imapiprop-openproperty.md)への呼び出しによってアクセスされる table オブジェクトです。 このテーブルには2つの列があります。 **ulprdisplayproperty**メンバーによって識別されるプロパティの1つの列と、 **ulprsetproperty**メンバーによって識別されるプロパティの列は1つです。 
+プロパティ タグで識別される 3 つのプロパティは、一覧に情報を表示し、関連するプロパティを設定するために連携します。 **ulPRTableName** メンバーは [、IMAPIProp::OpenProperty](imapiprop-openproperty.md)の呼び出しを介してアクセスされるテーブル オブジェクトです。 表には **、ulPRDisplayProperty** メンバーによって識別されるプロパティの列と **、ulPRSetProperty** メンバーによって識別されるプロパティの列の 2 つの列があります。 
   
-**ulprdisplayproperty**プロパティは、リスト表示を駆動します。 ユーザーが表示から値の1つを選択すると、MAPI は[imapiprop:: setprops](imapiprop-setprops.md)を呼び出して、 **ulprsetproperty**メンバーによって識別される対応するプロパティを設定します。 これは、プロパティが選択した表示プロパティと同じ行にあることを意味します。 **ulprsetproperty**メンバーを**PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) に設定することはできません。
+**ulPRDisplayProperty プロパティは**、リスト表示を駆動します。 ユーザーが表示から値の 1 つを選択すると、MAPI は [IMAPIProp::SetProps](imapiprop-setprops.md) を呼び出して、対応するプロパティを **ulPRSetProperty** メンバーによって識別される値として設定します。 これは、選択した表示プロパティと同じ行のプロパティを意味します。 **ulPRSetProperty メンバー** は、PR_NULL **(** [PidTagNull ) に設定できません](pidtagnull-canonical-property.md)。
   
-MAPI が、 [imapiprop:: GetProps](imapiprop-getprops.md)を呼び出して**ulprsetproperty**メンバーによって表されるプロパティを取得し、テーブルの行に**ulprsetproperty**メンバーの値を格納している場合は、リストに初期値が表示されます。 最初に表示される値は、構造体の**ulprdisplayproperty**メンバーのプロパティに一致する行からの**ulprdisplayproperty**列の内容です。 **ulprdisplayproperty**メンバーによって識別されるプロパティの**GetProps**によって返される値は、リストが最初に表示されたときに表示される初期値になります。 
+MAPI が [IMAPIProp::GetProps](imapiprop-getprops.md)の呼び出しを通じて **ulPRSetProperty** メンバーによって表されるプロパティを取得し **、ulPRSetProperty** メンバーの値を持つテーブル内の行を見つけた場合、初期値がリストに表示されます。 最初に表示される値は、構造の **ulPRDisplayProperty** メンバーのプロパティに一致する、その行の **ulPRDisplayProperty** 列の内容です。 **ulPRDisplayProperty** メンバーによって識別されるプロパティの **GetProps** によって返される値は、リストが最初に表示されると表示される初期値になります。 
   
-表示テーブルの概要については、「[テーブルの表示](display-tables.md)」を参照してください。 表示テーブルを実装する方法については、「[表示テーブルを実装](display-table-implementation.md)する」を参照してください。 プロパティの種類の詳細については、「 [MAPI プロパティの種類の概要](mapi-property-type-overview.md)」を参照してください。
+表示テーブルの概要については、「表示テーブル」 [を参照してください](display-tables.md)。 表示テーブルを実装する方法の詳細については、「表示テーブルの [実装」を参照してください](display-table-implementation.md)。 プロパティの種類の詳細については [、「MAPI プロパティの種類の概要」を参照してください](mapi-property-type-overview.md)。
   
 ## <a name="see-also"></a>関連項目
 
@@ -89,7 +89,7 @@ MAPI が、 [imapiprop:: GetProps](imapiprop-getprops.md)を呼び出して**ulp
   
 [表示テーブルの実装](display-table-implementation.md)
   
-[表の表示](display-tables.md)
+[テーブルの表示](display-tables.md)
   
 [MAPI プロパティの種類の概要](mapi-property-type-overview.md)
 

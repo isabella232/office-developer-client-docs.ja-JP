@@ -1,5 +1,5 @@
 ---
-title: RunMacro マクロアクション (Access カスタム web アプリ)
+title: RunMacro マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438443"
 ---
-# <a name="runmacro-macro-action-access-custom-web-app"></a>RunMacro マクロアクション (Access カスタム web アプリ)
+# <a name="runmacro-macro-action-access-custom-web-app"></a>RunMacro マクロ アクション (Access カスタム Web アプリ)
 
 " **RunMacro** /マクロの実行" アクションを使用すると、ユーザー インターフェイス (UI) マクロを実行できます。 
   

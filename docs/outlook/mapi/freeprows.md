@@ -25,13 +25,13 @@ ms.locfileid: "33438821"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[srowset](srowset.md)構造を破棄し、すべてのメンバー配列および構造体に割り当てられたメモリを含む、関連するメモリを解放します。 
+[SRowSet 構造体を破棄し](srowset.md)、すべてのメンバー配列と構造体に割り当てられたメモリを含む、関連付けられたメモリを解放します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 void FreeProws(
@@ -43,7 +43,7 @@ void FreeProws(
 
  _prows_
   
-> 順番破棄する**srowset**構造体へのポインター。 
+> [in]破棄する **SRowSet** 構造体へのポインター。 
     
 ## <a name="return-value"></a>Return value
 
@@ -51,9 +51,9 @@ void FreeProws(
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-MAPI の実装の一部と**** して、MAPI は[MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して、完全な構造を解放する前に、 **srowset**構造のすべてのエントリを解放します。 そのため、このようなすべてのエントリは、各メンバーの配列および構造に対して個別の[MAPIAllocateBuffer](mapiallocatebuffer.md)呼び出しを使用して、 [srowset](srowset.md)構造の割り当てルールに従っている必要があります。 
+**FreeProws** の実装の一環として、MAPI は [MAPIFreeBuffer](mapifreebuffer.md)関数を呼び出して、完全な構造を解放する前に **SRowSet** 構造体内のすべてのエントリを解放します。 したがって、このようなエントリはすべて、メンバー配列と構造体ごとに個別の[MAPIAllocateBuffer](mapiallocatebuffer.md)呼び出しを使用して[、SRowSet](srowset.md)構造体の割り当てルールに従っている必要があります。 
   
-**adrlist**および**srowset**構造体のメモリ割り当ての詳細については、「 [adrlist および srowset 構造体のメモリの管理](managing-memory-for-adrlist-and-srowset-structures.md)」を参照してください。 
+ADRLIST 構造体および **SRowSet** 構造体のメモリ割り当ての詳細については **、「ADRLIST** および SRowSet 構造体のメモリの管理」[を参照してください](managing-memory-for-adrlist-and-srowset-structures.md)。 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -61,7 +61,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl  <br/> |dwthreadの loadtable  <br/> |mfcmapi は、 **freeprows**メソッドを使用して、処理されているテーブルの行を含む srowset 構造を解放します。  <br/> |
+|ContentsTableListCtrl.cpp  <br/> |DwThreadFuncLoadTable  <br/> |MFCMAPI は **FreeProws** メソッドを使用して、処理するテーブルの行を含む SRowSet 構造体を解放します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

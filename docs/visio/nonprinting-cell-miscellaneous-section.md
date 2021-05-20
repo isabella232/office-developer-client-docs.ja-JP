@@ -33,7 +33,7 @@ ms.locfileid: "33437260"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | 印字  <br/> |
+| セル名:  <br/> | NonPrinting  <br/> |
    
 プログラムから、インデックスによって [NonPrinting] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   
@@ -41,6 +41,6 @@ ms.locfileid: "33437260"
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionObject** <br/> |
 | 行インデックス:  <br/> |**visRowMisc** <br/> |
-| セル インデックス:  <br/> |**visnonprinting** <br/> |
+| セル インデックス:  <br/> |**visNonPrinting** <br/> |
    
 

@@ -19,54 +19,54 @@ ms.locfileid: "33438737"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-アドレス帳プロバイダーは、 [IABProvider: IUnknown](iabprovideriunknown.md)インターフェイスのメソッドを実装することによって、セッションのログオンとログオフをサポートします。 * * IABProvider * * インターフェイスは**IUnknown**から直接継承し、次の2つのメソッドを追加します。**ログオン**と**シャットダウン**。 
+アドレス帳プロバイダーは [、IABProvider : IUnknown](iabprovideriunknown.md) インターフェイスのメソッドを実装することで、セッション のログオンとログオフをサポートします。 ** IABProvider ** インターフェイスは **IUnknown** から直接継承し、ログオンとシャットダウンの 2 つのメソッド **のみを** 追加 **します**。 
   
 ## <a name="logoff"></a>Logoff
 
-MAPI は、プロバイダーの[IABProvider:: Logon](iabprovider-logon.md)メソッドをすべてのセッションの開始時に呼び出し、プロバイダーが現在のプロファイルに追加され、クライアントが動的再構成をサポートするようになります。 MAPI が**IABProvider:: logon**メソッドを呼び出すと、アドレス帳プロバイダーのログオンプロセスが開始されます。 
+MAPI は、すべてのセッションの開始時に、プロバイダーが現在のプロファイルに追加され、クライアントが動的再構成をサポートするたびに、プロバイダーの [IABProvider::Logon](iabprovider-logon.md) メソッドを呼び出します。 MAPI が **IABProvider::Logon** メソッドを呼び出す場合、アドレス帳プロバイダーはログオン プロセスを開始します。 
   
-**IABProvider:: Log を実装するには**
+**IABProvider を実装するには::Log**
   
-1. MAPI によって渡されたすべての出力パラメータポインターを初期化します。 
+1. MAPI で渡された出力パラメーター ポインターのすべてを初期化します。 
     
-2. サポートオブジェクトの**IUnknown:: AddRef**メソッドを呼び出して、参照カウントをインクリメントします。 
+2. サポート オブジェクトの **IUnknown::AddRef** メソッドを呼び出して、参照カウントを増やします。 
     
-3. サポートオブジェクトの[imapisupport:: openprofilesection](imapisupport-openprofilesection.md)メソッドを呼び出して、プロバイダーに関する構成情報を含むプロファイルのセクションを開きます。 変更を行う予定がある場合は、 _lpuid_パラメーターと MAPI_MODIFY フラグに NULL を渡します。 
+3. サポート オブジェクトの [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md) メソッドを呼び出して、プロバイダーに関する構成情報を含むプロファイルのセクションを開きます。 変更を行う  _場合は、lpUID_ パラメーター MAPI_MODIFYフラグに NULL を渡します。 
     
-4. プロファイルセクションの[imapiprop:: GetProps](imapiprop-getprops.md)メソッドを呼び出して、プロバイダーがログオンに必要とするプロパティ (データファイルやデータベーステーブルの名前など) を取得します。 
+4. プロファイル セクションの [IMAPIProp::GetProps](imapiprop-getprops.md) メソッドを呼び出して、データ ファイルやデータベース テーブルの名前など、プロバイダーがログオンに必要なプロパティを取得します。 
     
-5. プロパティがすべて使用可能で有効であることを確認してください。 必要であり、許可されている場合は、ユーザーに無効な情報や不足している情報を修正または追加するように求めるダイアログボックスを表示し、プロファイルセクションの[imapiprop:: setprops](imapiprop-setprops.md)メソッドを呼び出して変更を保存します。 利用できるようにする必要がある一般的なプロパティのいくつかを次に示します。 
+5. すべてのプロパティが使用可能で有効なプロパティを確認します。 必要に応じて許可されている場合は、ダイアログ ボックスを表示して、無効または不足している情報に修正または追加を行い、プロファイル セクションの [IMAPIProp::SetProps](imapiprop-setprops.md) メソッドを呼び出して、変更を保存するようにユーザーに求めるメッセージを表示します。 使用できる一般的なプロパティには、次のようなものがあります。 
     
-   **PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
+   **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
     
-   **PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))
+   **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))
     
-   **PR_PROVIDER_DISPLAY**([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md))
+   **PR_PROVIDER_DISPLAY** ([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md))
     
-   **PR_RECORD_KEY**([PidTagRecordKey](pidtagrecordkey-canonical-property.md))
+   **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))
     
    > [!NOTE]
-   > **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) または**PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md)) を設定しないでください。 ログオン時に、これらのプロパティは読み取り専用になります。 
+   > [PidTagResourceFlags](pidtagresourceflags-canonical-property.md) **)** または PR_RESOURCE_FLAGS ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md))**をPR_PROVIDER_DLL_NAME** 設定しない。 ログオン時に、これらのプロパティは読み取り専用です。 
   
-6. 1つ以上の構成プロパティが使用できない場合は、エラーが発生し、MAPI_E_UNCONFIGURED 値が返されます。
+6. 1 つ以上の構成プロパティが使用できない場合は、エラーが発生し、その値をMAPI_E_UNCONFIGURED。
     
-7. [MAPIUID](mapiuid.md)を登録するには、呼び出し[imapisupport:: setprovideruid](imapisupport-setprovideruid.md)を呼び出します。 プロバイダーは、次の方法で**MAPIUID**を作成できます。 
+7. [IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md)を呼び出して[MAPIUID を登録します](mapiuid.md)。 プロバイダーは、次の **方法で MAPIUID を作成** できます。 
     
-   - [imapisupport:: newuid](imapisupport-newuid.md)メソッドを呼び出しています。 
+   - [IMAPISupport::NewUID メソッドを呼び出](imapisupport-newuid.md)します。 
     
-   - UUIDGEN を呼び出しています。EXE ツールを使用して、プロバイダーがヘッダーファイルの1つに含める GUID を定義します。
+   - プロバイダーがUUIDGEN.EXEファイルに含める GUID を定義するために、このツールを呼び出します。
     
-8. 必要に応じて、プロファイルセクションの * * imapiprop:: setprops * * メソッドを呼び出して、新しく作成した**MAPIUID**を現在のプロファイルに保存します。 
+8. 必要に応じて、プロファイル セクションの ** IMAPIProp::SetProps ** メソッドを呼び出して、新しく作成した **MAPIUID** を現在のプロファイルに保存します。 
     
-9. **IUnknown:: release**メソッドを呼び出して、プロファイルセクションを解放します。 
+9. プロファイル セクションを解放するには **、IUnknown::Release メソッドを呼び出** します。 
     
-10. 新しいログオンオブジェクトをインスタンス化し、 _lppablogon_パラメーターの内容をこの新しいオブジェクトのアドレスに設定します。 
+10. 新しいログオン オブジェクトをインスタンス化し  _、lppABLogon_ パラメーターの内容をこの新しいオブジェクトのアドレスに設定します。 
     
-セッション中に MAPI が * * Logon * * メソッドを何度も呼び出すことができるため、複数のログオンオブジェクトを作成し、作成された各オブジェクトを追跡できるように、実装でこの可能性をサポートすることをお勧めします。 複数の**ログオン**呼び出しをサポートすることにより、クライアントアプリケーションのユーザーは、異なる id を使用してセッションにログオンしたり、別の配信先を使用したりすることができます。 
+MAPI はセッション中に ** Logon ** メソッドを複数回呼び出す可能性があるから、複数のログオン オブジェクトを作成し、作成された各オブジェクトを追跡することで、実装でこの可能性をサポートする方が賢明です。 複数の **ログオン呼び** 出しをサポートすると、クライアント アプリケーションのユーザーは、たとえば、異なる ID を持つセッションにログオンしたり、異なる配信先を使用したりできます。 
   
-**Shutdown**は、セッションが終了するときに呼び出されます。 MAPI は、セッションのシャットダウンに関連する最後のタスクの1つとして[IABProvider:: Shutdown](iabprovider-shutdown.md)メソッドを呼び出します。 MAPI では、プロバイダーのすべてのログオンオブジェクトが解放され、プロバイダーがこの呼び出しを受信するときに、これが最後に受信する呼び出しであると想定できます。 **IABProvider:: Shutdown**の実装で、必要と思われる最終的なクリーンアップを実行します。 たとえば、プロバイダーが**MAPIInitIdle**を呼び出し、セッション中にアイドル状態のエンジンを使用する場合、またはまだ解放されていないオブジェクトの**IUnknown:: Release**メソッドを呼び出した場合、 **MAPIDeinitIdle**を呼び出すことができます。 
+**セッション** の終了時にシャットダウンが呼び出されます。 MAPI は、セッションのシャットダウンに関連する最後のタスクの 1 つとして [、IABProvider::Shutdown](iabprovider-shutdown.md) メソッドを呼び出します。 MAPI は、プロバイダーのすべてのログオン オブジェクトを解放し、プロバイダーがこの呼び出しを受信すると、これが最後に受信する呼び出しと見なす可能性があります。 **IABProvider::Shutdown** の実装では、必要と思う最終クリーンアップを実行します。 たとえば、セッション中にアイドル エンジンを使用するために **MAPIInitIdle** を呼び出した場合、プロバイダーは **MAPIDeinitIdle** を呼び出したり、まだリリースされていないオブジェクトの **IUnknown::Release** メソッドを呼び出したりします。 
   
-プロバイダーが最終的なクリーンアップを行わない場合は、次の1行のコードでその実装を構成できます。 
+プロバイダーに最終的なクリーンアップがない場合、その実装は 1 行のコードで構成できます。 
   
 ```cpp
 return S_OK;

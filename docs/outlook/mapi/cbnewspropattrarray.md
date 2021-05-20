@@ -25,11 +25,11 @@ ms.locfileid: "33439122"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定した数のプロパティ属性を含む新しい[sproの trarray](spropattrarray.md)構造体に割り当てる必要があるバイト数を計算します。 
+指定した数のプロパティ属性を含む新しい [SPropAttrArray](spropattrarray.md) 構造体に割り当てるバイト数を計算します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Imessage  <br/> |
+|ヘッダー ファイル:  <br/> |Imessage.h  <br/> |
 |関連する構造:  <br/> |**SPropAttrArray** <br/> |
    
 ```cpp
@@ -38,9 +38,9 @@ CbNewSPropAttrArray (_cattr)
 
 ## <a name="parameters"></a>パラメーター
 
- __cattr_
+ _ _cattr_
   
-> 新しい**sproの trarray**構造に含まれるプロパティ属性の数。 
+> 新しい **SPropAttrArray** 構造体に含めるプロパティ属性の数。 
     
 ## <a name="see-also"></a>関連項目
 

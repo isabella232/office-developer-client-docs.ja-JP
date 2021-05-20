@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1a8c29d9-31d9-dd77-09c5-6e9eaf870552
-description: ウィンドウに改ページを表示するかどうかを指定します。
+description: ページ区切り線がウィンドウに表示されるかどうかを指定します。
 ms.openlocfilehash: 85450dedcfdf07929aafb92e59c29e474a5fb626
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,18 +14,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34541443"
 ---
-# <a name="showpagebreaks-element-windowtype-complextype-visio-xml"></a>ShowPageBreaks 要素 (Window_Type complexType) (Visio XML)
+# <a name="showpagebreaks-element-window_type-complextype-visio-xml"></a>ShowPageBreaks 要素 (Window_Type complexType) (Visio XML)
 
-ウィンドウに改ページを表示するかどうかを指定します。
+ページ区切り線がウィンドウに表示されるかどうかを指定します。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[ShowPageBreaks_Type](showpagebreaks_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
-|**文書パーツ** <br/> |windows .xml  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
+|**ドキュメント パーツ** <br/> |windows.xml  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -36,7 +36,7 @@ ms.locfileid: "34541443"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
+スキーマで **sequence**、**minOccurs**、**maxOccurs**、**choice** などの具体的な要件が定義されている場合は、定義のセクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 

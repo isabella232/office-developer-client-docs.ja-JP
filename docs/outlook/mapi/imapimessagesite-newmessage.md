@@ -40,29 +40,29 @@ HRESULT NewMessage(
 
 ## <a name="parameters"></a>パラメーター
 
- _fて seinfolder_
+ _fComposeInFolder_
   
-> 順番メッセージを構成するフォルダーを示します。 変数が FALSE の場合、 _pfolderfocus_パラメーターは無視され、フォームビューアーは任意のフォルダーでメッセージを作成できます。 変数が TRUE で、 _pfolderfocus_パラメーターで NULL が渡された場合、メッセージは現在のフォルダーで構成されます。 変数が TRUE で、 _pfolderfocus_で NULL 以外の値が渡された場合、メッセージは_pfolderfocus_が指すフォルダーに格納されます。
+> [in]メッセージを構成するフォルダーを示します。 変数が FALSE の場合  _、pFolderFocus_ パラメーターは無視され、フォーム ビューアーは任意のフォルダーでメッセージを作成できます。 変数が TRUE で  _、pFolderFocus_ パラメーターに NULL が渡された場合、メッセージは現在のフォルダーで構成されます。 変数が TRUE で、null 以外の値が  _pFolderFocus_ で渡される場合、メッセージは  _pFolderFocus_ が指すフォルダーで構成されます。
     
- _pfolderfocus_
+ _pFolderFocus_
   
-> 順番新しいメッセージが作成されるフォルダーへのポインター。
+> [in]新しいメッセージが作成されるフォルダーへのポインター。
     
- _ppersistmessage_
+ _pPersistMessage_
   
-> 順番新しいフォームの form オブジェクトへのポインター。
+> [in]新しいフォームのフォーム オブジェクトへのポインター。
     
- _ppmessage_
+ _ppMessage_
   
-> 読み上げ新しいメッセージへのポインターへのポインター。
+> [out]新しいメッセージへのポインターを指すポインター。
     
- _ppメッセージ ite_
+ _ppMessageSite_
   
-> 読み上げ新しいメッセージのメッセージサイトオブジェクトへのポインターへのポインター。
+> [out]新しいメッセージのメッセージ サイト オブジェクトへのポインター。
     
- _ppviewcontext_
+ _ppViewContext_
   
-> 読み上げ新しいメッセージを使用して新しいフォームに渡すための適切なビューコンテキストへのポインターへのポインター。 フォームが独自のビューコンテキストを実装している場合は、 _ppviewcontext_パラメーターに NULL を渡すことができます。 
+> [out]新しいメッセージで新しいフォームに渡すのに適したビュー コンテキストへのポインター。 フォームが独自のビュー コンテキストを実装している場合は  _、ppViewContext_ パラメーターで NULL を渡す可能性があります。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -72,11 +72,11 @@ S_OK
     
 ## <a name="remarks"></a>注釈
 
-Form オブジェクトは、 **IMAPIMessageSite:: newmessage**メソッドを呼び出して、新しいメッセージを作成します。 このフォームは、新しいメッセージと関連するメッセージサイトをビューから取得するために、 **newmessage**を使用します。 その後、新しいメッセージを変更することができます。 
+フォーム オブジェクトは **IMAPIMessageSite::NewMessage** メソッドを呼び出して新しいメッセージを作成します。 フォームは **NewMessage を使用** して、ビューから新しいメッセージと関連付けられたメッセージ サイトを取得します。 その後、新しいメッセージを変更できます。 
   
-_ppviewcontext_パラメーターに NULL 以外の値を渡すことによって、関連付けられているビューコンテキストを取得することもできます。 このビューコンテキストは直接使用することも、新しいメッセージに集約して渡すこともできます。 完全な実装が必要な場合は、 _ppviewcontext_に NULL を渡します。
+_ppViewContext_ パラメーターに NULL 以外の値を渡して、関連付けられたビュー コンテキストを取得することもできます。 このビュー コンテキストを直接使用するか、集計して新しいメッセージに渡します。 完全な実装が必要な場合は  _、ppViewContext で NULL を渡します_。
   
-フォームサーバーに関連するインターフェイスの一覧については、「 [MAPI フォームインターフェイス](mapi-form-interfaces.md)」を参照してください。
+フォーム サーバーに関連するインターフェイスの一覧については [、「MAPI フォーム インターフェイス」を参照してください](mapi-form-interfaces.md)。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -84,7 +84,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer  <br/> |cmymapiformviewer:: newmessage  <br/> |mfcmapi は、 **IMAPIMessageSite:: newmessage**メソッドを使用して、新しいメッセージを作成し、新しいフォームビューアーをインスタンス化し、呼び出し**setpersist**を呼び出して、フォームビューアーにメッセージを設定します。 最後に、フォームビューアーをメッセージサイトとして返します。  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::NewMessage  <br/> |MFCMAPI は **IMAPIMessageSite::NewMessage** メソッドを使用して、新しいメッセージを作成し、新しいフォーム ビューアーをインスタンス化し **、SetPersist** を呼び出してフォーム ビューアーにメッセージを設定します。 最後に、フォーム ビューアーをメッセージ サイトとして返します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 
@@ -97,5 +97,5 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
 
 [�R�[�h �T���v���Ƃ��� MFCMAPI](mfcmapi-as-a-code-sample.md)
   
-[MAPI フォームインターフェイス](mapi-form-interfaces.md)
+[MAPI フォーム インターフェイス](mapi-form-interfaces.md)
 

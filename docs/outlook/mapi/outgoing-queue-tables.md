@@ -1,5 +1,5 @@
 ---
-title: 送信キューテーブル
+title: 送信キュー テーブル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,34 +15,34 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33437575"
 ---
-# <a name="outgoing-queue-tables"></a>送信キューテーブル
+# <a name="outgoing-queue-tables"></a>送信キュー テーブル
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-送信キューテーブルには、メッセージストアのすべての送信メッセージに関する情報が含まれています。 メッセージストアプロバイダーは、MAPI スプーラーで使用する送信キューテーブルを実装します。 メッセージの送信または受信をサポートしていないストアは、この表を実装する必要はありません。 
+送信キュー テーブルには、メッセージ ストアのすべての送信メッセージに関する情報が含まれます。 メッセージ ストア プロバイダーは、MAPI スプーラーが使用する送信キュー テーブルを実装します。 メッセージの送受信をサポートしていないストアでは、このテーブルを実装する必要があります。 
   
-送信キューテーブルにアクセスするために、MAPI スプーラーは[IMsgStore:: getoutgoingqueue](imsgstore-getoutgoingqueue.md)メソッドを呼び出します。 
+送信キュー テーブルにアクセスするには、MAPI スプーラーが [IMsgStore::GetOutgoingQueue メソッドを呼び出](imsgstore-getoutgoingqueue.md) します。 
   
-クライアントアプリケーションによって送信された順序でメッセージがプリプロセスされ、トランスポートプロバイダーに送信されるという要件があります。 MAPI スプーラーは、メッセージストアからのメッセージを送信時の昇順で受信できるように設計されています。 この要件のため、一部のメッセージが送信キューテーブルに表示されるまでに多少の時間がかかることがあります。 
+メッセージを前処理し、クライアント アプリケーションから送信された順序と同じ順序でトランスポート プロバイダーに送信する必要があります。 MAPI スプーラーは、送信時間の昇順でメッセージ ストアからのメッセージを受け入れするように設計されています。 この要件のため、一部のメッセージが送信キュー テーブルに表示される前に、いくつかの遅延が発生する可能性があります。 
   
-メッセージストアは、MAPI スプーラーが送信時刻でメッセージを並べ替えることができるように、または既定の並べ替え順序が昇順で送信されるように、送信キューテーブルの並べ替えを許可する必要があります。 
+メッセージ ストアは、MAPI スプーラーが送信時刻でメッセージを並べ替えできるよう、送信キュー テーブルでの並べ替えを許可するか、既定の並べ替え順序を送信時間を昇順に設定する必要があります。 
   
-キューの内容が変更されたときに、送信キューテーブルは通知を送信する必要があります。
+送信キュー テーブルは、キューの内容が変更された場合に通知を送信する必要があります。
   
-次のプロパティは、送信キューテーブルで必要な列セットを作成します。
+次のプロパティは、送信キュー テーブルで必要な列セットを構成します。
   
 |||
 |:-----|:-----|
-|**PR_CLIENT_SUBMIT_TIME**([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md))  <br/> |**PR_DISPLAY_BCC**([PidTagDisplayBcc](pidtagdisplaybcc-canonical-property.md))  <br/> |
-|**PR_DISPLAY_CC**([PidTagDisplayCc](pidtagdisplaycc-canonical-property.md))  <br/> |**PR_DISPLAY_TO**([PidTagDisplayTo](pidtagdisplayto-canonical-property.md))  <br/> |
-|**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |**PR_MESSAGE_FLAGS**([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))  <br/> |
-|**PR_MESSAGE_SIZE**([PidTagMessageSize](pidtagmessagesize-canonical-property.md))  <br/> |**PR_PRIORITY**([PidTagPriority](pidtagpriority-canonical-property.md))  <br/> |
-|**PR_SENDER_NAME**([PidTagSenderName](pidtagsendername-canonical-property.md))  <br/> |**PR_SUBJECT**([PidTagSubject](pidtagsubject-canonical-property.md))  <br/> |
-|**PR_SUBMIT_FLAGS**([PidTagSubmitFlags](pidtagsubmitflags-canonical-property.md))  <br/> | <br/> |
+|**PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md))  <br/> |**PR_DISPLAY_BCC** ([PidTagDisplayBcc](pidtagdisplaybcc-canonical-property.md))  <br/> |
+|**PR_DISPLAY_CC** ([PidTagDisplayCc](pidtagdisplaycc-canonical-property.md))  <br/> |**PR_DISPLAY_TO** ([PidTagDisplayTo](pidtagdisplayto-canonical-property.md))  <br/> |
+|**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |**PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))  <br/> |
+|**PR_MESSAGE_SIZE** ([PidTagMessageSize](pidtagmessagesize-canonical-property.md))  <br/> |**PR_PRIORITY** ([PidTagPriority](pidtagpriority-canonical-property.md))  <br/> |
+|**PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md))  <br/> |**PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md))  <br/> |
+|**PR_SUBMIT_FLAGS** ([PidTagSubmitFlags](pidtagsubmitflags-canonical-property.md))  <br/> | <br/> |
    
-送信キューテーブルの使用方法の詳細については、「[メッセージストアプロバイダーを使用してメッセージを送信](sending-messages-by-using-message-store-providers.md)する」を参照してください。
+送信キュー テーブルの使用方法の詳細については、「メッセージ ストア プロバイダーを使用してメッセージを送信 [する」を参照してください](sending-messages-by-using-message-store-providers.md)。
   
 ## <a name="see-also"></a>関連項目
 

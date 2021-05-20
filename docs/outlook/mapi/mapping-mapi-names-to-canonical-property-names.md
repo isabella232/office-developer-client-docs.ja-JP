@@ -1,5 +1,5 @@
 ---
-title: MAPI 名から標準プロパティ名へのマッピング
+title: MAPI 名を標準プロパティ名にマッピングする
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,24 +15,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34542703"
 ---
-# <a name="mapping-mapi-names-to-canonical-property-names"></a>MAPI 名から標準プロパティ名へのマッピング
+# <a name="mapping-mapi-names-to-canonical-property-names"></a>MAPI 名を標準プロパティ名にマッピングする
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このトピックでは、各 MAPI プロパティを対応する標準プロパティ名にマッピングします。 このトピックには3つのテーブルが含まれています。数値識別子を持つ名前付きプロパティのテーブル、文字列識別子を持つ名前付きプロパティの2番目のテーブル、およびタグ付きプロパティの3番目の表です。
+このトピックでは、各 MAPI プロパティを対応する標準プロパティ名にマップします。 このトピックには、数値識別子を持つ名前付きプロパティのテーブル、文字列識別子を持つ名前付きプロパティの 2 番目のテーブル、タグ付きプロパティの 3 番目のテーブルの 3 つのテーブルが含まれています。
   
-標準プロパティと MAPI プロパティの関係の詳細については、「 [Mapi 標準プロパティ](mapi-canonical-properties.md)」を参照してください。
+標準プロパティと MAPI プロパティの関連付け方法の詳細については [、「MAPI 標準プロパティ」を参照してください](mapi-canonical-properties.md)。
   
-## <a name="named-properties-with-numerical-identifiers"></a>数値識別子を含む名前付きプロパティ
+## <a name="named-properties-with-numerical-identifiers"></a>数値識別子を持つ名前付きプロパティ
 
 |**実際の名前付きプロパティ**|**標準プロパティ名**|
 |:-----|:-----|
 |dispidABPArrayType  <br/> |[PidLidAddressBookProviderArrayType](pidlidaddressbookproviderarraytype-canonical-property.md) <br/> |
 |dispidABPEmailList  <br/> |[PidLidAddressBookProviderEmailList](pidlidaddressbookprovideremaillist-canonical-property.md) <br/> |
 |dispidAddressCountryCode  <br/> |[PidLidAddressCountryCode](pidlidaddresscountrycode-canonical-property.md) <br/> |
-|dispidAgingDontAgeMe  <br/> |[PidLidAgingDontAgeMe](pidlidagingdontageme-canonical-property.md) <br/> |
+|dispidAgingDontAgeMe  <br/> |[PidLidagingDontAgeMe](pidlidagingdontageme-canonical-property.md) <br/> |
 |dispidAllAttendeesString  <br/> |[PidLidAllAttendeesString](pidlidallattendeesstring-canonical-property.md) <br/> |
 |dispidAnniversaryEventEID  <br/> |[PidLidAnniversaryEventEntryId](pidlidanniversaryevententryid-canonical-property.md) <br/> |
 |dispidApptAuxFlags  <br/> |[PidLidAppointmentAuxiliaryFlags](pidlidappointmentauxiliaryflags-canonical-property.md) <br/> |
@@ -68,7 +68,7 @@ ms.locfileid: "34542703"
 |dispidBusyStatus  <br/> |[PidLidBusyStatus](pidlidbusystatus-canonical-property.md) <br/> |
 |dispidCategories  <br/> |[PidLidCategories](pidlidcategories-canonical-property.md) <br/> |
 |dispidCCAttendeesString  <br/> |[PidLidCcAttendeesString](pidlidccattendeesstring-canonical-property.md) <br/> |
-|dispidChangeHighlight 表示  <br/> |[PidLidChangeHighlight](pidlidchangehighlight-canonical-property.md) <br/> |
+|dispidChangeHighlight  <br/> |[PidLidChangeHighlight](pidlidchangehighlight-canonical-property.md) <br/> |
 |dispidClassDesc  <br/> |[PidLidClassificationDescription](pidlidclassificationdescription-canonical-property.md) <br/> |
 |dispidClassGuid  <br/> |[PidLidClassificationGuid](pidlidclassificationguid-canonical-property.md) <br/> |
 |dispidClassification  <br/> |[PidLidClassification](pidlidclassification-canonical-property.md) <br/> |
@@ -113,7 +113,7 @@ ms.locfileid: "34542703"
 |dispidEmail3OriginalDisplayName  <br/> |[PidLidEmail3OriginalDisplayName](pidlidemail3originaldisplayname-canonical-property.md) <br/> |
 |dispidEmail3OriginalEntryID  <br/> |[PidLidEmail3OriginalEntryId](pidlidemail3originalentryid-canonical-property.md) <br/> |
 |dispidEMSAbX509Cert  <br/> |[PidLidUserX509Certificate](pidliduserx509certificate-canonical-property.md) <br/> |
-|Dispide Xceptionreplacetime  <br/> |[PidLidExceptionReplaceTime](pidlidexceptionreplacetime-canonical-property.md) <br/> |
+|dispidExceptionReplaceTime  <br/> |[PidLidExceptionReplaceTime](pidlidexceptionreplacetime-canonical-property.md) <br/> |
 |dispidFax1AddrType  <br/> |[PidLidFax1AddressType](pidlidfax1addresstype-canonical-property.md) <br/> |
 |dispidFax1DisplayName  <br/> |[PidLidFax1DisplayName](pidlidfax1displayname-canonical-property.md) <br/> |
 |dispidFax1EmailAddress  <br/> |[PidLidFax1EmailAddress](pidlidfax1emailaddress-canonical-property.md) <br/> |
@@ -138,19 +138,19 @@ ms.locfileid: "34542703"
 |dispidFax3OriginalDisplayName  <br/> |[PidLidFax3OriginalDisplayName](pidlidfax3originaldisplayname-canonical-property.md) <br/> |
 |dispidFax3OriginalEntryID  <br/> |[PidLidFax3OriginalEntryId](pidlidfax3originalentryid-canonical-property.md) <br/> |
 |dispidFax3RTF  <br/> |[PidLidFax3RichTextFormat](pidlidfax3richtextformat-canonical-property.md) <br/> |
-|dispidFExceptionalAttendees 者  <br/> |[PidLidFExceptionalAttendees](pidlidfexceptionalattendees-canonical-property.md) <br/> |
+|dispidFExceptionalAttendees  <br/> |[PidLidFExceptionalAttendees](pidlidfexceptionalattendees-canonical-property.md) <br/> |
 |dispidFExceptionalBody  <br/> |[PidLidFExceptionalBody](pidlidfexceptionalbody-canonical-property.md) <br/> |
 |dispidFileUnder  <br/> |[PidLidFileUnder](pidlidfileunder-canonical-property.md) <br/> |
-|Dispidfile過小 Id  <br/> |[PidLidFileUnderId](pidlidfileunderid-canonical-property.md) <br/> |
-|Dispidfile過小一覧  <br/> |[PidLidFileUnderList](pidlidfileunderlist-canonical-property.md) <br/> |
+|dispidFileUnderId  <br/> |[PidLidFileUnderId](pidlidfileunderid-canonical-property.md) <br/> |
+|dispidFileUnderList  <br/> |[PidLidFileUnderList](pidlidfileunderlist-canonical-property.md) <br/> |
 |dispidFInvited  <br/> |[PidLidFInvited](pidlidfinvited-canonical-property.md) <br/> |
 |dispidFlagStringEnum  <br/> |[PidLidFlagString](pidlidflagstring-canonical-property.md) <br/> |
 |dispidFreeBusyLocation  <br/> |[PidLidFreeBusyLocation](pidlidfreebusylocation-canonical-property.md) <br/> |
-|Dispidfid Tnef  <br/> |[PidLidFShouldTNEF](pidlidfshouldtnef-canonical-property.md) <br/> |
+|dispidFShouldTNEF  <br/> |[PidLidFShouldTNEF](pidlidfshouldtnef-canonical-property.md) <br/> |
 |dispidFwrdInstance  <br/> |[PidLidForwardInstance](pidlidforwardinstance-canonical-property.md) <br/> |
 |dispidHasPicture  <br/> |[PidLidHasPicture](pidlidhaspicture-canonical-property.md) <br/> |
 |dispidHeaderItem  <br/> |[PidLidHeaderItem](pidlidheaderitem-canonical-property.md) <br/> |
-|Dispidホームアドレス  <br/> |[PidLidHomeAddress](pidlidhomeaddress-canonical-property.md) <br/> |
+|dispidHomeAddress  <br/> |[PidLidHomeAddress](pidlidhomeaddress-canonical-property.md) <br/> |
 |dispidHomeAddressCountryCode  <br/> |[PidLidHomeAddressCountryCode](pidlidhomeaddresscountrycode-canonical-property.md) <br/> |
 |dispidHTML  <br/> |[PidLidHtml](pidlidhtml-canonical-property.md) <br/> |
 |dispidImapDeleted  <br/> |[PidLidImapDeleted](pidlidimapdeleted-canonical-property.md) <br/> |
@@ -163,7 +163,7 @@ ms.locfileid: "34542703"
 |dispidLinkedTaskItems  <br/> |[PidLidLinkedTaskItems](pidlidlinkedtaskitems-canonical-property.md) <br/> |
 |dispidLocation  <br/> |[PidLidLocation](pidlidlocation-canonical-property.md) <br/> |
 |dispidLogDocPosted  <br/> |[PidLidLogDocumentPosted](pidlidlogdocumentposted-canonical-property.md) <br/> |
-|dispidLogDocPrinted 印刷  <br/> |[PidLidLogDocumentPrinted](pidlidlogdocumentprinted-canonical-property.md) <br/> |
+|dispidLogDocPrinted  <br/> |[PidLidLogDocumentPrinted](pidlidlogdocumentprinted-canonical-property.md) <br/> |
 |dispidLogDocRouted  <br/> |[PidLidLogDocumentRouted](pidlidlogdocumentrouted-canonical-property.md) <br/> |
 |dispidLogDocSaved  <br/> |[PidLidLogDocumentSaved](pidlidlogdocumentsaved-canonical-property.md) <br/> |
 |dispidLogDuration  <br/> |[PidLidLogDuration](pidlidlogduration-canonical-property.md) <br/> |
@@ -172,7 +172,7 @@ ms.locfileid: "34542703"
 |dispidLogStart  <br/> |[PidLidLogStart](pidlidlogstart-canonical-property.md) <br/> |
 |dispidLogType  <br/> |[PidLidLogType](pidlidlogtype-canonical-property.md) <br/> |
 |dispidLogTypeDesc  <br/> |[PidLidLogTypeDesc](pidlidlogtypedesc-canonical-property.md) <br/> |
-|Dispid会議の種類  <br/> |[PidLidMeetingType](pidlidmeetingtype-canonical-property.md) <br/> |
+|dispidMeetingType  <br/> |[PidLidMeetingType](pidlidmeetingtype-canonical-property.md) <br/> |
 |dispidMileage  <br/> |[PidLidMileage](pidlidmileage-canonical-property.md) <br/> |
 |dispidMWSURL  <br/> |[PidLidMeetingWorkspaceUrl](pidlidmeetingworkspaceurl-canonical-property.md) <br/> |
 |dispidNonSendableBCC  <br/> |[PidLidNonSendableBcc](pidlidnonsendablebcc-canonical-property.md) <br/> |
@@ -182,10 +182,10 @@ ms.locfileid: "34542703"
 |dispidNonSendCcTrackStatus  <br/> |[PidLidNonSendCcTrackStatus](pidlidnonsendcctrackstatus-canonical-property.md) <br/> |
 |dispidNonSendToTrackStatus  <br/> |[PidLidNonSendToTrackStatus](pidlidnonsendtotrackstatus-canonical-property.md) <br/> |
 |dispidNoteColor  <br/> |[PidLidNoteColor](pidlidnotecolor-canonical-property.md) <br/> |
-|Dispid脚注の高さ  <br/> |[PidLidNoteHeight](pidlidnoteheight-canonical-property.md) <br/> |
-|Dispid脚注の幅  <br/> |[PidLidNoteWidth](pidlidnotewidth-canonical-property.md) <br/> |
+|dispidNoteHeight  <br/> |[PidLidNoteHeight](pidlidnoteheight-canonical-property.md) <br/> |
+|dispidNoteWidth  <br/> |[PidLidNoteWidth](pidlidnotewidth-canonical-property.md) <br/> |
 |dispidNoteX  <br/> |[PidLidNoteX](pidlidnotex-canonical-property.md) <br/> |
-|Dispid注 y  <br/> |[PidLidNoteY](pidlidnotey-canonical-property.md) <br/> |
+|dispidNoteY  <br/> |[PidLidNoteY](pidlidnotey-canonical-property.md) <br/> |
 |dispidOfflineStatus  <br/> |[PidLidOfflineStatus](pidlidofflinestatus-canonical-property.md) <br/> |
 |dispidOldLocation  <br/> |[PidLidOldLocation](pidlidoldlocation-canonical-property.md) <br/> |
 |dispidOldWhenEndWhole  <br/> |[PidLidOldWhenEndWhole](pidlidoldwhenendwhole-canonical-property.md) <br/> |
@@ -193,7 +193,7 @@ ms.locfileid: "34542703"
 |dispidOrigStoreEid  <br/> |[PidLidOriginalStoreEntryId](pidlidoriginalstoreentryid-canonical-property.md) <br/> |
 |dispidOtherAddress  <br/> |[PidLidOtherAddress](pidlidotheraddress-canonical-property.md) <br/> |
 |dispidOtherAddressCountryCode  <br/> |[PidLidOtherAddressCountryCode](pidlidotheraddresscountrycode-canonical-property.md) <br/> |
-|dispidPercentComplete 率  <br/> |[PidLidPercentComplete](pidlidpercentcomplete-canonical-property.md) <br/> |
+|dispidPercentComplete  <br/> |[PidLidPercentComplete](pidlidpercentcomplete-canonical-property.md) <br/> |
 |dispidPostalAddressId  <br/> |[PidLidPostalAddressId](pidlidpostaladdressid-canonical-property.md) <br/> |
 |dispidPostRssChannel  <br/> |[PidLidPostRssChannel](pidlidpostrsschannel-canonical-property.md) <br/> |
 |dispidPostRssChannelLink  <br/> |[PidLidPostRssChannelLink](pidlidpostrsschannellink-canonical-property.md) <br/> |
@@ -215,15 +215,15 @@ ms.locfileid: "34542703"
 |dispidRemoteEID  <br/> |[PidLidRemoteEntryId](pidlidremoteentryid-canonical-property.md) <br/> |
 |dispidRemoteMsgClass  <br/> |[PidLidRemoteMessageClass](pidlidremotemessageclass-canonical-property.md) <br/> |
 |dispidRemoteSearchKey  <br/> |[PidLidRemoteSearchKey](pidlidremotesearchkey-canonical-property.md) <br/> |
-|Dispidremotexフェリーサイズ  <br/> |[PidLidRemoteTransferSize](pidlidremotetransfersize-canonical-property.md) <br/> |
-|Dispidremotexの時間  <br/> |[PidLidRemoteTransferTime](pidlidremotetransfertime-canonical-property.md) <br/> |
+|dispidRemoteXferSize  <br/> |[PidLidRemoteTransferSize](pidlidremotetransfersize-canonical-property.md) <br/> |
+|dispidRemoteXferTime  <br/> |[PidLidRemoteTransferTime](pidlidremotetransfertime-canonical-property.md) <br/> |
 |dispidRemoteXP  <br/> |[PidLidRemoteTransport](pidlidremotetransport-canonical-property.md) <br/> |
 |dispidRequest  <br/> |[PidLidFlagRequest](pidlidflagrequest-canonical-property.md) <br/> |
 |dispidResendTime  <br/> |[PidLidResendTime](pidlidresendtime-canonical-property.md) <br/> |
 |dispidResponseStatus  <br/> |[PidLidResponseStatus](pidlidresponsestatus-canonical-property.md) <br/> |
 |dispidSendMtgAsICAL  <br/> |[PidLidSendMeetingAsIcal](pidlidsendmeetingasical-canonical-property.md) <br/> |
 |dispidSharingCaps  <br/> |[PidLidSharingCapabilities](pidlidsharingcapabilities-canonical-property.md) <br/> |
-|Dispidsharingの種類 l  <br/> |[PidLidSharingConfigurationUrl](pidlidsharingconfigurationurl-canonical-property.md) <br/> |
+|dispidSharingConfigUrl  <br/> |[PidLidSharingConfigurationUrl](pidlidsharingconfigurationurl-canonical-property.md) <br/> |
 |dispidSharingFlavor  <br/> |[PidLidSharingFlavor](pidlidsharingflavor-canonical-property.md) <br/> |
 |dispidSharingInitiatorEid  <br/> |[PidLidSharingInitiatorEntryId](pidlidsharinginitiatorentryid-canonical-property.md) <br/> |
 |dispidSharingInitiatorName  <br/> |[PidLidSharingInitiatorName](pidlidsharinginitiatorname-canonical-property.md) <br/> |
@@ -264,7 +264,7 @@ ms.locfileid: "34542703"
 |dispidTaskMyDelegators  <br/> |[PidLidTaskAssigners](pidlidtaskassigners-canonical-property.md) <br/> |
 |dispidTaskOrdinal  <br/> |[PidLidTaskOrdinal](pidlidtaskordinal-canonical-property.md) <br/> |
 |dispidTaskOwner  <br/> |[PidLidTaskOwner](pidlidtaskowner-canonical-property.md) <br/> |
-|dispidTaskOwnership 所有権  <br/> |[PidLidTaskOwnership](pidlidtaskownership-canonical-property.md) <br/> |
+|dispidTaskOwnership  <br/> |[PidLidTaskOwnership](pidlidtaskownership-canonical-property.md) <br/> |
 |dispidTaskRecur  <br/> |[PidLidTaskRecurrence](pidlidtaskrecurrence-canonical-property.md) <br/> |
 |dispidTaskResetReminder  <br/> |[PidLidTaskResetReminder](pidlidtaskresetreminder-canonical-property.md) <br/> |
 |dispidTaskSOC  <br/> |[PidLidTaskStatusOnComplete](pidlidtaskstatusoncomplete-canonical-property.md) <br/> |
@@ -283,16 +283,16 @@ ms.locfileid: "34542703"
 |dispidValidFlagStringProof  <br/> |[PidLidValidFlagStringProof](pidlidvalidflagstringproof-canonical-property.md) <br/> |
 |dispidVerbResponse  <br/> |[PidLidVerbResponse](pidlidverbresponse-canonical-property.md) <br/> |
 |dispidVerbStream  <br/> |[PidLidVerbStream](pidlidverbstream-canonical-property.md) <br/> |
-|Dispidwork アドレス  <br/> |[PidLidWorkAddress](pidlidworkaddress-canonical-property.md) <br/> |
-|dispidwork addresscdisp  <br/> |[PidLidWorkAddressCity](pidlidworkaddresscity-canonical-property.md) <br/> |
-|Dispidwork Addresscountry  <br/> |[PidLidWorkAddressCountry](pidlidworkaddresscountry-canonical-property.md) <br/> |
+|dispidWorkAddress  <br/> |[PidLidWorkAddress](pidlidworkaddress-canonical-property.md) <br/> |
+|dispidWorkAddressCity  <br/> |[PidLidWorkAddressCity](pidlidworkaddresscity-canonical-property.md) <br/> |
+|dispidWorkAddressCountry  <br/> |[PidLidWorkAddressCountry](pidlidworkaddresscountry-canonical-property.md) <br/> |
 |dispidWorkAddressCountryCode  <br/> |[PidLidWorkAddressCountryCode](pidlidworkaddresscountrycode-canonical-property.md) <br/> |
 |dispidWorkAddressPostalCode  <br/> |[PidLidWorkAddressPostalCode](pidlidworkaddresspostalcode-canonical-property.md) <br/> |
 |dispidWorkAddressPostOfficeBox  <br/> |[PidLidWorkAddressPostOfficeBox](pidlidworkaddresspostofficebox-canonical-property.md) <br/> |
-|Dispidwork Addressstate  <br/> |[PidLidWorkAddressState](pidlidworkaddressstate-canonical-property.md) <br/> |
-|Dispidwork Addressストリート  <br/> |[PidLidWorkAddressStreet](pidlidworkaddressstreet-canonical-property.md) <br/> |
+|dispidWorkAddressState  <br/> |[PidLidWorkAddressState](pidlidworkaddressstate-canonical-property.md) <br/> |
+|dispidWorkAddressStreet  <br/> |[PidLidWorkAddressStreet](pidlidworkaddressstreet-canonical-property.md) <br/> |
 |dispidYomiCompanyName  <br/> |[PidLidYomiCompanyName](pidlidyomicompanyname-canonical-property.md) <br/> |
-|Dispidヨーク Mifirstname  <br/> |[PidLidYomiFirstName](pidlidyomifirstname-canonical-property.md) <br/> |
+|dispidYomiFirstName  <br/> |[PidLidYomiFirstName](pidlidyomifirstname-canonical-property.md) <br/> |
 |dispidYomiLastName  <br/> |[PidLidYomiLastName](pidlidyomilastname-canonical-property.md) <br/> |
 |LID_ATTENDEE_CRITICAL_CHANGE  <br/> |[PidLidAttendeeCriticalChange](pidlidattendeecriticalchange-canonical-property.md) <br/> |
 |LID_CALENDAR_TYPE  <br/> |[PidLidCalendarType](pidlidcalendartype-canonical-property.md) <br/> |
@@ -304,7 +304,7 @@ ms.locfileid: "34542703"
 |LID_TIME_ZONE  <br/> |[PidLidTimeZone](pidlidtimezone-canonical-property.md) <br/> |
 |LID_WHERE  <br/> |[PidLidWhere](pidlidwhere-canonical-property.md) <br/> |
    
-## <a name="named-properties-with-string-identifiers"></a>文字列識別子を含む名前付きプロパティ
+## <a name="named-properties-with-string-identifiers"></a>文字列識別子を持つ名前付きプロパティ
 
 |**実際の名前付きプロパティ**|**標準プロパティ名**|
 |:-----|:-----|
@@ -312,14 +312,14 @@ ms.locfileid: "34542703"
 |AppName  <br/> |[PidNameApplicationName](pidnameapplicationname-canonical-property.md) <br/> |
 |AttachmentMacContentType  <br/> |[PidNameAttachmentMacContentType](pidnameattachmentmaccontenttype-canonical-property.md) <br/> |
 |AttachmentMacInfo  <br/> |[PidNameAttachmentMacInfo](pidnameattachmentmacinfo-canonical-property.md) <br/> |
-|設定元  <br/> |[PidNameAuthor](pidnameauthor-canonical-property.md) <br/> |
+|Author  <br/> |[PidNameAuthor](pidnameauthor-canonical-property.md) <br/> |
 |ByteCount  <br/> |[PidNameByteCount](pidnamebytecount-canonical-property.md) <br/> |
 |カテゴリ  <br/> |[PidNameCategory](pidnamecategory-canonical-property.md) <br/> |
 |CharCount  <br/> |[PidNameCharacterCount](pidnamecharactercount-canonical-property.md) <br/> |
-|Comments  <br/> |[PidNameComments](pidnamecomments-canonical-property.md) <br/> |
-|Company  <br/> |[PidNameCompany](pidnamecompany-canonical-property.md) <br/> |
-|コンテンツベース  <br/> |[PidNameContentBase](pidnamecontentbase-canonical-property.md) <br/> |
-|コンテンツクラス  <br/> |[PidNameContentClass](pidnamecontentclass-canonical-property.md) <br/> |
+|コメント  <br/> |[PidNameComments](pidnamecomments-canonical-property.md) <br/> |
+|会社名  <br/> |[PidNameCompany](pidnamecompany-canonical-property.md) <br/> |
+|Content-Base  <br/> |[PidNameContentBase](pidnamecontentbase-canonical-property.md) <br/> |
+|Content-Class  <br/> |[PidNameContentClass](pidnamecontentclass-canonical-property.md) <br/> |
 |Content-Transfer-Encoding  <br/> |[PidNameContentTransferEncoding](pidnamecontenttransferencoding-canonical-property.md) <br/> |
 |Content-Type  <br/> |[PidNameContentType](pidnamecontenttype-canonical-property.md) <br/> |
 |CreateDtmRo  <br/> |[PidNameCreateDateTimeReadOnly](pidnamecreatedatetimereadonly-canonical-property.md) <br/> |
@@ -342,23 +342,23 @@ ms.locfileid: "34542703"
 |RevNumber  <br/> |[PidNameRevisionNumber](pidnamerevisionnumber-canonical-property.md) <br/> |
 |セキュリティ  <br/> |[PidNameSecurity](pidnamesecurity-canonical-property.md) <br/> |
 |SlideCount  <br/> |[PidNameSlideCount](pidnameslidecount-canonical-property.md) <br/> |
-|件名  <br/> |[PidNameSubject](pidnamesubject-canonical-property.md) <br/> |
+|Subject  <br/> |[PidNameSubject](pidnamesubject-canonical-property.md) <br/> |
 |テンプレート  <br/> |[PidNameTemplate](pidnametemplate-canonical-property.md) <br/> |
 |タイトル  <br/> |[PidNameTitle](pidnametitle-canonical-property.md) <br/> |
 |UMAudioNotes  <br/> |[PidNameAudioNotes](pidnameaudionotes-canonical-property.md) <br/> |
 |WordCount  <br/> |[PidNameWordCount](pidnamewordcount-canonical-property.md) <br/> |
-|X 共有機能  <br/> |[PidNameXSharingCapabilities](pidnamexsharingcapabilities-canonical-property.md) <br/> |
-|X 共有-構成-Url  <br/> |[PidNameXSharingConfigUrl](pidnamexsharingconfigurl-canonical-property.md) <br/> |
-|X 共有-フレーバー  <br/> |[PidNameXSharingFlavor](pidnamexsharingflavor-canonical-property.md) <br/> |
-|X 共有-ローカル型  <br/> |[PidNameXSharingLocalType](pidnamexsharinglocaltype-canonical-property.md) <br/> |
-|X 共有-プロバイダー-Guid  <br/> |[PidNameXSharingProviderGuid](pidnamexsharingproviderguid-canonical-property.md) <br/> |
-|X 共有-プロバイダー名  <br/> |[PidNameXSharingProviderName](pidnamexsharingprovidername-canonical-property.md) <br/> |
-|X 共有-プロバイダー-Url  <br/> |[PidNameXSharingProviderUrl](pidnamexsharingproviderurl-canonical-property.md) <br/> |
-|X 共有-リモート名  <br/> |[PidNameXSharingRemoteName](pidnamexsharingremotename-canonical-property.md) <br/> |
-|X 共有-リモートストア-Uid  <br/> |[PidNameXSharingRemoteStoreUid](pidnamexsharingremotestoreuid-canonical-property.md) <br/> |
-|X 共有-リモート型  <br/> |[PidNameXSharingRemoteType](pidnamexsharingremotetype-canonical-property.md) <br/> |
-|X 共有-リモート-Uid  <br/> |[PidNameXSharingRemoteUid](pidnamexsharingremoteuid-canonical-property.md) <br/> |
-|相互  <br/> |[PidNameCrossReference](pidnamecrossreference-canonical-property.md) <br/> |
+|X-Sharing-Capabilities  <br/> |[PidNameXSharingCapabilities](pidnamexsharingcapabilities-canonical-property.md) <br/> |
+|X-Sharing-Config-Url  <br/> |[PidNameXSharingConfigUrl](pidnamexsharingconfigurl-canonical-property.md) <br/> |
+|X-Sharing-Flavor  <br/> |[PidNameXSharingFlavor](pidnamexsharingflavor-canonical-property.md) <br/> |
+|X-Sharing-Local-Type  <br/> |[PidNameXSharingLocalType](pidnamexsharinglocaltype-canonical-property.md) <br/> |
+|X-Sharing-Provider-Guid  <br/> |[PidNameXSharingProviderGuid](pidnamexsharingproviderguid-canonical-property.md) <br/> |
+|X-Sharing-Provider-Name  <br/> |[PidNameXSharingProviderName](pidnamexsharingprovidername-canonical-property.md) <br/> |
+|X-Sharing-Provider-Url  <br/> |[PidNameXSharingProviderUrl](pidnamexsharingproviderurl-canonical-property.md) <br/> |
+|X-Sharing-Remote-Name  <br/> |[PidNameXSharingRemoteName](pidnamexsharingremotename-canonical-property.md) <br/> |
+|X-Sharing-Remote-Store-Uid  <br/> |[PidNameXSharingRemoteStoreUid](pidnamexsharingremotestoreuid-canonical-property.md) <br/> |
+|X-Sharing-Remote-Type  <br/> |[PidNameXSharingRemoteType](pidnamexsharingremotetype-canonical-property.md) <br/> |
+|X-Sharing-Remote-Uid  <br/> |[PidNameXSharingRemoteUid](pidnamexsharingremoteuid-canonical-property.md) <br/> |
+|Xref  <br/> |[PidNameCrossReference](pidnamecrossreference-canonical-property.md) <br/> |
    
 ## <a name="tagged-properties"></a>タグ付きプロパティ
 
@@ -386,7 +386,7 @@ ms.locfileid: "34542703"
 |PR_ADDRTYPE_W  <br/> |[PidTagAddressType](pidtagaddresstype-canonical-property.md) <br/> |
 |PR_ADDRTYPE  <br/> |[PidTagAddressType](pidtagaddresstype-canonical-property.md) <br/> |
 |PR_AGING_GRANULARITY  <br/> |[PidTagAgingGranularity](pidtagaginggranularity-canonical-property.md) <br/> |
-|PR_AGING_PERIOD  <br/> |[PidTagAgingPeriod](pidtagagingperiod-canonical-property.md) <br/> |
+|PR_AGING_PERIOD  <br/> |[PidTagagingPeriod](pidtagagingperiod-canonical-property.md) <br/> |
 |PR_ALTERNATE_RECIPIENT_ALLOWED  <br/> |[PidTagAlternateRecipientAllowed](pidtagalternaterecipientallowed-canonical-property.md) <br/> |
 |PR_ALTERNATE_RECIPIENT  <br/> |[PidTagAlternateRecipient](pidtagalternaterecipient-canonical-property.md) <br/> |
 |PR_ANR_A  <br/> |[PidTagAnr](pidtaganr-canonical-property.md) <br/> |
@@ -1124,9 +1124,9 @@ ms.locfileid: "34542703"
 |PR_RECIPIENT_TYPE  <br/> |[PidTagRecipientType](pidtagrecipienttype-canonical-property.md) <br/> |
 |PR_RECORD_KEY  <br/> |[PidTagRecordKey](pidtagrecordkey-canonical-property.md) <br/> |
 |PR_REDIRECTION_HISTORY  <br/> |[PidTagRedirectionHistory](pidtagredirectionhistory-canonical-property.md) <br/> |
-|PR_REFERRED_BY_NAME_A  <br/> |[PidTagReferredByName](pidtagreferredbyname-canonical-property.md) <br/> |
-|PR_REFERRED_BY_NAME_W  <br/> |[PidTagReferredByName](pidtagreferredbyname-canonical-property.md) <br/> |
-|PR_REFERRED_BY_NAME  <br/> |[PidTagReferredByName](pidtagreferredbyname-canonical-property.md) <br/> |
+|PR_REFERRED_BY_NAME_A  <br/> |[PidTagreferredByName](pidtagreferredbyname-canonical-property.md) <br/> |
+|PR_REFERRED_BY_NAME_W  <br/> |[PidTagreferredByName](pidtagreferredbyname-canonical-property.md) <br/> |
+|PR_REFERRED_BY_NAME  <br/> |[PidTagreferredByName](pidtagreferredbyname-canonical-property.md) <br/> |
 |PR_REGISTERED_MAIL_TYPE  <br/> |[PidTagRegisteredMailType](pidtagregisteredmailtype-canonical-property.md) <br/> |
 |PR_RELATED_IPMS  <br/> |[PidTagRelatedMessageIds](pidtagrelatedmessageids-canonical-property.md) <br/> |
 |PR_REM_ONLINE_ENTRYID  <br/> |[PidTagRemindersOnlineEntryId](pidtagremindersonlineentryid-canonical-property.md) <br/> |
@@ -1226,8 +1226,8 @@ ms.locfileid: "34542703"
 |PR_SCHDINFO_DISALLOW_OVERLAPPING_APPTS  <br/> |[PidTagScheduleInfoDisallowOverlappingAppts](pidtagscheduleinfodisallowoverlappingappts-canonical-property.md) <br/> |
 |PR_SCHDINFO_DISALLOW_RECURRING_APPTS  <br/> |[PidTagScheduleInfoDisallowRecurringAppts](pidtagscheduleinfodisallowrecurringappts-canonical-property.md) <br/> |
 |PR_SCHDINFO_DONT_MAIL_DELEGATES  <br/> |[PidTagScheduleInfoDontMailDelegates](pidtagscheduleinfodontmaildelegates-canonical-property.md) <br/> |
-|PR_SCHDINFO_FREEBUSY_BUSY  <br/> |[PidTagScheduleInfoFreeBusyBusy](pidtagscheduleinfofreebusybusy-canonical-property.md) <br/> |
-|PR_SCHDINFO_FREEBUSY_MERGED  <br/> |[PidTagScheduleInfoFreeBusyMerged](pidtagscheduleinfofreebusymerged-canonical-property.md) <br/> |
+|PR_SCHDINFO_FREEBUSY_BUSY  <br/> |[PidTagScheduleInfoFreeBusyBusyBusy](pidtagscheduleinfofreebusybusy-canonical-property.md) <br/> |
+|PR_SCHDINFO_FREEBUSY_MERGED  <br/> |[PidTagScheduleInfoFreeBusymerged](pidtagscheduleinfofreebusymerged-canonical-property.md) <br/> |
 |PR_SCHDINFO_FREEBUSY_OOF  <br/> |[PidTagScheduleInfoFreeBusyAway](pidtagscheduleinfofreebusyaway-canonical-property.md) <br/> |
 |PR_SCHDINFO_FREEBUSY_TENTATIVE  <br/> |[PidTagScheduleInfoFreeBusyTentative](pidtagscheduleinfofreebusytentative-canonical-property.md) <br/> |
 |PR_SCHDINFO_FREEBUSY  <br/> |[PidTagScheduleInfoFreeBusy](pidtagscheduleinfofreebusy-canonical-property.md) <br/> |

@@ -21,13 +21,13 @@ ms.locfileid: "33439108"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-_pEmsmdbUID_によって識別される Exchange サービスのグローバルアドレス帳のエントリ id を返します。 返されたエントリ id は、 [MAPIFreeBuffer](mapifreebuffer.md)を使用して解放する必要があります。
+_pEmsmdbUID_ で識別される Exchangeアドレス帳のエントリ識別子を返します。 返されるエントリ識別子は [、MAPIFreeBuffer を使用して解放する必要があります](mapifreebuffer.md)。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |abhelp .h  <br/> |
+|ヘッダー ファイル:  <br/> |abhelp.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 HRESULT HrGetGALFromEmsmdbUID(
@@ -41,24 +41,24 @@ HRESULT HrGetGALFromEmsmdbUID(
 
 ## <a name="parameters"></a>パラメーター
 
- _psess_
+ _pSess_
   
-> 順番ログオンしている imapisession。 NULL にすることはできません。
+> [in]ログオンしている IMAPISession。 NULL にすることはできません。
     
  _pAddrBook_
   
-> 順番エントリ識別子を開くために使用されるアドレス帳。 NULL にすることはできません。
+> [in]エントリ識別子を開くのに使用するアドレス帳。 NULL にすることはできません。
     
  _pEmsmdbUID_
   
-> 順番取得する Exchange サービスの GAL を識別する**emsmdbUID**へのポインター。 _pEmsmdbUID_が NULL またはゼロ UID の場合、この関数は、Exchange サービスの従来の GAL を取得します。 
+> [in]取得するサービスの GAL を識別する **emsmdbUID** Exchangeポインター。 _pEmsmdbUID_ が NULL または 0 の UID の場合、この関数は、Exchange サービスの従来の GAL を取得します。 
     
  _lpcbeid_
   
-> 読み上げグローバルアドレス一覧のエントリ識別子のバイト数へのポインター。
+> [out]グローバル アドレス一覧のエントリ識別子のバイト数へのポインター。
     
  _lppeid_
   
-> 読み上げグローバルアドレス一覧のエントリ識別子へのポインター。 これは、 [MAPIFreeBuffer](mapifreebuffer.md)を使用して解放する必要があります。
+> [out]グローバル アドレス一覧のエントリ識別子へのポインター。 これは [MAPIFreeBuffer を使用して解放する必要があります](mapifreebuffer.md)。
     
 

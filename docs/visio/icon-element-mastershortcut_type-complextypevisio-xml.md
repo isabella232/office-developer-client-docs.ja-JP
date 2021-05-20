@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 07d8ba86-8e35-d151-e6c1-150c37cc2acd
-description: ドキュメントの MasterShortcut 要素の MIME (多目的インターネットメール内線) エンコードされたバイナリアイコン (.ico 形式) を指定します。
+description: ドキュメント内の MasterShortcut 要素の MIME (多目的インターネット メール拡張機能) エンコードされたバイナリ アイコン (.ico 形式) を指定します。
 ms.openlocfilehash: 6d223da406dd914c84aafdd3d37846c1ab30bb4e
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,18 +14,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34541499"
 ---
-# <a name="icon-element-mastershortcuttype-complextype-visio-xml"></a>Icon 要素 (MasterShortcut_Type complexType) (Visio XML)
+# <a name="icon-element-mastershortcut_type-complextype-visio-xml"></a>Icon 要素 (MasterShortcut_Type complexType) (Visio XML)
 
-ドキュメントの MasterShortcut 要素の MIME (多目的インターネットメール内線) エンコードされたバイナリアイコン (.ico 形式) を指定します。
+ドキュメント内の MasterShortcut 要素の MIME (多目的インターネット メール拡張機能) エンコードされたバイナリ アイコン (.ico 形式) を指定します。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Icon_Type](icon_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
-|**文書パーツ** <br/> |masters  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
+|**ドキュメント パーツ** <br/> |masters.xml  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -36,7 +36,7 @@ ms.locfileid: "34541499"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
+スキーマで **sequence**、**minOccurs**、**maxOccurs**、**choice** などの具体的な要件が定義されている場合は、定義のセクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 

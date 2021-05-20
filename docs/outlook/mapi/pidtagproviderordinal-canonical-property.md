@@ -25,32 +25,32 @@ ms.locfileid: "33438352"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-プロバイダーテーブル内のサービスプロバイダーの位置の0から始まるインデックスを格納します。
+プロバイダー テーブル内のサービス プロバイダーの位置の 0 から始るインデックスを格納します。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_PROVIDER_ORDINAL  <br/> |
-|識別子:  <br/> |0x300d  <br/> |
+|識別子:  <br/> |0x300D  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |MAPI 共通  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-このプロパティは MAPI で計算されます。
+このプロパティは MAPI によって計算されます。
   
-[IMsgServiceAdmin:: getprovidertable](imsgserviceadmin-getprovidertable.md)メソッドを呼び出して、プロバイダーテーブルを取得します。 このプロパティのプロバイダテーブルを並べ替えて、トランスポート順序を表示します。 
+[IMsgServiceAdmin::GetProviderTable メソッドを](imsgserviceadmin-getprovidertable.md)呼び出して、プロバイダー テーブルを取得します。 このプロパティのプロバイダー テーブルを並べ替え、トランスポートの順序を表示します。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -60,7 +60,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

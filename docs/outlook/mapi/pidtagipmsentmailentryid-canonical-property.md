@@ -25,30 +25,30 @@ ms.locfileid: "33437323"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-標準の個人間メッセージ (IPM) の送信済みアイテムフォルダーのエントリ識別子を含みます。 
+標準の対人メッセージ (IPM) 送信アイテム フォルダーのエントリ識別子を格納します。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_IPM_SENTMAIL_ENTRYID  <br/> |
-|識別子:  <br/> |0x35e4  <br/> |
+|識別子:  <br/> |0x35E4  <br/> |
 |データの種類 :   <br/> |PT_BINARY  <br/> |
-|エリア:  <br/> |フォルダー  <br/> |
+|エリア:  <br/> |Folder  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-送信後、個人間メッセージは通常、[送信済みアイテム] フォルダーに配置されます。 クライアントは、このプロパティを使用して、送信されたメッセージに対して**PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) プロパティを設定できます。 
+送信後、対人メッセージは通常、[送信されたアイテム] フォルダーに配置されます。 クライアントは、このプロパティを使用して、送信 **PR_SENTMAIL_ENTRYIDのプロパティ** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) プロパティを設定できます。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -58,7 +58,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

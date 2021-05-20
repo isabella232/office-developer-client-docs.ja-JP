@@ -25,7 +25,7 @@ ms.locfileid: "33438072"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォームが使用するプロパティの完全なセットへのポインターを返します。
+フォームで使用されるプロパティの完全なセットへのポインターを返します。
   
 ```cpp
 HRESULT CalcFormPropSet(
@@ -38,15 +38,15 @@ HRESULT CalcFormPropSet(
 
  _ulFlags_
   
-> 順番返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]返される文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> 返される文字列は、Unicode 形式です。 MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。
+> 返される文字列は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、文字列は ANSI 形式になります。
     
- _ppformproparray_
+ _ppFormPropArray_
   
-> 読み上げ返された[smapiformproparray](smapiformproparray.md)の構造体へのポインターへのポインター。 
+> [out]返される [SMAPIFormPropArray](smapiformproparray.md) 構造体へのポインターを指すポインター。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -56,7 +56,7 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> MAPI_UNICODE フラグが設定されていて、実装が unicode をサポートしていないか、または MAPI_UNICODE が設定されておらず、実装で unicode のみがサポートされています。
+> このフラグMAPI_UNICODE設定され、実装が Unicode をサポートしていないか、または設定されていないMAPI_UNICODE実装が Unicode のみをサポートしています。
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -64,7 +64,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|mfcoutput .cpp  <br/> |出力 forminfo (_c)  <br/> |mfcmapi は、フォーム情報オブジェクトのデバッグ出力を作成するときに**imapiforminfo:: CalcFormPropSet**メソッドを使用します。  <br/> |
+|MFCOutput.cpp  <br/> |_OutputFormInfo  <br/> |MFCMAPI は、フォーム情報オブジェクトのデバッグ出力を記述するときに **IMAPIFormInfo::CalcFormPropSet** メソッドを使用します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

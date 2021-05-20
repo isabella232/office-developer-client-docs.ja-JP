@@ -1,5 +1,5 @@
 ---
-title: メッセージストアプロバイダーのサンプル
+title: メッセージ ストア プロバイダーのサンプル
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,58 +15,58 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33436868"
 ---
-# <a name="message-store-provider-sample"></a>メッセージストアプロバイダーのサンプル
+# <a name="message-store-provider-sample"></a>メッセージ ストア プロバイダーのサンプル
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-サンプルのラップされた PST ストアプロバイダーは、データを保存するためのバックエンドとして個人用フォルダーファイル (pst) プロバイダを使用します。 ラップされた PST ストアプロバイダーは、レプリケーション API と一緒に使用する必要があります。 
+サンプル ラップされた PST ストア プロバイダーは、データを格納するためのバック エンドとして個人用フォルダー ファイル (PST) プロバイダーを使用します。 ラップされた PST ストア プロバイダーは、レプリケーション API と共に使用する必要があります。 
   
-レプリケーション API を使用すると、バックエンドデータリポジトリから Microsoft Outlook PST ストアにアイテムをレプリケートすることができます。 レプリケーション API を使用して、データを専用の PST ストアにレプリケートし、同期状態を追跡します。 詳細については、「[レプリケーション API につい](about-the-replication-api.md)て」を参照してください。
+レプリケーション API を使用すると、アイテムをバック エンド データ リポジトリから Microsoft の PST ストアOutlookできます。 レプリケーション API を使用して、専用の PST ストアにデータをレプリケートし、同期状態を追跡します。 詳細については、「レプリケーション [API について」を参照してください](about-the-replication-api.md)。
   
-サンプルのラップされた pst ストアプロバイダーの多くの関数は、引数を基になる pst プロバイダーに直接渡します。 特定の機能には特別な実装が必要であり、以下のトピックで説明されています。
+サンプル ラップされた PST ストア プロバイダーのほとんどの関数は、基になる PST プロバイダーに直接引数を渡します。 一部の関数では、特別な実装が必要であり、次のトピックで説明します。
   
 |||
 |:-----|:-----|
-|実行可能  <br/> |WrpPST32  <br/> |
-|ソースコードディレクトリ:  <br/> |SampleWrappedPSTStoreProvider\WrapPST  <br/> |
-|言語  <br/> |+  <br/> |
-|対象  <br/> |windows Vista、windows server 2008、windows XP SP2、および windows server 2003 SP1 用にコンパイルする Microsoft Visual Studio 2008  <br/> |
+|実行可能ファイル:  <br/> |WrpPST32.dll  <br/> |
+|ソース コード ディレクトリ:  <br/> |SampleWrappedPSTStoreProvider\WrapPST  <br/> |
+|言語:  <br/> |C++  <br/> |
+|プラットフォーム:  <br/> |Microsoft Visual Studio Vista、Windows Windows Server 2008、Windows XP SP2、Windows Server 2003 SP1 用にコンパイルする 2008  <br/> |
    
-## <a name="supported-features"></a>サポートされる機能
+## <a name="supported-features"></a>サポートされている機能
 
-このサンプルは、Microsoft outlook 2010 64 ビット版をサポートしており、outlook 2013 用に改訂されました。 追加情報については、以下のトピックを参照してください。
+このサンプルでは 64 ビットMicrosoft Outlook 2010サポートされ、2013 年に向Outlookされました。 詳細については、次のトピックを参照してください。
   
 - [レプリケーション API について](about-the-replication-api.md)
     
-- [ラップされた PST ストアプロバイダーの初期化](initializing-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーの初期化](initializing-a-wrapped-pst-store-provider.md)
     
-- [ラップされた PST ストアプロバイダーへのログオン](logging-on-to-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーへのログオン](logging-on-to-a-wrapped-pst-store-provider.md)
     
-- [ラップされた PST ストアプロバイダーの使用](using-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーの使用](using-a-wrapped-pst-store-provider.md)
     
-- [ラップされた PST ストアプロバイダーのシャットダウン](shutting-down-a-wrapped-pst-store-provider.md)
+- [ラップされた PST ストア プロバイダーのシャットダウン](shutting-down-a-wrapped-pst-store-provider.md)
     
- **サンプルのラップされた PST ストアプロバイダーをインストールするには**
+ **ラップされた PST ストア プロバイダーのサンプルをインストールするには**
   
-1. サンプルのラップされた PST プロバイダーをダウンロードするには、「 [Outlook MAPI サンプルのダウンロード](downloading-the-outlook-mapi-samples.md)」を参照してください。
+1. サンプル ラップされた PST プロバイダーをダウンロードするには、「MAPI サンプル[のダウンロードOutlookを参照してください](downloading-the-outlook-mapi-samples.md)。
     
-2. Outlook MAPI サンプルを保存したフォルダーを見つけます。 **OutlookMAPISamples-\<version\>番号**の zip フォルダーを右クリックし、[**すべて展開**] をクリックします。
+2. MAPI サンプルに保存したフォルダー Outlook探します。 **OutlookMAPISamples- バージョン \< \>** 番号 zip フォルダーを右クリックし、[すべて抽出]**をクリックします**。
     
-3. [**参照**] をクリックして、サンプルを保存する場所を選択し、[**抽出**] をクリックします。
+3. [ **参照]** をクリックし、サンプルを保存する場所を選択し、[抽出] を **クリックします**。
     
-4. Microsoft Visual Studio 2008 を実行します。
+4. 2008 Microsoft Visual Studioを実行します。
     
-5. Microsoft Visual Studio 2008 で、[**ファイル**] をクリックし、[**開く**] を選択して、[**プロジェクト/ソリューション**] をクリックします。
+5. [Microsoft Visual Studio 2008] で、[ファイル] をクリックし、[開く]**を選択し****、[Project/ソリューション] をクリックします**。
     
-6. サンプルを保存した場所を参照し、[ **WrapPST**] をクリックして、[**開く**] をクリックします。
+6. サンプルを保存した場所を参照し **、[WrapPST.vcproj]** をクリックし、[開く] を **クリックします**。
     
 7. [ **ビルド**] メニューで、[ **ソリューションのビルド**] をクリックします。
     
-8. [名前を付け**てファイルを保存**] ダイアログボックスで、[**保存**] をクリックします。
+8. [ファイルに **名前を付けて保存]** ダイアログ ボックスで、[保存] を **クリックします**。
     
-9. サンプルを保存したフォルダーで、**インストールする .bat**ファイルを右クリックし、[**管理者として実行**] をクリックします。
+9. サンプルを保存したフォルダーで、ファイルを右クリックし、[管理者としてinstall.bat]**をクリックします**。
     
 10. [**ユーザー アカウント制御**] ダイアログ ボックスで、[**続行**] をクリックします。
     

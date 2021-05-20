@@ -1,5 +1,5 @@
 ---
-title: Var 関数 (Access カスタム web アプリ)
+title: Var 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33437757"
 ---
-# <a name="var-function-access-custom-web-app"></a>Var 関数 (Access カスタム web アプリ)
+# <a name="var-function-access-custom-web-app"></a>Var 関数 (Access カスタム Web アプリ)
 
 クエリに指定したフィールドに含まれる値セットとして表現された標本母集団の不偏分散が返されます。
   
@@ -23,13 +23,13 @@ ms.locfileid: "33437757"
   
 ## <a name="syntax"></a>構文
 
- **Var**(*NumericExpression*) 
+ **Var** (*NumericExpression*) 
   
 **Var** 関数には次の引数があります。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
-| *NumericExpression*  <br/> |評価する数値データを含むフィールドを識別するテキスト式。または、そのフィールドのデータを使用して計算を実行する式を指定します。 *NumericExpression*のオペランドには、テーブルフィールドの名前、定数、または関数を含めることができます (組み込みまたはユーザー定義であっても、他の SQL 集計関数は使用できません)。  <br/> |
+| *NumericExpression*  <br/> |評価する数値データを含むフィールド、またはそのフィールドのデータを使用して計算を実行する式を示すテキスト式。 *NumericExpression* のオペランドには、テーブル フィールド、定数、または関数の名前を含めできます (組み込み関数またはユーザー定義関数を使用できますが、他の SQL 集計関数のいずれかではありません)。  <br/> |
    
 ## <a name="remarks"></a>注釈
 

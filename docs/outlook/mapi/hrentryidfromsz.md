@@ -25,11 +25,11 @@ ms.locfileid: "33437729"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-エントリ id を ASCII エンコードから再作成します。 
+ASCII エンコードからエントリ識別子を再作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
 |呼び出し元:  <br/> |クライアント アプリケーション  <br/> |
    
@@ -45,32 +45,32 @@ HRESULT HrEntryIDFromSz(
 
  _sz_
   
-> 順番エントリ識別子を作成する ASCII 文字列へのポインター。 
+> [in]エントリ識別子を作成する ASCII 文字列へのポインター。 
     
- _設計_
+ _pcb_
   
-> 読み上げ_ppentry_パラメーターによって指定されたエントリ識別子のサイズ (バイト数) へのポインター。 
+> [out]  _ppentry_ パラメーターが指すエントリ識別子のサイズ (バイト単位) へのポインター。 
     
  _ppentry_
   
-> 読み上げ新しいエントリ識別子を含む、返される[ENTRYID](entryid.md)構造体へのポインターへのポインター。 
+> [out]新しいエントリ識別子を含む、返 [される ENTRYID](entryid.md) 構造体へのポインターへのポインター。 
     
 ## <a name="return-value"></a>戻り値
 
 S_OK
   
-> 再レクリエーションは成功しました。
+> レクリエーションは成功しました。
     
 MAPI_E_INVALID_ENTRYID
   
-> エントリ ID が無効です。
+> エントリ ID が無効でした。
     
 ## <a name="remarks"></a>注釈
 
-**HrEntryIDFromSz**および[hrszfromentryid](hrszfromentryid.md)関数は、エントリ識別子の文字列形式とバイナリ形式の間の変換を提供します。 
+**HrEntryIDFromSz** 関数と [HrSzFromEntryID](hrszfromentryid.md)関数は、エントリ識別子の文字列形式とバイナリ形式の間の変換を提供します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**HrEntryIDFromSz**関数は、 [MAPIAllocateBuffer](mapiallocatebuffer.md)関数を使用して、ASCII 文字列のメモリを割り当てます。 
+**HrEntryIDFromSz** 関数は [、MAPIAllocateBuffer](mapiallocatebuffer.md)関数を使用して ASCII 文字列のメモリを割り当てる。 
   
 

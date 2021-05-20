@@ -25,13 +25,13 @@ ms.locfileid: "33437995"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-イベント通知の配列のサイズをバイト単位で指定し、配列に関連付けられているメモリを検証します。
+イベント通知の配列のサイズ (バイト単位) を決定し、配列に関連付けられているメモリを検証します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |Mapiutil  <br/> |
+|ヘッダー ファイル:  <br/> |Mapiutil.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 SCODE ScCountNotifications(
@@ -45,15 +45,15 @@ SCODE ScCountNotifications(
 
  _cntf_
   
-> 順番_rgntf_パラメーターで指定された、配列内の[通知](notification.md)構造の数。 
+> [in]_rgntf_[パラメーターで](notification.md)示される配列内の NOTIFICATION 構造体の数。 
     
  _rgntf_
   
-> 順番サイズが決定される**通知**構造の配列へのポインター。 
+> [in]サイズを決定する **NOTIFICATION** 構造体の配列へのポインター。 
     
- _設計_
+ _pcb_
   
-> 読み上げ(オプション) _rgntf_パラメーターで指定された配列のサイズ (バイト単位) を指すポインターです。 NULL の場合、 **sccountnotifications**は通知の配列を検証します。 
+> [out]  _rgntf_ パラメーターが指す配列のサイズ (バイト単位) へのオプションのポインター。 NULL の場合 **、ScCountNotifications は** 通知の配列を検証します。 
     
 ## <a name="return-value"></a>戻り値
 
@@ -67,6 +67,6 @@ MAPI_E_INVALID_PARAMETER
     
 ## <a name="remarks"></a>注釈
 
-_pcb_パラメーターで NULL が渡された場合、 **sccountnotifications**関数は通知の配列のみを検証しますが、カウントは行われません。非 null 値が_pcb_で渡された場合、 **sccountnotifications**は配列のサイズを決定し、原因となった_pcb_を格納します。 _pcb_パラメーターは、配列全体を格納するのに十分な大きさである必要があります。 
+_NULL_ が pcb パラメーターで渡された場合 **、ScCountNotifications** 関数は通知の配列のみを検証しますが、カウントは行われます。null 以外の値が _pcb_ で渡された場合 **、ScCountNotifications は** 配列のサイズを決定し、原因 _の pcb_ を格納します。 pcb  _パラメーターは_ 、配列全体を格納するのに十分な大きい値である必要があります。 
   
 

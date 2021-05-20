@@ -1,5 +1,5 @@
 ---
-title: フォームアイコンの表示
+title: フォーム アイコンの表示
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,25 +15,25 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438632"
 ---
-# <a name="displaying-form-icons"></a>フォームアイコンの表示
+# <a name="displaying-form-icons"></a>フォーム アイコンの表示
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-フォルダー内のメッセージの一覧を表示する場合、メッセージを標準の IPM のカスタムメッセージクラスと区別すると、ユーザーにとって便利です。メッセージを確認します。 カスタムメッセージクラスはフォームサーバーに対応しており、フォームサーバーはそれ自体を表すアイコンを提供します。 これらのアイコンをメッセージ一覧に表示して、ユーザーがメッセージを開く前に各メッセージのメッセージクラスに通知することができます。 通常、フォームの**PR_MINI_ICON** ([PidTagMiniIcon](pidtagminiicon-canonical-property.md)) プロパティのアイコンは、メッセージ一覧に表示される必要のあるものです。 フォームには、プロパティシートでフォームが最小化されているときに表示できる**PR_ICON** ([PidTagIcon](pidtagicon-canonical-property.md)) プロパティもあります。
+フォルダーにメッセージの一覧を表示する場合、カスタム メッセージ クラスを持つメッセージと標準 IPM を区別する場合は、ユーザーに役立ちます。メモ メッセージ。 カスタム メッセージ クラスはフォーム サーバーに対応し、フォーム サーバーは自分自身を表すアイコンを提供します。 これらのアイコンをメッセージの一覧に表示して、ユーザーがメッセージを開く前に、各メッセージのメッセージ クラスにユーザーに通知できます。 通常、メッセージの一覧にPR_MINI_ICON **(** [PidTagMiniIcon](pidtagminiicon-canonical-property.md)) プロパティのアイコンが表示されます。 フォームには、プロパティ **PR_ICON** でフォームを最小化するときに表示できるプロパティ [(PidTagIcon)](pidtagicon-canonical-property.md)もあります。
   
- **そのメッセージクラスのフォームサーバーをアクティブ化せずに、メッセージクラスのアイコンを取得するには**
+ **そのメッセージ クラスのフォーム サーバーをアクティブ化せずにメッセージ クラスのアイコンを取得するには**
   
-1. [imapiformmgr:: openformcontainer](imapiformmgr-openformcontainer.md)メソッドを呼び出して、 [imapiformmgr: IUnknown](imapiformcontaineriunknown.md)インターフェイスへのポインターを取得します。 
+1. [IMAPIFormMgr::OpenFormContainer](imapiformmgr-openformcontainer.md)メソッドを呼び出して[、IMAPIFormContainer : IUnknown](imapiformcontaineriunknown.md)インターフェイスへのポインターを取得します。 
     
-2. imapiformcontainer [:: ResolveMessageClass](imapiformcontainer-resolvemessageclass.md)メソッドを呼び出して、imapiformcontainer [: imapiprop](imapiforminfoimapiprop.md)インターフェイスへのポインターを取得します。 
+2. [IMAPIFormContainer::ResolveMessageClass](imapiformcontainer-resolvemessageclass.md)メソッドを呼び出して[、IMAPIFormInfo : IMAPIProp](imapiforminfoimapiprop.md)インターフェイスへのポインターを取得します。 
     
-3. [imapiforminfo:: makeiconfrombinary](imapiforminfo-makeiconfrombinary.md)メソッドを呼び出して、アイコンハンドルを取得します。 
+3. アイコン ハンドル [を取得するには、IMAPIFormInfo::MakeIconFromBinary](imapiforminfo-makeiconfrombinary.md) メソッドを呼び出します。 
     
-このアイコンは、標準の Win32 api を使用して表示できます。
+このアイコンは、標準の Win32 API を使用して表示できます。
   
 > [!IMPORTANT]
-> メッセージクラスのアイコンを取得したら、そのアイコンをキャッシュするためにすべての作業を行います。 キャッシュされていないアイコンは、クライアントアプリケーションのパフォーマンスに重大な影響を及ぼします。 アイコンをキャッシュするときは、メッセージクラスとそのサブクラスの関係に注意してください。 たとえば、IPM.注: 取り消しメッセージクラスが発生して、IPM に再度解決します。注: IPM のすべてのサブクラスが想定されているわけではありません。注: IPM のアイコンを使用する必要があります。こと. 
+> メッセージ クラスのアイコンを取得したら、そのアイコンをキャッシュするためにあらゆる努力をします。 アイコンをキャッシュしないは、クライアント アプリケーションのパフォーマンスに重大な影響を与えます。 アイコンをキャッシュする場合は、メッセージ クラスとそのサブクラス間の関係に注意してください。 たとえば、IPM の場合です。メモ.Meeting.Cancel メッセージ クラスは IPM に解決されます。注: IPM のすべてのサブクラスを想定していない。メモでは、IPM のアイコンを使用する必要があります。注。 
   
 

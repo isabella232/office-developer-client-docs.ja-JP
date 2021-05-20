@@ -1,5 +1,5 @@
 ---
-title: Exp 関数 (Access カスタム web アプリ)
+title: Exp 関数 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33436413"
 ---
-# <a name="exp-function-access-custom-web-app"></a>Exp 関数 (Access カスタム web アプリ)
+# <a name="exp-function-access-custom-web-app"></a>Exp 関数 (Access カスタム Web アプリ)
 
 指定した式の指数値を戻します。
   
@@ -23,7 +23,7 @@ ms.locfileid: "33436413"
   
 ## <a name="syntax"></a>構文
 
- **Exp**(*NumericExpression*) 
+ **Exp** (*NumericExpression*) 
   
 **Exp** 関数には以下の引数が含まれます。 
   
@@ -37,6 +37,6 @@ ms.locfileid: "33436413"
   
 ある数値の指数とは、定数 **e** をべき乗する数値です。たとえば、 **Exp** (1.0) = e^1.0 = 2.71828182845905 となり、 **Exp** (10) = e^10 = 22026.4657948067 となります。 
   
-数値の自然対数の指数は、数値そのものを示します。 **Exp** (LOG (n)) = n。 また、数値の指数の自然対数は、数値自体: LOG (**Exp** (n)) = n となります。 
+数値の自然対数の指数は、数値自体である **Exp** (LOG (n)) = n です。 数値の指数関数の自然対数は、数値自体です。LOG (**Exp** (n)) = n。 
   
 

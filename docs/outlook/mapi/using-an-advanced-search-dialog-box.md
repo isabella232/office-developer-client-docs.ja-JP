@@ -1,5 +1,5 @@
 ---
-title: '[高度な検索] ダイアログボックスを使用する'
+title: '[高度な検索] ダイアログ ボックスの使用'
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,24 +15,24 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33437302"
 ---
-# <a name="using-an-advanced-search-dialog-box"></a>[高度な検索] ダイアログボックスを使用する
+# <a name="using-an-advanced-search-dialog-box"></a>[高度な検索] ダイアログ ボックスの使用
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-アドレス帳のコンテナーには、クライアントが**PR_DISPLAY_NAME**以外のプロパティ ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) を検索できる高度な検索機能をサポートしているものがあります。 高度な検索をサポートするアドレス帳コンテナーには、 **PR_SEARCH** ([PidTagSearch](pidtagsearch-canonical-property.md)) という名前のコンテナーオブジェクトプロパティがあります。 この container オブジェクトは、[検索] ダイアログボックスについて説明する表示テーブルへのアクセスを提供します。このダイアログボックスは、高度な検索条件を入力および編集するために使用されます。
+一部のアドレス帳コンテナーは高度な検索機能をサポートしています。これにより、クライアントは、ユーザー以外のプロパティ[(PidTagDisplayName)](pidtagdisplayname-canonical-property.md)をPR_DISPLAY_NAME検索できます。 高度な検索をサポートするアドレス帳コンテナーには、PR_SEARCH ([PidTagSearch](pidtagsearch-canonical-property.md)) というコンテナー **オブジェクト プロパティ** があります。 このコンテナー オブジェクトは、検索ダイアログ ボックス (高度な検索条件の入力と編集に使用されるダイアログ ボックス) を説明する表示テーブルへのアクセスを提供します。
   
- **アドレス帳コンテナーに対して高度な検索を実行するには**
+ **アドレス帳コンテナーで高度な検索を実行するには**
   
-1. コンテナーの[imapiprop:: openproperty](imapiprop-openproperty.md)メソッドを呼び出し、プロパティタグと IID_IMAPIContainer のインターフェイス識別子に**PR_SEARCH**を指定します。 
+1. コンテナーの [IMAPIProp::OpenProperty](imapiprop-openproperty.md) メソッドを呼び出し、プロパティ **タグ** PR_SEARCHインターフェイス識別子のIID_IMAPIContainerを指定します。 
     
-2. **PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) をプロパティタグと IID_IMAPITable のインターフェイス識別子に指定して、search オブジェクトの**imapiprop:: openproperty**メソッドを呼び出します。 
+2. プロパティ タグの PR_DETAILS_TABLE ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) とインターフェイス識別子の **IID_IMAPITable** を指定して、検索オブジェクトの **IMAPIProp::OpenProperty** メソッドを呼び出します。 
     
-3. 検索オブジェクトの[imapiprop:: setprops](imapiprop-setprops.md)メソッドを呼び出して、高度な検索で使用されるプロパティの値を設定します。 
+3. 検索オブジェクトの [IMAPIProp::SetProps](imapiprop-setprops.md) メソッドを呼び出して、高度な検索で使用するプロパティの値を確立します。 
     
-4. 検索オブジェクトの[imapiprop:: SaveChanges](imapiprop-savechanges.md)メソッドを呼び出して、高度な検索条件を保存します。 
+4. 高度な検索条件を保存するには、検索オブジェクトの [IMAPIProp::SaveChanges](imapiprop-savechanges.md) メソッドを呼び出します。 
     
-この一連の呼び出しでは、クライアントが search オブジェクトの**getsearchcriteria**メソッドを呼び出すときに、制限が有効になります。 
+この一連の呼び出しは、クライアントが検索オブジェクトの **GetSearchCriteria** メソッドを呼び出す際に使用できる制限になります。 
   
 

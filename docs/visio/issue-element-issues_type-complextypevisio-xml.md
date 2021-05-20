@@ -14,18 +14,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34541128"
 ---
-# <a name="issue-element-issuestype-complextype-visio-xml"></a>Issue 要素 (Issues_Type complexType) (Visio XML)
+# <a name="issue-element-issues_type-complextype-visio-xml"></a>Issue 要素 (Issues_Type complexType) (Visio XML)
 
 文書内の1つの検証問題を表します。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Issue_Type](issue_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
-|**文書パーツ** <br/> |検証 xml  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
+|**ドキュメント パーツ** <br/> |validation.xml  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -36,26 +36,26 @@ ms.locfileid: "34541128"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
+スキーマで **sequence**、**minOccurs**、**maxOccurs**、**choice** などの具体的な要件が定義されている場合は、定義のセクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[Issues](issues-element-validation_type-complextypevisio-xml.md) <br/> |[Issues_Type](issues_type-complextypevisio-xml.md) <br/> |文書のすべての**Issue**要素を含みます。  <br/> |
+|[Issues](issues-element-validation_type-complextypevisio-xml.md) <br/> |[Issues_Type](issues_type-complextypevisio-xml.md) <br/> |ドキュメントのすべての **Issue** 要素が含まれます。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
 |**Element**|**型**|**説明**|
 |:-----|:-----|:-----|
-|["発信先"](issuetarget-element-issue_type-complextypevisio-xml.md) <br/> |[IssueTarget_Type](issuetarget_type-complextypevisio-xml.md) <br/> |親の検証問題のターゲットに応じて、親の検証の問題に関連付けられているページまたはページと図形の両方を指定します。  <br/> |
-|[RuleInfo](ruleinfo-element-issue_type-complextypevisio-xml.md) <br/> |[RuleInfo_Type](ruleinfo_type-complextypevisio-xml.md) <br/> |親の検証問題に関連する検証ルールについての情報を指定します。  <br/> |
+|[IssueTarget](issuetarget-element-issue_type-complextypevisio-xml.md) <br/> |[IssueTarget_Type](issuetarget_type-complextypevisio-xml.md) <br/> |親の検証の問題の対象に応じて、親の検証の問題に関連付けられているページ、またはページと図形の両方を指定します。  <br/> |
+|[RuleInfo](ruleinfo-element-issue_type-complextypevisio-xml.md) <br/> |[RuleInfo_Type](ruleinfo_type-complextypevisio-xml.md) <br/> |親検証の問題に関連する検証ルールに関する情報を指定します。  <br/> |
    
 ### <a name="attributes"></a>属性
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|ID  <br/> |xsd: アン Signedint  <br/> |必須  <br/> |検証の問題の一意識別子を指定します。  <br/> |Xsd:/Signedint 型の値。  <br/> |
-|Ignored  <br/> |xsd: boolean  <br/> |省略可能  <br/> |親の検証問題に関連する検証ルールについての情報を指定します。  <br/> |Xsd: boolean 型の値。  <br/> |
+|ID  <br/> |xsd:unsignedInt  <br/> |必須  <br/> |検証の問題の一意の識別子を指定します。  <br/> |xsd:unsignedInt 型の値。  <br/> |
+|無視  <br/> |xsd:boolean  <br/> |省略可能  <br/> |親検証の問題に関連する検証ルールに関する情報を指定します。  <br/> |xsd:boolean 型の値。  <br/> |
    
 

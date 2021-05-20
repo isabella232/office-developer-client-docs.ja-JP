@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251579
 localization_priority: Normal
 ms.assetid: f34db20d-6501-2026-a5e8-29c4d4cb2405
-description: 一様でない有理数 B スプライン (NURBS) を返します。 この関数は、[nurbsto] geometry 行の E セルで使用されます。
+description: 非一次有理 B スプライン (NURBS) を返します。 この関数は、NURBSTo ジオメトリ行の E セルで使用されます。
 ms.openlocfilehash: af92374a829c0df8e71ac81e630abc4fa64988dc
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,20 +18,20 @@ ms.locfileid: "33438457"
 ---
 # <a name="nurbs-function"></a>NURBS 関数
 
-一様でない有理数 B スプライン (NURBS) を返します。 この関数は、[nurbsto] geometry 行の E セルで使用されます。
+非一次有理 B スプライン (NURBS) を返します。 この関数は、NURBSTo ジオメトリ行の E セルで使用されます。
   
 ## <a name="syntax"></a>構文
 
-NURBS (* * *knotLast* * *、* **度** *、* * *xType* * *、* * *yType* * *、* * *x1* * *、* * *y1* * *、* * *knot1* * *、* * *weight1* * *、...) 
+NURBS(** *knotLast* **, ** *degree* **, ** xType **, ** *yType* **, ** x1 **,  ** *y1* **, ** knot1 **, **  *weight1* **, ..)  
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _knotLast_ <br/> |必須  <br/> |**string** <br/> | 最後のノットを指定します。  <br/> |
-| _度合_ <br/> |必須  <br/> |**数値** <br/> |スプラインの角度を指定します。  <br/> |
-| _xType_ <br/> |必須  <br/> |**数値** <br/> |_x_入力データを解釈する方法を指定します。 _xType_が0の場合、すべての_x_入力データは幅に対する割合として解釈されます。 _xType_が1の場合、すべての_x_入力データはローカル座標として解釈されます。  <br/> |
-| _yType_ <br/> |必須  <br/> |**数値** <br/> |_y_入力データの解釈方法を指定します。 _yType_が0の場合、すべての_y_入力データは、高さの割合として解釈されます。 _yType_が1の場合、すべての_y_入力データはローカル座標として解釈されます。  <br/> |
+| _度_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |スプラインの角度を指定します。  <br/> |
+| _xType_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |x 入力データの解釈方法  _を_ 指定します。 _xType が_ 0 の場合、_すべての x_ 入力データは Width のパーセンテージとして解釈されます。 _xType が_ 1 の場合、_すべての x_ 入力データはローカル座標として解釈されます。  <br/> |
+| _yType_ <br/> |必須  <br/> |**数値型 (Numeric)** <br/> |y 入力データの  _解釈方法を_ 指定します。 _yType が_ 0 の場合、_すべての y_ 入力データは Height のパーセンテージとして解釈されます。 _yType が_ 1 の場合、_すべての y_ 入力データはローカル座標として解釈されます。  <br/> |
 | _x1_ <br/> |必須  <br/> |**String** <br/> |x 座標を指定します。  <br/> |
 | _y1_ <br/> |必須  <br/> |**String** <br/> |y 座標を指定します。  <br/> |
 | _knot1_ <br/> |必須  <br/> |**String** <br/> |B スプライン上のノットを指定します。  <br/> |
@@ -39,8 +39,8 @@ NURBS (* * *knotLast* * *、* **度** *、* * *xType* * *、* * *yType* * *、* 
    
 ## <a name="remarks"></a>注釈
 
-すべての*x*引数に対して、 *y*引数が必要です。それ以外の場合は、エラーが返されます。 
+x 引数  *ごとに y*  引数  *が必要*  です。それ以外の場合は、エラーが返されます。 
   
-少なくとも1つの*x*、 *y*、*ノット*、および*weight*引数を指定する必要があります。それ以外の場合、Visio はエラーを返します。 
+少なくとも 1 つの *x、y*、ノット、*および weight* 引数を *指定する必要* があります。それ以外の場合Visioエラーが返されます。 
   
 

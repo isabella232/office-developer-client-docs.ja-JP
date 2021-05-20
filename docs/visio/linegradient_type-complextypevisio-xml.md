@@ -1,5 +1,5 @@
 ---
-title: LineGradient_Type complexType (Visio XML)
+title: LineGradient_Type complexType (xml Visio)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,14 +13,14 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34541170"
 ---
-# <a name="linegradienttype-complextype-visio-xml"></a>LineGradient_Type complexType (Visio XML)
+# <a name="linegradient_type-complextype-visio-xml"></a>LineGradient_Type complexType (xml Visio)
 
 ## <a name="type-information"></a>型情報
 
 |||
 |:-----|:-----|
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15-06-05  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
 |**拡張ベース** <br/> |Section_Type  <br/> |
    
 ## <a name="definition"></a>定義
@@ -44,7 +44,7 @@ ms.locfileid: "34541170"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
+スキーマで **sequence**、**minOccurs**、**maxOccurs**、**choice** などの具体的な要件が定義されている場合は、定義のセクションを参照してください。 
   
 ### <a name="child-elements"></a>子要素
 

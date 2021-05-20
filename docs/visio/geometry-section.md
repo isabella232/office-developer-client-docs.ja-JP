@@ -20,29 +20,29 @@ ms.locfileid: "34542283"
 
 図形を構成する直線と円弧の頂点の座標を一覧表示する行を格納します。 
   
-図形のジオメトリは、複数の [ **geometry** ] セクションで表すことができます。 複数のパスが異なるプロパティ ([画像のクリッピング](clippingpath-cell-foreign-image-info-section.md)パスなど) を持つ場合は、複数のパスが役に立つことがあります。 
+図形のジオメトリは、複数の Geometry セクション **で** 表現できます。 複数のパスが異なるプロパティ (イメージ クリッピング パスなど) を持つ場合は、複数 [のパスを使用すると](clippingpath-cell-foreign-image-info-section.md) 便利です。 
   
 ## <a name="remarks"></a>注釈
 
-[ **Geometry** ] セクションには、次の行の種類が含まれます。 詳細については、各行のトピックを参照してください。 
+**[Geometry]** セクションには、次の行の種類が含まれます。 詳細については、各行のトピックを参照してください。 
   
-|Row|説明|
+|行|説明|
 |:-----|:-----|
 |[MoveTo](moveto-row-geometry-section.md) <br/> |目的の座標に移動します。  <br/> |
 |[LineTo](lineto-row-geometry-section.md) <br/> |座標までの線を描画します。  <br/> |
-|[[Arcto]](arcto-row-geometry-section.md) <br/> |座標までの真円の弧を描画します。  <br/> |
-|[[Ellipticalarcto]](ellipticalarcto-row-geometry-section.md) <br/> |座標までの楕円の弧を描画します。  <br/> |
-|[[Polylineto]](polylineto-row-geometry-section.md) <br/> |座標までのポリラインまたは連続した線を描画します。  <br/> |
-|[[Nurbsto]](nurbsto-row-geometry-section.md) <br/> |座標に一様でない有理数 (NURBS) を描画します。  <br/> |
-|[[Splinestart]](splinestart-row-geometry-section.md) <br/> |スプラインを開始します。  <br/> |
-|[[Splineknot]](splineknot-row-geometry-section.md) <br/> |ノット座標までのスプライン セグメントを描画します。  <br/> |
-|[[Infiniteline]](infiniteline-row-geometry-section.md) <br/> |1 つの座標から別の座標に無限線を描画します。  <br/> |
-|[もう](ellipse-row-geometry-section.md) <br/> |中心座標および長軸/短軸から楕円を描画します。  <br/> |
-|[[Relcubbezto]](relcubbezto-row-geometry-section.md) <br/> |図形の幅と高さを基準に3次ベジエ曲線を描画します。  <br/> |
-|[[Relellipticalarcto]](relellipticalarcto-row-geometry-section.md) <br/> |図形の高さと幅を基準にして、座標に楕円の弧を描画します。  <br/> |
-|[[Rellineto]](rellineto-row-geometry-section.md) <br/> |図形の高さと幅を基準にして、座標に直線を描画します。  <br/> |
-|[[Relmoveto]](relmoveto-row-geometry-section.md) <br/> |図形の幅と高さを基準にして座標に移動します。  <br/> |
-|[[Relquadbezto]](relquadbezto-row-geometry-section.md) <br/> |図形の幅と高さを基準にして、2次ベジエ曲線を描画します。  <br/> |
+|[ArcTo](arcto-row-geometry-section.md) <br/> |座標までの真円の弧を描画します。  <br/> |
+|[楕円ArcTo](ellipticalarcto-row-geometry-section.md) <br/> |座標までの楕円の弧を描画します。  <br/> |
+|[ポリラインTo](polylineto-row-geometry-section.md) <br/> |座標までのポリラインまたは連続した線を描画します。  <br/> |
+|[NURBSTo](nurbsto-row-geometry-section.md) <br/> |非一様な合理的な B スプライン (NURBS) を座標に描画します。  <br/> |
+|[SplineStart](splinestart-row-geometry-section.md) <br/> |スプラインを開始します。  <br/> |
+|[SplineKnot](splineknot-row-geometry-section.md) <br/> |ノット座標までのスプライン セグメントを描画します。  <br/> |
+|[InfiniteLine](infiniteline-row-geometry-section.md) <br/> |1 つの座標から別の座標に無限線を描画します。  <br/> |
+|[楕円](ellipse-row-geometry-section.md) <br/> |中心座標および長軸/短軸から楕円を描画します。  <br/> |
+|[RelCubBezTo](relcubbezto-row-geometry-section.md) <br/> |図形の幅と高さを基準に 3 次ベジエ曲線を描画します。  <br/> |
+|[RelEllipticalArcTo](relellipticalarcto-row-geometry-section.md) <br/> |図形の高さと幅を基準に楕円円弧を座標に描画します。  <br/> |
+|[RelLineTo](rellineto-row-geometry-section.md) <br/> |図形の高さと幅を基準に座標に線を描画します。  <br/> |
+|[RelMoveTo](relmoveto-row-geometry-section.md) <br/> |図形の幅と高さを基準に座標に移動します。  <br/> |
+|[RelQuadBezTo](relquadbezto-row-geometry-section.md) <br/> |図形の幅と高さを基準に 2 次ベジエ曲線を描画します。  <br/> |
    
 このセクションにある行の種類を変更するには、行を右クリックして、ショートカット メニューの [**図形要素の変更**] をクリックします。 
   

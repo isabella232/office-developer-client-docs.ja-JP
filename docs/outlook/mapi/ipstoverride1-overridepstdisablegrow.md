@@ -25,7 +25,7 @@ ms.locfileid: "33438926"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-PSTDisableGrow ポリシーを無効にして、セッションの個人用フォルダー (.pst) ファイルのロックを解除します。
+セッションの個人用フォルダー (.pst) ファイルのロックを解除し、PSTDisableGrow ポリシーを上書きします。
   
 ```cpp
 HRESULT OverridePSTDisableGrow();

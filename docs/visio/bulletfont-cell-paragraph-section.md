@@ -28,14 +28,14 @@ ms.locfileid: "33438464"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [bulletfont] [ *i* ] *i* = <1>、2、3...  <br/> |
+| セル名 :  <br/> | Para.BulletFont[ i ]*ここで**、i* = <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [BulletFont] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
 | セクション インデックス:  <br/> |**visSectionParagraph** <br/> |
-| 行インデックス:  <br/> |**visRowParagraph** +  *i* = ** 0、1、2...  <br/> |
+| 行インデックス:  <br/> |**visRowParagraph**  +  *i* *=* 0, 1, 2...  <br/> |
 | セル インデックス:  <br/> |**visBulletFont** <br/> |
    
 

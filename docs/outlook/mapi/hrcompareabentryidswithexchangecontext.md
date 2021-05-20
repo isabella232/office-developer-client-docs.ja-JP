@@ -21,13 +21,13 @@ ms.locfileid: "33436434"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-2つのアドレス帳**エントリ id**を複数の Exchange プロファイルで安全に比較します。 この関数は、 [IAddrBook:: compareentryids](iaddrbook-compareentryids.md)の置換関数です。
+複数のアドレス帳プロファイルで **2** つのアドレス帳エントリのEXCHANGEします。 この関数は [、IAddrBook::CompareEntryIDs の置換関数です](iaddrbook-compareentryids.md)。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |abhelp .h  <br/> |
+|ヘッダー ファイル:  <br/> |abhelp.h  <br/> |
 |実装元:  <br/> |MAPI  <br/> |
-|呼び出し元:  <br/> |クライアントアプリケーションとサービスプロバイダー  <br/> |
+|呼び出し元:  <br/> |クライアント アプリケーションとサービス プロバイダー  <br/> |
    
 ```cpp
 HRESULT HrCompareABEntryIDsWithExchangeContext(
@@ -47,38 +47,38 @@ HRESULT HrCompareABEntryIDsWithExchangeContext(
 
  _pmsess_
   
-> 順番ログオンしている**imapisession**。 NULL にすることはできません。
+> [in]ログオンしている **IMAPISession**。 NULL にすることはできません。
     
  _pEmsmdbUID_
   
-> 順番この関数がエントリ識別子の詳細を表示するために使用する exchange アドレス帳プロバイダーを含む exchange サービスを識別する**emsmdbUID**へのポインター。 受信エントリ識別子が Exchange アドレス帳プロバイダーエントリ識別子ではない場合、このパラメーターは無視され、関数呼び出しは[IAddrBook::D etails](iaddrbook-details.md)のように動作します。 このパラメーターが NULL またはゼロ MAPIUID の場合、この関数は[IAddrBook::D etails](iaddrbook-details.md)のように動作します。
+> [in]この関数がエントリ識別子の詳細を表示するために使用する Exchange アドレス帳プロバイダーを含む Exchange サービスを識別する **emsmdbUID** へのポインター。 受信エントリ識別子が Exchange アドレス帳プロバイダーエントリ識別子ではない場合、このパラメーターは無視され、関数呼び出し[は IAddrBook::D etails](iaddrbook-details.md)のように動作します。 このパラメーターが NULL または 0 の MAPIUID の場合、この関数は [IAddrBook::D同様に動作します](iaddrbook-details.md)。
     
  _pAddrBook_
   
-> 順番エントリ識別子を開くために使用されるアドレス帳。 NULL にすることはできません。
+> [in]エントリ識別子を開くのに使用するアドレス帳。 NULL にすることはできません。
     
  _cbEntryID1_
   
-> 順番_lpEntryID1_パラメーターによって指定された最初のエントリ識別子のバイト数。 
+> [in]  _lpEntryID1_ パラメーターで指定された最初のエントリ識別子のバイト 数。 
     
  _lpEntryID1_
   
-> 順番比較するアドレス帳のエントリを表す最初のエントリ識別子へのポインター。
+> [in]比較するアドレス帳エントリを表す最初のエントリ識別子へのポインター。
     
  _cbEntryID2_
   
-> 順番_lpEntryID2_パラメーターによって指定された2番目のエントリ識別子のバイト数。 
+> [in]  _lpEntryID2_ パラメーターで指定された 2 番目のエントリ識別子のバイト 数。 
     
  _lpEntryID2_
   
-> 順番比較に使用されるアドレス帳のエントリを表す2番目のエントリ識別子へのポインター。
+> [in]比較するアドレス帳エントリを表す比較で使用される 2 番目のエントリ識別子へのポインター。
     
  _ulFlags_
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lルー result_
+ _lpulResult_
   
-> 読み上げ比較結果が格納されている場所へのポインター。 
+> [out]比較の結果を含む場所へのポインター。 
     
 

@@ -1,5 +1,5 @@
 ---
-title: 送信または保存されたメッセージの検索
+title: 送信済みまたは保存済みメッセージの検索
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,32 +15,32 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33437421"
 ---
-# <a name="finding-sent-or-saved-messages"></a>送信または保存されたメッセージの検索
+# <a name="finding-sent-or-saved-messages"></a>送信済みまたは保存済みメッセージの検索
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
- **保存または送信したすべての送信メッセージを検索するには**
+ **保存または送信した送信メッセージを検索するには**
   
-1. [IMsgStore:: compareentryids](imsgstore-compareentryids.md)を呼び出して、送信したメッセージを含むフォルダーと、受信メッセージを含むフォルダーを比較します。 
+1. [IMsgStore::CompareEntryIDs](imsgstore-compareentryids.md)を呼び出して、送信されたメッセージを含むフォルダーと受信メッセージを含むフォルダーを比較します。 
     
-2. _lpEntryID1_パラメーターを**PR_IPM_SENTMAIL_ENTRYID** ([PidTagIpmSentMailEntryId](pidtagipmsentmailentryid-canonical-property.md)) を指すように設定し、 _lpEntryID2_パラメーターを**PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md)) を指すように設定します。
+2. _lpEntryID1_ パラメーターを **PR_IPM_SENTMAIL_ENTRYID** ([PidTagIpmSentMailEntryId)](pidtagipmsentmailentryid-canonical-property.md)をポイントし _、lpEntryID2_ パラメーターを **PR_PARENT_ENTRYID** ([PidTagParentEntryId)](pidtagparententryid-canonical-property.md)をポイントするに設定します。
     
-送信されたメッセージを削除した場合や、送信したメッセージのいずれかを別のフォルダーに移動した場合は、この方法が機能しないことに注意してください。 
+送信後にメッセージを削除するか、送信されたメッセージを別のフォルダーに移動した場合、この戦略は機能しません。 
   
-受信メッセージを調べている場合、通常はトランスポートプロバイダーによって設定されるプロパティが存在しないことに注意してください。メッセージがトランスポートプロバイダーによって処理されていないことを前提としています。 これらのプロパティは次のとおりです。
+受信メッセージを調べる中で、トランスポート プロバイダーによって通常設定されているプロパティが見つからない場合は、メッセージがトランスポート プロバイダーによって処理されたことがないと仮定できます。 これらのプロパティは次のとおりです。
   
-- **PR_RECEIVED_BY**プロパティ 
+- **PR_RECEIVED_BY** プロパティ 
     
-- **PR_MESSAGE_DOWNLOAD_TIME**([PidTagMessageDownloadTime](pidtagmessagedownloadtime-canonical-property.md))
+- **PR_MESSAGE_DOWNLOAD_TIME** ([PidTagMessageDownloadTime](pidtagmessagedownloadtime-canonical-property.md))
     
-- **PR_TRANSPORT_MESSAGE_HEADERS**([PidTagTransportMessageHeaders](pidtagtransportmessageheaders-canonical-property.md))
+- **PR_TRANSPORT_MESSAGE_HEADERS** ([PidTagTransportMessageHeaders](pidtagtransportmessageheaders-canonical-property.md))
     
-- **PR_MESSAGE_TO_ME**([PidTagMessageToMe](pidtagmessagetome-canonical-property.md))
+- **PR_MESSAGE_TO_ME** ([PidTagMessageToMe](pidtagmessagetome-canonical-property.md))
     
-- **PR_MESSAGE_CC_ME**([PidTagMessageCcMe](pidtagmessageccme-canonical-property.md))
+- **PR_MESSAGE_CC_ME** ([PidTagMessageCcMe](pidtagmessageccme-canonical-property.md))
     
-- **PR_MESSAGE_RECIP_ME**([PidTagMessageRecipientMe](pidtagmessagerecipientme-canonical-property.md))
+- **PR_MESSAGE_RECIP_ME** ([PidTagMessageRecipientMe](pidtagmessagerecipientme-canonical-property.md))
     
 

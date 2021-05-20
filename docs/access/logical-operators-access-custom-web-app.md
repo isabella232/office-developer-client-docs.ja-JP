@@ -1,5 +1,5 @@
 ---
-title: 論理演算子 (Access カスタム web アプリ)
+title: 論理演算子 (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,18 +14,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33437666"
 ---
-# <a name="logical-operators-access-custom-web-app"></a>論理演算子 (Access カスタム web アプリ)
+# <a name="logical-operators-access-custom-web-app"></a>論理演算子 (Access カスタム Web アプリ)
 
 > [!IMPORTANT]
 > マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。 
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [および (Access カスタム web アプリ)](and-access-custom-web-app.md)
+- [AND (Access カスタム Web アプリ)](and-access-custom-web-app.md)
     
-- [NOT (Access カスタム web アプリ)](not-access-custom-web-app.md)
+- [NOT (Access custom Web app)](not-access-custom-web-app.md)
     
-- [または (Access カスタム web アプリ)](or-access-custom-web-app.md)
+- [OR (カスタム Web アプリへのアクセス)](or-access-custom-web-app.md)
     
 - [IS [NOT] NULL (Access カスタム Web アプリ)](is-not-null-access-custom-web-app.md)
     

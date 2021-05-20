@@ -8,7 +8,7 @@ f1_keywords:
 - vis_sdr.chm80002
 localization_priority: Normal
 ms.assetid: 99a5ca0e-5cb4-64cc-8af5-15ac6d02c77f
-description: 図面ページのサイズをダイアグラムに合わせて自動的に変更するかどうかを指定します。
+description: 図面ページのサイズを図に合わせて自動的にサイズ変更するかどうかを指定します。
 ms.openlocfilehash: 6956c1e021ffffdb54f3dfa36270b9df04e892b0
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33437008"
 ---
 # <a name="drawingresizetype-cell-page-properties-section"></a>[DrawingResizeType] セル ([Page Properties] セクション)
 
-図面ページのサイズをダイアグラムに合わせて自動的に変更するかどうかを指定します。 
+図面ページのサイズを図に合わせて自動的にサイズ変更するかどうかを指定します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -26,7 +26,7 @@ ms.locfileid: "33437008"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[drawingresizetype]  <br/> |
+|セル名:  <br/> |DrawingResizeType  <br/> |
    
 プログラムから、インデックスによって [DrawingResizeType] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

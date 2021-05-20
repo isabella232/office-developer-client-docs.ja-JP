@@ -23,11 +23,11 @@ ms.locfileid: "33437645"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-編集コントロールを記述するための[DTBLEDIT](dtbledit.md)構造体と、コントロールに入力できる最大文字数を含む名前付き構造を作成します。 
+編集コントロールを記述するための [DTBLEDIT](dtbledit.md) 構造と、コントロールに入力できる最大文字数を含む名前付き構造を作成します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
 |関連する構造:  <br/> |**DTBLEDIT** <br/> |
    
 ```cpp
@@ -42,11 +42,11 @@ _n_
     
 _u_
   
-> 新しい構造の名前を指定します。
+> 新しい構造の名前。
     
 ## <a name="remarks"></a>注釈
 
-**SizedDtblEdit**マクロを使用すると、有効な文字数が既知の場合に編集コントロールを定義できます。 次のメンバーで新しい構造が作成されます。 
+**SizedDtblEdit マクロ** を使用すると、有効な文字の数が分かっているときに編集コントロールを定義できます。 新しい構造は、次のメンバーで作成されます。 
   
 ```cpp
 DTBLEDIT dtbledit;
@@ -54,7 +54,7 @@ TCHAR lpszCharsAllowed[n];
 
 ```
 
-**SizedDtblEdit**マクロの結果として得られる構造体へのポインターを**DTBLEDIT**構造体ポインターとして使用するには、次のキャストを実行します。 
+**SizedDtblEdit** マクロから生成される構造へのポインターを **DTBLEDIT** 構造ポインターとして使用するには、次のキャストを実行します。 
   
 ```cpp
 lpDtblEdit = (LPDTBLEDIT) &SizedDtblEdit;

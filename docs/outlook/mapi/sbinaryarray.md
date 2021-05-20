@@ -25,11 +25,11 @@ ms.locfileid: "33438289"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-バイナリ値の配列を格納します。 
+バイナリ値の配列を含む。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SBinaryArray
@@ -40,21 +40,21 @@ typedef struct _SBinaryArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cvalues**
+ **cValues**
   
-> **lpbin**メンバーが指す配列内の値の数。 
+> lpbin メンバーが指す配列内の **値の** 数。 
     
  **lpbin**
   
-> バイナリ値を保持する[sbinary](sbinary.md)構造体の配列へのポインター。 
+> バイナリ値を保持 [する SBinary](sbinary.md) 構造体の配列へのポインター。 
     
 ## <a name="remarks"></a>注釈
 
-**sbinaryarray**構造体は、PT_MV_BINARY 型のプロパティを記述するために使用されます。 
+**SBinaryArray 構造体は**、型のプロパティを記述するために使用PT_MV_BINARY。 
   
-PT_MV_BINARY の詳細については、「[プロパティの種類の一覧](property-types.md)」を参照してください。
+プロパティの詳細については、「プロパティPT_MV_BINARY [リスト」を参照してください](property-types.md)。
   
 ## <a name="see-also"></a>関連項目
 

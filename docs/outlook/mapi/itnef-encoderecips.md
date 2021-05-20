@@ -25,7 +25,7 @@ ms.locfileid: "33437652"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージのトランスポート中立カプセル化形式 (TNEF) データストリームで、メッセージの受信者テーブルのビューをエンコードします。
+メッセージのカプセル化形式 (TNEF) データ ストリームで、Transport-Neutralの受信者テーブルのビューをエンコードします。
   
 ```cpp
 HRESULT EncodeRecips(
@@ -40,25 +40,25 @@ HRESULT EncodeRecips(
   
 > [����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B
     
- _lp受信者テーブル_
+ _lpRecipientTable_
   
-> 順番ビューがエンコードされている受信者テーブルへのポインター。 _lp受信者テーブル_パラメーターは NULL にすることができます。 
+> [in]ビューがエンコードされる受信者テーブルへのポインター。 _lpRecipientTable パラメーター_ には NULL を指定できます。 
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 呼び出しが成功し、予想される値または値が返されました。
+> 呼び出しは成功し、予期される値または値を返しました。
     
 ## <a name="remarks"></a>注釈
 
-トランスポートプロバイダー、メッセージストアプロバイダー、およびゲートウェイは、 **ITnef:: EncodeRecips**メソッドを呼び出して、特定の受信者テーブルビューの TNEF エンコードを実行します。 TNEF エンコードは、たとえばプロバイダーまたはゲートウェイで、特定の列セット、並べ替え順序、または受信者テーブルの制限が必要な場合などに便利です。 
+トランスポート プロバイダー、メッセージ ストア プロバイダー、およびゲートウェイは **、ITnef::EncodingRecips** メソッドを呼び出して、特定の受信者テーブル ビューに対して TNEF エンコードを実行します。 TNEF エンコードは、たとえば、プロバイダーまたはゲートウェイが受信者テーブルの特定の列セット、並べ替え順序、または制限を必要とする場合に役立ちます。 
   
-プロバイダーまたはゲートウェイは、 _lp受信者テーブル_パラメーターでエンコードされるテーブルビューを渡します。 TNEF 実装は、指定された列セット、並べ替え順序、制限、および位置を使用して、指定されたビューで受信者テーブルをエンコードします。 _lprecipient テーブル_でプロバイダーまたはゲートウェイが NULL になると、tnef は[IMessage:: get table](imessage-getrecipienttable.md)メソッドを使用してエンコードされているメッセージから受信者テーブルを取得し、次のコードを使用して、テーブルの各行をすべて TNEF ストリームに処理します。表の現在の設定。 
+プロバイダーまたはゲートウェイは  _、lpRecipientTable_ パラメーターでエンコードされるテーブル ビューを渡します。 TNEF 実装では、指定された列セット、並べ替え順序、制限、および位置を使用して、受信者テーブルを指定したビューでエンコードします。 プロバイダーまたはゲートウェイが  _lpRecipientTable_ で NULL を渡した場合、TNEF は [IMessage::GetRecipientTable](imessage-getrecipienttable.md) メソッドを使用してエンコードされているメッセージから受信者テーブルを取得し、テーブルのすべての行をテーブルの現在の設定を使用して TNEF ストリームに処理します。 
   
-_lprecipienttable_で NULL で**EncodeRecips**を呼び出すと、すべてのメッセージの受信者がエンコードされ、 _ulflags_パラメーターと PR_ で TNEF_PROP_INCLUDE フラグを使用して[ITnef:: addprops](itnef-addprops.md)メソッドを呼び出すことと同じになります。 **** _lpproplist_パラメーターの MESSAGE_RECIPIENTS ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) プロパティ。 
+_lpRecipientTable_ で NULL を使用して **EncodeRecips** を呼び出すのは、すべてのメッセージ受信者をエンコードするため、ulFlags パラメーターに TNEF_PROP_INCLUDE フラグを指定して [ITnef::AddProps](itnef-addprops.md)メソッドを呼び出し _、lpPropList_ パラメーターで PR_MESSAGE_RECIPIENTS ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) プロパティを呼び出すのと同じです。  
   
-特定の受信者テーブルビューをエンコードする必要がある場合を除き、 **EncodeRecips**を呼び出す必要はほとんどありません。 外部メッセージングシステムには、受信者の一覧をエンコードする一般的な要件を十分に処理できる、多くの場合、受信者の一覧を処理する機能が用意されています。そのため、これらのシステムは、この目的のために TNEF を必要としません。 
+特定の受信者テーブル ビューをエンコードする必要がない限り **、EncodeRecips** を呼び出す必要はほとんどありません。 外部メッセージング システムには、受信者リストのエンコードに関する一般的なニーズを処理するのに十分な強力な受信者リストを処理する機能がほとんど常に備わっています。したがって、これらのシステムは、この目的のために TNEF をほとんど必要としません。 
   
 ## <a name="see-also"></a>関連項目
 

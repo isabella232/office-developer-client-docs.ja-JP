@@ -25,32 +25,32 @@ ms.locfileid: "33436826"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージサービスがアンインストールされたときに削除されるファイル名の一覧が含まれています。
+メッセージ サービスのアンインストール時に削除するファイル名の一覧が含まれる。
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_SERVICE_DELETE_FILES、PR_SERVICE_DELETE_FILES_A、PR_SERVICE_DELETE_FILES_W  <br/> |
-|識別子:  <br/> |0x3d10  <br/> |
+|識別子:  <br/> |0x3D10  <br/> |
 |データの種類 :   <br/> |PT_MV_STRING8、PT_MV_UNICODE  <br/> |
 |エリア:  <br/> |MAPI プロファイル  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-これらのプロパティに含まれるリスト内のファイル名は、コントロールパネルを使用してメッセージサービスをアンインストールするときにコンピューターから削除されます。 複数のメッセージサービスをサポートする DLL がリストに含まれていない場合、または追加のメッセージサービスが誤って削除された可能性があります。
+コントロール パネルを使用してメッセージ サービスをアンインストールすると、これらのプロパティに含まれる一覧のファイル名がコンピューターから削除されます。 複数のメッセージ サービスをサポートする DLL や、追加のメッセージ サービスが誤って削除される可能性がある DLL をリストに含めずにしてください。
   
-MAPI は、ファイル名、およびその他の文字列が ANSI 文字セットに渡された場合にのみ機能します。 OEM 文字セットでファイル名を使用するアプリケーションは、MAPI を呼び出す前に、それらを ANSI に変換する必要があります。
+MAPI は、ANSI 文字セット内のファイル名と、そのファイルに渡される他の文字列でのみ動作します。 OEM 文字セットでファイル名を使用するアプリケーションは、MAPI を呼び出す前に ANSI に変換する必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 代替名としてリストされているプロパティの定義が含まれています。
+> 代替名として一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -60,7 +60,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -17,7 +17,7 @@ ms.locfileid: "33436847"
 ---
 # <a name="lockthemecolors-cell-protection-section"></a>[LockThemeColors] セル ([Protection] セクション)
 
-テーマの色が図形に適用されないようにします。 
+テーマの色が図形に適用されるのを防ぐ。 
   
 [LockThemeColors] セルの値は、[**保護**] ダイアログ ボックスの [**テーマの色を適用不可にする**] チェックボックスの設定に対応します。 
   
@@ -27,7 +27,7 @@ ms.locfileid: "33436847"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[lockthemecolors]  <br/> |
+|セル名:  <br/> |LockThemeColors  <br/> |
    
 プログラムから、インデックスによって [LockThemeColors] セルを参照するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

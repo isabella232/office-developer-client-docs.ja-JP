@@ -25,7 +25,7 @@ ms.locfileid: "33438527"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-メッセージの送信者が、元のメッセージとレポートを照合するために使用できる値を格納します。
+メッセージ送信者がレポートと元のメッセージを一致するために使用できる値を含む。
   
 |||
 |:-----|:-----|
@@ -36,19 +36,19 @@ ms.locfileid: "33438527"
    
 ## <a name="remarks"></a>注釈
 
-バイナリ文字列の内容は、メッセージの発信者によって定義されます。 送信メッセージに設定されている場合、このプロパティはメッセージへの応答で生成されたすべてのレポートにコピーされる必要があります。
+バイナリ文字列の内容は、メッセージの発信元によって定義されます。 送信メッセージに設定されている場合、このプロパティは、メッセージに応答して生成されたレポートにコピーする必要があります。
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
+> 関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -58,7 +58,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

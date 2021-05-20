@@ -25,20 +25,20 @@ ms.locfileid: "33436973"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[sbinaryarray](sbinaryarray.md)構造と同じ実装を使用する MAPI オブジェクトを表すエントリ id の配列。 
+[SBinaryArray](sbinaryarray.md)構造体と同じ実装を使用する MAPI オブジェクトを表すエントリ識別子の配列。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef SBinaryArray ENTRYLIST, FAR *LPENTRYLIST;
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
-メンバーの**SBinaryArry**構造を参照してください。 
+メンバーについては **、「SBinaryArry** 構造体」を参照してください。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: imapisupportsetprovideruid
+title: IMAPISupportSetProviderUID
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33437540"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-サービスプロバイダーを一意に表す[MAPIUID](mapiuid.md)構造体を登録します。 
+サービス プロバイダーを [一意に表す MAPIUID](mapiuid.md) 構造体を登録します。 
   
 ```cpp
 HRESULT SetProviderUID(
@@ -36,29 +36,29 @@ ULONG ulFlags
 
 ## <a name="parameters"></a>パラメーター
 
- _lpproviderid_
+ _lpProviderID_
   
-> 順番アドレス帳またはメッセージストアプロバイダーを識別する**MAPIUID**構造体へのポインター。 
+> [in]アドレス帳またはメッセージ ストア プロバイダーを識別する **MAPIUID** 構造体へのポインター。 
     
  _ulFlags_
   
-> 予約語0である必要があります。
+> 予約済み。は 0 である必要があります。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> **MAPIUID**構造が正常に登録されました。 
+> **MAPIUID 構造** が正常に登録されました。 
     
 ## <a name="remarks"></a>注釈
 
-**imapisupport:: setprovideruid**メソッドは、アドレス帳とメッセージストアプロバイダーのサポートオブジェクトに実装されています。 これらのプロバイダーは、 **setprovideruid**を呼び出して、 _lpproviderid_によって参照されている**MAPIUID**構造体で記述された一意の識別子を登録します。 プロバイダーには、作成するすべてのエントリ識別子にこの識別子が含まれています。 
+**IMAPISupport::SetProviderUID** メソッドは、アドレス帳およびメッセージ ストア プロバイダーのサポート オブジェクトに実装されます。 これらのプロバイダーは **SetProviderUID** を呼び出して _、lpProviderID_ によって指される **MAPIUID** 構造で説明されている一意の識別子を登録します。 プロバイダーは、この識別子を作成するエントリ識別子のすべてに含まれます。 
   
-mapi は、 **MAPIUID**構造を使用して mapi スプーラーに送信メッセージを送信し、クライアント要求を処理するための適切なプロバイダーを決定します。 たとえば、クライアントが[imapisession:: openentry](imapisession-openentry.md)メソッドを呼び出すと、MAPI はエントリ識別子の**MAPIUID**部分を調べ、それを**setprovideruid**に渡されたプロバイダーにマップし、そのプロバイダーの**openentry**を呼び出します。. 
+MAPI は **、MAPI スプーラー** に送信メッセージを送信するときに MAPIUID 構造を使用し、クライアント要求を処理する適切なプロバイダーを決定します。 たとえば、クライアントが [IMAPISession::OpenEntry](imapisession-openentry.md) メソッドを呼び出す場合、MAPI はエントリ識別子の **MAPIUID** 部分を調べ、それを **SetProviderUID** に渡したプロバイダーにマップし、そのプロバイダーの **OpenEntry** を呼び出します。 
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-**MAPIUID**構造を登録するには、ログオン時に**setprovideruid**を呼び出します。 MAPI では、アドレス帳とメッセージストアプロバイダーが複数の識別子を登録できます。 **setprovideruid**に対して複数の呼び出しを行うと、 **MAPIUID**が重複している場合でも、プロバイダーの**MAPIUID**構造のセットには常に**MAPIUID**構造が追加されます。 **setprovideruid**は**MAPIUID**を削除できません。 
+**ログオン時に SetProviderUID** を呼び出して **、MAPIUID 構造を登録** します。 MAPI を使用すると、アドレス帳とメッセージ ストア プロバイダーは複数の識別子を登録できます。 **SetProviderUID** を複数呼び出す場合は **、MAPIUID** が重複している場合でも、常に **MAPIUID** 構造体をプロバイダーの MAPIUID 構造体のセットに追加します。 **SetProviderUID は** **MAPIUID を削除できません**。 
   
 ## <a name="see-also"></a>関連項目
 
