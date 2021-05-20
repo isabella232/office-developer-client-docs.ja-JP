@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251416
 localization_priority: Normal
 ms.assetid: 154d76a2-81f5-d8b1-b665-26dbae5da615
-description: datetime または expression の年の何日目かを表す、1 ~ 366 の整数を返します。 DAYOFYEAR 関数では、グレゴリオ暦が使用されます。
+description: 1 ~ 366 の整数を返します。日付または式の年の連続日を表します。 DAYOFYEAR 関数はグレゴリオ暦を使用します。
 ms.openlocfilehash: 30c0331a57282baee97e81689b6a8f362581b8f1
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33439452"
 ---
 # <a name="dayofyear-function"></a>DAYOFYEAR 関数
 
-_datetime_または_expression_の年の何日目かを表す、1 ~ 366 の整数を返します。 DAYOFYEAR 関数では、グレゴリオ暦が使用されます。
+datetime または式の年の連続日を表す 1 ~ 366 の  _整数を_ 返  _します_。 DAYOFYEAR 関数はグレゴリオ暦を使用します。
   
 ## <a name="syntax"></a>構文
 
-DAYOFYEAR ("* * *datetime* * *" |* **式** * [, * * *lcid* * *]) 
+DAYOFYEAR(" ** *datetime* ** "|** *式* ** [, ** *lcid* ** ]) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -38,11 +38,11 @@ DAYOFYEAR ("* * *datetime* * *" |* **式** * [, * * *lcid* * *])
   
 ## <a name="remarks"></a>注釈
 
-_datetime_または_expression_の時刻コンポーネントは破棄されます。 
+datetime または  _式内の_ 任意の  _時刻コンポーネント_ は破棄されます。 
   
-結果は 1 月 1 日～ 12 月 31 日に対応します。 数値は四捨五入されません。 _datetime_が指定されていない場合、または有効な日付または時刻として解釈できない場合は、関数はエラーを返します。 
+結果は 1 月 1 日～ 12 月 31 日に対応します。 数値は四捨五入されません。 datetime  _が見_ つからないか、有効な日付または時刻として解釈できない場合、関数はエラーを返します。 
   
-DAYOFYEAR 関数では、 _expression_に単一の数値を使用することもできます。この場合、整数部分には1899年12月30日から起算した日数を指定します。 
+DAYOFYEAR 関数は、結果の整数部分が1899 年 12 月 30 日からの日数を表す式の単一の数値も受け入れられます。 
   
 ## <a name="example-1"></a>例 1
 
@@ -58,7 +58,7 @@ DAYOFYEAR(DATEVALUE("May 30, 1997")+7 ed.)
   
 ## <a name="example-3"></a>例 3
 
-DAYOFYEAR (35580.6337)
+DAYOFYEAR(35580.6337)
   
 150 を返します。
   

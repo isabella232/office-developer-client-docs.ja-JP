@@ -29,7 +29,7 @@ ms.locfileid: "33439661"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [doclockduplicatepage]  <br/> |
+| セル名:  <br/> | DocLockDuplicatePage  <br/> |
    
 プログラムから、インデックスによって [**DocLockDuplicatePage**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251440
 localization_priority: Normal
 ms.assetid: 0f5c6097-eef5-5f58-e2ef-2c348e42dc9a
-description: 色の色合いコンポーネントの値を返します。
+description: 色の色相コンポーネントの値を返します。
 ms.openlocfilehash: 39fdd160f5cd792e95930a3e7c7cea3c37ed16c1
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33439493"
 ---
 # <a name="hue-function"></a>HUE 関数
 
-色の色合いコンポーネントの値を返します。
+色の色相コンポーネントの値を返します。
   
 ## <a name="syntax"></a>構文
 
-色合い (* **式** *) 
+HUE(** *expression* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -32,7 +32,7 @@ ms.locfileid: "33439493"
    
 ### <a name="return-value"></a>戻り値
 
-数値
+番号
   
 ## <a name="remarks"></a>注釈
 
@@ -40,13 +40,13 @@ ms.locfileid: "33439493"
   
 ## <a name="example-1"></a>例 1
 
-色合い (Sheet. 4![fillforegnd]
+HUE(Sheet.4!FillForegnd)
   
 Sheet.4 について、前景の塗りつぶしの色に関する色合いを返します。
   
 ## <a name="example-2"></a>例 2
 
-色合い (7)
+HUE(7)
   
 図面で既定の Microsoft Visio カラー パレットを使用する場合、120 を返します。Visio カラー パレットでは、インデックス 7 はシアンを示します。
   

@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: d6cf67cb-f9e6-43a5-918a-f9151821ab4d
-description: 図形の光彩のストロークに使用する色の透過性レベルをパーセンテージで指定します。
+description: 図形の光彩のストロークに使用される色の透明度レベルをパーセンテージで指定します。
 ms.openlocfilehash: 81b734de6212540e0f50df05aca11dc535fc49ab
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33439752"
 ---
 # <a name="glowcolortrans-cell-additional-effect-properties-section"></a>[GlowColorTrans] セル ([追加効果のプロパティ] セクション)
 
-図形の光彩のストロークに使用する色の透過性レベルをパーセンテージで指定します。 
+図形の光彩のストロークに使用される色の透明度レベルをパーセンテージで指定します。 
   
 ## <a name="remarks"></a>注釈
 
@@ -24,7 +24,7 @@ ms.locfileid: "33439752"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | [glowcolortrans]  <br/> |
+| セル名:  <br/> | GlowColorTrans  <br/> |
    
 プログラムから、インデックスによって [**GlowColorTrans**] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

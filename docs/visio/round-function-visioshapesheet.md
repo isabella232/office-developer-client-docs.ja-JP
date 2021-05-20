@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251491
 localization_priority: Normal
 ms.assetid: a374fe7d-7302-5365-81ab-64f5474d9d5c
-description: numberofdigits で表される精度に数値を丸めます。
+description: 数値を numberofdigits で表される精度に丸します。
 ms.openlocfilehash: 6795cbc4d99e293da06c0ec369d2cefb84f9f5b5
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33439969"
 ---
 # <a name="round-function-visioshapesheet"></a>ROUND 関数 (VisioShapeSheet)
 
-*numberofdigits*で表される精度に数値を丸めます。 
+数値を  *numberofdigits*  で表される精度に丸します。 
   
 ## <a name="syntax"></a>構文
 
-ROUND (* **数値** *、* * *numberofdigits* * *) 
+ROUND(** *number* **, ** *numberofdigits* ** ) 
   
 ### <a name="parameters"></a>パラメーター
 
@@ -33,23 +33,23 @@ ROUND (* **数値** *、* * *numberofdigits* * *)
    
 ## <a name="remarks"></a>注釈
 
-_numberofdigits_が0より大きい場合、_数値_は、 _numberofdigits_の小数点の右側に切り上げられます。 _numberofdigits_が0の場合、_数値_は整数に丸められます。 _numberofdigits_が0より小さい場合、_数値_は、 _numberofdigits_の小数点の左に丸められます。 
+_numberofdigits が_ 0 より大きい場合、数値は小数点の右側の _numberofdigits_ で四捨五入されます。 _numberofdigits が_ 0 の場合、_数値は_ 整数に丸められます。 _numberofdigits が_ 0 より小さい場合、数値は小数点の左側に _numberofdigits_ で四捨五入されます。 
   
 ## <a name="example-1"></a>例 1
 
-ROUND (123.654、2)
+ROUND(123.654,2)
   
 123.65 を返します。
   
 ## <a name="example-2"></a>例 2
 
-ROUND (123.654, 0)
+ROUND(123.654,0)
   
 124 を返します。
   
 ## <a name="example-3"></a>例 3
 
-ROUND (123.654,-1)
+ROUND(123.654,-1)
   
 120 を返します。
   

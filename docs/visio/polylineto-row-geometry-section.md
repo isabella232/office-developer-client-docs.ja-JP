@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251757
 localization_priority: Normal
 ms.assetid: b78a993f-4165-438d-39cf-9461b2877f17
-description: ポリラインの最後の点とポリライン式の x 座標と y 座標を格納します。
+description: ポリラインの最後の点の x 座標と y 座標、およびポリライン数式を含む。
 ms.openlocfilehash: 13e5bd7138103094f0f00ad0512e33e9e6ad5e7f
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,14 +18,14 @@ ms.locfileid: "33439465"
 ---
 # <a name="polylineto-row-geometry-section"></a>[PolylineTo] 行 ([Geometry] セクション)
 
-ポリラインの最後の点とポリライン式の*x*座標と*y*座標を格納します。 
+ポリラインの  *最後*  の点の x 座標と  *y*  座標、およびポリライン数式を含む。 
   
 [PolylineTo] 行には次のセルが含まれます。
   
 |**Cell**|**説明**|
 |:-----|:-----|
-|[X](x-cell-geometry-section.md) <br/> |ポリラインの最後の頂点に対する*x*座標です。  <br/> |
-|[Y](y-cell-geometry-section.md) <br/> |ポリラインの最後の頂点に対する*y*座標です。  <br/> |
+|[X](x-cell-geometry-section.md) <br/> |ポリライン  *の*  終了頂点の x 座標。  <br/> |
+|[Y](y-cell-geometry-section.md) <br/> |ポリライン  *の終了*  頂点の y 座標。  <br/> |
 |[A](a-cell-geometry-section.md) <br/> |ポリラインの数式です。  <br/> |
    
 ## <a name="remarks"></a>注釈

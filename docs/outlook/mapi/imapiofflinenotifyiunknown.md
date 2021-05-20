@@ -25,22 +25,22 @@ ms.locfileid: "33439878"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-microsoft outlook 2010 および microsoft outlook 2013 をサポートしており、クライアントに対して通知コールバックを送信します。
+クライアントMicrosoft Outlook 2010コールバックMicrosoft Outlook 2013送信する方法をサポートします。
   
 |||
 |:-----|:-----|
 |提供元:  <br/> |クライアント  <br/> |
 |インターフェイス識別子:  <br/> |IID_IMAPIOfflineNotify  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[Notify](imapiofflinenotify-notify.md) <br/> |接続状態の変更についてクライアントに通知を送信します。  <br/> |
+|[Notify](imapiofflinenotify-notify.md) <br/> |接続状態の変更に関する通知をクライアントに送信します。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-**[IMAPIOfflineMgr:: Advise](imapiofflinemgr-advise.md)** を使用してコールバックを設定する場合、クライアントはこのインターフェイスを実装し、 **[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)** のメンバーとしてのポインターを渡す必要があります。 その後、outlook 2010 または outlook 2013 は、このインターフェイスを使用して、クライアントに通知コールバックを送信できるようになります。 
+**[IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)** を使用してコールバックを設定する **[](mapioffline_adviseinfo.md)** 場合、クライアントは、このインターフェイスを実装し、MAPIOFFLINE_ADVISEINFO でメンバーとしてポインターを渡す必要があります。 その後Outlook 2010 または Outlook 2013 では、このインターフェイスを使用してクライアントに通知コールバックを送信できます。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -25,12 +25,12 @@ ms.locfileid: "33439423"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-機能エンティティの性質を指定します。これにより、メッセージが受信者に配信されたかどうかを指定します。 
+メッセージが受信者に配信された、または配信された可能性のある機能エンティティの性質を指定します。 
   
 |||
 |:-----|:-----|
 |関連するプロパティ:  <br/> |PR_DELIVERY_POINT  <br/> |
-|識別子:  <br/> |0x0c07  <br/> |
+|識別子:  <br/> |0x0C07  <br/> |
 |データの種類 :   <br/> |PT_LONG  <br/> |
 |エリア:  <br/> |MAPI 受信者  <br/> |
    
@@ -40,45 +40,45 @@ ms.locfileid: "33439423"
   
 MAPI_MH_DP_ML 
   
-> 配布リストに配信されます。この配信ポイントによって、メッセージが多数の受信者に配布される場合があります。
+> 配布リストに配信され、配信ポイントがメッセージを多くの受信者に配布する可能性があります。
     
 MAPI_MH_DP_MS 
   
-> 受信者に直接配信される代わりに、メッセージストアに配信されます。
+> 受信者に直接配信されるのではなく、メッセージ ストアに配信されます。
     
 MAPI_MH_DP_OTHER_AU 
   
-> FAX システムなどの物理的な配信アクセス装置 (pdau) 以外のアクセスユニット (au) に配信されます。
+> FAX システムなどの物理配信アクセス ユニット (PDAU) 以外のアクセス ユニット (AU) に配信されます。
     
 MAPI_MH_DP_PDAU 
   
-> ユーザーは、実際の郵便電話会社などの物理的な配信アクセス単位に配信されます。
+> 人間の郵便運送業者などの物理的な配信アクセス ユニットに配信されます。
     
 MAPI_MH_DP_PDS_PATRON 
   
-> 従来の郵便メールボックスのような、物理的な配信システムの場合に送信されます。
+> 従来の郵便メールボックスなどの物理的な配信システムのパトロンに配信されます。
     
 MAPI_MH_DP_PRIVATE_UA 
   
-> 社内メッセージングシステムのクライアントなど、プライベートユーザーエージェント (UA) に配信されます。
+> プライベート ユーザー エージェント (UA) (インハウス メッセージング システムのクライアントなど) に配信されます。
     
 MAPI_MH_DP_PUBLIC_UA 
   
-> パブリックユーザーエージェントまたはパブリックサービスプロバイダに配信されます。
+> パブリック ユーザー エージェントまたはパブリック サービス プロバイダーに配信されます。
     
-既定値は MAPI_MH_DP_PRIVATE_UA です。つまり、MAPI クライアントです。 
+既定値は、mapi MAPI_MH_DP_PRIVATE_UA MAPI クライアントの値です。 
   
 ## <a name="related-resources"></a>関連リソース
 
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
-Mapitags
+Mapitags.h
   
-> 関連するプロパティとしてリストされているプロパティの定義が含まれます。
+> 関連付けられたプロパティとして一覧表示されるプロパティの定義が含まれる。
     
 ## <a name="see-also"></a>関連項目
 
@@ -88,7 +88,7 @@ Mapitags
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

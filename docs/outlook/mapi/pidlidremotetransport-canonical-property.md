@@ -25,33 +25,33 @@ ms.locfileid: "33439444"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ヘッダーアイテムが関連付けられているアカウントを識別します。主に、サーバー機能に POP を適用するために使用します。 
+主に POP Leave on Server 機能を実装するために、ヘッダー アイテムが関連付けられているアカウントを識別します。 
   
 |||
 |:-----|:-----|
-|関連付けられたプロパティ  <br/> |dispidremotexp  <br/> |
-|プロパティセット:  <br/> |PSETID_Remote  <br/> |
-|ロング ID (LID):  <br/> |0x00008f03  <br/> |
+|関連付けられたプロパティ  <br/> |dispidRemoteXP  <br/> |
+|プロパティ セット:  <br/> |PSETID_Remote  <br/> |
+|長い ID (LID):  <br/> |0x00008F03  <br/> |
 |データの種類 :   <br/> |PT_STRING8  <br/> |
-|エリア:  <br/> |リモートメッセージ  <br/> |
+|エリア:  <br/> |リモート メッセージ  <br/> |
    
 ## <a name="remarks"></a>注釈
 
-このプロパティは、メッセージクラスが IPM であるメッセージにのみ関連しています。リモート. Microsoft Outlook では、フォルダー関連情報 (fai) メッセージ内の特定のストアにダウンロードされるさまざまなアカウントのマッピングを保持しますが、この情報をレジストリに保持することもできます。
+このプロパティは、IPM のメッセージ クラスを持つメッセージにのみ関連します。リモート。 Microsoft Outlookは、フォルダー関連情報 (FAI) メッセージ内の特定のストアにダウンロードしているさまざまなアカウントのマッピングを保持しますが、この情報をレジストリに保持することもできます。
   
 ## <a name="related-resources"></a>関連リソース
 
 ### <a name="protocol-specifications"></a>プロトコルの仕様
 
-[[OXPROPS]] 
+[[MS-OXPROPS]] 
   
-> プロパティセットの定義と、関連する Exchange Server プロトコルの仕様への参照を提供します。
+> プロパティ セットの定義と、関連するプロトコル仕様へのExchange Serverを提供します。
     
-### <a name="header-files"></a>ヘッダーファイル
+### <a name="header-files"></a>ヘッダー ファイル
 
-mapidefs.h
+Mapidefs.h
   
-> データ型定義を提供します。
+> データ型の定義を提供します。
     
 ## <a name="see-also"></a>関連項目
 
@@ -61,7 +61,7 @@ mapidefs.h
   
 [MAPI 標準プロパティ](mapi-canonical-properties.md)
   
-[標準プロパティ名から MAPI 名へのマッピング](mapping-canonical-property-names-to-mapi-names.md)
+[標準プロパティ名を MAPI 名にマッピングする](mapping-canonical-property-names-to-mapi-names.md)
   
-[MAPI 名から標準プロパティ名へのマッピング](mapping-mapi-names-to-canonical-property-names.md)
+[MAPI 名を標準プロパティ名にマッピングする](mapping-mapi-names-to-canonical-property-names.md)
 

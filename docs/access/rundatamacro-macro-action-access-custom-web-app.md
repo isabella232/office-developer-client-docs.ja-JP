@@ -1,5 +1,5 @@
 ---
-title: RunDataMacro マクロアクション (Access カスタム web アプリ)
+title: RunDataMacro マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439346"
 ---
-# <a name="rundatamacro-macro-action-access-custom-web-app"></a>RunDataMacro マクロアクション (Access カスタム web アプリ)
+# <a name="rundatamacro-macro-action-access-custom-web-app"></a>RunDataMacro マクロ アクション (Access カスタム Web アプリ)
 
 " **RunDataMacro/データマクロの実行** " アクションを使用して、スタンドアロンデータ マクロを実行できます。 
   

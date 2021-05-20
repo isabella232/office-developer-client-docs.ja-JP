@@ -154,7 +154,7 @@ InfoPath フォームでコードを使用して実行できる便利な作業�
 
 この例では、Microsoft SharePoint Foundation 2010 のオブジェクト モデルに対するプログラミングを行います。それには、Microsoft.SharePoint.dll アセンブリへの参照を設定する必要があります。Microsoft.SharePoint.dll は、ライセンスが付与された SharePoint Server 2010 のコピーと共にインストールされています。
   
-Microsoft.SharePoint.Server.dll は、既定で C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI にインストールされています。この DLL を、SharePoint オブジェクト モデルに対するプログラミングを行うプロジェクトにインクルードする必要があります。Visual Studio 2012 プロジェクトの中で Microsoft.SharePoint.dll への参照を設定するには、 **コード エディター**を開き、[ **プロジェクト**] メニューの [ **参照の追加**] をクリックします。[ **参照の追加**] ダイアログ ボックスで [ **参照**] タブをクリックし、Microsoft.SharePoint.dll ファイルの場所を指定して [ **OK**] をクリックします。これで、Microsoft.SharePoint.dll がプロジェクト ディレクトリにコピーされ、SharePoint Foundation 2010 オブジェクト モデルのメンバーを InfoPath ソリューションの中で使用できるようになります。
+Microsoft.SharePoint.Server.dll は、既定で C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI にインストールされています。この DLL を、SharePoint オブジェクト モデルに対するプログラミングを行うプロジェクトにインクルードする必要があります。Visual Studio 2012 プロジェクトの中で Microsoft.SharePoint.dll への参照を設定するには、 **コード エディター** を開き、[ **プロジェクト**] メニューの [ **参照の追加**] をクリックします。[ **参照の追加**] ダイアログ ボックスで [ **参照**] タブをクリックし、Microsoft.SharePoint.dll ファイルの場所を指定して [ **OK**] をクリックします。これで、Microsoft.SharePoint.dll がプロジェクト ディレクトリにコピーされ、SharePoint Foundation 2010 オブジェクト モデルのメンバーを InfoPath ソリューションの中で使用できるようになります。
   
 ### <a name="designing-the-form-and-developing-the-code"></a>フォームのデザインとコードの作成
 
@@ -162,9 +162,9 @@ InfoPath フォームのコードから、SharePoint オブジェクト モデ�
   
 ### <a name="to-create-a-form-template-that-can-add-new-items-to-a-combo-box-based-on-a-sharepoint-list"></a>SharePoint リストに基づいてコンボ ボックスに新しいアイテムを追加できるフォーム テンプレートを作成するには
 
-1. SharePoint Server 2010 のサーバー上に簡単なユーザー設定リストを作成し、それに MyList という名前をつけます。以下の例では、このリストの **Title** フィールドにバインドされている **コンボ ボックス**を使用します。 
+1. SharePoint Server 2010 のサーバー上に簡単なユーザー設定リストを作成し、それに MyList という名前をつけます。以下の例では、このリストの **Title** フィールドにバインドされている **コンボ ボックス** を使用します。 
     
-2. InfoPath Designer に新しい **空白のフォーム**を作成し、フォーム上に **コンボ ボックス** コントロールを挿入して、コンボ ボックスにバインドされているフィールドの名前を myCombo に変更します。
+2. InfoPath Designer に新しい **空白のフォーム** を作成し、フォーム上に **コンボ ボックス** コントロールを挿入して、コンボ ボックスにバインドされているフィールドの名前を myCombo に変更します。
     
 3. 次の手順を実行して、コンボ ボックスへの値の読み込みに使用するデータ接続をリストに追加します。
     

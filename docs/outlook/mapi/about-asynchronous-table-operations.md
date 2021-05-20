@@ -19,9 +19,9 @@ ms.locfileid: "33439570"
  
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-**IMAPITable**インターフェイスには、非同期操作を制御するための3つのメソッドを非同期で操作する3つのメソッドが含まれています。 次の表に、これらのメソッドを示します。 
+**IMAPITable インターフェイスには**、非同期的に動作する 3 つのメソッドと、非同期操作を制御するための 3 つのメソッドが含まれています。 次の表に、これらのメソッドの一覧を示します。 
   
-|**非同期操作**|**非同期コントロールメソッド**|
+|**非同期操作**|**非同期制御メソッド**|
 |:-----|:-----|
 |[IMAPITable::SetColumns](imapitable-setcolumns.md) <br/> |[IMAPITable::GetStatus](imapitable-getstatus.md) <br/> |
 |[IMAPITable::Restrict](imapitable-restrict.md) <br/> |[IMAPITable::Abort](imapitable-abort.md) <br/> |
@@ -29,11 +29,11 @@ ms.locfileid: "33439570"
    
 **テーブルの種類と現在の操作に関する状態情報を取得するには**
   
-- 呼び出し[IMAPITable:: GetStatus](imapitable-getstatus.md)。 **GetStatus**では、テーブルのユーザーは、テーブルが静的または動的かどうか、操作が進行中であるか、完了したか、および完了した操作でエラーが発生したかどうかを判断できます。 たとえば、クライアントが時間がかかりすぎているために並べ替え操作を取り消す必要がある場合、最初に**GetStatus**を呼び出して、実際には並べ替え操作が現在処理中であるかどうかを判断できます。 その後、クライアントは[IMAPITable:: Abort](imapitable-abort.md)を呼び出して、これを停止できます。 
+- [IMAPITable::GetStatus を呼び出します](imapitable-getstatus.md)。 **GetStatus** を使用すると、テーブルのユーザーは、テーブルが静的か動的か、操作が進行中か完了したのか、完了した操作でエラーが発生したかどうかを判断できます。 たとえば、時間が長すぎるため、クライアントが並べ替え操作をキャンセルする必要がある場合、クライアントはまず **GetStatus** を呼び出して、実際に並べ替え操作が現在処理されているかどうかを判断できます。 その後、クライアントは [IMAPITable::Abort](imapitable-abort.md) を呼び出して停止できます。 
     
 **非同期タスクが完了するまでアクティビティを中断するには**
   
-- 呼び出し[IMAPITable:: waitforcompletion](imapitable-waitforcompletion.md)。 **waitforcompletion**を呼び出すことにより、タスクを中断することなく完了できます。 
+- [IMAPITable::WaitForCompletion を呼び出します](imapitable-waitforcompletion.md)。 **WaitForCompletion を呼び出すことによって**、中断することなくタスクを完了できます。 
     
 ## <a name="see-also"></a>関連項目
 

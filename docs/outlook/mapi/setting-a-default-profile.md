@@ -21,12 +21,12 @@ ms.locfileid: "33439815"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-既定のプロファイルは、 [MAPILogonEx](mapilogonex.md)への呼び出しで明示的に指定されていない場合に使用されるプロファイルです。 MAPI_USE_DEFAULT フラグの代わりに設定します。
+既定のプロファイルは [、MAPILogonEx](mapilogonex.md)の呼び出しで明示的に指定しない場合に使用されるプロファイルで、代わりに MAPI_USE_DEFAULT フラグを設定します。
   
- **既定のプロファイルを設定するには**
+ **既定のプロファイルを確立するには**
   
-1. [MAPIAdminProfiles](mapiadminprofiles.md)関数を呼び出して、 **IProfAdmin**インターフェイスポインターを取得します。 
+1. [MAPIAdminProfiles 関数を呼び出](mapiadminprofiles.md)して **、IProfAdmin** インターフェイス ポインターを取得します。 
     
-2. Call [IProfAdmin:: setdefaultprofile](iprofadmin-setdefaultprofile.md)。 **setdefaultprofile**は、新しい既定のプロファイルに対して**PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md)) プロパティを設定し、以前の既定のプロファイルの設定を削除します。
+2. [IProfAdmin::SetDefaultProfile を呼び出します](iprofadmin-setdefaultprofile.md)。 **SetDefaultProfile** は **PR_DEFAULT_PROFILE既定の** プロファイルの PR_DEFAULT_PROFILE ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md)) プロパティを設定し、以前の既定のプロファイルの設定を削除します。
     
 

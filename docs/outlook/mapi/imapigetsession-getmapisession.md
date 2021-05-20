@@ -25,7 +25,7 @@ ms.locfileid: "33439612"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-mapi サポートオブジェクトに関連付けられている mapi セッションへのポインターを返します。
+MAPI サポート オブジェクトに関連付けられた MAPI セッションへのポインターを返します。
   
 ```cpp
 HRESULT GetMAPISession(
@@ -35,9 +35,9 @@ HRESULT GetMAPISession(
 
 ## <a name="parameters"></a>パラメーター
 
- _lppsession_
+ _lppSession_
   
-> 読み上げ現在の MAPI セッションへのポインター。
+> [out]現在の MAPI セッションへのポインター。
     
 ## <a name="see-also"></a>関連項目
 
@@ -46,5 +46,5 @@ HRESULT GetMAPISession(
 [IMAPIGetSession : IUnknown](imapigetsessioniunknown.md)
 
 
-[サポートオブジェクトの概要](support-object-overview.md)
+[サポート オブジェクトの概要](support-object-overview.md)
 

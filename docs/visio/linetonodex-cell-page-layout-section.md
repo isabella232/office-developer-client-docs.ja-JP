@@ -28,7 +28,7 @@ ms.locfileid: "33439710"
   
 |||
 |:-----|:-----|
-|セル名:  <br/> |[linetonodex]  <br/> |
+|セル名:  <br/> |LineToNodeX  <br/> |
    
 プログラムから、インデックスによって [LineToNodeX] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   

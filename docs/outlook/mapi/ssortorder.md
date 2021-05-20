@@ -23,11 +23,11 @@ ms.locfileid: "33439724"
  
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-表の行を並べ替える方法、並べ替えキーとして使用する列、および並べ替えの方向を定義します。 
+テーブルの行の並べ替え方法、並べ替えキーとして使用する列、並べ替えの方向を定義します。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SSortOrder
@@ -38,31 +38,31 @@ typedef struct _SSortOrder
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
 **ulPropTag**
   
-> プロパティタグ。並べ替えキー、または分類された並べ替えの場合は、[カテゴリ] 列を識別します。
+> 並べ替えキーまたは分類された並べ替えのカテゴリ列を識別するプロパティ タグ。
     
-**ulorder**
+**ulOrder**
   
-> データの並べ替え順序を指定します。 可能な値は次のとおりです。
+> データを並べ替える順序。 指定できる値は次のとおりです。
     
-  - TABLE_SORT_ASCEND: テーブルは昇順で並べ替えられている必要があります。
+  - TABLE_SORT_ASCEND: テーブルは昇順に並べ替える必要があります。
       
-  - TABLE_SORT_COMBINE: 並べ替え操作では、 **ulPropTag**メンバーの並べ替えキーの列として識別されたプロパティを、前の構造で指定され**** た並べ替えキーの列と組み合わせたカテゴリを作成する必要があります。 
+  - TABLE_SORT_COMBINE: 並べ替え操作では **、ulPropTag** メンバーの並べ替えキー列として識別されるプロパティと、前の **SSortOrder** 構造体で指定された並べ替えキー列を組み合わせたカテゴリを作成する必要があります。 
       
-    TABLE_SORT_COMBINE は、ssortorderset 構造で、分類された並べ替えに対して[](ssortorderset.md)複数の並べ替え順序を指定するためのエントリとして使用されている場合にのみ使用できます。 **** TABLE_SORT_COMBINE は、 **ssortorderset**構造の最初の**ssortorder**構造では使用できません。 
+    TABLE_SORT_COMBINE **SSortOrder** 構造体を [SSortOrderSet](ssortorderset.md) 構造体のエントリとして使用して、分類された並べ替えに対して複数の並べ替え順序を指定する場合にのみ使用できます。 TABLE_SORT_COMBINE **SSortOrderSet** 構造体の最初の **SSortOrder 構造体では使用** できません。 
       
-  - TABLE_SORT_DESCEND: テーブルは降順で並べ替えられている必要があります。
+  - TABLE_SORT_DESCEND: テーブルは降順で並べ替える必要があります。
       
-  - TABLE_SORT_CATEG_MAX: **ssortorderset**構造で、以前の並べ替え順序で指定されたカテゴリのデータ行について、テーブルを**ulPropTag**メンバーの最大値で並べ替えます。 
+  - TABLE_SORT_CATEG_MAX: **SSortOrderSet** 構造体の前の並べ替え順序で指定されたカテゴリのデータ行の **ulPropTag** メンバーの最大値でテーブルを並べ替える必要があります。 
       
-  - TABLE_SORT_CATEG_MIN: テーブルは、 **ssortorderset**構造で、前の並べ替え順序で指定されているカテゴリのデータ行の**ulPropTag**メンバーの最小値で並べ替えられている必要があります。 
+  - TABLE_SORT_CATEG_MIN:**テーブルは、SSortOrderSet** 構造体の前の並べ替え順序で指定されたカテゴリのデータ行の **ulPropTag** メンバーの最小値で並べ替える必要があります。 
     
 ## <a name="remarks"></a>注釈
 
-**ssortorder**構造は、標準の並べ替え操作または分類された並べ替え操作のどちらを実行するかを示すために使用されます。 **** sorderstructure は、通常、複数の並べ替えキーと方向を記述するために、 **ssortorderset**構造に組み込まれています。 **ssortorderset**構造体は、次の関数およびインターフェイスメソッドで使用されます。 
+**SSortOrder 構造体を** 使用して、標準の並べ替え操作または分類された並べ替え操作を実行する方法を説明します。 **SSortOrder** 構造体は通常、複数の並べ替えキーと方向を記述するために **SSortOrderSet** 構造体に組み合わされます。 **SSortOrderSet** 構造体は、次の関数およびインターフェイス メソッドで使用されます。 
   
 - [ITableData::HrGetView](itabledata-hrgetview.md)
     
@@ -76,18 +76,18 @@ typedef struct _SSortOrder
     
 - [HrQueryAllRows](hrqueryallrows.md)
     
-並べ替えキーとして使用できるテーブルで許可されている列の範囲は、プロバイダーによって異なります。 現在の列セットの一部である列は、常に並べ替えキーとして使用できます。 ただし、各プロバイダーは、現在の列セットに含まれていない利用可能な列を使用して並べ替えキーを定義できるかどうかを判断します。 使用可能な列は、TBL_ALL_COLUMNS フラグが設定されている場合に[IMAPITable:: querycolumns](imapitable-querycolumns.md)から返される列です。 
+並べ替えキーとして使用できるテーブル内の列の範囲は、プロバイダーによって異なります。 現在の列セットの一部である列は、常に並べ替えキーとして使用できます。 ただし、各プロバイダーは、現在の列セットに含めされていない使用可能な列を使用して並べ替えキーを定義できるかどうかを決定します。 使用可能な列は [、IMAPITable::QueryColumns](imapitable-querycolumns.md) のフラグが設定されているときに返TBL_ALL_COLUMNS列です。 
   
-**ulorder**メンバーは、双方向の順序と分類の情報 (たとえば、会話 ([PidTagConversationTopic](pidtagconversationtopic-canonical-property.md))、つまり会話スレッド (一連のメッセージと返信)) を示します。 行は、すべての NULL エントリが最後に配置された昇順または降順のどちらかの順序で並べ替えることができます。 
+**ulOrder** メンバーは、方向順序と分類の両方の情報 (たとえば、会話 ([PidTagConversationTopic)](pidtagconversationtopic-canonical-property.md)、つまり、一連のメッセージと返信である会話スレッドを示します。 行は、すべての NULL エントリが最後に配置された昇順または降順で並べ替えできます。 
   
-TABLE_SORT_COMBINE の値は、 **ulPropTag**で指定された列が前のカテゴリの列と組み合わせて複合カテゴリを形成する必要があることを示します。 つまり、TABLE_SORT_COMBINE では、個々の列の一意の値を分類するのではなく、列の組み合わせの一意の値について分類することができます。 たとえば、特定の件名の特定の送信者から受信したメッセージをグループ化するために、1つのカテゴリを定義できます。 TABLE_SORT_COMBINE に値を設定すると、表示されるカテゴリ行の数が少なくなります。 
+このTABLE_SORT_COMBINEは **、ulPropTag** で指定された列を前のカテゴリ列と組み合わせて複合カテゴリを形成する必要があります。 つまり、個々の列の一意の値を分類する代わりにTABLE_SORT_COMBINE列の組み合わせの一意の値を分類できます。 たとえば、特定の件名の特定の送信者から受信したメッセージをグループ化するために、1 つのカテゴリを定義できます。 値を設定するとTABLE_SORT_COMBINE表示されるカテゴリ行の数が減らされます。 
   
-複数値を持つ列での並べ替えは、すべてのテーブル実装で汎用的にサポートされているわけではありません。 サポートされている場合は、MVI_PROP マクロを使用して MV_FLAG を**ulPropTag**メンバーの property タグに適用し、並べ替えキーを複数値を持つ列として識別します。 複数値列での並べ替えは、個々の値の使用に基づいています。 
+複数値の列での並べ替えは、すべてのテーブル実装で汎用的にサポートされるとは言えな。 サポートされている場合は、MV_FLAG マクロMVI_PROPを **ulPropTag** メンバーのプロパティ タグに適用して、並べ替えキーを複数値の列として識別します。 複数値の列での並べ替えは、個々の値の使用に基づいて行います。 
   
 > [!IMPORTANT]
-> TABLE_SORT_CATEG_MAX **** および TABLE_SORT_CATEG_MIN は、現在のダウンロード可能なヘッダーファイルで定義されていない場合があります。その場合は、次の値を使用してコードに追加できます。 >`#define TABLE_SORT_CATEG_MAX ((ULONG) 0x00000004)`>  `#define TABLE_SORT_CATEG_MIN ((ULONG) 0x00000008)`
+> **ulOrder** メンバー値 TABLE_SORT_CATEG_MAX および TABLE_SORT_CATEG_MIN は、現在使用しているダウンロード可能なヘッダー ファイルで定義されていない可能性があります。その場合は、次の値を使用してコードに追加>`#define TABLE_SORT_CATEG_MAX ((ULONG) 0x00000004)`>  `#define TABLE_SORT_CATEG_MIN ((ULONG) 0x00000008)`
   
-標準および分類された並べ替えの詳細については、「[並べ替えと分類](sorting-and-categorization.md)」を参照してください。 
+標準の並べ替えと分類された並べ替えの詳細については、「並べ替え [と分類」を参照してください](sorting-and-categorization.md)。 
   
 ## <a name="see-also"></a>関連項目
 

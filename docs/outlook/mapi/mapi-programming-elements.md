@@ -19,7 +19,7 @@ ms.locfileid: "33439318"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このセクションでは、 [MAPI リファレンス](mapi-reference.md)に含まれるプログラミング要素の概念の概要について説明します。 
+このセクションでは、MAPI リファレンスのプログラミング要素の概念的な概要 [について説明します](mapi-reference.md)。 
   
 ## <a name="see-also"></a>関連項目
 

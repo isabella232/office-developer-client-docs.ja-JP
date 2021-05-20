@@ -1,5 +1,5 @@
 ---
-title: RTF テキスト形式での添付ファイルのレンダリング
+title: RTF テキストで添付ファイルをレンダリングする
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,30 +15,30 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439794"
 ---
-# <a name="rendering-an-attachment-in-rtf-text"></a>RTF テキスト形式での添付ファイルのレンダリング
+# <a name="rendering-an-attachment-in-rtf-text"></a>RTF テキストで添付ファイルをレンダリングする
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-リッチテキスト形式 (rtf) 対応クライアントは、メッセージの**PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) プロパティで次のエスケープシーケンスを検索することによって、rtf メッセージテキストからレンダリング位置情報を取得できます。
+リッチ テキスト形式 (RTF) 対応のクライアントは、メッセージの **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) プロパティで次のエスケープ シーケンスを探して、RTF メッセージ テキストからレンダリングの位置情報を取得できます。
   
  `\objattph`
   
- **書式設定されたテキストでレンダリング情報を検索するには**
+ **書式設定されたテキストでレンダリング情報を見つけるには**
   
-1. メッセージの添付ファイルテーブルにアクセスするには、 **IMessage:: getattachmenttable**を呼び出します。 詳細については、「 [IMessage:: getattachmenttable](imessage-getattachmenttable.md)」を参照してください。
+1. **メッセージの添付ファイル テーブルにアクセスするには、IMessage::GetAttachmentTable** を呼び出します。 詳細については [、「IMessage::GetAttachmentTable」を参照してください](imessage-getattachmenttable.md)。
     
-2. **PR_RENDERING_POSITION**が-1 と等しくない行にテーブルを制限するプロパティ制限を構築します。 詳細については、「 **PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md))」を参照してください。
+2. テーブルを -1 に等しくない行に制限 **PR_RENDERING_POSITIONプロパティ** 制限を作成します。 詳細については、「PR_RENDERING_POSITION **(** [PidTagRenderingPosition )」を参照してください](pidtagrenderingposition-canonical-property.md)。
     
-3. **IMAPITable:: Restrict**を呼び出して制限を適用します。 詳細については、「 [IMAPITable:: Restrict](imapitable-restrict.md)」を参照してください。
+3. **IMAPITable::Restrict を呼び出して** 制限を適用します。 詳細については [、「IMAPITable::Restrict」を参照してください](imapitable-restrict.md)。
     
-4. 呼び出し**IMAPITable:: sorttable**は、添付ファイルを並べ替えます。 詳細については、「 [IMAPITable:: sorttable](imapitable-sorttable.md)」を参照してください。
+4. **IMAPITable::SortTable を呼び出して** 添付ファイルを並べ替える。 詳細については [、「IMAPITable::SortTable」を参照してください](imapitable-sorttable.md)。
     
-5. 必要な行を取得するには、 **IMAPITable:: QueryRows**を呼び出します。 詳細については、「 [IMAPITable:: QueryRows](imapitable-queryrows.md)」を参照してください。
+5. **IMAPITable::QueryRows を呼び出して、適切** な行を取得します。 詳細については [、「IMAPITable::QueryRows」を参照してください](imapitable-queryrows.md)。
     
-6. メッセージの**imapiprop:: openproperty**メソッドを呼び出して、 **IStream**インターフェイスを使用して**PR_RTF_COMPRESSED**を取得します。 詳細については、「 [imapiprop:: openproperty](imapiprop-openproperty.md) and **PR_RTF_COMPRESSED**」を参照してください。
+6. メッセージの **IMAPIProp::OpenProperty** メソッドを呼び出して **、IStream** **インターフェイス** PR_RTF_COMPRESSEDを取得します。 詳細については [、「IMAPIProp::OpenProperty」および「PR_RTF_COMPRESSED」](imapiprop-openproperty.md) を **参照してください**。
     
-7. ストリームをスキャンして、レンダリングプレースホルダーを探し`\objattph`ます。 このプレースホルダーの後の文字は、並べ替えられたテーブルの次の添付ファイルの場所です。
+7. ストリームをスキャンし、レンダリング プレースホルダーを探します  `\objattph` 。 このプレースホルダーに続く文字は、並べ替えたテーブル内の次の添付ファイルの場所です。
     
 

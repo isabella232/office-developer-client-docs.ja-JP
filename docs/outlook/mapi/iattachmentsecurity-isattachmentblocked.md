@@ -1,5 +1,5 @@
 ---
-title: iattachmentsecurityisattachmentblocked ブロックされました
+title: IAttachmentSecurityIsAttachmentBlocked
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,7 +25,7 @@ ms.locfileid: "33439780"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-指定された添付ファイルが microsoft outlook 2010 または microsoft outlook 2013 によってブロックされているかどうかを確認し、表示およびインデックスを作成します。
+指定した添付ファイルが、表示およびインデックス作成Microsoft Outlook 2010またはMicrosoft Outlook 2013によってブロックされる場合にチェックします。
   
 ```cpp
 HRESULT IAttachmentSecurity::IsAttachmentBlocked( 
@@ -38,11 +38,11 @@ HRESULT IAttachmentSecurity::IsAttachmentBlocked(
 
  _pwszFileName_
   
-> 順番添付ファイルのファイル名へのポインター。
+> [in]添付ファイルのファイル名へのポインター。
     
- _pfblocked_
+ _pfBlocked_
   
-> 読み上げ指定された添付ファイルがブロックされている場合は**true**を示す値へのポインター。それ以外の場合は**false**。
+> [out]指定した添付ファイルがブロック **されている場合は true** を示す値へのポインター。それ以外の場合は **false です**。
     
 ## <a name="see-also"></a>関連項目
 
@@ -50,5 +50,5 @@ HRESULT IAttachmentSecurity::IsAttachmentBlocked(
 
 [MAPI 定数](mapi-constants.md)
   
-[添付ファイルがブロックされていることを確認する](how-to-verify-an-attachment-is-blocked.md)
+[添付ファイルがブロックされているのを確認する](how-to-verify-an-attachment-is-blocked.md)
 

@@ -21,18 +21,18 @@ ms.locfileid: "33439717"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-通常、次のプロパティはすべてのメッセージの受信者に表示されます。 **PR_EMAIL_ADDRESS**および**PR_SEARCH_KEY**は省略可能です。その他のすべてのプロパティが必要です。 
+通常、次のプロパティは、すべてのメッセージ受信者に対して存在します。 **PR_EMAIL_ADDRESS** と **PR_SEARCH_KEY** オプションです。他のすべてのプロパティが必要です。 
   
 **表のタイトル**
 
-|**プロパティ**|**説明**|
+|**Property**|**説明**|
 |:-----|:-----|
-|**PR_ADDRTYPE**([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |メッセージングユーザーの電子メールアドレスの種類 (SMTP など) を格納します。  <br/> |
-|**PR_DISPLAY_NAME**([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |指定した MAPI オブジェクトの表示名を格納します。  <br/> |
-|**PR_DISPLAY_TYPE**([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))  <br/> |表の特定の行にアイコンを関連付けるために使用される値を格納します。  <br/> |
-|**PR_EMAIL_ADDRESS**([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |メッセージングユーザーの電子メールアドレスが含まれています。  <br/> |
-|**PR_ENTRYID**([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |特定の mapi オブジェクトのプロパティを開いて編集するために使用する mapi エントリ識別子を含みます。  <br/> |
-|**PR_OBJECT_TYPE**([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |オブジェクトの種類を格納します。  <br/> |
-|**PR_SEARCH_KEY**([PidTagSearchKey](pidtagsearchkey-canonical-property.md))  <br/> |検索の相関オブジェクトを識別する2つの比較可能なキーが含まれています。  <br/> |
+|**PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |SMTP などのメッセージング ユーザーの電子メール アドレスの種類が含まれる。  <br/> |
+|**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |特定の MAPI オブジェクトの表示名を格納します。  <br/> |
+|**PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))  <br/> |アイコンをテーブルの特定の行に関連付けるのに使用する値を含む。  <br/> |
+|**PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |メッセージング ユーザーの電子メール アドレスが含まれる。  <br/> |
+|**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |特定の MAPI オブジェクトのプロパティを開いて編集するために使用される MAPI エントリ識別子が含まれる。  <br/> |
+|**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |オブジェクトの種類を格納します。  <br/> |
+|**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))  <br/> |検索の関連オブジェクトを識別するバイナリ比較可能なキーが含まれています。  <br/> |
    
 

@@ -25,11 +25,11 @@ ms.locfileid: "33439402"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-PT_MV_CURRENCY 型のプロパティを記述するために使用される通貨値の配列を格納します。 
+データ型のプロパティを記述するために使用される通貨値の配列をPT_MV_CURRENCY。 
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |mapidefs.h  <br/> |
+|ヘッダー ファイル:  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SCurrencyArray
@@ -40,19 +40,19 @@ typedef struct _SCurrencyArray
 
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
- **cvalues**
+ **cValues**
   
-> lpcur メンバーによって参照されて**** いる配列内の値の数。 
+> lpcur メンバーが指す配列内の **値の** 数。 
     
  **lpcur**
   
-> 通貨の値を含む[通貨](currency.md)構造の配列へのポインター。 
+> 通貨値を含む [CURRENCY](currency.md) 構造体の配列へのポインター。 
     
 ## <a name="remarks"></a>注釈
 
-PT_MV_CURRENCY の詳細については、「[プロパティの種類の一覧](property-types.md)」を参照してください。 
+プロパティの詳細についてはPT_MV_CURRENCYプロパティ [の種類の一覧を参照してください](property-types.md)。 
   
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,5 @@
 ---
-title: icontabadmin IUnknown
+title: IContabAdmin IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,21 +25,21 @@ ms.locfileid: "33439332"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-microsoft outlook 2010 および microsoft outlook 2013 アドレス帳から連絡先フォルダーを削除します。
+連絡先フォルダーを連絡先アドレス帳Microsoft Outlook 2010削除Microsoft Outlook 2013削除します。
   
 |||
 |:-----|:-----|
-|ヘッダー ファイル:  <br/> |cabadmin  <br/> |
-|公開者:  <br/> ||
+|ヘッダー ファイル:  <br/> |cabadmin.h  <br/> |
+|次のユーザーによって公開されます。  <br/> ||
 |実装元:  <br/> |[IABContainer : IMAPIContainer](iabcontainerimapicontainer.md) <br/> |
 |呼び出し元:  <br/> |CRM  <br/> |
 |インターフェイス識別子:  <br/> |IID_IContabAdmin  <br/> |
 |ポインターの種類:  <br/> ||
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|[IContabAdmin::RemoveStore](icontabadmin-removestore.md) <br/> |指定したエントリ ID によって指定された連絡先アドレス帳 (CAB) をアドレス帳階層から削除します。  <br/> |
+|[IContabAdmin::RemoveStore](icontabadmin-removestore.md) <br/> |指定したエントリ ID で指定された連絡先アドレス帳 (CAB) をアドレス帳階層から削除します。  <br/> |
    
 

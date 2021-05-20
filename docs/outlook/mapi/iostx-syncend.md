@@ -1,5 +1,5 @@
 ---
-title: iostxsyncend
+title: IOSTXSyncEnd
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -33,7 +33,7 @@ HRESULT SyncEnd();
 
 ## <a name="remarks"></a>注釈
 
-[iostx:: SyncBeg](iostx-syncbeg.md)への呼び出しごとに、クライアントは**iostx:: syncend**を呼び出す必要があります。 対応するデータ構造には、Outlook が内部状態をクリーンアップできるように、クライアントが現在の状態を正常に完了したかどうかを示す情報が保持されます。
+クライアントは **、IOSTX::SyncBeg** への各呼び出しに対して [IOSTX::SyncEnd を呼び出す必要があります](iostx-syncbeg.md)。 対応するデータ構造には、クライアントが現在の状態を正常に完了したかどうかを示す情報が保持Outlook内部状態をクリーンアップできます。
   
 ## <a name="see-also"></a>関連項目
 

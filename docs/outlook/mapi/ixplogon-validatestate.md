@@ -25,7 +25,7 @@ ms.locfileid: "33439486"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-トランスポートプロバイダーの外部の状態を確認します。 
+トランスポート プロバイダーの外部状態を確認します。 
   
 ```cpp
 HRESULT ValidateState(
@@ -36,65 +36,65 @@ HRESULT ValidateState(
 
 ## <a name="parameters"></a>パラメーター
 
- _uluiparam_
+ _ulUIParam_
   
-> 順番このメソッドが表示するダイアログボックスまたはウィンドウの親ウィンドウへのハンドル。
+> [in]このメソッドが表示するダイアログ ボックスまたはウィンドウの親ウィンドウへのハンドル。
     
  _ulFlags_
   
-> 順番状態チェックの実行方法と状態チェックの結果を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]状態チェックの実行方法と状態チェックの結果を制御するフラグのビットマスク。 次のフラグを設定できます。
     
 ABORT_XP_HEADER_OPERATION 
   
-> ユーザーが操作をキャンセルしました。通常は、ダイアログボックスの **[キャンセル**] ボタンをクリックします。 トランスポートプロバイダーは、操作を続行するか、操作を中止して MAPI_E_USER_CANCELED を返すかを選択できます。 
+> 通常、ユーザーはダイアログ ボックスの [キャンセル] ボタンをクリック **して操作を** キャンセルしました。 トランスポート プロバイダーは、操作の作業を続行するか、操作を中止し、操作を返MAPI_E_USER_CANCELED。 
     
 CONFIG_CHANGED 
   
-> MAPI スプーラーに[IXPLogon:: AddressTypes](ixplogon-addresstypes.md)メソッドを呼び出すことによって、現在読み込まれているトランスポートプロバイダーの状態を検証します。 また、このフラグを使用すると、MAPI スプーラーは、クライアントアプリケーションがログオフしてから再度ログオンすることなく、重要なトランスポートプロバイダーのエラーを修正する機会を得ることができます。 
+> MAPI スプーラーが [IXPLogon::AddressTypes](ixplogon-addresstypes.md) メソッドを呼び出して、現在読み込まれているトランスポート プロバイダーの状態を検証します。 また、このフラグを使用すると、MAPI スプーラーは、クライアント アプリケーションにログオフしてから再度ログオンすることなく、重大なトランスポート プロバイダーのエラーを修正できます。 
     
 FORCE_XP_CONNECT 
   
-> ユーザーが接続操作を選択しました。 このフラグを REFRESH_XP_HEADER_CACHE または PROCESS_XP_HEADER_CACHE フラグと共に使用すると、接続アクションはキャッシュなしで行われます。
+> ユーザーが接続操作を選択しました。 このフラグを REFRESH_XP_HEADER_CACHE または PROCESS_XP_HEADER_CACHEと一緒に使用すると、接続アクションはキャッシュなしで実行されます。
     
 FORCE_XP_DISCONNECT 
   
-> ユーザーが切断操作を選択しました。 このフラグが REFRESH_XP_HEADER_CACHE または PROCESS_XP_HEADER_CACHE で使用されている場合、disconnect 操作はキャッシュなしで行われます。
+> ユーザーが切断操作を選択しました。 このフラグを使用して、REFRESH_XP_HEADER_CACHEまたはPROCESS_XP_HEADER_CACHEキャッシュせずに切断アクションが実行されます。
     
 PROCESS_XP_HEADER_CACHE 
   
-> ヘッダーキャッシュテーブル内のエントリを処理する必要があり、MSGSTATUS_REMOTE_DOWNLOAD フラグでマークされたすべてのメッセージをダウンロードして、MSGSTATUS_REMOTE_DELETE フラグでマークされたすべてのメッセージを削除する必要があります。 MSGSTATUS_REMOTE_DOWNLOAD と MSGSTATUS_REMOTE_DELETE の両方が設定されたメッセージは移動する必要があります。
+> ヘッダー キャッシュ テーブル内のエントリを処理し、MSGSTATUS_REMOTE_DOWNLOAD フラグでマークされたメッセージはすべてダウンロードし、MSGSTATUS_REMOTE_DELETE フラグでマークされたメッセージはすべて削除する必要があります。 設定されたメッセージとMSGSTATUS_REMOTE_DOWNLOAD設定MSGSTATUS_REMOTE_DELETEメッセージを移動する必要があります。
     
 REFRESH_XP_HEADER_CACHE 
   
-> メッセージヘッダーの新しいリストがダウンロードされ、すべてのメッセージ状態マーキングフラグがクリアされる必要があります。
+> メッセージ ヘッダーの新しい一覧をダウンロードし、すべてのメッセージ状態マーキング フラグをクリアする必要があります。
     
 SUPPRESS_UI 
   
-> トランスポートプロバイダーがユーザーインターフェイスを表示できないようにします。
+> トランスポート プロバイダーがユーザー インターフェイスを表示しなかします。
     
 ## <a name="return-value"></a>戻り値
 
 S_OK 
   
-> 呼び出しが成功し、予想される値または値が返されました。
+> 呼び出しは成功し、予期される値または値を返しました。
     
 MAPI_E_BUSY 
   
-> 別の操作が進行中です。完了することが許可されているか、この操作を実行する前に停止する必要があります。
+> 別の操作が進行中です。完了を許可するか、この操作を試みる前に停止する必要があります。
     
 MAPI_E_NO_SUPPORT 
   
-> 関係するリモートトランスポートプロバイダーはユーザーインターフェイスをサポートしておらず、クライアントアプリケーション自体にダイアログボックスを表示する必要があります。
+> 関連するリモート トランスポート プロバイダーはユーザー インターフェイスをサポートしていないので、クライアント アプリケーション自体がダイアログ ボックスを表示する必要があります。
     
 MAPI_E_USER_CANCEL 
   
-> ユーザーが操作をキャンセルしました。通常は、ダイアログボックスの **[キャンセル**] ボタンをクリックします。 
+> 通常、ユーザーはダイアログ ボックスの [キャンセル] ボタンをクリック **して操作を** キャンセルしました。 
     
 ## <a name="remarks"></a>注釈
 
-MAPI スプーラーは、 **IXPLogon:: validatestate**メソッドを呼び出して、ステータスオブジェクトの[imapistatus:: validatestate](imapistatus-validatestate.md)メソッドへの呼び出しをサポートします。 トランスポートプロバイダーは、 **IXPLogon:: validatestate**呼び出しに応答する必要があります。これは、MAPI スプーラーが現在のログオンセッションの状態オブジェクトを開いており、そのオブジェクトに対して**imapistatus:: validatestate**を呼び出した場合と同じです。 
+MAPI スプーラーは **、IXPLogon::ValidateState** メソッドを呼び出して、STATUS オブジェクトの [IMAPIStatus::ValidateState](imapistatus-validatestate.md) メソッドの呼び出しをサポートします。 トランスポート プロバイダーは、MAPI スプーラーが現在のログオン セッションの状態オブジェクトを開き、そのオブジェクトで **IMAPIStatus::ValidateState** を呼び出した場合とまったく同じ **IXPLogon::ValidateState** 呼び出しに応答する必要があります。 
   
-**imapistatus:: validatestate**の実装をサポートするために、MAPI スプーラーは、プロファイルセッションで実行されているすべてのアクティブなトランスポートプロバイダーのすべてのログオンオブジェクトに対して**IXPLogon:: validatestate**を呼び出します。 
+**IMAPIStatus::ValidateState** の実装をサポートするために、MAPI スプーラーは、プロファイル セッションで実行中のすべてのアクティブなトランスポート プロバイダーのすべてのログオン オブジェクトで **IXPLogon::ValidateState** を呼び出します。 
   
 ## <a name="see-also"></a>関連項目
 

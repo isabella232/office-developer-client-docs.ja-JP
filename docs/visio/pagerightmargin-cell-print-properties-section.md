@@ -28,7 +28,7 @@ ms.locfileid: "33440011"
   
 |||
 |:-----|:-----|
-| セル名 :  <br/> | [pagerightmargin]  <br/> |
+| セル名 :  <br/> | PageRightMargin  <br/> |
    
 プログラムから、インデックスによる [PageRightMargin] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。 
   

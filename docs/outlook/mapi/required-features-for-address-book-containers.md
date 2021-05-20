@@ -1,5 +1,5 @@
 ---
-title: アドレス帳コンテナーの必須機能
+title: アドレス帳コンテナーに必要な機能
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,28 +15,28 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439682"
 ---
-# <a name="required-features-for-address-book-containers"></a>アドレス帳コンテナーの必須機能
+# <a name="required-features-for-address-book-containers"></a>アドレス帳コンテナーに必要な機能
 
   
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-ほとんどのアドレス帳プロバイダーは、少なくとも1つのコンテナーをサポートしています。一部は変更可能です。 アドレス帳コンテナーは、コンテンツおよび階層テーブル、検索機能、および名前解決を提供できます。 変更可能なコンテナーを使用すると、メッセージングユーザー、配布リスト、その他のコンテナーなどのエントリを削除したり、他のコンテナー内のエントリや1回限りのテンプレートからエントリを追加したりできます。
+ほとんどのアドレス帳プロバイダーは、少なくとも 1 つのコンテナーをサポートします。一部のコンテナーは変更可能です。 アドレス帳コンテナーは、コンテンツテーブルと階層テーブル、検索機能、および名前解決を提供できます。 変更可能なコンテナーを使用すると、メッセージング ユーザー、配布リスト、その他のコンテナーなどのエントリを削除し、他のコンテナーまたは 1 回限りテンプレートのエントリからエントリを追加できます。
   
-次の表では、コンテナー、変更可能または読み取り専用、およびそれらの実装方法に関して、アドレス帳プロバイダーに必要な機能について説明します。
+次の表では、コンテナー、変更可能または読み取り専用のアドレス帳プロバイダーに必要な機能と、それらを実装する方法について説明します。
   
 |**機能**|**実装方法**|
 |:-----|:-----|
-|メッセージングユーザーにアクセスする  <br/> |[IABLogon:: openentry](iablogon-openentry.md)メソッドを実装します。 詳細については、「[アドレス帳エントリを開く](opening-address-book-entries.md)」を参照してください。  <br/> |
-|メッセージングユーザーを比較する  <br/> |[IABLogon:: compareentryids](iablogon-compareentryids.md)メソッドを実装します。 詳細については、「[アドレス帳エントリの比較](comparing-address-book-entries.md)」を参照してください。  <br/> |
-|メッセージングユーザーを作成する  <br/> |1. **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) プロパティをサポートすることによって、1回限りのテーブルに作成テンプレートのリストを指定します。 詳細については、「 [1 つのコンテナーの1回限りのテーブルの実装](implementing-a-container-one-off-table.md)」を参照してください。  <br/> 2. [IABContainer:: createentry](iabcontainer-createentry.md)メソッドを実装します。 詳細については、「[アドレス帳のエントリを追加する](adding-address-book-entries.md)」を参照してください。  <br/> |
-|メッセージングユーザーのコピー  <br/> |[IABContainer:: copyentries](iabcontainer-copyentries.md)メソッドを実装します。 詳細については、「[アドレス帳エントリのコピー](copying-address-book-entries.md)」を参照してください。  <br/> |
-|メッセージングユーザーを削除する  <br/> |[IABContainer::D eleteentries](iabcontainer-deleteentries.md)メソッドを実装します。 詳細については、「[アドレス帳のエントリを削除](removing-address-book-entries.md)する」を参照してください。  <br/> |
-|メッセージングユーザーに関する概要情報を提供する  <br/> |container プロパティの**PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)) をサポートします。 詳細については、「 [Contents Tables](contents-tables.md)」を参照してください。  <br/> |
-|メッセージングユーザーに関する詳細情報を提供する  <br/> |メッセージングユーザーおよび配布リストに対して**PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) プロパティをサポートします。 詳細については、「[受信者情報の表示](displaying-recipient-information.md)と[表の表示](display-tables.md)」を参照してください。  <br/> |
-|コンテナーに関する詳細情報を提供する  <br/> |コンテナーで**PR_DETAILS_TABLE**プロパティをサポートします。 詳細については、「[受信者情報の表示](displaying-recipient-information.md)と[表の表示](display-tables.md)」を参照してください。  <br/> |
-|コンテナーの階層リストを提供する  <br/> |container プロパティの**PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) をサポートします。 詳細については、「[階層テーブル](hierarchy-tables.md)」を参照してください。  <br/> |
-|メッセージングユーザープロパティのサポート  <br/> |[imailuser: imapiprop](imailuserimapiprop.md)インターフェイスを実装します。  <br/> |
-|あいまいな名前の解決  <br/> | **PR_ANR** ([PidTagAnr](pidtaganr-canonical-property.md)) プロパティ制限をサポートします。  <br/>  必要に応じて、 [IABContainer:: ResolveNames](iabcontainer-resolvenames.md)メソッドを実装します。 For more information, see [Implementing Name Resolution](implementing-name-resolution.md).  <br/> |
+|メッセージング ユーザーにアクセスする  <br/> |[IABLogon::OpenEntry メソッドを実装](iablogon-openentry.md)します。 詳細については、「アドレス帳エントリ [を開く」を参照してください](opening-address-book-entries.md)。  <br/> |
+|メッセージング ユーザーの比較  <br/> |[IABLogon::CompareEntryIDs メソッドを実装](iablogon-compareentryids.md)します。 詳細については、「アドレス帳 [エントリの比較」を参照してください](comparing-address-book-entries.md)。  <br/> |
+|メッセージング ユーザーの作成  <br/> |1. プロパティ ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) プロパティをサポートして、1 **回PR_CREATE_TEMPLATES** 作成テンプレートの一覧を指定します。 詳細については、「Container [One-Offテーブルの実装」を参照してください](implementing-a-container-one-off-table.md)。  <br/> 2. [IABContainer::CreateEntry メソッドを実装](iabcontainer-createentry.md) します。 詳細については、「アドレス帳エントリ [の追加」を参照してください](adding-address-book-entries.md)。  <br/> |
+|メッセージング ユーザーのコピー  <br/> |[IABContainer::CopyEntries メソッドを実装](iabcontainer-copyentries.md)します。 詳細については [、「Copying Address Book Entries」を参照してください](copying-address-book-entries.md)。  <br/> |
+|メッセージング ユーザーの削除  <br/> |[IABContainer::D eleteEntries メソッドを実装](iabcontainer-deleteentries.md)します。 詳細については、「アドレス帳 [エントリの削除」を参照してください](removing-address-book-entries.md)。  <br/> |
+|メッセージング ユーザーに関する概要情報を提供する  <br/> |コンテナー プロパティを **サポートPR_CONTAINER_CONTENTS** [(PidTagContainerContents)。](pidtagcontainercontents-canonical-property.md) 詳細については、「コンテンツ テーブル [」を参照してください](contents-tables.md)。  <br/> |
+|メッセージング ユーザーに関する詳細情報を提供する  <br/> |メッセージング ユーザー **PR_DETAILS_TABLE** 配布リストで [、プロパティ (PidTagDetailsTable)](pidtagdetailstable-canonical-property.md)プロパティをサポートします。 詳細については、「受信者情報の [表示」および「テーブルの表示](displaying-recipient-information.md) 」 [を参照してください](display-tables.md)。  <br/> |
+|コンテナーに関する詳細情報を提供する  <br/> |コンテナーの **PR_DETAILS_TABLE** プロパティをサポートします。 詳細については、「受信者情報の [表示」および「テーブルの表示](displaying-recipient-information.md) 」 [を参照してください](display-tables.md)。  <br/> |
+|コンテナーの階層リストを提供する  <br/> |コンテナー プロパティを **サポートPR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy)。](pidtagcontainerhierarchy-canonical-property.md) 詳細については、「階層テーブル [」を参照してください](hierarchy-tables.md)。  <br/> |
+|メッセージング ユーザーのプロパティをサポートする  <br/> |[IMailUser : IMAPIProp インターフェイスを実装](imailuserimapiprop.md)します。  <br/> |
+|あいまいな名前を解決する  <br/> | プロパティの **制限** PR_ANR ([PidTagAnr](pidtaganr-canonical-property.md)) をサポートします。  <br/>  必要に応じて [、IABContainer::ResolveNames メソッドを実装](iabcontainer-resolvenames.md) します。 For more information, see [Implementing Name Resolution](implementing-name-resolution.md).  <br/> |
    
 

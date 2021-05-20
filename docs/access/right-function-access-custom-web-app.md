@@ -1,5 +1,5 @@
 ---
-title: Right 関数 (Access カスタム web アプリ)
+title: Right Function (Access custom Web app)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439955"
 ---
-# <a name="right-function-access-custom-web-app"></a>Right 関数 (Access カスタム web アプリ)
+# <a name="right-function-access-custom-web-app"></a>Right Function (Access custom Web app)
 
 文字列の右側の部分を、指定された文字数分だけ返します。
   
@@ -23,13 +23,13 @@ ms.locfileid: "33439955"
   
 ## <a name="syntax"></a>構文
 
- **右**(*textexpression*、 *Length*) 
+ **Right** (*TextExpression*, *Length*) 
   
 **Right** 関数の引数は次のとおりです。 
   
 |**引数名**|**説明**|
 |:-----|:-----|
 | *TextExpression*  <br/> |文字列式。  <br/> |
-| *Length*  <br/> |は、返される*textexpression*の文字の数を指定する正の整数です。  <br/> |
+| *Length*  <br/> |*TextExpression* の文字数を指定する正の整数です。  <br/> |
    
 

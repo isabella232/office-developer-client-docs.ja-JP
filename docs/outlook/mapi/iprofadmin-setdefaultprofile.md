@@ -36,17 +36,17 @@ HRESULT SetDefaultProfile(
 
 ## <a name="parameters"></a>パラメーター
 
- _lpszprofilename_
+ _lpszProfileName_
   
-> 順番既定値になるプロファイルの名前、または NULL のポインター。 _lpszprofilename_を NULL に設定すると、 **setdefaultprofile**が既存の既定のプロファイルを削除して、クライアントを既定にしないようにする必要があることを示します。 
+> [in]既定のプロファイルまたは NULL になるプロファイルの名前へのポインター。 _lpszProfileName_ を NULL に設定すると **、SetDefaultProfile** は既存の既定のプロファイルを削除し、クライアントは既定のままにする必要があります。 
     
  _ulFlags_
   
-> 順番_lpszprofilename_が指す文字列の種類を制御するフラグのビットマスク。 次のフラグを設定できます。
+> [in]  _lpszProfileName_ が指す文字列の種類を制御するフラグのビットマスクです。 次のフラグを設定できます。
     
 MAPI_UNICODE 
   
-> プロファイル名が Unicode 形式である。 MAPI_UNICODE フラグが設定されていない場合、プロファイル名は ANSI 形式になります。
+> プロファイル名は Unicode 形式です。 このフラグMAPI_UNICODE設定されていない場合、プロファイル名は ANSI 形式です。
     
 ## <a name="return-value"></a>戻り値
 
@@ -56,15 +56,15 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> 指定されたプロファイルが存在しません。
+> 指定したプロファイルが存在しません。
     
 ## <a name="remarks"></a>注釈
 
-**IProfAdmin:: setdefaultprofile**メソッドは、特定のプロファイルをクライアントの既定のプロファイルとして確立するか、現在の既定のプロファイルをクリアします。 既定のプロファイルは、クライアントが MAPI セッションを開始するときに自動的に使用されるプロファイルです。 **setdefaultprofile**は、新しい既定のプロファイルの**PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md)) プロパティも TRUE に設定します。
+**IProfAdmin::SetDefaultProfile** メソッドは、クライアントの既定のプロファイルとして特定のプロファイルを確立するか、現在の既定のプロファイルをクリアします。 既定のプロファイルは、クライアントが MAPI セッションを開始するたびに自動的に使用されるプロファイルです。 **SetDefaultProfile は** **PR_DEFAULT_PROFILE、** 新しい既定のプロファイルのプロパティ [(PidTagDefaultProfile) プロパティ (PidTagDefaultProfile)](pidtagdefaultprofile-canonical-property.md)を TRUE に設定します。
   
 ## <a name="notes-to-callers"></a>呼び出し側への注意
 
-既定のプロファイルを使用してセッションを開始するには、MAPI_USE_DEFAULT フラグを[MAPILogonEx](mapilogonex.md)関数に渡します。 
+既定のプロファイルでセッションを開始するには [、MAPILogonEx](mapilogonex.md) MAPI_USE_DEFAULTフラグを渡します。 
   
 ## <a name="see-also"></a>関連項目
 
