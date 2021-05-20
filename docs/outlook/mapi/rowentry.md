@@ -19,11 +19,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33436035"
 ---
-# <a name="rowentry"></a><span data-ttu-id="59a8f-103">ROWENTRY</span><span class="sxs-lookup"><span data-stu-id="59a8f-103">ROWENTRY</span></span>
+# <a name="rowentry"></a><span data-ttu-id="0e642-103">ROWENTRY</span><span class="sxs-lookup"><span data-stu-id="0e642-103">ROWENTRY</span></span>
 
-<span data-ttu-id="59a8f-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="59a8f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="0e642-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="0e642-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="59a8f-105">[IExchangeModifyTable](iexchangemodifytableiunknown.md)インターフェイスを使用して、テーブル内のその行に対して実行される行と操作が含まれます。</span><span class="sxs-lookup"><span data-stu-id="59a8f-105">Contains a row and the operation that is performed on that row in a table through the [IExchangeModifyTable](iexchangemodifytableiunknown.md) interface.</span></span> 
+<span data-ttu-id="0e642-105">[IExchangeModifyTable](iexchangemodifytableiunknown.md)インターフェイスを介してテーブル内のその行に対して実行される行と操作を格納します。</span><span class="sxs-lookup"><span data-stu-id="0e642-105">Contains a row and the operation that is performed on that row in a table through the [IExchangeModifyTable](iexchangemodifytableiunknown.md) interface.</span></span> 
   
 ```cpp
 typedef struct
@@ -34,38 +34,38 @@ typedef struct
 }  ROWENTRY, FAR * LPROWENTRY;
 ```
 
-## <a name="members"></a><span data-ttu-id="59a8f-106">メンバー</span><span class="sxs-lookup"><span data-stu-id="59a8f-106">Members</span></span>
+## <a name="members"></a><span data-ttu-id="0e642-106">Members</span><span class="sxs-lookup"><span data-stu-id="0e642-106">Members</span></span>
 
-<span data-ttu-id="59a8f-107">**ulrowflags**</span><span class="sxs-lookup"><span data-stu-id="59a8f-107">**ulRowFlags**</span></span>
+<span data-ttu-id="0e642-107">**ulRowFlags**</span><span class="sxs-lookup"><span data-stu-id="0e642-107">**ulRowFlags**</span></span>
   
-> <span data-ttu-id="59a8f-108">データに対して実行する操作の1つを次に示します。</span><span class="sxs-lookup"><span data-stu-id="59a8f-108">One of the following operations to be performed on the data:</span></span> 
+> <span data-ttu-id="0e642-108">データに対して実行する次のいずれかの操作。</span><span class="sxs-lookup"><span data-stu-id="0e642-108">One of the following operations to be performed on the data:</span></span> 
     
-  - <span data-ttu-id="59a8f-109">ROW_ADD: 新しい行としてテーブルにデータを追加します。</span><span class="sxs-lookup"><span data-stu-id="59a8f-109">ROW_ADD: Add the data to the table as a new row.</span></span>
+  - <span data-ttu-id="0e642-109">ROW_ADD: 新しい行としてテーブルにデータを追加します。</span><span class="sxs-lookup"><span data-stu-id="0e642-109">ROW_ADD: Add the data to the table as a new row.</span></span>
       
-  - <span data-ttu-id="59a8f-110">ROW_MODIFY: テーブルのこの行を変更します。</span><span class="sxs-lookup"><span data-stu-id="59a8f-110">ROW_MODIFY: Modify this row in the table.</span></span>
+  - <span data-ttu-id="0e642-110">ROW_MODIFY: テーブル内のこの行を変更します。</span><span class="sxs-lookup"><span data-stu-id="0e642-110">ROW_MODIFY: Modify this row in the table.</span></span>
       
-  - <span data-ttu-id="59a8f-111">ROW_REMOVE: この行を表から削除します。</span><span class="sxs-lookup"><span data-stu-id="59a8f-111">ROW_REMOVE: Remove this row from the table.</span></span>
+  - <span data-ttu-id="0e642-111">ROW_REMOVE: テーブルからこの行を削除します。</span><span class="sxs-lookup"><span data-stu-id="0e642-111">ROW_REMOVE: Remove this row from the table.</span></span>
       
-  - <span data-ttu-id="59a8f-112">ROW_EMPTY: 行データをテーブルに追加しません。</span><span class="sxs-lookup"><span data-stu-id="59a8f-112">ROW_EMPTY: Do not add the row data to the table.</span></span> <span data-ttu-id="59a8f-113">(行は空です。)</span><span class="sxs-lookup"><span data-stu-id="59a8f-113">(The row is empty.)</span></span>
+  - <span data-ttu-id="0e642-112">ROW_EMPTY: 行データをテーブルに追加しない。</span><span class="sxs-lookup"><span data-stu-id="0e642-112">ROW_EMPTY: Do not add the row data to the table.</span></span> <span data-ttu-id="0e642-113">(行は空です)。</span><span class="sxs-lookup"><span data-stu-id="0e642-113">(The row is empty.)</span></span>
     
-<span data-ttu-id="59a8f-114">**cvalues**</span><span class="sxs-lookup"><span data-stu-id="59a8f-114">**cValues**</span></span>
+<span data-ttu-id="0e642-114">**cValues**</span><span class="sxs-lookup"><span data-stu-id="0e642-114">**cValues**</span></span>
   
-> <span data-ttu-id="59a8f-115">**rgPropvals**のプロパティ値の数。</span><span class="sxs-lookup"><span data-stu-id="59a8f-115">The number of property values in **rgPropvals**.</span></span>
+> <span data-ttu-id="0e642-115">**rgPropvals のプロパティ値の数** です。</span><span class="sxs-lookup"><span data-stu-id="0e642-115">The number of property values in **rgPropvals**.</span></span>
     
-<span data-ttu-id="59a8f-116">**rgPropVals**</span><span class="sxs-lookup"><span data-stu-id="59a8f-116">**rgPropVals**</span></span>
+<span data-ttu-id="0e642-116">**rgPropVals**</span><span class="sxs-lookup"><span data-stu-id="0e642-116">**rgPropVals**</span></span>
   
-> <span data-ttu-id="59a8f-117">テーブルに挿入する列の値を表す[spropvalue](spropvalue.md)構造の配列。</span><span class="sxs-lookup"><span data-stu-id="59a8f-117">An array of [SPropValue](spropvalue.md) structures representing the columns values to be inserted into the table.</span></span> 
+> <span data-ttu-id="0e642-117">テーブルに挿入する列の値を表す [SPropValue](spropvalue.md) 構造体の配列。</span><span class="sxs-lookup"><span data-stu-id="0e642-117">An array of [SPropValue](spropvalue.md) structures representing the columns values to be inserted into the table.</span></span> 
     
-## <a name="mfcmapi-reference"></a><span data-ttu-id="59a8f-118">MFCMAPI リファレンス</span><span class="sxs-lookup"><span data-stu-id="59a8f-118">MFCMAPI reference</span></span>
+## <a name="mfcmapi-reference"></a><span data-ttu-id="0e642-118">MFCMAPI リファレンス</span><span class="sxs-lookup"><span data-stu-id="0e642-118">MFCMAPI reference</span></span>
 
-<span data-ttu-id="59a8f-119">MFCMAPI のサンプル コードについては、次の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="59a8f-119">For MFCMAPI sample code, see the following table.</span></span>
+<span data-ttu-id="0e642-119">MFCMAPI のサンプル コードについては、次の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0e642-119">For MFCMAPI sample code, see the following table.</span></span>
   
-|<span data-ttu-id="59a8f-120">**ファイル**</span><span class="sxs-lookup"><span data-stu-id="59a8f-120">**File**</span></span>|<span data-ttu-id="59a8f-121">**関数**</span><span class="sxs-lookup"><span data-stu-id="59a8f-121">**Function**</span></span>|<span data-ttu-id="59a8f-122">**コメント**</span><span class="sxs-lookup"><span data-stu-id="59a8f-122">**Comment**</span></span>|
+|<span data-ttu-id="0e642-120">**ファイル**</span><span class="sxs-lookup"><span data-stu-id="0e642-120">**File**</span></span>|<span data-ttu-id="0e642-121">**関数**</span><span class="sxs-lookup"><span data-stu-id="0e642-121">**Function**</span></span>|<span data-ttu-id="0e642-122">**コメント**</span><span class="sxs-lookup"><span data-stu-id="0e642-122">**Comment**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="59a8f-123">ルール</span><span class="sxs-lookup"><span data-stu-id="59a8f-123">RulesDlg.cpp</span></span>  <br/> |<span data-ttu-id="59a8f-124">crulesdlg:: GetSelectedItems</span><span class="sxs-lookup"><span data-stu-id="59a8f-124">CRulesDlg::GetSelectedItems</span></span>  <br/> |<span data-ttu-id="59a8f-125">以降の**modifytable**アクションに対して選択されたルールの一覧を作成するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="59a8f-125">Used to build a list of selected rules for subsequent **ModifyTable** actions.</span></span>  <br/> |
+|<span data-ttu-id="0e642-123">RulesDlg.cpp</span><span class="sxs-lookup"><span data-stu-id="0e642-123">RulesDlg.cpp</span></span>  <br/> |<span data-ttu-id="0e642-124">CRulesDlg::GetSelectedItems</span><span class="sxs-lookup"><span data-stu-id="0e642-124">CRulesDlg::GetSelectedItems</span></span>  <br/> |<span data-ttu-id="0e642-125">後続の ModifyTable アクションで選択したルールの一覧を **作成するために使用** します。</span><span class="sxs-lookup"><span data-stu-id="0e642-125">Used to build a list of selected rules for subsequent **ModifyTable** actions.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="59a8f-126">関連項目</span><span class="sxs-lookup"><span data-stu-id="59a8f-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0e642-126">関連項目</span><span class="sxs-lookup"><span data-stu-id="0e642-126">See also</span></span>
   
-- [<span data-ttu-id="59a8f-127">IExchangeModifyTable : IUnknown</span><span class="sxs-lookup"><span data-stu-id="59a8f-127">IExchangeModifyTable : IUnknown</span></span>](iexchangemodifytableiunknown.md)
-- [<span data-ttu-id="59a8f-128">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="59a8f-128">MAPI Structures</span></span>](mapi-structures.md)
+- [<span data-ttu-id="0e642-127">IExchangeModifyTable : IUnknown</span><span class="sxs-lookup"><span data-stu-id="0e642-127">IExchangeModifyTable : IUnknown</span></span>](iexchangemodifytableiunknown.md)
+- [<span data-ttu-id="0e642-128">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="0e642-128">MAPI Structures</span></span>](mapi-structures.md)
 

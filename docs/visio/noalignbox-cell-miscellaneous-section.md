@@ -16,29 +16,29 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33435881"
 ---
-# <a name="noalignbox-cell-miscellaneous-section"></a><span data-ttu-id="ac590-103">[NoAlignBox] セル ([Miscellaneous] セクション)</span><span class="sxs-lookup"><span data-stu-id="ac590-103">NoAlignBox Cell (Miscellaneous Section)</span></span>
+# <a name="noalignbox-cell-miscellaneous-section"></a><span data-ttu-id="e77bb-103">[NoAlignBox] セル ([Miscellaneous] セクション)</span><span class="sxs-lookup"><span data-stu-id="e77bb-103">NoAlignBox Cell (Miscellaneous Section)</span></span>
 
-<span data-ttu-id="ac590-104">選択した図形の選択範囲の表示/非表示を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="ac590-104">Switches the display of the selection rectangle on and off for the selected shape.</span></span>
+<span data-ttu-id="e77bb-104">選択した図形の選択範囲の表示/非表示を切り替えます。</span><span class="sxs-lookup"><span data-stu-id="e77bb-104">Switches the display of the selection rectangle on and off for the selected shape.</span></span>
   
-|<span data-ttu-id="ac590-105">**値**</span><span class="sxs-lookup"><span data-stu-id="ac590-105">**Value**</span></span>|<span data-ttu-id="ac590-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="ac590-106">**Description**</span></span>|
+|<span data-ttu-id="e77bb-105">**値**</span><span class="sxs-lookup"><span data-stu-id="e77bb-105">**Value**</span></span>|<span data-ttu-id="e77bb-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="e77bb-106">**Description**</span></span>|
 |:-----|:-----|
-| <span data-ttu-id="ac590-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="ac590-107">TRUE</span></span>  <br/> | <span data-ttu-id="ac590-108">図形を選択するときに選択範囲が表示されません。</span><span class="sxs-lookup"><span data-stu-id="ac590-108">Selection rectangle is not displayed when the shape is selected.</span></span>  <br/> |
-| <span data-ttu-id="ac590-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="ac590-109">FALSE</span></span>  <br/> | <span data-ttu-id="ac590-110">図形を選択するときに選択範囲が表示されます。</span><span class="sxs-lookup"><span data-stu-id="ac590-110">Selection rectangle is displayed when the shape is selected.</span></span>  <br/> |
+| <span data-ttu-id="e77bb-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="e77bb-107">TRUE</span></span>  <br/> | <span data-ttu-id="e77bb-108">図形を選択するときに選択範囲が表示されません。</span><span class="sxs-lookup"><span data-stu-id="e77bb-108">Selection rectangle is not displayed when the shape is selected.</span></span>  <br/> |
+| <span data-ttu-id="e77bb-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="e77bb-109">FALSE</span></span>  <br/> | <span data-ttu-id="e77bb-110">図形を選択するときに選択範囲が表示されます。</span><span class="sxs-lookup"><span data-stu-id="e77bb-110">Selection rectangle is displayed when the shape is selected.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="ac590-111">注釈</span><span class="sxs-lookup"><span data-stu-id="ac590-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e77bb-111">注釈</span><span class="sxs-lookup"><span data-stu-id="e77bb-111">Remarks</span></span>
 
-<span data-ttu-id="ac590-112">別の数式または **CellsU** を使用したプログラムから、名前によって [NoAlignBox] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="ac590-112">To get a reference to the NoAlignBox cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="e77bb-112">別の数式または **CellsU** を使用したプログラムから、名前によって [NoAlignBox] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="e77bb-112">To get a reference to the NoAlignBox cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="ac590-113">セル名:</span><span class="sxs-lookup"><span data-stu-id="ac590-113">Cell name:</span></span>  <br/> | <span data-ttu-id="ac590-114">[noalignbox]</span><span class="sxs-lookup"><span data-stu-id="ac590-114">NoAlignBox</span></span>  <br/> |
+| <span data-ttu-id="e77bb-113">セル名:</span><span class="sxs-lookup"><span data-stu-id="e77bb-113">Cell name:</span></span>  <br/> | <span data-ttu-id="e77bb-114">NoAlignBox</span><span class="sxs-lookup"><span data-stu-id="e77bb-114">NoAlignBox</span></span>  <br/> |
    
-<span data-ttu-id="ac590-115">プログラムから、インデックスによって [NoAlignBox] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="ac590-115">To get a reference to the NoAlignBox cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="e77bb-115">プログラムから、インデックスによって [NoAlignBox] セルへの参照を取得するには、**CellsSRC** プロパティを使用して次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="e77bb-115">To get a reference to the NoAlignBox cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="ac590-116">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="ac590-116">Section index:</span></span>  <br/> |<span data-ttu-id="ac590-117">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="ac590-117">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="ac590-118">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="ac590-118">Row index:</span></span>  <br/> |<span data-ttu-id="ac590-119">**visRowMisc**</span><span class="sxs-lookup"><span data-stu-id="ac590-119">**visRowMisc**</span></span> <br/> |
-| <span data-ttu-id="ac590-120">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="ac590-120">Cell index:</span></span>  <br/> |<span data-ttu-id="ac590-121">**visNoAlignBox**</span><span class="sxs-lookup"><span data-stu-id="ac590-121">**visNoAlignBox**</span></span> <br/> |
+| <span data-ttu-id="e77bb-116">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="e77bb-116">Section index:</span></span>  <br/> |<span data-ttu-id="e77bb-117">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="e77bb-117">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="e77bb-118">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="e77bb-118">Row index:</span></span>  <br/> |<span data-ttu-id="e77bb-119">**visRowMisc**</span><span class="sxs-lookup"><span data-stu-id="e77bb-119">**visRowMisc**</span></span> <br/> |
+| <span data-ttu-id="e77bb-120">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="e77bb-120">Cell index:</span></span>  <br/> |<span data-ttu-id="e77bb-121">**visNoAlignBox**</span><span class="sxs-lookup"><span data-stu-id="e77bb-121">**visNoAlignBox**</span></span> <br/> |
    
 
