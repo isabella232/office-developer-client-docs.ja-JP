@@ -15,15 +15,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33437946"
 ---
-# <a name="isocialpersongetstatus"></a><span data-ttu-id="84cb4-103">ISocialPerson::GetStatus</span><span class="sxs-lookup"><span data-stu-id="84cb4-103">ISocialPerson::GetStatus</span></span>
+# <a name="isocialpersongetstatus"></a><span data-ttu-id="44d79-103">ISocialPerson::GetStatus</span><span class="sxs-lookup"><span data-stu-id="44d79-103">ISocialPerson::GetStatus</span></span>
 
-<span data-ttu-id="84cb4-104">このメソッドは現在サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="84cb4-104">This method is currently not supported.</span></span> 
+<span data-ttu-id="44d79-104">このメソッドは現在サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="44d79-104">This method is currently not supported.</span></span> 
   
 ```cpp
 HRESULT _stdcall GetStatus([out, retval] BSTR* status);
 ```
 
-## <a name="see-also"></a><span data-ttu-id="84cb4-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="84cb4-105">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="44d79-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="44d79-105">See also</span></span>
 
-- [<span data-ttu-id="84cb4-106">ISocialPerson : IUnknown</span><span class="sxs-lookup"><span data-stu-id="84cb4-106">ISocialPerson : IUnknown</span></span>](isocialpersoniunknown.md)
+- [<span data-ttu-id="44d79-106">ISocialPerson : IUnknown</span><span class="sxs-lookup"><span data-stu-id="44d79-106">ISocialPerson : IUnknown</span></span>](isocialpersoniunknown.md)
 

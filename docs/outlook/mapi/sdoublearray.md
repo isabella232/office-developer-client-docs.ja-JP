@@ -19,17 +19,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439269"
 ---
-# <a name="sdoublearray"></a><span data-ttu-id="4c3b7-103">SDoubleArray</span><span class="sxs-lookup"><span data-stu-id="4c3b7-103">SDoubleArray</span></span>
+# <a name="sdoublearray"></a><span data-ttu-id="f9d84-103">SDoubleArray</span><span class="sxs-lookup"><span data-stu-id="f9d84-103">SDoubleArray</span></span>
 
   
   
-<span data-ttu-id="4c3b7-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="4c3b7-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="f9d84-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f9d84-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="4c3b7-105">PT_MV_DOUBLE 型のプロパティを記述するために使用される倍精度浮動小数点数の配列を格納します。</span><span class="sxs-lookup"><span data-stu-id="4c3b7-105">Contains an array of doubles used to describe a property of type PT_MV_DOUBLE.</span></span>
+<span data-ttu-id="f9d84-105">型のプロパティを記述するために使用される倍数の配列が含PT_MV_DOUBLE。</span><span class="sxs-lookup"><span data-stu-id="f9d84-105">Contains an array of doubles used to describe a property of type PT_MV_DOUBLE.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="4c3b7-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="4c3b7-106">Header file:</span></span>  <br/> |<span data-ttu-id="4c3b7-107">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="4c3b7-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="f9d84-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="f9d84-106">Header file:</span></span>  <br/> |<span data-ttu-id="f9d84-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="f9d84-107">Mapidefs.h</span></span>  <br/> |
    
 ```cpp
 typedef struct _SDoubleArray
@@ -40,26 +40,26 @@ typedef struct _SDoubleArray
 
 ```
 
-## <a name="members"></a><span data-ttu-id="4c3b7-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="4c3b7-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="f9d84-108">Members</span><span class="sxs-lookup"><span data-stu-id="f9d84-108">Members</span></span>
 
- <span data-ttu-id="4c3b7-109">**cvalues**</span><span class="sxs-lookup"><span data-stu-id="4c3b7-109">**cValues**</span></span>
+ <span data-ttu-id="f9d84-109">**cValues**</span><span class="sxs-lookup"><span data-stu-id="f9d84-109">**cValues**</span></span>
   
-> <span data-ttu-id="4c3b7-110">lpsingleメンバーが指す配列内の値の\*\*\*\* 数。</span><span class="sxs-lookup"><span data-stu-id="4c3b7-110">Count of values in the array pointed to by the **lpdbl** member.</span></span> 
+> <span data-ttu-id="f9d84-110">**lpdbl** メンバーが指す配列内の値の数。</span><span class="sxs-lookup"><span data-stu-id="f9d84-110">Count of values in the array pointed to by the **lpdbl** member.</span></span> 
     
- <span data-ttu-id="4c3b7-111">**lpdbl**</span><span class="sxs-lookup"><span data-stu-id="4c3b7-111">**lpdbl**</span></span>
+ <span data-ttu-id="f9d84-111">**lpdbl**</span><span class="sxs-lookup"><span data-stu-id="f9d84-111">**lpdbl**</span></span>
   
-> <span data-ttu-id="4c3b7-112">倍精度浮動小数点型の値の配列へのポインターを指定します。</span><span class="sxs-lookup"><span data-stu-id="4c3b7-112">Pointer to an array of double values.</span></span>
+> <span data-ttu-id="f9d84-112">倍数の値の配列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="f9d84-112">Pointer to an array of double values.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="4c3b7-113">注釈</span><span class="sxs-lookup"><span data-stu-id="4c3b7-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f9d84-113">注釈</span><span class="sxs-lookup"><span data-stu-id="f9d84-113">Remarks</span></span>
 
-<span data-ttu-id="4c3b7-114">PT_MV_DOUBLE の詳細については、「[プロパティの種類の一覧](property-types.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4c3b7-114">For more information about PT_MV_DOUBLE, see [List of Property Types](property-types.md).</span></span>
+<span data-ttu-id="f9d84-114">プロパティの詳細については、「PT_MV_DOUBLEプロパティ [の種類の一覧」を参照してください](property-types.md)。</span><span class="sxs-lookup"><span data-stu-id="f9d84-114">For more information about PT_MV_DOUBLE, see [List of Property Types](property-types.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="4c3b7-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="4c3b7-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f9d84-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="f9d84-115">See also</span></span>
 
 
 
-[<span data-ttu-id="4c3b7-116">SPropValue</span><span class="sxs-lookup"><span data-stu-id="4c3b7-116">SPropValue</span></span>](spropvalue.md)
+[<span data-ttu-id="f9d84-116">SPropValue</span><span class="sxs-lookup"><span data-stu-id="f9d84-116">SPropValue</span></span>](spropvalue.md)
 
 
-[<span data-ttu-id="4c3b7-117">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="4c3b7-117">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="f9d84-117">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="f9d84-117">MAPI Structures</span></span>](mapi-structures.md)
 

@@ -19,30 +19,30 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438205"
 ---
-# <a name="mapigetdefaultmalloc"></a><span data-ttu-id="1d456-103">MAPIGetDefaultMalloc</span><span class="sxs-lookup"><span data-stu-id="1d456-103">MAPIGetDefaultMalloc</span></span>
+# <a name="mapigetdefaultmalloc"></a><span data-ttu-id="11164-103">MAPIGetDefaultMalloc</span><span class="sxs-lookup"><span data-stu-id="11164-103">MAPIGetDefaultMalloc</span></span>
 
   
   
-<span data-ttu-id="1d456-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="1d456-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="11164-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="11164-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="1d456-105">既定の MAPI メモリ割り当て関数のアドレスを取得します。</span><span class="sxs-lookup"><span data-stu-id="1d456-105">Retrieves the address of the default MAPI memory allocation function.</span></span>
+<span data-ttu-id="11164-105">既定の MAPI メモリ割り当て関数のアドレスを取得します。</span><span class="sxs-lookup"><span data-stu-id="11164-105">Retrieves the address of the default MAPI memory allocation function.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="1d456-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="1d456-106">Header file:</span></span>  <br/> |<span data-ttu-id="1d456-107">Mapiutil</span><span class="sxs-lookup"><span data-stu-id="1d456-107">Mapiutil.h</span></span>  <br/> |
-|<span data-ttu-id="1d456-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="1d456-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="1d456-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="1d456-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="1d456-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="1d456-110">Called by:</span></span>  <br/> |<span data-ttu-id="1d456-111">クライアントアプリケーションとサービスプロバイダー</span><span class="sxs-lookup"><span data-stu-id="1d456-111">Client applications and service providers</span></span>  <br/> |
+|<span data-ttu-id="11164-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="11164-106">Header file:</span></span>  <br/> |<span data-ttu-id="11164-107">Mapiutil.h</span><span class="sxs-lookup"><span data-stu-id="11164-107">Mapiutil.h</span></span>  <br/> |
+|<span data-ttu-id="11164-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="11164-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="11164-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="11164-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="11164-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="11164-110">Called by:</span></span>  <br/> |<span data-ttu-id="11164-111">クライアント アプリケーションとサービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="11164-111">Client applications and service providers</span></span>  <br/> |
    
 ```cpp
 LPMALLOC MAPIGetDefaultMalloc( );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="1d456-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="1d456-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="11164-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="11164-112">Parameters</span></span>
 
-<span data-ttu-id="1d456-113">なし。</span><span class="sxs-lookup"><span data-stu-id="1d456-113">None.</span></span> 
+<span data-ttu-id="11164-113">なし。</span><span class="sxs-lookup"><span data-stu-id="11164-113">None.</span></span> 
   
-## <a name="return-value"></a><span data-ttu-id="1d456-114">Return value</span><span class="sxs-lookup"><span data-stu-id="1d456-114">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="11164-114">Return value</span><span class="sxs-lookup"><span data-stu-id="11164-114">Return value</span></span>
 
-<span data-ttu-id="1d456-115">**mapigetdefaultmalloc**関数は、既定の MAPI メモリ割り当て関数へのポインターを返します。</span><span class="sxs-lookup"><span data-stu-id="1d456-115">The **MAPIGetDefaultMalloc** function returns a pointer to the default MAPI memory allocation function.</span></span> 
+<span data-ttu-id="11164-115">**MAPIGetDefaultMalloc 関数は**、既定の MAPI メモリ割り当て関数へのポインターを返します。</span><span class="sxs-lookup"><span data-stu-id="11164-115">The **MAPIGetDefaultMalloc** function returns a pointer to the default MAPI memory allocation function.</span></span> 
   
 

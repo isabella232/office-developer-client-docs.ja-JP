@@ -16,26 +16,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438219"
 ---
-# <a name="eventdblclick-cell-events-section"></a><span data-ttu-id="42102-103">[EventDblClick] セル ([Events] セクション)</span><span class="sxs-lookup"><span data-stu-id="42102-103">EventDblClick Cell (Events Section)</span></span>
+# <a name="eventdblclick-cell-events-section"></a><span data-ttu-id="d696d-103">[EventDblClick] セル ([Events] セクション)</span><span class="sxs-lookup"><span data-stu-id="d696d-103">EventDblClick Cell (Events Section)</span></span>
 
-<span data-ttu-id="42102-104">図形をダブルクリックしたときに評価されるイベント セルです。</span><span class="sxs-lookup"><span data-stu-id="42102-104">An event cell that is evaluated when a shape is double-clicked.</span></span>
+<span data-ttu-id="d696d-104">図形をダブルクリックしたときに評価されるイベント セルです。</span><span class="sxs-lookup"><span data-stu-id="d696d-104">An event cell that is evaluated when a shape is double-clicked.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="42102-105">注釈</span><span class="sxs-lookup"><span data-stu-id="42102-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d696d-105">注釈</span><span class="sxs-lookup"><span data-stu-id="d696d-105">Remarks</span></span>
 
-<span data-ttu-id="42102-106">イベント セルはイベントの発生時にのみ評価されます。数式の入力時には評価されません。</span><span class="sxs-lookup"><span data-stu-id="42102-106">Event cells are evaluated only when the event occurs, not upon formula entry.</span></span>
+<span data-ttu-id="d696d-106">イベント セルはイベントの発生時にのみ評価されます。数式の入力時には評価されません。</span><span class="sxs-lookup"><span data-stu-id="d696d-106">Event cells are evaluated only when the event occurs, not upon formula entry.</span></span>
   
-<span data-ttu-id="42102-107">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [EventDblClick] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="42102-107">To get a reference to the EventDblClick cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="d696d-107">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [EventDblClick] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="d696d-107">To get a reference to the EventDblClick cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="42102-108">セル名 :</span><span class="sxs-lookup"><span data-stu-id="42102-108">Cell name:</span></span>  <br/> | <span data-ttu-id="42102-109">eventdblclick]</span><span class="sxs-lookup"><span data-stu-id="42102-109">EventDblClick</span></span>  <br/> |
+| <span data-ttu-id="d696d-108">セル名 :</span><span class="sxs-lookup"><span data-stu-id="d696d-108">Cell name:</span></span>  <br/> | <span data-ttu-id="d696d-109">EventDblClick</span><span class="sxs-lookup"><span data-stu-id="d696d-109">EventDblClick</span></span>  <br/> |
    
-<span data-ttu-id="42102-110">プログラムから、インデックスによって [EventDblClick] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="42102-110">To get a reference to the EventDblClick cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="d696d-110">プログラムから、インデックスによって [EventDblClick] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="d696d-110">To get a reference to the EventDblClick cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="42102-111">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="42102-111">Section index:</span></span>  <br/> |<span data-ttu-id="42102-112">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="42102-112">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="42102-113">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="42102-113">Row index:</span></span>  <br/> |<span data-ttu-id="42102-114">**visRowEvent**</span><span class="sxs-lookup"><span data-stu-id="42102-114">**visRowEvent**</span></span> <br/> |
-| <span data-ttu-id="42102-115">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="42102-115">Cell index:</span></span>  <br/> |<span data-ttu-id="42102-116">**visEvtCellDblClick**</span><span class="sxs-lookup"><span data-stu-id="42102-116">**visEvtCellDblClick**</span></span> <br/> |
+| <span data-ttu-id="d696d-111">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="d696d-111">Section index:</span></span>  <br/> |<span data-ttu-id="d696d-112">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="d696d-112">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="d696d-113">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="d696d-113">Row index:</span></span>  <br/> |<span data-ttu-id="d696d-114">**visRowEvent**</span><span class="sxs-lookup"><span data-stu-id="d696d-114">**visRowEvent**</span></span> <br/> |
+| <span data-ttu-id="d696d-115">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="d696d-115">Cell index:</span></span>  <br/> |<span data-ttu-id="d696d-116">**visEvtCellDblClick**</span><span class="sxs-lookup"><span data-stu-id="d696d-116">**visEvtCellDblClick**</span></span> <br/> |
    
 

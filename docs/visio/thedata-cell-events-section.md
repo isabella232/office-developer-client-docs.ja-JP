@@ -16,8 +16,8 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33437428"
 ---
-# <a name="thedata-cell-events-section"></a><span data-ttu-id="fba78-103">[TheData] セル ([Events] セクション)</span><span class="sxs-lookup"><span data-stu-id="fba78-103">TheData Cell (Events Section)</span></span>
+# <a name="thedata-cell-events-section"></a><span data-ttu-id="c088f-103">[TheData] セル ([Events] セクション)</span><span class="sxs-lookup"><span data-stu-id="c088f-103">TheData Cell (Events Section)</span></span>
 
-<span data-ttu-id="fba78-104">今後使用するために予約されています。</span><span class="sxs-lookup"><span data-stu-id="fba78-104">Reserved for future use.</span></span>
+<span data-ttu-id="c088f-104">今後使用するために予約されています。</span><span class="sxs-lookup"><span data-stu-id="c088f-104">Reserved for future use.</span></span>
   
 

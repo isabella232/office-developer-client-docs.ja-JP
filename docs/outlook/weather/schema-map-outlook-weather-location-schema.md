@@ -1,5 +1,5 @@
 ---
-title: スキーママップ (Outlook Weather Location スキーマ)
+title: スキーマ マップ (Outlook天気予報の場所スキーマ)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1a5195ae-7905-477a-7818-9eb3bff64af0
-description: このトピックでは、Outlook Weather Location XML スキーマのスキーマ定義を示します。
+description: このトピックでは、天気予報の場所 XML スキーマOutlook定義を示します。
 ms.openlocfilehash: e35a993c44c9f54168a7ad5c38e13e850d530a2d
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -15,9 +15,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34541282"
 ---
-# <a name="schema-map-outlook-weather-location-schema"></a><span data-ttu-id="5e7c3-103">スキーママップ (Outlook Weather Location スキーマ)</span><span class="sxs-lookup"><span data-stu-id="5e7c3-103">Schema map (Outlook Weather Location Schema)</span></span>
+# <a name="schema-map-outlook-weather-location-schema"></a><span data-ttu-id="8b8ca-103">スキーマ マップ (Outlook天気予報の場所スキーマ)</span><span class="sxs-lookup"><span data-stu-id="8b8ca-103">Schema map (Outlook Weather Location Schema)</span></span>
 
-<span data-ttu-id="5e7c3-104">このトピックでは、Outlook Weather Location XML スキーマのスキーマ定義を示します。</span><span class="sxs-lookup"><span data-stu-id="5e7c3-104">This topic shows the schema definition for the Outlook Weather Location XML Schema.</span></span>
+<span data-ttu-id="8b8ca-104">このトピックでは、天気予報の場所 XML スキーマOutlook定義を示します。</span><span class="sxs-lookup"><span data-stu-id="8b8ca-104">This topic shows the schema definition for the Outlook Weather Location XML Schema.</span></span>
   
 ```XML
 <?xml version="1.0" ?>

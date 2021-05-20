@@ -13,17 +13,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34540715"
 ---
-# <a name="protectbkgndstype-complextype-visio-xml"></a><span data-ttu-id="37c50-102">ProtectBkgnds_Type complexType (Visio XML)</span><span class="sxs-lookup"><span data-stu-id="37c50-102">ProtectBkgnds_Type complexType (Visio XML)</span></span>
+# <a name="protectbkgnds_type-complextype-visio-xml"></a><span data-ttu-id="b7772-102">ProtectBkgnds_Type complexType (Visio XML)</span><span class="sxs-lookup"><span data-stu-id="b7772-102">ProtectBkgnds_Type complexType (Visio XML)</span></span>
 
-## <a name="type-information"></a><span data-ttu-id="37c50-103">型情報</span><span class="sxs-lookup"><span data-stu-id="37c50-103">Type information</span></span>
+## <a name="type-information"></a><span data-ttu-id="b7772-103">型情報</span><span class="sxs-lookup"><span data-stu-id="b7772-103">Type information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="37c50-104">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="37c50-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|<span data-ttu-id="37c50-105">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="37c50-105">**Schema file**</span></span> <br/> |<span data-ttu-id="37c50-106">VisioSchema15-06-05</span><span class="sxs-lookup"><span data-stu-id="37c50-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
-|<span data-ttu-id="37c50-107">**拡張ベース**</span><span class="sxs-lookup"><span data-stu-id="37c50-107">**Extension base**</span></span> <br/> |<span data-ttu-id="37c50-108">xsd: boolean</span><span class="sxs-lookup"><span data-stu-id="37c50-108">xsd:boolean</span></span>  <br/> |
+|<span data-ttu-id="b7772-104">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="b7772-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|<span data-ttu-id="b7772-105">**スキーマ ファイル**</span><span class="sxs-lookup"><span data-stu-id="b7772-105">**Schema file**</span></span> <br/> |<span data-ttu-id="b7772-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="b7772-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
+|<span data-ttu-id="b7772-107">**拡張ベース**</span><span class="sxs-lookup"><span data-stu-id="b7772-107">**Extension base**</span></span> <br/> |<span data-ttu-id="b7772-108">xsd:boolean</span><span class="sxs-lookup"><span data-stu-id="b7772-108">xsd:boolean</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="37c50-109">定義</span><span class="sxs-lookup"><span data-stu-id="37c50-109">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="b7772-109">定義</span><span class="sxs-lookup"><span data-stu-id="b7772-109">Definition</span></span>
 
 ```XML
       <xs:complexType name="ProtectBkgnds_Type">
@@ -31,16 +31,16 @@ ms.locfileid: "34540715"
       
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="37c50-110">要素と属性</span><span class="sxs-lookup"><span data-stu-id="37c50-110">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="b7772-110">要素と属性</span><span class="sxs-lookup"><span data-stu-id="b7772-110">Elements and attributes</span></span>
 
-<span data-ttu-id="37c50-111">スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="37c50-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="b7772-111">スキーマで **sequence**、**minOccurs**、**maxOccurs**、**choice** などの具体的な要件が定義されている場合は、定義のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="b7772-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="child-elements"></a><span data-ttu-id="37c50-112">子要素</span><span class="sxs-lookup"><span data-stu-id="37c50-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="b7772-112">子要素</span><span class="sxs-lookup"><span data-stu-id="b7772-112">Child elements</span></span>
 
-<span data-ttu-id="37c50-113">なし。</span><span class="sxs-lookup"><span data-stu-id="37c50-113">None.</span></span>
+<span data-ttu-id="b7772-113">なし。</span><span class="sxs-lookup"><span data-stu-id="b7772-113">None.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="37c50-114">属性</span><span class="sxs-lookup"><span data-stu-id="37c50-114">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="b7772-114">属性</span><span class="sxs-lookup"><span data-stu-id="b7772-114">Attributes</span></span>
 
-<span data-ttu-id="37c50-115">なし。</span><span class="sxs-lookup"><span data-stu-id="37c50-115">None.</span></span>
+<span data-ttu-id="b7772-115">なし。</span><span class="sxs-lookup"><span data-stu-id="b7772-115">None.</span></span>
   
 

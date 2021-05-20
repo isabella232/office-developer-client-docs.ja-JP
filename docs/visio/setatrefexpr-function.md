@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm1027317
 localization_priority: Normal
 ms.assetid: c1bd7819-b53b-bff1-69c1-6d78e8fb278b
-description: ユーザーインターフェイス (UI) またはオートメーションのアクションによって設定された値を格納します。
+description: ユーザー インターフェイス (UI) またはオートメーションのアクションによって設定された値を格納します。
 ms.openlocfilehash: 5ca7b59d0ced9c3da346c416826ac89e6b4001da
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,46 +16,46 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439052"
 ---
-# <a name="setatrefexpr-function"></a><span data-ttu-id="2bc65-103">SETATREFEXPR 関数</span><span class="sxs-lookup"><span data-stu-id="2bc65-103">SETATREFEXPR Function</span></span>
+# <a name="setatrefexpr-function"></a><span data-ttu-id="522b5-103">SETATREFEXPR 関数</span><span class="sxs-lookup"><span data-stu-id="522b5-103">SETATREFEXPR Function</span></span>
 
-<span data-ttu-id="2bc65-104">ユーザーインターフェイス (UI) またはオートメーションのアクションによって設定された値を格納します。</span><span class="sxs-lookup"><span data-stu-id="2bc65-104">Stores a value that is set through an action in the user interface (UI) or Automation.</span></span>
+<span data-ttu-id="522b5-104">ユーザー インターフェイス (UI) またはオートメーションのアクションによって設定された値を格納します。</span><span class="sxs-lookup"><span data-stu-id="522b5-104">Stores a value that is set through an action in the user interface (UI) or Automation.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="2bc65-105">構文</span><span class="sxs-lookup"><span data-stu-id="2bc65-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="522b5-105">構文</span><span class="sxs-lookup"><span data-stu-id="522b5-105">Syntax</span></span>
 
-<span data-ttu-id="2bc65-106">SETATREFEXPR ([\* \* *expr_opt* \* \*])</span><span class="sxs-lookup"><span data-stu-id="2bc65-106">SETATREFEXPR ([ \*\* *expr_opt* \*\* ])</span></span> 
+<span data-ttu-id="522b5-106">SETATREFEXPR ([ \*\*\*\* expr_opt \*\* ])</span><span class="sxs-lookup"><span data-stu-id="522b5-106">SETATREFEXPR ([ \*\* *expr_opt* \*\* ])</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="2bc65-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="2bc65-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="522b5-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="522b5-107">Parameters</span></span>
 
-|<span data-ttu-id="2bc65-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="2bc65-108">**Name**</span></span>|<span data-ttu-id="2bc65-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="2bc65-109">**Required/Optional**</span></span>|<span data-ttu-id="2bc65-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="2bc65-110">**Data Type**</span></span>|<span data-ttu-id="2bc65-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="2bc65-111">**Description**</span></span>|
+|<span data-ttu-id="522b5-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="522b5-108">**Name**</span></span>|<span data-ttu-id="522b5-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="522b5-109">**Required/Optional**</span></span>|<span data-ttu-id="522b5-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="522b5-110">**Data Type**</span></span>|<span data-ttu-id="522b5-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="522b5-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="2bc65-112">_expr_opt_</span><span class="sxs-lookup"><span data-stu-id="2bc65-112">_expr_opt_</span></span> <br/> |<span data-ttu-id="2bc65-113">省略可能</span><span class="sxs-lookup"><span data-stu-id="2bc65-113">Optional</span></span>  <br/> |<span data-ttu-id="2bc65-114">**さまざま**</span><span class="sxs-lookup"><span data-stu-id="2bc65-114">**Varies**</span></span> <br/> |<span data-ttu-id="2bc65-115">SETATREF 関数で参照先のセルに割り当てられる値または式によって置き換えられる式を指定します。</span><span class="sxs-lookup"><span data-stu-id="2bc65-115">An expression that is replaced by the value or expression being assigned to the referenced cell in the SETATREF function.</span></span> <span data-ttu-id="2bc65-116">指定しない場合、初期値は 0 (ゼロ) になります。</span><span class="sxs-lookup"><span data-stu-id="2bc65-116">If not indicated, its initial value is 0 (zero).</span></span>  <br/> |
+| <span data-ttu-id="522b5-112">_expr_opt_</span><span class="sxs-lookup"><span data-stu-id="522b5-112">_expr_opt_</span></span> <br/> |<span data-ttu-id="522b5-113">省略可能</span><span class="sxs-lookup"><span data-stu-id="522b5-113">Optional</span></span>  <br/> |<span data-ttu-id="522b5-114">**さまざま**</span><span class="sxs-lookup"><span data-stu-id="522b5-114">**Varies**</span></span> <br/> |<span data-ttu-id="522b5-115">SETATREF 関数で参照先のセルに割り当てられる値または式によって置き換えられる式を指定します。</span><span class="sxs-lookup"><span data-stu-id="522b5-115">An expression that is replaced by the value or expression being assigned to the referenced cell in the SETATREF function.</span></span> <span data-ttu-id="522b5-116">指定されていない場合、その初期値は 0 (ゼロ) です。</span><span class="sxs-lookup"><span data-stu-id="522b5-116">If not indicated, its initial value is 0 (zero).</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="2bc65-117">注釈</span><span class="sxs-lookup"><span data-stu-id="2bc65-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="522b5-117">注釈</span><span class="sxs-lookup"><span data-stu-id="522b5-117">Remarks</span></span>
 
-<span data-ttu-id="2bc65-118">SETATREFEXPR 式の値は、SETATREFEXPR 式を含むセルを参照する別のセルの SETATREF 関数から設定することもできます。</span><span class="sxs-lookup"><span data-stu-id="2bc65-118">The value of a SETATREFEXPR expression can also be set from a SETATREF function in another cell that references the cell containing the SETATREFEXPR expression.</span></span> 
+<span data-ttu-id="522b5-118">SETATREFEXPR 式の値は、SETATREFEXPR 式を含むセルを参照する別のセルの SETATREF 関数から設定することもできます。</span><span class="sxs-lookup"><span data-stu-id="522b5-118">The value of a SETATREFEXPR expression can also be set from a SETATREF function in another cell that references the cell containing the SETATREFEXPR expression.</span></span> 
   
-<span data-ttu-id="2bc65-119">SETATREF 関数のパラメーターとして SETATREFEXPR 関数を使用することに制限はありません。</span><span class="sxs-lookup"><span data-stu-id="2bc65-119">You are not limited to using the SETATREFEXPR function as a parameter to the SETATREF function.</span></span> 
+<span data-ttu-id="522b5-119">SETATREFEXPR 関数を SETATREF 関数のパラメーターとして使用する場合に限る必要はありません。</span><span class="sxs-lookup"><span data-stu-id="522b5-119">You are not limited to using the SETATREFEXPR function as a parameter to the SETATREF function.</span></span> 
   
-## <a name="example-1"></a><span data-ttu-id="2bc65-120">例 1</span><span class="sxs-lookup"><span data-stu-id="2bc65-120">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="522b5-120">例 1</span><span class="sxs-lookup"><span data-stu-id="522b5-120">Example 1</span></span>
 
-<span data-ttu-id="2bc65-121">次の例では、SETATREFEXPR 関数を使用して、図形の幅がそのテキストの幅と同じであることを確認します。</span><span class="sxs-lookup"><span data-stu-id="2bc65-121">The following example uses the SETATREFEXPR function to ensure that a shape is as wide as its text.</span></span>
+<span data-ttu-id="522b5-121">次の例では、SETATREFEXPR 関数を使用して、図形の幅がそのテキストの幅と同じであることを確認します。</span><span class="sxs-lookup"><span data-stu-id="522b5-121">The following example uses the SETATREFEXPR function to ensure that a shape is as wide as its text.</span></span>
   
-<span data-ttu-id="2bc65-122">Width =MAX(TEXTWIDTH(TheText),SETATREFEXPR())</span><span class="sxs-lookup"><span data-stu-id="2bc65-122">Width =MAX(TEXTWIDTH(TheText),SETATREFEXPR())</span></span>
+<span data-ttu-id="522b5-122">Width =MAX(TEXTWIDTH(TheText),SETATREFEXPR())</span><span class="sxs-lookup"><span data-stu-id="522b5-122">Width =MAX(TEXTWIDTH(TheText),SETATREFEXPR())</span></span>
   
-## <a name="example-2"></a><span data-ttu-id="2bc65-123">例 2</span><span class="sxs-lookup"><span data-stu-id="2bc65-123">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="522b5-123">例 2</span><span class="sxs-lookup"><span data-stu-id="522b5-123">Example 2</span></span>
 
-<span data-ttu-id="2bc65-p102">次の例では、SETATREFEXPR 関数を使用して、図形をカスタム グリッドにスナップする方法を示します。SETATREFEXPR 数式は  [PinX] および [PinY] セルに設定され、図形のピンは [User.GridX] および [User.GridY] で定義されたグリッドにスナップします。</span><span class="sxs-lookup"><span data-stu-id="2bc65-p102">The following example shows how you can use the SETATREFEXPR function to cause your shapes to snap to a custom grid. The SETATREFEXPR formulas are placed in the PinX and PinY cells, causing the shape's pin to snap to the grid defined in User.GridX and User.GridY.</span></span> 
+<span data-ttu-id="522b5-p102">次の例では、SETATREFEXPR 関数を使用して、図形をカスタム グリッドにスナップする方法を示します。SETATREFEXPR 数式は  [PinX] および [PinY] セルに設定され、図形のピンは [User.GridX] および [User.GridY] で定義されたグリッドにスナップします。</span><span class="sxs-lookup"><span data-stu-id="522b5-p102">The following example shows how you can use the SETATREFEXPR function to cause your shapes to snap to a custom grid. The SETATREFEXPR formulas are placed in the PinX and PinY cells, causing the shape's pin to snap to the grid defined in User.GridX and User.GridY.</span></span> 
   
-<span data-ttu-id="2bc65-126">User.GridX =2 in</span><span class="sxs-lookup"><span data-stu-id="2bc65-126">User.GridX =2 in</span></span>
+<span data-ttu-id="522b5-126">User.GridX =2 in</span><span class="sxs-lookup"><span data-stu-id="522b5-126">User.GridX =2 in</span></span>
   
-<span data-ttu-id="2bc65-127">User.GridY =2 in</span><span class="sxs-lookup"><span data-stu-id="2bc65-127">User.GridY =2 in</span></span>
+<span data-ttu-id="522b5-127">User.GridY =2 in</span><span class="sxs-lookup"><span data-stu-id="522b5-127">User.GridY =2 in</span></span>
   
-<span data-ttu-id="2bc65-128">PinX = INT (SETATREFEXPR ()/User.GridX + .5)\*GridX</span><span class="sxs-lookup"><span data-stu-id="2bc65-128">PinX =INT(SETATREFEXPR()/User.GridX + .5)\*User.GridX</span></span>
+<span data-ttu-id="522b5-128">PinX =INT(SETATREFEXPR()/User.GridX + .5) \* User.GridX</span><span class="sxs-lookup"><span data-stu-id="522b5-128">PinX =INT(SETATREFEXPR()/User.GridX + .5)\*User.GridX</span></span>
   
-<span data-ttu-id="2bc65-129">PinY = INT (SETATREFEXPR ()/User.GridY + .5)\*ユーザー. GridY</span><span class="sxs-lookup"><span data-stu-id="2bc65-129">PinY =INT(SETATREFEXPR()/User.GridY + .5)\*User.GridY</span></span>
+<span data-ttu-id="522b5-129">PinY =INT(SETATREFEXPR()/User.GridY + .5) \* User.GridY</span><span class="sxs-lookup"><span data-stu-id="522b5-129">PinY =INT(SETATREFEXPR()/User.GridY + .5)\*User.GridY</span></span>
   
-## <a name="example-3"></a><span data-ttu-id="2bc65-130">例 3</span><span class="sxs-lookup"><span data-stu-id="2bc65-130">Example 3</span></span>
+## <a name="example-3"></a><span data-ttu-id="522b5-130">例 3</span><span class="sxs-lookup"><span data-stu-id="522b5-130">Example 3</span></span>
 
-<span data-ttu-id="2bc65-131">SETATREFEXPR 関数を SETATREF 関数と共に使用する例については、[SETATREF](setatref-function.md) 関数を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2bc65-131">For an example using the SETATREFEXPR function with the SETATREF function, see the [SETATREF](setatref-function.md) function.</span></span> 
+<span data-ttu-id="522b5-131">SETATREFEXPR 関数を SETATREF 関数と共に使用する例については、[SETATREF](setatref-function.md) 関数を参照してください。</span><span class="sxs-lookup"><span data-stu-id="522b5-131">For an example using the SETATREFEXPR function with the SETATREF function, see the [SETATREF](setatref-function.md) function.</span></span> 
   
 

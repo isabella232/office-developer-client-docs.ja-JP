@@ -1,5 +1,5 @@
 ---
-title: SetProperty マクロアクション (Access カスタム web アプリ)
+title: SetProperty マクロ アクション (Access カスタム Web アプリ)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,37 +14,37 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438030"
 ---
-# <a name="setproperty-macro-action-access-custom-web-app"></a><span data-ttu-id="90eda-103">SetProperty マクロアクション (Access カスタム web アプリ)</span><span class="sxs-lookup"><span data-stu-id="90eda-103">SetProperty Macro Action (Access custom web app)</span></span>
+# <a name="setproperty-macro-action-access-custom-web-app"></a><span data-ttu-id="aefa6-103">SetProperty マクロ アクション (Access カスタム Web アプリ)</span><span class="sxs-lookup"><span data-stu-id="aefa6-103">SetProperty Macro Action (Access custom web app)</span></span>
 
-<span data-ttu-id="90eda-104">" **SetProperty/プロパティの設定** " アクションを使用して、ビュー上のコントロールのプロパティを設定できます。</span><span class="sxs-lookup"><span data-stu-id="90eda-104">You can use the **SetProperty** action to set a property for a control on a view.</span></span> 
+<span data-ttu-id="aefa6-104">" **SetProperty/プロパティの設定** " アクションを使用して、ビュー上のコントロールのプロパティを設定できます。</span><span class="sxs-lookup"><span data-stu-id="aefa6-104">You can use the **SetProperty** action to set a property for a control on a view.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="90eda-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="90eda-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="aefa6-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="aefa6-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
-## <a name="setting"></a><span data-ttu-id="90eda-107">設定</span><span class="sxs-lookup"><span data-stu-id="90eda-107">Setting</span></span>
+## <a name="setting"></a><span data-ttu-id="aefa6-107">設定</span><span class="sxs-lookup"><span data-stu-id="aefa6-107">Setting</span></span>
 
-<span data-ttu-id="90eda-108">"**SetField/フィールドの設定**" アクションには、以下の表に示す引数があります。</span><span class="sxs-lookup"><span data-stu-id="90eda-108">The **SetProperty** action has the arguments listed in the following table.</span></span> 
+<span data-ttu-id="aefa6-108">"**SetField/フィールドの設定**" アクションには、以下の表に示す引数があります。</span><span class="sxs-lookup"><span data-stu-id="aefa6-108">The **SetProperty** action has the arguments listed in the following table.</span></span> 
   
-|<span data-ttu-id="90eda-109">**アクションの引数**</span><span class="sxs-lookup"><span data-stu-id="90eda-109">**Action argument**</span></span>|<span data-ttu-id="90eda-110">**説明**</span><span class="sxs-lookup"><span data-stu-id="90eda-110">**Description**</span></span>|
+|<span data-ttu-id="aefa6-109">**アクションの引数**</span><span class="sxs-lookup"><span data-stu-id="aefa6-109">**Action argument**</span></span>|<span data-ttu-id="aefa6-110">**説明**</span><span class="sxs-lookup"><span data-stu-id="aefa6-110">**Description**</span></span>|
 |:-----|:-----|
-| <span data-ttu-id="90eda-111">_コントロール名_</span><span class="sxs-lookup"><span data-stu-id="90eda-111">_Control Name_</span></span> <br/> |<span data-ttu-id="90eda-p102">プロパティ値を設定する対象のフィールドまたはコントロールの名前を指定します。ビューのプロパティを設定する場合は、この引数を指定しないでください。</span><span class="sxs-lookup"><span data-stu-id="90eda-p102">Type the name of the field or control for which you want to set the property value. Leave this argument blank to set the property for the view.</span></span>  <br/> |
-| <span data-ttu-id="90eda-114">_Property_</span><span class="sxs-lookup"><span data-stu-id="90eda-114">_Property_</span></span> <br/> |<span data-ttu-id="90eda-p103">設定するプロパティを選択します。このアクションを使用して設定できるプロパティの一覧については、この記事の「解説」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="90eda-p103">Select the property that you want to set. See the **Remarks** section in this article for a list of the properties that can be set by using this action.  </span></span><br/> |
-| <span data-ttu-id="90eda-117">_値_</span><span class="sxs-lookup"><span data-stu-id="90eda-117">_Value_</span></span> <br/> |<span data-ttu-id="90eda-p104">プロパティに対して設定する値を入力します。値が [はい] または [いいえ] のどちらかになるプロパティでは、[はい] の場合は「-1」、[いいえ] の場合は「0」を入力します。</span><span class="sxs-lookup"><span data-stu-id="90eda-p104">Type the value that the property is to be set to. For properties whose values are either Yes or No, use **-1** for Yes and **0** for No.  </span></span><br/> |
+| <span data-ttu-id="aefa6-111">_コントロール名_</span><span class="sxs-lookup"><span data-stu-id="aefa6-111">_Control Name_</span></span> <br/> |<span data-ttu-id="aefa6-p102">プロパティ値を設定する対象のフィールドまたはコントロールの名前を指定します。ビューのプロパティを設定する場合は、この引数を指定しないでください。</span><span class="sxs-lookup"><span data-stu-id="aefa6-p102">Type the name of the field or control for which you want to set the property value. Leave this argument blank to set the property for the view.</span></span>  <br/> |
+| <span data-ttu-id="aefa6-114">_Property_</span><span class="sxs-lookup"><span data-stu-id="aefa6-114">_Property_</span></span> <br/> |<span data-ttu-id="aefa6-p103">設定するプロパティを選択します。このアクションを使用して設定できるプロパティの一覧については、この記事の「解説」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="aefa6-p103">Select the property that you want to set. See the **Remarks** section in this article for a list of the properties that can be set by using this action.  </span></span><br/> |
+| <span data-ttu-id="aefa6-117">_値_</span><span class="sxs-lookup"><span data-stu-id="aefa6-117">_Value_</span></span> <br/> |<span data-ttu-id="aefa6-p104">プロパティに対して設定する値を入力します。値が [はい] または [いいえ] のどちらかになるプロパティでは、[はい] の場合は「-1」、[いいえ] の場合は「0」を入力します。</span><span class="sxs-lookup"><span data-stu-id="aefa6-p104">Type the value that the property is to be set to. For properties whose values are either Yes or No, use **-1** for Yes and **0** for No.  </span></span><br/> |
    
-## <a name="remarks"></a><span data-ttu-id="90eda-120">注釈</span><span class="sxs-lookup"><span data-stu-id="90eda-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="aefa6-120">注釈</span><span class="sxs-lookup"><span data-stu-id="aefa6-120">Remarks</span></span>
 
-<span data-ttu-id="90eda-121">"**SetProperty/プロパティの設定**" アクションを使用して、コントロールの以下のプロパティを設定できます。</span><span class="sxs-lookup"><span data-stu-id="90eda-121">You can use the **SetProperty** action to set the following properties of a control:</span></span> 
+<span data-ttu-id="aefa6-121">"**SetProperty/プロパティの設定**" アクションを使用して、コントロールの以下のプロパティを設定できます。</span><span class="sxs-lookup"><span data-stu-id="aefa6-121">You can use the **SetProperty** action to set the following properties of a control:</span></span> 
   
-- <span data-ttu-id="90eda-122">Caption</span><span class="sxs-lookup"><span data-stu-id="90eda-122">Caption</span></span>
+- <span data-ttu-id="aefa6-122">Caption</span><span class="sxs-lookup"><span data-stu-id="aefa6-122">Caption</span></span>
     
-- <span data-ttu-id="90eda-123">Enabled</span><span class="sxs-lookup"><span data-stu-id="90eda-123">Enabled</span></span>
+- <span data-ttu-id="aefa6-123">Enabled</span><span class="sxs-lookup"><span data-stu-id="aefa6-123">Enabled</span></span>
     
-- <span data-ttu-id="90eda-124">ForeColor</span><span class="sxs-lookup"><span data-stu-id="90eda-124">ForeColor</span></span>
+- <span data-ttu-id="aefa6-124">ForeColor</span><span class="sxs-lookup"><span data-stu-id="aefa6-124">ForeColor</span></span>
     
-- <span data-ttu-id="90eda-125">Value</span><span class="sxs-lookup"><span data-stu-id="90eda-125">Value</span></span>
+- <span data-ttu-id="aefa6-125">Value</span><span class="sxs-lookup"><span data-stu-id="aefa6-125">Value</span></span>
     
-- <span data-ttu-id="90eda-126">Visible</span><span class="sxs-lookup"><span data-stu-id="90eda-126">Visible</span></span>
+- <span data-ttu-id="aefa6-126">Visible</span><span class="sxs-lookup"><span data-stu-id="aefa6-126">Visible</span></span>
     
-<span data-ttu-id="90eda-127">" *Value/値* " 引数に無効な値を入力すると、エラーは発生しませんが、引数がどのように解釈されるかに応じて、プロパティは別の値に変更される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="90eda-127">If you enter an invalid value for the \*\* *Value* \*\* argument, no error occurs, but Access might change the property to a different value, depending on how it interprets the argument.</span></span> 
+<span data-ttu-id="aefa6-127">" *Value/値* " 引数に無効な値を入力すると、エラーは発生しませんが、引数がどのように解釈されるかに応じて、プロパティは別の値に変更される可能性があります。</span><span class="sxs-lookup"><span data-stu-id="aefa6-127">If you enter an invalid value for the \*\* *Value* \*\* argument, no error occurs, but Access might change the property to a different value, depending on how it interprets the argument.</span></span> 
   
 

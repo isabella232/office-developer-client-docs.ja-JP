@@ -16,8 +16,8 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33436518"
 ---
-# <a name="alignment-section"></a><span data-ttu-id="1bb58-104">[Alignment] セクション</span><span class="sxs-lookup"><span data-stu-id="1bb58-104">Alignment Section</span></span>
+# <a name="alignment-section"></a><span data-ttu-id="8480e-104">[Alignment] セクション</span><span class="sxs-lookup"><span data-stu-id="8480e-104">Alignment Section</span></span>
 
-<span data-ttu-id="1bb58-105">図形が接着されているガイド ポイントやガイドを基準に、図形の整列方法を示します。</span><span class="sxs-lookup"><span data-stu-id="1bb58-105">Indicates the alignment of a shape with respect to the guide or guide point to which the shape is glued.</span></span> <span data-ttu-id="1bb58-106">[**配置**] セクションは、ガイドに接着されている図形に対してのみ表示されます。</span><span class="sxs-lookup"><span data-stu-id="1bb58-106">The **Alignment** section appears only for shapes that are glued to guides.</span></span> 
+<span data-ttu-id="8480e-105">図形が接着されているガイド ポイントやガイドを基準に、図形の整列方法を示します。</span><span class="sxs-lookup"><span data-stu-id="8480e-105">Indicates the alignment of a shape with respect to the guide or guide point to which the shape is glued.</span></span> <span data-ttu-id="8480e-106">[ **配置]** セクションは、ガイドに接着されている図形にのみ表示されます。</span><span class="sxs-lookup"><span data-stu-id="8480e-106">The **Alignment** section appears only for shapes that are glued to guides.</span></span> 
   
 

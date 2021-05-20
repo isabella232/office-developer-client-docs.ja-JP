@@ -13,8 +13,8 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438065"
 ---
-# <a name="integrating-with-office-online"></a><span data-ttu-id="e883a-104">Office Online との統合</span><span class="sxs-lookup"><span data-stu-id="e883a-104">Integrating with Office Online</span></span>
+# <a name="integrating-with-office-online"></a><span data-ttu-id="8aac7-104">Office Online との統合</span><span class="sxs-lookup"><span data-stu-id="8aac7-104">Integrating with Office Online</span></span>
 
-<span data-ttu-id="e883a-p102">このコンテンツは、この場所では使用できなくなりました。続行するには、GitHub 上の「[Office Online との統合](https://wopi.readthedocs.org/en/latest/)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e883a-p102">This content is no longer available at this location. To continue, see [Integrating with Office Online](https://wopi.readthedocs.org/en/latest/) on GitHub.</span></span> 
+<span data-ttu-id="8aac7-p102">このコンテンツは、この場所では使用できなくなりました。続行するには、GitHub 上の「[Office Online との統合](https://wopi.readthedocs.org/en/latest/)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="8aac7-p102">This content is no longer available at this location. To continue, see [Integrating with Office Online](https://wopi.readthedocs.org/en/latest/) on GitHub.</span></span> 
   
 

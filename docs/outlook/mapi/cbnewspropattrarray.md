@@ -19,35 +19,35 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439122"
 ---
-# <a name="cbnewspropattrarray"></a><span data-ttu-id="00d8f-103">CbNewSPropAttrArray</span><span class="sxs-lookup"><span data-stu-id="00d8f-103">CbNewSPropAttrArray</span></span>
+# <a name="cbnewspropattrarray"></a><span data-ttu-id="53fef-103">CbNewSPropAttrArray</span><span class="sxs-lookup"><span data-stu-id="53fef-103">CbNewSPropAttrArray</span></span>
 
   
   
-<span data-ttu-id="00d8f-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="00d8f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="53fef-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="53fef-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="00d8f-105">指定した数のプロパティ属性を含む新しい[sproの trarray](spropattrarray.md)構造体に割り当てる必要があるバイト数を計算します。</span><span class="sxs-lookup"><span data-stu-id="00d8f-105">Computes the number of bytes that should be allocated for a new [SPropAttrArray](spropattrarray.md) structure that contains a specified number of property attributes.</span></span> 
+<span data-ttu-id="53fef-105">指定した数のプロパティ属性を含む新しい [SPropAttrArray](spropattrarray.md) 構造体に割り当てるバイト数を計算します。</span><span class="sxs-lookup"><span data-stu-id="53fef-105">Computes the number of bytes that should be allocated for a new [SPropAttrArray](spropattrarray.md) structure that contains a specified number of property attributes.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="00d8f-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="00d8f-106">Header file:</span></span>  <br/> |<span data-ttu-id="00d8f-107">Imessage</span><span class="sxs-lookup"><span data-stu-id="00d8f-107">Imessage.h</span></span>  <br/> |
-|<span data-ttu-id="00d8f-108">関連する構造:</span><span class="sxs-lookup"><span data-stu-id="00d8f-108">Related structure:</span></span>  <br/> |<span data-ttu-id="00d8f-109">**SPropAttrArray**</span><span class="sxs-lookup"><span data-stu-id="00d8f-109">**SPropAttrArray**</span></span> <br/> |
+|<span data-ttu-id="53fef-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="53fef-106">Header file:</span></span>  <br/> |<span data-ttu-id="53fef-107">Imessage.h</span><span class="sxs-lookup"><span data-stu-id="53fef-107">Imessage.h</span></span>  <br/> |
+|<span data-ttu-id="53fef-108">関連する構造:</span><span class="sxs-lookup"><span data-stu-id="53fef-108">Related structure:</span></span>  <br/> |<span data-ttu-id="53fef-109">**SPropAttrArray**</span><span class="sxs-lookup"><span data-stu-id="53fef-109">**SPropAttrArray**</span></span> <br/> |
    
 ```cpp
 CbNewSPropAttrArray (_cattr)
 ```
 
-## <a name="parameters"></a><span data-ttu-id="00d8f-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="00d8f-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="53fef-110">パラメーター</span><span class="sxs-lookup"><span data-stu-id="53fef-110">Parameters</span></span>
 
- <span data-ttu-id="00d8f-111">__cattr_</span><span class="sxs-lookup"><span data-stu-id="00d8f-111">__cattr_</span></span>
+ <span data-ttu-id="53fef-111">_ _cattr_</span><span class="sxs-lookup"><span data-stu-id="53fef-111">_ _cattr_</span></span>
   
-> <span data-ttu-id="00d8f-112">新しい**sproの trarray**構造に含まれるプロパティ属性の数。</span><span class="sxs-lookup"><span data-stu-id="00d8f-112">Count of property attributes to be included in the new **SPropAttrArray** structure.</span></span> 
+> <span data-ttu-id="53fef-112">新しい **SPropAttrArray** 構造体に含めるプロパティ属性の数。</span><span class="sxs-lookup"><span data-stu-id="53fef-112">Count of property attributes to be included in the new **SPropAttrArray** structure.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="00d8f-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="00d8f-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="53fef-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="53fef-113">See also</span></span>
 
 
 
-[<span data-ttu-id="00d8f-114">SPropAttrArray</span><span class="sxs-lookup"><span data-stu-id="00d8f-114">SPropAttrArray</span></span>](spropattrarray.md)
+[<span data-ttu-id="53fef-114">SPropAttrArray</span><span class="sxs-lookup"><span data-stu-id="53fef-114">SPropAttrArray</span></span>](spropattrarray.md)
 
 
-[<span data-ttu-id="00d8f-115">構造に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="00d8f-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
+[<span data-ttu-id="53fef-115">構造に関連するマクロ</span><span class="sxs-lookup"><span data-stu-id="53fef-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
 

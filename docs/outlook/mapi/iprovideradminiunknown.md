@@ -19,40 +19,40 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33437533"
 ---
-# <a name="iprovideradmin--iunknown"></a><span data-ttu-id="defa5-103">IProviderAdmin : IUnknown</span><span class="sxs-lookup"><span data-stu-id="defa5-103">IProviderAdmin : IUnknown</span></span>
+# <a name="iprovideradmin--iunknown"></a><span data-ttu-id="b057d-103">IProviderAdmin : IUnknown</span><span class="sxs-lookup"><span data-stu-id="b057d-103">IProviderAdmin : IUnknown</span></span>
 
   
   
-<span data-ttu-id="defa5-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="defa5-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="b057d-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b057d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="defa5-105">メッセージサービスのサービスプロバイダーと連携します。</span><span class="sxs-lookup"><span data-stu-id="defa5-105">Works with service providers in a message service.</span></span> 
+<span data-ttu-id="b057d-105">メッセージ サービスのサービス プロバイダーと動作します。</span><span class="sxs-lookup"><span data-stu-id="b057d-105">Works with service providers in a message service.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="defa5-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="defa5-106">Header file:</span></span>  <br/> |<span data-ttu-id="defa5-107">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="defa5-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="defa5-108">公開者:</span><span class="sxs-lookup"><span data-stu-id="defa5-108">Exposed by:</span></span>  <br/> |<span data-ttu-id="defa5-109">プロバイダー管理オブジェクト</span><span class="sxs-lookup"><span data-stu-id="defa5-109">Provider administration objects</span></span>  <br/> |
-|<span data-ttu-id="defa5-110">実装元:</span><span class="sxs-lookup"><span data-stu-id="defa5-110">Implemented by:</span></span>  <br/> |<span data-ttu-id="defa5-111">MAPI</span><span class="sxs-lookup"><span data-stu-id="defa5-111">MAPI</span></span>  <br/> |
-|<span data-ttu-id="defa5-112">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="defa5-112">Called by:</span></span>  <br/> |<span data-ttu-id="defa5-113">クライアントアプリケーションとサービスプロバイダー</span><span class="sxs-lookup"><span data-stu-id="defa5-113">Client applications and service providers</span></span>  <br/> |
-|<span data-ttu-id="defa5-114">インターフェイス識別子:</span><span class="sxs-lookup"><span data-stu-id="defa5-114">Interface identifier:</span></span>  <br/> |<span data-ttu-id="defa5-115">IID_IProviderAdmin</span><span class="sxs-lookup"><span data-stu-id="defa5-115">IID_IProviderAdmin</span></span>  <br/> |
-|<span data-ttu-id="defa5-116">ポインターの種類:</span><span class="sxs-lookup"><span data-stu-id="defa5-116">Pointer type:</span></span>  <br/> |<span data-ttu-id="defa5-117">lpprovideradmin</span><span class="sxs-lookup"><span data-stu-id="defa5-117">LPPROVIDERADMIN</span></span>  <br/> |
+|<span data-ttu-id="b057d-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="b057d-106">Header file:</span></span>  <br/> |<span data-ttu-id="b057d-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="b057d-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="b057d-108">次のユーザーによって公開されます。</span><span class="sxs-lookup"><span data-stu-id="b057d-108">Exposed by:</span></span>  <br/> |<span data-ttu-id="b057d-109">プロバイダー管理オブジェクト</span><span class="sxs-lookup"><span data-stu-id="b057d-109">Provider administration objects</span></span>  <br/> |
+|<span data-ttu-id="b057d-110">実装元:</span><span class="sxs-lookup"><span data-stu-id="b057d-110">Implemented by:</span></span>  <br/> |<span data-ttu-id="b057d-111">MAPI</span><span class="sxs-lookup"><span data-stu-id="b057d-111">MAPI</span></span>  <br/> |
+|<span data-ttu-id="b057d-112">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="b057d-112">Called by:</span></span>  <br/> |<span data-ttu-id="b057d-113">クライアント アプリケーションとサービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="b057d-113">Client applications and service providers</span></span>  <br/> |
+|<span data-ttu-id="b057d-114">インターフェイス識別子:</span><span class="sxs-lookup"><span data-stu-id="b057d-114">Interface identifier:</span></span>  <br/> |<span data-ttu-id="b057d-115">IID_IProviderAdmin</span><span class="sxs-lookup"><span data-stu-id="b057d-115">IID_IProviderAdmin</span></span>  <br/> |
+|<span data-ttu-id="b057d-116">ポインターの種類:</span><span class="sxs-lookup"><span data-stu-id="b057d-116">Pointer type:</span></span>  <br/> |<span data-ttu-id="b057d-117">LPPROVIDERADMIN</span><span class="sxs-lookup"><span data-stu-id="b057d-117">LPPROVIDERADMIN</span></span>  <br/> |
    
-## <a name="vtable-order"></a><span data-ttu-id="defa5-118">v の順序</span><span class="sxs-lookup"><span data-stu-id="defa5-118">Vtable order</span></span>
+## <a name="vtable-order"></a><span data-ttu-id="b057d-118">Vtable の順序</span><span class="sxs-lookup"><span data-stu-id="b057d-118">Vtable order</span></span>
 
 |||
 |:-----|:-----|
-|[<span data-ttu-id="defa5-119">GetLastError</span><span class="sxs-lookup"><span data-stu-id="defa5-119">GetLastError</span></span>](iprovideradmin-getlasterror.md) <br/> |<span data-ttu-id="defa5-120">プロバイダー管理オブジェクトに発生した前のエラーについての情報を含む[MAPIERROR](mapierror.md)構造体を返します。</span><span class="sxs-lookup"><span data-stu-id="defa5-120">Returns a [MAPIERROR](mapierror.md) structure that contains information about the previous error that occurred to the provider administration object.</span></span>  <br/> |
-|[<span data-ttu-id="defa5-121">getprovidertable</span><span class="sxs-lookup"><span data-stu-id="defa5-121">GetProviderTable</span></span>](iprovideradmin-getprovidertable.md) <br/> |<span data-ttu-id="defa5-122">メッセージサービスのプロバイダーテーブルへのアクセスを提供します。これには、メッセージサービスのサービスプロバイダーの一覧が含まれます。</span><span class="sxs-lookup"><span data-stu-id="defa5-122">Provides access to the message service's provider table, a list of the service providers in the message service.</span></span>  <br/> |
-|[<span data-ttu-id="defa5-123">createprovider</span><span class="sxs-lookup"><span data-stu-id="defa5-123">CreateProvider</span></span>](iprovideradmin-createprovider.md) <br/> |<span data-ttu-id="defa5-124">メッセージサービスにサービスプロバイダーを追加します。</span><span class="sxs-lookup"><span data-stu-id="defa5-124">Adds a service provider to the message service.</span></span>  <br/> |
-|[<span data-ttu-id="defa5-125">deleteprovider</span><span class="sxs-lookup"><span data-stu-id="defa5-125">DeleteProvider</span></span>](iprovideradmin-deleteprovider.md) <br/> |<span data-ttu-id="defa5-126">メッセージサービスからサービスプロバイダーを削除します。</span><span class="sxs-lookup"><span data-stu-id="defa5-126">Deletes a service provider from the message service.</span></span>  <br/> |
-|[<span data-ttu-id="defa5-127">openプロファイル '</span><span class="sxs-lookup"><span data-stu-id="defa5-127">OpenProfileSection</span></span>](iprovideradmin-openprofilesection.md) <br/> |<span data-ttu-id="defa5-128">現在のプロファイルからプロファイルセクションを開き、さらにアクセスできるように[IProfSect](iprofsectimapiprop.md)ポインターを返します。</span><span class="sxs-lookup"><span data-stu-id="defa5-128">Opens a profile section from the current profile and returns an [IProfSect](iprofsectimapiprop.md) pointer for further access.</span></span>  <br/> |
+|[<span data-ttu-id="b057d-119">GetLastError</span><span class="sxs-lookup"><span data-stu-id="b057d-119">GetLastError</span></span>](iprovideradmin-getlasterror.md) <br/> |<span data-ttu-id="b057d-120">プロバイダー管理オブジェクト [に発生](mapierror.md) した以前のエラーに関する情報を含む MAPIERROR 構造体を返します。</span><span class="sxs-lookup"><span data-stu-id="b057d-120">Returns a [MAPIERROR](mapierror.md) structure that contains information about the previous error that occurred to the provider administration object.</span></span>  <br/> |
+|[<span data-ttu-id="b057d-121">GetProviderTable</span><span class="sxs-lookup"><span data-stu-id="b057d-121">GetProviderTable</span></span>](iprovideradmin-getprovidertable.md) <br/> |<span data-ttu-id="b057d-122">メッセージ サービスのプロバイダー テーブル 、メッセージ サービス内のサービス プロバイダーの一覧へのアクセスを提供します。</span><span class="sxs-lookup"><span data-stu-id="b057d-122">Provides access to the message service's provider table, a list of the service providers in the message service.</span></span>  <br/> |
+|[<span data-ttu-id="b057d-123">CreateProvider</span><span class="sxs-lookup"><span data-stu-id="b057d-123">CreateProvider</span></span>](iprovideradmin-createprovider.md) <br/> |<span data-ttu-id="b057d-124">サービス プロバイダーをメッセージ サービスに追加します。</span><span class="sxs-lookup"><span data-stu-id="b057d-124">Adds a service provider to the message service.</span></span>  <br/> |
+|[<span data-ttu-id="b057d-125">DeleteProvider</span><span class="sxs-lookup"><span data-stu-id="b057d-125">DeleteProvider</span></span>](iprovideradmin-deleteprovider.md) <br/> |<span data-ttu-id="b057d-126">メッセージ サービスからサービス プロバイダーを削除します。</span><span class="sxs-lookup"><span data-stu-id="b057d-126">Deletes a service provider from the message service.</span></span>  <br/> |
+|[<span data-ttu-id="b057d-127">OpenProfileSection</span><span class="sxs-lookup"><span data-stu-id="b057d-127">OpenProfileSection</span></span>](iprovideradmin-openprofilesection.md) <br/> |<span data-ttu-id="b057d-128">現在のプロファイルからプロファイル セクションを開き、さらにアクセスする [IProfSect](iprofsectimapiprop.md) ポインターを返します。</span><span class="sxs-lookup"><span data-stu-id="b057d-128">Opens a profile section from the current profile and returns an [IProfSect](iprofsectimapiprop.md) pointer for further access.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="defa5-129">注釈</span><span class="sxs-lookup"><span data-stu-id="defa5-129">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b057d-129">注釈</span><span class="sxs-lookup"><span data-stu-id="b057d-129">Remarks</span></span>
 
-<span data-ttu-id="defa5-130">クライアントは、 [IMsgServiceAdmin:: adminproviders](imsgserviceadmin-adminproviders.md)メソッドを呼び出して、 **IProviderAdmin**インターフェイスへのポインターを取得できます。サービスプロバイダーのメッセージサービスのエントリポイント関数が呼び出されると、 **IProviderAdmin**ポインターが渡されます。</span><span class="sxs-lookup"><span data-stu-id="defa5-130">Clients can get a pointer to an **IProviderAdmin** interface by calling the [IMsgServiceAdmin::AdminProviders](imsgserviceadmin-adminproviders.md) method; service providers are passed an **IProviderAdmin** pointer when their message service's entry point function is called.</span></span> 
+<span data-ttu-id="b057d-130">クライアントは [、IMsgServiceAdmin::AdminProviders](imsgserviceadmin-adminproviders.md)メソッドを呼び出すことによって **、IProviderAdmin** インターフェイスへのポインターを取得できます。メッセージ サービスのエントリ ポイント関数が呼び出された場合、サービス プロバイダーは **IProviderAdmin** ポインターを渡されます。</span><span class="sxs-lookup"><span data-stu-id="b057d-130">Clients can get a pointer to an **IProviderAdmin** interface by calling the [IMsgServiceAdmin::AdminProviders](imsgserviceadmin-adminproviders.md) method; service providers are passed an **IProviderAdmin** pointer when their message service's entry point function is called.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="defa5-131">関連項目</span><span class="sxs-lookup"><span data-stu-id="defa5-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b057d-131">関連項目</span><span class="sxs-lookup"><span data-stu-id="b057d-131">See also</span></span>
 
 
 
-[<span data-ttu-id="defa5-132">MAPI のインターフェイス</span><span class="sxs-lookup"><span data-stu-id="defa5-132">MAPI Interfaces</span></span>](mapi-interfaces.md)
+[<span data-ttu-id="b057d-132">MAPI のインターフェイス</span><span class="sxs-lookup"><span data-stu-id="b057d-132">MAPI Interfaces</span></span>](mapi-interfaces.md)
 

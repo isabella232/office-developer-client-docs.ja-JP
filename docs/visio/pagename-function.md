@@ -16,26 +16,26 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438653"
 ---
-# <a name="pagename-function"></a><span data-ttu-id="f12d2-103">PAGENAME 関数</span><span class="sxs-lookup"><span data-stu-id="f12d2-103">PAGENAME Function</span></span>
+# <a name="pagename-function"></a><span data-ttu-id="549b8-103">PAGENAME 関数</span><span class="sxs-lookup"><span data-stu-id="549b8-103">PAGENAME Function</span></span>
 
-<span data-ttu-id="f12d2-104">ページ名を文字列として返します。</span><span class="sxs-lookup"><span data-stu-id="f12d2-104">Returns the page name as a string.</span></span>
+<span data-ttu-id="549b8-104">ページ名を文字列として返します。</span><span class="sxs-lookup"><span data-stu-id="549b8-104">Returns the page name as a string.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="f12d2-105">構文</span><span class="sxs-lookup"><span data-stu-id="f12d2-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="549b8-105">構文</span><span class="sxs-lookup"><span data-stu-id="549b8-105">Syntax</span></span>
 
-<span data-ttu-id="f12d2-106">PAGENAME (\* \* *langID_opt* \* \*)</span><span class="sxs-lookup"><span data-stu-id="f12d2-106">PAGENAME (\*\* *langID_opt* \*\* )</span></span> 
+<span data-ttu-id="549b8-106">PAGENAME (\*\* *langID_opt* \*\* )</span><span class="sxs-lookup"><span data-stu-id="549b8-106">PAGENAME (\*\* *langID_opt* \*\* )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="f12d2-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="f12d2-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="549b8-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="549b8-107">Parameters</span></span>
 
-|<span data-ttu-id="f12d2-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="f12d2-108">**Name**</span></span>|<span data-ttu-id="f12d2-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="f12d2-109">**Required/Optional**</span></span>|<span data-ttu-id="f12d2-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="f12d2-110">**Data Type**</span></span>|<span data-ttu-id="f12d2-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="f12d2-111">**Description**</span></span>|
+|<span data-ttu-id="549b8-108">**名前**</span><span class="sxs-lookup"><span data-stu-id="549b8-108">**Name**</span></span>|<span data-ttu-id="549b8-109">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="549b8-109">**Required/Optional**</span></span>|<span data-ttu-id="549b8-110">**データ型**</span><span class="sxs-lookup"><span data-stu-id="549b8-110">**Data Type**</span></span>|<span data-ttu-id="549b8-111">**説明**</span><span class="sxs-lookup"><span data-stu-id="549b8-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="f12d2-112">_langID_opt_</span><span class="sxs-lookup"><span data-stu-id="f12d2-112">_langID_opt_</span></span> <br/> |<span data-ttu-id="f12d2-113">省略可能</span><span class="sxs-lookup"><span data-stu-id="f12d2-113">Optional</span></span>  <br/> |<span data-ttu-id="f12d2-114">**数値**</span><span class="sxs-lookup"><span data-stu-id="f12d2-114">**Number**</span></span> <br/> |<span data-ttu-id="f12d2-p101">関数が返す文字列の言語を指定します。ローカル言語を指定するには、0 (既定値) を使用します。汎用言語を指定するには、750 を使用します。</span><span class="sxs-lookup"><span data-stu-id="f12d2-p101">Use to specify a language for the string the function returns. Use 0 (default value) to specify the local language. Use 750 to specify universal language.</span></span>  <br/> |
+| <span data-ttu-id="549b8-112">_langID_opt_</span><span class="sxs-lookup"><span data-stu-id="549b8-112">_langID_opt_</span></span> <br/> |<span data-ttu-id="549b8-113">省略可能</span><span class="sxs-lookup"><span data-stu-id="549b8-113">Optional</span></span>  <br/> |<span data-ttu-id="549b8-114">**数値**</span><span class="sxs-lookup"><span data-stu-id="549b8-114">**Number**</span></span> <br/> |<span data-ttu-id="549b8-p101">関数が返す文字列の言語を指定します。ローカル言語を指定するには、0 (既定値) を使用します。汎用言語を指定するには、750 を使用します。</span><span class="sxs-lookup"><span data-stu-id="549b8-p101">Use to specify a language for the string the function returns. Use 0 (default value) to specify the local language. Use 750 to specify universal language.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="f12d2-118">戻り値</span><span class="sxs-lookup"><span data-stu-id="f12d2-118">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="549b8-118">戻り値</span><span class="sxs-lookup"><span data-stu-id="549b8-118">Return value</span></span>
 
-<span data-ttu-id="f12d2-119">文字列</span><span class="sxs-lookup"><span data-stu-id="f12d2-119">String</span></span>
+<span data-ttu-id="549b8-119">文字列</span><span class="sxs-lookup"><span data-stu-id="549b8-119">String</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="f12d2-120">注釈</span><span class="sxs-lookup"><span data-stu-id="f12d2-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="549b8-120">注釈</span><span class="sxs-lookup"><span data-stu-id="549b8-120">Remarks</span></span>
 
-<span data-ttu-id="f12d2-121">無効な言語コードを渡した場合、ローカル言語が使用されます。</span><span class="sxs-lookup"><span data-stu-id="f12d2-121">If you pass an illegal language code, the local language is used.</span></span>
+<span data-ttu-id="549b8-121">無効な言語コードを渡した場合、ローカル言語が使用されます。</span><span class="sxs-lookup"><span data-stu-id="549b8-121">If you pass an illegal language code, the local language is used.</span></span>
   
 

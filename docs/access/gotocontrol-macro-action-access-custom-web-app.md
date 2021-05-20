@@ -14,23 +14,23 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33436476"
 ---
-# <a name="gotocontrol-macro-action-access-custom-web-app"></a><span data-ttu-id="2a6dc-103">GoToControl マクロ アクション (Access カスタム Web アプリ)</span><span class="sxs-lookup"><span data-stu-id="2a6dc-103">GoToControl Macro Action (Access custom web app)</span></span>
+# <a name="gotocontrol-macro-action-access-custom-web-app"></a><span data-ttu-id="6f1b5-103">GoToControl マクロ アクション (Access カスタム Web アプリ)</span><span class="sxs-lookup"><span data-stu-id="6f1b5-103">GoToControl Macro Action (Access custom web app)</span></span>
 
-<span data-ttu-id="2a6dc-104">**GoToControl** アクションを使用すると、開いているビューの現在のレコード内で指定したコントロールにフォーカスを移動できます。</span><span class="sxs-lookup"><span data-stu-id="2a6dc-104">You can use the **GoToControl** action to move the focus to the specified control in the current record of the open view.</span></span> 
+<span data-ttu-id="6f1b5-104">**GoToControl** アクションを使用すると、開いているビューの現在のレコード内で指定したコントロールにフォーカスを移動できます。</span><span class="sxs-lookup"><span data-stu-id="6f1b5-104">You can use the **GoToControl** action to move the focus to the specified control in the current record of the open view.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="2a6dc-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="2a6dc-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="6f1b5-p101">マイクロソフトを作成して、sharepoint web アプリケーションのアクセスを使用して不要になったをお勧めします。代わりに、web およびモバイル デバイス用のコードのないビジネス ソリューションを構築する[マイクロソフトの PowerApps](https://powerapps.microsoft.com/en-us/)を使用して検討してください。</span><span class="sxs-lookup"><span data-stu-id="6f1b5-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
-## <a name="setting"></a><span data-ttu-id="2a6dc-107">設定</span><span class="sxs-lookup"><span data-stu-id="2a6dc-107">Setting</span></span>
+## <a name="setting"></a><span data-ttu-id="6f1b5-107">設定</span><span class="sxs-lookup"><span data-stu-id="6f1b5-107">Setting</span></span>
 
-<span data-ttu-id="2a6dc-108">**GoToControl** アクションの引数は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="2a6dc-108">The **GoToControl** action has the following argument.</span></span> 
+<span data-ttu-id="6f1b5-108">**GoToControl** アクションの引数は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="6f1b5-108">The **GoToControl** action has the following argument.</span></span> 
   
-|<span data-ttu-id="2a6dc-109">**アクションの引数**</span><span class="sxs-lookup"><span data-stu-id="2a6dc-109">**Action argument**</span></span>|<span data-ttu-id="2a6dc-110">**説明**</span><span class="sxs-lookup"><span data-stu-id="2a6dc-110">**Description**</span></span>|
+|<span data-ttu-id="6f1b5-109">**アクションの引数**</span><span class="sxs-lookup"><span data-stu-id="6f1b5-109">**Action argument**</span></span>|<span data-ttu-id="6f1b5-110">**説明**</span><span class="sxs-lookup"><span data-stu-id="6f1b5-110">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="2a6dc-111">**コントロール名**</span><span class="sxs-lookup"><span data-stu-id="2a6dc-111">**Control Name**</span></span> <br/> |<span data-ttu-id="2a6dc-p102">フォーカスの移動先とするフィールドまたはコントロールの名前。これは、必須の引数です。</span><span class="sxs-lookup"><span data-stu-id="2a6dc-p102">The name of the field or control where you want the focus. This is a required argument.</span></span>  <br/> |
+|<span data-ttu-id="6f1b5-111">**コントロール名**</span><span class="sxs-lookup"><span data-stu-id="6f1b5-111">**Control Name**</span></span> <br/> |<span data-ttu-id="6f1b5-p102">フォーカスの移動先とするフィールドまたはコントロールの名前。これは、必須の引数です。</span><span class="sxs-lookup"><span data-stu-id="6f1b5-p102">The name of the field or control where you want the focus. This is a required argument.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="2a6dc-114">注釈</span><span class="sxs-lookup"><span data-stu-id="2a6dc-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6f1b5-114">注釈</span><span class="sxs-lookup"><span data-stu-id="6f1b5-114">Remarks</span></span>
 
-<span data-ttu-id="2a6dc-p103">特定のフィールドまたはコントロールにフォーカスを移動する必要がある場合にこのアクションを使用できます。また、このアクションを使用して、特定の条件に従ってフォーム内をナビゲーションできます。たとえば、医療保険のフォームでユーザーが [既婚] コントロールに [いいえ] と入力した場合、[配偶者またはパートナーの名前] コントロールを自動的にスキップしてフォーカスを次のコントロールに移動できます。</span><span class="sxs-lookup"><span data-stu-id="2a6dc-p103">You can use this action when you want a particular field or control to have the focus. You can also use this action to navigate in a form according to certain conditions. For example, if the user enters No in a Married control on a health insurance form, the focus can automatically skip the Spouse/partner Name control and move to the next control.</span></span>
+<span data-ttu-id="6f1b5-p103">特定のフィールドまたはコントロールにフォーカスを移動する必要がある場合にこのアクションを使用できます。また、このアクションを使用して、特定の条件に従ってフォーム内をナビゲーションできます。たとえば、医療保険のフォームでユーザーが [既婚] コントロールに [いいえ] と入力した場合、[配偶者またはパートナーの名前] コントロールを自動的にスキップしてフォーカスを次のコントロールに移動できます。</span><span class="sxs-lookup"><span data-stu-id="6f1b5-p103">You can use this action when you want a particular field or control to have the focus. You can also use this action to navigate in a form according to certain conditions. For example, if the user enters No in a Married control on a health insurance form, the focus can automatically skip the Spouse/partner Name control and move to the next control.</span></span>
   
 

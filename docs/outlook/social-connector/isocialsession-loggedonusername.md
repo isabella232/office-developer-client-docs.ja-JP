@@ -15,20 +15,20 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33437295"
 ---
-# <a name="isocialsessionloggedonusername"></a><span data-ttu-id="9c20b-103">ISocialSession::LoggedOnUserName</span><span class="sxs-lookup"><span data-stu-id="9c20b-103">ISocialSession::LoggedOnUserName</span></span>
+# <a name="isocialsessionloggedonusername"></a><span data-ttu-id="701a6-103">ISocialSession::LoggedOnUserName</span><span class="sxs-lookup"><span data-stu-id="701a6-103">ISocialSession::LoggedOnUserName</span></span>
 
-<span data-ttu-id="9c20b-104">ログオン時に使用されるユーザー名を表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="9c20b-104">Returns a string that represents the user name that is used when logging on.</span></span>
+<span data-ttu-id="701a6-104">ログオン時に使用されるユーザー名を表す文字列を返します。</span><span class="sxs-lookup"><span data-stu-id="701a6-104">Returns a string that represents the user name that is used when logging on.</span></span>
   
 ```cpp
 [propget] HRESULT _stdcall LoggedOnUserName([out, retval] BSTR* result);
 ```
 
-## <a name="property-value"></a><span data-ttu-id="9c20b-105">プロパティ値</span><span class="sxs-lookup"><span data-stu-id="9c20b-105">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="701a6-105">プロパティ値</span><span class="sxs-lookup"><span data-stu-id="701a6-105">Property value</span></span>
 
-<span data-ttu-id="9c20b-106">ログオンしているユーザーのユーザー名を表す文字列。</span><span class="sxs-lookup"><span data-stu-id="9c20b-106">A string that represents the user name of the logged-on user.</span></span>
+<span data-ttu-id="701a6-106">ログオンしているユーザーのユーザー名を表す文字列。</span><span class="sxs-lookup"><span data-stu-id="701a6-106">A string that represents the user name of the logged-on user.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="9c20b-107">関連項目</span><span class="sxs-lookup"><span data-stu-id="9c20b-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="701a6-107">関連項目</span><span class="sxs-lookup"><span data-stu-id="701a6-107">See also</span></span>
 
-- [<span data-ttu-id="9c20b-108">ISocialSession::LoggedOnUserID</span><span class="sxs-lookup"><span data-stu-id="9c20b-108">ISocialSession::LoggedOnUserID</span></span>](isocialsession-loggedonuserid.md)  
-- [<span data-ttu-id="9c20b-109">ISocialSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="9c20b-109">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
+- [<span data-ttu-id="701a6-108">ISocialSession::LoggedOnUserID</span><span class="sxs-lookup"><span data-stu-id="701a6-108">ISocialSession::LoggedOnUserID</span></span>](isocialsession-loggedonuserid.md)  
+- [<span data-ttu-id="701a6-109">ISocialSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="701a6-109">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
 
