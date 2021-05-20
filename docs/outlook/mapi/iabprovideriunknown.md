@@ -19,33 +19,33 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33431471"
 ---
-# <a name="iabprovider--iunknown"></a><span data-ttu-id="d19c6-103">IABProvider : IUnknown</span><span class="sxs-lookup"><span data-stu-id="d19c6-103">IABProvider : IUnknown</span></span>
+# <a name="iabprovider--iunknown"></a><span data-ttu-id="bd4e6-103">IABProvider : IUnknown</span><span class="sxs-lookup"><span data-stu-id="bd4e6-103">IABProvider : IUnknown</span></span>
 
   
   
-<span data-ttu-id="d19c6-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="d19c6-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="bd4e6-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="bd4e6-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="d19c6-105">アドレス帳プロバイダオブジェクトにログオンするメソッドと、アドレス帳プロバイダオブジェクトを無効にするメソッドを提供します。</span><span class="sxs-lookup"><span data-stu-id="d19c6-105">Provides a method to log on to an address book provider object and a method to invalidate an address book provider object.</span></span>
+<span data-ttu-id="bd4e6-105">アドレス帳プロバイダー オブジェクトにログオンするメソッドと、アドレス帳プロバイダー オブジェクトを無効にするメソッドを提供します。</span><span class="sxs-lookup"><span data-stu-id="bd4e6-105">Provides a method to log on to an address book provider object and a method to invalidate an address book provider object.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="d19c6-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="d19c6-106">Header file:</span></span>  <br/> |<span data-ttu-id="d19c6-107">Mapispi</span><span class="sxs-lookup"><span data-stu-id="d19c6-107">Mapispi.h</span></span>  <br/> |
-|<span data-ttu-id="d19c6-108">公開者:</span><span class="sxs-lookup"><span data-stu-id="d19c6-108">Exposed by:</span></span>  <br/> |<span data-ttu-id="d19c6-109">アドレス帳プロバイダーのオブジェクト</span><span class="sxs-lookup"><span data-stu-id="d19c6-109">Address book provider objects</span></span>  <br/> |
-|<span data-ttu-id="d19c6-110">実装元:</span><span class="sxs-lookup"><span data-stu-id="d19c6-110">Implemented by:</span></span>  <br/> |<span data-ttu-id="d19c6-111">アドレス帳プロバイダー</span><span class="sxs-lookup"><span data-stu-id="d19c6-111">Address book providers</span></span>  <br/> |
-|<span data-ttu-id="d19c6-112">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="d19c6-112">Called by:</span></span>  <br/> |<span data-ttu-id="d19c6-113">MAPI</span><span class="sxs-lookup"><span data-stu-id="d19c6-113">MAPI</span></span>  <br/> |
-|<span data-ttu-id="d19c6-114">インターフェイス識別子:</span><span class="sxs-lookup"><span data-stu-id="d19c6-114">Interface identifier:</span></span>  <br/> |<span data-ttu-id="d19c6-115">IID_IABProvider</span><span class="sxs-lookup"><span data-stu-id="d19c6-115">IID_IABProvider</span></span>  <br/> |
-|<span data-ttu-id="d19c6-116">ポインターの種類:</span><span class="sxs-lookup"><span data-stu-id="d19c6-116">Pointer type:</span></span>  <br/> |<span data-ttu-id="d19c6-117">lpabprovider</span><span class="sxs-lookup"><span data-stu-id="d19c6-117">LPABPROVIDER</span></span>  <br/> |
+|<span data-ttu-id="bd4e6-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="bd4e6-106">Header file:</span></span>  <br/> |<span data-ttu-id="bd4e6-107">Mapispi.h</span><span class="sxs-lookup"><span data-stu-id="bd4e6-107">Mapispi.h</span></span>  <br/> |
+|<span data-ttu-id="bd4e6-108">次のユーザーによって公開されます。</span><span class="sxs-lookup"><span data-stu-id="bd4e6-108">Exposed by:</span></span>  <br/> |<span data-ttu-id="bd4e6-109">アドレス帳プロバイダーのオブジェクト</span><span class="sxs-lookup"><span data-stu-id="bd4e6-109">Address book provider objects</span></span>  <br/> |
+|<span data-ttu-id="bd4e6-110">実装元:</span><span class="sxs-lookup"><span data-stu-id="bd4e6-110">Implemented by:</span></span>  <br/> |<span data-ttu-id="bd4e6-111">アドレス帳プロバイダー</span><span class="sxs-lookup"><span data-stu-id="bd4e6-111">Address book providers</span></span>  <br/> |
+|<span data-ttu-id="bd4e6-112">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="bd4e6-112">Called by:</span></span>  <br/> |<span data-ttu-id="bd4e6-113">MAPI</span><span class="sxs-lookup"><span data-stu-id="bd4e6-113">MAPI</span></span>  <br/> |
+|<span data-ttu-id="bd4e6-114">インターフェイス識別子:</span><span class="sxs-lookup"><span data-stu-id="bd4e6-114">Interface identifier:</span></span>  <br/> |<span data-ttu-id="bd4e6-115">IID_IABProvider</span><span class="sxs-lookup"><span data-stu-id="bd4e6-115">IID_IABProvider</span></span>  <br/> |
+|<span data-ttu-id="bd4e6-116">ポインターの種類:</span><span class="sxs-lookup"><span data-stu-id="bd4e6-116">Pointer type:</span></span>  <br/> |<span data-ttu-id="bd4e6-117">LPABPROVIDER</span><span class="sxs-lookup"><span data-stu-id="bd4e6-117">LPABPROVIDER</span></span>  <br/> |
    
-## <a name="vtable-order"></a><span data-ttu-id="d19c6-118">v の順序</span><span class="sxs-lookup"><span data-stu-id="d19c6-118">Vtable order</span></span>
+## <a name="vtable-order"></a><span data-ttu-id="bd4e6-118">Vtable の順序</span><span class="sxs-lookup"><span data-stu-id="bd4e6-118">Vtable order</span></span>
 
 |||
 |:-----|:-----|
-|[<span data-ttu-id="d19c6-119">Logon</span><span class="sxs-lookup"><span data-stu-id="d19c6-119">Logon</span></span>](iabprovider-logon.md) <br/> |<span data-ttu-id="d19c6-120">アクティブなセッションへの接続を確立します。</span><span class="sxs-lookup"><span data-stu-id="d19c6-120">Establishes a connection to an active session.</span></span>  <br/> |
-|[<span data-ttu-id="d19c6-121">シャットダウン</span><span class="sxs-lookup"><span data-stu-id="d19c6-121">Shutdown</span></span>](iabprovider-shutdown.md) <br/> |<span data-ttu-id="d19c6-122">アクティブなセッションへの接続を取り消します。</span><span class="sxs-lookup"><span data-stu-id="d19c6-122">Cancels a connection to an active session.</span></span>  <br/> |
+|[<span data-ttu-id="bd4e6-119">Logon</span><span class="sxs-lookup"><span data-stu-id="bd4e6-119">Logon</span></span>](iabprovider-logon.md) <br/> |<span data-ttu-id="bd4e6-120">アクティブ なセッションへの接続を確立します。</span><span class="sxs-lookup"><span data-stu-id="bd4e6-120">Establishes a connection to an active session.</span></span>  <br/> |
+|[<span data-ttu-id="bd4e6-121">シャットダウン</span><span class="sxs-lookup"><span data-stu-id="bd4e6-121">Shutdown</span></span>](iabprovider-shutdown.md) <br/> |<span data-ttu-id="bd4e6-122">アクティブなセッションへの接続をキャンセルします。</span><span class="sxs-lookup"><span data-stu-id="bd4e6-122">Cancels a connection to an active session.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="d19c6-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="d19c6-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bd4e6-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="bd4e6-123">See also</span></span>
 
 
 
-[<span data-ttu-id="d19c6-124">MAPI のインターフェイス</span><span class="sxs-lookup"><span data-stu-id="d19c6-124">MAPI Interfaces</span></span>](mapi-interfaces.md)
+[<span data-ttu-id="bd4e6-124">MAPI のインターフェイス</span><span class="sxs-lookup"><span data-stu-id="bd4e6-124">MAPI Interfaces</span></span>](mapi-interfaces.md)
 

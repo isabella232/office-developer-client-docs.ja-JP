@@ -19,17 +19,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33435909"
 ---
-# <a name="slpstrarray"></a><span data-ttu-id="fe2a6-103">SLPSTRArray</span><span class="sxs-lookup"><span data-stu-id="fe2a6-103">SLPSTRArray</span></span>
+# <a name="slpstrarray"></a><span data-ttu-id="04d03-103">SLPSTRArray</span><span class="sxs-lookup"><span data-stu-id="04d03-103">SLPSTRArray</span></span>
 
   
   
-<span data-ttu-id="fe2a6-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="fe2a6-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="04d03-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="04d03-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="fe2a6-105">PT_MV_STRING8 型のプロパティを記述するために使用される文字列値の配列を格納します。</span><span class="sxs-lookup"><span data-stu-id="fe2a6-105">Contains an array of string values that are used to describe a property of type PT_MV_STRING8.</span></span>
+<span data-ttu-id="04d03-105">型のプロパティを記述するために使用される文字列値の配列が含PT_MV_STRING8。</span><span class="sxs-lookup"><span data-stu-id="04d03-105">Contains an array of string values that are used to describe a property of type PT_MV_STRING8.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="fe2a6-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="fe2a6-106">Header file:</span></span>  <br/> |<span data-ttu-id="fe2a6-107">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="fe2a6-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="04d03-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="04d03-106">Header file:</span></span>  <br/> |<span data-ttu-id="04d03-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="04d03-107">Mapidefs.h</span></span>  <br/> |
    
 ```cpp
 typedef struct _SLPSTRArray
@@ -40,26 +40,26 @@ typedef struct _SLPSTRArray
 
 ```
 
-## <a name="members"></a><span data-ttu-id="fe2a6-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="fe2a6-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="04d03-108">Members</span><span class="sxs-lookup"><span data-stu-id="04d03-108">Members</span></span>
 
- <span data-ttu-id="fe2a6-109">**cvalues**</span><span class="sxs-lookup"><span data-stu-id="fe2a6-109">**cValues**</span></span>
+ <span data-ttu-id="04d03-109">**cValues**</span><span class="sxs-lookup"><span data-stu-id="04d03-109">**cValues**</span></span>
   
-> <span data-ttu-id="fe2a6-110">**lppszA**メンバーが指す配列内の値の数。</span><span class="sxs-lookup"><span data-stu-id="fe2a6-110">Count of values in the array pointed to by the **lppszA** member.</span></span> 
+> <span data-ttu-id="04d03-110">lppszA メンバーが指す配列 **内の値の** 数。</span><span class="sxs-lookup"><span data-stu-id="04d03-110">Count of values in the array pointed to by the **lppszA** member.</span></span> 
     
- <span data-ttu-id="fe2a6-111">**lppszA**</span><span class="sxs-lookup"><span data-stu-id="fe2a6-111">**lppszA**</span></span>
+ <span data-ttu-id="04d03-111">**lppszA**</span><span class="sxs-lookup"><span data-stu-id="04d03-111">**lppszA**</span></span>
   
-> <span data-ttu-id="fe2a6-112">null で終了した8ビット文字の文字列の配列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="fe2a6-112">Pointer to an array of null-ended 8-bit character strings.</span></span>
+> <span data-ttu-id="04d03-112">null-ended 8 ビット文字文字列の配列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="04d03-112">Pointer to an array of null-ended 8-bit character strings.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="fe2a6-113">注釈</span><span class="sxs-lookup"><span data-stu-id="fe2a6-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="04d03-113">注釈</span><span class="sxs-lookup"><span data-stu-id="04d03-113">Remarks</span></span>
 
-<span data-ttu-id="fe2a6-114">PT_MV_STRING8 の詳細については、「[プロパティの種類の一覧](property-types.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fe2a6-114">For more information about PT_MV_STRING8, see [List of Property Types](property-types.md).</span></span>
+<span data-ttu-id="04d03-114">プロパティの詳細については、「PT_MV_STRING8の [種類」を参照してください](property-types.md)。</span><span class="sxs-lookup"><span data-stu-id="04d03-114">For more information about PT_MV_STRING8, see [List of Property Types](property-types.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="fe2a6-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="fe2a6-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="04d03-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="04d03-115">See also</span></span>
 
 
 
-[<span data-ttu-id="fe2a6-116">SPropValue</span><span class="sxs-lookup"><span data-stu-id="fe2a6-116">SPropValue</span></span>](spropvalue.md)
+[<span data-ttu-id="04d03-116">SPropValue</span><span class="sxs-lookup"><span data-stu-id="04d03-116">SPropValue</span></span>](spropvalue.md)
 
 
-[<span data-ttu-id="fe2a6-117">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="fe2a6-117">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="04d03-117">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="04d03-117">MAPI Structures</span></span>](mapi-structures.md)
 

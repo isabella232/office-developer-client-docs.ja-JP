@@ -19,19 +19,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33431513"
 ---
-# <a name="lpfnbutton"></a><span data-ttu-id="5b3de-103">LPFNBUTTON</span><span class="sxs-lookup"><span data-stu-id="5b3de-103">LPFNBUTTON</span></span>
+# <a name="lpfnbutton"></a><span data-ttu-id="4ffb2-103">LPFNBUTTON</span><span class="sxs-lookup"><span data-stu-id="4ffb2-103">LPFNBUTTON</span></span>
 
   
   
-<span data-ttu-id="5b3de-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="5b3de-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="4ffb2-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="4ffb2-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="5b3de-105">[アドレス帳] ダイアログボックスでオプションのボタンコントロールをアクティブ化するために MAPI が呼び出すコールバック関数を定義します。</span><span class="sxs-lookup"><span data-stu-id="5b3de-105">Defines a callback function that MAPI calls to activate an optional button control in an address book dialog box.</span></span> <span data-ttu-id="5b3de-106">通常、このボタンは [**詳細**] ボタンです。</span><span class="sxs-lookup"><span data-stu-id="5b3de-106">This button is typically a **Details** button.</span></span> 
+<span data-ttu-id="4ffb2-105">アドレス帳ダイアログ ボックスでオプションのボタン コントロールをアクティブ化するために MAPI が呼び出すコールバック関数を定義します。</span><span class="sxs-lookup"><span data-stu-id="4ffb2-105">Defines a callback function that MAPI calls to activate an optional button control in an address book dialog box.</span></span> <span data-ttu-id="4ffb2-106">通常、このボタンは [詳細] **ボタン** です。</span><span class="sxs-lookup"><span data-stu-id="4ffb2-106">This button is typically a **Details** button.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="5b3de-107">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="5b3de-107">Header file:</span></span>  <br/> |<span data-ttu-id="5b3de-108">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="5b3de-108">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="5b3de-109">定義された関数の実装:</span><span class="sxs-lookup"><span data-stu-id="5b3de-109">Defined function implemented by:</span></span>  <br/> |<span data-ttu-id="5b3de-110">サービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="5b3de-110">Service providers</span></span>  <br/> |
-|<span data-ttu-id="5b3de-111">によって呼び出された定義済み関数:</span><span class="sxs-lookup"><span data-stu-id="5b3de-111">Defined function called by:</span></span>  <br/> |<span data-ttu-id="5b3de-112">MAPI</span><span class="sxs-lookup"><span data-stu-id="5b3de-112">MAPI</span></span>  <br/> |
+|<span data-ttu-id="4ffb2-107">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="4ffb2-107">Header file:</span></span>  <br/> |<span data-ttu-id="4ffb2-108">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="4ffb2-108">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="4ffb2-109">定義された関数は、次の方法で実装されます。</span><span class="sxs-lookup"><span data-stu-id="4ffb2-109">Defined function implemented by:</span></span>  <br/> |<span data-ttu-id="4ffb2-110">サービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="4ffb2-110">Service providers</span></span>  <br/> |
+|<span data-ttu-id="4ffb2-111">によって呼び出される定義済み関数:</span><span class="sxs-lookup"><span data-stu-id="4ffb2-111">Defined function called by:</span></span>  <br/> |<span data-ttu-id="4ffb2-112">MAPI</span><span class="sxs-lookup"><span data-stu-id="4ffb2-112">MAPI</span></span>  <br/> |
    
 ```cpp
 SCODE (STDMETHODCALLTYPE FAR * LPFNBUTTON)(
@@ -43,45 +43,45 @@ SCODE (STDMETHODCALLTYPE FAR * LPFNBUTTON)(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="5b3de-113">パラメーター</span><span class="sxs-lookup"><span data-stu-id="5b3de-113">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="4ffb2-113">パラメーター</span><span class="sxs-lookup"><span data-stu-id="4ffb2-113">Parameters</span></span>
 
- <span data-ttu-id="5b3de-114">_uluiparam_</span><span class="sxs-lookup"><span data-stu-id="5b3de-114">_ulUIParam_</span></span>
+ <span data-ttu-id="4ffb2-114">_ulUIParam_</span><span class="sxs-lookup"><span data-stu-id="4ffb2-114">_ulUIParam_</span></span>
   
-> <span data-ttu-id="5b3de-115">順番この関数が表示する、任意のダイアログボックスまたはウィンドウの親ウィンドウのハンドル。</span><span class="sxs-lookup"><span data-stu-id="5b3de-115">[in] Handle of the parent windows for any dialog boxes or windows this function displays.</span></span>
+> <span data-ttu-id="4ffb2-115">[in]この関数が表示するダイアログ ボックスまたはウィンドウの親ウィンドウのハンドル。</span><span class="sxs-lookup"><span data-stu-id="4ffb2-115">[in] Handle of the parent windows for any dialog boxes or windows this function displays.</span></span>
     
- <span data-ttu-id="5b3de-116">_lpvcontext_</span><span class="sxs-lookup"><span data-stu-id="5b3de-116">_lpvContext_</span></span>
+ <span data-ttu-id="4ffb2-116">_lpvContext_</span><span class="sxs-lookup"><span data-stu-id="4ffb2-116">_lpvContext_</span></span>
   
-> <span data-ttu-id="5b3de-117">順番MAPI がコールバック関数に渡す任意の値へのポインター。</span><span class="sxs-lookup"><span data-stu-id="5b3de-117">[in] Pointer to an arbitrary value passed to the callback function when MAPI calls it.</span></span> <span data-ttu-id="5b3de-118">この値は、クライアントアプリケーションにとって重要なアドレスを表すことができます。</span><span class="sxs-lookup"><span data-stu-id="5b3de-118">This value can represent an address of significance to the client application.</span></span> <span data-ttu-id="5b3de-119">通常、c++ コードでは、 _lpvcontext_は c++ オブジェクトへのポインターを表します。</span><span class="sxs-lookup"><span data-stu-id="5b3de-119">Typically, for C++ code,  _lpvContext_ represents a pointer to a C++ object.</span></span> 
+> <span data-ttu-id="4ffb2-117">[in]MAPI がコールバック関数を呼び出す際にコールバック関数に渡される任意の値へのポインター。</span><span class="sxs-lookup"><span data-stu-id="4ffb2-117">[in] Pointer to an arbitrary value passed to the callback function when MAPI calls it.</span></span> <span data-ttu-id="4ffb2-118">この値は、クライアント アプリケーションにとって重要なアドレスを表します。</span><span class="sxs-lookup"><span data-stu-id="4ffb2-118">This value can represent an address of significance to the client application.</span></span> <span data-ttu-id="4ffb2-119">通常、C++ コードの場合  _、lpvContext_ は C++ オブジェクトへのポインターを表します。</span><span class="sxs-lookup"><span data-stu-id="4ffb2-119">Typically, for C++ code,  _lpvContext_ represents a pointer to a C++ object.</span></span> 
     
- <span data-ttu-id="5b3de-120">_cbEntryID_</span><span class="sxs-lookup"><span data-stu-id="5b3de-120">_cbEntryID_</span></span>
+ <span data-ttu-id="4ffb2-120">_cbEntryID_</span><span class="sxs-lookup"><span data-stu-id="4ffb2-120">_cbEntryID_</span></span>
   
-> <span data-ttu-id="5b3de-121">順番_lpselection_パラメーターで指定されたエントリ識別子のサイズ (バイト単位)。</span><span class="sxs-lookup"><span data-stu-id="5b3de-121">[in] Size, in bytes, of the entry identifier pointed to by the  _lpSelection_ parameter.</span></span> 
+> <span data-ttu-id="4ffb2-121">[in]  _lpSelection_ パラメーターが指すエントリ識別子のサイズ (バイト単位)。</span><span class="sxs-lookup"><span data-stu-id="4ffb2-121">[in] Size, in bytes, of the entry identifier pointed to by the  _lpSelection_ parameter.</span></span> 
     
- <span data-ttu-id="5b3de-122">_lpselection_</span><span class="sxs-lookup"><span data-stu-id="5b3de-122">_lpSelection_</span></span>
+ <span data-ttu-id="4ffb2-122">_lpSelection_</span><span class="sxs-lookup"><span data-stu-id="4ffb2-122">_lpSelection_</span></span>
   
-> <span data-ttu-id="5b3de-123">順番ダイアログボックスの選択範囲を定義するエントリ識別子へのポインター。</span><span class="sxs-lookup"><span data-stu-id="5b3de-123">[in] Pointer to the entry identifier defining the selection in the dialog box.</span></span>
+> <span data-ttu-id="4ffb2-123">[in]ダイアログ ボックスで選択範囲を定義するエントリ識別子へのポインター。</span><span class="sxs-lookup"><span data-stu-id="4ffb2-123">[in] Pointer to the entry identifier defining the selection in the dialog box.</span></span>
     
- <span data-ttu-id="5b3de-124">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="5b3de-124">_ulFlags_</span></span>
+ <span data-ttu-id="4ffb2-124">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="4ffb2-124">_ulFlags_</span></span>
   
-> <span data-ttu-id="5b3de-125">[����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B</span><span class="sxs-lookup"><span data-stu-id="5b3de-125">[in] Reserved; must be zero.</span></span>
+> <span data-ttu-id="4ffb2-125">[����]�\�񂳂�Ă��܂��B0 �ɂ���K�v������܂��B</span><span class="sxs-lookup"><span data-stu-id="4ffb2-125">[in] Reserved; must be zero.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="5b3de-126">戻り値</span><span class="sxs-lookup"><span data-stu-id="5b3de-126">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="4ffb2-126">戻り値</span><span class="sxs-lookup"><span data-stu-id="4ffb2-126">Return value</span></span>
 
-<span data-ttu-id="5b3de-127">S_OK</span><span class="sxs-lookup"><span data-stu-id="5b3de-127">S_OK</span></span> 
+<span data-ttu-id="4ffb2-127">S_OK</span><span class="sxs-lookup"><span data-stu-id="4ffb2-127">S_OK</span></span> 
   
-> <span data-ttu-id="5b3de-128">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="5b3de-128">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="4ffb2-128">�ʘb���������A�\�������l�܂��͒l���Ԃ���܂��B</span><span class="sxs-lookup"><span data-stu-id="4ffb2-128">The call succeeded and has returned the expected value or values.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="5b3de-129">注釈</span><span class="sxs-lookup"><span data-stu-id="5b3de-129">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="4ffb2-129">注釈</span><span class="sxs-lookup"><span data-stu-id="4ffb2-129">Remarks</span></span>
 
-<span data-ttu-id="5b3de-130">クライアントアプリケーションは、 **LPFNBUTTON**プロトタイプに基づいてコールバック関数を呼び出し、[詳細] ダイアログボックスにボタンを定義します。</span><span class="sxs-lookup"><span data-stu-id="5b3de-130">Client applications call a callback function based on the **LPFNBUTTON** prototype to define a button in a details dialog box.</span></span> <span data-ttu-id="5b3de-131">クライアントは、 [IAddrBook::D etails](iaddrbook-details.md)メソッドへの呼び出しで、コールバック関数へのポインターを渡します。</span><span class="sxs-lookup"><span data-stu-id="5b3de-131">The client passes a pointer to the callback function in calls to the [IAddrBook::Details](iaddrbook-details.md) method.</span></span> 
+<span data-ttu-id="4ffb2-130">クライアント アプリケーションは、詳細ダイアログ ボックスでボタンを定義するために **、LPFNBUTTON** プロトタイプに基づいてコールバック関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="4ffb2-130">Client applications call a callback function based on the **LPFNBUTTON** prototype to define a button in a details dialog box.</span></span> <span data-ttu-id="4ffb2-131">クライアントは [、IAddrBook::D etails](iaddrbook-details.md) メソッドの呼び出しでコールバック関数へのポインターを渡します。</span><span class="sxs-lookup"><span data-stu-id="4ffb2-131">The client passes a pointer to the callback function in calls to the [IAddrBook::Details](iaddrbook-details.md) method.</span></span> 
   
-<span data-ttu-id="5b3de-132">サービスプロバイダーは、 **LPFNBUTTON**プロトタイプに基づいて、[詳細] ダイアログボックスにボタンを定義するためのフック関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="5b3de-132">Service providers call a hook function based on the **LPFNBUTTON** prototype to define a button in a details dialog box.</span></span> <span data-ttu-id="5b3de-133">プロバイダーは、 [imapisupport::D etails](imapisupport-details.md)メソッドへの呼び出しで、このフック関数へのポインターを渡します。</span><span class="sxs-lookup"><span data-stu-id="5b3de-133">The provider passes a pointer to this hook function in calls to the [IMAPISupport::Details](imapisupport-details.md) method.</span></span> 
+<span data-ttu-id="4ffb2-132">サービス プロバイダーは、詳細ダイアログ ボックスでボタンを定義するために **、LPFNBUTTON** プロトタイプに基づいてフック関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="4ffb2-132">Service providers call a hook function based on the **LPFNBUTTON** prototype to define a button in a details dialog box.</span></span> <span data-ttu-id="4ffb2-133">プロバイダーは [、IMAPISupport::D etails](imapisupport-details.md) メソッドの呼び出しで、このフック関数へのポインターを渡します。</span><span class="sxs-lookup"><span data-stu-id="4ffb2-133">The provider passes a pointer to this hook function in calls to the [IMAPISupport::Details](imapisupport-details.md) method.</span></span> 
   
-<span data-ttu-id="5b3de-134">どちらの場合も、ダイアログボックスが表示され、ユーザーが [定義済み] ボタンを選択すると、MAPI は**LPFNBUTTON**を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="5b3de-134">In both cases, when the dialog box is displayed and the user chooses the defined button, MAPI calls **LPFNBUTTON**.</span></span> 
+<span data-ttu-id="4ffb2-134">どちらの場合も、ダイアログ ボックスが表示され、ユーザーが定義されたボタンを選択すると、MAPI は **LPFNBUTTON を呼び出します**。</span><span class="sxs-lookup"><span data-stu-id="4ffb2-134">In both cases, when the dialog box is displayed and the user chooses the defined button, MAPI calls **LPFNBUTTON**.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="5b3de-135">関連項目</span><span class="sxs-lookup"><span data-stu-id="5b3de-135">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4ffb2-135">関連項目</span><span class="sxs-lookup"><span data-stu-id="4ffb2-135">See also</span></span>
 
 
 
-[<span data-ttu-id="5b3de-136">BuildDisplayTable</span><span class="sxs-lookup"><span data-stu-id="5b3de-136">BuildDisplayTable</span></span>](builddisplaytable.md)
+[<span data-ttu-id="4ffb2-136">BuildDisplayTable</span><span class="sxs-lookup"><span data-stu-id="4ffb2-136">BuildDisplayTable</span></span>](builddisplaytable.md)
 

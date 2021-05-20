@@ -15,59 +15,59 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33429244"
 ---
-# <a name="work-with-offline-solutions-using-the-infopath-object-model"></a><span data-ttu-id="4c067-105">InfoPath オブジェクト モデルを使用してオフライン ソリューションを操作する</span><span class="sxs-lookup"><span data-stu-id="4c067-105">Work with offline solutions using the InfoPath object model</span></span>
+# <a name="work-with-offline-solutions-using-the-infopath-object-model"></a><span data-ttu-id="7eb29-105">InfoPath オブジェクト モデルを使用してオフライン ソリューションを操作する</span><span class="sxs-lookup"><span data-stu-id="7eb29-105">Work with offline solutions using the InfoPath object model</span></span>
 
-<span data-ttu-id="4c067-p102">InfoPath 2003 互換オブジェクト モデルに用意されている [Application](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._Application2.MachineOnlineState.aspx) オブジェクトの [MachineOnlineState](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Application.aspx) プロパティを使用すると、ユーザーのコンピューターがネットワークに接続されているかどうかをフォーム コードで確認できます。</span><span class="sxs-lookup"><span data-stu-id="4c067-p102">The InfoPath 2003-compatible object model provides the [MachineOnlineState](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._Application2.MachineOnlineState.aspx) property of the [Application](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Application.aspx) object which enables your form code to check whether the user's computer is connected to the network. Your form code can perform different actions depending on the state of the connection.</span></span> 
+<span data-ttu-id="7eb29-p102">InfoPath 2003 互換オブジェクト モデルに用意されている [Application](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._Application2.MachineOnlineState.aspx) オブジェクトの [MachineOnlineState](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Application.aspx) プロパティを使用すると、ユーザーのコンピューターがネットワークに接続されているかどうかをフォーム コードで確認できます。</span><span class="sxs-lookup"><span data-stu-id="7eb29-p102">The InfoPath 2003-compatible object model provides the [MachineOnlineState](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._Application2.MachineOnlineState.aspx) property of the [Application](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Application.aspx) object which enables your form code to check whether the user's computer is connected to the network. Your form code can perform different actions depending on the state of the connection.</span></span> 
   
-## <a name="using-the-machineonlinestate-property"></a><span data-ttu-id="4c067-108">MachineOnlineState プロパティを使用する</span><span class="sxs-lookup"><span data-stu-id="4c067-108">Using the MachineOnlineState property</span></span>
+## <a name="using-the-machineonlinestate-property"></a><span data-ttu-id="7eb29-108">MachineOnlineState プロパティを使用する</span><span class="sxs-lookup"><span data-stu-id="7eb29-108">Using the MachineOnlineState property</span></span>
 
-<span data-ttu-id="4c067-109">次の例では、ユーザーのコンピューターがオンラインかオフラインかに基づいてフォームを送信する方法を決定するロジックを、フォーム コードに追加する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="4c067-109">The following example shows how you can add logic to your form code that determines how to submit a form based on whether the user's computer is online or offline.</span></span>
+<span data-ttu-id="7eb29-109">次の例では、ユーザーのコンピューターがオンラインかオフラインかに基づいてフォームを送信する方法を決定するロジックを、フォーム コードに追加する方法を示します。</span><span class="sxs-lookup"><span data-stu-id="7eb29-109">The following example shows how you can add logic to your form code that determines how to submit a form based on whether the user's computer is online or offline.</span></span>
   
-<span data-ttu-id="4c067-p103">この例では、販売報告書を送信するためのフォームが既に作成されているものとします。フォームには、報告書の対象期間 (年と月) を指定する "period" というフィールドがあります。また、データ接続、およびユーザーがオンラインのときに報告書を送信するロジックも既に定義されているものとします。</span><span class="sxs-lookup"><span data-stu-id="4c067-p103">This example assumes that you have created a form for submitting a sales report that contains a field named "period" that specifies the month and year covered in the report. It also assumes that you have already defined a data connection and the logic for submitting the report when the user is online.</span></span>
+<span data-ttu-id="7eb29-p103">この例では、販売報告書を送信するためのフォームが既に作成されているものとします。フォームには、報告書の対象期間 (年と月) を指定する "period" というフィールドがあります。また、データ接続、およびユーザーがオンラインのときに報告書を送信するロジックも既に定義されているものとします。</span><span class="sxs-lookup"><span data-stu-id="7eb29-p103">This example assumes that you have created a form for submitting a sales report that contains a field named "period" that specifies the month and year covered in the report. It also assumes that you have already defined a data connection and the logic for submitting the report when the user is online.</span></span>
   
-### <a name="add-a-data-connection-that-submits-the-form-as-an-attachment-to-an-email-message"></a><span data-ttu-id="4c067-112">フォームを電子メール メッセージの添付ファイルとして送信するデータ接続を追加する</span><span class="sxs-lookup"><span data-stu-id="4c067-112">Add a data connection that submits the form as an attachment to an email message</span></span>
+### <a name="add-a-data-connection-that-submits-the-form-as-an-attachment-to-an-email-message"></a><span data-ttu-id="7eb29-112">フォームを電子メール メッセージの添付ファイルとして送信するデータ接続を追加する</span><span class="sxs-lookup"><span data-stu-id="7eb29-112">Add a data connection that submits the form as an attachment to an email message</span></span>
 
-1. <span data-ttu-id="4c067-113">InfoPath マネージ コード フォーム テンプレートを作成または開きます。</span><span class="sxs-lookup"><span data-stu-id="4c067-113">Create or open an InfoPath managed-code form template.</span></span>
+1. <span data-ttu-id="7eb29-113">InfoPath マネージ コード フォーム テンプレートを作成または開きます。</span><span class="sxs-lookup"><span data-stu-id="7eb29-113">Create or open an InfoPath managed-code form template.</span></span>
     
-2. <span data-ttu-id="4c067-114">InfoPath デザイン モードで、[ **データ**] タブの [ **データ接続**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c067-114">In InfoPath design mode, on the **Data** tab, click **Data Connections**.</span></span>
+2. <span data-ttu-id="7eb29-114">InfoPath デザイン モードで、[ **データ**] タブの [ **データ接続**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7eb29-114">In InfoPath design mode, on the **Data** tab, click **Data Connections**.</span></span>
     
-3. <span data-ttu-id="4c067-115">[ **データ接続**] ダイアログ ボックスで、[ **追加**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c067-115">In the **Data Connections** dialog box, click **Add**.</span></span>
+3. <span data-ttu-id="7eb29-115">[ **データ接続**] ダイアログ ボックスで、[ **追加**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7eb29-115">In the **Data Connections** dialog box, click **Add**.</span></span>
     
-4. <span data-ttu-id="4c067-116">**[データ接続ウィザード]** で、**[データの送信]** をクリックしてから、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c067-116">In the **Data Connection Wizard**, click **Submit data**, and then click **Next**.</span></span>
+4. <span data-ttu-id="7eb29-116">**[データ接続ウィザード]** で、**[データの送信]** をクリックしてから、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7eb29-116">In the **Data Connection Wizard**, click **Submit data**, and then click **Next**.</span></span>
     
-5. <span data-ttu-id="4c067-117">ウィザードの次のページで、**[電子メール メッセージとして送信]** をクリックしてから、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c067-117">On the next page of the wizard, click **As an email message**, and then click **Next**.</span></span>
+5. <span data-ttu-id="7eb29-117">ウィザードの次のページで、**[電子メール メッセージとして送信]** をクリックしてから、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7eb29-117">On the next page of the wizard, click **As an email message**, and then click **Next**.</span></span>
     
-6. <span data-ttu-id="4c067-118">ウィザードの次のページで、**[宛先]** ボックスに自分の電子メール アドレスを入力します。</span><span class="sxs-lookup"><span data-stu-id="4c067-118">On the next page of the wizard, type your email address in the **To** box.</span></span> 
+6. <span data-ttu-id="7eb29-118">ウィザードの次のページで、**[宛先]** ボックスに自分の電子メール アドレスを入力します。</span><span class="sxs-lookup"><span data-stu-id="7eb29-118">On the next page of the wizard, type your email address in the **To** box.</span></span> 
     
-7. <span data-ttu-id="4c067-119">**[件名]** ボックスで、次のようにして販売期間にテキスト「Sales Report」を組み合わせます。</span><span class="sxs-lookup"><span data-stu-id="4c067-119">In the **Subject** box, do the following to combine the sales period with the text Sales Report:</span></span> 
+7. <span data-ttu-id="7eb29-119">**[件名]** ボックスで、次のようにして販売期間にテキスト「Sales Report」を組み合わせます。</span><span class="sxs-lookup"><span data-stu-id="7eb29-119">In the **Subject** box, do the following to combine the sales period with the text Sales Report:</span></span> 
     
-   1. <span data-ttu-id="4c067-120">[ **件名**] ボックスの横の [ **数式**] ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c067-120">Click the **Formula** button next to the **Subject** box.</span></span> 
+   1. <span data-ttu-id="7eb29-120">[ **件名**] ボックスの横の [ **数式**] ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="7eb29-120">Click the **Formula** button next to the **Subject** box.</span></span> 
       
-   2. <span data-ttu-id="4c067-121">[ **数式の挿入**] ダイアログ ボックスで、[ **関数の挿入**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c067-121">In the **Insert Formula** dialog box, click **Insert Function**.</span></span>
+   2. <span data-ttu-id="7eb29-121">[ **数式の挿入**] ダイアログ ボックスで、[ **関数の挿入**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7eb29-121">In the **Insert Formula** dialog box, click **Insert Function**.</span></span>
       
-   3. <span data-ttu-id="4c067-122">[ **関数の挿入**] ダイアログ ボックスで、[ **カテゴリ**] ボックスの一覧の [ **文字列**] をクリックします。次に、[ **関数**] ボックスの一覧の [ **concat**] をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c067-122">In the **Insert Function** dialog box, click **Text** in the **Categories** list, and then double-click **concat** in the **Functions** list.</span></span> 
+   3. <span data-ttu-id="7eb29-122">[ **関数の挿入**] ダイアログ ボックスで、[ **カテゴリ**] ボックスの一覧の [ **文字列**] をクリックします。次に、[ **関数**] ボックスの一覧の [ **concat**] をダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="7eb29-122">In the **Insert Function** dialog box, click **Text** in the **Categories** list, and then double-click **concat** in the **Functions** list.</span></span> 
       
-   4. <span data-ttu-id="4c067-123">[ **ダブルクリックしてフィールドを挿入してください**] の最初のインスタンスを、"Sales Report: " という文字列 (単一引用符を含む) に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="4c067-123">Replace the first instance of **double click to insert field** with the following (include the single quotes): 'Sales Report: '</span></span> 
+   4. <span data-ttu-id="7eb29-123">[ **ダブルクリックしてフィールドを挿入してください**] の最初のインスタンスを、"Sales Report: " という文字列 (単一引用符を含む) に置き換えます。</span><span class="sxs-lookup"><span data-stu-id="7eb29-123">Replace the first instance of **double click to insert field** with the following (include the single quotes): 'Sales Report: '</span></span> 
       
-   5. <span data-ttu-id="4c067-124">[ **ダブルクリックしてフィールドを挿入してください**] の 2 番目のインスタンスをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c067-124">Double-click the second instance of **double click to insert field**.</span></span>
+   5. <span data-ttu-id="7eb29-124">[ **ダブルクリックしてフィールドを挿入してください**] の 2 番目のインスタンスをダブルクリックします。</span><span class="sxs-lookup"><span data-stu-id="7eb29-124">Double-click the second instance of **double click to insert field**.</span></span>
       
-   6. <span data-ttu-id="4c067-125">[ **フィールドまたはグループの選択**] ダイアログ ボックスで、period フィールドを選択します。</span><span class="sxs-lookup"><span data-stu-id="4c067-125">In the **Select a Field or Group** dialog box, select the period field.</span></span> 
+   6. <span data-ttu-id="7eb29-125">[ **フィールドまたはグループの選択**] ダイアログ ボックスで、period フィールドを選択します。</span><span class="sxs-lookup"><span data-stu-id="7eb29-125">In the **Select a Field or Group** dialog box, select the period field.</span></span> 
       
-   7. <span data-ttu-id="4c067-126">[ **ダブルクリックしてフィールドを挿入してください**] の最後のインスタンスを削除し、[ **OK**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c067-126">Delete the final instance of **double click to insert field**, and then click **OK**.</span></span>
+   7. <span data-ttu-id="7eb29-126">[ **ダブルクリックしてフィールドを挿入してください**] の最後のインスタンスを削除し、[ **OK**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7eb29-126">Delete the final instance of **double click to insert field**, and then click **OK**.</span></span>
     
-8. <span data-ttu-id="4c067-127">ウィザードで **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c067-127">In the wizard, click **Next**.</span></span>
+8. <span data-ttu-id="7eb29-127">ウィザードで **[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7eb29-127">In the wizard, click **Next**.</span></span>
     
-9. <span data-ttu-id="4c067-128">ウィザードの次のページで、**[このデータ接続の名前を入力してください]** ボックスに「E-mail Submit」と入力し、**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c067-128">On the next page of the wizard, type 'Email Submit' in the **Enter a name for this data connection** box, and then click **Finish**.</span></span>
+9. <span data-ttu-id="7eb29-128">ウィザードの次のページで、**[このデータ接続の名前を入力してください]** ボックスに「E-mail Submit」と入力し、**[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7eb29-128">On the next page of the wizard, type 'Email Submit' in the **Enter a name for this data connection** box, and then click **Finish**.</span></span>
     
-### <a name="add-logic-for-submitting-the-form-depending-on-the-connected-state-of-a-users-computer"></a><span data-ttu-id="4c067-129">ユーザーのコンピューターの接続状態に応じてフォームを送信するためのロジックを追加する</span><span class="sxs-lookup"><span data-stu-id="4c067-129">Add logic for submitting the form depending on the connected state of a user's computer</span></span>
+### <a name="add-logic-for-submitting-the-form-depending-on-the-connected-state-of-a-users-computer"></a><span data-ttu-id="7eb29-129">ユーザーのコンピューターの接続状態に応じてフォームを送信するためのロジックを追加する</span><span class="sxs-lookup"><span data-stu-id="7eb29-129">Add logic for submitting the form depending on the connected state of a user's computer</span></span>
 
-1. <span data-ttu-id="4c067-130">InfoPath デザイン モードで、[ **データ**] タブの [ **送信オプション**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c067-130">In InfoPath design mode, on the **Data** tab, click **Submit Options**.</span></span>
+1. <span data-ttu-id="7eb29-130">InfoPath デザイン モードで、[ **データ**] タブの [ **送信オプション**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7eb29-130">In InfoPath design mode, on the **Data** tab, click **Submit Options**.</span></span>
     
-2. <span data-ttu-id="4c067-131">[ **送信オプション**] ダイアログ ボックスで [ **ユーザーによるこのフォームの送信を許可する**] をクリックし、[ **コードを使用してユーザー設定操作を実行する**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4c067-131">In the **Submit Options** dialog box, click **Allow users to submit this form**, and then select **Perform custom action using Code**.</span></span>
+2. <span data-ttu-id="7eb29-131">[ **送信オプション**] ダイアログ ボックスで [ **ユーザーによるこのフォームの送信を許可する**] をクリックし、[ **コードを使用してユーザー設定操作を実行する**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="7eb29-131">In the **Submit Options** dialog box, click **Allow users to submit this form**, and then select **Perform custom action using Code**.</span></span>
     
-3. <span data-ttu-id="4c067-132">[ **コードの編集**] ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c067-132">Click the **Edit Code** button.</span></span> 
+3. <span data-ttu-id="7eb29-132">[ **コードの編集**] ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="7eb29-132">Click the **Edit Code** button.</span></span> 
     
-4. <span data-ttu-id="4c067-133">[OnSubmitRequest](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSubmitRequest.aspx) イベント ハンドラーの下に、次の 2 つの関数を追加します。</span><span class="sxs-lookup"><span data-stu-id="4c067-133">Add the following two functions below the [OnSubmitRequest](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSubmitRequest.aspx) event handler:</span></span> 
+4. <span data-ttu-id="7eb29-133">[OnSubmitRequest](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSubmitRequest.aspx) イベント ハンドラーの下に、次の 2 つの関数を追加します。</span><span class="sxs-lookup"><span data-stu-id="7eb29-133">Add the following two functions below the [OnSubmitRequest](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSubmitRequest.aspx) event handler:</span></span> 
     
    ```cs
     public void OnlineSubmit(DocReturnEvent e)
@@ -95,7 +95,7 @@ ms.locfileid: "33429244"
     }
    ```
 
-5. <span data-ttu-id="4c067-134">**OnSubmitRequest** イベント ハンドラー関数に、次の **if** ステートメントを追加します。</span><span class="sxs-lookup"><span data-stu-id="4c067-134">Add the following **if** statement to the **OnSubmitRequest** event handler function.</span></span> 
+5. <span data-ttu-id="7eb29-134">**OnSubmitRequest** イベント ハンドラー関数に、次の **if** ステートメントを追加します。</span><span class="sxs-lookup"><span data-stu-id="7eb29-134">Add the following **if** statement to the **OnSubmitRequest** event handler function.</span></span> 
     
    ```cs
     // Check the computer's connection state.
@@ -109,18 +109,18 @@ ms.locfileid: "33429244"
     }
    ```
 
-### <a name="test-the-code"></a><span data-ttu-id="4c067-135">コードをテストする</span><span class="sxs-lookup"><span data-stu-id="4c067-135">Test the code</span></span>
+### <a name="test-the-code"></a><span data-ttu-id="7eb29-135">コードをテストする</span><span class="sxs-lookup"><span data-stu-id="7eb29-135">Test the code</span></span>
 
-1. <span data-ttu-id="4c067-136">InfoPath デザイン モードで、[ **ホーム**] タブの [ **プレビュー**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c067-136">In the InfoPath designer, click **Preview** on the **Home** tab.</span></span> 
+1. <span data-ttu-id="7eb29-136">InfoPath デザイン モードで、[ **ホーム**] タブの [ **プレビュー**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7eb29-136">In the InfoPath designer, click **Preview** on the **Home** tab.</span></span> 
     
-2. <span data-ttu-id="4c067-137">フォームにデータを入力します。</span><span class="sxs-lookup"><span data-stu-id="4c067-137">Fill out the form.</span></span>
+2. <span data-ttu-id="7eb29-137">フォームにデータを入力します。</span><span class="sxs-lookup"><span data-stu-id="7eb29-137">Fill out the form.</span></span>
     
-3. <span data-ttu-id="4c067-138">Microsoft Internet Explorer を起動します。</span><span class="sxs-lookup"><span data-stu-id="4c067-138">Start Microsoft Internet Explorer.</span></span>
+3. <span data-ttu-id="7eb29-138">Microsoft Internet Explorer を起動します。</span><span class="sxs-lookup"><span data-stu-id="7eb29-138">Start Microsoft Internet Explorer.</span></span>
     
-4. <span data-ttu-id="4c067-139">Internet Explorer で、[ **ファイル**] メニューの [ **オフライン作業**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c067-139">In Internet Explorer, click **Work offline** on the **File** menu.</span></span> 
+4. <span data-ttu-id="7eb29-139">Internet Explorer で、[ **ファイル**] メニューの [ **オフライン作業**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7eb29-139">In Internet Explorer, click **Work offline** on the **File** menu.</span></span> 
     
-5. <span data-ttu-id="4c067-140">InfoPath で、**[送信]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4c067-140">In InfoPath, click **Submit**.</span></span> <span data-ttu-id="4c067-141">フォームが電子メール メッセージとして送信されることを示すメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4c067-141">You should see a message that the form will be submitted as an email message.</span></span>
+5. <span data-ttu-id="7eb29-140">InfoPath で、**[送信]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7eb29-140">In InfoPath, click **Submit**.</span></span> <span data-ttu-id="7eb29-141">フォームが電子メール メッセージとして送信されることを示すメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="7eb29-141">You should see a message that the form will be submitted as an email message.</span></span>
     
-6. <span data-ttu-id="4c067-p105">**[送信]** をクリックします。フォームがオフラインで送信されたことを示すメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4c067-p105">Click **Send**. You should see a message stating that the form has been submitted offline.</span></span>
+6. <span data-ttu-id="7eb29-p105">**[送信]** をクリックします。フォームがオフラインで送信されたことを示すメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="7eb29-p105">Click **Send**. You should see a message stating that the form has been submitted offline.</span></span>
     
 

@@ -19,17 +19,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33430386"
 ---
-# <a name="sapptimearray"></a><span data-ttu-id="9ae11-103">SAppTimeArray</span><span class="sxs-lookup"><span data-stu-id="9ae11-103">SAppTimeArray</span></span>
+# <a name="sapptimearray"></a><span data-ttu-id="fbc6a-103">SAppTimeArray</span><span class="sxs-lookup"><span data-stu-id="fbc6a-103">SAppTimeArray</span></span>
 
   
   
-<span data-ttu-id="9ae11-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="9ae11-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="fbc6a-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="fbc6a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="9ae11-105">時刻の値の配列を格納します。</span><span class="sxs-lookup"><span data-stu-id="9ae11-105">Contains an array of time values.</span></span>
+<span data-ttu-id="fbc6a-105">時間値の配列を含む。</span><span class="sxs-lookup"><span data-stu-id="fbc6a-105">Contains an array of time values.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="9ae11-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="9ae11-106">Header file:</span></span>  <br/> |<span data-ttu-id="9ae11-107">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="9ae11-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="fbc6a-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="fbc6a-106">Header file:</span></span>  <br/> |<span data-ttu-id="fbc6a-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="fbc6a-107">Mapidefs.h</span></span>  <br/> |
    
 ```cpp
 typedef struct _SAppTimeArray
@@ -40,23 +40,23 @@ typedef struct _SAppTimeArray
 
 ```
 
-## <a name="members"></a><span data-ttu-id="9ae11-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="9ae11-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="fbc6a-108">Members</span><span class="sxs-lookup"><span data-stu-id="fbc6a-108">Members</span></span>
 
- <span data-ttu-id="9ae11-109">**cvalues**</span><span class="sxs-lookup"><span data-stu-id="9ae11-109">**cValues**</span></span>
+ <span data-ttu-id="fbc6a-109">**cValues**</span><span class="sxs-lookup"><span data-stu-id="fbc6a-109">**cValues**</span></span>
   
-> <span data-ttu-id="9ae11-110">**lpat**メンバーが指す配列内の値の数。</span><span class="sxs-lookup"><span data-stu-id="9ae11-110">Count of values in the array pointed to by the **lpat** member.</span></span> 
+> <span data-ttu-id="fbc6a-110">lpat メンバーが指す配列内の **値の** 数。</span><span class="sxs-lookup"><span data-stu-id="fbc6a-110">Count of values in the array pointed to by the **lpat** member.</span></span> 
     
- <span data-ttu-id="9ae11-111">**lpat**</span><span class="sxs-lookup"><span data-stu-id="9ae11-111">**lpat**</span></span>
+ <span data-ttu-id="fbc6a-111">**lpat**</span><span class="sxs-lookup"><span data-stu-id="fbc6a-111">**lpat**</span></span>
   
-> <span data-ttu-id="9ae11-112">アプリケーション時間の値の配列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="9ae11-112">Pointer to an array of application time values.</span></span> 
+> <span data-ttu-id="fbc6a-112">アプリケーションの時刻値の配列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="fbc6a-112">Pointer to an array of application time values.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="9ae11-113">注釈</span><span class="sxs-lookup"><span data-stu-id="9ae11-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="fbc6a-113">注釈</span><span class="sxs-lookup"><span data-stu-id="fbc6a-113">Remarks</span></span>
 
-<span data-ttu-id="9ae11-114">**SAppTimeArray**構造体は、PT_MV_APPTIME 型のプロパティを定義するために使用されます。</span><span class="sxs-lookup"><span data-stu-id="9ae11-114">The **SAppTimeArray** structure is used to define properties of type PT_MV_APPTIME.</span></span> <span data-ttu-id="9ae11-115">PT_MV_APPTIME の詳細については、「[プロパティの種類の一覧](property-types.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9ae11-115">For more information about PT_MV_APPTIME, see [List of Property Types](property-types.md).</span></span>
+<span data-ttu-id="fbc6a-114">**SAppTimeArray 構造体は**、データ型のプロパティを定義するために使用PT_MV_APPTIME。</span><span class="sxs-lookup"><span data-stu-id="fbc6a-114">The **SAppTimeArray** structure is used to define properties of type PT_MV_APPTIME.</span></span> <span data-ttu-id="fbc6a-115">プロパティの詳細については、「PT_MV_APPTIMEプロパティ [の種類の一覧」を参照してください](property-types.md)。</span><span class="sxs-lookup"><span data-stu-id="fbc6a-115">For more information about PT_MV_APPTIME, see [List of Property Types](property-types.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="9ae11-116">関連項目</span><span class="sxs-lookup"><span data-stu-id="9ae11-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fbc6a-116">関連項目</span><span class="sxs-lookup"><span data-stu-id="fbc6a-116">See also</span></span>
 
 
 
-[<span data-ttu-id="9ae11-117">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="9ae11-117">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="fbc6a-117">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="fbc6a-117">MAPI Structures</span></span>](mapi-structures.md)
 

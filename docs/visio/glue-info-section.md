@@ -16,8 +16,8 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33428446"
 ---
-# <a name="glue-info-section"></a><span data-ttu-id="c4eaa-103">[Glue Info] セクション</span><span class="sxs-lookup"><span data-stu-id="c4eaa-103">Glue Info Section</span></span>
+# <a name="glue-info-section"></a><span data-ttu-id="c1cee-103">[Glue Info] セクション</span><span class="sxs-lookup"><span data-stu-id="c1cee-103">Glue Info Section</span></span>
 
-<span data-ttu-id="c4eaa-104">1-D 図形が別の図形に接着されたときに 1-D 図形に対して生成された数式を格納します。</span><span class="sxs-lookup"><span data-stu-id="c4eaa-104">Contains formulas generated for a 1-D shape when the 1-D shape is glued to other shapes.</span></span>
+<span data-ttu-id="c1cee-104">1-D 図形が別の図形に接着されたときに 1-D 図形に対して生成された数式を格納します。</span><span class="sxs-lookup"><span data-stu-id="c1cee-104">Contains formulas generated for a 1-D shape when the 1-D shape is glued to other shapes.</span></span>
   
 

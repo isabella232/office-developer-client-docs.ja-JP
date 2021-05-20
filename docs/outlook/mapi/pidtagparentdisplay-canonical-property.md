@@ -19,48 +19,48 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33429503"
 ---
-# <a name="pidtagparentdisplay-canonical-property"></a><span data-ttu-id="1b54d-103">PidTagParentDisplay 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="1b54d-103">PidTagParentDisplay Canonical Property</span></span>
+# <a name="pidtagparentdisplay-canonical-property"></a><span data-ttu-id="9a74e-103">PidTagParentDisplay 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="9a74e-103">PidTagParentDisplay Canonical Property</span></span>
 
   
   
-<span data-ttu-id="1b54d-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="1b54d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="9a74e-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="9a74e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="1b54d-105">検索中にメッセージが見つかったフォルダーの表示名が含まれます。</span><span class="sxs-lookup"><span data-stu-id="1b54d-105">Contains the display name of the folder where a message was found during a search.</span></span>
+<span data-ttu-id="9a74e-105">検索中にメッセージが見つかったフォルダーの表示名を格納します。</span><span class="sxs-lookup"><span data-stu-id="9a74e-105">Contains the display name of the folder where a message was found during a search.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="1b54d-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="1b54d-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="1b54d-107">PR_PARENT_DISPLAY、PR_PARENT_DISPLAY_A、PR_PARENT_DISPLAY_W</span><span class="sxs-lookup"><span data-stu-id="1b54d-107">PR_PARENT_DISPLAY, PR_PARENT_DISPLAY_A, PR_PARENT_DISPLAY_W</span></span>  <br/> |
-|<span data-ttu-id="1b54d-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="1b54d-108">Identifier:</span></span>  <br/> |<span data-ttu-id="1b54d-109">0x0e05</span><span class="sxs-lookup"><span data-stu-id="1b54d-109">0x0E05</span></span>  <br/> |
-|<span data-ttu-id="1b54d-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="1b54d-110">Data type:</span></span>  <br/> |<span data-ttu-id="1b54d-111">PT_STRING8、PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="1b54d-111">PT_STRING8, PT_UNICODE</span></span>  <br/> |
-|<span data-ttu-id="1b54d-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="1b54d-112">Area:</span></span>  <br/> |<span data-ttu-id="1b54d-113">MAPI ノンノンアウトテーブル</span><span class="sxs-lookup"><span data-stu-id="1b54d-113">MAPI non-transmittable</span></span>  <br/> |
+|<span data-ttu-id="9a74e-106">関連するプロパティ:</span><span class="sxs-lookup"><span data-stu-id="9a74e-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="9a74e-107">PR_PARENT_DISPLAY、PR_PARENT_DISPLAY_A、PR_PARENT_DISPLAY_W</span><span class="sxs-lookup"><span data-stu-id="9a74e-107">PR_PARENT_DISPLAY, PR_PARENT_DISPLAY_A, PR_PARENT_DISPLAY_W</span></span>  <br/> |
+|<span data-ttu-id="9a74e-108">識別子:</span><span class="sxs-lookup"><span data-stu-id="9a74e-108">Identifier:</span></span>  <br/> |<span data-ttu-id="9a74e-109">0x0E05</span><span class="sxs-lookup"><span data-stu-id="9a74e-109">0x0E05</span></span>  <br/> |
+|<span data-ttu-id="9a74e-110">データの種類 : </span><span class="sxs-lookup"><span data-stu-id="9a74e-110">Data type:</span></span>  <br/> |<span data-ttu-id="9a74e-111">PT_STRING8、PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="9a74e-111">PT_STRING8, PT_UNICODE</span></span>  <br/> |
+|<span data-ttu-id="9a74e-112">エリア:</span><span class="sxs-lookup"><span data-stu-id="9a74e-112">Area:</span></span>  <br/> |<span data-ttu-id="9a74e-113">MAPI 送信不可</span><span class="sxs-lookup"><span data-stu-id="9a74e-113">MAPI non-transmittable</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="1b54d-114">注釈</span><span class="sxs-lookup"><span data-stu-id="1b54d-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9a74e-114">注釈</span><span class="sxs-lookup"><span data-stu-id="9a74e-114">Remarks</span></span>
 
-<span data-ttu-id="1b54d-115">これらのプロパティは、オブジェクトには含まれていません。</span><span class="sxs-lookup"><span data-stu-id="1b54d-115">These properties is not on any object.</span></span> <span data-ttu-id="1b54d-116">検索結果フォルダーの contents テーブルにのみ表示できます。</span><span class="sxs-lookup"><span data-stu-id="1b54d-116">They can only appear in the contents table of a search-results folder.</span></span>
+<span data-ttu-id="9a74e-115">これらのプロパティは、どのオブジェクトにも含めではありません。</span><span class="sxs-lookup"><span data-stu-id="9a74e-115">These properties is not on any object.</span></span> <span data-ttu-id="9a74e-116">検索結果フォルダーのコンテンツ テーブルにのみ表示できます。</span><span class="sxs-lookup"><span data-stu-id="9a74e-116">They can only appear in the contents table of a search-results folder.</span></span>
   
-<span data-ttu-id="1b54d-117">これらのプロパティと**PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md)) プロパティは相互に関連していません。</span><span class="sxs-lookup"><span data-stu-id="1b54d-117">These properties and **PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md)) properties are not related to each other.</span></span> <span data-ttu-id="1b54d-118">これらは完全に異なるコンテキストに属します。</span><span class="sxs-lookup"><span data-stu-id="1b54d-118">They belong to entirely different contexts.</span></span>
+<span data-ttu-id="9a74e-117">これらのプロパティと **PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md)) プロパティは、互いに関連付けではありません。</span><span class="sxs-lookup"><span data-stu-id="9a74e-117">These properties and **PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md)) properties are not related to each other.</span></span> <span data-ttu-id="9a74e-118">これらは、完全に異なるコンテキストに属します。</span><span class="sxs-lookup"><span data-stu-id="9a74e-118">They belong to entirely different contexts.</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="1b54d-119">関連リソース</span><span class="sxs-lookup"><span data-stu-id="1b54d-119">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="9a74e-119">関連リソース</span><span class="sxs-lookup"><span data-stu-id="9a74e-119">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="1b54d-120">ヘッダーファイル</span><span class="sxs-lookup"><span data-stu-id="1b54d-120">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="9a74e-120">ヘッダー ファイル</span><span class="sxs-lookup"><span data-stu-id="9a74e-120">Header files</span></span>
 
-<span data-ttu-id="1b54d-121">mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="1b54d-121">Mapidefs.h</span></span>
+<span data-ttu-id="9a74e-121">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="9a74e-121">Mapidefs.h</span></span>
   
-> <span data-ttu-id="1b54d-122">データ型定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="1b54d-122">Provides data type definitions.</span></span>
+> <span data-ttu-id="9a74e-122">データ型の定義を提供します。</span><span class="sxs-lookup"><span data-stu-id="9a74e-122">Provides data type definitions.</span></span>
     
-<span data-ttu-id="1b54d-123">Mapitags</span><span class="sxs-lookup"><span data-stu-id="1b54d-123">Mapitags.h</span></span>
+<span data-ttu-id="9a74e-123">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="9a74e-123">Mapitags.h</span></span>
   
-> <span data-ttu-id="1b54d-124">代替名としてリストされているプロパティの定義が含まれています。</span><span class="sxs-lookup"><span data-stu-id="1b54d-124">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="9a74e-124">代替名として一覧表示されるプロパティの定義が含まれる。</span><span class="sxs-lookup"><span data-stu-id="9a74e-124">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="1b54d-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="1b54d-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9a74e-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="9a74e-125">See also</span></span>
 
 
 
-[<span data-ttu-id="1b54d-126">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="1b54d-126">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="9a74e-126">MAPI のプロパティ</span><span class="sxs-lookup"><span data-stu-id="9a74e-126">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="1b54d-127">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="1b54d-127">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="9a74e-127">MAPI 標準プロパティ</span><span class="sxs-lookup"><span data-stu-id="9a74e-127">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="1b54d-128">標準プロパティ名から MAPI 名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="1b54d-128">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="9a74e-128">標準プロパティ名を MAPI 名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="9a74e-128">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="1b54d-129">MAPI 名から標準プロパティ名へのマッピング</span><span class="sxs-lookup"><span data-stu-id="1b54d-129">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="9a74e-129">MAPI 名を標準プロパティ名にマッピングする</span><span class="sxs-lookup"><span data-stu-id="9a74e-129">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

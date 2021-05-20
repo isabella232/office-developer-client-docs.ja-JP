@@ -19,28 +19,28 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33435958"
 ---
-# <a name="tempmissingtempmissing12"></a><span data-ttu-id="e8207-104">TempMissing/TempMissing12</span><span class="sxs-lookup"><span data-stu-id="e8207-104">TempMissing/TempMissing12</span></span>
+# <a name="tempmissingtempmissing12"></a><span data-ttu-id="085ac-104">TempMissing/TempMissing12</span><span class="sxs-lookup"><span data-stu-id="085ac-104">TempMissing/TempMissing12</span></span>
 
- <span data-ttu-id="e8207-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="e8207-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
+ <span data-ttu-id="085ac-105">**適用対象**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="085ac-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
   
-<span data-ttu-id="e8207-106">**xltypeMissing** 型の一時 **XLOPER**/ **XLOPER12** を作成するフレームワーク ライブラリ関数。</span><span class="sxs-lookup"><span data-stu-id="e8207-106">Framework library function that creates a temporary **XLOPER**/ **XLOPER12** of type **xltypeMissing**.</span></span>
+<span data-ttu-id="085ac-106">**xltypeMissing** 型の一時 **XLOPER**/ **XLOPER12** を作成するフレームワーク ライブラリ関数。</span><span class="sxs-lookup"><span data-stu-id="085ac-106">Framework library function that creates a temporary **XLOPER**/ **XLOPER12** of type **xltypeMissing**.</span></span>
   
 ```cs
 LPXLOPER TempMissing(void);
 LPXLOPER12 TempMissing12(void);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="e8207-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="e8207-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="085ac-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="085ac-107">Parameters</span></span>
 
-<span data-ttu-id="e8207-108">この関数にパラメーターはありません。</span><span class="sxs-lookup"><span data-stu-id="e8207-108">This function takes no parameters.</span></span>
+<span data-ttu-id="085ac-108">この関数にパラメーターはありません。</span><span class="sxs-lookup"><span data-stu-id="085ac-108">This function takes no parameters.</span></span>
   
-## <a name="return-value"></a><span data-ttu-id="e8207-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="e8207-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="085ac-109">戻り値</span><span class="sxs-lookup"><span data-stu-id="085ac-109">Return value</span></span>
 
-<span data-ttu-id="e8207-110">**xltypeMissing** **XLOPER**/ **XLOPER12** へのポインターを返します。</span><span class="sxs-lookup"><span data-stu-id="e8207-110">Returns a pointer to an **xltypeMissing** **XLOPER**/ **XLOPER12**.</span></span>
+<span data-ttu-id="085ac-110">**xltypeMissing** **XLOPER**/ **XLOPER12** へのポインターを返します。</span><span class="sxs-lookup"><span data-stu-id="085ac-110">Returns a pointer to an **xltypeMissing** **XLOPER**/ **XLOPER12**.</span></span>
   
-## <a name="example"></a><span data-ttu-id="e8207-111">例</span><span class="sxs-lookup"><span data-stu-id="e8207-111">Example</span></span>
+## <a name="example"></a><span data-ttu-id="085ac-111">例</span><span class="sxs-lookup"><span data-stu-id="085ac-111">Example</span></span>
 
-<span data-ttu-id="e8207-p101">この例では、**TempMissing12** を使用して **xlcWorkspace** の 3 つの欠落した引数を指定し、その後に**ブール値** **FALSE** を続けて、ワークシートのスクロール バーの表示を抑制します。最初の 3 つの引数は、他のワークスペースの設定に対応しますが、それらの設定は影響を受けません。</span><span class="sxs-lookup"><span data-stu-id="e8207-p101">This example uses **TempMissing12** to provide three missing arguments to **xlcWorkspace** followed by a **Boolean** **FALSE** to suppress the display of worksheet scroll bars. The first three arguments correspond to other workspace settings which are unaffected.</span></span> 
+<span data-ttu-id="085ac-p101">この例では、**TempMissing12** を使用して **xlcWorkspace** の 3 つの欠落した引数を指定し、その後に **ブール値** **FALSE** を続けて、ワークシートのスクロール バーの表示を抑制します。最初の 3 つの引数は、他のワークスペースの設定に対応しますが、それらの設定は影響を受けません。</span><span class="sxs-lookup"><span data-stu-id="085ac-p101">This example uses **TempMissing12** to provide three missing arguments to **xlcWorkspace** followed by a **Boolean** **FALSE** to suppress the display of worksheet scroll bars. The first three arguments correspond to other workspace settings which are unaffected.</span></span> 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   
@@ -56,9 +56,9 @@ short WINAPI TempMissingExample(void)
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="e8207-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="e8207-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="085ac-114">関連項目</span><span class="sxs-lookup"><span data-stu-id="085ac-114">See also</span></span>
 
 
 
-[<span data-ttu-id="e8207-115">フレームワーク ライブラリの関数</span><span class="sxs-lookup"><span data-stu-id="e8207-115">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
+[<span data-ttu-id="085ac-115">フレームワーク ライブラリの関数</span><span class="sxs-lookup"><span data-stu-id="085ac-115">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
 

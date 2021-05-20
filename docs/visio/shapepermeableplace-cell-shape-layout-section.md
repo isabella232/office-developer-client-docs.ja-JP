@@ -16,33 +16,33 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33427221"
 ---
-# <a name="shapepermeableplace-cell-shape-layout-section"></a><span data-ttu-id="20188-103">[ShapePermeablePlace] セル ([Shape Layout] セクション)</span><span class="sxs-lookup"><span data-stu-id="20188-103">ShapePermeablePlace Cell (Shape Layout Section)</span></span>
+# <a name="shapepermeableplace-cell-shape-layout-section"></a><span data-ttu-id="77124-103">[ShapePermeablePlace] セル ([Shape Layout] セクション)</span><span class="sxs-lookup"><span data-stu-id="77124-103">ShapePermeablePlace Cell (Shape Layout Section)</span></span>
 
-<span data-ttu-id="20188-104">[**レイアウトの構成**] ダイアログ ボックスで図形をレイアウトするときに、配置可能な図形を図形の上部に配置するかどうかを指定します (このダイアログ ボックスを開くには、[**デザイン**] タブの [**レイアウト**] グループで、[**ページの再レイアウト**] をクリックして、[**その他のレイアウト オプション**] をクリックします)。</span><span class="sxs-lookup"><span data-stu-id="20188-104">Determines whether placeable shapes can be placed on top of a shape when laying out shapes in the **Configure Layout** dialog box (on the **Design** tab, in the **Layout** group, click **Re-Layout Page**, and then click **More Layout Options**).</span></span>
+<span data-ttu-id="77124-104">[**レイアウトの構成**] ダイアログ ボックスで図形をレイアウトするときに、配置可能な図形を図形の上部に配置するかどうかを指定します (このダイアログ ボックスを開くには、[**デザイン**] タブの [**レイアウト**] グループで、[**ページの再レイアウト**] をクリックして、[**その他のレイアウト オプション**] をクリックします)。</span><span class="sxs-lookup"><span data-stu-id="77124-104">Determines whether placeable shapes can be placed on top of a shape when laying out shapes in the **Configure Layout** dialog box (on the **Design** tab, in the **Layout** group, click **Re-Layout Page**, and then click **More Layout Options**).</span></span>
   
-|<span data-ttu-id="20188-105">**値**</span><span class="sxs-lookup"><span data-stu-id="20188-105">**Value**</span></span>|<span data-ttu-id="20188-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="20188-106">**Description**</span></span>|
+|<span data-ttu-id="77124-105">**値**</span><span class="sxs-lookup"><span data-stu-id="77124-105">**Value**</span></span>|<span data-ttu-id="77124-106">**説明**</span><span class="sxs-lookup"><span data-stu-id="77124-106">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="20188-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="20188-107">TRUE</span></span>  <br/> |<span data-ttu-id="20188-108">他図形をこの図形の上に配置できます。</span><span class="sxs-lookup"><span data-stu-id="20188-108">Enable shapes to be placed on top of a shape.</span></span>  <br/> |
-|<span data-ttu-id="20188-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="20188-109">FALSE</span></span>  <br/> |<span data-ttu-id="20188-110">他図形をこの図形の上に配置できません。</span><span class="sxs-lookup"><span data-stu-id="20188-110">Do not enable shapes to be placed on top of a shape.</span></span>  <br/> |
+|<span data-ttu-id="77124-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="77124-107">TRUE</span></span>  <br/> |<span data-ttu-id="77124-108">他図形をこの図形の上に配置できます。</span><span class="sxs-lookup"><span data-stu-id="77124-108">Enable shapes to be placed on top of a shape.</span></span>  <br/> |
+|<span data-ttu-id="77124-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="77124-109">FALSE</span></span>  <br/> |<span data-ttu-id="77124-110">他図形をこの図形の上に配置できません。</span><span class="sxs-lookup"><span data-stu-id="77124-110">Do not enable shapes to be placed on top of a shape.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="20188-111">注釈</span><span class="sxs-lookup"><span data-stu-id="20188-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="77124-111">注釈</span><span class="sxs-lookup"><span data-stu-id="77124-111">Remarks</span></span>
 
-<span data-ttu-id="20188-112">このセルの値は、[**基本動作**] ダイアログボックスの [**配置**] タブで設定することもできます (図形が選択されている場合)、[[開発](run-in-developer-mode-display-the-developer-tab.md)] タブの [**図形のデザイン**] グループで、[**基本動作**] をクリックし、[**配置**] タブをクリックします。).</span><span class="sxs-lookup"><span data-stu-id="20188-112">You can also set the value of this cell on the **Placement** tab in the **Behavior** dialog box (with a shape selected, on the [Developer](run-in-developer-mode-display-the-developer-tab.md) tab, in the **Shape Design** group, click **Behavior**, and then click the **Placement** tab).</span></span> 
+<span data-ttu-id="77124-112">[動作] ダイアログ ボックスの [配置] タブで、このセルの値を設定することもできます (図形が選択されている場合は、[開発] タブの[図形のデザイン] グループで、[動作] をクリックし、[配置] タブ **をクリック** します)。  [](run-in-developer-mode-display-the-developer-tab.md)</span><span class="sxs-lookup"><span data-stu-id="77124-112">You can also set the value of this cell on the **Placement** tab in the **Behavior** dialog box (with a shape selected, on the [Developer](run-in-developer-mode-display-the-developer-tab.md) tab, in the **Shape Design** group, click **Behavior**, and then click the **Placement** tab).</span></span> 
   
-<span data-ttu-id="20188-113">Visio 2000 より前のバージョンでは、[Miscellaneous] セクションで [ObjInteract] セルを使用してこの動作を設定していました。</span><span class="sxs-lookup"><span data-stu-id="20188-113">In versions earlier than Visio 2000, you set this behavior using the ObjInteract cell in the Miscellaneous section.</span></span>
+<span data-ttu-id="77124-113">Visio 2000 より前のバージョンでは、[Miscellaneous] セクションで [ObjInteract] セルを使用してこの動作を設定していました。</span><span class="sxs-lookup"><span data-stu-id="77124-113">In versions earlier than Visio 2000, you set this behavior using the ObjInteract cell in the Miscellaneous section.</span></span>
   
-<span data-ttu-id="20188-114">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ShapePermeablePlace] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="20188-114">To get a reference to the ShapePermeablePlace cell by name from another formula, or from a program by using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="77124-114">別の数式または **CellsU** プロパティを使用したプログラムから、名前によって [ShapePermeablePlace] セルへの参照を取得するには、次の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="77124-114">To get a reference to the ShapePermeablePlace cell by name from another formula, or from a program by using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="20188-115">セル名 :</span><span class="sxs-lookup"><span data-stu-id="20188-115">Cell name:</span></span>  <br/> |<span data-ttu-id="20188-116">[shapepermeableplace]</span><span class="sxs-lookup"><span data-stu-id="20188-116">ShapePermeablePlace</span></span>  <br/> |
+|<span data-ttu-id="77124-115">セル名 :</span><span class="sxs-lookup"><span data-stu-id="77124-115">Cell name:</span></span>  <br/> |<span data-ttu-id="77124-116">ShapePermeablePlace</span><span class="sxs-lookup"><span data-stu-id="77124-116">ShapePermeablePlace</span></span>  <br/> |
    
-<span data-ttu-id="20188-117">プログラムから、インデックスによって [ShapePermeablePlace] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="20188-117">To get a reference to the ShapePermeablePlace cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="77124-117">プログラムから、インデックスによって [ShapePermeablePlace] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。</span><span class="sxs-lookup"><span data-stu-id="77124-117">To get a reference to the ShapePermeablePlace cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="20188-118">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="20188-118">Section index:</span></span>  <br/> |<span data-ttu-id="20188-119">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="20188-119">**visSectionObject**</span></span> <br/> |
-|<span data-ttu-id="20188-120">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="20188-120">Row index:</span></span>  <br/> |<span data-ttu-id="20188-121">**visRowShapeLayout**</span><span class="sxs-lookup"><span data-stu-id="20188-121">**visRowShapeLayout**</span></span> <br/> |
-|<span data-ttu-id="20188-122">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="20188-122">Cell index:</span></span>  <br/> |<span data-ttu-id="20188-123">**visSLOPermeablePlace**</span><span class="sxs-lookup"><span data-stu-id="20188-123">**visSLOPermeablePlace**</span></span> <br/> |
+|<span data-ttu-id="77124-118">セクション インデックス:</span><span class="sxs-lookup"><span data-stu-id="77124-118">Section index:</span></span>  <br/> |<span data-ttu-id="77124-119">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="77124-119">**visSectionObject**</span></span> <br/> |
+|<span data-ttu-id="77124-120">行インデックス:</span><span class="sxs-lookup"><span data-stu-id="77124-120">Row index:</span></span>  <br/> |<span data-ttu-id="77124-121">**visRowShapeLayout**</span><span class="sxs-lookup"><span data-stu-id="77124-121">**visRowShapeLayout**</span></span> <br/> |
+|<span data-ttu-id="77124-122">セル インデックス:</span><span class="sxs-lookup"><span data-stu-id="77124-122">Cell index:</span></span>  <br/> |<span data-ttu-id="77124-123">**visSLOPermeablePlace**</span><span class="sxs-lookup"><span data-stu-id="77124-123">**visSLOPermeablePlace**</span></span> <br/> |
    
 

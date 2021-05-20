@@ -1,5 +1,5 @@
 ---
-title: iconvertersessionsetadrbook
+title: IConverterSessionSetAdrBook
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,59 +19,59 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33429195"
 ---
-# <a name="iconvertersessionsetadrbook"></a><span data-ttu-id="c0785-103">IConverterSession::SetAdrBook</span><span class="sxs-lookup"><span data-stu-id="c0785-103">IConverterSession::SetAdrBook</span></span>
+# <a name="iconvertersessionsetadrbook"></a><span data-ttu-id="0fc1a-103">IConverterSession::SetAdrBook</span><span class="sxs-lookup"><span data-stu-id="0fc1a-103">IConverterSession::SetAdrBook</span></span>
 
   
   
-<span data-ttu-id="c0785-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="c0785-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="0fc1a-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="0fc1a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="c0785-105">mapi メッセージを mime ストリームに変換するときに、あいまいなアドレスを解決するために mapi から mime コンバータが使用するオプションの mapi アドレス帳を指定します。</span><span class="sxs-lookup"><span data-stu-id="c0785-105">Specifies an optional MAPI Address Book that the MAPI to MIME converter uses to resolve ambiguous addresses when converting a MAPI message to a MIME stream.</span></span>
+<span data-ttu-id="0fc1a-105">MAPI から MIME への変換時に、MAPI から MIME への変換であいまいなアドレスを解決するために使用するオプションの MAPI アドレス帳を指定します。</span><span class="sxs-lookup"><span data-stu-id="0fc1a-105">Specifies an optional MAPI Address Book that the MAPI to MIME converter uses to resolve ambiguous addresses when converting a MAPI message to a MIME stream.</span></span>
   
 ```cpp
 HRESULT IConverterSession::SetAdrBook( 
 LPADRBOOK pab); 
 ```
 
-## <a name="parameters"></a><span data-ttu-id="c0785-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="c0785-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="0fc1a-106">パラメーター</span><span class="sxs-lookup"><span data-stu-id="0fc1a-106">Parameters</span></span>
 
- <span data-ttu-id="c0785-107">_個人_</span><span class="sxs-lookup"><span data-stu-id="c0785-107">_pab_</span></span>
+ <span data-ttu-id="0fc1a-107">_pab_</span><span class="sxs-lookup"><span data-stu-id="0fc1a-107">_pab_</span></span>
   
-> <span data-ttu-id="c0785-108">順番MAPI から MIME への変換で使用される[IAddrBook: imapiprop](iaddrbookimapiprop.md)インターフェイスへのポインター。</span><span class="sxs-lookup"><span data-stu-id="c0785-108">[in] Pointer to an [IAddrBook : IMAPIProp](iaddrbookimapiprop.md) interface to be used in the MAPI to MIME conversion.</span></span> <span data-ttu-id="c0785-109">アドレス帳を必要としなくなった場合は、このパラメーターを**null**に設定します。これにより、インターフェイスが解放され、すべてのアドレス帳を使用しないようにコンバータがリセットされます。</span><span class="sxs-lookup"><span data-stu-id="c0785-109">Set this parameter to **null** when you no longer need the Address Book; this releases the interface and resets the converter to not using any Address Book.</span></span> 
+> <span data-ttu-id="0fc1a-108">[in]MAPI から MIME への変換で使用する [IAddrBook : IMAPIProp](iaddrbookimapiprop.md) インターフェイスへのポインター。</span><span class="sxs-lookup"><span data-stu-id="0fc1a-108">[in] Pointer to an [IAddrBook : IMAPIProp](iaddrbookimapiprop.md) interface to be used in the MAPI to MIME conversion.</span></span> <span data-ttu-id="0fc1a-109">アドレス帳が不要 **になった** 場合は、このパラメーターを null に設定します。これにより、インターフェイスが解放され、コンバータがアドレス帳を使用しなかにリセットされます。</span><span class="sxs-lookup"><span data-stu-id="0fc1a-109">Set this parameter to **null** when you no longer need the Address Book; this releases the interface and resets the converter to not using any Address Book.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="c0785-110">戻り値</span><span class="sxs-lookup"><span data-stu-id="c0785-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="0fc1a-110">戻り値</span><span class="sxs-lookup"><span data-stu-id="0fc1a-110">Return value</span></span>
 
-<span data-ttu-id="c0785-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="c0785-111">S_OK</span></span>
+<span data-ttu-id="0fc1a-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="0fc1a-111">S_OK</span></span>
   
-> <span data-ttu-id="c0785-112">関数呼び出しが成功しました。</span><span class="sxs-lookup"><span data-stu-id="c0785-112">The function call is successful.</span></span>
+> <span data-ttu-id="0fc1a-112">関数呼び出しが成功しました。</span><span class="sxs-lookup"><span data-stu-id="0fc1a-112">The function call is successful.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="c0785-113">注釈</span><span class="sxs-lookup"><span data-stu-id="c0785-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0fc1a-113">注釈</span><span class="sxs-lookup"><span data-stu-id="0fc1a-113">Remarks</span></span>
 
-<span data-ttu-id="c0785-114">mapi メッセージを MIME ストリームに変換する必要はありません。通常、mapi プロファイルにログオンする必要はありません。</span><span class="sxs-lookup"><span data-stu-id="c0785-114">Converting a MAPI message to MIME stream generally does not require logging on to a MAPI profile.</span></span> <span data-ttu-id="c0785-115">ただし、変換に MAPI アドレス帳を指定するには、アドレス帳を取得するためにプロファイルにログオンする必要があります。</span><span class="sxs-lookup"><span data-stu-id="c0785-115">However, specifying a MAPI Address Book for conversion requires logging on to a profile to obtain the Address Book.</span></span>
+<span data-ttu-id="0fc1a-114">MAPI メッセージを MIME ストリームに変換する場合、通常は MAPI プロファイルにログオンする必要があります。</span><span class="sxs-lookup"><span data-stu-id="0fc1a-114">Converting a MAPI message to MIME stream generally does not require logging on to a MAPI profile.</span></span> <span data-ttu-id="0fc1a-115">ただし、変換用に MAPI アドレス帳を指定するには、プロファイルにログオンしてアドレス帳を取得する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0fc1a-115">However, specifying a MAPI Address Book for conversion requires logging on to a profile to obtain the Address Book.</span></span>
   
-## <a name="mfcmapi-reference"></a><span data-ttu-id="c0785-116">MFCMAPI リファレンス</span><span class="sxs-lookup"><span data-stu-id="c0785-116">MFCMAPI reference</span></span>
+## <a name="mfcmapi-reference"></a><span data-ttu-id="0fc1a-116">MFCMAPI リファレンス</span><span class="sxs-lookup"><span data-stu-id="0fc1a-116">MFCMAPI reference</span></span>
 
-<span data-ttu-id="c0785-117">MFCMAPI のサンプル コードについては、次の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c0785-117">For MFCMAPI sample code, see the following table.</span></span>
+<span data-ttu-id="0fc1a-117">MFCMAPI のサンプル コードについては、次の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0fc1a-117">For MFCMAPI sample code, see the following table.</span></span>
   
-|<span data-ttu-id="c0785-118">**ファイル**</span><span class="sxs-lookup"><span data-stu-id="c0785-118">**File**</span></span>|<span data-ttu-id="c0785-119">**関数**</span><span class="sxs-lookup"><span data-stu-id="c0785-119">**Function**</span></span>|<span data-ttu-id="c0785-120">**コメント**</span><span class="sxs-lookup"><span data-stu-id="c0785-120">**Comment**</span></span>|
+|<span data-ttu-id="0fc1a-118">**ファイル**</span><span class="sxs-lookup"><span data-stu-id="0fc1a-118">**File**</span></span>|<span data-ttu-id="0fc1a-119">**関数**</span><span class="sxs-lookup"><span data-stu-id="0fc1a-119">**Function**</span></span>|<span data-ttu-id="0fc1a-120">**コメント**</span><span class="sxs-lookup"><span data-stu-id="0fc1a-120">**Comment**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="c0785-121">mapimime .cpp</span><span class="sxs-lookup"><span data-stu-id="c0785-121">MapiMime.cpp</span></span>  <br/> |<span data-ttu-id="c0785-122">ImportEMLToIMessage</span><span class="sxs-lookup"><span data-stu-id="c0785-122">ImportEMLToIMessage</span></span>  <br/> |<span data-ttu-id="c0785-123">mfcmapi は MimeToMAPI を使用して、EML ファイルを MAPI メッセージに変換します。</span><span class="sxs-lookup"><span data-stu-id="c0785-123">MFCMAPI uses MimeToMAPI to convert an EML file to a MAPI message.</span></span>  <br/> |
-|<span data-ttu-id="c0785-124">mapimime .cpp</span><span class="sxs-lookup"><span data-stu-id="c0785-124">MapiMime.cpp</span></span>  <br/> |<span data-ttu-id="c0785-125">ExportIMessageToEML</span><span class="sxs-lookup"><span data-stu-id="c0785-125">ExportIMessageToEML</span></span>  <br/> |<span data-ttu-id="c0785-126">mfcmapi は、MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。</span><span class="sxs-lookup"><span data-stu-id="c0785-126">MFCMAPI uses MAPIToMIMEStm to convert a MAPI message to an EML file.</span></span>  <br/> |
+|<span data-ttu-id="0fc1a-121">MapiMime.cpp</span><span class="sxs-lookup"><span data-stu-id="0fc1a-121">MapiMime.cpp</span></span>  <br/> |<span data-ttu-id="0fc1a-122">ImportEMLToIMessage</span><span class="sxs-lookup"><span data-stu-id="0fc1a-122">ImportEMLToIMessage</span></span>  <br/> |<span data-ttu-id="0fc1a-123">MFCMAPI は MimeToMAPI を使用して EML ファイルを MAPI メッセージに変換します。</span><span class="sxs-lookup"><span data-stu-id="0fc1a-123">MFCMAPI uses MimeToMAPI to convert an EML file to a MAPI message.</span></span>  <br/> |
+|<span data-ttu-id="0fc1a-124">MapiMime.cpp</span><span class="sxs-lookup"><span data-stu-id="0fc1a-124">MapiMime.cpp</span></span>  <br/> |<span data-ttu-id="0fc1a-125">ExportIMessageToEML</span><span class="sxs-lookup"><span data-stu-id="0fc1a-125">ExportIMessageToEML</span></span>  <br/> |<span data-ttu-id="0fc1a-126">MFCMAPI は MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。</span><span class="sxs-lookup"><span data-stu-id="0fc1a-126">MFCMAPI uses MAPIToMIMEStm to convert a MAPI message to an EML file.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="c0785-127">関連項目</span><span class="sxs-lookup"><span data-stu-id="c0785-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0fc1a-127">関連項目</span><span class="sxs-lookup"><span data-stu-id="0fc1a-127">See also</span></span>
 
 
 
-[<span data-ttu-id="c0785-128">IConverterSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="c0785-128">IConverterSession : IUnknown</span></span>](iconvertersessioniunknown.md)
+[<span data-ttu-id="0fc1a-128">IConverterSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="0fc1a-128">IConverterSession : IUnknown</span></span>](iconvertersessioniunknown.md)
   
-[<span data-ttu-id="c0785-129">IConverterSession::MAPIToMIMEStm</span><span class="sxs-lookup"><span data-stu-id="c0785-129">IConverterSession::MAPIToMIMEStm</span></span>](iconvertersession-mapitomimestm.md)
+[<span data-ttu-id="0fc1a-129">IConverterSession::MAPIToMIMEStm</span><span class="sxs-lookup"><span data-stu-id="0fc1a-129">IConverterSession::MAPIToMIMEStm</span></span>](iconvertersession-mapitomimestm.md)
   
-[<span data-ttu-id="c0785-130">IConverterSession::MIMEToMAPI</span><span class="sxs-lookup"><span data-stu-id="c0785-130">IConverterSession::MIMEToMAPI</span></span>](iconvertersession-mimetomapi.md)
+[<span data-ttu-id="0fc1a-130">IConverterSession::MIMEToMAPI</span><span class="sxs-lookup"><span data-stu-id="0fc1a-130">IConverterSession::MIMEToMAPI</span></span>](iconvertersession-mimetomapi.md)
   
-[<span data-ttu-id="c0785-131">IConverterSession::SetCharSet</span><span class="sxs-lookup"><span data-stu-id="c0785-131">IConverterSession::SetCharSet</span></span>](iconvertersession-setcharset.md)
+[<span data-ttu-id="0fc1a-131">IConverterSession::SetCharSet</span><span class="sxs-lookup"><span data-stu-id="0fc1a-131">IConverterSession::SetCharSet</span></span>](iconvertersession-setcharset.md)
   
-[<span data-ttu-id="c0785-132">IConverterSession::SetEncoding</span><span class="sxs-lookup"><span data-stu-id="c0785-132">IConverterSession::SetEncoding</span></span>](iconvertersession-setencoding.md)
+[<span data-ttu-id="0fc1a-132">IConverterSession::SetEncoding</span><span class="sxs-lookup"><span data-stu-id="0fc1a-132">IConverterSession::SetEncoding</span></span>](iconvertersession-setencoding.md)
   
-[<span data-ttu-id="c0785-133">IConverterSession::SetSaveFormat</span><span class="sxs-lookup"><span data-stu-id="c0785-133">IConverterSession::SetSaveFormat</span></span>](iconvertersession-setsaveformat.md)
+[<span data-ttu-id="0fc1a-133">IConverterSession::SetSaveFormat</span><span class="sxs-lookup"><span data-stu-id="0fc1a-133">IConverterSession::SetSaveFormat</span></span>](iconvertersession-setsaveformat.md)
   
-[<span data-ttu-id="c0785-134">IConverterSession::SetTextWrapping</span><span class="sxs-lookup"><span data-stu-id="c0785-134">IConverterSession::SetTextWrapping</span></span>](iconvertersession-settextwrapping.md)
+[<span data-ttu-id="0fc1a-134">IConverterSession::SetTextWrapping</span><span class="sxs-lookup"><span data-stu-id="0fc1a-134">IConverterSession::SetTextWrapping</span></span>](iconvertersession-settextwrapping.md)
 

@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251451
 localization_priority: Normal
 ms.assetid: 6ee7dc3d-efe9-c862-f71d-034b3d9c3ec6
-description: 'cellreference の値がエラーの種類である場合は TRUE を返します #N/a! (使用できません)、それ以外の場合は、FALSE を返します。 ISERRNA 関数は、別のセルを参照する数式で使用されます。'
+description: cellreference の値がエラー型の場合は TRUE を#N/A! (使用できません)。それ以外の場合は、FALSE を返します。 ISERRNA 関数は、別のセルを参照する数式で使用されます。
 ms.openlocfilehash: 8a398eca6da659a6b8f29e4ef8e31b18abf56fde
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,36 +16,36 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33432115"
 ---
-# <a name="iserrna-function"></a><span data-ttu-id="874bd-105">ISERRNA 関数</span><span class="sxs-lookup"><span data-stu-id="874bd-105">ISERRNA Function</span></span>
+# <a name="iserrna-function"></a><span data-ttu-id="27d6e-105">ISERRNA 関数</span><span class="sxs-lookup"><span data-stu-id="27d6e-105">ISERRNA Function</span></span>
 
-<span data-ttu-id="874bd-106">_cellreference_の値がエラーの種類である場合は TRUE を返します #N/a!</span><span class="sxs-lookup"><span data-stu-id="874bd-106">Returns TRUE if the value of  _cellreference_ is error type #N/A!</span></span> <span data-ttu-id="874bd-107">(使用できません)、それ以外の場合は、FALSE を返します。</span><span class="sxs-lookup"><span data-stu-id="874bd-107">(not available); otherwise, it returns FALSE.</span></span> <span data-ttu-id="874bd-108">ISERRNA 関数は、別のセルを参照する数式で使用されます。</span><span class="sxs-lookup"><span data-stu-id="874bd-108">The ISERRNA function is used in formulas that refer to another cell.</span></span> 
+<span data-ttu-id="27d6e-106">cellreference の値が  _エラー型の場合_ は TRUE を#N/A!</span><span class="sxs-lookup"><span data-stu-id="27d6e-106">Returns TRUE if the value of  _cellreference_ is error type #N/A!</span></span> <span data-ttu-id="27d6e-107">(使用できません)。それ以外の場合は、FALSE を返します。</span><span class="sxs-lookup"><span data-stu-id="27d6e-107">(not available); otherwise, it returns FALSE.</span></span> <span data-ttu-id="27d6e-108">ISERRNA 関数は、別のセルを参照する数式で使用されます。</span><span class="sxs-lookup"><span data-stu-id="27d6e-108">The ISERRNA function is used in formulas that refer to another cell.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="874bd-109">構文</span><span class="sxs-lookup"><span data-stu-id="874bd-109">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="27d6e-109">構文</span><span class="sxs-lookup"><span data-stu-id="27d6e-109">Syntax</span></span>
 
-<span data-ttu-id="874bd-110">ISERRNA (\* \* *cellreference* \* \*)</span><span class="sxs-lookup"><span data-stu-id="874bd-110">ISERRNA(\*\* *cellreference* \*\* )</span></span> 
+<span data-ttu-id="27d6e-110">ISERRNA(\*\* *cellreference* \*\* )</span><span class="sxs-lookup"><span data-stu-id="27d6e-110">ISERRNA(\*\* *cellreference* \*\* )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="874bd-111">パラメーター</span><span class="sxs-lookup"><span data-stu-id="874bd-111">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="27d6e-111">パラメーター</span><span class="sxs-lookup"><span data-stu-id="27d6e-111">Parameters</span></span>
 
-|<span data-ttu-id="874bd-112">**名前**</span><span class="sxs-lookup"><span data-stu-id="874bd-112">**Name**</span></span>|<span data-ttu-id="874bd-113">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="874bd-113">**Required/Optional**</span></span>|<span data-ttu-id="874bd-114">**データ型**</span><span class="sxs-lookup"><span data-stu-id="874bd-114">**Data Type**</span></span>|<span data-ttu-id="874bd-115">**説明**</span><span class="sxs-lookup"><span data-stu-id="874bd-115">**Description**</span></span>|
+|<span data-ttu-id="27d6e-112">**名前**</span><span class="sxs-lookup"><span data-stu-id="27d6e-112">**Name**</span></span>|<span data-ttu-id="27d6e-113">**必須 / オプション**</span><span class="sxs-lookup"><span data-stu-id="27d6e-113">**Required/Optional**</span></span>|<span data-ttu-id="27d6e-114">**データ型**</span><span class="sxs-lookup"><span data-stu-id="27d6e-114">**Data Type**</span></span>|<span data-ttu-id="27d6e-115">**説明**</span><span class="sxs-lookup"><span data-stu-id="27d6e-115">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="874bd-116">_cellreference_</span><span class="sxs-lookup"><span data-stu-id="874bd-116">_cellreference_</span></span> <br/> |<span data-ttu-id="874bd-117">必須</span><span class="sxs-lookup"><span data-stu-id="874bd-117">Required</span></span>  <br/> |<span data-ttu-id="874bd-118">**String**</span><span class="sxs-lookup"><span data-stu-id="874bd-118">**String**</span></span> <br/> |<span data-ttu-id="874bd-119">セルの参照を指定します。</span><span class="sxs-lookup"><span data-stu-id="874bd-119">Reference to a cell.</span></span>  <br/> |
+| <span data-ttu-id="27d6e-116">_cellreference_</span><span class="sxs-lookup"><span data-stu-id="27d6e-116">_cellreference_</span></span> <br/> |<span data-ttu-id="27d6e-117">必須</span><span class="sxs-lookup"><span data-stu-id="27d6e-117">Required</span></span>  <br/> |<span data-ttu-id="27d6e-118">**String**</span><span class="sxs-lookup"><span data-stu-id="27d6e-118">**String**</span></span> <br/> |<span data-ttu-id="27d6e-119">セルの参照を指定します。</span><span class="sxs-lookup"><span data-stu-id="27d6e-119">Reference to a cell.</span></span>  <br/> |
    
-## <a name="example-1"></a><span data-ttu-id="874bd-120">例 1</span><span class="sxs-lookup"><span data-stu-id="874bd-120">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="27d6e-120">例 1</span><span class="sxs-lookup"><span data-stu-id="27d6e-120">Example 1</span></span>
 
-|<span data-ttu-id="874bd-121">**Cell**</span><span class="sxs-lookup"><span data-stu-id="874bd-121">**Cell**</span></span>|<span data-ttu-id="874bd-122">**Formula**</span><span class="sxs-lookup"><span data-stu-id="874bd-122">**Formula**</span></span>|<span data-ttu-id="874bd-123">**戻り値**</span><span class="sxs-lookup"><span data-stu-id="874bd-123">**Value returned**</span></span>|
+|<span data-ttu-id="27d6e-121">**Cell**</span><span class="sxs-lookup"><span data-stu-id="27d6e-121">**Cell**</span></span>|<span data-ttu-id="27d6e-122">**式**</span><span class="sxs-lookup"><span data-stu-id="27d6e-122">**Formula**</span></span>|<span data-ttu-id="27d6e-123">**戻り値**</span><span class="sxs-lookup"><span data-stu-id="27d6e-123">**Value returned**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="874bd-124">最初の A1</span><span class="sxs-lookup"><span data-stu-id="874bd-124">Scratch.A1</span></span>  <br/> |<span data-ttu-id="874bd-125">="5 + 3"</span><span class="sxs-lookup"><span data-stu-id="874bd-125">="5 + 3"</span></span>  <br/> |<span data-ttu-id="874bd-126">~</span><span class="sxs-lookup"><span data-stu-id="874bd-126">"8"</span></span>  <br/> |
-|<span data-ttu-id="874bd-127">最初の B1</span><span class="sxs-lookup"><span data-stu-id="874bd-127">Scratch.B1</span></span>  <br/> |<span data-ttu-id="874bd-128">= ISERRNA (A1)</span><span class="sxs-lookup"><span data-stu-id="874bd-128">=ISERRNA(Scratch.A1)</span></span>  <br/> |<span data-ttu-id="874bd-129">FALSE</span><span class="sxs-lookup"><span data-stu-id="874bd-129">FALSE</span></span>  <br/> |
+|<span data-ttu-id="27d6e-124">Scratch.A1</span><span class="sxs-lookup"><span data-stu-id="27d6e-124">Scratch.A1</span></span>  <br/> |<span data-ttu-id="27d6e-125">="5 + 3"</span><span class="sxs-lookup"><span data-stu-id="27d6e-125">="5 + 3"</span></span>  <br/> |<span data-ttu-id="27d6e-126">"8"</span><span class="sxs-lookup"><span data-stu-id="27d6e-126">"8"</span></span>  <br/> |
+|<span data-ttu-id="27d6e-127">Scratch.B1</span><span class="sxs-lookup"><span data-stu-id="27d6e-127">Scratch.B1</span></span>  <br/> |<span data-ttu-id="27d6e-128">=ISERRNA(Scratch.A1)</span><span class="sxs-lookup"><span data-stu-id="27d6e-128">=ISERRNA(Scratch.A1)</span></span>  <br/> |<span data-ttu-id="27d6e-129">FALSE</span><span class="sxs-lookup"><span data-stu-id="27d6e-129">FALSE</span></span>  <br/> |
    
-<span data-ttu-id="874bd-130">戻り値が有効であるため、FALSE を返します。</span><span class="sxs-lookup"><span data-stu-id="874bd-130">Returns FALSE because the value returned is available.</span></span>
+<span data-ttu-id="27d6e-130">戻り値が有効であるため、FALSE を返します。</span><span class="sxs-lookup"><span data-stu-id="27d6e-130">Returns FALSE because the value returned is available.</span></span>
   
-## <a name="example-2"></a><span data-ttu-id="874bd-131">例 2</span><span class="sxs-lookup"><span data-stu-id="874bd-131">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="27d6e-131">例 2</span><span class="sxs-lookup"><span data-stu-id="27d6e-131">Example 2</span></span>
 
-|<span data-ttu-id="874bd-132">**Cell**</span><span class="sxs-lookup"><span data-stu-id="874bd-132">**Cell**</span></span>|<span data-ttu-id="874bd-133">**Formula**</span><span class="sxs-lookup"><span data-stu-id="874bd-133">**Formula**</span></span>|<span data-ttu-id="874bd-134">**戻り値**</span><span class="sxs-lookup"><span data-stu-id="874bd-134">**Value returned**</span></span>|
+|<span data-ttu-id="27d6e-132">**Cell**</span><span class="sxs-lookup"><span data-stu-id="27d6e-132">**Cell**</span></span>|<span data-ttu-id="27d6e-133">**式**</span><span class="sxs-lookup"><span data-stu-id="27d6e-133">**Formula**</span></span>|<span data-ttu-id="27d6e-134">**戻り値**</span><span class="sxs-lookup"><span data-stu-id="27d6e-134">**Value returned**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="874bd-135">最初の A1</span><span class="sxs-lookup"><span data-stu-id="874bd-135">Scratch.A1</span></span>  <br/> |<span data-ttu-id="874bd-136">=NA( )</span><span class="sxs-lookup"><span data-stu-id="874bd-136">=NA( )</span></span>  <br/> |<span data-ttu-id="874bd-137">#N/A!</span><span class="sxs-lookup"><span data-stu-id="874bd-137">#N/A!</span></span>  <br/> |
-|<span data-ttu-id="874bd-138">最初の B1</span><span class="sxs-lookup"><span data-stu-id="874bd-138">Scratch.B1</span></span>  <br/> |<span data-ttu-id="874bd-139">= ISERRNA (A1)</span><span class="sxs-lookup"><span data-stu-id="874bd-139">=ISERRNA(Scratch.A1)</span></span>  <br/> |<span data-ttu-id="874bd-140">TRUE</span><span class="sxs-lookup"><span data-stu-id="874bd-140">TRUE</span></span>  <br/> |
+|<span data-ttu-id="27d6e-135">Scratch.A1</span><span class="sxs-lookup"><span data-stu-id="27d6e-135">Scratch.A1</span></span>  <br/> |<span data-ttu-id="27d6e-136">=NA( )</span><span class="sxs-lookup"><span data-stu-id="27d6e-136">=NA( )</span></span>  <br/> |<span data-ttu-id="27d6e-137">#N/A!</span><span class="sxs-lookup"><span data-stu-id="27d6e-137">#N/A!</span></span>  <br/> |
+|<span data-ttu-id="27d6e-138">Scratch.B1</span><span class="sxs-lookup"><span data-stu-id="27d6e-138">Scratch.B1</span></span>  <br/> |<span data-ttu-id="27d6e-139">=ISERRNA(Scratch.A1)</span><span class="sxs-lookup"><span data-stu-id="27d6e-139">=ISERRNA(Scratch.A1)</span></span>  <br/> |<span data-ttu-id="27d6e-140">TRUE</span><span class="sxs-lookup"><span data-stu-id="27d6e-140">TRUE</span></span>  <br/> |
    
-<span data-ttu-id="874bd-141">戻り値がエラー タイプ #N/A! であるため、TRUE を返します。</span><span class="sxs-lookup"><span data-stu-id="874bd-141">Returns TRUE because the value returned is error type #N/A!</span></span>
+<span data-ttu-id="27d6e-141">戻り値がエラー タイプ #N/A! であるため、TRUE を返します。</span><span class="sxs-lookup"><span data-stu-id="27d6e-141">Returns TRUE because the value returned is error type #N/A!</span></span>
   
 

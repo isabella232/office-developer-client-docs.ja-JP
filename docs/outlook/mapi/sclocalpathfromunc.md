@@ -19,19 +19,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33432234"
 ---
-# <a name="sclocalpathfromunc"></a><span data-ttu-id="406d8-103">ScLocalPathFromUNC</span><span class="sxs-lookup"><span data-stu-id="406d8-103">ScLocalPathFromUNC</span></span>
+# <a name="sclocalpathfromunc"></a><span data-ttu-id="76725-103">ScLocalPathFromUNC</span><span class="sxs-lookup"><span data-stu-id="76725-103">ScLocalPathFromUNC</span></span>
 
   
   
-<span data-ttu-id="406d8-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="406d8-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="76725-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="76725-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="406d8-105">指定した汎用名前付け規則 (UNC) パスに対応するローカルパスを検索します。</span><span class="sxs-lookup"><span data-stu-id="406d8-105">Locates a local path counterpart to the given universal naming convention (UNC) path.</span></span> 
+<span data-ttu-id="76725-105">指定された汎用名前付け規則 (UNC) パスに対応するローカル パスを検索します。</span><span class="sxs-lookup"><span data-stu-id="76725-105">Locates a local path counterpart to the given universal naming convention (UNC) path.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="406d8-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="406d8-106">Header file:</span></span>  <br/> |<span data-ttu-id="406d8-107">Mapiutil</span><span class="sxs-lookup"><span data-stu-id="406d8-107">Mapiutil.h</span></span>  <br/> |
-|<span data-ttu-id="406d8-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="406d8-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="406d8-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="406d8-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="406d8-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="406d8-110">Called by:</span></span>  <br/> |<span data-ttu-id="406d8-111">クライアントアプリケーションとサービスプロバイダー</span><span class="sxs-lookup"><span data-stu-id="406d8-111">Client applications and service providers</span></span>  <br/> |
+|<span data-ttu-id="76725-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="76725-106">Header file:</span></span>  <br/> |<span data-ttu-id="76725-107">Mapiutil.h</span><span class="sxs-lookup"><span data-stu-id="76725-107">Mapiutil.h</span></span>  <br/> |
+|<span data-ttu-id="76725-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="76725-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="76725-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="76725-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="76725-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="76725-110">Called by:</span></span>  <br/> |<span data-ttu-id="76725-111">クライアント アプリケーションとサービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="76725-111">Client applications and service providers</span></span>  <br/> |
    
 ```cpp
 SCODE ScLocalPathFromUNC(
@@ -41,41 +41,41 @@ SCODE ScLocalPathFromUNC(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="406d8-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="406d8-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="76725-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="76725-112">Parameters</span></span>
 
- <span data-ttu-id="406d8-113">_szunc_</span><span class="sxs-lookup"><span data-stu-id="406d8-113">_szUNC_</span></span>
+ <span data-ttu-id="76725-113">_szUNC_</span><span class="sxs-lookup"><span data-stu-id="76725-113">_szUNC_</span></span>
   
-> <span data-ttu-id="406d8-114">順番ファイルまたはディレクトリの\\形式__[サーバー\[ ] [_共有_]\[ _パス_] のパス。</span><span class="sxs-lookup"><span data-stu-id="406d8-114">[in] A path in the format \\[ _server_]\[ _share_]\[ _path_] of a file or directory.</span></span>
+> <span data-ttu-id="76725-114">[in]ファイルまたはディレクトリの \\ _[server_] \[ _share_] \[ _パス_] 形式のパス。</span><span class="sxs-lookup"><span data-stu-id="76725-114">[in] A path in the format \\[ _server_]\[ _share_]\[ _path_] of a file or directory.</span></span>
     
- <span data-ttu-id="406d8-115">_szlocal_</span><span class="sxs-lookup"><span data-stu-id="406d8-115">_szLocal_</span></span>
+ <span data-ttu-id="76725-115">_szLocal_</span><span class="sxs-lookup"><span data-stu-id="76725-115">_szLocal_</span></span>
   
-> <span data-ttu-id="406d8-116">読み上げ_szunc_パラメーターと同じファイルまたはディレクトリの形式 [ _drive:_]\[ _path_] のパス。</span><span class="sxs-lookup"><span data-stu-id="406d8-116">[out] A path in the format [ _drive:_]\[ _path_] of the same file or directory as for the  _szUNC_ parameter.</span></span> 
+> <span data-ttu-id="76725-116">[out]szUNC パラメーターと同じファイルまたはディレクトリの形式 [ _drive:_] path ] の \[ パス。 </span><span class="sxs-lookup"><span data-stu-id="76725-116">[out] A path in the format [ _drive:_]\[ _path_] of the same file or directory as for the  _szUNC_ parameter.</span></span> 
     
- <span data-ttu-id="406d8-117">_cchlocal_</span><span class="sxs-lookup"><span data-stu-id="406d8-117">_cchLocal_</span></span>
+ <span data-ttu-id="76725-117">_cchLocal_</span><span class="sxs-lookup"><span data-stu-id="76725-117">_cchLocal_</span></span>
   
-> <span data-ttu-id="406d8-118">順番出力文字列のバッファーのサイズ。</span><span class="sxs-lookup"><span data-stu-id="406d8-118">[in] Size of the buffer for the output string.</span></span>
+> <span data-ttu-id="76725-118">[in]出力文字列のバッファーのサイズ。</span><span class="sxs-lookup"><span data-stu-id="76725-118">[in] Size of the buffer for the output string.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="406d8-119">戻り値</span><span class="sxs-lookup"><span data-stu-id="406d8-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="76725-119">戻り値</span><span class="sxs-lookup"><span data-stu-id="76725-119">Return value</span></span>
 
-<span data-ttu-id="406d8-120">S_OK</span><span class="sxs-lookup"><span data-stu-id="406d8-120">S_OK</span></span>
+<span data-ttu-id="76725-120">S_OK</span><span class="sxs-lookup"><span data-stu-id="76725-120">S_OK</span></span>
   
-> <span data-ttu-id="406d8-121">ローカルパスが正常に配置されました。</span><span class="sxs-lookup"><span data-stu-id="406d8-121">A local path was successfully located.</span></span>
+> <span data-ttu-id="76725-121">ローカル パスが正常に見つからされました。</span><span class="sxs-lookup"><span data-stu-id="76725-121">A local path was successfully located.</span></span>
     
-<span data-ttu-id="406d8-122">MAPI_E_TOO_BIG</span><span class="sxs-lookup"><span data-stu-id="406d8-122">MAPI_E_TOO_BIG</span></span>
+<span data-ttu-id="76725-122">MAPI_E_TOO_BIG</span><span class="sxs-lookup"><span data-stu-id="76725-122">MAPI_E_TOO_BIG</span></span>
   
->  <span data-ttu-id="406d8-123">_szlocal_は、結果を保持するのに十分な大きさがありませんでした。</span><span class="sxs-lookup"><span data-stu-id="406d8-123">_szLocal_ was not large enough to hold the result.</span></span> 
+>  <span data-ttu-id="76725-123">_szLocal は_ 、結果を保持するのに十分な大きさではなかった。</span><span class="sxs-lookup"><span data-stu-id="76725-123">_szLocal_ was not large enough to hold the result.</span></span> 
     
-<span data-ttu-id="406d8-124">S_FALSE</span><span class="sxs-lookup"><span data-stu-id="406d8-124">S_FALSE</span></span>
+<span data-ttu-id="76725-124">S_FALSE</span><span class="sxs-lookup"><span data-stu-id="76725-124">S_FALSE</span></span>
   
-> <span data-ttu-id="406d8-125">UNC 文字列は、既にローカルパスになっています。</span><span class="sxs-lookup"><span data-stu-id="406d8-125">The UNC string was already a local path.</span></span>
+> <span data-ttu-id="76725-125">UNC 文字列は既にローカル パスでした。</span><span class="sxs-lookup"><span data-stu-id="76725-125">The UNC string was already a local path.</span></span>
     
-<span data-ttu-id="406d8-126">MAPI_E_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="406d8-126">MAPI_E_NOT_FOUND</span></span>
+<span data-ttu-id="76725-126">MAPI_E_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="76725-126">MAPI_E_NOT_FOUND</span></span>
   
-> <span data-ttu-id="406d8-127">ローカルパスが見つかりませんでした。</span><span class="sxs-lookup"><span data-stu-id="406d8-127">A local path was not found.</span></span>
+> <span data-ttu-id="76725-127">ローカル パスが見つかりませんでした。</span><span class="sxs-lookup"><span data-stu-id="76725-127">A local path was not found.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="406d8-128">関連項目</span><span class="sxs-lookup"><span data-stu-id="406d8-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="76725-128">関連項目</span><span class="sxs-lookup"><span data-stu-id="76725-128">See also</span></span>
 
 
 
-[<span data-ttu-id="406d8-129">ScUNCFromLocalPath</span><span class="sxs-lookup"><span data-stu-id="406d8-129">ScUNCFromLocalPath</span></span>](scuncfromlocalpath.md)
+[<span data-ttu-id="76725-129">ScUNCFromLocalPath</span><span class="sxs-lookup"><span data-stu-id="76725-129">ScUNCFromLocalPath</span></span>](scuncfromlocalpath.md)
 

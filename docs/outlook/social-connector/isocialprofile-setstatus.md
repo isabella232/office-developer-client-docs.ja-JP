@@ -1,5 +1,5 @@
 ---
-title: iこの alprofilesetstatus
+title: ISocialProfileSetStatus
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,15 +15,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33429069"
 ---
-# <a name="isocialprofilesetstatus"></a><span data-ttu-id="6474a-103">ISocialProfile::SetStatus</span><span class="sxs-lookup"><span data-stu-id="6474a-103">ISocialProfile::SetStatus</span></span>
+# <a name="isocialprofilesetstatus"></a><span data-ttu-id="fb792-103">ISocialProfile::SetStatus</span><span class="sxs-lookup"><span data-stu-id="fb792-103">ISocialProfile::SetStatus</span></span>
 
-<span data-ttu-id="6474a-104">このメソッドは現在サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="6474a-104">This method is currently not supported.</span></span> 
+<span data-ttu-id="fb792-104">このメソッドは現在サポートされていません。</span><span class="sxs-lookup"><span data-stu-id="fb792-104">This method is currently not supported.</span></span> 
   
 ```cpp
 HRESULT _stdcall SetStatus(BSTR status);
 ```
 
-## <a name="see-also"></a><span data-ttu-id="6474a-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="6474a-105">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fb792-105">関連項目</span><span class="sxs-lookup"><span data-stu-id="fb792-105">See also</span></span>
 
-- [<span data-ttu-id="6474a-106">ISocialProfile : ISocialPerson</span><span class="sxs-lookup"><span data-stu-id="6474a-106">ISocialProfile : ISocialPerson</span></span>](isocialprofileisocialperson.md)
+- [<span data-ttu-id="fb792-106">ISocialProfile : ISocialPerson</span><span class="sxs-lookup"><span data-stu-id="fb792-106">ISocialProfile : ISocialPerson</span></span>](isocialprofileisocialperson.md)
 

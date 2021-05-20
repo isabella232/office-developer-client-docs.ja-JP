@@ -19,13 +19,13 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33431779"
 ---
-# <a name="imsgstorenotifynewmail"></a><span data-ttu-id="efe71-103">IMsgStore::NotifyNewMail</span><span class="sxs-lookup"><span data-stu-id="efe71-103">IMsgStore::NotifyNewMail</span></span>
+# <a name="imsgstorenotifynewmail"></a><span data-ttu-id="cf111-103">IMsgStore::NotifyNewMail</span><span class="sxs-lookup"><span data-stu-id="cf111-103">IMsgStore::NotifyNewMail</span></span>
 
   
   
-<span data-ttu-id="efe71-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="efe71-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="cf111-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="cf111-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="efe71-105">新しいメッセージが到着したことをメッセージストアに通知します。</span><span class="sxs-lookup"><span data-stu-id="efe71-105">Informs the message store that a new message has arrived.</span></span> <span data-ttu-id="efe71-106">このメソッドは、MAPI スプーラーによってのみ呼び出されます。</span><span class="sxs-lookup"><span data-stu-id="efe71-106">This method is called only by the MAPI spooler.</span></span>
+<span data-ttu-id="cf111-p101">�V�������b�Z�[�W�������������b�Z�[�W �X�g�A�ɒʒm���܂��B���̕��@�́AMAPI �X�v�[���[�ɂ���Ă̂݌Ăяo����܂��B</span><span class="sxs-lookup"><span data-stu-id="cf111-p101">Informs the message store that a new message has arrived. This method is called only by the MAPI spooler.</span></span>
   
 ```cpp
 HRESULT NotifyNewMail(
@@ -33,39 +33,39 @@ HRESULT NotifyNewMail(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="efe71-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="efe71-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="cf111-107">パラメーター</span><span class="sxs-lookup"><span data-stu-id="cf111-107">Parameters</span></span>
 
- <span data-ttu-id="efe71-108">_lpnotification_</span><span class="sxs-lookup"><span data-stu-id="efe71-108">_lpNotification_</span></span>
+ <span data-ttu-id="cf111-108">_lpNotification_</span><span class="sxs-lookup"><span data-stu-id="cf111-108">_lpNotification_</span></span>
   
-> <span data-ttu-id="efe71-109">[in] A pointer to a [NOTIFICATION](notification.md) structure that describes the new message notification.</span><span class="sxs-lookup"><span data-stu-id="efe71-109">[in] A pointer to a [NOTIFICATION](notification.md) structure that describes the new message notification.</span></span> 
+> <span data-ttu-id="cf111-109">[in] A pointer to a [NOTIFICATION](notification.md) structure that describes the new message notification.</span><span class="sxs-lookup"><span data-stu-id="cf111-109">[in] A pointer to a [NOTIFICATION](notification.md) structure that describes the new message notification.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="efe71-110">戻り値</span><span class="sxs-lookup"><span data-stu-id="efe71-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="cf111-110">戻り値</span><span class="sxs-lookup"><span data-stu-id="cf111-110">Return value</span></span>
 
-<span data-ttu-id="efe71-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="efe71-111">S_OK</span></span> 
+<span data-ttu-id="cf111-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="cf111-111">S_OK</span></span> 
   
-> <span data-ttu-id="efe71-112">���b�Z�[�W �X�g�A������ɒʒm��󂯎��܂��B</span><span class="sxs-lookup"><span data-stu-id="efe71-112">The message store was successfully notified.</span></span>
+> <span data-ttu-id="cf111-112">���b�Z�[�W �X�g�A������ɒʒm��󂯎��܂��B</span><span class="sxs-lookup"><span data-stu-id="cf111-112">The message store was successfully notified.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="efe71-113">注釈</span><span class="sxs-lookup"><span data-stu-id="efe71-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="cf111-113">注釈</span><span class="sxs-lookup"><span data-stu-id="cf111-113">Remarks</span></span>
 
-<span data-ttu-id="efe71-114">**IMsgStore::NotifyNewMail**���\�b�h�́A���b�Z�[�W���z�M�i�ޏ������ł�����A���b�Z�[�W �X�g�A�ɒʒm���� MAPI �X�v�[���[�ɂ���ĂƌĂ΂�܂��B</span><span class="sxs-lookup"><span data-stu-id="efe71-114">The **IMsgStore::NotifyNewMail** method is called by the MAPI spooler to inform the message store that a message is ready for delivery.</span></span> 
+<span data-ttu-id="cf111-114">**IMsgStore::NotifyNewMail**���\�b�h�́A���b�Z�[�W���z�M�i�ޏ������ł�����A���b�Z�[�W �X�g�A�ɒʒm���� MAPI �X�v�[���[�ɂ���ĂƌĂ΂�܂��B</span><span class="sxs-lookup"><span data-stu-id="cf111-114">The **IMsgStore::NotifyNewMail** method is called by the MAPI spooler to inform the message store that a message is ready for delivery.</span></span> 
   
-## <a name="notes-to-implementers"></a><span data-ttu-id="efe71-115">実装に関するメモ</span><span class="sxs-lookup"><span data-stu-id="efe71-115">Notes to implementers</span></span>
+## <a name="notes-to-implementers"></a><span data-ttu-id="cf111-115">実装に関するメモ</span><span class="sxs-lookup"><span data-stu-id="cf111-115">Notes to implementers</span></span>
 
-<span data-ttu-id="efe71-p102">When **NotifyNewMail** is called, send a new mail notification to all registered clients. You can send the notification by calling [IMAPISupport::Notify](imapisupport-notify.md), if you elect to use the support object methods, or by using your own implementation. A registered client is one that has called [IMsgStore::Advise](imsgstore-advise.md) and set the  _lpEntryID_ parameter to NULL and the  _ulEventMask_ parameter to  _fnevNewMail_.</span><span class="sxs-lookup"><span data-stu-id="efe71-p102">When **NotifyNewMail** is called, send a new mail notification to all registered clients. You can send the notification by calling [IMAPISupport::Notify](imapisupport-notify.md), if you elect to use the support object methods, or by using your own implementation. A registered client is one that has called [IMsgStore::Advise](imsgstore-advise.md) and set the  _lpEntryID_ parameter to NULL and the  _ulEventMask_ parameter to  _fnevNewMail_.</span></span> 
+<span data-ttu-id="cf111-p102">When **NotifyNewMail** is called, send a new mail notification to all registered clients. You can send the notification by calling [IMAPISupport::Notify](imapisupport-notify.md), if you elect to use the support object methods, or by using your own implementation. A registered client is one that has called [IMsgStore::Advise](imsgstore-advise.md) and set the  _lpEntryID_ parameter to NULL and the  _ulEventMask_ parameter to  _fnevNewMail_.</span><span class="sxs-lookup"><span data-stu-id="cf111-p102">When **NotifyNewMail** is called, send a new mail notification to all registered clients. You can send the notification by calling [IMAPISupport::Notify](imapisupport-notify.md), if you elect to use the support object methods, or by using your own implementation. A registered client is one that has called [IMsgStore::Advise](imsgstore-advise.md) and set the  _lpEntryID_ parameter to NULL and the  _ulEventMask_ parameter to  _fnevNewMail_.</span></span> 
   
-<span data-ttu-id="efe71-p103">Do not modify or free the memory for the [NOTIFICATION](notification.md) structure that describes the new mail notification. Copy the **NOTIFICATION** structure by calling the utility function [ScCopyNotifications](sccopynotifications.md) to make use of the information in its members.</span><span class="sxs-lookup"><span data-stu-id="efe71-p103">Do not modify or free the memory for the [NOTIFICATION](notification.md) structure that describes the new mail notification. Copy the **NOTIFICATION** structure by calling the utility function [ScCopyNotifications](sccopynotifications.md) to make use of the information in its members.</span></span> 
+<span data-ttu-id="cf111-p103">Do not modify or free the memory for the [NOTIFICATION](notification.md) structure that describes the new mail notification. Copy the **NOTIFICATION** structure by calling the utility function [ScCopyNotifications](sccopynotifications.md) to make use of the information in its members.</span><span class="sxs-lookup"><span data-stu-id="cf111-p103">Do not modify or free the memory for the [NOTIFICATION](notification.md) structure that describes the new mail notification. Copy the **NOTIFICATION** structure by calling the utility function [ScCopyNotifications](sccopynotifications.md) to make use of the information in its members.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="efe71-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="efe71-121">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cf111-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="cf111-121">See also</span></span>
 
 
 
-[<span data-ttu-id="efe71-122">IMAPISupport::Subscribe</span><span class="sxs-lookup"><span data-stu-id="efe71-122">IMAPISupport::Subscribe</span></span>](imapisupport-subscribe.md)
+[<span data-ttu-id="cf111-122">IMAPISupport::Subscribe</span><span class="sxs-lookup"><span data-stu-id="cf111-122">IMAPISupport::Subscribe</span></span>](imapisupport-subscribe.md)
   
-[<span data-ttu-id="efe71-123">IMAPISupport::Unsubscribe</span><span class="sxs-lookup"><span data-stu-id="efe71-123">IMAPISupport::Unsubscribe</span></span>](imapisupport-unsubscribe.md)
+[<span data-ttu-id="cf111-123">IMAPISupport::Unsubscribe</span><span class="sxs-lookup"><span data-stu-id="cf111-123">IMAPISupport::Unsubscribe</span></span>](imapisupport-unsubscribe.md)
   
-[<span data-ttu-id="efe71-124">�ʒm</span><span class="sxs-lookup"><span data-stu-id="efe71-124">NOTIFICATION</span></span>](notification.md)
+[<span data-ttu-id="cf111-124">�ʒm</span><span class="sxs-lookup"><span data-stu-id="cf111-124">NOTIFICATION</span></span>](notification.md)
   
-[<span data-ttu-id="efe71-125">ScCopyNotifications</span><span class="sxs-lookup"><span data-stu-id="efe71-125">ScCopyNotifications</span></span>](sccopynotifications.md)
+[<span data-ttu-id="cf111-125">ScCopyNotifications</span><span class="sxs-lookup"><span data-stu-id="cf111-125">ScCopyNotifications</span></span>](sccopynotifications.md)
   
-[<span data-ttu-id="efe71-126">IMsgStore: IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="efe71-126">IMsgStore : IMAPIProp</span></span>](imsgstoreimapiprop.md)
+[<span data-ttu-id="cf111-126">IMsgStore: IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="cf111-126">IMsgStore : IMAPIProp</span></span>](imsgstoreimapiprop.md)
 

@@ -19,19 +19,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33428901"
 ---
-# <a name="hrallocadvisesink"></a><span data-ttu-id="959fb-103">HrAllocAdviseSink</span><span class="sxs-lookup"><span data-stu-id="959fb-103">HrAllocAdviseSink</span></span>
+# <a name="hrallocadvisesink"></a><span data-ttu-id="7bf0b-103">HrAllocAdviseSink</span><span class="sxs-lookup"><span data-stu-id="7bf0b-103">HrAllocAdviseSink</span></span>
 
   
   
-<span data-ttu-id="959fb-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="959fb-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="7bf0b-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="7bf0b-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="959fb-105">呼び出し側の実装によって指定されたコンテキストと、イベント通知によってトリガーされるコールバック関数を指定して、アドバイズシンクオブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="959fb-105">Creates an advise sink object, given a context specified by the calling implementation and a callback function to be triggered by an event notification.</span></span> 
+<span data-ttu-id="7bf0b-105">呼び出し元の実装で指定されたコンテキストと、イベント通知によってトリガーされるコールバック関数を指定して、アアドバイス シンク オブジェクトを作成します。</span><span class="sxs-lookup"><span data-stu-id="7bf0b-105">Creates an advise sink object, given a context specified by the calling implementation and a callback function to be triggered by an event notification.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="959fb-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="959fb-106">Header file:</span></span>  <br/> |<span data-ttu-id="959fb-107">Mapiutil</span><span class="sxs-lookup"><span data-stu-id="959fb-107">Mapiutil.h</span></span>  <br/> |
-|<span data-ttu-id="959fb-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="959fb-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="959fb-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="959fb-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="959fb-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="959fb-110">Called by:</span></span>  <br/> |<span data-ttu-id="959fb-111">クライアントアプリケーションとサービスプロバイダー</span><span class="sxs-lookup"><span data-stu-id="959fb-111">Client applications and service providers</span></span>  <br/> |
+|<span data-ttu-id="7bf0b-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="7bf0b-106">Header file:</span></span>  <br/> |<span data-ttu-id="7bf0b-107">Mapiutil.h</span><span class="sxs-lookup"><span data-stu-id="7bf0b-107">Mapiutil.h</span></span>  <br/> |
+|<span data-ttu-id="7bf0b-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="7bf0b-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="7bf0b-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="7bf0b-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="7bf0b-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="7bf0b-110">Called by:</span></span>  <br/> |<span data-ttu-id="7bf0b-111">クライアント アプリケーションとサービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="7bf0b-111">Client applications and service providers</span></span>  <br/> |
    
 ```cpp
 STDAPI HrAllocAdviseSink(
@@ -41,31 +41,31 @@ STDAPI HrAllocAdviseSink(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="959fb-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="959fb-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="7bf0b-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="7bf0b-112">Parameters</span></span>
 
- <span data-ttu-id="959fb-113">_lpfnCallback_</span><span class="sxs-lookup"><span data-stu-id="959fb-113">_lpfnCallback_</span></span>
+ <span data-ttu-id="7bf0b-113">_lpfnCallback_</span><span class="sxs-lookup"><span data-stu-id="7bf0b-113">_lpfnCallback_</span></span>
   
-> <span data-ttu-id="959fb-114">順番新しく作成されたアドバイズシンクに対して通知イベントが発生したときに MAPI が呼び出す[NOTIFCALLBACK](notifcallback.md)プロトタイプに基づく、コールバック関数へのポインター。</span><span class="sxs-lookup"><span data-stu-id="959fb-114">[in] Pointer to a callback function based on the [NOTIFCALLBACK](notifcallback.md) prototype that MAPI is to call when a notification event occurs for the newly created advise sink.</span></span> 
+> <span data-ttu-id="7bf0b-114">[in]新しく作成されたアアドバイス シンクの通知イベントが発生した場合に MAPI が呼び出す [NOTIFCALLBACK](notifcallback.md) プロトタイプに基づくコールバック関数へのポインター。</span><span class="sxs-lookup"><span data-stu-id="7bf0b-114">[in] Pointer to a callback function based on the [NOTIFCALLBACK](notifcallback.md) prototype that MAPI is to call when a notification event occurs for the newly created advise sink.</span></span> 
     
- <span data-ttu-id="959fb-115">_lpvcontext_</span><span class="sxs-lookup"><span data-stu-id="959fb-115">_lpvContext_</span></span>
+ <span data-ttu-id="7bf0b-115">_lpvContext_</span><span class="sxs-lookup"><span data-stu-id="7bf0b-115">_lpvContext_</span></span>
   
-> <span data-ttu-id="959fb-116">順番MAPI がコールバック関数に渡す、呼び出し元データへのポインター。</span><span class="sxs-lookup"><span data-stu-id="959fb-116">[in] Pointer to caller data passed to the callback function when MAPI calls it.</span></span> <span data-ttu-id="959fb-117">発信者データは、クライアントまたはプロバイダーの重要度のアドレスを表すことができます。</span><span class="sxs-lookup"><span data-stu-id="959fb-117">The caller data can represent an address of significance to the client or provider.</span></span> <span data-ttu-id="959fb-118">通常、C++ コードの場合、 _lpvcontext_パラメーターはオブジェクトのアドレスへのポインターを表します。</span><span class="sxs-lookup"><span data-stu-id="959fb-118">Typically, for C++ code, the  _lpvContext_ parameter represents a pointer to the address of an object.</span></span> 
+> <span data-ttu-id="7bf0b-116">[in]MAPI がコールバック関数を呼び出す際にコールバック関数に渡される呼び出し元データへのポインター。</span><span class="sxs-lookup"><span data-stu-id="7bf0b-116">[in] Pointer to caller data passed to the callback function when MAPI calls it.</span></span> <span data-ttu-id="7bf0b-117">呼び出し元データは、クライアントまたはプロバイダーにとって重要なアドレスを表すことができます。</span><span class="sxs-lookup"><span data-stu-id="7bf0b-117">The caller data can represent an address of significance to the client or provider.</span></span> <span data-ttu-id="7bf0b-118">通常、C++ コードの場合  _、lpvContext_ パラメーターはオブジェクトのアドレスへのポインターを表します。</span><span class="sxs-lookup"><span data-stu-id="7bf0b-118">Typically, for C++ code, the  _lpvContext_ parameter represents a pointer to the address of an object.</span></span> 
     
- <span data-ttu-id="959fb-119">_lppAdviseSink_</span><span class="sxs-lookup"><span data-stu-id="959fb-119">_lppAdviseSink_</span></span>
+ <span data-ttu-id="7bf0b-119">_lppAdviseSink_</span><span class="sxs-lookup"><span data-stu-id="7bf0b-119">_lppAdviseSink_</span></span>
   
-> <span data-ttu-id="959fb-120">読み上げアドバイズシンクオブジェクトへのポインターへのポインター。</span><span class="sxs-lookup"><span data-stu-id="959fb-120">[out] Pointer to a pointer to an advise sink object.</span></span>
+> <span data-ttu-id="7bf0b-120">[out]アアドバイス シンク オブジェクトへのポインターへのポインター。</span><span class="sxs-lookup"><span data-stu-id="7bf0b-120">[out] Pointer to a pointer to an advise sink object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="959fb-121">Return value</span><span class="sxs-lookup"><span data-stu-id="959fb-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="7bf0b-121">Return value</span><span class="sxs-lookup"><span data-stu-id="7bf0b-121">Return value</span></span>
 
-<span data-ttu-id="959fb-122">なし。</span><span class="sxs-lookup"><span data-stu-id="959fb-122">None.</span></span>
+<span data-ttu-id="7bf0b-122">なし。</span><span class="sxs-lookup"><span data-stu-id="7bf0b-122">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="959fb-123">注釈</span><span class="sxs-lookup"><span data-stu-id="959fb-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7bf0b-123">注釈</span><span class="sxs-lookup"><span data-stu-id="7bf0b-123">Remarks</span></span>
 
-<span data-ttu-id="959fb-124">**HrAllocAdviseSink**関数を使用するために、クライアントアプリケーションまたはサービスプロバイダーは通知を受信するオブジェクトを作成し、そのオブジェクトに含まれる[NOTIFCALLBACK](notifcallback.md)関数プロトタイプに基づいて通知コールバック関数を作成します。を指定し、 **HrAllocAdviseSink**関数内のオブジェクトへのポインターを_lpvcontext_値として渡します。</span><span class="sxs-lookup"><span data-stu-id="959fb-124">To use the **HrAllocAdviseSink** function, a client application or service provider creates an object to receive notifications, creates a notification callback function based on the [NOTIFCALLBACK](notifcallback.md) function prototype that goes with that object, and passes a pointer to the object in the **HrAllocAdviseSink** function as the  _lpvContext_ value.</span></span> <span data-ttu-id="959fb-125">これにより通知が行われます。通知処理の一環として、MAPI はオブジェクトポインターをコンテキストとしてコールバック関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="959fb-125">Doing so performs a notification; and as part of the notification process, MAPI calls the callback function with the object pointer as the context.</span></span> 
+<span data-ttu-id="7bf0b-124">**HrAllocAdviseSink** 関数を使用するには、クライアント アプリケーションまたはサービス プロバイダーが通知を受け取るオブジェクトを作成し、そのオブジェクトに対応する [NOTIFCALLBACK](notifcallback.md)関数プロトタイプに基づいて通知コールバック関数を作成し **、HrAllocAdviseSink** 関数内のオブジェクトへのポインターを _lpvContext_ 値として渡します。</span><span class="sxs-lookup"><span data-stu-id="7bf0b-124">To use the **HrAllocAdviseSink** function, a client application or service provider creates an object to receive notifications, creates a notification callback function based on the [NOTIFCALLBACK](notifcallback.md) function prototype that goes with that object, and passes a pointer to the object in the **HrAllocAdviseSink** function as the  _lpvContext_ value.</span></span> <span data-ttu-id="7bf0b-125">通知を実行します。通知プロセスの一部として、MAPI はオブジェクト ポインターをコンテキストとしてコールバック関数を呼び出します。</span><span class="sxs-lookup"><span data-stu-id="7bf0b-125">Doing so performs a notification; and as part of the notification process, MAPI calls the callback function with the object pointer as the context.</span></span> 
   
-<span data-ttu-id="959fb-126">MAPI は、通知エンジンを非同期的に実装します。</span><span class="sxs-lookup"><span data-stu-id="959fb-126">MAPI implements its notification engine asynchronously.</span></span> <span data-ttu-id="959fb-127">C++ では、通知コールバックはオブジェクトメソッドにすることができます。</span><span class="sxs-lookup"><span data-stu-id="959fb-127">In C++, the notification callback can be an object method.</span></span> <span data-ttu-id="959fb-128">通知を生成するオブジェクトが存在しない場合は、通知を要求しているクライアントまたはプロバイダーは、オブジェクトのアドバイズシンクに対して、そのオブジェクトに対して個別の参照カウントを保持する必要があります。</span><span class="sxs-lookup"><span data-stu-id="959fb-128">If the object generating the notification is not present, the client or provider requesting notification must keep a separate reference count for that object for the object's advise sink.</span></span> 
+<span data-ttu-id="7bf0b-126">MAPI は、通知エンジンを非同期的に実装します。</span><span class="sxs-lookup"><span data-stu-id="7bf0b-126">MAPI implements its notification engine asynchronously.</span></span> <span data-ttu-id="7bf0b-127">C++ では、通知コールバックにはオブジェクト メソッドを指定できます。</span><span class="sxs-lookup"><span data-stu-id="7bf0b-127">In C++, the notification callback can be an object method.</span></span> <span data-ttu-id="7bf0b-128">通知を生成するオブジェクトが存在しない場合、通知を要求するクライアントまたはプロバイダーは、オブジェクトのアアドバイス シンクに対して、そのオブジェクトの個別の参照カウントを保持する必要があります。</span><span class="sxs-lookup"><span data-stu-id="7bf0b-128">If the object generating the notification is not present, the client or provider requesting notification must keep a separate reference count for that object for the object's advise sink.</span></span> 
   
 > [!CAUTION]
-> <span data-ttu-id="959fb-129">**HrAllocAdviseSink**は控えめに使用する必要があります。クライアントが独自のアドバイズシンクを作成することは安全です。</span><span class="sxs-lookup"><span data-stu-id="959fb-129">**HrAllocAdviseSink** should be used sparingly; it is safer for clients to create their own advise sinks.</span></span> 
+> <span data-ttu-id="7bf0b-129">**HrAllocAdviseSink を** 使用する必要があります。クライアントが独自のアドバイス シンクを作成する方が安全です。</span><span class="sxs-lookup"><span data-stu-id="7bf0b-129">**HrAllocAdviseSink** should be used sparingly; it is safer for clients to create their own advise sinks.</span></span> 
   
 

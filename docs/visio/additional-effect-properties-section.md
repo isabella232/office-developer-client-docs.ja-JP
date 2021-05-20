@@ -14,12 +14,12 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33429966"
 ---
-# <a name="additional-effect-properties-section"></a><span data-ttu-id="73040-104">[追加効果のプロパティ] セクション</span><span class="sxs-lookup"><span data-stu-id="73040-104">Additional Effect Properties Section</span></span>
+# <a name="additional-effect-properties-section"></a><span data-ttu-id="98887-104">[追加効果のプロパティ] セクション</span><span class="sxs-lookup"><span data-stu-id="98887-104">Additional Effect Properties Section</span></span>
 
-<span data-ttu-id="73040-p102">図形に適用される追加効果を表示します (反射、グロー、ぼかしを含む)。このセクションには、スケッチ効果の値も含まれます。</span><span class="sxs-lookup"><span data-stu-id="73040-p102">Shows the additional effects applied to the shape, including reflection, glow, and soft edges effects. This section also included the values for a Sketch effect.</span></span>
+<span data-ttu-id="98887-p102">図形に適用される追加効果を表示します (反射、グロー、ぼかしを含む)。このセクションには、スケッチ効果の値も含まれます。</span><span class="sxs-lookup"><span data-stu-id="98887-p102">Shows the additional effects applied to the shape, including reflection, glow, and soft edges effects. This section also included the values for a Sketch effect.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="73040-107">注釈</span><span class="sxs-lookup"><span data-stu-id="73040-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="98887-107">注釈</span><span class="sxs-lookup"><span data-stu-id="98887-107">Remarks</span></span>
 
-<span data-ttu-id="73040-108">[**図形の書式設定**] ダイアログボックス ([**ホーム** > **図形のスタイル** > **効果**) で、[反射]、[光彩]、[ぼかし] の各効果を設定できます。</span><span class="sxs-lookup"><span data-stu-id="73040-108">You can set the reflection, glow, and soft edges effects in the **Format Shape** dialog box (**Home** > **Shape Styles** > **Effects**).</span></span> <span data-ttu-id="73040-109">スケッチ効果を図形に適用するには、いずれかのスケッチテーマ\*\*\*\*(**デザイン** > **テーマ** > ) を使用するか、または対応するシェイプシートのセルの値に変更を加えます。</span><span class="sxs-lookup"><span data-stu-id="73040-109">A Sketch effect can be applied to a shape by using one of the sketch themes (**Design** > **Themes** > **Effects**) or by making changes to values in the corresponding ShapeSheet cells.</span></span>
+<span data-ttu-id="98887-108">反射、光彩、およびソフト エッジの効果は、[図形の書式設定] ダイアログ ボックス **([** ホーム図形スタイルの効果])  >  **で設定**  >  **できます**。</span><span class="sxs-lookup"><span data-stu-id="98887-108">You can set the reflection, glow, and soft edges effects in the **Format Shape** dialog box (**Home** > **Shape Styles** > **Effects**).</span></span> <span data-ttu-id="98887-109">スケッチ効果は、スケッチ **テーマの** 1 つ (デザイン テーマ効果) を使用するか、対応する ShapeSheet セルの値を変更することで、図形  >    >  に適用できます。</span><span class="sxs-lookup"><span data-stu-id="98887-109">A Sketch effect can be applied to a shape by using one of the sketch themes (**Design** > **Themes** > **Effects**) or by making changes to values in the corresponding ShapeSheet cells.</span></span>
   
 

@@ -19,19 +19,19 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33431597"
 ---
-# <a name="builddisplaytable"></a><span data-ttu-id="e83fe-103">BuildDisplayTable</span><span class="sxs-lookup"><span data-stu-id="e83fe-103">BuildDisplayTable</span></span>
+# <a name="builddisplaytable"></a><span data-ttu-id="16f6e-103">BuildDisplayTable</span><span class="sxs-lookup"><span data-stu-id="16f6e-103">BuildDisplayTable</span></span>
 
   
   
-<span data-ttu-id="e83fe-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="e83fe-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="16f6e-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="16f6e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="e83fe-105">1つ以上の[dtpage](dtpage.md)構造に含まれるプロパティページデータから、表示テーブルを作成します。</span><span class="sxs-lookup"><span data-stu-id="e83fe-105">Creates a display table from the property page data contained in one or more [DTPAGE](dtpage.md) structures.</span></span> 
+<span data-ttu-id="16f6e-105">1 つ以上の DTPAGE 構造に含まれるプロパティ ページ データから表示テーブル [を作成](dtpage.md) します。</span><span class="sxs-lookup"><span data-stu-id="16f6e-105">Creates a display table from the property page data contained in one or more [DTPAGE](dtpage.md) structures.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="e83fe-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="e83fe-106">Header file:</span></span>  <br/> |<span data-ttu-id="e83fe-107">Mapiutil</span><span class="sxs-lookup"><span data-stu-id="e83fe-107">Mapiutil.h</span></span>  <br/> |
-|<span data-ttu-id="e83fe-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="e83fe-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="e83fe-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="e83fe-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="e83fe-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="e83fe-110">Called by:</span></span>  <br/> |<span data-ttu-id="e83fe-111">サービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="e83fe-111">Service providers</span></span>  <br/> |
+|<span data-ttu-id="16f6e-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="16f6e-106">Header file:</span></span>  <br/> |<span data-ttu-id="16f6e-107">Mapiutil.h</span><span class="sxs-lookup"><span data-stu-id="16f6e-107">Mapiutil.h</span></span>  <br/> |
+|<span data-ttu-id="16f6e-108">実装元:</span><span class="sxs-lookup"><span data-stu-id="16f6e-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="16f6e-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="16f6e-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="16f6e-110">呼び出し元:</span><span class="sxs-lookup"><span data-stu-id="16f6e-110">Called by:</span></span>  <br/> |<span data-ttu-id="16f6e-111">サービス プロバイダー</span><span class="sxs-lookup"><span data-stu-id="16f6e-111">Service providers</span></span>  <br/> |
    
 ```cpp
 STDAPI BuildDisplayTable(
@@ -48,70 +48,70 @@ STDAPI BuildDisplayTable(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="e83fe-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="e83fe-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="16f6e-112">パラメーター</span><span class="sxs-lookup"><span data-stu-id="16f6e-112">Parameters</span></span>
 
- <span data-ttu-id="e83fe-113">_lpAllocateBuffer_</span><span class="sxs-lookup"><span data-stu-id="e83fe-113">_lpAllocateBuffer_</span></span>
+ <span data-ttu-id="16f6e-113">_lpAllocateBuffer_</span><span class="sxs-lookup"><span data-stu-id="16f6e-113">_lpAllocateBuffer_</span></span>
   
-> <span data-ttu-id="e83fe-114">順番メモリの割り当てに使用される[MAPIAllocateBuffer](mapiallocatebuffer.md)関数へのポインター。</span><span class="sxs-lookup"><span data-stu-id="e83fe-114">[in] Pointer to the [MAPIAllocateBuffer](mapiallocatebuffer.md) function, to be used to allocate memory.</span></span> 
+> <span data-ttu-id="16f6e-114">[in]メモリの割 [り当てに使用する MAPIAllocateBuffer](mapiallocatebuffer.md) 関数へのポインター。</span><span class="sxs-lookup"><span data-stu-id="16f6e-114">[in] Pointer to the [MAPIAllocateBuffer](mapiallocatebuffer.md) function, to be used to allocate memory.</span></span> 
     
- <span data-ttu-id="e83fe-115">_lpAllocateMore_</span><span class="sxs-lookup"><span data-stu-id="e83fe-115">_lpAllocateMore_</span></span>
+ <span data-ttu-id="16f6e-115">_lpAllocateMore_</span><span class="sxs-lookup"><span data-stu-id="16f6e-115">_lpAllocateMore_</span></span>
   
-> <span data-ttu-id="e83fe-116">順番追加のメモリを割り当てるために使用される[MAPIAllocateMore](mapiallocatemore.md)関数へのポインター。</span><span class="sxs-lookup"><span data-stu-id="e83fe-116">[in] Pointer to the [MAPIAllocateMore](mapiallocatemore.md) function, to be used to allocate additional memory.</span></span> 
+> <span data-ttu-id="16f6e-116">[in]追加のメモリ [の割り当てに使用する MAPIAllocateMore](mapiallocatemore.md) 関数へのポインター。</span><span class="sxs-lookup"><span data-stu-id="16f6e-116">[in] Pointer to the [MAPIAllocateMore](mapiallocatemore.md) function, to be used to allocate additional memory.</span></span> 
     
- <span data-ttu-id="e83fe-117">_lpfreebuffer_</span><span class="sxs-lookup"><span data-stu-id="e83fe-117">_lpFreeBuffer_</span></span>
+ <span data-ttu-id="16f6e-117">_lpFreeBuffer_</span><span class="sxs-lookup"><span data-stu-id="16f6e-117">_lpFreeBuffer_</span></span>
   
-> <span data-ttu-id="e83fe-118">順番メモリを解放するために使用される[MAPIFreeBuffer](mapifreebuffer.md)関数へのポインター。</span><span class="sxs-lookup"><span data-stu-id="e83fe-118">[in] Pointer to the [MAPIFreeBuffer](mapifreebuffer.md) function, to be used to free memory.</span></span> 
+> <span data-ttu-id="16f6e-118">[in]メモリを解放するために使用する [MAPIFreeBuffer](mapifreebuffer.md) 関数へのポインター。</span><span class="sxs-lookup"><span data-stu-id="16f6e-118">[in] Pointer to the [MAPIFreeBuffer](mapifreebuffer.md) function, to be used to free memory.</span></span> 
     
- <span data-ttu-id="e83fe-119">_lpmalloc_</span><span class="sxs-lookup"><span data-stu-id="e83fe-119">_lpMalloc_</span></span>
+ <span data-ttu-id="16f6e-119">_lpMalloc_</span><span class="sxs-lookup"><span data-stu-id="16f6e-119">_lpMalloc_</span></span>
   
-> <span data-ttu-id="e83fe-120">使用NULL に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e83fe-120">Unused; should be set to NULL.</span></span> 
+> <span data-ttu-id="16f6e-120">未使用。は NULL に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="16f6e-120">Unused; should be set to NULL.</span></span> 
     
- <span data-ttu-id="e83fe-121">_hInstance_</span><span class="sxs-lookup"><span data-stu-id="e83fe-121">_hInstance_</span></span>
+ <span data-ttu-id="16f6e-121">_hInstance_</span><span class="sxs-lookup"><span data-stu-id="16f6e-121">_hInstance_</span></span>
   
-> <span data-ttu-id="e83fe-122">順番**builddisplaytable**がリソースを取得する MAPI オブジェクトのインスタンス。</span><span class="sxs-lookup"><span data-stu-id="e83fe-122">[in] An instance of a MAPI object from which **BuildDisplayTable** retrieves resources.</span></span> 
+> <span data-ttu-id="16f6e-122">[in] **BuildDisplayTable** がリソースを取得する MAPI オブジェクトのインスタンス。</span><span class="sxs-lookup"><span data-stu-id="16f6e-122">[in] An instance of a MAPI object from which **BuildDisplayTable** retrieves resources.</span></span> 
     
- <span data-ttu-id="e83fe-123">_cpages_</span><span class="sxs-lookup"><span data-stu-id="e83fe-123">_cPages_</span></span>
+ <span data-ttu-id="16f6e-123">_cPages_</span><span class="sxs-lookup"><span data-stu-id="16f6e-123">_cPages_</span></span>
   
-> <span data-ttu-id="e83fe-124">順番_lppage_パラメーターで指定された配列内の[dtpage](dtpage.md)構造体の数。</span><span class="sxs-lookup"><span data-stu-id="e83fe-124">[in] Count of [DTPAGE](dtpage.md) structures in the array pointed to by the  _lpPage_ parameter.</span></span> 
+> <span data-ttu-id="16f6e-124">[in]lpPage [パラメーターが指](dtpage.md) す配列内の  _DTPAGE 構造体の_ 数。</span><span class="sxs-lookup"><span data-stu-id="16f6e-124">[in] Count of [DTPAGE](dtpage.md) structures in the array pointed to by the  _lpPage_ parameter.</span></span> 
     
- <span data-ttu-id="e83fe-125">_lppage_</span><span class="sxs-lookup"><span data-stu-id="e83fe-125">_lpPage_</span></span>
+ <span data-ttu-id="16f6e-125">_lpPage_</span><span class="sxs-lookup"><span data-stu-id="16f6e-125">_lpPage_</span></span>
   
-> <span data-ttu-id="e83fe-126">順番作成するテーブルの表示ページに関する情報を含む**dtpage**構造体の配列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="e83fe-126">[in] Pointer to an array of **DTPAGE** structures that contain information about the display table pages to be built.</span></span> 
+> <span data-ttu-id="16f6e-126">[in]作成する表示テーブル ページに関する情報を含む **DTPAGE** 構造体の配列へのポインター。</span><span class="sxs-lookup"><span data-stu-id="16f6e-126">[in] Pointer to an array of **DTPAGE** structures that contain information about the display table pages to be built.</span></span> 
     
- <span data-ttu-id="e83fe-127">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="e83fe-127">_ulFlags_</span></span>
+ <span data-ttu-id="16f6e-127">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="16f6e-127">_ulFlags_</span></span>
   
-> <span data-ttu-id="e83fe-128">順番フラグのビットマスク。</span><span class="sxs-lookup"><span data-stu-id="e83fe-128">[in] Bitmask of flags.</span></span> <span data-ttu-id="e83fe-129">次のフラグを設定できます。</span><span class="sxs-lookup"><span data-stu-id="e83fe-129">The following flag can be set:</span></span>
+> <span data-ttu-id="16f6e-128">[in]フラグのビットマスク。</span><span class="sxs-lookup"><span data-stu-id="16f6e-128">[in] Bitmask of flags.</span></span> <span data-ttu-id="16f6e-129">次のフラグを設定できます。</span><span class="sxs-lookup"><span data-stu-id="16f6e-129">The following flag can be set:</span></span>
     
-<span data-ttu-id="e83fe-130">MAPI_UNICODE</span><span class="sxs-lookup"><span data-stu-id="e83fe-130">MAPI_UNICODE</span></span> 
+<span data-ttu-id="16f6e-130">MAPI_UNICODE</span><span class="sxs-lookup"><span data-stu-id="16f6e-130">MAPI_UNICODE</span></span> 
   
-> <span data-ttu-id="e83fe-131">渡された文字列は Unicode 形式です。</span><span class="sxs-lookup"><span data-stu-id="e83fe-131">The passed-in strings are in Unicode format.</span></span> <span data-ttu-id="e83fe-132">MAPI_UNICODE フラグが設定されていない場合、文字列は ANSI 形式になります。</span><span class="sxs-lookup"><span data-stu-id="e83fe-132">If the MAPI_UNICODE flag is not set, the strings are in ANSI format.</span></span> 
+> <span data-ttu-id="16f6e-131">渡された文字列は Unicode 形式です。</span><span class="sxs-lookup"><span data-stu-id="16f6e-131">The passed-in strings are in Unicode format.</span></span> <span data-ttu-id="16f6e-132">このフラグMAPI_UNICODE設定されていない場合、文字列は ANSI 形式になります。</span><span class="sxs-lookup"><span data-stu-id="16f6e-132">If the MAPI_UNICODE flag is not set, the strings are in ANSI format.</span></span> 
     
- <span data-ttu-id="e83fe-133">_lpptable_</span><span class="sxs-lookup"><span data-stu-id="e83fe-133">_lppTable_</span></span>
+ <span data-ttu-id="16f6e-133">_lppTable_</span><span class="sxs-lookup"><span data-stu-id="16f6e-133">_lppTable_</span></span>
   
-> <span data-ttu-id="e83fe-134">読み上げ表示テーブルへのポインターへのポインター。これには[IMAPITable](imapitableiunknown.md)インターフェイスが公開されます。</span><span class="sxs-lookup"><span data-stu-id="e83fe-134">[out] Pointer to a pointer to the display table, which exposes the [IMAPITable](imapitableiunknown.md) interface.</span></span> 
+> <span data-ttu-id="16f6e-134">[out] [IMAPITable](imapitableiunknown.md) インターフェイスを公開する表示テーブルへのポインターへのポインター。</span><span class="sxs-lookup"><span data-stu-id="16f6e-134">[out] Pointer to a pointer to the display table, which exposes the [IMAPITable](imapitableiunknown.md) interface.</span></span> 
     
- <span data-ttu-id="e83fe-135">_lppTblData_</span><span class="sxs-lookup"><span data-stu-id="e83fe-135">_lppTblData_</span></span>
+ <span data-ttu-id="16f6e-135">_lppTblData_</span><span class="sxs-lookup"><span data-stu-id="16f6e-135">_lppTblData_</span></span>
   
-> <span data-ttu-id="e83fe-136">[入力]_lpptable_パラメーターで返されるテーブルの[itabledata](itabledataiunknown.md)インターフェイスを公開するテーブルデータオブジェクトへのポインターへのポインター。</span><span class="sxs-lookup"><span data-stu-id="e83fe-136">[in, out] Pointer to a pointer to a table data object exposing the [ITableData](itabledataiunknown.md) interface on the table returned in the  _lppTable_ parameter.</span></span> <span data-ttu-id="e83fe-137">テーブルデータオブジェクトが必要ない場合は、ポインター値ではなく、 _lppTblData_を NULL に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="e83fe-137">If no table data object is desired,  _lppTblData_ should be set to NULL instead of a pointer value.</span></span> 
+> <span data-ttu-id="16f6e-136">[in, out]_lppTable_ パラメーターで返されるテーブルの [ITableData](itabledataiunknown.md)インターフェイスを公開するテーブル データ オブジェクトへのポインター。</span><span class="sxs-lookup"><span data-stu-id="16f6e-136">[in, out] Pointer to a pointer to a table data object exposing the [ITableData](itabledataiunknown.md) interface on the table returned in the  _lppTable_ parameter.</span></span> <span data-ttu-id="16f6e-137">テーブル データ オブジェクトが必要ない場合は、ポインター値の代わりに  _lppTblData_ を NULL に設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="16f6e-137">If no table data object is desired,  _lppTblData_ should be set to NULL instead of a pointer value.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="e83fe-138">戻り値</span><span class="sxs-lookup"><span data-stu-id="e83fe-138">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="16f6e-138">戻り値</span><span class="sxs-lookup"><span data-stu-id="16f6e-138">Return value</span></span>
 
-<span data-ttu-id="e83fe-139">なし</span><span class="sxs-lookup"><span data-stu-id="e83fe-139">None</span></span>
+<span data-ttu-id="16f6e-139">なし</span><span class="sxs-lookup"><span data-stu-id="16f6e-139">None</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="e83fe-140">注釈</span><span class="sxs-lookup"><span data-stu-id="e83fe-140">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="16f6e-140">注釈</span><span class="sxs-lookup"><span data-stu-id="16f6e-140">Remarks</span></span>
 
-<span data-ttu-id="e83fe-141">MAPI では、特に、 _lpAllocateBuffer_、 _lpAllocateMore_、および_lpfreebuffer_が指す関数を使用して、オブジェクトインターフェイスを呼び出すときに使用するメモリをクライアントアプリケーションに割り当てます。[imapiprop:: GetProps](imapiprop-getprops.md) and [IMAPITable:: QueryRows](imapitable-queryrows.md)など。</span><span class="sxs-lookup"><span data-stu-id="e83fe-141">MAPI uses the functions pointed to by  _lpAllocateBuffer_,  _lpAllocateMore_, and  _lpFreeBuffer_ for most memory allocation and deallocation, in particular to allocate memory for use by client applications when calling object interfaces such as [IMAPIProp::GetProps](imapiprop-getprops.md) and [IMAPITable::QueryRows](imapitable-queryrows.md).</span></span> 
+<span data-ttu-id="16f6e-141">MAPI では、ほとんどのメモリ割り当ておよび割り当て解除に _lpAllocateBuffer_ _、lpAllocateMore、lpFreeBuffer_ が指す関数を使用して、特に [IMAPIProp::GetProps](imapiprop-getprops.md)や [IMAPITable::QueryRows](imapitable-queryrows.md)などのオブジェクト インターフェイスを呼び出す際にクライアント アプリケーションで使用するメモリを割り当てる。 </span><span class="sxs-lookup"><span data-stu-id="16f6e-141">MAPI uses the functions pointed to by  _lpAllocateBuffer_,  _lpAllocateMore_, and  _lpFreeBuffer_ for most memory allocation and deallocation, in particular to allocate memory for use by client applications when calling object interfaces such as [IMAPIProp::GetProps](imapiprop-getprops.md) and [IMAPITable::QueryRows](imapitable-queryrows.md).</span></span> 
   
-## <a name="notes-to-callers"></a><span data-ttu-id="e83fe-142">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="e83fe-142">Notes to callers</span></span>
+## <a name="notes-to-callers"></a><span data-ttu-id="16f6e-142">呼び出し側への注意</span><span class="sxs-lookup"><span data-stu-id="16f6e-142">Notes to callers</span></span>
 
-<span data-ttu-id="e83fe-143">考えられるすべての情報は、ダイアログリソースから読み取られます。次のようになります。</span><span class="sxs-lookup"><span data-stu-id="e83fe-143">Everything possible is read from the dialog resource, including:</span></span>
+<span data-ttu-id="16f6e-143">可能な限り、次のダイアログ リソースから読み取り可能です。</span><span class="sxs-lookup"><span data-stu-id="16f6e-143">Everything possible is read from the dialog resource, including:</span></span>
   
-- <span data-ttu-id="e83fe-144">ページのタイトル。これは、リソースのダイアログタイトルから読み取る[dtblpage](dtblpage.md)構造の_ulblpszlabel_メンバーです。</span><span class="sxs-lookup"><span data-stu-id="e83fe-144">The page title that is, the  _ulbLpszLabel_ member of the [DTBLPAGE](dtblpage.md) structure read from the dialog title in the resource.</span></span> 
+- <span data-ttu-id="16f6e-144">[DTBLPAGE](dtblpage.md)構造の _ulbLpszLabel_ メンバーであるページ タイトルは、リソースのダイアログ タイトルから読み取ります。</span><span class="sxs-lookup"><span data-stu-id="16f6e-144">The page title that is, the  _ulbLpszLabel_ member of the [DTBLPAGE](dtblpage.md) structure read from the dialog title in the resource.</span></span> 
     
-- <span data-ttu-id="e83fe-145">すべてのコントロールのタイトル。他のコントロール構造の_ulblpszlabel_メンバーは、リソースのコントロールテキストから読み取ります。</span><span class="sxs-lookup"><span data-stu-id="e83fe-145">All control titles that is, the  _ulbLpszLabel_ members of other control structures read from the control text in the resource.</span></span> 
+- <span data-ttu-id="16f6e-145">リソース内のコントロール テキストから読み取った他のコントロール構造の  _ulbLpszLabel_ メンバーであるすべてのコントロール タイトル。</span><span class="sxs-lookup"><span data-stu-id="16f6e-145">All control titles that is, the  _ulbLpszLabel_ members of other control structures read from the control text in the resource.</span></span> 
     
- <span data-ttu-id="e83fe-146">**builddisplaytable**は、入力制御構造で渡されたものをダイアログリソースからの情報で上書きします。これは、 **builddisplaytable**の呼び出し元がページまたはコントロールのタイトルを動的に指定できないことを意味します。</span><span class="sxs-lookup"><span data-stu-id="e83fe-146">**BuildDisplayTable** overwrites anything passed in the input control structures with information from the dialog resource, which means the caller of **BuildDisplayTable** cannot dynamically specify page or control titles.</span></span> <span data-ttu-id="e83fe-147">**builddisplaytable**を持つことができるようにする必要がある呼び出し元は、 _lppTableData_でテーブルデータオブジェクトを返し、その中の行を変更することができます。または、代わりにテーブルデータオブジェクトに手動で表示テーブルを作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="e83fe-147">Callers who need to do that can have **BuildDisplayTable** return the table data object in  _lppTableData_ and change rows in it; or they can build the display table by hand in a table data object instead.</span></span> 
+ <span data-ttu-id="16f6e-146">**BuildDisplayTable** は、ダイアログ リソースからの情報を使用して、入力コントロール構造で渡された内容を上書きします。 **つまり、BuildDisplayTable** の呼び出し元はページまたはコントロールのタイトルを動的に指定できません。</span><span class="sxs-lookup"><span data-stu-id="16f6e-146">**BuildDisplayTable** overwrites anything passed in the input control structures with information from the dialog resource, which means the caller of **BuildDisplayTable** cannot dynamically specify page or control titles.</span></span> <span data-ttu-id="16f6e-147">これを行う必要がある呼び出し元は **、BuildDisplayTable** が  _lppTableData_ のテーブル データ オブジェクトを返し、その中の行を変更できます。または、代わりにテーブル データ オブジェクトで表示テーブルを手で作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="16f6e-147">Callers who need to do that can have **BuildDisplayTable** return the table data object in  _lppTableData_ and change rows in it; or they can build the display table by hand in a table data object instead.</span></span> 
   
-<span data-ttu-id="e83fe-148">_lppTableData_が NULL に設定されていない場合、プロバイダーは、表示テーブルの操作が完了したときに、テーブルデータオブジェクトを解放することを担当します。</span><span class="sxs-lookup"><span data-stu-id="e83fe-148">If  _lppTableData_ is not set to NULL, the provider is responsible for freeing the table data object when it is finished with the display table.</span></span> 
+<span data-ttu-id="16f6e-148">_lppTableData が_ NULL に設定されていない場合、プロバイダーは、表示テーブルの終了時にテーブル データ オブジェクトを解放します。</span><span class="sxs-lookup"><span data-stu-id="16f6e-148">If  _lppTableData_ is not set to NULL, the provider is responsible for freeing the table data object when it is finished with the display table.</span></span> 
   
 

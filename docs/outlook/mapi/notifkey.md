@@ -19,17 +19,17 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33429629"
 ---
-# <a name="notifkey"></a><span data-ttu-id="93c2d-103">NOTIFKEY</span><span class="sxs-lookup"><span data-stu-id="93c2d-103">NOTIFKEY</span></span>
+# <a name="notifkey"></a><span data-ttu-id="9ab9b-103">NOTIFKEY</span><span class="sxs-lookup"><span data-stu-id="9ab9b-103">NOTIFKEY</span></span>
 
   
   
-<span data-ttu-id="93c2d-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="93c2d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="9ab9b-104">**適用対象**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="9ab9b-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="93c2d-105">アドバイズシンク、アドバイズ元、および MAPI 間の接続を一意に識別します。</span><span class="sxs-lookup"><span data-stu-id="93c2d-105">Uniquely identifies a connection between an advise sink, an advise source, and MAPI.</span></span>
+<span data-ttu-id="9ab9b-105">アドバイス シンク、アドバイス ソース、MAPI の間の接続を一意に識別します。</span><span class="sxs-lookup"><span data-stu-id="9ab9b-105">Uniquely identifies a connection between an advise sink, an advise source, and MAPI.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="93c2d-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="93c2d-106">Header file:</span></span>  <br/> |<span data-ttu-id="93c2d-107">Mapispi</span><span class="sxs-lookup"><span data-stu-id="93c2d-107">Mapispi.h</span></span>  <br/> |
+|<span data-ttu-id="9ab9b-106">ヘッダー ファイル:</span><span class="sxs-lookup"><span data-stu-id="9ab9b-106">Header file:</span></span>  <br/> |<span data-ttu-id="9ab9b-107">Mapispi.h</span><span class="sxs-lookup"><span data-stu-id="9ab9b-107">Mapispi.h</span></span>  <br/> |
    
 ```cpp
 typedef struct
@@ -40,31 +40,31 @@ typedef struct
 
 ```
 
-## <a name="members"></a><span data-ttu-id="93c2d-108">メンバー</span><span class="sxs-lookup"><span data-stu-id="93c2d-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="9ab9b-108">Members</span><span class="sxs-lookup"><span data-stu-id="9ab9b-108">Members</span></span>
 
- <span data-ttu-id="93c2d-109">**cb**</span><span class="sxs-lookup"><span data-stu-id="93c2d-109">**cb**</span></span>
+ <span data-ttu-id="9ab9b-109">**cb**</span><span class="sxs-lookup"><span data-stu-id="9ab9b-109">**cb**</span></span>
   
-> <span data-ttu-id="93c2d-110">**ab**メンバーのバイト数。</span><span class="sxs-lookup"><span data-stu-id="93c2d-110">Count of bytes in the **ab** member.</span></span> 
+> <span data-ttu-id="9ab9b-110">ab メンバーのバイト **数** 。</span><span class="sxs-lookup"><span data-stu-id="9ab9b-110">Count of bytes in the **ab** member.</span></span> 
     
- <span data-ttu-id="93c2d-111">**l**</span><span class="sxs-lookup"><span data-stu-id="93c2d-111">**ab**</span></span>
+ <span data-ttu-id="9ab9b-111">**ab**</span><span class="sxs-lookup"><span data-stu-id="9ab9b-111">**ab**</span></span>
   
-> <span data-ttu-id="93c2d-112">通知キーを記述するバイトの配列。</span><span class="sxs-lookup"><span data-stu-id="93c2d-112">Array of bytes describing the notification key.</span></span>
+> <span data-ttu-id="9ab9b-112">通知キーを記述するバイトの配列。</span><span class="sxs-lookup"><span data-stu-id="9ab9b-112">Array of bytes describing the notification key.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="93c2d-113">注釈</span><span class="sxs-lookup"><span data-stu-id="93c2d-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9ab9b-113">注釈</span><span class="sxs-lookup"><span data-stu-id="9ab9b-113">Remarks</span></span>
 
-<span data-ttu-id="93c2d-114">[imapisupport](imapisupportiunknown.md)の[Subscribe](imapisupport-subscribe.md)メソッドおよび[Notify](imapisupport-notify.md)メソッドは、 **NOTIFKEY**構造体を使用して、適切なアドバイズソースに関する適切なアドバイズシンクに対する通知を生成します。</span><span class="sxs-lookup"><span data-stu-id="93c2d-114">The [Subscribe](imapisupport-subscribe.md) and [Notify](imapisupport-notify.md) methods of [IMAPISupport](imapisupportiunknown.md) use the **NOTIFKEY** structure to generate notifications to the appropriate advise sink about the appropriate advise source.</span></span> 
+<span data-ttu-id="9ab9b-114">[IMAPISupport](imapisupportiunknown.md)の Subscribe メソッドと [Notify](imapisupport-notify.md)メソッドは **、NOTIFKEY** 構造体を使用して、適切なアドバイス ソースに関する適切なアアドバイス シンクへの通知を生成します。 [](imapisupport-subscribe.md)</span><span class="sxs-lookup"><span data-stu-id="9ab9b-114">The [Subscribe](imapisupport-subscribe.md) and [Notify](imapisupport-notify.md) methods of [IMAPISupport](imapisupportiunknown.md) use the **NOTIFKEY** structure to generate notifications to the appropriate advise sink about the appropriate advise source.</span></span> 
   
-<span data-ttu-id="93c2d-115">サービスプロバイダーは、**アドバイズ**メソッドが呼び出され、通知の登録とその後の通知の送信を処理するために、 **Subscribe**を呼び出すことを希望している場合に通知キーを生成します。</span><span class="sxs-lookup"><span data-stu-id="93c2d-115">Service providers generate notification keys when their **Advise** method is called and they want to call **Subscribe** to handle the notification registration and the subsequent sending of notifications.</span></span> <span data-ttu-id="93c2d-116">通知キーは、アドバイズ元のエントリ識別子にすることも、定数のような他の識別項目にすることもできます。</span><span class="sxs-lookup"><span data-stu-id="93c2d-116">A notification key can be the entry identifier of the advise source or it can be any other identifying item such as a constant.</span></span> <span data-ttu-id="93c2d-117">たとえば、メッセージストアプロバイダーは、その通知キーとしてフォルダーのパスを使用する場合があります。</span><span class="sxs-lookup"><span data-stu-id="93c2d-117">For example, a message store provider might use the path of a folder as its notification key.</span></span> 
+<span data-ttu-id="9ab9b-115">サービス プロバイダーは **、Advise** メソッドが呼び出され、通知登録とその後の通知の送信を処理するために **Subscribe** を呼び出す場合に通知キーを生成します。</span><span class="sxs-lookup"><span data-stu-id="9ab9b-115">Service providers generate notification keys when their **Advise** method is called and they want to call **Subscribe** to handle the notification registration and the subsequent sending of notifications.</span></span> <span data-ttu-id="9ab9b-116">通知キーには、アドバイス ソースのエントリ識別子を指定するか、定数などの他の識別アイテムを指定できます。</span><span class="sxs-lookup"><span data-stu-id="9ab9b-116">A notification key can be the entry identifier of the advise source or it can be any other identifying item such as a constant.</span></span> <span data-ttu-id="9ab9b-117">たとえば、メッセージ ストア プロバイダーは、フォルダーのパスを通知キーとして使用できます。</span><span class="sxs-lookup"><span data-stu-id="9ab9b-117">For example, a message store provider might use the path of a folder as its notification key.</span></span> 
   
-<span data-ttu-id="93c2d-118">通知キーは、複数のプロセス間で機能します。</span><span class="sxs-lookup"><span data-stu-id="93c2d-118">The notification key should work across multiple processes.</span></span> 
+<span data-ttu-id="9ab9b-118">通知キーは、複数のプロセスで機能する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9ab9b-118">The notification key should work across multiple processes.</span></span> 
   
-<span data-ttu-id="93c2d-119">通知キーのスコープ要件は、長期間のエントリ識別子の場合と似ています。</span><span class="sxs-lookup"><span data-stu-id="93c2d-119">The scope requirements for a notification key resemble those for a long-term entry identifier.</span></span> <span data-ttu-id="93c2d-120">ただし、エントリ id とは異なり、通知キーはバイナリ比較可能である必要があります。</span><span class="sxs-lookup"><span data-stu-id="93c2d-120">However, unlike an entry identifier, a notification key must be binary-comparable.</span></span> <span data-ttu-id="93c2d-121">通常、通知キーには、サービスプロバイダーによって定義された**GUID**値と、その後にオブジェクトに固有の他のプロバイダー固有の情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="93c2d-121">Typically, a notification key includes a **GUID** value defined by the service provider followed by other provider-specific information unique to the object.</span></span> 
+<span data-ttu-id="9ab9b-119">通知キーのスコープ要件は、長期的なエントリ識別子の要件と似ている。</span><span class="sxs-lookup"><span data-stu-id="9ab9b-119">The scope requirements for a notification key resemble those for a long-term entry identifier.</span></span> <span data-ttu-id="9ab9b-120">ただし、エントリ識別子とは異なり、通知キーはバイナリと同等である必要があります。</span><span class="sxs-lookup"><span data-stu-id="9ab9b-120">However, unlike an entry identifier, a notification key must be binary-comparable.</span></span> <span data-ttu-id="9ab9b-121">通常、通知キーには、サービス プロバイダーによって定義された **GUID** 値と、そのオブジェクトに固有の他のプロバイダー固有の情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="9ab9b-121">Typically, a notification key includes a **GUID** value defined by the service provider followed by other provider-specific information unique to the object.</span></span> 
   
-<span data-ttu-id="93c2d-122">**NOTIFKEY**構造を使用して、アドバイズシンクと通知を生成するオブジェクト間の接続を管理する方法については、「[サポートイベントの通知](supporting-event-notification.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="93c2d-122">For a discussion of the use of the **NOTIFKEY** structure to manage the connections between the advise sinks and the objects that generate the notifications, see [Supporting Event Notification](supporting-event-notification.md).</span></span> 
+<span data-ttu-id="9ab9b-122">**NOTIFKEY** 構造体を使用して、通知を生成するアアドバイス シンクとオブジェクト間の接続を管理する方法については、「サポート イベント通知」[を参照してください](supporting-event-notification.md)。</span><span class="sxs-lookup"><span data-stu-id="9ab9b-122">For a discussion of the use of the **NOTIFKEY** structure to manage the connections between the advise sinks and the objects that generate the notifications, see [Supporting Event Notification](supporting-event-notification.md).</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="93c2d-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="93c2d-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9ab9b-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="9ab9b-123">See also</span></span>
 
 
 
-[<span data-ttu-id="93c2d-124">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="93c2d-124">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="9ab9b-124">MAPI の構造</span><span class="sxs-lookup"><span data-stu-id="9ab9b-124">MAPI Structures</span></span>](mapi-structures.md)
 
