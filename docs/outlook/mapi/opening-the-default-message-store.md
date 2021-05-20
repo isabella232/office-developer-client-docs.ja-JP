@@ -19,23 +19,23 @@ ms.locfileid: "33436028"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-特定のセッションでは、1つのメッセージストアが既定のメッセージストアとして機能します。 既定のメッセージストアには、次のような特性があります。
+特定のセッションでは、1 つのメッセージ ストアが既定のメッセージ ストアとして機能します。 既定のメッセージ ストアには、次の特性があります。
   
-- **PR_DEFAULT_STORE** ([PidTagDefaultStore](pidtagdefaultstore-canonical-property.md)) プロパティは TRUE に設定されています。
+- プロパティ **PR_DEFAULT_STORE** ([PidTagDefaultStore](pidtagdefaultstore-canonical-property.md)) プロパティは TRUE に設定されます。
     
-- STATUS_DEFAULT_STORE フラグは、 **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) プロパティで設定されます。
+- このSTATUS_DEFAULT_STOREフラグは、プロパティ **(** [PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) PR_RESOURCE_FLAGSで設定されます。
     
-- MAPI は、メッセージストアが開かれたときに、検索結果、共通ビュー、個人用ビューの IPM サブツリーとルートフォルダーを自動的に作成します。 これらのフォルダーの詳細については、「 [IPM Subtree](ipm-subtree.md) and [MAPI Special folders](mapi-special-folders.md)」を参照してください。 
+- MAPI は、メッセージ ストアを開く際に、検索結果、一般的なビュー、個人用ビューの IPM サブツリーとルート フォルダーを自動的に作成します。 これらのフォルダーの詳細については [、「IPM Subtree」および「MAPI Special](ipm-subtree.md) [Folders」を参照してください](mapi-special-folders.md)。 
     
-既定のメッセージストアのエントリ識別子を取得するには、 [imapisession:: getmsgstorestable](imapisession-getmsgstorestable.md)を呼び出して、メッセージストアテーブルを開き、 [hrqueryallrows](hrqueryallrows.md)への呼び出しに適切な制限を適用する必要があります。 **hrqueryallrows**は、既定のメッセージストアを表す1行の行セットを返します。 **hrqueryallrows**に渡す制限は、次のいずれかの形式で行うことができます。 
+既定のメッセージ ストアのエントリ識別子を取得するには [、IMAPISession::GetMsgStoresTable](imapisession-getmsgstorestable.md) を呼び出してメッセージ ストア テーブルを開き [、HrQueryAllRows](hrqueryallrows.md)の呼び出しで適切な制限を適用する必要があります。 **HrQueryAllRows は** 、既定のメッセージ ストアを表す 1 行の行セットを返します。 **HrQueryAllRows** に渡す制限は、次のいずれかの形式で実行できます。 
   
-1. **SAndRestriction**構造体を使用して結合する**と**、次のような制限があります。 
+1. 次 **の組** み合わせに **SAndRestriction 構造を使用する** AND 制限。 
     
-   - **PR_DEFAULT_STORE**プロパティが存在するかどうかをテストするために、 **sexistrestriction**構造を使用する存在する制限。 
+   - **SExistRestriction** 構造体を使用して、プロパティの存在をテストする **PR_DEFAULT_STOREがあります。** 
     
-   - **PR_DEFAULT_STORE**プロパティの TRUE 値をチェックするために[spropertyrestriction](spropertyrestriction.md)構造を使用するプロパティ制限。 
+   - [SPropertyRestriction](spropertyrestriction.md)構造体を使用して、プロパティの TRUE 値を確認するプロパティ **PR_DEFAULT_STOREします。** 
     
-2. **PR_RESOURCE_FLAGS**プロパティに対するマスクとして STATUS_DEFAULT_STORE を適用するために[sbitmaskrestriction](sbitmaskrestriction.md)構造を使用するビットマスク制限。 
+2. [SBitMaskRestriction](sbitmaskrestriction.md)構造体を使用して、STATUS_DEFAULT_STORE プロパティに対してマスクとして適用するビットマスク **PR_RESOURCE_FLAGS** 制限。 
     
 ## <a name="see-also"></a>関連項目
 

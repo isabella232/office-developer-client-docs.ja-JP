@@ -70,7 +70,7 @@ XML 属性とそれぞれの値は、各ノードをターゲットの XML ド�
  agg:action="delete"/>
 ```
 
-`http://schemas.microsoft.com/office/InfoPath/2003/aggregation` インターフェイスを実装する XSL オブジェクトを表すには、  `http://schemas.microsoft.com/office/infopath/2003/aggregation-target` 名前空間に指定されている属性のほか、  **** 名前空間も使用します。このインターフェイスのメンバーの中で特に有益なのが、 **get-documentElement** です。
+`http://schemas.microsoft.com/office/InfoPath/2003/aggregation` インターフェイスを実装する XSL オブジェクトを表すには、  `http://schemas.microsoft.com/office/infopath/2003/aggregation-target` 名前空間に指定されている属性のほか、   名前空間も使用します。このインターフェイスのメンバーの中で特に有益なのが、 **get-documentElement** です。
   
 ### <a name="get-documentelement"></a>get-documentElement
 

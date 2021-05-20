@@ -18,14 +18,14 @@ ms.locfileid: "34540225"
 
 ドキュメントに格納されているソリューションのプロパティを指定します。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Solutions_Type](solutions_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
-|**文書パーツ** <br/> |ソリューション xml  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
+|**ドキュメント パーツ** <br/> |solutions.xml  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -35,7 +35,7 @@ ms.locfileid: "34540225"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
+スキーマで **sequence**、**minOccurs**、**maxOccurs**、**choice** などの具体的な要件が定義されている場合は、定義のセクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
@@ -45,7 +45,7 @@ ms.locfileid: "34540225"
 
 |**Element**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[Solution](solution-element-solutions_type-complextypevisio-xml.md) <br/> |[Solution_Type](solution_type-complextypevisio-xml.md) <br/> |図面に格納されているソリューション XML の1つのインスタンスを指定します。  <br/> |
+|[Solution](solution-element-solutions_type-complextypevisio-xml.md) <br/> |[Solution_Type](solution_type-complextypevisio-xml.md) <br/> |図面に格納されているソリューション XML のインスタンスを 1 つ指定します。  <br/> |
    
 ### <a name="attributes"></a>属性
 

@@ -18,14 +18,14 @@ ms.locfileid: "34538551"
 
 図面に対する図の検証に関する情報を格納します。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Validation_Type](validation_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
-|**文書パーツ** <br/> |検証 xml  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
+|**ドキュメント パーツ** <br/> |validation.xml  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -35,7 +35,7 @@ ms.locfileid: "34538551"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
+スキーマで **sequence**、**minOccurs**、**maxOccurs**、**choice** などの具体的な要件が定義されている場合は、定義のセクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
@@ -45,9 +45,9 @@ ms.locfileid: "34538551"
 
 |**Element**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[Issues](issues-element-validation_type-complextypevisio-xml.md) <br/> |[Issues_Type](issues_type-complextypevisio-xml.md) <br/> |文書のすべての**Issue**要素を含みます。  <br/> |
-|[RuleSets](rulesets-element-validation_type-complextypevisio-xml.md) <br/> |[RuleSets_Type](rulesets_type-complextypevisio-xml.md) <br/> |文書内**** の各入力規則のルールセット要素が含まれています。  <br/> |
-|[ValidationProperties プロパティ](validationproperties-element-validation_type-complextypevisio-xml.md) <br/> |[ValidationProperties_Type](validationproperties_type-complextypevisio-xml.md) <br/> |ドキュメントの検証に関連するプロパティをカプセル化します。  <br/> |
+|[Issues](issues-element-validation_type-complextypevisio-xml.md) <br/> |[Issues_Type](issues_type-complextypevisio-xml.md) <br/> |ドキュメントのすべての **Issue** 要素が含まれます。  <br/> |
+|[RuleSets](rulesets-element-validation_type-complextypevisio-xml.md) <br/> |[RuleSets_Type](rulesets_type-complextypevisio-xml.md) <br/> |ドキュメントの検証ルール セットごとに **RuleSet** 要素が含まれます。  <br/> |
+|[ValidationProperties](validationproperties-element-validation_type-complextypevisio-xml.md) <br/> |[ValidationProperties_Type](validationproperties_type-complextypevisio-xml.md) <br/> |ドキュメントの検証に関連するプロパティをカプセル化します。  <br/> |
    
 ### <a name="attributes"></a>属性
 

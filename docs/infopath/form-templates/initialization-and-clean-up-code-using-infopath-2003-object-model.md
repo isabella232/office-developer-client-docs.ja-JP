@@ -81,7 +81,7 @@ Namespace Template1
 End Namespace
 ```
 
-## <a name="the-startup-method"></a>_Startup メソッド
+## <a name="the-_startup-method"></a>_Startup メソッド
 
 追加コンポーネントの初期化コードを記述する場所を提供することに加え、 `_Startup` メソッドは、フォーム コードで InfoPath オブジェクト モデルの `thisXDocument` および `thisApplication` クラスのメンバーにアクセスするために使用できる  [](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx) および  [](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Application.aspx) 変数を初期化します。この 2 つの変数を初期化するために必要なコードは、プロジェクト テンプレートによって自動的に生成されます。 
   
@@ -128,7 +128,7 @@ End Sub
 
 イベント ハンドラーの作成方法については、「[InfoPath 2003 オブジェクト モデルを使用してイベント ハンドラーを追加する方法](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md)」を参照してください。
   
-## <a name="the-shutdown-method"></a>_ShutDown メソッド
+## <a name="the-_shutdown-method"></a>_ShutDown メソッド
 
 `_Shutdown` メソッドは、フォームを閉じるときに呼び出される最後のメソッドです。フォームで使用するコンポーネントの後処理に必要なコードは、このメソッドに記述できます。 
   

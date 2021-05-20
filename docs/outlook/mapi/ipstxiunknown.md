@@ -1,5 +1,5 @@
 ---
-title: ipstx IUnknown
+title: IPSTX IUnknown
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -25,29 +25,29 @@ ms.locfileid: "33436224"
   
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-このインターフェイスは、 **[iostx](iostxiunknown.md)** インターフェイスを介してレプリケーションを実行するときに、ヘルパー機能を提供します。 
+このインターフェイスは、IOSTX インターフェイスを介してレプリケーションを実行するときにヘルパー **[機能を提供](iostxiunknown.md)** します。 
   
 |||
 |:-----|:-----|
-|提供元  <br/> |[IMsgStore](imsgstoreimapiprop.md)のクエリ <br/> |
+|提供者  <br/> |[IMsgStore でのクエリ](imsgstoreimapiprop.md) <br/> |
 |インターフェイス識別子:  <br/> |IID_IPSTX  <br/> |
    
-## <a name="vtable-order"></a>v の順序
+## <a name="vtable-order"></a>Vtable の順序
 
 |||
 |:-----|:-----|
-|**[GetLastError](ipstx-getlasterror.md)** <br/> |最新のエラーに関する拡張情報を取得します。  <br/> |
-|**[GetSyncObject](ipstx-getsyncobject.md)** <br/> |関連付けられた**[iostx](iostxiunknown.md)** インターフェイスを取得します。  <br/> |
-| *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません。*  <br/> |
-| *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません。*  <br/> |
-| *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません。*  <br/> |
-| *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません。*  <br/> |
-|**[EmulateSpooler](ipstx-emulatespooler.md)** <br/> |Outlook プロトコルマネージャーをエミュレートして、送信メッセージをサーバーにスプールするように、ローカルストアを設定します。  <br/> |
-| *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません。*  <br/> |
-| *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません。*  <br/> |
-| *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません。*  <br/> |
-| *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません。*  <br/> |
-| *Placeholder メンバー*  <br/> | *サポートされていないか文書化されていません。*  <br/> |
+|**[GetLastError](ipstx-getlasterror.md)** <br/> |最後のエラーに関する拡張情報を取得します。  <br/> |
+|**[GetSyncObject](ipstx-getsyncobject.md)** <br/> |関連付けられた **[IOSTX インターフェイスを取得](iostxiunknown.md)** します。  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていないか、文書化されていません。*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていないか、文書化されていません。*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていないか、文書化されていません。*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていないか、文書化されていません。*  <br/> |
+|**[EmulateSpooler](ipstx-emulatespooler.md)** <br/> |送信メッセージをサーバーにスプールOutlookプロトコル マネージャーをエミュレートするローカル ストアを設定します。  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていないか、文書化されていません。*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていないか、文書化されていません。*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていないか、文書化されていません。*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていないか、文書化されていません。*  <br/> |
+| *プレースホルダー メンバー*  <br/> | *サポートされていないか、文書化されていません。*  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

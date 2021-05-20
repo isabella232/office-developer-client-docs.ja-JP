@@ -25,26 +25,26 @@ ms.locfileid: "45160294"
   
 ## <a name="syntax"></a>構文
 
-ANGLEALONGPATH (***セクション***、***トラベル*** ***[、segment]*** ) 
+ANGLEALONGPATH(***セクション***, ***travel*** ***[,segment]*** ) 
   
 ### <a name="parameters"></a>パラメーター
 
 |**名前**|**必須 / オプション**|**データ型**|**説明**|
 |:-----|:-----|:-----|:-----|
 | _セクション_ <br/> |必須  <br/> |**String** <br/> |パスを表す [Geometry] セクション。[Path] セルへの参照によって指定されます (Geometry1.Path など)。  <br/> |
-| _travel_ <br/> |必須  <br/> |**Double** <br/> |パスの始点から終点までの割合。 0 ～ 1 の値を指定する必要があります。  <br/> |
+| _旅行_ <br/> |必須  <br/> |**Double** <br/> |パスの始点から終点までの割合。0 ～ 1 の値を指定する必要があります。  <br/> |
 | _segment_ <br/> |省略可能  <br/> |**整数型 (Integer)** <br/> |接線角度を計算するパスの 1 から始まるセグメント。  <br/> |
    
 ### <a name="return-value"></a>戻り値
 
  **倍精度浮動小数点型 (Double)**
   
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-_セグメント_値を指定すると、ANGLEALONGPATH はそのセグメントの値のみを返します。 
+セグメント値を含  _める場合_ 、ANGLEALONGPATH は、そのセグメントの値のみを返します。 
   
-_セグメント_値を指定すると、ANGLEALONGPATH は、_トラベル_を使用して、_セグメント_に沿った segment を計算することで、正接の点を決定します。
+セグメント値を含 _める場合_、ANGLEALONGPATH は、セグメントに沿ったパーサータージュを計算するために移動を使用して接線のポイントを決定 _します_。
   
-_Section_または_segment_のいずれかが存在しない場合は、#REF! が返されます。 
+セクションまたは _セグメント_ が _存在_ しない場合は、Microsoft Visio返#REF!。 
   
 

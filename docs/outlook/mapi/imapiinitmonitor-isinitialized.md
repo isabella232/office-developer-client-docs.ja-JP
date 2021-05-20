@@ -36,7 +36,7 @@ BOOL IMAPIInitMonitor::IsInitialized()
 ## <a name="return-value"></a>戻り値
 MAPI 初期化の現在の状態を示す BOOL は、値 TRUE は MAPI が初期化され、使用できる状態であることを意味し、FALSE の値は MAPI が現在初期化されていない状態で使用できる状態であることを意味します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 これは、MAPI を使用する準備ができているかどうかを判断するために使用できます。たとえば、MAPI が既に初期化されている場合にのみアプリケーションが何かを実行する場合は、オプションの作業のために MAPI をスピンアップするコストを防ぐため、バックグラウンド タスクのチェックに役立つ可能性があります。
 
 ## <a name="see-also"></a>関連項目

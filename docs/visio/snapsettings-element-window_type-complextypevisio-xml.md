@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7b87a244-b331-7e93-d304-239f8ca77061
-description: ウィンドウのスナップがアクティブなときに、図形をスナップするオブジェクトを指定します。
+description: ウィンドウでスナップがアクティブな場合に、図形のスナップ先のオブジェクトを指定します。
 ms.openlocfilehash: 0fbe54f56f79d84e6c6bd8ddc11aa28b7e5ba1dc
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,18 +14,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34540316"
 ---
-# <a name="snapsettings-element-windowtype-complextype-visio-xml"></a>SnapSettings 要素 (Window_Type complexType) (Visio XML)
+# <a name="snapsettings-element-window_type-complextype-visio-xml"></a>SnapSettings 要素 (Window_Type complexType) (Visio XML)
 
-ウィンドウのスナップがアクティブなときに、図形をスナップするオブジェクトを指定します。
+ウィンドウでスナップがアクティブな場合に、図形のスナップ先のオブジェクトを指定します。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[SnapSettings_Type](snapsettings_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
-|**文書パーツ** <br/> |windows .xml  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
+|**ドキュメント パーツ** <br/> |windows.xml  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -36,7 +36,7 @@ ms.locfileid: "34540316"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
+スキーマで **sequence**、**minOccurs**、**maxOccurs**、**choice** などの具体的な要件が定義されている場合は、定義のセクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
@@ -54,21 +54,21 @@ ms.locfileid: "34540316"
   
 ## <a name="remarks"></a>注釈
 
-値には、次の表の値の合計を指定できます。
+値は、次の表の値の合計である場合があります。
   
 |**値**|**説明**|
 |:-----|:-----|
-|.0  <br/> |何もスナップしません。  <br/> |
-|1-d  <br/> |ルーラーの目盛りにスナップします。  <br/> |
-|pbm-2  <br/> |グリッドにスナップします。  <br/> |
-|2/4  <br/> |ガイドにスナップします。  <br/> |
-|8   <br/> |選択ハンドルにスナップします。  <br/> |
-|16  <br/> |頂点にスナップします。  <br/> |
+|0  <br/> |何もスナップしません。  <br/> |
+|1  <br/> |スナップサブディビジョンに設定します。  <br/> |
+|2  <br/> |スナップグリッドに移動します。  <br/> |
+|4  <br/> |ガイドにスナップします。  <br/> |
+|8  <br/> |選択ハンドルにスナップします。  <br/> |
+|16   <br/> |頂点にスナップします。  <br/> |
 |32  <br/> |接続ポイントにスナップします。  <br/> |
-|256  <br/> |表示されている図形の端にスナップします。  <br/> |
-|512  <br/> |整列ボックスにスナップします。  <br/> |
+|256  <br/> |スナップ図形の可視エッジに対して表示されます。  <br/> |
+|512  <br/> |スナップボックスに配置します。  <br/> |
 |1024  <br/> |図形の補助線オプションにスナップします。  <br/> |
-|32768  <br/> |スナップは無効です。  <br/> |
+|32768  <br/> |スナップ無効です。  <br/> |
 |65536  <br/> |交点にスナップします。  <br/> |
    
 

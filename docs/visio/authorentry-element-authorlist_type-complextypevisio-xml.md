@@ -14,18 +14,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34537907"
 ---
-# <a name="authorentry-element-authorlisttype-complextype-visio-xml"></a>AuthorEntry 要素 (AuthorList_Type complexType) (Visio XML)
+# <a name="authorentry-element-authorlist_type-complextype-visio-xml"></a>AuthorEntry 要素 (AuthorList_Type complexType) (Visio XML)
 
 図面内のコメントの作成者を識別するために使用するプロパティを指定します。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[AuthorEntry_Type](authorentry_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
-|**文書パーツ** <br/> |comments  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
+|**ドキュメント パーツ** <br/> |comments.xml  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -36,13 +36,13 @@ ms.locfileid: "34537907"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
+スキーマで **sequence**、**minOccurs**、**maxOccurs**、**choice** などの具体的な要件が定義されている場合は、定義のセクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[AuthorList](authorlist-element-comments_type-complextypevisio-xml.md) <br/> |[AuthorList_Type](authorlist_type-complextypevisio-xml.md) <br/> |図面の作成者を指定します。  <br/> |
+|[AuthorList](authorlist-element-comments_type-complextypevisio-xml.md) <br/> |[AuthorList_Type](authorlist_type-complextypevisio-xml.md) <br/> |図面内の作成者を指定します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 
@@ -52,9 +52,9 @@ ms.locfileid: "34537907"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|ID  <br/> |xsd: アン Signedint  <br/> |必須  <br/> |作成者を識別する1から始まる値。  <br/> |Xsd:/Signedint 型の値。  <br/> |
-|イニシャル  <br/> |xsd: string  <br/> |省略可能  <br/> |作成者のイニシャル。  <br/> |Xsd: string 型の値。  <br/> |
-|名前  <br/> |xsd: string  <br/> |省略可能  <br/> |作成者の名前を指定します。  <br/> |Xsd: string 型の値。  <br/> |
-|解決 Id  <br/> |xsd: string  <br/> |省略可能  <br/> |作成者の一意の識別子。  <br/> |Xsd: string 型の値。  <br/> |
+|ID  <br/> |xsd:unsignedInt  <br/> |必須  <br/> |作成者を識別する 1 ベースの値。  <br/> |xsd:unsignedInt 型の値。  <br/> |
+|Initials  <br/> |xsd:string  <br/> |省略可能  <br/> |作成者のイニシャル。  <br/> |xsd:string 型の値。  <br/> |
+|Name  <br/> |xsd:string  <br/> |省略可能  <br/> |作成者の名前。  <br/> |xsd:string 型の値。  <br/> |
+|ResolutionID  <br/> |xsd:string  <br/> |省略可能  <br/> |作成者の一意の識別子。  <br/> |xsd:string 型の値。  <br/> |
    
 

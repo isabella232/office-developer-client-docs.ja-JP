@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ee190ba7-9e71-97e4-7bf1-7b97adc73eed
-description: '最終更新日: 2019 年9月6日'
+description: '最終更新日: 2019 年 9 月 6 日'
 ms.openlocfilehash: c9fcffa8ad4dc982e869f4ccd449e1377fb1ea57
 ms.sourcegitcommit: 41f2ee16badd6009bab642d68a61eaaccb91c3ec
 ms.translationtype: MT
@@ -40,27 +40,27 @@ HRESULT IConverterSession:: MIMEToMAPI (
 
  _pstm_
   
-> 順番MIME ストリームへの[IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx)インターフェイス。 
+> [in] [MIME ストリームへの IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) インターフェイス。 
     
  _pmsg_
   
-> 順番読み込むメッセージへのポインター。 呼び出し元は、API に入力するメッセージを指定する必要があるので、オブジェクトを [in] に設定する必要があります。 **Lpmessage**の種類の定義については、「mapidefs.h」を参照してください。
+> [in]読み込むメッセージへのポインター。 呼び出し元は API に入力するメッセージを指定する必要があります。そのため、オブジェクトは [in] に移動する必要があります。 LPMESSAGE の型定義については、mapidefs.h **を参照してください**。
     
  _pszSrcSrv_
   
-> 順番この値は**null**である必要があります。
+> [in]この値は null である **必要があります**。
     
  _ulFlags_
   
-> 順番このパラメーターには、変換中に実行する特別なアクションを指定します。 特定のアクションを実行する必要がない場合、または次の値の組み合わせを指定する場合は、ゼロ (0) である必要があります。
+> [in]このパラメーターは、変換中に実行される特別なアクションを識別します。 特定のアクションを実行する必要がない場合、または次の値の組み合わせを 0 に設定する必要があります。
     
 CCSF_EMBEDDED_MESSAGE
   
-> 送信/未送信の情報は、X 未送信の情報として保持されます。
+> 送信/送信されていない情報は X-Unsent に保持されます。
     
 CCSF_SMTP
   
-> MIME ストリームは、SMTP (Simple Mail Transfer Protocol) メッセージに対して使用されます。
+> MIME ストリームは、簡易メール転送プロトコル (SMTP) メッセージ用です。
     
 CCSF_INCLUDE_BCC
   
@@ -68,20 +68,20 @@ CCSF_INCLUDE_BCC
     
 CCSF_USE_RTF
   
-> MIME ストリームの HTML 本文は、MAPI メッセージでリッチテキスト形式 (RTF) に変換する必要があります。
+> MIME ストリームの HTML 本文は、MAPI メッセージでリッチ テキスト形式 (RTF) に変換する必要があります。
 
 CCSF_GLOBAL_MESSAGE
-> コンバータは、MIME ストリームを国際メッセージ (EAI/RFC6530) として処理する必要があります。 Outlook 2013 ではサポートされていません。
+> コンバーターは、MIME ストリームを国際メッセージ (EAI/RFC6530) として処理する必要があります。 2013 年Outlookサポートされていません。
     
 ## <a name="return-value"></a>戻り値
 
 E_INVALIDARG
   
-> _Pstm_が**null**、 _Pmsg_が**null**、 _ulflags_が無効であることを示します。 
+> _pstm_ が null、pmsg が _null、_ または _ulFlags が無効かどうかを_ 示します。  
     
-## <a name="remarks"></a>備考
+## <a name="remarks"></a>注釈
 
-_Ulflags_の一部として**CCSF_USE_RTF**を指定し、宛先のメッセージストアが html と rtf の両方をサポートしている場合、MAPI メッセージは html または rtf に変換されます。 メッセージが RTF に変換される場合、変換された形式は RTF 形式に変換され、すべての HTML が圧縮 RTF 文字列に埋め込まれ、文字列が[PidTagRtfCompressed 標準プロパティ](pidtagrtfcompressed-canonical-property.md)に格納されます。
+_ulFlags_ の **CCSF_USE_RTF** を指定し、宛先メッセージ ストアが HTML と RTF の両方をサポートしている場合、MAPI メッセージは HTML または RTF に変換されます。 メッセージが RTF に変換された場合、変換された形式は RTF 圧縮され、HTML は圧縮された RTF 文字列に埋め込まれます。文字列は [PidTagRtfCompressed Canonical プロパティ](pidtagrtfcompressed-canonical-property.md)に含まれます。
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -89,8 +89,8 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|MapiMime .cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI は MimeToMAPI を使用して、EML ファイルを MAPI メッセージに変換します。  <br/> |
-|MapiMime .cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI は、MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。  <br/> |
+|MapiMime.cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI は MimeToMAPI を使用して EML ファイルを MAPI メッセージに変換します。  <br/> |
+|MapiMime.cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI は MAPIToMIMEStm を使用して MAPI メッセージを EML ファイルに変換します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
 

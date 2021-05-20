@@ -14,18 +14,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34538292"
 ---
-# <a name="refby-element-triggertype-complextype-visio-xml"></a>RefBy 要素 (Trigger_Type complexType) (Visio XML)
+# <a name="refby-element-trigger_type-complextype-visio-xml"></a>RefBy 要素 (Trigger_Type complexType) (Visio XML)
 
 図面内のページへの参照を指定します。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[RefBy_Type](refby_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
-|**文書パーツ** <br/> ||
+|**名詞空間** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
+|**ドキュメント パーツ** <br/> ||
    
 ## <a name="definition"></a>定義
 
@@ -36,13 +36,13 @@ ms.locfileid: "34538292"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
+スキーマで **sequence**、**minOccurs**、**maxOccurs**、**choice** などの具体的な要件が定義されている場合は、定義のセクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[Trigger](trigger-elementvisio-xml.md) <br/> |[Trigger_Type](trigger_type-complextypevisio-xml.md) <br/> |Visio ファイル内の文書パーツ間のリレーションシップを再計算するための手順を Microsoft Visio に提供します。  <br/> |
+|[Trigger](trigger-elementvisio-xml.md) <br/> |[Trigger_Type](trigger_type-complextypevisio-xml.md) <br/> |Microsoft Visioに、Visio ファイル内のドキュメント パーツ間のリレーションシップを再計算するVisioします。  <br/> |
 
    
 ### <a name="child-elements"></a>子要素
@@ -53,7 +53,7 @@ ms.locfileid: "34538292"
 
 |**属性**|**型**|**必須**|**説明**|**可能な値**|
 |:-----|:-----|:-----|:-----|:-----|
-|ID  <br/> |xsd: アン Signedint  <br/> |必須  <br/> |図面内のページの ID 属性を指定します。  <br/> |Xsd:/Signedint 型の値。  <br/> |
-|T  <br/> |xsd: string  <br/> |必須  <br/> |参照の種類を指定します。  <br/> |Xsd: string 型の値。  <br/> |
+|ID  <br/> |xsd:unsignedInt  <br/> |必須  <br/> |図面内のページの ID 属性を指定します。  <br/> |xsd:unsignedInt 型の値。  <br/> |
+|T  <br/> |xsd:string  <br/> |必須  <br/> |参照の種類を指定します。  <br/> |xsd:string 型の値。  <br/> |
    
 

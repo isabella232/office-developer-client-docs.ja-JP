@@ -1,12 +1,12 @@
 ---
-title: 結び付ける要素 (PageContents_Type complexType) (Visio XML)
+title: Connects 要素 (PageContents_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 398c141c-8a40-7605-254a-2ee7cc0a7af5
-description: 図面内の2つの図形を接続するための Connect 要素を含みます。
+description: 図面内の 2 Connect間の接続ごとに 1 つの要素を格納します。
 ms.openlocfilehash: d421068926a40a8f7c24a783388d06091700211f
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,18 +14,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34538712"
 ---
-# <a name="connects-element-pagecontentstype-complextype-visio-xml"></a>結び付ける要素 (PageContents_Type complexType) (Visio XML)
+# <a name="connects-element-pagecontents_type-complextype-visio-xml"></a>Connects 要素 (PageContents_Type complexType) (Visio XML)
 
-図面内の2つの図形を接続するための**Connect**要素を含みます。 
+図面内の **2 Connect** 間の接続ごとに 1 つの要素を格納します。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Connects_Type](connects_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
-|**文書パーツ** <br/> |ページ # .xml、マスター # .xml  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
+|**ドキュメント パーツ** <br/> |page#.xml, master#.xml  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -36,14 +36,14 @@ ms.locfileid: "34538712"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
+スキーマで **sequence**、**minOccurs**、**maxOccurs**、**choice** などの具体的な要件が定義されている場合は、定義のセクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[MasterContents](mastercontents-elementvisio-xml.md) <br/> |[PageContents_Type](pagecontents_type-complextypevisio-xml.md) <br/> |図面のマスターページまたは図面ページの図形に関する情報を指定します。  <br/> |
-|[PageContents](pagecontents-elementvisio-xml.md) <br/> |[PageContents_Type](pagecontents_type-complextypevisio-xml.md) <br/> |図面のマスターページまたは図面ページの図形に関する情報を指定します。  <br/> |
+|[MasterContents](mastercontents-elementvisio-xml.md) <br/> |[PageContents_Type](pagecontents_type-complextypevisio-xml.md) <br/> |図面のマスター ページまたは図面ページ内の図形に関する情報を指定します。  <br/> |
+|[PageContents](pagecontents-elementvisio-xml.md) <br/> |[PageContents_Type](pagecontents_type-complextypevisio-xml.md) <br/> |図面のマスター ページまたは図面ページ内の図形に関する情報を指定します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 

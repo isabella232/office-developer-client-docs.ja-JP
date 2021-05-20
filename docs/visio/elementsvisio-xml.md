@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: cffc4005-e260-38ab-7142-47f949cc7494
-description: このトピックでは、Visio 2013 ファイル形式の XML スキーマの要素を一覧表示します。
+description: このトピックでは、2013 ファイルVisio XML スキーマの要素の一覧を示します。
 ms.openlocfilehash: 8efa50eeac8f236e6879915d920fdb0f38e1f4f2
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "34539920"
 ---
 # <a name="elements-visio-xml"></a>要素 (Visio XML)
 
-このトピックでは、Visio 2013 ファイル形式の XML スキーマの要素を一覧表示します。
+このトピックでは、2013 ファイルVisio XML スキーマの要素の一覧を示します。
   
 - [AttachedToolbars 要素](attachedtoolbars-element-documentsettings_type-complextypevisio-xml.md)
     
@@ -28,13 +28,13 @@ ms.locfileid: "34539920"
     
 - [Cell 要素](cell-elementvisio-xml.md)
     
-- [Cell 要素 (操作タグセクション)](cell-element-action-tag-sectionvisio-xml.md)
+- [Cell 要素 ([操作タグ] セクション)](cell-element-action-tag-sectionvisio-xml.md)
     
 - [Cell 要素 ([Actions] 行)](cell-element-actions-rowvisio-xml.md)
     
 - [Cell 要素 ([ArcTo] 行)](cell-element-arcto-rowvisio-xml.md)
     
-- [Cell 要素 (Character セクション)](cell-element-character-sectionvisio-xml.md)
+- [Cell 要素 ([文字] セクション)](cell-element-character-sectionvisio-xml.md)
     
 - [Cell 要素 ([Connection] 行)](cell-element-connection-rowvisio-xml.md)
     
@@ -44,19 +44,19 @@ ms.locfileid: "34539920"
     
 - [Cell 要素 ([EllipticalArcTo] 行)](cell-element-ellipticalarcto-rowvisio-xml.md)
     
-- [Cell 要素 (フィールドセクション)](cell-element-field-sectionvisio-xml.md)
+- [Cell 要素 ([フィールド] セクション)](cell-element-field-sectionvisio-xml.md)
     
-- [Cell 要素 (塗りつぶしグラデーション] セクション)](cell-element-fill-gradient-sectionvisio-xml.md)
+- [Cell 要素 ([塗りつぶしグラデーション] セクション)](cell-element-fill-gradient-sectionvisio-xml.md)
     
-- [Cell 要素 (Geometry セクション)](cell-element-geometry-sectionvisio-xml.md)
+- [Cell 要素 ([図形座標] セクション)](cell-element-geometry-sectionvisio-xml.md)
     
 - [Cell 要素 ([Hyperlink] 行)](cell-element-hyperlink-rowvisio-xml.md)
     
 - [Cell 要素 ([InfiniteLine] 行)](cell-element-infiniteline-rowvisio-xml.md)
     
-- [Cell 要素 (Layer セクション)](cell-element-layer-sectionvisio-xml.md)
+- [Cell 要素 ([レイヤー] セクション)](cell-element-layer-sectionvisio-xml.md)
     
-- [Cell 要素 (線のグラデーションのセクション)](cell-element-line-gradient-sectionvisio-xml.md)
+- [Cell 要素 ([線のグラデーション] セクション)](cell-element-line-gradient-sectionvisio-xml.md)
     
 - [Cell 要素 ([LineTo] 行)](cell-element-lineto-rowvisio-xml.md)
     
@@ -64,7 +64,7 @@ ms.locfileid: "34539920"
     
 - [Cell 要素 ([NURBSTo] 行)](cell-element-nurbsto-rowvisio-xml.md)
     
-- [Cell 要素 (Paragraph セクション)](cell-element-paragraph-sectionvisio-xml.md)
+- [Cell 要素 ([段落] セクション)](cell-element-paragraph-sectionvisio-xml.md)
     
 - [Cell 要素 ([PolyLineTo] 行)](cell-element-polylineto-rowvisio-xml.md)
     
@@ -78,17 +78,17 @@ ms.locfileid: "34539920"
     
 - [Cell 要素 ([RelQuadBezTo] 行)](cell-element-relquadbezto-rowvisio-xml.md)
     
-- [Cell 要素 (スクラッチセクション)](cell-element-scratch-sectionvisio-xml.md)
+- [Cell 要素 ([スクラッチ] セクション)](cell-element-scratch-sectionvisio-xml.md)
     
-- [Cell 要素 (Shape Data セクション)](cell-element-shape-data-sectionvisio-xml.md)
+- [Cell 要素 ([図形データ] セクション)](cell-element-shape-data-sectionvisio-xml.md)
     
 - [Cell 要素 ([SplineKnot] 行)](cell-element-splineknot-rowvisio-xml.md)
     
 - [Cell 要素 ([SplineStart] 行)](cell-element-splinestart-rowvisio-xml.md)
     
-- [Cell 要素 (Tabs セクション)](cell-element-tabs-sectionvisio-xml.md)
+- [Cell 要素 ([タブ] セクション)](cell-element-tabs-sectionvisio-xml.md)
     
-- [Cell 要素 (ユーザー定義セルセクション)](cell-element-user-defined-cells-sectionvisio-xml.md)
+- [Cell 要素 ([ユーザー定義セル] セクション)](cell-element-user-defined-cells-sectionvisio-xml.md)
     
 - [ColorEntry 要素](colorentry-element-colors_type-complextypevisio-xml.md)
     
@@ -234,37 +234,37 @@ ms.locfileid: "34539920"
     
 - [Rel 要素 (Solution_Type complexType)](rel-element-solution_type-complextypevisio-xml.md)
     
-- [Row 要素 (Actions セクション)](row-element-actions-sectionvisio-xml.md)
+- [Row 要素 ([アクション] セクション)](row-element-actions-sectionvisio-xml.md)
     
-- [Row 要素 (操作タグセクション)](row-element-action-tag-sectionvisio-xml.md)
+- [Row 要素 (Action Tag Section)](row-element-action-tag-sectionvisio-xml.md)
     
-- [Row 要素 (Character セクション)](row-element-character-sectionvisio-xml.md)
+- [Row 要素 (Character Section)](row-element-character-sectionvisio-xml.md)
     
 - [Row 要素 (接続セクション)](row-element-connection-sectionvisio-xml.md)
     
-- [Row 要素 (Controls セクション)](row-element-controls-sectionvisio-xml.md)
+- [Row 要素 ([コントロール] セクション)](row-element-controls-sectionvisio-xml.md)
     
-- [Row 要素 (フィールドセクション)](row-element-field-sectionvisio-xml.md)
+- [Row 要素 (Field Section)](row-element-field-sectionvisio-xml.md)
     
-- [Row 要素 (塗りつぶしグラデーションセクション)](row-element-fill-gradient-sectionvisio-xml.md)
+- [Row 要素 (塗りつぶしグラデーション セクション)](row-element-fill-gradient-sectionvisio-xml.md)
     
-- [Row 要素 (Geometry セクション)](row-element-geometry-sectionvisio-xml.md)
+- [Row 要素 (Geometry Section)](row-element-geometry-sectionvisio-xml.md)
     
-- [Row 要素 (ハイパーリンクセクション)](row-element-hyperlink-sectionvisio-xml.md)
+- [Row 要素 (ハイパーリンク セクション)](row-element-hyperlink-sectionvisio-xml.md)
     
-- [Row 要素 (Layer セクション)](row-element-layer-sectionvisio-xml.md)
+- [Row 要素 (Layer Section)](row-element-layer-sectionvisio-xml.md)
     
-- [Row 要素 (線のグラデーションセクション)](row-element-line-gradient-sectionvisio-xml.md)
+- [Row 要素 ([線のグラデーション] セクション)](row-element-line-gradient-sectionvisio-xml.md)
     
-- [Row 要素 (Paragraph セクション)](row-element-paragraph-sectionvisio-xml.md)
+- [Row 要素 (Paragraph Section)](row-element-paragraph-sectionvisio-xml.md)
     
-- [Row 要素 (スクラッチセクション)](row-element-scratch-sectionvisio-xml.md)
+- [Row 要素 (Scratch セクション)](row-element-scratch-sectionvisio-xml.md)
     
-- [Row 要素 (Shape Data セクション)](row-element-shape-data-sectionvisio-xml.md)
+- [Row 要素 ([図形データ] セクション)](row-element-shape-data-sectionvisio-xml.md)
     
-- [Row 要素 (Tabs セクション)](row-element-tabs-sectionvisio-xml.md)
+- [Row 要素 ([タブ] セクション)](row-element-tabs-sectionvisio-xml.md)
     
-- [Row 要素 (ユーザー定義セルセクション)](row-element-user-defined-cells-sectionvisio-xml.md)
+- [Row 要素 ([ユーザー定義のセル] セクション)](row-element-user-defined-cells-sectionvisio-xml.md)
     
 - [RowKeyValue 要素](rowkeyvalue-element-primarykey_type-complextypevisio-xml.md)
     

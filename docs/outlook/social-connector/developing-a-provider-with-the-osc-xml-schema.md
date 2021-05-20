@@ -7,7 +7,7 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0872b1b9-c21f-4bba-8cf1-4b010d8d7fb6
-description: Outlook Social Connector (.OSC) プロバイダーの XML スキーマは、ソーシャルネットワークから、ネットワークの .OSC プロバイダーを経由して、.OSC に渡される大量の情報の形式を定義します。
+description: Outlook ソーシャル コネクタ (OSC) プロバイダー XML スキーマは、ネットワークの OSC プロバイダーを介してソーシャル ネットワークから OSC に渡される大量の情報の形式を定義します。
 ms.openlocfilehash: 2346e23beb2de1664ec90263a8f5db5d46c54e6f
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -17,42 +17,42 @@ ms.locfileid: "34539256"
 ---
 # <a name="developing-a-provider-with-the-osc-xml-schema"></a>OSC XML スキーマによるプロバイダーの開発
 
-Outlook Social Connector (.OSC) プロバイダーの XML スキーマは、ソーシャルネットワークから、ネットワークの .OSC プロバイダーを経由して、.OSC に渡される大量の情報の形式を定義します。 XML スキーマを使用すると、.OSC プロバイダーは、3つの主要な要素、**機能**、**フレンド**、および**activityfeed**、およびその子を使用して、ソーシャルネットワーク上のプロバイダー、フレンド、アクティビティフィードアイテムの機能を指定できます。elements. .OSC プロバイダーは、.osc プロバイダーの拡張機能にインターフェイスとそのメソッドを実装し、XML 文字列を、.OSC プロバイダーの XML スキーマに準拠する出力パラメーターとして返します。 .OSC は、これらのメソッドを呼び出して、XML スキーマで定義されているように理解できる情報を取得します。
+Outlook ソーシャル コネクタ (OSC) プロバイダー XML スキーマは、ネットワークの OSC プロバイダーを介してソーシャル ネットワークから OSC に渡される大量の情報の形式を定義します。 XML スキーマを使用すると、OSC プロバイダーは、3 つの主要な要素、機能、フレンド、activityFeed、および子要素を使用して、ソーシャルネットワーク上のプロバイダー、フレンド、アクティビティ フィード アイテムの機能を指定できます。 OSC プロバイダーは、OSC プロバイダーの機能拡張にインターフェイスとそのメソッドを実装し、OSC プロバイダー XML スキーマに準拠する出力パラメーターとして XML 文字列を返します。 OSC は、これらのメソッドを呼び出して、XML スキーマで定義されている情報を取得します。
   
 > [!NOTE]
-> .OSC プロバイダー拡張機能は`DebugProviders` `HKEY_CURRENT_USER\Software\Microsoft\Office\Outlook\SocialConnector` 、レジストリキーの値を1に設定することによって、デバッグプロバイダーをサポートします。 プロバイダーデバッグを有効にすると、.OSC は、 **xmlns** xml 属性で指定したバージョンの .osc xml スキーマに対して、プロバイダ xml を検証します。 Outlook Social Connector 2013 以降の .osc 1.1 およびバージョンの .OSC については、次のように**xmlns**属性を指定します。`xmlns="http://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd"`
+> OSC プロバイダーの機能拡張は、レジストリ キーの値を 1 に設定することで、デバッグ プロバイダー `DebugProviders`  `HKEY_CURRENT_USER\Software\Microsoft\Office\Outlook\SocialConnector` をサポートします。 プロバイダーのデバッグを有効にした場合、OSC は **xmlns** XML 属性で指定した OSC XML スキーマのバージョンに対してプロバイダー XML を検証します。 ソーシャル コネクタ 2013 以降の OSC 1.1 およびバージョンOutlook **xmlns** 属性を次のように指定します。`xmlns="http://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd"`
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-- [友人とアクティビティを同期](synchronizing-friends-and-activities.md)する: 各プロバイダーが友人、友人以外、およびソーシャルネットワーク上のアクティビティを同期できるようにするさまざまな方法について説明します。 
+- [フレンドとアクティビティの同期](synchronizing-friends-and-activities.md): OSC プロバイダーがフレンド、フレンド以外、ソーシャル ネットワーク上のアクティビティを同期できるさまざまな方法について説明します。 
     
-- [.Osc プロバイダ xml の例](osc-provider-xml-examples.md): .osc xml スキーマを使用して、ソーシャルネットワーク上の .osc プロバイダー、フレンド、アクティビティフィードアイテムの機能を指定する方法を示す XML の例が含まれています。
+- [OSC プロバイダー XML](osc-provider-xml-examples.md)の例 : OSC XML スキーマを使用して、ソーシャル ネットワーク上の OSC プロバイダー、フレンド、およびアクティビティ フィード アイテムの機能を指定する方法を示す XML 例が含まれています。
     
-- [機能の xml](xml-for-capabilities.md): この例で[](isocialprovider-getcapabilities.md)は、.osc が機能情報を取得するために、.osc プロバイダーから機能情報を取得する**** ために、.osc で使用されています。 このセクションでは、.osc プロバイダーの XML スキーマの XML 要素についても説明します。これにより、.OSC プロバイダーは、ユーザーの認証方法やフレンドとアクティビティの同期方法などの機能を指定できます。 
+- [機能の XML](xml-for-capabilities.md): OSC が OSC プロバイダーから機能 **XML** で表される機能情報を取得するために使用する - [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md)メソッドについて説明します。 このセクションでは、OSC プロバイダーがユーザーを認証し、友人やアクティビティを同期する方法など、OSC プロバイダーが機能を指定できる OSC プロバイダー XML スキーマの XML 要素について説明します。 
     
-- [Friends の XML](xml-for-friends.md): friends が、 **friends** XML で表現される友人の情報を、.osc プロバイダーから取得するために、.Osc が使用する api の例を示します。 このセクションでは、 **friends** XML の要素についても説明します。 
+- [[フレンド用 XML]:](xml-for-friends.md)OSC がフレンド **XML** で表されるフレンドの情報を OSC プロバイダーから取得するために使用する API の例を示します。 このセクションでは、フレンド XML の要素について **説明** します。 
     
-- [アクティビティ用の XML](xml-for-activities.md): アクティビティ情報を取得するために、.osc がアクティビティ情報を取得する**** ために使用する api の例を、.osc プロバイダーから提供します。 このセクションでは、.OSC プロバイダーがアクティビティフィードを指定できるようにする、.OSC プロバイダーの XML スキーマの XML 要素についても説明します。 アクティビティフィードには、アクティビティフィードのアイテムが送信されたネットワーク、各アクティビティフィードアイテムの詳細 (所有者、種類、アクティビティの発行日など)、およびアクティビティを表示するためのテンプレートが含まれています。 
+- [アクティビティの XML](xml-for-activities.md): OSC プロバイダーから **activityFeed** XML で表されるアクティビティ情報を取得するために OSC が使用する API の例を示します。 このセクションでは、OSC プロバイダーがアクティビティ フィードを指定できる OSC プロバイダー XML スキーマの XML 要素について説明します。 アクティビティ フィードには、アクティビティ フィード アイテムが発生したネットワーク、各アクティビティ フィード アイテムの詳細 (アクティビティの所有者、種類、発行日など)、アクティビティを表示するテンプレートが含まれます。 
     
-## <a name="reference"></a>リファレンス
+## <a name="reference"></a>参照
 
-- [Outlook Social Connector プロバイダーリファレンス](outlook-social-connector-provider-reference-0.md)
+- [Outlookソーシャル コネクタ プロバイダーリファレンス](outlook-social-connector-provider-reference-0.md)
   
 ## <a name="related-sections"></a>関連情報
 
 - [Outlook Social Connector プロバイダーの開発の概要 (英語)(機械翻訳)](getting-started-with-developing-an-outlook-social-connector-provider.md)
   
-- [.OSC サンプルテンプレート](osc-sample-templates.md)
+- [OSC サンプル テンプレート](osc-sample-templates.md)
   
-- [通常の呼び出しシーケンスの .OSC](osc-typical-calling-sequences.md)
+- [OSC の一般的な呼び出しシーケンス](osc-typical-calling-sequences.md)
   
-- [プロバイダーをデバッグする](debugging-a-provider.md)
+- [プロバイダーのデバッグ](debugging-a-provider.md)
   
-- [プロバイダーを展開する](deploying-a-provider.md)
+- [プロバイダーの展開](deploying-a-provider.md)
   
-- [プロバイダーを開発するためのベストプラクティス](best-practices-for-developing-a-provider.md)
+- [プロバイダーの開発に関するベスト プラクティス](best-practices-for-developing-a-provider.md)
   
 ## <a name="see-also"></a>関連項目
 
-- [プロバイダーをデバッグする](debugging-a-provider.md)
+- [プロバイダーのデバッグ](debugging-a-provider.md)
 

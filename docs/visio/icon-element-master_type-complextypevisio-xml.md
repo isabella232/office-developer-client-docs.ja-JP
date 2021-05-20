@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 80061e7d-dbcb-f7a1-b63a-052eee4ec7d7
-description: ドキュメントのマスター要素に対して、MIME (多目的インターネットメール内線) のエンコードされたバイナリアイコン (.ico 形式) を指定します。
+description: ドキュメント内の Master 要素の MIME (Multipurpose Internet Mail Extensions) エンコードされたバイナリ アイコン (.ico 形式) を指定します。
 ms.openlocfilehash: fb66e79348b6fba5d5dfd163e6165e7c1bfddfcd
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,18 +14,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34537746"
 ---
-# <a name="icon-element-mastertype-complextype-visio-xml"></a>Icon 要素 (Master_Type complexType) (Visio XML)
+# <a name="icon-element-master_type-complextype-visio-xml"></a>Icon 要素 (Master_Type complexType) (Visio XML)
 
-ドキュメントのマスター要素に対して、MIME (多目的インターネットメール内線) のエンコードされたバイナリアイコン (.ico 形式) を指定します。
+ドキュメント内の Master 要素の MIME (Multipurpose Internet Mail Extensions) エンコードされたバイナリ アイコン (.ico 形式) を指定します。
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[Icon_Type](icon_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
-|**文書パーツ** <br/> |masters  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
+|**ドキュメント パーツ** <br/> |masters.xml  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -36,13 +36,13 @@ ms.locfileid: "34537746"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
+スキーマで **sequence**、**minOccurs**、**maxOccurs**、**choice** などの具体的な要件が定義されている場合は、定義のセクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
 |**要素**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[Master](master-element-masters_type-complextypevisio-xml.md) <br/> |[Master_Type](master_type-complextypevisio-xml.md) <br/> |図面のマスターシェイプを指定します。  <br/> |
+|[Master](master-element-masters_type-complextypevisio-xml.md) <br/> |[Master_Type](master_type-complextypevisio-xml.md) <br/> |図面のマスターを指定します。  <br/> |
    
 ### <a name="child-elements"></a>子要素
 

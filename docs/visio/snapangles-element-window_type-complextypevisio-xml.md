@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5997f374-303a-92b6-6dd3-87ef81104af4
-description: SnapAngle 要素のコレクションを格納します。
+description: SnapAngle 要素のコレクションが含まれます。
 ms.openlocfilehash: 4dff3d2fa42183c11d2a0ad78e4b4b36a3ce55e2
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,18 +14,18 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34540365"
 ---
-# <a name="snapangles-element-windowtype-complextype-visio-xml"></a>SnapAngles 要素 (Window_Type complexType) (Visio XML)
+# <a name="snapangles-element-window_type-complextype-visio-xml"></a>SnapAngles 要素 (Window_Type complexType) (Visio XML)
 
-**Snapangle**要素のコレクションを格納します。 
+**SnapAngle** 要素のコレクションが含まれます。 
   
-## <a name="element-information"></a>要素情報
+## <a name="element-information"></a>要素の情報
 
 |||
 |:-----|:-----|
 |**要素の種類** <br/> |[SnapAngles_Type](snapangles_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**スキーマ ファイル** <br/> |VisioSchema15  <br/> |
-|**文書パーツ** <br/> |windows .xml  <br/> |
+|**スキーマ ファイル** <br/> |VisioSchema15.xsd  <br/> |
+|**ドキュメント パーツ** <br/> |windows.xml  <br/> |
    
 ## <a name="definition"></a>定義
 
@@ -36,7 +36,7 @@ ms.locfileid: "34540365"
 
 ## <a name="elements-and-attributes"></a>要素と属性
 
-スキーマで**sequence**、 **minOccurs**、 **maxOccurs**、 **choice**などの特定の要件が定義されている場合は、「定義」セクションを参照してください。 
+スキーマで **sequence**、**minOccurs**、**maxOccurs**、**choice** などの具体的な要件が定義されている場合は、定義のセクションを参照してください。 
   
 ### <a name="parent-elements"></a>親要素
 
@@ -48,7 +48,7 @@ ms.locfileid: "34540365"
 
 |**Element**|**型**|**説明**|
 |:-----|:-----|:-----|
-|[SnapAngle](snapangle-element-snapangles_type-complextypevisio-xml.md) <br/> |[SnapAngle_Type](snapangle_type-complextypevisio-xml.md) <br/> |スナップの角度を度数で指定する浮動小数点数を含みます。  <br/> |
+|[SnapAngle](snapangle-element-snapangles_type-complextypevisio-xml.md) <br/> |[SnapAngle_Type](snapangle_type-complextypevisio-xml.md) <br/> |スナップ角度を度数で指定する浮動小数点数を含む。  <br/> |
    
 ### <a name="attributes"></a>属性
 

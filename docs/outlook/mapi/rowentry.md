@@ -23,7 +23,7 @@ ms.locfileid: "33436035"
 
 **適用対象**: Outlook 2013 | Outlook 2016 
   
-[IExchangeModifyTable](iexchangemodifytableiunknown.md)インターフェイスを使用して、テーブル内のその行に対して実行される行と操作が含まれます。 
+[IExchangeModifyTable](iexchangemodifytableiunknown.md)インターフェイスを介してテーブル内のその行に対して実行される行と操作を格納します。 
   
 ```cpp
 typedef struct
@@ -34,27 +34,27 @@ typedef struct
 }  ROWENTRY, FAR * LPROWENTRY;
 ```
 
-## <a name="members"></a>メンバー
+## <a name="members"></a>Members
 
-**ulrowflags**
+**ulRowFlags**
   
-> データに対して実行する操作の1つを次に示します。 
+> データに対して実行する次のいずれかの操作。 
     
   - ROW_ADD: 新しい行としてテーブルにデータを追加します。
       
-  - ROW_MODIFY: テーブルのこの行を変更します。
+  - ROW_MODIFY: テーブル内のこの行を変更します。
       
-  - ROW_REMOVE: この行を表から削除します。
+  - ROW_REMOVE: テーブルからこの行を削除します。
       
-  - ROW_EMPTY: 行データをテーブルに追加しません。 (行は空です。)
+  - ROW_EMPTY: 行データをテーブルに追加しない。 (行は空です)。
     
-**cvalues**
+**cValues**
   
-> **rgPropvals**のプロパティ値の数。
+> **rgPropvals のプロパティ値の数** です。
     
 **rgPropVals**
   
-> テーブルに挿入する列の値を表す[spropvalue](spropvalue.md)構造の配列。 
+> テーブルに挿入する列の値を表す [SPropValue](spropvalue.md) 構造体の配列。 
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI リファレンス
 
@@ -62,7 +62,7 @@ MFCMAPI のサンプル コードについては、次の表を参照してく�
   
 |**ファイル**|**関数**|**コメント**|
 |:-----|:-----|:-----|
-|ルール  <br/> |crulesdlg:: GetSelectedItems  <br/> |以降の**modifytable**アクションに対して選択されたルールの一覧を作成するために使用されます。  <br/> |
+|RulesDlg.cpp  <br/> |CRulesDlg::GetSelectedItems  <br/> |後続の ModifyTable アクションで選択したルールの一覧を **作成するために使用** します。  <br/> |
    
 ## <a name="see-also"></a>関連項目
   

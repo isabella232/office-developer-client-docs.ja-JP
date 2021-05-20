@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251750
 localization_priority: Normal
 ms.assetid: a53b5787-f419-7a36-3c04-c63b3c173ac7
-description: ローカル座標での図形の y 座標を表します。 次の表に、各行で [Y] セルが示す内容を説明します。
+description: ローカル座標の図形の y 座標を表します。 次の表に、各行で [Y] セルが示す内容を説明します。
 ms.openlocfilehash: 7dea96b544c84f09abe1d72304da0bacaa09432f
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -18,20 +18,20 @@ ms.locfileid: "34540491"
 ---
 # <a name="y-cell-geometry-section"></a>[Y] セル ([Geometry] セクション)
 
-ローカル座標での図形の*y*座標を表します。 次の表に、各行で [Y] セルが示す内容を説明します。 
+ローカル座標の  *図形の y*  座標を表します。 次の表に、各行で [Y] セルが示す内容を説明します。 
   
-|Row|説明|
+|行|説明|
 |:-----|:-----|
-|[[Nurbsto]](nurbsto-row-geometry-section.md) <br/> | [MoveTo] 行がセクションの最初の行の場合、[Y] セルは、パスの最初の頂点に対する*y*座標を表します。 [MoveTo] 行が2つの行の間に表示される場合、[Y] セルは、パスを切断した後の最初の頂点に対する*y*座標を表します。  <br/> |
-|[LineTo](lineto-row-geometry-section.md) <br/> | 直線セグメントの最後の頂点に対する*y*座標です。  <br/> |
-|[[Arcto]](arcto-row-geometry-section.md) <br/> | 円弧の最後の頂点に対する*y*座標です。  <br/> |
-|[[Ellipticalarcto]](ellipticalarcto-row-geometry-section.md) <br/> | 楕円の弧の最後の頂点に対する*y*座標です。  <br/> |
-|[[Polylineto]](polylineto-row-geometry-section.md) <br/> | ポリラインの最後の頂点に対する*y*座標です。  <br/> |
-|[[Nurbsto]](nurbsto-row-geometry-section.md) <br/> | 不均一な有理数 (NURBS) の最後のコントロールポイントに対する*y*座標です。  <br/> |
-|[[Splinestart]](splinestart-row-geometry-section.md) <br/> | スプラインの2番目のコントロールポイントに対する*y*座標です。  <br/> |
-|[[Splineknot]](splineknot-row-geometry-section.md) <br/> | コントロールポイントの*y*座標です。  <br/> |
-|[[Infiniteline]](infiniteline-row-geometry-section.md) <br/> | 無限線上の点の*y*座標です。  <br/> |
-|[もう](ellipse-row-geometry-section.md) <br/> | 楕円の中心点の*y*座標です。  <br/> |
+|[NURBSTo](nurbsto-row-geometry-section.md) <br/> | MoveTo 行がセクションの最初の行である場合、Y セルはパスの最初の頂点の  *y*  座標を表します。 MoveTo 行が 2 行の間に表示される場合、Y セルはパスのブレーク後の最初の頂点の  *y*  座標を表します。  <br/> |
+|[LineTo](lineto-row-geometry-section.md) <br/> | 直線  *セグメントの*  終了頂点の y 座標。  <br/> |
+|[ArcTo](arcto-row-geometry-section.md) <br/> | 円弧  *の終了*  頂点の y 座標。  <br/> |
+|[楕円ArcTo](ellipticalarcto-row-geometry-section.md) <br/> | 楕  *円円弧*  の終了頂点の y 座標。  <br/> |
+|[ポリラインTo](polylineto-row-geometry-section.md) <br/> | ポリライン  *の終了*  頂点の y 座標。  <br/> |
+|[NURBSTo](nurbsto-row-geometry-section.md) <br/> | 非  *ユニフォーム*  有理 B スプライン (NURBS) の最後のコントロール ポイントの y 座標。  <br/> |
+|[SplineStart](splinestart-row-geometry-section.md) <br/> | スプライン  *の 2*  番目のコントロール ポイントの y 座標。  <br/> |
+|[SplineKnot](splineknot-row-geometry-section.md) <br/> | コントロール  *ポイントの y*  座標。  <br/> |
+|[InfiniteLine](infiniteline-row-geometry-section.md) <br/> | 無限  *線上*  の点の y 座標。  <br/> |
+|[楕円](ellipse-row-geometry-section.md) <br/> | 楕  *円の*  中心の y 座標。  <br/> |
    
 ## <a name="remarks"></a>注釈
 
@@ -39,15 +39,15 @@ ms.locfileid: "34540491"
   
 |||
 |:-----|:-----|
-| セル名:  <br/> | ジオメトリ*i*Y *j* where *i*および*j* = <1>、2、3...  <br/> |
-|| ジオメトリ*i*Y1 ([Infiniteline] および楕円の行) *i* = <1>、2、3...  <br/> |
+| セル名:  <br/> | Geometry  *i*  .Y  *j*            *i と*  j =  *<*  1>、2、3...  <br/> |
+|| Geometry  *i*  .Y1 (InfiniteLine 行と楕円行) i  *=*  <1>、2、3...  <br/> |
    
 プログラムから、インデックスによって [Y] セルへの参照を取得するには、**CellsSRC** プロパティを使用し、次の引数を指定します。 
   
 |||
 |:-----|:-----|
-| セクション インデックス:  <br/> |**visSectionFirstComponent** +  *i* = ** 0、1、2...  <br/> |
-| 行インデックス:  <br/> |**visRowVertex** +  *j* where *j* = 0、1、2...  <br/> |
+| セクション インデックス:  <br/> |**visSectionFirstComponent**  +  *i* *=* 0, 1, 2...  <br/> |
+| 行インデックス:  <br/> |**visRowVertex**  +  *j* は *j* = 0、1、2..です。  <br/> |
 ||**visRowVertex** ([InfiniteLine] 行および [Ellipse] 行)  <br/> |
 | セル インデックス:  <br/> |**visY** ([MoveTo]、[LineTo]、[ArcTo]、[EllipticalArcTo]、[NURBSTo]、[Polyline]、[SplineStart]、および [SplineKnot] 行)  <br/> |
 ||**visInfiniteLineY1** ([InfiniteLine] 行)  <br/> |
